@@ -28,12 +28,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Découvrez Microsoft 365 Business, un service d’abonnement qui inclut Office 365 et la protection avancée pour votre entreprise contre les menaces informatiques.
-ms.openlocfilehash: 7b939a9037edbe074a5ef9aa24451fe462016ccb
-ms.sourcegitcommit: 217de0fc54cbeaea32d253f175eaf338cd85f5af
+ms.openlocfilehash: fccd0403131d8afe41608c4a195b53db959e7e91
+ms.sourcegitcommit: e525bcf073a61e1350484719a0c3ceb6ff0d8db1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42561477"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "43153815"
 ---
 # <a name="overview-of-microsoft-365-business"></a>Vue d’ensemble de Microsoft 365 Business
 
@@ -76,7 +76,7 @@ Microsoft 365 Business contribue à une **protection contre les menaces** :
 
 - Activation des stratégies anti-hameçonnage qui utilisent les modèles d’apprentissage automatique et la détection de l’emprunt d’identité pour assurer une protection contre les attaques avancées (protection contre le hameçonnage). 
 
-- La configuration de stratégies avancées qui désactivent l’accès à partir d’emplacements non approuvés ou ignore l’authentification multifacteur à partir d’emplacements approuvés tels que votre réseau Office (Azure MFA, y compris les adresses IP approuvées et l’accès conditionnel). 
+- La configuration de stratégies avancées qui désactivent l’accès à partir d’emplacements non approuvés ou ignore l’authentification multifacteur à partir d’emplacements approuvés tels que votre réseau Office (authentification multifacteur Azure incluant des adresses IP approuvées et un accès conditionnel). 
 
 - Mise en œuvre de la protection contre les programmes malveillants sur tous les appareils Windows 10 de votre organisation et protection des fichiers dans les dossiers système clés contre les modifications apportées par les ransomware (Windows Defender)
 

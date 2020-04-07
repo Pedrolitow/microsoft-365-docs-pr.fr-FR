@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 6ffe912cd9926585181af54cc85c144aef4ce866
-ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
+ms.openlocfilehash: f44d7cd5b919fb06ffb10c39e632956005231e01
+ms.sourcegitcommit: e525bcf073a61e1350484719a0c3ceb6ff0d8db1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43142670"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "43153749"
 ---
 # <a name="compliance"></a>Conformité
 
@@ -33,7 +33,7 @@ Microsoft Managed Desktop a obtenu les certifications suivantes :
 - [Contrôles de l’organisation de service (SOC) 1, 2, 3](../../compliance/offering-SOC.md)
 - [Norme de sécurité des données (DSS) d’industrie de carte de paiement (PCI)](../../compliance/offering-PCI-DSS.md)
 
-## <a name="auditor-reports-and-client-certificates"></a>Rapports de l’auditeur et certificats clients
+## <a name="auditor-reports-and-compliance-certificates"></a>Rapports de l’auditeur et certificats de conformité
 
 Vous pouvez trouver des informations pertinentes, notamment des exigences de contrôle et techniques, dans le [portail d’approbation de service (STP)](https://servicetrust.microsoft.com/), le référentiel central pour obtenir des informations sur les offres de service Cloud de Microsoft. Vous pouvez télécharger des rapports d’auditeur, des certificats de conformité et bien plus encore à partir de la section [rapports d’audit](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide) du protocole STP.
 

@@ -21,12 +21,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Découvrez comment déplacer votre entreprise vers Microsoft 365 Business à partir de Office 365 E3.
-ms.openlocfilehash: b86a163792aa71f0bca115ab918e0800acc0427d
-ms.sourcegitcommit: 9c335d110e0b499501edc8a31b987641819118a1
+ms.openlocfilehash: cff6166529df2e56ba948a9bd3ea4594fb295b08
+ms.sourcegitcommit: e525bcf073a61e1350484719a0c3ceb6ff0d8db1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/04/2020
-ms.locfileid: "42409679"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "43153531"
 ---
 # <a name="migrating-from-office-365-e3-to-microsoft-365-business"></a>Migration à partir d’Office 365 E3 vers Microsoft 365 Business 
 
@@ -44,15 +44,15 @@ Ce tableau présente les différences entre Microsoft 365 Business et Office 365
 | Applications Office<sup>1</sup>    | Office 365 Business    | Office 365 ProPlus | 
 | **Applications de productivité sur le Cloud**        | | | 
 | Exchange Online et Outlook    | limite de stockage de 50 Go par boîte aux lettres et archivage Exchange Online illimité    | limite de stockage de 100 Go par boîte aux lettres et archivage Exchange Online illimité | 
-| Teams    | ![Inclus avec Microsoft 365 Business](../media/check-mark.png)    | ![Inclus dans Office 365 E3](../media/check-mark.png) | 
-| OneDrive Entreprise    | limite de stockage de 1 to par utilisateur    | Illimité | 
+| Équipes    | ![Inclus avec Microsoft 365 Business](../media/check-mark.png)    | ![Inclus dans Office 365 E3](../media/check-mark.png) | 
+| OneDrive Entreprise    | limite de stockage de 1 to par utilisateur    | Illimité | 
 | Yammer, SharePoint Online, planificateur, flux    | ![Inclus avec Microsoft 365 Business](../media/check-mark.png)    | ![Inclus dans Office 365 E3](../media/check-mark.png) | 
 | StaffHub    | ![Inclus avec Microsoft 365 Business](../media/check-mark.png)    | ![Inclus dans Office 365 E3](../media/check-mark.png) | 
 | Gestionnaire de clients Outlook, MileIQ    | ![Inclus avec Microsoft 365 Business](../media/check-mark.png)    | | 
 | **Protection contre les menaces**        | | | 
 | Office 365 Advanced Threat Protection (ATP) plan 1 | ![Inclus avec Microsoft 365 Business](../media/check-mark.png)    | Non inclus, mais peut être ajouté sur | 
 | **Gestion des identités**        | | | 
-| Réinitialisation du mot de passe en libre-service pour les comptes hybrides Azure Active Directory (Azure AD), Azure Multi-Factor Authentication (MFA), l’accès conditionnel, l’écriture différée de mot de passe pour les identités locales|     ![Inclus avec Microsoft 365 Business](../media/check-mark.png)    |  | 
+| Réinitialisation du mot de passe en libre-service pour les comptes hybrides Azure Active Directory (Azure AD), l’authentification multifacteur Azure, l’accès conditionnel et l’écriture différée de mot de passe pour les identités locales|     ![Inclus avec Microsoft 365 Business](../media/check-mark.png)    |  | 
 | **Gestion des appareils et des applications**        | | |
 | Microsoft Intune, Windows AutoPilot|     ![Inclus avec Microsoft 365 Business](../media/check-mark.png)    |  |
 | Activation d'ordinateurs partagés|     ![Inclus avec Microsoft 365 Business](../media/check-mark.png)    | ![Inclus dans Office 365 E3](../media/check-mark.png)| 
@@ -117,6 +117,6 @@ Vous pouvez également effectuer ces étapes dans la page périphériques :
 
 Après la migration vers Microsoft 365 Business, vous disposez d’Office 365 ATP. Consultez la rubrique [Office 365 ATP](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp) pour obtenir une vue d’ensemble. Pour configurer, voir [set up ATP Safe Links](https://support.office.com/article/61492713-53c2-47da-a6e7-fa97479e97fa), [set up Safe Attachments](https://support.office.com/article/e7e68934-23dc-4b9c-b714-e82e27a8f8a5)et [set up ATP anti-phishing](https://support.office.com/article/86c425e1-1686-430a-9151-f7176cce4f2c).
 
-### <a name="sensitivity-labels"></a>Étiquettes de niveau de confidentialité
+### <a name="sensitivity-labels"></a>Étiquettes de confidentialité
 
 Pour commencer à utiliser les étiquettes de confidentialité, voir [vue d’ensemble des étiquettes de sensibilité](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels) et [créer et gérer des étiquettes de confidentialité](https://support.office.com/article/2fb96b54-7dd2-4f0c-ac8d-170790d4b8b9) vidéo.

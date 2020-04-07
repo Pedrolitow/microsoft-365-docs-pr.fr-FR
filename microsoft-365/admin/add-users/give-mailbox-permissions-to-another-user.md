@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 1dbcf12f-a9de-4d1d-b0b3-a227f8a736d8
 description: "Découvrez comment accorder le droit à un utilisateur d'accéder à la boîte aux lettres d'un autre utilisateur. Cela permet à l’utilisateur de lire et d’envoyer des messages électroniques à partir de la boîte aux lettres d'un autre utilisateur. "
-ms.openlocfilehash: 8c3572cf543545de4a2825012f6c2e8e906cd8dd
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 695068d2002b20637b6df6a2514b74828f273965
+ms.sourcegitcommit: 311bbd6f168225ede166d29696126a1e003eee0f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42239373"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "43151346"
 ---
 # <a name="give-mailbox-permissions-to-another-user-in-office-365---admin-help"></a>Accorder des autorisations de boîte aux lettres à un autre utilisateur dans Office 365 – Aide de l’administrateur
 
@@ -51,9 +51,9 @@ pour configurer des autorisations, la première étape consiste à décider des 
   
 - [Lire du courrier à partir de la boîte aux lettres d’un autre utilisateur](https://support.office.com/article/Read-email-from-another-user-s-mailbox-in-Office-365-cb3b6a8a-c6e8-4342-803c-3e54b6428cc2?#bkmk_reademailanotheruser)
     
-- [Envoyer du courrier à partir de la boîte aux lettres d’un autre utilisateur](https://support.office.com/article/Send-email-from-another-user-s-mailbox-in-Office-365-2B828C5F-41AB-4904-97B9-3B63D8129C4E?#bkmk_sendemailanotheruser)
+- [Envoyer du courrier à partir de la boîte aux lettres d’un autre utilisateur](https://docs.microsoft.com/microsoft-365/admin/add-users/give-mailbox-permissions-to-another-user)
     
-- [Envoyer du courrier pour le compte d’un autre utilisateur](https://support.office.com/article/Send-email-on-behalf-of-another-user-in-Office-365-C5E7749D-244E-477F-998E-55D3876C22EC?#bkmk_sendbehalflanotheruser)
+- [Envoyer du courrier pour le compte d’un autre utilisateur](https://docs.microsoft.com/microsoft-365/admin/add-users/give-mailbox-permissions-to-another-user)
     
  **Propagation des modifications :**
   

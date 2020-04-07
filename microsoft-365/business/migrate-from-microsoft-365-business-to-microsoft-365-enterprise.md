@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.assetid: 5b4ba843-24b8-4526-8e1f-f9b9eab89d06
 description: Découvrez comment déplacer votre entreprise de Microsoft 365 Business vers Microsoft 365 E3.
-ms.openlocfilehash: 9e9cfcf2212faa69f600267e4f9bfd2391e3f4e5
-ms.sourcegitcommit: 9c335d110e0b499501edc8a31b987641819118a1
+ms.openlocfilehash: 0d636c0572850a53612bf756508c4b57f1b3e4eb
+ms.sourcegitcommit: e525bcf073a61e1350484719a0c3ceb6ff0d8db1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/04/2020
-ms.locfileid: "42409669"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "43153519"
 ---
 # <a name="migrate-from-microsoft-365-business-to-microsoft-365-e3"></a>Migration de Microsoft 365 Entreprise vers Microsoft 365 E3
 
@@ -53,18 +53,18 @@ Ce tableau présente les différences entre Microsoft 365 entreprise et Microsof
 | Applications Office *    | [Office 365 Business](#office-365-business)    | Office 365 ProPlus | 
 | **Applications de productivité sur le Cloud**        | | | 
 | Exchange Online et Outlook    | limite de stockage de 50 Go par boîte aux lettres et archivage Exchange Online illimité    | limite de stockage de 100 Go par boîte aux lettres et archivage Exchange Online illimité | 
-| Teams    | ![Inclus avec Microsoft 365 Business](../media/check-mark.png)    | ![Inclus avec Microsoft 365 E3](../media/check-mark.png) | 
-| OneDrive Entreprise    | limite de stockage de 1 to par utilisateur    | Illimité | 
+| Équipes    | ![Inclus avec Microsoft 365 Business](../media/check-mark.png)    | ![Inclus avec Microsoft 365 E3](../media/check-mark.png) | 
+| OneDrive Entreprise    | limite de stockage de 1 to par utilisateur    | Illimité | 
 | Yammer, SharePoint Online, planificateur, flux    | ![Inclus avec Microsoft 365 Business](../media/check-mark.png)    | ![Inclus avec Microsoft 365 E3](../media/check-mark.png) | 
 | Gestionnaire de clients Outlook, MileIQ    | ![Inclus avec Microsoft 365 Business](../media/check-mark.png)    | | 
 | **Protection contre les menaces**        | | | 
 | Fonctionnalités de réduction de la surface d’attaque    | [Voir la liste suivante](#threat-protection) | Gestion d’entreprise de l’isolation matérielle pour Microsoft Edge | 
 | Office 365 Advanced Threat Protection (ATP) plan 1 | ![Inclus avec Microsoft 365 Business](../media/check-mark.png)    | Non inclus, mais peut être ajouté sur | 
 | **Gestion des identités**        | | | 
-| Réinitialisation du mot de passe en libre-service pour les comptes hybrides Azure Active Directory (Azure AD), Azure Multi-Factor Authentication (MFA), l’accès conditionnel, l’écriture différée de mot de passe pour les identités locales|     ![Inclus avec Microsoft 365 Business](../media/check-mark.png)    | ![Inclus avec Microsoft 365 E3](../media/check-mark.png) | 
+| Réinitialisation du mot de passe en libre-service pour les comptes hybrides Azure Active Directory (Azure AD), l’authentification multifacteur Azure, l’accès conditionnel et l’écriture différée de mot de passe pour les identités locales|     ![Inclus avec Microsoft 365 Business](../media/check-mark.png)    | ![Inclus avec Microsoft 365 E3](../media/check-mark.png) | 
 | Découverte des applications Cloud, Azure AD Connect Health    |     | ![Inclus avec Microsoft 365 E3](../media/check-mark.png) | 
 | Authentification unique (SSO) pour les applications Azure AD Office 365 (SSO) : 10 applications par utilisateur (Galerie applications SaaS telles que Salesforce) * | ![Inclus avec Microsoft 365 Business](../media/check-mark.png)    | ![Inclus avec Microsoft 365 E3](../media/check-mark.png) | 
-| Azure AD Premium 1 SSO : pas de limite (applications locales via un proxy d’application Azure AD et applications non-Galerie utilisant des modèles d’intégration d’applications en libre-service)    |     | ![Inclus avec Microsoft 365 E3](../media/check-mark.png) | 
+| Azure AD Premium P1 SSO : aucune limite (applications locales via le proxy d’application Azure AD et les applications non galerie à l’aide de modèles d’intégration d’applications en libre-service)    |     | ![Inclus avec Microsoft 365 E3](../media/check-mark.png) | 
 | **Gestion des appareils et des applications**        | | | 
 | Microsoft Intune, Windows AutoPilot|     ![Inclus avec Microsoft 365 Business](../media/check-mark.png)    | ![Inclus avec Microsoft 365 E3](../media/check-mark.png) | 
 |Accès au bureau virtuel (VDA)    |  |     ![Inclus avec Microsoft 365 E3](../media/check-mark.png) | 
@@ -140,7 +140,7 @@ Vous n’avez pas besoin d’effectuer des modifications dans votre configuratio
 Microsoft 365 Business comprend Windows 10 Business, que vous pouvez installer avec Windows AutoPilot. Lorsque vous migrez vers Microsoft 365 E3, chaque licence utilisateur comprend Windows 10 entreprise E3, que vous pouvez également installer avec Windows AutoPilot.
 
 <a name="office-365-business"></a>
-### <a name="office-365-business"></a>Office 365 Business
+### <a name="office-365-business"></a>Office 365 Business
 
 Votre client Office 365 Business installé sur vos appareils commencera automatiquement à utiliser les fonctionnalités d’Office 365 ProPlus. Après la migration, vous pouvez désormais utiliser les éléments suivants :
 

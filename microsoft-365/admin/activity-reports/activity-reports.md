@@ -19,12 +19,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
 description: Obtenez un rapport régulier sur la façon dont les membres de votre organisation utilisent les services Office 365. Le tableau de bord Vue d’ensemble de l’utilisation vous permet d’explorer chaque graphique pour obtenir d'autres informations.
-ms.openlocfilehash: af6817471224e5747849b6020df3c56b64e29fed
-ms.sourcegitcommit: ce6121a8e3ca7438071d73b0c76e2b6f33ac1cf7
+ms.openlocfilehash: da62d934b295916a7f0fc952cc9cbe94b8384246
+ms.sourcegitcommit: 311bbd6f168225ede166d29696126a1e003eee0f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "43029859"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "43151428"
 ---
 # <a name="activity-reports-in-the-microsoft-365-admin-center"></a>Rapports d’activité dans le Centre d’administration Microsoft 365
 
@@ -180,6 +180,6 @@ Toutefois, lorsque vous sélectionnez un jour particulier (voir numéro 3), jus
   
 ## <a name="related-articles"></a>Articles connexes
 
-[Rapports dans le Centre de conformité ](https://support.office.com/article/7acd33ce-1ec8-49fb-b625-43bac7b58c5a) et sécurité &amp;
+[Rapports dans le Centre de conformité ](https://docs.microsoft.com/microsoft-365/compliance/reports-in-security-and-compliance) et sécurité &amp;
   
 

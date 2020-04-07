@@ -20,12 +20,12 @@ search.appverid:
 - GEA150
 ms.assetid: 097ae285-c4af-4319-9770-e2559d66e4c8
 description: 'Les administrateurs Exchange Online gèrent les courriers électroniques et les boîtes aux lettres de votre organisation. Par exemple, ils récupèrent les éléments supprimés dans la boîte aux lettres d’un utilisateur. '
-ms.openlocfilehash: 1496518dac518b98fb2fc3186610f83df70fca3c
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: ac11a05dd9ea7a0c569e131e7939a0e4e9293dea
+ms.sourcegitcommit: 311bbd6f168225ede166d29696126a1e003eee0f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42239429"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "43151360"
 ---
 # <a name="about-the-exchange-online-admin-role"></a>À propos du rôle d’administrateur Exchange Online
 
@@ -41,7 +41,7 @@ Voici quelques-unes des tâches clés que les utilisateurs peuvent effectuer lor
     
 - Configurez des fonctionnalités de boîte aux lettres, telles que la stratégie de partage de boîtes aux lettres : comment les utilisateurs peuvent partager des informations de calendrier et de contacts avec d’autres personnes en dehors de votre organisation. 
     
-- Configurer les délégués «[Envoyer en tant que](https://support.office.com/article/2B828C5F-41AB-4904-97B9-3B63D8129C4E.aspx)» et «[Envoyer de la part de](https://support.office.com/article/C5E7749D-244E-477F-998E-55D3876C22EC.aspx)» pour la boîte aux lettres d’un utilisateur. Par exemple, un responsable peut souhaiter que son assistant ait la possibilité d’envoyer des messages en leur nom. 
+- Configurer les délégués «[Envoyer en tant que](https://docs.microsoft.com/microsoft-365/admin/add-users/give-mailbox-permissions-to-another-user)» et «[Envoyer de la part de](https://docs.microsoft.com/microsoft-365/admin/add-users/give-mailbox-permissions-to-another-user)» pour la boîte aux lettres d’un utilisateur. Par exemple, un responsable peut souhaiter que son assistant ait la possibilité d’envoyer des messages en leur nom. 
     
 - [Créez une boîte aux lettres partagée](../email/create-a-shared-mailbox.md) pour permettre à un groupe de personnes de surveiller et d’envoyer des courriers électroniques à partir d’une adresse de messagerie commune. 
     

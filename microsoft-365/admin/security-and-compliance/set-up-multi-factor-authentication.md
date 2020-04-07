@@ -22,19 +22,19 @@ search.appverid:
 ms.assetid: 8f0454b2-f51a-4d9c-bcde-2c48e41621c6
 description: Découvrez comment utiliser les paramètres par défaut de sécurité pour configurer multi-factor authentication pour les utilisateurs d’Office 365.
 monikerRange: o365-worldwide
-ms.openlocfilehash: 914d01bf2f045c6752aba4f2df3a204c6a21d09c
-ms.sourcegitcommit: 4d4d27a49eb258dc560439ca4baf61ebb9c1eff3
+ms.openlocfilehash: 331552a4de21198fe7fbc9980e89bfcd87449ffa
+ms.sourcegitcommit: e525bcf073a61e1350484719a0c3ceb6ff0d8db1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "43075607"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "43153555"
 ---
 # <a name="set-up-multi-factor-authentication"></a>Configurer Multi-factor Authentification (MFA)
   
 > [!IMPORTANT]
-> Si vous avez acheté votre abonnement ou une version d’évaluation après le 21 octobre 2019 et que vous êtes invité de manière inattendue à utiliser l’authentification multifacteur, les [paramètres de sécurité par défaut](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults) ont été automatiquement activés pour votre abonnement.
+> Si vous avez acheté votre abonnement ou une version d’évaluation après le 21 octobre 2019, et que vous êtes invité de manière inattendue à utiliser l’authentification multifacteur (MFA), les [paramètres par défaut de sécurité](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults) ont été automatiquement activés pour votre abonnement.
 
-Les paramètres de sécurité par défaut sont automatiquement activés avec tout nouvel abonnement Office 365 pour les entreprises ou Microsoft 365 Entreprise. Chaque utilisateur doit ainsi configurer multi-factor authentication (MFA) et installer l’application de l’Authenticator sur son appareil mobile. Pour en savoir plus, voir [Configurer la vérification en deux étapes pour Office 365](https://support.office.com/article/ace1d096-61e5-449b-a875-58eb3d74de14).  
+Les paramètres de sécurité par défaut sont automatiquement activés avec tout nouvel abonnement Office 365 pour les entreprises ou Microsoft 365 Entreprise. Cela signifie que chaque utilisateur devra configurer MFA et installer l’application Microsoft Authenticator sur son appareil mobile. Pour en savoir plus, voir [Configurer la vérification en deux étapes pour Office 365](https://support.office.com/article/ace1d096-61e5-449b-a875-58eb3d74de14).  
 
 Les neuf rôles d’administrateur suivants sont nécessaires pour effectuer une authentification supplémentaire lorsqu’ils se connectent :
 - Administrateur général
@@ -50,10 +50,10 @@ Les neuf rôles d’administrateur suivants sont nécessaires pour effectuer une
 Tous les autres utilisateurs seront invités à effectuer une authentification supplémentaire si nécessaire. Pour plus d’informations, voir [Présentation des paramètres de sécurité par défaut](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)
 
 > [!NOTE]
-> Vous devez être un administrateur général Office 365 pour configurer ou modifier Multi-Factor Authentification. <br><br>
+> Vous devez être un administrateur général Office 365 pour configurer ou modifier l’authentification multifacteur. <br><br>
 > Si le nouveau Centre d’administration Microsoft 365 n’est pas celui que vous utilisez, vous pouvez l’activer en sélectionnant le bouton bascule **Essayer le nouveau Centre d’administration** situé en haut de la page d’accueil.
 
-Si vous avez déjà configuré Multi-Factor Authentication avec des stratégies de référence, [vous devez les désactiver et activer les paramètres de sécurité par défaut](#move-from-baseline-policies-to-security-defaults). Toutefois, si vous avez Microsoft 365 Entreprise ou si votre abonnement inclut [Azure Active Directory Premium 1 ou Azure Active Directory Premium 2](https://azure.microsoft.com/pricing/details/active-directory/), vous pouvez également configurer les stratégies d'[accès conditionnel](https://docs.microsoft.com/azure/active-directory/conditional-access/overview). Pour utiliser des stratégies d’accès conditionnel, vous devez vous assurer que [l’authentification moderne](#enable-modern-authentication-for-your-organization) est activée.
+Si vous avez déjà configuré Multi-Factor Authentication avec des stratégies de référence, [vous devez les désactiver et activer les paramètres de sécurité par défaut](#move-from-baseline-policies-to-security-defaults). Toutefois, si vous avez Microsoft 365 Business ou que votre abonnement inclut [Azure Active Directory Premium P1 ou Azure Active Directory Premium P2](https://azure.microsoft.com/pricing/details/active-directory/), vous pouvez également configurer des stratégies d' [accès conditionnel](https://docs.microsoft.com/azure/active-directory/conditional-access/overview) . Pour utiliser des stratégies d’accès conditionnel, vous devez vous assurer que [l’authentification moderne](#enable-modern-authentication-for-your-organization) est activée.
 
 > [!TIP]
 > Pour expliquer la configuration de l’application Authenticator à vos utilisateurs, consultez [Utiliser Microsoft Authenticator avec Office 365](https://support.office.com/article/use-microsoft-authenticator-with-office-365-1412611f-ad8d-43ab-807c-7965e5155411?ui=en-US&rs=en-US&ad=US#ID0EAADAAA=_Step_1).
@@ -64,7 +64,7 @@ Si vous avez déjà configuré Multi-Factor Authentication avec des stratégies 
 2. Accès à [Propriétés d'Azure Active Directory](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Properties).
 
 3. Au bas de la page, sélectionnez **Gérer les paramètres de sécurité par défaut**.
-4. Sélectionnez **Oui** pour activer les paramètres de sécurité par défaut et **Non** pour désactiver les paramètres de sécurité par défaut.
+4. Choisissez **Oui** pour activer les paramètres de sécurité par défaut ou **non** pour désactiver les paramètres de sécurité par défaut, puis cliquez sur **Enregistrer**.
 
 ## <a name="move-from-baseline-policies-to-security-defaults"></a>Basculez des stratégies de base aux paramètres de sécurité par défaut
 

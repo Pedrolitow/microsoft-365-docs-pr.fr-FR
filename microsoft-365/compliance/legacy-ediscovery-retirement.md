@@ -11,12 +11,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: La découverte électronique inaltérable et la conservation inaltérable (et les cmdlets PowerShell correspondantes) dans Exchange Online seront supprimées au cours de la première moitié de 2020. La cmdlet Search-Mailbox et Office 365 Advanced eDiscovery v 1.0 sont également en cours de retrait dans la même période.
-ms.openlocfilehash: d0d9856a30d905e73ba31abc9af92bbe060c0ec4
-ms.sourcegitcommit: 9ddf2005a36a27cc6d2d85a5b9fac0483a55f245
+ms.openlocfilehash: 2d1f319986d761135e2c22b1d5882797f90f910c
+ms.sourcegitcommit: 9ba28b255640c7b22f627613430dc69191bfaede
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "43024354"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "43158435"
 ---
 # <a name="retirement-of-legacy-ediscovery-tools"></a>Déclassement des outils eDiscovery hérités
 
@@ -53,10 +53,8 @@ Grâce à cette nouvelle fonctionnalité eDiscovery améliorée dans le centre d
    - [SetHoldOnMailboxes](https://docs.microsoft.com/exchange/client-developer/web-service-reference/setholdonmailboxes-operation)
 
    - [GetHoldOnMailboxes](https://docs.microsoft.com/exchange/client-developer/web-service-reference/getholdonmailboxes-operation)
-   
 
-
-- [Office 365 Advanced eDiscovery v 1.0](office-365-advanced-ediscovery.md), qui est la première version de Advanced eDiscovery accessible via un cas de découverte électronique dans le centre de sécurité & Office 365 Security.
+- [Office 365 Advanced eDiscovery v 1.0](office-365-advanced-ediscovery.md), qui est la première version de Advanced eDiscovery accessible via un cas de découverte électronique de base dans le centre de sécurité & Office 365 Security. Le retrait de Advanced eDiscovery v 1.0 n’a pas d’impact sur votre capacité à créer et gérer des cas de découverte électronique de base.
 
 > [!NOTE]
 > La fonctionnalité de découverte électronique en retrait ne s’applique qu’aux versions Cloud de Microsoft 365 et Office 365. la fonctionnalité eDiscovery dans les versions locales d’Exchange et de SharePoint sera toujours prise en charge jusqu’à l’avertissement.
@@ -141,7 +139,7 @@ Le tableau suivant décrit les autres outils que vous pouvez utiliser pour rempl
 <tr class=even>
   <td>Copier des messages à partir d’une boîte aux lettres vers une autre boîte aux lettres</td>
   <td><a href="https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-permissions-for-recipients">Attribuer des autorisations à une boîte aux lettres</a></td>
-  <td>Pour accorder à une personne l’accès à la messagerie d’un autre utilisateur (par exemple, lorsqu’un employé quitte votre organisation et que vous devez lui donner accès à l’e-mail de l’ancien employé), nous vous recommandons de lui attribuer des autorisations d’accès à l’ancien employé. lettres. Par conséquent, au lieu de copier des éléments de boîte aux lettres vers une autre boîte aux lettres d’utilisateur ou une boîte aux lettres partagée, affectez simplement des autorisations utilisateur pour accéder à la boîte aux lettres source.</td>
+  <td>Pour accorder à une personne l’accès à la messagerie d’un autre utilisateur (par exemple, lorsqu’un employé quitte votre organisation et que vous devez lui donner accès à l’e-mail de l’ancien employé), nous vous recommandons de lui attribuer des autorisations d’accès à la boîte aux lettres de l’ancien employé. Par conséquent, au lieu de copier des éléments de boîte aux lettres vers une autre boîte aux lettres d’utilisateur ou une boîte aux lettres partagée, affectez simplement des autorisations utilisateur pour accéder à la boîte aux lettres source.</td>
   
   </tr>
 <tr class="odd">
@@ -222,13 +220,13 @@ Le tableau suivant décrit les autres outils que vous pouvez utiliser pour rempl
 </tr>
 <tr class="odd">
 <td>Copier les résultats de la recherche dans une boîte aux lettres de découverte</td>
-<td>Néant</td>
+<td>Aucun</td>
 <td>Il n’existe pas de remplacement direct de cette fonctionnalité, car elle ne fournit pas d’accès à tous les services Microsoft 365. Consultez le Forum aux questions ci-dessous pour obtenir d’autres solutions.</td>
 </tr>
   <tr class=even>
   <td>Copier des messages à partir d’une boîte aux lettres vers une autre boîte aux lettres</td>
   <td><a href="https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-permissions-for-recipients">Attribuer des autorisations à une boîte aux lettres</a></td>
-  <td>Pour accorder à une personne l’accès à la messagerie d’un autre utilisateur (par exemple, lorsqu’un employé quitte votre organisation et que vous devez lui donner accès à l’e-mail de l’ancien employé), nous vous recommandons de lui attribuer des autorisations d’accès à l’ancien employé. lettres. Par conséquent, au lieu de copier des éléments de boîte aux lettres vers une autre boîte aux lettres d’utilisateur ou une boîte aux lettres partagée, affectez simplement des autorisations utilisateur pour accéder à la boîte aux lettres source.</td>
+  <td>Pour accorder à une personne l’accès à la messagerie d’un autre utilisateur (par exemple, lorsqu’un employé quitte votre organisation et que vous devez lui donner accès à l’e-mail de l’ancien employé), nous vous recommandons de lui attribuer des autorisations d’accès à la boîte aux lettres de l’ancien employé. Par conséquent, au lieu de copier des éléments de boîte aux lettres vers une autre boîte aux lettres d’utilisateur ou une boîte aux lettres partagée, affectez simplement des autorisations utilisateur pour accéder à la boîte aux lettres source.</td>
   
   </tr>
 
@@ -331,14 +329,28 @@ Ces opérations dans l’API des services Web Exchange sont utilisées par la fo
 
 ## <a name="advanced-ediscovery-v10"></a>Advanced eDiscovery v 1.0
 
-Advanced eDiscovery v 1.0, qui est la version d’Advanced eDiscovery disponible dans un cas eDiscovery en cliquant sur **basculer vers Advanced eDiscovery** en cours de retrait. Sa fonctionnalité a été remplacée par la nouvelle [solution EDiscovery avancée](https://aka.ms/edisco) dans le centre de conformité Microsoft 365.
+Advanced eDiscovery v 1.0, qui est la version de Advanced eDiscovery disponible dans un cas de découverte électronique fondamentale en cliquant sur **basculer vers Advanced eDiscovery**, est en cours de retrait. Sa fonctionnalité a été remplacée par la nouvelle [solution EDiscovery avancée](https://aka.ms/edisco) dans le centre de conformité Microsoft 365.
+
+Pour déterminer si votre organisation utilise Advanced eDiscovery v 1.0 :
+
+1. Accédez au [Centre de sécurité & conformité d’Office 365](https://protection.office.com).
+
+2. Dans le volet de navigation de gauche du centre de sécurité & conformité, cliquez sur **ediscovery > eDiscovery**, puis ouvrez un cas de découverte électronique de base.
+
+3. Si vous voyez le bouton **basculer vers Advanced eDiscovery** , le fait de cliquer dessus vous permettra d’accéder à la version 1,0 de Advanced eDiscovery, qui est en cours de retrait. La possibilité de créer et de gérer des cas dans la découverte électronique centrale n’est pas affectée. Seule la possibilité d’ajouter et d’analyser des données de cas dans Advanced eDiscovery v 1.0 (en cliquant sur **basculer vers Advanced eDiscovery**) est supprimée.
 
 La nouvelle solution eDiscovery avancée de Microsoft 365 (également appelée *Advanced eDiscovery v 2.0*) offre toutes les fonctionnalités de la solution d’origine, mais inclut désormais une approche basée sur le dépositaire pour identifier le contenu dans d’autres services Microsoft 365, recueillir ce contenu, puis l’ajouter à un ensemble de révisions où les réviseurs peuvent tirer parti des requêtes de recherche rapide, des balises et des fonctionnalités d’analyse pour vous aider à rechercher des documents pertinents. Advanced eDiscovery inclut désormais un traitement amélioré et des visionneuses natives pour les types de fichier Microsoft et non-Microsoft, une liste complète des types de fichiers est [ici](https://docs.microsoft.com/microsoft-365/compliance/supported-filetypes-ediscovery20) et les champs de métadonnées pris en charge sont présents [ici](https://docs.microsoft.com/microsoft-365/compliance/document-metadata-fields-in-advanced-ediscovery). Par ailleurs, la nouvelle solution eDiscovery avancée fournit une fonctionnalité de gestion des blocages de gestion puissante qui vous permet d’appliquer des suspensions au contenu dans différents services, d’avertir les utilisateurs des suspensions et de suivre les réponses des dépositaires, tout cela dans un cas avancé de découverte électronique.
+
+Pour accéder à Advanced eDiscovery v 2.0 :
+
+1. Accédez au [Centre de conformité Microsoft 365](https://compliance.microsoft.com).
+
+2. Dans le volet de navigation de gauche du centre de conformité Microsoft 365, cliquez sur **Afficher tout**, puis sur **découverte électronique > avancé**.
 
 Pour l’instant, nous vous recommandons de commencer la transition de votre flux de travail eDiscovery vers la nouvelle fonctionnalité eDiscovery avancée. Bien que vous puissiez toujours accéder à Advanced eDiscovery v 1.0 dans des cas existants, le support Microsoft ne sera pas pris en charge après le 1er octobre 2020. Pour plus d’informations, consultez la chronologie suivante.
 
 ### <a name="scope-of-affected-organizations"></a>Étendue des organisations affectées
-    
+
 - Organisations Office 365 et Microsoft 365 entreprise
 
 - Organisations Office 365 et Microsoft 365 éducation

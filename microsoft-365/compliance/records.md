@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Pour implémenter une stratégie de gestion des enregistrements dans votre organisation Microsoft ou Office 365, utilisez des étiquettes de rétention qui déclarent du contenu sous la forme d’un enregistrement. Ensuite, publiez ou appliquez automatiquement l’étiquette de rétention d’enregistrement.
-ms.openlocfilehash: ba69c9705c14c2f836f67c8747d30ee2280c6d99
-ms.sourcegitcommit: e695bcfc69203da5d3d96f3d6a891664a0e27ae2
+ms.openlocfilehash: d497f3e536a54226ad9e7b5bb9a399f66774c25e
+ms.sourcegitcommit: e525bcf073a61e1350484719a0c3ceb6ff0d8db1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43106142"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "43153832"
 ---
 # <a name="overview-of-records"></a>Vue d’ensemble des enregistrements
 
@@ -107,9 +107,6 @@ Le contrôle de version d’enregistrement est disponible automatiquement pour t
 <br/><br/>
 
 ![Propriété statut de l’enregistrement sur le document marqué en tant qu’enregistrement](../media/recordversioning8.png)
-
-> [!NOTE]
-> Le contrôle de version d’enregistrement nécessite une licence Office 365 Entreprise E5 pour chaque utilisateur autorisé à modifier du contenu qui a été déclaré en tant qu’enregistrement dans un site SharePoint ou un compte OneDrive. Les utilisateurs disposant d’un accès en lecture seule n’ont pas besoin de cette licence.
 
 ### <a name="locking-and-unlocking-a-record"></a>Verrouillage et déverrouillage d'un enregistrement
 

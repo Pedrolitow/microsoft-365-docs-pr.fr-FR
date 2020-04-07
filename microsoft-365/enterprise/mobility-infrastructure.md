@@ -1,6 +1,6 @@
 ---
-title: 'Phase 5 : gestion des appareils mobiles'
-description: Microsoft 365 Enterprise inclut la gestion des appareils mobiles à l’aide de Microsoft Intune. Passez en revue les conditions requises et les conditions préalables, configurez Intune à l’aide de votre ressource Azure Active Directory, inscrivez iOS, macOS, Android et appareils Windows, déployer des applications, créer un profil, utiliser une stratégie de conformité et activer l’accès conditionnel pour les appareils mobiles gestion des appareils avec Microsoft 365 Enterprise.
+title: 'Phase 5 : Gestion des appareils mobiles'
+description: Microsoft 365 Enterprise inclut la gestion des appareils mobiles à l’aide de Microsoft Intune. Passez en revue les conditions requises et les conditions préalables, configurez Intune à l’aide de votre ressource Azure Active Directory, inscrivez iOS, macOS, Android et appareils Windows, déployez des applications, créez un profil, utilisez une stratégie de conformité et activez l’accès conditionnel pour la gestion des appareils mobiles avec Microsoft 365 Enterprise.
 keywords: Microsoft 365, Microsoft 365 entreprise, documentation Microsoft 365, gestion des appareils mobiles, Intune
 author: JoeDavies-MSFT
 f1.keywords:
@@ -15,12 +15,12 @@ ms.technology: ''
 ms.assetid: fb4182e6-5e78-45d0-9641-d791c4519441
 audience: ITPro
 ms.custom: microsoft-intune
-ms.openlocfilehash: f3c4e36ea650dc0e354697c6fb766f5e32c0e3d2
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: a957ef037aed1f9aba923af428c2a440790dbfba
+ms.sourcegitcommit: e525bcf073a61e1350484719a0c3ceb6ff0d8db1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42066758"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "43153891"
 ---
 # <a name="phase-5-mobile-device-management-for-microsoft-365-enterprise"></a>Phase 5 : gestion des appareils mobiles pour Microsoft 365 Enterprise
 

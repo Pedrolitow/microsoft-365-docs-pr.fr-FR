@@ -13,16 +13,42 @@ ms.collection:
 - M365-security-compliance
 localization_priority: None
 description: Utilisez les barrières relatives aux informations pour garantir la conformité de la communication à l’aide de Microsoft teams au sein de votre organisation.
-ms.openlocfilehash: 5d3abe41680a8399600fdea51df6f3b85fbd6b94
-ms.sourcegitcommit: ce6121a8e3ca7438071d73b0c76e2b6f33ac1cf7
+ms.openlocfilehash: f063a18dcadf5de74b43b2efeba3910f65e40102
+ms.sourcegitcommit: e525bcf073a61e1350484719a0c3ceb6ff0d8db1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "43029838"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "43153496"
 ---
-# <a name="learn-about-information-barriers"></a>En savoir plus sur les barrières relatives aux informations
+# <a name="information-barriers"></a>Obstacles aux informations
 
 ## <a name="overview"></a>Vue d’ensemble
+
+<!--
+
+# Information barriers (click-through test)
+
+## Overview
+
+
+
+ [![Click-Through for Information Barriers](./media/information-barriers/clickthrough-information-barriers-thumbnail.png)](./media/information-barriers/clickthrough-information-barriers.pdf)
+
+
+Click through an overview of Information Barriers: [PDF](./media/information-barriers/clickthrough-information-barriers.pdf) | [PowerPoint](https://github.com/MicrosoftDocs/microsoft-365-docs-pr/raw/Click-Through-Test/microsoft-365/compliance/media/information-barriers/Clickthrough-Information-Barriers.pptx)
+
+OLD: Move comment field here
+
+ [![Click-Through for Information Barriers](./media/information-barriers/Clickthrough_InformationBarriers_Thumbnail.png)](./media/information-barriers/Clickthrough_InformationBarriers.pdf)
+
+For the PowerPoint slide of this Click-Through, click [here](https://github.com/MicrosoftDocs/microsoft-365-docs-pr/raw/Click-Through-Test/microsoft-365/compliance/media/information-barriers/InfoBarriersExample.pptx).
+
+>[!Tip]
+>Try this new [Click-Through on information barriers](media/information-barriers/Clickthrough_InformationBarriers.pdf) for a quick overview of the essential facts.
+>
+
+--> 
+
 
 Les services de Cloud Computing Microsoft incluent de puissantes fonctionnalités de communication et de collaboration. Mais supposons que vous souhaitiez restreindre les communications entre deux groupes afin d’éviter un conflit d’intérêts au sein de votre organisation. Vous pouvez aussi souhaiter restreindre les communications entre certaines personnes au sein de votre organisation afin de protéger les informations internes. Microsoft 365 permet la communication et la collaboration entre les groupes et les organisations, de sorte qu’y a-t-il un moyen de restreindre les communications entre des groupes d’utilisateurs spécifiques lorsque cela est nécessaire ? Avec des barrières d’informations, vous pouvez le faire ! 
 

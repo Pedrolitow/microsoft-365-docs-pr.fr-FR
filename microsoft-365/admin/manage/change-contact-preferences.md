@@ -44,7 +44,7 @@ Si vous cherchez à modifier les informations de profil de l'entreprise, par exe
 
 5. Cliquez sur **Enregistrer**.
   
-Pour Office 365 entreprise, Office 365 Business Premium et Office 365 Business Essentials, lorsque vous vous êtes inscrit pour la première fois en tant qu’administrateur pour Office 365, selon le pays ou la région des utilisateurs de votre organisation, vos utilisateurs peuvent être automatiquement inscrits pour recevoir communications liées aux produits.
+Pour Office 365 entreprise, Office 365 Business Premium et Office 365 Business Essentials, lorsque vous vous êtes inscrit pour la première fois en tant qu’administrateur pour Office 365, selon le pays ou la région des utilisateurs de votre organisation, vos utilisateurs peuvent être automatiquement inscrits pour recevoir des communications liées à des produits.
   
 Pour Office 365 Petite Entreprise, en fonction du pays ou de la région, vous pouvez recevoir automatiquement les communications sur le produit.
   
