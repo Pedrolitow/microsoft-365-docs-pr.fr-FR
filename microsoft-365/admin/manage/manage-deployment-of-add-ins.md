@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
 description: Découvrez comment déployer des compléments pour les utilisateurs et les groupes de votre organisation à l’aide du déploiement centralisé dans le centre d’administration.
-ms.openlocfilehash: b2fe57bd2b3b51ac5097723613c608580da06bea
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 4baba1504bbb7edaba1243d6e774efac81570c4f
+ms.sourcegitcommit: b1ec6ba779a94ddbaab11a272e40abe1d3064532
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42361949"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "43165922"
 ---
 # <a name="manage-deployment-of-office-365-add-ins-in-the-microsoft-365-admin-center"></a>Gérer le déploiement de compléments Office 365 dans le Centre d’administration Microsoft 365
 
@@ -60,7 +60,7 @@ Selon la taille du groupe cible, vous pouvez ajouter ou supprimer des étapes de
 Avant de commencer, reportez-vous à la rubrique [Déterminer si un déploiement centralisé de compléments est approprié pour votre organisation Office 365](centralized-deployment-of-add-ins.md).
 
   
-1. Dans le centre d’administration, accédez à la page **compléments** de **paramètres** \> .
+1. Dans le centre d’administration Microsoft 365, accédez à la page des**compléments** de **paramètres** > .
     
 2. Sélectionnez **déployer un complément** en haut de la page. Sur la page vue d’ensemble, sélectionnez **suivant**.
     
@@ -101,12 +101,19 @@ L’option la plus adaptée à votre organisation dépend de votre configuration
   
 ### <a name="add-in-states"></a>États de complément
 
-Un complément peut avoir l’état **activé** ou **désactivé** .
-  
+Les administrateurs peuvent activer ou désactiver les compléments qu’ils déploient pour tous les utilisateurs à partir du centre d’administration Microsoft 365.
+
+1.    Dans le centre d’administration, accédez à la page **compléments** de **paramètres** >. 
+2.    Sélectionnez le complément déployé. 
+3.    Cliquez sur le bouton bascule d' **État** pour **activer ou** **Désactiver**le complément. 
+4.    Enregistrez les modifications.  
+
+L’un des trois États de complément est également disponible.
+ 
 |**État**|**Comment l'état se produit**|**Impact**|
 |:-----|:-----|:-----|
 |**Active**  <br/> |Un administrateur a chargé le complément et l’a affecté à des utilisateurs ou à des groupes.  <br/> |Les utilisateurs et groupes auxquels le complément est affecté voient celui-ci dans les clients concernés.  <br/> |
-|**Désactivé**  <br/> |Un administrateur a désactivé le complément.  <br/> |Les utilisateurs et les groupes auxquels le complément est affecté ne peuvent plus accéder à celui-ci.  <br/> Si l'état du complément est modifié en Actif, les utilisateurs et groupes ont de nouveau accès à celui-ci.  <br/> |
+|**Désactivé**  <br/> |Un administrateur a désactivé le complément.  <br/> |Les utilisateurs et les groupes auxquels le complément est affecté ne peuvent plus accéder à celui-ci.  <br/> Si l’état du complément est modifié sur **actif**, les utilisateurs et les groupes y auront accès à nouveau.  <br/> |
 |**Deleted**  <br/> |Un administrateur a supprimé le complément.  <br/> |Les utilisateurs et groupes auxquels le complément est affecté ne peuvent plus accéder à celui-ci.  <br/> |
    
 Envisagez de supprimer un complément s’il n’est plus utilisé. Désactiver un complément peut être judicieux si celui-ci est utilisé uniquement à des moments spécifiques au cours d'une année.
@@ -172,7 +179,6 @@ Cela empêchera tous les utilisateurs d’acquérir les compléments suivants à
     
   - Office
     
-  - iOS (iPad uniquement)
     
 - Acquisitions à partir de **AppSource**
     
@@ -217,8 +223,7 @@ Pour être conforme à RGPD pour les mineurs, vous devez vous assurer que l’un
 |Office 2016 pour Windows  <br/> |16.0.4672.1000  <br/> |
 |Office 2013 pour Windows  <br/> |15.0.5023.1000  <br/> |
 |Office 2016 pour Mac  <br/> |16.11.18020200  <br/> |
-|Office 2016 pour iOS (iPad uniquement)  <br/> |2.12.18032600  <br/> |
-|Office pour le web  <br/> |S/O  <br/> |
+|Office pour le web  <br/> |N/A  <br/> |
    
  **Pour Outlook**: 
   
@@ -230,7 +235,7 @@ Pour être conforme à RGPD pour les mineurs, vous devez vous assurer que l’un
 |Office 2016 pour Mac  <br/> |16.0.9318.1000  <br/> |
 |Outlook Mobile pour iOS  <br/> |2.75.0  <br/> |
 |Outlook Mobile pour Android  <br/> |2.2.145  <br/> |
-|Outlook.com  <br/> |S/O  <br/> |
+|Outlook.com  <br/> |N/A  <br/> |
    
  **Configuration requise pour Office 2013**
   
