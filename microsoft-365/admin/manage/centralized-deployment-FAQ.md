@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Passez en revue les réponses aux questions fréquemment posées sur le déploiement centralisé à partir du centre d’administration Microsoft 365.
-ms.openlocfilehash: d63158f70e3f905b0ee1acf994cbef207f1ab4f1
-ms.sourcegitcommit: b1ec6ba779a94ddbaab11a272e40abe1d3064532
+ms.openlocfilehash: 313e1dd7481ccdd8bbf7531d5b7433f8bbd54e38
+ms.sourcegitcommit: 732bb72a0b5ae09cb39536185aa29d6097ec72fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "43166488"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43188966"
 ---
 # <a name="centralized-deployment-faq"></a>FAQ sur le déploiement centralisé
 
@@ -33,7 +33,7 @@ Le déploiement centralisé est la méthode recommandée pour un administrateur 
 
 Le déploiement centralisé des compléments nécessite que les utilisateurs utilisent Office 365 ProPlus (et sont connectés à Office à l’aide de leurs informations d’identification de connexion de l’organisation) et disposent de boîtes aux lettres Exchange Online. Le répertoire de votre abonnement doit être dans Azure Active Directory ou être fédéré.  
  
-Le déploiement centralisé est uniquement pris en charge pour les boîtes aux lettres Outlook online. Il ne prend pas en charge le déploiement vers des boîtes aux lettres Exchange locales.
+Le déploiement centralisé est uniquement pris en charge pour les boîtes aux lettres en ligne. Il ne prend pas en charge le déploiement vers des boîtes aux lettres Exchange locales.
  
 Vous pouvez utiliser le [Vérificateur de compatibilité du déploiement centralisé Office 365](https://docs.microsoft.com/microsoft-365/admin/manage/centralized-deployment-of-add-ins?view=o365-worldwide#office-365-centralized-deployment-compatibility-checker)pour déterminer si votre abonnement est éligible. 
   
@@ -47,7 +47,7 @@ Pour plus d’informations, consultez la rubrique [attributions d’utilisateurs
    
 ## <a name="how-long-does-it-take-for-add-ins-to-show-up-for-all-users"></a>Combien de temps faut-il pour que les compléments s’affichent pour tous les utilisateurs ?  
 
-Un complément peut prendre jusqu’à 12 heures pour s’afficher pour tous les utilisateurs. La mise à jour des compléments peut prendre le même temps, passer de l’activation ou de la désactivation, ou des suppressions de compléments. 
+Un complément peut prendre jusqu’à 24 heures pour s’afficher pour tous les utilisateurs. La mise à jour des compléments peut prendre le même temps, passer de l’activation ou de la désactivation, ou des suppressions de compléments. 
   
 ## <a name="as-an-administrator-how-do-i-manage-the-user-access-to-add-ins-for-my-organization"></a>En tant qu’administrateur, comment puis-je gérer l’accès des utilisateurs aux compléments pour mon organisation ?
 

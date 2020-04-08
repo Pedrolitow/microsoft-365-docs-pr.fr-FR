@@ -19,18 +19,18 @@ search.appverid:
 - MOE150
 ms.assetid: b4527d49-4073-4b43-8274-31b7a3166f92
 description: Déterminez si votre client et vos utilisateurs Office 365 satisfont à la configuration requise, afin que vous puissiez utiliser un déploiement centralisé pour déployer des compléments Office.
-ms.openlocfilehash: 78d87c5539daa77c2babb7ffa36967c5f27e3c10
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: d6b81a5ac5ef3b5287810110e5d0582bf34bff93
+ms.sourcegitcommit: 732bb72a0b5ae09cb39536185aa29d6097ec72fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42362129"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43189027"
 ---
 # <a name="determine-if-centralized-deployment-of-add-ins-works-for-your-organization"></a>Déterminer si le déploiement centralisé des compléments fonctionne pour votre organisation
 
 [] Pour la plupart des clients qui souhaitent déployer des compléments Office à destination d'utilisateurs et de groupes au sein de leur organisation Office 365, nous recommandons d'effectuer un déploiement centralisé, lequel permet d'accéder à un maximum de fonctionnalités. Si vous êtes administrateur, utilisez ce guide pour déterminer si votre client et vos utilisateurs satisfont à la configuration requise afin que vous puissiez utiliser un déploiement centralisé.
 Le déploiement centralisé prend en charge les applications Windows, Mac, iOS, Android et en ligne.
-Un complément peut prendre jusqu’à 12 heures pour s’afficher pour le client pour tous les utilisateurs.
+Un complément peut prendre jusqu’à 24 heures pour s’afficher pour le client pour tous les utilisateurs.
   
 ## <a name="requirements"></a>Configuration requise
 
@@ -56,7 +56,7 @@ La fonctionnalité Déploiement centralisé ne prend pas en charge ce qui suit :
 - Pour les compléments Word, Excel et PowerPoint, vos utilisateurs doivent utiliser l’un des éléments suivants :
   - Sur un appareil Windows, version 1704 ou ultérieure d’Office 365 ProPlus.
   - Sur un Mac, version 15,34 ou ultérieure.
-      - Sur iOS (iPad uniquement), version 2.9.18010804 ou version ultérieure.
+
 - Pour Outlook, vos utilisateurs doivent utiliser l’un des éléments suivants : 
   - Version 1701 ou ultérieure d’Office 365 ProPlus.
   - Version 1808 ou ultérieure d’Office professionnel plus 2019 ou Office standard 2019.

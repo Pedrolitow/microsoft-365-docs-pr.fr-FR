@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
 description: Découvrez comment déployer des compléments pour les utilisateurs et les groupes de votre organisation à l’aide du déploiement centralisé dans le centre d’administration.
-ms.openlocfilehash: 4baba1504bbb7edaba1243d6e774efac81570c4f
-ms.sourcegitcommit: b1ec6ba779a94ddbaab11a272e40abe1d3064532
+ms.openlocfilehash: 74c1ceb8e9d2193e7ad7afd2b339d29d54780517
+ms.sourcegitcommit: 732bb72a0b5ae09cb39536185aa29d6097ec72fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "43165922"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43189008"
 ---
 # <a name="manage-deployment-of-office-365-add-ins-in-the-microsoft-365-admin-center"></a>Gérer le déploiement de compléments Office 365 dans le Centre d’administration Microsoft 365
 
@@ -75,7 +75,7 @@ Avant de commencer, reportez-vous à la rubrique [Déterminer si un déploiement
 7. Une coche verte apparaît lorsque le complément a été déployé. Vous pouvez suivre les instructions sur la page pour vérifier que le complément a été déployé avec succès.
 
 > [!NOTE]
-> Les utilisateurs devront peut-être relancer Office pour voir l’icône de complément apparaissent sur le ruban de l’application. Les compléments Outlook peuvent prendre jusqu’à 12 heures pour apparaître sur les rubans des utilisateurs.
+> Les utilisateurs devront peut-être relancer Office pour voir l’icône de complément apparaissent sur le ruban de l’application. Les compléments Outlook peuvent prendre jusqu’à 24 heures pour apparaître sur les rubans des utilisateurs.
     
 8. Lorsque vous avez terminé, sélectionnez **suivant**. Si vous avez déjà déployé, vous pouvez sélectionner Modifier les utilisateurs **qui ont accès au complément** afin de le déployer sur un plus grand nombre d’utilisateurs.
 
