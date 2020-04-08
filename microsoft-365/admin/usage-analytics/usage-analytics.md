@@ -18,16 +18,16 @@ search.appverid:
 - MOE150
 ms.assetid: 77ff780d-ab19-4553-adea-09cb65ad0f1f
 description: Découvrez comment votre organisation adopte les services Microsoft 365 pour communiquer et collaborer.
-ms.openlocfilehash: 0481f894a4841488b20af90cd7c00619d2ad5c98
-ms.sourcegitcommit: 2859c82b30ae9cbd3a3e4bcdebd65f18444f1a9e
+ms.openlocfilehash: c9e2b9e6b814ac9245222f5da670862e308d1ab4
+ms.sourcegitcommit: 00ce4626e1be182c5a91210a23662c9704384efa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42826380"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "43170917"
 ---
 # <a name="microsoft-365-usage-analytics"></a>Analyse de l'utilisation de Microsoft 365
----
-L’analyse de l’utilisation de Microsoft 365 n’est pas encore disponible pour la communauté du gouvernement américain Microsoft 365.
+
+L’analyse de l’utilisation de Microsoft 365 n’est pas disponible actuellement pour les clients gouvernementaux Power BI.
  
 ## <a name="overview-of-microsoft-365-usage-analytics"></a>Vue d'ensemble de l'analyse de l'utilisation de Microsoft 365
 
@@ -51,7 +51,7 @@ Ce résumé vous permet de comprendre rapidement les modèles d’utilisation da
 
 ![Image du Résumé exécutif de l’utilisation de Microsoft 365.](../../media/office365usage-exec-summary.png)
 
-## <a name="overview"></a>Présentation
+## <a name="overview"></a>Vue d’ensemble
 
 Le rapport de vue d’ensemble de Microsoft 365 contient les rapports suivants. Vous pouvez les afficher en cliquant sur l’onglet en haut de la page du rapport. Toutes les valeurs du mois figurant dans la section supérieure du rapport font référence au dernier mois complet.
 
@@ -83,7 +83,7 @@ Ce rapport contient un rapport distinct pour chaque service Microsoft 365, y com
 
 Les rapports d’activité de l’utilisateur sont disponibles pour certains services individuels. Ces rapports fournissent des données d’utilisation détaillées au niveau utilisateur jointes aux attributs Active Directory. En outre, le rapport d’adoption des services vous permet de découper les attributs Active Directory afin que vous puissiez voir les utilisateurs actifs sur tous les services individuels. Toutes les mesures sont regroupées pour le mois complet le plus récent.
 
-## <a name="faq"></a>Forum aux questions
+## <a name="faq"></a>FAQ
 
 ### <a name="is-this-template-app-going-to-be-available-through-purchase-or-will-it-be-free"></a>Cette application de modèle va-t-elle être disponible par le biais de l’achat ou sera-t-elle gratuite ?
 

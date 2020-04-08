@@ -1,20 +1,20 @@
 ---
-title: Description du service Microsoft Managed Desktop
+title: Description du service Bureau géré Microsoft
 description: Décrit les éléments inclus dans le bureau géré Microsoft en tant que service
-keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
+keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.openlocfilehash: 0668564fea300ace1bdf8ad32a34d85c2ad5a641
-ms.sourcegitcommit: 6cabf0226de1c95bff6ddb1852dac5ecdb2d6b96
+ms.sourcegitcommit: 053d42480d8aa3792ecb0027ddd53d383a029474
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/23/2019
+ms.lasthandoff: 04/07/2020
 ms.locfileid: "35830492"
 ---
-# <a name="microsoft-managed-desktop-service-description"></a>Description du service Microsoft Managed Desktop
+# <a name="microsoft-managed-desktop-service-description"></a>Description du service Bureau géré Microsoft
 
-Microsoft Managed Desktop est un service qui offre aux utilisateurs une expérience moderne sécurisée et maintient toujours les appareils à jour avec les dernières versions de Windows 10 Enterprise Edition, Office 365 ProPlus et les services de sécurité Microsoft, y compris:
+Microsoft Managed Desktop est un service qui offre aux utilisateurs une expérience moderne sécurisée et maintient toujours les appareils à jour avec les dernières versions de Windows 10 Enterprise Edition, Office 365 ProPlus et les services de sécurité Microsoft, y compris :
 
 - L’enregistrement simplifié de nouveaux appareils
 - Configuration des périphériques
@@ -29,7 +29,7 @@ Microsoft Managed Desktop est un service qui offre aux utilisateurs une expérie
 Pour plus d’informations sur les services spécifiques inclus avec le bureau géré Microsoft, consultez les autres rubriques de cette section. Si vous avez déjà décidé que Microsoft Managed Desktop est pour vous, les rubriques de la rubrique se préparer à l' [inscription dans le bureau géré Microsoft](https://docs.microsoft.com/microsoft-365/managed-desktop/get-ready/) vous fournissent les étapes à suivre pour vous préparer à rejoindre le service.
 
 - Les [régions et langues prises en charge par Microsoft Managed Desktop](regions-languages.md) expliquent les régions et les langues prises en charge par le service.
-- Pour garantir la meilleure expérience pour vos utilisateurs finaux, seuls certains appareils sont pris en charge par le bureau géré Microsoft. [Program](device-list.md) Devices spécifie les modèles et les configurations exacts des appareils que vous pouvez utiliser avec le service, que vous les fournissiez ou que vous utilisiez un partenaire.
+- Pour garantir la meilleure expérience pour vos utilisateurs finaux, seuls certains appareils sont pris en charge par le bureau géré Microsoft. [Program Devices](device-list.md) spécifie les modèles et les configurations exacts des appareils que vous pouvez utiliser avec le service, que vous les fournissiez ou que vous utilisiez un partenaire.
 - [Device services](device-services.md) spécifie les services liés aux appareils que Microsoft fournira aux abonnés.
 - La configuration de l' [appareil](device-policies.md) clarifie les stratégies de gestion des appareils mobiles par défaut et de sécurité que le service appliquera aux appareils d’enregistrement.
 - [Security](security.md) spécifie les données collectées à partir des appareils enregistrés, ainsi que les fonctionnalités et les stratégies liées à la sécurité des appareils, à la gestion des identités et des accès, à la sécurité du réseau et à la sécurité des informations.

@@ -21,32 +21,114 @@ ms.assetid: 739574d7-2c5b-4911-a549-f56ecc7d3b48
 description: Centre d’administration Microsoft 365-Découvrez les fonctionnalités qui ont été ajoutées ce mois-ci.
 ms.custom:
 - MACDashWhatsNew
-ms.openlocfilehash: cf5f24f21385832b151cf6ddd2337f18f5431a5d
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 06cc7519cae2b71581f0f50e9e8eec15fe77e568
+ms.sourcegitcommit: 053d42480d8aa3792ecb0027ddd53d383a029474
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42355335"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "43171011"
 ---
 # <a name="whats-new-in-the-microsoft-365-admin-center"></a>Nouveautés du centre d’administration Microsoft 365
 
 Nous ajoutons constamment de nouvelles fonctionnalités au [Centre d’administration Microsoft 365](microsoft-365-admin-center-preview.md), à la résolution des problèmes que nous apprendons et en apportant des modifications en fonction de vos commentaires. Jetez un œil à ce qui est disponible dès aujourd’hui. Certaines fonctionnalités sont déployées à des vitesses différentes à nos clients. Si vous ne voyez pas encore de fonctionnalité, [essayez de vous ajouter à la version ciblée](manage/release-options-in-office-365.md).
 
-Et si vous êtes intéressé par les nouveautés dans les autres centres d’administration :
+> [!IMPORTANT]
+> **«La retraite du centre d’administration classique commence en mars**<br><br>
+Lorsque vous vous connectez à admin.microsoft.com, vous accédez à chaque fois au nouveau centre d’administration. En mars, nous allons commencer à désactiver la possibilité de revenir au centre d’administration classique. Pour le moment, vous pouvez toujours revenir en arrière, mais en tant que nouveau centre d’administration, vous êtes en mesure de désactiver le commutateur pour toutes les organisations. <br><br> *Dernière mise à jour : 2 mars 2020*
 
+Et si vous êtes intéressé par les nouveautés d’autres services Cloud de Microsoft :
+
+- [Nouveautés dans Exchange Online](https://go.microsoft.com/fwlink/?linkid=2119714)
+- [Nouveautés de Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/whats-new)
 - [Nouveautés du centre de conformité Microsoft 365](https://docs.microsoft.com/Office365/SecurityCompliance/whats-new)
 - [Nouveautés du centre d’administration SharePoint](https://docs.microsoft.com/sharepoint/what-s-new-in-admin-center)
+- [Mises à jour Office](https://docs.microsoft.com/OfficeUpdates/)
 
-## <a name="january-2020---happy-new-year"></a>2020 janvier-bonne année !
+## <a name="march-2020"></a>Mars 2020
+
+### <a name="featured-feedback-fix-improve-add-user-reliability-for-licensing"></a>Correctif de commentaires en vedette : amélioration de la fiabilité de l’ajout d’utilisateur pour les licences
+
+Nous avons reçu beaucoup de commentaires des administrateurs sur la façon dont il est difficile d’attribuer des licences lors de l’ajout d’utilisateurs. Nous avons effectué la première mise à jour de ce correctif et nous avons migré vers un service en arrière-plan plus fiable pour traiter ces demandes. En cas de problème, vous recevrez un message d’erreur qui vous permettra de réessayer.
+
+:::image type="content" source="../media/MAC-WN-ImprovedLicensing.png" alt-text="Ajoutez la page de confirmation de l’utilisateur avec l’erreur.":::
+
+### <a name="microsoft-teams-home-page-card"></a>Fiche de page d’accueil de Microsoft teams
+
+Avec la mise à niveau de l’utilisation de teams, certaines développées obtiendront une carte de tableau de bord épinglée qui rend les équipes de tournage plus détectables. La carte comporte également des liens vers des formations et des documents pour aider votre organisation à travailler à distance. Il vous suffit d’accéder à la page d' **Accueil** pour afficher la nouvelle carte.
+
+:::image type="content" source="../media/MAC-WN-TeamsCard.PNG" alt-text="Fiche de page d’accueil de Microsoft teams":::
+
+### <a name="customize-your-organizations-sharepoint-mobile-app-theme"></a>Personnaliser le thème de l’application mobile SharePoint de votre organisation
+
+À l’aide du centre d’administration Microsoft 365, vous pouvez désormais personnaliser le thème de votre organisation dans l’application mobile SharePoint pour iOS et l’application mobile SharePoint pour Android. Cette fonctionnalité offre une expérience d’application intranet mobile qui peut correspondre à votre SharePoint Online pour les employés en déplacement. La personnalisation de thème inclut votre image de logo, la couleur de la barre de navigation, les couleurs du texte et des icônes, ainsi que les couleurs d’accentuation, ce qui facilite la reconnaissance.
+
+:::image type="complex" source="../media/MAC-WN-CustThemeSP.png" alt-text="Diagramme mappant les paramètres du centre d’administration vers l’application mobile.":::
+
+:::image-end:::
+
+### <a name="improvements-to-the-add-a-group-wizard"></a>Améliorations apportées à l’Assistant Ajout d’un groupe
+
+Lorsque les administrateurs ont créé un nouveau groupe et lui ont fait une équipe en même temps, ils peuvent affecter des propriétaires qui n’ont pas de licence incluant Teams. Et cela a créé quelques maux de casse. Nous avons mis à jour le flux de l’Assistant pour vérifier que les propriétaires disposent d’une licence teams et qu’ils n’ont pas la possibilité de transformer le groupe en équipe est désactivé.
+
+### <a name="microsoft-365-offerings-for-small-and-medium-businesses"></a>Offres Microsoft 365 pour petites et moyennes entreprises
+
+Nous sommes conscients qu’il s’agit d’une annonce pour le mois prochain, mais nous souhaitons s’assurer que vous êtes prêt.
+
+À partir du 21 avril, nous apportons des modifications liées à nos abonnements Office 365 pour petites et moyennes entreprises, et à Office 365 ProPlus. Ces produits utiliseront désormais la marque Microsoft 365.
+
+Les nouveaux noms de produits entrent en vigueur le 21 avril 2020. Il s’agit d’une modification apportée au nom de produit uniquement et aucune modification de prix ou de fonctionnalité n’existe pour le moment.
+
+|Nom actuel |Nouveau nom  |
+|---------|---------|
+|Office 365 Business Essentials     |   Microsoft 365 entreprise Basic      |
+|Office 365 Business Premium     |    Microsoft 365 Business standard     |
+|Microsoft 365 Business     |    Microsoft 365 Business Premium     |
+|Office 365 Business     |    Microsoft 365 apps pour les entreprises       | 
+|Office 365 ProPlus    |   Applications Microsoft 365 pour les entreprises      |
+
+### <a name="videos-training-and-docs"></a>Vidéos, formation et documents
+
+[Nouveautés de la série Web microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=2118096): dans l’épisode de ce mois-ci, nous mettons en avant les 3 ans anniversaires de Microsoft teams et couvrent de nouvelles fonctionnalités, notamment une meilleure qualité audio dans les réunions en ligne, les communications ciblées pour les responsables terrain avec l’application équipes, les équipes et l’interopérabilité de Skype client, et bien plus encore.
+
+## <a name="february-2020"></a>Février 2020
+
+### <a name="featured-feedback-fix-multi-organization-switcher"></a>Correctif de commentaires proposé : mélangeur à plusieurs organisations
+
+Nous avons reçu beaucoup de commentaires de la part des partenaires et des administrateurs concernant les défis de la gestion de plusieurs développées de Microsoft Cloud. L’une de nos premières fonctionnalités de gestion multi-organisationnelle est le commutateur de l' **organisation**, qui vous permet de modifier le développées que vous gérez dans simplement 2 clics.
+> [!TIP]
+> Vous n’avez rien à faire pour faire apparaître le commutateur de l’organisation tant que vous n’êtes pas le partenaire de l’enregistrement d’au moins une organisation.
+
+1. Dans le centre d’administration Microsoft 365, sélectionnez le nom de l’organisation.
+![Capture d’écran : en haut de la page d’accueil affichant le nom du profil de l’organisation avec l’icône du sélecteur.](../media/MAC-Organization-switcher.png)
+
+2. Dans le sélecteur d’organisation, sélectionnez l’organisation que vous souhaitez gérer.
+![Capture d’écran : en haut de la page d’accueil affichant le nom du profil de l’organisation avec l’icône du sélecteur.](../media/MAC-OrgSwitcherSelected.png)
+
+C’est littéralement !!!
+
+### <a name="groups"></a>Groupes
+
+Voici quelques-unes des modifications apportées à la zone groupes du mois :
+
+- **Trier par nom de groupe**: vous pouvez trier la liste de groupes par ordre alphabétique en sélectionnant la colonne **nom du groupe** .
+- **Restaurer des groupes office 365 supprimés**: vous n’avez plus besoin d’accéder au centre d’administration Exchange pour restaurer les groupes Office 365 supprimés. Accédez à **groupes** \> \> du **Centre d’administration Microsoft 365** les **groupes** \> supprimés (sélectionnez un groupe dans \> la liste) **groupe de restauration**. Il restaure le groupe dans la liste **groupes** et restaure le courrier électronique, les conversations, le bloc-notes, les fichiers et le calendrier du groupe.
+
+### <a name="videos-training-and-docs"></a>Vidéos, formation et documents
+
+- **Nouveautés de la série de vidéos Microsoft 365**: ce mois-ci, nous nous concentrerons sur les fonctionnalités de recherche personnalisées pour SharePoint Online, la fonctionnalité de gestion Office « what’s New » qui vous permet d’afficher ou de masquer des fonctionnalités spécifiques des utilisateurs finaux via le volet d’aide dans l’application, les dernières mises à jour de sécurité et de conformité dans Yammer, et bien plus. Voici le dernier épisode : [Nouveautés de Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=2118096)
+
+- **Documents Move**: nous avons combiné les articles du site Web d’administration d’Office 365 avec le contenu Microsoft 365 et vous avez peut-être remarqué la nouvelle URL. Par exemple, cet article est utilisé pour être hébergé à l’adresse : **docs.Microsoft.com/office365/admin/Whats-New-in-Preview**, mais l’URL est désormais : **docs.Microsoft.com/Microsoft-365/admin/Whats-New-in-Preview**. Si vous avez des pages avec des signets, vous devez mettre à jour vos liens ; Toutefois, les liens de contenu sont redirigés vers le nouveau contenu référentiel.
+
+## <a name="january-2020---happy-new-year"></a>Janvier 2020-bonne année
 
 > [!NOTE]
-> Saviez-vous qu’il existe des [Nouveautés dans](https://go.microsoft.com/fwlink/p/?linkid=2118096) la série de vidéos de Microsoft 365 sur YouTube ? Il met en évidence les dernières fonctionnalités que nous avons déployées pour les utilisateurs. Tous les mois, nous allons commencer à établir un lien vers le dernier épisode dans la section [vidéos, formation et docs](#videos-training-and-docs) . <br> <br> Voici January’s épisode : [janvier 2020-nouveautés de Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=2118096)
+> Saviez-vous qu’il existe des [Nouveautés dans](https://go.microsoft.com/fwlink/p/?linkid=2118096) la série de vidéos de Microsoft 365 sur YouTube ? Il met en évidence les dernières fonctionnalités que nous avons déployées pour les utilisateurs. Tous les mois, nous allons commencer à établir un lien vers le dernier épisode dans la section [vidéos, formation et docs](#videos-training-and-docs) . <br> <br> Voici le dernier épisode : [Nouveautés de Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=2118096)
 
 ### <a name="dark-mode"></a>Mode sombre
 
 Lors du premier déploiement du mode sombre, il n’était disponible que sur la page d’accueil. Le mode sombre est maintenant en dehors de l’aperçu et est dans la version ciblée sur la plupart des pages du centre d’administration.
 
-1. Tout d’abord, vous devez activer la publication ciblée : accédez **à paramètres paramètres** \> **** \> **organisation** paramètres de la \> **version**des profils d’organisation. 
+1. Tout d’abord, vous devez activer la publication ciblée : accédez **à paramètres paramètres** \> **Settings** \> **organisation** paramètres de la \> **version**des profils d’organisation.
 1. Puis, pour activer le mode sombre, accédez à la page d' **Accueil** , puis sélectionnez le bouton **mode sombre** . (Il se trouve en regard du champ de **recherche** , et de cet article lien vers **les** nouveautés.)
 1. Pour toute page dont le mode foncé est disponible, le bouton est en haut de la page, en regard **du nouveau centre d’administration** bascule.
 
@@ -59,6 +141,7 @@ Les administrateurs souhaitent contrôler la façon dont Microsoft communique «
 Cette fonctionnalité a été publiée pour la première fois en novembre, mais il existe quelques mises à jour de fonctionnalités que vous devez connaître : [Nouveautés de l’aperçu des nouveautés de la gestion Office nouveautés disponibles](https://techcommunity.microsoft.com/t5/microsoft-365-blog/office-what-s-new-management-preview/ba-p/1020438)
 
 ### <a name="partners"></a>Partenaires
+
 Howdy, partenaires ! (Je n’ai pas pu m’aider.) Nous disposons également d’une mise à jour de ce mois-ci. Il existe une nouvelle fonctionnalité qui permet aux partenaires de donner aux clients CSP la possibilité d’accepter leur contrat de client Microsoft (MCA) dans la section **comptes de facturation** du centre d’administration. Dans cette nouvelle expérience :
 
 1. Le client reçoit un e-mail d’invitation avec un lien pour accepter la relation partenaire et MCA.
@@ -68,7 +151,7 @@ Howdy, partenaires ! (Je n’ai pas pu m’aider.) Nous disposons également d�
 
 La liste des boîtes aux lettres de ressources a été mise à jour avec le nouveau style. Dans le centre d’administration 365 de Microsoft, accédez à **ressources** \> **salles & équipements**.
 
-### <a name="videos-training-and-docs"></a>Vidéos, formation et documents
+### <a name="videos-training-and-docs-january"></a>Vidéos, formation et documents (janvier)
 
 Consultez la formation pour les administrateurs de petite entreprise publiée en janvier :
 
@@ -135,7 +218,7 @@ Bienvenue dans l’édition d’allumage des nouveautés du centre d’administr
 - [Administration-sécurité, productivité et améliorations réseau pour Microsoft 365](https://techcommunity.microsoft.com/t5/Microsoft-365-Blog/ADMIN-Security-Productivity-and-Network-Enhancements-for/ba-p/964019).
 - [Nouveautés de Microsoft teams-allumez 2020](https://techcommunity.microsoft.com/t5/Microsoft-Teams-Blog/What-s-New-in-Microsoft-Teams-Ignite-2019/ba-p/937025).
 
-### <a name="role-based-access-control"></a>Contrôle d'accès basé sur les rôles 
+### <a name="role-based-access-control"></a>Contrôle d'accès basé sur les rôles
 
 De nombreuses modifications ont été apportées aux rôles dans le centre d’administration depuis que nous avons commencé à déployer en juin :
 
@@ -149,7 +232,7 @@ De nombreuses modifications ont été apportées aux rôles dans le centre d’a
 
 ### <a name="report-an-issue"></a>Signaler un problème
 
-L’état du service a été mis à jour vers le nouveau style et, si vous êtes concerné par un problème qui ne s’affiche pas sur votre tableau de bord d’État du service, vous pouvez **signaler un problème** pour informer Microsoft. Accédez à **** > **intégrité du service**d’intégrité.
+L’état du service a été mis à jour vers le nouveau style et, si vous êtes concerné par un problème qui ne s’affiche pas sur votre tableau de bord d’État du service, vous pouvez **signaler un problème** pour informer Microsoft. Accédez à **Health** > **intégrité du service**d’intégrité.
 
 ### <a name="viral-subscriptions"></a>Abonnements « viraux »
 
@@ -157,15 +240,17 @@ Comme vous le souhaitez, les utilisateurs peuvent activer des abonnements gratui
 
 ### <a name="user-templates"></a>Modèles de l'utilisateur
 
-Les modèles vous permettent d’ajouter facilement de nombreux utilisateurs en enregistrant et réutilisant les paramètres partagés de ces utilisateurs. Vous pouvez enregistrer des valeurs pour les rôles, les licences affectées, les informations de contact, l’emplacement, et bien plus encore. Lorsque vous utilisez le modèle pour créer un utilisateur, il obtient automatiquement la valeur enregistrée pour ces paramètres. Accédez à **** > utilisateurs**actifs**, puis sélectionnez **modèles utilisateur** pour essayer.
+Les modèles vous permettent d’ajouter facilement de nombreux utilisateurs en enregistrant et réutilisant les paramètres partagés de ces utilisateurs. Vous pouvez enregistrer des valeurs pour les rôles, les licences affectées, les informations de contact, l’emplacement, et bien plus encore. Lorsque vous utilisez le modèle pour créer un utilisateur, il obtient automatiquement la valeur enregistrée pour ces paramètres. Accédez à **Users** > utilisateurs**actifs**, puis sélectionnez **modèles utilisateur** pour essayer.
 
 ### <a name="office-whats-new-management-preview"></a>Office "What’s New" Management (aperçu)
+
 Lorsqu’une fonctionnalité Office importante est publiée dans une application Office, les utilisateurs reçoivent une carte « What’s New » pour en savoir plus sur la nouvelle fonctionnalité. Si vous ne voulez pas que les utilisateurs voient la carte, vous pouvez la masquer. Vous pouvez également choisir si vous souhaitez que les utilisateurs voient la carte en l’affichant. Accédez à **paramètres** > **Office nouveautés** en matière de gestion pour l’extraire.
 
 ### <a name="sharepoint-url-change"></a>Modification de l’URL SharePoint
+
 Techniquement, il ne s’agit pas des nouveautés du centre d’administration Microsoft 365, mais nous sommes tellement enthousiastes que nous souhaitions vous assurer que vous voyez cette nouvelle information :
 > [!IMPORTANT]
-> Vous pouvez désormais accéder au centre d’administration SharePoint avec une URL normale :https://admin.microsoft.com/SharePoint
+> Vous pouvez désormais accéder à votre centre d’administration SharePoint avec une URL normale :[https://admin.microsoft.com/SharePoint](https://admin.microsoft.com/SharePoint)
 
 Pour plus d’informations, consultez [la rubrique what’s New in the SharePoint Admin Center](https://docs.microsoft.com/sharepoint/what-s-new-in-admin-center)
 
@@ -173,7 +258,7 @@ Pour plus d’informations, consultez [la rubrique what’s New in the SharePoin
 
 Nous mettons en place des versions intéressantes de fonctionnalités sur le allume 2019, nous n’apportons donc que quelques nouvelles fonctionnalités publiées en septembre. Mais restez informé pour l’article du mois prochain, il sera publié le premier jour de flamme.
 
-### <a name="featured-feedback-fix--the-option-to-convert-the-deleted-users-mailbox-to-a-shared-mailbox-is-back"></a>Correctif de commentaires en vedette : l’option permettant de convertir la boîte aux lettres de l’utilisateur supprimé en boîte aux lettres partagée est à nouveau disponible.
+### <a name="featured-feedback-fix--the-option-to-convert-the-deleted-users-mailbox-to-a-shared-mailbox-is-back"></a>Correctif de commentaires en vedette : l’option permettant de convertir la boîte aux lettres de l’utilisateur supprimé en boîte aux lettres partagée est restaurée.
 
 Nous avons entendu vos commentaires à haute voix, et nous avons rétabli la possibilité d’accorder à d’autres personnes l’accès à la boîte aux lettres d’un utilisateur supprimé en la convertissant en **boîte aux lettres partagée**. L’ajout de ce dernier à l’Assistant Suppression d’utilisateur vous permet de décider de la marche à suivre pour les données :
 
@@ -197,9 +282,9 @@ Une mise à jour a été mise à jour vers l’un des assistants d’installatio
 Nous disposons de mises à jour pour la facturation et les abonnements ce mois-ci :
 
 - Abonnements basés sur des appareils : vous pouvez attribuer ou annuler l’affectation de licences **Office 365 ProPlus for Education (Device)** à des appareils dans le centre d’administration Microsoft 365. **Office 365 ProPlus for Education (Device)** est une licence de module complémentaire qui vous permet d’attribuer une licence à un appareil. Accédez aux services de **facturation** > **& services** pour trouver et acheter la licence.
-- Gestion des licences basées sur les utilisateurs : nous avons mis à jour la manière dont vous attribuez des licences aux utilisateurs > **actifs** des **utilisateurs dans le**nouveau style. Pour plus d’informations, voir :
-    - [Attribuer des licences aux utilisateurs](manage/assign-licenses-to-users.md)
-    - [Annuler l'assignation des licences aux utilisateurs](manage/remove-licenses-from-users.md)
+- Gestion des licences basées sur les utilisateurs : nous avons mis à jour la manière dont vous attribuez des licences aux utilisateurs > **actifs** des **utilisateurs dans le**nouveau style. Si vous souhaitez en savoir plus, consultez les articles : 
+  - [Attribuer des licences aux utilisateurs](manage/assign-licenses-to-users.md)
+  - [Annuler l'assignation des licences aux utilisateurs](manage/remove-licenses-from-users.md)
 
 ### <a name="setup-page-updates"></a>Mises à jour de la page de configuration
 
@@ -207,31 +292,32 @@ Le programme d’installation dispose maintenant de catégories et de sections, 
 
 - **Protection avancée contre les menaces** : Si votre organisation est autorisée à utiliser Office ATP et que vous ne l’avez pas encore configurée ou que vous ne l’avez pas encore activée, vous verrez cette page. Accédez au **programme d’installation pour le** tester.
 
-### <a name="report-an-issue"></a>Signaler un problème
+### <a name="report-an-issue-august"></a>Signaler un problème (août)
 
-Si vous êtes concerné par un problème qui ne s’affiche pas sur votre tableau de bord d’État du service, la fonctionnalité **rapport d’un problème** vous permettra de nous le faire rapidement et facilement. Accédez à **** > **intégrité du service**d’intégrité.
+Si vous êtes concerné par un problème qui ne s’affiche pas sur votre tableau de bord d’État du service, la fonctionnalité **rapport d’un problème** vous permettra de nous le faire rapidement et facilement. Accédez à **Health** > **intégrité du service**d’intégrité.
 
 ## <a name="july-2019"></a>Juillet 2019
 
 ### <a name="message-center"></a>Centre de messages
 
-Le centre de messages a été mis à jour vers la nouvelle conception et semble incroyable ! 
+Le centre de messages a été mis à jour vers la nouvelle conception et semble incroyable !
 
 ![Capture d’écran : Centre de messages mis à jour avec l’onglet « tous les messages actifs » sélectionné et le menu filtre ouvert.](../media/MAC-MessageCenterUpdated.png)
 
 - Vous pouvez désormais afficher **les messages par État**. Il vous suffit de sélectionner l’un des onglets : **tous les messages actifs**, **haute importance**, **messages non lus**et **messages ignorés**.
 - Vous pouvez également filtrer par **confidentialité des données**de catégorie, **planifier des modifications**, **prévenir ou résoudre des problèmes**et **rester informé** des catégories de messages.
-- Sélectionnez un message dans la liste et vous disposez de plusieurs options dans la barre de commandes : **Ignorer**, **marquer comme lu** ou **marquer comme non lu**ou **partager**. 
+- Sélectionnez un message dans la liste et vous disposez de plusieurs options dans la barre de commandes : **Ignorer**, **marquer comme lu** ou **marquer comme non lu**ou **partager**.
 - Lorsque vous ouvrez un message, vous disposez encore d’options supplémentaires :
-    - Copiez un lien du message dans votre presse-papiers pour l’enregistrer pour une version ultérieure ou pour le partager avec des collègues. 
-    -  Marquer les messages comme **lus** ou non **lus**. 
-    -  Faire part de vos commentaires sur un message en sélectionnant **Like** ou n' **aiment**pas, un volet de commentaires s’ouvre et vous demande de fournir des commentaires spécifiques sur ce que vous aimez ou n’aimez pas ce message.
+  - Copiez un lien du message dans votre presse-papiers pour l’enregistrer pour une version ultérieure ou pour le partager avec des collègues.
+  - Marquer les messages comme **lus** ou non **lus**.
+  - Faire part de vos commentaires sur un message en sélectionnant **Like** ou n' **aiment**pas, un volet de commentaires s’ouvre et vous demande de fournir des commentaires spécifiques sur ce que vous aimez ou n’aimez pas ce message.
 
 ### <a name="navigation-pane-intelligence"></a>Intelligence du volet de navigation
 
  Le volet de navigation mémorise maintenant vos dernières actions et affiche le volet dans le dernier État dans lequel vous l’avez laissé. Il rendra également les éléments fréquemment utilisés visibles par défaut.
 
 ### <a name="initial-setup--the-setup-page"></a>Configuration initiale & la page de configuration
+
 Nous avons des modifications passionnantes pour vous aider à configurer votre organisation. Tout d’abord, nous allons étudier la différence entre le **programme d’installation** et la **page de configuration**. Le **programme d’installation** fait référence à l’Assistant d’installation initial que vous avez utilisé pour l’intégration aux services en ligne de Microsoft. Cela comprend généralement trois étapes spécifiques : **connecter un domaine**, **Ajouter des utilisateurs**et **Télécharger les applications Office**. La **page de configuration** est la page dans le centre d’administration qui a recommandé des tâches de configuration pour vous assurer que vous bénéficiez de tous les abonnements, comme l’activation des fonctionnalités pour lesquelles vous avez acheté des licences.
 
 - **Programme d’installation** : l’Assistant installation initiale a été mis à jour pour les abonnements **Office 365 pour les entreprises** . Cette nouvelle conception permettra aux nouvelles organisations de passer plus rapidement de l’Assistant à un plus grand succès.
@@ -241,12 +327,12 @@ Nous avons des modifications passionnantes pour vous aider à configurer votre o
 
 - Type de produit **logiciel** -vous pouvez désormais consulter les logiciels achetés par le biais d’un fournisseur de services Cloud (CSP). Pour afficher vos téléchargements et clés, accédez à l’onglet**logiciels** des services de **facturation** > **& services** > .
 - Vous pouvez afficher les produits et services Azure modernes à partir du centre d’administration Microsoft 365, que vous les achetiez auprès de Microsoft ou d’un fournisseur tiers. Exemples de produits Azure modernes inclus :
-    - Instances virtuelles réservées Azure
-    - Plans de prise en charge Azure
-    - Avantages de l’utilisation hybride Azure (AHUB)
-    - Gérer les applications
-    - Services d’appareil
-    - Abonnements Azure
+  - Instances virtuelles réservées Azure
+  - Plans de prise en charge Azure
+  - Avantages de l’utilisation hybride Azure (AHUB)
+  - Gérer les applications
+  - Services d’appareil
+  - Abonnements Azure
 
 ### <a name="simplify-multi-factor-authentication"></a>Simplifier l’authentification multifacteur
 
@@ -272,30 +358,35 @@ L’affichage du centre d’administration en mode sombre est en préversion ! 
 
 Cette nouvelle expérience permet de voir plus facilement qui dispose des autorisations d’administrateur et d’affecter des rôles qui accordent le niveau d’accès approprié à vos administrateurs. Nous avons également ajouté des rôles supplémentaires à partir d’Azure AD afin de ne pas perdre de temps à passer à plusieurs centres d’administration.
 Que pouvez-vous faire d’autre ici ?
+
 - Exportez la liste de tous les administrateurs de votre organisation qui sont affectés à des rôles Azure Active Directory dans Microsoft 365.  
-- Afficher tous les administrateurs affectés à un rôle spécifique, ajouter ou supprimer des administrateurs d’un rôle spécifique, Rechercher des rôles par nom et par mot clé, et en savoir plus sur ce que chaque rôle autorise un utilisateur. 
+- Afficher tous les administrateurs affectés à un rôle spécifique, ajouter ou supprimer des administrateurs d’un rôle spécifique, Rechercher des rôles par nom et par mot clé, et en savoir plus sur ce que chaque rôle autorise un utilisateur.
 - Recherchez rapidement un rôle spécifique et créez des filtres.
 
 ### <a name="payment-method"></a>Mode de paiement
+
 Nous avons mis à jour votre mode de paiement pour vos abonnements. Accédez à **facturation** > **&** > **paiement**des paiements. Vous pouvez voir vos modes de paiement dans un affichage de liste. Sélectionnez un élément dans la liste pour le supprimer, le modifier et voir facilement l’abonnement auquel ce mode de paiement est associé.
 
 ## <a name="may-2019"></a>Mai 2019
 
 ### <a name="mays-featured-fix---case-sensitivity"></a>Correctifs proposés pour les majuscules et les minuscules
-À présent, lorsque vous recherchez des boîtes aux lettres, des contacts, des ressources et des autorisations de boîte aux lettres partagées, vos termes de recherche n’ont pas à respecter la casse. 
+
+À présent, lorsque vous recherchez des boîtes aux lettres, des contacts, des ressources et des autorisations de boîte aux lettres partagées, vos termes de recherche n’ont pas à respecter la casse.
 
 **Gestion des utilisateurs et des groupes** Ce mois-ci, nous avons mis à jour **bloquer l’utilisateur**, **Réinitialiser le mot de passe**, le mode liste de **contacts** , l’affichage liste de **groupes** et les pages de détails du **groupe** sur le nouveau style Centre d’administration.
+
 - L’affichage liste des nouveaux **groupes** vous permet d’obtenir des données plus riches sur vos groupes, et vous pouvez personnaliser le mode d’affichage de vos données, et la liste des groupes, le mode d’affichage de vos données. Par exemple, vous pouvez désormais filtrer sur des **groupes avec** teams pour déterminer si vos groupes font partie d’une équipe et vous pouvez ajouter la colonne **État des équipes** .
-- La liste de groupes fournit également toutes les améliorations que nous avons apportées à l’expérience de liste dans la gestion des utilisateurs, y compris les actions rapides et la barre de commandes contextuelle. 
+- La liste de groupes fournit également toutes les améliorations que nous avons apportées à l’expérience de liste dans la gestion des utilisateurs, y compris les actions rapides et la barre de commandes contextuelle.
 
 **Recommandations**<br>
 Vous pouvez voir une nouvelle recommandation dans votre centre d’administration : nous avons ajouté 4 nouveaux. Bien entendu, vous ne verrez des recommandations que si nous pensons qu’elle sera avantageuse pour votre organisation. Mais n’attendez pas que nous affichions la recommandation : vous pouvez l’ajouter à partir de la bibliothèque de cartes.
-- **Expiration du mot de passe** : nous recommandons que les mots de passe soient configurés pour **ne jamais expirer**. Si votre organisation a un paramètre différent, vous pouvez voir cette recommandation. 
+
+- **Expiration du mot de passe** : nous recommandons que les mots de passe soient configurés pour **ne jamais expirer**. Si votre organisation a un paramètre différent, vous pouvez voir cette recommandation.
 - **Administrateurs globaux trop nombreux** : étant donné qu’un trop grand nombre d’administrateurs globaux est une menace de sécurité, si vous avez plus de 4 administrateurs globaux, vous verrez cette recommandation. Nous vous suggérons de donner aux utilisateurs uniquement l’accès dont ils ont besoin pour effectuer leur travail.
 - Fonctionnalité **Intune Device protection** : si vos licences incluent Intune et que vous n’avez pas fini de configurer Intune ou inscrit vos appareils, nous vous recommandons de créer une stratégie Intune afin de protéger les fichiers de votre organisation lorsque les utilisateurs y accèdent à partir de leurs appareils mobiles.
 - **Obtenir les mises à jour mensuelles des fonctionnalités Office** : nous avons reçu des commentaires de nos très petits clients qui, lorsqu’ils reçoivent les mises à jour mensuelles des fonctionnalités Office, leurs utilisateurs sont plus heureux. Par conséquent, si vous êtes une très petite entreprise et que vous obtenez actuellement vos mises à jour de fonctionnalité Office tous les six mois, vous verrez cette recommandation.
 
-**Paramètres** <br>
+**Settings** <br>
 En ce qui concerne les paramètres, il y a eu quelques modifications. Il suffit de mettre à jour les paramètres existants vers le nouveau style du centre d’administration. Lors de la progression et de l’ajout de nouveaux paramètres que vous n’avez jamais vus auparavant, nous commencerons à les mentionner ici. Et nous disposons d’un paramètre unique pour annoncer : **authentification moderne**. Oui, il existe un nouveau paramètre pour activer **l’authentification moderne**! Pour l’extraire, accédez à **paramètres** > **services &** > **l’authentification moderne**des compléments.
 
 ## <a name="april-2019"></a>Avril 2019
@@ -310,28 +401,31 @@ Pour avril, nous proposons l’Assistant **Ajout** d’un utilisateur qui vous g
 Vous pouvez procéder de deux manières : <br>
 
 1. À partir de la page d' **Accueil** , sélectionnez **Ajouter un utilisateur** à partir de la carte de **gestion des utilisateurs** . L’Assistant s’ouvre directement à cet emplacement, vous n’avez donc pas à vous rendre à partir d’un travail que vous effectuez sur la page d' **Accueil** .
-2. Accédez à **** > utilisateurs**actifs**, puis sélectionnez Ajouter un **utilisateur** à partir de la barre de commandes.
+2. Accédez à **Users** > utilisateurs**actifs**, puis sélectionnez Ajouter un **utilisateur** à partir de la barre de commandes.
 <br><br>
+
 Nous avons apporté quelques modifications supplémentaires à la **gestion des utilisateurs**, voici une liste rapide :
+
 - Le volet **gérer les rôles** a été mis à jour vers le nouveau style et est accessible. Nous avons également mis à jour les volets **bloquer l’utilisateur** et **Supprimer l’utilisateur** avec le nouveau style.
 - Gérer la position des **licences produit** modifiées dans la barre de commandes.
 - Il est désormais plus facile de modifier la photo d’un utilisateur. Dans **utilisateurs actifs** , sélectionnez un utilisateur, puis **Modifiez la photo** sous son image.
 
-### <a name="but-wait-theres-more"></a>Mais attendez ! Il y a plus...
+### <a name="but-wait-theres-more"></a>Mais attendez ! Il y a plus
+
 - Il y a une nouvelle bannière de configuration sur la page d' **Accueil** qui s’affiche si vous n’avez pas terminé les étapes de configuration, comme l’ajout d’un domaine, l’ajout d’utilisateurs et le téléchargement d’applications Office.
-- La liste de **groupes** et le volet d’informations ont été mis à jour avec le nouveau style. Accédez > **** à **groupes groupes pour**afficher les modifications. 
-    - En parlant de groupes, nous avons également ajouté un onglet **Microsoft teams** au volet d’informations groupes, dans lequel vous pouvez transformer n’importe quel groupe Office 365 en équipe. Pour « teamify » un groupe, sélectionnez un groupe Office 365 dans la liste, sélectionnez l’onglet **Microsoft** Teams, puis **créer une équipe**. Si le groupe est déjà une équipe, vous obtiendrez un lien pour le gérer à partir du **Centre d’administration teams**.
-    - Enfin, vous pouvez ajouter l' **État teams** à la liste des **groupes** . Dans l’en-tête de colonne, sélectionnez **choisir** > les**États** > des équipes, puis**Enregistrer**.
+- La liste de **groupes** et le volet d’informations ont été mis à jour avec le nouveau style. Accédez > **Groups** à **groupes groupes pour**afficher les modifications.
+  - En parlant de groupes, nous avons également ajouté un onglet **Microsoft teams** au volet d’informations groupes, dans lequel vous pouvez transformer n’importe quel groupe Office 365 en équipe. Pour « teamify » un groupe, sélectionnez un groupe Office 365 dans la liste, sélectionnez l’onglet **Microsoft** Teams, puis **créer une équipe**. Si le groupe est déjà une équipe, vous obtiendrez un lien pour le gérer à partir du **Centre d’administration teams**.
+  - Enfin, vous pouvez ajouter l' **État teams** à la liste des **groupes** . Dans l’en-tête de colonne, sélectionnez **choisir** > les**États** > des équipes, puis**Enregistrer**.
 - **Nouveaux rôles d’administrateur limité** : nous avons publié certains nouveaux rôles d’administrateur afin que vous puissiez donner aux utilisateurs uniquement l’accès dont ils ont besoin.
-    -  **Administrateur Kaizala**: les utilisateurs de ce rôle sont autorisés à effectuer toutes les tâches de gestion dans Microsoft Kaizala, notamment la création et la gestion des utilisateurs dans Kaizala Directory, la gestion des groupes de Kaizala, la gestion des cartes d’action et des connecteurs, ainsi que la création de demandes de service.
-    - **Administrateur de recherche**: les utilisateurs de ce rôle ont un accès total à toutes les fonctionnalités de gestion de la recherche Microsoft dans le centre d’administration 365 de Microsoft. Les administrateurs de la recherche peuvent déléguer les rôles d’administrateur de recherche et d’éditeur de recherche aux utilisateurs, et créer et gérer du contenu, comme les signets, Q&des éléments et des emplacements. En outre, ces utilisateurs peuvent afficher le centre de messages, surveiller l’état du service et créer des demandes de service.
-    - **Éditeur de recherche**: les utilisateurs de ce rôle peuvent créer, gérer et supprimer du contenu pour Microsoft Search dans le centre d’administration 365 de Microsoft, y compris les signets, Q&des éléments et des emplacements.
+  - **Administrateur Kaizala**: les utilisateurs de ce rôle sont autorisés à effectuer toutes les tâches de gestion dans Microsoft Kaizala, notamment la création et la gestion des utilisateurs dans Kaizala Directory, la gestion des groupes de Kaizala, la gestion des cartes d’action et des connecteurs, ainsi que la création de demandes de service.
+  - **Administrateur de recherche**: les utilisateurs de ce rôle ont un accès total à toutes les fonctionnalités de gestion de la recherche Microsoft dans le centre d’administration 365 de Microsoft. Les administrateurs de la recherche peuvent déléguer les rôles d’administrateur de recherche et d’éditeur de recherche aux utilisateurs, et créer et gérer du contenu, comme les signets, Q&des éléments et des emplacements. En outre, ces utilisateurs peuvent afficher le centre de messages, surveiller l’état du service et créer des demandes de service.
+  - **Éditeur de recherche**: les utilisateurs de ce rôle peuvent créer, gérer et supprimer du contenu pour Microsoft Search dans le centre d’administration 365 de Microsoft, y compris les signets, Q&des éléments et des emplacements.
 - Ce mois-ci contient une Bonanza des modifications de **facturation** ...
-    - Vous pouvez maintenant mettre à jour le CVV pour les cartes de crédit existantes sans avoir à le supprimer et à le rajouter. Vous pouvez mettre à jour le CVV en accédant à **Bill** > **Payment Methods**.
+  - Vous pouvez maintenant mettre à jour le CVV pour les cartes de crédit existantes sans avoir à le supprimer et à le rajouter. Vous pouvez mettre à jour le CVV en accédant à **Bill** > **Payment Methods**.
     - Nous avons facilité la localisation de vos **factures** et comprenons les problèmes de facturation que votre compte peut rencontrer. À présent, vous pouvez voir vos factures dans le navigateur Web au lieu de télécharger le PDF. Accédez à **factures** > et**factures.**
     - Dans la page **Products & services** , nous regroupons maintenant vos informations d’abonnement si vous avez plusieurs abonnements du même type.
 
-## <a name="march-2019---weve-officially-released-the-admin-center"></a>Mars 2019-nous avons officiellement publié le centre d’administration.
+## <a name="march-2019---weve-officially-released-the-admin-center"></a>Mars 2019-nous avons officiellement publié le centre d’administration
 
 Si vous avez manqué les nouvelles, nous avons publié officiellement le nouveau centre d’administration 365 de Microsoft. Voici le billet de blog où nous l’avons annoncé : [le nouveau centre d’administration Microsoft 365 disponible aujourd’hui](https://techcommunity.microsoft.com/t5/Microsoft-365-Blog/The-new-Microsoft-365-admin-center-available-today/ba-p/377870). Pour mars, nous allons compter sur le billet de blog pour vous permettre de consulter les fonctionnalités publiées-plus, vous pouvez également lire le billet pour les fonctionnalités qui sont publiées dans un avenir proche, ce que nous ne pouvons pas faire dans le contenu principal.
 <br> ![Capture d’écran de la page d’accueil du centre d’administration Microsoft 365.](../media/M365AC-HomePage.png) <br>
@@ -343,16 +437,16 @@ Comme toujours, vos commentaires sont importants pour nous, donc conservez-le !
 
 Ce mois-ci, nous allons nous concentrer sur toutes les améliorations que nous avons apportées aux domaines Affectionately, appelées « facturation et abonnements ». Par le passé, vous n’avez probablement pas fait référence à ces éléments Affectionately, mais nous pensons que vous allez maintenant...
 
-- **Modes de paiement** -nous avons appris que la mise à jour de votre mode de paiement était difficile et que nous ayons apporté beaucoup de modifications. Accédez à **** > **modes de paiement**de facturation. Vous pouvez facilement voir vos modes de paiement, comme votre carte Visa, et l’abonnement auquel elle est associée. Dans votre liste de modes de paiement, sélectionnez le menu **plus** (3 petits points en regard de la date d’expiration), puis sélectionnez **afficher les abonnements**. Vous pouvez également modifier et supprimer vos modes de paiement à l’aide du menu **plus** .
-- **Compte de facturation** : les clients disposant d’une publication ciblée voient d’abord la page nouveau compte de facturation, puis nous les déroulerons vers le monde entier. Lorsqu’elle est disponible pour vous, accédez au **** > **compte de facturation**de facturation. Que pouvez-vous faire dans la page nouveau compte de facturation ? Je suis heureux de vous demander :
+- **Modes de paiement** -nous avons appris que la mise à jour de votre mode de paiement était difficile et que nous ayons apporté beaucoup de modifications. Accédez à **Billing** > **modes de paiement**de facturation. Vous pouvez facilement voir vos modes de paiement, comme votre carte Visa, et l’abonnement auquel elle est associée. Dans votre liste de modes de paiement, sélectionnez le menu **plus** (3 petits points en regard de la date d’expiration), puis sélectionnez **afficher les abonnements**. Vous pouvez également modifier et supprimer vos modes de paiement à l’aide du menu **plus** .
+- **Compte de facturation** : les clients disposant d’une publication ciblée voient d’abord la page nouveau compte de facturation, puis nous les déroulerons vers le monde entier. Lorsqu’elle est disponible pour vous, accédez au **Billing** > **compte de facturation**de facturation. Que pouvez-vous faire dans la page nouveau compte de facturation ? Je suis heureux de vous demander :
   - Mettez à jour l’adresse et les autres informations de contact dans votre profil d’organisation directement à partir de cette page. Vous n’avez pas besoin d’accéder au profil de l'**organisation** **paramètres** > , sauf si vous le souhaitez.
   - Et nous simplifions la vie pour les clients de licences directes ou en volume, vous pouvez accepter et passer en revue les accords des clients à partir des **comptes de facturation**. Vous pouvez également vous connecter à d’autres développées, ce qui vous permet de lier les développées pour partager des licences et des ressources.
 - Nous avons également réalisé quelques améliorations plus petites et quelques correctifs de bogues :
   - Réactiver un abonnement avec un paiement de facture
   - Modifier l’adresse d’utilisation du service pour vos abonnements
-  - Et sur la page Inventory Details, nous avons ajouté des améliorations de notification, nous vous avons lié à la page réelle où vous pouvez effectuer le travail, et il y a plus d’actions sur la carte Inventory details. Accédez à **facturation** > **** > -**afficher les détails** sur toute facture.
+  - Et sur la page Inventory Details, nous avons ajouté des améliorations de notification, nous vous avons lié à la page réelle où vous pouvez effectuer le travail, et il y a plus d’actions sur la carte Inventory details. Accédez à **facturation** > **Bills** > -**afficher les détails** sur toute facture.
 
-## <a name="january-2019---happy-new-year"></a>2019 janvier-bonne année !
+## <a name="january-2019---happy-new-year"></a>Janvier 2019-bonne année
 
 - Toujours en cours d’ajout de **services & compléments** -nous avons mis à jour davantage les **paramètres > services &** les pages de compléments. Essayez les applications ou les rapports intégrés pour afficher les derniers.
 - **Vous recherchez des améliorations ?** Ne pas Rechercher plus que la zone de **recherche** dans la barre de commandes. Il a été mis à jour pour vous permettre de rechercher des tâches. Par exemple, essayez « réinitialisation du mot de passe » ou « ajouter un utilisateur ».
@@ -361,64 +455,4 @@ Ce mois-ci, nous allons nous concentrer sur toutes les améliorations que nous a
 
 Nous avons regroupé les **licences et les applications** dans le volet des détails de l’utilisateur en fonction de vos commentaires. Nous avons initialement séparé les deux fonctionnalités pour fournir de l’espace pour les détails de toutes les licences et les possibilités de toutes les applications. Nous avons appris que le fait de séparer les licences et les applications en deux volets a ajouté la confusion. Nous avons écouté et avons rassemblé les licences et les applications dans un seul onglet. À présent, vous pouvez vous assurer qu’une application est désactivée dans toutes les licences affectées à un utilisateur dans un volet. Lait et les cookies. Licences et applications. Nous obtenons maintenant.
 
-Découvrez : **les utilisateurs > les utilisateurs actifs > modifier** ou **Ajouter des licences utilisateur > et des applications**.
-
-## <a name="december-2018"></a>Décembre 2018
-
-- **Services & compléments** -en octobre, nous avons mis à jour les services de **paramètres** \> **& les compléments** avec notre nouveau style de conception, mais toutes les pages de paramètres étaient toujours dans le style classique. Ce mois-ci, nous avons commencé à mettre à jour les paramètres réels vers la nouvelle conception. Extrayez les **réservations** pour voir la nouvelle apparence.
-- **Gestion des utilisateurs** : gérer le nom d’utilisateur, l’alias et l’adresse de messagerie principale.
-- Nous avons ajouté deux cartes d’accueil à la bibliothèque. Vous pouvez lire les descriptions complètes dans la bibliothèque.
-  - **Enregistrement d’appareil Intune**
-  - **Domaines**
-- **Recommandations** : une nouvelle configuration de recommandation s’affiche dans votre centre d’administration. Bien entendu, vous ne verrez des recommandations que si nous pensons qu’elle sera avantageuse pour votre organisation. Mais n’attendez pas que nous affichions la recommandation : vous pouvez l’ajouter à partir de la bibliothèque de cartes.
-  - **Protéger les informations sensibles** : nous vous recommandons de créer une stratégie de protection contre la perte de données (DLP) pour détecter les éléments contenant des informations sensibles qui sont partagés avec des personnes extérieures à votre organisation.
-
-## <a name="november-2018"></a>Novembre 2018
-
-- La zone de recherche est retour ! Et nous l’avons légèrement déplacée. Il est toujours en haut de la page d’accueil, mais il se trouve maintenant à droite de la page, à côté du bouton **Ajouter une carte** . <br> ![Capture d’écran expliquant que la zone de recherche est située dans le coin supérieur droit de la page d’accueil.](../media/M365PreviewSearchBox.png)
-
-- Nous avons ajouté des cartes pour le tableau de bord. Il vous suffit d’accéder au centre d’administration et de sélectionner **Add Card (ajouter une carte** ) pour afficher les nouvelles cartes :
-  - **Rapport d’utilisateurs actifs office 365** : Surveillez l’utilisation des services Office 365 que vous avez achetés.
-  - **Office 365 Software** -installer ou déployer le logiciel Office 365 ProPlus et voir combien de personnes sous licence l’ont activé.
-  - **Azure Active Directory** -vous permet d’accéder rapidement aux tâches Azure ad courantes, telles que les réinitialisations de mot de passe en libre-serveur, la personnalisation de la connexion et l’ajout d’applications.
-- La tâche rapide **exporter des utilisateurs** a été ajoutée à la barre de commandes sur la page utilisateurs actifs. ![Capture d’écran affichant les utilisateurs d’exportation dans la barre de commandes en regard de actualiser.](../media/M365PreviewExportUsersQT.png)
-- Acheter des services propose des améliorations supplémentaires pour novembre. Et ils sont tous efficaces ! Pour y accéder, accédez à facturation > achat de services. <br>![Capture d’écran illustrant la page acheter des services avec 3 nouvelles améliorations.](../media/M365PreviewBillingPurchasServices.png)
-  > 1.  En haut de la page, vous pouvez faire pivoter entre les plans d’entreprise et d’éducation. Cela vous permettra de trouver ce que vous recherchez.
-  > 2.  Nous avons ajouté une zone de recherche afin que vous n’ayez pas à faire défiler en continu pour trouver ce que vous recherchez.
-  > 3.  Enfin, nous avons trié de façon logique les offres que vous pouvez acheter dans des sections que vous pouvez développer ou réduire. Vous n’avez pas besoin d’acheter les **applications et services Office**? Réduisez cette section et concentrez-vous sur les plans Microsoft 365.
-
-## <a name="october-2018"></a>Octobre 2018
-
-- Il existe une nouvelle façon d’acheter des abonnements dans le centre d’administration 365 de Microsoft. Accédez à la rubrique **acheter des services** pour voir la conception entièrement repensée qui facilite la recherche, la comparaison de plans et d’autres nouvelles fonctionnalités qui facilitent l’achat d’un abonnement. <br/>![Comparaison des plans des services d’achat dans la version d’évaluation du centre d’administration Microsoft 365](../media/0ad5acf1-8ffc-44bf-aac2-c21269910e65.png)
-
-- La page **services et compléments** a été mise à jour avec la nouvelle apparence, mais tout le reste fonctionne exactement de la même manière. Bien entendu, vous devez consulter la barre de commandes pour voir les nouvelles choses que vous pouvez effectuer, telles que le filtrage et la modification de la liste en mode compact. Dans le volet de navigation, accédez à **paramètres** \> des **compléments services &amp; ** pour l’extraire. <br/>![Page Paramètres et compléments dans la version d’évaluation du centre d’administration Microsoft 365](../media/af9a3ed3-bfe6-438b-b4b5-2ca4164f8e3f.png)
-
-## <a name="september-2018"></a>Septembre 2018
-
-- **Améliorations** de la maison La page d’accueil a été entièrement refaite et nous ne pouvons pas vous attendre pour essayer de le faire et voir ce que vous pensez. Il s’agit de votre page d’accueil personnelle et vous n’affectez pas les pages d’accueil des autres administrateurs de votre organisation. <br/>![Capture d’écran : page d’accueil du centre d’administration Microsoft 365.](../media/d1a497f1-30e6-4c1a-9bb2-d4d7895906da.png)
-
-  - Vous pouvez ajouter, supprimer et déplacer des cartes de page d’accueil dans la page d’accueil. Sélectionnez **+ Ajouter une carte** dans le coin supérieur droit pour afficher les cartes disponibles dans la bibliothèque de cartes, puis faites-les glisser n’importe où sur la page d’accueil. Vous n’aimez pas où il a été débarqué ? Faites-la glisser jusqu’à l’emplacement de votre choix. Vous n’avez même pas besoin d’enregistrer plus.
-
-  - Prendre l’organisation au niveau suivant en regroupant les cartes en sections. Nous avons créé deux sections par défaut pour vous : **notions de base** et **périphériques et mises à jour.** Très prochainement, vous serez en mesure d’ajouter, de supprimer et de renommer des sections afin de créer une page d’accueil qui vous convient.
-
-  - La plupart des cartes sont informatives et exploitables, ce qui signifie que vous disposez d’informations juste-à-temps pour vous aider à effectuer vos tâches quotidiennes plus rapidement et intelligemment.
-
-  - Le volet de navigation a été réorganisé et vous pouvez le personnaliser pour vos tâches rapides. Sélectionnez **modifier** dans la partie inférieure du volet de navigation pour démarrer la personnalisation. <br/>![Volet de navigation de l’aperçu du centre d’administration Microsoft 365](../media/7d5568cc-9ce8-40b2-aa87-e777fcd455e3.png)
-
-- **Facturation** Vous remarquerez probablement certaines des modifications les plus importantes apportées au centre d’administration 365 de Microsoft dans la section facturation. Vous pouvez gérer les abonnements et les applications que vous avez achetés auprès de Microsoft ou d’un autre fournisseur, y compris les nouvelles expériences en matière de gestion des stocks, d’historique des commandes, de modes de paiement et de facturation.
-
-  - La gestion des abonnements a été repensée afin de vous offrir une nouvelle expérience de gestion de l’inventaire pour les types de produits, notamment les applications, les logiciels et les compléments. Il est maintenant appelé **Products &amp; services** pour mieux refléter la prise en charge des nouveaux types de produits ajoutés. Vous pouvez désormais choisir d’avoir une carte ou une vue de table des produits et des services, et vous pouvez rechercher et filtrer pour trouver rapidement ce que vous recherchez. <br/>![Produits et services dans la version d’évaluation du centre d’administration Microsoft 365](../media/f1bba7dc-2034-4a53-b4ad-b7fbef3fb442.png)
-
-  - Il est désormais plus facile que jamais d’attribuer une licence de produit à vos utilisateurs. Sélectionnez votre produit acheté, puis affectez le produit. Vous pouvez également afficher les utilisateurs auxquels un produit spécifique a déjà été affecté. <br/>![Détails sur les produits de la facturation dans l’aperçu du centre d’administration Microsoft 365](../media/82422685-e1b7-4f3f-aea8-1819df9d9311.png)
-
-  - **Changer de plan** est désormais appelé * * upgrades * * et enfin, les mises à niveau d’abonnement se produisent en arrière-plan, ce qui vous évite de suivre la mise à niveau. Enfin, il n’y a plus de limitation de licence sur les mises à niveau.
-
-- **Gestion des utilisateurs** Nous avons apporté un grand nombre de modifications à la gestion des utilisateurs pour vous aider à effectuer plus rapidement votre travail. Nous avons mis à jour la page * * utilisateurs actifs * * et le volet d’informations de l’utilisateur. Voici quelques-unes des modifications les plus impressionnantes :
-
-  - La page **utilisateurs actifs** contient une nouvelle conception et une nouvelle disposition. Vous n’aimez pas l’apparence de la liste ? Sélectionnez **modifier l’affichage** (en regard de **filtre**) et modifiez la liste de la liste **normal** à la liste **compacte**. La liste compacte est particulièrement utile si vous disposez d’un grand nombre d’utilisateurs au sein de votre organisation. <br/>![Page utilisateurs actifs en aperçu](../media/4dd9f1c9-ef23-4194-9ff8-5206ba2930f8.png)
-
-  - La barre de commandes (où **Search** Lives) est dynamique et la liste d’actions varie en fonction du nombre d’utilisateurs que vous avez sélectionnés : aucun utilisateur, un utilisateur ou plusieurs utilisateurs. Vous verrez également le nombre d’utilisateurs que vous avez sélectionnés en regard de **recherche**. <br/>![Microsoft 365 aperçu de la barre de commandes utilisateurs actifs.](../media/9576bd19-31a5-4e59-a8dd-0663a833def0.png)
-
-  - Vous pouvez effectuer des tâches rapides telles que la réinitialisation des mots de passe pour un ou plusieurs utilisateurs directement à partir de l’affichage de liste.
-
-  - Les détails et les paramètres de l’utilisateur sont désormais organisés par les onglets suivants : **Account**, **Devices**, **licenses**, **apps**, **mail**et **OneDrive**. Auparavant, un grand nombre de ces paramètres étaient situés sur plusieurs écrans. <br/>![Volet de détails des utilisateurs dans la version d’évaluation du centre d’administration.](../media/60c6b9d3-d62f-4b8d-97db-41ff247b1bf0.png)<br/>
+Découvrez : **les utilisateurs > des utilisateurs actifs > modifier** ou **Ajouter des licences utilisateur > des licences et des applications**

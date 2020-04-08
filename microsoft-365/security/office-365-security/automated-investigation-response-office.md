@@ -15,12 +15,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 description: Obtenez une vue d’ensemble des fonctionnalités d’analyse et de réponse automatisées dans Office 365 Advanced Threat Protection Plan 2.
 ms.custom: air
-ms.openlocfilehash: e8e10160da4ddb43b47ecf41e2184dc1b8953941
-ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
+ms.openlocfilehash: 1fa99d7676a16ccd83319e5fbf3a6fedb72aec12
+ms.sourcegitcommit: 00ce4626e1be182c5a91210a23662c9704384efa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/28/2020
-ms.locfileid: "43033445"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "43170951"
 ---
 # <a name="automated-investigation-and-response-air-in-office-365"></a>Recherche et réponse automatiques dans Office 365
 
@@ -75,7 +75,7 @@ Dans le cadre de l’AIR, les règles de sécurité sont déployées en plusieur
 
 La phase 1 prend également en charge les enquêtes de courrier électronique déclenchées par l’administrateur (à l’aide de l' [Explorateur de menaces](threat-explorer.md)).
 
-La phase 2 est désormais en cours avec les règles suivantes en **Aperçu public**, en fournissant des recommandations pour les actions et en aidant les administrateurs de la sécurité à examiner les problèmes :
+La phase 2 est désormais en cours avec les règles suivantes dans la version **préliminaire publique**, en fournissant des recommandations pour les actions et en aidant les administrateurs de la sécurité à examiner les problèmes :
 - Utilisateur signalé comme compromis (préversion publique)
 
 D’autres règles seront publiées au fur et à mesure de leur exécution. Consultez la feuille de [route Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap) pour voir les autres éléments planifiés et bientôt disponibles.

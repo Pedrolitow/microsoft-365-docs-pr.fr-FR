@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 09/19/2019
+ms.date: 04/07/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: Fournit une présentation des composants, des plans et des chemins de déploiement pour Microsoft 365 pour les entreprises.
-ms.openlocfilehash: c66fb5e4d8cd0d24ec20a50ca2ead3f3b9e0851d
-ms.sourcegitcommit: 9ca28ae8f7804eb488cf76ca4b09fe88787e0a49
+ms.openlocfilehash: 043953ddfd38a9ef5119546ec5672dd46e8acb53
+ms.sourcegitcommit: 053d42480d8aa3792ecb0027ddd53d383a029474
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43113516"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "43175189"
 ---
 # <a name="microsoft-365-for-enterprise-overview"></a>Vue d’ensemble de Microsoft 365 pour entreprise
 
@@ -45,7 +45,7 @@ Microsoft 365 pour Enterprise est disponible en trois plans.
 |:-------|:-----|
 | E3 | Accédez aux produits et fonctionnalités principaux dans Microsoft 365 afin d’améliorer la productivité de l’espace de travail et de favoriser l’innovation, en toute sécurité. |
 | E5 | Accédez aux derniers produits et fonctionnalités de Microsoft 365, y compris les outils de protection avancée contre les menaces, de sécurité et de collaboration.. Comprend toutes les fonctionnalités E3's, ainsi que les outils de sécurité, vocaux et d’analyse de données avancés. |
-| F1 | Connectez-vous à vos collaborateurs terrain par le biais d’outils et de ressources spécialisés qui leur permettent d’effectuer leur travail. |
+| F3 | Connectez-vous à vos collaborateurs terrain par le biais d’outils et de ressources spécialisés qui leur permettent d’effectuer leur travail. |
 |||
 
 Si vous avez Microsoft 365 E3, vous pouvez également obtenir ces [offres](https://www.microsoft.com/microsoft-365/blog/2019/01/02/introducing-new-advanced-security-and-compliance-offerings-for-microsoft-365/):
@@ -55,7 +55,7 @@ Si vous avez Microsoft 365 E3, vous pouvez également obtenir ces [offres](https
 
 Ces offres contiennent des fonctionnalités supplémentaires incluses dans Microsoft 365 E5.
 
-Pour plus d’informations, reportez-vous à la rubrique [features and Capabilities for each plan](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans).
+Pour plus d’informations sur les fonctionnalités incluses dans chaque plan, voir [transformer votre entreprise avec Microsoft 365](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans).
 
 ## <a name="get-the-big-picture"></a>Obtenir une vue d’ensemble
 
@@ -150,6 +150,6 @@ Pour plus d’informations sur le déploiement, voir How :
 
 Si vous effectuez le déploiement vous-même, commencez votre [déploiement de Microsoft 365 pour les entreprises](deploy-microsoft-365-enterprise.md).
 
-## <a name="see-also"></a>Voir également
+## <a name="see-also"></a>Voir aussi
 
 [Page du produit Microsoft 365 pour entreprise](https://www.microsoft.com/microsoft-365/enterprise)
