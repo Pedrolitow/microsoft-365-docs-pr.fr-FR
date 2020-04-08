@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Cet article explique comment commencer à utiliser Advanced eDiscovery dans Microsoft 365. Une fois que vous avez effectué quelques étapes rapides, l’outil eDiscovery avancé est prêt à être utilisé. La première étape consiste à créer un cas, puis à commencer à utiliser les fonctionnalités avancées de découverte électronique.
-ms.openlocfilehash: 2819fdd2f3b98ca82535aa0f08830bb37744c3f7
-ms.sourcegitcommit: 217de0fc54cbeaea32d253f175eaf338cd85f5af
+ms.openlocfilehash: 1f3eb78ab9f9e96eaa95dbfbc7e087fa1514b836
+ms.sourcegitcommit: 053d42480d8aa3792ecb0027ddd53d383a029474
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42561664"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "43100867"
 ---
 # <a name="get-started-with-advanced-ediscovery"></a>Prise en main de la découverte électronique avancée
 
@@ -37,17 +37,17 @@ La gestion des licences pour Advanced eDiscovery nécessite l’abonnement de l�
 
   - Abonnement Microsoft 365 E5 ou Office 365 E5
   
-  - Abonnement Microsoft 365 E3 avec le complément de conformité E5
-  
-  - Office 365 E3 subscription with Advanced Compliance Add-on
+  - Abonnement Microsoft 365 E3 avec le module complémentaire E5 conformité
+
+  - Microsoft 365 E3 subscription avec E5 eDiscovery and audit Add-on
 
   Si vous ne disposez pas d’un plan Microsoft 365 E5 existant et que vous souhaitez essayer Advanced eDiscovery, vous pouvez [Ajouter microsoft 365](https://docs.microsoft.com/office365/admin/try-or-buy-microsoft-365) à votre abonnement Office 365 existant ou [vous inscrire pour obtenir une version d’évaluation](https://www.microsoft.com/microsoft-365/enterprise) de Microsoft 365 E5.
 
 - Gestion **des licences par utilisateur :** Pour ajouter un utilisateur en tant que dépositaire dans un cas de découverte électronique anticipée, l’utilisateur doit disposer de l’une des licences suivantes, en fonction de l’abonnement de votre organisation :
 
-  - Microsoft 365 : une licence Microsoft 365 E5 ou une licence de module complémentaire de conformité E5 doit être attribuée aux utilisateurs.
+  - Microsoft 365 : les utilisateurs doivent disposer d’une licence Microsoft 365 E5, d’une licence de module complémentaire de conformité E5 ou d’une licence de module complémentaire de découverte électronique E5 E5.
 
-  - Office 365 : une licence Office 365 E5 ou une licence de module complémentaire de conformité avancée doit être affectée aux utilisateurs.
+  - Office 365 : une licence Office 365 E5 doit être affectée aux utilisateurs.
 
    Pour plus d’informations sur l’attribution des licences, voir [attribuer des licences à des utilisateurs](https://docs.microsoft.com/microsoft-365/admin/manage/assign-licenses-to-users).
 
@@ -56,7 +56,7 @@ La gestion des licences pour Advanced eDiscovery nécessite l’abonnement de l�
 
 ## <a name="step-2-assign-ediscovery-permissions"></a>Étape 2 : attribuer des autorisations eDiscovery
 
-Pour accéder à la découverte électronique avancée ou ajoutée en tant que membre d’un cas avancé de découverte électronique, un utilisateur doit disposer des autorisations appropriées. Plus précisément, un utilisateur doit être ajouté en tant que membre du groupe de rôles gestionnaire eDiscovery dans le centre de conformité Office 365 Security &. Les membres de ce groupe de rôles peuvent créer et gérer des cas de découverte électronique avancée. Ils peuvent ajouter et supprimer des membres, placer des dépositaires et des emplacements de contenu en conservation, gérer des notifications de conservation légale, créer et modifier des recherches associées à un cas, ajouter des résultats de recherche à un jeu de réexamen, analyser des données dans un jeu de vérification, exporter et télécharger à partir d’une avancée cas de découverte électronique.
+Pour accéder à la découverte électronique avancée ou ajoutée en tant que membre d’un cas avancé de découverte électronique, un utilisateur doit disposer des autorisations appropriées. Plus précisément, un utilisateur doit être ajouté en tant que membre du groupe de rôles gestionnaire eDiscovery dans le centre de conformité Office 365 Security &. Les membres de ce groupe de rôles peuvent créer et gérer des cas de découverte électronique avancée. Ils peuvent ajouter et supprimer des membres, placer des dépositaires et des emplacements de contenu en conservation, gérer des notifications de conservation légale, créer et modifier des recherches associées à un cas, ajouter des résultats de recherche à un jeu de réexamen, analyser des données dans un jeu de vérification, exporter et télécharger à partir d’un cas avancé de découverte électronique.
 
 Procédez comme suit pour ajouter des utilisateurs au groupe de rôles gestionnaire eDiscovery :
 

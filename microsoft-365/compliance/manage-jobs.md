@@ -1,5 +1,7 @@
 ---
 title: Gérer les travaux dans les enquêtes de données
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Vous pouvez suivre l’état des processus de longue durée résultant de l’exécution des tâches dans l’outil d’analyse des données du centre de sécurité & conformité.
-ms.openlocfilehash: 0c93df9e7d5ec176c2150e706fe99ed239be8527
-ms.sourcegitcommit: 1162d676b036449ea4220de8a6642165190e3398
+ms.openlocfilehash: 6c7b247eb4a8ef9797a8a5993195bb21d7bf30bf
+ms.sourcegitcommit: 053d42480d8aa3792ecb0027ddd53d383a029474
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37079395"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "41582923"
 ---
 # <a name="manage-jobs-in-data-investigations-preview"></a>Gérer les travaux dans les enquêtes de données (aperçu)
 
@@ -34,7 +36,7 @@ Voici une liste des travaux (qui sont généralement des processus de longue dur
 |Comparaison des jeux de charges | Un utilisateur examine les différences entre les différents jeux de charges dans un jeu de preuves. Un jeu de charges est une instance de l’ajout de données à un jeu de preuves. Par exemple, si vous ajoutez les résultats de deux recherches différentes dans le même jeu de preuves, chacun d’entre eux représenterait un jeu de charges. Pour plus d’informations, consultez la rubrique [Manage Load Sets](manage-load-sets.md). |
 |Conversion de documents biffés au format PDF|Une fois qu’un utilisateur a annoté un document dans un jeu de preuves et rédige une partie de celui-ci, il peut choisir de convertir le document rédigé en fichier PDF. Cela permet de s’assurer que la partie biffée n’est pas visible lorsque le document est exporté pour présentation. Pour plus d’informations, voir [examiner les données dans les preuves](review-data-in-evidence.md). |
 |Supprimer des éléments des emplacements d’origine | Cette tâche est déclenchée lorsqu’un utilisateur sélectionne des éléments de boîte aux lettres et de site dans un jeu de preuves, puis il clique sur **supprimer des éléments de l’emplacement d’origine** dans le menu **action** pour les supprimer. Ce travail effectue le suivi de la progression des éléments sélectionnés dans leurs emplacements de contenu d’origine. Pour plus d’informations, consultez [la rubrique supprimer des éléments de leur emplacement d’origine](delete-items-from-original-locations.md).|
-|Estimation des résultats de recherche | Après qu’un utilisateur a créé et exécuté une nouvelle recherche (ou réexécute une recherche existante), l’outil de recherche recherche dans l’index les éléments qui correspondent à la requête de recherche et prépare une estimation qui inclut le nombre et la taille totale de tous les éléments par la recherche, et le nombre de sources de données Sea rched.  Pour plus d’informations, consultez la rubrique [Rechercher des données dans une enquête](search-for-data.md). | 
+|Estimation des résultats de recherche | Une fois qu’un utilisateur a créé et exécuté une nouvelle recherche (ou réexécute une recherche existante), l’outil de recherche recherche dans l’index les éléments qui correspondent à la requête de recherche et prépare une estimation qui inclut le nombre et la taille totale de tous les éléments par la recherche, ainsi que le nombre de sources de données recherchées.  Pour plus d’informations, consultez la rubrique [Rechercher des données dans une enquête](search-for-data.md). | 
 |Préparation des données pour l’exportation | Un utilisateur exporte des documents à partir d’un ensemble de preuves. Une fois le processus d’exportation terminé, les utilisateurs peuvent télécharger les données exportées sur un ordinateur local. Pour plus d’informations, consultez la rubrique [exporter des données à partir d’une enquête](export-data.md). | 
 |Préparation de la résolution des erreurs |Lorsqu’un utilisateur sélectionne un fichier et crée une erreur de correction dans la vue d’erreur sous l’onglet **traitement** d’une enquête, la première étape du processus consiste à télécharger le fichier contenant l’erreur de traitement vers un emplacement de stockage Azure dans le Cloud Microsoft. Ce travail effectue le suivi de la progression du processus de chargement. Pour plus d’informations sur le flux de travail de correction des erreurs, voir [Error inmédiation lors du traitement des données pour une enquête](error-remediation.md).| 
 |Préparation de l’aperçu de la recherche | Une fois qu’un utilisateur a créé et exécuté une nouvelle recherche (ou réexécute une recherche existante), l’outil de recherche prépare un exemple de sous-ensemble d’éléments (correspondant à la requête de recherche) qui peut être affiché en aperçu. L’aperçu des résultats de la recherche peut vous aider à déterminer l’efficacité de la recherche.  Pour plus d’informations, consultez la rubrique [Rechercher des données dans une enquête](search-for-data.md). | 
@@ -47,12 +49,12 @@ Voici une liste des travaux (qui sont généralement des processus de longue dur
 
 Le tableau suivant décrit les différents États d’État pour les travaux.
 
-| Statut           | Description     |
+| État           | Description     |
 | :----------------- | :----------     |
 | Submitted | Une nouvelle tâche a été créée.  La date et l’heure auxquelles le travail a été soumis s’affichent dans la colonne **créé** sous l’onglet **travaux** . |
 | Échec de l’envoi | Échec de l’envoi du travail.  Vous devez essayer de réexécuter l’action qui a déclenché le travail. |
 | En cours | Le travail est en cours d’exécution. Vous pouvez surveiller la progression de la tâche dans l’onglet **travaux** . |
 | Satisfaisant | Le travail s’est terminé avec succès. La date et l’heure de fin du travail s’affichent dans la colonne **terminé** de l’onglet **travaux** . |
 | Partiellement réussi | Le travail a été partiellement réussi. |
-| Failed | Échec du travail.  Vous devez essayer de réexécuter l’action qui a déclenché le travail. Si la tâche échoue pour la deuxième fois, nous vous recommandons de contacter le support Microsoft et de fournir les informations de support du travail. |
+| Échec | Échec du travail.  Vous devez essayer de réexécuter l’action qui a déclenché le travail. Si la tâche échoue pour la deuxième fois, nous vous recommandons de contacter le support Microsoft et de fournir les informations de support du travail. |
 |||

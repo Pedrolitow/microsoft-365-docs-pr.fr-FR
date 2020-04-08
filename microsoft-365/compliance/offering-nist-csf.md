@@ -1,7 +1,7 @@
 ---
 title: Institut Cybersecurity (CSF) National Institute of Standards and Technology (CSF)
 description: Les services de Cloud Computing Microsoft sont conformes à l’Cybersecurity Framework (CSF) de l’Institut NIST (National Institute of Standards and Technology).
-keywords: Offres pour la conformité Microsoft 365
+keywords: Microsoft 365, conformité, offres
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 8794a51c60b778814d05a84d2332dc018b54a80a
-ms.sourcegitcommit: b6ab845d64e2801051d249de09ad5059809b649a
+ms.openlocfilehash: 65578f8105d52c87eb74cba57a215682f92bd02d
+ms.sourcegitcommit: 00ce4626e1be182c5a91210a23662c9704384efa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42222006"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "43170906"
 ---
 # <a name="national-institute-of-standards-and-technology-nist-cybersecurity-framework-csf"></a>Institut Cybersecurity (CSF) National Institute of Standards and Technology (CSF)
 
@@ -37,10 +37,10 @@ L’infrastructure NIST Cybersecurity Framework (CSF) est une infrastructure vol
 
 Découvrez comment accélérer le déploiement de l’infrastructure NIST Cybersecurity avec le score de conformité et notre plan de conformité et de sécurité Azure :
 
-- [Télécharger le plan de sécurité et de conformité Azure-liste de vérification de l’évaluation des risques de l’Institut NIST](https://servicetrust.microsoft.com/ViewPage/Blueprint?command=Download&downloadType=Document&downloadId=11e61716-11ab-4b11-9a9a-434b33a62ff9&docTab=fc060920-cdb8-11e7-bacf-0bf52b09d912_NIST_CSF_Blueprint)
+- [Télécharger le plan de sécurité et de conformité Azure-liste de vérification de l’évaluation des risques de l’Institut NIST](https://servicetrust.microsoft.com/ViewPage/BlueprintLegacy?command=Download&downloadType=Document&downloadId=89ec5635-be07-4a5d-87d3-51783e4d3002)
 - [En savoir plus sur l’évaluation CSF CSF pour Office 365 dans le score de conformité](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/New-NIST-CSF-and-CSA-CCM-assessments-available-in-Compliance/ba-p/218554)
 
-## <a name="microsoft-in-scope-cloud-services"></a>Services Cloud Microsoft dans le périmètre
+## <a name="microsoft-in-scope-cloud-services"></a>Services cloud Microsoft concernés
 
 - [Public Azure](https://aka.ms/AzureCompliance)
 - [Dynamics 365 pour le gouvernement](https://aka.ms/d365-compliance-list)
@@ -88,7 +88,7 @@ Selon la [sécurité nationale](https://www.dhs.gov/critical-infrastructure-sect
 
 **Quels sont les services dans l’étendue pour Office 365 ?**
 
-Les services dans l’étendue de la certification CSF NIST sont archivage Exchange Online, Exchange Online Protection, Exchange Online, Skype entreprise, Centre d’administration, SharePoint Online, Project Online, OneDrive entreprise, Office Online, MyAnalytics, Microsoft Teams, Office ProPlus dans Office 365 Cloud et Office 365 GCC.
+Les services dans l’étendue de la certification CSF NIST sont l’archivage Exchange Online, Exchange Online Protection, Exchange Online, Skype entreprise, Centre d’administration, SharePoint Online, Project Online, OneDrive entreprise, Office Online, MyAnalytics, Microsoft Teams, Office ProPlus dans Office 365 Cloud mutualisés et Office 365 GCC.
 
 > [!NOTE]
 > Office 365 ProPlus permet d’accéder à différents services Cloud, tels que les paramètres d’itinérance, les licences et le stockage cloud de OneDrive consommateurs, et peut également permettre l’accès à d’autres services Cloud. Les licences et les paramètres d’itinérance prennent en charge les normes pour HITRUST. Le stockage cloud de OneDrive client ne fonctionne pas et d’autres services Cloud accessibles via Office 365 ProPlus et que Microsoft peut proposer à l’avenir sont également susceptibles de ne pas prendre en charge ces normes. *
@@ -109,7 +109,7 @@ Microsoft fournit les offres les plus complètes par rapport aux autres fourniss
 - [Commande du cadre de la présidence concernant le renforcement de la Cybersecurity des réseaux fédéraux et de l’infrastructure critique](https://www.whitehouse.gov/the-press-office/2017/05/11/presidential-executive-order-strengthening-cybersecurity-federal)
 - [Cloud Microsoft Service publique](https://go.microsoft.com/fwlink/p/?linkid=2087246)
 - [Conditions d’utilisation d’Online Services](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31)
-- [Conformité sur le site Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Conformité du Centre de gestion de la confidentialité Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
 ## <a name="download-the-offering-backgrounder"></a>Télécharger notre document d’information sur la conformité
 

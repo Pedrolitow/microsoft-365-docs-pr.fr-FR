@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Cet article définit les champs de métadonnées pour les documents dans un ensemble de révision dans un cas dans Advanced eDiscovery dans Microsoft 365.
-ms.openlocfilehash: 78cfba97c14259ec40abc17e17676263b37fcedf
-ms.sourcegitcommit: 9231cbea48374fca3aeeb1f267dcdcd270fd9f42
+ms.openlocfilehash: f53a754fce482ddc0944d84059b1e346e93f5067
+ms.sourcegitcommit: 053d42480d8aa3792ecb0027ddd53d383a029474
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "42651838"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "42941236"
 ---
 # <a name="document-metadata-fields-in-advanced-ediscovery"></a>Champs de métadonnées de document dans Advanced eDiscovery
 
@@ -34,6 +34,9 @@ Le tableau suivant répertorie les champs de métadonnées pour les documents da
 - **Nom du champ exporté :** Nom du champ de métadonnées qui est inclus lors de l’exportation des documents.  Une cellule vide signifie que le champ n’est pas inclus dans les métadonnées exportées.
 
 - **Description :** Description du champ de métadonnées.
+
+> [!NOTE]
+> Le champ **Mots clés** dans la [recherche Set search](https://docs.microsoft.com/microsoft-365/compliance/review-set-search) utilise le langage de requête de mot clé (KQL). Les champs figurant dans la colonne **nom du champ** pouvant faire l’objet d’une recherche peuvent être utilisés dans le champ **Mots clés** d’une recherche de jeu de réexamen pour former des requêtes complexes sans que vous n’ayez à utiliser le générateur de requêtes. Pour plus d’informations sur KQL, voir [référence de syntaxe du langage de requête de mot clé](https://go.microsoft.com/fwlink/?LinkId=269603).
 
 |Nom du **champ** et **nom du champ d’affichage**|**Nom de champ pouvant faire l’objet d’une recherche**|**Nom du champ exporté**|**Description**|
 |:-----|:-----|:-----|:-----|

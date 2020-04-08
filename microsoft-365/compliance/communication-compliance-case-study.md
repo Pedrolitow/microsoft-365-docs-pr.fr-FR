@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 4a119e0ec082893d393d1b43af76b41dc93c76a1
-ms.sourcegitcommit: 144c0f3c2c6112bffc5a9b04392a38123a979ebc
+ms.openlocfilehash: 834fb37eba578ff87477fd376cd5d33c8612e1b0
+ms.sourcegitcommit: b1ec6ba779a94ddbaab11a272e40abe1d3064532
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/30/2020
-ms.locfileid: "43053071"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "43165933"
 ---
 # <a name="case-study---contoso-quickly-configures-an-offensive-language-policy-for-microsoft-teams-and-exchange-communications"></a>Etude de cas : contoso configure rapidement une stratégie de langage offensant pour Microsoft teams et les communications Exchange
 
@@ -41,7 +41,7 @@ Cette étude de cas portera sur les principes de base permettant de configurer r
 
 ## <a name="step-1---planning-for-communication-compliance"></a>Étape 1 : planification de la conformité de la communication
 
-Les administrateurs informatiques contoso et les spécialistes en conformité ont participé à des conférences en ligne sur les solutions de conformité dans Microsoft 365 et décidé que les stratégies de conformité des communications les aident à répondre aux exigences de stratégie d’entreprise mises à jour pour la réduction du travail. harcèle. En travaillant ensemble, ils ont développé un plan de création et d’activation d’une stratégie de conformité de communication qui analysera le langage offensant pour les conversations envoyées dans Microsoft teams dans les messages électroniques envoyés dans Exchange Online. Leur plan inclut l’identification des éléments suivants :
+Les administrateurs informatiques et les spécialistes de la conformité de contoso ont participé à des conférences en ligne sur les solutions de conformité dans Microsoft 365 et ont décidé que les stratégies de conformité des communications les aident à répondre aux exigences de stratégie d’entreprise mises à jour pour réduire le harcèlement. En travaillant ensemble, ils ont développé un plan de création et d’activation d’une stratégie de conformité de communication qui analysera le langage offensant pour les conversations envoyées dans Microsoft teams dans les messages électroniques envoyés dans Exchange Online. Leur plan inclut l’identification des éléments suivants :
 
 - Les administrateurs informatiques qui ont besoin d’accéder aux fonctionnalités de conformité des communications.
 - Les spécialistes de la conformité qui ont besoin de créer et de gérer des stratégies de communication.
@@ -53,10 +53,21 @@ Les administrateurs informatiques contoso et les spécialistes en conformité on
 La première étape consiste à vérifier que les licences Microsoft 365 de contoso incluent la prise en charge de la solution de conformité des communications. Pour accéder à la conformité de la communication et l’utiliser, les administrateurs informatiques de contoso doivent vérifier que contoso dispose de l’un des éléments suivants :
 
 - Abonnement Microsoft 365 E5 (payant ou version d’évaluation)
-- Office 365 entreprise E3 avec le complément de conformité avancé
+- Microsoft 365 E3 subscription + le complément de conformité Microsoft 365 E5
+- Microsoft 365 E3 subscription + le complément de gestion des risques de Microsoft 365 E5 Insider
+- Abonnement Microsoft 365 a5 (payant ou version d’évaluation)
+- Abonnement Microsoft 365 a3 + complément Microsoft 365 a5 Compliance
+- Abonnement Microsoft 365 a3 + complément de gestion des risques Microsoft 365 a5 Insider
+- Abonnement Microsoft 365 G5 (payant ou version d’évaluation)
+- Abonnement Microsoft 365 G5 + le complément de conformité Microsoft 365 G5
+- Abonnement Microsoft 365 G5 + le complément de gestion des risques Microsoft 365 G5 Insider
 - Office 365 entreprise E5 abonnement (payant ou version d’évaluation)
+- Office 365 entreprise E3 abonnement + le complément Office 365 Advanced Compliance (qui n’est plus disponible pour les nouveaux abonnements, reportez-vous à la rubrique note)
 
-Ils doivent également confirmer que les utilisateurs inclus dans les stratégies de conformité des communications doivent être affectés à l’une des licences répertoriées ci-dessus.
+Ils doivent également confirmer que les utilisateurs inclus dans les stratégies de conformité des communications doivent disposer de l’une des licences ci-dessus.
+
+>[!IMPORTANT]
+>Office 365 Advanced Compliance n’est plus vendu en tant qu’abonnement autonome. Lorsque les abonnements actuels arrivent à expiration, les clients doivent effectuer une transition vers l’un des abonnements ci-dessus, qui contiennent les mêmes fonctionnalités de conformité ou des fonctionnalités de conformité supplémentaires.
 
 Les administrateurs informatiques de contoso effectuent les opérations suivantes pour vérifier la prise en charge des licences pour Contoso :
 

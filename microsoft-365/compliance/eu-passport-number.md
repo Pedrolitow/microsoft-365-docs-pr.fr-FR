@@ -1,5 +1,7 @@
 ---
 title: Numéro de passeport UE
+f1.keywords:
+- NOCSH
 ms.author: cabailey
 author: cabailey
 manager: laurawi
@@ -10,12 +12,12 @@ ms.service: O365-seccomp
 ms.collection: M365-security-compliance
 localization_priority: Normal
 description: Cette rubrique présente ce qu’une stratégie de protection contre la perte de données (DLP) recherche lorsqu’elle détecte le type d’informations sensibles du numéro de passeport de l’UE. Ce type d’informations sensibles définit différents modèles, Mots clés et autres preuves pour chaque pays.
-ms.openlocfilehash: 4afcf7b764eb8976e0588464515256f7cb1bdb8d
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: 0032d3e50d7dab0b696d9000242e70956469052e
+ms.sourcegitcommit: 053d42480d8aa3792ecb0027ddd53d383a029474
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40805947"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "41592115"
 ---
 # <a name="eu-passport-number"></a>Numéro de passeport UE
 
@@ -800,7 +802,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 |:-----|
 |numéro de passeport  <br/> Numéro de passeport roumain  <br/> Numéro de passeport  <br/> numărul pașaportului  <br/> |
    
-## <a name="slovakia"></a>République de Slovaquie
+## <a name="slovakia"></a>Slovaquie
 
 ### <a name="format"></a>Format
 
