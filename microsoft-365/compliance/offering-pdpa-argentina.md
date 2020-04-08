@@ -14,18 +14,18 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 7419bc37b40bb7e2b9b2726c4672d7d8d481ab8b
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: f80e9ab25fda70ae723b844691dc129d0b604921
+ms.sourcegitcommit: 053d42480d8aa3792ecb0027ddd53d383a029474
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597911"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "42313779"
 ---
 # <a name="personal-data-protection-act-pdpa-argentina"></a>Loi argentine sur la protection des données à caractère personnel (PDCP)
 
 ## <a name="about-the-pdpa"></a>À propos de PDCP
 
-En accord avec la Constitution Nationale Argentine, la [Loi de protection des données à caractère personnel 25.326](https://unpan1.un.org/intradoc/groups/public/documents/un-dpadm/unpan044147.pdf) (PDCP) ([Ley de Protección de los Datos Personales](http://servicios.infoleg.gob.ar/infolegInternet/anexos/60000-64999/64790/norma.htm)) a été exécutée en 2000 afin de contribuer à la protection de la confidentialité des données personnelles, et d’autoriser les utilisateurs à accéder aux informations stockées dans les bases de données et les registres publics et privés. L’Agence Argentine d’Accès aux Informations Publiques ([Agencia de Acceso a la Información Pública](https://www.argentina.gob.ar/aaip), AAIP) au sein du Cabinet du chef des ministères est tenu de faire appliquer cette loi.
+En accord avec la Constitution Nationale Argentine, la [Loi de protection des données à caractère personnel 25.326](http://www.jus.gob.ar/media/3201023/personal_data_protection_act25326.pdf) (PDCP) ([Ley de Protección de los Datos Personales](http://servicios.infoleg.gob.ar/infolegInternet/anexos/60000-64999/64790/norma.htm)) a été exécutée en 2000 afin de contribuer à la protection de la confidentialité des données personnelles, et d’autoriser les utilisateurs à accéder aux informations stockées dans les bases de données et les registres publics et privés. L’Agence Argentine d’Accès aux Informations Publiques ([Agencia de Acceso a la Información Pública](https://www.argentina.gob.ar/aaip), AAIP) au sein du Cabinet du chef des ministères est tenu de faire appliquer cette loi.
 
 La PDCP est alignée sur le modèle législatif européen pour la protection de la confidentialité des données et l’Argentine était le premier pays d’Amérique latine à obtenir une qualification d’ «adéquation» pour les transferts de données de l’UE.
 

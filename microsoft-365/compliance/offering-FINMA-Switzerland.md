@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 99d4b1b07c86989bce0da08324014bda7a8a7d5d
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 728208960932ea8d642ad1604d45ba321f021735
+ms.sourcegitcommit: 053d42480d8aa3792ecb0027ddd53d383a029474
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602411"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "42313759"
 ---
 # <a name="financial-market-supervisory-authority-finma-switzerland"></a>Autorité fédérale de surveillance des marchés financiers (FINMA) Suisse
 
@@ -27,7 +27,7 @@ ms.locfileid: "41602411"
 
 L’[autorité fédérale de surveillance des marchés financiers](https://www.finma.ch/en) ([Eidgenössische Finanzmarktaufsicht](https://www.finma.ch/de/), FINMA) est le régulateur des marchés financiers indépendants en Suisse et est chargée de garantir que les marchés financiers suisses fonctionnent de manière efficace. Elle exerce une surveillance prudentielle sur les banques, les compagnies d'assurance, les bourses, les courtiers en valeurs mobilières et les autres institutions financières.
 
-La FINMA publiée la [Circulaire 2018/3 externalisation-banques et assureurs](https://www.finma.ch/en/~/media/finma/dokumente/dokumentencenter/myfinma/rundschreiben/finma-rs-2018-03.pdf?la=en) pour définir les conditions dans lesquelles les banques, les courtiers en valeurs mobilières et les compagnies d'assurance doivent se conformer lorsqu'ils confient des fonctions importantes pour les activités commerciales de l'entreprise à un prestataire de services. Toutes les entreprises qui externalisent leurs activités sont responsables devant la FINMA comme elles le seraient si elles exerçaient elles-mêmes les fonctions externalisées.
+La FINMA publiée la [Circulaire 2018/3 externalisation-banques et assureurs](https://www.finma.ch/en/~/media/finma/dokumente/rundschreiben-archiv/2018/rs-18-03/finma-rs-2018-03---20170921.pdf?la=en) pour définir les conditions dans lesquelles les banques, les courtiers en valeurs mobilières et les compagnies d'assurance doivent se conformer lorsqu'ils confient des fonctions importantes pour les activités commerciales de l'entreprise à un prestataire de services. Toutes les entreprises qui externalisent leurs activités sont responsables devant la FINMA comme elles le seraient si elles exerçaient elles-mêmes les fonctions externalisées.
 
 ## <a name="microsoft-and-finma"></a>Microsoft et FINMA
 

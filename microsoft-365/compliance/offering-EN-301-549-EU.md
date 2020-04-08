@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: de947d3871b00d43030cacd643bc79d9b410c8b4
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 9cf5d3eed1854dbf715a9574b4efaa666c934a52
+ms.sourcegitcommit: 053d42480d8aa3792ecb0027ddd53d383a029474
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602501"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "42313769"
 ---
 # <a name="european-standards-en-301-549"></a>Normes européennes EN 301 549
 
@@ -45,7 +45,7 @@ La prise en compte de la norme EN 301 549 par Microsoft dans le développement d
 
 ## <a name="microsoft-accessibility-conformance-reports"></a>Rapports de conformité de l’accessibilité Microsoft
 
-Trouvez des [rapports de conformité](https://go.microsoft.com/fwlink/p/?linkid=2050974) pour tous nos produits et services.
+Trouvez des [rapports de conformité](https://cloudblogs.microsoft.com/industry-blog/government/2018/09/11/accessibility-conformance-reports/) pour tous nos produits et services.
 
 ## <a name="resources"></a>Ressources
 
