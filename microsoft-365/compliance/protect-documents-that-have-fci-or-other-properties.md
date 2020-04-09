@@ -17,12 +17,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: De nombreuses organisations appliquent déjà un processus permettant d’identifier et de classer les informations sensibles à l’aide des propriétés de classification dans l’infrastructure de classification des fichiers (ICF) Windows Server, des propriétés de document dans SharePoint ou des propriétés de document appliquées par un système tiers. Si vous reconnaissez votre organisation, vous pouvez créer une stratégie DLP dans Office 365 qui reconnaît les propriétés qui ont été appliquées aux documents par l’ICF Windows Server ou un autre système, afin que la stratégie DLP puisse être activée sur les documents Office avec une ICF ou d’autres valeurs de propriété spécifiques.
-ms.openlocfilehash: bfcbc30af3a3dac304dc57551e6246ec9e6554c0
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 32d40c110ca67e15c1be3443999c75c0e36d323e
+ms.sourcegitcommit: 13f28aa762e467bab8ab1e95e1917b3ac28931da
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42070611"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43193492"
 ---
 # <a name="create-a-dlp-policy-to-protect-documents-with-fci-or-other-properties"></a>Création d’une stratégie DLP pour protéger les documents avec l’ICF ou d’autres propriétés
 
@@ -34,7 +34,7 @@ Par exemple, votre organisation peut utiliser l’ICF Windows Server pour identi
   
 Une stratégie DLP recherche simplement une paire nom/valeur de propriété spécifique. N’importe quelle propriété de document peut être utilisée, tant que la propriété possède une propriété gérée correspondante pour la recherche SharePoint. Par exemple, une collection de sites SharePoint peut utiliser un type de contenu nommé **Relevé de voyage** avec un champ obligatoire nommé **Client**. Lorsqu’une personne crée un relevé de voyage, elle doit entrer le nom du client. Cette paire nom/valeur de propriété peut également être utilisée dans une stratégie DLP, par exemple, si vous voulez une règle qui bloque l’accès au document pour les utilisateurs externes lorsque le champ **Client** contient **Contoso**.
   
-Notez que si vous souhaitez appliquer votre stratégie DLP au contenu avec des étiquettes Office 365 spécifiques, vous ne devez pas suivre les étapes ci-dessous. Au lieu de cela, Découvrez comment [utiliser une étiquette comme condition dans une stratégie DLP](data-loss-prevention-policies.md#using-a-label-as-a-condition-in-a-dlp-policy).
+Notez que si vous souhaitez appliquer votre stratégie DLP au contenu avec des étiquettes Office 365 spécifiques, vous ne devez pas suivre les étapes ci-dessous. Au lieu de cela, Découvrez comment [utiliser une étiquette de rétention comme condition dans une stratégie DLP](data-loss-prevention-policies.md#using-a-retention-label-as-a-condition-in-a-dlp-policy).
   
 ## <a name="before-you-create-the-dlp-policy"></a>Avant de créer la stratégie DLP
 
@@ -52,7 +52,7 @@ Vous devez d’abord charger un document avec la propriété que vous souhaitez 
   
 ### <a name="step-2-create-a-managed-property"></a>Étape 2 : création d’une propriété gérée
 
-1. Connectez-vous au centre d’administration Microsoft 365.
+1. Connectez-vous au Centre d’administration Microsoft 365.
     
 2. Dans le volet de navigation de gauche, sélectionnez **centres** \> d’administration **SharePoint**. Vous vous trouvez maintenant dans le Centre d’administration SharePoint.
     
@@ -96,7 +96,7 @@ Notez que les propriétés de document de condition **contiennent l’une de ces
   
 Pour plus d’informations sur ces cmdlets, consultez [la rubrique &amp; Office 365 Security Compliance Center cmdlets](https://go.microsoft.com/fwlink/?LinkID=799772&amp;clcid=0x409).
   
-1. [Se connecter au Centre de sécurité &amp; conformité Office 365 à l’aide de PowerShell à distance](https://go.microsoft.com/fwlink/?LinkID=799771&amp;clcid=0x409)
+1. [Vous connecter au Centre de sécurité &amp; conformité Office 365 à l’aide de PowerShell à distance](https://go.microsoft.com/fwlink/?LinkID=799771&amp;clcid=0x409)
     
 2. Créez la stratégie à l' `New-DlpCompliancePolicy`aide de.
 
@@ -124,7 +124,7 @@ Une règle bloque l’accès au contenu pour lequel la propriété **Information
   
 ## <a name="after-you-create-the-dlp-policy"></a>Après avoir créé la stratégie DLP
 
-L’exécution des étapes décrites dans les sections précédentes crée une stratégie DLP qui détecte rapidement le contenu avec cette propriété, mais seulement si ce contenu est téléchargé (de sorte que le contenu est indexé) ou si ce contenu est ancien mais modifié (de sorte que le contenu soit à nouveau indexé) .
+La réalisation des étapes décrites dans les sections précédentes crée une stratégie DLP qui détecte rapidement le contenu avec cette propriété, mais seulement si ce contenu est téléchargé (de sorte que le contenu est indexé) ou si ce contenu est ancien mais modifié (de sorte que le contenu soit à nouveau indexé).
   
 Pour détecter tout le contenu avec cette propriété, vous voudrez peut-être demander manuellement la réindexation de votre bibliothèque, site ou collection de sites, afin que la stratégie DLP connaisse tout le contenu avec cette propriété. Dans SharePoint Online, le contenu est automatiquement analysé selon une planification d’analyse définie. Le robot récupère le contenu qui a été modifié depuis la dernière analyse et met à jour l’index. Si vous avez besoin que votre stratégie DLP protège le contenu avant la prochaine analyse planifiée, vous pouvez suivre cette procédure.
   

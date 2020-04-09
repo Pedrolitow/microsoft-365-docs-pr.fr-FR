@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Un classificateur Microsoft 365 pouvant être formé est un outil que vous pouvez former afin de reconnaître différents types de contenu en lui donnant des échantillons positifs et négatifs. Une fois que le classifieur est formé, vous confirmez que ses résultats sont précis. Vous l’utilisez ensuite pour effectuer une recherche dans le contenu de votre organisation et le classifier pour appliquer des étiquettes de rétention ou de sensibilité ou l’inclure dans la protection contre la perte de données (DLP) ou les stratégies de rétention.
-ms.openlocfilehash: 6706fe25194191d57ffd91f07f13d22fe5ec6cfd
-ms.sourcegitcommit: 2859c82b30ae9cbd3a3e4bcdebd65f18444f1a9e
+ms.openlocfilehash: 4d11fcf4e1437641cb73510d341d299ce3695938
+ms.sourcegitcommit: 13f28aa762e467bab8ab1e95e1917b3ac28931da
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42826255"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43193522"
 ---
 # <a name="getting-started-with-trainable-classifiers-preview"></a>Prise en main des classificateurs de formation (préversion)
 
@@ -63,15 +63,17 @@ Il existe des classifieurs intégrés et des classifieurs de formation. L’obte
 
 ### <a name="understanding-built-in-classifiers"></a>Présentation des classifieurs intégrés
 
-Microsoft 365 est fourni avec six classifieurs intégrés :
+Microsoft 365 est fourni avec cinq classifieurs intégrés recommandés :
 
-- **Offensant**: détecte les éléments de texte qui contiennent des blasphèmes, Slurs, taunts et des expressions déguisées (qui sont des expressions qui ont la même signification qu’un terme plus offensant).
+> [!CAUTION]
+> Nous détenons le classificateur intégré en **langage offensant** , car il a généré un nombre élevé de faux positifs. Ne l’utilisez pas et, si vous l’utilisez, vous devez déconnecter vos processus d’entreprise. Nous vous recommandons d’utiliser à la place les classifieurs intégrés de **menace**, de **blasphème**et de **harcèlement** .
+
 - **CV**: détecte les éléments qui sont des comptes textuels des qualifications personnelles, éducatives, professionnelles, d’expérience professionnelle, ainsi que d’autres informations d’identification personnelle d’un demandeur.
 - **Code source**: détecte les éléments qui contiennent un ensemble d’instructions et d’instructions écrites dans les 25 principaux langages de programmation informatique utilisés sur GitHub.
 
 |nom de la langue|||||
 |---------|---------|---------|---------|---------|
-|3.0|C        |C#       |C++     |Clojure  |
+|3.0|C        |C #       |C++     |Clojure  |
 |CoffeeScript|CSS     |Activer       |Haskell |HTML     |
 |Java     |JavaScript|Privilège      |MATLAB   |Objective-C|
 |Langage     |PHP      |Python   |R        |Ruby     |
@@ -87,7 +89,7 @@ Ces éléments apparaissent dans**la vue** classification des données `Ready to
 ![classifieurs-prêts à l’emploi-classifieurs](../media/classifiers-ready-to-use-classifiers.png)
 
 > [!IMPORTANT]
-> Veuillez noter que le langage offensant, le harcèlement, le catégoriseur et les classifieurs de menaces ne fonctionnent qu’avec le texte pouvant faire l’objet d’une recherche.  De plus, les normes linguistiques et culturelles changent en permanence, et à la lumière de ces réalités, Microsoft se réserve le droit de mettre à jour ces classifieurs à sa discrétion. Tandis que les classifieurs peuvent aider votre organisation à surveiller le offensant et d’autres langues, les classifieurs ne traitent pas les conséquences de cette langue et ne sont pas destinés à fournir aux seuls moyens de surveillance ou de réponse à l’utilisation de cette langue. Votre organisation, et non Microsoft ou ses filiales, reste responsable de toutes les décisions relatives à la surveillance, à l’application, au blocage, à la suppression et à la rétention de tout contenu identifié par un classificateur pré-formé.
+> Veuillez noter que le langage offensant, le harcèlement, le catégoriseur et les classifieurs de menaces ne fonctionnent qu’avec le texte pouvant faire l’objet d’une recherche.  De plus, les normes linguistiques et culturelles changent en permanence, et à la lumière de ces réalités, Microsoft se réserve le droit de mettre à jour ces classifieurs à sa discrétion. Alors que les classifieurs peuvent aider votre organisation à surveiller les autres langues choquantes et autres, les classifieurs ne traitent pas les conséquences de ces langues et ne sont pas destinés à fournir aux seuls moyens de surveillance ou de réponse à l’utilisation de ces langues. Votre organisation, et non Microsoft ou ses filiales, reste responsable de toutes les décisions relatives à la surveillance, à l’application, au blocage, à la suppression et à la rétention de tout contenu identifié par un classificateur pré-formé.
 
 #### <a name="process-flow-for-using-built-in-classifiers"></a>Flux de processus pour l’utilisation de classifieurs intégrés
 

@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 6f3019c57d35e6ac54a9f1a2cd0dbede22601ec1
-ms.sourcegitcommit: ce6121a8e3ca7438071d73b0c76e2b6f33ac1cf7
+ms.openlocfilehash: 40e8be29c585c0490b93e81c27728085d59c5146
+ms.sourcegitcommit: 13f28aa762e467bab8ab1e95e1917b3ac28931da
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "43029848"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43193450"
 ---
 # <a name="communication-compliance-feature-reference"></a>Référence de la fonctionnalité de conformité des communications
 
@@ -43,7 +43,7 @@ Les modèles de stratégie sont des paramètres de stratégie prédéfinis que v
 
 |**Catégorie**|**Modèle de stratégie**|**Details**|
 |:-----|:-----|:-----|
-| **Langage offensant et blocage du harcèlement** | Surveiller les communications pour un langage offensant | -Emplacements : Exchange, teams, Skype entreprise <br> -Direction : entrant, sortant, interne <br> -Pourcentage de révision : 100% <br> -Conditions : classifieur de langue offensant |
+| **Langage offensant et blocage du harcèlement** | Surveiller les communications pour un langage offensant | -Emplacements : Exchange, teams, Skype entreprise <br> -Direction : entrant, sortant, interne <br> -Pourcentage de révision : 100% <br> -Conditions : les classifieurs de langue de menace, de blasphèmes et de harcèlement |
 | **Informations sensibles** | Surveiller les communications pour les informations sensibles | -Emplacements : Exchange, teams, Skype entreprise <br> -Direction : entrant, sortant, interne <br> -Pourcentage de révision : 10% <br> -Conditions : informations sensibles, modèles et types de contenu prédéfinis, option de dictionnaire personnalisé, pièces jointes dont la taille est supérieure à 1 Mo |
 | **Conformité réglementaire** | Surveiller les communications pour les informations relatives à la conformité réglementaire financière | -Emplacements : Exchange, teams, Skype entreprise <br> -Direction : entrant, sortant <br> -Pourcentage de révision : 10% <br> -Conditions : option de dictionnaire personnalisé, pièces jointes d’une taille supérieure à 1 Mo |
 
@@ -133,7 +133,7 @@ Configurez des dictionnaires de mots clés personnalisés (ou des lexiques) pour
 
 Les classifieurs intégrés analysent les messages envoyés ou reçus sur tous les canaux de communication de votre organisation en fonction de différents types de problèmes de conformité. Les classifieurs utilisent une combinaison d’intelligence artificielle et de mots clés pour identifier la langue dans les messages susceptibles de violer les stratégies anti-harcèlement. Les classifieurs intégrés prennent actuellement en charge uniquement les mots clés anglais dans les messages.
 
-Conformité de la communication analysez les communications pour les termes et les sentiments pour les types de langages suivants :
+La conformité des communications utilise des classifieurs intégrés pour analyser les communications concernant les termes et les sentiments pour les types de langages suivants :
 
 - **Menace**: analyse les menaces pour valider la violence ou nuire physiquement à une personne ou à une propriété.
 - **Harcèlement**: analyse les comportements offensants ciblant les personnes en matière de race, couleur, religion, origine nationale.

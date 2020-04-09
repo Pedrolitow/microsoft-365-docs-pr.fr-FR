@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 ms.assetid: 8f20ca4f-a908-46ec-99e6-9890d269ecf2
 description: 'Comprendre pourquoi les résultats de recherche estimés et réels peuvent varier en fonction des recherches exécutées avec les outils eDiscovery dans Office 365. '
-ms.openlocfilehash: 4b14e3aca51737b0a7c15b5219fda38c57ecad9d
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 1024a99ffa358e56783d562062f158e71f5e7ddc
+ms.sourcegitcommit: cce5138dfbb27eeeef873d40d8d3606ee3cd6d3d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42075456"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43198371"
 ---
 # <a name="differences-between-estimated-and-actual-ediscovery-search-results-in-office-365"></a>Différences entre les résultats de recherche de découverte électronique estimée et réelle dans Office 365
 
@@ -55,7 +55,7 @@ Voici les raisons de ces différences :
   
 - **La manière dont les résultats sont estimés** : une estimation des résultats de la recherche est juste, une estimation (et non un nombre réel) des éléments qui répondent aux critères de requête de recherche. Pour compiler l’estimation des éléments Exchange, une liste des ID de message correspondant aux critères de recherche est demandée à partir de la base de données Exchange par l’outil eDiscovery que vous utilisez. Toutefois, lorsque vous exportez les résultats de la recherche, la recherche est réexécutée et les messages réels sont extraits de la base de données Exchange. Par conséquent, ces différences peuvent résulter de la manière dont le nombre d’éléments estimé et le nombre réel d’éléments sont déterminés. 
     
-- **Modifications qui se produisent entre le moment où vous évaluez et exportez les résultats** de la recherche : lorsque vous exportez les résultats de la recherche, la recherche est redémarrée pour recueillir les éléments les plus récents de l’index de recherche qui répondent aux critères de recherche. Il est possible que des éléments supplémentaires ont été créés, envoyés ou reçus et répondent aux critères de recherche entre le moment où les résultats de la recherche estimés ont été collectés et le moment où les résultats de la recherche ont été exportés. Il est également possible que les éléments qui se trouvaient dans l’index de recherche lorsque les résultats de la recherche étaient estimés ne soient plus présents, car ils ont été supprimés de l’emplacement du contenu avant l’exportation des résultats de la recherche. Pour atténuer ce problème, vous pouvez spécifier une plage de dates pour une recherche de découverte électronique. Une autre méthode consiste à placer un blocage sur les emplacements de contenu afin que les éléments soient conservés et ne peuvent pas être purgés. 
+- **Modifications qui se produisent entre le moment où vous évaluez et exportez les résultats** de la recherche : lorsque vous exportez les résultats de la recherche, la recherche est redémarrée pour recueillir les éléments les plus récents de l’index de recherche qui répondent aux critères de recherche. Il est possible que des éléments supplémentaires ont été créés, envoyés ou reçus et répondent aux critères de recherche entre le moment où les résultats de la recherche estimés ont été collectés et le moment où les résultats de la recherche ont été exportés. Il est également possible que les éléments qui se trouvaient dans l’index de recherche lorsque les résultats de la recherche étaient estimés ne soient plus présents, car ils ont été supprimés de l’emplacement du contenu avant l’exportation des résultats de la recherche. Pour atténuer ce problème, vous pouvez spécifier une plage de dates pour une recherche de découverte électronique. Une autre méthode consiste à placer un blocage sur les emplacements de contenu afin que les éléments soient conservés et ne peuvent pas être purgés. Bien que très rare, même en cas d’application d’une conservation, la maintenance des éléments de calendrier intégrés (qui ne sont pas modifiables par l’utilisateur, mais incluse dans de nombreux résultats de recherche) peut être supprimée de temps à autre. Cette suppression périodique des éléments de calendrier entraîne l’exportation de moins d’éléments.
     
 - **Éléments non indexés** : les éléments non indexés pour la recherche peuvent entraîner des différences entre les résultats de recherche estimés et les résultats de recherche réels. Par exemple, la découverte électronique inaltérable dans Exchange et le centre eDiscovery dans SharePoint n’incluent pas les éléments non indexés (qui ne répondent pas aux critères de recherche) lorsque vous exécutez une recherche pour estimer les résultats de la recherche. Toutefois, vous pouvez inclure des éléments non indexés lorsque vous exportez les résultats de la recherche. Si vous incluez des éléments non indexés lors de l’exportation des résultats de la recherche, d’autres éléments sont peut-être exportés. Cela entraîne une différence entre les résultats de recherche estimés et exportés. 
     

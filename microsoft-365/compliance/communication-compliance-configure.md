@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: d4a98383e88634f1e87606df5bcd1d066254081f
-ms.sourcegitcommit: 00ce4626e1be182c5a91210a23662c9704384efa
+ms.openlocfilehash: e9e13c4bb9a950326a5fc718be26f93d046776e7
+ms.sourcegitcommit: 13f28aa762e467bab8ab1e95e1917b3ac28931da
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "43170928"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43193512"
 ---
 # <a name="configure-communication-compliance-in-microsoft-365"></a>Configurer la conformité de la communication dans Microsoft 365
 
@@ -119,7 +119,7 @@ Pour plus d’informations sur la configuration des groupes, voir :
 
 4. Sélectionnez **créer une stratégie** pour créer et configurer une nouvelle stratégie à partir d’un modèle ou pour créer et configurer une stratégie personnalisée.
 
-    Si vous choisissez un modèle de stratégie pour créer une stratégie, vous devez :
+    Si vous choisissez un modèle de stratégie intégré pour créer une stratégie, vous devez :
 
     - Vérifiez ou mettez à jour le nom de la stratégie. Les noms de stratégie ne peuvent pas être modifiés une fois la stratégie créée.
     - Choisissez les utilisateurs ou les groupes à superviser, y compris le choix des utilisateurs ou des groupes que vous souhaitez exclure.
@@ -135,7 +135,11 @@ Pour plus d’informations sur la configuration des groupes, voir :
     - Choisissez la direction de communication à surveiller, y compris les communications entrantes, sortantes ou internes.
     - Définir les [conditions](communication-compliance-feature-reference.md#ConditionalSettings)de la stratégie de conformité de communication. Vous pouvez choisir entre une adresse de message, un mot clé, un type de fichier et une condition de correspondance de taille.
     - Choisissez si vous souhaitez inclure des types d’informations sensibles. Cette étape vous permet de sélectionner les types d’informations sensibles par défaut et personnalisés. Sélectionnez des types d’informations sensibles personnalisés ou des dictionnaires de mots clés personnalisés existants dans l’Assistant stratégie de conformité des communications. Si nécessaire, vous pouvez créer ces éléments avant d’exécuter l’Assistant. Vous pouvez également créer des types d’informations sensibles à partir de l’Assistant stratégie de conformité des communications.
-    - Choisissez si vous souhaitez activer le classificateur de langue offensant. Ce classifieur détecte une langue inappropriée envoyée ou reçue dans le corps des messages électroniques.
+    - Choisissez si vous souhaitez activer les classifieurs. Les classifieurs peuvent détecter les langues inappropriées envoyées ou reçues dans le corps des messages électroniques ou dans d’autres types de texte.
+
+    >[!CAUTION]
+    >Nous détenons le classificateur intégré en **langage offensant** , car il a généré un nombre élevé de faux positifs. Ne l’utilisez pas et, si vous l’utilisez, vous devez déconnecter vos processus d’entreprise. Nous vous recommandons d’utiliser à la place les classifieurs intégrés de **menace**, de **blasphème**et de **harcèlement** .
+
     - Définir le pourcentage de communications à réviser.
     - Examinez vos sélections de stratégie et créez la stratégie.
 

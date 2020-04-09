@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 61da6df18a8e41a609ae8aea7ff57c2f53f92d84
-ms.sourcegitcommit: 242f051c4cf3683f8c1a5da20ceca81bde212cfc
+ms.openlocfilehash: 13b19079e52a390e8be3372939619541aa3b7294
+ms.sourcegitcommit: 13f28aa762e467bab8ab1e95e1917b3ac28931da
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "42982047"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43193470"
 ---
 # <a name="communication-compliance-in-microsoft-365"></a>Conformité de la communication dans Microsoft 365
 
@@ -121,10 +121,10 @@ Dans cette étape du flux de travail, vous identifiez vos besoins en matière de
 
 Vous pouvez choisir parmi les modèles de stratégie suivants dans le centre de conformité Microsoft 365 :
 
-- **Langage offensant et anti-harcèlement**: utilisez ce modèle pour créer rapidement une stratégie qui utilise le classifieur intégré pour détecter automatiquement le contenu qui peut être considéré comme injurieux ou choquant.
+- **Langage offensant et anti-harcèlement**: utilisez ce modèle pour créer rapidement une stratégie qui utilise les classifieurs de menace, de blasphème et de harcèlement intégrés pour détecter automatiquement le contenu susceptible d’être injurieux ou choquant.
 - **Informations sensibles**: utilisez ce modèle pour créer une stratégie d’analyse des communications contenant des types d’informations sensibles ou des mots clés définis afin de vous assurer que les données importantes ne sont pas partagées avec des personnes qui n’ont pas accès.
 - **Conformité réglementaire**: utilisez ce modèle pour créer une stratégie d’analyse des communications concernant des références à des termes financiers standard associés à des normes réglementaires.
-- **Stratégie personnalisée**: utilisez ce modèle pour configurer des canaux de communication spécifiques, des conditions de détection et la quantité de contenu à examiner au sein de votre organisation.
+- **Stratégie personnalisée**: utilisez ce modèle pour configurer des canaux de communication, des classifieurs, des conditions de détection individuels et la quantité de contenu à examiner dans votre organisation.
 
 ### <a name="investigate"></a>Pench
 
