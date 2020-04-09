@@ -17,20 +17,18 @@ ms.assetid: efff08ec-68ff-4099-89b7-266e3c4817be
 ms.collection:
 - M365-security-compliance
 description: En tant qu'utilisateur Office 365, vous pouvez afficher, déplacer et supprimer les messages mis en quarantaine (les messages dont vous êtes le destinataire et qui sont en quarantaine car considérés comme du courrier indésirable ou comme des e-mails de masse). Vous pouvez afficher et gérer vos messages mis en quarantaine dans le Centre de sécurité et de conformité.
-ms.openlocfilehash: 04f04cfddb123bf176f3c71568789c77d225a601
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: 03c7ce474119ae5ff130b987b58d5130d53c33d6
+ms.sourcegitcommit: 053d42480d8aa3792ecb0027ddd53d383a029474
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42893669"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "42941404"
 ---
 # <a name="find-and-release-quarantined-messages-as-a-user-in-office-365"></a>Rechercher et déplacer les messages en quarantaine en tant qu’utilisateur dans Office 365
 
 La quarantaine contient des messages potentiellement dangereux ou indésirables dans les organisations Office 365 avec des boîtes aux lettres dans Exchange Online ou des organisations Exchange Online Protection (EOP) autonomes sans boîtes aux lettres Exchange Online. Si vous souhaitez en savoir plus, consultez l’article [La quarantaine dans Office 365](quarantine-email-messages.md).
 
-En tant qu'utilisateur, vous pouvez afficher, déplacer et supprimer les messages mis en quarantaine car considérés comme du courrier indésirable, des e-mails de masse, ou (à partir d’avril 2020) de l’hameçonnage, si vous en êtes le destinataire. Vous pouvez également signaler les faux positifs à Microsoft.
-
-Vous pouvez afficher et gérer vos messages mis en quarantaine dans le Centre de sécurité et de conformité.
+En tant qu'utilisateur, vous pouvez afficher, déplacer et supprimer les messages mis en quarantaine car considérés comme du courrier indésirable, des e-mails de masse, ou (à partir d’avril 2020) de l’hameçonnage, si vous en êtes le destinataire. Vous pouvez afficher et gérer vos messages mis en quarantaine dans le centre de sécurité et de conformité ou (si un administrateur a utilisé cette configuration) dans les [notifications de courrier indésirable de l’utilisateur final](use-spam-notifications-to-release-and-report-quarantined-messages.md).
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu'il faut savoir avant de commencer
 
@@ -38,7 +36,7 @@ Vous pouvez afficher et gérer vos messages mis en quarantaine dans le Centre de
 
 - Les administrateurs peuvent configurer la durée pendant laquelle les messages sont conservés dans la quarantaine avant d’être définitivement supprimés (stratégies anti-courrier indésirable). Les messages dont la mise en quarantaine est arrivée à expiration ne peuvent pas être récupérés. Si vous souhaitez en savoir plus, consultez l’article [Configurer les stratégies anti-courrier indésirable dans Office 365](configure-your-spam-filter-policies.md).
 
-- Les administrateurs peuvent également [activer les notifications de courrier indésirable pour l’utilisateur final](configure-your-spam-filter-policies.md#configure-end-user-spam-notifications) dans les stratégies anti-courrier indésirable. Depuis octobre 2019, vous ne pouvez plus déplacer les messages mis en quarantaine directement à partir de ces notifications. Vous pouvez cliquer sur **Examiner** dans la notification, ce qui vous permet d’accéder à la quarantaine dans le Centre de sécurité & conformité. Pour plus d’informations sur ces notifications, voir [Notifications de courrier indésirable à l’utilisateur final dans Office 365](use-spam-notifications-to-release-and-report-quarantined-messages.md).
+- Les administrateurs peuvent également [activer les notifications de courrier indésirable pour l’utilisateur final](configure-your-spam-filter-policies.md#configure-end-user-spam-notifications) dans les stratégies anti-courrier indésirable. Les utilisateurs peuvent débloquer les messages mis en quarantaine pour cause de courrier indésirable, directement à partir de ces notifications, mais ils ne peuvent pas débloquer les messages mis en quarantaine pour hameçonnage. Si vous souhaitez en savoir plus, consultez l’article [Notifications de courrier indésirable pour l’utilisateur final dans Office 365](use-spam-notifications-to-release-and-report-quarantined-messages.md).
 
 - Les messages mis en quarantaine car considérés comme de l’hameçonnage, des programmes malveillants ou par règles de flux de messagerie (également appelés règles de transport) ne sont disponibles que pour les administrateurs. Si vous souhaitez en savoir plus, voir [Gérer les messages et les fichiers mis en quarantaine en tant qu'administrateur dans Office 365](manage-quarantined-messages-and-files.md).
 
