@@ -19,12 +19,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
 description: Obtenez un rapport régulier sur la façon dont les membres de votre organisation utilisent les services Office 365. Le tableau de bord Vue d’ensemble de l’utilisation vous permet d’explorer chaque graphique pour obtenir d'autres informations.
-ms.openlocfilehash: da62d934b295916a7f0fc952cc9cbe94b8384246
-ms.sourcegitcommit: 311bbd6f168225ede166d29696126a1e003eee0f
+ms.openlocfilehash: fc9416445fec7a873ae7d09e1af366f029f51ed1
+ms.sourcegitcommit: 8a88b7526e6a3a907f33a8567e0d25b74fe60d80
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "43151428"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43204055"
 ---
 # <a name="activity-reports-in-the-microsoft-365-admin-center"></a>Rapports d’activité dans le Centre d’administration Microsoft 365
 
@@ -87,6 +87,7 @@ Pour plus d'informations, voir [À propos des rôles d'administrateur](../add-us
 En fonction de votre abonnement, les rapports suivants sont disponibles.
   
 - [Activité de messagerie](email-activity.md)
+- [Activité des formulaires](forms-activity.md)
     
 - [Utilisation des boîtes aux lettres](mailbox-usage.md)
     
@@ -101,6 +102,7 @@ En fonction de votre abonnement, les rapports suivants sont disponibles.
 - [Activité des utilisateurs de OneDrive Entreprise](onedrive-for-business-activity.md)
   
 - [Utilisation de OneDrive Entreprise](onedrive-for-business-usage.md)
+- [Utilisation de ProPlus](microsoft365-apps-usage.md)
   
 - [Utilisation du site SharePoint](sharepoint-site-usage.md)
   
