@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Lorsque vous créez une étiquette de critère de diffusion, vous pouvez affecter automatiquement une étiquette à un document ou message électronique ou vous pouvez inviter les utilisateurs pour sélectionner l’étiquette que vous recommandez.
-ms.openlocfilehash: a37e1ec6b342e8003427c0e90c2493ffa2952fe4
-ms.sourcegitcommit: 732bb72a0b5ae09cb39536185aa29d6097ec72fd
+ms.openlocfilehash: 0558709c729a0ca941124ac3e72762f4b973432d
+ms.sourcegitcommit: 1d5db6e8411b45d0dd1c517339074c2840e33a63
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43189096"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43216885"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Appliquer automatiquement une étiquette sensibilité au contenu
 
@@ -39,52 +39,52 @@ La possibilité d’appliquer automatiquement des étiquettes à du contenu est 
 
 Deux méthodes s’offrent à vous pour appliquer automatiquement une étiquette de confidentialité :
 
-- **Étiquetage côté client lorsque les utilisateurs modifient des documents ou composent des courriers (réponse ou transfert)**  : utilisez une étiquette configurée pour l’étiquetage automatique pour les applications Office (Word, Excel, PowerPoint et Outlook). 
+- **Étiquetage côté client lorsque les utilisateurs modifient des documents ou rédigent des e-mails (lorsqu’ils répondent ou transfèrent également)**  : utilisez une étiquette configurée pour l’étiquetage automatique pour les applications Office (Word, Excel, PowerPoint et Outlook). 
     
-    Cette méthode prend en charge la recommandation d’une étiquette pour les utilisateurs ainsi que l’application automatique d’une étiquette. Dans les deux cas, l’utilisateur décide d’accepter ou de refuser l’étiquette afin de garantir l’étiquetage correct du contenu. Cet étiquetage côté client présente un délai minimal pour les documents, car l’étiquette peut être appliquée avant même que le document ne soit enregistré. Cependant, toutes les applications clientes ne prennent pas en charge l’étiquetage automatique. Cette fonctionnalité est prise en charge par le client d’étiquetage unifié Azure Information Protection et par [certaines versions d’Office](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps). 
+    Cette méthode prend en charge la recommandation d’une étiquette aux utilisateurs ainsi que l’application automatique d’une étiquette. Dans les deux cas, l’utilisateur décide d’accepter ou de refuser l’étiquette afin de garantir l’étiquetage correct du contenu. Cet étiquetage côté client présente un délai minimal pour les documents, car l’étiquette peut être appliquée avant même que le document ne soit enregistré. Cependant, toutes les applications clientes ne prennent pas en charge l’étiquetage automatique. Cette fonctionnalité est prise en charge par le client d’étiquetage unifié Azure Information Protection et par [certaines versions d’Office](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps). 
     
     Pour des instructions de configuration, consultez l’article [Comment configurer l’étiquetage automatique pour les applications Office](#how-to-configure-auto-labeling-for-office-apps) sur cette page.
 
-- **Étiquetage côté service lorsque le contenu est déjà enregistré (dans SharePoint Online ou dans OneDrive Entreprise) ou est envoyé par courrier (traité par Exchange Online)**  : utilisez une stratégie d’étiquetage automatique, actuellement en préversion. 
+- **Étiquetage côté service lorsque le contenu est déjà enregistré (dans SharePoint Online ou dans OneDrive Entreprise) ou est envoyé par e-mail (traité par Exchange Online)**  : utilisez une stratégie d’étiquetage automatique, actuellement en préversion. 
     
     > [!NOTE]
     > Consultez l’annonce de la préversion, [annonçant une préversion publique de la classification automatique avec des étiquettes de confidentialité dans les services Microsoft 365](https://techcommunity.microsoft.com/t5/security-privacy-and-compliance/announcing-public-preview-of-auto-classification-with/ba-p/1279961).
     
-    Cette méthode est appelée classification automatique avec des étiquettes de confidentialité. Vous pouvez également entendre parler d’étiquetage automatique des données au repos (documents dans SharePoint et dans OneDrive) et de données en transit (courriers envoyés ou reçus par Exchange). Dans le cas d’Exchange, celui-ci n’inclut pas les courriers au repos (boîtes aux lettres). 
+    Cette méthode est appelée classification automatique avec des étiquettes de confidentialité. Elle est également appelée étiquetage automatique des données au repos (documents dans SharePoint et dans OneDrive) et de données en transit (courriers envoyés ou reçus par Exchange). Dans le cas d’Exchange, cela n’inclut pas les e-mails au repos (boîtes aux lettres). 
     
     Comme cet étiquetage est appliqué par les services plutôt que par les applications, vous n’avez pas à vous soucier des applications des utilisateurs et de leur version. Par conséquent, cette fonctionnalité est immédiatement disponible dans toute l’organisation et est appropriée pour l’étiquetage à grande échelle. Les stratégies d’étiquetage automatique ne prennent pas en charge l’étiquetage recommandé, car l’utilisateur n’interagit pas avec le processus d’étiquetage. En effet, l’administrateur exécute les stratégies en mode simulation pour s’assurer que le contenu est correctement étiqueté avant d’appliquer réellement l’étiquette.
     
     Pour des instructions de configuration, consultez l’article [Configurer les stratégies d’étiquetage automatique pour SharePoint, OneDrive et Exchange](#how-to-configure-auto-labeling-policies-for-sharepoint-onedrive-and-exchange) sur cette page.
     
     Spécifique à l’étiquetage automatique pour SharePoint et OneDrive :
-    - Jusqu’à 25 000 fichiers (Word, PowerPoint ou Excel) dans votre client par jour
-        - Jusqu’à 5 fichiers par utilisateur titulaire d’une licence par jour
+    - Jusqu’à 25 000 fichiers automatiquement étiquetés (Word, PowerPoint ou Excel) dans votre client par jour
+        - Au maximum 5 fichiers étiquetés automatiquement par utilisateur sous licence par jour
     - Jusqu’à 10 collections de sites pour l’ensemble des stratégies
     - Jusqu’à 10 stratégies au sein de votre client
 
     Spécifique à l’étiquetage automatique pour Exchange :
-    - Contrairement à l’étiquetage manuel ou à l’étiquetage automatique avec les applications Office, les pièces jointes Office sont également analysées pour les conditions que vous spécifiez dans votre stratégie d’étiquetage automatique. Lorsqu’une correspondance est trouvée, le courrier est étiqueté, mais pas la pièce jointe.
-    - Si vous disposez de règles de flux de messagerie Exchange ou de stratégies de protection contre la perte de données (DLP) qui appliquent le chiffrement IRM : lorsque le contenu est identifié par ces règles ou ces stratégies et par une stratégie d’étiquetage automatique, l’étiquette est appliquée. Si cette étiquette applique le chiffrement, les paramètres IRM des règles de flux de messagerie Exchange ou des stratégies de protection contre la perte de données sont ignorés. Toutefois, si cette étiquette n’applique pas le chiffrement, les paramètres IRM des règles de flux de messagerie ou des stratégies de protection contre la perte de données sont appliqués en plus de l’étiquette.
-    - Les courriers dont le chiffrement IRM n’inclut aucune étiquette sont remplacés par une étiquette avec des paramètres de chiffrement lorsqu’il existe une correspondance à l’aide de l’étiquetage automatique.
-    - Le courrier entrant est étiqueté lorsqu’il existe une correspondance avec vos conditions d’étiquetage automatique. Toutefois, si l’étiquette est configurée pour le chiffrement, celui-ci n’est pas appliqué.
+    - Contrairement à l’étiquetage manuel ou à l’étiquetage automatique avec les applications Office, les pièces jointes Office sont également analysées pour les conditions que vous spécifiez dans votre stratégie d’étiquetage automatique. Lorsqu’une correspondance est trouvée, l’e-mail est étiqueté, mais pas la pièce jointe.
+    - Si vous disposez de règles de flux de messagerie Exchange ou de stratégies de protection contre la perte de données (DLP) qui appliquent le chiffrement IRM : l’étiquette est appliquée lorsque le contenu est identifié par ces règles ou ces stratégies et par une stratégie d’étiquetage automatique. Si cette étiquette applique le chiffrement, les paramètres IRM des règles de flux de messagerie Exchange ou des stratégies de protection contre la perte de données sont ignorés. Toutefois, si cette étiquette n’applique pas le chiffrement, les paramètres IRM des règles de flux de messagerie ou des stratégies de protection contre la perte de données sont appliqués en plus de l’étiquette.
+    - Les e-mails dont le chiffrement IRM n’inclut aucune étiquette sont remplacés par une étiquette avec des paramètres de chiffrement lorsqu’il existe une correspondance à l’aide de l’étiquetage automatique.
+    - Les e-mails entrant sont étiquetés lorsqu’il existe une correspondance avec vos conditions d’étiquetage automatique. Toutefois, si l’étiquette est configurée pour le chiffrement, celui-ci n’est pas appliqué.
     
 
 ## <a name="compare-auto-labeling-for-office-apps-with-auto-labeling-policies"></a>Comparer l’étiquetage automatique pour les applications Office et les stratégies d’étiquetage automatique
 
-Utilisez le tableau suivant pour vous aider à déterminer les différences de comportement des deux méthodes d’étiquetage automatiques complémentaires :
+Utilisez le tableau suivant pour vous aider à déterminer les différences de comportement de ces deux méthodes d’étiquetage automatiques complémentaires :
 
 |Fonctionnalité ou comportement|Paramètre d’étiquette : étiquetage automatique pour les applications Office |Stratégie : étiquetage automatique|
 |:-----|:-----|:-----|:-----|
 |Dépendance de l’application|[Oui](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps) |Non |
-|Restreindre par emplacement|Non |Oui |
-|Conditions : classifieurs entraînables|Oui (aperçu limité) |Non |
-|Conditions : options de partage et options supplémentaires pour le courrier|Non |Oui |
-|Recommandations, info-bulle de stratégie et remplacements par l’utilisateur|Oui |Non |
+|Limiter par emplacement|Non |Oui |
+|Conditions : classifieurs formés|Oui (préversion limitée) |Non |
+|Conditions : options de partage et options supplémentaires pour le courrier électronique|Non |Oui |
+|Recommandations, info-bulle de stratégie et remplacements de l’utilisateur|Oui |Non |
 |Mode simulation|Non |Oui |
 |Pièces jointes Exchange vérifiées pour les conditions|Non | Oui|
-|Appliquer des marquages visuels |Oui |Oui (messagerie uniquement) |
-|Remplacer le chiffrement IRM appliqué sans étiquette|Oui si l’utilisateur dispose du droit d’utilisation minimal d’exportation |Oui (messagerie uniquement) |
-|Étiqueter le courrier entrant|Non |Oui (chiffrement non appliqué) |
+|Appliquer des marquages visuels |Oui |Oui (e-mail uniquement) |
+|Remplacer le chiffrement IRM appliqué sans étiquette|Oui, si l’utilisateur dispose du droit d’utilisation minimal d’exportation |Oui (e-mail uniquement) |
+|Étiquette du courrier électronique entrant|Non |Oui (chiffrement non appliqué) |
 
 > [!NOTE]
 > Lorsque le contenu est étiqueté manuellement, l’étiquette n’est jamais remplacée par l’étiquetage automatique. Toutefois, les stratégies d’étiquetage automatique peuvent remplacer une [étiquette de priorité plus faible](sensitivity-labels.md#label-priority-order-matters) appliquée à l’aide de l’étiquetage automatique pour les applications Office.
@@ -149,7 +149,7 @@ Pendant la période d’évaluation, les applications suivantes prennent en char
     - PowerPoint
     - Outlook
 
-### <a name="recommend-that-the-user-applies-a-sensitivity-label-in-office-apps"></a>Recommander que l’utilisateur applique une étiquette de confidentialité dans les applications Office
+### <a name="recommend-that-the-user-applies-a-sensitivity-label-in-office-apps"></a>Recommander à l’utilisateur d’appliquer une étiquette de confidentialité dans les applications Office
 
 Si vous le souhaitez, vous pouvez recommander à vos utilisateurs qu’ils appliquent l’étiquette. Cette option permet à vos utilisateurs d’accepter la classification et toute protection associée, ou d’ignorer la recommandation si l’étiquette ne convient pas à leur contenu.
 
@@ -159,7 +159,7 @@ Voici un exemple d’une invite de commandes d’Azure Information Protection lo
 
 ![Invite à appliquer une étiquette recommandée](../media/Sensitivity-label-Prompt-for-required-label.png)
 
-### <a name="when-automatic-or-recommended-labels-are-applied-in-office-apps"></a>Lorsque des étiquettes automatiques ou recommandées sont appliquées dans les applications Office
+### <a name="when-automatic-or-recommended-labels-are-applied-in-office-apps"></a>Quand les étiquettes automatiques ou recommandées sont appliquées dans les applications Office
 
 L’implémentation de l’étiquetage automatique et recommandé dans les applications Office varie selon que vous utilisez l’étiquetage intégré à Office ou le client d’étiquetage unifié d’Azure Information Protection. Dans les deux cas, toutefois :
 
