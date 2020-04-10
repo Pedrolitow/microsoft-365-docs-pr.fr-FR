@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Les stratégies de protection contre la perte de données (DLP) disponibles dans le Centre de sécurité &amp; conformité vous permettent d’identifier, de surveiller et de protéger automatiquement des informations sensibles dans Office 365.
-ms.openlocfilehash: 9a7b31f779982381fcc0eea7e8aa051f4fa2dafc
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: f61d6c13a66b7f1d93c7bdc1404265e8567e2fb7
+ms.sourcegitcommit: 732bb72a0b5ae09cb39536185aa29d6097ec72fd
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42894885"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43189074"
 ---
 # <a name="overview-of-data-loss-prevention"></a>Vue d’ensemble de la protection contre la perte de données
 <!-- this topic needs to be split into smaller, more coherent ones. It is confusing as it is. -->
@@ -112,7 +112,7 @@ Les conditions actuellement disponibles peuvent déterminer si :
   
 - Le contenu comporte un type d’informations sensibles.
     
-- Le contenu comporte une étiquette. Pour plus d’informations, reportez-vous à la section ci-dessous, [Utilisation d’une étiquette comme condition dans une stratégie DLP](#using-a-label-as-a-condition-in-a-dlp-policy).
+- Le contenu comporte une étiquette. Pour plus d’informations, reportez-vous à la section ci-dessous, [Utilisation d’une étiquette comme condition dans une stratégie DLP](#using-a-retention-label-as-a-condition-in-a-dlp-policy).
     
 - Le contenu est partagé avec des personnes extérieures ou internes à votre organisation.
 
@@ -327,35 +327,23 @@ Pour ces raisons, les conseils pour la création de règles avec des précisions
     
 - Tous les niveaux de confiance intermédiaires commencent généralement juste au-dessus du niveau de confiance inférieur pour finir juste en dessous du niveau de confiance supérieur.
     
-## <a name="using-a-label-as-a-condition-in-a-dlp-policy"></a>Utilisation d’une étiquette comme condition dans une stratégie DLP
+## <a name="using-a-retention-label-as-a-condition-in-a-dlp-policy"></a>Utilisation d’une étiquette de rétention comme condition dans une stratégie DLP
 
-Vous pouvez créer une étiquette, puis :
-<!-- what kind of label? -->
-  
-- la **publier** afin que les utilisateurs finaux y aient accès et puissent manuellement l’appliquer au contenu ; 
-    
-- l’**appliquer automatiquement** au contenu qui remplit les conditions que vous avez définies. 
-    
-Pour en savoir plus sur les étiquettes, consultez l’article [Vue d’ensemble des étiquettes de rétention](labels.md).
-  
-Après avoir créé une étiquette, vous pouvez l’utiliser comme condition dans vos stratégies DLP. 
+Lorsque vous utilisez une [étiquette de rétention](labels.md) précédemment créée et publiée comme condition dans une stratégie DLP, vous devez tenir compte des éléments suivants :
+
+- Vous devez avoir déjà créé, publié et appliqué l’étiquette de rétention avant de tenter de l’utiliser en tant que condition dans une stratégie DLP.
+- La synchronisation d’étiquettes de rétention peut prendre jusqu’à une journée et il faut compter jusqu’à sept jours pour qu’elles s’appliquent automatiquement après leur création et leur publication. Voir le [Délai d’activation des étiquettes de rétention](labels.md#how-long-it-takes-for-retention-labels-to-take-effect) pour plus d’informations.
+- L’utilisation d’une étiquette de rétention dans une stratégie ***est prise en charge uniquement pour des éléments SharePoint Online et OneDrive Entreprise***.
+
 
 ![Étiquettes comme condition](../media/5b1752b4-a129-4a88-b010-8dcf8a38bb09.png)
 
-Dans les scénarios suivants, par exemple :
-  
-- Vous avez publié une étiquette intitulée **Confidentiel** pour permettre aux membres de votre organisation de l’appliquer manuellement aux e-mails et documents confidentiels. L’utilisation de cette étiquette comme condition dans votre stratégie DLP vous permettra d’empêcher les utilisateurs de partager du contenu **Confidentiel** avec des personnes extérieures à votre organisation. 
-    
-- Vous avez créé une étiquette intitulée **Chalet alpin** pour un projet du même nom, puis automatiquement appliqué cette étiquette au contenu comportant les mots-clés « Chalet alpin ». L’utilisation de cette étiquette comme condition dans votre stratégie DLP vous permettra d’afficher un conseil de stratégie à l’attention des utilisateurs finaux qui s’apprêteront à partager ce type de contenu avec une personne extérieure à votre organisation. 
-    
-- Vous avez publié une étiquette intitulée **Dossier fiscal** pour permettre au personnel chargé de la gestion des dossiers de l’appliquer manuellement au contenu à classer. L’utilisation de cette étiquette comme condition dans votre stratégie DLP vous permettra de rechercher tout contenu comportant cette étiquette ainsi que d’autres types d’informations sensibles, comme les numéros individuels des contribuables ou les numéros de sécurité sociale, puis d’appliquer des mesures de protection sur le contenu comportant l’étiquette **Dossier fiscal** et de générer des rapports d’activité détaillés sur la stratégie DLP à partir des rapports DLP et des données du journal d’audit. 
-    
-- Vous avez publié une étiquette intitulée **Équipe de direction – Sensible** sur les boîtes aux lettres Exchange et sur les comptes OneDrive d’un groupe de cadres. L’utilisation de cette étiquette comme condition dans votre stratégie DLP vous permettra d’appliquer des mesures de rétention et de protection au même sous-ensemble de contenu et d’utilisateurs. 
-    
-L’utilisation d’étiquettes comme condition dans les règles DLP permet d’appliquer de façon sélective des mesures de protection à un ensemble spécifique de contenu, de sites ou d’utilisateurs. 
+Vous souhaitez peut-être utiliser une étiquette de rétention dans une stratégie DLP si vous avez des éléments sous rétention et suppression auxquels vous voulez appliquer des contrôles supplémentaires, par exemple :
 
-> [!NOTE]
-> Si vous spécifiez une étiquette de rétention comme condition dans une stratégie DLP et que vous incluez également Exchange et/ou Teams comme emplacement, le message d’erreur suivant apparaît : « la protection du contenu étiqueté dans les messages électroniques et d’équipe n’est pas prise en charge. Supprimez l’étiquette ci-dessous ou désactivez les options Exchange et Teams en tant qu’emplacement ». Cela est dû au fait qu’Exchange transport n’évalue pas les métadonnées d’étiquette lors de l’envoi et de la distribution des messages. 
+- Vous avez publié une étiquette de rétention nommée **année fiscale 2018** qui, lorsqu’elle est appliquée à des documents fiscaux de 2018 stockés dans SharePoint, les conserve pendant 10 ans, puis les supprime. Vous ne souhaitez pas non plus que ces éléments soient partagés à l’extérieur de votre organisation, ce que vous pouvez faire grâce à une stratégie DLP.
+
+> [!IMPORTANT]
+> L’erreur ci-après s’affiche si vous spécifiez une étiquette de rétention comme condition dans une stratégie DLP et que vous incluez également Exchange et/ou Teams comme emplacement : **« La protection du contenu étiqueté dans les messages électroniques et d’équipe n’est pas prise en charge. Supprimez l’étiquette ci-dessous ou désactivez Exchange ou Teams en tant qu’emplacement. »** Cela est dû au fait qu’Exchange transport n’évalue pas les métadonnées d’étiquette lors de l’envoi et de la distribution des messages. 
 
 ### <a name="support-for-sensitivity-labels-is-coming"></a>La prise en charge des étiquettes de confidentialité est pour bientôt
 
