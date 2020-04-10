@@ -6,7 +6,7 @@ ms.author: pebaum
 author: pebaum
 manager: mnirkhe
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: fbcef2d7-ebaf-40d0-ba1f-cdaeff9f50ef
 description: Découvrez comment vérifier votre domaine et configurer les enregistrements DNS pour la messagerie, Skype entreprise Online et d’autres services sur les zones DNS Azure pour Office 365.
-ms.openlocfilehash: 30e54da8ffd51165b1cc0d2eb82d9d02eefdaf4d
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 1c9ac04f74b205fa4a099fca634a41207e8083ba
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42362739"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43211049"
 ---
 # <a name="create-dns-records-for-azure-dns-zones"></a>Créer des enregistrements DNS pour les zones DNS Azure
 
@@ -107,7 +107,7 @@ Avant d'utiliser votre domaine avec Office 365, nous devons vérifier que celui-
     
     (Choisissez les valeurs **type** et **unité de durée de vie** dans les listes déroulantes.) 
     
-    |**Nom**|**Type**|**TTL (Durée de vie)**|**Unité de durée de vie**|**Value (Valeur)**|
+    |**Name**|**Type**|**TTL (Durée de vie)**|**Unité de durée de vie**|**Value (Valeur)**|
     |:-----|:-----|:-----|:-----|:-----|
     |@  <br/> |TXT  <br/> |0,1  <br/> |Heures  <br/> |MS=ms *XXXXXXXX*  <br/> **Remarque :** il s'agit d'un exemple. Utilisez votre valeur **Adresse de destination ou de pointage** spécifique ici, à partir du tableau dans Office 365.           [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md)          |
    
@@ -157,9 +157,9 @@ Lorsqu’Office 365 trouve l’enregistrement TXT approprié, votre domaine est
     
     (Choisissez les valeurs **type** et **unité de durée de vie** dans les listes déroulantes.) 
     
-    |**Nom**|**Type**|**TTL (Durée de vie)**|**Unité de durée de vie**|**Preference (Préférence)**|**Exchange mail**|
+    |**Name**|**Type**|**TTL (Durée de vie)**|**Unité de durée de vie**|**Preference (Préférence)**|**Exchange mail**|
     |:-----|:-----|:-----|:-----|:-----|:-----|
-    |@  <br/> |MX  <br/> |0,1  <br/> |Heures  <br/> |10   <br/> Pour plus d'informations sur la priorité, voir [Qu'est-ce que la priorité MX ?](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx). <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/> **Remarque :** Obtenez votre * \<clé\> de domaine* à partir de votre compte Office 365.   [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md)  
+    |@  <br/> |MX  <br/> |0,1  <br/> |Heures  <br/> |10   <br/> Pour plus d'informations sur la priorité, voir [Qu'est-ce que la priorité MX ?](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx). <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/> **Remarque :** Obtenez votre * \<clé\> de domaine* à partir de votre compte Office 365.   [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md)  
    
     ![Azure-BP-configure-2-1](../../media/712c23ae-9d38-4af2-94e0-0704e70744fe.png)
   
@@ -206,7 +206,7 @@ Lorsqu’Office 365 trouve l’enregistrement TXT approprié, votre domaine est
     
     (Choisissez les valeurs **type** et **unité de durée de vie** dans les listes déroulantes.) 
     
-    |**Nom**|**Type**|**TTL (Durée de vie)**|**Unité de durée de vie**|**Alias**|
+    |**Name**|**Type**|**TTL (Durée de vie)**|**Unité de durée de vie**|**Alias**|
     |:-----|:-----|:-----|:-----|:-----|
     |autodiscover  <br/> |CNAME  <br/> |0,1  <br/> |Heures  <br/> |autodiscover.outlook.com  <br/> |
     |sip  <br/> |CNAME  <br/> |0,1  <br/> |Heures  <br/> |sipdir.online.lync.com  <br/> |
@@ -230,7 +230,7 @@ Lorsqu’Office 365 trouve l’enregistrement TXT approprié, votre domaine est
 > [!IMPORTANT]
 > Si vous avez la gestion des appareils mobiles (MDM) pour Office 365, vous devez créer deux autres enregistrements CNAME. Suivez la procédure que vous avez utilisée pour les quatre autres enregistrements CNAME, mais fournissez les valeurs du tableau suivant. (Si vous ne disposez pas de MDM, vous pouvez ignorer cette étape.) 
   
-|**Nom**|**Type**|**TTL (Durée de vie)**|**Unité de durée de vie**|**Alias**|
+|**Name**|**Type**|**TTL (Durée de vie)**|**Unité de durée de vie**|**Alias**|
 |:-----|:-----|:-----|:-----|:-----|
 |enterpriseregistration  <br/> |CNAME  <br/> |0,1  <br/> |Heures  <br/> |enterpriseregistration.windows.net  <br/> |
 |enterpriseenrollment  <br/> |CNAME  <br/> |0,1  <br/> |Heures  <br/> |enterpriseenrollment-s.manage.microsoft.com  <br/> |
@@ -257,7 +257,7 @@ Lorsqu’Office 365 trouve l’enregistrement TXT approprié, votre domaine est
     
     (Choisissez les valeurs **type** et **unité de durée de vie** dans les listes déroulantes.) 
     
-    |**Nom**|**Type**|**TTL (Durée de vie)**|**Unité de durée de vie**|**Value (Valeur)**|
+    |**Name**|**Type**|**TTL (Durée de vie)**|**Unité de durée de vie**|**Value (Valeur)**|
     |:-----|:-----|:-----|:-----|:-----|
     |@  <br/> |TXT  <br/> |0,1  <br/> |Heures  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/> **Remarque :** nous vous recommandons de copier et coller cette entrée, afin que l’espacement reste correcte.           
 
@@ -288,7 +288,7 @@ Lorsqu’Office 365 trouve l’enregistrement TXT approprié, votre domaine est
     
     (Choisissez les valeurs **type** et **unité de durée de vie** dans les listes déroulantes.) 
     
-    |**Nom**|**Type**|**TTL (Durée de vie)**|**Unité de durée de vie**|**Priority (Priorité)**|**Weight (Poids)**|**Port (Port)**|**Target (Cible)**|
+    |**Name**|**Type**|**TTL (Durée de vie)**|**Unité de durée de vie**|**Priority (Priorité)**|**Weight (Poids)**|**Port (Port)**|**Target (Cible)**|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
     |_sip. _tls  <br/> |SRV  <br/> |0,1  <br/> |Heures  <br/> |100  <br/> |0,1  <br/> |443  <br/> |sipdir.online.lync.com  <br/> |
     |_sipfederationtls. _tcp  <br/> |SRV  <br/> |0,1  <br/> |Heures  <br/> |100  <br/> |0,1  <br/> |5061  <br/> |sipfed.online.lync.com  <br/> 

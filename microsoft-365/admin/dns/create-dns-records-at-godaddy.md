@@ -6,7 +6,7 @@ ms.author: pebaum
 author: pebaum
 manager: mnirkhe
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -21,12 +21,12 @@ search.appverid:
 ms.assetid: f40a9185-b6d5-4a80-bb31-aa3bb0cab48a
 description: Découvrez comment vérifier votre domaine et configurer les enregistrements DNS pour la messagerie, Skype entreprise Online et d’autres services sur GoDaddy pour Office 365.
 ms.custom: okr_smb
-ms.openlocfilehash: e037e989a51a95b16077d1edfcdff4b341ee3b80
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: eceab4659dfc01d6a731c4ed07f27bb29214e5fb
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42349235"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43211738"
 ---
 # <a name="create-dns-records-at-godaddy-for-office-365"></a>Créer des enregistrements DNS auprès de GoDaddy pour Office 365
 
@@ -124,7 +124,7 @@ Suivez la procédure ci-dessous.
 
     |**Record type (Type d'enregistrement)**|**Host (Hôte)**|**Points to (Destination)**|**Priorité**|**TTL (Durée de vie)**|
     |:-----|:-----|:-----|:-----|:-----|
-    |MX (Mail Exchanger) (MX - Serveur de courrier)  <br/> |@  <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/> **Remarque :** Obtenez votre * \<clé\> de domaine* à partir de votre compte Office 365.           [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md)          |10   <br/> Pour plus d'informations sur la priorité, voir [Qu'est-ce que la priorité MX ?](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx). <br/> |1 heure  <br/> |
+    |MX (Mail Exchanger) (MX - Serveur de courrier)  <br/> |@  <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/> **Remarque :** Obtenez votre * \<clé\> de domaine* à partir de votre compte Office 365.           [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md)          |10   <br/> Pour plus d'informations sur la priorité, voir [Qu'est-ce que la priorité MX ?](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx). <br/> |1 heure  <br/> |
 
 6. Cliquez sur **Enregistrer**.
 

@@ -6,7 +6,7 @@ ms.author: pebaum
 author: pebaum
 manager: mnirkhe
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7173c635-58b3-400f-95e0-97abe915565e
 description: Découvrez comment vérifier votre domaine et configurer des enregistrements DNS pour la messagerie, Skype entreprise Online et d’autres services sur WiX pour Office 365.
-ms.openlocfilehash: 43d2f2417153dd0c848c33736733237b1681c02c
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 8487c49e989bf2db345ae9e6d0e2970c5eb40cb6
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42243048"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43211061"
 ---
 # <a name="create-dns-records-at-wix-for-office-365"></a>Créer des enregistrements DNS auprès de WiX pour Office 365
 
@@ -58,7 +58,7 @@ Avant d'utiliser votre domaine avec Office 365, nous devons vérifier que celui-
 > [!NOTE]
 > Cet enregistrement sert uniquement à vérifier que vous êtes propriétaire du domaine. Vous pouvez éventuellement le supprimer ultérieurement. 
   
-1. Pour commencer, accédez à la page de vos domaines sur WiX en utilisant [ce lien](https://premium.wix.com/wix/api/mpContainerStaticController#/domains?referralAdditionalInfo=account). You'll be prompted to log in first.
+1. Pour commencer, accédez à la page de vos domaines sur WiX en utilisant [ce lien](https://premium.wix.com/wix/api/mpContainerStaticController#/domains?referralAdditionalInfo=account). Avant toute chose, vous serez invité à vous connecter.
     
 2. Sur la page **Mes domaines** , dans la zone **avancé** , sélectionnez le bouton **modifier le DNS** . 
     
@@ -68,26 +68,26 @@ Avant d'utiliser votre domaine avec Office 365, nous devons vérifier que celui-
     
 ||||
 |:-----|:-----|:-----|
-|**Host Name** <br/> |**TXT Value (Valeur TXT)** <br/> |**TTL** <br/> |
-|Rempli automatiquement  <br/> |MS=ms *XXXXXXXX*  <br/> **Remarque :** Voici un exemple. Utilisez votre valeur **Adresse de destination ou de pointage** spécifique ici, à partir du tableau dans Office 365.  [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md)|1 Hour <br/> |          |
+|**Host Name** <br/> |**VALEUR TXT** <br/> |**TTL** <br/> |
+|Rempli automatiquement  <br/> |MS=ms *XXXXXXXX*  <br/> **Remarque :** il s'agit d'un exemple. Utilisez votre valeur **Adresse de destination ou de pointage** spécifique ici, à partir du tableau dans Office 365.  [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md)|1 Hour <br/> |          |
    
 5. Sélectionnez le bouton **enregistrer le DNS** en haut de l’éditeur DNS. 
     
 6. Patientez quelques minutes, le temps que l'enregistrement que vous venez de créer soit mis à jour sur Internet.
     
-Now that you've added the record at your domain registrar's site, you'll go back to Office 365 and request Office 365 to look for the record.
+L’enregistrement étant désormais ajouté sur le site de votre bureau d’enregistrement de domaines, revenez à Office 365 et demandez à Office 365 de rechercher l’enregistrement.
   
-When Office 365 finds the correct TXT record, your domain is verified.
+Lorsqu’Office 365 trouve l’enregistrement TXT approprié, votre domaine est vérifié.
   
-1. Dans le centre d’administration, accédez à la page **paramètres** \> des <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">domaines</a> .
+1. Dans le centre d’administration, accédez à la page **Paramètres** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domaines</a>.
     
-2. Dans la page **domaines** , sélectionnez le domaine que vous vérifiez. 
+2. Dans la page **Domaines**, sélectionnez le domaine que vous vérifiez. 
   
   
-3. Sur la page **installation** , sélectionnez **Démarrer l’installation**.
+3. Dans la page **Configuration**, sélectionnez **Démarrer la configuration**.
    
   
-4. Sur la page **vérifier le domaine** , sélectionnez **vérifier**.
+4. Dans la page **Vérifier le domaine**, sélectionnez **Vérifier**.
     
     
   
@@ -97,7 +97,7 @@ When Office 365 finds the correct TXT record, your domain is verified.
 ## <a name="add-an-mx-record-so-email-for-your-domain-will-come-to-office-365"></a>Ajouter un enregistrement MX afin que les courriers électroniques pour votre domaine soient transférés vers Office 365
 <a name="BKMK_mx"> </a>
 
-1. Pour commencer, accédez à la page de vos domaines sur WiX en utilisant [ce lien](https://premium.wix.com/wix/api/mpContainerStaticController#/domains?referralAdditionalInfo=account). You'll be prompted to log in first.
+1. Pour commencer, accédez à la page de vos domaines sur WiX en utilisant [ce lien](https://premium.wix.com/wix/api/mpContainerStaticController#/domains?referralAdditionalInfo=account). Avant toute chose, vous serez invité à vous connecter.
     
 2. Sur la page **Mes domaines** , dans la zone **boîtes aux lettres** , sélectionnez le lien **configurer votre enregistrement MX** . 
     
@@ -107,7 +107,7 @@ When Office 365 finds the correct TXT record, your domain is verified.
     
 5. Dans les zones du nouvel enregistrement, tapez ou copiez-collez les valeurs du tableau suivant :
     
-|**Host Name**|**Points to (Pointe vers)**|**Priority (Priorité)**|**TTL**|
+|**Host Name**|**Points to (Pointe vers)**|**Priorité**|**TTL**|
 |:-----|:-----|:-----|:-----|
 |Rempli automatiquement <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/> **Remarque :** Obtenez votre * \<clé\> de domaine* à partir de votre compte Office 365.   [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md) |0  <br/> Pour plus d'informations sur la priorité, voir [Qu'est-ce que la priorité MX ?](https://support.office.com/article/What-is-MX-priority-2784cc4d-95be-443d-b5f7-bb5dd867ba83). | 1 Hour|
    
@@ -128,7 +128,7 @@ When Office 365 finds the correct TXT record, your domain is verified.
     
 4. Dans les zones du nouvel enregistrement, tapez ou copiez-collez les valeurs du tableau suivant :
     
-|**Host Name**|**Points to (Pointe vers)**|**TTL (Durée de vie)**|
+|**Host Name**|**Points to (Destination)**|**TTL (Durée de vie)**|
 |:-----|:-----|:-----|
 |autodiscover  <br/> |autodiscover.outlook.com  <br/> |1 Hour  <br/> |
 |sip  <br/> |sipdir.online.lync.com  <br/> |1 Hour <br/> |
@@ -138,15 +138,15 @@ When Office 365 finds the correct TXT record, your domain is verified.
    
 5. Sélectionnez le bouton **enregistrer le DNS** en haut de l’éditeur DNS. 
     
-6. Wait a few minutes before you continue, so that the record you just created can update across the Internet.
+6. Patientez quelques minutes, le temps que l'enregistrement que vous venez de créer soit mis à jour sur Internet.
     
-## <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a>Ajouter un enregistrement TXT pour SPF afin d'éviter le courrier indésirable
+## <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a>Ajoutez un enregistrement TXT pour SPF afin d'éviter le courrier indésirable
 <a name="BKMK_spf"> </a>
 
 > [!IMPORTANT]
-> You cannot have more than one TXT record for SPF for a domain. If your domain has more than one SPF record, you'll get email errors, as well as delivery and spam classification issues. If you already have an SPF record for your domain, don't create a new one for Office 365. Ajoutez plutôt les valeurs Office 365 requises à l'enregistrement actuel de manière à n'avoir qu'un  *seul*  enregistrement SPF qui inclut les deux ensembles de valeurs.  
+> Vous ne pouvez avoir qu’un enregistrement TXT pour SPF pour un domaine. Si votre domaine comporte plusieurs enregistrements SPF, vous rencontrez des erreurs au niveau de la transmission du courrier électronique ainsi que des problèmes de remise du courrier et de classification en tant que courrier indésirable. If you already have an SPF record for your domain, don't create a new one for Office 365. Ajoutez plutôt les valeurs Office 365 requises à l'enregistrement actuel de manière à n'avoir qu'un  *seul*  enregistrement SPF qui inclut les deux ensembles de valeurs.  
   
-1. Pour commencer, accédez à la page de vos domaines sur WiX en utilisant [ce lien](https://premium.wix.com/wix/api/mpContainerStaticController#/domains?referralAdditionalInfo=account). You'll be prompted to log in first.
+1. Pour commencer, accédez à la page de vos domaines sur WiX en utilisant [ce lien](https://premium.wix.com/wix/api/mpContainerStaticController#/domains?referralAdditionalInfo=account). Avant toute chose, vous serez invité à vous connecter.
     
 2. Sur la page **Mes domaines** , dans la zone **avancé** , sélectionnez le bouton **modifier le DNS** . 
     
@@ -154,18 +154,18 @@ When Office 365 finds the correct TXT record, your domain is verified.
     
 4. Dans les zones du nouvel enregistrement, tapez ou copiez-collez les valeurs du tableau suivant :
     
-|**Host Name**|**TXT Value (Valeur TXT)**|**TTL**|
+|**Host Name**|**VALEUR TXT**|**TTL**|
 |:-----|:-----|:-----|
-|[Laissez ce champ vide]  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/> **Remarque :** Nous vous recommandons de copier et coller cette entrée, afin que l’espacement reste correcte.<br/> |TXT  <br/> | 1 Hour |
+|[Laissez ce champ vide]  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/> **Remarque :** nous vous recommandons de copier et coller cette entrée, afin que l’espacement reste correcte.<br/> |TXT  <br/> | 1 Hour |
    
 5. Sélectionnez le bouton **enregistrer le DNS** en haut de l’éditeur DNS. 
     
-6. Wait a few minutes before you continue, so that the record you just created can update across the Internet.
+6. Patientez quelques minutes, le temps que l'enregistrement que vous venez de créer soit mis à jour sur Internet.
     
-## <a name="add-the-two-srv-records-that-are-required-for-office-365"></a>Ajouter les 2 enregistrements SRV requis pour Office 365
+## <a name="add-the-two-srv-records-that-are-required-for-office-365"></a>Ajoutez les 2 enregistrements SRV requis pour Office 365
 <a name="BKMK_srv"> </a>
 
-1. Pour commencer, accédez à la page de vos domaines sur WiX en utilisant [ce lien](https://premium.wix.com/wix/api/mpContainerStaticController#/domains?referralAdditionalInfo=account). You'll be prompted to log in first.
+1. Pour commencer, accédez à la page de vos domaines sur WiX en utilisant [ce lien](https://premium.wix.com/wix/api/mpContainerStaticController#/domains?referralAdditionalInfo=account). Avant toute chose, vous serez invité à vous connecter.
     
 2. Sur la page **Mes domaines** , dans la zone **avancé** , sélectionnez le bouton **modifier le DNS** . 
     
@@ -173,14 +173,14 @@ When Office 365 finds the correct TXT record, your domain is verified.
     
 4. Dans les zones du nouvel enregistrement, tapez ou copiez-collez les valeurs du tableau suivant :
     
-|**Service**|**Protocol (Protocole)**|**Name (Nom)**|**Weight (Poids)**|**Port**|**Target (Cible)**|**Priorité**|**TTL**|
+|**Service**|**Protocol (Protocole)**|**Name (Nom)**|**Weight (Poids)**|**Port (Port)**|**Target (Cible)**|**Priorité**|**TTL**|
 |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
 |sip  |tls  |Rempli automatiquement |0,1  |443   |sipdir.online.lync.com |100 |1 Hour |
 |sipfed|tcp |Rempli automatiquement|0,1 |5061 |sipfed.online.lync.com|100 | 1 Hour |
    
 5. Sélectionnez le bouton **enregistrer le DNS** en haut de l’éditeur DNS. 
     
-6. Wait a few minutes before you continue, so that the record you just created can update across the Internet.
+6. Patientez quelques minutes, le temps que l'enregistrement que vous venez de créer soit mis à jour sur Internet.
     
 > [!NOTE]
 >  L'application des enregistrements DNS modifiés prend généralement 15 minutes. Il peut toutefois arriver que la répercussion d'une modification dans le système DNS sur Internet prenne davantage de temps. Si vous rencontrez des problèmes avec le flux de messages ou d'autres problèmes suite à l'ajout des enregistrements DNS, voir [Résolution des problèmes suite à la modification de votre nom de domaine ou des enregistrements DNS](../get-help-with-domains/find-and-fix-issues.md). 

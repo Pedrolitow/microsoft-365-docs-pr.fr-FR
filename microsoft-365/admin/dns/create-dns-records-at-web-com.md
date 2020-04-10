@@ -6,7 +6,7 @@ ms.author: pebaum
 author: pebaum
 manager: mnirkhe
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 84acd4fc-6eec-4d00-8bed-568f036ae2af
 description: Découvrez comment vérifier votre domaine et configurer les enregistrements DNS pour la messagerie, Skype entreprise Online et d’autres services sur web.com pour Office 365.
-ms.openlocfilehash: eb231f85e568e81a5e229f0533d8176feb590f48
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: d5546b55392849aac9049613bd860f937ffb7618
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42249454"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43211073"
 ---
 # <a name="create-dns-records-at-webcom-for-office-365"></a>Créer des enregistrements DNS sur web.com pour Office 365
 
@@ -86,9 +86,9 @@ Avant d'utiliser votre domaine avec Office 365, nous devons vérifier que celui-
   
 4. Dans la page **noms de domaine** , sous **texte (enregistrements TXT)**, cliquez sur **modifier les enregistrements TXT**, puis sélectionnez les valeurs du tableau suivant. 
     
-    |**Host (Hôte)**|**TTL**|**Text (Texte)**|
+    |**Host (Hôte)**|**TTL (Durée de vie)**|**Text (Texte)**|
     |:-----|:-----|:----|
-    |@  <br/> |3600  <br/> |MS=ms *XXXXXXXX*  <br/> **Remarque :** Voici un exemple. Utilisez votre valeur **Adresse de destination ou de pointage** spécifique ici, à partir du tableau dans Office 365.           [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md)    |
+    |@  <br/> |3600  <br/> |MS=ms *XXXXXXXX*  <br/> **Remarque :** il s'agit d'un exemple. Utilisez votre valeur **Adresse de destination ou de pointage** spécifique ici, à partir du tableau dans Office 365.           [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md)    |
   
     
 5. Sélectionnez **Continuer**.
@@ -96,22 +96,22 @@ Avant d'utiliser votre domaine avec Office 365, nous devons vérifier que celui-
   
 6. Patientez quelques minutes avant de vérifier votre nouvel enregistrement TXT, afin que l’enregistrement que vous venez de créer puisse être mis à jour sur Internet.
     
-Now that you've added the record at your domain registrar's site, you'll go back to Office 365 and request Office 365 to look for the record.
+L’enregistrement étant désormais ajouté sur le site de votre bureau d’enregistrement de domaines, revenez à Office 365 et demandez à Office 365 de rechercher l’enregistrement.
   
-When Office 365 finds the correct TXT record, your domain is verified.
+Lorsqu’Office 365 trouve l’enregistrement TXT approprié, votre domaine est vérifié.
   
-1. Dans le centre d’administration, accédez à la page **paramètres** \> des <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">domaines</a> .
+1. Dans le centre d’administration, accédez à la page **Paramètres** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domaines</a>.
 
     
-2. Dans la page **domaines** , sélectionnez le domaine que vous vérifiez. 
+2. Dans la page **Domaines**, sélectionnez le domaine que vous vérifiez. 
     
     
   
-3. Sur la page **installation** , sélectionnez **Démarrer l’installation**.
+3. Dans la page **Configuration**, sélectionnez **Démarrer la configuration**.
     
     
   
-4. Sur la page **vérifier le domaine** , sélectionnez **vérifier**.
+4. Dans la page **Vérifier le domaine**, sélectionnez **Vérifier**.
     
     
   
@@ -131,7 +131,7 @@ When Office 365 finds the correct TXT record, your domain is verified.
     
     |**Priorité**|**TTL**|**Mail Server (Serveur de courrier)**|
     |:-----|:-----|:-----|
-    |0,1  <br/> Pour plus d'informations sur la priorité, voir [Qu'est-ce que la priorité MX ?](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx). <br/> |3600  <br/> |*\<domain-key\>*  .mail.protection.outlook.com  <br/> **Remarque :** Obtenez votre * \<clé\> de domaine* à partir de votre compte Office 365.   [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md) |
+    |0,1  <br/> Pour plus d'informations sur la priorité, voir [Qu'est-ce que la priorité MX ?](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx). <br/> |3600  <br/> |*\<domain-key\>*  .mail.protection.outlook.com  <br/> **Remarque :** Obtenez votre * \<clé\> de domaine* à partir de votre compte Office 365.   [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md) |
    
 
 5. Cliquez sur **Enregistrer**.
@@ -144,7 +144,7 @@ When Office 365 finds the correct TXT record, your domain is verified.
 ## <a name="add-the-six-cname-records-that-are-required-for-office-365"></a>Ajouter les six enregistrements CNAMe requis pour Office 365
 <a name="BKMK_add_CNAME"> </a>
 
-1. Pour commencer, accédez à la page de vos domaines sur web.com à l’aide de [ce lien](https://checkout.web.com/manage-it/index.jsp). You'll be prompted to log in first.
+1. Pour commencer, accédez à la page de vos domaines sur web.com à l’aide de [ce lien](https://checkout.web.com/manage-it/index.jsp). Avant toute chose, vous serez invité à vous connecter.
      
 2. Sur la page **Gestionnaire de comptes** , sélectionnez **mes noms de domaine**. 
   
@@ -170,11 +170,11 @@ When Office 365 finds the correct TXT record, your domain is verified.
 6. Ajoutez successivement les 5 autres enregistrements CNAME.
 
     
-## <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a>Ajouter un enregistrement TXT pour SPF afin d'éviter le courrier indésirable
+## <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a>Ajoutez un enregistrement TXT pour SPF afin d'éviter le courrier indésirable
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
-> You cannot have more than one TXT record for SPF for a domain. If your domain has more than one SPF record, you'll get email errors, as well as delivery and spam classification issues. If you already have an SPF record for your domain, don't create a new one for Office 365. Ajoutez plutôt les valeurs Office 365 requises à l'enregistrement actuel de manière à n'avoir qu'un  *seul*  enregistrement SPF qui inclut les deux ensembles de valeurs. 
+> Vous ne pouvez avoir qu’un enregistrement TXT pour SPF pour un domaine. Si votre domaine comporte plusieurs enregistrements SPF, vous rencontrez des erreurs au niveau de la transmission du courrier électronique ainsi que des problèmes de remise du courrier et de classification en tant que courrier indésirable. If you already have an SPF record for your domain, don't create a new one for Office 365. Ajoutez plutôt les valeurs Office 365 requises à l'enregistrement actuel de manière à n'avoir qu'un  *seul*  enregistrement SPF qui inclut les deux ensembles de valeurs. 
   
 1. Pour commencer, accédez à la page de vos domaines sur web.com à l’aide de [ce lien](https://checkout.web.com/manage-it/index.jsp). Connectez-vous d’abord.
     
@@ -186,18 +186,18 @@ When Office 365 finds the correct TXT record, your domain is verified.
   
 4. Dans la page **noms de domaine** , sous **texte (enregistrements TXT)**, cliquez sur **modifier les enregistrements TXT**, puis sélectionnez les valeurs du tableau suivant.   
     
-    |**Host (Hôte)**|**TTL**|**Text (Texte)**|
+    |**Host (Hôte)**|**TTL (Durée de vie)**|**Text (Texte)**|
     |:-----|:-----|:-----|
-    |@  <br/> |3600  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/> **Remarque :** Nous vous recommandons de copier et coller cette entrée, afin que l’espacement reste correcte.   |
+    |@  <br/> |3600  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/> **Remarque :** nous vous recommandons de copier et coller cette entrée, afin que l’espacement reste correcte.   |
 
  
 5. Sélectionnez **Continuer**.
 
-6. Sélectionnez **enregistrer les modifications**.
+6. Sélectionnez **Enregistrer les modifications**.
     
 
   
-## <a name="add-the-two-srv-records-that-are-required-for-office-365"></a>Ajouter les 2 enregistrements SRV requis pour Office 365
+## <a name="add-the-two-srv-records-that-are-required-for-office-365"></a>Ajoutez les 2 enregistrements SRV requis pour Office 365
 <a name="BKMK_add_SRV"> </a>
 
 > [!IMPORTANT]
@@ -213,7 +213,7 @@ When Office 365 finds the correct TXT record, your domain is verified.
 
     Sous **service (enregistrements SRV)**, cliquez sur **modifier les enregistrements SRV**, puis sélectionnez les valeurs du tableau suivant. 
         
-    |**Service**|**Protocol (Protocole)**|**TTL (Durée de vie)**|**Priority (Priorité)**|**Weight (Poids)**|**Port**|**Target (Cible)**|
+    |**Service**|**Protocol (Protocole)**|**TTL (Durée de vie)**|**Priority (Priorité)**|**Weight (Poids)**|**Port (Port)**|**Target (Cible)**|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
     |_sip |_tls |3600 | 100|0,1 |443 |sipfed.online.lync.com  |
     |_sipfederationtls |_tcp |3600 |100 |0,1 |5061 | sipfed.online.lync.com |
@@ -223,7 +223,7 @@ When Office 365 finds the correct TXT record, your domain is verified.
   
 6. Sélectionnez **Continuer**.
 
-7. Sélectionnez **enregistrer les modifications**.
+7. Sélectionnez **Enregistrer les modifications**.
 
     
 > [!NOTE]

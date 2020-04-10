@@ -6,7 +6,7 @@ ms.author: sirkkuw
 author: sirkkuw
 manager: scotv
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 787d7a75-e201-46f3-a242-f698162ff09f
 description: Découvrez comment mettre à niveau une ou plusieurs listes de distribution vers des groupes Office 365 dans Outlook, et comment utiliser PowerShell pour mettre à niveau plusieurs listes de distribution simultanément.
-ms.openlocfilehash: 7337d450cf1e9b249b2b9dc2ab66f32f5b1577e0
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: c3acf1d47a37d79d666b1b951bea704c273ccf09
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42361709"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43212280"
 ---
 # <a name="upgrade-distribution-lists-to-office-365-groups-in-outlook"></a>Transformer des listes de distribution en groupes Office 365
 
@@ -122,7 +122,7 @@ Get-DistributionGroup| Foreach-Object{
 
 Vous ne pouvez mettre à niveau que des listes de distribution non imbriquées gérées dans le Cloud, simples et non imbriquées. Le tableau ci-dessous répertorie les listes de distribution qui **ne peuvent pas** être mises à niveau.
 
-|**Propriété**|**Exclus?**|
+|**Property**|**Exclus?**|
 |:-----|:-----|
 |Liste de distribution gérée locale.  <br/> |Non  <br/> |
 |Listes de distribution imbriquées. La liste de distribution a des groupes enfants ou est membre d’un autre groupe.  <br/> |Non  <br/> |

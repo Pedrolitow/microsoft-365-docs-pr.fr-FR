@@ -6,7 +6,7 @@ ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
 audience: Admin
-ms.topic: troubleshooting
+ms.topic: article
 f1_keywords:
 - ZTDTroubleshootDeviceErrors
 - O365E_ZTDTroubleshootDeviceErrors
@@ -27,12 +27,12 @@ search.appverid:
 - MOE150
 ms.assetid: 1f468690-530c-47ea-918f-fede24607c53
 description: Découvrez comment résoudre les erreurs que vous pouvez voir lors de l’utilisation de fichiers d’appareil AutoPilot dans Microsoft 365 Business.
-ms.openlocfilehash: dc1abd508156c8525859f6ca7e291ab38fc8859c
-ms.sourcegitcommit: 217de0fc54cbeaea32d253f175eaf338cd85f5af
+ms.openlocfilehash: 8b99e848fa040711785b921d12548f16dadb09af
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42560697"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43212130"
 ---
 # <a name="troubleshoot-autopilot-device-errors"></a>Résoudre les erreurs des appareils AutoPilot
 

@@ -6,23 +6,23 @@ ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: ''
 search.appverid: ''
 ROBOTS: NOINDEX, NOFOLLOW
 description: Recherchez, testez et déployez des applications Microsoft Partner et Microsoft pour les utilisateurs et les groupes de votre organisation à partir du portail d’applications intégré dans le centre d’administration 365 de Microsoft.
-ms.openlocfilehash: 4cd8c71b521c80f8a3043cf13427132b3ec3e750
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 5189eef7524242a87f1797f8856bbd33b9a32a31
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42363064"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43212268"
 ---
 # <a name="test-and-deploy-microsoft-365-apps-in-the-microsoft-365-admin-center"></a>Test et déploiement des applications Microsoft 365 dans le centre d’administration Microsoft 365
 
-Le centre d’administration Microsoft 365 vous offre la souplesse nécessaire pour déployer des applications Microsoft et partenaires Microsoft à partir d’un seul emplacement. La possibilité de rechercher, tester et déployer entièrement des applications achetées et sous licence par Microsoft et les partenaires Microsoft à partir du portail d’applications intégré offre la commodité et les avantages dont votre organisation a besoin pour maintenir régulièrement la mise à jour et l’exécution des services professionnels. efficacement.  
+Le centre d’administration Microsoft 365 vous offre la souplesse nécessaire pour déployer des applications Microsoft et partenaires Microsoft à partir d’un seul emplacement. La possibilité de rechercher, tester et déployer entièrement des applications achetées et sous licence par Microsoft et les partenaires Microsoft à partir du portail d’applications intégré offre la commodité et les avantages dont votre organisation a besoin pour assurer la mise à jour régulière et l’exécution efficaces des services professionnels.  
 
 Pour plus d’informations sur l’achat et la gestion des licences des applications Microsoft 365 pour votre organisation, voir le billet de blog appelé [gérer et déployer des applications microsoft 365 à partir du centre d’administration microsoft 365](https://techcommunity.microsoft.com/t5/microsoft-365-blog/manage-and-deploy-microsoft-365-apps-from-the-microsoft-365/ba-p/1194324).
   

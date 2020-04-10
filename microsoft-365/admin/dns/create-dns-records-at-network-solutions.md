@@ -6,7 +6,7 @@ ms.author: pebaum
 author: pebaum
 manager: mnirkhe
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 1dc55f9f-5309-450f-acc3-b2b4119c8be3
 description: Découvrez comment vérifier votre domaine et configurer les enregistrements DNS pour la messagerie, Skype entreprise Online et d’autres services sur les solutions réseau pour Office 365.
-ms.openlocfilehash: f94ad49f443e609aa28d634d05604601c7d5e576
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 6bbe954f763e0cb06e9bf32b991e60da34393c57
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42348535"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43211121"
 ---
 # <a name="create-dns-records-at-network-solutions-for-office-365"></a>Créer des enregistrements DNS auprès de Network Solutions pour Office 365
 
@@ -160,7 +160,7 @@ Suivez les étapes décrites ci-dessous ou [regardez la vidéo (commencez la lec
     
     |**Priorité**|**TTL**|**Mail Server (Serveur de courrier)**|
     |:-----|:-----|:-----|
-    |10   <br/> Pour plus d'informations sur la priorité, voir [Qu'est-ce que la priorité MX ?](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx). <br/> |3600  <br/> | *\<clé_de_domaine\>*  .mail.protection.outlook.com.  <br/> **This value MUST end with a period (.)** <br/> **Remarque :** Obtenez votre * \<clé\> de domaine* à partir de votre compte Office 365. [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md)          |
+    |10   <br/> Pour plus d'informations sur la priorité, voir [Qu'est-ce que la priorité MX ?](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx). <br/> |3600  <br/> | *\<clé_de_domaine\>*  .mail.protection.outlook.com.  <br/> **This value MUST end with a period (.)** <br/> **Remarque :** Obtenez votre * \<clé\> de domaine* à partir de votre compte Office 365. [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md)          |
        
     ![Tapez ou collez des valeurs dans les zones du nouvel enregistrement.](../../media/0bb96872-cc6e-4dfa-a649-fb7efbbf0012.png)
   

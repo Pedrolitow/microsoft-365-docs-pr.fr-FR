@@ -6,7 +6,7 @@ ms.author: cmcatee
 author: cmcatee-MSFT
 manager: mnirkhe
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Les boîtes aux lettres partagées sont utilisées lorsque plusieurs personnes ont besoin d’accéder à la même boîte aux lettres. Découvrez ce que vous devez savoir avant de créer une boîte aux lettres partagée.
-ms.openlocfilehash: 3bb78cc272a1920d9eab92aff50a14e345dce2e1
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 8e9e4b1ae0235886a9dbb5b39ad4c0f78c27b53f
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42362379"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43210539"
 ---
 # <a name="about-shared-mailboxes"></a>À propos des boîtes aux lettres partagées
 

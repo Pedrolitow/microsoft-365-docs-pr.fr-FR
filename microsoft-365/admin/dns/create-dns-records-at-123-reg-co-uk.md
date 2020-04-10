@@ -6,7 +6,7 @@ ms.author: pebaum
 author: pebaum
 manager: mnirkhe
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 1f2d08c9-2a88-4d2f-ae1f-e39f9e358b17
 description: Découvrez comment vérifier votre domaine et configurer les enregistrements DNS pour la messagerie, Skype entreprise Online et d’autres services sur 123-reg.co.uk pour Office 365.
-ms.openlocfilehash: 327f55dcedfda6eef31d56af1833a5c5438af2a6
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 521426f039ac02e8c4566f5901fee49679de4e70
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42351375"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43211858"
 ---
 # <a name="create-dns-records-at-123-regcouk-for-office-365"></a>Créer des enregistrements DNS auprès de 123-reg.co.uk pour Office 365
 

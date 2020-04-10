@@ -6,7 +6,7 @@ ms.author: pebaum
 author: pebaum
 manager: mnirkhe
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -21,12 +21,12 @@ search.appverid:
 - GEA150
 ms.assetid: f09696b2-8c29-4588-a08b-b333da19810c
 description: Découvrez comment supprimer un ancien domaine d’Office 365 et déplacer des utilisateurs et des groupes vers un autre domaine.
-ms.openlocfilehash: efbd49daa28b5d15989e1531929cb2d9355aeb8f
-ms.sourcegitcommit: fe4beef350ef9f39b1098755cff46fa2b8e7dc4d
+ms.openlocfilehash: 621b50384b39a21bc0bf5256841c703b3ee0f74a
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2020
-ms.locfileid: "42857426"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43210367"
 ---
 # <a name="remove-a-domain-from-office-365"></a>Supprimer un domaine d'Office 365
 
@@ -229,7 +229,7 @@ Cela ne fonctionne toujours pas ? Vous devez peut-être supprimer votre domaine 
 
 [Foire aux questions domaines](../setup/domains-faq.md)
 
-[Obtenir de l’aide sur les domaines Office 365](get-help-with-domains.yml)
+[Obtenir de l’aide sur les domaines Office 365](get-help-with-domains.md)
 
 [Basculer vers une autre offre Office 365 pour les entreprises](../../commerce/subscriptions/switch-to-a-different-plan.md)
 

@@ -6,7 +6,7 @@ ms.author: pebaum
 author: pebaum
 manager: mnirkhe
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 55bd8c38-3316-48ae-a368-4959b2c1684e
 description: Découvrez comment vérifier votre domaine et configurer les enregistrements DNS pour la messagerie, Skype entreprise Online et d’autres services sur Register.com pour Office 365.
-ms.openlocfilehash: 0210c03a48112d9cc517ae15f879db3b40eb8c94
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: d89e1843a7c914843c7e9d5c41582878e138473a
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42354135"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43211097"
 ---
 # <a name="create-dns-records-at-registercom-for-office-365"></a>Créer des enregistrements DNS auprès de Register.com pour Office 365
 
@@ -123,7 +123,7 @@ Suivez les étapes décrites ci-dessous ou [regardez la vidéo (commencez la lec
     
     |****Host Name (Nom d'hôte)****|****Priority (Priorité)****|****Mail Server (Serveur de courrier)****|
     |:-----|:-----|:-----|
-    |@  <br/> |Importante  <br/> Pour plus d'informations sur la priorité, voir [Qu'est-ce que la priorité MX ?](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx). <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/>  <br/>**Remarque :** Obtenez votre \<*clé de domaine*\> à partir de votre compte Office 365. <br> [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md)          |
+    |@  <br/> |Élevé  <br/> Pour plus d'informations sur la priorité, voir [Qu'est-ce que la priorité MX ?](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx). <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/>  <br/>**Remarque :** Obtenez votre \<*clé de domaine*\> à partir de votre compte Office 365. <br> [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md)          |
    
     ![Copiez et collez la valeur à partir du tableau](../../media/a1a15a14-c3dc-45dc-adcd-90fdb3f7455d.png)
   

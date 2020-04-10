@@ -14,20 +14,20 @@ search.appverid:
 - MET150
 ms.collection: Strat_O365_Enterprise
 description: 'Résumé : comprendre le chiffrement des données au niveau de la couche de service dans Microsoft Office 365.'
-ms.openlocfilehash: a8faded033ade013924eeeab269aa213840430b4
-ms.sourcegitcommit: 13f28aa762e467bab8ab1e95e1917b3ac28931da
+ms.openlocfilehash: fb6bf87fbd51bcb4383e9eb595ef11f081989d86
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43193460"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43211941"
 ---
 # <a name="office-365-service-encryption"></a>Chiffrement du service Office 365
 
 En plus de l’utilisation de BitLocker pour le chiffrement au niveau du volume, Exchange Online, Skype entreprise, SharePoint Online, OneDrive entreprise et teams utilisent également le chiffrement de service pour chiffrer les données client. Le chiffrement de service autorise deux options de gestion clés :
 
-- Microsoft gère toutes les clés de chiffrement. Cette option est actuellement disponible dans les conversations SharePoint Online, OneDrive entreprise, Skype entreprise et Teams. Vos données sont chiffrées par défaut à l’aide de clés gérées Microsoft.
+- Microsoft gère toutes les clés de chiffrement. Cette option est actuellement disponible dans les conversations SharePoint Online, OneDrive entreprise, Skype entreprise et Teams. Vos données sont chiffrées par défaut à l’aide de clés gérées par Microsoft.
 
-- Votre organisation fournit les clés racines. Vous gérez ces clés à l’aide du coffre de clés Azure. Cette option est appelée clé client. La clé client est actuellement disponible pour les fichiers Exchange Online, SharePoint Online, OneDrive entreprise, Skype entreprise et Teams. Si vous utilisez la clé client, ces clés remplacent les clés gérées Microsoft pour chiffrer vos données.
+- Votre organisation fournit les clés racines. Vous gérez ces clés à l’aide du coffre de clés Azure. Cette option est appelée clé client. La clé client est actuellement disponible pour les fichiers Exchange Online, SharePoint Online, OneDrive entreprise, Skype entreprise et Teams. Si vous utilisez la clé client, ces clés remplacent les clés gérées par Microsoft pour chiffrer vos données.
 
 Quelle que soit l’option choisie, le chiffrement de service offre plusieurs avantages :
 

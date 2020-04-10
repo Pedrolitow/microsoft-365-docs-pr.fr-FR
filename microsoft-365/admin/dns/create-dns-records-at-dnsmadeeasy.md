@@ -6,7 +6,7 @@ ms.author: pebaum
 author: pebaum
 manager: mnirkhe
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: e158b079-b054-4b7e-8e01-e55169ce18d7
 description: Découvrez comment vérifier votre domaine et configurer les enregistrements DNS pour la messagerie, Skype entreprise Online et d’autres services sur DNSMadeEasy pour Office 365.
-ms.openlocfilehash: 82244d216652b1957aefc3b81acd881ea4b32393
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 29bdf78e3f9993267c5f0be3b107981bb9dd3fe3
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42350315"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43211798"
 ---
 # <a name="create-dns-records-at-dnsmadeeasy-for-office-365"></a>Créer des enregistrements DNS auprès de DNSMadeEasy pour Office 365
 
@@ -63,7 +63,7 @@ Avant d'utiliser votre domaine avec Office 365, nous devons vérifier que celui-
     
     ||||
     |:-----|:-----|:-----|
-    |**Nom** <br/> |**Valeur** <br/> |**TTL** <br/> |
+    |**Name** <br/> |**Valeur** <br/> |**TTL** <br/> |
     |(Laissez ce champ vide.)  <br/> |MS=ms *XXXXXXXX*  <br/> **Remarque :** il s'agit d'un exemple. Utilisez votre valeur **Adresse de destination ou de pointage** spécifique ici, à partir du tableau dans Office 365. [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md)          |1800  <br/> |
    
 5. Sélectionnez **Envoyer**.
@@ -107,9 +107,9 @@ Lorsqu’Office 365 trouve l’enregistrement TXT approprié, votre domaine est
     
     (Vous devrez peut-être faire défiler la page vers le bas.)
     
-    |**Nom**|**Server**|**MX Level (Niveau MX)**|**TTL (Durée de vie)**|
+    |**Name**|**Server**|**MX Level (Niveau MX)**|**TTL (Durée de vie)**|
     |:-----|:-----|:-----|:-----|
-    |(Laissez ce champ vide.)  <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/> **Cette valeur DOIT se terminer par un point (.)** <br/> **Remarque :** Obtenez votre \<*clé de domaine*\> à partir de votre compte Office 365. [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md)          |10   <br/> Pour plus d'informations sur la priorité, voir [Qu'est-ce que la priorité MX ?](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx). <br/> |1800  <br/> |
+    |(Laissez ce champ vide.)  <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/> **Cette valeur DOIT se terminer par un point (.)** <br/> **Remarque :** Obtenez votre \<*clé de domaine*\> à partir de votre compte Office 365. [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md)          |10   <br/> Pour plus d'informations sur la priorité, voir [Qu'est-ce que la priorité MX ?](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx). <br/> |1800  <br/> |
    
     ![DNSMadeEasy-BP-configure-2-2](../../media/69b53af9-1eec-435c-8434-1b6058c1ec82.png)
   
@@ -146,7 +146,7 @@ Lorsqu’Office 365 trouve l’enregistrement TXT approprié, votre domaine est
     
     Dans la zone **Add CNAME Records (Ajouter des enregistrements CNAME)**, dans les zones du nouvel enregistrement, tapez ou copiez-collez les valeurs de la première ligne du tableau suivant. 
     
-    |**Nom**|**Alias to (Alias vers)**|**TTL (Durée de vie)**|
+    |**Name**|**Alias to (Alias vers)**|**TTL (Durée de vie)**|
     |:-----|:-----|:-----|
     |autodiscover  <br/> |autodiscover.outlook.com.  <br/> **Cette valeur DOIT se terminer par un point (.)** <br/> |1800  <br/> |
     |sip  <br/> |sipdir.online.lync.com.  <br/> **Cette valeur DOIT se terminer par un point (.)** <br/> |1800  <br/> |
@@ -184,7 +184,7 @@ Lorsqu’Office 365 trouve l’enregistrement TXT approprié, votre domaine est
   
 4. In the **Add TXT Records** area, in the boxes for the new record, type or copy and paste the values from the following table. 
     
-    |**Nom**|**Valeur**|**TTL**|
+    |**Name**|**Valeur**|**TTL**|
     |:-----|:-----|:-----|
     |(Laissez ce champ vide.)  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/> **Remarque :** nous vous recommandons de copier et coller cette entrée, afin que l’espacement reste correcte.           |1800  <br/> |
    

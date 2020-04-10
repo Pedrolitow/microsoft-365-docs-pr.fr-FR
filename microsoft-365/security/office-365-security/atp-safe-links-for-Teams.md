@@ -14,12 +14,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Les équipes auront désormais accès à des liens fiables au moment de votre clic. Que vous utilisiez des conversations de conversation 1-on-1, entre des groupes ou des canaux, et des onglets, si vous disposez d’un abonnement à la protection avancée contre les menaces pour Office 365, vous pouvez activer et utiliser cette fonctionnalité de sécurité.
-ms.openlocfilehash: 864b211a1f007a0f6bde83da12b61362b53bf041
-ms.sourcegitcommit: ce6121a8e3ca7438071d73b0c76e2b6f33ac1cf7
+ms.openlocfilehash: 49a49bd41e71daf0afc9e7a24e79898ff98ad798
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "43030138"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43212544"
 ---
 <!--06/21/2019-->
 
@@ -35,6 +35,9 @@ Voici le principe de fonctionnement :
 1. Lorsque vous démarrez l’application Teams, Office 365 vérifie que l’utilisateur appartient à une organisation disposant d’Office 365 ATP et que l’utilisateur fait partie d’une stratégie de liens approuvés active avec sa protection activée pour Microsoft Teams.
 
 2. Si les éléments ci-dessus sont vrais, les URL seront validées au moment du clic dans les conversations, les conversations de groupe, les canaux et dans les onglets pour cet utilisateur.
+
+> [!NOTE]
+> Les liens fiables protègent les utilisateurs des liens envoyés par des utilisateurs invités, des utilisateurs fédérés, des utilisateurs clients. Si l’utilisateur connecté dispose de liens fiables pour les équipes activées, les protections de liens fiables s’appliquent.
  
 ## <a name="what-will-users-experience"></a>Qu’est-ce que les utilisateurs peuvent expérimenter ? 
 

@@ -6,7 +6,7 @@ ms.author: cmcatee
 author: cmcatee-MSFT
 manager: mnirkhe
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Une fois que vous avez créé une boîte aux lettres partagée, vous pouvez configurer certains paramètres pour ses utilisateurs, tels que le transfert de courrier électronique et les réponses automatiques. Par la suite, vous pouvez modifier d’autres paramètres, tels que le nom de la boîte aux lettres ou les membres.
-ms.openlocfilehash: edea829a8578387459afe3ce4889dfa620f95956
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: fc2995dc448c7cb28c13c10d78b57e7141963539
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42253079"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43212020"
 ---
 # <a name="configure-a-shared-mailbox"></a>Configurer une boîte aux lettres partagée
 
@@ -35,19 +35,19 @@ Une fois que vous avez [créé une boîte aux lettres partagée](create-a-shared
 
 ::: moniker range="o365-worldwide"
 
-1. Dans le centre d’administration, accédez à la page **groupes** \> de <a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">boîtes aux lettres partagées</a> .
+1. Dans le Centre d’administration, accédez à la page **Groupes** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">Boîtes aux lettres partagées</a>.
 
 ::: moniker-end 
 
 ::: moniker range="o365-germany"
 
-1. Dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">Centre d’administration</a>, accédez à la page **groupes** > de **boîtes aux lettres partagées** . 
+1. Dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">Centre d’administration</a>, accédez à la page **Groupes** > **Boîtes aux lettres partagées**. 
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. Dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">Centre d’administration</a>, accédez à la page **groupes** > de **boîtes aux lettres partagées** . 
+1. Dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">Centre d’administration</a>, accédez à la page **Groupes** > **Boîtes aux lettres partagées**. 
 
 ::: moniker-end
 
@@ -63,19 +63,19 @@ Il n’est pas nécessaire d’attribuer une licence à la boîte aux lettres pa
 
 ::: moniker range="o365-worldwide"
 
-1. Dans le centre d’administration, accédez à la page **groupes** \> de <a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">boîtes aux lettres partagées</a> .
+1. Dans le Centre d’administration, accédez à la page **Groupes** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">Boîtes aux lettres partagées</a>.
 
 ::: moniker-end 
 
 ::: moniker range="o365-germany"
 
-1. Dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">Centre d’administration</a>, accédez à la page **groupes** > de **boîtes aux lettres partagées** . 
+1. Dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">Centre d’administration</a>, accédez à la page **Groupes** > **Boîtes aux lettres partagées**. 
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. Dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">Centre d’administration</a>, accédez à la page **groupes** > de **boîtes aux lettres partagées** . 
+1. Dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">Centre d’administration</a>, accédez à la page **Groupes** > **Boîtes aux lettres partagées**. 
 
 ::: moniker-end
 
@@ -89,19 +89,19 @@ Il n’est pas nécessaire d’attribuer une licence à la boîte aux lettres pa
 
 ::: moniker range="o365-worldwide"
 
-1. Dans le centre d’administration, accédez à la page **groupes** \> de <a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">boîtes aux lettres partagées</a> .
+1. Dans le Centre d’administration, accédez à la page **Groupes** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">Boîtes aux lettres partagées</a>.
 
 ::: moniker-end 
 
 ::: moniker range="o365-germany"
 
-1. Dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">Centre d’administration</a>, accédez à la page **groupes** > de **boîtes aux lettres partagées** . 
+1. Dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">Centre d’administration</a>, accédez à la page **Groupes** > **Boîtes aux lettres partagées**. 
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. Dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">Centre d’administration</a>, accédez à la page **groupes** > de **boîtes aux lettres partagées** . 
+1. Dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">Centre d’administration</a>, accédez à la page **Groupes** > **Boîtes aux lettres partagées**. 
 
 ::: moniker-end
 
@@ -126,19 +126,19 @@ Si vous souhaitez autoriser tout le monde à voir le courrier envoyé, dans le c
 
 ::: moniker range="o365-worldwide"
 
-1. Dans le centre d’administration, accédez à la page **groupes** \> de <a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">boîtes aux lettres partagées</a> .
+1. Dans le Centre d’administration, accédez à la page **Groupes** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">Boîtes aux lettres partagées</a>.
 
 ::: moniker-end 
 
 ::: moniker range="o365-germany"
 
-1. Dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">Centre d’administration</a>, accédez à la page **groupes** > de **boîtes aux lettres partagées** . 
+1. Dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">Centre d’administration</a>, accédez à la page **Groupes** > **Boîtes aux lettres partagées**. 
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. Dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">Centre d’administration</a>, accédez à la page **groupes** > de **boîtes aux lettres partagées** . 
+1. Dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">Centre d’administration</a>, accédez à la page **Groupes** > **Boîtes aux lettres partagées**. 
 
 ::: moniker-end
 
@@ -155,19 +155,19 @@ Pour en savoir plus sur la conservation pour litige, consultez [la rubrique Cré
 
 ::: moniker range="o365-worldwide"
 
-1. Dans le centre d’administration, accédez à la page **groupes** \> de <a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">boîtes aux lettres partagées</a> .
+1. Dans le Centre d’administration, accédez à la page **Groupes** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">Boîtes aux lettres partagées</a>.
 
 ::: moniker-end 
 
 ::: moniker range="o365-germany"
 
-1. Dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">Centre d’administration</a>, accédez à la page **groupes** > de **boîtes aux lettres partagées** . 
+1. Dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">Centre d’administration</a>, accédez à la page **Groupes** > **Boîtes aux lettres partagées**. 
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. Dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">Centre d’administration</a>, accédez à la page **groupes** > de **boîtes aux lettres partagées** . 
+1. Dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">Centre d’administration</a>, accédez à la page **Groupes** > **Boîtes aux lettres partagées**. 
 
 ::: moniker-end
 
@@ -184,19 +184,19 @@ Pour en savoir plus sur la conservation pour litige, consultez [la rubrique Cré
 
 ::: moniker range="o365-worldwide"
 
-1. Dans le centre d’administration, accédez à la page **groupes** \> de <a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">boîtes aux lettres partagées</a> .
+1. Dans le Centre d’administration, accédez à la page **Groupes** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">Boîtes aux lettres partagées</a>.
 
 ::: moniker-end 
 
 ::: moniker range="o365-germany"
 
-1. Dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">Centre d’administration</a>, accédez à la page **groupes** > de **boîtes aux lettres partagées** . 
+1. Dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">Centre d’administration</a>, accédez à la page **Groupes** > **Boîtes aux lettres partagées**. 
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. Dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">Centre d’administration</a>, accédez à la page **groupes** > de **boîtes aux lettres partagées** . 
+1. Dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">Centre d’administration</a>, accédez à la page **Groupes** > **Boîtes aux lettres partagées**. 
 
 ::: moniker-end
 
@@ -212,19 +212,19 @@ Pour en savoir plus sur la conservation pour litige, consultez [la rubrique Cré
 
 ::: moniker range="o365-worldwide"
 
-1. Dans le centre d’administration, accédez à la page **groupes** \> de <a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">boîtes aux lettres partagées</a> .
+1. Dans le Centre d’administration, accédez à la page **Groupes** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">Boîtes aux lettres partagées</a>.
 
 ::: moniker-end 
 
 ::: moniker range="o365-germany"
 
-1. Dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">Centre d’administration</a>, accédez à la page **groupes** > de **boîtes aux lettres partagées** . 
+1. Dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">Centre d’administration</a>, accédez à la page **Groupes** > **Boîtes aux lettres partagées**. 
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. Dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">Centre d’administration</a>, accédez à la page **groupes** > de **boîtes aux lettres partagées** . 
+1. Dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">Centre d’administration</a>, accédez à la page **Groupes** > **Boîtes aux lettres partagées**. 
 
 ::: moniker-end
 
@@ -244,25 +244,25 @@ Si vous choisissez de ne pas afficher la boîte aux lettres partagée dans la li
 
 ::: moniker range="o365-worldwide"
 
-1. Dans le centre d’administration, accédez à la page **groupes** \> de <a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">boîtes aux lettres partagées</a> .
+1. Dans le Centre d’administration, accédez à la page **Groupes** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">Boîtes aux lettres partagées</a>.
 
 ::: moniker-end 
 
 ::: moniker range="o365-germany"
 
-1. Dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">Centre d’administration</a>, accédez à la page **groupes** > de **boîtes aux lettres partagées** . 
+1. Dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">Centre d’administration</a>, accédez à la page **Groupes** > **Boîtes aux lettres partagées**. 
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. Dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">Centre d’administration</a>, accédez à la page **groupes** > de **boîtes aux lettres partagées** . 
+1. Dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">Centre d’administration</a>, accédez à la page **Groupes** > **Boîtes aux lettres partagées**. 
 
 ::: moniker-end
 
 2. Sélectionnez la boîte aux lettres partagée que vous souhaitez modifier, puis sélectionnez Afficher dans la \> **modification** **de la liste d’adresses globale** .
 
-3. Activer ou **Désactiver**le bouton **** bascule. 
+3. Activer ou **Désactiver**le bouton **On** bascule. 
 
 4. Cliquez sur **Enregistrer**.
 
@@ -277,6 +277,6 @@ Si vous choisissez de ne pas afficher la boîte aux lettres partagée dans la li
 
 [Convertir une boîte aux lettres utilisateur en boîte aux lettres partagée](convert-user-mailbox-to-shared-mailbox.md)
 
-[Supprimer une licence d’une boîte aux lettres partagée](remove-license-from-shared-mailbox.md)
+[Supprimer une licence à partir d’une boîte aux lettres partagée](remove-license-from-shared-mailbox.md)
 
 [Résoudre les problèmes liés aux boîtes aux lettres partagées](resolve-issues-with-shared-mailboxes.md)

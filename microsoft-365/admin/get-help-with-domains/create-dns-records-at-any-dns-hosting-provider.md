@@ -6,7 +6,7 @@ ms.author: pebaum
 author: pebaum
 manager: mnirkhe
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Priority
 ms.collection:
@@ -23,12 +23,12 @@ search.appverid:
 ms.assetid: 7b7b075d-79f9-4e37-8a9e-fb60c1d95166
 description: Apprenez à vérifier votre domaine et à créer des enregistrements DNS auprès d’un fournisseur d'hébergement DNS pour Office 365.
 ms.custom: okr_smb
-ms.openlocfilehash: 2d3c726f70ffb4588f7ae2fc8b53bf8f0c60e258
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 28df13d0ebe78d055df556d71c7a753d3434b030
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42252971"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43210479"
 ---
 # <a name="create-dns-records-at-any-dns-hosting-provider-for-office-365"></a>Créer des enregistrements DNS auprès d’un fournisseur d’hébergement DNS pour Office 365
 
@@ -74,7 +74,7 @@ Avant d'utiliser votre domaine avec Office 365, nous devons vérifier que celui-
 |||||
 |:-----|:-----|:-----|:-----|
 |**Type d’enregistrement**|**Alias** ou **nom d’hôte**|**Valeur**|**TTL**|
-|TXT|Effectuez l'une des opérations suivantes : Tapez **@**, laissez le champ vide ou entrez le nom de votre domaine.  <br/> **Remarque :** les conditions requises pour ce champ ne sont pas identiques pour tous les hôtes DNS. |MS=ms *XXXXXXXX*  <br/> **Remarque :** il s'agit d'un exemple. Utilisez votre valeur **Adresse de destination ou de pointage** spécifique ici, à partir du tableau dans Office 365.  <br/>        [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md)     <br/>     |Définissez cette valeur sur **1 heure** ou sur l'équivalent en minutes ( **60** ), en secondes ( **3600** ), etc.  |
+|TXT|Effectuez l'une des opérations suivantes : Tapez **@**, laissez le champ vide ou entrez le nom de votre domaine.  <br/> **Remarque :** les conditions requises pour ce champ ne sont pas identiques pour tous les hôtes DNS. |MS=ms *XXXXXXXX*  <br/> **Remarque :** il s'agit d'un exemple. Utilisez votre valeur **Adresse de destination ou de pointage** spécifique ici, à partir du tableau dans Office 365.  <br/>        [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md)     <br/>     |Définissez cette valeur sur **1 heure** ou sur l'équivalent en minutes ( **60** ), en secondes ( **3600** ), etc.  |
    
   - **Si vous créez un enregistrement MX, utilisez les valeurs suivantes :**
     

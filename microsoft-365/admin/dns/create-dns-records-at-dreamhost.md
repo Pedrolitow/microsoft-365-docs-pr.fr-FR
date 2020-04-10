@@ -6,7 +6,7 @@ ms.author: pebaum
 author: pebaum
 manager: mnirkhe
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9c0812e0-908b-4b41-a64b-77f0dbd3db7a
 description: Découvrez comment vérifier votre domaine et configurer les enregistrements DNS pour la messagerie, Skype entreprise Online et d’autres services sur Dreamhost pour Office 365.
-ms.openlocfilehash: 201452bc68f82138c08e2054452747a900ed0e6b
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 1997af6e14dcb6a118dfcc3558037ed56d07ea87
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42349485"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43211786"
 ---
 # <a name="create-dns-records-at-dreamhost-for-office-365"></a>Créer des enregistrements DNS sur Dreamhost pour Office 365
 
@@ -66,7 +66,7 @@ Avant d'utiliser votre domaine avec Office 365, nous devons vérifier que celui-
     
     (Choose the **Type** value from the drop-down list.) 
     
-    |**Nom**|**Type**|**Valeur**|**Comment**|
+    |**Name**|**Type**|**Valeur**|**Commentaire**|
     |:-----|:-----|:-----|:-----|
     |(Leave this field empty.)  <br/> |TXT  <br/> |MS=ms *XXXXXXXX*  <br/> **Remarque :** il s'agit d'un exemple. Utilisez votre valeur **Adresse de destination ou de pointage** spécifique ici, à partir du tableau dans Office 365.           [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md)          |(Ce champ est facultatif.)  <br/> |
    
@@ -167,7 +167,7 @@ Suivez la procédure ci-dessous.
     
     (Choose the **Type** value from the drop-down list.) 
     
-    |**Nom**|**Type**|**Valeur**|**Comment**|
+    |**Name**|**Type**|**Valeur**|**Commentaire**|
     |:-----|:-----|:-----|:-----|
     |autodiscover  <br/> |CNAME  <br/> |autodiscover.outlook.com.  <br/> **This value MUST end with a period (.)** <br/> |(Ce champ est facultatif.)  <br/> |
     |sip  <br/> |CNAME  <br/> |sipdir.online.lync.com.  <br/> **This value MUST end with a period (.)** <br/> |(Ce champ est facultatif.)  <br/> |
@@ -210,7 +210,7 @@ Suivez la procédure ci-dessous.
     
     (Choose the **Type** value from the drop-down list.) 
     
-    |**Nom**|**Type**|**Valeur**|**Comment**|
+    |**Name**|**Type**|**Valeur**|**Commentaire**|
     |:-----|:-----|:-----|:-----|
     |(Leave this field empty.)  <br/> |TXT  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/> **Remarque :** nous vous recommandons de copier et coller cette entrée, afin que l’espacement reste correcte.           |(Ce champ est facultatif.)  <br/> |
    
@@ -246,7 +246,7 @@ Suivez la procédure ci-dessous.
     
     (Choose the **Type** value from the drop-down list.) 
     
-    |**Nom**|**Type**|**Valeur**|**Comment**|
+    |**Name**|**Type**|**Valeur**|**Commentaire**|
     |:-----|:-----|:-----|:-----|
     |_sip. _tls  <br/> |SRV  <br/> |100 1 443  <br/> sipdir.online.lync.com.  <br/> **This value MUST end with a period (.)** <br/> |(Ce champ est facultatif.)  <br/> |
     |_sipfederationtls. _tcp  <br/> |SRV  <br/> |100 1 5061  <br/> sipfed.online.lync.com.  <br/> **Cette valeur DOIT se terminer par un point (.)** <br/> |(Ce champ est facultatif.)  <br/> |

@@ -6,7 +6,7 @@ ms.author: pebaum
 author: pebaum
 manager: mnirkhe
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.collection:
 - Adm_O365
 - Adm_NonTOC
@@ -19,12 +19,12 @@ search.appverid:
 ROBOTS: NOINDEX
 description: Pour plus d’informations sur l’enregistrement CNAMe « MSOID » dans Office 365 qui vous dirige vers le meilleur serveur pour les processus d’authentification, vous allez obtenir une réponse plus rapide.
 monikerRange: o365-21vianet
-ms.openlocfilehash: fdf728dcaebf65485b1eaed9b41e49f5327e9a41
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: f5369b8a723c60691da0e73f2bd8cc32233abbcd
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42254127"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43212220"
 ---
 # <a name="whats-the-purpose-of-the-office-365-cname-record-for-msoid"></a>À quoi sert l'enregistrement CNAME Office 365 pour MSOID ?
 

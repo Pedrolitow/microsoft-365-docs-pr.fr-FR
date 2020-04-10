@@ -6,7 +6,7 @@ ms.author: pebaum
 author: pebaum
 manager: mnirkhe
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 5176feef-36dc-4d84-842f-1f2b5a21ba96
 description: Découvrez comment vérifier votre domaine et configurer les enregistrements DNS pour la messagerie, Skype entreprise Online et d’autres services sur OVH pour Office 365.
-ms.openlocfilehash: 4857addd7dfd096c1ddd6e59f1f17ace76b75a9e
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 3ba4e61c875f74a0a6cf76c8b7cd82ea88e0221b
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42354345"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43211109"
 ---
 # <a name="create-dns-records-at-ovh-for-office-365"></a>Créer des enregistrements DNS sur OVH pour Office 365
 
@@ -143,7 +143,7 @@ Lorsqu’Office 365 trouve l’enregistrement TXT approprié, votre domaine est
   
     |**Type d'enregistrement**|**Sous-domaine**|**TTL (Durée de vie)**|**Priority (Priorité)**|**Target (Cible)**|
     |:-----|:-----|:-----|:-----|:-----|
-    |MX  <br/> |(Laisser vide)  <br/> |3600 (secondes)  <br/> |10   <br/> Pour plus d'informations sur la priorité, voir [Qu'est-ce que la priorité MX ?](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx). <br/> |\<Key\>. mail.protection.Outlook.com.  <br/> **Remarque :** Obtenez votre * \<clé\> de domaine* à partir de votre compte Office 365.  [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md)  |
+    |MX  <br/> |(Laisser vide)  <br/> |3600 (secondes)  <br/> |10   <br/> Pour plus d'informations sur la priorité, voir [Qu'est-ce que la priorité MX ?](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx). <br/> |\<Key\>. mail.protection.Outlook.com.  <br/> **Remarque :** Obtenez votre * \<clé\> de domaine* à partir de votre compte Office 365.  [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md)  |
    
     ![Enregistrement MX OVH pour le courrier électronique](../../media/6e2f5655-93e2-4620-8f19-c452e7edf8f0.png)
   

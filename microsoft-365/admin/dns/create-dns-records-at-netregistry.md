@@ -6,7 +6,7 @@ ms.author: pebaum
 author: pebaum
 manager: mnirkhe
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -21,12 +21,12 @@ search.appverid:
 - BEA160
 ms.assetid: 48e09394-2287-4b3c-9853-21eadf61277e
 description: Découvrez comment vérifier votre domaine et configurer les enregistrements DNS pour la messagerie, Skype entreprise Online et d’autres services sur NetRegistry pour Office 365.
-ms.openlocfilehash: 91f802afccd337a97b23ca514c9d9921595abcd1
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: e1f2414817357b8435bc002860a35c6e76d4314e
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42348815"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43211133"
 ---
 # <a name="create-dns-records-at-netregistry-for-office-365"></a>Créer des enregistrements DNS dans NetRegistry pour Office 365
 
@@ -82,7 +82,7 @@ Avant d'utiliser votre domaine avec Office 365, nous devons vérifier que celui-
   
     Dans le **nouveau formulaire d’enregistrement txt** , tapez ou copiez-collez les valeurs du tableau suivant. 
     
-    |**Nom**|**DURÉE DE VIE (S)**|**TXT (pointe vers l’adresse ou la valeur)**|
+    |**Name**|**DURÉE DE VIE (S)**|**TXT (pointe vers l’adresse ou la valeur)**|
     |:-----|:-----|:-----|
     |(Laisser vide)  <br/> |3600 (secondes)  <br/> |« MS = msXXXXXXXX »  <br/> **Remarque :** il s'agit d'un exemple. Utilisez votre valeur **Adresse de destination ou de pointage** spécifique ici, à partir du tableau dans Office 365. [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md)  |
        
@@ -136,9 +136,9 @@ Lorsqu’Office 365 trouve l’enregistrement TXT approprié, votre domaine est
   
 6. Dans le **nouveau formulaire d’enregistrement MX** , tapez ou copiez-collez les valeurs du tableau suivant. 
     
-    |**Nom**|**DURÉE DE VIE (S)**|**Exchange (pointe vers l’adresse ou la valeur)**|**L’hôte est-il entièrement qualifié ?**|**Préférence (priorité)**|
+    |**Name**|**DURÉE DE VIE (S)**|**Exchange (pointe vers l’adresse ou la valeur)**|**L’hôte est-il entièrement qualifié ?**|**Préférence (priorité)**|
     |:-----|:-----|:-----|:-----|:-----|
-    |(Laisser vide)  <br/> |3600 (secondes)  <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/> **Remarque :** Obtenez votre * \<clé\> de domaine* à partir de votre compte Office 365.  [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md)      |(cochez la case)  <br/> |10   <br/> For more information about priority, see What is MX priority?  <br/> |
+    |(Laisser vide)  <br/> |3600 (secondes)  <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/> **Remarque :** Obtenez votre * \<clé\> de domaine* à partir de votre compte Office 365.  [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md)      |(cochez la case)  <br/> |10   <br/> For more information about priority, see What is MX priority?  <br/> |
        
     ![Netregistry_MX_values](../../media/518b3da6-4055-4e2d-b5ce-44a0fee25419.png)
   
@@ -167,7 +167,7 @@ Lorsqu’Office 365 trouve l’enregistrement TXT approprié, votre domaine est
   
 5. Dans les zones du nouvel enregistrement, tapez ou copiez-collez les valeurs du tableau suivant.
     
-    |**Nom**|**Type**|**TTL (Durée de vie)**|**HÔTE (pointe vers ou adresse)**|
+    |**Name**|**Type**|**TTL (Durée de vie)**|**HÔTE (pointe vers ou adresse)**|
     |:-----|:-----|:-----|:-----|
     |autodiscover  <br/> |CNAME  <br/> |3600 (secondes)  <br/> |autodiscover.outlook.com  <br/> |
     |sip  <br/> |CNAME  <br/> |3600 (secondes)  <br/> |sipdir.online.lync.com  <br/> |
@@ -212,7 +212,7 @@ Lorsqu’Office 365 trouve l’enregistrement TXT approprié, votre domaine est
     > [!NOTE]
     > Vous devez utiliser des guillemets avant et après l’entrée dans la zone TXT. 
   
-    |**Nom**|**Type**|**TTL (Durée de vie)**|**Données TXT (cible)**|
+    |**Name**|**Type**|**TTL (Durée de vie)**|**Données TXT (cible)**|
     |:-----|:-----|:-----|:-----|
     |(Laisser vide)  <br/> |TXT  <br/> |3600 (secondes)  <br/> |"v = spf1 include include. protection. Outlook. com-All"  <br/> **Remarque :** nous vous recommandons de copier et coller cette entrée, afin que l’espacement reste correcte.           |
    

@@ -6,7 +6,7 @@ ms.author: pebaum
 author: pebaum
 manager: mnirkhe
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 6386d63e-b78f-4736-90e7-b99a2c116a9f
 description: Découvrez comment vérifier votre domaine et configurer des enregistrements DNS pour la messagerie, Skype entreprise Online et d’autres services sur des domaines folles pour Office 365.
-ms.openlocfilehash: 157c33a52403efbefe673bf11465de525ffb4f33
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 74c9a940f8d6f52c31712357557ea8cfda76e6bb
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42351155"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43211822"
 ---
 # <a name="create-dns-records-at-crazy-domains-for-office-365"></a>Créer des enregistrements DNS auprès de Crazy Domains pour Office 365
 
@@ -161,7 +161,7 @@ Lorsqu’Office 365 trouve l’enregistrement TXT approprié, votre domaine est
     
     ![CrazyDomains-BP-configure-2-5](../../media/9acdda39-33ec-4b24-ad83-91c26f9c599b.png)
   
-11. Sélectionnez **supprimer**.
+11. Sélectionnez **Supprimer**.
     
     ![CrazyDomains-BP-configure-2-6](../../media/50b0e263-6f21-41b3-8fa0-7dd55dbe6c2e.png)
   

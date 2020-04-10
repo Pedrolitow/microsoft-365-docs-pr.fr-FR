@@ -6,7 +6,7 @@ ms.author: pebaum
 author: pebaum
 manager: mnirkhe
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 5762c3ca-1de2-4999-bfe5-4c5e25a8957e
 description: Découvrez comment vérifier votre domaine et configurer les enregistrements DNS pour le courrier électronique, Skype entreprise Online et d’autres services sur 1&1 IONOS pour Office 365.
-ms.openlocfilehash: d4ff6bea0d96402c34b1d1ae302510a6e718c38d
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: e31c9d9d08e29156ff6197c030de6b0f4169b5f4
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42352055"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43211870"
 ---
 # <a name="create-dns-records-at-11-ionos-for-office-365"></a>Créer des enregistrements DNS à 1&1 IONOS pour Office 365
 
@@ -117,7 +117,7 @@ Suivez les étapes décrites ci-dessous ou [regardez la vidéo (commencez la lec
     
     |**MX 1**|**Priority (Priorité)**|
     |:-----|:-----|
-    | *\<domain-key\>*  .mail.protection.outlook.com  <br/>  Remarque : Obtenez votre \<clé\> de domaine à partir de votre compte Office 365. [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md)          |10   <br/> Pour plus d'informations sur la priorité, voir [Qu'est-ce que la priorité MX ?](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx). <br/> | 
+    | *\<domain-key\>*  .mail.protection.outlook.com  <br/>  Remarque : Obtenez votre \<clé\> de domaine à partir de votre compte Office 365. [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md)          |10   <br/> Pour plus d'informations sur la priorité, voir [Qu'est-ce que la priorité MX ?](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx). <br/> | 
     
     ![1 et 1-configurer 2 et 3](../../media/3afb04d1-7bbf-4147-89ae-561e14ded26d.png)<br/>
   

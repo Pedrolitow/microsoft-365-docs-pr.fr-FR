@@ -6,7 +6,7 @@ ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez les stratégies d’expiration des groupes Office 365.
-ms.openlocfilehash: 40b0b56507c46f2a658126627d5f8794848bde27
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: 92e472ac56128cc847471b51930aa73dc6598711
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42894514"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43212056"
 ---
 # <a name="office-365-group-expiration-policy"></a>Stratégie d’expiration de groupe Office 365
 
@@ -38,7 +38,7 @@ Les administrateurs peuvent spécifier une période d’expiration et tout group
 Les groupes qui sont actifs en cours d’utilisation sont automatiquement renouvelés. L’une des actions suivantes permet de renouveler automatiquement un groupe :
 - SharePoint : afficher, modifier, télécharger, déplacer, partager ou télécharger des fichiers.
 - Outlook-rejoindre un groupe, lire ou écrire un message de groupe à partir du groupe et comme un message (Outlook sur le Web).
-- Teams : visite d’un canal d’équipes.
+- Teams-visite d’une équipe Channe.
 
 > [!IMPORTANT]
 > Lorsque vous modifiez la stratégie d’expiration, le service recalcule la date d’expiration pour chaque groupe. Il commence toujours à compter à partir de la date de création du groupe, puis applique la nouvelle stratégie d’expiration.
@@ -85,4 +85,4 @@ Si, pour une raison quelconque, aucun des propriétaires ou administrateurs ne r
 
 [Attribuer un nouveau propriétaire à un groupe orphelin](https://support.office.com/article/86bb3db6-8857-45d1-95c8-f6d540e45732)
 
-[Configurer l’expiration des groupes Office 365](https://docs.microsoft.com/azure/active-directory/active-directory-groups-lifecycle-azure-portal)
+[Configurer l’expiration des groupes Office 365](https://docs.microsoft.com/azure/active-directory/active-directory-groups-lifecycle-azure-portal) '

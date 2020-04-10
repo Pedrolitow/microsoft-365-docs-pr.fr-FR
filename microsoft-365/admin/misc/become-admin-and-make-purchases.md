@@ -7,7 +7,7 @@ author: pebaum
 manager: mnirkhe
 ms.date: 2/14/2018
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 48b26596-9e5b-4e5a-a64f-7430eb2a1e45
 description: 'Découvrez comment devenir administrateur et obtenir l’abonnement Office 365 pour votre organisation. '
-ms.openlocfilehash: 7b213d2a2e987a4e12cb410372e540ca715528a1
-ms.sourcegitcommit: fe4beef350ef9f39b1098755cff46fa2b8e7dc4d
+ms.openlocfilehash: de7528d79353ec5e674c349e328dd81c32725669
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2020
-ms.locfileid: "42857414"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43212256"
 ---
 # <a name="become-the-admin-and-purchase-office-365-for-your-organization"></a>Devenir administrateur et acheter Office 365 pour votre organisation
 
@@ -62,7 +62,7 @@ Un assistant vous guide dans le processus, mais voici un récapitulatif des éta
 |||
 |:-----|:-----|
 |![Number one in a pink circle](../../media/a4da261d-2516-48c5-b58a-9c452b9086b8.png)|**S'inscrire** Avant de devenir l'administrateur, vous devez être inscrit à Réunions Skype avec votre adresse de courrier professionnelle.  <br/> |
-|![Number two in a pink circle.](../../media/de3c1ab4-4f01-4026-b1ba-3265bdb32a89.png)|**Exécuter l'Assistant** Une fois inscrit, exécutez l'Assistant en effectuant l'une des opérations suivantes :  <br/>  Exécutez l’Assistant **devenir l’administrateur** qui apparaît après avoir sélectionné **administrateur** dans le lanceur d’applications.  <br/>  OU  <br/>  Choisissez d' **effectuer la mise à niveau vers Office 365** dans les réunions Skype, puis sélectionnez l’abonnement Office 365 auquel vous souhaitez effectuer la mise à niveau.  <br/> |
+|![Number two in a pink circle.](../../media/de3c1ab4-4f01-4026-b1ba-3265bdb32a89.png)|**Exécuter l'Assistant** Une fois inscrit, exécutez l'Assistant en effectuant l'une des opérations suivantes :  <br/>  Exécutez l’Assistant **devenir l’administrateur** qui apparaît après avoir sélectionné **administrateur** dans le lanceur d’applications.  <br/>  OR  <br/>  Choisissez d' **effectuer la mise à niveau vers Office 365** dans les réunions Skype, puis sélectionnez l’abonnement Office 365 auquel vous souhaitez effectuer la mise à niveau.  <br/> |
 |![Number three in a pink circle.](../../media/60fa378c-6ac1-4cbd-a782-2fa7ca619dc6.png)|**Confirmer la propriété du domaine** Ensuite, vous devez confirmer auprès d'Office 365 que vous détenez ou gérez le nom de domaine (par exemple, contoso.com) associé aux adresses de courrier de votre organisation. Seul le propriétaire du nom de domaine dispose de l'autorité nécessaire pour ce faire.  <br/> |
 |![Number 4 in a pink circle.](../../media/1a0ff2ce-0942-405a-94e3-9bfeb1e5059e.png)|**Acheter des licences** Dans le cadre de la dernière étape de l'Assistant, vous allez acheter des licences Office 365 pour chaque personne de votre organisation qui s'est inscrite à Réunions Skype avec son adresse de courrier professionnelle.  <br/> Par exemple, si deux utilisateurs se sont inscrits Réunions Skype avec leur adresse de courrier professionnelle, vous devez acheter deux licences (une par personne).  <br/> > [!NOTE]> Vous ne pouvez pas gérer Office 365 tant que vous n'avez pas acheté les licences.           |
 
@@ -87,7 +87,7 @@ Maintenant que vous êtes l’administrateur, vous pouvez effectuer les opérati
 |Ajouter ou supprimer des licences  <br/> |Vous pouvez [ajouter plus de licences](../../commerce/licenses/buy-licenses.md) pour les utilisateurs qui n’utilisent pas encore Office 365 ou [supprimer des licences d’utilisateurs](../manage/remove-licenses-from-users.md) que vous ne voulez pas utiliser l’abonnement Office 365 de votre organisation.  <br/> |
 |Contacter des utilisateurs déjà inscrits  <br/> |Adressez-vous aux autres utilisateurs pour les informer que vous gérez leur abonnement Office 365 et qu'ils ont été mis à niveau. [Procédez comme suit](../add-users/add-users.md) pour afficher la liste des **Utilisateurs actifs** et leurs adresses de courrier.  <br/> |
 |Commencer à utiliser Office 365  <br/> |Pour découvrir comment vous connecter, consulter le courrier électronique, partager des documents, et bien plus, voir l'[Espace formations Office 365](https://support.office.com/learn/office365-for-business). Ce site vous permet, ainsi qu'à vos utilisateurs, de commencer à utiliser Office 365.  <br/> |
-|Gérer votre abonnement Office 365  <br/> |Visitez le [Centre d’aide d’administration d’Office 365](../admin-home.yml) et découvrez les tâches d’administration courantes, telles que l’ajout et la suppression d’utilisateurs, la réinitialisation des mots de passe et la configuration des appareils mobiles.  <br/> |
+|Gérer votre abonnement Office 365  <br/> |Visitez le [Centre d’aide d’administration d’Office 365](../admin-home.md) et découvrez les tâches d’administration courantes, telles que l’ajout et la suppression d’utilisateurs, la réinitialisation des mots de passe et la configuration des appareils mobiles.  <br/> |
 
 ## <a name="still-need-help"></a>Vous avez encore besoin d’aide ?
 

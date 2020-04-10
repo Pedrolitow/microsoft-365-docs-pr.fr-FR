@@ -6,7 +6,7 @@ ms.author: pebaum
 author: pebaum
 manager: mnirkhe
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 0db29490-2612-48bc-9b77-1862e7a41a8c
 description: Découvrez comment vérifier votre domaine et configurer des enregistrements DNS pour la messagerie, Lync et d’autres services de Google Domains pour Office 365.
-ms.openlocfilehash: 5b72753dfdf44fa15cd0dffaa4baf61e843cf532
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: f0a9a42127fc5b722679013b899255f77840d670
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42349695"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43211726"
 ---
 # <a name="create-dns-records-at-google-domains-for-office-365"></a>Créer des enregistrements DNS via Google Domains pour Office 365
 
@@ -64,7 +64,7 @@ Avant d'utiliser votre domaine avec Office 365, nous devons vérifier que celui-
     
     |||||
     |:-----|:-----|:-----|:-----|
-    |**Nom** <br/> |**Type** <br/> |**TTL (Durée de vie)** <br/> |**Données** <br/> |
+    |**Name** <br/> |**Type** <br/> |**TTL (Durée de vie)** <br/> |**Données** <br/> |
     |@  <br/> |TXT  <br/> |Premier  <br/> |MS=ms *XXXXXXXX*  <br/> **Remarque :** il s'agit d'un exemple. Utilisez votre valeur **Adresse de destination ou de pointage** spécifique ici, à partir du tableau dans Office 365. [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md)          |
    
 4. Sélectionnez **Ajouter**.
@@ -107,7 +107,7 @@ Lorsqu’Office 365 trouve l’enregistrement TXT approprié, votre domaine est
     
     ![Sélectionnez Supprimer dans la section enregistrements synthétiques.](../../media/bd276b5d-5667-4bb1-a233-2dc5194e7ace.png)
   
-6. Sélectionnez **supprimer**.
+6. Sélectionnez **Supprimer**.
     
     ![Sélectionnez supprimer](../../media/4413a45a-5b82-4ec6-82c6-0091f5be9696.png)
   
@@ -117,7 +117,7 @@ Lorsqu’Office 365 trouve l’enregistrement TXT approprié, votre domaine est
     
     (Choose the **Type** value from the drop-down list.) 
     
-    |**Nom**|**Type**|**TTL (Durée de vie)**|**Données**|
+    |**Name**|**Type**|**TTL (Durée de vie)**|**Données**|
     |:-----|:-----|:-----|:-----|
     |@  <br/> |MX  <br/> |Premier  <br/> |0  *\<clé_de_domaine\>*  .mail.protection.outlook.com.  <br/> **Cette valeur DOIT se terminer par un point (.)** <br/> La valeur **0** représente la valeur de priorité MX. Ajoutez-la au début de la valeur MX, séparée du reste de la valeur par un espace.  <br/> **Remarque :** Obtenez votre \<*clé de domaine*\> à partir de votre compte Office 365.  [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md)          Pour plus d'informations sur la priorité, voir [Qu'est-ce que la priorité MX ?](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx). <br/> |
    
@@ -157,7 +157,7 @@ Lorsqu’Office 365 trouve l’enregistrement TXT approprié, votre domaine est
     
     (Choose the **Type** value from the drop-down list.) 
     
-    |**Nom**|**Type**|**TTL (Durée de vie)**|**Données**|
+    |**Name**|**Type**|**TTL (Durée de vie)**|**Données**|
     |:-----|:-----|:-----|:-----|
     |autodiscover  <br/> |CNAME  <br/> |Premier  <br/> |autodiscover.outlook.com.  <br/> **This value MUST end with a period (.)** <br/> |
     |sip  <br/> |CNAME  <br/> |Premier  <br/> |sipdir.online.lync.com.  <br/> **This value MUST end with a period (.)** <br/> |
@@ -237,7 +237,7 @@ Lorsqu’Office 365 trouve l’enregistrement TXT approprié, votre domaine est
     
     (Choose the **Type** value from the drop-down list.) 
     
-    |**Nom**|**Type**|**TTL (Durée de vie)**|**Data (Données)**|
+    |**Name**|**Type**|**TTL (Durée de vie)**|**Data (Données)**|
     |:-----|:-----|:-----|:-----|
     |_sip. _tls|SRV|Premier|100 1 443 sipdir.online.lync.com. **Cette valeur doit se terminer par un point (.)** **Remarque :** Nous vous recommandons de copier et coller cette entrée, afin que l’espacement reste correcte.           |
     |_sipfederationtls. _tcp|SRV|Premier|100 1 5061 sipfed.online.lync.com. **This value MUST end with a period (.)**

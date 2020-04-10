@@ -6,7 +6,7 @@ ms.author: pebaum
 author: pebaum
 manager: mnirkhe
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9ddcc2fc-9433-4335-8192-6ffb1f541087
 description: Découvrez comment vérifier votre domaine et configurer les enregistrements DNS pour la messagerie, Skype entreprise Online et d’autres services sur name.com pour Office 365.
-ms.openlocfilehash: f21a40f543ff3a9faffe6ffba98f4d541b2a7a7b
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: f39cf9f241851e555ea23ca7b63453796a5f471b
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42349974"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43211654"
 ---
 # <a name="create-dns-records-at-namecom-for-office-365"></a>Créer des enregistrements DNS auprès de name.com pour Office 365
 

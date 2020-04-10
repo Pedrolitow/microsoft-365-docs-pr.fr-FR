@@ -6,7 +6,7 @@ ms.author: pebaum
 author: pebaum
 manager: mnirkhe
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 5f0c840e-4140-4571-88ed-cf235ff142d6
 description: Découvrez comment vérifier votre domaine et configurer les enregistrements DNS pour la messagerie, Skype entreprise Online et d’autres services sur Hostgator pour Office 365.
-ms.openlocfilehash: cb0b26081e5946ed2558d090c976847197ed7eb8
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: a5a41e5c1eba9d99d1927192472da7746277dd38
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42244902"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43211714"
 ---
 # <a name="create-dns-records-at-hostgator-for-office-365"></a>Créer des enregistrements DNS auprès d'Hostgator pour Office 365
 
@@ -41,7 +41,7 @@ Une fois ces modifications effectuées sur Hostgator, votre domaine est configur
 Pour en savoir plus sur l'hébergement web et le DNS pour les sites web avec Office 365, voir [Utiliser un site web public avec Office 365](https://support.office.com/article/choose-a-public-website-3325d50e-d131-403c-a278-7f3296fe33a9).
   
 > [!NOTE]
-> Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. Si vous rencontrez des problèmes avec le flux de messagerie ou d’autres problèmes après avoir ajouté des enregistrements DNS, consultez [la rubrique Rechercher et corriger les problèmes après avoir ajouté votre domaine ou des enregistrements DNS dans Office 365](../get-help-with-domains/find-and-fix-issues.md). 
+> Généralement, les modifications DNS sont appliquées dans les 15 minutes. Il peut toutefois arriver que la répercussion d’une modification dans le système DNS sur Internet prenne davantage de temps. Si vous rencontrez des difficultés avec le flux de courrier ou d'autres problèmes suite à l'ajout des enregistrements DNS, consultez [Rechercher et corriger les problèmes suite à l'ajout de votre domaine ou des enregistrements DNS dans Office 365](../get-help-with-domains/find-and-fix-issues.md). 
   
 ## <a name="point-your-domain-to-your-hosting-account"></a>Faire pointer votre domaine vers votre compte d'hébergement
 <a name="BKMK_PointDomain"> </a>
@@ -91,26 +91,26 @@ Avant d'utiliser votre domaine avec Office 365, nous devons vérifier que celui-
     |||||
     |:-----|:-----|:-----|:-----|
     |**Name (Nom)** <br/> |**TTL (Durée de vie)** <br/> |**Type** <br/> |**TXT Data (Données TXT)** <br/> |
-    |Utilisez votre *domain_name*. (for example, fourthcoffee.com.)  <br/> **This value MUST end with a period (.)** <br/> |0,1  <br/> |TXT  <br/> |MS=ms *XXXXXXXX*  <br/> **Remarque :** Voici un exemple. Utilisez votre valeur **Adresse de destination ou de pointage** spécifique ici, à partir du tableau dans Office 365. [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md)          |
+    |Utilisez votre *domain_name*. (for example, fourthcoffee.com.)  <br/> **This value MUST end with a period (.)** <br/> |0,1  <br/> |TXT  <br/> |MS=ms *XXXXXXXX*  <br/> **Remarque :** il s'agit d'un exemple. Utilisez votre valeur **Adresse de destination ou de pointage** spécifique ici, à partir du tableau dans Office 365. [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md)          |
    
 4. Sélectionnez **Ajouter un enregistrement**.
     
 5. Patientez quelques minutes, le temps que l'enregistrement que vous venez de créer soit mis à jour sur Internet.
     
-Now that you've added the record at your domain registrar's site, you'll go back to Office 365 and request Office 365 to look for the record.
+L’enregistrement étant désormais ajouté sur le site de votre bureau d’enregistrement de domaines, revenez à Office 365 et demandez à Office 365 de rechercher l’enregistrement.
   
-When Office 365 finds the correct TXT record, your domain is verified.
+Lorsqu’Office 365 trouve l’enregistrement TXT approprié, votre domaine est vérifié.
   
-1. Dans le centre d’administration, accédez à la page **paramètres** \> des <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">domaines</a> .
+1. Dans le centre d’administration, accédez à la page **Paramètres** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domaines</a>.
     
-2. Dans la page **domaines** , sélectionnez le domaine que vous vérifiez. 
+2. Dans la page **Domaines**, sélectionnez le domaine que vous vérifiez. 
     
-3. Sur la page **installation** , sélectionnez **Démarrer l’installation**.
+3. Dans la page **Configuration**, sélectionnez **Démarrer la configuration**.
     
-4. Sur la page **vérifier le domaine** , sélectionnez **vérifier**.
+4. Dans la page **Vérifier le domaine**, sélectionnez **Vérifier**.
     
 > [!NOTE]
-> Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. Si vous rencontrez des problèmes avec le flux de messagerie ou d’autres problèmes après avoir ajouté des enregistrements DNS, consultez [la rubrique Rechercher et corriger les problèmes après avoir ajouté votre domaine ou des enregistrements DNS dans Office 365](../get-help-with-domains/find-and-fix-issues.md). 
+> Généralement, les modifications DNS sont appliquées dans les 15 minutes. Il peut toutefois arriver que la répercussion d’une modification dans le système DNS sur Internet prenne davantage de temps. Si vous rencontrez des difficultés avec le flux de courrier ou d'autres problèmes suite à l'ajout des enregistrements DNS, consultez [Rechercher et corriger les problèmes suite à l'ajout de votre domaine ou des enregistrements DNS dans Office 365](../get-help-with-domains/find-and-fix-issues.md). 
   
 ## <a name="add-an-mx-record-so-email-for-your-domain-will-come-to-office-365"></a>Ajouter un enregistrement MX afin que les courriers électroniques pour votre domaine soient transférés vers Office 365
 <a name="BKMK_add_MX"> </a>
@@ -136,7 +136,7 @@ When Office 365 finds the correct TXT record, your domain is verified.
     
     |**Priority (Priorité)**|**Destination (Destination)**|
     |:-----|:-----|
-    |0  <br/> Pour plus d'informations sur la priorité, voir [Qu'est-ce que la priorité MX ?](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx). <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/> **Remarque :** Obtenez votre \< *clé* \> de domaine à partir de votre compte Office 365.    [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md)          |
+    |0  <br/> Pour plus d'informations sur la priorité, voir [Qu'est-ce que la priorité MX ?](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx). <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/> **Remarque :** Obtenez votre \< *clé* \> de domaine à partir de votre compte Office 365.    [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md)          |
   
 6. Sélectionnez **Ajouter un nouvel enregistrement**.
    
@@ -182,11 +182,11 @@ When Office 365 finds the correct TXT record, your domain is verified.
     
     Répétez cette procédure jusqu'à avoir créé les 6 enregistrements CNAME.
     
-## <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a>Ajouter un enregistrement TXT pour SPF afin d'éviter le courrier indésirable
+## <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a>Ajoutez un enregistrement TXT pour SPF afin d'éviter le courrier indésirable
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
-> You cannot have more than one TXT record for SPF for a domain. If your domain has more than one SPF record, you'll get email errors, as well as delivery and spam classification issues. If you already have an SPF record for your domain, don't create a new one for Office 365. Ajoutez plutôt les valeurs Office 365 requises à l'enregistrement actuel de manière à n'avoir qu'un seul enregistrement SPF qui inclut les deux ensembles de valeurs. Voici quelques exemples. Consultez ces [enregistrements DNS externes pour Office 365](https://support.office.com/article/c0531a6f-9e25-4f2d-ad0e-a70bfef09ac0#bkmk_spfrecords). Pour valider votre enregistrement SPF, vous pouvez utiliser l'un des outils de [validation SPF suivants](../setup/domains-faq.md). 
+> Vous ne pouvez avoir qu’un enregistrement TXT pour SPF pour un domaine. Si votre domaine comporte plusieurs enregistrements SPF, vous rencontrez des erreurs au niveau de la transmission du courrier électronique ainsi que des problèmes de remise du courrier et de classification en tant que courrier indésirable. If you already have an SPF record for your domain, don't create a new one for Office 365. Ajoutez plutôt les valeurs Office 365 requises à l'enregistrement actuel de manière à n'avoir qu'un seul enregistrement SPF qui inclut les deux ensembles de valeurs. Voici quelques exemples. Consultez ces [Enregistrements DNS externes pour Office 365](https://support.office.com/article/c0531a6f-9e25-4f2d-ad0e-a70bfef09ac0#bkmk_spfrecords). To validate your SPF record, you can use one of these [SPF validation tools](../setup/domains-faq.md). 
   
 > [!IMPORTANT]
 > Avant d'effectuer cette procédure, vous devez suivre celle décrite dans la première section de cet article ([Faire pointer votre domaine vers votre compte d'hébergement](#point-your-domain-to-your-hosting-account)). 
@@ -206,11 +206,11 @@ When Office 365 finds the correct TXT record, your domain is verified.
     
     |**Name (Nom)**|**TTL (Durée de vie)**|**Type (Type)**|**TXT Data (Données TXT)**|
     |:-----|:-----|:-----|:-----|
-    |Utilisez votre *domain_name*. (for example, fourthcoffee.com.)  <br/> **Cette valeur DOIT se terminer par un point (.)** <br/> |3600  <br/> |TXT  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/> **Remarque :** Nous vous recommandons de copier et coller cette entrée, afin que l’espacement reste correcte.           |
+    |Utilisez votre *domain_name*. (for example, fourthcoffee.com.)  <br/> **Cette valeur DOIT se terminer par un point (.)** <br/> |3600  <br/> |TXT  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/> **Remarque :** nous vous recommandons de copier et coller cette entrée, afin que l’espacement reste correcte.           |
   
 4. Sélectionnez **Ajouter un enregistrement**.
     
-## <a name="add-the-two-srv-records-that-are-required-for-office-365"></a>Ajouter les 2 enregistrements SRV requis pour Office 365
+## <a name="add-the-two-srv-records-that-are-required-for-office-365"></a>Ajoutez les 2 enregistrements SRV requis pour Office 365
 <a name="BKMK_add_SRV"> </a>
 
 > [!IMPORTANT]
@@ -232,7 +232,7 @@ When Office 365 finds the correct TXT record, your domain is verified.
     
     (Choisissez la valeur **Type (Type)** dans la liste déroulante.) 
     
-    |**Name (Nom)**|**TTL (Durée de vie)**|**Type**|**Priority (Priorité)**|**Weight (Poids)**|**Port**|**Target (Cible)**|
+    |**Name (Nom)**|**TTL (Durée de vie)**|**Type**|**Priority (Priorité)**|**Weight (Poids)**|**Port (Port)**|**Target (Cible)**|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
     |_sip. _tls. *domain_name*. (par exemple, _sip. _tls. fourthcoffee. com.)  <br/> **Cette valeur DOIT se terminer par un point (.)** <br/> |3600  <br/> |SRV  <br/> |100  <br/> |0,1  <br/> |443  <br/> |sipdir.online.lync.com  <br/> |
     |_sipfederationtls. _tcp. *domain_name*. (par exemple, _sipfederationtls. _tcp. fourthcoffee. com.)  <br/> **Cette valeur DOIT se terminer par un point (.)** <br/> |3600  <br/> |SRV  <br/> |100  <br/> |0,1  <br/> |5061  <br/> |sipfed.online.lync.com  <br/> |
@@ -246,4 +246,4 @@ When Office 365 finds the correct TXT record, your domain is verified.
     Dans la section **Add a record (ajouter un enregistrement** ), créez un enregistrement en utilisant les valeurs de la ligne suivante du tableau, puis sélectionnez de nouveau **Add record (ajouter un enregistrement** ) pour valider cet enregistrement. 
     
 > [!NOTE]
-> Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. Si vous rencontrez des problèmes avec le flux de messagerie ou d’autres problèmes après avoir ajouté des enregistrements DNS, consultez [la rubrique Rechercher et corriger les problèmes après avoir ajouté votre domaine ou des enregistrements DNS dans Office 365](../get-help-with-domains/find-and-fix-issues.md). 
+> Généralement, les modifications DNS sont appliquées dans les 15 minutes. Il peut toutefois arriver que la répercussion d’une modification dans le système DNS sur Internet prenne davantage de temps. Si vous rencontrez des difficultés avec le flux de courrier ou d'autres problèmes suite à l'ajout des enregistrements DNS, consultez [Rechercher et corriger les problèmes suite à l'ajout de votre domaine ou des enregistrements DNS dans Office 365](../get-help-with-domains/find-and-fix-issues.md). 

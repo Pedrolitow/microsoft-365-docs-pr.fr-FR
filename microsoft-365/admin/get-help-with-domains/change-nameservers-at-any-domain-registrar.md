@@ -6,7 +6,7 @@ ms.author: pebaum
 author: pebaum
 manager: mnirkhe
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -23,12 +23,12 @@ search.appverid:
 ms.assetid: a8b487a9-2a45-4581-9dc4-5d28a47010a2
 description: Découvrez comment ajouter et configurer votre domaine dans Office 365 de sorte que vos services de messagerie électronique et Skype entreprise Online utilisent votre propre nom de domaine.
 ms.custom: okr_smb
-ms.openlocfilehash: 3030fc33a6d528fd6cb4e97c27cdbb7c251e9a97
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 838025002443ec35787ea91775c60d3829545af4
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42252970"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43210491"
 ---
 # <a name="change-nameservers-to-set-up-office-365-with-any-domain-registrar"></a>Modifier les serveurs de noms de manière à configurer Office 365 avec n'importe quel bureau d'enregistrement de domaines
 
@@ -59,44 +59,44 @@ Avant d'utiliser votre domaine avec Office 365, nous devons vérifier que celui-
     
 2. Choisissez votre domaine.
     
-3. Trouvez la page sur laquelle vous pouvez modifier les enregistrements DNS pour votre domaine.
+3. Recherchez la page dans laquelle vous pouvez modifier les enregistrements DNS pour votre domaine.
     
 ### <a name="create-the-record"></a>Créer l’enregistrement
 
-Selon que vous créez un enregistrement TXT ou un enregistrement MX, effectuez l'une des opérations suivantes :
+Selon que vous créez un enregistrement TXT ou un enregistrement MX, effectuez l’une des opérations suivantes :
   
-**Si vous créez un enregistrement TXT, utilisez les valeurs suivantes :**
+**Si vous créez un enregistrement TXT, utilisez les valeurs suivantes :**
     
 |||||
 |:-----|:-----|:-----|:-----|
-|**Type d'enregistrement** <br/> |**Alias** ou **nom d'hôte** <br/> |**Valeur** <br/> |**TTL** <br/> |
+|**Type d’enregistrement** <br/> |**Alias** ou **nom d’hôte** <br/> |**Valeur** <br/> |**TTL** <br/> |
 |TXT  <br/> |Effectuez l'une des opérations suivantes : Tapez **@**, laissez le champ vide ou entrez le nom de votre domaine.  <br/> > [!NOTE]> Les conditions requises pour ce champ ne sont pas identiques pour tous les hôtes DNS.           
 |MS=ms *XXXXXXXX*  <br/> > [!NOTE]> Il s'agit d'un exemple. Utilisez votre valeur **Adresse de destination ou de pointage** spécifique ici, à partir du tableau dans Office 365.           [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md)          |Définissez cette valeur sur **1 heure** ou sur l'équivalent en minutes ( **60** ), en secondes ( **3600** ), etc.  <br/> |
    
-**Si vous créez un enregistrement MX, utilisez les valeurs suivantes :**
+**Si vous créez un enregistrement MX, utilisez les valeurs suivantes :**
     
 ||||||
 |:-----|:-----|:-----|:-----|:-----|
-|**Type d'enregistrement**|**Alias** ou **nom d'hôte**|**Valeur**|**Priorité**|**TTL**|
-|MX|Entrez soit **@**, soit votre nom de domaine. |MS=ms *XXXXXXXX* > [!NOTE]> Il s'agit d'un exemple. Utilisez votre valeur **Adresse de destination ou de pointage** spécifique ici, à partir du tableau dans Office 365.           [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md)          |Pour **Priority**, pour éviter les conflits avec l’enregistrement MX utilisé pour le flux de messagerie, utilisez une priorité inférieure à la priorité des enregistrements MX existants. Pour plus d'informations sur la priorité, voir [Qu'est-ce que la priorité MX ?](../setup/domains-faq.md#what-is-mx-priority). |Définissez cette valeur sur **1 heure** ou sur l'équivalent en minutes ( **60** ), en secondes ( **3600** ), etc. |
+|**Type d’enregistrement**|**Alias** ou **nom d’hôte**|**Valeur**|**Priorité**|**TTL**|
+|MX|Entrez soit **@**, soit votre nom de domaine. |MS=ms *XXXXXXXX* > [!NOTE]> Il s'agit d'un exemple. Utilisez votre valeur **Adresse de destination ou de pointage** spécifique ici, à partir du tableau dans Office 365.           [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md)          |Pour **Priorité**, afin d’éviter les conflits avec l’enregistrement MX utilisé pour le flux de courrier électronique, utilisez une priorité plus basse que la priorité des enregistrements MX existants. Pour plus d'informations sur la priorité, voir [Qu'est-ce que la priorité MX ?](../setup/domains-faq.md#what-is-mx-priority). |Définissez cette valeur sur **1 heure** ou sur l'équivalent en minutes ( **60** ), en secondes ( **3600** ), etc. |
    
 ### <a name="save-the-record"></a>Enregistrer l’enregistrement
 
-Now that you've added the record at your domain registrar's site, you'll go back to Office 365 and request Office 365 to look for the record.
+L’enregistrement étant désormais ajouté sur le site de votre bureau d’enregistrement de domaines, revenez à Office 365 et demandez à Office 365 de rechercher l’enregistrement.
   
-When Office 365 finds the correct TXT record, your domain is verified.
+Lorsqu’Office 365 trouve l’enregistrement TXT approprié, votre domaine est vérifié.
   
 
-1. Dans le centre d’administration, accédez à la page **paramètres** \> des <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">domaines</a> .
+1. Dans le centre d’administration, accédez à la page **Paramètres** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domaines</a>.
     
-2. Dans la page **domaines** , sélectionnez le domaine que vous vérifiez. 
+2. Dans la page **Domaines**, sélectionnez le domaine que vous vérifiez. 
     
   
-3. Sur la page **installation** , sélectionnez **Démarrer l’installation**.
+3. Dans la page **Configuration**, sélectionnez **Démarrer la configuration**.
  
     
   
-4. Sur la page **vérifier le domaine** , sélectionnez **vérifier**.
+4. Dans la page **Vérifier le domaine**, sélectionnez **Vérifier**.
     
     
   
@@ -158,7 +158,7 @@ Voici, par exemple, quelques étapes supplémentaires qui peuvent être nécessa
     
 - Vous souhaitez ajouter un domaine actuellement utilisé avec une adresse de site Web, par exemple www.fourthcoffee.com ? Vous pouvez suivre les étapes ci-dessous pendant que vous ajoutez le domaine pour conserver son site Web hébergé sur lequel le site est hébergé maintenant afin que les utilisateurs puissent toujours accéder au site Web une fois que vous avez modifié les enregistrements de serveur de noms de domaine pour qu’ils pointent vers Office 365.
 
-1. Dans le centre d’administration, accédez à la page **paramètres** \> des <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">domaines</a> .
+1. Dans le centre d’administration, accédez à la page **Paramètres** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domaines</a>.
 
 3. Dans la page Domaines, sélectionnez un domaine.
 

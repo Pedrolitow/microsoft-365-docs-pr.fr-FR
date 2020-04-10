@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: ce004100-9e7f-443e-942b-9b04098fcfc3
 description: Descriptions des propriétés supplémentaires incluses dans un enregistrement de journal d’audit Office 365.
-ms.openlocfilehash: af91acfbdc94439df04ccf5ecd4fd6a01112f442
-ms.sourcegitcommit: 7646e2d742d1b2fad085a00200a2a10461dd4bac
+ms.openlocfilehash: 28056cc6f21d0fbb4a90a455211c3fc368e3cd5e
+ms.sourcegitcommit: 8959701cf009068b40da2757b4a61da61d5c166b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "42978234"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43207173"
 ---
 # <a name="detailed-properties-in-the-office-365-audit-log"></a>Propriétés détaillées dans le journal d’audit Office 365
 
@@ -54,7 +54,7 @@ Le tableau suivant décrit les propriétés incluses (en fonction du service Off
 |EventSource|Identifie qu’un événement s’est produit dans SharePoint. Les valeurs possibles sont **SharePoint** et **ObjectModel**.|SharePoint|
 |ExternalAccess|Pour l’activité d’administration Exchange, indique si la cmdlet a été exécutée par un utilisateur de votre organisation, par le personnel du centre de connaissances Microsoft ou par un compte de service de centre de de services, ou par un administrateur délégué. La valeur **False** indique que la cmdlet a été exécutée par un membre de votre organisation. La valeur **True** indique que la cmdlet a été exécutée par le personnel du centre de données, un compte de service du centre de données ou un administrateur délégué.  <br/> Pour l’activité des boîtes aux lettres Exchange, indique si un utilisateur a accédé à une boîte aux lettres à l’extérieur de votre organisation.|Exchange|
 |ExtendedProperties|Propriétés étendues d’un événement Azure Active Directory.|Azure Active Directory|
-|ID|ID de l’entrée de rapport. L’ID identifie de manière unique l’entrée de rapport.|Tous|
+|ID|ID de l’entrée de l’enregistrement d’audit. L’ID identifie de manière unique l’enregistrement dans le journal d’audit. <sup>1</sup>|Tous|
 |InternalLogonType|Réservé à une utilisation interne.|Exchange (activité de boîte aux lettres)|
 |ItemType|Type d’objet consulté ou modifié. Les valeurs possibles sont les suivants : **file**, **Folder**, **Web**, **site**, **client**et **DocumentLibrary**.|SharePoint|
 |LoginStatus|Identifie les échecs de connexion qui ont pu se produire.|Azure Active Directory|
@@ -64,7 +64,7 @@ Le tableau suivant décrit les propriétés incluses (en fonction du service Off
 |Members|Répertorie les utilisateurs qui ont été ajoutés ou supprimés d’une équipe. Les valeurs suivantes indiquent le type de rôles attribué à l’utilisateur.  <br/><br/> **1** -indique le rôle de propriétaire.<br/> **2** indique le rôle Membre.<br/> **3** indique le rôle Invité. <br/><br/>La propriété Members comprend également le nom de votre organisation et l’adresse e-mail du membre.|Microsoft Teams|
 |ModifiedProperties (Name, NewValue, OldValue)|La propriété est incluse pour les événements d’administration, par exemple l’ajout d’un utilisateur en tant que membre d’un site ou d’un groupe d’administration d’une collection de sites. La propriété inclut le nom de la propriété qui a été modifiée (par exemple, le groupe administrateurs de site) la nouvelle valeur de la propriété modifiée (par exemple, l’utilisateur qui a été ajouté en tant qu’administrateur de site, et la valeur précédente de l’objet modifié.|All (activité de l’administrateur)|
 |ObjectId|Pour la journalisation d’audit d’administration Exchange, il s’agit du nom de l’objet modifié par la cmdlet.  <br/> Pour l’activité SharePoint, le nom du chemin d’accès complet de l’URL du fichier ou du dossier auquel un utilisateur a accédé.  <br/> Pour l’activité Azure AD, le nom du compte d’utilisateur qui a été modifié.|Tous|
-|Fonctionnement|Nom de l’activité de l’utilisateur ou de l’administrateur. La valeur de cette propriété correspond à la valeur sélectionnée dans la liste déroulante **activités** . Si l’option **afficher les résultats pour toutes les activités** a été sélectionnée, le rapport inclura les entrées de toutes les activités d’utilisateur et d’administration de tous les services. Pour obtenir une description des opérations/activités qui sont consignées dans le journal d’audit Office 365, consultez l’onglet **activités auditées** dans Rechercher dans le [Journal d’audit dans le 365 Office](search-the-audit-log-in-security-and-compliance.md).  <br/> Pour une activité d’administration Exchange, cette propriété identifie le nom de la cmdlet qui a été exécutée.|Tous|
+|Opération|Nom de l’activité de l’utilisateur ou de l’administrateur. La valeur de cette propriété correspond à la valeur sélectionnée dans la liste déroulante **activités** . Si l’option **afficher les résultats pour toutes les activités** a été sélectionnée, le rapport inclura les entrées de toutes les activités d’utilisateur et d’administration de tous les services. Pour obtenir une description des opérations/activités qui sont consignées dans le journal d’audit Office 365, consultez l’onglet **activités auditées** dans Rechercher dans le [Journal d’audit dans le 365 Office](search-the-audit-log-in-security-and-compliance.md).  <br/> Pour une activité d’administration Exchange, cette propriété identifie le nom de la cmdlet qui a été exécutée.|Tous|
 |OrganizationId|GUID de votre organisation Office 365.|Tous|
 |Path|Nom de dossier de la boîte aux lettres dans laquelle se trouve le message consulté. Cette propriété identifie également le dossier dans lequel un message est créé ou copié/déplacé.|Exchange (activité de boîte aux lettres)|
 |Paramètres|Pour l’activité d’administration Exchange, le nom et la valeur de tous les paramètres qui ont été utilisés avec la cmdlet identifiée dans la propriété Operation.|Exchange (activité d’administration)|
@@ -87,13 +87,13 @@ Le tableau suivant décrit les propriétés incluses (en fonction du service Off
 |UserId|Utilisateur qui a effectué l’action (spécifié dans la propriété **operation** ) ayant provoqué l’enregistrement journalisé. Les enregistrements d’audit pour les activités effectuées par les comptes système (par exemple, SHAREPOINT\system ou NT AUTHORITY\SYSTEM) sont également inclus dans le journal d’audit. Une autre valeur commune pour la propriété UserId est app@sharepoint. Ceci indique que l'«utilisateur » qui a effectué l'activité était une application ayant obtenu les autorisations nécessaires dans SharePoint pour effectuer des actions à l’échelle de l’organisation (par exemple, effectuer une recherche de site SharePoint ou de compte OneDrive) au nom d’un utilisateur, d’un administrateur ou d’un service. Pour obtenir plus d'informations, consultez [L’application\@sharepoint de l’utilisateur dans des enregistrements d’audit](search-the-audit-log-in-security-and-compliance.md#the-appsharepoint-user-in-audit-records). |Tous|
 |UserKey|Autre ID pour l’utilisateur identifié dans la propriété **userid** . Par exemple, cette propriété est renseignée avec l’ID unique Passport (PUID) pour les événements exécutés par les utilisateurs dans SharePoint. Cette propriété peut également spécifier la même valeur que celle de la propriété **userid** pour les événements survenus dans d’autres services et événements exécutés par des comptes système.|Tous|
 |UserSharedWith|Utilisateur avec lequel une ressource a été partagée. Cette propriété est incluse si la valeur de la propriété **operation** est **SharingSet**. Cet utilisateur est également mentionné dans la colonne **partagé avec** du rapport.|SharePoint|
-|UserType|Type d’utilisateur ayant effectué l’opération. Les valeurs suivantes indiquent le type d’utilisateur. <br/> <br/> **0** -un utilisateur normal. <br/>**2** -un administrateur de votre organisation Office 365. <sup>1</sup> <br/>**3** -un compte d’administrateur ou de système de centre de connaissances Microsoft. <br/>**4** -un compte système. <br/>**5** -une application. <br/>**6** -un principal de service.<br/>**7** -une stratégie personnalisée.<br/>**8** -une stratégie système.|Tous|
+|UserType|Type d’utilisateur ayant effectué l’opération. Les valeurs suivantes indiquent le type d’utilisateur. <br/> <br/> **0** -un utilisateur normal. <br/>**2** -un administrateur de votre organisation Office 365. <sup>2</sup> <br/>**3** -un compte d’administrateur ou de système de centre de connaissances Microsoft. <br/>**4** -un compte système. <br/>**5** -une application. <br/>**6** -un principal de service.<br/>**7** -une stratégie personnalisée.<br/>**8** -une stratégie système.|Tous|
 |Version|Indique le numéro de version de l’activité (identifiée par la propriété **operation** ) qui est enregistrée.|Tous|
 |Charge de travail|Service Office 365 dans lequel l’activité s’est produite.|Tous|
 ||||
 
 > [!NOTE]
-><sup>1</sup> pour les événements associés à Azure Active Directory, la valeur d’un administrateur n’est pas utilisée dans un enregistrement d’audit. Les enregistrements d’audit pour les activités effectuées par les administrateurs indiquent qu’un utilisateur normal (par exemple, **usertype : 0**) a effectué l’activité. La propriété **userid** identifie la personne (utilisateur ordinaire ou administrateur) qui a effectué l’activité.<br/>
+><sup>1</sup> les enregistrements d’audit dupliqués (avec la même valeur pour la propriété **ID** ) peuvent apparaître dans le journal d’audit. Il s’agit d’une méthode de correction d’erreur permettant d’éviter les événements d’audit manquants.<br/><br/><sup>2</sup> pour les événements associés à Azure Active Directory, la valeur d’un administrateur n’est pas utilisée dans un enregistrement d’audit. Les enregistrements d’audit pour les activités effectuées par les administrateurs indiquent qu’un utilisateur normal (par exemple, **usertype : 0**) a effectué l’activité. La propriété **userid** identifie la personne (utilisateur ordinaire ou administrateur) qui a effectué l’activité.
 
 Les propriétés décrites ci-dessus s’affichent également lorsque vous cliquez sur **informations supplémentaires** lorsque vous affichez les détails d’un événement spécifique.
   

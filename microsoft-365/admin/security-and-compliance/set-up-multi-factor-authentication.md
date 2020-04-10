@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: 8f0454b2-f51a-4d9c-bcde-2c48e41621c6
 description: Découvrez comment utiliser les paramètres par défaut de sécurité pour configurer multi-factor authentication pour les utilisateurs d’Office 365.
 monikerRange: o365-worldwide
-ms.openlocfilehash: 331552a4de21198fe7fbc9980e89bfcd87449ffa
-ms.sourcegitcommit: e525bcf073a61e1350484719a0c3ceb6ff0d8db1
+ms.openlocfilehash: 5f468f040ca88ab4ab2bc198d0d7550bf2e7f4af
+ms.sourcegitcommit: 8a88b7526e6a3a907f33a8567e0d25b74fe60d80
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "43153555"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43204021"
 ---
 # <a name="set-up-multi-factor-authentication"></a>Configurer Multi-factor Authentification (MFA)
   
@@ -68,11 +68,11 @@ Si vous avez déjà configuré Multi-Factor Authentication avec des stratégies 
 
 ## <a name="move-from-baseline-policies-to-security-defaults"></a>Basculez des stratégies de base aux paramètres de sécurité par défaut
 
-1. Dans le [centre d’administration](https://go.microsoft.com/fwlink/p/?linkid=834822), sélectionnez **Configurer**.
+1. Dans le [Centre d’administration](https://go.microsoft.com/fwlink/p/?linkid=834822), sélectionnez **Afficher tout**, puis **Azure Active Directory** sous **centres d’administration**.
 
-2. En regard de **Connexion et sécurité**, sous **Avoir une connexion plus sécurisée**, sélectionnez **Afficher**.
+2. Dans le **Centre d’administration Azure Active Directory** , choisissez**sécurité** **Azure Active Directory** > .
 
-3. Sous **Rendre la connexion plus sécurisée**, sélectionnez **Gérer**. 
+3. Dans la **sécurité | Page mise en route** , choisissez **accès conditionnel**. 
 
 4. Sur la page des **Stratégies du Portail Microsoft Azure Conditional Access**, choisissez chaque stratégie de référence définie sur **Activée** et configurez-les sur **Désactivée**.
 5. Accédez à la page [Propriétés d'Azure Active Directory](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Properties).

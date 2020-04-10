@@ -6,7 +6,7 @@ ms.author: pebaum
 author: pebaum
 manager: mnirkhe
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 84acd4fc-6eec-4d00-8bed-568f036ae2af
 description: Découvrez comment vérifier votre domaine et configurer les enregistrements DNS pour la messagerie, Skype entreprise Online et d’autres services sur cloudflare pour Office 365.
-ms.openlocfilehash: efd7a4a41a0cc27c2a50da732d648c87c79c6ff7
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 8d64824f880bab9e6691ebf47c9508c555562fe4
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42244152"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43211810"
 ---
 # <a name="create-dns-records-at-cloudflare-for-office-365"></a>Créer des enregistrements DNS sur cloudflare pour Office 365
 
@@ -77,7 +77,7 @@ Avant d'utiliser votre domaine avec Office 365, nous devons vérifier que celui-
 > [!NOTE]
 > Cet enregistrement sert uniquement à vérifier que vous êtes propriétaire du domaine. Vous pouvez éventuellement le supprimer ultérieurement. 
   
-1. Pour commencer, accédez à la page de vos domaines sur cloudflare à l’aide de [ce lien](https://www.cloudflare.com/a/login). You'll be prompted to log in first.
+1. Pour commencer, accédez à la page de vos domaines sur cloudflare à l’aide de [ce lien](https://www.cloudflare.com/a/login). Avant toute chose, vous serez invité à vous connecter.
   
 2. Sur la page d' **Accueil** , sélectionnez le domaine que vous souhaitez mettre à jour. 
   
@@ -88,7 +88,7 @@ Avant d'utiliser votre domaine avec Office 365, nous devons vérifier que celui-
     
     |**Type**|**Nom**|**TTL automatique**|**Content (Contenu)**|
     |:-----|:-----|:-----|:----|
-    |TXT  <br/> |@  <br/> |30 minutes  <br/> |MS=ms *XXXXXXXX*  <br/> **Remarque :** Voici un exemple. Utilisez votre valeur **Adresse de destination ou de pointage** spécifique ici, à partir du tableau dans Office 365.           [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md)    |
+    |TXT  <br/> |@  <br/> |30 minutes  <br/> |MS=ms *XXXXXXXX*  <br/> **Remarque :** il s'agit d'un exemple. Utilisez votre valeur **Adresse de destination ou de pointage** spécifique ici, à partir du tableau dans Office 365.           [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md)    |
   
     
 5. Cliquez sur **Enregistrer**.
@@ -96,22 +96,22 @@ Avant d'utiliser votre domaine avec Office 365, nous devons vérifier que celui-
   
 9. Patientez quelques minutes, le temps que l'enregistrement que vous venez de créer soit mis à jour sur Internet.
     
-Now that you've added the record at your domain registrar's site, you'll go back to Office 365 and request Office 365 to look for the record.
+L’enregistrement étant désormais ajouté sur le site de votre bureau d’enregistrement de domaines, revenez à Office 365 et demandez à Office 365 de rechercher l’enregistrement.
   
-When Office 365 finds the correct TXT record, your domain is verified.
+Lorsqu’Office 365 trouve l’enregistrement TXT approprié, votre domaine est vérifié.
   
-1. Dans le centre d’administration, accédez à la page **paramètres** \> des <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">domaines</a> .
+1. Dans le centre d’administration, accédez à la page **Paramètres** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domaines</a>.
 
     
-2. Dans la page **domaines** , sélectionnez le domaine que vous vérifiez. 
+2. Dans la page **Domaines**, sélectionnez le domaine que vous vérifiez. 
     
     
   
-3. Sur la page **installation** , sélectionnez **Démarrer l’installation**.
+3. Dans la page **Configuration**, sélectionnez **Démarrer la configuration**.
     
     
   
-4. Sur la page **vérifier le domaine** , sélectionnez **vérifier**.
+4. Dans la page **Vérifier le domaine**, sélectionnez **Vérifier**.
     
     
   
@@ -121,7 +121,7 @@ When Office 365 finds the correct TXT record, your domain is verified.
 ## <a name="add-an-mx-record-so-email-for-your-domain-will-come-to-office-365"></a>Ajouter un enregistrement MX afin que les courriers électroniques pour votre domaine soient transférés vers Office 365
 <a name="BKMK_add_MX"> </a>
 
-1. Pour commencer, accédez à la page de vos domaines sur cloudflare à l’aide de [ce lien](https://www.cloudflare.com/a/login). You'll be prompted to log in first.
+1. Pour commencer, accédez à la page de vos domaines sur cloudflare à l’aide de [ce lien](https://www.cloudflare.com/a/login). Avant toute chose, vous serez invité à vous connecter.
   
 2. Sur la page d' **Accueil** , sélectionnez le domaine que vous souhaitez mettre à jour. 
   
@@ -130,7 +130,7 @@ When Office 365 finds the correct TXT record, your domain is verified.
   
 4. Dans la page **gestion du DNS** , cliquez sur Ajouter un **enregistrement**, puis sélectionnez les valeurs du tableau suivant. 
     
-    |**Type**|**Nom**|**Mail Server (Serveur de courrier)**|**Priority (Priorité)**|**TTL**|
+    |**Type**|**Nom**|**Mail Server (Serveur de courrier)**|**Priorité**|**TTL**|
     |:-----|:-----|:-----|:-----|:-----|
     |MX  <br/> |@  <br/> |*\<domain-key\>*  .mail.protection.outlook.com  <br/> **Remarque :** Obtenez votre * \<clé\> de domaine* à partir de votre compte Office 365.   [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md) |0,1  <br/> Pour plus d'informations sur la priorité, voir [Qu'est-ce que la priorité MX ?](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx). <br/>|30 minutes  <br/> |
    
@@ -146,7 +146,7 @@ When Office 365 finds the correct TXT record, your domain is verified.
 ## <a name="add-the-six-cname-records-that-are-required-for-office-365"></a>Ajouter les six enregistrements CNAMe requis pour Office 365
 <a name="BKMK_add_CNAME"> </a>
 
-1. Pour commencer, accédez à la page de vos domaines sur cloudflare à l’aide de [ce lien](https://www.cloudflare.com/a/login). You'll be prompted to log in first.
+1. Pour commencer, accédez à la page de vos domaines sur cloudflare à l’aide de [ce lien](https://www.cloudflare.com/a/login). Avant toute chose, vous serez invité à vous connecter.
     
   
 2. Sur la page d' **Accueil** , sélectionnez le domaine que vous souhaitez mettre à jour. 
@@ -159,7 +159,7 @@ When Office 365 finds the correct TXT record, your domain is verified.
     Dans la page **gestion du DNS** , cliquez sur Ajouter un **enregistrement**, puis sélectionnez les valeurs du tableau suivant.
     
     
-    |**Type**|**Nom**|**Target (Cible)**|**TTL (Durée de vie)**|
+    |**Type**|**Name (Nom)**|**Target (Cible)**|**TTL (Durée de vie)**|
     |:-----|:-----|:-----|:-----|
     |CNAME  <br/> |autodiscover  <br/> |autodiscover.outlook.com  <br/> |30 minutes  <br/> |
     |CNAME  <br/> |sip  <br/> |sipdir.online.lync.com  <br/> |30 minutes  <br/> |
@@ -176,13 +176,13 @@ When Office 365 finds the correct TXT record, your domain is verified.
 7. Ajoutez successivement les 5 autres enregistrements CNAME.
 
     
-## <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a>Ajouter un enregistrement TXT pour SPF afin d'éviter le courrier indésirable
+## <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a>Ajoutez un enregistrement TXT pour SPF afin d'éviter le courrier indésirable
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
-> You cannot have more than one TXT record for SPF for a domain. If your domain has more than one SPF record, you'll get email errors, as well as delivery and spam classification issues. If you already have an SPF record for your domain, don't create a new one for Office 365. Ajoutez plutôt les valeurs Office 365 requises à l'enregistrement actuel de manière à n'avoir qu'un  *seul*  enregistrement SPF qui inclut les deux ensembles de valeurs. 
+> Vous ne pouvez avoir qu’un enregistrement TXT pour SPF pour un domaine. Si votre domaine comporte plusieurs enregistrements SPF, vous rencontrez des erreurs au niveau de la transmission du courrier électronique ainsi que des problèmes de remise du courrier et de classification en tant que courrier indésirable. If you already have an SPF record for your domain, don't create a new one for Office 365. Ajoutez plutôt les valeurs Office 365 requises à l'enregistrement actuel de manière à n'avoir qu'un  *seul*  enregistrement SPF qui inclut les deux ensembles de valeurs. 
   
-1. Pour commencer, accédez à la page de vos domaines sur cloudflare à l’aide de [ce lien](https://www.cloudflare.com/a/login). You'll be prompted to log in first.
+1. Pour commencer, accédez à la page de vos domaines sur cloudflare à l’aide de [ce lien](https://www.cloudflare.com/a/login). Avant toute chose, vous serez invité à vous connecter.
     
   
 2. Sur la page d' **Accueil** , sélectionnez le domaine que vous souhaitez mettre à jour. 
@@ -194,20 +194,20 @@ When Office 365 finds the correct TXT record, your domain is verified.
     
     |**Type**|**Nom**|**TTL (Durée de vie)**|**Content (Contenu)**|
     |:-----|:-----|:-----|:-----|
-    |TXT  <br/> |@  <br/> |30 minutes  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/> **Remarque :** Nous vous recommandons de copier et coller cette entrée, afin que l’espacement reste correcte.   |
+    |TXT  <br/> |@  <br/> |30 minutes  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/> **Remarque :** nous vous recommandons de copier et coller cette entrée, afin que l’espacement reste correcte.   |
 
  
 5. Cliquez sur **Enregistrer**.
     
 
   
-## <a name="add-the-two-srv-records-that-are-required-for-office-365"></a>Ajouter les 2 enregistrements SRV requis pour Office 365
+## <a name="add-the-two-srv-records-that-are-required-for-office-365"></a>Ajoutez les 2 enregistrements SRV requis pour Office 365
 <a name="BKMK_add_SRV"> </a>
 
 > [!IMPORTANT]
 > N’oubliez pas que cloudflare est responsable de la mise à disposition de cette fonctionnalité. Si vous constatez des incohérences entre les étapes ci-dessous et l’interface utilisateur graphique (GUI) cloudflare actuelle, utilisez la [communauté cloudflare](https://community.cloudflare.com/). 
 
-1. Pour commencer, accédez à la page de vos domaines sur cloudflare à l’aide de [ce lien](https://www.cloudflare.com/a/login). You'll be prompted to log in first.
+1. Pour commencer, accédez à la page de vos domaines sur cloudflare à l’aide de [ce lien](https://www.cloudflare.com/a/login). Avant toute chose, vous serez invité à vous connecter.
       
 2. Sur la page d' **Accueil** , sélectionnez le domaine que vous souhaitez mettre à jour. 
   
@@ -217,7 +217,7 @@ When Office 365 finds the correct TXT record, your domain is verified.
 
     Dans la page **gestion du DNS** , cliquez sur Ajouter un **enregistrement**, puis sélectionnez les valeurs de la première ligne du tableau suivant.
         
-    |**Type**|**Service**|**Protocol (Protocole)**|**Name (Nom)**|**TTL (Durée de vie)**|**Priority (Priorité)**|**Weight (Poids)**|**Port**|**Target (Cible)**|
+    |**Type**|**Service**|**Protocol (Protocole)**|**Name (Nom)**|**TTL (Durée de vie)**|**Priority (Priorité)**|**Weight (Poids)**|**Port (Port)**|**Target (Cible)**|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
     |SRV|_sip |TLS |Utiliser votre *domain_name*; par exemple, contoso.com  |30 minutes | 100|0,1 |443 |sipfed.online.lync.com  |
     |SRV|_sipfederationtls | TCP|Utiliser votre *domain_name*; par exemple, contoso.com   |30 minutes |100 |0,1 |5061 | sipfed.online.lync.com |

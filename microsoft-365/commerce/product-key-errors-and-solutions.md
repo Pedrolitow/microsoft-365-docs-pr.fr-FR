@@ -6,7 +6,7 @@ ms.author: cmcatee
 author: cmcatee-MSFT
 manager: mnirkhe
 audience: Admin
-ms.topic: troubleshooting
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -23,12 +23,12 @@ ms.assetid: 88d337ab-e7b1-43eb-a25e-7d6204e91099
 ROBOTS: NOINDEX
 description: 'Découvrez comment résoudre les problèmes que vous rencontrez lorsque vous entrez votre clé de produit pour Office 365 pour les entreprises. '
 ms.custom: okr_SMB
-ms.openlocfilehash: dbc2281b390e20ce1de6b313bdb23a3b265e267b
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: ef61a1317ba27af337dfbc16e5e4d0a7312d71a5
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42254385"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43211984"
 ---
 # <a name="problems-with-your-office-365-for-business-product-key"></a>Vous rencontrez des problèmes avec votre clé de produit Office 365 pour les entreprises ?
 
@@ -44,9 +44,9 @@ Si un message d’erreur s’affiche lorsque vous essayez d’utiliser une clé 
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | «Désolé, il s’agit d’une clé de produit non valide. Essayez de le saisir à nouveau. Si votre clé de produit est pour Office 365 personnel ou Office 365 domicile, remboursez-la sur office.com/setup. <br/><br/>Si vous utilisez Office 365 solo au Japon : «Désolé, il s’agit d’une clé de produit non valide. Essayez de le saisir à nouveau. Si votre clé de produit est pour Office 365 solo, remboursez-la à office.com/setup. " | Si vous configurez un produit [Office 365 pour les particuliers](https://support.office.com/article/28cbc8cf-1332-4f04-9123-9b660abb629e.aspx) , vous devez utiliser votre clé de produit [https://www.office.com/setup](https://www.office.com/setup)à l’adresse. Dans le cas contraire, pour les clients professionnels, vérifiez attentivement les chiffres et les caractères que vous entrez. |
 | «La clé de produit que vous avez entrée n’est pas valide. Essayez de le saisir de nouveau. " Ou «cette clé de produit n’est pas valide. Entrez une autre clé de produit. " | Vérifiez soigneusement les nombres et caractères entrés. Les erreurs peuvent provenir de 0 et o, de 5 et S, de l et 1, etc. Si le problème persiste, contactez le revendeur auprès duquel vous avez acheté votre clé de produit. |
-| «Vous avez déjà entré cette clé de produit. Entrez une autre clé. " | Vérifiez les clés de produit déjà entrées pour voir si la clé n'a pas déjà été ajoutée. Si vous renouvelez un abonnement à l'aide d'une clé de produit, vous devez utiliser une clé de produit nouvelle et inutilisée.  <br/><br/>Vous avez besoin d'acheter une nouvelle clé de produit ? Visitez le [Microsoft Store](https://go.microsoft.com/fwlink/p/?LinkId=529160) ou un revendeur tiers, ou si vous travaillez avec un partenaire, contactez votre partenaire. <br/><br/>Si le problème persiste, [Contactez le support technique](../admin/contact-support-for-business-products.md). Si vous travaillez avec un partenaire, contactez votre partenaire pour obtenir une assistance sur la clé de produit. |
-| «La clé de produit que vous avez entrée a expiré. Entrez une autre clé. " | Vous devez utiliser une clé de produit nouvelle et inutilisée pour renouveler un abonnement actif ou activer un nouvel abonnement.<br/><br/>Vous avez besoin d'acheter une nouvelle clé de produit ? Visitez le [Microsoft Store](https://go.microsoft.com/fwlink/p/?LinkId=529160) ou un revendeur tiers, ou si vous travaillez avec un partenaire, contactez votre partenaire. |
-| «Cette clé de produit a déjà été utilisée. Entrez une autre clé de produit. " | Vérifiez que la clé n’a pas encore été utilisée par vous-même ou par un membre de votre organisation. Si la clé n’a pas encore été utilisée, veuillez contacter votre partenaire ou le revendeur où vous avez acheté la clé de produit. |
+| «Vous avez déjà entré cette clé de produit. Entrez une autre clé. " | Vérifiez les clés de produit déjà entrées pour voir si la clé n'a pas déjà été ajoutée. Si vous renouvelez un abonnement à l'aide d'une clé de produit, vous devez utiliser une clé de produit nouvelle et inutilisée.  <br/><br/>Vous avez besoin d'acheter une nouvelle clé de produit ? Visitez [Microsoft Store](https://go.microsoft.com/fwlink/p/?LinkId=529160) ou un revendeur tiers, ou si vous traitez avec un partenaire, contactez cette personne.  <br/><br/>Si le problème persiste, [Contactez le support technique](../admin/contact-support-for-business-products.md). Si vous travaillez avec un partenaire, contactez votre partenaire pour obtenir une assistance sur la clé de produit. |
+| «La clé de produit que vous avez entrée a expiré. Entrez une autre clé. " | Vous devez utiliser une clé de produit nouvelle et inutilisée pour renouveler un abonnement actif ou activer un nouvel abonnement.<br/><br/>Vous avez besoin d'acheter une nouvelle clé de produit ? Visitez [Microsoft Store](https://go.microsoft.com/fwlink/p/?LinkId=529160) ou un revendeur tiers, ou si vous traitez avec un partenaire, contactez cette personne. |
+| «Cette clé de produit a déjà été utilisée. Entrez une autre clé de produit. " | Vérifiez que vous ou un membre de votre organisation n'êtes pas à l'origine de son utilisation. Si la clé n'a pas encore été utilisée, contactez votre partenaire ou le revendeur auprès duquel vous l'avez achetée. |
 | «Désolé, nous ne pouvons pas traiter votre demande pour le moment. Veuillez patienter quelques minutes, puis réessayez. " | Si de nouvelles tentatives entraînent le même message d’erreur pendant plus de 15 minutes, veuillez [contacter le support technique](../admin/contact-support-for-business-products.md). |
 | «L’abonnement demandé n’est pas disponible. L’une des raisons suivantes peut être à l’origine de ce problème : l’offre n’est pas disponible : le service n’est pas disponible dans votre pays ; il est impossible d’utiliser/de sélectionner la même version d’évaluation deux fois. Si le problème persiste, contactez le support Microsoft. " | Veuillez [contacter le support technique](../admin/contact-support-for-business-products.md). Si vous travaillez avec un partenaire, contactez votre partenaire pour obtenir de l’aide. |
 | «Vous avez ajouté plusieurs licences utilisateur que ce que propose cette offre. La taille maximale \<est\> de x licences utilisateur. Supprimez cette clé de produit et entrez-en une qui ajoute moins de licences utilisateur. " | Contactez votre revendeur ou partenaire. Vous avez acheté davantage de licences que celles que vous pouvez utiliser avec cet abonnement Office 365. |

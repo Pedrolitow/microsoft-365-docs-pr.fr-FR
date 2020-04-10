@@ -16,12 +16,12 @@ ms.assetid: f4caa4e1-e414-4b21-8822-31c08064c059
 ms.collection:
 - M365-security-compliance
 description: Cet article fournit des informations de dépannage pour les expéditeurs qui rencontrent des problèmes lors de l'envoi d'e-mail à des boîtes de réception dans Office 365 et les meilleures pratiques pour l'envoi de courrier en nombre à des clients Office 365.
-ms.openlocfilehash: 72dd0360038e58c2501728d9032fef95f81d90c2
-ms.sourcegitcommit: 21338a9287017a66298e0ff557e80051946ebf13
+ms.openlocfilehash: 7c5d355f1037df94d856ffff7080d4a12d22f709
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "42604061"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43211906"
 ---
 # <a name="troubleshooting-mail-sent-to-office-365"></a>Résolution des problèmes de messages envoyés à Office 365
 
@@ -136,7 +136,7 @@ Les e-mails de marketing, notamment les bulletins d'informations, doivent toujou
 
  `This email was sent to example@contoso.com by sender@fabrikam.com.`
 
- `Update Profile/Email Address | Instant removal with SafeUnsubscribe™ | Privacy Policy`
+ `Update Profile/Email Address | Instant removal with SafeUnsubscribe&trade; | Privacy Policy`
 
 Certains expéditeurs incluent cette option en demandant aux destinataires d'envoyer un e-mail à un certain alias avec « Se désabonner » dans l'objet. Cela n'est pas préférable à l'exemple en un seul clic ci-dessus. Si vous choisissez de demander aux destinataires d'envoyer un message, assurez-vous que lorsqu'ils cliquent sur le lien, tous les champs requis sont renseignés au préalable.
 

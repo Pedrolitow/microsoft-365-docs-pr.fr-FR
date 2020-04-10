@@ -6,7 +6,7 @@ ms.author: pebaum
 author: pebaum
 manager: mnirkhe
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: d8ff45a2-19e3-413d-aa64-a9982bd6633c
 description: Découvrez comment vérifier votre domaine et configurer les enregistrements DNS pour la messagerie, Skype entreprise Online et d’autres services sur Freenom pour Office 365.
-ms.openlocfilehash: 16348eb03a6507e15d31d5c183bd91125d0236f6
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: d8c33df611a0ef1be95d32026f5d6b99808258f6
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42350665"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43211750"
 ---
 # <a name="create-dns-records-at-freenom-for-office-365"></a>Créer des enregistrements DNS sur Freenom pour Office 365
 
@@ -71,7 +71,7 @@ Avant d'utiliser votre domaine avec Office 365, nous devons vérifier que celui-
   
 6. Dans les zones du nouvel enregistrement, tapez ou copiez-collez les valeurs du tableau suivant. 
     
-    |**Nom**|**Type**|**TTL (Durée de vie)**|**Target (Cible)**|
+    |**Name**|**Type**|**TTL (Durée de vie)**|**Target (Cible)**|
     |:-----|:-----|:-----|:-----|
     |(Laisser vide)  <br/> |TXT  <br/> |3600 (secondes)  <br/> |MS = msXXXXXXXX  <br/> **Remarque :** il s'agit d'un exemple. Utilisez votre valeur **Adresse de destination ou de pointage** spécifique ici, à partir du tableau dans Office 365.           [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md)          |
    
@@ -138,9 +138,9 @@ Lorsqu’Office 365 trouve l’enregistrement TXT approprié, votre domaine est
   
 8. Dans les zones du nouvel enregistrement, tapez ou copiez-collez les valeurs de la première ligne du tableau suivant. 
     
-    |**Nom**|**Type**|**TTL (Durée de vie)**|**Target (Cible)**|**Priorité**|
+    |**Name**|**Type**|**TTL (Durée de vie)**|**Target (Cible)**|**Priorité**|
     |:-----|:-----|:-----|:-----|:-----|
-    |(Laisser vide)  <br/> |MX (Mail Exchanger) (MX - Serveur de courrier)  <br/> |3600 (secondes)  <br/> |\<Key\>. mail.protection.Outlook.com  <br/> **Remarque :** Obtenez votre * \<clé\> de domaine* à partir de votre compte Office 365.   [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md)          |10   <br/> Pour plus d'informations sur la priorité, voir [Qu'est-ce que la priorité MX ?](https://support.office.com/article/17d415c1-067e-4974-84d5-aaeaf3a0c0a9). <br/> |
+    |(Laisser vide)  <br/> |MX (Mail Exchanger) (MX - Serveur de courrier)  <br/> |3600 (secondes)  <br/> |\<Key\>. mail.protection.Outlook.com  <br/> **Remarque :** Obtenez votre * \<clé\> de domaine* à partir de votre compte Office 365.   [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md)          |10   <br/> Pour plus d'informations sur la priorité, voir [Qu'est-ce que la priorité MX ?](https://support.office.com/article/17d415c1-067e-4974-84d5-aaeaf3a0c0a9). <br/> |
    
    ![Enregistrement MX Freenom](../../media/8896c4a9-b3dd-45ed-9916-f7da2715ba8c.png)
   
@@ -221,7 +221,7 @@ Lorsqu’Office 365 trouve l’enregistrement TXT approprié, votre domaine est
   
 6. In the boxes for the new record, type or copy and paste the following values. 
     
-    |**Nom**|**Type d'enregistrement**|**TTL (Durée de vie)**|**Target (Cible)**|
+    |**Name**|**Type d'enregistrement**|**TTL (Durée de vie)**|**Target (Cible)**|
     |:-----|:-----|:-----|:-----|
     |(Laisser vide)  <br/> |TXT  <br/> |3600 (secondes)  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/>**Remarque :** nous vous recommandons de copier et coller cette entrée, afin que l’espacement reste correcte.           |
    

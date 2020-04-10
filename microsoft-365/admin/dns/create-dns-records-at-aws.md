@@ -6,7 +6,7 @@ ms.author: pebaum
 author: pebaum
 manager: mnirkhe
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7a2efd75-0771-4897-ba7b-082fe5bfa9da
 description: Découvrez comment vérifier votre domaine et configurer les enregistrements DNS pour la messagerie, Skype entreprise Online et d’autres services sur Amazon Web Services (AWS) pour Office 365.
-ms.openlocfilehash: baba7bb7275303604d241166f4dc1d2af77b3f17
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: f71e6fa5ce69d789cc7695d30e6447ae281a0e3f
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42351475"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43211846"
 ---
 # <a name="create-dns-records-at-amazon-web-services-aws-for-office-365"></a>Créer des enregistrements DNS sur Amazon Web Services (AWS) pour Office 365
 
@@ -65,7 +65,7 @@ Avant d'utiliser votre domaine avec Office 365, nous devons vérifier que celui-
   
     |||||||
     |:-----|:-----|:-----|:-----|:-----|:-----|
-    |**Nom** <br/> |**Type** <br/> |**Alias** <br/> |**TTL (Seconds) (Durée de vie (secondes))** <br/> |**Value (Valeur)** <br/> |**Routing Policy (Stratégie de routage)** <br/> |
+    |**Name** <br/> |**Type** <br/> |**Alias** <br/> |**TTL (Seconds) (Durée de vie (secondes))** <br/> |**Value (Valeur)** <br/> |**Routing Policy (Stratégie de routage)** <br/> |
     |(Leave this field empty.)  <br/> |TXT - Text  <br/> |Non  <br/> |300  <br/> |MS=ms *XXXXXXXX*  <br/>**Remarque :** il s'agit d'un exemple. Utilisez votre valeur **Adresse de destination ou de pointage** spécifique ici, à partir du tableau dans Office 365. [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md)          |Simple  <br/> |
    
 6. Sélectionnez **Créer**.
@@ -103,7 +103,7 @@ Lorsqu’Office 365 trouve l’enregistrement TXT approprié, votre domaine est
     
     (Choose the **Type** and **Routing Policy** values from the drop-down lists.) 
     
-    |**Nom**|**Type**|**Alias**|**TTL (Seconds) (Durée de vie (secondes))**|**Value (Valeur)**|**Routing Policy (Stratégie de routage)**|
+    |**Name**|**Type**|**Alias**|**TTL (Seconds) (Durée de vie (secondes))**|**Value (Valeur)**|**Routing Policy (Stratégie de routage)**|
     |:-----|:-----|:-----|:-----|:-----|:-----|
     |(Laissez ce champ vide.)  <br/> |MX - Serveur de courrier  <br/> |Non  <br/> |300  <br/> |0  *\<clé_de_domaine\>*  .mail.protection.outlook.com.  <br/> La valeur 0 est la valeur de priorité Max. Ajoutez-la au début de la valeur MX, séparée du reste de la valeur par une espace.  <br/> **Cette valeur DOIT se terminer par un point (.)** <br/> **Remarque :** Obtenez votre \<*clé de domaine*\> à partir de votre compte Office 365. [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md)          |Simple  <br/> |
        
@@ -147,7 +147,7 @@ Lorsqu’Office 365 trouve l’enregistrement TXT approprié, votre domaine est
     
     (Sélectionnez les valeurs **Type (Type)** et **Routing Policy (Stratégie de routage)** dans les listes déroulantes.) 
     
-    |**Nom**|**Type**|**Alias**|**TTL (Seconds) (Durée de vie (secondes))**|**Value (Valeur)**|**Routing Policy (Stratégie de routage)**|
+    |**Name**|**Type**|**Alias**|**TTL (Seconds) (Durée de vie (secondes))**|**Value (Valeur)**|**Routing Policy (Stratégie de routage)**|
     |:-----|:-----|:-----|:-----|:-----|:-----|
     |autodiscover  <br/> |CNAME - Nom canonique  <br/> |Non  <br/> |300  <br/> |autodiscover.outlook.com.  <br/> **Cette valeur DOIT se terminer par un point (.)** <br/> |Simple  <br/> |
     |sip  <br/> |CNAME - Nom canonique  <br/> |Non  <br/> |300  <br/> |sipdir.online.lync.com.  <br/> **Cette valeur DOIT se terminer par un point (.)** <br/> |Simple  <br/> |
@@ -212,7 +212,7 @@ Lorsqu’Office 365 trouve l’enregistrement TXT approprié, votre domaine est
     
     (Sélectionnez les valeurs **Type (Type)** et **Routing Policy (Stratégie de routage)** dans les listes déroulantes.) 
     
-    |**Nom**|**Type**|**Alias**|**TTL (Seconds) (Durée de vie (secondes))**|**Value (Valeur)**|**Routing Policy (Stratégie de routage)**|
+    |**Name**|**Type**|**Alias**|**TTL (Seconds) (Durée de vie (secondes))**|**Value (Valeur)**|**Routing Policy (Stratégie de routage)**|
     |:-----|:-----|:-----|:-----|:-----|:-----|
     |_sip. _tls|SRV - Localisation de service|Non|300|100 1 443 sipdir.online.lync.com. **Cette valeur doit se terminer par un point (.)**><br> **Remarque :** nous vous recommandons de copier et coller cette entrée, afin que l’espacement reste correcte.           |Simple|
     |_sipfederationtls. _tcp|SRV - Localisation de service|Non|300|100 1 5061 sipfed.online.lync.com. **This value MUST end with a period (.)**<br> **Remarque :** nous vous recommandons de copier et coller cette entrée, afin que l’espacement reste correcte.           |Simple|

@@ -6,7 +6,7 @@ ms.author: pebaum
 author: pebaum
 manager: mnirkhe
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9eec911d-5773-422c-9593-40e1147ffbde
 description: Découvrez comment vérifier votre domaine et configurer les enregistrements DNS pour la messagerie, Skype entreprise Online et d’autres services sur le DNS Windows pour Office 365.
-ms.openlocfilehash: ddea5cb95a7f2abef8b68b37de473f936ee08eb5
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: d33a2f79111f8951c3ec31ca5680877ad2e7d570
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42245028"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43210563"
 ---
 # <a name="create-dns-records-for-office-365-using-windows-based-dns"></a>Créer des enregistrements pour Office 365 à l'aide de DNS Windows
 
@@ -38,7 +38,7 @@ Pour commencer, vous devez [Rechercher vos enregistrements DNS dans le DNS Windo
 Problèmes de flux de messagerie ou autres problèmes après avoir ajouté des enregistrements DNS, consultez [la rubrique résolution des problèmes après avoir modifié votre nom de domaine ou des enregistrements DNS](../get-help-with-domains/find-and-fix-issues.md). 
   
 ## <a name="find-your-dns-records-in-windows-based-dns"></a>Rechercher vos enregistrements DNS dans un DNS Windows
-<a name="BKMK_find_your_dns_1"></a> Accédez à la page qui contient les enregistrements DNS pour votre domaine. Si vous utilisez Windows Server 2008, accédez à **Démarrer** > l'**exécution**. Si vous utilisez Windows Server 2012, appuyez sur la touche Windows et sur **r**. Tapez **dnsmgmnt. msc**, puis cliquez sur **OK**. Dans le Gestionnaire DNS, développez ** \<le\> \> nom du serveur DNS zones de recherche directes  **. Sélectionnez votre domaine. Vous pouvez à présent créer les enregistrements DNS.
+<a name="BKMK_find_your_dns_1"> </a> Accédez à la page qui contient les enregistrements DNS pour votre domaine. Si vous utilisez Windows Server 2008, accédez à **Démarrer** > l'**exécution**. Si vous utilisez Windows Server 2012, appuyez sur la touche Windows et sur **r**. Tapez **dnsmgmnt. msc**, puis cliquez sur **OK**. Dans le Gestionnaire DNS, développez ** \<le\> \> nom du serveur DNS zones de recherche directes  **. Sélectionnez votre domaine. Vous pouvez à présent créer les enregistrements DNS.
    
 ## <a name="add-mx-record"></a>Ajouter l'enregistrement MX
 <a name="BKMK_add_MX"> </a>
@@ -48,7 +48,7 @@ Ajoutez un enregistrement MX afin que les courriers électroniques pour votre do
 - À partir de la ligne MX de la section Exchange Online de la page Ajouter des enregistrements DNS dans Office 365, copiez la valeur figurant sous points à l’adresse. Vous utiliserez cette valeur dans l’enregistrement que vous créez dans cette tâche. 
 - Sur la page Gestionnaire DNS du domaine, accédez à **action** > **Mail Exchanger (MX)**. Pour trouver cette page pour le domaine, voir [Rechercher vos enregistrements DNS dans le DNS Windows](#find-your-dns-records-in-windows-based-dns).  
 - Dans la boîte de dialogue **nouvel enregistrement de ressource** , vérifiez que les champs sont définis sur les valeurs suivantes : 
-    - Nom de l’hôte : 
+    - Nom de l’hôte:  
     - @Address : collez ici la valeur de l’adresse de pointage que vous venez de copier depuis Office 365.  
     - Préférences 
 - Sélectionnez **enregistrer les modifications**.
@@ -60,7 +60,7 @@ Ajoutez un enregistrement MX afin que les courriers électroniques pour votre do
 Ajoutez les enregistrements CNAME requis pour Office 365. Si d'autres enregistrements CNAME sont répertoriés dans Office 365, ajoutez-les en suivant les mêmes étapes générales présentées ici.
   
 > [!IMPORTANT]
-> Si vous disposez de la gestion des appareils mobiles pour Office 365, vous devez créer deux enregistrements CNAMe supplémentaires. Follow the procedure that you used for the other four CNAME records, but supply the values from the following table. (Si vous ne disposez pas de MDM, vous pouvez ignorer cette étape.) 
+> Si vous avez la gestion des appareils mobiles (MDM) pour Office 365, vous devez créer deux autres enregistrements CNAME. Suivez la procédure que vous avez utilisée pour les quatre autres enregistrements CNAME, mais fournissez les valeurs du tableau suivant. (Si vous ne disposez pas de MDM, vous pouvez ignorer cette étape.) 
 
 - Sur la page du Gestionnaire DNS du domaine, accédez à l' **action** > **CNAME (CNAME)**.
 - Dans la boîte de dialogue **nouvel enregistrement de ressource** , vérifiez que les champs sont définis sur les valeurs suivantes :  
@@ -84,10 +84,10 @@ Ajoutez l'enregistrement de découverte automatique CNAME Skype Entreprise Onlin
     - Adresse : webdir.online.lync.com
 - Sélectionnez **OK**.
    
-### <a name="add-two-cname-records-for-mobile-device-management-mdm-for-office-365"></a>Ajouter deux enregistrements CNAME pour la gestion des appareils mobiles pour Office 365
+### <a name="add-two-cname-records-for-mobile-device-management-mdm-for-office-365"></a>Ajouter deux enregistrements CNAME pour la gestion des appareils mobiles (MDM) pour Office 365
 
 > [!IMPORTANT]
-> Si vous disposez de la gestion des appareils mobiles pour Office 365, vous devez créer deux enregistrements CNAMe supplémentaires. Follow the procedure that you used for the other four CNAME records, but supply the values from the following table. > (si vous n’avez pas MDM, vous pouvez ignorer cette étape.) 
+> Si vous avez la gestion des appareils mobiles (MDM) pour Office 365, vous devez créer deux autres enregistrements CNAME. Suivez la procédure que vous avez utilisée pour les quatre autres enregistrements CNAME, mais fournissez les valeurs du tableau suivant. > (si vous n’avez pas MDM, vous pouvez ignorer cette étape.) 
   
 
 Ajoutez l'enregistrement CNAME Enterpriseregistration MDM.  
@@ -106,11 +106,11 @@ Ajoutez l'enregistrement CNAME Enterpriseenrollment MDM.
     - Adresse : enterpriseenrollment-s.manage.microsoft.com
 - Sélectionnez **OK**.
    
-## <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a>Ajouter un enregistrement TXT pour SPF afin d'éviter le courrier indésirable
+## <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a>Ajoutez un enregistrement TXT pour SPF afin d'éviter le courrier indésirable
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
-> You cannot have more than one TXT record for SPF for a domain. If your domain has more than one SPF record, you'll get email errors, as well as delivery and spam classification issues. If you already have an SPF record for your domain, don't create a new one for Office 365. Ajoutez plutôt les valeurs Office 365 requises à l'enregistrement actuel de manière à n'avoir qu'un  *seul*  enregistrement SPF qui inclut les deux ensembles de valeurs. 
+> Vous ne pouvez avoir qu’un enregistrement TXT pour SPF pour un domaine. Si votre domaine comporte plusieurs enregistrements SPF, vous rencontrez des erreurs au niveau de la transmission du courrier électronique ainsi que des problèmes de remise du courrier et de classification en tant que courrier indésirable. If you already have an SPF record for your domain, don't create a new one for Office 365. Ajoutez plutôt les valeurs Office 365 requises à l'enregistrement actuel de manière à n'avoir qu'un  *seul*  enregistrement SPF qui inclut les deux ensembles de valeurs. 
   
 Ajoutez l'enregistrement TXT SPF pour votre domaine pour éviter le courrier indésirable.
   
@@ -166,7 +166,7 @@ Avant d'ajouter les enregistrements DNS pour configurer vos services Office 365,
   
 
 1. Collectez les informations sur Office 365.  <br/> 
-2. Dans le centre d’administration, accédez à la page **paramètres** \> des <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">domaines</a> . 
+2. Dans le centre d’administration, accédez à la page **Paramètres** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domaines</a>. 
 3. Dans la page **domaines** , dans la colonne **actions** du domaine que vous vérifiez, sélectionnez **Démarrer la configuration**. 
 4. Sur la page **Ajouter un domaine à Office 365** , sélectionnez **Démarrer l’étape 1**. 
 5. Dans la page **confirmer que vous êtes le propriétaire de votre domaine** , dans la liste déroulante **voir les instructions pour l’exécution de cette étape avec** , sélectionnez **instructions générales**. 

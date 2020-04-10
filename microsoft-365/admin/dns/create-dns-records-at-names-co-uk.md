@@ -6,7 +6,7 @@ ms.author: pebaum
 author: pebaum
 manager: mnirkhe
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: b6c15128-b456-49b4-8b5e-5b823c700f26
 description: Découvrez comment vérifier votre domaine et configurer les enregistrements DNS pour la messagerie, Skype entreprise Online et d’autres services sur Names.co.uk pour Office 365.
-ms.openlocfilehash: d27cd22b0047cf58def01533a486c7641f50148e
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 8f8d76c1aebaa7fec80b264e0a9d2c8fffec9f41
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42348135"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43211666"
 ---
 # <a name="create-dns-records-at-namescouk-for-office-365"></a>Créer des enregistrements DNS auprès de Names.co.uk pour Office 365
 

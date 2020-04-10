@@ -6,7 +6,7 @@ ms.author: pebaum
 author: pebaum
 manager: mnirkhe
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -21,12 +21,12 @@ search.appverid:
 ms.assetid: 1062115d-e312-482a-bb5a-765235990f41
 ROBOTS: NOINDEX
 description: Découvrez comment déplacer des données vers votre nouvelle identité d’entreprise.
-ms.openlocfilehash: 878d4b66907cc6419ff23cbb61e56e32c7c601bc
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: fc0df5e919370395480cdafbaaee10b0d844f088
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42254266"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43209675"
 ---
 # <a name="move-email-and-data-to-office-365-business-premium"></a>Déplacer des e-mails et des données vers Office 365 Business Premium
 

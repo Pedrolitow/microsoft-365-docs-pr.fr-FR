@@ -6,7 +6,7 @@ ms.author: pebaum
 author: pebaum
 manager: mnirkhe
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 68a08e94-26c2-4df2-9216-026b8ec907ca
 description: Découvrez comment configurer Office 365 pour gérer les enregistrements DNS de votre domaine personnalisé sur Google Domains.
-ms.openlocfilehash: f6faaa4a7b6540086752e88da2051a73450f4455
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 86dd1745fdc85c9837e5c20844427768d4c74a81
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42351965"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43211930"
 ---
 # <a name="change-nameservers-to-set-up-office-365-with-google-domains"></a>Modifier les serveurs de noms de manière à configurer Office 365 avec Google Domains
 
@@ -57,7 +57,7 @@ Avant d'utiliser votre domaine avec Office 365, nous devons vérifier que celui-
     
 |||||
 |:-----|:-----|:-----|:-----|
-|**Nom** <br/> |**Type** <br/> |**TTL (Durée de vie)** <br/> |**Data (Données)** <br/> |
+|**Name** <br/> |**Type** <br/> |**TTL (Durée de vie)** <br/> |**Data (Données)** <br/> |
 |@  <br/> |TXT  <br/> |Premier  <br/> |MS=ms *XXXXXXXX* <br/> **Remarque :** il s'agit d'un exemple. Utilisez votre valeur **Adresse de destination ou de pointage** spécifique ici, à partir du tableau dans Office 365. [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md)       <br/>  |
    
 4. Sélectionnez **Ajouter**.

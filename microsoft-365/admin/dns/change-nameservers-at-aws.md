@@ -6,7 +6,7 @@ ms.author: pebaum
 author: pebaum
 manager: mnirkhe
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 0ddbe33c-81ea-4c02-8db9-e71d3810c0ec
 description: 'Découvrez comment configurer Office 365 pour gérer vos enregistrements DNS sur Amazon Web Services (AWS). '
-ms.openlocfilehash: 9500522478c22277c57772ef64b4d0a4b87e8c44
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: a7125cf0add8200fe152c426f47e7f27a8f6226c
+ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42352485"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43212352"
 ---
 # <a name="change-nameservers-to-set-up-office-365-with-amazon-web-services-aws"></a>Modifier les serveurs de noms de manière à configurer Office 365 avec Amazon Web Services (AWS)
 
@@ -58,7 +58,7 @@ Avant d'utiliser votre domaine avec Office 365, nous devons vérifier que celui-
   
 |||||||
 |:-----|:-----|:-----|:-----|:-----|:-----|
-|**Nom** <br/> |**Type** <br/> |**Alias** <br/> |**TTL (Seconds) (Durée de vie (secondes))** <br/> |**Value (Valeur)** <br/> |**Routing Policy (Stratégie de routage)** <br/> |
+|**Name** <br/> |**Type** <br/> |**Alias** <br/> |**TTL (Seconds) (Durée de vie (secondes))** <br/> |**Value (Valeur)** <br/> |**Routing Policy (Stratégie de routage)** <br/> |
 |(Laissez ce champ vide)  <br/> |TXT - Text  <br/> |Non  <br/> |300  <br/> |MS=ms *XXXXXXXX* <br/> **Remarque :** il s'agit d'un exemple. Utilisez votre valeur **Adresse de destination ou de pointage** spécifique ici, à partir du tableau dans Office 365. [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md)  <br/>  |Simple <br/> |
    
 6. Sélectionnez **Créer**.
