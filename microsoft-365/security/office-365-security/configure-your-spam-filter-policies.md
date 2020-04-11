@@ -16,12 +16,12 @@ ms.assetid: 316544cb-db1d-4c25-a5b9-c73bbcf53047
 ms.collection:
 - M365-security-compliance
 description: Les paramètres du filtre de courrier indésirable de base incluent la sélection de l’action à effectuer sur les messages identifiés comme indésirables.
-ms.openlocfilehash: f77a4f52e045c96a0538b140022ebee846cb1996
-ms.sourcegitcommit: 8a88b7526e6a3a907f33a8567e0d25b74fe60d80
+ms.openlocfilehash: 39532db121bb4a9ca5b73ef129b2b0e74e46c69a
+ms.sourcegitcommit: 1d5db6e8411b45d0dd1c517339074c2840e33a63
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43204099"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43216922"
 ---
 # <a name="configure-anti-spam-policies-in-office-365"></a>Configuration de stratégies de blocage du courrier indésirable dans Office 365
 
@@ -280,7 +280,7 @@ En créant une stratégie contre le courrier indésirable dans le Centre de séc
 
 3. Cliquez sur **Modifier une stratégie**.
 
-Pour les stratégies anti-courrier indésirable personnalisées, les paramètres disponibles dans le menu volant qui s’affiche sont identiques à ceux décrits dans la section [Utiliser le Centre de sécurité & conformité pour créer des stratégies anti-courrier indésirable](#use-the-security--compliance-center-to-create-anti-spam-policies).
+Les paramètres du menu volant qui s’affiche sont identiques aux paramètres disponibles dans le [Utiliser le centre de sécurité & conformité pour créer des stratégies anti-courrier indésirable](#use-the-security--compliance-center-to-create-anti-spam-policies) section.
 
 Pour la stratégie anti-courrier indésirable par défaut nommée **Stratégie de filtrage de courrier indésirable par défaut**, la section**Appliqué à** n’est pas disponible (la stratégie s’applique à tout le monde) et vous ne pouvez pas renommer la stratégie.
 
@@ -460,7 +460,7 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, vo
 Pour afficher les règles de filtrage de courrier indésirable existantes, utilisez la syntaxe suivante :
 
 ```PowerShell
-Get-HostedContentFilterRule [-Identity "<RuleIdentity>] [-State <Enabled | Disabled]
+Get-HostedContentFilterRule [-Identity "<RuleIdentity>"] [-State <Enabled | Disabled]
 ```
 
 Pour renvoyer une liste récapitulative des règles de filtrage de courrier indésirable, exécutez la commande suivante :

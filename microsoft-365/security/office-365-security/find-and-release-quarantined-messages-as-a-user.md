@@ -17,12 +17,12 @@ ms.assetid: efff08ec-68ff-4099-89b7-266e3c4817be
 ms.collection:
 - M365-security-compliance
 description: En tant qu'utilisateur Office 365, vous pouvez afficher, déplacer et supprimer les messages mis en quarantaine (les messages dont vous êtes le destinataire et qui sont en quarantaine car considérés comme du courrier indésirable ou comme des e-mails de masse). Vous pouvez afficher et gérer vos messages mis en quarantaine dans le Centre de sécurité et de conformité.
-ms.openlocfilehash: 03c7ce474119ae5ff130b987b58d5130d53c33d6
-ms.sourcegitcommit: 053d42480d8aa3792ecb0027ddd53d383a029474
+ms.openlocfilehash: 32ae03c555742b9f08c272806464ed75585d08df
+ms.sourcegitcommit: 1d5db6e8411b45d0dd1c517339074c2840e33a63
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "42941404"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43216903"
 ---
 # <a name="find-and-release-quarantined-messages-as-a-user-in-office-365"></a>Rechercher et déplacer les messages en quarantaine en tant qu’utilisateur dans Office 365
 
@@ -66,7 +66,7 @@ En tant qu'utilisateur, vous pouvez afficher, déplacer et supprimer les message
 
    - **ID de message**
 
-   - **Nom de la stratégie**
+   - **Nom de la stratégie**: cette propriété affiche la stratégie qui a provoqué la mise en quarantaine du message. Vous pouvez fournir ces informations à votre administrateur.
 
    - **Taille**
 
