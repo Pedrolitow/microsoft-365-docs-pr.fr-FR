@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 - remotework
 description: 'Protégez votre courrier électronique et vos données professionnelles contre les menaces informatiques, notamment les ransomware, le hameçonnage et les pièces jointes malveillantes. '
-ms.openlocfilehash: 3bbd5951ac6005f20584d53e17ac55927acd4c89
-ms.sourcegitcommit: a7b2cd892cb65a61ee246268e1af2f8b9e526f6b
+ms.openlocfilehash: d42760f0dbf38b72fe530a5670f3515bf3ba2f94
+ms.sourcegitcommit: 7bb340f6b47378bcd1c6e770dc975931470bbc26
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "43081303"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43225952"
 ---
 # <a name="top-12-tasks-for-security-teams-to-support-working-from-home"></a>12 premières tâches pour les équipes de sécurité qui prennent en charge le travail à domicile
 
@@ -45,7 +45,7 @@ Pour les clients qui utilisent nos plans d’entreprise, Microsoft vous recomman
 |8       |  [Inscrire des PC dans la gestion des appareils et exiger des PC conformes](#8-enroll-pcs-into-device-management-and-require-compliant-pcs)   |  | ![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)        | ![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)        | 
 |9       | [Optimiser votre réseau pour la connectivité Cloud](#9-optimize-your-network-for-cloud-connectivity)  |  ![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png) |![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)      |![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)        | 
 |10    | [Former les utilisateurs](#10-train-users) |    ![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png) |![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)      |![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)      | 
-|a4 |[Prise en main de la sécurité des applications Cloud Microsoft](#11-get-started-with-microsoft-cloud-app-security) |![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)   |![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)   |![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)   |
+|a4 |[Prise en main de la sécurité des applications Cloud Microsoft](#11-get-started-with-microsoft-cloud-app-security) |   |![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)   |![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)   |
 |12  |[Surveiller les menaces et prendre des mesures](#12-monitor-for-threats-and-take-action) |![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)   |![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)  |![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)  |
 | | | |
 

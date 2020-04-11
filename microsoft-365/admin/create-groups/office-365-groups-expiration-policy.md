@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez les stratégies d’expiration des groupes Office 365.
-ms.openlocfilehash: 92e472ac56128cc847471b51930aa73dc6598711
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+ms.openlocfilehash: 58eadf3f5899a69fda261c34a5911af22220bd85
+ms.sourcegitcommit: 7bb340f6b47378bcd1c6e770dc975931470bbc26
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43212056"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43225918"
 ---
 # <a name="office-365-group-expiration-policy"></a>Stratégie d’expiration de groupe Office 365
 
@@ -38,7 +38,7 @@ Les administrateurs peuvent spécifier une période d’expiration et tout group
 Les groupes qui sont actifs en cours d’utilisation sont automatiquement renouvelés. L’une des actions suivantes permet de renouveler automatiquement un groupe :
 - SharePoint : afficher, modifier, télécharger, déplacer, partager ou télécharger des fichiers.
 - Outlook-rejoindre un groupe, lire ou écrire un message de groupe à partir du groupe et comme un message (Outlook sur le Web).
-- Teams-visite d’une équipe Channe.
+- Teams : visite d’un canal d’équipes.
 
 > [!IMPORTANT]
 > Lorsque vous modifiez la stratégie d’expiration, le service recalcule la date d’expiration pour chaque groupe. Il commence toujours à compter à partir de la date de création du groupe, puis applique la nouvelle stratégie d’expiration.
