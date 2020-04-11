@@ -15,20 +15,38 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: Pendant et après une enquête automatisée dans Office 365, vous pouvez afficher les résultats et les résultats clés.
-ms.openlocfilehash: 6db1c6a999a7791e8fb7bf728a9ee0a33733eeaf
-ms.sourcegitcommit: d1909d34ac0cddeb776ff5eb8414bfc9707d5ac1
+ms.openlocfilehash: e19669f48047f1800d2a904c6ef5565d8db94dd9
+ms.sourcegitcommit: 7bb340f6b47378bcd1c6e770dc975931470bbc26
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "43163909"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43225974"
 ---
 # <a name="details-and-results-of-an-automated-investigation-in-office-365"></a>Détails et résultats d’une enquête automatisée dans Office 365
 
 Lorsqu’une [enquête automatisée](office-365-air.md) se produit dans [Office 365 protection avancée contre les menaces](office-365-atp.md), des informations détaillées sur cette enquête sont disponibles pendant et après le processus d’enquête automatisé. Si vous disposez des autorisations nécessaires, vous pouvez afficher ces détails dans une vue Détails de l'examen. La vue Détails de l’examen vous fournit l’État à jour et la possibilité d’approuver les actions en attente. 
 
+## <a name="investigation-status"></a>État de l’enquête
+
+L’état d’enquête indique la progression de l’analyse et des actions. Lors de l’exécution de l’enquête, les États changent pour indiquer si des menaces ont été détectées et si des actions ont été approuvées. 
+
+|Statut  |Signification  |
+|---------|---------|
+|Démarrage | L’enquête a été déclenchée et attend de démarrer.  |
+|En cours d’exécution | Le processus d’enquête a commencé et est en cours d’exécution. Cet État se produit également lorsque les [actions en attente](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-review-approve-pending-completed-actions#approve-or-reject-pending-actions) sont approuvées. |
+|Aucune menace détectée | L’enquête est terminée et aucune menace (compte d’utilisateur, message électronique, URL ou fichier) n’a été identifiée. <br/><br/>**Conseil**: Si vous pensez qu’un événement a été manqué (par exemple, un faux négatif), vous pouvez prendre une mesure à l’aide de l' [Explorateur de menaces](https://docs.microsoft.com/microsoft-365/security/office-365-security/threat-explorer). |
+|Menaces détectées |L’enquête automatisée a détecté des problèmes, mais il n’existe aucune action de correction spécifique pour résoudre ces problèmes.<br/><br/> L’État menaces détectées peut se produire lorsqu’un type d’activité utilisateur a été identifié mais qu’aucune action de nettoyage n’est disponible. Voici quelques exemples d’activités utilisateur : <br/>-Un événement de [protection contre la perte de données](https://docs.microsoft.com/Microsoft-365/compliance/data-loss-prevention-policies) (DLP) <br/>-Un e-mail envoyant une anomalie <br/>-Programmes malveillants envoyés <br/>-Hameçon envoyé<br/>L’enquête n’a trouvé aucune URL, aucun fichier ou message électronique malveillant à corriger, ni aucune activité de boîte aux lettres à corriger, telle que la désactivation des règles de transfert ou la délégation. <br/><br/>**Conseil**: Si vous pensez qu’un événement a été manqué (par exemple, un faux négatif), vous pouvez examiner et prendre des mesures à l’aide de l' [Explorateur de menaces](https://docs.microsoft.com/microsoft-365/security/office-365-security/threat-explorer). |
+|Terminé par le système | L’enquête s’est arrêtée. Une enquête peut s’arrêter pour plusieurs raisons :<br/>-Les actions en attente de l’enquête ont expiré. Délai d’expiration des actions en attente après approbation d’une semaine. <br/>-Il y a trop d’actions. Par exemple, si un trop grand nombre d’utilisateurs cliquent sur des URL malveillantes, il peut dépasser la capacité de l’enquête à exécuter tous les analyseurs, de sorte que l’enquête s’arrête. <br/><br/>**Conseil**: si une enquête s’arrête avant que des actions ne soient prises, essayez d’utiliser l' [Explorateur de menaces](https://docs.microsoft.com/microsoft-365/security/office-365-security/threat-explorer) pour trouver et résoudre les menaces.  |
+|Action en attente | L’enquête a détecté une menace, telle qu’un e-mail malveillant, une URL malveillante ou un paramètre de boîte aux lettres à risque, et une action visant à corriger cette menace est en attente d' [approbation](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-review-approve-pending-completed-actions).<br/><br/>L’état de l’action en attente est déclenché lorsqu’une menace avec une action correspondante est trouvée. Toutefois, la liste des actions en attente peut augmenter à mesure qu’une enquête s’exécute. Consultez le [Journal d’enquête](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-view-investigation-results#playbook-log) pour voir si d’autres éléments sont toujours en attente de réalisation. |
+|Corrigé | L’enquête terminée et toutes les actions ont été approuvées (corrigées entièrement).<br/><br/>**Remarque**: les actions de correction approuvées peuvent comporter des erreurs qui empêchent le suivi des actions. Que les actions de correction soient exécutées avec succès ou non, l’état de l’enquête ne change pas. Pour obtenir des résultats détaillés, consultez le [Journal d’enquête](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-view-investigation-results) . |
+|Partiellement résolu | L’enquête a entraîné des actions de correction, et certaines ont été approuvées et terminées. D’autres actions sont toujours [en attente](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-review-approve-pending-completed-actions). |
+|Échec | Au moins un analyseur d’enquête a rencontré un problème où il n’a pas pu se terminer correctement. <br/><br/>**Remarque**: si une enquête échoue après l’approbation des actions correctives, les actions correctives ont pu encore aboutir. Pour obtenir des résultats détaillés, consultez le [Journal d’enquête](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-view-investigation-results) . |
+|Mise en file d’attente par limitation | Une enquête est placée dans une file d’attente. Lorsque d’autres enquêtes sont terminées, les recherches en attente commencent. La limitation permet d’éviter les performances de service médiocres. <br/><br/>**Conseil**: les actions en attente permettent de limiter le nombre de nouvelles enquêtes pouvant être exécutées. Veillez à [approuver (ou refuser) les actions en attente](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-review-approve-pending-completed-actions#approve-or-reject-pending-actions). |
+|Interruption par la limitation | Si une enquête est conservée dans la file d’attente trop longtemps, elle s’arrête. <br/><br/>**Conseil**: vous pouvez [Démarrer une enquête à partir de l’Explorateur de menaces](https://docs.microsoft.com/microsoft-365/security/office-365-security/automated-investigation-response-office#example-a-security-administrator-triggers-an-investigation-from-threat-explorer). |
+
 ## <a name="view-details-of-an-investigation"></a>Afficher les détails d’une enquête
 
-1. Accédez à [https://protection.office.com](https://protection.office.com) et connectez-vous. Cette opération vous permet d’accéder au centre de sécurité & conformité.
+1. Accédez au centre de sécurité & conformité Office 365 ([https://protection.office.com](https://protection.office.com)) et connectez-vous.
 
 2. Effectuez l’une des opérations suivantes :
 
@@ -50,7 +68,7 @@ Lorsqu’une [enquête automatisée](office-365-air.md) se produit dans [Office 
 
 Certains types d’alertes déclenchent une enquête automatisée dans Office 365. Pour en savoir plus, consultez la rubrique [alertes](automated-investigation-response-office.md#alerts). Utilisez la procédure suivante pour afficher les détails d’une alerte associée à une enquête automatisée.
 
-1. Accédez à [https://protection.office.com](https://protection.office.com) et connectez-vous. Cette opération vous permet d’accéder au centre de sécurité & conformité.
+1. Accédez au centre de sécurité & conformité Office 365 ([https://protection.office.com](https://protection.office.com)) et connectez-vous. 
 
 2. Accédez aux **Threat management** > **enquêtes**de gestion des menaces.
 
@@ -83,20 +101,6 @@ Vous pouvez :
 - Appliquer des filtres. Choisissez entre **type**d’enquête **, période**, **État**ou une combinaison de ces éléments.
 - Exportez les données dans un fichier. csv.
 
-L’état d’enquête indique la progression de l’analyse et des actions. Lors de l’exécution de l’enquête, les États changent pour indiquer si des menaces ont été détectées et si des actions ont été approuvées. 
-
-|État  |Signification  |
-|---------|---------|
-|Démarrage | L’enquête a été déclenchée et attend de démarrer. Ceci est la première étape.  |
-|En cours d’exécution | Le processus d’enquête a commencé et est en cours d’exécution. Cet État se produit également lorsque les [actions en attente](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-review-approve-pending-completed-actions#approve-or-reject-pending-actions) sont approuvées. |
-|Aucune menace détectée | L’enquête est terminée et aucune menace (compte d’utilisateur, message électronique, URL ou fichier) n’a été identifiée. <br/><br/>**Conseil**: Si vous pensez qu’un événement a été manqué (par exemple, un faux négatif), vous pouvez prendre une mesure à l’aide de l' [Explorateur de menaces](https://docs.microsoft.com/microsoft-365/security/office-365-security/threat-explorer). |
-|Terminé par le système | L’enquête s’est arrêtée. Cela peut se produire pour plusieurs raisons. Voici les deux raisons les plus courantes :<br/>-Les actions en attente de l’enquête ont expiré. Délai d’expiration des actions en attente après approbation d’une semaine. <br/>-Il y a trop d’actions. Par exemple, si un trop grand nombre d’utilisateurs cliquent sur des URL malveillantes, il peut dépasser la capacité de l’enquête à exécuter tous les analyseurs, de sorte que l’enquête s’arrête. <br/><br/>**Conseil**: si une enquête s’arrête avant que des actions ne soient prises, essayez d’utiliser l' [Explorateur de menaces](https://docs.microsoft.com/microsoft-365/security/office-365-security/threat-explorer) pour trouver et résoudre les menaces.  |
-|Action en attente | L’enquête a détecté une menace, telle qu’un e-mail malveillant, une URL malveillante ou un paramètre de boîte aux lettres à risque, et une action visant à corriger cette menace est en attente d' [approbation](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-review-approve-pending-completed-actions).<br/><br/>L’état de l’action en attente est déclenché lorsqu’une menace avec une action correspondante est trouvée ; Toutefois, Notez que l’enquête n’est peut-être pas entièrement complète.  Consultez le [Journal d’enquête](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-view-investigation-results#playbook-log) pour voir si d’autres éléments sont toujours en attente de réalisation. |
-|Corrigé | L’enquête terminée et toutes les actions ont été approuvées (corrigées entièrement).<br/><br/>**Remarque**: les actions de correction approuvées peuvent comporter des erreurs qui empêchent le suivi des actions. Cette opération ne modifie pas l’état de l’enquête. Pour obtenir des résultats détaillés, consultez le [Journal d’enquête](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-view-investigation-results) . |
-|Partiellement résolu | L’enquête a entraîné des actions de correction, et certaines ont été approuvées et terminées. D’autres actions sont toujours [en attente](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-review-approve-pending-completed-actions). |
-|Échec | Au moins un analyseur d’enquête a rencontré un problème où il n’a pas pu se terminer correctement. <br/><br/>**Remarque**: si une enquête échoue après l’approbation des actions correctives, les actions correctives ont pu encore aboutir. Pour obtenir des résultats détaillés, consultez le [Journal d’enquête](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-view-investigation-results) . |
-|Mise en file d’attente par limitation | Une enquête est placée dans une file d’attente. Lorsque d’autres enquêtes sont terminées, les recherches en attente commencent. Cela permet d’éviter les performances de service médiocres. <br/><br/>**Conseil**: les actions en attente permettent de limiter le nombre de nouvelles enquêtes pouvant être exécutées. Veillez à [approuver (ou refuser) les actions en attente](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-review-approve-pending-completed-actions#approve-or-reject-pending-actions). |
-|Interruption par la limitation | Si une enquête est conservée dans la file d’attente trop longtemps, elle est arrêtée. <br/><br/>**Conseil**: vous pouvez [Démarrer une enquête à partir de l’Explorateur de menaces](https://docs.microsoft.com/microsoft-365/security/office-365-security/automated-investigation-response-office#example-a-security-administrator-triggers-an-investigation-from-threat-explorer). |
 
 ### <a name="investigation-graph"></a>Graphique de l'examen
 
@@ -112,7 +116,7 @@ Vous pouvez :
 
 ### <a name="alert-investigation"></a>Enquête sur les alertes
 
-Dans l’onglet **alertes** pour une enquête, vous pouvez voir des alertes relatives à l’enquête. Les détails incluent l’alerte qui a déclenché l’enquête et d’autres alertes corrélées, telles que la connexion à risque, les violations de stratégie DLP, etc., qui sont corrélées à l’enquête. À partir de cette page, un analyste de sécurité peut également afficher des détails supplémentaires sur des alertes individuelles.
+Dans l’onglet **alertes** pour une enquête, vous pouvez voir des alertes relatives à l’enquête. Les détails incluent l’alerte qui a déclenché l’enquête et d’autres alertes corrélées, telles que la connexion à risque, les violations de [stratégie DLP](https://docs.microsoft.com/Microsoft-365/compliance/data-loss-prevention-policies) , etc., qui sont corrélées à l’enquête. À partir de cette page, un analyste de sécurité peut également afficher des détails supplémentaires sur des alertes individuelles.
 
 ![Page alertes AÉRIENNEs](../../media/air-investigationalertspage.png)
 

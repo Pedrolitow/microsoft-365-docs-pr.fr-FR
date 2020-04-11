@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 37cdbb02-a24a-4093-8bdb-2a7f0b3a19ee
 description: Découvrez la croissance automatique de l’archivage dans Office 365, qui offre un stockage d’archive illimité pour les boîtes aux lettres Exchange Online.
-ms.openlocfilehash: 42318bf2ff102e6197800b2d6cba8b5c9132bcf9
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: eb7d75e87ac26dcf4f920b4858bc2f23862b0366
+ms.sourcegitcommit: 7bb340f6b47378bcd1c6e770dc975931470bbc26
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42069439"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43225963"
 ---
 # <a name="overview-of-unlimited-archiving-in-office-365"></a>Vue d’ensemble d’un archivage illimité dans Office 365
 
@@ -43,17 +43,17 @@ Voici une présentation rapide du processus.
 
 ![Vue d’ensemble du processus d’archivage à extension automatique](../media/74355385-d990-44fe-8a87-6c3639d1f63f.png)
 
-1. L’archivage est activé pour une boîte aux lettres d’utilisateur ou une boîte aux lettres partagée. Une boîte aux lettres d’archivage de 100 Go d’espace de stockage est créée et le quota d’avertissement pour la boîte aux lettres d’archivage est défini sur 90 Go.
+1. L’archivage est activé pour une boîte aux lettres d’utilisateur ou une boîte aux lettres partagée. Une boîte aux lettres d’archivage de 100 Go d’espace de stockage est créée (également appelée *Archive principale*) et le quota d’avertissement pour la boîte aux lettres d’archivage est défini sur 90 Go.
 
-2. Un administrateur permet l’archivage à extension automatique pour la boîte aux lettres. Lorsque la boîte aux lettres d’archivage (y compris le dossier éléments récupérables) atteint 90 Go, elle est convertie en archive à extension automatique et Office 365 ajoute de l’espace de stockage à l’archive. La mise en service de l’espace de stockage supplémentaire peut prendre jusqu’à 30 jours.
+2. Un administrateur permet l’archivage à extension automatique pour la boîte aux lettres. Lorsque la boîte aux lettres d’archivage (y compris le dossier éléments récupérables) atteint 90 Go, elle est convertie en archive à extension automatique et Office 365 ajoute de l’espace de stockage à l’archive. Ce stockage d’archive supplémentaire est également appelé *Archive auxiliaire*. La mise en service de l’espace de stockage supplémentaire peut prendre jusqu’à 30 jours.
 
    > [!NOTE]
    > Si une boîte aux lettres est placée en conservation ou affectée à une stratégie de rétention Office 365, le quota de stockage de la boîte aux lettres d’archivage passe à 110 Go lorsque l’archivage à extension automatique est activé. De même, le quota d’avertissement d’archivage est porté à 100 Go.
 
-3. Office 365 ajoute automatiquement davantage d’espace de stockage lorsque cela est nécessaire.
+3. Office 365 ajoute automatiquement davantage d’espace de stockage à l’archive auxiliaire lorsque cela est nécessaire.
 
 > [!IMPORTANT]
-> L’archive à extension automatique est uniquement prise en charge pour les boîtes aux lettres utilisées pour des utilisateurs individuels (ou des boîtes aux lettres partagées) dont le taux de croissance ne dépasse pas 1 Go par jour. La boîte aux lettres d'archivage d'un utilisateur est destinée uniquement à cet utilisateur. L’utilisation de la journalisation, des règles de transport ou des règles de transfert automatique pour copier des messages vers une boîte aux lettres d’archivage n’est pas autorisée. Microsoft se réserve le droit de refuser l’archivage illimité dans les cas où la boîte aux lettres d’archivage d’un utilisateur est utilisée pour stocker des données d’archivage pour d’autres utilisateurs ou dans d’autres cas d’utilisation inappropriée.
+> L’archivage à extension automatique est uniquement pris en charge pour les boîtes aux lettres utilisées pour des utilisateurs individuels (ou des boîtes aux lettres partagées) dont le taux de croissance ne dépasse pas 1 Go par jour. La boîte aux lettres d'archivage d'un utilisateur est destinée uniquement à cet utilisateur. L’utilisation de la journalisation, des règles de transport ou des règles de transfert automatique pour copier des messages vers une boîte aux lettres d’archivage n’est pas autorisée. Microsoft se réserve le droit de refuser l’archivage illimité dans les cas où la boîte aux lettres d’archivage d’un utilisateur est utilisée pour stocker des données d’archivage pour d’autres utilisateurs ou dans d’autres cas d’utilisation inappropriée.
 
 ## <a name="what-gets-moved-to-the-additional-archive-storage-space"></a>Qu’est-ce qui est déplacé vers l’espace de stockage d’archive supplémentaire ?
 
@@ -86,15 +86,15 @@ Pour accéder aux messages stockés dans une archive étendue automatiquement, l
 
 - Outlook 2016 ou Outlook 2019 pour Mac
 
-Voici quelques éléments à prendre en compte lors de l’utilisation d’Outlook ou d’Outlook sur le Web pour accéder aux messages stockés dans un archivage développé automatiquement.
+Prenez en compte les éléments suivants lors de l’utilisation d’Outlook ou d’Outlook sur le Web pour accéder aux messages stockés dans un archivage développé automatiquement.
 
 - Vous pouvez accéder à n’importe quel dossier de votre boîte aux lettres d’archivage, y compris ceux qui ont été déplacés vers la zone de stockage étendu automatiquement.
 
 - Vous pouvez rechercher des éléments qui ont été déplacés vers une zone de stockage supplémentaire uniquement en effectuant une recherche dans le dossier proprement dit. Cela signifie que vous devez sélectionner le dossier d’archivage dans la liste des dossiers pour sélectionner l’option **dossier actif** comme étendue de recherche. De même, si un dossier d’une zone de stockage à extension automatique contient des sous-dossiers, vous devez effectuer une recherche dans chaque sous-dossier séparément.
 
-- Le nombre d’éléments dans Outlook et le nombre de lectures/non de lectures (dans Outlook et Outlook sur le Web) dans une archive étendue automatiquement peuvent ne pas être précis.
+- Vous pouvez supprimer des éléments dans un sous-dossier qui pointe vers une zone de stockage à extension automatique, mais le dossier proprement dit ne peut pas être supprimé. En fait, lorsque l’archivage à extension automatique est activé pour une boîte aux lettres, vous ne pouvez pas supprimer de dossiers dans l’archive principale ou dans une zone de stockage à extension automatique.
 
-- Vous pouvez supprimer des éléments dans un sous-dossier qui pointe vers une zone de stockage à extension automatique, mais le dossier proprement dit ne peut pas être supprimé.
+- Le nombre d’éléments dans Outlook et le nombre de lectures/non de lectures (dans Outlook et Outlook sur le Web) dans une archive étendue automatiquement peuvent ne pas être précis.
 
 - Vous ne pouvez pas utiliser la fonctionnalité récupérer les éléments supprimés pour récupérer un élément qui a été supprimé d’une zone de stockage à extension automatique.
 
@@ -102,9 +102,9 @@ Voici quelques éléments à prendre en compte lors de l’utilisation d’Outlo
 
 Cette section décrit la fonctionnalité entre l’archivage et les autres fonctionnalités de conformité et de gouvernance des données Office 365.
 
-- **eDiscovery :** Lorsque vous utilisez un outil eDiscovery Office 365, tel que la recherche de contenu ou la découverte électronique inaltérable, les zones de stockage supplémentaires dans une archive étendue automatiquement sont également recherchées.
+- **eDiscovery :** Lorsque vous utilisez un outil eDiscovery Office 365, tel que la recherche de contenu, le centre eDiscovery ou Advanced eDiscovery, les zones de stockage supplémentaires dans une archive étendue automatiquement sont également recherchées.
 
-- **Rétention :** Lorsque vous placez une boîte aux lettres en conservation à l’aide d’outils tels que la conservation pour litige dans Exchange Online ou des stratégies de rétention et de conservation de cas eDiscovery dans le centre de sécurité et de conformité, le contenu situé dans un archivage étendu automatiquement est également mis en attente.
+- **Rétention :** Lorsque vous placez une boîte aux lettres en conservation à l’aide d’outils comme la conservation pour litige dans Exchange Online ou de stratégies de rétention dans le centre de sécurité et de conformité, le contenu situé dans un archivage développé automatiquement est également placé en conservation.
 
 - **Gestion des enregistrements de messagerie (MRM) :** Si vous utilisez des stratégies de suppression MRM dans Exchange Online pour supprimer définitivement des éléments de boîte aux lettres expirés, les éléments expirés situés dans l’archive étendue automatiquement seront également supprimés.
 
