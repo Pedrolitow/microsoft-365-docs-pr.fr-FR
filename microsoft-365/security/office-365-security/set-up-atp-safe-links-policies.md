@@ -17,12 +17,12 @@ ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
 ms.collection:
 - M365-security-compliance
 description: Configurez des stratégies de liens fiables pour protéger votre organisation contre les liens malveillants dans les fichiers Word, Excel, PowerPoint et Visio, ainsi que dans les messages électroniques.
-ms.openlocfilehash: 86aa69b813641654a0f4b5e2b4049358aeace4df
-ms.sourcegitcommit: 13f28aa762e467bab8ab1e95e1917b3ac28931da
+ms.openlocfilehash: a1a78afe7480ed9f68f8cd893c00876872317785
+ms.sourcegitcommit: c876d58b34454f211b50ae5d06f193c1a1e5c4ff
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43193481"
+ms.lasthandoff: 04/11/2020
+ms.locfileid: "43230979"
 ---
 # <a name="set-up-office-365-atp-safe-links-policies"></a>Configuration des stratégies de liens approuvés Office 365 ATP
 
@@ -51,7 +51,7 @@ De [nouvelles fonctionnalités sont continuellement ajoutées à](office-365-atp
     
 - Assurez-vous que vous disposez des autorisations nécessaires. Pour définir (ou modifier) des stratégies ATP, vous devez disposer d’un rôle approprié. Certains exemples sont décrits dans le tableau suivant : <br>
 
-    |Rôle  |WHERE/How Assigned  |
+    |Role  |WHERE/How Assigned  |
     |---------|---------|
     |Administrateur général Office 365 |La personne qui s’inscrit pour acheter Office 365 est un administrateur global par défaut. (Pour en savoir plus, consultez la rubrique [à propos des rôles d’administrateur Office 365](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles) .)         |
     |Administrateur de sécurité |Centre d’administration Azure Active Directory[https://aad.portal.azure.com](https://aad.portal.azure.com)()|
@@ -116,7 +116,7 @@ Une fois que vous avez révisé (ou modifié) la stratégie de liens approuvés 
 6. Cliquez sur **Enregistrer**.
 
 > [!NOTE]
-> Les stratégies de liens fiables ATP avec une priorité plus élevée seront prioritaires. Si un utilisateur est soumis à deux stratégies ou plus, seule la stratégie de priorité plus élevée prendra effet.
+> Les stratégies de liens fiables ATP avec une priorité plus élevée seront prioritaires. Si un utilisateur est soumis à deux ou plusieurs stratégies, seule la stratégie de priorité plus élevée prendra effet.
     
 ## <a name="step-4-learn-about-atp-safe-links-policy-options"></a>Étape 4 : en savoir plus sur les options de stratégie de liens approuvés ATP
 

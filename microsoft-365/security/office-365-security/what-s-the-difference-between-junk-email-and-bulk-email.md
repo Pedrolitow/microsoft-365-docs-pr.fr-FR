@@ -16,14 +16,14 @@ ms.assetid: 8079f193-1b40-4081-9e5d-d0e50dfbcc59
 ms.collection:
 - M365-security-compliance
 description: Cette rubrique explique la différence entre le courrier indésirable (courrier indésirable) et le courrier électronique en masse, et les contrôles associés dans Office 365.
-ms.openlocfilehash: 56e997235a374ee9f56956be96458b46bffcdc21
-ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
+ms.openlocfilehash: 41dedd02febc40b73dc585961487f89bbc6db54a
+ms.sourcegitcommit: c876d58b34454f211b50ae5d06f193c1a1e5c4ff
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/28/2020
-ms.locfileid: "43033625"
+ms.lasthandoff: 04/11/2020
+ms.locfileid: "43230955"
 ---
-# <a name="whats-the-difference-between-junk-email-and-bulk-email"></a>Quelle est la différence entre courrier indésirable et message électronique en masse ?
+# <a name="whats-the-difference-between-junk-email-and-bulk-email"></a>Quelle est la différence entre le courrier indésirable et le courrier en nombre ?
 
 Les clients Office 365 avec des boîtes aux lettres dans Exchange Online ou des clients Exchange Online Protection (EOP) autonomes sans boîte aux lettres Exchange Online demandent parfois : « quelle est la différence entre le courrier indésirable et le courrier électronique en masse ? » Cette rubrique explique la différence et décrit les contrôles disponibles dans EOP.
 
