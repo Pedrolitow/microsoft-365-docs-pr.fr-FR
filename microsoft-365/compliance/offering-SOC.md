@@ -14,20 +14,20 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 80ee396d5a9862dd335118d8d4e8018214035f20
-ms.sourcegitcommit: b6ab845d64e2801051d249de09ad5059809b649a
+ms.openlocfilehash: 7cb065bb63bc30c4704abd3d4239fd80bca6d21e
+ms.sourcegitcommit: 7bb340f6b47378bcd1c6e770dc975931470bbc26
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42222046"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43225907"
 ---
 # <a name="service-organization-controls-soc"></a>Service Organization Controls (SOC)
 
 ## <a name="soc-1-2-and-3-reports-overview"></a>Présentation des rapports SOC 1, 2 et 3
 
-Les entreprises sous-traitent de plus en plus à des fournisseurs de services cloud (CSP) et à d’autres organisations des fonctions de base telles que le stockage de données et l’accès à des applications. En réponse, l’American Institute of Certified Public Accountants (AICPA) a développé la SOC (Service Organization Controls), une norme pour les contrôles qui assurent la protection de la confidentialité des informations stockées et traitées dans le cloud. Cela s’aligne sur l’International Standard on Assurance Engagements (ISAE), la norme d’information pour les organisations de services internationales.
+Les entreprises sous-traitent de plus en plus à des fournisseurs de services cloud (CSP) et à d’autres organisations des fonctions de base telles que le stockage de données et l’accès à des applications. En réponse, l’American Institute of Certified Public Accountants (AICPA) a développé la SOC (Service Organization Controls), une norme pour les contrôles qui assurent la protection de la confidentialité des informations stockées et traitées dans le cloud. Ce cadre s’aligne sur l’International Standard on Assurance Engagements (ISAE), la norme d’information pour les organisations de services internationales.
 
-Les audits de service basés sur la SOC relèvent de deux catégories (SOC 1 et SOC 2) qui s’appliquent dans le cadre des services de cloud computing Microsoft.
+Les audits de service basés sur la SOC relèvent de SOC 1 ou SOC 2, des catégories qui s’appliquent dans le cadre des services de cloud computing Microsoft.
 
 Un audit SOC 1, conçu pour des cabinets d’expertise comptable qui auditent des rapports financiers, évalue l’efficacité des contrôles internes d’un CSP qui affectent les rapports financiers d’un client utilisant les services cloud du fournisseur. La déclaration sur les normes pour les missions d’attestation (SSAE 18) et les normes internationales pour les missions d’assurance nº. 3402 (ISAE 3402) sont des normes sous lesquelles l’audit est effectué et qui constitue la base du rapport SOC 1.
 
@@ -115,13 +115,13 @@ Les rapports permettent à vos auditeurs de comparer les services Entreprise Cl
 
 **À quelle fréquence des rapports Azure SOC sont-ils générés ?**
 
-Les rapports SOC relatifs à Azure, Cloud App Security, Flow, Graph, Intune, Power BI, PowerApps, Stream et aux centres de données Microsoft reposent sur une période de 12 mois glissants (période d’audit) avec de nouveaux rapports émis chaque semestre (les périodes se terminant le 31 mars et le 30 septembre). Les lettres de crédit sont émises en janvier pour couvrir la période du 01/10 au 31/12 et en juillet pour couvrir la période de 01/04 au 30/06. Les clients peuvent [télécharger](https://aka.ms/stp) les derniers rapports sur le Service Trust Portal.
+Les rapports SOC relatifs à Azure, Cloud App Security, Flow, Graph, Intune, Power BI, PowerApps, Stream et aux centres de données Microsoft reposent sur une période de 12 mois glissants (période d’audit) avec de nouveaux rapports émis chaque semestre (les périodes se terminant le 31 mars et le 30 septembre). Les lettres de crédit sont émises chaque trimestre, généralement la première semaine de chaque mois suivant la fin du trimestre. Les clients peuvent [télécharger](https://aka.ms/stp) les derniers rapports sur le Service Trust Portal.
 
 **Dois-je réaliser mon propre audit des centres de données Microsoft ?**
 
 Non. Microsoft partage les certifications et les rapports d’audit indépendants avec les clients pour qu’ils puissent vérifier la conformité de Microsoft avec ses engagements de sécurité.
 
-**Puis-je tirer profit de la conformité Microsoft dans le processus de certification de mon organisation ?**
+**Puis-je tirer parti de la conformité Microsoft dans le processus de certification de mon organisation ?**
 
 Oui. Lorsque vous migrez vos applications et vos données vers des services de cloud computing Microsoft hébergés, vous pouvez vous appuyer sur les audits et les certifications détenus par Microsoft. Les rapports indépendants confirment l’efficacité des contrôles mis en œuvre par Microsoft pour contribuer à maintenir la sécurité et la confidentialité de vos données.
 

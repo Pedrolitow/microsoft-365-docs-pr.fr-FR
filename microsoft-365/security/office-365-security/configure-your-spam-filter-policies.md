@@ -15,13 +15,13 @@ search.appverid:
 ms.assetid: 316544cb-db1d-4c25-a5b9-c73bbcf53047
 ms.collection:
 - M365-security-compliance
-description: Les paramètres du filtre de courrier indésirable de base incluent la sélection de l’action à effectuer sur les messages identifiés comme indésirables.
-ms.openlocfilehash: 39532db121bb4a9ca5b73ef129b2b0e74e46c69a
-ms.sourcegitcommit: 1d5db6e8411b45d0dd1c517339074c2840e33a63
+description: Les administrateurs peuvent découvrir comment créer, modifier et supprimer des stratégies anti-courrier indésirable dans Exchange Online et Exchange Online Protection (EOP) autonome.
+ms.openlocfilehash: 3f71a9c9a62e409d4a54c01523270fb10a723a96
+ms.sourcegitcommit: c876d58b34454f211b50ae5d06f193c1a1e5c4ff
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43216922"
+ms.lasthandoff: 04/11/2020
+ms.locfileid: "43231015"
 ---
 # <a name="configure-anti-spam-policies-in-office-365"></a>Configuration de stratégies de blocage du courrier indésirable dans Office 365
 
@@ -495,7 +495,7 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, vo
 
 ### <a name="use-powershell-to-modify-spam-filter-policies"></a>Utiliser PowerShell pour modifier les stratégies de filtrage du courrier indésirable
 
-En outres des éléments suivants, les paramètres suivants sont disponibles lorsque vous modifiez une stratégie de filtrage des programmes malveillants dans PowerShell, comme lorsque vous créez une stratégie comme décrit dans la section [Étape 1 : utiliser PowerShell pour créer une stratégie de filtrage du courrier indésirable](#step-1-use-powershell-to-create-a-spam-filter-policy) plus haut dans cette rubrique.
+En outres des éléments suivants, les paramètres suivants sont disponibles lorsque vous modifiez une stratégie de filtrage du courrier indésirable dans PowerShell, comme lorsque vous créez une stratégie comme décrit dans la section [Étape 1 : utiliser PowerShell pour créer une stratégie de filtrage du courrier indésirable](#step-1-use-powershell-to-create-a-spam-filter-policy) plus haut dans cette rubrique.
 
 - Le commutateur _MakeDefault_ qui convertit la stratégie spécifiée en stratégie par défaut (appliquée à tout le monde, toujours priorité**La moins élevée**, et vous ne pouvez pas le supprimer) est disponible uniquement lorsque vous modifiez une stratégie de filtrage de courrier indésirable dans PowerShell.
 
