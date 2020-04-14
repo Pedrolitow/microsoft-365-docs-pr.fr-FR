@@ -16,12 +16,12 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: La protection contre la perte de données (DLP) dans &amp; le centre de sécurité conformité d’Office 365 inclut 80 types d’informations sensibles que vous pouvez utiliser dans vos stratégies DLP. Cette rubrique répertorie tous ces types d'informations sensibles et indique ce qu'une stratégie DLP recherche pour chaque type.
-ms.openlocfilehash: bd74551b7e8b2d659724a1222e115a479db76ec8
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: aa3a08961ccad92c9986db16c1d8180d9b0cd17e
+ms.sourcegitcommit: 4ddbc1c3c29d79d3c4640b7b32f95576784efcca
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42894299"
+ms.lasthandoff: 04/13/2020
+ms.locfileid: "43240280"
 ---
 # <a name="what-the-sensitive-information-types-look-for"></a>Éléments recherchés par les types d’informations sensibles
 
@@ -213,12 +213,12 @@ Neuf lettres et chiffres :
 - Deux chiffres 
 - Cinq chiffres ou lettres (ne respectent pas la casse)
 
-OU
+OR
 
 - 1 ou 2 lettres facultatives (ne respectant pas la casse)  
 - 4 à 9 chiffres
 
-OU
+OR
 
 - Neuf chiffres ou lettres (ne respectant pas la casse)
 
@@ -2104,7 +2104,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - date d’expiration
 - date d’exp
 - date d’expiration
-- date d’expiration
+- Date d’expiration
 - date d’exp
 - date expiration
 - carte bancaire
@@ -2306,7 +2306,7 @@ Neuf chiffres avec une barre oblique inverse facultative (ancien format) 10 chif
 Neuf chiffres (ancien format) :
 - Neuf chiffres
 
-OU
+OR
 
 - Six chiffres qui représentent la date de naissance
 - Une barre oblique 
@@ -2315,7 +2315,7 @@ OU
 10 chiffres (nouveau format) :
 - 10 chiffres
 
-OU
+OR
 
 - Six chiffres qui représentent la date de naissance
 - Une barre oblique  
@@ -2838,12 +2838,32 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
    
 ## <a name="finland-passport-number"></a>Numéro de passeport Finlande
 
-Combinaison de format de neuf lettres et chiffres combinaison de neuf lettres et chiffres : deux lettres (ne respectant pas la casse) sept chiffres somme de contrôle no la stratégie DLP est de 75% en certitude qu’elle a détecté ce type d’informations sensibles si, dans un proximité de 300 caractères : l’expression régulière Regex_finland_passport_number trouve le contenu qui correspond au modèle.
-Un mot clé figurant dans la liste Keyword_finland_passport_number est trouvé.
+### <a name="format"></a>Format
+Combinaison de neuf lettres et chiffres
+
+### <a name="pattern"></a>Modèle
+Combinaison de neuf lettres et chiffres : deux lettres (ne respectant pas la casse) sept chiffres
+
+### <a name="checksum"></a>Somme de contrôle
+Non
+
+### <a name="definition"></a>Définition
+Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
+- L’expression régulière Regex_finland_passport_number trouve un contenu qui correspond au modèle.
+- Un mot clé figurant dans la liste Keyword_finland_passport_number est trouvé.
 <!-- Finland Passport Number -->
-<Entity id="d1685ac3-1d3a-40f8-8198-32ef5669c7a5" recommendedConfidence="75" patternsProximity="300"> <Pattern confidenceLevel="75"> <IdMatch idRef="Regex_finland_passport_number"/> <Match idRef="Keyword_finland_passport_number"/> </Pattern>
+```xml
+<Entity id="d1685ac3-1d3a-40f8-8198-32ef5669c7a5" recommendedConfidence="75" patternsProximity="300">
+  <Pattern confidenceLevel="75">
+     <IdMatch idRef="Regex_finland_passport_number"/>
+     <Match idRef="Keyword_finland_passport_number"/>
+  </Pattern>
 </Entity>
-Mots clés Keyword_finland_passport_number Passport passes
+```
+### <a name="keywords"></a>Mots clés
+- Keyword_finland_passport_number
+- Tel
+- Transfert
    
 ## <a name="france-drivers-license-number"></a>Numéro de permis de conduire France
 
@@ -5671,7 +5691,7 @@ Deux modèles possibles :
 - Six chiffres
 - « A », « B », « C » ou « d » (comme le préfixe, seuls certains caractères sont autorisés dans le suffixe ; ne respectent pas la casse)
 
-OU
+OR
 
 - Deux lettres
 - Un espace ou un tiret

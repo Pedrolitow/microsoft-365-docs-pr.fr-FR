@@ -25,12 +25,12 @@ search.appverid:
 - GEA150
 ms.assetid: 36081d8d-b3fa-4948-8c34-e217bba825e1
 description: Découvrez comment ajouter et supprimer des licences pour votre abonnement Office 365 pour les entreprises.
-ms.openlocfilehash: f596971016e18747ea2849c0dfcb0dd287a0c811
-ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
+ms.openlocfilehash: abfa479d991bac72bd3e9e5c1c422368758b17a7
+ms.sourcegitcommit: 4ddbc1c3c29d79d3c4640b7b32f95576784efcca
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43142174"
+ms.lasthandoff: 04/13/2020
+ms.locfileid: "43240283"
 ---
 # <a name="manage-subscription-licenses"></a>Gérer les licences d’abonnement
 
@@ -38,9 +38,9 @@ Vous pouvez ajouter ou supprimer des licences de vos abonnements à l’aide de 
 
 [] Vous ne pouvez pas supprimer une licence d'un abonnement si elle est affectée à un utilisateur. Si vous souhaitez supprimer une licence actuellement attribuée à un utilisateur, vous devez [Supprimer les licences des utilisateurs](../../admin/manage/remove-licenses-from-users.md) avant de pouvoir supprimer la licence de l’abonnement.
 
-::: moniker range="o365-worldwide"
+## <a name="add-or-remove-licenses-for-your-business-subscription"></a>Ajouter ou supprimer des licences pour votre abonnement professionnel
 
-## <a name="what-you-need-to-know-about-buying-licenses-for-your-business-subscription"></a>Ce que vous devez savoir sur l’achat de licences pour votre abonnement professionnel
+::: moniker range="o365-worldwide"
 
 1. Dans le Centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produits et services</a>.
 

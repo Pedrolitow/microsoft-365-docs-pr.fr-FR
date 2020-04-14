@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 'Un Conseil de stratégie est une notification ou un avertissement qui s’affiche lorsqu’un utilisateur travaille avec du contenu qui entre en conflit avec une stratégie DLP. Vous pouvez utiliser des notifications par courrier électronique et des conseils de stratégie pour sensibiliser les utilisateurs aux stratégies de votre organisation. Vous pouvez également donner aux utilisateurs la possibilité de remplacer la stratégie, afin qu’ils ne soient pas bloqués s’ils ont un besoin opérationnel valide ou si la stratégie détecte un faux positif. '
-ms.openlocfilehash: adf9d41fd528b2146ae3b3ee6f61390d61deaabe
-ms.sourcegitcommit: 9c335d110e0b499501edc8a31b987641819118a1
+ms.openlocfilehash: 7d54c035d9bb7c9ecc5a543fb8f37749bf9437e7
+ms.sourcegitcommit: 4c6af6530b4997055b8e60bf532e75cbc72fb6c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/04/2020
-ms.locfileid: "42409579"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43284269"
 ---
 # <a name="send-email-notifications-and-show-policy-tips-for-dlp-policies"></a>Envoi des notifications et affichage des conseils de stratégie pour les stratégies DLP
 
@@ -32,7 +32,7 @@ Vous pouvez utiliser une stratégie de protection contre la perte de données (D
   
 ![La barre des messages affiche le conseil de stratégie dans Excel 2016](../media/7002ff54-1656-4a6c-993f-37427d6508c8.png)
   
-Un Conseil de stratégie est une notification ou un avertissement qui s’affiche lorsqu’un utilisateur travaille avec du contenu qui entre en conflit avec une stratégie DLP (par exemple, du contenu tel qu’un classeur Excel sur un site OneDrive entreprise qui contient des informations d’identification personnelle et qui est partagé avec un utilisateur externe.
+Un Conseil de stratégie est une notification ou un avertissement qui s’affiche lorsqu’un utilisateur travaille avec du contenu qui entre en conflit avec une stratégie DLP (par exemple, du contenu tel qu’un classeur Excel sur un site OneDrive entreprise qui contient des informations d’identification personnelle et qui est partagé avec un utilisateur externe).
   
 Vous pouvez utiliser des notifications par courrier électronique et des conseils de stratégie pour sensibiliser les utilisateurs aux stratégies de votre organisation. Vous pouvez également donner aux utilisateurs la possibilité de remplacer la stratégie, afin qu’ils ne soient pas bloqués s’ils ont un besoin opérationnel valide ou si la stratégie détecte un faux positif.
   
@@ -50,7 +50,7 @@ Dans le centre de sécurité &amp; conformité Office 365, lorsque vous créez u
     
 ## <a name="add-user-notifications-to-a-dlp-policy"></a>Ajouter des notifications utilisateur à une stratégie DLP
 
-Lorsque vous créez une stratégie DLP, vous pouvez activer les **notifications**de l’utilisateur. Lorsque ce paramètre est activé, Microsoft 365 envoie les notifications par courrier électronique et les conseils de stratégie. Vous pouvez personnaliser la personne à laquelle les messages électroniques de notification sont envoyés, le texte de l’e-mail et le texte de l’info-bulle de la stratégie.
+Lorsque vous créez une stratégie DLP, vous pouvez activer les **notifications**de l’utilisateur. Lorsque les notifications utilisateur sont activées, Microsoft 365 envoie des notifications par courrier électronique et des conseils de stratégie. Vous pouvez personnaliser la personne à laquelle les messages électroniques de notification sont envoyés, le texte de l’e-mail et le texte de l’info-bulle de la stratégie.
   
 1. Accédez à [https://protection.office.com](https://protection.office.com).
     
@@ -62,19 +62,19 @@ Lorsque vous créez une stratégie DLP, vous pouvez activer les **notifications*
   
 4. Choisissez le modèle de stratégie DLP qui protège les types d’informations sensibles dont vous \> **avez besoin.**
     
-    Pour commencer avec un modèle vide, sélectionnez **** \> **stratégie** \> personnalisée personnalisée **suivant**.
+    Pour commencer avec un modèle vide, sélectionnez **Custom** \> **stratégie** \> personnalisée personnalisée **suivant**.
     
 5. Nommez la \> stratégie **suivante**.
     
 6. Pour choisir les emplacements que la stratégie DLP doit protéger, effectuez l’une des opérations suivantes :
     
-  - Choisissez **tous les emplacements dans Office 365** \> **.**
+   - Choisissez **tous les emplacements dans Office 365** \> **.**
     
-  - Choisissez **me laisser choisir des emplacements** \> **** spécifiques.
+   - Choisissez **me laisser choisir des emplacements** \> **Next**spécifiques.
     
-    Pour inclure ou exclure un emplacement entier, tel que tous les messages électroniques Exchange ou tous les comptes OneDrive, activez ou désactivez l' **État** de cet emplacement. 
+   Pour inclure ou exclure un emplacement entier, tel que tous les messages électroniques Exchange ou tous les comptes OneDrive, activez ou désactivez l' **État** de cet emplacement. 
     
-    Pour inclure uniquement des sites SharePoint spécifiques ou des comptes OneDrive, changez l' **État** en activé, puis cliquez sur les liens sous **inclure** pour choisir des sites ou des comptes spécifiques. 
+   Pour inclure uniquement des sites SharePoint spécifiques ou des comptes OneDrive, changez l' **État** en activé, puis cliquez sur les liens sous **inclure** pour choisir des sites ou des comptes spécifiques. 
     
 7. Sélectionnez **utiliser les paramètres** \> avancés **suivant**.
     
@@ -136,7 +136,7 @@ Pour chaque règle d’une stratégie DLP, vous pouvez configurer des conseils d
     
 - Autoriser la personne à remplacer la stratégie DLP. Si vous le souhaitez, vous pouvez :
     
-  - Demander à la personne d’entrer une justification professionnelle pour remplacer la stratégie. Ces informations sont consignées dans le journal et vous pouvez les afficher dans **** les rapports DLP dans la &amp; section rapports du centre de sécurité et de conformité. 
+  - Demander à la personne d’entrer une justification professionnelle pour remplacer la stratégie. Ces informations sont consignées dans le journal et vous pouvez les afficher dans **Reports** les rapports DLP dans la &amp; section rapports du centre de sécurité et de conformité. 
     
   - Autoriser la personne à signaler un faux positif et remplacer la stratégie DLP. Ces informations sont également consignées pour la création de rapports, afin que vous puissiez utiliser des faux positifs pour affiner vos règles.
     
@@ -166,7 +166,7 @@ Lorsqu’un document sur un site OneDrive entreprise ou un site SharePoint Onlin
     
 2. Si la règle bloque l’accès au document, l’icône bloqué apparaît.
     
-![Icônes de Conseil de stratégie sur les documents dans un compte OneDrive](../media/d3e9f772-03f9-4d28-82f8-3064784332a2.png)
+   ![Icônes de Conseil de stratégie sur les documents dans un compte OneDrive](../media/d3e9f772-03f9-4d28-82f8-3064784332a2.png)
   
 Pour effectuer une action sur un document, vous pouvez sélectionner un \> élément **choisir un** ![volet informations](../media/50b6d51b-92b4-4c5f-bb4b-4ca2d4aa3d04.png) sur l’icône dans le coin supérieur droit de la page pour ouvrir le \> **Conseil de stratégie afficher**le volet d’informations.
   

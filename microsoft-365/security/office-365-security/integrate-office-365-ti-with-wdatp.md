@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
-ms.date: 01/22/2019
+ms.date: 04/13/2020
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -17,12 +17,12 @@ ms.assetid: 414fa693-d7b7-4a1d-a387-ebc3b6a52889
 ms.collection:
 - M365-security-compliance
 description: Intégrer Office 365 Advanced Threat Protection avec Microsoft Defender Advanced Threat Protection pour consulter des informations plus détaillées sur la gestion des menaces.
-ms.openlocfilehash: 8096a950e66ed94d6e056f40b737d89d48cb811e
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: a2634a70bdbdd21efe2c59721e5532500eb4e4cc
+ms.sourcegitcommit: 4c6af6530b4997055b8e60bf532e75cbc72fb6c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42088753"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43284224"
 ---
 # <a name="integrate-office-365-advanced-threat-protection-with-microsoft-defender-advanced-threat-protection"></a>Intégrer Office 365 Advanced Threat Protection avec Microsoft Defender Advanced Threat Protection
 
@@ -30,7 +30,7 @@ Si vous êtes membre de l’équipe de sécurité de votre organisation, vous po
   
 L’image suivante montre l’onglet **appareils** qui apparaît lorsque l’intégration de Microsoft Defender ATP est activée :
   
-![Lorsque l’ATP Microsoft Defender est activé, vous pouvez voir une liste des ordinateurs avec des alertes.](../../media/fec928ea-8f0c-44d7-80b9-a2e0a8cd4e89.PNG)
+![Lorsque l’ATP Microsoft Defender est activé, vous pouvez voir une liste des périphériques avec des alertes.](../../media/fec928ea-8f0c-44d7-80b9-a2e0a8cd4e89.PNG)
   
 Dans cet exemple, vous pouvez voir que les destinataires du message électronique ont quatre appareils et que l’un d’entre eux comporte une alerte. Si vous cliquez sur le lien d’un appareil, celui-ci s’ouvre dans le centre de sécurité Microsoft Defender.
   
@@ -44,22 +44,21 @@ Dans cet exemple, vous pouvez voir que les destinataires du message électroniqu
     
 ## <a name="to-integrate-office-365-atp-with-microsoft-defender-atp"></a>Pour intégrer la protection avancée contre les menaces Office 365 à Microsoft Defender ATP
 
-L’intégration de la fonctionnalité ATP Office 365 à Microsoft Defender ATP est configurée à l’aide du centre de sécurité & de la sécurité et du centre de sécurité Microsoft Defender.
+L’intégration de la fonctionnalité ATP Office 365 à Microsoft Defender ATP est configurée à l’aide du centre de sécurité & de la sécurité d’Office 365 et du centre de sécurité Microsoft Defender.
   
-1. En tant qu’administrateur général Office 365 ou administrateur de sécurité, accédez [https://protection.office.com](https://protection.office.com) à et connectez-vous avec votre compte professionnel ou scolaire pour Office 365.
+1. En tant qu’administrateur général Office 365 ou administrateur de sécurité, accédez [https://protection.office.com](https://protection.office.com) à et connectez-vous.
     
-2. Choisissez **** \> **Explorateur**de gestion des menaces.<br>![Explorateur dans le menu gestion des menaces](../../media/ThreatMgmt-Explorer-nav.png)<br>
+2. Choisissez **Threat management** \> **Explorateur**de gestion des menaces.<br>![Explorateur dans le menu gestion des menaces](../../media/ThreatMgmt-Explorer-nav.png)<br>
     
 3. Dans le coin supérieur droit de l’écran, sélectionnez **paramètres WDATP**.
     
-4. Dans la boîte de dialogue connexion Windows Defender ATP, activez connexion à Windows ATP.<br>![Connexion ATP Microsoft Defender](../../media/Explorer-WDATPConnection-dialog.png)<br>
+4. Dans la boîte de dialogue connexion Microsoft Defender ATP, activez **connexion à Windows ATP**.<br>![Connexion ATP Microsoft Defender](../../media/Explorer-WDATPConnection-dialog.png)<br>
     
-5. Activez la connexion dans le centre de sécurité Microsoft Defender.
+5. Activez la connexion dans le centre de sécurité Microsoft Defender ([https://securitycenter.windows.com](https://securitycenter.windows.com)).
 
-  
 ## <a name="related-topics"></a>Voir aussi
 
-[Enquête et réponse aux menaces Office 365](office-365-ti.md)
+[Fonctionnalités d’enquête et de réponse aux menaces dans Office 365](office-365-ti.md)
   
 [Protection avancée contre les menaces dans Office 365](office-365-atp.md)
   
