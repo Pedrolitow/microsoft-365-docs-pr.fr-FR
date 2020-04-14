@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Une stratégie de rétention vous permet de décider de façon proactive de conserver du contenu, de le supprimer (ou les deux), de conserver du contenu, puis de le supprimer ; d’appliquer une stratégie unique à l’ensemble de l’organisation ou à quelques emplacements ou utilisateurs ; et d’appliquer une stratégie à tout le contenu ou au contenu remplissant certaines conditions.
-ms.openlocfilehash: ffbc8026b8a0b1f85916c7697625bfa0935e275f
-ms.sourcegitcommit: 732bb72a0b5ae09cb39536185aa29d6097ec72fd
+ms.openlocfilehash: d06ad19ab247384f800b3b38c561ad8eb33d4066
+ms.sourcegitcommit: 9cea48e1b26e0465c00f8d053080cba1143970c2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43189049"
+ms.lasthandoff: 04/13/2020
+ms.locfileid: "43237641"
 ---
 # <a name="overview-of-retention-policies"></a>Vue d’ensemble des stratégies de rétention
 
@@ -301,7 +301,7 @@ Vous pouvez utiliser une stratégie de rétention pour conserver des conversatio
 Les conversations et les messages de canal Teams ne sont pas affectés par les stratégies de rétention appliquées aux boîtes aux lettres d’utilisateur ou de groupe dans les emplacements Exchange ou les groupes Office 365. Même si les conversations et les messages de canal Teams sont stockés dans Exchange, ces éléments sont uniquement affectés par une stratégie de rétention appliquée à l’emplacement Teams.
 
 > [!NOTE]
-> Si un utilisateur est inclus dans une stratégie de rétention active conservant les données de Teams, la suppression de sa boîte aux lettres n'est dans ce cas pas autorisée, car le stockage des données doit être maintenu. Pour supprimer la boîte aux lettres de cet utilisateur, l’administrateur doit tout d’abord exclure l’utilisateur de la stratégie de rétention.
+> Si un utilisateur est inclus dans une stratégie de rétention active qui conserve les données Teams et que vous supprimez une boîte aux lettres d’un utilisateur inclus dans cette stratégie, pour conserver les données, la boîte aux lettres est convertie en [boîte aux lettres inactive](inactive-mailboxes-in-office-365.md). Si vous n’avez pas besoin de conserver ces données pour l’utilisateur, excluez-le de la stratégie de rétention avant de supprimer sa boîte aux lettres.
   
 Lorsqu’une stratégie de rétention est affectée à une équipe, les conversations et les messages de canal suivent l’un des deux chemins suivants :
 
