@@ -20,16 +20,16 @@ search.appverid:
 ms.assetid: 043807b2-21db-4d5c-b430-c8a6dee0e6ba
 ROBOTS: NOINDEX, NOFOLLOW
 description: Découvrez l’authentification multifacteur dans Office 365 et les étapes que vous devez suivre pour la configurer.
-ms.openlocfilehash: be3b355f4487e2df5c2e20c9911c3bb421d5f7e1
-ms.sourcegitcommit: 00ce4626e1be182c5a91210a23662c9704384efa
+ms.openlocfilehash: 715baeb0355ab203e890f2c87cf0751eff69e7f8
+ms.sourcegitcommit: dbbdeca5a6cd048e1bde9e820a8b8a0d6022c7a2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "43170939"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43503994"
 ---
 # <a name="plan-for-multi-factor-authentication-for-office-365-deployments"></a>Offre pour l'authentification multifacteur des déploiements Office 365
 
-[] L'authentification multifacteur (MFA) est une méthode d'authentification qui requiert l'utilisation de plusieurs méthodes de vérification, et ajoute une deuxième couche de sécurité aux connexions et transactions des utilisateurs. Elle fonctionne en exigeant au moins deux des méthodes de vérification suivantes :
+[] L'authentification multifacteur (MFA) est une méthode d'authentification qui requiert l'utilisation de plusieurs méthodes de vérification, et ajoute une deuxième couche de sécurité aux connexions et transactions des utilisateurs. Elle nécessite une étape de vérification supplémentaire avec des informations au-delà du mot de passe du compte d’utilisateur, telles que :
   
 - code d'accès généré de façon aléatoire ;
     
@@ -39,11 +39,11 @@ ms.locfileid: "43170939"
     
 - appareil biométrique. 
     
-## <a name="multi-factor-authentication-in-office-365"></a>Authentification multifacteur dans Office 365
+## <a name="mfa-in-office-365"></a>MFA dans Office 365
 
-Office 365 utilise l’authentification multifacteur pour fournir la sécurité supplémentaire et est gérée à partir du centre d’administration Microsoft 365. Office 365 propose le sous-ensemble suivant de fonctionnalités d’authentification multifacteur Azure dans le cadre de l’abonnement : 
+Office 365 utilise MFA pour une sécurité de connexion supplémentaire et peut être géré pour chaque compte d’utilisateur individuel à partir du centre d’administration Microsoft 365. Office 365 propose le sous-ensemble suivant de fonctionnalités d’authentification multifacteur Azure dans le cadre de votre abonnement : 
   
-- possibilité d'activer et d'appliquer l'authentification multifacteur pour des utilisateurs finaux ;
+- Possibilité d’activer et d’appliquer l’authentification multifacteur pour les utilisateurs finaux
     
 - utilisation d'une application mobile (en ligne, avec mot de passe à usage unique [OTP]) comme deuxième facteur d'authentification ;
     
@@ -51,21 +51,24 @@ Office 365 utilise l’authentification multifacteur pour fournir la sécurité 
     
 - utilisation d'un SMS comme deuxième facteur d'authentification ;
     
-- mots de passe d'application pour les clients non navigateurs (par exemple, le logiciel de communication Microsoft Lync 2013) ;
+- Les mots de passe d’application pour les clients qui ne sont pas des navigateurs (par exemple, le logiciel de communication Microsoft Lync 2013)
     
 - message d'accueil Microsoft par défaut lors des appels téléphonique d'authentification.
     
 Pour obtenir la liste complète des fonctionnalités inédites, voir la [comparaison des fonctionnalités de l'authentification multifacteur Azure suivant les versions](https://go.microsoft.com/fwlink/?LinkId=506927). Vous pouvez toujours obtenir l'ensemble complet des fonctionnalités en achetant le service Azure Multi-Factor Authentication. 
   
-Vous obtenez un sous-ensemble différent de fonctionnalités selon que vous disposez d'un déploiement exclusivement cloud pour Office 365 ou d'une configuration hybride avec authentification unique et services AD FS (Active Directory Federation Services). 
+Vous obtenez un sous-ensemble de fonctionnalités différent selon que vous disposez d’une identité Cloud uniquement ou hybride pour Office 365 ou de l’authentification fédérée avec Active Directory Federation Services (AD FS). 
   
-|**Où gérez-vous votre client Office 365 ?**|**Options du deuxième facteur d'authentification multifacteur**|
-|:-----|:-----|
-|Cloud uniquement  <br/> |Authentification multifacteur Azure (appel texte ou téléphone)  <br/> |
-|Configuration hybride, gérée en local  <br/> | Si vous gérez l'identité des utilisateurs localement, vous disposez des choix suivants :  <br/>  Carte à puce physique ou virtuelle (lors de l’utilisation d’AD FS)  <br/> [Authentification multifacteur Azure](https://go.microsoft.com/fwlink/p/?LinkId=526677) (module pour AD FS)  <br/>  Authentification multifacteur Azure Active Directory (Azure AD)  <br/> |
+|**Où gérer votre client Office 365 ?** | **Options du deuxième facteur de MFA**|
+
+|:-----|:-----| | Cloud uniquement  <br/> | Authentification multifacteur Azure (appel texte ou téléphone)  <br/> | | Configuration hybride, géré en local  <br/> | Si vous gérez l’identité de l’utilisateur en local, vous disposez des choix suivants :  <br/>  Carte à puce physique ou virtuelle (lors de l’utilisation d’AD FS)  <br/> [Authentification multifacteur Azure](https://go.microsoft.com/fwlink/p/?LinkId=526677) (module pour AD FS)  <br/>  Authentification multifacteur Azure Active Directory (Azure AD)  <br/> |
    
   
-L'illustration suivante montre comment les applications pour appareil Office 2013 (sous Windows) mises à jour permettent aux utilisateurs de se connecter en utilisant une authentification multifacteur. Les applications d’appareils Office 2013 prennent en charge l’authentification multifacteur via l’utilisation de la [bibliothèque d’authentification Active Directory (Adal)](https://go.microsoft.com/fwlink/p/?LinkId=526684). Azure AD héberge une page web dans via laquelle les utilisateurs peuvent se connecter. Le fournisseur d'identité peut être Azure AD ou un fournisseur d'identité fédéré comme AD FS. Les étapes d'authentification pour des utilisateurs fédérés sont les suivantes :
+L'illustration suivante montre comment les applications pour appareil Office 2013 (sous Windows) mises à jour permettent aux utilisateurs de se connecter en utilisant une authentification multifacteur. 
+
+![Modern authentication for Office 2013 device apps.](../../media/dc37645c-b899-4715-b162-d7653bd0aebd.png)
+
+Les applications d’appareils Office 2013 prennent en charge l’authentification multifacteur via l’utilisation de la [bibliothèque d’authentification Active Directory (Adal)](https://go.microsoft.com/fwlink/p/?LinkId=526684). Azure AD héberge une page web dans via laquelle les utilisateurs peuvent se connecter. Le fournisseur d'identité peut être Azure AD ou un fournisseur d'identité fédéré comme AD FS. Les étapes d'authentification pour des utilisateurs fédérés sont les suivantes :
   
 1. Azure AD redirige l'utilisateur vers la page web de connexion hébergée par le fournisseur d'identité de l'enregistrement pour le client Office 365. Le fournisseur d'identité est déterminé par le domaine spécifié dans le nom de connexion de l'utilisateur.
     
@@ -75,11 +78,8 @@ L'illustration suivante montre comment les applications pour appareil Office 201
     
 4. Azure AD renvoie un jeton web JSON (JWT) à l'application d'appareil Office, et celle-ci est authentifiée à l'aide d'un JWT auprès d'Office 365. 
     
-Cela est détaillé dans la figure suivante :
   
-![Modern authentication for Office 2013 device apps.](../../media/dc37645c-b899-4715-b162-d7653bd0aebd.png)
-  
-## <a name="software-requirements"></a>Configuration logicielle requise
+## <a name="requirements-for-office-2013-client-apps"></a>Configuration requise pour les applications clientes Office 2013
 
 Pour activer l'authentification multifacteur pour les applications clientes Office 2013, vous devez disposer des logiciels suivants (version ci-dessous ou version ultérieure), selon que vous disposez d'une [Installations de type Démarrer en un clic](#click-to-run-based-installations) ou d'une [Installations basées sur MSI](#msi-based-installations).
   
@@ -91,11 +91,13 @@ Pour déterminer si votre installation d'Office est de type Démarrer en un clic
     
 3. Pour les installations Démarrer en un clic d'Outlook 2013, l'élément **Options de mise à jour** s'affiche. Pour les installations basées sur MSI, l'élément **Options de mise à jour** ne s'affiche pas. 
     
-    ![Graphic that shows how to tell if Office 2013 install is click-to-run or MSI-based](../../media/1e75143f-9e37-4e0c-9610-43a80771571e.png)
+    ![Comment savoir si votre installation d’Office 2013 est « démarrer en un clic » ou en mode MSI](../../media/1e75143f-9e37-4e0c-9610-43a80771571e.png)
+
+SOR plus d’informations, consultez le [Forum aux questions sur l’article wiki sur l’authentification moderne](https://go.microsoft.com/fwlink/p/?LinkId=530064).
   
 ### <a name="click-to-run-based-installations"></a>Installations de type Démarrer en un clic
 
-Pour des installations de type Démarrer en un clic, vous devez disposer des logiciels suivants, dans la version indiquée ou dans une version ultérieure. Si votre version du fichier n'est pas égale ou supérieure à la version indiquée, mettez-la à jour en suivant les étapes ci-dessous.
+Pour les installations « démarrer en un clic », vous devez disposer des logiciels suivants, dont la version de fichier est indiquée ci-dessous ou une version de fichier ultérieure. Si votre version du fichier n'est pas égale ou supérieure à la version indiquée, mettez-la à jour en suivant les étapes ci-dessous.
   
 |**Nom de fichier**|**Chemin d'installation sur votre ordinateur**|**Version de fichier**|
 |:-----|:-----|:-----|
@@ -121,30 +123,24 @@ Pour des installations basées sur MSI, vous devez disposer des logiciels suivan
    
 ## <a name="enable-mfa"></a>Activer l’authentification multifacteur
 
-Pour activer l'authentification multifacteur, vous devez procéder comme suit :
+Pour activer l’authentification multifacteur pour votre abonnement Office 365, procédez comme suit :
   
-1. Activez les clients pour l'authentification moderne :
+1. Si nécessaire, [activez l’authentification moderne pour Office 2013 sur les appareils Windows](enable-modern-authentication.md).
     
-  - [Activez l'authentification moderne pour Office 2013 sur les appareils Windows](enable-modern-authentication.md) . 
+2. Pour l’authentification fédérée, configurez l’authentification multifacteur Azure avec votre service d’annuaire tiers.
     
-  - Configurez l’authentification multifacteur Azure avec des services d’annuaire tiers.
+    Consultez la rubrique [scénarios avancés avec Azure Multi-Factor Authentication et des solutions VPN tierces](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfaserver-nps-vpn) pour obtenir des informations sur des fournisseurs d’identité spécifiques acceptés par ce programme. 
     
-    Consultez les [scénarios avancés avec Azure Multi-Factor Authentication et les solutions VPN tierces](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfaserver-nps-vpn) pour obtenir des informations sur des fournisseurs d’identité spécifiques acceptés par ce programme. 
+3. [Configurez l’authentification multifacteur pour Office 365](set-up-multi-factor-authentication.md).
     
-2. [Configurer l'authentification multifacteur pour les utilisateurs d'Office 365](set-up-multi-factor-authentication.md) .
-    
-3. Indiquez aux utilisateurs comment se connecter à l'aide de l'authentification multifacteur : [Se connecter à Office 365 avec la vérification en deux étapes](https://support.office.com/article/2b856342-170a-438e-9a4f-3c092394d3cb.aspx).
+4. Indiquez à vos utilisateurs comment [configurer l’authentification multifacteur pour leur compte d’utilisateur Office 365](https://support.office.com/article/set-up-2-step-verification-for-office-365-ace1d096-61e5-449b-a875-58eb3d74de14). Une fois qu’ils ont configuré leur méthode d’authentification secondaire, leurs futures connexions nécessiteront une authentification multifacteur.
     
 > [!IMPORTANT]
-> Si vous avez activé les utilisateurs pour l’authentification multifacteur Azure et que les appareils exécutant Office 2013 ne sont pas activés pour l’authentification moderne, ils devront utiliser AppPasswords sur ces appareils. Pour plus d'informations sur les mots de passe d'application ainsi que quand, où et comment les utiliser, voir ici : [Mots de passe d'application avec l'authentification multifacteur Azure (Azure MFA)](https://go.microsoft.com/fwlink/p/?LinkId=528178). 
+> Si vous avez activé vos utilisateurs pour l’authentification multifacteur Azure et qu’ils ont des appareils exécutant Office 2013 qui ne sont pas activés pour l’authentification moderne, ils doivent utiliser des mots de passe d’application. Pour plus d’informations sur les mots de passe d’application et sur le mode d’utilisation des mots de passe, consultez les [mots de passe d’application avec l’authentification Azure Multi_Factor](https://go.microsoft.com/fwlink/p/?LinkId=528178). 
   
-## <a name="faq"></a>FAQ
-
-[Article wiki du FAQ sur l'authentification moderne dans Office 2013](https://go.microsoft.com/fwlink/p/?LinkId=530064)
+## <a name="known-issues"></a>Problèmes connus
   
- **Known issues:**
-  
-[Authentification moderne Office 2013 et Office 365 ProPlus : Informations à connaître avant l'intégration](https://social.technet.microsoft.com/wiki/contents/articles/30214.office-2013-and-office-365-proplus-modern-authentication-things-to-know-before-onboarding.aspx)
+[Office 2013 et Office 365 ProPlus authentification moderne : éléments à savoir avant l’intégration](https://social.technet.microsoft.com/wiki/contents/articles/30214.office-2013-and-office-365-proplus-modern-authentication-things-to-know-before-onboarding.aspx)
   
  **Résolution des problèmes d'authentification multifacteur Azure :**
   

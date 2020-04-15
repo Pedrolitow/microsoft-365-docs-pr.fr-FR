@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: f04d2e587a55a680a65425b34a88896466e09be3
-ms.sourcegitcommit: 9ca28ae8f7804eb488cf76ca4b09fe88787e0a49
+ms.openlocfilehash: c4facaac82ff8486c0c3a846e4f577c7888a3161
+ms.sourcegitcommit: dbbdeca5a6cd048e1bde9e820a8b8a0d6022c7a2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43113458"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43503982"
 ---
 # <a name="microsoft-threat-protection-preview-features"></a>Fonctionnalités d’aperçu de la protection contre les menaces Microsoft
 
@@ -50,12 +50,13 @@ Activez le paramètre aperçu de l’expérience pour commencer à utiliser les 
 
 3. Sélectionnez **aperçu des fonctionnalités** > **activer les fonctionnalités d’aperçu**. 
 
-3. Cliquez sur **Enregistrer**.
+3. Sélectionnez **Enregistrer**.
 
 Vous saurez que les fonctionnalités d’aperçu sont activées lorsque vous voyez que la case à cocher **activer l’aperçu des fonctionnalités** est activée. 
 
-
-
 ## <a name="preview-features"></a>Fonctionnalités de préversion
-Cette section est mise à jour avec la liste des fonctionnalités qui sont en aperçu dès qu’elles sont disponibles. 
+Les fonctionnalités et améliorations suivantes sont actuellement disponibles lors de l’aperçu :
 
+- **[Détections personnalisées](custom-detections-overview.md)** : utilisez des requêtes de chasse avancées pour créer des règles qui recherchent automatiquement des violations d’activité et d’autres éléments d’intérêt à intervalles réguliers. Les correspondances avec les requêtes déclenchent des alertes et les actions de réponse spécifiées.
+
+- **[Tables d’identité et d’application](advanced-hunting-schema-tables.md)** : obtenez une visibilité sur les événements d’authentification, les requêtes Active Directory et l’activité liée aux applications avec les tables [IdentityLogonEvents](advanced-hunting-identitylogonevents-table.md), [IdentityQueryEvents](advanced-hunting-identityqueryevents-table.md)et [AppFileEvents](advanced-hunting-appfileevents-table.md) dans le schéma de chasse avancé.
