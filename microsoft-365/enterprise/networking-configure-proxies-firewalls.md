@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 09/23/2019
+ms.date: 04/13/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Analysez et configurez des navigateurs web et des équipements de périmètre pour le trafic de contournement vers des emplacements Office 365 approuvés.
-ms.openlocfilehash: 71f62c5e245962f3514c49477e3cdeda17cb6397
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: b04e16b249dccf8f2461189b8b47abdd252a75d8
+ms.sourcegitcommit: dbbdeca5a6cd048e1bde9e820a8b8a0d6022c7a2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42066684"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43504078"
 ---
 # <a name="step-4-configure-traffic-bypass"></a>Étape 4 : configurer le trafic de contournement
 
@@ -54,6 +54,13 @@ Les équipements de périmètre incluent les pare-feux, le SSL Break and Inspect
 
 Vous ne faites que contourner le traitement de sécurité réseau et de proxy normal pour le trafic vers les points de terminaison des catégories Optimiser et Autoriser de Microsoft 365. Tout autre trafic Internet général sera en proxy et soumis au traitement de sécurité de votre réseau existant.
 
+## <a name="optimizing-traffic-for-remote-workers-that-use-vpn-connections"></a>Optimisation du trafic pour les travailleurs à distance utilisant des connexions VPN
+
+Les connexions de réseau privé virtuel (VPN) sont généralement utilisées par les travailleurs à distance pour accéder aux ressources sur l’intranet d’une organisation. Une connexion VPN classique achemine TOUT le trafic, y compris le trafic Internet, vers l’intranet de l’organisation. Le trafic Internet est routé vers le réseau de périmètre de l’organisation et les dispositifs de traitement des paquets. Ce trafic est soumis à des retards de déplacement et de traitement qui peuvent réduire considérablement les performances et influer sur la productivité de vos travailleurs à distance. 
+
+La tunnellisation fractionnée est la capacité d’une connexion VPN à acheminer le trafic spécifié sur Internet plutôt que de l’envoyer à votre intranet via la connexion VPN. Afin de garantir aux travailleurs à distance des performances optimales des services Microsoft 365 critiques tels que Teams, SharePoint Online et Exchange Online, configurez vos connexions VPN par tunnellisation fractionnée pour envoyer le trafic vers les points de terminaison Office 365 de catégorie Optimiser directement via Internet. 
+
+Pour plus d’informations, voir [Optimiser la connectivité d’Office 365 pour les utilisateurs à distance à l’aide de la tunnellisation fragmentée de VPN](https://docs.microsoft.com/office365/enterprise/office-365-vpn-split-tunnel).
 
 Comme point de vérification intermédiaire, vous pouvez consulter les [critères de sortie](networking-exit-criteria.md#crit-networking-step4) pour cette étape.
 

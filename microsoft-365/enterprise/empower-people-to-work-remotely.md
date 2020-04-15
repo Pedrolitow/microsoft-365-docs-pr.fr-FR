@@ -16,12 +16,12 @@ ms.collection:
 - remotework
 ms.custom: ''
 description: Configurez l’infrastructure et la sécurité qui permettent à vos employés de travailler à distance de n’importe où et à tout moment.
-ms.openlocfilehash: 3932c293ca6be8ba4397b27591acfc3f7d024e1a
-ms.sourcegitcommit: 144c0f3c2c6112bffc5a9b04392a38123a979ebc
+ms.openlocfilehash: 8bbbe4853805c506ee511ecdef684f407166aca0
+ms.sourcegitcommit: dbbdeca5a6cd048e1bde9e820a8b8a0d6022c7a2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/30/2020
-ms.locfileid: "43053106"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43504122"
 ---
 # <a name="empower-remote-workers"></a>Confiez des responsabilités aux travailleurs à distance
 
@@ -99,10 +99,10 @@ Voici la configuration obtenue avec les éléments d’identité mis en surbrill
 
 ![Éléments d’identité pour les travailleurs à distance](../media/empower-people-to-work-remotely/remote-workers-id-phase.png)
  
-Pour la [Phase 3 : Windows 10 Entreprise](windows10-infrastructure.md), déployez :
+Pour [Phase 3 : Windows 10 Entreprise](windows10-infrastructure.md) :
 
-- L’infrastructure pour déployer de nouveaux appareils avec Windows 10 Entreprise et effectuer la mise à niveau de vos appareils Windows 7 ou Windows 8.1 vers Windows 10 Entreprise
-- L’activation des fonctionnalités de sécurité complètes pour l’identité, les menaces et la protection des informations
+- Déployez l’infrastructure pour déployer de nouveaux appareils avec Windows 10 Entreprise et effectuer la mise à niveau de vos appareils Windows 7 ou Windows 8.1 vers Windows 10 Entreprise
+- Activez les fonctionnalités de sécurité complètes pour l’identité, les menaces et la protection des informations
 
 Voici la configuration obtenue avec les appareils Windows 10 Entreprise.
 
@@ -206,6 +206,12 @@ Former à nouveau vos utilisateurs, le cas échéant.
 ### <a name="user-adoption-results"></a>Résultats de l’adoption par les utilisateurs
 
 Vos travailleurs à distance peuvent utiliser leur appareil Windows 10 Entreprise ou autre appareil et Office 365 ProPlus pour accéder aux ressources et services partagés dans le Cloud Microsoft 365 Entreprise et collaborer dessus dans un environnement sécurisé, et ils peuvent participer à des réunions, créer et collaborer en temps réel.
+
+## <a name="additional-microsoft-features-to-support-remote-workers"></a>Autres fonctionnalités de Microsoft pour la prise en charge des travailleurs à distance
+
+Vous pouvez utiliser des [connexions VPN Azure point à site](https://docs.microsoft.com/azure/vpn-gateway/point-to-site-about) pour connecter des travailleurs à distance à des serveurs exécutés dans un réseau virtuel Azure.
+
+Vous pouvez utiliser [Windows Virtual Desktop](https://docs.microsoft.com/azure/virtual-desktop/overview) pour la virtualisation de bureau et d’application hébergée par Azure.
 
 ## <a name="see-also"></a>Voir aussi
 
