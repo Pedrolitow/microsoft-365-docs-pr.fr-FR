@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: 53390468-eec6-45cb-b6cd-7511f9c909e4
 description: Utilisez l’outil recherche de contenu dans le centre de conformité dans Office 365 ou Microsoft 365 pour rechercher du contenu dans les boîtes aux lettres, les sites SharePoint Online, les comptes OneDrive, Microsoft Teams, les groupes Office 365, les groupes Yammer et les conversations Skype Entreprise. Vous pouvez utiliser des requêtes de recherche par mot clé et des conditions de recherche pour affiner les résultats de la recherche. Vous pouvez ensuite obtenir un aperçu et exporter les résultats de la recherche. La recherche de contenu est également un outil efficace pour rechercher du contenu lié à une demande d’objet de données RGPD.
-ms.openlocfilehash: d9fdf5359538209d0793211632979fae1b332d13
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 0f37daee28afabb6a63be316bd830f9b3992a044
+ms.sourcegitcommit: 09c3e2f3129c5e43cd8420cccd0676ff3a29a355
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42634442"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "43521500"
 ---
 # <a name="content-search-in-office-365"></a>Recherche de contenu dans Office 365
 
@@ -237,7 +237,7 @@ Gardez les points suivants à l’esprit lorsque vous utilisez la liste de mots 
 
 - Pour recueillir la liste des URL des sites OneDrive au sein de votre organisation, voir [créer une liste de tous les emplacements OneDrive au sein de votre organisation](https://support.office.com/article/8e200cb2-c768-49cb-88ec-53493e8ad80a). Ce script dans cet article crée un fichier texte qui contient une liste de tous les sites OneDrive. Pour exécuter ce script, vous devez installer et utiliser SharePoint Online Management Shell. N’oubliez pas d’ajouter l’URL du domaine MySite de votre organisation à chaque site OneDrive dans lequel vous souhaitez effectuer une recherche. Il s’agit du domaine où se trouve tout le contenu de votre OneDrive (par exemple,`https://contoso-my.sharepoint.com`). Voici un exemple d’URL pour le site d’un utilisateur OneDrive : `https://contoso-my.sharepoint.com/personal/sarad_contoso_onmicrosoft.com`.
     
-    Dans le cas rare où le nom d’utilisateur principal (UPN) d’une personne est modifié, l’URL de son emplacement OneDrive est modifiée pour incorporer le nouveau nom d’utilisateur principal (UPN). Dans ce cas, vous devez modifier une recherche de contenu en ajoutant la nouvelle URL OneDrive de l’utilisateur et en supprimant l’ancienne.
+    Dans le cas rare où le nom d’utilisateur principal (UPN) d’une personne est modifié, l’URL de son emplacement OneDrive est modifiée pour incorporer le nouveau nom d’utilisateur principal (UPN). Dans ce cas, vous devez modifier une recherche de contenu en ajoutant la nouvelle URL OneDrive de l’utilisateur et en supprimant l’ancienne. Pour plus d’informations, voir [Comment les modifications du nom d’utilisateur principal affectent l’URL OneDrive](https://docs.microsoft.com/onedrive/upn-changes).
   
 ### <a name="searching-microsoft-teams-and-office-365-groups"></a>Recherche Microsoft Teams et Groupes Office 365
 
