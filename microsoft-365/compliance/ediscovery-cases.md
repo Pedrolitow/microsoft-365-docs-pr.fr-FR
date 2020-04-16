@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 8dd335ab-29d0-41c3-8dd8-9f7c7481e60c
 description: Utilisez le centre de sécurité & conformité pour créer et gérer des cas eDiscovery dans votre organisation. Vous pouvez affecter des membres au cas, placer des emplacements de contenu en conservation, exécuter des recherches de contenu associées à l’incident et exporter les résultats de la recherche. Vous pouvez également préparer des données de cas pour une analyse plus approfondie dans Office 365 Advanced eDiscovery.
-ms.openlocfilehash: 471dd99d6e21afbb4db1a05cd5609cda9e97346c
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: f6484fb43b1d117856ba78bb918289b28776b021
+ms.sourcegitcommit: 09c3e2f3129c5e43cd8420cccd0676ff3a29a355
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42894963"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "43521520"
 ---
 # <a name="manage-ediscovery-cases-in-the-security--compliance-center"></a>Gérer des cas de découverte électronique dans le Centre de conformité et sécurité
 
@@ -194,7 +194,7 @@ Pour créer une suspension pour un cas eDiscovery :
     Consultez la section [plus d’informations](#more-information) pour obtenir des conseils sur la mise en attente de Microsoft Teams, de groupes Yammer et de groupes Office 365. 
     
     > [!NOTE]
-    > Dans le cas rare où le nom d’utilisateur principal (UPN) d’une personne est modifié, l’URL de son compte OneDrive est également modifiée de façon à intégrer le nouvel UPN. Dans ce cas, vous devez modifier la conservation en ajoutant la nouvelle URL OneDrive de l’utilisateur et en supprimant l’ancienne. 
+    > Dans le cas rare où le nom d’utilisateur principal (UPN) d’une personne est modifié, l’URL de son compte OneDrive est également modifiée de façon à intégrer le nouvel UPN. Dans ce cas, vous devez modifier la conservation en ajoutant la nouvelle URL OneDrive de l’utilisateur et en supprimant l’ancienne. Pour plus d’informations, consultez la rubrique relative à [l’impact des modifications UPN sur l’URL OneDrive](https://docs.microsoft.com/onedrive/upn-changes).
   
    c. **Dossiers publics Exchange.** Déplacez le ![contrôle](../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png) bascule bascule vers la position **tout** pour mettre en attente tous les dossiers publics de votre organisation Exchange Online. Vous ne pouvez pas choisir des dossiers publics spécifiques à mettre en attente. Laissez le commutateur Toggle défini sur **None** si vous ne souhaitez pas mettre de conservation sur les dossiers publics.
     
@@ -270,7 +270,7 @@ Une fois le cas de découverte électronique créé et les dépositaires associ�
     
     ![Emplacements, en attente](../media/d56398aa-0b20-4500-8e26-494eab92a99f.png)
   
-    - **Tous les emplacements** : sélectionnez cette option pour rechercher tous les emplacements de contenu de votre organisation. Lorsque vous sélectionnez cette option, vous pouvez choisir d’effectuer une recherche dans toutes les boîtes aux lettres Exchange (ce qui inclut les boîtes aux lettres de tous les groupes Microsoft Teams, Yammer Groups et Office 365), tous les sites SharePoint et OneDrive entreprise (qui incluent les sites de tous les sites Microsoft Teams, groupes Yammer et groupes Office 365) et tous les dossiers publics.
+    - **Tous les emplacements** : sélectionnez cette option pour rechercher tous les emplacements de contenu de votre organisation. Lorsque vous sélectionnez cette option, vous pouvez choisir d’effectuer une recherche dans toutes les boîtes aux lettres Exchange (qui inclut les boîtes aux lettres de tous les groupes Microsoft Teams, Yammer Groups et Office 365), tous les sites SharePoint et OneDrive entreprise (qui incluent les sites de tous les groupes Microsoft Teams, Yammer Groups et Office 365), ainsi que tous les dossiers publics.
     
     - **Tous les emplacements en attente.** Sélectionnez cette option pour rechercher tous les emplacements de contenu qui ont été mis en attente dans le cas. Si le cas contient plusieurs suspensions, les emplacements de contenu de toutes les suspensions sont recherchés lorsque vous sélectionnez cette option. En outre, si un emplacement de contenu a été placé sur une conservation basée sur une requête, seuls les éléments en attente feront l’objet d’une recherche lors de l’exécution de la recherche de contenu que vous créez au cours de cette étape. Par exemple, si un utilisateur a été placé sur une conservation de casse basée sur une requête qui conserve les éléments qui ont été envoyés ou créés avant une date spécifique, seuls ces éléments seraient recherchés à l’aide des critères de recherche de la recherche de contenu. Pour ce faire, vous connectez la requête de suspension de la casse et la requête de recherche de contenu par un opérateur **and** . Pour plus d’informations sur la recherche de contenu de cas, reportez-vous à la section [plus d’informations](#more-information) à la fin de cet article. 
     
@@ -367,7 +367,7 @@ En guise d’alternative à l’exportation des résultats d’une recherche de 
     Le flux de travail d’exportation des résultats à partir de plusieurs recherches de contenu associées à un cas revient à exporter les résultats de la recherche pour une seule recherche. Pour obtenir des instructions détaillées, voir [Export content Search Results](export-search-results.md).
     
     > [!NOTE]
-    > Lorsque vous exportez des résultats de recherche à partir de plusieurs recherches associées à un cas, vous avez également la possibilité d’activer la déduplication de sorte qu’une seule copie d’un message électronique soit exportée même si plusieurs instances du même message ont pu être trouvées dans le boîtes aux lettres ayant fait l’objet d’une recherche dans une ou plusieurs recherches. Pour plus d’informations sur la déduplication et sur l’identification des éléments dupliqués, voir [déduplication dans les résultats de recherche de découverte électronique](de-duplication-in-ediscovery-search-results.md). 
+    > Lorsque vous exportez des résultats de recherche à partir de plusieurs recherches associées à un cas, vous avez également la possibilité d’activer la déduplication de sorte qu’une seule copie d’un message électronique soit exportée même si plusieurs instances du même message ont pu être trouvées dans les boîtes aux lettres qui ont été recherchées dans une ou plusieurs des recherches. Pour plus d’informations sur la déduplication et sur l’identification des éléments dupliqués, voir [déduplication dans les résultats de recherche de découverte électronique](de-duplication-in-ediscovery-search-results.md). 
   
 8. Une fois l’exportation démarrée, cliquez sur l’onglet **Exporter** pour afficher la liste des travaux d’exportation pour ce cas. 
     

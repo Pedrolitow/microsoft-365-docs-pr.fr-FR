@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: 22c602bcc49ce2a81e511d79f4de23f7a60e657f
-ms.sourcegitcommit: 2c4dfce178695a99bbdf1468f072cc1f94f6915b
+ms.openlocfilehash: d25ecb72ebdd9415c6745910f9e3fb04d6f078dc
+ms.sourcegitcommit: d767c288ae34431fb046f4cfe36cec485881385f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/30/2020
-ms.locfileid: "43058904"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "43516910"
 ---
 # <a name="overview-of-the-microsoft-365-security-center"></a>Présentation du Centre de sécurité Microsoft 365
 
@@ -60,9 +60,10 @@ Explorez ces rubriques relatives à la surveillance, à l’examen et à la rép
 - Connecter les points sur les alertes par le biais d' [incidents](incident-queue.md)
 - Correction automatique des menaces à l’aide de l’analyse [et de la correction automatisées](mtp-autoir.md)
 - Passer en revue et améliorer votre position de sécurité de façon holistique avec le score de sécurité [Microsoft](microsoft-secure-score.md)
+- Affichage des [appareils](device-profile.md) sur votre réseau
 - [Signaler](monitoring-and-reporting.md) l’état de vos identités, données, périphériques, applications et infrastructure
 - [Recherche proactive de menaces](advanced-hunting-overview.md) pour les tentatives d’intrusion et l’activité de violation affectant votre courrier, vos données, vos périphériques et vos comptes
 - [Comprendre les dernières campagnes](latest-attack-campaigns.md) et techniques d’attaque avec l’analyse des menaces
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Sujets associés
 - [Portails de sécurité Microsoft](portals.md)

@@ -1,16 +1,16 @@
 ---
 title: Bureau géré Microsoft est-il fait pour vous ?
 description: ''
-keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
+keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
-ms.openlocfilehash: 0d144e05091eafa2a6314c65869642b4b7ecd233
-ms.sourcegitcommit: 053d42480d8aa3792ecb0027ddd53d383a029474
+ms.openlocfilehash: e8729e8533fd2f01e893d805199027ae166586f1
+ms.sourcegitcommit: d767c288ae34431fb046f4cfe36cec485881385f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "43142682"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "43516808"
 ---
 # <a name="what-is-microsoft-managed-desktop"></a>Qu’est-ce que le Bureau géré Microsoft ?
 
@@ -65,7 +65,7 @@ Nous surveillons également l'intégrité des appareils et vous fournissons des 
 
 
 ## <a name="need-more-details"></a>Vous avez besoin d’informations complémentaires ?
-Pour en savoir plus sur la valeur de Bureau géré Microsoft, y compris les témoignages de clients, consultez la rubrique [Bureau géré Microsoft](https://aka.ms/mmd). La [feuille de route](https://aka.ms/AA6jiam) et un [résumé d'une page](https://aka.ms/AA6ob3h) téléchargeable sont d'excellents points de départ pour en savoir plus. Vous pouvez trouver les dernières informations sur le [blog](https://aka.ms/AA6l2dd) Bureau géré Microsoft.
+Pour en savoir plus sur la valeur de Bureau géré Microsoft, y compris les témoignages de clients, consultez la rubrique [Bureau géré Microsoft](https://aka.ms/mmd). La feuille de [route](https://aka.ms/AA6jiam), une [étude de cas d’impact économique total de Forrester](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/intro/downloads/forrester-tei-study.pdf)et un résumé téléchargeable sur une seule [page](https://aka.ms/AA6ob3h)sont des emplacements très intéressants. Vous pouvez trouver les dernières informations sur le [blog](https://aka.ms/AA6l2dd) Bureau géré Microsoft.
 
 Si Bureau géré Microsoft semble convenir à votre organisation, vous pouvez consulter des documents supplémentaires qui expliquent plus en détail le service, la manière de préparer votre organisation à l'adhésion, la manière de démarrer le service et les opérations en cours par la suite, y compris la manière dont vous et vos utilisateurs finaux pouvez facilement obtenir de l'aide si nécessaire. Dès que vous êtes prêt à embarquer, commencez par contacter votre [équipe de compte locale](https://pages.email.office.com/contactmmd/).
 

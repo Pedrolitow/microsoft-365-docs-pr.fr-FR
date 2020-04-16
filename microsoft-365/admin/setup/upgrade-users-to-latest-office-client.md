@@ -2,11 +2,10 @@
 title: Mettre à niveau les utilisateurs Office 365 pour les entreprises vers le dernier client Office
 f1.keywords:
 - NOCSH
-ms.author: janellem
-author: janellem
-manager: eliree
+ms.author: kwekuako
+author: kwekuako
+manager: scotv
 audience: Admin
-ms.topic: troubleshooting
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -20,12 +19,12 @@ ms.custom:
 - fwlink 824861; CampaignID O365_Comm_SR_UpgradeOffice
 ms.assetid: f6b00895-b5fd-4af6-a656-b7788ea20cbb
 description: Découvrez comment mettre à niveau vos utilisateurs vers le client Office le plus récent.
-ms.openlocfilehash: 3d9c92a5362889db69926552848ba4c71d7c4c42
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 18200184ed8d7eb15ee4eef3903ac9d8e08b9854
+ms.sourcegitcommit: 09c3e2f3129c5e43cd8420cccd0676ff3a29a355
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42360405"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "43521458"
 ---
 # <a name="upgrade-your-office-365-for-business-users-to-the-latest-office-client"></a>Mettre à niveau les utilisateurs Office 365 pour les entreprises vers le dernier client Office
 
@@ -47,7 +46,7 @@ Pour plus d’informations, voir la feuille [de route de fin d’assistance pour
 
  Si vous n’êtes pas un administrateur et que vous disposez d’un produit [Office pour la maison](https://support.office.com/article/28cbc8cf-1332-4f04-9123-9b660abb629e.aspx#BKMK_OfficePlans) , consultez [la rubrique How do I upgrade Office](https://support.office.com/article/ee68f6cf-422f-464a-82ec-385f65391350.aspx) pour plus d’informations sur la mise à niveau de votre ancienne version d’Office.
 
-## <a name="getting-ready-to-upgrade"></a>Préparation à la mise à niveau
+## <a name="get-ready-to-upgrade"></a>Préparer la mise à niveau
 
 En tant qu’administrateur, vous contrôlez la version des personnes Office de votre organisation pouvant être installées. Nous vous recommandons vivement d’aider les utilisateurs de votre organisation qui exécutent des versions antérieures d’Office, comme Office 2010, Office 2013 ou Office 2016 à effectuer une mise à niveau vers la dernière version, afin de tirer parti de ses améliorations en matière de sécurité et de productivité.
 
@@ -90,7 +89,7 @@ Basculer vers un abonnement qui inclut Office. Voir [basculer vers une autre off
 
  - Acheter un seul achat d’Office. Voir [Office famille &amp; ](https://products.office.com/home-and-business) ou [Office Professionnel](https://products.office.com/professional)
 
-     OU
+     OR
 
  - Acheter plusieurs copies d’Office par le biais d’une licence en volume. Consultez la rubrique [comparer les suites disponibles via le gestionnaire de licences en volume](https://products.office.com/business/microsoft-office-volume-licensing-suites-comparison).
 

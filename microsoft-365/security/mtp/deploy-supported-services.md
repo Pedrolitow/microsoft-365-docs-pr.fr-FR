@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: c2798238f0e3cb10edab7f98bf096474a80fa006
-ms.sourcegitcommit: fe4beef350ef9f39b1098755cff46fa2b8e7dc4d
+ms.openlocfilehash: 1441790bfa0c587c4abceb87eb1e4daae6e4d157
+ms.sourcegitcommit: 09c3e2f3129c5e43cd8420cccd0676ff3a29a355
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2020
-ms.locfileid: "42857474"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "43521479"
 ---
 # <a name="deploy-supported-services"></a>Déployer les services pris en charge
 
@@ -42,8 +42,8 @@ Une licence de sécurité Microsoft 365 E5, E5 Security, a5 ou a5 ou une combina
 | ------ | ------ |
 | Microsoft Defender - PACM | Suite de protection de point de terminaison basée sur des capteurs de comportement puissants, sur l’analyse de Cloud et sur l’intelligence des menaces |
 | Office 365 – Protection avancée contre les menaces | Protection avancée de vos applications et données dans Office 365, y compris la messagerie et d’autres outils de collaboration |
-| Azure ATP | Protection contre les menaces avancées, les identités compromises et les Insiders malveillants à l’aide de signaux Active Directory corrélés |
-| Microsoft Cloud App Security | Identifie et combat Cyber dans vos services Cloud tiers et Microsoft |
+| Azure ATP | Défense contre les menaces avancées, les identités compromises et les Insiders malveillants à l’aide de signaux Active Directory corrélés |
+| Microsoft Cloud App Security | Identifier et combattre Cyber dans vos services Cloud tiers et Microsoft |
 
 ## <a name="deployed-services-and-functionality"></a>Fonctionnalités et services déployés
 La protection contre les menaces Microsoft offre une meilleure visibilité, corrélation et correction lorsque vous déployez des services plus pris en charge.
@@ -64,7 +64,7 @@ Le tableau ci-dessous répertorie la façon dont chaque service pris en charge f
 | Microsoft Defender - PACM | -États de point de terminaison et événements bruts<br />-Détections de point de terminaison et alertes, y compris antivirus, EDR, réduction de surface d’attaque<br />-Infos sur les fichiers et les autres entités observées sur les points de terminaison | Points de terminaison |
 | Office 365 – Protection avancée contre les menaces | -États de messagerie et de boîte aux lettres et événements bruts<br />-Détections de messages électroniques, de pièces jointes et de liens | -Boîtes aux lettres<br />-Comptes Office 365 |
 | Azure ATP | -Signaux Active Directory, y compris les événements d’authentification<br />-Détections comportementales liées à l’identité | Identités |
-| Microsoft Cloud App Security | -Détection d’applications Cloud & services insanctionnées (clichés instantanés)<br />-Exposition des données aux applications Cloud<br />-Applications Cloud associées aux activités de menace | Applications cloud |
+| Microsoft Cloud App Security | -Détection d’applications et de services Cloud insanctionnés (cliché instantané)<br />-Exposition des données aux applications Cloud<br />-Activité de menace associée aux applications Cloud | Applications cloud |
 
 ## <a name="deploy-the-services"></a>Déployer les services
 Le déploiement de chaque service nécessite généralement un approvisionnement de votre client et une configuration initiale. Consultez le tableau suivant pour comprendre la façon dont chacun de ces services est déployé.
