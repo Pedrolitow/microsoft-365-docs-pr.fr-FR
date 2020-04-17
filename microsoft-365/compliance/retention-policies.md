@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Une stratégie de rétention vous permet de décider de façon proactive de conserver du contenu, de le supprimer (ou les deux), de conserver du contenu, puis de le supprimer ; d’appliquer une stratégie unique à l’ensemble de l’organisation ou à quelques emplacements ou utilisateurs ; et d’appliquer une stratégie à tout le contenu ou au contenu remplissant certaines conditions.
-ms.openlocfilehash: d06ad19ab247384f800b3b38c561ad8eb33d4066
-ms.sourcegitcommit: 9cea48e1b26e0465c00f8d053080cba1143970c2
+ms.openlocfilehash: df2e89e26de2baab21cb334c1852cb261e1b8c98
+ms.sourcegitcommit: 09c3e2f3129c5e43cd8420cccd0676ff3a29a355
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "43237641"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "43521510"
 ---
 # <a name="overview-of-retention-policies"></a>Vue d’ensemble des stratégies de rétention
 
@@ -95,9 +95,9 @@ Lorsque la stratégie de rétention doit conserver et supprimer :
     > [!NOTE]
     > Pour éviter toute perte de données par inadvertance, le contenu n’est jamais automatiquement supprimé de la bibliothèque de conservation et de préservation, mais il est déplacé vers la corbeille second niveau. Là, la période de grâce de 93 jours permet aux administrateurs de récupérer ce contenu, le cas échéant.
     
-2. **Si le contenu n’est ni modifié ni supprimé** pendant la période de rétention, il est déplacé vers la Corbeille premier niveau à la fin de la période de rétention. Si un utilisateur supprime le contenu à partir de là ou vide cette Corbeille (action également nommée « purge »), le document est déplacé vers la Corbeille second niveau. La période de rétention de 93 jours concerne tant la corbeille premier niveau que la corbeille second niveau. À la fin des 93 jours, le document est définitivement supprimé de l’emplacement en question (corbeille premier niveau ou second niveau). La Corbeille n’est pas indexée et n’est donc pas disponible pour les recherches. Par conséquent, une recherche eDiscovery ne peut pas trouver de contenu de la Corbeille sur lequel placer une conservation.
+2. **Si le contenu n’est ni modifié ni supprimé** pendant la période de rétention, il est déplacé vers la Corbeille premier niveau à la fin de la période de rétention. Si un utilisateur supprime le contenu à partir de là ou vide cette Corbeille (action également nommée « purge »), le document est déplacé vers la Corbeille second niveau. La période de rétention de 93 jours concerne tant la corbeille premier niveau que la corbeille second niveau. À la fin des 93 jours, le document est définitivement supprimé de l’emplacement en question (corbeille premier niveau ou second niveau). La Corbeille n’est pas indexée et n’est donc pas disponible pour les recherches. Par conséquent, une recherche eDiscovery ne peut pas trouver de contenu de la Corbeille auquel appliquer une conservation.
 
-2. **Si le contenu n’est ni modifié ni supprimé** pendant la période de rétention : il est déplacé vers la Corbeille premier niveau à la fin de la période de rétention. Si un utilisateur supprime le contenu à partir de là ou vide cette corbeille (action également nommée « purge »), le document est déplacé vers la corbeille second niveau. La période de rétention de 93 jours concerne tant la corbeille premier niveau que la corbeille second niveau. À la fin des 93 jours, le document est définitivement supprimé de l’emplacement en question (corbeille premier niveau ou second niveau). La Corbeille n’est pas indexée et n’est donc pas disponible pour les recherches. Par conséquent, une recherche eDiscovery ne peut pas trouver de contenu de la Corbeille sur lequel placer une conservation. 
+2. **Si le contenu n’est ni modifié ni supprimé** pendant la période de rétention : il est déplacé vers la Corbeille premier niveau à la fin de la période de rétention. Si un utilisateur supprime le contenu à partir de là ou vide cette corbeille (action également nommée « purge »), le document est déplacé vers la corbeille second niveau. La période de rétention de 93 jours concerne tant la corbeille premier niveau que la corbeille second niveau. À la fin des 93 jours, le document est définitivement supprimé de l’emplacement en question (corbeille premier niveau ou second niveau). La Corbeille n’est pas indexée et n’est donc pas disponible pour les recherches. Par conséquent, une recherche eDiscovery ne peut pas trouver de contenu de la Corbeille auquel appliquer une conservation. 
 
 Lorsque la stratégie de rétention consiste à conserver uniquement ou à supprimer uniquement, les chemins d'accès au contenu sont des variantes de rétention et de suppression :
 
@@ -111,7 +111,7 @@ Lorsque la stratégie de rétention consiste à conserver uniquement ou à suppr
 
 1. **Si le contenu est supprimé** pendant la période de rétention : le document est déplacé vers la corbeille premier niveau. Si un utilisateur supprime le contenu à partir de là ou vide cette corbeille, le document est déplacé vers la corbeille second niveau. La période de rétention de 93 jours concerne tant la corbeille premier niveau que la corbeille second niveau. À la fin des 93 jours, le document est définitivement supprimé de l’emplacement en question (corbeille premier niveau ou second niveau). Si le contenu est modifié pendant la période de rétention, il suit le même chemin de suppression après l’expiration du contenu.
 
-2. **Si le contenu n’est pas supprimé** pendant la période de rétention : à la fin de la période de rétention, il est déplacé vers la corbeille premier niveau. Si le contenu est supprimé pendant la période de rétention, le document est immédiatement déplacé vers la corbeille premier niveau. Si un utilisateur supprime le contenu à partir de là ou vide cette corbeille (action également nommée « purge »), le document est déplacé vers la corbeille second niveau. La période de rétention de 93 jours concerne tant la corbeille premier niveau que la corbeille second niveau. À la fin des 93 jours, le document est définitivement supprimé de l’emplacement en question (corbeille premier niveau ou second niveau). La Corbeille n’est pas indexée et n’est donc pas disponible pour les recherches. Par conséquent, une recherche eDiscovery ne peut pas trouver de contenu de la Corbeille sur lequel placer une conservation.
+2. **Si le contenu n’est pas supprimé** pendant la période de rétention : à la fin de la période de rétention, il est déplacé vers la corbeille premier niveau. Si le contenu est supprimé pendant la période de rétention, le document est immédiatement déplacé vers la corbeille premier niveau. Si un utilisateur supprime le contenu à partir de là ou vide cette corbeille (action également nommée « purge »), le document est déplacé vers la corbeille second niveau. La période de rétention de 93 jours concerne tant la corbeille premier niveau que la corbeille second niveau. À la fin des 93 jours, le document est définitivement supprimé de l’emplacement en question (corbeille premier niveau ou second niveau). La Corbeille n’est pas indexée et n’est donc pas disponible pour les recherches. Par conséquent, une recherche eDiscovery ne peut pas trouver de contenu de la Corbeille auquel appliquer une conservation.
 
 ### <a name="content-in-mailboxes-and-public-folders"></a>Contenu dans les boîtes aux lettres et les dossiers publics
 
@@ -261,13 +261,17 @@ Comme pour une stratégie mise en place à l’échelle de l’organisation, si 
 
 Vous pouvez également appliquer une stratégie de rétention à des utilisateurs, groupes Office 365 ou sites spécifiques. Pour ce faire, activez le **Statut** de cet emplacement, puis utilisez les liens pour inclure ou exclure des utilisateurs, des groupes Office 365 ou des sites spécifiques. 
   
-Cependant, notez que les limites suivantes existent pour une stratégie de rétention qui inclut ou exclut plus de 1 000 emplacements spécifiques :
+Cependant, notez que les limites suivantes existent lorsque vous configurez une stratégie de rétention qui inclut ou exclut plus de 1 000 emplacements spécifiques :
   
-- Une telle stratégie de rétention peut contenir 1 000 boîtes aux lettres et 100 sites au maximum.
-    
+- Nombre maximal pour la stratégie de rétention :
+    - 1 000 boîtes aux lettres
+    - 1 000 groupes Office 365
+    - 1 000 utilisateurs pour conversations privées Teams
+    - 100 sites (OneDrive et SharePoint)
+
 - Un client peut contenir 10 000 stratégies de rétention au maximum.
     
-Bien que ces limites existent, notez que vous pouvez les contourner en appliquant une stratégie mise en place à l’échelle de l’organisation ou une stratégie qui s’applique aux emplacements entiers.
+Bien que ces limites existent, vous pouvez les éviter en appliquant une stratégie mise en place à l’échelle de l’organisation ou une stratégie qui s’applique aux emplacements entiers.
   
 ### <a name="skype-locations"></a>Emplacements Skype
 
