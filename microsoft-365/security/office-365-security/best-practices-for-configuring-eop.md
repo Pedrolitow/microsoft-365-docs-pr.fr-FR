@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: faf1efd1-3b0c-411a-804d-17f37292eac0
 description: Pour vous donner un maximum de chances de succès et éviter les erreurs courantes de configuration, suivez ces recommandations relatives aux meilleures pratiques pour Exchange Online Protection (EOP).
-ms.openlocfilehash: fd0baf81b516c30e2cee3b702e2ca0be560e9f4d
-ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
+ms.openlocfilehash: 9bddb736d41b4fd56790b8bbe9dbb00d07e75553
+ms.sourcegitcommit: 9ed3283dd6dd959faeca5c22613f9126261b9590
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/28/2020
-ms.locfileid: "43033433"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "43528616"
 ---
 # <a name="best-practices-for-configuring-eop-and-office-365-atp"></a>Meilleures pratiques pour la configuration de EOP et Office 365 ATP
 
@@ -53,7 +53,7 @@ Ces paramètres couvrent un éventail de fonctionnalités en dehors des stratég
 |Envoi authentifié SMTP vers la boîte aux lettres|Désactivé|Désactivé||
 |Connectivité EWS à la boîte aux lettres|Désactivé|Désactivé||
 |[Connectivité PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/disable-access-to-exchange-online-powershell)|Désactivé|Désactivé|Disponible pour les utilisateurs de boîte aux lettres ou les utilisateurs de messagerie (objets utilisateur retournés par la cmdlet [Get-User](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/get-user) ).|
-|Utiliser l’intelligence d’usurpation d’identité pour les expéditeurs de liste d’autorisation dès que possible|Oui|Oui||
+|Utiliser l' [intelligence d’usurpation d’identité](learn-about-spoof-intelligence.md) pour les expéditeurs de liste d’autorisation dès que possible|Oui|Oui||
 |Blocage du périmètre basé sur l’annuaire (DBEB)|Activé|Activé|Type de domaine = faisant autorité|
 |[Configurer l’authentification multifacteur pour tous les comptes d’administrateur](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication)|Activé|Activé||
 

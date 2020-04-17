@@ -16,22 +16,22 @@ ms.assetid: fc4e6ebb-5acc-4bc5-bad8-4f3407d1d3f4
 ms.collection:
 - M365-security-compliance
 description: Obtenez une vue d’ensemble des pages d’avertissement qui peuvent s’afficher lorsque la protection avancée contre les menaces d’Office 365 est au travail.
-ms.openlocfilehash: ef2f0fd59c7d5f8e62b0f562097fafd01d669459
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: b784af4740a8379c7879935cdbf301da0cbff930
+ms.sourcegitcommit: 9ed3283dd6dd959faeca5c22613f9126261b9590
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42086683"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "43528856"
 ---
 # <a name="office-365-atp-safe-links-warning-pages"></a>Pages d’avertissement des liens approuvés Office 365 ATP
 
 > [!IMPORTANT]
 > Cet article est destiné aux entreprises qui ont [Office 365 – Protection avancée contre les menaces](office-365-atp.md). Si vous utilisez Outlook.com, Office 365 Famille ou Office 365 Personnel et que vous recherchez des informations sur les liens fiables dans Outlook, reportez-vous à [Sécurité d’Outlook.com renforcée](https://support.office.com/article/882d2243-eab9-4545-a58a-b36fee4a46e2).
 
-[Office 365 Advanced Threat Protection](office-365-atp.md) (ATP) vous aide à protéger votre organisation contre les tentatives de hameçonnage et les programmes malveillants par le biais de fonctionnalités, telles que les [liens approuvés ATP](atp-safe-links.md), [les pièces jointes sûres ATP](atp-safe-attachments.md)et la [protection anti-hameçonnage](anti-phishing-protection.md). Lorsque la protection est en place, les liens (URL) dans les messages électroniques et les documents Office sont vérifiés. Si une URL est identifiée comme suspecte ou malveillante, il se peut que vous ne soyez pas en mesure d’ouvrir l’URL lorsque vous cliquez dessus. Au lieu d’accéder directement au site, il se peut qu’une page d’avertissement s’affiche à la place. 
-  
+[Office 365 Advanced Threat Protection](office-365-atp.md) (ATP) vous aide à protéger votre organisation contre les tentatives de hameçonnage et les programmes malveillants par le biais de fonctionnalités, telles que les [liens approuvés ATP](atp-safe-links.md), [les pièces jointes sûres ATP](atp-safe-attachments.md)et la [protection anti-hameçonnage](anti-phishing-protection.md). Lorsque la protection est en place, les liens (URL) dans les messages électroniques et les documents Office sont vérifiés. Si une URL est identifiée comme suspecte ou malveillante, il se peut que vous ne soyez pas en mesure d’ouvrir l’URL lorsque vous cliquez dessus. Au lieu d’accéder directement au site, il se peut qu’une page d’avertissement s’affiche à la place.
+
 Lisez cet article pour voir des exemples de pages d’avertissement susceptibles d’apparaître, ainsi que des mises à jour récentes des pages d’avertissement.
-  
+
 ## <a name="examples-of-warning-pages"></a>Exemples de pages d’avertissement
 
 ### <a name="atp-is-scanning-the-link"></a>ATP analyse le lien
@@ -113,4 +113,3 @@ Page d’avertissement d’origine :
 Page d’avertissement mise à jour :
 
 ![Une erreur s’est produite](../../media/2f7465a4-1cf4-4c1c-b7d4-3c07e4b795b4.png)
-   

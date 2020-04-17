@@ -11,13 +11,13 @@ ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
-description: Les administrateurs peuvent apprendre à identifier les raisons et le mode de réception des messages de hameçonnage, ainsi que la marche à suivre pour éviter d’autres messages de phishing à l’avenir.
-ms.openlocfilehash: 37d1e8bbf91bc6f0a1c8e9b5aa97fe460e8b5c82
-ms.sourcegitcommit: a7b2cd892cb65a61ee246268e1af2f8b9e526f6b
+description: Les administrateurs peuvent apprendre à identifier les raisons et le mode de réception d’un message de hameçonnage, ainsi que la marche à suivre pour éviter d’autres messages de phishing à l’avenir.
+ms.openlocfilehash: 93fdc17379627a2d595a3861ae3f8f1f9dcefeeb
+ms.sourcegitcommit: 9ed3283dd6dd959faeca5c22613f9126261b9590
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "43081207"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "43528988"
 ---
 # <a name="tune-anti-phishing-protection-in-office-365"></a>Réglage de la protection anti-hameçonnage dans Office 365
 
@@ -33,7 +33,7 @@ Si votre abonnement inclut la protection avancée contre les menaces (ATP), vous
 
 - [Pièces jointes fiables ATP](set-up-atp-safe-attachments-policies.md)
 
-- [Stratégies anti-hameçonnage ATP](set-up-anti-phishing-policies.md). Notez que vous pouvez augmenter temporairement les **seuils de phishing avancés** dans la stratégie, de **standard** à **agressif**, **plus agressif**ou **plus agressif**.
+- [Stratégies anti-hameçonnage ATP dans Office 365](configure-atp-anti-phishing-policies.md). Notez que vous pouvez augmenter temporairement les **seuils de phishing avancés** dans la stratégie, de **standard** à **agressif**, **plus agressif**ou **plus agressif**.
 
 Vérifiez que ces fonctionnalités ATP sont activées.
 
@@ -51,11 +51,11 @@ Plus précisément, vous devez vérifier le champ d’en-tête **X-Forefront-ant
 
 - Sur une base mensuelle, exécutez le [score sécurisé](../mtp/microsoft-secure-score.md) pour évaluer les paramètres de sécurité de votre organisation Office 365.
 
-- Consultez régulièrement le [rapport](learn-about-spoof-intelligence.md) d’aide à la décision et activez la protection contre l' [usurpation d’identité dans la stratégie anti-hameçonnage](learn-about-spoof-intelligence.md#configuring-the-anti-spoofing-policy) pour **mettre en quarantaine** les messages suspects au lieu de les transmettre au dossier de courrier indésirable de l’utilisateur.
+- Examinez régulièrement le rapport d’aide à la [décision](learn-about-spoof-intelligence.md) et [configurez](set-up-anti-phishing-policies.md#spoof-settings) l’aide à la **mise en quarantaine** des messages suspects au lieu de les transmettre au dossier courrier indésirable de l’utilisateur.
 
 - Examinez régulièrement le [rapport d’état de protection contre les menaces](view-reports-for-atp.md#threat-protection-status-report).
 
-- Certains clients peuvent accidentellement autoriser les messages d’hameçonnage en plaçant leurs propres domaines dans la liste autoriser l’expéditeur ou autoriser le domaine dans les stratégies de blocage du courrier indésirable. Si vous choisissez de le faire, vous devez utiliser une extrême prudence. Bien que cette configuration autorise certains messages légitimes, elle autorise également les messages malveillants qui seraient normalement bloqués par le courrier indésirable Office 365 et/ou les filtres anti-hameçonnage.
+- Certains clients peuvent accidentellement autoriser les messages d’hameçonnage en plaçant leurs propres domaines dans les listes expéditeur autorisé ou domaine autorisé dans les stratégies de blocage du courrier indésirable. Si vous choisissez de le faire, vous devez utiliser une extrême prudence. Bien que cette configuration autorise certains messages légitimes, elle autorise également les messages malveillants qui seraient normalement bloqués par le courrier indésirable Office 365 et/ou les filtres anti-hameçonnage.
 
   La meilleure façon de traiter les messages légitimes bloqués par Office 365 (faux positifs) qui impliquent des expéditeurs dans votre domaine est de configurer entièrement et complètement les enregistrements SPF, DKIM et DMARC dans le système DNS pour _tous_ vos domaines de messagerie dans Office 365 :
 
@@ -73,6 +73,6 @@ Plus précisément, vous devez vérifier le champ d’en-tête **X-Forefront-ant
 
 - Dans la mesure du possible, nous vous recommandons de livrer le courrier électronique pour votre domaine directement à Office 365. En d’autres termes, pointez l’enregistrement MX de votre domaine Office 365 vers Office 365. Exchange Online Protection (EOP) est capable de fournir la meilleure protection aux utilisateurs de votre nuage lorsque leur courrier est remis directement à Office 365. Si vous devez utiliser un système d’hygiène de messagerie tiers devant l’interface EOP, utilisez un filtrage amélioré pour les connecteurs. Pour obtenir des instructions, voir [Enhanced Filtering for Connectors in Exchange Online](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).
 
-- L’authentification multifacteur (MFA) est une excellente façon d’empêcher les comptes compromis. Vous devez sérieusement envisager d’activer l’authentification multifacteur pour tous vos utilisateurs. Pour une approche progressive, commencez par activer l’authentification multifacteur pour vos utilisateurs les plus sensibles (administrateurs, cadres, etc.) avant d’activer l’authentification multifacteur pour tout le monde. Pour obtenir des instructions, consultez la rubrique [set up Multi-Factor Authentication](../../admin/security-and-compliance/set-up-multi-factor-authentication.md).
+- L’authentification multifacteur (MFA) est un moyen efficace pour empêcher les comptes compromis. Vous devez sérieusement envisager d’activer l’authentification multifacteur pour tous vos utilisateurs. Pour une approche progressive, commencez par activer l’authentification multifacteur pour vos utilisateurs les plus sensibles (administrateurs, cadres, etc.) avant d’activer l’authentification multifacteur pour tout le monde. Pour obtenir des instructions, consultez la rubrique [set up Multi-Factor Authentication](../../admin/security-and-compliance/set-up-multi-factor-authentication.md).
 
 - Les règles de transfert vers des destinataires externes sont souvent utilisées par des agresseurs pour extraire des données. Utilisez les **règles de transfert des boîtes aux lettres** dans le [score de sécurité Microsoft](../mtp/microsoft-secure-score.md) pour rechercher et même empêcher le transfert des règles vers des destinataires externes. Pour plus d’informations, consultez la rubrique [minimisation des règles de transfert externe des clients avec le score sécurisé](https://blogs.technet.microsoft.com/office365security/mitigating-client-external-forwarding-rules-with-secure-score/).

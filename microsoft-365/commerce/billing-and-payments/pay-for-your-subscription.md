@@ -24,12 +24,12 @@ description: Découvrez les modes de paiement disponibles pour régler votre abo
 ms.custom:
 - okr_SMB
 - fwlink 808700 for SEPA UI glink 906 for older uI
-ms.openlocfilehash: 1b5516cdc87d792425c89a486ae9cb0bc2bc0ee4
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
-ms.translationtype: HT
+ms.openlocfilehash: dfecd2ec5ca72f8e00e664f3f54d7125fe8d21b6
+ms.sourcegitcommit: 4988934836eee45c890b9bdd5ef73590656c78ba
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42633712"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "43540902"
 ---
 # <a name="pay-for-your-office-365-for-business-subscription"></a>Régler votre abonnement Office 365 pour les entreprises
 
@@ -275,9 +275,23 @@ Vous pouvez envoyer une copie de votre relevé de facturation par courrier élec
 
 ### <a name="to-receive-your-billing-statement-in-email"></a>Pour recevoir votre relevé de facturation par e-mail
 
+::: moniker range="o365-worldwide"
+
 1. Dans le Centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">Notifications de facturation</a>.
 
-    Si vous utilisez Office 365 Allemagne, accédez à cette page de <a href="https://go.microsoft.com/fwlink/p/?linkid=853213" target="_blank">Notifications de facturation</a>.
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+1. Dans le Centre d’administration, accédez à la page **Facturation** > <a href="https://go.microsoft.com/fwlink/p/?linkid=853213" target="_blank">Notifications de facturation</a>.
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. Dans le Centre d’administration, accédez à la page **Facturation** > <a href="https://go.microsoft.com/fwlink/p/?linkid=853215" target="_blank">Notifications de facturation</a>.
+
+::: moniker-end
 
 2. Sous **Voulez-vous recevoir le relevé de facturation par courrier électronique ?**, positionnez le bouton bascule sur **Activer**.
 

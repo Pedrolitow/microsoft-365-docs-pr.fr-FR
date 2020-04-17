@@ -1,156 +1,198 @@
 ---
-title: Configurer des stratégies anti-hameçonnage Office 365 ATP
+title: Stratégies anti-hameçonnage
 f1.keywords:
 - NOCSH
-ms.author: tracyp
-author: MSFTTracyP
+ms.author: chrisda
+author: chrisda
 manager: dansimp
 audience: ITPro
 ms.topic: article
-ms.date: 08/29/2019
+ms.date: ''
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 5a6f2d7f-d998-4f31-b4f5-f7cbf6f38578
 ms.collection:
 - M365-security-compliance
-description: La protection anti-hameçonnage, avec une protection complète dans le cadre d’Office 365 protection avancée contre les menaces et de la protection de base dans Office 365 Exchange Online Protection, peut vous aider à protéger votre organisation contre les attaques de hameçonnage malveillant basées sur l’emprunt d’identité. et d’autres attaques par hameçonnage.
-ms.openlocfilehash: cc9c8ec0aa819696f3c53cff690be40ae82009fb
-ms.sourcegitcommit: 21338a9287017a66298e0ff557e80051946ebf13
+description: Découvrez la stratégie anti-hameçonnage de base dans Exchange Online Protection (EOP) et les stratégies anti-hameçonnage avancées dans Office 365 protection avancée contre les menaces.
+ms.openlocfilehash: f96b490d2c031fb509c39b2efdbc725cec2709a5
+ms.sourcegitcommit: db8702cf578b02c6fd6a2670c177b456efae4748
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "42604071"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "43537472"
 ---
-# <a name="set-up-office-365-atp-anti-phishing-and-anti-phishing-policies"></a>Configuration de l’anti-hameçonnage d’Office 365 – Protection avancée contre les menaces et des stratégies anti-hameçonnage
+# <a name="anti-phishing-policies-in-office-365"></a>Stratégies anti-hameçonnage dans Office 365
 
-La [protection anti-hameçonnage ATP](atp-anti-phishing.md), partie de la [protection avancée contre les menaces d’Office 365](office-365-atp.md), peut vous aider à protéger votre organisation contre les attaques par hameçonnage malveillantes et les attaques par hameçonnage. Si vous êtes un administrateur Office 365 Enterprise global ou un administrateur de sécurité, vous pouvez configurer des stratégies anti-hameçonnage ATP.
+Les stratégies de configuration des paramètres de protection anti-hameçonnage sont disponibles dans les organisations Office 365 avec des boîtes aux lettres Exchange Online, des organisations Exchange Online Protection (EOP) autonomes sans boîtes aux lettres Exchange Online et des organisations Office 365 Advanced Threat Protection (ATP).
 
-Les attaques par hameçonnage se composent de différentes formes, des attaques basées sur des produits, à un Spear Phishing ou à une baleine ciblée. Avec la complexité croissante, il est difficile d’identifier certaines de ces attaques sophistiquées. Heureusement, Office 365 Advanced Threat Protection peut vous aider. Vous pouvez configurer une stratégie anti-hameçonnage ATP pour vous assurer que votre organisation est protégée contre ces attaques.
+Les stratégies anti-hameçonnage ATP sont disponibles uniquement dans les organisations disposant d’Office 365 ATP. Par exemple :
+
+- Office 365 entreprise E5, Office 365 éducation a5, etc.
+- [Microsoft 365 Entreprise](https://www.microsoft.com/microsoft-365/enterprise/home)
+- [Microsoft 365 Business](https://www.microsoft.com/microsoft-365/business)
+- [Office 365 ATP en tant que module complémentaire](https://products.office.com/exchange/advance-threat-protection)
+
+Les stratégies anti-hameçonnage ATP incluent une stratégie anti-hameçonnage par défaut intégrée et vous pouvez créer des stratégies anti-hameçonnage supplémentaires ATP personnalisées.
+
+Les autres organisations Office 365 avec des boîtes aux lettres Exchange Online ou les organisations Exchange Online Protection (EOP) autonomes sans boîte aux lettres Exchange Online ont une stratégie anti-hameçonnage par défaut intégrée, mais vous ne pouvez pas créer de stratégies supplémentaires. Seules les organisations disposant d’une boîte aux lettres Exchange Online peuvent modifier leur stratégie anti-hameçonnage par défaut.
+
+Les principales différences entre les stratégies de détection d’hameçonnage et les stratégies anti-hameçonnage ATP sont décrites dans le tableau suivant :
+
+||||
+|---|:---:|:---:|
+|**Fonctionnalité**|**Stratégies anti-hameçonnage**|**Stratégies anti-hameçonnage ATP**|
+|Stratégie par défaut créée automatiquement|![Coche](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Coche](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+|Créer des stratégies personnalisées||![Coche](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+|Paramètres de stratégie<sup>\*</sup>||![Coche](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+|Paramètres d’emprunt d’identité||![Coche](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+|Paramètres d’usurpation|![Coche](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Coche](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+|Seuils de hameçonnage avancés||![Coche](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+|
+
+<sup>\*</sup>Dans la stratégie par défaut, le nom et la description de la stratégie sont en lecture seule (la description est vide), et vous ne pouvez pas spécifier à qui la stratégie s’applique (la stratégie par défaut s’applique à tous les destinataires).
+
+Pour configurer les stratégies anti-hameçonnage, consultez les rubriques suivantes :
+
+- [Configurer des stratégies anti-hameçonnage dans EOP](configure-anti-phishing-policies-eop.md)
+
+- [Configurer des stratégies anti-hameçonnage ATP dans Office 365](configure-atp-anti-phishing-policies.md)
+
+Le reste de cette rubrique décrit les paramètres disponibles dans les stratégies de détection d’hameçonnage de EOP et ATP.
+
+## <a name="spoof-settings"></a>Paramètres d’usurpation
+
+L’usurpation se fait lorsque l’adresse de l’expéditeur d’un message électronique (l’adresse de l’expéditeur affichée dans les clients de messagerie) ne correspond pas au domaine de la source de messagerie. Pour plus d’informations sur l’usurpation, consultez la rubrique [protection contre l’usurpation d’identité dans Office 365](anti-spoofing-protection.md).
+
+Les paramètres d’usurpation suivants sont disponibles dans les stratégies anti-hameçonnage et les stratégies anti-hameçonnage ATP :
+
+- **Protection**contre l’usurpation d’identité : active ou désactive la protection contre l’usurpation d’identité. Nous vous recommandons de le laisser activé. Vous utilisez la **stratégie** d’aide à la décision pour autoriser ou bloquer des expéditeurs internes et externes falsifiés spécifiques. Pour plus d’informations, consultez la rubrique [configure usurpation Intelligence in Office 365](learn-about-spoof-intelligence.md).
+
+  > [!NOTE]
+  > Les paramètres d’usurpation d’identité sont activés par défaut dans la stratégie anti-hameçonnage par défaut dans EOP, la stratégie anti-hameçonnage par défaut ATP, et dans les nouvelles stratégies de détection d’hameçonnage personnalisées ATP que vous créez. <br/><br/> Vous n’avez pas besoin de désactiver la protection contre l’usurpation d’identité si votre enregistrement MX ne pointe pas vers Office 365 ; vous activez le filtrage amélioré pour les connecteurs à la place. Pour obtenir des instructions, voir [Enhanced Filtering for Connectors in Exchange Online](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).
+
+  Pour les messages provenant d’expéditeurs usurpés bloqués, vous pouvez également spécifier l’action à effectuer sur les messages :
+
+  - **Déplacer le message vers le dossier courrier indésirable**: il s’agit de la valeur par défaut. Le message est remis à la boîte aux lettres et déplacé vers le dossier courrier indésirable. Dans Exchange Online, le message est déplacé vers le dossier courrier indésirable si la règle de courrier indésirable est activée dans la boîte aux lettres (elle est activée par défaut). Pour plus d’informations, voir [Configurer les paramètres du courrier indésirable sur les boîtes aux lettres Exchange Online dans Office 365](configure-junk-email-settings-on-exo-mailboxes.md).
+
+  - **Mettre en quarantaine le message**: envoie le message en quarantaine au lieu des destinataires prévus. Pour plus d'informations à propos de la quarantaine, consultez les rubriques suivantes :
+
+    - [Quarantaine dans Office 365](quarantine-email-messages.md)
+    - [Gérer les messages et fichiers mis en quarantaine en tant qu’administrateur dans Office 365](manage-quarantined-messages-and-files.md)
+    - [Rechercher et publier des messages mis en quarantaine en tant qu’utilisateur dans Office 365](find-and-release-quarantined-messages-as-a-user.md)
+
+- **Expéditeur non authentifié**: active ou désactive l’identification d’expéditeur non identifiée dans Outlook. Notamment :
+
+  - Un point d’interrogation ( ?) est ajouté à la photo de l’expéditeur si le message ne passe pas les vérifications SPF ou DKIM **et** que le message ne passe pas l’authentification DMARC ou [composite](email-validation-and-authentication.md#composite-authentication).
+
+  - La balise via (chris@contoso.com <u>via</u> Michelle@fabrikam.com) est ajoutée si le domaine de l’adresse de provenance (l’expéditeur du message affiché dans les clients de messagerie) est différent du domaine dans la signature DKIM ou l’adresse **de provenance du courrier** . Pour plus d’informations sur ces adresses, consultez la rubrique [vue d’ensemble des normes relatives aux messages électroniques](how-office-365-validates-the-from-address.md#an-overview-of-email-message-standards) .
+
+  Pour empêcher l’ajout de ces identificateurs à des messages provenant d’expéditeurs spécifiques, vous disposez des options suivantes :
+
+  - Autoriser l’expéditeur à usurper la stratégie d’intelligence d’usurpation d’identité. Pour obtenir des instructions, consultez la rubrique [configure usurpation Intelligence in Office 365](learn-about-spoof-intelligence.md).
+
+  - [Configurez l’authentification de messagerie](email-validation-and-authentication.md#configure-email-authentication-for-domains-you-own) pour le domaine de l’expéditeur.
+  
+    - Pour le point d’interrogation de la photo de l’expéditeur, SPF ou DKIM sont les plus importants.
+    - Pour la balise via, vérifiez le domaine dans la signature DKIM ou l’adresse **Mail from** correspond (ou est un sous-domaine du) au domaine dans l’adresse de l’expéditeur.
+
+  Pour plus d’informations, consultez [la rubrique identifier les messages suspects dans Outlook.com et Outlook sur le Web](https://support.office.com/article/3d44102b-6ce3-4f7c-a359-b623bec82206) .
+
+## <a name="exclusive-settings-in-atp-anti-phishing-policies"></a>Paramètres exclusifs dans les stratégies anti-hameçonnage ATP
+
+Cette section décrit les paramètres de stratégie qui sont disponibles uniquement dans les stratégies anti-hameçonnage ATP.
 
 > [!NOTE]
-> L’anti-hameçonnage ATP est disponible uniquement dans la protection avancée contre les menaces (ATP). La protection avancée contre les menaces est incluse dans les abonnements, tels que [microsoft 365 entreprise](https://www.microsoft.com/microsoft-365/enterprise/home), [Microsoft 365 entreprise](https://www.microsoft.com/microsoft-365/business), Office 365 entreprise E5, Office 365 éducation a5, etc. Si votre organisation dispose d’un abonnement Office 365 qui n’inclut pas Office 365 ATP, vous pouvez acheter l’ATP en tant que module complémentaire. Pour plus d’informations, consultez la rubrique [offres et tarifs de protection avancée contre les menaces office 365](https://products.office.com/exchange/advance-threat-protection) , ainsi que la [Description du service Office 365 Advanced Threat Protection](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description). Assurez-vous que votre organisation utilise la dernière version d’Office 365 ProPlus sur Windows pour tirer pleinement parti de la protection anti-hameçonnage ATP.
+> Par défaut, les paramètres exclusifs ATP ne sont pas configurés ou activés, même dans la stratégie par défaut. Pour tirer parti de ces fonctionnalités, vous devez les activer et les configurer dans la stratégie anti-hameçonnage par défaut de l’ATP, ou créer et configurer des stratégies anti-hameçonnage personnalisées ATP.
 
-Une stratégie anti-hameçonnage est également disponible pour Office 365 Exchange Online Protection, avec un ensemble limité de protection contre l’usurpation d’identité, destinée à la protection contre les attaques basées sur l’authentification et la déception.
+### <a name="policy-settings-in-atp-anti-phishing-policies"></a>Paramètres de stratégie dans les stratégies anti-hameçonnage ATP
 
-Que faire :
+Les paramètres de stratégie suivants sont disponibles uniquement dans les stratégies anti-hameçonnage ATP :
 
-1. Passez en revue les conditions préalables.
+- **Name**: vous ne pouvez pas renommer la stratégie anti-hameçonnage par défaut, mais vous pouvez nommer et renommer les stratégies personnalisées que vous créez.
 
-2. En savoir plus sur les options de stratégie anti-hameçonnage et de protection contre le hameçonnage.
+- **Description** Vous ne pouvez pas ajouter de description à la stratégie anti-hameçonnage par défaut, mais vous pouvez ajouter et modifier la description des stratégies personnalisées que vous créez.
 
-3. Configurez une stratégie anti-hameçonnage ou une stratégie anti-hameçonnage ATP.
+- **Appliqué à**: identifie les destinataires internes auxquels s’applique la stratégie anti-hameçonnage ATP. Cette valeur est requise dans les stratégies personnalisées et n’est pas disponible dans la stratégie par défaut (la stratégie par défaut s’applique à tous les destinataires).
 
-> [!IMPORTANT]
-> Pour savoir comment les différentes technologies sont appliquées, consultez la [stratégie qui s’applique lorsque plusieurs analyses de détection et de méthodes de protection s’exécutent sur votre courrier électronique](how-policies-and-protections-are-combined.md).
+    Vous pouvez uniquement utiliser une condition ou une exception une seule fois, mais vous pouvez spécifier plusieurs valeurs pour la condition ou l’exception. Plusieurs valeurs de la même condition ou exception utilisent la logique OU (par exemple, _\<destinataire1\>_ ou _\<destinataire2\>_). Des conditions ou des exceptions différentes utilisent la logique ET (par exemple, _\<destinataire1\>_ et _\<membre du groupe 1\>_).
 
-## <a name="review-the-prerequisites"></a>Vérifier les conditions préalables
+  - **Destinataire**: une ou plusieurs boîtes aux lettres, utilisateurs de messagerie ou contacts de messagerie dans votre organisation.
+  - Le **destinataire est membre de**: un ou plusieurs groupes de votre organisation.
+  - **Le domaine du destinataire est**: un ou plusieurs domaines acceptés configurés dans Office 365.
 
-- Pour définir (ou modifier) des stratégies ATP, vous devez disposer d’un rôle approprié. Certains exemples sont décrits dans le tableau suivant :
+  - **Sauf**dans les cas suivants : exceptions pour la règle. Les paramètres et le comportement sont exactement comme les conditions :
 
-  |Rôle|WHERE/How Assigned|
-  |---------|---------|
-  |Administrateur général Office 365|La personne qui s’inscrit pour acheter Office 365 est un administrateur global par défaut. (Pour en savoir plus, consultez la rubrique [à propos des rôles d’administrateur Office 365](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles) .)|
-  |Administrateur de sécurité|Centre d’administration Azure Active Directory[https://aad.portal.azure.com](https://aad.portal.azure.com)()|
-  |Gestion d’Organisation Exchange Online|Centre d’administration Exchange[https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)() <br>ou <br>  Applets de commande PowerShell (consultez la rubrique [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell))|
+    - **Le destinataire est**
+    - **Le destinataire est membre de**
+    - **Le domaine du destinataire est**
 
-  Pour en savoir plus sur les rôles et les autorisations, consultez [la rubrique autorisations &amp; dans le centre de sécurité conformité Office 365](permissions-in-the-security-and-compliance-center.md).
+### <a name="impersonation-settings-in-atp-anti-phishing-policies"></a>Paramètres d’emprunt d’identité dans les stratégies anti-hameçonnage ATP
 
-- Vous allez probablement configurer plusieurs stratégies anti-hameçonnage pour votre organisation. Office 365 applique ces stratégies dans l’ordre dans lequel elles sont indiquées sur la **page anti-hameçonnage** et les pages **anti-hameçonnage ATP** dans le centre de &amp; sécurité conformité. Une fois que vous avez examiné vos [options de stratégie](#learn-about-atp-anti-phishing-policy-options), prenez le temps de déterminer le nombre de stratégies requises et la priorité de chacune d’elles.
+L’emprunt d’identité est l’endroit où l’expéditeur ou le domaine de messagerie de l’expéditeur d’un message ressemble très à un véritable expéditeur ou domaine :
 
-- Prévoyez de consacrer environ 5-15 minutes à la mise en place de votre première stratégie anti-hameçonnage.
+- Un exemple d’emprunt d’identité du domaine contoso.com est ćóntoso.com.
 
-- Attendez jusqu’à 30 minutes que votre stratégie nouvelle ou mise à jour se propage à tous les centres de mises à jour Office 365.
+- Un exemple d’emprunt d’identité de l’utilisateur michelle@contoso.com est michele@contoso.com.
 
-## <a name="set-up-an-anti-phishing-or-atp-anti-phishing-policy"></a>Configurer une stratégie anti-hameçonnage (anti-hameçonnage) ou de protection avancée contre les menaces
+Un domaine emprunté pourrait être considéré comme légitime (domaine enregistré, enregistrements d’authentification de messagerie électronique configurés, etc.), à l’exception de son intention de tromper les destinataires.
 
-Chaque organisation dans Office 365 a une stratégie anti-hameçonnage par défaut qui s’applique à tous les utilisateurs. Vous pouvez créer plusieurs stratégies anti-hameçonnage personnalisées que vous pouvez étendre à des utilisateurs, des groupes ou des domaines spécifiques au sein de votre organisation. Les stratégies personnalisées que vous créez ont priorité sur la stratégie par défaut. Vous pouvez ajouter, modifier et supprimer des stratégies de détection d’hameçonnage dans le centre de &amp; sécurité conformité d’Office 365.
+Les paramètres d’emprunt d’identité suivants sont disponibles uniquement dans les stratégies anti-hameçonnage ATP :
 
-1. Accédez à [https://protection.office.com](https://protection.office.com) et connectez-vous avec votre compte professionnel ou scolaire.
+- **Utilisateurs à protéger**: empêche les utilisateurs internes ou externes spécifiés d’être empruntés. Par exemple, les cadres (internes) et les membres du Conseil d’administration (externes). Vous pouvez ajouter jusqu’à 60 adresses internes et externes. Cette liste d’utilisateurs protégés est différente de la liste des destinataires auxquels la stratégie s’applique dans le paramètre **appliqué à** .
 
-2. Dans le centre de sécurité &amp; conformité d’Office 365, dans le volet de navigation de gauche, sous **gestion des menaces**, sélectionnez **stratégie**.
+  Par exemple, vous spécifiez Felipe Apodaca (felipea@contoso.com) en tant qu’utilisateur protégé dans une stratégie qui s’applique au groupe nommé dirigeants. Les messages entrants envoyés aux membres du groupe cadres où l’identité de Felipe Apodaca est empruntée seront traités par la stratégie (l’action que vous configurez pour les utilisateurs empruntés).
 
-3. Sur la page **stratégie** **, choisissez anti-hameçonnage ou** **protection contre le hameçonnage**.
+- **Domaines à protéger**: empêcher l’emprunt d’identité des domaines spécifiés. Par exemple, tous les domaines que vous possédez ([domaines acceptés](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)) ou des domaines spécifiques (domaines que vous possédez ou domaines partenaires). Cette liste de domaines protégés est différente de la liste des domaines auxquels la stratégie s’applique dans le paramètre **appliqué à** .
 
-4. Sur la **page anti-hameçonnage** ou **protection contre le hameçonnage** , effectuez l’une des opérations suivantes :
+  Par exemple, vous spécifiez tailspintoys.com en tant que domaine protégé dans une stratégie qui s’applique aux membres du groupe nommé cadres. Messages entrants envoyés aux membres du groupe cadres où le tailspintoys.com où se fait l’emprunt d’identité est traité par la stratégie (l’action que vous configurez pour les domaines empruntés).
 
-   - Pour ajouter une nouvelle stratégie, sélectionnez **+ créer**.
+- **Actions pour les utilisateurs ou domaines protégés**: choisissez l’action à effectuer sur les messages entrants qui contiennent des tentatives d’emprunt d’identité pour les utilisateurs protégés et les domaines protégés de la stratégie. Vous pouvez spécifier différentes actions pour l’emprunt d’identité des utilisateurs protégés et l’emprunt d’identité des domaines protégés :
 
-   - Pour modifier une stratégie existante, sélectionnez le nom de la stratégie dans la liste affichée sur la page **anti-hameçonnage** . (Vous pouvez également choisir la **stratégie par défaut** au-dessus de la liste). Sur la page qui s’affiche, sélectionnez **modifier la stratégie**.
+  - **Ne pas appliquer d’action**
 
-5. Indiquez un nom, une description et des paramètres pour votre stratégie. Pour plus d’informations, consultez la rubrique [en savoir plus sur les options de stratégie anti-hameçonnage ATP](#learn-about-atp-anti-phishing-policy-options) .
+  - **Rediriger le message vers d’autres adresses de messagerie**: envoie le message aux destinataires spécifiés au lieu des destinataires prévus.
 
-6. Une fois que vous avez vérifié vos paramètres, choisissez **créer cette stratégie** (ou **Enregistrer**).
+  - **Déplacer le message vers le dossier courrier indésirable**: le message est remis à la boîte aux lettres et déplacé vers le dossier courrier indésirable. Dans Exchange Online, le message est déplacé vers le dossier courrier indésirable si la règle de courrier indésirable est activée dans la boîte aux lettres (elle est activée par défaut). Pour plus d’informations, voir [Configurer les paramètres du courrier indésirable sur les boîtes aux lettres Exchange Online dans Office 365](configure-junk-email-settings-on-exo-mailboxes.md).
 
-## <a name="learn-about-atp-anti-phishing-policy-options"></a>En savoir plus sur les options de stratégie anti-hameçonnage ATP
+    - **Mettre en quarantaine le message**: envoie le message en quarantaine au lieu des destinataires prévus. Pour plus d'informations à propos de la quarantaine, consultez les rubriques suivantes :
 
-Lors de la configuration ou de la modification de vos stratégies de protection contre le hameçonnage ATP, vous pouvez choisir parmi plusieurs options offrant la protection la plus sophistiquée et complète, comme décrit dans le tableau suivant :
+    - [Quarantaine dans Office 365](quarantine-email-messages.md)
+    - [Gérer les messages et fichiers mis en quarantaine en tant qu’administrateur dans Office 365](manage-quarantined-messages-and-files.md)
+    - [Rechercher et publier des messages mis en quarantaine en tant qu’utilisateur dans Office 365](find-and-release-quarantined-messages-as-a-user.md)
 
-|**Ce paramètre**|**Effectue cette action**|**À utiliser lorsque vous souhaitez :**|
-|:-----|:-----|:-----|
-|**Ajouter des utilisateurs à protéger**|Définit les adresses de messagerie qui seront protégées par la stratégie. Vous pouvez ajouter jusqu’à 60 adresses internes et externes que vous souhaitez protéger contre l’emprunt d’identité.|Lorsque vous souhaitez vous assurer que les messages provenant de l’extérieur de votre organisation ne sont pas emprunts d’identité de l’un des utilisateurs sur la liste des utilisateurs que vous protégez. Les utilisateurs que vous souhaiterez peut-être protéger sont des cadres de haut niveau, des propriétaires d’entreprise, des membres de conseil externe, etc.  <br/> Cette liste d’utilisateurs protégés est différente de la liste des personnes auxquelles la stratégie s’applique, ou non pour laquelle la stratégie est appliquée. Vous définissez la liste s’applique à dans la section **appliqué à** des options de stratégie.  <br/> Par exemple, si vous ajoutez `Mary Smith <marys@contoso.com>` en tant qu’utilisateur à protéger, appliquez la stratégie au groupe « tous les utilisateurs ». Cela permet de s’assurer qu’un message qui semble emprunter l’identité « Mary Smith » envoyé à un utilisateur dans le groupe « tous les utilisateurs » serait traité par la stratégie.|
-|**Ajouter des domaines à protéger**|Vous permet de choisir les domaines que vous souhaitez protéger de l’emprunt d’identité. Vous pouvez spécifier que la stratégie inclut tous vos domaines personnalisés, une liste de domaines séparés par des virgules ou une combinaison des deux. Si vous choisissez d' **inclure automatiquement les domaines dont je suis propriétaire**, et que vous ajoutez ultérieurement un domaine à votre organisation Office 365, cette stratégie de blocage du hameçonnage sera mise en place pour le nouveau domaine.|Chaque fois que vous souhaitez vous assurer que les messages provenant de l’extérieur de votre organisation ne sont pas emprunts d’identité de l’un des domaines définis dans votre liste de domaines vérifiés ou ceux d’un domaine partenaire.|
-|**Choisir des actions**|Sélectionnez l’action à effectuer lorsque Office 365 détecte une tentative d’emprunt d’identité par rapport aux utilisateurs et domaines que vous avez ajoutés à la stratégie. Vous pouvez choisir différentes actions pour les utilisateurs et les domaines dans la même stratégie anti-hameçonnage. Ces actions s’appliquent à tout courrier électronique entrant identifié par Office 365 comme empruntant l’identité d’un compte d’utilisateur ou d’un domaine qui est protégé par cette stratégie anti-hameçonnage.  <br/> **Mettre en quarantaine le message** Le courrier électronique sera envoyé à la mise en quarantaine Office 365. Lorsque vous choisissez cette option, le courrier électronique n’est pas envoyé au destinataire d’origine.  <br/> **Rediriger le message vers une autre adresse de messagerie** Le courrier électronique est envoyé à l’adresse de messagerie que vous spécifiez. Vous pouvez spécifier plusieurs adresses de messagerie. Lorsque vous choisissez cette option, le courrier électronique n’est pas envoyé au destinataire d’origine.  <br/> **Déplacer le message vers le dossier courrier indésirable des destinataires** Le courrier électronique sera envoyé vers le dossier courrier indésirable des destinataires. Lorsque vous choisissez cette option, le courrier électronique est toujours envoyé au destinataire d’origine, mais il n’est pas placé dans la boîte de réception du destinataire.  <br/> **Remise du message et ajout d’autres adresses à la ligne CCI** Le courrier électronique sera remis au destinataire d’origine. En outre, les utilisateurs que vous identifiez sont ajoutés à la ligne CCI du message avant qu’il ne soit remis. Lorsque vous choisissez cette option, le courrier électronique est toujours envoyé à la boîte de réception du destinataire d’origine.  <br/> **Ne pas appliquer d’action** Le courrier électronique sera remis dans la boîte de réception du destinataire d’origine. Aucune autre action n’est effectuée sur le message électronique.  <br/> **Activer les conseils de protection contre le hameçonnage** Active les conseils de sécurité anti-hameçonnage dans les messages électroniques.|Lorsque vous souhaitez effectuer une action sur les messages qu’Office 365 a déterminés comme emprunt d’identité d’un utilisateur ou d’un domaine, comme défini dans la stratégie.|
-|**Activer l’intelligence des boîtes aux lettres**|Active ou désactive l’intelligence de boîte aux lettres pour cette stratégie. Vous pouvez activer l’intelligence des boîtes aux lettres uniquement pour les comptes en nuage, c’est-à-dire les comptes dont la boîte aux lettres est hébergée entièrement dans Office 365.| Cette fonctionnalité utilise l’apprentissage de machine pour déterminer les modèles de courrier électronique d’un utilisateur avec ses contacts. Grâce à ces informations, l’AI peut mieux faire la distinction entre les messages authentiques et les e-mails de hameçonnage.|
-|**Activer la protection contre l’usurpation d’identité basée sur les boîtes aux lettres**|Active ou désactive l’intelligence de boîte aux lettres pour la protection contre l’emprunt d’identité pour cette stratégie. L’aspect important ici est le contrôle de l’emprunt d’identité pour une boîte aux lettres donnée.|Lorsque vous souhaitez améliorer les résultats de l’emprunt d’identité pour les utilisateurs en fonction du mappage individuel de chaque utilisateur. Cette intelligence permet à Office 365 de personnaliser la détection de l’emprunt d’identité de l’utilisateur et de mieux gérer les faux positifs. Lorsque l’emprunt d’identité d’utilisateur est détecté, en fonction de l’intelligence des boîtes aux lettres, vous pouvez définir l’action à effectuer sur le message.|
-|**Ajouter des expéditeurs et des domaines de confiance**|Définit les adresses de messagerie et les domaines qui ne seront pas considérés comme empruntés par cette stratégie. Les messages provenant des adresses e-mail et des domaines que vous ajoutez en tant qu’expéditeurs et domaines de confiance ne sont jamais considérés comme des attaques basées sur l’emprunt d’identité. Par conséquent, les actions et les paramètres de cette stratégie ne seront pas appliqués aux messages provenant de ces expéditeurs et domaines.  <br/><br/>La limite maximale de ces listes est d’environ 1000 entrées.|Lorsque les utilisateurs interagissent avec des domaines ou des utilisateurs qui déclenchent l’emprunt d’identité mais sont considérés comme sûrs. Par exemple, si un partenaire possède le même nom d’affichage ou nom de domaine que celui d’un utilisateur défini dans la liste.|
-|**Appliqué à**|Définit les destinataires dont les messages électroniques entrants seront soumis aux règles de la stratégie. Vous pouvez créer des conditions et des exceptions pour les destinataires associés à la stratégie.  <br/> Par exemple, vous pouvez créer une stratégie globale pour votre organisation en appliquant la règle à tous les destinataires de votre domaine.  <br/> Vous pouvez également créer des règles d’exception, telles qu’une règle qui n’analyse pas les messages électroniques d’un groupe spécifique de destinataires.|Chaque stratégie doit être associée à un ensemble d’utilisateurs, par exemple, les utilisateurs d’un groupe ou d’un domaine particulier.|
-|**Seuils de hameçonnage avancés**|Définit le niveau de gestion des messages d’hameçonnage.  <br/> **Standard**: le courrier électronique suspect d’être un hameçonnage est géré de manière standard.  <br/> **Agressif**: le système gère les e-mails suspects d’être hameçons avec un haut degré de confiance, de la même manière que ceux suspectés d’un très fort degré de confiance.  <br/> **Plus agressif**: le système gère les courriers électroniques suspects d’être hameçons avec un niveau de confiance moyen ou élevé, de la même manière que ceux suspectés d’un très fort degré de confiance.  <br/> La **plus agressive**: le système gère les e-mails suspects d’être hameçons avec un niveau de confiance faible, moyen ou élevé, de la même manière que ceux suspectés d’un très fort degré de confiance.|Si vous souhaitez être plus agressif dans le traitement des messages potentiellement hameçons dans Office 365. Par exemple, les messages dont la probabilité d’hameçonnage est très élevée sont les actions les plus agressives, tandis que les messages avec une faible probabilité ont des actions moins agressives. Ce paramètre a également un impact sur les autres parties du système de filtrage qui combinent des signaux. Cela ne signifie pas nécessairement que différentes actions sont implémentées.  Fondamentalement, vous définissez la probabilité de courrier en hameçonnage, afin de déterminer la (même) action désignée. Le risque de transfert de messages de qualité augmente à mesure que le niveau de paramètres augmente.|
+  - **Remise du message et ajout d’autres adresses à la ligne CCI**: remet le message aux destinataires concernés et remet en silence le message aux destinataires spécifiés.
 
-## <a name="learn-about-anti-phishing-policy-options"></a>En savoir plus sur les options de stratégie anti-hameçonnage
+  - **Supprimer le message avant qu’il ne soit remis**: supprime silencieusement le message entier, y compris toutes les pièces jointes.
 
-Lors de la configuration ou de la modification de votre anti-hameçonnage, vous pouvez choisir parmi plusieurs options, comme décrit dans le tableau suivant :
+- **Conseils de sécurité**: active ou désactive les conseils de sécurité d’emprunt d’identité suivants qui apparaîtront pour les messages qui échouent aux vérifications de l’emprunt d’identité :
 
-|**Ce paramètre**|**Effectue cette action**|**À utiliser lorsque vous souhaitez :**|
-|:-----|:-----|:-----|
-|**Appliqué à**|Définit les destinataires dont les messages électroniques entrants seront soumis aux règles de la stratégie. Vous pouvez créer des conditions et des exceptions pour les destinataires associés à la stratégie.  <br/> Par exemple, vous pouvez créer une stratégie globale pour votre organisation en appliquant la règle à tous les destinataires de votre domaine.  <br/> Vous pouvez également créer des règles d’exception, telles qu’une règle qui n’analyse pas les messages électroniques d’un groupe spécifique de destinataires.|Chaque stratégie doit être associée à un ensemble d’utilisateurs, par exemple, les utilisateurs d’un groupe ou d’un domaine particulier.|
-|**Choisir des actions**|Sélectionnez l’action à effectuer lorsque Office 365 détecte une tentative d’usurpation d’identité intra-organisation ou d’organisation externe auprès de vos utilisateurs. Ces actions s’appliquent à tous les messages électroniques entrants identifiés par Office 365 comme tentatives d’usurpation d’identité pour les utilisateurs qui sont protégés par cette stratégie anti-hameçonnage.  <br/> **Mettre en quarantaine le message** Le courrier électronique sera envoyé à la mise en quarantaine Office 365. Lorsque vous choisissez cette option, le courrier électronique n’est pas envoyé au destinataire d’origine.  <br/> **Déplacer le message vers le dossier courrier indésirable des destinataires** Le courrier électronique sera envoyé vers le dossier courrier indésirable des destinataires. Lorsque vous choisissez cette option, le courrier électronique est toujours envoyé au destinataire d’origine, mais il n’est pas placé dans la boîte de réception du destinataire.  <br/> **Ne pas appliquer d’action** Le courrier électronique sera remis dans la boîte de réception du destinataire d’origine. Aucune autre action n’est effectuée sur le message électronique.|Lorsque vous souhaitez effectuer une action sur les messages qu’Office 365 a déterminé comme étant une tentative d’usurpation de domaines internes ou externes, comme défini dans la stratégie.|
+  - **Utilisateurs empruntés**: l’adresse de l’utilisateur contient un utilisateur protégé.
+  - **Domaines empruntés**: l’adresse de provenance contient un domaine protégé.
+  - **Caractères inhabituels**: l’adresse de l’expéditeur contient des jeux de caractères inhabituels (par exemple, des symboles mathématiques, du texte ou une combinaison de majuscules et minuscules) dans un expéditeur ou un domaine protégé.
 
-Une fois que votre organisation a configuré des stratégies anti-hameçonnage ou des stratégies anti-hameçonnage ATP, vous pouvez voir comment le service fonctionne en [affichant des rapports pour une protection avancée contre les menaces](view-reports-for-atp.md).
+- **Intelligence des boîtes aux lettres**: active ou désactive l’intelligence artificielle (ai) qui détermine les modèles de courrier des utilisateurs avec leurs contacts fréquents. Ce paramètre permet à l’AI de faire la distinction entre les messages légitimes et falsifiés de ces contacts. La boîte aux lettres n’est disponible que pour les boîtes aux lettres Exchange Online.
 
-## <a name="example-anti-phishing-policy-to-protect-a-user-and-a-domain"></a>Exemple : stratégie anti-hameçonnage pour protéger un utilisateur et un domaine
+- **Protection contre l’usurpation d’identité basée sur les boîtes aux lettres**: active ou désactive les résultats d’emprunt d’identité améliorés en fonction du mappage d’expéditeur individuel de chaque utilisateur. Cette intelligence permet à Office 365 de personnaliser la détection de l’emprunt d’identité de l’utilisateur et de mieux gérer les faux positifs. Lorsque l’emprunt d’identité de l’utilisateur est détecté, vous pouvez définir une action spécifique à effectuer sur le message :
 
-Cet exemple définit une stratégie appelée « Domain and CEO » qui assure à la fois la protection des utilisateurs et des domaines à partir de l’emprunt d’identité, puis applique la stratégie à tous `contoso.com`les messages électroniques reçus par les utilisateurs au sein du domaine. L’administrateur de la sécurité a déterminé que la stratégie doit respecter les exigences suivantes :
+  - **Ne pas appliquer d’action**
+  - **Rediriger le message vers d’autres adresses de messagerie**
+  - **Déplacer le message dans le dossier Courrier indésirable**
+  - **Mettre en quarantaine le message**
+  - **Remise du message et ajout d’autres adresses à la ligne CCI**
+  - **Supprimer le message avant qu’il ne soit remis**
 
-- La stratégie doit fournir une protection pour le compte de messagerie du PDG et l’ensemble du domaine.
+- **Expéditeurs et domaines approuvés**: exceptions aux paramètres de protection contre l’emprunt d’identité. Les messages provenant des domaines des expéditeurs et des expéditeurs spécifiés ne sont jamais classés comme attaques par emprunt d’identité par la stratégie. En d’autres termes, l’action pour les expéditeurs protégés, les domaines protégés ou la protection contre les boîtes aux lettres n’est pas appliquée à ces expéditeurs approuvés ou domaines d’expéditeurs. La limite maximale de ces listes est d’environ 1000 entrées.
 
-- Les messages qui sont identifiés comme des tentatives d’emprunt d’identité auprès du compte d’utilisateur du PDG doivent être redirigés vers l’adresse e-mail de l’administrateur de la sécurité.
+### <a name="advanced-phishing-thresholds-in-atp-anti-phishing-policies"></a>Seuils de hameçonnage avancés dans les stratégies anti-hameçonnage ATP
 
-- Les messages qui sont identifiés comme des tentatives d’emprunt d’identité auprès du domaine sont moins urgents et doivent être mis en quarantaine à des fins de révision ultérieure.
+Les seuils de hameçonnage avancés suivants sont disponibles uniquement dans les stratégies anti-hameçonnage ATP pour indiquer comment traiter les messages de hameçonnage détectés :
 
-L’administrateur de la sécurité de Contoso peut utiliser des valeurs telles que les suivantes afin de créer une stratégie anti-hameçonnage qui répond à ces besoins.
+- **1-standard**: il s’agit de la valeur par défaut. La gravité de l’action effectuée sur le message dépend du degré de certitude que le message est de type hameçonnage (faible, moyenne, haute ou très élevée). Par exemple, les messages qui sont identifiés comme un hameçonnage avec un degré de confiance très élevé ont les actions les plus graves appliquées, tandis que les messages identifiés comme du hameçonnage avec un faible degré de confiance ont des actions moins graves appliquées.
 
-|||
-|:-----|:-----|
-|**Paramètre ou option**|**Exemple**|
-|Nom|Domaine et PDG|
-|Description|Assurez-vous que le PDG et le domaine ne sont pas empruntés.|
-|Ajouter des utilisateurs à protéger|L’adresse e-mail du PDG au minimum.|
-|Ajouter des domaines à protéger|Le domaine de l’organisation incluant le bureau du PDG.|
-|Choisir des actions|Si un message électronique est envoyé par un utilisateur représenté : choisissez **Rediriger le message vers une autre adresse de messagerie** , puis tapez l’adresse de messagerie de l’administrateur `securityadmin@contoso.com`de sécurité, par exemple.  <br/> Si le courrier électronique est envoyé par un domaine dont l’identité a été empruntée : sélectionnez **Mettre le message en quarantaine**.|
-|Veille des boîtes aux lettres|Par défaut, la veille des boîtes aux lettres est activée lorsque vous créez une stratégie anti-hameçonnage. Laissez ce paramètre **activé** pour obtenir de meilleurs résultats.|
-|Ajouter des expéditeurs et domaines de confiance|Pour cet exemple, ne définissez pas de remplacement.|
-|Appliqué à|Sélectionnez **Le domaine du destinataire est**. Sous **Un de ces éléments**, sélectionnez **Choisir**. Sélectionnez **+ Ajouter**. Sélectionnez la case à cocher en regard du nom du domaine, par `contoso.com`exemple, dans la liste, puis sélectionnez **Ajouter**. Sélectionnez **Terminé**.|
+- **2-agressif**: les messages identifiés comme du hameçonnage avec un haut degré de confiance sont traités comme s’ils étaient identifiés avec un très haut degré de confiance.
 
-## <a name="delete-an-anti-phishing-or-atp-anti-phishing-policy"></a>Supprimer une stratégie anti-hameçonnage ou anti-hameçonnage de protection avancée contre les menaces
+- **3-plus agressif**: les messages identifiés comme hameçonnage avec un niveau de confiance moyen ou élevé sont traités comme s’ils étaient identifiés avec un très haut degré de confiance.
 
-Vous pouvez supprimer des stratégies personnalisées que vous avez créées à &amp; l’aide du centre de sécurité et de conformité. Vous ne pouvez pas supprimer la stratégie par défaut pour votre organisation. Nous vous recommandons d’utiliser &amp; le centre de sécurité conformité pour consulter ou modifier toutes vos stratégies ATP.
+- **4-le plus agressif**: les messages identifiés comme hameçonnage avec un niveau de confiance faible, moyen ou élevé sont traités comme s’ils étaient identifiés avec un très haut degré de confiance.
 
-1. Accédez à [https://protection.office.com](https://protection.office.com) et connectez-vous avec votre compte professionnel ou scolaire.
-
-2. Dans le volet de navigation de gauche, sous **gestion des menaces**, sélectionnez **stratégie**.
-
-3. Sur la page **stratégie** **, choisissez anti-hameçonnage ou** **protection contre le hameçonnage**.
-
-4. Sur la page anti **-hameçonnage** ou **protection contre le hameçonnage** , sélectionnez le nom de la stratégie dans la liste.
-
-5. Sur la page qui s’affiche, sélectionnez **Supprimer la stratégie**. Autorisez jusqu’à 30 minutes pour que vos modifications soient diffusées sur tous les centres de calcul Office 365.
-
-## <a name="next-steps"></a>Étapes suivantes
-
-Une fois que vos stratégies anti-hameçonnage sont en place, vous pouvez voir le fonctionnement de vos fonctionnalités de protection contre les menaces pour votre organisation en affichant des rapports. Pour en savoir plus, consultez les ressources suivantes :
-
-- [Afficher des rapports pour Office 365 ATP](view-reports-for-atp.md) ou [afficher des rapports de sécurité de messagerie](view-email-security-reports.md)
-
-- [Utiliser l’Explorateur de menaces (ou les détections en temps réel)](threat-explorer.md)
-
-Restez au fait des nouvelles fonctionnalités disponibles dans la protection avancée contre les menaces. consultez la feuille de [route Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap?filters=O365) et découvrez les [nouvelles fonctionnalités qui sont ajoutées à](office-365-atp.md#new-features-in-office-365-atp)la protection avancée contre les menaces.
+Le risque de faux positifs (bons messages marqués comme incorrects) augmente à mesure que vous augmentez ce paramètre. Pour plus d’informations sur les paramètres recommandés, consultez la rubrique paramètres de la [stratégie anti-hameçonnage Office ATP](recommended-settings-for-eop-and-office365-atp.md#office-atp-anti-phishing-policy-settings).

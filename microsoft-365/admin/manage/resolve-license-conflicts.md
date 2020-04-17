@@ -20,12 +20,12 @@ search.appverid:
 - BEA160
 ms.assetid: 796f7eda-b1f8-479a-adee-bd9226ca47ec
 description: Découvrez comment résoudre les conflits de licences avec votre abonnement Office 365 pour les entreprises.
-ms.openlocfilehash: 9dbd483b01566039cb227cd3d2f086c3f6e34be5
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+ms.openlocfilehash: de0a6c988b9ca2ae033a24c012b7f36bc1db58a3
+ms.sourcegitcommit: 4988934836eee45c890b9bdd5ef73590656c78ba
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43212292"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "43540914"
 ---
 # <a name="resolve-license-conflicts-in-office-365-for-business"></a>Résoudre les conflits de licence dans Office 365 pour les entreprises
 
@@ -33,11 +33,24 @@ Nous vous recommandons d’acheter les licences dont vous avez besoin pour votre
   
 ## <a name="how-do-i-view-license-conflicts"></a>Comment afficher les conflits de licence ?
 
-1. Dans le centre d’administration, accédez à la page <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">licences</a> de **facturation** \> .
+::: moniker range="o365-worldwide"
 
-    Si vous utilisez Office 365 Germany, accédez à cette page de <a href="https://go.microsoft.com/fwlink/p/?linkid=848038" target="_blank">licences</a> .
+1. Dans le centre d’administration, accédez à la page <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">licences</a> de **facturation** > .
 
-    Si vous utilisez Office 365 géré par 21Vianet, accédez à cette page de <a href="https://go.microsoft.com/fwlink/p/?linkid=850625" target="_blank">licences</a> .
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+1. Dans le centre d’administration, accédez à la page <a href="https://go.microsoft.com/fwlink/p/?linkid=848038" target="_blank">licences</a> de **facturation** > .
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. Dans le centre d’administration, accédez à la page <a href="https://go.microsoft.com/fwlink/p/?linkid=850625" target="_blank">licences</a> de **facturation** > .
+
+::: moniker-end
+
 
 2. Vérifiez la colonne **État** pour obtenir des informations sur le conflit. En cas de conflit, un message d’avertissement s’affiche, indiquant qu’un ou plusieurs utilisateurs ont besoin d’une licence valide.
 

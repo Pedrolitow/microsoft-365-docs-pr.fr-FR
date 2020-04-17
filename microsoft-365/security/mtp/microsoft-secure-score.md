@@ -17,12 +17,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 2094549e63be0a8e3c2bbc7997de13475c19bb0c
-ms.sourcegitcommit: d1909d34ac0cddeb776ff5eb8414bfc9707d5ac1
+ms.openlocfilehash: f70d2f601dfb697d8affa8bb47148f6e454c5d8e
+ms.sourcegitcommit: 4988934836eee45c890b9bdd5ef73590656c78ba
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "43163897"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "43541094"
 ---
 # <a name="microsoft-secure-score"></a>Degré de sécurisation Microsoft
 
@@ -168,6 +168,8 @@ Pour vous assurer que le score de sécurité de Microsoft est significatif et qu
 - Découverte des applications informatiques de clichés instantanés risquées et non conformes
 - Passer en revue les autorisations & bloquer les applications OAuth à risque connectées à votre environnement
 - Configurer le contrôle de version sur les bibliothèques de documents SharePoint Online
+- Supprimer/bloquer les comptes non utilisés au cours des 30 derniers jours
+- Désigner moins de 5 administrateurs globaux
 
 #### <a name="removed-not-scored-improvement-actions"></a>Suppression des actions d’amélioration « non notées »
 

@@ -17,12 +17,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 61f066b2fff2798e78e6379bbca46e48e93ff017
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: 1a5c5ae702f16bbf47be83837cf244cdd64278cd
+ms.sourcegitcommit: 4988934836eee45c890b9bdd5ef73590656c78ba
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42895440"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "43541106"
 ---
 # <a name="whats-coming-in-microsoft-secure-score"></a>Qu’est-ce qui arrive dans le score de sécurité Microsoft ?
 
@@ -36,15 +36,15 @@ Pour en savoir plus sur les modifications récentes, consultez [la rubrique what
 
 Pour vous assurer que le score de sécurité de Microsoft est significatif et que chaque action d’amélioration est mesurable et fiable, nous supprimons les actions d’amélioration suivantes.
 
-- Supprimer/bloquer les comptes non utilisés au cours des 30 derniers jours
-- Désigner moins de 5 administrateurs globaux
 - Appliquer des protections IRM aux documents
 - Appliquer des stratégies de protection contre la perte de données
 
-### <a name="adding-additional-control-support-in-the-preview-version"></a>Ajout de la prise en charge de contrôles supplémentaires dans la version d’évaluation
+### <a name="adding-azure-ad-improvement-action-in-the-preview-version"></a>Ajout de l’action d’amélioration Azure AD dans la version d’évaluation
+
 - Ne pas autoriser les utilisateurs à accorder un consentement aux applications non gérées (actuellement disponible dans la version publiée)
 
-#### <a name="support-for-additional-microsoft-cloud-app-security-improvement-actions"></a>Prise en charge d’autres actions d’amélioration de la sécurité des applications Cloud Microsoft
+### <a name="adding-azure-atp-improvement-actions-in-the-preview-version"></a>Ajout d’actions d’amélioration ATP ATP dans la version d’évaluation
+
 - Désactiver le service spouleur d’impression sur les contrôleurs de domaine
 - Modifier les délégations Kerberos non sécurisées pour empêcher l’emprunt d’identité
 - Protéger et gérer les mots de passe d’administrateur local avec Microsoft couvre
@@ -56,5 +56,6 @@ Pour vous assurer que le score de sécurité de Microsoft est significatif et qu
 - Arrêter la communication des protocoles hérités
 - Arrêter l’utilisation du chiffrement faible
 
-#### <a name="support-for-microsoft-defender-atp-threat--vulnerability-management-tvm-security-recommendations"></a>Prise en charge des recommandations de sécurité de la & la gestion des vulnérabilités de Microsoft Defender ATP (TVM)
+### <a name="support-for-microsoft-defender-atp-threat--vulnerability-management-tvm-security-recommendations-in-the-preview-version"></a>Prise en charge des recommandations de sécurité de la & la gestion des vulnérabilités de Microsoft Defender ATP (TVM) dans la version d’évaluation
+
 - Toutes les recommandations de sécurité fournies par la TVM seront désormais également disponibles dans Microsoft Secure score

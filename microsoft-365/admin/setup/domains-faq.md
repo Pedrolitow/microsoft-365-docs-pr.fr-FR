@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: 1272bad0-4bd4-4796-8005-67d6fb3afc5a
 description: Pour plus d’informations sur les domaines dans Office 365, recherchez les réponses à vos questions dans FAQ.
 ms.custom: okr_smb
-ms.openlocfilehash: 5579cacaa789ca91d68616ffb89e37586f6a062f
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+ms.openlocfilehash: 5d5b921494ba59b78dec53047a31215a8e755f4c
+ms.sourcegitcommit: 4988934836eee45c890b9bdd5ef73590656c78ba
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43212196"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "43540866"
 ---
 # <a name="domains-faq"></a>Foire aux questions domaines
 
@@ -106,12 +106,24 @@ Oui, mais vous ne pouvez pas transférer un domaine Office 365 vers un autre bur
 Veuillez noter qu’une requête *Whois* affiche un bureau d’enregistrement de domaines Office 365 acheté comme sauvage West Domains LLC. Toutefois, seul Office 365 doit être contacté concernant votre domaine acheté Office 365.
   
 Suivez les étapes ci-dessous pour obtenir le code sur Office 365, puis accédez au site Web du Bureau d’enregistrement de domaine pour configurer le transfert de votre nom de domaine vers ce serveur d’inscriptions.
-  
+
+::: moniker range="o365-worldwide"
+
 1. Dans le centre d’administration, accédez à la page **Paramètres** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domaines</a>.
-    
-    Si vous utilisez Office 365 Germany, accédez à la page de ces <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">domaines</a> . 
-    
-    Si vous utilisez Office 365 géré par 21Vianet, accédez à la page de ce <a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">domaine</a> .
+
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+1. Dans le centre d’administration, accédez à la page **Paramètres** > <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">Domaines</a>.
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. Dans le centre d’administration, accédez à la page des <a href="https://go.microsoft.com/fwlink/p/?linkid=850625" target="_blank">licences</a> de **paramètres** > .
+
+::: moniker-end
     
 2. Sur la page **domaines** , sélectionnez le domaine Office 365 que vous souhaitez transférer vers un autre bureau d’enregistrement de domaines, puis sélectionnez **transfert** > de domaine activé pour le transfert de**domaine**.
        
@@ -136,12 +148,24 @@ Suivez les étapes ci-dessous pour obtenir le code sur Office 365, puis accédez
 2. Recherchez la zone sur le site Web du serveur d’inscriptions où vous mettez à jour les enregistrements de serveur de noms et mettez à jour les serveurs de noms pour qu’ils pointent vers l’hôte DNS de votre domaine. (L’hôte DNS est souvent le Bureau d’enregistrement de domaines.)
     
 3. Suivez un lien pour accéder à l’Assistant Configuration des domaines :
-    
+
+::: moniker range="o365-worldwide"
+
 4. Dans le centre d’administration, accédez à la page **Paramètres** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domaines</a>.
-    
-    Si vous utilisez Office 365 Germany, accédez à la page de ces <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">domaines</a> . 
-    
-    Si vous utilisez Office 365 géré par 21Vianet, accédez à la page de ce <a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">domaine</a> .
+
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+4. Dans le centre d’administration, accédez à la page **Paramètres** > <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">Domaines</a>.
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+4. Dans le centre d’administration, accédez à la page **Paramètres** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">Domaines</a>.
+
+::: moniker-end
     
 5. Dans la page **domaines** , sélectionnez le domaine que vous changez, puis sélectionnez **gestion DNS**.
     
@@ -153,12 +177,24 @@ Suivez les étapes ci-dessous pour obtenir le code sur Office 365, puis accédez
     
 
 ### <a name="change-dns-management-to-office-365"></a>Modifier la gestion du DNS vers Office 365
-  
-1. Dans le centre d’administration, accédez à la page **Paramètres** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domaines</a>.
-    
-    Si vous utilisez Office 365 Germany, accédez à la page de ces <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">domaines</a> . 
-    
-    Si vous utilisez Office 365 géré par 21Vianet, accédez à la page de ce <a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">domaine</a> .
+
+::: moniker range="o365-worldwide"
+
+1. Dans le centre d’administration, accédez à la page **paramètres** \> des <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">domaines</a> ..
+
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+1. Dans le centre d’administration, accédez à la page **Paramètres** > <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">Domaines</a>.
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. Dans le centre d’administration, accédez à la page **Paramètres** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">Domaines</a>.
+
+::: moniker-end
     
 2. Dans la page **domaines** , sélectionnez le domaine que vous changez, puis sélectionnez **gestion DNS**.
     
@@ -221,12 +257,24 @@ Fournisseurs qui prennent en charge tous les enregistrements DNS requis :
 ## <a name="how-do-i-set-or-change-the-default-domain-in-office-365"></a>Comment définir ou modifier le domaine par défaut dans Office 365 ?
 
 Vous devez avoir au moins un domaine personnalisé que vous avez ajouté à Office 365 avant de pouvoir choisir un domaine par défaut.
-  
+
+::: moniker range="o365-worldwide"
+
 1. Dans le centre d’administration, accédez à la page **Paramètres** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domaines</a>.
-    
-    Si vous utilisez Office 365 Germany, accédez à la page de ces <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">domaines</a> . 
-    
-    Si vous utilisez Office 365 géré par 21Vianet, accédez à la page de ce <a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">domaine</a> .
+
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+1. Dans le centre d’administration, accédez à la page **Paramètres** > <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">Domaines</a>.
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. Dans le centre d’administration, accédez à la page **Paramètres** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">Domaines</a>.
+
+::: moniker-end
     
 2. Dans la page **domaines** , sélectionnez le domaine que vous souhaitez définir par défaut pour les nouvelles adresses de messagerie. 
     
@@ -377,7 +425,7 @@ Vous pouvez, mais il existe des limitations :
         
     4. Dans la fenêtre qui s’ouvre, sélectionnez **relais interne**. 
         
-    5. Cliquez sur **Enregistrer**. Ce paramètre peut nécessiter quelques minutes. 
+    5. Sélectionnez **Enregistrer**. Ce paramètre peut nécessiter quelques minutes. 
     
 4. Si vous le souhaitez, débloquez le serveur de messagerie existant.
     

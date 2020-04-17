@@ -15,14 +15,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-ROBOTS: NOINDEX, NOFOLLOW
 description: Utilisez le modèle de détection des privilèges du client avocat pour utiliser la détection basée sur l’apprentissage automatique du contenu privilégié lors de l’examen du contenu dans un cas avancé de découverte électronique.
-ms.openlocfilehash: 8fb635e429af2ae4d796e9c847a34d949d8dd6d9
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: e8e64fac2994b515bf6bc582673fa7e47d427d02
+ms.sourcegitcommit: 9ed3283dd6dd959faeca5c22613f9126261b9590
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42079252"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "43528389"
 ---
 # <a name="set-up-attorney-client-privilege-detection-in-advanced-ediscovery"></a>Configuration de la détection des droits du client dans Advanced eDiscovery
 

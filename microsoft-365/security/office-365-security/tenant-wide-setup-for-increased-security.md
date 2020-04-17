@@ -17,12 +17,12 @@ ms.collection:
 search.appverid: MET150
 ms.assetid: 8d274fe3-db51-4107-ba64-865e7155b355
 description: Vous guide tout au long de la configuration recommandée pour les paramètres à l’échelle du client qui affectent la sécurité de votre environnement Office 365. Vos besoins en matière de sécurité peuvent nécessiter plus ou moins de sécurité. Utilisez ces recommandations comme point de départ.
-ms.openlocfilehash: 737a58c21811bf4d798c18f000c0e477b5667cef
-ms.sourcegitcommit: a7b2cd892cb65a61ee246268e1af2f8b9e526f6b
+ms.openlocfilehash: 56b2dad90b15c1d084edaa4477301e8ac4d4442d
+ms.sourcegitcommit: 9ed3283dd6dd959faeca5c22613f9126261b9590
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "43081255"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "43529012"
 ---
 # <a name="configure-your-office-365-tenant-for-increased-security"></a>Configurer votre client Office 365 pour une sécurité accrue
 
@@ -39,7 +39,7 @@ Le centre de sécurité Microsoft 365 inclut des fonctionnalités qui protègent
 ||||
 |---|---|---|
 |**Catégorie**|**Inclut une stratégie par défaut**|**Recommandation**|
-|**Anti-hameçonnage**|Oui| Si vous avez un domaine personnalisé, créez une stratégie anti-hameçonnage pour protéger les comptes de messagerie de vos utilisateurs les plus précieux, comme votre PDG, et pour protéger votre domaine. Consultez la rubrique relative à la [configuration d’une stratégie anti-hameçonnage](set-up-anti-phishing-policies.md) et créez une stratégie en vous reportant à l’exemple : « exemple : stratégie anti-hameçonnage pour protéger un utilisateur et un domaine ».|
+|**Anti-hameçonnage**|Oui|Si vous avez un domaine personnalisé, configurez la stratégie anti-hameçonnage par défaut pour protéger les comptes de messagerie de vos utilisateurs les plus précieux, tels que votre PDG, et pour protéger votre domaine. Examinez les [stratégies anti-hameçonnage dans office 365](set-up-anti-phishing-policies.md) et reportez-vous à [la rubrique Configurer la stratégie anti-hameçonnage par défaut dans EOP](configure-anti-phishing-policies-eop.md) ou [configurer des stratégies anti-hameçonnage ATP dans Office 365](configure-atp-anti-phishing-policies.md).|
 |**Moteur anti-programme malveillant**|Oui| Modifiez la stratégie par défaut : <br/> &ensp;&ensp;* Filtre de types de pièces jointes courantes — sélectionnez activé <br/><br/> Vous pouvez également créer des stratégies de filtrage des programmes malveillants personnalisées et les appliquer à des utilisateurs, des groupes ou des domaines spécifiés dans votre organisation. <br/><br/> Plus d’informations : <br/> &ensp;&ensp;* [Protection contre les programmes malveillants](anti-malware-protection.md) <br/> &ensp;&ensp;* [Configurer des stratégies anti-programmes malveillants](configure-anti-malware-policies.md)|
 |**Pièces jointes fiables ATP**|Non| Sur la page principale des pièces jointes fiables, protégez les fichiers dans SharePoint, OneDrive et Microsoft teams en activant cette case à cocher : <br/> &ensp;&ensp;* Activer la protection avancée contre les menaces pour SharePoint, OneDrive et Microsoft teams <br/><br/> Ajoutez une nouvelle stratégie de pièces jointes fiables avec ces paramètres : <br/> &ensp;&ensp;* Bloquer : bloquer les e-mails et pièces jointes en cours et à venir avec des programmes malveillants détectés (choisissez cette option) <br/> &ensp;&ensp;* Activer la redirection — (activez cette case à cocher et entrez une adresse de messagerie, comme un compte d’administrateur ou de mise en quarantaine) <br/> &ensp;&ensp;* Appliquer la sélection ci-dessus si l’analyse anti-programme malveillant pour les pièces jointes expire ou si une erreur se produit (cochez cette case) <br/> &ensp;&ensp;* Appliqué à : le domaine du destinataire est (sélectionnez votre domaine) <br/><br/>Plus d’informations : [Configuration des stratégies de pièces jointes approuvées pour Office 365 ATP](set-up-atp-safe-attachments-policies.md)|
 |**Liens fiables ATP**|Oui| Ajoutez ce paramètre à la stratégie par défaut pour l’ensemble de l’Organisation : <br/> &ensp;&ensp;* Utiliser des liens fiables dans : Office 365 ProPlus, Office pour iOS et Android (sélectionnez cette option). <br/><br/>Stratégie recommandée pour des destinataires spécifiques : <br/> &ensp;&ensp;* Les URL sont réécrites et vérifiées par rapport à une liste de liens malveillants connus lorsque l’utilisateur clique sur le lien (sélectionnez cette option). <br/> &ensp;&ensp;* Utiliser les pièces jointes approuvées pour analyser le contenu téléchargeable (activez cette case à cocher). <br/> &ensp;&ensp;* Appliqué à : le domaine du destinataire est (sélectionnez votre domaine). <br/><br/> Plus d’informations : [liens approuvés pour Office 365 ATP](atp-safe-links.md).|

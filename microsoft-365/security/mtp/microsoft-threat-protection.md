@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: 62901a08b8e040266a94967170674336eb1035c8
-ms.sourcegitcommit: 45ee610a380db113c2a50f6ea82d30137498babb
+ms.openlocfilehash: 0e51e52db4e569716954aada1c5cea35ddc6dd0a
+ms.sourcegitcommit: 9ed3283dd6dd959faeca5c22613f9126261b9590
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "42288592"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "43528368"
 ---
 # <a name="microsoft-threat-protection"></a>Protection Microsoft contre les menaces
 
@@ -31,7 +31,7 @@ ms.locfileid: "42288592"
 
 
 
-La protection de Microsoft contre les menaces est une suite de défense d’entreprise pré-et post-violation unifiée qui s’intègre de manière native sur les points de terminaison, les identités, les messages électroniques et les applications pour détecter, prévenir, examiner et répondre automatiquement aux attaques sophistiquées.  
+Microsoft Threat Protection est une suite unifiée de défense en entreprise pré-et post-violation qui coordonne de façon native la détection, la prévention, l’enquête et la réponse au-delà des points de terminaison, des identités, de la messagerie et des applications afin de fournir une protection intégrée contre les attaques sophistiquées.
 
 Avec la solution de protection Microsoft contre les menaces intégrée, les professionnels de la sécurité peuvent combiner les signaux de menace que chacun de ces produits reçoit et déterminer l’étendue et l’impact complets de la menace ; la manière dont il entre dans l’environnement, ce qu’il est affecté et la façon dont il influe actuellement sur l’organisation. Microsoft Threat Protection effectue une action automatique pour empêcher ou bloquer les boîtes aux lettres, les points de terminaison et les identités utilisateur affectés autoréparation.  
 

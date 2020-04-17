@@ -16,12 +16,12 @@ ms.assetid: fe0b9b8f-faa9-44ff-8095-4d1b2f507b74
 ms.collection:
 - M365-security-compliance
 description: Utilisez le nouveau tableau de bord de sécurité pour consulter l’état de protection contre les menaces d’Office 365, et afficher et agir sur les alertes de sécurité.
-ms.openlocfilehash: 1ef61f2a5e59db5c45a37bd9f8995b8c70675f30
-ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
+ms.openlocfilehash: bade9f1a0060fcd08458bd28eb276a0543f5d815
+ms.sourcegitcommit: db8702cf578b02c6fd6a2670c177b456efae4748
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/28/2020
-ms.locfileid: "43032839"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "43537400"
 ---
 # <a name="security-dashboard"></a>Tableau de bord de sécurité
 
@@ -33,7 +33,7 @@ Regardez la vidéo pour obtenir une vue d’ensemble, puis lisez cet article pou
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1VV3o]
 
-En fonction de l’abonnement Office 365 de votre organisation, le tableau de bord de sécurité inclut plusieurs widgets, tels que le résumé de la gestion des menaces, le statut de protection contre les menaces, des détections de menaces globales hebdomadaires, des programmes malveillants, etc., comme décrit dans le sections suivantes.
+En fonction de l’abonnement Office 365 de votre organisation, le tableau de bord de sécurité inclut plusieurs widgets, tels que le résumé de la gestion des menaces, le statut de protection contre les menaces, des détections de menaces globales hebdomadaires, des programmes malveillants, etc., comme décrit dans les sections suivantes.
 
 Pour afficher le tableau de bord de sécurité, dans le [Centre de sécurité & de sécurité Office 365](../../compliance/go-to-the-securitycompliance-center.md), accédez au **tableau de bord** **gestion** \> des menaces.
 
@@ -49,7 +49,7 @@ Le widget gestion des menaces explique en un clin d’œil comment votre organis
 Les informations que vous verrez dans le résumé de gestion des menaces dépendent de ce que comprend l’abonnement. Le tableau suivant décrit les informations incluses pour Office 365 E3 et Office 365 E5.
 |||
 |---|---|
-|**Office 365 E3**|**Office 365 E5**|
+|**Office 365 E3**|**Office 365 E5**|
 |Messages malveillants bloqués<br/>Messages d’hameçonnage bloqués<br>Messages signalés par les utilisateurs<br><br><br><br>|Messages malveillants bloqués<br>Messages d’hameçonnage bloqués<br>Messages signalés par les utilisateurs<br>Blocage des programmes malveillants de jour zéro<br>Messages d’hameçonnage avancés détectés<br>URL malveillantes bloquées|
 |
 
@@ -67,7 +67,7 @@ Les détails varient selon que votre abonnement Office 365 inclut ou non [Exchan
 |---|---|
 |**Si votre abonnement inclut...**|**Ces détails s’affichent.**|
 |EOP mais pas Office 365 ATP|Courrier électronique malveillant détecté et bloqué par EOP.<br><br> Consultez la rubrique [Threat Protection Status Report (EoP)](view-email-security-reports.md#threat-protection-status-report).|
-|Office 365 – Protection avancée contre les menaces|Contenu malveillant et courrier involontaire détecté et bloqué par EOP et Office 365 ATP<br><br>Nombre agrégé de messages électroniques uniques dont le contenu malveillant est bloqué par le moteur anti-programme malveillant, la [purge automatique avec suppression automatique des heures d’heure](zero-hour-auto-purge.md)et les fonctionnalités ATP (y compris les [liens fiables](atp-safe-links.md), [les pièces jointes fiables](atp-safe-attachments.md)et l' [anti-hameçonnage ATP](atp-anti-phishing.md)).<br><br>Consultez la rubrique [Threat Protection Status Report (ATP)](view-reports-for-atp.md#threat-protection-status-report).|
+|Office 365 – Protection avancée contre les menaces|Contenu malveillant et courrier involontaire détecté et bloqué par EOP et Office 365 ATP<br><br>Nombre agrégé de messages électroniques uniques dont le contenu malveillant est bloqué par le moteur anti-programme malveillant, la [purge automatique avec suppression automatique des heures d’heure](zero-hour-auto-purge.md)et les fonctionnalités ATP (y compris les [liens fiables](atp-safe-links.md), [les pièces jointes fiables](atp-safe-attachments.md)et l' [anti-hameçonnage ATP](set-up-anti-phishing-policies.md#exclusive-settings-in-atp-anti-phishing-policies)).<br><br>Consultez la rubrique [Threat Protection Status Report (ATP)](view-reports-for-atp.md#threat-protection-status-report).|
 |
 
 Pour afficher ou accéder au widget d’État protection contre les menaces, vous devez disposer des autorisations permettant d’afficher les rapports de protection avancée contre les menaces. Pour en savoir plus, consultez [la rubrique Quelles autorisations sont requises pour afficher les rapports ATP ?](view-reports-for-atp.md#what-permissions-are-needed-to-view-the-atp-reports).
@@ -121,7 +121,7 @@ Pour afficher ou accéder au widget courrier électronique envoyé et reçu, vou
 
 Pour afficher ou accéder au widget alertes de gestion des menaces récentes, vous devez disposer des autorisations pour afficher les alertes. Pour en savoir plus, consultez la rubrique [autorisations RBAC requises pour afficher les alertes](../../compliance/alert-policies.md#rbac-permissions-required-to-view-alerts).
 
-## <a name="related-topics"></a>Sujets associés
+## <a name="related-topics"></a>Voir aussi
 
 [Afficher les rapports de sécurité de courrier dans le centre de sécurité et conformité](view-email-security-reports.md)
 

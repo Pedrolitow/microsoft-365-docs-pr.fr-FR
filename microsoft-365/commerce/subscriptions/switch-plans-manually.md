@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: eb0d0680-5677-41a0-8c46-4b9d47f1c209
 ROBOTS: NOINDEX
 description: Changez manuellement les abonnements Office 365 pour les entreprises en achetant un nouvel abonnement et en vous assurant que les abonnements sont répertoriés et actifs.
-ms.openlocfilehash: 9a0c382abf1e61f1b31cb358529925053d037be4
-ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
+ms.openlocfilehash: a652053b204e84f8f2d3973eba76ead1cc7c1410
+ms.sourcegitcommit: 4988934836eee45c890b9bdd5ef73590656c78ba
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43142102"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "43540842"
 ---
 # <a name="switch-office-365-for-business-plans-manually"></a>Changer manuellement les offres Office 365 pour les entreprises
 
@@ -64,11 +64,23 @@ Assurez-vous que vous achetez un abonnement pour la même organisation que les u
   
 ## <a name="step-3-check-your-new-subscription-and-licenses"></a>Étape 3 : vérifier votre nouvel abonnement et vos nouvelles licences
 
+::: moniker range="o365-worldwide"
+
 1. Dans le Centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Abonnements</a>.
 
-    Si vous utilisez Office 365 Allemagne, accédez à cette page <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Abonnements</a>.
+::: moniker-end
 
-    Si vous utilisez Office 365 géré par 21Vianet, accédez à cette page <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Abonnements</a>.
+::: moniker range="o365-germany"
+
+1. Dans le Centre d’administration, accédez à la page **Facturation** > <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Abonnements</a>.
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. Dans le Centre d’administration, accédez à la page **Facturation** > <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Abonnements</a>.
+
+::: moniker-end
 
 2. **Vérifier que les deux abonnements sont répertoriés et actifs**
 
@@ -102,11 +114,23 @@ Les licences pour l’abonnement actuel seront supprimées ultérieurement ; vo
 
 ### <a name="reassign-a-license-for-one-user"></a>Réattribuer une licence pour un utilisateur
 
-1. Dans le Centre d’administration, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utilisateurs actifs</a>.
+::: moniker range="o365-worldwide"
 
-    Si vous utilisez Office 365 Allemagne, accédez à cette page <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Utilisateurs actifs</a>.
+1. Dans le Centre d’administration, accédez à la page **Utilisateurs >** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utilisateurs actifs</a>.
 
-    Si vous utilisez Office 365 géré par 21Vianet, accédez à cette page <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Utilisateurs actifs</a>.
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+1. Dans le Centre d’administration, accédez à la page **Utilisateurs >** > <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Utilisateurs actifs</a>.
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. Dans le Centre d’administration, accédez à la page **Utilisateurs >** > <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Utilisateurs actifs</a>.
+
+::: moniker-end
 
 2. Sur la page **utilisateurs actifs** , activez la case à cocher en regard du nom de l’utilisateur auquel vous souhaitez attribuer une licence.
 
@@ -125,11 +149,23 @@ Les licences pour l’abonnement actuel seront supprimées ultérieurement ; vo
 
 ### <a name="reassign-licenses-for-multiple-users-at-once"></a>Réattribuer des licences pour plusieurs utilisateurs à la fois
 
+::: moniker range="o365-worldwide"
+
 1. Dans le centre d’administration, accédez à la page <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">utilisateurs actifs</a> **ou sélectionnez** \> utilisateurs **actifs**.
 
-    Si vous utilisez Office 365 Allemagne, accédez à cette page <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Utilisateurs actifs</a>.
+::: moniker-end
 
-    Si vous utilisez Office 365 géré par 21Vianet, accédez à cette page <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Utilisateurs actifs</a>.
+::: moniker range="o365-germany"
+
+1. Dans le centre d’administration, > accédez **à la page utilisateurs** <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">actifs active</a> Users.
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. Dans le Centre d’administration, accédez à la page **Utilisateurs >** > <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Utilisateurs actifs</a>.
+
+::: moniker-end
 
 2. Cochez les cases en regard des noms des utilisateurs pour lesquels vous souhaitez remplacer les licences existantes.
 
