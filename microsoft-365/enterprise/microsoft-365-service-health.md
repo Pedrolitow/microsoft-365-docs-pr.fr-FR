@@ -16,18 +16,18 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: État d'intégrité du service Microsoft 365
-ms.openlocfilehash: 16621bc266684397da5fa92e953067e1e8342b4e
-ms.sourcegitcommit: 8959701cf009068b40da2757b4a61da61d5c166b
+ms.openlocfilehash: c1b938a91b4f0e43e51595ec877e57e7654c5232
+ms.sourcegitcommit: 4988934836eee45c890b9bdd5ef73590656c78ba
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43207162"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "43540808"
 ---
 # <a name="microsoft-365-network-health-status"></a>État d’intégrité du réseau Microsoft 365
 
-En raison de la demande accrue pour les services Cloud de Microsoft pendant la crise COVID-19, nous fournissons des informations sur l'intégrité du réseau mondial de Microsoft ainsi que des informations sur les problèmes de qualité du réseau que nos clients sont susceptibles de rencontrer mais qui échappent à notre contrôle.
+En raison de la demande accrue pour les services cloud de Microsoft pendant la crise COVID-19, nous fournissons des informations sur l'intégrité du réseau mondial de Microsoft ainsi que des informations sur les problèmes de qualité du réseau que nos clients sont susceptibles de rencontrer mais qui échappent à notre contrôle.
 
-Ces informations incluent les problèmes de réseau qui affectent tous nos logiciels en tant qu'offres de services, notamment Office 365.
+Ces informations incluent les problèmes de réseau qui affectent tous nos logiciels en tant qu'offres de services, notamment Office 365.
 
 _Les mises à jour de cette page peuvent connaître des retards. Nous procédons donc à une mise à jour manuelle pendant que nous élaborons une solution plus automatisée._
 
@@ -37,12 +37,12 @@ Dès que nous détectons des problèmes importants au sein du réseau mondial de
 
 | Emplacement | Type de problème | Détails |
 | --- | --- | --- |
-| **Aucun problème actuel**  |  |  |
+| Mexique | Infrastructure du fournisseur de services Internet (externe) | Les problèmes de disponibilité détectés dans une infrastructure de fournisseur de services Internet au Mexique peuvent entraîner une expérience médiocre de l’utilisateur de Microsoft 365. Pour plus d’informations, consultez le tableau de bord État du service. |
 
 ## <a name="recommendations-to-improve-network-experience"></a>Recommandations pour améliorer l'expérience du réseau
 
 Utilisez ces ressources pour améliorer l’utilisation de votre réseau pour les services Microsoft.
 
-- [Optimiser la connectivité d’Office 365 pour les utilisateurs distants à l’aide de la segmentation de tunnel VPN](https://docs.microsoft.com/office365/enterprise/office-365-vpn-split-tunnel)
-- [Principes de connectivité réseau d’Office 365](https://aka.ms/pnc)
+- [Optimiser la connectivité d’Office 365 pour les utilisateurs à distance à l’aide de la segmentation de tunnel VPN](https://docs.microsoft.com/office365/enterprise/office-365-vpn-split-tunnel)
+- [Principes de connectivité réseau d’Office 365](https://aka.ms/pnc)
 - [Travailler à distance à l’aide des services réseau Azure](https://docs.microsoft.com/azure/networking/working-remotely-support)

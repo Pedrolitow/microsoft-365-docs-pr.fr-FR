@@ -25,12 +25,12 @@ ms.custom:
 - OKR_SMB_Videos
 ms.assetid: 2ae3ea58-4fce-4592-91d6-46e9ae3ec218
 description: Recherchez votre facture ou relevé de facturation dans le Centre d’administration Microsoft 365. Vous pouvez également enregistrer et imprimer une copie de votre facture.
-ms.openlocfilehash: 5982e65ce9720b85d29126986cfcb8123b4aef5f
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: fa3809e588bca50ae0ffd7e5dfc060bbc91a4bd6
+ms.sourcegitcommit: 4988934836eee45c890b9bdd5ef73590656c78ba
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42253523"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "43540854"
 ---
 # <a name="view-your-bill-or-invoice"></a>Consulter votre facture
 
@@ -50,10 +50,23 @@ Si vous avez trouvé cette vidéo utile, consultez les [séries de formations co
   
 ## <a name="view-a-bill-or-invoice"></a>Consulter une facture
 
+::: moniker range="o365-worldwide"
 
 1. Dans le Centre d’administration, accédez à la page **Factures** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=848039" target="_blank">Factures & paiements</a>.
 
-    Si vous utilisez Office 365 Allemagne, accédez à cette page <a href="https://go.microsoft.com/fwlink/p/?linkid=848040" target="_blank">Factures e& paiements</a>.
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+1. Dans le Centre d’administration, accédez à la page **Factures** > <a href="https://go.microsoft.com/fwlink/p/?linkid=848040" target="_blank">Factures & paiements</a>.
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. Dans le Centre d’administration, accédez à la page **Factures** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2127421" target="_blank">Factures & paiements</a>.
+
+::: moniker-end
 
 2. Sélectionnez une plage de dates dans la liste déroulante, puis choisissez la commande que vous voulez afficher.
 

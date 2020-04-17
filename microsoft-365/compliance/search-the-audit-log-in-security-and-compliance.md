@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: "Utilisez le Centre de sécurité et conformité pour rechercher dans le journal d’audit unifié les activités des utilisateurs et des administrateurs de votre organisation Office 365.\n "
-ms.openlocfilehash: 9fb37cba0e7e9774b4de5c559b7bc0636b599776
-ms.sourcegitcommit: 311bbd6f168225ede166d29696126a1e003eee0f
+ms.openlocfilehash: f1fcfd883cb8becea861b6fcebcf59d61b104750
+ms.sourcegitcommit: 09c3e2f3129c5e43cd8420cccd0676ff3a29a355
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "43151439"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "43521490"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>Effectuer des recherches dans le journal d’audit depuis le Centre de sécurité et conformité 
 
@@ -696,7 +696,7 @@ Le tableau suivant répertorie les activités qui résultent des professionnels 
 |Recherche de la révision supprimée|DeleteWorkingSetSearch|Un utilisateur a supprimé une requête de recherche dans un groupe de révision.|
 |Balise supprimée|DeleteTag|Un utilisateur a supprimé une balise ou une balise de groupe dans un groupe de révision.|
 |Document téléchargé|DownloadDocument|Un utilisateur a téléchargé un document à partir d’un groupe de révision.|
-|Balise modifiée|DownloadDocument|Un utilisateur a modifié une balise dans un groupe de révision.|
+|Balise modifiée|UpdateTag|Un utilisateur a modifié une balise dans un groupe de révision.|
 |Exporter des documents d’un groupe de révision|ExportJob|L’utilisateur a exporté les documents à partir d’un groupe de révision.|
 |Paramètre de casse modifié|UpdateCaseSettings|L’utilisateur a modifié les paramètres de casse. Les paramètres de casse incluent les informations de casse, les autorisations d’accès et les paramètres qui contrôlent le comportement des recherches et analyses.|
 |Configuration de la recherche de révision modifiée|UpdateWorkingSetSearch|Un utilisateur a modifié une requête de recherche dans un groupe de révision.|
@@ -893,9 +893,9 @@ Le tableau suivant répertorie les événements provoquant des activités d’é
 |:-----|:-----|:-----|
 |Étiquette de confidentialité appliquée au site|SensitivityLabelApplied|Une étiquette de confidentialité a été appliquée à un site SharePoint ou Teams.|
 |Suppression de l'étiquette de confidentialité sur le site|SensitivityLabelRemoved|Une étiquette de confidentialité a été supprimée sur un site SharePoint ou Teams.|
-|Étiquette de confidentialité appliquée au fichier|FileSensitivityLabelApplied|Une étiquette de confidentialité a été appliquée à un document à l’aide d’Office sur le web.|
-|Étiquette de confidentialité modifiée appliquée au fichier|FileSensitivityLabelChanged|Une étiquette de confidentialité différente a été appliquée à un document à l’aide d’Office sur le Web.|
-|Suppression de l'étiquette de confidentialité sur le document|FileSensitivityLabelRemoved|Une étiquette de confidentialité a été supprimée d’un document à l’aide d’Office sur le web.|
+|Étiquette de confidentialité appliquée au fichier|FileSensitivityLabelApplied|Une étiquette de confidentialité a été appliquée à un document à l’aide d’Office sur le web ou d’une stratégie d’attribution automatique d’étiquette.|
+|Étiquette de confidentialité modifiée appliquée au fichier|FileSensitivityLabelChanged|Une étiquette de confidentialité différente a été appliquée à un document à l’aide d’Office sur le web ou d’une stratégie d’attribution automatique d’étiquette.|
+|Suppression de l'étiquette de confidentialité sur le document|FileSensitivityLabelRemoved|Une étiquette de confidentialité a été supprimée d’un document à l’aide d’Office sur le web ou d’une stratégie d’attribution automatique d’étiquette.|
 ||||
 
 ### <a name="exchange-admin-audit-log"></a>Journal d’audit de l’administrateur Exchange

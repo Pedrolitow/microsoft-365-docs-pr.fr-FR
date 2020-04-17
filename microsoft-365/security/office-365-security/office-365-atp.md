@@ -17,12 +17,12 @@ ms.assetid: e100fe7c-f2a1-4b7d-9e08-622330b83653
 ms.collection:
 - M365-security-compliance
 description: Office 365 – Protection avancée contre les menaces inclut des pièces jointes sécurisées, des liens sûrs, des outils anti-hameçonnage avancés, des outils de création de rapports et des fonctionnalités d’intelligence contre les menaces.
-ms.openlocfilehash: aac4cb43386577851d74e424d6435d0c15762bab
-ms.sourcegitcommit: 9afcc63b1a7e73f6946f67207337f10b71a5d7f3
+ms.openlocfilehash: 34dc541087eb05af6b688670112cf02489164fb1
+ms.sourcegitcommit: 9ed3283dd6dd959faeca5c22613f9126261b9590
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "42612604"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "43528604"
 ---
 # <a name="office-365-advanced-threat-protection"></a>Office 365 – Protection avancée contre les menaces
 
@@ -45,9 +45,11 @@ Office 365 – Protection avancée contre les menaces (ATP) protège votre orga
 
 Le tableau suivant récapitule les actions incluent dans chaque plan.
 
-|Office 365 – Protection avancée contre les menaces (Plan 1) |Office 365 – Protection avancée contre les menaces (Plan 2)|
-|---------|---------|
-|Fonctionnalités de configuration, de protection et de détection :<br/>- [Pièces jointes fiables](atp-safe-attachments.md)<br/>- [Liens fiables](atp-safe-links.md)<br/>- [ATP pour SharePoint, OneDrive et Microsoft Teams](atp-for-spo-odb-and-teams.md)<br/>- [Protection avancée contre le hameçonnage](atp-anti-phishing.md)<br/>- [Détections en temps réel](threat-explorer.md)     |Fonctionnalités de l’offre Office 365 - Protection avancée contre les menaces (plan 1)<br/>--- plus ---<br/>Fonctionnalités d’automatisation, d’examen, de correction et de formation :<br/>- [Suivis de menace](threat-trackers.md)<br/>- [Explorateur de menaces](threat-explorer.md)<br/>- [Enquêtes et réponses automatisées](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air)<br/>- [Simulateur d’attaques](attack-simulator.md)|
+|||
+|---|---|
+|**Office 365 – Protection avancée contre les menaces (Plan 1)**|**Office 365 – Protection avancée contre les menaces (Plan 2)**|
+|Fonctionnalités de configuration, de protection et de détection :<br/>• [Pièces jointes fiables](atp-safe-attachments.md)<br/>• [Liens fiables](atp-safe-links.md)<br/>• [PACM pour SharePoint, OneDrive et Microsoft Teams](atp-for-spo-odb-and-teams.md)<br/>• [Protection anti-hameçonnage](set-up-anti-phishing-policies.md#exclusive-settings-in-atp-anti-phishing-policies)<br/>• [Détections en temps réel](threat-explorer.md)|Fonctionnalités de l’offre Office 365 - Protection avancée contre les menaces (plan 1)<br/>--- plus ---<br/>Fonctionnalités d’automatisation, d’examen, de correction et de formation :<br/>• [Suivis de menace](threat-trackers.md)<br/>• [Explorateur de menaces](threat-explorer.md)<br/>• [Enquêtes et réponses automatisées](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air)<br/>• [Simulateur d’attaques](attack-simulator.md)|
+|
 
 - Office 365 – Protection avancée contre les menaces (Plan 2) est inclus dans Office 365 E5, Office 365 a5 et Microsoft 365 E5.
 
@@ -72,7 +74,7 @@ Les stratégies définies pour votre organisation déterminent le comportement e
 
 - **[ATP pour SharePoint, OneDrive, and Microsoft Teams](atp-for-spo-odb-and-teams.md)**  : protège votre organisation lorsque les utilisateurs collaborent et partagent des fichiers, en identifiant et en bloquant les fichiers malveillants dans les sites d’équipe et les bibliothèques de documents. Pour obtenir plus d’informations, consultez l’article [Activer Office 365 ATP pour SharePoint, OneDrive et Microsoft Teams](turn-on-atp-for-spo-odb-and-teams.md).
 
-- **[Protection anti-hameçonnage ATP](atp-anti-phishing.md)**  : détecte les tentatives d’usurpation d’identité entre vos utilisateurs et les domaines personnalisés. Cela permet d’appliquer des modèles de machine learning et des algorithmes avancés de détection de l’emprunt d’identité pour contrer des attaques par hameçonnage. Pour en savoir plus, reportez-vous à [Configuration de l’anti-hameçonnage d’Office 365 – Protection avancée contre les menaces et des stratégies anti-hameçonnage](set-up-anti-phishing-policies.md).
+- **[Protection anti-hameçonnage ATP](set-up-anti-phishing-policies.md#exclusive-settings-in-atp-anti-phishing-policies)**  : détecte les tentatives d’usurpation d’identité entre vos utilisateurs et les domaines internes ou personnalisés. Cela permet d’appliquer des modèles de machine learning et des algorithmes avancés de détection de l’emprunt d’identité pour contrer des attaques par hameçonnage. Pour plus d’informations, voir [Configurer les stratégies anti-hameçonnage de protection avancée contre les menaces dans Office 365](configure-atp-anti-phishing-policies.md).
 
 ## <a name="view-office-365-atp-reports"></a>Afficher les rapports d’Office 365 ATP – Protection avancée contre les menaces.
 

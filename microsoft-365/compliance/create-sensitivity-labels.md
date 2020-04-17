@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: "Une exigence pour l'ensemble des solutions Microsoft Information Protection : créer, configurer et publier des étiquettes de confidentialité afin de classer et protéger les documents et messages électroniques de votre organisation."
-ms.openlocfilehash: 196efe65eda1265d6f2c0578d1f444709dadb26c
-ms.sourcegitcommit: d767c288ae34431fb046f4cfe36cec485881385f
+ms.openlocfilehash: 39e83c74d2df8d0efe12225600813ef8007833e2
+ms.sourcegitcommit: 9ed3283dd6dd959faeca5c22613f9126261b9590
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "43516819"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "43528347"
 ---
 # <a name="create-and-configure-sensitivity-labels-and-their-policies"></a>Créer et configurer des étiquettes de confidentialité et leurs stratégies.
 
@@ -138,7 +138,7 @@ Set-Label -Identity $Label -LocaleSettings (ConvertTo-Json $TooltipLocaleSetting
 
 6. Suivez les invites pour configurer les paramètres de stratégie.
     
-    Pour plus d’informations sur les paramètres, voir [Fonction des stratégies d'étiquette](sensitivity-labels.md#what-label-policies-can-do) à partir des informations générales.
+    Pour plus d’informations sur ces paramètres, voir [Fonction des stratégies d'étiquette](sensitivity-labels.md#what-label-policies-can-do) à partir des informations générales.
 
 7. Répétez ces étapes si vous avez besoin d'autres paramètres de stratégie pour des utilisateurs ou des emplacements différents. Par exemple, vous souhaitez employer d’autres étiquettes pour un groupe d’utilisateurs, ou une étiquette par défaut différente pour un sous-ensemble d’utilisateurs.
 
