@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Utilisez les étiquettes de confidentialité pour protéger le contenu des sites SharePoint et Microsoft Teams, ainsi que des groupes Office 365.
-ms.openlocfilehash: 0ac1d9f605c32664115086057b7c17355d495c00
-ms.sourcegitcommit: e695bcfc69203da5d3d96f3d6a891664a0e27ae2
+ms.openlocfilehash: 4daf35af28e0339c66271c69487d3da9c1e4c91e
+ms.sourcegitcommit: 0da80ba7b504841c502ab06fea659a985c06fe8f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43106132"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "43547596"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-office-365-groups-and-sharepoint-sites-public-preview"></a>Utiliser les étiquettes de confidentialité pour protéger le contenu dans Microsoft Teams, les groupes Office 365 et les sites SharePoint (préversion publique)
 
@@ -54,7 +54,9 @@ Après avoir activé et configuré cette préversion, les utilisateurs peuvent �
 
 1. Cette fonctionnalité utilisant une fonctionnalité Azure Active Directory, suivez les instructions de la documentation Azure Active Directory pour activer la préversion : [Attribuer des étiquettes de confidentialité à des groupes Office 365 dans Azure Active Directory (préversion)](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-assign-sensitivity-labels).
 
-2. Ouvrez une session PowerShell avec l’option **Exécuter en tant qu’Administrateur**, puis connectez-vous au Centre de Sécurité & de Conformité à l’aide d’un compte professionnel ou scolaire disposant de privilèges d’administrateur général. Par exemple :
+2. [Connectez-vous au Centre de sécurité et conformité Office 365 PowerShell](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell). 
+    
+    Par exemple, dans une session PowerShell exécutée en tant qu’administrateur, connectez-vous à l’aide d’un compte d’administrateur général :
     
     ```powershell
     Set-ExecutionPolicy RemoteSigned
@@ -62,8 +64,6 @@ Après avoir activé et configuré cette préversion, les utilisateurs peuvent �
     $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.compliance.protection.outlook.com/powershell-liveid/ -Credential $UserCredential -Authentication Basic -AllowRedirection
     Import-PSSession $Session -DisableNameChecking
     ```
-    
-    Si vous souhaitez voir les instructions détaillées, consultez [Se connecter au Centre de sécurité et conformité Office 365 Powershell](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
 
 3. Exécutez la commande suivante pour synchroniser vos étiquettes de confidentialité avec Azure AD afin de pouvoir les utiliser avec des groupes Office 365 :
     
@@ -183,30 +183,44 @@ Pour afficher les étiquettes de confidentialité appliquées, utilisez la page 
 
 ## <a name="change-site-and-group-settings-for-a-label"></a>Modifier les paramètres de site et de groupe pour une étiquette
 
-Lorsque vous apportez des modifications aux paramètres de site et de groupe pour une étiquette, vous devez exécuter les commandes PowerShell suivantes pour que vos équipes, sites et groupes puissent employer les nouveaux paramètres. Nous vous conseillons de ne pas modifier les paramètres de site et de groupe pour une étiquette une fois que vous avez appliqué l'étiquette à plusieurs équipes, groupes ou sites.
+Lorsque vous apportez des modifications aux paramètres de site et de groupe pour une étiquette, vous devez exécuter les commandes PowerShell suivantes pour que vos équipes, sites et groupes puissent employer les nouveaux paramètres. Nous vous conseillons de ne pas modifier les paramètres de site et de groupe pour une étiquette une fois que vous avez appliqué l’étiquette de confidentialité à plusieurs équipes, groupes ou sites.
 
-1. Dans une session PowerShell que vous ouvrez à l’aide de l’option **Exécuter en tant qu’Administrateur**, exécutez les commandes suivantes pour vous connecter au Centre de sécurité et conformité Office 365 PowerShell et obtenir la liste des étiquettes de confidentialité et leurs GUID.
+1. Tout d’abord,[connectez-vous au Centre de sécurité et conformité Office 365 PowerShell](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell). 
+    
+    Par exemple, dans une session PowerShell exécutée en tant qu’administrateur, connectez-vous à l’aide d’un compte d’administrateur général :
     
     ```powershell
     Set-ExecutionPolicy RemoteSigned
     $UserCredential = Get-Credential
-    $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.compliance.protection.outlook.com/powershell-liveid -Authentication Basic -AllowRedirection -Credential $UserCredential
-    Import-PSSession $Session
+    $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.compliance.protection.outlook.com/powershell-liveid/ -Credential $UserCredential -Authentication Basic -AllowRedirection
+    Import-PSSession $Session -DisableNameChecking
+    ```
+
+2. Obtenez la liste des étiquettes de confidentialité et leurs GUID à l’aide de l’applet de commande [Get-Label](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/get-label?view=exchange-ps) :
+    
+    ```powershell
     Get-Label |ft Name, Guid
     ```
 
-2. Notez le GUID de l’étiquette ou des étiquettes que vous avez modifiées.
+3. Notez le GUID de l’étiquette ou des étiquettes que vous avez modifiées.
 
-3. Connectez-vous à Exchange Online PowerShell et exécutez l’applet de commande Get-UnifiedGroup, en indiquant votre GUID d’étiquette à la place du GUID d’exemple de « e48058ea-98e8-4940-8db0-ba1310fd955e » : 
+4. [Connectez-vous à Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps).
+    
+    Par exemple :
     
     ```powershell
     $UserCredential = Get-Credential
     $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://outlook.office365.com/powershell-liveid/ -Credential $UserCredential -Authentication Basic -AllowRedirection
     Import-PSSession $Session
+    ```
+    
+5. Exécutez l’applet de commande [Get-UnifiedGroup](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/get-unifiedgroup?view=exchange-ps), en indiquant votre GUID d’étiquette à la place du GUID d’exemple de « e48058ea-98e8-4940-8db0-ba1310fd955e » : 
+    
+    ```powershell
     $Groups= Get-UnifiedGroup | Where {$_.SensitivityLabel  -eq "e48058ea-98e8-4940-8db0-ba1310fd955e"}
     ```
 
-4. Réappliquez l’étiquette de confidentialité pour chaque groupe, en spécifiant le GUID de votre étiquette à la place du GUID de l’exemple de « e48058ea-98e8-4940-8db0-ba1310fd955e » :
+6. Réappliquez l’étiquette de confidentialité pour chaque groupe, en spécifiant le GUID de votre étiquette à la place du GUID de l’exemple de « e48058ea-98e8-4940-8db0-ba1310fd955e » :
     
     ```powershell
     foreach ($g in $groups)
@@ -240,7 +254,7 @@ Les autres services et applications dans lesquels vous ne pouvez pas à ce jour 
 - Centre d’administration Exchange
 
 
-## <a name="classic-azure-ad-site-classification"></a>Classification classique de sites Azure Active Directory
+## <a name="classic-azure-ad-group-classification"></a>Classification classique de groupes Azure Active Directory
 
 Office 365 ne prend plus en charge les anciennes classifications pour les nouveaux groupes et les sites SharePoint lorsque vous activez cette préversion. Toutefois, les groupes et sites existants affichent encore les anciennes classifications, sauf si vous les convertissez pour utiliser des étiquettes de confidentialité. Les anciennes classifications incluent la classification de sites « moderne » que vous avez configurée, par l’intermédiaire d’Azure AD PowerShell ou de la bibliothèque principale PnP, qui a défini des valeurs pour le paramètre `ClassificationList`.
 
@@ -250,7 +264,7 @@ Par exemple, dans PowerShell :
    ($setting["ClassificationList"])
 ```
 
-Pour plus d’informations sur l’ancienne méthode de classification, consultez [Classification des sites SharePoint « modernes »](https://docs.microsoft.com/sharepoint/dev/solution-guidance/modern-experience-site-classification).
+Pour consulter un exemple de la manière dont vous avez peut-être utilisé l’ancienne classification de groupe pour SharePoint, consultez la page [Classification des sites SharePoint « modernes »](https://docs.microsoft.com/sharepoint/dev/solution-guidance/modern-experience-site-classification).
 
 Pour convertir vos anciennes classifications en étiquettes de confidentialité, réalisez l’une des opérations suivantes :
 
@@ -268,35 +282,42 @@ Bien que vous ne puissiez pas empêcher les utilisateurs de créer des groupes d
 
 #### <a name="use-powershell-to-convert-classifications-for-office-365-groups-to-sensitivity-labels"></a>Utilisez PowerShell pour convertir des classifications de groupes Office 365 en étiquettes de confidentialité
 
-1. Assurez-vous que vous exécutez la version de SharePoint Online Management Shell 16.0.19418.12000 ou ultérieure. Si vous disposez déjà de la dernière version, passez à l’étape 4.
-
-2. Si vous avez installé une version antérieure de SharePoint Online Management Shell à partir de la Galerie PowerShell, vous pouvez mettre à jour le module en exécutant l’applet de commande suivante.
+1. Tout d’abord,[connectez-vous au Centre de sécurité et conformité Office 365 PowerShell](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell). 
     
-    ```PowerShell
-    Update-Module -Name Microsoft.Online.SharePoint.PowerShell
-    ```
-
-3. Si vous avez installé une version antérieure de SharePoint Online Management Shell à partir du Centre de téléchargement Microsoft, accédez à **Ajouter ou supprimer des programmes** et désinstaller SharePoint Online Management Shell. Installez ensuite la dernière version SharePoint Online Management Shell à partir du [Centre de téléchargement](https://go.microsoft.com/fwlink/p/?LinkId=255251).
-
-4. À l’aide d’un compte professionnel ou scolaire avec des privilèges d’administrateur général ou d’administrateur SharePoint dans Office 365, connectez-vous à SharePoint Online Management Shell. Pour savoir comment procéder, reportez-vous à l’article [Prise en main de SharePoint Online Management Shell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online).
-
-5. Exécutez les commandes suivantes pour obtenir la liste des étiquettes de confidentialité et leurs GUID.
-
-    ```PowerShell
+    Par exemple, dans une session PowerShell exécutée en tant qu’administrateur, connectez-vous à l’aide d’un compte d’administrateur général :
+    
+    ```powershell
     Set-ExecutionPolicy RemoteSigned
     $UserCredential = Get-Credential
-    $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.compliance.protection.outlook.com/powershell-liveid -Authentication Basic -AllowRedirection -Credential $UserCredential
-    Import-PSSession $Session
-    Get-Label |ft Name, Guid  
+    $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.compliance.protection.outlook.com/powershell-liveid/ -Credential $UserCredential -Authentication Basic -AllowRedirection
+    Import-PSSession $Session -DisableNameChecking
     ```
 
-6. Notez les GUID des étiquettes de confidentialité que vous voulez appliquer à vos groupes Office 365.
+2. Obtenez la liste des étiquettes de confidentialité et leurs GUID à l’aide de l’applet de commande [Get-Label](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/get-label?view=exchange-ps) :
+    
+    ```powershell
+    Get-Label |ft Name, Guid
+    ```
 
-7. Utilisez la commande suivante en tant qu'exemple pour obtenir la liste des groupes qui ont actuellement la classification « Général » :
+3. Notez les GUID des étiquettes de confidentialité que vous voulez appliquer à vos groupes Office 365.
 
-   ```PowerShell
-   $Groups= Get-UnifiedGroup | Where {$_.classification -eq "General"}
-   ```
+4. [Connectez-vous à Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps).
+    
+    Par exemple :
+    
+    ```powershell
+    $UserCredential = Get-Credential
+    $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://outlook.office365.com/powershell-liveid/ -Credential $UserCredential -Authentication Basic -AllowRedirection
+    Import-PSSession $Session
+    ```
+
+5. Exécutez l’applet de commande [Get-UnifiedGroup](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/get-unifiedgroup?view=exchange-ps) pour obtenir la liste des groupes Office 365 qui comportent l’une des classifications que vous avez spécifiées.
+    
+    Par exemple, pour obtenir la liste des groupes Office 365 qui disposent de la classification « Général », procédez comme suit : 
+    
+    ```powershell
+    $Groups= Get-UnifiedGroup | Where {$_.classification -eq "General"}
+    ```
 
 6. Pour chaque groupe, ajoutez le nouveau GUID de l’étiquette de confidentialité. Par exemple :
 
@@ -304,6 +325,8 @@ Bien que vous ne puissiez pas empêcher les utilisateurs de créer des groupes d
     foreach ($g in $groups)
     {Set-UnifiedGroup -Identity $g.Identity -SensitivityLabelId "457fa763-7c59-461c-b402-ad1ac6b703cc"}
     ```
+
+7. Répétez les étapes 5 et 6 pour les classifications de groupe restantes.
 
 ## <a name="auditing-sensitivity-label-activities"></a>Audit sur les activités des étiquettes de confidentialité
 
