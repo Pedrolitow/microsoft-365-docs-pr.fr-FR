@@ -16,14 +16,14 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Cet article explique comment commencer à utiliser Advanced eDiscovery dans Microsoft 365. Une fois que vous avez effectué quelques étapes rapides, l’outil eDiscovery avancé est prêt à être utilisé. La première étape consiste à créer un cas, puis à commencer à utiliser les fonctionnalités avancées de découverte électronique.
-ms.openlocfilehash: a43bfd94fcf0a2563a184a3a87d96c64bd8eb619
-ms.sourcegitcommit: 8a88b7526e6a3a907f33a8567e0d25b74fe60d80
+ms.openlocfilehash: 4aae93e250365fc7225fe2f21fe25cd01e5f8cc0
+ms.sourcegitcommit: bd51f626f0c7788c2a3cf89deee25264659aebd5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43204044"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "43551125"
 ---
-# <a name="get-started-with-advanced-ediscovery"></a>Prise en main de la découverte électronique avancée
+# <a name="get-started-with-advanced-ediscovery"></a>Prise en main Advanced eDiscovery
 
 Advanced eDiscovery dans Microsoft 365 fournit un flux de travail de bout en bout pour conserver, collecter, examiner, analyser et exporter les données qui répondent aux investigations internes et externes de votre organisation. Rien n’est nécessaire pour déployer Advanced eDiscovery, mais il existe des tâches préalables à effectuer par un administrateur informatique et un gestionnaire eDiscovery pour que votre organisation puisse commencer à créer et à utiliser des cas avancés de découverte électronique pour gérer vos recherches.
 
@@ -56,7 +56,7 @@ La gestion des licences pour Advanced eDiscovery nécessite l’abonnement de l�
 
 ## <a name="step-2-assign-ediscovery-permissions"></a>Étape 2 : attribuer des autorisations eDiscovery
 
-Pour accéder à la découverte électronique avancée ou ajoutée en tant que membre d’un cas avancé de découverte électronique, un utilisateur doit disposer des autorisations appropriées. Plus précisément, un utilisateur doit être ajouté en tant que membre du groupe de rôles gestionnaire eDiscovery dans le centre de conformité Office 365 Security &. Les membres de ce groupe de rôles peuvent créer et gérer des cas de découverte électronique avancée. Ils peuvent ajouter et supprimer des membres, placer des dépositaires et des emplacements de contenu en conservation, gérer des notifications de conservation légale, créer et modifier des recherches associées à un cas, ajouter des résultats de recherche à un jeu de réexamen, analyser des données dans un jeu de vérification, exporter et télécharger à partir d’un cas avancé de découverte électronique.
+Pour accéder à la découverte électronique avancée ou être ajoutée en tant que membre d’un cas avancé de découverte électronique, un utilisateur doit disposer des autorisations appropriées. Plus précisément, un utilisateur doit être ajouté en tant que membre du groupe de rôles gestionnaire eDiscovery dans le centre de conformité Office 365 Security &. Les membres de ce groupe de rôles peuvent créer et gérer des cas de découverte électronique avancée. Ils peuvent ajouter et supprimer des membres, placer des dépositaires et des emplacements de contenu en conservation, gérer des notifications de conservation légale, créer et modifier des recherches associées à un cas, ajouter des résultats de recherche à un jeu de réexamen, analyser des données dans un jeu de vérification, exporter et télécharger à partir d’un cas avancé de découverte électronique.
 
 Procédez comme suit pour ajouter des utilisateurs au groupe de rôles gestionnaire eDiscovery :
 
@@ -90,7 +90,7 @@ Il existe deux sous-groupes dans le groupe de rôles gestionnaire de découverte
 
   En raison du large éventail d’accès, une organisation ne doit avoir que quelques administrateurs membres du sous-groupe administrateurs eDiscovery.
 
-Pour plus d’informations sur les autorisations de découverte électronique, ainsi qu’une description de chaque rôle affecté au groupe de rôles gestionnaire de découverte électronique, consultez [la rubrique attribution d’autorisations eDiscovery dans le centre de sécurité & conformité](assign-ediscovery-permissions.md).
+Pour plus d’informations sur les autorisations de découverte électronique, ainsi qu’une description de chaque rôle affecté au groupe de rôles gestionnaire de découverte électronique, consultez la rubrique [attribution d’autorisations eDiscovery](assign-ediscovery-permissions.md).
 
 ## <a name="step-3-configure-global-settings-for-advanced-ediscovery"></a>Étape 3 : configurer les paramètres globaux pour Advanced eDiscovery
 
@@ -107,7 +107,7 @@ L’étape suivante consiste à créer un cas et à commencer à utiliser Advanc
 
 1. Accédez à [https://compliance.microsoft.com](https://compliance.microsoft.com) et connectez-vous à l’aide des informations d’identification du compte d’utilisateur auquel ont été attribuées les autorisations eDiscovery appropriées. Les membres du groupe de rôles gestion de l’organisation peuvent également créer des cas avancés eDiscovery.
 
-2. Dans le Nave gauche du centre de conformité Microsoft 365, cliquez sur **Afficher tout**, puis sur **découverte électronique > avancé**.
+2. Dans le volet de navigation de gauche du centre de conformité Microsoft 365, cliquez sur **Afficher tout**, puis sur **découverte électronique > avancé**.
 
 3. Sur la page **découverte électronique avancée** , cliquez sur l’onglet **incidents** , puis cliquez sur **créer un cas**.
 

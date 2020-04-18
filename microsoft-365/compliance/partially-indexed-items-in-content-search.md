@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.assetid: d1691de4-ca0d-446f-a0d0-373a4fc8487b
 description: 'Découvrez les éléments non indexés dans Exchange et SharePoint que vous pouvez inclure dans une recherche de contenu exécutée via le centre de sécurité & conformité. '
-ms.openlocfilehash: fc15a4af41495641882c25b23c1a38459b896696
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 3984a181d16d4cd66fbddacb24cfd7c5e489f4ac
+ms.sourcegitcommit: bd51f626f0c7788c2a3cf89deee25264659aebd5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597781"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "43551225"
 ---
 # <a name="partially-indexed-items-in-content-search-in-office-365"></a>Éléments partiellement indexés dans la recherche de contenu dans Office 365
 
@@ -57,11 +57,11 @@ Certains types de fichier, tels que les fichiers Bitmap ou MP3, ne comportent 
   
 Pour obtenir une liste de formats de fichier pris en charge et désactivés, consultez les rubriques suivantes :
   
-- **** - [Formats de fichiers Exchange indexés par la recherche Exchange](https://go.microsoft.com/fwlink/p/?LinkID=386618)
+- **Exchange** - [Formats de fichiers Exchange indexés par la recherche Exchange](https://go.microsoft.com/fwlink/p/?LinkID=386618)
     
 - **Exchange** - [Get-searchdocumentformat permet](https://go.microsoft.com/fwlink/p/?LinkID=724037)
     
-- **** Extensions de[nom de fichier analysées et types de fichiers analysés par défaut dans SharePoint](https://go.microsoft.com/fwlink/p/?LinkID=404033)  - 
+- **SharePoint**Extensions de[nom de fichier analysées et types de fichiers analysés par défaut dans SharePoint](https://go.microsoft.com/fwlink/p/?LinkID=404033)  - 
     
 
   
@@ -106,7 +106,7 @@ Si un élément est partiellement indexé mais qu’il ne répond pas aux critè
   
 De même, si vous choisissez d’inclure les éléments partiellement indexés lorsque vous exportez les résultats d’une recherche, les éléments partiellement indexés exclus des résultats de la recherche ne seront pas exportés.
   
-Une exception à cette règle est lorsque vous créez un blocage basé sur une requête qui est associé à un cas de découverte électronique. Si vous créez une conservation basée sur une requête, tous les éléments partiellement indexés sont placés en conservation. Cela inclut les éléments partiellement indexés qui ne correspondent pas aux critères de requête de recherche et aux éléments partiellement indexés qui peuvent se trouver en dehors d’une condition de plage de dates. Pour plus d’informations sur la création de conservations basées sur une requête, voir l’étape 4 dans les [cas de découverte électronique](ediscovery-cases.md#step-4-place-content-locations-on-hold).
+Une exception à cette règle est lorsque vous créez un blocage basé sur une requête qui est associé à un cas de découverte électronique. Si vous créez un blocage eDiscovery basé sur une requête, tous les éléments partiellement indexés sont placés en conservation. Cela inclut les éléments partiellement indexés qui ne correspondent pas aux critères de requête de recherche et aux éléments partiellement indexés qui peuvent se trouver en dehors d’une condition de plage de dates. Pour plus d’informations sur la création de conservations eDiscovery basées sur une requête, voir [Create a eDiscovery Hold](create-ediscovery-holds.md).
   
 ## <a name="indexing-limits-for-messages-in-content-search"></a>Limites d’indexation pour les messages dans la recherche de contenu
 
@@ -126,24 +126,22 @@ Pour obtenir la liste des limites d’indexation pour les documents SharePoint, 
 |Nombre maximal de jetons d’annotation  <br/> |2 millions  <br/> |Lorsqu’un message électronique est indexé, chaque mot est annoté avec des instructions de traitement différentes qui définissent le mode d’indexation de Word. Chaque ensemble d’instructions de traitement est appelé un jeton d’annotation. Pour maintenir la qualité de service dans Office 365, il existe une limite de 2 millions jetons d’annotation pour un message électronique.  <br/> |
 |Taille maximale du corps dans l’index  <br/> |67 millions caractères  <br/> |Nombre total de caractères dans le corps d’un message électronique et toutes ses pièces jointes. Lorsqu’un message électronique est indexé, tout le texte dans le corps du message et dans toutes les pièces jointes est concaténé dans une chaîne unique. La taille maximale de cette chaîne indexée est de 67 millions caractères.  <br/> |
 |Nombre maximal de jetons uniques dans le corps  <br/> |1 million  <br/> |Comme expliqué précédemment, les jetons sont le résultat de l’extraction de texte du contenu, la suppression de la ponctuation et des espaces, puis sa division en mots (appelés jetons) stockés dans l’index. Par exemple, l’expression `"cat, mouse, bird, dog, dog"` contient 5 jetons. Mais seulement 4 sont des jetons uniques. Il existe une limite de 1 million jetons uniques par message électronique, ce qui permet d’éviter que l’index soit trop volumineux avec des jetons aléatoires.  <br/> |
-   
 
-  
 ## <a name="more-information-about-partially-indexed-items"></a>Plus d’informations sur les éléments partiellement indexés
 
 - Comme indiqué précédemment, étant donné que les propriétés de message et de document et leurs métadonnées sont indexées, une recherche par mot clé peut renvoyer des résultats si ce mot clé apparaît dans les métadonnées indexées. Cependant, cette même recherche par mot clé peut ne pas renvoyer le même élément si le mot clé apparaît uniquement dans le contenu d’un élément dont le type de fichier n’est pas pris en charge. Dans ce cas, l’élément est renvoyé sous la forme d’un élément partiellement indexé.
-    
+
 - Si un élément partiellement indexé est inclus dans les résultats de la recherche, car il répond aux critères de requête de recherche (et n’a pas été exclu), il ne sera pas inclus en tant qu’élément partiellement indexé dans les statistiques de recherche estimées. En outre, elle ne sera pas incluse avec des éléments partiellement indexés lorsque vous exportez les résultats de la recherche.
-    
+
 - Bien qu’un type de fichier soit pris en charge pour l’indexation et indexé, il peut y avoir des erreurs d’indexation ou de recherche qui entraînent le renvoi d’un fichier sous la forme d’un élément partiellement indexé. Par exemple, la recherche d’un fichier Excel très volumineux peut avoir partiellement réussi (car les 4 premiers Mo sont indexés), mais échoue, car la limite de taille de fichier est dépassée. Dans ce cas, il est possible que le même fichier soit renvoyé avec les résultats de la recherche et comme un élément partiellement indexé.
-    
+
 - Les fichiers joints chiffrés à l’aide des technologies Microsoft sont indexés et peuvent faire l’objet d’une recherche. Les fichiers chiffrés avec les technologies non-Microsoft sont partiellement indexés.
-    
+
 - Les messages électroniques chiffrés avec S/MIME sont partiellement indexés. Il s’agit des messages chiffrés avec ou sans pièces jointes.
-    
+
 - Les messages protégés par la Gestion des droits relatifs à l’information (IRM) sont indexés et seront inclus dans les résultats de la recherche s’ils correspondent à la requête de recherche.
 
 ## <a name="see-also"></a>Voir aussi
 
-[Examen d’éléments partiellement indexés dans eDiscovery Office 365](investigating-partially-indexed-items-in-ediscovery.md)
+[Étude des éléments partiellement indexés dans eDiscovery](investigating-partially-indexed-items-in-ediscovery.md)
 

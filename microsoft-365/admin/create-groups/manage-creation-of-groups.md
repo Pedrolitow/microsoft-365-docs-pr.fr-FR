@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 4c46c8cb-17d0-44b5-9776-005fced8e618
 description: Découvrez comment contrôler quels utilisateurs peuvent créer des groupes Office 365.
-ms.openlocfilehash: 9016b96821dd9d40a0fb65574ce96d7badd0c2bd
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+ms.openlocfilehash: d31690cb6438c6563b01e0597f7f2b1ff96e3b9a
+ms.sourcegitcommit: 0da80ba7b504841c502ab06fea659a985c06fe8f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43212080"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "43547585"
 ---
 # <a name="manage-who-can-create-office-365-groups"></a>Gérer les personnes autorisées à créer des groupes Office 365
 
@@ -41,7 +41,7 @@ Cet article explique comment désactiver la possibilité de créer des groupes d
     
 - Yammer
     
-- Microsoft Teams
+- Microsoft Teams
 
 - Microsoft Stream
     
@@ -79,6 +79,9 @@ Pour gérer la personne qui crée des groupes, les personnes suivantes ont besoi
 
 - Administrateur qui configure ces paramètres de création de groupe
 - Les membres du groupe de sécurité autorisés à créer des groupes
+
+> [!NOTE]
+> Pour plus d’informations sur l’attribution de licences Azure [, voir attribuer ou supprimer des licences dans le portail Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/license-users-groups) .
 
 Les personnes suivantes n’ont pas besoin de posséder des licences Azure ad Premium ou EDU AD basique EDU :
 

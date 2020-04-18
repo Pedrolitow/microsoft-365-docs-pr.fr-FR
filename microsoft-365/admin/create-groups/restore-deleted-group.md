@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: b7c66b59-657a-4e1a-8aa0-8163b1f4eb54
 description: Découvrez comment restaurer un groupe Office 365 supprimé.
-ms.openlocfilehash: 31d6481f87d7da219e042eefa8f004425caee133
-ms.sourcegitcommit: 1883a103449d7b03d482228bd9ef39a7caf306cf
+ms.openlocfilehash: 2efd8c35286d224c6a3ed185043c82ab4b8e954e
+ms.sourcegitcommit: 0da80ba7b504841c502ab06fea659a985c06fe8f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "42583161"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "43547531"
 ---
 # <a name="restore-a-deleted-office-365-group"></a>Restaurer un groupe Office 365 supprimé
 
@@ -61,7 +61,7 @@ Si le groupe supprimé n’apparaît pas ici, contactez un administrateur.
 
 Si vous êtes un administrateur général ou un administrateur de groupes, vous pouvez restaurer un groupe supprimé dans le centre d’administration 365 de Microsoft :
 
-1. Accédez au Centre d’administration à l’adresse [https://admin.microsoft.com](Go to the admin center at https://admin.microsoft.com).
+1. Accédez au [Centre d’administration](https://admin.microsoft.com).
 2. Développez **groupes**, puis cliquez sur **groupes supprimés**.
 3. Sélectionnez le groupe que vous souhaitez restaurer, puis cliquez sur **restaurer le groupe**.
   

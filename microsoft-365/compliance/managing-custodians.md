@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: L’outil de gestion des dépositaires dans Advanced eDiscovery vous permet de gérer le flux de travail concernant l’identification, la préservation et la collecte des données associées aux personnes concernées dans un cas juridique.
-ms.openlocfilehash: 7d8ac1c67b4ddc3395bccb5ab699ce7df63f331d
-ms.sourcegitcommit: 9a4084ce2b80bac883412e0ec956b6c0cc18d0f5
+ms.openlocfilehash: fbd348c842cb3c4bb7284c14ae2504b83fd0b117
+ms.sourcegitcommit: bd51f626f0c7788c2a3cf89deee25264659aebd5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/03/2020
-ms.locfileid: "42400911"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "43551239"
 ---
 # <a name="work-with-custodians-in-advanced-ediscovery"></a>Utiliser des dépositaires dans Advanced eDiscovery
 
@@ -38,7 +38,3 @@ Pour plus d’informations sur l’utilisation des dépositaires, consultez les 
 - [Gestion des dépositaires dans un cas](manage-new-custodians.md)
 
 - [Afficher l’activité des consignataires](view-custodian-activity.md)
-
-## <a name="advanced-ediscovery-permissions"></a>Autorisations eDiscovery avancées
-
-Dans Advanced eDiscovery, vous pouvez utiliser le groupe de rôles intégré eDiscovery Manager pour attribuer les autorisations nécessaires aux investigateurs légaux afin qu’ils puissent gérer le flux de travail de bout en bout dans Advanced eDiscovery. Vous pouvez également créer des groupes de rôles personnalisés avec un sous-ensemble des rôles nécessaires pour effectuer certaines actions dans un cas dans Advanced eDiscovery. Pour plus d’informations sur les rôles liés à la découverte électronique, consultez [la rubrique attribution d’autorisations eDiscovery dans le centre de sécurité & conformité](assign-ediscovery-permissions.md).

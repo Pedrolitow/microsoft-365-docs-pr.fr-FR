@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Advanced eDiscovery facilite la gestion du flux de travail de notification de conservation légale concernant la notification des dépositaires en cours d’investigation.
-ms.openlocfilehash: 3e9fb2bc67fc5eac181afab8ba5c78c4236fb980
-ms.sourcegitcommit: 6d672eb8287526a9db90df5fa85bc4984a7047d1
+ms.openlocfilehash: 28b719a83cbc1608ad5468e401a8b7946cb8da5f
+ms.sourcegitcommit: bd51f626f0c7788c2a3cf89deee25264659aebd5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "42280122"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "43551238"
 ---
 # <a name="work-with-communications-in-advanced-ediscovery"></a>Utiliser les communications dans Advanced eDiscovery
 
@@ -49,22 +49,12 @@ Grâce à la fonctionnalité eDiscovery avancée, les équipes juridiques peuven
 
    - **Escalades :** Dans certains cas, si un dépositaire ne répond pas, même après un ensemble de rappels sur une période de temps, l’équipe juridique peut configurer un flux de travail de signalisation pour informer les dépositaires qui ne répondent pas et leur responsable.
 
-## <a name="role-groups-and-permissions"></a>Groupes de rôles et autorisations
+Pour plus d’informations sur la gestion du processus de communication des dépositaires, consultez les rubriques suivantes : 
 
-Les équipes juridiques peuvent contrôler et isoler leur activité de cas à l’aide de groupes de rôles et d’autorisations liés à la découverte électronique dans le centre de conformité & Compliance Center. 
+- [Créer une notice de suspension légale](create-hold-notification.md)
 
-Pour créer et gérer des notifications de conservation légale, un utilisateur doit être membre du groupe de rôles gestionnaire eDiscovery. Les membres de ce groupe de rôles peuvent créer et gérer des cas de découverte électronique avancée. Ils peuvent ajouter et supprimer des membres, placer des dépositaires et des emplacements de contenu en conservation, gérer des notifications de conservation légale, créer et modifier des recherches associées à un cas, ajouter des résultats de recherche à un jeu de réexamen, analyser des données dans un jeu de vérification, exporter et télécharger à partir d’une avancée cas de découverte électronique. 
+- [Utiliser l’éditeur de communications](using-communications-editor.md)
 
-Le groupe de rôles gestionnaire eDiscovery comporte deux sous-groupes. Ces sous-groupes ont différents rôles.
+- [Gérer les notifications de conservation](manage-hold-notification.md)
 
-- **Gestionnaire eDiscovery :** Permet d’afficher et de gérer les cas avancés eDiscovery qu’ils créent ou dont ils sont membres. Si un autre gestionnaire eDiscovery crée un cas mais n’ajoute pas de deuxième gestionnaire eDiscovery en tant que membre de ce dernier, le deuxième gestionnaire eDiscovery ne pourra pas afficher ou ouvrir le cas dans la page Advanced eDiscovery du centre de sécurité & Compliance Center.
-
-- **administrateur eDiscovery :** Peut effectuer toutes les tâches de gestion des dossiers qu’un gestionnaire eDiscovery peut effectuer. De plus, un administrateur de découverte électronique peut :
-
-  - Afficher tous les cas répertoriés sur la page Advanced eDiscovery.
-  
-  - Gérez tous les cas dans l’organisation une fois qu’ils ont été ajoutés en tant que membre du cas.
-
-  - Accéder à des données de cas et les exporter dans Advanced eDiscovery pour n’importe quel cas dans l’organisation.
-
-Pour plus d’informations, consultez [la rubrique attribution d’autorisations de découverte électronique dans le centre de sécurité & conformité](assign-ediscovery-permissions.md).
+- [Reconnaitre une notification de conservation](acknowledge-hold-notification.md)

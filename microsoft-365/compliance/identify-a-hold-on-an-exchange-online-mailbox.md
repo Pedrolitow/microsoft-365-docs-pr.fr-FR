@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 6057daa8-6372-4e77-a636-7ea599a76128
 description: Découvrez comment identifier les différents types de conservation pouvant être placés sur une boîte aux lettres Office 365. Ces types de conservation incluent les conservations pour litige, la découverte électronique et les stratégies de rétention d’Office 365. Vous pouvez également déterminer si un utilisateur a été exclu d’une stratégie de rétention à l’échelle de l’organisation.
-ms.openlocfilehash: 29d212f0ba16c7ae414c3a47707cfcd0f95420c7
-ms.sourcegitcommit: 7646e2d742d1b2fad085a00200a2a10461dd4bac
+ms.openlocfilehash: 4063128e368b19b156fbf42173fb2d4725c3e7ab
+ms.sourcegitcommit: bd51f626f0c7788c2a3cf89deee25264659aebd5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "42978224"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "43551135"
 ---
 # <a name="how-to-identify-the-type-of-hold-placed-on-an-exchange-online-mailbox"></a>Comment identifier le type de conservation placé sur une boîte aux lettres Exchange Online
 
@@ -30,7 +30,7 @@ Office 365 offre plusieurs méthodes permettant à votre organisation d’empêc
 
 - ** [Conservation pour litige](create-a-litigation-hold.md):** Conservations appliquées aux boîtes aux lettres utilisateur dans Exchange Online.
 
-- ** [conservation eDiscovery](ediscovery-cases.md#step-4-place-content-locations-on-hold):** Conservations associées à un cas eDiscovery dans le centre de sécurité et de conformité. les conservations eDiscovery peuvent être appliquées aux boîtes aux lettres utilisateur et à la boîte aux lettres correspondante pour les groupes Office 365 et Microsoft Teams.
+- ** [conservation eDiscovery](create-ediscovery-holds.md):** Conservations associées à un cas eDiscovery dans le centre de sécurité et de conformité. les conservations eDiscovery peuvent être appliquées aux boîtes aux lettres utilisateur et à la boîte aux lettres correspondante pour les groupes Office 365 et Microsoft Teams.
 
 - ** [Conservation](https://docs.microsoft.com/Exchange/security-and-compliance/create-or-remove-in-place-holds)inaltérable :** Conservations appliquées aux boîtes aux lettres des utilisateurs à l’aide de l’outil de conservation des & de découverte électronique inaltérable dans le centre d’administration Exchange dans Exchange Online.
 

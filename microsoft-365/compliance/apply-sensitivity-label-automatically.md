@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Lorsque vous créez une étiquette de critère de diffusion, vous pouvez affecter automatiquement une étiquette à un document ou message électronique ou vous pouvez inviter les utilisateurs pour sélectionner l’étiquette que vous recommandez.
-ms.openlocfilehash: 4ce9e06bb98fb391bb9eb5ffa01491e0c85eba1f
-ms.sourcegitcommit: 4ddbc1c3c29d79d3c4640b7b32f95576784efcca
+ms.openlocfilehash: 8295ec4098e90cac963598ab2d53d47a266b23a7
+ms.sourcegitcommit: bd51f626f0c7788c2a3cf89deee25264659aebd5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "43240299"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "43551145"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Appliquer automatiquement une étiquette sensibilité au contenu
 
@@ -58,7 +58,6 @@ Deux méthodes s’offrent à vous pour appliquer automatiquement une étiquette
     
     Spécifique à l’étiquetage automatique pour SharePoint et OneDrive :
     - Jusqu’à 25 000 fichiers automatiquement étiquetés (Word, PowerPoint ou Excel) dans votre client par jour
-        - Au maximum 5 fichiers étiquetés automatiquement par utilisateur sous licence par jour
     - Jusqu’à 10 collections de sites pour l’ensemble des stratégies
     - Jusqu’à 10 stratégies au sein de votre client
 
