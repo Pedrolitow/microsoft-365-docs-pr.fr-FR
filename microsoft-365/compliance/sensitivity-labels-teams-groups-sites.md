@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Utilisez les étiquettes de confidentialité pour protéger le contenu des sites SharePoint et Microsoft Teams, ainsi que des groupes Office 365.
-ms.openlocfilehash: 4daf35af28e0339c66271c69487d3da9c1e4c91e
-ms.sourcegitcommit: 0da80ba7b504841c502ab06fea659a985c06fe8f
+ms.openlocfilehash: 69ab8dcecf95f02965254928110802bfd0308b8b
+ms.sourcegitcommit: b8aa905b7c9c59def56490670b928b0b7daa7d0c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "43547596"
+ms.lasthandoff: 04/19/2020
+ms.locfileid: "43558763"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-office-365-groups-and-sharepoint-sites-public-preview"></a>Utiliser les étiquettes de confidentialité pour protéger le contenu dans Microsoft Teams, les groupes Office 365 et les sites SharePoint (préversion publique)
 
@@ -256,15 +256,15 @@ Les autres services et applications dans lesquels vous ne pouvez pas à ce jour 
 
 ## <a name="classic-azure-ad-group-classification"></a>Classification classique de groupes Azure Active Directory
 
-Office 365 ne prend plus en charge les anciennes classifications pour les nouveaux groupes et les sites SharePoint lorsque vous activez cette préversion. Toutefois, les groupes et sites existants affichent encore les anciennes classifications, sauf si vous les convertissez pour utiliser des étiquettes de confidentialité. Les anciennes classifications incluent la classification de sites « moderne » que vous avez configurée, par l’intermédiaire d’Azure AD PowerShell ou de la bibliothèque principale PnP, qui a défini des valeurs pour le paramètre `ClassificationList`.
+Office 365 ne prend plus en charge les anciennes classifications pour les nouveaux groupes Office 365 et sites SharePoint lorsque vous activez cette préversion. Toutefois, les groupes et sites existants affichent encore les anciennes valeurs de classification, sauf si vous les convertissez pour utiliser des étiquettes de confidentialité.
 
-Par exemple, dans PowerShell :
+Pour consulter un exemple de la manière dont vous avez peut-être utilisé l’ancienne classification de groupe pour SharePoint, consultez la page [Classification des sites SharePoint « modernes »](https://docs.microsoft.com/sharepoint/dev/solution-guidance/modern-experience-site-classification).
+
+Ces classifications ont été configurées à l’aide d’Azure AD PowerShell ou de la bibliothèque principale PnP et par définition de valeurs pour le paramètre `ClassificationList`. Si votre client a défini des valeurs de classification, celles-ci s’affichent lorsque vous exécutez la commande suivante à partir du [module AzureADPreview PowerShell](https://www.powershellgallery.com/packages/AzureADPreview) :
 
 ```powershell
    ($setting["ClassificationList"])
 ```
-
-Pour consulter un exemple de la manière dont vous avez peut-être utilisé l’ancienne classification de groupe pour SharePoint, consultez la page [Classification des sites SharePoint « modernes »](https://docs.microsoft.com/sharepoint/dev/solution-guidance/modern-experience-site-classification).
 
 Pour convertir vos anciennes classifications en étiquettes de confidentialité, réalisez l’une des opérations suivantes :
 
