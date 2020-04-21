@@ -17,12 +17,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: d4c71b2f3c575f21ee2693c3d371c263813c2324
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+ms.openlocfilehash: 8319dcabe6032228e2124b68f9f7d8f237ff34de
+ms.sourcegitcommit: d818828c66cf98b0b0037ba8b3cb790c940281b7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42558245"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43583368"
 ---
 # <a name="microsoft-secure-score-preview"></a>Microsoft Secure score (aperçu)
 
@@ -151,26 +151,9 @@ Dans l’onglet **mesures & tendances** , il existe plusieurs graphiques et grap
 
 Microsoft Secure score est un résumé numérique de votre position de sécurité basée sur les configurations système, le comportement de l’utilisateur et d’autres mesures liées à la sécurité ; il ne s’agit pas d’une mesure absolue de la probabilité de violation de votre système ou de vos données. Il représente plutôt la mesure dans laquelle vous avez adopté des contrôles de sécurité dans votre environnement Microsoft, ce qui peut vous aider à compenser le risque d’être compromis. Aucun service en ligne n’est totalement immunisé contre les violations de sécurité et le score sécurisé ne doit pas être interprété comme une garantie d’une violation de sécurité.
 
-## <a name="whats-coming"></a>Qu’est-ce qui arrive ?
+## <a name="whats-new"></a>Quelles sont les nouveautés ? 
 
-### <a name="mfa-improvement-action-updates"></a>Mises à jour de l’action d’amélioration MFA
-
-Pour refléter la nécessité pour les entreprises de garantir la sécurité maximale lors de l’application des stratégies qui fonctionnent avec leur entreprise, le score de sécurité Microsoft supprime trois actions d’amélioration axées sur l’authentification multifacteur et en ajoutant deux.
-
-Les trois qui seront supprimés :
-- Inscrire tous les utilisateurs pour l’authentification multifacteur
-- Exiger l’authentification multifacteur pour tous les utilisateurs
-- Exiger l’authentification multifacteur pour les rôles privilège Azure AD
-
-Nouvelles actions d’amélioration :
-- S’assurer que tous les utilisateurs peuvent effectuer l’authentification multifacteur pour un accès sécurisé
-- Exiger MFA pour les rôles d’administration
-
- Ces nouvelles actions d’amélioration requièrent l’enregistrement de vos utilisateurs ou administrateurs pour l’authentification multifacteur (MFA) dans votre répertoire et l’établissement de l’ensemble approprié de stratégies répondant à vos besoins organisationnels. L’objectif principal est de la flexibilité tout en s’assurant que tous vos utilisateurs et administrateurs peuvent s’authentifier avec plusieurs facteurs ou des invites de vérification d’identité basées sur les risques. Cela peut prendre la forme de paramètres de sécurité par défaut qui permettent à Microsoft de déterminer quand il faut défier les utilisateurs à l’authentification multifacteur, ou si plusieurs stratégies appliquent des décisions délimitées.
-
-## <a name="whats-new"></a>Nouveautés 
-
-Pour faire en sorte que Microsoft Secure score un meilleur représentant de votre position de sécurité et améliore la convivialité, nous avons apporté des modifications. Votre score et le score maximal possible ont été modifiés. Toutefois, cela n’implique pas de modification de votre position de sécurité.
+Pour faire en sorte que Microsoft Secure score un meilleur représentant de votre position de sécurité, nous avons apporté des modifications. Pour en savoir plus sur les modifications planifiées, consultez [la rubrique what’s from Microsoft Secure score ?](microsoft-secure-score-whats-coming.md)
 
 ### <a name="updated-interface-and-functionality"></a>Interface et fonctionnalité mises à jour
 

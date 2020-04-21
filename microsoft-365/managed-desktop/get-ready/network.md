@@ -1,7 +1,7 @@
 ---
-title: Configuration réseau pour le bureau géré Microsoft
+title: Configuration du réseau pour Bureau géré Microsoft
 description: ''
-keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
+keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
 f1.keywords:
@@ -9,14 +9,14 @@ f1.keywords:
 ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 141bd55a0619fb2f007b5f9173310a1e2fe5bab1
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 48da8a0e6629ff64b42c413d4959fb440b77aae3
+ms.sourcegitcommit: d818828c66cf98b0b0037ba8b3cb790c940281b7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42633152"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43583332"
 ---
-#  <a name="network-configuration-for-microsoft-managed-desktop"></a>Configuration réseau pour le bureau géré Microsoft
+#  <a name="network-configuration-for-microsoft-managed-desktop"></a>Configuration du réseau pour Bureau géré Microsoft
 
 <!--Proxy config -->
 
@@ -55,9 +55,9 @@ Service Microsoft | Source de documentation-URL requises sur la liste verte
 --- | ---
 Windows 10 entreprise, y compris Windows Update pour les entreprises | [Gérer les points de terminaison de connexion pour Windows 10, version 1803](https://docs.microsoft.com/windows/privacy/manage-windows-1803-endpoints)<br><br>[Gérer les points de terminaison de connexion pour Windows 10, version 1809](https://docs.microsoft.com/windows/privacy/manage-windows-1809-endpoints)<br><br>[Gérer les points de terminaison de connexion pour Windows 10, version 1903](https://docs.microsoft.com/windows/privacy/manage-windows-1903-endpoints)<br><br>time.windows.com
 Optimisation de la remise | [Configurer l’optimisation de la remise pour les mises à jour de Windows 10](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization)
-Office 365 | [URL et plages d’adresses IP Office 365](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges)
+Office 365 | [URL et plages d’adresses IP Office 365](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges)
 Azure Active Directory | [Ports et protocoles d’identité hybrides](https://docs.microsoft.com/azure/active-directory/hybrid/reference-connect-ports) , ainsi que les [exigences de port Active Directory et des services de domaine Active Directory](https://aka.ms/AA26ygm) 
-Microsoft Intune | [Configuration requise pour la configuration réseau Intune](https://docs.microsoft.com/intune/network-bandwidth-use)
+Microsoft Intune | [Configuration requise pour la configuration réseau Intune](https://docs.microsoft.com/intune/network-bandwidth-use)<br>[Points de terminaison réseau pour Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/intune-endpoints)
 Protection avancée contre les menaces Microsoft Defender (ATP) | [Points de terminaison ATP Microsoft Defender](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-proxy-internet-windows-defender-advanced-threat-protection#enable-access-to-windows-defender-atp-service-urls-in-the-proxy-server)
 
 <!---
