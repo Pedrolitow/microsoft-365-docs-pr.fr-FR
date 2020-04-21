@@ -22,12 +22,12 @@ search.appverid:
 - GEA150
 ms.assetid: 4436582f-211a-45ec-b72e-33647f97d8a3
 description: Découvrez ce qui arrive à vos données lorsque votre abonnement Office 365 pour les entreprises expire, est désactivé ou si vous annulez l’opération.
-ms.openlocfilehash: 2529d5027305a9ceaf71033b4de52a867b9fa9fb
-ms.sourcegitcommit: 58c1b4208a5e231463091573e40696d08fc39b8e
+ms.openlocfilehash: f3be5a84cc29b2f7fd4d2bbe3e6ba611c6459ea6
+ms.sourcegitcommit: d818828c66cf98b0b0037ba8b3cb790c940281b7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "42955672"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43584008"
 ---
 # <a name="what-happens-to-my-data-and-access-when-my-office-365-for-business-subscription-ends"></a>Qu'arrive-t-il à mes données et à mon accès à la fin de mon abonnement Office 365 pour les entreprises ?
 
@@ -44,7 +44,7 @@ Le tableau suivant décrit ce à quoi vous pouvez vous attendre lorsqu’un abon
 |------------------------------------------------------------------------|------------------------------------------------------------------------------|------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------|
 | *Données accessibles à tous les*                                               | *Données accessibles à tous les*                                                     | *Données accessibles aux administrateurs uniquement*                                             | **Données supprimées<br/>Azure Active Directory est supprimé, s’il n’est pas utilisé par d’autres services** |
 | Les utilisateurs ont un accès normal à Office 365, aux données et aux applications Office  | Les utilisateurs ont un accès normal à Office 365, aux fichiers et aux applications              | Les utilisateurs ne peuvent pas accéder à Office 365, aux fichiers ou aux applications                        | Les utilisateurs ne peuvent pas accéder à Office 365, aux fichiers ou aux applications                                     |
-| Les administrateurs ont un accès normal à Office 365, aux données et aux applications Office | Les administrateurs peuvent accéder au centre d’administration, mais ils ne peuvent pas attribuer de licences aux utilisateurs   | Les administrateurs peuvent accéder au centre d’administration, mais ils ne peuvent pas attribuer de licences aux utilisateurs       | Les administrateurs peuvent accéder au centre d’administration pour acheter et gérer d’autres abonnements             |
+| Les administrateurs ont un accès normal à Office 365, aux données et aux applications Office | Les administrateurs peuvent accéder au centre d’administration   | Les administrateurs peuvent accéder au centre d’administration, mais ils ne peuvent pas attribuer de licences aux utilisateurs       | Les administrateurs peuvent accéder au centre d’administration pour acheter et gérer d’autres abonnements             |
 |                                                                        | Les administrateurs globaux ou de facturation peuvent réactiver l’abonnement dans le centre d’administration. | Les administrateurs globaux ou de facturation peuvent réactiver l’abonnement dans le centre d’administration. |                                                                                           |
 
 * Pour la plupart des offres, dans la plupart des pays et régions.
@@ -143,7 +143,7 @@ Voici ce que vous pouvez attendre lorsque votre abonnement atteint les différen
 
 Dans cet État, les utilisateurs ont un accès normal au portail Office 365, aux applications Office et aux services tels que le courrier électronique et SharePoint Online.
   
-En tant qu’administrateur, vous avez toujours accès au centre d’administration, mais vous ne pouvez pas attribuer de licences aux utilisateurs. Les administrateurs globaux ou de facturation peuvent [réactiver l’abonnement](reactivate-your-subscription.md) et continuer à utiliser Office 365. Si vous ne procédez pas à la réactivation, veillez à [sauvegarder vos données](back-up-data-before-switching-plans.md).
+En tant qu’administrateur, vous avez toujours accès au centre d’administration. Les administrateurs globaux ou de facturation peuvent [réactiver l’abonnement](reactivate-your-subscription.md) et continuer à utiliser Office 365. Si vous ne procédez pas à la réactivation, veillez à [sauvegarder vos données](back-up-data-before-switching-plans.md).
   
 ### <a name="state-disabled"></a>État : désactivé
   
