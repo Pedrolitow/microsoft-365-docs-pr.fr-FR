@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7dc1c01a-090f-4971-9677-f1b192d6c910
 description: Apprenez à définir des clés de Registre pour activer l’authentification moderne pour les appareils sur lesquels Microsoft Office 2013 est installé.
-ms.openlocfilehash: f1264affa5be93b19e564a0edea00bfb78f452f1
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 8dec8174d5f39d8fecd6b2a7340d69dbcd421357
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42244045"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627727"
 ---
 # <a name="enable-modern-authentication-for-office-2013-on-windows-devices"></a>Activer l'authentification moderne pour Office 2013 sur les appareils Windows
 
@@ -42,7 +42,7 @@ Pour activer l'authentification moderne pour les appareils exécutant Windows (p
 |Hkcu\software\microsoft\office\15.0\common\identity\enableadal sur  |REG_DWORD  |0,1  |
 |HKCU\SOFTWARE\Microsoft\Office\15.0\Common\Identity\Version |REG_DWORD |0,1 |
    
-Une fois que vous avez défini les clés de Registre, vous pouvez configurer les applications utilisées sur des appareils Office 2013 pour qu'elles utilisent l'[authentification multifacteur (MFA)](set-up-multi-factor-authentication.md) avec Office 365. 
+Une fois que vous avez défini les clés de Registre, vous pouvez définir les applications de périphériques Office 2013 pour utiliser [l’authentification multifacteur (MFA)](set-up-multi-factor-authentication.md) avec Microsoft 365. 
   
 Si vous êtes actuellement connecté avec une application client, vous devez vous déconnecter et vous reconnecter pour que la modification prenne effet. Autrement, les paramètres MRU et d'itinérance ne seront pas disponibles tant que l'identité ADAL n'est pas établie.
   

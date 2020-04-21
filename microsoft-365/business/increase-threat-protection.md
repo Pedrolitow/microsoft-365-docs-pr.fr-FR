@@ -1,5 +1,5 @@
 ---
-title: Renforcer la protection contre les menaces pour Microsoft 365 Business
+title: Renforcer la protection contre les menaces pour Microsoft 365 pour les entreprises
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -21,18 +21,18 @@ search.appverid:
 - BCS160
 - MET150
 description: Configurez Office 365 Advanced Threat Protection et protégez les données sensibles contre le hameçonnage, les programmes malveillants et d’autres menaces.
-ms.openlocfilehash: 17425de3f6e0022945899a559cf88575b6315a56
-ms.sourcegitcommit: 217de0fc54cbeaea32d253f175eaf338cd85f5af
+ms.openlocfilehash: 2dd75b20bf203b9b8f0cdefb2459c45d1d0ccec1
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42561607"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627123"
 ---
 # <a name="increase-threat-protection"></a>Renforcer la protection contre les menaces
 
 Cet article vous aide à renforcer la protection de votre abonnement Microsoft 365 afin de vous protéger contre le hameçonnage, les programmes malveillants et d’autres menaces. Ces recommandations sont appropriées pour les organisations ayant un besoin accru de sécurité, tels que les services juridiques et les stages de soins de santé.
 
-Avant de commencer, vérifiez votre score de sécurité Office 365. Office 365 Secure score analyse la sécurité de votre organisation Office 365 en fonction de vos activités normales et des paramètres de sécurité, et attribue un score. Commencez par prendre note de votre score actuel. Pour augmenter votre score, effectuez les actions recommandées dans cet article. L’objectif n’est pas d’atteindre le score maximal, mais de prendre conscience des possibilités de protection de votre environnement qui n’ont pas d’impact négatif sur la productivité de vos utilisateurs. 
+Avant de commencer, vérifiez votre score de sécurité Office 365. Le score de sécurité d’Office 365 analyse la sécurité de votre organisation en fonction de vos activités normales et des paramètres de sécurité, et attribue un score. Commencez par prendre note de votre score actuel. Pour augmenter votre score, effectuez les actions recommandées dans cet article. L’objectif n’est pas d’atteindre le score maximal, mais de prendre conscience des possibilités de protection de votre environnement qui n’ont pas d’impact négatif sur la productivité de vos utilisateurs. 
 
 Pour plus d’informations, consultez la rubrique [Microsoft Secure score](https://docs.microsoft.com/office365/securitycompliance/microsoft-secure-score).
 
@@ -42,7 +42,7 @@ Votre environnement Office 365 ou Microsoft 365 inclut une protection contre les
   
 1. Accédez à [https://protection.office.com](https://protection.office.com) et connectez-vous avec vos informations d’identification de compte d’administrateur. 
     
-2. Dans le centre de navigation &amp; de gauche du centre de sécurité conformité Office 365, **sous gestion des menaces**, sélectionnez **stratégie** \> **anti-programme malveillant**.
+2. Dans le centre &amp; de navigation de gauche du centre de sécurité **conformité, sélectionnez** **protection contre les programmes malveillants**pour la **stratégie** \> .
     
 3. Double-cliquez sur la stratégie par défaut pour modifier cette stratégie à l’échelle de l’entreprise.
     
@@ -57,7 +57,7 @@ Votre environnement Office 365 ou Microsoft 365 inclut une protection contre les
     
 Pour plus d’informations, consultez la rubrique [protection contre les programmes malveillants](https://go.microsoft.com/fwlink/?linkid=2015692&amp;clcid=0x409).
   
-## <a name="protect-against-ransomware"></a>Protéger contre les ransomware
+## <a name="protect-against-ransomware"></a>Se protéger contre les rançongiciels
 
 Les ransomware limitent l’accès aux données en chiffrant les fichiers ou en verrouillant les écrans d’ordinateur. Il tente ensuite de extort l’argent des victimes en demandant « ransomware », généralement sous la forme d’cryptocurrencies comme Bitcoin, dans Exchange pour l’accès aux données. 
   
@@ -77,7 +77,7 @@ Pour créer une règle de transport de messagerie :
     
 5. Appliquez les paramètres du tableau suivant pour la règle. Utilisez les valeurs par défaut pour les autres paramètres, sauf si vous souhaitez les modifier.
     
-6. Cliquez sur **Enregistrer**.
+6. Sélectionnez **Enregistrer**.
     
 |**Paramètre**|**Avertir les utilisateurs avant l’ouverture de pièces jointes de fichiers Office**||
 |:-----|:-----|:-----|
@@ -87,7 +87,7 @@ Pour créer une règle de transport de messagerie :
 |Procédez comme suit. . .  <br/> |Avertir le destinataire avec un message  <br/> |
 |Fournir le texte du message  <br/> |N’ouvrez pas ces types de fichiers provenant de contacts inconnus, car ils peuvent contenir des macros avec du code malveillant.  <br/> |
    
-Pour plus d’informations, voir :
+Si vous souhaitez en savoir plus, consultez les articles : 
   
 - [Comment traiter les ransomware](https://go.microsoft.com/fwlink/?linkid=2016501)
     
@@ -109,7 +109,7 @@ Pour créer une règle de transport de courrier, regardez [cette courte vidéo](
     
 5. Appliquez les paramètres dans le tableau suivant. Utilisez les valeurs par défaut pour les autres paramètres, sauf si vous souhaitez les modifier.
     
-6. Cliquez sur **Enregistrer**.
+6. Sélectionnez **Enregistrer**.
     
 |**Paramètre**|**Avertir les utilisateurs avant l’ouverture de pièces jointes de fichiers Office**|
 |:-----|:-----|
@@ -130,7 +130,7 @@ Pour créer une stratégie anti-hameçonnage ATP, regardez [cette vidéo de form
   
 1. Accédez à [https://protection.office.com](https://protection.office.com). 
     
-2. Dans le centre de sécurité &amp; conformité d’Office 365, dans le volet de navigation de gauche, sous **gestion des menaces**, sélectionnez **stratégie**.
+2. Dans le centre &amp; de navigation de gauche du centre de sécurité conformité, sous **gestion des menaces**, sélectionnez **stratégie**.
     
 3. Sur la page **stratégie** , choisissez **protection contre le hameçonnage ATP**.
     
@@ -160,7 +160,7 @@ Pour créer une stratégie de pièces jointes approuvées pour la protection ava
   
 1. Accédez à [https://protection.office.com](https://protection.office.com)et connectez-vous à l’aide de votre compte d’administrateur. 
     
-2. Dans le centre de sécurité &amp; conformité d’Office 365, dans le volet de navigation de gauche, sous **gestion des menaces**, sélectionnez **stratégie**.
+2. Dans le centre &amp; de navigation de gauche du centre de sécurité conformité, sous **gestion des menaces**, sélectionnez **stratégie**.
     
 3. Sur la page stratégie, choisissez **pièces jointes approuvées ATP**.
     
@@ -183,8 +183,6 @@ Pour créer une stratégie de pièces jointes approuvées pour la protection ava
    
 Pour plus d’informations, reportez-vous à la rubrique [set up Office 365 ATP anti-phishing Policies](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-anti-phishing-policies).
   
-
-
 ## <a name="protect-against-phishing-attacks-with-atp-safe-links"></a>Protection contre les attaques de hameçonnage à l’aide de liens fiables ATP
 
 Les pirates masquent parfois des sites Web malveillants dans des liens dans des courriers électroniques ou dans d’autres fichiers. Office 365 ATP Safe Links (liens fiables ATP), composant d’Office 365 Advanced Threat Protection, peut vous aider à protéger votre organisation en fournissant un temps de vérification des adresses Web (URL) dans les messages électroniques et les documents Office. La protection est définie via des stratégies de liens fiables ATP.
@@ -199,7 +197,7 @@ Pour configurer des liens fiables ATP, regardez [cette vidéo de formation court
   
 1. Accédez à [https://protection.office.com](https://protection.office.com)et connectez-vous à l’aide de votre compte d’administrateur. 
     
-2. Dans le centre de sécurité &amp; conformité d’Office 365, dans le volet de navigation de gauche, sous **gestion des menaces**, sélectionnez **stratégie**.
+2. Dans le centre &amp; de navigation de gauche du centre de sécurité conformité, sous **gestion des menaces**, sélectionnez **stratégie**.
     
 3. Sur la page stratégie, choisissez **liens fiables ATP**.
     
@@ -207,9 +205,9 @@ Pour modifier la stratégie par défaut :
   
 1. Sur la page Liens approuvés, sous **stratégies qui s’appliquent à l’ensemble de l’organisation**, sélectionnez la stratégie **par défaut** . 
     
-2. Sous **paramètres qui s’appliquent au contenu à l’exception du courrier électronique**, sélectionnez **Office 365 ProPlus, Office pour iOS et Android**.
+2. Sous **paramètres qui s’appliquent au contenu à l’exception du courrier électronique**, sélectionnez **Microsoft 365 apps pour entreprise, Office pour iOS et Android**.
     
-3. Cliquez sur **Enregistrer**. 
+3. Sélectionnez **Enregistrer**. 
     
 Pour créer une stratégie ciblée pour tous les destinataires de votre domaine, procédez comme suit :
   
@@ -217,7 +215,7 @@ Pour créer une stratégie ciblée pour tous les destinataires de votre domaine,
     
 2. Appliquez les paramètres présentés dans le tableau suivant.
     
-3. Cliquez sur **Enregistrer**. 
+3. Sélectionnez **Enregistrer**. 
 
 |**Paramètre ou option**|**Valeur recommandée** <br/>|
 |:-----|:-----|

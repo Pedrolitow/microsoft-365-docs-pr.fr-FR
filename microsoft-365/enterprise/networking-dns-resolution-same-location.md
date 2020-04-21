@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 09/23/2019
+ms.date: 04/20/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Comprenez et configurez votre résolution DNS pour de meilleures performances.
-ms.openlocfilehash: 8b4302c06e75c59a1b99eb60399c9df897ad17ea
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: bc1460ec40cda26d4784c7af5e909e4dca3c1f24
+ms.sourcegitcommit: d818828c66cf98b0b0037ba8b3cb790c940281b7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42066657"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43583436"
 ---
 # <a name="step-2-configure-local-internet-connections-for-each-office"></a>Étape 2 : Configurer les connexions Internet locales pour chaque bureau
 
@@ -56,6 +56,8 @@ Pour diriger la demande d’un client vers la porte principale la plus proche g�
 - Chaque connexion Internet locale doit utiliser un serveur DNS régional local pour le trafic Internet sortant de cet emplacement.
 
 Pour plus d’informations, reportez-vous à [Sortir les connexions réseau localement](https://docs.microsoft.com/office365/enterprise/office-365-network-connectivity-principles#egress-network-connections-locally). 
+
+Pour tester l’approche de la fermeture de votre réseau par le biais d’un point d’entrée pour le réseau mondial de Microsoft et de la proximité de la connexion de votre réseau d’entreprise à votre fournisseur de services Internet, utilisez l’ [Outil d’intégration réseau Office 365](https://connectivity.office.com/).
 
 Comme point de vérification intermédiaire, vous pouvez consulter les [critères de sortie](networking-exit-criteria.md#crit-networking-step2) pour cette étape.
 

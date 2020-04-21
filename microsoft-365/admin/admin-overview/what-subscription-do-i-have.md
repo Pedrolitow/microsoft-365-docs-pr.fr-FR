@@ -1,5 +1,5 @@
 ---
-title: Quel abonnement Office 365 pour les entreprises est-ce que j'utilise ?
+title: Quel abonnement ai-je ?
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -22,25 +22,25 @@ search.appverid:
 ms.assetid: 092252f8-08df-4cdb-a8d2-b8653caa29a1
 description: Découvrez comment vérifier les abonnements de votre organisation en accédant à la page abonnements.
 ms.custom: okr_SMB
-ms.openlocfilehash: dad08784a775e590972d1f5dd554aeb2d147c28b
-ms.sourcegitcommit: 9c335d110e0b499501edc8a31b987641819118a1
+ms.openlocfilehash: a8ebff405d57578142318a2111db1dcb53d54435
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/04/2020
-ms.locfileid: "42409499"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43621429"
 ---
 # <a name="what-subscription-do-i-have"></a>Quel abonnement ai-je ?
 
 Si vous êtes administrateur, vous pouvez vérifier les abonnements de votre organisation en accédant au centre d’administration.
   
- **Vous n’êtes pas administrateur ?** Découvrez [les produits ou licences Office 365 Business dont j’ai besoin ?](https://support.office.com/article/f8ab5e25-bf3f-4a47-b264-174b1ee925fd.aspx)
+ **Vous n’êtes pas administrateur ?** Consultez la rubrique [relative à la licence ou au produit Microsoft 365 pour les entreprises](https://support.office.com/article/f8ab5e25-bf3f-4a47-b264-174b1ee925fd.aspx) .
 
 ::: moniker range="o365-worldwide"
 
 > [!NOTE]
 > Si le nouveau Centre d’administration Microsoft 365 n’est pas celui que vous utilisez, vous pouvez l’activer en sélectionnant le bouton bascule **Essayer le nouveau Centre d’administration** situé en haut de la page d’accueil.
 
-1. Dans le Centre d’administration, choisissez la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produits et services</a>.
+1. Dans le Centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produits et services</a>.
 
 2. Vos abonnements s’affichent dans la page **produits & services** , ainsi que le nom de l’abonnement, des informations sur l’abonnement et son état. Pour afficher une vue condensée, sélectionnez **affichage tableau**.
 
@@ -50,7 +50,7 @@ Si vous êtes administrateur, vous pouvez vérifier les abonnements de votre org
 
 1. Dans le centre d’administration, accédez à la page <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">abonnements</a> de **facturation** \>.  
 
-2. Si vous n'avez souscrit qu'un seul abonnement, celui-ci s'affiche dans la page **Abonnements**, conjointement avec le nom de l'abonnement, des informations sur ce dernier ainsi que son état. Dans la capture d'écran suivante, vous remarquez que mon abonnement est Office 365 Business.
+2. Si vous n'avez souscrit qu'un seul abonnement, celui-ci s'affiche dans la page **Abonnements**, conjointement avec le nom de l'abonnement, des informations sur ce dernier ainsi que son état. Dans la capture d’écran suivante, vous pouvez voir que j’ai un abonnement apps pour les applications Microsoft 365.
 
     ![The Subscriptions page that shows which subscription you have as well as its status.](../../media/4d51dfcc-e9f3-4414-964a-6ef182f49eba.png)
   
@@ -69,7 +69,7 @@ Si vous êtes administrateur, vous pouvez vérifier les abonnements de votre org
 
 1. Dans le centre d’administration, accédez à la page <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">abonnements</a> de **facturation** \>.  
 
-2. Si vous n'avez souscrit qu'un seul abonnement, celui-ci s'affiche dans la page **Abonnements**, conjointement avec le nom de l'abonnement, des informations sur ce dernier ainsi que son état. Dans la capture d'écran suivante, vous remarquez que mon abonnement est Office 365 Business.
+2. Si vous n'avez souscrit qu'un seul abonnement, celui-ci s'affiche dans la page **Abonnements**, conjointement avec le nom de l'abonnement, des informations sur ce dernier ainsi que son état. Dans la capture d’écran suivante, vous pouvez voir que j’ai un abonnement apps pour les applications Microsoft 365.
 
     ![The Subscriptions page that shows which subscription you have as well as its status.](../../media/4d51dfcc-e9f3-4414-964a-6ef182f49eba.png)
   

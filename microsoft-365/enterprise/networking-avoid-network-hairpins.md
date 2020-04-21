@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 09/23/2019
+ms.date: 04/20/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Découvrez le fonctionnement des épingles de réseau et supprimez-les pour obtenir de meilleures performances.
-ms.openlocfilehash: f9499fdb8e8c3f7b77e3349d6cc99f6dbf465870
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 1d5e10bdd8b79f5c7ccd646ac08f83bb2c48b6ee
+ms.sourcegitcommit: d818828c66cf98b0b0037ba8b3cb790c940281b7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42066707"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43583424"
 ---
 # <a name="step-3-avoid-network-hairpins"></a>Étape 3 : Éviter les épingles de réseau
 
@@ -47,6 +47,8 @@ Si vous utilisez les services de sécurité ou de réseau basés sur le cloud po
 Dès que possible, configurez vos routeurs périphériques pour envoyer le trafic Microsoft 365 approuvé directement, au lieu d’utiliser la transmission par proxy ou le tunneling via un cloud tiers ou un fournisseur de sécurité réseau basé sur le cloud qui traite votre trafic Internet. 
 
 ![Exemple de contournement d’épingle de réseau](../media/networking-avoid-network-hairpins/bypassing-network-hairpin.png)
+
+Pour tester l’approche de la fermeture de votre réseau par le biais d’un point d’entrée pour le réseau mondial de Microsoft et de la proximité de la connexion de votre réseau d’entreprise à votre fournisseur de services Internet, utilisez l’ [Outil d’intégration réseau Office 365](https://connectivity.office.com/).
 
 Comme point de vérification intermédiaire, vous pouvez consulter les [critères de sortie](networking-exit-criteria.md#crit-networking-step3) pour cette étape.
 

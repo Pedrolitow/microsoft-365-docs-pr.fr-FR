@@ -3,7 +3,7 @@ title: État d'intégrité du service Microsoft 365
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 4/8/2020
+ms.date: 04/19/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -16,12 +16,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: État d'intégrité du service Microsoft 365
-ms.openlocfilehash: c1b938a91b4f0e43e51595ec877e57e7654c5232
-ms.sourcegitcommit: 4988934836eee45c890b9bdd5ef73590656c78ba
+ms.openlocfilehash: 26a9983528072054606cc399ad871d0f99fd22fb
+ms.sourcegitcommit: d818828c66cf98b0b0037ba8b3cb790c940281b7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43540808"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43583356"
 ---
 # <a name="microsoft-365-network-health-status"></a>État d’intégrité du réseau Microsoft 365
 
@@ -37,7 +37,7 @@ Dès que nous détectons des problèmes importants au sein du réseau mondial de
 
 | Emplacement | Type de problème | Détails |
 | --- | --- | --- |
-| Mexique | Infrastructure du fournisseur de services Internet (externe) | Les problèmes de disponibilité détectés dans une infrastructure de fournisseur de services Internet au Mexique peuvent entraîner une expérience médiocre de l’utilisateur de Microsoft 365. Pour plus d’informations, consultez le tableau de bord État du service. |
+| Aucun problème actuel | | |
 
 ## <a name="recommendations-to-improve-network-experience"></a>Recommandations pour améliorer l'expérience du réseau
 

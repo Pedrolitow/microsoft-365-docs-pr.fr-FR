@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: e16f6421-2a1a-4142-bf9d-9846600a060a
 description: Obtenez l’application d’administration de Microsoft 365 et apprenez à gérer votre organisation en ligne à partir de votre téléphone ou tablette.
-ms.openlocfilehash: fc1be50c10ba5158c335d9c9b9dd1e69079ac2c1
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: aead9f30f2d75e3eab5099596ff80a575e571306
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42353035"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43623987"
 ---
 # <a name="about-the-microsoft-365-admin-mobile-app"></a>À propos de l’application mobile d’administration Microsoft 365
 
@@ -66,11 +66,11 @@ Vous trouverez ci-dessous des réponses à des questions fréquemment posées su
   
 ### <a name="what-do-i-need-to-do-to-be-able-to-use-the-app"></a>De quoi ai-je besoin pour pouvoir utiliser l'application ?
 
-Vous devez disposer d’un abonnement Office 365 for Business ou Microsoft 365 Business valide avec des privilèges d’administrateur pour vous connecter et utiliser l’application. L’application mobile admin n’est pas un client de messagerie. Il s’agit d’une application d’administration enrichie avec plus de 80 fonctionnalités pour vous aider à prendre en charge votre organisation lorsque vous êtes en déplacement.
+Vous devez disposer d’un abonnement Microsoft 365 Apps for Business ou Microsoft 365 Business Premium valide avec des privilèges d’administrateur pour vous connecter et utiliser l’application. L’application mobile admin n’est pas un client de messagerie. Il s’agit d’une application d’administration enrichie avec plus de 80 fonctionnalités pour vous aider à prendre en charge votre organisation lorsque vous êtes en déplacement.
   
-### <a name="can-i-use-the-app-with-my-office-365-for-home-subscription"></a>Puis-je utiliser l’application avec mon abonnement Office 365 pour les particuliers ?
+### <a name="can-i-use-the-app-with-my-microsoft-365-family-subscription"></a>Puis-je utiliser l’application avec mon abonnement à la famille Microsoft 365 ?
 
-Non, l’application fonctionne uniquement avec les abonnements Office 365 for Business et Microsoft 365 Business. 
+Non, l’application fonctionne uniquement avec les abonnements Microsoft 365 apps pour les entreprises et Microsoft 365 Business Premium. 
   
 ### <a name="will-the-app-work-if-my-organization-has-directory-synchronization-enabled"></a>L'application fonctionnera-t-elle si mon organisation a activé la synchronisation d'annuaires ?
 
@@ -102,6 +102,6 @@ Vous pouvez tenter d'exécuter les étapes classiques de dépannage d'applicatio
 
 Message électronique [feedback365@microsoft.com](mailto:feedback365@microsoft.com) pour signaler un problème avec l’application. Ou vous pouvez envoyer vos commentaires au bas de cet article. 
   
-## <a name="see-also"></a>Voir aussi
+## <a name="see-also"></a>Voir également
 
-[Vidéos de formation Microsoft 365 Entreprise](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[Vidéos de formation Microsoft 365 pour les entreprises](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

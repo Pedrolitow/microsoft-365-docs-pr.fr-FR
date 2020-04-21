@@ -19,19 +19,19 @@ search.appverid:
 - MOE150
 ms.assetid: 832276bd-d024-47b6-a80a-a6b884907a5b
 description: 'Découvrez comment activer ou désactiver la fonctionnalité de courrier non trié pour tous les utilisateurs de votre organisation ou des utilisateurs spécifiques de votre organisation à l’aide d’Exchange PowerShell. '
-ms.openlocfilehash: 65aa614095ecbebaad3d7eb38af1e74166ce20ac
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: b71fe20133c78974dc7d1c97a061121eded9f221
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42253067"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43628926"
 ---
 # <a name="configure-clutter-for-your-organization"></a>Configurer le courrier non trié pour votre organisation
 
 > [!TIP]
 > La [boîte de réception prioritaire](../setup/configure-focused-inbox.md) va remplacer le courrier non trié. En savoir plus : [mise à jour sur la boîte de réception prioritaire et nos offres d’encombrement](https://techcommunity.microsoft.com/t5/Outlook-Blog/Update-on-Focused-Inbox-and-our-plans-for-Clutter/ba-p/136448)
   
-En tant qu’administrateur, vous pouvez être amené à gérer la fonctionnalité de courrier non trié dans Office 365. Pour activer/désactiver la fonctionnalité courrier non trié pour les utilisateurs de votre organisation, vous devez utiliser Exchange PowerShell. (Les utilisateurs peuvent activer/désactiver ces instructions en procédant comme suit : désactivez [/par courrier non trié dans Outlook](https://support.office.com/article/a9c72a77-1bc4-40e6-ba6d-103c1d1aba4c.aspx).) 
+En tant qu’administrateur, vous pouvez être amené à gérer la fonctionnalité courrier non trié dans Microsoft 365. Pour activer/désactiver la fonctionnalité courrier non trié pour les utilisateurs de votre organisation, vous devez utiliser Exchange PowerShell. (Les utilisateurs peuvent activer/désactiver ces instructions en procédant comme suit : désactivez [/par courrier non trié dans Outlook](https://support.office.com/article/a9c72a77-1bc4-40e6-ba6d-103c1d1aba4c.aspx).) 
   
 Pour plus d’informations sur l’utilisation d’Exchange PowerShell, consultez [l’aide de PowerShell avec Exchange Online](https://go.microsoft.com/fwlink/?LinkID=402831) et [Connectez-vous à Exchange Online PowerShell](https://go.microsoft.com/fwlink/?LinkID=722415) . Vous devez disposer d’un compte qui dispose au moins du rôle d’administrateur de services Exchange et de la possibilité de se connecter à Exchange Online avec PowerShell. 
   
@@ -59,7 +59,7 @@ Si vous utilisez PowerShell pour créer vos utilisateurs en bloc, vous devrez ex
 
 En tant qu’administrateur, vous pouvez réactiver le courrier non trié à l’aide d’Exchange PowerShell. Une fois cette opération terminée, la boîte de réception prioritaire sera désactivée et l’encombrement sera réactivé. 
   
- **Si vous utilisez Outlook sur le Web avec un abonnement Office 365 Business :**
+ **Si vous utilisez Outlook sur le Web avec un abonnement Microsoft 365 Business Premium :**
   
 - Si l’utilisateur a activé le courrier inactif : 
     

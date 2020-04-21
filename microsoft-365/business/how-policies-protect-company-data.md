@@ -1,5 +1,7 @@
 ---
-title: Comment les stratégies dans Microsoft 365 Entreprise protègent les données d'entreprise
+title: Comment les stratégies de Microsoft 365 pour l’entreprise protègent les données de l’entreprise
+f1.keywords:
+- NOCSH
 ms.author: sirkkuw
 author: sirkkuw
 manager: scotv
@@ -24,14 +26,14 @@ search.appverid:
 - MOE150
 ms.assetid: 665485be-2389-4f1d-9ef8-dbef19c6acdf
 description: Pour protéger les données d’entreprise sur les appareils personnels des utilisateurs, utilisez des stratégies qui ciblent des appareils et des groupes de sécurité spécifiques.
-ms.openlocfilehash: 225dbadf599d5287a706ce50ec2b3cc9dd27c996
-ms.sourcegitcommit: 8193b7da5b1a415835d02ca96883c351df7326ed
+ms.openlocfilehash: aa7447ae4547ba3180d5d5ebbe18e2840947a1d5
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38320125"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627143"
 ---
-# <a name="how-policies-in-microsoft-365-business-protect-company-data"></a>Comment les stratégies dans Microsoft 365 Entreprise protègent les données d'entreprise
+# <a name="how-policies-in-microsoft-365-for-business-protect-company-data"></a>Comment les stratégies de Microsoft 365 pour l’entreprise protègent les données de l’entreprise
 
 [] Les stratégies que vous créez sont spécifiques au type d'appareil et peuvent être appliquées à des groupes d'utilisateurs spécifiques. Cela signifie que vous pouvez créer une stratégie qui s'applique à vos cadres et une autre qui s'applique à tous les autres utilisateurs.
   

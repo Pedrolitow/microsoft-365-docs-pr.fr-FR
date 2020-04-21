@@ -21,19 +21,19 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 0b0bd900-68b1-4bf5-808b-5d240a7739f4
-description: 'Découvrez comment vous pouvez avoir plusieurs adresses de messagerie, appelées alias de messagerie, associées à votre compte Office 365 pour les entreprises. '
-ms.openlocfilehash: 10f219f380d30a5ee8e9822e7a35ee533d165c33
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+description: 'Découvrez comment vous pouvez avoir plusieurs adresses de messagerie, appelées alias de messagerie, associées à votre compte Microsoft 365 pour les entreprises. '
+ms.openlocfilehash: 66ff2441c95ed28b2072792fd0a63b16eea85c04
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42253097"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43629082"
 ---
 # <a name="add-another-email-alias-for-a-user"></a>Ajouter un autre alias de courrier pour un utilisateur
   
-Cet article est destiné aux administrateurs Office 365 qui ont des abonnements d’entreprise. Il ne s'adresse pas aux particuliers.
+Cet article est destiné aux administrateurs de Microsoft 365 qui ont des abonnements d’entreprise. Il ne s'adresse pas aux particuliers.
   
-Une adresse de messagerie principale dans Office 365 correspond généralement à l’adresse de messagerie à laquelle un utilisateur a été affecté lors de la création de son compte. Lorsque l'utilisateur envoie du courrier à une autre personne, son adresse de courrier principale est celle qui apparaît généralement dans le champ  *De*  dans les applications de courrier. Il peut également avoir plusieurs adresses de courrier associées à son compte Office 365 pour les entreprises. Les adresses supplémentaires sont appelées alias. 
+Une adresse de messagerie principale dans Microsoft 365 correspond généralement à l’adresse de messagerie à laquelle un utilisateur a été affecté lors de la création de son compte. Lorsque l'utilisateur envoie du courrier à une autre personne, son adresse de courrier principale est celle qui apparaît généralement dans le champ  *De*  dans les applications de courrier. Ils peuvent également avoir plus d’une adresse de messagerie associée à leur compte Microsoft 365 pour les entreprises. Les adresses supplémentaires sont appelées alias. 
   
 Par exemple, supposons que Jenna a l’adresse de messagerie jenna@contosoco.com, mais qu’il souhaite également recevoir des courriers électroniques sur jen@contosoco.com car certaines personnes y font référence par ce nom. Vous pouvez créer des alias pour lui afin que les deux adresses de messagerie soient placées dans la boîte de réception de Jenna.
 <br><br>  
@@ -54,7 +54,7 @@ Pour ce faire, vous devez disposer des [autorisations d’administrateur](../add
 > [!NOTE]
 > Si le nouveau Centre d’administration Microsoft 365 n’est pas celui que vous utilisez, vous pouvez l’activer en sélectionnant le bouton bascule **Essayer le nouveau Centre d’administration** situé en haut de la page d’accueil.
 
-1. Dans le Centre d’administration, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utilisateurs actifs</a>.
+1. Dans le Centre d’administration, accédez à la page **Utilisateurs >** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utilisateurs actifs</a>.
 
 2. Sur la page **utilisateurs actifs** , sélectionnez l’utilisateur > **gérer les alias de messagerie**. Cette option ne s’affiche pas si la personne ne dispose pas d’une licence. 
     
@@ -84,7 +84,7 @@ Pour ce faire, vous devez disposer des [autorisations d’administrateur](../add
 
 ::: moniker range="o365-germany"
     
-1. Dans le Centre d’administration, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Utilisateurs actifs</a>. 
+1. Dans le Centre d’administration, accédez à la page **Utilisateurs >** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Utilisateurs actifs</a>. 
     
     
 2. Dans la page **Utilisateurs actifs**, sélectionnez le nom de la personne à modifier.
@@ -94,7 +94,7 @@ Pour ce faire, vous devez disposer des [autorisations d’administrateur](../add
     > [!Important] 
     > Si vous obtenez le message d’erreur «**Impossible de trouver un paramètre correspondant au nom de paramètre «EmailAddresses**», cela signifie qu’il prend un peu plus de temps pour terminer la configuration de votre client ou votre domaine personnalisé si vous en avez récemment ajouté un. Le processus de configuration peut prendre jusqu'à 4 heures. Patientez le temps que le processus de configuration ait le temps de terminer, puis réessayez. Si le problème persiste, appelez le support technique qui se chargera d'effectuer une synchronisation complète pour vous.
 
-4. Dans la zone de texte sous **alias**, tapez la première partie du nouvel alias de messagerie. Si vous avez ajouté votre domaine à Office 365, vous pouvez choisir le domaine du nouvel alias d'e-mail dans la liste déroulante. Ensuite, sélectionnez **Ajouter**.
+4. Dans la zone de texte sous **alias**, tapez la première partie du nouvel alias de messagerie. Si vous avez ajouté votre domaine à Office 365, vous pouvez choisir le domaine du nouvel alias d'e-mail dans la liste déroulante. Puis sélectionnez **Ajouter**.
 
     > [!IMPORTANT]
     > Si vous achetez votre abonnement auprès de GoDaddy ou d'un autre partenaire, vous devez accéder à la console de gestion de GoDaddy ou du partenaire pour définir le nouvel alias comme alias principal. 
@@ -115,7 +115,7 @@ Pour ce faire, vous devez disposer des [autorisations d’administrateur](../add
 
 ::: moniker range="o365-21vianet"
 
-1. Dans le Centre d’administration, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Utilisateurs actifs</a>. 
+1. Dans le Centre d’administration, accédez à la page **Utilisateurs >** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Utilisateurs actifs</a>. 
 
     
 2. Dans la page **Utilisateurs actifs**, sélectionnez le nom de la personne à modifier.
@@ -125,7 +125,7 @@ Pour ce faire, vous devez disposer des [autorisations d’administrateur](../add
     > [!Important] 
     > Si vous obtenez le message d’erreur «**Impossible de trouver un paramètre correspondant au nom de paramètre «EmailAddresses**», cela signifie qu’il prend un peu plus de temps pour terminer la configuration de votre client ou votre domaine personnalisé si vous en avez récemment ajouté un. Le processus de configuration peut prendre jusqu'à 4 heures. Patientez le temps que le processus de configuration ait le temps de terminer, puis réessayez. Si le problème persiste, appelez le support technique qui se chargera d'effectuer une synchronisation complète pour vous.
 
-4. Dans la zone de texte sous **alias**, tapez la première partie du nouvel alias de messagerie. Si vous avez ajouté votre domaine à Office 365, vous pouvez choisir le domaine du nouvel alias d'e-mail dans la liste déroulante. Ensuite, sélectionnez **Ajouter**.
+4. Dans la zone de texte sous **alias**, tapez la première partie du nouvel alias de messagerie. Si vous avez ajouté votre domaine à Office 365, vous pouvez choisir le domaine du nouvel alias d'e-mail dans la liste déroulante. Puis sélectionnez **Ajouter**.
 
     > [!IMPORTANT]
     > Si vous achetez votre abonnement auprès de GoDaddy ou d'un autre partenaire, vous devez accéder à la console de gestion de GoDaddy ou du partenaire pour définir le nouvel alias comme alias principal. 

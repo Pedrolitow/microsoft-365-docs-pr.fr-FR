@@ -20,14 +20,14 @@ search.appverid:
 - BEA160
 - GEA150
 ms.assetid: 1272bad0-4bd4-4796-8005-67d6fb3afc5a
-description: Pour plus d’informations sur les domaines dans Office 365, recherchez les réponses à vos questions dans FAQ.
+description: Pour plus d’informations sur les domaines, recherchez les réponses à vos questions dans FAQ.
 ms.custom: okr_smb
-ms.openlocfilehash: 5d5b921494ba59b78dec53047a31215a8e755f4c
-ms.sourcegitcommit: 4988934836eee45c890b9bdd5ef73590656c78ba
+ms.openlocfilehash: 4ece90306f37b6f07e34ce93423a76f084d50b6f
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43540866"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627593"
 ---
 # <a name="domains-faq"></a>Foire aux questions domaines
 
@@ -51,7 +51,7 @@ Le courrier électronique est remis au serveur Exchange de messagerie avec le nu
     
 ## <a name="how-can-i-validate-spf-records-for-my-domain"></a>Comment puis-je valider des enregistrements SPF pour mon domaine ?
 
-Il est important de disposer ou de créer **un seul enregistrement txt pour SPF**. Si vous disposez déjà d’un enregistrement SPF, vous devez ajouter les nouvelles valeurs Office 365 au lieu d’en créer un. Une fois que vous avez ajouté ou mis à jour votre enregistrement SPF pour le courrier électronique Office 365, vous devez vérifier que la syntaxe est correcte avec l’un des outils suivants : 
+Il est important de disposer ou de créer **un seul enregistrement txt pour SPF**. Si vous disposez déjà d’un enregistrement SPF, vous devez ajouter les nouvelles valeurs Office 365 au lieu d’en créer un. Une fois que vous avez ajouté ou mis à jour votre enregistrement SPF pour le courrier électronique Microsoft, vous devez vérifier que la syntaxe est correcte avec l’un des outils suivants : 
   
 - [Outils de test de l’enregistrement SPF](http://www.kitterman.com/spf/validate.html)
     
@@ -63,7 +63,7 @@ Il est important de disposer ou de créer **un seul enregistrement txt pour SPF*
 
 Il existe deux options pour la gestion du DNS avec Office 365 :
   
-1. Vous modifiez vos enregistrements de serveur de noms (NS), puis Office 365 prend en charge tous les enregistrements spécifiques aux services, comme la configuration de votre enregistrement MX pour le courrier électronique. **Recommandation**
+1. Vous modifiez vos enregistrements de serveur de noms (NS), puis Microsoft prend en charge tous les enregistrements spécifiques aux services, comme la configuration de votre enregistrement MX pour le courrier électronique. **Recommandation**
     
 2. Vous ajoutez vous-même des enregistrements DNS pour le courrier électronique et d’autres services Office 365 au niveau de votre hôte DNS. **(Experts uniquement)**
     
@@ -87,7 +87,7 @@ Il existe deux options pour la gestion du DNS avec Office 365 :
  
 #### <a name="disadvantages"></a>Inconvénients
 Vous devez configurer les enregistrements DNS pour les services Office 365 vous-même (sauf si vous disposez d’un domaine GoDaddy). 
--  Si votre hôte DNS actuel ne prend pas en charge tous les types d’enregistrements requis pour Office 365, certaines fonctionnalités Office 365 ne seront pas disponibles et vous devrez peut-être basculer vers un autre hôte DNS. 
+-  Si votre hôte DNS actuel ne prend pas en charge tous les types d’enregistrements requis pour Microsoft 365, certaines fonctionnalités ne seront pas disponibles et vous devrez peut-être basculer vers un autre hôte DNS. 
 - Lorsque Office 365 modifie les conditions requises pour les enregistrements DNS, ou ajoute de nouveaux services, vous devez effectuer des mises à jour vous-même auprès de votre hôte DNS. 
    
 ## <a name="what-is-a-domain-name"></a>Qu’est-ce qu’un nom de domaine ?
@@ -333,9 +333,9 @@ Lorsque vous ajoutez plusieurs domaines à Office 365, vous pouvez héberger des
 
 ## <a name="why-do-i-have-an-onmicrosoftcom-domain"></a>Pourquoi ai-je un domaine « onmicrosoft.com » ?
 
-Office 365 crée un domaine pour vous, comme _contoso.onmicrosoft.com_, lorsque vous vous inscrivez auprès du service. Le nom d’utilisateur que vous créez lors de votre inscription comprend le domaine, par exemple _alan\@contoso.onmicrosoft.com_. 
+Office 365 crée un domaine pour vous, comme *contoso.onmicrosoft.com*, lorsque vous vous inscrivez auprès du service. Le nom d’utilisateur que vous créez lors de votre inscription comprend le domaine, par exemple *Alan@contoso.onmicrosoft.com*. 
   
- __Si vous voulez faire ressembler votre courrier _électronique\@Alan contoso.com_:__ [acheter le domaine](../get-help-with-domains/buy-a-domain-name.md) ou simplement suivre les étapes de la procédure [ajouter vos utilisateurs et votre domaine à Office 365](add-domain.md) si vous en êtes déjà propriétaire. 
+ **Si vous voulez faire ressembler votre courrier *électronique\@Alan contoso.com*:** [acheter le domaine](../get-help-with-domains/buy-a-domain-name.md) ou simplement suivre les étapes de la procédure [ajouter vos utilisateurs et votre domaine à Office 365](add-domain.md) si vous en êtes déjà propriétaire. 
   
 - **Vous ne pouvez pas renommer le domaine onmicrosoft après l’inscription.** Par exemple, si le domaine initial que vous avez choisi était fourthcoffee.onmicrosoft.com, vous ne pouvez pas le modifier pour qu’il soit fabrikam.onmicrosoft.com. Pour utiliser un autre domaine onmicrosoft.com, vous devez démarrer un nouvel abonnement avec Office 365. 
     
@@ -348,12 +348,11 @@ Vous pouvez continuer à utiliser le domaine onmicrosoft.com initial même aprè
 ::: moniker-end
 
 ::: moniker range="o365-germany"
-
 ## <a name="why-do-i-have-an-onmicrosoftde-domain"></a>Pourquoi ai-je un domaine « onmicrosoft.de » ?
 
-Office 365 crée un domaine pour vous, comme *contoso.onmicrosoft.de*, lorsque vous vous inscrivez auprès du service. Le nom d’utilisateur que vous créez lors de votre inscription comprend le domaine, par exemple « alan@contoso.onmicrosoft.de ». 
+Office 365 crée un domaine pour vous, comme *contoso.onmicrosoft.de*, lorsque vous vous inscrivez auprès du service. Le nom d’utilisateur que vous créez lors de votre inscription comprend le domaine, par exemple *Alan@contoso.onmicrosoft.de*. 
   
-Si vous souhaitez que votre courrier électronique ressemble à « alan@contoso.de » : [acheter le domaine](../get-help-with-domains/buy-a-domain-name.md) ou suivre les étapes de la section [ajouter vos utilisateurs et votre domaine à Office 365](add-domain.md) si vous en êtes déjà 
+ **Si vous souhaitez que votre courrier électronique ressemble à *Alan@contoso.de*:** [achetez le domaine](../get-help-with-domains/buy-a-domain-name.md) ou suivez simplement les étapes de la procédure [ajouter vos utilisateurs et votre domaine à Office 365](add-domain.md) si vous en êtes déjà propriétaire. 
   
 - **Vous ne pouvez pas renommer le domaine onmicrosoft après l’inscription.** Par exemple, si le domaine initial que vous avez choisi était fourthcoffee.onmicrosoft.de, vous ne pouvez pas le modifier pour qu’il soit fabrikam.onmicrosoft.de. Pour utiliser un autre domaine onmicrosoft.de, vous devez démarrer un nouvel abonnement avec Office 365. 
     
@@ -489,11 +488,11 @@ Vous pouvez, mais il existe des limitations :
         
     2. Effectuez les tests suivants :
         
-    3. Testez le courrier électronique 365 Office local. Par exemple, envoyez un message électronique à l’utilisateur B. Ce message électronique doit être remis immédiatement. Dans ce scénario, le message n’est pas acheminé vers la boîte aux lettres de l’utilisateur B sur votre serveur d’origine car Office 365 voit la boîte aux lettres comme étant locale.
+    3. Testez le courrier électronique Microsoft local. Par exemple, envoyez un message électronique à l’utilisateur B. Ce message électronique doit être remis immédiatement. Dans ce scénario, le message n’est pas acheminé vers la boîte aux lettres de l’utilisateur B sur votre serveur d’origine car Office 365 voit la boîte aux lettres comme étant locale.
         
     4. Testez le courrier électronique à une personne qui se trouve sur l’autre système de courrier. Par exemple, envoyez un message électronique à l’utilisateur C. Ce message électronique doit être remis à la boîte aux lettres de l’utilisateur C sur votre serveur de messagerie d’origine.
         
-    5. À partir d’un compte extérieur ou du compte de messagerie d’un employé sur l’autre système de courrier, vérifiez que le transfert est correctement configuré sur l’autre système de messagerie. Par exemple, à partir du compte de serveur d’origine ou d’un compte Hotmail de l’utilisateur, envoyez un courrier électronique à l’utilisateur et vérifiez qu’il arrive dans la boîte aux lettres Office 365 de l’utilisateur A.
+    5. À partir d’un compte extérieur ou du compte de messagerie d’un employé sur l’autre système de courrier, vérifiez que le transfert est correctement configuré sur l’autre système de messagerie. Par exemple, à partir du compte de serveur origninal de l’utilisateur C ou d’un compte Hotmail, envoyez un courrier électronique à l’utilisateur et vérifiez qu’il arrive dans la boîte aux lettres Office 365 de l’utilisateur A.
         
 9. Déplacer le contenu de la boîte aux lettres
     

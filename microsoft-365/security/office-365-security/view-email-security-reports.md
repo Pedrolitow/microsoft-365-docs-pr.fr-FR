@@ -17,16 +17,16 @@ ms.assetid: 3a137e28-1174-42d5-99af-f18868b43e86
 ms.collection:
 - M365-security-compliance
 description: Découvrez comment rechercher et utiliser des rapports de sécurité de messagerie pour votre organisation. Les rapports de sécurité de messagerie sont disponibles dans le centre de sécurité & conformité.
-ms.openlocfilehash: d99186e4f3a2831eb794d31a33fa4d56af2cc7a4
-ms.sourcegitcommit: 9ed3283dd6dd959faeca5c22613f9126261b9590
+ms.openlocfilehash: b65dd6479262b97f08e34420d9a88ee2a327a73b
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43529072"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631084"
 ---
 # <a name="view-email-security-reports-in-the-security--compliance-center"></a>Afficher les rapports de sécurité de courrier dans le centre de sécurité et conformité
 
-Un grand nombre de rapports sont disponibles dans le [Centre de conformité security &](https://protection.office.com) pour vous aider à découvrir comment les fonctionnalités de sécurité de messagerie, telles que le blocage du courrier indésirable, les programmes malveillants et les fonctionnalités de chiffrement dans Office 365 protègent votre organisation. Si vous disposez des [autorisations nécessaires](#what-permissions-are-needed-to-view-these-reports), vous pouvez afficher ces rapports dans le centre de sécurité & conformité en accédant au **tableau de bord** **rapports** \> .
+Un grand nombre de rapports sont disponibles dans le [Centre de conformité security &](https://protection.office.com) pour vous aider à découvrir comment les fonctionnalités de sécurité de messagerie, telles que le blocage du courrier indésirable, les programmes malveillants et les fonctionnalités de chiffrement de Microsoft 365 protègent votre organisation. Si vous disposez des [autorisations nécessaires](#what-permissions-are-needed-to-view-these-reports), vous pouvez afficher ces rapports dans le centre de sécurité & conformité en accédant au **tableau de bord** **rapports** \> .
 
 ![Tableau de bord des rapports dans le centre de sécurité & conformité](../../media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
 
@@ -69,7 +69,7 @@ Ce rapport ne disposera pas de données de clics à partir des utilisateurs pour
 
 Ce rapport, accessible à tous les utilisateurs disposant d’Exchange Online Protection, indique le nombre de comptes d’utilisateur marqués comme suspects ou utilisateurs restreints, données particulièrement utiles en tant que comptes entrez l’un des États qui indique que le compte d’utilisateur peut être problématique, voire compromis. Dans le cas d’une utilisation fréquente, le rapport de l’utilisateur compromis peut repérer des pics, voire des tendances, dans des comptes marqués dans des États suspects ou restreints, donnant des preuves à un problème de sécurité et du bien-être de votre client.
 
-![Rapport des utilisateurs compromis tel qu’il apparaît dans Office 365.](../../media/tp-threatProtectStatRpt-CompromisedUserRpt.png)
+![Le rapport utilisateurs compromis tel qu’il apparaît dans Microsoft 365.](../../media/tp-threatProtectStatRpt-CompromisedUserRpt.png)
 
 ## <a name="encryption-report"></a>Rapport de chiffrement
 
@@ -91,9 +91,9 @@ De plus, vous pouvez utiliser le menu **afficher les données par** pour affiche
 
 ![Affichage du rapport de chiffrement des données par menu](../../media/encryptionreport-viewdataby.png)
 
-Avec la flexibilité du nouveau rapport de chiffrement, vous pouvez afficher les tendances et prendre les mesures appropriées. Par exemple, si vous voyez un grand nombre de messages électroniques chiffrés par les utilisateurs, vous souhaiterez peut-être ajouter une stratégie de chiffrement pour automatiser le chiffrement pour certains cas d’utilisation. (Pour obtenir de l’aide, reportez-vous à la rubrique [définition de règles de flux de messagerie pour chiffrer les messages électroniques dans Office 365](../../compliance/define-mail-flow-rules-to-encrypt-email.md).) En guise d’exemple, si un certain nombre de modèles de chiffrement sont disponibles mais que personne ne les utilise, vous pouvez découvrir si les utilisateurs ont besoin d’une formation pour cette fonctionnalité.
+Avec la flexibilité du nouveau rapport de chiffrement, vous pouvez afficher les tendances et prendre les mesures appropriées. Par exemple, si vous voyez un grand nombre de messages électroniques chiffrés par les utilisateurs, vous souhaiterez peut-être ajouter une stratégie de chiffrement pour automatiser le chiffrement pour certains cas d’utilisation. (Pour obtenir de l’aide, reportez-vous à la rubrique [définition de règles de flux de messagerie pour chiffrer les messages électroniques dans Microsoft 365](../../compliance/define-mail-flow-rules-to-encrypt-email.md).) En guise d’exemple, si un certain nombre de modèles de chiffrement sont disponibles mais que personne ne les utilise, vous pouvez découvrir si les utilisateurs ont besoin d’une formation pour cette fonctionnalité.
 
-Ce rapport permet à l’équipe de sécurité et de conformité de votre organisation de surveiller le mode d’utilisation du chiffrement des messages et d’indiquer si d’autres actions sont nécessaires. Pour en savoir plus sur le chiffrement, consultez la rubrique [chiffrement des messages électroniques dans Office 365](../../compliance/email-encryption.md).
+Ce rapport permet à l’équipe de sécurité et de conformité de votre organisation de surveiller le mode d’utilisation du chiffrement des messages et d’indiquer si d’autres actions sont nécessaires. Pour en savoir plus sur le chiffrement, consultez la rubrique [chiffrement des messages électroniques dans Microsoft 365](../../compliance/email-encryption.md).
 
 ## <a name="threat-protection-status-report"></a>Rapport sur l’état de la protection contre les menaces
 
@@ -170,7 +170,7 @@ Pour afficher ce rapport, dans le [Centre de sécurité & conformité](https://p
 
 Lorsque vous placez le curseur de la souris sur un jour dans le graphique, vous pouvez voir le nombre de messages d’usurpation d’adresse.
 
-Cliquez (ou appuyez) sur le rapport pour l’ouvrir dans une nouvelle fenêtre de navigateur, dans laquelle vous pouvez obtenir une vue plus détaillée du rapport. Pour en savoir plus sur la protection contre les falsifications, consultez la rubrique [anti-spoofing protection in Office 365](anti-spoofing-protection.md).
+Cliquez (ou appuyez) sur le rapport pour l’ouvrir dans une nouvelle fenêtre de navigateur, dans laquelle vous pouvez obtenir une vue plus détaillée du rapport. Pour en savoir plus sur la protection contre les falsifications, consultez la rubrique [protection contre l’usurpation d’identité dans Microsoft 365](anti-spoofing-protection.md).
 
 ## <a name="spam-detections-report"></a>Rapport de détections de courrier indésirable
 
@@ -208,7 +208,7 @@ Sous le graphique, vous verrez une liste de catégories de courrier, telle que *
 
 ![Ce rapport vous indique le blocage des programmes malveillants, le courrier indésirable et les autres détections de messages.](../../media/9ea4b606-f27a-46ee-97a7-be018e2b839c.png)
 
-Pour en savoir plus sur l’intelligence de messagerie, consultez la rubrique Assistant [flux de messagerie dans Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/mail-flow-intelligence-in-office-365).
+Pour en savoir plus sur l’intelligence de messagerie, voir [mail Flow Intelligence in Microsoft 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/mail-flow-intelligence-in-office-365).
 
 ## <a name="user-reported-messages-report"></a>Rapport sur les messages signalés par l’utilisateur
 
@@ -227,7 +227,7 @@ Pour afficher ce rapport, dans le [Centre de sécurité & conformité](https://p
 ![Dans le centre de sécurité & conformité, choisissez gestion \> des \> menaces-vérifier les messages signalés par l’utilisateur](../../media/e372c57c-1414-4616-957b-bc933b8c8711.png)
 
 > [!IMPORTANT]
-> Pour que le rapport des messages signalés par l’utilisateur fonctionne correctement, la **journalisation d’audit doit être activée** pour votre environnement Office 365. Cette opération est généralement réalisée par une personne disposant du rôle journaux d’audit dans Exchange Online. Pour plus d’informations, voir [Activer ou désactiver la recherche dans un journal d’audit Office 365](https://docs.microsoft.com/microsoft-365/compliance/turn-audit-log-search-on-or-off).
+> Pour que le rapport des messages signalés par l’utilisateur fonctionne correctement, la **journalisation d’audit doit être activée** pour votre environnement Office 365. Cette opération est généralement réalisée par une personne disposant du rôle journaux d’audit dans Exchange Online. Pour plus d’informations, voir [activer ou désactiver la recherche dans le journal d’audit Microsoft 365](https://docs.microsoft.com/microsoft-365/compliance/turn-audit-log-search-on-or-off).
 
 ## <a name="what-permissions-are-needed-to-view-these-reports"></a>Quelles sont les autorisations nécessaires pour afficher ces rapports ?
 
@@ -243,19 +243,19 @@ Pour afficher et utiliser les rapports décrits dans cet article, **vous devez d
 
 Pour en savoir plus, consultez les ressources suivantes :
 
-- [Autorisations dans le Centre de sécurité et conformité Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center)
-
+- [Autorisations dans le centre de conformité et de sécurité](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center)
+ 
 - [Autorisations des fonctionnalités dans Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/feature-permissions)
 
 ## <a name="what-if-the-reports-arent-showing-data"></a>Qu’en est-il si les rapports n’affichent pas de données ?
 
-Si vous ne voyez pas de données dans vos rapports, vérifiez que vos stratégies sont correctement configurées. Pour en savoir plus, consultez la rubrique [Protégez-vous contre les menaces dans Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats).
+Si vous ne voyez pas de données dans vos rapports, vérifiez que vos stratégies sont correctement configurées. Pour en savoir plus, consultez la rubrique [Protégez-vous contre les menaces dans Microsoft 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats).
 
 ## <a name="related-topics"></a>Voir aussi
 
-[Protection contre le courrier indésirable pour Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/anti-spam-and-anti-malware-protection)
+[Protection contre le courrier indésirable de Microsoft 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/anti-spam-and-anti-malware-protection)
 
-[Rapports et informations dans le centre de conformité & Office 365 Security](https://docs.microsoft.com/microsoft-365/security/office-365-security/reports-and-insights-in-security-and-compliance)
+[Rapports et informations dans le centre de sécurité & conformité](https://docs.microsoft.com/microsoft-365/security/office-365-security/reports-and-insights-in-security-and-compliance)
 
 [Créer une planification pour un rapport dans le centre de sécurité & conformité](https://docs.microsoft.com/microsoft-365/security/office-365-security/create-a-schedule-for-a-report)
 

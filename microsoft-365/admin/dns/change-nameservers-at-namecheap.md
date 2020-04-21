@@ -1,5 +1,5 @@
 ---
-title: Modifier les serveurs de noms pour configurer Office 365 avec NameCheap
+title: Modifier les serveurs de noms pour configurer Microsoft avec NameCheap
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -19,19 +19,19 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 84f467f6-28cf-40f0-94d0-a2a27ddfc2e7
-description: 'Apprenez à configurer votre domaine personnalisé Office 365 avec NameCheap si vous souhaitez qu’Office 365 gère vos enregistrements DNS. '
-ms.openlocfilehash: 1130f8aca0f2d014d73f5a1b2e2edb2785a7c6b8
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+description: 'Apprenez à configurer votre domaine personnalisé Microsoft avec NameCheap si vous souhaitez que Microsoft gère vos enregistrements DNS. '
+ms.openlocfilehash: 6fdec37e837c74666ada82af81d43faaa0a6d589
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43212316"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43629778"
 ---
-# <a name="change-nameservers-to-set-up-office-365-with-namecheap"></a>Modifier les serveurs de noms pour configurer Office 365 avec NameCheap
+# <a name="change-nameservers-to-set-up-microsoft-with-namecheap"></a>Modifier les serveurs de noms pour configurer Microsoft avec NameCheap
 
- **[Consultez les Forums aux questions des domaines](../setup/domains-faq.md)** si vous ne trouvez pas ce que vous recherchez.
+ **[Consultez les Forums aux questions sur les domaines](../setup/domains-faq.md)** si vous ne trouvez pas ce que vous recherchez.
   
-Suivez ces instructions si vous voulez laisser le soin à Office 365 de gérer vos enregistrements DNS Office 365 à votre place. (Si vous préférez, vous pouvez [gérer tous vos enregistrements DNS Office 365 sur NameCheap](create-dns-records-at-namecheap.md).)
+Suivez ces instructions si vous voulez que Microsoft gère vos enregistrements DNS pour vous. (Si vous préférez, vous pouvez [gérer tous vos enregistrements DNS Microsoft sur NameCheap](create-dns-records-at-namecheap.md).)
   
     
 ## <a name="add-a-txt-record-for-verification"></a>Ajouter un enregistrement TXT à des fins de vérification
@@ -69,7 +69,7 @@ Suivez ces instructions si vous voulez laisser le soin à Office 365 de gérer v
     
 |**Type**|**Host (Hôte)**|**Valeur**|**TTL**|
 |:-----|:-----|:-----|:-----|
-|TXT  <br/> |@  <br/> |MS=ms *XXXXXXXX*  <br/> **Remarque**: Voici un exemple. Utilisez votre valeur **Adresse de destination ou de pointage** spécifique ici, à partir du tableau dans Office 365.           [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md)          |30 min  <br/> |
+|TXT  <br/> |@  <br/> |MS=ms *XXXXXXXX*  <br/> **Remarque**: Voici un exemple. Utilisez votre **adresse de destination ou de pointage** spécifique ici, à partir du tableau.           [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md)          |30 min  <br/> |
    
    ![NameCheap-BP-Verify-1-2](../../media/fe75c0fd-f85c-4bef-8068-edaf9779b7f1.png)
   
@@ -79,9 +79,9 @@ Suivez ces instructions si vous voulez laisser le soin à Office 365 de gérer v
   
 9. Patientez quelques minutes, le temps que l'enregistrement que vous venez de créer soit mis à jour sur Internet.
     
-L’enregistrement étant désormais ajouté sur le site de votre bureau d’enregistrement de domaines, revenez à Office 365 et demandez à Office 365 de rechercher l’enregistrement.
+À présent que vous avez ajouté l’enregistrement sur le site de votre bureau d’enregistrement de domaines, vous allez retourner à Microsoft et demander une recherche pour l’enregistrement.
   
-Lorsqu’Office 365 trouve l’enregistrement TXT approprié, votre domaine est vérifié.
+Lorsque Microsoft trouve l’enregistrement TXT correct, votre domaine est vérifié.
   
 1. Dans le centre d’administration, accédez à la page **Paramètres** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domaines</a>.
 
@@ -103,10 +103,10 @@ Lorsqu’Office 365 trouve l’enregistrement TXT approprié, votre domaine est
   
 ## <a name="change-your-domains-nameserver-ns-records"></a>Modifier les enregistrements de serveur de noms (NS) de votre domaine
 
-Pour finaliser la configuration de votre domaine avec Office 365, vous devez modifier les enregistrements de serveur de noms auprès de votre bureau d'enregistrement de domaines afin qu'ils pointent vers les serveurs de noms principal et secondaire Office 365. Office 365 est ainsi informé qu'il doit mettre à jour les enregistrements DNS du domaine pour vous. Pour finaliser la configuration, nous ajouterons tous les enregistrements de façon à ce que vous puissiez utiliser la messagerie, Skype Entreprise Online et votre site web public avec votre domaine.
+Pour terminer la configuration de votre domaine avec Microsoft, vous devez modifier les enregistrements de serveur de noms de votre domaine au niveau de votre bureau d’enregistrement de domaines afin de pointer vers les serveurs de noms principaux et secondaires Microsoft. Cela permet à Microsoft de mettre à jour les enregistrements DNS du domaine pour vous. Pour finaliser la configuration, nous ajouterons tous les enregistrements de façon à ce que vous puissiez utiliser la messagerie, Skype Entreprise Online et votre site web public avec votre domaine.
   
 > [!CAUTION]
-> Lorsque vous modifiez les enregistrements de serveur de noms de votre domaine de façon à ce qu'ils pointent vers les serveurs de noms Office 365, tous les services actuellement associés à votre domaine sont affectés. Par exemple, les messages envoyés à votre domaine (tel que thomas@ *votre_domaine*  .com) arriveront dans Office 365 une fois cette modification appliquée. 
+> Lorsque vous modifiez les enregistrements de serveur de noms de votre domaine pour qu’ils pointent vers les serveurs de noms Microsoft, tous les services actuellement associés à votre domaine sont affectés. Par exemple, tous les messages électroniques envoyés à votre domaine (par exemple, rob@ *your_domain* . com) débuteront à Microsoft après avoir effectué cette modification. 
   
 > [!IMPORTANT]
 >  Une fois les étapes décrites dans cette section accomplies, les  *seuls*  serveurs de noms qui doivent être répertoriés sont les quatre suivants : >  ns1.bdm.microsoftonline.com >  ns2.bdm.microsoftonline.com >  ns3.bdm.microsoftonline.com >  ns4.bdm.microsoftonline.com >  La procédure suivante décrit comment supprimer tout autre serveur de noms indésirable de la liste, et y ajouter les serveurs de noms  *corrects*  qui n'y figurent pas encore. 
@@ -156,7 +156,7 @@ Pour finaliser la configuration de votre domaine avec Office 365, vous devez mod
     ![NameCheap-BP-redelegate-1-5](../../media/07aaf1e5-c24f-4c51-bfe0-f99868b3bf35.png)
   
 > [!NOTE]
-> L'application des modifications apportées à votre enregistrement de serveur de noms dans le système DNS sur Internet peut prendre plusieurs heures. Vous pourrez ensuite utiliser votre messagerie et les autres services Office 365 avec votre domaine. 
+> Your nameserver record updates may take up to several hours to update across the Internet's DNS system. Votre messagerie Microsoft et les autres services seront tous configurés pour fonctionner avec votre domaine. 
   
 ### <a name="if-there-are-nameservers-already-listed"></a>Si DES serveurs de noms sont déjà répertoriés
 
@@ -188,4 +188,4 @@ Pour finaliser la configuration de votre domaine avec Office 365, vous devez mod
     ![NameCheap-BP-redelegate-1-5](../../media/07aaf1e5-c24f-4c51-bfe0-f99868b3bf35.png)
   
 > [!NOTE]
-> L'application des modifications apportées à votre enregistrement de serveur de noms dans le système DNS sur Internet peut prendre plusieurs heures. Vous pourrez ensuite utiliser votre messagerie et les autres services Office 365 avec votre domaine.
+> Your nameserver record updates may take up to several hours to update across the Internet's DNS system. Votre messagerie Microsoft et les autres services seront tous configurés pour fonctionner avec votre domaine.

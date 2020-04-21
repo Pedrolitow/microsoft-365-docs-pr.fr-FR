@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 97af2932-0868-4ccf-8f6b-21a94946c58a
 description: Apprenez à gérer les messages du centre de messages pour faciliter la gestion des modifications.
-ms.openlocfilehash: 5b1772eb86acb937d532990830f9220f197c1c00
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 95a4544dd99ebce793242532ae144f00c3b16fcb
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42361929"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43628147"
 ---
 # <a name="manage-messages-in-message-center"></a>Gérer les messages dans le centre de messages
 
@@ -87,13 +87,13 @@ Afficher un message sur lequel une autre personne doit agir ? Vous pouvez parta
   
 1. Sélectionnez le message pour l’ouvrir, puis cliquez sur **partager**.
   
-2. Pour partager le message, entrez un maximum de deux adresses de messagerie séparées par un signe deux-points. Vous pouvez effectuer des envois à des adresses de messagerie individuelles et de groupe. Si vous le souhaitez, vous pouvez choisir de recevoir une copie du message dans un message électronique (le message sera envoyé à votre adresse de messagerie principale dans Office 365) ou ajouter un message personnel pour fournir aux destinataires un contexte plus grand.
+2. Pour partager le message, entrez un maximum de deux adresses de messagerie séparées par un signe deux-points. Vous pouvez effectuer des envois à des adresses de messagerie individuelles et de groupe. Si vous le souhaitez, vous pouvez choisir de recevoir une copie du message dans un message électronique (le message sera envoyé à votre adresse de messagerie principale) ou un message personnel pour fournir aux destinataires un contexte plus grand.
   
 3. Sélectionnez **partager** pour envoyer le courrier électronique.
     
 ## <a name="get-a-link"></a>Obtenir un lien
 
-Vous devez suivre un autre administrateur pour vous assurer qu’il est conscient d’une modification et de l’action à entreprendre ? Vous pouvez générer un lien à partager dans le courrier électronique ou la messagerie instantanée, par exemple, pour connecter l’utilisateur directement à ce message. La personne avec laquelle vous partagez le lien doit être un administrateur dans Office 365 pour votre organisation ou il n’aura pas accès au message lié.
+Vous devez suivre un autre administrateur pour vous assurer qu’il est conscient d’une modification et de l’action à entreprendre ? Vous pouvez générer un lien à partager dans le courrier électronique ou la messagerie instantanée, par exemple, pour connecter l’utilisateur directement à ce message. La personne avec laquelle vous partagez le lien doit être un administrateur de Microsoft 365 pour votre organisation ou il n’aura pas accès au message lié.
 
 ::: moniker range="o365-worldwide"
 
@@ -213,5 +213,5 @@ Vous avez besoin de récupérer un message fermé ? Pas de problème.
 
 ::: moniker-end
 
-Pour une vue d’ensemble du centre de messages, consultez la rubrique [Centre de messages dans Office 365](message-center.md). Ou, pour en savoir plus sur la façon de définir vos préférences linguistiques afin d’activer la traduction automatique pour les publications du centre de messages, consultez la rubrique [Langue traduction pour les publications du centre de messages](language-translation-for-message-center-posts.md). Si vous souhaitez programmer un autre moyen d’obtenir des informations sur l’état du service en temps réel et des communications du centre de messages, reportez-vous à la [rubrique Présentation de l’API de communications de service Office 365](https://go.microsoft.com/fwlink/p/?linkid=848507).
+Pour une vue d’ensemble du centre de messages, consultez la rubrique [Centre de messages dans Microsoft 365](message-center.md). Ou, pour en savoir plus sur la façon de définir vos préférences linguistiques afin d’activer la traduction automatique pour les publications du centre de messages, consultez la rubrique [Langue traduction pour les publications du centre de messages](language-translation-for-message-center-posts.md). Si vous souhaitez programmer un autre moyen d’obtenir des informations sur l’état du service en temps réel et des communications du centre de messages, reportez-vous à [Microsoft 365 service communications API Overview](https://go.microsoft.com/fwlink/p/?linkid=848507).
   

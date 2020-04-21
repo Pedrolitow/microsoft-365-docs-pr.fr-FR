@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Les rôles d’administrateur correspondent à des fonctions professionnelles et accordent l'autorisation d'effectuer des tâches spécifiques dans le centre d’administration. Par exemple, l’administrateur du service ouvre les tickets de support avec Microsoft.
-ms.openlocfilehash: 749e0532cf379d1fcff0580c9d5ede7910cfa38b
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 85952f1f64db0e1ae94d9c5f69e5c95f7f9c2dab
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42353265"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43618871"
 ---
 # <a name="get-started-with-the-roles-page"></a>Prise en main de la page rôles
 
@@ -55,7 +55,7 @@ Il ne s’agit pas d’une liste exhaustive de toutes les autorisations de ces r
 
 ### <a name="exchange-admin"></a>Administrateur Exchange
 
-Attribuez le rôle d’administrateur Exchange aux utilisateurs qui ont besoin d’afficher et de gérer les boîtes aux lettres de messagerie de vos utilisateurs, les groupes Office 365 et Exchange Online. Ils peuvent également ouvrir et gérer les demandes de service adressées au support Microsoft. [En savoir plus](https://docs.microsoft.com/office365/admin/add-users/about-exchange-online-admin-role)
+Attribuez le rôle d’administrateur Exchange aux utilisateurs qui ont besoin d’afficher et de gérer les boîtes aux lettres de messagerie de vos utilisateurs, les groupes Microsoft 365 et Exchange Online. Ils peuvent également ouvrir et gérer les demandes de service adressées au support Microsoft. [En savoir plus](https://docs.microsoft.com/office365/admin/add-users/about-exchange-online-admin-role)
 
 ### <a name="global-admin"></a>Administrateur global
 
@@ -75,15 +75,15 @@ Attribuez le rôle d’administrateur de service aux utilisateurs qui ont besoin
 
 ### <a name="sharepoint-admin"></a>Administrateur SharePoint
 
-Lorsque vous achetez un abonnement Microsoft 365 ou Office 365, un site d’équipe est automatiquement créé et l’administrateur global est défini en tant qu’administrateur principal de la collection de sites. Attribuez le rôle d’administrateur SharePoint aux utilisateurs auxquels vous voulez accéder au centre d’administration SharePoint. Les utilisateurs disposant du rôle d’administrateur SharePoint peuvent créer et gérer des collections de sites, désigner des administrateurs de collection de sites et gérer des profils utilisateur. Les utilisateurs disposant du rôle d’administrateur SharePoint peuvent également gérer les groupes Office 365 et les demandes de service ouvertes via le support Microsoft. [En savoir plus](https://docs.microsoft.com/sharepoint/sharepoint-admin-role)
+Lorsque vous achetez un abonnement Microsoft 365, un site d’équipe est automatiquement créé et l’administrateur global est défini en tant qu’administrateur principal de la collection de sites. Attribuez le rôle d’administrateur SharePoint aux utilisateurs auxquels vous voulez accéder au centre d’administration SharePoint. Les utilisateurs disposant du rôle d’administrateur SharePoint peuvent créer et gérer des collections de sites, désigner des administrateurs de collection de sites et gérer des profils utilisateur. Les utilisateurs disposant du rôle d’administrateur SharePoint peuvent également gérer les groupes Microsoft 365 et les demandes de service ouvertes via le support Microsoft. [En savoir plus](https://docs.microsoft.com/sharepoint/sharepoint-admin-role)
 
-### <a name="teams-service-admin"></a>Administrateur du service teams
+### <a name="teams-service-admin"></a>Administrateur du service Teams
 
-Attribuez le rôle d’administrateur teams aux utilisateurs auxquels vous souhaitez accéder et gérer les équipes & Centre d’administration Skype. Les utilisateurs disposant du rôle d’administrateur teams peuvent également gérer les groupes Office 365 et les demandes de service ouvertes via le support Microsoft. [En savoir plus](https://docs.microsoft.com/MicrosoftTeams/using-admin-roles)
+Attribuez le rôle d’administrateur teams aux utilisateurs auxquels vous souhaitez accéder et gérer les équipes & Centre d’administration Skype. Les utilisateurs disposant du rôle d’administrateur teams peuvent également gérer les groupes Microsoft 365 et les demandes de service ouvertes via le support Microsoft. [En savoir plus](https://docs.microsoft.com/MicrosoftTeams/using-admin-roles)
 
 ### <a name="user-admin"></a>Administrateur d’utilisateurs
 
-Attribuez le rôle d’administrateur d’utilisateurs aux utilisateurs auxquels vous souhaitez accéder et gérer les réinitialisations des mots de passe utilisateur et gérer les utilisateurs et les groupes Office 365. Ils peuvent également ouvrir et gérer les demandes de service adressées au support Microsoft. [En savoir plus](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles#roles-available-in-the-microsoft-365-admin-center)
+Attribuez le rôle d’administrateur d’utilisateurs aux utilisateurs auxquels vous souhaitez accéder et gérer les réinitialisations de mot de passe utilisateur et gérer les utilisateurs et les groupes. Ils peuvent également ouvrir et gérer les demandes de service adressées au support Microsoft. [En savoir plus](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles#roles-available-in-the-microsoft-365-admin-center)
 
 ::: moniker range="o365-worldwide"
 

@@ -1,5 +1,5 @@
 ---
-title: Restaurer un utilisateur dans Office 365
+title: Restaurer un utilisateur
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -21,27 +21,27 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: 2c261e42-5dd1-48b0-845f-2a016d29cfc1
-description: Découvrez comment restaurer des comptes d’utilisateur Office 365 supprimés et toutes les données associées.
-ms.openlocfilehash: 385f7938f5e0ce1f3a580d40830124f77454f64d
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+description: Découvrez comment restaurer des comptes d’utilisateurs supprimés et toutes les données associées.
+ms.openlocfilehash: 78766f1f6708665271361d542372aa945b0a7e29
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42239345"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43624057"
 ---
-# <a name="restore-a-user-in-office-365"></a>Restaurer un utilisateur dans Office 365
+# <a name="restore-a-user"></a>Restaurer un utilisateur
    
 Lorsque vous restaurez un compte d'utilisateur dans les 30 jours après sa suppression, celui-ci et toutes les données associées sont restaurés. L'utilisateur peut se connecter avec le même compte professionnel ou scolaire. Sa boîte aux lettres est entièrement restaurée. Pour déterminer le temps restant avant qu'un compte d'utilisateur spécifique ne puisse plus être restauré, [contactez-nous](../contact-support-for-business-products.md).
   
 Voici quelques conseils :
   
-- Vérifiez qu'il y a des licences Office 365 disponibles que vous pouvez attribuer au compte.
+- Assurez-vous que les licences sont disponibles pour les affecter au compte.
     
 - Si votre entreprise utilise Active Directory, consultez [Comment résoudre les problèmes liés aux comptes d'utilisateurs supprimés dans Office 365](https://support.microsoft.com/kb/2619308) pour obtenir des instructions sur la restauration d'un compte d'utilisateur. 
     
 ## <a name="restore-one-or-more-user-accounts"></a>Restaurer un ou plusieurs comptes d'utilisateur
 
-Pour effectuer ces étapes, vous devez être administrateur général ou administrateur de gestion des utilisateurs dans Office 365. 
+Pour effectuer ces étapes, vous devez être un administrateur général Microsoft 365 ou un administrateur de gestion des utilisateurs. 
   
  
 ::: moniker range="o365-worldwide"
@@ -117,7 +117,7 @@ Pour résoudre ce problème, vous pouvez soit remplacer le compte d'utilisateur 
 
 Un conflit d'adresses proxy survient lorsque vous supprimez un compte d'utilisateur contenant une adresse proxy, attribuez cette adresse à un autre compte, puis tentez de restaurer le compte supprimé. Suivez les étapes ci-dessous pour résoudre ce problème.
   
-Vous devez disposer des [autorisations d'administrateur](about-admin-roles.md) dans Office 365 pour effectuer cette action. 
+Pour ce faire, vous devez disposer des [autorisations d’administrateur](about-admin-roles.md) dans Microsoft 365. 
   
 
 ::: moniker range="o365-worldwide"
@@ -148,4 +148,3 @@ Accédez au [Centre d’administration](https://go.microsoft.com/fwlink/p/?linki
 
 [Supprimer un utilisateur](delete-a-user.md)
   
-

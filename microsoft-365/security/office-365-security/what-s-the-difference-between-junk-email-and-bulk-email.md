@@ -16,16 +16,16 @@ ms.assetid: 8079f193-1b40-4081-9e5d-d0e50dfbcc59
 ms.collection:
 - M365-security-compliance
 description: Cette rubrique explique la différence entre le courrier indésirable (courrier indésirable) et le courrier électronique en masse, et les contrôles associés dans Office 365.
-ms.openlocfilehash: 41dedd02febc40b73dc585961487f89bbc6db54a
-ms.sourcegitcommit: c876d58b34454f211b50ae5d06f193c1a1e5c4ff
+ms.openlocfilehash: 15ca00b007ef0b8470e1b30608a695a90bd638b2
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/11/2020
-ms.locfileid: "43230955"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43630832"
 ---
 # <a name="whats-the-difference-between-junk-email-and-bulk-email"></a>Quelle est la différence entre le courrier indésirable et le courrier en nombre ?
 
-Les clients Office 365 avec des boîtes aux lettres dans Exchange Online ou des clients Exchange Online Protection (EOP) autonomes sans boîte aux lettres Exchange Online demandent parfois : « quelle est la différence entre le courrier indésirable et le courrier électronique en masse ? » Cette rubrique explique la différence et décrit les contrôles disponibles dans EOP.
+Les clients Microsoft 365 avec des boîtes aux lettres dans Exchange Online ou des clients Exchange Online Protection (EOP) autonomes sans boîte aux lettres Exchange Online demandent parfois : « quelle est la différence entre le courrier indésirable et le courrier électronique en masse ? » Cette rubrique explique la différence et décrit les contrôles disponibles dans EOP.
 
 - Le courrier **indésirable** est du courrier indésirable, qui sont des messages non sollicités et universellement indésirables (lorsqu’ils sont identifiés correctement). Par défaut, EOP rejette le courrier indésirable en fonction de la réputation du serveur de messagerie source. Si un message passe l’inspection IP source, il est envoyé au filtrage du courrier indésirable. Si le message est classé comme courrier indésirable par filtrage du courrier indésirable, le message est remis (par défaut) aux destinataires concernés et déplacé vers le dossier courrier indésirable.
 

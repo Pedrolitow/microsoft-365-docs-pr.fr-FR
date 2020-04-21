@@ -19,13 +19,13 @@ search.appverid:
 - MOE150
 ms.assetid: 481b460e-f799-4fac-9592-4d5c51bdcbd8
 ROBOTS: NOINDEX
-description: Découvrez comment supprimer ou restaurer le compte Office 365 d’un utilisateur.
-ms.openlocfilehash: 35245a0f9cbe78f6758c7071adea30053f7b8737
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+description: Découvrez comment supprimer ou restaurer le compte Microsoft 365 d’un utilisateur.
+ms.openlocfilehash: 7c6ab070db2821d914a26277b7f5c19043abe39b
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42254302"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627883"
 ---
 # <a name="quick-help-deleted-user"></a>Aide rapide : Utilisateur supprimé
 
@@ -38,7 +38,7 @@ ms.locfileid: "42254302"
 > [!NOTE]
 > Si le nouveau Centre d’administration Microsoft 365 n’est pas celui que vous utilisez, vous pouvez l’activer en sélectionnant le bouton bascule **Essayer le nouveau Centre d’administration** situé en haut de la page d’accueil.
   
-1. Dans le Centre d’administration, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utilisateurs actifs</a>.
+1. Dans le Centre d’administration, accédez à la page **Utilisateurs >** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utilisateurs actifs</a>.
 
 2. Sélectionnez un utilisateur, puis au-dessus de la liste des utilisateurs, sélectionnez **plus d’options** (**...**), puis cliquez sur **Supprimer l’utilisateur**.
   
@@ -48,7 +48,7 @@ ms.locfileid: "42254302"
 
 ::: moniker range="o365-germany"
 
-1. Dans le Centre d’administration, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Utilisateurs actifs</a>.  
+1. Dans le Centre d’administration, accédez à la page **Utilisateurs >** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Utilisateurs actifs</a>.  
 
 2. Sélectionnez un utilisateur, puis au-dessus de la liste des utilisateurs, choisissez **plus** > **supprimer un utilisateur**.
   
@@ -58,7 +58,7 @@ ms.locfileid: "42254302"
 
 ::: moniker range="o365-21vianet"
 
-1. Dans le Centre d’administration, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Utilisateurs actifs</a>. 
+1. Dans le Centre d’administration, accédez à la page **Utilisateurs >** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Utilisateurs actifs</a>. 
 
 2. Sélectionnez un utilisateur, puis au-dessus de la liste des utilisateurs, choisissez **plus** > **supprimer un utilisateur**.
   
@@ -75,9 +75,9 @@ Vous pouvez restaurer des utilisateurs en recherchant **Deleted** sur la page d�
 
 Un [utilisateur](../add-users/add-users.md) supprimé est un compte professionnel ou scolaire que vous supprimez de votre organisation. 
   
-## <a name="does-deleting-a-user-free-up-their-office-365-license"></a>La suppression d'un utilisateur a-t-elle pour effet de libérer une licence Office 365 ?
+## <a name="does-deleting-a-user-free-up-their-microsoft-365-license"></a>La suppression d’un utilisateur a-t-elle libéré sa licence Microsoft 365 ?
 
-Oui, la suppression d'un utilisateur libère la licence Office 365 qui lui est attribuée. Vous pouvez ensuite attribuer cette licence à un autre utilisateur. [Lire l'intégralité de l'article](../../commerce/licenses/remove-licenses-from-subscription.md).
+Oui, la suppression de l’utilisateur libère la licence Microsoft 365 attribuée à cet utilisateur. Vous pouvez ensuite attribuer cette licence à un autre utilisateur. [Lire l'intégralité de l'article](../../commerce/licenses/remove-licenses-from-subscription.md).
   
 ## <a name="i-had-a-deleted-user-listed-in-deleted-users-and-then-it-disappeared-what-happened"></a>J'avais un utilisateur supprimé répertorié parmi la liste Utilisateurs supprimés, mais il a disparu. Que s'est-il passé ?
 

@@ -1,5 +1,5 @@
 ---
-title: Rapports Office 365 dans le centre d’administration-rapport d’activité Yammer
+title: Rapports Microsoft 365 dans le centre d’administration-rapport d’activité Yammer
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -19,14 +19,14 @@ search.appverid:
 - MOE150
 ms.assetid: c7c9f938-5b8e-4d52-b1a2-c7c32cb2312a
 description: Obtenir le rapport d’activité Yammer et en savoir plus sur le nombre d’utilisateurs qui utilisent Yammer pour publier, comme ou lire un message.
-ms.openlocfilehash: de62ef0ceed54da76ead64274923ac646240ce44
-ms.sourcegitcommit: 2b626a7924b4be08f6eb21181453b778e6fde418
+ms.openlocfilehash: bd128e17b8d435b8d5c6b06f16ff37fea11a6ce3
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/30/2020
-ms.locfileid: "43047022"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43618955"
 ---
-# <a name="office-365-reports-in-the-admin-center---yammer-activity-report"></a>Rapports Office 365 dans le centre d’administration-rapport d’activité Yammer
+# <a name="microsoft-365-reports-in-the-admin-center---yammer-activity-report"></a>Rapports Microsoft 365 dans le centre d’administration-rapport d’activité Yammer
 
 En tant qu’administrateur Microsoft 365, le tableau de bord **rapports** affiche des données sur l’utilisation des produits au sein de votre organisation. Consultez la case à cocher [rapports d’activité dans le centre d’administration](activity-reports.md). Le **rapport d'activité Yammer** vous permet de comprendre le niveau d'engagement de votre organisation avec Yammer en consultant le nombre d'utilisateurs utilisant Yammer pour publier, aimer ou lire un message, et le volume d'activité généré dans l'ensemble de l'organisation. 
   
@@ -82,7 +82,7 @@ Le rapport d'activité contient les informations suivantes.
     
   - **Nom d'utilisateur** indique l'adresse de courrier de l'utilisateur. Vous pouvez afficher l'adresse de courrier réelle ou rendre ce champ anonyme. 
     
-    Cette grille affiche les utilisateurs connectés à Yammer à l'aide du compte Office 365, ou connectés au réseau à l'aide d'une authentification unique.
+    Cette grille affiche les utilisateurs qui se sont connectés à Yammer à l’aide du compte Microsoft 365 ou qui ont ouvert une session sur le réseau à l’aide de l’authentification unique.
     
   - **Nom complet** indique le nom complet de l'utilisateur. Vous pouvez afficher l'adresse électronique réelle ou rendre ce champ anonyme. 
     
@@ -112,6 +112,6 @@ Le rapport d'activité contient les informations suivantes.
     
 - **Aucune donnée de réseau externe** Les données de réseaux externes ne sont pas incluses dans ces rapports. 
     
-- **Réseaux activés** Ces rapports affichent des données pour le réseau Yammer qui fait partie de votre abonnement Office 365. Le graphique regroupe l'utilisation de tous les utilisateurs connectés au réseau Yammer, qu'ils aient utilisé Office 365 ou Yammer pour se connecter. 
+- **Réseaux activés** Ces rapports affichent des données pour le réseau Yammer qui fait partie de votre abonnement Microsoft 365. Le graphique agrège l’utilisation de tous les utilisateurs qui se sont connectés au réseau Yammer, qu’ils utilisent ou non Microsoft 365 ou Yammer pour se connecter. 
     
 

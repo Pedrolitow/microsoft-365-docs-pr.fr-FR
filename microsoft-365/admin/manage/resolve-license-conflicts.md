@@ -1,5 +1,5 @@
 ---
-title: Résoudre les conflits de licence dans Office 365 pour les entreprises
+title: Résoudre les conflits de licence
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -19,15 +19,15 @@ search.appverid:
 - MOE150
 - BEA160
 ms.assetid: 796f7eda-b1f8-479a-adee-bd9226ca47ec
-description: Découvrez comment résoudre les conflits de licences avec votre abonnement Office 365 pour les entreprises.
-ms.openlocfilehash: de0a6c988b9ca2ae033a24c012b7f36bc1db58a3
-ms.sourcegitcommit: 4988934836eee45c890b9bdd5ef73590656c78ba
+description: Découvrez comment résoudre les conflits de licences avec votre abonnement Microsoft 365 pour les entreprises.
+ms.openlocfilehash: 51f87c055402d9e6e3bd732a99abf2c155887290
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43540914"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43628087"
 ---
-# <a name="resolve-license-conflicts-in-office-365-for-business"></a>Résoudre les conflits de licence dans Office 365 pour les entreprises
+# <a name="resolve-license-conflicts"></a>Résoudre les conflits de licence
 
 Nous vous recommandons d’acheter les licences dont vous avez besoin pour votre abonnement avant de créer de nouveaux utilisateurs. De cette manière, une licence peut être attribuée à chaque nouvel utilisateur lors de la création d'un compte d'utilisateur. Si vous avez déjà attribué toutes vos licences aux utilisateurs, mais que certaines licences ont expiré, ou vous essayez de supprimer une licence déjà attribuée à un utilisateur, vous rencontrerez un conflit de licence. Pour plus d’informations, consultez [la rubrique supprimer des licences de votre abonnement](../../commerce/licenses/remove-licenses-from-subscription.md).
   

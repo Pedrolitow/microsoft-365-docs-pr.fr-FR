@@ -1,5 +1,5 @@
 ---
-title: Transférer des données manuellement entre deux comptes Office 365
+title: Transférer des données manuellement entre deux comptes
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -17,20 +17,20 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 7dc5d983-84b2-4802-bef0-602ae1780a42
-description: Découvrez comment transférer des données manuellement entre deux comptes Office 365 lorsque vous avez modifié le plan ou le nom de la société, ou combiné plusieurs abonnements en un seul.
-ms.openlocfilehash: 91f9d7b17a0296931393a89ff95d70628400c61a
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+description: Découvrez comment transférer des données manuellement entre deux comptes Microsoft 365 lorsque vous avez modifié le plan ou le nom de la société, ou combiné plusieurs abonnements en un seul.
+ms.openlocfilehash: c0cb6531518c18e8cdc5b5829dc05a5b9b375291
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42362149"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43628374"
 ---
-# <a name="transfer-data-manually-between-two-office-365-accounts"></a>Transférer des données manuellement entre deux comptes Office 365
+# <a name="transfer-data-manually-between-two-accounts"></a>Transférer des données manuellement entre deux comptes
 
-Préparez-vous à cumuler vos manches et à bloquer un intervalle de temps sur votre calendrier : le transfert de données entre deux comptes Office 365 est un processus manuel, complexe et long. Il ne s’agit pas d’un processus automatisé ou pris en charge. Nous allons commencer.
+Préparez-vous à cumuler vos manches et à bloquer un intervalle de temps sur votre calendrier : le transfert de données entre deux comptes Microsoft 365 est un processus manuel, complexe et long. Il ne s’agit pas d’un processus automatisé ou pris en charge. Nous allons commencer.
   
 > [!CAUTION]
-> Le processus dans lequel le courrier électronique, Skype entreprise et un site Web public hébergé sur Office 365 ne fonctionnera pas. Les utilisateurs obtiennent les nouveaux noms d’utilisateur et mots de passe, et ils doivent réinitialiser Outlook.
+> Le processus dans lequel le courrier électronique, Skype entreprise et un site Web public hébergé sur Microsoft 365 ne fonctionnera pas. Les utilisateurs obtiennent les nouveaux noms d’utilisateur et mots de passe, et ils doivent réinitialiser Outlook.
 
 **Transférez les données manuellement à l’aide des instructions de cette rubrique si l’une des conditions suivantes s’applique :**
   
@@ -45,28 +45,28 @@ Préparez-vous à cumuler vos manches et à bloquer un intervalle de temps sur v
 
 |**Tâches**|**Étapes**|
 |:-----|:-----|
-|Achetez le plan vers lequel vous souhaitez vous déplacer.  <br/> |Lorsque vous vous inscrivez, vous spécifiez le nom de la société à utiliser dans les noms de domaine initiaux : *yourcompany* . onmicrosoft.com, *yourcompany* -public.sharepoint.com et *yourcompany* . SharePoint.com. Vous devez utiliser un nom *yourcompany* différent de celui que vous avez utilisé pour les abonnements existants.  <br/> > [!NOTE]> il faut généralement un minimum de plusieurs mois après l’annulation d’un abonnement pour libérer les noms de domaine initiaux qui utilisent *yourcompany* de nos systèmes. Même si vous envisagez d’enregistrer toutes vos données à partir de votre ancien abonnement Office 365 et d’annuler cet abonnement, l’ancienne valeur *yourcompany* n’est pas immédiatement disponible pour une utilisation dans un nouvel abonnement.           |
-|Supprimez votre domaine personnalisé de votre ancien abonnement Office 365.  <br/> | Suivez les [étapes requises avant de supprimer un domaine](remove-a-domain.md) afin de supprimer le nom de domaine des adresses de messagerie des utilisateurs et de supprimer les enregistrements DNS pour le courrier électronique et Lync pour le domaine personnalisé. Si vous hébergez votre site Web public sur Office 365, vous devez également supprimer l’enregistrement CNAMe qui pointe vers celui-ci.  <br/> > [!IMPORTANT]> après avoir supprimé l’enregistrement MX qui achemine le courrier vers ce domaine personnalisé, le courrier électronique cessera de fonctionner jusqu’à ce que vous ayez ajouté le domaine à votre nouveau compte, configurez le nouvel enregistrement MX et configurez vos utilisateurs. Lorsque vous supprimez les enregistrements DNS pour Lync, Lync cessera de fonctionner. Et après avoir supprimé l’enregistrement CNAMe qui pointe vers votre site Web public, il ne sera pas disponible.           [Supprimez le domaine](remove-a-domain.md) .  <br/> |
+|Achetez le plan vers lequel vous souhaitez vous déplacer.  <br/> |Lorsque vous vous inscrivez, vous spécifiez le nom de la société à utiliser dans les noms de domaine initiaux : *yourcompany* . onmicrosoft.com, *yourcompany* -public.sharepoint.com et *yourcompany* . SharePoint.com. Vous devez utiliser un nom *yourcompany* différent de celui que vous avez utilisé pour les abonnements existants.  <br/> > [!NOTE]> il faut généralement un minimum de plusieurs mois après l’annulation d’un abonnement pour libérer les noms de domaine initiaux qui utilisent *yourcompany* de nos systèmes. Même si vous envisagez d’enregistrer toutes vos données à partir de votre ancien abonnement Microsoft 365 et d’annuler cet abonnement, l’ancienne valeur *yourcompany* n’est pas immédiatement disponible pour une utilisation dans un nouvel abonnement.           |
+|Supprimez votre domaine personnalisé de votre ancien abonnement Microsoft 365.  <br/> | Suivez les [étapes requises avant de supprimer un domaine](remove-a-domain.md) afin de supprimer le nom de domaine des adresses de messagerie des utilisateurs et de supprimer les enregistrements DNS pour le courrier électronique et Lync pour le domaine personnalisé. Si vous hébergez votre site Web public sur Microsoft 365, vous devez également supprimer l’enregistrement CNAMe qui pointe vers celui-ci.  <br/> > [!IMPORTANT]> après avoir supprimé l’enregistrement MX qui achemine le courrier vers ce domaine personnalisé, le courrier électronique cessera de fonctionner jusqu’à ce que vous ayez ajouté le domaine à votre nouveau compte, configurez le nouvel enregistrement MX et configurez vos utilisateurs. Lorsque vous supprimez les enregistrements DNS pour Lync, Lync cessera de fonctionner. Et après avoir supprimé l’enregistrement CNAMe qui pointe vers votre site Web public, il ne sera pas disponible.           [Supprimez le domaine](remove-a-domain.md) .  <br/> |
 |Configurez votre domaine personnalisé pour votre nouvel abonnement et configurez vos utilisateurs.  <br/> | Configurez votre nouvel abonnement, y compris la création des enregistrements DNS requis pour votre domaine personnalisé.  <br/>  Créez vos utilisateurs, avec des adresses de messagerie sur votre domaine personnalisé.  <br/> |
 |Transférer des données de votre ancien abonnement à votre nouvel abonnement.  <br/> | Connectez-vous aux deux comptes dans des fenêtres de navigateur distinctes :  <br/>  Cliquez avec le bouton droit sur l’icône Internet Explorer et ouvrez deux fenêtres de navigateur InPrivate. Vous pouvez utiliser des informations d’identification différentes dans les deux fenêtres pour vous connecter aux deux comptes.  <br/> [Transférer les paramètres d’administration entre les abonnements](#email) <br/> [Transférer la structure et les données d’un site d’équipe](#transfer-team-site-structure-and-data) <br/> [Transférer un site Web public entre les abonnements](#transfer-a-public-website-between-subscriptions) <br/> [Transférer les paramètres d’administration entre les abonnements](#email) <br/> |
-|Annulez l’abonnement pour le plan que vous avez obtenu en appelant le support Microsoft pour Office 365.  <br/> | Vérifiez que votre nouvel abonnement fonctionne et que toutes les données ont été transférées.  <br/>  [Contactez le support](../contact-support-for-business-products.md) technique pour annuler votre ancien abonnement.  <br/> |
+|Annulez l’abonnement pour le plan que vous avez obtenu en appelant le support Microsoft pour Microsoft 365.  <br/> | Vérifiez que votre nouvel abonnement fonctionne et que toutes les données ont été transférées.  <br/>  [Contactez le support](../contact-support-for-business-products.md) technique pour annuler votre ancien abonnement.  <br/> |
 
 ## <a name="transfer-administrative-settings-between-subscriptions"></a>Transférer les paramètres d’administration entre les abonnements
 
 Accédez aux pages suivantes sur chaque compte, puis configurez le nouveau compte en fonction des paramètres de l’ancien compte.
   
-Si vous transférez des données à partir d’Office 365 vers Office 365 Midmarket ou Office 365 Enterprise, les pages d’administration sont structurées différemment. Regardez une [vidéo : présentation d’Office 365 Enterprise](https://support.office.com/article/11f7b4a0-1294-4e94-9238-beaae26efa9c.aspx), puis accédez aux paramètres d’administration suivants.
+Si vous transférez des données de Microsoft 365 vers Microsoft 365 Midmarket ou Microsoft 365 Enterprise, les pages d’administration sont structurées différemment. Regardez une [vidéo : présentation de Microsoft 365 Enterprise](https://support.office.com/article/11f7b4a0-1294-4e94-9238-beaae26efa9c.aspx)et accédez aux paramètres d’administration suivants.
   
-Pour Office 365 entreprise et Office 365 moyenne entreprise :
+Pour Microsoft 365 entreprise et Microsoft 365 moyenne entreprise :
   
 |**Location**|**Objectif**|
 |:-----|:-----|
-|**Paramètres du service** **Office 365** \> **admin** \> <br/> |Sélectionnez chaque onglet pour les paramètres de messagerie, sites, Lync, logiciel utilisateur, mots de passe, communauté, gestion des droits et mobile.  <br/> |
+|**Paramètres du service** **Microsoft 365** \> **admin** \> <br/> |Sélectionnez chaque onglet pour les paramètres de messagerie, sites, Lync, logiciel utilisateur, mots de passe, communauté, gestion des droits et mobile.  <br/> |
 |**Administrateur** \> **Exchange** <br/> | Paramètres Exchange Online  <br/> |
-|**** \> **SharePoint** admin <br/> | Paramètres SharePoint Online  <br/> |
-|**** \> **Skype entreprise** admin <br/> |Paramètres supplémentaires de Skype entreprise  <br/> |
+|**Admin** \> **SharePoint** admin <br/> | Paramètres SharePoint Online  <br/> |
+|**Admin** \> **Skype entreprise** admin <br/> |Paramètres supplémentaires de Skype entreprise  <br/> |
 
-Pour Office 365 petite entreprise
+Pour Microsoft 365 petite entreprise
   
 |**Location**|**Objectif**|
 |:-----|:-----|
@@ -74,7 +74,7 @@ Pour Office 365 petite entreprise
 
 ## <a name="transfer-a-public-website-between-subscriptions"></a>Transférer un site Web public entre les abonnements
 
-Si vous disposez d’un site Web public hébergé sur Office 365, vous devez l’enregistrer et le recréer sur votre nouvel abonnement.
+Si vous disposez d’un site Web public hébergé sur Microsoft 365, vous devez l’enregistrer et le recréer sur votre nouvel abonnement.
   
 > [!NOTE]
 > Si votre site Web public est hébergé auprès d’un fournisseur d’hébergement DNS, aucune modification n’est requise. Elle n’est pas affectée par votre transition.

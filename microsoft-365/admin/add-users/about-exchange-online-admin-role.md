@@ -20,16 +20,16 @@ search.appverid:
 - GEA150
 ms.assetid: 097ae285-c4af-4319-9770-e2559d66e4c8
 description: 'Les administrateurs Exchange Online gèrent les courriers électroniques et les boîtes aux lettres de votre organisation. Par exemple, ils récupèrent les éléments supprimés dans la boîte aux lettres d’un utilisateur. '
-ms.openlocfilehash: ac11a05dd9ea7a0c569e131e7939a0e4e9293dea
-ms.sourcegitcommit: 311bbd6f168225ede166d29696126a1e003eee0f
+ms.openlocfilehash: e45d6a0e9f2151e03a300b1e36bf53b7c9f8ef68
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "43151360"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43618907"
 ---
 # <a name="about-the-exchange-online-admin-role"></a>À propos du rôle d’administrateur Exchange Online
 
-Pour vous aider à administrer Office 365, vous pouvez [attribuer](assign-admin-roles.md) aux utilisateurs des autorisations pour gérer les courriers électroniques et les boîtes aux lettres de votre organisation à partir du [Centre d’administration Exchange](https://go.microsoft.com/fwlink/p/?LinkID=271807). Pour ce faire, vous devez les affecter au rôle d’administrateur Exchange. 
+Pour vous aider à administrer Microsoft 365, vous pouvez [attribuer](assign-admin-roles.md) aux utilisateurs des autorisations pour gérer les courriers électroniques et les boîtes aux lettres de votre organisation à partir du [Centre d’administration Exchange](https://go.microsoft.com/fwlink/p/?LinkID=271807). Pour ce faire, vous devez les affecter au rôle d’administrateur Exchange. 
   
  **Conseil**: lorsque vous affectez une personne au rôle d’administrateur Exchange, affectez-lui également le rôle d’administrateur de service. De cette façon, ils peuvent voir des informations importantes dans le centre d’administration 365 de Microsoft, telles que l’intégrité du service Exchange Online, et modifier et publier des notifications. 
   
@@ -37,17 +37,17 @@ Voici quelques-unes des tâches clés que les utilisateurs peuvent effectuer lor
   
 - [Récupérer des éléments supprimés dans une boîte aux lettres utilisateur - Aide aux administrateurs](https://docs.microsoft.com/office365/enterprise/recover-deleted-items-in-a-mailbox)
     
-- [Configurez une stratégie d’archivage et de suppression pour les boîtes aux lettres de votre organisation Office 365](https://docs.microsoft.com/office365/securitycompliance/set-up-an-archive-and-deletion-policy-for-mailboxes).
+- [Configurez une stratégie d’archivage et de suppression pour les boîtes aux lettres de votre organisation](https://docs.microsoft.com/office365/securitycompliance/set-up-an-archive-and-deletion-policy-for-mailboxes).
     
 - Configurez des fonctionnalités de boîte aux lettres, telles que la stratégie de partage de boîtes aux lettres : comment les utilisateurs peuvent partager des informations de calendrier et de contacts avec d’autres personnes en dehors de votre organisation. 
     
-- Configurer les délégués «[Envoyer en tant que](https://docs.microsoft.com/microsoft-365/admin/add-users/give-mailbox-permissions-to-another-user)» et «[Envoyer de la part de](https://docs.microsoft.com/microsoft-365/admin/add-users/give-mailbox-permissions-to-another-user)» pour la boîte aux lettres d’un utilisateur. Par exemple, un responsable peut souhaiter que son assistant ait la possibilité d’envoyer des messages en leur nom. 
+- Configurer les délégués «[Envoyer en tant que](give-mailbox-permissions-to-another-user.md#send-email-from-another-users-mailbox)» et «[Envoyer sur abehalf](give-mailbox-permissions-to-another-user.md#send-email-on-behalf-of-another-user)» pour la boîte aux lettres d’un utilisateur. Par exemple, un responsable peut souhaiter que son assistant ait la possibilité d’envoyer des messages en leur nom. 
     
 - [Créez une boîte aux lettres partagée](../email/create-a-shared-mailbox.md) pour permettre à un groupe de personnes de surveiller et d’envoyer des courriers électroniques à partir d’une adresse de messagerie commune. 
     
-- Filtres anti-programme malveillant et protection contre le courrier [indésirable Office 365](https://docs.microsoft.com/office365/securitycompliance/anti-spam-protection) pour l’organisation. 
+- Filtres de protection contre le [courrier indésirable](https://docs.microsoft.com/office365/securitycompliance/anti-spam-protection) et de programmes malveillants pour l’organisation. 
     
-- Gérer les groupes Office 365
+- Gérer les groupes Microsoft 365
     
 ## <a name="exchange-online-role-groups"></a>Groupes de rôles Exchange Online
 

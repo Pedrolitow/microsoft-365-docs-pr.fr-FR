@@ -26,12 +26,12 @@ search.appverid:
 - MOE150
 ms.assetid: 5cf7139e-cfa1-4765-8aad-001af1c74faa
 description: Apprenez à créer un profil AutoPilot et à l’appliquer à un appareil, ainsi qu’à modifier ou supprimer un profil ou à supprimer un profil d’un appareil.
-ms.openlocfilehash: 58c16b68c66dce7541a02ecd0d2466babe8cc338
-ms.sourcegitcommit: 217de0fc54cbeaea32d253f175eaf338cd85f5af
+ms.openlocfilehash: a6e02ab56faeb08718a9831657b55cff0356a4ec
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42560717"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627371"
 ---
 # <a name="create-and-edit-autopilot-profiles"></a>Créer et modifier des profils AutoPilot
 
@@ -39,9 +39,9 @@ ms.locfileid: "42560717"
 
 Un profil s'applique à un appareil ou à un groupe d'appareils,
   
-1. Dans le centre d’administration de Microsoft 365 Business, sélectionnez **périphériques** \> **AutoPilot**.
+1. Dans le centre d’administration 365 de Microsoft, sélectionnez **périphériques** \> **AutoPilot**.
   
-2. Sur la **page AutoPilot** , sélectionnez l' **** onglet \> profils **Create Profile**.
+2. Sur la **page AutoPilot** , sélectionnez l' **Profiles** onglet \> profils **Create Profile**.
     
 3. Sur la page **créer un profil** , entrez un nom pour le profil qui vous permet de l’identifier, par exemple marketing. Activez le paramètre souhaité, puis choisissez **Enregistrer**. Pour plus d’informations sur les paramètres du profil AutoPilot, voir [à propos des paramètres du profil AutoPilot](autopilot-profile-settings.md).
     

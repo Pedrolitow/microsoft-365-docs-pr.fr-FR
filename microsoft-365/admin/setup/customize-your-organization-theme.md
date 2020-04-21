@@ -1,5 +1,5 @@
 ---
-title: Personnaliser le thème Office 365 pour votre organisation
+title: Personnaliser le thème de votre organisation
 f1.keywords:
 - CSH
 ms.author: twerner
@@ -18,19 +18,19 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 8275da91-7a48-4591-94ab-3123a3f79530
-description: 'Découvrez comment modifier le thème par défaut d’Office 365 et le personnaliser pour qu’il corresponde au logo ou à la couleur de votre entreprise. '
-ms.openlocfilehash: c553e5254246bd81d435b4ebc2be2e975dd80a9d
-ms.sourcegitcommit: 2859c82b30ae9cbd3a3e4bcdebd65f18444f1a9e
+description: 'Découvrez comment modifier le thème par défaut de Microsoft 365 et le personnaliser pour qu’il corresponde au logo ou à la couleur de votre entreprise. '
+ms.openlocfilehash: 6a689c6da967bf3f62699bb9df287f7c5fc42e6a
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42826326"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627605"
 ---
-# <a name="customize-the-office-365-theme-for-your-organization"></a>Personnaliser le thème Office 365 pour votre organisation
+# <a name="customize-the-theme-for-your-organization"></a>Personnaliser le thème de votre organisation
 
-Découvrez comment personnaliser votre thème dans le centre d’administration 365 de Microsoft. En tant qu'administrateur de votre abonnement Office 365 pour les entreprises, vous pouvez modifier le thème par défaut qui s'affiche dans la barre de navigation supérieure pour tous les utilisateurs au sein de votre organisation. Vous pouvez ajouter le logo de votre entreprise et modifier les couleurs pour qu’elles correspondent au reste de votre marque. Vous pouvez même ajouter un lien de destination pour les utilisateurs auxquels ils peuvent accéder lorsqu’ils sélectionnent votre logo. Vous pouvez voir ici le thème par défaut et le résultat de thème personnalisé dans Office 365.
+Découvrez comment personnaliser votre thème dans le centre d’administration 365 de Microsoft. En tant qu’administrateur de votre abonnement Microsoft 365 pour les entreprises, vous pouvez modifier le thème par défaut qui s’affiche dans la barre de navigation supérieure pour tous les membres de l’organisation. Vous pouvez ajouter le logo de votre entreprise et modifier les couleurs pour qu’elles correspondent au reste de votre marque. Vous pouvez même ajouter un lien de destination pour les utilisateurs auxquels ils peuvent accéder lorsqu’ils sélectionnent votre logo. Vous pouvez voir ici le thème par défaut et le résultat de thème personnalisé dans Microsoft 365.
   
-![Thème Office 365 par défaut et thème Office 365 personnalisé](../../media/e2cbc922-b424-4683-8c5c-fdbcbd0ce844.png)
+![Thème Microsoft 365 par défaut et thème Microsoft 365 personnalisé](../../media/e2cbc922-b424-4683-8c5c-fdbcbd0ce844.png)
   
 ## <a name="customize-your-theme-in-the-admin-center"></a>Personnaliser votre thème dans le centre d’administration
 
@@ -64,7 +64,7 @@ Découvrez comment personnaliser votre thème dans le centre d’administration 
     
 4. Sélectionnez **Enregistrer les modifications**.
     
-Vous verrez immédiatement votre nouveau thème sur le centre d’administration et après un court délai, vous le verrez dans Office 365, y compris les pages dans Outlook, SharePoint, l' [application mobile SharePoint pour iOS](https://support.office.com/en-us/article/SharePoint-mobile-app-for-iOS-339402ce-16bb-4c97-9475-0c5375ccef7a)et l' [application mobile SharePoint pour Android](https://support.office.com/en-us/article/SharePoint-mobile-app-for-Android-d875654b-fb0a-4dbe-a17a-a676cf936284). Consultez le graphique suivant pour obtenir un exemple d’emplacement où vous personnalisez les modifications apportées au thème à partir du centre d’administration.
+Vous verrez immédiatement votre nouveau thème sur le centre d’administration et après un court délai, vous le verrez dans Microsoft 365, y compris les pages dans Outlook, SharePoint, l' [application mobile SharePoint pour iOS](https://support.office.com/en-us/article/SharePoint-mobile-app-for-iOS-339402ce-16bb-4c97-9475-0c5375ccef7a)et l' [application mobile SharePoint pour Android](https://support.office.com/en-us/article/SharePoint-mobile-app-for-Android-d875654b-fb0a-4dbe-a17a-a676cf936284). Consultez le graphique suivant pour obtenir un exemple d’emplacement où vous personnalisez les modifications apportées au thème à partir du centre d’administration.
 
 ![M365-admin-client-Theme-Conceptual](../../media/m365-admin-tenant-theme-conceptual.png)
 
@@ -80,7 +80,7 @@ Lorsque vous choisissez des couleurs personnalisées, choisissez une **couleur d
   
 Le rapport de contraste recommandé entre la couleur de texte, d’icône ou de bouton et la couleur d’arrière-plan est 4,5:1.
 
-Voici un organigramme simple pour vous aider à configurer rapidement un thème Office 365 personnalisé visuellement attrayant pour votre organisation :
+Voici un organigramme simple pour vous aider à configurer rapidement un thème Microsoft 365 personnalisé visuellement attrayant pour votre organisation :
   - Je souhaite utiliser une version colorée de notre logo.
     - Nous vous recommandons d’utiliser les paramètres suivants :
       - **Image du logo**: logo coloré de votre organisation.

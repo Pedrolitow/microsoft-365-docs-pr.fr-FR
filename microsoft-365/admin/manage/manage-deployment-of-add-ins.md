@@ -1,5 +1,5 @@
 ---
-title: Gérer le déploiement des compléments Office 365 dans le centre d’administration
+title: Gérer le déploiement des compléments dans le centre d’administration
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -19,18 +19,18 @@ search.appverid:
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
 description: Découvrez comment déployer des compléments pour les utilisateurs et les groupes de votre organisation à l’aide du déploiement centralisé dans le centre d’administration.
-ms.openlocfilehash: d0818a0f318ea260d8e39b6e3d76c1cd4efd7a88
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+ms.openlocfilehash: 440cb55f318ac2aa43af5a24fa8ca80753aa03ac
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43212008"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43628159"
 ---
-# <a name="manage-deployment-of-office-365-add-ins-in-the-microsoft-365-admin-center"></a>Gérer le déploiement de compléments Office 365 dans le Centre d’administration Microsoft 365
+# <a name="manage-deployment-of-add-ins-in-the-microsoft-365-admin-center"></a>Gérer le déploiement des compléments dans le centre d’administration Microsoft 365
 
 [] Les compléments Office vous aident à personnaliser vos documents et à accéder plus simplement aux informations sur le web (voir [Commencer à utiliser votre complément Office](https://support.office.com/article/82e665c4-6700-4b56-a3f3-ef5441996862.aspx)). En tant qu’administrateur, vous pouvez déployer des compléments Office pour les utilisateurs de votre organisation. Vous pouvez effectuer cette opération à l’aide de la fonctionnalité déploiement centralisé dans le centre d’administration 365 de Microsoft.
   
-Le déploiement centralisé est la méthode recommandée et la plus riche en fonctionnalités permettant à la plupart des administrateurs de déployer des compléments pour les utilisateurs et les groupes au sein d’une organisation. Pour plus d'informations sur la manière de déterminer si votre organisation peut prendre en charge un déploiement centralisé, voir [Déterminer si un déploiement centralisé de compléments est approprié pour votre organisation Office 365](centralized-deployment-of-add-ins.md).
+Le déploiement centralisé est la méthode recommandée et la plus riche en fonctionnalités permettant à la plupart des administrateurs de déployer des compléments pour les utilisateurs et les groupes au sein d’une organisation. Pour plus d’informations sur la façon de déterminer si votre organisation peut prendre en charge le déploiement centralisé, reportez-vous à la rubrique [déterminer si un déploiement centralisé de compléments fonctionne pour votre organisation](centralized-deployment-of-add-ins.md).
   
 Une déploiement centralisé offre les avantages suivants :
   
@@ -41,7 +41,7 @@ Une déploiement centralisé offre les avantages suivants :
 - Les compléments ne s’affichent plus pour les utilisateurs si l’administrateur désactive ou supprime le complément, ou si l’utilisateur est supprimé d’Azure Active Directory ou d’un groupe auquel le complément est affecté.
     
 > [!NOTE]
->  Pour Word, Excel et PowerPoint utilisent un [catalogue d’applications SharePoint](https://dev.office.com/docs/add-ins/publish/publish-task-pane-and-content-add-ins-to-an-add-in-catalog) pour déployer des compléments pour les utilisateurs dans un environnement local sans connexion à Office 365 et/ou prise en charge des compléments SharePoint requis. >  Pour Outlook, utilisez le panneau de configuration Exchange pour déployer les compléments dans un environnement local sans connexion Office 365. > 
+>  Pour Word, Excel et PowerPoint utilisent un [catalogue d’applications SharePoint](https://dev.office.com/docs/add-ins/publish/publish-task-pane-and-content-add-ins-to-an-add-in-catalog) pour déployer des compléments pour les utilisateurs dans un environnement local sans connexion à Microsoft 365 et/ou prise en charge des compléments SharePoint requis. > pour Outlook utilisez le panneau de configuration Exchange pour déployer dans un environnement local sans connexion à Microsoft 365. > 
   
 ## <a name="recommended-approach-for-deploying-office-add-ins"></a>Approche recommandée pour le déploiement des compléments Office
 
@@ -57,10 +57,10 @@ Selon la taille du groupe cible, vous pouvez ajouter ou supprimer des étapes de
   
 ## <a name="deploy-an-office-add-in-using-the-admin-center"></a>Déployer un complément Office à l’aide du centre d’administration
 
-Avant de commencer, reportez-vous à la rubrique [Déterminer si un déploiement centralisé de compléments est approprié pour votre organisation Office 365](centralized-deployment-of-add-ins.md).
+Avant de commencer, consultez [la rubrique déterminer si un déploiement centralisé de compléments fonctionne pour votre organisation](centralized-deployment-of-add-ins.md).
 
   
-1. Dans le centre d’administration Microsoft 365, accédez à la page des**compléments** de **paramètres** > .
+1. Dans le centre d’administration, accédez à la page **compléments** de **paramètres** \> .
     
 2. Sélectionnez **déployer un complément** en haut de la page. Sur la page vue d’ensemble, sélectionnez **suivant**.
     
@@ -75,13 +75,13 @@ Avant de commencer, reportez-vous à la rubrique [Déterminer si un déploiement
 7. Une coche verte apparaît lorsque le complément a été déployé. Vous pouvez suivre les instructions sur la page pour vérifier que le complément a été déployé avec succès.
 
 > [!NOTE]
-> Les utilisateurs devront peut-être relancer Office pour voir l’icône de complément apparaissent sur le ruban de l’application. Les compléments Outlook peuvent prendre jusqu’à 24 heures pour apparaître sur les rubans des utilisateurs.
+> Les utilisateurs devront peut-être relancer Office pour voir l’icône de complément apparaissent sur le ruban de l’application. Les compléments Outlook peuvent prendre jusqu’à 12 heures pour apparaître sur les rubans des utilisateurs.
     
 8. Lorsque vous avez terminé, sélectionnez **suivant**. Si vous avez déjà déployé, vous pouvez sélectionner Modifier les utilisateurs **qui ont accès au complément** afin de le déployer sur un plus grand nombre d’utilisateurs.
 
 
 
-Si vous avez déployé le complément vers des membres de votre organisation autre que vous-même, suivez les instructions affichées afin d’annoncer efficacement le déploiement du complément. <br/>Votre complément apparaît à présent avec d’autres applications dans Office 365.
+Si vous avez déployé le complément vers des membres de votre organisation autre que vous-même, suivez les instructions affichées afin d’annoncer efficacement le déploiement du complément. <br/>Vous voyez maintenant votre complément ainsi que d’autres applications dans Microsoft 365.
   
 Il est recommandé d'informer les utilisateurs et les groupes vers lesquels vous déployez le complément afin qu'ils sachent que celui-ci est disponible. Songez à leur envoyer un courrier décrivant quand et comment utiliser le complément, et expliquant comment celui-ci peut les aider à mieux accomplir leur travail. Inclure ou créer un lien vers du contenu d’aide pertinent ou des questions fréquentes susceptibles d’aider les utilisateurs à rencontrer des problèmes avec le complément.
   
@@ -101,19 +101,12 @@ L’option la plus adaptée à votre organisation dépend de votre configuration
   
 ### <a name="add-in-states"></a>États de complément
 
-Les administrateurs peuvent activer ou désactiver les compléments qu’ils déploient pour tous les utilisateurs à partir du centre d’administration Microsoft 365.
-
-1.    Dans le centre d’administration, accédez à la page **compléments** de **paramètres** >. 
-2.    Sélectionnez le complément déployé. 
-3.    Cliquez sur le bouton bascule d' **État** pour **activer ou** **Désactiver**le complément. 
-4.    Enregistrez les modifications.  
-
-L’un des trois États de complément est également disponible.
- 
+Un complément peut avoir l’état **activé** ou **désactivé** .
+  
 |**État**|**Comment l'état se produit**|**Impact**|
 |:-----|:-----|:-----|
 |**Active**  <br/> |Un administrateur a chargé le complément et l’a affecté à des utilisateurs ou à des groupes.  <br/> |Les utilisateurs et groupes auxquels le complément est affecté voient celui-ci dans les clients concernés.  <br/> |
-|**Désactivé**  <br/> |Un administrateur a désactivé le complément.  <br/> |Les utilisateurs et les groupes auxquels le complément est affecté ne peuvent plus accéder à celui-ci.  <br/> Si l’état du complément est modifié sur **actif**, les utilisateurs et les groupes y auront accès à nouveau.  <br/> |
+|**Désactivé**  <br/> |Un administrateur a désactivé le complément.  <br/> |Les utilisateurs et les groupes auxquels le complément est affecté ne peuvent plus accéder à celui-ci.  <br/> Si l'état du complément est modifié en Actif, les utilisateurs et groupes ont de nouveau accès à celui-ci.  <br/> |
 |**Deleted**  <br/> |Un administrateur a supprimé le complément.  <br/> |Les utilisateurs et groupes auxquels le complément est affecté ne peuvent plus accéder à celui-ci.  <br/> |
    
 Envisagez de supprimer un complément s’il n’est plus utilisé. Désactiver un complément peut être judicieux si celui-ci est utilisé uniquement à des moments spécifiques au cours d'une année.
@@ -182,9 +175,9 @@ Cela empêchera tous les utilisateurs d’acquérir les compléments suivants à
     
 - Acquisitions à partir de **AppSource**
     
-- Compléments dans Office 365
+- Compléments dans Microsoft 365
     
-Un utilisateur qui tente d’accéder au magasin verra apparaître le message suivant : **Désolé, Office 365 a été configuré pour empêcher l’acquisition individuelle des compléments de l’Office Store.**
+Un utilisateur qui tente d’accéder au magasin verra apparaître le message suivant : « **Désolé, Microsoft 365 a été configuré pour empêcher l’acquisition individuelle de compléments de l’Office Store.**
   
 La prise en charge de la désactivation de l’Office Store est disponible dans les versions suivantes :
   
@@ -241,7 +234,7 @@ Pour être conforme à RGPD pour les mineurs, vous devez vous assurer que l’un
   
 Word, Excel et PowerPoint 2013 pour Windows prend en charge les mêmes vérifications mineures si la bibliothèque d’authentification Active Directory (ADAL) est activée. Il existe deux options pour la conformité, comme expliqué ci-dessous.
   
-- **Activez Adal**. Cet article explique comment activer ADAL pour Office 2013 : [using office 365 moderne Authentication with Office clients](https://support.office.com/article/776c0036-66fd-41cb-8928-5495c0f9168a).<br/>Vous devez également définir les clés de Registre pour activer ADAL, comme expliqué dans la rubrique [activation de l’authentification moderne pour Office 2013 sur les appareils Windows](../security-and-compliance/enable-modern-authentication.md).<br/>En outre, vous devez installer les mises à jour d’avril suivantes pour Office 2013 :
+- **Activez Adal**. Cet article explique comment activer ADAL pour Office 2013 : utilisation de l' [authentification moderne Microsoft 365 avec les clients Office](https://support.office.com/article/776c0036-66fd-41cb-8928-5495c0f9168a).<br/>Vous devez également définir les clés de Registre pour activer ADAL, comme expliqué dans la rubrique [activation de l’authentification moderne pour Office 2013 sur les appareils Windows](../security-and-compliance/enable-modern-authentication.md).<br/>En outre, vous devez installer les mises à jour d’avril suivantes pour Office 2013 :
     
   - [Description de la mise à jour de sécurité pour Office 2013:10 avril 2018](https://support.microsoft.com/help/4018330/description-of-the-security-update-for-office-2013-april-10-2018)
     

@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Une fois que vous avez créé une boîte aux lettres partagée, vous pouvez configurer certains paramètres pour ses utilisateurs, tels que le transfert de courrier électronique et les réponses automatiques. Par la suite, vous pouvez modifier d’autres paramètres, tels que le nom de la boîte aux lettres ou les membres.
-ms.openlocfilehash: fc2995dc448c7cb28c13c10d78b57e7141963539
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+ms.openlocfilehash: 63d3d0a5867875344ff4635071bbbad69e02eadc
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43212020"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43629046"
 ---
 # <a name="configure-a-shared-mailbox"></a>Configurer une boîte aux lettres partagée
 
@@ -55,7 +55,7 @@ Une fois que vous avez [créé une boîte aux lettres partagée](create-a-shared
 
 3. Entrez un nouveau nom ou ajoutez un autre alias. Si vous souhaitez modifier l’adresse de messagerie principale, votre boîte aux lettres doit avoir plusieurs alias de messagerie.
 
-4. Cliquez sur **Enregistrer**.
+4. Sélectionnez **Enregistrer**.
 
 ## <a name="forward-emails-that-are-sent-to-a-shared-mailbox"></a>Transférer des courriers qui sont envoyés à une boîte aux lettres partagée
 
@@ -83,7 +83,7 @@ Il n’est pas nécessaire d’attribuer une licence à la boîte aux lettres pa
     
 3. Définissez le bouton bascule **sur activé**, puis entrez une adresse de messagerie à laquelle transférer les messages. Il peut s’agir de n’importe quelle adresse de messagerie valide. Pour transférer vers plusieurs adresses, vous devez [créer un groupe de distribution](https://docs.microsoft.com/office365/admin/setup/create-distribution-lists?view=o365-worldwide) pour les adresses, puis entrer le nom du groupe dans cette zone.
     
-4. Cliquez sur **Enregistrer**.
+4. Sélectionnez **Enregistrer**.
 
 ## <a name="send-automatic-replies-from-a-shared-mailbox"></a>Envoyer des réponses automatiques à partir d'une boîte aux lettres partagée
 
@@ -113,7 +113,7 @@ Il n’est pas nécessaire d’attribuer une licence à la boîte aux lettres pa
 
 5. Si vous souhaitez *également* envoyer une réponse à des personnes extérieures à votre organisation, activez la case à cocher, qui vous souhaitez obtenir la réponse, puis tapez le texte. Vous ne pouvez pas envoyer la réponse uniquement à des personnes externes à votre organisation sans l'envoyer à des personnes internes à votre organisation.
 
-6. Cliquez sur **Enregistrer**.
+6. Sélectionnez **Enregistrer**.
 
 ## <a name="allow-everyone-to-see-the-sent-email-the-replies"></a>Autoriser tout le monde à voir le courrier envoyé (les réponses)
 
@@ -122,7 +122,7 @@ Par défaut, les courriers envoyés à partir de la boîte aux lettres partagée
 Si vous souhaitez autoriser tout le monde à voir le courrier envoyé, dans le centre d’administration \> **, modifiez les**paramètres de boîte aux lettres partagée, puis sélectionnez **éléments envoyés** .
 
 
-## <a name="choose-the-apps-that-a-shared-mailbox-can-use-to-access-office-365-email"></a>Choisir les applications qu’une boîte aux lettres partagée peut utiliser pour accéder à la messagerie Office 365
+## <a name="choose-the-apps-that-a-shared-mailbox-can-use-to-access-microsoft-email"></a>Choisir les applications qu’une boîte aux lettres partagée peut utiliser pour accéder à la messagerie Microsoft
 
 ::: moniker range="o365-worldwide"
 
@@ -146,7 +146,7 @@ Si vous souhaitez autoriser tout le monde à voir le courrier envoyé, dans le c
 
 3. Définissez le bouton bascule **sur activé** pour toutes les applications que vous souhaitez que les membres puissent utiliser pour accéder à la boîte aux lettres partagée. **Désactivez** le bouton bascule pour toutes les applications que vous ne voulez pas utiliser. 
 
-4. Cliquez sur **Enregistrer**.
+4. Sélectionnez **Enregistrer**.
 
 
 ## <a name="put-a-shared-mailbox-on-litigation-hold"></a>Placer une boîte aux lettres partagée en conservation pour litige
@@ -177,7 +177,7 @@ Pour en savoir plus sur la conservation pour litige, consultez [la rubrique Cré
 
 4. Si vous le souhaitez, entrez une durée, la note de la suspension et une URL avec davantage d’informations.  
 
-5. Cliquez sur **Enregistrer**.
+5. Sélectionnez **Enregistrer**.
 
 
 ## <a name="add-or-remove-members"></a>Ajouter ou supprimer des membres
@@ -264,7 +264,7 @@ Si vous choisissez de ne pas afficher la boîte aux lettres partagée dans la li
 
 3. Activer ou **Désactiver**le bouton **On** bascule. 
 
-4. Cliquez sur **Enregistrer**.
+4. Sélectionnez **Enregistrer**.
 
 > [!NOTE]
 > Le masquage d’une liste d’adresses à partir d’une boîte aux lettres partagée empêche les nouveaux membres de la boîte aux lettres partagée d’ajouter la boîte aux lettres masquée à leur profil Outlook jusqu’à ce que la boîte aux lettres partagée s’affiche à nouveau dans la liste d’adresses. 

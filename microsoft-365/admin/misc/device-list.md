@@ -21,13 +21,13 @@ search.appverid:
 - MOE150
 ms.assetid: 932e3676-2491-49f0-9177-d893d2f5276e
 ROBOTS: NOINDEX
-description: Découvrez comment créer un fichier CSV pour AutoPilo étain Microsoft 365 entreprise.
-ms.openlocfilehash: 56d8fb234a1b526192468309c93c638694b92c6e
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+description: Découvrez comment créer un fichier CSV pour AutoPilot dans Microsoft 365 pour les entreprises.
+ms.openlocfilehash: b1154d639ba23180f637520750d94f00e997cfc4
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42361355"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627859"
 ---
 # <a name="device-list-csv-file"></a>Fichier CSV de liste d’appareils
 
@@ -49,9 +49,9 @@ Lorsque vous ajoutez des appareils, vous devez également les ajouter à un prof
   
 ## <a name="related-articles"></a>Articles connexes
 
-[Documentation et ressources pour Microsoft 365 Business](https://go.microsoft.com/fwlink/p/?linkid=853701)
+[Documentation et ressources de Microsoft 365 pour les entreprises](https://go.microsoft.com/fwlink/p/?linkid=853701)
   
-[Prise en main de Microsoft 365 Business](https://support.office.com/article/496e690b-b75d-4ff5-bf34-cc32905d0364)
+[Prise en main de Microsoft 365 pour les entreprises](https://support.office.com/article/496e690b-b75d-4ff5-bf34-cc32905d0364)
   
-[Gérer Microsoft 365 Business](https://support.office.com/article/27ff1678-865a-4707-8145-e1155aa815d6)
+[Gérer Microsoft 365 pour les entreprises](https://support.office.com/article/27ff1678-865a-4707-8145-e1155aa815d6)
   

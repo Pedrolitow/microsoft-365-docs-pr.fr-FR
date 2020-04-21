@@ -1,5 +1,5 @@
 ---
-title: Renvoyer le mot de passe d’un utilisateur dans Office 365-aide de l’administrateur
+title: Renvoyer le mot de passe d’un utilisateur-aide de l’administrateur
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -18,15 +18,15 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 9b838071-94aa-4b8e-8d84-d17ece1ee951
-description: 'Découvrez comment réinitialiser le mot de passe et envoyer un courrier électronique de notification à un nouvel utilisateur d’Office 365. '
-ms.openlocfilehash: 64b3b4c805cfc81b10050e2e2e5c74290c68d760
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+description: 'Découvrez comment réinitialiser le mot de passe et envoyer un courrier électronique de notification à un nouvel utilisateur de Microsoft 365. '
+ms.openlocfilehash: fcf5fb53c2468930e68929a9bf38b634d7e67404
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42239352"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43624111"
 ---
-# <a name="resend-a-users-password-in-office-365---admin-help"></a>Renvoyer le mot de passe d’un utilisateur dans Office 365-aide de l’administrateur
+# <a name="resend-a-users-password---admin-help"></a>Renvoyer le mot de passe d’un utilisateur-aide de l’administrateur
 
 Cet article explique comment renvoyer le courrier électronique de notification à un nouvel utilisateur dans Office 365. Pour ce faire, vous devez réinitialiser le mot de passe de l’utilisateur.
   
@@ -34,19 +34,19 @@ Pour effectuer ces étapes, vous devez être [administrateur général ou admini
   
 ::: moniker range="o365-worldwide"  
   
-1. Dans le Centre d’administration, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utilisateurs actifs</a>.
+1. Dans le Centre d’administration, accédez à la page **Utilisateurs >** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utilisateurs actifs</a>.
      
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. Dans le Centre d’administration, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Utilisateurs actifs</a>.  
+1. Dans le Centre d’administration, accédez à la page **Utilisateurs >** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Utilisateurs actifs</a>.  
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. Dans le Centre d’administration, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Utilisateurs actifs</a>. 
+1. Dans le Centre d’administration, accédez à la page **Utilisateurs >** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Utilisateurs actifs</a>. 
 
 ::: moniker-end
 
@@ -57,4 +57,3 @@ Pour effectuer ces étapes, vous devez être [administrateur général ou admini
 4. Entrez une adresse de messagerie à laquelle l’utilisateur peut accéder afin qu’il reçoive le nouveau mot de passe et de le suivre pour s’assurer qu’il a reçu le nouveau mot de passe.
     
   
-

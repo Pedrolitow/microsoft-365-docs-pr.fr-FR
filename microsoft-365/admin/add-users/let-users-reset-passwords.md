@@ -1,5 +1,5 @@
 ---
-title: Autoriser les utilisateurs à réinitialiser leur mot de passe dans Office 365
+title: Autoriser les utilisateurs à réinitialiser leur mot de passe
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: 5bc3f460-13cc-48c0-abd6-b80bae72d04a
 description: Découvrez comment réinitialiser vos mots de passe à l’aide de l’outil de réinitialisation du mot de passe libre-service.
-ms.openlocfilehash: 666d3843f7917cf9bd5718c0ce29f87f93d6effe
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+ms.openlocfilehash: beffbcac997806f0c13347dfba42a1ab0ec65c1d
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43211894"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43617145"
 ---
 # <a name="let-users-reset-their-own-passwords"></a>Autoriser les utilisateurs à réinitialiser leur mot de passe
 
@@ -36,7 +36,7 @@ Vous êtes inondé de demandes de réinitialisation de mots de passe ? En tant q
   
 Voici quelques informations à retenir :
   
-- Avec les offres payantes Office 365 Business, Office 365 Éducation ou Office 365 pour les associations, la fonction de réinitialisation du mot de passe libre-service pour utilisateurs cloud est **gratuite**. Elle ne fonctionne pas avec la version d'évaluation d'Office 365. 
+- Vous bénéficiez d’une réinitialisation du mot de passe en libre-service pour les utilisateurs du Cloud **gratuitement** avec les plans payants Microsoft 365 Business, Education ou imprévus. Elle ne fonctionne pas avec la version d’évaluation de Microsoft 365. 
     
 - Elle utilise Azure. Vous bénéficierez automatiquement et **gratuitement** de cette fonction dans Azure lorsque vous effectuerez ces étapes. L'activation de la réinitialisation du mot de passe libre-service ne vous coûtera rien si vous n'utilisez aucune autre fonctionnalité Azure. 
     

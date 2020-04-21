@@ -1,5 +1,5 @@
 ---
-title: Créer, modifier ou supprimer une vue utilisateur personnalisée dans Office 365
+title: Créer, modifier ou supprimer une vue utilisateur personnalisée
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -18,13 +18,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 4fe7f6ac-be8e-4b57-9e13-24ff889a4b28
-description: Apprenez à utiliser des filtres pour créer, modifier ou supprimer des affichages utilisateur personnalisés dans Office 365.
-ms.openlocfilehash: ae12675afd47434ac6dd12dae683c79aae64be1f
-ms.sourcegitcommit: 2b626a7924b4be08f6eb21181453b778e6fde418
+description: Apprenez à utiliser des filtres pour créer, modifier ou supprimer des affichages utilisateur personnalisés dans Microsoft 365.
+ms.openlocfilehash: 94a9ad7de8bc8e0692d97fda56200cf668b1e5f8
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/30/2020
-ms.locfileid: "43047058"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43617259"
 ---
 # <a name="create-edit-or-delete-a-custom-user-view-in-office-365"></a>Créer, modifier ou supprimer une vue utilisateur personnalisée dans Office 365
 
@@ -63,7 +63,7 @@ Lorsque vous créez, modifiez ou supprimez une vue utilisateur personnalisée, l
 Voici quelques points à noter concernant les vues standard : 
 
 - Certains affichages standard affichent une liste non triée s’il y a plus de 2 000 utilisateurs dans la liste. Pour rechercher des utilisateurs spécifiques dans cette liste, utilisez la zone de recherche. 
-- Si vous n’avez pas acheté Office 365 auprès de Microsoft, les **administrateurs de facturation** n’apparaissent pas dans la liste des affichages standard. Pour plus d'informations, consultez la rubrique [Affectation de rôles d'administrateur](assign-admin-roles.md). 
+- Si vous n’avez pas acheté Microsoft 365 auprès de Microsoft, les **administrateurs de facturation** n’apparaissent pas dans la liste des affichages standard. Pour plus d'informations, consultez la rubrique [Affectation de rôles d'administrateur](assign-admin-roles.md). 
   
 ## <a name="choose-the-filters-for-your-custom-user-view"></a>Choisir les filtres pour votre vue utilisateur personnalisée
 
@@ -88,12 +88,12 @@ Vous pouvez également filtrer par des détails de profil utilisateur supplémen
     
 - **Utilisateurs sans licence** Activez cette case à cocher pour rechercher tous les utilisateurs qui n’ont pas reçu de licence. Les résultats de cette vue peuvent également inclure des utilisateurs qui disposent d’une boîte aux lettres Exchange mais qui n’ont pas de licence. Pour effectuer le suivi de ces utilisateurs en particulier, utilisez le filtre **utilisateurs sans licence avec des boîtes aux lettres ou des archives Exchange**. Les résultats de cette vue peuvent également inclure des utilisateurs qui disposent d’une archive Exchange, mais qui n’ont pas de licence.
     
-- **Utilisateurs sans licence avec des boîtes aux lettres ou des archives Exchange** Activez cette case à cocher pour afficher les comptes d’utilisateur qui ont été créés dans Exchange Online et qui disposent d’une boîte aux lettres Exchange, mais auxquels aucune licence Office 365 n’a été attribuée. Les résultats de ce filtre incluent les utilisateurs qui disposent ou non d’une archive Exchange. 
+- **Utilisateurs sans licence avec des boîtes aux lettres ou des archives Exchange** Activez cette case à cocher pour afficher les comptes d’utilisateur qui ont été créés dans Exchange Online et qui disposent d’une boîte aux lettres Exchange, mais auxquels aucune licence Microsoft 365 n’a été attribuée. Les résultats de ce filtre incluent les utilisateurs qui disposent ou non d’une archive Exchange. 
 
 > [!NOTE]
 > Le filtre **utilisateurs sans licence avec boîtes aux lettres Exchange fonctionne dans** les cas suivants :
 1. La boîte aux lettres a été récemment convertie de **partagé** à **utilisateur** et n’a pas de licence.
-2. La boîte aux lettres a été récemment migrée vers Office 365, mais aucune licence n’a été attribuée.
+2. La boîte aux lettres a été récemment migrée vers Microsoft 365, mais aucune licence n’a été attribuée.
 3. La boîte aux lettres a été créée à l’aide de PowerShell et aucune licence n’a été attribuée.
 4. Une nouvelle boîte aux lettres créée sur site avec une cmdlet New-RemoteMailbox est configurée pour l’utilisateur.
     
@@ -104,7 +104,7 @@ Vous pouvez également filtrer par des détails de profil utilisateur supplémen
 
 ::: moniker range="o365-worldwide"
 
-1. Dans le Centre d’administration, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utilisateurs actifs</a>.
+1. Dans le Centre d’administration, accédez à la page **Utilisateurs >** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utilisateurs actifs</a>.
     
 2. Sur la page **utilisateurs actifs** , sélectionnez **filtres** , puis **nouveau filtre**.
   
@@ -114,7 +114,7 @@ Vous pouvez également filtrer par des détails de profil utilisateur supplémen
 
 ::: moniker range="o365-germany"
 
-1. Dans le Centre d’administration, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Utilisateurs actifs</a>.  
+1. Dans le Centre d’administration, accédez à la page **Utilisateurs >** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Utilisateurs actifs</a>.  
 
 2. Sur la page **utilisateurs actifs** , sélectionnez **affichages** et sélectionnez **Ajouter un affichage personnalisé**.
   
@@ -125,7 +125,7 @@ Vous pouvez également filtrer par des détails de profil utilisateur supplémen
 
 ::: moniker range="o365-21vianet"
 
-1. Dans le Centre d’administration, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Utilisateurs actifs</a>. 
+1. Dans le Centre d’administration, accédez à la page **Utilisateurs >** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Utilisateurs actifs</a>. 
 
 2. Sur la page **utilisateurs actifs** , sélectionnez **affichages** et sélectionnez **Ajouter un affichage personnalisé**.
   
@@ -138,7 +138,7 @@ Vous pouvez également filtrer par des détails de profil utilisateur supplémen
 
 ::: moniker range="o365-worldwide"
 
-1. Dans le Centre d’administration, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utilisateurs actifs</a>.
+1. Dans le Centre d’administration, accédez à la page **Utilisateurs >** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utilisateurs actifs</a>.
     
 2. Sur la page **utilisateurs actifs** , sélectionnez **filtre**, sélectionnez le filtre à modifier, puis sélectionnez **modifier le filtre**. 
     
@@ -151,7 +151,7 @@ Vous pouvez également filtrer par des détails de profil utilisateur supplémen
 
 ::: moniker range="o365-germany"
 
-1. Dans le Centre d’administration, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Utilisateurs actifs</a>.  
+1. Dans le Centre d’administration, accédez à la page **Utilisateurs >** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Utilisateurs actifs</a>.  
 
 2. Sur la page **utilisateurs actifs** , sélectionnez **affichages**, sélectionnez le filtre à modifier, puis cliquez sur **modifier cet affichage**. 
     
@@ -164,7 +164,7 @@ Vous pouvez également filtrer par des détails de profil utilisateur supplémen
 
 ::: moniker range="o365-21vianet"
 
-1. Dans le Centre d’administration, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Utilisateurs actifs</a>. 
+1. Dans le Centre d’administration, accédez à la page **Utilisateurs >** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Utilisateurs actifs</a>. 
 
 2. Sur la page **utilisateurs actifs** , sélectionnez **affichages**, sélectionnez le filtre à modifier, puis cliquez sur **modifier cet affichage**. 
     

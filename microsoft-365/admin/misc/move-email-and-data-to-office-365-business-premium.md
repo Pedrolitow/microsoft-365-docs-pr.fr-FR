@@ -1,5 +1,5 @@
 ---
-title: Déplacer des e-mails et des données vers Office 365 Business Premium
+title: Déplacer le courrier électronique et les données vers Microsoft 365 Business standard
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -21,30 +21,30 @@ search.appverid:
 ms.assetid: 1062115d-e312-482a-bb5a-765235990f41
 ROBOTS: NOINDEX
 description: Découvrez comment déplacer des données vers votre nouvelle identité d’entreprise.
-ms.openlocfilehash: fc0df5e919370395480cdafbaaee10b0d844f088
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+ms.openlocfilehash: 674b5e1fc8128656733b9586d9bab607df621954
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43209675"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627835"
 ---
-# <a name="move-email-and-data-to-office-365-business-premium"></a>Déplacer des e-mails et des données vers Office 365 Business Premium
+# <a name="move-email-and-data-to-microsoft-365-business-standard"></a>Déplacer le courrier électronique et les données vers Microsoft 365 Business standard
 
-Lorsque vous effectuez une mise à niveau vers Office 365 Business Premium, nous vous offrons une nouvelle *identité d’entreprise*. Vous recevez un nouveau compte de courrier ainsi qu'un compte OneDrive distinct pour vos données professionnelles. 
+Lorsque vous effectuez une mise à niveau vers Microsoft 365 Business standard, nous vous offrons une nouvelle *identité d’entreprise*. Vous recevez un nouveau compte de courrier ainsi qu'un compte OneDrive distinct pour vos données professionnelles. 
   
 Si vous voulez déplacer certaines de vos données personnelles vers votre nouvelle identité de l'entreprise, suivez les instructions ci-dessous.
   
 ## <a name="onedrive"></a>[OneDrive](#tab/OneDrive)
   
  **Copier vos données à partir de OneDrive**
-1. Créez un dossier temporaire sur votre disque dur pour stocker temporairement les fichiers que vous voulez migrer vers Office 365 pour les entreprises.
+1. Créez un dossier temporaire sur votre disque dur pour stocker temporairement les fichiers que vous souhaitez migrer vers Microsoft 365 pour les entreprises.
     
-2. Accédez à [https://onedrive.live.com/](https://onedrive.live.com/) et connectez-vous à l’aide du compte Microsoft que vous utilisez pour accéder à votre abonnement Office 365 pour les particuliers. 
+2. Accédez à [https://onedrive.live.com/](https://onedrive.live.com/) et connectez-vous à l’aide du compte Microsoft que vous utilisez pour accéder à votre abonnement familial Microsoft 365. 
     
-3. Copiez les fichiers que vous voulez utiliser avec Office 365 pour les entreprises vers le dossier local que vous avez créé à l'étape 1.
+3. Copiez les fichiers que vous souhaitez utiliser avec Microsoft 365 pour les entreprises dans le dossier local que vous avez créé à l’étape 1.
     
- **Importer des fichiers OneDrive dans Office 365 pour les entreprises**
-1. Accédez à [admin.Microsoft.com](https://go.microsoft.com/fwlink/?LinkId=816877) et connectez-vous avec vos nom d’utilisateur et mot de passe Office 365 Business. 
+ **Importer des fichiers OneDrive dans Microsoft 365 pour les entreprises**
+1. Accédez à [admin.Microsoft.com](https://go.microsoft.com/fwlink/?LinkId=816877) et connectez-vous avec vos nom d’utilisateur et mot de passe Microsoft 365 apps pour les entreprises. 
     
 2. Sélectionnez l'icône du **lanceur d'applications** dans la partie supérieure gauche, puis choisissez **OneDrive**.
   
@@ -66,14 +66,14 @@ Si vous voulez déplacer certaines de vos données personnelles vers votre nouve
 2. Chaque utilisateur doit suivre les étapes décrites dans [Exporter ou sauvegarder le courrier, les contacts et le calendrier vers un fichier .pst Outlook](https://support.office.com/article/14252b52-3075-4e9b-be4e-ff9ef1068f91.aspx).
     
  **Configurer votre compte de courrier dans Outlook**
-1. Chaque utilisateur doit configurer son nouveau compte de courrier offert avec l'abonnement Office 365 pour les entreprises. Pour ce faire, il a besoin de l'adresse de son nouveau compte de courrier. Le compte de courrier de chaque utilisateur correspond au nom d'utilisateur utilisé pour se connecter à Office 365 pour les entreprises. Son format est similaire à sue@contoso.onmicrosoft.com ou david@contoso.com.
+1. Chaque utilisateur doit configurer son nouveau compte de courrier fourni avec l’abonnement Microsoft 365 pour les entreprises. Pour ce faire, il a besoin de l'adresse de son nouveau compte de courrier. Le compte de courrier de chaque utilisateur est le même que le nom d’utilisateur qu’il utilise pour se connecter à Microsoft 365 pour les entreprises. Son format est similaire à sue@contoso.onmicrosoft.com ou david@contoso.com.
     
 2. Demandez à chaque utilisateur d'ajouter son compte de courrier à Outlook. Pour savoir comment procéder, voir [Configurer le courrier électronique dans Outlook (pour Windows)](https://support.office.com/article/6e27792a-9267-4aa4-8bb6-c84ef146101b.aspx) ou [Configurer le courrier électronique dans Outlook pour Mac 2011](https://support.office.com/article/d7b404a0-6e18-4d95-bed8-2de7661563ca.aspx).
     
  **Importer des informations à partir du fichier de données Outlook**
-1. Cette opération fusionne le courrier, le calendrier, les tâches et les contacts stockés dans le fichier PST dans votre compte de courrier Office 365 pour les entreprises.
+1. Cette opération fusionne le courrier, le calendrier, les tâches et les contacts stockés dans le fichier PST dans votre compte de messagerie Microsoft 365 pour entreprise.
     
-2. Pour importer les informations du fichier PST dans votre compte de courrier Office 365 pour les entreprises, demandez à chaque utilisateur de suivre les étapes décrites dans [Importer le courrier électronique, les contacts et le calendrier à partir d'un fichier .pst Outlook](https://support.office.com/article/431a8e9a-f99f-4d5f-ae48-ded54b3440ac.aspx).
+2. Pour importer les informations stockées dans le fichier PST dans votre compte de messagerie Microsoft 365 pour les entreprises, demandez à chaque utilisateur de suivre les étapes de la procédure [importer le courrier, les contacts et le calendrier à partir d’un fichier. pst Outlook](https://support.office.com/article/431a8e9a-f99f-4d5f-ae48-ded54b3440ac.aspx).
     
 ---
 

@@ -19,20 +19,20 @@ search.appverid:
 - BEA160
 - GEA150
 ms.assetid: ae950c9e-e8d9-4108-b0cb-449156998580
-description: Découvrez comment gérer vos propres enregistrements DNS ou laisser Office 365 gérer vos enregistrements DNS pour vous.
+description: Découvrez comment gérer vos propres enregistrements DNS ou laisser Microsoft gérer vos enregistrements DNS pour vous.
 ms.custom: okr_smb
-ms.openlocfilehash: 7a5bcf6bb39497a37cbec4e2cd9b7efad0fc6724
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+ms.openlocfilehash: ea3a62c048706f36cd7b1590851d8b372e0a1677
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43210355"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43628421"
 ---
 # <a name="set-up-your-domain-host-specific-instructions"></a>Configurer votre domaine (instructions spécifiques de l’hôte)
 
 Pour commencer à utiliser un domaine personnalisé (contoso.com) avec Office 365, vous devez vérifier votre domaine et configurer les enregistrements DNS de votre domaine. 
   
-Vous pouvez ajouter et gérer des enregistrements DNS à l’aide des outils d’administration de votre hôte de domaine, ou le contrôle Office 365 de vos enregistrements de domaine et nous allons les configurer pour vous.
+Vous pouvez ajouter et gérer des enregistrements DNS à l’aide des outils d’administration de votre hôte de domaine ou accorder à Microsoft le contrôle de vos enregistrements de domaine et nous allons les configurer pour vous.
   
 Sélectionnez votre hôte de domaine ci-dessous pour obtenir les étapes exactes. Si vous n’êtes pas sûr de votre hôte, reportez-vous à [la rubrique Rechercher votre bureau d’enregistrement de domaines](find-your-domain-registrar.md).
   

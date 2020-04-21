@@ -15,28 +15,28 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 393b0050-7c7e-49e6-a03d-b1e09fe4de9e
-description: Ce document de présentation vous aidera à comprendre Exchange Online Protection (EOP) et quelques termes importants. Ceci s’applique aux clients Office 365 qui protègent les boîtes aux lettres Exchange Online hébergées dans le Cloud et les clients autonomes EOP qui protègent les boîtes aux lettres locales telles qu’Exchange Server 2016.
-ms.openlocfilehash: b1a8e9360005b31cf03c5e9921e3285ff7119926
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+description: Ce document de présentation vous aidera à comprendre Exchange Online Protection (EOP) et quelques termes importants. Ceci s’applique aux clients qui protègent les boîtes aux lettres Exchange Online hébergées dans le Cloud et les clients autonomes EOP qui protègent les boîtes aux lettres locales telles qu’Exchange Server 2016.
+ms.openlocfilehash: dc08507a80db8e15d2e08ff5b954dec1905cfada
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597991"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43630916"
 ---
 # <a name="what-is-exchange-online-protection-eop"></a>Qu’est-ce qu’Exchange Online Protection (EOP)
 
-Exchange Online Protection (EOP) est un service de filtrage du courrier basé sur le Cloud qui permet de protéger votre organisation contre le courrier indésirable et les programmes malveillants. Si vous avez des boîtes aux lettres dans Office 365, elles sont automatiquement protégées par EOP depuis qu’elle fait partie du service. Cela inclut les organisations qui ont des boîtes aux lettres dans Office 365 et sur site, généralement appelé scénario hybride. EOP standalone est également disponible pour les clients qui n’ont pas de boîtes aux lettres dans le Cloud, mais qui souhaitent protéger leurs boîtes aux lettres locales.
+Exchange Online Protection (EOP) est un service de filtrage du courrier basé sur le Cloud qui permet de protéger votre organisation contre le courrier indésirable et les programmes malveillants. Si vous avez des boîtes aux lettres dans Microsoft 365, elles sont automatiquement protégées par EOP depuis qu’elle fait partie du service. Cela inclut les organisations qui ont des boîtes aux lettres dans Microsoft 365 et sur site, généralement appelé scénario hybride. EOP standalone est également disponible pour les clients qui n’ont pas de boîtes aux lettres dans le Cloud, mais qui souhaitent protéger leurs boîtes aux lettres locales.
 
 EOP tente de filtrer les courriers indésirables, ce qui permet d’effacer le contenu que les utilisateurs ne veulent pas voir. Normalement, le courrier indésirable est remis dans le dossier courrier indésirable. Certains utilisateurs aiment s’assurer que le filtrage fait ce qu’ils veulent, afin que le dossier courrier indésirable soit un moyen facile pour les utilisateurs de s’en assurer.  
 
 > [!TIP]
-> Il s’agit d’une bonne chose lorsque le courrier indésirable est placé automatiquement dans le dossier courrier indésirable. Le service effectue les opérations nécessaires en fonction de l’état des paramètres d’administration par défaut ou personnalisé. En d’autres termes, les utilisateurs ne doivent pas se soucier de voir un grand nombre de courriers indésirables dans le dossier courrier indésirable. Si les administrateurs préfèrent déplacer tous les courriers indésirables sortants, la mise en quarantaine doit être configurée. Pour plus d’informations, consultez l’article relatif à la [mise en quarantaine des messages électroniques dans Office 365](quarantine-email-messages.md) .
+> Il s’agit d’une bonne chose lorsque le courrier indésirable est placé automatiquement dans le dossier courrier indésirable. Le service effectue les opérations nécessaires en fonction de l’état des paramètres d’administration par défaut ou personnalisé. En d’autres termes, les utilisateurs ne doivent pas se soucier de voir un grand nombre de courriers indésirables dans le dossier courrier indésirable. Si les administrateurs préfèrent déplacer tous les courriers indésirables sortants, la mise en quarantaine doit être configurée. Pour plus d’informations, consultez l’article relatif à la [mise en quarantaine des messages électroniques](quarantine-email-messages.md) .
 
 ## <a name="important-terms"></a>Conditions importantes
 
-**Entrant**: messages entrant dans Office 365.
+**Entrant**: messages entrant dans Microsoft 365.
 
-**Sortant**: messages sortants d’Office 365.
+**Sortant**: messages sortant de Microsoft 365.
 
 **Internal**: messages provenant d’une personne au sein de l’organisation à une personne au sein de l’organisation. Cela inclut les clients qui se trouvent dans des scénarios hybrides et une boîte aux lettres peut être en local et l’autre dans le Cloud.
 

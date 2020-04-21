@@ -1,5 +1,5 @@
 ---
-title: Supprimer un domaine d'Office 365
+title: Supprimer un domaine
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -20,21 +20,21 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: f09696b2-8c29-4588-a08b-b333da19810c
-description: Découvrez comment supprimer un ancien domaine d’Office 365 et déplacer des utilisateurs et des groupes vers un autre domaine.
-ms.openlocfilehash: 621b50384b39a21bc0bf5256841c703b3ee0f74a
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+description: Découvrez comment supprimer un ancien domaine de Microsoft 365 et déplacer des utilisateurs et des groupes vers un autre domaine.
+ms.openlocfilehash: 21b2b17e5cab022f67c71c0d3858f8a03b45899b
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43210367"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43628433"
 ---
-# <a name="remove-a-domain-from-office-365"></a>Supprimer un domaine d'Office 365
+# <a name="remove-a-domain"></a>Supprimer un domaine
 
 [] Contributeurs : [![Peter Baumgartner](../../media/e70dc696-c5f8-4717-a48b-9087431503e7.png)](https://go.microsoft.com/fwlink/p/?linkid=847121)
   
  **[Consultez les Forums aux questions des domaines](../setup/domains-faq.md)** si vous ne trouvez pas ce que vous recherchez. 
   
-Souhaitez-vous supprimer votre domaine pour l'ajouter à un autre plan d'abonnement Office 365 ? Ou souhaitez-vous annuler votre abonnement ? Vous pouvez [modifier votre plan ou abonnement](../../commerce/subscriptions/switch-to-a-different-plan.md) ou [annuler votre abonnement](../../commerce/subscriptions/cancel-your-subscription.md).
+Êtes-vous en train de supprimer votre domaine car vous souhaitez l’ajouter à un autre plan d’abonnement Microsoft 365 ? Ou souhaitez-vous annuler votre abonnement ? Vous pouvez [modifier votre plan ou abonnement](../../commerce/subscriptions/switch-to-a-different-plan.md) ou [annuler votre abonnement](../../commerce/subscriptions/cancel-your-subscription.md).
   
 ### <a name="step-1-move-users-to-another-domain"></a>Étape 1 : déplacer des utilisateurs vers un autre domaine
 
@@ -210,7 +210,7 @@ Vous pouvez également utiliser PowerShell pour déplacer des utilisateurs vers 
 
 ## <a name="how-long-does-it-take-for-a-domain-to-be-removed"></a>Combien de temps faut-il pour qu'un domaine soit supprimé ?
 
-La suppression d’un domaine par Office 365 peut prendre jusqu’à 5 minutes s’il n’est pas référencé dans de nombreux emplacements, tels que les groupes de sécurité, les listes de distribution, les utilisateurs et les groupes Office 365. Si plusieurs références utilisent le domaine, la suppression du domaine peut prendre plusieurs heures (une journée).
+La suppression d’un domaine par Microsoft 365 peut prendre jusqu’à 5 minutes s’il n’est pas référencé dans de nombreux emplacements, tels que les groupes de sécurité, les listes de distribution, les utilisateurs et les groupes Microsoft 365. Si plusieurs références utilisent le domaine, la suppression du domaine peut prendre plusieurs heures (une journée).
   
 Si vous avez des centaines voire des milliers d'utilisateurs, utilisez PowerShell pour interroger tous les utilisateurs, puis déplacez-les vers un autre domaine. Sinon, il est possible que quelques-uns des utilisateurs manquent dans l'interface utilisateur. De plus, lorsque vous voudrez supprimer le domaine, vous ne pourrez pas et vous ne saurez pas pourquoi. Pour en savoir plus, voir [Set-MsolUserPrincipalName](https://docs.microsoft.com/powershell/module/msonline/set-msoluserprincipalname?view=azureadps-1.0). Pour définir le domaine par défaut, utilisez [Set-MsolDomain](https://docs.microsoft.com/powershell/module/msonline/set-msoldomain?view=azureadps-1.0).
   
@@ -231,6 +231,6 @@ Cela ne fonctionne toujours pas ? Vous devez peut-être supprimer votre domaine 
 
 [Obtenir de l’aide sur les domaines Office 365](get-help-with-domains.md)
 
-[Basculer vers une autre offre Office 365 pour les entreprises](../../commerce/subscriptions/switch-to-a-different-plan.md)
+[Basculer vers un autre plan Microsoft 365 pour les entreprises](../../commerce/subscriptions/switch-to-a-different-plan.md)
 
 [Annuler votre abonnement](../../commerce/subscriptions/cancel-your-subscription.md)

@@ -1,5 +1,5 @@
 ---
-title: Créer des enregistrements pour Office 365 à l'aide de DNS Windows
+title: Créer des enregistrements DNS pour Microsoft à l’aide du DNS basé sur Windows
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -19,21 +19,21 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 9eec911d-5773-422c-9593-40e1147ffbde
-description: Découvrez comment vérifier votre domaine et configurer les enregistrements DNS pour la messagerie, Skype entreprise Online et d’autres services sur le DNS Windows pour Office 365.
-ms.openlocfilehash: d33a2f79111f8951c3ec31ca5680877ad2e7d570
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+description: Découvrez comment vérifier votre domaine et configurer les enregistrements DNS pour la messagerie, Skype entreprise Online et d’autres services sur le serveur DNS Windows pour Microsoft.
+ms.openlocfilehash: 3207a319880a23b71a17e80f3e9e77398fa79ef0
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43210563"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631368"
 ---
-# <a name="create-dns-records-for-office-365-using-windows-based-dns"></a>Créer des enregistrements pour Office 365 à l'aide de DNS Windows
+# <a name="create-dns-records-for-microsoft-using-windows-based-dns"></a>Créer des enregistrements DNS pour Microsoft à l’aide du DNS basé sur Windows
 
  **[Consultez les Forums aux questions sur les domaines](../setup/domains-faq.md)** si vous ne trouvez pas ce que vous recherchez. 
    
 Si vous hébergez vos propres enregistrements DNS à l'aide du DNS Windows, suivez les étapes décrites dans cet article pour configurer vos enregistrements associés au courrier, à Skype Entreprise Online, etc.
   
-Pour commencer, vous devez [Rechercher vos enregistrements DNS dans le DNS Windows afin de](#find-your-dns-records-in-windows-based-dns) pouvoir les mettre à jour. De plus, si vous envisagez de synchroniser votre annuaire Active Directory local avec Office 365, consultez [la rubrique adresse de messagerie non routable utilisée comme nom d’utilisateur principal dans votre local Active Directory](#non-routable-email-address-used-as-a-upn-in-your-on-prem-active-directory).
+Pour commencer, vous devez [Rechercher vos enregistrements DNS dans le DNS Windows afin de](#find-your-dns-records-in-windows-based-dns) pouvoir les mettre à jour. De plus, si vous envisagez de synchroniser votre annuaire Active Directory local avec Microsoft, consultez [la rubrique adresse de messagerie non routable utilisée comme nom d’utilisateur principal dans votre local Active Directory](#non-routable-email-address-used-as-a-upn-in-your-on-prem-active-directory).
   
 Problèmes de flux de messagerie ou autres problèmes après avoir ajouté des enregistrements DNS, consultez [la rubrique résolution des problèmes après avoir modifié votre nom de domaine ou des enregistrements DNS](../get-help-with-domains/find-and-fix-issues.md). 
   
@@ -43,13 +43,13 @@ Problèmes de flux de messagerie ou autres problèmes après avoir ajouté des e
 ## <a name="add-mx-record"></a>Ajouter l'enregistrement MX
 <a name="BKMK_add_MX"> </a>
 
-Ajoutez un enregistrement MX afin que les courriers électroniques pour votre domaine soient transférés vers Office 365.
+Ajoutez un enregistrement MX afin que les messages électroniques pour votre domaine soient envoyés à Microsoft.
 - L'enregistrement MX que vous ajouterez inclut une valeur ( **Pointe vers l'adresse**) qui ressemble à ceci : \<MX token\>.mail.protection.outlook.com, où \<MX token\> est une valeur telle que MSxxxxxxx. 
-- À partir de la ligne MX de la section Exchange Online de la page Ajouter des enregistrements DNS dans Office 365, copiez la valeur figurant sous points à l’adresse. Vous utiliserez cette valeur dans l’enregistrement que vous créez dans cette tâche. 
+- À partir de la ligne MX de la section Exchange Online de la page Ajouter des enregistrements DNS de Microsoft, copiez la valeur figurant sous points à l’adresse. Vous utiliserez cette valeur dans l’enregistrement que vous créez dans cette tâche. 
 - Sur la page Gestionnaire DNS du domaine, accédez à **action** > **Mail Exchanger (MX)**. Pour trouver cette page pour le domaine, voir [Rechercher vos enregistrements DNS dans le DNS Windows](#find-your-dns-records-in-windows-based-dns).  
 - Dans la boîte de dialogue **nouvel enregistrement de ressource** , vérifiez que les champs sont définis sur les valeurs suivantes : 
     - Nom de l’hôte:  
-    - @Address : collez ici la valeur de l’adresse de pointage que vous venez de copier depuis Office 365.  
+    - @Address : collez la valeur de pointage vers l’adresse que vous venez de copier à partir de Microsoft ici.  
     - Préférences 
 - Sélectionnez **enregistrer les modifications**.
 - Supprimez les enregistrements MX obsolètes. Si vous avez des anciens enregistrements MX pour ce domaine qui acheminent les messages ailleurs, activez la case à cocher en regard de chaque ancien enregistrement, puis sélectionnez **supprimer** > **OK**. 
@@ -57,10 +57,10 @@ Ajoutez un enregistrement MX afin que les courriers électroniques pour votre do
 ## <a name="add-cname-records"></a>Ajouter les enregistrements CNAME
 <a name="BKMK_add_CNAME"> </a>
 
-Ajoutez les enregistrements CNAME requis pour Office 365. Si d'autres enregistrements CNAME sont répertoriés dans Office 365, ajoutez-les en suivant les mêmes étapes générales présentées ici.
+Ajoutez les enregistrements CNAMe requis pour Microsoft. Si d’autres enregistrements CNAMe sont répertoriés dans Microsoft, ajoutez ceux-ci en suivant les mêmes étapes générales que celles indiquées ici.
   
 > [!IMPORTANT]
-> Si vous avez la gestion des appareils mobiles (MDM) pour Office 365, vous devez créer deux autres enregistrements CNAME. Suivez la procédure que vous avez utilisée pour les quatre autres enregistrements CNAME, mais fournissez les valeurs du tableau suivant. (Si vous ne disposez pas de MDM, vous pouvez ignorer cette étape.) 
+> Si vous disposez de la gestion des appareils mobiles pour Microsoft, vous devez créer deux enregistrements CNAMe supplémentaires. Suivez la procédure que vous avez utilisée pour les quatre autres enregistrements CNAME, mais fournissez les valeurs du tableau suivant. (Si vous ne disposez pas de MDM, vous pouvez ignorer cette étape.) 
 
 - Sur la page du Gestionnaire DNS du domaine, accédez à l' **action** > **CNAME (CNAME)**.
 - Dans la boîte de dialogue **nouvel enregistrement de ressource** , vérifiez que les champs sont définis sur les valeurs suivantes :  
@@ -84,10 +84,10 @@ Ajoutez l'enregistrement de découverte automatique CNAME Skype Entreprise Onlin
     - Adresse : webdir.online.lync.com
 - Sélectionnez **OK**.
    
-### <a name="add-two-cname-records-for-mobile-device-management-mdm-for-office-365"></a>Ajouter deux enregistrements CNAME pour la gestion des appareils mobiles (MDM) pour Office 365
+### <a name="add-two-cname-records-for-mobile-device-management-mdm-for-microsoft"></a>Ajouter deux enregistrements CNAMe pour la gestion des appareils mobiles (MDM) pour Microsoft
 
 > [!IMPORTANT]
-> Si vous avez la gestion des appareils mobiles (MDM) pour Office 365, vous devez créer deux autres enregistrements CNAME. Suivez la procédure que vous avez utilisée pour les quatre autres enregistrements CNAME, mais fournissez les valeurs du tableau suivant. > (si vous n’avez pas MDM, vous pouvez ignorer cette étape.) 
+> Si vous disposez de la gestion des appareils mobiles pour Microsoft, vous devez créer deux enregistrements CNAMe supplémentaires. Suivez la procédure que vous avez utilisée pour les quatre autres enregistrements CNAME, mais fournissez les valeurs du tableau suivant. > (si vous n’avez pas MDM, vous pouvez ignorer cette étape.) 
   
 
 Ajoutez l'enregistrement CNAME Enterpriseregistration MDM.  
@@ -110,7 +110,7 @@ Ajoutez l'enregistrement CNAME Enterpriseenrollment MDM.
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
-> Vous ne pouvez avoir qu’un enregistrement TXT pour SPF pour un domaine. Si votre domaine comporte plusieurs enregistrements SPF, vous rencontrez des erreurs au niveau de la transmission du courrier électronique ainsi que des problèmes de remise du courrier et de classification en tant que courrier indésirable. If you already have an SPF record for your domain, don't create a new one for Office 365. Ajoutez plutôt les valeurs Office 365 requises à l'enregistrement actuel de manière à n'avoir qu'un  *seul*  enregistrement SPF qui inclut les deux ensembles de valeurs. 
+> Vous ne pouvez avoir qu’un enregistrement TXT pour SPF pour un domaine. Si votre domaine comporte plusieurs enregistrements SPF, vous rencontrez des erreurs au niveau de la transmission du courrier électronique ainsi que des problèmes de remise du courrier et de classification en tant que courrier indésirable. Si vous disposez déjà d’un enregistrement SPF pour votre domaine, n’en créez pas pour Microsoft. Ajoutez plutôt les valeurs Microsoft requises à l’enregistrement actuel afin de disposer d’un *seul* enregistrement SPF qui inclut les deux ensembles de valeurs. 
   
 Ajoutez l'enregistrement TXT SPF pour votre domaine pour éviter le courrier indésirable.
   
@@ -129,7 +129,7 @@ Ajoutez l'enregistrement TXT SPF pour votre domaine pour éviter le courrier ind
 ## <a name="add-srv-records"></a>Ajouter les enregistrements SRV
 <a name="BKMK_add_SRV"> </a>
 
-Ajoutez les 2 enregistrements SRV requis pour Office 365.
+Ajoutez les deux enregistrements SRV requis pour Microsoft.
 
 Ajoutez l'enregistrement SRV SIP pour les conférences web Skype Entreprise Online.  <br/> 
 -  Sur la page Gestionnaire DNS de votre domaine, accédez à **action** \> **autres nouveaux enregistrements**. 
@@ -159,16 +159,16 @@ Ajoutez l'enregistrement SRV SIP pour la fédération Skype Entreprise Online.
 ## <a name="add-a-record-to-verify-that-you-own-the-domain-if-you-havent-already"></a>Ajouter un enregistrement pour vérifier que vous êtes propriétaire du domaine, si ce n'est déjà fait
 <a name="BKMK_verify"> </a>
 
-Avant d'ajouter les enregistrements DNS pour configurer vos services Office 365, Office 365 doit vérifier que vous êtes propriétaire du domaine que vous ajoutez. Pour ce faire, vous ajoutez un enregistrement, en suivant les étapes ci-dessous.
+Avant d’ajouter les enregistrements DNS pour configurer vos services Microsoft, Microsoft doit confirmer que vous êtes propriétaire du domaine que vous ajoutez. Pour ce faire, vous ajoutez un enregistrement, en suivant les étapes ci-dessous.
   
 > [!NOTE]
 > Cet enregistrement sert uniquement à vérifier que vous êtes propriétaire du domaine. 
   
 
-1. Collectez les informations sur Office 365.  <br/> 
+1. Recueillez des informations auprès de Microsoft.  <br/> 
 2. Dans le centre d’administration, accédez à la page **Paramètres** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domaines</a>. 
 3. Dans la page **domaines** , dans la colonne **actions** du domaine que vous vérifiez, sélectionnez **Démarrer la configuration**. 
-4. Sur la page **Ajouter un domaine à Office 365** , sélectionnez **Démarrer l’étape 1**. 
+4. Sur la page **Ajouter un domaine à Microsoft** , sélectionnez **Démarrer l’étape 1**. 
 5. Dans la page **confirmer que vous êtes le propriétaire de votre domaine** , dans la liste déroulante **voir les instructions pour l’exécution de cette étape avec** , sélectionnez **instructions générales**. 
 6. Dans le tableau, copiez la valeur Adresse de destination ou de pointage. Vous en aurez besoin au cours de l'étape suivante. Nous vous recommandons de copier et coller cette valeur, afin que l'espacement reste correct.
 
@@ -182,14 +182,14 @@ Ajoutez un enregistrement TXT.
 
 - Nom de l’hôte : @
 - Type : TXT
-- Adresse : collez ici la valeur adresse de destination ou de pointage que vous venez de copier à partir d’Office 365.  
+- Adresse : collez la valeur adresse de destination ou de pointage que vous venez de copier à partir de Microsoft ici.  
 - Sélectionnez **OK** > **.**
 
-Vérifiez votre domaine dans Office 365.  
+Vérifiez votre domaine dans Microsoft.  
 > [!IMPORTANT]
 > Patientez environ 15 minutes avant de le faire, afin que l’enregistrement que vous venez de créer puisse être mis à jour sur Internet.       
 
-- Revenez à Office 365 et suivez les étapes ci-dessous pour demander une vérification. La vérification recherche l'enregistrement TXT que vous avez ajouté à l'étape précédente. Lorsqu'elle trouve l'enregistrement TXT correct, le domaine est vérifié.  
+- Revenez à Microsoft et suivez les étapes ci-dessous pour demander un contrôle de vérification. La vérification recherche l'enregistrement TXT que vous avez ajouté à l'étape précédente. Lorsqu'elle trouve l'enregistrement TXT correct, le domaine est vérifié.  
 1. Dans le centre d’administration, accédez à la page <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">domaines</a> **d’installation** \> .
 2. Dans la page **domaines** , dans la colonne **action** du domaine que vous vérifiez, sélectionnez Démarrer la **configuration**. 
 3. Dans la page **confirmer que vous êtes le propriétaire de votre domaine** , sélectionnez **terminé, vérifier maintenant**, puis, dans la boîte de dialogue de confirmation, sélectionnez **Terminer**. 
@@ -200,7 +200,7 @@ Vérifiez votre domaine dans Office 365.
 ## <a name="non-routable-email-address-used-as-a-upn-in-your-on-prem-active-directory"></a>Adresse de courrier non routable utilisée en tant qu'UPN dans votre annuaire Active Directory local
 <a name="BKMK_ADNote"> </a>
 
-Si vous envisagez de synchroniser votre annuaire Active Directory local avec Office 365, vous souhaiterez vous assurer que le suffixe du nom d'utilisateur principal (UPN) Active Directory est un suffixe de domaine valide et non pas un suffixe de domaine qui n'est pas pris en charge tel que @contoso.local. Si vous devez modifier votre suffixe UPN, consultez [la rubrique How to prepare a non routable domain for Directory Synchronization](https://support.office.com/article/e7968303-c234-46c4-b8b0-b5c93c6d57a7).
+Si vous envisagez de synchroniser votre annuaire Active Directory local avec Microsoft, vous devez vous assurer que le suffixe UPN (nom d’utilisateur principal) Active Directory est un suffixe de domaine valide et non pas un suffixe de domaine non pris en charge tel que @contoso. local. Si vous devez modifier votre suffixe UPN, consultez [la rubrique How to prepare a non routable domain for Directory Synchronization](https://support.office.com/article/e7968303-c234-46c4-b8b0-b5c93c6d57a7).
   
 > [!NOTE]
 >  L'application des enregistrements DNS modifiés prend généralement 15 minutes. Il peut toutefois arriver que la répercussion d'une modification dans le système DNS sur Internet prenne davantage de temps. Si vous rencontrez des problèmes avec le flux de messages ou d'autres problèmes suite à l'ajout des enregistrements DNS, voir [Résolution des problèmes suite à la modification de votre nom de domaine ou des enregistrements DNS](../get-help-with-domains/find-and-fix-issues.md). 

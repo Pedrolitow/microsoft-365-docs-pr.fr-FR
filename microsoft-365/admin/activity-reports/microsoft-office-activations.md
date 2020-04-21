@@ -18,18 +18,18 @@ search.appverid:
 - GEA150
 ms.assetid: 87c24ae2-82e0-4d1e-be01-c3bcc3f18c60
 description: Découvrez comment obtenir un rapport d’activation Office pour savoir quels utilisateurs ont activé leur abonnement Office et identifier les utilisateurs qui pourraient avoir besoin d’aide supplémentaire.
-ms.openlocfilehash: 7a26928b654c222a2eef05371ff9b220cf59cfe4
-ms.sourcegitcommit: 2b626a7924b4be08f6eb21181453b778e6fde418
+ms.openlocfilehash: 632973c8d50dffd50725c46163e0af874c64b0c6
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/30/2020
-ms.locfileid: "43046974"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43621221"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-office-activations"></a>Rapports Microsoft 365 dans le centre d’administration-activations de Microsoft Office
 
 Le tableau de bord **rapports** Microsoft 365 affiche une vue d’ensemble de l’activité sur les produits de votre organisation. Il vous permet d'explorer les rapports au niveau de chaque produit afin d'offrir des informations plus précises sur les activités pour chaque produit. Consultez [la rubrique Présentation des rapports](activity-reports.md).
   
-Le rapport Activation d'Office vous offre un aperçu des utilisateurs ayant activé leur abonnement Office sur au moins un appareil. Il présente le détail des activations d'Office 365 Proplus, de Project et de Visio Pro pour les abonnements Office 365, ainsi que le détail des activations sur ordinateurs et appareils. Ce rapport peut vous permettre d'identifier les utilisateurs qui pourraient avoir besoin d'assistance pour activer leur abonnement Office.
+Le rapport Activation d'Office vous offre un aperçu des utilisateurs ayant activé leur abonnement Office sur au moins un appareil. Elle fournit une répartition des activations d’abonnements Microsoft 365 apps pour Enterprise, Project et Visio Pro pour Office 365, ainsi que la répartition des activations sur les ordinateurs de bureau et les appareils. Ce rapport peut vous permettre d'identifier les utilisateurs qui pourraient avoir besoin d'assistance pour activer leur abonnement Office.
   
 > [!NOTE]
 > Vous devez être un administrateur général, un lecteur global ou un lecteur de rapports dans Microsoft 365 ou un administrateur Exchange, SharePoint, teams, Team communications ou Skype entreprise pour afficher des rapports.  

@@ -1,5 +1,5 @@
 ---
-title: Envoyer un courrier électronique en tant que liste de distribution dans Office 365
+title: Envoyer un courrier électronique en tant que liste de distribution
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -19,23 +19,23 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: a7c98273-067e-4162-b3a1-4ba081796012
-description: Apprenez à envoyer du courrier électronique sous forme de liste de distribution dans Office 365.
-ms.openlocfilehash: 076405b54f2a1521e0d9a1fc54c734b172eb82e8
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+description: Découvrez comment envoyer des courriers électroniques en tant que liste de distribution dans Microsoft 365.
+ms.openlocfilehash: e9f8e52350dfd27e58ee160ed10f5c45e33391d7
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42361739"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43628063"
 ---
-# <a name="send-email-as-a-distribution-list-in-office-365"></a>Envoyer un courrier électronique en tant que liste de distribution dans Office 365
+# <a name="send-email-as-a-distribution-list"></a>Envoyer un courrier électronique en tant que liste de distribution
 
-Dans Office 365, vous pouvez envoyer des courriers électroniques sous forme de liste de distribution. Lorsqu’une personne qui est membre de la liste de distribution répond à un message envoyé à la liste de distribution, le message semble provenir de la liste de distribution, et non de l’utilisateur individuel. Cette rubrique vous explique comment procéder.
+Dans Microsoft 365, vous pouvez envoyer des courriers électroniques sous forme de liste de distribution. Lorsqu’une personne qui est membre de la liste de distribution répond à un message envoyé à la liste de distribution, le message semble provenir de la liste de distribution, et non de l’utilisateur individuel. Cette rubrique vous explique comment procéder.
   
 ## <a name="send-email-as-a-distribution-list"></a>Envoyer un courrier électronique en tant que liste de distribution
 
-Avant d’effectuer ces étapes, vérifiez que vous avez été ajouté à une liste de distribution Office 365 et que vous disposez de l’autorisation Envoyer en tant que.
+Avant d’effectuer ces étapes, vérifiez que vous avez été ajouté à une liste de distribution Microsoft 365 et que vous disposez de l’autorisation Envoyer en tant que.
   
- **Administrateurs**: Assurez-vous que vous avez suivi les étapes de la rubrique [Ajouter un utilisateur ou un contact Office 365 à une liste](../email/add-user-or-contact-to-distribution-list.md) et [autoriser les membres à envoyer des messages électroniques en tant que groupes Office 365](../create-groups/allow-members-to-send-as-or-send-on-behalf-of-group.md#allow-members-to-send-email-as-a-group) , et ajouté les personnes appropriées à la liste de distribution.
+ **Administrateurs**: Assurez-vous que vous avez suivi les étapes indiquées dans la rubrique [Ajouter un utilisateur ou un contact Microsoft 365 à une liste](../email/add-user-or-contact-to-distribution-list.md) et [autoriser les membres à envoyer des messages électroniques en tant que groupe de Microsoft 365](../create-groups/allow-members-to-send-as-or-send-on-behalf-of-group.md#allow-members-to-send-email-as-a-group) , et ajouté les personnes appropriées à la liste de distribution.
   
 1. Ouvrez Outlook sur le Web et accédez à votre boîte de réception. 
     

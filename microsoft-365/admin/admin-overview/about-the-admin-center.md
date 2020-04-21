@@ -23,18 +23,18 @@ search.appverid:
 - GEA150
 ms.assetid: 758befc4-0888-4009-9f14-0d147402fd23
 description: Le centre d'administration vous permet de configurer votre organisation dans le cloud et gérer les utilisateurs et les abonnements. Tout d’abord, connectez-vous au compte avec des autorisations d’administrateur.
-ms.openlocfilehash: cee2be9f4d1a0029e48f7c83619bafd00c42c044
-ms.sourcegitcommit: 9c335d110e0b499501edc8a31b987641819118a1
+ms.openlocfilehash: b54fd3219354b0a5ee38480f8e3a591500c0524b
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/04/2020
-ms.locfileid: "42409469"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43623975"
 ---
 # <a name="about-the-microsoft-365-admin-center"></a>À propos du Centre d’administration Microsoft 365
 
-**Si vous avez acheté une offre Office 365 pour les entreprises ET que vous disposez des autorisations d'administration, vous avez accès au centre d'administration**. Cet article est pour vous !
+**Si vous avez acheté un forfait Microsoft 365 pour les entreprises et que vous disposez d’autorisations d’administrateur, vous avez accès au centre d’administration**. Cet article est pour vous !
 
-**Si vous êtes un utilisateur ou si vous avez souscrit une offre Office 365 pour les particuliers, vous n’avez pas accès au Centre d’administration.** Pour configurer Office 365, voir [Télécharger et installer ou réinstaller Office 365 ou Office 2016 sur un PC ou Mac](https://support.office.com/article/4414eaaf-0478-48be-9c42-23adc4716658.aspx).
+**Si vous êtes un utilisateur ou que vous disposez d’un plan de famille Microsoft 365, vous ne disposez pas d’un centre d’administration.** Pour configurer Microsoft 365, rendez-vous sur [le site Télécharger et installer ou réinstaller microsoft 365 ou Office 2019 sur un PC ou un Mac](https://support.office.com/article/4414eaaf-0478-48be-9c42-23adc4716658.aspx).
 
 Le centre d’administration vous permet de configurer votre organisation dans le cloud, de gérer les utilisateurs, de gérer les abonnements, etc. Dans cet article, découvrez comment accéder au Centre d’administration et en savoir plus sur les fonctionnalités disponibles et les paramètres.
 
@@ -66,7 +66,7 @@ Si vous avez trouvé cette vidéo utile, consultez les [séries de formations co
 
 2. Sélectionnez l’icône du lanceur d’applications située en haut à gauche et choisissez **Administrateur**.
 
-    La vignette **Administrateur** s’affiche uniquement aux personnes qui ont reçu les [autorisations d’administration](../add-users/about-admin-roles.md) dans Office 365. Si la vignette ne s’affiche pas, cela signifie que vous ne disposez pas des autorisations d’accès au Centre d’administration pour votre organisation.
+    La vignette **administrateur** s’affiche uniquement pour les personnes disposant d' [autorisations d’administrateur](../add-users/about-admin-roles.md)Microsoft 365. Si la vignette n’apparaît pas, cela signifie que vous n’êtes pas autorisé à accéder au centre d’administration de votre organisation.
 
 ## <a name="admin-center-features-and-settings"></a>Fonctionnalités et paramètres du centre d’administration
 
@@ -76,13 +76,13 @@ Les fonctionnalités et paramètres suivants sont disponibles dans la barre de n
 |-----|-----|
 |**Accueil** <br/> |Il s’agit de la page d’accueil de la nouvelle version du centre d’administration. Vous allez découvrir comment gérer les utilisateurs, la facturation, l'état d'intégrité des services et les rapports.  <br/> |
 |**Utilisateurs** <br/> |Créer et gérer des utilisateurs dans votre organisation, tels que des employés ou des étudiants. Vous pouvez également définir leur niveau d’autorisation ou réinitialiser leur mot de passe.  <br/> |
-|**Groupes** <br/> |Créer et gérer des groupes dans votre organisation (groupe Office 365, groupe de distribution, groupe de sécurité, boîte aux lettres partagée, etc.). Découvrez la [création](../create-groups/create-groups.md) et la [gestion](../create-groups/manage-groups.md) de groupes.  <br/> |
+|**Groupes** <br/> |Créer et gérer des groupes dans votre organisation, tels qu’un groupe Microsoft 365, un groupe de distribution, un groupe de sécurité ou une boîte aux lettres partagée. Découvrez la [création](../create-groups/create-groups.md) et la [gestion](../create-groups/manage-groups.md) de groupes.  <br/> |
 |**Resources** <br/> |Créer et gérer des ressources (par exemple, collection de sites SharePoint). Découvrez comment [créer des collections de sites](https://support.office.com/article/3a3d7ab9-5d21-41f1-b4bd-5200071dd539.aspx).  <br/> |
 |**Facturation** <br/> |Afficher, acheter ou annuler des abonnements pour votre organisation. Afficher les relevés de facturation précédents ou le nombre de licences attribuées à des utilisateurs individuels. Découvrez comment [gérer la facturation](../../commerce/index.yml).  <br/> |
 |**Support** <br/> | Afficher les demandes de service existantes ou créez-en de nouvelles. Apprenez-en davantage dans [Contacter le support relatif aux produits d’entreprises- Aide de l’administrateur](../contact-support-for-business-products.md). |
 |**Settings** <br/> |Gérer les paramètres globaux des applications telles que la messagerie, les sites et la suite Office. Modifier la stratégie de mot de passe et la date d’expiration. Ajouter et mettre à jour des noms de domaine (par exemple, contoso.com). Modifier le profil de votre organisation et vos préférences de publication. Choisir si les partenaires peuvent accéder à votre centre d'administration.  <br/> |
 |**Configuration** <br/> |Gérer les domaines existants, activer et gérer l’authentification multifacteur, gérer l’accès administrateur, migrer les boîtes aux lettres d’utilisateurs vers Office 365, gérer les mises à jour de fonctionnalités et aider les utilisateurs à installer leurs applications Office. |
-|**Rapports** <br/> |Identifier rapidement la manière dont votre organisation utilise Office 365 grâce aux rapports détaillés sur l’utilisation de la messagerie, les activations d’Office, etc. Découvrez comment utiliser les nouveaux [rapports d’activité](../activity-reports/activity-reports.md).  <br/> |
+|**Rapports** <br/> |Découvrez en un coup d’œil comment votre organisation utilise Microsoft 365 avec des rapports détaillés sur l’utilisation de la messagerie, les activations Office, etc. Découvrez comment utiliser les nouveaux [rapports d’activité](../activity-reports/activity-reports.md).<br/> |
 |**État du service** <br/> |Afficher l’état du service en un clin d’œil. Vous pouvez également consulter d’autres informations et l’historique des états du service. Consultez [Vérifier l’état du service](https://support.office.com/article/932AD3AD-533C-418A-B938-6E44E8BC33B0).  <br/> Utilisez le Centre de messages pour suivre les modifications à venir des fonctionnalités et services. Nous y publions des annonces contenant des informations qui vous aideront à planifier les changements et à comprendre comment ceux-ci peuvent affecter les utilisateurs. Pour plus d’informations, consultez [Centre de messages dans Office 365](../manage/message-center.md).  <br/> |
 |**Centres d’administration** <br/> |Ouvrez des centres d'administration distincts pour Exchange, Skype Entreprise, SharePoint, Yammer et Azure AD. Chaque centre d’administration inclut tous les paramètres disponibles pour le service concerné.  <br/> Par exemple, dans le Centre d’administration Exchange, configurez et gérez le courrier électronique, les calendriers, les groupes de distribution, etc. Dans le Centre d’administration SharePoint, créez et gérez les collections de sites, les paramètres de site et OneDrive Entreprise. Dans le Centre d’administration Skype Entreprise, configurez les notifications de messagerie instantanée, la conférence rendez-vous et la présence en ligne.  <br/> En savoir plus sur le [Centre d'administration Exchange](https://go.microsoft.com/fwlink/p/?LinkID=271807) et le [Centre d'administration SharePoint](https://docs.microsoft.com/sharepoint/sharepoint-online).<br/> **Remarque :** les centres d'administration disponibles dépendent de votre plan et de votre région.           |
    
@@ -94,10 +94,10 @@ Les fonctionnalités et paramètres suivants sont disponibles dans la barre de n
 
 - Consulter des rapports d’activité : [Rapports d’activité](../activity-reports/activity-reports.md)
 
-- [Créer un groupe Office 365](../create-groups/create-groups.md)
+- [Créer un groupe Microsoft 365](../create-groups/create-groups.md)
 
-- [Gérer un groupe Office 365](../create-groups/manage-groups.md)
+- [Gérer un groupe Microsoft 365](../create-groups/manage-groups.md)
 
 ## <a name="see-also"></a>Voir aussi
 
-[Vidéos de formation Microsoft 365 Entreprise](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[Vidéos de formation Microsoft 365 pour les entreprises](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

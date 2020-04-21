@@ -1,5 +1,5 @@
 ---
-title: Mettre à jour votre numéro de téléphone et votre adresse de courrier d'administrateur dans Office 365
+title: Mettre à jour votre numéro de téléphone et votre adresse de messagerie d’administrateur
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -19,16 +19,16 @@ search.appverid:
 - MOE150
 ms.assetid: 767349fa-f646-46d9-9dab-4a65049bdd1f
 description: Mettez à jour votre numéro de téléphone administrateur et votre adresse de messagerie dans le centre d’administration. Vous aurez besoin de ces informations pour réinitialiser votre propre mot de passe d’administrateur.
-ms.openlocfilehash: 255c1d72ae032b0ebaf0606e0731e9bbe8a1b40d
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 4a60e344f94ede3e455f8940189f5019a52e834b
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42361669"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43628003"
 ---
-# <a name="update-your-admin-phone-number-and-email-address-in-office-365"></a>Mettre à jour votre numéro de téléphone et votre adresse de courrier d'administrateur dans Office 365
+# <a name="update-your-admin-phone-number-and-email-address"></a>Mettre à jour votre numéro de téléphone et votre adresse de messagerie d’administrateur
 
-[] Cet article explique comment vous, en tant qu'administrateur, pouvez modifier votre numéro de téléphone et votre adresse électronique dans Office 365.
+Cet article explique comment vous, l’administrateur, pouvez modifier votre téléphone professionnel et votre adresse de messagerie dans Microsoft 365.
   
 Si vous cherchez comment modifier les informations de profil de votre société, comme le nom de la société et son adresse, le numéro de téléphone et les informations de contact technique, voir [Modifier l'adresse de votre organisation et d'autres informations de profil](change-address-contact-and-more.md).
   
@@ -40,7 +40,7 @@ Utilisez la page **informations personnelles** pour modifier votre nom, votre nu
 
 2. Dans l’en-tête, sélectionnez l' \> icône de votre profil **mon compte** \> **informations personnelles**.
 
-3. Dans la section **Détails du contact** , sélectionnez Modifier. Mettez à jour votre adresse de messagerie mobile, de téléphone et de secours. Vérifiez que vous utilisez autre chose que votre adresse de courrier Office 365 comme adresse de secours.
+3. Dans la section **Détails du contact** , sélectionnez Modifier. Mettez à jour votre adresse de messagerie mobile, de téléphone et de secours. Assurez-vous que vous utilisez un autre adresse de messagerie Microsoft pour votre adresse de messagerie de secours.
 
     > [!IMPORTANT]
     > L’adresse de messagerie de secours et le numéro de téléphone mobile sont nécessaires pour réinitialiser votre mot de passe d’administrateur (et non le mot de passe d’administrateur de votre ordinateur).
@@ -49,6 +49,6 @@ Utilisez la page **informations personnelles** pour modifier votre nom, votre nu
   
 Pour trouver des réponses aux questions ayant trait à la facturation, voir :
   
-- [Modifier vos adresses de facturation pour Office 365 pour les entreprises](../../commerce/billing-and-payments/change-your-billing-addresses.md)
+- [Modifier vos adresses de facturation pour Microsoft 365 pour les entreprises](../../commerce/billing-and-payments/change-your-billing-addresses.md)
 
-- [Ajouter, mettre à jour ou supprimer une carte bancaire ou un compte bancaire dans Office 365 pour les entreprises](../../commerce/billing-and-payments/add-update-or-remove-credit-card-or-bank-account.md)
+- [Ajouter, mettre à jour ou supprimer une carte bancaire ou un compte bancaire dans Microsoft 365 pour les entreprises](../../commerce/billing-and-payments/add-update-or-remove-credit-card-or-bank-account.md)

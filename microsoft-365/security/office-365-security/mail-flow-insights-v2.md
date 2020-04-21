@@ -11,16 +11,16 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: beb6acaa-6016-4d54-ba7e-3d6d035e2b46
 description: Les administrateurs peuvent en savoir plus sur le tableau de bord de flux de messagerie dans le centre de sécurité & conformité.
-ms.openlocfilehash: 792fb07c1faae54696354619347d1eb5367d45b2
-ms.sourcegitcommit: a7b2cd892cb65a61ee246268e1af2f8b9e526f6b
+ms.openlocfilehash: 64bf1f2af967f841cd4c21be19fce914df136815
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "43081435"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43630466"
 ---
 # <a name="mail-flow-insights-in-the-security--compliance-center"></a>Informations sur le flux de messagerie dans le centre de sécurité et conformité
 
-Les administrateurs peuvent utiliser le tableau de bord de flux de messagerie dans le centre de sécurité & conformité pour découvrir des tendances, des informations et prendre des mesures pour résoudre les problèmes liés au flux de messagerie dans leur organisation Office 365.
+Les administrateurs peuvent utiliser le tableau de bord de flux de messagerie dans le centre de sécurité & conformité pour découvrir des tendances, des informations et prendre des mesures pour résoudre les problèmes liés au flux de messagerie au sein de leur organisation.
 
 Les informations, les rapports et les widgets disponibles dans le tableau de bord du flux de messagerie sont les suivants :
 
@@ -50,9 +50,9 @@ Les informations, les rapports et les widgets disponibles dans le tableau de bor
 
 Le tableau de bord de flux de messagerie est disponible pour :
 
-- Membres du rôle d' **administrateur général Office 365** .
+- Membres du rôle d' **administrateur général** .
 
-- Membres du rôle d' **administrateur Exchange 365 Office** .
+- Membres du rôle **administrateur Exchange** .
 
 - Membres du **rôle administrateur de flux de messagerie** dans le centre de sécurité & conformité. Si ce rôle est attribué de manière explicite à un utilisateur qui n’est pas membre des rôles administrateur général ou administrateur Exchange :
 
@@ -60,11 +60,11 @@ Le tableau de bord de flux de messagerie est disponible pour :
 
   - L’utilisateur disposera uniquement de l’autorisation lecture seule sur le tableau de bord du flux de messagerie.
 
-  - L’utilisateur n’a pas accès au portail d’administration d’Office 365.
+  - L’utilisateur n’a pas accès au centre d’administration Microsoft 365.
 
-Pour plus d’informations sur le rôle d’administrateur général Office 365, voir [à propos des rôles d’administrateur office 365](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles).
+Pour plus d’informations sur le rôle d’administrateur général, voir [à propos des rôles d’administrateur Microsoft 365](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles).
 
-Pour plus d’informations sur l’attribution de rôles de centre de sécurité & de conformité aux utilisateurs, consultez [la rubrique accorder aux utilisateurs l’accès au centre de sécurité & conformité Office 365](grant-access-to-the-security-and-compliance-center.md).
+Pour plus d’informations sur l’attribution de rôles de centre de sécurité & de conformité aux utilisateurs, consultez [la rubrique accorder aux utilisateurs l’accès au centre de sécurité & conformité](grant-access-to-the-security-and-compliance-center.md).
 
 ## <a name="where-to-find-the-mail-flow-dashboard"></a>Où trouver le tableau de bord de flux de messagerie ?
 
@@ -72,4 +72,4 @@ Pour plus d’informations sur l’attribution de rôles de centre de sécurité
 
 2. Développez **flux de messagerie** , puis sélectionnez **tableau de bord**.
 
-   ![Tableau de bord de flux de messagerie dans le centre de conformité & Office 365 Security](../../media/mail-flow-dashboard-v2.png)
+   ![Tableau de bord de flux de messagerie dans le centre de sécurité & conformité](../../media/mail-flow-dashboard-v2.png)

@@ -1,5 +1,5 @@
 ---
-title: Réinitialiser les mots de passe professionnels Office 365
+title: Réinitialiser les mots de passe
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -25,15 +25,15 @@ search.appverid:
 - BEA160
 - GEA150
 ms.assetid: 7a5d073b-7fae-4aa5-8f96-9ecd041aba9c
-description: 'Découvrez comment réinitialiser le mot de passe d’un utilisateur dans un abonnement Office 365 Business. '
-ms.openlocfilehash: a19999ceffa140343c079c6758cc831175c09ab1
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+description: 'Découvrez comment réinitialiser le mot de passe d’un utilisateur dans Microsoft 365 pour un abonnement professionnel. '
+ms.openlocfilehash: 0d8a68edb0b85094b271712f018eea79ca9f0aee
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42239348"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43626945"
 ---
-# <a name="reset-office-365-business-passwords"></a>Réinitialiser les mots de passe professionnels Office 365
+# <a name="reset-passwords"></a>Réinitialiser les mots de passe
 
 Regardez une courte vidéo sur la réinitialisation des mots de passe utilisateur.<br><br>
 
@@ -45,26 +45,26 @@ Si vous avez trouvé cette vidéo utile, consultez les [séries de formations co
 
 Nous vous recommandons vivement de configurer la réinitialisation du mot de passe libre-service. Ainsi, vous n'êtes pas tenu de réinitialiser manuellement les mots de passe de vos utilisateurs. Pour savoir comment procéder, voir [Autoriser les utilisateurs à réinitialiser leur mot de passe dans Office 365](let-users-reset-passwords.md).
   
-## <a name="reset-an-office-365-business-password-for-someone-else"></a>Réinitialiser le mot de passe Office 365 Business d'une autre personne
+## <a name="reset-a-business-password-for-someone-else"></a>Réinitialiser un mot de passe d’entreprise pour une autre personne
 
-Ces étapes s'adressent uniquement aux utilisateurs d'une offre Office 365 Business. Pour ce faire, vous devez vous connecter à l’aide de votre compte d’administrateur Microsoft 365. [Qu’est-ce qu’un compte administrateur ?](../admin-overview/admin-overview.md)
+Ces étapes sont destinées uniquement aux personnes qui utilisent un forfait Microsoft 365 pour les entreprises. Pour ce faire, vous devez vous connecter à l’aide de votre compte d’administrateur Microsoft 365. [Qu’est-ce qu’un compte administrateur ?](../admin-overview/admin-overview.md)
 
  
 ::: moniker range="o365-worldwide"
 
-1. Dans le Centre d’administration, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utilisateurs actifs</a>.
+1. Dans le Centre d’administration, accédez à la page **Utilisateurs >** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utilisateurs actifs</a>.
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. Dans le Centre d’administration, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Utilisateurs actifs</a>.
+1. Dans le Centre d’administration, accédez à la page **Utilisateurs >** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Utilisateurs actifs</a>.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. Dans le Centre d’administration, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Utilisateurs actifs</a>.
+1. Dans le Centre d’administration, accédez à la page **Utilisateurs >** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Utilisateurs actifs</a>.
 
 ::: moniker-end
 
@@ -75,11 +75,11 @@ Ces étapes s'adressent uniquement aux utilisateurs d'une offre Office 365 Busin
 4. Entrez une adresse de messagerie à laquelle l’utilisateur peut accéder afin qu’il reçoive le nouveau mot de passe et de le suivre pour s’assurer qu’il a reçu le nouveau mot de passe.
  
   
-## <a name="reset-my-office-365-tenant-admin-password"></a>Réinitialiser mon mot de passe d’administrateur client Office 365
+## <a name="reset-my-admin-password"></a>Réinitialiser mon mot de passe d’administrateur
 
-Suivez ces étapes si vous avez oublié votre mot de passe, mais que vous êtes en mesure de vous connecter à Office 365 car, par exemple, votre mot de passe est enregistré dans votre navigateur : 
+Suivez ces étapes si vous avez oublié votre mot de passe, mais que vous êtes en mesure de vous connecter à Microsoft 365 car, par exemple, votre mot de passe est enregistré dans votre navigateur : 
     
-1. Dans Office 365, sélectionnez **paramètres** \> **Office 365** \> **informations personnelles**. 
+1. Dans Microsoft 365, sélectionnez **paramètres** \> **Office 365** \> **informations personnelles**. 
           
 2. Vérifiez que les coordonnées de votre **contact** et de votre **courrier de secours** sont correctes. Si ce n’est pas le cas, modifiez-les maintenant. 
         
@@ -95,12 +95,12 @@ Si vous avez oublié votre mot de passe et que vous ne parvenez pas à vous conn
     
 - Ou, [appelez le support Microsoft](https://support.office.com/article/contact-support-for-business-products-admin-help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b?ui=en-US&amp;rs=en-US&amp;ad=US#ID0EAADAAA=Phone_support_). 
     
-## <a name="reset-all-office-365-business-passwords-for-everyone-in-your-organization-at-the-same-time"></a>Réinitialiser tous les mots de passe Office 365 Business pour tous les membres de votre organisation en même temps
+## <a name="reset-all-business-passwords-for-everyone-in-your-organization-at-the-same-time"></a>Réinitialiser tous les mots de passe d’entreprise pour tous les membres de votre organisation en même temps
 <a name="bkmk_forgot"> </a>
 
 Ces étapes s'appliquent à une entreprise comptant des dizaines d'utilisateurs. Si votre entreprise compte des centaines voire des milliers d'utilisateurs, reportez-vous à la section suivante concernant la réinitialisation de mots de passe en bloc.
   
-1. Dans le Centre d’administration, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utilisateurs actifs</a>.
+1. Dans le Centre d’administration, accédez à la page **Utilisateurs >** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utilisateurs actifs</a>.
     
 2. Sélectionnez l’option en regard de **nom d’affichage** pour sélectionner tout le monde dans votre entreprise. Désélectionnez votre nom. Vous ne pouvez pas réinitialiser votre propre mot de passe en même temps que vous réinitialisez le mot de passe de tous les autres utilisateurs.
     
@@ -112,14 +112,14 @@ Ces étapes s'appliquent à une entreprise comptant des dizaines d'utilisateurs.
     
 
   
-## <a name="reset-office-365-business-passwords-in-bulk"></a>Réinitialiser les mots de passe Office 365 Business en même temps
+## <a name="reset-business-passwords-in-bulk"></a>Réinitialiser les mots de passe professionnels en bloc
 <a name="bkmk_forgot"> </a>
 
 Utilisez PowerShell. Lisez ce billet rédigé par Eyal Doron : [Gestion des mots de passe avec PowerShell](https://go.microsoft.com/fwlink/?linkid=853696).
   
 Voici un article connexe : [Définir les mots de passe de plusieurs comptes d'utilisateurs](https://support.office.com/article/014fc912-bee1-461d-ad00-56b80428b907.aspx#bkmk_password).
   
-Pour plus d'informations, voir [PowerShell pour les administrateurs Office 365](https://support.office.com/article/40fdcbd4-c34f-42ab-8678-8b3751137ef1.aspx).
+Pour plus d’informations, reportez-vous à [PowerShell pour les administrateurs Microsoft 365](https://support.office.com/article/40fdcbd4-c34f-42ab-8678-8b3751137ef1.aspx).
   
 ## <a name="force-a-password-change-for-all-users-in-your-business"></a>Forcer la modification du mot de passe de tous les utilisateurs au sein de votre entreprise
 <a name="bkmk_forgot"> </a>
@@ -134,14 +134,14 @@ Essayez cet article : [J'ai oublié le nom d'utilisateur ou le mot de passe du c
 ## <a name="related-articles"></a>Articles connexes
 <a name="bkmk_forgot"> </a>
   
-[Autoriser les utilisateurs à réinitialiser leur mot de passe dans Office 365](let-users-reset-passwords.md)
+[Autoriser les utilisateurs à réinitialiser leur mot de passe](let-users-reset-passwords.md)
 
 [Définir le mot de passe d'un utilisateur de façon à ce qu'il n'expire jamais](set-password-to-never-expire.md)
 
 [Définir la stratégie d'expiration des mots de passe pour votre organisation](../manage/set-password-expiration-policy.md)
 
-[Restaurer un utilisateur dans Office 365](restore-user.md)
+[Restaurer un utilisateur](restore-user.md)
 
-[Supprimer un ancien employé d'Office 365](remove-former-employee.md)
+[Supprimer un ancien employé](remove-former-employee.md)
 
-[Vidéos de formation Microsoft 365 Entreprise](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[Vidéos de formation Microsoft 365 pour les entreprises](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

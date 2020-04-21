@@ -19,25 +19,25 @@ search.appverid:
 - MOE150
 ms.assetid: 9f7c2ff2-af65-4557-8840-0b84ce96d9bc
 description: Apprenez à définir vos launguage préférés dans le centre de messages pour convertir automatiquement des billets.
-ms.openlocfilehash: 795907354f0128bd82d6305dc72b1dc31233bbc4
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 27391ca133eda39f533863452e87649c36ac0a7d
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42252832"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43628171"
 ---
 # <a name="language-translation-for-message-center-posts"></a>Traduction pour les publications du Centre de messagerie
 
-[] Les publications du Centre de messages sont uniquement rédigées en anglais en raison de l'opportunité des informations que nous publions, mais peuvent s'afficher automatiquement dans la langue spécifiée dans vos paramètres linguistiques personnels pour Office 365. Si vous définissez votre langue préférée sur une langue autre que l'anglais, le Centre de messages comprendra une option vous permettant de traduire automatiquement les publications. Les messages seront traduits automatiquement dans la langue de votre choix par un ordinateur. Cette option détermine l'affichage par défaut, mais vous pouvez également utiliser le menu déroulant pour traduire et afficher les publications dans n'importe quelle langue que nous prenons en charge pour la traduction. Si vous sélectionnez l'anglais, nous rétablirons la version anglaise d'origine du message.
+Les publications du centre de messages sont rédigées en anglais uniquement en raison de la chronologie des informations que nous publions, mais elles peuvent être automatiquement affichées dans la langue spécifiée par vos paramètres de langue personnelle pour Microsoft 365. Si vous définissez votre langue préférée sur une langue autre que l'anglais, le Centre de messages comprendra une option vous permettant de traduire automatiquement les publications. Les messages seront traduits automatiquement dans la langue de votre choix par un ordinateur. Cette option détermine l'affichage par défaut, mais vous pouvez également utiliser le menu déroulant pour traduire et afficher les publications dans n'importe quelle langue que nous prenons en charge pour la traduction. Si vous sélectionnez l'anglais, nous rétablirons la version anglaise d'origine du message.
   
 > [!IMPORTANT]
-> Avant de pouvoir choisir vos paramètres de langue pour le Centre de messages, vous devez définir la langue par défaut pour Office 365. Aucune option de traduction ne s'affiche si la langue définie est l'anglais. Vous ne pouvez pas spécifier une langue par défaut pour d'autres personnes. Chaque utilisateur doit modifier ce paramètre lui-même. 
+> Pour pouvoir choisir vos paramètres de langue pour le centre de messages, vous devez définir la langue de votre choix. Aucune option de traduction n’est affichée lorsque votre langue est définie sur anglais. Vous ne pouvez pas spécifier une langue préférée pour les autres utilisateurs, chaque personne doit modifier ce paramètre pour eux-mêmes. 
   
 ## <a name="set-your-preferred-language"></a>Définir votre langue préférée
 
 1. À partir du centre d’administration ou de la page d’accueil de Microsoft 365, sélectionnez l’icône Paramètres dans le coin supérieur droit de la fenêtre.
   
-2. Sous **langue et fuseau horaire**, sélectionnez **Afficher tout** pour afficher les options disponibles. Sélectionnez la langue de votre choix dans le menu déroulant, puis sélectionnez **Enregistrer**. Office 365 tentera alors d'actualiser et d'afficher la nouvelle langue. Si cela n'est pas immédiat ou semble prendre trop de temps, vous pouvez actualiser votre navigateur ou vous déconnecter, puis vous reconnecter.
+2. Sous **langue et fuseau horaire**, sélectionnez **Afficher tout** pour afficher les options disponibles. Sélectionnez la langue de votre choix dans le menu déroulant, puis sélectionnez **Enregistrer**. Microsoft 365 essaiera d’actualiser et d’afficher la nouvelle langue. Si cela n'est pas immédiat ou semble prendre trop de temps, vous pouvez actualiser votre navigateur ou vous déconnecter, puis vous reconnecter.
   
 ## <a name="machine-translation-in-message-center"></a>Traduction automatique dans le Centre de messages
 

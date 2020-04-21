@@ -19,16 +19,16 @@ search.appverid:
 - MOE150
 ms.assetid: 2e155154-bc66-48cc-8476-ab558c97115a
 description: Découvrez comment configurer un compte de messagerie dans Outlook pour Windows et Mac, et pour savoir comment installer les applications Office et accéder aux courriers électroniques en ligne.
-ms.openlocfilehash: f5be456c845381a07c380e4d480e03a39c42f0ed
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 6f256a9b528c5ee51490007f388b8d3bd5a92f02
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42361235"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627787"
 ---
 # <a name="set-up-outlook-to-read-email"></a>Configurer Outlook pour lire le courrier électronique
 
-Votre abonnement Office 365 est fourni avec un Outlook basé sur le Web, mais si votre abonnement inclut des applications clientes Office, vous obtiendrez également Outlook que vous pouvez installer sur votre ordinateur ou vos appareils personnels.
+Votre abonnement Microsoft 365 est fourni avec un Outlook basé sur le Web, mais si votre abonnement inclut les applications clientes Office, vous obtiendrez également Outlook que vous pouvez installer sur votre ordinateur ou vos appareils personnels.
   
 ## <a name="set-up-an-email-account-in-outlook"></a>Configurer un compte de messagerie dans Outlook
 
@@ -62,15 +62,15 @@ Lire [l’article complet](https://support.office.com/article/6e27792a-9267-4aa4
   
 ## <a name="how-do-i-access-my-mail-online"></a>Comment puis-je accéder à mon messagerie en ligne ?
 
-Une fois connecté à Office 365, sélectionnez **Outlook**.
+Une fois que vous êtes connecté à Microsoft 365, sélectionnez **Outlook**.
   
-![Page d’accueil Office 365 avec l’application Outlook mise en surbrillance](../../media/3ceee838-9d85-4af3-95a6-fbcee11036f4.png)
+![Page d’accueil de Microsoft 365 avec l’application Outlook mise en surbrillance](../../media/3ceee838-9d85-4af3-95a6-fbcee11036f4.png)
   
-Vous ne trouvez pas l’application que vous cherchez ? Dans le Lanceur d’applications, sélectionnez **Toutes les applications** pour afficher une liste alphabétique des applications Office 365 disponibles. À partir de là, vous pouvez rechercher une application spécifique. 
+Vous ne trouvez pas l'application que vous cherchez ? Dans le lanceur d’applications, sélectionnez **toutes les applications** pour afficher une liste alphabétique des applications Microsoft 365 disponibles. À partir de là, vous pouvez rechercher une application spécifique. 
   
 ## <a name="how-do-i-know-if-my-subscription-includes-office-apps"></a>Comment savoir si mon abonnement inclut les applications Office ?
 
-Office 365 Business Premium et Office 365 Business incluent les applications Office. Pour plus d’informations, consultez la rubrique [offres office 365 business plans](https://go.microsoft.com/fwlink/p/?LinkId=723731)ou [Office 365 Enterprise plans](https://go.microsoft.com/fwlink/p/?LinkId=800029).
+Microsoft 365 Business standard et Microsoft 365 apps pour les entreprises incluent les applications Office. Pour plus d’informations, consultez les offres [Microsoft 365 pour les entreprises](https://go.microsoft.com/fwlink/p/?LinkId=723731)ou [Office 365 Enterprise plans](https://go.microsoft.com/fwlink/p/?LinkId=800029).
   
 ## <a name="how-do-i-determine-what-subscription-i-have"></a>Comment puis-je déterminer l’abonnement dont j’ai besoin ?
 

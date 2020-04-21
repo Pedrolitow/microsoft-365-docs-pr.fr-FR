@@ -1,5 +1,5 @@
 ---
-title: Acheter un nom de domaine dans Office 365
+title: Acheter un nom de domaine
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -20,16 +20,16 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: 1561140a-16a9-4a02-822d-a989250e479d
-description: Découvrez comment acheter un nom de domaine dans Office 365.
+description: Découvrez comment acheter un nom de domaine dans Microsoft 365.
 ms.custom: okr_smb
-ms.openlocfilehash: 89bc24683cd98d2c9f420d1470a864eef857c9b4
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+ms.openlocfilehash: 3df4ec9014e2e65288cb30fd9203db4a11708369
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43211145"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43628589"
 ---
-# <a name="buy-a-domain-name-in-office-365"></a>Acheter un nom de domaine dans Office 365
+# <a name="buy-a-domain-name"></a>Acheter un nom de domaine
 
  *Pour ajouter, modifier ou supprimer des domaines, vous **devez** être **administrateur général** d’un [plan d’entreprise ou d’entreprise](https://products.office.com/business/office). Ces modifications affectent l’ensemble du client, les *administrateurs personnalisés* ou *les utilisateurs réguliers* ne peuvent pas effectuer ces modifications.*  
 
@@ -93,17 +93,17 @@ Demandez le transfert auprès du bureau d'enregistrement vers lequel vous voulez
 
 Si vous ne possédez pas encore votre propre domaine, vous pouvez facilement en acquérir un en ligne, auprès d'un bureau d'enregistrement de noms de domaine, d'un revendeur de domaines ou même de votre fournisseur Internet actuel. Vous obtenez un nom de domaine lorsque vous vous inscrivez à Office 365 géré par 21Vianet (par exemple, contoso.partner.onmschina.cn). Mais vous souhaiterez peut-être utiliser un nom de domaine personnalisé, comme fourthcoffee.com.
   
-Pour configurer un domaine dans Office 365, vous devez être propriétaire d'un domaine et en modifier certains des enregistrements DNS.
+Pour configurer un domaine dans Microsoft 365, vous devez posséder un domaine et modifier certains des enregistrements DNS pour votre domaine.
   
 > [!CAUTION]
-> Certains domaines ou fournisseurs d'hébergement DNS n'autorisent pas la création de tous les enregistrements DNS requis par Office 365. Les fournisseurs d'hébergement répertoriés ici prennent en charge tous les enregistrements nécessaires. Si vous envisagez d'utiliser un autre fournisseur d'hébergement, [Service limitations when your hosting provider does not support SRV, CNAME, TXT, or redirection](https://support.office.com/article/dfbb03e3-08c1-4c4e-b2f0-891665b29b77). 
+> Certains registraires de domaine ou fournisseurs d’hébergement DNS n’autorisent pas la création de tous les enregistrements DNS requis par Microsoft 365. Les fournisseurs d'hébergement répertoriés ici prennent en charge tous les enregistrements nécessaires. Si vous envisagez d'utiliser un autre fournisseur d'hébergement, [Service limitations when your hosting provider does not support SRV, CNAME, TXT, or redirection](https://support.office.com/article/dfbb03e3-08c1-4c4e-b2f0-891665b29b77). 
   
-Une fois votre domaine enregistré (auprès d'un bureau d'enregistrement), vous pouvez vous connecter à Office 365 en tant qu'administrateur et configurer votre domaine de manière à pouvoir l'utiliser avec votre adresse de courrier et d'autres services.
+Après avoir enregistré votre domaine (au niveau d’un bureau d’enregistrement de domaines), vous vous connectez à Microsoft 365 en tant qu’administrateur et vous configurez votre domaine de sorte que vous puissiez l’utiliser avec votre adresse de messagerie et d’autres services..
   
 > [!NOTE]
-> The SharePoint Online Public Website information in this article only applies if your organization purchased Office 365 prior to March 9, 2015. 
+> Les informations du site Web public SharePoint Online dans cet article s’appliquent uniquement si votre organisation a acheté Microsoft 365 avant le 9 mars 2015. 
 
-## <a name="domain-registrars-that-support-all-dns-records-required-for-office-365"></a>Bureaux d'enregistrement qui prennent en charge tous les enregistrements DNS requis pour Office 365
+## <a name="domain-registrars-that-support-all-dns-records-required-for-microsoft-365"></a>Bureaux d’enregistrement de domaine qui prennent en charge tous les enregistrements DNS requis pour Microsoft 365
 
 - [Oray](https://oray.com/)
     
@@ -117,10 +117,10 @@ Une fois votre domaine enregistré (auprès d'un bureau d'enregistrement), vous 
 
 ## <a name="related-articles"></a>Articles connexes
 
-[Ajouter un domaine à Office 365](../setup/add-domain.md)
+[Ajouter un domaine à Microsoft 365](../setup/add-domain.md)
 
 [Foire aux questions domaines](../setup/domains-faq.md)
 
-[Obtenir de l’aide sur les domaines Office 365](get-help-with-domains.md)
+[Obtenir de l’aide sur les domaines](get-help-with-domains.md)
 
-[Mettre à jour les enregistrements DNS pour conserver votre site Web avec votre fournisseur d’hébergement actuel](https://docs.microsoft.com/microsoft-365/admin/dns/update-dns-records-to-retain-current-hosting-provider) 
+[Mettez à jour les enregistrements DNS pour conserver votre site Web avec votre fournisseur d’hébergement actuel](https://docs.microsoft.com/microsoft-365/admin/dns/update-dns-records-to-retain-current-hosting-provider).

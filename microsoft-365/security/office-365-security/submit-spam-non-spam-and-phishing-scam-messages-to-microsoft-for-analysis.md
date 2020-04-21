@@ -16,17 +16,17 @@ ms.assetid: dad30e2f-93fe-4d21-9a36-21c87ced85c1
 ms.collection:
 - M365-security-compliance
 description: 'Vous et vos utilisateurs pouvez soumettre des messages indésirables faux positifs et faux positifs à Microsoft pour analyse. '
-ms.openlocfilehash: 77807f710743d98dc2e1564f804b6a67add67def
-ms.sourcegitcommit: 9ed3283dd6dd959faeca5c22613f9126261b9590
+ms.openlocfilehash: f6dbd808fac54ae273c21773bf8caeabce09b7fb
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43529048"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631240"
 ---
 # <a name="manually-submit-messages-to-microsoft-for-analysis"></a>Envoi manuel de messages à Microsoft pour analyse
 
 > [!NOTE]
-> Si vous êtes administrateur d’une organisation Office 365 avec des boîtes aux lettres Exchange Online, nous vous recommandons d’utiliser le portail d’envoi du centre de sécurité & de la sécurité Office 365. Pour plus d’informations, consultez la rubrique [utiliser la soumission de l’administrateur pour envoyer des courriers indésirables, des hameçons, des URL et des fichiers à Microsoft](admin-submission.md).
+> Si vous êtes administrateur d’une organisation Microsoft 365 avec des boîtes aux lettres Exchange Online, nous vous recommandons d’utiliser le portail d’envoi du centre de sécurité & conformité. Pour plus d’informations, consultez la rubrique [utiliser la soumission de l’administrateur pour envoyer des courriers indésirables, des hameçons, des URL et des fichiers à Microsoft](admin-submission.md).
 
 Il peut être frustrant lorsque les utilisateurs de votre organisation reçoivent des courriers indésirables (spam) ou des messages de hameçonnage dans leur boîte de réception, ou s’ils ne reçoivent pas de message électronique légitime, car il est marqué comme courrier indésirable. Nous ajustons constamment les filtres de courrier indésirable pour qu’ils soient plus précis.
 
@@ -81,7 +81,7 @@ Si un message a été identifié de manière incorrecte comme courrier indésira
 
 Vous pouvez créer une règle de flux de messagerie (également appelée règle de transport) qui recherche les messages électroniques envoyés à Microsoft à l’aide des méthodes décrites dans cette rubrique, et vous pouvez configurer les destinataires CCI de sorte qu’ils reçoivent des copies de ces messages signalés.
 
-Vous pouvez créer la règle de flux de messagerie dans le centre d’administration Exchange et PowerShell (les clients Exchange Online PowerShell pour Office 365 ; Exchange Online Protection PowerShell pour les clients EOP autonomes).
+Vous pouvez créer la règle de flux de messagerie dans le centre d’administration Exchange et PowerShell (Exchange Online PowerShell pour les clients Microsoft 365 ; Exchange Online Protection PowerShell pour les clients EOP autonomes).
 
 ### <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu'il faut savoir avant de commencer
 

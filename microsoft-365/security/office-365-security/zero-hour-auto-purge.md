@@ -18,25 +18,25 @@ search.appverid:
 ms.assetid: 96deb75f-64e8-4c10-b570-84c99c674e15
 ms.collection:
 - M365-security-compliance
-description: La purge automatique à zéro heure (ZAP) est une fonctionnalité de protection de messagerie dans Office 365 qui détecte les courriers indésirables, les programmes malveillants ou les messages de hameçonnage qui ont déjà été remis à Exchange Online. Le mode de fonctionnement de ZAP dépend du type de contenu malveillant détecté.
-ms.openlocfilehash: 44bdab5d37863bc543d953a89ac3129b3530437d
-ms.sourcegitcommit: d767c288ae34431fb046f4cfe36cec485881385f
+description: La purge automatique à zéro heure (ZAP) est une fonctionnalité de protection de la messagerie électronique dans Microsoft 365 qui détecte les courriers indésirables, les programmes malveillants ou les messages de hameçonnage qui ont déjà été remis à Exchange Online. Le mode de fonctionnement de ZAP dépend du type de contenu malveillant détecté.
+ms.openlocfilehash: a819269d8596f12e76cbd17b5d1302cd56837f14
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "43516772"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43630808"
 ---
-# <a name="zero-hour-auto-purge-zap---protection-against-spam-and-malware-in-office-365"></a>Purge automatique à zéro heure (ZAP)-protection contre le courrier indésirable et les programmes malveillants dans Office 365
+# <a name="zero-hour-auto-purge-zap---protection-against-spam-and-malware-in-microsoft-365"></a>Purge automatique à zéro heure (ZAP)-protection contre le courrier indésirable et les programmes malveillants dans Microsoft 365
 
 ## <a name="overview"></a>Vue d’ensemble
 
-La suppression automatique de zéro heure (ZAP) est une fonctionnalité de protection de messagerie dans Office 365 qui détecte rétroactivement et neutralise les messages malveillants, de courrier indésirable, de courrier indésirable ou de programmes malveillants qui ont déjà été remis aux boîtes aux lettres Exchange Online.
+La suppression automatique de zéro heure (ZAP) est une fonctionnalité de protection de la messagerie électronique dans Microsoft 365 qui détecte rétroactivement et neutralise les messages malveillants, de courrier indésirable, de courrier indésirable ou de programmes malveillants qui ont déjà été remis à des boîtes aux lettres Exchange Online.
 
-ZAP est disponible avec le service Exchange Online Protection (EOP) par défaut fourni avec tout abonnement Office 365 qui contient des boîtes aux lettres Exchange Online. ZAP ne fonctionne pas dans les environnements EOP autonomes qui protègent les boîtes aux lettres Exchange locales.
+ZAP est disponible avec le service Exchange Online Protection (EOP) par défaut fourni avec tout abonnement Microsoft 365 qui contient des boîtes aux lettres Exchange Online. ZAP ne fonctionne pas dans les environnements EOP autonomes qui protègent les boîtes aux lettres Exchange locales.
 
 ## <a name="how-zap-works"></a>Fonctionnement de l’ZAP
 
-Office 365 met à jour quotidiennement les signatures de courrier indésirable et de programmes malveillants en temps réel. Toutefois, les utilisateurs peuvent toujours recevoir des messages malveillants pour diverses raisons, notamment si le contenu est arme après remise aux utilisateurs. ZAP résout ce problème en surveillant en continu les mises à jour des signatures Office 365 courrier indésirable et anti-programme malveillant. ZAP peut rechercher et supprimer des messages qui se trouvent déjà dans la boîte aux lettres d’un utilisateur.
+Microsoft 365 met à jour quotidiennement les signatures de courrier indésirable et de programmes malveillants en temps réel. Toutefois, les utilisateurs peuvent toujours recevoir des messages malveillants pour diverses raisons, notamment si le contenu est arme après remise aux utilisateurs. ZAP résout ce problème en surveillant en continu les mises à jour des signatures de Microsfot 365 courrier indésirable et anti-programme malveillant. ZAP peut rechercher et supprimer des messages qui se trouvent déjà dans la boîte aux lettres d’un utilisateur.
 
 L’action ZAP est transparente pour l’utilisateur ; ils ne sont pas avertis si un message est détecté et déplacé.
 
@@ -46,7 +46,7 @@ Les [listes des expéditeurs approuvés](create-safe-sender-lists-in-office-365.
 
 Pour les **messages lus ou non lus** qui contiennent des programmes malveillants après la remise, ZAP met en quarantaine le message qui contient la pièce jointe de programmes malveillants. Seuls les administrateurs peuvent afficher et gérer les messages malveillants en quarantaine.
 
-Le programme de protection contre les programmes malveillants est activé par défaut dans les stratégies anti-programme malveillant. Pour plus d’informations, consultez la rubrique [configure anti-malware Policies in Office 365](configure-anti-malware-policies.md).
+Le programme de protection contre les programmes malveillants est activé par défaut dans les stratégies anti-programme malveillant. Pour plus d’informations, consultez la rubrique [configure anti-malware Policies in Microsoft 365](configure-anti-malware-policies.md).
 
 ### <a name="phish-zap"></a>Hameçon ZAP
 
@@ -54,13 +54,13 @@ Pour les **messages lus ou non lus** identifiés comme hameçons après la remis
 
 - **Ajouter un en-tête X**, ajouter une **ligne d’objet avec du texte**: zap n’effectue aucune action sur le message.
 
-- **Déplacer le message vers le courrier indésirable**: zap déplace le message vers le dossier courrier indésirable, dans la mesure où la règle de courrier indésirable est activée dans la boîte aux lettres (elle est activée par défaut). Pour plus d’informations, voir [Configurer les paramètres du courrier indésirable sur les boîtes aux lettres Exchange Online dans Office 365](configure-junk-email-settings-on-exo-mailboxes.md).
+- **Déplacer le message vers le courrier indésirable**: zap déplace le message vers le dossier courrier indésirable, dans la mesure où la règle de courrier indésirable est activée dans la boîte aux lettres (elle est activée par défaut). Pour plus d’informations, consultez la rubrique [configurer les paramètres du courrier indésirable sur les boîtes aux lettres Exchange Online dans Microsoft 365](configure-junk-email-settings-on-exo-mailboxes.md).
 
 - **Rediriger le message vers l’adresse de messagerie**, **supprimer le message**, **mettre en quarantaine**le message : zap met en quarantaine le message. Seuls les administrateurs peuvent afficher et gérer les messages hameçons mis en quarantaine.
 
 Par défaut, le logiciel de hameçonnage ZAP est activé dans les stratégies de blocage du courrier indésirable et l’action par défaut pour le verdict du filtrage du **courrier d’hameçonnage** est **mise en quarantaine**, ce qui signifie que le hameçonnage zap met en quarantaine le message par défaut.
 
-Pour plus d’informations sur la configuration des règles de filtrage du courrier indésirable, consultez la rubrique [configurer des stratégies anti-courrier indésirable dans Office 365](configure-your-spam-filter-policies.md).
+Pour plus d’informations sur la configuration des règles de filtrage du courrier indésirable, consultez la rubrique [configurer des stratégies anti-courrier indésirable dans Microsoft 365](configure-your-spam-filter-policies.md).
 
 ### <a name="spam-zap"></a>Blocage du courrier indésirable
 
@@ -68,13 +68,13 @@ Pour les **messages non lus** identifiés comme du courrier indésirable après 
 
 - **Ajouter un en-tête X**, ajouter une **ligne d’objet avec du texte**: zap n’effectue aucune action sur le message.
 
-- **Déplacer le message vers le courrier indésirable**: zap déplace le message vers le dossier courrier indésirable, dans la mesure où la règle de courrier indésirable est activée dans la boîte aux lettres (elle est activée par défaut). Pour plus d’informations, voir [Configurer les paramètres du courrier indésirable sur les boîtes aux lettres Exchange Online dans Office 365](configure-junk-email-settings-on-exo-mailboxes.md).
+- **Déplacer le message vers le courrier indésirable**: zap déplace le message vers le dossier courrier indésirable, dans la mesure où la règle de courrier indésirable est activée dans la boîte aux lettres (elle est activée par défaut). Pour plus d’informations, consultez la rubrique [configurer les paramètres du courrier indésirable sur les boîtes aux lettres Exchange Online dans Microsoft 365](configure-junk-email-settings-on-exo-mailboxes.md).
 
 - **Rediriger le message vers l’adresse de messagerie**, **supprimer le message**, **mettre en quarantaine**le message : zap met en quarantaine le message. Les utilisateurs finaux peuvent afficher et gérer leurs propres messages de courrier indésirable mis en quarantaine.
 
 Par défaut, le logiciel de détection de courrier indésirable est activé dans les stratégies de blocage du courrier indésirable et l’action par défaut pour le filtrage du **courrier** indésirable est **déplacer le message vers le dossier courrier indésirable**, ce qui signifie que le courrier indésirable déplace les messages **non lus** dans le dossier courrier indésirable
 
-Pour plus d’informations sur la configuration des règles de filtrage du courrier indésirable, consultez la rubrique [configurer des stratégies anti-courrier indésirable dans Office 365](configure-your-spam-filter-policies.md).
+Pour plus d’informations sur la configuration des règles de filtrage du courrier indésirable, consultez la rubrique [configurer des stratégies anti-courrier indésirable dans Microsoft 365](configure-your-spam-filter-policies.md).
 
 ### <a name="zap-considerations-for-office-365-advanced-threat-protection-atp"></a>Considérations sur l’ZAP pour Office 365 protection avancée contre les menaces (ATP)
 
@@ -90,7 +90,7 @@ Pour déterminer si l’élément ZAP a déplacé votre message, vous pouvez uti
 
 A : vous devez suivre le processus de création de rapports normal pour les [faux positifs](report-junk-email-messages-to-microsoft.md). La seule raison pour laquelle le message est déplacé de la boîte de réception vers le dossier courrier indésirable est que le service a déterminé que le message était du courrier indésirable ou malveillant.
 
-### <a name="q-what-if-i-use-the-office-365-quarantine-instead-of-the-junk-mail-folder"></a>Q : que se passe-t-il si j’utilise la mise en quarantaine Office 365 au lieu du dossier courrier indésirable ?
+### <a name="q-what-if-i-use-the-quarantine-folder-instead-of-the-junk-mail-folder"></a>Q : que se passe-t-il si j’utilise le dossier de quarantaine au lieu du dossier courrier indésirable ?
 
 Un : ZAP effectue une action sur un message en fonction de la configuration de vos stratégies anti-courrier indésirable, comme décrit plus haut dans cette rubrique.
 

@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 ROBOTS: NOINDEX, NOFOLLOW
 description: Vue d’ensemble du score de productivité Microsoft.
-ms.openlocfilehash: 06c1bb5d5e5edfd21fa9224846d584cbe6678d07
-ms.sourcegitcommit: d767c288ae34431fb046f4cfe36cec485881385f
+ms.openlocfilehash: 3e85ef40513593b7fcd66269671128c1233d10f9
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "43516864"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627751"
 ---
 # <a name="microsoft-productivity-score-preview"></a>Score de productivité Microsoft (aperçu)
 
@@ -39,7 +39,7 @@ Le score et les informations sont présents dans deux catégories :
 
 - **Expérience technologique** (bientôt disponible) : vous aide à optimiser les expériences des appareils, telles que la correction proactive des problèmes courants du service d’assistance et l’amélioration des temps de démarrage des PC et de votre réseau pour garantir le bon fonctionnement de vos applications.  
 
-## <a name="how-it-works"></a>Mode de fonctionnement
+## <a name="how-it-works"></a>Fonctionnement
 
 ### <a name="areas-of-scoring"></a>Zones de notation 
 
@@ -64,7 +64,7 @@ Votre score est mis à jour quotidiennement et reflète les actions de l’utili
 
 ## <a name="access-and-required-permissions"></a>Autorisations d’accès et requises 
 
-Pour l’expérience de l’employé, vous devez disposer d’un abonnement à un plan Office 365 pour les entreprises ou à un plan d’entreprise Microsoft 365 avec plusieurs utilisateurs. 
+Pour l’expérience de l’employé, vous devez disposer d’un abonnement à un forfait Microsoft 365 pour les entreprises avec plusieurs utilisateurs. 
 
 Pour avoir l’autorisation d’accéder à la note de productivité Microsoft, vous devez disposer des rôles suivants : 
 
@@ -136,7 +136,7 @@ Les types de fichiers pris en compte pour la collaboration sont Word/Excel/Power
 
 ![Page de travail n’importe où.](../../media/psflexibility.png)
 
-La page Working Anywhere quantifie les utilisateurs (sous la forme d’un pourcentage et de la valeur absolue) qui ont utilisé au moins une application de productivité sur deux ou plusieurs plateformes, qui sont des ordinateurs de bureau, des appareils mobiles et des sites Web. Les utilisateurs bénéficient d’un score plus élevé pour l’utilisation de plusieurs applications et plateformes. Les applications prises en compte sont Outlook, teams, Word, Excel, PowerPoint, OneNote, Yammer, Skype. La base du Insight est les utilisateurs activés pour Office 365 ProPlus, Exchange, Yammer, Skype ou Teams.
+La page Working Anywhere quantifie les utilisateurs (sous la forme d’un pourcentage et de la valeur absolue) qui ont utilisé au moins une application de productivité sur deux ou plusieurs plateformes, qui sont des ordinateurs de bureau, des appareils mobiles et des sites Web. Les utilisateurs bénéficient d’un score plus élevé pour l’utilisation de plusieurs applications et plateformes. Les applications prises en compte sont Outlook, teams, Word, Excel, PowerPoint, OneNote, Yammer, Skype. La base du Insight est l’activation des utilisateurs pour les applications Microsoft 365 pour Enterprise, Exchange, Yammer, Skype ou Teams.
 
 1. **Pourquoi elle** fournit un résumé de la recherche de la relation entre plusieurs plateformes et une meilleure productivité. **Lisez la recherche de Forrester** sur un article de recherche qui fournit davantage de contexte sur le fonctionnement de l’ensemble de la productivité.
 1. La prise en charge de la fonction de **courrier électronique n'** est pas quantifiée du nombre d’utilisateurs de votre organisation à l’aide d’Outlook sur les plateformes de base des utilisateurs actifs sur Outlook.

@@ -16,21 +16,21 @@ ms.assetid: 0cbaccf8-4afc-47e3-a36d-a84598a55fb8
 ms.collection:
 - M365-security-compliance
 description: Les administrateurs peuvent apprendre à configurer leur environnement Exchange local pour acheminer le courrier indésirable vers les dossiers de courrier indésirable des utilisateurs locaux s’ils utilisent Exchange Online Protection (EOP) autonome dans des environnements hybrides.
-ms.openlocfilehash: 8a3887d1cc7390e75b7708d2167372e976923e01
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: f2964324c6d9104719fc79ff31f14b4b94c627cc
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42893717"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43621281"
 ---
 # <a name="configure-standalone-eop-to-deliver-spam-to-the-junk-email-folder-in-hybrid-environments"></a>Configurer EOP autonome pour envoyer du courrier indésirable dans le dossier courrier indésirable dans des environnements hybrides
 
 > [!IMPORTANT]
-> Cette rubrique s’utilise uniquement pour les clients EOP autonomes dans les environnements hybrides. Cette rubrique ne s’applique pas aux clients Office 365 avec des boîtes aux lettres Exchange Online.
+> Cette rubrique s’utilise uniquement pour les clients EOP autonomes dans les environnements hybrides. Cette rubrique ne s’applique pas aux clients Microsoft 365 avec des boîtes aux lettres Exchange Online.
 
-Si vous êtes un client Exchange Online Protection (EOP) autonome dans un environnement hybride, vous devez configurer votre organisation Exchange locale pour qu’elle reconnaisse et traduise les verdicts de filtrage du courrier indésirable d’EOP, de sorte que la règle de courrier indésirable dans la boîte aux lettres locale peut déplacer des messages vers le dossier courrier indésirable.
+Si vous êtes un client Exchange Online Protection (EOP) autonome dans un environnement hybride, vous devez configurer votre organisation Exchange locale pour qu’elle reconnaisse et traduise les verdicts de filtrage du courrier indésirable d’EOP, de sorte que la règle de courrier indésirable dans la boîte aux lettres locale puisse déplacer des messages vers le dossier courrier indésirable.
 
-Plus précisément, vous devez créer des règles de flux de messagerie (également appelées règles de transport) dans votre organisation Exchange locale avec des conditions qui recherchent les messages avec l’un des en-têtes et valeurs de blocage du courrier indésirable EOP suivants, ainsi que les actions qui définissent le niveau de probabilité de courrier indésirable ( SCL) de ces messages à 6 :
+Plus précisément, vous devez créer des règles de flux de messagerie (également appelées règles de transport) dans votre organisation Exchange locale avec des conditions qui recherchent les messages avec l’un des en-têtes et valeurs de blocage du courrier indésirable EOP suivants, ainsi que les actions qui définissent le seuil de probabilité de courrier indésirable (SCL) de ces messages à 6 :
 
 - `X-Forefront-Antispam-Report: SFV:SPM`(message marqué comme courrier indésirable par le filtrage du courrier indésirable)
 
@@ -139,7 +139,7 @@ Pour vérifier que vous avez bien configuré EOP autonome pour envoyer du courri
   Get-TransportRule -Identity "<RuleName>" | Format-List
   ```
 
-- Dans un système de messagerie externe **qui n’analyse pas les messages sortants pour le courrier indésirable**, envoie un test générique pour le message de courrier en masse non sollicité (GTUBE) à un destinataire affecté et confirme qu’il est remis dans son dossier de courrier indésirable. Un message GTUBE est similaire au fichier texte de l’Institut antivirus européen de recherche (EICAR) pour tester les paramètres de programmes malveillants.
+- Dans un système de messagerie externe **qui n’analyse pas les messages sortants pour le courrier indésirable**, envoie un test générique pour le message de courrier en masse non sollicité (GTUBE) à un destinataire affecté et confirme qu’il est remis dans son dossier de courrier indésirable. Un message GTUBE est semblable au fichier texte EICAR (European Institute for Computer Virus Research) pour tester les paramètres des programmes malveillants.
 
   Pour envoyer un message GTUBE, incluez le texte suivant dans le corps d’un message électronique sur une seule ligne, sans espaces ni sauts de ligne :
 

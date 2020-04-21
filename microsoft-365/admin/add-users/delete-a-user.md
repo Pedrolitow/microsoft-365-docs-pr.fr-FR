@@ -23,22 +23,22 @@ search.appverid:
 - GEA150
 ms.assetid: d5155593-3bac-4d8d-9d8b-f4513a81479e
 description: Découvrez comment supprimer un compte d’utilisateur. Déterminez ce qu’il convient de faire avec le courrier électronique de l’utilisateur, le contenu OneDrive, et s’il faut conserver la licence de produit ou cesser de le payer.
-ms.openlocfilehash: 59d06a075b5badeda410b4b25d60fa135b9ce5f7
-ms.sourcegitcommit: a955324e33097bbd2fc4ad7f2b8d1f3d87bc8580
+ms.openlocfilehash: 1d529627841c648684c8a9fe217a761b29749150
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/21/2020
-ms.locfileid: "43608118"
+ms.locfileid: "43617247"
 ---
 # <a name="delete-a-user-from-your-organization"></a>Supprimer un utilisateur de votre organisation
   
 ||
 |:-----|
-|**Vous recherchez comment supprimer votre *propre* compte d’utilisateur Office 365 que vous utilisez au travail ou à l’école ? Contactez le support technique de votre entreprise ou de votre Université pour effectuer ces étapes pour vous.**|
+|**Vous recherchez comment supprimer votre *propre* compte d’utilisateur Microsoft 365 que vous utilisez au travail ou à l’école ? Contactez le support technique de votre entreprise ou de votre Université pour effectuer ces étapes pour vous.**|
    
 ## <a name="what-you-need-to-know-about-deleting-users"></a>Ce que vous devez savoir sur la suppression des utilisateurs
 
-- Seules les personnes qui ont des autorisations Gestion des utilisateurs ou [Administrateur général Office 365](about-admin-roles.md) pour l'entreprise ou l'établissement scolaire peuvent supprimer des comptes utilisateur. 
+- Seules les personnes disposant des autorisations d' [administrateur général Microsoft 365](about-admin-roles.md) ou de gestion des utilisateurs de l’entreprise ou de l’établissement scolaire peuvent supprimer des comptes d’utilisateur. 
     
 - Vous disposez de 30 jours pour [restaurer](restore-user.md) le compte avant que les données de l'utilisateur ne soient définitivement supprimées. 
     
@@ -46,7 +46,7 @@ ms.locfileid: "43608118"
     
 - Si vous souhaitez conserver les courriers de l'utilisateur, **AVANT** de supprimer le compte, déplacez les courriers vers un autre emplacement. Si vous avez déjà supprimé le compte depuis moins de 30 jours, vous pouvez le restaurer, déplacer les courriers, puis supprimer le compte. Voir [Accéder aux données d'un ancien utilisateur et les sauvegarder](get-access-to-and-back-up-a-former-user-s-data.md).
     
-- Si vous disposez d’un abonnement Enterprise comme Office 365 entreprise E3, vous pouvez conserver les données de boîte aux lettres d’un compte d’utilisateur Office 365 supprimé en le convertissant en *boîte aux lettres inactive*. Pour en savoir plus, voir [Gestion des boîtes aux lettres inactives dans Exchange Online](https://docs.microsoft.com/microsoft-365/compliance/inactive-mailboxes-in-office-365).
+- Si vous disposez d’un abonnement Enterprise comme Office 365 entreprise E3, vous pouvez conserver les données de boîte aux lettres d’un compte d’utilisateur supprimé en le transformant en *boîte aux lettres inactive*. Pour en savoir plus, voir [Gestion des boîtes aux lettres inactives dans Exchange Online](https://docs.microsoft.com/microsoft-365/compliance/inactive-mailboxes-in-office-365).
 
 
 ## <a name="global-admin-delete-a-user-stop-paying-for-their-license-and-choose-what-to-do-with-their-email-and-onedrive-content"></a>Administrateur général : supprimez un utilisateur, arrêtez le paiement de sa licence, puis choisissez ce qu’il faut faire avec sa messagerie électronique et son contenu OneDrive
@@ -176,13 +176,13 @@ Voici les problèmes les plus fréquemment rencontrés lors de la suppression d�
   
 - **Un message d'erreur du type « Nous ne pouvons pas supprimer l'utilisateur. Merci de réessayer plus tard. » apparaît.** Vérifiez si le transfert du courrier a été configuré sur le compte ou si le compte a été converti en boîte aux lettres partagée. Ces deux situations peuvent être à l'origine de cette erreur. Ne supprimez pas le compte s’il a été transféré vers une boîte aux lettres partagée.
 
-- **Vous n'avez pas les autorisations appropriées pour supprimer un utilisateur**. Seules les personnes qui sont des administrateurs [globaux Office 365 ou des administrateurs de gestion](about-admin-roles.md) des utilisateurs peuvent supprimer des utilisateurs. Il s'agit généralement du support technique de votre établissement scolaire ou de votre entreprise.
+- **Vous n'avez pas les autorisations appropriées pour supprimer un utilisateur**. Seules les personnes qui sont des administrateurs [globaux Microsoft 365 ou des administrateurs de gestion](about-admin-roles.md) des utilisateurs peuvent supprimer des utilisateurs. Il s'agit généralement du support technique de votre établissement scolaire ou de votre entreprise.
 
 - **Lorsque vous supprimez l'utilisateur, son nom apparaît toujours dans votre carnet d'adresses global**. Cela se produit lorsqu'une entreprise utilise Active Directory. Vous devez supprimer le compte utilisateur dans Active Directory. Pour obtenir des instructions, consultez l'article TechNet suivant : [Supprimer un compte utilisateur.](https://go.microsoft.com/fwlink/p/?linkid=841808)
 
 ||
 |:-----|
-|**Voulez-vous supprimer Office 365 de votre ordinateur ? Accédez à [Pour annuler votre abonnement](../../commerce/subscriptions/cancel-your-subscription.md).**|
+|**Voulez-vous supprimer Microsoft 365 de votre ordinateur ? Accédez à [annuler votre abonnement](../../commerce/subscriptions/cancel-your-subscription.md).**|
    
 ## <a name="related-articles"></a>Articles connexes
 

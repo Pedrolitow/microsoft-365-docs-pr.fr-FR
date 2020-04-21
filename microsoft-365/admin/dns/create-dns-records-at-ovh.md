@@ -1,5 +1,5 @@
 ---
-title: Créer des enregistrements DNS sur OVH pour Office 365
+title: Créer des enregistrements DNS sur OVH pour Microsoft
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -19,15 +19,15 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 5176feef-36dc-4d84-842f-1f2b5a21ba96
-description: Découvrez comment vérifier votre domaine et configurer les enregistrements DNS pour la messagerie, Skype entreprise Online et d’autres services sur OVH pour Office 365.
-ms.openlocfilehash: 3ba4e61c875f74a0a6cf76c8b7cd82ea88e0221b
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+description: Découvrez comment vérifier votre domaine et configurer les enregistrements DNS pour la messagerie, Skype entreprise Online et d’autres services sur OVH pour Microsoft.
+ms.openlocfilehash: 01c455f54a7ee2efc6114dba1c01170b97ea5f71
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43211109"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43629286"
 ---
-# <a name="create-dns-records-at-ovh-for-office-365"></a>Créer des enregistrements DNS sur OVH pour Office 365
+# <a name="create-dns-records-at-ovh-for-microsoft"></a>Créer des enregistrements DNS sur OVH pour Microsoft
 
 [Consultez les Forums aux questions sur les domaines](../setup/domains-faq.md) si vous ne trouvez pas ce que vous recherchez. 
   
@@ -35,19 +35,19 @@ Si OVH est votre fournisseur d’hébergement DNS, suivez la procédure décrite
   
 Voici les principaux enregistrements à ajouter. 
   
-- [Créer des enregistrements DNS sur OVH pour Office 365](#create-dns-records-at-ovh-for-office-365)
+- [Créer des enregistrements DNS sur OVH pour Microsoft](#create-dns-records-at-ovh-for-microsoft)
     
-- [Ajouter un enregistrement MX afin que les courriers électroniques pour votre domaine soient transférés vers Office 365](#add-an-mx-record-so-email-for-your-domain-will-come-to-office-365)
+- [Ajouter un enregistrement MX afin que les courriers électroniques pour votre domaine soient envoyés à Microsoft](#add-an-mx-record-so-email-for-your-domain-will-come-to-microsoft)
     
-- [Ajouter les enregistrements CNAME requis pour Office 365](#add-the-cname-records-that-are-required-for-office-365)
+- [Ajouter les enregistrements CNAMe requis pour Microsoft](#add-the-cname-records-that-are-required-for-microsoft)
     
 - [Ajouter un enregistrement TXT pour SPF afin d'éviter le courrier indésirable](#add-a-txt-record-for-spf-to-help-prevent-email-spam)
     
-- [Ajouter les 2 enregistrements SRV requis pour Office 365](#add-the-two-srv-records-that-are-required-for-office-365)
+- [Ajouter les deux enregistrements SRV requis pour Microsoft](#add-the-two-srv-records-that-are-required-for-microsoft)
     
-Une fois ces enregistrements ajoutés sur OVH, votre domaine est configuré pour utiliser les services Office 365.
+Une fois ces enregistrements ajoutés sur OVH, votre domaine est configuré pour utiliser les services Microsoft.
   
-Pour en savoir plus sur l'hébergement web et le DNS pour les sites web avec Office 365, voir [Utiliser un site web public avec Office 365](https://support.office.com/article/a8178510-501d-4bd8-9921-b04f2e9517a5.aspx).
+Pour en savoir plus sur l’hébergement Web et le DNS pour les sites Web avec Microsoft, consultez [la rubrique utiliser un site Web public avec Microsoft](https://support.office.com/article/a8178510-501d-4bd8-9921-b04f2e9517a5.aspx).
   
 > [!NOTE]
 >  L'application des enregistrements DNS modifiés prend généralement 15 minutes. Il peut toutefois arriver que la répercussion d'une modification dans le système DNS sur Internet prenne davantage de temps. Si vous rencontrez des problèmes avec le flux de messages ou d'autres problèmes suite à l'ajout des enregistrements DNS, voir [Résolution des problèmes suite à la modification de votre nom de domaine ou des enregistrements DNS](../get-help-with-domains/find-and-fix-issues.md). 
@@ -55,7 +55,7 @@ Pour en savoir plus sur l'hébergement web et le DNS pour les sites web avec Off
 ## <a name="add-a-txt-record-for-verification"></a>Ajouter un enregistrement TXT à des fins de vérification
 <a name="bkmk_txt"> </a>
 
-Avant d'utiliser votre domaine avec Office 365, nous devons vérifier que celui-ci vous appartient. Votre capacité à vous connecter à votre compte auprès de votre bureau d'enregistrement de domaines et à créer l'enregistrement DNS montre à Office 365 que le domaine vous appartient réellement.
+Avant d’utiliser votre domaine avec Microsoft, vous devez vous assurer que vous en êtes propriétaire. Votre capacité à vous connecter à votre compte auprès de votre bureau d’enregistrement de domaines et à créer l’enregistrement DNS prouve à Microsoft que vous êtes propriétaire du domaine.
   
 > [!NOTE]
 > Cet enregistrement sert uniquement à vérifier que vous êtes propriétaire du domaine. Vous pouvez éventuellement le supprimer ultérieurement. 
@@ -84,7 +84,7 @@ Avant d'utiliser votre domaine avec Office 365, nous devons vérifier que celui-
     
     |**Type d'enregistrement**|**Sous-domaine**|**TTL (Durée de vie)**|**Value (Valeur)**|
     |:-----|:-----|:-----|:-----|
-    |TXT  <br/> |(Laisser vide)  <br/> |3600 (secondes)  <br/> |MS = msxxxxxxxx  <br/> **Remarque :** il s'agit d'un exemple. Utilisez votre valeur **Adresse de destination ou de pointage** spécifique ici, à partir du tableau dans Office 365.           [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md)          |
+    |TXT  <br/> |(Laisser vide)  <br/> |3600 (secondes)  <br/> |MS = msxxxxxxxx  <br/> **Remarque :** il s'agit d'un exemple. Utilisez votre **adresse de destination ou de pointage** spécifique ici, à partir du tableau.           [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md)          |
    
 7. Sélectionnez **confirmer**. 
     
@@ -92,9 +92,9 @@ Avant d'utiliser votre domaine avec Office 365, nous devons vérifier que celui-
   
 8. Patientez quelques minutes, le temps que l'enregistrement que vous venez de créer soit mis à jour sur Internet.
     
-L’enregistrement étant désormais ajouté sur le site de votre bureau d’enregistrement de domaines, revenez à Office 365 et demandez à Office 365 de rechercher l’enregistrement.
+À présent que vous avez ajouté l’enregistrement sur le site de votre bureau d’enregistrement de domaines, vous allez revenir à Microsoft et demander l’enregistrement.
   
-Lorsqu’Office 365 trouve l’enregistrement TXT approprié, votre domaine est vérifié.
+Lorsque Microsoft trouve l’enregistrement TXT correct, votre domaine est vérifié.
   
 1. Dans le centre d’administration, accédez à la page **Paramètres** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domaines</a>.
     
@@ -113,7 +113,7 @@ Lorsqu’Office 365 trouve l’enregistrement TXT approprié, votre domaine est
 > [!NOTE]
 >  L'application des enregistrements DNS modifiés prend généralement 15 minutes. Il peut toutefois arriver que la répercussion d'une modification dans le système DNS sur Internet prenne davantage de temps. Si vous rencontrez des problèmes avec le flux de messages ou d'autres problèmes suite à l'ajout des enregistrements DNS, voir [Résolution des problèmes suite à la modification de votre nom de domaine ou des enregistrements DNS](../get-help-with-domains/find-and-fix-issues.md). 
   
-## <a name="add-an-mx-record-so-email-for-your-domain-will-come-to-office-365"></a>Ajouter un enregistrement MX afin que les courriers électroniques pour votre domaine soient transférés vers Office 365
+## <a name="add-an-mx-record-so-email-for-your-domain-will-come-to-microsoft"></a>Ajouter un enregistrement MX afin que les courriers électroniques pour votre domaine soient envoyés à Microsoft
 <a name="bkmk_mx"> </a>
 
 1. Pour commencer, accédez à la page de vos domaines dans OVH à l’aide de [ce lien](https://www.ovh.com/manager/). You'll be prompted to log in.
@@ -143,7 +143,7 @@ Lorsqu’Office 365 trouve l’enregistrement TXT approprié, votre domaine est
   
     |**Type d'enregistrement**|**Sous-domaine**|**TTL (Durée de vie)**|**Priority (Priorité)**|**Target (Cible)**|
     |:-----|:-----|:-----|:-----|:-----|
-    |MX  <br/> |(Laisser vide)  <br/> |3600 (secondes)  <br/> |10   <br/> Pour plus d'informations sur la priorité, voir [Qu'est-ce que la priorité MX ?](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx). <br/> |\<Key\>. mail.protection.Outlook.com.  <br/> **Remarque :** Obtenez votre * \<clé\> de domaine* à partir de votre compte Office 365.  [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md)  |
+    |MX  <br/> |(Laisser vide)  <br/> |3600 (secondes)  <br/> |10   <br/> Pour plus d'informations sur la priorité, voir [Qu'est-ce que la priorité MX ?](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx). <br/> |\<Key\>. mail.protection.Outlook.com.  <br/> **Remarque :** Obtenir votre * \<clé\> de domaine* à partir de votre compte Microsoft.  [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md)  |
    
     ![Enregistrement MX OVH pour le courrier électronique](../../media/6e2f5655-93e2-4620-8f19-c452e7edf8f0.png)
   
@@ -161,7 +161,7 @@ Lorsqu’Office 365 trouve l’enregistrement TXT approprié, votre domaine est
   
 10. Sélectionnez **confirmer**.
     
-## <a name="add-the-cname-records-that-are-required-for-office-365"></a>Ajouter les enregistrements CNAME requis pour Office 365
+## <a name="add-the-cname-records-that-are-required-for-microsoft"></a>Ajouter les enregistrements CNAMe requis pour Microsoft
 <a name="bkmk_cname"> </a>
 
 1. Pour commencer, accédez à la page de vos domaines dans OVH à l’aide de [ce lien](https://www.ovh.com/manager/). You'll be prompted to log in.
@@ -212,7 +212,7 @@ Lorsqu’Office 365 trouve l’enregistrement TXT approprié, votre domaine est
 <a name="bkmk_spf"> </a>
 
 > [!IMPORTANT]
-> Vous ne pouvez avoir qu’un enregistrement TXT pour SPF pour un domaine. Si votre domaine comporte plusieurs enregistrements SPF, vous rencontrez des erreurs au niveau de la transmission du courrier électronique ainsi que des problèmes de remise du courrier et de classification en tant que courrier indésirable. If you already have an SPF record for your domain, don't create a new one for Office 365. Ajoutez plutôt les valeurs Office 365 requises à l'enregistrement actuel de manière à n'avoir qu'un  *seul*  enregistrement SPF qui inclut les deux ensembles de valeurs. 
+> Vous ne pouvez avoir qu’un enregistrement TXT pour SPF pour un domaine. Si votre domaine comporte plusieurs enregistrements SPF, vous rencontrez des erreurs au niveau de la transmission du courrier électronique ainsi que des problèmes de remise du courrier et de classification en tant que courrier indésirable. Si vous disposez déjà d’un enregistrement SPF pour votre domaine, n’en créez pas pour Microsoft. Ajoutez plutôt les valeurs Microsoft requises à l’enregistrement actuel afin de disposer d’un *seul* enregistrement SPF qui inclut les deux ensembles de valeurs. 
   
 1. Pour commencer, accédez à la page de vos domaines dans OVH à l’aide de [ce lien](https://www.ovh.com/manager/). You'll be prompted to log in.
     
@@ -248,7 +248,7 @@ Lorsqu’Office 365 trouve l’enregistrement TXT approprié, votre domaine est
     
     ![OVH ajouter un enregistrement TXT pour SPF et confirmer](../../media/649eefeb-3227-49e3-98a0-1ce19c42fa54.png)
   
-## <a name="add-the-two-srv-records-that-are-required-for-office-365"></a>Ajoutez les 2 enregistrements SRV requis pour Office 365
+## <a name="add-the-two-srv-records-that-are-required-for-microsoft"></a>Ajouter les deux enregistrements SRV requis pour Microsoft
 <a name="bkmk_srv"> </a>
 
 1. Pour commencer, accédez à la page de vos domaines dans OVH à l’aide de [ce lien](https://www.ovh.com/manager/). You'll be prompted to log in.

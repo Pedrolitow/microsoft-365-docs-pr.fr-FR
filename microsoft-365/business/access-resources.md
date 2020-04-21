@@ -1,5 +1,7 @@
 ---
 title: Accéder aux ressources locales à partir d’un appareil joint à Azure AD dans Microsoft 365 Business
+f1.keywords:
+- NOCSH
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -18,16 +20,16 @@ search.appverid:
 - MET150
 ms.assetid: b0f4d010-9fd1-44d0-9d20-fabad2cdbab5
 description: Découvrez comment accéder à des ressources locales telles que des applications métier, des partages de fichiers et des imprimantes à partir d’un appareil Azure Active Directory joint à Windows 10.
-ms.openlocfilehash: 89ac38f3da9cbdd3ff1a5eb33dc129d2e83521c7
-ms.sourcegitcommit: 8c244b38c43dd00c4ef0102f8bed02ab36639a6b
+ms.openlocfilehash: c1e04e5ca0d36c32a55a9819140356db5093e3a1
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39967160"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627451"
 ---
-# <a name="access-on-premises-resources-from-an-azure-ad-joined-device-in-microsoft-365-business"></a>Accéder aux ressources locales à partir d’un appareil joint à Azure AD dans Microsoft 365 Business
+# <a name="access-on-premises-resources-from-an-azure-ad-joined-device-in-microsoft-365-business-premium"></a>Accéder aux ressources locales à partir d’un appareil joint à Azure AD dans Microsoft 365 Business Premium
 
-Tout appareil Windows 10 qui est joint à Azure Active Directory a accès à toutes les ressources en nuage, telles que vos applications Office 365, et peut être protégé par Microsoft 365 Business. Vous pouvez également autoriser l’accès à des ressources locales telles que des applications métier, des partages de fichiers et des imprimantes. Pour autoriser l’accès, utilisez [Azure ad Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) pour synchroniser votre annuaire Active Directory local avec Azure Active Directory. 
+Tout appareil Windows 10 qui est joint à Azure Active Directory a accès à toutes les ressources en nuage, telles que vos applications Microsoft 365, et peut être protégé par Microsoft 365 Business Premium. Vous pouvez également autoriser l’accès à des ressources locales telles que des applications métier, des partages de fichiers et des imprimantes. Pour autoriser l’accès, utilisez [Azure ad Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) pour synchroniser votre annuaire Active Directory local avec Azure Active Directory. 
 
 Pour en savoir plus, consultez la rubrique [Présentation de la gestion des appareils dans Azure Active Directory](https://docs.microsoft.com/azure/active-directory/device-management-introduction).
 Les étapes sont également résumées dans les sections suivantes.
@@ -41,9 +43,9 @@ Procédez comme suit pour activer les appareils Azure AD joints de votre organis
   
 1. Pour synchroniser vos utilisateurs, groupes et contacts à partir d’Active Directory local avec Azure Active Directory, exécutez l’Assistant synchronisation d’annuaires et Azure AD Connect comme décrit dans [set up Directory Synchronization for Office 365](https://support.office.com/article/1b3b5318-6977-42ed-b5c7-96fa74b08846).
     
-2. Une fois la synchronisation d’annuaires terminée, assurez-vous que les appareils Windows 10 de votre organisation sont joints à Azure AD. Cette étape est effectuée individuellement sur chaque appareil Windows 10. Pour plus d’informations, consultez la rubrique [configurer des appareils Windows pour les utilisateurs professionnels de Microsoft 365](set-up-windows-devices.md) . 
+2. Une fois la synchronisation d’annuaires terminée, assurez-vous que les appareils Windows 10 de votre organisation sont joints à Azure AD. Cette étape est effectuée individuellement sur chaque appareil Windows 10. Pour plus d’informations, reportez-vous à la rubrique [configurer des appareils Windows pour les utilisateurs de Microsoft 365 Business Premium](set-up-windows-devices.md) . 
     
-3. Une fois que les appareils Windows 10 sont joints à Azure AD, chaque utilisateur doit redémarrer ses appareils et se connecter avec leurs informations d’identification d’entreprise Microsoft 365. Tous les périphériques ont désormais accès aux ressources locales également.
+3. Une fois que les appareils Windows 10 sont joints à Azure AD, chaque utilisateur doit redémarrer ses appareils et se connecter à l’aide de leurs informations d’identification Microsoft 365 Business Premium. Tous les périphériques ont désormais accès aux ressources locales également.
     
 Aucune étape supplémentaire n’est requise pour accéder aux ressources locales pour les appareils joints à Azure AD. Cette fonctionnalité est intégrée dans Windows 10. 
 

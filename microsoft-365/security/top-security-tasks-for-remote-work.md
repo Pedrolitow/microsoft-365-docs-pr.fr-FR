@@ -13,19 +13,19 @@ ms.collection:
 - M365-security-compliance
 - remotework
 description: 'Protégez votre courrier électronique et vos données professionnelles contre les menaces informatiques, notamment les ransomware, le hameçonnage et les pièces jointes malveillantes. '
-ms.openlocfilehash: d42760f0dbf38b72fe530a5670f3515bf3ba2f94
-ms.sourcegitcommit: 7bb340f6b47378bcd1c6e770dc975931470bbc26
+ms.openlocfilehash: 0730f4df4f6e9e72f024b35729909df309826625
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43225952"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43630796"
 ---
 # <a name="top-12-tasks-for-security-teams-to-support-working-from-home"></a>12 premières tâches pour les équipes de sécurité qui prennent en charge le travail à domicile
 
 Si vous êtes comme [Microsoft](https://www.microsoft.com/microsoft-365/blog/2020/03/10/staying-productive-while-working-remotely-with-microsoft-teams/) et que vous avez soudainement besoin de prendre en charge un personnel basé principalement sur la maison, nous souhaitons vous aider à garantir le bon fonctionnement de votre organisation. Cet article donne la priorité aux tâches pour aider les équipes de sécurité à implémenter les fonctionnalités de sécurité les plus importantes aussi rapidement que possible. 
 
 Si vous êtes une petite ou moyenne organisation à l’aide de l’un des plans d’entreprise de Microsoft, consultez plutôt ces ressources :
-- [10 principales méthodes pour sécuriser les offres Office 365 et Microsoft 365 Entreprise](../admin/security-and-compliance/secure-your-business-data.md) 
+- [10 façons de sécuriser Office 365 et Microsoft 365 pour les offres professionnelles](../admin/security-and-compliance/secure-your-business-data.md) 
 - [Microsoft 365 pour les campagnes](https://docs.microsoft.com/microsoft-365/campaigns/?view=o365-worldwide) (inclut une configuration de sécurité recommandée pour Microsoft 365 Business)
 
   
@@ -36,7 +36,7 @@ Pour les clients qui utilisent nos plans d’entreprise, Microsoft vous recomman
 ||**Tâche**| Tous les plans Office 365 Enterprise|**Microsoft 365 E3** |**Microsoft 365 E5**|
 |:-----|:-----|:-----|:-----|:-----|
 |0,1      |[Activer l’authentification multifacteur Azure](#1-enable-azure-multi-factor-authentication-mfa)   |   ![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)  |![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)   | ![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)      | 
-|n°2     | [Se protéger contre les menaces dans Office 365](#2-protect-against-threats-in-office-365) |![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png) |  ![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)       | ![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)       | 
+|n°2     | [Se protéger contre les menaces](#2-protect-against-threats) |![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png) |  ![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)       | ![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)       | 
 |3      |  [Configurer la protection avancée contre les menaces Office 365](#3-configure-office-365-advanced-threat-protection)  |   |      |  ![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)     | 
 |4       | [Configurer Azure Advanced Threat Protection (ATP)](#4-configure-azure-advanced-threat-protection)   |   |      |  ![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)     | 
 |5      |   [Activer la protection avancée contre les menaces Microsoft](#5-turn-on-microsoft-advanced-threat-protection)  |  |      | ![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)      | 
@@ -45,7 +45,7 @@ Pour les clients qui utilisent nos plans d’entreprise, Microsoft vous recomman
 |8       |  [Inscrire des PC dans la gestion des appareils et exiger des PC conformes](#8-enroll-pcs-into-device-management-and-require-compliant-pcs)   |  | ![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)        | ![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)        | 
 |9       | [Optimiser votre réseau pour la connectivité Cloud](#9-optimize-your-network-for-cloud-connectivity)  |  ![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png) |![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)      |![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)        | 
 |10    | [Former les utilisateurs](#10-train-users) |    ![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png) |![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)      |![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)      | 
-|a4 |[Prise en main de la sécurité des applications Cloud Microsoft](#11-get-started-with-microsoft-cloud-app-security) |   |![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)   |![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)   |
+|a4 |[Pris en main de Microsoft Cloud App Security](#11-get-started-with-microsoft-cloud-app-security) |![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)   |![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)   |![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)   |
 |12  |[Surveiller les menaces et prendre des mesures](#12-monitor-for-threats-and-take-action) |![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)   |![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)  |![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)  |
 | | | |
 
@@ -65,16 +65,16 @@ L’application de ces stratégies ne prend que quelques minutes, mais il est pr
 
 |Prévision  |Recommandation  |
 |---------|---------|
-|Plans Office 365 (sans Azure AD P1 ou P2)     |[Activer les paramètres de sécurité par défaut dans Azure ad](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults). Les paramètres de sécurité par défaut dans Azure AD incluent MFA pour les utilisateurs et les administrateurs.   |
+|Plans Microsoft 365 (sans Azure AD P1 ou P2)     |[Activer les paramètres de sécurité par défaut dans Azure ad](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults). Les paramètres de sécurité par défaut dans Azure AD incluent MFA pour les utilisateurs et les administrateurs.   |
 |Microsoft 365 E3 (avec Azure AD P1)     | Utilisez des [stratégies d’accès conditionnel courantes](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-policy-common) pour configurer les stratégies suivantes : <br>- [Exiger l’authentification multifacteur pour les administrateurs](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-admin-mfa) <br>- [Exiger l’authentification multifacteur pour tous les utilisateurs](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa) <br> - [Bloquer l’authentification héritée](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-block-legacy)       |
 |Microsoft 365 E5 (avec Azure AD P2)     | En tirant parti de Azure AD Identity Protection, commencez à implémenter l' [ensemble recommandé par Microsoft de l’accès conditionnel et des stratégies associées](../enterprise/identity-access-policies.md) en créant ces deux stratégies :<br> - [Exiger l’authentification multifacteur lorsque le risque de connexion est moyen ou élevé](../enterprise/identity-access-policies.md#require-mfa-based-on-sign-in-risk) <br>- [Bloquer les clients qui ne prennent pas en charge l’authentification moderne](../enterprise/identity-access-policies.md#block-clients-that-dont-support-modern-authentication)<br>- [Les utilisateurs à haut risque doivent changer leur mot de passe](../enterprise/identity-access-policies.md#high-risk-users-must-change-password)       |
 | | |
 
 
   
-## <a name="2-protect-against-threats-in-office-365"></a>2 : se protéger contre les menaces dans Office 365
+## <a name="2-protect-against-threats"></a>2 : se protéger contre les menaces
 
-Tous les plans Office 365 incluent diverses fonctionnalités de protection contre les menaces. La protection contre ces fonctionnalités ne prend que quelques minutes.
+Tous les plans Microsoft 365 incluent diverses fonctionnalités de protection contre les menaces. La protection contre ces fonctionnalités ne prend que quelques minutes.
 - Protection anti-programme malveillant
 - Protection contre les URL et les fichiers malveillants
 - Protection anti-hameçonnage
@@ -181,11 +181,11 @@ Certaines des protections traditionnellement fournies par le routage du trafic v
 
 
 Pour plus d’informations, reportez-vous à ces ressources sur docs :
-- [Vue d’ensemble : optimiser la connectivité Office 365 pour les utilisateurs distants à l’aide du tunneling VPN Split](https://docs.microsoft.com/Office365/Enterprise/office-365-vpn-split-tunnel)
+- [Vue d’ensemble : optimiser la connectivité pour les utilisateurs distants à l’aide du tunneling VPN Split](https://docs.microsoft.com/Office365/Enterprise/office-365-vpn-split-tunnel)
 - [Implémentation de la segmentation du tunnel par VPN pour Office 365](https://docs.microsoft.com/Office365/Enterprise/office-365-vpn-implement-split-tunnel)
 
 Articles de blog récents sur cette rubrique :
-- [Comment optimiser rapidement le trafic Office 365 pour le personnel à distance & réduire la charge sur votre infrastructure](https://techcommunity.microsoft.com/t5/office-365-blog/how-to-quickly-optimize-office-365-traffic-for-remote-staff-amp/ba-p/1214571#)
+- [Comment optimiser rapidement le trafic pour le personnel à distance & réduire la charge sur votre infrastructure](https://techcommunity.microsoft.com/t5/office-365-blog/how-to-quickly-optimize-office-365-traffic-for-remote-staff-amp/ba-p/1214571#)
 - [Autres méthodes pour les professionnels de la sécurité et pour obtenir des contrôles de sécurité modernes dans les scénarios de travail à distance d’aujourd’hui](https://www.microsoft.com/security/blog/2020/03/26/alternative-security-professionals-it-achieve-modern-security-controls-todays-unique-remote-work-scenarios/)
 
 

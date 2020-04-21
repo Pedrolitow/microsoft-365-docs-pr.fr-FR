@@ -1,5 +1,5 @@
 ---
-title: Choisir le domaine à utiliser lors de la création de groupes Office 365
+title: Choisir le domaine à utiliser lors de la création de groupes Microsoft 365
 ms.reviewer: arvaradh
 f1.keywords: NOCSH
 ms.author: mikeplum
@@ -18,21 +18,21 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 7cf5655d-e523-4bc3-a93b-3ccebf44a01a
-description: 'Découvrez comment choisir le domaine à utiliser lors de la création de groupes Office 365 en configurant des stratégies d’adresse de messagerie à l’aide de PowerShell. '
-ms.openlocfilehash: 8bca0e3c33d5cb523fc075d1d2d5b04b6506b256
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+description: 'Découvrez comment choisir le domaine à utiliser lors de la création de groupes Microsoft 365 en configurant des stratégies d’adresse de messagerie à l’aide de PowerShell. '
+ms.openlocfilehash: 1bc8a160ffc368bc4c66a5ac17ffcb203dc678f5
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42894644"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43630622"
 ---
-# <a name="choose-the-domain-to-use-when-creating-office-365-groups"></a>Choisir le domaine à utiliser lors de la création de groupes Office 365
+# <a name="choose-the-domain-to-use-when-creating-microsoft-365-groups"></a>Choisir le domaine à utiliser lors de la création de groupes Microsoft 365
 
- Certaines organisations utilisent des domaines de messagerie distincts pour segmenter différentes parties de leurs activités. Vous pouvez spécifier le domaine à utiliser par vos utilisateurs pour créer des groupes Office 365.
+ Certaines organisations utilisent des domaines de messagerie distincts pour segmenter différentes parties de leurs activités. Vous pouvez spécifier le domaine à utiliser lorsque vos utilisateurs créent des groupes Microsoft 365.
   
 Si votre organisation a besoin que les utilisateurs créent leurs groupes dans des domaines autres que le domaine accepté par défaut de votre entreprise, vous pouvez autoriser cela en configurant des stratégies d’adresse de messagerie (EAPs) à l’aide de PowerShell.
   
-Avant de pouvoir exécuter les applets de commande PowerShell, téléchargez et installez un module qui vous permettra de communiquer avec votre organisation Office 365. Consultez [connexion à Exchange Online à l’aide de Remote PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=785881).
+Avant de pouvoir exécuter les applets de commande PowerShell, téléchargez et installez un module qui vous permettra de communiquer avec votre organisation. Consultez [connexion à Exchange Online à l’aide de Remote PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=785881).
   
 ## <a name="example-scenarios"></a>Exemples de scénarios
 
@@ -51,7 +51,7 @@ Les deux scénarios suivants expliquent comment effectuer cette procédure.
   
 ### <a name="scenario-1"></a>Scénario 1
 
-L’exemple suivant montre comment mettre en service tous les groupes Office 365 de votre organisation dans le domaine groups.contoso.com.
+L’exemple suivant montre comment mettre en service tous les groupes Microsoft 365 de votre organisation dans le domaine groups.contoso.com.
   
 ```
 New-EmailAddressPolicy -Name Groups -IncludeUnifiedGroupRecipients -EnabledEmailAddressTemplates "SMTP:@groups.contoso.com" -Priority 1
@@ -59,7 +59,7 @@ New-EmailAddressPolicy -Name Groups -IncludeUnifiedGroupRecipients -EnabledEmail
 
 ### <a name="scenario-2"></a>Scénario 2
 
-Supposons que vous souhaitez contrôler les sous-domaines dans lesquels les groupes Office 365 sont créés. Vous souhaitez :
+Supposons que vous souhaitez contrôler les sous-domaines dans lesquels les groupes Microsoft 365 sont créés. Vous souhaitez :
   
 - Groupes créés par les étudiants (utilisateurs dont le **service** est défini sur les **étudiants**) dans le domaine students.groups.contoso.com. Utilisez la commande suivante :
     
@@ -102,7 +102,7 @@ La modification d’un protocole EAP n’a pas d’impact sur les groupes qui on
   
 ## <a name="hybrid-requirements"></a>Exigences hybrides
 
-Si votre organisation est configurée dans un scénario hybride, consultez [configurer les groupes office 365 avec l’environnement Exchange hybride local](https://go.microsoft.com/fwlink/p/?LinkId=785430) pour vous assurer que votre organisation remplit les conditions requises pour la création de groupes Office 365. 
+Si votre organisation est configurée dans un scénario hybride, consultez [configurer les groupes microsoft 365 avec l’environnement Exchange hybride local](https://go.microsoft.com/fwlink/p/?LinkId=785430) pour vous assurer que votre organisation remplit les conditions requises pour la création de groupes Microsoft 365. 
   
 ## <a name="additional-info-about-using-email-address-policies-groups"></a>Informations supplémentaires sur l’utilisation des groupes de stratégies d’adresse de messagerie :
 
@@ -122,4 +122,4 @@ Voici quelques éléments à prendre en compte :
     
 ## <a name="related-articles"></a>Articles connexes
 
-[Créer un groupe Office 365 dans le centre d’administration](create-groups.md)
+[Créer un groupe Microsoft 365 dans le centre d’administration](create-groups.md)

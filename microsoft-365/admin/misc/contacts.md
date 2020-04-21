@@ -20,12 +20,12 @@ search.appverid:
 ms.assetid: e64ceac2-ae62-4d29-a9ee-6aab9870ae2b
 ROBOTS: NOINDEX
 description: Découvrez comment créer des contacts dans le centre d’administration et gérer votre liste d’adresses globale.
-ms.openlocfilehash: 44bd7319a369da84b8855c5d640b2797a173689e
-ms.sourcegitcommit: fe4beef350ef9f39b1098755cff46fa2b8e7dc4d
+ms.openlocfilehash: fe402fd5d90147caa7c6ee2f3632749255c672b3
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2020
-ms.locfileid: "42857390"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627919"
 ---
 # <a name="quick-help-contacts"></a>Aide rapide : contacts
 
@@ -45,7 +45,7 @@ Mes contacts sont des contacts que vous créez pour vous-même et que vos utilis
   
 ## <a name="how-does-everyone-get-to-the-contacts-i-created-in-the-admin-center"></a>Comment les membres de l'organisation peuvent-ils accéder aux contacts que j'ai créés dans le centre d'administration ?
 
- Ils peuvent accéder à **personnes** dans Office 365, développer **répertoire** et sélectionner **tous les contacts**. Ils peuvent afficher chaque contact et leurs informations à partir de cet emplacement.
+ Ils peuvent accéder à **personnes** dans Microsoft 365, développer **répertoire** et sélectionner **tous les contacts**. Ils peuvent afficher chaque contact et leurs informations à partir de cet emplacement.
   
 ## <a name="can-anyone-create-and-edit-these-organizational-contacts"></a>Est-il possible de créer et modifier ces contacts de l'organisation ?
 
@@ -53,7 +53,7 @@ Non. Seuls les administrateurs **généraux** et **Exchange** peuvent créer, mo
   
 ## <a name="can-i-use-this-to-manage-my-business-clients"></a>Puis-je gérer mes clients professionnels à l'aide de cette fonctionnalité ?
 
-Vous pouvez utiliser les contacts Office 365 comme vous le souhaitez, mais il existe des limitations. En savoir plus sur [les autres méthodes de gestion des contacts](ways-to-manage-contacts.md)
+Vous pouvez utiliser les contacts Microsoft 365 comme vous le souhaitez, mais il existe des limitations. En savoir plus sur [les autres méthodes de gestion des contacts](ways-to-manage-contacts.md)
   
 ## <a name="how-do-i-bulk-import-organizational-contacts"></a>Comment importer en bloc des contacts professionnels ?
 
@@ -61,4 +61,4 @@ Utilisez Windows PowerShell et un fichier CSV (valeurs séparées par des virgul
   
 ## <a name="what-if-my-question-still-hasnt-been-answered"></a>Que se passe-t-il si personne n'a répondu à ma question ?
 
-Visitez le reste de notre [aide de l'administrateur](../admin-home.yml) ou faites nous part de vos commentaires ci-dessous.
+Visitez le reste de notre [aide de l'administrateur](../admin-home.md) ou faites nous part de vos commentaires ci-dessous.

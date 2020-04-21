@@ -22,16 +22,16 @@ search.appverid:
 - MOE150
 ms.assetid: 70a62f09-45ea-4968-8482-43cddfb8cc01
 description: Découvrez comment personnaliser, organiser et gérer votre site d’équipe.
-ms.openlocfilehash: b35064209f26ad8b312bdf486c1f9b9bcb1b3e58
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+ms.openlocfilehash: e3f2773e72a1b86cc3bae53ee6bbdbcb33d465b8
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43212208"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627617"
 ---
 # <a name="customize-your-team-site-for-file-storage-and-sharing"></a>Personnaliser votre site d’équipe pour le stockage et le partage de fichiers
 
-Si vous disposez d’une petite entreprise avec quelques employés, l’un des meilleurs moyens de configurer et de faciliter le partage de fichiers et la collaboration en ligne consiste à utiliser OneDrive et un site d’équipe SharePoint ensemble. Nous vous recommandons de créer un site d’équipe connecté à un groupe Office 365. Si vous souhaitez utiliser la conversation, vous pouvez créer ce site en créant une équipe dans Microsoft Teams. Pour plus d’informations sur Teams, voir [vidéo : qu’est-ce que Microsoft teams ?](https://support.office.com/article/b98d533f-118e-4bae-bf44-3df2470c2b12.aspx). Si vous ne souhaitez pas utiliser Teams, vous pouvez créer un site d’équipe à partir de la page d’accueil de SharePoint. 
+Si vous disposez d’une petite entreprise avec quelques employés, l’un des meilleurs moyens de configurer et de faciliter le partage de fichiers et la collaboration en ligne consiste à utiliser OneDrive et un site d’équipe SharePoint ensemble. Nous vous recommandons de créer un site d’équipe connecté à un groupe Microsoft 365. Si vous souhaitez utiliser la conversation, vous pouvez créer ce site en créant une équipe dans Microsoft Teams. Pour plus d’informations sur Teams, voir [vidéo : qu’est-ce que Microsoft teams ?](https://support.office.com/article/b98d533f-118e-4bae-bf44-3df2470c2b12.aspx). Si vous ne souhaitez pas utiliser Teams, vous pouvez créer un site d’équipe à partir de la page d’accueil de SharePoint. 
   
 [Qu'est-ce qu'un site d'équipe SharePoint ?](https://support.office.com/article/75545757-36c3-46a7-beed-0aaa74f0401e.aspx)
   
@@ -76,7 +76,7 @@ Pour plus d’informations sur l’expansion de vos listes avec davantage de col
   
 Si vous stockez un grand nombre de données dans une liste, voir [gérer les grandes listes et les bibliothèques dans SharePoint](https://support.office.com/article/B8588DAE-9387-48C2-9248-C24122F07C59.aspx).
   
-Visionnez une vidéo sur l’ajout de calendriers à votre site, voir [Create a Shared Calendar in Office 365](https://support.office.com/article/61B96006-70E2-4535-A34F-EE4FC772F798.aspx).
+Visionnez une vidéo sur l’ajout de calendriers à votre site, voir [Create a Shared Calendar](https://support.office.com/article/61B96006-70E2-4535-A34F-EE4FC772F798.aspx).
 
 ## <a name="organize-sites-into-hubs"></a>Organiser les sites en hubs
 
@@ -92,7 +92,7 @@ Pour savoir comment ajouter des sites à un site Hub, consultez la rubrique [ass
 
 Bien que le stockage et l’Organisation soient un début, le partage avec votre équipe et les clients externes est également important. Voici quelques liens vers des rubriques qui vous aideront à gérer les utilisateurs et à partager vos données. 
   
-Pour le partage de fichiers avec votre équipe, voir [partager des fichiers ou des dossiers SharePoint dans Office 365](https://support.office.com/article/1fe37332-0f9a-4719-970e-d2578da4941c.aspx).
+Pour le partage de fichiers avec votre équipe, voir [partager des fichiers ou des dossiers SharePoint dans Microsoft 365](https://support.office.com/article/1fe37332-0f9a-4719-970e-d2578da4941c.aspx).
   
 Pour comprendre le partage en dehors de votre équipe, consultez la rubrique [vue d’ensemble du partage externe](/sharepoint/external-sharing-overview).
   
@@ -102,7 +102,7 @@ Lors de la gestion de votre site d’équipe, vous devrez peut-être ajouter ou 
   
 Visionnez une vidéo sur des groupes avec les [groupes de connaissance et de gestion](https://support.office.com/article/9c1037b7-de0b-41cd-b8f0-79a95aac854d.aspx). 
   
-Pour ajouter des utilisateurs à un groupe Office 365, reportez-vous à la rubrique [Ajouter des utilisateurs individuellement ou en bloc à office 365-aide de l’administrateur](../add-users/add-users.md).
+Pour ajouter des utilisateurs à un groupe Microsoft 365, consultez la rubrique [Ajouter des utilisateurs individuellement ou en bloc à microsoft 365-aide de l’administrateur](../add-users/add-users.md).
   
 Découvrez comment gérer les demandes d’accès à l’aide de la [configuration et](https://support.office.com/article/94B26E0B-2822-49D4-929A-8455698654B3.aspx)de la gestion des demandes d’accès.
   
@@ -110,11 +110,11 @@ Découvrez comment gérer les demandes d’accès à l’aide de la [configurati
 
 - **Configurer les applications Office sur vos tablettes et téléphones**. Vous devez procéder à cette configuration pour pouvoir modifier les fichiers stockés sur votre site d'équipe à partir de votre tablette ou téléphone. Si vous n'installez pas les applications Office sur votre tablette ou téléphone, vous pouvez consulter les fichiers de votre site d'équipe, mais pas les modifier. 
     
-  - [Installer et configurer Office sur un appareil Android avec Office 365](https://support.office.com/article/cafe9d6f-8b0c-4b03-b20a-12438a82a22d.aspx)
+  - [Installer et configurer Office sur un Android avec Microsoft 365](https://support.office.com/article/cafe9d6f-8b0c-4b03-b20a-12438a82a22d.aspx)
     
-  - [Installer et configurer Office sur un iPhone ou un iPad avec Office 365](https://support.office.com/article/9df6d10c-7281-4671-8666-6ca8e339b628.aspx)
+  - [Installer et configurer Office sur un iPhone ou un iPad avec Microsoft 365](https://support.office.com/article/9df6d10c-7281-4671-8666-6ca8e339b628.aspx)
     
-  - [Configurer Office sur un téléphone Windows Phone avec Office 365](https://support.office.com/article/2b7c1b51-a717-45d6-90c9-ee1c1c5ee0b7.aspx)
+  - [Configurer Office sur Windows Phone avec Microsoft 365](https://support.office.com/article/2b7c1b51-a717-45d6-90c9-ee1c1c5ee0b7.aspx)
     
 - [En savoir plus sur l'utilisation de OneDrive](https://go.microsoft.com/fwlink/?LinkID=511458).
     

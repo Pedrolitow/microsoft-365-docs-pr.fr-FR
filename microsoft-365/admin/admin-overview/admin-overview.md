@@ -1,5 +1,5 @@
 ---
-title: Vue d'ensemble de l'administration Office 365
+title: Vue d’ensemble du centre d’administration
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -19,17 +19,17 @@ search.appverid:
 - MOE150
 ms.assetid: c7228a3e-061f-4575-b1ef-adf1d1669870
 description: 'Découvrez le centre d’administration Microsoft 365 : comment vous connecter, votre administrateur, et regarder une présentation vidéo à son sujet.'
-ms.openlocfilehash: 5f2727b582fcae2b4e001be1ec355747c96e9084
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 79c43c0f918c8d4793b02bea08aa092e3a5ef421
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42633462"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43623963"
 ---
-# <a name="office-365-admin-overview"></a>Vue d'ensemble de l'administration Office 365 
+# <a name="admin-center-overview"></a>Vue d’ensemble du centre d’administration 
 
   
-Lorsque vous achetez un plan d' [entreprise Office 365](https://go.microsoft.com/fwlink/?linkid=856886) ou un [forfait Microsoft 365 pour les entreprises](https://www.microsoft.com/microsoft-365/business), nous vous offrons un compte spécial qui dispose d’autorisations d’administrateur. Ce compte est appelé compte administrateur.
+Lorsque vous achetez un forfait [microsoft 365 apps pour les entreprises](https://go.microsoft.com/fwlink/?linkid=856886) ou un [forfait Microsoft 365 pour les entreprises](https://www.microsoft.com/microsoft-365/business), nous vous offrons un compte spécial doté d’autorisations d’administrateur. Ce compte est appelé compte administrateur.
   
 Avec ce compte, vous pouvez accéder au centre d’administration Microsoft 365 pour gérer votre entreprise : ajoutez des utilisateurs, gérez votre abonnement, réinitialisez les mots de passe, et bien plus encore. Essayez !
   
@@ -66,6 +66,6 @@ Lorsque vous avez besoin de votre administrateur pour réinitialiser votre mot d
     
 - **Petites entreprises**: contactez le propriétaire/copropriétaire de l'entreprise. Celui-ci octroie souvent les autorisations d'administrateur au consultant informatique qui effectue les tâches de maintenance informatique pour l'entreprise. 
     
-Par défaut, la personne inscrite qui achète un abonnement Office 365 pour les entreprises obtient les autorisations d'administrateur. Cette personne peut attribuer des autorisations d'administrateur à d'autres personnes pour les aider à gérer Office 365 pour leur organisation.
+Par défaut, la personne qui s’inscrit et achète un abonnement Microsoft 365 pour les entreprises obtient les autorisations d’administrateur. Cette personne peut attribuer des autorisations d’administrateur à d’autres personnes afin de les aider à gérer Microsoft 365 pour leur organisation.
   
 Si vous n’avez aucune idée de contacter votre entreprise ou votre établissement scolaire pour obtenir de l’aide, essayez de lui demander votre compte d’utilisateur et votre mot de passe.

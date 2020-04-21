@@ -20,12 +20,12 @@ search.appverid:
 ms.assetid: d00b6b83-1f14-4e9c-a2c5-dbd9a92816f4
 ROBOTS: NOINDEX, NOFOLLOW
 description: Découvrez comment choisir les applications mobiles que les utilisateurs peuvent utiliser pour accéder à la messagerie, au calendrier et aux contacts.
-ms.openlocfilehash: dcfd356ecdbc7448036507abe8d8f09546b05255
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 8627a31f7ec5e3c14b853618bb0383ecc58597cc
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42253013"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43628806"
 ---
 # <a name="manage-email-app-access-in-the-microsoft-365-admin-center"></a>Gérer l’accès aux applications de messagerie dans le centre d’administration Microsoft 365
 
@@ -43,7 +43,7 @@ Utilisez les paramètres d’accès aux courriers électroniques mobiles pour ch
 
 2. Sur la page **options d’accès au courrier mobile** , activez la case à cocher, puis choisissez la manière dont les utilisateurs de votre organisation utilisent les applications de messagerie sur leurs appareils :
   
-Choisissez l’option permettant de définir la façon dont les utilisateurs de votre organisation accèdent à leur compte professionnel ou scolaire Office 365 à partir de leurs appareils mobiles.
+Choisissez l’option permettant de définir la façon dont les utilisateurs de votre organisation accèdent à leur compte professionnel ou scolaire à partir de leurs appareils mobiles.
   
 - **Outlook uniquement** : les utilisateurs de votre organisation doivent utiliser l’application Outlook pour Android ou Outlook pour iOS sur leur appareil mobile. 
     

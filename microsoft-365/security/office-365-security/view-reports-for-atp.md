@@ -17,12 +17,12 @@ ms.assetid: e47e838c-d99e-4c0b-b9aa-e66c4fae902f
 ms.collection:
 - M365-security-compliance
 description: Recherchez et utilisez des rapports pour Office 365 protection avancée contre les menaces &amp; dans le centre de sécurité conformité.
-ms.openlocfilehash: b91fb8d000b610439618be687e36dabc787ebb58
-ms.sourcegitcommit: 9ed3283dd6dd959faeca5c22613f9126261b9590
+ms.openlocfilehash: cca2729918239eee7d27973cd28be16a534e461b
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43528976"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631060"
 ---
 # <a name="view-reports-for-office-365-advanced-threat-protection"></a>Afficher les rapports pour Office 365 protection avancée contre les menaces
 
@@ -107,9 +107,9 @@ Le rapport **types de fichiers ATP** indique le type de fichiers détectés comm
 Pour afficher ce rapport, dans le [Centre &amp; de sécurité conformité](https://protection.office.com), accédez à **types de fichiers DAV**du **tableau de bord** \> des **rapports** \> .
 
 ![Rapport sur les types de fichiers ATP](../../media/6e3f5d33-79aa-4b2d-938c-6ef135d9e54c.png)
-
-Lorsque vous placez le curseur de la souris sur un jour particulier, vous pouvez voir la répartition des types de fichiers malveillants détectés par les [pièces jointes fiables ATP](atp-safe-attachments.md) et la protection contre les [programmes malveillants contre le courrier indésirable &amp; dans Office 365](anti-spam-and-anti-malware-protection.md).
-
+  
+Lorsque vous placez le curseur de la souris sur un jour particulier, vous pouvez voir la répartition des types de fichiers malveillants détectés par la protection contre les [programmes malveillants &amp; ](anti-spam-and-anti-malware-protection.md)et anti-programme malveillant [ATP](atp-safe-attachments.md) .
+  
 ![Données de rapport sur les types de fichiers ATP pendant une journée](../../media/10d18428-699a-41d2-a73e-be3a8214ada1.png)
 
 ## <a name="atp-message-disposition-report"></a>Rapport de destruction de message ATP
@@ -158,7 +158,7 @@ Pour afficher et utiliser les rapports décrits dans cet article, **vous devez d
 
 Pour en savoir plus, consultez les ressources suivantes :
 
-- [Permissions in the Office 365 Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md)
+- [Autorisations dans le centre &amp; de sécurité conformité](permissions-in-the-security-and-compliance-center.md)
 
 - [Autorisations des fonctionnalités dans Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/feature-permissions)
 
@@ -168,8 +168,8 @@ Si vous ne voyez pas de données dans vos rapports ATP, vérifiez que vos strat�
 
 ## <a name="related-topics"></a>Voir aussi
 
-[Rapports et informations dans le centre de sécurité &amp; conformité Office 365](reports-and-insights-in-security-and-compliance.md)
-
+[Rapports et Insights dans le centre de sécurité &amp; conformité](reports-and-insights-in-security-and-compliance.md)
+  
 [Créer une planification pour un rapport dans le centre &amp; de sécurité conformité](create-a-schedule-for-a-report.md)
 
 [Configurer et télécharger un rapport personnalisé dans le centre de &amp; sécurité conformité](set-up-and-download-a-custom-report.md)

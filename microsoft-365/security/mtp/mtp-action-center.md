@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.custom: autoir
-ms.openlocfilehash: a42646c423c08298a619e8bd559cd819ba3c47db
-ms.sourcegitcommit: fe4beef350ef9f39b1098755cff46fa2b8e7dc4d
+ms.openlocfilehash: c3406ebf5962d6f0ac08c1ee280bab725cf1c3bd
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2020
-ms.locfileid: "42857462"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43626957"
 ---
 # <a name="the-action-center"></a>Le Centre de notifications
 
@@ -59,7 +59,7 @@ L’équipe en charge des opérations de sécurité peut fonctionner de façon p
 
 5. Sélectionnez un élément dans la liste pour afficher des détails supplémentaires sur une enquête. La vue Détails de l’enquête s’ouvre.<br/>![Détails de l’enquête](../../media/mtp-air-investdetails.png)
 
-    - Si l’enquête concerne du contenu des e-mails (par exemple, l’entité est une boîte aux lettres), des détails de l’enquête s’ouvrent dans le Centre de sécurité et conformité Office 365 ([https://protection.office.com/threatinvestigation](https://protection.office.com/threatinvestigation)). 
+    - Si l’enquête concerne du contenu de messagerie (par exemple, l’entité est une boîte aux lettres), des détails d’enquête s’ouvrent dans[https://protection.office.com/threatinvestigation](https://protection.office.com/threatinvestigation)le centre de sécurité & conformité (). 
 
     - Si l’enquête implique un appareil, les détails de l’enquête s’affichent dans le centre de sécurité ([https://security.microsoft.com](https://security.microsoft.com)). 
 
@@ -73,7 +73,7 @@ Pour approuver ou rejeter des actions en attente dans le centre de notifications
 |Action de correction |Rôles et des autorisations requis |
 |--|----|
 |Correction de Microsoft Defender – Protection avancée contre les menaces (appareils) |Rôle Administrateur de la sécurité attribué dans Azure Active Directory ([https://portal.azure.com](https://portal.azure.com)) ou dans le Centre d’administration Microsoft 365 ([https://admin.microsoft.com](https://admin.microsoft.com))<br/>--- ou ---<br/>Rôle Actions de correction actives attribué dans Microsoft Defender – Protection avancée contre les menaces <br/> <br/> Pour en savoir plus, consultez les ressources suivantes : <br/>- [Autorisations des rôles d’administrateur dans Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)<br/>- [Créer et gérer des rôles pour le contrôle d’accès basé sur les rôles (Microsoft Defender – Protection avancée contre les menaces)](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles)  |
-|Correction Office 365 – Protection avancée contre les menaces (contenu et courrier Office)  |Rôle Administrateur de la sécurité attribué dans Azure Active Directory ([https://portal.azure.com](https://portal.azure.com)) ou dans le Centre d’administration Microsoft 365 ([https://admin.microsoft.com](https://admin.microsoft.com))<br/>--- et --- <br/>Rôle Rechercher et vider attribué dans le Centre de sécurité et conformité Office 365 ([https://protection.office.com](https://protection.office.com)) <br/><br/>**IMPORTANT** : si le rôle Administrateur de la sécurité vous est attribué uniquement dans le Centre de sécurité et conformité Office 365, vous ne pourrez pas accéder aux fonctionnalités du centre de maintenance ou de Protection Microsoft contre les menaces. Vous devez avoir le rôle Administrateur de la sécurité attribué dans Azure Active Directory ou dans le Centre d’administration Microsoft 365. <br/><br/>Pour en savoir plus, consultez les ressources suivantes : <br/>- [Autorisations des rôles d’administrateur dans Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)<br/>- [Autorisations dans le Centre de sécurité et conformité Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center) |
+|Correction Office 365 – Protection avancée contre les menaces (contenu et courrier Office)  |Rôle Administrateur de la sécurité attribué dans Azure Active Directory ([https://portal.azure.com](https://portal.azure.com)) ou dans le Centre d’administration Microsoft 365 ([https://admin.microsoft.com](https://admin.microsoft.com))<br/>--- et --- <br/>Recherche et purger le rôle auquel est attribué le centre de[https://protection.office.com](https://protection.office.com)sécurité & conformité () <br/><br/>**Important**: si le rôle administrateur de sécurité est affecté uniquement dans le centre de sécurité & conformité, vous ne serez pas en mesure d’accéder au centre de maintenance ou aux fonctionnalités de protection contre les menaces Microsoft. Vous devez avoir le rôle Administrateur de la sécurité attribué dans Azure Active Directory ou dans le Centre d’administration Microsoft 365. <br/><br/>Pour en savoir plus, consultez les ressources suivantes : <br/>- [Autorisations des rôles d’administrateur dans Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)<br/>- [Autorisations dans le centre de sécurité & conformité](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center) |
 
 > [!NOTE]
 > Les utilisateurs qui ont le rôle Administrateur général attribué dans Azure Active Directory peuvent approuver ou rejeter toute action en attente dans le centre de notifications. Toutefois, il est recommandé à votre organisation de limiter le nombre de personnes auxquelles le rôle Administrateur général est attribué. Nous vous recommandons d’utiliser les rôles Administrateur de la sécurité, Actions de correction actives et Rechercher et purger répertoriés ci-dessus pour les autorisations du centre de notifications.

@@ -15,12 +15,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: c1af88f489072490777cc6f2c7edfc66fd038bdf
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 99a124ff57816481cde92dd79c3058a2e7b72d31
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42633602"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43625205"
 ---
 # <a name="prerequisite-work-for-implementing-identity-and-device-access-policies"></a>Tâches préalables à l’implémentation de stratégies d’accès aux identités et aux appareils
 
@@ -93,11 +93,11 @@ Les clients suivants sont recommandés lorsqu’une stratégie de documents séc
 
 <sup>*</sup>En savoir plus sur l’utilisation de l’accès conditionnel avec le [client de synchronisation OneDrive](https://support.office.com/article/Azure-Active-Directory-conditional-access-with-the-OneDrive-sync-client-on-Windows-028d73d7-4b86-4ee0-8fb7-9a209434b04e).
 
-### <a name="office-365-client-support"></a>Prise en charge de client Office 365
-Pour plus d’informations sur la prise en charge du client Office 365, consultez les articles suivants :
-- [Prise en charge de l’application cliente Office 365-accès conditionnel](https://docs.microsoft.com/office365/enterprise/office-365-client-support-conditional-access)
-- [Prise en charge de l’application cliente Office 365-gestion des applications mobiles](https://docs.microsoft.com/office365/enterprise/office-365-client-support-mobile-application-management)
-- [Prise en charge des applications clientes Office 365-authentification moderne](https://docs.microsoft.com/office365/enterprise/office-365-client-support-modern-authentication)
+### <a name="microsoft-365-client-support"></a>Prise en charge du client Microsoft 365
+Pour plus d’informations sur la prise en charge des clients, consultez les articles suivants :
+- [Prise en charge des applications clientes Microsoft 365-accès conditionnel](https://docs.microsoft.com/office365/enterprise/office-365-client-support-conditional-access)
+- [Prise en charge des applications clientes Microsoft 365-gestion des applications mobiles](https://docs.microsoft.com/office365/enterprise/office-365-client-support-mobile-application-management)
+- [Prise en charge des applications clientes Microsoft 365-authentification moderne](https://docs.microsoft.com/office365/enterprise/office-365-client-support-modern-authentication)
 
 ## <a name="protecting-administrator-accounts"></a>Protection des comptes administrateurs
 Azure AD offre un moyen simple de commencer la protection de l’accès administrateur avec une stratégie d’accès conditionnel préconfigurée. Dans Azure AD, accédez à **accès conditionnel** et recherchez cette stratégie, **stratégie de base : exiger l’authentification multifacteur pour les administrateurs (aperçu)**. Sélectionnez cette stratégie, puis sélectionnez **utiliser la stratégie immédiatement**. 
@@ -114,7 +114,7 @@ Pour plus d’informations, consultez la rubrique [stratégie de sécurité de b
 Les recommandations supplémentaires sont les suivantes :
 - Utilisez Azure AD Privileged Identity Management pour réduire le nombre de comptes d’administrateur permanents. Voir [commencer à utiliser PIM](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-getting-started). 
 - [Utilisez la gestion des accès privilégiés dans Office 365](https://docs.microsoft.com/office365/securitycompliance/privileged-access-management-overview) pour protéger votre organisation contre les violations susceptibles d’utiliser des comptes d’administrateur privilégié existants avec un accès permanent aux données sensibles ou l’accès aux paramètres de configuration critiques. 
-- Utiliser les comptes administrateur uniquement pour l’administration. Les administrateurs doivent disposer d’un compte d’utilisateur distinct pour une utilisation normale non administrative et n’utiliser leur compte d’administrateur que si nécessaire pour effectuer une tâche associée à leur fonction. Les rôles d' [administrateur office 365](https://support.office.com/article/About-Office-365-admin-roles-da585eea-f576-4f55-a1e0-87090b6aaa9d) ont beaucoup plus de privilèges que les services Office 365.
+- Utiliser les comptes administrateur uniquement pour l’administration. Les administrateurs doivent disposer d’un compte d’utilisateur distinct pour une utilisation normale non administrative et n’utiliser leur compte d’administrateur que si nécessaire pour effectuer une tâche associée à leur fonction. Les rôles d' [administrateur microsoft 365](https://support.office.com/article/About-Office-365-admin-roles-da585eea-f576-4f55-a1e0-87090b6aaa9d) ont beaucoup plus de privilèges que les services Microsoft 365.
 - Suivez les meilleures pratiques en matière de sécurisation des comptes privilégiés dans Azure AD, comme décrit dans cet [article](https://docs.microsoft.com/azure/active-directory/admin-roles-best-practices).
 
 ## <a name="next-steps"></a>Étapes suivantes

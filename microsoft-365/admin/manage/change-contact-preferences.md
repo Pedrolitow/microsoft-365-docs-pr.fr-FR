@@ -15,19 +15,19 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: 6f70de1b-a64d-4498-bfbd-be8c83a9c0fc
-description: Mettez à jour les informations de contact de votre organisation et choisissez le type de communications Office 365 relatives au produit que vous souhaitez recevoir.
-ms.openlocfilehash: 435848f1a5d594dc5cf2f1658ac4f6f89dc7af44
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+description: Mettez à jour les informations de contact de votre organisation et choisissez les communications de produit Microsoft 365 que vous souhaitez recevoir.
+ms.openlocfilehash: 4a667757990ec30f4514b094fd1592831601e679
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42362029"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43628207"
 ---
 # <a name="change-your-contact-preferences-for-communications-from-microsoft"></a>Modifier vos préférences en matière de contact pour les communications Microsoft
 
-[] La page **Préférences du contact** vous permet de mettre à jour les informations de contact de votre organisation et de choisir le type de communications liées au produit Office 365 que vous souhaitez recevoir.
+Utilisez la page **Préférences de contact** pour mettre à jour les informations de contact de votre organisation et choisir les communications de produit Microsoft 365 que vous souhaitez recevoir.
   
-Pour plus d'informations sur la mise à jour du numéro de téléphone portable et de l'adresse de courrier de l'administrateur, voir [Mettre à jour votre numéro de téléphone et votre adresse de courrier d'administrateur dans Office 365](update-phone-number-and-email-address.md).
+Pour plus d’informations sur la modification de votre numéro de téléphone et de votre adresse de messagerie, consultez la [mise à jour de votre numéro de téléphone et de votre adresse de messagerie 365 d'](update-phone-number-and-email-address.md) administrateur.
   
 Si vous cherchez à modifier les informations de profil de l'entreprise, par exemple, le nom et l'adresse de votre organisation, le numéro de téléphone principal au sein de l'entreprise et les informations de contact technique, voir [Modifier l'adresse de votre organisation, l'adresse de courrier du contact technique et d'autres informations](change-address-contact-and-more.md).
   
@@ -40,16 +40,14 @@ Si vous cherchez à modifier les informations de profil de l'entreprise, par exe
 3. Sélectionnez les types de communications relatives aux produits que vous souhaitez recevoir.
 
 4. Tapez le numéro de téléphone professionnel, le numéro de téléphone mobile professionnel ou l'adresse de courrier professionnelles sur lesquels vous souhaitez recevoir ces communications.
-    Vous pouvez utiliser n'importe quelle adresse de courrier, y compris votre adresse de courrier Office 365, pour recevoir ces communications. Si vous n'ajoutez pas d'adresse de courrier dans vos préférences de contact, votre adresse de courrier de secours (dans la page **Informations personnelles**) sera utilisée.
+    Vous pouvez utiliser n’importe quelle adresse de messagerie, y compris votre adresse de messagerie Microsoft, pour recevoir ces communications. Si vous n'ajoutez pas d'adresse de courrier dans vos préférences de contact, votre adresse de courrier de secours (dans la page **Informations personnelles**) sera utilisée.
 
 5. Cliquez sur **Enregistrer**.
   
-Pour Office 365 entreprise, Office 365 Business Premium et Office 365 Business Essentials, lorsque vous vous êtes inscrit pour la première fois en tant qu’administrateur pour Office 365, selon le pays ou la région des utilisateurs de votre organisation, vos utilisateurs peuvent être automatiquement inscrits pour recevoir des communications liées à des produits.
-  
-Pour Office 365 Petite Entreprise, en fonction du pays ou de la région, vous pouvez recevoir automatiquement les communications sur le produit.
+Pour Office 365 entreprise, Microsoft 365 Business standard et Microsoft 365 Business Basic, lorsque vous vous êtes inscrit en tant qu’administrateur pour Microsoft 365, selon le pays ou la région des utilisateurs de votre organisation, vos utilisateurs peuvent être automatiquement inscrits pour recevoir des communications liées à des produits.
   
 Pour trouver des réponses aux questions ayant trait à la facturation, voir :
   
-- [Modifier vos adresses de facturation pour Office 365 pour les entreprises](../../commerce/billing-and-payments/change-your-billing-addresses.md)
+- [Modifier vos adresses de facturation pour Microsoft 365 pour les entreprises](../../commerce/billing-and-payments/change-your-billing-addresses.md)
 
-- [Ajouter, mettre à jour ou supprimer une carte bancaire ou un compte bancaire dans Office 365 pour les entreprises](../../commerce/billing-and-payments/add-update-or-remove-credit-card-or-bank-account.md)
+- [Ajouter, mettre à jour ou supprimer une carte bancaire ou un compte bancaire dans Microsoft 365 pour les entreprises](../../commerce/billing-and-payments/add-update-or-remove-credit-card-or-bank-account.md)

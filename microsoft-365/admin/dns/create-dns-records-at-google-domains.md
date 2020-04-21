@@ -1,5 +1,5 @@
 ---
-title: Créer des enregistrements DNS via Google Domains pour Office 365
+title: Créer des enregistrements DNS auprès de Google Domains pour Microsoft
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -19,31 +19,31 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 0db29490-2612-48bc-9b77-1862e7a41a8c
-description: Découvrez comment vérifier votre domaine et configurer des enregistrements DNS pour la messagerie, Lync et d’autres services de Google Domains pour Office 365.
-ms.openlocfilehash: f0a9a42127fc5b722679013b899255f77840d670
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+description: Découvrez comment vérifier votre domaine et configurer des enregistrements DNS pour la messagerie, Lync et d’autres services de Google Domains pour Microsoft.
+ms.openlocfilehash: 20a3ba9baefcdb26936d2d0a5fda7ed1b5db971e
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43211726"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43629538"
 ---
-# <a name="create-dns-records-at-google-domains-for-office-365"></a>Créer des enregistrements DNS via Google Domains pour Office 365
+# <a name="create-dns-records-at-google-domains-for-microsoft"></a>Créer des enregistrements DNS auprès de Google Domains pour Microsoft
 
  **[Consultez les Forums aux questions des domaines](../setup/domains-faq.md)** si vous ne trouvez pas ce que vous recherchez. 
   
 Si Google Domains est votre fournisseur d'hébergement DNS, procédez de la manière décrite dans cet article pour vérifier votre domaine et configurer les enregistrements DNS pour le courrier, Lync, etc.
   
-Une fois ces enregistrements ajoutés sur Google Domains, votre domaine est configuré pour utiliser les services Office 365.
+Après avoir ajouté ces enregistrements à Google Domains, votre domaine est configuré pour utiliser les services Microsoft.
   
-Pour en savoir plus sur l'hébergement web et le DNS pour les sites web avec Office 365, voir [Utiliser un site web public avec Office 365](https://support.office.com/article/choose-a-public-website-3325d50e-d131-403c-a278-7f3296fe33a9).
+Pour en savoir plus sur l’hébergement Web et le DNS pour les sites Web avec Microsoft, consultez [la rubrique utiliser un site Web public avec Microsoft](https://support.office.com/article/choose-a-public-website-3325d50e-d131-403c-a278-7f3296fe33a9).
   
 > [!NOTE]
-> Généralement, les modifications DNS sont appliquées dans les 15 minutes. Il peut toutefois arriver que la répercussion d’une modification dans le système DNS sur Internet prenne davantage de temps. Si vous rencontrez des difficultés avec le flux de courrier ou d'autres problèmes suite à l'ajout des enregistrements DNS, consultez [Rechercher et corriger les problèmes suite à l'ajout de votre domaine ou des enregistrements DNS dans Office 365](../get-help-with-domains/find-and-fix-issues.md). 
+> Généralement, les modifications DNS sont appliquées dans les 15 minutes. Il peut toutefois arriver que la répercussion d’une modification dans le système DNS sur Internet prenne davantage de temps. Si vous rencontrez des problèmes avec le flux de messagerie ou d’autres problèmes après avoir ajouté des enregistrements DNS, consultez [la rubrique Rechercher et corriger les problèmes après avoir ajouté votre domaine ou des enregistrements DNS dans Microsoft](../get-help-with-domains/find-and-fix-issues.md). 
   
 ## <a name="add-a-txt-record-for-verification"></a>Ajouter un enregistrement TXT à des fins de vérification
 <a name="BKMK_verify"> </a>
 
-Avant d'utiliser votre domaine avec Office 365, nous devons vérifier que celui-ci vous appartient. Votre capacité à vous connecter à votre compte auprès de votre bureau d'enregistrement de domaines et à créer l'enregistrement DNS montre à Office 365 que le domaine vous appartient réellement.
+Avant d’utiliser votre domaine avec Microsoft, vous devez vous assurer que vous en êtes propriétaire. Votre capacité à vous connecter à votre compte auprès de votre bureau d’enregistrement de domaines et à créer l’enregistrement DNS prouve à Microsoft que vous êtes propriétaire du domaine.
   
 > [!NOTE]
 > Cet enregistrement sert uniquement à vérifier que vous êtes propriétaire du domaine. Vous pouvez éventuellement le supprimer ultérieurement. 
@@ -54,7 +54,7 @@ Avant d'utiliser votre domaine avec Office 365, nous devons vérifier que celui-
     
 2. Entrez vos informations d’identification de connexion, puis sélectionnez **de nouveau connexion**.
     
-2. Sur la page **Mes domaines** , recherchez le domaine que vous souhaitez utiliser avec Office 365, puis sélectionnez le lien **gérer** en regard de celui-ci. Dans le volet de navigation de gauche, sélectionnez **DNS**.
+2. Sur la page **Mes domaines** , recherchez le domaine que vous souhaitez utiliser avec Microsoft, puis sélectionnez le lien **gérer** en regard de celui-ci. Dans le volet de navigation de gauche, sélectionnez **DNS**.
     
 3. Dans la section * * Custom Resource Records * *, dans les zones du nouvel enregistrement, tapez ou copiez-collez les valeurs du tableau suivant. 
     
@@ -64,18 +64,18 @@ Avant d'utiliser votre domaine avec Office 365, nous devons vérifier que celui-
     
     |||||
     |:-----|:-----|:-----|:-----|
-    |**Name** <br/> |**Type** <br/> |**TTL (Durée de vie)** <br/> |**Données** <br/> |
-    |@  <br/> |TXT  <br/> |Premier  <br/> |MS=ms *XXXXXXXX*  <br/> **Remarque :** il s'agit d'un exemple. Utilisez votre valeur **Adresse de destination ou de pointage** spécifique ici, à partir du tableau dans Office 365. [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md)          |
+    |**Name** <br/> |**Type** <br/> |**TTL (Durée de vie)** <br/> |**Data (Données)** <br/> |
+    |@  <br/> |TXT  <br/> |Premier  <br/> |MS=ms *XXXXXXXX*  <br/> **Remarque :** il s'agit d'un exemple. Utilisez votre **adresse de destination ou de pointage** spécifique ici, à partir du tableau. [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md)          |
    
 4. Sélectionnez **Ajouter**.
     
 5. Patientez quelques minutes, le temps que l'enregistrement que vous venez de créer soit mis à jour sur Internet.
     
-L’enregistrement étant désormais ajouté sur le site de votre bureau d’enregistrement de domaines, revenez à Office 365 et demandez à Office 365 de rechercher l’enregistrement.
+À présent que vous avez ajouté l’enregistrement sur le site de votre bureau d’enregistrement de domaines, vous allez revenir à Microsoft et demander l’enregistrement.
   
-Lorsqu’Office 365 trouve l’enregistrement TXT approprié, votre domaine est vérifié.
+Lorsque Microsoft trouve l’enregistrement TXT correct, votre domaine est vérifié.
   
-1. Dans le centre d’administration, accédez à la page **Paramètres** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domaines</a>.
+1. Dans le centre d’administration Microsoft, accédez à la page **paramètres** \> des <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">domaines</a> .
 
     
 2. Dans la page **Domaines**, sélectionnez le domaine que vous vérifiez. 
@@ -85,10 +85,10 @@ Lorsqu’Office 365 trouve l’enregistrement TXT approprié, votre domaine est
 4. Dans la page **Vérifier le domaine**, sélectionnez **Vérifier**.
     
 > [!NOTE]
-> Généralement, les modifications DNS sont appliquées dans les 15 minutes. Il peut toutefois arriver que la répercussion d’une modification dans le système DNS sur Internet prenne davantage de temps. Si vous rencontrez des difficultés avec le flux de courrier ou d'autres problèmes suite à l'ajout des enregistrements DNS, consultez [Rechercher et corriger les problèmes suite à l'ajout de votre domaine ou des enregistrements DNS dans Office 365](../get-help-with-domains/find-and-fix-issues.md). 
+> Généralement, les modifications DNS sont appliquées dans les 15 minutes. Il peut toutefois arriver que la répercussion d’une modification dans le système DNS sur Internet prenne davantage de temps. Si vous rencontrez des problèmes avec le flux de messagerie ou d’autres problèmes après avoir ajouté des enregistrements DNS, consultez [la rubrique Rechercher et corriger les problèmes après avoir ajouté votre domaine ou des enregistrements DNS](../get-help-with-domains/find-and-fix-issues.md). 
 
   
-## <a name="add-an-mx-record-so-email-for-your-domain-will-come-to-office-365"></a>Ajouter un enregistrement MX afin que les courriers électroniques pour votre domaine soient transférés vers Office 365
+## <a name="add-an-mx-record-so-email-for-your-domain-will-come-to-microsoft"></a>Ajouter un enregistrement MX afin que les courriers électroniques pour votre domaine soient envoyés à Microsoft
 <a name="BKMK_add_MX"> </a>
 
 1. Pour commencer, accédez à la page de vos domaines sur le site Google Domains en utilisant [ce lien](https://domains.google.com/registrar). Vous êtes invité à vous connecter. Pour ce faire :
@@ -99,7 +99,7 @@ Lorsqu’Office 365 trouve l’enregistrement TXT approprié, votre domaine est
 4. Dans la page **domaines** , dans la section **domaine** , sélectionnez **configurer DNS** pour le domaine que vous souhaitez modifier.
     
     > [!IMPORTANT]
-    > Si vous avez un compte de courrier G Suite, vous devez commencer par supprimer les enregistrements MX qui lui sont associés. Les enregistrements MX G Suite vous empêchent d'ajouter d'autres enregistrements MX, notamment ceux requis pour Office 365. Notez que la suppression d'enregistrements G Suite ne supprime pas votre compte G Suite. Pour supprimer les enregistrements MX G Suite, procédez comme suit. 
+    > Si vous avez un compte de courrier G Suite, vous devez commencer par supprimer les enregistrements MX qui lui sont associés. Les enregistrements MX de la suite G vous empêchent d’ajouter d’autres enregistrements MX, y compris ceux requis pour Microsoft. Notez que la suppression d'enregistrements G Suite ne supprime pas votre compte G Suite. Pour supprimer les enregistrements MX G Suite, procédez comme suit. 
   
 5. Dans la section **rapports synthétiques** , dans la zone **G suite** , sélectionnez **supprimer**.
     
@@ -117,9 +117,9 @@ Lorsqu’Office 365 trouve l’enregistrement TXT approprié, votre domaine est
     
     (Choose the **Type** value from the drop-down list.) 
     
-    |**Name**|**Type**|**TTL (Durée de vie)**|**Données**|
+    |**Name**|**Type**|**TTL (Durée de vie)**|**Data (Données)**|
     |:-----|:-----|:-----|:-----|
-    |@  <br/> |MX  <br/> |Premier  <br/> |0  *\<clé_de_domaine\>*  .mail.protection.outlook.com.  <br/> **Cette valeur DOIT se terminer par un point (.)** <br/> La valeur **0** représente la valeur de priorité MX. Ajoutez-la au début de la valeur MX, séparée du reste de la valeur par un espace.  <br/> **Remarque :** Obtenez votre \<*clé de domaine*\> à partir de votre compte Office 365.  [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md)          Pour plus d'informations sur la priorité, voir [Qu'est-ce que la priorité MX ?](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx). <br/> |
+    |@  <br/> |MX  <br/> |Premier  <br/> |0  *\<clé_de_domaine\>*  .mail.protection.outlook.com.  <br/> **Cette valeur DOIT se terminer par un point (.)** <br/> La valeur **0** représente la valeur de priorité MX. Ajoutez-la au début de la valeur MX, séparée du reste de la valeur par un espace.  <br/> **Remarque :** Obtenir votre \< *clé* \> de domaine à partir de votre compte Microsoft.  [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md)          Pour plus d'informations sur la priorité, voir [Qu'est-ce que la priorité MX ?](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx). <br/> |
    
     ![Taper ou coller des valeurs dans la section Custom Resource Records (enregistrements de ressources personnalisés)](../../media/b660ca9e-984d-449f-ae59-a65fe4e2c6bd.png)
   
@@ -143,7 +143,7 @@ Lorsqu’Office 365 trouve l’enregistrement TXT approprié, votre domaine est
     
     ![Sélectionnez Enregistrer.](../../media/bf496d01-ccbe-4800-95f4-7b2283f2e5f6.png)
   
-## <a name="add-the-five-cname-records-that-are-required-for-office-365"></a>Ajouter les cinq enregistrements CNAMe requis pour Office 365
+## <a name="add-the-five-cname-records-that-are-required-for-microsoft"></a>Ajouter les cinq enregistrements CNAMe requis pour Microsoft
 
 1. Pour commencer, accédez à la page [Google Domains] (https://domains.google.com/registrar) et connectez-vous.
     
@@ -157,7 +157,7 @@ Lorsqu’Office 365 trouve l’enregistrement TXT approprié, votre domaine est
     
     (Choose the **Type** value from the drop-down list.) 
     
-    |**Name**|**Type**|**TTL (Durée de vie)**|**Données**|
+    |**Name**|**Type**|**TTL (Durée de vie)**|**Data (Données)**|
     |:-----|:-----|:-----|:-----|
     |autodiscover  <br/> |CNAME  <br/> |Premier  <br/> |autodiscover.outlook.com.  <br/> **This value MUST end with a period (.)** <br/> |
     |sip  <br/> |CNAME  <br/> |Premier  <br/> |sipdir.online.lync.com.  <br/> **This value MUST end with a period (.)** <br/> |
@@ -180,7 +180,7 @@ Lorsqu’Office 365 trouve l’enregistrement TXT approprié, votre domaine est
 ## <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a>Ajoutez un enregistrement TXT pour SPF afin d'éviter le courrier indésirable
 
 > [!IMPORTANT]
-> Vous ne pouvez avoir qu’un enregistrement TXT pour SPF pour un domaine. Si votre domaine comporte plusieurs enregistrements SPF, vous rencontrez des erreurs au niveau de la transmission du courrier électronique ainsi que des problèmes de remise du courrier et de classification en tant que courrier indésirable. If you already have an SPF record for your domain, don't create a new one for Office 365. Ajoutez plutôt les valeurs Office 365 requises à l'enregistrement actuel de manière à n'avoir qu'un seul enregistrement SPF qui inclut les deux ensembles de valeurs. Voici quelques exemples. Consultez ces [Enregistrements DNS externes pour Office 365](https://support.office.com/article/c0531a6f-9e25-4f2d-ad0e-a70bfef09ac0#bkmk_spfrecords). To validate your SPF record, you can use one of these [SPF validation tools](../setup/domains-faq.md). 
+> Vous ne pouvez avoir qu’un enregistrement TXT pour SPF pour un domaine. Si votre domaine comporte plusieurs enregistrements SPF, vous rencontrez des erreurs au niveau de la transmission du courrier électronique ainsi que des problèmes de remise du courrier et de classification en tant que courrier indésirable. Si vous disposez déjà d’un enregistrement SPF pour votre domaine, n’en créez pas pour Microsoft. Ajoutez plutôt les valeurs Microsoft requises à l’enregistrement actuel afin de disposer d’un seul enregistrement SPF qui inclut les deux ensembles de valeurs. Voici quelques exemples. Consultez ces [enregistrements DNS externes pour Microsoft](https://support.office.com/article/c0531a6f-9e25-4f2d-ad0e-a70bfef09ac0#bkmk_spfrecords). Pour valider votre enregistrement SPF, vous pouvez utiliser l'un des outils de [validation SPF suivants](../setup/domains-faq.md). 
   
 1. Pour commencer, accédez à la page de vos domaines sur le site Google Domains en utilisant [ce lien](https://domains.google.com/registrar). Vous êtes invité à vous connecter. Pour ce faire :
     
@@ -214,11 +214,11 @@ Lorsqu’Office 365 trouve l’enregistrement TXT approprié, votre domaine est
    
    ![Taper ou coller des valeurs dans la section Custom Resource Records (enregistrements de ressources personnalisés)](../../media/4645cc4f-9fcc-4626-9674-072ed6fa34c2.png)
   
-7. Cliquez sur **Enregistrer**.
+7. Sélectionnez **Enregistrer**.
     
     ![Sélectionnez Enregistrer.](../../media/20c4c926-f062-4048-9265-bf752be54e0c.png)
   
-## <a name="add-the-two-srv-records-that-are-required-for-office-365"></a>Ajoutez les 2 enregistrements SRV requis pour Office 365
+## <a name="add-the-two-srv-records-that-are-required-for-microsoft"></a>Ajouter les deux enregistrements SRV requis pour Microsoft
 <a name="BKMK_add_SRV"> </a>
 
 1. Pour commencer, accédez à la page de vos domaines sur le site Google Domains en utilisant [ce lien](https://domains.google.com/registrar). Vous êtes invité à vous connecter. Pour ce faire :
@@ -237,7 +237,7 @@ Lorsqu’Office 365 trouve l’enregistrement TXT approprié, votre domaine est
     
     (Choose the **Type** value from the drop-down list.) 
     
-    |**Name**|**Type**|**TTL (Durée de vie)**|**Data (Données)**|
+    |**Name**|**Type**|**TTL (Durée de vie)**|**Données**|
     |:-----|:-----|:-----|:-----|
     |_sip. _tls|SRV|Premier|100 1 443 sipdir.online.lync.com. **Cette valeur doit se terminer par un point (.)** **Remarque :** Nous vous recommandons de copier et coller cette entrée, afin que l’espacement reste correcte.           |
     |_sipfederationtls. _tcp|SRV|Premier|100 1 5061 sipfed.online.lync.com. **This value MUST end with a period (.)**
@@ -255,5 +255,5 @@ Lorsqu’Office 365 trouve l’enregistrement TXT approprié, votre domaine est
     Dans la section **Custom Resource Records (enregistrements de ressources personnalisés** ), créez un enregistrement en utilisant les valeurs de la deuxième ligne du tableau, puis sélectionnez de nouveau **Add (Ajouter** ) pour valider cet enregistrement. 
     
     > [!NOTE]
-    > Généralement, les modifications DNS sont appliquées dans les 15 minutes. Il peut toutefois arriver que la répercussion d’une modification dans le système DNS sur Internet prenne davantage de temps. Si vous rencontrez des difficultés avec le flux de courrier ou d'autres problèmes suite à l'ajout des enregistrements DNS, consultez [Rechercher et corriger les problèmes suite à l'ajout de votre domaine ou des enregistrements DNS dans Office 365](../get-help-with-domains/find-and-fix-issues.md). 
+    > Généralement, les modifications DNS sont appliquées dans les 15 minutes. Il peut toutefois arriver que la répercussion d’une modification dans le système DNS sur Internet prenne davantage de temps. Si vous rencontrez des problèmes avec le flux de messagerie ou d’autres problèmes après avoir ajouté des enregistrements DNS, consultez [la rubrique Rechercher et corriger les problèmes après avoir ajouté votre domaine ou des enregistrements DNS](../get-help-with-domains/find-and-fix-issues.md). 
   

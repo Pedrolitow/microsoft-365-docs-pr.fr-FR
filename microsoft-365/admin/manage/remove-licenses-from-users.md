@@ -1,5 +1,5 @@
 ---
-title: Annulation de l’attribution de licences aux utilisateurs
+title: Annuler l'assignation des licences aux utilisateurs
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -21,14 +21,14 @@ search.appverid:
 - GEA150
 ms.assetid: 9b497c85-d0a4-4735-80fa-d3565bc05bd1
 description: Découvrez comment supprimer des licences de comptes d’utilisateur.
-ms.openlocfilehash: 031a29f9e005c5acc2fdf2aa5f24268268d180ab
-ms.sourcegitcommit: 9a4084ce2b80bac883412e0ec956b6c0cc18d0f5
+ms.openlocfilehash: e3c6150c2eb228e29bf6fc2b87d90809a7033660
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/03/2020
-ms.locfileid: "42400931"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43628099"
 ---
-# <a name="unassign-licenses-from-users"></a>Annulation de l’attribution de licences aux utilisateurs
+# <a name="unassign-licenses-from-users"></a>Annuler l'assignation des licences aux utilisateurs
 
 ::: moniker range="o365-worldwide"
 Vous pouvez supprimer ou annuler l’affectation des licences des utilisateurs sur la page **utilisateurs actifs** ou sur la page **licences** . La méthode à utiliser varie selon que vous souhaitez annuler l’affectation de licences de produits à des utilisateurs spécifiques ou supprimer l’affectation de licences aux utilisateurs de produits spécifiques.
@@ -67,7 +67,7 @@ Lorsque vous utilisez la page **licences** pour annuler l’affectation des lice
 
 ::: moniker range="o365-germany"
 
-1. Dans le Centre d’administration, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Utilisateurs actifs</a>.
+1. Dans le Centre d’administration, accédez à la page **Utilisateurs >** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Utilisateurs actifs</a>.
 
 2. Sélectionnez l’utilisateur pour lequel vous souhaitez annuler l’affectation de la licence.
 
@@ -114,7 +114,7 @@ Lorsque vous utilisez la page **licences** pour annuler l’affectation des lice
 
 ::: moniker range="o365-germany"
   
-1. Dans le Centre d’administration, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Utilisateurs actifs</a>.
+1. Dans le Centre d’administration, accédez à la page **Utilisateurs >** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Utilisateurs actifs</a>.
 
 2. Activez les cases à cocher en regard des noms des utilisateurs pour lesquels vous souhaitez annuler l’affectation de toutes les licences.
 
@@ -122,13 +122,13 @@ Lorsque vous utilisez la page **licences** pour annuler l’affectation des lice
 
 4. Dans le volet **Remplacer les produits existants**, sélectionnez **Remplacer les attributions de licence de produit existantes** \> **Suivant**.
 
-5. En bas du volet remplacer les **produits existants** , activez la case à cocher **supprimer toutes les licences de produits des utilisateurs sélectionnés** , puis sélectionnez **remplacer** \> **** \> **** le fermer.
+5. En bas du volet remplacer les **produits existants** , activez la case à cocher **supprimer toutes les licences de produits des utilisateurs sélectionnés** , puis sélectionnez **remplacer** \> **Close** \> **Close**le fermer.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
   
-1. Dans le Centre d’administration, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Utilisateurs actifs</a>.
+1. Dans le Centre d’administration, accédez à la page **Utilisateurs >** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Utilisateurs actifs</a>.
 
 2. Activez les cases à cocher en regard des noms des utilisateurs pour lesquels vous souhaitez annuler l’affectation de toutes les licences.
 
@@ -136,13 +136,13 @@ Lorsque vous utilisez la page **licences** pour annuler l’affectation des lice
 
 4. Dans le volet **Remplacer les produits existants**, sélectionnez **Remplacer les attributions de licence de produit existantes** \> **Suivant**.
 
-5. En bas du volet remplacer les **produits existants** , activez la case à cocher **supprimer toutes les licences de produits des utilisateurs sélectionnés** , puis sélectionnez **remplacer** \> **** \> **** le fermer.
+5. En bas du volet remplacer les **produits existants** , activez la case à cocher **supprimer toutes les licences de produits des utilisateurs sélectionnés** , puis sélectionnez **remplacer** \> **Close** \> **Close**le fermer.
 
 ::: moniker-end
 
 ## <a name="what-you-need-to-know-about-unassigning-licenses-for-users"></a>Ce que vous devez savoir sur l’annulation de l’affectation de licences aux utilisateurs
 
-- Vous devez être administrateur général, administrateur de facturation, administrateur de licence ou administrateur de gestion des utilisateurs. Pour plus d'informations, consultez [À propos des rôles d'administrateur Office 365](../add-users/about-admin-roles.md).
+- Vous devez être un administrateur général, un administrateur de facturation, un administrateur de licence ou un administrateur de gestion des utilisateurs. Pour plus d’informations, consultez la rubrique [à propos des rôles d’administrateur Microsoft 365](../add-users/about-admin-roles.md).
 
 - Vous pouvez [supprimer des licences de comptes d'utilisateurs à l'aide d'Office 365 PowerShell](https://go.microsoft.com/fwlink/p/?linkid=848428).
 
@@ -152,17 +152,17 @@ Lorsque vous utilisez la page **licences** pour annuler l’affectation des lice
 
 - Notez que les fichiers enregistrés dans OneDrive entreprise ne sont pas supprimés sauf si l’utilisateur est supprimé du centre d’administration 365 de Microsoft ou s’il est supprimé par le biais de la synchronisation Active Directory. Pour plus d’informations, consultez la rubrique [OneDrive Retention and suppression](https://docs.microsoft.com/onedrive/retention-and-deletion).
 
-- De plus, la boîte aux lettres de l’utilisateur ne peut plus faire l’objet d’une recherche à l’aide d’un outil eDiscovery tel que la recherche de contenu ou Advanced eDiscovery lorsque la licence est supprimée. Pour plus d’informations, consultez la section « recherche de boîtes aux lettres déconnectées ou de sous-licence » dans [recherche de contenu dans Office 365](https://docs.microsoft.com/office365/securitycompliance/content-search#searching-disconnected-or-de-licensed-mailboxes).
+- De plus, la boîte aux lettres de l’utilisateur ne peut plus faire l’objet d’une recherche à l’aide d’un outil eDiscovery tel que la recherche de contenu ou Advanced eDiscovery lorsque la licence est supprimée. Pour plus d’informations, consultez la section « recherche de boîtes aux lettres déconnectées ou de sous-licence » dans [recherche de contenu dans Microsoft 365](https://docs.microsoft.com/office365/securitycompliance/content-search#searching-disconnected-or-de-licensed-mailboxes).
 
 - Si vous disposez d’un abonnement Enterprise, comme Office 365 entreprise E3, Exchange Online vous permet de conserver les données de boîte aux lettres d’un compte d’utilisateur supprimé en utilisant des [boîtes aux lettres inactives](https://docs.microsoft.com/office365/securitycompliance/inactive-mailboxes-in-office-365). Pour plus d’informations, consultez la rubrique [créer et gérer des boîtes aux lettres inactives dans Exchange Online](https://docs.microsoft.com/office365/securitycompliance/create-and-manage-inactive-mailboxes).
 
-- Pour plus d’informations sur la façon de bloquer l’accès d’un utilisateur aux données Office 365 une fois leur licence supprimée et l’accès aux données par la suite, consultez la rubrique [supprimer un ancien employé](../add-users/remove-former-employee.md).
+- Pour plus d’informations sur la façon de bloquer l’accès d’un utilisateur aux données Microsoft 365 après la suppression de leur licence et l’accès aux données par la suite, consultez la rubrique [supprimer un ancien employé](../add-users/remove-former-employee.md).
 
 - Si vous supprimez la licence d’un utilisateur et qu’Office est toujours installé, les [notifications de produit sans licence](https://support.office.com/article/0d23d3c0-c19c-4b2f-9845-5344fedc4380.aspx) s’affichent lorsqu’elles utilisent Office.
 
 ## <a name="related-articles"></a>Articles connexes
 
-[Comprendre les abonnements et les licences dans Office 365 pour les entreprises](../../commerce/licenses/subscriptions-and-licenses.md)
+[Comprendre les abonnements et les licences dans Microsoft 365 pour les entreprises](../../commerce/licenses/subscriptions-and-licenses.md)
 
 [Supprimer des licences de votre abonnement](../../commerce/licenses/remove-licenses-from-subscription.md)
 

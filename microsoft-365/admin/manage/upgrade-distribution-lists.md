@@ -1,5 +1,5 @@
 ---
-title: Transformer des listes de distribution en groupes Office 365
+title: Mettre à niveau les listes de distribution vers des groupes Microsoft 365 dans Outlook
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -18,31 +18,31 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 787d7a75-e201-46f3-a242-f698162ff09f
-description: Découvrez comment mettre à niveau une ou plusieurs listes de distribution vers des groupes Office 365 dans Outlook, et comment utiliser PowerShell pour mettre à niveau plusieurs listes de distribution simultanément.
-ms.openlocfilehash: c3acf1d47a37d79d666b1b951bea704c273ccf09
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+description: Découvrez comment mettre à niveau une ou plusieurs listes de distribution vers des groupes Microsoft 365 dans Outlook, et comment utiliser PowerShell pour mettre à niveau plusieurs listes de distribution simultanément.
+ms.openlocfilehash: 14eeedcc898c13c31362731699f575bc06f96878
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43212280"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627991"
 ---
-# <a name="upgrade-distribution-lists-to-office-365-groups-in-outlook"></a>Transformer des listes de distribution en groupes Office 365
+# <a name="upgrade-distribution-lists-to-microsoft-365-groups-in-outlook"></a>Mettre à niveau les listes de distribution vers des groupes Microsoft 365 dans Outlook
 
-Vous pouvez mettre à niveau les listes de distribution vers des groupes Office 365 avec Outlook. Il s’agit d’un excellent moyen d’accorder à la distribution de votre organisation toutes les fonctionnalités des groupes Office 365. [Pourquoi devriez-vous mettre à niveau vos listes de distribution vers des groupes dans Outlook ?](https://support.office.com/article/7fb3d880-593b-4909-aafa-950dd50ce188.aspx)
+Vous pouvez mettre à niveau les listes de distribution vers des groupes Microsoft 365 avec Outlook. Il s’agit d’un excellent moyen d’accorder à la distribution de votre organisation toutes les fonctionnalités des groupes Microsoft 365. [Pourquoi devriez-vous mettre à niveau vos listes de distribution vers des groupes dans Outlook ?](https://support.office.com/article/7fb3d880-593b-4909-aafa-950dd50ce188.aspx)
 
 Vous pouvez mettre à niveau les listes de distribution une par une ou plusieurs simultanément.
 
-## <a name="upgrade-one-or-many-distribution-lists-to-office-365-groups-in-outlook"></a>Mettre à niveau une ou plusieurs listes de distribution vers des groupes Office 365 dans Outlook
+## <a name="upgrade-one-or-many-distribution-lists-to-microsoft-365-groups-in-outlook"></a>Mettre à niveau une ou plusieurs listes de distribution vers des groupes Microsoft 365 dans Outlook
 
-Vous devez être un administrateur général d’Office 365 ou un administrateur Exchange pour mettre à niveau une liste de distribution. Pour effectuer une mise à niveau vers des groupes Office 365, un groupe de distribution doit avoir un propriétaire avec une boîte aux lettres. 
+Vous devez être un administrateur général ou un administrateur Exchange pour mettre à niveau une liste de distribution. Pour effectuer une mise à niveau vers les groupes Microsoft 365, un groupe de distribution doit avoir un propriétaire avec une boîte aux lettres. 
 
 1. Accédez au <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Centre d’administration Exchange</a>.
 
-2. Dans le centre d’administration Exchange, accédez à **groupes**de **destinataires** \> .<br/>Vous verrez une notification indiquant que des listes de distribution (également appelées **groupes de distribution** ) sont éligibles pour être mises à niveau vers les groupes Office 365.<br/> ![Sélectionnez le bouton prise en main](../../media/8cf838b4-2644-401f-a366-08c1eea183eb.png)
+2. Dans le centre d’administration Exchange, accédez à **groupes**de **destinataires** \> .<br/>Vous verrez une notification indiquant que des listes de distribution (également appelées **groupes de distribution** ) sont éligibles pour être mises à niveau vers les groupes Microsoft 365.<br/> ![Sélectionnez le bouton prise en main](../../media/8cf838b4-2644-401f-a366-08c1eea183eb.png)
 
 3. Sélectionnez une ou plusieurs listes de distribution (également appelées **groupe de distribution** ) dans la page **groupes** .<br/>![Sélectionner un groupe de distribution](../../media/2c303433-d60b-4100-a6ae-5809b03a8cdb.png)
 
-4. Sélectionnez l’icône de mise à niveau.<br/>![Icône de mise à niveau vers les groupes Office 365](../../media/1e28cb3d-bff3-4be3-8329-1902d2d54720.png)
+4. Sélectionnez l’icône de mise à niveau.<br/>![Icône de mise à niveau vers les groupes Microsoft 365](../../media/1e28cb3d-bff3-4be3-8329-1902d2d54720.png)
 
 5. Dans la boîte de dialogue informations, sélectionnez **Oui** pour confirmer la mise à niveau. Le processus commence immédiatement. En fonction de la taille et du nombre de listes de distribution que vous mettez à niveau, le processus peut prendre des minutes ou des heures.<br/>Si la liste de distribution ne peut pas être mise à niveau, une boîte de dialogue s’affiche. [Quels sont les listes de distribution qui ne peuvent pas être mises à niveau ?](#which-distribution-lists-cannot-be-upgraded).
 
@@ -77,7 +77,7 @@ Par exemple, si vous souhaitez mettre à niveau une distribution de listes de di
 `Upgrade-DistributionGroup -DlIdentities dl1@contoso.com`
 
 > [!NOTE]
-> Vous pouvez également mettre à niveau une seule liste de distribution vers un groupe Office 365 à l’aide de l’applet de commande PowerShell [New-UnifiedGroup](https://go.microsoft.com/fwlink/?LinkID=786379)
+> Vous pouvez également mettre à niveau une seule liste de distribution vers un groupe Microsoft 365 à l’aide de l’applet de commande PowerShell [New-UnifiedGroup](https://go.microsoft.com/fwlink/?LinkID=786379)
 
 ### <a name="upgrade-multiple-dls-in-a-batch"></a>Mettre à niveau plusieurs listes de distribution dans un lot
 
@@ -116,7 +116,7 @@ Get-DistributionGroup| Foreach-Object{
 }
 ```
 
-## <a name="faq-about-upgrading-distribution-lists-to-office-365-groups-in-outlook"></a>Forum aux questions sur la mise à niveau des listes de distribution vers des groupes Office 365 dans Outlook
+## <a name="faq-about-upgrading-distribution-lists-to-microsoft-365-groups-in-outlook"></a>Forum aux questions sur la mise à niveau des listes de distribution vers des groupes Microsoft 365 dans Outlook
 
 ### <a name="which-distribution-lists-cannot-be-upgraded"></a>Quelles listes de distribution ne peuvent pas être mises à niveau ?
 
@@ -149,11 +149,11 @@ Si vous souhaitez vérifier quelles listes de distribution sont éligibles pour 
 
 ### <a name="who-can-run-the-upgrade-scripts"></a>Qui peut exécuter les scripts de mise à niveau ?
 
-Personnes disposant de droits d’administrateur général ou d’administrateur d’Office 365.
+Personnes disposant de droits d’administrateur général ou d’administrateur Exchange.
 
 ### <a name="why-is-the-contact-card-still-showing-a-distribution-list-what-should-i-do-to-prevent-a-upgraded-distribution-list-from-showing-up-in-my-auto-suggest-list"></a>Pourquoi la carte de visite affiche-t-elle toujours une liste de distribution ? Que dois-je faire pour empêcher qu’une liste de distribution mise à niveau ne s’affiche dans ma liste de suggestions automatiques ?
 
-- Pour Outlook : lorsqu’une personne tente d’envoyer un courrier électronique dans Outlook en tapant le nom du groupe Office 365 après la migration, le destinataire est résolu en tant que liste de distribution au lieu du groupe. La carte de visite du destinataire est la carte de visite des listes de distribution. Cela est dû au cache de destinataires ou au cache de noms Nick dans Outlook. Le message électronique est envoyé au groupe, mais risque de confusion pour l’expéditeur.<br/>Vous pouvez effectuer les étapes de cette rubrique, des [informations sur la liste de saisie semi-automatique Outlook](https://go.microsoft.com/fwlink/?LinkID=798736) pour réinitialiser le cache, ce qui permet de résoudre ce problème.
+- Pour Outlook : lorsqu’une personne tente d’envoyer un courrier électronique dans Outlook en tapant le nom du groupe Microsoft 365 après la migration, le destinataire est résolu en tant que liste de distribution au lieu du groupe. La carte de visite du destinataire est la carte de visite des listes de distribution. Cela est dû au cache de destinataires ou au cache de noms Nick dans Outlook. Le message électronique est envoyé au groupe, mais risque de confusion pour l’expéditeur.<br/>Vous pouvez effectuer les étapes de cette rubrique, des [informations sur la liste de saisie semi-automatique Outlook](https://go.microsoft.com/fwlink/?LinkID=798736) pour réinitialiser le cache, ce qui permet de résoudre ce problème.
 
 - Pour Outlook sur le Web : dans le cas d’Outlook sur le Web, le destinataire de la liste de distribution restera dans le cache. Vous pouvez suivre les étapes de la section [supprimer le nom suggéré ou l’adresse de messagerie de la liste de saisie semi-automatique](https://support.office.com/article/9E1419D9-E88F-445B-B07F-F558B8A37C58.aspx) pour actualiser le cache pour afficher la carte de visite du groupe.
 

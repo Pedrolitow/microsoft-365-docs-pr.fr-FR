@@ -1,5 +1,5 @@
 ---
-title: Modifier les serveurs de noms pour configurer Office 365 auprès de Hostgator
+title: Modifier les serveurs de noms pour configurer Microsoft avec Hostgator
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -19,19 +19,19 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: f3bd3c62-0477-48e4-b2b5-21e329d67985
-description: Découvrez comment configurer Office 365 pour gérer les enregistrements DNS de votre domaine personnalisé sur Hostgator.
-ms.openlocfilehash: d592fc77513107679206a4ac187116c7d6fb794f
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+description: Découvrez comment configurer Microsoft pour gérer les enregistrements DNS de votre domaine personnalisé sur Hostgator.
+ms.openlocfilehash: 09f0409ed2a5f81b450c9aae7bb3699373ce6f22
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43212328"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43629886"
 ---
-# <a name="change-nameservers-to-set-up-office-365-with-hostgator"></a>Modifier les serveurs de noms pour configurer Office 365 auprès de Hostgator
+# <a name="change-nameservers-to-set-up-microsoft-365-with-hostgator"></a>Modifier les serveurs de noms pour configurer Microsoft 365 avec Hostgator
 
- **[Consultez les Forums aux questions des domaines](../setup/domains-faq.md)** si vous ne trouvez pas ce que vous recherchez.
+ **[Consultez les Forums aux questions sur les domaines](../setup/domains-faq.md)** si vous ne trouvez pas ce que vous recherchez.
   
-Si vous voulez qu'Office 365 gère vos enregistrements DNS Office 365 à votre place, suivez ces instructions (vous pouvez également [gérer tous vos enregistrements DNS Office 365 via Hostgator](create-dns-records-at-hostgator.md)).
+Suivez ces instructions si vous voulez que Microsoft gère vos enregistrements DNS pour vous. (Si vous préférez, vous pouvez [gérer tous vos enregistrements DNS Microsoft sur Hostgator](create-dns-records-at-hostgator.md).)
   
     
 ## <a name="point-your-domain-to-your-hosting-account"></a>Pointez votre domaine vers votre compte d'hébergement.
@@ -70,7 +70,7 @@ Suivez ces étapes pour associer votre domaine et vos comptes d'hébergement.
 > [!IMPORTANT]
 > Avant d’effectuer cette procédure, vous devez d’abord effectuer la procédure décrite dans la première section de cet article, [faire pointer votre domaine vers votre compte d’hébergement.](#point-your-domain-to-your-hosting-account).
   
-Avant d'utiliser votre domaine avec Office 365, nous devons vérifier que celui-ci vous appartient. Votre capacité à vous connecter à votre compte auprès de votre bureau d'enregistrement de domaines et à créer l'enregistrement DNS montre à Office 365 que le domaine vous appartient réellement.
+Avant d’utiliser votre domaine avec Microsoft, vous devez vous assurer que vous en êtes propriétaire. Votre capacité à vous connecter à votre compte auprès de votre bureau d’enregistrement de domaines et à créer l’enregistrement DNS prouve à Microsoft que vous êtes propriétaire du domaine.
   
 > [!NOTE]
 > Cet enregistrement sert uniquement à vérifier que vous êtes propriétaire du domaine. Vous pouvez éventuellement le supprimer ultérieurement.
@@ -80,7 +80,7 @@ Avant d'utiliser votre domaine avec Office 365, nous devons vérifier que celui-
     (Une adresse cPanel unique est affectée à chaque compte hébergé sur Hostgator. Votre adresse cPanel doit ressembler à ceci : https://YourSiteAddress:secure-port-numberéro-port-sécurisé. Le message d'inscription que vous avez reçu de Hostgator mentionne cette adresse.)
     
     > [!IMPORTANT]
-    > To have a cPanel associated with your domain, you need a hosting account with Hostgator. Pour commencer à utiliser Office 365, vous pouvez acheter un compte d’hébergement auprès d’Hostgator ou [modifier les enregistrements de serveur de noms de votre domaine (NS)](#change-your-domains-nameserver-ns-records) de sorte qu’il pointe vers Office 365. 
+    > To have a cPanel associated with your domain, you need a hosting account with Hostgator. Pour commencer, vous pouvez acheter un compte d’hébergement auprès de Hostgator ou [modifier les enregistrements de serveur de noms de votre domaine (NS)](#change-your-domains-nameserver-ns-records) de sorte qu’il pointe vers Microsoft. 
   
 2. Sur la page **panneau de configuration** , dans la zone **domaines** , sélectionnez **éditeur de zone DNS avancée**.
     
@@ -93,15 +93,15 @@ Avant d'utiliser votre domaine avec Office 365, nous devons vérifier que celui-
 |||||
 |:-----|:-----|:-----|:-----|
 |**Name (Nom)** <br/> |**TTL (Durée de vie)** <br/> |**Type (Type)** <br/> |**TXT Data (Données TXT)** <br/> |
-|Utilisez votre  *nom_de_domaine*  (par exemple, fourthcoffee.com).<br/> **Cette valeur DOIT se terminer par un point (.)** <br/> |0,1  <br/> |TXT  <br/> |MS=ms *XXXXXXXX*  <br/> **Remarque :** il s'agit d'un exemple. Utilisez votre valeur **Adresse de destination ou de pointage** spécifique ici, à partir du tableau dans Office 365. [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md)     <br/>  |
+|Utilisez votre  *nom_de_domaine*  (par exemple, fourthcoffee.com).<br/> **Cette valeur DOIT se terminer par un point (.)** <br/> |0,1  <br/> |TXT  <br/> |MS=ms *XXXXXXXX*  <br/> **Remarque :** il s'agit d'un exemple. Utilisez votre **adresse de destination ou de pointage** spécifique ici, à partir du tableau. [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md)     <br/>  |
    
 4. Sélectionnez **Ajouter un enregistrement**.
     
 5. Patientez quelques minutes, le temps que l'enregistrement que vous venez de créer soit mis à jour sur Internet.
     
-L’enregistrement étant désormais ajouté sur le site de votre bureau d’enregistrement de domaines, revenez à Office 365 et demandez à Office 365 de rechercher l’enregistrement.
+À présent que vous avez ajouté l’enregistrement sur le site de votre bureau d’enregistrement de domaines, vous allez retourner à Microsoft et demander une recherche pour l’enregistrement.
   
-Lorsqu’Office 365 trouve l’enregistrement TXT approprié, votre domaine est vérifié.
+Lorsque Microsoft trouve l’enregistrement TXT correct, votre domaine est vérifié.
   
 1. Dans le centre d’administration, accédez à la page **Paramètres** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domaines</a>.
 
@@ -113,14 +113,14 @@ Lorsqu’Office 365 trouve l’enregistrement TXT approprié, votre domaine est
 4. Dans la page **Vérifier le domaine**, sélectionnez **Vérifier**.
     
 > [!NOTE]
-> Généralement, les modifications DNS sont appliquées dans les 15 minutes. Il peut toutefois arriver que la répercussion d’une modification dans le système DNS sur Internet prenne davantage de temps. Si vous rencontrez des difficultés avec le flux de courrier ou d'autres problèmes suite à l'ajout des enregistrements DNS, consultez [Rechercher et corriger les problèmes suite à l'ajout de votre domaine ou des enregistrements DNS dans Office 365](../get-help-with-domains/find-and-fix-issues.md). 
+> Généralement, les modifications DNS sont appliquées dans les 15 minutes. Il peut toutefois arriver que la répercussion d’une modification dans le système DNS sur Internet prenne davantage de temps. Si vous rencontrez des problèmes avec le flux de messagerie ou d’autres problèmes après avoir ajouté des enregistrements DNS, consultez [la rubrique Rechercher et corriger les problèmes après avoir ajouté votre domaine ou des enregistrements DNS](../get-help-with-domains/find-and-fix-issues.md). 
   
 ## <a name="change-your-domains-nameserver-ns-records"></a>Modifier les enregistrements de serveur de noms (NS) de votre domaine
 
-Pour finaliser la configuration de votre domaine avec Office 365, vous devez modifier les enregistrements de serveur de noms auprès de votre bureau d'enregistrement de domaines afin qu'ils pointent vers les serveurs de noms principal et secondaire Office 365. Office 365 est ainsi informé qu'il doit mettre à jour les enregistrements DNS du domaine pour vous. Pour finaliser la configuration, nous ajouterons tous les enregistrements de façon à ce que vous puissiez utiliser la messagerie, Skype Entreprise Online et votre site web public avec votre domaine.
+Pour terminer la configuration de votre domaine avec Microsoft, vous devez modifier les enregistrements de serveur de noms de votre domaine au niveau de votre bureau d’enregistrement de domaines afin de pointer vers les serveurs de noms principaux et secondaires Microsoft. Cela permet à Microsoft de mettre à jour les enregistrements DNS du domaine pour vous. Pour finaliser la configuration, nous ajouterons tous les enregistrements de façon à ce que vous puissiez utiliser la messagerie, Skype Entreprise Online et votre site web public avec votre domaine.
   
 > [!CAUTION]
-> Lorsque vous modifiez les enregistrements de serveur de noms de votre domaine de façon à ce qu'ils pointent vers les serveurs de noms Office 365, tous les services actuellement associés à votre domaine sont affectés. Par exemple, les messages envoyés à votre domaine (tel que thomas@ *votre_domaine*  .com) arriveront dans Office 365 une fois cette modification appliquée.
+> Lorsque vous modifiez les enregistrements de serveur de noms de votre domaine pour qu’ils pointent vers les serveurs de noms Microsoft, tous les services actuellement associés à votre domaine sont affectés. Par exemple, tous les messages électroniques envoyés à votre domaine (par exemple, rob@ *your_domain* . com) débuteront à Microsoft après avoir effectué cette modification.
   
 > [!IMPORTANT]
 > La procédure suivante montre comment supprimer tous les autres serveurs de noms indésirables de la liste, et également comment ajouter les serveurs de noms corrects s’ils ne sont pas déjà répertoriés. Une fois que vous avez effectué les étapes de cette section, les seuls serveurs de noms qui doivent être répertoriés sont les quatre suivants : **NS1.BDM.microsoftonline.com**, **ns2.BDM.microsoftonline.com**, **NS3.BDM.microsoftonline.com**et **NS4.BDM.microsoftonline.com**.
@@ -179,4 +179,4 @@ Pour finaliser la configuration de votre domaine avec Office 365, vous devez mod
     ![Hostgator-BP-Redelegate-1-8](../../media/bd6b0dfa-5d39-4805-970d-7ab153cff117.png)
   
 > [!NOTE]
-> L'application des modifications apportées à votre enregistrement de serveur de noms dans le système DNS sur Internet peut prendre plusieurs heures. Vous pourrez ensuite utiliser votre messagerie et les autres services Office 365 avec votre domaine.
+> L'application des modifications apportées à votre enregistrement de serveur de noms dans le système DNS sur Internet peut prendre plusieurs heures. Votre messagerie Microsoft et les autres services seront tous configurés pour fonctionner avec votre domaine.

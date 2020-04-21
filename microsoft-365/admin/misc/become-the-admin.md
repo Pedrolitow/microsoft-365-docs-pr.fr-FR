@@ -1,5 +1,5 @@
 ---
-title: Effectuer un rachat administratif interne dans Office 365
+title: Effectuer un rachat administratif interne
 f1.keywords:
 - CSH
 ms.author: pebaum
@@ -18,15 +18,15 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: b9707ec8-2247-4e25-9bad-f11ddbc686e4
-description: Découvrez comment vérifier la propriété de votre messagerie et de votre domaine pour prendre le relais d’un locataire non géré dans Office 365
-ms.openlocfilehash: 3c732d55c533c72983aaa59e39e7bb8ff130f280
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+description: Découvrez comment vérifier la propriété de votre messagerie et de votre domaine pour prendre le relais d’un locataire non géré dans Microsoft 365
+ms.openlocfilehash: 1772ba9929433c87603d4b9d7027419063fd2fca
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43212244"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627943"
 ---
-# <a name="perform-an-internal-admin-takeover-in-office-365"></a>Effectuer un rachat administratif interne dans Office 365
+# <a name="perform-an-internal-admin-takeover"></a>Effectuer un rachat administratif interne
 
  **[Consultez les Forums aux questions sur les domaines](../setup/domains-faq.md)** si vous ne trouvez pas ce que vous recherchez. 
 
@@ -67,11 +67,11 @@ Si vous êtes un administrateur et que vous souhaitez prendre le relais d’un c
   
 ## <a name="related-articles"></a>Articles connexes
 
-YouTube : [3 steps to do an IT Admin Takeover for Power BI and Office 365 (Prise de contrôle administratif pour Power BI et Office 365 en 3 étapes)](https://www.youtube.com/watch?v=xt5EsrQBZZk)
+YouTube : [3 étapes pour effectuer une prise en compte de l’administrateur informatique pour Power bi et Microsoft 365](https://www.youtube.com/watch?v=xt5EsrQBZZk)
 
 [Prise en compte de l’administrateur dans Azure AD](https://docs.microsoft.com/azure/active-directory/users-groups-roles/domains-admin-takeover)
 
-[Obtenir de l’aide sur les domaines Office 365](../get-help-with-domains/get-help-with-domains.md)
+[Obtenir de l’aide sur les domaines](../get-help-with-domains/get-help-with-domains.md)
 
 [Utilisation de l’authentification en libre-service dans votre organisation](self-service-sign-up.md)
   

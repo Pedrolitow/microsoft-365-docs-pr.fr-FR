@@ -15,16 +15,16 @@ ms.assetid: b68df621-0a5f-4824-8abc-41e0c4fd1398
 ms.collection:
 - M365-security-compliance
 description: L’administrateur peut apprendre à configurer la prise en charge des messages électroniques entrants anonymes provenant de sources IPv6 dans Exchange Online et Exchange Online Protection.
-ms.openlocfilehash: 414c10f3387138ed7e62f2de4e8549e45d128d2e
-ms.sourcegitcommit: 256184cf731c1851b04a07dd7d59ecf020d02635
+ms.openlocfilehash: 86de431f8f46af1c5ddae8ecc91f326c6e3280e6
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43131518"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631216"
 ---
-# <a name="add-support-for-anonymous-inbound-email-over-ipv6-in-office-365"></a>Ajouter la prise en charge du courrier électronique entrant anonyme sur IPv6 dans Office 365
+# <a name="add-support-for-anonymous-inbound-email-over-ipv6-in-microsoft-365"></a>Ajouter la prise en charge du courrier électronique entrant anonyme sur IPv6 dans Microsoft 365
 
-Les organisations Office 365 avec des boîtes aux lettres Exchange Online et les organisations Exchange Online Protection (EOP) autonomes sans boîtes aux lettres Exchange Online prennent en charge les messages électroniques entrants anonymes sur IPv6. Le serveur de messagerie IPv6 source doit respecter les deux conditions suivantes :
+Les organisations Microsoft 365 avec des boîtes aux lettres Exchange Online et les organisations Exchange Online Protection (EOP) autonomes sans boîte aux lettres Exchange Online prennent en charge les messages électroniques entrants anonymes sur IPv6. Le serveur de messagerie IPv6 source doit respecter les deux conditions suivantes :
 
 - L’adresse IPv6 source doit avoir un enregistrement DNS de recherche inversée (PTR) valide qui permet à la destination de trouver le nom de domaine à partir de l’adresse IPv6.
 

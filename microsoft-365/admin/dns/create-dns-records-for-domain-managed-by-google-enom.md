@@ -20,18 +20,18 @@ search.appverid:
 - MOE150
 ms.assetid: 3c490fbf-7833-4e43-be34-ed0dc3cce5e3
 description: Apprenez à accéder à eNom et à créer un DNS via la page Google Domains.
-ms.openlocfilehash: 8fc13ea2ccc7dfee510ef7abb72f88030d048943
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+ms.openlocfilehash: 7d79350f163d1b120d3dd45bc7bbb3e57583bf05
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43210657"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43629130"
 ---
 # <a name="create-dns-records-when-your-domain-is-managed-by-google-enom"></a>Créer des enregistrements DNS lorsque votre domaine est géré par Google (eNom)
 
- **[Consultez les Forums aux questions des domaines](../setup/domains-faq.md)** si vous ne trouvez pas ce que vous recherchez. 
+ **[Consultez les Forums aux questions sur les domaines](../setup/domains-faq.md)** si vous ne trouvez pas ce que vous recherchez. 
   
-Pour migrer vos comptes de courrier vers Office 365, vous devez créer un enregistrement DNS via votre bureau d'enregistrement de domaines.
+Pour migrer vos comptes de messagerie vers Microsoft, vous devez créer un enregistrement DNS au niveau de votre bureau d’enregistrement de domaines.
   
 Si vous avez acheté votre domaine par le biais de Google lors de votre inscription à votre compte **Google Apps for Work** , vos enregistrements DNS sont gérés par Google, mais enregistrés auprès de eNom. 
   
@@ -89,11 +89,11 @@ Vous pouvez accéder à eNom et créer DNS, via la page Google **Domains** . Sui
     |@  <br/> ||TXT  <br/> |
 
     > [!NOTE]
-    > This is an example. Utilisez votre valeur **Adresse de destination ou de pointage** spécifique ici, à partir du tableau dans Office 365. 
+    > This is an example. Utilisez votre **adresse de destination ou de pointage** spécifique ici, à partir du tableau. 
   
     [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md)
   
-12. Cliquez sur **Enregistrer**.
+12. Sélectionnez **Enregistrer**.
     
     ![Google-Apps-eNom-configure-1-9](../../media/7a6f7b45-8f79-487b-afe4-05949c2c04e8.png)
   

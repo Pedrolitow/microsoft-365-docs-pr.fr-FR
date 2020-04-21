@@ -1,5 +1,5 @@
 ---
-title: Rapports Office 365 dans le centre d’administration-utilisation de l’appareil Microsoft teams
+title: Rapports Microsoft 365 dans le centre d’administration-utilisation de l’appareil Microsoft teams
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -19,17 +19,17 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 917b3e1d-203e-4439-8539-634e80196687
-description: Obtenez des informations sur les applications Microsoft teams utilisées dans votre organisation en obtenant le rapport d’utilisation des applications Microsoft teams à partir des rapports Office 365.
-ms.openlocfilehash: b0937e4366f1b10b0908ee8764986f2ded2999ec
-ms.sourcegitcommit: 2b626a7924b4be08f6eb21181453b778e6fde418
+description: Obtenez des informations sur les applications Microsoft teams utilisées dans votre organisation en obtenant le rapport d’utilisation des applications Microsoft teams à partir des rapports Microsoft 365.
+ms.openlocfilehash: 9c79f83d90905470c56fd62489f1439b3383841f
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/30/2020
-ms.locfileid: "43046962"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43621209"
 ---
-# <a name="office-365-reports-in-the-admin-center---microsoft-teams-device-usage"></a>Rapports Office 365 dans le centre d’administration-utilisation de l’appareil Microsoft teams
+# <a name="microsoft-365-reports-in-the-admin-center---microsoft-teams-device-usage"></a>Rapports Microsoft 365 dans le centre d’administration-utilisation de l’appareil Microsoft teams
 
-Le tableau de bord **rapports** Office 365 affiche une vue d’ensemble de l’activité sur les produits de votre organisation. Il vous permet d'explorer les rapports au niveau de chaque produit afin d'offrir des informations plus précises sur les activités pour chaque produit. Consultez la rubrique [Présentation des rapports](activity-reports.md). Dans le rapport Utilisation des applications Microsoft Teams, vous pouvez obtenir des informations sur les applications Microsoft Teams utilisées dans votre organisation.
+Le tableau de bord **rapports** Microsoft 365 affiche une vue d’ensemble de l’activité sur les produits de votre organisation. Il vous permet d'explorer les rapports au niveau de chaque produit afin d'offrir des informations plus précises sur les activités pour chaque produit. Consultez la rubrique [Présentation des rapports](activity-reports.md). Dans le rapport Utilisation des applications Microsoft Teams, vous pouvez obtenir des informations sur les applications Microsoft Teams utilisées dans votre organisation.
   
 > [!NOTE]
 > Vous devez être un administrateur général, un lecteur global ou un lecteur de rapports dans Microsoft 365 ou un administrateur Exchange, SharePoint, teams, Team communications ou Skype entreprise pour afficher des rapports.  
@@ -45,7 +45,7 @@ Le tableau de bord **rapports** Office 365 affiche une vue d’ensemble de l’a
 
 Les graphiques **Utilisateurs** et **Distribution** donnent un aperçu de l'utilisation des applications Microsoft Teams. 
   
-![Office 365 reports - Microsoft Teams app usage](../../media/de35c4de-76b4-4109-a806-66774665499b.png)
+![Rapports Microsoft 365-utilisation des applications Microsoft teams](../../media/de35c4de-76b4-4109-a806-66774665499b.png)
   
 |||
 |:-----|:-----|

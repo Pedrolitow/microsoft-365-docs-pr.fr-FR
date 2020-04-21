@@ -1,5 +1,5 @@
 ---
-title: Configurer les options de publications standard et ciblée dans Office 365
+title: Configurer les options de publication standard ou ciblée
 f1.keywords:
 - CSH
 ms.author: sirkkuw
@@ -21,30 +21,30 @@ search.appverid:
 - GEA150
 ms.assetid: 3b3adfa4-1777-4ff0-b606-fb8732101f47
 description: Découvrez comment configurer l’option de publication pour les mises à jour de nouveaux produits et fonctionnalités dans le centre d’administration 365 de Microsoft.
-ms.openlocfilehash: d6c2eab340f4401fb31e4d9e814fbd326573569a
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 11672e46acb3124c8fd840ab19ee683cfd6af94f
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42361799"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43628111"
 ---
-# <a name="set-up-the-standard-or-targeted-release-options-in-office-365"></a>Configurer les options de publications standard et ciblée dans Office 365
+# <a name="set-up-the-standard-or-targeted-release-options"></a>Configurer les options de publication standard ou ciblée
 
-[] Avec Office 365, vous recevez les nouvelles mises à jour et fonctionnalités des produits dès que celles-ci sont disponibles. Vous n'avez donc plus besoin de procéder à des mises à jour onéreuses chaque année. De plus, vous pouvez gérer la manière dont votre organisation reçoit ces mises à jour. Par exemple, vous pouvez vous inscrire à une publication anticipée et faire profiter l'ensemble de votre organisation des mises à jour en avance, ou sélectionner un panel restreint d'utilisateurs qui les testeront. Vous pouvez également décider de rester sur le programme de publication standard et recevoir les mises à jour plus tard. Cette article présente les différents programmes de publication disponibles, et explique la manière dont vous pouvez les utiliser au profit de votre organisation.
+Avec Microsoft 365, vous recevez de nouvelles mises à jour de produits et de nouvelles fonctionnalités dès qu’elles sont disponibles au lieu d’effectuer des mises à jour coûteuses tous les ans. Vous n'avez donc plus besoin de procéder à des mises à jour onéreuses chaque année. De plus, vous pouvez gérer la manière dont votre organisation reçoit ces mises à jour. Par exemple, vous pouvez vous inscrire à une publication anticipée et faire profiter l'ensemble de votre organisation des mises à jour en avance, ou sélectionner un panel restreint d'utilisateurs qui les testeront. Vous pouvez également décider de rester sur le programme de publication standard et recevoir les mises à jour plus tard. Cette article présente les différents programmes de publication disponibles, et explique la manière dont vous pouvez les utiliser au profit de votre organisation.
   
 > [!IMPORTANT]
-> Les mises à jour Office 365 décrites dans cet article s'appliquent à Office 365, SharePoint Online et Exchange Online, pas à Skype Entreprise et aux services qui y sont associés. Ces options de publication sont des canaux ciblés et privilégiés pour la publication de modifications apportées à Office 365. En revanche, ces options ne peuvent en aucun cas être garanties à chaque fois ou pour toutes les mises à jour. 
+> Les mises à jour de Microsoft 365 décrites dans cet article s’appliquent à Microsoft 365, SharePoint Online et Exchange Online. Ces options de publication sont des canaux ciblés et privilégiés pour la publication de modifications apportées à Office 365. Ces options de publication sont ciblées, meilleures moyens de publier les modifications apportées à Microsoft 365, mais elles ne sont pas garanties à tout moment ou pour toutes les mises à jour. 
   
 ## <a name="how-it-works---release-validation"></a>Mode de fonctionnement - Validation de publication
 
-Toute nouvelle version est d’abord testée et validée par l’équipe de fonctionnalité, puis par l’équipe de fonctionnalité Office 365, suivie par Microsoft. Un fois les tests et la validation internes accomplis, l'étape suivante consiste en une **publication ciblée** (anciennement nommée First Release) à destination des clients inscrits. À chaque cycle de publication, Microsoft recueille des commentaires, puis valide davantage la qualité en surveillant des métriques d'utilisation clés. Cette validation progressive est en place pour s'assurer que la publication à l'échelle mondiale est aussi robuste que possible. Les publications sont illustrées dans la figure suivante. 
+Toute nouvelle version est d’abord testée et validée par l’équipe de fonctionnalité, puis par l’équipe de fonctionnalité Microsoft 365 entière, suivie par Microsoft. Un fois les tests et la validation internes accomplis, l'étape suivante consiste en une **publication ciblée** (anciennement nommée First Release) à destination des clients inscrits. À chaque cycle de publication, Microsoft recueille des commentaires, puis valide davantage la qualité en surveillant des métriques d'utilisation clés. Cette validation progressive est en place pour s'assurer que la publication à l'échelle mondiale est aussi robuste que possible. Les publications sont illustrées dans la figure suivante. 
   
-![Sonneries de validation de publication pour Office 365](../../media/73611ed3-2d8c-4e7b-8074-9f03b239f9ed.png)
+![Sonneries de validation de publication pour Microsoft 365](../../media/73611ed3-2d8c-4e7b-8074-9f03b239f9ed.png)
   
-Pour les mises à jour importantes, les clients Office sont initialement avertis par la feuille de [route Microsoft 365](https://products.office.com/business/office-365-roadmap). Une fois que la mise à jour s’avère plus proche du déploiement, elle est communiquée via votre [Centre de messages Office 365](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/MessageCenter).
+Pour les mises à jour importantes, les clients Office sont initialement avertis par la feuille de [route Microsoft 365](https://products.office.com/business/office-365-roadmap). Une fois que la mise à jour s’avère plus proche du déploiement, elle est communiquée via votre [Centre de messages Microsoft 365](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/MessageCenter).
 
 > [!NOTE]
-> Vous avez besoin d’un compte Office 365 ou Azure AD pour accéder à votre centre de messages via le [Centre d’administration](https://docs.microsoft.com/office365/admin/admin-overview/about-the-admin-center). Plan d’accueil Office 365 les utilisateurs ne disposent pas d’un centre d’administration.
+> Vous avez besoin d’un compte Microsoft 365 ou Azure AD pour accéder à votre centre de messages via le [Centre d’administration](https://docs.microsoft.com/office365/admin/admin-overview/about-the-admin-center). Plan d’accueil Microsoft 365 les utilisateurs ne disposent pas d’un centre d’administration.
 
 
 ## <a name="standard-release"></a>Publication standard
@@ -73,7 +73,7 @@ Si vous [configurez l’option de publication dans le centre d’administration]
   
 ## <a name="benefits-of-targeted-release"></a>Avantages de la publication ciblée
 
-Une publication ciblée permet aux administrateurs, aux gestionnaires de modification ou à toute autre personne responsable des mises à jour Office 365 de préparer des changements à venir en leur offrant la possibilité d'effectuer les opérations suivantes :
+La publication ciblée permet aux administrateurs, responsables des modifications ou autres personnes responsables des mises à jour de Microsoft 365 de se préparer aux modifications à venir en les autorisant :
   
 - tester et valider les nouvelles mises à jour avant qu'elles soient publiées pour tous les utilisateurs au sein de l'organisation ;
     
@@ -87,12 +87,12 @@ Une publication ciblée permet aux administrateurs, aux gestionnaires de modific
     
 ## <a name="set-up-the-release-option-in-the-admin-center"></a>Configurer l’option de publication dans le centre d’administration
 
-Vous pouvez modifier la manière dont votre organisation reçoit les mises à jour Office 365 en procédant comme suit. Pour choisir cette options, vous devez être un administrateur général dans Office 365.
+Vous pouvez modifier la façon dont votre organisation reçoit les mises à jour de Microsoft 365 en procédant comme suit. Vous devez être un administrateur général dans Microsoft 365 pour y participer.
   
 > [!IMPORTANT]
-> Jusqu'à 24 heures peuvent être nécessaires pour que les modifications ci-dessous soient appliquées dans Office 365. Si vous décidez de ne plus participer au programme de publication ciblée après l'avoir activé, vos utilisateurs risquent de perdre l'accès aux fonctionnalités qui n'ont pas encore atteint le niveau de publication planifiée. 
+> Le suivi des modifications suivantes peut prendre jusqu’à 24 heures pour être pris en compte dans Microsoft 365. Si vous décidez de ne plus participer au programme de publication ciblée après l'avoir activé, vos utilisateurs risquent de perdre l'accès aux fonctionnalités qui n'ont pas encore atteint le niveau de publication planifiée. 
   
-1. Dans le centre d’administration, accédez au **** > **paramètre**paramètres, puis sous l’onglet Profil de l' **organisation** , choisissez Modifier les **Préférences de publication**.
+1. Dans le centre d’administration, accédez au **Settings** > **paramètre**paramètres, puis sous l’onglet Profil de l' **organisation** , choisissez Modifier les **Préférences de publication**.
 
 5. Pour désactiver la version ciblée, sélectionnez **version standard**, puis **enregistrer les modifications**. 
     
@@ -112,4 +112,4 @@ Pour installer une build de publication ciblée d'Office, [suivez ces étapes](h
   
 ## <a name="learn-more"></a>En savoir plus
 
-Découvrez comment [gérer les messages](https://docs.microsoft.com/office365/admin/manage/message-center) dans votre [Centre de messages Office 365](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/MessageCenter) pour obtenir des notifications sur les mises à jour et les versions ultérieures d’Office 365.
+Découvrez comment [gérer les messages](https://docs.microsoft.com/office365/admin/manage/message-center) dans votre [Centre de messages Microsoft 365](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/MessageCenter) pour obtenir des notifications sur les mises à jour et les versions futures de Microsoft 365.

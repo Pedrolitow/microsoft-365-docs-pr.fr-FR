@@ -10,12 +10,12 @@ ms.collection: SPO_Content
 localization_priority: Normal
 f1.keywords: NOCSH
 description: Découvrez comment collaborer avec des invités dans Teams.
-ms.openlocfilehash: 54bf52eebc77e1cce8e1c05a708572d7d1e7fdae
-ms.sourcegitcommit: 21338a9287017a66298e0ff557e80051946ebf13
+ms.openlocfilehash: 4b395f0086198c6226d720c38fc4ea13b1a9d887
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "42604523"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43630748"
 ---
 # <a name="collaborate-with-guests-in-a-team"></a>Collaborer avec des invités au sein d’une équipe
 
@@ -68,17 +68,17 @@ Pour définir les paramètres d’accès invité aux équipes
 > [!NOTE]
 > Le paramètre invité de teams peut prendre jusqu’à vingt-quatre heures après son activation.
 
-## <a name="office-365-groups-guest-settings"></a>Les paramètres invités des groupes Office 365
+## <a name="microsoft-365-groups-guest-settings"></a>Paramètres invités des groupes Microsoft 365
 
-Teams utilise les groupes Office 365 pour les membres de l’équipe. Les paramètres invités des groupes Office 365 doivent être activés pour que l’accès invité dans teams puisse fonctionner.
+Teams utilise les groupes Microsoft 365 pour les membres de l’équipe. Les paramètres invités des groupes Microsoft 365 doivent être activés pour que l’accès invité dans teams puisse fonctionner.
 
-![Capture d’écran des paramètres d’invité des Groupes Office 365 dans le Centre d’administration Microsoft 365](../media/office-365-groups-guest-settings.png)
+![Capture d’écran des paramètres invités des groupes Microsoft 365 dans le centre d’administration Microsoft 365](../media/office-365-groups-guest-settings.png)
 
-Pour définir les paramètres invités des groupes Office 365
+Pour définir les paramètres invités des groupes Microsoft 365
 
 1. Dans le centre d’administration Microsoft 365, dans le volet de navigation de gauche, développez **paramètres**.
 2. Cliquez sur **Services & compléments**.
-3. Dans la liste, cliquez sur **groupes Office 365**.
+3. Dans la liste, cliquez sur **groupes Microsoft 365**.
 4. Assurez-vous que les **membres de groupe Let en dehors de votre organisation accèdent au contenu de groupe** et que les **propriétaires de groupes ajoutent des personnes en dehors de votre organisation aux** cases à cocher sont activées.
 5. Si vous avez apporté des modifications, cliquez sur **enregistrer les modifications**.
 

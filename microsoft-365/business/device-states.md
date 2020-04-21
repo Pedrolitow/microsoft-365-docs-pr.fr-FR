@@ -24,13 +24,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: c3ac23c5-d4b4-4b1b-b7ce-ea759521bf8c
-description: Découvrez les différents États des appareils dans la liste actions de l’appareil dans la rubrique Accueil de l’administrateur de Microsoft 365 Business.
-ms.openlocfilehash: bed1610814ca0d60adb4b4b3d0018e3e7e6d763f
-ms.sourcegitcommit: 217de0fc54cbeaea32d253f175eaf338cd85f5af
+description: Découvrez les différents États des appareils dans la liste actions de l’appareil dans la rubrique Accueil de l’administrateur dans Microsoft 365 pour les entreprises.
+ms.openlocfilehash: 1a66e76dd3a74428923292427b01551db2449e48
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42560817"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627243"
 ---
 # <a name="device-states"></a>États des appareils
 
@@ -40,9 +40,9 @@ Les appareils de la liste **Actions de l'appareil** (accueil Administrateur \> *
   
 |**État**|**Description**|
 |:-----|:-----|
-|Géré par Intune  <br/> |Géré par Microsoft 365 Entreprise.  <br/> |
-|Mise hors service en attente  <br/> |Microsoft 365 Entreprise s'apprête à supprimer des données d'entreprise de l'appareil.  <br/> |
-|Mise hors service en cours  <br/> |Microsoft 365 Entreprise est en train de supprimer des données d'entreprise de l'appareil.  <br/> |
+|Géré par Intune  <br/> |Géré par Microsoft 365 Business Premium.  <br/> |
+|Mise hors service en attente  <br/> |Microsoft 365 Business Premium se prépare à supprimer les données d’entreprise de l’appareil.  <br/> |
+|Mise hors service en cours  <br/> |Microsoft 365 Business Premium supprime actuellement les données d’entreprise de l’appareil.  <br/> |
 |Échec de la mise hors service  <br/> | L'action de suppression des données d'entreprise a échoué.  <br/> |
 |Retrait annulé  <br/> |L’action de déclassement a été annulée.  <br/> |
 |Réinitialisation en attente  <br/> |En attente du rétablissement des paramètres d'usine.  <br/> |
@@ -51,5 +51,5 @@ Les appareils de la liste **Actions de l'appareil** (accueil Administrateur \> *
 |Effacement annulé  <br/> |La réinitialisation usine a été annulée.  <br/> |
 |Défectueux  <br/> |Une action est en attente (ou en cours), mais l’appareil n’a pas archivé pendant plus de 30 jours.  <br/> |
 |Suppression en attente  <br/> |Une action de suppression est en attente.  <br/> |
-|Détecté  <br/> |Microsoft 365 Entreprise a détecté l'appareil.  <br/> |
+|Détecté  <br/> |Microsoft 365 Business Premium a détecté l’appareil.  <br/> |
    

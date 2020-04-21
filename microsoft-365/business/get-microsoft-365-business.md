@@ -1,5 +1,5 @@
 ---
-title: Obtenir Microsoft 365 entreprise auprès du centre de partenaires
+title: Obtenir Microsoft 365 Business Premium auprès du centre de partenaires
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -23,33 +23,33 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
-description: Découvrez les options disponibles pour l’achat de Microsoft 365 Business et des instructions détaillées pour l’acheter auprès du centre partenaires Microsoft.
-ms.openlocfilehash: ccbdb928c0f1268fb7019793b6246eef386daa45
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+description: Découvrez les options disponibles pour l’achat de Microsoft 365 Business Premium et des instructions détaillées pour l’acheter auprès du centre partenaires Microsoft.
+ms.openlocfilehash: 4247160c87a6a910358d9b740b28dc14747b72a8
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42633592"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627229"
 ---
-# <a name="get-microsoft-365-business"></a>Obtenir Microsoft 365 Business
+# <a name="get-microsoft-365-business-premium"></a>Obtenir Microsoft 365 Business Premium
 
-## <a name="get-microsoft-365-business-from-microsoft"></a>Obtenir Microsoft 365 Business auprès de Microsoft
+## <a name="get-microsoft-365-business-premium-from-microsoft"></a>Obtenir Microsoft 365 Business Premium de Microsoft
 
-Si vous ne disposez pas d’un partenaire et que vous souhaitez obtenir Microsoft 365 entreprise, vous pouvez l' [acheter ici](https://www.microsoft.com/en-US/microsoft-365/business).
+Si vous ne disposez pas d’un partenaire et que vous souhaitez obtenir Microsoft 365 Business Premium, vous pouvez l' [acheter ici](https://www.microsoft.com/en-US/microsoft-365/business).
 
-Pour obtenir des instructions détaillées, reportez-vous à la rubrique [Inscrivez-vous à Microsoft 365 Business](sign-up.md) .
+Pour obtenir des instructions détaillées, reportez-vous à la rubrique Inscrivez-vous [à Microsoft 365 Business Premium](sign-up.md) .
 
-Vous pouvez également accéder à un [Microsoft Store](https://www.microsoft.com/en-us/store/locations/find-a-store?icid=en_US_Store_UH_FAS) pour acheter Microsoft 365 entreprise et obtenir de l’aide.
+Vous pouvez également accéder à un [Microsoft Store](https://www.microsoft.com/en-us/store/locations/find-a-store?icid=en_US_Store_UH_FAS) pour acheter Microsoft 365 Business Premium et obtenir de l’aide au programme d’installation.
   
-## <a name="get-microsoft-365-business-from-microsoft-partner-center"></a>Obtenir Microsoft 365 Business auprès de l'Espace partenaires Microsoft
+## <a name="get-microsoft-365-business-premium-from-microsoft-partner-center"></a>Obtenir Microsoft 365 Business Premium à partir du centre de partenaires Microsoft
 
 1. Connectez-vous à l'[Espace partenaires Microsoft](https://go.microsoft.com/fwlink/p/?linkid=849910) à l'aide des informations d'identification que vous avez créées lorsque vous vous êtes inscrit au programme Fournisseurs de services cloud. 
     
-2. Dans le tableau de bord du partenaire, sélectionnez **clients**, puis votre client ou ajoutez un nouveau client avant d’obtenir Microsoft 365 Business.
+2. Dans le tableau de bord du partenaire, sélectionnez **clients**, puis votre client ou ajoutez un nouveau client avant d’obtenir Microsoft 365 Business Premium.
     
     ![Dans le centre de partenaires Microsoft, ajoutez un client.](../media/ec807d07-bbd2-411f-8fe1-c644cf9a3882.png)
   
-3. Sur la page **abonnement** du client, sélectionnez **Ajouter un abonnement**, choisissez l’option petite entreprise sous catalogue, puis choisissez **Microsoft 365 entreprise**.
+3. Sur la page **abonnement** du client, sélectionnez **Ajouter un abonnement**, choisissez l’option petite entreprise sous catalogue, puis choisissez **Microsoft 365 Business Premium**.
     
     Sélectionnez le nombre de licences dont vous avez besoin (jusqu'à 300). Si vous avez plus de 300 utilisateurs, reportez-vous à la rubrique [Microsoft 365 Enterprise](https://go.microsoft.com/fwlink/p/?linkid=862316) . 
     

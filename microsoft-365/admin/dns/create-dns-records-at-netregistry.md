@@ -1,5 +1,5 @@
 ---
-title: Créer des enregistrements DNS dans NetRegistry pour Office 365
+title: Créer des enregistrements DNS sur NetRegistry pour Microsoft
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -20,15 +20,15 @@ search.appverid:
 - MOE150
 - BEA160
 ms.assetid: 48e09394-2287-4b3c-9853-21eadf61277e
-description: Découvrez comment vérifier votre domaine et configurer les enregistrements DNS pour la messagerie, Skype entreprise Online et d’autres services sur NetRegistry pour Office 365.
-ms.openlocfilehash: e1f2414817357b8435bc002860a35c6e76d4314e
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+description: Découvrez comment vérifier votre domaine et configurer les enregistrements DNS pour la messagerie, Skype entreprise Online et d’autres services sur NetRegistry pour Microsoft.
+ms.openlocfilehash: 6aed84a4eaf95674358aa54986cfbb76edec2ef3
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43211133"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43629310"
 ---
-# <a name="create-dns-records-at-netregistry-for-office-365"></a>Créer des enregistrements DNS dans NetRegistry pour Office 365
+# <a name="create-dns-records-at-netregistry-for-microsoft"></a>Créer des enregistrements DNS sur NetRegistry pour Microsoft
 
 [Consultez les Forums aux questions sur les domaines](../setup/domains-faq.md) si vous ne trouvez pas ce que vous recherchez. 
   
@@ -38,17 +38,17 @@ Voici les principaux enregistrements à ajouter.
   
 - [Ajouter un enregistrement TXT à des fins de vérification](#add-a-txt-record-for-verification)
     
-- [Ajouter un enregistrement MX afin que les courriers électroniques pour votre domaine soient transférés vers Office 365](#add-an-mx-record-so-email-for-your-domain-will-come-to-office-365)
+- [Ajouter un enregistrement MX afin que les courriers électroniques pour votre domaine soient envoyés à Microsoft](#add-an-mx-record-so-email-for-your-domain-will-come-to-microsoft)
 
-- [Ajouter les enregistrements CNAME requis pour Office 365](#add-the-cname-records-that-are-required-for-office-365)
+- [Ajouter les enregistrements CNAMe requis pour Microsoft](#add-the-cname-records-that-are-required-for-microsoft)
     
 - [Ajouter un enregistrement TXT pour SPF afin d'éviter le courrier indésirable](#add-a-txt-record-for-spf-to-help-prevent-email-spam)
     
-- [Ajouter les 2 enregistrements SRV requis pour Office 365](#add-the-two-srv-records-that-are-required-for-office-365)
+- [Ajouter les deux enregistrements SRV requis pour Microsoft](#add-the-two-srv-records-that-are-required-for-microsoft)
     
-Une fois ces enregistrements ajoutés sur NetRegistry, votre domaine est configuré pour utiliser les services Office 365.
+Une fois ces enregistrements ajoutés sur NetRegistry, votre domaine est configuré pour utiliser les services Microsoft.
   
-Pour en savoir plus sur l'hébergement web et le DNS pour les sites web avec Office 365, voir [Utiliser un site web public avec Office 365](https://support.office.com/article/a8178510-501d-4bd8-9921-b04f2e9517a5.aspx).
+Pour en savoir plus sur l’hébergement Web et le DNS pour les sites Web avec Microsoft, consultez [la rubrique utiliser un site Web public avec Microsoft](https://support.office.com/article/a8178510-501d-4bd8-9921-b04f2e9517a5.aspx).
   
 > [!NOTE]
 > L'application des enregistrements DNS modifiés prend généralement 15 minutes. Il peut toutefois arriver que la répercussion d'une modification dans le système DNS sur Internet prenne davantage de temps. Si vous rencontrez des problèmes avec le flux de messages ou d'autres problèmes suite à l'ajout des enregistrements DNS, voir [Résolution des problèmes suite à la modification de votre nom de domaine ou des enregistrements DNS](../get-help-with-domains/find-and-fix-issues.md). 
@@ -56,7 +56,7 @@ Pour en savoir plus sur l'hébergement web et le DNS pour les sites web avec Off
 ## <a name="add-a-txt-record-for-verification"></a>Ajouter un enregistrement TXT à des fins de vérification
 <a name="bkmk_txt"> </a>
 
-Avant d'utiliser votre domaine avec Office 365, nous devons vérifier que celui-ci vous appartient. Votre capacité à vous connecter à votre compte auprès de votre bureau d'enregistrement de domaines et à créer l'enregistrement DNS montre à Office 365 que le domaine vous appartient réellement.
+Avant d’utiliser votre domaine avec Microsoft, vous devez vous assurer que vous en êtes propriétaire. Votre capacité à vous connecter à votre compte auprès de votre bureau d’enregistrement de domaines et à créer l’enregistrement DNS prouve à Microsoft que vous êtes propriétaire du domaine.
   
 > [!NOTE]
 > Cet enregistrement sert uniquement à vérifier que vous êtes propriétaire du domaine. Vous pouvez éventuellement le supprimer ultérieurement. 
@@ -82,17 +82,17 @@ Avant d'utiliser votre domaine avec Office 365, nous devons vérifier que celui-
   
     Dans le **nouveau formulaire d’enregistrement txt** , tapez ou copiez-collez les valeurs du tableau suivant. 
     
-    |**Name**|**DURÉE DE VIE (S)**|**TXT (pointe vers l’adresse ou la valeur)**|
+    |**Name (Nom)**|**DURÉE DE VIE (S)**|**TXT (pointe vers l’adresse ou la valeur)**|
     |:-----|:-----|:-----|
-    |(Laisser vide)  <br/> |3600 (secondes)  <br/> |« MS = msXXXXXXXX »  <br/> **Remarque :** il s'agit d'un exemple. Utilisez votre valeur **Adresse de destination ou de pointage** spécifique ici, à partir du tableau dans Office 365. [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md)  |
+    |(Laisser vide)  <br/> |3600 (secondes)  <br/> |« MS = msXXXXXXXX »  <br/> **Remarque :** il s'agit d'un exemple. Utilisez votre **adresse de destination ou de pointage** spécifique ici, à partir du tableau. [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md)  |
        
     ![Netregistry_verificationTXTvalues](../../media/cfe8b05a-fa8b-4dba-9554-7a3466e6c012.png)
   
 6. Sélectionnez **Ajouter un enregistrement**.
     
-L’enregistrement étant désormais ajouté sur le site de votre bureau d’enregistrement de domaines, revenez à Office 365 et demandez à Office 365 de rechercher l’enregistrement.
+À présent que vous avez ajouté l’enregistrement sur le site de votre bureau d’enregistrement de domaines, vous allez revenir à Microsoft et demander l’enregistrement.
   
-Lorsqu’Office 365 trouve l’enregistrement TXT approprié, votre domaine est vérifié.
+Lorsque Microsoft trouve l’enregistrement TXT correct, votre domaine est vérifié.
   
 1. Dans le centre d’administration, accédez à la page **Paramètres** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domaines</a>.
     
@@ -111,7 +111,7 @@ Lorsqu’Office 365 trouve l’enregistrement TXT approprié, votre domaine est
 > [!NOTE]
 >  L'application des enregistrements DNS modifiés prend généralement 15 minutes. Il peut toutefois arriver que la répercussion d'une modification dans le système DNS sur Internet prenne davantage de temps. Si vous rencontrez des problèmes avec le flux de messages ou d'autres problèmes suite à l'ajout des enregistrements DNS, voir [Résolution des problèmes suite à la modification de votre nom de domaine ou des enregistrements DNS](../get-help-with-domains/find-and-fix-issues.md). 
   
-## <a name="add-an-mx-record-so-email-for-your-domain-will-come-to-office-365"></a>Ajouter un enregistrement MX afin que les courriers électroniques pour votre domaine soient transférés vers Office 365
+## <a name="add-an-mx-record-so-email-for-your-domain-will-come-to-microsoft"></a>Ajouter un enregistrement MX afin que les courriers électroniques pour votre domaine soient envoyés à Microsoft
 <a name="bkmk_mx"> </a>
 
 1. Pour commencer, accédez à la page de vos domaines dans NetRegistry en utilisant [ce lien](https://theconsole.netregistry.com.au/). You'll be prompted to log in.
@@ -136,9 +136,9 @@ Lorsqu’Office 365 trouve l’enregistrement TXT approprié, votre domaine est
   
 6. Dans le **nouveau formulaire d’enregistrement MX** , tapez ou copiez-collez les valeurs du tableau suivant. 
     
-    |**Name**|**DURÉE DE VIE (S)**|**Exchange (pointe vers l’adresse ou la valeur)**|**L’hôte est-il entièrement qualifié ?**|**Préférence (priorité)**|
+    |**Name (Nom)**|**DURÉE DE VIE (S)**|**Exchange (pointe vers l’adresse ou la valeur)**|**L’hôte est-il entièrement qualifié ?**|**Préférence (priorité)**|
     |:-----|:-----|:-----|:-----|:-----|
-    |(Laisser vide)  <br/> |3600 (secondes)  <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/> **Remarque :** Obtenez votre * \<clé\> de domaine* à partir de votre compte Office 365.  [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md)      |(cochez la case)  <br/> |10   <br/> For more information about priority, see What is MX priority?  <br/> |
+    |(Laisser vide)  <br/> |3600 (secondes)  <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/> **Remarque :** Obtenir votre * \<clé\> de domaine* à partir de votre compte Microsoft.  [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md)      |(cochez la case)  <br/> |10   <br/> For more information about priority, see What is MX priority?  <br/> |
        
     ![Netregistry_MX_values](../../media/518b3da6-4055-4e2d-b5ce-44a0fee25419.png)
   
@@ -146,7 +146,7 @@ Lorsqu’Office 365 trouve l’enregistrement TXT approprié, votre domaine est
     
     ![Netregistry_MX_values_AddRecord](../../media/8194cb38-afa0-48ac-831c-fd34b6ad652e.png)
   
-## <a name="add-the-cname-records-that-are-required-for-office-365"></a>Ajouter les enregistrements CNAME requis pour Office 365
+## <a name="add-the-cname-records-that-are-required-for-microsoft"></a>Ajouter les enregistrements CNAMe requis pour Microsoft
 <a name="bkmk_cname"> </a>
 
 1. Pour commencer, accédez à la page de vos domaines dans NetRegistry en utilisant [ce lien](https://theconsole.netregistry.com.au/). You'll be prompted to log in.
@@ -189,7 +189,7 @@ Lorsqu’Office 365 trouve l’enregistrement TXT approprié, votre domaine est
 <a name="bkmk_spf"> </a>
 
 > [!IMPORTANT]
-> Vous ne pouvez avoir qu’un enregistrement TXT pour SPF pour un domaine. Si votre domaine comporte plusieurs enregistrements SPF, vous rencontrez des erreurs au niveau de la transmission du courrier électronique ainsi que des problèmes de remise du courrier et de classification en tant que courrier indésirable. If you already have an SPF record for your domain, don't create a new one for Office 365. Ajoutez plutôt les valeurs Office 365 requises à l'enregistrement actuel de manière à n'avoir qu'un  *seul*  enregistrement SPF qui inclut les deux ensembles de valeurs.
+> Vous ne pouvez avoir qu’un enregistrement TXT pour SPF pour un domaine. Si votre domaine comporte plusieurs enregistrements SPF, vous rencontrez des erreurs au niveau de la transmission du courrier électronique ainsi que des problèmes de remise du courrier et de classification en tant que courrier indésirable. Si vous disposez déjà d’un enregistrement SPF pour votre domaine, n’en créez pas pour Microsoft. Ajoutez plutôt les valeurs Microsoft requises à l’enregistrement actuel afin de disposer d’un *seul* enregistrement SPF qui inclut les deux ensembles de valeurs.
   
 1. Pour commencer, accédez à la page de vos domaines dans NetRegistry en utilisant [ce lien](https://theconsole.netregistry.com.au/). You'll be prompted to log in.
     
@@ -222,7 +222,7 @@ Lorsqu’Office 365 trouve l’enregistrement TXT approprié, votre domaine est
     
     ![Netregistry_SPF-TXTvalues_AddRecord](../../media/063bfbaf-940a-489f-970f-29c026b4b312.png)
   
-## <a name="add-the-two-srv-records-that-are-required-for-office-365"></a>Ajoutez les 2 enregistrements SRV requis pour Office 365
+## <a name="add-the-two-srv-records-that-are-required-for-microsoft"></a>Ajouter les deux enregistrements SRV requis pour Microsoft
 <a name="bkmk_srv"> </a>
 
 1. Pour commencer, accédez à la page de vos domaines dans NetRegistry en utilisant [ce lien](https://theconsole.netregistry.com.au/). You'll be prompted to log in.

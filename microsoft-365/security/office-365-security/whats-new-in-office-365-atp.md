@@ -15,12 +15,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: 1507a88a37591c43ce612f3c18d946403a85f41f
-ms.sourcegitcommit: e695bcfc69203da5d3d96f3d6a891664a0e27ae2
+ms.openlocfilehash: b48f106e500673da0858aa4e190462dd3d01fad1
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43106183"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43630820"
 ---
 # <a name="whats-new-in-office-365-atp"></a>Nouveautés d’Office 365 - Protection avancée contre les menaces
 
@@ -44,9 +44,9 @@ Cet article répertorie les nouvelles fonctionnalités de la dernière version d
     - Options non Filter avancé (il s’agit d’options de filtrage avancées qui incluent ne pas inclure, pas, etc.)
     - Filtres de temps granulaire (jour, heure, demi-heure) 
 
-- Le widget **incidents** est maintenant le widget **Centre de notifications** . (Pour afficher vos widgets de sécurité, dans le centre de sécurité & de la sécurité Office 365, accédez à la**vérification**de la **gestion** > des menaces.)
+- Le widget **incidents** est maintenant le widget **Centre de notifications** . (Pour afficher vos widgets de sécurité, dans le centre de sécurité & conformité, accédez à la**vérification**de la **gestion** > des menaces.)
 
-- [Documents approuvés dans Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/safe-docs) **(aperçu)**
+- [Documents approuvés dans Microsoft 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/safe-docs) **(version d’évaluation)**
 
 ## <a name="december-2019"></a>Décembre 2019
 
@@ -60,7 +60,7 @@ Cet article répertorie les nouvelles fonctionnalités de la dernière version d
 
 ## <a name="september-2019"></a>Septembre 2019
 
-- [Utilisation des fonctionnalités d’analyse et de réponse automatiques dans office 365](automated-investigation-response-office.md) (plan de l’ATP 2 Office 365)
+- [Utilisation des fonctionnalités d’analyse et de réponse automatiques](automated-investigation-response-office.md) (plan 2 de l’ATP Office 365)
 
 - [Intégration aux événements d’enquête et de réponse automatisés ATP office 365 à l’aide de l’API activité de gestion d’office 365](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema#office-365-advanced-threat-protection-and-threat-investigation-and-response-schema) (plan ATP 2 Office 365)
 

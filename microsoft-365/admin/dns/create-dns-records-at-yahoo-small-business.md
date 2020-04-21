@@ -1,5 +1,5 @@
 ---
-title: Créer des enregistrements DNS auprès de Yahoo! Small Business pour Office 365
+title: Créer des enregistrements DNS auprès de Yahoo! Petite entreprise pour Microsoft
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -19,15 +19,15 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 034bd7bc-b098-4c4d-8a93-4d74ff24532a
-description: Découvrez comment vérifier votre domaine et configurer les enregistrements DNS pour le courrier électronique, Skype entreprise Online et d’autres services sur Yahoo ! Petite entreprise pour Office 365.
-ms.openlocfilehash: 7b0d0b25a2895101e2f9a259a82fb18e9447441f
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+description: Découvrez comment vérifier votre domaine et configurer les enregistrements DNS pour le courrier électronique, Skype entreprise Online et d’autres services sur Yahoo ! Petite entreprise pour Microsoft.
+ms.openlocfilehash: 12efa8f7056f0d06cbf78b2486ea67dc85d2e705
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43211037"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43629154"
 ---
-# <a name="create-dns-records-at-yahoo-small-business-for-office-365"></a>Créer des enregistrements DNS auprès de Yahoo! Small Business pour Office 365
+# <a name="create-dns-records-at-yahoo-small-business-for-microsoft"></a>Créer des enregistrements DNS auprès de Yahoo! Petite entreprise pour Microsoft
 
  **[Consultez les Forums aux questions des domaines](../setup/domains-faq.md)** si vous ne trouvez pas ce que vous recherchez. 
   
@@ -89,5 +89,5 @@ Vous devez créer votre compte Aabaco avant de pouvoir [créer des enregistremen
     
     ![The sign-in page for Aabaco Small Business](../../media/4ef3cfc3-26da-4e03-932b-9346ef217848.png)
   
-Maintenant que vous avez créé votre compte Aabaco, vous pouvez [créer des enregistrements DNS auprès d'Aabaco Small Business pour Office 365](../get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md).
+À présent que vous avez créé votre compte Aabaco, vous pouvez [créer des enregistrements DNS auprès de Aabaco Small Business pour Microsoft](../get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md).
   

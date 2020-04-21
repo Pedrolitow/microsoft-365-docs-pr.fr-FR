@@ -1,5 +1,5 @@
 ---
-title: Recueillez les informations nécessaires pour créer des enregistrements DNS Office 365
+title: Collecter les informations nécessaires pour créer des enregistrements DNS
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -20,16 +20,16 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: 77f90d4a-dc7f-4f09-8972-c1b03ea85a67
-description: 'Découvrez comment trouver les valeurs/informations dont vous avez besoin pour créer des enregistrements DNS pour Office 365. '
+description: 'Découvrez comment trouver les valeurs/informations dont vous avez besoin pour créer des enregistrements DNS pour Microsoft 365. '
 ms.custom: okr_smb
-ms.openlocfilehash: 2cb45b6a5c07bd50e15e7f2a941be344b5f69038
-ms.sourcegitcommit: 4988934836eee45c890b9bdd5ef73590656c78ba
+ms.openlocfilehash: 9cfefa2620b6a46b7488a29c22a58d70f53c6ad2
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43540878"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43628445"
 ---
-# <a name="gather-the-information-you-need-to-create-office-365-dns-records"></a>Recueillez les informations nécessaires pour créer des enregistrements DNS Office 365
+# <a name="gather-the-information-you-need-to-create-dns-records"></a>Collecter les informations nécessaires pour créer des enregistrements DNS
 
  **[Consultez les Forums aux questions sur les domaines](../setup/domains-faq.md)** si vous ne trouvez pas ce que vous recherchez. 
   
@@ -61,9 +61,9 @@ ms.locfileid: "43540878"
     
 5. Accédez à [créer des enregistrements DNS auprès d’un fournisseur d’hébergement DNS](create-dns-records-at-any-dns-hosting-provider.md)et sélectionnez votre hôte DNS dans la liste des bureaux d’enregistrement pour voir les instructions pas à pas.
     
-6. Suivez les étapes permettant de créer l'enregistrement TXT (ou l'enregistrement MX) auprès de votre hôte DNS, puis vérifiez le domaine dans Office 365.
+6. Suivez les étapes de création de l’enregistrement TXT (ou enregistrement MX) au niveau de votre hôte DNS, puis vérifiez le domaine dans Microsoft 365.
 
-7. Supprimez l’enregistrement TXT (ou l’enregistrement MX) de votre hôte DNS une fois le domaine vérifié dans Office 365.
+7. Supprimez l’enregistrement TXT (ou l’enregistrement MX) de votre hôte DNS une fois le domaine vérifié dans Microsoft 365.
     
 ### <a name="step-2-find-the-mx-record-value-for-email-and-more"></a>Étape 2 : trouver la valeur de l’enregistrement MX pour la messagerie électronique et plus
 

@@ -10,12 +10,12 @@ ms.collection: SPO_Content
 localization_priority: Normal
 f1.keywords: NOCSH
 description: Découvrez comment configurer Microsoft 365 pour la collaboration avec des personnes extérieures à votre organisation.
-ms.openlocfilehash: 80b5aacbf73a7845913acdcc6ada2321e49f77cd
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: 1b2a15312dcaacc398bb521f3ecfb6e7453f66bb
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42894952"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43630724"
 ---
 # <a name="collaborating-with-people-outside-your-organization"></a>Collaboration avec des personnes extérieures à votre organisation
 
@@ -23,7 +23,7 @@ Les fonctionnalités de partage externe de Microsoft 365 permettent aux membres 
 
 La collaboration avec des personnes extérieures à votre organisation se compose de deux composants principaux :
 
-- **Activer le partage** : configurez les contrôles de partage dans Azure Active Directory, teams, les groupes Office 365 et SharePoint pour autoriser le niveau de partage souhaité pour votre organisation.
+- **Activer le partage** : configurez les contrôles de partage dans Azure Active Directory, teams, les groupes Microsoft 365 et SharePoint pour autoriser le niveau de partage souhaité pour votre organisation.
 - **Activer la sécurité supplémentaire** : alors que les fonctionnalités de partage de base peuvent être configurées pour exiger que les personnes extérieures à votre organisation puissent s’authentifier, Microsoft 365 fournit de nombreuses fonctionnalités de sécurité et de conformité supplémentaires pour vous aider à protéger vos données et à gérer vos stratégies de gouvernance tout en les partageant en externe.
 
 ## <a name="enable-sharing"></a>Activer le partage
@@ -46,7 +46,7 @@ Une fois que vous avez activé le scénario que vous souhaitez utiliser pour le 
 
 ## <a name="collaborate-with-partner-companies"></a>Collaborer avec des sociétés partenaires
 
-Lorsque vous travaillez sur un grand projet qui implique de nombreux invités d’une autre organisation, ou si vous avez une relation de fournisseur permanente dans laquelle les invités changent souvent, vous pouvez utiliser la gestion des habilitations dans Azure Active Directory pour simplifier la gestion des invités. et autoriser la société partenaire à partager cette responsabilité. Pour plus d’informations, voir [créer un extranet B2B avec des invités gérés](b2b-extranet.md) .
+Lorsque vous travaillez sur un projet de grande taille qui implique de nombreux invités d’une autre organisation, ou si vous avez une relation de fournisseur permanente dans laquelle les invités changent souvent, vous pouvez utiliser la gestion des habilitations dans Azure Active Directory pour simplifier la gestion des invités et permettre à l’entreprise partenaire de partager cette responsabilité. Pour plus d’informations, voir [créer un extranet B2B avec des invités gérés](b2b-extranet.md) .
 
 ## <a name="limit-sharing"></a>Limiter le partage
 
