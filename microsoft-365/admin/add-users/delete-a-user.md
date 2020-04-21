@@ -23,12 +23,12 @@ search.appverid:
 - GEA150
 ms.assetid: d5155593-3bac-4d8d-9d8b-f4513a81479e
 description: Découvrez comment supprimer un compte d’utilisateur. Déterminez ce qu’il convient de faire avec le courrier électronique de l’utilisateur, le contenu OneDrive, et s’il faut conserver la licence de produit ou cesser de le payer.
-ms.openlocfilehash: 2c87f04675ec92e964acb6fc9aef7171b6d7d510
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 59d06a075b5badeda410b4b25d60fa135b9ce5f7
+ms.sourcegitcommit: a955324e33097bbd2fc4ad7f2b8d1f3d87bc8580
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42353135"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43608118"
 ---
 # <a name="delete-a-user-from-your-organization"></a>Supprimer un utilisateur de votre organisation
   
@@ -78,19 +78,19 @@ Avant de commencer, réfléchissez à ce que vous voulez faire avec le courrier 
 
 ::: moniker range="o365-worldwide"
 
-1. Dans le Centre d’administration, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utilisateurs actifs</a>.
+1. Dans le Centre d’administration, accédez à la page **Utilisateurs >** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utilisateurs actifs</a>.
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. Dans le Centre d’administration, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Utilisateurs actifs</a>.
+1. Dans le Centre d’administration, accédez à la page **Utilisateurs >** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Utilisateurs actifs</a>.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. Dans le Centre d’administration, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Utilisateurs actifs</a>.
+1. Dans le Centre d’administration, accédez à la page **Utilisateurs >** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Utilisateurs actifs</a>.
 
 ::: moniker-end
 
@@ -99,11 +99,12 @@ Avant de commencer, réfléchissez à ce que vous voulez faire avec le courrier 
 ## <a name="user-management-admin-delete-one-or-more-users-from-office-365"></a>Administrateur de gestion des utilisateurs : supprimer un ou plusieurs utilisateurs d’Office 365
 
 
- **IMPORTANT**: ne supprimez pas le compte d'un utilisateur si vous l'avez [converti en boîte aux lettres partagée](../email/convert-user-mailbox-to-shared-mailbox.md) ou si vous avez configuré le transfert de courrier sur le compte. Le compte doit se trouver à cet emplacement pour utiliser ces fonctionnalités. Si vous l'avez converti en boîte aux lettres partagée, vous pouvez [Arrêter de payer la licence](#stop-paying-for-the-license) qui y est associée pour ne pas la payer. Si vous avez configuré le transfert du courrier, vous ne pouvez pas supprimer la licence. Cette opération entraînera l'arrêt du transfert du courrier et désactivera la boîte aux lettres. 
+> [!IMPORTANT]
+> Ne supprimez pas le compte d’un utilisateur si vous l’avez [converti en boîte aux lettres partagée](../email/convert-user-mailbox-to-shared-mailbox.md) ou si vous avez configuré le transfert du courrier sur le compte. Ces fonctions ont toujours besoin du compte. Une boîte aux lettres partagée ne nécessite pas de licence. Si vous avez converti le compte en boîte aux lettres partagée, vous pouvez [arrêter le paiement de la licence](#stop-paying-for-the-license). Si vous avez configuré le transfert du courrier sur le compte, vous ne pouvez pas supprimer la licence. Cette opération arrêtera le transfert du courrier et désactivera la boîte aux lettres.
   
 ::: moniker range="o365-worldwide"
 
-1. Dans le Centre d’administration, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utilisateurs actifs</a>.  
+1. Dans le Centre d’administration, accédez à la page **Utilisateurs >** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utilisateurs actifs</a>.  
 
 2. Sélectionnez les noms des utilisateurs que vous souhaitez supprimer, sélectionnez **autres options** (**...**), puis **Supprimer l’utilisateur**.
 
@@ -113,7 +114,7 @@ Avant de commencer, réfléchissez à ce que vous voulez faire avec le courrier 
 
 ::: moniker range="o365-germany"
 
-1. Dans le Centre d’administration, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Utilisateurs actifs</a>.
+1. Dans le Centre d’administration, accédez à la page **Utilisateurs >** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Utilisateurs actifs</a>.
 
 2. Sélectionnez les noms des utilisateurs que vous souhaitez supprimer, puis dans le volet **actions en bloc** , choisissez **supprimer des utilisateurs**.
 
@@ -123,7 +124,7 @@ Avant de commencer, réfléchissez à ce que vous voulez faire avec le courrier 
 
 ::: moniker range="o365-21vianet"
 
-1. Dans le Centre d’administration, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Utilisateurs actifs</a>.
+1. Dans le Centre d’administration, accédez à la page **Utilisateurs >** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Utilisateurs actifs</a>.
 
 2. Sélectionnez les noms des utilisateurs que vous souhaitez supprimer, puis dans le volet **actions en bloc** , choisissez **supprimer des utilisateurs**.
 
@@ -137,7 +138,7 @@ La réduction du nombre de licences est une étape distincte qui ne peut être e
   
 ::: moniker range="o365-worldwide"
 
-1. Dans le Centre d’administration, choisissez la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produits et services</a>. Si vous ne voyez pas cette option, vous n’êtes pas un administrateur général ni un administrateur de facturation, et vous ne pouvez pas effectuer cette étape.
+1. Dans le Centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produits et services</a>. Si vous ne voyez pas cette option, vous n’êtes pas un administrateur général ni un administrateur de facturation, et vous ne pouvez pas effectuer cette étape.
 
 2. Sélectionnez l’abonnement (si vous en avez plusieurs), puis sélectionnez **Ajouter/supprimer des licences** pour supprimer la licence afin de ne pas en payer avant d’embaucher une autre personne.  
 
@@ -147,7 +148,7 @@ La réduction du nombre de licences est une étape distincte qui ne peut être e
 
 ::: moniker range="o365-germany"
 
-1. Dans le centre d’administration, accédez à la page <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">abonnements</a> de **facturation** \> . Si vous ne voyez pas cette option, vous n’êtes pas un administrateur général ni un administrateur de facturation, et vous ne pouvez pas effectuer cette étape.
+1. Dans le Centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Abonnements</a>. Si vous ne voyez pas cette option, vous n’êtes pas un administrateur général ni un administrateur de facturation, et vous ne pouvez pas effectuer cette étape.
 
 2. Sélectionnez l’abonnement (si vous en avez plusieurs), puis sélectionnez **Ajouter/supprimer des licences** pour supprimer la licence afin de ne pas en payer avant d’embaucher une autre personne.  
 
@@ -157,7 +158,7 @@ La réduction du nombre de licences est une étape distincte qui ne peut être e
 
 ::: moniker range="o365-21vianet"
 
-1. Dans le centre d’administration, accédez à la page <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">abonnements</a> de **facturation** \> . Si vous ne voyez pas cette option, vous n’êtes pas un administrateur général ni un administrateur de facturation, et vous ne pouvez pas effectuer cette étape.
+1. Dans le Centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Abonnements</a>. Si vous ne voyez pas cette option, vous n’êtes pas un administrateur général ni un administrateur de facturation, et vous ne pouvez pas effectuer cette étape.
 
 2. Sélectionnez l’abonnement (si vous en avez plusieurs), puis sélectionnez **Ajouter/supprimer des licences** pour supprimer la licence afin de ne pas en payer avant d’embaucher une autre personne.  
 

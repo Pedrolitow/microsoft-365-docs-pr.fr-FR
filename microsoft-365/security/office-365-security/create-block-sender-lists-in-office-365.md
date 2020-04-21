@@ -13,12 +13,12 @@ localization_priority: Normal
 search.appverid:
 - MET150s
 description: Les administrateurs peuvent en savoir plus sur les options disponibles dans Office 365 et EOP pour bloquer les messages entrants.
-ms.openlocfilehash: 0bfab3024bc781e53600092ebc88fae25c5f4afc
-ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
+ms.openlocfilehash: 9d53f49862bd69a846cb80ef584226a0940d2b22
+ms.sourcegitcommit: a955324e33097bbd2fc4ad7f2b8d1f3d87bc8580
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/28/2020
-ms.locfileid: "43033421"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43608114"
 ---
 # <a name="create-blocked-sender-lists-in-office-365"></a>Créer des listes d’expéditeurs bloqués dans Office 365
 
@@ -52,7 +52,7 @@ Lorsque les messages sont bloqués en raison de la liste des expéditeurs bloqu�
 
 Lorsque plusieurs utilisateurs sont affectés, l’étendue est plus large, de sorte que la meilleure meilleure option est les listes d’expéditeurs bloqués ou les listes de domaines bloqués dans les stratégies anti-courrier indésirable. Les messages provenant d’expéditeurs figurant dans les listes sont marqués comme **courrier indésirable**et l’action que vous avez configurée pour le verdict du filtre de **courrier indésirable** est appliquée au message. Si vous souhaitez en savoir plus, consultez l’article [Configurer les stratégies anti-courrier indésirable dans Office 365](configure-your-spam-filter-policies.md).
 
-La limite maximale de ces listes est d’environ 1000 entrées ; Bien que vous ne puissiez entrer que 30 entrées dans le portail. Vous devez utiliser PowerShell pour ajouter plus de 30 entrées.
+La limite maximale de ces listes est d’environ 1000 entrées.
 
 ## <a name="use-mail-flow-rules"></a>Utiliser des règles de flux de messagerie
 

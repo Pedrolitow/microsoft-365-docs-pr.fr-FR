@@ -17,12 +17,12 @@ ms.assetid: 078eb946-819a-4e13-8673-fe0c0ad3a775
 ms.collection:
 - M365-security-compliance
 description: Définir des stratégies de pièces jointes approuvées pour protéger votre organisation contre les fichiers malveillants par courrier électronique.
-ms.openlocfilehash: 860e733bda8f16eff8e36e42055c7ea7fa88e343
-ms.sourcegitcommit: c876d58b34454f211b50ae5d06f193c1a1e5c4ff
+ms.openlocfilehash: 8151cf1ec25ae46ae7a1845f34f42df3e5483bb2
+ms.sourcegitcommit: a955324e33097bbd2fc4ad7f2b8d1f3d87bc8580
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/11/2020
-ms.locfileid: "43230967"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43608101"
 ---
 # <a name="set-up-office-365-atp-safe-attachments-policies"></a>Configuration des stratégies de pièces jointes approuvées ATP Office 365
 
@@ -98,7 +98,7 @@ Lorsque vous configurez vos stratégies de pièces jointes approuvées ATP, vous
 |**Replace**|Supprime les pièces jointes de programmes malveillants détectées  <br/> Avertir les destinataires que des pièces jointes ont été supprimées  <br/> Envoie des messages avec une mise en quarantaine aux programmes malveillants détectés [dans Office 365](manage-quarantined-messages-and-files.md) où un administrateur ou un analyste de la sécurité peut consulter et publier (ou supprimer) ces messages.|Augmenter la visibilité aux destinataires pour lesquels les pièces jointes ont été supprimées en raison d’un programme malveillant détecté|
 |**Remise dynamique**|Remet immédiatement les messages  <br/> Remplace les pièces jointes par un fichier d’espace réservé jusqu’à ce que l’analyse soit terminée, puis rattache les pièces jointes si aucun programme malveillant n’est détecté  <br/> Inclut les fonctionnalités d’aperçu des pièces jointes pour la plupart des fichiers PDF et Office lors de l’analyse  <br/> Envoie des messages avec des programmes malveillants détectés en quarantaine lorsqu’un administrateur ou un analyste de la sécurité peut consulter et libérer (ou supprimer) ces messages.  <br/> [En savoir plus sur la remise et l’aperçu dynamiques avec des pièces jointes fiables ATP](dynamic-delivery-and-previewing.md) <br/> |Éviter les retards de message tout en protégeant les destinataires des fichiers malveillants  <br/> Autoriser les destinataires à prévisualiser les pièces jointes en mode sans échec lors de l’analyse|
 |**Activer la redirection**|S’applique lorsque l’option surveiller, bloquer ou remplacer est sélectionnée  <br/> Envoie des pièces jointes à une adresse de messagerie spécifique que les administrateurs de sécurité ou les analystes peuvent examiner|Activer les administrateurs de la sécurité et les analystes pour rechercher des pièces jointes suspectes|
-|**Appliquer la sélection ci-dessus si l’analyse anti-programme malveillant pour les pièces jointes expire ou si une erreur se produit**|Applique l’action configurée pour les pièces jointes unasfe aux pièces jointes qui ne peuvent pas être analysées (en raison d’un délai d’expiration ou d’une erreur)|
+|**Appliquer la sélection ci-dessus si l’analyse anti-programme malveillant pour les pièces jointes expire ou si une erreur se produit**|Applique l’action configurée pour les pièces jointes potentiellement dangereuses aux pièces jointes qui ne peuvent pas être analysées (en raison d’un délai d’expiration ou d’une erreur)|
 |
 
 ## <a name="next-steps"></a>Étapes suivantes

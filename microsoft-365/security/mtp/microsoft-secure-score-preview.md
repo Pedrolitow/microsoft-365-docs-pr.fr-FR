@@ -17,12 +17,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 8319dcabe6032228e2124b68f9f7d8f237ff34de
-ms.sourcegitcommit: d818828c66cf98b0b0037ba8b3cb790c940281b7
+ms.openlocfilehash: 23242f5f2d7e1a0774c83359159588f9fef34f64
+ms.sourcegitcommit: a955324e33097bbd2fc4ad7f2b8d1f3d87bc8580
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/21/2020
-ms.locfileid: "43583368"
+ms.locfileid: "43608161"
 ---
 # <a name="microsoft-secure-score-preview"></a>Microsoft Secure score (aperçu)
 
@@ -69,6 +69,7 @@ Avec l’accès en lecture et en écriture, vous pouvez effectuer des modificati
 * Administrateur de sécurité
 * Administrateur Exchange
 * Administrateur SharePoint
+* Administrateur de compte
 
 ### <a name="read-only-roles"></a>Rôles en lecture seule
 
@@ -131,7 +132,7 @@ Pour terminer l’action, vous disposez de plusieurs options :
     * **Risque accepté** : la sécurité doit toujours être équilibrée avec la convivialité et toutes les recommandations ne fonctionnent pas pour votre environnement. Lorsque c’est le cas, vous pouvez choisir d’accepter le risque ou le risque restant et de ne pas appliquer l’action d’amélioration. Vous n’aurez pas de points, mais l’action ne sera plus visible dans la liste des actions d’amélioration. Vous pouvez afficher cette action dans l’historique ou l’annuler à tout moment.
     * **Résoudre** par le biais d’un tiers : l’action d’amélioration a déjà été traitée par une application ou un logiciel tiers. Vous obtiendrez les points que l’action vaut, afin que votre score reflète mieux votre position de sécurité globale. Si un tiers ne couvre plus le contrôle, vous pouvez choisir un autre État. N’oubliez pas que Microsoft n’aura aucune visibilité sur l’intégralité de la mise en œuvre si l’action d’amélioration est marquée comme résolue par un tiers.
 
-### <a name="prerequisites"></a>Conditions requises
+### <a name="prerequisites"></a>Conditions préalables
 
 Les conditions préalables dans la section implémentation répertorient toutes les licences qui doivent être obtenues ou les actions qui doivent être effectuées avant que l’action d’amélioration ne soit traitée. Assurez-vous que votre licence comporte suffisamment de sièges pour effectuer l’action d’amélioration et que ces licences sont appliquées aux utilisateurs nécessaires.  
 
