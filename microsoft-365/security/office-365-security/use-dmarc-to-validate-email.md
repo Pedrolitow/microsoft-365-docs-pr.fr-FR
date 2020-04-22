@@ -15,12 +15,12 @@ ms.assetid: 4a05898c-b8e4-4eab-bd70-ee912e349737
 ms.collection:
 - M365-security-compliance
 description: Découvrez comment configurer DMARC (Domain-based Message Authentication, Reporting, and Conformance) pour valider les messages envoyés à partir de votre organisation Office 365.
-ms.openlocfilehash: 0702baec4dd2b585dcf45546befc19a6108004b9
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: c71d4edabcacd2cd4d98dad69aa134cbaf75a111
+ms.sourcegitcommit: a955324e33097bbd2fc4ad7f2b8d1f3d87bc8580
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42633432"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43608137"
 ---
 # <a name="use-dmarc-to-validate-email-in-office-365"></a>Utiliser DMARC pour valider les e-mails dans Office 365
 
@@ -207,13 +207,17 @@ Si vous publiez une stratégie de rejet DMARC (p=reject), aucun autre client dan
 ## <a name="how-office-365-handles-inbound-email-that-fails-dmarc"></a>Gestion des messages électroniques entrants qui échouent aux vérifications de DMARC dans Office 365
 <a name="inbounddmarcfail"> </a>
 
-Si la stratégie DMARC du serveur expéditeur est p=reject (rejet), EOP marque le message comme du courrier indésirable au lieu de le rejeter. En d’autres termes, pour les messages entrants, Office 365 traite les stratégies p=reject (rejet) et p=quarantine (mise en quarantaine) de la même manière.
+Si la stratégie DMARC du serveur expéditeur est `p=reject`, EOP marque le message comme du courrier indésirable au lieu de le rejeter. En d’autres termes, pour les messages entrants, Office 365 traite `p=reject` et `p=quarantine` de la même façon. Les administrateurs peuvent définir l’action à effectuer sur les messages classés comme usurpation d’identité dans la stratégie [anti-hameçonnage](set-up-anti-phishing-policies.md).
   
-Office 365 est configuré de cette façon, car certains messages légitimes peuvent échouer aux vérifications de DMARC. Cela peut être le cas, par exemple, si un message est envoyé à une liste de diffusion qui le relaie ensuite à tous ses participants. Si Office 365 rejette ces e-mails, les destinataires peuvent perdre des messages légitimes sans avoir aucun moyen de les récupérer. C'est pourquoi, avec cette configuration, ces messages sont toujours refusés par DMARC, mais, au lieu d'être rejetés, ils sont marqués comme courrier indésirable. Si nécessaire, les utilisateurs peuvent toujours accéder à ces messages dans leur boîte de réception via les méthodes suivantes :
+Office 365 est configuré de cette façon, car certains messages légitimes peuvent échouer aux vérifications de DMARC. Cela peut être le cas, par exemple, si un message est envoyé à une liste de diffusion qui le relaie ensuite à tous les participants. Si Office 365 rejette ces e-mails, les destinataires peuvent perdre des messages légitimes sans pouvoir les récupérer. Ces messages sont donc toujours refusés par DMARC, mais ils sont marqués comme courrier indésirable et non rejetés. Les utilisateurs peuvent toujours accéder à ces messages dans leur boîte de réception via les méthodes suivantes :
   
-- Les utilisateurs ajoutent individuellement des expéditeurs approuvés à l’aide de leur client de messagerie
+- les utilisateurs ajoutent individuellement des expéditeurs approuvés à l’aide de leur client de messagerie.
 
-- Les administrateurs créent une règle de flux de messagerie Exchange (également appelée règle de transport) pour tous les utilisateurs qui autorise la transmission des messages de ces expéditeurs particuliers. 
+- les administrateurs peuvent mettre à jour les rapports de [veille contre l’usurpation d’identité](learn-about-spoof-intelligence.md) pour autoriser l’usurpation.
+
+- les administrateurs créent une règle de flux de messagerie Exchange (également appelée règle de transport) pour tous les utilisateurs, qui autorise la transmission des messages de ces expéditeurs particuliers.
+
+Si vous souhaitez en savoir plus, consultez la page [Créer des listes d’expéditeurs approuvés dans Office 365](create-safe-sender-lists-in-office-365).
 
 ## <a name="how-office-365-utilizes-authenticated-received-chain-arc"></a>Comment Office 365 utilise une chaîne reçue authentifiée (ARC)
 <a name="ARC"> </a>

@@ -16,12 +16,12 @@ ms.assetid: 316544cb-db1d-4c25-a5b9-c73bbcf53047
 ms.collection:
 - M365-security-compliance
 description: Les administrateurs peuvent découvrir comment créer, modifier et supprimer des stratégies anti-courrier indésirable dans Exchange Online et Exchange Online Protection (EOP) autonome.
-ms.openlocfilehash: 3f71a9c9a62e409d4a54c01523270fb10a723a96
-ms.sourcegitcommit: c876d58b34454f211b50ae5d06f193c1a1e5c4ff
+ms.openlocfilehash: e3d49fecf456fe7f615cc2877c7522632b8db7d7
+ms.sourcegitcommit: a955324e33097bbd2fc4ad7f2b8d1f3d87bc8580
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/11/2020
-ms.locfileid: "43231015"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43608185"
 ---
 # <a name="configure-anti-spam-policies-in-office-365"></a>Configuration de stratégies de blocage du courrier indésirable dans Office 365
 
@@ -341,6 +341,11 @@ Lorsqu’un verdict de filtre anti-courrier indésirable met un message en quara
    - **Activer les notifications de courrier indésirable pour l’utilisateur final**: sélectionnez la case à cocher pour activer les notifications. Décochez la case pour désactiver les notifications.
 
    - **Envoyez des notifications de courrier indésirable à l’utilisateur final chaque (jours)**: sélectionnez la fréquence d’envoi des notifications. La valeur par défaut est de 3 jours. Vous pouvez entrer 1 à 15 jours.
+   
+     Il existe trois cycles de notification de courrier indésirable pour l’utilisateur final sur une période de 24 heures qui commencent aux heures suivantes : 01:00 UTC, 08:00 UTC et 16:00 UTC. 
+    
+     > [!NOTE]
+     > Si une notification du cycle précédent n’a pas été envoyée, un cycle ultérieur enverra la notification. Vous aurez alors l’impression de recevoir plusieurs notifications pour une même journée.
 
    - **Langue de notification**: cliquez sur la liste déroulante et sélectionnez une langue disponible dans la liste. La valeur par défaut est **Par défaut**, ce qui signifie que les notifications de mise en quarantaine de l’utilisateur final utilisent la langue par défaut de l’organisation EOP.
 
