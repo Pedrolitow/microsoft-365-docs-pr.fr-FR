@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 localization_priority: None
 description: Découvrez comment modifier ou supprimer des stratégies pour les barrières d’informations.
-ms.openlocfilehash: ef534f49c92abf1500b72b0d490ab9f22a48a680
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 5690a1d7a131c006bbff3b087b1ee2983198c068
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42634842"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637886"
 ---
 # <a name="edit-or-remove-information-barrier-policies"></a>Modifier (ou supprimer) des stratégies de barrière des informations
 
@@ -38,7 +38,7 @@ Une fois que vous avez [défini des stratégies de barrière des informations](i
 |[Résolution des problèmes d’obstacles aux informations](information-barriers-troubleshooting.md)     |Reportez-vous à cet article lorsque vous rencontrez des problèmes inattendus avec des barrières d’informations.         |
 
 > [!IMPORTANT]
-> Pour effectuer les tâches décrites dans cet article, vous devez disposer d’un rôle approprié, par exemple :<br/>-Administrateur général de Microsoft 365 entreprise<br/>-Administrateur général Office 365<br/>-Administrateur de conformité<br/>-IB gestion de la conformité (il s’agit d’un nouveau rôle !)<p>Pour en savoir plus sur les conditions préalables pour les barrières d’informations, reportez-vous à la rubrique [conditions préalables (pour les stratégies de barrière des informations)](information-barriers-policies.md#prerequisites).<p>Assurez [-vous de vous connecter au centre de sécurité & de sécurité Office 365 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps).
+> Pour effectuer les tâches décrites dans cet article, vous devez disposer d’un rôle approprié, par exemple :<br/>-Administrateur général de Microsoft 365 entreprise<br/>-Administrateur général<br/>-Administrateur de conformité<br/>-IB gestion de la conformité (il s’agit d’un nouveau rôle !)<p>Pour en savoir plus sur les conditions préalables pour les barrières d’informations, reportez-vous à la rubrique [conditions préalables (pour les stratégies de barrière des informations)](information-barriers-policies.md#prerequisites).<p>Veillez à [vous connecter au centre de sécurité & conformité PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps).
 
 ## <a name="edit-user-account-attributes"></a>Modifier les attributs de compte d’utilisateur
 

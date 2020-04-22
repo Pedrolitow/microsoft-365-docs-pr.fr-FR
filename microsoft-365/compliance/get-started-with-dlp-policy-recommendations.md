@@ -12,17 +12,17 @@ ms.service: O365-seccomp
 ms.collection:
 - M365-security-compliance
 localization_priority: Normal
-description: Cette recommandation orientée analyse permet à votre organisation de maintenir le contenu sensible sécurisé lorsqu’il est stocké et partagé dans Office 365 en vous informant lorsqu’il existe un manque d’espace dans votre couverture de stratégie DLP. Cette recommandation s’affiche sur la page d’accueil du centre de &amp; sécurité conformité, si vos documents contiennent l’un des cinq types d’informations sensibles les plus courants, mais ne sont pas protégés par une stratégie DLP.
-ms.openlocfilehash: 7fb99942a2288a2545123d44ebdfde89b449edc3
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: Cette recommandation orientée analyse permet à votre organisation de maintenir le contenu sensible sécurisé lorsqu’il est stocké et partagé dans Microsoft 365 en vous informant que la couverture de votre stratégie DLP est possible. Cette recommandation s’affiche sur la page d’accueil du centre de &amp; sécurité conformité, si vos documents contiennent l’un des cinq types d’informations sensibles les plus courants, mais ne sont pas protégés par une stratégie DLP.
+ms.openlocfilehash: 73c45c477942533d5668c225144950a0fde4279b
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42073203"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632465"
 ---
 # <a name="get-started-with-dlp-policy-recommendations"></a>Prise en main des recommandations en matière de stratégie DLP
 
-Cette recommandation orientée analyse permet à votre organisation de maintenir le contenu sensible sécurisé lorsqu’il est stocké et partagé dans Office 365 en vous informant lorsqu’il existe un manque d’espace dans votre couverture de stratégie DLP. Cette recommandation s’affiche sur la page d' **Accueil** du centre de &amp; sécurité conformité, si vos documents contiennent l’un des cinq types d’informations sensibles les plus courants, mais ne sont pas protégés par une stratégie de protection contre la perte de données (DLP). 
+Cette recommandation orientée analyse permet à votre organisation de maintenir le contenu sensible sécurisé lorsqu’il est stocké et partagé dans Microsoft 365 en vous informant que la couverture de votre stratégie DLP est possible. Cette recommandation s’affiche sur la page d' **Accueil** du centre de &amp; sécurité conformité, si vos documents contiennent l’un des cinq types d’informations sensibles les plus courants, mais ne sont pas protégés par une stratégie de protection contre la perte de données (DLP). 
   
 Vous pouvez utiliser ce widget pour créer rapidement une stratégie DLP personnalisée en un clic ou deux, et après avoir créé cette stratégie DLP, elle est entièrement personnalisable. Notez que si vous ne voyez pas la recommandation, essayez de cliquer sur **+ autres** en bas de la section **recommandé pour vous** . 
   

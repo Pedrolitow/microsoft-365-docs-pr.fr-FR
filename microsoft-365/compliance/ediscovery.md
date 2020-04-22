@@ -1,5 +1,5 @@
 ---
-title: eDiscovery dans Office 365
+title: eDiscovery
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -14,17 +14,17 @@ search.appverid:
 - SPO160
 - MOE150
 ms.assetid: 143b3ab8-8cb0-4036-a5fc-6536d837bfce
-description: Microsoft 365 offre un certain nombre d’outils eDiscovery que vous pouvez utiliser pour rechercher et conserver du contenu se trouvant dans différents emplacements, comme des boîtes aux lettres Exchange, des sites SharePoint et OneDrive entreprise, des groupes Office 365 et des conversations Skype entreprise.
-ms.openlocfilehash: 19076941d2ff5b908071c779558b2cbe8b15bb54
-ms.sourcegitcommit: bd51f626f0c7788c2a3cf89deee25264659aebd5
+description: Microsoft 365 offre un certain nombre d’outils eDiscovery que vous pouvez utiliser pour rechercher et conserver du contenu se trouvant dans différents emplacements, comme des boîtes aux lettres Exchange, des sites SharePoint et OneDrive entreprise, des groupes Microsoft 365 et des conversations Skype entreprise.
+ms.openlocfilehash: 6735ce5df0978c75117324f702d1c2f758208bd1
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "43551215"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631759"
 ---
 # <a name="ediscovery-in-microsoft-365"></a>eDiscovery dans Microsoft 365
 
-La découverte électronique, ou eDiscovery, est le processus d'identification et de livraison d'informations électroniques qui peuvent être utilisées comme preuves dans des affaires juridiques. Vous pouvez utiliser les outils eDiscovery de Microsoft 365 pour rechercher du contenu dans les boîtes aux lettres Exchange Online, les groupes Office 365, Microsoft Teams, les sites SharePoint Online et OneDrive entreprise, ainsi que les conversations Skype entreprise et les équipes Yammer. Vous pouvez rechercher des boîtes aux lettres et des sites dans la même recherche de découverte électronique à l’aide de l’outil de recherche de contenu. Et vous pouvez utiliser des cas de découverte électronique principaux pour identifier, mettre en attente et exporter du contenu trouvé dans des boîtes aux lettres et des sites. Si votre organisation possède un abonnement Office 365 E5 ou Microsoft 365 E5 (ou des abonnements à des compléments apparentés E5), vous pouvez gérer les dépositaires et analyser le contenu à l’aide de la solution eDiscovery avancée dans Microsoft 365.
+La découverte électronique, ou eDiscovery, est le processus d'identification et de livraison d'informations électroniques qui peuvent être utilisées comme preuves dans des affaires juridiques. Vous pouvez utiliser les outils eDiscovery de Microsoft 365 pour rechercher du contenu dans les boîtes aux lettres Exchange Online, les groupes Microsoft 365, Microsoft Teams, les sites SharePoint Online et OneDrive entreprise, ainsi que les conversations Skype entreprise et les équipes Yammer. Vous pouvez rechercher des boîtes aux lettres et des sites dans la même recherche de découverte électronique à l’aide de l’outil de recherche de contenu. Et vous pouvez utiliser des cas de découverte électronique principaux pour identifier, mettre en attente et exporter du contenu trouvé dans des boîtes aux lettres et des sites. Si votre organisation possède un abonnement Office 365 E5 ou Microsoft 365 E5 (ou des abonnements à des compléments apparentés E5), vous pouvez gérer les dépositaires et analyser le contenu à l’aide de la solution eDiscovery avancée dans Microsoft 365.
   
 Microsoft 365 fournit les outils eDiscovery suivants :
   
@@ -43,8 +43,8 @@ Le tableau suivant contient des liens vers des rubriques qui vous aideront à ut
   
 |**Rubrique**|**Description**|
 |:-----|:-----|
-|[Exécuter une Recherche de Contenu](content-search.md) <br/> |Découvrez comment utiliser l’outil de recherche de contenu pour rechercher des boîtes aux lettres, des dossiers publics, des groupes Office 365, Microsoft Teams, des sites SharePoint Online, un lecteur pour les sites d’entreprise et des conversations Skype entreprise dans votre organisation Office 365 dans une seule recherche.  <br/> |
-|[Requêtes par mots clés et conditions de recherche pour la recherche de contenu](keyword-queries-and-search-conditions.md) <br/> |Découvrez les propriétés de messagerie et de fichier et les conditions de recherche que vous pouvez utiliser pour rechercher du contenu dans les boîtes aux lettres et les sites de votre organisation Office 365.  <br/> |
+|[Exécuter une Recherche de Contenu](content-search.md) <br/> |Découvrez comment utiliser l’outil de recherche de contenu pour rechercher des boîtes aux lettres, des dossiers publics, des groupes Microsoft 365, Microsoft Teams, des sites SharePoint Online, un lecteur pour les sites d’entreprise et des conversations Skype entreprise au sein de votre organisation dans une seule recherche.  <br/> |
+|[Requêtes par mots clés et conditions de recherche pour la recherche de contenu](keyword-queries-and-search-conditions.md) <br/> |Découvrez les propriétés de messagerie et de fichier et les conditions de recherche que vous pouvez utiliser pour rechercher du contenu dans les boîtes aux lettres et les sites de votre organisation.  <br/> |
 |[Afficher les statistiques de mot clé pour les résultats de recherche de contenu](view-keyword-statistics-for-content-search.md) <br/> |Découvrez comment utiliser les statistiques de recherche pour afficher et comparer les statistiques d’une ou de plusieurs recherches de contenu, et pour configurer les recherches nouvelles et existantes afin de renvoyer des statistiques pour chaque mot clé dans la requête de recherche.  <br/> |
 |[Exporter les résultats de la recherche](export-search-results.md) <br/> |Découvrez comment exporter les résultats d’une recherche de contenu.  <br/> |
 |[Configurer le filtrage des autorisations pour la recherche de contenu](permissions-filtering-for-content-search.md) <br/> |Découvrez comment utiliser le filtrage des autorisations pour permettre à un gestionnaire eDiscovery de rechercher uniquement un sous-ensemble de boîtes aux lettres et de sites dans votre organisation.  <br/> |
@@ -62,7 +62,7 @@ Le tableau suivant contient des liens vers des rubriques qui vous aideront à ut
   
 |**Rubrique**|**Description**|
 |:-----|:-----|
-|[Prise en main de la découverte électronique principale](get-started-core-ediscovery.md) |Découvrez comment attribuer des autorisations eDiscovery et créer des cas de découverte électronique principaux. Cette rubrique fournit également une vue d’ensemble du flux de travail eDiscovery principal.<br/> |
+|[Prise en main de la découverte électronique de base](get-started-core-ediscovery.md) |Découvrez comment attribuer des autorisations eDiscovery et créer des cas de découverte électronique principaux. Cette rubrique fournit également une vue d’ensemble du flux de travail eDiscovery principal.<br/> |
 |[Créer une suspension de cas eDiscovery](create-ediscovery-holds.md)|Découvrez comment créer des conservations eDiscovery associées à un cas de découverte électronique de base pour conserver le contenu pertinent pour le cas que vous recherchez.|
 |[Rechercher du contenu dans un cas de découverte électronique principale](search-for-content-in-core-ediscovery.md)|Découvrez comment rechercher du contenu adapté à un cas. Vous pouvez rapidement créer des recherches qui recherchent les emplacements de contenu en conservation.|
 |[Exportation de contenu à partir d’un cas de découverte électronique principale](export-content-in-core-ediscovery.md)|Découvrez comment exporter et télécharger du contenu à partir d’un cas de découverte électronique de base.|

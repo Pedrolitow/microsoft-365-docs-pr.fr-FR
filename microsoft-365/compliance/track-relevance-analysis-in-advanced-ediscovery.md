@@ -1,5 +1,5 @@
 ---
-title: Suivi de l’analyse de pertinence dans Office 365 Advanced eDiscovery
+title: Suivi de l’analyse de pertinence dans Advanced eDiscovery
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -15,13 +15,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 3ab1e2c3-28cf-4bf5-b0a8-c0222f32bdf5
-description: 'Découvrez comment afficher et interpréter la pertinence état de formation et résultats pour les problèmes de cas dans Office 365 Advanced eDiscovery.  '
-ms.openlocfilehash: 9c15bd285848d1906243137bfba451b19900b28e
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+description: 'Découvrez comment afficher et interpréter la pertinence de l’état de formation et les résultats des problèmes de cas dans Advanced eDiscovery.  '
+ms.openlocfilehash: 7cf75607743ce752f8b23e286afc4681a1798a1f
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42557674"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636617"
 ---
 # <a name="track-relevance-analysis-in-advanced-ediscovery-classic"></a>Suivi de l’analyse de pertinence dans Advanced eDiscovery (classique)
 
@@ -84,7 +84,7 @@ Si vous souhaitez importer de nouveaux fichiers après le calcul par lot, l’ad
 S’il existe des incohérences dans le balisage de fichier, cela peut avoir une incidence sur l’analyse. Le processus avancé de cohérence des balises eDiscovery peut être utilisé lorsque les résultats ne sont pas optimaux ou si la cohérence est incertaine. Une liste de fichiers susceptibles d’être balisés de manière incohérente est renvoyée et peuvent être révisées et ré-balisage, si nécessaire.
   
 > [!NOTE]
-> Après **l’évaluation** \> de sept ou plusieurs arrondis de formation, la cohérence du marquage peut être affichée **** \> dans la **formation**sur **le suivi** \> des \> **résultats détaillés** . Cette révision est réalisée pour un problème à la fois. 
+> Après **l’évaluation** \> de sept ou plusieurs arrondis de formation, la cohérence du marquage peut être affichée **Issue** \> dans la **formation**sur **le suivi** \> des \> **résultats détaillés** . Cette révision est réalisée pour un problème à la fois. 
   
 1. Dans **le \> suivi de pertinence**, développez la ligne d’un problème.
     
@@ -133,7 +133,7 @@ Le volet progression de la **formation** inclut un graphique de progression de f
  **Graphique de progression de formation**: indique le degré de stabilité de la formation à la pertinence après un certain nombre de cycles de formation pertinents par rapport à la valeur de la mesure F. À mesure que nous passons de la gauche vers la droite sur le graphique, l’intervalle de confiance réduit et est utilisé, ainsi que la mesure F, par rapport à l’intérêt eDiscovery avancé afin de déterminer la stabilité lorsque les résultats d’apprentissage pertinents sont optimisés.
   
 > [!NOTE]
-> La pertinence utilise F2, une mesure F-Measure où le rappel reçoit deux fois plus de poids que la précision. Pour les cas de grande richesse (plus de 25%), la pertinence utilise F1 (ratio 1:1). Le rapport de mesure F peut être configuré dans **** \> **Paramètres avancés**de configuration de pertinence. 
+> La pertinence utilise F2, une mesure F-Measure où le rappel reçoit deux fois plus de poids que la précision. Pour les cas de grande richesse (plus de 25%), la pertinence utilise F1 (ratio 1:1). Le rapport de mesure F peut être configuré dans **Relevance setup** \> **Paramètres avancés**de configuration de pertinence. 
   
 ### <a name="batch-calculation-results"></a>Résultats du calcul par lots
 
@@ -172,7 +172,7 @@ Cet affichage montre les éléments suivants :
     
 ## <a name="see-also"></a>Voir aussi
 
-[Découverte électronique avancée (classique)](office-365-advanced-ediscovery.md)
+[Advanced eDiscovery (classique)](office-365-advanced-ediscovery.md)
   
 [Présentation de l’évaluation en matière de pertinence](assessment-in-relevance-in-advanced-ediscovery.md)
   

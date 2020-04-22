@@ -14,17 +14,17 @@ search.appverid:
 - SPO160
 ms.assetid: 41b2ed73-eb8d-4429-945e-a8197894585a
 description: Les organisations doivent souvent conserver des documents pendant une certaine période de temps en raison des réglementations de conformité, juridiques, ou autres. Toutefois, conserver des documents plus longtemps que nécessaire peut exposer l’organisation à un risque juridique.
-ms.openlocfilehash: 0144b12c05fcd4c8f973ee7e6b6df373f5b609a5
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 5550f65e5b2ecb5dca775e1d851548913b8e8517
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42077898"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632259"
 ---
 # <a name="create-a-document-deletion-policy"></a>Création d’une stratégie de suppression de documents
 
 > [!IMPORTANT]
-> Pour aller plus loin, nous vous recommandons d’utiliser une stratégie de rétention ou des étiquettes de rétention créées dans le centre de conformité Microsoft 365 &amp; , le centre de sécurité Microsoft 365 ou le centre de sécurité conformité Office 365 au lieu d’une stratégie de suppression de documents. Les stratégies de suppression de documents continueront à fonctionner côte à côte avec des stratégies de rétention, mais si vous devez conserver ou supprimer du contenu n’importe où dans Office 365, nous vous recommandons d’utiliser une stratégie de rétention. Pour plus d’informations, consultez [la rubrique utiliser une stratégie de rétention au lieu de ces fonctionnalités](retention-policies.md#use-a-retention-policy-instead-of-these-features). 
+> Pour aller plus loin, nous vous recommandons d’utiliser une stratégie de rétention ou des étiquettes de rétention créées dans le centre de conformité &amp; Microsoft 365, le centre de sécurité Microsoft 365 ou le centre de sécurité conformité au lieu d’une stratégie de suppression de documents. Les stratégies de suppression de documents continueront à fonctionner côte à côte avec des stratégies de rétention, mais si vous devez conserver ou supprimer du contenu n’importe où dans Office 365, nous vous recommandons d’utiliser une stratégie de rétention. Pour plus d’informations, consultez [la rubrique utiliser une stratégie de rétention au lieu de ces fonctionnalités](retention-policies.md#use-a-retention-policy-instead-of-these-features). 
   
 Les organisations doivent souvent conserver des documents pendant une certaine période de temps en raison des réglementations de conformité, juridiques, ou autres. Toutefois, conserver des documents plus longtemps que nécessaire peut exposer l’organisation à un risque juridique.
   
@@ -244,7 +244,7 @@ Vous ne pouvez pas supprimer une stratégie en cours d’utilisation. Avant de p
   
 3. Sélectionnez la stratégie.
     
-4. Dans l’onglet \> **** \> éléments du ruban, **supprimez la stratégie**.
+4. Dans l’onglet \> **Items** \> éléments du ruban, **supprimez la stratégie**.
     
     ![Bouton Supprimer la stratégie sur le ruban](../media/IP-Remove-Policy-button-on-Ribbon.png)
   

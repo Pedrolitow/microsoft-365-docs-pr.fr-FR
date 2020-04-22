@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 description: Découvrez comment effectuer une mise à niveau vers un nouvel abonnement.
 monikerRange: o365-worldwide
-ms.openlocfilehash: 8f792cad90b7e153c025a869970a54d36cdd8cbe
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: a5cede13a64ea1a6562a326c32dc902d14c3dfe5
+ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636509"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43707522"
 ---
 # <a name="upgrade-to-a-different-plan"></a>Opter pour un abonnement différent 
 
@@ -63,7 +63,7 @@ Lorsque vous avez terminé l’extraction, la finalisation de la mise à niveau 
 
 ## <a name="the-upgrade-tab-is-empty"></a>L’onglet mise à niveau est vide
 
-Si l’onglet **mise à niveau** est vide, vous verrez une explication de la raison pour laquelle vous ne pouvez pas effectuer la mise à niveau pour le moment. Vous pouvez essayer de [modifier les offres manuellement](change-plans-manually.md) ou d' [appeler le support technique](../../admin/contact-support-for-business-products.md). Pour plus d’informations, consultez la rubrique [pourquoi ne puis-je pas mettre à niveau les plans ?](#why-cant-i-upgrade-plans).
+Si l’onglet **mise à niveau** est vide, vous verrez une explication de la raison pour laquelle vous ne pouvez pas effectuer la mise à niveau pour le moment. Vous pouvez essayer de [modifier les offres manuellement](change-plans-manually.md) ou d' [appeler le support technique](../../admin/contact-support-for-business-products.md). Pour plus d’informations, consultez la rubrique [pourquoi ne puis-je pas mettre à niveau des plans ?](#why-cant-i-upgrade-plans).
 
 ## <a name="i-dont-see-the-plan-i-want"></a>L'offre à laquelle je veux souscrire n'apparaît pas
 
@@ -153,7 +153,7 @@ Lorsque vous effectuez une mise à niveau automatique des plans à l’aide du b
 
 Les utilisateurs de l'ancien abonnement seront automatiquement déplacés vers le nouvel abonnement.
   
-Si votre ancien abonnement inclut plusieurs services, et si vous avez modifié les services auxquels vos utilisateurs sont affectés, vous pouvez le faire avant de procéder à la mise à niveau des plans afin de pouvoir recréer ces modifications par la suite. Tous les utilisateurs pourront accéder à tous les services dans le nouvel abonnement. Par exemple, si vous avez acheté précédemment Office 365 entreprise E3 pour tous les 100 de vos utilisateurs, mais que vous n’avez pas attribué le service SharePoint Online de 50, cette modification ne sera pas conservée après la mise à niveau des plans.
+Si votre ancien abonnement inclut plusieurs services, et si vous avez modifié les services auxquels vos utilisateurs sont affectés, vous pouvez le faire avant de procéder à la mise à niveau des plans afin de pouvoir recréer ces modifications par la suite. Tous les utilisateurs pourront accéder à tous les services dans le nouvel abonnement. Par exemple, si vous avez précédemment acheté Microsoft 365 Business Premium pour tous les 100 de vos utilisateurs, mais que vous n’avez pas attribué le service SharePoint Online de 50, cette modification ne sera pas conservée après la mise à niveau des plans.
   
 Si vous avez plusieurs abonnements avant de mettre à niveau des plans et que les utilisateurs ont attribué des licences à plusieurs abonnements, ce modèle d’attribution est conservé autant que possible dans le nouvel abonnement.
   
@@ -164,9 +164,9 @@ Toutes les données utilisateur sont conservées pendant la mise à niveau, y co
 Jour de la mise à niveau de votre forfait, la facturation de votre ancien abonnement est désactivée et la facturation de votre nouvel abonnement est activée. Un crédit calculé au prorata du service non utilisé dans le cadre de l'ancien abonnement vous sera communiqué. Vous recevrez une nouvelle facture incluant le crédit de votre ancien abonnement dans les 30 jours suivant la mise à niveau vers le nouvel abonnement.
   
 > [!NOTE]
-> Le délai nécessaire au crédit de votre compte de paiement dépend du mode de paiement utilisé pour l'abonnement. 
+> Le délai nécessaire au crédit de votre compte de paiement dépend du mode de paiement utilisé pour l'abonnement.
   
- **Vous effectuez une mise à niveau à partir d’un abonnement prépayé avant qu’il expire ?** Si le coût total de votre nouvel abonnement est supérieur ou égal à la valeur restante de votre abonnement prépayé, vous ne perdrez pas de temps prépayé. La page de validation de l'achat affiche un crédit pour votre temps inutilisé. En revanche, si le coût de votre nouvel abonnement est inférieur à la valeur restante de votre abonnement prépayé actuel, vous perdrez une partie du temps non utilisé. Vous serez informé avant de passer à la conclusion de la transaction et vous pouvez attendre jusqu’à ce que la date d’expiration de votre abonnement prépayée soit plus proche.
+**Vous effectuez une mise à niveau à partir d’un abonnement prépayé avant qu’il expire ?** Si le coût total de votre nouvel abonnement est supérieur ou égal à la valeur restante de votre abonnement prépayé, vous ne perdrez pas de temps prépayé. La page de validation de l'achat affiche un crédit pour votre temps inutilisé. En revanche, si le coût de votre nouvel abonnement est inférieur à la valeur restante de votre abonnement prépayé actuel, vous perdrez une partie du temps non utilisé. Vous serez informé avant de passer à la conclusion de la transaction et vous pouvez attendre jusqu’à ce que la date d’expiration de votre abonnement prépayée soit plus proche.
 
 ## <a name="call-support-to-help-you-upgrade-plans"></a>Appel de la prise en charge pour vous aider à mettre à niveau les plans
 

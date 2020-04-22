@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.assetid: 5c8c1db6-d8ac-4dbb-8a7a-f65d452169b9
 description: Au lieu d’exporter les résultats réels d’une recherche de contenu dans le centre de sécurité & conformité dans Office 365, vous pouvez exporter un rapport des résultats de la recherche. Le rapport contient un résumé des résultats de la recherche et un document avec des informations détaillées sur chaque élément à exporter.
-ms.openlocfilehash: 6730a1c406e02de26cbef964e445cfad31c948ec
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 63acc8701973519f959ced9822333e893e6fd863
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42074391"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43615928"
 ---
 # <a name="export-a-content-search-report"></a>Exporter un rapport de recherche de contenu
 
@@ -50,13 +50,13 @@ Lorsque vous exportez un État, il est téléchargé dans un dossier portant le 
 
   - Microsoft Edge <sup>2</sup>
 
-    OU
+    OR
 
   - Microsoft Internet Explorer 10 et versions ultérieures
 
   > [!NOTE]
   > <sup>1</sup> Microsoft ne fabrique pas d’extensions ou de modules complémentaires tiers pour les applications ClickOnce. L’exportation des résultats de recherche à l’aide d’un navigateur non pris en charge avec des extensions ou des modules complémentaires tiers n’est pas prise en charge.<br/>
-  > <sup>2</sup> suite à des modifications récentes apportées à Microsoft Edge, la prise en charge de ClickOnce n’est plus activée par défaut. Pour obtenir des instructions sur l’activation de la prise en charge ClickOnce dans Edge, consultez [la rubrique utiliser l’outil d’exportation de découverte électronique Office 365 dans Microsoft Edge](configure-edge-to-export-search-results.md).
+  > <sup>2</sup> suite à des modifications récentes apportées à Microsoft Edge, la prise en charge de ClickOnce n’est plus activée par défaut. Pour obtenir des instructions sur l’activation de la prise en charge ClickOnce dans Edge, consultez [la rubrique utiliser l’outil d’exportation de découverte électronique dans Microsoft Edge](configure-edge-to-export-search-results.md).
 
 - Si la taille totale estimée des résultats renvoyés par une recherche de contenu dépasse 2 to, l’exportation du rapport échoue. Pour réussir l’exportation du rapport, essayez de limiter l’étendue et relancez la recherche de sorte que la taille estimée des résultats soit inférieure à 2 to.
 
@@ -72,7 +72,7 @@ La première étape consiste à préparer le rapport en vue de son téléchargem
   
 1. Accédez à [https://protection.office.com](https://protection.office.com).
     
-2. Ouvrez une session Office 365 en utilisant votre compte scolaire ou professionnel.
+2. Connectez-vous à l’aide de votre compte professionnel ou scolaire.
     
 3. Dans le volet gauche du centre de sécurité & conformité, cliquez sur recherche de **contenu**de **recherche** \> .
     
@@ -127,7 +127,7 @@ L’étape suivante consiste à télécharger le rapport à partir de la zone de
   
 3. Cliquez sur **Télécharger le rapport**.
     
-4. Si vous êtes invité à installer l' **outil d’exportation de découverte électronique MicrosoftOffice 365**, cliquez sur **installer**.
+4. Si vous êtes invité à installer l' **outil d’exportation de découverte électronique**, cliquez sur **installer**.
     
 5. Dans l’**outil d’exportation de découverte électronique**, collez la clé d’exportation que vous avez copiée à l’étape 2 dans la zone appropriée. 
     
@@ -144,10 +144,10 @@ L’étape suivante consiste à télécharger le rapport à partir de la zone de
 
 Lorsque vous générez et exportez un rapport sur les résultats d’une recherche de contenu, les documents suivants sont téléchargés :
   
-- **Exporter le Résumé :** Document Excel qui contient un résumé de l’exportation. Cela inclut des informations telles que le nombre de sources de contenu qui ont été recherchées, le nombre de résultats de recherche à partir de chaque emplacement de contenu, le nombre estimé d’éléments, le nombre réel d’éléments qui seront exportés et la taille estimée et réelle des éléments qui seraient exportées. 
+- **Exporter le Résumé :** Document Excel qui contient un résumé de l’exportation. Cela inclut des informations telles que le nombre de sources de contenu qui ont été recherchées, le nombre de résultats de recherche à partir de chaque emplacement de contenu, le nombre estimé d’éléments, le nombre réel d’éléments qui seront exportés, ainsi que la taille estimée et réelle des éléments qui seraient exportés. 
     
     > [!NOTE]
-    > Si vous incluez des éléments non indexés lors de l’exportation du rapport, le nombre total d’éléments non indexés est inclus dans le nombre total de résultats de recherche estimés et dans le nombre total de résultats de recherche téléchargés (si vous deviez exporter les résultats de la recherche) répertoriés dans le Exporter un rapport de synthèse. En d’autres termes, le nombre total d’éléments qui seront téléchargés est égal au nombre total de résultats estimés et au nombre total d’éléments non indexés. 
+    > Si vous incluez des éléments non indexés lors de l’exportation du rapport, le nombre total d’éléments non indexés est inclus dans le nombre total de résultats de recherche estimés et dans le nombre total de résultats de recherche téléchargés (si vous deviez exporter les résultats de la recherche) répertoriés dans le rapport Résumé de l’exportation. En d’autres termes, le nombre total d’éléments qui seront téléchargés est égal au nombre total de résultats estimés et au nombre total d’éléments non indexés. 
   
 - **Manifeste :** Fichier manifeste (au format XML) qui contient des informations sur chaque élément inclus dans les résultats de la recherche. 
     

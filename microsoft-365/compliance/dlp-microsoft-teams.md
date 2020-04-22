@@ -15,12 +15,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Vous pouvez désormais appliquer des stratégies DLP aux conversations et canaux Microsoft Teams. Lisez cet article pour en savoir plus sur son fonctionnement.
-ms.openlocfilehash: 2c530279dde03f357386f11b9e9af5d68be5ee7f
-ms.sourcegitcommit: 1c445d68e54ca4249024ca4bb72460dd6fac0a2d
+ms.openlocfilehash: 290e1e7a7c3fd395c1f7e1739b08eba64c8d2d8d
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "42170554"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43633053"
 ---
 # <a name="data-loss-prevention-and-microsoft-teams"></a>Protection contre la perte de données et Microsoft teams
 
@@ -67,7 +67,7 @@ Le lien **qu’est-ce que c’est ?** ouvre un [article](data-loss-prevention-p
 
 Pour effectuer cette tâche, vous devez disposer d’un rôle disposant d’autorisations pour modifier les stratégies DLP. Pour en savoir plus, voir [Autorisations](data-loss-prevention-policies.md#permissions).
 
-1. Accédez au centre de sécurité & conformité Office 365 ([https://protection.office.com](https://protection.office.com)) et connectez-vous.
+1. Accédez au centre de sécurité & conformité ([https://protection.office.com](https://protection.office.com)) et connectez-vous.
 
 2. Choisissez**stratégie**de **protection contre** > la perte de données.
 
@@ -87,7 +87,7 @@ Prévoyez environ une heure pour que vos modifications fonctionnent dans votre c
 
 Pour effectuer cette tâche, vous devez disposer d’un rôle disposant d’autorisations pour modifier les stratégies DLP. Pour en savoir plus, voir [Autorisations](data-loss-prevention-policies.md#permissions).
 
-1. Accédez au centre de sécurité & conformité Office 365 ([https://protection.office.com](https://protection.office.com)) et connectez-vous.
+1. Accédez au centre de sécurité & conformité ([https://protection.office.com](https://protection.office.com)) et connectez-vous.
 
 2. Choisissez**stratégie**de **protection contre** > la perte de données.
 
@@ -105,7 +105,7 @@ Prévoyez environ une heure pour que vos modifications fonctionnent dans votre c
 
 Pour effectuer cette tâche, vous devez disposer d’un rôle disposant d’autorisations pour modifier les stratégies DLP. Pour en savoir plus, voir [Autorisations](data-loss-prevention-policies.md#permissions).
 
-1. Accédez au centre de sécurité & conformité Office 365 ([https://protection.office.com](https://protection.office.com)) et connectez-vous.
+1. Accédez au centre de sécurité & conformité ([https://protection.office.com](https://protection.office.com)) et connectez-vous.
 
 2. Choisir une**stratégie** > de **protection contre** > la perte**de données + créer une stratégie**.
 

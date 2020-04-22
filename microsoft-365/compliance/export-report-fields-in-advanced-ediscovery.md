@@ -1,5 +1,5 @@
 ---
-title: Exporter des champs de rapport dans Office 365 Advanced eDiscovery
+title: Exporter des champs de rapport dans Advanced eDiscovery
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 840a5aff-ecd0-4e56-ad22-fe99bc143687
 description: Décrit tous les champs inclus dans les rapports d’exportation pour Advanced eDiscovery.
-ms.openlocfilehash: 8c932dac9218e2020bfcd57d21483728325e488f
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+ms.openlocfilehash: a7ee8e3971ab2fc921085ca63f7a8451a1597be2
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42558205"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637806"
 ---
 # <a name="export-report-fields-in-advanced-ediscovery-classic"></a>Exporter des champs de rapport dans Advanced eDiscovery (classique)
 
@@ -135,9 +135,9 @@ Le tableau suivant répertorie les champs de chaque modèle d’exportation.
 |Word_count  <br/> |Analyse  <br/> |Nombre de mots dans le document.  <br/> |Non  <br/> |Oui  <br/> |
 |
    
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Voir aussi
 
-[Découverte électronique avancée (classique)](office-365-advanced-ediscovery.md)
+[Advanced eDiscovery (classique)](office-365-advanced-ediscovery.md)
   
 [Exportation de données de cas avec eDiscovery avancé](export-case-data-in-advanced-ediscovery.md)
   

@@ -16,16 +16,16 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 1ccd922c0829155110e633fa45253c56b9006111
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: bff750f5600fc1daa9c6d87a4b42f0c9b1caa252
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42069881"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632909"
 ---
 # <a name="search-for-data-in-an-investigation"></a>Rechercher des données dans une investigation
 
-Sous l’onglet **Rechercher** dans une enquête de données, vous pouvez rechercher des données déplacées, confidentielles ou sensibles dans les emplacements de contenu dans Office 365 à l’aide de mots clés et de conditions. 
+Dans l’onglet **Rechercher** d’une enquête de données, vous pouvez rechercher des données déplacées, confidentielles ou sensibles dans les emplacements de contenu à l’aide de mots clés et de conditions. 
 
 Après avoir exécuté une recherche, vous pouvez afficher des statistiques sur les éléments renvoyés par la recherche, tels que les emplacements de contenu qui ont le plus d’éléments qui correspondent à la requête de recherche. Vous pouvez également afficher un aperçu d’un sous-ensemble des résultats. Une fois que vous avez identifié le jeu de documents à étudier plus en détail, vous pouvez ajouter les résultats de la recherche à un ensemble de preuves afin de poursuivre le processus et l’analyse.
 
@@ -41,7 +41,7 @@ Après avoir exécuté une recherche, vous pouvez afficher des statistiques sur 
 
 4. Choisissez les emplacements de contenu (sources de données) à rechercher. Vous pouvez étendre la recherche en sélectionnant les emplacements de contenu de personnes intéressantes (si vous en avez ajouté à l’enquête). Si vous avez ajouté des personnes intéressantes pour l’enquête, vous pouvez les ajouter en suivant les étapes décrites dans [Manage People of Interest](manage-people-of-interest.md#add-people-of-interest).
  
-   Parfois, vous devrez peut-être commencer par rechercher tous les emplacements de contenu dans votre organisation. Par ailleurs, vous pouvez avoir besoin de rechercher des emplacements qui ne sont pas détenues par une personne spécifique. Dans ce scénario, vous pouvez choisir d’effectuer une recherche dans l’ensemble de votre organisation ou tous les emplacements pour des services Office 365 spécifiques (par exemple, Exchange, SharePoint, OneDrive entreprise ou Teams.
+   Parfois, vous devrez peut-être commencer par rechercher tous les emplacements de contenu dans votre organisation. Par ailleurs, vous pouvez avoir besoin de rechercher des emplacements qui ne sont pas détenues par une personne spécifique. Dans ce scénario, vous pouvez choisir d’effectuer une recherche dans l’ensemble de votre organisation ou tous les emplacements pour des services spécifiques (par exemple, Exchange, SharePoint, OneDrive entreprise ou Teams.
 
 5. Enregistrez et exécutez la recherche.
 
@@ -76,14 +76,14 @@ Lorsque vous êtes satisfait des résultats d’une recherche et que vous êtes 
 
 - Tous les éléments (y compris le contenu et les métadonnées) sont réindexés de sorte que toutes les données du jeu de preuves soient entièrement utilisables lors de votre enquête. La réindexation des données entraîne des recherches rapides et rapides lors de la recherche des données dans l’ensemble de preuves lors de votre enquête.
 
-L’un des avantages de la copie des données actives dans un ensemble de preuves dans Azure est que pour les incidents urgents ou critiques, vous pouvez rapidement contenir les dommages en supprimant immédiatement le contenu suspect de la source de données d’origine dans le service actif, puis en examinant l’incident en analysant les preuves qui ont été copiées dans l’environnement en quarantaine de l’emplacement de stockage Azure. 
+L’un des avantages de la copie des données actives dans un ensemble de preuves dans Azure est que pour les incidents urgents ou critiques, vous pouvez rapidement contenir les dommages en supprimant immédiatement le contenu suspect de la source de données d’origine dans le service actif, puis en examinant l’incident en analysant la preuve qui a été copiée dans l’environnement de stockage Azure. 
 
 La copie des données d’origine dans l’ensemble de preuves facilite également votre enquête en vous fournissant des outils d’analyse avancés, tels que la détection de thèmes, la détection de proximité et l’identification des threads de messagerie.
 
-Si nécessaire, vous pouvez également ajouter des données provenant de sources de données autres que Office 365 à un jeu de preuves afin qu’il soit stocké avec les données que vous collectez à partir d’Office 365.
+Si nécessaire, vous pouvez également ajouter des données provenant de sources de données non Microcsoft 365 à un jeu de preuves afin de le stocker avec les données que vous collectez à partir de Microsoft 365.
 
 Pour ajouter des données à un jeu de preuves, sélectionnez une recherche dans l’onglet **recherches** , puis cliquez sur **Ajouter des résultats à des preuves** sur la page de menu volant. Vous pouvez ajouter des données à un ensemble de preuves existant ou créer un ensemble de preuves à la volée.
 
 ### <a name="tracking-the-progress-of-adding-search-results-to-evidence"></a>Suivi de la progression de l’ajout de résultats de recherche à des preuves
 
-L’ajout de données à un jeu de preuves est un processus de longue durée. Le processus inclut la collecte des éléments de la source de données d’origine à partir d’Office 365 (par exemple, à partir de boîtes aux lettres et de sites), en les copiant vers l’emplacement de stockage Azure (ce processus de copie est *également appelé «* ingestion »), puis la réindexation des éléments. Vous pouvez suivre la progression sous l’onglet **travaux** ou sur l’onglet **recherches** dans la colonne **données ajoutées à la preuve** . Une fois le traitement du traitement des preuves terminé, vous pouvez accéder à l’onglet **preuve** , cliquer sur l’ensemble de preuves, puis lancer votre enquête en recherchant, examiner, Baliser et exporter les données pertinentes selon vos besoins.
+L’ajout de données à un jeu de preuves est un processus de longue durée. Le processus inclut la collecte des éléments de la source de données d’origine à partir de Microsoft 365 (par exemple, à partir de boîtes aux lettres et de sites), en les copiant vers l’emplacement de stockage Azure (ce processus de copie est *également appelé «* ingestion »), puis la réindexation des éléments. Vous pouvez suivre la progression sous l’onglet **travaux** ou sur l’onglet **recherches** dans la colonne **données ajoutées à la preuve** . Une fois le traitement du traitement des preuves terminé, vous pouvez accéder à l’onglet **preuve** , cliquer sur l’ensemble de preuves, puis lancer votre enquête en recherchant, examiner, Baliser et exporter les données pertinentes selon vos besoins.

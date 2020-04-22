@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 5b9a067b-9d2e-4aa5-bb33-99d8c0d0b5d7
 description: Affecter les autorisations requises pour effectuer des tâches liées à la découverte électronique à l’aide du centre de sécurité & conformité.
-ms.openlocfilehash: 30d1a288236678c3daef0a9aaa134d49fea127af
-ms.sourcegitcommit: 825037f166eea3ba70f8980cedc5492f90c1cc56
+ms.openlocfilehash: dc7eb61a006b41e519c76e70c768b551ff5126b9
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "43097207"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631845"
 ---
 # <a name="assign-ediscovery-permissions-in-the-security--compliance-center"></a>Attribuer des autorisations eDiscovery dans le centre de sécurité & conformité
 
@@ -55,7 +55,7 @@ Le groupe de rôles de découverte électronique principal dans le centre de sé
 
 1. Accédez à [https://protection.office.com](https://protection.office.com).
     
-2. Ouvrez une session Office 365 en utilisant votre compte scolaire ou professionnel.
+2. Connectez-vous à l’aide de votre compte professionnel ou scolaire.
     
 3. Dans le volet gauche du centre de sécurité et de conformité, sélectionnez **autorisations**, puis sélectionnez la case à cocher en regard de **Gestionnaire eDiscovery**.
     
@@ -94,7 +94,7 @@ Ce rôle permet aux utilisateurs de créer, de modifier, de supprimer et de cont
 
 ### <a name="compliance-search"></a>Recherche de conformité
 
-Ce rôle permet aux utilisateurs d’exécuter l’outil de recherche de contenu dans le centre de conformité & de sécurité pour rechercher des boîtes aux lettres et des dossiers publics, des sites SharePoint Online, des sites OneDrive entreprise, des conversations Skype entreprise, des groupes Office 365 et Microsoft Teams, ainsi que des groupes Yammer. Ce rôle permet à un utilisateur d’obtenir une estimation des résultats de la recherche et de créer des rapports d’exportation, mais des rôles supplémentaires sont nécessaires pour lancer des actions de recherche de contenu telles que l’aperçu, l’exportation ou la suppression de résultats de recherche.
+Ce rôle permet aux utilisateurs d’exécuter l’outil de recherche de contenu dans le centre de conformité & de sécurité pour rechercher des boîtes aux lettres et des dossiers publics, des sites SharePoint Online, des sites OneDrive entreprise, des conversations Skype entreprise, des groupes Microsoft 365 et Microsoft Teams, ainsi que des groupes Yammer. Ce rôle permet à un utilisateur d’obtenir une estimation des résultats de la recherche et de créer des rapports d’exportation, mais des rôles supplémentaires sont nécessaires pour lancer des actions de recherche de contenu telles que l’aperçu, l’exportation ou la suppression de résultats de recherche.
 
 Les utilisateurs auxquels le rôle de recherche de conformité est attribué mais qui n’ont pas le rôle Aperçu peuvent prévisualiser les résultats d’une recherche dans laquelle l’action d’aperçu a été initiée par un utilisateur auquel le rôle aperçu a été attribué. L’utilisateur sans rôle d’aperçu peut prévisualiser les résultats pendant deux semaines après la création de l’action d’évaluation initiale.
 
@@ -110,7 +110,7 @@ Pour plus d’informations sur l’exportation des résultats de recherche, voir
 
 ### <a name="hold"></a>Suspension
 
-Ce rôle permet aux utilisateurs de placer du contenu en conservation dans des boîtes aux lettres, des dossiers publics, des sites, des conversations Skype entreprise et des groupes Office 365. Lorsque le contenu est en conservation, les propriétaires de contenu peuvent toujours modifier ou supprimer le contenu d’origine, mais le contenu est préservé jusqu’à ce que la conservation soit supprimée ou jusqu’à l’expiration de la durée de la conservation. 
+Ce rôle permet aux utilisateurs de placer le contenu en conservation dans les boîtes aux lettres, les dossiers publics, les sites, les conversations Skype entreprise et les groupes Microsoft 365. Lorsque le contenu est en conservation, les propriétaires de contenu peuvent toujours modifier ou supprimer le contenu d’origine, mais le contenu est préservé jusqu’à ce que la conservation soit supprimée ou jusqu’à l’expiration de la durée de la conservation. 
 
 Pour plus d’informations sur les suspensions, voir :
 
@@ -135,7 +135,7 @@ Ce rôle permet aux utilisateurs de déchiffrer des messages électroniques prot
 
 ### <a name="search-and-purge"></a>Recherche et purge
 
-Ce rôle permet aux utilisateurs de procéder à la suppression en bloc des données correspondant aux critères d’une recherche de contenu. Pour plus d’informations, consultez [la rubrique Rechercher et supprimer des messages électroniques dans votre organisation Office 365](search-for-and-delete-messages-in-your-organization.md). 
+Ce rôle permet aux utilisateurs de procéder à la suppression en bloc des données correspondant aux critères d’une recherche de contenu. Pour plus d’informations, consultez [la rubrique Rechercher et supprimer des messages électroniques dans votre organisation](search-for-and-delete-messages-in-your-organization.md). 
 
 ## <a name="more-information"></a>Plus d’informations
 
@@ -151,7 +151,7 @@ Ce rôle permet aux utilisateurs de procéder à la suppression en bloc des donn
   Add-RoleGroupMember "eDiscovery Manager" -Member <name of security group>
   ```
 
-    Les groupes de distribution Exchange et les groupes Office 365 ne sont pas pris en charge. Vous devez utiliser un groupe de sécurité à extension messagerie, que vous pouvez créer dans Exchange Online PowerShell à l' `New-DistributionGroup -Type Security` aide de la commande. Vous pouvez également créer un groupe de sécurité à extension messagerie (et ajouter des membres) dans le centre d’administration Exchange ou dans le centre d’administration Microsoft 365. La création d’une nouvelle sécurité à extension messagerie peut prendre jusqu’à 60 minutes après sa création pour pouvoir être ajoutée au groupe de rôles gestionnaires eDiscovery. 
+    Les groupes de distribution Exchange et les groupes Microsoft 365 ne sont pas pris en charge. Vous devez utiliser un groupe de sécurité à extension messagerie, que vous pouvez créer dans Exchange Online PowerShell à l' `New-DistributionGroup -Type Security` aide de la commande. Vous pouvez également créer un groupe de sécurité à extension messagerie (et ajouter des membres) dans le centre d’administration Exchange ou dans le centre d’administration Microsoft 365. La création d’une nouvelle sécurité à extension messagerie peut prendre jusqu’à 60 minutes après sa création pour pouvoir être ajoutée au groupe de rôles gestionnaires eDiscovery. 
     
     Comme indiqué précédemment, vous ne pouvez pas faire d’un groupe de sécurité à extension messagerie un administrateur de découverte électronique à l’aide de la cmdlet **Add-eDiscoveryCaseAdmin** dans la sécurité & Centre de conformité PowerShell. Vous pouvez uniquement ajouter des utilisateurs individuels en tant qu’administrateurs eDiscovery. 
     

@@ -14,17 +14,17 @@ search.appverid:
 - SPO160
 ms.assetid: 55e8d858-f278-482b-a198-2e62d6a2e6e5
 description: Votre organisation peut être amenée à conserver des documents pendant une période de temps en raison de la conformité, de la légalité ou d’autres exigences professionnelles. Toutefois, si votre organisation conserve les documents plus longtemps que nécessaire, vous risquez de créer des risques légaux inutiles. Avec une stratégie de suppression de documents, vous pouvez réduire de manière proactive les risques en supprimant des documents dans un site après une période de temps spécifique (par exemple, vous pouvez supprimer des documents dans les sites OneDrive entreprise de l’utilisateur cinq ans après la création des documents).
-ms.openlocfilehash: 60bf7808daad3eaead99ef64ea24be0bcfd9be0e
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 55d4616b4185ebdbbf0f132803d1b7414eaabac8
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42075201"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43633043"
 ---
 # <a name="overview-of-document-deletion-policies"></a>Vue d’ensemble des stratégies de suppression de documents
 
 > [!IMPORTANT]
-> Pour aller plus loin, nous vous recommandons d’utiliser une stratégie de rétention ou des étiquettes créées dans le centre de conformité Microsoft 365, le centre &amp; de sécurité Microsoft 365 ou le centre de sécurité conformité Office 365 au lieu d’une stratégie de suppression de documents. Les stratégies de suppression de documents continueront à fonctionner côte à côte avec des stratégies de rétention, mais si vous devez conserver ou supprimer du contenu n’importe où dans Office 365, nous vous recommandons d’utiliser une stratégie de rétention. Pour plus d’informations, consultez [la rubrique utiliser une stratégie de rétention au lieu de ces fonctionnalités](retention-policies.md#use-a-retention-policy-instead-of-these-features).
+> Pour aller plus loin, nous vous recommandons d’utiliser une stratégie de rétention ou des étiquettes créées dans le centre de conformité Microsoft 365, &amp; le centre de sécurité Microsoft 365 ou le centre de sécurité conformité au lieu d’une stratégie de suppression de documents. Les stratégies de suppression de documents continueront à fonctionner côte à côte avec des stratégies de rétention, mais si vous devez conserver ou supprimer du contenu n’importe où dans Office 365, nous vous recommandons d’utiliser une stratégie de rétention. Pour plus d’informations, consultez [la rubrique utiliser une stratégie de rétention au lieu de ces fonctionnalités](retention-policies.md#use-a-retention-policy-instead-of-these-features).
   
 Votre organisation peut être amenée à conserver des documents pendant une période de temps en raison de la conformité, de la légalité ou d’autres exigences professionnelles. Toutefois, si votre organisation conserve les documents plus longtemps que nécessaire, vous risquez de créer des risques légaux inutiles. Avec une stratégie de suppression de documents, vous pouvez réduire de manière proactive les risques en supprimant des documents dans un site après une période de temps spécifique (par exemple, vous pouvez supprimer des documents dans les sites OneDrive entreprise de l’utilisateur cinq ans après la création des documents).
   
@@ -44,7 +44,7 @@ Vous créez et gérez des stratégies de suppression de documents à l’aide du
   
 ## <a name="when-to-use-document-deletion-policies"></a>Quand utiliser des stratégies de suppression de documents ?
 
-Outre les stratégies de suppression de documents, Office 365 fournit ces stratégies de rétention pour le contenu du site :
+En plus des stratégies de suppression de documents, Microsoft fournit ces stratégies de rétention pour le contenu du site :
   
 - [Gestion des enregistrements](https://go.microsoft.com/fwlink/p/?LinkID=404250)
     
@@ -114,7 +114,7 @@ Une ou plusieurs stratégies peuvent être affectées à une collection de sites
   
 ## <a name="assigning-document-deletion-policies-for-the-first-time"></a>Première affectation des stratégies de suppression de documents
 
-Il est important de comprendre que la période spécifiée pour une stratégie de suppression de documents signifie le temps écoulé depuis que le document a été créé ou modifié, et non le moment où la stratégie a été affectée. Par exemple, vous pouvez créer une stratégie de suppression de documents qui supprime définitivement les documents deux ans après leur création, puis affecter cette stratégie à un modèle de collection de sites à partir duquel plusieurs collections de sites ont été créées quatre ou cinq ans auparavant. Dans ce cas, il est probable que les collections de sites existantes contiennent de nombreux documents qui sont déjà plus anciens que les deux années spécifiés par la stratégie de suppression, ce qui signifie que beaucoup de contenu seront supprimés peu après l’affectation de la stratégie de suppression de documents pour le premier périodes.
+Il est important de comprendre que la période spécifiée pour une stratégie de suppression de documents signifie le temps écoulé depuis que le document a été créé ou modifié, et non le moment où la stratégie a été affectée. Par exemple, vous pouvez créer une stratégie de suppression de documents qui supprime définitivement les documents deux ans après leur création, puis affecter cette stratégie à un modèle de collection de sites à partir duquel plusieurs collections de sites ont été créées quatre ou cinq ans auparavant. Dans ce cas, il est probable que les collections de sites existantes contiennent de nombreux documents qui sont déjà plus anciens que les deux années spécifiés par la stratégie de suppression, ce qui signifie que beaucoup de contenu seront supprimés peu après l’affectation de la stratégie de suppression de documents pour la première fois.
   
 Lorsque vous affectez la stratégie pour la première fois, tous les documents du site sont évalués et supprimés s’ils répondent aux critères. Cela s’applique à tous les documents existants, et non simplement aux documents créés depuis l’affectation de la stratégie. Et n’oubliez pas que la période est l’âge de chaque document, et non l’heure à laquelle la stratégie a été affectée pour la première fois.
   
@@ -144,7 +144,7 @@ Si vous avez besoin de conserver des documents pendant une période de temps fix
   
 Notez qu’une stratégie de suppression ne peut pas remplacer une conservation. Si un site est en attente et qu’une stratégie de suppression de documents supprime un document, le document est préservé dans la bibliothèque de conservation de la même manière que si le document avait été supprimé manuellement.
   
-## <a name="see-also"></a>Voir aussi
+## <a name="see-also"></a>Voir également
 
 [Application ou suppression d’une stratégie de suppression de documents pour un site](apply-or-remove-a-document-deletion-policy-for-a-site.md)
 

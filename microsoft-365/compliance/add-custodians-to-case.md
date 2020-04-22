@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: f77a2967c6b789d28a95516594b1bdd5d8b9f3c6
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 11115db9e9a29f9abe83b3c26322f7586806d4dc
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42634602"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632309"
 ---
 # <a name="add-custodians-to-an-advanced-ediscovery-case"></a>Ajouter des dépositaires à un cas avancé eDiscovery
 
@@ -68,7 +68,7 @@ Pour identifier les sources de données des dépositaires :
 
 ## <a name="step-3-associate-additional-data-sources-to-a-custodian"></a>Étape 3 : associer des sources de données supplémentaires à un dépositaire
 
-Selon le cas que vous étudiez, vous devrez peut-être également rechercher (et conserver le contenu dans) les boîtes aux lettres auxquelles un dépositaire spécifique a accès, les groupes Office 365 auxquels un dépositaire est actuellement membre ou les sites auxquels un dépositaire a également accédé. Ainsi, en plus des sources de données des dépositaires que vous avez spécifiées à l’étape précédente, vous pouvez également associer des sources de données Office 365 supplémentaires à un dépositaire dans le cas. 
+Selon le cas que vous étudiez, vous devrez peut-être également rechercher (et conserver le contenu dans) les boîtes aux lettres auxquelles un dépositaire spécifique a accès, les groupes Microsoft 365 auxquels un dépositaire est actuellement membre ou les sites auxquels un dépositaire a également accédé. Ainsi, en plus des sources de données des dépositaires que vous avez spécifiées à l’étape précédente, vous pouvez également associer des sources de données Microsoft supplémentaires à un dépositaire dans le cas. 
 
 Pour mapper des boîtes aux lettres, des sites ou des équipes à un dépositaire spécifique :
 
@@ -76,14 +76,14 @@ Pour mapper des boîtes aux lettres, des sites ou des équipes à un dépositair
   
    ![Mapper des sources de données supplémentaires](../media/AddCustodianStep3.PNG)
 
-2. Sur la page de menu volant, vous pouvez spécifier une source de données à partir de l’un des services Office 365 suivants :
+2. Sur la page de menu volant, vous pouvez spécifier une source de données à partir de l’un des services suivants :
   
-   -  **Courrier Exchange** -cliquez sur **choisir les utilisateurs, les groupes ou les équipes** , puis cliquez sur **choisir les utilisateurs, les groupes ou les équipes** . Utilisez la zone de recherche pour trouver les boîtes aux lettres à associer au dépositaire. Pour spécifier les boîtes aux lettres à affecter au dépositaire sélectionné, utilisez la zone de recherche pour rechercher des boîtes aux lettres utilisateur et des groupes de distribution. Vous pouvez également affecter la boîte aux lettres associée pour un groupe Office 365 ou une équipe Microsoft. Activez la case à cocher utilisateur, groupe, équipe, cliquez sur **choisir**, puis sur **Terminer**.
+   -  **Courrier Exchange** -cliquez sur **choisir les utilisateurs, les groupes ou les équipes** , puis cliquez sur **choisir les utilisateurs, les groupes ou les équipes** . Utilisez la zone de recherche pour trouver les boîtes aux lettres à associer au dépositaire. Pour spécifier les boîtes aux lettres à affecter au dépositaire sélectionné, utilisez la zone de recherche pour rechercher des boîtes aux lettres utilisateur et des groupes de distribution. Vous pouvez également affecter la boîte aux lettres associée pour un groupe Microsoft 365 ou une équipe Microsoft. Activez la case à cocher utilisateur, groupe, équipe, cliquez sur **choisir**, puis sur **Terminer**.
 
         > [!NOTE]
         > Lorsque vous cliquez sur choisir les utilisateurs, les groupes ou les équipes pour spécifier des boîtes aux lettres, le sélecteur de boîtes aux lettres affiché est vide. Il s’agit d’une conception qui améliore les performances. Pour ajouter une boîte aux lettres à cette liste, tapez un nom ou un alias (un minimum de 3 caractères) dans la zone de recherche.
      
-     - **Sites SharePoint** : cliquez sur **choisir des sites** , puis cliquez à nouveau sur choisir les **sites** pour afficher la liste des sites SharePoint dans votre organisation. Pour associer un site au dépositaire, vous pouvez sélectionner un site dans la liste ou vous pouvez taper l’URL d’un autre site ou d’un site associé à un groupe Office 365, Microsoft Team ou un compte OneDrive.
+     - **Sites SharePoint** : cliquez sur **choisir des sites** , puis cliquez à nouveau sur choisir les **sites** pour afficher la liste des sites SharePoint dans votre organisation. Pour associer un site au dépositaire, vous pouvez sélectionner un site dans la liste ou vous pouvez taper l’URL d’un autre site ou d’un site associé à un groupe Microsoft 365, une équipe Microsoft ou un compte OneDrive.
      
      - **Teams** : cliquez sur **choisir teams** , puis cliquez sur **choisir les équipes** pour afficher la liste de Microsoft teams dont le dépositaire est actuellement membre. Sélectionnez les équipes que vous souhaitez ajouter à votre dépositaire. Une fois sélectionné, le système identifie automatiquement & sélectionnez le site SharePoint et la boîte aux lettres de groupe associés associés à cette équipe Microsoft. Cliquez sur **choisir**, puis sur **Terminer**.
 

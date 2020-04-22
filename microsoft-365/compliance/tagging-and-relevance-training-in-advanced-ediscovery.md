@@ -1,5 +1,5 @@
 ---
-title: Étiquetage et formation à la pertinence dans Office 365 Advanced eDiscovery
+title: Étiquetage et formation à la pertinence dans Advanced eDiscovery
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -15,13 +15,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 8576cc86-d51b-4285-b54b-67184714cc62
-description: 'Découvrez les étapes à suivre pour marquer, puis utiliser un exemple de formation de 40 fichiers pendant la phase de formation pertinence d’Office 365 Advanced eDiscovery.  '
-ms.openlocfilehash: 6362aef6f4e0e17b39429dfeebca796d58d2d13e
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+description: 'Découvrez les étapes à suivre pour marquer, puis utiliser un exemple de formation de 40 fichiers pendant la phase de formation pertinente de la découverte électronique avancée.  '
+ms.openlocfilehash: 8d03061401cab2014d33e9e3238af42a4d01738a
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42557714"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636262"
 ---
 # <a name="tagging-and-relevance-training-in-advanced-ediscovery-classic"></a>Étiquetage et formation à la pertinence dans Advanced eDiscovery (classique)
 
@@ -100,7 +100,7 @@ La liste exemple de fichiers vous permet d’afficher la liste des fichiers dans
     
 ## <a name="see-also"></a>Voir aussi
 
-[Découverte électronique avancée (classique)](office-365-advanced-ediscovery.md)
+[Advanced eDiscovery (classique)](office-365-advanced-ediscovery.md)
   
 [Présentation de l’évaluation en matière de pertinence](assessment-in-relevance-in-advanced-ediscovery.md)
   

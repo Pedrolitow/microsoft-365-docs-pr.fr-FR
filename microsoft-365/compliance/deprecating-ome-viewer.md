@@ -1,5 +1,5 @@
 ---
-title: Dépréciation de l’application d’afficheur de chiffrement de messages Office 365
+title: Dépréciation de l’application visionneuse de chiffrement de messages
 f1.keywords:
 - NOCSH
 ms.author: krowley
@@ -16,14 +16,14 @@ ms.assetid: 6336cabb-b06e-402f-9e85-8bb9eb4ce68f
 ms.collection:
 - M365-security-compliance
 description: Le 15 août 2018, nous allons supprimer l’application mobile Office 365 message Encryption (OME) Viewer d’Android et d’Apple stores. L’application mobile Office 365 message Encryption Viewer était nécessaire pour lire les messages électroniques et les pièces jointes chiffrés avec la version précédente de OME sur les téléphones Apple et Android. Hormis la suppression de l’application de la visionneuse OME, nous n’avons aucune autre modification apportée à la version précédente de OME.
-ms.openlocfilehash: 791a882650cfa3ffd5caaafbb835c8f272f8665e
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 37a10942e49ca0e6249b2b6a0737411a0d6de1c5
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595269"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636112"
 ---
-# <a name="deprecating-office-365-message-encryption-viewer-app"></a>Dépréciation de l’application d’afficheur de chiffrement de messages Office 365
+# <a name="deprecating-message-encryption-viewer-app"></a>Dépréciation de l’application visionneuse de chiffrement de messages
 
 Le 15 août 2018, nous avons supprimé l’application mobile Office 365 message Encryption (OME) dans les magasins Android et Apple. L’application mobile Office 365 message Encryption Viewer était nécessaire pour lire les messages électroniques et les pièces jointes chiffrés avec la version précédente de OME sur les téléphones Apple et Android. Hormis la suppression de l’application de la visionneuse OME, nous n’avons aucune autre modification apportée à la version précédente de OME.
   
@@ -39,13 +39,13 @@ Avec cette modification, les utilisateurs ne pourront plus télécharger l’app
   
 ## <a name="why-this-change-was-made"></a>Pourquoi cette modification a été effectuée ?
 
-La nouvelle version de OME ne nécessite plus d’application mobile pour lire des messages électroniques protégés et des pièces jointes. Les clients Office 365 qui utilisent les nouvelles fonctionnalités de OME peuvent afficher le message protégé dans les clients Outlook Mobile et non-Office 365 peuvent afficher les messages protégés dans un navigateur.
+La nouvelle version de OME ne nécessite plus d’application mobile pour lire des messages électroniques protégés et des pièces jointes. Les clients qui utilisent les nouvelles fonctionnalités de OME peuvent afficher le message protégé dans Outlook Mobile et les non-clients peuvent afficher les messages protégés dans un navigateur.
   
 Demander aux utilisateurs de télécharger une application mobile est un autre obstacle pour que les clients puissent afficher les messages protégés. Les nouvelles fonctionnalités de chiffrement des messages Office 365 offrent une meilleure expérience mobile.
   
 ## <a name="can-i-still-use-the-previous-version-of-office-365-message-encryption"></a>Puis-je toujours utiliser la version précédente d’Office 365 de chiffrement de messages
 
-La version précédente d’Office 365 le chiffrement de messages ne sera pas désapprouvée pour le moment, mais nous avons apporté des améliorations significatives à la nouvelle version du chiffrement de messages d’Office 365, ce qui facilite le chiffrement et la protection des données sensibles à quiconque et sur n’importe quel appareil, y compris la possibilité pour les utilisateurs d’Office 365 de lire des messages protégés directement dans Outlook (ordinateur de bureau, mobile et Web). 
+La version précédente d’Office 365 le chiffrement de messages ne sera pas désapprouvée pour le moment, mais nous avons apporté des améliorations significatives à la nouvelle version du chiffrement de messages d’Office 365, ce qui facilite le chiffrement et la protection des données sensibles à quiconque et sur n’importe quel appareil, y compris la possibilité pour les utilisateurs de lire les messages protégés directement dans Outlook et Web). 
   
 ## <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>Que dois-je faire pour préparer cette modification ?
 

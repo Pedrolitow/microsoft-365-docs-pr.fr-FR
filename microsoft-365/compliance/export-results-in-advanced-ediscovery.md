@@ -1,5 +1,5 @@
 ---
-title: Exporter les résultats dans Office 365 Advanced eDiscovery
+title: Exporter les résultats dans Advanced eDiscovery
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -14,13 +14,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: a9951a07-10b3-48cb-b37a-0ffaa24931ad
-description: 'Découvrez comment définir des options pour l’exportation des résultats à partir d’Office 365 Advanced eDiscovery, notamment la procédure de spécification des paramètres pour un lot d’exportation. '
-ms.openlocfilehash: e439753b427a4e4a90e219912f8d3c1fcf4cfff3
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+description: 'Découvrez comment définir des options d’exportation des résultats à partir d’Advanced eDiscovery, notamment la procédure de spécification des paramètres d’un lot d’exportation. '
+ms.openlocfilehash: 4d94b7d1f1d475916e7b0b44a98dd878a1bd5fde
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42558195"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43615998"
 ---
 # <a name="export-results-in-advanced-ediscovery-classic"></a>Exporter les résultats dans Advanced eDiscovery (classique)
 
@@ -79,7 +79,7 @@ L’outil d’exportation de découverte électronique est utilisé pour exporte
     
     - Pour supprimer un lot d’exportation, sélectionnez **supprimer** ![supprimer une icône](../media/92a9f8e0-d469-48da-addb-69365e7ffb6f.jpg)exporter un lot.
     
-    - Pour afficher l’historique d’un lot, sélectionnez **** ![l’icône](../media/a80cc320-d96c-4d91-8884-75fe2cb147e2.jpg)historique du lot-afficher l’historique.
+    - Pour afficher l’historique d’un lot, sélectionnez **Batch history** ![l’icône](../media/a80cc320-d96c-4d91-8884-75fe2cb147e2.jpg)historique du lot-afficher l’historique.
     
 2. Sous **remplissage**, sélectionnez **inclure uniquement les fichiers au-dessus du score de découpage de pertinence** et/ou **affiner l’exportation de lot** si vous souhaitez affiner les paramètres de votre lot d’exportation. 
     
@@ -194,11 +194,11 @@ Le tableau suivant répertorie les fichiers de sortie générés lors de l’ex�
    
 ## <a name="see-also"></a>Voir aussi
 
-[Découverte électronique avancée (classique)](office-365-advanced-ediscovery.md)
+[Advanced eDiscovery (classique)](office-365-advanced-ediscovery.md)
   
 [Affichage de l’historique du lot et exportation des résultats passés](view-batch-history-and-export-past-results.md)
   
-[Configuration rapide d’Office 365 Advanced eDiscovery](quick-setup-for-advanced-ediscovery.md)
+[Configuration rapide de la découverte électronique avancée](quick-setup-for-advanced-ediscovery.md)
 
 [Exportation des champs d’un rapport](export-report-fields-in-advanced-ediscovery.md)
   

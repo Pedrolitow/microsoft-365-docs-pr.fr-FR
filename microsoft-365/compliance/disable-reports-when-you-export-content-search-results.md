@@ -13,22 +13,22 @@ localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: c9b0ff0c-282b-4a44-b43f-cfc5b96557f9
 description: Modifiez le Registre Windows sur votre ordinateur local pour désactiver les rapports lorsque vous exportez les résultats d’une recherche de contenu à partir du centre de sécurité & conformité dans Office 365. La désactivation de ces rapports permet d’accélérer le temps de téléchargement et d’économiser de l’espace disque.
-ms.openlocfilehash: 99f8079bdbb0a3a43d0306dcf6b6ca8ab2c4fbef
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 3bd5fadda750c709c463fbc4d84668b43e0d3a10
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595239"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43633449"
 ---
 # <a name="disable-reports-when-you-export-content-search-results"></a>Désactiver les rapports lorsque vous exportez les résultats de recherche de contenu
 
-Lorsque vous utilisez l’outil d’exportation de découverte électronique Office 365 pour exporter les résultats d’une recherche de contenu dans le centre de sécurité & conformité, l’outil crée et exporte automatiquement deux rapports contenant des informations supplémentaires sur le contenu exporté. Ces rapports sont les fichiers Results. csv et manifest. XML (voir la section Forum [aux questions sur la désactivation des rapports d’exportation](#frequently-asked-questions-about-disabling-export-reports) de cette rubrique pour obtenir des descriptions détaillées de ces rapports). Étant donné que ces fichiers peuvent être très volumineux, vous pouvez accélérer le temps de téléchargement et économiser de l’espace disque en empêchant l’exportation de ces fichiers. Pour ce faire, vous pouvez modifier le Registre Windows sur l’ordinateur que vous utilisez pour exporter les résultats de la recherche. Si vous souhaitez inclure les rapports ultérieurement, vous pouvez modifier le paramètre de registre. 
+Lorsque vous utilisez l’outil d’exportation de découverte électronique pour exporter les résultats d’une recherche de contenu dans le centre de sécurité & conformité, l’outil crée et exporte automatiquement deux rapports contenant des informations supplémentaires sur le contenu exporté. Ces rapports sont les fichiers Results. csv et manifest. XML (voir la section Forum [aux questions sur la désactivation des rapports d’exportation](#frequently-asked-questions-about-disabling-export-reports) de cette rubrique pour obtenir des descriptions détaillées de ces rapports). Étant donné que ces fichiers peuvent être très volumineux, vous pouvez accélérer le temps de téléchargement et économiser de l’espace disque en empêchant l’exportation de ces fichiers. Pour ce faire, vous pouvez modifier le Registre Windows sur l’ordinateur que vous utilisez pour exporter les résultats de la recherche. Si vous souhaitez inclure les rapports ultérieurement, vous pouvez modifier le paramètre de registre. 
   
 ## <a name="create-registry-settings-to-disable-the-export-reports"></a>Créer des paramètres de Registre pour désactiver les rapports d’exportation
 
 Effectuez la procédure suivante sur l’ordinateur que vous allez utiliser pour exporter les résultats d’une recherche de contenu.
   
-1. Fermez l’outil d’exportation eDiscovery d’Office 365 s’il est ouvert.
+1. Fermez l’outil d’exportation de découverte électronique s’il est ouvert.
     
 2. Effectuez l’une des étapes suivantes, ou les deux, en fonction de l’état d’exportation que vous souhaitez désactiver.
     
@@ -62,7 +62,7 @@ Effectuez la procédure suivante sur l’ordinateur que vous allez utiliser pour
 
 Si vous avez désactivé les rapports results. csv et manifest. XML en créant les fichiers. reg dans la procédure précédente, vous pouvez modifier ces fichiers pour réactiver un rapport afin qu’il soit exporté avec les résultats de la recherche. À nouveau, effectuez la procédure suivante sur l’ordinateur que vous allez utiliser pour exporter les résultats d’une recherche de contenu.
   
-1. Fermez l’outil d’exportation eDiscovery d’Office 365 s’il est ouvert.
+1. Fermez l’outil d’exportation de découverte électronique s’il est ouvert.
     
 2. Modifiez l’un des fichiers d’édition. reg que vous avez créés dans la procédure précédente ou les deux.
     
@@ -128,11 +128,11 @@ Cela dépend de vos besoins spécifiques. De nombreuses organisations n’ont pa
   
  **Sur quel ordinateur dois-je effectuer cette opération ?**
   
- Vous devez modifier le paramètre de Registre sur tout ordinateur local sur lequel vous exécutez l’outil d’exportation de découverte électronique Office 365. 
+ Vous devez modifier le paramètre de Registre sur n’importe quel ordinateur local sur lequel vous exécutez l’outil d’exportation de découverte électronique. 
   
  **Après avoir modifié ce paramètre, dois-je redémarrer l’ordinateur ?**
   
-Non, il n’est pas nécessaire de redémarrer l’ordinateur. Toutefois, si l’outil d’exportation eDiscovery d’Office 365 est en cours d’exécution, vous devez le fermer, puis le redémarrer une fois le paramètre de Registre modifié.
+Non, il n’est pas nécessaire de redémarrer l’ordinateur. Toutefois, si l’outil d’exportation de découverte électronique est en cours d’exécution, vous devez le fermer, puis le redémarrer une fois que vous avez modifié le paramètre de registre.
   
  **Une clé de Registre existante est-elle modifiée ou une nouvelle clé est-elle créée ?**
   

@@ -15,12 +15,12 @@ search.appverid:
 - MOP150
 ms.assetid: bed936bc-0969-4a6d-a7a5-66305c14e958
 description: Découvrez comment les administrateurs peuvent utiliser Exchange Online PowerShell et un fichier CSV pour importer en bloc des contacts externes dans la liste d’adresses globale.
-ms.openlocfilehash: c74e8932f7ed2feeca472848c88bdddbc740fe28
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 4d0b1a826583a032fd27c216367e99a6b7f8b371
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42078951"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636342"
 ---
 # <a name="bulk-import-external-contacts-to-exchange-online"></a>Importation en bloc de contacts externes vers Exchange Online
 
@@ -71,7 +71,7 @@ La première étape consiste à créer un fichier CSV qui contient des informati
 
 L’étape suivante consiste à utiliser le fichier CSV que vous avez créé à l’étape 1 et PowerShell pour importer en bloc les contacts externes figurant dans le fichier CSV vers Exchange Online. 
   
-1.  Connectez PowerShell à votre organisation Exchange Online. Pour obtenir des instructions détaillées, consultez la rubrique [connexion à Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=396554). Veillez à utiliser le nom d’utilisateur et le mot de passe de votre compte d’administrateur général Office 365 lorsque vous vous connectez à Exchange Online PowerShell. 
+1.  Connectez PowerShell à votre organisation Exchange Online. Pour obtenir des instructions détaillées, consultez la rubrique [connexion à Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=396554). Veillez à utiliser le nom d’utilisateur et le mot de passe de votre compte d’administrateur général lorsque vous vous connectez à Exchange Online PowerShell. 
     
 2. Une fois que vous avez connecté PowerShell à Exchange Online, accédez au dossier du bureau dans lequel vous avez enregistré le fichier CSV à l’étape 1 ; par exemple `C:\Users\Administrator\desktop`.
     

@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 44ee6715c8bbe1254cead6b11930ca41be8864a2
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: f5028e82e8c54972dd188215eac0518775ec275c
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42634712"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635838"
 ---
 # <a name="manage-people-of-interest-in-data-investigations-preview"></a>Gérer les personnes concernées par les enquêtes de données (aperçu)
 
@@ -50,18 +50,18 @@ Pour ajouter des personnes intéressantes à une enquête :
 
 8. Module Dans le menu volant :
    
-    -  **Boîtes aux lettres Exchange** : cliquez sur **choisir les utilisateurs, les groupes ou les équipes** , puis cliquez à nouveau sur **choisir les utilisateurs, les groupes ou les équipes** . Pour ajouter d’autres boîtes aux lettres, utilisez la zone de recherche pour rechercher des boîtes aux lettres utilisateur et des groupes de distribution. Vous pouvez également ajouter des boîtes aux lettres utilisées pour stocker un groupe Office 365 ou des informations d’équipe Microsoft. Activez la case à cocher utilisateur, groupe, équipe, cliquez sur **choisir**, puis sur **Terminer**.
+    -  **Boîtes aux lettres Exchange** : cliquez sur **choisir les utilisateurs, les groupes ou les équipes** , puis cliquez à nouveau sur **choisir les utilisateurs, les groupes ou les équipes** . Pour ajouter d’autres boîtes aux lettres, utilisez la zone de recherche pour rechercher des boîtes aux lettres utilisateur et des groupes de distribution. Vous pouvez également ajouter des boîtes aux lettres utilisées pour stocker un groupe Microsoft 365 ou des informations d’équipe Microsoft. Activez la case à cocher utilisateur, groupe, équipe, cliquez sur **choisir**, puis sur **Terminer**.
 
         > [!NOTE]
         > Lorsque vous cliquez sur choisir les utilisateurs, les groupes ou les équipes pour spécifier des boîtes aux lettres, le sélecteur de boîtes aux lettres affiché est vide. Il s’agit d’une conception qui améliore les performances. Pour ajouter des personnes à cette liste, tapez un nom (un minimum de 3 caractères) dans la zone de recherche.
      
-     - **Sites SharePoint** : cliquez sur **choisir des sites** , puis cliquez à nouveau sur choisir les **sites** pour spécifier d’autres sites SharePoint et OneDrive entreprise que vous wwant ajouter à une personne. Vous pouvez également ajouter l’URL du site SharePoint pour un groupe Office 365 ou une équipe Microsoft. Tapez l’URL de chaque site que vous souhaitez attribuer. Cliquez sur **choisir**, puis sur **Terminer**.
+     - **Sites SharePoint** : cliquez sur **choisir des sites** , puis cliquez à nouveau sur choisir les **sites** pour spécifier d’autres sites SharePoint et OneDrive entreprise que vous wwant ajouter à une personne. Vous pouvez également ajouter l’URL du site SharePoint pour un groupe Microsoft 365 ou une équipe Microsoft. Tapez l’URL de chaque site que vous souhaitez attribuer. Cliquez sur **choisir**, puis sur **Terminer**.
      - **Microsoft** teams – cliquez sur **choisir teams** , puis cliquez sur **choisir les équipes** pour afficher la liste des groupes d’équipes Microsoft dont la personne est aujourd’hui membre. Sélectionnez les équipes que vous souhaitez ajouter à la personne. Une fois sélectionné, le système identifie automatiquement & sélectionnez le site SharePoint et la boîte aux lettres de groupe associés associés à cette équipe Microsoft. Cliquez sur **choisir**, puis sur **Terminer**.
         
       > [!NOTE]
       > Pour ajouter des Microsoft teams supplémentaires, vous devez ajouter séparément la boîte aux lettres et le site SharePoint, comme indiqué ci-dessus.
 
-Une fois que vous avez terminé le mappage des sources de données aux personnes intéressantes, vous pouvez voir le résumé du nombre total de boîtes aux lettres, de sites et d’équipes que vous venez d’ajouter. Si vous mappez des sources de données supplémentaires à des personnes intéressantes et que votre recherche par des personnes intéressantes, le mappage de document à des personnes d’intérêt persiste tout au long de l’enquête, facilitant l’Organisation des preuves ou la génération d’un rapport par des personnes intéressantes . 
+Une fois que vous avez terminé le mappage des sources de données aux personnes intéressantes, vous pouvez voir le résumé du nombre total de boîtes aux lettres, de sites et d’équipes que vous venez d’ajouter. Si vous mappez des sources de données supplémentaires à des personnes intéressantes et que votre recherche par des personnes intéressantes, le mappage des documents à des personnes d’intérêt persiste tout au long de l’enquête, ce qui facilite l’Organisation des preuves ou la génération d’un rapport par des personnes intéressantes. 
 
 ## <a name="view-additional-people-of-interest-information"></a>Afficher des informations supplémentaires sur les personnes concernées
 

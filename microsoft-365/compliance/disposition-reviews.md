@@ -16,16 +16,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Lorsque vous créez une étiquette de rétention qui conserve le contenu dans Microsoft 365, vous pouvez choisir de déclencher une révision de disposition à la fin de la période de rétention.
-ms.openlocfilehash: 333e1a2f14c553cbd1d116e23795ba80175df125
-ms.sourcegitcommit: e695bcfc69203da5d3d96f3d6a891664a0e27ae2
+ms.openlocfilehash: 8559c5abc2faf032b1e197cd337779b3171d0c7e
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43105661"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43633063"
 ---
 # <a name="overview-of-disposition-reviews"></a>Vue d’ensemble des révisions de destruction
 
->*[Guide des licences Microsoft 365 pour la sécurité & conformité](https://aka.ms/ComplianceSD).*
+>*[Guide de sécurité et conformité pour les licences Microsoft 365](https://aka.ms/ComplianceSD).*
 
 Lorsque le contenu atteint la fin de sa période de rétention, il existe plusieurs raisons pour lesquelles vous pouvez souhaiter examiner ce contenu pour décider s’il peut être supprimé en toute sécurité (« supprimé »). Par exemple, vous devrez peut-être :
   
@@ -37,7 +37,7 @@ Lorsque le contenu atteint la fin de sa période de rétention, il existe plusie
     
 - Renvoyer le contenu aux clients ou le transférer vers une autre organisation.
     
-Lorsque vous créez une étiquette de rétention dans le centre de conformité Microsoft 365, le centre de sécurité Microsoft 365 ou le centre de sécurité & conformité Office 365, vous pouvez choisir de déclencher une révision de destruction à la fin de la période de rétention. Dans une révision de disposition :
+Lorsque vous créez une étiquette de rétention dans le centre de conformité Microsoft 365, le centre de sécurité Microsoft 365 ou le centre de sécurité & conformité, vous pouvez choisir de déclencher une révision de destruction à la fin de la période de rétention. Dans une révision de disposition :
   
 - Les personnes que vous choisissez reçoivent une notification par courrier électronique dont le contenu doit être révisé. Notez que les notifications sont envoyées chaque semaine.
     
@@ -53,7 +53,7 @@ Lorsque vous créez une étiquette de rétention dans le centre de conformité M
     
 - Les relecteurs peuvent afficher les suppressions en attente ou terminées, puis les exporter sous forme de fichier. csv.
 
-Une révision de disposition peut inclure du contenu dans des boîtes aux lettres Exchange, des sites SharePoint, des comptes OneDrive et des groupes Office 365. Le contenu en attente d’une révision de disposition dans ces emplacements est supprimé uniquement lorsqu’un relecteur choisit de supprimer définitivement le contenu.
+Une révision de disposition peut inclure du contenu dans des boîtes aux lettres Exchange, des sites SharePoint, des comptes OneDrive et des groupes Microsoft 365. Le contenu en attente d’une révision de disposition dans ces emplacements est supprimé uniquement lorsqu’un relecteur choisit de supprimer définitivement le contenu.
   
 ![Page des dispositions dans le centre de sécurité et conformité](../media/Retention-Dispositions-v2-page.png)
 
@@ -71,7 +71,7 @@ Pour plus d’informations sur les étiquettes de rétention, voir [vue d’ense
 ![Paramètres de rétention d’une étiquette](../media/a16dd202-8862-40ac-80ff-6fee974de5da.png)
  
 > [!NOTE]
-> Lorsque vous spécifiez l’option **informer ces personnes lorsque des éléments sont prêts à être examinés**, spécifiez un utilisateur. Les groupes Office 365 ne sont pas pris en charge pour cette option.
+> Lorsque vous spécifiez l’option **informer ces personnes lorsque des éléments sont prêts à être examinés**, spécifiez un utilisateur. Les groupes Microsoft 365 ne sont pas pris en charge pour cette option.
 
 ## <a name="disposing-content"></a>Suppression du contenu
 
@@ -95,7 +95,7 @@ Un réviseur peut également utiliser le lien pour afficher le document à son e
   
 Notez que les notifications par courrier électronique sont envoyées automatiquement aux relecteurs chaque semaine. Par conséquent, lorsque le contenu atteint la fin de sa période de rétention, il peut falloir jusqu’à sept jours pour que les relecteurs reçoivent la notification par courrier électronique que le contenu attend.
   
-Notez également que toutes les actions de disposition sont auditées. Pour ce faire, vous devez activer l’audit au moins un jour avant la première action de disposition-pour plus d’informations, consultez [la rubrique Search the audit log dans le centre de &amp; sécurité conformité Office 365](search-the-audit-log-in-security-and-compliance.md). 
+Notez également que toutes les actions de disposition sont auditées. Pour ce faire, vous devez activer l’audit au moins un jour avant la première action de disposition (pour plus d’informations, consultez [la rubrique Rechercher dans le journal d’audit &amp; dans le centre de sécurité conformité](search-the-audit-log-in-security-and-compliance.md). 
   
 ## <a name="permissions-for-disposition"></a>Autorisations pour la disposition
 
@@ -105,7 +105,7 @@ Spécifique au rôle **journaux d’audit en affichage seul** :
 
 - Étant donné que la cmdlet sous-jacente utilisée pour effectuer des recherches dans le journal d’audit est une applet de commande Exchange Online, vous devez attribuer ce rôle à des utilisateurs à l’aide du [Centre d’administration Exchange dans Exchange Online](https://docs.microsoft.com/Exchange/exchange-admin-center), plutôt qu’en utilisant la page des **autorisations** dans le centre de sécurité & conformité. Pour obtenir des instructions, consultez la rubrique [gérer des groupes de rôles dans Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/role-groups).
 
-- Les groupes Office 365 ne sont pas pris en charge pour ce rôle. À la place, affectez des boîtes aux lettres utilisateur ou des utilisateurs de messagerie.
+- Les groupes Microsoft 365 ne sont pas pris en charge pour ce rôle. À la place, affectez des boîtes aux lettres utilisateur ou des utilisateurs de messagerie.
   
 ## <a name="how-long-until-disposed-content-is-permanently-deleted"></a>Durée jusqu’à la suppression définitive du contenu supprimé
 

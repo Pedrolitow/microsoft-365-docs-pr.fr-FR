@@ -17,18 +17,18 @@ ms.collection:
 search.appverid:
 - MET150
 description: 'La façon la plus simple et la plus courante de démarrer avec les stratégies DLP consiste à utiliser l’un des modèles inclus dans Office 365. '
-ms.openlocfilehash: c8c979e5d091204f8071c51a0662808652f59355
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 956359695978953445237afaa21af028ae8b4c6c
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42077779"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631333"
 ---
 # <a name="create-a-dlp-policy-from-a-template"></a>Création d’une stratégie DLP à partir d’un modèle
 
 La façon la plus simple et la plus courante de démarrer avec les stratégies DLP consiste à utiliser l’un des modèles inclus dans Office 365. Vous pouvez utiliser l’un de ces modèles tel quel, ou personnaliser les règles pour répondre aux exigences de conformité spécifiques de votre organisation.
   
-Office 365 comprend plus de 40 modèles prêts à l’emploi qui peuvent vous aider à répondre à toute une variété de besoins réglementaires et professionnels courants en matière de stratégies. Par exemple, il existe des modèles de stratégie DLP pour :
+Microsoft 365 inclut plus de 40 modèles prêts à l’emploi qui peuvent vous aider à répondre à un large éventail de besoins courants en matière de stratégie réglementaire et d’entreprise. Par exemple, il existe des modèles de stratégie DLP pour :
   
 - La loi Gramm-Leach-Bliley Act (GLBA)
     
@@ -58,7 +58,7 @@ Dans cet exemple, vous allez créer une stratégie DLP qui identifie les donnée
 
 1. Accédez à [https://protection.office.com](https://protection.office.com).
     
-2. Ouvrez une session Office 365 en utilisant votre compte scolaire ou professionnel. Vous êtes maintenant dans le centre de sécurité &amp; conformité Office 365.
+2. Connectez-vous à l’aide de votre compte professionnel ou scolaire. Vous êtes maintenant dans le centre &amp; de sécurité conformité.
     
 3. Dans le centre &amp; \> de sécurité conformité, \> **stratégie** \> de **protection contre** \> la perte de données gauche **+ créer une stratégie**.
     
@@ -78,7 +78,7 @@ Dans cet exemple, vous allez créer une stratégie DLP qui identifie les donnée
     
   - Choisissez **tous les emplacements dans Office 365** \> **.**
     
-  - Choisissez **me laisser choisir des emplacements** \> **** spécifiques. Pour cet exemple, choisissez ceci.
+  - Choisissez **me laisser choisir des emplacements** \> **Next**spécifiques. Pour cet exemple, choisissez ceci.
     
     Pour inclure ou exclure un emplacement entier, tel que tous les messages électroniques Exchange ou tous les comptes OneDrive, activez ou désactivez l' **État** de cet emplacement. 
     
@@ -110,7 +110,7 @@ Dans cet exemple, vous allez créer une stratégie DLP qui identifie les donnée
     
     ![Bouton modifier la règle](../media/eaf54067-4945-4c98-8dd6-fb2c5d6de075.png)
   
-10. Pour ajouter un type d’informations sensibles, dans **** la section \> conditions, **ajoutez ou modifiez des types**. Ensuite, sous **Ajouter ou modifier des types** \> , choisissez **Ajouter** \> sélectionnez le numéro de **compte bancaire américain** et le **** \> **** \> **numéro de permis de conduire du pilote américain** .
+10. Pour ajouter un type d’informations sensibles, dans **Conditions** la section \> conditions, **ajoutez ou modifiez des types**. Ensuite, sous **Ajouter ou modifier des types** \> , choisissez **Ajouter** \> sélectionnez le numéro de **compte bancaire américain** et le **Add** \> **Done** \> **numéro de permis de conduire du pilote américain** .
     
     ![Option pour ajouter ou modifier des types](../media/c6c3ae86-f7db-40a8-a6e4-db11692024be.png)
   
@@ -138,7 +138,7 @@ Dans cet exemple, vous allez créer une stratégie DLP qui identifie les donnée
     
     À droite, notez le commutateur d' **État** de la règle. Si vous désactivez une stratégie entière, toutes les règles contenues dans la stratégie sont également désactivées. Toutefois, vous pouvez désactiver une règle spécifique sans désactiver toute la stratégie. Cela peut être utile lorsque vous avez besoin d’examiner une règle qui génère un grand nombre de faux positifs. 
     
-16. Sur la page suivante, lisez et comprenez les éléments suivants, puis choisissez s’il \> faut activer la règle ou la tester. ****
+16. Sur la page suivante, lisez et comprenez les éléments suivants, puis choisissez s’il \> faut activer la règle ou la tester. **Next**
     
      Avant de créer vos stratégies DLP, vous devez envisager de les déployer progressivement pour évaluer leur impact et tester leur efficacité avant de les appliquer pleinement. Par exemple, vous ne souhaitez pas qu’une nouvelle stratégie DLP bloque involontairement l’accès à des milliers de documents dont les utilisateurs ont besoin pour effectuer leur travail. 
     
@@ -176,7 +176,7 @@ Voici les différents états et leur signification.
 
 Vous pouvez modifier ou désactiver une stratégie DLP à tout moment. La désactivation d’une stratégie désactive toutes les règles de la stratégie.
   
-Pour modifier ou désactiver une stratégie DLP, dans la page **** \> stratégie, sélectionnez la \> **stratégie modifier**la stratégie.
+Pour modifier ou désactiver une stratégie DLP, dans la page **Policy** \> stratégie, sélectionnez la \> **stratégie modifier**la stratégie.
   
 ![Bouton modifier la stratégie](../media/ce319e92-0519-44fe-9507-45a409eaefe4.png)
   

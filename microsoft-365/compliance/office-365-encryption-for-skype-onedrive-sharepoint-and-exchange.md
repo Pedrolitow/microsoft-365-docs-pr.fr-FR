@@ -1,5 +1,5 @@
 ---
-title: Chiffrement Office 365 pour Skype, OneDrive, SharePoint et Exchange
+title: Chiffrement pour Skype, OneDrive, SharePoint et Exchange
 f1.keywords:
 - NOCSH
 ms.author: krowley
@@ -17,16 +17,16 @@ ms.collection:
 - Strat_O365_Enterprise
 - SPO_Content
 description: 'Résumé : description du chiffrement pour Skype, OneDrive, SharePoint et Exchange Online.'
-ms.openlocfilehash: 4a8dbc2fbe204b09b30eee4ed7ce2136d0ec69f9
-ms.sourcegitcommit: 21338a9287017a66298e0ff557e80051946ebf13
+ms.openlocfilehash: 13c46df74861120b6f5c2fbe7132f912ef29dde3
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "42604161"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637284"
 ---
-# <a name="office-365-encryption-for-skype-for-business-onedrive-for-business-sharepoint-online-and-exchange-online"></a>Chiffrement Office 365 pour Skype entreprise, OneDrive entreprise, SharePoint Online et Exchange Online
+# <a name="encryption-for-skype-for-business-onedrive-for-business-sharepoint-online-and-exchange-online"></a>Chiffrement pour Skype Entreprise, OneDrive Entreprise, SharePoint Online et Exchange Online
 
-Office 365 est un environnement hautement sécurisé qui fournit une protection étendue à de nombreux niveaux : sécurité de centre de données physique, sécurité réseau, sécurité d'accès, sécurité des applications et sécurité des données.
+Microsoft 365 est un environnement hautement sécurisé qui offre une protection étendue dans plusieurs couches : sécurité du centre de données physique, sécurité du réseau, sécurité des accès, sécurité des applications et sécurité des données.
 
 ## <a name="skype-for-business"></a>Skype Entreprise
 
@@ -36,7 +36,7 @@ Les données client Skype entreprise peuvent être stockées sous la forme de fi
 
 Tous les fichiers de client dans SharePoint Online sont protégés par des clés uniques par fichier qui sont toujours exclusives à un seul client. Les clés sont créées et gérées par le service SharePoint Online, ou lorsque la clé client est utilisée, créée et gérée par les clients. Lorsqu’un fichier est téléchargé, le chiffrement est effectué par SharePoint Online dans le contexte de la demande de téléchargement, avant d’être envoyé à Azure Storage. Lorsqu’un fichier est téléchargé, SharePoint Online récupère les données client chiffrées à partir de l’emplacement de stockage Azure en fonction de l’identificateur de document unique et déchiffre les données client avant de les envoyer à l’utilisateur. Le stockage Azure ne peut pas déchiffrer, voire identifier ou comprendre les données client. Tout le chiffrement et le déchiffrement se produisent dans les mêmes systèmes qui appliquent l’isolation du client, à savoir Azure Active Directory et SharePoint Online.
 
-Plusieurs charges de travail dans Office 365 stockent des données dans SharePoint Online, notamment Microsoft Teams, qui stocke tous les fichiers dans SharePoint Online et OneDrive entreprise, qui utilise SharePoint Online pour son stockage. Toutes les données client stockées dans SharePoint Online sont chiffrées (avec une ou plusieurs clés AES 256 bits) et distribuées dans le centre de données comme suit. (Chaque étape de ce processus de chiffrement est validée par le niveau 2 FIPS 140-2. Pour plus d’informations sur la conformité FIPS 140-2, voir [fips 140-2 Compliance](https://docs.microsoft.com/previous-versions/sql/sql-server-2008-r2/bb326611(v=sql.105)).)
+Plusieurs charges de travail dans Microsoft 365 stockent des données dans SharePoint Online, y compris Microsoft Teams, qui stocke tous les fichiers dans SharePoint Online et OneDrive entreprise, qui utilise SharePoint Online pour son stockage. Toutes les données client stockées dans SharePoint Online sont chiffrées (avec une ou plusieurs clés AES 256 bits) et distribuées dans le centre de données comme suit. (Chaque étape de ce processus de chiffrement est validée par le niveau 2 FIPS 140-2. Pour plus d’informations sur la conformité FIPS 140-2, voir [fips 140-2 Compliance](https://docs.microsoft.com/previous-versions/sql/sql-server-2008-r2/bb326611(v=sql.105)).)
 
 - Chaque fichier est divisé en un ou plusieurs segments, en fonction de la taille du fichier. Chaque segment est chiffré à l’aide de sa propre clé AES 256 bits unique.
 - Lorsqu’un fichier est mis à jour, la mise à jour est gérée de la manière suivante : la modification est divisée en un ou plusieurs segments, et chaque segment est chiffré avec une clé unique distincte.
@@ -83,6 +83,6 @@ Dans OneDrive Entreprise et SharePoint Online, il existe deux scénarios dans le
 
 Exchange Online utilise BitLocker pour toutes les données de boîte aux lettres, et la configuration BitLocker est décrite dans [BitLocker pour le chiffrement](office-365-bitlocker-and-distributed-key-manager-for-encryption.md). Le chiffrement au niveau du service chiffre toutes les données de boîte aux lettres au niveau de la boîte aux lettres. 
 
-Outre le chiffrement de service, Office 365 prend en charge la clé client, qui est basée sur le chiffrement de service. La clé client est une option de clé gérée par Microsoft pour le chiffrement de service Exchange Online, qui se trouve également dans la feuille de route de Microsoft. Cette méthode de chiffrement offre une protection accrue non offerte par BitLocker car elle permet de séparer les administrateurs de serveur et les clés de chiffrement nécessaires au déchiffrement des données, et le chiffrement est appliqué directement aux données (dans contraste avec BitLocker, qui applique le chiffrement sur le volume de disque logique) toutes les données client copiées à partir d’un serveur Exchange restent chiffrées.
+En plus du chiffrement de service, Microsoft 365 prend en charge la clé client, qui est basée sur le chiffrement de service. La clé client est une option de clé gérée par Microsoft pour le chiffrement de service Exchange Online, qui se trouve également dans la feuille de route de Microsoft. Cette méthode de chiffrement offre une protection accrue non offerte par BitLocker car elle permet de séparer les administrateurs de serveur et les clés de chiffrement nécessaires au déchiffrement des données, car le chiffrement est appliqué directement aux données (en comparaison avec BitLocker, qui applique le chiffrement sur le volume de disque logique) toute donnée client copiée à partir d’un serveur Exchange reste chiffrée.
 
 L’étendue du chiffrement du service Exchange Online est les données client qui sont stockées au repos dans Exchange Online. (Skype entreprise stocke presque tout le contenu généré par l’utilisateur au sein de la boîte aux lettres Exchange Online de l’utilisateur, ce qui hérite de la fonctionnalité de chiffrement de service d’Exchange Online.)

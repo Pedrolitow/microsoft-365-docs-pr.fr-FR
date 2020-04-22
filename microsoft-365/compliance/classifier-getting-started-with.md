@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Un classificateur Microsoft 365 pouvant être formé est un outil que vous pouvez former afin de reconnaître différents types de contenu en lui donnant des échantillons positifs et négatifs. Une fois que le classifieur est formé, vous confirmez que ses résultats sont précis. Vous l’utilisez ensuite pour effectuer une recherche dans le contenu de votre organisation et le classifier pour appliquer des étiquettes de rétention ou de sensibilité ou l’inclure dans la protection contre la perte de données (DLP) ou les stratégies de rétention.
-ms.openlocfilehash: 4d11fcf4e1437641cb73510d341d299ce3695938
-ms.sourcegitcommit: 13f28aa762e467bab8ab1e95e1917b3ac28931da
+ms.openlocfilehash: 6ff13a8d33168e5ce46ef1dab5b1d27461f17c48
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43193522"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636302"
 ---
 # <a name="getting-started-with-trainable-classifiers-preview"></a>Prise en main des classificateurs de formation (préversion)
 
@@ -73,7 +73,7 @@ Microsoft 365 est fourni avec cinq classifieurs intégrés recommandés :
 
 |nom de la langue|||||
 |---------|---------|---------|---------|---------|
-|3.0|C        |C #       |C++     |Clojure  |
+|3.0|C        |C#       |C++     |Clojure  |
 |CoffeeScript|CSS     |Activer       |Haskell |HTML     |
 |Java     |JavaScript|Privilège      |MATLAB   |Objective-C|
 |Langage     |PHP      |Python   |R        |Ruby     |
@@ -110,7 +110,7 @@ La création et la publication d’un classificateur pour l’utilisation dans l
 
 ![classificateur de flux de processus](../media/classifier-trainable-classifier-flow.png)
 
-## <a name="see-also"></a>Voir aussi
+## <a name="see-also"></a>Voir également
 
 - [étiquettes de rétention](labels.md)
 - [stratégies de rétention](retention-policies.md)

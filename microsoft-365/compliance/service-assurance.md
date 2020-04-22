@@ -15,12 +15,12 @@ search.appverid:
 - BCS160
 ms.assetid: 47e8b964-4b09-44f7-a2d7-b8a06e8e389c
 description: Télécharger des audits tiers, Découvrez comment Microsoft conserve les données client sûres et comment vous pouvez vous conformer aux normes ISO, HIPAA, FINRA et FedRAMP lorsque vous utilisez Office 365.
-ms.openlocfilehash: 823722fe49349a11e828ca56978240e662c8435c
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: e5d33f063d9e375c12346d245067be2b2b41de77
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42081302"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631281"
 ---
 # <a name="service-assurance-in-the-security--compliance-center"></a>Garantie de service dans le centre de sécurité & conformité
 
@@ -44,12 +44,12 @@ Vous pouvez également découvrir comment Office 365 peut aider les clients à s
 
  Les **nouveaux clients et les clients qui évaluent Microsoft Online Services** peuvent accéder à la garantie de service incluse dans les plans Office 365 entreprise E3 et E5 (abonnements d’évaluation et payants). Si vous n’avez pas l’un de ces plans et que vous souhaitez essayer le service assurance, vous pouvez vous [inscrire pour obtenir une version d’évaluation d’Office 365 entreprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
- **Les clients existants d’Office 365 pour les entreprises** peuvent accéder à l’assurance de service. Si vous êtes l’administrateur général d’Office 365 (parfois appelé administrateur d’entreprise) pour votre organisation, vous avez déjà accès à l’assurance de service et vous pouvez y intégrer d’autres personnes. Si vous n’êtes pas l’administrateur général Office 365 pour votre organisation et que vous avez besoin d’accéder à la garantie de service, demandez à votre administrateur de vous ajouter au groupe de rôles d’utilisateur service assurance. 
+ **Les clients existants de Microsoft 365 pour les entreprises** peuvent accéder à l’assurance de service. Si vous êtes l’administrateur général (parfois appelé administrateur d’entreprise) de votre organisation, vous avez déjà accès à l’assurance de service et vous pouvez y intégrer d’autres personnes. Si vous n’êtes pas l’administrateur général de votre organisation et que vous avez besoin d’accéder à la garantie de service, demandez à votre administrateur de vous ajouter au groupe de rôles d’utilisateur service assurance. 
   
  Les membres de l' **abonnement O365** peuvent accéder à la section assurance de service dans le centre de protection Office 365 par défaut si l’accès basé sur les rôles service assurance n’a pas été implémenté dans votre abonnement. Service assurance fournit des rapports et des documents qui décrivent les pratiques de sécurité Microsoft pour les données client stockées dans Office 365. Il fournit également des rapports d’audit tiers indépendants sur Office 365. 
   
 > [!NOTE]
-> Remarque : Si votre société a mis en œuvre un accès basé sur les rôles service assurance dans votre abonnement Office 365 (ce qui peut être si votre organisation a fourni l’accès à des rapports personnalisés), et que vous avez besoin d’accéder à la garantie de service, mais qu’elle n’est pas incluse dans le volet gauche du centre de sécurité & conformité, demandez à votre **** administrateur 365 Office Pour plus d’informations, consultez la rubrique Onboard other service assurance Users or groups. 
+> Si votre entreprise a mis en œuvre un accès basé sur les rôles service assurance dans votre abonnement Microsoft 365 (ce qui peut être si votre organisation a été autorisé à accéder à des rapports personnalisés) et que vous avez besoin d’accéder à l’assurance de service, mais qu’elle n’est pas incluse dans le volet gauche du centre de sécurité & conformité, demandez à votre **Permissions** administrateur 365 Office Pour plus d’informations, consultez la rubrique Onboard other service assurance Users or groups. 
   
  **Utilisateurs configurés en fonction de l’accès basé sur les rôles service assurance** Si votre entreprise a mis en œuvre un accès basé sur les rôles service assurance, vous pouvez fournir un accès sécurisé à tous les membres du personnel de sécurité et de conformité, y compris la sécurité des informations, la gestion des risques, la conformité et les équipes d’audit et le personnel au sein de votre organisation. Pour plus d’informations, reportez-vous à la rubrique [Onboard other service assurance Users or Groups](service-assurance.md#addother).
   
@@ -57,7 +57,7 @@ Service assurance est accessible à l’aide du centre de sécurité & conformit
   
 1. Accédez à [https://protection.office.com](https://protection.office.com).
     
-2. Ouvrez une session Office 365 en utilisant votre compte scolaire ou professionnel. 
+2. Connectez-vous à l’aide de votre compte professionnel ou scolaire. 
     
 3. Dans le volet gauche, sélectionnez **assurance de service**. Ensuite, [Choisissez vos paramètres régionaux et de votre secteur d’activité](service-assurance.md#Chooseyourindustryregional) , ainsi que d' [autres utilisateurs ou groupes de l’assurance service](service-assurance.md#addother).
     
@@ -135,7 +135,7 @@ Revenir à la page **autorisations** à tout moment pour ajouter d’autres util
 
 [Contacter le support pour les entreprises-aide de l’administrateur](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b).
   
-## <a name="frequently-asked-questions"></a>Foire aux questions
+## <a name="frequently-asked-questions"></a>Forum Aux Questions
 <a name="addother"> </a>
 
  **Pourquoi est-ce que je reçois une erreur indiquant que les documents provenant de l’assurance de service sont endommagés ?**

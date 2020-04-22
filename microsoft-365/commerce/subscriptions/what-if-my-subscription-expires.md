@@ -22,12 +22,12 @@ search.appverid:
 - GEA150
 ms.assetid: 4436582f-211a-45ec-b72e-33647f97d8a3
 description: Découvrez ce qui arrive à vos données lorsque votre abonnement Microsoft 365 pour les entreprises expire, est désactivé ou si vous annulez l’opération.
-ms.openlocfilehash: 2a5a9e587b6b00017d3e489d948c9cee3db4777b
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: cd90b0b5825b2888b1194998c25a2ce9c7c28718
+ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634873"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43707606"
 ---
 # <a name="what-happens-to-my-data-and-access-when-my-microsoft-365-for-business-subscription-ends"></a>Qu’arrive-t-il à mes données et à l’accès à la fin de mon abonnement Microsoft 365 pour les entreprises ?
 
@@ -220,7 +220,7 @@ Voici ce à quoi vous et vos utilisateurs devez vous attendre si vous annulez un
 Pour en savoir plus sur la façon d’annuler, voir [annuler votre abonnement](cancel-your-subscription.md).
   
 > [!IMPORTANT]
-> Si vous souhaitez que les données de votre abonnement soient supprimées avant que la période standard désactivée soit terminée, vous pouvez demander la suppression accélérée des mesures. Si vous demandez la suppression accélérée des privilèges d'accès, les données de votre abonnement seront supprimées dans les 3 jours. Pour utiliser la mise en service accélérée, [appelez le support technique](../../admin/contact-support-for-business-products.md).
+> Si vous souhaitez que les données de votre abonnement soient supprimées avant la fin de la période standard désactivée, vous pouvez [fermer votre compte](../close-your-account.md).
 
 > [!NOTE]
 > Les informations présentes dans cette page sont soumises à la [clause d'exclusion de responsabilité et à l'avis préalable en cas de modification mentionnés dans la politique Microsoft](https://go.microsoft.com/fwlink/p/?LinkId=613651). Revenez régulièrement à ce site pour vérifier les modifications.

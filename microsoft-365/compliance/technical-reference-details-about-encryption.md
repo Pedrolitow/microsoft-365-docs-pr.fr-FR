@@ -1,5 +1,5 @@
 ---
-title: Détails techniques de référence sur le chiffrement dans Office 365
+title: Informations de référence technique sur le chiffrement
 f1.keywords:
 - NOCSH
 ms.author: krowley
@@ -16,14 +16,14 @@ search.appverid:
 - MOE150
 ms.assetid: 862cbe93-4268-4ef9-ba79-277545ecf221
 description: Afficher les détails techniques sur le chiffrement dans Office 365.
-ms.openlocfilehash: afd02ba6480e692bf16bf6dd94f192a5889590ee
-ms.sourcegitcommit: dcea75af89f5f80ec6670346ee176407e043de54
+ms.openlocfilehash: cdfd3765fb7bf15835d200a539241d928225d22e
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "42610581"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637208"
 ---
-# <a name="technical-reference-details-about-encryption-in-office-365"></a>Détails techniques de référence sur le chiffrement dans Office 365
+# <a name="technical-reference-details-about-encryption"></a>Informations de référence technique sur le chiffrement
 
 Consultez cet article pour en savoir plus sur les certificats, les technologies et les suites de chiffrement TLS utilisées pour le [chiffrement dans Office 365](encryption.md). Cet article fournit également des détails sur les désapprobations planifiées.
   

@@ -1,5 +1,5 @@
 ---
-title: Rechercher du contenu dans Office 365
+title: Recherche de contenu
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -13,16 +13,16 @@ localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
 ms.assetid: df2d1e0f-b476-42c9-aade-4a260b24f193
 description: Utilisez l’outil eDiscovery de la recherche de contenu dans le centre de sécurité & conformité pour trouver rapidement le courrier électronique dans les boîtes aux lettres Exchange, les documents dans les sites SharePoint et les emplacements OneDrive, et les conversations de messagerie instantanée dans Skype entreprise.
-ms.openlocfilehash: d5acdf5bba50d002876491ee0488c1f28a2c51ad
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 2b874181fdfc5bce69227acc279e12bffe70c069
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601541"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632919"
 ---
-# <a name="search-for-content-in-office-365"></a>Rechercher du contenu dans Office 365
+# <a name="search-for-content"></a>Recherche de contenu
 
-Utilisez l’outil de recherche de contenu dans le centre de sécurité & conformité pour trouver rapidement des messages électroniques dans des boîtes aux lettres Exchange, des documents dans des sites SharePoint et des emplacements OneDrive, et des conversations de messagerie instantanée dans Skype entreprise. Vous pouvez utiliser l’outil de recherche de contenu pour rechercher des courriers électroniques, des documents et des conversations de messagerie instantanée dans les outils de collaboration Office 365 tels que les groupes Microsoft teams et Office 365.
+Utilisez l’outil de recherche de contenu dans le centre de sécurité & conformité pour trouver rapidement des messages électroniques dans des boîtes aux lettres Exchange, des documents dans des sites SharePoint et des emplacements OneDrive, et des conversations de messagerie instantanée dans Skype entreprise. Vous pouvez utiliser l’outil de recherche de contenu pour rechercher des courriers électroniques, des documents et des conversations de messagerie instantanée dans des outils de collaboration tels que Microsoft teams et des groupes Microsoft 365.
   
 ## <a name="search-for-content"></a>Recherche de contenu
 
@@ -36,11 +36,11 @@ La première étape consiste à utiliser l’outil de recherche de contenu pour 
     
 - [Exécuter une recherche de liste d’ID](csv-file-for-an-id-list-content-search.md) pour rechercher des messages électroniques spécifiques 
     
-- [Rechercher des boîtes aux lettres en nuage](search-cloud-based-mailboxes-for-on-premises-users.md) pour les utilisateurs locaux dans Office 365
+- [Rechercher des boîtes aux lettres en nuage](search-cloud-based-mailboxes-for-on-premises-users.md) pour les utilisateurs locaux dans Microsoft 365
 
 - [Afficher les statistiques des mots clés](view-keyword-statistics-for-content-search.md) pour les résultats d’une recherche et affiner la requête si nécessaire 
     
-- [Rechercher des données](use-content-search-to-search-third-party-data-that-was-imported.md) tierces que votre organisation a importées dans Office 365 
+- [Recherche de données](use-content-search-to-search-third-party-data-that-was-imported.md) tierces importées par votre organisation dans Microsoft 365 
     
 - [Modification en bloc](bulk-edit-content-searches.md) des emplacements de requête et de contenu pour plusieurs recherches 
     

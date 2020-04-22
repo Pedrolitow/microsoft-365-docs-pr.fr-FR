@@ -1,5 +1,5 @@
 ---
-title: Configurer les charges pour ajouter des fichiers importés dans Office 365 Advanced eDiscovery
+title: Configurer les charges pour ajouter des fichiers importés dans Advanced eDiscovery
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -15,13 +15,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 0e0a9d04-294f-4f54-8bf1-b32d81345126
-description: 'Passez en revue les étapes nécessaires pour ajouter des fichiers importés à la dernière charge ou un lot de fichiers défini avant d’effectuer une formation pertinente dans Office 365 Advanced eDiscovery.  '
-ms.openlocfilehash: 3dd302e107b10726dd0110dfcb19bf59a3703add
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+description: 'Passez en revue les étapes nécessaires pour ajouter des fichiers importés à la dernière charge ou un lot de fichiers défini avant de procéder à la formation pertinente dans Advanced eDiscovery.  '
+ms.openlocfilehash: 7914013d21cfd7bba0e474a0e8d831bcfad0239d
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42557764"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636292"
 ---
 # <a name="set-up-loads-to-add-imported-files-in-advanced-ediscovery-classic"></a>Configurer les charges pour ajouter des fichiers importés dans Advanced eDiscovery (classique)
 
@@ -138,7 +138,7 @@ Les charges de roulement et les fonctionnalités de rattrapage varient comme sui
     
 ## <a name="see-also"></a>Voir aussi
 
-[Découverte électronique avancée (classique)](office-365-advanced-ediscovery.md)
+[Advanced eDiscovery (classique)](office-365-advanced-ediscovery.md)
   
 [Définition des sujets et affectation des utilisateurs](define-issues-and-assign-users.md)
   

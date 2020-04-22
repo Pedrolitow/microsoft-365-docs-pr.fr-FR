@@ -16,22 +16,22 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Ajoutez les résultats d’une recherche associée à un cas avancé eDiscovery. Les éléments sont copiés à partir de leur emplacement d’origine et copiés dans un emplacement de stockage Azure fourni par Microsoft. Les éléments sont également réindexés et Advanced eDiscovery procède à la reconnaissance optique de caractères (OCR) sur les fichiers image et télécharge le texte de l’image à des fins de révision et d’analyse.
-ms.openlocfilehash: 5e4eaa5e83bbca3a80abe0026f3880ce8d3c85c4
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: b3710a91585d801f55b36622d6048a2c4bc58a7d
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42634562"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632299"
 ---
 # <a name="add-search-results-to-a-review-set"></a>Ajouter des résultats de recherche à un jeu à réviser
 
-Lorsque vous êtes satisfait des résultats d’une recherche et que vous êtes prêt à passer en revue et à analyser ces résultats de recherche, vous pouvez les ajouter à un jeu de révision dans le cas. La copie des données d’origine dans l’ensemble de révision facilite également le processus de révision et d’analyse en vous fournissant des outils d’analyse avancés, tels que la détection de thèmes, la détection de proximité et l’identification des threads de messagerie. Vous pouvez également ajouter des données provenant de sources de données autres que Office 365 à un jeu de réexamen afin que vous puissiez examiner ces données en plus des données que vous collectez à partir d’Office 365. 
+Lorsque vous êtes satisfait des résultats d’une recherche et que vous êtes prêt à passer en revue et à analyser ces résultats de recherche, vous pouvez les ajouter à un jeu de révision dans le cas. La copie des données d’origine dans l’ensemble de révision facilite également le processus de révision et d’analyse en vous fournissant des outils d’analyse avancés, tels que la détection de thèmes, la détection de proximité et l’identification des threads de messagerie. Vous pouvez également ajouter des données provenant de sources de données non-Microsoft 365 à un jeu de vérification afin que vous puissiez examiner ces données en plus des données que vous collectez à partir de Microsoft 365. 
 
 Lorsque vous ajoutez les résultats d’une recherche à un jeu de réviseur (les jeux de révision d’un cas sont répertoriés sous l’onglet **ensembles de révision** ), les événements suivants se produisent :
 
 - La recherche est réexécutée. Cela signifie que les résultats de recherche réels copiés dans l’ensemble de révision peuvent être différents des résultats estimés qui ont été renvoyés lors de la dernière exécution de la recherche.
 
-- Tous les éléments dans les résultats de la recherche sont copiés à partir de la source de données d’origine dans les services Live Office 365 et copiés dans un emplacement de stockage Azure sécurisé dans le Cloud Microsoft.
+- Tous les éléments des résultats de la recherche sont copiés à partir de la source de données d’origine dans les services Live et copiés dans un emplacement de stockage Azure sécurisé dans le Cloud Microsoft.
 
 - Tous les éléments (y compris le contenu et les métadonnées) sont réindexés de sorte que toutes les données du jeu de révision soient entièrement utilisables lors de la révision des données de cas. La réindexation des données entraîne des recherches rapides et rapides lors de la recherche des données dans l’ensemble de vérifications lors de l’enquête de cas.
 
@@ -43,7 +43,7 @@ Vous pouvez ajouter à un jeu de réexamen existant ou créer un jeu de révisio
 
 ![Sélectionner un jeu de révision](../media/e8c6ab51-da8d-4c39-9b21-26bfdf453fb9.png)
 
-L’ajout de données à un jeu de révision est un processus long. Ce processus inclut la collecte d’éléments à partir des sources de données d’origine dans Office 365 (par exemple, à partir de boîtes aux lettres et de sites), leur copie vers l’emplacement de stockage Azure (ce processus de copie est *également appelé «* ingestion »), puis la réindexation des éléments. Vous pouvez suivre la progression sous l’onglet **travaux** ou sur l’onglet **recherches** en surveillant l’État dans la colonne **données ajoutées à l’ensemble** de modifications. Une fois le traitement de l’ensemble de vérifications terminé, cliquez sur l’onglet **ensembles** de vérifications dans le cas, puis cliquez sur le jeu de révisions pour démarrer le processus de filtrage, de révision, de marquage et d’exportation des données dans l’ensemble de révision.
+L’ajout de données à un jeu de révision est un processus long. Ce processus inclut la collecte d’éléments à partir des sources de données d’origine dans Microsoft 365 (par exemple, à partir de boîtes aux lettres et de sites), leur copie vers l’emplacement de stockage Azure (ce processus de copie est *également appelé «* ingestion »), puis la réindexation des éléments. Vous pouvez suivre la progression sous l’onglet **travaux** ou sur l’onglet **recherches** en surveillant l’État dans la colonne **données ajoutées à l’ensemble** de modifications. Une fois le traitement de l’ensemble de vérifications terminé, cliquez sur l’onglet **ensembles** de vérifications dans le cas, puis cliquez sur le jeu de révisions pour démarrer le processus de filtrage, de révision, de marquage et d’exportation des données dans l’ensemble de révision.
 
 ## <a name="add-a-sample-to-a-review-set"></a>Ajouter un échantillon à un jeu de révision
 

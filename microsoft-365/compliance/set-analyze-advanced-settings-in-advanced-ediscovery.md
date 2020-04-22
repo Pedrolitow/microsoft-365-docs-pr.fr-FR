@@ -1,5 +1,5 @@
 ---
-title: Définir les paramètres avancés d’analyse dans Office 365 Advanced eDiscovery
+title: Définir l’analyse des paramètres avancés dans Advanced eDiscovery
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -15,15 +15,15 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: a797682f-ad85-4c08-a354-3850ba2237ee
-description: 'Découvrez comment configurer les paramètres avancés, notamment les doublons, les threads de messagerie et les thèmes, pour le processus Analyze dans Office 365 Advanced eDiscovery. '
-ms.openlocfilehash: effb573165abea0d4f9939fbf7c367cbdf333f57
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+description: 'Découvrez comment configurer les paramètres avancés, notamment les doublons, les threads de messagerie et les thèmes, pour le processus d’analyse dans Advanced eDiscovery. '
+ms.openlocfilehash: 91faf9e39fe7b8a7fada7b05ccd88351d813b148
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42557794"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631271"
 ---
-# <a name="set-analyze-advanced-settings-in-office-365-advanced-ediscovery"></a>Définir les paramètres avancés d’analyse dans Office 365 Advanced eDiscovery
+# <a name="set-analyze-advanced-settings-in-advanced-ediscovery"></a>Définir l’analyse des paramètres avancés dans Advanced eDiscovery
 
 > [!NOTE]
 > Pour utiliser Advanced eDiscovery, votre organisation doit souscrire un abonnement Office 365 E3 avec le module complémentaire Conformité avancée ou un abonnement E5. Si vous ne disposez pas d’un abonnement et que vous souhaitez essayer Advanced eDiscovery, vous pouvez vous [inscrire pour utiliser une version d’évaluation d’Office 365 Entreprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
@@ -48,7 +48,7 @@ Advanced eDiscovery fournit des paramètres avancés par défaut pour les param�
     
 ## <a name="see-also"></a>Voir aussi
 
-[Découverte électronique avancée (classique)](office-365-advanced-ediscovery.md)
+[Advanced eDiscovery (classique)](office-365-advanced-ediscovery.md)
   
 [Présentation de la similarité des documents](understand-document-similarity-in-advanced-ediscovery.md)
   

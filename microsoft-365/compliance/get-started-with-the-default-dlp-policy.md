@@ -17,12 +17,12 @@ ms.assetid: e0ada764-6422-4b44-9472-513bed04837b
 ms.collection:
 - M365-security-compliance
 description: Avant de créer votre première stratégie de protection contre la perte de données (DLP), DLP contribue à protéger vos informations sensibles à l’aide d’une stratégie par défaut. Cette stratégie par défaut et ses recommandations (illustrées ci-dessous) vous permettent de sécuriser votre contenu sensible en vous avertissant que des messages ou des documents contenant un numéro de carte de crédit ont été partagés avec une personne extérieure à votre organisation.
-ms.openlocfilehash: 687cfb50568310aa29f06da6bfbbc644d3edc853
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: d24848e5956a6e8927307d3102f4ce31f1187bfd
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42073112"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637828"
 ---
 # <a name="get-started-with-the-default-dlp-policy"></a>Prise en main de la stratégie DLP par défaut
 
@@ -62,11 +62,11 @@ Si vous souhaitez modifier ces options ultérieurement, vous pouvez modifier la 
   
 ## <a name="edit-the-default-dlp-policy"></a>Modifier la stratégie DLP par défaut
 
-Cette stratégie est nommée **stratégie DLP par défaut d’Office 365** et apparaît sous **protection contre la perte de données** dans la &amp; page **stratégie** du centre de sécurité et de conformité. 
+Cette stratégie est nommée **stratégie DLP par défaut** et apparaît sous **protection contre la perte de données** dans la page &amp; **stratégie** du centre de sécurité et de conformité. 
   
 Cette stratégie est entièrement personnalisable, comme n’importe quelle stratégie DLP que vous créez vous-même de toutes pièces. Vous pouvez également désactiver ou supprimer la stratégie, afin que vos utilisateurs ne reçoivent plus de conseils de stratégie ou de notifications par courrier électronique.
   
-![Stratégie DLP nommée Stratégie DLP par défaut d’Office 365](../media/260731e8-4d57-4c98-abec-07b052ec48d5.png)
+![Stratégie DLP nommée Stratégie DLP par défaut](../media/260731e8-4d57-4c98-abec-07b052ec48d5.png)
   
 ## <a name="when-the-widget-does-and-does-not-appear"></a>Lorsque le widget n’apparaît pas
 

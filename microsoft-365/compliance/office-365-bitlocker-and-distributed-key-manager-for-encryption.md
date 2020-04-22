@@ -1,5 +1,5 @@
 ---
-title: Office 365 BitLocker pour le chiffrement
+title: BitLocker pour le chiffrement
 f1.keywords:
 - NOCSH
 ms.author: krowley
@@ -16,16 +16,16 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
 description: 'Résumé : informations sur BitLocker pour le chiffrement dans le Cloud.'
-ms.openlocfilehash: 5cef13e6c0d267ced0e14c353fef6780c5c56372
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 5596848e392736e20e8c796e6fd409b9c43235d4
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42071201"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637350"
 ---
 # <a name="bitlocker-and-distributed-key-manager-dkm-for-encryption"></a>BitLocker et Distributed Key Manager (DKM) pour le chiffrement
 
-Les serveurs Office 365 utilisent BitLocker pour chiffrer les lecteurs de disque contenant des données client au repos au niveau du volume. Le chiffrement BitLocker est une fonctionnalité de protection des données intégrée à Windows. BitLocker est l’une des technologies utilisées pour se protéger contre les menaces en cas de chute d’autres processus ou contrôles (par exemple, le contrôle d’accès ou le recyclage du matériel) susceptibles d’entraîner l’accès physique à des disques contenant des données client. Dans ce cas, BitLocker élimine le risque de vol ou d’exposition des données en raison d’ordinateurs et de disques perdus, volés ou incorrectement mis en service.
+Les serveurs Microsoft utilisent BitLocker pour chiffrer les lecteurs de disque contenant des données client au repos au niveau du volume. Le chiffrement BitLocker est une fonctionnalité de protection des données intégrée à Windows. BitLocker est l’une des technologies utilisées pour se protéger contre les menaces en cas de chute d’autres processus ou contrôles (par exemple, le contrôle d’accès ou le recyclage du matériel) susceptibles d’entraîner l’accès physique à des disques contenant des données client. Dans ce cas, BitLocker élimine le risque de vol ou d’exposition des données en raison d’ordinateurs et de disques perdus, volés ou incorrectement mis en service.
 
 BitLocker est déployé avec le chiffrement AES (Advanced Encryption Standard) 256 bits sur des disques contenant des données client dans Exchange Online, SharePoint Online et Skype entreprise. Les secteurs de disque sont chiffrés avec une clé de chiffrement de volume complet (FVEK), qui est chiffrée avec la clé VMK (volume Master Key), qui est à son tour liée au module de plateforme sécurisée (TPM) du serveur. Le VMK protège directement la FVEK et, par conséquent, la protection de la clé VMK devient essentielle. La figure suivante illustre un exemple de la chaîne de protection de clé BitLocker pour un serveur donné (dans ce cas, à l’aide d’un serveur Exchange Online).
 
@@ -39,7 +39,7 @@ Le tableau suivant décrit la chaîne de protection de clé BitLocker pour un se
 | Certificat X. 509 en tant qu’agent de récupération de données (DRA), également appelé protecteur de clé publique | Environnement (par exemple, Exchange Online multiclient) | Autorité de certification Microsoft | Système de génération | Aucun utilisateur ne dispose du mot de passe complet de la clé privée. Le mot de passe est sous protection physique. |
 
 
-La gestion de clés BitLocker implique la gestion des clés de récupération utilisées pour déverrouiller/récupérer des disques chiffrés dans un centre de contenu Office 365. Office 365 stocke les clés principales dans un partage sécurisé, uniquement accessible par les personnes qui ont été filtrées et approuvées. Les informations d’identification des clés sont stockées dans un référentiel sécurisé pour les données de contrôle d’accès (ce que nous appelons « Banque secrète »), ce qui nécessite un niveau élevé d’approbation et de gestion pour accéder à l’aide d’un outil d’élévation d’accès juste-à-temps.
+La gestion de clés BitLocker implique la gestion des clés de récupération utilisées pour déverrouiller/récupérer des disques chiffrés dans un centre de contenu Microsoft. Microsoft 365 stocke les clés principales dans un partage sécurisé, uniquement accessible par les personnes qui ont été filtrées et approuvées. Les informations d’identification des clés sont stockées dans un référentiel sécurisé pour les données de contrôle d’accès (ce que nous appelons « Banque secrète »), ce qui nécessite un niveau élevé d’approbation et de gestion pour accéder à l’aide d’un outil d’élévation d’accès juste-à-temps.
 
 BitLocker prend en charge les clés qui se répartissent en deux catégories de gestion :
 
@@ -47,4 +47,4 @@ BitLocker prend en charge les clés qui se répartissent en deux catégories de 
 
 - Clés de récupération BitLocker, gérées en dehors de BitLocker mais utilisées pour le déchiffrement du disque. BitLocker utilise des clés de récupération pour le scénario dans lequel un système d’exploitation est réinstallé et des disques de données chiffrés existent déjà. Les clés de récupération sont également utilisées par les sondes de surveillance de disponibilité gérée dans Exchange Online, où un répondeur peut avoir besoin de déverrouiller un disque.
 
-Les volumes protégés par BitLocker sont chiffrés à l’aide d’une clé de chiffrement de volume complet, qui est à son tour chiffrée avec une clé principale de volume. BitLocker utilise des algorithmes conformes à FIPS pour s’assurer que les clés de chiffrement ne sont jamais stockées ou envoyées sur le réseau en clair. [ ! Remarque] l’implémentation Office 365 de la protection des données client-inactive ne s’écarte pas de l’implémentation BitLocker par défaut.
+Les volumes protégés par BitLocker sont chiffrés à l’aide d’une clé de chiffrement de volume complet, qui est à son tour chiffrée avec une clé principale de volume. BitLocker utilise des algorithmes conformes à FIPS pour s’assurer que les clés de chiffrement ne sont jamais stockées ou envoyées sur le réseau en clair. La mise en œuvre de Microsoft 365 de la protection des données client dans le reste de la protection ne s’écarte pas de l’implémentation BitLocker par défaut.

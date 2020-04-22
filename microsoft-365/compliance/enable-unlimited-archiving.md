@@ -1,5 +1,5 @@
 ---
-title: Activer l’archivage illimité dans Office 365 — aide de l’administrateur
+title: Activer l’archivage illimité — aide de l’administrateur
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -17,21 +17,21 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: e2a789f2-9962-4960-9fd4-a00aa063559e
-description: 'Pour les administrateurs : Découvrez comment activer l’archivage à extension automatique dans Office 365, qui permet à vos utilisateurs de disposer d’un espace de stockage illimité pour leurs boîtes aux lettres Exchange Online. Vous pouvez activer l’archivage à extension automatique pour l’ensemble de votre organisation ou uniquement pour des utilisateurs spécifiques.'
-ms.openlocfilehash: a0ca31372d99f0727a6da48be4d8276a533fbe3f
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: 'Pour les administrateurs : Découvrez comment activer l’archivage à extension automatique, qui permet à vos utilisateurs de disposer d’un espace de stockage illimité pour leurs boîtes aux lettres Exchange Online. Vous pouvez activer l’archivage à extension automatique pour l’ensemble de votre organisation ou uniquement pour des utilisateurs spécifiques.'
+ms.openlocfilehash: cb63aa79365d17692dbedf1829f76fb91e965d8d
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42074685"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631709"
 ---
-# <a name="enable-unlimited-archiving-in-office-365--admin-help"></a>Activer l’archivage illimité dans Office 365 — aide de l’administrateur
+# <a name="enable-unlimited-archiving--admin-help"></a>Activer l’archivage illimité — aide de l’administrateur
 
-Vous pouvez utiliser la fonctionnalité d’archivage Exchange Online avec extension automatique dans Office 365 pour activer un espace de stockage illimité pour les boîtes aux lettres d’archivage. Lorsque l’archivage à extension automatique est activé, un espace de stockage supplémentaire est automatiquement ajouté à la boîte aux lettres d’archivage d’un utilisateur lorsqu’il approche de la limite de stockage. Le résultat est une capacité de stockage de boîte aux lettres illimitée. Vous pouvez activer l’archivage à extension automatique pour tous les membres de votre organisation ou uniquement pour des utilisateurs spécifiques. Pour plus d’informations sur l’archivage à extension automatique, consultez la rubrique [vue d’ensemble de l’archivage illimité dans Office 365](unlimited-archiving.md).
+Vous pouvez utiliser la fonctionnalité d’archivage Exchange Online avec extension automatique pour activer un espace de stockage illimité pour les boîtes aux lettres d’archivage. Lorsque l’archivage à extension automatique est activé, un espace de stockage supplémentaire est automatiquement ajouté à la boîte aux lettres d’archivage d’un utilisateur lorsqu’il approche de la limite de stockage. Le résultat est une capacité de stockage de boîte aux lettres illimitée. Vous pouvez activer l’archivage à extension automatique pour tous les membres de votre organisation ou uniquement pour des utilisateurs spécifiques. Pour plus d’informations sur l’archivage à extension automatique, consultez la rubrique [vue d’ensemble de l’archivage illimité dans Office 365](unlimited-archiving.md).
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
-- Vous devez être un administrateur général dans votre organisation Office 365 ou membre du groupe de rôles gestion de l’organisation dans votre organisation Exchange Online pour activer l’archivage à extension automatique pour l’ensemble de votre organisation ou pour des utilisateurs spécifiques. Vous pouvez également être membre d’un groupe de rôles auquel est affecté le rôle destinataires de messagerie pour activer l’archivage à extension automatique pour des utilisateurs spécifiques.
+- Vous devez être un administrateur général au sein de votre organisation ou membre du groupe de rôles gestion de l’organisation dans votre organisation Exchange Online pour activer l’archivage à extension automatique pour l’ensemble de votre organisation ou pour des utilisateurs spécifiques. Vous pouvez également être membre d’un groupe de rôles auquel est affecté le rôle destinataires de messagerie pour activer l’archivage à extension automatique pour des utilisateurs spécifiques.
     
 - La boîte aux lettres d’archivage d’un utilisateur doit être activée pour pouvoir activer l’archivage à extension automatique. Un utilisateur doit disposer d’une licence Exchange Online plan 2 pour activer la boîte aux lettres d’archivage. Si un utilisateur se voit attribuer une licence Exchange Online plan 1, vous devez lui attribuer une licence d’archivage Exchange Online distincte pour activer sa boîte aux lettres d’archivage. Consultez [la rubrique activation des boîtes aux lettres d’archivage dans le centre de sécurité & Compliance Center](enable-archive-mailboxes.md).
     
@@ -58,11 +58,11 @@ Vous pouvez activer l’archivage à extension automatique pour l’ensemble de 
 
 Au lieu d’activer l’archivage à extension automatique pour chaque utilisateur de votre organisation, vous pouvez l’activer uniquement pour des utilisateurs spécifiques. Vous pouvez effectuer cette opération, car seuls certains utilisateurs peuvent avoir besoin d’une capacité de stockage d’archive de grande taille.
   
-Lorsque vous activez l’archivage à extension automatique pour un utilisateur spécifique et que la boîte aux lettres de l’utilisateur est en conservation ou affectée à une stratégie de rétention Office 365, les deux modifications de configuration suivantes sont apportées :
+Lorsque vous activez l’archivage à extension automatique pour un utilisateur spécifique et que la boîte aux lettres de l’utilisateur est en conservation ou affectée à une stratégie de rétention, les deux modifications de configuration suivantes sont apportées :
   
 - Le quota de stockage de la boîte aux lettres d’archivage principale de l’utilisateur est augmenté de 10 Go (de 100 Go à 110 Go). Le quota d’avertissement d’archivage augmente de 10 Go (de 90 Go à 100 Go).
     
-- Le quota de stockage pour le dossier éléments récupérables dans la boîte aux lettres principale de l’utilisateur est augmenté de 10 Go (également de 100 Go à 110 Go). Le quota d’avertissement des éléments récupérables augmente de 10 Go (de 90 Go à 100 Go). Ces modifications ne s’appliquent que si la boîte aux lettres est en conservation ou affectée à une stratégie de rétention Office 365.
+- Le quota de stockage pour le dossier éléments récupérables dans la boîte aux lettres principale de l’utilisateur est augmenté de 10 Go (également de 100 Go à 110 Go). Le quota d’avertissement des éléments récupérables augmente de 10 Go (de 90 Go à 100 Go). Ces modifications ne s’appliquent que si la boîte aux lettres est en conservation ou affectée à une stratégie de rétention.
     
 Cet espace supplémentaire est ajouté pour éviter tout problème de stockage pouvant survenir avant la mise en service de l’archive à extension automatique. Un espace de stockage supplémentaire *n’est pas* ajouté lorsque vous activez l’archivage à extension automatique pour l’ensemble de votre organisation, comme décrit dans la section précédente. 
   
@@ -98,9 +98,9 @@ La valeur `True` indique que l’archivage à extension automatique est activé 
   
 Gardez les points suivants à l’esprit après avoir activé l’archivage à extension automatique :
   
-- Si vous exécutez la commande **Set-OrganizationConfig-AutoExpandingArchive** pour activer l’archivage à extension automatique pour votre organisation, il n’est pas nécessaire d’exécuter la commande **Enable-Mailbox-AutoExpandingArchive** sur des boîtes aux lettres individuelles. L’exécution de l’applet de commande **Set-OrganizationConfig** pour activer l’archivage à extension automatique pour ** votre organisation ne modifie pas la propriété `True`AutoExpandingArchiveEnabled sur les boîtes aux lettres des utilisateurs.
+- Si vous exécutez la commande **Set-OrganizationConfig-AutoExpandingArchive** pour activer l’archivage à extension automatique pour votre organisation, il n’est pas nécessaire d’exécuter la commande **Enable-Mailbox-AutoExpandingArchive** sur des boîtes aux lettres individuelles. L’exécution de l’applet de commande **Set-OrganizationConfig** pour activer l’archivage à extension automatique pour *AutoExpandingArchiveEnabled* votre organisation ne modifie pas la propriété `True`AutoExpandingArchiveEnabled sur les boîtes aux lettres des utilisateurs.
     
-- De même, les valeurs des propriétés de boîte aux lettres *ArchiveQuota* et *ArchiveWarningQuota* ne sont pas modifiées lorsque vous activez l’archivage à extension automatique. En fait, lorsque vous activez l’archivage à extension automatique pour une boîte aux lettres ** utilisateur et que la propriété `True`AutoExpandingArchiveEnabled est définie sur, les propriétés *ArchiveQuota* et *ArchiveWarningQuota* sont ignorées. Voici un exemple de ces propriétés de boîte aux lettres après que l’archivage en développement automatique est activé pour la boîte aux lettres d’un utilisateur. 
+- De même, les valeurs des propriétés de boîte aux lettres *ArchiveQuota* et *ArchiveWarningQuota* ne sont pas modifiées lorsque vous activez l’archivage à extension automatique. En fait, lorsque vous activez l’archivage à extension automatique pour une boîte aux lettres *AutoExpandingArchiveEnabled* utilisateur et que la propriété `True`AutoExpandingArchiveEnabled est définie sur, les propriétés *ArchiveQuota* et *ArchiveWarningQuota* sont ignorées. Voici un exemple de ces propriétés de boîte aux lettres après que l’archivage en développement automatique est activé pour la boîte aux lettres d’un utilisateur. 
     
     ![Les propriétés ArchiveQuota et ArchiveWarningQuota sont ignorées après l’activation de l’archivage à extension automatique](../media/6a1c1b69-5c4c-4267-aac8-53577667f03e.png)
 
@@ -119,7 +119,7 @@ Gardez les points suivants à l’esprit après avoir activé l’archivage à e
     
 - L’archivage à extension automatique est pris en charge pour les boîtes aux lettres d’archivage en nuage dans un déploiement hybride Exchange pour les utilisateurs disposant d’une boîte aux lettres principale locale. Toutefois, une fois que l’archivage en développement automatique est activé pour une boîte aux lettres d’archivage informatique, vous ne pouvez pas désactiver l’archivage de la boîte aux lettres dans l’organisation Exchange locale. L’archivage à extension automatique n’est pas pris en charge pour les boîtes aux lettres locales dans Exchange Server 2010.
     
-- Pour obtenir la liste des clients Outlook que les utilisateurs peuvent utiliser pour accéder aux éléments de la zone de stockage supplémentaire dans leur boîte aux lettres d’archivage, consultez la section « Configuration requise par Outlook pour accéder aux éléments dans une archive étendue automatiquement » dans [vue d’ensemble d’un archivage illimité dans Office 365](unlimited-archiving.md#outlook-requirements-for-accessing-items-in-an-auto-expanded-archive).
+- Pour obtenir la liste des clients Outlook que les utilisateurs peuvent utiliser pour accéder aux éléments de la zone de stockage supplémentaire dans leur boîte aux lettres d’archivage, consultez la section « Configuration requise par Outlook pour accéder aux éléments dans une archive étendue automatiquement » dans [vue d’ensemble d’un archivage illimité](unlimited-archiving.md#outlook-requirements-for-accessing-items-in-an-auto-expanded-archive).
     
 - Comme indiqué précédemment, 10 Go est ajouté au quota de stockage de la boîte aux lettres d’archivage principale de l’utilisateur (et au dossier éléments récupérables si la boîte aux lettres est en conservation) lorsque vous exécutez la commande **Enable-Mailbox-AutoExpandingArchive** . Cela permet un stockage supplémentaire jusqu’à ce que l’espace de stockage étendu automatiquement soit mis en service (ce qui peut prendre jusqu’à 30 jours). Cet espace de stockage supplémentaire n’est pas ajouté lorsque vous exécutez le **Set-OrganizationConfig-AutoExpandingArchive** pour activer l’archivage à extension automatique pour toutes les boîtes aux lettres de votre organisation. Si vous avez activé l’archivage à extension automatique pour l’ensemble de l’organisation, mais que vous avez besoin d’ajouter 10 Go d’espace de stockage supplémentaire pour un utilisateur spécifique, vous pouvez exécuter la commande **Enable-Mailbox-AutoExpandingArchive** sur cette boîte aux lettres. Vous recevrez un message d’erreur indiquant que l’archivage à extension automatique a déjà été activé, mais que l’espace de stockage supplémentaire sera ajouté à la boîte aux lettres. 
 

@@ -1,6 +1,6 @@
 ---
 title: Stratégies de surveillance
-description: En savoir plus sur les stratégies de surveillance dans Office 365
+description: En savoir plus sur les stratégies de surveillance
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -18,17 +18,17 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-titleSuffix: Office 365 Compliance
-ms.openlocfilehash: 33cd1e9956410c66c21c6b4279416df5358f4adf
-ms.sourcegitcommit: 21338a9287017a66298e0ff557e80051946ebf13
+titleSuffix: Microsoft 365 Compliance
+ms.openlocfilehash: efdb1c7879f00c48e8588b5b9312dad106dc8992
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "42604081"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43626968"
 ---
-# <a name="supervision-policies-in-office-365"></a>Stratégies de supervision dans Office 365
+# <a name="supervision-policies"></a>Stratégies de surveillance
 
-Les stratégies de surveillance dans Office 365 vous permettent de capturer les communications des employés pour les examiner par les réviseurs désignés. Vous pouvez définir des stratégies spécifiques qui capturent les messages internes et externes, Microsoft teams ou les communications tierces au sein de votre organisation. Les relecteurs peuvent alors examiner les messages pour s’assurer qu’ils sont conformes aux standards de messages de votre organisation et les résoudre avec le type de classification.
+Les stratégies de surveillance de Microsoft 365 vous permettent de capturer les communications des employés pour les examiner par les réviseurs désignés. Vous pouvez définir des stratégies spécifiques qui capturent les messages internes et externes, Microsoft teams ou les communications tierces au sein de votre organisation. Les relecteurs peuvent alors examiner les messages pour s’assurer qu’ils sont conformes aux standards de messages de votre organisation et les résoudre avec le type de classification.
 
 Ces stratégies peuvent également vous aider à surmonter de nombreux défis de conformité modernes, notamment :
 
@@ -36,7 +36,7 @@ Ces stratégies peuvent également vous aider à surmonter de nombreux défis de
 - Augmentation du volume des données de message
 - Application réglementaire & le risque d’amendes
 
-Dans certaines organisations, le support informatique et le groupe de gestion de la conformité peuvent séparer les tâches. Office 365 prend en charge la séparation entre la configuration de la fonctionnalité de stratégie de surveillance et la configuration des stratégies pour les communications capturées. Par exemple, le groupe informatique d’une organisation peut être responsable de la configuration des autorisations de rôle et des groupes afin de prendre en charge les stratégies de surveillance configurées et gérées par l’équipe de conformité de l’organisation.
+Dans certaines organisations, le support informatique et le groupe de gestion de la conformité peuvent séparer les tâches. Microsoft 365 prend en charge la séparation entre la configuration de la fonctionnalité de stratégie de surveillance et la configuration des stratégies pour les communications capturées. Par exemple, le groupe informatique d’une organisation peut être responsable de la configuration des autorisations de rôle et des groupes afin de prendre en charge les stratégies de surveillance configurées et gérées par l’équipe de conformité de l’organisation.
 
 Pour obtenir une vue d’ensemble rapide des stratégies de surveillance, voir la vidéo sur la [stratégie de surveillance](https://youtu.be/C3Y8WZ7o_dI) sur le [canal des mécanismes Microsoft](https://www.youtube.com/user/OfficeGarageSeries).
 
@@ -44,13 +44,13 @@ Pour en savoir plus sur les améliorations et la disponibilité des fonctionnali
 
 Vous souhaitez essayer la nouvelle expérience de conformité de la communication dans Microsoft 365 ? Découvrez les fonctionnalités nouvelles et améliorées disponibles dans la [conformité de la communication dans Microsoft 365](communication-compliance.md).
 
-## <a name="transitioning-from-supervision-in-office-365"></a>Transition de la surveillance dans Office 365
+## <a name="transitioning-from-supervision"></a>Transition à partir de la surveillance
 
-Les organisations qui utilisent des stratégies de surveillance dans Office 365 et qui envisagent de passer aux [stratégies de conformité des communications dans Microsoft 365](communication-compliance.md) doivent comprendre les points importants suivants :
+Les organisations qui utilisent les stratégies de surveillance et la planification de la transition vers les [stratégies de conformité de communication dans Microsoft 365](communication-compliance.md) doivent comprendre les points importants suivants :
 
-- La solution de supervision dans Office 365 sera entièrement remplacée par la solution de conformité de la communication dans Microsoft 365. Pour les organisations qui migrent vers la conformité des communications à partir de stratégies de surveillance, nous vous recommandons de créer de nouvelles stratégies dans la conformité de la communication ayant les mêmes *conditions* que les stratégies de surveillance existantes pour permettre de nouvelles recherches et améliorations. Lors de la transition vers la conformité de la communication dans Microsoft 365, vous devez planifier l’exportation des données de création de rapports à partir de la surveillance dans Office 365 si vous avez des exigences de stratégie de rétention de conformité internes.
+- La solution de supervision dans Microsoft 365 sera entièrement remplacée par la solution de conformité de la communication dans Microsoft 365. Pour les organisations qui migrent vers la conformité des communications à partir de stratégies de surveillance, nous vous recommandons de créer de nouvelles stratégies dans la conformité de la communication ayant les mêmes *conditions* que les stratégies de surveillance existantes pour permettre de nouvelles recherches et améliorations. Lors de la transition vers la conformité de la communication dans Microsoft 365, vous devez planifier l’exportation des données de création de rapports à partir de la surveillance si vous avez des exigences internes de stratégie de rétention de conformité.
 - Dans l’intervalle, les organisations peuvent utiliser les deux solutions côte à côte jusqu’à la migration complète, mais les stratégies utilisées dans chaque solution doivent avoir des *noms de stratégie uniques*. Les groupes et les dictionnaires de mots clés personnalisés peuvent être partagés entre les solutions pendant la période de transition.
-- Les messages enregistrés en supervision dans Office 365 les correspondances de stratégie ne peuvent pas être déplacés ou partagés dans la conformité de communication dans Microsoft 365.
+- Les messages enregistrés en supervision dans les correspondances de stratégie Microsoft 365 ne peuvent pas être déplacés ou partagés dans la conformité de communication dans Microsoft 365.
 
 Pour plus d’informations sur la retraite de la surveillance dans Office 365, consultez la feuille de [route de Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap) pour plus de détails.
 
@@ -78,7 +78,7 @@ Vous créez des stratégies de surveillance dans le centre de conformité. Ces s
 
 ### <a name="supervised-users"></a>Utilisateurs supervisés
 
-Avant de commencer à utiliser la surveillance, vous devez déterminer qui a besoin de ses communications. Dans la stratégie, les adresses de messagerie des utilisateurs identifient des individus ou des groupes de personnes à superviser. Les groupes Office 365, les listes de distribution Exchange et les canaux Microsoft teams sont des exemples de ces groupes. Vous pouvez également exclure des utilisateurs ou des groupes spécifiques de la surveillance avec un groupe supervisé ou une liste de groupes.
+Avant de commencer à utiliser la surveillance, vous devez déterminer qui a besoin de ses communications. Dans la stratégie, les adresses de messagerie des utilisateurs identifient des individus ou des groupes de personnes à superviser. Les groupes Microsoft 365, les listes de distribution basées sur Exchange et les canaux Microsoft teams sont des exemples de ces groupes. Vous pouvez également exclure des utilisateurs ou des groupes spécifiques de la surveillance avec un groupe supervisé ou une liste de groupes.
 
 >[!IMPORTANT]
 >Les utilisateurs analysés par les stratégies de surveillance doivent disposer d’une licence de conformité Microsoft 365 E5, d’une licence Office 365 entreprise E3 avec le complément de conformité avancé ou être inclus dans un abonnement Office 365 entreprise E5, ou être inclus dans un abonnement Microsoft 365 E5. Si vous ne disposez pas d’un plan entreprise E5 existant et que vous souhaitez essayer de contrôler, vous pouvez vous [inscrire pour obtenir une version d’évaluation d’Office 365 entreprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279).
@@ -91,24 +91,24 @@ Lorsque vous créez une stratégie de surveillance, vous devez déterminer qui e
 
 Pour simplifier votre configuration, créez des groupes pour les personnes qui ont besoin de leurs communications et des groupes pour les personnes qui examinent ces communications. Si vous utilisez des groupes, vous aurez peut-être besoin de plusieurs. Par exemple, si vous souhaitez surveiller les communications entre deux groupes distincts de personnes, ou si vous souhaitez spécifier un groupe qui n’est pas supervisé.
 
-Lorsque vous sélectionnez un groupe Office 365 pour les utilisateurs supervisés, la stratégie surveille le contenu de la boîte aux lettres Office 365 partagée et les canaux Microsoft teams associés au groupe. Lorsque vous sélectionnez une liste de distribution, la stratégie analyse les boîtes aux lettres des utilisateurs individuels.
+Lorsque vous sélectionnez un groupe Microsoft 365 pour les utilisateurs supervisés, la stratégie surveille le contenu de la boîte aux lettres partagée et des canaux Microsoft teams associés au groupe. Lorsque vous sélectionnez une liste de distribution, la stratégie analyse les boîtes aux lettres des utilisateurs individuels.
 
 ### <a name="supported-communication-types"></a>Types de communication pris en charge
 
 Avec les stratégies de surveillance, vous pouvez choisir de surveiller les messages dans une ou plusieurs des plateformes de communication suivantes :
 
-- **Courrier électronique Exchange :** Les boîtes aux lettres hébergées sur Exchange Online dans le cadre de votre abonnement Office 365 sont toutes éligibles pour la supervision des messages. Les e-mails et les pièces jointes correspondant aux conditions de stratégie de surveillance sont immédiatement disponibles pour la surveillance et les rapports de surveillance. Les types de pièces jointes prises en charge pour la surveillance sont les mêmes que pour les [types de fichiers pris en charge pour les inspections de contenu des règles de flux de messagerie](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments#supported-file-types-for-mail-flow-rule-content-inspection)
+- **Courrier électronique Exchange :** Les boîtes aux lettres hébergées sur Exchange Online dans le cadre de votre abonnement Microsoft 365 sont toutes éligibles pour la supervision des messages. Les e-mails et les pièces jointes correspondant aux conditions de stratégie de surveillance sont immédiatement disponibles pour la surveillance et les rapports de surveillance. Les types de pièces jointes prises en charge pour la surveillance sont les mêmes que pour les [types de fichiers pris en charge pour les inspections de contenu des règles de flux de messagerie](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments#supported-file-types-for-mail-flow-rule-content-inspection)
 
 - **Microsoft teams :** Les communications de conversation et les pièces jointes associées dans les canaux Microsoft teams publics et privés, ainsi que dans les conversations individuelles, peuvent être surveillées. Les conversations teams correspondant aux conditions de stratégie de contrôle sont traitées une fois toutes les 24 heures, puis disponibles pour la surveillance et les rapports de surveillance. Utilisez les configurations de gestion de groupe suivantes pour superviser les conversations des utilisateurs individuels et les communications de canal dans teams :
 
     - **Pour la supervision de la conversation teams :** Affectez des utilisateurs individuels ou affectez un [groupe de distribution](https://support.office.com/article/Distribution-groups-E8BA58A8-FAB2-4AAF-8AA1-2A304052D2DE) à la stratégie de surveillance. Il s’agit des relations utilisateur/conversation 1-à-1 ou 1-n.
-    - **Pour les communications de canal teams :** Affectez tous les groupes Microsoft Team Channel ou Office 365 que vous souhaitez surveiller, qui contient un utilisateur spécifique à la stratégie de surveillance. Si vous ajoutez le même utilisateur à d’autres canaux Microsoft teams ou à des groupes Office 365, veillez à ajouter ces nouveaux canaux et groupes à la stratégie de surveillance.
+    - **Pour les communications de canal teams :** Affectez tous les groupes Microsoft Team Channel ou Microsoft 365 que vous souhaitez surveiller qui contient un utilisateur spécifique à la stratégie de surveillance. Si vous ajoutez le même utilisateur à d’autres canaux Microsoft teams ou à des groupes Microsoft 365, veillez à ajouter ces nouveaux canaux et groupes à la stratégie de surveillance.
 
 - **Skype entreprise Online :** Les communications de conversation et les pièces jointes associées dans Skype entreprise Online peuvent être surveillées. Les conversations Skype entreprise Online correspondant à des conditions de stratégie de supervision sont traitées une fois toutes les 24 heures, puis disponibles pour la surveillance et les rapports de surveillance. Les conversations de conversation surveillées proviennent de [conversations précédentes enregistrées dans Skype entreprise Online](https://support.office.com/article/Find-a-previous-Skype-for-Business-conversation-18892eba-5f18-4281-8c87-fd48bd72e6a2).  Utilisez la configuration de gestion de groupe suivante pour superviser les communications de conversation des utilisateurs dans Skype entreprise Online :
 
     - **Pour la supervision de la conversation Skype entreprise Online :** Affectez des utilisateurs individuels ou affectez un [groupe de distribution](https://support.office.com/article/Distribution-groups-E8BA58A8-FAB2-4AAF-8AA1-2A304052D2DE) à la stratégie de surveillance. Il s’agit des relations utilisateur/conversation 1-à-1 ou 1-n.
 
-- **Sources** tierces : Vous pouvez superviser les communications provenant de sources tierces (par exemple, Facebook ou DropBox) pour les données importées dans les boîtes aux lettres Office 365 de votre organisation. [Découvrez comment importer des données tierces dans Office 365](archiving-third-party-data.md).
+- **Sources** tierces : Vous pouvez superviser les communications provenant de sources tierces (par exemple, Facebook ou DropBox) pour les données importées dans des boîtes aux lettres de votre organisation. [Découvrez comment importer des données tierces](archiving-third-party-data.md).
 
 Les communications capturées sur ces plateformes sont conservées pendant sept ans pour chaque stratégie par défaut, même si les utilisateurs quittent votre organisation et que leur boîte aux lettres est supprimée.
 
@@ -124,7 +124,7 @@ Par défaut, la **direction est** la condition est affichée et ne peut pas êtr
 
 #### <a name="sensitive-information-types"></a>Types d’informations sensibles
 
-Vous pouvez inclure des types d’informations sensibles dans le cadre de votre stratégie de supervision. Les types d’informations sensibles sont des types de données prédéfinis ou personnalisés qui peuvent vous aider à identifier et à protéger les numéros de carte de crédit, les numéros de compte bancaire, les numéros de passeport, et bien plus encore. Dans le cadre de la [protection contre la perte de données (DLP)](data-loss-prevention-policies.md)d’Office 365, la configuration des informations sensibles peut utiliser des modèles, la proximité des caractères, les niveaux de confiance et même les types de données personnalisés pour identifier et marquer le contenu susceptible d’être sensible. Les types d’informations sensibles par défaut sont les suivants :
+Vous pouvez inclure des types d’informations sensibles dans le cadre de votre stratégie de supervision. Les types d’informations sensibles sont des types de données prédéfinis ou personnalisés qui peuvent vous aider à identifier et à protéger les numéros de carte de crédit, les numéros de compte bancaire, les numéros de passeport, et bien plus encore. Dans le cadre de la [protection contre la perte de données (DLP)](data-loss-prevention-policies.md), la configuration des informations sensibles peut utiliser des modèles, la proximité des caractères, les niveaux de confiance et même les types de données personnalisés pour identifier et marquer le contenu susceptible d’être sensible. Les types d’informations sensibles par défaut sont les suivants :
 
 - Financier
 - Médecine et santé
@@ -183,7 +183,7 @@ Pour analyser les messages électroniques et les pièces jointes des mêmes mots
   
 ##### <a name="enter-multiple-conditions"></a>Entrer plusieurs conditions
 
-Si vous entrez plusieurs conditions, Office 365 utilise toutes les conditions ensemble pour déterminer le moment auquel appliquer la stratégie aux éléments de communication. Lorsque vous configurez plusieurs conditions, toutes les conditions doivent être remplies pour que la stratégie s’applique, sauf si vous entrez une exception. Par exemple, vous avez besoin d’une stratégie qui s’applique si un message contient le mot « commercial » et qu’il est supérieur à 2 Mo. Toutefois, si le message contient également les mots « approuvé par Contoso Financial », la stratégie ne doit pas s’appliquer. Ainsi, dans ce cas, les trois conditions suivantes sont les suivantes :
+Si vous entrez plusieurs conditions, Microsoft 365 utilise toutes les conditions ensemble pour déterminer le moment auquel la stratégie doit être appliquée aux éléments de communication. Lorsque vous configurez plusieurs conditions, toutes les conditions doivent être remplies pour que la stratégie s’applique, sauf si vous entrez une exception. Par exemple, vous avez besoin d’une stratégie qui s’applique si un message contient le mot « commercial » et qu’il est supérieur à 2 Mo. Toutefois, si le message contient également les mots « approuvé par Contoso Financial », la stratégie ne doit pas s’appliquer. Ainsi, dans ce cas, les trois conditions suivantes sont les suivantes :
   
 - Le **message contient l’un de ces mots**, avec les mots clés « Trade »
 
@@ -263,7 +263,7 @@ Voici une répartition des valeurs affichées dans la colonne **type de balise**
   
 |**Type de balise**|**Signification**|
 |:-----|:-----|
-| **Non révisé** | Nombre d’e-mails non vérifiés. Ces messages sont en attente de révision dans le tableau de bord de supervision Office 365.
+| **Non révisé** | Nombre d’e-mails non vérifiés. Ces messages sont en attente de révision dans le tableau de bord de supervision Microsoft 365.
 | **Compliant** | Le nombre de messages vérifiés et marqués comme étant conformes. Ces messages nécessitent toujours une résolution. |
 | **Suspects** | Le nombre de messages consultés et marqués comme suspects. Sert d’indicateur pour les autres réviseurs afin de vérifier si un message électronique a besoin d’une enquête pour la conformité. Ces messages nécessitent toujours une résolution. |
 | **Non conforme (actif)** | Nombre de messages électroniques non conformes que les relecteurs examinent actuellement. |
@@ -279,7 +279,7 @@ Voici une répartition des valeurs affichées dans la colonne **type de balise**
 
 Dans certains cas, vous devez fournir des informations aux auditeurs de réglementation ou de conformité pour prouver le contrôle des activités et des communications des employés. Il peut s’agir d’un résumé de toutes les activités de surveillance associées à une stratégie définie ou à chaque fois qu’une stratégie de surveillance est modifiée. Les stratégies de surveillance disposent de pistes d’audit intégrées pour une préparation complète des audits internes ou externes. Des historiques d’audit détaillés de toutes les actions surveillées par vos stratégies de surveillance fournissent des preuves de procédures de surveillance.
 
-Les activités de stratégie de surveillance suivantes sont vérifiées et disponibles dans les journaux d’audit Office 365 unifiés :
+Les activités de stratégie de surveillance suivantes sont vérifiées et disponibles dans les journaux d’audit unifiés :
 
 |**Activité**|**Commandes associées**|
 |:-----|:-----|

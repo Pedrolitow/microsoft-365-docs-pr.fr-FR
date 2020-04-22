@@ -16,14 +16,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: Examinez, dépannez et résolvez les problèmes courants dans Office 365 eDiscovery.
+description: Examinez, dépannez et résolvez les problèmes courants dans eDiscovery.
 siblings_only: true
-ms.openlocfilehash: 3ff22ae11a21aef3909e58e03c8fefcf21db6435
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 5bcbe498cb650268dc8ff6f2b41a6201e75a8192
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42074808"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631769"
 ---
 # <a name="investigate-troubleshoot-and-resolve-common-ediscovery-issues"></a>Examiner, dépanner et résoudre les problèmes eDiscovery courants
 
@@ -37,7 +37,7 @@ Si vous essayez d’ajouter l’emplacement de la boîte aux lettres d’un util
 
 Recherchez les utilisateurs en double ou la liste de distribution avec le même ID d’utilisateur.
 
-1. Connectez-vous au [Centre de sécurité & conformité d’Office 365 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
+1. Connectez-vous à [la sécurité & Centre de conformité PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
 
 2. Exécutez la commande suivante pour récupérer toutes les instances du nom d’utilisateur :
 
@@ -66,7 +66,7 @@ Une recherche de contenu ou eDiscovery peut produire l’erreur suivante :
 
 Si vous recevez cette erreur, nous vous recommandons de vérifier les emplacements qui ont échoué dans la recherche, puis de réexécuter la recherche uniquement sur les emplacements ayant échoué.
 
-1. Connectez-vous au [Centre de sécurité & conformité Office 365 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell) , puis exécutez la commande suivante :
+1. Connectez-vous au [Centre de sécurité & de conformité PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell) , puis exécutez la commande suivante :
 
     ```powershell
     Get-ComplianceSearch <searchname> | FL 
@@ -112,9 +112,9 @@ Lors de l’exportation des résultats de recherche à partir de eDiscovery ou d
 
 ### <a name="resolution"></a>Résolution
 
-1.  Essayez d’utiliser les étapes indiquées dans l’article [augmenter les vitesses de téléchargement](https://docs.microsoft.com/office365/securitycompliance/increase-download-speeds-when-exporting-ediscovery-results).
+1.    Essayez d’utiliser les étapes indiquées dans l’article [augmenter les vitesses de téléchargement](https://docs.microsoft.com/office365/securitycompliance/increase-download-speeds-when-exporting-ediscovery-results).
 
-2.  Si vous rencontrez toujours des problèmes, connectez-vous à [Office 365 Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell) , puis exécutez la commande suivante :
+2.    Si vous rencontrez toujours des problèmes, connectez-vous à la [sécurité & Centre de conformité PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell) , puis exécutez la commande suivante :
 
     ```powershell
     Get-ComplianceSearch <searchname> | FL
@@ -142,7 +142,7 @@ Lors de l’exécution d’une recherche de découverte électronique, si la rec
 
 1. Fractionnez la recherche en petites recherches et réexécutez la recherche.  Essayez d’utiliser une plage de dates plus petite ou limitez le nombre d’emplacements recherchés.
 
-2. Connectez-vous au [Centre de sécurité & conformité Office 365 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell) , puis exécutez la commande suivante :
+2. Connectez-vous au [Centre de sécurité & de conformité PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell) , puis exécutez la commande suivante :
 
     ```powershell Set-CaseHoldPolicy <policyname> -RetryDistribution
     Get-ComplianceSearch <searchname> | FL
@@ -162,7 +162,7 @@ erreur de distribution de la stratégie de conservation de cas eDiscovery. L’e
 
 ### <a name="resolution"></a>Résolution
 
-1.  Connectez-vous au [Centre de sécurité & conformité Office 365 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell) , puis exécutez la commande suivante pour une conservation de cas eDiscovery :
+1.    Connectez-vous à la [sécurité & Centre de conformité PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell) , puis exécutez la commande suivante pour une conservation de cas eDiscovery :
 
     ```powershell
     Get-CaseHoldPolicy <policyname> - DistributionDetail | FL

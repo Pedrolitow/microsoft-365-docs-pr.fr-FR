@@ -1,5 +1,5 @@
 ---
-title: Tester l’analyse de pertinence dans Office 365 Advanced eDiscovery
+title: Tester l’analyse de pertinence dans Advanced eDiscovery
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -15,13 +15,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 1b092f7c-ea55-44f5-b419-63f3458fd7e0
-description: 'Découvrez comment utiliser l’onglet test après le calcul par lot dans Office 365 Advanced eDiscovery pour tester, comparer et valider la qualité globale du traitement.  '
-ms.openlocfilehash: c65c10878bdc057a1c53c4370f6a6750e1fe8e9d
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+description: 'Découvrez comment utiliser l’onglet test après le calcul par lot dans Advanced eDiscovery pour tester, comparer et valider la qualité globale du traitement.  '
+ms.openlocfilehash: 67b480ea340dace4cab0b038d678b6d005bf545b
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42557684"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637198"
 ---
 # <a name="test-relevance-analysis-in-advanced-ediscovery-classic"></a>Tester l’analyse de pertinence dans Advanced eDiscovery (classique)
 
@@ -112,7 +112,7 @@ Le test « test the Slice » effectue un test semblable au test « test the R
     
 ## <a name="see-also"></a>Voir aussi
 
-[Découverte électronique avancée (classique)](office-365-advanced-ediscovery.md)
+[Advanced eDiscovery (classique)](office-365-advanced-ediscovery.md)
   
 [Présentation de l’évaluation en matière de pertinence](assessment-in-relevance-in-advanced-ediscovery.md)
   

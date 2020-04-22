@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.assetid: ed48d448-3714-4c42-85f5-10f75f6a4278
 description: 'Exportez les résultats de la recherche à partir d’une recherche de contenu dans le centre de sécurité & conformité sur un ordinateur local. Les résultats par courrier électronique sont exportés en tant que fichiers PST. Le contenu de sites SharePoint et OneDrive entreprise est exporté sous forme de documents Office natifs. '
-ms.openlocfilehash: 5789244314a945937791d360962ad398f87f9bd4
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 3b9997b11763d91357e53d12ef70ffb025a04d74
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42634932"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43615988"
 ---
 # <a name="export-content-search-results"></a>Exporter les résultats de la recherche de contenu
 
@@ -50,13 +50,13 @@ L’exportation des résultats d’une recherche de contenu implique la prépara
 
   - Microsoft Edge <sup>2</sup>
   
-    OU
+    OR
 
   - Microsoft Internet Explorer 10 et versions ultérieures
     
   > [!NOTE]
   > <sup>1</sup> Microsoft ne fabrique pas d’extensions ou de modules complémentaires tiers pour les applications ClickOnce. L’exportation des résultats de recherche à l’aide d’un navigateur non pris en charge avec des extensions ou des modules complémentaires tiers n’est pas prise en charge.<br/>
-  > <sup>2</sup> suite à des modifications récentes apportées à Microsoft Edge, la prise en charge de ClickOnce n’est plus activée par défaut. Pour obtenir des instructions sur l’activation de la prise en charge ClickOnce dans Edge, consultez [la rubrique utiliser l’outil d’exportation de découverte électronique Office 365 dans Microsoft Edge](configure-edge-to-export-search-results.md).
+  > <sup>2</sup> suite à des modifications récentes apportées à Microsoft Edge, la prise en charge de ClickOnce n’est plus activée par défaut. Pour obtenir des instructions sur l’activation de la prise en charge ClickOnce dans Edge, consultez [la rubrique utiliser l’outil d’exportation de découverte électronique dans Microsoft Edge](configure-edge-to-export-search-results.md).
     
 - Lorsque vous téléchargez les résultats de recherche (décrit à l’étape 2), vous pouvez augmenter la vitesse de téléchargement en configurant un paramètre de Registre Windows sur l’ordinateur que vous utilisez pour exporter les résultats de la recherche. Pour plus d’informations, consultez [la rubrique augmentation de la vitesse de téléchargement lors de l’exportation des résultats de recherche eDiscovery à partir d’Office 365](increase-download-speeds-when-exporting-ediscovery-results.md).
     
@@ -87,7 +87,7 @@ Vous devez préparer les résultats de recherche pour l’exportation. Lorsque v
   
 1. Accédez à [https://protection.office.com](https://protection.office.com).
     
-2. Ouvrez une session Office 365 en utilisant votre compte scolaire ou professionnel.
+2. Connectez-vous à l’aide de votre compte professionnel ou scolaire.
     
 3. Dans le volet gauche du centre de sécurité & conformité, cliquez sur recherche de **contenu**de **recherche** \> .
     
@@ -160,7 +160,7 @@ Comme expliqué précédemment, vous pouvez augmenter la vitesse de télécharge
   
 3. Cliquez sur **Télécharger les résultats**.
     
-4. Si vous êtes invité à installer l' **outil d’exportation de découverte électronique MicrosoftOffice 365**, cliquez sur **installer**.
+4. Si vous êtes invité à installer l' **outil d’exportation de découverte électronique**, cliquez sur **installer**.
     
 5. Dans l’**outil d’exportation de découverte électronique**, collez la clé d’exportation que vous avez copiée à l’étape 2 dans la zone appropriée. 
     
@@ -212,7 +212,7 @@ Voici plus d’informations sur l’exportation des résultats de la recherche.
     
 - Par défaut, la taille maximale d’un fichier PST pouvant être exporté est de 10 Go. Cela signifie que si les résultats de la recherche de la boîte aux lettres d’un utilisateur sont supérieurs à 10 Go, les résultats de la recherche de la boîte aux lettres seront exportés dans deux (ou plusieurs) fichiers PST distincts. Si vous choisissez d’exporter tous les résultats de recherche dans un seul fichier PST, le fichier PST sera Spilt dans des fichiers PST supplémentaires si la taille totale des résultats de la recherche est supérieure à 10 Go. Si vous souhaitez modifier cette taille par défaut, vous pouvez modifier le Registre Windows sur l’ordinateur que vous utilisez pour exporter les résultats de la recherche. Consultez [la rubrique modifier la taille des fichiers PST lors de l’exportation des résultats de recherche eDiscovery](change-the-size-of-pst-files-when-exporting-results.md).
     
-    De plus, les résultats de recherche d’une boîte aux lettres spécifique ne sont pas réparties entre plusieurs fichiers PST, sauf si le contenu d’une boîte aux lettres unique est supérieur à 10 Go. Si vous avez choisi d’exporter les résultats de la recherche dans un fichier PST pour qui contient tous les messages dans un seul dossier et que les résultats de la recherche sont supérieurs à 10 Go, les éléments sont toujours organisés par ordre chronologique, de sorte qu’ils seront Spilt dans des fichiers PST supplémentaires en fonction de l’élément envoyé jours.
+    De plus, les résultats de recherche d’une boîte aux lettres spécifique ne sont pas réparties entre plusieurs fichiers PST, sauf si le contenu d’une boîte aux lettres unique est supérieur à 10 Go. Si vous avez choisi d’exporter les résultats de la recherche dans un fichier PST pour qui contient tous les messages dans un seul dossier et que les résultats de la recherche sont supérieurs à 10 Go, les éléments sont toujours organisés par ordre chronologique, de sorte qu’ils seront Spilt dans des fichiers PST supplémentaires en fonction de la date d’envoi.
      
  ### <a name="export-reports"></a>Exporter des rapports
   

@@ -16,18 +16,18 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 77a4b3e1826889e996b875c9427013c7b08dfaaf
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 278985aa93f8802f78bd632a5fc90dd6be846b21
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600641"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637906"
 ---
 # <a name="advanced-indexing-of-data-for-an-investigation"></a>Indexation avancée des données pour une enquête
 
-Le contenu du système réel peut être partiellement indexé pour plusieurs raisons, notamment l’existence d’images, de types de fichiers non pris en charge ou lorsque des limites de taille de fichier d’indexation sont rencontrées. Lorsque vous traitez des données à risque élevé, vous devez vous assurer que votre recherche a capturé toutes les données que vous souhaitez analyser. Lorsqu’une personne concernée est ajoutée à une enquête de données, tout contenu dans Office 365 qui a été considéré comme partiellement indexé est retraité afin de pouvoir faire l’objet d’une recherche complète. Ce processus est appelé *indexation avancée*. 
+Le contenu du système réel peut être partiellement indexé pour plusieurs raisons, notamment l’existence d’images, de types de fichiers non pris en charge ou lorsque des limites de taille de fichier d’indexation sont rencontrées. Lorsque vous traitez des données à risque élevé, vous devez vous assurer que votre recherche a capturé toutes les données que vous souhaitez analyser. Lorsqu’une personne concernée est ajoutée à une enquête de données, tout contenu considéré comme partiellement indexé est retraité afin de le faire entièrement chercher. Ce processus est appelé *indexation avancée*. 
 
-Pour en savoir plus sur le traitement de la prise en charge dans Office 365 et les éléments partiellement indexés, voir :
+Pour en savoir plus sur le traitement de la prise en charge et des éléments partiellement indexés, voir :
 
 - [Types de fichiers pris en charge dans les enquêtes de données](supported-filetypes-datainvestigations.md)
 

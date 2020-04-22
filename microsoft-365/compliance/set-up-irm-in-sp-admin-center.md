@@ -17,28 +17,28 @@ search.appverid:
 - MET150
 ms.assetid: 239ce6eb-4e81-42db-bf86-a01362fed65c
 description: Découvrez comment utiliser la gestion des droits relatifs à l’information (IRM) de SharePoint Online via Microsoft Azure Active Directory Rights Management Services (RMS) pour protéger les listes et les bibliothèques de documents SharePoint.
-ms.openlocfilehash: 3705c08b64ffbf719dbce91396c86976db14fea0
-ms.sourcegitcommit: dcea75af89f5f80ec6670346ee176407e043de54
+ms.openlocfilehash: c981ceefde2cedb5f6c8731fd9a5ad9318174120
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "42610621"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634776"
 ---
 # <a name="set-up-information-rights-management-irm-in-sharepoint-admin-center"></a>Set up Information Rights Management (IRM) in SharePoint admin center
 
 ## <a name="introduction"></a>Introduction
 
-Dans SharePoint Online, la protection IRM est appliquée aux fichiers au niveau de la liste et de la bibliothèque. Pour que votre organisation puisse utiliser la protection IRM, vous devez d’abord configurer la gestion des droits. IRM s’appuie sur le service Azure Rights Management d’Azure information protection pour chiffrer et affecter des restrictions d’utilisation. Certains plans Office 365 incluent la gestion des droits Azure, mais pas tous. Pour en savoir plus, consultez [la prise en charge d’Azure Rights Management par les services et les applications Office](https://docs.microsoft.com/azure/information-protection/understand-explore/office-apps-services-support).
+Dans SharePoint Online, la protection IRM est appliquée aux fichiers au niveau de la liste et de la bibliothèque. Pour que votre organisation puisse utiliser la protection IRM, vous devez d’abord configurer la gestion des droits. IRM s’appuie sur le service Azure Rights Management d’Azure information protection pour chiffrer et affecter des restrictions d’utilisation. Certains plans Microsoft 365 incluent Azure Rights Management, mais pas tous. Pour en savoir plus, consultez [la prise en charge d’Azure Rights Management par les services et les applications Office](https://docs.microsoft.com/azure/information-protection/understand-explore/office-apps-services-support).
   
 ## <a name="turn-on-irm-service-using-sharepoint-admin-center"></a>Activer le service IRM à l’aide du centre d’administration SharePoint
 
-Pour que votre organisation puisse protéger les bibliothèques et les listes SharePoint, vous devez d’abord activer le service gestion des droits pour votre organisation. Pour savoir comment voir [activation d’Azure Rights Management](https://docs.microsoft.com/information-protection/deploy-use/activate-service). Vous devez utiliser un compte professionnel ou scolaire qui dispose des privilèges d’administrateur général Office 365 pour activer le service gestion des droits. Dans le cas contraire, vous ne pourrez pas utiliser les fonctionnalités de gestion des droits relatifs à l’information avec SharePoint Online.
+Pour que votre organisation puisse protéger les bibliothèques et les listes SharePoint, vous devez d’abord activer le service gestion des droits pour votre organisation. Pour savoir comment voir [activation d’Azure Rights Management](https://docs.microsoft.com/information-protection/deploy-use/activate-service). Vous devez utiliser un compte professionnel ou scolaire disposant de privilèges d’administrateur général pour activer le service gestion des droits. Dans le cas contraire, vous ne pourrez pas utiliser les fonctionnalités de gestion des droits relatifs à l’information avec SharePoint Online.
   
 Après avoir activé le service RMS, connectez-vous au centre d’administration SharePoint pour activer la gestion des droits relatifs à l’information.
   
-1. Connectez-vous à Office 365 en tant qu’administrateur général ou SharePoint.
+1. Connectez-vous en tant qu’administrateur général ou administrateur SharePoint.
     
-2. Sélectionnez l’icône du lanceur d’applications ![Icône du lanceur d’applications dans Office 365](../media/e5aee650-c566-4100-aaad-4cc2355d909f.png) dans la partie supérieure gauche, puis **Administrateur** pour ouvrir le centre d’administration Microsoft 365. (Si vous ne voyez pas la mosaïque Administration, vous ne disposez pas des autorisations d’administrateur Office 365 dans votre organisation.) 
+2. Sélectionnez l’icône du lanceur d’applications ![Icône du lanceur d’applications dans Office 365](../media/e5aee650-c566-4100-aaad-4cc2355d909f.png) dans la partie supérieure gauche, puis **Administrateur** pour ouvrir le centre d’administration Microsoft 365. (Si vous ne voyez pas la vignette administrateur, vous ne disposez pas des autorisations d’administrateur dans votre organisation.) 
     
 3. Dans le volet de gauche, choisissez **centres** \> d’administration **SharePoint**.
     
@@ -57,7 +57,7 @@ Lorsque des personnes téléchargent des fichiers dans une liste ou une biblioth
   
 Vous ne pouvez pas créer ou modifier des documents dans une bibliothèque activée pour IRM à l’aide d’Office dans un navigateur. Au lieu de cela, une personne à la fois peut télécharger et modifier des fichiers chiffrés par IRM. Utiliser l’archivage et l’extraction pour gérer la *co-création* ou la création entre plusieurs utilisateurs. 
   
-Lorsque vous téléchargez un fichier PDF à partir d’une bibliothèque protégée par IRM, Office 365 crée un fichier PDF protégé. L’extension du fichier n’est pas modifiée, mais le fichier est protégé. Pour afficher ce fichier, vous devez disposer d’Azure information protection Viewer, de l’intégralité du client Azure information protection ou d’une autre application qui prend en charge l’affichage des fichiers PDF protégés. 
+Lorsque vous téléchargez un fichier PDF à partir d’une bibliothèque protégée par IRM, Microsoft 365 crée un fichier PDF protégé. L’extension du fichier n’est pas modifiée, mais le fichier est protégé. Pour afficher ce fichier, vous devez disposer d’Azure information protection Viewer, de l’intégralité du client Azure information protection ou d’une autre application qui prend en charge l’affichage des fichiers PDF protégés. 
   
 SharePoint Online prend en charge le chiffrement des types de fichiers suivants :
   

@@ -1,5 +1,5 @@
 ---
-title: Faire pivoter ou faire pivoter une clé client ou une clé de disponibilité
+title: Echanger ou alterner entre une clé client ou de disponibilité
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -12,22 +12,22 @@ search.appverid:
 - MET150
 ms.collection:
 - M365-security-compliance
-description: Découvrez comment déployer les clés racines du client stockées dans le coffre-fort de clés Azure qui sont utilisées avec la clé client Office 365. Les services incluent les fichiers Exchange Online, Skype entreprise, SharePoint Online, OneDrive entreprise et Teams.
-ms.openlocfilehash: 9699960666eaa9aa62bb027d3a4549cb50cd52e3
-ms.sourcegitcommit: 5ff1dc62e8855be155cb2de45cf4ee5a02c321fd
+description: Découvrez comment faire en sorte que les clés racines du client stockées dans le coffre-fort de clés Azure soient utilisées avec la clé client. Les services incluent les fichiers Exchange Online, Skype entreprise, SharePoint Online, OneDrive entreprise et Teams.
+ms.openlocfilehash: 29a36636253f5f01181f231941d0c3a9e26abacc
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41804784"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43633641"
 ---
-# <a name="roll-or-rotate-a-customer-key-or-an-availability-key"></a>Faire pivoter ou faire pivoter une clé client ou une clé de disponibilité
+# <a name="roll-or-rotate-a-customer-key-or-an-availability-key"></a>Echanger ou alterner entre une clé client ou de disponibilité
 
 > [!CAUTION]
 > Ne faites appel qu’à une clé de chiffrement que vous utilisez avec la clé client lorsque vos exigences en matière de sécurité ou de conformité vous obligent à lancer la clé. En outre, ne supprimez pas de clés qui sont ou n’ont pas été associées à des stratégies. Lorsque vous restaurez vos clés, le contenu est chiffré avec les clés précédentes. Par exemple, bien que les boîtes aux lettres actives soient rechiffrées fréquemment, les boîtes aux lettres inactives, déconnectées et désactivées peuvent toujours être chiffrées avec les clés précédentes. SharePoint Online effectue des sauvegardes de contenu à des fins de restauration et de récupération, de sorte qu’il peut toujours y avoir un archivage de contenu à l’aide de clés plus anciennes.
 
 ## <a name="about-rolling-the-availability-key"></a>À propos du déroulement de la clé de disponibilité
 
-Microsoft n’expose pas le contrôle direct de la clé de disponibilité aux clients. Par exemple, vous pouvez uniquement faire pivoter les touches dont vous êtes propriétaire dans le coffre de clés Azure. Office 365 annule les clés de disponibilité selon un planning défini en interne. Il n’existe aucun contrat de niveau de service (SLA) orienté vers le client pour ces rouleaux clés. Office 365 fait pivoter la clé de disponibilité à l’aide du code de service Office 365 dans un processus automatisé, non manuel. Les administrateurs Microsoft peuvent lancer le processus de déploiement. La clé est déployée à l’aide de mécanismes automatisés sans accès direct au magasin de clés. L’accès au magasin secret clé de disponibilité n’est pas approvisionné aux administrateurs Microsoft. Le laminage de clé de disponibilité exploite le même mécanisme que celui utilisé pour générer initialement la clé. Pour plus d’informations sur la clé de disponibilité, voir [comprendre la clé de disponibilité](customer-key-availability-key-understand.md).
+Microsoft n’expose pas le contrôle direct de la clé de disponibilité aux clients. Par exemple, vous pouvez uniquement faire pivoter les touches dont vous êtes propriétaire dans le coffre de clés Azure. Microsoft 365 annule les clés de disponibilité selon un calendrier défini en interne. Il n’existe aucun contrat de niveau de service (SLA) orienté vers le client pour ces rouleaux clés. Microsoft 365 fait pivoter la clé de disponibilité à l’aide du code de service Microsoft 365 dans un processus automatisé, non manuel. Les administrateurs Microsoft peuvent lancer le processus de déploiement. La clé est déployée à l’aide de mécanismes automatisés sans accès direct au magasin de clés. L’accès au magasin secret clé de disponibilité n’est pas approvisionné aux administrateurs Microsoft. Le laminage de clé de disponibilité exploite le même mécanisme que celui utilisé pour générer initialement la clé. Pour plus d’informations sur la clé de disponibilité, voir [comprendre la clé de disponibilité](customer-key-availability-key-understand.md).
 
 > [!IMPORTANT]
 > Les clés de disponibilité Exchange Online et Skype entreprise peuvent être déployées de manière efficace par les clients qui créent une nouvelle DEP, étant donné qu’une clé de disponibilité unique est générée pour chaque DEP que vous créez. Les clés de disponibilité pour SharePoint Online, OneDrive entreprise et les fichiers teams existent au niveau de la forêt et sont partagées entre DEPs et les clients, ce qui signifie que le déploiement se produit uniquement sur une planification définie de manière interne par Microsoft. Pour limiter les risques de non-déploiement de la clé de disponibilité chaque fois qu’une nouvelle DEP est créée, SharePoint, OneDrive et teams retournent la clé intermédiaire client (TIK), la clé incluse dans les clés racines du client et la clé de disponibilité, chaque fois qu’une nouvelle DEP est créée.
@@ -52,7 +52,7 @@ Par exemple :
 
 Lorsque vous déployez l’une des clés Azure Key Vault associées à une DEP utilisée avec Exchange Online et Skype entreprise, vous devez mettre à jour la DEP pour qu’elle pointe vers la nouvelle clé. Cette opération ne fait pas pivoter la clé de disponibilité.
 
-Pour indiquer à la clé du client d’utiliser la nouvelle clé pour chiffrer les boîtes aux lettres dans Office 365 exécutez la cmdlet Set-DataEncryptionPolicy comme suit :
+Pour indiquer à la clé du client d’utiliser la nouvelle clé pour chiffrer les boîtes aux lettres, exécutez la cmdlet Set-DataEncryptionPolicy comme suit :
 
 1. Exécutez la cmdlet Set-DataEncryptionPolicy dans Azure PowerShell :
   
@@ -86,8 +86,8 @@ SharePoint Online ne vous permet d’appliquer qu’une seule touche à la fois.
 
 - [Chiffrement de service avec la clé client pour Office 365](customer-key-overview.md)
 
-- [Configurer la clé client pour Office 365](customer-key-set-up.md)
+- [Configurer la clé client pour Office 365](customer-key-set-up.md)
 
-- [Gérer la clé client pour Office 365](customer-key-manage.md)
+- [Gérer la clé client pour Office 365](customer-key-manage.md)
 
 - [En savoir plus sur la clé de disponibilité](customer-key-availability-key-understand.md)

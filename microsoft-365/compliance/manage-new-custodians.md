@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Gérer les dépositaires dans un cas avancé eDiscovery.
-ms.openlocfilehash: f52c32c2eb65a03369064954ac1af6f881ab556f
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: b497aef50c2bafd58e3b9cf8643a1ecc038520a4
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42634702"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635894"
 ---
 # <a name="manage-custodians-in-an-advanced-ediscovery-case"></a>Gestion des dépositaires dans un cas avancé eDiscovery
 
@@ -110,7 +110,7 @@ Pour déclencher le processus de réindexation afin d’adresser des éléments 
 
 La réindexation des données du dépositaire est un processus long ; le travail correspondant créé est nommé **réindexation des données des dépositaires**. Vous pouvez suivre l’avancement sous l’onglet **travaux** ou sous l’onglet **dépositaires** en surveillant le statut dans la colonne **État du travail d’indexation** .
 
-Pour plus d’informations, voir :
+Si vous souhaitez en savoir plus, consultez les articles : 
 
 - [Utiliser les erreurs de traitement](processing-data-for-case.md)
 
@@ -132,7 +132,7 @@ Pour libérer un dépositaire :
 
 4. Sur la page flyout, cliquez sur **libérer le dépositaire**.
 
-   Une page d’avertissement s’affiche pour expliquer que si une conservation est placée sur une source de données associée au dépositaire, la conservation sera supprimée et les autres conservations associées à un autre cas de découverte électronique avancée continueront à s’appliquer. Cela inclut d’autres types de fonctionnalités de conservation et de rétention dans Office 365 (par exemple, une stratégie de rétention Office 365).
+   Une page d’avertissement s’affiche pour expliquer que si une conservation est placée sur une source de données associée au dépositaire, la conservation sera supprimée et les autres conservations associées à un autre cas de découverte électronique avancée continueront à s’appliquer. Cela inclut d’autres types de fonctionnalités de conservation et de rétention (par exemple, une stratégie de rétention Microsoft 365).
 
 5. Cliquez sur **Oui** pour confirmer le lancement du dépositaire. 
 

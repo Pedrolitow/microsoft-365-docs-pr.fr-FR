@@ -1,5 +1,5 @@
 ---
-title: Exporter des données de cas dans Office 365 Advanced eDiscovery
+title: Exporter des données de cas dans Advanced eDiscovery
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -14,13 +14,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: c3198d1c-51b4-4280-87c5-269b47246d33
-description: 'Comprendre les instructions relatives à l’exportation des données de cas eDiscovery et des résultats à consulter à l’aide du processus d’exportation dans Office 365 Advanced eDiscovery.  '
-ms.openlocfilehash: ced09e872ab1cf7f3f5a798a916357cb8016b797
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+description: 'Comprendre les instructions relatives à l’exportation des données de cas eDiscovery et des résultats à consulter à l’aide du processus d’exportation dans Advanced eDiscovery.  '
+ms.openlocfilehash: 8a46a0c3d04cb89d50486d032a7958ccb779b5e1
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42558215"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43615938"
 ---
 # <a name="export-case-data-in-advanced-ediscovery-classic"></a>Exporter des données de cas dans Advanced eDiscovery (classique)
 
@@ -39,7 +39,7 @@ Le processus d’exportation dans Advanced eDiscovery permet l’exportation de 
     
 ## <a name="see-also"></a>Voir aussi
 
-[Découverte électronique avancée (classique)](office-365-advanced-ediscovery.md)
+[Advanced eDiscovery (classique)](office-365-advanced-ediscovery.md)
   
 [Exportation des résultats](export-results-in-advanced-ediscovery.md)
   

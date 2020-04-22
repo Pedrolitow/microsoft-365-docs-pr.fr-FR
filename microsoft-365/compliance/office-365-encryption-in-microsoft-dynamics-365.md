@@ -1,5 +1,5 @@
 ---
-title: Chiffrement Office 365 dans Microsoft Dynamics 365
+title: Chiffrement dans Microsoft Dynamics 365
 f1.keywords:
 - NOCSH
 ms.author: krowley
@@ -13,14 +13,14 @@ search.appverid:
 - MET150
 ms.collection: Strat_O365_Enterprise
 description: 'Résumé : comprendre le chiffrement dans Microsoft Dynamics 365.'
-ms.openlocfilehash: 288f739182f8419cf7fbbfb6dfd7ad0a2c7838a5
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 7d5116d957f8d9e51309a9605bb82c4ffd76386e
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597851"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637238"
 ---
-# <a name="office-365-encryption-in-microsoft-dynamics-365"></a>Chiffrement Office 365 dans Microsoft Dynamics 365
+# <a name="encryption-in-microsoft-dynamics-365"></a>Chiffrement dans Microsoft Dynamics 365
 
 Microsoft utilise la technologie de chiffrement pour protéger les données client dans Dynamics 365 tout en restant dans une base de données Microsoft et en transit entre les appareils utilisateur et nos centres de données. Les connexions établies entre les clients et les centres de donnés Microsoft sont chiffrées et tous les points de terminaison publics sont sécurisés à l’aide du protocole TLS standard. TLS établit efficacement une connexion de navigateur à serveur améliorée pour garantir la confidentialité et l’intégrité des données entre les ordinateurs de bureau et les centres de données. Une fois que le chiffrement de données est activé, il ne peut pas être désactivé. Pour plus d’informations, consultez la rubrique relative [au chiffrement des données au niveau du champ](https://msdn.microsoft.com/library/dn481562.aspx).
 

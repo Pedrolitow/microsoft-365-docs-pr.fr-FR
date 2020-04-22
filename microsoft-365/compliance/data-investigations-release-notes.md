@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Cet article décrit la nouvelle outil d’évaluation des données (aperçu) de Microsoft 365.
-ms.openlocfilehash: 57605566a8847a3630e1c4656f98f71ebb414f86
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 813877151f538bc07a0460fdd702ab37ebcc5a1a
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595411"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637734"
 ---
 # <a name="release-notes-for-data-investigations-preview-in-microsoft-365"></a>Notes de publication pour les enquêtes sur les données (aperçu) dans Microsoft 365
 
@@ -31,7 +31,7 @@ Vous pouvez utiliser l’outil nouvelles enquêtes de données (aperçu) dans Mi
 
 - **Enquêtes** : vous pouvez regrouper les recherches et les incidents en créant une enquête. Gérer les personnes pouvant accéder à l’enquête en ajoutant ou en supprimant des membres.  Vous pouvez également sélectionner et marquer vos recherches favorites. Suivre et surveiller l’activité au sein et à travers des enquêtes à l’aide de nouveaux tableaux de bord. Une fois votre enquête terminée, vous pouvez la fermer ou la supprimer.
 
-- **Personnes intéressantes** : lorsque vous ajoutez des utilisateurs à des enquêtes en tant que personnes intéressantes, vous pouvez voir leur boîte aux lettres, le compte OneDrive entreprise et les sites Microsoft Teams. Vous pouvez les utiliser pour étendre vos recherches de contenu d’enquête. Pour approfondir votre attention sur une personne intéressante, vous pouvez également afficher les enregistrements d’audit relatifs à leurs activités dans Office 365 et d’autres services Microsoft.
+- **Personnes intéressantes** : lorsque vous ajoutez des utilisateurs à des enquêtes en tant que personnes intéressantes, vous pouvez voir leur boîte aux lettres, le compte OneDrive entreprise et les sites Microsoft Teams. Vous pouvez les utiliser pour étendre vos recherches de contenu d’enquête. Pour approfondir votre attention sur une personne intéressante, vous pouvez également afficher les enregistrements d’audit relatifs à leurs activités dans Microsoft 365 et d’autres services Microsoft.
 
 - **Recherches** : créez une recherche à l’échelle de l’organisation à l’aide de diverses conditions de recherche. Si vous savez des utilisateurs ou des sites à rechercher, vous pouvez le faire en ajoutant ces utilisateurs en tant que personnes intéressantes ou en spécifiant des emplacements de site dans l’Assistant de création de la recherche. 
 

@@ -1,5 +1,5 @@
 ---
-title: Restaurer une boîte aux lettres inactive dans Office 365
+title: Restaurer une boîte aux lettres inactive
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -16,14 +16,14 @@ search.appverid:
 - MET150
 ms.assetid: 97e06a7a-ef9a-4ce8-baea-18b9e20449a3
 description: Si un nouvel employé ou un autre utilisateur a besoin d’accéder au contenu d’une boîte aux lettres inactive dans Office 365, vous pouvez restaurer (ou fusionner) le contenu de la boîte aux lettres inactive dans une boîte aux lettres existante.
-ms.openlocfilehash: 1fdf86c17d557ef27373001cb63f710168269a19
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 3352dfa582fb09a5f0a6c7ecbd807ed80593351f
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42081598"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43621316"
 ---
-# <a name="restore-an-inactive-mailbox-in-office-365"></a>Restaurer une boîte aux lettres inactive dans Office 365
+# <a name="restore-an-inactive-mailbox"></a>Restaurer une boîte aux lettres inactive
 
 Une boîte aux lettres inactive (qui est un type de boîte aux lettres supprimée (récupérable)) est utilisée pour conserver le courrier électronique d’un ancien employé une fois qu’il quitte votre organisation. Si un autre employé assume les responsabilités de l'employé qui est parti ou si ce dernier réintègre votre organisation, deux méthodes vous permettent de mettre à disposition le contenu de la boîte aux lettres inactive :
   
@@ -103,7 +103,7 @@ Si une boîte aux lettres inactive possède une boîte aux lettres d'archivage, 
   Get-Mailbox -InactiveMailboxOnly | FL Name,PrimarySMTPAddress,DistinguishedName,ExchangeGUID,LegacyExchangeDN,ArchiveStatus
   ```
 
-- **Utilisez une conservation pour litige ou une stratégie de rétention Office 365 pour conserver le contenu de boîte aux lettres inactive.** Si vous souhaitez conserver l’état d’une boîte aux lettres inactive après sa restauration, vous pouvez placer la boîte aux lettres cible en [conservation pour litige](https://go.microsoft.com/fwlink/?linkid=856286) ou appliquer une [stratégie de rétention Office 365](retention-policies.md) avant de restaurer la boîte aux lettres inactive. Cela empêche la suppression définitive des éléments provenant de la boîte aux lettres inactive après leur restauration dans la boîte aux lettres cible.
+- **Utilisez une conservation pour litige ou une stratégie de rétention Microsoft 365 pour conserver le contenu de boîte aux lettres inactive.** Si vous souhaitez conserver l’état d’une boîte aux lettres inactive après sa restauration, vous pouvez placer la boîte aux lettres cible en [conservation pour litige](https://go.microsoft.com/fwlink/?linkid=856286) ou appliquer une [stratégie de rétention Microsoft 365](retention-policies.md) avant de restaurer la boîte aux lettres inactive. Cela empêche la suppression définitive des éléments provenant de la boîte aux lettres inactive après leur restauration dans la boîte aux lettres cible.
 
 - **Activez le blocage de rétention pour la boîte aux lettres cible avant de restaurer une boîte aux lettres inactive.** Comme les éléments provenant d'une boîte aux lettres inactive peuvent être anciens, vous pouvez envisager d'activer le blocage de rétention pour la boîte aux lettres cible avant de restaurer une boîte aux lettres inactive. Lorsque vous placez une boîte aux lettres en blocage de rétention, la stratégie de rétention qui lui est affectée n'est pas traitée jusqu'à ce que le blocage de rétention soit supprimé ou jusqu'à ce que la période de blocage de rétention soit écoulée. Ainsi, le propriétaire de la boîte aux lettres cible dispose d'un certain temps pour gérer les anciens messages de la boîte aux lettres inactive. Sinon, la stratégie de rétention risque de supprimer d'anciens éléments (ou de déplacer des éléments vers la boîte aux lettres d'archivage, si elle est activée) qui ont expiré d'après les paramètres de rétention configurés pour la boîte aux lettres cible. Pour plus d’informations, consultez [la rubrique placer une boîte aux lettres sur le blocage de rétention dans Exchange Online](https://go.microsoft.com/fwlink/?linkid=856300).
 

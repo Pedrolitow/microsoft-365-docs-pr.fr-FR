@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Le gestionnaire de conformité Microsoft est un outil d’évaluation des risques gratuit basé sur un flux de travail dans le portail d’approbation de service Microsoft. Le gestionnaire de conformité vous permet de suivre, d’affecter et de vérifier les activités de conformité réglementaire liées aux services Cloud de Microsoft.
-ms.openlocfilehash: 7fd8e4e99edd976085cf9fd6fb3b9a0d88debf89
-ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
+ms.openlocfilehash: 31a56f7cba8bb8957d758ca2905853f26d1f8edf
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43141611"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632989"
 ---
 # <a name="microsoft-compliance-manager-preview"></a>Gestionnaire de conformité Microsoft (aperçu)
 
@@ -43,7 +43,7 @@ Avec le gestionnaire de conformité, votre organisation peut :
 - Produire des rapports Microsoft Excel détaillés pour documenter les activités de conformité effectuées par Microsoft et votre organisation pour les auditeurs, les organismes de réglementation et d’autres vérificateurs de conformité.
 
 > [!NOTE]
-> Les actions client fournies dans le gestionnaire de conformité sont des recommandations ; Il revient à votre organisation d’évaluer l’efficacité de ces recommandations dans son environnement réglementaire respectif avant la mise en œuvre. Les recommandations figurant dans le gestionnaire de conformité ne doivent pas être interprétées comme garantie de conformité.
+> Les actions client fournies dans le gestionnaire de conformité sont des recommandations ; Il revient à votre organisation d’évaluer l’efficacité de ces recommandations dans son environnement réglementaire respectif avant la mise en œuvre. Les recommandations du Gestionnaire de conformité ne doivent pas être interprétées comme des garanties de conformité.
 
 ## <a name="relationship-to-compliance-score"></a>Relation avec le score de conformité
 
@@ -52,7 +52,7 @@ Avec le gestionnaire de conformité, votre organisation peut :
 Le gestionnaire de conformité partage le même serveur principal avec le score de conformité. Lors de la phase d’aperçu public pour les deux outils, le gestionnaire de conformité est l’endroit où vous allez gérer vos évaluations et les implémentations de contrôles personnalisés. En savoir plus sur la [relation entre le score de conformité et le gestionnaire de conformité](compliance-score-release-notes.md#compliance-score-relationship-to-compliance-manager).
   
 > [!IMPORTANT]
-> Le score de conformité n’exprime pas une mesure absolue de la conformité de l’organisation avec une norme ou réglementation particulière. Elle exprime la mesure dans laquelle vous avez adopté des contrôles qui peuvent réduire les risques pour les données personnelles et la confidentialité individuelle. Aucun service ne peut garantir la conformité avec une norme ou une réglementation, et le score de conformité ne doit pas être interprété comme une garantie de quelque façon que ce soit.
+> Le score de conformité n’est pas une mesure absolue de la conformité de l’organisation par rapport à une norme ou réglementation particulière. Il exprime le degré d’adoption des contrôles permettant de réduire les risques auxquels sont exposés les données à caractère personnel et la confidentialité individuelle. Aucun service ne peut garantir la conformité avec une norme ou une réglementation, et le score de conformité ne doit pas être interprété comme une garantie de quelque façon que ce soit.
 
 ## <a name="compliance-manager-components"></a>Composants du gestionnaire de conformité
 
@@ -62,7 +62,7 @@ Le diagramme illustre les relations entre les principaux composants du gestionna
 
 ![Relations dans le gestionnaire de conformité version 3](../media/compliance-manager-relationships.png)
 
-## <a name="groups"></a>Groups
+## <a name="groups"></a>Groupes
 
 Les [groupes](working-with-compliance-manager.md#groups) sont des conteneurs qui vous permettent d’organiser des évaluations et de partager des informations communes et des tâches de flux de travail entre les évaluations qui ont le même ou les mêmes contrôles gérés par le client. Lorsque deux évaluations différentes dans le même groupe partagent le contrôle géré par le client, l’exécution des détails de l’implémentation, des tests et de l’état du contrôle est automatiquement synchronisée avec le même contrôle dans n’importe quelle autre évaluation dans le groupe. Cette opération unifie les éléments d’action attribués pour chaque contrôle au sein du groupe et réduit le travail de duplication. Vous pouvez également choisir d’utiliser des groupes pour organiser. Évaluations par année, zone, norme de conformité ou autres groupements pour faciliter l’organisation de votre travail de conformité.
 

@@ -1,5 +1,5 @@
 ---
-title: Définir des règles de flux de courrier pour le chiffrement du courriers dans Office 365
+title: Définir des règles de flux de messagerie pour chiffrer les messages électroniques
 f1.keywords:
 - NOCSH
 ms.author: krowley
@@ -16,16 +16,16 @@ ms.assetid: 9b7daf19-d5f2-415b-bc43-a0f5f4a585e8
 ms.collection:
 - M365-security-compliance
 description: Les administrateurs peuvent apprendre à créer des règles de flux de messagerie (règles de transport) pour chiffrer et déchiffrer des messages à l’aide du chiffrement de messages Office 365.
-ms.openlocfilehash: 80bdd479ec09f0ecefd2758e2b8012a1a7351d6c
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 063c3cf5d33e03e7e0c456a6937fee57451ea709
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42075871"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632979"
 ---
-# <a name="define-mail-flow-rules-to-encrypt-email-messages-in-office-365"></a>Définir des règles de flux de courrier pour le chiffrement du courriers dans Office 365
+# <a name="define-mail-flow-rules-to-encrypt-email-messages"></a>Définir des règles de flux de messagerie pour chiffrer les messages électroniques
 
-En tant qu’administrateur général Office 365, vous pouvez créer des règles de flux de messagerie (également appelées règles de transport) pour protéger les messages électroniques que vous envoyez et recevez. Vous pouvez définir des règles pour chiffrer les messages électroniques sortants et supprimer le chiffrement des messages chiffrés provenant de votre organisation ou des réponses aux messages chiffrés envoyés à partir de votre organisation. Vous pouvez utiliser le centre d’administration Exchange ou Exchange Online PowerShell pour créer ces règles. En plus des règles de chiffrement globales, vous pouvez également choisir d’activer ou de désactiver des options de chiffrement des messages individuelles pour les utilisateurs finaux.
+En tant qu’administrateur général, vous pouvez créer des règles de flux de messagerie (également appelées règles de transport) pour protéger les messages électroniques que vous envoyez et recevez. Vous pouvez définir des règles pour chiffrer les messages électroniques sortants et supprimer le chiffrement des messages chiffrés provenant de votre organisation ou des réponses aux messages chiffrés envoyés à partir de votre organisation. Vous pouvez utiliser le centre d’administration Exchange ou Exchange Online PowerShell pour créer ces règles. En plus des règles de chiffrement globales, vous pouvez également choisir d’activer ou de désactiver des options de chiffrement des messages individuelles pour les utilisateurs finaux.
 
 Vous ne pouvez pas chiffrer les messages entrants provenant d’expéditeurs extérieurs à votre organisation.
 
@@ -82,7 +82,7 @@ Vous pouvez définir des règles de flux de messagerie pour déclencher le chiff
 
 4. Dans le CAE, accédez à **Flux de messagerie** \> **Règles**.
 
-5. Dans la liste des règles de flux de messagerie, sélectionnez la règle que vous souhaitez modifier afin d’utiliser les nouvelles fonctionnalités de **** ![OME, puis](../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif)cliquez sur modifier l’icône modifier.
+5. Dans la liste des règles de flux de messagerie, sélectionnez la règle que vous souhaitez modifier afin d’utiliser les nouvelles fonctionnalités de **Edit** ![OME, puis](../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif)cliquez sur modifier l’icône modifier.
 
 6. Pour activer le chiffrement à l’aide des nouvelles fonctionnalités OME, dans **effectuer les opérations suivantes**, sélectionnez **modifier la sécurité des messages** , puis **appliquer le chiffrement de messages Office 365 et protection des droits**. Sélectionnez un modèle RMS dans la liste, choisissez **Enregistrer** , puis **OK**.
 
@@ -96,7 +96,7 @@ Vous pouvez définir des règles de flux de messagerie pour déclencher le chiff
 
 ## <a name="create-mail-flow-rules-for-office-365-message-encryption-without-the-new-capabilities"></a>Créer des règles de flux de messagerie pour le chiffrement de messages Office 365 sans les nouvelles fonctionnalités
 
-Si vous n’avez pas encore déplacé votre organisation Office 365 vers les nouvelles fonctionnalités OME, utilisez ces tâches pour définir des règles de flux de messagerie afin de chiffrer les messages pour votre organisation. Microsoft vous recommande de planifier la migration vers les nouvelles fonctionnalités de OME dès que cela est raisonnable pour votre organisation. Pour obtenir des instructions, consultez la rubrique [set up New Office 365 message Encryption Capabilities Built-Top of Azure information protection](set-up-new-message-encryption-capabilities.md).
+Si vous n’avez pas encore déplacé votre organisation vers les nouvelles fonctionnalités de OME, utilisez ces tâches pour définir des règles de flux de messagerie afin de chiffrer les messages pour votre organisation. Microsoft vous recommande de planifier la migration vers les nouvelles fonctionnalités de OME dès que cela est raisonnable pour votre organisation. Pour obtenir des instructions, consultez la rubrique [set up New Office 365 message Encryption Capabilities Built-Top of Azure information protection](set-up-new-message-encryption-capabilities.md).
 
 ### <a name="use-the-eac-to-create-a-mail-flow-rule-for-encrypting-email-messages-without-the-new-ome-capabilities"></a>Utiliser le centre d’administration Exchange pour créer une règle de flux de messagerie pour le chiffrement des messages électroniques sans les nouvelles fonctionnalités OME
 
@@ -134,7 +134,7 @@ Si vous n’avez pas encore déplacé votre organisation Office 365 vers les nou
 
 1. Connectez-vous à Exchange Online PowerShell. Pour plus d'informations, reportez-vous à [Connexion à Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).
 
-2. Créez une règle à l’aide de la cmdlet **New-TransportRule** et __ définissez le paramètre `$true`ApplyOME sur.
+2. Créez une règle à l’aide de la cmdlet **New-TransportRule** et _ApplyOME_ définissez le paramètre `$true`ApplyOME sur.
 
    Cet exemple requiert que tous les messages électroniques envoyés à DrToniRamos@hotmail.com doivent être chiffrés.
 
@@ -148,9 +148,9 @@ Si vous n’avez pas encore déplacé votre organisation Office 365 vers les nou
 
    - Le paramètre _SentTo_ spécifie les destinataires des messages (identifiés par nom, adresse de messagerie, nom unique, etc.). Dans cet exemple, le destinataire est identifié par l’adresse de messagerie « DrToniRamos@hotmail.com ».
 
-   - Le paramètre _SentToScope_ spécifie l’emplacement des destinataires du message. Dans cet exemple, la boîte aux lettres du destinataire est dans Hotmail et ne fait pas partie de l’organisation Office 365, `NotInOrganization` la valeur est donc utilisée.
+   - Le paramètre _SentToScope_ spécifie l’emplacement des destinataires du message. Dans cet exemple, la boîte aux lettres du destinataire est dans Hotmail et ne fait pas partie de l’organisation, `NotInOrganization` la valeur est donc utilisée.
 
-   Pour obtenir des informations détaillées sur la syntaxe et les paramètres, consultez la rubrique [New-TransportRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/New-TransportRule).
+   Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [New-TransportRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/New-TransportRule).
 
 ### <a name="remove-encryption-from-email-replies-encrypted-without-the-new-ome-capabilities"></a>Supprimer le chiffrement des réponses de messagerie chiffrées sans les nouvelles fonctionnalités OME
 
@@ -172,15 +172,15 @@ Lorsque vos utilisateurs de messagerie envoient des messages chiffrés, les dest
 
 7. Dans **effectuer les opérations suivantes**, sélectionnez **modifier la sécurité** \> **des messages pour supprimer la version précédente de OME**.
 
-8. Cliquez sur **Enregistrer**.
+8. Sélectionnez **Enregistrer**.
 
 #### <a name="use-exchange-online-powershell-to-create-a-rule-to-remove-encryption-from-email-replies-encrypted-without-the-new-ome-capabilities"></a>Utiliser Exchange Online PowerShell pour créer une règle afin de supprimer le chiffrement des réponses de messagerie chiffrées sans les nouvelles fonctionnalités OME
 
 1. Connectez-vous à Exchange Online PowerShell. Pour plus d'informations, reportez-vous à [Connexion à Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).
 
-2. Créez une règle à l’aide de la cmdlet **New-TransportRule** et __ définissez le paramètre `$true`RemoveOME sur.
+2. Créez une règle à l’aide de la cmdlet **New-TransportRule** et _RemoveOME_ définissez le paramètre `$true`RemoveOME sur.
 
-   Cet exemple supprime le chiffrement de tous les messages envoyés à des destinataires dans l’organisation Office 365.
+   Cet exemple supprime le chiffrement de tous les messages envoyés à des destinataires au sein de l’organisation.
 
    ```powershell
    New-TransportRule -Name "Remove encryption from incoming mail" -SentToScope "InOrganization" -RemoveOME $true
@@ -198,7 +198,7 @@ Lorsque vos utilisateurs de messagerie envoient des messages chiffrés, les dest
 
      - L’adresse de messagerie du destinataire est dans un domaine accepté configuré comme un domaine faisant autorité ou un domaine de relais interne dans votre organisation, _et_ le message a été envoyé ou reçu via une connexion authentifiée.
 
-Pour obtenir des informations détaillées sur la syntaxe et les paramètres, consultez la rubrique [New-TransportRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/New-TransportRule).
+Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [New-TransportRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/New-TransportRule).
 
 ## <a name="related-topics"></a>Voir aussi
 

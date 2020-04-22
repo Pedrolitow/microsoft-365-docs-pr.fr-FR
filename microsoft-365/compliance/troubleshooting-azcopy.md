@@ -16,24 +16,24 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 3153fc92cfae6e2feba122cc895e787c9b573ef7
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: f8b72112feea4af0a33ef3a0cc12005c8deea195
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42080895"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637514"
 ---
 # <a name="troubleshoot-azcopy-in-advanced-ediscovery"></a>Résolution des problèmes liés à AzCopy dans Advanced eDiscovery
 
-Lors du chargement de données ou de documents autres que Office 365 pour la correction d’erreur dans Advanced eDiscovery, l’interface utilisateur fournit une commande AzCopy Azure qui contient les paramètres de l’emplacement où les fichiers que vous souhaitez télécharger sont stockés et le stockage Azure emplacement vers lequel les fichiers seront téléchargés. Pour télécharger vos documents, copiez cette commande, puis exécutez-la dans une invite de commandes sur votre ordinateur local.  La capture d’écran suivante illustre un exemple de commande AzCopy :
+Lors du chargement de données ou de documents non-Microsoft 365 pour la correction d’erreur dans Advanced eDiscovery, l’interface utilisateur fournit une commande AzCopy Azure qui contient les paramètres de l’emplacement où les fichiers que vous souhaitez télécharger sont stockés et l’emplacement de stockage Azure dans lequel les fichiers seront téléchargés. Pour télécharger vos documents, copiez cette commande, puis exécutez-la dans une invite de commandes sur votre ordinateur local.  La capture d’écran suivante illustre un exemple de commande AzCopy :
 
-![Télécharger des fichiers non-Office 365](../media/46ba68f6-af11-4e70-bb91-5fc7973516e3.png)
+![Télécharger des fichiers non-Microsoft 365](../media/46ba68f6-af11-4e70-bb91-5fc7973516e3.png)
 
 En règle générale, la commande fournie fonctionne lorsque vous l’exécutez. Toutefois, il peut arriver que la commande affichée ne s’exécute pas correctement. Voici quelques raisons possibles.
 
 ## <a name="the-supported-version-of-azcopy-isnt-installed-on-the-local-computer"></a>La version prise en charge d’AzCopy n’est pas installée sur l’ordinateur local
 
-Pour le moment, vous devez utiliser AzCopy v 8.1 pour charger des données autres que Office 365 dans Advanced eDiscovery. La commande AzCopy affichée sur la page **Télécharger les fichiers** indiquée dans la capture d’écran précédente renvoie une erreur si vous n’utilisez pas AzCopy v 8.1. Pour installer cette version, voir [transférer des données avec le AzCopy v 8.1 sous Windows](https://docs.microsoft.com/previous-versions/azure/storage/storage-use-azcopy).
+Pour le moment, vous devez utiliser AzCopy v 8.1 pour charger des données non-Microsoft 365 dans Advanced eDiscovery. La commande AzCopy affichée sur la page **Télécharger les fichiers** indiquée dans la capture d’écran précédente renvoie une erreur si vous n’utilisez pas AzCopy v 8.1. Pour installer cette version, voir [transférer des données avec le AzCopy v 8.1 sous Windows](https://docs.microsoft.com/previous-versions/azure/storage/storage-use-azcopy).
 
 ## <a name="azcopy-isnt-installed-on-the-local-computer-or-its-not-installed-in-the-default-location"></a>AzCopy n’est pas installé sur l’ordinateur local ou il n’est pas installé à l’emplacement par défaut
 

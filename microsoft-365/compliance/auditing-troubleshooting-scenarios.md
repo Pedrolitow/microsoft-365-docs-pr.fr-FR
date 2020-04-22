@@ -1,5 +1,5 @@
 ---
-title: Effectuer des recherches dans le journal d’audit Office 365 pour résoudre les scénarios courants
+title: Effectuer des recherches dans le journal d’audit pour résoudre des scénarios courants
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -15,17 +15,17 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-description: Vous pouvez utiliser l’outil de recherche de journal d’audit Office 365 pour vous aider à résoudre les problèmes courants, tels que l’enquête sur un compte compromis, la personne qui configure le transfert de courrier pour une boîte aux lettres ou la manière dont un utilisateur externe a réussi à se connecter à votre organisation.
-ms.openlocfilehash: b18db4c24548c929043d79adb73e11b46be6ddb8
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+description: Vous pouvez utiliser l’outil de recherche du journal d’audit pour vous aider à résoudre les problèmes courants, tels que l’enquête sur un compte compromis, la personne qui a configuré le transfert de courrier pour une boîte aux lettres ou la manière dont un utilisateur externe a réussi à se connecter à votre organisation.
+ms.openlocfilehash: 8eaff1fa3eea6a0fa60edcfd43f4f2aedb5a5ffc
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42634482"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636382"
 ---
-# <a name="search-the-office-365-audit-log-to-investigate-common-support-issues"></a>Rechercher dans le journal d’audit Office 365 pour identifier les problèmes de prise en charge courants
+# <a name="search-the-audit-log-to-investigate-common-support-issues"></a>Recherche du journal d’audit pour examiner les problèmes de prise en charge courants
 
-Cet article explique comment utiliser l’outil de recherche de journal d’audit Office 365 pour vous aider à identifier les problèmes de prise en charge courants. Cela inclut l’utilisation du journal d’audit pour :
+Cet article explique comment utiliser l’outil de recherche du journal d’audit pour vous aider à identifier les problèmes de prise en charge courants. Cela inclut l’utilisation du journal d’audit pour :
 
 - Rechercher l’adresse IP de l’ordinateur utilisé pour accéder à un compte compromis
 - Déterminer qui a configuré le transfert de courrier pour une boîte aux lettres
@@ -33,13 +33,13 @@ Cet article explique comment utiliser l’outil de recherche de journal d’audi
 - Déterminer si un utilisateur a créé une règle de boîte de réception
 - Identifier la raison pour laquelle un utilisateur a réussi à se connecter à l’extérieur de votre organisation
 
-## <a name="using-the-office-365-audit-log-search-tool"></a>Utilisation de l’outil de recherche de journal d’audit Office 365
+## <a name="using-the-audit-log-search-tool"></a>Utilisation de l’outil de recherche de journal d’audit
 
-Chacun des scénarios de dépannage décrits dans cet article est basé sur l’utilisation de l’outil de recherche de journal d’audit dans le centre de sécurité et conformité Office 365. Cette section répertorie les autorisations requises pour effectuer des recherches dans le journal d’audit et décrit les étapes permettant d’accéder aux recherches dans le journal d’audit et de les exécuter. Chaque section de scénario explique comment configurer une requête de recherche de journal d’audit et ce qu’il faut rechercher dans les informations détaillées des enregistrements d’audit qui correspondent aux critères de recherche.
+Chacun des scénarios de dépannage décrits dans cet article est basé sur l’utilisation de l’outil de recherche de journal d’audit dans le centre de conformité & Compliance Center. Cette section répertorie les autorisations requises pour effectuer des recherches dans le journal d’audit et décrit les étapes permettant d’accéder aux recherches dans le journal d’audit et de les exécuter. Chaque section de scénario explique comment configurer une requête de recherche de journal d’audit et ce qu’il faut rechercher dans les informations détaillées des enregistrements d’audit qui correspondent aux critères de recherche.
 
 ### <a name="permissions-required-to-use-the-audit-log-search-tool"></a>Autorisations requises pour utiliser l’outil de recherche de journal d’audit
 
-Vous devez disposer du rôle journaux d’audit en affichage seul ou journaux d’audit dans Exchange Online pour effectuer des recherches dans le journal d’audit Office 365. Par défaut, ces rôles sont affectés aux groupes de rôles Gestion de la conformité et Gestion de l’organisation sur la page **Autorisations** dans le Centre d’administration Exchange. Les administrateurs globaux dans Office 365 et Microsoft 365 sont automatiquement ajoutés en tant que membres du groupe de rôles gestion de l’organisation dans Exchange Online. Pour plus d’informations, voir [Gérer les groupes de rôles dans Exchange Online](https://go.microsoft.com/fwlink/p/?LinkID=730688).
+Vous devez disposer du rôle journaux d’audit en affichage seul ou journaux d’audit dans Exchange Online pour effectuer des recherches dans le journal d’audit. Par défaut, ces rôles sont affectés aux groupes de rôles Gestion de la conformité et Gestion de l’organisation sur la page **Autorisations** dans le Centre d’administration Exchange. Les administrateurs globaux dans Office 365 et Microsoft 365 sont automatiquement ajoutés en tant que membres du groupe de rôles gestion de l’organisation dans Exchange Online. Pour plus d’informations, voir [Gérer les groupes de rôles dans Exchange Online](https://go.microsoft.com/fwlink/p/?LinkID=730688).
 
 ### <a name="running-audit-log-searches"></a>Exécution de recherches dans le journal d’audit
 
@@ -80,7 +80,7 @@ Voici comment configurer une requête de recherche de journal d’audit pour ce 
 **Activités :** Si cela s’applique à votre cas, sélectionnez une activité spécifique à rechercher. Pour résoudre les problèmes de comptes compromis, sélectionnez l’activité **connexion à la boîte aux lettres** sous **activités des boîtes aux lettres Exchange**. Renvoie les enregistrements d’audit indiquant l’adresse IP utilisée lors de la connexion à la boîte aux lettres. Dans le cas contraire, laissez ce champ vide pour renvoyer les enregistrements d’audit de toutes les activités. 
 
 > [!TIP]
-> Le fait de laisser ce champ vide renverra les activités **UserLoggedIn** , qui est une activité Azure Active Directory indiquant qu’une personne s’est connectée à un compte d’utilisateur Office 365. Utilisez le filtrage dans les résultats de la recherche pour afficher les enregistrements d’audit **UserLoggedIn** .
+> Le fait de laisser ce champ vide renverra les activités **UserLoggedIn** , qui est une activité Azure Active Directory indiquant qu’une personne s’est connectée à un compte d’utilisateur. Utilisez le filtrage dans les résultats de la recherche pour afficher les enregistrements d’audit **UserLoggedIn** .
 
 **Date de début** et **Date de fin :** sélectionnez une plage de dates applicable à votre enquête.
 
@@ -198,9 +198,9 @@ d. Le champ **userid** indique l’utilisateur qui a créé la règle de boîte 
 
 ## <a name="investigate-why-there-was-a-successful-login-by-a-user-outside-your-organization"></a>Identifier la raison pour laquelle un utilisateur a réussi à se connecter à l’extérieur de votre organisation
 
-Lors de l’examen des enregistrements d’audit dans le journal d’audit Office 365, vous pouvez voir des enregistrements indiquant qu’un utilisateur externe a été authentifié par Azure Active Directory et a réussi à se connecter à votre organisation. Par exemple, un administrateur dans contoso.onmicrosoft.com peut voir un enregistrement d’audit indiquant qu’un utilisateur d’une autre organisation Office 365 (par exemple, fabrikam.onmicrosoft.com) a réussi à se connecter à contoso.onmicrosoft.com. De même, vous pouvez voir des enregistrements d’audit qui indiquent que les utilisateurs disposant d’un compte Microsoft (MSA), tels qu’un Outlook.com ou Live.com, ont réussi à se connecter à votre organisation. Dans ce cas, l’activité auditée est l' **utilisateur connecté**. 
+Lors de l’examen des enregistrements d’audit dans le journal d’audit, vous pouvez voir des enregistrements indiquant qu’un utilisateur externe a été authentifié par Azure Active Directory et a réussi à se connecter à votre organisation. Par exemple, un administrateur dans contoso.onmicrosoft.com peut voir un enregistrement d’audit indiquant qu’un utilisateur d’une autre organisation (par exemple, fabrikam.onmicrosoft.com) a réussi à se connecter à contoso.onmicrosoft.com. De même, vous pouvez voir des enregistrements d’audit qui indiquent que les utilisateurs disposant d’un compte Microsoft (MSA), tels qu’un Outlook.com ou Live.com, ont réussi à se connecter à votre organisation. Dans ce cas, l’activité auditée est l' **utilisateur connecté**. 
 
-Il s'agit du comportement par défaut. Azure Active Directory (Azure AD), le service d’annuaire dans Office 365, autorise une *authentification directe* lorsqu’un utilisateur externe tente d’accéder à un site SharePoint ou à un emplacement OneDrive de votre organisation. Lorsque l’utilisateur externe tente de le faire, il est invité à entrer ses informations d’identification Office 365. Azure AD utilise les informations d’identification pour authentifier l’utilisateur, ce qui signifie qu’Azure AD vérifie que l’utilisateur est bien ce qu’il dit. L’indication de la connexion réussie dans l’enregistrement d’audit est le résultat de l’authentification de l’utilisateur par Azure AD. La connexion réussie ne signifie pas que l’utilisateur a pu accéder à des ressources ou effectuer d’autres actions dans votre organisation. Il indique uniquement que l’utilisateur a été authentifié par Azure AD. Pour qu’un utilisateur direct puisse accéder aux ressources SharePoint ou OneDrive, un utilisateur de votre organisation doit partager explicitement une ressource avec l’utilisateur externe en lui envoyant une invitation de partage ou un lien de partage anonyme. 
+Il s'agit du comportement par défaut. Azure Active Directory (Azure AD), le service d’annuaire, autorise une opération appelée *authentification directe* lorsqu’un utilisateur externe tente d’accéder à un site SharePoint ou à un emplacement OneDrive de votre organisation. Lorsque l’utilisateur externe tente de le faire, il est invité à entrer ses informations d’identification. Azure AD utilise les informations d’identification pour authentifier l’utilisateur, ce qui signifie qu’Azure AD vérifie que l’utilisateur est bien ce qu’il dit. L’indication de la connexion réussie dans l’enregistrement d’audit est le résultat de l’authentification de l’utilisateur par Azure AD. La connexion réussie ne signifie pas que l’utilisateur a pu accéder à des ressources ou effectuer d’autres actions dans votre organisation. Il indique uniquement que l’utilisateur a été authentifié par Azure AD. Pour qu’un utilisateur direct puisse accéder aux ressources SharePoint ou OneDrive, un utilisateur de votre organisation doit partager explicitement une ressource avec l’utilisateur externe en lui envoyant une invitation de partage ou un lien de partage anonyme. 
 
 > [!NOTE]
 > Azure AD autorise l’authentification directe uniquement pour les *applications tierces*, telles que SharePoint Online et OneDrive entreprise. Il n’est pas autorisé pour d’autres applications tierces.
@@ -225,7 +225,7 @@ Voici deux exemples de scénarios permettant à un utilisateur de se **connecter
 
   - Un utilisateur disposant d’un compte Microsoft (tel que SaraD@outlook.com) a tenté d’accéder à un document dans un compte OneDrive entreprise dans fourthcoffee.onmicrosoft.com et il n’existe pas de compte d’utilisateur invité correspondant pour SaraD@outlook.com dans fourthcoffee.onmicrosoft.com.
 
-  - Un utilisateur disposant d’un compte professionnel ou scolaire dans une organisation Office 365 (par exemple pilarp@fabrikam.onmicrosoft.com) a tenté d’accéder à un site SharePoint dans contoso.onmicrosoft.com et il n’existe pas de compte d’utilisateur invité correspondant pour pilarp@fabrikam.com dans contoso.onmicrosoft.com.
+  - Un utilisateur disposant d’un compte professionnel ou scolaire dans une organisation (par exemple, pilarp@fabrikam.onmicrosoft.com) a tenté d’accéder à un site SharePoint dans contoso.onmicrosoft.com et il n’existe pas de compte d’utilisateur invité correspondant pour pilarp@fabrikam.com dans contoso.onmicrosoft.com.
 
 
 ### <a name="tips-for-investigating-successful-logins-resulting-from-pass-through-authentication"></a>Conseils pour l’étude des connexions réussies résultant de l’authentification directe
@@ -236,6 +236,6 @@ Voici deux exemples de scénarios permettant à un utilisateur de se **connecter
 
     En plus des activités de l' **utilisateur connecté** , d’autres enregistrements d’audit peuvent être renvoyés, qui indiquent qu’un utilisateur de votre organisation a partagé des ressources avec l’utilisateur externe et si l’utilisateur externe a accédé à un document qui lui a été partagé.
 
-- Recherchez les activités de partage SharePoint qui indiquent qu’un fichier a été partagé avec l’utilisateur externe identifié par un **utilisateur connecté à** un enregistrement d’audit. Pour plus d’informations, voir [Utiliser l’audit du partage dans le journal d’audit d’Office 365](use-sharing-auditing.md).
+- Recherchez les activités de partage SharePoint qui indiquent qu’un fichier a été partagé avec l’utilisateur externe identifié par un **utilisateur connecté à** un enregistrement d’audit. Pour plus d’informations, reportez-vous à [la rubrique utiliser l’audit de partage dans le journal d’audit](use-sharing-auditing.md).
 
 - Exportez les résultats de recherche du journal d’audit qui contiennent des enregistrements pertinents pour votre enquête afin que vous puissiez utiliser Excel pour rechercher d’autres activités liées à l’utilisateur externe. Pour plus d’informations, consultez la rubrique [Exporter, configurer et afficher les enregistrements du journal d’audit](export-view-audit-log-records.md).

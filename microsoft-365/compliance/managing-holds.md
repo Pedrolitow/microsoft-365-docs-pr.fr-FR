@@ -18,16 +18,16 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: c36a9865757a76708ac9e7385a2a9ef3e977050e
-ms.sourcegitcommit: 09c3e2f3129c5e43cd8420cccd0676ff3a29a355
+ms.openlocfilehash: 1334a90dc2e98e720aa9da392bd558adb34b37b2
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "43521464"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632959"
 ---
 # <a name="manage-holds-in-advanced-ediscovery"></a>Gérer les suspensions dans Advanced eDiscovery
 
-Vous pouvez utiliser un cas avancé de découverte électronique pour créer des suspensions afin de conserver le contenu susceptible de concerner votre cas. À l’aide des fonctionnalités de mise en attente avancée de eDiscovery, vous pouvez placer des suspensions sur des dépositaires et leurs sources de données. En outre, vous pouvez placer un blocage non privative de direction sur les boîtes aux lettres et les sites OneDrive entreprise. Vous pouvez également placer une suspension sur la boîte aux lettres de groupe, le site SharePoint et le site OneDrive entreprise pour un groupe Office 365. De même, vous pouvez placer une conservation sur la boîte aux lettres et le site associés à Microsoft Teams. Lorsque vous placez des emplacements de contenu en conservation, le contenu est conservé jusqu’à ce que vous libériez le dépositaire, que vous supprimiez un emplacement de données spécifique ou que vous supprimiez entièrement la stratégie de blocage.
+Vous pouvez utiliser un cas avancé de découverte électronique pour créer des suspensions afin de conserver le contenu susceptible de concerner votre cas. À l’aide des fonctionnalités de mise en attente avancée de eDiscovery, vous pouvez placer des suspensions sur des dépositaires et leurs sources de données. En outre, vous pouvez placer un blocage non privative de direction sur les boîtes aux lettres et les sites OneDrive entreprise. Vous pouvez également placer une suspension sur la boîte aux lettres de groupe, le site SharePoint et le site OneDrive entreprise pour un groupe Microsoft 365. De même, vous pouvez placer une conservation sur la boîte aux lettres et le site associés à Microsoft Teams. Lorsque vous placez des emplacements de contenu en conservation, le contenu est conservé jusqu’à ce que vous libériez le dépositaire, que vous supprimiez un emplacement de données spécifique ou que vous supprimiez entièrement la stratégie de blocage.
 
 ## <a name="manage-custodian-based-holds"></a>Gérer les conservations basées sur des dépositaires
 
@@ -69,17 +69,17 @@ Pour créer un blocage non privative de direction pour un cas avancé de découv
   
 8. Choisissez les emplacements de contenu que vous souhaitez mettre en attente. Vous pouvez placer les boîtes aux lettres, les sites et les dossiers publics en conservation.
 
-   a. **E-mail Exchange** -cliquez sur **choisir les utilisateurs, les groupes ou les équipes** , puis cliquez à nouveau sur **choisir les utilisateurs, les groupes ou les équipes** pour spécifier les boîtes aux lettres à mettre en attente. Utilisez la zone de recherche pour rechercher des boîtes aux lettres utilisateur et des groupes de distribution (pour mettre en attente les boîtes aux lettres des membres du groupe) à mettre en attente. Vous pouvez également placer une conservation sur la boîte aux lettres associée pour un groupe Office 365 ou une équipe Microsoft. Activez la case à cocher utilisateur, groupe, équipe, cliquez sur **choisir**, puis sur **Terminer**.
+   a. **E-mail Exchange** -cliquez sur **choisir les utilisateurs, les groupes ou les équipes** , puis cliquez à nouveau sur **choisir les utilisateurs, les groupes ou les équipes** pour spécifier les boîtes aux lettres à mettre en attente. Utilisez la zone de recherche pour rechercher des boîtes aux lettres utilisateur et des groupes de distribution (pour mettre en attente les boîtes aux lettres des membres du groupe) à mettre en attente. Vous pouvez également placer une conservation sur la boîte aux lettres associée pour un groupe Microsoft 365 ou une équipe Microsoft. Activez la case à cocher utilisateur, groupe, équipe, cliquez sur **choisir**, puis sur **Terminer**.
  
     > [!NOTE]
     > Lorsque vous cliquez sur **choisir les utilisateurs, les groupes ou les équipes** pour spécifier les boîtes aux lettres à mettre en attente, le sélecteur de boîtes aux lettres affiché est vide. Il s’agit d’une conception qui améliore les performances. Pour ajouter des personnes à cette liste, tapez un nom (un minimum de 3 caractères) dans la zone de recherche.
 
-    b. **Sites SharePoint** : cliquez sur **choisir des sites** , puis cliquez à nouveau sur choisir les **sites** pour spécifier les sites SharePoint et OneDrive entreprise à mettre en attente. Saisissez l’URL de chaque site à placer en conservation. Vous pouvez également ajouter l’URL du site SharePoint pour un groupe Microsoft Team ou Office 365. Cliquez sur **choisir**, puis sur **Terminer**.
+    b. **Sites SharePoint** : cliquez sur **choisir des sites** , puis cliquez à nouveau sur choisir les **sites** pour spécifier les sites SharePoint et OneDrive entreprise à mettre en attente. Saisissez l’URL de chaque site à placer en conservation. Vous pouvez également ajouter l’URL du site SharePoint pour un groupe Microsoft 365 ou une équipe Microsoft. Cliquez sur **choisir**, puis sur **Terminer**.
     
-     Pour obtenir des conseils sur la mise en attente de groupes Microsoft teams et Office 365, consultez la section [placer un blocage sur les groupes Microsoft teams et office 365](#place-a-hold-on-microsoft-teams-and-office-365-groups) .
+     Consultez la section **Forum aux questions** pour obtenir des conseils sur la mise en attente des groupes Microsoft 365 et de Microsoft Teams.
 
     > [!NOTE]
-    > L’URL du compte OneDrive d’un utilisateur comprend le nom d’utilisateur principal (UPN) (par exemple `https://alpinehouse-my.sharepoint.com/personal/sarad_alpinehouse_onmicrosoft_com`,). Dans les rares cas où le nom UPN d’une personne est modifié, son URL OneDrive est également modifiée pour intégrer le nouvel UPN. Si le compte OneDrive d’un utilisateur fait partie d’une conservation non privative de personnes et que son UPN est modifié, vous devez mettre à jour la conservation et pointer vers la nouvelle URL OneDrive. Pour plus d’informations, consultez la rubrique relative à [l’impact des modifications UPN sur l’URL OneDrive](https://docs.microsoft.com/onedrive/upn-changes).
+    > L’URL du compte OneDrive d’un utilisateur comprend le nom d’utilisateur principal (UPN) (par exemple `https://alpinehouse-my.sharepoint.com/personal/sarad_alpinehouse_onmicrosoft_com`,). Dans les rares cas où le nom UPN d’une personne est modifié, son URL OneDrive est également modifiée pour intégrer le nouvel UPN. Si le compte OneDrive d’un utilisateur fait partie d’une conservation non privative de personnes et que son UPN est modifié, vous devez mettre à jour la conservation et pointer vers la nouvelle URL OneDrive. Pour plus d’informations, voir [Comment les modifications du nom d’utilisateur principal affectent l’URL OneDrive](https://docs.microsoft.com/onedrive/upn-changes).
 
      c. **Dossiers publics Exchange** : déplacez le bouton bascule vers la position tout pour mettre en attente tous les dossiers publics de votre organisation Exchange Online. Notez que vous ne pouvez pas choisir des dossiers publics spécifiques à mettre en attente. Laissez le commutateur Toggle défini sur **None** si vous ne souhaitez pas mettre de conservation sur les dossiers publics.
 
@@ -119,11 +119,10 @@ Gardez les points suivants à l’esprit concernant les statistiques de conserva
 
 Microsoft teams est basé sur les groupes Office 365. Par conséquent, leur mise en attente dans Advanced eDiscovery est très similaire. 
 
-Gardez les points suivants à l’esprit lorsque vous importez des groupes Office 365 et Microsoft teams en conservation.
-
-- Pour placer le contenu situé dans les groupes Office 365 et Microsoft teams en conservation, vous devez spécifier la boîte aux lettres et le site SharePoint associés à un groupe ou une équipe.
+- **Comment puis-je mapper un site Microsoft 365 supplémentaire ou Microsoft teams à un dépositaire ? Qu’en est-il de la mise en place d’une absence privative de rôle sur les groupes Microsoft 365 et Microsoft teams ?** Microsoft teams est basé sur les groupes Microsoft 365. Par conséquent, leur mise en attente dans un cas eDiscovery est très similaire. Gardez les points suivants à l’esprit lorsque vous placez des groupes Microsoft 365 et Microsoft teams en conservation.
+  - Pour placer le contenu situé dans les groupes Microsoft 365 et Microsoft teams en conservation, vous devez spécifier la boîte aux lettres et le site SharePoint associés à un groupe ou une équipe.
   
-- Exécutez la cmdlet **Get-UnifiedGroup** dans Exchange Online pour afficher les propriétés d’un groupe ou d’une équipe microsoft Office 365. Il s’agit d’un moyen efficace pour obtenir l’URL du site associé à un groupe Office 365 ou une équipe Microsoft. Par exemple, la commande suivante affiche les propriétés sélectionnées d’un groupe Office365 nommé Senior Leadership Team :
+  - Exécutez la cmdlet **Get-UnifiedGroup** dans Exchange Online pour afficher les propriétés d’un groupe ou d’une équipe Microsoft 365. Il s’agit d’un moyen efficace pour obtenir l’URL du site associé à un groupe Microsoft 365 ou une équipe Microsoft. Par exemple, la commande suivante affiche les propriétés sélectionnées pour un groupe Microsoft 365 nommé équipe leadership senior :
 
 
     ```text
@@ -137,9 +136,9 @@ Gardez les points suivants à l’esprit lorsque vous importez des groupes Offic
     > [!NOTE]
     > Pour exécuter l'applet de commande Get-UnifiedGroup, vous devez avoir le rôle de destinataires en affichage seul dans Exchange Online ou être membre d’un groupe de rôles affecté du rôle de destinataires en affichage seul.
 
-- Lors de la recherche dans la boîte aux lettres d’un utilisateur, le groupe Office 365 ou l’équipe Microsoft dont l’utilisateur est membre ne feront pas l’objet d’une recherche. De même, lorsque vous placez un groupe Office 365 ou un blocage d’équipe Microsoft, seule la boîte aux lettres de groupe et le site de groupe sont mis en attente ; les boîtes aux lettres et les sites OneDrive entreprise des membres du groupe ne sont pas mis en attente, sauf si vous les ajoutez explicitement en tant que dépositaires ou que leurs sources de données ne sont pas conservées. Par conséquent, si vous devez placer un groupe Office 365 ou Microsoft Team en conservation pour un dépositaire spécifique, envisagez de mapper le site de groupe et la boîte aux lettres de groupe au dépositaire (voir Managing dépositaires in Advanced eDiscovery). Si le groupe Office 365 ou l’équipe Microsoft n’est pas attribuable à un seul dépositaire, envisagez d’ajouter la source à une conservation non privatives de personnes. 
-
-- Pour obtenir la liste des membres d’un groupe ou d’une équipe Microsoft Office 365, vous pouvez afficher les propriétés de la page **groupes d' > d’accueil** dans le centre d’administration Microsoft 365. Vous pouvez également exécuter la commande suivante dans Exchange Online PowerShell :
+ - Lors de la recherche dans la boîte aux lettres d’un utilisateur, un groupe ou une équipe Microsoft 365 ou une équipe Microsoft dont l’utilisateur est membre ne sera pas recherché. De même, lorsque vous placez un groupe Microsoft 365 ou un blocage d’équipe Microsoft, seule la boîte aux lettres de groupe et le site de groupe sont mis en attente ; les boîtes aux lettres et les sites OneDrive entreprise des membres du groupe ne sont pas mis en attente, sauf si vous les ajoutez explicitement en tant que dépositaires ou que leurs sources de données ne sont pas conservées. Par conséquent, si vous devez placer un groupe ou une équipe Microsoft 365 en conservation pour un dépositaire spécifique, envisagez de mapper le site de groupe et la boîte aux lettres de groupe au dépositaire (voir Managing dépositaires in Advanced eDiscovery). Si le groupe ou l’équipe Microsoft 365 n’est pas attribuable à un seul dépositaire, envisagez d’ajouter la source à une conservation non privative de personnes. 
+ 
+ - Pour obtenir la liste des membres d’un groupe ou d’une équipe Microsoft 365, vous pouvez afficher les propriétés sur la page groupes d' > d’accueil dans le centre d’administration Microsoft 365. Vous pouvez également exécuter la commande suivante dans Exchange Online PowerShell :
 
    ```powershell
    Get-UnifiedGroupLinks <group or team name> -LinkType Members | FL DisplayName,PrimarySmtpAddress

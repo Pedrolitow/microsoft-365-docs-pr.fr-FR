@@ -17,17 +17,17 @@ ms.assetid: 7a29260d-2959-42aa-8916-feceff6ee51d
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
-description: En tant qu’administrateur général Office 365, vous pouvez appliquer la personnalisation de votre organisation aux messages électroniques chiffrés de votre organisation et au contenu du portail de chiffrement.
-ms.openlocfilehash: 5a3f5426fecd6ce5df6ace5b0080de33fb50e21f
-ms.sourcegitcommit: e695bcfc69203da5d3d96f3d6a891664a0e27ae2
+description: En tant qu’administrateur général, vous pouvez appliquer la personnalisation de votre organisation aux messages électroniques chiffrés de votre organisation et au contenu du portail de chiffrement.
+ms.openlocfilehash: 231d0bd1e49d0529b4dc15ec758ba63fe5f60092
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43106016"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632289"
 ---
 # <a name="add-your-organizations-brand-to-your-encrypted-messages"></a>Ajouter la marque de votre organisation à vos messages chiffrés
 
-En tant qu’administrateur Exchange Online ou Exchange Online Protection, vous pouvez appliquer votre marque de société pour personnaliser l’apparence des messages électroniques de chiffrement des messages Office 365 de votre organisation et le contenu du portail de chiffrement. À l’aide des applets de commande Windows PowerShell Get-OMEConfiguration et Set-OMEConfiguration, vous pouvez personnaliser les aspects suivants de l’expérience d’affichage pour les destinataires de messages électroniques chiffrés :
+En tant qu’administrateur Exchange Online ou Exchange Online Protection, vous pouvez appliquer la personnalisation de votre entreprise pour personnaliser l’apparence des messages électroniques de chiffrement des messages Microsoft 365 pour votre organisation et le contenu du portail de chiffrement. À l’aide des applets de commande Windows PowerShell Get-OMEConfiguration et Set-OMEConfiguration, vous pouvez personnaliser les aspects suivants de l’expérience d’affichage pour les destinataires de messages électroniques chiffrés :
   
 - Le texte d’introduction du message électronique contenant le message chiffré
 
@@ -59,7 +59,7 @@ Une fois que vous avez créé les modèles, vous pouvez les appliquer à des mes
 
 ## <a name="work-with-ome-branding-templates"></a>Utiliser des modèles de personnalisation OME
 
-Vous pouvez modifier plusieurs fonctionnalités dans un modèle de personnalisation. Vous pouvez modifier, mais pas supprimer, le modèle par défaut. Si vous disposez d’un chiffrement de messages avancé, vous pouvez également créer, modifier et supprimer des modèles personnalisés. Utilisez Windows PowerShell pour utiliser un modèle de personnalisation à la fois. Vous aurez besoin d’un compte professionnel ou scolaire disposant des autorisations d’administrateur général dans votre organisation Office 365 pour utiliser ces applets de commande.
+Vous pouvez modifier plusieurs fonctionnalités dans un modèle de personnalisation. Vous pouvez modifier, mais pas supprimer, le modèle par défaut. Si vous disposez d’un chiffrement de messages avancé, vous pouvez également créer, modifier et supprimer des modèles personnalisés. Utilisez Windows PowerShell pour utiliser un modèle de personnalisation à la fois. Vous aurez besoin d’un compte professionnel ou scolaire disposant des autorisations d’administrateur général dans votre organisation pour pouvoir utiliser ces applets de commande.
 
 - [Set-OMEConfiguration](https://docs.microsoft.com/powershell/module/exchange/encryption-and-certificates/set-omeconfiguration) -modifiez le modèle de personnalisation par défaut ou un modèle de personnalisation que vous avez créé.
 - [New-OMEConfiguration](https://docs.microsoft.com/powershell/module/exchange/encryption-and-certificates/new-omeconfiguration) -créer un modèle de personnalisation, le chiffrement de messages avancé uniquement.
@@ -69,7 +69,7 @@ Vous pouvez modifier plusieurs fonctionnalités dans un modèle de personnalisat
 
 Utilisez Windows PowerShell pour modifier un modèle de personnalisation à la fois. Si vous disposez d’un chiffrement de messages avancé, vous pouvez également créer, modifier et supprimer des modèles personnalisés.
 
-1. À l’aide d’un compte professionnel ou scolaire doté d’autorisations d’administrateur globales dans votre organisation Office 365, démarrez une session Windows PowerShell et connectez-vous à Exchange Online. Pour obtenir des instructions, voir [Connexion à Exchange Online PowerShell](https://aka.ms/exopowershell).
+1. À l’aide d’un compte professionnel ou scolaire disposant d’autorisations d’administrateur globales dans votre organisation, démarrez une session Windows PowerShell et connectez-vous à Exchange Online. Pour obtenir des instructions, voir [Connexion à Exchange Online PowerShell](https://aka.ms/exopowershell).
 
 2. Modifiez le modèle à l’aide de la cmdlet Set-OMEConfiguration comme décrit dans [Set-OMEConfiguration](https://docs.microsoft.com/powershell/module/exchange/encryption-and-certificates/Set-OMEConfiguration) ou utilisez le graphique et le tableau ci-dessous pour obtenir des instructions.
 
@@ -94,7 +94,7 @@ Si vous disposez d’Office 365 Advanced message Encryption, vous pouvez créer 
 
 Pour créer un modèle de personnalisation :
 
-1. À l’aide d’un compte professionnel ou scolaire doté d’autorisations d’administrateur globales dans votre organisation Office 365, démarrez une session Windows PowerShell et connectez-vous à Exchange Online. Pour obtenir des instructions, voir [Connexion à Exchange Online PowerShell](https://aka.ms/exopowershell).
+1. À l’aide d’un compte professionnel ou scolaire disposant d’autorisations d’administrateur globales dans votre organisation, démarrez une session Windows PowerShell et connectez-vous à Exchange Online. Pour obtenir des instructions, voir [Connexion à Exchange Online PowerShell](https://aka.ms/exopowershell).
 
 2. Utilisez la cmdlet [New-OMEConfiguration](https://docs.microsoft.com/powershell/module/exchange/encryption-and-certificates/new-omeconfiguration) pour créer un nouveau modèle.
 
@@ -112,7 +112,7 @@ Pour créer un modèle de personnalisation :
 
 Pour supprimer toutes les modifications apportées au modèle par défaut, y compris les personnalisations de la marque, et ainsi de suite, effectuez les étapes suivantes :
   
-1. À l’aide d’un compte professionnel ou scolaire doté d’autorisations d’administrateur globales dans votre organisation Office 365, démarrez une session Windows PowerShell et connectez-vous à Exchange Online. Pour obtenir des instructions, voir [Connexion à Exchange Online PowerShell](https://aka.ms/exopowershell).
+1. À l’aide d’un compte professionnel ou scolaire disposant d’autorisations d’administrateur globales dans votre organisation, démarrez une session Windows PowerShell et connectez-vous à Exchange Online. Pour obtenir des instructions, voir [Connexion à Exchange Online PowerShell](https://aka.ms/exopowershell).
 
 2. Utilisez la cmdlet **Set-OMEConfiguration** comme décrit dans [Set-OMEConfiguration](https://docs.microsoft.com/powershell/module/exchange/encryption-and-certificates/Set-OMEConfiguration). Pour supprimer les personnalisations personnalisées de votre organisation des valeurs DisclaimerText, EmailText et PortalText, définissez la valeur sur une chaîne vide, `""`. Pour toutes les valeurs d’image, telles que logo, définissez la `"$null"`valeur sur.
 
@@ -133,7 +133,7 @@ Vous pouvez uniquement supprimer ou supprimer des modèles de personnalisation q
 
 Pour supprimer un modèle de personnalisation :
   
-1. À l’aide d’un compte professionnel ou scolaire doté d’autorisations d’administrateur globales dans votre organisation Office 365, démarrez une session Windows PowerShell et connectez-vous à Exchange Online. Pour obtenir des instructions, voir [Connexion à Exchange Online PowerShell](https://aka.ms/exopowershell).
+1. À l’aide d’un compte professionnel ou scolaire disposant d’autorisations d’administrateur globales dans votre organisation, démarrez une session Windows PowerShell et connectez-vous à Exchange Online. Pour obtenir des instructions, voir [Connexion à Exchange Online PowerShell](https://aka.ms/exopowershell).
 
 2. Utilisez la cmdlet **Remove-OMEConfiguration** comme suit :
 
@@ -155,7 +155,7 @@ Une fois que vous avez modifié le modèle par défaut ou créé des modèles de
 
 - Si le message a été chiffré manuellement par l’utilisateur final à partir des clients Outlook ou Outlook sur le Web (anciennement appelé Outlook Web App)
 
-- Si le courrier électronique a été automatiquement chiffré par une règle de flux de messagerie Exchange ou une stratégie de protection contre la perte de données Office 365
+- Si le courrier électronique a été automatiquement chiffré par une règle de flux de messagerie Exchange ou une stratégie de protection contre la perte de données
 
 Pour plus d’informations sur la création d’une règle de flux de messagerie Exchange qui applique le chiffrement, voir [définir des règles de flux de messagerie pour chiffrer des messages électroniques dans Office 365](define-mail-flow-rules-to-encrypt-email.md).
 

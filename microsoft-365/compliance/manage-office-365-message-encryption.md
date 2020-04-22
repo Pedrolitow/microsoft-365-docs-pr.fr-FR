@@ -17,12 +17,12 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: Une fois que vous avez terminé la configuration d’Office 365 message Encryption (OME), vous pouvez personnaliser la configuration de votre déploiement de plusieurs façons. Par exemple, vous pouvez configurer s’il faut activer des codes de passe unique, afficher le bouton protéger dans Outlook sur le Web, et bien plus encore. Les tâches décrites dans cet article expliquent comment procéder.
-ms.openlocfilehash: c235205535b4871deb1963a9113a82429917b75e
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: dd69266cccb1d04bc9ed3938b16bac45ca68b4a9
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42634342"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635884"
 ---
 # <a name="manage-office-365-message-encryption"></a>Gérer le chiffrement de messages Office 365
 
@@ -30,7 +30,7 @@ Une fois que vous avez terminé la configuration d’Office 365 message Encrypti
 
 ## <a name="manage-whether-google-yahoo-and-microsoft-account-recipients-can-use-these-accounts-to-sign-in-to-the-office-365-message-encryption-portal"></a>Gérer si Google, Yahoo et les destinataires de comptes Microsoft peuvent utiliser ces comptes pour se connecter au portail de chiffrement des messages Office 365
 
-Lorsque vous configurez les nouvelles fonctionnalités de chiffrement de messages Office 365, les utilisateurs de votre organisation peuvent envoyer des messages à des destinataires qui se trouvent en dehors de votre organisation Office 365. Si le destinataire utilise un *ID* de société comme un compte Google, un compte Yahoo ou un compte Microsoft, le destinataire peut se connecter au portail OME à l’aide d’un identifiant social. Si vous le souhaitez, vous pouvez choisir de ne pas autoriser les destinataires à utiliser des ID sociaux pour se connecter au portail OME.
+Lorsque vous configurez les nouvelles fonctionnalités de chiffrement de messages Office 365, les utilisateurs de votre organisation peuvent envoyer des messages à des destinataires qui se trouvent en dehors de votre organisation. Si le destinataire utilise un *ID* de société comme un compte Google, un compte Yahoo ou un compte Microsoft, le destinataire peut se connecter au portail OME à l’aide d’un identifiant social. Si vous le souhaitez, vous pouvez choisir de ne pas autoriser les destinataires à utiliser des ID sociaux pour se connecter au portail OME.
   
 ### <a name="to-manage-whether-recipients-can-use-social-ids-to-sign-in-to-the-ome-portal"></a>Pour savoir si les destinataires peuvent utiliser des ID sociaux pour se connecter au portail OME
   
@@ -60,7 +60,7 @@ Si le destinataire d’un message chiffré par OME n’utilise pas Outlook, quel
   
 ### <a name="to-manage-whether-ome-generates-one-time-pass-codes"></a>Pour gérer si OME génère des codes d’accès en une seule fois
   
-1. Utilisez un compte professionnel ou scolaire doté d’autorisations d’administrateur globales dans votre organisation Office 365 et démarrez une session Windows PowerShell et connectez-vous à Exchange Online. Pour obtenir des instructions, voir [Connexion à Exchange Online PowerShell](https://aka.ms/exopowershell).
+1. Utilisez un compte professionnel ou scolaire disposant d’autorisations d’administrateur globales dans votre organisation et démarrez une session Windows PowerShell et connectez-vous à Exchange Online. Pour obtenir des instructions, voir [Connexion à Exchange Online PowerShell](https://aka.ms/exopowershell).
 
 2. Exécutez la cmdlet Set-OMEConfiguration avec le paramètre OTPEnabled :
 
@@ -86,7 +86,7 @@ En tant qu’administrateur, vous pouvez gérer l’affichage de ce bouton pour 
   
 ### <a name="to-manage-whether-the-encrypt-button-appears-in-outlook-on-the-web"></a>Pour gérer l’affichage du bouton chiffrer dans Outlook sur le Web
   
-1. Utilisez un compte professionnel ou scolaire doté d’autorisations d’administrateur globales dans votre organisation Office 365 et démarrez une session Windows PowerShell et connectez-vous à Exchange Online. Pour obtenir des instructions, voir [Connexion à Exchange Online PowerShell](https://aka.ms/exopowershell).
+1. Utilisez un compte professionnel ou scolaire disposant d’autorisations d’administrateur globales dans votre organisation et démarrez une session Windows PowerShell et connectez-vous à Exchange Online. Pour obtenir des instructions, voir [Connexion à Exchange Online PowerShell](https://aka.ms/exopowershell).
 
 2. Exécutez la cmdlet Set-IRMConfiguration avec le paramètre-SimplifiedClientAccessEnabled :
 
@@ -108,7 +108,7 @@ En tant qu’administrateur, vous pouvez gérer l’affichage de ce bouton pour 
 
 ## <a name="enable-service-side-decryption-of-email-messages-for-ios-mail-app-users"></a>Activer le déchiffrement côté service des messages électroniques pour les utilisateurs de l’application de messagerie iOS
 
-L’application de messagerie iOS ne peut pas déchiffrer les messages protégés avec le chiffrement de messages Office 365. En tant qu’administrateur Office 365, vous pouvez appliquer le déchiffrement côté service pour les messages remis à l’application de messagerie iOS. Lorsque vous choisissez d’utiliser le déchiffrement côté service, le service envoie une copie déchiffrée du message à l’appareil iOS. L’appareil client stocke une copie déchiffrée du message. Le message conserve également des informations sur les droits d’utilisation, même si l’application de messagerie iOS n’applique pas de droits d’utilisation côté client à l’utilisateur. L’utilisateur peut copier ou imprimer le message même s’il ne dispose pas des droits nécessaires pour le faire. Toutefois, si l’utilisateur tente d’effectuer une action qui nécessite le serveur de messagerie Office 365, par exemple le transfert du message, le serveur n’autorise pas l’action si l’utilisateur n’a pas le droit d’utilisation. Toutefois, les utilisateurs finaux peuvent contourner les restrictions d’utilisation « ne pas transférer » en transférant le message à partir d’un compte différent au sein de l’application de messagerie iOS. Que vous configurez le déchiffrement côté service du courrier, les pièces jointes aux messages chiffrés et protégés par des droits ne peuvent pas être visualisées dans l’application de messagerie iOS.
+L’application de messagerie iOS ne peut pas déchiffrer les messages protégés avec le chiffrement de messages Office 365. En tant qu’administrateur Microsoft 365, vous pouvez appliquer le déchiffrement côté service pour les messages remis à l’application de messagerie iOS. Lorsque vous choisissez d’utiliser le déchiffrement côté service, le service envoie une copie déchiffrée du message à l’appareil iOS. L’appareil client stocke une copie déchiffrée du message. Le message conserve également des informations sur les droits d’utilisation, même si l’application de messagerie iOS n’applique pas de droits d’utilisation côté client à l’utilisateur. L’utilisateur peut copier ou imprimer le message même s’il ne dispose pas des droits nécessaires pour le faire. Toutefois, si l’utilisateur tente d’effectuer une action qui nécessite le serveur de messagerie Microsoft 365, par exemple, le transfert du message, le serveur n’autorise pas l’action si l’utilisateur n’a pas le droit d’utilisation. Toutefois, les utilisateurs finaux peuvent contourner les restrictions d’utilisation « ne pas transférer » en transférant le message à partir d’un compte différent au sein de l’application de messagerie iOS. Que vous configurez le déchiffrement côté service du courrier, les pièces jointes aux messages chiffrés et protégés par des droits ne peuvent pas être visualisées dans l’application de messagerie iOS.
   
 Si vous choisissez de ne pas autoriser les messages déchiffrés à être envoyés aux utilisateurs de l’application de messagerie iOS, les utilisateurs reçoivent un message qui indique qu’ils ne disposent pas des droits pour afficher le message. Par défaut, le déchiffrement côté service des messages électroniques n’est pas activé.
   
@@ -116,7 +116,7 @@ Pour plus d’informations et pour une vue de l’expérience client, consultez 
   
 ### <a name="to-manage-whether-ios-mail-app-users-can-view-messages-protected-by-office-365-message-encryption"></a>Pour gérer si les utilisateurs de l’application de messagerie iOS peuvent afficher les messages protégés par le chiffrement de messages Office 365
   
-1. Utilisez un compte professionnel ou scolaire doté d’autorisations d’administrateur globales dans votre organisation Office 365 et démarrez une session Windows PowerShell et connectez-vous à Exchange Online. Pour obtenir des instructions, voir [Connexion à Exchange Online PowerShell](https://aka.ms/exopowershell).
+1. Utilisez un compte professionnel ou scolaire disposant d’autorisations d’administrateur globales dans votre organisation et démarrez une session Windows PowerShell et connectez-vous à Exchange Online. Pour obtenir des instructions, voir [Connexion à Exchange Online PowerShell](https://aka.ms/exopowershell).
 
 2. Exécutez la cmdlet Set-ActiveSyncOrganizations avec le paramètre AllowRMSSupportForUnenlightenedApps :
 
@@ -141,19 +141,19 @@ Pour plus d’informations et pour une vue de l’expérience client, consultez 
 
 ## <a name="enable-service-side-decryption-of-email-attachments-for-web-browser-mail-clients"></a>Activer le déchiffrement côté service des pièces jointes de courrier électronique pour les clients de messagerie de navigateur Web
 
-En règle générale, lorsque vous utilisez le chiffrement de messages Office 365, les pièces jointes sont automatiquement chiffrées. En tant qu’administrateur Office 365, vous pouvez appliquer le déchiffrement côté service pour les pièces jointes que les utilisateurs téléchargent à partir d’un navigateur Web.
+En règle générale, lorsque vous utilisez le chiffrement de messages Office 365, les pièces jointes sont automatiquement chiffrées. En tant qu’administrateur, vous pouvez appliquer le déchiffrement côté service pour les pièces jointes que les utilisateurs téléchargent à partir d’un navigateur Web.
   
-Lorsque vous utilisez le déchiffrement côté service, le service envoie une copie déchiffrée du fichier sur l’appareil. Le message est toujours chiffré. La pièce jointe conserve également des informations sur les droits d’utilisation, même si le navigateur n’applique pas de droits d’utilisation côté client à l’utilisateur. L’utilisateur peut copier ou imprimer la pièce jointe du message, même s’il ne dispose pas des droits nécessaires pour le faire. Toutefois, si l’utilisateur tente d’effectuer une action qui nécessite le serveur de messagerie Office 365, comme le transfert de la pièce jointe, le serveur n’autorise pas l’action si l’utilisateur n’a pas le droit d’utilisation à ce propos.
+Lorsque vous utilisez le déchiffrement côté service, le service envoie une copie déchiffrée du fichier sur l’appareil. Le message est toujours chiffré. La pièce jointe conserve également des informations sur les droits d’utilisation, même si le navigateur n’applique pas de droits d’utilisation côté client à l’utilisateur. L’utilisateur peut copier ou imprimer la pièce jointe du message, même s’il ne dispose pas des droits nécessaires pour le faire. Toutefois, si l’utilisateur tente d’effectuer une action qui nécessite le serveur de messagerie Microsoft 365, par exemple, le transfert de la pièce jointe, le serveur n’autorise pas l’action si l’utilisateur n’est pas à l’origine de son utilisation.
   
 Que vous configurez le déchiffrement côté service des pièces jointes, les utilisateurs ne peuvent pas afficher les pièces jointes aux messages chiffrés et protégés par des droits dans l’application de messagerie iOS.
   
 Si vous choisissez de ne pas autoriser les pièces jointes déchiffrées, ce qui correspond à la valeur par défaut, les utilisateurs reçoivent un message qui indique qu’ils ne disposent pas des droits pour afficher la pièce jointe.
   
-Pour plus d’informations sur la façon dont Office 365 implémente le chiffrement pour les messages électroniques et les pièces jointes avec l’option de chiffrement uniquement, reportez-vous à la rubrique [option chiffrer uniquement pour les messages électroniques.](https://docs.microsoft.com/azure/information-protection/deploy-use/configure-usage-rights#encrypt-only-option-for-emails)
+Pour plus d’informations sur la façon dont Microsoft 365 implémente le chiffrement pour les courriers électroniques et les pièces jointes avec l’option de chiffrement uniquement, voir [option chiffrer uniquement pour les messages électroniques.](https://docs.microsoft.com/azure/information-protection/deploy-use/configure-usage-rights#encrypt-only-option-for-emails)
   
 ### <a name="to-manage-whether-email-attachments-are-decrypted-on-download-from-a-web-browser"></a>Pour gérer si les pièces jointes sont déchiffrées lors du téléchargement à partir d’un navigateur Web
   
-1. Utilisez un compte professionnel ou scolaire doté d’autorisations d’administrateur globales dans votre organisation Office 365 et démarrez une session Windows PowerShell et connectez-vous à Exchange Online. Pour obtenir des instructions, voir [Connexion à Exchange Online PowerShell](https://aka.ms/exopowershell).
+1. Utilisez un compte professionnel ou scolaire disposant d’autorisations d’administrateur globales dans votre organisation et démarrez une session Windows PowerShell et connectez-vous à Exchange Online. Pour obtenir des instructions, voir [Connexion à Exchange Online PowerShell](https://aka.ms/exopowershell).
 
 2. Exécutez la cmdlet Set-IRMConfiguration avec le paramètre DecryptAttachmentForEncryptOnly :
 
@@ -179,7 +179,7 @@ Vous pouvez utiliser des modèles personnalisés pour obliger les destinataires 
 
 ### <a name="use-a-custom-template-to-force-all-external-recipients-to-use-the-ome-portal-and-for-encrypted-email"></a>Utiliser un modèle personnalisé pour obliger tous les destinataires externes à utiliser le portail OME et le courrier chiffré
 
-1. Utilisez un compte professionnel ou scolaire doté d’autorisations d’administrateur globales dans votre organisation Office 365 et démarrez une session Windows PowerShell et connectez-vous à Exchange Online. Pour obtenir des instructions, voir [Connexion à Exchange Online PowerShell](https://aka.ms/exopowershell).
+1. Utilisez un compte professionnel ou scolaire disposant d’autorisations d’administrateur globales dans votre organisation et démarrez une session Windows PowerShell et connectez-vous à Exchange Online. Pour obtenir des instructions, voir [Connexion à Exchange Online PowerShell](https://aka.ms/exopowershell).
 
 2. Exécutez la cmdlet New-TransportRule :
 
@@ -217,7 +217,7 @@ Nous espérons qu’il n’y parviendra pas, mais si vous le souhaitez, la désa
   
 ### <a name="to-disable-the-new-capabilities-for-ome"></a>Pour désactiver les nouvelles fonctionnalités de OME
   
-1. À l’aide d’un compte professionnel ou scolaire doté d’autorisations d’administrateur globales dans votre organisation Office 365, démarrez une session Windows PowerShell et connectez-vous à Exchange Online. Pour obtenir des instructions, voir [Connexion à Exchange Online PowerShell](https://aka.ms/exopowershell).
+1. À l’aide d’un compte professionnel ou scolaire disposant d’autorisations d’administrateur globales dans votre organisation, démarrez une session Windows PowerShell et connectez-vous à Exchange Online. Pour obtenir des instructions, voir [Connexion à Exchange Online PowerShell](https://aka.ms/exopowershell).
 
 2. Si vous avez activé le bouton **chiffrer** dans Outlook sur le Web, désactivez-le en exécutant la cmdlet Set-IRMConfiguration avec le paramètre SimplifiedClientAccessEnabled. Sinon, ignorez cette étape.
 

@@ -15,17 +15,17 @@ search.appverid:
 ms.assetid: 5986b9e1-c824-4f8f-9b7d-a2b0ae2a7fe9
 ms.collection:
 - M365-security-compliance
-description: Si vous n’avez pas encore déplacé votre organisation Office 365 vers les nouvelles fonctionnalités OME, mais que vous avez déjà déployé OME, les informations contenues dans cet article s’appliquent à votre organisation. Microsoft vous recommande de planifier la migration vers les nouvelles fonctionnalités de OME dès que cela est raisonnable pour votre organisation. Pour obtenir des instructions, consultez la rubrique Set up New Office 365 message Encryption Capabilities Built-Top of Azure information protection. Si vous souhaitez en savoir plus sur la façon dont les nouvelles fonctionnalités fonctionnent en premier, consultez la rubrique Office 365 message Encryption. Le reste de cet article fait référence au comportement d’OME avant la publication des nouvelles fonctionnalités OME.
-ms.openlocfilehash: 29bebb89bf8fcfed25e5348789d80d244a044b6f
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: Si vous n’avez pas encore déplacé votre organisation vers les nouvelles fonctionnalités de OME, mais que vous avez déjà déployé OME, les informations contenues dans cet article s’appliquent à votre organisation. Microsoft vous recommande de planifier la migration vers les nouvelles fonctionnalités de OME dès que cela est raisonnable pour votre organisation. Pour obtenir des instructions, consultez la rubrique Set up New Office 365 message Encryption Capabilities Built-Top of Azure information protection. Si vous souhaitez en savoir plus sur la façon dont les nouvelles fonctionnalités fonctionnent en premier, consultez la rubrique Office 365 message Encryption. Le reste de cet article fait référence au comportement d’OME avant la publication des nouvelles fonctionnalités OME.
+ms.openlocfilehash: 9f9d4cdd9ee75becb6b7c7d9716b9fcb543c48d9
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42072229"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632683"
 ---
 # <a name="legacy-information-for-office-365-message-encryption"></a>Informations héritées pour le chiffrement de messages Office 365
 
-Si vous n’avez pas encore déplacé votre organisation Office 365 vers les nouvelles fonctionnalités OME, mais que vous avez déjà déployé OME, les informations contenues dans cet article s’appliquent à votre organisation. Microsoft vous recommande de planifier la migration vers les nouvelles fonctionnalités de OME dès que cela est raisonnable pour votre organisation. Pour obtenir des instructions, consultez la rubrique [set up New Office 365 message Encryption Capabilities Built-Top of Azure information protection](set-up-new-message-encryption-capabilities.md). Si vous souhaitez en savoir plus sur la façon dont les nouvelles fonctionnalités fonctionnent en premier, consultez la rubrique [Office 365 message Encryption](ome.md). Le reste de cet article fait référence au comportement d’OME avant la publication des nouvelles fonctionnalités OME.
+Si vous n’avez pas encore déplacé votre organisation vers les nouvelles fonctionnalités de OME, mais que vous avez déjà déployé OME, les informations contenues dans cet article s’appliquent à votre organisation. Microsoft vous recommande de planifier la migration vers les nouvelles fonctionnalités de OME dès que cela est raisonnable pour votre organisation. Pour obtenir des instructions, consultez la rubrique [set up New Office 365 message Encryption Capabilities Built-Top of Azure information protection](set-up-new-message-encryption-capabilities.md). Si vous souhaitez en savoir plus sur la façon dont les nouvelles fonctionnalités fonctionnent en premier, consultez la rubrique [Office 365 message Encryption](ome.md). Le reste de cet article fait référence au comportement d’OME avant la publication des nouvelles fonctionnalités OME.
   
 Avec le chiffrement de messages Office 365, votre organisation peut envoyer et recevoir des messages électroniques chiffrés entre des personnes à l’intérieur et à l’extérieur de votre organisation. Le chiffrement de messages Office 365 fonctionne avec Outlook.com, Yahoo, Gmail et d’autres services de messagerie. Le chiffrement des messages électroniques permet de s’assurer que seuls les destinataires prévus peuvent afficher le contenu du message.
   
@@ -131,7 +131,7 @@ Le tableau suivant fournit des détails techniques sur le service de chiffrement
 |Types de messages pris en charge  <br/> |Le chiffrement de messages Office 365 est uniquement pris en charge pour les éléments avec un ID de classe de message **IPM.Note**. Pour plus d’informations, consultez la rubrique [types d’éléments et classes de messages](https://msdn.microsoft.com/library/office/ff861573.aspx).  <br/> |
 |Tailles limites des messages  <br/> |Le chiffrement de messages Office 365 permet de chiffrer des messages d’une taille maximale de 25 Mo. Pour plus d’informations sur les limites de taille des messages, consultez la rubrique [limites d’Exchange Online](https://technet.microsoft.com/library/exchange-online-limits.aspx).  <br/> |
 |Stratégies de rétention des messages électroniques Exchange Online  <br/> |Exchange Online ne stocke pas les messages chiffrés.  <br/> |
-|Prise en charge linguistique pour le chiffrement de messages Office 365  <br/> | Le chiffrement de messages Office 365 prend en charge les langues d’Office 365 comme suit :  <br/>  Les messages électroniques entrants et les fichiers HTML joints sont localisés en fonction des paramètres de langue de l’expéditeur.  <br/>  Le portail d’affichage est localisé en fonction des paramètres de navigateur du destinataire.  <br/>  Le corps (contenu) du message chiffré n’est pas localisé.  <br/> |
+|Prise en charge linguistique pour le chiffrement de messages Office 365  <br/> | Le chiffrement de messages Office 365 prend en charge les langages Microsoft 365, comme suit :  <br/>  Les messages électroniques entrants et les fichiers HTML joints sont localisés en fonction des paramètres de langue de l’expéditeur.  <br/>  Le portail d’affichage est localisé en fonction des paramètres de navigateur du destinataire.  <br/>  Le corps (contenu) du message chiffré n’est pas localisé.  <br/> |
 |Informations de confidentialité pour le portail OME et l’application Visionneuse OME  <br/> |La [Office 365 Messaging Encryption Portal privacy statement](https://privacy.microsoft.com/privacystatement) fournit des informations détaillées sur ce que fait et ne fait pas Microsoft avec vos informations privées.  <br/> |
 
 ## <a name="frequently-asked-questions-about-legacy-ome"></a>Forum aux questions sur les OME héritées
@@ -141,15 +141,15 @@ Vous avez des questions sur le chiffrement de messages Office 365 ? Voici les r
   
  **Q. mes utilisateurs envoient des messages électroniques chiffrés à des destinataires externes à notre organisation. Y a-t-il quelque chose que les destinataires externes doivent faire pour lire et répondre aux messages électroniques chiffrés avec le chiffrement de messages Office 365 ?**
   
-Les destinataires externes à votre organisation qui reçoivent des messages chiffrés Office 365 peuvent les afficher de l’une des deux manières suivantes :
+Les destinataires externes à votre organisation qui reçoivent des messages chiffrés Microsoft 365 peuvent les afficher de l’une des deux façons suivantes :
   
 - En vous connectant avec un compte Microsoft ou un compte professionnel ou scolaire associé à Office 365.
 
 - À l’aide d’un code d’accès unique.
 
- **Q. Les messages électroniques chiffrés Office 365 sont-ils stockés dans le nuage ou sur les serveurs Microsoft ?**
+ **Q. les messages Microsoft 365 chiffrés sont-ils stockés dans le Cloud ou sur des serveurs Microsoft ?**
   
-Non, les messages chiffrés sont conservés sur le système de courrier du destinataire, et lorsque le destinataire ouvre le message, il est temporairement publié pour l’affichage sur les serveurs Office 365. Les messages électroniques n’y sont pas stockés.
+Non, les messages chiffrés sont conservés sur le système de courrier du destinataire, et lorsque le destinataire ouvre le message, il est temporairement publié pour l’affichage sur les serveurs Microsoft. Les messages électroniques n’y sont pas stockés.
   
  **Q. Puis-je personnaliser les messages chiffrés avec ma marque ?**
   
@@ -203,9 +203,9 @@ Tous les clients EHE ont été mis à niveau vers le chiffrement de messages Of
   
  **Q. dois-je ouvrir des URL, des adresses IP ou des ports dans le pare-feu de mon organisation pour prendre en charge le chiffrement des messages Office 365 ?**
   
-Oui. Vous devez ajouter des URL à la liste d’adresses autorisées pour Exchange Online afin que votre organisation permette l’authentification des messages chiffrés par Office 365. Pour obtenir la liste des URL Exchange Online, voir [URL et plages d’adresses IP Office 365](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges).
+Oui. Vous devez ajouter des URL à la liste d’adresses autorisées pour Exchange Online afin que votre organisation permette l’authentification des messages chiffrés par Office 365. Pour obtenir la liste des URL Exchange Online, voir [URL et plages d’adresses IP Microsoft 365](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges).
   
- **Q : À combien de destinataires puis-je envoyer un message chiffré par Office 365 ?**
+ **Q. à combien de destinataires puis-je envoyer un message chiffré Microsoft 365 ?**
   
 La limite de destinataires est de 500 destinataires par message ou, si elle est combinée après l’expansion de la liste de distribution, 11 980 caractères dans **le champ du** message, selon le premier cas.
   
@@ -215,7 +215,7 @@ Non. Vous ne pouvez pas révoquer un message à une personne particulière une f
   
  **Q : Puis-je afficher un rapport des messages chiffrés qui ont été reçus et lus ?**
   
-Il n’existe pas de rapport qui indique si un message chiffré a été affiché, mais il existe des rapports Office 365 que vous pouvez utiliser pour déterminer le nombre de messages qui correspondent à une règle de flux de messagerie spécifique (également appelée règle de transport), par exemple.
+Il n’existe pas de rapport qui indique si un message chiffré a été affiché, mais il existe des rapports Microsoft 365 que vous pouvez utiliser pour déterminer le nombre de messages qui correspondent à une règle de flux de messagerie spécifique (également appelée règle de transport), par exemple.
   
  **Q. Que fait Microsoft des informations que je fournis par le biais du portail OME et de l’application Visionneuse OME ?**
   

@@ -16,18 +16,18 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: cdde5b4a569c1653c3ed48453f30c26081980307
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 8f5ef193a895bce51b733eaa98817d7c119217d0
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601721"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632229"
 ---
 # <a name="process-data-for-an-investigation"></a>Données de processus pour une enquête
 
 Le traitement est le processus d’identification des fichiers, d’expansion des documents et pièces jointes incorporés, de l’extraction de texte, de la reconnaissance optique de caractères (reconnaissance optique de caractères) des fichiers image et de l’indexation de ce contenu.  
 
-Lorsqu’une personne est ajoutée sous l’onglet **personnes présentant un intérêt** , tous les éléments partiellement indexés d’Office 365 sont traités afin de les rendre entièrement consultables.  De même, lorsque des données sont ajoutées à l’onglet **Evidence** à partir d’Office 365 ou de sources de données non Office 365, le contenu est également traité.
+Lorsqu’une personne est ajoutée sous l’onglet **personnes présentant un intérêt** , tous les éléments partiellement indexés de Microsoft 365 sont traités afin de les rendre entièrement consultables.  De même, lorsque des données sont ajoutées à l’onglet **Evidence** à partir de sources de données Microsoft 365 ou non-Microsoft 365, le contenu est également traité.
 
 L’onglet **traitement** des enquêtes de données (aperçu) fournit la transparence dans l’état de l' *indexation avancée* pour l’ensemble de ces scénarios.
 

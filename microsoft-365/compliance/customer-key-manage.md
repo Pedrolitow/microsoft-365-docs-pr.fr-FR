@@ -1,5 +1,5 @@
 ---
-title: Gérer la clé client pour Office 365
+title: Gérer la clé client
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -13,14 +13,14 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Après avoir configuré la clé client, Découvrez comment la gérer en restaurant les clés AKV et en gérant les autorisations et vos stratégies de chiffrement de données.
-ms.openlocfilehash: 112bdee7658334c251418903761866841625ff17
-ms.sourcegitcommit: 5ff1dc62e8855be155cb2de45cf4ee5a02c321fd
+ms.openlocfilehash: 4796fcef69e052725b635acb4170d73bb36de787
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41804786"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635600"
 ---
-# <a name="manage-customer-key-for-office-365"></a>Gérer la clé client pour Office 365
+# <a name="manage-customer-key"></a>Gérer la clé client
 
 Une fois que vous avez configuré la clé client pour Office 365, vous pouvez gérer vos clés comme décrit dans cet article. Pour plus d’informations sur la clé client, consultez les rubriques connexes.
 
@@ -70,7 +70,7 @@ Remove-AzKeyVaultAccessPolicy -VaultName Contoso-O365EX-NA-VaultA1 -UserPrincipa
 
 ## <a name="manage-data-encryption-policies-deps-with-customer-key"></a>Gérer les stratégies de chiffrement de données (DEPs) avec la clé client
 
-Les handles de clé du client DEPs différemment entre les différents services Office 365. Par exemple, vous pouvez créer un nombre différent de DEPs pour les différents services.
+Les handles de clé du client DEPs différemment entre les différents services. Par exemple, vous pouvez créer un nombre différent de DEPs pour les différents services.
 
 **Exchange Online et Skype entreprise :** Vous pouvez créer jusqu’à 50 DEPs. Pour obtenir des instructions, voir [Create a Data Encryption Policy (DEP) for use with Exchange Online and Skype for Business](customer-key-set-up.md#create-a-data-encryption-policy-dep-for-use-with-exchange-online-and-skype-for-business).
 
@@ -80,7 +80,7 @@ Les handles de clé du client DEPs différemment entre les différents services 
 
 Pour afficher la liste de tous les DEPs que vous avez créés pour Exchange Online et Skype entreprise à l’aide de l’applet de commande Get-DataEncryptionPolicy PowerShell, procédez comme suit.
 
-1. À l’aide d’un compte professionnel ou scolaire doté d’autorisations d’administrateur globales dans votre organisation Office 365, [Connectez-vous à Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps).
+1. À l’aide d’un compte professionnel ou scolaire doté d’autorisations d’administrateur globales dans votre organisation, [Connectez-vous à Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps).
 
 2. Pour renvoyer tous les DEPs de votre organisation, exécutez la cmdlet Get-DataEncryptionPolicy sans aucun paramètre.
 
@@ -92,11 +92,11 @@ Pour afficher la liste de tous les DEPs que vous avez créés pour Exchange Onli
 
 ### <a name="assign-a-dep-before-you-migrate-a-mailbox-to-the-cloud"></a>Affectation d’une DEP avant la migration d’une boîte aux lettres vers le Cloud
 
-Lorsque vous affectez la DEP, Office 365 chiffre le contenu de la boîte aux lettres à l’aide de la DEP attribuée lors de la migration. Ce processus est plus efficace que la migration de la boîte aux lettres, l’affectation de la DEP, puis l’attente du chiffrement, ce qui peut prendre des heures voire des jours.
+Lorsque vous affectez la DEP, Microsoft 365 chiffre le contenu de la boîte aux lettres à l’aide de la DEP attribuée lors de la migration. Ce processus est plus efficace que la migration de la boîte aux lettres, l’affectation de la DEP, puis l’attente du chiffrement, ce qui peut prendre des heures voire des jours.
 
 Pour affecter une DEP à une boîte aux lettres avant de la migrer vers Office 365, exécutez la cmdlet Set-MailUser dans Exchange Online PowerShell :
 
-1. À l’aide d’un compte professionnel ou scolaire doté d’autorisations d’administrateur globales dans votre organisation Office 365, [Connectez-vous à Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps).
+1. À l’aide d’un compte professionnel ou scolaire doté d’autorisations d’administrateur globales dans votre organisation, [Connectez-vous à Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps).
 
 2. Exécutez la cmdlet Set-MailUser.
 
@@ -110,7 +110,7 @@ Pour affecter une DEP à une boîte aux lettres avant de la migrer vers Office 3
 
 Pour déterminer la DEP affectée à une boîte aux lettres, utilisez la cmdlet Get-MailboxStatistics. L’applet de commande renvoie un identificateur unique (GUID).
   
-1. À l’aide d’un compte professionnel ou scolaire doté d’autorisations d’administrateur globales dans votre organisation Office 365, [Connectez-vous à Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps).
+1. À l’aide d’un compte professionnel ou scolaire doté d’autorisations d’administrateur globales dans votre organisation, [Connectez-vous à Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps).
 
    ```powershell
    Get-MailboxStatistics -Identity <GeneralMailboxOrMailUserIdParameter> | fl DataEncryptionPolicyID
@@ -178,13 +178,13 @@ La sortie de cette cmdlet comprend les éléments suivants :
 
 Vous contrôlez la révocation de toutes les clés racines, y compris la clé de disponibilité. La clé client permet de contrôler l’aspect de la planification de sortie des exigences réglementaires. Si vous décidez d’annuler vos clés pour purger vos données et quitter le service, le service supprime la clé de disponibilité une fois le processus de purge des données terminé.
 
-Office 365 audite et valide le chemin de purge des données. Pour plus d’informations, reportez-vous au rapport SSAE 18 SOC 2 disponible sur le [portail d’approbation de services](https://servicetrust.microsoft.com/). En outre, Microsoft recommande les documents suivants :
+Microsoft 365 audite et valide le chemin de purge des données. Pour plus d’informations, reportez-vous au rapport SSAE 18 SOC 2 disponible sur le [portail d’approbation de services](https://servicetrust.microsoft.com/). En outre, Microsoft recommande les documents suivants :
 
 - [Guide de conformité et d’évaluation des risques pour les établissements financiers dans le Cloud Microsoft](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=edee9b14-3661-4a16-ba83-c35caf672bd7&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers)
 
 - [Considérations relatives à la planification de la sortie de O365](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=77ea7ebf-ce1b-4a5f-9972-d2d81a951d99&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers)
 
-Le chemin de purge des données diffère légèrement entre les différents services Office 365.
+Le chemin de purge des données diffère légèrement entre les différents services.
 
 ### <a name="revoke-your-customer-keys-and-the-availability-key-for-exchange-online-and-skype-for-business"></a>Révoquer vos clés client et la clé de disponibilité pour Exchange Online et Skype entreprise
 
@@ -199,7 +199,7 @@ Pour lancer le chemin de purge des données, procédez comme suit :
 
 1. Supprimez les autorisations Wrap et Unwrap pour « O365 Exchange Online » à partir de coffres de clés Azure.
 
-2. À l’aide d’un compte professionnel ou scolaire disposant de privilèges d’administrateur général dans votre organisation Office 365, [Connectez-vous à Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps).
+2. À l’aide d’un compte professionnel ou scolaire disposant de privilèges d’administrateur général dans votre organisation, [Connectez-vous à Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps).
 
 3. Pour chaque DEP contenant des boîtes aux lettres que vous souhaitez supprimer, exécutez la cmdlet [Set-DataEncryptionPolicy](https://docs.microsoft.com/powershell/module/exchange/encryption-and-certificates/set-dataencryptionpolicy) comme suit.
 
@@ -235,14 +235,14 @@ Pour lancer le chemin de purge des données pour SharePoint Online, OneDrive ent
 
 ## <a name="related-articles"></a>Articles connexes
 
-- [Chiffrement de service avec la clé client pour Office 365](customer-key-overview.md)
+- [Chiffrement de service avec clé client](customer-key-overview.md)
 
 - [En savoir plus sur la clé de disponibilité](customer-key-availability-key-understand.md)
 
-- [Configurer la clé client pour Office 365](customer-key-set-up.md)
+- [Configurer la clé client](customer-key-set-up.md)
 
-- [Faire pivoter ou faire pivoter une clé client ou une clé de disponibilité](customer-key-availability-key-roll.md)
+- [Echanger ou alterner entre une clé client ou de disponibilité](customer-key-availability-key-roll.md)
 
-- [Référentiel sécurisé du client dans Office 365](customer-lockbox-requests.md)
+- [Référentiel sécurisé client](customer-lockbox-requests.md)
 
-- [Chiffrement du service Office 365](office-365-service-encryption.md)
+- [Chiffrement de service](office-365-service-encryption.md)

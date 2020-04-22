@@ -1,11 +1,11 @@
 ---
-title: Différences entre les résultats de recherche de découverte électronique estimée et réelle dans Office 365
+title: Différences entre les résultats de recherche de découverte électronique estimée et réelle
 f1.keywords:
 - NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: ''
+ms.date: 4/13/2017
 audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
@@ -18,19 +18,18 @@ search.appverid:
 - MOE150
 ms.assetid: 8f20ca4f-a908-46ec-99e6-9890d269ecf2
 description: 'Comprendre pourquoi les résultats de recherche estimés et réels peuvent varier en fonction des recherches exécutées avec les outils eDiscovery dans Office 365. '
-ms.openlocfilehash: 9ee24cc0e7b85d39480149d65897b303e23c0adb
-ms.sourcegitcommit: 8a88b7526e6a3a907f33a8567e0d25b74fe60d80
+ms.openlocfilehash: 927042cd7c5f3966e7598f16fdbbcd4e7ddb7923
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43204066"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632551"
 ---
-# <a name="differences-between-estimated-and-actual-ediscovery-search-results-in-office-365"></a>Différences entre les résultats de recherche de découverte électronique estimée et réelle dans Office 365
+# <a name="differences-between-estimated-and-actual-ediscovery-search-results"></a>Différences entre les résultats de recherche de découverte électronique estimée et réelle
 
 Cette rubrique s’applique aux recherches que vous pouvez exécuter à l’aide de l’un des outils Microsoft eDiscovery suivants : 
 
 - Recherche de contenu dans le centre de sécurité & conformité  <br/>  
-- Recherches associées aux cas de découverte électronique principaux
 - Découverte électronique inaltérable dans le centre d’administration Exchange  <br/>  
 - Le centre eDiscovery dans SharePoint Online  <br/> 
    
@@ -56,7 +55,7 @@ Voici les raisons de ces différences :
   
 - **La manière dont les résultats sont estimés** : une estimation des résultats de la recherche est juste, une estimation (et non un nombre réel) des éléments qui répondent aux critères de requête de recherche. Pour compiler l’estimation des éléments Exchange, une liste des ID de message correspondant aux critères de recherche est demandée à partir de la base de données Exchange par l’outil eDiscovery que vous utilisez. Toutefois, lorsque vous exportez les résultats de la recherche, la recherche est réexécutée et les messages réels sont extraits de la base de données Exchange. Par conséquent, ces différences peuvent résulter de la manière dont le nombre d’éléments estimé et le nombre réel d’éléments sont déterminés. 
     
-- **Modifications qui se produisent entre le moment où vous évaluez et exportez les résultats** de la recherche : lorsque vous exportez les résultats de la recherche, la recherche est redémarrée pour recueillir les éléments les plus récents de l’index de recherche qui répondent aux critères de recherche. Il est possible que des éléments supplémentaires ont été créés, envoyés ou reçus et répondent aux critères de recherche entre le moment où les résultats de la recherche estimés ont été collectés et le moment où les résultats de la recherche ont été exportés. Il est également possible que les éléments qui se trouvaient dans l’index de recherche lorsque les résultats de la recherche étaient estimés ne soient plus présents, car ils ont été supprimés de l’emplacement du contenu avant l’exportation des résultats de la recherche. Pour atténuer ce problème, vous pouvez spécifier une plage de dates pour une recherche de découverte électronique. Une autre méthode consiste à placer un blocage sur les emplacements de contenu afin que les éléments soient conservés et ne peuvent pas être purgés. Bien que très rare, même en cas d’application d’une conservation, la maintenance des éléments de calendrier intégrés (qui ne sont pas modifiables par l’utilisateur, mais incluse dans de nombreux résultats de recherche) peut être supprimée de temps à autre. Cette suppression périodique des éléments de calendrier entraîne l’exportation de moins d’éléments.
+- **Modifications qui se produisent entre le moment où vous évaluez et exportez les résultats** de la recherche : lorsque vous exportez les résultats de la recherche, la recherche est redémarrée pour recueillir les éléments les plus récents de l’index de recherche qui répondent aux critères de recherche. Il est possible que des éléments supplémentaires ont été créés, envoyés ou reçus et répondent aux critères de recherche entre le moment où les résultats de la recherche estimés ont été collectés et le moment où les résultats de la recherche ont été exportés. Il est également possible que les éléments qui se trouvaient dans l’index de recherche lorsque les résultats de la recherche étaient estimés ne soient plus présents, car ils ont été supprimés de l’emplacement du contenu avant l’exportation des résultats de la recherche. Pour atténuer ce problème, vous pouvez spécifier une plage de dates pour une recherche de découverte électronique. Une autre méthode consiste à placer un blocage sur les emplacements de contenu afin que les éléments soient conservés et ne peuvent pas être purgés. 
     
 - **Éléments non indexés** : les éléments non indexés pour la recherche peuvent entraîner des différences entre les résultats de recherche estimés et les résultats de recherche réels. Par exemple, la découverte électronique inaltérable dans Exchange et le centre eDiscovery dans SharePoint n’incluent pas les éléments non indexés (qui ne répondent pas aux critères de recherche) lorsque vous exécutez une recherche pour estimer les résultats de la recherche. Toutefois, vous pouvez inclure des éléments non indexés lorsque vous exportez les résultats de la recherche. Si vous incluez des éléments non indexés lors de l’exportation des résultats de la recherche, d’autres éléments sont peut-être exportés. Cela entraîne une différence entre les résultats de recherche estimés et exportés. 
     
@@ -80,7 +79,9 @@ Voici les raisons de ces différences :
 
 Dans le centre eDiscovery de SharePoint Online, vous avez la possibilité d’inclure du contenu non indexé (à partir d’Exchange et SharePoint) lorsque vous exportez les résultats d’une recherche de découverte électronique. Pour ce faire, sélectionnez l’option **inclure les éléments chiffrés ou dont le format n’est pas reconnu** . Les éléments non indexés (également appelés « non analysables dans SharePoint ») sont des éléments dans Exchange et SharePoint qui n’ont pas été indexés pour la recherche. Les éléments Exchange non indexés sont répertoriés dans le rapport **Erreurs d’index Exchange** qui est inclus lorsque vous exportez les résultats de la recherche. De même, les éléments non indexés SharePoint sont répertoriés dans le rapport d' **Erreurs d’index SharePoint** . Lorsque vous exportez des éléments non indexés, ils sont téléchargés vers un dossier nommé non **analysable**. Les éléments Exchange non indexés sont inclus dans un fichier PST ; chaque document non indexé provenant de SharePoint est également téléchargé. Le nombre d’éléments non indexés (le cas échéant) sont répertoriés dans chaque rapport d’erreurs d’index. Le nombre d’éléments non indexés dans les rapports doit correspondre au nombre d’éléments non indexés qui sont téléchargés. 
   
- **Quelles sont les raisons pour lesquelles le nombre d’éléments non indexés exportés ne correspond pas au nombre d’éléments dans le rapport d’erreurs d’index ?** Comme expliqué précédemment, il est possible que les éléments aient été purgés d’Office 365 entre l’heure d’exécution de la recherche et l’heure d’exportation des résultats de la recherche. Une anomalie similaire peut se produire pour les éléments non indexés. Par exemple, l’index de recherche est peut-être obsolète lorsque les résultats de la recherche sont exportés. Cela signifie qu’un élément non indexé qui a été exporté avec les résultats de la recherche peut ne pas figurer dans le rapport Erreurs d’index, car l’élément n’a pas été indexé lors de l’exportation des résultats de la recherche. Cela entraînerait l’exportation de plus d’éléments non indexés que ceux répertoriés dans le rapport d’erreurs d’index. De même, un élément non indexé figurant dans le rapport d’erreurs d’index a pu être purgé d’Office 365 avant la mise à jour de l’index de recherche. Cela entraînerait un moins grand nombre d’éléments non indexés à exporter que ce qui est répertorié dans le rapport d’erreurs d’index. 
+ **Quelles sont les raisons pour lesquelles le nombre d’éléments non indexés exportés ne correspond pas au nombre d’éléments dans le rapport d’erreurs d’index ?** Comme expliqué précédemment, il est possible que les éléments aient été purgés de Microsoft 365 entre l’heure d’exécution de la recherche et l’heure d’exportation des résultats de la recherche. Une anomalie similaire peut se produire pour les éléments non indexés. Par exemple, l’index de recherche est peut-être obsolète lorsque les résultats de la recherche sont exportés. Cela signifie qu’un élément non indexé qui a été exporté avec les résultats de la recherche peut ne pas figurer dans le rapport Erreurs d’index, car l’élément n’a pas été indexé lors de l’exportation des résultats de la recherche. Cela entraînerait l’exportation de plus d’éléments non indexés que ceux répertoriés dans le rapport d’erreurs d’index. De même, un élément non indexé figurant dans le rapport d’erreurs d’index a pu être purgé de Microsoft 365 avant la mise à jour de l’index de recherche. Cela entraînerait un moins grand nombre d’éléments non indexés à exporter que ce qui est répertorié dans le rapport d’erreurs d’index. 
   
 > [!NOTE]
 > Si vous ne sélectionnez pas l’option **inclure les éléments chiffrés ou dont le format n’est pas reconnu** lorsque vous exportez des résultats de recherche ou que vous venez de télécharger les rapports, les rapports d’erreur d’index sont téléchargés, mais ils n’ont aucune entrée. Cela ne signifie pas qu’il n’y a aucune erreur d’indexation. Cela signifie simplement que les éléments non indexés n’ont pas été inclus dans l’exportation. 
+  
+

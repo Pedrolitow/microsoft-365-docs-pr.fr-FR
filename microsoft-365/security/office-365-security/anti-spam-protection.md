@@ -17,12 +17,12 @@ ms.assetid: 6a601501-a6a8-4559-b2e7-56b59c96a586
 ms.collection:
 - M365-security-compliance
 description: Découvrez les paramètres de blocage du courrier indésirable et les filtres qui vous permettront d’éviter le courrier indésirable dans Exchange Online et Microsoft 365. Vous recevez trop de courrier indésirable dans Microsoft 365 ? Vous pouvez personnaliser vos filtres de courrier indésirable et de blocage du courrier indésirable.
-ms.openlocfilehash: d7c7a0166fbcbf3334325aeef153f2d82f27aac3
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 3bb1c81af0061cc20b4c7bb2a963c0d06b7914e3
+ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636045"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43708570"
 ---
 # <a name="anti-spam-protection-in-microsoft-365"></a>Protection contre le courrier indésirable dans Microsoft 365
 
@@ -83,7 +83,7 @@ Voici quelques-unes des meilleures pratiques qui s’appliquent à l’un ou l�
 
 - **Vérifiez les paramètres de votre organisation**: Méfiez-vous des paramètres permettant aux messages d’ignorer le filtrage du courrier indésirable (par exemple, si vous ajoutez votre propre domaine à la liste des domaines autorisés dans les stratégies de blocage du courrier indésirable). Pour connaître les paramètres recommandés, reportez-vous aux [paramètres recommandés pour EOP et Microsoft 365 Security ATP](recommended-settings-for-eop-and-office365-atp.md) and [Create Safe sender lists](create-safe-sender-lists-in-office-365.md).
 
-- **Vérifier que la règle de courrier indésirable est activée dans la boîte aux lettres de l’utilisateur**: elle est activée par défaut, mais si ce n’est pas le message marqué comme courrier indésirable ne peut pas être déplacé dans le dossier courrier indésirable. Pour plus d’informations, consultez la rubrique [configurer les paramètres du courrier indésirable sur les boîtes aux lettres Exchange Online dans Microsoft 365](configure-junk-email-settings-on-exo-mailboxes.md).
+- **Vérifier que la règle de courrier indésirable est activée dans la boîte aux lettres de l’utilisateur**: elle est activée par défaut, mais si elle est désactivée, les messages marqués comme courrier indésirable ne peuvent pas être déplacés dans le dossier courrier indésirable. Pour plus d’informations, consultez la rubrique [configurer les paramètres du courrier indésirable sur les boîtes aux lettres Exchange Online dans Microsoft 365](configure-junk-email-settings-on-exo-mailboxes.md).
 
 - **Utiliser les listes d’expéditeurs bloqués disponibles**: pour plus d’informations, consultez la rubrique [créer des listes d’expéditeurs bloqués](create-block-sender-lists-in-office-365.md).
 

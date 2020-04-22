@@ -13,25 +13,25 @@ localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: 04e9de2d-765b-457b-a98a-d0f60bfb13f2
 description: Vous pouvez modifier la taille par défaut des fichiers PST téléchargés sur votre ordinateur lorsque vous exportez les résultats de recherche de découverte électronique.
-ms.openlocfilehash: 9deb90e688617981499bee286b95a0442fa1a1b4
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: f5fde9bbb37f6e22c49049c892a1b69b07d15bef
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595931"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636322"
 ---
 # <a name="change-the-size-of-pst-files-when-exporting-ediscovery-search-results"></a>Modifier la taille des fichiers PST lors de l’exportation des résultats de recherche eDiscovery
 
-Lorsque vous utilisez l’outil d’exportation de découverte électronique Office 365 pour exporter les résultats du courrier électronique d’une recherche de découverte électronique à partir des différents outils eDiscovery de Microsoft, la taille par défaut d’un fichier PST pouvant être exporté est de 10 Go. Si vous souhaitez modifier cette taille par défaut, vous pouvez modifier le Registre Windows sur l’ordinateur que vous utilisez pour exporter les résultats de la recherche. L’une des raisons pour y parvenir est qu’un fichier PST peut tenir sur un support amovible, un DVD, un disque compact ou un lecteur USB. 
+Lorsque vous utilisez l’outil d’exportation de découverte électronique pour exporter les résultats de la messagerie électronique d’une recherche de découverte électronique à partir des différents outils eDiscovery de Microsoft, la taille par défaut d’un fichier PST pouvant être exporté est de 10 Go. Si vous souhaitez modifier cette taille par défaut, vous pouvez modifier le Registre Windows sur l’ordinateur que vous utilisez pour exporter les résultats de la recherche. L’une des raisons pour y parvenir est qu’un fichier PST peut tenir sur un support amovible, un DVD, un disque compact ou un lecteur USB. 
   
 > [!NOTE]
-> L’outil d’exportation de découverte électronique Office 365 est utilisé pour exporter les résultats de la recherche lors de l’utilisation de l’outil de recherche de contenu dans le centre de sécurité et de conformité, la découverte électronique inaltérable dans Exchange Online et le centre eDiscovery dans SharePoint Online.
+> L’outil d’exportation de découverte électronique est utilisé pour exporter les résultats de la recherche lors de l’utilisation de l’outil de recherche de contenu dans le centre de sécurité & conformité, la découverte électronique inaltérable dans Exchange Online et le centre eDiscovery dans SharePoint Online.
   
 ## <a name="create-a-registry-setting-to-change-the-size-of-pst-files-when-you-export-ediscovery-search-results"></a>Créer un paramètre de Registre pour modifier la taille des fichiers PST lors de l’exportation des résultats de recherche de découverte électronique
 
 Effectuez la procédure suivante sur l’ordinateur que vous allez utiliser pour exporter les résultats d’une recherche de découverte électronique.
   
-1. Fermez l’outil d’exportation eDiscovery d’Office 365 s’il est ouvert. 
+1. Fermez l’outil d’exportation de découverte électronique s’il est ouvert. 
     
 2. Enregistrez le texte suivant dans un fichier de Registre Windows à l’aide d’un suffixe de nom de fichier. reg ; par exemple, PstExportSize. reg. 
     
@@ -74,11 +74,11 @@ Les clients ont tendance à réduire la limite de taille afin que les résultats
   
  **Sur quel ordinateur dois-je effectuer cette opération ?**
   
-Vous devez modifier le paramètre de Registre sur tout ordinateur local sur lequel vous exécutez l’outil d’exportation de découverte électronique Office 365.
+Vous devez modifier le paramètre de Registre sur n’importe quel ordinateur local sur lequel vous exécutez l’outil d’exportation de découverte électronique.
   
  **Après avoir modifié ce paramètre, dois-je redémarrer l’ordinateur ?**
   
-Non, vous n’avez pas besoin de redémarrer l’ordinateur. Toutefois, si l’outil d’exportation eDiscovery d’Office 365 est en cours d’exécution, vous devrez le fermer et le redémarrer une fois que vous aurez modifié ce paramètre.
+Non, vous n’avez pas besoin de redémarrer l’ordinateur. Toutefois, si l’outil d’exportation de découverte électronique est en cours d’exécution, vous devez le fermer et le redémarrer une fois que vous avez modifié ce paramètre.
   
  **Une clé de Registre existante est-elle modifiée ou une nouvelle clé est-elle créée ?**
   

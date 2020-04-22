@@ -14,17 +14,17 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: a6ef28a4-2447-4b43-aae2-f5af6d53c68e
-description: Page d’accueil pour la protection de l’accès aux données et services O365
-ms.openlocfilehash: eec1963f73b4b1e014f3605ae8fc5afee4ae039b
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+description: Page d’accueil pour la protection de l’accès aux données et services Microsoft 365
+ms.openlocfilehash: 4d09ee0aa0ef36222ae0d238b0e7a44ee23994d3
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601701"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632209"
 ---
 # <a name="protect-user-and-device-access"></a>Protéger l’accès aux appareils et l’accès des utilisateurs
 
-La protection de l’accès à vos données et services Office 365 est cruciale pour la défense contre les cyberattaques et la protection contre la perte de données. Les mêmes protections peuvent être appliquées à d’autres applications SaaS dans votre environnement et même aux applications locales publiées avec le proxy d’application Azure Active Directory.
+La protection de l’accès à vos données et services Microsoft 365 est cruciale pour la défense contre les cyberattaques et la protection contre la perte de données. Les mêmes protections peuvent être appliquées à d’autres applications SaaS dans votre environnement et même aux applications locales publiées avec le proxy d’application Azure Active Directory.
   
 ## <a name="step-1-review-recommendations"></a>Étape 1 : passer en revue les recommandations
 
@@ -33,7 +33,7 @@ Découvrez les fonctionnalités recommandées relatives à la protection des ide
 [PDF](https://go.microsoft.com/fwlink/p/?linkid=841656) | [Visio](https://go.microsoft.com/fwlink/p/?linkid=841657) | [Plus de langues](https://www.microsoft.com/download/details.aspx?id=55032)
   
 ## <a name="step-2-protect-administrator-accounts-and-access"></a>Étape 2 : Protégez les comptes d’administrateur et l’accès
-Les comptes d’administration que vous utilisez pour administrer votre environnement Office 365 incluent des privilèges élevés. Il s’agit de cibles précieuses pour les pirates et les cyberattackers. 
+Les comptes d’administration que vous utilisez pour administrer votre environnement Microsoft 365 incluent des privilèges élevés. Il s’agit de cibles précieuses pour les pirates et les cyberattackers. 
 
 Commencez par utiliser les comptes d’administrateur uniquement pour l’administration. Les administrateurs doivent disposer d’un compte d’utilisateur distinct pour une utilisation normale et non administrative et n’utiliser leur compte d’administrateur que si nécessaire pour effectuer une tâche associée à leur fonction.
 
