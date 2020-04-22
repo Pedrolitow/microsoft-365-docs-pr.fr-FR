@@ -1,5 +1,5 @@
 ---
-title: Réponse à un compte de messagerie compromis dans Office 365
+title: Réponse à un compte de messagerie compromis
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -15,26 +15,26 @@ ms.service: O365-seccomp
 localization_priority: Priority
 search.appverid:
 - MET150
-description: Découvrez comment reconnaître et répondre à un compte de messagerie compromis dans Office 365
-ms.openlocfilehash: b19d48046834e3f1387490774babb40dcbd92acc
-ms.sourcegitcommit: 9224a7a5886c0c5fa0bc12bd9f7234a0eba90023
+description: Découvrez comment reconnaître et répondre à un compte de messagerie compromis dans Microsoft 365
+ms.openlocfilehash: 65e3827b578eec2f851c45d9acc69fb7132d01b8
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42372482"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634339"
 ---
-# <a name="responding-to-a-compromised-email-account-in-office-365"></a>Réponse à un compte de messagerie compromis dans Office 365
+# <a name="responding-to-a-compromised-email-account"></a>Réponse à un compte de messagerie compromis
 
-**Résumé** Découvrez comment reconnaître et répondre à un compte de messagerie compromis dans Office 365.
+**Résumé** Découvrez comment reconnaître et répondre à un compte de messagerie compromis dans Microsoft 365.
 
-## <a name="what-is-a-compromised-email-account-in-office-365"></a>Qu’est un compte de messagerie compromis dans Office 365 ?
+## <a name="what-is-a-compromised-email-account-in-microsoft-365"></a>Qu’est un compte de messagerie compromis dans Microsoft 365 ?
 
-L’accès aux boîtes aux lettres, données et autres services Office 365 est contrôlé en utilisant des informations d’identification, par exemple un nom d’utilisateur et un mot de passe ou code confidentiel. Lorsqu’une personne autre que l’utilisateur initial vole ces informations d’identification, les informations d’identification volées sont considérés comme être compromises. Avec ces informations, le pirate peut se connecter en tant qu’utilisateur d’origine et effectuer des actions illicites.
-En utilisant les informations d’identification volées, le pirate peut accéder à la boîte aux lettres de l'utilisateur Office 365, aux dossiers SharePoint ou aux fichiers enregistrés dans le OneDrive de l’utilisateur. Souvent, les pirate envoient des messages électroniques en tant qu’utilisateur d’origine à des destinataires internes ou externes à l’organisation. Lorsque l’utilisateur malveillant envoie des données par messages électroniques à des destinataires externes, il s’agit « d’exfiltration de données ».
+L’accès aux boîtes aux lettres, données et autres services Microsoft 365 est contrôlé en utilisant des informations d’identification, par exemple un nom d’utilisateur et un mot de passe ou code confidentiel. Lorsqu’une personne autre que l’utilisateur initial vole ces informations d’identification, les informations d’identification volées sont considérés comme être compromises. Avec ces informations, le pirate peut se connecter en tant qu’utilisateur d’origine et effectuer des actions illicites.
+En utilisant les informations d’identification volées, le pirate peut accéder à la boîte aux lettres de l'utilisateur Microsoft 365, aux dossiers SharePoint ou aux fichiers enregistrés dans le OneDrive de l’utilisateur. Souvent, les pirate envoient des messages électroniques en tant qu’utilisateur d’origine à des destinataires internes ou externes à l’organisation. Lorsque l’utilisateur malveillant envoie des données par messages électroniques à des destinataires externes, il s’agit « d’exfiltration de données ».
 
-## <a name="symptoms-of-a-compromised-office-365-email-account"></a>Symptômes indiquant un compte de messagerie Office 365 compromis
+## <a name="symptoms-of-a-compromised-microsoft-email-account"></a>Symptômes d’un compte de messagerie Microsoft Corporation compromis
 
-Les utilisateurs peuvent noter et rapporter des activités inhabituelles dans leur boîte aux lettres Office 365. Voici quelques symptômes courantes :
+Les utilisateurs peuvent noter et rapporter des activités inhabituelles dans leur boîte aux lettres Microsoft 365. Voici quelques symptômes courantes :
 
 - Des « activités douteuses », comme des courriers électroniques manquants ou supprimées.
 
@@ -58,9 +58,9 @@ Les utilisateurs peuvent noter et rapporter des activités inhabituelles dans le
 
 Si un utilisateur rapporte un des symptômes ci-dessus, vous devez lancer un examen approfondi. Le centre de sécurité et conformité de Microsoft 365 et le portail Azure proposent des outils pour vous aider à investiguer les activités d’un compte d’utilisateur qui semble avoir été compromis.
 
-- **Journaux d’audit unifiés d’Office 365 dans le Centre de sécurité et conformité** : Passez en revue toutes les activités du compte suspect en filtrant les résultats pour la plage de dates couvrant depuis immédiatement avant une activité suspecte jusqu’à la date du jour. Ne pas filtrer sur les activités au cours de la recherche.
+- **Journaux d’audit unifiés dans le Centre de sécurité et conformité** : passez en revue toutes les activités du compte suspect en filtrant les résultats pour la plage de dates couvrant depuis immédiatement avant une activité suspecte jusqu’à la date du jour. Ne pas filtrer sur les activités au cours de la recherche.
 
-- **Journaux d’audit de l’administrateur Office 365 dans le Centre d'administration Exchange** : vous pouvez utiliser le Centre d’administration Exchange (EAC) dans Exchange Online pour rechercher et afficher les entrées dans le journal d’audit de l’administrateur. Le journal d’audit de l’administrateur enregistre des actions spécifiques, basées sur les cmdlets Exchange Online PowerShell, effectuées par les administrateurs et les utilisateurs disposant de privilèges d’administration. Les entrées du journal d’audit de l’administrateur vous fournissent des informations sur la cmdlet qui a été exécutée, les paramètres utilisés, l’utilisateur qui a exécuté la cmdlet et les objets concernés.
+- **Journaux d’audit de l’administrateur dans le Centre d'administration Exchange** : vous pouvez utiliser le Centre d’administration Exchange (EAC) dans Exchange Online pour rechercher et afficher les entrées dans le journal d’audit de l’administrateur. Le journal d’audit de l’administrateur enregistre des actions spécifiques, basées sur les cmdlets Exchange Online PowerShell, effectuées par les administrateurs et les utilisateurs disposant de privilèges d’administration. Les entrées du journal d’audit de l’administrateur vous fournissent des informations sur la cmdlet qui a été exécutée, les paramètres utilisés, l’utilisateur qui a exécuté la cmdlet et les objets concernés.
 
 - **Utilisez les journaux de connexion Azure AD et autres rapports de risque du portail Azure AD** : examinez les valeurs de ces colonnes :
 
@@ -72,7 +72,7 @@ Si un utilisateur rapporte un des symptômes ci-dessus, vous devez lancer un exa
 
   - réussite ou échec des connexions
 
-## <a name="how-to-secure-and-restore-email-function-to-a-suspected-compromised-office-365-account-and-mailbox"></a>Comment sécuriser et restaurer la fonction courrier pour un compte Office 365 supposé compromis et ses boîtes aux lettres 
+## <a name="how-to-secure-and-restore-email-function-to-a-suspected-compromised-microsoft-365-account-and-mailbox"></a>Comment sécuriser et restaurer la fonction de messagerie pour un compte Microsoft 365 supposé compromis et ses boîtes aux lettres
 
 > [!VIDEO https://videoplayercdn.osi.office.net/hub/?csid=ux-cms-en-us-msoffice&uuid=RE2jvOb&AutoPlayVideo=false]
 
@@ -85,7 +85,7 @@ Vous devez effectuer au plus vite toutes les étapes suivantes pour récupérer 
 > [!WARNING]
 > Ne pas envoyer de nouveau mot de passe à l’utilisateur initial par courrier électronique, car l’utilisateur malveillant a toujours accès à la boîte aux lettres à ce stade.
 
-1. Suivez les procédures de réinitialisation du mot de passe Office 365 Business pour quelqu’un d’autre décrites dans [Réinitialiser les mots de passe Office 365 Entreprise](https://docs.microsoft.com/office365/admin/add-users/reset-passwords)
+1. Suivez les procédures de réinitialisation du mot de passe Microsoft 365 Apps pour entreprise pour quelqu’un d’autre décrites dans [Réinitialiser les mots de passe Microsoft 365 Apps pour entreprise](https://docs.microsoft.com/office365/admin/add-users/reset-passwords)
 
 **Remarques** :
 
@@ -93,7 +93,7 @@ Vous devez effectuer au plus vite toutes les étapes suivantes pour récupérer 
 
 - Ne pas réutiliser un de vos cinq derniers mots de passe. Même si l’exigence de l’historique de mot de passe vous permet de réutiliser un mot de passe plus récent, vous devez en sélectionner un que l’utilisateur malveillant ne peut pas deviner.
 
-- Si votre identité sur site est fédérée avec Office 365, vous devez modifier votre mot de passe sur site, puis vous devez informer votre administrateur de l’attaque.
+- Si votre identité locale est fédérée avec Microsoft 365, vous devez modifier votre mot de passe local, puis vous devez informer votre administrateur de l’attaque.
 
 > [!TIP]
 > Nous vous recommandons vivement d’activer l’authentification multifacteur (MFA) pour éviter les compromissions, en particulier pour les comptes avec des privilèges d’administration.  Vous pouvez en apprendre plus sur MFA [ici](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication).
@@ -178,13 +178,13 @@ Pour débloquer la boîte aux lettres et permettre l’envoi de messages électr
 
 1. Vérifiez vos éléments envoyés. Vous devriez peut-être informer les membres de votre liste de contacts que votre compte a été compromis. L’utilisateur malveillant les a peut-être contacté pour demander de l’argent ou tenter d’usurper leur identité, par exemple, a déclaré que vous étiez bloqué dans un pays étranger et que vous aviez besoin d'argent, ou leur a peut-être envoyé un virus pour pirater leur ordinateur.
 
-2. Tout autre service qui utilise ce compte Exchange en tant que compte de courrier en alternative a pu être compromis. Tout d’abord, effectuez ces étapes pour votre abonnement Office 365, puis effectuez ces étapes pour vos autres comptes.
+2. Tout autre service qui utilise ce compte Exchange en tant que compte de courrier en alternative a pu être compromis. Tout d’abord, effectuez ces étapes pour votre abonnement Microsoft 365, puis effectuez ces étapes pour vos autres comptes.
 
 3. Assurez-vous que vos informations de contact, tels que les numéros de téléphone et adresses, sont correctes.
 
-## <a name="secure-office-365-like-a-cybersecurity-pro"></a>Sécuriser Office 365 comme un pro de la cyber-sécurité
+## <a name="secure-microsoft-365-like-a-cybersecurity-pro"></a>Sécuriser Microsoft 365 comme un pro de la cyber-sécurité
 
-Votre abonnement Office 365 inclut un ensemble puissant de fonctionnalités de sécurité que vous pouvez utiliser pour protéger vos données et vos utilisateurs.  Utilisez la [Feuille de route pour sécuriser Office 365 : principales priorités pour les 30 premiers jours, 90 premiers jours et au-delà](security-roadmap.md), pour implémenter les meilleures pratiques recommandées par Microsoft pour sécuriser votre client Office 365.
+Votre abonnement Microsoft 365 inclut un ensemble puissant de fonctionnalités de sécurité que vous pouvez utiliser pour protéger vos données et vos utilisateurs.  Utilisez la [Feuille de route du Centre de sécurité Microsoft 365 : principales priorités pour les 30 premiers jours, 90 premiers jours et au-delà](security-roadmap.md), pour implémenter les meilleures pratiques recommandées par Microsoft pour sécuriser votre client Microsoft 365.
 
 - Tâches à effectuer lors des 30 premiers jours.  Elle ont un effet immédiat et n’ont qu’un faible impact négatif sur vos utilisateurs.
 
@@ -194,7 +194,7 @@ Votre abonnement Office 365 inclut un ensemble puissant de fonctionnalités de s
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Détecter et résoudre les attaques par injections sur les règles d’Outlook et les formulaires personnalisés dans Office 365](detect-and-remediate-outlook-rules-forms-attack.md)
+- [Détecter et résoudre les attaques par injections sur les règles d’Outlook et les formulaires personnalisés dans Microsoft 365](detect-and-remediate-outlook-rules-forms-attack.md)
 
 - [Centre de plaintes contre la criminalité sur Internet ](https://www.ic3.gov/preventiontips.aspx)
 

@@ -1,5 +1,5 @@
 ---
-title: 'Phase 4 : Office 365 ProPlus'
+title: 'Phase 4 : Microsoft 365 Apps pour entreprise'
 f1.keywords:
 - NOCSH
 ms.author: josephd
@@ -14,37 +14,37 @@ ms.collection:
 - M365-modern-desktop
 - Strat_O365_Enterprise
 ms.custom: ''
-description: Étapes du déploiement de l’infrastructure Office 365 ProPlus pour Microsoft 365 Entreprise.
-ms.openlocfilehash: 2b3ac311863249720a2dc1fba00ead9ebf6ac8e5
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: Les étapes du déploiement de l’infrastructure Microsoft 365 Apps pour entreprise pour Microsoft 365 Entreprise.
+ms.openlocfilehash: fe29b8025a8ccf5babf2c52cd62ebc72860a8a5c
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42066442"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631428"
 ---
-# <a name="phase-4-office-365-proplus"></a>Phase 4 : Office 365 ProPlus
+# <a name="phase-4-microsoft-365-apps-for-enterprise"></a>Phase 4 : Microsoft 365 Apps pour entreprise
 
-![Phase 4 : Office 365 ProPlus](../media/deploy-foundation-infrastructure/O365proplus_icon.png)
+![Phase 4 : Microsoft 365 Apps pour entreprise](../media/deploy-foundation-infrastructure/O365proplus_icon.png)
 
 *Cela s’applique aux versions E3 et E5 de Microsoft 365 Entreprise et Microsoft 365 Éducation*
 
-Microsoft 365 Entreprise inclut Office 365 ProPlus, la version d’abonnement d’Office. Comme Office 2019, Office 365 ProPlus inclut toutes les applications d’Office. Ces applications sont installées directement sur vos appareils clients. Contrairement à Office 2019, Office 365 ProPlus est mis à jour régulièrement avec de nouvelles fonctionnalités et offre un modèle de licence basé sur l’utilisateur qui permet aux utilisateurs d’installer Office sur plusieurs appareils. Pour plus d’informations, consultez [À propos d’Office 365 ProPlus en entreprise](https://docs.microsoft.com/deployoffice/about-office-365-proplus-in-the-enterprise).
+Microsoft 365 Entreprise inclut Microsoft 365 Apps pour entreprise, la version d’abonnement de Microsoft Office. Comme Office 2019, Microsoft 365 Apps pour entreprise inclut toutes les applications d’Office. Ces applications sont installées directement sur vos appareils clients. Contrairement à Office 2019, Microsoft 365 Apps pour entreprise est mis à jour régulièrement avec de nouvelles fonctionnalités et offre un modèle de licence basé sur l’utilisateur qui permet aux utilisateurs d’installer Office sur plusieurs appareils. Pour plus d’informations, consultez la rubrique [À propos de Microsoft 365 Apps pour entreprise dans l’entreprise](https://docs.microsoft.com/deployoffice/about-office-365-proplus-in-the-enterprise).
 
-Dans cette phase, vous déployez Office 365 ProPlus sur les appareils clients dans le cadre de Microsoft 365 Entreprise. En plus de ces instructions, nous vous recommandons d’utiliser [Microsoft Fastrack](https://fasttrack.microsoft.com/office) pour vous aider à effectuer votre déploiement. 
+Dans cette phase, vous déployez Microsoft 365 Apps pour entreprise sur les appareils clients dans le cadre de Microsoft 365 Entreprise. En plus de ces instructions, nous vous recommandons d’utiliser [Microsoft Fastrack](https://fasttrack.microsoft.com/office) pour vous aider à effectuer votre déploiement. 
 
-Si vous avez déjà déployé Office 365 ProPlus, consultez les [critères de sortie](office365proplus-exit-criteria.md) de cette phase pour vous assurer que vous répondez aux conditions requises pour Microsoft 365 Entreprise.
+Si vous avez déjà déployé Microsoft 365 Apps pour entreprise, consultez les [critères de sortie](office365proplus-exit-criteria.md) de cette phase pour vous assurer que vous répondez aux conditions requises pour Microsoft 365 Entreprise.
 
 >[!Note]
->Pour déployer ensemble Windows 10 Entreprise et Office 365 ProPlus, voir le [Centre de déploiement du bureau moderne](desktop-deployment-center-home.md).
+>Pour déployer ensemble Windows 10 Entreprise et Microsoft 365 Apps pour entreprise, voir le [Centre de déploiement de bureau](desktop-deployment-center-home.md).
 >
 
 ## <a name="step-1-assess-your-environment"></a>Étape 1 : évaluer votre environnement
 
-Avant de déployer Office 365 ProPlus, suivez les instructions indiquées dans l’article [Évaluation de votre environnement et de sa configuration requise pour déployer Office 365 ProPlus](https://docs.microsoft.com/DeployOffice/assess-office-365-proplus). Cette évaluation inclut la configuration requise, les informations des appareils de vos clients (par exemple, les architectures et les langues requises), les conditions de licence, la capacité réseau et la compatibilité des applications. L’exécution de l’évaluation vous aidera à prendre des décisions clés dans le cadre de la planification de votre déploiement.
+Avant de déployer Microsoft 365 Apps pour entreprise, suivez les instructions indiquées dans l’article [Évaluation de votre environnement et de sa configuration requise pour déployer Microsoft 365 Apps pour entreprise](https://docs.microsoft.com/DeployOffice/assess-office-365-proplus). Cette évaluation inclut la configuration requise, les informations des appareils de vos clients (par exemple, les architectures et les langues requises), les conditions de licence, la capacité réseau et la compatibilité des applications. L’exécution de l’évaluation vous aidera à prendre des décisions clés dans le cadre de la planification de votre déploiement.
 
 ## <a name="step-2-plan-your-deployment"></a>Étape 2 : planifier votre déploiement
 
-Après avoir évalué votre environnement, suivez les instructions indiquées dans l’article [Planification de votre déploiement d’Office 365 ProPlus](https://docs.microsoft.com/DeployOffice/plan-office-365-proplus) pour créer un plan de déploiement. Ce plan implique les décisions suivantes : 
+Après avoir évalué votre environnement, suivez les instructions indiquées dans l’article [Planification de votre déploiement de Microsoft 365 Apps pour entreprise](https://docs.microsoft.com/DeployOffice/plan-office-365-proplus) pour créer un plan de déploiement. Ce plan implique les décisions suivantes : 
 
 - Déploiement d’Office, notamment quel outil utiliser (par exemple, Microsoft Endpoint Configuration Manager ou l’outil Déploiement d’Office) et où installer Office
 - Comment gérer les mises à jour d’Office
@@ -57,11 +57,11 @@ L’[article de planification](https://docs.microsoft.com/DeployOffice/plan-offi
 
 En fonction de votre plan de déploiement, choisissez le mode de déploiement parmi les possibilités suivantes :
 
-- **[Déployer Office 365 ProPlus avec Configuration Manager](https://docs.microsoft.com/deployoffice/deploy-office-365-proplus-with-system-center-configuration-manager) :** gérez votre déploiement avec Configuration Manager, téléchargez et déployez Office à partir de points de distribution sur votre réseau.
+- **[Déployer Microsoft 365 Apps pour entreprise avec le Gestionnaire de configuration](https://docs.microsoft.com/deployoffice/deploy-office-365-proplus-with-system-center-configuration-manager) :** gérez votre déploiement avec le Gestionnaire de configuration, puis téléchargez et déployez Office à partir de points de distribution sur votre réseau.
 
-- **[Déployer Office 365 ProPlus avec l’outil Déploiement d’Office à partir du cloud](https://docs.microsoft.com/deployoffice/deploy-office-365-proplus-from-the-cloud) :** gérez votre déploiement avec l’outil Déploiement d’Office et installez Office directement sur des appareils clients à partir du CDN d’Office
+- **[Déployer Microsoft 365 Apps pour entreprise avec l’outil Déploiement d’Office à partir du cloud](https://docs.microsoft.com/deployoffice/deploy-office-365-proplus-from-the-cloud) :** gérez votre déploiement avec l’outil Déploiement d’Office et installez Office directement sur des appareils clients à partir du CDN d’Office
  
-- **[Installer soi-même Office 365 ProPlus à partir du portail Office](https://docs.microsoft.com/deployoffice/manage-software-download-settings-office-365) :** gérez votre déploiement à partir du portail Office et demandez à vos utilisateurs d’installer Office directement sur leurs appareils clients à partir du portail
+- **[Installer soi-même Microsoft 365 Apps pour entreprise à partir du portail Office](https://docs.microsoft.com/deployoffice/manage-software-download-settings-office-365) :** gérez votre déploiement à partir du portail Office et demandez à vos utilisateurs d’installer Office directement sur leurs appareils clients à partir du portail
 
 De nombreuses organisations utilisent une combinaison de ces options pour différents utilisateurs. Par exemple, une organisation peut utiliser Configuration Manager pour déployer Office pour la plupart de ses utilisateurs, mais activer l’installation autonome pour un petit groupe de collaborateurs qui ne sont pas fréquemment connectés au réseau interne. 
 
@@ -69,14 +69,14 @@ Si votre organisation utilise Configuration Manager, nous vous recommandons de p
 
 ## <a name="how-microsoft-does-microsoft-365-enterprise"></a>Comment Microsoft gère-t-il Microsoft 365 Entreprise
 
-Découvrez comment les experts Microsoft [déploient et gèrent les mises à jour d’Office 365 ProPlus](https://www.microsoft.com/itshowcase/deploying-and-managing-microsoft-365#primaryR7).
+Découvrez comment les experts Microsoft [déploient et gèrent les mises à jour de Microsoft 365 Apps pour entreprise](https://www.microsoft.com/itshowcase/deploying-and-managing-microsoft-365#primaryR7).
 
 ## <a name="how-contoso-did-microsoft-365-enterprise"></a>Comment Contoso est-elle passée à Microsoft 365 Entreprise ?
 
-Découvrez comment Contoso Corporation, une entreprise multinationale fictive mais représentative, [a déployé Office 365 ProPlus](contoso-o365pp.md).
+Découvrez comment Contoso Corporation, une entreprise multinationale fictive mais représentative, [a déployé Microsoft 365 Apps pour entreprise](contoso-o365pp.md).
 
 ![Société Contoso](../media/contoso-overview/contoso-icon.png)
 
 ## <a name="next-step"></a>Étape suivante
 
-[Critères de sortie de l’infrastructure Office 365 ProPlus](office365proplus-exit-criteria.md)
+[Critères de sortie de l’infrastructure Microsoft 365 Apps pour entreprise](office365proplus-exit-criteria.md)

@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Utilisation des fonctionnalités de sécurité sur Microsoft 365 Entreprise par Contoso.
-ms.openlocfilehash: 036c812e645399e00af270e62d057637867595fe
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: f8a16b07c6d4cb9a62e0131a1f667b675d5eaf66
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597091"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636485"
 ---
 # <a name="summary-of-microsoft-365-enterprise-security-for-the-contoso-corporation"></a>Résumé de la sécurité de Microsoft 365 Entreprise pour Contoso Corporation
 
@@ -62,7 +62,7 @@ Conformément aux meilleures pratiques de sécurité et aux exigences de déploi
 
   Les administrateurs de la sécurité de Contoso ont attribué des rôles d’administrateur inférieurs aux comptes selon la fonction et les responsabilités du membre du service informatique en question.
 
-  Pour obtenir plus d’informations, consultez l’article [À propos des rôles d’administrateur Office 365](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles).
+  Si vous souhaitez en savoir plus, consultez l’article [À propos des rôles d’administrateur Microsoft 365](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles).
 
 - Authentification multifacteur pour tous les comptes d’utilisateur
 
@@ -73,7 +73,7 @@ Conformément aux meilleures pratiques de sécurité et aux exigences de déploi
 
 - Accès plus sûr aux périphériques et aux applications grâce à des stratégies d’accès conditionnel
 
-  Contoso utilise les [stratégies d’accès conditionnel](microsoft-365-policies-configurations.md) pour l’identité, les périphériques, Exchange Online et SharePoint. Les stratégies d’accès conditionnel pour l’identité obligent les utilisateurs à haut risque à modifier leurs mots de passe et empêchent les clients d’utiliser des applications qui ne prennent pas en charge l’authentification moderne. Les stratégies pour les périphériques incluent la définition des applications approuvées et nécessitent des PC et des appareils mobiles compatibles. Les stratégies d’accès conditionnel pour Exchange Online permettent de bloquer les clients ActiveSync et de configurer le chiffrement de messages Office 365. Les stratégies d’accès conditionnel pour SharePoint incluent une protection supplémentaire pour les sites sensibles et hautement réglementés.
+  Contoso utilise les [stratégies d’accès conditionnel](microsoft-365-policies-configurations.md) pour l’identité, les périphériques, Exchange Online et SharePoint. Les stratégies d’accès conditionnel pour l’identité obligent les utilisateurs à haut risque à modifier leurs mots de passe et empêchent les clients d’utiliser des applications qui ne prennent pas en charge l’authentification moderne. Les stratégies pour les périphériques incluent la définition des applications approuvées et nécessitent des PC et des appareils mobiles compatibles. Les stratégies d’accès conditionnel pour Exchange Online permettent de bloquer les clients ActiveSync et de configurer le chiffrement de messages Office 365. Les stratégies d’accès conditionnel pour SharePoint incluent une protection supplémentaire pour les sites sensibles et hautement réglementés.
 
 - Windows Hello Entreprise
 
@@ -97,7 +97,7 @@ Conformément aux meilleures pratiques de sécurité et aux exigences de déploi
 
 - Surveillance et prévention des attaques avec l’examen et réponse contre les menaces Office 365
 
-  Contoso utilise [examen et réponse contre les menaces Office 365](https://docs.microsoft.com/office365/securitycompliance/office-365-ti) pour protéger ses utilisateurs Office 365 en simplifiant l’identification et le traitement des attaques, et pour empêcher des attaques futures.
+  Contoso utilise l’[examen et réponse contre les menaces Office 365](https://docs.microsoft.com/office365/securitycompliance/office-365-ti) pour protéger les utilisateurs en simplifiant l’identification et le traitement des attaques, et pour empêcher des attaques futures.
 
 - Protection contre les attaques sophistiquées avec Advanced Threat Analytics
 
@@ -107,9 +107,9 @@ Conformément aux meilleures pratiques de sécurité et aux exigences de déploi
 
 - Protection des biens numériques sensibles et hautement réglementés avec des étiquettes Azure Information Protection
 
-  Contoso a défini trois niveaux de protection des données et déployé les [étiquettes de confidentialité Office 365](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels) que les utilisateurs appliquent aux biens numériques. Pour ses secrets commerciaux et autres propriétés intellectuelles, Contoso utilise les sous-étiquettes de confidentialité pour les données hautement réglementées qui chiffre du contenu et limite l’accès à des groupes et des comptes d’utilisateurs spécifiques.
+  Contoso a défini trois niveaux de protection des données et déployé les [étiquettes de confidentialité Microsoft 365](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels) que les utilisateurs appliquent aux biens numériques. Pour ses secrets commerciaux et autres propriétés intellectuelles, Contoso utilise les sous-étiquettes de confidentialité pour les données hautement réglementées qui chiffre du contenu et limite l’accès à des groupes et des comptes d’utilisateurs spécifiques.
 
-- Prévention des fuites de données intranet avec la protection contre la perte de données Office 365
+- Empêcher les fuites de données intranet avec la protection contre la perte de données
 
   Contoso a configuré des stratégies de [protection contre la perte de données](https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies) pour Exchange Online, SharePoint et OneDrive Entreprise afin d’empêcher les utilisateurs de partager accidentellement ou intentionnellement des données sensibles.
 

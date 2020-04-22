@@ -15,18 +15,18 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Créez une équipe sécurisée pour stocker vos fichiers les plus précieux et les plus sensibles.
-ms.openlocfilehash: aeb3662d6c8a21cbd56d983515913750fd5259f1
-ms.sourcegitcommit: 6adfcf042e64b21f09f2b8e072e8eba6d3479e31
+ms.openlocfilehash: 95c0fc4177f2a16fc79dd0833809f4405e8cdda9
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "42951969"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631392"
 ---
 # <a name="teams-for-highly-regulated-data"></a>Teams pour les données hautement réglementées
 
-Cet article décrit les recommandations et les étapes à suivre pour configurer une équipe privée dans Microsoft Teams, qui donne l’accès aux fonctionnalités de Teams, telles que les conversations, réunions et fichiers, uniquement aux membres et aux propriétaires du groupe Office 365 pour l’équipe. 
+Cet article décrit les recommandations et les étapes à suivre pour configurer une équipe privée dans Microsoft Teams, qui donne l’accès aux fonctionnalités de Teams, telles que les conversations, les réunions et les fichiers, uniquement aux membres et aux propriétaires du groupe Microsoft 365 de l’équipe. 
 
-Au-delà de l’accès privé sur la base du groupe Office 365, cet article décrit comment configurer le site d’équipe SharePoint privé sous-jacent, auquel vous pouvez accéder à partir de la section **Fichiers** d’un canal d’équipe, afin de renforcer la sécurité nécessaire pour stocker les données hautement réglementées. Sur ce site d’équipe SharePoint, vous pouvez stocker et collaborer sur des fichiers, des pages, un calendrier partagé, des tâches, un bloc-notes et des listes.
+Au-delà de l’accès privé basé sur le groupe Microsoft 365, cet article décrit comment configurer le site d’équipe privé SharePoint sous-jacent, auquel vous pouvez accéder à partir de la section **Fichiers** d’un canal d’équipe, afin de renforcer la sécurité nécessaire pour stocker les données hautement réglementées. Sur ce site d’équipe SharePoint, vous pouvez stocker et collaborer sur des fichiers, des pages, un calendrier partagé, des tâches, un bloc-notes et des listes.
 
 >[!Note]
 > Un scénario similaire utilisant SharePoint est consultable [ici](teams-sharepoint-online-sites-highly-regulated-data.md).
@@ -34,13 +34,13 @@ Au-delà de l’accès privé sur la base du groupe Office 365, cet article déc
 
 Les éléments de configuration d’une équipe pour les données hautement réglementées sont les suivants :
 
-- Une équipe privée avec un groupe Office 365 associé qui dispose de comptes propriétaire et utilisateur.
+- une équipe privée avec un groupe Microsoft 365 associé qui dispose de comptes propriétaire et utilisateur.
 - Une sécurité supplémentaire sur le site SharePoint sous-jacent pour l’équipe qui :
   - Empêche les membres du site d’octroyer l’accès à d’autres personnes.
   - Empêche les non-membres du site de demander l’accès au site.
-- Une étiquette de rétention Office 365 pour le site SharePoint sous-jacent qui est automatiquement appliquée aux nouveaux fichiers sur le site comme moyen par défaut pour définir les stratégies de rétention.
+- Une étiquette de conservation pour le site SharePoint sous-jacent, qui est automatiquement appliquée aux nouveaux fichiers sur le site comme moyen par défaut pour définir les stratégies de conservation.
 - Une stratégie de prévention contre la perte de données (DLP) qui utilise l’étiquette de rétention et empêche les utilisateurs de partager ou d’envoyer des fichiers en dehors de l’organisation.
-- Une étiquette de confidentialité Office 365 ou sous-étiquette d’une étiquette hautement réglementée avec le chiffrement activé et les autorisations de co-édition pour le groupe Office 365 de l’équipe. Les utilisateurs appliquent les étiquettes ou sous-étiquettes aux fichiers stockés dans la section **Fichiers** de l’équipe à partir de l’option de la barre de menus **Confidentialité** dans Word, Excel et PowerPoint.
+- Une étiquette de confidentialité ou une sous-étiquette d’une étiquette hautement réglementée avec le chiffrement activé et les autorisations de co-édition pour le groupe Microsoft 365 de l’équipe. Les utilisateurs appliquent les étiquettes ou sous-étiquettes aux fichiers stockés dans la section **Fichiers** de l’équipe à partir de l’option de la barre de menus **Confidentialité** dans Word, Excel et PowerPoint.
 
 Voici la configuration obtenue avec une étiquette de confidentialité.
 
@@ -76,7 +76,7 @@ Suivez [ces instructions](https://support.office.com/article/create-a-team-from-
 
 Lorsque vous créez une équipe privée, voici les autorisations par défaut :
 
-- Le groupe Office 365 pour l’équipe (le groupe d’équipe) est constitué de propriétaires du groupe et de membres du groupe
+- Le groupe Microsoft 365 de l’équipe (le groupe d’équipe) est constitué des propriétaires et des membres du groupe
 - Pour le site SharePoint sous-jacent pour l’équipe (le site d’équipe) :
   - Les administrateurs de collection de sites sont configurés pour les propriétaires du groupe d’équipe
   - Pour le site d’équipe : 

@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Comprenez les phases principales du déploiement de l’infrastructure de base Microsoft 365 pour entreprise au sein de votre organisation, également appelé déploiement de base.
-ms.openlocfilehash: 6c2784d22e236880b87ece9e04e11fb0502667dd
-ms.sourcegitcommit: e525bcf073a61e1350484719a0c3ceb6ff0d8db1
+ms.openlocfilehash: 287afd5e5f75bb6547e1898877f3d1c65ebfb9a0
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "43153843"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43638247"
 ---
 # <a name="microsoft-365-for-enterprise-foundation-infrastructure"></a>Infrastructure de base de Microsoft 365 pour entreprise
 
@@ -33,9 +33,9 @@ Pour une trajectoire définie pour le déploiement de bout en bout, vous pouvez 
 |![Phase 1 : Mise en réseau](../media/deploy-foundation-infrastructure/networking_icon-small.png)|[Phase 1 : Mise en réseau](networking-infrastructure.md)| Votre réseau est optimisé pour l’accès aux services de Microsoft 365 basés sur le cloud. |
 |![Phase 2 : Identité](../media/deploy-foundation-infrastructure/identity_icon-small.png)|[Phase 2 : Identité](identity-infrastructure.md)| Vos comptes d’administrateur sont protégés, vos utilisateurs et groupes sont synchronisés, et l’authentification utilisateur est forte. |
 |![Phase 3 : Windows 10 Entreprise](../media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)|[Phase 3 : Windows 10 Entreprise](windows10-infrastructure.md)| Vos ordinateurs exécutant Windows 10 ou Windows 10 peuvent bénéficier d’une mise à niveau vers Windows 10 Entreprise, et les nouveaux appareils sont installés avec Windows 10 Entreprise. |
-|![Phase 4 : Office 365 ProPlus](../media/deploy-foundation-infrastructure/O365proplus_icon-small.png)|[Phase 4 : Office 365 ProPlus](office365proplus-infrastructure.md)| Vos utilisateurs existants de Microsoft Office peuvent bénéficier d’une mise à niveau vers Office 365 ProPlus. |
+|![Phase 4 : applications Microsoft 365 pour les entreprises](../media/deploy-foundation-infrastructure/O365proplus_icon-small.png)|[Phase 4 : applications Microsoft 365 pour les entreprises](office365proplus-infrastructure.md)| Vos utilisateurs existants de Microsoft Office peuvent bénéficier d’une mise à niveau vers les applications Microsoft 365 pour les entreprises. |
 |![Phase 5 : Gestion des appareils mobiles](../media/deploy-foundation-infrastructure/mobiledevicemgmt_icon-small.png)|[Phase 5 : Gestion des appareils mobiles](mobility-infrastructure.md)| Vos appareils peuvent être inscrit et gérés. |
-|![Phase 6 : Protection des informations](../media/deploy-foundation-infrastructure/infoprotection_icon-small.png)|[Phase 6 : Protection des informations](infoprotect-infrastructure.md)| Les fonctionnalités de sécurité d’Office 365 sont activées et vos étiquettes et stratégies sont prêtes à protéger les documents et les courriers. |
+|![Phase 6 : Protection des informations](../media/deploy-foundation-infrastructure/infoprotection_icon-small.png)|[Phase 6 : Protection des informations](infoprotect-infrastructure.md)| Les fonctionnalités de sécurité de Microsoft 365 sont activées et vos étiquettes et stratégies sont prêtes à protéger les documents et les courriers. |
 
 Les phases commencent avec le plus fondamental (mise en réseau et identité), puis créer des couches de paramètres d’infrastructure et des groupes :
 
@@ -90,9 +90,9 @@ Par exemple, vous créez les paramètres pour :
 |:-------|:-----|
 | Identité | Synchronisation des comptes et des groupes pour les stratégies d’accès conditionnel basé sur l’identité. |
 | Windows 10 Entreprise | Groupes de mise à niveau automatique pour les ordinateurs exécutant Windows 7 ou Windows 8.1 vers Windows 10 Entreprise en place. |
-| Office 365 ProPlus | Groupes pour déployer automatiquement Office 365 ProPlus pour les utilisateurs avec Office 2010, Office 2013 ou Office 2016. |
+| Applications Microsoft 365 pour les entreprises | Les groupes pour déployer automatiquement les applications Microsoft 365 pour les entreprises pour les utilisateurs avec Office 2010, Office 2013 ou Office 2016. |
 | Gestion des appareils mobiles | Groupes pour l’inscription des appareils et des stratégies d’accès conditionnel basé sur l’appareil. |
-| Protection des informations | Groupes pour les étiquettes de confidentialité d’Office 365. |
+| Protection des informations | Groupes pour les étiquettes de confidentialité. |
 
 Lorsque vous êtes prêt à déployer des éléments de cette infrastructure à des utilisateurs, vous :
 
@@ -100,11 +100,11 @@ Lorsque vous êtes prêt à déployer des éléments de cette infrastructure à 
 |:-------|:-----|
 | Identité | Ajouter des comptes d’utilisateurs à des groupes pour les stratégies d’accès conditionnel basé sur l’identité. |
 | Windows 10 Entreprise | Ajouter des comptes aux groupes pour le déploiement automatique de Windows 10 Entreprise en place pour les utilisateurs avec Windows 7 ou Windows 8.1. |
-| Office 365 ProPlus | Groupes pour le déploiement automatique de Office 365 ProPlus pour les utilisateurs avec Office 2010, Office 2013 ou Office 2016. |
+| Applications Microsoft 365 pour les entreprises | Ajouter des comptes d'utilisateurs aux groupes pour déployer automatiquement les applications Microsoft 365 pour les entreprises pour les utilisateurs avec Office 2010, Office 2013 ou Office 2016. |
 | Gestion des appareils mobiles | Ajouter des comptes aux groupes pour l’inscription des appareils et stratégies d’accès conditionnel basé sur l’appareil. |
 | Protection des informations | Ajoutez des comptes d’utilisateur aux groupes pour les étiquettes de confidentialité. |
 
-Une fois les phases ou les éléments de l’infrastructure de base terminés, testés et pilotés, vous pouvez mettre en place des logiciels installés, comme Windows 10 Entreprise et Office 365 ProPlus et les services et protections basés sur le cloud, tels que l’inscription des appareils et stratégies d’accès conditionnel, à vos utilisateurs de la manière la mieux adaptée à vos objectifs professionnels et ressources informatiques.
+Une fois les phases ou les éléments de l’infrastructure de base terminés, testés et pilotés, vous pouvez mettre en place des logiciels installés, comme Windows 10 Entreprise, les applications Microsoft 365 et les services et protections basés sur le cloud, tels que l’inscription des appareils et stratégies d’accès conditionnel, à vos utilisateurs de la manière la mieux adaptée à vos objectifs professionnels et ressources informatiques.
 
 ## <a name="deployment-and-project-management-strategies"></a>Stratégies de gestion de projet et déploiement
 
@@ -112,7 +112,7 @@ Pour vous donner quelques idées sur la façon de s’essayer à la gestion de p
 
 ## <a name="deployment-for-non-enterprises"></a>Déploiement pour des structures différentes des entreprises
 
-Si votre organisation est plus petite et que Microsoft 365 Entreprise n’est pas adapté à vos besoins, consultez la section [Déploiement pour les structures autres que les entreprises](deploy-foundation-infrastructure-non-enterprises.md) pour une méthode de déploiement simplifiée.
+Si votre organisation est plus petite et que Microsoft 365 pour les entreprises n’est pas adapté à vos besoins, consultez la section [Déploiement pour les structures autres que les entreprises](deploy-foundation-infrastructure-non-enterprises.md) pour une méthode de déploiement simplifiée.
 
 
 ## <a name="next-step"></a>Étape suivante
