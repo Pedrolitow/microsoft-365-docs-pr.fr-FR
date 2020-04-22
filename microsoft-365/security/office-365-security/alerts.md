@@ -1,5 +1,5 @@
 ---
-title: Alerts in the Office 365 Security &amp; Compliance Center
+title: Alertes dans le centre &amp; de sécurité conformité
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -17,32 +17,32 @@ ms.assetid: 2bb4e7c0-5f7f-4144-b647-cc6a956aaa53
 ms.collection:
 - M365-security-compliance
 description: Découvrez les alertes que vous pouvez définir pour faciliter la sécurité dans Office 365.
-ms.openlocfilehash: 57bb6659b374c1ac029b690e738620c2f2857eb9
-ms.sourcegitcommit: ce6121a8e3ca7438071d73b0c76e2b6f33ac1cf7
+ms.openlocfilehash: b8fe746ef18ade5f8e35d5a51ab132377e813915
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "43030122"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634615"
 ---
-# <a name="alerts-in-the-office-365-security-amp-compliance-center"></a>Alerts in the Office 365 Security &amp; Compliance Center
+# <a name="alerts-in-the-security-amp-compliance-center"></a>Alertes dans le centre &amp; de sécurité conformité
 
-Utilisez les fonctionnalités d’alerte dans le centre de &amp; sécurité conformité Office 365 pour afficher et gérer les alertes de votre organisation Office 365, y compris la gestion des alertes avancées dans le cadre de la présentation de la [sécurité des applications Cloud de Microsoft](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security).
+Utilisez les fonctionnalités d’alerte dans le &amp; Centre de conformité et de sécurité pour afficher et gérer les alertes pour votre organisation, notamment la gestion des alertes avancées dans le cadre de la présentation de la sécurité de l' [application Cloud de Microsoft](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security).
   
-## <a name="how-to-get-to-the-office-365-alerts-features"></a>Comment accéder aux fonctionnalités d’alertes Office 365
+## <a name="how-to-get-to-the-alerts-features"></a>Comment accéder aux fonctionnalités des alertes
 
-Les alertes dans Office 365 sont dans le &amp; Centre de sécurité conformité. Voici comment accéder à la page.
+Les alertes se trouvent dans &amp; le centre de sécurité et de conformité. Voici comment accéder à la page.
   
  **Pour accéder directement au centre de &amp; sécurité conformité, procédez comme suit :**
   
 1. Accédez à [https://protection.office.com](https://protection.office.com).
     
-2. Ouvrez une session Office 365 en utilisant votre compte scolaire ou professionnel. 
+2. Connectez-vous à l’aide de votre compte professionnel ou scolaire. 
     
 3. Dans le volet de gauche, cliquez sur **alertes** pour afficher les fonctionnalités des alertes. 
     
- **Pour accéder au centre de &amp; sécurité conformité à l’aide du lanceur d’applications Office 365 :**
+ **Pour accéder au centre de &amp; sécurité conformité à l’aide du lanceur d’applications :**
   
-1. Ouvrez une session Office 365 en utilisant votre compte scolaire ou professionnel. 
+1. Connectez-vous à l’aide de votre compte professionnel ou scolaire. 
     
 2. Cliquez sur le lanceur d’applications dans le coin supérieur gauche, puis cliquez sur **conformité de sécurité &amp; **.
     
@@ -56,7 +56,7 @@ Le tableau suivant décrit les outils disponibles sous **alertes** dans le centr
   
 |**Outil**|**Description**|
 |:-----|:-----|
-|[Gérer les alertes](../../compliance/create-activity-alerts.md) <br/> |Utilisez des alertes d’activité pour envoyer des notifications par courrier électronique à vous-même ou à d’autres administrateurs lorsque les utilisateurs effectuent des activités spécifiques dans Office 365. Les alertes d’activité sont semblables à la recherche d’événements dans le journal d’audit Office 365, à ceci près que vous recevrez un message électronique lors de l’événement pour lequel vous avez créé une alerte.  <br/> |
+|[Gérer les alertes](../../compliance/create-activity-alerts.md) <br/> |Utilisez des alertes d’activité pour envoyer des notifications par courrier électronique à vous-même ou à d’autres administrateurs lorsque les utilisateurs effectuent des activités spécifiques dans Office 365. Les alertes d’activité sont semblables à la recherche d’événements dans le journal d’audit, à l’exception du fait que vous recevez un message électronique lorsqu’un événement pour lequel vous avez créé une alerte a lieu.  <br/> |
 |[Gérer les alertes avancées](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security) <br/> |Utilisez la fonctionnalité **gérer les alertes avancées** d’Office 365 Cloud App Security pour configurer les stratégies qui peuvent vous alerter contre les activités suspectes et anormales dans Office 365. Une fois que vous êtes alerté, vous pouvez examiner les situations susceptibles de poser problème et, si nécessaire, prendre des mesures pour résoudre les problèmes de sécurité.  <br/> |
    
 

@@ -1,5 +1,5 @@
 ---
-title: Intelligence de flux de messagerie dans Office 365
+title: Intelligence de flux de messagerie
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -12,29 +12,29 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: c29f75e5-c16e-409e-a123-430691e38276
-description: Les administrateurs peuvent en savoir plus sur les codes d’erreur associés à la remise des messages à l’aide de connecteurs dans Office 365 (également appelés aide au flux de messagerie).
-ms.openlocfilehash: 849493cefecb3344eaf7b6db73be3930138c236c
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: Les administrateurs peuvent en savoir plus sur les codes d’erreur associés à la remise des messages à l’aide de connecteurs (également appelés intelligence de flux de messagerie).
+ms.openlocfilehash: aa156299dcc835369b7eb69bb5719b27078d8404
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42088653"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635635"
 ---
-# <a name="mail-flow-intelligence-in-office-365"></a>Renseignements sur le flux de messagerie dans Office 365
+# <a name="mail-flow-intelligence"></a>Intelligence de flux de messagerie
 
-En règle générale, vous utilisez un connecteur pour acheminer les messages électroniques de votre organisation Office 365 vers votre environnement de messagerie local. Vous pouvez également utiliser un connecteur pour router les messages d'Office 365 vers une organisation partenaire. Lorsqu'Office 365 ne peut pas remettre ces messages via le connecteur, ils sont mis en file d'attente dans Office 365. Office 365 continuera à relancer la remise de chaque message pendant 24 heures. Au bout de 24 heures, le message en file d’attente expire et le message est renvoyé à l’expéditeur d’origine dans une notification d’échec de remise (également appelée notification de non-remise).
+En règle générale, vous utilisez un connecteur pour acheminer les messages électroniques de votre organisation vers votre environnement de messagerie local. Vous pouvez également utiliser un connecteur pour router les messages de Microsoft 365 vers une organisation partenaire. Lorsque Microsoft 365 ne peut pas fournir ces messages via le connecteur, ils sont mis en file d’attente dans Microsoft 365. Microsoft 365 continue de relancer la remise de chaque message pendant 24 heures. Au bout de 24 heures, le message en file d’attente expire et le message est renvoyé à l’expéditeur d’origine dans une notification d’échec de remise (également appelée notification de non-remise).
 
-Office 365 génère une erreur lorsqu'un message ne peut pas être remis à l'aide d'un connecteur. Les erreurs les plus courantes et leurs solutions sont décrites dans cette rubrique. Les erreurs de notification et de mise en file d’attente pour les messages non remis envoyés via des connecteurs sont appelées _intelligence de flux de messagerie_.
+Microsoft 365 génère une erreur lorsqu’un message ne peut pas être remis à l’aide d’un connecteur. Les erreurs les plus courantes et leurs solutions sont décrites dans cette rubrique. Les erreurs de notification et de mise en file d’attente pour les messages non remis envoyés via des connecteurs sont appelées _intelligence de flux de messagerie_.
 
 ## <a name="error-code-450-44312-dns-query-failed"></a>Code d’erreur : 450 4.4.312 Échec de la requête DNS
 
-En règle générale, cette erreur signifie qu’Office 365 a essayé de se connecter à l’hôte actif qui est spécifié dans le connecteur, mais que la requête DNS de recherche des adresses IP de l’hôte actif a échoué. Les causes pouvant être à l'origine de cette erreur sont les suivantes :
+En règle générale, cette erreur signifie que Microsoft 365 a essayé de se connecter à l’hôte actif qui est spécifié dans le connecteur, mais que la requête DNS de recherche des adresses IP de l’hôte actif a échoué. Les causes pouvant être à l'origine de cette erreur sont les suivantes :
 
 - Il y a un problème avec le service d'hébergement DNS de votre domaine (la partie qui met à jour les serveurs de noms faisant autorité pour votre domaine).
 
 - Votre domaine a expiré récemment, l'enregistrement MX ne peut donc pas être extrait.
 
-- L'enregistrement MX de votre domaine a récemment été modifié et les serveurs DNS Office 365 disposent toujours des informations DNS précédemment mises en cache pour votre domaine.
+- L’enregistrement MX de votre domaine a récemment été modifié et les serveurs DNS disposent toujours des informations DNS précédemment mises en cache pour votre domaine.
 
 ### <a name="how-do-i-fix-error-code-450-44312"></a>Comment corriger le code d’erreur 450 4.4.312 échec ?
 
@@ -44,29 +44,29 @@ En règle générale, cette erreur signifie qu’Office 365 a essayé de se conn
 
 ## <a name="error-code-450-44315-connection-timed-out"></a>Code d’erreur : 450 4.4.315 Délai de connexion dépassé
 
-En règle générale, cela signifie qu’Office 365 ne peut pas se connecter au serveur de messagerie de destination. Les détails de l'erreur expliquent le problème. Par exemple :
+En règle générale, cela signifie que Microsoft 365 ne peut pas se connecter au serveur de messagerie de destination. Les détails de l'erreur expliquent le problème. Par exemple :
 
 - Votre serveur de messagerie local est inactif.
 
-- Il y a une erreur dans les paramètres d'hôte actif du connecteur, donc Office 365 essaie de se connecter à la mauvaise adresse IP.
+- Il y a une erreur dans les paramètres d’hôte actif du connecteur, donc Microsoft 365 tente de se connecter à une adresse IP incorrecte.
 
 ### <a name="how-do-i-fix-error-code-450-44315"></a>Comment corriger le code d’erreur 450 4.4.315 délai ?
 
-- Déterminez le scénario qui vous concerne et apportez les corrections nécessaires. Par exemple, si le flux de messagerie fonctionne correctement et que vous n’avez pas modifié les paramètres du connecteur, vous devez vérifier votre environnement de messagerie local pour déterminer si le serveur est en panne ou s’il y a eu des modifications apportées à votre infrastructure réseau (par exemple, vous avez modifié les fournisseurs de services Internet, de sorte que vous avez à présent des adresses IP différentes.
+- Déterminez le scénario qui vous concerne et apportez les corrections nécessaires. Par exemple, si le flux de messagerie fonctionne correctement et que vous n’avez pas modifié les paramètres du connecteur, vous devez vérifier votre environnement de messagerie local pour déterminer si le serveur est inactif ou, s’il y a eu des modifications apportées à votre infrastructure réseau (par exemple, si vous avez modifié les fournisseurs de services Internet, vous avez maintenant des adresses IP différentes).
 
 - Si l’erreur provient de votre organisation partenaire (par exemple, un fournisseur de services Cloud tiers), contactez votre partenaire pour résoudre le problème.
 
 ## <a name="error-code-450-44316-connection-refused"></a>Code d’erreur : 450 4.4.316 Connexion refusée.
 
-En règle générale, cette erreur signifie qu’Office 365 a rencontré une erreur de connexion lorsqu’il a essayé de se connecter au serveur de messagerie de destination. Une cause probable de cette erreur est que votre pare-feu bloque les connexions depuis des adresses IP Office 365. Cette erreur peut également être voulue si vous avez entièrement migré votre système de messagerie local vers Office 365 et arrêté votre environnement de messagerie local.
+En règle générale, cette erreur signifie que Microsoft 365 a rencontré une erreur de connexion lorsqu’il a essayé de se connecter au serveur de messagerie de destination. Une cause probable de cette erreur est que votre pare-feu bloque les connexions des adresses IP Microsoft 365. Cette erreur peut également être voulue si vous avez entièrement migré votre système de messagerie local vers Microsoft 365 et arrêté votre environnement de messagerie local.
 
 ### <a name="how-do-i-fix-error-code-450-44316"></a>Comment corriger le code d’erreur 450 4.4.316 ?
 
-- Si vous avez des boîtes aux lettres dans votre environnement local, vous devez modifier les paramètres de votre pare-feu pour autoriser les connexions à partir des adresses IP Office 365 sur le port TCP 25 vers vos serveurs de messagerie locaux. Pour obtenir une liste des adresses IP Office 365, consultez l'article [URL et plages d'adresses IP Office 365](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges).
+- Si vous avez des boîtes aux lettres dans votre environnement local, vous devez modifier les paramètres de votre pare-feu pour autoriser les connexions des adresses IP Microsoft 365 sur le port TCP 25 à vos serveurs de messagerie locaux. Pour obtenir la liste des adresses IP Microsoft 365, voir [URL et plages d’adresses IP microsoft 365](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges).
 
-- Si aucun autre message ne doit être remis dans votre environnement local, cliquez sur **Fix now** (Corriger maintenant) dans l'alerte afin qu'Office 365 puisse rejeter immédiatement les messages dont les destinataires ne sont pas valides. Cette action réduira le risque de dépasser le quota de destinataires non valides de votre organisation, ce qui peut avoir des répercussions négatives sur la remise normale des messages. Vous pouvez également suivre les instructions suivantes pour résoudre manuellement le problème :
+- Si aucun autre message ne doit être remis à votre environnement local, cliquez sur **corriger maintenant** dans l’alerte afin que Microsoft 365 puisse rejeter immédiatement les messages dont les destinataires ne sont pas valides. Cette action réduira le risque de dépasser le quota de destinataires non valides de votre organisation, ce qui peut avoir des répercussions négatives sur la remise normale des messages. Vous pouvez également suivre les instructions suivantes pour résoudre manuellement le problème :
 
-  - Dans le [Centre d’administration Exchange](https://docs.microsoft.com/Exchange/exchange-admin-center) dans Office 365, désactivez ou supprimez le connecteur qui remet le courrier électronique d’Office 365 à votre environnement de messagerie local :
+  - Dans le [Centre d’administration Exchange](https://docs.microsoft.com/Exchange/exchange-admin-center), désactivez ou supprimez le connecteur qui remet le courrier électronique de Microsoft 365 à votre environnement de messagerie local :
 
     1. Dans le centre d’administration Exchange, accédez à **connecteurs**de **flux** \> de messagerie.
 
@@ -74,9 +74,9 @@ En règle générale, cette erreur signifie qu’Office 365 a rencontré une err
 
        - Supprimez le connecteur en cliquant sur **supprimer** ![l’icône Supprimer.](../../media/adf01106-cc79-475c-8673-065371c1897b.gif)
 
-       - Désactivez le connecteur **** ![en cliquant sur](../../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif) modifier l’icône modifier, puis désactivez la case à cocher **activer**.
+       - Désactivez le connecteur **Edit** ![en cliquant sur](../../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif) modifier l’icône modifier, puis désactivez la case à cocher **activer**.
 
-  - Modifiez le domaine accepté dans Office 365 associé à votre environnement de messagerie local de **relais interne** vers **faisant autorité**. Pour obtenir des instructions, consultez la rubrique [gestion des domaines acceptés dans Exchange Online](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains).
+  - Modifiez le domaine accepté dans Microsoft 365 qui est associé à votre environnement de messagerie local de **relais interne** à **faisant autorité**. Pour obtenir des instructions, consultez la rubrique [gestion des domaines acceptés dans Exchange Online](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains).
 
   **Remarque**: en règle générale, ces modifications prennent entre 30 minutes et une heure pour prendre effet. Après une heure, vérifiez que vous ne recevez plus l’erreur.
 
@@ -84,7 +84,7 @@ En règle générale, cette erreur signifie qu’Office 365 a rencontré une err
 
 ## <a name="error-code-450-44317-cannot-connect-to-remote-server"></a>Code d’erreur : 450 4.4.317 La connexion au serveur distant a échoué
 
-En règle générale, cette erreur signifie qu’Office 365 est connecté au serveur de messagerie de destination, mais que le serveur a répondu avec une erreur immédiate ou ne répond pas aux exigences de connexion. Les détails de l'erreur expliquent le problème. Par exemple :
+En règle générale, cette erreur signifie que Microsoft 365 est connecté au serveur de messagerie de destination, mais que le serveur a répondu avec une erreur immédiate ou ne répond pas aux exigences de connexion. Les détails de l'erreur expliquent le problème. Par exemple :
 
 - Le serveur de messagerie de destination a répondu avec une erreur « service non disponible », ce qui indique que le serveur ne peut pas maintenir la communication avec Office 365.
 
@@ -98,7 +98,7 @@ En règle générale, cette erreur signifie qu’Office 365 est connecté au ser
 
 ## <a name="error-code-450-44318-connection-was-closed-abruptly"></a>Code d’erreur : 450 4.4.318 La connexion a été interrompue brusquement
 
-En règle générale, cette erreur signifie qu’Office 365 rencontre des difficultés pour communiquer avec votre environnement de messagerie local, de sorte que la connexion a été abandonnée. Les causes pouvant être à l'origine de cette erreur sont les suivantes :
+En règle générale, cette erreur signifie que Microsoft 365 rencontre des difficultés pour communiquer avec votre environnement de messagerie local, de sorte que la connexion a été abandonnée. Les causes pouvant être à l'origine de cette erreur sont les suivantes :
 
 - Votre pare-feu utilise des règles d'examen de paquet SMTP, lesquelles ne fonctionnent pas correctement.
 
@@ -116,7 +116,7 @@ En règle générale, cette erreur signifie qu’Office 365 rencontre des diffic
 
 ## <a name="error-code-450-47320-certificate-validation-failed"></a>Code d’erreur : 450 4.7.320 Échec de la validation du certificat
 
-En règle générale, cette erreur signifie qu’Office 365 a rencontré une erreur lors de la tentative de validation du certificat du serveur de messagerie de destination. Les détails de l'erreur expliquent cette dernière. Par exemple :
+En règle générale, cette erreur signifie que Microsoft 365 a rencontré une erreur lors de la tentative de validation du certificat du serveur de messagerie de destination. Les détails de l'erreur expliquent cette dernière. Par exemple :
 
 - Le certificat est arrivé à expiration.
 
@@ -126,12 +126,12 @@ En règle générale, cette erreur signifie qu’Office 365 a rencontré une err
 
 ### <a name="how-do-i-fix-error-code-450-47320"></a>Comment corriger le code d’erreur 450 4.7.320 échec ?
 
-- Corrigez le certificat ou les paramètres sur le connecteur afin que les messages en file d’attente dans Office 365 puissent être remis.
+- Corrigez le certificat ou les paramètres sur le connecteur afin que les messages en file d’attente dans Microsoft 365 puissent être remis.
 
 - Si votre organisation partenaire (par exemple, un fournisseur de services cloud tiers) est à l'origine de l'erreur, vous devez contacter votre partenaire afin de résoudre le problème.
 
 ## <a name="other-error-codes"></a>Autres codes d’erreur
 
-Office 365 rencontre des problèmes lors de la remise de messages à votre serveur de messagerie local ou partenaire. Utilisez les informations sur le **serveur de destination** dans l'erreur afin d'examiner le problème dans votre environnement ou modifiez le connecteur en cas d'erreur de configuration.
+Microsoft 365 rencontre des difficultés lors de la remise de messages à votre serveur de messagerie local ou partenaire. Utilisez les informations sur le **serveur de destination** dans l'erreur afin d'examiner le problème dans votre environnement ou modifiez le connecteur en cas d'erreur de configuration.
 
 Si votre organisation partenaire (par exemple, un fournisseur de services cloud tiers) est à l'origine de l'erreur, vous devez contacter votre partenaire afin de résoudre le problème.

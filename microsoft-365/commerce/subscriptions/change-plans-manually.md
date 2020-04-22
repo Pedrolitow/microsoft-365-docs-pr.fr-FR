@@ -1,5 +1,5 @@
 ---
-title: Modifier manuellement les offres Office 365 pour les entreprises
+title: Modifier manuellement les offres Microsoft 365 pour les entreprises
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -21,12 +21,12 @@ search.appverid:
 - BEA160
 ROBOTS: NOINDEX
 description: Modifiez les abonnements manuellement en achetant un nouvel abonnement et en vous assurant que les abonnements sont répertoriés et actifs.
-ms.openlocfilehash: 80e10c3b24fa69ee5b1a6c89790260c2ac810588
-ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
+ms.openlocfilehash: 89786b30403a60bd0551351602d6fccc07f3d1a1
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43142150"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636582"
 ---
 # <a name="change-plans-manually"></a>Modifier les offres manuellement
 
@@ -51,9 +51,9 @@ Pour poursuivre une modification manuelle, lisez l' [étape 2 : acheter un nouv
 
 OR
 
-**Acheter un nouvel abonnement et des licences :** Suivez les étapes de la procédure [acheter un autre abonnement Office 365 pour les entreprises](../buy-another-subscription.md) pour acheter un nouvel abonnement.
+**Acheter un nouvel abonnement et des licences :** Suivez les étapes de la procédure [acheter un autre abonnement Microsoft 365 pour les entreprises](../buy-another-subscription.md) pour acheter un nouvel abonnement.
 
-Assurez-vous que vous achetez un abonnement pour la même organisation que les utilisateurs. Par exemple, vérifiez les adresses de messagerie des utilisateurs d’Office 365 que vous souhaitez déplacer. Si leurs adresses de messagerie \@incluent contoso.com, vous devez acheter un nouvel abonnement pour contoso.com.
+Assurez-vous que vous achetez un abonnement pour la même organisation que les utilisateurs. Par exemple, vérifiez les adresses de messagerie des utilisateurs que vous souhaitez déplacer. Si leurs adresses de messagerie \@incluent contoso.com, vous devez acheter un nouvel abonnement pour contoso.com.
 Incluez une licence pour chaque utilisateur que vous souhaitez déplacer.
 
 ## <a name="step-3-check-your-new-subscription-and-licenses"></a>Étape 3 : vérifier votre nouvel abonnement et vos nouvelles licences
@@ -83,7 +83,7 @@ Les licences pour l’abonnement actuel seront supprimées ultérieurement ; vo
 
 ### <a name="reassign-a-license-for-one-user"></a>Réattribuer une licence pour un utilisateur
 
-1. Dans le Centre d’administration, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utilisateurs actifs</a>.
+1. Dans le Centre d’administration, accédez à la page **Utilisateurs >** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utilisateurs actifs</a>.
 
 2. Sur la page **utilisateurs actifs** , sélectionnez l’utilisateur auquel vous souhaitez attribuer une licence.
 
@@ -91,7 +91,7 @@ Les licences pour l’abonnement actuel seront supprimées ultérieurement ; vo
 
 ### <a name="reassign-licenses-for-multiple-users-at-once"></a>Réattribuer des licences pour plusieurs utilisateurs à la fois
 
-1. Dans le Centre d’administration, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utilisateurs actifs</a>.
+1. Dans le Centre d’administration, accédez à la page **Utilisateurs >** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utilisateurs actifs</a>.
 
 2. Sélectionnez les cercles en regard des noms des utilisateurs pour lesquels vous souhaitez remplacer les licences existantes.
 
@@ -114,5 +114,4 @@ Si vous avez déplacé tous les utilisateurs d’un abonnement vers un autre, et
 Si vous avez déplacé uniquement certains utilisateurs vers un autre abonnement, [supprimez les licences](../licenses/remove-licenses-from-subscription.md) dont vous n’avez plus besoin.
 
 ## <a name="call-support-to-help-you-change-plans"></a>Appeler le support pour vous aider à modifier les offres
-
 [Appeler le support Microsoft](../../admin/contact-support-for-business-products.md)

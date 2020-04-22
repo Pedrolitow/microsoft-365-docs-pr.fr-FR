@@ -1,5 +1,5 @@
 ---
-title: Vue d’ensemble des groupes Office 365 pour les administrateurs
+title: Vue d’ensemble des groupes Microsoft 365 pour les administrateurs
 ms.reviewer: arvaradh
 f1.keywords: NOCSH
 ms.author: mikeplum
@@ -17,17 +17,17 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Découvrez les groupes Office 365.
-ms.openlocfilehash: c45c78a26d421c5c16e6ca0769e8adc7ba6e79a8
-ms.sourcegitcommit: 0da80ba7b504841c502ab06fea659a985c06fe8f
+description: Découvrez les groupes Microsoft 365.
+ms.openlocfilehash: 9d47383d3226d5a18b9a30a579f6497c7ce63477
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "43547543"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43630042"
 ---
-# <a name="overview-of-office-365-groups-for-administrators"></a>Vue d’ensemble des groupes Office 365 pour les administrateurs
+# <a name="overview-of-microsoft-365-groups-for-administrators"></a>Vue d’ensemble des groupes Microsoft 365 pour les administrateurs
 
-Groupes Office 365 est le service d’appartenance de base qui dirige tout le travail d’équipe dans Microsoft 365. Avec les groupes Office 365, vous pouvez donner à un groupe de personnes l’accès à une collection de ressources de collaboration que ces personnes peuvent partager. Ces ressources sont les suivantes :
+Microsoft 365 groups est le service d’appartenance de base qui dirige tout le travail d’équipe dans Microsoft 365. Avec les groupes Microsoft 365, vous pouvez donner à un groupe de personnes l’accès à une collection de ressources de collaboration que ces personnes peuvent partager. Ces ressources sont les suivantes :
 
 - Boîte de réception Outlook partagée
 - Un calendrier partagé
@@ -39,9 +39,9 @@ Groupes Office 365 est le service d’appartenance de base qui dirige tout le tr
 - Une équipe (si le groupe a été créé à partir de Teams)
 - Feuille de route (si vous avez Project pour le Web)
 
-Avec un groupe Office 365, vous n’avez pas besoin d’attribuer manuellement des autorisations à chacune de ces ressources, car l’ajout de personnes au groupe leur accorde automatiquement les autorisations dont ils ont besoin pour les outils fournis par le groupe.
+Avec un groupe Microsoft 365, vous n’avez pas besoin d’attribuer manuellement des autorisations à chacune de ces ressources, car l’ajout de personnes au groupe leur accorde automatiquement les autorisations dont ils ont besoin pour les outils fournis par le groupe.
 
-Tout utilisateur d’Office 365 peut créer un groupe, sauf si vous [Limitez la création de groupe à un ensemble spécifique de personnes](manage-creation-of-groups.md). Notez que si vous limitez la création de groupe, les utilisateurs qui ne peuvent pas créer de groupes ne seront pas en mesure de créer des sites, des planificateurs ou des équipes SharePoint. Ces services nécessitent que les personnes qui les créent soient en mesure de créer un groupe. Les utilisateurs peuvent toujours participer à des activités de groupe, telles que la création de tâches dans le planificateur ou l’utilisation de la conversation Teams, à condition qu’ils soient membres du groupe.
+Tout utilisateur peut créer un groupe, sauf si vous [Limitez la création de groupe à un ensemble spécifique de personnes](manage-creation-of-groups.md). Notez que si vous limitez la création de groupe, les utilisateurs qui ne peuvent pas créer de groupes ne seront pas en mesure de créer des sites, des planificateurs ou des équipes SharePoint. Ces services nécessitent que les personnes qui les créent soient en mesure de créer un groupe. Les utilisateurs peuvent toujours participer à des activités de groupe, telles que la création de tâches dans le planificateur ou l’utilisation de la conversation Teams, à condition qu’ils soient membres du groupe.
 
 Les groupes ont les rôles suivants :
 
@@ -59,15 +59,15 @@ En tant qu’administrateur, vous pouvez :
 - [Gérer l’accès invité à des groupes](manage-guest-access-in-groups.md)
 - [Récupérer un groupe supprimé](restore-deleted-group.md) (dans les 30 jours suivant la suppression)
 
-Si vous préférez un moyen plus automatisé de gérer le cycle de vie de vos groupes Office 365, vous pouvez utiliser des stratégies d’expiration pour faire expirer les groupes à un intervalle de temps spécifique. Les propriétaires du groupe reçoivent un message électronique 30, 15 et 1 jour avant l’expiration du groupe qui leur permet de renouveler facilement le groupe s’il est toujours nécessaire. Voir : [stratégie d’expiration de groupe Office 365](office-365-groups-expiration-policy.md).
+Si vous préférez un moyen plus automatisé de gérer le cycle de vie de vos groupes Microsoft 365, vous pouvez utiliser des stratégies d’expiration pour faire expirer les groupes à un intervalle de temps spécifique. Les propriétaires du groupe reçoivent un message électronique 30, 15 et 1 jour avant l’expiration du groupe qui leur permet de renouveler facilement le groupe s’il est toujours nécessaire. Consultez la rubrique relative à la [stratégie d’expiration de groupe Microsoft 365](office-365-groups-expiration-policy.md).
 
 Vous pouvez administrer vos groupes à partir du centre d’administration 365 de Microsoft ou à [l’aide de PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/manage-office-365-groups-with-powershell).
 
-Si vous avez un grand nombre d’utilisateurs, comme dans une grande entreprise ou entreprise, vous pouvez avoir de nombreux utilisateurs qui créent des groupes à diverses fins. Nous vous recommandons vivement de consulter le [plan de gouvernance dans les groupes Office 365](plan-for-groups-governance.md) pour obtenir les meilleures pratiques.
+Si vous avez un grand nombre d’utilisateurs, comme dans une grande entreprise ou entreprise, vous pouvez avoir de nombreux utilisateurs qui créent des groupes à diverses fins. Nous vous recommandons vivement de consulter le [plan de gouvernance dans les groupes Microsoft 365](plan-for-groups-governance.md) pour obtenir les meilleures pratiques.
 
 ## <a name="group-limits"></a>Limites des groupes
 
-Les limites suivantes s’appliquent aux groupes Office 365 :
+Les limites suivantes s’appliquent aux groupes Microsoft 365 :
 
 |Maximum...|Valeur|
 |:---------|:----|
@@ -79,20 +79,20 @@ Les limites suivantes s’appliquent aux groupes Office 365 :
 |Stockage de fichiers|1 téraoctet + 10 Go par utilisateur abonné + tout stockage supplémentaire acheté. Vous pouvez acheter une quantité illimitée de stockage supplémentaire.|
 |Taille de la boîte aux lettres de groupe|50 Go|
 
-Le nombre maximal par défaut de groupes Office 365 qu’une organisation Office 365 peut avoir est 500 000, mais peut être augmenté par demande. Pour plus d’informations sur les limites des groupes Office 365, reportez-vous à la rubrique [groupes office 365-aide de l’administrateur](https://support.office.com/article/3f780e8e-61aa-4287-830d-ff6209cbc192.aspx).
+Le nombre maximal par défaut de groupes Microsoft 365 qu’une organisation peut avoir est 500 000, mais peut être augmenté par demande. Pour plus d’informations sur les limites des groupes Microsoft 365, consultez la rubrique [groupes microsoft 365-aide de l’administrateur](https://support.office.com/article/3f780e8e-61aa-4287-830d-ff6209cbc192.aspx).
 
-La gestion de vos groupes Office 365 est plus efficace lorsque vous disposez d’informations sur l’utilisation des groupes. Le centre d’administration Microsoft 365 dispose d’un outil de création de rapports qui vous permet de voir des éléments tels que l’utilisation du stockage, le nombre de groupes actifs dont vous disposez et même le mode d’utilisation des groupes par vos utilisateurs. Pour plus d’informations, reportez-vous à [la rubrique rapports Office 365 dans le centre d’administration](../activity-reports/office-365-groups.md) .
+La gestion de vos groupes Microsoft 365 est plus efficace lorsque vous disposez d’informations sur l’utilisation des groupes. Le centre d’administration Microsoft 365 dispose d’un outil de création de rapports qui vous permet de voir des éléments tels que l’utilisation du stockage, le nombre de groupes actifs dont vous disposez et même le mode d’utilisation des groupes par vos utilisateurs. Pour plus d’informations, reportez-vous à [la rubrique rapports Microsoft 365 dans le centre d’administration](../activity-reports/office-365-groups.md) .
 
-## <a name="which-office-365-plans-include-groups"></a>Quels sont les plans Office 365 qui incluent des groupes ?
+## <a name="which-microsoft-365-plans-include-groups"></a>Quels sont les plans Microsoft 365 qui incluent des groupes ?
 
-Tout abonnement Office 365 avec Exchange Online et SharePoint Online prend en charge les groupes. Cela inclut les plans Business Essentials et Business Premium, ainsi que les plans entreprise E1, E3 et E5. Le groupe prend en la gestion des licences de la personne qui crée le groupe (également appelée « organisateur » du groupe). Tant que l’organisateur dispose de la licence appropriée pour toutes les fonctionnalités que vous souhaitez affecter au groupe, cette licence sera acheminée vers le groupe.
+Tout abonnement Microsoft 365 avec Exchange Online et SharePoint Online prend en charge les groupes. Cela inclut les plans Business Essentials et Business Premium, ainsi que les plans entreprise E1, E3 et E5. Le groupe prend en la gestion des licences de la personne qui crée le groupe (également appelée « organisateur » du groupe). Tant que l’organisateur dispose de la licence appropriée pour toutes les fonctionnalités que vous souhaitez affecter au groupe, cette licence sera acheminée vers le groupe.
 
 > [!NOTE]
-> Pour plus d’informations sur les familles et plans de service Office 365, voir [office 365 plan options](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-plan-options)
+> Pour plus d’informations sur les familles et plans de service Microsoft 365, voir [microsoft 365 plan options](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-plan-options) .
 
 Si vous avez un plan Exchange uniquement, vous pouvez toujours obtenir la boîte de réception partagée et les fonctionnalités de calendrier partagé des groupes dans Outlook, mais vous n’obtiendrez pas la bibliothèque de documents, le planificateur ou l’une des autres fonctionnalités.
 
-Les groupes Office 365 fonctionnent avec Azure Active Directory (AAD). Les groupes dont vous disposez dépendent de l’abonnement Azure Active Directory dont vous disposez et de la ou des licences affectées à l’organisateur du groupe.
+Les groupes Microsoft 365 fonctionnent avec Azure Active Directory (AAD). Les groupes dont vous disposez dépendent de l’abonnement Azure Active Directory dont vous disposez et de la ou des licences affectées à l’organisateur du groupe.
 
 > [!IMPORTANT]
 > Pour toutes les fonctionnalités de groupe, si vous disposez d’un abonnement Azure AD Premium, les utilisateurs peuvent rejoindre le groupe, qu’ils disposent ou non d’une licence AAD P1 qui leur est attribuée. La gestion des licences n’est pas appliquée.
@@ -100,10 +100,10 @@ Les groupes Office 365 fonctionnent avec Azure Active Directory (AAD). Les group
 
 ## <a name="related-articles"></a>Articles connexes
 
-[En savoir plus sur les Groupes Office 365](https://support.office.com/article/learn-about-office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2)
+[En savoir plus sur les groupes Microsoft 365](https://support.office.com/article/learn-about-office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2)
 
-[Mettre à niveau des listes de distribution vers des groupes Office 365](../manage/upgrade-distribution-lists.md)
+[Mettre à niveau les listes de distribution vers des groupes Microsoft 365](../manage/upgrade-distribution-lists.md)
 
-[Utiliser PowerShell pour gérer les groupes Office 365](https://docs.microsoft.com/office365/enterprise/powershell/manage-office-365-groups-with-powershell)
+[Gérer les groupes Microsoft 365 avec PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/manage-office-365-groups-with-powershell)
 
 [Limites de SharePoint Online](https://docs.microsoft.com/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits)

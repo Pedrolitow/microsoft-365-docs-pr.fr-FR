@@ -1,5 +1,5 @@
 ---
-title: Entrer votre clé de produit pour Office 365 Business Premium
+title: Entrer votre clé de produit pour Microsoft 365 Business standard
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -21,22 +21,22 @@ search.appverid:
 - BEA160
 ms.assetid: 0199dd39-7c46-4875-af9b-588df3a9afea
 ROBOTS: NOINDEX
-description: Découvrez Comment échanger une clé de produit Office 365 Business Premium achetée auprès d’un détaillant.
+description: Découvrez Comment échanger une clé de produit Microsoft 365 Business standard achetée auprès d’un détaillant.
 ms.custom: okr_SMB
-ms.openlocfilehash: 6ae3a490d4ee7bc311421bf69e7437c1c345c1d4
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 9cabc3d3f132ef2e3e56c1209b632f1e10a8637e
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42242352"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634907"
 ---
-# <a name="enter-your-product-key-for-office-365-business-premium"></a>Entrer votre clé de produit pour Office 365 Business Premium
+# <a name="enter-your-product-key-for-microsoft-365-business-standard"></a>Entrer votre clé de produit pour Microsoft 365 Business standard
 
-Si vous avez acheté Office 365 Business Premium auprès d’un détaillant, cet article vous aide à activer votre abonnement. 
+Si vous avez acheté Microsoft 365 Business standard auprès d’un détaillant, cet article vous aide à activer votre abonnement. 
   
  **Vous avez besoin d'autres informations ?**
- **Pour obtenir de l’aide sur office 365 Home ou sur Personal**, consultez la rubrique [utilisation de clés de produit avec Office](https://support.office.com/article/12a5763a-d45c-4685-8c95-a44500213759.aspx).  
- **Client de licence en volume ?** Si vous avez acheté Office 365 pour les entreprises via un [programme de licence Microsoft Open](https://go.microsoft.com/fwlink/p/?LinkID=613298), reportez-vous à l’article « [Entrez la clé de produit achetée auprès de Microsoft Open](purchases-from-microsoft-open.md)».
+ **Pour obtenir de l’aide sur la famille microsoft 365 ou microsoft 365 personnel**, consultez la rubrique [utilisation de clés de produit avec Office](https://support.office.com/article/12a5763a-d45c-4685-8c95-a44500213759.aspx).  
+ **Client de licence en volume ?** Si vous avez acheté Microsoft 365 pour les entreprises via un [programme de licence Microsoft Open](https://go.microsoft.com/fwlink/p/?LinkID=613298), reportez-vous à l’article « [Entrez la clé de produit achetée auprès de Microsoft Open](purchases-from-microsoft-open.md)».
   
 ## <a name="activate-a-new-subscription"></a>Activer un nouvel abonnement
 
@@ -57,14 +57,14 @@ Si vous avez acheté Office 365 Business Premium auprès d’un détaillant, cet
 
 ## <a name="extend-the-expiration-date-or-add-a-license-to-an-existing-subscription"></a>Prolonger la date d’expiration ou ajouter une licence à un abonnement existant
 
-Pour utiliser une clé de produit afin d’étendre la date d’expiration ou d’ajouter une licence à votre abonnement Office 365 Business Premium existant, vous avez besoin d’une clé nouvelle et inutilisée pour le même plan Office 365. L'utilisation de votre clé de produit Office 365 d'origine ne fonctionnera pas, car une clé déjà échangée ne peut pas être réutilisée. Voir [Ajouter des licences ou étendre un abonnement payé pour l’utilisation d’une clé de produit](licenses/add-licenses-using-product-key.md).
+Pour utiliser une clé de produit afin d’étendre la date d’expiration ou d’ajouter une licence à votre abonnement Microsoft 365 entreprise standard existant, vous avez besoin d’une clé nouvelle et inutilisée pour le même plan Microsoft 365. La saisie de votre clé de produit Microsoft 365 ne fonctionnera pas, car une clé qui a déjà été échangée ne peut pas être réutilisée. Voir [Ajouter des licences ou étendre un abonnement payé pour l’utilisation d’une clé de produit](licenses/add-licenses-using-product-key.md).
 
 ## <a name="whats-next"></a>Étape suivante
 
-Si vous débutez avec Office 365 for Business, Découvrez comment [configurer office 365](../admin/setup/setup.md).
+Si vous débutez avec Microsoft 365 for Business, Découvrez comment [configurer microsoft 365](../admin/setup/setup.md).
   
 ## <a name="still-having-trouble-with-product-keys"></a>Vous rencontrez toujours des problèmes avec les clés de produit ?
 
-Consultez la liste des erreurs courantes et les solutions associées : [Vous rencontrez des problèmes avec votre clé de produit Office 365 pour les entreprises ?](product-key-errors-and-solutions.md)
+Consultez la liste des erreurs et solutions courantes : [problèmes liés à votre clé de produit Microsoft 365 pour les entreprises ?](product-key-errors-and-solutions.md)
   
 Ou, [appelez le support Microsoft](../admin/contact-support-for-business-products.md).

@@ -15,12 +15,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: Ent_TLGs
 description: Utilisez ce guide de laboratoire de test pour activer la gestion des accès privilégiés dans votre environnement de test Microsoft 365 Enterprise.
-ms.openlocfilehash: ce637b94333f088d25e479e61ad2a98176a2f7c6
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 27f63de138f388b0dcbc1bc896bafcb9abc9ed6a
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42085373"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632862"
 ---
 # <a name="privileged-access-management-for-your-microsoft-365-enterprise-test-environment"></a>Gestion des accès privilégiés pour votre environnement de test Microsoft 365 Entreprise
 
@@ -46,7 +46,7 @@ Si vous souhaitez configurer la gestion des accès privilégiés dans une entrep
 
 Dans cette phase, vous allez configurer un groupe approbateurs et activer la gestion des accès privilégiés pour votre environnement de test Microsoft 365 Enterprise. Pour plus d’informations et pour obtenir une vue d’ensemble de la gestion des accès privilégiés, consultez la rubrique [gestion des accès privilégiés dans Office 365](https://docs.microsoft.com/office365/securitycompliance/privileged-access-management-overview).
 
-Procédez comme suit pour configurer et utiliser l’accès privilégié dans votre organisation Office 365 :
+Procédez comme suit pour configurer et utiliser l’accès privilégié dans votre organisation :
 
 - [Étape 1 : créer un groupe d’approbateurs](https://docs.microsoft.com/microsoft-365/compliance/privileged-access-management-configuration#step-1-create-an-approvers-group)
 
@@ -54,7 +54,7 @@ Procédez comme suit pour configurer et utiliser l’accès privilégié dans vo
 
 - [Étape 2 : activer l’accès privilégié](https://docs.microsoft.com/microsoft-365/compliance/privileged-access-management-configuration#step-2-enable-privileged-access)
 
-    L’accès privilégié doit être activé de manière explicite dans Office 365 avec le groupe d’approbateurs par défaut et inclure un ensemble de comptes système que vous souhaitez exclure du contrôle d’accès gestion des accès privilégiés. Veillez à activer l’accès privilégié dans votre organisation Office 365 avant de commencer la phase 3 de ce guide.
+    L’accès privilégié doit être activé de manière explicite dans Office 365 avec le groupe d’approbateurs par défaut et inclure un ensemble de comptes système que vous souhaitez exclure du contrôle d’accès gestion des accès privilégiés. Veillez à activer l’accès privilégié dans votre organisation avant de commencer la phase 3 de ce guide.
 
 ## <a name="phase-3-verify-that-approval-is-required-for-elevated-and-privileged-tasks"></a>Phase 3 : vérifier que l’approbation est requise pour les tâches avec privilèges élevés et privilégiées
 

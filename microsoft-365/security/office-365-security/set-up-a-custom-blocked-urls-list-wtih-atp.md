@@ -1,5 +1,5 @@
 ---
-title: Configurer une liste d’URL bloquées personnalisée à l’aide de liens fiables Office 365 ATP
+title: Configurer une liste d’URL bloquées personnalisée à l’aide de liens fiables ATP
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -17,14 +17,14 @@ ms.assetid: 896a7efb-1683-465e-a394-261349e5d866
 ms.collection:
 - M365-security-compliance
 description: Découvrez comment configurer une liste d’URL bloquées pour votre organisation à l’aide d’Office 365 Advanced Threat Protection. Les URL bloquées s’appliquent aux messages électroniques et aux documents Office en fonction de vos stratégies de liens fiables ATP.
-ms.openlocfilehash: 5205fbd5ccc873513eed4e367119084516e92bf2
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: ff8709a8bf0f8afc27ace2b3977be975f42c33a5
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42088087"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43638403"
 ---
-# <a name="set-up-a-custom-blocked-urls-list-using-office-365-atp-safe-links"></a>Configurer une liste d’URL bloquées personnalisée à l’aide de liens fiables Office 365 ATP
+# <a name="set-up-a-custom-blocked-urls-list-using-atp-safe-links"></a>Configurer une liste d’URL bloquées personnalisée à l’aide de liens fiables ATP
 
 > [!IMPORTANT]
 > Cet article est destiné aux entreprises qui ont [Office 365 – Protection avancée contre les menaces](office-365-atp.md). Si vous êtes un utilisateur à domicile et que vous recherchez des informations sur les liens fiables dans Outlook, consultez la rubrique [Advanced Outlook.com Security](https://support.office.com/article/882d2243-eab9-4545-a58a-b36fee4a46e2).
@@ -33,7 +33,7 @@ Avec [Office 365 Advanced Threat Protection](office-365-atp.md) (ATP), votre org
   
 ![Ce site est bloqué](../../media/6b4bda2d-a1e6-419e-8b10-588e83c3af3f.png)
   
-La liste des URL bloquées est définie par l’équipe de sécurité Office 365 de votre organisation et s’applique à tous les membres de l’organisation qui sont couverts par les stratégies de liens approuvés Office 365 ATP. 
+La liste des URL bloquées est définie par l’équipe de sécurité Microsoft 365 de votre organisation et s’applique à tous les membres de l’organisation qui sont couverts par les stratégies de liens approuvés Office 365 ATP. 
   
 Lisez cet article pour découvrir comment configurer la liste des URL bloquées personnalisées de votre organisation pour les [liens fiables ATP dans Office 365](atp-safe-links.md).
   
@@ -45,12 +45,12 @@ Pour modifier (ou définir) des stratégies ATP, vous devez disposer de l’un d
 
 |Role  |WHERE/How Assigned  |
 |---------|---------|
-|Administrateur général Office 365 |La personne qui s’inscrit pour acheter Office 365 est un administrateur global par défaut. (Pour en savoir plus, consultez la rubrique [à propos des rôles d’administrateur Office 365](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles) .)         |
+|administrateur général |La personne qui s’inscrit pour acheter Microsoft 365 est un administrateur global par défaut. (Pour en savoir plus, consultez la rubrique [à propos des rôles d’administrateur Microsoft 365](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles) .)         |
 |Administrateur de sécurité |Centre d’administration Azure Active Directory[https://aad.portal.azure.com](https://aad.portal.azure.com)()|
 |Gestion d’Organisation Exchange Online |Centre d’administration Exchange[https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)() <br>ou <br>  Applets de commande PowerShell (consultez la rubrique [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell)) |
 
 > [!TIP]
-> Pour en savoir plus sur les rôles et les autorisations, consultez [la rubrique autorisations &amp; dans le centre de sécurité conformité Office 365](permissions-in-the-security-and-compliance-center.md).
+> Pour en savoir plus sur les rôles et les autorisations, consultez [la &amp; rubrique autorisations dans le centre de sécurité conformité](permissions-in-the-security-and-compliance-center.md).
 
 ### <a name="to-view-or-edit-a-custom-blocked-urls-list"></a>Pour afficher ou modifier une liste d’URL bloquées personnalisée
   

@@ -24,13 +24,13 @@ search.appverid:
 - BEA160
 - GEA150
 ms.assetid: 36081d8d-b3fa-4948-8c34-e217bba825e1
-description: Découvrez comment ajouter et supprimer des licences pour votre abonnement Office 365 pour les entreprises.
-ms.openlocfilehash: abfa479d991bac72bd3e9e5c1c422368758b17a7
-ms.sourcegitcommit: 4ddbc1c3c29d79d3c4640b7b32f95576784efcca
+description: Découvrez comment ajouter et supprimer des licences pour votre abonnement Microsoft 365 pour les entreprises.
+ms.openlocfilehash: ce14021b3d6efaa14c9010a82ad4b522b0b08339
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "43240283"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632528"
 ---
 # <a name="manage-subscription-licenses"></a>Gérer les licences d’abonnement
 
@@ -84,7 +84,7 @@ Une fois que vous avez acheté de nouvelles licences, veillez à [attribuer les 
 
 ## <a name="what-if-i-dont-see-the-addremove-licenses-link"></a>Que faire si le lien Ajouter/Supprimer des licences n'est pas disponible ?
 
-Ce tableau décrit les raisons pour lesquelles le lien **Ajouter/supprimer des licences** n’est peut-être pas disponible, et ce que vous pouvez faire.
+Ce tableau décrit les raisons pour lesquelles le lien **Ajouter/supprimer des licences** n’est peut-être pas disponible, et ce que vous pouvez faire. 
 
 |Reason  |Description  |Solution  |
 |---------|---------|---------|
@@ -92,14 +92,14 @@ Ce tableau décrit les raisons pour lesquelles le lien **Ajouter/supprimer des l
 |Vous avez activé l’abonnement à l’aide d’une clé de produit.| Si l'abonnement a été acheté et activé à l'aide d'une clé de produit à 25 caractères, le texte « Prépayé » s'affiche.  |Voir [Ajouter des licences à un abonnement payé pour l’utilisation d’une clé de produit](add-licenses-using-product-key.md). |
 |Vous avez acheté votre abonnement auprès d’un partenaire. | Si l'abonnement a été acheté auprès d'un partenaire, le lien Centre de gestion des licences en volume s'affiche. | Voir [Ajouter des licences à un abonnement acheté via le centre de gestion des licences en volume](add-licenses-bought-through-vlsc.md). |
 |Vous avez acheté votre abonnement auprès d’un revendeur.|| Si l'abonnement a été acheté auprès d'un Fournisseur de solutions Microsoft Cloud, vous devez le contacter pour acheter davantage de licences.        |
-|Vous disposez d’un abonnement d’évaluation. |La mention « Version d'évaluation » apparaît pour les versions d'évaluation d'Office 365. | Vous devez d’abord acheter votre abonnement d’évaluation, puis ajouter des licences supplémentaires. Consultez [la rubrique acheter un abonnement à Office 365 pour les entreprises à partir de votre version d’évaluation gratuite](../buy-a-subscription-from-your-free-trial.md).|
+|Vous disposez d’un abonnement d’évaluation. |Une version d’évaluation de Microsoft 365 affiche le texte « version d’évaluation ». | Vous devez d’abord acheter votre abonnement d’évaluation, puis ajouter des licences supplémentaires. Consultez [la rubrique acheter un abonnement à Microsoft 365 pour les entreprises à partir de votre version d’évaluation gratuite](../buy-a-subscription-from-your-free-trial.md).|
 
 ## <a name="what-you-need-to-know-about-buying-licenses-for-your-business-subscription"></a>Ce que vous devez savoir sur l’achat de licences pour votre abonnement professionnel
 
 ### <a name="buying-licenses"></a>Achat de licences
 
 - Vous devez être un administrateur général ou un administrateur de facturation pour acheter des licences. Pour plus d’informations, consultez la rubrique [à propos des rôles d’administrateur](../../admin/add-users/about-admin-roles.md).
-- Pour acheter une licence et ajouter un nouvel utilisateur à votre abonnement en même temps, voir [Ajouter des utilisateurs individuellement ou en bloc à Office 365 - Aide de l'administrateur](../../admin/add-users/add-users.md).
+- Pour acheter une licence et ajouter un nouvel utilisateur à votre abonnement en même temps, reportez-vous à la rubrique [Ajouter des utilisateurs individuellement ou en bloc Microsoft 365-aide de l’administrateur](../../admin/add-users/add-users.md).
 
 ### <a name="license-availability"></a>Disponibilité des licences
 

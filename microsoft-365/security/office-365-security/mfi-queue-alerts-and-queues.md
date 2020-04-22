@@ -11,24 +11,24 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 37640c80-ce6f-47e2-afd1-bc1d3c50e637
 description: Les administrateurs peuvent en savoir plus sur les alertes de files d’attente et les files d’attente dans le tableau de bord de flux de messagerie dans le centre de sécurité & conformité.
-ms.openlocfilehash: bc777e3c9764987dc72aa0407f19618bc26f7528
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 7bb103bad89ee39991a5c16d7101ab4658842479
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42082739"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635183"
 ---
 # <a name="queue-alerts-and-queues"></a>Alertes de files d’attente et files d’attente
 
 ## <a name="queue-alerts"></a>Alertes de file d’attente
 
-Lorsque des messages ne peuvent pas être envoyés de votre organisation Office 365 à vos serveurs de messagerie locaux ou partenaires à l’aide de connecteurs, les messages sont mis en file d’attente dans Office 365. Les exemples courants qui génèrent cette condition sont les suivants :
+Lorsque des messages ne peuvent pas être envoyés de votre organisation à vos serveurs de messagerie locaux ou partenaires à l’aide de connecteurs, les messages sont mis en file d’attente dans Office 365. Les exemples courants qui génèrent cette condition sont les suivants :
 
 - Le connecteur est configuré de manière incorrecte.
 
 - Des modifications de mise en réseau ou de pare-feu ont été apportées dans votre environnement local.
 
-Office 365 continuera à nouvelle tentative de remise pendant 24 heures. Au bout de 24 heures, les messages expirent et seront renvoyés aux expéditeurs dans les notifications d’échec de remise (également appelées notifications de non-remise).
+Microsoft 365 continuera à nouvelle tentative de remise pendant 24 heures. Au bout de 24 heures, les messages expirent et seront renvoyés aux expéditeurs dans les notifications d’échec de remise (également appelées notifications de non-remise).
 
 Si le volume de messagerie en file d’attente dépasse le seuil prédéfini (la valeur par défaut est 2000 messages), les alertes seront disponibles dans le tableau de bord du flux de messagerie des **alertes récentes**et les administrateurs recevront une notification par courrier électronique (à leur adresse de messagerie alternative). Pour configurer le seuil d’alerte, la limite de notification quotidienne et/ou les destinataires de l’alerte, consultez la section **personnaliser les alertes de file d’attente** ci-dessous.
 
@@ -72,6 +72,6 @@ Lorsque vous cliquez sur le nombre de messages en file d’attente dans les **fi
 
 ![Détails de la file d’attente](../../media/4eb088fe-5dd9-4bf4-b959-c1bb2545c515.png)
 
-## <a name="see-also"></a>Voir aussi
+## <a name="see-also"></a>Voir également
 
 Pour plus d’informations sur les autres flux de messagerie dans le tableau de bord de flux de messagerie, voir [mail Flow Insights in the Security & Compliance Center](mail-flow-insights-v2.md).

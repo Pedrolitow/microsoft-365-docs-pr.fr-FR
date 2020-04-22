@@ -14,16 +14,17 @@ ms.collection:
 search.appverid:
 - MET150
 description: Les utilisateurs peuvent apprendre à gérer leurs achats en libre-service.
-ms.openlocfilehash: 15fc43d488cb2a8fd38cea8ab2ed85c002e23d92
-ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
+ms.openlocfilehash: f4be2176d970af426817e975b9942ce5e2b89a9e
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43142138"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636638"
 ---
 # <a name="manage-self-service-purchases-users"></a>Gérer les achats libre-service (utilisateurs)
 
 En tant qu’utilisateur, vous pouvez acheter des abonnements à certains produits et attribuer des licences pour ces abonnements à des personnes de votre équipe. Vous êtes responsable du paiement des achats en libre-service que vous effectuez. Vous pouvez gérer vos abonnements dans le centre d’administration Microsoft 365 sur <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin.Microsoft.com</a>.
+
 
 Votre administrateur dispose d’une vue en lecture seule dans les abonnements que vous achetez. Ils peuvent voir le produit, le nom de l’acheteur, les abonnements achetés, la date d’expiration, le prix d’achat et les utilisateurs affectés pour chaque abonnement que vous achetez.
 
@@ -94,7 +95,7 @@ Par exemple, si vous avez 100 licences et que vous devez en ajouter 5, entrez 10
 
 4. Dans le volet droit, entrez les détails de la carte, puis choisissez **Enregistrer**.
 
-### <a name="update-an-existing-payment-method"></a>Mettre à jour un mode de paiement existant
+### <a name="update-an-existing-payment-method"></a>Mise à jour d’un mode de paiement existant
 
 1. Dans le centre d’administration, accédez à **la** > page<a href="https://go.microsoft.com/fwlink/p/?linkid=848039" target="_blank">factures & paiement</a> .
 

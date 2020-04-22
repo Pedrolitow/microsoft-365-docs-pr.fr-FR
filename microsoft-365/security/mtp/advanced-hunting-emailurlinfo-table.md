@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 7f5912306700efa0db704fe8d0c0db006105fda6
-ms.sourcegitcommit: 74bf600424d0cb7b9d16b4f391aeda7875058be1
+ms.openlocfilehash: 46849aa81da5a615a5dff7c5e2ac28566443d3ee
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42234763"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43633518"
 ---
 # <a name="emailurlinfo"></a>EmailUrlInfo
 
@@ -39,7 +39,7 @@ Pour plus d’informations sur les autres tables du schéma de repérage avancé
 |-------------|-----------|-------------|
 | `Timestamp` | DateHeure | Date et heure d’enregistrement de l’événement |
 | `UrlId` | string | Identificateur unique de l’URL dans l’objet, le corps ou la pièce jointe de l’e-mail |
-| `NetworkMessageId` | string | Identificateur unique d’e-mail, généré par Office 365 |
+| `NetworkMessageId` | string | Identificateur unique pour le courrier électronique, généré par Microsoft 365 |
 | `Url` | string | URL complète dans l’objet, le corps ou la pièce jointe de l’e-mail |
 
 ## <a name="related-topics"></a>Sujets associés

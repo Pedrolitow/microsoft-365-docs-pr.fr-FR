@@ -13,12 +13,12 @@ localization_priority: Normal
 audience: microsoft-business 
 keywords: Microsoft 365 Business, Microsoft 365, SMB, transition d’un abonnement Fournisseur de solutions Cloud
 ms.date: 11/01/2017
-ms.openlocfilehash: 0a30d80ad5217868fec81866ab1dc41013917e99
-ms.sourcegitcommit: dbbdeca5a6cd048e1bde9e820a8b8a0d6022c7a2
+ms.openlocfilehash: da56ce5bc70dfed5a3e86c739ef3c940b4ac1511
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43504104"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635061"
 ---
 # <a name="transition-a-microsoft-365-business-csp-subscription"></a>Transition d’un abonnement Fournisseur de solutions Cloud Microsoft365Business
 
@@ -91,7 +91,7 @@ Le tableau suivant résume l’impact sur les stratégies de gestion des applica
 | **Réinitialiser le code confidentiel en cas d’échec de connexion** | Accès restreint aux applications | Aucune restriction d’accès au niveau des applications |
 | **Obliger les utilisateurs à se connecter à nouveau après que les applications Office sont restées inactives** | Connexion requise | Aucune connexion requise |
 | **Refuser l’accès aux fichiers de travail sur les appareils débridés ou rootés** | Les fichiers de travail ne sont pas accessibles sur les périphériques un jailbreak/enracinés | Les fichiers de travail sont accessibles sur les appareils débridés/rootés |
-| **Autoriser les utilisateurs à copier le contenu des applications Office vers les applications personnelles** | Copier/coller restreint aux applications disponibles dans le cadre de l’abonnement Microsoft 365Business | Copier/coller disponible pour toutes les applications |
+| **Autoriser les utilisateurs à copier le contenu des applications Office vers les applications personnelles** | Copie/collage limité aux applications disponibles dans le cadre de l’abonnement Microsoft 365 | Copier/coller disponible pour toutes les applications |
 
 ## <a name="windows-10-pc-impacts-upon-subscription-expiration"></a>Impacts sur les PC Windows10 à l’expiration de l’abonnement
 

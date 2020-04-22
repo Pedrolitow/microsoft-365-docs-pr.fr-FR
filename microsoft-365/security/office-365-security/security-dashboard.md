@@ -16,12 +16,12 @@ ms.assetid: fe0b9b8f-faa9-44ff-8095-4d1b2f507b74
 ms.collection:
 - M365-security-compliance
 description: Utilisez le nouveau tableau de bord de sécurité pour consulter l’état de protection contre les menaces d’Office 365, et afficher et agir sur les alertes de sécurité.
-ms.openlocfilehash: bade9f1a0060fcd08458bd28eb276a0543f5d815
-ms.sourcegitcommit: db8702cf578b02c6fd6a2670c177b456efae4748
+ms.openlocfilehash: 3b6d754505d0e23f1080520e66061b8f6fef523e
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43537400"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632516"
 ---
 # <a name="security-dashboard"></a>Tableau de bord de sécurité
 
@@ -33,12 +33,12 @@ Regardez la vidéo pour obtenir une vue d’ensemble, puis lisez cet article pou
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1VV3o]
 
-En fonction de l’abonnement Office 365 de votre organisation, le tableau de bord de sécurité inclut plusieurs widgets, tels que le résumé de la gestion des menaces, le statut de protection contre les menaces, des détections de menaces globales hebdomadaires, des programmes malveillants, etc., comme décrit dans les sections suivantes.
+En fonction de l’abonnement de votre organisation, le tableau de bord de sécurité inclut plusieurs widgets, tels que le résumé de la gestion des menaces, l’état de protection contre les menaces, des détections de menaces globales hebdomadaires, des programmes malveillants, etc., comme décrit dans les sections suivantes.
 
-Pour afficher le tableau de bord de sécurité, dans le [Centre de sécurité & de sécurité Office 365](../../compliance/go-to-the-securitycompliance-center.md), accédez au **tableau de bord** **gestion** \> des menaces.
+Pour afficher le tableau de bord sécurité, dans le [Centre de sécurité & conformité](../../compliance/go-to-the-securitycompliance-center.md), accédez au **tableau de bord**gestion \> des **menaces** .
 
 > [!NOTE]
-> Vous devez être un administrateur général Office 365, un administrateur de sécurité ou un lecteur de sécurité pour afficher le tableau de bord de sécurité. Certains widgets nécessitent des autorisations supplémentaires pour être visualisées. Pour en savoir plus, consultez [la rubrique autorisations dans le centre de conformité & Office 365 Security](permissions-in-the-security-and-compliance-center.md).
+> Vous devez être un administrateur général, un administrateur de sécurité ou un lecteur de sécurité pour afficher le tableau de bord de sécurité. Certains widgets nécessitent des autorisations supplémentaires pour être visualisées. Pour en savoir plus, consultez [la rubrique autorisations dans le centre de sécurité & conformité](permissions-in-the-security-and-compliance-center.md).
 
 ## <a name="threat-management-summary"></a>Résumé de la gestion des menaces
 
@@ -61,7 +61,7 @@ Le widget état de protection contre les menaces indique l’efficacité de la p
 
 ![Widget d’état de protection contre les menaces](../../media/tpswidget.png)
 
-Les détails varient selon que votre abonnement Office 365 inclut ou non [Exchange Online Protection](exchange-online-protection-eop.md) (EoP) avec ou sans [Office 365 Advanced Threat Protection](office-365-atp.md) (ATP).
+Les détails varient selon que votre abonnement Microsoft 365 inclut ou non [Exchange Online Protection](exchange-online-protection-eop.md) (EoP) avec ou sans [Office 365 Advanced Threat Protection](office-365-atp.md) (ATP).
 
 |||
 |---|---|
@@ -101,7 +101,7 @@ Insights non seulement les problèmes de clés de surface que vous devez examine
 
 ![Informations intelligentes](../../media/smartinsights.png)
 
-Par exemple, vous pouvez constater que les messages électroniques de hameçonnage sont remis car certains utilisateurs ont désactivé leurs options de courrier indésirable. Pour en savoir plus sur le fonctionnement des informations, voir [rapports et Insights dans le centre de conformité Office 365 Security &](reports-and-insights-in-security-and-compliance.md).
+Par exemple, vous pouvez constater que les messages électroniques de hameçonnage sont remis car certains utilisateurs ont désactivé leurs options de courrier indésirable. Pour en savoir plus sur le fonctionnement des informations, reportez-vous à [la rubrique rapports et informations dans le centre de sécurité & conformité](reports-and-insights-in-security-and-compliance.md).
 
 ## <a name="threat-investigation-and-response"></a>Examen et réponse contre les menaces
 
@@ -115,7 +115,7 @@ Dans la partie inférieure du tableau de bord de sécurité se trouve une sectio
 
 ![La section tendances récapitule les tendances de flux de messagerie de l’organisation.](../../media/trends.png)
 
-De plus, si l’abonnement Office 365 de votre organisation inclut [office 365 Advanced Threat Protection Plan 2](office-365-ti.md), vous obtiendrez également un rapport **alertes de gestion des menaces récentes** dans cette section qui permet à votre équipe de sécurité d’afficher et de prendre des mesures concernant les alertes de sécurité à priorité élevée.
+De plus, si l’abonnement de votre organisation comprend [Office 365 Advanced Threat Protection Plan 2](office-365-ti.md), vous aurez également un rapport **alertes de gestion des menaces récentes** dans cette section qui permet à votre équipe de sécurité d’afficher et de prendre des mesures concernant les alertes de sécurité à priorité élevée.
 
 Pour afficher ou accéder au widget courrier électronique envoyé et reçu, vous devez disposer des autorisations permettant d’afficher les rapports de protection avancée contre les menaces. Pour en savoir plus, consultez [la rubrique Quelles autorisations sont requises pour afficher les rapports ATP ?](view-reports-for-atp.md#what-permissions-are-needed-to-view-the-atp-reports).
 

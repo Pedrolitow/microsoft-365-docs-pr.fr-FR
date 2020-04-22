@@ -1,5 +1,5 @@
 ---
-title: Intégration SIEM avec Office 365 protection avancée contre les menaces
+title: Intégration SIEM avec protection avancée contre les menaces
 f1.keywords:
 - NOCSH
 ms.author: deniseb
@@ -17,18 +17,18 @@ ms.date: 11/22/2019
 ms.collection:
 - M365-security-compliance
 description: Intégrez le serveur SIEM de votre organisation avec Office 365 protection avancée contre les menaces et les événements de menace associés dans l’API de gestion des activités Office 365.
-ms.openlocfilehash: 8a870e02a37ea7f4961d0b8dc42a49cb59d2bace
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 770e2348c4e5729531118fb4a014a72c352a0dd1
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598281"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43638295"
 ---
-# <a name="siem-integration-with-office-365-advanced-threat-protection"></a>Intégration SIEM avec Office 365 protection avancée contre les menaces
+# <a name="siem-integration-with-advanced-threat-protection"></a>Intégration SIEM avec protection avancée contre les menaces
 
 Si votre organisation utilise un serveur de gestion des événements et des incidents de sécurité (SIEM), vous pouvez intégrer Office 365 Advanced Threat Protection à votre serveur SIEM. L’intégration SIEM vous permet d’afficher des informations, telles que des programmes malveillants ou des hameçons détectés par Office 365 Advanced protection, dans vos rapports de serveur SIEM. Pour configurer l’intégration SIEM, vous utilisez l' [API de gestion des activités Office 365](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference). 
 
-L’API de gestion des activités Office 365 récupère des informations sur les actions et événements d’utilisateur, d’administrateur, de système et de stratégie à partir des journaux d’activité Office 365 et Azure Active Directory de votre organisation. Le [schéma de protection avancée contre les menaces office 365](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema#office-365-advanced-threat-protection-and-threat-investigation-and-response-schema) fonctionne avec la protection avancée contre les menaces, de sorte que si votre organisation a le plan 1 ou plan 2 ou Office 365 E5 Office 365 Advanced Threat Protection, vous pouvez toujours utiliser cette même API pour votre intégration de serveur Siem. 
+L’API de gestion des activités Office 365 récupère des informations sur les actions et événements d’utilisateur, d’administrateur, de système et de stratégie à partir des journaux d’activité Microsoft 365 de votre organisation et Azure Active Directory. Le [schéma de protection avancée contre les menaces office 365](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema#office-365-advanced-threat-protection-and-threat-investigation-and-response-schema) fonctionne avec la protection avancée contre les menaces, de sorte que si votre organisation a le plan 1 ou plan 2 ou Office 365 E5 Office 365 Advanced Threat Protection, vous pouvez toujours utiliser cette même API pour votre intégration de serveur Siem. 
 
 Dans le cadre de nos mises à jour récentes, nous avons également ajouté des événements à partir des fonctionnalités d’analyse et de réponse automatisées dans Office 365 DAV plan 2 au sein de l’API activité de gestion d’Office 365. En plus d’inclure des données sur les détails d’enquête de base, tels que l’ID, le nom et l’État, il contient également des informations de haut niveau sur les actions et les entités d’enquête.   
 
@@ -47,7 +47,7 @@ Le serveur SIEM ou un autre système similaire doit interroger l' **audit.** cha
 
 
 > [!IMPORTANT]
-> Vous devez être un administrateur général Office 365 ou faire en sorte que le rôle administrateur de sécurité soit affecté au centre de sécurité & conformité afin de configurer l’intégration SIEM avec Office 365 Advanced Threat Protection.<br/>L’enregistrement d’audit doit être activé pour votre environnement Office 365. Pour obtenir de l’aide, voir [activer ou désactiver la recherche dans le journal d’audit Office 365](../../compliance/turn-audit-log-search-on-or-off.md).
+> Vous devez être un administrateur général ou avoir le rôle administrateur de sécurité affecté au centre de sécurité & conformité pour configurer l’intégration SIEM avec Office 365 protection avancée contre les menaces.<br/>La journalisation d’audit doit être activée pour votre environnement Microsoft 365. Pour obtenir de l’aide, consultez la rubrique [activer ou désactiver la recherche dans le journal d’audit](../../compliance/turn-audit-log-search-on-or-off.md).
 
 ## <a name="related-topics"></a>Voir aussi
 
@@ -57,7 +57,7 @@ Le serveur SIEM ou un autre système similaire doit interroger l' **audit.** cha
 
 [Protection avancée contre les menaces dans Office 365](office-365-atp.md)
 
-[Rapports intelligents et Insights dans le centre de sécurité &amp; conformité Office 365](reports-and-insights-in-security-and-compliance.md)
+[Rapports intelligents et Insights dans le centre de sécurité &amp; conformité](reports-and-insights-in-security-and-compliance.md)
   
-[Permissions in the Office 365 Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md)
+[Autorisations dans le centre &amp; de sécurité conformité](permissions-in-the-security-and-compliance-center.md)
   

@@ -1,5 +1,5 @@
 ---
-title: Afficher les résultats d’une enquête automatisée dans Office 365
+title: Afficher les résultats d’une enquête automatisée dans Microsoft 365
 keywords: AIR, autoIR, ATP, automatisation, analyse, réponse, correction, menaces, avancé, menace, protection
 f1.keywords:
 - NOCSH
@@ -14,15 +14,15 @@ search.appverid:
 - MET150
 - MOE150
 ms.collection: M365-security-compliance
-description: Pendant et après une enquête automatisée dans Office 365, vous pouvez afficher les résultats et les résultats clés.
-ms.openlocfilehash: e19669f48047f1800d2a904c6ef5565d8db94dd9
-ms.sourcegitcommit: 7bb340f6b47378bcd1c6e770dc975931470bbc26
+description: Pendant et après une enquête automatisée dans Microsoft 365, vous pouvez afficher les résultats et les résultats clés.
+ms.openlocfilehash: e0ecea63260fae474973b39e7069029a2ec93dcb
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43225974"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634627"
 ---
-# <a name="details-and-results-of-an-automated-investigation-in-office-365"></a>Détails et résultats d’une enquête automatisée dans Office 365
+# <a name="details-and-results-of-an-automated-investigation-in-microsoft-365"></a>Détails et résultats d’une enquête automatisée dans Microsoft 365
 
 Lorsqu’une [enquête automatisée](office-365-air.md) se produit dans [Office 365 protection avancée contre les menaces](office-365-atp.md), des informations détaillées sur cette enquête sont disponibles pendant et après le processus d’enquête automatisé. Si vous disposez des autorisations nécessaires, vous pouvez afficher ces détails dans une vue Détails de l'examen. La vue Détails de l’examen vous fournit l’État à jour et la possibilité d’approuver les actions en attente. 
 
@@ -46,7 +46,7 @@ L’état d’enquête indique la progression de l’analyse et des actions. Lor
 
 ## <a name="view-details-of-an-investigation"></a>Afficher les détails d’une enquête
 
-1. Accédez au centre de sécurité & conformité Office 365 ([https://protection.office.com](https://protection.office.com)) et connectez-vous.
+1. Accédez au centre de sécurité & conformité ([https://protection.office.com](https://protection.office.com)) et connectez-vous.
 
 2. Effectuez l’une des opérations suivantes :
 
@@ -66,9 +66,9 @@ L’état d’enquête indique la progression de l’analyse et des actions. Lor
 
 ## <a name="view-details-about-an-alert-related-to-an-investigation"></a>Afficher les détails d’une alerte liée à une enquête
 
-Certains types d’alertes déclenchent une enquête automatisée dans Office 365. Pour en savoir plus, consultez la rubrique [alertes](automated-investigation-response-office.md#alerts). Utilisez la procédure suivante pour afficher les détails d’une alerte associée à une enquête automatisée.
+Certains types d’alertes déclenchent une enquête automatisée dans Microsoft 365. Pour en savoir plus, consultez la rubrique [alertes](automated-investigation-response-office.md#alerts). Utilisez la procédure suivante pour afficher les détails d’une alerte associée à une enquête automatisée.
 
-1. Accédez au centre de sécurité & conformité Office 365 ([https://protection.office.com](https://protection.office.com)) et connectez-vous. 
+1. Accédez au centre de sécurité & conformité ([https://protection.office.com](https://protection.office.com)) et connectez-vous. 
 
 2. Accédez aux **Threat management** > **enquêtes**de gestion des menaces.
 
@@ -215,7 +215,7 @@ Vous pouvez :
 
 |L’analyseur | Description |
 |-----|-----|
-|Enquête sur les violations DLP |Examiner toutes les violations détectées par la [protection contre la perte de données](../../compliance/data-loss-prevention-policies.md) (DLP) d’Office 365 |
+|Enquête sur les violations DLP |Examiner toutes les violations détectées par la [protection contre la perte de données](../../compliance/data-loss-prevention-policies.md) (DLP) |
 |Extraction des indicateurs de courrier électronique |Extraire les indicateurs de l’en-tête, du corps et du contenu d’un message électronique à des fins d’enquête |
 |Réputation de hachage de fichier |Détecter les anomalies en fonction des hachages de fichiers pour les utilisateurs et les ordinateurs de votre organisation |
 |Identification du cluster de messagerie |Analyse du cluster de messagerie basée sur l’en-tête, le corps, le contenu et les URL |

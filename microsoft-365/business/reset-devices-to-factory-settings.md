@@ -22,19 +22,19 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: c4db6caf-74df-4734-b1dd-53e371c7a3c3
-description: Découvrez comment utiliser Microsoft 365 Business to Factory Reset Windows 10 appareils que vous gérez, en rétablissant les paramètres d’origine à l’achat.
-ms.openlocfilehash: 3705448602cdc22e9fb5843c46d5bdc1c4dbdb2e
-ms.sourcegitcommit: 217de0fc54cbeaea32d253f175eaf338cd85f5af
+description: Découvrez comment utiliser Microsoft 365 pour les entreprises pour réinitialiser en usine les appareils Windows 10 que vous gérez, ce qui revient aux paramètres d’origine à l’achat.
+ms.openlocfilehash: 7cf5619cb1b6f5f847690d723381614d4b7afc3c
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42561297"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634789"
 ---
 # <a name="reset-windows-10-devices-to-their-factory-settings"></a>Rétablir les paramètres par défaut des appareils Windows 10
 
 [![Étiquette vous informant le centre d’administration est en train de changer et vous pouvez trouver plus de détails à ce sujet à l’adresse aka.ms/aboutM365preview.](../media/m365admincenterchanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview)
 
-[] La réinitialisation aux paramètres d'usine rétablit les paramètres d'origine d'un appareil (ceux qu'il avait lorsque vous l'avez acheté). Toutes les applications et données qui ont été installées ou enregistrées sur l'appareil après l'achat sont supprimées. Vous pouvez utiliser Microsoft 365 Entreprise pour réinitialiser les appareils Windows 10 que vous gérez aux paramètres d'usine.
+[] La réinitialisation aux paramètres d'usine rétablit les paramètres d'origine d'un appareil (ceux qu'il avait lorsque vous l'avez acheté). Toutes les applications et données qui ont été installées ou enregistrées sur l'appareil après l'achat sont supprimées. Vous pouvez utiliser Microsoft 365 pour les entreprises pour réinitialiser en usine les appareils Windows 10 que vous gérez.
   
 1. Accédez au Centre d’administration à l’adresse <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>.
     

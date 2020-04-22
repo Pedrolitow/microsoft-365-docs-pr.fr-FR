@@ -1,5 +1,5 @@
 ---
-title: Conditions préalables à la protection des données sur les appareils avec Microsoft 365 Business
+title: Conditions préalables à la protection des données sur les appareils avec Microsoft 365 pour les entreprises
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -20,19 +20,19 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 7770e280-3a6c-436f-a157-b008a2744f51
-description: Découvrez les conditions requises pour la configuration de votre organisation avec Microsoft 365 Business et la protection des données de travail sur les appareils de vos utilisateurs.
-ms.openlocfilehash: 9c96b8fa444b1525e82da5a148483feeac59a25d
-ms.sourcegitcommit: 217de0fc54cbeaea32d253f175eaf338cd85f5af
+description: Découvrez les conditions requises pour la configuration de votre organisation avec Microsoft 365 pour les entreprises et la protection des données de travail sur les appareils de vos utilisateurs.
+ms.openlocfilehash: 02f7d32f0cd6ddcedcf21ea62bac7898e4c0f15a
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42561377"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43633116"
 ---
-# <a name="prerequisites-for-protecting-data-on-devices-with-microsoft-365-business"></a>Conditions préalables à la protection des données sur les appareils avec Microsoft 365 Business
+# <a name="prerequisites-for-protecting-data-on-devices-with-microsoft-365-for-business"></a>Conditions préalables à la protection des données sur les appareils avec Microsoft 365 pour les entreprises
 
-La première étape de la configuration de votre organisation avec Microsoft 365 Business est de vous assurer que vous pouvez répondre aux conditions préalables.
+La première étape de la configuration de votre organisation avec Microsoft 365 pour les entreprises est de s’assurer que vous pouvez répondre aux conditions préalables.
   
-## <a name="requirements-for-setting-up-your-organization-with-microsoft-365-business"></a>Conditions requises pour la configuration de votre organisation avec Microsoft 365 Business
+## <a name="requirements-for-setting-up-your-organization-with-microsoft-365-for-business"></a>Conditions requises pour la configuration de votre organisation avec Microsoft 365 pour les entreprises
 
 - Les appareils Windows doivent exécuter Windows 7 professionnel, Windows 8 professionnel ou Windows 8,1 Pro.
     
@@ -40,10 +40,10 @@ La première étape de la configuration de votre organisation avec Microsoft 365
     
     Si vous utilisez Windows 10 Home, vous devez **acheter** Windows 10 professionnel. Pour obtenir des instructions, voir [mettre à niveau Windows 10 famille vers Windows 10 professionnel](https://support.office.com/article/0aee10c1-4d34-43ee-a325-579c6c2df90e?ui=en-US&rs=en-US&ad=US) . 
     
-- Supprimez des périphériques des solutions de gestion mobile (fer mobile, contrôle de l’interveille, etc.). Vous allez inscrire toutes les personnes de votre organisation dans Microsoft 365 Business Mobile Management.
+- Supprimez des périphériques des solutions de gestion mobile (fer mobile, contrôle de l’interveille, etc.). Vous allez inscrire toutes les personnes de votre organisation dans Microsoft 365 pour Business Mobile Management.
     
 - Apple iOS 8.0 ou version ultérieure.
     
     Google Android 4.0 ou version ultérieure (y compris Samsung KNOX Standard 4.0 ou version ultérieure). Pour plus d’informations, consultez la rubrique [Intune pris en charge](https://go.microsoft.com/fwlink/p/?linkid=852307).
     
-- Si vous disposez d’applications Office sur des ordinateurs d’utilisateur, lisez la rubrique [Prepare for Office client installation](prepare-for-office-client-deployment.md) pour comprendre les étapes que vous devrez peut-être effectuer avant de configurer Microsoft 365 Business pour installer Office 2016 sur les ordinateurs des utilisateurs. 
+- Si vous disposez d’applications Office sur des ordinateurs d’utilisateur, lisez la rubrique [Prepare for Office client installation](prepare-for-office-client-deployment.md) pour comprendre les étapes que vous devrez peut-être effectuer avant de configurer Microsoft 365 pour entreprise afin d’installer Office 2016 sur les ordinateurs des utilisateurs. 

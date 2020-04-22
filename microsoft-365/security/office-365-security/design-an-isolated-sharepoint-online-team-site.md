@@ -16,12 +16,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 775a4e9e-3135-4a48-b32f-bbdd9f2bd0aa
 description: 'Résumé : Découvrez comment concevoir des sites d’équipe SharePoint Online.'
-ms.openlocfilehash: f03df1f99650f458dd9df2c9e561decf491c3011
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 5efd5fb0501d88fda37f1530ef62e4c5110e4da2
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42083208"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43638511"
 ---
 # <a name="design-an-isolated-sharepoint-online-team-site"></a>Conception d’un site d’équipe SharePoint Online isolé
 
@@ -39,13 +39,13 @@ Chaque site d’équipe SharePoint Online par défaut est créé avec les group
     
 - \<Propriétaires de nom de site>
     
-Ces groupes sont différents des groupes Office 365 et Azure Active Directory (AD), et permettent d’attribuer des autorisations pour l’utilisation des ressources du site.
+Ces groupes sont différents des groupes Microsoft 365 et Azure Active Directory (AD) et constituent la base de l’attribution d’autorisations pour les ressources du site.
   
 L’ensemble des autorisations qui déterminent ce que le membre d’un groupe SharePoint peut faire dans un site est un niveau d’autorisation. Il existe trois niveaux d’autorisation par défaut pour un site d’équipe SharePoint Online : Modification, Lecture et Contrôle total. Le tableau suivant indique la corrélation par défaut des groupes SharePoint et les niveaux d’autorisation affectés :
   
 |**Groupe SharePoint**|**Niveau d’autorisation**|
 |:-----|:-----|
-|\<nom du site> membres  <br/> |Edit  <br/> |
+|\<nom du site> membres  <br/> |Modifier  <br/> |
 |\<nom du site> visiteurs  <br/> |Lecture  <br/> |
 |\<Propriétaires de nom de site>  <br/> |Contrôle total  <br/> |
    
@@ -57,7 +57,7 @@ Voici les groupes et les niveaux d’autorisation SharePoint par défaut.
   
 ## <a name="phase-2-assign-permissions-to-users-with-access-groups"></a>Phase 2 : attribution des autorisations aux utilisateurs membres de groupes d’accès
 
-Vous pouvez attribuer des autorisations aux utilisateurs en ajoutant leur compte d’utilisateur, ou un groupe Office 365 ou Azure AD dont est membre le compte d’utilisateur, aux groupes SharePoint. Une fois ajoutés, les comptes d’utilisateur Office 365 reçoivent, directement ou indirectement via l’appartenance à un groupe Office 365 ou Azure AD, le niveau d’autorisation associé au groupe SharePoint.
+Vous pouvez attribuer des autorisations à des utilisateurs en ajoutant leur compte d’utilisateur, ou un groupe Microsoft 365 ou Azure AD dont le compte d’utilisateur est membre, aux groupes SharePoint. Une fois ajoutés, les comptes d’utilisateur, directement ou indirectement via l’appartenance à un groupe Microsoft 365 ou Azure AD, se voient attribuer le niveau d’autorisation associé au groupe SharePoint.
   
 En prenant l’exemple des groupes SharePoint par défaut :
   
@@ -69,27 +69,27 @@ En prenant l’exemple des groupes SharePoint par défaut :
     
  **Conseil :** même si vous pouvez gérer les autorisations dans chaque compte d’utilisateur, nous vous recommandons plutôt d’utiliser un seul groupe Azure AD, appelé groupe d’accès. Cela simplifie la gestion des autorisations via l’appartenance au groupe d’accès, plutôt que via la gestion de la liste des comptes d’utilisateur pour chaque groupe SharePoint.
   
-Les groupes Azure AD pour Office 365 sont différents des groupes Office 365. Les groupes Azure AD apparaissent dans le centre d’administration 365 de Microsoft, dont le **type** est défini sur **sécurité** et n’ont pas d’adresse de messagerie. Les groupes Azure AD peuvent être gérés dans les éléments suivants :
+Les groupes Azure AD pour Microsoft 365 sont différents des groupes Microsoft 365. Les groupes Azure AD apparaissent dans le centre d’administration 365 de Microsoft, dont le **type** est défini sur **sécurité** et n’ont pas d’adresse de messagerie. Les groupes Azure AD peuvent être gérés dans les éléments suivants :
   
 - Services de domaine Active Directory (AD DS)
     
-    Il s’agit de groupes qui ont été créés dans votre infrastructure AD DS sur site et synchronisés avec votre abonnement Office 365. Dans le centre d’administration 365 de Microsoft, ces groupes ont l' **État** **synchronisé avec Active Directory**.
+    Il s’agit de groupes qui ont été créés dans votre infrastructure AD DS sur site et synchronisés avec votre abonnement Microsoft 365. Dans le centre d’administration 365 de Microsoft, ces groupes ont l' **État** **synchronisé avec Active Directory**.
     
-- Office 365
+- Office 365
     
     Il s’agit de groupes qui ont été créés à l’aide du centre d’administration Microsoft 365, du portail Azure ou de Microsoft PowerShell. Dans le centre d’administration 365 de Microsoft, ces groupes ont l' **État** **Cloud**.
     
- **Meilleure pratique :** Si vous utilisez AD DS en local et que vous vous synchronisez avec votre abonnement Office 365, effectuez votre gestion des utilisateurs et des groupes avec AD DS.
+ **Meilleure pratique :** Si vous utilisez AD DS en local et que vous vous synchronisez avec votre abonnement Microsoft 365, effectuez votre gestion des utilisateurs et des groupes avec les services de domaine Active Directory.
   
 Pour les sites d’équipe SharePoint Online isolés, voici à quoi ressemble la structure recommandée du groupe :
   
 |**Groupe SharePoint**|**Groupe d’accès basé sur Azure AD**|**Niveau d’autorisation**|
 |:-----|:-----|:-----|
-|\<nom du site> membres  <br/> |\<nom du site> membres  <br/> |Edit  <br/> |
-|\<nom du site> visiteurs  <br/> |\<Visionneuse de nom de site>  <br/> |Lire  <br/> |
+|\<nom du site> membres  <br/> |\<nom du site> membres  <br/> |Modifier  <br/> |
+|\<nom du site> visiteurs  <br/> |\<Visionneuse de nom de site>  <br/> |Lecture  <br/> |
 |\<Propriétaires de nom de site>  <br/> |\<nom du site> administrateurs  <br/> |Contrôle total  <br/> |
    
- **Meilleure pratique :** Bien que vous puissiez utiliser les groupes Office 365 ou Azure AD comme membres des groupes SharePoint, nous vous recommandons d’utiliser les groupes Azure AD. Les groupes Azure AD, gérés via AD DS ou Office 365, offrent davantage de flexibilité pour l’utilisation de groupes imbriqués pour attribuer des autorisations.
+ **Meilleure pratique :** Bien que vous puissiez utiliser les groupes Microsoft 365 ou Azure AD comme membres des groupes SharePoint, nous vous recommandons d’utiliser les groupes Azure AD. Les groupes Azure AD, gérés via AD DS ou Microsoft 365, offrent davantage de flexibilité pour l’utilisation de groupes imbriqués pour attribuer des autorisations.
   
 Voici les groupes SharePoint par défaut configurés pour utiliser les groupes d’accès basé sur Azure AD.
   
@@ -111,7 +111,7 @@ Pour un projet impliquant un petit nombre d’utilisateurs, vous pouvez ajouter,
   
 Par exemple, vous souhaitez créer un site d’équipe SharePoint Online isolé pour favoriser la collaboration entre les responsables des services ventes, marketing, ingénierie, juridique et support technique, mais ils ont déjà leur propre groupe de comptes de responsable. Au lieu de créer un groupe pour les nouveaux membres du site et d’y placer tous les comptes de responsable un par un, placez les groupes de responsables existants pour chaque service dans le nouveau groupe.
   
-  Si vous partagez un abonnement Office 365 avec d’autres organisations, il peut s’avérer difficile de gérer un seul niveau de groupe pour le site isolé d’une organisation en raison du nombre important de comptes d’utilisateur. Dans ce cas, vous pouvez utiliser les groupes Azure AD imbriqués pour chaque organisation dont les groupes gèrent les autorisations.
+ Si vous partagez un abonnement Microsoft 365 entre plusieurs organisations, un seul niveau d’appartenance au groupe pour un site isolé pour une organisation peut devenir difficile à gérer en raison du nombre élevé de comptes d’utilisateur. Dans ce cas, vous pouvez utiliser les groupes Azure AD imbriqués pour chaque organisation dont les groupes gèrent les autorisations.
   
 Pour utiliser les groupes Azure AD imbriqués, procédez comme suit :
   
@@ -122,7 +122,7 @@ Pour utiliser les groupes Azure AD imbriqués, procédez comme suit :
 3.   Pour définir le niveau d’accès approprié pour le groupe d’accès conteneur, identifiez le groupe SharePoint et définissez le niveau d’autorisation correspondant.
     
 > [!NOTE]
-> Vous ne pouvez pas utiliser des groupes Office 365 imbriqués. 
+> Vous ne pouvez pas utiliser de groupes Microsoft 365 imbriqués. 
   
 Voici un exemple de groupes Azure AD imbriqués pour le groupe d’accès au membre ProjectX.
   

@@ -1,5 +1,5 @@
 ---
-title: Stratégie de d’Expiration de groupe Office 365
+title: Stratégie d’expiration des groupes
 ms.reviewer: arvaradh
 f1.keywords: NOCSH
 ms.author: mikeplum
@@ -17,17 +17,17 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Découvrez les stratégies d’expiration des groupes Office 365.
-ms.openlocfilehash: 58eadf3f5899a69fda261c34a5911af22220bd85
-ms.sourcegitcommit: 7bb340f6b47378bcd1c6e770dc975931470bbc26
+description: Découvrez les stratégies d’expiration des groupes Microsoft 365.
+ms.openlocfilehash: be61c66b310ada07876c5b3b005e6a7eb660092d
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43225918"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43630054"
 ---
-# <a name="office-365-group-expiration-policy"></a>Stratégie d’expiration de groupe Office 365
+# <a name="microsoft-365-group-expiration-policy"></a>Stratégie d’expiration de groupe Microsoft 365
 
-Avec l’augmentation de l’utilisation des groupes Office 365, les administrateurs et les utilisateurs ont besoin d’un moyen de nettoyer les groupes inutilisés. Les stratégies d’expiration permettent de supprimer des groupes inactifs du système et de simplifier les choses.
+Avec l’augmentation de l’utilisation des groupes Microsoft 365, les administrateurs et les utilisateurs doivent disposer d’un moyen de nettoyer les groupes inutilisés. Les stratégies d’expiration permettent de supprimer des groupes inactifs du système et de simplifier les choses.
 
 Lorsqu’un groupe expire, tous ses services associés (la boîte aux lettres, le planificateur, le site SharePoint, l’équipe, etc.) sont également supprimés.
 
@@ -46,14 +46,14 @@ Les groupes qui sont actifs en cours d’utilisation sont automatiquement renouv
 Il est important de comprendre que l’expiration est désactivée par défaut. Les administrateurs doivent l’activer pour leur organisation s’ils souhaitent l’utiliser.
 
 > [!NOTE]
-> La configuration et l’utilisation de la stratégie d’expiration pour les groupes Office 365 nécessitent de posséder, mais pas nécessairement, des licences Azure AD Premium pour les membres de tous les groupes auxquels la stratégie d’expiration est appliquée. Pour plus d’informations, consultez la rubrique [prise en main d’Azure Active Directory Premium](https://docs.microsoft.com/azure/active-directory/active-directory-get-started-premium).
+> La configuration et l’utilisation de la stratégie d’expiration pour les groupes Microsoft 365 nécessitent de posséder, mais pas nécessairement, des licences Azure AD Premium pour les membres de tous les groupes auxquels la stratégie d’expiration est appliquée. Pour plus d’informations, consultez la rubrique [prise en main d’Azure Active Directory Premium](https://docs.microsoft.com/azure/active-directory/active-directory-get-started-premium).
 
-## <a name="who-can-configure-and-use-the-office-365-groups-expiration-policy"></a>Qui peut configurer et utiliser la stratégie d’expiration des groupes Office 365 ?
+## <a name="who-can-configure-and-use-the-microsoft-365-groups-expiration-policy"></a>Qui peut configurer et utiliser la stratégie d’expiration des groupes Microsoft 365 ?
 
 |Role|Ce qu’ils peuvent faire|
 |---------|---------|
-|Administrateur général Office 365 (dans Azure, administrateur d’entreprise), administrateur d’utilisateurs|Créer, lire, mettre à jour ou supprimer les paramètres de stratégie d’expiration des groupes Office 365.|
-|Utilisateur|Renouveler ou [restaurer](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-restore-deleted) un groupe Office 365 dont ils sont propriétaires|
+|Administrateur général (dans Azure, administrateur d’entreprise), administrateur d’utilisateurs|Créez, lisez, mettez à jour ou supprimez les paramètres de stratégie d’expiration des groupes Microsoft 365.|
+|Utilisateur|Renouveler ou [restaurer](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-restore-deleted) un groupe Microsoft 365 dont il est propriétaire|
 
 ## <a name="how-to-set-the-expiration-policy"></a>Procédure de définition de la stratégie d’expiration
 
@@ -77,7 +77,7 @@ Les propriétaires de groupe seront uniquement avertis par courrier électroniqu
 
 30 jours avant l’expiration du groupe, les propriétaires du groupe (ou les adresses de messagerie que vous avez spécifiées pour les groupes qui n’ont pas de propriétaire) reçoivent un message leur permettant de renouveler facilement le groupe. S’ils ne le rerenouvellent pas, ils recevront un autre courrier électronique de renouvellement 15 jours avant l’expiration. S’il ne l’a toujours pas renouvelé, il reçoit une notification par courrier électronique le jour précédant l’expiration.
 
-Si, pour une raison quelconque, aucun des propriétaires ou administrateurs ne renouvelle le groupe avant qu’il n’expire, l’administrateur peut toujours restaurer le groupe pendant 30 jours après la date d’expiration. Pour plus d’informations, consultez la rubrique suivante : [Restore a Deleted Office 365 Group](https://support.office.com/article/restore-a-deleted-office-365-group-b7c66b59-657a-4e1a-8aa0-8163b1f4eb54).
+Si, pour une raison quelconque, aucun des propriétaires ou administrateurs ne renouvelle le groupe avant qu’il n’expire, l’administrateur peut toujours restaurer le groupe pendant 30 jours après la date d’expiration. Pour plus d’informations, consultez la rubrique suivante : [Restore a Deleted Microsoft 365 Group](https://support.office.com/article/restore-a-deleted-office-365-group-b7c66b59-657a-4e1a-8aa0-8163b1f4eb54).
 
 ## <a name="related-articles"></a>Articles connexes
 
@@ -85,4 +85,4 @@ Si, pour une raison quelconque, aucun des propriétaires ou administrateurs ne r
 
 [Attribuer un nouveau propriétaire à un groupe orphelin](https://support.office.com/article/86bb3db6-8857-45d1-95c8-f6d540e45732)
 
-[Configurer l’expiration des groupes Office 365](https://docs.microsoft.com/azure/active-directory/active-directory-groups-lifecycle-azure-portal) '
+[Configurer l’expiration des groupes Microsoft 365](https://docs.microsoft.com/azure/active-directory/active-directory-groups-lifecycle-azure-portal) '

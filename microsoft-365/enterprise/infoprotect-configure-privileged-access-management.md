@@ -1,5 +1,5 @@
 ---
-title: 'Étape 7 : Configurer la gestion des accès privilégiés pour Office 365'
+title: 'Étape 7 : configurer la gestion des accès privilégiés'
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -14,32 +14,32 @@ ms.collection:
 - Strat_O365_Enterprise
 - M365-security-compliance
 ms.custom: ''
-description: Familiarisez-vous avec la gestion des accès privilégiés pour Office 365 et apprenez à la configurer.
-ms.openlocfilehash: f29b1e0934a4b9a6d4e3347584f39423d446ed58
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: Comprenez et configurez la gestion des accès privilégiés.
+ms.openlocfilehash: 4fed4daacc17a34563825bf0575880ce06ec6ebd
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42067231"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636987"
 ---
-# <a name="step-7-configure-privileged-access-management-for-office-365"></a>Étape 7 : Configurer la gestion des accès privilégiés pour Office 365
+# <a name="step-7-configure-privileged-access-management"></a>Étape 7 : configurer la gestion des accès privilégiés
 
 *Cette étape est facultative et s’applique uniquement à la version E5 et à la version Conformité avancée de Microsoft 365 Entreprise*
 
 ![Phase 6 : Protection des informations](../media/deploy-foundation-infrastructure/infoprotection_icon-small.png)
 
-Vous activez la gestion des accès privilégiés en configurant des stratégies qui indiquent l’accès juste-à-temps pour les activités basées sur des tâches dans votre client Office 365. Elle peut vous aider à protéger votre organisation contre les violations qui pourraient survenir par le biais de comptes d’administrateur privilégiés existants qui donnent un accès permanent à des données sensibles ou à des paramètres de configuration critiques. Par exemple, vous pouvez configurer une stratégie de gestion des accès privilégiés qui requiert une approbation explicite pour pouvoir accéder aux paramètres de boîte aux lettres de votre organisation dans votre client Office 365 et les modifier.
+La gestion des accès privilégiés est activée en configurant des stratégies qui spécifient un accès juste-à-temps pour les activités basées sur les tâches de votre client. Il peut vous aider à protéger votre organisation contre les violations susceptibles d’utiliser des comptes administrateur avec privilèges existants avec un accès permanent aux données sensibles ou un accès aux paramètres de configuration critiques. Par exemple, vous pouvez configurer une stratégie de gestion des accès privilégiés qui requiert une approbation explicite pour accéder aux paramètres de la boîte aux lettres de l’organisation et les modifier dans votre client.
 
-Pour cette étape, vous allez activer la gestion des accès privilégiés dans votre client Office 365 et configurer les stratégies d’accès privilégiés qui permettent de renforcer la sécurité des accès basés sur les tâches à vos paramètres de configuration et à vos données Office 365 pour votre organisation. Il existe trois étapes simples pour commencer à utiliser les accès privilégiés dans votre organisation Office 365 :
+Dans cette étape, vous allez activer la gestion des accès privilégiés dans votre client et configurer des stratégies d’accès privilégié qui fournissent une sécurité supplémentaire pour l’accès basé sur les tâches aux paramètres de données et de configuration de votre organisation. Il existe trois étapes de base pour commencer à utiliser l’accès privilégié dans votre organisation :
 - Création d’un groupe d’approbateurs
 - Activation des accès privilégiés
 - Création de stratégies d’approbation
 
 Une fois configurée, la gestion des accès privilégiés permettra à votre organisation de fonctionner sans aucun privilège permanent et de fournir une sécurité renforcée contre les lacunes d’un accès administratif permanent comme celui-ci. L’accès privilégié requiert des approbations pour exécuter toute tâche pour laquelle une stratégie d’approbation associée a été définie. Les utilisateurs ayant besoin d’exécuter des tâches incluses dans la stratégie d’approbation doivent demander l’approbation de l’accès et l’obtenir afin de disposer des autorisations nécessaires pour exécuter les tâches définies dans la stratégie.
 
-Pour activer la gestion des accès privilégiés d’Office 365, consultez la rubrique relative à la [configuration de la gestion des accès privilégiés dans Office 365](https://docs.microsoft.com/office365/securitycompliance/privileged-access-management-configuration).
+Pour activer la gestion des accès privilégiés, consultez la rubrique [configurer la gestion des accès privilégiés](https://docs.microsoft.com/office365/securitycompliance/privileged-access-management-configuration) .
 
-Pour plus d’informations, reportez-vous à la rubrique relative à la [gestion des accès privilégiés dans Office 365](https://docs.microsoft.com/office365/securitycompliance/privileged-access-management-overview).
+Pour plus d’informations, consultez la rubrique [gestion des accès privilégiés](https://docs.microsoft.com/office365/securitycompliance/privileged-access-management-overview) .
 
 
 |||

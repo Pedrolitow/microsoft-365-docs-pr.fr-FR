@@ -17,12 +17,12 @@ ms.assetid: 078eb946-819a-4e13-8673-fe0c0ad3a775
 ms.collection:
 - M365-security-compliance
 description: Définir des stratégies de pièces jointes approuvées pour protéger votre organisation contre les fichiers malveillants par courrier électronique.
-ms.openlocfilehash: 8151cf1ec25ae46ae7a1845f34f42df3e5483bb2
-ms.sourcegitcommit: a955324e33097bbd2fc4ad7f2b8d1f3d87bc8580
+ms.openlocfilehash: d9139ff1b3adef2f70b6aede630791d355127573
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/21/2020
-ms.locfileid: "43608101"
+ms.locfileid: "43638343"
 ---
 # <a name="set-up-office-365-atp-safe-attachments-policies"></a>Configuration des stratégies de pièces jointes approuvées ATP Office 365
 
@@ -43,29 +43,28 @@ Les personnes envoient, reçoivent et partagent régulièrement des pièces join
 
 - Assurez-vous que votre organisation dispose de la [protection avancée contre les menaces d’Office 365](office-365-atp.md).
 
-- Assurez-vous que vous disposez des autorisations nécessaires. Pour définir (ou modifier) des stratégies ATP, vous devez être affecté à un rôle de gestion de l’organisation Exchange Online (l’administrateur général Office 365 est affecté à ce rôle par défaut) ou aux rôles d’administrateur de sécurité et de gestion de l’hygiène d’Exchange Online. Pour plus d’informations, consultez le tableau suivant :
+- Assurez-vous que vous disposez des autorisations nécessaires. Pour définir (ou modifier) des stratégies ATP, vous devez disposer d’un rôle de gestion de l’organisation Exchange Online (l’administrateur général est affecté à ce rôle par défaut) ou à la fois sur les rôles d’administrateur de sécurité et de gestion de l’hygiène d’Exchange Online. Pour plus d’informations, consultez le tableau suivant :
 
-  |||
-  |---|---|
-  |**Role**|**WHERE/How Assigned**|
-  |Administrateur général Office 365 |La personne qui s’inscrit pour acheter Office 365 est un administrateur global par défaut. (Pour en savoir plus, consultez la rubrique [à propos des rôles d’administrateur Office 365](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles) .)|
+  |Role|WHERE/How Assigned|
+  |---------|---------|
+  |administrateur général |La personne qui s’inscrit pour acheter Microsoft 365 est un administrateur global par défaut. (Pour en savoir plus, consultez la rubrique [à propos des rôles d’administrateur Microsoft 365](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles) .)|
   |Administrateur de sécurité |Centre d’administration Azure Active Directory[https://aad.portal.azure.com](https://aad.portal.azure.com)()|
   |Gestion de l’organisation Exchange Online, gestion de l’hygiène Exchange Online |Centre d’administration Exchange[https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)() <br>ou <br>  Applets de commande PowerShell (consultez la rubrique [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell))|
   |
 
-  Pour en savoir plus sur les rôles et les autorisations, consultez [la rubrique autorisations &amp; dans le centre de sécurité conformité Office 365](permissions-in-the-security-and-compliance-center.md).
+  Pour en savoir plus sur les rôles et les autorisations, consultez [la &amp; rubrique autorisations dans le centre de sécurité conformité](permissions-in-the-security-and-compliance-center.md).
 
 - [Découvrez les options de stratégie de pièces jointes approuvées ATP](#step-3-learn-about-atp-safe-attachments-policy-options) (dans cet article). Certaines options, telles que le moniteur ou les options de remplacement, peuvent entraîner un retard mineur du courrier électronique lors de l’analyse des pièces jointes. Pour éviter les retards de message, envisagez d’utiliser la [remise et l’aperçu dynamiques](dynamic-delivery-and-previewing.md).
 
-- Attendez jusqu’à 30 minutes que votre stratégie nouvelle ou mise à jour se propage à tous les centres de mises à jour Office 365.
+- Attendez jusqu’à 30 minutes que votre stratégie nouvelle ou mise à jour se propage à tous les centres de connaissances Microsoft 365.
 
 ## <a name="step-2-set-up-or-edit-an-atp-safe-attachments-policy"></a>Étape 2 : configurer (ou modifier) une stratégie de pièces jointes approuvées ATP
 
 1. Accédez à [https://protection.office.com](https://protection.office.com) et connectez-vous avec votre compte professionnel ou scolaire.
 
-2. Dans le centre de sécurité &amp; conformité Office 365, dans le volet de navigation de gauche, sous **gestion des menaces**, sélectionnez **stratégie** \> de **pièces jointes approuvées**par la stratégie.
+2. Dans le centre &amp; de navigation de gauche du centre de sécurité **conformité, sélectionnez** **stratégie** \> de **pièces jointes fiables**.
 
-3. Si vous voyez activer la protection avancée contre **les menaces pour SharePoint, OneDrive et Microsoft teams**, nous vous recommandons de sélectionner cette option. Cette opération active [office 365 protection avancée contre les menaces pour SharePoint, OneDrive et Microsoft teams](atp-for-spo-odb-and-teams.md) pour votre environnement Office 365.
+3. Si vous voyez activer la protection avancée contre **les menaces pour SharePoint, OneDrive et Microsoft teams**, nous vous recommandons de sélectionner cette option. Cette opération active [Office 365 protection avancée contre les menaces pour SharePoint, OneDrive et Microsoft teams](atp-for-spo-odb-and-teams.md) pour votre environnement Microsoft 365.
 
 4. Sélectionnez **nouveau** (le nouveau bouton ressemble à un signe plus ( **+**)) pour commencer à créer votre stratégie.
 
@@ -77,7 +76,7 @@ Les personnes envoient, reçoivent et partagent régulièrement des pièces join
 
    - Dans la section réponse, sélectionnez l’option **remise dynamique** . ([En savoir plus sur la remise et l’aperçu dynamiques avec des pièces jointes fiables ATP](dynamic-delivery-and-previewing.md).)
 
-   - Dans la section **pièce jointe de redirection** , sélectionnez l’option permettant d’activer la redirection et tapez l’adresse de messagerie de votre administrateur général Office 365, administrateur de la sécurité ou analyste de sécurité qui analysera les pièces jointes malveillantes.
+   - Dans la section **pièce jointe de redirection** , sélectionnez l’option permettant d’activer la redirection et tapez l’adresse de messagerie de votre administrateur général, de votre administrateur de sécurité ou de votre analyste de sécurité qui analysera les pièces jointes malveillantes.
 
    - Dans la section **appliqué à** , choisissez **le domaine du destinataire**, puis sélectionnez votre domaine. Choisissez **Ajouter**, puis choisissez **OK**.
 

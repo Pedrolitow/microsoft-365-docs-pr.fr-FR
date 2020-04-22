@@ -1,5 +1,5 @@
 ---
-title: Créer un groupe Office 365 dans le Centre d'administration
+title: Créer un groupe dans le centre d’administration
 ms.reviewer: arvaradh
 f1.keywords: CSH
 ms.author: mikeplum
@@ -18,22 +18,22 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 74a1ef8b-3844-4d08-9980-9f8f7a36000f
-description: Découvrez comment créer et supprimer des groupes Office 365, ajouter et supprimer des membres d’un groupe, et personnaliser le fonctionnement du groupe.
-ms.openlocfilehash: 088ef54531bc42cf563659c460cbf7d2e64c4cfe
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+description: Découvrez comment créer et supprimer des groupes Microsoft 365, ajouter et supprimer des membres d’un groupe, et personnaliser le fonctionnement du groupe.
+ms.openlocfilehash: d37058fa3ef3803f3a8f6099d46e1262f314e501
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43212092"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43630454"
 ---
-# <a name="create-an-office-365-group-in-the-microsoft-365-admin-center"></a>Créer un groupe Office 365 dans le centre d’administration Microsoft 365
+# <a name="create-a-group-in-the-microsoft-365-admin-center"></a>Créer un groupe dans le centre d’administration Microsoft 365
   
-Bien que les utilisateurs puissent créer un groupe Office 365 à partir d’Outlook ou d’autres applications, en tant qu’administrateur, il se peut que vous deviez créer ou supprimer des groupes, ajouter ou supprimer des membres et personnaliser leur fonctionnement. Vous pouvez effectuer cette opération dans le centre d’administration 365 de Microsoft si vous êtes un administrateur général ou un administrateur de groupes. 
+Bien que les utilisateurs puissent créer un groupe Microsoft 365 à partir d’Outlook ou d’autres applications, en tant qu’administrateur, il se peut que vous deviez créer ou supprimer des groupes, ajouter ou supprimer des membres et personnaliser leur fonctionnement. Le centre d’administration Microsoft 365 est l’endroit où vous devez effectuer cette opération. 
 
 > [!TIP]
-> Les groupes Yammer connectés à Office 365 doivent être créés dans Yammer, mais ils peuvent être gérés dans le centre d’administration Microsoft 365 comme les autres groupes Office 365. Pour en savoir plus, consultez la rubrique [groupes Yammer et Office 365](https://support.office.com/article/d8c239dc-a48b-47ab-b85e-6b4b8191a869.aspx). 
+> Les groupes Yammer connectés à Microsoft 365 doivent être créés dans Yammer, mais ils peuvent être gérés dans le centre d’administration Microsoft 365 comme les autres groupes Microsoft 365. Pour en savoir plus, consultez la rubrique [groupes Yammer et Microsoft 365](https://support.office.com/article/d8c239dc-a48b-47ab-b85e-6b4b8191a869.aspx). 
 
-## <a name="create-an-office-365-group"></a>Créer un groupe Office 365
+## <a name="create-a-microsoft-365-group"></a>Créer un groupe Microsoft 365
 
 1. Dans le centre d’administration, développez **groupes**, puis cliquez sur **groupes**.
 
@@ -115,13 +115,12 @@ Lorsqu’un courrier électronique est supprimé de la boîte aux lettres de gro
 
 ## <a name="next-step-manage-your-group"></a>Étape suivante : gérer votre groupe
 
-Après avoir créé un groupe et ajouté des membres, vous pouvez configurer votre groupe, comme modifier le nom ou la description du groupe, modifier les propriétaires ou les membres, et indiquer si les expéditeurs externes peuvent envoyer un message électronique au groupe et s’il faut envoyer des copies des conversations de groupe aux membres. Pour plus d’informations, consultez la rubrique [Manage an Office 365 Group](manage-groups.md) .
+Après avoir créé un groupe et ajouté des membres, vous pouvez configurer votre groupe, comme modifier le nom ou la description du groupe, modifier les propriétaires ou les membres, et indiquer si les expéditeurs externes peuvent envoyer un message électronique au groupe et s’il faut envoyer des copies des conversations de groupe aux membres. Pour plus d’informations, consultez [la rubrique manage a Microsoft 365 Group](manage-groups.md) .
 
 ## <a name="related-articles"></a>Articles connexes
 
-[Gérer l’accès invité aux groupes Office 365](https://support.office.com/article/7c713d74-a144-4eab-92e7-d50df526ff96.aspx)
+[Gérer l’accès invité aux groupes Microsoft 365](https://support.office.com/article/7c713d74-a144-4eab-92e7-d50df526ff96.aspx)
 
-[Choisir le domaine à utiliser lors de la création de groupes Office 365](choose-domain-to-create-groups.md)
+[Choisir le domaine à utiliser lors de la création de groupes Microsoft 365](choose-domain-to-create-groups.md)
 
-[Mettre à niveau des listes de distribution vers des groupes Office 365](../manage/upgrade-distribution-lists.md)
-        
+[Mettre à niveau les listes de distribution vers des groupes Microsoft 365](../manage/upgrade-distribution-lists.md)

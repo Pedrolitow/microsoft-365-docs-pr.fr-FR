@@ -21,19 +21,19 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
-description: Obtenir de l’aide pour augmenter le niveau de protection dans Microsoft 365 Business
-ms.openlocfilehash: 2dfccc7041c5fa32fb56d2ef2b113e9a3c883392
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: Obtenir de l’aide pour augmenter le niveau de protection dans Microsoft 365
+ms.openlocfilehash: d7ab554ae2f162260e978fe82d4a197cc0d84d02
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42080647"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43633712"
 ---
 # <a name="increase-threat-protection"></a>Renforcer la protection contre les menaces
 
 Cet article vous aide à renforcer la protection de votre abonnement Microsoft 365 afin de vous protéger contre le hameçonnage, les programmes malveillants et d’autres menaces. Ces recommandations sont appropriées pour les organisations ayant un besoin accru de sécurité, tels que les campagnes politiques, les bureaux d’avocats et les stages de soins de santé. 
 
-Avant de commencer, vérifiez votre score de sécurité Office 365. Le score de sécurité d’Office 365 analyse la sécurité de votre organisation Office 365 en fonction de vos activités normales et des paramètres de sécurité et affecte un score. Commencez par prendre note de votre score actuel. L’exécution des actions recommandées dans cet article augmente votre score. L’objectif n’est pas d’obtenir le score maximal, mais de prendre conscience des possibilités de protection de votre environnement qui n’ont pas d’impact négatif sur la productivité de vos utilisateurs. 
+Avant de commencer, vérifiez votre score de sécurité Office 365. Le score de sécurité d’Office 365 analyse la sécurité de votre organisation en fonction de vos activités normales et des paramètres de sécurité et affecte un score. Commencez par prendre note de votre score actuel. L’exécution des actions recommandées dans cet article augmente votre score. L’objectif n’est pas d’obtenir le score maximal, mais de prendre conscience des possibilités de protection de votre environnement qui n’ont pas d’impact négatif sur la productivité de vos utilisateurs. 
 
 Pour plus d’informations, consultez la rubrique [Microsoft Secure score](https://docs.microsoft.com/office365/securitycompliance/microsoft-secure-score).
 
@@ -44,7 +44,7 @@ Votre environnement Office 365 ou Microsoft 365 inclut une protection contre les
   
 1. Accédez à [https://protection.office.com](https://protection.office.com) et connectez-vous avec vos informations d’identification de compte d’administrateur. 
     
-2. Dans le centre de navigation &amp; de gauche du centre de sécurité conformité Office 365, **sous gestion des menaces**, sélectionnez **stratégie** \> **anti-programme malveillant**.
+2. Dans le centre &amp; de navigation de gauche du centre de sécurité **conformité, sélectionnez** **protection contre les programmes malveillants**pour la **stratégie** \> .
     
 3. Double-cliquez sur la stratégie par défaut pour modifier cette stratégie à l’échelle de l’entreprise.
     
@@ -59,7 +59,7 @@ Pour plus d’informations, consultez la rubrique [protection contre les program
   
 
 
-## <a name="protect-against-ransomware"></a>Protéger contre les ransomware
+## <a name="protect-against-ransomware"></a>Se protéger contre les rançongiciels
 
 Les ransomware limitent l’accès aux données en chiffrant les fichiers ou en verrouillant les écrans d’ordinateur. Il tente ensuite de extort l’argent des victimes en demandant « ransomware », généralement sous la forme d’cryptocurrencies comme Bitcoin, dans Exchange pour l’accès aux données. 
   
@@ -69,7 +69,7 @@ Outre les fichiers que vous avez bloqués à l’étape précédente, il est ég
 
 Pour créer une règle de transport de messagerie :
   
-1. <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> Accédez au centre d’administration et choisissez centres **** \> d’administration **Exchange**.
+1. <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> Accédez au centre d’administration et choisissez centres **Admin centers** \> d’administration **Exchange**.
     
 2. Dans la catégorie **flux de messagerie** , cliquez sur **règles**.
     
@@ -89,7 +89,7 @@ Pour créer une règle de transport de messagerie :
 |Procédez comme suit. . .  <br/> |Avertir le destinataire avec un message  <br/> |
 |Fournir le texte du message  <br/> |N’ouvrez pas ces types de fichiers provenant de contacts inconnus, car ils peuvent contenir des macros avec du code malveillant.  <br/> |
    
-Pour plus d’informations, voir :
+Si vous souhaitez en savoir plus, consultez les articles : 
   
 - [Comment traiter les ransomware](https://go.microsoft.com/fwlink/?linkid=2016501&amp;clcid=0x409)
     
@@ -134,7 +134,7 @@ Pour créer une stratégie anti-hameçonnage ATP, regardez [cette vidéo de form
   
 1. Accédez à [https://protection.office.com](https://protection.office.com). 
     
-2. Dans le centre de sécurité &amp; conformité d’Office 365, dans le volet de navigation de gauche, sous **gestion des menaces**, sélectionnez **stratégie**.
+2. Dans le centre &amp; de navigation de gauche du centre de sécurité conformité, sous **gestion des menaces**, sélectionnez **stratégie**.
     
 3. Sur la page **stratégie** , choisissez **protection contre le hameçonnage ATP**.
     
@@ -166,7 +166,7 @@ Tout d’abord, assurez-vous que le <a href="https://go.microsoft.com/fwlink/p/?
 
    ![Le nouvel aperçu du centre d’administration sur.](../media/previewon.png)
 
-Si vous ne voyez pas encore la page de **configuration** avec des cartes dans votre client, reportez-vous à la &amp; procédure d’exécution de ces étapes dans le centre de sécurité conformité Office 365. Consultez la rubrique [configurer des pièces jointes approuvées ATP dans le centre de sécurité & conformité](#set-up-atp-safe-attachments-in-the-security--compliance-center) et [configurer des liens fiables ATP dans le centre de conformité & de sécurité](#set-up-atp-safe-links-in-the-security--compliance-center).
+Si vous ne voyez pas encore la page de **configuration** avec des cartes dans votre client, voir comment effectuer ces étapes &amp; dans le centre de sécurité et de conformité. Consultez la rubrique [configurer des pièces jointes approuvées ATP dans le centre de sécurité & conformité](#set-up-atp-safe-attachments-in-the-security--compliance-center) et [configurer des liens fiables ATP dans le centre de conformité & de sécurité](#set-up-atp-safe-links-in-the-security--compliance-center).
 
 1.  Dans le volet de navigation de gauche, sélectionnez **configuration**.
 2. Sur la page de **configuration** , choisissez **Afficher** sur la carte **de protection avancée** contre les menaces.</br></br>
@@ -188,7 +188,7 @@ Pour créer une stratégie de pièces jointes approuvées pour la protection ava
   
 1. Accédez à [https://protection.office.com](https://protection.office.com) et connectez-vous à l’aide de votre compte d’administrateur. 
     
-2. Dans le centre de sécurité &amp; conformité d’Office 365, dans le volet de navigation de gauche, sous **gestion des menaces**, sélectionnez **stratégie**.
+2. Dans le centre &amp; de navigation de gauche du centre de sécurité conformité, sous **gestion des menaces**, sélectionnez **stratégie**.
     
 3. Sur la page stratégie, choisissez **pièces jointes approuvées ATP**.
     
@@ -225,7 +225,7 @@ Pour configurer des liens fiables ATP, regardez [cette vidéo de formation court
   
 1. Accédez à [https://protection.office.com](https://protection.office.com) et connectez-vous à l’aide de votre compte d’administrateur. 
     
-2. Dans le centre de sécurité &amp; conformité d’Office 365, dans le volet de navigation de gauche, sous **gestion des menaces**, sélectionnez **stratégie**.
+2. Dans le centre &amp; de navigation de gauche du centre de sécurité conformité, sous **gestion des menaces**, sélectionnez **stratégie**.
     
 3. Sur la page stratégie, choisissez **liens fiables ATP**.
     
@@ -233,7 +233,7 @@ Pour modifier la stratégie par défaut :
   
 1. Sur la page Liens approuvés, sous **stratégies qui s’appliquent à l’ensemble de l’organisation**, sélectionnez la stratégie **par défaut** . 
     
-2. Sous **paramètres qui s’appliquent au contenu à l’exception du courrier électronique**, sélectionnez **Office 365 ProPlus, Office pour iOS et Android**.
+2. Sous **paramètres qui s’appliquent au contenu à l’exception du courrier électronique**, sélectionnez **Microsoft 365 apps pour entreprise, Office pour iOS et Android**.
     
 3. Cliquez sur **Enregistrer**. 
     
@@ -258,12 +258,12 @@ Pour plus d’informations, reportez-vous à la rubrique [Office 365 ATP Safe Li
 
 Après avoir activé la recherche du journal d’audit dans le &amp; Centre de sécurité conformité, vous pouvez conserver l’administrateur et d’autres activités de l’utilisateur dans le journal et le Rechercher. 
 
-Vous devez disposer du rôle journaux d’audit dans Exchange Online pour activer ou désactiver la recherche dans le journal d’audit dans votre abonnement Microsoft 365 Business. Par défaut, ce rôle est affecté aux groupes de rôles gestion de la conformité et gestion de l’organisation dans la page autorisations du centre d’administration Exchange. Les administrateurs globaux dans Microsoft 365 sont membres de ce groupe par défaut.
+Vous devez disposer du rôle journaux d’audit dans Exchange Online pour activer ou désactiver la recherche dans le journal d’audit dans votre abonnement Microsoft 365. Par défaut, ce rôle est affecté aux groupes de rôles gestion de la conformité et gestion de l’organisation dans la page autorisations du centre d’administration Exchange. Les administrateurs globaux dans Microsoft 365 sont membres de ce groupe par défaut.
 
 1. Pour activer la recherche dans le journal d’audit, accédez au centre d’administration <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> à l’adresse, puis choisissez **conformité** sous **centres d’administration** dans le volet de navigation de gauche. 
 2. Sur la **page conformité de Microsoft 365** , sélectionnez **plus de ressources**, puis **ouvrez** la carte du **Centre &amp; de sécurité Office 365** .
 
-    ![Choisissez ouvrir sur le & de conformité Office 365 Security cars.](../media/gotosecandcomp.png)
+    ![Sélectionnez ouvrir sur le & de conformité cars.](../media/gotosecandcomp.png)
 3. Sur la page sécurité et conformité, sélectionnez **recherche** , puis **recherche dans le journal d’audit**.
 1. En haut de la page **recherche du journal d’audit** , sélectionnez **activer l’audit**.
 
@@ -282,8 +282,8 @@ Une fois que la fonctionnalité est activée, vous pouvez rechercher des fichier
 
 Vous pouvez utiliser des alertes d’activité pour effectuer le suivi des activités de l’administrateur et des utilisateurs et détecter les incidents de protection contre les menaces et les logiciels malveillants dans votre organisation. Votre abonnement inclut un ensemble de stratégies par défaut, mais vous pouvez également créer des stratégies personnalisées. Pour plus d’informations, consultez la rubrique [Alert Policies](https://docs.microsoft.com/office365/securitycompliance/alert-policies). Par exemple, si vous stockez un fichier important dans SharePoint que vous ne voulez pas que quiconque partage en externe, vous pouvez créer une notification qui vous avertit si une personne ne la partage pas.
 
-La figure suivante illustre les stratégies par défaut incluses dans Microsoft 365 Business. <br/><br/>
-    ![Stratégies d’alerte par défaut incluses avec Microsoft 365 Business.](../media/alertpolicies.png)
+La figure suivante montre les stratégies par défaut incluses dans Microsoft 365. <br/><br/>
+    ![Stratégies d’alerte par défaut incluses avec Microsoft 365](../media/alertpolicies.png)
 
 ## <a name="disable-or-manage-calendar-sharing"></a>Désactiver ou gérer le partage de calendrier
 

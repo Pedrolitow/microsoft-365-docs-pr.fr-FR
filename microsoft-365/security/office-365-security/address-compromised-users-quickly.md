@@ -1,5 +1,5 @@
 ---
-title: Adresser des comptes d’utilisateurs compromis avec une enquête et une réponse automatisées dans Office 365 protection avancée contre les menaces
+title: Adresser des comptes d’utilisateurs compromis avec une enquête et une réponse automatisées
 keywords: AIR, autoIR, ATP, automatisation, analyse, réponse, correction, menaces, avancé, menace, protection, compromis
 ms.author: deniseb
 author: denisebmsft
@@ -14,12 +14,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.date: 02/25/2020
 description: Découvrez comment accélérer le processus de détection et d’adressage des comptes d’utilisateurs compromis avec des fonctionnalités d’analyse et de réponse automatisées dans Office 365 Advanced Threat Protection Plan 2.
-ms.openlocfilehash: e5444b0b628be9acba029829b6fbb275b9c2f554
-ms.sourcegitcommit: 6d672eb8287526a9db90df5fa85bc4984a7047d1
+ms.openlocfilehash: 60e9009ff77ebb58794ad7feaf522e1c6efc3039
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "42280212"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635771"
 ---
 # <a name="address-compromised-user-accounts-with-automated-investigation-and-response"></a>Adresser des comptes d’utilisateurs compromis avec une enquête et une réponse automatisées
 
@@ -60,7 +60,7 @@ Lorsqu’un compte d’utilisateur est compromis, des alertes sont déclenchées
 
 ### <a name="view-and-investigate-restricted-users"></a>Afficher et examiner les utilisateurs avec accès restreint
 
-Vous disposez de plusieurs options pour accéder à une liste d’utilisateurs restreints. Par exemple, dans le centre de sécurité & conformité Office 365, vous pouvez accéder à la **gestion** > des menaces**examiner** > **les utilisateurs restreints**. La procédure suivante décrit la navigation à l’aide du tableau de bord **alertes** , qui permet de visualiser les différents types d’alertes qui ont pu être déclenchés.
+Vous disposez de plusieurs options pour accéder à une liste d’utilisateurs restreints. Par exemple, dans le centre de sécurité & conformité, vous pouvez accéder à la **gestion** > des menaces**examiner** > **les utilisateurs restreints**. La procédure suivante décrit la navigation à l’aide du tableau de bord **alertes** , qui permet de visualiser les différents types d’alertes qui ont pu être déclenchés.
 
 1. Accédez à [https://protection.office.com](https://protection.office.com) et connectez-vous.
 
@@ -74,7 +74,7 @@ Vous disposez de plusieurs options pour accéder à une liste d’utilisateurs r
 
 ### <a name="view-details-about-automated-investigations"></a>Afficher les détails des enquêtes automatisées
 
-Lorsqu’une enquête automatisée a commencé, vous pouvez consulter ses détails et résultats dans le centre de conformité Office 365 Security &. Accédez aux **** > **enquêtes**de gestion des menaces, puis sélectionnez une enquête pour en afficher les détails.
+Lorsqu’une enquête automatisée a commencé, vous pouvez consulter ses détails et résultats dans le centre de sécurité & conformité. Accédez aux **Threat management** > **enquêtes**de gestion des menaces, puis sélectionnez une enquête pour en afficher les détails.
 
 Pour en savoir plus, consultez la rubrique [afficher les détails d’une enquête](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-view-investigation-results).
 

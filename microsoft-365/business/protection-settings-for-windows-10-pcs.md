@@ -21,19 +21,19 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: bd66c26c-73a4-45a8-8642-3ea4ee7cd89d
-description: Découvrez les paramètres par défaut et d’autres paramètres disponibles dans Microsoft 365 Business pour sécuriser les appareils Windows 10.
-ms.openlocfilehash: 1b424fe6a85ad23b2914ea29f47d1dc16b333c94
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: Découvrez les paramètres par défaut et d’autres paramètres disponibles dans Microsoft 365 pour les entreprises afin de sécuriser les appareils Windows 10.
+ms.openlocfilehash: a3b7f0a8572a215491b32101a30c306b54571b6f
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42064958"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43633014"
 ---
 # <a name="set-device-protection-settings-for-windows-10-pcs"></a>Définir les paramètres de protection des appareils pour les PC Windows 10
 
 ## <a name="secure-windows-10-devices"></a>Sécuriser les appareils Windows 10
 
-Visionnez une vidéo sur la sécurisation des appareils Windows 10 avec Microsoft 365 Entreprise :
+Regardez une vidéo sur la sécurisation des appareils Windows 10 avec Microsoft 365 pour les entreprises :
   
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/a5734146-620a-4cec-8618-536b3ca37972?autoplay=false]
   
@@ -59,11 +59,11 @@ Visionnez une vidéo sur la sécurisation des appareils Windows 10 avec Microsof
 
 Par défaut, tous les paramètres sont **Activés**. Les paramètres suivants sont disponibles.
   
-Pour plus d'informations, voir [Correspondance entre les fonctionnalités de protection de Microsoft 365 Business et les paramètres Intune](map-protection-features-to-intune-settings.md). 
+Pour plus d’informations, voir [How do protection Features in Microsoft 365 Premium Map to Intune Settings](map-protection-features-to-intune-settings.md). 
   
 |||
 |:-----|:-----|
-|Setting  <br/> |Description  <br/> |
+|Paramètre  <br/> |Description  <br/> |
 |Protéger les ordinateurs des virus et d'autres menaces à l'aide de l'antivirus Windows Defender  <br/> |L'antivirus Windows Defender doit être activé pour protéger les ordinateurs contre les risques liés à la connexion à internet.  <br/> |
 |Protéger les ordinateurs contre les menaces web dans Microsoft Edge  <br/> |Active les paramètres Microsoft Edge qui protègent les utilisateurs contre les sites et téléchargements malveillants.  <br/> |
 |Utiliser des règles qui réduisent la surface d'attaque des appareils  <br/> |Quand elle est activée, la réduction de la surface d'attaque aide à bloquer les actions et applications que les logiciels malveillants utilisent généralement pour contaminer des appareils. Ce paramètre est disponible uniquement si Antivirus Windows Defender est activé. Pour en savoir plus, voir [Réduire les surfaces d'attaque](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/exploit-protection).  <br/> |

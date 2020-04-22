@@ -25,12 +25,12 @@ search.appverid:
 - MOE150
 ms.assetid: 6383f56d-3d09-4dcb-9b41-b5f5a5efd611
 description: Ajoutez votre domaine à Office 365 dans le centre d’administration Microsoft 365 en ajoutant un enregistrement DNS au niveau de votre hôte DNS. L’Assistant installation vous guide tout au long du processus.
-ms.openlocfilehash: 746163b83190a73326ad589b8e3bc9377ddaa9b4
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+ms.openlocfilehash: 8e08233ffe33ac2b5d41ad164af80468de52983d
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43209639"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631814"
 ---
 # <a name="add-a-domain-to-office-365"></a>Ajouter un domaine à Office 365
 
@@ -75,7 +75,7 @@ ms.locfileid: "43209639"
     
 5. Choisissez la manière dont vous souhaitez vérifier que vous êtes propriétaire du domaine.
     
-    1. Si votre domaine est inscrit sur GoDaddy ou 1&amp;1, sélectionnez **se connecter** > à l'**étape suivante** et Office 365 [définira automatiquement vos enregistrements](../get-help-with-domains/domain-connect.md).
+    1. Si votre domaine est inscrit sur GoDaddy ou 1&amp;1, sélectionnez **connexion** > **suivante** et Microsoft[configure automatiquement vos enregistrements](../get-help-with-domains/domain-connect.md).
     
     2. Vous pouvez demander à ce qu'un courrier incluant un code de vérification soit envoyé au contact enregistré pour le domaine. Si vous ne reconnaissez pas ou n’avez pas accès au courrier électronique, vous pouvez utiliser la troisième option.
     
@@ -112,4 +112,4 @@ ms.locfileid: "43209639"
 
 [Configurer votre domaine (instructions spécifiques de l’hôte)](../get-help-with-domains/set-up-your-domain-host-specific-instructions.md)
 
-[Obtenir de l’aide sur les domaines Office 365](../get-help-with-domains/get-help-with-domains.md)
+[Obtenir de l’aide sur les domaines](../get-help-with-domains/get-help-with-domains.md)

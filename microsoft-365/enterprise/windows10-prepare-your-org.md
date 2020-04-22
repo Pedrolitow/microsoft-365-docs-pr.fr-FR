@@ -12,12 +12,12 @@ ms.date: 06/01/2018
 f1.keywords:
 - NOCSH
 ms.author: josephd
-ms.openlocfilehash: 9b83082a4dc859c10db03608de2edebdbb633cbe
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 74c8dc4a0d4e2d457462320999ed79e80b372b7a
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42085523"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636662"
 ---
 # <a name="step-1-prepare-your-organization-for-windows-10-enterprise"></a>Étape 1 : Préparer votre organisation pour Windows 10 Entreprise
 
@@ -31,7 +31,8 @@ Avant de mettre à niveau vos appareils vers Windows 10 Entreprise, tenez compte
 - **Vous n’avez pas besoin d’ajouter d’utilisateurs pour le moment** <br>Pour utiliser les services Microsoft 365 ou installer les produits Microsoft 365, les utilisateurs ont besoin de comptes dans Microsoft 365 et ils ont besoin de licences de produit. La manière dont vous ajoutez des utilisateurs à Microsoft 365 dépend du nombre d'utilisateurs et si vous disposez actuellement d'Active Directory sur site. Si vous n'avez pas Active Directory (ou si vous avez Active Directory mais que vous ne souhaitez pas le synchroniser avec Microsoft 365), vous pouvez ajouter des utilisateurs directement à Microsoft 365 et attribuer des licences, individuellement ou en bloc.
   <br> Si vous avez Active Directory en local, vous pouvez le [synchroniser avec Microsoft 365](identity-add-user-accounts.md#identity-sync) pour créer des comptes d’utilisateurs dans Azure AD, l’annuaire de cloud utilisé par Microsoft 365. Avec cette méthode, vous pouvez créer des comptes pour les utilisateurs et pour les groupes de sécurité que vous utilisez pour gérer les autorisations sur les ressources (comme les collections de sites ou les documents SharePoint Online). La synchronisation de votre Active Directory avec Microsoft 365 n'attribuera pas de licences aux utilisateurs.
 - **Vous n’avez pas besoin d’attribuer de licence aux utilisateurs pour le moment** <br> Avant que les utilisateurs ne puissent utiliser les services Microsoft 365 ou installer un logiciel à partir du portail Microsoft 365, ils ont besoin des licences des produits. En tant qu'administrateur de gestion globale ou utilisateur, vous pouvez attribuer directement des licences de produits dans Microsoft 365, individuellement ou en bloc. Vous pouvez également utiliser des [licences basées sur des groupes](identity-use-group-management.md#identity-group-license) pour attribuer automatiquement des licences lorsque des utilisateurs sont ajoutés à un groupe particulier. 
-- **Installer Office 365 ProPlus séparément** <br>L’obtention d’une licence Microsoft 365 n’installe pas automatiquement Office 365 ProPlus sur vos ordinateurs clients. Voir [Phase 4 : Office 365 ProPlus](office365proplus-infrastructure.md) pour plus d’informations. 
+- **Vous installez les applications Microsoft 365 pour Enterprise séparément** <br>
+  L’obtention d’une licence Microsoft 365 n’installe pas automatiquement les applications Microsoft 365 pour les ordinateurs clients. Pour plus d’informations, reportez-vous à la section [phase 4 : Microsoft 365 Apps for Enterprise](office365proplus-infrastructure.md) . 
 
 ## <a name="set-windows-diagnostics-data-level"></a>Définir le niveau de données de diagnostic Windows
 
@@ -43,7 +44,7 @@ Vous pouvez configurer les paramètres des données de diagnostic de votre syst�
 
 Utilisez la valeur appropriée dans le tableau ci-dessous lorsque vous configurez la stratégie de gestion.
 
-| Niveau | Données collectées | Valeur |
+| Level | Données collectées | Valeur |
 |:--- |:--- |:--- |
 | Sécurité | Données de sécurité uniquement. | 0 |
 | De base | Données de sécurité, système de base et données de qualité. | 0,1 |

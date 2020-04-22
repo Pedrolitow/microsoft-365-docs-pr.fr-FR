@@ -15,12 +15,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: Ent_Architecture
 description: 'Résumé : Comment Contoso a utilisé une équipe pour les données hautement réglementées pour un projet à forte priorité afin de développer une nouvelle suite de produits et de services.'
-ms.openlocfilehash: 58d381751db3e94f35a0c1b8f7a14c191918e754
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 310ef33d4add7d71616aee8808515ca90536d8c1
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42068024"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636497"
 ---
 # <a name="team-for-a-top-secret-project-of-the-contoso-corporation"></a>Faire équipe pour un projet top secret de Contoso Corporation
 
@@ -50,21 +50,21 @@ Pour plus d’informations sur la configuration, consultez la rubrique [paramèt
 
 ## <a name="step-2-configured-a-dlp-policy-and-the-underlying-site-for-a-retention-label"></a>Étape 2 : configuration d’une stratégie DLP et du site sous-jacent pour une étiquette de rétention 
 
-Tout d’abord, contoso admins a appliqué l’étiquette de rétention Office 365 **hautement confidentiel** existante à la section **documents** du site SharePoint sous-jacent de l’équipe Project 2x.
+Tout d’abord, les administrateurs de contoso ont appliqué l’étiquette de rétention **hautement confidentielle** existante à la section **documents** du site SharePoint sous-jacent de l’équipe Project 2x.
 
-Ensuite, ils ont créé une nouvelle stratégie DLP Office 365 nommée **Project 2x** qui :
+Ensuite, ils ont créé une nouvelle stratégie DLP nommée **Project 2x** , qui :
 
-- Utilise l’étiquette de rétention Office 365 hautement confidentiel.
+- Utilise l’étiquette de rétention hautement confidentielle.
 - Bloque les utilisateurs lorsqu’ils tentent de partager un fichier dans l’équipe Project 2X en dehors de contoso.
 
 Pour plus d’informations sur la configuration, consultez la rubrique [protéger les fichiers dans teams avec les étiquettes de rétention et DLP](https://docs.microsoft.com/microsoft-365/security/office-365-security/deploy-teams-retention-dlp).
 
-## <a name="step-3-created-an-office-365-sensitivity-label-for-the-project-2x-team"></a>Étape 3 : création d’une étiquette de confidentialité Office 365 pour l’équipe Project 2X
+## <a name="step-3-created-a-sensitivity-label-for-the-project-2x-team"></a>Étape 3 : création d’une étiquette de critère de diffusion pour l’équipe Project 2X
 
-Les administrateurs contoso ont créé une étiquette de confidentialité Office 365 nommée **Project 2x** qui :
+Les administrateurs contoso ont créé une étiquette de sensibilité nommée **Project 2x** qui :
 
 - Nécessite le chiffrement.
-- Autorise les autorisations de co-auteur pour le groupe 2 d’Office 365.
+- Autorise les autorisations de co-auteur pour le projet 2X groupe Microsoft 365.
 
 Voici la configuration obtenue de l’équipe Project 2X.
 
@@ -72,7 +72,7 @@ Voici la configuration obtenue de l’équipe Project 2X.
  
 Les fichiers de la section documents du projet sous-jacent 2 SharePoint ont été protégés par :
 
-- Les autorisations de site, qui autorisent uniquement l’accès aux membres du groupe 2 d’Office 365.
+- Les autorisations de site, qui autorisent uniquement l’accès aux membres du projet 2X groupe Microsoft 365.
 - Étiquette de rétention hautement confidentielle, automatiquement affectée aux nouveaux fichiers.
 - Stratégie DLP qui utilise l’étiquette de rétention hautement confidentielle et les paramètres qui empêchent le partage du fichier avec les utilisateurs externes.
 - L’étiquette de sensibilité Project 2X, avec le chiffrement et les autorisations qui transitent avec le fichier s’il est déplacé ou copié à partir du site.
@@ -101,6 +101,6 @@ En raison de l’environnement de collaboration de teams et des fonctionnalités
 
 [Déployer](deploy-microsoft-365-enterprise.md) Microsoft 365 entreprise dans votre organisation.
 
-## <a name="see-also"></a>Voir aussi
+## <a name="see-also"></a>Voir également
 
 [Bibliothèque de productivité Microsoft 365](https://aka.ms/productivitylibrary)https://aka.ms/productivitylibrary)

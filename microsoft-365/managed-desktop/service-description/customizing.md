@@ -1,17 +1,17 @@
 ---
 title: Exceptions au plan de service
 description: ''
-keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
+keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: aca3bb6413aaab7620b1e1277c821a79dba4bb2f
-ms.sourcegitcommit: 9083036e787cf997fbceb19c66af594d0fa81d0f
+ms.openlocfilehash: 9dca53ac9e99fd9bc68ee42f78de6a2bc009e42c
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "38302901"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636183"
 ---
 # <a name="exceptions-to-the-service-plan"></a>Exceptions au plan de service
 
@@ -27,9 +27,9 @@ Une exception est l’ajout ou la modification de la configuration de base du bu
 |Agents de sécurité & VPN     |  Logiciel utilisé pour sécuriser, surveiller ou modifier le comportement du périphérique ou du réseau       |
 |Surveillance de l’expérience numérique     |  Logiciel utilisé pour effectuer le suivi des données sur l’appareil d’un utilisateur pour lui faire rapport.       |
 |Pilotes matériels ou logiciels     |   Pilotes de périphériques, restreints par les exigences de l' [application](mmd-app-requirements.md)      |
-|Stratégies     | Paramètres Windows 10 ou Office 365 ProPlus sur un appareil géré        |
+|Stratégies     | Applications Windows 10 ou Microsoft 365 pour les paramètres d’entreprise sur un appareil géré        |
 |Appareils     | Appareils qui ne figurent pas dans la [liste](device-list.md) des appareils de bureau géré Microsoft        |
-|Other     |  Tout ce qui n’est pas couvert par les autres zones       |
+|Autres     |  Tout ce qui n’est pas couvert par les autres zones       |
  
 ## <a name="request-an-exception"></a>Demander une exception
 

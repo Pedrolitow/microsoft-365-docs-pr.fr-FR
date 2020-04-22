@@ -12,19 +12,19 @@ search.appverid:
 - MET150
 ms.collection:
 - M365-security-compliance
-description: Les administrateurs d’Office 365 peuvent découvrir comment effectuer une récupération à partir d’une attaque par ransomware.
-ms.openlocfilehash: 6d57142bac6dad22d38cc26a9353b528a9f8eb10
-ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
+description: Les administrateurs de Microsoft 365 peuvent découvrir comment effectuer une récupération suite à une attaque par ransomware.
+ms.openlocfilehash: 49e14e92505f5241828a525aba82a2dc871e6784
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/28/2020
-ms.locfileid: "43032875"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634399"
 ---
 # <a name="recover-from-a-ransomware-attack-in-office-365"></a>Récupération suite à une attaque de ransomware dans Office 365
 
-Même si vous avez toutes les précautions à prendre pour protéger votre organisation Office 365, vous pouvez toujours devenir victime d’une attaque par [ransomware](https://docs.microsoft.com/windows/security/threat-protection/intelligence/ransomware-malware) . Les ransomware sont de grandes entreprises et les attaques sont vérifiées de façon sophistiquée.
+Même si vous avez toutes les précautions à prendre pour protéger votre organisation, vous pouvez toujours devenir victime d’une attaque par [ransomware](https://docs.microsoft.com/windows/security/threat-protection/intelligence/ransomware-malware) . Les ransomware sont de grandes entreprises et les attaques sont vérifiées de façon sophistiquée.
 
-Les étapes de cette rubrique vous permettront de récupérer les données chiffrées par les ransomware, et vous aideront à arrêter la propagation de l’infection dans votre organisation Office 365. Avant de commencer, prenez en compte les éléments suivants :
+Les étapes de cette rubrique vous permettront de récupérer les données qui ont été chiffrées par le ransomware, et vous aideront à arrêter la propagation de l’infection dans votre organisation. Avant de commencer, prenez en compte les éléments suivants :
 
 - Il n’existe aucune garantie que le fait de payer le ransomware renverra l’accès à vos fichiers. En fait, le paiement du ransomware peut vous faire une cible pour plus de ransomware. Si vous avez déjà payé, mais que vous avez réussi à récupérer vos fichiers sans avoir à utiliser la résolution de l’agresseur, vous devez appeler votre banque pour savoir si elle peut bloquer la transaction. Nous vous recommandons également de signaler les attaques par ransomware à l’application de la Loi, les sites Web de signalement de fraude et Microsoft, comme décrit plus loin dans cette rubrique.
 
@@ -78,7 +78,7 @@ La restauration des fichiers dans OneDrive entreprise vous permet de restaurer l
 
 ## <a name="step-6-recover-deleted-email"></a>Étape 6 : récupérer les messages électroniques supprimés
 
-Dans le cas rare où le ransomware a supprimé tous vos courriers électroniques, vous pouvez probablement récupérer les éléments supprimés. Pour plus d’informations, voir :
+Dans le cas rare où le ransomware a supprimé tous vos courriers électroniques, vous pouvez probablement récupérer les éléments supprimés. Si vous souhaitez en savoir plus, consultez les articles : 
 
 - [Récupérer des messages supprimés dans la boîte aux lettres d’un utilisateur](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-user-mailboxes/recover-deleted-messages)
 
@@ -122,9 +122,9 @@ Si votre pays n’est pas indiqué, demandez à vos organismes d’application d
 
 ### <a name="submit-email-messages-to-microsoft"></a>Envoyer des messages électroniques à Microsoft
 
-Vous pouvez signaler un message de hameçonnage contenant des ransomware à l’aide de l’une des méthodes suivantes. Pour plus d’informations, consultez la rubrique [signaler des messages et des fichiers à Microsoft](report-junk-email-messages-to-microsoft.md).
+Vous pouvez signaler un message de hameçonnage contenant des ransomware à l’aide de l’une des méthodes suivantes. Pour plus d’informations, voir [Signaler des messages et des fichiers à Microsoft](report-junk-email-messages-to-microsoft.md).
 
-## <a name="see-also"></a>Voir aussi
+## <a name="see-also"></a>Voir également
 
 - [Rançongiciels](https://docs.microsoft.com/windows/security/threat-protection/intelligence/ransomware-malware)
 

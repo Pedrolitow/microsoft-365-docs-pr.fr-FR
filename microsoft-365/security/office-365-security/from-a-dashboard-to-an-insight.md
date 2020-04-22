@@ -17,16 +17,16 @@ ms.assetid: 703c41df-b3e2-4e7e-9eeb-1a0b8d60fb56
 ms.collection:
 - M365-security-compliance
 description: Découvrez comment passer d’un tableau de bord à un aperçu des actions recommandées dans le &amp; Centre de sécurité conformité.
-ms.openlocfilehash: 52fc933133cee4b060a08516b64a46c1c24a13cb
-ms.sourcegitcommit: db8702cf578b02c6fd6a2670c177b456efae4748
+ms.openlocfilehash: 22ca34696bc46e0142818be715d68f0b469c6255
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43537496"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43638093"
 ---
 # <a name="walkthrough---from-a-dashboard-to-an-insight"></a>Procédure pas à pas. D’un tableau de bord à un aperçu
 
-Si vous débutez avec des [rapports et des informations dans le centre de sécurité &amp; conformité Office 365](reports-and-insights-in-security-and-compliance.md), il peut vous aider à naviguer dans un tableau de bord jusqu’à une vue d’analyse et des actions recommandées. 
+Si vous débutez avec des [rapports et des informations dans le centre &amp; de conformité](reports-and-insights-in-security-and-compliance.md)et de sécurité, il peut vous aider à vous rendre compte d’un tableau de bord jusqu’à une vue et des actions recommandées. 
   
 Il s’agit de l’une des nombreuses procédures pas &amp; à pas pour le centre de sécurité conformité. Pour voir des procédures pas à pas supplémentaires, consultez la section [Rubriques connexes](#related-topics) . 
   

@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment Microsoft 365 pour les campagnes affecte vos utilisateurs.
-ms.openlocfilehash: a7ec8d6c9ffcf70071332027fde5d2aa182700d0
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 12d14ceb6a11c246bf8f456b9f8e3bacde2e076d
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42080504"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632766"
 ---
 # <a name="how-microsoft-365-for-campaigns-affects-your-users"></a>Impact de Microsoft 365 pour les campagnes sur vos utilisateurs
 
@@ -65,12 +65,12 @@ Pour les [appareils Windows 10 et Mac non gérés](m365-campaigns-protect-pcs-ma
 
 ||||
 |:-----|:-----|:------|
-||**Windows 10**|**Mac**|
+||**Windows 10**|**Mac**|
 |Fonctionnalités de sécurité|Activer la protection des périphériques BitLocker<p><p> Vérifier que Windows Defender reste activé <p>Activer le pare-feu Windows| Utiliser FileVault pour chiffrer le disque Mac <p><p>Utiliser un logiciel antivirus fiable <p>Activer la protection de pare-feu|
 
 Pour en savoir plus sur ces recommandations, consultez [la rubrique protéger votre compte et vos appareils des pirates et programmes malveillants](https://support.office.com/article/Protect-your-account-and-devices-from-hackers-and-malware-066d6216-a56b-4f90-9af3-b3a1e9a327d6#ID0EAABAAA=Windows_10).
 
-## <a name="collaborate-using-microsoft-teams-onedrive-sharepoint-online-and-other-office-365-tools"></a>Collaborer à l’aide de Microsoft Teams, OneDrive, SharePoint Online et d’autres outils Office 365
+## <a name="collaborate-using-microsoft-teams-onedrive-sharepoint-online-and-other-tools"></a>Collaborer à l’aide de Microsoft Teams, OneDrive, SharePoint Online et d’autres outils
 Vos utilisateurs peuvent être tentés de partager et de stocker les fichiers de votre organisation dans des emplacements autres que Microsoft 365. Microsoft 365 facilite la collaboration et le partage sécurisés. Vous pouvez [partager des fichiers et des vidéos](share-files-and-videos.md) directement à partir de Microsoft Teams, de OneDrive, de flux et même à partir d’un fichier. Le partage à partir de ces outils contribue à empêcher les fuites de données. Vous pouvez ajouter une protection supplémentaire aux données sensibles pour empêcher le partage à l’extérieur de votre organisation. 
 
 

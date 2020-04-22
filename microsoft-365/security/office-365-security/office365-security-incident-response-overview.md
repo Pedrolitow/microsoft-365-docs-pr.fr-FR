@@ -1,5 +1,5 @@
 ---
-title: Réponse aux incidents de sécurité Office 365
+title: Réponse aux incidents de sécurité
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -15,15 +15,15 @@ ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
-description: Cette solution vous indique les attaques Cybersecurity les plus courantes pouvant ressembler à Office 365 et comment y répondre.
-ms.openlocfilehash: 317e685dd9e2b2e0afbf25f0568b352c399e7b87
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+description: Cette solution vous indique les attaques Cybersecurity les plus courantes pouvant ressembler à Microsoft 365 et comment y répondre.
+ms.openlocfilehash: 4c5713a0689dae07fe5300c04754d77912f53976
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598721"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634507"
 ---
-# <a name="office-365-security-incident-response"></a>Réponse aux incidents de sécurité Office 365
+# <a name="security-incident-response"></a>Réponse aux incidents de sécurité
 
  **Résumé :** Cette solution vous indique les indicateurs pour les attaques Cybersecurity les plus courantes dans Office 365, la confirmation positive d’une attaque donnée et la façon de y répondre.
 
@@ -31,7 +31,7 @@ ms.locfileid: "41598721"
 
 Tous les cyberattaques ne peuvent pas être déconsidérés. Les agresseurs cherchent constamment de nouvelles faiblesses dans votre stratégie défensive ou ils exploitent les anciens. Savoir comment reconnaître une attaque vous permet de y répondre plus rapidement, ce qui réduit la durée de l’incident de sécurité.
 
-Cette série d’articles vous aide à comprendre ce qu’un type d’attaque particulier peut ressembler dans Office 365 et vous indique les étapes que vous pouvez suivre pour répondre. Il s’agit de points d’entrée rapides à comprendre :
+Cette série d’articles vous aide à comprendre à quoi peut ressembler un type d’attaque particulier dans Microsoft 365 et vous indique les étapes que vous pouvez suivre pour répondre. Il s’agit de points d’entrée rapides à comprendre :
 
 - Ce qu’est l’attaque et comment elle fonctionne.
 
@@ -55,9 +55,9 @@ Consultez cet article tous les mois à mesure que d’autres articles seront ajo
 
 - [Réponse à un compte de messagerie compromis dans Office 365](responding-to-a-compromised-email-account.md)
 
-## <a name="secure-office-365-like-a-cybersecurity-pro"></a>Sécuriser Office 365 comme un pro de la cyber-sécurité
+## <a name="secure-microsoft-365-like-a-cybersecurity-pro"></a>Sécurisation de Microsoft 365 comme un Cybersecurity Pro
 
-Votre abonnement Office 365 inclut un ensemble puissant de fonctionnalités de sécurité que vous pouvez utiliser pour protéger vos données et vos utilisateurs.  Utilisez la [Feuille de route pour sécuriser Office 365 : principales priorités pour les 30 premiers jours, 90 premiers jours et au-delà](security-roadmap.md), pour implémenter les meilleures pratiques recommandées par Microsoft pour sécuriser votre client Office 365.
+Votre abonnement Microsoft 365 est fourni avec un ensemble de fonctionnalités de sécurité puissantes que vous pouvez utiliser pour protéger vos données et vos utilisateurs.  Utilisez la feuille de [route de sécurité microsoft 365-priorités principales pour les 30 jours, 90 jours et au-delà](security-roadmap.md) pour implémenter les meilleures pratiques recommandées par Microsoft pour la sécurisation de votre organisation Microsoft 365.
 
 - Tâches à effectuer lors des 30 premiers jours.  Elle ont un effet immédiat et n’ont qu’un faible impact négatif sur vos utilisateurs.
 

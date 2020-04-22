@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: Vous inscrire pas à pas pour les campagnes Microsoft 365. Protégez votre campagne contre les menaces Cybersecurity pour la messagerie, les données et la communication.
-ms.openlocfilehash: 604e0be01c3824ed63361bb7fc9e694787ae83ef
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 34d5b3103666b9cead1c2dfc09400a9eca5e3e40
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42633732"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632778"
 ---
 # <a name="sign-up-for-microsoft-365-for-campaigns"></a>S’inscrire à Microsoft 365 pour les campagnes 
 
@@ -46,7 +46,7 @@ Voici comment effectuer votre inscription pour les campagnes Microsoft 365.
 
 1. Dans votre invitation à Microsoft 365 pour les messages électroniques de campagne, sélectionnez **inscrire le >de votre organisation **. Cette opération vous permet d’accéder à Microsoft 365.
     > [!NOTE]
-    > Si vous disposez déjà d’un abonnement Office 365 pour les entreprises et que vous souhaitez ajouter les offres Microsoft 365 pour les campagnes, accédez à [Ajouter microsoft 365 pour les campagnes à un abonnement existant](#steps-to-add-microsoft-365-for-campaigns-to-an-existing-subscription).
+    > Si vous disposez déjà d’un abonnement Microsoft 365 pour les entreprises et que vous souhaitez ajouter les offres Microsoft 365 pour les campagnes, accédez à [Ajouter microsoft 365 pour les campagnes à un abonnement existant](#steps-to-add-microsoft-365-for-campaigns-to-an-existing-subscription).
 1. **Dans la page Microsoft 365 Business**, entrez les détails de votre entreprise. Pour l' **adresse de messagerie professionnelle**, utilisez une adresse de messagerie actuelle. Nous avons seulement besoin de cette adresse pour rester en contact avec vous pendant le processus d’installation. Sélectionnez **Suivant**.
 1. **Sur la page créer votre ID d’utilisateur**:
     1. Dans **nom d’utilisateur**, entrez le nom ou l’alias de votre choix pour votre adresse de messagerie. Par exemple, il se peut que vous vouliez être appelé simplement Alice ou Rob. Dans une campagne plus grande, AliceC ou AliceChavez peut être plus judicieux.
@@ -72,9 +72,9 @@ Vos étapes d’inscription sont terminées ! Si vous souhaitez passer aux éta
 
 ## <a name="steps-to-add-microsoft-365-for-campaigns-to-an-existing-subscription"></a>Étapes à suivre pour ajouter Microsoft 365 pour les campagnes à un abonnement existant
 
-Si vous disposez déjà d’un abonnement à Office 365 pour les entreprises, par exemple, Office 365 Business Premium, vous pouvez utiliser l’offre Microsoft 365 pour les campagnes pour y ajouter des licences.
+Si vous disposez déjà d’un abonnement à Microsoft 365 pour les entreprises, par exemple Microsoft 365 Business standard, vous pouvez utiliser l’offre Microsoft 365 pour les campagnes pour y ajouter des licences.
 > [!IMPORTANT]
-> Vous ne pouvez pas ajouter la proposition Microsoft 365 for campaigns à un client Microsoft 365 Business existant.
+> Vous ne pouvez pas ajouter l’offre Microsoft 365 pour les campagnes à un compte Microsoft 365 existant.
 
 1. Dans votre invitation à Microsoft 365 pour les messages électroniques de campagne, sélectionnez **inscrire le >de votre organisation **. Cette opération vous permet d’accéder à Microsoft 365.
 2. Sur la page **Bienvenue, nous allons savoir** , cliquez ou appuyez sur souhaitez-vous l' **Ajouter à un abonnement existant ? Connectez-vous**.

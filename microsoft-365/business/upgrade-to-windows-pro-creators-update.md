@@ -25,12 +25,12 @@ search.appverid:
 - MOE150
 ms.assetid: ffc4d886-9e1d-453d-a0d0-2f62f18635e2
 description: Découvrez comment vous pouvez mettre à niveau vos appareils Windows vers Windows 10 professionnel pour utiliser des fonctionnalités de mise en réseau plus avancées et de sécurité.
-ms.openlocfilehash: 3901754d9ef269ae74dbf1893cb62b1ba810919d
-ms.sourcegitcommit: 217de0fc54cbeaea32d253f175eaf338cd85f5af
+ms.openlocfilehash: f0cedda49dbff2a8c2884bb52e240fabfbeb4537
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42560657"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632048"
 ---
 # <a name="upgrade-windows-devices-to-windows-10-pro"></a>Mettre à niveau les appareils Windows vers Windows 10 professionnel
 
@@ -53,12 +53,12 @@ Pour effectuer une mise à niveau vers Windows 10 professionnel, vous disposez d
     - Lisez les instructions relatives à l’utilisation de l’outil et à la création de votre support d’installation. 
 
 > [!NOTE]
-> Si vous avez des appareils Windows exécutant Windows 7 professionnel, Windows 8 professionnel ou Windows 8,1 Pro, votre abonnement professionnel Microsoft 365 vous donne droit à une mise à niveau vers Windows Pro 10.
+> Si vous avez des appareils Windows exécutant Windows 7 professionnel, Windows 8 professionnel ou Windows 8,1 Pro, votre abonnement Microsoft 365 pour les entreprises vous permet d’effectuer une mise à niveau vers Windows Pro 10.
     
-Pour terminer la configuration des appareils Windows 10, reportez-vous à la rubrique [configurer des appareils Windows pour les utilisateurs professionnels de Microsoft 365](set-up-windows-devices.md) . 
+Pour terminer la configuration des appareils Windows 10, reportez-vous à la rubrique [configurer des appareils Windows pour les utilisateurs de Microsoft 365 pour les utilisateurs professionnels](set-up-windows-devices.md) . 
   
-Pour terminer la configuration des appareils Android et iOS, consultez la rubrique [configurer des appareils mobiles pour les utilisateurs professionnels de Microsoft 365](set-up-mobile-devices.md) . 
+Pour terminer la configuration des appareils Android et iOS, consultez la rubrique [set up Mobile Devices for Microsoft 365 for Business Users](set-up-mobile-devices.md) . 
   
-## <a name="for-more-on-setting-up-and-using-microsoft-365-business"></a>Pour en savoir plus sur la configuration et l’utilisation de Microsoft 365 entreprise
+## <a name="for-more-on-setting-up-and-using-microsoft-365-for-business"></a>Pour en savoir plus sur la configuration et l’utilisation de Microsoft 365 pour les entreprises
 
-[Vidéos de formation Microsoft 365 Entreprise](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[Vidéos de formation Microsoft 365 pour les entreprises](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

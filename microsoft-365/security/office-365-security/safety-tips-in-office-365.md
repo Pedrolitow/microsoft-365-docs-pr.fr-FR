@@ -1,5 +1,5 @@
 ---
-title: Conseils de sécurité dans les messages électroniques dans Office 365
+title: Conseils de sécurité dans les messages électroniques
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -16,19 +16,19 @@ search.appverid:
 ms.assetid: fb4f8e49-0468-4be2-8fa6-99501f1ad9d5
 ms.collection:
 - M365-security-compliance
-description: Présente des conseils de sécurité pour les messages électroniques filtrés par le filtre de courrier indésirable EOP et Office 365.
-ms.openlocfilehash: 3e4e645c6ac0285d9d6fff43b301f1f5c61a90e3
-ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
+description: Présente des conseils de sécurité pour les messages électroniques filtrés par EOP et le filtre de courrier indésirable.
+ms.openlocfilehash: 7171f5855e295ffac931862c86db011c9f38a4c6
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/28/2020
-ms.locfileid: "43032815"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634303"
 ---
-# <a name="safety-tips-in-email-messages-in-office-365"></a>Conseils de sécurité dans les messages électroniques dans Office 365
+# <a name="safety-tips-in-email-messages"></a>Conseils de sécurité dans les messages électroniques
 
-Exchange Online Protection (EOP) et Office 365 vous protègent contre le courrier indésirable, le hameçonnage et la protection contre les programmes malveillants. À l’heure actuelle, certaines de ces attaques sont tellement bien conçues qu’elles semblent légitimes. L’envoi de messages vers le dossier courrier indésirable n’est pas toujours suffisant. À présent, lorsque vous vérifiez votre courrier électronique dans Outlook ou Outlook sur le Web, EOP vérifie automatiquement l’expéditeur et ajoute un Conseil de sécurité en haut du message.
+Exchange Online Protection (EOP) et Microsoft 365 vous protègent en matière de courrier indésirable, de hameçonnage et de protection contre les programmes malveillants. À l’heure actuelle, certaines de ces attaques sont tellement bien conçues qu’elles semblent légitimes. L’envoi de messages vers le dossier courrier indésirable n’est pas toujours suffisant. À présent, lorsque vous vérifiez votre courrier électronique dans Outlook ou Outlook sur le Web, EOP vérifie automatiquement l’expéditeur et ajoute un Conseil de sécurité en haut du message.
 
-Le Conseil de sécurité, un message codé en couleur, vous avertit des messages potentiellement dangereux. La plupart des messages de votre boîte de réception n’ont pas de Conseil de sécurité. Vous ne les verrez que lorsque EOP et Office 365 dispose des informations dont vous avez besoin pour éviter le courrier indésirable, le hameçonnage et les programmes malveillants. Si les conseils de sécurité s’affichent dans votre boîte de réception, vous pouvez utiliser les exemples suivants pour en savoir plus sur chaque type de Conseil de sécurité.
+Le Conseil de sécurité, un message codé en couleur, vous avertit des messages potentiellement dangereux. La plupart des messages de votre boîte de réception n’ont pas de Conseil de sécurité. Vous ne les verrez que lorsque EOP et Microsoft 365 disposent des informations dont vous avez besoin pour éviter le courrier indésirable, le hameçonnage et les programmes malveillants. Si les conseils de sécurité s’affichent dans votre boîte de réception, vous pouvez utiliser les exemples suivants pour en savoir plus sur chaque type de Conseil de sécurité.
 
 - Courrier suspect (Conseil de sécurité rouge).
 
@@ -58,6 +58,6 @@ Le Conseil de sécurité, un message codé en couleur, vous avertit des messages
 
 ## <a name="working-with-safety-tips"></a>Utilisation des conseils de sécurité
 
-Les conseils de sécurité sont toujours activés pour Outlook sur le Web, même si tous les messages ne recevront pas tous les messages. Les administrateurs d’Office 365 peuvent désactiver les conseils de sécurité pour d’autres clients de messagerie, tels qu’Outlook. Si vous souhaitez en savoir plus, consultez l’article [Configurer les stratégies anti-courrier indésirable dans Office 365](configure-your-spam-filter-policies.md).
+Les conseils de sécurité sont toujours activés pour Outlook sur le Web, même si tous les messages ne recevront pas tous les messages. Les administrateurs peuvent désactiver les conseils de sécurité pour d’autres clients de messagerie, tels qu’Outlook. Si vous souhaitez en savoir plus, consultez l’article [Configurer les stratégies anti-courrier indésirable dans Office 365](configure-your-spam-filter-policies.md).
 
 Si vous n’êtes pas d’accord avec la façon dont EOP a catégorisé un message (autrement dit, le message n’est pas du courrier indésirable ou il doit avoir été marqué comme courrier indésirable), vous pouvez envoyer les messages à Microsoft pour analyse afin d’améliorer votre expérience. Pour obtenir des instructions, consultez la rubrique [signaler des messages et des fichiers à Microsoft](report-junk-email-messages-to-microsoft.md). Vous pouvez également cliquer sur le lien Commentaires dans le Conseil de sécurité pour envoyer des commentaires directement à Microsoft afin de nous aider à améliorer.

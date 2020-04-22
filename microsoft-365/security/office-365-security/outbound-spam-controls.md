@@ -1,5 +1,5 @@
 ---
-title: Protection contre le courrier indésirable sortant dans Office 365
+title: Protection contre le courrier indésirable sortant
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -16,31 +16,31 @@ search.appverid:
 ms.assetid: 6a601501-a6a8-4559-b2e7-56b59c96a586
 ms.collection:
 - M365-security-compliance
-description: Les administrateurs peuvent découvrir comment Office 365 et Exchange Online Protection (EOP) protègent les clients contre le courrier indésirable sortant et ce qu’ils doivent faire si vous avez besoin d’envoyer des publipostages en masse.
-ms.openlocfilehash: 99e764944335be923ee1918851d4072ea98d3a32
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+description: Les administrateurs peuvent découvrir comment Microsoft 365 et Exchange Online Protection (EOP) protègent les clients contre le courrier indésirable sortant et ce qu’ils doivent faire si vous avez besoin d’envoyer des publipostages en masse.
+ms.openlocfilehash: 71fe5d5ba1ffbecc77b646a06c3da4d9681ee3ea
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42895322"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634495"
 ---
-# <a name="outbound-spam-protection-in-office-365"></a>Protection contre le courrier indésirable sortant dans Office 365
+# <a name="outbound-spam-protection"></a>Protection contre le courrier indésirable sortant
 
-Nous prenons en compte la gestion du courrier indésirable sortant, car Office 365 (Exchange Online ou une version autonome d’Exchange Online Protection (EOP) sans boîte aux lettres Exchange Online) est un service en ligne où de nombreux clients utilisent un pool de ressources partagé. Un client Office 365 qui envoie intentionnellement ou involontairement du courrier indésirable à partir de son organisation peut dégrader la réputation de l’ensemble du service et peut affecter la remise des messages pour d’autres clients.
+Nous assurons la gestion du courrier indésirable sortant, car Microsoft 365 (Exchange Online ou une version autonome d’Exchange Online Protection (EOP) sans boîte aux lettres Exchange Online) est un service en ligne où de nombreux clients utilisent un pool de ressources partagé. Un client Microsoft 365 qui envoie intentionnellement ou involontairement du courrier indésirable à partir de son organisation peut dégrader la réputation de l’ensemble du service et peut avoir une incidence sur la remise des messages pour d’autres clients.
 
 Cette rubrique décrit les contrôles et les notifications conçus pour éviter le courrier indésirable sortant, et ce que vous pouvez faire si vous devez envoyer des publipostages en masse.
 
 ## <a name="what-admins-can-do-to-control-outbound-spam"></a>Ce que les administrateurs peuvent faire pour contrôler le courrier indésirable sortant
 
-- **Utiliser des notifications intégrées**: lorsqu’un utilisateur dépasse les limites d’envoi du [service](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-across-office-365-options) ou des [stratégies de courrier indésirable sortant](configure-the-outbound-spam-policy.md) et qu’il ne peut pas envoyer de courrier électronique, la stratégie d’alerte par défaut nommée **User Restricted from sending email** envoie des notifications par courrier électronique aux membres du groupe **TenantAdmins** (**administrateurs globaux**). Pour configurer les personnes qui reçoivent ces notifications, consultez [la rubrique vérifier les paramètres d’alerte pour les utilisateurs restreints](removing-user-from-restricted-users-portal-after-spam.md#verify-the-alert-settings-for-restricted-users). Par ailleurs, les stratégies d’alerte par défaut nommées **e-mail Send Limit dépassées** et les **modèles d’envoi de courrier électronique suspects ont été détectés** envoyer des notifications par courrier électronique aux membres du groupe **TenantAdmins** (**administrateurs globaux**). Pour plus d’informations sur les stratégies d’alerte, consultez [la rubrique stratégies d’alerte dans le centre de sécurité et de conformité](../../compliance/alert-policies.md).
+- **Utiliser des notifications intégrées**: lorsqu’un utilisateur dépasse les limites d’envoi du [service](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-across-office-365-options) ou des [stratégies de courrier indésirable sortant](configure-the-outbound-spam-policy.md) et qu’il ne peut pas envoyer de courrier électronique, la stratégie d’alerte par défaut nommée **User Restricted from sending email** envoie des notifications par courrier électronique aux membres du groupe **TenantAdmins** (**administrateurs globaux**). Pour configurer les personnes qui reçoivent ces notifications, consultez [la rubrique vérifier les paramètres d’alerte pour les utilisateurs restreints](removing-user-from-restricted-users-portal-after-spam.md#verify-the-alert-settings-for-restricted-users). Par ailleurs, les stratégies d’alerte par défaut nommées **e-mail Send Limit dépassées** et les **modèles d’envoi de courrier électronique suspects ont été détectés** envoyer des notifications par courrier électronique aux membres du groupe **TenantAdmins** (**administrateurs globaux**). Pour plus d’informations sur les stratégies d’alerte, accédez à [Stratégies d’alerte dans le centre de sécurité et conformité](../../compliance/alert-policies.md).
 
-- **Passer en revue les plaintes de courrier indésirable émanant de fournisseurs de courrier tiers**: de nombreux services de messagerie comme Outlook.com, Yahoo et AOL fournissent une boucle de commentaires où, si un utilisateur de son service marque un courrier électronique d’Office 365 comme courrier indésirable, le message est empaqueté et renvoyé à nous pour révision. Pour en savoir plus sur la prise en charge de l’expéditeur <https://sendersupport.olc.protection.outlook.com/pm/services.aspx>pour Outlook.com, accédez à.
+- **Passer en revue les plaintes de courrier indésirable émanant de fournisseurs de courrier tiers**: de nombreux services de messagerie comme Outlook.com, Yahoo et AOL fournissent une boucle de commentaires où, si un utilisateur de son service marque un E-mail de Microsoft 365 comme courrier indésirable, le message est empaqueté et renvoyé à nous pour révision. Pour en savoir plus sur la prise en charge de l’expéditeur <https://sendersupport.olc.protection.outlook.com/pm/services.aspx>pour Outlook.com, accédez à.
 
 ## <a name="how-eop-controls-outbound-spam"></a>Comment EOP contrôle le courrier indésirable sortant
 
 - **Répartition du trafic de messagerie sortant**: tous les messages sortants envoyés via le service sont analysés pour rechercher le courrier indésirable. Si le message est identifié comme courrier indésirable, il est envoyé à partir d’un pool d’adresses IP secondaire, moins fiable, nommé _pool de remise à haut risque_. Pour plus d’informations, consultez la rubrique [pool de remise à haut risque pour les messages sortants dans Office 365](high-risk-delivery-pool-for-outbound-messages.md).
 
-- **Surveillance de notre réputation d’adresse IP source**: Office 365 interroge différentes listes d’adresses IP bloquées. Une alerte est générée si l’une des adresses IP que nous utilisons pour le courrier électronique sortant apparaît sur ces listes. Cela nous permet de réagir rapidement quand le courrier indésirable a provoqué une dégradation de notre réputation. Lorsqu’une alerte est générée, nous disposons d’une documentation interne qui explique comment obtenir nos adresses IP supprimer (désinscrite) des listes rouges.
+- **Surveillance de notre réputation d’adresse IP source**: Microsoft 365 interroge différentes listes d’adresses IP bloquées. Une alerte est générée si l’une des adresses IP que nous utilisons pour le courrier électronique sortant apparaît sur ces listes. Cela nous permet de réagir rapidement quand le courrier indésirable a provoqué une dégradation de notre réputation. Lorsqu’une alerte est générée, nous disposons d’une documentation interne qui explique comment obtenir nos adresses IP supprimer (désinscrite) des listes rouges.
 
 - **Désactiver les comptes qui envoient trop de courrier indésirable**<sup>\*</sup>: bien que nous puissions isoler le courrier indésirable sortant dans le pool de remise à haut risque, nous ne pouvons pas autoriser un compte (souvent un compte compromis) à envoyer indéfiniment du courrier indésirable. Nous Surveillez les comptes qui envoient du courrier indésirable, et lorsqu’ils dépassent une limite non divulguée, le compte ne peut pas envoyer de courrier électronique. Il existe différents seuils pour les utilisateurs individuels et l’ensemble du client.
 
@@ -50,7 +50,7 @@ Cette rubrique décrit les contrôles et les notifications conçus pour éviter 
 
 ## <a name="recommendations-for-customers-who-want-to-send-mass-mailings-through-eop"></a>Recommandations pour les clients qui souhaitent envoyer des publipostages de masse via EOP
 
-Il est difficile de trouver un équilibre entre les clients qui souhaitent envoyer un grand nombre de messages électroniques et la protection du service des comptes compromis et des expéditeurs de messages électroniques en masse avec des pratiques d’acquisition de destinataires médiocres. Le coût d’un lancement d’une source de courrier Office 365 sur une liste d’adresses IP bloquées tierce est supérieur au blocage d’un utilisateur qui envoie trop de courriers électroniques.
+Il est difficile de trouver un équilibre entre les clients qui souhaitent envoyer un grand nombre de messages électroniques et la protection du service des comptes compromis et des expéditeurs de messages électroniques en masse avec des pratiques d’acquisition de destinataires médiocres. Le coût d’une source de courrier Microsoft 365 sur une liste d’adresses IP bloquées tierce est supérieur au blocage d’un utilisateur qui envoie trop de courriers électroniques.
 
 Comme décrit dans la [Description du service Exchange Online](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits), l’utilisation d’EOP pour envoyer des messages en masse n’est pas prise en charge par le service, et n’est autorisée que sur la base du « meilleur effort ». Pour les clients qui souhaitent envoyer des courriers électroniques en masse, nous vous recommandons d’effectuer les solutions suivantes :
 

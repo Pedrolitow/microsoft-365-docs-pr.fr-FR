@@ -1,5 +1,5 @@
 ---
-title: Acheter un autre abonnement Office 365 pour les entreprises
+title: Acheter un autre abonnement Microsoft 365 pour les entreprises
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -20,26 +20,27 @@ search.appverid:
 - MOE150
 - BEA160
 ms.assetid: fab3b86c-3359-4042-8692-5d4dc7550b7c
-description: 'Découvrez comment acheter un autre abonnement Office 365 pour entreprise pour votre organisation lorsque vous disposez déjà d’un abonnement. '
+description: 'Découvrez comment acheter un autre abonnement Microsoft 365 pour entreprise pour votre organisation lorsque vous disposez déjà d’un abonnement. '
 ms.custom: okr_SMB
-ms.openlocfilehash: 785080003a8abfac823239bd708eb2e442aa768f
-ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
+ms.openlocfilehash: fe07ea5bcb977b867fe02cc69706595f3ff5064e
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43142262"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634931"
 ---
-# <a name="buy-another-office-365-for-business-subscription"></a>Acheter un autre abonnement Office 365 pour les entreprises
+# <a name="buy-another-microsoft-365-for-business-subscription"></a>Acheter un autre abonnement Microsoft 365 pour les entreprises
 
-Si vous avez déjà un abonnement Office 365 pour les entreprises et que vous souhaitez acheter un autre abonnement pour votre organisation, la meilleure façon de le faire est d’utiliser le centre d’administration. Si vous n’avez pas encore acheté le premier abonnement Office 365 pour votre organisation, cliquez [ici](https://products.office.com/business/compare-office-365-for-business-plans) pour choisir un plan.
+Si vous disposez déjà d’un abonnement Microsoft 365 pour les entreprises et que vous souhaitez acheter un autre abonnement pour votre organisation, le meilleur moyen est de le faire via le centre d’administration. Si vous n’avez pas encore acheté le premier abonnement Microsoft 365 pour votre organisation, cliquez [ici](https://products.office.com/business/compare-office-365-for-business-plans) pour choisir un plan.
   
 Lorsque vous achetez un autre abonnement via le centre d’administration, vous êtes assuré que le nouvel abonnement sera associé à la même organisation (espace de noms de domaine) comme abonnement existant. Cela permet de déplacer plus facilement les utilisateurs au sein de votre organisation entre les abonnements ou de leur attribuer une licence utilisateur pour l’abonnement supplémentaire dont ils ont besoin.
   
-Après avoir acheté un nouvel abonnement, vous devez attribuer aux utilisateurs que vous souhaitez utiliser cet abonnement une licence utilisateur pour lui. Pour savoir comment procéder, consultez la rubrique [attribuer des licences aux utilisateurs dans Office 365 pour les entreprises](../admin/manage/assign-licenses-to-users.md).
+Après avoir acheté un nouvel abonnement, vous devez attribuer aux utilisateurs que vous souhaitez utiliser cet abonnement une licence utilisateur pour lui. Pour savoir comment procéder, consultez la rubrique [attribuer des licences aux utilisateurs dans Microsoft 365 pour les entreprises](../admin/manage/assign-licenses-to-users.md).
   
 ## <a name="buy-another-subscription"></a>Acheter un autre abonnement
 
 ::: moniker range="o365-worldwide"
+
 
 1. Dans le centre d’administration, accédez à la page **facturation ** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">Acheter des services</a>.
 

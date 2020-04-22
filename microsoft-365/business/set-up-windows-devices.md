@@ -1,5 +1,5 @@
 ---
-title: Configurer des appareils Windows pour les utilisateurs de Microsoft 365 Business
+title: Configurer des appareils Windows pour les utilisateurs de Microsoft 365 Business Premium
 f1.keywords:
 - CSH
 ms.author: sirkkuw
@@ -24,21 +24,21 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 2d7ff45e-0da0-4caa-89a9-48cabf41f193
-description: Découvrez comment configurer des appareils Windows exécutant Windows 10 professionnel pour les utilisateurs professionnels de Microsoft 365, ce qui permet des contrôles de sécurité et de gestion centralisés.
-ms.openlocfilehash: 6ecc45f825a783d9d47c4b069a6021143d96597c
-ms.sourcegitcommit: 217de0fc54cbeaea32d253f175eaf338cd85f5af
+description: Découvrez comment configurer des appareils Windows exécutant Windows 10 professionnel pour les utilisateurs de Microsoft 365 Business Premium, ce qui permet des contrôles de sécurité et de gestion centralisés.
+ms.openlocfilehash: efe81a5547496f502232e1db2f3f092165475641
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42561157"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635449"
 ---
-# <a name="set-up-windows-devices-for-microsoft-365-business-users"></a>Configurer des appareils Windows pour les utilisateurs de Microsoft 365 Business
+# <a name="set-up-windows-devices-for-microsoft-365-business-premium-users"></a>Configurer des appareils Windows pour les utilisateurs de Microsoft 365 Business Premium
 
-## <a name="prerequisites-for-setting-up-windows-devices-for-microsoft-365-business-users"></a>Conditions préalables à la configuration des appareils Windows pour les utilisateurs professionnels de Microsoft 365
+## <a name="prerequisites-for-setting-up-windows-devices-for-microsoft-365-business-premium-users"></a>Conditions préalables à la configuration des appareils Windows pour les utilisateurs de Microsoft 365 Business Premium
 
-Avant de pouvoir configurer des appareils Windows pour les utilisateurs de Microsoft 365 Business, vérifiez que tous les appareils Windows exécutent la version 1703 (Creators Update) de Windows 10 Professionnel. L'exécution de Windows 10 Professionnel est obligatoire pour déployer Windows 10 Business, c'est-à-dire, un ensemble de services cloud et de fonctionnalités de gestion des appareils qui complètent Windows 10 Professionnel et permettent d'activer les contrôles de sécurité et de gestion centralisée de Microsoft 365 Business.
+Avant de pouvoir configurer les appareils Windows pour les utilisateurs de Microsoft 365 Business Premium, vérifiez que tous les appareils Windows exécutent Windows 10 professionnel, version 1703 (créateurs de mise à jour). Windows 10 professionnel est une condition préalable pour le déploiement de Windows 10 Business, qui est un ensemble de fonctionnalités de gestion des périphériques et de services Cloud qui complètent Windows 10 professionnel et qui permettent les contrôles de sécurité et de gestion centralisés de Microsoft 365 Business Premium.
   
-Si vous avez des appareils Windows exécutant Windows 7 Professionnel, Windows 8 Professionnel ou Windows 8.1 Professionnel, votre abonnement Microsoft 365 Business vous donne droit à une mise à niveau vers Windows 10.
+Si vous avez des appareils Windows exécutant Windows 7 professionnel, Windows 8 professionnel ou Windows 8,1 Pro, votre abonnement Microsoft 365 Business Premium vous permet d’effectuer une mise à niveau vers Windows 10.
   
 Pour plus d'informations sur la mise à niveau des appareils Windows vers Windows 10 Professionnel Creators Update, suivez les étapes décrites dans cette rubrique : [Mettre à niveau des appareils Windows vers Windows Professionnel Creators Update](upgrade-to-windows-pro-creators-update.md)
   
@@ -52,7 +52,7 @@ Si vous avez trouvé cette vidéo utile, consultez les [séries de formations co
   
 ## <a name="join-windows-10-devices-to-your-organizations-azure-ad"></a>Joindre des appareils Windows 10 au service Azure AD de votre organisation
 
-Lorsque tous les appareils Windows de votre organisation ont été mis à niveau vers Windows 10 professionnel Creators Update ou que vous exécutez déjà Windows 10 Pro Creators Update, vous pouvez joindre ces appareils au service Azure Active Directory de votre organisation. Une fois les appareils joints, ils seront automatiquement mis à niveau vers Windows 10 Business, qui fait partie de votre abonnement professionnel Microsoft 365.
+Lorsque tous les appareils Windows de votre organisation ont été mis à niveau vers Windows 10 professionnel Creators Update ou que vous exécutez déjà Windows 10 Pro Creators Update, vous pouvez joindre ces appareils au service Azure Active Directory de votre organisation. Une fois les appareils joints, ils seront automatiquement mis à niveau vers Windows 10 Business, qui fait partie de votre abonnement Microsoft 365 Business Premium.
   
 ### <a name="for-a-brand-new-or-newly-upgraded-windows-10-pro-device"></a>Pour un appareil Windows 10 Professionnel ou un appareil qui vient d'être mis à niveau
 
@@ -62,7 +62,7 @@ Suivez ces étapes pour un nouvel appareil exécutant Windows 10 Professionnel C
     
     ![On the How would you like to set up page, choose Set up for an organization](../media/1b0b2dba-00bb-4a99-a729-441479220cb7.png)
   
-2. Dans cette page, sélectionnez **Configurer pour une organisation**, puis entrez le nom d'utilisateur et le mot de passe associés à Microsoft 365 Business. 
+2. Ici, choisissez **configurer pour une organisation** , puis entrez votre nom d’utilisateur et votre mot de passe pour Microsoft 365 Business Premium. 
     
 3. Terminez la configuration de l'appareil Windows 10.
     
@@ -108,13 +108,13 @@ Pour vérifier votre état de synchronisation, dans la page **Accès Professionn
   
 Dans la page État de synchronisation, cliquez sur Synchronisation pour obtenir les stratégies de gestion des appareils mobiles les plus récentes sur votre ordinateur.
   
-Pour commencer à utiliser le compte professionnel Microsoft 365, accédez au bouton **Démarrer** de Windows, cliquez avec le bouton droit sur l’image de votre compte actuel, puis **changez de compte**. Connectez-vous en utilisant l'adresse e-mail et le mot de passe de votre organisation.
+Pour commencer à utiliser le compte Microsoft 365 Business Premium, accédez au bouton **Démarrer** de Windows, cliquez avec le bouton droit sur l’image de votre compte actuel, puis **changez de compte**. Connectez-vous en utilisant l'adresse e-mail et le mot de passe de votre organisation.
   
 ![Click Info button to view synchronization status](../media/818f7043-adbf-402a-844a-59d50034911d.png)
   
 ## <a name="verify-the-device-is-upgraded-to-windows-10-business"></a>Vérifier qu'un appareil a été mis à niveau vers Windows 10 Business
 
-Vérifiez que les appareils Windows 10 qui ont été mis à niveau vers Windows 10 Business dans le cadre de votre abonnement Microsoft 365 Business ont été joints à votre domaine Azure AD.
+Vérifiez que votre abonnement Azure AD joint Windows 10 appareils ont été mis à niveau vers Windows 10 entreprise dans le cadre de votre abonnement Microsoft 365 Business Premium.
   
 1. Accédez à **Paramètres** \> **Système** \> **Informations système**.
     
@@ -124,8 +124,8 @@ Vérifiez que les appareils Windows 10 qui ont été mis à niveau vers Windows 
   
 ## <a name="next-steps"></a>Étapes suivantes
 
-Pour configurer vos appareils mobiles, voir [Configurer des appareils mobiles pour les utilisateurs de Microsoft 365 Business](set-up-mobile-devices.md). Pour définir des stratégies de protection des appareils ou des applications, voir [Gérer Microsoft 365 Business](manage.md).
+Pour configurer vos appareils mobiles, reportez-vous à la rubrique [configurer des appareils mobiles pour les utilisateurs de Microsoft 365 Business Premium](set-up-mobile-devices.md), pour définir les stratégies de protection des applications ou de protection des applications, consultez la rubrique [Manage Microsoft 365 for Business](manage.md).
   
-## <a name="for-more-on-setting-up-and-using-microsoft-365-business"></a>Pour en savoir plus sur la configuration et l’utilisation de Microsoft 365 entreprise
+## <a name="for-more-on-setting-up-and-using-microsoft-365-business-premium"></a>Pour en savoir plus sur la configuration et l’utilisation de Microsoft 365 Business Premium
 
-[Vidéos de formation Microsoft 365 Entreprise](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[Vidéos de formation Microsoft 365 pour les entreprises](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

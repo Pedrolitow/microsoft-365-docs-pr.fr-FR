@@ -17,16 +17,16 @@ ms.assetid: d2104778-f0a1-4b69-baf3-c4b32e98a573
 ms.collection:
 - M365-security-compliance
 description: Découvrez comment passer d’un rapport détaillé à un aperçu des actions recommandées dans le centre de &amp; sécurité conformité.
-ms.openlocfilehash: fc18af7d4ca813adb6fbfc01d44138b4a9266c6e
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 8d56886a39e14eddd5ad6505a4fe68e20fc6a543
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42086202"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43638081"
 ---
 # <a name="walkthrough---from-a-detailed-report-to-an-insight"></a>Procédure pas à pas. D’un rapport détaillé à un aperçu
 
-Si vous débutez avec des [rapports et des informations dans le centre de sécurité &amp; conformité Office 365](reports-and-insights-in-security-and-compliance.md), il peut vous aider à naviguer dans un rapport détaillé vers une vue d’analyse et des actions recommandées. 
+Si vous débutez avec des [rapports et des informations dans le centre &amp; de sécurité conformité](reports-and-insights-in-security-and-compliance.md), il peut vous aider à naviguer dans un rapport détaillé vers une vue d’analyse et des actions recommandées. 
   
 Il s’agit de l’une des nombreuses procédures pas &amp; à pas pour le centre de sécurité conformité. Pour voir des procédures pas à pas supplémentaires, consultez la section [Rubriques connexes](#related-topics) . 
   
@@ -34,7 +34,7 @@ Il s’agit de l’une des nombreuses procédures pas &amp; à pas pour le centr
 
 Passons en revue le flux d’un rapport détaillé vers une vue et des actions. (Il s’agit d’un bref exemple de [blocage du courrier indésirable et de programmes malveillants](anti-spam-and-anti-malware-protection.md) .) 
   
-1. Nous commençons par les rapports du [Centre de sécurité &amp; conformité](https://protection.office.com) . (Accédez au **** \> **tableau de bord**rapports.) <br/>![Dans le centre &amp; de sécurité conformité, accédez à \> rapports de tableau de bord](../../media/68f3bb7c-b4f7-4cca-904b-478643a93c94.png)
+1. Nous commençons par les rapports du [Centre de sécurité &amp; conformité](https://protection.office.com) . (Accédez au **Reports** \> **tableau de bord**rapports.) <br/>![Dans le centre &amp; de sécurité conformité, accédez à \> rapports de tableau de bord](../../media/68f3bb7c-b4f7-4cca-904b-478643a93c94.png)
   
 2. Nous allons choisir un rapport pour obtenir une vue plus détaillée. (Choisissez un rapport, tel que le rapport d' **État de protection contre les menaces** .)<br/>![Rapport d’état de protection contre les menaces affichant des informations](../../media/f47d7dbd-816a-47ba-b8db-53919fbed192.png)
   

@@ -21,13 +21,13 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: fae8819d-7235-495f-9f07-d016f545887f
-description: Valider les paramètres de protection des applications professionnelles Microsoft 365 sur les appareils Windows 10 et vérifier que les utilisateurs ne peuvent pas copier les données de l’entreprise dans des fichiers personnels ou des applications non gérées.
-ms.openlocfilehash: 5b798e0335188543fc308553f71085bcde8b7752
-ms.sourcegitcommit: 217de0fc54cbeaea32d253f175eaf338cd85f5af
+description: Valider les paramètres de protection des applications Premium de Microsoft 365 sur les appareils Windows 10 et vérifier que les utilisateurs ne peuvent pas copier les données d’entreprise dans des fichiers personnels ou des applications non gérées.
+ms.openlocfilehash: 20b2e43ae53486c046440ff1066d241ec9661888
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42560837"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635741"
 ---
 # <a name="validate-app-protection-settings-on-windows-10-pcs"></a>Valider les paramètres de protection des applications sur les PC Windows 10
 
@@ -35,9 +35,9 @@ ms.locfileid: "42560837"
 
 Une fois les [stratégies de protection des applications configurées](protection-settings-for-windows-10-devices.md), quelques heures peuvent être nécessaires avant que celles-ci prennent effet sur les appareils des utilisateurs. Si vous avez **activé la** case à cocher **empêcher les utilisateurs de copier les données d’entreprise dans des fichiers personnels et les forcer à enregistrer les fichiers de travail dans OneDrive entreprise** pour les appareils appartenant à une entreprise, vous pouvez vérifier cela sur l’appareil de l’utilisateur après s’être connecté à Azure ad et s’être connecté. 
   
- **Vérifier les paramètres de connexion**
+ **Vérifiez les paramètres de connexion**
   
-1. Une fois authentifié avec vos informations d'identification Microsoft 365 Entreprise et connecté à Azure AD, comme décrit dans [Configurer des appareils Windows pour les utilisateurs de Microsoft 365 Business](set-up-windows-devices.md), accédez à **Paramètres Windows** \> **Comptes** \> **Accès Professionnel ou Scolaire**. Choisissez **Connecté à \<nom du client\> Azure AD**, puis **Informations**.
+1. Une fois que vous vous êtes connecté à l’aide des informations d’identification de Microsoft 365 Business Premium et que vous vous connectez à Azure AD comme décrit dans la rubrique [configurer des appareils Windows pour les utilisateurs de Microsoft 365 Business Premium](set-up-windows-devices.md), accédez à **paramètres** \> **Accounts** \> Windows **accès aux comptes d’accès professionnel ou scolaire**. Choisissez **Connecté à \<nom du client\> Azure AD**, puis **Informations**.
     
     ![Click or tap Info on the Connected to Azure AD dialog.](../media/a36ede2b-d1a0-4d4e-8ea7-af39b4b63890.png)
   
@@ -47,7 +47,7 @@ Une fois les [stratégies de protection des applications configurées](protectio
   
  **Vérifier que vous ne pouvez pas coller les données d’entreprise dans une application non gérée**
   
-1. Ouvrez l'instance d'Outlook 2016 qui a été installée par Microsoft 365 Entreprise.
+1. Ouvrez Outlook 2016 qui a été installé par Microsoft 365 Business Premium.
     
 2. Ouvrez un e-mail et copiez du contenu à partir de celui-ci.
     
@@ -63,11 +63,11 @@ Une fois les [stratégies de protection des applications configurées](protectio
 
  **Vérifiez les paramètres de connexion**
   
-1. Sur votre appareil personnel Windows 10 où vous êtes connecté en tant qu’utilisateur local, accédez à **Paramètres Windows**, puis cliquez ou appuyez **** \> sur **l’accès aux comptes professionnel ou scolaire**.
+1. Sur votre appareil personnel Windows 10 où vous êtes connecté en tant qu’utilisateur local, accédez à **Paramètres Windows**, puis cliquez ou appuyez **Accounts** \> sur **l’accès aux comptes professionnel ou scolaire**.
     
 2. Sous **Accès Professionnel ou Scolaire**, choisissez **Connexion**.
     
-3. Entrez vos informations d'identification Microsoft 365 Entreprise dans la boîte de dialogue **Configurer un compte professionnel ou scolaire** \> **Se connecter**.
+3. Entrez vos informations d’identification Microsoft 365 Business Premium dans la boîte **de** \> **dialogue Configurer un compte professionnel ou scolaire** .
     
 4. Sur la page **Accès Professionnel ou Scolaire**, choisissez **Compte professionnel ou scolaire**, puis **Informations**.
     
@@ -79,7 +79,7 @@ Une fois les [stratégies de protection des applications configurées](protectio
   
  **Vérifier que vous ne pouvez pas coller les données d’entreprise dans une application non gérée**
   
-1. Ouvrez Outlook 2016 et, si nécessaire, ajoutez votre compte Microsoft 365 Entreprise, puis connectez-vous avec vos informations d'identification Microsoft 365 Entreprise.
+1. Si nécessaire, ouvrez Outlook 2016 et ajoutez votre compte Microsoft 365 Business Premium, puis connectez-vous à l’aide de vos informations d’identification Microsoft 365 Business Premium.
     
 2. Ouvrez un e-mail et copiez du contenu à partir de celui-ci.
     

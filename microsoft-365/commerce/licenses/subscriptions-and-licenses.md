@@ -1,5 +1,5 @@
 ---
-title: Comprendre les abonnements et les licences dans Office 365 pour les entreprises
+title: Comprendre les abonnements et les licences dans Microsoft 365 pour les entreprises
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -20,24 +20,24 @@ search.appverid:
 - BEA160
 - GEA150
 ms.assetid: 7ac93507-0e38-4398-8bfe-9c1d123cb387
-description: 'Découvrez les abonnements et les licences dans Office 365 pour les entreprises et les personnes qui peuvent attribuer des licences et ce qui se passe quand vous attribuez une licence à quelqu’un. '
+description: 'Découvrez les abonnements et les licences dans Microsoft 365 pour les entreprises et les personnes qui peuvent attribuer des licences et ce qui se passe quand vous attribuez une licence à quelqu’un. '
 ms.custom: okr_SMB
-ms.openlocfilehash: 1a90e4b80322ad075f2149801aebd02ac07a2aef
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 1508daa6dae30c35a9517fceb81b0a4d2b4a7f58
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42242320"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635435"
 ---
-# <a name="understand-subscriptions-and-licenses-in-office-365-for-business"></a>Comprendre les abonnements et les licences dans Office 365 pour les entreprises
+# <a name="understand-subscriptions-and-licenses-in-microsoft-365-for-business"></a>Comprendre les abonnements et les licences dans Microsoft 365 pour les entreprises
 
 Cet article explique la relation entre les abonnements et les licences, et fournit des informations supplémentaires sur les [personnes autorisées à attribuer des licences](#find-out-who-can-assign-licenses), la [compréhension de ce qui se produit lorsque vous attribuez une licence à un utilisateur](#understand-what-happens-when-you-assign-a-license-to-someone), et [sur le nombre d’appareils pouvant installer Office sur](#how-many-devices-can-people-install-office-on). Elle inclut également des liens vers des [licences de présentation des licences pour les boîtes aux lettres non utilisateur](#understand-licenses-for-non-user-mailboxes)et [des articles sur la gestion des licences](#articles-about-managing-licenses).
   
-Lorsque vous achetez un abonnement à Office 365 pour les entreprises, vous vous inscrivez pour obtenir un ensemble d’applications et de services que vous payez pour un montant mensuel ou annuel. Les applications et les services que vous recevez dans le cadre de votre abonnement dépendent du produit que vous avez acheté, par exemple Office 365 Business ou Office 365 Business Premium. Vous pouvez consulter les informations fournies avec chaque produit sur la [page acheter Office 365](https://products.office.com/compare-all-microsoft-office-products?&activetab=tab:primaryr1). 
+Lorsque vous achetez un abonnement à Microsoft 365 pour les entreprises, vous vous inscrivez à un ensemble d’applications et de services que vous payez mensuellement ou annuellement. Les applications et les services que vous recevez dans le cadre de votre abonnement dépendent du produit que vous avez acheté, tel que Microsoft 365 Apps for Business ou Microsoft 365 Business standard. Vous pouvez consulter les informations fournies avec chaque produit sur la [page acheter Microsoft 365](https://products.office.com/compare-all-microsoft-office-products?&activetab=tab:primaryr1). 
 
 Lorsque vous achetez un abonnement, vous spécifiez le nombre de licences dont vous avez besoin, en fonction du nombre de personnes de votre organisation. Une fois l'achat terminé, vous créez des comptes pour les utilisateurs, puis attribuez une licence à chacun. À mesure que les besoins de votre organisation évoluent, vous pouvez acheter des licences supplémentaires pour accueillir de nouvelles personnes ou réattribuer des licences à d’autres utilisateurs lorsqu’un utilisateur quitte votre organisation. 
 
-Si vous disposez de plusieurs abonnements, vous pouvez attribuer des licences à différentes personnes pour chaque abonnement. Par exemple, tous vos utilisateurs peuvent être affectés à toutes les applications et services Office 365 dans le cadre d’un abonnement Office 365 Business Premium, tandis qu’un sous-ensemble d’utilisateurs peut également être affecté à Visio online via un abonnement Visio distinct. 
+Si vous disposez de plusieurs abonnements, vous pouvez attribuer des licences à différentes personnes pour chaque abonnement. Par exemple, tous vos utilisateurs peuvent être affectés à tous les services et applications Microsoft 365 dans le cadre d’un abonnement Microsoft 365 Business standard, tandis qu’un sous-ensemble d’utilisateurs peut également être affecté à Visio online via un abonnement Visio distinct. 
 
   
 ## <a name="find-out-who-can-assign-licenses"></a>Identifier qui peut attribuer des licences
@@ -61,19 +61,19 @@ Le tableau suivant indique ce qui se produit automatiquement lorsque vous attrib
 |Exchange Online  <br/> |Une boîte aux lettres est créée pour cette personne.  <br/> |
 |SharePoint Online  <br/> |Les autorisations de modification du site d'équipe SharePoint Online par défaut sont attribuées à cette personne.  <br/> |
 |Skype Entreprise Online  <br/> |La personne aura accès aux fonctionnalités associées à la licence.  <br/> |
-|Office 365 ProPlus  <br/> |La personne pourra télécharger Microsoft Office sur un maximum de 5 Mac ou PC, 5 tablettes et 5 smartphones.  <br/> |
+|Applications Microsoft 365 pour les entreprises  <br/> |La personne pourra télécharger Microsoft Office sur un maximum de 5 Mac ou PC, 5 tablettes et 5 smartphones.  <br/> |
    
 ## <a name="how-many-devices-can-people-install-office-on"></a>Sur combien d'appareils les utilisateurs peuvent-ils installer Office ?
 
 Si votre abonnement comprend un des produits suivants, chaque personne peut installer Office sur un maximum de 5 PC ou Mac, 5 tablettes et 5 téléphones.
   
-- Office 365 Business
+- Microsoft 365 apps pour les entreprises
     
-- Office 365 Business Premium
+- Microsoft 365 Business standard
     
-- Office 365 ProPlus
+- Applications Microsoft 365 pour les entreprises
     
-- Office 365 Entreprise E3
+- Office 365 Entreprise E3
     
 - Office 365 Entreprise E5
     
@@ -83,7 +83,7 @@ Vous n'êtes pas obligé d'attribuer des licences aux boîtes aux lettres de res
   
 - [Créer une boîte aux lettres partagée](../../admin/email/create-a-shared-mailbox.md)
     
-- [Boîtes aux lettres partagées dans Exchange Online](https://go.microsoft.com/fwlink/p/?linkid=847433) pour toutes les autres offres Office 365 
+- [Boîtes aux lettres partagées dans Exchange Online](https://go.microsoft.com/fwlink/p/?linkid=847433) pour tous les autres plans Microsoft 365. 
     
 - [Créer et gérer des boîtes aux lettres de salle](https://go.microsoft.com/fwlink/p/?linkid=847434)
     

@@ -17,12 +17,12 @@ ms.assetid: 8f54cd33-4af7-4d1b-b800-68f8818e5b2a
 ms.collection:
 - M365-security-compliance
 description: Découvrez comment utiliser les fonctionnalités d’analyse et de réponse aux menaces pour rechercher et examiner des courriers électroniques malveillants.
-ms.openlocfilehash: 1b7cef7f079023dd88fe3f04eb1b7d159c4157ef
-ms.sourcegitcommit: 58c1b4208a5e231463091573e40696d08fc39b8e
+ms.openlocfilehash: ec70bc585d4067357c9871cffc7475357fbfb5bb
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "42955614"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634133"
 ---
 # <a name="investigate-and-remediate-malicious-email-that-was-delivered-in-office-365"></a>Examiner et résoudre les courriers électroniques malveillants remis dans Office 365
 
@@ -34,24 +34,24 @@ Assurez-vous que les conditions suivantes sont remplies :
   
 - Votre organisation dispose d' [Office 365 protection avancée contre les menaces](office-365-atp.md) et des [licences sont attribuées aux utilisateurs](../../admin/manage/assign-licenses-to-users.md).
     
-- La [journalisation d’audit Office 365](../../compliance/turn-audit-log-search-on-or-off.md) est activée pour votre organisation. 
+- l' [enregistrement d’audit](../../compliance/turn-audit-log-search-on-or-off.md) est activé pour votre organisation. 
     
 - Votre organisation a défini des stratégies pour le blocage du courrier indésirable, anti-programme malveillant, anti-hameçonnage, etc. Consultez la rubrique [Protégez-vous contre les menaces dans Office 365](protect-against-threats.md).
     
-- Vous êtes un administrateur général Office 365 ou vous avez l’administrateur de sécurité ou le rôle de recherche et de purge affecté dans le centre &amp; de sécurité et de conformité. Consultez [la rubrique autorisations dans le centre &amp; de sécurité conformité Office 365](permissions-in-the-security-and-compliance-center.md). Pour certaines actions, vous devez également avoir un nouveau rôle aperçu affecté. 
+- Vous êtes un administrateur général, ou vous avez l’administrateur de sécurité ou le rôle de recherche et de purge affecté dans le &amp; Centre de sécurité et de conformité. Consultez [la rubrique autorisations dans &amp; le centre de sécurité et de conformité](permissions-in-the-security-and-compliance-center.md). Pour certaines actions, vous devez également avoir un nouveau rôle aperçu affecté. 
 
 #### <a name="preview-role-permissions"></a>Aperçu des autorisations de rôle
 
-Pour effectuer certaines actions, telles que l’affichage des en-têtes de message ou le téléchargement du contenu d’un message électronique, vous devez disposer d’un nouveau rôle appelé *Aperçu* ajouté à un autre groupe de rôles Office 365 approprié. Le tableau suivant clarifie les rôles et les autorisations requis.
+Pour effectuer certaines actions, telles que l’affichage des en-têtes de message ou le téléchargement du contenu d’un message électronique, vous devez disposer d’un nouveau rôle appelé *Aperçu* ajouté à un autre groupe de rôles approprié. Le tableau suivant clarifie les rôles et les autorisations requis.
 
 |Activité  |Groupe de rôles |Prévisualiser le rôle nécessaire ?  |
 |---------|---------|---------|
-|Utilisation de l’Explorateur de menaces (et des détections en temps réel) pour analyser les menaces     |Administrateur général Office 365 <br> Administrateur de sécurité <br> Lecteur de sécurité     | Non   |
-|Utiliser l’Explorateur de menaces (et les détections en temps réel) pour afficher les en-têtes des messages électroniques, ainsi que pour afficher un aperçu et télécharger des messages électroniques mis en quarantaine    |Administrateur général Office 365 <br> Administrateur de sécurité <br>Lecteur de sécurité   |       Non  |
-|Utiliser l’Explorateur de menaces pour afficher les en-têtes et télécharger les messages électroniques remis aux boîtes aux lettres     |Administrateur général Office 365 <br>Administrateur de sécurité <br> Lecteur de sécurité <br> Aperçu   |   Oui      |
+|Utilisation de l’Explorateur de menaces (et des détections en temps réel) pour analyser les menaces     |Administrateur général <br> Administrateur de sécurité <br> Lecteur de sécurité     | Non   |
+|Utiliser l’Explorateur de menaces (et les détections en temps réel) pour afficher les en-têtes des messages électroniques, ainsi que pour afficher un aperçu et télécharger des messages électroniques mis en quarantaine    |Administrateur général <br> Administrateur de sécurité <br>Lecteur de sécurité   |       Non  |
+|Utiliser l’Explorateur de menaces pour afficher les en-têtes et télécharger les messages électroniques remis aux boîtes aux lettres     |Administrateur général <br>Administrateur de sécurité <br> Lecteur de sécurité <br> Aperçu   |   Oui      |
 
 > [!NOTE]
-> L' *Aperçu* est un rôle et non un groupe de rôles ; le rôle aperçu doit être ajouté à un groupe de rôles existant pour Office 365. Le rôle administrateur général Office 365 est affecté au centre d’administration Microsoft 365[https://admin.microsoft.com](https://admin.microsoft.com)(), et les rôles Administrateur de sécurité et lecteur de sécurité sont affectés dans le centre de sécurité &[https://protection.office.com](https://protection.office.com)de sécurité Office 365 (). Pour en savoir plus sur les rôles et les autorisations, consultez [la rubrique autorisations dans le centre de sécurité & conformité d’Office 365](permissions-in-the-security-and-compliance-center.md).
+> L' *Aperçu* est un rôle et non un groupe de rôles ; le rôle aperçu doit être ajouté à un groupe de rôles existant pour Office 365. Le rôle administrateur général est affecté au centre d’administration Microsoft 365[https://admin.microsoft.com](https://admin.microsoft.com)(), et les rôles Administrateur de sécurité et lecteur de sécurité sont affectés dans le centre de[https://protection.office.com](https://protection.office.com)sécurité & conformité (). Pour en savoir plus sur les rôles et les autorisations, consultez [la rubrique autorisations dans le centre de sécurité & conformité](permissions-in-the-security-and-compliance-center.md).
 
 ## <a name="find-and-delete-suspicious-email-that-was-delivered"></a>Rechercher et supprimer les e-mails suspects qui ont été remis
 
@@ -252,7 +252,7 @@ To access your message header and email download options, follow these steps:
 > This capability doesn't show up for email messages that were never found in a user's mailbox, which can happen if an email was dropped or its delivery failed. In cases where email messages were deleted from users' mailboxes, admins see a "Mail not found" error message.
 -->
 
-## <a name="related-topics"></a>Sujets associés
+## <a name="related-topics"></a>Voir aussi
 
 [Protection avancée contre les menaces dans Office 365](office-365-ti.md)
   

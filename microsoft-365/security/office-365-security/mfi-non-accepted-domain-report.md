@@ -11,18 +11,18 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
 description: Les administrateurs peuvent en savoir plus sur le rapport de domaine non accepté dans le tableau de bord de flux de messagerie dans le centre de sécurité & conformité.
-ms.openlocfilehash: 4b4573d6a43c811e919f3f5c6f281c8f31e61d6a
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 64bf572db90b44512ca72aec5733a99373d8f53f
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42088465"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635279"
 ---
 # <a name="non-accepted-domain-report"></a>Rapport de domaine non accepté
 
-Comme le domaine de l' **expéditeur** , le domaine **non accepté** identifie les messages de votre organisation de messagerie locale, mais le domaine de l’expéditeur n’est pas configuré en tant que domaine accepté dans votre organisation Office 365.
+Comme le domaine de l' **expéditeur** , le domaine **non accepté** identifie les messages de votre organisation de messagerie locale, mais le domaine de l’expéditeur n’est pas configuré en tant que domaine accepté dans votre organisation.
 
-Office 365 peut limiter ces messages si nous disposons de données pour prouver que l’objectif de ces messages est malveillant. Par conséquent, il est important de comprendre ce qui se passe et de résoudre le problème.
+Microsoft 365 peut limiter ces messages si nous disposons de données pour prouver que l’objectif de ces messages est malveillant. Par conséquent, il est important de comprendre ce qui se passe et de résoudre le problème.
 
 ![Rapport de domaine non accepté dans le tableau de bord de flux de messagerie dans le centre de sécurité & conformité](../../media/non-accepted-domain-report-selected.png)
 
@@ -34,6 +34,6 @@ Lorsque vous sélectionnez une ligne dans le tableau, un menu volant vous indiqu
 
 ![Sélectionner une ligne dans le tableau des détails dans le rapport de domaine non accepté](../../media/non-accepted-domain-report-select-row-in-table.png)
 
-## <a name="see-also"></a>Voir aussi
+## <a name="see-also"></a>Voir également
 
 Pour plus d’informations sur les autres flux de messagerie dans le tableau de bord de flux de messagerie, voir [mail Flow Insights in the Security & Compliance Center](mail-flow-insights-v2.md).

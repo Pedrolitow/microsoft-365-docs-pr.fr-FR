@@ -1,5 +1,5 @@
 ---
-title: Meilleures pratiques pour la configuration de EOP et Office 365 ATP
+title: Meilleures pratiques pour la configuration de EOP et de la protection avancée contre les menaces
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -12,14 +12,14 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: faf1efd1-3b0c-411a-804d-17f37292eac0
 description: Pour vous donner un maximum de chances de succès et éviter les erreurs courantes de configuration, suivez ces recommandations relatives aux meilleures pratiques pour Exchange Online Protection (EOP).
-ms.openlocfilehash: 9bddb736d41b4fd56790b8bbe9dbb00d07e75553
-ms.sourcegitcommit: 9ed3283dd6dd959faeca5c22613f9126261b9590
+ms.openlocfilehash: 69d069377a061c440c22b7a00dd43795597c50e9
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43528616"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43638535"
 ---
-# <a name="best-practices-for-configuring-eop-and-office-365-atp"></a>Meilleures pratiques pour la configuration de EOP et Office 365 ATP
+# <a name="best-practices-for-configuring-eop-and-atp"></a>Meilleures pratiques pour la configuration de EOP et de la protection avancée contre les menaces
 
 Pour vous donner un maximum de chances de succès et éviter les erreurs courantes de configuration, suivez ces recommandations relatives aux meilleures pratiques pour Exchange Online Protection (EOP). Cette rubrique part de l'hypothèse que vous avez déjà effectué le processus de configuration. Si vous n'avez pas encore configuré EOP, consultez la rubrique [Configurer votre service EOP](set-up-your-eop-service.md).
 
@@ -41,7 +41,7 @@ Ces paramètres couvrent un éventail de fonctionnalités en dehors des stratég
 
 |Nom de la fonctionnalité de sécurité|Standard|Empêcher|Commentaire|
 |---------|---------|---------|---------|
-|[Configurer SPF dans Office 365 pour empêcher l’usurpation](set-up-spf-in-office-365-to-help-prevent-spoofing.md)|Oui|Oui||
+|[Configurer SPF pour éviter l’usurpation](set-up-spf-in-office-365-to-help-prevent-spoofing.md)|Oui|Oui||
 |[Utilisation de DKIM pour valider les messages sortants envoyés à partir de votre domaine personnalisé dans Office 365](use-dkim-to-validate-outbound-email.md)|Oui|Oui||
 |[Utiliser DMARC pour valider les e-mails dans Office 365](use-dmarc-to-validate-email.md)|Oui|Oui|Utilisez action = Quarantine for standard et action = Reject pour strict.|
 |Déployer le complément de rapport de message pour améliorer la création de rapports d’utilisateur final sur les E-mails suspects|Oui|Oui||
@@ -63,7 +63,7 @@ Résoudre les problèmes et tendances généraux à l’aide des rapports dans l
 
 ## <a name="report-false-positive-and-false-negatives-to-microsoft"></a>Signaler les faux positifs et faux négatifs à Microsoft
 
-Pour améliorer le filtrage du courrier indésirable dans le service pour tout le monde, vous devez signaler les faux positifs (courrier électronique marqué comme incorrect) et les faux négatifs (courrier incorrect autorisé) à Microsoft pour analyse. Pour plus d’informations, consultez la rubrique [signaler des messages et des fichiers à Microsoft](report-junk-email-messages-to-microsoft.md).
+Pour améliorer le filtrage du courrier indésirable dans le service pour tout le monde, vous devez signaler les faux positifs (courrier électronique marqué comme incorrect) et les faux négatifs (courrier incorrect autorisé) à Microsoft pour analyse. Pour plus d’informations, voir [Signaler des messages et des fichiers à Microsoft](report-junk-email-messages-to-microsoft.md).
 
 ## <a name="create-mail-flow-rules"></a>Création de règles de flux de messagerie
 

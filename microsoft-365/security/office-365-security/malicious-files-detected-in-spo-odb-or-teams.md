@@ -16,24 +16,24 @@ ms.assetid: 5ed8abf1-c0e9-4e5b-a5b7-2059cea50b61
 ms.collection:
 - M365-security-compliance
 description: Découvrez où aller pour afficher des informations sur les fichiers malveillants détectés dans SharePoint, OneDrive ou teams et comment effectuer des actions sur ces fichiers.
-ms.openlocfilehash: 3a14c7d69c7081be6bd08840eb8f52c5e11d4be7
-ms.sourcegitcommit: 58c1b4208a5e231463091573e40696d08fc39b8e
+ms.openlocfilehash: 95f497c5be16d1ba1d4fa9fc57f0dd9650450414
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "42955554"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635399"
 ---
 # <a name="view-information-about-malicious-files-detected-in-sharepoint-onedrive-or-microsoft-teams"></a>Afficher des informations sur les fichiers malveillants détectés dans SharePoint, OneDrive ou Microsoft teams
 
 [Office 365 ATP pour SharePoint, OneDrive et Microsoft](atp-for-spo-odb-and-teams.md) teams protège votre organisation contre les fichiers malveillants dans les bibliothèques de documents et les sites d’équipe. Lorsqu’un fichier malveillant est détecté, ce fichier est bloqué afin que personne ne puisse l’ouvrir, le copier, le déplacer ou le partager tant que d’autres actions ne sont pas effectuées par l’équipe de sécurité de l’organisation. Lisez cet article pour savoir comment afficher des informations sur les fichiers détectés et connaître les actions à effectuer. 
 
-Pour effectuer les tâches décrites dans cet article, vous devez disposer des [autorisations nécessaires pour le centre de &amp; sécurité conformité Office 365](permissions-in-the-security-and-compliance-center.md). 
+Pour effectuer les tâches décrites dans cet article, vous devez disposer [des autorisations nécessaires pour le centre de sécurité &amp; conformité](permissions-in-the-security-and-compliance-center.md). 
   
 ## <a name="view-reports-with-information-about-detected-files"></a>Affichage des rapports avec des informations sur les fichiers détectés
 
 Pour afficher l’État et des informations détaillées sur les fichiers qui ont été détectés par la protection avancée contre les menaces d’Office 365, vous pouvez utiliser le rapport d’état de protection contre les menaces.
   
-1. Dans le [Centre de sécurité &amp; conformité Office 365](https://protection.office.com), choisissez **rapports** \> **tableau de bord** \> de **protection contre les menaces**.
+1. Dans le [Centre &amp; de sécurité conformité](https://protection.office.com), choisissez **rapports** \> **tableau de bord** \> de **protection contre les menaces**.
     
 2. Dans le coin supérieur droit du rapport, choisissez **afficher le tableau des détails**.
     
@@ -45,7 +45,7 @@ Pour afficher l’État et des informations détaillées sur les fichiers qui on
   
 ## <a name="view-and-take-action-on-files-in-quarantine"></a>Afficher et effectuer des actions sur les fichiers en quarantaine
 
-1. Dans le centre de sécurité &amp; conformité d’Office 365, sélectionnez **gestion** \> des menaces- **vérification** \> de la **mise en quarantaine**. (Vous pouvez également accéder directement à [https://protection.office.com/quarantine](https://protection.office.com/quarantine).)
+1. Dans le centre &amp; de sécurité conformité, sélectionnez **mise en quarantaine**de la **vérification** \> de la **gestion** \> des menaces. (Vous pouvez également accéder directement à [https://protection.office.com/quarantine](https://protection.office.com/quarantine).)
     
 2. Dans le coin supérieur gauche, modifiez le menu déroulant **messages électroniques** en **fichiers**. Si la liste des résultats inclut trop d’éléments, utilisez la fonctionnalité de **filtrage** pour réduire la sélection.
     

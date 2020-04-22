@@ -1,5 +1,5 @@
 ---
-title: Fonctionnement des pièces jointes sécurisées ATP Office 365
+title: Fonctionnement des pièces jointes fiables de PACM
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -13,16 +13,16 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: La fonctionnalité pièces jointes fiables permet de vérifier le temps de cliquer sur les pièces jointes des messages électroniques. Utilisez des pièces jointes fiables pour protéger votre organisation des fichiers malveillants envoyés ou reçus par courrier électronique.
-ms.openlocfilehash: 951f9f0e50da6ef83135f1ca8f1ad109a8e66988
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: e53d95a52c6990b5e0b4ff81f42414a34b1e606e
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599221"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43638021"
 ---
-# <a name="how-office-365-atp-safe-attachments-works"></a>Fonctionnement des pièces jointes sécurisées ATP Office 365
+# <a name="how-atp-safe-attachments-works"></a>Fonctionnement des pièces jointes fiables de PACM
 
-## <a name="how-it-works"></a>Mode de fonctionnement
+## <a name="how-it-works"></a>Fonctionnement
 
 La fonctionnalité pièces jointes approuvées ATP vérifie les pièces jointes de courrier électronique pour les personnes de votre organisation. Lorsqu’une stratégie de pièces jointes approuvées ATP est en place et qu’une personne concernée par cette stratégie affiche son courrier électronique dans Office 365, ses pièces jointes sont vérifiées et les actions appropriées sont prises, en fonction des stratégies de pièces jointes approuvées ATP. En fonction de la définition de vos stratégies, les utilisateurs peuvent continuer à travailler sans jamais savoir qu’ils ont reçu des fichiers malveillants.
   
@@ -35,5 +35,5 @@ Voici deux exemples de pièces jointes approuvées ATP au travail.
 Les stratégies de pièces jointes approuvées ATP peuvent être appliquées à des personnes ou des groupes spécifiques de votre organisation ou à votre domaine entier. En outre, les stratégies de pièces jointes approuvées ATP peuvent être configurées pour utiliser les pièces jointes des espaces réservés pendant l’analyse des pièces jointes réelles. Pour en savoir plus, consultez la rubrique **[configurer des stratégies de pièces jointes approuvées ATP dans Office 365](set-up-atp-safe-attachments-policies.md)**.
 
 > [!NOTE]
-> L’analyse des pièces jointes approuvées ATP a lieu dans la région où se trouvent vos données Office 365. Pour plus d’informations sur la géographie du centre de données, voir [où se trouvent vos données ?](https://products.office.com/where-is-your-data-located?geo=All) 
+> L’analyse des pièces jointes approuvées ATP a lieu dans la région où se trouvent vos données. Pour plus d’informations sur la géographie du centre de données, voir [où se trouvent vos données ?](https://products.office.com/where-is-your-data-located?geo=All) 
 

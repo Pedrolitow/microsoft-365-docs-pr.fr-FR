@@ -14,18 +14,18 @@ ms.collection: M365-identity-device-management
 ms.custom: Ent_TLGs
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
 description: Utilisez ce guide de laboratoire de test pour ajouter des stratégies de conformité d’appareil Intune à votre environnement de test Microsoft 365 Enterprise.
-ms.openlocfilehash: b0b8bd2d76a3959bbcca749545d9a16e50491d20
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 4324ccca761e504812edc210ee6b6abdc484b670
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42066911"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631584"
 ---
 # <a name="device-compliance-policies-for-your-microsoft-365-enterprise-test-environment"></a>Stratégies de conformité des appareils pour votre environnement de test Microsoft 365 Enterprise
 
 *Ce Guide de Laboratoire Test peut uniquement être utilisé pour les environnements de test Microsoft 365 Entreprise*.
 
-À l’aide des instructions fournies dans cet article, vous ajoutez une stratégie Intune Device Compliance pour les appareils Windows 10 et Office 365 ProPlus à votre environnement de test Microsoft 365 Enterprise.
+À l’aide des instructions fournies dans cet article, vous ajoutez une stratégie Intune Device Compliance pour les appareils Windows 10 et Microsoft 365 apps pour les entreprises à votre environnement de test Microsoft 365 Enterprise.
 
 ![Guides de laboratoire de test pour Microsoft Cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
@@ -80,7 +80,7 @@ Au cours de cette phase, vous allez créer une stratégie de conformité des app
 
 17. Dans le volet **Ajouter une application** , sélectionnez **informations sur la suite d’applications**.
  
-18. Dans le volet d' **informations App suite** , tapez **Office 365 ProPlus** dans la **Description**de la suite et du nom de la **suite** .
+18. Dans le volet d’informations de la **suite d’applications** , tapez **Microsoft 365 apps pour entreprises** dans les descriptions **nom** et **suite**de la suite.
 Cliquez sur OK.
 
 19. Dans le volet **Ajouter une application** , sélectionnez configurer une suite d' **applications**, puis cliquez sur **OK**.
@@ -97,7 +97,7 @@ Vous disposez maintenant d’une stratégie de conformité de l’appareil pour 
 
 Explorez les fonctionnalités supplémentaires de [gestion des appareils mobiles](m365-enterprise-test-lab-guides.md#mobile-device-management) dans votre environnement de test.
 
-## <a name="see-also"></a>Voir aussi
+## <a name="see-also"></a>Voir également
 
 [Guides de laboratoire de test Microsoft 365 Enterprise](m365-enterprise-test-lab-guides.md).
   

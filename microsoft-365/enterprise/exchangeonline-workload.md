@@ -11,12 +11,12 @@ ms.collection: M365-email-calendar
 ms.custom:
 - Strat_O365_Enterprise
 description: Découvrez le processus de planification, de déploiement et de mise en œuvre de la valeur d’Exchange Online dans Microsoft 365 Enterprise au sein de votre organisation.
-ms.openlocfilehash: 30ba71fbf2af684afbbffe0a2e2b1720a8eeec2c
-ms.sourcegitcommit: 255e8194bb5767a9983d54d16e79d628732a1d97
+ms.openlocfilehash: 9214796c37e9cb5ca9fcb07ced5db7efd8e0f7d0
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/11/2019
-ms.locfileid: "37453860"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634145"
 ---
 # <a name="deploy-exchange-online-for-microsoft-365-enterprise"></a>Déployer Exchange Online pour Microsoft 365 Enterprise
 
@@ -28,7 +28,7 @@ Exchange Online offre également des fonctionnalités de sécurité avancées, n
 
 Si vous débutez sur Exchange Online, consultez [Microsoft Exchange Online](https://products.office.com/exchange/exchange-online).
 
-Les phases et les étapes suivantes vous guident tout au long du processus de prévision du rôle d’Exchange Online au sein de votre organisation, de l’intégration de votre organisation à Exchange Online via une série de déploiements progressifs et de l’utilisation d’Exchange Online et de ses valeur pour vos utilisateurs finaux.
+Les phases et les étapes suivantes vous guident tout au long du processus de prévision du rôle d’Exchange Online au sein de votre organisation, de l’intégration de votre organisation à Exchange Online via une série de déploiements progressifs et de l’utilisation d’Exchange Online et de sa valeur pour les utilisateurs finaux.
 
 >[!Note]
 >Ces instructions de déploiement doivent être suivies uniquement après avoir terminé [la phase 2-identité de l’infrastructure de base de Microsoft 365 Enterprise Foundation](identity-infrastructure.md).
@@ -73,9 +73,9 @@ Si vous effectuez votre propre planification ou conjointement avec FastTrack, vo
 
 Utilisez ces ressources pour préparer les aspects techniques d’un déploiement Exchange Online : 
 
-- [Méthodes de migration des comptes de courrier vers Office 365](https://docs.microsoft.com/Exchange/mailbox-migration/mailbox-migration)
+- [Méthodes de migration des comptes de messagerie vers Office 365](https://docs.microsoft.com/Exchange/mailbox-migration/mailbox-migration)
 - [Migrer les dossiers publics Exchange Server vers Exchange Online](https://docs.microsoft.com/Exchange/collaboration/public-folders/migrate-to-exchange-online?view=exchserver-2019)
-- [Migrer des dossiers publics Exchange Server vers des groupes Office 365](https://docs.microsoft.com/Exchange/collaboration/public-folders/batch-migration-to-office-365-groups?view=exchserver-2019)
+- [Migrer des dossiers publics Exchange Server vers des groupes Microsoft 365](https://docs.microsoft.com/Exchange/collaboration/public-folders/batch-migration-to-office-365-groups?view=exchserver-2019)
 - [Collaboration dans Exchange Online](https://docs.microsoft.com/exchange/collaboration-exo/collaboration-exo)
 - [Destinataires dans Exchange Online](https://docs.microsoft.com/exchange/recipients-in-exchange-online/recipients-in-exchange-online)
 - [Outlook pour iOS et Android](https://docs.microsoft.com/Exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android)
@@ -155,8 +155,8 @@ Après avoir déployé Exchange Online pour l’ensemble de votre organisation, 
 
 Voici des suggestions d’activités :
 
-- Consultez la page [Facteurs de succès pour Office 365](https://aka.ms/successfactors) pour en savoir plus sur les meilleures pratiques générales relatives à l’adoption du service cloud. 
-- Consultez l’article [Rapports d’activité Office 365](https://docs.microsoft.com/office365/admin/activity-reports/activity-reports) pour comprendre l’utilisation des services Office 365 au sein de votre organisation. Si vous n’êtes pas administrateur général Office 365 pour votre organisation, demandez à la personne habilitée de vous accorder les autorisations d’accès en lecture aux rapports pour que vous puissiez accéder aux rapports d’activité.
+- Consultez la rubrique relative aux [facteurs de réussite pour Microsoft 365](https://aka.ms/successfactors) pour en savoir plus sur les meilleures pratiques générales pour l’adoption du service Cloud. 
+- Voir [les rapports Microsoft 365 dans le centre d’administration](https://docs.microsoft.com/office365/admin/activity-reports/activity-reports) pour comprendre l’utilisation des services au sein de votre organisation. Si vous n’êtes pas un administrateur global de votre organisation, demandez à une personne qui est un administrateur général d’accorder des autorisations de lecteur de rapports à votre compte d’utilisateur pour pouvoir accéder aux rapports d’activité.
 - Surveillez votre lieu de commentaire (un canal public dans une équipe de teams centrale ou Yammer) pour détecter les problèmes et les commentaires de personnes sur leur expérience avec Exchange Online. Répondez aux questions et problèmes dans les meilleurs délais afin d'éviter les frustrations et de montrer du soutien dans le cadre du déploiement.
 - Identifier et entretenir les champions de chaque groupe d’entreprise et mettre en évidence les meilleures pratiques à l’aide d’Outlook. Faites part de leurs réussites à l'organisation pour montrer le succès et l'adoption du projet. Le visa des responsables techniques au sein d’un groupe d’entreprise peut exercer une influence considérable sur les dirigeants et les collègues.
 

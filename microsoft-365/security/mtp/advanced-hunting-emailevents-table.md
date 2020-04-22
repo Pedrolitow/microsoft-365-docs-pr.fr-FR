@@ -1,7 +1,7 @@
 ---
 title: Tableau EmailEvents dans le schéma de repérage avancé
-description: En savoir plus sur les événements associés aux courriers électroniques Office 365 dans le tableau EmailEvents du schéma de repérage avancé
-keywords: chasse avancée, recherche de menace, recherche dans les menaces de la cybercriminalité, protection contre les menaces Microsoft, Microsoft 365, MTP, M365, recherche, requête, télémétrie, référence de schéma, Kusto, table, colonne, type de données, description, EmailEvents, ID de message réseau, expéditeur, destinataire ID de la pièce jointe, nom de la pièce jointe, verdict de programmes malveillants, décompte des pièces jointes, nombre d’URL
+description: En savoir plus sur les événements associés aux courriers électroniques Microsoft dans le tableau EmailEvents du schéma de chasse avancé
+keywords: chasse aux menaces, recherche de menace, recherche sur les menaces informatiques, protection contre les menaces Microsoft, Microsoft 365, MTP, M365, recherche, requête, télémétrie, référence de schéma, Kusto, table, colonne, type de données, description, EmailEvents, ID de message réseau, expéditeur, destinataire, ID pièce jointe, nom de la pièce jointe, nombre d’URL
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 690618bb6379532598e60a4e6664df070dd7e5cb
-ms.sourcegitcommit: 74bf600424d0cb7b9d16b4f391aeda7875058be1
+ms.openlocfilehash: 3146c428edcf276d0a4d5e7797ed913be48dd2ae
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42234783"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43633530"
 ---
 # <a name="emailevents"></a>EmailEvents
 
@@ -39,7 +39,7 @@ Pour plus d’informations sur les autres tables du schéma de repérage avancé
 |-------------|-----------|-------------|
 | `Timestamp` | DateHeure | Date et heure d’enregistrement de l’événement |
 | `EmailId` | chaîne | E-mail et Identificateur de destinataire uniques |
-| `NetworkMessageId` | chaîne | Identificateur unique d’e-mail, généré par Office 365 |
+| `NetworkMessageId` | chaîne | Identificateur unique pour le courrier électronique, généré par Microsoft 365 |
 | `InternetMessageId` | chaîne | Identificateur public de l’e-mail défini par le système de courrier d’envoi |
 | `SenderMailFromAddress` | chaîne | Adresse e-mail de l’expéditeur dans l’en-tête MAIL FROM, également appelé expéditeur d’enveloppe ou adresse de retour |
 | `SenderFromAddress` | chaîne | Adresse e-mail de l’expéditeur dans l’en-tête DE, visible par les destinataires de l’e-mail sur leurs clients de messagerie |

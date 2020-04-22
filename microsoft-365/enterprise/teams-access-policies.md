@@ -16,12 +16,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: 28d0893d08e588e52cf202be8d03b00434f7cb10
-ms.sourcegitcommit: c079cc893cd1bd5d894b13814063a2f42238806e
+ms.openlocfilehash: f1a4a4ea69efc3c68bdc8ed66aa18833a28feb94
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/28/2020
-ms.locfileid: "43035098"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636722"
 ---
 # <a name="policy-recommendations-for-securing-teams-chats-groups-and-files"></a>Recommandations de stratégie pour la sécurisation des conversations, des groupes et des fichiers teams
 
@@ -35,7 +35,7 @@ D’autres recommandations spécifiques au déploiement de teams sont incluses d
 
 Vous n’avez pas besoin d’activer les services dépendants pour commencer à utiliser Microsoft Teams. Cela fonctionnera tout simplement. Toutefois, vous devez être prêt à gérer les éléments suivants :
 
-- Groupes Office 365
+- Groupes Microsoft 365
 - Sites d’équipe SharePoint
 - OneDrive Entreprise
 - Boîtes aux lettres
@@ -52,7 +52,7 @@ Il s’agit des services dépendants à inclure dans l’affectation d’applica
 - Microsoft Teams
 - Sharepoint Online et OneDrive Entreprise
 - Exchange Online
-- Skype Entreprise Online
+- Skype Entreprise Online
 - Microsoft Stream (enregistrements de réunions)
 - Planificateur Microsoft (tâches du planificateur et données de plan)
 
@@ -84,7 +84,7 @@ Dans Azure AD, les utilisateurs invités et les utilisateurs externes sont les m
 
 ### <a name="guest-access-in-teams"></a>Accès invité dans teams
 
-En plus des stratégies pour les utilisateurs internes à votre entreprise ou organisation, les administrateurs peuvent autoriser l’accès invité à autoriser, utilisateur par utilisateur, les personnes externes à votre entreprise ou organisation pour accéder aux ressources des équipes et interagir avec personnes internes pour les conversations de groupe, les conversations et les réunions. Pour plus d’informations sur l’accès invité, consultez le lien suivant : [teams Guest Access](https://docs.microsoft.com/microsoftteams/guest-access)
+En plus des stratégies pour les utilisateurs internes à votre entreprise ou organisation, les administrateurs peuvent autoriser l’accès invité à autoriser, de manière individuelle, les personnes externes à votre entreprise ou organisation à accéder aux ressources de teams et à interagir avec les utilisateurs internes pour des tâches telles que les conversations de groupe, les conversations et les réunions. Pour plus d’informations sur l’accès invité, consultez le lien suivant : [teams Guest Access](https://docs.microsoft.com/microsoftteams/guest-access)
 
 ### <a name="external-access-in-teams"></a>Accès externe dans teams
 

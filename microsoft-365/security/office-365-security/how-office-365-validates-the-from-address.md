@@ -1,5 +1,5 @@
 ---
-title: Comment Office 365 valide l’adresse de pour empêcher le hameçonnage
+title: Comment Microsoft 365 valide l’adresse de pour empêcher le hameçonnage
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -16,17 +16,17 @@ search.appverid:
 ms.assetid: eef8408b-54d3-4d7d-9cf7-ad2af10b2e0e
 ms.collection:
 - M365-security-compliance
-description: Effacer les conditions requises des adresses de messagerie pour les messages entrants dans Office 365. À compter du 2017 novembre, le service requiert désormais des adresses conformes à RFC pour empêcher l’usurpation d’identité.
-ms.openlocfilehash: 4df073cfff3c36f60a013237d95548cb48fa7b5f
-ms.sourcegitcommit: 9ed3283dd6dd959faeca5c22613f9126261b9590
+description: Effacer les conditions requises sur les adresses de messagerie pour les messages entrants dans Microsoft 365. À compter du 2017 novembre, le service requiert désormais des adresses conformes à RFC pour empêcher l’usurpation d’identité.
+ms.openlocfilehash: 876ede087b37c381b9e9b557268057122e0987c0
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43529000"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43633977"
 ---
-# <a name="how-office-365-validates-the-from-address-to-prevent-phishing"></a>Comment Office 365 valide l’adresse de pour empêcher le hameçonnage
+# <a name="how-microsoft-365-validates-the-from-address-to-prevent-phishing"></a>Comment Microsoft 365 valide l’adresse de pour empêcher le hameçonnage
 
-Les comptes de messagerie Office 365 reçoivent un nombre plus important d’attaques par hameçonnage. En plus des [adresses de messagerie d’expéditeur usurpées (falsifiées)](anti-spoofing-protection.md), les agresseurs utilisent souvent des valeurs de l’adresse de provenance qui enfreignent les normes Internet. Pour éviter ce type de hameçonnage, Office 365 et Outlook.com requièrent désormais que les messages entrants incluent une adresse à partir de la RFC, comme décrit dans cette rubrique. Cette mise en œuvre a été activée en novembre 2017.
+Les comptes de messagerie Microsoft 365 reçoivent un nombre plus important d’attaques par hameçonnage. En plus des [adresses de messagerie d’expéditeur usurpées (falsifiées)](anti-spoofing-protection.md), les agresseurs utilisent souvent des valeurs de l’adresse de provenance qui enfreignent les normes Internet. Afin d’éviter ce type de phishing, Microsoft 365 et Outlook.com requièrent désormais que les messages entrants incluent une adresse à partir de la RFC, comme décrit dans cette rubrique. Cette mise en œuvre a été activée en novembre 2017.
 
 **Remarques** :
 
@@ -75,31 +75,31 @@ Les adresses de messagerie suivantes sont valides :
 
 - `From: "Sender, Example" <sender.example@contoso.com>`
 
-- `From: "Office 365" <sender@contoso.com>`
+- `From: "Microsoft 365" <sender@contoso.com>`
 
-- `From: Office 365 <sender@contoso.com>`(Non recommandé, car le nom d’affichage n’est pas entouré de guillemets doubles.)
+- `From: Microsoft 365 <sender@contoso.com>`(Non recommandé, car le nom d’affichage n’est pas entouré de guillemets doubles.)
 
 Les adresses de messagerie suivantes ne sont pas valides :
 
-- **Non de l’adresse**: certains messages automatisés n’incluent pas d’adresse de provenance. Dans le passé, lorsque Office 365 ou Outlook.com a reçu un message sans adresse de provenance, le service a ajouté la valeur par défaut suivante de : adresse pour que le message soit remis :
+- **Non de l’adresse**: certains messages automatisés n’incluent pas d’adresse de provenance. Dans le passé, lorsque Microsoft 365 ou Outlook.com a reçu un message sans adresse de provenance, le service a ajouté la valeur par défaut suivante de : adresse pour que le message soit remis :
 
   `From: <>`
 
   Désormais, les messages dont l’adresse est vide à partir de ne sont plus acceptés.
 
-- `From: Office 365 sender@contoso.com`(Le nom complet est présent, mais l’adresse de messagerie n’est pas entourée de crochets pointus.)
+- `From: Microsoft 365 sender@contoso.com`(Le nom complet est présent, mais l’adresse de messagerie n’est pas entourée de crochets pointus.)
 
-- `From: "Office 365" <sender@contoso.com> (Sent by a process)`(Texte après l’adresse de messagerie.)
+- `From: "Microsoft 365" <sender@contoso.com> (Sent by a process)`(Texte après l’adresse de messagerie.)
 
 - `From: Sender, Example <sender.example@contoso.com>`(Le nom complet contient une virgule, mais n’est pas entouré de guillemets doubles.)
 
-- `From: "Office 365 <sender@contoso.com>"`(La valeur entière est placée de manière incorrecte entre guillemets doubles.)
+- `From: "Microsoft 365 <sender@contoso.com>"`(La valeur entière est placée de manière incorrecte entre guillemets doubles.)
 
-- `From: "Office 365 <sender@contoso.com>" sender@contoso.com`(Le nom complet est présent, mais l’adresse de messagerie n’est pas entourée de crochets pointus.)
+- `From: "Microsoft 365 <sender@contoso.com>" sender@contoso.com`(Le nom complet est présent, mais l’adresse de messagerie n’est pas entourée de crochets pointus.)
 
-- `From: Office 365<sender@contoso.com>`(Pas d’espace entre le nom d’affichage et le crochet pointu gauche.)
+- `From: Microsoft 365<sender@contoso.com>`(Pas d’espace entre le nom d’affichage et le crochet pointu gauche.)
 
-- `From: "Office 365"<sender@contoso.com>`(Aucun espace entre les guillemets doubles de fermeture et le crochet pointu gauche.)
+- `From: "Microsoft 365"<sender@contoso.com>`(Aucun espace entre les guillemets doubles de fermeture et le crochet pointu gauche.)
 
 ## <a name="suppress-auto-replies-to-your-custom-domain"></a>Supprimer les réponses automatiques à votre domaine personnalisé
 
@@ -115,16 +115,16 @@ Par exemple :
 noreply.contoso.com IN MX .
 ```
 
-Pour plus d’informations sur la configuration des enregistrements MX, consultez la rubrique [créer des enregistrements DNS auprès d’un fournisseur d’hébergement DNS pour Office 365](../../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md).
+Pour plus d’informations sur la configuration des enregistrements MX, consultez la rubrique [créer des enregistrements DNS auprès d’un fournisseur d’hébergement DNS pour Microsoft 365](../../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md).
 
 Pour plus d’informations sur la publication d’une valeur null MX, voir [RFC 7505](https://tools.ietf.org/html/rfc7505).
 
 ## <a name="override-from-address-enforcement"></a>Remplacer l’application de l’adresse
 
-Pour ignorer l’adresse requise pour le courrier électronique entrant, vous pouvez utiliser la liste d’adresses IP autorisées (filtrage des connexions) ou les règles de flux de messagerie (également appelées règles de transport), comme décrit dans [Create Safe sender Lists in Office 365](create-safe-sender-lists-in-office-365.md).
+Pour ignorer l’adresse requise pour le courrier électronique entrant, vous pouvez utiliser la liste d’adresses IP autorisées (filtrage des connexions) ou les règles de flux de messagerie (également appelées règles de transport), comme décrit dans [Create Safe sender Lists in Microsoft 365](create-safe-sender-lists-in-office-365.md).
 
-Vous ne pouvez pas remplacer l’adresse de l’expéditeur requise pour le courrier électronique sortant envoyé à partir d’Office 365. De plus, Outlook.com n’autorisera pas les remplacements, même via la prise en charge.
+Vous ne pouvez pas remplacer l’adresse requise pour le courrier électronique sortant que vous envoyez à partir de Microsoft 365. De plus, Outlook.com n’autorisera pas les remplacements, même via la prise en charge.
 
-## <a name="other-ways-to-prevent-and-protect-against-cybercrimes-in-office-365"></a>Autres méthodes pour prévenir et protéger contre les cybercriminels dans Office 365
+## <a name="other-ways-to-prevent-and-protect-against-cybercrimes-in-microsoft-365"></a>Autres moyens de prévenir et de protéger contre les cybercriminels dans Microsoft 365
 
-Pour plus d’informations sur la façon dont vous pouvez renforcer votre organisation contre le hameçonnage, le courrier indésirable, les violations de données et d’autres menaces, consultez les [10 meilleures façons de sécuriser les plans Office 365 et Microsoft 365 Business](../../admin/security-and-compliance/secure-your-business-data.md).
+Pour plus d’informations sur la façon dont vous pouvez renforcer votre organisation contre le hameçonnage, le courrier indésirable, les violations de données et d’autres menaces, consultez les [10 meilleures façons de sécuriser les plans Microsoft 365 pour les entreprises](../../admin/security-and-compliance/secure-your-business-data.md).

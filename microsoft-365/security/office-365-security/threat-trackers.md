@@ -16,12 +16,12 @@ ms.assetid: a097f5ca-eac0-44a4-bbce-365f35b79ed1
 ms.collection:
 - M365-security-compliance
 description: En savoir plus sur les suivis de menace, y compris les nouveaux suivis, pour aider votre organisation à répondre aux préoccupations de sécurité.
-ms.openlocfilehash: 5a26bde935c45f048d0b4a0274c4abea388701ef
-ms.sourcegitcommit: 58c1b4208a5e231463091573e40696d08fc39b8e
+ms.openlocfilehash: 336cbe15d6eba7363e926a81fab498a7d6cff44a
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "42955496"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631156"
 ---
 # <a name="threat-trackers---new-and-noteworthy"></a>Suivi des menaces-nouveautés et remarquables
 
@@ -45,11 +45,11 @@ Les suivis ne sont que quelques-unes des nombreuses fonctionnalités que vous ob
 Pour afficher et utiliser vos suivis de menace pour votre organisation, accédez au centre &amp; de sécurité conformité[https://protection.office.com](https://protection.office.com)() et sélectionnez **Threat Management** \> **Threat Tracker**.
   
 > [!NOTE]
-> Pour utiliser les suivis de menace, vous devez être un administrateur général Office 365, un administrateur de sécurité ou un lecteur de sécurité. Consultez [la rubrique autorisations dans le centre &amp; de sécurité conformité Office 365](permissions-in-the-security-and-compliance-center.md). 
+> Pour utiliser les suivis des menaces, vous devez être un administrateur général, un administrateur de sécurité ou un lecteur de sécurité. Consultez [la rubrique autorisations dans &amp; le centre de sécurité et de conformité](permissions-in-the-security-and-compliance-center.md). 
   
 ### <a name="noteworthy-trackers"></a>Suivis nocelles
 
-Les suivis remarquables sont là où vous trouverez des menaces et des risques les plus importants et les moins susceptibles d’être connus. Les suivis nocelles vous aident à déterminer si ces problèmes existent dans votre environnement Office 365, ainsi qu’un lien vers des articles (comme celui-ci) qui vous donnent plus de détails sur ce qui se passe et la façon dont ils ont un impact sur l’utilisation d’Office 365 par votre organisation. Qu’il s’agisse d’une menace importante (par exemple, Wannacry, Petya) ou d’une menace existante susceptible de créer de nouveaux défis (comme nos autres éléments nosites-Nemucod), c’est ici que vous trouverez des nouveaux éléments importants que vous et votre équipe de sécurité devez examiner et examiner. régulièrement.
+Les suivis remarquables sont là où vous trouverez des menaces et des risques les plus importants et les moins susceptibles d’être connus. Les suivis nocelles vous aident à déterminer si ces problèmes existent dans votre environnement Microsoft 365, ainsi qu’un lien vers des articles (comme celui-ci) qui vous donnent plus de détails sur ce qui se passe et la façon dont ils ont un impact sur l’utilisation d’Office 365 par votre organisation. Qu’il s’agisse d’une menace importante (par exemple, Wannacry, Petya) ou d’une menace existante susceptible de créer de nouveaux défis (comme nos autres éléments nosites-Nemucod), c’est ici que vous trouverez des nouveaux éléments importants que vous et votre équipe de sécurité devez examiner et examiner régulièrement.
   
 En règle générale, les suivis doivent être publiés pendant quelques semaines lorsque nous identifiez de nouvelles menaces et vous pensez que vous aurez peut-être besoin de la visibilité supplémentaire que fournit cette fonctionnalité. Une fois que le risque le plus important pour une menace a réussi, nous allons supprimer cet élément notable. De cette façon, nous pouvons conserver la liste à jour et à jour avec d’autres nouveaux éléments pertinents.
   
@@ -63,7 +63,7 @@ Les suivis des tendances vous donnent une idée des nouvelles menaces que vous d
   
 ### <a name="tracked-queries"></a>Requêtes suivies
 
-Les requêtes suivies exploitent vos requêtes sauvegardées pour évaluer régulièrement l’activité Office 365 au sein de votre organisation. Cela vous permet d’effectuer des tendances d’événements, de plus en plus à venir dans les prochains mois. Les requêtes suivies s’exécutent automatiquement, ce qui vous permet d’obtenir des informations à jour sans avoir à réexécuter vos requêtes.
+Les requêtes suivies exploitent vos requêtes sauvegardées pour évaluer régulièrement l’activité de Microsoft 365 dans votre organisation. Cela vous permet d’effectuer des tendances d’événements, de plus en plus à venir dans les prochains mois. Les requêtes suivies s’exécutent automatiquement, ce qui vous permet d’obtenir des informations à jour sans avoir à réexécuter vos requêtes.
   
 ![Exemple de requêtes suivies avec une sélection](../../media/0c556174-06eb-4ae5-b32a-5ff76b9e4f13.png)
   
@@ -77,11 +77,11 @@ Vous pouvez toujours enregistrer une requête de suivi remarquable ou l’une de
   
 ## <a name="trackers-and-explorer"></a>Suivis et Explorateur
 
-Que vous examiniez le courrier, le contenu ou les activités Office (bientôt disponible), l’Explorateur et les suivis collaborent pour vous aider à examiner et à suivre les risques et les menaces de sécurité. Ensemble, les suivis fournissent des informations pour vous aider à protéger vos utilisateurs Office 365 en mettant en surbrillance les problèmes nouveaux, notables et fréquemment recherchés, ce qui garantit une meilleure protection de votre entreprise lors de son déplacement dans le Cloud.
+Que vous examiniez le courrier, le contenu ou les activités Office (bientôt disponible), l’Explorateur et les suivis collaborent pour vous aider à examiner et à suivre les risques et les menaces de sécurité. Ensemble, les suivis fournissent des informations pour protéger vos utilisateurs en mettant en surbrillance les problèmes nouveaux, notables et fréquemment recherchés, ce qui garantit une meilleure protection de votre entreprise lors de son déplacement dans le Cloud.
   
-N’oubliez pas que vous pouvez toujours nous faire part de vos commentaires sur cette fonctionnalité ou d’autres fonctionnalités de sécurité Office 365 en cliquant sur le bouton **Commentaires** situé dans le coin inférieur droit de la [vue d’ensemble du centre de sécurité &amp; conformité Office 365](https://support.office.com/article/a5f2fd18-b029-4257-b5a8-ae83e7768c85).
+N’oubliez pas que vous pouvez toujours nous faire part de vos commentaires sur cette ou d’autres fonctionnalités de sécurité Microsoft 365 en cliquant sur le bouton **Commentaires** dans le coin inférieur droit de la [vue d’ensemble du centre de &amp; sécurité et de conformité](https://support.office.com/article/a5f2fd18-b029-4257-b5a8-ae83e7768c85).
   
-![Office 365 Security &amp; Compliance Center](../../media/86c330db-8132-4150-8475-220258fe04fb.png)
+![Security &amp; Compliance Center](../../media/86c330db-8132-4150-8475-220258fe04fb.png)
   
 ## <a name="trackers-and-office-365-advanced-threat-protection"></a>Suivis et protection avancée contre les menaces Office 365
 
@@ -91,15 +91,15 @@ Avec notre menace inéditive, nous mettons en évidence les menaces de programme
   
 Dans le monde des menaces riddled, l’exécution d’analyses anti-programmes malveillants classiques signifie que vous n’êtes pas suffisamment protégé contre les attaques. Les agresseurs les plus sophistiqués d’aujourd’hui utilisent les outils couramment disponibles pour créer des attaques nouvelles, brouillées ou retardées qui ne seront pas reconnues par les moteurs anti-programme malveillant basés sur des signatures traditionnels. La fonctionnalité de pièces jointes approuvées ATP prend les pièces jointes et les détonateurs dans un environnement virtuel pour déterminer si elles sont sûres ou malveillantes. Ce processus de détonation ouvre chaque fichier dans un environnement d’ordinateur virtuel, puis observe ce qui se passe après l’ouverture du fichier. Qu’il s’agisse d’un fichier PDF, d’un fichier compressé ou d’un document Office, le code malveillant peut être masqué dans un fichier, en activant une seule fois que la victime l’ouvre sur son ordinateur. En détonant et analysant le fichier dans le flux de messagerie, les fonctionnalités ATP d’Office 365 détectent ces menaces en fonction des comportements, de la réputation de fichier et d’un certain nombre de règles heuristiques.
   
-Le nouveau filtre de menace présentant en surbrillance les éléments récemment détectés via des pièces jointes sécurisées ATP. Ces détections représentent des éléments qui sont des nouveaux fichiers malveillants, qui n’ont pas été précédemment trouvés par Office 365 dans votre courrier électronique ou dans d’autres clients. Faites attention aux éléments dans le suivi des menaces, reportez-vous à la personne qui a été ciblée et consultez les détails de la détonation affichés sous l’onglet analyse avancée (en cliquant sur l’objet du message dans l’Explorateur). Remarque Vous trouverez cet onglet uniquement sur les courriers électroniques détectés par la fonctionnalité pièces jointes recommandées pour la protection avancée contre les menaces, ce suivi notable inclut ce filtre, mais vous pouvez également utiliser ce filtre pour d’autres recherches dans l’Explorateur.
+Le nouveau filtre de menace présentant en surbrillance les éléments récemment détectés via des pièces jointes sécurisées ATP. Ces détections représentent des éléments qui sont des nouveaux fichiers malveillants, qui n’ont pas été précédemment trouvés par Microsoft 365 dans votre courrier électronique ou dans d’autres clients. Faites attention aux éléments dans le suivi des menaces, reportez-vous à la personne qui a été ciblée et consultez les détails de la détonation affichés sous l’onglet analyse avancée (en cliquant sur l’objet du message dans l’Explorateur). Remarque Vous trouverez cet onglet uniquement sur les courriers électroniques détectés par la fonctionnalité pièces jointes recommandées pour la protection avancée contre les menaces, ce suivi notable inclut ce filtre, mais vous pouvez également utiliser ce filtre pour d’autres recherches dans l’Explorateur.
   
 ## <a name="next-steps"></a>Étapes suivantes
 
 - Si votre organisation ne dispose pas déjà de ces fonctionnalités d’enquête et de réponse pour les menaces Office 365, consultez [Comment obtenir les fonctionnalités d’enquête et de réponse aux menaces pour office 365 ?](office-365-ti.md).
     
-- Assurez-vous que les rôles et les autorisations appropriés sont attribués à votre équipe de sécurité. Vous devez être un administrateur général Office 365 ou avoir l’administrateur de sécurité ou le rôle de recherche et de purge affecté dans &amp; le centre de sécurité conformité. Consultez [la rubrique autorisations dans le centre &amp; de sécurité conformité Office 365](permissions-in-the-security-and-compliance-center.md).
+- Assurez-vous que les rôles et les autorisations appropriés sont attribués à votre équipe de sécurité. Vous devez être un administrateur général ou avoir l’administrateur de sécurité ou le rôle de recherche et de purge affecté dans &amp; le centre de sécurité et de conformité. Consultez [la rubrique autorisations dans &amp; le centre de sécurité et de conformité](permissions-in-the-security-and-compliance-center.md).
     
-- Surveillez les nouveaux suivis à afficher dans votre environnement Office 365. Le cas échéant, vous trouverez vos suivis [ici](https://protection.office.com/). Accédez à **Threats Management** \> **Threat trackers**.
+- Surveillez les nouveaux suivis à afficher dans votre environnement Microsoft 365. Le cas échéant, vous trouverez vos suivis [ici](https://protection.office.com/). Accédez à **Threats Management** \> **Threat trackers**.
     
 - Si vous ne l’avez pas déjà fait, Apprenez-en plus sur et configurez la [protection avancée contre les menaces d’office 365](office-365-atp.md) pour votre organisation, y compris les [liens de sécurité Office 365 ATP](atp-safe-links.md) et [les pièces jointes fiables Office 365](atp-safe-attachments.md).
   

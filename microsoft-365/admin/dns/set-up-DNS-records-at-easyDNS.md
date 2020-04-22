@@ -1,5 +1,5 @@
 ---
-title: Créer des enregistrements DNS sur easyDNS pour Office 365
+title: Créer des enregistrements DNS sur easyDNS pour Microsoft
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -18,21 +18,21 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 446babfe-2e08-4cc2-bbfb-c05b854933ac
-description: Découvrez comment vérifier votre domaine et configurer les enregistrements DNS pour la messagerie, Skype entreprise Online et d’autres services sur easyDNS pour Office 365.
-ms.openlocfilehash: 9d48896de8f841863e25929a46b2f1d2e1b3ced2
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+description: Découvrez comment vérifier votre domaine et configurer les enregistrements DNS pour la messagerie, Skype entreprise Online et d’autres services sur easyDNS pour Microsoft.
+ms.openlocfilehash: b7b29900108ab94f0fd99dcf3404cfa137ce92ff
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43210551"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631356"
 ---
-# <a name="create-dns-records-at-easydns-for-office-365"></a>Créer des enregistrements DNS sur easyDNS pour Office 365
+# <a name="create-dns-records-at-easydns-for-microsoft"></a>Créer des enregistrements DNS sur easyDNS pour Microsoft
 
 [Consultez le Forum aux questions sur les domaines](../setup/domains-faq.md) si vous ne trouvez pas ce que vous recherchez. 
   
-Vous devrez ajouter tous les enregistrements DNS suivants sur le site Web de votre registraire pour acheminer le courrier vers Office 365, utiliser votre domaine pour teams et Skype entreprise, et ainsi de suite.
+Vous devrez ajouter tous les enregistrements DNS suivants sur le site Web de votre registraire pour acheminer le courrier vers Microsoft, utiliser votre domaine pour teams et Skype entreprise, et ainsi de suite.
   
-Remarque : les enregistrements SRV ne sont actuellement pas disponibles dans tous les packages de service easyDNS. Vous devrez peut-être effectuer une mise à niveau vers un niveau de service supérieur avec easyDNS pour ajouter des enregistrements SRV requis pour Office 365 Skype entreprise.
+Remarque : les enregistrements SRV ne sont actuellement pas disponibles dans tous les packages de service easyDNS. Vous devrez peut-être effectuer une mise à niveau vers un niveau de service supérieur avec easyDNS pour ajouter des enregistrements SRV qui sont requis pour Skype entreprise.
   
 ## <a name="verify-that-you-own-the-domain-with-a-txt-record"></a>Vérifier que vous êtes propriétaire du domaine avec un enregistrement TXT
 
@@ -44,7 +44,7 @@ Remarque : les enregistrements SRV ne sont actuellement pas disponibles dans to
     
 4. Entrez les enregistrements suivants dans les champs de texte :
     
-    |**Host**|**Text**|
+    |**Host**|**Texte**|
     |:-----|:-----|
     |@  <br/> |MS = msXXXXXXXX (utilisez la valeur fournie dans la page domaines du centre d’administration)  <br/> |
    
@@ -52,9 +52,9 @@ Remarque : les enregistrements SRV ne sont actuellement pas disponibles dans to
     
 6. Vérifiez que l’enregistrement est correct, puis sélectionnez **confirmer**. 
     
-7. Patientez quelques minutes avant de poursuivre, afin que l’enregistrement que vous venez de créer puisse se propager sur Internet et soit détecté par Office 365.
+7. Patientez quelques minutes avant de poursuivre, afin que l’enregistrement que vous venez de créer puisse se propager sur Internet et soit détecté par Microsoft.
     
-8. L’enregistrement étant désormais ajouté sur le site de votre bureau d’enregistrement de domaines, revenez à Office 365 et demandez à Office 365 de rechercher l’enregistrement.
+8. À présent que vous avez ajouté l’enregistrement sur le site de votre bureau d’enregistrement de domaines, vous allez revenir à Microsoft et demander l’enregistrement.
     
 9. Dans le centre d’administration, accédez à la page **Paramètres** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domaines</a>.
     
@@ -64,7 +64,7 @@ Remarque : les enregistrements SRV ne sont actuellement pas disponibles dans to
     
 12. Dans la page **Vérifier le domaine**, sélectionnez **Vérifier**. 
     
-## <a name="add-an-mx-record-to-route-email-to-office-365"></a>Ajouter un enregistrement MX pour acheminer le courrier électronique vers Office 365
+## <a name="add-an-mx-record-to-route-email-to-microsoft"></a>Ajouter un enregistrement MX pour acheminer le courrier électronique vers Microsoft
 
 1. Accédez à [https://cp.easydns.com/manage/domains/](https://cp.easydns.com/manage/domains/) et connectez-vous avec vos informations d’identification. 
     
@@ -117,7 +117,7 @@ Remarque : les enregistrements SRV ne sont actuellement pas disponibles dans to
     
 4. Entrez les enregistrements suivants dans les champs de texte :
     
-    |**Host**|**Text**|
+    |**Host**|**Texte**|
     |:-----|:-----|
     |@  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/> |
    
@@ -125,7 +125,7 @@ Remarque : les enregistrements SRV ne sont actuellement pas disponibles dans to
     
 6. Vérifiez que l’enregistrement est correct, puis sélectionnez **confirmer**. 
     
-## <a name="add-the-two-srv-records-that-are-required-for-office-365"></a>Ajoutez les 2 enregistrements SRV requis pour Office 365
+## <a name="add-the-two-srv-records-that-are-required-for-microsoft"></a>Ajouter les deux enregistrements SRV requis pour Microsoft
 
 Remarque : les enregistrements SRV ne sont actuellement pas disponibles dans easyDNS’domaine plus niveau de service. Vous devrez peut-être effectuer une mise à niveau vers un niveau de service supérieur avec easyDNS pour ajouter des enregistrements SRV 
   

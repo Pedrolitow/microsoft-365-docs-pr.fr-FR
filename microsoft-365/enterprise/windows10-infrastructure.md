@@ -12,12 +12,12 @@ ms.date: 08/28/2019
 f1.keywords:
 - NOCSH
 ms.author: greglin
-ms.openlocfilehash: 72a355a524ff3dd56300566ff228b5ff5007c6cb
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 53c38ba2e915cd439c8d7629bc7f9cd56ebc8647
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42085536"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636674"
 ---
 # <a name="phase-3-windows-10-enterprise"></a>Phase 3 : Windows 10 Entreprise
 
@@ -32,7 +32,7 @@ Microsoft 365 Enterprise comprend Windows 10 entreprise, qui vous offre les outi
 Vous devez comprendre les différentes façons de déployer le système d’exploitation Windows 10 et choisir celle qui convient à votre organisation. En fonction de votre abonnement entreprise Microsoft 365, il existe également des fonctionnalités de sécurité et de services Windows 10 que vous devrez configurer pour tirer le meilleur parti de Windows 10.
 
 >[!Note]
->Pour déployer Windows 10 Entreprise et Office 365 ProPlus ensemble, puis passer à un [bureau moderne](https://www.microsoft.com/microsoft-365/modern-desktop), reportez-vous au [centre de déploiement de bureau moderne](https://aka.ms/howtoshift).
+>Pour déployer les applications Windows 10 entreprise et Microsoft 365 pour entreprise ensemble et passer à un [ordinateur de bureau moderne](https://www.microsoft.com/microsoft-365/modern-desktop), consultez le [Centre de déploiement de bureau moderne](https://aka.ms/howtoshift).
 >
 
 ## <a name="windows-10-deployment"></a>Déploiement de Windows 10
@@ -49,7 +49,7 @@ Si ces scénarios de déploiement ne répondent pas aux besoins de votre organis
 Pour en savoir plus sur Windows 10, consultez les articles suivants :
 
 - [Page du produit Microsoft 365 Enterprise](https://www.microsoft.com/microsoft-365/enterprise)
-- [Windows 10](https://docs.microsoft.com/windows/windows-10)
+- [Windows 10](https://docs.microsoft.com/windows/windows-10)
 - [Déployer et mettre à jour Windows 10](https://docs.microsoft.com/windows/deployment/)
 
 

@@ -1,5 +1,5 @@
 ---
-title: Remise et aperçu dynamiques avec les pièces jointes sécurisées ATP Office 365
+title: Remise et aperçu dynamiques à l’aide de pièces jointes fiables ATP
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -17,14 +17,14 @@ ms.assetid: f16c9928-8e3d-4219-b994-271dc9a16272
 ms.collection:
 - M365-security-compliance
 description: Lorsque vous configurez vos stratégies de pièces jointes approuvées ATP, vous choisissez la remise dynamique pour éviter les retards de message et permettre aux utilisateurs de prévisualiser les pièces jointes en cours d’analyse.
-ms.openlocfilehash: 755a5a317710946a3a03004482a6b48c8947c1a7
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: c8e0a60912244a636fbbe6ca62f7c1b9c260e0f6
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599421"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637567"
 ---
-# <a name="dynamic-delivery-and-previewing-with-office-365-atp-safe-attachments"></a>Remise et aperçu dynamiques avec les pièces jointes sécurisées ATP Office 365
+# <a name="dynamic-delivery-and-previewing-with-atp-safe-attachments"></a>Remise et aperçu dynamiques à l’aide de pièces jointes fiables ATP
 
 ## <a name="overview"></a>Vue d’ensemble
 
@@ -38,16 +38,16 @@ La remise dynamique élimine les retards de messagerie en envoyant le corps d’
 
 - À mesure que chaque pièce jointe est effacée, elle est disponible pour l’ouverture ou le téléchargement.
 
-- Si une pièce jointe est considérée comme malveillante, elle est envoyée en quarantaine, où une personne de l’équipe de sécurité de votre organisation (par exemple, un administrateur général ou un administrateur de sécurité d’Office 365) peut [gérer les messages mis en quarantaine dans Office 365](manage-quarantined-messages-and-files.md).
+- Si une pièce jointe est considérée comme malveillante, elle est envoyée en quarantaine, où une personne de l’équipe de sécurité de votre organisation (par exemple, un administrateur général ou un administrateur de sécurité) peut [gérer les messages mis en quarantaine dans Office 365](manage-quarantined-messages-and-files.md).
 
 La plupart des documents PDF et Office peuvent être prévisualisés en mode sans échec pendant l’analyse de l’ATP. Si une pièce jointe n’est pas compatible avec le prévisualisation dynamique de remise, les destinataires de courrier voient une balise d’emplacement de pièce jointe jusqu’à la fin de l’analyse des pièces jointes.
 
 > [!TIP]
-> Si vous utilisez un appareil mobile et que les fichiers PDF ne sont pas rendus dans le prévisualiseur de remise dynamique, essayez de vous connecter à Office 365 à l’aide de votre navigateur mobile.
+> Si vous utilisez un appareil mobile et que les fichiers PDF ne sont pas rendus dans le prévisualiseur de remise dynamique, essayez de vous connecter à l’aide de votre navigateur mobile.
 
 Avec la remise dynamique, les utilisateurs peuvent lire et répondre immédiatement à leurs messages électroniques, tandis que leurs pièces jointes sont en cours d’analyse.
 
-L’analyse des pièces jointes approuvées ATP a lieu dans la région où se trouvent vos données Office 365. Pour plus d’informations sur la géographie du centre de données, voir [où se trouvent vos données ?](https://products.office.com/where-is-your-data-located?geo=All)
+L’analyse des pièces jointes approuvées ATP a lieu dans la région où se trouvent vos données Microsoft 365. Pour plus d’informations sur la géographie du centre de données, voir [où se trouvent vos données ?](https://products.office.com/where-is-your-data-located?geo=All)
 
 ## <a name="what-happens-when-someone-forwards-an-email-that-contains-an-attachment"></a>Que se passe-t-il lorsque quelqu’un transfère un courrier électronique qui contient une pièce jointe ?
 

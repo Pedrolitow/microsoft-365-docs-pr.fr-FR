@@ -24,13 +24,13 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: fae8819d-7235-495f-9f07-d016f545887f
-description: Découvrez comment vérifier que les paramètres de protection des applications professionnelles de Microsoft 365 ont pris effet sur les appareils Windows 10 de vos utilisateurs.
-ms.openlocfilehash: 47977f8d79eb6dbb2f4d087af8f8ad7da4313c61
-ms.sourcegitcommit: 217de0fc54cbeaea32d253f175eaf338cd85f5af
+description: Découvrez comment vérifier que les paramètres de protection des applications Microsoft 365 pour les entreprises ont pris effet sur les appareils Windows 10 de vos utilisateurs.
+ms.openlocfilehash: b63681f040b0fe49127693e9cb7aac7ba6c41af6
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42560677"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635701"
 ---
 # <a name="validate-device-protection-settings-on-windows-10-pcs"></a>Valider les paramètres de protection des appareils sur des PC Windows 10
 
@@ -58,13 +58,13 @@ Une fois que vous avez [configuré les stratégies de périphériques](protectio
     
     ![Les paramètres de protection contre les virus et les menaces sont grisés.](../media/9ca68d40-a5d9-49d7-92a4-c581688b5926.png)
   
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Voir aussi
 
-[Documentation et ressources pour Microsoft 365 Business](https://go.microsoft.com/fwlink/p/?linkid=853701)
+[Documentation et ressources de Microsoft 365 pour les entreprises](https://go.microsoft.com/fwlink/p/?linkid=853701)
   
-[Prise en main de Microsoft 365 Business](microsoft-365-business-overview.md)
+[Prise en main de Microsoft 365 pour les entreprises](microsoft-365-business-overview.md)
   
-[Gérer Microsoft 365 Business](manage.md)
+[Gérer Microsoft 365 pour les entreprises](manage.md)
   
 [Définir des configurations d'application pour les PC Windows 10](protection-settings-for-windows-10-pcs.md)
   

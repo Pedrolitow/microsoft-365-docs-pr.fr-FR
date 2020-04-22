@@ -1,5 +1,5 @@
 ---
-title: Recherche et réponse automatiques dans Office 365
+title: Examen et réponse automatisés (AIR)
 keywords: AIR, autoIR, ATP, automatisation, analyse, réponse, correction, menaces, avancé, menace, protection
 f1.keywords:
 - NOCSH
@@ -16,14 +16,14 @@ search.appverid:
 ms.collection: M365-security-compliance
 description: Prise en main des fonctionnalités d’analyse et de réponse automatisées dans Office 365 Advanced Threat Protection Plan 2.
 ms.custom: air
-ms.openlocfilehash: 45a2bc0e581916493a0170a5f86c152d02403efe
-ms.sourcegitcommit: 2859c82b30ae9cbd3a3e4bcdebd65f18444f1a9e
+ms.openlocfilehash: 3b7ddd88161b695e8929b749dac61d7947392a0d
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42826348"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634543"
 ---
-# <a name="automated-investigation-and-response-air-in-office-365"></a>Recherche et réponse automatiques dans Office 365
+# <a name="automated-investigation-and-response-air"></a>Examen et réponse automatisés (AIR)
 
 [Office 365 Advanced Threat Protection](office-365-atp.md) (Office 365 ATP) plan 2 inclut de puissantes fonctionnalités d’analyse et de réponse automatisées (air) qui permettent d’économiser le temps et les efforts de l’équipe des opérations de sécurité. Comme les alertes sont déclenchées, c’est à votre équipe chargée des opérations de sécurité de passer en revue les alertes, de les classer par ordre de priorité et de les répondre. Le volume des alertes entrantes peut être insurmontable. L’automatisation de certains d’entre eux peut vous aider. Avec AIR, votre équipe des opérations de sécurité peut se concentrer sur les tâches de plus haute priorité sans perdre en visibilité les alertes déclenchées.
 
@@ -69,7 +69,7 @@ Pendant et après un processus d’enquête automatisé, votre équipe de sécur
 
 Les fonctionnalités AIR d’Office 365 sont incluses dans [office 365 Advanced Threat Protection Plan 2](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp#office-365-atp-plan-1-and-plan-2). Toutefois, vos [stratégies ATP Office 365 doivent être configurées](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats) afin que l’air fonctionne comme prévu. En outre, veillez à consulter et éventuellement configurer les stratégies d' [alerte](https://docs.microsoft.com/microsoft-365/compliance/alert-policies)de votre organisation. 
 
-Office 365 fournit de nombreuses stratégies d’alerte intégrées qui permettent d’identifier les autorisations d’administrateur Exchange en cas d’abus, d’activité de programmes malveillants, de menaces externes et internes potentielles et les risques de gouvernance des informations. Plusieurs stratégies d' [alerte par défaut](https://docs.microsoft.com/microsoft-365/compliance/alert-policies#default-alert-policies) peuvent déclencher des analyses automatiques. Elles incluent notamment les éléments suivants :
+Microsoft 365 fournit de nombreuses stratégies d’alerte intégrées qui permettent d’identifier les abus des autorisations d’administration Exchange, l’activité de programmes malveillants, les menaces externes et internes potentielles et les risques de gouvernance des informations. Plusieurs stratégies d' [alerte par défaut](https://docs.microsoft.com/microsoft-365/compliance/alert-policies#default-alert-policies) peuvent déclencher des analyses automatiques. Elles incluent notamment les éléments suivants :
 
 - Un clic d’URL potentiellement malveillant est détecté
 
@@ -91,8 +91,8 @@ Les autorisations sont accordées par le biais de certains rôles, tels que ceux
 
 |Tâche |Rôle (s) requis |
 |--|--|
-|Pour configurer les fonctionnalités AIR |Un des rôles suivants : <br/>-Administrateur général<br/>-Administrateur de la sécurité <br/>Ces rôles peuvent être attribués dans [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles) ou dans le [Centre de conformité Office 365 Security &](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center). |
-|Pour approuver ou rejeter des actions recommandées|L’un des rôles suivants, affecté dans [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles) ou dans le [centre de sécurité & conformité Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center)) :<br/>-Administrateur général <br/>-Administrateur de la sécurité<br/>-Lecteur de sécurité <br/>--- et ---<br/>-Search and purger (ce rôle est affecté uniquement dans le [Centre de conformité Office 365 Security &](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center). Vous devrez peut-être créer un groupe de rôles à cet emplacement et ajouter le rôle de recherche et de purge à ce nouveau groupe de rôles.)
+|Pour configurer les fonctionnalités AIR |Un des rôles suivants : <br/>-Administrateur général<br/>-Administrateur de la sécurité <br/>Ces rôles peuvent être attribués dans [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles) ou dans le [centre de sécurité & conformité](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center). |
+|Pour approuver ou rejeter des actions recommandées|L’un des rôles suivants, affecté dans [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles) ou dans le [centre de sécurité & conformité](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center)) :<br/>-Administrateur général <br/>-Administrateur de la sécurité<br/>-Lecteur de sécurité <br/>--- et ---<br/>-Rechercher et purger (ce rôle est affecté uniquement dans le [Centre de sécurité & conformité](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center). Vous devrez peut-être créer un groupe de rôles à cet emplacement et ajouter le rôle de recherche et de purge à ce nouveau groupe de rôles.)
 
 ## <a name="next-steps"></a>Étapes suivantes
 

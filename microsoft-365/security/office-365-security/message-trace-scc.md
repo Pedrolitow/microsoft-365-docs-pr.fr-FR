@@ -11,27 +11,27 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 3e64f99d-ac33-4aba-91c5-9cb4ca476803
 description: Les administrateurs peuvent utiliser le suivi des messages dans le centre de sécurité & conformité afin de déterminer ce qui s’est passé aux messages.
-ms.openlocfilehash: 463e4ee5b99b1aaf34c91fc9b8976547a6c2edbd
-ms.sourcegitcommit: cf07dfccec476ac2526a6171ec6b6365686f759f
+ms.openlocfilehash: 12600eeb5242f0de5fc187be81b9311d4f9cb645
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/29/2020
-ms.locfileid: "42341265"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635315"
 ---
 # <a name="message-trace-in-the-security--compliance-center"></a>Suivi des messages dans le centre de conformité et de sécurité
 
 ## <a name="overview"></a>Vue d’ensemble
 
-Le suivi des messages dans le centre de sécurité & conformité Office 365 suit les messages électroniques échangés via votre organisation Exchange Online. Vous pouvez déterminer si un message a été reçu, rejeté, différé ou remis par le service. Cela indique également les actions entamées par rapport au message avant qu'il atteigne son statut final.
+Le suivi des messages dans le centre de sécurité & conformité suit les messages électroniques échangés via votre organisation Exchange Online. Vous pouvez déterminer si un message a été reçu, rejeté, différé ou remis par le service. Cela indique également les actions entamées par rapport au message avant qu'il atteigne son statut final.
 
 Le suivi des messages dans le centre de sécurité & conformité améliore le suivi du message d’origine qui était disponible dans le centre d’administration Exchange. Vous pouvez utiliser les informations du suivi des messages pour répondre efficacement aux questions de l’utilisateur sur ce qui s’est passé aux messages, résoudre les problèmes de flux de messagerie et valider les modifications de stratégie.
 
 > [!NOTE]
-> • Pour effectuer un suivi des messages, vous devez être membre des groupes de rôles gestion de l’organisation, gestion de la conformité ou support technique. Pour plus d’informations, consultez [la rubrique autorisations dans le centre de conformité & Office 365 Security](permissions-in-the-security-and-compliance-center.md). <br/><br/>• Le nombre maximal de messages affichés dans les résultats dépend du type de rapport que vous avez sélectionné (pour plus d’informations, reportez-vous à la section [choisir le type de rapport](#choose-report-type) ). La cmdlet [Get-HistoricalSearch](https://docs.microsoft.com/powershell/module/exchange/reporting/get-historicalsearch) dans Exchange Online PowerShell ou Exchange Online Protection PowerShell renvoie tous les messages dans les résultats.
+> * Pour effectuer un suivi des messages, vous devez être membre des groupes de rôles gestion de l’organisation, gestion de la conformité ou support technique. Pour en savoir plus, consultez [Autorisations dans le Centre de sécurité et de conformité](permissions-in-the-security-and-compliance-center.md). <br/><br/>* Le nombre maximal de messages affichés dans les résultats dépend du type de rapport que vous avez sélectionné (pour plus d’informations, consultez la section [choisir le type de rapport](#choose-report-type) ). La cmdlet [Get-HistoricalSearch](https://docs.microsoft.com/powershell/module/exchange/reporting/get-historicalsearch) dans Exchange Online PowerShell ou Exchange Online Protection PowerShell renvoie tous les messages dans les résultats.
 
 ## <a name="open-message-trace"></a>Ouvrir le suivi des messages
 
-1. Ouvrez le centre de sécurité & conformité Office 365 <https://protection.office.com>à l’adresse.
+1. Ouvrez le centre de sécurité & conformité <https://protection.office.com>à l’adresse.
 
 2. Développez **flux de messagerie**, puis sélectionnez **suivi des messages**.
 
@@ -102,11 +102,11 @@ Vous pouvez laisser la valeur par défaut **tous** sélectionnée ou vous pouvez
 
 **Remarque**: les valeurs **en attente,** **mises en quarantaine**et **filtrées en tant que courrier indésirable** sont uniquement disponibles pour les recherches de moins de 10 jours. De plus, il peut y avoir un délai de 5 à 10 minutes entre l’état de remise réel et signalé.
 
-#### <a name="message-id"></a>ID du message
+#### <a name="message-id"></a>ID de message
 
 Il s’agit de l’ID de message Internet (également appelé ID de client) qui se trouve dans le champ d’en-tête **message-ID :** dans l’en-tête du message. Les utilisateurs peuvent vous donner cette valeur pour examiner des messages spécifiques.
 
-Cette valeur est constante pendant toute la durée de vie du message. Pour les messages créés dans Office 365 ou Exchange, la valeur est au format `<GUID@ServerFQDN>`, y compris les chevrons\< \>(). Par exemple, `<d9683b4c-127b-413a-ae2e-fa7dfb32c69d@DM3NAM06BG401.Eop-nam06.prod.protection.outlook.com>`. D’autres systèmes de messagerie peuvent utiliser des valeurs ou une syntaxe différentes. Cette valeur est supposée unique, mais tous les systèmes de courrier ne respectent pas strictement cette exigence. Si le champ d’en-tête **message-ID :** n’existe pas ou est vide pour les messages entrants provenant de sources externes, une valeur arbitraire est assignée.
+Cette valeur est constante pendant toute la durée de vie du message. Pour les messages créés dans Microsoft 365 ou Exchange, la valeur est au format `<GUID@ServerFQDN>`, y compris les chevrons\< \>(). Par exemple, `<d9683b4c-127b-413a-ae2e-fa7dfb32c69d@DM3NAM06BG401.Eop-nam06.prod.protection.outlook.com>`. D’autres systèmes de messagerie peuvent utiliser des valeurs ou une syntaxe différentes. Cette valeur est supposée unique, mais tous les systèmes de courrier ne respectent pas strictement cette exigence. Si le champ d’en-tête **message-ID :** n’existe pas ou est vide pour les messages entrants provenant de sources externes, une valeur arbitraire est assignée.
 
 Lorsque vous utilisez l' **ID de message** pour filtrer les résultats, veillez à inclure la chaîne complète, y compris tous les chevrons.
 
@@ -346,7 +346,7 @@ Une valeur de **custom_data** commençant par `S:SFA` provient de l’agent de f
 |`DI=SO`|Le message a été routé via le pool de remises à haut risque. Pour plus d’informations, consultez la rubrique [pool de remise à haut risque pour les messages sortants](high-risk-delivery-pool-for-outbound-messages.md).|
 |`SFS=[a]|SFS=[b]`|Cela indique que des règles anti-spam ont été associées.|
 |`IPV=CAL`|Le message n’a pas été bloqué par les filtres anti-spam car l’adresse IP se trouve dans une liste d’adresses IP autorisées du filtre des connexions.|
-|`H=<EHLOstring>`|La chaîne HELO ou EHLO du serveur de messagerie de connexion.|
+|`H=<EHLOstring>`|Chaîne HELO ou EHLO du serveur de courrier de connexion.|
 |`PTR=<ReverseDNS>`|Enregistrement PTR de l'adresse IP d'envoi, également appelé adresse DNS inverse.|
 
 Voici un exemple **custom_data** valeur pour un message qui est filtré pour le courrier indésirable comme suit :
@@ -385,7 +385,7 @@ Une valeur de **custom_data** commençant par`S:TRA` provient de l’agent de r�
 |`ETR|ruleId=<guid>`|ID de la règle qui s'applique.|
 |`St=<datetime>`|Date et heure UTC de la correspondance de la règle.|
 |`Action=<ActionDefinition>`|Action appliquée. Pour obtenir la liste des actions disponibles, consultez la rubrique [mail Flow Rule actions in Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions).|
-|`Mode=<Mode>`|Mode de la règle. Les valeurs valides sont les suivantes : <br/>• **Appliquer**: toutes les actions de la règle seront appliquées. <br/>• **Test avec conseils de stratégie :**: toutes les actions de Conseil de stratégie seront envoyées, mais les autres actions d’application ne seront pas traitées. <br/>• **Test sans conseils de stratégie**: les actions seront consignées dans un fichier journal, mais les expéditeurs ne recevront aucune notification et les actions d’application ne seront pas effectuées.|
+|`Mode=<Mode>`|Mode de la règle. Les valeurs valides sont les suivantes : <br/>* **Appliquer**: toutes les actions de la règle seront appliquées. <br/>* **Test avec conseils de stratégie :**: toutes les actions de Conseil de stratégie seront envoyées, mais les autres actions d’application ne seront pas traitées. <br/>* **Test sans conseils de stratégie**: les actions seront consignées dans un fichier journal, mais les expéditeurs ne recevront aucune notification et les actions d’application ne seront pas effectuées.|
 
 Un exemple **custom_data** valeur pour les messages qui correspondent aux conditions d’une règle de flux de messagerie se présente comme suit :
 

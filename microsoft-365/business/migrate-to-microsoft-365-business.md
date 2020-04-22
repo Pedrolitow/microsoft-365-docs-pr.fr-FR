@@ -1,5 +1,5 @@
 ---
-title: Mise à niveau vers Microsoft 365 entreprise à partir d’Office 365 Business Premium
+title: Mise à niveau vers Microsoft 365 Business Premium de Microsoft 365 Business standard
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -22,35 +22,35 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 5b4ba843-24b8-4526-8e1f-f9b9eab89d06
-description: Découvrez la différence entre Office 365 Business Premium et Microsoft 365 Business et comment vous pouvez effectuer une mise à niveau vers Microsoft 365 Business.
-ms.openlocfilehash: 2ec77d96bef288bd33e4f67b74f91550f388a2c1
-ms.sourcegitcommit: 217de0fc54cbeaea32d253f175eaf338cd85f5af
+description: Découvrez la différence entre Microsoft 365 Business standard et Microsoft 365 Business Premium et découvrez comment effectuer une mise à niveau vers Microsoft 365 Business Premium.
+ms.openlocfilehash: 83bdf3a770acae222dd80c5798228e67cce56e57
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42561417"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43633156"
 ---
-# <a name="upgrade-to-microsoft-365-business-from-office-365-business-premium"></a>Mise à niveau vers Microsoft 365 entreprise à partir d’Office 365 Business Premium
+# <a name="upgrade-to-microsoft-365-business-premium-from-microsoft-365-business-standard"></a>Mise à niveau vers Microsoft 365 Business Premium de Microsoft 365 Business standard
 
-Si vous disposez d’un [abonnement office 365 pour les entreprises](https://products.office.com/compare-all-microsoft-office-products-4-column?activetab=tab:primaryr2), par exemple, Office 365 Business Premium, vous pouvez facilement effectuer une mise à niveau vers Microsoft 365 Business. Effectuez une mise à niveau vers Microsoft 365 Business si vous voulez ajouter : 
+Si vous disposez d’un [abonnement microsoft 365 pour les entreprises](https://products.office.com/compare-all-microsoft-office-products-4-column?activetab=tab:primaryr2), par exemple Microsoft 365 Business standard, vous pouvez facilement effectuer une mise à niveau vers Microsoft 365 Business Premium. Effectuez une mise à niveau vers Microsoft 365 Business Premium si vous voulez ajouter : 
 - Windows 10 professionnel (vers des PC exécutant Windows 8 ou version ultérieure)
 - Contrôles simples qui gèrent les données métiers sur les appareils
 - Fonctionnalités de sécurité avancées.
-En savoir plus sur Microsoft 365 Business at [Microsoft.com](https://www.microsoft.com/microsoft-365/business)
+En savoir plus sur Microsoft 365 Business Premium sur [Microsoft.com](https://www.microsoft.com/microsoft-365/business)
 
-## <a name="whats-the-difference-between-office-365-business-premium-and-microsoft-365-business"></a>Quelle est la différence entre Office 365 Business Premium et Microsoft 365 Business ?
-Nous avons ajouté une comparaison côte à côte de ces deux plans à la description du [service d’entreprise Microsoft 365](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-business-service-description). 
+## <a name="whats-the-difference-between-microsoft-365-business-standard-and-microsoft-365-business-premium"></a>Quelle est la différence entre Microsoft 365 Business standard et Microsoft 365 Business Premium ?
+Nous avons ajouté une comparaison côte à côte de ces deux plans à la description du [service Business Premium de Microsoft 365](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-business-service-description). 
 
 ## <a name="before-you-get-started"></a>Avant de commencer
 
-- **Quand dois-je choisir de procéder à la mise à niveau ?** La mise à niveau est le bon choix lorsque vous souhaitez mettre à niveau **tous les utilisateurs** affectés à une seule offre. Lorsque vous choisissez mise à niveau, tous les utilisateurs de plan sont passés à un autre plan en même temps. Si vous ne souhaitez pas mettre à niveau tout le monde affecté à une seule offre, achetez des licences pour le nouveau plan (dans ce cas Microsoft 365 Business) et [affectez ces licences individuellement](https://docs.microsoft.com/office365/admin/manage/assign-licenses-to-users) à chaque utilisateur que vous souhaitez mettre à niveau. 
+- **Quand dois-je choisir de procéder à la mise à niveau ?** La mise à niveau est le bon choix lorsque vous souhaitez mettre à niveau **tous les utilisateurs** affectés à une seule offre. Lorsque vous choisissez mise à niveau, tous les utilisateurs de plan sont passés à un autre plan en même temps. Si vous ne souhaitez pas mettre à niveau tout le monde affecté à une seule offre, achetez des licences pour le nouveau plan (dans ce cas Microsoft 365 Business Premium) et [affectez ces licences individuellement](https://docs.microsoft.com/office365/admin/manage/assign-licenses-to-users) à chaque utilisateur que vous souhaitez mettre à niveau. 
 - **Certains modules complémentaires peuvent empêcher la mise à niveau** Si vous essayez de démarrer une mise à niveau et que vous disposez d’un module complémentaire qui vous empêche de continuer, vous pouvez supprimer d’abord le module complémentaire, puis le rajouter ultérieurement si vous en avez besoin. 
 - **Si vous avez prépayé votre forfait** Il n’existe pas de mise à niveau simple pour les forfaits prépayés. Vous saurez si vous disposez d’un forfait prépayé car vous avez configuré votre plan à l’aide d’un ID de produit que vous avez peut-être acheté dans un magasin. Contactez un partenaire, accédez au Microsoft Store ou patientez jusqu’à ce que votre plan prépayé expire pour passer à un nouveau plan.
 
-## <a name="upgrade-to-microsoft-365-business"></a>Mise à niveau vers Microsoft 365 Business
+## <a name="upgrade-to-microsoft-365-business-premium"></a>Mise à niveau vers Microsoft 365 Business Premium
 Pour acheter vos licences, procédez comme suit dans le [nouveau centre d’administration](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview):
 1. Connectez-vous au centre d' <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>administration à l’adresse.
-2. Accédez au volet de navigation et sélectionnez produits de **facturation** \> **& services**. Recherchez votre abonnement Office 365 et sélectionnez-le pour afficher les détails. 
+2. Accédez au volet de navigation et sélectionnez produits de **facturation** \> **& services**. Recherchez votre abonnement et sélectionnez-le pour afficher les détails. 
 
     ![Une capture d’écran montre comment rechercher et sélectionner votre abonnement dans le centre d’administration.](../media/FindYourSubscription.png)
 
@@ -61,7 +61,7 @@ Pour acheter vos licences, procédez comme suit dans le [nouveau centre d’admi
   > [!NOTE]
   > Si vous voyez un message indiquant que **la mise à niveau de votre abonnement n’est pas prise en charge avec la gestion des licences basée sur les groupes dans Azure Active Directory**, vous pouvez l’ignorer en toute sécurité, sauf si vous disposez d’une organisation très importante. Les organisations qui ont sélectionné cette option seront conscientes de l’utilisation d’une licence basée sur les groupes.
 
-4. Ensuite, vous pouvez afficher la liste des plans Office vers lesquels vous pouvez effectuer une mise à niveau. Dans ce cas, recherchez le forfait Microsoft 365 Business. Vous pouvez faire défiler vers le bas si vous souhaitez voir tous les services et applications Office inclus dans ce plan. Sous **microsoft 365 entreprise**, sélectionnez **mettre à niveau** pour ajouter Microsoft 365 entreprise à votre panier.
+4. Ensuite, vous pouvez afficher la liste des plans Office vers lesquels vous pouvez effectuer une mise à niveau. Dans ce cas, recherchez le forfait Microsoft 365 Business Premium. Vous pouvez faire défiler vers le bas si vous souhaitez voir tous les services et applications Office inclus dans ce plan. Sous **microsoft 365 Business Premium**, sélectionnez **mise à niveau** pour ajouter Microsoft 365 Business Premium à votre panier.
 5. Dans le panier :
     1. Nous inclurons automatiquement les licences pour tous vos utilisateurs actuels. Si vous avez besoin de plus ou moins de licences, vous devez [acheter et attribuer ces licences individuellement](https://docs.microsoft.com/office365/admin/manage/assign-licenses-to-users).  
     2. Vous pouvez modifier la façon dont vous souhaitez payer : tous les mois ou tous les ans. Sélectionnez le menu déroulant pour effectuer votre choix.
@@ -71,13 +71,13 @@ Microsoft met en place quelques minutes pour configurer vos nouveaux plans de se
 1. Une fois que votre plan est prêt, vous devrez peut-être effectuer certaines étapes de configuration supplémentaires dans le centre d’administration. Dans le volet de navigation, sélectionnez **Accueil** pour effectuer les étapes de configuration supplémentaires.
 
 > [!NOTE]
-> Vous recevrez un remboursement proversement pour les licences Office 365 dont vous n’avez plus besoin. Votre compte bancaire ou votre carte de crédit sera débité d’environ deux jours après avoir configuré le nouveau plan.
+> Vous recevrez un remboursement calculé au prorata pour les licences Microsoft 365 dont vous n’avez plus besoin. Votre compte bancaire ou votre carte de crédit sera débité d’environ deux jours après avoir configuré le nouveau plan.
   
 ## <a name="protect-user-devices-and-files"></a>Protéger les appareils et les fichiers des utilisateurs
 
-Maintenant que les licences professionnelles de Microsoft 365 ont été attribuées, suivez les étapes pour commencer à protéger les appareils et les fichiers. Vous allez utiliser certaines nouvelles options incluses dans le volet de navigation du centre d’administration.
+Maintenant que les licences Microsoft 365 Business Premium ont été attribuées, suivez les étapes pour commencer à protéger les appareils et les fichiers. Vous allez utiliser certaines nouvelles options incluses dans le volet de navigation du centre d’administration.
   
-1. Dans le volet de navigation du centre d’administration, accédez à **** \> **stratégies**de périphériques.
+1. Dans le volet de navigation du centre d’administration, accédez à **Devices** \> **stratégies**de périphériques.
     
 2. Sur la page **stratégies d’appareil** , sélectionnez **Ajouter**.
     
@@ -96,6 +96,6 @@ Maintenant que les licences professionnelles de Microsoft 365 ont été attribu�
     
   - Si vos appareils Windows ne sont pas déjà en cours d’utilisation par la mise à jour du créateur Windows professionnel, vous devrez [les mettre à niveau vers Windows Pro Creators Update](upgrade-to-windows-pro-creators-update.md).
     
-  - Consultez la rubrique [configurer des appareils Windows pour les utilisateurs professionnels de Microsoft 365 pour les](set-up-windows-devices.md) étapes des appareils Windows. 
+  - Consultez la rubrique [configurer des appareils Windows pour les utilisateurs de Microsoft 365 Business Premium](set-up-windows-devices.md) pour connaître les étapes des appareils Windows. 
     
-  - Pour plus d’informations sur les téléphones Android et les iPhone, consultez la rubrique [configurer des appareils mobiles pour les utilisateurs professionnels de Microsoft 365](set-up-mobile-devices.md) . 
+  - Consultez la rubrique [configurer des appareils mobiles pour les utilisateurs de Microsoft 365 Business Premium](set-up-mobile-devices.md) pour connaître les étapes des téléphones Android et des iPhone. 

@@ -11,26 +11,26 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
 description: Les administrateurs peuvent en savoir plus sur la rubrique Fix sender Domain Insight dans le tableau de bord du flux de messagerie dans le centre de sécurité & Compliance Center.
-ms.openlocfilehash: 2db1b971ef39f8b207b349ca53237ff87cc9193e
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: a416b4d15ff52a611f00a88de8440c749ff08ad3
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42082562"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635171"
 ---
 # <a name="fix-sender-domain-insight"></a>Informations sur la correction du domaine de l’expéditeur
 
-Office 365 nécessite des messages envoyés depuis des environnements de messagerie internes locaux vers Office 365 pour répondre à certains critères de sécurité :
+Microsoft 365 nécessite des messages envoyés à partir d’environnements de messagerie internes locaux à Microsoft 365 pour répondre à certains critères de sécurité :
 
-- Vous avez créé un connecteur entrant dans Office 365 pour authentifier les connexions SMTP à partir de votre serveur de messagerie local à l’aide de l’adresse IP source ou d’un certificat.
+- Vous avez créé un connecteur entrant dans Microsoft 365 pour authentifier les connexions SMTP à partir de votre serveur de messagerie local à l’aide de l’adresse IP source ou d’un certificat.
 
-- Vous avez configuré votre serveur de messagerie local de sorte qu’il relaie le courrier électronique via Office 365 vers un environnement externe.
+- Vous avez configuré votre serveur de messagerie local de sorte qu’il relaie le courrier électronique via Microsoft 365 vers le monde externe.
 
 - Dans votre configuration, l’une des affirmations suivantes est vraie :
 
-  - Le domaine de messagerie de l’expéditeur est enregistré dans votre organisation Office 365. Pour plus d’informations, consultez la rubrique ajouter des domaines dans Office 365.
+  - Le domaine de messagerie de l’expéditeur est enregistré dans votre organisation. Pour plus d’informations, consultez la rubrique ajouter des domaines dans Office 365.
 
-  - Votre serveur de messagerie local est configuré pour utiliser un certificat pour envoyer des courriers électroniques à Office 365, le certificat contient ou correspond exactement à un nom de domaine que vous avez enregistré dans Office 365 et vous avez créé un connecteur basé sur un certificat dans Office 365 avec ce domaine. 
+  - Votre serveur de messagerie local est configuré pour utiliser un certificat pour envoyer un message électronique à Microsoft 365, le certificat contient ou correspond exactement à un nom de domaine que vous avez enregistré dans Microsoft 365, et vous avez créé un connecteur basé sur un certificat dans Microsoft 365 avec ce domaine. 
 
 Les messages qui ne répondent pas aux critères ne sont pas attribués à l’organisation et peuvent être rejetés.
 
@@ -46,6 +46,6 @@ Vous verrez le connecteur entrant qui a été utilisé pour livrer les messages 
 
 ![Afficher des exemples d’ID de message dans la fenêtre Fix sender Domain Insight](../../media/sender-domain-view-sample-message-ids.png)
 
-## <a name="see-also"></a>Voir aussi
+## <a name="see-also"></a>Voir également
 
 Pour plus d’informations sur les autres flux de messagerie dans le tableau de bord de flux de messagerie, voir [mail Flow Insights in the Security & Compliance Center](mail-flow-insights-v2.md).

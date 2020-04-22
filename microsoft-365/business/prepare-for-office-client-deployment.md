@@ -1,5 +1,5 @@
 ---
-title: Se préparer pour le déploiement du client Office par Microsoft 365 Entreprise
+title: Préparer le déploiement de clients Office par Microsoft 365 pour les entreprises
 f1.keywords:
 - CSH
 ms.author: sirkkuw
@@ -21,18 +21,18 @@ search.appverid:
 - MET150
 ms.assetid: ed34fff3-2881-4ed4-9906-1ba6bb8dd804
 description: Découvrez comment installer automatiquement les applications Office 32 bits sur les ordinateurs Windows 10 et les maintenir à jour.
-ms.openlocfilehash: 0f8cd7df49ad627b190fad6737ec95a6d64d99d0
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: b5f01bc9bb10765929f3c6bdd5908e8b48a51a11
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42065100"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43633096"
 ---
-# <a name="prepare-for-office-client-deployment-by-microsoft-365-business"></a>Se préparer pour le déploiement du client Office par Microsoft 365 Entreprise
+# <a name="prepare-for-office-client-deployment-by-microsoft-365-for-business"></a>Préparer le déploiement de clients Office par Microsoft 365 pour les entreprises
 
 ## <a name="prepare-to-automatically-install-office-apps-to-client-computers"></a>Préparer l'installation automatique d'applications Office sur des ordinateurs clients
 
-Vous pouvez utiliser Microsoft 365 entreprise pour installer automatiquement les applications Office 32 bits sur les ordinateurs Windows 10 et les garder à jour avec les mises à jour.
+Vous pouvez utiliser Microsoft 365 pour entreprise pour installer automatiquement les applications Office 32 bits sur les ordinateurs Windows 10 et les garder à jour avec les mises à jour.
   
 L’installation automatique fonctionne mieux si l’ordinateur de l’utilisateur final est sur Windows 10 entreprise et :
   
@@ -50,15 +50,15 @@ Pour déterminer si vous possédez la version « Démarrer en un clic » d'Offic
   
 L'utilisateur final dont le PC :
   
-- **est associé** à une licence d'utilisateur Windows 10 Business activeMicrosoft 365 Entreprise, comprend Windows 10 Creators Update et est inscrit à Azure Active Directory ; 
+- **Dispose** d’une licence utilisateur Windows 10 Business, d’une licence Microsoft 365 pour les entreprises active, de Windows 10 Creators Update et est jointe à Azure Active Directory. 
     
-- **N’a pas** d’applications Office 64 bits (exemple : Word, Excel, PowerPoint). Si des applications Office 64 bits sont requises, cette fonctionnalité n’est pas adaptée, car il n’existe pas de prise en charge pour le déclenchement d’une version d’Office « démarrer en un clic » 64 2016 bits d’Office à partir de la console d’administration Microsoft 365 Business. 
+- **N’a pas** d’applications Office 64 bits (exemple : Word, Excel, PowerPoint). Si des applications Office 64 bits sont requises, cette fonctionnalité n’est pas adaptée, car il n’existe pas de prise en charge pour le déclenchement d’une version d’Office « démarrer en un clic » 64 2016 bits d’Office à partir de la console d’administration Microsoft 365 pour les entreprises. 
     
-- **ne comprend** aucune application autonome Windows Installer 2016 (MSI) (par exemple Visio ou Project). Microsoft 365 Business met à niveau Office vers la version « démarrer en un clic » d’Office 2016 et cela ne fonctionne pas avec les applications autonomes MSI Office 2016. 
+- **ne comprend** aucune application autonome Windows Installer 2016 (MSI) (par exemple Visio ou Project). Microsoft 365 for Business upgrades Office vers la version « démarrer en un clic » d’Office 2016 et qui ne fonctionne pas avec les applications autonomes MSI Office 2016. 
     
-Le tableau suivant indique les actions que les utilisateurs/administrateurs finaux peuvent avoir à effectuer, en fonction de leur état de démarrage, pour obtenir une version de déploiement d’Office « démarrer en un clic » de 32 bits à partir de la console d’administration Microsoft 365 Business.
+Le tableau suivant indique les actions que les utilisateurs/administrateurs finaux peuvent avoir à effectuer, en fonction de leur état de démarrage, pour obtenir une version de déploiement d’Office « démarrer en un clic » de 32 bits à partir de la console d’administration Microsoft 365 pour entreprises.
   
-|**Situation de départ à l'installation d'Office**|**Mesure à prendre avant d'installer Office Microsoft 365 Entreprise**|**État final**|
+|**Situation de départ à l'installation d'Office**|**Action à effectuer avant l’installation de Microsoft 365 pour Office Business**|**État final**|
 |:-----|:-----|:-----|
 |Aucune suite Office installée  <br/> |Aucun  <br/> |Office 2016 32 bits est installé à l’aide d’Office « démarrer en un clic »  <br/> |
 |Version 32 bits « Démarrer en un clic » d'Office présente (2016 ou versions antérieures) et aucune application autonome  <br/> |Aucun  <br/> |Mise à niveau vers la dernière version 32 bits « Démarrer en un clic » d'Office 2016, le cas échéant **\*** <br/> |

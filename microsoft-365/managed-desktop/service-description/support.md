@@ -1,17 +1,17 @@
 ---
 title: Prise en charge du bureau géré Microsoft
 description: ''
-keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
+keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 134e971e00fc64d3ea005d32ed95359ed8fb8feb
-ms.sourcegitcommit: 7ae0389cf06e2f481ee646556720ab3f3e93ea32
+ms.openlocfilehash: c68d12ccd339c863c2dd96b2a56cfaf19e604f79
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "38757661"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632000"
 ---
 # <a name="support-for-microsoft-managed-desktop"></a>Prise en charge du bureau géré Microsoft
 
@@ -33,7 +33,7 @@ La prise en charge de Microsoft Managed Desktop inclut :
 Produits pris en charge :
 
 - Windows 10 avec Microsoft Defender-protection avancée contre les menaces 
-- Ces applications Office 365 ProPlus : Outlook, Word, PowerPoint, Excel, Skype entreprise client, Microsoft teams 
+- Ces applications Microsoft 365 apps pour les applications d’entreprise : Outlook, Word, PowerPoint, Excel, Skype entreprise client, Microsoft teams 
 - Microsoft Store pour Entreprises 
 - Client OneDrive entreprise 
 
@@ -45,7 +45,7 @@ Informations de support technique :
 - Les appareils de bureau gérés Microsoft dans le groupe « test » et les appareils qui ne font pas partie de Microsoft Managed Desktop ne sont pas concernés 
 
 
-## <a name="related-topics"></a>Sujets associés
+## <a name="related-topics"></a>Voir aussi
 
 - [Découvrez comment les administrateurs informatiques peuvent obtenir de l’aide](../working-with-managed-desktop/admin-support.md)
 - [Découvrez comment les utilisateurs finals peuvent obtenir de l’aide](../working-with-managed-desktop/end-user-support.md)

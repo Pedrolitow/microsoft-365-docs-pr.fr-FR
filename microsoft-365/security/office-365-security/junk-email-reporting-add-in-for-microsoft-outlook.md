@@ -14,12 +14,12 @@ ms.assetid: 4650fec1-4ee3-4659-abbc-bf091718cb26
 ms.collection:
 - M365-security-compliance
 description: Découvrez comment installer et utiliser le complément Microsoft Junk Email Reporting pour signaler les messages de courrier indésirable, de courrier indésirable et de hameçonnage à Microsoft.
-ms.openlocfilehash: e39fb2f4ecba806c2d26d989fbbe6ddec137adc1
-ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
+ms.openlocfilehash: be087a15071114b2d1ec564cbb118dcd85e32429
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/28/2020
-ms.locfileid: "43033907"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43638499"
 ---
 # <a name="install-and-use-the-junk-email-reporting-add-in-for-microsoft-outlook-in-office-365"></a>Installer et utiliser le complément de création de rapports de courrier indésirable pour Microsoft Outlook dans Office 365
 
@@ -37,7 +37,7 @@ Cette rubrique explique comment installer et utiliser le complément de créatio
 - Le complément de création de rapports de courrier indésirable fonctionne avec les versions suivantes d’Outlook :
 
   - Outlook 2013 ou une version ultérieure
-  - Outlook inclus avec Office 365 ProPlus
+  - Outlook inclus avec les applications Microsoft 365 pour les entreprises
 
 - Pour plus d’informations sur la création de rapports de messages à Microsoft, consultez la rubrique [signaler des messages et des fichiers à Microsoft dans Office 365](report-junk-email-messages-to-microsoft.md).
 

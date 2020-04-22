@@ -14,12 +14,12 @@ ms.collection:
 - commerce
 ms.custom: ''
 description: En savoir plus sur la nouvelle fonctionnalité unités.
-ms.openlocfilehash: 22f7c35b1a5baf97fb72f541d57da28adeeffbe4
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: d1f926165678b57ec46195d525f2fcdaa6976501
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41594685"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632412"
 ---
 # <a name="allotment-basics"></a>Notions de base sur les unités
 
@@ -33,7 +33,7 @@ Vous pouvez également déléguer la gestion de vos unités. Les propriétaires 
 
 Vous devez respecter les exigences en matière de licences pour les [licences basées sur les groupes](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal#licensing-requirements).
 
-Vous pouvez utiliser des unités avec n’importe quel produit Office 365 disponible pour les utilisateurs :
+Vous pouvez utiliser des unités avec n’importe quel produit accessible aux utilisateurs :
 
 - Suites Office et produits autonomes
 - Produits d’entreprise et de mobilité

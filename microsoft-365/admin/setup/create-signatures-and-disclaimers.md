@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 2d75860f-c527-4352-a7f6-73eba54c0c72
 description: Apprenez à ajouter une signature électronique, une clause d’exclusion de responsabilité ou une déclaration de divulgation à tous les messages électroniques qui entrent ou sortent de votre organisation.
-ms.openlocfilehash: a63f21dff90c70d39e3709d4c34b53d99a315a59
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: affd091f951b81541214b4f98c414b5cd4675cd3
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42360665"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631976"
 ---
 # <a name="create-organization-wide-signatures-and-disclaimers"></a>Créer des signatures à l’échelle de l’organisation et des clauses d’exclusion de responsabilité
 
@@ -62,9 +62,9 @@ Accédez au Centre d’administration à l’adresse <a href="https://go.microso
 
 ::: moniker-end
 
-1. Sélectionnez l’icône ![du lanceur d’applications dans le lanceur d’applications dans Office 365](../../media/7502f4ec-3c9a-435d-a7b4-b9cda85189a7.png), puis sélectionnez **administrateur**.
+1. Sélectionnez le lanceur ![d’applications icône](../../media/7502f4ec-3c9a-435d-a7b4-b9cda85189a7.png)du lanceur d’applications, puis sélectionnez **administrateur**.
    
-    Vous ne trouvez pas l’application que vous cherchez ? Dans le Lanceur d’applications, sélectionnez **Toutes les applications** pour afficher une liste alphabétique des applications Office 365 disponibles. À partir de là, vous pouvez rechercher une application spécifique. 
+    Vous ne trouvez pas l'application que vous cherchez ? Dans le lanceur d’applications, sélectionnez **toutes les applications** pour afficher une liste alphabétique des applications disponibles. À partir de là, vous pouvez rechercher une application spécifique. 
     
 2. Sélectionnez **centres d’administration**, puis **Exchange**.
     
@@ -77,14 +77,14 @@ Accédez au Centre d’administration à l’adresse <a href="https://go.microso
 6. Sous **appliquer cette règle**, sélectionnez **[appliquer à tous les messages]**.
     
     > [!TIP]
-    > [Découvrez-en plus](https://docs.microsoft.com/Exchange/policy-and-compliance/mail-flow-rules/signatures#Scoping) sur l'application de conditions si vous ne souhaitez pas appliquer l'exclusion de responsabilité à tous les messages. (Cet article de portée est destiné à Exchange Server, mais il s’applique également à Office 365.) 
+    > [Découvrez-en plus](https://docs.microsoft.com/Exchange/policy-and-compliance/mail-flow-rules/signatures#Scoping) sur l'application de conditions si vous ne souhaitez pas appliquer l'exclusion de responsabilité à tous les messages. (Cet article de portée est destiné à Exchange Server, mais il s’applique également à Microsoft 365.) 
   
 7. Sous Effectuer les opérations suivantes, laissez **Ajouter l'exclusion de responsabilité** sélectionné. 
     
 8.  Sélectionnez **entrer le texte** et tapez votre clause d’exclusion de responsabilité. 
     
     > [!TIP]
-    > [Découvrez-en plus](https://docs.microsoft.com/Exchange/policy-and-compliance/mail-flow-rules/signatures#FormatDisclaimer) sur la mise en forme des exclusions de responsabilité. (Cet article de mise en forme est destiné à Exchange Server, mais il s’applique également à Office 365.) 
+    > [Découvrez-en plus](https://docs.microsoft.com/Exchange/policy-and-compliance/mail-flow-rules/signatures#FormatDisclaimer) sur la mise en forme des exclusions de responsabilité. (Cet article de mise en forme est destiné à Exchange Server, mais il s’applique également à Microsoft 365.) 
 
 9. Sélectionnez **Sélectionner un** et sélectionnez **renvoyer** en tant qu’option de secours. Sélectionnez **OK**. Ainsi, si l'exclusion de responsabilité ne peut pas être ajoutée parce que le chiffrement ou un autre paramètre de courrier est activé, elle sera encapsulée dans une enveloppe du message.
     
@@ -96,9 +96,9 @@ Accédez au Centre d’administration à l’adresse <a href="https://go.microso
     
 13. Sélectionnez **Enregistrer** lorsque vous avez terminé. 
     
-## <a name="limitations-of-office-365-organization-wide-signatures"></a>Limitations des signatures larges de l’organisation Office 365
+## <a name="limitations-of-organization-wide-signatures"></a>Limitations des signatures à l’échelle de l’Organisation
 
-Vous ne pouvez pas effectuer les opérations suivantes avec les signatures Office 365 :
+Vous ne pouvez pas effectuer les opérations suivantes avec les signatures Microsoft 365 :
   
 - Insérer la signature directement sous la dernière adresse de courrier ou de transfert
     
@@ -112,6 +112,6 @@ Pour bénéficier de ces fonctionnalités et d’autres fonctionnalités, utilis
   
 ## <a name="more-resources"></a>Autres ressources
 
-- Pour plus d’informations sur l’utilisation de PowerShell, consultez la rubrique relative aux [clauses d’exclusion de responsabilité, signatures, pieds de page ou en-têtes de message à l’échelle de l’organisation dans Office 365](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/disclaimers-signatures-footers-or-headers) . 
+- Pour plus d’informations sur l’utilisation de PowerShell, consultez la rubrique relative aux [clauses d’exclusion de responsabilité, signatures, pieds de page ou en-têtes de message à l’échelle de l’organisation dans Microsoft 365](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/disclaimers-signatures-footers-or-headers) . 
     
 

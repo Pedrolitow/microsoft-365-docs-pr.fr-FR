@@ -1,5 +1,5 @@
 ---
-title: Détecter et résoudre les attaques d’injections de formulaires personnalisés et de règles Outlook dans Office 365
+title: Détecter et résoudre les attaques d’injections de formulaires personnalisés et de règles Outlook
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -16,14 +16,14 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: Découvrez comment reconnaître et corriger les attaques d’injections de formulaires personnalisés et de règles Outlook dans Office 365
-ms.openlocfilehash: c15eeb057d14cbb252bda0767a15e7c4788ece9f
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 71f796f589157a8eb801af3da78d67d16534447b
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599441"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637591"
 ---
-# <a name="detect-and-remediate-outlook-rules-and-custom-forms-injections-attacks-in-office-365"></a>Détecter et résoudre les attaques par injections sur les règles d’Outlook et les formulaires personnalisés dans Office 365
+# <a name="detect-and-remediate-outlook-rules-and-custom-forms-injections-attacks"></a>Détecter et résoudre les attaques d’injections de formulaires personnalisés et de règles Outlook
 
 **Résumé** Découvrez comment reconnaître et corriger les attaques d’injections de formulaires personnalisés et de règles Outlook dans Office 365.
 
@@ -164,7 +164,7 @@ Si vous trouvez des preuves de l’une de ces attaques, la correction est simple
 
 4. Installez les versions les plus à jour d’Outlook. N’oubliez pas que la version actuelle d’Outlook bloque les deux types de cette attaque par défaut.
 
-5. Une fois que toutes les copies hors connexion de la boîte aux lettres ont été supprimées, réinitialisez le mot de passe de l’utilisateur (utilisez une qualité élevée) et suivez les étapes décrites dans [setup multi-Factor Authentication for Office 365 Users](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication) si MFA n’a pas encore été activé. Cela permet de s’assurer que les informations d’identification de l’utilisateur ne sont pas exposées par d’autres moyens (par exemple, le hameçonnage ou la réutilisation du mot de passe).
+5. Une fois que toutes les copies hors connexion de la boîte aux lettres ont été supprimées, réinitialisez le mot de passe de l’utilisateur (utilisez une qualité élevée) et suivez les étapes de l’option [d’authentification multifacteur pour les utilisateurs](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication) si MFA n’a pas encore été activé. Cela permet de s’assurer que les informations d’identification de l’utilisateur ne sont pas exposées par d’autres moyens (par exemple, le hameçonnage ou la réutilisation du mot de passe).
 
 ### <a name="using-powershell"></a>Utiliser PowerShell
 
@@ -192,7 +192,7 @@ Il existe deux cmdlets PowerShell à distance que vous pouvez utiliser pour supp
 
 Les attaques de formulaires et de règles sont utilisées uniquement par un agresseur après avoir volé ou enfreint un des comptes de vos utilisateurs. Par conséquent, la première étape pour empêcher l’utilisation de ces exploits auprès de votre organisation consiste à protéger activement vos comptes d’utilisateur. Les attaques par hameçonnage ou par [pulvérisation de mot de passe](https://www.dabcc.com/microsoft-defending-against-password-spray-attacks/) constituent certaines des méthodes de violation des comptes les plus courantes.
 
-La meilleure façon de protéger vos comptes d’utilisateur, et en particulier vos comptes administrateur, est de [configurer l’authentification multifacteur pour les utilisateurs d’Office 365](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication). Vous devez également :
+La meilleure façon de protéger vos comptes d’utilisateur, et en particulier vos comptes administrateur, est de [configurer l’authentification multifacteur pour les utilisateurs](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication). Vous devez également :
 
 - Surveillez le mode d' [accès et d’utilisation](https://docs.microsoft.com/azure/active-directory/active-directory-view-access-usage-reports)de vos comptes d’utilisateur. Vous n’êtes pas autorisé à empêcher la violation initiale, mais vous réduisez la durée et l’impact de la violation en la détectant plus tôt. Vous pouvez utiliser ces [stratégies Office 365 Cloud App Security](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security) pour surveiller les comptes et alerter les activités inhabituelles :
 
@@ -234,9 +234,9 @@ Recherchez la clé EnableUnsafeClientMailRules. S’il est présent et qu’il e
 
 Les clients disposant d’installations Exchange locales doivent envisager de bloquer les anciennes versions d’Outlook qui n’ont pas de correctifs disponibles. Pour plus d’informations sur ce processus, voir l’article [configurer le blocage du client Outlook](https://docs.microsoft.com/exchange/configure-outlook-client-blocking-exchange-2013-help).
 
-## <a name="secure-office-365-like-a-cybersecurity-pro"></a>Sécuriser Office 365 comme un pro de la cyber-sécurité
+## <a name="secure-microsoft-365-like-a-cybersecurity-pro"></a>Sécurisation de Microsoft 365 comme un Cybersecurity Pro
 
-Votre abonnement Office 365 inclut un ensemble puissant de fonctionnalités de sécurité que vous pouvez utiliser pour protéger vos données et vos utilisateurs. Utilisez la [Feuille de route pour sécuriser Office 365 : principales priorités pour les 30 premiers jours, 90 premiers jours et au-delà](security-roadmap.md), pour implémenter les meilleures pratiques recommandées par Microsoft pour sécuriser votre client Office 365.
+Votre abonnement Microsoft 365 est fourni avec un ensemble de fonctionnalités de sécurité puissantes que vous pouvez utiliser pour protéger vos données et vos utilisateurs. Utilisez la feuille de [route de sécurité microsoft 365-priorités principales pour les 30 jours, 90 jours et au-delà](security-roadmap.md) pour implémenter les meilleures pratiques recommandées par Microsoft pour la sécurisation de votre client Microsoft 365.
 
 - Tâches à effectuer lors des 30 premiers jours. Elle ont un effet immédiat et n’ont qu’un faible impact négatif sur vos utilisateurs.
 

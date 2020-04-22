@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 ms.assetid: 3384c6f1-ffc0-4120-a211-1991aca51663
 description: Découvrez comment afficher, modifier et gérer les planifications des rapports dans le centre &amp; de sécurité et de conformité.
-ms.openlocfilehash: 5ae6a37a04604ca814348ac42d80a57e3e171b6b
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: b7ccd7ddd766a1e109fb0363b56290020356946e
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42082867"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635327"
 ---
 # <a name="manage-schedules-for-multiple-reports-in-the-security-amp-compliance-center"></a>Gérer les planifications pour plusieurs rapports dans &amp; le centre de sécurité conformité
 
@@ -28,7 +28,7 @@ Dans le centre &amp; de sécurité conformité, plusieurs [rapports et](reports-
 ## <a name="manage-schedules-for-reports"></a>Gérer les planifications des rapports
 
 > [!IMPORTANT]
-> Assurez-vous que vous disposez des [autorisations nécessaires dans le centre de &amp; sécurité conformité Office 365](permissions-in-the-security-and-compliance-center.md). En règle générale, les administrateurs globaux Office 365, les administrateurs de la sécurité et les lecteurs de &amp; sécurité peuvent accéder aux rapports dans le centre de sécurité conformité. 
+> Assurez-vous que vous disposez des [autorisations nécessaires dans le &amp; Centre de sécurité conformité](permissions-in-the-security-and-compliance-center.md). En règle générale, les administrateurs généraux, les administrateurs de la sécurité et les lecteurs de sécurité &amp; peuvent accéder aux rapports dans le centre de sécurité conformité. 
   
 ![Dans le centre &amp; de sécurité conformité, choisissez \> rapports gérer les planifications](../../media/efa5e2f9-bf73-4f85-acea-f1ca7e2bca5e.png)
 
@@ -44,7 +44,7 @@ Dans le centre &amp; de sécurité conformité, plusieurs [rapports et](reports-
     
 ## <a name="related-topics"></a>Voir aussi
 
-[Rapports et informations dans le centre de sécurité &amp; conformité Office 365](reports-and-insights-in-security-and-compliance.md)
+[Rapports et Insights dans le centre de sécurité &amp; conformité](reports-and-insights-in-security-and-compliance.md)
   
 [Créer une planification pour un rapport dans le centre &amp; de sécurité conformité](create-a-schedule-for-a-report.md)
   

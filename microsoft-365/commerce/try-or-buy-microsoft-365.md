@@ -19,18 +19,18 @@ search.appverid:
 - MOE150
 ms.assetid: 9e8ceac6-8d20-4d28-837a-d766ae99cbd1
 description: Découvrez comment obtenir une version d’évaluation gratuite ou acheter un abonnement pour Microsoft 365.
-ms.openlocfilehash: 0b19a27b44aa62c65bb8dc5542337e106da2ddc5
-ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
+ms.openlocfilehash: f5c1fca9bfb7b0f2236981e335517c1e03b2007c
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43141622"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631904"
 ---
 # <a name="try-or-buy-a-microsoft-365-subscription"></a>Essayer ou acheter un abonnement Microsoft 365
 
 Microsoft 365 est une solution complète qui combine Office 365 et Windows 10 avec les fonctionnalités avancées de sécurité et de gestion des appareils. Si vous disposez déjà d’un abonnement et que vous souhaitez effectuer une évaluation ou acheter un abonnement Microsoft 365, la meilleure façon de le faire est d’utiliser le centre d’administration. Les abonnements Microsoft 365 suivants sont disponibles dans le centre d’administration pour que vous essayiez ou achetiez maintenant :
   
-- Microsoft 365 Business
+- Microsoft 365 Business Premium
 
 - Microsoft 365 Entreprise E3
 
@@ -41,6 +41,7 @@ Lorsque vous ajoutez un abonnement via le centre d’administration, le nouvel a
 ## <a name="try-or-buy-a-microsoft-365-subscription"></a>Essayer ou acheter un abonnement Microsoft 365
 
 ::: moniker range="o365-worldwide"
+
 
 1. Connectez-vous au centre d’administration [https://admin.microsoft.com](https://go.microsoft.com/fwlink/?linkid=2024339), puis accédez à **facturation** \> **Purchase services**.
 
@@ -67,13 +68,13 @@ Lorsque vous ajoutez un abonnement via le centre d’administration, le nouvel a
 
 11. Sur la page **bon de commande** , sélectionnez **Continuer**.
 
+
 ::: moniker-end
 
 ::: moniker range="o365-germany"
-
 1. Connectez-vous au centre d’administration [https://portal.office.de](https://go.microsoft.com/fwlink/?linkid=847686), puis accédez à **facturation** \> **Purchase services**.
 
-2. Sur la page **acheter des services** , les abonnements disponibles pour votre organisation sont répertoriés.
+2. Sur la page **acheter des services** , les abonnements disponibles pour votre organisation sont répertoriés. 
 
 3. Sélectionnez les ellipses sous le plan Microsoft 365 que vous souhaitez essayer ou acheter, puis sélectionnez Démarrer la **version d’évaluation gratuite**, qui vous donne 25 licences utilisateur pour un délai d’un mois, ou vous pouvez sélectionner **acheter maintenant**.
 
@@ -99,7 +100,6 @@ Lorsque vous ajoutez un abonnement via le centre d’administration, le nouvel a
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
-
 1. Connectez-vous au centre d’administration [https://portal.partner.microsoftonline.cn](https://go.microsoft.com/fwlink/?linkid=850628), puis accédez à **facturation** \> **Purchase services**.
 
 2. Sur la page **acheter des services** , les abonnements disponibles pour votre organisation sont répertoriés. 
@@ -127,14 +127,16 @@ Lorsque vous ajoutez un abonnement via le centre d’administration, le nouvel a
 
 ::: moniker-end
 
+
 ## <a name="next-steps"></a>Étapes suivantes
 
-Une fois que vous avez obtenu le nouvel abonnement, vous devez attribuer une licence aux utilisateurs qui utiliseront cet abonnement. Pour savoir comment procéder, consultez la rubrique [attribuer des licences aux utilisateurs](../admin/manage/assign-licenses-to-users.md).
+Une fois que vous avez obtenu le nouvel abonnement, vous devez attribuer une licence aux utilisateurs qui utiliseront cet abonnement. Pour savoir comment procéder, consultez la rubrique [attribuer des licences aux utilisateurs](../admin/manage/assign-licenses-to-users.md) .
 
 ## <a name="related-articles"></a>Articles connexes
 
-[Acheter un autre abonnement Office 365 pour les entreprises](buy-another-subscription.md)
+[Acheter un autre abonnement Microsoft 365 pour les entreprises](buy-another-subscription.md)
 
-[Acheter ou modifier un composant additionnel pour Office 365 pour les entreprises](buy-or-edit-an-add-on.md)
+[Acheter ou modifier un module complémentaire pour Microsoft 365 pour les entreprises](buy-or-edit-an-add-on.md)
 
 [Ajouter de l’espace de stockage pour votre abonnement](add-storage-space.md)
+

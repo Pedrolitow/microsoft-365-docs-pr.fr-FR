@@ -1,5 +1,5 @@
 ---
-title: Réactiver ou renouveler un abonnement Office 365 Entreprise
+title: Renouveler Microsoft 365 pour les entreprises
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -23,19 +23,19 @@ search.appverid:
 - BEA160
 - GEA150
 ms.assetid: 8d83b530-f4ca-47f6-a666-e5791cbacc7e
-description: 'Découvrez comment renouveler votre abonnement Office 365 pour les entreprises à l’aide d’une clé de produit et activer ou désactiver la facturation périodique. '
-ms.openlocfilehash: a382a2c4767f9dac4ee276c050d077d854b99084
-ms.sourcegitcommit: 053d42480d8aa3792ecb0027ddd53d383a029474
+description: 'Découvrez comment renouveler votre abonnement Microsoft 365 pour les entreprises à l’aide d’une clé de produit et activer ou désactiver la facturation périodique. '
+ms.openlocfilehash: 1c3fc5f9648c814d300cd65ac872f1e28e90ca0d
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "43175201"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636558"
 ---
-# <a name="renew-office-365-for-business"></a>Réactiver ou renouveler un abonnement Office 365 Entreprise
+# <a name="renew-microsoft-365-for-business"></a>Renouveler Microsoft 365 pour les entreprises
 
-[] Cet article s'applique uniquement à la plupart des abonnements Office 365 pour les entreprises payants.
+Cet article s’applique aux abonnements Microsoft 365 les plus payants.
   
-Pour renouveler un abonnement à l’aide d’une clé de produit achetée auprès d’un détaillant ou d’un partenaire Office 365, voir [Rechercher et entrer votre clé de produit](../enter-your-product-key.md).
+Pour renouveler votre abonnement à l’aide d’une clé de produit achetée auprès d’un détaillant ou d’un partenaire Microsoft, voir [Rechercher et entrer votre clé de produit](../enter-your-product-key.md).
 
 > [!NOTE]
 > Le paiement par compte bancaire n’est pas disponible dans certains pays ou certaines régions.
@@ -47,6 +47,7 @@ Si vous payez par carte de crédit ou compte bancaire, la **facturation périodi
 Si vous avez prépayé votre abonnement avec une clé de produit, votre abonnement arrivera à expiration à la fin de cette période. Vous pouvez activer la **facturation périodique** et fournir des informations sur la carte de crédit ou le compte bancaire de sorte que votre abonnement reste facturé tous les ans le jour de l’abonnement. Vous avez également la possibilité de payer tous les mois, ou de payer pour l’ensemble de l’année en amont. Votre carte ou votre compte bancaire ne sera pas débité avant l'expiration de votre période d'abonnement initiale.
 
 ::: moniker range="o365-worldwide"
+
 
 1. Dans le Centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produits et services</a>.
 
@@ -67,7 +68,11 @@ Si vous avez prépayé votre abonnement avec une clé de produit, votre abonneme
 
 ::: moniker range="o365-germany"
   
-1. Dans le Centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Abonnements</a>.
+1. Dans le Centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Abonnements</a>.
+
+    Si vous utilisez Office 365 Allemagne, accédez à cette page <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Abonnements</a>.
+
+    Si vous utilisez Office 365 géré par 21Vianet, accédez à cette page <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Abonnements</a>.
 
 2. Sélectionnez l’abonnement pour lequel gérer la facturation récurrente.
  
@@ -86,7 +91,11 @@ Si vous avez prépayé votre abonnement avec une clé de produit, votre abonneme
 
 ::: moniker range="o365-21vianet"
   
-1. Dans le Centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Abonnements</a>.
+1. Dans le Centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Abonnements</a>.
+
+    Si vous utilisez Office 365 Allemagne, accédez à cette page <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Abonnements</a>.
+
+    Si vous utilisez Office 365 géré par 21Vianet, accédez à cette page <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Abonnements</a>.
 
 2. Sélectionnez l’abonnement pour lequel gérer la facturation récurrente.
  
@@ -106,7 +115,7 @@ Si vous avez prépayé votre abonnement avec une clé de produit, votre abonneme
 ## <a name="related-articles"></a>Articles connexes
 
 [Réactiver votre abonnement](reactivate-your-subscription.md)
-
+  
 [Qu'arrive-t-il à mes données et à mon accès à la fin de mon abonnement ?](what-if-my-subscription-expires.md)
 
 [Ajouter, mettre à jour ou supprimer vos modes de paiement](../billing-and-payments/add-update-or-remove-credit-card-or-bank-account.md)
@@ -115,4 +124,4 @@ Si vous avez prépayé votre abonnement avec une clé de produit, votre abonneme
   
 [Entrer votre clé de produit](../enter-your-product-key.md)
   
-[Acheter votre version d'évaluation d'Office 365 pour les entreprises](../buy-a-subscription-from-your-free-trial.md)
+[Acheter votre version d’évaluation de Microsoft 365 pour les entreprises](../buy-a-subscription-from-your-free-trial.md)

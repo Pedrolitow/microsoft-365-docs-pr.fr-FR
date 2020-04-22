@@ -16,16 +16,16 @@ ms.assetid: 6ae78c12-7bbe-44fa-ab13-c3768387d0e3
 ms.collection:
 - M365-security-compliance
 description: Pour vous assurer que le courrier électronique envoyé par des personnes de confiance n’est pas bloqué, vous pouvez utiliser la stratégie de filtrage des connexions pour créer une liste verte d’adresses IP que vous approuvez. Vous pouvez également créer une liste d’adresses IP bloquées d’expéditeurs bloqués.
-ms.openlocfilehash: bc0f99102daa422cefe5a7c9cb3e0e5476237f63
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: 54e68c79f78bb1408684ac583edff137cb687b53
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42893997"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637745"
 ---
-# <a name="configure-connection-filtering-in-office-365"></a>Configurer le filtrage des connexions dans Office 365
+# <a name="configure-connection-filtering"></a>Configuration du filtrage des connexions
 
-Si vous êtes un client Office 365 avec des boîtes aux lettres dans Exchange Online ou un client Exchange Online Protection (EOP) autonome sans boîtes aux lettres Exchange Online, vous utilisez le filtrage des connexions dans EOP (en particulier la stratégie de filtrage des connexions par défaut) pour identifier bons ou les mauvais serveurs de messagerie source par leurs adresses IP. Les principaux composants de la stratégie de filtrage des connexions par défaut sont les suivants :
+Si vous êtes un client Microsoft 365 avec des boîtes aux lettres dans Exchange Online ou un client Exchange Online Protection (EOP) autonome sans boîtes aux lettres Exchange Online, vous utilisez le filtrage des connexions dans EOP (en particulier la stratégie de filtrage des connexions par défaut) pour identifier les serveurs de messagerie source valides par leurs adresses IP. Les principaux composants de la stratégie de filtrage des connexions par défaut sont les suivants :
 
 - **Liste d’adresses IP autorisées**: ignorez le filtrage du courrier indésirable pour tous les messages entrants provenant des serveurs de messagerie source que vous spécifiez par adresse IP ou plage d’adresses IP. Pour les scénarios dans lesquels le filtrage du courrier indésirable peut toujours se produire sur les messages provenant de ces sources, consultez la section [scénarios dans lesquels les messages provenant de sources dans la liste d’adresses IP autorisées sont toujours filtrés](#scenarios-where-messages-from-sources-in-the-ip-allow-list-are-still-filtered) plus loin dans cette rubrique. Pour plus d’informations sur la façon dont la liste d’adresses IP autorisées doit tenir dans votre stratégie d’expéditeurs approuvés globale, consultez la rubrique [créer des listes d’expéditeurs approuvés dans Office 365](create-safe-sender-lists-in-office-365.md).
 
@@ -33,18 +33,18 @@ Si vous êtes un client Office 365 avec des boîtes aux lettres dans Exchange On
 
 - **Liste verte**: la *liste* verte est une liste verte dynamique dans le centre de contenu Microsoft qui ne requiert aucune configuration client. Microsoft identifie ces sources de messagerie approuvées à partir des abonnements à différentes listes tierces. Vous activez ou désactivez l’utilisation de la liste verte ; vous ne pouvez pas configurer les serveurs de messagerie source sur la liste sécurisée. Le filtrage du courrier indésirable est ignoré sur les messages entrants provenant des serveurs de messagerie de la liste verte.
 
-Cette rubrique décrit comment configurer la stratégie de filtrage des connexions par défaut dans le centre de sécurité & de la sécurité Office 365 ou dans PowerShell (clients Exchange Online PowerShell pour Office 365 ; Exchange Online Protection PowerShell pour les clients EOP autonomes). Pour plus d’informations sur la façon dont EOP utilise le filtrage des connexions fait partie des paramètres anti-courrier indésirable globaux de votre organisation, consultez la rubrique relative à la [protection contre le courrier indésirable dans Office 365](anti-spam-protection.md).
+Cette rubrique décrit comment configurer la stratégie de filtrage des connexions par défaut dans le centre de sécurité & conformité ou dans PowerShell (Exchange Online PowerShell pour les clients Microsoft 365 ; Exchange Online Protection PowerShell pour les clients EOP autonomes). Pour plus d’informations sur la façon dont EOP utilise le filtrage des connexions fait partie des paramètres anti-courrier indésirable globaux de votre organisation, consultez la rubrique [protection contre le courrier indésirable](anti-spam-protection.md).
 
 > [!NOTE]
-> La liste d’adresses IP autorisées, la liste verte et la liste d’adresses IP bloquées font partie de votre stratégie globale pour autoriser ou bloquer les messages électroniques au sein de votre organisation. Pour plus d’informations, consultez la rubrique [créer des listes d’expéditeurs approuvés dans office 365](create-safe-sender-lists-in-office-365.md) et [créer des listes d’expéditeurs bloqués dans Office 365](create-block-sender-lists-in-office-365.md).
+> La liste d’adresses IP autorisées, la liste verte et la liste d’adresses IP bloquées font partie de votre stratégie globale pour autoriser ou bloquer les messages électroniques au sein de votre organisation. Pour plus d’informations, consultez la rubrique [créer des listes d’expéditeurs approuvés](create-safe-sender-lists-in-office-365.md) et [créer des listes d’expéditeurs bloqués](create-block-sender-lists-in-office-365.md).
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu'il faut savoir avant de commencer
 
-- Vous ouvrez le centre de sécurité & conformité <https://protection.office.com/>à l’adresse. Pour accéder directement à la page **paramètres du blocage du courrier indésirable** , utilisez <https://protection.office.com/antispam>.
+- Vous ouvrez le Centre de conformité et sécurité sur <https://protection.office.com/>. Pour accéder directement à la page **Paramètres anti-courrier indésirable**, utilisez <https://protection.office.com/antispam>.
 
-- Pour vous connecter à Exchange Online PowerShell, voir [Connexion à Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell). Pour vous connecter à l’environnement de ligne de commande Exchange Online Protection PowerShell autonome, consultez la rubrique [Connect to Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell).
+- Pour vous connecter à Exchange Online PowerShell, voir [Connexion à Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell). Pour vous connecter à un service Exchange Online Protection autonome, voir [Se connecter à PowerShell d’Exchange Online Protection](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell).
 
-- Des autorisations doivent vous être attribuées avant de pouvoir effectuer ces procédures. Pour modifier la stratégie de filtrage des connexions par défaut, vous devez être membre des groupes de rôles gestion de l' **organisation** ou **administrateur de sécurité** . Pour un accès en lecture seule à la stratégie de filtrage des connexions par défaut, vous devez être membre du groupe de rôles **lecteur de sécurité** . Pour plus d’informations sur les groupes de rôles dans le centre de sécurité & conformité, consultez [la rubrique autorisations dans le centre de sécurité & conformité Office 365](permissions-in-the-security-and-compliance-center.md).
+- Des autorisations doivent vous être attribuées avant de pouvoir exécuter ces procédures. Pour modifier la stratégie de filtrage des connexions par défaut, vous devez être membre des groupes de rôles gestion de l' **organisation** ou **administrateur de sécurité** . Pour un accès en lecture seule à la stratégie de filtrage des connexions par défaut, vous devez être membre du groupe de rôles **lecteur de sécurité** . Pour plus d’informations sur les groupes de rôles dans le centre de sécurité & conformité, consultez [la rubrique autorisations dans le centre de sécurité & conformité](permissions-in-the-security-and-compliance-center.md).
 
 - Pour rechercher les adresses IP sources des serveurs de messagerie (expéditeurs) que vous souhaitez autoriser ou bloquer, vous pouvez vérifier le champ d’en-**tête de connexion**IP dans l’en-tête du message. Pour afficher un en-tête de message dans différents clients de messagerie, consultez la rubrique [afficher les en-têtes de message Internet dans Outlook](https://support.office.com/article/cd039382-dc6e-4264-ac74-c048563d212c).
 
@@ -176,9 +176,9 @@ Par exemple, le serveur de messagerie source 192.168.1.25 envoie un courrier él
 
 Les messages provenant d’un serveur de messagerie de votre liste d’adresses IP autorisées sont toujours soumis au filtrage du courrier indésirable dans les scénarios suivants :
 
-- Une adresse IP de votre liste d’adresses IP autorisées est également configurée dans un connecteur entrant basé sur IP sur site de *n’importe quel* client dans Office 365 (appelons ce locataire a), **et** le locataire a et le serveur EOP qui rencontre pour la première fois le message dans Office 365 sont tous deux dans *la même* forêt Active Directory dans les centres de contenu Microsoft. Dans ce scénario, **IPV : la licence d’accès client** *est* ajoutée aux [en-têtes de message anti-courrier indésirable](anti-spam-message-headers.md) du message (indiquant le filtrage de courrier indésirable ignoré), mais le message est toujours soumis au filtrage du courrier indésirable.
+- Une adresse IP de votre liste d’adresses IP autorisées est également configurée dans un connecteur entrant basé sur IP sur site de *n’importe quel* client de Microsoft 365 (appelons ce locataire a), **et** le locataire a et le serveur EOP qui rencontre pour la première fois le message se trouvent dans *la même* forêt Active Directory dans les centres de contenu Microsoft. Dans ce scénario, **IPV : la licence d’accès client** *est* ajoutée aux [en-têtes de message anti-courrier indésirable](anti-spam-message-headers.md) du message (indiquant le filtrage de courrier indésirable ignoré), mais le message est toujours soumis au filtrage du courrier indésirable.
 
-- Votre client qui contient la liste d’adresses IP autorisées et le serveur EOP qui rencontre pour la première fois le message dans Office 365 se trouvent tous deux dans des forêts Active Directory *différentes* dans les centres de contenu Microsoft. Dans ce scénario, **IPV : la licence d’accès client** *n’est pas* ajoutée aux en-têtes de message, de sorte que le message est toujours soumis au filtrage du courrier indésirable.
+- Votre client qui contient la liste d’adresses IP autorisées et le serveur EOP qui rencontre tout d’abord le message se trouvent dans des forêts Active Directory *différentes* dans les centres de contenu Microsoft. Dans ce scénario, **IPV : la licence d’accès client** *n’est pas* ajoutée aux en-têtes de message, de sorte que le message est toujours soumis au filtrage du courrier indésirable.
 
 Si vous rencontrez l’un de ces scénarios, vous pouvez créer une règle de flux de messagerie avec les paramètres suivants (au minimum) pour vous assurer que les messages provenant des adresses IP problématiques ignorent le filtrage du courrier indésirable :
 
@@ -190,4 +190,4 @@ Si vous rencontrez l’un de ces scénarios, vous pouvez créer une règle de fl
 
 ||
 |:-----|
-|![Icône rapide pour LinkedIn Learning](../../media/eac8a413-9498-4220-8544-1e37d1aaea13.png) **Vous débutez avec Office 365 ?** Découvrez les cours vidéo gratuits pour les **administrateurs Office 365 et les professionnels de l’informatique ** proposés par LinkedIn Learning.|
+|![Icône rapide pour LinkedIn Learning](../../media/eac8a413-9498-4220-8544-1e37d1aaea13.png) **New de Microsoft 365 ?** Découvrez les cours vidéo gratuits pour les **administrateurs et les professionnels**de l’informatique, proposés par LinkedIn Learning.|

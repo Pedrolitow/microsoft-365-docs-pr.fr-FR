@@ -16,16 +16,16 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: 8d7adda0ded3a118676a67d0446a5744233468f3
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: f336c9ef2957374223a8f0d7b64f892c87e1169d
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42633262"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631548"
 ---
 # <a name="identity-and-device-access-configurations"></a>Configurations des identités et de l’accès aux appareils
 
-Cette série d’articles explique comment configurer un accès sécurisé aux services Cloud via les produits Enterprise Mobility + Security (EMS) en implémentant un environnement et une configuration recommandés, y compris un ensemble de stratégies d’accès conditionnel et fonctionnalités associées. EMS est un composant essentiel de Microsoft 365. Vous pouvez utiliser ces conseils pour protéger l’accès à tous les services intégrés à Azure Active Directory, y compris les services Office 365, d’autres services SaaS et les applications locales publiées avec le proxy d’application Azure AD. 
+Cette série d’articles explique comment configurer un accès sécurisé aux services Cloud via les produits Enterprise Mobility + Security (EMS) en implémentant un environnement et une configuration recommandés, y compris un ensemble de stratégies d’accès conditionnel et des fonctionnalités associées. EMS est un composant essentiel de Microsoft 365. Vous pouvez utiliser ces conseils pour protéger l’accès à tous les services intégrés à Azure Active Directory, notamment les services Microsoft 365, d’autres services SaaS et les applications locales publiées avec le proxy d’application Azure AD. 
 
 Ces recommandations sont alignées sur le score de sécurité Microsoft et le [score d’identité dans Azure ad](https://docs.microsoft.com/azure/active-directory/fundamentals/identity-secure-score), et augmentent ces scores pour votre organisation. Ces recommandations vous aideront également à mettre [en œuvre ces cinq étapes pour sécuriser votre infrastructure d’identité](https://docs.microsoft.com/azure/security/azure-ad-secure-steps). 
 
@@ -51,19 +51,19 @@ Nous avons réalisé notre meilleure solution pour tenir compte de nombreuses ex
 
 ## <a name="three-tiers-of-protection"></a>Trois niveaux de protection
 
-La plupart des organisations ont des besoins spécifiques en matière de sécurité et de protection des données. Ces besoins varient selon leur secteur d’activité et selon les postes de travail en leur sein. Par exemple, votre service juridique et ses administrateurs Office 365 peuvent avoir des besoins plus importants en matière de contrôle de la sécurité et de la protection des informations contenues dans leur correspondance par e-mail que d’autres services. 
+La plupart des organisations ont des besoins spécifiques en matière de sécurité et de protection des données. Ces besoins varient selon leur secteur d’activité et selon les postes de travail en leur sein. Par exemple, votre service juridique et les administrateurs peuvent exiger des contrôles de sécurité et de protection des informations supplémentaires concernant la correspondance de leur courrier électronique qui ne sont pas requis pour les autres utilisateurs de divisions. 
 
-Chaque secteur d’activité possède aussi sa propre réglementation spécialisée. Au lieu de fournir une liste de toutes les options de sécurité possibles ou une recommandation par segment d’industrie ou fonction, des recommandations ont été fournies pour trois niveaux différents de sécurité et de protection pouvant être appliqués en fonction de la granularité de vos besoins .
+Chaque secteur d’activité possède aussi sa propre réglementation spécialisée. Au lieu de fournir une liste de toutes les options de sécurité possibles ou une recommandation par segment d’industrie ou fonction, des recommandations ont été fournies pour trois niveaux différents de sécurité et de protection pouvant être appliqués en fonction de la granularité de vos besoins.
 
 - **Baseline protection**: nous vous recommandons de définir une norme minimale pour la protection des données, ainsi que les identités et les appareils qui accèdent à vos données. Vous pouvez suivre ces recommandations de base pour fournir une protection par défaut efficace qui répond aux besoins de nombreuses organisations.
-- **Protection sensible**: certains clients disposent d’un sous-ensemble de données qui doivent être protégées à des niveaux supérieurs, ou nécessitent que toutes les données soient protégées à un niveau supérieur. Vous pouvez appliquer une protection accrue à l’ensemble des données ou à des jeux de données spécifiques dans votre environnement Office 365. Nous vous recommandons de protéger les identités et les appareils qui accèdent à des données sensibles avec des niveaux de sécurité comparables.  
+- **Protection sensible**: certains clients disposent d’un sous-ensemble de données qui doivent être protégées à des niveaux supérieurs, ou nécessitent que toutes les données soient protégées à un niveau supérieur. Vous pouvez renforcer la protection de l’ensemble ou des ensembles de données spécifiques dans votre environnement Microsoft 365. Nous vous recommandons de protéger les identités et les appareils qui accèdent à des données sensibles avec des niveaux de sécurité comparables.  
 - **Hautement réglementé**: certaines organisations peuvent avoir une petite quantité de données qui est hautement classifiée, des secrets commerciaux consititutes ou des données réglementées. Microsoft fournit des fonctionnalités pour aider les organisations à respecter de telles exigences, notamment de protection renforcée des appareils et des identités.
 
 ![Cône de sécurité : tous les clients > certains clients > des clients spécifiques. Application étendue à une application spécifique](../media/M365-idquality-threetiers.png)
 
 Ce guide vous montre comment implémenter la protection des identités et des périphériques pour chacune de ces niveaux de protection. Utilisez ces conseils comme point de départ pour votre organisation et ajustez les stratégies pour répondre aux besoins spécifiques de votre organisation.
 
-Il est important d’utiliser des niveaux de protection cohérents entre vos données, vos identités et vos appareils. Par exemple, si vous implémentez ces instructions, veillez à protéger vos données à des niveaux comparables. Ces modèles d’architecture vous montrent quelles fonctionnalités sont comparables.
+Il est important d'utiliser des niveaux de protection cohérents pour l'ensemble de vos données, de vos identités et de vos appareils. Par exemple, si vous implémentez ces instructions, veillez à protéger vos données à des niveaux comparables. Ces modèles d’architecture vous montrent quelles fonctionnalités sont comparables.
 
 **La protection des appareils et de l’identité pour Office 365**<br/>
 ![Miniature de l’affiche « protection des identités et des appareils pour Office 365 »](../media/O365_Identity_device_protection_thumb.png)<br/>
@@ -96,7 +96,7 @@ Azure AD fournit une suite complète de fonctionnalités de gestion des identit�
 
 - **[Réinitialisation du mot de passe en libre-service](/azure/active-directory/authentication/concept-sspr-howitworks)**: permet à vos utilisateurs de réinitialiser leur mot de passe en toute sécurité et sans intervention de l’assistance technique, en fournissant la vérification de plusieurs méthodes d’authentification que l’administrateur peut contrôler.
 
-- **[Authentification multifacteur (MFA) : l’authentification multifacteur](/azure/active-directory/authentication/concept-mfa-howitworks)** exige que les utilisateurs fournissent deux formes de vérification, telles qu’un mot de passe utilisateur, ainsi qu’une notification de l’application Microsoft Authenticator ou d’un appel téléphonique. MFA réduit considérablement le risque qu’une identité volée puisse être utilisée pour accéder à votre environnement Office 365.
+- **[Authentification multifacteur (MFA) : l’authentification multifacteur](/azure/active-directory/authentication/concept-mfa-howitworks)** exige que les utilisateurs fournissent deux formes de vérification, telles qu’un mot de passe utilisateur, ainsi qu’une notification de l’application Microsoft Authenticator ou d’un appel téléphonique. MFA réduit considérablement le risque qu’une identité volée puisse être utilisée pour accéder à votre environnement.
 
 - **[Accès conditionnel](/azure/active-directory/conditional-access/overview)**: Azure ad évalue les conditions de connexion de l’utilisateur et utilise des stratégies d’accès conditionnel que vous créez pour autoriser l’accès. Par exemple, dans ce guide, nous vous montrons comment créer une stratégie d’accès conditionnel pour exiger la conformité de l’appareil pour l’accès aux données sensibles. Cela réduit considérablement le risque qu’un pirate disposant d’une identité volée puisse accéder à vos données sensibles. Il protège également les données sensibles sur les appareils, car les appareils répondent à des exigences spécifiques en matière d’intégrité et de sécurité.
 
@@ -112,21 +112,21 @@ Azure AD fournit une suite complète de fonctionnalités de gestion des identit�
 
 #### <a name="intune-app-protection"></a>Protection des applications Intune
 
-Les stratégies [Intune App protection](https://docs.microsoft.com/intune/app-protection-policy) peuvent être utilisées pour protéger les données de votre organisation dans les applications mobiles, avec ou sans l’enregistrement d’appareils dans la gestion. Intune contribue à protéger les informations d’Office 365, en veillant à ce que vos employés puissent toujours être productifs et empêcher la perte de données. En implémentant des stratégies au niveau de l’application, vous pouvez restreindre l’accès aux ressources de l’entreprise et conserver les données dans le contrôle de votre service informatique.
+Les stratégies [Intune App protection](https://docs.microsoft.com/intune/app-protection-policy) peuvent être utilisées pour protéger les données de votre organisation dans les applications mobiles, avec ou sans l’enregistrement d’appareils dans la gestion. Intune contribue à protéger les informations, en veillant à ce que vos employés puissent toujours être productifs et empêcher la perte de données. En implémentant des stratégies au niveau de l’application, vous pouvez restreindre l’accès aux ressources de l’entreprise et conserver les données dans le contrôle de votre service informatique.
 
 Ce guide vous montre comment créer des stratégies recommandées pour appliquer l’utilisation des applications approuvées et déterminer comment ces applications peuvent être utilisées avec vos données métiers.
 
-### <a name="office-365"></a>Office 365
+### <a name="microsoft-365"></a>Microsoft 365
 
-Ce guide vous montre comment implémenter un ensemble de stratégies pour protéger l’accès à Office 365, notamment Exchange Online, SharePoint Online et OneDrive entreprise. En plus de mettre en œuvre ces stratégies, nous vous recommandons d’augmenter également le niveau de protection pour votre client Office 365 à l’aide de ces ressources :
+Ce guide vous montre comment implémenter un ensemble de stratégies pour protéger l’accès à Office 365, notamment Exchange Online, SharePoint Online et OneDrive entreprise. En plus de mettre en œuvre ces stratégies, nous vous recommandons d’augmenter également le niveau de protection de votre client à l’aide de ces ressources :
 
-- [Configurez votre client office 365 pour renforcer la sécurité](https://support.office.com/article/Configure-your-Office-365-tenant-for-increased-security-8d274fe3-db51-4107-ba64-865e7155b355): ces recommandations s’appliquent à la sécurité de base pour votre client Office 365.
-- Feuille [de route de sécurité Office 365 : les principales priorités des 30 premiers jours, 90 jours et au-delà](https://support.office.com/article/Office-365-security-roadmap-Top-priorities-for-the-first-30-days-90-days-and-beyond-28c86a1c-e4dd-4aad-a2a6-c768a21cb352): ces recommandations incluent la journalisation, la gouvernance des données, l’accès administrateur et la protection contre les menaces.
+- [Configurez votre client pour renforcer la sécurité](https://support.office.com/article/Configure-your-Office-365-tenant-for-increased-security-8d274fe3-db51-4107-ba64-865e7155b355): ces recommandations s’appliquent à la sécurité de base pour votre client.
+- Feuille [de route de sécurité Microsoft 365 : les principales priorités des 30 premiers jours, 90 jours et au-delà](https://support.office.com/article/Office-365-security-roadmap-Top-priorities-for-the-first-30-days-90-days-and-beyond-28c86a1c-e4dd-4aad-a2a6-c768a21cb352): ces recommandations incluent la journalisation, la gouvernance des données, l’accès administrateur et la protection contre les menaces.
 
 
-### <a name="windows-10-and-office-365-proplus"></a>Windows 10 et Office 365 ProPlus
+### <a name="windows-10-and-microsoft-365-apps-for-enterprise"></a>Applications Windows 10 et Microsoft 365 pour les entreprises
 
-Windows 10 et Office 365 ProPlus est l’environnement client recommandé pour les PC. Nous vous recommandons Windows 10, car Azure est conçu pour offrir l’expérience la plus facile possible pour les versions locale et Azure AD. Windows 10 inclut également des fonctionnalités de sécurité avancées qui peuvent être gérées via Intune. Office 365 ProPlus inclut les versions les plus récentes des applications Office. Ces éléments utilisent l’authentification moderne, qui est plus sécurisée et nécessite un accès conditionnel. Ces applications incluent également des outils de sécurité et de conformité améliorés.
+Les applications Windows 10 et Microsoft 365 pour Enterprise sont l’environnement client recommandé pour les PC. Nous vous recommandons Windows 10, car Azure est conçu pour offrir l’expérience la plus facile possible pour les versions locale et Azure AD. Windows 10 inclut également des fonctionnalités de sécurité avancées qui peuvent être gérées via Intune. Microsoft 365 Apps for Enterprise inclut les versions les plus récentes des applications Office. Ces éléments utilisent l’authentification moderne, qui est plus sécurisée et nécessite un accès conditionnel. Ces applications incluent également des outils de sécurité et de conformité améliorés.
 
 ## <a name="applying-these-capabilities-across-the-three-tiers-of-protection"></a>Application de ces fonctionnalités aux trois niveaux de protection
 

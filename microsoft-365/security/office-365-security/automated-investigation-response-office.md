@@ -1,5 +1,5 @@
 ---
-title: Recherche et réponse automatiques dans Office 365
+title: Examen et réponse automatisés (AIR)
 f1.keywords:
 - NOCSH
 ms.author: deniseb
@@ -15,28 +15,28 @@ search.appverid:
 ms.collection: M365-security-compliance
 description: Obtenez une vue d’ensemble des fonctionnalités d’analyse et de réponse automatisées dans Office 365 Advanced Threat Protection Plan 2.
 ms.custom: air
-ms.openlocfilehash: 1fa99d7676a16ccd83319e5fbf3a6fedb72aec12
-ms.sourcegitcommit: 00ce4626e1be182c5a91210a23662c9704384efa
+ms.openlocfilehash: 638f421289d5b4f0d8c02fbd5bf2913191721bf6
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "43170951"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43638547"
 ---
-# <a name="automated-investigation-and-response-air-in-office-365"></a>Recherche et réponse automatiques dans Office 365
+# <a name="automated-investigation-and-response-air"></a>Examen et réponse automatisés (AIR)
 
-À mesure que des alertes de sécurité sont déclenchées, c’est à votre équipe chargée des opérations de sécurité d’examiner ces alertes et de prendre des mesures pour protéger votre organisation. Parfois, les équipes d’opérations de sécurité peuvent être submergées par le volume des alertes déclenchées. Les fonctionnalités d’analyse et de réponse automatiques dans Office 365 peuvent vous aider. AIR permet à votre équipe des opérations de sécurité de fonctionner de manière plus efficace. Les fonctionnalités AIR incluent des processus d’enquête automatisés en réponse à des menaces connues qui existent aujourd’hui. Les actions de correction appropriées attendent l’approbation, ce qui permet à votre équipe des opérations de sécurité de répondre aux menaces détectées. 
+À mesure que des alertes de sécurité sont déclenchées, c’est à votre équipe chargée des opérations de sécurité d’examiner ces alertes et de prendre des mesures pour protéger votre organisation. Parfois, les équipes d’opérations de sécurité peuvent être submergées par le volume des alertes déclenchées. Les fonctionnalités d’analyse et de réponse automatisées peuvent vous aider. AIR permet à votre équipe des opérations de sécurité de fonctionner de manière plus efficace. Les fonctionnalités AIR incluent des processus d’enquête automatisés en réponse à des menaces connues qui existent aujourd’hui. Les actions de correction appropriées attendent l’approbation, ce qui permet à votre équipe des opérations de sécurité de répondre aux menaces détectées. 
 
-Cet article fournit une vue d’ensemble de l’AIR. Lorsque vous êtes prêt à commencer à utiliser AIR, consultez la rubrique [enquêter et répondre aux menaces dans Office 365](office-365-air.md).
+Cet article fournit une vue d’ensemble de l’AIR. Lorsque vous êtes prêt à commencer à utiliser AIR, consultez la rubrique [enquêter et répondre aux menaces de manière automatique](office-365-air.md).
 
 ## <a name="at-a-high-level"></a>À un niveau élevé
 
-Comme les alertes sont déclenchées, les règles de sécurité entrent en vigueur. En fonction de la situation, un [processus d’enquête automatisé](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air) peut commencer. Pendant et après une enquête automatisée, les [actions correctives](air-remediation-actions.md) sont recommandées. Aucune action n’est effectuée automatiquement dans Office 365 protection avancée contre les menaces. Votre équipe de gestion des opérations de sécurité examine, puis [approuve ou rejette chaque action de correction](air-review-approve-pending-completed-actions.md), et lorsque cela est fait, chaque enquête se termine. Toutes ces activités sont suivies et affichables dans le centre de conformité Office 365 Security & (voir [afficher les détails d’une enquête](air-view-investigation-results.md#view-details-of-an-investigation)).
+Comme les alertes sont déclenchées, les règles de sécurité entrent en vigueur. En fonction de la situation, un [processus d’enquête automatisé](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air) peut commencer. Pendant et après une enquête automatisée, les [actions correctives](air-remediation-actions.md) sont recommandées. Aucune action n’est effectuée automatiquement dans Office 365 protection avancée contre les menaces. Votre équipe de gestion des opérations de sécurité examine, puis [approuve ou rejette chaque action de correction](air-review-approve-pending-completed-actions.md), et lorsque cela est fait, chaque enquête se termine. Toutes ces activités sont suivies et affichables dans le centre de sécurité & conformité (voir [afficher les détails d’une enquête](air-view-investigation-results.md#view-details-of-an-investigation)).
 
 Les sections suivantes fournissent plus d’informations sur les alertes, les règles de sécurité et des exemples d’AIR en action.
 
 ## <a name="alerts"></a>Alertes
 
-Les [alertes](../../compliance/alert-policies.md#viewing-alerts) représentent des déclencheurs pour les flux de travail d’équipe des opérations de sécurité pour la réponse aux incidents. La définition de la priorité des alertes à droite pour l’enquête, tout en s’assurant qu’aucune menace n’est sans adresse est complexe. Lorsque les enquêtes dans les alertes sont effectuées manuellement, les équipes des opérations de sécurité doivent rechercher et corréler les entités (telles que le contenu, les appareils et les utilisateurs) menacées. Ces tâches et les flux de travail peuvent être très longs et impliquer plusieurs outils et systèmes. Avec AIR, Investigation and Response for Office 365 Security Events is Automated by having Security and Threat Management Alerts déclenchent automatiquement des règles de réponse de sécurité. 
+Les [alertes](../../compliance/alert-policies.md#viewing-alerts) représentent des déclencheurs pour les flux de travail d’équipe des opérations de sécurité pour la réponse aux incidents. La définition de la priorité des alertes à droite pour l’enquête, tout en s’assurant qu’aucune menace n’est sans adresse est complexe. Lorsque les enquêtes dans les alertes sont effectuées manuellement, les équipes des opérations de sécurité doivent rechercher et corréler les entités (telles que le contenu, les appareils et les utilisateurs) menacées. Ces tâches et les flux de travail peuvent être très longs et impliquer plusieurs outils et systèmes. Avec AIR, l’enquête et la réponse pour les événements de sécurité sont automatisées en ayant des alertes de gestion des menaces et de sécurité clés déclenchant automatiquement des règles de réponse de sécurité. 
 
 Pour l’AIR, les alertes générées à partir des types de stratégies d’alerte suivants sont analysées automatiquement :  
 
@@ -55,7 +55,7 @@ Pour afficher les alertes, dans le centre de sécurité & conformité, sélectio
 > [!NOTE]
 > Les alertes d’information sont masquées par défaut dans l’affichage des alertes. Pour les afficher, modifiez le filtrage des alertes de manière à inclure des alertes d’information.
 
-Si votre organisation gère vos alertes de sécurité par le biais d’un système de gestion des alertes, d’un système de gestion des services ou d’un système de gestion des événements et des informations de sécurité (SIEM), vous pouvez envoyer des alertes Office 365 à ce système via une notification par courrier électronique ou via l' [API d’activité de gestion d’office 365](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference). Les notifications d’alerte d’enquête via le courrier électronique ou l’API incluent des liens permettant d’accéder aux alertes dans le centre de sécurité & conformité, ce qui permet à l’administrateur de sécurité affecté de naviguer rapidement dans l’enquête.
+Si votre organisation gère vos alertes de sécurité via un système de gestion des alertes, un système de gestion des services ou un système de gestion des événements et des informations de sécurité (SIEM), vous pouvez envoyer des alertes à ce système via une notification par courrier électronique ou via l' [API activité de gestion d’Office 365](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference). Les notifications d’alerte d’enquête via le courrier électronique ou l’API incluent des liens permettant d’accéder aux alertes dans le centre de sécurité & conformité, ce qui permet à l’administrateur de sécurité affecté de naviguer rapidement dans l’enquête.
 
 ![Alertes liées à des enquêtes](../../media/air-alerts-page-details.png) 
 
@@ -75,7 +75,7 @@ Dans le cadre de l’AIR, les règles de sécurité sont déployées en plusieur
 
 La phase 1 prend également en charge les enquêtes de courrier électronique déclenchées par l’administrateur (à l’aide de l' [Explorateur de menaces](threat-explorer.md)).
 
-La phase 2 est désormais en cours avec les règles suivantes dans la version **préliminaire publique**, en fournissant des recommandations pour les actions et en aidant les administrateurs de la sécurité à examiner les problèmes :
+La phase 2 est désormais en cours avec les règles suivantes en **Aperçu public**, en fournissant des recommandations pour les actions et en aidant les administrateurs de la sécurité à examiner les problèmes :
 - Utilisateur signalé comme compromis (préversion publique)
 
 D’autres règles seront publiées au fur et à mesure de leur exécution. Consultez la feuille de [route Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap) pour voir les autres éléments planifiés et bientôt disponibles.
@@ -110,7 +110,7 @@ Ensuite, plusieurs étapes d’enquête sur les menaces et de chasse sont exécu
 - Les messages électroniques similaires sont identifiés par des recherches de cluster de messagerie.
 - Le signal est partagé avec d’autres plateformes, telles que [Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection).
 - Une détermination est effectuée sur le fait que les utilisateurs aient cliqué sur les liens malveillants dans les messages électroniques suspects.
-- Une vérification est effectuée dans Office 365 Exchange Online Protection ([EOP](exchange-online-protection-eop.md)) et Office 365 Advanced Threat Protection ([ATP](office-365-atp.md)) pour voir s’il existe d’autres messages similaires signalés par les utilisateurs.
+- Une vérification est effectuée sur Exchange Online Protection ([EOP](exchange-online-protection-eop.md)) et Office 365 Advanced Threat Protection ([ATP](office-365-atp.md)) pour voir s’il existe d’autres messages similaires signalés par les utilisateurs.
 - Une vérification est exécutée pour déterminer si un utilisateur a été compromis. Cette vérification exploite les signaux entre Office 365, [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security)et [Azure Active Directory](https://docs.microsoft.com/azure/active-directory), en mettant en corrélation les anomalies d’activité de l’utilisateur associées. 
 
 Au cours de la phase de chasse, les risques et les menaces sont affectés à différentes étapes de la chasse. 
@@ -133,7 +133,7 @@ Dans le menu **actions** , vous pouvez sélectionner l' **enquête du déclenche
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-- [Prise en main de l’utilisation de l’AIR dans Office 365](office-365-air.md)
+- [Prise en main de l’utilisation de l’AIR](office-365-air.md)
 
 - [Consultez la feuille de route Microsoft 365 pour découvrir les éléments bientôt disponibles et à déployer](https://www.microsoft.com/microsoft-365/roadmap?filters=)
 

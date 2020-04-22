@@ -19,18 +19,18 @@ search.appverid:
 - MET150
 - MOE150
 - BEA160
-description: 'Déterminez le montant des taxes à payer pour votre abonnement Office 365 pour les entreprises dans différentes régions. '
+description: 'Déterminez le montant des taxes à payer pour votre abonnement Microsoft 365 pour les entreprises dans différentes régions. '
 ms.custom: okr_SMB
-ms.openlocfilehash: f437e2f58797f3cc092b50611f34ecb2ce9cf3b0
-ms.sourcegitcommit: 2859c82b30ae9cbd3a3e4bcdebd65f18444f1a9e
+ms.openlocfilehash: e65dc15237cb14959a68a7413227cec2a3163d60
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42826312"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635003"
 ---
 # <a name="tax-information"></a>Informations fiscales
 
-Taxes pour le centre d’administration Microsoft 365 les achats que vous effectuez via Microsoft sont déterminés par votre adresse professionnelle ou, si elle est différente, par votre adresse d’expédition. Si vous êtes aux États-Unis, vous devez indiquer un numéro d’identification d’employeur fédéral (FEIN).
+Les taxes pour les achats du centre d’administration Microsoft 365 que vous effectuez via Microsoft sont déterminées par votre adresse professionnelle ou, si celle-ci est différente, par votre adresse de livraison. Si vous êtes aux États-Unis, vous devez indiquer un numéro d’identification d’employeur fédéral (FEIN).
 
 Les entreprises de ces pays peuvent fournir leur numéro de TVA :
 

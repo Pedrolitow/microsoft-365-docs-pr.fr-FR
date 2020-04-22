@@ -1,7 +1,7 @@
 ---
 title: Gestion des mises à jour dans le bureau géré Microsoft
 description: La mise à jour de Microsoft Managed Desktop représente un équilibre entre vitesse et stabilité.
-keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
+keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
 f1.keywords:
@@ -9,12 +9,12 @@ f1.keywords:
 ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 0acbb82001d8856639f5b67daa99323f333e26ad
-ms.sourcegitcommit: 213b33cbf14e35e6dc563e0b700a4eed5e42e91d
+ms.openlocfilehash: 763a9f3c7c517a5d093b9691310720468053bf24
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "42284375"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636473"
 ---
 # <a name="how-updates-are-handled-in-microsoft-managed-desktop"></a>Gestion des mises à jour dans le bureau géré Microsoft
 
@@ -61,13 +61,13 @@ Fonctionnement du déploiement des mises à jour :
 <tr><td>Mises à jour de fonctionnalité pour le système d’exploitation</td><td>0 jour</td><td>30 jours</td><td>60 jours</td><td>90 jours</td></tr>
 <tr><td>Pilotes/microprogramme</td><td colspan="4">Suit la planification des mises à jour de la qualité</td></tr>
 <tr><td>Définition de la protection antivirus</td><td colspan="4">Mise à jour avec chaque analyse</td></tr>
-<tr><td>Office 365 ProPlus</td><td colspan="4">Suit le canal mensuel d’Office
+<tr><td>Applications Microsoft 365 pour les entreprises</td><td colspan="4">Suit le canal mensuel d’Office
 </table>
 
-Pour plus d’informations sur le canal mensuel pour Office 365 ProPlus, consultez la rubrique [vue d’ensemble des canaux de mise à jour pour office 365 ProPlus](https://docs.microsoft.com/deployoffice/overview-of-update-channels-for-office-365-proplus).
+Pour plus d’informations sur le canal mensuel pour les applications Microsoft 365 pour entreprise, consultez la rubrique [Overview of Update Channels for microsoft 365 Apps for Enterprise](https://docs.microsoft.com/deployoffice/overview-of-update-channels-for-office-365-proplus).
 
 >[!NOTE]
->Ces périodes de report sont intentionnellement conçues pour garantir des normes de performances et de sécurité élevées pour tous les utilisateurs. Par ailleurs, en fonction des données collectées sur tous les appareils de bureau gérés par Microsoft et de l’étendue et de l’impact des mises à jour, Microsoft Managed Desktop réserve de souplesse pour modifier la longueur des périodes de report ci-dessus pour tous les groupes de déploiement d’une annonce. base hoc.
+>Ces périodes de report sont intentionnellement conçues pour garantir des normes de performances et de sécurité élevées pour tous les utilisateurs. Par ailleurs, en fonction des données collectées sur tous les appareils de bureau gérés par Microsoft et de l’étendue et de l’impact des mises à jour, Microsoft Managed Desktop réserve de souplesse pour modifier la longueur des périodes de report ci-dessus pour tous les groupes de déploiement sur une base ad hoc.
 >
 >Microsoft Managed Desktop effectue une évaluation indépendante de chaque version de fonctionnalité Windows pour évaluer sa nécessité et son utilité vis-à-vis de ses locataires gérés. Par conséquent, le bureau géré Microsoft peut déployer toutes les mises à jour de fonctionnalités Windows. 
 

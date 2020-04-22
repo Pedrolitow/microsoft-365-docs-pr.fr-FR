@@ -1,5 +1,5 @@
 ---
-title: Modifier vos adresses de facturation pour Office 365 pour les entreprises
+title: Modifier vos adresses de facturation
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -21,16 +21,16 @@ search.appverid:
 - BEA160
 - GEA150
 ms.assetid: a25c10d6-c1e9-4299-9185-25178df9eba6
-description: Découvrez comment mettre à jour vos adresses de facturation pour Office 365 pour les entreprises. Vous pouvez également mettre à jour l’adresse de messagerie utilisée pour recevoir des notifications de facturation.
+description: Découvrez comment mettre à jour vos adresses de facturation pour Microsoft 365 pour les entreprises. Vous pouvez également mettre à jour l’adresse de messagerie utilisée pour recevoir des notifications de facturation.
 ms.custom: okr_SMB
-ms.openlocfilehash: 6b11e38de33bf6d66c5847643790603b9ce7b0af
-ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
+ms.openlocfilehash: 169dfd78ca39e91e065c3bea59242a9f205463d0
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43142310"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632718"
 ---
-# <a name="change-your-billing-addresses-for-office-365-for-business"></a>Modifier vos adresses de facturation pour Office 365 pour les entreprises
+# <a name="change-your-billing-addresses"></a>Modifier vos adresses de facturation
 
 Votre facture contient trois adresses :
   
@@ -60,9 +60,6 @@ Si vous utilisez Office 365 géré par 21Vianet en Chine, reportez-vous à [la r
 
 ::: moniker-end
 
-::: moniker range="o365-worldwide"
-
-::: moniker-end
 
 ## <a name="change-your-sold-to-address"></a>Modifier votre adresse de vente
 
@@ -158,9 +155,9 @@ Si vous utilisez Office 365 géré par 21Vianet en Chine, reportez-vous à [la r
 
 ## <a name="change-the-alternate-email-address-your-billing-notifications-are-sent-to"></a>Modifier l'adresse de messagerie de secours à laquelle les notifications de facturation sont envoyées
 
-Par défaut, les notifications de facturation pour votre organisation sont envoyées à l'adresse de courrier Office 365 et à l'adresse de courrier de secours de l'administrateur général et de l'administrateur de facturation de votre organisation. Les administrateurs peuvent modifier leur adresse de courrier de secours en mettant à jour leurs informations de profil.
+Par défaut, les notifications de facturation de votre organisation sont envoyées à l’adresse de messagerie de Microsoft et à l’adresse de messagerie de secours de tous les administrateurs globaux et de facturation de votre organisation. Les administrateurs peuvent modifier leur adresse de courrier de secours en mettant à jour leurs informations de profil.
   
-1. Connectez-vous à Office 365 avec votre compte professionnel ou scolaire en tant qu'administrateur général. [Découvrez comment vous connecter](https://support.office.com/article/e9eb7d51-5430-4929-91ab-6157c5a050b4).
+1. Connectez-vous à Microsoft 365 avec votre compte professionnel ou scolaire en tant qu’administrateur général. [Découvrez comment vous connecter](https://support.office.com/article/e9eb7d51-5430-4929-91ab-6157c5a050b4).
 
 2. Sélectionnez l' **icône**de l’utilisateur, puis sélectionnez **mon compte**.
   
@@ -173,9 +170,7 @@ Par défaut, les notifications de facturation pour votre organisation sont envoy
 ## <a name="change-the-alternate-email-address-for-another-admin"></a>Modifier l'adresse de messagerie de secours pour un autre administrateur
 
 Vous pouvez également modifier l'adresse de messagerie de secours d'autres administrateurs généraux et de facturation de votre organisation.
-
-::: moniker range="o365-worldwide"
-
+  
 1. Dans le Centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">Notifications de facturation</a>.
 
 ::: moniker-end
@@ -203,3 +198,5 @@ Vous pouvez également modifier l'adresse de messagerie de secours d'autres admi
 [Comprendre votre facture](understand-your-invoice2.md)
 
 [Payer votre abonnement](pay-for-your-subscription.md)
+
+[Abonnements et aide à l’administrateur de facturation](../index.yml)

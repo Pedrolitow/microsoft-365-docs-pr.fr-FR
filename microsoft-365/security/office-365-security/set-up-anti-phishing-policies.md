@@ -1,5 +1,5 @@
 ---
-title: Stratégies anti-hameçonnage
+title: Stratégies anti-hameçonnage.
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -14,14 +14,14 @@ ms.assetid: 5a6f2d7f-d998-4f31-b4f5-f7cbf6f38578
 ms.collection:
 - M365-security-compliance
 description: Découvrez la stratégie anti-hameçonnage de base dans Exchange Online Protection (EOP) et les stratégies anti-hameçonnage avancées dans Office 365 protection avancée contre les menaces.
-ms.openlocfilehash: f96b490d2c031fb509c39b2efdbc725cec2709a5
-ms.sourcegitcommit: db8702cf578b02c6fd6a2670c177b456efae4748
+ms.openlocfilehash: 64a47d5514ab7a3a845e8d8b008f1cd8f672640b
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43537472"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43638355"
 ---
-# <a name="anti-phishing-policies-in-office-365"></a>Stratégies anti-hameçonnage dans Office 365
+# <a name="anti-phishing-policies-in-microsoft-365"></a>Stratégies anti-hameçonnage dans Microsoft 365
 
 Les stratégies de configuration des paramètres de protection anti-hameçonnage sont disponibles dans les organisations Office 365 avec des boîtes aux lettres Exchange Online, des organisations Exchange Online Protection (EOP) autonomes sans boîtes aux lettres Exchange Online et des organisations Office 365 Advanced Threat Protection (ATP).
 
@@ -34,13 +34,13 @@ Les stratégies anti-hameçonnage ATP sont disponibles uniquement dans les organ
 
 Les stratégies anti-hameçonnage ATP incluent une stratégie anti-hameçonnage par défaut intégrée et vous pouvez créer des stratégies anti-hameçonnage supplémentaires ATP personnalisées.
 
-Les autres organisations Office 365 avec des boîtes aux lettres Exchange Online ou les organisations Exchange Online Protection (EOP) autonomes sans boîte aux lettres Exchange Online ont une stratégie anti-hameçonnage par défaut intégrée, mais vous ne pouvez pas créer de stratégies supplémentaires. Seules les organisations disposant d’une boîte aux lettres Exchange Online peuvent modifier leur stratégie anti-hameçonnage par défaut.
+Les autres organisations Microsoft 365 avec des boîtes aux lettres Exchange Online ou les organisations Exchange Online Protection (EOP) autonomes sans boîte aux lettres Exchange Online possèdent une stratégie anti-hameçonnage par défaut intégrée, mais vous ne pouvez pas créer de stratégies supplémentaires. Seules les organisations disposant d’une boîte aux lettres Exchange Online peuvent modifier leur stratégie anti-hameçonnage par défaut.
 
 Les principales différences entre les stratégies de détection d’hameçonnage et les stratégies anti-hameçonnage ATP sont décrites dans le tableau suivant :
 
 ||||
 |---|:---:|:---:|
-|**Fonctionnalité**|**Stratégies anti-hameçonnage**|**Stratégies anti-hameçonnage ATP**|
+|**Fonctionnalité**|**Stratégies anti-hameçonnage.**|**Stratégies anti-hameçonnage ATP**|
 |Stratégie par défaut créée automatiquement|![Coche](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Coche](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
 |Créer des stratégies personnalisées||![Coche](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
 |Paramètres de stratégie<sup>\*</sup>||![Coche](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
@@ -55,30 +55,30 @@ Pour configurer les stratégies anti-hameçonnage, consultez les rubriques suiva
 
 - [Configurer des stratégies anti-hameçonnage dans EOP](configure-anti-phishing-policies-eop.md)
 
-- [Configurer des stratégies anti-hameçonnage ATP dans Office 365](configure-atp-anti-phishing-policies.md)
+- [Configurer des stratégies anti-hameçonnage ATP dans Microsoft 365](configure-atp-anti-phishing-policies.md)
 
 Le reste de cette rubrique décrit les paramètres disponibles dans les stratégies de détection d’hameçonnage de EOP et ATP.
 
 ## <a name="spoof-settings"></a>Paramètres d’usurpation
 
-L’usurpation se fait lorsque l’adresse de l’expéditeur d’un message électronique (l’adresse de l’expéditeur affichée dans les clients de messagerie) ne correspond pas au domaine de la source de messagerie. Pour plus d’informations sur l’usurpation, consultez la rubrique [protection contre l’usurpation d’identité dans Office 365](anti-spoofing-protection.md).
+L’usurpation se fait lorsque l’adresse de l’expéditeur d’un message électronique (l’adresse de l’expéditeur affichée dans les clients de messagerie) ne correspond pas au domaine de la source de messagerie. Pour plus d’informations sur l’usurpation, consultez la rubrique [protection contre l’usurpation d’identité dans Microsoft 365](anti-spoofing-protection.md).
 
 Les paramètres d’usurpation suivants sont disponibles dans les stratégies anti-hameçonnage et les stratégies anti-hameçonnage ATP :
 
-- **Protection**contre l’usurpation d’identité : active ou désactive la protection contre l’usurpation d’identité. Nous vous recommandons de le laisser activé. Vous utilisez la **stratégie** d’aide à la décision pour autoriser ou bloquer des expéditeurs internes et externes falsifiés spécifiques. Pour plus d’informations, consultez la rubrique [configure usurpation Intelligence in Office 365](learn-about-spoof-intelligence.md).
+- **Protection**contre l’usurpation d’identité : active ou désactive la protection contre l’usurpation d’identité. Nous vous recommandons de le laisser activé. Vous utilisez la **stratégie** d’aide à la décision pour autoriser ou bloquer des expéditeurs internes et externes falsifiés spécifiques. Pour plus d’informations, consultez la rubrique [configure usurpation Intelligence in Microsoft 365](learn-about-spoof-intelligence.md).
 
   > [!NOTE]
-  > Les paramètres d’usurpation d’identité sont activés par défaut dans la stratégie anti-hameçonnage par défaut dans EOP, la stratégie anti-hameçonnage par défaut ATP, et dans les nouvelles stratégies de détection d’hameçonnage personnalisées ATP que vous créez. <br/><br/> Vous n’avez pas besoin de désactiver la protection contre l’usurpation d’identité si votre enregistrement MX ne pointe pas vers Office 365 ; vous activez le filtrage amélioré pour les connecteurs à la place. Pour obtenir des instructions, voir [Enhanced Filtering for Connectors in Exchange Online](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).
+  > Les paramètres d’usurpation d’identité sont activés par défaut dans la stratégie anti-hameçonnage par défaut dans EOP, la stratégie anti-hameçonnage par défaut ATP, et dans les nouvelles stratégies de détection d’hameçonnage personnalisées ATP que vous créez. <br/><br/> Vous n’avez pas besoin de désactiver la protection contre l’usurpation d’identité si votre enregistrement MX ne pointe pas vers Microsoft 365 ; vous activez le filtrage amélioré pour les connecteurs à la place. Pour obtenir des instructions, voir [Enhanced Filtering for Connectors in Exchange Online](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).
 
   Pour les messages provenant d’expéditeurs usurpés bloqués, vous pouvez également spécifier l’action à effectuer sur les messages :
 
-  - **Déplacer le message vers le dossier courrier indésirable**: il s’agit de la valeur par défaut. Le message est remis à la boîte aux lettres et déplacé vers le dossier courrier indésirable. Dans Exchange Online, le message est déplacé vers le dossier courrier indésirable si la règle de courrier indésirable est activée dans la boîte aux lettres (elle est activée par défaut). Pour plus d’informations, voir [Configurer les paramètres du courrier indésirable sur les boîtes aux lettres Exchange Online dans Office 365](configure-junk-email-settings-on-exo-mailboxes.md).
+  - **Déplacer le message vers le dossier courrier indésirable**: il s’agit de la valeur par défaut. Le message est remis à la boîte aux lettres et déplacé vers le dossier courrier indésirable. Dans Exchange Online, le message est déplacé vers le dossier courrier indésirable si la règle de courrier indésirable est activée dans la boîte aux lettres (elle est activée par défaut). Pour plus d’informations, consultez la rubrique [configurer les paramètres du courrier indésirable sur les boîtes aux lettres Exchange Online dans Microsoft 365](configure-junk-email-settings-on-exo-mailboxes.md).
 
   - **Mettre en quarantaine le message**: envoie le message en quarantaine au lieu des destinataires prévus. Pour plus d'informations à propos de la quarantaine, consultez les rubriques suivantes :
 
-    - [Quarantaine dans Office 365](quarantine-email-messages.md)
-    - [Gérer les messages et fichiers mis en quarantaine en tant qu’administrateur dans Office 365](manage-quarantined-messages-and-files.md)
-    - [Rechercher et publier des messages mis en quarantaine en tant qu’utilisateur dans Office 365](find-and-release-quarantined-messages-as-a-user.md)
+    - [Mise en quarantaine dans Microsoft 365](quarantine-email-messages.md)
+    - [Gérer les messages et les fichiers mis en quarantaine en tant qu’administrateur dans Microsoft 365](manage-quarantined-messages-and-files.md)
+    - [Rechercher et débloquer les messages mis en quarantaine en tant qu’utilisateur dans Microsoft 365](find-and-release-quarantined-messages-as-a-user.md)
 
 - **Expéditeur non authentifié**: active ou désactive l’identification d’expéditeur non identifiée dans Outlook. Notamment :
 
@@ -88,7 +88,7 @@ Les paramètres d’usurpation suivants sont disponibles dans les stratégies an
 
   Pour empêcher l’ajout de ces identificateurs à des messages provenant d’expéditeurs spécifiques, vous disposez des options suivantes :
 
-  - Autoriser l’expéditeur à usurper la stratégie d’intelligence d’usurpation d’identité. Pour obtenir des instructions, consultez la rubrique [configure usurpation Intelligence in Office 365](learn-about-spoof-intelligence.md).
+  - Autoriser l’expéditeur à usurper la stratégie d’intelligence d’usurpation d’identité. Pour obtenir des instructions, consultez la rubrique [configure usurpation Intelligence in Microsoft 365](learn-about-spoof-intelligence.md).
 
   - [Configurez l’authentification de messagerie](email-validation-and-authentication.md#configure-email-authentication-for-domains-you-own) pour le domaine de l’expéditeur.
   
@@ -118,7 +118,7 @@ Les paramètres de stratégie suivants sont disponibles uniquement dans les stra
 
   - **Destinataire**: une ou plusieurs boîtes aux lettres, utilisateurs de messagerie ou contacts de messagerie dans votre organisation.
   - Le **destinataire est membre de**: un ou plusieurs groupes de votre organisation.
-  - **Le domaine du destinataire est**: un ou plusieurs domaines acceptés configurés dans Office 365.
+  - **Le domaine du destinataire est**: un ou plusieurs domaines acceptés configurés dans Microsoft 365.
 
   - **Sauf**dans les cas suivants : exceptions pour la règle. Les paramètres et le comportement sont exactement comme les conditions :
 
@@ -152,13 +152,13 @@ Les paramètres d’emprunt d’identité suivants sont disponibles uniquement d
 
   - **Rediriger le message vers d’autres adresses de messagerie**: envoie le message aux destinataires spécifiés au lieu des destinataires prévus.
 
-  - **Déplacer le message vers le dossier courrier indésirable**: le message est remis à la boîte aux lettres et déplacé vers le dossier courrier indésirable. Dans Exchange Online, le message est déplacé vers le dossier courrier indésirable si la règle de courrier indésirable est activée dans la boîte aux lettres (elle est activée par défaut). Pour plus d’informations, voir [Configurer les paramètres du courrier indésirable sur les boîtes aux lettres Exchange Online dans Office 365](configure-junk-email-settings-on-exo-mailboxes.md).
+  - **Déplacer le message vers le dossier courrier indésirable**: le message est remis à la boîte aux lettres et déplacé vers le dossier courrier indésirable. Dans Exchange Online, le message est déplacé vers le dossier courrier indésirable si la règle de courrier indésirable est activée dans la boîte aux lettres (elle est activée par défaut). Pour plus d’informations, consultez la rubrique [configurer les paramètres du courrier indésirable sur les boîtes aux lettres Exchange Online dans Microsoft 365](configure-junk-email-settings-on-exo-mailboxes.md).
 
     - **Mettre en quarantaine le message**: envoie le message en quarantaine au lieu des destinataires prévus. Pour plus d'informations à propos de la quarantaine, consultez les rubriques suivantes :
 
-    - [Quarantaine dans Office 365](quarantine-email-messages.md)
-    - [Gérer les messages et fichiers mis en quarantaine en tant qu’administrateur dans Office 365](manage-quarantined-messages-and-files.md)
-    - [Rechercher et publier des messages mis en quarantaine en tant qu’utilisateur dans Office 365](find-and-release-quarantined-messages-as-a-user.md)
+    - [Mise en quarantaine dans Microsoft 365](quarantine-email-messages.md)
+    - [Gérer les messages et les fichiers mis en quarantaine en tant qu’administrateur dans Microsoft 365](manage-quarantined-messages-and-files.md)
+    - [Rechercher et débloquer les messages mis en quarantaine en tant qu’utilisateur dans Microsoft 365](find-and-release-quarantined-messages-as-a-user.md)
 
   - **Remise du message et ajout d’autres adresses à la ligne CCI**: remet le message aux destinataires concernés et remet en silence le message aux destinataires spécifiés.
 
@@ -172,7 +172,7 @@ Les paramètres d’emprunt d’identité suivants sont disponibles uniquement d
 
 - **Intelligence des boîtes aux lettres**: active ou désactive l’intelligence artificielle (ai) qui détermine les modèles de courrier des utilisateurs avec leurs contacts fréquents. Ce paramètre permet à l’AI de faire la distinction entre les messages légitimes et falsifiés de ces contacts. La boîte aux lettres n’est disponible que pour les boîtes aux lettres Exchange Online.
 
-- **Protection contre l’usurpation d’identité basée sur les boîtes aux lettres**: active ou désactive les résultats d’emprunt d’identité améliorés en fonction du mappage d’expéditeur individuel de chaque utilisateur. Cette intelligence permet à Office 365 de personnaliser la détection de l’emprunt d’identité de l’utilisateur et de mieux gérer les faux positifs. Lorsque l’emprunt d’identité de l’utilisateur est détecté, vous pouvez définir une action spécifique à effectuer sur le message :
+- **Protection contre l’usurpation d’identité basée sur les boîtes aux lettres**: active ou désactive les résultats d’emprunt d’identité améliorés en fonction du mappage d’expéditeur individuel de chaque utilisateur. Cette intelligence permet à Microsoft 365 de personnaliser la détection de l’emprunt d’identité de l’utilisateur et de mieux gérer les faux positifs. Lorsque l’emprunt d’identité de l’utilisateur est détecté, vous pouvez définir une action spécifique à effectuer sur le message :
 
   - **Ne pas appliquer d’action**
   - **Rediriger le message vers d’autres adresses de messagerie**

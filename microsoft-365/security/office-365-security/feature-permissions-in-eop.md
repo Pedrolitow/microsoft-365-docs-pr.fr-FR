@@ -12,18 +12,18 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 34674847-a6b7-4a7e-9eaa-b64f22bc150d
 description: Les autorisations nécessaires à l'exécution de tâches de gestion de Microsoft Exchange Online Protection (EOP) varient selon les fonctionnalités gérées.
-ms.openlocfilehash: 2129df7faaa977d59f8af8082291520d33bc9cc7
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 146bf34f157eb30e680ad9e0c3e53501d6e7b425
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599311"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43638117"
 ---
 # <a name="feature-permissions-in-eop"></a>Autorisations des fonctionnalités dans EOP
 
 Les autorisations requises pour effectuer des tâches de gestion d’Exchange Online Protection (EOP) varient en fonction de la fonctionnalité que vous gérez.
 
-Pour configurer EOP, vous devez être un administrateur global Office 365 ou un administrateur d'entreprise Exchange (le groupe de rôles Gestion de l'organisation).
+Pour configurer EOP, vous devez être un administrateur général ou un administrateur d’entreprise Exchange (le groupe de rôles gestion de l’organisation).
 
 ## <a name="exchange-online-protection-permissions"></a>Autorisations Exchange Online Protection
 
@@ -36,7 +36,7 @@ Consultez le tableau suivant afin de déterminer les autorisations requises pour
 |Règles de flux de messagerie|Gestion de l’organisation <br/><br/> Gestion des enregistrements|
 |Domaines|Gestion de l’organisation <br/><br/> Afficher uniquement la gestion de l’organisation|
 |Protection avancée contre les menaces (ATP)|Gestion de l’organisation <br/><br/> Gestion de l’hygiène|
-|Connecteurs Office 365|Gestion de l’organisation|
+|Connecteurs Microsoft 365|Gestion de l’organisation|
 |Suivi des messages|Gestion de l’organisation <br/><br/> Afficher uniquement la gestion de l’organisation|
 |Configuration de l'organisation|Gestion de l’organisation|
 |Quarantaine|Gestion de l’organisation <br/><br/> Afficher uniquement la gestion de l’organisation <br/><br/> Gestion de l’hygiène|

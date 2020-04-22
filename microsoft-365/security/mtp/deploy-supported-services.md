@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 1441790bfa0c587c4abceb87eb1e4daae6e4d157
-ms.sourcegitcommit: 09c3e2f3129c5e43cd8420cccd0676ff3a29a355
+ms.openlocfilehash: c29027bb641530ba2d3c7a22c578770c098f53ba
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "43521479"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43633470"
 ---
 # <a name="deploy-supported-services"></a>Déployer les services pris en charge
 
@@ -40,7 +40,7 @@ Une licence de sécurité Microsoft 365 E5, E5 Security, a5 ou a5 ou une combina
 
 | Service pris en charge | Description |
 | ------ | ------ |
-| Microsoft Defender - PACM | Suite de protection de point de terminaison basée sur des capteurs de comportement puissants, sur l’analyse de Cloud et sur l’intelligence des menaces |
+| Microsoft Defender ATP | Suite de protection de point de terminaison basée sur des capteurs de comportement puissants, sur l’analyse de Cloud et sur l’intelligence des menaces |
 | Office 365 – Protection avancée contre les menaces | Protection avancée de vos applications et données dans Office 365, y compris la messagerie et d’autres outils de collaboration |
 | Azure ATP | Défense contre les menaces avancées, les identités compromises et les Insiders malveillants à l’aide de signaux Active Directory corrélés |
 | Microsoft Cloud App Security | Identifier et combattre Cyber dans vos services Cloud tiers et Microsoft |
@@ -61,8 +61,8 @@ Le tableau ci-dessous répertorie la façon dont chaque service pris en charge f
 
 | Service | Data (signale & informations corrélées) | Correction de l’étendue de réponse & |
 | ------ | ------ | ------ |
-| Microsoft Defender - PACM | -États de point de terminaison et événements bruts<br />-Détections de point de terminaison et alertes, y compris antivirus, EDR, réduction de surface d’attaque<br />-Infos sur les fichiers et les autres entités observées sur les points de terminaison | Points de terminaison |
-| Office 365 – Protection avancée contre les menaces | -États de messagerie et de boîte aux lettres et événements bruts<br />-Détections de messages électroniques, de pièces jointes et de liens | -Boîtes aux lettres<br />-Comptes Office 365 |
+| Microsoft Defender ATP | -États de point de terminaison et événements bruts<br />-Détections de point de terminaison et alertes, y compris antivirus, EDR, réduction de surface d’attaque<br />-Infos sur les fichiers et les autres entités observées sur les points de terminaison | Points de terminaison |
+| Office 365 – Protection avancée contre les menaces | -États de messagerie et de boîte aux lettres et événements bruts<br />-Détections de messages électroniques, de pièces jointes et de liens | -Boîtes aux lettres<br />-Comptes Microsoft 365 |
 | Azure ATP | -Signaux Active Directory, y compris les événements d’authentification<br />-Détections comportementales liées à l’identité | Identités |
 | Microsoft Cloud App Security | -Détection d’applications et de services Cloud insanctionnés (cliché instantané)<br />-Exposition des données aux applications Cloud<br />-Activité de menace associée aux applications Cloud | Applications cloud |
 
@@ -71,7 +71,7 @@ Le déploiement de chaque service nécessite généralement un approvisionnement
 
 | Service | Instructions de mise en service | Configuration initiale |
 | ------ | ------ | ------ |
-| Microsoft Defender - PACM | [Guide de déploiement de Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/deployment-phases) | *Voir les instructions de mise en service* |
+| Microsoft Defender ATP | [Guide de déploiement de Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/deployment-phases) | *Voir les instructions de mise en service* |
 | Office 365 – Protection avancée contre les menaces | *Aucun, configuré avec Office 365* | [Configurez des stratégies ATP](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp#configure-atp-policies) |
 | Azure ATP | [QuickStart : créer votre instance Azure ATP](https://docs.microsoft.com/azure-advanced-threat-protection/install-atp-step1) | *Voir les instructions de mise en service* |
 | Microsoft Cloud App Security | *Aucune* | [QuickStart : prise en main de la sécurité des applications Cloud Microsoft](https://docs.microsoft.com/cloud-app-security/getting-started-with-cloud-app-security) |

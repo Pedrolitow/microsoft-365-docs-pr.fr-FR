@@ -1,5 +1,5 @@
 ---
-title: Acheter un abonnement à Office 365 pour les entreprises à partir de votre version d’évaluation gratuite
+title: Acheter un abonnement à Microsoft 365 pour les entreprises à partir de votre version d’évaluation gratuite
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -26,17 +26,17 @@ search.appverid:
 - MOE150
 - BEA160
 ms.assetid: 485fee6d-b22e-440a-9053-a4e7fa509c92
-description: Achetez un abonnement Office 365 pour les entreprises. Vous pouvez acheter le même type d’abonnement que vous avez essayé, ou une autre offre.
-ms.openlocfilehash: 10e3212b739128a9cd2af23f22b644ad4b1df2d9
-ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
+description: Achetez un abonnement Microsoft 365 pour les entreprises. Vous pouvez acheter le même type d’abonnement que vous avez essayé, ou une autre offre.
+ms.openlocfilehash: 3635a4ae729aa0759ef1f2de2905fa745a48951a
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43142286"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634943"
 ---
-# <a name="buy-a-subscription-to-office-365-for-business-from-your-free-trial"></a>Acheter un abonnement à Office 365 pour les entreprises à partir de votre version d’évaluation gratuite
+# <a name="buy-a-subscription-to-microsoft-365-for-business-from-your-free-trial"></a>Acheter un abonnement à Microsoft 365 pour les entreprises à partir de votre version d’évaluation gratuite
 
-Vous avez essayé Office 365 et vous êtes maintenant prêt à l’acheter. Deux options s'offrent à vous lorsque vous achetez Office 365 à partir de votre version d'évaluation :
+Vous avez essayé Microsoft 365 et vous êtes maintenant prêt à acheter. Deux options s’offrent à vous lorsque vous achetez Microsoft 365 à partir de votre version d’évaluation :
   
 - [Acheter la même offre que votre version d’évaluation](#buy-the-same-plan-as-your-trial)
 - [Acheter une autre offre que votre version d’évaluation](#buy-a-different-plan-than-your-trial)
@@ -98,6 +98,7 @@ Si vous achetez un abonnement d'un type différent de celui de votre version d'�
 
 ::: moniker range="o365-worldwide"
 
+
 1. Dans le centre d’administration, accédez à la page **facturation ** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">Acheter des services</a>.
 
 2. Dans la page **Acheter des services**, sélectionnez l’abonnement que vous souhaitez acheter, puis sélectionnez **Acheter**.
@@ -136,6 +137,7 @@ Si vous achetez un abonnement d'un type différent de celui de votre version d'�
 
 ::: moniker range="o365-21vianet"
 
+
 1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Abonnements</a>.
 
 2. Sur la page **Abonnements**, sélectionnez **Ajouter des abonnements**.
@@ -156,10 +158,11 @@ Si vous achetez un abonnement d'un type différent de celui de votre version d'�
 
 ::: moniker-end
 
+
 ## <a name="related-articles"></a>Articles connexes
 
 [Prolonger votre version d’évaluation](extend-your-trial.md)
   
-[S’inscrire à Office 365](../admin/admin-overview/sign-up-for-office-365.md)
+[Inscrivez-vous à Microsoft 365](../admin/admin-overview/sign-up-for-office-365.md)
   
-[Changer d’offre ou d’abonnement Office 365](subscriptions/switch-to-a-different-plan.md)
+[Basculer vers un autre plan ou abonnement Microsoft 365](subscriptions/switch-to-a-different-plan.md)

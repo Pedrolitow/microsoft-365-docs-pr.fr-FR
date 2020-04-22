@@ -22,13 +22,13 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 80bdae57-f8bc-4e40-a58c-956007117ecb
-description: Découvrez comment utiliser Microsoft 365 Business pour supprimer les données de l’entreprise dont disposent vos utilisateurs sur leurs appareils ou PC Windows.
-ms.openlocfilehash: 1cfcf836f71cb81015d28a848611678252731b9c
-ms.sourcegitcommit: 217de0fc54cbeaea32d253f175eaf338cd85f5af
+description: Découvrez comment utiliser Microsoft 365 pour les entreprises afin de supprimer les données de la société dont disposent vos utilisateurs sur leurs appareils ou PC Windows.
+ms.openlocfilehash: 80997a48bb3924ab20f16a454120d24caf76e1e7
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42561317"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634845"
 ---
 # <a name="remove-company-data-from-devices"></a>Supprimer des données d'entreprise sur des appareils
 
@@ -36,7 +36,7 @@ ms.locfileid: "42561317"
 
 ## <a name="remove-company-data"></a>Supprimer les données de l’entreprise
 
-Vous pouvez utiliser Microsoft 365 Entreprise pour supprimer les données d'entreprise protégées par Microsoft 365 présentes sur les [appareils](app-protection-settings-for-android-and-ios.md) ou [PC Windows](protection-settings-for-windows-10-devices.md) de vos utilisateurs. **Si vous supprimez des données d'entreprise d'un appareil, vous ne pourrez pas les restaurer**. 
+Vous pouvez utiliser Microsoft 365 pour les entreprises afin de supprimer les données de la société dont disposent vos utilisateurs sur leurs [appareils](app-protection-settings-for-android-and-ios.md) ou sur les [ordinateurs Windows](protection-settings-for-windows-10-devices.md) protégés par Microsoft 365. **Si vous supprimez des données d'entreprise d'un appareil, vous ne pourrez pas les restaurer**. 
   
 1. Accédez au Centre d’administration à l’adresse <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>.
     

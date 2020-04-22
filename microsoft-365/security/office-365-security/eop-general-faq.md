@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 9dbff00a-474e-4452-aeb5-5be9a6b8c6d5
 description: "Cette rubrique présente les réponses aux questions générales les plus fréquentes concernant le service de filtrage du courrier électronique hébergé dans le nuage Microsoft Exchange Online Protection (EOP). Pour d'autres rubriques du Forum Aux Questions (FAQ), suivez les liens suivants :"
-ms.openlocfilehash: 842f022edbba9d1a790a26987982c3bd508e9d5e
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: 899109a768399f53674b97fc8df2f71aa822316d
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42893681"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636251"
 ---
 # <a name="eop-general-faq"></a>Forum Aux Questions d’ordre général concernant Exchange Online Protection (EOP)
 
@@ -51,19 +51,19 @@ R. EOP fait l'objet d'une licence par utilisateur. Pour obtenir les derniers tar
 
 R. Le filtrage commence dès que vous modifiez votre enregistrement MX, conformément aux étapes décrites dans la rubrique [Configurer votre service EOP](set-up-your-eop-service.md), et que votre courrier électronique circule dans EOP. La propagation de l'enregistrement MX via DNS peut prendre entre 24 et 48 heures. Vous pouvez affiner vos paramètres de protection dans le Centre d'administration Exchange (CAE) à tout moment au cours de ce processus.
 
-**Q. Do I have to use all features of Microsoft Office 365 to use EOP? What if I just want EOP protection and that's all?**
+**Q. dois-je utiliser toutes les fonctionnalités de Microsoft 365 pour utiliser EOP ? Que se passe-t-il si je veux uniquement la protection d’EOP ?**
 
-R. Vous pouvez utiliser EOP pour protéger vos boîtes aux lettres locales sans utiliser aucune autre fonctionnalité d'Office 365. C'est ce qu'on appelle un abonnement autonome. Une liste des fonctionnalités d'EOP est disponible dans la rubrique [Description du service de protection Exchange Online](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description).
+A. Vous pouvez utiliser EOP pour protéger vos boîtes aux lettres locales sans utiliser d’autres fonctionnalités de Microsoft 365. C'est ce qu'on appelle un abonnement autonome. Une liste des fonctionnalités d'EOP est disponible dans la rubrique [Description du service de protection Exchange Online](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description).
 
-**Q. Pourquoi ai-je besoin d'un client Office 365 lors de l'inscription pour le filtrage des messages électroniques par EOP ?**
+**Q. Pourquoi ai-je besoin d’un client Microsoft 365 lors de l’inscription au filtrage du courrier électronique via EOP ?**
 
-R. Office 365 est le nom donné à un ensemble de produits et de services qui sont accessibles via un client Office 365. Envisagez le client Office 365 comme le point de départ auquel vous pouvez ajouter des licences pour le filtrage des messages électroniques.
+A. Microsoft 365 est le nom attribué à une collection de produits et de services qui peut être accessible via un client Microsoft 365. Imaginez le client Microsoft 365 comme point de départ auquel vous pouvez ajouter des licences pour le filtrage du courrier électronique.
 
 **Q. Does EOP have a communication portal where I can find out about known issues and expected resolutions? What about new features?**
 
 R. Le centre d’administration Microsoft 365 dispose de certaines de ces informations. Si vous êtes concerné par un événement de niveau de service, vous devriez voir une alerte de communication (généralement accompagnée d’une icône en cloche) après vous être connecté au centre d’administration de Microsoft 365. Nous vous recommandons de lire ces informations et d'effectuer les actions appropriées.
 
-Pour les nouvelles fonctionnalités EOP, la [feuille de route d'Office 365 pour les entreprises](https://www.microsoft.com/microsoft-365/roadmap?filters=O365) est une excellente ressource pour trouver des informations sur les nouvelles fonctionnalités à venir. Nous publierons également des Articles de blog sur les nouvelles fonctionnalités sur le site Web des [blogs Microsoft 365](https://www.microsoft.com/microsoft-365/blog/) .
+En ce qui concerne les nouvelles fonctionnalités EOP, la feuille [de route de Microsoft 365 pour les entreprises](https://www.microsoft.com/microsoft-365/roadmap?filters=O365) est une excellente ressource pour trouver des informations sur les nouvelles fonctionnalités à venir. Nous publierons également des Articles de blog sur les nouvelles fonctionnalités sur le site Web des [blogs Microsoft 365](https://www.microsoft.com/microsoft-365/blog/) .
 
 **Q. Le service fonctionne-t-il avec des versions d'Exchange héritées (par exemple, Exchange Server 2010) et les environnements non Exchange ?**
 
@@ -75,7 +75,7 @@ A. N'importe quelle taille. Le réseau EOP offre une capacité suffisante pour s
 
 **De quelles autorisations ai-je besoin pour configurer EOP ?**
 
-Pour configurer EOP, vous devez être un administrateur global Office 365 ou un administrateur d'entreprise Exchange (groupe de rôles Gestion de l'organisation).
+Pour configurer EOP, vous devez être un administrateur général ou un administrateur d’entreprise Exchange (le groupe de rôles gestion de l’organisation).
 
 **Q. Comment savoir si mes données et informations sont en sûreté ?**
 

@@ -22,21 +22,21 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez les différences entre la gestion des appareils mobiles et la gestion des applications mobiles, ou MDM et MAM.
-ms.openlocfilehash: 590dc9522be7adc9c24c61091928133fb13d9027
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: ecb06ffc23823df72f9254d881f6b1dc1b781f59
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42057135"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635027"
 ---
 # <a name="difference-between-mdm-and-mam"></a>Différence entre MDM et MAM
 
-Microsoft 365 Business offre plusieurs méthodes pour protéger vos données métiers. Consultez la rubrique [Overview of Microsoft 365 Business](../microsoft-365-business-overview.md) pour en savoir plus sur les différentes protections configurées automatiquement et sur ce que vous pouvez configurer vous-même pour mieux protéger votre entreprise. Vous pouvez également configurer des stratégies qui protègent vos appareils Windows 10 et les données de vos appareils mobiles.
+Microsoft 365 Business Premium offre de nombreux moyens de protéger vos données métiers. Consultez la rubrique [Overview of Microsoft 365 Business Premium](../microsoft-365-business-overview.md) pour en savoir plus sur les différentes protections qui sont configurées automatiquement, et ce que vous pouvez configurer vous-même pour mieux protéger votre entreprise. Vous pouvez également configurer des stratégies qui protègent vos appareils Windows 10 et les données de vos appareils mobiles.
 [Définir les paramètres de protection des applications pour les appareils Windows 10](../protection-settings-for-windows-10-devices.md).
 
 ## <a name="mobile-device-management-or-mdm"></a>Gestion des appareils mobiles ou MDM
 
-Microsoft 365 Business vous permet de configurer des stratégies de protection des données sur vos appareils Windows 10. Lorsqu’un appareil est sous gestion des appareils mobiles, vous contrôlez l’ensemble de l’appareil, et vous pouvez effacer les données qu’il contient, et également les réinitialiser aux paramètres d’usine. Pour plus d’informations, consultez la rubrique [définir les paramètres de protection des appareils pour les PC Windows 10](../protection-settings-for-windows-10-pcs.md).
+Microsoft 365 Business Premium vous permet de configurer des stratégies de protection des données sur vos appareils Windows 10. Lorsqu’un appareil est sous gestion des appareils mobiles, vous contrôlez l’ensemble de l’appareil, et vous pouvez effacer les données qu’il contient, et également les réinitialiser aux paramètres d’usine. Pour plus d’informations, consultez la rubrique [définir les paramètres de protection des appareils pour les PC Windows 10](../protection-settings-for-windows-10-pcs.md).
 
 ## <a name="mobile-application-management-or-mam"></a>Gestion des applications mobiles ou MAM
 

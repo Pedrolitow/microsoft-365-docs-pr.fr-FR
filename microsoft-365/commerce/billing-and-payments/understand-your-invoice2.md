@@ -1,5 +1,5 @@
 ---
-title: Comprendre votre facture pour Office 365 pour les entreprises
+title: Comprendre votre facture pour Microsoft 365 pour les entreprises
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -23,15 +23,15 @@ search.appverid:
 - MOE150
 - BEA160
 ms.assetid: 0724b428-fb59-4962-8c37-6674166d7507
-description: Découvrez comment interpréter les frais, la facturation et les informations de paiement sur votre facture Office 365 pour les entreprises, et comment modifier le numéro de commande d’achat.
-ms.openlocfilehash: 152b5d888b8773e2e60cea8584417e47ee58c47f
-ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
+description: Découvrez comment interpréter les frais, la facturation et les informations de paiement sur votre facture Microsoft 365 pour les entreprises, et comment modifier le numéro de bon de commande.
+ms.openlocfilehash: 392957ecf06c6200bca3daf205946f5b8fd1563a
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43142298"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634967"
 ---
-# <a name="understand-your-invoice-for-office-365-for-business"></a>Comprendre votre facture pour Office 365 pour les entreprises
+# <a name="understand-your-invoice-for-microsoft-365-for-business"></a>Comprendre votre facture pour Microsoft 365 pour les entreprises
 
 Chaque mois, vous recevez un courrier électronique qui vous indique que votre nouvelle déclaration de facturation est disponible dans le centre d’administration. [Découvrez comment rechercher et afficher votre facture](view-your-bill-or-invoice.md).
   
@@ -138,6 +138,6 @@ Si vous payez par facture, vous pouvez ajouter ou modifier le numéro de bon de 
 
 ## <a name="related-articles"></a>Articles connexes
 
-[Régler votre abonnement Office 365 pour les entreprises](pay-for-your-subscription.md)
+[Payez votre abonnement Microsoft 365 pour les entreprises](pay-for-your-subscription.md)
 
 [ Options de paiement de Minecraft: Education Edition ](https://go.microsoft.com/fwlink/p/?linkid=838761)

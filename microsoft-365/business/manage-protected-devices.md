@@ -1,5 +1,5 @@
 ---
-title: Gérer les appareils protégés avec Microsoft 365 entreprise
+title: Gérer les appareils protégés avec Microsoft 365 pour les entreprises
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -27,14 +27,14 @@ search.appverid:
 - MOE150
 ms.assetid: 018a2a96-3811-4b5d-b751-3b6330b34256
 description: Découvrez comment supprimer les données d’entreprise des appareils gérés via des stratégies de protection, ainsi que réinitialiser les appareils Windows 10 à leurs paramètres d’usine.
-ms.openlocfilehash: 97c9751d020d7f2aecb1e64718721c1ca25189e1
-ms.sourcegitcommit: 217de0fc54cbeaea32d253f175eaf338cd85f5af
+ms.openlocfilehash: 180887dca3226512ab558e98d2b5a78da3521e53
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42561517"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634285"
 ---
-# <a name="manage-protected-devices-with-microsoft-365-business"></a>Gérer les appareils protégés avec Microsoft 365 entreprise
+# <a name="manage-protected-devices-with-microsoft-365-for-business"></a>Gérer les appareils protégés avec Microsoft 365 pour les entreprises
 
 Une fois que l’utilisateur a connecté son appareil à votre organisation en vous connectant avec son compte professionnel à l’appareil ou aux applications Office sur l’appareil, vous pouvez protéger l’appareil à l’aide des stratégies que vous avez configurées. Les appareils connectés sont répertoriés sur la page **appareils** . Si un appareil est perdu ou volé, vous pouvez le gérer à partir de cette page pour supprimer les données d'entreprise. Vous pouvez également réinitialiser les paramètres par défaut des appareils Windows 10 pour effacer tous les paramètres personnalisés. 
 

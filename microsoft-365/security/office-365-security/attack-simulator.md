@@ -1,5 +1,5 @@
 ---
-title: Simulateur d’attaque dans Office 365 ATP
+title: Simulateur d’attaque dans la protection avancée contre les menaces
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -15,31 +15,31 @@ search.appverid:
 ms.assetid: da5845db-c578-4a41-b2cb-5a09689a551b
 ms.collection:
 - M365-security-compliance
-description: Utilisez un simulateur d’attaque pour exécuter des attaques simulant le hameçonnage et les mots de passe dans votre organisation plan 2 Office 365 E5 ou ATP, ce qui peut vous aider à identifier les utilisateurs vulnérables avant qu’une véritable attaque ne touche votre entreprise.
-ms.openlocfilehash: 95b7af302a5dcc1987040c23a7dde867e2d09292
-ms.sourcegitcommit: 08a4ee7765f3eba42f0c037c5c564c581e45df3e
+description: En tant qu’administrateur général, vous pouvez utiliser un simulateur d’attaque pour exécuter des scénarios d’attaque réaliste dans votre organisation. Cela peut vous aider à identifier et à trouver des utilisateurs vulnérables avant qu’une attaque réelle ne touche votre entreprise.
+ms.openlocfilehash: cac09ed48a46531ea2246f9c3ef798649dc73196
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42637337"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43638571"
 ---
-# <a name="attack-simulator-in-office-365-atp"></a>Simulateur d’attaque dans Office 365 ATP
+# <a name="attack-simulator-in-atp"></a>Simulateur d’attaque dans la protection avancée contre les menaces
 
-Le simulateur d’attaque dans Office 365 Advanced Threat Protection Plan 2 (ATP plan 2) vous permet d’exécuter des campagnes d’hameçonnage et de mot de passe réalistes, mais simulées dans votre organisation. Vous pouvez utiliser les résultats des campagnes pour identifier et former les utilisateurs vulnérables.
+**Résumé** Si vous êtes un administrateur général ou un administrateur de la sécurité et que votre organisation a Office 365 Advanced Threat Protection Plan 2, qui inclut des [fonctionnalités d’enquête et de réponse aux menaces](office-365-ti.md), vous pouvez utiliser un simulateur d’attaque pour exécuter des scénarios d’attaque réaliste dans votre organisation. Cela peut vous aider à identifier les utilisateurs vulnérables avant qu’une véritable attaque n’ait un impact sur votre chiffre d’affaires. Lisez cet article pour en savoir plus.
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu’il faut savoir avant de commencer
+## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu'il faut savoir avant de commencer
 
-- Pour ouvrir le centre de sécurité & conformité d’Office 365, <https://protection.office.com/>accédez à. Le simulateur d’attaque est disponible dans le **simulateur d’attaques** **Threat Management** \> .
+- Pour ouvrir le centre de sécurité & conformité, accédez <https://protection.office.com/>à. Le simulateur d’attaque est disponible dans le **simulateur d’attaques** **Threat Management** \> .
 
   ![Gestion des menaces-simulateur d’attaque](../../media/ThreatMgmt-AttackSimulator.png)
 
-- Pour plus d’informations sur la disponibilité d’un simulateur d’attaque sur différents abonnements Office 365, consultez la rubrique [Description du service protection avancée contre les menaces d’office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
+- Pour plus d’informations sur la disponibilité d’un simulateur d’attaque sur différents abonnements Microsoft 365, consultez la rubrique [Description du service protection avancée contre les menaces d’Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
 
-- Vous devez être membre des groupes de rôles **gestion** de l’organisation ou **administrateur de sécurité** . Pour plus d’informations sur les groupes de rôles dans le centre de sécurité & conformité, consultez [la rubrique autorisations dans le centre de sécurité & conformité Office 365](permissions-in-the-security-and-compliance-center.md).
+- Vous devez être membre des groupes de rôles **gestion** de l’organisation ou **administrateur de sécurité** . Pour plus d’informations sur les groupes de rôles dans le centre de sécurité & conformité, consultez [la rubrique autorisations dans le centre de sécurité & conformité](permissions-in-the-security-and-compliance-center.md).
 
 - Votre compte doit être configuré pour l’authentification multifacteur (MFA) pour créer et gérer des campagnes dans un simulateur d’attaque. Pour obtenir des instructions, consultez la rubrique [set up Multi-Factor Authentication](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication).
 
-- Vous pouvez uniquement exécuter des campagnes d’hameçonnage ou d’attaque par mot de passe sur les utilisateurs disposant de boîtes aux lettres dans Exchange Online.
+Pour qu’une attaque réussisse, assurez-vous que le compte que vous utilisez pour exécuter des attaques simulées utilise l’authentification multifacteur. En outre, vous devez être administrateur général ou administrateur de sécurité. (Pour en savoir plus sur les rôles et les autorisations, consultez [la rubrique autorisations dans le centre de sécurité & conformité](permissions-in-the-security-and-compliance-center.md)).
 
 - Les campagnes de hameçonnage recueillent et traitent les événements pendant 30 jours. Les données de la campagne historique seront disponibles pendant 90 jours après le lancement de la campagne.
 
@@ -49,11 +49,11 @@ Le simulateur d’attaque dans Office 365 Advanced Threat Protection Plan 2 (ATP
 
 Le *hameçonnage* est un terme générique pour les attaques par courrier électronique qui tentent de voler des informations sensibles dans les messages semblant provenir d’expéditeurs légitimes ou approuvés. Le *Spear Phishing* est une attaque de hameçonnage ciblée qui utilise un contenu très ciblé et personnalisé qui est spécifiquement adapté aux destinataires ciblés (en général, après la reconnaissance des destinataires par l’agresseur).
 
-Pour plus d’informations sur le hameçonnage et le Spear Phishing, consultez la rubrique [hameçonnage](https://docs.microsoft.com/windows/security/threat-protection/intelligence/phishing).
+- Vous êtes un administrateur général ou un administrateur de sécurité
 
 Dans un simulateur d’attaque, deux types différents de campagnes de Spear Phishing sont disponibles :
 
-- **Spear Phishing (informations d’identification)**: l’attaque tente de convaincre les destinataires de cliquer sur une URL dans le message. S’ils cliquent sur le lien, les utilisateurs sont invités à entrer leurs informations d’identification. Si c’est le cas, ils sont dirigés vers l’un des emplacements suivants :
+- L' [authentification multifacteur/l’accès conditionnel](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication) est activé, pour au moins le compte administrateur général et les administrateurs de sécurité qui utiliseront un simulateur d’attaque. (Idéalement, l’accès à plusieurs facteurs/accès conditionnel est activé pour tous les utilisateurs de votre organisation.)
 
   - Page par défaut qui explique qu’il s’agissait d’un simple test et fournit des conseils pour la reconnaissance des messages de hameçonnage.
 

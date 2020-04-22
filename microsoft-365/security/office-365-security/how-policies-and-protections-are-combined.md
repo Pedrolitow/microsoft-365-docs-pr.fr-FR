@@ -1,5 +1,5 @@
 ---
-title: Ordre et priorité de la protection de la messagerie dans Office 365
+title: Ordre et priorité de la protection de la messagerie
 keywords: sécurité, programmes malveillants, Microsoft 365, M365, centre de sécurité, ATP, Microsoft Defender ATP, Office 365 ATP, Azure ATP
 f1.keywords:
 - NOCSH
@@ -14,16 +14,16 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: Décrit l’ordre des applications des protections Office 365 et la façon dont la valeur de priorité dans les stratégies de protection détermine quelle stratégie est appliquée.
-ms.openlocfilehash: 6a95c59a5cd629b704753c6c05c9b8069d9240b1
-ms.sourcegitcommit: db8702cf578b02c6fd6a2670c177b456efae4748
+ms.openlocfilehash: ed4806bad6299dc5a5380bec2f6e1247f9d6b448
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43537412"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43633965"
 ---
-# <a name="order-and-precedence-of-email-protection-in-office-365"></a>Ordre et priorité de la protection de la messagerie dans Office 365
+# <a name="order-and-precedence-of-email-protection"></a>Ordre et priorité de la protection de la messagerie
 
-Dans Office 365, le courrier électronique entrant est évalué par, et peut donc être marqué par plusieurs formes de protection (programme malveillant, courrier indésirable, hameçonnage, etc.). Étant donné toutes ces activités, il peut être difficile de déterminer la stratégie appliquée et l’ordre dans lequel elle a été appliquée.
+En tant qu’utilisateur de Microsoft 365, votre courrier électronique entrant peut être marqué par plusieurs formes de protection. Par exemple, les stratégies de protection contre le hameçonnage intégrées, disponibles pour tous les clients Microsoft 365, et les stratégies anti-hameçonnage plus robustes disponibles pour les clients Office 365 Advanced Threat Protection. Les messages passent également par des analyses de détection multiples pour les programmes malveillants, le courrier indésirable, le hameçonnage, etc. Une fois cette activité terminée, il peut y avoir une certaine confusion quant à l’application de la stratégie.
 
 En règle générale, une stratégie appliquée à un message est identifiée dans l’en-tête **X-Forefront-antispam-Report** de la propriété **Cat (Category)** . Pour plus d’informations, consultez la rubrique [en-têtes de message anti-courrier indésirable](anti-spam-message-headers.md).
 

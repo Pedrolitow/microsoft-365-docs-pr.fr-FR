@@ -1,5 +1,5 @@
 ---
-title: Utilisez votre code promotionnel Office 365 pour bénéficier d'une réduction
+title: Utiliser votre code promotionnel pour réduire le prix
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -20,16 +20,16 @@ search.appverid:
 - MOE150
 - BEA160
 ms.assetid: fce1510d-9ea5-4aff-8752-1676ec7fede3
-description: Découvrez comment appliquer un code promotionnel à votre abonnement Office 365 pour réduire le prix et comment résoudre les problèmes de code promotionnel en cas d’erreur.
+description: Découvrez comment appliquer un code promotionnel à votre abonnement Microsoft 365 pour réduire le prix, et comment résoudre les problèmes de code promotionnel en cas d’erreur.
 ms.custom: okr_SMB
-ms.openlocfilehash: ebb2c06623dc295fdcbc3cac4f51894decc3a7b3
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 55ce4192a2b76fae841c7b5e2a5733c4d5c2769e
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42243091"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631856"
 ---
-# <a name="use-your-office-365-promo-code-to-reduce-price"></a>Utilisez votre code promotionnel Office 365 pour bénéficier d'une réduction
+# <a name="use-your-promo-code-to-reduce-price"></a>Utiliser votre code promotionnel pour réduire le prix
 
 Lorsque vous achetez un abonnement, vous pouvez utiliser un code promotionnel pour réduire le prix. Lisez cet article pour savoir comment appliquer un code promotionnel à votre abonnement, pour en savoir plus sur les [conditions de code promotionnel](#promo-code-terms)et pour [résoudre les problèmes liés aux codes promotionnels](#troubleshooting-promo-codes).
   
@@ -47,7 +47,7 @@ Une fois l'achat finalisé, vous pouvez voir la réduction créée par votre cod
   
 ## <a name="promo-code-terms"></a>Conditions d'utilisation des codes promotionnels
 
-Les instructions suivantes s'appliquent aux codes promotionnels pour les abonnements Office 365 pour les entreprises.
+Les instructions suivantes s’appliquent aux codes promotionnels pour les abonnements Microsoft 365 pour les entreprises.
   
 - **Nombre de codes promotionnels par abonnement** Vous pouvez utiliser un code promotionnel pour plusieurs abonnements dans la même commande, mais vous ne pouvez pas utiliser plusieurs codes promotionnels pour le même abonnement. 
     

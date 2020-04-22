@@ -26,12 +26,12 @@ search.appverid:
 - GEA150
 ms.assetid: 8652f539-3123-4a8f-b9bd-6aa2f0e0372d
 description: Découvrez comment modifier le mode de paiement pour votre abonnement professionnel.
-ms.openlocfilehash: 8b9ae2a8396ff984b8468cf364c1112cb2ef6b13
-ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
+ms.openlocfilehash: 582286dec47b0835c90ff56a0d10d3c34d285e33
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43142596"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632730"
 ---
 # <a name="change-your-payment-method"></a>Changer votre mode de paiement
 
@@ -64,9 +64,9 @@ Lorsque vous achetez Office 365 pour les entreprises, vous choisissez de payer p
 > [!NOTE]
 > Lorsque vous modifiez le mode de paiement, vos utilisateurs continuent à utiliser les mêmes attributions de licences qu'avant.
   
- **Vous voulez modifier la fréquence de paiement ?** Si vous souhaitez modifier la fréquence de paiement de votre abonnement, de la valeur annuelle à mensuelle ou mensuelle, vous devrez [appeler le support Office 365](../../admin/contact-support-for-business-products.md) pour obtenir de l’aide.
+ **Vous voulez modifier la fréquence de paiement ?** Si vous souhaitez modifier la fréquence de paiement de votre abonnement, de la valeur annuelle à mensuelle ou mensuelle, vous devez [contacter le support Microsoft](../../admin/contact-support-for-business-products.md) pour obtenir de l’aide.
   
- **Vous voulez uniquement mettre à jour les informations concernant votre carte bancaire ou votre compte bancaire ?** Pour plus d'informations, voir [Ajouter, mettre à jour ou supprimer une carte bancaire ou un compte bancaire dans Office 365 pour les entreprises](add-update-or-remove-credit-card-or-bank-account.md).
+ **Vous voulez uniquement mettre à jour les informations concernant votre carte bancaire ou votre compte bancaire ?** Voir [Ajouter, mettre à jour ou supprimer une carte bancaire ou un compte bancaire](add-update-or-remove-credit-card-or-bank-account.md).
   
  **Que se passe-t-il s'il me reste un solde impayé ?**
   
@@ -87,6 +87,7 @@ Si vous passez d’une *carte de crédit ou d’un compte bancaire à une factur
   
 Lorsque vous passez d’un paiement par une facture à un paiement avec une carte bancaire ou un compte bancaire, nous créons automatiquement un nouvel abonnement pour vous, déplacez vos utilisateurs vers le nouvel abonnement, puis désactivez votre ancien abonnement. Ne vous inquiétez pas, vos utilisateurs ne verront pas une interruption de service et toutes leurs informations seront disponibles via le nouvel abonnement.
 
+
 1. Dans le centre d’administration, accédez à la page produits de **facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">& services</a> .
 
 2. Si vous êtes en mode **tableau** , sélectionnez **cartes**.
@@ -100,6 +101,7 @@ Lorsque vous passez d’un paiement par une facture à un paiement avec une cart
 6. Si vous ajoutez un mode de paiement, entrez les informations sur la carte ou le compte, puis sélectionnez **Enregistrer**.
   
 7. Vérifiez que le mode de paiement sélectionné est correct, puis sélectionnez **Enregistrer**.
+
 
 ::: moniker-end
 
@@ -140,6 +142,7 @@ Vous pouvez modifier le paiement par facture uniquement si votre commande est au
 
 Si la quantité de votre commande est trop élevée, une vérification de solvabilité peut être nécessaire. Si c’est le cas, le message «pas autorisé à passer à la facture s’affiche. Votre commande nécessite une vérification de solvabilité. " Dans ce cas, vous devez modifier le salaire manuellement. Procédez comme suit pour terminer la modification manuelle.
 
+
 1. Accédez à <a href="https://Office365.com" target="_blank">office365.com</a> et achetez le même abonnement que celui dont vous disposez actuellement. Lors de l’extraction, choisissez l’option de paiement par facture.
 
 > [!IMPORTANT]
@@ -147,7 +150,7 @@ Si la quantité de votre commande est trop élevée, une vérification de solvab
 
 2. Une fois l’achat terminé, annulez l’abonnement d’origine. Vos utilisateurs sont automatiquement déplacés vers le nouvel abonnement.
 
-Si aucune vérification de solvabilité n’est requise, procédez comme suit pour modifier le paiement par facture.
+Si aucune vérification de solvabilité n’est requise, procédez comme suit pour modifier le paiement par facture. 
 
 1. Dans le centre d’administration, accédez à la page produits de **facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">& services</a> .
 
@@ -164,6 +167,7 @@ Si aucune vérification de solvabilité n’est requise, procédez comme suit po
 7. Lorsque vous avez terminé, sélectionnez **Enregistrer**.
 
 8. Vérifiez que le mode de paiement sélectionné est correct, puis sélectionnez **Enregistrer**.
+
 
 ::: moniker-end
 
@@ -193,9 +197,16 @@ Si aucune vérification de solvabilité n’est requise, procédez comme suit po
 
 Procédez comme suit pour vérifier le mode de paiement associé à un abonnement.
 
+
 1. Dans le centre d’administration, accédez à la page produits de **facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">& services</a> .
 
 2. Recherchez l’abonnement que vous souhaitez vérifier. Le mode de paiement configuré pour l’abonnement apparaît dans la section **facturation** .
+
+### <a name="use-the-old-admin-center-to-verify-which-payment-method-is-configured"></a>Utiliser l’ancien centre d’administration pour vérifier la configuration du mode de paiement
+
+1. Dans le centre d’administration, accédez à la page <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">abonnements</a> de **facturation** \> .
+
+2. Recherchez l’abonnement que vous souhaitez vérifier. Le mode de paiement configuré pour l’abonnement s’affiche sous **mode de paiement**.
 
 ::: moniker-end
 

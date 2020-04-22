@@ -27,13 +27,13 @@ search.appverid:
 - GEA150
 - GSP150
 ms.assetid: 96ea3533-de64-4b01-839a-c560875a662c
-description: Découvrez comment ajouter et réduire le stockage de fichiers dans votre abonnement Office 365. Avec le stockage de fichiers supplémentaire, vous pouvez stocker davantage de contenu dans SharePoint Online et OneDrive.
-ms.openlocfilehash: 313ca90c729a89acf00c58e49a7e887313261e66
-ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
+description: Découvrez comment ajouter et réduire le stockage de fichiers dans votre abonnement Microsoft 365. Avec le stockage de fichiers supplémentaire, vous pouvez stocker davantage de contenu dans SharePoint Online et OneDrive.
+ms.openlocfilehash: b5dea51e0e8616749a820ff35827b4390390af50
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43142334"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632742"
 ---
 # <a name="add-storage-space-for-your-subscription"></a>Ajouter de l’espace de stockage pour votre abonnement
 
@@ -43,44 +43,45 @@ Si vous commencez à manquer d’espace de stockage pour vos collections de site
 
 ::: moniker range="o365-worldwide"
 
-1. Connectez-vous à https://admin.microsoft.com en tant qu’administrateur général ou SharePoint. (Si vous voyez un message indiquant que vous n’êtes pas autorisé à accéder à la page, cela signifie que vous ne disposez pas des autorisations d’administrateur Office 365 dans votre organisation.)
-
-2. Dans le volet gauche, sous **centres d’administration**, sélectionnez **SharePoint**. Si la version classique du Centre d’administration SharePoint s’affiche, en haut de la page, sélectionnez **Ouvrir maintenant** pour ouvrir la nouvelle version du Centre d’administration SharePoint.
-
+1. Connectez-vous https://admin.microsoft.com à en tant qu’administrateur global ou SharePoint. (Si vous voyez un message indiquant que vous n’êtes pas autorisé à accéder à la page, vous ne disposez pas des autorisations d’administrateur 365 de Microsoft dans votre organisation.)
+    
+2. Dans le volet gauche, sous **centres d’administration**, sélectionnez **SharePoint**. Si la version classique du Centre d’administration SharePoint s’affiche, en haut de la page, sélectionnez **Ouvrir maintenant** pour ouvrir la nouvelle version du Centre d’administration SharePoint. 
+    
 3. Dans le volet gauche du Centre d’administration SharePoint, cliquez sur **Activer des sites**.
 
-4. Dans le coin supérieur droit de la page, reportez-vous à la quantité de stockage utilisée sur tous les sites, ainsi qu’à l’espace de stockage total de votre abonnement. (Si votre organisation a configuré l’environnement multi-géo dans Office 365, la barre indique également la quantité de stockage utilisée dans tous les emplacements géographiques.)
+4. Dans le coin supérieur droit de la page, reportez-vous à la quantité de stockage utilisée sur tous les sites, ainsi qu’à l’espace de stockage total de votre abonnement. (Si votre organisation a configuré l’environnement multi-géo dans Office 365, la barre indique également la quantité de stockage utilisée dans tous les emplacements géographiques.) 
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. Connectez-vous https://portal.office.de à en tant qu’administrateur global ou SharePoint, puis sélectionnez la vignette admin pour ouvrir le centre d’administration. (Si vous voyez un message indiquant que vous n’avez pas l’autorisation d’accéder à la page, vous n’avez pas d’autorisations d’administrateur 365 Office dans votre organisation.)
-
-2. Dans le volet gauche, sous **centres d’administration**, sélectionnez **SharePoint**. Si la version classique du Centre d’administration SharePoint s’affiche, en haut de la page, sélectionnez **Ouvrir maintenant** pour ouvrir la nouvelle version du Centre d’administration SharePoint.
-
+1. Connectez-vous https://portal.office.de à en tant qu’administrateur global ou SharePoint, puis sélectionnez la vignette admin pour ouvrir le centre d’administration. (Si vous voyez un message indiquant que vous n’êtes pas autorisé à accéder à la page, vous ne disposez pas des autorisations d’administrateur 365 de Microsoft dans votre organisation.)
+    
+2. Dans le volet gauche, sous **centres d’administration**, sélectionnez **SharePoint**. Si la version classique du Centre d’administration SharePoint s’affiche, en haut de la page, sélectionnez **Ouvrir maintenant** pour ouvrir la nouvelle version du Centre d’administration SharePoint. 
+    
 3. Dans le volet gauche du Centre d’administration SharePoint, cliquez sur **Activer des sites**.
 
-4. Dans le coin supérieur droit de la page, reportez-vous à la quantité de stockage utilisée sur tous les sites, ainsi qu’à l’espace de stockage total de votre abonnement.
+4. Dans le coin supérieur droit de la page, reportez-vous à la quantité de stockage utilisée sur tous les sites, ainsi qu’à l’espace de stockage total de votre abonnement. 
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. Connectez-vous https://login.partner.microsoftonline.cn/ à en tant qu’administrateur global ou SharePoint, puis sélectionnez la vignette admin pour ouvrir le centre d’administration. (Si vous voyez un message indiquant que vous n’avez pas l’autorisation d’accéder à la page, vous n’avez pas d’autorisations d’administrateur 365 Office dans votre organisation.)
-
-2. Dans le volet gauche, sous **centres d’administration**, sélectionnez **SharePoint**. Si la version classique du Centre d’administration SharePoint s’affiche, en haut de la page, sélectionnez **Ouvrir maintenant** pour ouvrir la nouvelle version du Centre d’administration SharePoint.
-
+1. Connectez-vous https://login.partner.microsoftonline.cn/ à en tant qu’administrateur global ou SharePoint, puis sélectionnez la vignette admin pour ouvrir le centre d’administration. (Si vous voyez un message indiquant que vous n’êtes pas autorisé à accéder à la page, vous ne disposez pas des autorisations d’administrateur 365 de Microsoft dans votre organisation.)
+     
+2. Dans le volet gauche, sous **centres d’administration**, sélectionnez **SharePoint**. Si la version classique du Centre d’administration SharePoint s’affiche, en haut de la page, sélectionnez **Ouvrir maintenant** pour ouvrir la nouvelle version du Centre d’administration SharePoint. 
+    
 3. Dans le volet gauche du Centre d’administration SharePoint, cliquez sur **Activer des sites**.
 
 4. Dans le coin supérieur droit de la page, reportez-vous à la quantité de stockage utilisée sur tous les sites, ainsi qu’à l’espace de stockage total de votre abonnement.  
 
 ::: moniker-end
 
+
 ![Barre de stockage sur la page sites actifs](https://docs.microsoft.com/sharepoint/sharepointonline/media/active-sites-storage-bar.png)
 
 > [!NOTE]
-> Le stockage utilisé n’inclut pas les modifications apportées au cours des 24-48 dernières heures.
+> Le stockage utilisé n’inclut pas les modifications apportées au cours des 24-48 dernières heures. 
 
 Une fois que vous avez déterminé la quantité de stockage utilisée, vous pouvez ajouter ou supprimer de l'espace de stockage pour votre abonnement. Pour savoir quel sera le coût de l’ajout d’espace de stockage, suivez les étapes décrites dans cet article, ainsi que les informations de tarification avant de l’achat.
   
@@ -91,6 +92,7 @@ Pour plus d’informations sur la définition des limites de stockage des collec
 Si vous n’avez pas encore acheté de stockage supplémentaire pour votre abonnement, vous pouvez le faire.
 
 ::: moniker range="o365-worldwide"
+
 
 1. Dans le centre d’administration, accédez à la page **facturation ** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">Acheter des services</a>.
 
@@ -158,11 +160,13 @@ Si vous n’avez pas encore acheté de stockage supplémentaire pour votre abonn
 
 ::: moniker-end
 
+
 ## <a name="increase-or-decrease-storage"></a>Augmenter ou diminuer l’espace de stockage
 
 Si vous avez déjà acheté le stockage de fichiers supplémentaire via le complément de **stockage de fichiers supplémentaire Office 365** , vous pouvez suivre ces étapes pour augmenter ou réduire l’espace de stockage supplémentaire pour votre abonnement. Vous pouvez réduire l’espace de stockage à 1 gigaoctet. Pour supprimer tout l’espace de stockage supplémentaire, vous devez [contacter le support technique](../admin/contact-support-for-business-products.md).
 
 ::: moniker range="o365-worldwide"
+
 
 1. Dans le Centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produits et services</a>.
 
@@ -177,6 +181,7 @@ Si vous avez déjà acheté le stockage de fichiers supplémentaire via le compl
 ::: moniker range="o365-germany"
 
 1. Dans le Centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Abonnements</a>.
+
 
 2. Sur la page **abonnements** , sélectionnez **composants additionnels**.
 
@@ -220,6 +225,8 @@ Si vous avez déjà acheté le stockage de fichiers supplémentaire via le compl
 
 ::: moniker-end
 
+
+
 ## <a name="is-my-plan-eligible-for-office-365-extra-file-storage"></a>Mon plan est-il éligible au stockage de fichiers supplémentaire Office 365 ?
 
 Le stockage de fichiers supplémentaire Office 365 est accessible aux abonnements suivants :
@@ -242,11 +249,11 @@ Le stockage de fichiers supplémentaire Office 365 est accessible aux abonnement
 
 - SharePoint Online (plan 2)
 
-- Office 365 Business Essentials
+- Microsoft 365 entreprise Basic
 
-- Office 365 Business Premium
+- Microsoft 365 Business standard
 
-- Microsoft 365 Business
+- Microsoft 365 Business Premium
 
 - Microsoft 365 E3
 

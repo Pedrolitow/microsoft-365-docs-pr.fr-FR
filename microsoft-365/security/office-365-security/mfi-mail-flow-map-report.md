@@ -11,22 +11,22 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
 description: Les administrateurs peuvent en savoir plus sur le rapport de carte de flux de messagerie dans le tableau de bord de flux de messagerie dans le centre de sécurité & conformité.
-ms.openlocfilehash: 11d605047b66751636ffce69ffff5c198f039fc7
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: f5441a5c775cb9cadb6e9c631adc988f807d8592
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42088513"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635291"
 ---
 # <a name="mail-flow-map-report"></a>Rapport carte de flux de courrier
 
-Ce rapport fournit des informations sur la façon dont les messages circulent dans votre organisation Office 365. Vous pouvez utiliser ces informations pour apprendre des modèles, identifier des anomalies et corriger les problèmes au fur et à mesure qu’ils se produisent.
+Ce rapport fournit des informations sur la façon dont les messages circulent dans votre organisation. Vous pouvez utiliser ces informations pour apprendre des modèles, identifier des anomalies et corriger les problèmes au fur et à mesure qu’ils se produisent.
 
 ![Rapport de carte de flux de messagerie dans le tableau de bord de flux de messagerie dans le centre de sécurité & conformité](../../media/mail-flow-map-selected.png)
 
 ## <a name="mail-flow-map-widget"></a>Widget carte de flux de messagerie
 
-Par défaut, la carte de flux de messagerie indique le modèle de flux de messagerie de niveau supérieur du jour précédent. Vous pouvez utiliser les flèches gauche et droite pour des jours différents. Placez le curseur de la souris au-dessus de chaque zone du rapport pour afficher le volume de messages à destination et en provenance de votre organisation Office 365, comme illustré dans le diagramme suivant :
+Par défaut, la carte de flux de messagerie indique le modèle de flux de messagerie de niveau supérieur du jour précédent. Vous pouvez utiliser les flèches gauche et droite pour des jours différents. Placez le curseur de la souris au-dessus de chaque zone du rapport pour afficher le volume de messages à destination et en provenance de votre organisation, comme illustré dans le diagramme suivant :
 
 ![Flèches gauche et droite dans le widget carte de flux de messagerie](../../media/mail-flow-map-widget.png)
 
@@ -50,6 +50,6 @@ Les principaux domaines expéditeur et destinataire sont répertoriés et les au
 
 Les informations connexes apparaissent sous la carte de flux de messagerie si elles sont disponibles (par exemple, l’analyse de domaine de l’expéditeur ou l’analyseur de la boucle de messagerie).
 
-## <a name="see-also"></a>Voir aussi
+## <a name="see-also"></a>Voir également
 
 Pour plus d’informations sur les autres flux de messagerie dans le tableau de bord de flux de messagerie, voir [mail Flow Insights in the Security & Compliance Center](mail-flow-insights-v2.md).

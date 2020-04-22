@@ -1,5 +1,5 @@
 ---
-title: Stratégie de noms de groupes Office 365
+title: Stratégie de noms de groupes
 ms.reviewer: arvaradh
 f1.keywords: NOCSH
 ms.author: mikeplum
@@ -19,22 +19,22 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 6ceca4d3-cad1-4532-9f0f-d469dfbbb552
-description: Découvrez comment créer une stratégie d’attribution de noms pour les groupes Office 365.
-ms.openlocfilehash: 4325a5e0a1de0c3a83be71220abd256c204ec07d
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+description: Découvrez comment créer une stratégie d’attribution de noms pour les groupes Microsoft 365.
+ms.openlocfilehash: 2d8b016e0830f0d20ea6fb6227dd7789878bfc94
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42894622"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43630442"
 ---
-# <a name="office-365-groups-naming-policy"></a>Stratégie de noms de groupes Office 365
+# <a name="groups-naming-policy"></a>Stratégie de noms de groupes
 
 Vous utilisez une stratégie de noms de groupes pour appliquer une stratégie d’attribution de noms cohérente pour les groupes créés par les utilisateurs de votre organisation. Une stratégie de noms peut vous aider, ainsi que vos utilisateurs, à identifier la fonction du groupe, de l’appartenance, de la région géographique ou de la personne qui a créé le groupe. La stratégie d’attribution de noms peut également aider à catégoriser les groupes dans le carnet d’adresses. Vous pouvez utiliser la stratégie pour empêcher l’utilisation de mots spécifiques dans les alias et les noms de groupes.
 
 La stratégie de noms est appliquée aux groupes qui sont créés dans toutes les charges de travail de groupe (comme Outlook, Microsoft Teams, SharePoint, Planner, Yammer, etc.). Elle est appliquée à la fois au nom de groupe et à l’alias de groupe. Elle est appliquée lorsqu’un utilisateur crée un groupe et lorsque le nom ou l’alias du groupe est modifié pour un groupe existant.
 
 > [!TIP]
-> Une stratégie de noms de groupes Office 365 s’applique uniquement aux groupes Office 365. Elle ne s’applique pas aux groupes de distribution créés dans Exchange Online. Pour créer une stratégie de noms pour les groupes de distribution, consultez [la rubrique Create a distribution Group Naming Policy](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-distribution-groups/create-group-naming-policy).
+> Une stratégie de noms de groupes Microsoft 365 s’applique uniquement aux groupes Microsoft 365. Elle ne s’applique pas aux groupes de distribution créés dans Exchange Online. Pour créer une stratégie de noms pour les groupes de distribution, consultez [la rubrique Create a distribution Group Naming Policy](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-distribution-groups/create-group-naming-policy).
 
 La stratégie de noms de groupes se compose des fonctionnalités suivantes :
 
@@ -44,7 +44,7 @@ La stratégie de noms de groupes se compose des fonctionnalités suivantes :
 
 ## <a name="licensing-requirements"></a>Critères de licence
 
-L’utilisation de la stratégie d’attribution de noms Azure AD pour les groupes Office 365 nécessite que vous disposiez mais pas nécessairement d’une licence Azure Active Directory Premium P1 ou d’Azure AD basique EDU pour chaque utilisateur (y compris les invités) qui est membre d’un ou de plusieurs groupes Office 365.
+L’utilisation de la stratégie d’attribution de noms Azure AD pour les groupes Microsoft 365 nécessite que vous disposiez, mais pas nécessairement d’une licence Azure Active Directory Premium P1 ou d’Azure AD basique EDU pour chaque utilisateur (y compris les invités) qui est membre d’un ou de plusieurs groupes Microsoft 365.
 
 Cela est également requis pour l’administrateur qui crée la stratégie de noms de groupes.
 
@@ -80,7 +80,7 @@ Il est recommandé d’utiliser des attributs dont les valeurs sont renseignées
 
 - Les préfixes et les suffixes peuvent contenir des caractères spéciaux pris en charge dans le nom du groupe et l’alias de groupe. Lorsque les préfixes et les suffixes contiennent des caractères spéciaux qui ne sont pas autorisés dans l’alias de groupe, ils ne sont appliqués qu’au nom du groupe. Dans ce cas, les préfixes et les suffixes appliqués au nom de groupe diffèrent de ceux appliqués à l’alias de groupe.
 
-- Si vous utilisez des groupes liés à Yammer Office 365, évitez d’utiliser les caractères suivants dans votre stratégie de noms \#: \[@ \], \<,, \>, et. Si ces caractères sont dans la stratégie de noms, les utilisateurs de Yammer ordinaires ne pourront pas créer de groupes.
+- Si vous utilisez des groupes Microsoft 365 connectés à Yammer, évitez d’utiliser les caractères suivants dans votre stratégie de noms \#: \[@ \], \<,, \>, et. Si ces caractères sont dans la stratégie de noms, les utilisateurs de Yammer ordinaires ne pourront pas créer de groupes.
 
 ## <a name="custom-blocked-words"></a>Mots bloqués personnalisés
 
@@ -126,10 +126,10 @@ Pour configurer une stratégie d’attribution de noms :
 ![Capture d’écran des paramètres de stratégie d’attribution de noms de groupes dans Azure Active Directory](../../media/groups-naming-policy-azure.png)
 
 > [!NOTE]
-> Les équipes StaffHub ne suivent pas la stratégie d’attribution de noms, mais le groupe Office 365 sous-jacent le fait. Le nom de l’équipe StaffHub n’applique pas les préfixes et les suffixes et ne vérifie pas les mots bloqués personnalisés. Mais StaffHub applique les préfixes et les suffixes et supprime les mots bloqués du groupe Office 365 sous-jacent.
+> Les équipes StaffHub ne suivent pas la stratégie d’attribution de noms, mais le groupe Microsoft 365 sous-jacent le fait. Le nom de l’équipe StaffHub n’applique pas les préfixes et les suffixes et ne vérifie pas les mots bloqués personnalisés. Mais StaffHub applique les préfixes et les suffixes et supprime les mots bloqués du groupe Microsoft 365 sous-jacent.
 
 ## <a name="more-articles-on-naming-policy"></a>Autres articles sur la stratégie de noms
 
-[Appliquer une stratégie d’attribution de noms pour les groupes Office 365 dans Azure Active Directory](https://go.microsoft.com/fwlink/?linkid=868340)
+[Appliquer une stratégie d’attribution de noms pour les groupes Microsoft 365 dans Azure Active Directory](https://go.microsoft.com/fwlink/?linkid=868340)
 
 [Cmdlets Azure Active Directory pour la configuration de paramètres de groupe](https://go.microsoft.com/fwlink/?linkid=868341)

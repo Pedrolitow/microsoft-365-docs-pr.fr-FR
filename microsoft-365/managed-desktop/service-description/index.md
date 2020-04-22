@@ -5,23 +5,23 @@ keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
-ms.openlocfilehash: 0668564fea300ace1bdf8ad32a34d85c2ad5a641
-ms.sourcegitcommit: 053d42480d8aa3792ecb0027ddd53d383a029474
+ms.openlocfilehash: b7054613ea9add542e2a4466c6feb6d911c99701
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "35830492"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637863"
 ---
 # <a name="microsoft-managed-desktop-service-description"></a>Description du service Bureau géré Microsoft
 
-Microsoft Managed Desktop est un service qui offre aux utilisateurs une expérience moderne sécurisée et maintient toujours les appareils à jour avec les dernières versions de Windows 10 Enterprise Edition, Office 365 ProPlus et les services de sécurité Microsoft, y compris :
+Microsoft Managed Desktop est un service qui offre aux utilisateurs une expérience moderne sécurisée et maintient toujours les appareils à jour avec les dernières versions de Windows 10 Enterprise Edition, les applications Microsoft 365 pour les entreprises et les services de sécurité Microsoft, notamment :
 
 - L’enregistrement simplifié de nouveaux appareils
 - Configuration des périphériques
 - Fonctionnalités permettant de maintenir les utilisateurs et les appareils sécurisés, notamment Windows Hello, BitLocker, SecureBoot et la sécurité basée sur la virtualisation conformément aux meilleures pratiques de Microsoft
 - Services de surveillance et de correction de la sécurité des appareils
 - Compatibilité des applications, via l' [application de bureau](https://docs.microsoft.com/fasttrack/win-10-desktop-app-assure)
-- Gestion des mises à jour pour les applications Windows 10 et Office 365 ProPlus
+- La gestion des mises à jour pour les applications Windows 10 et Microsoft 365 pour les applications d’entreprise
 - Données analytiques sur l’utilisation des appareils et des applications
 - Support informatique pour vos utilisateurs finaux
 - Support opérationnel pour les professionnels de l’informatique

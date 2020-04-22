@@ -11,29 +11,29 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: d6a87ce8-2c22-433a-b430-5eab14f6afdc
-description: Cette rubrique contient des questions fréquemment posées et la réponse à ces questions pour les partenaires et les revendeurs Microsoft qui veulent effectuer des tâches d'administration Office 365 déléguée, y compris la capacité à gérer Exchange Online Protection (EOP) pour d'autres locataires (entreprises).
-ms.openlocfilehash: 2a237da685ae3c3d81c5a0912e15b5e7370e2118
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+description: Cette rubrique fournit des questions fréquemment posées et des réponses pour les partenaires et les revendeurs Microsoft qui souhaitent effectuer des tâches d’administration déléguées, y compris la possibilité de gérer Exchange Online Protection (EOP) pour d’autres clients (sociétés).
+ms.openlocfilehash: b79c0aba026a8d59aac338ceac0f1c4a60d71c4d
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599481"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637651"
 ---
 # <a name="delegated-administration-faq"></a>FAQ sur l’administration déléguée
 
-Cette rubrique contient des questions fréquemment posées et la réponse à ces questions pour les partenaires et les revendeurs Microsoft qui veulent effectuer des tâches d'administration Office 365 déléguée, y compris la capacité à gérer Exchange Online Protection (EOP) pour d'autres locataires (entreprises).
+Cette rubrique fournit des questions fréquemment posées et des réponses pour les partenaires et les revendeurs Microsoft qui souhaitent effectuer des tâches d’administration déléguées, y compris la possibilité de gérer Exchange Online Protection (EOP) pour d’autres clients (sociétés).
 
 **Q. Je suis revendeur et je dois gérer les locataires de mon client. Comment cela fonctionne-t-il ?**
 
-A. Si vous êtes un partenaire ou un revendeur Microsoft et que vous êtes inscrit en tant que conseiller Microsoft, vous pouvez demander l’autorisation d’administrer son client au sein du centre d’administration. C'est ce qu'on appelle l'administration déléguée. Elle vous permet de gérer son locataire Office 365 (notamment les paramètres EOP) comme si vous étiez administrateur au sein de son organisation Les étapes permettant d'effectuer une administration déléguée sont les suivantes :
+A. Si vous êtes un partenaire ou un revendeur Microsoft et que vous êtes inscrit en tant que conseiller Microsoft, vous pouvez demander l’autorisation d’administrer son client au sein du centre d’administration. Il s’agit de l’administration déléguée, qui vous permet de gérer son client Microsoft 365 (y compris les paramètres EOP) comme si vous étiez administrateur au sein de son organisation. Elle vous permet de gérer son locataire Office 365 (notamment les paramètres EOP) comme si vous étiez administrateur au sein de son organisation Les étapes permettant d'effectuer une administration déléguée sont les suivantes :
 
 1. Inscrivez-vous pour devenir [partenaire Microsoft Office 365](https://aka.ms/cloudbenefits).
 
-2. Inscrivez-vous à l'administration déléguée Office 365. Avant que vous puissiez administrer le compte d'un client, celui-ci doit vous fournir les autorisations d'administrateur délégué. Pour obtenir leur approbation, vous devez d'abord [leur envoyer une offre d'administration déléguée](https://support.office.com/article/26530dc0-ebba-415b-86b1-b55bc06b073e). (Vous pouvez également proposer l'administration déléguée à votre client ultérieurement.)
+2. Inscrivez-vous à l’administration déléguée. Avant que vous puissiez administrer le compte d'un client, celui-ci doit vous fournir les autorisations d'administrateur délégué. Pour obtenir leur approbation, vous devez d'abord [leur envoyer une offre d'administration déléguée](https://support.office.com/article/26530dc0-ebba-415b-86b1-b55bc06b073e). (Vous pouvez également proposer l'administration déléguée à votre client ultérieurement.)
 
 3. Créez le compte d’administrateur délégué en suivant les étapes décrites dans [Ajouter, modifier ou supprimer un partenaire conseiller d’abonnement](https://docs.microsoft.com/office365/admin/misc/add-partner).
 
-Visitez les [partenaires : développez votre entreprise et administrez votre abonnement partenaire office 365](https://support.office.com/article/30dd1681-47e0-4cbc-abfe-a222cd111319) pour plus d’informations sur la configuration de l’administration déléguée Office 365.
+Pour plus d’informations sur la configuration de l’administration déléguée, reportez-vous à [partenaires : créer votre entreprise et administrer votre abonnement partenaire](https://support.office.com/article/30dd1681-47e0-4cbc-abfe-a222cd111319) .
 
 **Q. Je suis un client, pas un revendeur, comment puis-je configurer un administrateur délégué pour mes sous-locataires ?**
 
@@ -41,7 +41,7 @@ R. Pour le moment, l'administration déléguée est uniquement disponible pour l
 
 **Q. Puis-je empêcher mon administration de sous-locataires de modifier ma stratégie ?**
 
-R. Office 365 ne dispose actuellement pas de cette fonctionnalité.
+A. Microsoft 365 ne dispose actuellement pas de cette fonctionnalité.
 
 **Q. Puis-je disposer de la création de rapports consolidés dans l'ensemble de mes sous-locataires ?**
 

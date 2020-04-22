@@ -17,19 +17,19 @@ ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
 ms.collection:
 - M365-security-compliance
 description: Configurez des stratégies de liens fiables pour protéger votre organisation contre les liens malveillants dans les fichiers Word, Excel, PowerPoint et Visio, ainsi que dans les messages électroniques.
-ms.openlocfilehash: a1a78afe7480ed9f68f8cd893c00876872317785
-ms.sourcegitcommit: c876d58b34454f211b50ae5d06f193c1a1e5c4ff
+ms.openlocfilehash: 31401e8f890f329f5724347deec2d85b6e473552
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/11/2020
-ms.locfileid: "43230979"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43638331"
 ---
 # <a name="set-up-office-365-atp-safe-links-policies"></a>Configuration des stratégies de liens approuvés Office 365 ATP
 
 > [!IMPORTANT]
 > Cet article est destiné aux entreprises qui ont [Office 365 – Protection avancée contre les menaces](office-365-atp.md). Si vous êtes un utilisateur à domicile et que vous recherchez des informations sur les liens fiables dans Outlook, consultez la rubrique [Advanced Outlook.com Security](https://support.office.com/article/882d2243-eab9-4545-a58a-b36fee4a46e2).
 
-Les [liens fiables ATP](atp-safe-links.md), une fonctionnalité d' [Office 365 Advanced Threat Protection](office-365-atp.md) (ATP), peuvent vous aider à protéger votre organisation contre les liens malveillants utilisés dans le hameçonnage et les autres attaques. Si vous disposez des [autorisations nécessaires pour le centre de sécurité &amp; conformité Office 365](permissions-in-the-security-and-compliance-center.md), vous pouvez configurer des stratégies de liens fiables ATP afin de vous assurer que lorsque des utilisateurs cliquent sur des adresses Web (URL), votre organisation est protégée. Vos stratégies de liens fiables ATP peuvent être configurées pour analyser les URL dans les messages électroniques et les URL des documents Office.
+Les [liens fiables ATP](atp-safe-links.md), une fonctionnalité d' [Office 365 Advanced Threat Protection](office-365-atp.md) (ATP), peuvent vous aider à protéger votre organisation contre les liens malveillants utilisés dans le hameçonnage et les autres attaques. Si vous disposez des [autorisations nécessaires pour le centre &amp; de sécurité conformité](permissions-in-the-security-and-compliance-center.md), vous pouvez configurer des stratégies de liens fiables ATP pour vous assurer que lorsque des utilisateurs cliquent sur des adresses Web (URL), votre organisation est protégée. Vos stratégies de liens fiables ATP peuvent être configurées pour analyser les URL dans les messages électroniques et les URL des documents Office.
 
 Lorsque la fonctionnalité liens fiables ATP est activée, si un utilisateur clique sur un lien dans un message électronique et que l’URL a été bloquée par la liste des URL bloquées personnalisées de votre organisation ou si l’URL est considérée comme malveillante, une page d’avertissement s’ouvre.
   
@@ -53,17 +53,17 @@ De [nouvelles fonctionnalités sont continuellement ajoutées à](office-365-atp
 
     |Role  |WHERE/How Assigned  |
     |---------|---------|
-    |Administrateur général Office 365 |La personne qui s’inscrit pour acheter Office 365 est un administrateur global par défaut. (Pour en savoir plus, consultez la rubrique [à propos des rôles d’administrateur Office 365](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles) .)         |
+    |administrateur général |La personne qui s’inscrit pour acheter Microsoft 365 est un administrateur global par défaut. (Pour en savoir plus, consultez la rubrique [à propos des rôles d’administrateur Microsoft 365](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles) .)         |
     |Administrateur de sécurité |Centre d’administration Azure Active Directory[https://aad.portal.azure.com](https://aad.portal.azure.com)()|
     |Gestion d’Organisation Exchange Online |Centre d’administration Exchange[https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)() <br>ou <br>  Applets de commande PowerShell (consultez la rubrique [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell)) |
 
-    Pour en savoir plus sur les rôles et les autorisations, consultez [la rubrique autorisations &amp; dans le centre de sécurité conformité Office 365](permissions-in-the-security-and-compliance-center.md).
+    Pour en savoir plus sur les rôles et les autorisations, consultez [la &amp; rubrique autorisations dans le centre de sécurité conformité](permissions-in-the-security-and-compliance-center.md).
 
 - Assurez-vous que les clients Office sont configurés pour utiliser [l’authentification moderne](https://docs.microsoft.com/office365/enterprise/modern-auth-for-office-2013-and-2016) (il s’agit de la protection des liens fiables ATP dans les documents Office).
     
 - [Découvrez les options de stratégie de liens approuvés ATP](#step-4-learn-about-atp-safe-links-policy-options) (dans cet article). 
 
-- Attendez jusqu’à 30 minutes que votre stratégie nouvelle ou mise à jour se propage à tous les centres de mises à jour Office 365.
+- Attendez jusqu’à 30 minutes que votre stratégie nouvelle ou mise à jour se propage à tous les centres de connaissances Microsoft 365.
     
 ## <a name="step-2-define-or-review-the-atp-safe-links-policy-that-applies-to-everyone"></a>Étape 2 : définition (ou révision) de la stratégie de liens approuvés ATP qui s’applique à tout le monde
 
@@ -99,9 +99,7 @@ Une fois que vous avez révisé (ou modifié) la stratégie de liens approuvés 
 
     - Dans la zone **Description** , tapez une description telle que, empêche les personnes de certains groupes de cliquer sur un site Web sans la vérification des liens fiables ATP.
 
-    - Sous **Sélectionnez l’action pour les URL potentiellement malveillantes dans les messages**, choisissez **activé**.
-
-    - Si vous voyez **Sélectionner l’action pour les URL inconnues ou potentiellement malveillantes dans Microsoft teams**, choisissez **activé**. <br/>
+    - Dans la section **Sélectionnez l’action** , choisissez **activé**.
 
     - Sélectionnez **appliquer l’analyse des URL en temps réel pour les liens suspects et les liens pointant vers des fichiers** si vous souhaitez activer la détonation de l’URL pour les URL suspectes et pointant vers des fichiers (recommandé). Et sélectionnez **attendre que l’analyse des URL se termine avant de remettre le message** si vous souhaitez uniquement que les utilisateurs reçoivent des messages une fois que les URL ont été entièrement analysées.
 
@@ -116,7 +114,7 @@ Une fois que vous avez révisé (ou modifié) la stratégie de liens approuvés 
 6. Cliquez sur **Enregistrer**.
 
 > [!NOTE]
-> Les stratégies de liens fiables ATP avec une priorité plus élevée seront prioritaires. Si un utilisateur est soumis à deux ou plusieurs stratégies, seule la stratégie de priorité plus élevée prendra effet.
+> Les stratégies de liens fiables ATP avec une priorité plus élevée seront prioritaires. Si un utilisateur est soumis à deux stratégies ou plus, seule la stratégie de priorité plus élevée prendra effet.
     
 ## <a name="step-4-learn-about-atp-safe-links-policy-options"></a>Étape 4 : en savoir plus sur les options de stratégie de liens approuvés ATP
 
@@ -131,7 +129,7 @@ Les options de stratégie par défaut s’appliquent à tous les membres de votr
 |Cette option  |Effectue cette action  |
 |---------|---------|
 | **Bloquer les URL suivantes** <br/>    | Permet à votre organisation d’avoir une liste personnalisée d’URL qui sont automatiquement bloquées. Lorsque les utilisateurs cliquent sur une URL de cette liste, ils sont dirigés vers une [page d’avertissement](atp-safe-links-warning-pages.md) expliquant pourquoi l’URL est bloquée. Pour plus d’informations, consultez [la rubrique Configurer une liste d’URL bloquées personnalisées à l’aide des liens de sécurité ATP Office 365](set-up-a-custom-blocked-urls-list-wtih-atp.md). |
-| **Office 365 ProPlus, Office pour iOS et Android** <br/>    | Lorsque cette option est sélectionnée, ATP Safe Links protection est appliqué aux URL des fichiers Word, Excel et PowerPoint sur Windows ou Mac OS, les messages électroniques dans Outlook, les documents Office sur les appareils iOS ou Android, les fichiers Visio 2016 sur Windows et les fichiers ouverts dans les versions Web des applications Office (Word, PowerPoint, Excel, Outlook et OneNote), à condition que l’utilisateur s’est connecté à Office 365. |
+| **Applications Microsoft 365 pour les entreprises, Office pour iOS et Android** <br/>    | Lorsque cette option est sélectionnée, ATP Safe Links protection est appliqué aux URL des fichiers Word, Excel et PowerPoint sur Windows ou Mac OS, les messages électroniques dans Outlook, les documents Office sur les appareils iOS ou Android, les fichiers Visio 2016 sur Windows et les fichiers ouverts dans les versions Web des applications Office (Word, PowerPoint, Excel, Outlook et OneNote), à condition que l’utilisateur s’est connecté à Office 365. |
 | **Ne pas suivre lorsque les utilisateurs cliquent sur les liens fiables ATP** <br/>  | Lorsque cette option est sélectionnée, vous pouvez cliquer sur données pour les URL dans les messages électroniques Word, Excel, PowerPoint, Visio et Outlook ne sont pas stockés.  <br/> |
 |**Ne pas autoriser les utilisateurs à cliquer sur les liens fiables ATP vers l’URL d’origine** <br/> |Lorsque cette option est sélectionnée, les utilisateurs ne peuvent pas passer une [page d’avertissement](atp-safe-links-warning-pages.md) à une URL qui est considérée comme malveillante.  <br/> |
 
@@ -141,10 +139,9 @@ Les options de stratégie par défaut s’appliquent à tous les membres de votr
 |---------|---------|
 |**Désactivé** <br/> |N’analyse pas les URL dans les messages électroniques.  <br/> Vous permet de définir une règle d’exception, telle qu’une règle qui n’analyse pas les URL dans les messages électroniques pour un groupe spécifique de destinataires.  <br/> |
 |**On** <br/> |Réécrit les URL pour acheminer les utilisateurs via la protection de liens fiables ATP lorsque les utilisateurs cliquent sur les URL dans les messages électroniques et activent les liens fiables ATP dans Outlook (C2R) sur Windows.  <br/> Vérifie une URL lorsque vous cliquez sur une liste d’URL bloquées ou malveillantes et déclenche une détonation de l’URL en arrière-plan de manière asynchrone si l’URL ne dispose pas d’une réputation valide.  <br/> |
-|**URL inconnues ou potentiellement malveillantes dans Microsoft teams** |Lorsque cette option est disponible et sélectionnée, elle active les liens approuvés ATP dans les conversations et les canaux de Microsoft Teams. Lorsqu’un utilisateur clique sur une URL dans une conversation ou un canal Microsoft Teams, le lien est vérifié. L’URL est vérifiée par rapport à une liste d’URL bloquées ou malveillantes et déclenche une détonation de l’URL en arrière-plan de manière asynchrone si l’URL ne dispose pas d’une réputation valide. |
 |**Application de l’analyse des URL en temps réel pour les liens suspects et les liens pointant vers des fichiers** <br/> |Lorsque cette option est sélectionnée, les URL et liens suspects qui pointent vers du contenu téléchargeable sont analysés.  <br/> |
 |**Attendre la fin de l’analyse des URL avant de remettre le message** <br/> |Lorsque cette option est sélectionnée, les messages contenant des URL à analyser sont conservés jusqu’à ce que les URL terminent l’analyse et qu’elles soient approuvées avant la remise des messages.  <br/> |
-|**Appliquer des liens fiables aux messages envoyés au sein de l’Organisation** <br/> | Lorsque cette option est sélectionnée, la protection des liens fiables ATP est appliquée aux messages électroniques envoyés entre les personnes de votre organisation, à condition que les comptes de messagerie soient hébergés dans Office 365.  <br/> |
+|**Appliquer des liens fiables aux messages envoyés au sein de l’Organisation** <br/> | Lorsque cette option est disponible et sélectionnée, la protection des liens fiables ATP est appliquée aux messages électroniques envoyés entre les personnes de votre organisation, à condition que les comptes de messagerie soient hébergés dans Office 365.  <br/> |
 |**Ne pas suivre les clics des utilisateurs** <br/> |Lorsque cette option est sélectionnée, les données des URL des expéditeurs externes ne sont pas stockées. URL le suivi des liens dans les messages électroniques envoyés au sein de l’organisation n’est pas pris en charge actuellement.  <br/> |
 |**Ne pas autoriser les utilisateurs à cliquer vers l’URL d’origine** <br/> |Lorsque cette option est sélectionnée, les utilisateurs ne peuvent pas passer une [page d’avertissement](atp-safe-links-warning-pages.md) à une URL qui est considérée comme malveillante.  <br/> |
 |**Ne pas réécrire les URL suivantes** <br/> |Laisse les URL telles quelles. Conserve une liste personnalisée d’URL sûres qui n’ont pas besoin d’être analysées pour un groupe spécifique de destinataires de messagerie dans votre organisation.  Pour plus d’informations, reportez-vous à [la rubrique Configurer une liste d’URL « ne pas réécrire » personnalisée à l’aide de liens fiables ATP](set-up-a-custom-do-not-rewrite-urls-list-with-atp.md) , y compris les modifications récentes de la prise en charge des astérisques génériques (\*).  <br/> |

@@ -1,19 +1,19 @@
 ---
-title: Applications dans le bureau géré Microsoft
+title: Applications dans Bureau géré Microsoft
 description: ''
-keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
+keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: adb6423d5c014b5f02fc272f9653abebc14cf543
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+ms.openlocfilehash: a24212cf69df50d00a32f17e8daf1939657dd602
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42557572"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632850"
 ---
-# <a name="apps-in-microsoft-managed-desktop"></a>Applications dans le bureau géré Microsoft
+# <a name="apps-in-microsoft-managed-desktop"></a>Applications dans Bureau géré Microsoft
 
 <!--This topic is the target for 2 "Learn more" links in the Admin Portal (aka.ms/app-overview;app-package); also target for link from Online resources (aka.ms/app-overviewmmd-app-prep) do not delete.-->
 
@@ -28,25 +28,25 @@ Vous pouvez également déployer des applications supplémentaires non-Microsoft
 
 ## <a name="apps-provided-by-microsoft"></a>Applications fournies par Microsoft
 
-Les versions 64 bits des applications de la suite Office 365 ProPlus standard (Word, Excel, PowerPoint, Outlook, Publisher, Access, Skype entreprise et OneNote) sont incluses dans votre licence de bureau géré Microsoft. Les versions « démarrer en un clic » de Microsoft Project et Visio *ne sont pas* incluses par défaut, mais vous pouvez les demander pour qu’elles soient ajoutées. Pour plus d’informations sur ces applications, voir [installer Microsoft Project ou Microsoft Visio sur des appareils de bureau gérés Microsoft](../get-started/project-visio.md).
+Votre licence de bureau géré Microsoft est fournie avec les versions 64 bits des applications figurant dans les applications Microsoft 365 pour les applications standard pour Enterprise standard suite (Word, Excel, PowerPoint, Outlook, Publisher, Access, Skype entreprise et OneNote.) Les versions « démarrer en un clic » de Microsoft Project et Visio *ne sont pas* incluses par défaut, mais vous pouvez les demander pour qu’elles soient ajoutées. Pour plus d’informations sur ces applications, voir [installer Microsoft Project ou Microsoft Visio sur des appareils de bureau gérés Microsoft](../get-started/project-visio.md).
 
 ### <a name="what-microsoft-does-to-support-the-apps-we-provide"></a>Éléments pris en charge par Microsoft pour prendre en charge les applications que nous fournissons
 
-Microsoft fournira un service complet pour le déploiement, la mise à jour et la prise en charge des applications Office 365 ProPlus incluses. Les versions « démarrer en un clic » de Microsoft Project et Visio ne sont *pas* incluses par défaut, mais le bureau géré Microsoft fournit des groupes de déploiement qui permettent à votre administrateur informatique de gérer des licences et de déployer ces applications de manière appropriée pour votre organisation. Microsoft prend en charge les utilisateurs finaux de ces applications par le biais des canaux de support de bureau géré Microsoft.
+Microsoft fournira un service complet pour le déploiement, la mise à jour et la prise en charge des applications Microsoft 365 apps pour les applications d’entreprise. Les versions « démarrer en un clic » de Microsoft Project et Visio ne sont *pas* incluses par défaut, mais le bureau géré Microsoft fournit des groupes de déploiement qui permettent à votre administrateur informatique de gérer des licences et de déployer ces applications de manière appropriée pour votre organisation. Microsoft prend en charge les utilisateurs finaux de ces applications par le biais des canaux de support de bureau géré Microsoft.
 
 ### <a name="what-you-need-to-do-to-support-the-apps-we-provide"></a>Ce que vous devez faire pour prendre en charge les applications que nous fournissons
 
 Il reste certaines choses que vous devez faire avec ces applications :
 
-- **Attribuer des licences** : vous êtes responsable de l’obtention et de l’affectation des licences appropriées aux utilisateurs finaux pour Office 365 ProPlus.
+- **Attribuer des licences** : vous êtes responsable de l’obtention et de l’affectation des licences appropriées aux utilisateurs finaux pour les applications Microsoft 365 pour entreprises.
 - **Ajouter des utilisateurs à des groupes de sécurité** : Si vous utilisez Microsoft Project ou Visio, votre administrateur informatique doit ajouter ces utilisateurs aux groupes de déploiement appropriés. Les administrateurs informatiques sont également chargés de récupérer les licences de ces utilisateurs s’ils quittent la société.
-- **Deploy office 365 addons** -si vous avez besoin d’addons pour l’une des applications Office 365 ProPlus, déployez-les de manière centralisée comme n’importe quelle autre application Windows 32. 
+- **Deploy microsoft 365 Add-ons** -si vous avez besoin de tous les modules complémentaires pour les applications Microsoft 365 pour les applications d’entreprise, déployez-les de façon centralisée comme n’importe quelle autre application Windows 32. 
 
 ## <a name="apps-you-provide"></a>Applications que vous fournissez
 
 Bien entendu, vous disposez probablement d’un certain nombre d’autres applications dont vous avez besoin pour vos opérations professionnelles. Ces éléments peuvent uniquement être déployés sur des appareils de bureau gérés par Microsoft à l’aide du pipeline de déploiement de Microsoft Intune. Si l’application en a besoin, vous pouvez les présenter à un fournisseur (qui peut être un fournisseur non-Microsoft ou un service MCS) ou, si vous le faites, vous pouvez les empaqueter vous-même. Ajoutez ensuite ces packages au portail de bureau géré Microsoft et affectez-les à des groupes Azure Active Directory pour déclencher le déploiement. 
 
-Si vous déployez actuellement vos applications à l’aide du gestionnaire de configuration de point de terminaison Microsoft, Microsoft Managed Desktop peut vous fournir une requête pour évaluer vos applications et découvrir celles que vous êtes prêt à migrer vers Microsoft Intune et celles qui peuvent nécessiter des ajustement.
+Si vous déployez actuellement vos applications à l’aide du gestionnaire de configuration de point de terminaison Microsoft, Microsoft Managed Desktop peut vous fournir une requête pour évaluer vos applications et découvrir celles que vous êtes prêt à migrer vers Microsoft Intune et celles qui peuvent nécessiter un ajustement.
 
 
 ### <a name="preparing-your-own-apps-for-inclusion-in-microsoft-managed-desktop"></a>Préparation de vos propres applications pour l’inclusion dans le bureau géré Microsoft

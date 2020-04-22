@@ -1,5 +1,5 @@
 ---
-title: Détecter et résoudre les problèmes d’octroi illégal de consentement dans Office 365
+title: Détecter et résoudre les accords de consentement illicite
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -16,14 +16,14 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: Découvrez comment reconnaître et corriger le consentement illicite accorde une attaque dans Office 365.
-ms.openlocfilehash: 171dbf586a869e9c85bb1e10b6beb7a2f4e5f425
-ms.sourcegitcommit: 01ead889086ecc7dcf5d10244bcf67c5a33c8114
+ms.openlocfilehash: 43ce8de2826006069b815a37208fe2a3834bf313
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "42710523"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637603"
 ---
-# <a name="detect-and-remediate-illicit-consent-grants-in-office-365"></a>Détecter et résoudre les problèmes d’octroi illégal de consentement dans Office 365
+# <a name="detect-and-remediate-illicit-consent-grants"></a>Détecter et résoudre les accords de consentement illicite
 
 **Résumé**  Découvrez comment reconnaître et corriger le consentement illicite accorde une attaque dans Office 365.
 
@@ -38,11 +38,11 @@ Ces attaques exploitent un modèle d’interaction qui suppose que l’entité q
 
 ## <a name="what-does-an-illicit-consent-grant-attack-look-like-in-office-365"></a>À quoi ressemble une attaque d’octroi de consentement illicite dans Office 365 ?
 
-Vous devez rechercher dans le **Journal d’audit** Office 365 pour rechercher des signes, également appelés indicateurs de compromission (IOC) de cette attaque. Pour les organisations avec de nombreuses applications Azure enregistrées et une base d’utilisateurs volumineuses, la meilleure pratique consiste à examiner les subventions accordées par vos organisations chaque semaine.
+Vous devez rechercher le **Journal d’audit** pour trouver des signes, également appelés indicateurs de compromission (IOC) de cette attaque. Pour les organisations avec de nombreuses applications Azure enregistrées et une base d’utilisateurs volumineuses, la meilleure pratique consiste à examiner les subventions accordées par vos organisations chaque semaine.
 
 ### <a name="steps-for-finding-signs-of-this-attack"></a>Étapes à suivre pour trouver des signes de cette attaque
 
-1. Ouvrez le **Centre de sécurité et conformité** dans votre client Office 365.
+1. Ouvrez le **Centre de sécurité & conformité** dans votre client.
 
 2. Naviguez jusqu’à **recherche** et sélectionnez **recherche du journal d’audit**.
 
@@ -53,7 +53,7 @@ Vous devez rechercher dans le **Journal d’audit** Office 365 pour rechercher d
 5. Cliquez sur le résultat pour afficher les détails de l’activité. Cliquez sur **informations supplémentaires** pour obtenir les détails de l’activité. Vérifiez si IsAdminContent est défini sur true.
 
 > [!NOTE]
-> * L’affichage de l’entrée du journal d’audit correspondante dans les résultats de la recherche après un événement peut prendre entre 30 minutes et 24 heures. <br/><br/> La durée pendant laquelle un enregistrement d’audit est conservé et utilisable dans le journal d’audit dépend de votre abonnement Office 365, ainsi que du type de licence affecté à un utilisateur spécifique. Pour plus d’informations, consultez la rubrique [Journal d’audit](../../compliance/search-the-audit-log-in-security-and-compliance.md).
+> * L’affichage de l’entrée du journal d’audit correspondante dans les résultats de la recherche après un événement peut prendre entre 30 minutes et 24 heures. <br/><br/> La durée de conservation et de recherche d’un enregistrement d’audit dans le journal d’audit dépend de votre abonnement Microsoft 365 et, en particulier, du type de licence affecté à un utilisateur spécifique. Pour plus d’informations, consultez la rubrique [Journal d’audit](../../compliance/search-the-audit-log-in-security-and-compliance.md).
 Si cette valeur est true, cela signifie qu’une personne disposant d’un accès administrateur général peut avoir accordé un accès étendu aux données. Si cette opération est inattendue, prenez les mesures nécessaires pour [confirmer une attaque](#how-to-confirm-an-attack).
 
 ## <a name="how-to-confirm-an-attack"></a>Procédure de confirmation d’une attaque
@@ -121,7 +121,7 @@ Le moyen le plus simple de vérifier l’attaque d’octroi de consentement illi
 
 Le script génère un fichier nommé Permissions. csv. Procédez comme suit pour rechercher les octrois d’autorisations d’application illicites :
 
-1. Dans la colonne ConsentType (colonne G), recherchez la valeur « AllPrinciples ». L’autorisation AllPrincipals permet à l’application cliente d’accéder au contenu de tout le monde dans la location. Les applications Office 365 natives ont besoin de cette autorisation pour fonctionner correctement. Toutes les applications non-Microsoft disposant de cette autorisation doivent être revues attentivement.
+1. Dans la colonne ConsentType (colonne G), recherchez la valeur « AllPrinciples ». L’autorisation AllPrincipals permet à l’application cliente d’accéder au contenu de tout le monde dans la location. Les applications Microsoft 365 natives ont besoin de cette autorisation pour fonctionner correctement. Toutes les applications non-Microsoft disposant de cette autorisation doivent être revues attentivement.
 
 2. Dans la colonne autorisation (colonne F), examinez les autorisations dont dispose chaque application déléguée pour le contenu. Recherchez les autorisations « lecture » et « écriture » ou «*. All», et examinez attentivement ces éléments, car ils ne sont pas appropriés.
 
@@ -131,7 +131,7 @@ Le script génère un fichier nommé Permissions. csv. Procédez comme suit pour
 
 ## <a name="determine-the-scope-of-the-attack"></a>Déterminer l’étendue de l’attaque
 
-Après avoir terminé l’inventaire de l’accès aux applications, consultez le **Journal d’audit** Office 365 pour déterminer l’étendue complète de la violation. Rechercher sur les utilisateurs concernés, les périodes auxquelles l’application illicite a eu accès à votre organisation, ainsi que les autorisations de l’application. Vous pouvez effectuer une recherche dans le **Journal d’audit** dans le [Centre de sécurité et de conformité Microsoft 365](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance).
+Après avoir terminé l’inventaire de l’accès aux applications, consultez le **Journal d’audit** pour déterminer l’étendue complète de la violation. Rechercher sur les utilisateurs concernés, les périodes auxquelles l’application illicite a eu accès à votre organisation, ainsi que les autorisations de l’application. Vous pouvez effectuer une recherche dans le **Journal d’audit** dans le [Centre de sécurité et de conformité Microsoft 365](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance).
 
 > [!IMPORTANT]
 > L’audit des [boîtes aux lettres](https://docs.microsoft.com/microsoft-365/compliance/enable-mailbox-auditing) et l' [audit des activités pour les administrateurs et les utilisateurs](https://docs.microsoft.com/microsoft-365/compliance/turn-audit-log-search-on-or-off) doivent avoir été activés avant l’attaque pour obtenir ces informations.
@@ -158,9 +158,9 @@ Une fois que vous avez identifié une application avec des autorisations illéga
 
 - Vous pouvez désactiver les applications intégrées pour votre client. Il s’agit d’une étape importante qui empêche les utilisateurs finaux d’accorder leur consentement à l’échelle du client. Cela empêche vos utilisateurs d’accorder par inadvertance l’accès à une application malveillante. Cette opération n’est pas fortement recommandée car elle affaiblit gravement la capacité de vos utilisateurs à être productifs avec des applications tierces. Pour ce faire, procédez comme suit : [activation ou](https://docs.microsoft.com/office365/admin/misc/integrated-apps)désactivation des applications intégrées.
 
-## <a name="secure-office-365-like-a-cybersecurity-pro"></a>Sécuriser Office 365 comme un pro de la cyber-sécurité
+## <a name="secure-microsoft-365-like-a-cybersecurity-pro"></a>Sécurisation de Microsoft 365 comme un Cybersecurity Pro
 
-Votre abonnement Office 365 inclut un ensemble puissant de fonctionnalités de sécurité que vous pouvez utiliser pour protéger vos données et vos utilisateurs. Utilisez la [Feuille de route pour sécuriser Office 365 : principales priorités pour les 30 premiers jours, 90 premiers jours et au-delà](security-roadmap.md), pour implémenter les meilleures pratiques recommandées par Microsoft pour sécuriser votre client Office 365.
+Votre abonnement Microsoft 365 est fourni avec un ensemble de fonctionnalités de sécurité puissantes que vous pouvez utiliser pour protéger vos données et vos utilisateurs. Utilisez la feuille de [route de sécurité microsoft 365-priorités principales pour les 30 jours, 90 jours et au-delà](security-roadmap.md) pour implémenter les meilleures pratiques recommandées par Microsoft pour la sécurisation de votre client Microsoft 365.
 
 - Tâches à effectuer lors des 30 premiers jours. Elle ont un effet immédiat et n’ont qu’un faible impact négatif sur vos utilisateurs.
 

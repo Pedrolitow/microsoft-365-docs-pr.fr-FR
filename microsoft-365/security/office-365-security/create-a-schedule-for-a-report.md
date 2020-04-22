@@ -17,12 +17,12 @@ ms.assetid: a74f637b-3710-4c41-b70f-b5a812929a81
 ms.collection:
 - M365-security-compliance
 description: Découvrez comment configurer une planification pour un rapport dans le centre de sécurité &amp; conformité.
-ms.openlocfilehash: 3e09dee36e14ca1e25f6ea20c8f2b5843dc7edaa
-ms.sourcegitcommit: ce6121a8e3ca7438071d73b0c76e2b6f33ac1cf7
+ms.openlocfilehash: a5160c564373711521635d3a206d5501b0b2c8f0
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "43030163"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637699"
 ---
 # <a name="create-a-schedule-for-a-report-in-the-security-amp-compliance-center"></a>Créer une planification pour un rapport dans le centre &amp; de sécurité conformité
 
@@ -31,7 +31,7 @@ Dans le centre &amp; de sécurité conformité, plusieurs [rapports et](reports-
 ## <a name="create-a-schedule-for-a-report"></a>Créer une planification pour un rapport
 
 > [!IMPORTANT]
-> Assurez-vous que vous disposez des autorisations nécessaires pour effectuer cette tâche. En règle générale, les administrateurs globaux Office 365, les administrateurs de la sécurité et les lecteurs de &amp; sécurité peuvent accéder aux rapports dans le centre de sécurité conformité. Pour en savoir plus sur les autorisations, consultez [la rubrique autorisations dans &amp; le centre de sécurité conformité Office 365](permissions-in-the-security-and-compliance-center.md).
+> Assurez-vous que vous disposez des autorisations nécessaires pour effectuer cette tâche. En règle générale, les administrateurs généraux, les administrateurs de la sécurité et les lecteurs de sécurité &amp; peuvent accéder aux rapports dans le centre de sécurité conformité. Pour en savoir plus sur les autorisations, reportez-vous à [la rubrique autorisations dans le centre de &amp; sécurité conformité](permissions-in-the-security-and-compliance-center.md).
   
 1. Dans le [Centre &amp; de sécurité conformité](https://protection.office.com), accédez à **rapports** \> de **tableau de bord**.
     
@@ -70,9 +70,9 @@ Dans le centre &amp; de sécurité conformité, plusieurs [rapports et](reports-
     
 Une fois que vous avez créé une planification pour un rapport, ce rapport est remis automatiquement par courrier électronique aux adresses de messagerie des destinataires. 
   
-## <a name="related-topics"></a>Sujets associés
+## <a name="related-topics"></a>Voir aussi
 
-[Rapports et informations dans le centre de sécurité &amp; conformité Office 365](reports-and-insights-in-security-and-compliance.md)
+[Rapports et Insights dans le centre de sécurité &amp; conformité](reports-and-insights-in-security-and-compliance.md)
   
 [Gérer les planifications des rapports dans &amp; le centre de sécurité conformité](manage-schedules-for-multiple-reports.md)
   

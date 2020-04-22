@@ -21,36 +21,36 @@ search.appverid:
 - BEA160
 - GEA150
 ms.assetid: 4436582f-211a-45ec-b72e-33647f97d8a3
-description: Découvrez ce qui arrive à vos données lorsque votre abonnement Office 365 pour les entreprises expire, est désactivé ou si vous annulez l’opération.
-ms.openlocfilehash: f3be5a84cc29b2f7fd4d2bbe3e6ba611c6459ea6
-ms.sourcegitcommit: d818828c66cf98b0b0037ba8b3cb790c940281b7
+description: Découvrez ce qui arrive à vos données lorsque votre abonnement Microsoft 365 pour les entreprises expire, est désactivé ou si vous annulez l’opération.
+ms.openlocfilehash: 2a5a9e587b6b00017d3e489d948c9cee3db4777b
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/21/2020
-ms.locfileid: "43584008"
+ms.locfileid: "43634873"
 ---
-# <a name="what-happens-to-my-data-and-access-when-my-office-365-for-business-subscription-ends"></a>Qu'arrive-t-il à mes données et à mon accès à la fin de mon abonnement Office 365 pour les entreprises ?
+# <a name="what-happens-to-my-data-and-access-when-my-microsoft-365-for-business-subscription-ends"></a>Qu’arrive-t-il à mes données et à l’accès à la fin de mon abonnement Microsoft 365 pour les entreprises ?
 
-Si votre abonnement prend fin, parce qu’il arrive à expiration ou parce que vous décidez de l’annuler, votre accès aux services, aux applications et aux données client d’Office 365 passe par plusieurs États avant que l’abonnement *ne soit complètement désactivé ou annulé*. Si vous êtes conscient de cette progression, vous serez mieux armé pour revenir à un état actif avant qu’il ne soit trop tard, ou — si vous quittez Office 365, sauvegardez vos données avant qu’elles ne soient définitivement supprimées.
+Si votre abonnement prend fin, parce qu’il arrive à expiration ou parce que vous décidez de l’annuler, votre accès aux services, applications et données client de Microsoft 365 passe par plusieurs États avant que l' *abonnement soit complètement*désactivé ou annulé. Si vous êtes conscient de cette progression, vous serez mieux armé pour revenir à un état actif avant qu’il ne soit trop tard, ou — si vous quittez Microsoft 365, sauvegardez vos données avant qu’elles ne soient définitivement supprimées.
   
-## <a name="office-365-for-business-subscription-lifecycle"></a>Office 365 pour les entreprises : Cycle de vie de l'abonnement
+## <a name="microsoft-365-for-business-subscription-lifecycle"></a>Microsoft 365 pour les entreprises : cycle de vie des abonnements
 - Si votre abonnement expire, il passe par les étapes suivantes : expiré/désactivé/annulé. L’étape expirée commence immédiatement après la date de fin de l’abonnement.
 - Si vous désactivez la facturation périodique de votre abonnement annuel, les étapes sont les mêmes que celles d’un abonnement expiré. Le premier démarrage est le anniversaire de l’abonnement annuel, pas à compter de la date à laquelle vous avez désactivé le paramètre de facturation périodique de l’abonnement.
-- Si vous annulez votre abonnement mensuel, il sera immédiatement désactivé (à la date d’annulation). Cela signifie que vos utilisateurs perdront immédiatement l’accès aux ressources Office 365 et que seuls les administrateurs auront accès aux données pour les 90 prochains jours.
+- Si vous annulez votre abonnement mensuel, il sera immédiatement désactivé (à la date d’annulation). Cela signifie que vos utilisateurs perdront immédiatement l’accès aux ressources Microsoft 365 et que seuls les administrateurs auront accès aux données pour les 90 prochains jours.
 
-Le tableau suivant décrit ce à quoi vous pouvez vous attendre lorsqu’un abonnement Office 365 pour les entreprises a expiré.
+Le tableau suivant décrit ce à quoi vous pouvez vous attendre lors de l’expiration d’un abonnement Microsoft 365 pour les entreprises payant.
 
 | **Active**                                                             | **Expiré <br/>(30 jours\*)**                                                | **Désactivé <br/>(90 jours\*)**                                               | **Supprimé**                                                                         |
 |------------------------------------------------------------------------|------------------------------------------------------------------------------|------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------|
 | *Données accessibles à tous les*                                               | *Données accessibles à tous les*                                                     | *Données accessibles aux administrateurs uniquement*                                             | **Données supprimées<br/>Azure Active Directory est supprimé, s’il n’est pas utilisé par d’autres services** |
-| Les utilisateurs ont un accès normal à Office 365, aux données et aux applications Office  | Les utilisateurs ont un accès normal à Office 365, aux fichiers et aux applications              | Les utilisateurs ne peuvent pas accéder à Office 365, aux fichiers ou aux applications                        | Les utilisateurs ne peuvent pas accéder à Office 365, aux fichiers ou aux applications                                     |
-| Les administrateurs ont un accès normal à Office 365, aux données et aux applications Office | Les administrateurs peuvent accéder au centre d’administration   | Les administrateurs peuvent accéder au centre d’administration, mais ils ne peuvent pas attribuer de licences aux utilisateurs       | Les administrateurs peuvent accéder au centre d’administration pour acheter et gérer d’autres abonnements             |
+| Les utilisateurs ont un accès normal à Microsoft 365, les données et les applications Office  | Les utilisateurs ont un accès normal à Microsoft 365, les fichiers et les applications              | Les utilisateurs ne peuvent pas accéder à Microsoft 365, aux fichiers ou aux applications                        | Les utilisateurs ne peuvent pas accéder à Microsoft 365, aux fichiers ou aux applications                                     |
+| Les administrateurs ont un accès normal à Microsoft 365, les données et les applications Office | Les administrateurs peuvent accéder au centre d’administration                                           | Les administrateurs peuvent accéder au centre d’administration, mais ils ne peuvent pas attribuer de licences aux utilisateurs       | Les administrateurs peuvent accéder au centre d’administration pour acheter et gérer d’autres abonnements             |
 |                                                                        | Les administrateurs globaux ou de facturation peuvent réactiver l’abonnement dans le centre d’administration. | Les administrateurs globaux ou de facturation peuvent réactiver l’abonnement dans le centre d’administration. |                                                                                           |
 
 * Pour la plupart des offres, dans la plupart des pays et régions.
   
 > [!NOTE]
-> **Qu'est-ce que les « données client » ?** Les données client, comme définies dans les [Conditions d'utilisation du service en ligne Microsoft](https://go.microsoft.com/fwlink/p/?LinkId=613649), représentent toutes les données, y compris les fichiers texte, audio et image, qui sont fournis à Microsoft par le client, ou pour le compte du client, au cours de l'utilisation des services Office 365 par le client. Pour en savoir plus sur la protection des données client, consultez la rubrique [prise en main du portail d’approbation de services Microsoft](https://support.office.com/article/f30e2353-0bd6-41ed-8347-eea1fb8d2662).
+> **Qu'est-ce que les « données client » ?** Les données client, telles que définies dans les [conditions du service en ligne de Microsoft](https://go.microsoft.com/fwlink/p/?LinkId=613649), concernent toutes les données, y compris les fichiers texte, audio ou image fournis à Microsoft par, ou pour le compte du client par le biais de l’utilisation des services Microsoft 365 par le client. Pour en savoir plus sur la protection des données client, consultez la rubrique [prise en main du portail d’approbation de services Microsoft](https://support.office.com/article/f30e2353-0bd6-41ed-8347-eea1fb8d2662).
   
 ## <a name="what-are-my-options-if-my-subscription-is-about-to-expire"></a>Quelles options s'offrent à moi si mon abonnement expire bientôt ?
 
@@ -64,11 +64,11 @@ Avant que l'abonnement n'atteigne sa date d'expiration, plusieurs options s'offr
 
   - Si la **facturation périodique** est déjà activée, aucune action n’est nécessaire. Votre abonnement sera facturé automatiquement et vous serez facturé pour une année ou un mois supplémentaire, en fonction de votre fréquence de paiement actuelle. Si, pour une raison quelconque, vous avez désactivé la **facturation périodique** , vous pouvez toujours [réactiver la facturation périodique](renew-your-subscription.md).
 
-  - Si vous avez acheté Office 365 Business avec une carte prépayée, vous pouvez [activer la facturation périodique](renew-your-subscription.md) pour votre abonnement.
+  - Si vous avez acheté Microsoft 365 apps pour les entreprises avec une carte prépayée, vous pouvez [activer la facturation périodique](renew-your-subscription.md) pour votre abonnement.
 
   - Si vous êtes un client de licence en volume Open avec un abonnement prépayé d’un an, contactez votre partenaire pour acheter une nouvelle clé de produit. Vous recevrez des instructions par courrier électronique pour activer votre clé dans le [Centre de gestion des licences en volume Microsoft](https://go.microsoft.com/fwlink/p/?LinkID=282016). Pour savoir comment trouver un nouveau partenaire ou le partenaire avec lequel vous avez travaillé précédemment, consultez la rubrique [trouver votre partenaire ou revendeur](../../admin/manage/find-your-partner-or-reseller.md).
 
-  - Si vous disposez d’Office 365 Business, consultez [la rubrique Manage récurrent Billing for your subscription](renew-your-subscription.md).
+  - Si vous disposez de Microsoft 365 apps pour les entreprises, consultez [la rubrique Manage récurrent Billing for your subscription](renew-your-subscription.md).
 
 - **Laisser votre abonnement expirer.**
 
@@ -88,11 +88,11 @@ Avant que l'abonnement n'atteigne sa date d'expiration, plusieurs options s'offr
 
   - Si la **facturation périodique** est déjà activée, aucune action n’est nécessaire. Votre abonnement sera facturé automatiquement et vous serez facturé pour une année ou un mois supplémentaire, en fonction de votre fréquence de paiement actuelle. Si, pour une raison quelconque, vous avez désactivé la **facturation périodique** , vous pouvez toujours [réactiver la facturation périodique](renew-your-subscription.md).
 
-  - Si vous avez acheté Office 365 Business avec une carte prépayée, vous pouvez [activer la facturation périodique](renew-your-subscription.md) pour votre abonnement.
+  - Si vous avez acheté Microsoft 365 apps pour les entreprises avec une carte prépayée, vous pouvez [activer la facturation périodique](renew-your-subscription.md) pour votre abonnement.
 
   - Si vous êtes un client de licence en volume Open avec un abonnement prépayé d’un an, contactez votre partenaire pour acheter une nouvelle clé de produit. Vous recevrez des instructions par courrier électronique pour activer votre clé dans le [Centre de gestion des licences en volume Microsoft](https://go.microsoft.com/fwlink/p/?LinkID=282016). Pour savoir comment trouver un nouveau partenaire ou le partenaire avec lequel vous avez travaillé précédemment, consultez la rubrique [trouver votre partenaire ou revendeur](../../admin/manage/find-your-partner-or-reseller.md).
 
-  - Si vous avez Office 365 Business, reportez-vous à [la rubrique renouveler votre abonnement](renew-your-subscription.md).
+  - Si vous avez Microsoft 365 Apps for Business, reportez-vous à [la rubrique renouveler votre abonnement](renew-your-subscription.md).
 
 - **Laisser votre abonnement expirer.**
 
@@ -141,9 +141,9 @@ Voici ce que vous pouvez attendre lorsque votre abonnement atteint les différen
 
 ::: moniker-end
 
-Dans cet État, les utilisateurs ont un accès normal au portail Office 365, aux applications Office et aux services tels que le courrier électronique et SharePoint Online.
+Dans cet État, les utilisateurs ont un accès normal au portail Microsoft 365, aux applications Office et aux services tels que le courrier électronique et SharePoint Online.
   
-En tant qu’administrateur, vous avez toujours accès au centre d’administration. Les administrateurs globaux ou de facturation peuvent [réactiver l’abonnement](reactivate-your-subscription.md) et continuer à utiliser Office 365. Si vous ne procédez pas à la réactivation, veillez à [sauvegarder vos données](back-up-data-before-switching-plans.md).
+En tant qu’administrateur, vous avez toujours accès au centre d’administration. Ne vous inquiétez pas : les administrateurs globaux ou de facturation peuvent [réactiver l’abonnement](reactivate-your-subscription.md) et continuer à utiliser Microsoft 365. Si vous ne procédez pas à la réactivation, veillez à [sauvegarder vos données](back-up-data-before-switching-plans.md).
   
 ### <a name="state-disabled"></a>État : désactivé
   
@@ -171,7 +171,7 @@ Dans cet état, votre niveau d'accès est considérablement restreint. Vos utili
 
 ::: moniker-end
 
-En tant qu'administrateur général ou de facturation, vous pouvez [réactiver l'abonnement](reactivate-your-subscription.md) et continuer à utiliser Office 365 avec toutes vos données client intactes. Si vous choisissez de ne pas procéder à une réactivation, veillez à [sauvegarder vos données](back-up-data-before-switching-plans.md).
+En tant qu’administrateur général ou administrateur de facturation, vous pouvez [réactiver l’abonnement](reactivate-your-subscription.md) et continuer à utiliser Microsoft 365 avec toutes vos données client intactes. Si vous choisissez de ne pas procéder à une réactivation, veillez à [sauvegarder vos données](back-up-data-before-switching-plans.md).
 
 ### <a name="state-deprovisioned"></a>État : mis en service
   
@@ -186,15 +186,15 @@ Les administrateurs et les utilisateurs n'ont plus accès aux services ou applic
 
 ### <a name="what-happens-when-my-trial-ends"></a>Que se passe-t-il à l'expiration de ma version d'évaluation ?
 
-À l’expiration de votre version d’évaluation, vous ne pourrez pas continuer à utiliser Office 365 gratuitement. Plusieurs options s'offrent à vous :
+À l’expiration de votre version d’évaluation, vous ne pourrez pas continuer à utiliser gratuitement Microsoft 365. Plusieurs options s'offrent à vous :
 
 ::: moniker range="o365-worldwide"
-- **Acheter Office 365.** Une fois votre version d’évaluation expirée, elle passe en période de grâce, ce qui vous donne une autre période de 30 jours (pour la plupart des versions d’évaluation, dans la plupart des pays et régions) pour acheter Office 365. Pour plus d'informations sur la conversion de votre version d'évaluation en abonnement payant, voir [Acheter votre version d'évaluation d'Office 365 pour les entreprises](../buy-a-subscription-from-your-free-trial.md).
+- **Acheter Microsoft 365.** Une fois votre version d’évaluation expirée, elle passe en période de grâce, ce qui vous donne une autre période de 30 jours (pour la plupart des versions d’évaluation, dans la plupart des pays et régions) pour acheter Microsoft 365. Pour en savoir plus sur la conversion de votre version d’évaluation en abonnement payant, consultez [la rubrique acheter votre version d’évaluation de Microsoft 365 pour les entreprises](../buy-a-subscription-from-your-free-trial.md).
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
-- **Acheter Office 365.** Une fois votre version d’évaluation expirée, elle passe en période de grâce, ce qui vous donne une autre période de 30 jours (pour la plupart des versions d’évaluation, dans la plupart des pays et régions) pour acheter Office 365. Pour plus d'informations sur la conversion de votre version d'évaluation en abonnement payant, voir [Acheter votre version d'évaluation d'Office 365 pour les entreprises](../buy-a-subscription-from-your-free-trial.md).
+- **Acheter Microsoft 365.** Une fois votre version d’évaluation expirée, elle passe en période de grâce, ce qui vous donne une autre période de 30 jours (pour la plupart des versions d’évaluation, dans la plupart des pays et régions) pour acheter Microsoft 365. Pour en savoir plus sur la conversion de votre version d’évaluation en abonnement payant, consultez [la rubrique acheter votre version d’évaluation de Microsoft 365 pour les entreprises](../buy-a-subscription-from-your-free-trial.md).
 
 ::: moniker-end
 
@@ -203,9 +203,9 @@ Les administrateurs et les utilisateurs n'ont plus accès aux services ou applic
 
 ::: moniker-end
 
-- **Prolonger votre version d'évaluation.** Vous avez besoin de davantage de temps pour évaluer Office 365 ? Dans certains cas, vous pouvez peut-être [prolonger votre version d'évaluation](../extend-your-trial.md).
+- **Prolonger votre version d'évaluation.** Vous avez besoin de plus de temps pour évaluer Microsoft 365 ? Dans certains cas, vous pouvez peut-être [prolonger votre version d'évaluation](../extend-your-trial.md).
 
-- **Annuler la version d'évaluation ou la laisser expirer.** Si vous décidez de ne pas acheter Office 365, vous pouvez laisser expirer ou [annuler](cancel-your-subscription.md)votre version d'évaluation. Veillez à sauvegarder les données que vous voulez conserver. Peu de temps après la fin de la période de grâce de 30 jours, les informations et les données de votre compte d'évaluation sont définitivement supprimées.
+- **Annuler la version d'évaluation ou la laisser expirer.** Si vous décidez de ne pas acheter Microsoft 365, vous pouvez autoriser l’expiration de votre version d’évaluation ou l' [Annuler](cancel-your-subscription.md). Veillez à sauvegarder les données que vous voulez conserver. Peu de temps après la fin de la période de grâce de 30 jours, les informations et les données de votre compte d'évaluation sont définitivement supprimées.
 
 ## <a name="what-happens-if-i-cancel-a-subscription"></a>Que se passe-t-il si j'annule un abonnement ?
 

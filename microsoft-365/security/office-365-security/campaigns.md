@@ -1,5 +1,5 @@
 ---
-title: Affichages des campagnes dans Office 365 - Protection avancée contre les menaces
+title: Affichages de campagnes dans la protection avancée contre les menaces
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -17,16 +17,16 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Découvrez Campaign Views dans Office 365 - Protection avancée contre les menaces.
-ms.openlocfilehash: 40eab14dff8d0c51a35bfbc7a04365a5a025e207
-ms.sourcegitcommit: 08a4ee7765f3eba42f0c037c5c564c581e45df3e
+ms.openlocfilehash: 69b11319ffb033b628e59abac931b6a3f30d082c
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42637327"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637817"
 ---
-# <a name="campaign-views-in-office-365-atp"></a>Campaign Views dans Office 365 - Protection avancée contre les menaces
+# <a name="campaign-views-in-atp"></a>Affichages de campagne dans la protection avancée contre les menaces
 
-Campaign Views est une fonctionnalité de la protection avancée contre les menaces (ATP) dans le Centre de sécurité et de conformité Office 365 qui identifie et catégorise les attaques par hameçonnage dans le service. Campaign Views permet d’effectuer les opérations suivantes :
+Les vues de campagne sont une fonctionnalité de la protection avancée contre les menaces (ATP) dans le centre de sécurité & conformité qui identifie et catégorise les attaques par hameçonnage dans le service. Campaign Views permet d’effectuer les opérations suivantes :
 
 - Examiner et répondre efficacement aux attaques par hameçonnage.
 
@@ -40,7 +40,7 @@ Campaign Views vous permet de voir la présentation d’une attaque plus rapidem
 
 Une campagne est une attaque par e-mail coordonné contre une ou plusieurs organisations. Les attaques par courrier électronique qui volent les informations d’identification et les données d’entreprise sont un secteur important et lucratif. À mesure que les technologies augmentent pour empêcher les attaques, les agresseurs modifient leurs méthodes afin de garantir une réussite continue.
 
-Microsoft exploite les grandes quantités de données anti-hameçonnage, anti-courrier indésirable et anti-programme malveillant dans l’ensemble du service Office 365 pour vous aider à identifier les campagnes. Nous analysons et classifions les informations d’attaque en fonction de plusieurs facteurs. Par exemple :
+Microsoft exploite les grandes quantités de données anti-hameçonnage, de blocage du courrier indésirable et anti-programme malveillant dans l’ensemble du service afin d’identifier les campagnes. Nous analysons et classifions les informations d’attaque en fonction de plusieurs facteurs. Par exemple :
 
 - **Sources d’attaque** : adresses IP sources et domaines de l’e-mail de l’expéditeur.
 
@@ -52,7 +52,7 @@ Microsoft exploite les grandes quantités de données anti-hameçonnage, anti-co
 
 Une campagne peut être à courte durée de vie ou peut s’étendre sur plusieurs jours, semaines ou mois avec des périodes actives et inactives. Une campagne peut être lancée par rapport à votre organisation, ou votre organisation peut faire partie d’une campagne plus importante sur plusieurs sociétés.
 
-## <a name="campaign-views-the-office-365-security--compliance-center"></a>Campaign Views dans le Centre de sécurité et conformité Office 365
+## <a name="campaign-views-the-security--compliance-center"></a>Vue de campagne du centre de sécurité & conformité
 
 Les vues de campagne sont disponibles dans le [Centre de sécurité & conformité](https://protection.office.com) aux **campagnes**de **gestion** \> des menaces.
 

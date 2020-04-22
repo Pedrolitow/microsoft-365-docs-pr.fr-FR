@@ -24,16 +24,19 @@ search.appverid:
 - GEA150
 description: Découvrez comment effectuer une mise à niveau vers un nouvel abonnement.
 monikerRange: o365-worldwide
-ms.openlocfilehash: dbeba16a23490ab756c8ed30ce4856217819e80a
-ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
+ms.openlocfilehash: 8f792cad90b7e153c025a869970a54d36cdd8cbe
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43142078"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636509"
 ---
-# <a name="upgrade-to-a-different-plan"></a>Opter pour un abonnement différent
+# <a name="upgrade-to-a-different-plan"></a>Opter pour un abonnement différent 
 
 Lorsque votre entreprise change ou que vous avez besoin de davantage de fonctionnalités, vous pouvez mettre à niveau les plans. Pour ce faire, la méthode la plus simple consiste à utiliser l’onglet **mise à niveau** dans le centre d’administration. Toutefois, l’utilisation de l’onglet **mise à niveau** n’est pas prise en charge dans toutes les situations. Dans certains cas, vous pouvez modifier les plans manuellement.
+
+> [!NOTE]
+> Cet article s’applique au nouveau centre d’administration. Si le nouveau Centre d’administration Microsoft 365 n’est pas celui que vous utilisez, vous pouvez l’activer en sélectionnant le bouton bascule **Essayer le nouveau Centre d’administration** situé en haut de la page d’accueil. Pour afficher l’article à propos de l’ancien centre d’administration, voir [basculer vers une autre offre Microsoft 365 for Business](switch-to-a-different-plan.md).
 
 ## <a name="use-the-upgrade-tab"></a>Utiliser l’onglet mise à niveau
 
@@ -78,7 +81,7 @@ Si vous souhaitez passer à un plan avec moins de services, vous pouvez [modifie
 
 Si vous ne voyez aucun plan sous l’onglet **mise à niveau** , cela signifie que votre offre ne peut pas être mise à niveau automatiquement. Dans certains cas, vous pouvez résoudre le problème afin de pouvoir afficher les offres disponibles pour la mise à niveau, ou vous pouvez mettre à niveau ou modifier les plans manuellement.
 
-### <a name="why-are-there-no-plans-listed-to-upgrade"></a>Pourquoi existe-t-il des plans répertoriés pour la mise à niveau ?
+ ### <a name="why-are-there-no-plans-listed-to-upgrade"></a>Pourquoi existe-t-il des plans répertoriés pour la mise à niveau ?
 
 #### <a name="you-cant-upgrade-subscriptions-now-because-you-have-more-users-than-licenses"></a>Vous ne pouvez pas mettre à niveau les abonnements maintenant car vous disposez de plus d’utilisateurs que de licences.
 
@@ -106,7 +109,7 @@ Vous pouvez [modifier les offres manuellement](change-plans-manually.md) ou [app
 
 #### <a name="you-have-two-or-more-plans-for-the-same-product"></a>Vous disposez de deux ou plusieurs offres pour le même produit
 
-L’onglet **mise à niveau** ne peut être utilisé que si tous les utilisateurs s’abonnent à la même offre. Par exemple, si vous avez deux plans Office 365 Business Premium, vous ne pourrez pas mettre à niveau automatiquement l’un d’entre eux vers un autre plan.
+L’onglet **mise à niveau** ne peut être utilisé que si tous les utilisateurs s’abonnent à la même offre. Par exemple, si vous avez deux plans Microsoft 365 Business standard, vous ne pourrez pas les mettre à niveau automatiquement vers un autre plan.
 
 #### <a name="you-have-a-prepaid-plan"></a>Vous avez une offre prépayée.
 
@@ -138,13 +141,13 @@ Pour résoudre ce message, recherchez l’abonnement sur la page <a href="https:
 
 ## <a name="what-does-upgrading-a-plan-do-to-my-service-and-billing"></a>Qu’est-ce que la mise à niveau d’un plan vers mon service et ma facturation ?
 
-Lorsque vous effectuez une mise à niveau automatique des plans à l’aide de l’onglet **mise à niveau** dans le centre d’administration, vos services et facturation sont affectés.
+Lorsque vous effectuez une mise à niveau automatique des plans à l’aide du bouton **changer de plan** (ou de l’onglet **mise à niveau** dans le nouveau centre d’administration), vos services et facturation sont affectés.
 
 ### <a name="access-to-services"></a>Accès aux services
 
-Les **administrateurs** ne pourront pas utiliser le centre d’administration lors de la mise à niveau du plan. L'opération peut prendre jusqu'à une heure.
-
-Les **utilisateurs** n'auront à souffrir d'aucune interruption de service. Ils continueront à avoir le service existant jusqu’à ce que la mise à niveau soit terminée.
+ Les **administrateurs** ne pourront pas utiliser le centre d’administration lors de la mise à niveau du plan. L'opération peut prendre jusqu'à une heure.
+  
+ Les **utilisateurs** n'auront à souffrir d'aucune interruption de service. Ils continueront à avoir le service existant jusqu’à ce que la mise à niveau soit terminée.
   
 ### <a name="users-and-licenses"></a>Utilisateurs et licences
 
@@ -161,9 +164,9 @@ Toutes les données utilisateur sont conservées pendant la mise à niveau, y co
 Jour de la mise à niveau de votre forfait, la facturation de votre ancien abonnement est désactivée et la facturation de votre nouvel abonnement est activée. Un crédit calculé au prorata du service non utilisé dans le cadre de l'ancien abonnement vous sera communiqué. Vous recevrez une nouvelle facture incluant le crédit de votre ancien abonnement dans les 30 jours suivant la mise à niveau vers le nouvel abonnement.
   
 > [!NOTE]
-> Le délai nécessaire au crédit de votre compte de paiement dépend du mode de paiement utilisé pour l'abonnement.
-
-**Vous effectuez une mise à niveau à partir d’un abonnement prépayé avant qu’il expire ?** Si le coût total de votre nouvel abonnement est supérieur ou égal à la valeur restante de votre abonnement prépayé, vous ne perdrez pas de temps prépayé. La page de validation de l'achat affiche un crédit pour votre temps inutilisé. En revanche, si le coût de votre nouvel abonnement est inférieur à la valeur restante de votre abonnement prépayé actuel, vous perdrez une partie du temps non utilisé. Vous serez informé avant de passer à la conclusion de la transaction et vous pouvez attendre jusqu’à ce que la date d’expiration de votre abonnement prépayée soit plus proche.
+> Le délai nécessaire au crédit de votre compte de paiement dépend du mode de paiement utilisé pour l'abonnement. 
+  
+ **Vous effectuez une mise à niveau à partir d’un abonnement prépayé avant qu’il expire ?** Si le coût total de votre nouvel abonnement est supérieur ou égal à la valeur restante de votre abonnement prépayé, vous ne perdrez pas de temps prépayé. La page de validation de l'achat affiche un crédit pour votre temps inutilisé. En revanche, si le coût de votre nouvel abonnement est inférieur à la valeur restante de votre abonnement prépayé actuel, vous perdrez une partie du temps non utilisé. Vous serez informé avant de passer à la conclusion de la transaction et vous pouvez attendre jusqu’à ce que la date d’expiration de votre abonnement prépayée soit plus proche.
 
 ## <a name="call-support-to-help-you-upgrade-plans"></a>Appel de la prise en charge pour vous aider à mettre à niveau les plans
 
@@ -173,4 +176,4 @@ Jour de la mise à niveau de votre forfait, la facturation de votre ancien abonn
 
 [Modifier les offres manuellement](change-plans-manually.md)
 
-[Sauvegarder les données avant de changer d’offre Office 365 pour les entreprises](back-up-data-before-switching-plans.md)
+[Sauvegarder les données avant de basculer vers Microsoft 365 pour les offres professionnelles](back-up-data-before-switching-plans.md)

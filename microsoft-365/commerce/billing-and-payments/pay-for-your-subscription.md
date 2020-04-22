@@ -1,5 +1,5 @@
 ---
-title: Régler votre abonnement Office 365 pour les entreprises
+title: Régler votre abonnement
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -20,18 +20,18 @@ search.appverid:
 - MOE150
 - BEA160
 ms.assetid: 734f4aab-df2d-4e9b-8cb1-691910bde216
-description: Découvrez les modes de paiement disponibles pour régler votre abonnement Office 365 pour les entreprises.
+description: Découvrez les options de paiement disponibles pour le paiement de votre abonnement Microsoft 365 pour les entreprises.
 ms.custom:
 - okr_SMB
 - fwlink 808700 for SEPA UI glink 906 for older uI
-ms.openlocfilehash: dfecd2ec5ca72f8e00e664f3f54d7125fe8d21b6
-ms.sourcegitcommit: 4988934836eee45c890b9bdd5ef73590656c78ba
+ms.openlocfilehash: ccf04de4fe11469241e734a202aad3e20778843c
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43540902"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635015"
 ---
-# <a name="pay-for-your-office-365-for-business-subscription"></a>Régler votre abonnement Office 365 pour les entreprises
+# <a name="pay-for-your-subscription"></a>Régler votre abonnement
 
 Lorsque vous configurez votre abonnement, vous pouvez choisir de régler à l’aide d’une carte de crédit ou d’un compte bancaire, ou de payer à la réception de la facture soit par chèque, soit par transfert électronique de fonds (TEF). Quelle que soit la méthode que vous choisissez, nous continuerons d'utiliser ce mode de paiement pour les périodes de facturation suivantes, sauf si vous [modifiez votre mode de paiement](change-payment-method.md).
 
@@ -93,7 +93,7 @@ Si le coût de votre abonnement est supérieur à un certain montant (variable s
 Si vous payez votre abonnement par facture, vous recevrez un courrier vous avertissant de la disponibilité de votre relevé de facturation. Cet e-mail ne contient pas de copie de votre relevé de facturation. Toutefois, vous pouvez également choisir de [Envoyer une copie de votre relevé de facturation par courrier électronique](#receive-a-copy-of-your-billing-statement-in-email). Votre relevé de facturation inclut des détails sur vos options de paiement. Si vous entrez un numéro de bon de commande lors de l’achat d’un abonnement, ce numéro apparaît sur votre relevé de facturation. Pour plus d’informations sur l’accès à vos relevés de facturation, reportez-vous à [Consulter votre facture](view-your-bill-or-invoice.md).
 
 > [!NOTE]
-> Par défaut, les notifications de facturation pour votre organisation sont envoyées à l'adresse de courrier Office 365 et à l'adresse de courrier de secours de l'administrateur général et de l'administrateur de facturation de votre organisation. Pour modifier l'adresse de courrier de secours, voir [Modifier vos adresses de facturation](change-your-billing-addresses.md).
+> Par défaut, les notifications de facturation de votre organisation sont envoyées à l’adresse de messagerie de Microsoft et à l’adresse de messagerie de secours de tous les administrateurs globaux et de facturation de votre organisation. Pour modifier l'adresse de courrier de secours, voir [Modifier vos adresses de facturation](change-your-billing-addresses.md).
 
 ### <a name="can-i-pay-my-bill-online"></a>Est-ce que je peux payer ma facture en ligne ?
 

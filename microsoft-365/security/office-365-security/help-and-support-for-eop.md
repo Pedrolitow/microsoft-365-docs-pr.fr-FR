@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 64535a0a-1044-413f-8bc2-ed8e8a0bc54c
 description: Microsoft offre une assistance pour EOP à divers emplacements et via plusieurs méthodes, y compris via des options de support autonome et de support assisté.
-ms.openlocfilehash: 3aef0cfa6209809f7a65e4179809d58d6f55aeb2
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 6fde3c6cf62f865a17f081c1892d6a5197b037f9
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41599241"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43638045"
 ---
 # <a name="help-and-support-for-eop"></a>Aide et support pour EOP
 
@@ -25,13 +25,13 @@ Les ressources d'assistance technique répertoriées dans ici vous permettront d
 
 ## <a name="self-support-options"></a>Options de support autonome
 
-Lorsque vous vous connectez, le portail Office 365 propose des informations sur l'état des services de votre organisation. Par ailleurs, la section relative à l'état des services de Office 365 affiche le statut actuel de vos services, les détails propres aux interruptions et aux pannes et présente la liste des heures de maintenance prévues. Le portail Office 365 fournit également des informations sur les problèmes connus et les résolutions attendues. Si vous êtes concerné par un événement de niveau de service, vous devriez voir une alerte de communication (généralement accompagnée d'une icône en forme de cloche). Nous vous recommandons de lire ces informations et d'effectuer les actions appropriées. Pour plus d’informations sur la zone d’état des services d’Office 365, voir [service Health and continuation](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/service-health-and-continuity). Les outils, forums et sites communautaires répertoriés ici peuvent encore vous aider à résoudre les problèmes par vous-même.
+Lors de la connexion, le centre d’administration Microsoft 365 fournit des informations sur l’état des services de votre organisation. En outre, la section État du service indique l’état actuel de vos services, les détails relatifs aux interruptions et aux pannes, et répertorie les heures de maintenance planifiées. Le centre d’administration 365 de Microsoft fournit également des informations sur les problèmes connus et les résolutions attendues. Si vous êtes concerné par un événement de niveau de service, vous devriez voir une alerte de communication (généralement accompagnée d'une icône en forme de cloche). Nous vous recommandons de lire ces informations et d'effectuer les actions appropriées. Pour plus d’informations sur la zone d’état des services, consultez la rubrique [service Health and continuation](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/service-health-and-continuity). Les outils, forums et sites communautaires répertoriés ici peuvent encore vous aider à résoudre les problèmes par vous-même.
 
 [Présentation du produit Exchange Online Protection](https://products.office.com/exchange/exchange-email-security-spam-protection)
 
 [Contacter le support relatif aux produits d’entreprises- Aide de l’administrateur](https://docs.microsoft.com/office365/admin/contact-support-for-business-products)
 
-[Communauté Office 365](https://techcommunity.microsoft.com/t5/Office-365/ct-p/Office365)
+[Communauté Microsoft 365](https://techcommunity.microsoft.com/t5/Office-365/ct-p/Office365)
 
 [Assistant support et récupération Microsoft (SaRA)](https://support.office.com/article/e90bb691-c2a7-4697-a94f-88836856c72f)
 
@@ -63,11 +63,11 @@ Pour plus d’informations sur la façon dont le support premier peut aider votr
 
    Pour des questions préalables à l'achat d'EOP ou ayant trait à la facturation et aux abonnements, accédez à **Support** \> **Demander une assistance clientèle** \> **Appeler le support de facturation et d'abonnement**.
 
-3. Utilisez l'agent virtuel pour Microsoft Office 365 afin de rechercher le numéro de téléphone approprié le plus récent.
+3. Utilisez l’agent virtuel pour rechercher le numéro de téléphone approprié le plus récent.
 
 ## <a name="support-telephone-numbers"></a>Numéros de téléphone du support technique
 
-Microsoft met à disposition des numéros de téléphone locaux ou gratuits pour contacter le support technique dans le monde entier. La plupart de ces Centres d'aide et de support fournissent une assistance dans votre langue pendant les heures d'ouverture ou une assistance en anglais 24h/24, 7j/7. Si votre emplacement ne figure pas dans la liste ci-dessous, utilisez l'agent virtuel pour Microsoft Office 365 afin de trouver le numéro de téléphone du support technique local, comme décrit précédemment.
+Microsoft met à disposition des numéros de téléphone locaux ou gratuits pour contacter le support technique dans le monde entier. La plupart de ces Centres d'aide et de support fournissent une assistance dans votre langue pendant les heures d'ouverture ou une assistance en anglais 24h/24, 7j/7. Si vous ne voyez pas votre emplacement répertorié ci-dessous, utilisez l’agent virtuel comme décrit ci-dessus pour trouver votre numéro de téléphone de support local.
 
 |**Pays ou région**|**Questions préalables à l'achat et concernant la facturation**|**Questions d'assistance technique**|
 |:-----|:-----|:-----|

@@ -16,16 +16,16 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Les administrateurs peuvent apprendre à configurer les paramètres de courrier indésirable dans les boîtes aux lettres Exchange Online. Un grand nombre de ces paramètres sont disponibles pour les utilisateurs dans Outlook ou Outlook sur le Web.
-ms.openlocfilehash: 2b138830cff7337d7949606cc110ea8f7ae1c0ff
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: 689cec3f6a8b12764d03c98d23a9eb7ab6ca8e5e
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42897034"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43638439"
 ---
 # <a name="configure-junk-email-settings-on-exchange-online-mailboxes-in-office-365"></a>Configurer les paramètres du courrier indésirable sur les boîtes aux lettres Exchange Online dans Office 365
 
-Les paramètres anti-courrier indésirable de l’organisation dans Exchange Online sont contrôlés par Exchange Online Protection (EOP). Pour plus d’informations, consultez la rubrique [protection contre le courrier indésirable dans Office 365](anti-spam-protection.md).
+Les paramètres anti-courrier indésirable de l’organisation dans Exchange Online sont contrôlés par Exchange Online Protection (EOP). Pour plus d’informations, voir [Protection contre le courrier indésirable dans Office 365](anti-spam-protection.md).
 
 Toutefois, il existe également des paramètres de blocage du courrier indésirable que les administrateurs peuvent configurer sur des boîtes aux lettres individuelles dans Exchange Online :
 
@@ -47,7 +47,7 @@ Les administrateurs peuvent utiliser Exchange Online PowerShell pour désactiver
 
 - Des autorisations doivent vous être attribuées avant de pouvoir effectuer ces procédures. Plus précisément, vous avez besoin du rôle **destinataires de messagerie** (qui est affecté par défaut aux groupes de rôles gestion de l' **organisation**, **gestion des destinataires**et **destinataires de messages personnalisés** ) ou aux **options utilisateur** (qui sont affectées par défaut aux groupes de rôles gestion de l' **organisation** et **support technique** ). Pour ajouter des utilisateurs à des groupes de rôles dans Exchange Online, consultez la rubrique [modifier des groupes de rôles dans Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups). Notez qu’un utilisateur disposant des autorisations par défaut peut effectuer ces mêmes procédures sur sa propre boîte aux lettres, à condition qu’il ait [accès à Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/disable-access-to-exchange-online-powershell).
 
-- Dans les environnements EOP autonomes où EOP protège les boîtes aux lettres Exchange locales, vous devez configurer des règles de flux de messagerie (également appelées règles de transport) dans Exchange local pour traduire le verdict de filtrage du courrier indésirable EOP de sorte que la règle de courrier indésirable puisse déplacer le message vers dossier courrier indésirable. Pour plus d’informations, consultez [la rubrique Configure standalone EOP to Deliver courrier indésirable dans le dossier courrier indésirable dans des environnements hybrides](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md).
+- Dans les environnements de EOP autonomes où EOP protège les boîtes aux lettres Exchange locales, vous devez configurer des règles de flux de courrier (également appelées règles de transport) dans Exchange local pour traduire le verdict de filtrage de courrier indésirable EOP de sorte que la règle de courrier indésirable puisse déplacer le message vers le dossier Courrier indésirable. Pour les détails, voir [Configurer une protection Exchange Online (EOP) autonome pour envoyer des courriers indésirables dans le dossier Courrier indésirable dans les environnements hybrides](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md).
 
 ## <a name="use-exchange-online-powershell-to-enable-or-disable-the-junk-email-rule-in-a-mailbox"></a>Utiliser Exchange Online PowerShell pour activer ou désactiver la règle de courrier indésirable dans une boîte aux lettres
 
@@ -78,7 +78,7 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, co
 
 - Si l’utilisateur n’a jamais ouvert sa boîte aux lettres, il se peut que vous receviez une erreur lors de l’exécution de la commande précédente. Pour supprimer cette erreur pour les opérations en bloc `-ErrorAction SlientlyContinue` , ajoutez à la commande **Set-MailboxJunkEmailConfiguration** .
 
-- Même si vous désactivez la règle de courrier indésirable, le filtre de courrier indésirable d’Outlook (en fonction de sa configuration) peut également déterminer si un message est du courrier indésirable et déplacer les messages vers le dossier de boîte de réception ou de courrier indésirable en fonction de son verdict de courrier indésirable et de la collection de listes fiables sur la boîte aux lettres. Pour plus d’informations, consultez la section [À propos des paramètres de courrier indésirable dans Outlook](#about-junk-email-settings-in-outlook) dans cette rubrique.
+- Même si vous désactivez la règle de courrier indésirable, le filtre de courrier indésirable d’Outlook (en fonction de sa configuration) peut également déterminer si un message est un courrier indésirable et déplacer des messages vers le dossier boîte de réception ou courrier indésirable en fonction de son verdict de courrier indésirable et de la collection de listes fiables sur la boîte aux lettres Pour plus d’informations, consultez la section [À propos des paramètres de courrier indésirable dans Outlook](#about-junk-email-settings-in-outlook) dans cette rubrique.
 
 ### <a name="how-do-you-know-this-worked"></a>Comment savoir si cela a fonctionné ?
 
@@ -169,7 +169,7 @@ Pour vérifier que vous avez bien configuré la collection de listes fiables d�
 
 ## <a name="about-junk-email-settings-in-outlook"></a>À propos des paramètres de courrier indésirable dans Outlook
 
-Pour activer, désactiver et configurer les paramètres de filtrage du courrier indésirable côté client disponibles dans Outlook, utilisez la stratégie de groupe. Pour plus d’informations, reportez-vous à la rubrique [Administrative Template Files (ADMX/adml) et l’outil de personnalisation Office pour office 365 ProPlus, office 2019 et office 2016](https://www.microsoft.com/download/details.aspx?id=49030).
+Pour activer, désactiver et configurer les paramètres de filtrage du courrier indésirable côté client disponibles dans Outlook, utilisez la stratégie de groupe. Pour plus d’informations, reportez-vous à la rubrique [Administrative Template Files (ADMX/adml) and Office Customization Tool for Microsoft 365 Apps for Enterprise, office 2019 et office 2016](https://www.microsoft.com/download/details.aspx?id=49030).
 
 Lorsque le filtre de courrier indésirable Outlook est défini sur la valeur par défaut **aucun filtrage automatique** dans les options **options** \> de courrier **indésirable** \> du **domicile** \> **, Outlook**ne tente pas de classer les massage comme courrier indésirable, mais il utilise toujours l’ensemble de listes fiables (la liste des expéditeurs approuvés, la liste des destinataires fiables et la liste des expéditeurs bloqués) pour déplacer les Pour plus d’informations sur ces paramètres, consultez [la rubrique vue d’ensemble du filtre de courrier indésirable](https://support.office.com/article/5ae3ea8e-cf41-4fa0-b02a-3b96e21de089).
 

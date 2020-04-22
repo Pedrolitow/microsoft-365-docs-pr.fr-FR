@@ -20,17 +20,17 @@ search.appverid:
 - MOE150
 - BEA160
 ms.assetid: b1bc0bef-4608-4601-813a-cdd9f746709a
-description: Découvrez comment annuler votre abonnement Office 365 pour les entreprises ou Microsoft 365 (version d’évaluation ou abonnement payant).
-ms.openlocfilehash: d58ad1b18c8834740984f0ff47b7983a6797e108
-ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
+description: Découvrez comment annuler votre abonnement payant Microsoft 365 pour les entreprises ou Microsoft 365.
+ms.openlocfilehash: 23a43b3a152844090cbbdf5baef29a7b8f992778
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43142162"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636594"
 ---
 # <a name="cancel-your-subscription"></a>Annuler votre abonnement
 
-*Éligibilité :* Si vous avez moins de 25 licences attribuées à des utilisateurs, vous pouvez annuler votre abonnement Office 365 pour les entreprises ou votre abonnement payant en ligne dans le centre d’administration à tout moment. Si vous avez plus de 25 licences affectées à des utilisateurs, [appelez le support pour annuler votre abonnement](../../admin/contact-support-for-business-products.md).
+*Éligibilité :* Si vous avez moins de 25 licences attribuées à des utilisateurs, vous pouvez annuler votre abonnement Microsoft 365 entreprise ou payant en ligne dans le centre d’administration à tout moment. Si vous avez plus de 25 licences affectées à des utilisateurs, [appelez le support pour annuler votre abonnement](../../admin/contact-support-for-business-products.md).
 
 *Remboursement :* Tout crédit prorata vous sera renvoyé au cours du cycle de facturation suivant.
 
@@ -43,13 +43,14 @@ Si vous avez ajouté votre propre nom de domaine à utiliser avec votre abonneme
 
 ::: moniker range="o365-worldwide"
 
+
 1. Dans le Centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produits et services</a>.
 
 2. Recherchez l’abonnement que vous souhaitez annuler et sous **paramètres & Actions**, sélectionnez Annuler l' **abonnement**.
 
 3. Examinez les dates importantes, fournissez des commentaires sur la raison de votre annulation, puis sélectionnez **Annuler l’abonnement**.
 
-    Votre abonnement s’affiche désormais dans un état **désactivé** et dispose de fonctionnalités réduites jusqu’à ce qu’il soit supprimé. Pour plus d’informations sur ce que vous pouvez vous attendre lors de l’annulation d’un abonnement Office 365 pour les entreprises payant, voir [qu’arrive-t-il à mes données et à Access lorsque mon abonnement office 365 pour les entreprises prend fin ?](what-if-my-subscription-expires.md)
+    Votre abonnement s’affiche désormais dans un état **désactivé** et dispose de fonctionnalités réduites jusqu’à ce qu’il soit supprimé. Pour plus d’informations sur ce que vous pouvez vous attendre à l’annulation d’un abonnement payant à Microsoft 365 pour les entreprises, voir [qu’arrive-t-il à mes données et à Access quand mon abonnement microsoft 365 pour entreprises prend fin ?](what-if-my-subscription-expires.md)
 
 ::: moniker-end
 
@@ -65,7 +66,7 @@ Si vous avez ajouté votre propre nom de domaine à utiliser avec votre abonneme
 
 4. Examinez les dates importantes, fournissez des commentaires sur la raison de votre annulation, puis sélectionnez **Annuler l’abonnement**.
 
-    Votre abonnement s’affiche désormais dans un état **désactivé** et dispose de fonctionnalités réduites jusqu’à ce qu’il soit supprimé. Pour plus d’informations sur ce que vous pouvez vous attendre lors de l’annulation d’un abonnement Office 365 pour les entreprises payant, voir [qu’arrive-t-il à mes données et à Access lorsque mon abonnement office 365 pour les entreprises prend fin ?](what-if-my-subscription-expires.md)
+    Votre abonnement s’affiche désormais dans un état **désactivé** et dispose de fonctionnalités réduites jusqu’à ce qu’il soit supprimé. Pour plus d’informations sur ce que vous pouvez vous attendre à l’annulation d’un abonnement payant à Microsoft 365 pour les entreprises, voir [qu’arrive-t-il à mes données et à Access quand mon abonnement microsoft 365 pour entreprises prend fin ?](what-if-my-subscription-expires.md)
 
 ::: moniker-end
 
@@ -81,7 +82,7 @@ Si vous avez ajouté votre propre nom de domaine à utiliser avec votre abonneme
 
 4. Examinez les dates importantes, fournissez des commentaires sur la raison de votre annulation, puis sélectionnez **Annuler l’abonnement**.
 
-    Votre abonnement s’affiche désormais dans un état **désactivé** et dispose de fonctionnalités réduites jusqu’à ce qu’il soit supprimé. Pour plus d’informations sur ce que vous pouvez vous attendre lors de l’annulation d’un abonnement Office 365 pour les entreprises payant, voir [qu’arrive-t-il à mes données et à Access lorsque mon abonnement office 365 pour les entreprises prend fin ?](what-if-my-subscription-expires.md)
+    Votre abonnement s’affiche désormais dans un état **désactivé** et dispose de fonctionnalités réduites jusqu’à ce qu’il soit supprimé. Pour plus d’informations sur ce que vous pouvez vous attendre à l’annulation d’un abonnement payant à Microsoft 365 pour les entreprises, voir [qu’arrive-t-il à mes données et à Access quand mon abonnement microsoft 365 pour entreprises prend fin ?](what-if-my-subscription-expires.md)
 
 ::: moniker-end
 
@@ -110,11 +111,11 @@ Si vous utilisez un domaine personnalisé avec votre abonnement, vous devez effe
 
 Si vous configurez un domaine personnalisé, vous avez ajouté des enregistrements DNS de sorte que le domaine fonctionne avec les services Office 365. Avant de supprimer votre domaine, veillez à mettre à jour les enregistrements DNS, tels que votre enregistrement MX de domaine, sur votre hôte DNS.
 
-Par exemple, modifiez l’enregistrement MX au niveau de votre hôte DNS. Les messages électroniques envoyés à votre domaine cessent de répondre à votre adresse Office 365 et vont à votre nouveau fournisseur de courrier. (Un enregistrement MX détermine où le courrier destiné à votre domaine est envoyé).
+Par exemple, modifiez l’enregistrement MX au niveau de votre hôte DNS. Les messages électroniques envoyés à votre domaine cessent d’arriver à votre adresse Microsoft et sont à la place de votre nouveau fournisseur de courrier. (Un enregistrement MX détermine où le courrier destiné à votre domaine est envoyé).
 
 - Si vos enregistrements de serveur de noms (NS) [pointent vers des serveurs de noms Office 365](../../admin/setup/add-domain.md), les modifications apportées à votre enregistrement MX ne prennent effet que lorsque vous modifiez vos enregistrements NS afin qu’ils pointent vers votre nouvel hôte DNS (voir étape 2).
 
-- Avant de mettre à jour l’enregistrement MX, indiquez à vos utilisateurs la date à laquelle vous envisagez de basculer leur courrier électronique, ainsi que le nouveau fournisseur de messagerie que vous envisagez d’utiliser. Par ailleurs, si vos utilisateurs souhaitent déplacer leur courrier électronique Office 365 existant vers le nouveau fournisseur, ils doivent suivre des étapes supplémentaires.
+- Avant de mettre à jour l’enregistrement MX, indiquez à vos utilisateurs la date à laquelle vous envisagez de basculer leur courrier électronique, ainsi que le nouveau fournisseur de messagerie que vous envisagez d’utiliser. Par ailleurs, si vos utilisateurs souhaitent déplacer leur courrier électronique Microsoft existant vers le nouveau fournisseur, ils doivent suivre des étapes supplémentaires.
 
 - Le jour où vous modifiez l'enregistrement MX, suivez le reste des étapes décrites dans cet article.
 

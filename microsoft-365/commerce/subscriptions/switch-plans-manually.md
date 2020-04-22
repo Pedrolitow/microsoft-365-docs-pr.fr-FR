@@ -1,5 +1,5 @@
 ---
-title: Changer manuellement les offres Office 365 pour les entreprises
+title: Changer manuellement les offres Microsoft 365 pour les entreprises
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -21,21 +21,19 @@ search.appverid:
 - BEA160
 ms.assetid: eb0d0680-5677-41a0-8c46-4b9d47f1c209
 ROBOTS: NOINDEX
-description: Changez manuellement les abonnements Office 365 pour les entreprises en achetant un nouvel abonnement et en vous assurant que les abonnements sont répertoriés et actifs.
-ms.openlocfilehash: a652053b204e84f8f2d3973eba76ead1cc7c1410
-ms.sourcegitcommit: 4988934836eee45c890b9bdd5ef73590656c78ba
+description: Changez manuellement les abonnements Microsoft 365 pour les entreprises en achetant un nouvel abonnement et en vous assurant que les abonnements sont répertoriés et actifs.
+ms.openlocfilehash: e5245e333984c9d8e67b174f10cf48b2339348de
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43540842"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636533"
 ---
-# <a name="switch-office-365-for-business-plans-manually"></a>Changer manuellement les offres Office 365 pour les entreprises
+# <a name="switch-microsoft-365-for-business-plans-manually"></a>Changer manuellement les offres Microsoft 365 pour les entreprises
 
 ::: moniker range="o365-worldwide"
-
 > [!NOTE]
-> Cet article s’applique à l’ancien centre d’administration. Pour afficher l’article sur le nouveau centre d’administration, consultez la rubrique [modifier les plans manuellement](change-plans-manually.md). Le nouveau Centre d’administration est accessible à tous les administrateurs Microsoft 365. Pour plus d’informations, voir [À propos du nouveau Centre d’administration Microsoft 365](../../admin/microsoft-365-admin-center-preview.md).
-
+> Cet article s’applique à l’ancien centre d’administration. Pour afficher l’article sur le nouveau centre d’administration, consultez la rubrique [modifier les plans manuellement](change-plans-manually.md). Le nouveau centre d’administration est accessible à tous les administrateurs de Microsoft 365, et vous pouvez vous abonner en sélectionnant le bouton **essayer le nouveau centre d’administration** situé en haut de la page d’accueil. Pour plus d’informations, voir [À propos du nouveau Centre d’administration Microsoft 365](../../admin/microsoft-365-admin-center-preview.md).
 ::: moniker-end
 
 ## <a name="step-1-decide-how-to-switch-plans"></a>Étape 1 : décider du mode de changement des offres
@@ -56,11 +54,11 @@ Pour continuer avec un changement manuel, lisez l' [étape 2 : acheter un nouve
   
 - Des
   
- **Acheter un nouvel abonnement et des licences :** Suivez les étapes de la procédure [acheter un autre abonnement Office 365 pour les entreprises](../buy-another-subscription.md) pour acheter un nouvel abonnement.
+ **Acheter un nouvel abonnement et des licences :** Suivez les étapes de la procédure [acheter un autre abonnement Microsoft 365 pour les entreprises](../buy-another-subscription.md) pour acheter un nouvel abonnement.
   
 Assurez-vous que vous achetez un abonnement pour la même organisation que les utilisateurs. Par exemple, vérifiez les adresses de messagerie des utilisateurs que vous souhaitez déplacer. Si leurs adresses de messagerie incluent @contoso. com, vous devez acheter un nouvel abonnement pour contoso.com. Incluez une licence pour chaque utilisateur que vous souhaitez déplacer.
   
- **Si vous avez besoin d’aide pour choisir un plan**, reportez-vous à la page [Comparaison de produits Office 365 pour les entreprises ou à](https://go.microsoft.com/fwlink/p/?linkid=842056) la [prise en charge des appels](../../admin/contact-support-for-business-products.md).
+ **Si vous avez besoin d’aide pour choisir un plan**, voir la page [Comparaison de produits Microsoft 365 pour les entreprises](https://go.microsoft.com/fwlink/p/?linkid=842056) ou la [prise en charge des appels](../../admin/contact-support-for-business-products.md).
   
 ## <a name="step-3-check-your-new-subscription-and-licenses"></a>Étape 3 : vérifier votre nouvel abonnement et vos nouvelles licences
 
@@ -86,7 +84,7 @@ Assurez-vous que vous achetez un abonnement pour la même organisation que les u
 
     L’abonnement à partir duquel vous déplacez les utilisateurs et l’abonnement vers lequel vous déplacez les utilisateurs doivent être regroupés. Si le nouvel abonnement n’est pas présent lors de la vérification initiale, réessayez ultérieurement. Vérifiez que les deux abonnements sont répertoriés sous **actif**. [Le nouvel abonnement n’est pas indiqué, ou n’est pas actif](#the-new-subscription-isnt-listed-or-isnt-active).
 
-   **Nouvel abonnement Office 365 pour les entreprises avec des licences disponibles**
+   **Nouvel abonnement Microsoft 365 pour les entreprises avec des licences disponibles**
 
     ![Page d’abonnement indiquant le nombre de licences pour le nouvel abonnement.](../../media/65a73e96-7c95-4daa-b6ec-71a4bf74dda5.png)
   
@@ -94,7 +92,7 @@ Assurez-vous que vous achetez un abonnement pour la même organisation que les u
 
     Chaque utilisateur doit disposer d’une licence correspondant à son abonnement. Par conséquent, si vous voulez déplacer dix utilisateurs vers Office 365 entreprise E5, vous devez vous assurer que dix licences sont disponibles. Dans l’image ici, dix licences ont été achetées pour Office 365 entreprise E5 et les dix licences peuvent être affectées.
 
-4. **Vous avez besoin de plus de licences pour le nouvel abonnement ?** Accédez à la page **abonnements** et [achetez des licences pour votre abonnement Office 365 pour les entreprises](../licenses/buy-licenses.md).
+4. **Vous avez besoin de plus de licences pour le nouvel abonnement ?** Accédez à la page **abonnements** et [achetez des licences pour votre abonnement Microsoft 365 pour les entreprises](../licenses/buy-licenses.md).
   
     [Qu’en est-il des anciennes licences ?](#what-about-the-old-licenses)
 

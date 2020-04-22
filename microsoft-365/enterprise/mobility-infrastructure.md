@@ -15,12 +15,12 @@ ms.technology: ''
 ms.assetid: fb4182e6-5e78-45d0-9641-d791c4519441
 audience: ITPro
 ms.custom: microsoft-intune
-ms.openlocfilehash: a957ef037aed1f9aba923af428c2a440790dbfba
-ms.sourcegitcommit: e525bcf073a61e1350484719a0c3ceb6ff0d8db1
+ms.openlocfilehash: c90f16bfbdf41f859e13a23fbdaeb0c3480bd191
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "43153891"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631524"
 ---
 # <a name="phase-5-mobile-device-management-for-microsoft-365-enterprise"></a>Phase 5 : gestion des appareils mobiles pour Microsoft 365 Enterprise
 
@@ -34,7 +34,7 @@ Lors de cette phase, vous allez inscrire vos appareils dans Intune, puis créer 
 
 ## <a name="step-1-plan-for-your-scenario"></a>Étape 1 : planifier votre scénario
 
-L’une des principales raisons de gérer les appareils mobiles est de sécuriser et de protéger les ressources de votre organisation. Les [méthodes courantes d’utilisation de Microsoft Intune](https://docs.microsoft.com/intune/common-scenarios) répertorient certains exemples concrets, notamment la sécurisation du courrier électronique et des données Office 365.
+L’une des principales raisons de gérer les appareils mobiles est de sécuriser et de protéger les ressources de votre organisation. Les [méthodes courantes d’utilisation de Microsoft Intune](https://docs.microsoft.com/intune/common-scenarios) répertorient certains exemples concrets, notamment la sécurisation de la messagerie électronique et des données Microsoft.
 
 Intune vous offre des options pour gérer l’accès à votre organisation à l’aide de la gestion des appareils mobiles (MDM) ou de la gestion des applications mobiles (MAM). MDM est lorsque les utilisateurs « inscrivent » leurs appareils dans Intune. Une fois l’enregistrement effectué, il s’agit d’appareils gérés et peut recevoir toutes les stratégies, les règles et les paramètres utilisés par votre organisation. Par exemple, vous pouvez installer des applications spécifiques, créer une stratégie de mot de passe, installer une connexion VPN, et bien plus encore.
 
@@ -47,7 +47,7 @@ Vous allez également déterminer la manière dont vous allez gérer les apparei
 Ensuite, obtenez vos conditions préalables en fonction de vos besoins et de vos scénarios créés à l’étape précédente. [Implement Your plan](https://docs.microsoft.com/intune/planning-guide-onboarding) répertorie toutes les conditions requises. Voici les éléments importants dont vous avez besoin pour Intune avec Microsoft 365 :
 
 - **Abonnement Intune**: inclus dans Microsoft 365 et vous donne accès à Microsoft Intune dans le [portail Azure](https://portal.azure.com)
-- **Abonnement office 365**: inclus dans Microsoft 365 et est utilisé pour les applications Office, y compris le courrier électronique
+- **Abonnement microsoft 365**: inclus dans Microsoft 365 et est utilisé pour les applications Office, y compris le courrier électronique
 - **Azure Active Directory (Azure AD) Premium**: inclus dans Microsoft 365 et permet de créer des groupes d’utilisateurs ou de sécurité. Ces groupes reçoivent des stratégies Intune que vous créez, par exemple en forçant une longueur de mot de passe pour déverrouiller un appareil. Les groupes que vous créez à la [phase 2 : Identity](https://docs.microsoft.com/microsoft-365/enterprise/identity-infrastructure) peuvent être utilisés.
 
 Il peut y avoir des exigences supplémentaires en fonction des besoins de votre organisation. Par exemple, si vous gérez des appareils iOS, vous aurez besoin d’un certificat de transmission de type tablette Apple. Si vous utilisez Exchange sur site, vous aurez besoin du connecteur Exchange local. Ces exigences supplémentaires sont décrites lorsque vous accédez à ces étapes.
