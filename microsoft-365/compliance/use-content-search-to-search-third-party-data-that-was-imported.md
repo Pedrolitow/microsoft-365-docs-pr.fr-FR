@@ -1,5 +1,5 @@
 ---
-title: Utiliser la recherche de contenu pour rechercher des données tierces importées dans Office 365
+title: Utiliser la recherche de contenu pour rechercher des données importées tierces
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -13,19 +13,19 @@ ms.collection: M365-security-compliance
 localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: ec2677ff-c4d7-4363-a9e7-22c80e015688
-description: Utiliser l’outil eDiscovery de recherche de contenu pour rechercher des éléments importés dans des boîtes aux lettres dans Office 365 à partir d’une source de données tierce. Vous pouvez créer une requête pour rechercher tous les éléments importés ou créer une requête pour rechercher des types de données tiers spécifiques. Cet article répertorie les valeurs que vous pouvez utiliser dans une requête de mot clé pour rechercher les types de données tiers que vous pouvez importer vers Office 365.
-ms.openlocfilehash: 005290dc2dae203c4fddc1c78d3007306c613483
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+description: Utiliser l’outil eDiscovery de recherche de contenu pour rechercher des éléments importés dans des boîtes aux lettres dans Microsoft 365 à partir d’une source de données tierce. Vous pouvez créer une requête pour rechercher tous les éléments importés ou créer une requête pour rechercher des types de données tiers spécifiques. Cet article répertorie les valeurs que vous pouvez utiliser dans une requête de mot clé pour rechercher les types de données tiers que vous pouvez importer vers Microsoft 365.
+ms.openlocfilehash: 07a489d7c18cc305b7ffc745f7fc7870d8f72a2f
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601321"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43633369"
 ---
-# <a name="use-content-search-to-search-third-party-data-imported-to-office-365"></a>Utiliser la recherche de contenu pour rechercher des données tierces importées dans Office 365
+# <a name="use-content-search-to-search-third-party-imported-data"></a>Utiliser la recherche de contenu pour rechercher des données importées tierces
 
-Vous pouvez utiliser l' [outil eDiscovery](content-search.md) de la recherche de contenu dans le centre de sécurité & conformité pour rechercher des éléments importés dans des boîtes aux lettres dans Office 365 à partir d’une source de données tierce. Vous pouvez créer une requête pour rechercher tous les éléments de données tiers importés ou créer une requête pour rechercher des éléments de données tiers spécifiques. Par ailleurs, vous pouvez également créer une stratégie de rétention Office 365 basée sur une requête ou une conservation eDiscovery basée sur une requête pour conserver les données tierces dans Office 365. 
+Vous pouvez utiliser l' [outil eDiscovery](content-search.md) de la recherche de contenu dans le centre de sécurité & conformité pour rechercher des éléments importés dans des boîtes aux lettres dans Microsoft 365 à partir d’une source de données tierce. Vous pouvez créer une requête pour rechercher tous les éléments de données tiers importés ou créer une requête pour rechercher des éléments de données tiers spécifiques. Par ailleurs, vous pouvez également créer une stratégie de rétention basée sur une requête ou une conservation eDiscovery basée sur une requête pour conserver les données tierces. 
   
-Pour plus d’informations sur l’importation de données tierces et sur la liste des types de données tierces que vous pouvez importer vers Office 365, voir [collaborer avec un partenaire pour archiver des données tierces dans office 365](work-with-partner-to-archive-third-party-data.md). 
+Pour plus d’informations sur l’importation de données tierces et sur la liste des types de données tierces que vous pouvez importer vers Microsoft 365, consultez l' [ouvrage utiliser un partenaire pour archiver des données tierces dans Office 365](work-with-partner-to-archive-third-party-data.md). 
   
 ## <a name="creating-a-query-to-search-all-third-party-data"></a>Création d’une requête pour rechercher toutes les données tierces
 

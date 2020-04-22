@@ -13,21 +13,21 @@ ms.collection: ''
 search.appverid: MOE150
 ms.assetid: 7a150c84-049c-4a9c-8c91-22355b35f2a7
 description: Utilisez l’outil de collection Microsoft PST pour effectuer des recherches sur le réseau de votre organisation afin d’obtenir un inventaire des fichiers PST disséminés au sein de votre organisation. Une fois que vous avez trouvé des fichiers PST, vous pouvez utiliser l’outil de collecte PST pour les copier dans un emplacement central afin de pouvoir les importer dans Office 365.
-ms.openlocfilehash: 736e317318f860936450b7412bc465fc7c9d59e1
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: ee9a657cc0ac44e57e85edc68e80e0a76aa063d4
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42073919"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43633329"
 ---
 # <a name="use-the-pst-collection-tool-to-find-copy-and-delete-pst-files-in-your-organization"></a>Utiliser l’outil de collecte PST pour rechercher, copier et supprimer des fichiers PST dans votre organisation
 
 > [!IMPORTANT]
-> L’outil de collecte PST décrit dans cet article n’est pas pris en charge dans les services ou programmes de support standard Microsoft. L’outil est fourni en l’État sans aucune garantie. Microsoft exclut toute garantie implicite, y compris, sans limitation, les garanties implicites de qualité marchande ou d'adéquation à un usage particulier. L’ensemble des risques liés à l’utilisation ou aux performances de l’outil et de la documentation vous incombe. En aucun cas Microsoft, ses auteurs ou toute personne impliquée dans la création, la production ou la livraison de l’outil ne sont responsables de quelque dommage que ce soit (y compris, sans s’y limiter, les dommages pour les pertes de bénéfices, les interruptions d’entreprise, la perte de les informations professionnelles, ou toute autre perte de façon pécuniaire, découlant de l’utilisation ou de l’impossibilité d’utiliser l’outil ou la documentation, même si Microsoft a été avisé de la possibilité de tels dommages.
+> L’outil de collecte PST décrit dans cet article n’est pas pris en charge dans les services ou programmes de support standard Microsoft. L’outil est fourni en l’État sans aucune garantie. Microsoft exclut toute garantie implicite, y compris, sans limitation, les garanties implicites de qualité marchande ou d'adéquation à un usage particulier. L’ensemble des risques liés à l’utilisation ou aux performances de l’outil et de la documentation vous incombe. En aucun cas Microsoft, ses auteurs, ou toute personne impliquée dans la création, la production ou la livraison de l’outil n’est responsable d’aucun dommage (y compris, sans s’y limiter, les dommages liés à la perte de bénéfices, l’interruption d’activité, la perte d’informations professionnelles ou toute autre perte de façon pécuniaire) découlant de l’utilisation ou de l’impossibilité d’utiliser l’outil ou la documentation, même si Microsoft a
 
-Vous pouvez utiliser l’outil de collection Microsoft PST pour rechercher des fichiers PST dans le réseau de votre organisation. L’outil vous permet d’obtenir un inventaire des fichiers PST disséminés dans l’ensemble de votre organisation. Une fois que vous avez trouvé des fichiers PST, vous pouvez utiliser l’outil de collecte PST pour les copier à un emplacement central. Le fait d’avoir des fichiers PST en un seul endroit vous permet de les importer dans les boîtes aux lettres Exchange Online (ou dans une seule boîte aux lettres Exchange Online), où vous pouvez ensuite appliquer l’ensemble complet de fonctionnalités de conformité dans Office 365. Cela inclut l’importation de fichiers PST dans les boîtes aux lettres d’archivage des utilisateurs, la recherche de messages spécifiques dans les fichiers PST que vous avez importés à l’aide des outils de recherche eDiscovery, la conservation des messages à l’aide de conservations eDiscovery et de stratégies de rétention Office 365 et la gestion de la vie cycle de ces messages à l’aide des fonctionnalités de gestion des enregistrements de messagerie dans Exchange Online. Une fois que vous êtes certain que les fichiers PST que vous avez collectés ont été correctement importés dans Office 365, vous pouvez utiliser l’outil pour les supprimer de leur emplacement d’origine sur votre réseau. 
+Vous pouvez utiliser l’outil de collection Microsoft PST pour rechercher des fichiers PST dans le réseau de votre organisation. L’outil vous permet d’obtenir un inventaire des fichiers PST disséminés dans l’ensemble de votre organisation. Une fois que vous avez trouvé des fichiers PST, vous pouvez utiliser l’outil de collecte PST pour les copier à un emplacement central. Le fait d’avoir des fichiers PST en un seul endroit vous permet de les importer dans les boîtes aux lettres Exchange Online (ou dans une seule boîte aux lettres Exchange Online), où vous pouvez ensuite appliquer l’ensemble complet de fonctionnalités de conformité dans Office 365. Cela inclut l’importation de fichiers PST dans les boîtes aux lettres d’archivage des utilisateurs, la recherche de messages spécifiques dans les fichiers PST que vous avez importés à l’aide des outils de recherche eDiscovery, la conservation des messages à l’aide de conservations eDiscovery et de stratégies de rétention et la gestion du cycle de vie de ces messages à l’aide des fonctionnalités de gestion des enregistrements Une fois que vous êtes certain que les fichiers PST que vous avez collectés ont été correctement importés dans Office 365, vous pouvez utiliser l’outil pour les supprimer de leur emplacement d’origine sur votre réseau. 
   
-Vous pouvez également faire en sorte que l’outil de collection PST empêche les utilisateurs de créer de nouveaux fichiers PST et de modifier les fichiers PST existants que vous trouvez sur votre réseau. Ces fonctionnalités de « blocage » vous permettent de rechercher, de collecter et d’importer un ensemble connu de fichiers PST dans Office 365 et d’empêcher la prolifération future de fichiers PST dans votre organisation. 
+Vous pouvez également faire en sorte que l’outil de collection PST empêche les utilisateurs de créer de nouveaux fichiers PST et de modifier les fichiers PST existants que vous trouvez sur votre réseau. Ces fonctionnalités de « blocage » vous permettent de rechercher, de collecter et d’importer un ensemble connu de fichiers PST vers Microsoft 365 et d’empêcher la prolifération future de fichiers PST dans votre organisation. 
   
 ## <a name="how-the-pst-collection-tool-works"></a>Fonctionnement de l’outil de collecte PST
 
@@ -109,14 +109,14 @@ Pour obtenir des exemples de `Locations` syntaxe à utiliser pour chacun de ces 
 
 Après avoir exécuté l’outil de collecte PST avec succès le mode de recherche, les fichiers suivants sont créés et stockés dans les dossiers `LogLocation` spécifiés par les paramètres et `ConfigurationLocation` . 
   
-- **\>__ JobName Rechercher\<DateTimeStamp\>. log : le fichier journal contient les messages \<** d’état affichés. Ce fichier est créé dans le dossier spécifié par le `LogLocation` paramètre. 
+- **\>_Find_JobName Rechercher\<DateTimeStamp\>. log : le fichier journal contient les messages \<** d’état affichés. Ce fichier est créé dans le dossier spécifié par le `LogLocation` paramètre. 
     
-- **\>__ JobName Rechercher\<DateTimeStamp\>. csv : le fichier CSV contient une ligne pour chaque \<** fichier PST trouvé. Les informations de chaque fichier PST incluent l’ordinateur sur lequel le fichier PST a été trouvé, le chemin d’accès complet au fichier PST, le propriétaire du fichier PST et la taille (en kilo-octets, Ko) du fichier PST. Ce fichier est créé dans le dossier spécifié par le `LogLocation` paramètre. 
+- **\>_Find_JobName Rechercher\<DateTimeStamp\>. csv : le fichier CSV contient une ligne pour chaque \<** fichier PST trouvé. Les informations de chaque fichier PST incluent l’ordinateur sur lequel le fichier PST a été trouvé, le chemin d’accès complet au fichier PST, le propriétaire du fichier PST et la taille (en kilo-octets, Ko) du fichier PST. Ce fichier est créé dans le dossier spécifié par le `LogLocation` paramètre. 
     
     > [!TIP]
     > Utilisez l’outil somme automatique dans Excel pour calculer la taille totale (en Ko) de tous les fichiers PST figurant dans le fichier CSV. Vous pouvez ensuite utiliser un calculateur de conversion pour convertir la taille totale en mégaoctets (Mo) ou gigaoctets (Go). 
   
-- **\>__ JobName Rechercher\<DateTimeStamp\>. xml-le fichier XML contient des informations sur les valeurs des paramètres utilisées lors de l’exécution de l’outil dans le \<** mode de recherche. Ce fichier contient également des informations sur tous les fichiers PST qui ont été trouvés. Les données contenues dans ce fichier sont utilisées lorsque vous exécutez de nouveau l’outil pour le même travail pour bloquer, collecter ou supprimer les fichiers PST qui ont été trouvés. Ce fichier est créé dans le dossier spécifié par le `ConfigurationLocation` paramètre. 
+- **\>_Find_JobName Rechercher\<DateTimeStamp\>. xml-le fichier XML contient des informations sur les valeurs des paramètres utilisées lors de l’exécution de l’outil dans le \<** mode de recherche. Ce fichier contient également des informations sur tous les fichiers PST qui ont été trouvés. Les données contenues dans ce fichier sont utilisées lorsque vous exécutez de nouveau l’outil pour le même travail pour bloquer, collecter ou supprimer les fichiers PST qui ont été trouvés. Ce fichier est créé dans le dossier spécifié par le `ConfigurationLocation` paramètre. 
     
     > [!IMPORTANT]
     > Ne renommez pas ce fichier, ne le modifiez pas ou ne le déplacez pas. Elle est utilisée par l’outil de collecte PST lorsque vous réexécutez l’outil en mode de bloc, de copie ou de suppression pour le même travail. 
@@ -169,7 +169,7 @@ Pour bloquer l’accès aux fichiers PST :
 L’étape suivante consiste à copier les fichiers PST qui se trouvent lors de l’exécution de l’outil de collecte PST dans le mode de recherche. Cela vous permet de collecter les fichiers PST à un emplacement afin de pouvoir les importer ultérieurement dans Office 365. Avant de copier les fichiers PST dans l’emplacement de la collection, pensez à déterminer la quantité totale d’espace de stockage requise. Pour ce faire, utilisez le fichier CSV qui a été créé à l’étape 1 pour calculer la taille totale de tous les fichiers PST.
   
 > [!NOTE]
-> Une fois que vous avez importé les fichiers PST dans Office 365 et que vous les avez supprimés de leur emplacement d’origine, vous pouvez les supprimer de l’emplacement de collection dans lequel vous les avez copiés à l’étape suivante. 
+> Après avoir importé les fichiers PST vers Microsoft 365 et les avoir supprimés de leur emplacement d’origine, vous pouvez les supprimer de l’emplacement de collection dans lequel vous les avez copiés à l’étape suivante. 
   
 1. Ouvrez une invite de commandes (exécuter en tant qu’administrateur) sur votre ordinateur local.
     
@@ -206,9 +206,9 @@ L’étape suivante consiste à copier les fichiers PST qui se trouvent lors de 
 
 Une fois que vous avez exécuté DataCollectorMaster. exe en mode de collecte, les fichiers suivants sont créés et stockés dans les dossiers spécifiés par les `LogLocation` paramètres et `ConfigurationLocation` . 
   
-- **\>__ JobName Collect\<DateTimeStamp\>. log : le fichier journal contient les messages \<** d’état affichés. Ce fichier est créé dans le dossier spécifié par le `LogLocation` paramètre. 
+- **\>_Collect_JobName Collect\<DateTimeStamp\>. log : le fichier journal contient les messages \<** d’état affichés. Ce fichier est créé dans le dossier spécifié par le `LogLocation` paramètre. 
     
-- **\>__ JobName Collect\<DateTimeStamp\>. xml-le fichier XML contient uniquement des informations sur les valeurs de paramètre qui, utilisées par l’outil, ont été exécutées en \<** mode de collecte. Les données contenues dans ce fichier sont utilisées lorsque vous exécutez de nouveau l’outil DataCollectorMaster. exe pour supprimer des fichiers PST ; Voir [étape 5](#step-5-delete-the-pst-files-found-on-your-network).
+- **\>_Collect_JobName Collect\<DateTimeStamp\>. xml-le fichier XML contient uniquement des informations sur les valeurs de paramètre qui, utilisées par l’outil, ont été exécutées en \<** mode de collecte. Les données contenues dans ce fichier sont utilisées lorsque vous exécutez de nouveau l’outil DataCollectorMaster. exe pour supprimer des fichiers PST ; Voir [étape 5](#step-5-delete-the-pst-files-found-on-your-network).
     
 
 ## <a name="step-4-import-the-pst-files-to-office-365"></a>Étape 4 : importer les fichiers PST dans Office 365
@@ -259,6 +259,6 @@ Une fois que les fichiers PST que vous avez trouvés et collectés ont été imp
 
 Après avoir exécuté DataCollectorMaster. exe en mode de suppression, les fichiers suivants sont créés et stockés dans le dossier spécifié par les `LogLocation` paramètres et `ConfigurationLocation` . 
   
-- **\>__ JobName supprimer\<DateTimeStamp\>. log : le fichier journal contient les messages \<** d’état affichés. Ce fichier est créé dans le dossier spécifié par le `LogLocation` paramètre. 
+- **\>_Delete_JobName supprimer\<DateTimeStamp\>. log : le fichier journal contient les messages \<** d’état affichés. Ce fichier est créé dans le dossier spécifié par le `LogLocation` paramètre. 
     
-- **\>__ JobName supprimer\<DateTimeStamp\>. xml-le fichier XML contient uniquement des informations sur les valeurs de paramètre qui, utilisées par l’outil, ont été exécutées en \<** mode de suppression. Il répertorie également le nom et le chemin d’accès de chaque fichier PST qui a été supprimé. Ce fichier est créé dans le dossier spécifié par le `ConfigurationLocation` paramètre. 
+- **\>_Delete_JobName supprimer\<DateTimeStamp\>. xml-le fichier XML contient uniquement des informations sur les valeurs de paramètre qui, utilisées par l’outil, ont été exécutées en \<** mode de suppression. Il répertorie également le nom et le chemin d’accès de chaque fichier PST qui a été supprimé. Ce fichier est créé dans le dossier spécifié par le `ConfigurationLocation` paramètre. 

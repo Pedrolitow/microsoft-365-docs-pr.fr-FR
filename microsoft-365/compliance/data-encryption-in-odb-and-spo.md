@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - SPO_Content
 description: Maîtrisez les notions de base du chiffrement de la sécurité de données dans OneDrive Entreprise et SharePoint Online.
-ms.openlocfilehash: c21ec4ef6b81bcf89565fd005b9a1d2068244b20
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: e882bf3bf633c821fe50246316b5b1065cfa4693
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42076351"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43633339"
 ---
 # <a name="data-encryption-in-onedrive-for-business-and-sharepoint-online"></a>Chiffrement de données dans OneDrive Entreprise et SharePoint Online
 
@@ -31,9 +31,9 @@ Maîtrisez les notions de base du chiffrement de la sécurité de données dans 
   
 ## <a name="overview"></a>Vue d’ensemble
 
-Office 365 est un environnement hautement sécurisé qui fournit une protection étendue à de nombreux niveaux : sécurité de centre de données physique, sécurité réseau, sécurité d'accès, sécurité des applications et sécurité des données. Cet article s'intéresse plus particulièrement à l'aspect du chiffrement de la sécurité des données lors de leur transport et de leur stockage pour OneDrive Entreprise et SharePoint Online.
+Microsoft 365 est un environnement hautement sécurisé qui offre une protection étendue dans plusieurs couches : sécurité du centre de données physique, sécurité du réseau, sécurité des accès, sécurité des applications et sécurité des données. Cet article s'intéresse plus particulièrement à l'aspect du chiffrement de la sécurité des données lors de leur transport et de leur stockage pour OneDrive Entreprise et SharePoint Online.
   
-Pour obtenir une description de la sécurité Office 365 dans son ensemble, consultez le livre [blanc sur la sécurité dans office 365](https://go.microsoft.com/fwlink/p/?LinkId=270895).
+Pour obtenir une description de la sécurité Microsoft 365 dans son ensemble, consultez le livre blanc sur la [sécurité](https://go.microsoft.com/fwlink/p/?LinkId=270895).
   
 Observez le fonctionnement du chiffrement des données dans la vidéo suivante.
   
@@ -51,7 +51,7 @@ Dans OneDrive Entreprise et SharePoint Online, il existe deux scénarios dans le
 
 Le chiffrement lors du stockage comprend deux composants : le chiffrement au niveau du disque BitLocker et le chiffrement par fichier du contenu client.
   
-BitLocker est déployé pour OneDrive Entreprise et SharePoint Online sur l'ensemble du service. Le chiffrement par fichier est également dans OneDrive entreprise et SharePoint Online dans Office 365 les environnements mutualisés et les nouveaux environnements dédiés qui sont basés sur la technologie mutualisée.
+BitLocker est déployé pour OneDrive Entreprise et SharePoint Online sur l'ensemble du service. Le chiffrement par fichier est également dans OneDrive entreprise et SharePoint Online dans les environnements mutualisés de Microsoft 365 et de nouveaux environnements dédiés qui sont basés sur la technologie mutualisée.
   
 Alors que BitLocker chiffre toutes les données sur un disque, le chiffrement par fichier va plus loin en ajoutant une clé de chiffrement unique pour chaque fichier. En outre, chaque mise à jour de chaque fichier est chiffrée à l'aide de sa propre clé de chiffrement. Avant d'être stockées, les clés permettant d'accéder au contenu chiffré sont stockées dans un emplacement physiquement distinct du contenu. Chaque étape de ce chiffrement utilise la méthode AES (Advanced Encryption Standard) avec des clés 256 bits et est conforme à la norme FIPS (Federal Information Processing Standard) 140-2. Le contenu chiffré est réparti sur un certain nombre de conteneurs dans l'ensemble du centre de données, et chaque conteneur possède des informations d'identification uniques. Ces informations sont stockées dans un emplacement physique distinct du contenu ou des clés de contenu.
   

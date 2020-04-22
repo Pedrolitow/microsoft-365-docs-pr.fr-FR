@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 13b19079e52a390e8be3372939619541aa3b7294
-ms.sourcegitcommit: 13f28aa762e467bab8ab1e95e1917b3ac28931da
+ms.openlocfilehash: 24d11f94d2b9139a6e54f29cff39f05076676f78
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43193470"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634176"
 ---
 # <a name="communication-compliance-in-microsoft-365"></a>Conformité de la communication dans Microsoft 365
 
@@ -121,10 +121,10 @@ Dans cette étape du flux de travail, vous identifiez vos besoins en matière de
 
 Vous pouvez choisir parmi les modèles de stratégie suivants dans le centre de conformité Microsoft 365 :
 
-- **Langage offensant et anti-harcèlement**: utilisez ce modèle pour créer rapidement une stratégie qui utilise les classifieurs de menace, de blasphème et de harcèlement intégrés pour détecter automatiquement le contenu susceptible d’être injurieux ou choquant.
+- **Langage offensant et anti-harcèlement**: utilisez ce modèle pour créer rapidement une stratégie qui utilise le classifieur intégré pour détecter automatiquement le contenu qui peut être considéré comme injurieux ou choquant.
 - **Informations sensibles**: utilisez ce modèle pour créer une stratégie d’analyse des communications contenant des types d’informations sensibles ou des mots clés définis afin de vous assurer que les données importantes ne sont pas partagées avec des personnes qui n’ont pas accès.
 - **Conformité réglementaire**: utilisez ce modèle pour créer une stratégie d’analyse des communications concernant des références à des termes financiers standard associés à des normes réglementaires.
-- **Stratégie personnalisée**: utilisez ce modèle pour configurer des canaux de communication, des classifieurs, des conditions de détection individuels et la quantité de contenu à examiner dans votre organisation.
+- **Stratégie personnalisée**: utilisez ce modèle pour configurer des canaux de communication spécifiques, des conditions de détection et la quantité de contenu à examiner au sein de votre organisation.
 
 ### <a name="investigate"></a>Pench
 
@@ -151,7 +151,7 @@ L’étape suivante consiste à corriger les problèmes de conformité de commun
 
 Le suivi et la gestion des problèmes de conformité identifiés par les stratégies de conformité des communications s’étendent à l’ensemble du processus de flux de travail. À mesure que des alertes sont générées et que des actions d’analyse et de correction sont mises en œuvre, des stratégies existantes peuvent avoir besoin d’être réexaminées et mises à jour, et de nouvelles stratégies peuvent avoir besoin d’être créées.
 
-- **Monitor and Report**: utilisez les tableaux de bord de conformité de communication, les rapports, les journaux d’exportation et les événements enregistrés dans les journaux d’audit Office 365 unifiés pour évaluer et améliorer continuellement votre position de conformité.
+- **Monitor and Report**: utilisez des tableaux de bord de conformité de communication, des rapports, des journaux d’exportation et des événements enregistrés dans les journaux d’audit unifiés pour évaluer et améliorer continuellement votre position de conformité.
 
 ## <a name="ready-to-get-started"></a>Vous êtes prêt ?
 

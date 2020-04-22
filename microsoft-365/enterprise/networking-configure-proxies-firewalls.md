@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/13/2020
+ms.date: 04/20/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Analysez et configurez des navigateurs web et des équipements de périmètre pour le trafic de contournement vers des emplacements Office 365 approuvés.
-ms.openlocfilehash: b04e16b249dccf8f2461189b8b47abdd252a75d8
-ms.sourcegitcommit: dbbdeca5a6cd048e1bde9e820a8b8a0d6022c7a2
+ms.openlocfilehash: 68e8f7868e0b0f7b3da80bd5f19b18f261b1b05c
+ms.sourcegitcommit: d818828c66cf98b0b0037ba8b3cb790c940281b7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43504078"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43583392"
 ---
 # <a name="step-4-configure-traffic-bypass"></a>Étape 4 : configurer le trafic de contournement
 
@@ -61,6 +61,8 @@ Les connexions de réseau privé virtuel (VPN) sont généralement utilisées pa
 La tunnellisation fractionnée est la capacité d’une connexion VPN à acheminer le trafic spécifié sur Internet plutôt que de l’envoyer à votre intranet via la connexion VPN. Afin de garantir aux travailleurs à distance des performances optimales des services Microsoft 365 critiques tels que Teams, SharePoint Online et Exchange Online, configurez vos connexions VPN par tunnellisation fractionnée pour envoyer le trafic vers les points de terminaison Office 365 de catégorie Optimiser directement via Internet. 
 
 Pour plus d’informations, voir [Optimiser la connectivité d’Office 365 pour les utilisateurs à distance à l’aide de la tunnellisation fragmentée de VPN](https://docs.microsoft.com/office365/enterprise/office-365-vpn-split-tunnel).
+
+Pour tester la proximité du point d’entrée pour le réseau mondial de Microsoft et la proximité du point de connexion de votre réseau d'entreprise à votre FAI, utilisez l’ [Outil d’intégration réseau Office 365](https://connectivity.office.com/).
 
 Comme point de vérification intermédiaire, vous pouvez consulter les [critères de sortie](networking-exit-criteria.md#crit-networking-step4) pour cette étape.
 

@@ -15,18 +15,18 @@ search.appverid:
 - MET150
 ms.assetid: 2e5fbe9f-ee4d-4178-8ff8-4356bc1b168e
 description: Utilisez des cas eDiscovery dans le centre de conformité Microsoft 365 pour gérer l’enquête légale de votre organisation. Si vous disposez d’un abonnement E5, vous pouvez analyser les données de cas en utilisant les fonctionnalités d’analyse de texte, d’apprentissage automatique et de codage prédictif de Advanced eDiscovery.
-ms.openlocfilehash: 0db2187259c0c828c492f56698963bf9f61c9c18
-ms.sourcegitcommit: 825037f166eea3ba70f8980cedc5492f90c1cc56
+ms.openlocfilehash: 41eaa4ca4428c21b905d63365a9b3af7da1df9aa
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "43097193"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635904"
 ---
 # <a name="manage-legal-investigations-in-microsoft-365"></a>Gérer les enquêtes juridiques dans Microsoft 365
 
 Les organisations ont de nombreuses raisons de répondre à un cas juridique impliquant certains cadres ou d’autres employés de votre organisation. Cela peut impliquer le recours à l’identification et à la conservation rapides de ces informations dans des e-mails, des documents, des conversations de messagerie instantanée et dans d’autres emplacements de contenu. Vous pouvez effectuer ces opérations et de nombreuses autres activités similaires à l’aide des outils de cas eDiscovery dans le centre de sécurité et de conformité.
   
-**Vous souhaitez savoir comment Microsoft gère ses enquêtes eDiscovery ?** Voici un livre [blanc technique](https://go.microsoft.com/fwlink/?linkid=852161) que vous pouvez télécharger et qui explique comment nous utilisons les mêmes outils de recherche et d’enquête Office 365 pour gérer notre flux de travail eDiscovery interne.
+**Vous souhaitez savoir comment Microsoft gère ses enquêtes eDiscovery ?** Voici un livre [blanc technique](https://go.microsoft.com/fwlink/?linkid=852161) que vous pouvez télécharger et qui explique comment nous utilisons les mêmes outils de recherche et d’enquête pour gérer notre flux de travail eDiscovery interne.
    
 ## <a name="manage-legal-investigations-with-ediscovery-cases"></a>Gérer les enquêtes juridiques avec des cas eDiscovery
 

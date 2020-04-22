@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Vous pouvez suivre l’état des processus de longue durée résultant de l’exécution des tâches dans l’outil d’analyse des données du centre de sécurité & conformité.
-ms.openlocfilehash: 6c7b247eb4a8ef9797a8a5993195bb21d7bf30bf
-ms.sourcegitcommit: 053d42480d8aa3792ecb0027ddd53d383a029474
+ms.openlocfilehash: ef2fe364a20bd0edc48761162f519135b750d9ab
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "41582923"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635914"
 ---
 # <a name="manage-jobs-in-data-investigations-preview"></a>Gérer les travaux dans les enquêtes de données (aperçu)
 
@@ -31,7 +31,7 @@ Voici une liste des travaux (qui sont généralement des processus de longue dur
 | :----------------- | :----------     |
 |Ajout de données à un jeu de preuves | Un utilisateur ajoute les résultats d’une recherche à un ensemble de preuves.  Pour plus d’informations, consultez la rubrique [Rechercher des données dans une enquête](search-for-data.md). |
 |Ajout de données à un autre ensemble de preuves | Un utilisateur ajoute des documents d’un ensemble de preuves à un ensemble de preuves différent dans le même cas.|
-|Ajout de données non-Office 365 à un jeu de preuves | Un utilisateur télécharge des données non-Office 365 vers un jeu de preuves. Les données sont également indexées pendant ce processus. Par exemple, les fichiers d’un serveur de fichiers local ou d’un ordinateur client sont téléchargés vers un jeu de preuves. Pour plus d’informations, voir [charger des données non-Office 365 dans des preuves](load-non-office365-data.md).| 
+|Ajout de données non Microsoft 365 à un ensemble de preuves | Un utilisateur télécharge des données non-Microsoft 365 vers un jeu de preuves. Les données sont également indexées pendant ce processus. Par exemple, les fichiers d’un serveur de fichiers local ou d’un ordinateur client sont téléchargés vers un jeu de preuves. Pour plus d’informations, voir [charger des données non-Microsoft 365 dans des preuves](load-non-office365-data.md).| 
 |Ajout de données corrigées à un ensemble de preuves | Les données avec des erreurs de traitement sont corrigées et rechargées dans un jeu de preuves. Pour plus d’informations, consultez la rubrique [erreur de correction lors du traitement des données pour une enquête](error-remediation.md). | 
 |Comparaison des jeux de charges | Un utilisateur examine les différences entre les différents jeux de charges dans un jeu de preuves. Un jeu de charges est une instance de l’ajout de données à un jeu de preuves. Par exemple, si vous ajoutez les résultats de deux recherches différentes dans le même jeu de preuves, chacun d’entre eux représenterait un jeu de charges. Pour plus d’informations, consultez la rubrique [Manage Load Sets](manage-load-sets.md). |
 |Conversion de documents biffés au format PDF|Une fois qu’un utilisateur a annoté un document dans un jeu de preuves et rédige une partie de celui-ci, il peut choisir de convertir le document rédigé en fichier PDF. Cela permet de s’assurer que la partie biffée n’est pas visible lorsque le document est exporté pour présentation. Pour plus d’informations, voir [examiner les données dans les preuves](review-data-in-evidence.md). |
@@ -49,7 +49,7 @@ Voici une liste des travaux (qui sont généralement des processus de longue dur
 
 Le tableau suivant décrit les différents États d’État pour les travaux.
 
-| État           | Description     |
+| Statut           | Description     |
 | :----------------- | :----------     |
 | Submitted | Une nouvelle tâche a été créée.  La date et l’heure auxquelles le travail a été soumis s’affichent dans la colonne **créé** sous l’onglet **travaux** . |
 | Échec de l’envoi | Échec de l’envoi du travail.  Vous devez essayer de réexécuter l’action qui a déclenché le travail. |

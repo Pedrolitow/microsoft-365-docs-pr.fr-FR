@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 localization_priority: None
 description: Découvrez comment définir des stratégies pour les barrières d’informations dans Microsoft Teams.
-ms.openlocfilehash: efce9a1c9827ddc904d6942ff9e1005850acfe8c
-ms.sourcegitcommit: ce6121a8e3ca7438071d73b0c76e2b6f33ac1cf7
+ms.openlocfilehash: c7bc7a1f90962910a0626967e4f6dee005695e30
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "43029880"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43621370"
 ---
 # <a name="define-information-barrier-policies"></a>Définir des stratégies d’obstacle aux informations
 
@@ -37,7 +37,7 @@ Lorsque vous définissez des stratégies pour les barrières d’informations, v
 
 - Les attributs de compte d’utilisateur sont définis dans Azure Active Directory (ou Exchange Online). Ces attributs peuvent inclure le service, la fonction, l’emplacement, le nom de l’équipe et d’autres détails du profil de travail. 
 
-- Les segments sont des ensembles d’utilisateurs définis dans le centre de conformité & la sécurité d’Office 365 à l’aide d’un **attribut de compte d’utilisateur**sélectionné. (Reportez-vous à la [liste des attributs pris en charge](information-barriers-attributes.md).) 
+- Les segments sont des ensembles d’utilisateurs définis dans le centre de sécurité & conformité à l’aide d’un **attribut de compte d’utilisateur**sélectionné. (Reportez-vous à la [liste des attributs pris en charge](information-barriers-attributes.md).) 
 
 - Les stratégies de barrière des informations déterminent les limites ou restrictions de communication. Lorsque vous définissez des stratégies de barrière des informations, vous avez le choix entre deux types de stratégies :
     - Les stratégies « bloquer » empêchent un segment de communiquer avec un autre segment.
@@ -67,12 +67,12 @@ En plus des [licences et des autorisations requises](information-barriers.md#req
 
 - Recherche dans l’annuaire d’étendues : avant de définir la première stratégie de barrière des informations de votre organisation, vous devez [activer la recherche dans l’annuaire d’étendues dans Microsoft teams](https://docs.microsoft.com/MicrosoftTeams/teams-scoped-directory-search). Attendez au moins 24 heures après l’activation de la recherche dans l’annuaire d’étendue avant de configurer ou de définir des stratégies de barrière des informations.
 
-- Journalisation d’audit : pour Rechercher l’état d’une application de stratégie, la journalisation d’audit doit être activée. Nous vous recommandons d’effectuer cette opération avant de commencer à définir des segments ou des stratégies. Pour en savoir plus, consultez la rubrique [activer ou désactiver la recherche dans le journal d’audit Office 365](turn-audit-log-search-on-or-off.md).
+- Journalisation d’audit : pour Rechercher l’état d’une application de stratégie, la journalisation d’audit doit être activée. Nous vous recommandons d’effectuer cette opération avant de commencer à définir des segments ou des stratégies. Pour en savoir plus, consultez [la rubrique activer ou désactiver la recherche dans le journal d’audit](turn-audit-log-search-on-or-off.md).
 
 - Aucune stratégie de carnet d’adresses-avant de définir et d’appliquer des stratégies de barrière des informations, assurez-vous qu’aucune stratégie de carnet d’adresses Exchange n’est mise en place. Les barrières d’informations sont basées sur les stratégies de carnet d’adresses, mais les deux types de stratégies ne sont pas compatibles. Si vous disposez de ces stratégies, veillez à [Supprimer les stratégies de carnet d’adresses](https://docs.microsoft.com/exchange/address-books/address-book-policies/remove-an-address-book-policy) en premier. Une fois que les stratégies de barrière des informations sont activées et que le carnet d’adresses hiérarchique est activé, tous les utilisateurs ***qui ne sont pas inclus*** dans un segment de barrière des informations voient le [carnet d’adresses hiérarchique](https://docs.microsoft.com/exchange/address-books/hierarchical-address-books/hierarchical-address-books) dans Exchange Online.
 
 - PowerShell-actuellement, les stratégies de barrière des informations sont définies et gérées dans le centre de conformité Office 365 Security & à l’aide des cmdlets PowerShell. Bien que plusieurs exemples soient fournis dans cet article, vous devez être familiarisé avec les cmdlets et les paramètres PowerShell. Vous aurez également besoin du module AzureRM.
-    - [Connexion au Centre de Conformité et Sécurité Office 365 PowerShell ](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps)
+    - [Se connecter à l’interface PowerShell du Centre de sécurité et conformité](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps)
     - [Installer le module Azure PowerShell](https://docs.microsoft.com/powershell/azure/install-az-ps?view=azps-2.3.2)
 
 - Consentement de l’administrateur pour les barrières d’informations dans Microsoft teams : lorsque vos stratégies sont en place, les barrières d’informations peuvent supprimer des personnes des sessions de conversation auxquelles elles ne sont pas censées se trouver. Cela permet de s’assurer que votre organisation reste conforme aux stratégies et réglementations. Utilisez la procédure suivante pour permettre aux stratégies de barrière des informations de fonctionner comme prévu dans Microsoft Teams. 
@@ -243,7 +243,7 @@ Les stratégies de barrière des informations ne sont pas appliquées tant que v
 
     Répétez cette étape en fonction de chaque stratégie.
 
-3. Une fois que vous avez défini vos stratégies de barrière des informations sur le statut actif, utilisez la cmdlet **Start-InformationBarrierPoliciesApplication** dans le centre de sécurité & conformité Office 365.
+3. Une fois que vous avez défini vos stratégies de barrière des informations sur état actif, utilisez la cmdlet **Start-InformationBarrierPoliciesApplication** dans le centre de sécurité & Compliance Center.
 
     Syntaxe`Start-InformationBarrierPoliciesApplication`
 
@@ -316,7 +316,7 @@ Une fois les segments définis, contoso passe à définir des stratégies.
 
 Contoso définit trois stratégies, comme décrit dans le tableau suivant :
 
-|Politique  |Définition de la stratégie  |
+|Stratégie  |Définition de la stratégie  |
 |---------|---------|
 |Stratégie 1 : empêcher les ventes de communiquer avec la recherche     | `New-InformationBarrierPolicy -Name "Sales-Research" -AssignedSegment "Sales" -SegmentsBlocked "Research" -State Inactive` <p> Dans cet exemple, la stratégie de barrière des informations est appelée *Sales-Research*. Lorsque cette stratégie est active et appliquée, cela permet d’empêcher les utilisateurs qui se trouvent dans le segment des ventes de communiquer avec les utilisateurs du segment de recherche. Il s’agit d’une stratégie à sens unique ; Il n’empêchera pas la recherche de communiquer avec les ventes. Pour cela, la stratégie 2 est requise.      |
 |Policy 2 : empêcher les recherches de communiquer avec les ventes     | `New-InformationBarrierPolicy -Name "Research-Sales" -AssignedSegment "Research" -SegmentsBlocked "Sales" -State Inactive` <p> Dans cet exemple, la stratégie de barrière des informations est appelée *Research-Sales*. Lorsque cette stratégie est active et appliquée, cela permet d’empêcher les utilisateurs qui se trouvent dans le segment de recherche de communiquer avec les utilisateurs du segment de ventes.       |

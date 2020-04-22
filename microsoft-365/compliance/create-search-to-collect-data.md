@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 47d30cb2da91eff1260ffcf07838bd066917b4a1
-ms.sourcegitcommit: dcea75af89f5f80ec6670346ee176407e043de54
+ms.openlocfilehash: 4b740b07b59b7500b8f57584767796b7f31ae87d
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "42610641"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635974"
 ---
 # <a name="create-a-search"></a>Créer une recherche
 
@@ -39,7 +39,7 @@ Choisissez les emplacements de contenu de dépositaire à rechercher en spécifi
 
 ## <a name="choose-non-custodial-locations"></a>Choisir les emplacements non privatives de cœur
 
-Dans certains cas, vous souhaiterez peut-être Rechercher des sources de données qui ne sont pas associées à un dépositaire. Dans ce cas, vous pouvez spécifier les emplacements de recherche, ou choisir de rechercher tous les emplacements de contenu pour un service Office 365 spécifique (par exemple, rechercher toutes les boîtes aux lettres Exchange ou tous les sites SharePoint et OneDrive).
+Dans certains cas, vous souhaiterez peut-être Rechercher des sources de données qui ne sont pas associées à un dépositaire. Dans ce cas, vous pouvez spécifier les emplacements de recherche, ou choisir de rechercher tous les emplacements de contenu d’un service Microsoft spécifique (par exemple, rechercher toutes les boîtes aux lettres Exchange ou tous les sites SharePoint et OneDrive).
 
 ## <a name="define-the-search-query-and-conditions"></a>Définir la requête de recherche et les conditions
 

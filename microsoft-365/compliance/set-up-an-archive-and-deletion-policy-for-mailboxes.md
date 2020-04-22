@@ -1,5 +1,5 @@
 ---
-title: Configurer une stratégie d’archivage et de suppression pour les boîtes aux lettres de votre organisation Office 365
+title: Configurer une stratégie d’archivage et de suppression pour les boîtes aux lettres de votre organisation
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -18,17 +18,17 @@ search.appverid:
 - MBS150
 - BCS160
 ms.assetid: ec3587e4-7b4a-40fb-8fb8-8aa05aeae2ce
-description: Créer une stratégie d’archivage et de suppression dans Office 365 qui déplace automatiquement les éléments vers la boîte aux lettres d’archivage d’un utilisateur.
-ms.openlocfilehash: 53da9c027895421edaa99ebc18d17eafc0dbc679
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: Créer une stratégie d’archivage et de suppression qui déplace automatiquement les éléments vers la boîte aux lettres d’archivage d’un utilisateur.
+ms.openlocfilehash: d5c55227d601476b7c06d530a13a5768a4a108c4
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42081201"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635558"
 ---
-# <a name="set-up-an-archive-and-deletion-policy-for-mailboxes-in-your-office-365-organization"></a>Configurer une stratégie d’archivage et de suppression pour les boîtes aux lettres de votre organisation Office 365
+# <a name="set-up-an-archive-and-deletion-policy-for-mailboxes-in-your-organization"></a>Configurer une stratégie d’archivage et de suppression pour les boîtes aux lettres de votre organisation
 
- Dans Office 365, les administrateurs peuvent créer une stratégie d’archivage et de suppression qui déplace automatiquement les éléments vers la boîte aux lettres d’archivage d’un utilisateur et supprime automatiquement les éléments de la boîte aux lettres. L’administrateur effectue cette opération en créant une stratégie de rétention qui est affectée aux boîtes aux lettres et déplace des éléments vers la boîte aux lettres d’archivage d’un utilisateur au bout d’un certain temps, ce qui supprime également les éléments de la boîte aux lettres une fois qu’ils ont atteint une certaine limite d’âge. Les règles réelles qui déterminent les éléments déplacés ou supprimés et lorsque cela se produit sont appelées balises de rétention. Les balises de rétention sont liées à une stratégie de rétention, qui à son tour est affectée à la boîte aux lettres d’un utilisateur. Une balise de rétention applique les paramètres de rétention aux messages et dossiers individuels dans la boîte aux lettres d’un utilisateur. Il définit la durée pendant laquelle un message reste dans la boîte aux lettres et l’action effectuée lorsque le message atteint l’âge de rétention spécifié. Lorsqu’un message atteint son âge de rétention, il est déplacé vers la boîte aux lettres d’archivage de l’utilisateur ou supprimé. 
+ Dans Microsoft 365, les administrateurs peuvent créer une stratégie d’archivage et de suppression qui déplace automatiquement les éléments vers la boîte aux lettres d’archivage d’un utilisateur et supprime automatiquement les éléments de la boîte aux lettres. L’administrateur effectue cette opération en créant une stratégie de rétention qui est affectée aux boîtes aux lettres et déplace des éléments vers la boîte aux lettres d’archivage d’un utilisateur au bout d’un certain temps, ce qui supprime également les éléments de la boîte aux lettres une fois qu’ils ont atteint une certaine limite d’âge. Les règles réelles qui déterminent les éléments déplacés ou supprimés et lorsque cela se produit sont appelées balises de rétention. Les balises de rétention sont liées à une stratégie de rétention, qui à son tour est affectée à la boîte aux lettres d’un utilisateur. Une balise de rétention applique les paramètres de rétention aux messages et dossiers individuels dans la boîte aux lettres d’un utilisateur. Il définit la durée pendant laquelle un message reste dans la boîte aux lettres et l’action effectuée lorsque le message atteint l’âge de rétention spécifié. Lorsqu’un message atteint son âge de rétention, il est déplacé vers la boîte aux lettres d’archivage de l’utilisateur ou supprimé. 
   
 La procédure décrite dans cet article permet de configurer une stratégie d’archivage et de rétention pour une organisation fictive nommée Alpine House. La configuration de cette stratégie inclut les tâches suivantes :
   
@@ -48,9 +48,9 @@ Vous pouvez suivre une partie ou la totalité des étapes décrites dans cet art
   
 ## <a name="before-you-begin"></a>Avant de commencer
 
-- Vous devez être un administrateur général dans votre organisation Office 365 pour effectuer les étapes décrites dans cette rubrique. 
+- Vous devez être un administrateur général au sein de votre organisation pour effectuer les étapes décrites dans cette rubrique. 
     
--  Lorsque vous créez un nouveau compte d’utilisateur dans Office 365 et que vous affectez à l’utilisateur une licence Exchange Online, une boîte aux lettres est automatiquement créée pour l’utilisateur. Lorsque la boîte aux lettres est créée, une stratégie de rétention par défaut, appelée stratégie MRM par défaut, lui est automatiquement attribuée. Dans cet article, vous allez créer une nouvelle stratégie de rétention, puis l’affecter à des boîtes aux lettres utilisateur, en remplaçant la stratégie MRM par défaut. Une boîte aux lettres ne peut avoir qu’une seule stratégie de rétention affectée à un moment donné.
+-  Lorsque vous créez un nouveau compte d’utilisateur et que vous lui affectez une licence Exchange Online, une boîte aux lettres est automatiquement créée pour l’utilisateur. Lorsque la boîte aux lettres est créée, une stratégie de rétention par défaut, appelée stratégie MRM par défaut, lui est automatiquement attribuée. Dans cet article, vous allez créer une nouvelle stratégie de rétention, puis l’affecter à des boîtes aux lettres utilisateur, en remplaçant la stratégie MRM par défaut. Une boîte aux lettres ne peut avoir qu’une seule stratégie de rétention affectée à un moment donné.
     
 - Pour en savoir plus sur les balises de rétention et les stratégies de rétention dans Exchange Online, voir [balises et stratégies](https://go.microsoft.com/fwlink/p/?LinkId=404424)de rétention.
     
@@ -63,7 +63,7 @@ La première étape consiste à activer la boîte aux lettres d’archivage pour
   
 1. Accédez à [https://protection.office.com](https://protection.office.com).
     
-2. Sign in to Office 365 using your global administrator account.
+2. Connectez-vous à l’aide de votre compte d’administrateur général.
     
     
 3. Dans le centre de sécurité & conformité, accédez à **Archives**de **gouvernance** \> des informations.
@@ -248,7 +248,7 @@ Voici les étapes à suivre pour vous connecter à Exchange Online PowerShell, p
     $UserCredential = Get-Credential
     ```
 
-    Dans la boîte de dialogue **demande d’informations d’identification Windows PowerShell** , tapez le nom d’utilisateur et le mot de passe de votre compte d’administrateur global 365 Office, puis cliquez sur **OK**.
+    Dans la boîte de dialogue **demande d’informations d’identification Windows PowerShell** , tapez le nom d’utilisateur et le mot de passe de votre compte d’administrateur général, puis cliquez sur **OK**.
     
 2. Exécutez la commande suivante.
     

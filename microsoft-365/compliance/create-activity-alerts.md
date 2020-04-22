@@ -1,5 +1,5 @@
 ---
-title: Créer des alertes d’activité dans Office 365
+title: Créer des alertes d’activité
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -16,19 +16,19 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 72bbad69-035b-4d33-b8f4-549a2743e97d
-description: Ajoutez et gérez les alertes d’activité dans le centre de sécurité et de conformité pour qu’Office 365 vous envoie des notifications par courrier électronique lorsque les utilisateurs effectuent des activités spécifiques dans Office 365.
-ms.openlocfilehash: b83dec740b8b37d3c8a4132f114ee76178b2dd86
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: Ajoutez et gérez les alertes d’activité dans le centre de sécurité & conformité afin que Microsoft 365 vous envoie des notifications par courrier électronique lorsque les utilisateurs effectuent des activités spécifiques.
+ms.openlocfilehash: c649424ac1c20ea92e9b4cc637bab3ee89ac9a64
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42077671"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634228"
 ---
-# <a name="create-activity-alerts-in-the-office-365"></a>Créer des alertes d’activité dans Office 365
+# <a name="create-activity-alerts"></a>Créer des alertes d’activité
 
-Vous pouvez créer une alerte d’activité qui vous enverra une notification par courrier électronique lorsque les utilisateurs effectuent des activités spécifiques dans Office 365. Les alertes d’activité sont semblables à la recherche d’événements dans le journal d’audit Office 365, sauf que vous recevrez un message électronique lorsqu’un événement pour une activité pour laquelle vous avez créé une alerte se produit. 
+Vous pouvez créer une alerte d’activité qui vous enverra une notification par courrier électronique lorsque les utilisateurs effectuent des activités spécifiques dans Office 365. Les alertes d’activité sont semblables à la recherche d’événements dans le journal d’audit, à l’exception du fait que vous recevrez un message électronique lorsqu’un événement pour une activité pour laquelle vous avez créé une alerte se produit. 
   
- **Pourquoi utiliser des alertes d’activité au lieu de rechercher dans le journal d’audit ?** Il peut y avoir certains types d’activité ou d’activité réalisés par des utilisateurs spécifiques que vous voulez vraiment connaître. Au lieu de se souvenir de rechercher dans le journal d’audit de ces activités, vous pouvez utiliser des alertes d’activité pour qu’Office 365 vous envoie un message électronique lorsque les utilisateurs effectuent ces activités. Par exemple, vous pouvez créer une alerte activité pour vous avertir lorsqu’un utilisateur supprime des fichiers dans SharePoint ou vous pouvez créer une alerte pour vous avertir lorsqu’un utilisateur supprime définitivement des messages de leur boîte aux lettres. La notification par courrier électronique qui vous a été envoyée inclut des informations sur l’activité qui a été effectuée et sur l’utilisateur qui l’a exécutée. 
+ **Pourquoi utiliser des alertes d’activité au lieu de rechercher dans le journal d’audit ?** Il peut y avoir certains types d’activité ou d’activité réalisés par des utilisateurs spécifiques que vous voulez vraiment connaître. Au lieu de se souvenir de rechercher dans le journal d’audit de ces activités, vous pouvez utiliser des alertes d’activité pour que Microsoft 365 vous envoie un message électronique lorsque les utilisateurs effectuent ces activités. Par exemple, vous pouvez créer une alerte activité pour vous avertir lorsqu’un utilisateur supprime des fichiers dans SharePoint ou vous pouvez créer une alerte pour vous avertir lorsqu’un utilisateur supprime définitivement des messages de leur boîte aux lettres. La notification par courrier électronique qui vous a été envoyée inclut des informations sur l’activité qui a été effectuée et sur l’utilisateur qui l’a exécutée. 
 
 > [!NOTE]
 > Nous vous recommandons de commencer à utiliser les stratégies d’alerte dans le centre de sécurité et conformité au lieu de créer des alertes d’activité. Les stratégies d’alerte fournissent des fonctionnalités supplémentaires, telles que la création d’une stratégie d’alerte qui déclenche une alerte lorsqu’un utilisateur effectue une activité spécifique et affiche des alertes sur la page **afficher les alertes** dans le centre de sécurité et de conformité. Pour plus d’informations, consultez la rubrique [Alert Policies](alert-policies.md).
@@ -39,7 +39,7 @@ Vous pouvez créer une alerte d’activité qui vous enverra une notification pa
     
 - Vous (ou un autre administrateur) devez d’abord activer la journalisation d’audit pour votre organisation avant de pouvoir commencer à utiliser les alertes d’activité. Pour ce faire, cliquez simplement sur Démarrer l’enregistrement des activités de l' **utilisateur et** de l’administrateur dans la page **alertes d’activité** . (Si vous ne voyez pas ce lien, l’audit a déjà été activé pour votre organisation.) Vous pouvez également activer l’audit sur la page **recherche du journal d’audit** dans le centre de sécurité & conformité (accéder à recherche dans le **Journal d’audit**de la **recherche** \> ). Vous ne devez effectuer cette opération qu’une seule fois pour votre organisation.
   
-- Vous pouvez créer des alertes pour les mêmes activités que celles que vous pouvez rechercher dans le journal d’audit Office 365. Consultez la section [more information](#more-information) pour obtenir la liste des scénarios courants (et l’activité spécifique à surveiller) pour lesquels vous pouvez créer des alertes. 
+- Vous pouvez créer des alertes pour les mêmes activités que celles que vous pouvez rechercher dans le journal d’audit. Consultez la section [more information](#more-information) pour obtenir la liste des scénarios courants (et l’activité spécifique à surveiller) pour lesquels vous pouvez créer des alertes. 
     
 - Vous pouvez utiliser la page **alertes d’activité** du centre de sécurité & conformité pour créer des alertes uniquement pour les activités effectuées par les utilisateurs répertoriés dans le carnet d’adresses de votre organisation. Vous ne pouvez pas utiliser cette page pour créer des alertes pour les activités effectuées par des utilisateurs externes qui ne sont pas mentionnés dans le carnet d’adresses. 
     
@@ -47,7 +47,7 @@ Vous pouvez créer une alerte d’activité qui vous enverra une notification pa
 
 1. Accédez à [https://protection.office.com/managealerts](https://protection.office.com/managealerts).
     
-2. Ouvrez une session Office 365 en utilisant votre compte scolaire ou professionnel.
+2. Connectez-vous à l’aide de votre compte professionnel ou scolaire.
     
 3. Sur la **page alertes d’activité** , ![cliquez sur](../media/8ee52980-254b-440b-99a2-18d068de62d3.gif) ajouter une icône **nouveau**.
 
@@ -66,7 +66,7 @@ Vous pouvez créer une alerte d’activité qui vous enverra une notification pa
 
     d. **Envoyer cette alerte quand** -cliquer sur **Envoyer cette alerte quand** , puis configurer ces deux champs :
     
-    - **Activités** : cliquez sur la liste déroulante pour afficher les activités pour lesquelles vous pouvez créer une alerte. Il s’agit de la même liste d’activités que celle qui s’affiche lorsque vous recherchez dans le journal d’audit Office 365. Vous pouvez sélectionner une ou plusieurs activités spécifiques ou cliquer sur le nom du groupe d’activités pour sélectionner toutes les activités du groupe. Pour obtenir une description de ces activités, reportez-vous à la section « activités auditées » dans [Rechercher dans le journal d’audit](search-the-audit-log-in-security-and-compliance.md#audited-activities). Lorsqu’un utilisateur effectue une des activités que vous avez ajoutées à l’alerte, une notification par courrier électronique est envoyée. 
+    - **Activités** : cliquez sur la liste déroulante pour afficher les activités pour lesquelles vous pouvez créer une alerte. Il s’agit de la même liste d’activités que celle qui s’affiche lorsque vous recherchez dans le journal d’audit. Vous pouvez sélectionner une ou plusieurs activités spécifiques ou cliquer sur le nom du groupe d’activités pour sélectionner toutes les activités du groupe. Pour obtenir une description de ces activités, reportez-vous à la section « activités auditées » dans [Rechercher dans le journal d’audit](search-the-audit-log-in-security-and-compliance.md#audited-activities). Lorsqu’un utilisateur effectue une des activités que vous avez ajoutées à l’alerte, une notification par courrier électronique est envoyée. 
     
      - **Utilisateurs** : cliquez sur cette zone, puis sélectionnez un ou plusieurs utilisateurs. Si les utilisateurs de cette zone exécutent les activités que vous avez ajoutées à la zone **activités** , une alerte est envoyée. Laissez la zone **utilisateurs** vide pour envoyer une alerte lorsqu’un utilisateur de votre organisation effectue les activités spécifiées par l’alerte. 
 
@@ -86,7 +86,7 @@ Vous pouvez désactiver une alerte d’activité de sorte qu’aucune notificati
   
 1. Accédez à la vue [https://protection.office.com/managealerts](https://protection.office.com/managealerts).
     
-2. Ouvrez une session Office 365 en utilisant votre compte scolaire ou professionnel.
+2. Connectez-vous à l’aide de votre compte professionnel ou scolaire.
     
 3. Dans la liste des alertes d’activité pour votre organisation, cliquez sur l’alerte que vous souhaitez désactiver.
     
@@ -113,7 +113,7 @@ Pour réactiver une alerte activité, répétez ces étapes et cliquez sur le bo
     |:-----|:-----|:-----|
     |Affiche un document sur un site.  <br/> |Fichier consulté  <br/> |Activités de fichiers et de dossiers  <br/> |
     |Modifie ou modifie un document.  <br/> |Fichier modifié  <br/> |Activités de fichiers et de dossiers  <br/> |
-    |Partage un document avec un utilisateur en dehors de votre organisation.  <br/> |Partager un fichier, un dossier ou un site  <br/> And  <br/> Invitation de partage créée  <br/> Pour plus d’informations, voir [Utiliser l’audit du partage dans le journal d’audit d’Office 365](use-sharing-auditing.md).  <br/> |Activités de demande d’accès et de partage  <br/> |
+    |Partage un document avec un utilisateur en dehors de votre organisation.  <br/> |Partager un fichier, un dossier ou un site  <br/> And  <br/> Invitation de partage créée  <br/> Pour plus d’informations, reportez-vous à [la rubrique utiliser l’audit de partage dans le journal d’audit](use-sharing-auditing.md).  <br/> |Activités de demande d’accès et de partage  <br/> |
     |Charge ou télécharge un document.  <br/> |Fichier téléchargé  <br/> Et/ou  <br/> Fichier téléchargé  <br/> |Activités de fichiers et de dossiers  <br/> |
     |Modifie les autorisations d’accès à un site.  <br/> |Autorisations de site modifiées  <br/> |Activités d’administration des sites  <br/> |
 

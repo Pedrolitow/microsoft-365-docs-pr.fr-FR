@@ -1,5 +1,5 @@
 ---
-title: Configurer la clé client pour Office 365
+title: Configurer la clé client
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -12,17 +12,17 @@ search.appverid:
 - MET150
 ms.collection:
 - M365-security-compliance
-description: Découvrez comment configurer la clé client pour Office 365 pour Exchange Online, Skype entreprise, SharePoint Online, OneDrive entreprise et les fichiers Teams.
-ms.openlocfilehash: af3ade4ed411a390d1501d3f3fe15ba3111e14d3
-ms.sourcegitcommit: 7bb340f6b47378bcd1c6e770dc975931470bbc26
+description: Découvrez comment configurer la clé client pour les fichiers Microsoft 365 pour Exchange Online, Skype entreprise, SharePoint Online, OneDrive entreprise et Teams.
+ms.openlocfilehash: c9c02f697e04a5cd01ddce1546b6712091712025
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43225941"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634196"
 ---
-# <a name="set-up-customer-key-for-office-365"></a>Configurer la clé client pour Office 365
+# <a name="set-up-customer-key"></a>Configurer la clé client
 
-Avec la clé client, vous contrôlez les clés de chiffrement de votre organisation, puis vous configurez Office 365 afin de les utiliser pour chiffrer vos données au repos dans les centres de données de Microsoft. En d’autres termes, la clé client permet aux clients d’ajouter une couche de chiffrement qui leur appartient, avec leurs clés. Les données au repos incluent les données issues d’Exchange Online et de Skype Entreprise qui sont enregistrées dans des boîtes aux lettres et des fichiers stockés dans SharePoint Online et OneDrive Entreprise.
+Avec la clé client, vous contrôlez les clés de chiffrement de votre organisation, puis vous configurez Microsoft 365 afin de les utiliser pour chiffrer vos données au repos dans les centres de données de Microsoft. En d’autres termes, la clé client permet aux clients d’ajouter une couche de chiffrement qui leur appartient, avec leurs clés. Les données au repos incluent les données issues d’Exchange Online et de Skype Entreprise qui sont enregistrées dans des boîtes aux lettres et des fichiers stockés dans SharePoint Online et OneDrive Entreprise.
 
 Vous devez configurer Azure avant de pouvoir utiliser la clé client pour Office 365. Cette rubrique décrit les étapes à suivre pour créer et configurer les ressources Azure requises, puis fournit la procédure de configuration de la clé client dans Office 365. Une fois que vous avez terminé la configuration d’Azure, vous déterminez la stratégie et, par conséquent, les clés, à affecter aux boîtes aux lettres et aux fichiers de votre organisation. Les boîtes aux lettres et les fichiers pour lesquels vous n’affectez pas de stratégie utilisent des stratégies de chiffrement qui sont contrôlées et gérées par Microsoft. Pour plus d’informations sur la clé client ou pour obtenir une vue d’ensemble, consultez la rubrique [service Encryption with Customer Key in Office 365](customer-key-overview.md).
   
@@ -31,9 +31,7 @@ Vous devez configurer Azure avant de pouvoir utiliser la clé client pour Office
   
 ## <a name="before-you-set-up-customer-key"></a>Avant de configurer la clé client
 
-Avant de commencer, assurez-vous que vous disposez de la licence appropriée pour votre organisation. À partir du 1er avril 2020, la clé client dans Office 365 est proposée dans Office 365 E5, M365 E5, M365 E5 conformité et M365 E5 information protection & gouvernance. Office 365 Advanced Compliance SKU n’est plus disponible pour la création de nouvelles licences. Les licences Office 365 Advanced Compliance existantes continueront à être prises en charge.
-
-Pour comprendre les concepts et procédures présentés dans cette rubrique, consultez la documentation sur le [coffre-fort des clés Azure](https://docs.microsoft.com/azure/key-vault/) . De même, familiarisez-vous avec les termes utilisés dans Azure, par exemple, le [client Azure ad](https://docs.microsoft.com/previous-versions/azure/azure-services/jj573650(v=azure.100)#what-is-an-azure-ad-tenant).
+Avant de commencer, assurez-vous que vous disposez de la licence appropriée pour votre organisation. La clé client dans Microsoft 365 est proposée dans Office 365 E5 ou le SKU de conformité avancée. Pour comprendre les concepts et procédures présentés dans cette rubrique, consultez la documentation sur le [coffre-fort des clés Azure](https://docs.microsoft.com/azure/key-vault/) . De même, familiarisez-vous avec les termes utilisés dans Azure, par exemple, [client](https://docs.microsoft.com/previous-versions/azure/azure-services/jj573650(v=azure.100)).
 
 FastTrack est utilisé uniquement pour collecter les informations de configuration de service et de client requises utilisées pour s’inscrire à la clé client. Les offres de clés de client sont publiées via FastTrack pour que vous et nos partenaires pouvez envoyer les informations requises à l’aide de la même méthode. FastTrack facilite également l’archivage des données que vous fournissez dans l’offre.
   
@@ -95,7 +93,7 @@ Effectuez ces tâches dans le coffre-fort des clés Azure. Vous devrez effectuer
   
 ### <a name="create-two-new-azure-subscriptions"></a>Créer deux nouveaux abonnements Azure
 
-La clé client nécessite deux abonnements Azure. Pour une meilleure pratique, Microsoft vous recommande de créer de nouveaux abonnements Azure à utiliser avec la clé client. Les clés Azure Key Vault peuvent uniquement être autorisées pour les applications dans le même client Azure Active Directory (AAD), vous devez créer les nouveaux abonnements à l’aide du même client Azure AD utilisé avec votre organisation Office 365 où les DEPs seront attribués. Par exemple, à l’aide de votre compte professionnel ou scolaire disposant de privilèges d’administrateur général dans votre organisation Office 365. Pour obtenir la procédure détaillée, consultez la rubrique [Inscrivez-vous à Azure en tant qu’organisation](https://azure.microsoft.com/documentation/articles/sign-up-organization/).
+La clé client nécessite deux abonnements Azure. Pour une meilleure pratique, Microsoft vous recommande de créer de nouveaux abonnements Azure à utiliser avec la clé client. Les clés Azure Key Vault peuvent uniquement être autorisées pour les applications dans le même client Azure Active Directory (AAD), vous devez créer les nouveaux abonnements à l’aide du même client Azure AD utilisé avec votre organisation où les DEPs seront attribués. Par exemple, à l’aide de votre compte professionnel ou scolaire disposant de privilèges d’administrateur général dans votre organisation. Pour obtenir la procédure détaillée, consultez la rubrique [Inscrivez-vous à Azure en tant qu’organisation](https://azure.microsoft.com/documentation/articles/sign-up-organization/).
   
 > [!IMPORTANT]
 > La clé client nécessite deux clés pour chaque stratégie de chiffrement de données (DEP). Pour ce faire, vous devez créer deux abonnements Azure. En guise de meilleure pratique, Microsoft recommande que les membres distincts de votre organisation configurent une clé dans chaque abonnement. En outre, ces abonnements Azure ne doivent être utilisés que pour administrer les clés de chiffrement pour Office 365. Cela protège votre organisation si l’un de vos opérateurs supprime accidentellement, intentionnellement ou de manière malveillante ou non des clés dont il est responsable. <br/> Nous vous recommandons de configurer de nouveaux abonnements Azure uniquement utilisés pour gérer les ressources Azure Key Vault à utiliser avec la clé client. Il n’existe pas de limite pratique au nombre d’abonnements Azure que vous pouvez créer pour votre organisation. Le suivi de ces meilleures pratiques réduira l’impact de l’erreur humaine tout en aidant à gérer les ressources utilisées par la clé client.
@@ -106,7 +104,7 @@ Une fois que vous avez terminé les étapes Azure, vous devrez soumettre une dem
   
 Pour soumettre une offre d’activation de la clé client, procédez comme suit :
   
-1. À l’aide d’un compte professionnel ou scolaire doté d’autorisations d’administrateur globales dans votre organisation Office 365, connectez-vous au [portail Microsoft FastTrack](https://fasttrack.microsoft.com/).
+1. À l’aide d’un compte professionnel ou scolaire disposant d’autorisations d’administrateur globales dans votre organisation, connectez-vous au [portail Microsoft FastTrack](https://fasttrack.microsoft.com/).
 
 2. Une fois que vous êtes connecté, accédez au **tableau de bord**.
 
@@ -124,9 +122,9 @@ Pour soumettre une offre d’activation de la clé client, procédez comme suit�
 
 ### <a name="register-azure-subscriptions-to-use-a-mandatory-retention-period"></a>Enregistrer des abonnements Azure pour utiliser une période de rétention obligatoire
 
-La perte temporaire ou définitive de clés de chiffrement racine peut être très perturbatrice ou même catastrophique pour les opérations de service et peut entraîner une perte de données. Pour cette raison, les ressources utilisées avec la clé client nécessitent une protection renforcée. Toutes les ressources Azure utilisées avec les mécanismes de protection de l’offre de clé client au-delà de la configuration par défaut. Les abonnements Azure peuvent être balisés ou enregistrés de manière à empêcher toute annulation immédiate et irrévocable. Il s’agit de l’enregistrement pour une période de rétention obligatoire. Les étapes requises pour enregistrer les abonnements Azure pour une période de rétention obligatoire nécessitent une collaboration avec l’équipe Office 365. Ce processus peut prendre entre un et cinq jours ouvrés. Auparavant, il était parfois appelé « ne pas annuler ».
+La perte temporaire ou définitive de clés de chiffrement racine peut être très perturbatrice ou même catastrophique pour les opérations de service et peut entraîner une perte de données. Pour cette raison, les ressources utilisées avec la clé client nécessitent une protection renforcée. Toutes les ressources Azure utilisées avec les mécanismes de protection de l’offre de clé client au-delà de la configuration par défaut. Les abonnements Azure peuvent être balisés ou enregistrés de manière à empêcher toute annulation immédiate et irrévocable. Il s’agit de l’enregistrement pour une période de rétention obligatoire. Les étapes requises pour enregistrer les abonnements Azure pour une période de rétention obligatoire nécessitent une collaboration avec l’équipe Microsoft 365. Ce processus peut prendre entre un et cinq jours ouvrés. Auparavant, il était parfois appelé « ne pas annuler ».
   
-Avant de contacter l’équipe Office 365, vous devez effectuer les étapes suivantes pour chaque abonnement Azure que vous utilisez avec la clé client. Assurez-vous que le module [Azure PowerShell AZ](https://docs.microsoft.com/powershell/azure/new-azureps-module-az) est installé avant de commencer.
+Avant de contacter l’équipe Microsoft 365, vous devez effectuer les étapes suivantes pour chaque abonnement Azure que vous utilisez avec la clé client. Assurez-vous que le module [Azure PowerShell AZ](https://docs.microsoft.com/powershell/azure/new-azureps-module-az) est installé avant de commencer.
   
 1. Connectez-vous avec Azure PowerShell. Pour obtenir des instructions, consultez la rubrique [se connecter avec Azure PowerShell](https://docs.microsoft.com/powershell/azure/authenticate-azureps).
 
@@ -169,7 +167,7 @@ Lorsque vous créez un coffre-fort de clés, vous devez choisir un SKU : standa
 > [!IMPORTANT]
 > Utilisez les coffres-forts de clés SKU Premium et les clés protégées par HSM pour les données de production, et utilisez uniquement les clés et coffres-forts de clé SKU standard à des fins de test et de validation.
   
-Pour chaque service Office 365 avec lequel vous utiliserez la clé client, créez un coffre-fort de clés dans chacun des deux abonnements Azure que vous avez créés. Par exemple, pour Exchange Online et Skype entreprise uniquement ou SharePoint Online et OneDrive entreprise uniquement, vous ne devez créer qu’une seule paire de coffres-forts. Pour activer la clé client pour Exchange Online et SharePoint Online, vous devez créer deux paires de coffres-forts clés.
+Pour chaque service Microsoft 365 avec lequel vous utiliserez la clé client, créez un coffre-fort de clés dans chacun des deux abonnements Azure que vous avez créés. Par exemple, pour Exchange Online et Skype entreprise uniquement ou SharePoint Online et OneDrive entreprise uniquement, vous ne devez créer qu’une seule paire de coffres-forts. Pour activer la clé client pour Exchange Online et SharePoint Online, vous devez créer deux paires de coffres-forts clés.
   
 Utilisez une convention d’affectation de noms pour les coffres-forts de clés reflétant l’utilisation prévue de la stratégie de chiffrement de données avec laquelle vous allez associer les coffres-forts. Consultez la section Méthodes conseillées ci-dessous pour connaître les recommandations de convention d’affectation de noms.
   
@@ -178,7 +176,7 @@ Créez un ensemble distinct de coffres couplés pour chaque stratégie de chiffr
 La création de coffre-fort de clés nécessite également la création de groupes de ressources Azure, car les coffres clés nécessitent une capacité de stockage (bien que très petite) et la journalisation de coffre de clés, si elle est activée, génère également des données stockées. Pour une meilleure pratique, Microsoft recommande d’utiliser des administrateurs distincts pour gérer chaque groupe de ressources, avec l’administration alignée sur l’ensemble des administrateurs qui géreront toutes les ressources liées à la clé client correspondante.
   
 > [!IMPORTANT]
-> Pour optimiser la disponibilité, vos coffres-forts principaux doivent se trouver dans des régions proches de votre service Office 365. Par exemple, si votre organisation Exchange Online est en Amérique du Nord, placez vos coffres clés en Amérique du Nord. Si votre organisation Exchange Online est en Europe, placez vos coffres clés en Europe.<br/>Utilisez un préfixe commun pour les coffres-forts de clés, et incluez une abréviation de l’utilisation et de l’étendue du coffre-fort de clés et des clés (par exemple, pour le service Contoso SharePoint où les coffres seront situés en Amérique du Nord, contoso-O365SP-NA-VaultA1 et contoso-O365SP-NA-VaultA2. Les noms de coffre-fort sont des chaînes uniques au sein d’Azure, de sorte que vous devrez peut-être essayer des variantes des noms souhaités au cas où les noms souhaités seraient déjà réclamés par d’autres clients Azure. Depuis juillet 2017, les noms de coffre-fort ne peuvent pas être modifiés, c’est pourquoi il est recommandé de disposer d’un plan écrit pour la configuration et d’utiliser une deuxième personne pour vérifier que le plan est exécuté correctement.<br/>Si possible, créez vos coffres dans des régions non couplées. Les régions Azure couplées fournissent une haute disponibilité entre les domaines ayant échoué. Par conséquent, les paires régionales peuvent être considérées comme la région de sauvegarde de chacune d’elles. Cela signifie qu’une ressource Azure placée dans une région bénéficie automatiquement de la tolérance de panne par le biais de la région couplée. Pour cette raison, le choix des régions pour deux coffres utilisés dans une stratégie de chiffrement de données dans laquelle les régions sont couplées signifie que seul un total de deux régions de disponibilité est en cours d’utilisation. La plupart des régions géographiques n’ont que deux régions, de sorte qu’il n’est pas encore possible de sélectionner des régions non couplées. Dans la mesure du possible, choisissez deux régions non couplées pour les deux coffres utilisés avec une stratégie de chiffrement de données. Cette opération bénéficie d’un total de quatre régions de disponibilité. Pour plus d’informations, consultez la rubrique [services de continuité d’activité et de récupération d’urgence (BCDR) : régions couplées Azure](https://docs.microsoft.com/azure/best-practices-availability-paired-regions) pour obtenir la liste actuelle des paires régionales.
+> Pour optimiser la disponibilité, vos coffres-forts principaux doivent se trouver dans des régions proches de votre service Microsoft 365. Par exemple, si votre organisation Exchange Online est en Amérique du Nord, placez vos coffres clés en Amérique du Nord. Si votre organisation Exchange Online est en Europe, placez vos coffres clés en Europe.<br/>Utilisez un préfixe commun pour les coffres-forts de clés, et incluez une abréviation de l’utilisation et de l’étendue du coffre-fort de clés et des clés (par exemple, pour le service Contoso SharePoint où les coffres seront situés en Amérique du Nord, contoso-O365SP-NA-VaultA1 et contoso-O365SP-NA-VaultA2. Les noms de coffre-fort sont des chaînes uniques au sein d’Azure, de sorte que vous devrez peut-être essayer des variantes des noms souhaités au cas où les noms souhaités seraient déjà réclamés par d’autres clients Azure. Depuis juillet 2017, les noms de coffre-fort ne peuvent pas être modifiés, c’est pourquoi il est recommandé de disposer d’un plan écrit pour la configuration et d’utiliser une deuxième personne pour vérifier que le plan est exécuté correctement.<br/>Si possible, créez vos coffres dans des régions non couplées. Les régions Azure couplées fournissent une haute disponibilité entre les domaines ayant échoué. Par conséquent, les paires régionales peuvent être considérées comme la région de sauvegarde de chacune d’elles. Cela signifie qu’une ressource Azure placée dans une région bénéficie automatiquement de la tolérance de panne par le biais de la région couplée. Pour cette raison, le choix des régions pour deux coffres utilisés dans une stratégie de chiffrement de données dans laquelle les régions sont couplées signifie que seul un total de deux régions de disponibilité est en cours d’utilisation. La plupart des régions géographiques n’ont que deux régions, de sorte qu’il n’est pas encore possible de sélectionner des régions non couplées. Dans la mesure du possible, choisissez deux régions non couplées pour les deux coffres utilisés avec une stratégie de chiffrement de données. Cette opération bénéficie d’un total de quatre régions de disponibilité. Pour plus d’informations, consultez la rubrique [services de continuité d’activité et de récupération d’urgence (BCDR) : régions couplées Azure](https://docs.microsoft.com/azure/best-practices-availability-paired-regions) pour obtenir la liste actuelle des paires régionales.
   
 ### <a name="assign-permissions-to-each-key-vault"></a>Attribuer des autorisations à chaque coffre-fort de clés
 
@@ -189,7 +187,7 @@ Pour chaque coffre-fort de clés, vous devez définir trois ensembles distincts 
   > [!IMPORTANT]
   > Le jeu d’autorisations affectées aux administrateurs de coffre-fort n’inclut pas l’autorisation de suppression de clés. Cette procédure est intentionnelle et pratique importante. La suppression de clés de chiffrement n’est généralement pas effectuée, car cette opération détruit définitivement les données. Nous vous recommandons de ne pas accorder cette autorisation aux administrateurs de coffre-fort par défaut. Au lieu de cela, réservez ceci pour les contributeurs de coffre-fort principal et ne l’attribuez à un administrateur de manière courte qu’une fois qu’une bonne compréhension des conséquences est comprise.
   
-  Pour attribuer ces autorisations à un utilisateur dans votre organisation Office 365, connectez-vous à votre abonnement Azure avec Azure PowerShell. Pour obtenir des instructions, consultez la rubrique [se connecter avec Azure PowerShell](https://docs.microsoft.com/powershell/azure/authenticate-azureps).
+  Pour attribuer ces autorisations à un utilisateur de votre organisation, connectez-vous à votre abonnement Azure avec Azure PowerShell. Pour obtenir des instructions, consultez la rubrique [se connecter avec Azure PowerShell](https://docs.microsoft.com/powershell/azure/authenticate-azureps).
 
 - Exécutez la cmdlet Set-AzKeyVaultAccessPolicy pour attribuer les autorisations nécessaires.
 
@@ -205,7 +203,7 @@ Pour chaque coffre-fort de clés, vous devez définir trois ensembles distincts 
 
 - Les **contributeurs de coffre-fort de clé** qui peuvent modifier les autorisations sur le coffre-fort des clés Azure. Vous devrez modifier ces autorisations lorsque les employés quittent ou rejoignent votre équipe, ou dans la situation extrêmement rare que les administrateurs clés de coffre-fort ont besoin de l’autorisation de supprimer ou de restaurer une clé. Cet ensemble de contributeurs de coffre-fort doit recevoir le rôle de **contributeur** sur votre coffre-fort de clés. Vous pouvez attribuer ce rôle à l’aide d’Azure Resource Manager. Pour obtenir la procédure détaillée, consultez [la rubrique utiliser le contrôle d’accès basé sur un rôle pour gérer l’accès à vos ressources d’abonnement Azure](https://docs.microsoft.com/azure/active-directory/role-based-access-control-configure). L’administrateur qui crée un abonnement bénéficie implicitement de cet accès, ainsi que de la possibilité d’affecter d’autres administrateurs au rôle contributeur.
 
-- Si vous envisagez d’utiliser la clé client avec Exchange Online et Skype entreprise, vous devez accorder à Office 365 l’autorisation d’utiliser le coffre-fort de clés pour Exchange Online et Skype entreprise. De même, si vous avez l’intention d’utiliser la clé client avec SharePoint Online et OneDrive entreprise, vous devez ajouter des autorisations pour l’Office 365 afin d’utiliser le coffre-fort de clés pour SharePoint Online et OneDrive entreprise. Pour accorder l’autorisation à Office 365, exécutez la cmdlet **Set-AzKeyVaultAccessPolicy** à l’aide de la syntaxe suivante : 
+- Si vous envisagez d’utiliser la clé client avec Exchange Online et Skype entreprise, vous devez accorder à Microsoft 365 l’autorisation d’utiliser le coffre-fort de clés pour Exchange Online et Skype entreprise. De même, si vous avez l’intention d’utiliser la clé client avec SharePoint Online et OneDrive entreprise, vous devez ajouter des autorisations pour le Microsoft 365 afin d’utiliser le coffre-fort de clés pour SharePoint Online et OneDrive entreprise. Pour accorder l’autorisation à Microsoft 365, exécutez la cmdlet **Set-AzKeyVaultAccessPolicy** à l’aide de la syntaxe suivante : 
 
    ```powershell
    Set-AzKeyVaultAccessPolicy -VaultName <vault name> -PermissionsToKeys wrapKey,unwrapKey,get -ServicePrincipalName <Office 365 appID>
@@ -293,7 +291,7 @@ Vérifiez auprès de votre groupe de sécurité si les attestations ci-dessus so
   
 ### <a name="check-the-recovery-level-of-your-keys"></a>Vérifier le niveau de récupération de vos clés
 
-Office 365 nécessite que le abonnement Azure Key Vault soit défini sur do not Cancel et que les clés utilisées par la clé client aient activé la suppression douce. Vous pouvez vérifier cela en examinant le niveau de récupération de vos clés.
+Microsoft 365 nécessite que le abonnement Azure Key Vault soit défini sur do not Cancel et que les clés utilisées par la clé client aient activé la suppression douce. Vous pouvez vérifier cela en examinant le niveau de récupération de vos clés.
   
 Pour vérifier le niveau de récupération d’une clé, dans Azure PowerShell, exécutez la cmdlet Get-AzKeyVaultKey comme suit :
   
@@ -367,7 +365,7 @@ Pour vérifier qu’une date d’expiration n’est pas définie pour vos clés,
 Get-AzKeyVaultKey -VaultName <vault name>
 ```
 
-Une clé expirée ne peut pas être utilisée par la clé client et les opérations tentées avec une clé expirée échoueront, ce qui peut entraîner une panne de service. Il est vivement recommandé que les clés utilisées avec la clé client n’aient pas de date d’expiration. Une date d’expiration, une fois définie, ne peut pas être supprimée, mais peut être remplacée par une date différente. Si une clé doit être utilisée avec une date d’expiration définie, modifiez la valeur d’expiration sur 12/31/9999. Les clés dont la date d’expiration est définie sur une date autre que 12/31/9999 ne réussiront pas la validation d’Office 365.
+Une clé expirée ne peut pas être utilisée par la clé client et les opérations tentées avec une clé expirée échoueront, ce qui peut entraîner une panne de service. Il est vivement recommandé que les clés utilisées avec la clé client n’aient pas de date d’expiration. Une date d’expiration, une fois définie, ne peut pas être supprimée, mais peut être remplacée par une date différente. Si une clé doit être utilisée avec une date d’expiration définie, modifiez la valeur d’expiration sur 12/31/9999. Les clés dont la date d’expiration est définie sur une date autre que 12/31/9999 ne passent pas la validation Microsoft 365.
   
 Pour modifier une date d’expiration qui a été définie sur une valeur autre que 12/31/9999, exécutez la cmdlet [Update-AzKeyVaultKey](https://docs.microsoft.com/powershell/module/az.keyvault/update-azkeyvaultkey) comme suit :
   
@@ -396,13 +394,13 @@ Pour configurer la clé client pour Exchange Online et Skype entreprise, vous de
   
 ### <a name="create-a-data-encryption-policy-dep-for-use-with-exchange-online-and-skype-for-business"></a>Créer une stratégie de chiffrement de données (DEP) à utiliser avec Exchange Online et Skype entreprise
 
-Une DEP est associée à un ensemble de clés stockées dans Azure Key Vault. Vous affectez une DEP à une boîte aux lettres dans Office 365. Office 365 utilisera ensuite les clés identifiées dans la stratégie pour chiffrer la boîte aux lettres. Pour créer la DEP, vous avez besoin des URI de coffre-fort que vous avez obtenus précédemment. Consultez [la rubrique obtenir l’URI pour chaque clé Azure Key Vault](#obtain-the-uri-for-each-azure-key-vault-key) pour obtenir des instructions.
+Une DEP est associée à un ensemble de clés stockées dans Azure Key Vault. Vous affectez une DEP à une boîte aux lettres dans Microsoft 365. Microsoft 365 utilise ensuite les clés identifiées dans la stratégie pour chiffrer la boîte aux lettres. Pour créer la DEP, vous avez besoin des URI de coffre-fort que vous avez obtenus précédemment. Consultez [la rubrique obtenir l’URI pour chaque clé Azure Key Vault](#obtain-the-uri-for-each-azure-key-vault-key) pour obtenir des instructions.
   
 Pensez! Lorsque vous créez une DEP, vous spécifiez deux clés qui résident dans deux coffres de clés Azure différents. Assurez-vous que ces clés se situent dans deux régions Azure distinctes pour garantir la redondance géographique.
   
 Pour créer la DEP, procédez comme suit :
   
-1. Sur votre ordinateur local, à l’aide d’un compte professionnel ou scolaire disposant d’autorisations d’administrateur général dans votre organisation Office 365, [Connectez-vous à Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps) en ouvrant Windows PowerShell et en exécutant la commande suivante.
+1. Sur votre ordinateur local, à l’aide d’un compte professionnel ou scolaire disposant d’autorisations d’administrateur général dans votre organisation, [Connectez-vous à Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps) en ouvrant Windows PowerShell et en exécutant la commande suivante.
 
    ```powershell
    $UserCredential = Get-Credential
@@ -444,7 +442,7 @@ Pour créer la DEP, procédez comme suit :
 
 ### <a name="assign-a-dep-to-a-mailbox"></a>Affecter une DEP à une boîte aux lettres
 
-Affecter la DEP à une boîte aux lettres à l’aide de la cmdlet Set-Mailbox. Une fois que vous avez affecté la stratégie, Office 365 peut chiffrer la boîte aux lettres à l’aide de la clé désignée dans la DEP.
+Affecter la DEP à une boîte aux lettres à l’aide de la cmdlet Set-Mailbox. Une fois que vous avez affecté la stratégie, Microsoft 365 peut chiffrer la boîte aux lettres à l’aide de la clé désignée dans la DEP.
   
 ```powershell
 Set-Mailbox -Identity <MailboxIdParameter> -DataEncryptionPolicy <PolicyName>
@@ -474,13 +472,13 @@ Pour configurer la clé client pour SharePoint Online, OneDrive entreprise et le
   
 ### <a name="create-a-data-encryption-policy-dep-for-each-sharepoint-online-and-onedrive-for-business-geo"></a>Créer une stratégie de chiffrement de données (DEP) pour chaque région de SharePoint Online et OneDrive entreprise
 
-Vous associez une DEP à un ensemble de clés stockées dans le coffre-fort des clés Azure. Vous appliquez une DEP à toutes vos données dans un emplacement géographique, également appelé géo. Si vous utilisez la fonctionnalité multigéographique d’Office 365, vous pouvez créer une DEP par zone géographique avec la capacité d’utiliser différentes clés par zone géographique. Si vous n’utilisez pas de multi-géo, vous pouvez créer une DEP dans votre organisation Office 365 pour une utilisation avec SharePoint Online, OneDrive entreprise et des fichiers Teams. Office 365 utilise les clés identifiées dans la DEP pour chiffrer vos données dans cette région. Pour créer la DEP, vous avez besoin des URI de coffre-fort que vous avez obtenus précédemment. Consultez [la rubrique obtenir l’URI pour chaque clé Azure Key Vault](#obtain-the-uri-for-each-azure-key-vault-key) pour obtenir des instructions.
+Vous associez une DEP à un ensemble de clés stockées dans le coffre-fort des clés Azure. Vous appliquez une DEP à toutes vos données dans un emplacement géographique, également appelé géo. Si vous utilisez la fonctionnalité multigéographique d’Office 365, vous pouvez créer une DEP par zone géographique avec la capacité d’utiliser différentes clés par zone géographique. Si vous n’utilisez pas de multi-géo, vous pouvez créer une DEP dans votre organisation pour l’utiliser avec les fichiers SharePoint Online, OneDrive entreprise et Teams. Microsoft 365 utilise les clés identifiées dans la DEP pour chiffrer vos données dans cette région. Pour créer la DEP, vous avez besoin des URI de coffre-fort que vous avez obtenus précédemment. Consultez [la rubrique obtenir l’URI pour chaque clé Azure Key Vault](#obtain-the-uri-for-each-azure-key-vault-key) pour obtenir des instructions.
   
 Pensez! Lorsque vous créez une DEP, vous spécifiez deux clés qui résident dans deux coffres de clés Azure différents. Assurez-vous que ces clés se situent dans deux régions Azure distinctes pour garantir la redondance géographique.
   
 Pour créer une DEP, vous devez vous connecter à distance à SharePoint Online à l’aide de Windows PowerShell.
   
-1. Sur votre ordinateur local, à l’aide d’un compte professionnel ou scolaire disposant d’autorisations d’administrateur général dans votre organisation Office 365, [Connectez-vous à SharePoint Online PowerShell](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps).
+1. Sur votre ordinateur local, à l’aide d’un compte professionnel ou scolaire disposant d’autorisations d’administrateur général dans votre organisation, [Connectez-vous à SharePoint Online PowerShell](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps).
 
 2. Dans Microsoft SharePoint Online Management Shell, exécutez la cmdlet Register-SPODataEncryptionPolicy comme suit :
 
@@ -496,12 +494,12 @@ Pour créer une DEP, vous devez vous connecter à distance à SharePoint Online 
 
 ## <a name="related-articles"></a>Articles connexes
 
-- [Chiffrement de service avec la clé client pour Office 365](customer-key-overview.md)
+- [Chiffrement de service avec clé client](customer-key-overview.md)
 
-- [Gérer la clé client pour Office 365](customer-key-manage.md)
+- [Gérer la clé client](customer-key-manage.md)
 
-- [Faire pivoter ou faire pivoter une clé client ou une clé de disponibilité](customer-key-availability-key-roll.md)
+- [Echanger ou alterner entre une clé client ou de disponibilité](customer-key-availability-key-roll.md)
 
 - [En savoir plus sur la clé de disponibilité](customer-key-availability-key-understand.md)
 
-- [Chiffrement du service Office 365](office-365-service-encryption.md)
+- [Chiffrement de service](office-365-service-encryption.md)

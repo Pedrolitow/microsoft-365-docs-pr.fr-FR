@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Cet article décrit l’utilisation de l’outil nouvelles enquêtes de données (aperçu) dans le centre de sécurité & Compliance pour gérer un incident de déversement de données.
-ms.openlocfilehash: f02d5c42d42f6031202e874497f92fdfbe5d0bcf
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: a544eb1e021faa82d00ac46a7d64a3eb368cc323
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42634292"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635934"
 ---
 # <a name="manage-a-data-spillage-incident-in-microsoft-365"></a>Gérer un incident de fuite de données dans Microsoft 365
 
@@ -29,14 +29,14 @@ Les données sont libérées lorsqu’un document contenant des informations con
 
 ## <a name="scope-of-this-article"></a>Portée de cet article
 
-Cet article fournit une liste d’instructions sur la suppression définitive d’éléments des boîtes aux lettres Office 365 de sorte qu’ils ne soient plus accessibles ou récupérables par les utilisateurs ou les administrateurs. 
+Cet article fournit une liste d’instructions sur la suppression définitive d’éléments des boîtes aux lettres Microsoft 365 afin qu’ils ne soient plus accessibles ou récupérables par les utilisateurs ou les administrateurs. 
 
 > [!NOTE]
 > Lorsque vous supprimez des éléments situés dans un site SharePoint ou OneDrive entreprise, ils sont conservés pendant 93 jours après leur suppression de leur emplacement d’origine.
 
 ## <a name="scenario"></a>Scénario
 
-Vous êtes informé d’un incident de fuite de données dans lequel un employé a volontairement partagé un document hautement confidentiel avec plusieurs personnes par courrier électronique. Vous souhaitez évaluer rapidement qui a reçu ce document, à l’intérieur et à l’extérieur de votre organisation. Une fois que vous avez examiné l’incident, vous envisagez de partager vos découvertes avec d’autres investigateurs pour les examiner, puis de supprimer définitivement les données déduites de votre organisation Office 365. Une fois l’enquête terminée, vous souhaitez supprimer toutes les preuves. 
+Vous êtes informé d’un incident de fuite de données dans lequel un employé a volontairement partagé un document hautement confidentiel avec plusieurs personnes par courrier électronique. Vous souhaitez évaluer rapidement qui a reçu ce document, à l’intérieur et à l’extérieur de votre organisation. Une fois que vous avez examiné l’incident, vous envisagez de partager vos découvertes avec d’autres investigateurs pour les examiner, puis de supprimer définitivement les données déduites de votre organisation. Une fois l’enquête terminée, vous souhaitez supprimer toutes les preuves. 
 
 > [!IMPORTANT]
 > Bien que vous puissiez supprimer définitivement les données déplacées au sein de votre organisation, toutes les données déplacées à l’extérieur de votre organisation ne peuvent pas être supprimées avec ces fonctionnalités.
@@ -68,7 +68,7 @@ Pour créer une enquête dans l’outil d’analyse des données (aperçu) :
 
 1. Accédez à [https://protection.office.com](https://protection.office.com).
     
-2. Connectez-vous à Office 365 à l’aide d’un compte membre du groupe de rôles Data investigation.
+2. Connectez-vous à l’aide d’un compte membre du groupe de rôles Data investigation.
     
 3. Dans le centre de sécurité et de conformité, cliquez sur **analyses de données**.
  
@@ -108,7 +108,7 @@ Après avoir exécuté la recherche, vous pouvez prévisualiser des exemples de 
 
 Dans l’enquête, accédez à l’onglet **preuve** et cliquez sur l’ensemble de preuves que vous avez créé à l’étape précédente. Une fois le travail de traitement terminé et les résultats de la recherche ajoutés à la preuve, vous pouvez passer en revue des documents individuels au format natif, au format texte ou au format quasi natif. Vous pouvez créer des requêtes supplémentaires pour affiner la liste des documents et marquer des documents pour indiquer les conclusions de votre enquête. Pour plus d’informations, voir [examiner les données dans les preuves](review-data-in-evidence.md)
 
-Pour regrouper des documents et obtenir de l’aide supplémentaire pour votre révision, cliquez sur **gérer les preuves**. Dans la vignette **analyse** , cliquez sur **analyser**. Cela exécute des analyses avancées, telles que la détection des doublons, le Threading de messagerie électronique et l’analyse de thème. Pour plus d’informations, voir :
+Pour regrouper des documents et obtenir de l’aide supplémentaire pour votre révision, cliquez sur **gérer les preuves**. Dans la vignette **analyse** , cliquez sur **analyser**. Cela exécute des analyses avancées, telles que la détection des doublons, le Threading de messagerie électronique et l’analyse de thème. Si vous souhaitez en savoir plus, consultez les articles : 
 
 - [Exécuter les données d’analyse pour investiguer plus rapidement](run-analytics-to-investigate-faster.md)
 - [Détecter des quasi-duplicatas](near-duplicates.md)

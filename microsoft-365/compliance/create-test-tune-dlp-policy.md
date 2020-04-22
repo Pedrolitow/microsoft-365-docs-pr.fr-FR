@@ -17,16 +17,16 @@ search.appverid:
 - MET150
 ms.assetid: 59414438-99f5-488b-975c-5023f2254369
 description: 'La façon la plus simple et la plus courante de démarrer avec les stratégies DLP consiste à utiliser l’un des modèles inclus dans Office 365. '
-ms.openlocfilehash: 85aa5dad9c65cd222d012bf24ea0234ca7534838
-ms.sourcegitcommit: 21338a9287017a66298e0ff557e80051946ebf13
+ms.openlocfilehash: 819320b8170c652a6cdb32e191ebca5174eb0329
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "42604181"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635964"
 ---
 # <a name="create-test-and-tune-a-dlp-policy"></a>Création, test et réglage d’une stratégie DLP
 
-La protection contre la perte de données est une fonctionnalité de conformité d’Office 365 conçue pour aider votre organisation à empêcher l’exposition intentionnelle ou accidentelle d’informations sensibles à des parties indésirables. DLP a ses racines dans Exchange Server et Exchange Online, et est également applicable dans SharePoint Online et OneDrive entreprise.
+La protection contre la perte de données (DLP) est une fonctionnalité de conformité conçue pour aider votre organisation à empêcher l’exposition intentionnelle ou accidentelle d’informations sensibles à des parties indésirables. DLP a ses racines dans Exchange Server et Exchange Online, et est également applicable dans SharePoint Online et OneDrive entreprise.
 
 DLP utilise un moteur d’analyse de contenu pour examiner le contenu des messages électroniques et des fichiers, en recherchant des informations sensibles telles que des numéros de carte de crédit et des informations d’identification personnelle. Les informations sensibles ne doivent généralement pas être envoyées par courrier électronique, ni être incluses dans des documents, sans effectuer d’étapes supplémentaires, telles que le chiffrement des messages électroniques ou des fichiers. À l’aide de DLP, vous pouvez détecter des informations sensibles et effectuer les actions suivantes :
 
@@ -57,7 +57,7 @@ Lorsque les risques de fuites de données ne sont pas totalement évidents, il e
 
 Les stratégies DLP pour Exchange Online peuvent être gérées via le centre d’administration Exchange. Toutefois, vous pouvez configurer des stratégies DLP pour toutes les charges de travail via le centre de sécurité & conformité, ce que nous allons utiliser pour les démonstrations de cet article. Dans le centre de sécurité & conformité, vous trouverez les stratégies DLP sous**stratégie**de **protection contre** > la perte de données. Cliquez sur **créer une stratégie** à démarrer.
 
-Office 365 fournit une gamme de [modèles de stratégie DLP](what-the-dlp-policy-templates-include.md) que vous pouvez utiliser pour créer des stratégies DLP. Imaginons que vous êtes une entreprise australienne. Vous pouvez filtrer les modèles de stratégie pour n’afficher que ceux qui sont pertinents pour l’Australie, qui entrent dans les catégories générales de finances, médecine et santé, ainsi que la confidentialité.
+Microsoft 365 fournit une gamme de [modèles de stratégie DLP](what-the-dlp-policy-templates-include.md) que vous pouvez utiliser pour créer des stratégies DLP. Imaginons que vous êtes une entreprise australienne. Vous pouvez filtrer les modèles de stratégie pour n’afficher que ceux qui sont pertinents pour l’Australie, qui entrent dans les catégories générales de finances, médecine et santé, ainsi que la confidentialité.
 
 ![Option permettant de choisir un pays ou une région](../media/DLP-create-test-tune-choose-country.png)
 
@@ -212,6 +212,6 @@ Les stratégies qui restreignent le contenu présentent l’avertissement à l�
 
 ![Conseil de stratégie indiquant que le contenu est restreint](../media/DLP-create-test-tune-restrict-warning.png)
 
-## <a name="summary"></a>Résumé
+## <a name="summary"></a>Synthèse
 
-Les stratégies de protection contre la perte de données sont utiles pour les organisations de tous types. Le test de certaines stratégies DLP est un exercice à risque faible en raison du contrôle dont vous disposez sur les éléments tels que les conseils de stratégie, les remplacements des utilisateurs finaux et les rapports d’incident. Vous pouvez tester silencieusement certaines stratégies DLP afin de déterminer le type de violations qui se produisent dans votre organisation, puis de concevoir des stratégies avec des taux de faux positifs faibles, informer vos utilisateurs de ce qui est autorisé et non autorisé, puis déployer vos stratégies DLP sur le Département.
+Les stratégies de protection contre la perte de données sont utiles pour les organisations de tous types. Le test de certaines stratégies DLP est un exercice à risque faible en raison du contrôle dont vous disposez sur les éléments tels que les conseils de stratégie, les remplacements des utilisateurs finaux et les rapports d’incident. Vous pouvez tester silencieusement certaines stratégies DLP afin de déterminer le type de violations qui se produisent dans votre organisation, puis de concevoir des stratégies avec des taux de faux positifs faibles, informer vos utilisateurs de ce qui est autorisé et non autorisé, puis déployer vos stratégies DLP dans l’organisation.

@@ -1,5 +1,5 @@
 ---
-title: Création d’un rapport sur les suspensions dans les cas de découverte électronique dans Office 365
+title: 'Créer un rapport sur les conservations définies dans les cas eDiscovery '
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -16,14 +16,14 @@ ms.collection:
 search.appverid: MOE150
 ms.assetid: cca08d26-6fbf-4b2c-b102-b226e4cd7381
 description: Utilisez le script de cet article pour générer un rapport qui contient des informations sur toutes les conservations associées à des cas eDiscovery dans le centre de conformité dans Office 365 ou Microsoft 365.
-ms.openlocfilehash: 8c426ff06bb0b2bafdfa91b9098b321994d558d7
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 263ac052f320a989b8843f2954a5df0933cdb2f4
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42077705"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632249"
 ---
-# <a name="create-a-report-on-holds-in-ediscovery-cases-in-office-365"></a>Création d’un rapport sur les suspensions dans les cas de découverte électronique dans Office 365
+# <a name="create-a-report-on-holds-in-ediscovery-cases"></a>Créer un rapport sur les conservations définies dans les cas eDiscovery 
   
 Le script de cet article permet aux administrateurs eDiscovery et aux gestionnaires eDiscovery de générer un rapport contenant des informations sur toutes les suspensions associées à des cas eDiscovery dans le centre de conformité dans Office 365 ou Microsoft 365. Le rapport contient des informations telles que le nom du cas dans lequel une conservation est associée, les emplacements de contenu placés en conservation et si la suspension est basée sur une requête. S’il existe des cas qui n’ont aucune conservation, le script crée un rapport supplémentaire avec une liste de cas sans conservation.
 
