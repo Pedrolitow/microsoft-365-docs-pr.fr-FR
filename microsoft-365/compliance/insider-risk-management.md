@@ -1,5 +1,5 @@
 ---
-title: Gestion des risques initiés
+title: Gestion des risques internes
 description: Découvrez comment limiter les risques au sein de votre organisation avec la gestion des risques initiés dans Microsoft 365.
 keywords: Microsoft 365, Insider Risk, gestion des risques, conformité
 localization_priority: Normal
@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: cc0c698b5c27b41548b646d03d9f94a2f8671eea
-ms.sourcegitcommit: 87cc278ea2ddcd536ecfaa3dfae9a5ddaa502cf9
+ms.openlocfilehash: 509b8643ffd2b9ee8b364615e2ed3f56afe84733
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42179185"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637472"
 ---
 # <a name="insider-risk-management-in-microsoft-365"></a>Gestion des risques internes dans Microsoft 365
 
@@ -41,7 +41,7 @@ La gestion et la minimisation des risques au sein de votre organisation commence
 
 Les employés du lieu de travail moderne ont accès à la création, la gestion et le partage de données sur un large éventail de plateformes et de services. Dans la plupart des cas, les organisations disposent de ressources et d’outils limités pour identifier et atténuer les risques à l’échelle de l’organisation, tout en respectant les normes de confidentialité des employés.
 
-La gestion des risques initiés dans Microsoft 365 utilise l’ensemble complet des indicateurs de service et tiers pour vous aider à identifier rapidement, à trier et à agir sur l’activité des risques. À l’aide des journaux d’Office 365 et Microsoft Graph, la gestion des risques internes vous permet de définir des stratégies spécifiques pour identifier les indicateurs de risques. Ces stratégies vous permettent d’identifier les activités à risque et de prendre des mesures pour atténuer ces risques.
+La gestion des risques initiés dans Microsoft 365 utilise l’ensemble complet des indicateurs de service et tiers pour vous aider à identifier rapidement, à trier et à agir sur l’activité des risques. À l’aide des journaux Microsoft 365 et Microsoft Graph, la gestion des risques internes vous permet de définir des stratégies spécifiques pour identifier les indicateurs de risques. Ces stratégies vous permettent d’identifier les activités à risque et de prendre des mesures pour atténuer ces risques.
 
 La gestion des risques initiés est axée sur les principes suivants :
 

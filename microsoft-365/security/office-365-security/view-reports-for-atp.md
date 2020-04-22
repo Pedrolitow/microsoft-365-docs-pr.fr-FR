@@ -17,12 +17,12 @@ ms.assetid: e47e838c-d99e-4c0b-b9aa-e66c4fae902f
 ms.collection:
 - M365-security-compliance
 description: Recherchez et utilisez des rapports pour Office 365 protection avancée contre les menaces &amp; dans le centre de sécurité conformité.
-ms.openlocfilehash: cca2729918239eee7d27973cd28be16a534e461b
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 09e2f4be133d395b738219b3a280f08b915030e0
+ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631060"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43708498"
 ---
 # <a name="view-reports-for-office-365-advanced-threat-protection"></a>Afficher les rapports pour Office 365 protection avancée contre les menaces
 
@@ -60,9 +60,11 @@ Les filtres et les répartitions des informations permettent des catégorisation
 
 ![Liste déroulante rapport d’état de protection contre les menaces avec « dépanner ».](../../media/tp-threatProtectStatRpt-BreakDownBy.png)
 
-Ces affichages vous permettent d’exporter, par le biais d’un clic sur un bouton (par E-mail > hameçon, par courrier électronique > de programmes malveillants et de contenu > de programmes malveillants). Les données agrégées exportées sur votre ordinateur peuvent être ouvertes dans Excel.
+Ces affichages vous permettent d’exporter, via un clic sur un bouton (dans le cas de **messages** \> **hameçons** **, de** **courriers électroniques** \> et de **programmes malveillants** de **contenu** \> ). Les données agrégées exportées sur votre ordinateur peuvent être ouvertes dans Excel.
 
 ![Ce graphique indique exporter en tant qu’option dans le menu de l’affichage de programmes malveillants, directement entre créer une planification et rapport de requête.](../../media/tp-threatProtectStatRpt-BreakDownByExport.png)
+
+**Remarque**: le nombre maximal d’entrées pouvant être exportées pour le **hameçonnage** et les **programmes malveillants** se trouve juste en dessous de 10000. Si vous exportez une vue, seules les entrées 10000 les plus récentes sont exportées.
 
 Les affichages vue d’ensemble et courriels affichent des informations dans les heures de traitement et non dans les 24 heures (à la demande). une augmentation des vitesses a été un signal clair) !
 

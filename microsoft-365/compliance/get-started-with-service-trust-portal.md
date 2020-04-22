@@ -13,13 +13,13 @@ search.appverid: MET150
 mscollection: M365-security-compliance
 ms.custom: Adm_O365
 ms.assetid: f30e2353-0bd6-41ed-8347-eea1fb8d2662
-description: Pour les rapports de conformité réglementaire en ligne pour Office 365, Azure et Dynamics 365 Online, Découvrez comment Microsoft conserve les données client sûres et comment vous pouvez être conformes à la norme ISO, HIPAA, NIST, FINRA, RGPD et FedRAMP lorsque vous utilisez ces services en ligne.
-ms.openlocfilehash: 865b16dfc5e1878a9bc51f8d84ef8c0128f39298
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: Pour les rapports de conformité réglementaire de Microsoft 365, Azure et Dynamics 365 Online, pour consulter les audits tiers, Découvrez comment Microsoft conserve les données client sûres et comment vous pouvez vous conformer aux normes ISO, HIPAA, NIST, FINRA, RGPD et FedRAMP lorsque vous utilisez ces services en ligne.
+ms.openlocfilehash: 837ab06a0b4cf058586cff31c462884833da5871
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42073149"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632445"
 ---
 # <a name="get-started-with-the-microsoft-service-trust-portal"></a>Prise en main du portail d’approbation de service Microsoft
 
@@ -27,11 +27,11 @@ Le portail d’approbation de services Microsoft propose un large éventail de c
   
 ## <a name="accessing-the-service-trust-portal"></a>Accès au portail d’approbation de services
 
-Le portail d’approbation de services contient des détails sur l’implémentation de Microsoft des contrôles et des processus qui protègent nos services Cloud et les données client qu’ils contiennent. Pour accéder à certaines des ressources sur le portail d’approbation de services, vous devez vous connecter en tant qu’utilisateur authentifié avec votre compte de services de Cloud Computing Microsoft (soit un compte d’organisation Azure Active Directory ou un compte Microsoft), puis consulter et accepter Microsoft Accord de non-divulgation pour les matières de conformité.
+Le portail d’approbation de services contient des détails sur l’implémentation de Microsoft des contrôles et des processus qui protègent nos services Cloud et les données client qu’ils contiennent. Pour accéder à certaines des ressources sur le portail d’approbation de services, vous devez vous connecter en tant qu’utilisateur authentifié avec votre compte de services de Cloud Computing Microsoft (soit un compte d’organisation Azure Active Directory ou un compte Microsoft), puis consulter et accepter le contrat de non-divulgation Microsoft pour les documents de conformité.
   
 Les **clients existants peuvent accéder au portail d’approbation de service** à [https://aka.ms/STP](https://aka.ms/STP) l’aide de l’un des abonnements en ligne suivants (version d’évaluation ou payante) : 
   
-- Office 365
+- Microsoft 365
 
 - Dynamics 365
 
@@ -44,7 +44,7 @@ Les **clients existants peuvent accéder au portail d’approbation de service**
   
 Pour créer un compte ou pour créer un compte d’évaluation, utilisez l’un des formulaires d’inscription suivants (également utilisé pour les comptes d’évaluation) pour accéder au protocole STP.
   
-- S’inscrire à un nouveau [compte d’évaluation office 365 Business](https://go.microsoft.com/fwlink/p/?LinkID=507653) ou à un nouveau [compte d’évaluation d’Office 365 Enterprise](https://go.microsoft.com/fwlink/p/?LinkID=698279)
+- S’inscrire à un nouveau compte [Microsoft 365 apps pour la version d’évaluation](https://go.microsoft.com/fwlink/p/?LinkID=507653) ou à un nouveau [compte d’évaluation d’Office 365 Enterprise](https://go.microsoft.com/fwlink/p/?LinkID=698279)
 
 - S’inscrire à un nouveau [compte d’évaluation Dynamics 365](https://go.microsoft.com/fwlink/?LinkId=252780)
 
@@ -66,7 +66,7 @@ Le lien **portail d’approbation de services** affiche la page d’accueil. Il 
 
 ### <a name="compliance-manager"></a>Gestionnaire de conformité
 
-Le gestionnaire de conformité est un outil d’évaluation de risque basé sur un flux de travail qui vous permet de suivre, d’affecter et de vérifier les activités de conformité réglementaire de votre organisation relatives aux services de Cloud Computing Microsoft, tels que Office 365, Dynamics 365 et Azure. Utilisez le gestionnaire de conformité pour gérer la conformité réglementaire dans le modèle de responsabilité partagé du Cloud. En fonction de la version du gestionnaire de conformité que vous souhaitez utiliser, consultez les articles suivants pour plus d’informations :
+Le gestionnaire de conformité est un outil d’évaluation de risque basé sur un flux de travail qui vous permet de suivre, d’affecter et de vérifier les activités de conformité réglementaire de votre organisation relatives aux services de Cloud Computing Microsoft, tels que Microsoft 365, Dynamics 365 et Azure. Utilisez le gestionnaire de conformité pour gérer la conformité réglementaire dans le modèle de responsabilité partagé du Cloud. En fonction de la version du gestionnaire de conformité que vous souhaitez utiliser, consultez les articles suivants pour plus d’informations :
 
 - [Gestionnaire de conformité Microsoft (classique)](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md)
 
@@ -102,7 +102,7 @@ Fournit des informations de conformité spécifiques de l’industrie et de la r
   
 ### <a name="trust-center"></a>Centre de gestion de la confidentialité
 
-Liens vers le [Centre](https://www.microsoft.com/trust-center)de gestion de la confidentialité de Microsoft, qui fournit plus d’informations sur la sécurité, la conformité et la confidentialité dans le Cloud Microsoft. Cela inclut des informations sur les fonctionnalités des services de Cloud Computing de Microsoft que vous pouvez utiliser pour répondre aux exigences spécifiques du RGPD, de la documentation utile à votre responsabilité RGPD et de votre compréhension des mesures techniques et organisationnelles Microsoft a pris en charge le RGPD.
+Liens vers le [Centre](https://www.microsoft.com/trust-center)de gestion de la confidentialité de Microsoft, qui fournit plus d’informations sur la sécurité, la conformité et la confidentialité dans le Cloud Microsoft. Cela inclut des informations sur les fonctionnalités des services de Cloud Computing de Microsoft que vous pouvez utiliser pour répondre aux exigences spécifiques du RGPD, de la documentation utile à votre responsabilité RGPD et de votre compréhension des mesures techniques et organisationnelles prises par Microsoft pour prendre en charge l’RGPD.
   
 ### <a name="my-library"></a>Ma bibliothèque
 
@@ -112,7 +112,7 @@ Cette nouvelle fonctionnalité vous permet d’enregistrer (ou d' *épingler*) d
 
 Accédez à **plus de > administrateur** pour accéder aux fonctions d’administration qui sont uniquement disponibles pour le compte d’administrateur général. Cette option est visible uniquement lorsque vous êtes connecté en tant qu’administrateur général. Il existe deux options dans le menu déroulant **administrateur** :
   
-- **Paramètres :** Cette page vous permet d’attribuer un accès basé sur les rôles (appelé *rôles d’utilisateur*) au gestionnaire de conformité.  Pour plus d’informations, voir :
+- **Paramètres :** Cette page vous permet d’attribuer un accès basé sur les rôles (appelé *rôles d’utilisateur*) au gestionnaire de conformité.  Si vous souhaitez en savoir plus, consultez les articles : 
    
   - [Autorisations dans le gestionnaire de conformité (classique)](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md#permissions-and-role-based-access-control)
    
@@ -122,7 +122,7 @@ Accédez à **plus de > administrateur** pour accéder aux fonctions d’adminis
 
 - **Paramètres de confidentialité de l’utilisateur :** Cette page vous permet d’exporter un rapport qui contient des affectations d’éléments d’action dans le gestionnaire de conformité pour un utilisateur spécifique. Vous pouvez également réaffecter tous les éléments d’action à un autre utilisateur et supprimer les éléments d’action attribués de l’utilisateur spécifié. Pour plus d’informations, consultez la rubrique [paramètres de confidentialité](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md#user-privacy-settings)de l’utilisateur.
 
-### <a name="search"></a>Search
+### <a name="search"></a>Recherche
 
 Cliquez sur la loupe dans le coin supérieur droit de la page du portail d’approbation de service pour développer la zone, entrez vos termes de recherche, puis appuyez sur **entrée**. La page de **recherche** s’affiche, avec le terme de recherche affiché dans la zone de recherche et les résultats de la recherche répertoriés ci-dessous.
   

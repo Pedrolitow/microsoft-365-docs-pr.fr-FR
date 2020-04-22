@@ -1,5 +1,5 @@
 ---
-title: Examen d’éléments partiellement indexés dans eDiscovery Office 365
+title: Étude des éléments partiellement indexés dans eDiscovery
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -13,15 +13,15 @@ localization_priority: Normal
 ms.collection: M365-security-compliance
 search.appverid: MOE150
 ms.assetid: 4e8ff113-6361-41e2-915a-6338a7e2a1ed
-description: Les éléments partiellement indexés (également appelés éléments non indexés) sont des éléments de boîte aux lettres Exchange et des documents sur les sites SharePoint et OneDrive qui n’ont pas été complètement indexés pour la recherche de contenu. Dans cet article, vous pouvez découvrir pourquoi les éléments ne peuvent pas être indexés pour la recherche et sont renvoyés en tant qu’éléments partiellement indexés, identifier les erreurs de recherche pour les éléments partiellement indexés et utiliser un script PowerShell pour déterminer l’exposition de votre organisation à l’e-mail partiellement indexé. sous.
-ms.openlocfilehash: b67b7d5cfedd37315a9f8bc9027e03b820598846
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: Les éléments partiellement indexés (également appelés éléments non indexés) sont des éléments de boîte aux lettres Exchange et des documents sur les sites SharePoint et OneDrive qui n’ont pas été complètement indexés pour la recherche de contenu. Dans cet article, vous pouvez découvrir pourquoi les éléments ne peuvent pas être indexés pour la recherche et sont renvoyés en tant qu’éléments partiellement indexés, identifier les erreurs de recherche pour les éléments partiellement indexés et utiliser un script PowerShell pour déterminer l’exposition de votre organisation à des éléments de courrier électronique partiellement indexés.
+ms.openlocfilehash: 64b052e5c04019d5937c3763094529ae5c4c9e42
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42072343"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637462"
 ---
-# <a name="investigating-partially-indexed-items-in-office-365-ediscovery"></a>Examen d’éléments partiellement indexés dans eDiscovery Office 365
+# <a name="investigating-partially-indexed-items-in-ediscovery"></a>Étude des éléments partiellement indexés dans eDiscovery
 
 Une recherche de contenu exécutée à partir du centre de sécurité & conformité inclut automatiquement les éléments partiellement indexés dans les résultats de recherche estimés lors de l’exécution d’une recherche. Les éléments partiellement indexés sont des éléments de boîte aux lettres Exchange et des documents sur SharePoint et des sites OneDrive entreprise qui n’ont pas été complètement indexés pour la recherche. La plupart des messages électroniques et des documents de site sont indexés, car ils sont inclus dans les [limites d’indexation pour les messages électroniques](limits-for-content-search.md#indexing-limits-for-email-messages). Toutefois, certains éléments peuvent dépasser ces limites d’indexation et seront partiellement indexés. Voici d’autres raisons pour lesquelles les éléments ne peuvent pas être indexés pour la recherche et sont renvoyés en tant qu’éléments partiellement indexés lors de l’exécution d’une recherche de contenu :
   
@@ -35,7 +35,7 @@ Une recherche de contenu exécutée à partir du centre de sécurité & conformi
     
 - Le type de fichier est pris en charge pour l’indexation, mais une erreur d’indexation s’est produite pour un fichier spécifique.
     
-Bien qu’elle varie, la plupart des entreprises Office 365 les clients disposent de moins de 1% du contenu par volume et de moins de 12% de contenu par taille partiellement indexée. La raison de la différence entre le volume et la taille est que les fichiers volumineux ont une probabilité plus élevée de contenir du contenu qui ne peut pas être complètement indexé.
+Bien que cela varie, les clients de la plupart des organisations disposent de moins de 1% de contenu par volume et de moins de 12% de contenu par taille partiellement indexée. La raison de la différence entre le volume et la taille est que les fichiers volumineux ont une probabilité plus élevée de contenir du contenu qui ne peut pas être complètement indexé.
   
 ## <a name="why-does-the-partially-indexed-item-count-change-for-a-search"></a>Pourquoi le nombre d’éléments partiellement indexés change pour une recherche ?
 
@@ -70,7 +70,7 @@ Vous pouvez déterminer le pourcentage d’éléments partiellement indexés à 
 
 `(316 MB/4830 MB) x 100 = 6.54%`
 
-Par conséquent, dans l’exemple précédent, 6,54% de la taille totale des éléments de boîte aux lettres proviennent d’éléments partiellement indexés. Comme indiqué précédemment, la plupart des entreprises 365 organisations disposent de moins de 1% du contenu par volume et de moins de 12% de contenu par taille partiellement indexée.
+Par conséquent, dans l’exemple précédent, 6,54% de la taille totale des éléments de boîte aux lettres proviennent d’éléments partiellement indexés. Comme indiqué précédemment, la plupart des entreprises clientes disposent de moins de 1% du contenu par volume et de moins de 12% de contenu par taille partiellement indexée.
 
 ## <a name="working-with-partially-indexed-items"></a>Utilisation d’éléments partiellement indexés
 
@@ -103,12 +103,12 @@ Voici une liste des erreurs d’indexation et une description de la cause possib
 | `attachmentsize` <br/> |Un fichier joint à un message électronique est trop volumineux et n’a pas pu être traité.  <br/> |
 | `indexingtruncated` <br/> |Lors de l’écriture du message électronique traité dans l’index, l’une des propriétés indexable était trop volumineuse et a été tronquée. Les propriétés tronquées sont répertoriées dans le champ propriétés de l’erreur.  <br/> |
 | `invalidunicode` <br/> |Un message électronique contient du texte qui n’a pas pu être traité en tant que format Unicode valide. L’indexation de cet élément est peut-être incomplète.  <br/> |
-| `parserencrypted` <br/> |Le contenu de la pièce jointe ou du message électronique est chiffré et Office 365 n’a pas pu décoder le contenu.  <br/> |
+| `parserencrypted` <br/> |Le contenu de la pièce jointe ou du message électronique est chiffré et Microsoft 365 n’a pas pu décoder le contenu.  <br/> |
 | `parsererror` <br/> |Une erreur inconnue s’est produite lors de l’analyse. Cela résulte généralement d’un problème logiciel ou d’un blocage de service.  <br/> |
 | `parserinputsize` <br/> |Une pièce jointe était trop volumineuse pour être gérée par l’analyseur, et l’analyse de cette pièce jointe n’a pas été effectuée ou n’a pas été terminée.  <br/> |
 | `parsermalformed` <br/> |Une pièce jointe est mal formée et n’a pas pu être gérée par l’analyseur. Ce résultat peut provenir d’anciens formats de fichiers, de fichiers créés par des logiciels incompatibles ou de virus prétendant être autres que réclamés.  <br/> |
 | `parseroutputsize` <br/> |La sortie de l’analyse d’une pièce jointe était trop volumineuse et devait être tronquée.  <br/> |
-| `parserunknowntype` <br/> |Une pièce jointe a un type de fichier qu’Office 365 n’a pas pu détecter.  <br/> |
+| `parserunknowntype` <br/> |Une pièce jointe a un type de fichier que Microsoft 365 n’a pas pu détecter.  <br/> |
 | `parserunsupportedtype` <br/> |Une pièce jointe a un type de fichier détecté par Office 365could, mais l’analyse de ce type de fichier n’est pas prise en charge.  <br/> |
 | `propertytoobig` <br/> |La valeur d’une propriété de messagerie dans la Banque d’Exchange est trop grande pour être récupérée et le message n’a pas pu être traité. Cela ne se produit généralement que pour la propriété Body d’un message électronique.  <br/> |
 | `retrieverrms` <br/> |Le extracteur de contenu n’a pas pu décoder un message protégé par RMS.  <br/> |
@@ -178,12 +178,12 @@ Voici un exemple de la sortie renvoyée par le script.
   
 ![Exemple de sortie d’un script qui génère un rapport sur l’exposition de votre organisation à des éléments de courrier électronique partiellement indexés](../media/aeab5943-c15d-431a-bdb2-82f135abc2f3.png)
   
-Remarques :
+Notez également les points suivants :
   
 1. Le nombre total et la taille des éléments de courrier électronique, et le ratio de votre organisation pour les éléments de courrier électronique partiellement indexés (par nombre et par taille)
     
 2. Balises d’erreur de liste et types de fichiers correspondants pour lesquels l’erreur s’est produite.
   
-## <a name="see-also"></a>Voir aussi
+## <a name="see-also"></a>Voir également
 
 [Éléments partiellement indexés dans la recherche de contenu dans Office 365](partially-indexed-items-in-content-search.md)

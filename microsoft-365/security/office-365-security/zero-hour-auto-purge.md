@@ -19,12 +19,12 @@ ms.assetid: 96deb75f-64e8-4c10-b570-84c99c674e15
 ms.collection:
 - M365-security-compliance
 description: La purge automatique à zéro heure (ZAP) est une fonctionnalité de protection de la messagerie électronique dans Microsoft 365 qui détecte les courriers indésirables, les programmes malveillants ou les messages de hameçonnage qui ont déjà été remis à Exchange Online. Le mode de fonctionnement de ZAP dépend du type de contenu malveillant détecté.
-ms.openlocfilehash: a819269d8596f12e76cbd17b5d1302cd56837f14
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: f1b36f1152882f446c8f611ceafb44a085cc0a5d
+ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43630808"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43708450"
 ---
 # <a name="zero-hour-auto-purge-zap---protection-against-spam-and-malware-in-microsoft-365"></a>Purge automatique à zéro heure (ZAP)-protection contre le courrier indésirable et les programmes malveillants dans Microsoft 365
 
@@ -36,7 +36,7 @@ ZAP est disponible avec le service Exchange Online Protection (EOP) par défaut 
 
 ## <a name="how-zap-works"></a>Fonctionnement de l’ZAP
 
-Microsoft 365 met à jour quotidiennement les signatures de courrier indésirable et de programmes malveillants en temps réel. Toutefois, les utilisateurs peuvent toujours recevoir des messages malveillants pour diverses raisons, notamment si le contenu est arme après remise aux utilisateurs. ZAP résout ce problème en surveillant en continu les mises à jour des signatures de Microsfot 365 courrier indésirable et anti-programme malveillant. ZAP peut rechercher et supprimer des messages qui se trouvent déjà dans la boîte aux lettres d’un utilisateur.
+Microsoft 365 met à jour quotidiennement les signatures de courrier indésirable et de programmes malveillants en temps réel. Toutefois, les utilisateurs peuvent toujours recevoir des messages malveillants pour diverses raisons, notamment si le contenu est arme après remise aux utilisateurs. ZAP résout ce problème en surveillant en permanence les mises à jour des signatures de courrier indésirable et de programmes malveillants Microsoft 365. ZAP peut rechercher et supprimer des messages qui se trouvent déjà dans la boîte aux lettres d’un utilisateur.
 
 L’action ZAP est transparente pour l’utilisateur ; ils ne sont pas avertis si un message est détecté et déplacé.
 

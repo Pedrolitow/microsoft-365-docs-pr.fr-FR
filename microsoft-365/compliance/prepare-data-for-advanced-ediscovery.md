@@ -1,5 +1,5 @@
 ---
-title: Préparation des données pour Office 365 Advanced eDiscovery
+title: Préparation des données pour Advanced eDiscovery
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -15,29 +15,29 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 2fb94c23-1846-4a0e-994d-da6d02445f15
-description: 'Découvrez comment utiliser le centre de sécurité &amp; conformité Microsoft 365 pour préparer les données Office 365 pour analyse avec Office 365 Advanced eDiscovery. '
-ms.openlocfilehash: 44ccb6250e28e0fa75f6d1a037236a100fca102c
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+description: 'Découvrez comment utiliser le centre de &amp; sécurité conformité pour préparer les données à analyser avec Advanced eDiscovery. '
+ms.openlocfilehash: edc92aeac0c76e64d1d2dcfd6ceae08d766b9397
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42557864"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43626658"
 ---
 # <a name="prepare-data-for-advanced-ediscovery-classic"></a>Préparation des données pour Advanced eDiscovery (classique)
 
 Cette rubrique décrit comment charger les résultats d’une recherche de contenu dans dans un cas dans Advanced eDiscovery (classique). 
   
 > [!IMPORTANT]
-> À mesure que nous continuons à investir dans les versions plus récentes de la découverte électronique avancée, nous annonçaons le retrait d’Office 365 Advanced eDiscovery, également appelé *Advanced eDiscovery (Classic)* ou *Advanced eDiscovery v 1.0*. Si vous utilisez Advanced eDiscovery v 1.0, veuillez faire la transition vers [Advanced eDiscovery v2.0](overview-ediscovery-20.md) (également connu sous le nom de *solution eDiscovery avancée dans Microsoft 365*) dès que possible. Advanced eDiscovery 2.0 contient des fonctionnalités similaires à celles de Advanced eDiscovery v1.0, et elle offre également de nombreuses fonctions inédites telles que la gestion des consignataires, la gestion des communications et les jeux à réviser. Pour en savoir plus sur le retrait d’Advanced eDiscovery v1.0, voir la [Suppression des outils hérités eDiscovery](legacy-ediscovery-retirement.md#advanced-ediscovery-v10).  
+> À mesure que nous continuons à investir dans les versions plus récentes de Advanced eDiscovery, nous annonçaons le retrait de la fonctionnalité eDiscovery avancée, également appelée *Advanced eDiscovery (Classic)* ou *Advanced eDiscovery v 1.0*. Si vous utilisez Advanced eDiscovery v 1.0, veuillez faire la transition vers [Advanced eDiscovery v2.0](overview-ediscovery-20.md) (également connu sous le nom de *solution eDiscovery avancée dans Microsoft 365*) dès que possible. Advanced eDiscovery 2.0 contient des fonctionnalités similaires à celles de Advanced eDiscovery v1.0, et elle offre également de nombreuses fonctions inédites telles que la gestion des consignataires, la gestion des communications et les jeux à réviser. Pour en savoir plus sur le retrait d’Advanced eDiscovery v1.0, voir la [Suppression des outils hérités eDiscovery](legacy-ediscovery-retirement.md#advanced-ediscovery-v10).  
   
-## <a name="step-1-prepare-office-365-data-for-advanced-ediscovery"></a>Étape 1 : préparer les données Office 365 pour Advanced eDiscovery
+## <a name="step-1-prepare-data-for-advanced-ediscovery"></a>Étape 1 : préparer les données pour Advanced eDiscovery
 
 Pour analyser les données avec Advanced eDiscovery, vous pouvez utiliser les résultats d’une recherche de contenu que vous exécutez dans le centre &amp; de sécurité conformité Microsoft 365 (qui se trouve sur la page **recherche** de &amp; contenu dans le centre de sécurité conformité de Microsoft 365) ou dans une recherche associée à un cas de &amp; découverte électronique (dans la page **eDiscovery** du centre de sécurité conformité). 
   
-Pour obtenir la procédure détaillée sur la préparation des résultats de recherche pour analyse dans Advanced eDiscovery, voir [Prepare Search Results for Office 365 Advanced eDiscovery](prepare-search-results-for-advanced-ediscovery.md).
+Pour obtenir la procédure détaillée sur la préparation des résultats de recherche pour analyse dans Advanced eDiscovery, reportez-vous à [Prepare Search Results for Advanced eDiscovery](prepare-search-results-for-advanced-ediscovery.md).
   
 > [!NOTE]
-> Si vous disposez de données en dehors d’Office 365 et que vous souhaitez les importer dans Office 365 de manière à pouvoir les préparer et les analyser dans Advanced eDiscovery, voir [Overview of Import PST Files to office 365](https://support.office.com/article/ba688e0a-0fcb-4bd7-8e57-2b669564ea84) et [Archiving tiers data in Office 365](https://go.microsoft.com/fwlink/p/?linkid=716918). 
+> Si vous disposez de données en dehors de Microsoft 365 et que vous souhaitez les importer dans Microsoft 365 afin de pouvoir les préparer et les analyser dans Advanced eDiscovery, voir [Overview of Import PST Files to microsoft 365](https://support.office.com/article/ba688e0a-0fcb-4bd7-8e57-2b669564ea84) and [Archiving tiers Data](https://go.microsoft.com/fwlink/p/?linkid=716918). 
   
 ## <a name="step-2-load-search-result-data-in-to-a-case-in-advanced-ediscovery"></a>Étape 2 : chargement des données de résultats de recherche dans dans un cas dans Advanced eDiscovery
 
@@ -45,7 +45,7 @@ Une fois que vous avez préparé les résultats de &amp; la recherche dans le ce
   
 1. Accédez à [https://protection.office.com](https://protection.office.com).
     
-2. Ouvrez une session Office 365 en utilisant votre compte scolaire ou professionnel.
+2. Connectez-vous à l’aide de votre compte professionnel ou scolaire.
     
 3. Dans le Centre de sécurité &amp; conformité, cliquez sur **Recherches &amp; enquêtes** \> **eDiscovery** pour afficher la liste des cas de votre organisation. 
     
@@ -67,7 +67,7 @@ Une fois que les résultats de la &amp; recherche du centre de sécurité confor
   
 ## <a name="see-also"></a>Voir aussi
 
-[Découverte électronique avancée (classique)](office-365-advanced-ediscovery.md)
+[Advanced eDiscovery (classique)](office-365-advanced-ediscovery.md)
   
 [Configurer des utilisateurs et des cas](set-up-users-and-cases-in-advanced-ediscovery.md)
   

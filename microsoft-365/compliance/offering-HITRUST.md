@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: aa93ea90748f4beeb7a6d2ad6f537b098f19376c
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: f04c6bf41e9c09455773c419efec0b7b4e8ca5ae
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602301"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637988"
 ---
 # <a name="health-information-trust-alliance-hitrust-common-security-framework-csf"></a>Infrastructure de sécurité commune HITRUST (Health Information Trust Alliance)
 
@@ -49,14 +49,14 @@ Découvrez comment accélérer votre déploiement de HITRUST à l’aide de notr
 
 La certification CSF HITRUST d’Azure et Office 365 est valide pendant deux ans.
 
-- [Lettre de certification Azure HITRUST](https://aka.ms/AzureHiTrustLetterofCertification)
+- [Lettre de certification Azure HITRUST](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuideV3?command=Download&downloadType=Document&downloadId=02eaae7a-9d65-42e6-aec8-a8e22de1a494&tab=7027ead0-3d6b-11e9-b9e1-290b1eb4cdeb&docTab=7027ead0-3d6b-11e9-b9e1-290b1eb4cdeb_GRC_Assessment_Reports)
 - [Office 365 HITRUST lettre de certification](https://aka.ms/O365HITRUSTcertification)
 
 ## <a name="accelerate-your-deployment-of-hipaahitrust-solutions-on-azure"></a>Accélérez votre déploiement des solutions HIPAA/HITRUST sur Azure
 
 Commencez à tirer parti des avantages du Cloud pour les solutions de données d’intégrité avec le plan de sécurité et de conformité Azure (données d’intégrité HIPAA/HITRUST et IA). Ce plan fournit des outils et des conseils pour vous aider à créer des solutions HIPAA/HITRUST dès aujourd’hui.
 
-[Commencer à utiliser le modèle Azure HIPAA/HITRUST](https://go.microsoft.com/fwlink/p/?linkid=2100613)
+[Commencer à utiliser le modèle Azure HIPAA/HITRUST](https://docs.microsoft.com/azure/governance/blueprints/samples/hipaa-hitrust/)
 
 ## <a name="accelerate-your-hipaahitrust-compliance-when-using-office-365"></a>Accélérez votre conformité HIPAA/HITRUST lors de l’utilisation d’Office 365
 
@@ -78,14 +78,14 @@ Oui. Si votre entreprise a besoin d’une certification HITRUST pour les implém
 
 **Comment puis-je obtenir une copie de la certification HITRUST ?**
 
-Vous pouvez télécharger une copie de la lettre de certification pour [Azure](https://aka.ms/AzureHiTrustLetterofCertification) et [Office 365](https://aka.ms/O365HITRUSTcertification).
+Vous pouvez télécharger une copie de la lettre de certification pour [Azure](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuideV3?command=Download&downloadType=Document&downloadId=02eaae7a-9d65-42e6-aec8-a8e22de1a494&tab=7027ead0-3d6b-11e9-b9e1-290b1eb4cdeb&docTab=7027ead0-3d6b-11e9-b9e1-290b1eb4cdeb_GRC_Assessment_Reports) et [Office 365](https://aka.ms/O365HITRUSTcertification).
 
 **Quels sont les services dans l’étendue pour Office 365 ?**
 
-Les services dans l’étendue de la certification CSF HITRUST sont archivage Exchange Online, Exchange Online Protection, Exchange Online, Skype entreprise, Centre d’administration, SharePoint Online, Project Online, OneDrive entreprise, Office Online, MyAnalytics, Microsoft Teams, Office ProPlus dans Office 365 Cloud et Office 365 GCC.
+Les services dans l’étendue de la certification CSF d’HITRUST sont archivage Exchange Online, Exchange Online Protection, Exchange Online, Skype entreprise, Centre d’administration, SharePoint Online, Project Online, OneDrive entreprise, Office Online, MyAnalytics, Microsoft Teams, Office ProPlus dans Office 365 Cloud mutualisés et Office 365 GCC.
 
 > [!NOTE]
-> Office 365 ProPlus permet d’accéder à différents services Cloud, tels que les paramètres d’itinérance, les licences et le stockage cloud de OneDrive consommateurs, et peut également permettre l’accès à d’autres services Cloud. Les licences et les paramètres d’itinérance prennent en charge les normes pour HITRUST. Le stockage cloud de OneDrive client ne fonctionne pas et d’autres services Cloud accessibles via Office 365 ProPlus et que Microsoft peut proposer à l’avenir sont également susceptibles de ne pas prendre en charge ces normes. *
+> Les applications Microsoft 365 pour entreprise autorisent l’accès à différents services Cloud, tels que les paramètres d’itinérance, les licences et le stockage cloud de OneDrive consommateurs, et peuvent permettre l’accès à d’autres services Cloud à l’avenir. Les licences et les paramètres d’itinérance prennent en charge les normes pour HITRUST. OneDrive Consumer le stockage cloud n’est pas pris en charge et d’autres services Cloud accessibles via les applications Microsoft 365 pour Enterprise et que Microsoft peut proposer à l’avenir peuvent également ne pas prendre en charge ces normes. *
 
 **Pourquoi certains services Office 365 ne sont-ils pas dans l’étendue de cette certification ?**
 
@@ -106,7 +106,7 @@ Connectez-vous à l’outil HITRUST MyCSF® et pré-remplissez votre évaluation
 ## <a name="resources"></a>Ressources
 
 - [HITRUST Alliance](https://hitrustalliance.net/)
-- [HITRUST CSF 8,1](https://hitrustalliance.net/csf-license-agreement/)
+- [HITRUST CSF 9,3](https://hitrustalliance.net/csf-license-agreement/)
 - [Présentation et exploitation de l’infrastructure de structure](https://hitrustalliance.net/understanding-leveraging-csf/)
 - [En savoir plus sur le programme de responsabilité partagé HITRUST](https://go.microsoft.com/fwlink/p/?linkid=2100268)
 - [Conformité sur le site Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)

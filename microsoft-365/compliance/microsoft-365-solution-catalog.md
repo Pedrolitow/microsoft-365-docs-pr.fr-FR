@@ -1,5 +1,5 @@
 ---
-title: Catalogue de solutions Microsoft 365
+title: Catalogue de solutions Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -11,14 +11,14 @@ ms.service: o365-seccomp
 localization_priority: Normal
 description: Découvrez le catalogue de solutions Microsoft 365, y compris son contenu, comment l’obtenir et les étapes suivantes.
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 3c44d5ffd401645fbac1f1f122024e41597b0207
-ms.sourcegitcommit: 87cc278ea2ddcd536ecfaa3dfae9a5ddaa502cf9
+ms.openlocfilehash: c2fad2726b7e923f871c0307f17f28ea3f99b1bd
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42179145"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637946"
 ---
-# <a name="microsoft-365-solution-catalog"></a>Catalogue de solutions Microsoft 365
+# <a name="microsoft-365-solution-catalog"></a>Catalogue de solutions Microsoft 365
 
 Vous cherchez un moyen de commencer rapidement à démarrer avec les tâches de conformité dans Microsoft 365 ? Consultez le [catalogue de solutions Microsoft 365](https://compliance.microsoft.com/solutioncatalog) pour découvrir, découvrir et commencer rapidement les solutions de gestion de la conformité et des risques.
 
@@ -89,7 +89,7 @@ Tout d’abord, vérifiez que vous disposez des autorisations et des licences ap
 
 Nous travaillons en permanence à ajouter de nouvelles fonctionnalités au centre de conformité Microsoft 365 et au catalogue de solutions. Si vous ne trouvez pas une solution spécifique dans la zone de navigation, elle sera accessible lorsque la solution sera disponible dans votre abonnement.
 
-Si vous recherchez une solution de conformité existante et qu’elle n’est pas disponible dans le centre de conformité Microsoft 365, vous pouvez toujours accéder aux solutions dans le centre de sécurité et conformité Office 365 existant [https://protection.office.com](https://protection.office.com)en accédant à. Vous pouvez également cliquer sur l’onglet **ressources supplémentaires** dans le volet de navigation de gauche du centre de conformité Microsoft 365 et sélectionner la fiche centre de sécurité et conformité Office 365.  
+Si vous recherchez une solution de conformité existante et qu’elle n’est pas disponible dans le centre de conformité Microsoft 365, vous pouvez toujours accéder aux solutions dans le &amp; Centre de sécurité conformité existant [https://protection.office.com](https://protection.office.com)en accédant à. Vous pouvez également cliquer sur l’onglet **ressources supplémentaires** dans le volet de navigation de gauche du centre de conformité Microsoft 365 et sélectionner la fiche centre de sécurité et conformité Office 365.  
 
 ## <a name="next-steps"></a>Étapes suivantes
 

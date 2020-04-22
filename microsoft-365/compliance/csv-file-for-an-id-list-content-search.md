@@ -1,5 +1,5 @@
 ---
-title: Préparer un fichier CSV pour une recherche de contenu de liste d’ID dans Office 365
+title: Préparer un fichier CSV pour une recherche de contenu de liste d’ID
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -14,14 +14,14 @@ ms.collection: M365-security-compliance
 search.appverid: MOE150
 ms.assetid: 82c97bb4-2b64-4edc-804d-cedbda525d22
 description: Utilisez le fichier results. csv ou unindexed Items. csv à partir d’une recherche de contenu existante pour créer une recherche de liste d’ID qui renvoie un message électronique spécifique. Les recherches de liste d’ID sont généralement utilisées pour renvoyer des éléments de boîte aux lettres partiellement indexés.
-ms.openlocfilehash: 97c69cd096e1ec2fa69082edef70cd41dfd229b0
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: f37715858e6785e75343f5b11f73332de08b5d3b
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42077013"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43630701"
 ---
-# <a name="prepare-a-csv-file-for-an-id-list-content-search-in-office-365"></a>Préparer un fichier CSV pour une recherche de contenu de liste d’ID dans Office 365
+# <a name="prepare-a-csv-file-for-an-id-list-content-search"></a>Préparer un fichier CSV pour une recherche de contenu de liste d’ID
 
 Vous pouvez rechercher des messages électroniques de boîte aux lettres spécifiques et d’autres éléments de boîte aux lettres à l’aide d’une liste d’ID Exchange. Pour créer une recherche de liste d’ID (anciennement appelée recherche ciblée), vous devez soumettre un fichier de valeurs séparées par des virgules (CSV) qui identifie les éléments de boîte aux lettres spécifiques à rechercher. Pour ce fichier CSV, vous utilisez le fichier **results. csv** ou le fichier d' **éléments non indexés. csv** qui est inclus lorsque vous exportez les résultats de recherche de contenu ou que vous exportez un rapport de recherche de contenu à partir de et de la recherche de contenu existante. Ensuite, modifiez l’un de ces fichiers pour indiquer les éléments spécifiques à rechercher, puis créez une nouvelle recherche de liste d’ID et soumettez le fichier CSV.
 
@@ -29,7 +29,7 @@ Voici une présentation rapide du processus de création d’une recherche de li
 
 1. Créer et exécuter une recherche de contenu nouvelle ou guidée dans le centre de sécurité & conformité.
 
-2. Exportez les résultats de la recherche de contenu ou exportez le rapport de recherche de contenu. Pour plus d’informations, voir :
+2. Exportez les résultats de la recherche de contenu ou exportez le rapport de recherche de contenu. Si vous souhaitez en savoir plus, consultez les articles : 
 
     - [Exporter les résultats de la recherche de contenu](export-search-results.md)
 
@@ -84,7 +84,7 @@ L’étape suivante consiste à créer une nouvelle recherche de contenu de list
 
 3. Dans le menu démenu de **recherche par ID** , nommez la recherche (et éventuellement la Décrivez), puis cliquez sur **Parcourir** et sélectionnez le fichier CSV que vous avez préparé à l’étape précédente.
 
-    Office 365 tente de valider le fichier CSV. Si la validation échoue, un message d’erreur s’affiche pour vous aider à résoudre les erreurs de validation. Le fichier CSV doit être validé correctement pour créer une recherche de liste d’ID.
+    Microsoft 365 tente de valider le fichier CSV. Si la validation échoue, un message d’erreur s’affiche pour vous aider à résoudre les erreurs de validation. Le fichier CSV doit être validé correctement pour créer une recherche de liste d’ID.
 
 4. Une fois le fichier CSV correctement validé, cliquez sur **Rechercher** pour créer la recherche de liste d’ID.
 
@@ -97,4 +97,4 @@ L’étape suivante consiste à créer une nouvelle recherche de contenu de list
 5. Prévisualisez ou exportez les éléments renvoyés par la recherche de liste d’ID.
 
 > [!NOTE]
-> Si vous déplacez une boîte aux lettres après avoir créé une recherche de liste d’ID, la requête de la recherche ne renverra pas les éléments spécifiés. En effet, la propriété **DocumentID** pour les éléments de boîte aux lettres est modifiée lorsqu’une boîte aux lettres est déplacée. Dans l’instance rare lorsqu’une boîte aux lettres est déplacée après la création d’une recherche de liste d’ID, vous devez créer une nouvelle recherche de contenu (ou mettre à jour les résultats de recherche pour la recherche de contenu existante), puis exporter les résultats de la recherche ou le rapport pour générer des fichiers CSV mis à jour pouvant être utilisés  pour créer une recherche de liste d’ID.
+> Si vous déplacez une boîte aux lettres après avoir créé une recherche de liste d’ID, la requête de la recherche ne renverra pas les éléments spécifiés. En effet, la propriété **DocumentID** pour les éléments de boîte aux lettres est modifiée lorsqu’une boîte aux lettres est déplacée. Dans l’instance rare lorsqu’une boîte aux lettres est déplacée après la création d’une recherche de liste d’ID, vous devez créer une recherche de contenu (ou mettre à jour les résultats de recherche pour la recherche de contenu existante), puis exporter les résultats de la recherche ou le rapport pour générer des fichiers CSV mis à jour qui peuvent être utilisés pour créer une recherche de liste d’ID.

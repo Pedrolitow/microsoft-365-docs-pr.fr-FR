@@ -1,5 +1,5 @@
 ---
-title: Utiliser le module de pertinence dans Office 365 Advanced eDiscovery
+title: Utiliser le module de pertinence dans Advanced eDiscovery
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -15,13 +15,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 5d671821-d188-42da-a9ce-9cfe92beedfd
-description: 'Découvrez le module de pertinence dans Office 365 Advanced eDiscovery, notamment un flux de travail et des instructions, ainsi que les étapes de formation et de révision de fichiers.  '
-ms.openlocfilehash: 5cb20d140e9369d6eccccb6936740030e6b5ca41
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+description: 'Découvrez le module de pertinence dans Advanced eDiscovery, notamment un flux de travail et des instructions, ainsi que les étapes de formation et de révision de fichiers.  '
+ms.openlocfilehash: 9fa588a139c992c8f67c99c8e02ff4a8540694b1
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42557632"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43626390"
 ---
 # <a name="use-the-relevance-module-in-advanced-ediscovery-classic"></a>Utiliser le module de pertinence dans Advanced eDiscovery (classique)
 
@@ -124,7 +124,7 @@ Dans l' **onglet \> suivi de pertinence** , Advanced eDiscovery fournit des reco
     
   - Implication : aucune formation pertinente n’est requise à ce stade.
     
-Bien qu’Advanced eDiscovery vous guide tout au long du processus, avec les étapes suivantes recommandées à différentes étapes, il vous permet également de naviguer entre les onglets et les pages, et de faire des choix pour répondre aux situations susceptibles de concerner votre cas, problème ou processus de révision de documents. 
+Bien que Advanced eDiscovery vous guide tout au long du processus, avec les étapes suivantes recommandées à différentes étapes, il vous permet également de naviguer entre les onglets et les pages, et de faire des choix pour répondre aux situations susceptibles de concerner votre cas, problème ou processus de révision de document. 
   
 Il est possible d’accepter ou de remplacer les choix avancés de traitement de l’étape suivante de eDiscovery. Si vous souhaitez effectuer une étape différente de l’étape suivante recommandée, cliquez sur l' **étape suivante** figurant dans la boîte de dialogue Affichage du problème développé dans la boîte de dialogue, cliquez sur le bouton **modifier** en regard de l’étape suivante, puis sélectionnez une autre étape suivante. 
   
@@ -133,7 +133,7 @@ Il est possible d’accepter ou de remplacer les choix avancés de traitement de
   
 ## <a name="see-also"></a>Voir aussi
 
-[Découverte électronique avancée (classique)](office-365-advanced-ediscovery.md)
+[Advanced eDiscovery (classique)](office-365-advanced-ediscovery.md)
   
 [Présentation de l’évaluation en matière de pertinence](assessment-in-relevance-in-advanced-ediscovery.md)
   

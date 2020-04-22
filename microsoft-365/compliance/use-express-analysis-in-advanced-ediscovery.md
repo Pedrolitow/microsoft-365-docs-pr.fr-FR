@@ -1,5 +1,5 @@
 ---
-title: Utiliser l’analyse expresse dans Office 365 Advanced eDiscovery
+title: Utiliser l’analyse expresse dans Advanced eDiscovery
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -15,13 +15,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 50580099-3dc0-44a1-a9b6-5ca6d396316b
-description: Découvrez comment exécuter le mode d’analyse rapide d’Office 365 Advanced eDiscovery
-ms.openlocfilehash: d4b8e1fa5e8251f5ede2d9a3003c756decac3b45
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+description: Découvrez comment exécuter le mode d’analyse rapide d’eDiscovery avancé
+ms.openlocfilehash: 32e1087d33b9e9a6c0e4935bd3488a6b464d06a2
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42557642"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43626410"
 ---
 # <a name="use-express-analysis-in-advanced-ediscovery-classic"></a>Utiliser l’analyse rapide dans Advanced eDiscovery (classique) 
 
@@ -115,7 +115,7 @@ Vous pouvez éventuellement définir des **Paramètres avancés** pour modifier 
     
   - Pour supprimer un lot d’exportation, sélectionnez **supprimer** ![supprimer une icône](../media/92a9f8e0-d469-48da-addb-69365e7ffb6f.jpg)exporter un lot.
     
-  - Pour afficher l’historique d’un lot, sélectionnez **** ![l’icône](../media/a80cc320-d96c-4d91-8884-75fe2cb147e2.jpg)historique du lot-afficher l’historique.
+  - Pour afficher l’historique d’un lot, sélectionnez **Batch history** ![l’icône](../media/a80cc320-d96c-4d91-8884-75fe2cb147e2.jpg)historique du lot-afficher l’historique.
     
 2. Sous define p **opulation :** sélectionnez **inclure uniquement les fichiers au-dessus du score de découpage de pertinence** et/ou **affiner l’exportation** pour affiner les paramètres de votre lot d’exportation. Si vous sélectionnez **inclure uniquement les fichiers au-dessus du score de découpage de pertinence**, si le **problème** est activé et si le score de pertinence du fichier est supérieur au score de découpage du problème sélectionné, le fichier est exporté. Le fichier est exporté sauf s’il est exclu par le filtre « **pour révision** ». Si vous sélectionnez **affiner l’exportation**, les cases d’option **de déduplication** et de **filtrage par « pour révision »** sont activées. Si vous choisissez la **déduplication**, les fichiers dupliqués sont filtrés en fonction de la stratégie définie : [level case (Default) : à partir de chaque ensemble de fichiers en double dans le cas entier, tous les fichiers sauf un seront de duped. Niveau des dépositaires : à partir de chaque ensemble de fichiers en double du même dépositaire, tous les fichiers sauf un seront de duped. Un enregistrement de tous les fichiers en double est disponible lors de l’exportation de la sortie. Si vous choisissez **Filtrer par champ de révision** , sélectionnez **modifier sous métadonnées** pour entrer les paramètres de champ **« pour révision »**. Sélectionnez **inclure les fichiers d’entrée**pour inclure les fichiers sources dans le contenu du package. Vous pouvez désactiver cette option pour accélérer le processus d’exportation. Notez que les fichiers natifs seront exportés dans tous les cas.
     
@@ -132,5 +132,5 @@ Choisissez **OK**pour enregistrer les paramètres avancés, **restaurer** les pa
 ## <a name="see-also"></a>Voir aussi
 <a name="BK_AdvancedSettings"> </a>
 
-[Découverte électronique avancée (classique)](office-365-advanced-ediscovery.md)
+[Advanced eDiscovery (classique)](office-365-advanced-ediscovery.md)
 

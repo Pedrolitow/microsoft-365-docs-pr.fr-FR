@@ -1,5 +1,5 @@
 ---
-title: Éléments partiellement indexés dans la recherche de contenu dans Office 365
+title: Éléments partiellement indexés dans la recherche de contenu
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -21,16 +21,16 @@ search.appverid:
 - MET150
 ms.assetid: d1691de4-ca0d-446f-a0d0-373a4fc8487b
 description: 'Découvrez les éléments non indexés dans Exchange et SharePoint que vous pouvez inclure dans une recherche de contenu exécutée via le centre de sécurité & conformité. '
-ms.openlocfilehash: 3984a181d16d4cd66fbddacb24cfd7c5e489f4ac
-ms.sourcegitcommit: bd51f626f0c7788c2a3cf89deee25264659aebd5
+ms.openlocfilehash: c44138c11c2703cda4accba9976c254a0b135d65
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "43551225"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43626678"
 ---
-# <a name="partially-indexed-items-in-content-search-in-office-365"></a>Éléments partiellement indexés dans la recherche de contenu dans Office 365
+# <a name="partially-indexed-items-in-content-search"></a>Éléments partiellement indexés dans la recherche de contenu
 
-Une recherche de contenu exécutée à partir du centre de sécurité & conformité dans Office 365 inclut automatiquement les éléments partiellement indexés dans les résultats de recherche estimés lorsque vous exécutez une recherche. Les éléments partiellement indexés sont des éléments de boîte aux lettres Exchange et des documents sur SharePoint et des sites OneDrive entreprise qui n’ont pas été complètement indexés pour la recherche. Dans Exchange, un élément partiellement indexé contient généralement un fichier, d’un type de fichier qui ne peut pas être indexé, attaché à un message électronique. Voici quelques autres raisons pour lesquelles les éléments ne peuvent pas être indexés pour la recherche et sont renvoyés en tant qu’éléments partiellement indexés lors de l’exécution d’une recherche : 
+Une recherche de contenu exécutée à partir du centre de sécurité & conformité inclut automatiquement les éléments partiellement indexés dans les résultats de recherche estimés lors de l’exécution d’une recherche. Les éléments partiellement indexés sont des éléments de boîte aux lettres Exchange et des documents sur SharePoint et des sites OneDrive entreprise qui n’ont pas été complètement indexés pour la recherche. Dans Exchange, un élément partiellement indexé contient généralement un fichier, d’un type de fichier qui ne peut pas être indexé, attaché à un message électronique. Voici quelques autres raisons pour lesquelles les éléments ne peuvent pas être indexés pour la recherche et sont renvoyés en tant qu’éléments partiellement indexés lors de l’exécution d’une recherche : 
   
 - Le type de fichier n’est paspris en charge ou est désactivé pour l’indexation.
     
@@ -47,9 +47,9 @@ Une recherche de contenu exécutée à partir du centre de sécurité & conformi
 - Un fichier est protégé par mot de passe.
     
 > [!NOTE]
-> La plupart des organisations Office 365 disposent de moins de 1% de contenu par volume et de moins de 12% en taille partiellement indexée. La raison de la différence entre volume et taille est que les fichiers plus volumineux ont une probabilité plus élevée de contenir du contenu qui ne peut pas être complètement indexé. 
+> La plupart des organisations disposent de moins de 1% de contenu par volume et de moins de 12% de leur taille partiellement indexée. La raison de la différence entre volume et taille est que les fichiers plus volumineux ont une probabilité plus élevée de contenir du contenu qui ne peut pas être complètement indexé. 
   
-Pour les enquêtes légales, votre organisation peut être amenée à passer en revue les éléments partiellement indexés. Vous pouvez également spécifier s’il faut inclure des éléments partiellement indexés lorsque vous exportez des résultats de recherche vers un ordinateur local ou lorsque vous préparez les résultats pour l’analyse avec Office 365 Advanced eDiscovery. Pour plus d’informations, reportez-vous à la rubrique recherche [d’éléments partiellement indexés dans Office 365 eDiscovery](investigating-partially-indexed-items-in-ediscovery.md).
+Pour les enquêtes légales, votre organisation peut être amenée à passer en revue les éléments partiellement indexés. Vous pouvez également spécifier s’il faut inclure des éléments partiellement indexés lorsque vous exportez des résultats de recherche vers un ordinateur local ou lorsque vous préparez les résultats pour l’analyse avec Advanced eDiscovery. Pour plus d’informations, reportez-vous à la rubrique recherche [d’éléments partiellement indexés dans eDiscovery](investigating-partially-indexed-items-in-ediscovery.md).
   
 ## <a name="file-types-not-indexed-for-search"></a>Types de fichier non indexés pour la recherche
 
@@ -141,7 +141,7 @@ Pour obtenir la liste des limites d’indexation pour les documents SharePoint, 
 
 - Les messages protégés par la Gestion des droits relatifs à l’information (IRM) sont indexés et seront inclus dans les résultats de la recherche s’ils correspondent à la requête de recherche.
 
-## <a name="see-also"></a>Voir aussi
+## <a name="see-also"></a>Voir également
 
 [Étude des éléments partiellement indexés dans eDiscovery](investigating-partially-indexed-items-in-ediscovery.md)
 

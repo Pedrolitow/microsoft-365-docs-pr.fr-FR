@@ -1,5 +1,5 @@
 ---
-title: Définition des problèmes et affectation des utilisateurs dans Office 365 Advanced eDiscovery
+title: Définition des problèmes et affectation des utilisateurs dans Advanced eDiscovery
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -14,13 +14,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 48d37ee7-05bd-4cb8-9723-a8959ad23fbe
-description: Découvrez comment ajouter ou modifier un problème, y compris lui affecter des utilisateurs ou supprimer un problème pour un cas de découverte électronique dans Office 365 Advanced eDiscovery.
-ms.openlocfilehash: 5c7c15b765a0c129e8a58533951b6569b8766b45
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+description: Découvrez comment ajouter ou modifier un problème, y compris lui affecter des utilisateurs ou supprimer un problème pour un cas eDiscovery dans Advanced eDiscovery.
+ms.openlocfilehash: 3e1366962393b6e1bb3605472b4f635fbcf6e4bd
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42556972"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43630657"
 ---
 # <a name="define-issues-and-assign-users-in-advanced-ediscovery-classic"></a>Définition des problèmes et affectation des utilisateurs dans Advanced eDiscovery (classique)
 
@@ -76,7 +76,7 @@ Des problèmes peuvent être supprimés (c’est-à-dire supprimés de la base d
     
 ## <a name="see-also"></a>Voir aussi
 
-[Découverte électronique avancée (classique)](office-365-advanced-ediscovery.md)
+[Advanced eDiscovery (classique)](office-365-advanced-ediscovery.md)
   
 [Configuration des chargements pour ajouter des fichiers importés](set-up-loads-to-add-imported-files.md)
   

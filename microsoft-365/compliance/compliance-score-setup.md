@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Découvrez comment configurer et commencer à utiliser le score de conformité Microsoft, ce qui permet de simplifier et d’automatiser les évaluations des risques.
-ms.openlocfilehash: 334eb47ebf5057bfa1c426715e8f404979ceaf5b
-ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
+ms.openlocfilehash: 4ccd89647540aeda8ba6253f6e5eefab1dc81791
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43141519"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632389"
 ---
 # <a name="microsoft-compliance-score-preview-setup"></a>Programme d’installation du score de conformité Microsoft (aperçu)
 
@@ -27,7 +27,7 @@ ms.locfileid: "43141519"
 
 L’administrateur général de Microsoft 365 de votre organisation sera probablement le premier utilisateur à accéder au score de conformité. Nous vous recommandons de vous connecter à l’administrateur général et de définir les autorisations utilisateur comme indiqué ci-dessous lorsque vous visitez le score de conformité pour la première fois.
 
-## <a name="sign-in"></a>Se connecter
+## <a name="sign-in"></a>Connexion
 
 1. Accédez au [Centre de conformité microsoft 365](https://compliance.microsoft.com/) et **Connectez-vous** à l’aide de votre compte d’administrateur global Microsoft 365.
 2. Sélectionnez **score de conformité** dans le volet de navigation de gauche. Vous devez ensuite voir votre [tableau de bord de score de conformité avec votre score](#understand-the-compliance-score-dashboard).

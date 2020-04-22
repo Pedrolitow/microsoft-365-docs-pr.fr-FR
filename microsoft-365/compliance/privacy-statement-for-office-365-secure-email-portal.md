@@ -1,5 +1,5 @@
 ---
-title: Déclaration de confidentialité pour le portail de messagerie sécurisée Office 365
+title: Déclaration de confidentialité pour le portail de messagerie sécurisé
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -16,14 +16,14 @@ ms.assetid: 278917cd-a930-46cc-9580-6b9d2361a5f9
 ms.collection:
 - M365-security-compliance
 description: 'Dernière mise à jour : mai 2017'
-ms.openlocfilehash: 23707d22e52935b372a90a42ec323d8f64262894
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 069b47305557ef8a6a4e0a732288977842b52a5e
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597717"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43626628"
 ---
-# <a name="privacy-statement-for-office-365-secure-email-portal"></a>Déclaration de confidentialité pour le portail de messagerie sécurisée Office 365
+# <a name="privacy-statement-for-secure-email-portal"></a>Déclaration de confidentialité pour le portail de messagerie sécurisé
 
 Dernière mise à jour : mai 2017
   
@@ -37,15 +37,15 @@ Vos informations d’identification pour le compte Microsoft, le compte professi
   
 Lors du processus de déchiffrement, le courrier chiffré que vous recevez ne sera pas stocké par le nouveau portail de fonctionnalités OME ; il ne sera pas transmis en dehors du nouveau portail de fonctionnalités OME à tout moment.
   
-Le nouveau portail de fonctionnalités OME peut, dans certains cas, collecter des points de données sur l’utilisation et les performances des nouvelles fonctionnalités OME (par exemple, la fréquence à laquelle les messages chiffrés sont affichés, le navigateur ou l’application utilisé, ainsi que les erreurs rencontrées), qui peuvent être analysées dans regroupement à des fins d’amélioration de la qualité, de la sécurité et de l’intégrité de ce, ainsi que d’autres applications, produits ou services Microsoft. Ces informations ne sont pas utilisées pour identifier, contacter ou cibler des publicités pour vous.
+Le nouveau portail de fonctionnalités OME peut, dans certains cas, collecter des points de données sur l’utilisation et les performances des nouvelles fonctionnalités de OME (par exemple, la fréquence à laquelle les messages chiffrés sont affichés, le navigateur ou l’application utilisé, ainsi que les éventuelles erreurs rencontrées), qui peuvent être analysées dans l’ensemble pour améliorer la qualité, la sécurité et l’intégrité ou services. Ces informations ne sont pas utilisées pour identifier, contacter ou cibler des publicités pour vous.
   
-## <a name="for-more-information"></a>Pour plus d'informations
+## <a name="for-more-information"></a>Informations supplémentaires
 
 Veuillez diriger les demandes liées à la confidentialité vers Microsoft via [omepriv@microsoft.com](mailto:omepriv@microsoft.com), ou par courrier, à l’adresse suivante :
   
 Confidentialité Microsoft-protection des informations
   
-Microsoft Corporation
+Microsoft Corporation
   
 One Microsoft Way
   

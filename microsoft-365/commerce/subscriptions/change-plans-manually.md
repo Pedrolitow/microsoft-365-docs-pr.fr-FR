@@ -21,12 +21,12 @@ search.appverid:
 - BEA160
 ROBOTS: NOINDEX
 description: Modifiez les abonnements manuellement en achetant un nouvel abonnement et en vous assurant que les abonnements sont répertoriés et actifs.
-ms.openlocfilehash: 89786b30403a60bd0551351602d6fccc07f3d1a1
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: bcd9a129ef1597469ef9bbf93841b5db4f919f1e
+ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636582"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43707630"
 ---
 # <a name="change-plans-manually"></a>Modifier les offres manuellement
 
@@ -43,7 +43,7 @@ La meilleure façon de modifier tous les utilisateurs d’un plan à un autre co
 Pour poursuivre une modification manuelle, lisez l' [étape 2 : acheter un nouvel abonnement](#step-2-buy-a-new-subscription) dans cette rubrique.
 
 > [!IMPORTANT]
-> Si vous passez à un plan avec moins de services liés aux données par rapport à votre forfait actuel (rétrogradation), vous devez sauvegarder manuellement les données que vous souhaitez conserver. Pour plus d’informations, reportez-vous à la rubrique [sauvegarder les données avant de changer les offres Office 365 pour les entreprises](back-up-data-before-switching-plans.md).
+> Si vous passez à un plan avec moins de services liés aux données par rapport à votre forfait actuel (rétrogradation), vous devez sauvegarder manuellement les données que vous souhaitez conserver. Pour plus d’informations, consultez la rubrique [sauvegarder les données avant de modifier les offres](back-up-data-before-switching-plans.md).
 
 ## <a name="step-2-buy-a-new-subscription"></a>Étape 2 : acheter un nouvel abonnement
 
@@ -62,7 +62,7 @@ Incluez une licence pour chaque utilisateur que vous souhaitez déplacer.
 
 2. **Vérifier que les deux abonnements sont répertoriés et actifs** L’abonnement à partir duquel vous déplacez les utilisateurs et l’abonnement vers lequel vous déplacez les utilisateurs doivent être regroupés. Si le nouvel abonnement n’est pas présent lors de la vérification initiale, réessayez ultérieurement. Vérifiez que les deux abonnements sont actifs. [Le nouvel abonnement n’est pas indiqué, ou n’est pas actif](#the-new-subscription-isnt-listed-or-isnt-active).
 
-3. **Vérifier que vous disposez de suffisamment de licences pour chaque utilisateur** Chaque utilisateur doit disposer d’une licence correspondant à son abonnement. Par conséquent, si vous voulez déplacer dix utilisateurs vers Office 365 entreprise E5, vous devez vous assurer que dix licences sont disponibles.
+3. **Vérifier que vous disposez de suffisamment de licences pour chaque utilisateur** Chaque utilisateur doit disposer d’une licence correspondant à son abonnement. Par conséquent, si vous souhaitez déplacer dix utilisateurs vers Microsoft 365 Business Premium, vous devez vous assurer que dix licences sont disponibles.
 
 4. **Vous avez besoin de plus de licences pour le nouvel abonnement ?**
    Accédez à la page **produits & services** et [achetez plus de licences](../licenses/buy-licenses.md).

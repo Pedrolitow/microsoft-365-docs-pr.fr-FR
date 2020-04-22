@@ -1,5 +1,5 @@
 ---
-title: Définir les paramètres de cas et de client dans Office 365 Advanced eDiscovery
+title: Définir les paramètres de cas et de client dans Advanced eDiscovery
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -14,13 +14,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 383809de-7f5e-4a1d-9098-c525f67b7a9a
-description: 'Découvrez les étiquettes, les modules croisés et les paramètres de locataire que vous pouvez définir au niveau du cas dans Office 365 Advanced eDiscovery.  '
-ms.openlocfilehash: 3f206feaa48f13db48552fb7d1be1445609edeae
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+description: 'Découvrez les étiquettes, les modules croisés et les paramètres de locataire que vous pouvez définir au niveau du cas dans Advanced eDiscovery.  '
+ms.openlocfilehash: b4092c7fd60b9ae82e4f97edcfa7f4aaf60ac622
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42556942"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43630561"
 ---
 # <a name="define-case-and-tenant-settings-in-advanced-ediscovery-classic"></a>Définir les paramètres de cas et de client dans Advanced eDiscovery (classique)
 
@@ -90,7 +90,7 @@ L’affichage peut être mis à jour en cliquant sur l’icône d' **actualisati
   
 ## <a name="see-also"></a>Voir aussi
 
-[Découverte électronique avancée (classique)](office-365-advanced-ediscovery.md)
+[Advanced eDiscovery (classique)](office-365-advanced-ediscovery.md)
   
 [Utilisation des utilitaires](use-advanced-ediscovery-utilities.md)
 

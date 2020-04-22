@@ -17,16 +17,16 @@ ms.collection:
 ms.custom: Ent_Solutions
 ms.assetid: ''
 description: Utilisez cette rubrique pour en savoir plus sur la configuration de la gestion des accès privilégiés.
-ms.openlocfilehash: 8c5a0a342c9cabf643bff5e20fc3b64f938c61b7
-ms.sourcegitcommit: 8edad75338cf74712ca1ab5d6631b9b52ff54410
+ms.openlocfilehash: 196685eda6818b399c778363ee458f6f2792a33a
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43115990"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43626510"
 ---
 # <a name="get-started-with-privileged-access-management"></a>Prise en main de la gestion des accès privilégiés
 
-Cette rubrique vous guide tout au long de l’activation et de la configuration de la gestion des accès privilégiés dans votre organisation Office 365. Vous pouvez utiliser le centre d’administration Microsoft 365 ou Exchange Management PowerShell pour gérer et utiliser l’accès privilégié.
+Cette rubrique vous guide tout au long de l’activation et de la configuration de la gestion des accès privilégiés dans votre organisation. Vous pouvez utiliser le centre d’administration Microsoft 365 ou Exchange Management PowerShell pour gérer et utiliser l’accès privilégié.
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
@@ -46,11 +46,11 @@ Les utilisateurs qui envoient et répondent aux demandes de gestion des accès p
 >[!IMPORTANT]
 >Office 365 Advanced Compliance n’est plus vendu en tant qu’abonnement autonome. Lorsque les abonnements actuels arrivent à expiration, les clients doivent effectuer une transition vers l’un des abonnements ci-dessus, qui contiennent les mêmes fonctionnalités de conformité ou des fonctionnalités de conformité supplémentaires.
 
-Si vous ne disposez pas d’un plan Microsoft 365 entreprise E5 existant et que vous souhaitez essayer la gestion des accès privilégiés, vous pouvez [Ajouter microsoft 365](https://docs.microsoft.com/office365/admin/try-or-buy-microsoft-365) à votre abonnement Office 365 existant ou [vous inscrire pour obtenir une version d’évaluation](https://www.microsoft.com/microsoft-365/enterprise) de Microsoft 365 entreprise E5.
+Si vous ne disposez pas d’un plan Office 365 entreprise E5 existant et que vous souhaitez essayer la gestion des accès privilégiés, vous pouvez [Ajouter microsoft 365](https://docs.microsoft.com/office365/admin/try-or-buy-microsoft-365) à votre abonnement Office 365 existant ou [vous inscrire pour obtenir une version d’évaluation](https://www.microsoft.com/microsoft-365/enterprise) de Microsoft 365 entreprise E5.
 
 ## <a name="enable-and-configure-privileged-access-management"></a>Activer et configurer la gestion des accès privilégiés
 
-Procédez comme suit pour configurer et utiliser l’accès privilégié dans votre organisation Office 365 :
+Procédez comme suit pour configurer et utiliser l’accès privilégié dans votre organisation :
 
 - [Étape 1 : créer un groupe d’approbateurs](privileged-access-management-configuration.md#step1)
 
@@ -71,7 +71,7 @@ Procédez comme suit pour configurer et utiliser l’accès privilégié dans vo
 Une fois que l’approbation est accordée, l’utilisateur qui a effectué la demande peut exécuter la tâche prévue et l’accès privilégié autorise et exécute la tâche au nom de l’utilisateur. L’approbation reste valide pour la durée demandée (la durée par défaut est de 4 heures), pendant laquelle le demandeur peut exécuter la tâche prévue plusieurs fois. Toutes les exécutions de ce type sont enregistrées et mises à disposition pour l’audit de sécurité et de conformité. 
 
 >[!NOTE]
->Si vous souhaitez utiliser Exchange Management PowerShell pour activer et configurer l’accès privilégié, suivez les étapes de la [page connexion à Exchange Online PowerShell à l’aide de l’authentification multifacteur](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/mfa-connect-to-exchange-online-powershell?view=exchange-ps) pour vous connecter à Exchange Online PowerShell avec vos informations d’identification Office 365. Vous n’avez pas besoin d’activer l’authentification multifacteur pour votre organisation Office 365 pour utiliser les étapes d’activation de l’accès privilégié lors de la connexion à Exchange Online PowerShell. La connexion avec l’authentification multifacteur crée un jeton OAuth qui est utilisé par un accès privilégié pour signer vos demandes.
+>Si vous souhaitez utiliser Exchange Management PowerShell pour activer et configurer l’accès privilégié, suivez les étapes de la [page connexion à Exchange Online PowerShell à l’aide de l’authentification multifacteur](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/mfa-connect-to-exchange-online-powershell?view=exchange-ps) pour vous connecter à Exchange Online PowerShell avec vos informations d’identification Office 365. Vous n’avez pas besoin d’activer l’authentification multifacteur pour votre organisation afin d’utiliser les étapes d’activation de l’accès privilégié lors de la connexion à Exchange Online PowerShell. La connexion avec l’authentification multifacteur crée un jeton OAuth qui est utilisé par un accès privilégié pour signer vos demandes.
 
 <a name="step1"> </a>
 
@@ -126,7 +126,7 @@ Enable-ElevatedAccessControl -AdminGroup 'pamapprovers@fabrikam.onmicrosoft.com'
 
 ## <a name="step-3-create-an-access-policy"></a>Étape 3 : créer une stratégie d’accès
 
-Vous pouvez créer et configurer jusqu’à 30 stratégies d’accès privilégié pour votre organisation Office 365.
+Vous pouvez créer et configurer jusqu’à 30 stratégies d’accès privilégié pour votre organisation.
 
 ### <a name="in-the-microsoft-365-admin-center"></a>Dans le centre d’administration Microsoft 365
 

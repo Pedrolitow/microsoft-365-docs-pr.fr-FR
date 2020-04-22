@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Cet article décrit la nouvelle outil d’évaluation des données (aperçu) de Microsoft 365.
-ms.openlocfilehash: e147275c21696520c33d5a6679e3ea81023877de
-ms.sourcegitcommit: 7930fb8327bbd3594fde52f2dbf91e0f5d92f684
+ms.openlocfilehash: 89bd9e637a74ac1b972b00f794eca408828c076d
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "42328076"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43626770"
 ---
 # <a name="overview-of-data-investigations-preview-in-microsoft-365"></a>Vue d’ensemble des enquêtes de données (aperçu) dans Microsoft 365
 
@@ -41,13 +41,13 @@ Les sections suivantes décrivent chaque étape du flux de travail intégré dan
 
 ## <a name="search-for-sensitive-malicious-or-misplaced-data"></a>Rechercher des données sensibles, malveillantes ou égarées
 
-Utilisez l’onglet **recherches** pour créer des recherches afin de trouver le bureau 365 pour les données que vous souhaitez corriger. Vous pouvez créer et exécuter des recherches basées sur des requêtes pour identifier un ensemble de messages électroniques et de documents susceptibles de contenir des données déduites, puis les collecter comme preuves à examiner et à analyser. Vous pouvez également utiliser l’outil de recherche pour afficher un aperçu des exemples de documents et afficher des statistiques de recherche qui peuvent vous aider à affiner et à améliorer les résultats de la recherche. Une fois que vous avez vérifié que les résultats de la recherche contiennent toutes les données pertinentes pour l’enquête, vous ajoutez les résultats de la recherche à l’ensemble de preuves afin de poursuivre l’évaluation, d’influer sur l’évaluation et de prendre des mesures correctives si nécessaire. Pour plus d’informations, consultez la rubrique [Rechercher des données dans une enquête](search-for-data.md).
+Utilisez l’onglet **recherches** pour créer des recherches afin de trouver le Microsoft 365 pour les données que vous souhaitez corriger. Vous pouvez créer et exécuter des recherches basées sur des requêtes pour identifier un ensemble de messages électroniques et de documents susceptibles de contenir des données déduites, puis les collecter comme preuves à examiner et à analyser. Vous pouvez également utiliser l’outil de recherche pour afficher un aperçu des exemples de documents et afficher des statistiques de recherche qui peuvent vous aider à affiner et à améliorer les résultats de la recherche. Une fois que vous avez vérifié que les résultats de la recherche contiennent toutes les données pertinentes pour l’enquête, vous ajoutez les résultats de la recherche à l’ensemble de preuves afin de poursuivre l’évaluation, d’influer sur l’évaluation et de prendre des mesures correctives si nécessaire. Pour plus d’informations, consultez la rubrique [Rechercher des données dans une enquête](search-for-data.md).
 
 ## <a name="review-and-investigate-evidence"></a>Examiner et examiner les preuves
 
 Utilisez l’onglet **preuve** pour examiner les données que vous avez collectées à partir du service actif, qui dans ce cas est Office 365. Les données de l’ensemble de preuves sont un instantané des résultats de la recherche que vous avez collectés. Lorsque vous ajoutez des résultats de recherche en tant que preuve, un processus est déclenché pour extraire des fichiers, des métadonnées et du texte. Une fois le processus terminé, l’outil d’investigation de données génère un nouvel index de toutes les données et l’ajoute à un ensemble de preuves. Pour toutes les analyses sensibles au temps, cela vous permet de contenir rapidement l’environnement en supprimant les données situées dans les emplacements de contenu d’origine (dans le service réel) lors de l’enquête sur les preuves que vous avez collectées dans un environnement en quarantaine. Une fois les preuves collectées, vous pouvez exécuter davantage de requêtes pour affiner les données par plage de temps, types de fichiers, propriétaires de données et autres types de conditions. Par exemple, à l’aide de l’auteur, de l’expéditeur et des conditions de destinataire, vous pouvez identifier rapidement les personnes qui étaient impliquées dans le déversement des données et si l’une des données propagées a été partagée avec des personnes extérieures à votre organisation.
 
-Vous pouvez également exécuter l’analyse avancée sur les preuves que vous collectez. Cela peut vous fournir des thèmes généraux et organiser des preuves par des threads de messagerie, des doublons exacts et des doublons pour faciliter votre enquête. Vous pouvez passer en revue les documents dans l’affichage de texte extrait ou dans le format de fichier natif, et les baliser avec les résultats de l’enquête. Pour plus d’informations, voir :
+Vous pouvez également exécuter l’analyse avancée sur les preuves que vous collectez. Cela peut vous fournir des thèmes généraux et organiser des preuves par des threads de messagerie, des doublons exacts et des doublons pour faciliter votre enquête. Vous pouvez passer en revue les documents dans l’affichage de texte extrait ou dans le format de fichier natif, et les baliser avec les résultats de l’enquête. Si vous souhaitez en savoir plus, consultez les articles : 
 
   - [Consulter les données dans des preuves](review-data-in-evidence.md)
 

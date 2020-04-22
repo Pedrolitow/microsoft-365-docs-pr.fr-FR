@@ -14,18 +14,18 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 52752c31ae52fa75a3a50dbd6a4aa27605f6d921
-ms.sourcegitcommit: 8876c216954b94adce9cdf493c49bd5a10190a3a
+ms.openlocfilehash: 182e3489824c7842f5e9cf6a410d49d574b7462c
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42228510"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637998"
 ---
 # <a name="health-insurance-portability-and-accountability-hipaa--hitech-acts"></a>Loi HIPAA (Health Insurance Portability and Accountability Act) & Hi-Tech
 
 ## <a name="hipaa-and-the-hitech-act-overview"></a>Présentation des lois HIPAA et Hi-Tech
 
-Le HIPAA (Health Insurance Portability and Accountability Act) est une loi américaine sur la santé qui établit les conditions d’utilisation, de divulgation et de protection des informations d’intégrité identifiables individuellement. Elle s’applique aux entités couvertes : bureaux des médecins, hôpitaux, organismes d’assurance maladie et autres sociétés de santé, avec accès aux informations d’intégrité protégée des patients, ainsi qu’aux entreprises associées, telles que le service Cloud et les fournisseurs informatiques, qui traitent le processus PHI en leur nom. (La plupart des entités couvertes n’exécutent pas de fonctions telles que le traitement des revendications ou des données personnelles ; elles s’appuient sur les associés de l’entreprise.)
+Le HIPAA (Health Insurance Portability and Accountability Act) est une loi américaine sur la santé qui établit les conditions d’utilisation, de divulgation et de protection des informations d’intégrité identifiables individuellement. Il s’applique aux entités couvertes : les bureaux des médecins, les hôpitaux, les organismes d’assurance maladie et les autres sociétés de santé, avec accès aux informations de protection de l’état de santé des patients, ainsi qu’aux partenaires professionnels, tels que le service Cloud et les fournisseurs informatiques, qui traitent PHI en leur nom. (La plupart des entités couvertes n’exécutent pas de fonctions telles que le traitement des revendications ou des données personnelles ; elles s’appuient sur les associés de l’entreprise.)
 
 La loi réglemente l’utilisation et la diffusion de la PHI dans quatre zones générales :
 
@@ -43,7 +43,7 @@ La règle finale de notification de violation Hi-Tech, qui requiert l’avis des
 
 ## <a name="microsoft-and-hipaa-and-the-hitech-act"></a>Microsoft et HIPAA et la loi Hi-Tech
 
-Les réglementations HIPAA imposent que les entités couvertes et leurs partenaires commerciaux, dans ce cas, Microsoft, lorsqu’elle fournit des services, y compris des services Cloud, aux entités couvertes, entrent dans des contrats pour s’assurer que ces entreprises associées feront protéger la PHI. Ces contrats, ou HIPAA, clarifient et limitent la manière dont l’Association métier peut gérer la valeur de PHI, et définit l’adhésion de chaque partie aux dispositions de sécurité et de confidentialité définies dans les normes HIPAA et Hi-Tech Act. Une fois qu’un contrat est en place, les clients Microsoft (entités couvertes) peuvent utiliser ses services pour traiter et stocker la PHI.
+Les réglementations HIPAA imposent que les entités couvertes et leurs partenaires commerciaux, dans ce cas, Microsoft, lorsqu’elle fournit des services, y compris les services Cloud, aux entités couvertes, entrent des contrats pour s’assurer que ces partenaires professionnels protègeront correctement la fonction PHI. Ces contrats, ou HIPAA, clarifient et limitent la manière dont l’Association métier peut gérer la valeur de PHI, et définit l’adhésion de chaque partie aux dispositions de sécurité et de confidentialité définies dans les normes HIPAA et Hi-Tech Act. Une fois qu’un contrat est en place, les clients Microsoft (entités couvertes) peuvent utiliser ses services pour traiter et stocker la PHI.
 
 Il n’existe actuellement aucune certification officielle pour la conformité aux lois HIPAA ou Hi-Tech. Toutefois, les services Microsoft couverts par le contrat ont subi des audits effectués par des auditeurs indépendants accrédités pour la certification Microsoft ISO/IEC 27001.
 
@@ -57,7 +57,7 @@ Pour savoir comment le Cloud Microsoft aide les clients à prendre en charge les
 - Cloud App Security
 - Service Microsoft Health bot
 - Microsoft Stream
-- Services professionnels Microsoft : Premier et local pour Azure, Dynamics 365, Intune et pour les clients d’entreprises moyennes et grandes d’Office 365
+- Services professionnels Microsoft : premier et local pour Azure, Dynamics 365, Intune, et pour les clients de taille moyenne et entreprise de Microsoft 365 pour les entreprises
 - [Dynamics 365 et Dynamics 365 Service Public](https://aka.ms/d365-compliance-list)
 - Service Cloud Microsoft Flow, soit en service autonome, soit inclus dans un plan ou une suite Office 365 ou Dynamics 365
 - Intune

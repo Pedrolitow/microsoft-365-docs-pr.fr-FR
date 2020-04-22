@@ -26,12 +26,12 @@ search.appverid:
 - GEA150
 ms.assetid: 8652f539-3123-4a8f-b9bd-6aa2f0e0372d
 description: Découvrez comment modifier le mode de paiement pour votre abonnement professionnel.
-ms.openlocfilehash: 582286dec47b0835c90ff56a0d10d3c34d285e33
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 8b2528b694dcca181d0508e54894ca50364eac20
+ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632730"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43708154"
 ---
 # <a name="change-your-payment-method"></a>Changer votre mode de paiement
 
@@ -80,13 +80,13 @@ Si vous passez d’une *carte de crédit ou d’un compte bancaire à une factur
 ::: moniker-end
 
 ::: moniker range="o365-worldwide"
+
 ## <a name="change-from-invoice-to-credit-card-or-bank-account"></a>Passer du mode de paiement par facture au mode de paiement par carte bancaire ou compte bancaire
 
 > [!TIP]
 > Les étapes suivantes s'appliquent uniquement aux abonnements individuels. Si vous avez plusieurs abonnements au sein de votre organisation, procédez comme suit pour chaque abonnement à modifier.
   
 Lorsque vous passez d’un paiement par une facture à un paiement avec une carte bancaire ou un compte bancaire, nous créons automatiquement un nouvel abonnement pour vous, déplacez vos utilisateurs vers le nouvel abonnement, puis désactivez votre ancien abonnement. Ne vous inquiétez pas, vos utilisateurs ne verront pas une interruption de service et toutes leurs informations seront disponibles via le nouvel abonnement.
-
 
 1. Dans le centre d’administration, accédez à la page produits de **facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">& services</a> .
 
@@ -102,10 +102,10 @@ Lorsque vous passez d’un paiement par une facture à un paiement avec une cart
   
 7. Vérifiez que le mode de paiement sélectionné est correct, puis sélectionnez **Enregistrer**.
 
-
 ::: moniker-end
 
 ::: moniker range="o365-germany"
+
 ## <a name="change-from-invoice-to-credit-card-or-bank-account"></a>Passer du mode de paiement par facture au mode de paiement par carte bancaire ou compte bancaire
 
 > [!TIP]
@@ -136,21 +136,21 @@ Lorsque vous revenez à la page **Abonnements**, l'ancien abonnement est marqué
 ::: moniker-end
 
 ::: moniker range="o365-worldwide"
+
 ## <a name="change-from-credit-card-or-bank-account-to-invoice"></a>Passer du mode de paiement par carte bancaire ou compte bancaire au mode de paiement par facture
 
 Vous pouvez modifier le paiement par facture uniquement si votre commande est au-dessus d’une certaine quantité. Si vous ne répondez pas à la condition requise, le message « la quantité de votre commande n’est pas suffisante pour être facturé avec le câble de vérification » s’affiche.
 
 Si la quantité de votre commande est trop élevée, une vérification de solvabilité peut être nécessaire. Si c’est le cas, le message «pas autorisé à passer à la facture s’affiche. Votre commande nécessite une vérification de solvabilité. " Dans ce cas, vous devez modifier le salaire manuellement. Procédez comme suit pour terminer la modification manuelle.
 
-
 1. Accédez à <a href="https://Office365.com" target="_blank">office365.com</a> et achetez le même abonnement que celui dont vous disposez actuellement. Lors de l’extraction, choisissez l’option de paiement par facture.
 
-> [!IMPORTANT]
-> Vous ne pouvez pas utiliser la page **produits & services** dans le centre d’administration pour acheter l’abonnement. Vous devez utiliser <a href="https://Office365.com" target="_blank">office365.com</a>.
+    > [!IMPORTANT]
+    > Vous ne pouvez pas utiliser la page **produits & services** dans le centre d’administration pour acheter l’abonnement. Vous devez utiliser <a href="https://Office365.com" target="_blank">office365.com</a>.
 
 2. Une fois l’achat terminé, annulez l’abonnement d’origine. Vos utilisateurs sont automatiquement déplacés vers le nouvel abonnement.
 
-Si aucune vérification de solvabilité n’est requise, procédez comme suit pour modifier le paiement par facture. 
+Si aucune vérification de solvabilité n’est requise, procédez comme suit pour modifier le paiement par facture.
 
 1. Dans le centre d’administration, accédez à la page produits de **facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">& services</a> .
 
@@ -168,14 +168,14 @@ Si aucune vérification de solvabilité n’est requise, procédez comme suit po
 
 8. Vérifiez que le mode de paiement sélectionné est correct, puis sélectionnez **Enregistrer**.
 
-
 ::: moniker-end
 
 ::: moniker range="o365-germany"
+
 ## <a name="change-from-credit-card-or-bank-account-to-invoice"></a>Passer du mode de paiement par carte bancaire ou compte bancaire au mode de paiement par facture
 
 > [!NOTE]
-> L’option de paiement par facture n’est disponible que si votre abonnement coûte sur un certain montant (ce qui varie en fonction de l’emplacement du service). Une vérification de solvabilité sera peut-être requise pour les paiements par facture d'un montant élevé. Pour en savoir plus, voir [Régler votre abonnement Office 365 pour les entreprises](pay-for-your-subscription.md).
+> L’option de paiement par facture n’est disponible que si votre abonnement coûte sur un certain montant (ce qui varie en fonction de l’emplacement du service). Une vérification de solvabilité sera peut-être requise pour les paiements par facture d'un montant élevé. Pour en savoir plus, consultez [la rubrique paiement de votre abonnement](pay-for-your-subscription.md).
 
 1. Dans le centre d’administration, accédez à la page <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">abonnements</a> de **facturation** \> .
 
@@ -193,10 +193,10 @@ Si aucune vérification de solvabilité n’est requise, procédez comme suit po
 ::: moniker-end
 
 ::: moniker range="o365-worldwide"
+
 ## <a name="verify-which-payment-method-is-configured"></a>Vérifier le mode de paiement associé
 
 Procédez comme suit pour vérifier le mode de paiement associé à un abonnement.
-
 
 1. Dans le centre d’administration, accédez à la page produits de **facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">& services</a> .
 
@@ -211,6 +211,7 @@ Procédez comme suit pour vérifier le mode de paiement associé à un abonnemen
 ::: moniker-end
 
 ::: moniker range="o365-germany"
+
 ## <a name="verify-which-payment-method-is-configured"></a>Vérifier le mode de paiement associé
 
 Procédez comme suit pour vérifier le mode de paiement associé à un abonnement.

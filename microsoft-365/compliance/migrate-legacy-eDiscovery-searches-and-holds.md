@@ -12,16 +12,16 @@ localization_priority: Normal
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: ''
-ms.openlocfilehash: f53d9cbf719b0e16749c9ea1dcae2533f8c48e50
-ms.sourcegitcommit: 7d07e7ec84390a8f05034d3639fa5db912809585
+ms.openlocfilehash: bb2bccc6689a3739bcb1f3736771cf81b7c467bd
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42091381"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637936"
 ---
 # <a name="migrate-legacy-ediscovery-searches-and-holds-to-the-microsoft-365-compliance-center"></a>Migration des recherches et des suspensions de découverte électronique héritées vers le centre de conformité Microsoft 365
 
-Le centre de conformité Microsoft 365 offre une expérience améliorée pour l’utilisation de la fonctionnalité eDiscovery, notamment : une fiabilité plus élevée, de meilleures performances et de nombreuses fonctionnalités adaptées aux flux de travail eDiscovery, notamment des cas d’organisation de votre contenu, examiner les ensembles à Passez en revue le contenu et l’analyse pour vous aider à rechercher des données à des fins de révision, telles que le regroupement presque en double, le Threading de messagerie électronique, l’analyse des thèmes et le codage prédictif.
+Le centre de conformité Microsoft 365 offre une expérience améliorée pour l’utilisation de la fonctionnalité eDiscovery, notamment : une fiabilité plus élevée, de meilleures performances et de nombreuses fonctionnalités adaptées aux flux de travail eDiscovery, y compris des cas d’organisation de votre contenu, examiner les ensembles pour examiner le contenu et l’analyse afin de faciliter la recherche de données à des fins de révision, telles que le regroupement quasi-réel,
 
 Pour aider les clients à tirer parti des fonctionnalités nouvelles et améliorées, cet article fournit des conseils de base sur la migration des recherches de découverte électronique inaltérable dans le centre d’administration Exchange vers le centre de conformité Microsoft 365.
 
@@ -30,13 +30,13 @@ Pour aider les clients à tirer parti des fonctionnalités nouvelles et amélior
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
-- Pour exécuter les commandes PowerShell décrites dans cet article, vous devez être membre du groupe de rôles gestionnaire eDiscovery dans le centre de conformité Office 365 Security &. Vous devez également être membre du groupe de rôles gestion de la découverte dans le centre d’administration Exchange.
+- Vous devez être membre du groupe de rôles gestionnaire eDiscovery dans le centre de sécurité & Compliance pour exécuter les commandes PowerShell décrites dans cet article. Vous devez également être membre du groupe de rôles gestion de la découverte dans le centre d’administration Exchange.
 
 - Cet article fournit des instructions sur la création d’une conservation eDiscovery. La stratégie de blocage sera appliquée aux boîtes aux lettres par le biais d’un processus asynchrone. Lors de la création d’une conservation de découverte électronique, vous devez créer un CaseHoldPolicy et CaseHoldRule, sinon la conservation ne sera pas créée et les emplacements de contenu ne seront pas mis en attente.
 
-## <a name="step-1-connect-to-exchange-online-powershell-and-office-365-security--compliance-center-powershell"></a>Étape 1 : Connectez-vous à Exchange Online PowerShell et à Office 365 Security & Compliance Center PowerShell
+## <a name="step-1-connect-to-exchange-online-powershell-and-security--compliance-center-powershell"></a>Étape 1 : Connectez-vous à Exchange Online PowerShell and Security & Compliance Center PowerShell
 
-La première étape consiste à vous connecter au centre de sécurité Exchange Online PowerShell et Office 365 Security & PowerShell. Vous pouvez copier le script suivant, le coller dans une fenêtre PowerShell, puis l’exécuter. Vous serez invité à fournir les informations d’identification de l’organisation à laquelle vous souhaitez vous connecter. 
+La première étape consiste à vous connecter à Exchange Online PowerShell et à la sécurité & Centre de conformité PowerShell. Vous pouvez copier le script suivant, le coller dans une fenêtre PowerShell, puis l’exécuter. Vous serez invité à fournir les informations d’identification de l’organisation à laquelle vous souhaitez vous connecter. 
 
 ```powershell
 $UserCredential = Get-Credential
@@ -77,7 +77,7 @@ La sortie de ces deux commandes est similaire à ce qui suit :
 ![Exemple de sortie PowerShell de l’utilisation de Get-MailboxSearch pour une recherche individuelle](../media/MigrateLegacyeDiscovery2.png)
 
 > [!NOTE]
-> La durée de la conservation inaltérable dans cet exemple est indéfinie (*ItemHoldPeriod : Unlimited*). C’est généralement le cas pour la découverte électronique et les scénarios d’enquête légale. Si la durée de la conservation est différente de la valeur indéfinie, la raison est probablement le fait que la conservation est utilisée pour conserver le contenu dans un scénario de rétention. Au lieu d’utiliser les applets de commande eDiscovery dans Office 365 Security & Centre de conformité PowerShell pour les scénarios de rétention, nous vous recommandons d’utiliser [New-retentioncompliancepolicy permet](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/new-retentioncompliancepolicy) et [New-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/new-retentioncompliancerule) pour conserver le contenu. Le résultat de l’utilisation de ces cmdlets est similaire à celui de **New-CaseHoldPolicy** et **New-CaseHoldRule**, mais vous pouvez spécifier une période de rétention et une action de rétention, telles que la suppression de contenu après l’expiration de la période de rétention. En outre, l’utilisation des cmdlets de rétention n’exige pas que vous associiez les conservations de rétention à un cas eDiscovery.
+> La durée de la conservation inaltérable dans cet exemple est indéfinie (*ItemHoldPeriod : Unlimited*). C’est généralement le cas pour la découverte électronique et les scénarios d’enquête légale. Si la durée de la conservation est différente de la valeur indéfinie, la raison est probablement le fait que la conservation est utilisée pour conserver le contenu dans un scénario de rétention. Au lieu d’utiliser les applets de commande eDiscovery dans le centre de sécurité & PowerShell pour les scénarios de rétention, nous vous recommandons d’utiliser [New-retentioncompliancepolicy permet](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/new-retentioncompliancepolicy) et [New-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/new-retentioncompliancerule) pour conserver le contenu. Le résultat de l’utilisation de ces cmdlets est similaire à celui de **New-CaseHoldPolicy** et **New-CaseHoldRule**, mais vous pouvez spécifier une période de rétention et une action de rétention, telles que la suppression de contenu après l’expiration de la période de rétention. En outre, l’utilisation des cmdlets de rétention n’exige pas que vous associiez les conservations de rétention à un cas eDiscovery.
 
 ## <a name="step-4-create-a-case-in-the-microsoft-365-compliance-center"></a>Étape 4 : créer un cas dans le centre de conformité Microsoft 365
 

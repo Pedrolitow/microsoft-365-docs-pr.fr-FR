@@ -1,5 +1,5 @@
 ---
-title: Balisage et évaluation dans Office 365 Advanced eDiscovery
+title: Balisage et évaluation dans Advanced eDiscovery
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -15,13 +15,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: b5c82de7-ed2f-4cc6-becd-db403faf4d18
-description: 'Examinez les étapes pour effectuer une formation à l’évaluation, notamment des fichiers de marquage, et en examinant les résultats de l’évaluation dans Office 365 Advanced eDiscovery. '
-ms.openlocfilehash: 04f88a5efbd48c222c8c7033d94ae41634a06d99
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+description: 'Examinez les étapes pour effectuer une formation à l’évaluation, notamment des fichiers de marquage, et en examinant les résultats de l’évaluation dans Advanced eDiscovery. '
+ms.openlocfilehash: ef09268da8f76a4775fa6209a11d9c670abe0f94
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42557724"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43630691"
 ---
 # <a name="tagging-and-assessment-in-advanced-ediscovery-classic"></a>Balisage et évaluation dans Advanced eDiscovery (classique)
 
@@ -125,7 +125,7 @@ En l’absence de stabilisation statistiquement basée statistiquement, les rés
   
 ## <a name="see-also"></a>Voir aussi
 
-[Découverte électronique avancée (classique)](office-365-advanced-ediscovery.md)
+[Advanced eDiscovery (classique)](office-365-advanced-ediscovery.md)
   
 [Présentation de l’évaluation en matière de pertinence](assessment-in-relevance-in-advanced-ediscovery.md)
   

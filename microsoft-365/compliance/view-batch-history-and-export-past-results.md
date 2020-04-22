@@ -1,5 +1,5 @@
 ---
-title: Afficher l’historique des lots et exporter les résultats passés dans Office 365 Advanced eDiscovery
+title: Affichage de l’historique des lots et exportation des résultats passés dans Advanced eDiscovery
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -15,13 +15,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 35d52b41-75ab-4144-9edf-31e11453bd5d
-description: 'Découvrez comment afficher des informations détaillées pour les sessions de lots d’exportation sélectionnées et comment annuler la dernière session d’exportation dans Office 365 Advanced eDiscovery.  '
-ms.openlocfilehash: de7366e1eb43c276899ecf35339c0443fad4879d
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+description: 'Découvrez comment afficher des informations détaillées pour les sessions de lots d’exportation sélectionnées et comment annuler la dernière session d’exportation dans Advanced eDiscovery.  '
+ms.openlocfilehash: 356b0b61288b466da38bc640f9aad636ee654da2
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42557612"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43626350"
 ---
 # <a name="view-batch-history-and-export-past-results-in-advanced-ediscovery-classic"></a>Affichage de l’historique des lots et exportation des résultats passés dans Advanced eDiscovery (classique)
 
@@ -46,9 +46,9 @@ La boîte de dialogue Exporter l’historique fournit des informations détaill�
   
 3. S’il est nécessaire de restaurer une session précédente, cliquez sur **Annuler dernière session**. La restauration peut être effectuée plusieurs fois, ce qui annule la dernière session.
     
-4. Si vous souhaitez télécharger des données à tout moment à partir d’une session d’exportation exécutée précédemment **** , cliquez ![sur l’icône de téléchargement](../media/de69b920-a6ac-4ddb-b93e-e1cc5888e6c4.gif) exporter l’icône téléchargement de l’historique par lots en regard du lot d’export à exporter. 
+4. Si vous souhaitez télécharger des données à tout moment à partir d’une session d’exportation exécutée précédemment **Download** , cliquez ![sur l’icône de téléchargement](../media/de69b920-a6ac-4ddb-b93e-e1cc5888e6c4.gif) exporter l’icône téléchargement de l’historique par lots en regard du lot d’export à exporter. 
     
-5. Lorsque la boîte de dialogue **signature d’accès partagé** s’affiche, cliquez sur **copier dans le presse-papiers** pour copier les données de session d’exportation vers l’ordinateur local, puis cliquez sur **Fermer**. La boîte de dialogue &amp; de l' **outil d’exportation de découverte électronique** du centre de sécurité Office 365 s’affiche. 
+5. Lorsque la boîte de dialogue **signature d’accès partagé** s’affiche, cliquez sur **copier dans le presse-papiers** pour copier les données de session d’exportation vers l’ordinateur local, puis cliquez sur **Fermer**. La boîte &amp; de dialogue de l' **outil d’exportation eDiscovery** du centre de sécurité et de sécurité s’affiche. 
     
     ![Boîte de dialogue Exporter la découverte électronique](../media/01f79d2d-6da0-45e6-9c6f-ab12347572cb.gif)
   
@@ -62,7 +62,7 @@ La boîte de dialogue Exporter l’historique fournit des informations détaill�
     
 ## <a name="see-also"></a>Voir aussi
 
-[Découverte électronique avancée (classique)](office-365-advanced-ediscovery.md)
+[Advanced eDiscovery (classique)](office-365-advanced-ediscovery.md)
   
 [Exportation des résultats](export-results-in-advanced-ediscovery.md)
 

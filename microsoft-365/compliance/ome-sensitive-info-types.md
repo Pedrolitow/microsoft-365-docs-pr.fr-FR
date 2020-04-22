@@ -1,5 +1,5 @@
 ---
-title: Créer une stratégie de type d’informations sensibles pour votre entreprise à l’aide du chiffrement de messages Office 365
+title: Créer une stratégie de type d’informations sensibles pour votre organisation à l’aide du chiffrement de messages
 f1.keywords:
 - NOCSH
 ms.author: krowley
@@ -17,16 +17,16 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
 description: 'Résumé : stratégie de chiffrement des messages Office 365 pour les types d’informations sensibles.'
-ms.openlocfilehash: a3767fb0f9fe5e565c49db4f9da94d75a3cee8a7
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: a36ab68eb649c84a46fa96de8ee400632c5c1d26
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601791"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43626872"
 ---
-# <a name="create-a-sensitive-information-type-policy-for-your-organization-using-office-365-message-encryption"></a>Créer une stratégie de type d’informations sensibles pour votre entreprise à l’aide du chiffrement de messages Office 365
+# <a name="create-a-sensitive-information-type-policy-for-your-organization-using-message-encryption"></a>Créer une stratégie de type d’informations sensibles pour votre organisation à l’aide du chiffrement de messages
 
-Vous pouvez utiliser les règles de flux de messagerie Exchange ou la protection contre la perte de données (DLP) d’Office 365 pour créer une stratégie de type d’informations sensibles avec le chiffrement de messages Office 365. Pour créer une règle de flux de messagerie Exchange, vous pouvez utiliser le centre d’administration Exchange ou PowerShell.
+Vous pouvez utiliser les règles de flux de messagerie Exchange ou la protection contre la perte de données (DLP) pour créer une stratégie de type d’informations sensibles avec le chiffrement de messages Office 365. Pour créer une règle de flux de messagerie Exchange, vous pouvez utiliser le centre d’administration Exchange ou PowerShell.
 
 ## <a name="to-create-the-policy-by-using-mail-flow-rules-in-the-eac"></a>Pour créer la stratégie à l’aide de règles de flux de messagerie dans le centre d’administration Exchange
 
@@ -34,7 +34,7 @@ Connectez-vous au centre d’administration Exchange et accédez à **mail Flow*
 
 ### <a name="to-create-the-policy-by-using-mail-flow-rules-in-powershell"></a>Pour créer la stratégie à l’aide de règles de flux de messagerie dans PowerShell
 
-Utiliser un compte professionnel ou scolaire disposant d’autorisations d’administrateur globales dans votre organisation Office 365, démarrez une session Windows PowerShell et connectez-vous à Exchange Online. Pour obtenir des instructions, voir [Connexion à Exchange Online PowerShell](https://aka.ms/exopowershell). Utilisez les cmdlets Set-IRMConfiguration et New-TransportRule pour créer la stratégie.
+Utiliser un compte professionnel ou scolaire disposant d’autorisations d’administrateur globales dans votre organisation, démarrez une session Windows PowerShell et connectez-vous à Exchange Online. Pour obtenir des instructions, voir [Connexion à Exchange Online PowerShell](https://aka.ms/exopowershell). Utilisez les cmdlets Set-IRMConfiguration et New-TransportRule pour créer la stratégie.
 
 ## <a name="example-mail-flow-rule-created-with-powershell"></a>Exemple de règle de flux de messagerie créée avec PowerShell
 
@@ -57,21 +57,21 @@ Pour plus d’informations, voir [Set-IRMConfiguration](https://docs.microsoft.c
 
 ## <a name="how-recipients-access-attachments"></a>Comment les destinataires accèdent aux pièces jointes
 
-Après qu’Office 365 a chiffré un message, les destinataires ont un accès illimité aux pièces jointes lorsqu’ils accèdent à leur message chiffré et l’ouvrent.
+Une fois que Microsoft a chiffré un message, les destinataires ont un accès illimité aux pièces jointes lorsqu’ils accèdent à leur message chiffré et l’ouvrent.
 
 ## <a name="to-prepare-for-this-change"></a>Pour préparer cette modification
 
 Vous souhaiterez peut-être mettre à jour les documents de formation et la documentation utilisateur final applicables pour préparer les personnes de votre organisation à ce changement. Partagez ces ressources de chiffrement de messages Office 365 avec vos utilisateurs selon vos besoins :
 
 - [Envoyer, afficher et répondre à des messages chiffrés dans Outlook pour PC](https://support.office.com/article/eaa43495-9bbb-4fca-922a-df90dee51980)
-- [Vidéo Office 365 Essentials : chiffrement de messages Office](https://youtu.be/CQR0cG_iEUc)
+- [Vidéo Microsoft 365 Essentials : chiffrement de messages Office](https://youtu.be/CQR0cG_iEUc)
 
 ## <a name="view-these-changes-in-the-audit-log"></a>Afficher ces modifications dans le journal d’audit
 
-Office 365 audite cette activité et la rend accessible aux administrateurs d’Office 365. L’opération est « New-TransportRule » et un extrait d’un exemple d’entrée d’audit de la recherche de journal d’audit dans Security & Compliance Center est inférieur à :
+Microsoft 365 audite cette activité et la rend accessible aux administrateurs. L’opération est « New-TransportRule » et un extrait d’un exemple d’entrée d’audit de la recherche de journal d’audit dans Security & Compliance Center est inférieur à :
 
 ```text
-*{"CreationTime":"2018-11-28T23:35:01","Id":"a1b2c3d4-daa0-4c4f-a019-03a1234a1b0c","Operation":"New-TransportRule","OrganizationId":"123456-221d-12345 ","RecordType":1,"ResultStatus":"True","UserKey":"Microsoft Operator","UserType":3,"Version":1,"Workload":"Exchange","ClientIP":"123.456.147.68:17584","ObjectId":"","UserId":"Microsoft Operator","ExternalAccess":true,"OrganizationName":"contoso.onmicrosoft.com","OriginatingServer":"CY4PR13MBXXXX (15.20.1382.008)","Parameters": {"Name":"Organization","Value":"123456-221d-12346"{"Name":"ApplyRightsProtectionTemplate","Value":"Encrypt"},{"Name":"Name","Value":"Encrypt outbound sensitive emails (out of box rule)"},{"Name":"MessageContainsDataClassifications”…etc.*
+*{"CreationTime":"2018-11-28T23:35:01","Id":"a1b2c3d4-daa0-4c4f-a019-03a1234a1b0c","Operation":"New-TransportRule","OrganizationId":"123456-221d-12345 ","RecordType":1,"ResultStatus":"True","UserKey":"Microsoft Operator","UserType":3,"Version":1,"Workload":"Exchange","ClientIP":"123.456.147.68:17584","ObjectId":"","UserId":"Microsoft Operator","ExternalAccess":true,"OrganizationName":"contoso.onmicrosoft.com","OriginatingServer":"CY4PR13MBXXXX (15.20.1382.008)","Parameters": {"Name":"Organization","Value":"123456-221d-12346"{"Name":"ApplyRightsProtectionTemplate","Value":"Encrypt"},{"Name":"Name","Value":"Encrypt outbound sensitive emails (out of box rule)"},{"Name":"MessageContainsDataClassifications"…etc.*
 ```
 
 ## <a name="to-disable-or-customize-the-sensitive-information-types-policy"></a>Pour désactiver ou personnaliser la stratégie de types d’informations sensibles

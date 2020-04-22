@@ -1,5 +1,5 @@
 ---
-title: Exécuter le module de processus et charger des données dans Office 365 Advanced eDiscovery
+title: Exécuter le module de processus et charger des données dans Advanced eDiscovery
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -15,13 +15,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: c87bb0e5-301c-4d1d-958e-aabeb7990f44
-description: 'Découvrez comment utiliser le centre de sécurité &amp; conformité Office 365 pour accéder à Office 365 Advanced eDiscovery et exécuter le module process pour un cas.  '
-ms.openlocfilehash: 60da3fd66ce33443e991ece2dc756c7d1ab0d14a
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+description: 'Découvrez comment utiliser le centre de &amp; sécurité conformité pour accéder à Advanced eDiscovery et exécuter le module de processus pour un cas.  '
+ms.openlocfilehash: efab765a7ed17b1118efe7296fbabe08d51dd1ba
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42557824"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43626470"
 ---
 # <a name="run-the-process-module-and-load-data-in-advanced-ediscovery-classic"></a>Exécuter le module de processus et charger des données dans Advanced eDiscovery (classique)
 
@@ -41,13 +41,13 @@ Advanced eDiscovery fournit des valeurs de métadonnées système, telles que de
   
 Procédez comme suit pour exécuter le processus.
   
-1. [Ouvrez le centre de sécurité &amp; conformité Office 365](go-to-the-securitycompliance-center.md) . 
+1. [Ouvrez le centre &amp; de sécurité et de conformité](go-to-the-securitycompliance-center.md) . 
     
 2. Accédez à la **découverte électronique** de l' ** &amp; enquête** \> , puis cliquez sur **accéder à Advanced eDiscovery**.
     
 3. Dans Advanced eDiscovery, sélectionnez la casse appropriée dans la page **incidents** affichés et cliquez sur **atteindre la casse**.
     
-4. Dans **préparer** \> **** \> **le**processus de préparation, sélectionnez un conteneur dans la liste des conteneurs disponibles.
+4. Dans **préparer** \> **Process** \> **le**processus de préparation, sélectionnez un conteneur dans la liste des conteneurs disponibles.
     
     ![Cliquez sur traiter pour ajouter les résultats de la recherche à la demande de devis](../media/50bdc55c-d378-4881-b302-31ef785fa359.png)
   
@@ -83,7 +83,7 @@ Si vous ajoutez au cas, vous pouvez de nouveau traiter.
   
 ## <a name="see-also"></a>Voir aussi
 
-[Découverte électronique avancée (classique)](office-365-advanced-ediscovery.md)
+[Advanced eDiscovery (classique)](office-365-advanced-ediscovery.md)
   
 [Affichage des résultats de module de processus](view-process-module-results-in-advanced-ediscovery.md)
 

@@ -1,5 +1,5 @@
 ---
-title: Utiliser l’outil d’exportation eDiscovery d’Office 365 dans Microsoft Edge
+title: Utiliser l’outil d’exportation de découverte électronique dans Microsoft Edge
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -12,16 +12,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Vous devez activer la prise en charge de ClickOnce pour utiliser la dernière version de Microsoft Edge pour télécharger les résultats de recherche à partir de la recherche de contenu et eDiscovery dans le centre de sécurité et de conformité.
-ms.openlocfilehash: 80924b124521b24ffabf1e0273802265cd715500
-ms.sourcegitcommit: 01ead889086ecc7dcf5d10244bcf67c5a33c8114
+ms.openlocfilehash: c48e3fb04747306693364a2cdbc6f18047a0fd9e
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "42710343"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632379"
 ---
-# <a name="use-the-office-365-ediscovery-export-tool-in-microsoft-edge"></a>Utiliser l’outil d’exportation eDiscovery d’Office 365 dans Microsoft Edge
+# <a name="use-the-ediscovery-export-tool-in-microsoft-edge"></a>Utiliser l’outil d’exportation de découverte électronique dans Microsoft Edge
 
-En raison de modifications récentes apportées à la version la plus récente de Microsoft Edge, la prise en charge de ClickOnce n’est plus activée par défaut. Pour continuer à utiliser l’outil d’exportation de découverte électronique Microsoft Office 365 pour télécharger des résultats de recherche de contenu ou de découverte électronique, vous devez utiliser [Microsoft Internet Explorer](https://support.microsoft.com/help/17621/internet-explorer-downloads) ou activer la prise en charge ClickOnce dans la dernière version de Microsoft Edge.
+En raison de modifications récentes apportées à la version la plus récente de Microsoft Edge, la prise en charge de ClickOnce n’est plus activée par défaut. Pour continuer à utiliser l’outil d’exportation de découverte électronique pour télécharger des résultats de recherche de contenu ou de recherche de découverte électronique, vous devez utiliser [Microsoft Internet Explorer](https://support.microsoft.com/help/17621/internet-explorer-downloads) ou activer la prise en charge ClickOnce dans la dernière version de Microsoft Edge.
 
 ## <a name="enable-clickonce-support-in-microsoft-edge"></a>Activer la prise en charge ClickOnce dans Microsoft Edge
 
@@ -49,7 +49,7 @@ En raison de modifications récentes apportées à la version la plus récente d
 
    ![Cliquez sur Ouvrir pour lancer l’outil d’exportation de découverte électronique.](../media/ClickOnceimage4.png)
 
-   Si l’outil d’exportation de découverte électronique Microsoft Office 365 n’est pas installé, vous serez invité à indiquer un avertissement de sécurité. 
+   Si l’outil d’exportation de découverte électronique n’est pas installé, un message d’avertissement de sécurité s’affiche. 
 
    ![Cliquez sur installer pour installer l’outil d’exportation de découverte électronique.](../media/ClickOnceimage5.png)
 

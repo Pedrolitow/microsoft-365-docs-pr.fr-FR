@@ -20,18 +20,18 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 65a6d687-a16a-4415-9fd5-011ba9c5fd80
 description: 'Résumé : Configurez l’authentification fédérée pour votre environnement de test Microsoft 365.'
-ms.openlocfilehash: 4796f8f2a7dc6757ccbcb3d608d72ad789d34e40
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: b0aa967570c3d12554cdb273a8b39b8931af1fbd
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42067620"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634097"
 ---
 # <a name="federated-identity-for-your-microsoft-365-test-environment"></a>Identité fédérée pour votre environnement de test Microsoft 365
 
 *Ce Guide de Laboratoire Test peut être utilisé pour les environnements de test Microsoft 365 Entreprise et Office 365 Entreprise*.
 
-Office 365 prend en charge l’identité fédérée. Cela signifie qu’au lieu d’effectuer la validation des informations d’identification, Office 365 renvoie l’utilisateur qui se connecte à un serveur d’authentification fédérée approuvé par Office 365. Si les informations d’identification de l’utilisateur sont correctes, le serveur d’authentification fédérée émet un jeton de sécurité que le client envoie ensuite à Office 365 comme preuve d’authentification. L’identité fédérée autorise le déchargement et la montée en charge de l’authentification pour un abonnement Office 365, ainsi que l’authentification avancée et les scénarios de sécurité.
+Microsoft 365 prend en charge l’identité fédérée. Cela signifie qu’au lieu d’effectuer la validation des informations d’identification, Microsoft 365 renvoie l’utilisateur qui se connecte à un serveur d’authentification fédérée approuvé par Microsoft 365. Si les informations d’identification de l’utilisateur sont correctes, le serveur d’authentification fédérée émet un jeton de sécurité que le client envoie ensuite à Microsoft 365 comme preuve d’authentification. L’identité fédérée autorise le déchargement et la montée en charge de l’authentification pour un abonnement Microsoft 365, ainsi que l’authentification avancée et les scénarios de sécurité.
   
 Cet article explique comment configurer l’authentification fédérée pour l’environnement de test Microsoft 365 ou Office 365, pour le résultat suivant :
 
@@ -53,7 +53,7 @@ Les cinq phases de configuration de cet environnement de test sont les suivantes
     
 4. Créez un certificat auto-signé et configurez ADFS1 et PROXY1.
     
-5. Configurez Office 365 pour l’identité fédérée.
+5. Configurez Microsoft 365 pour l’identité fédérée.
     
 > [!NOTE]
 > Vous ne pouvez pas configurer cet environnement de test avec un abonnement à la version d’évaluation d’Azure. 
@@ -67,11 +67,11 @@ Suivez les instructions fournies dans l’article [Synchronisation de hachage de
 Cette configuration se compose des éléments suivants :  
   
 - Un abonnement d’évaluation ou payant Microsoft 365 E5 ou Office 365 E5.
-- Un intranet d’organisation simplifié connecté à Internet, qui se compose des machines virtuelles DC1, APP1 et CLIENT1 sur un sous-réseau d’un réseau virtuel Azure. Azure AD Connect s’exécute sur APP1 pour synchroniser le domaine TESTLAB AD DS avec le client Azure AD de vos abonnements Microsoft 365 ou Office 365 de manière périodique.
+- Un intranet d’organisation simplifié connecté à Internet, qui se compose des machines virtuelles DC1, APP1 et CLIENT1 sur un sous-réseau d’un réseau virtuel Azure. Azure AD Connect s’exécute sur APP1 pour synchroniser le domaine TESTLAB AD DS avec le client Azure AD de vos abonnements Microsoft 365 de manière périodique.
 
 ## <a name="phase-2-create-the-ad-fs-server"></a>Phase 2 : Création du serveur AD FS
 
-Un serveur AD FS fournit une authentification fédérée entre Office 365 et les comptes dans le domaine corp.contoso.com hébergé sur DC1.
+Un serveur AD FS fournit une authentification fédérée entre Microsoft 365 et les comptes dans le domaine corp.contoso.com hébergé sur DC1.
   
 Pour créer une machine virtuelle Azure pour ADFS1, indiquez le nom de votre abonnement et de votre groupe de ressources, ainsi que l’emplacement Azure de votre configuration de base, puis exécutez ces commandes à l’invite de commandes Azure PowerShell sur votre ordinateur local.
   
@@ -349,11 +349,11 @@ Suivez ces étapes pour configurer le service de proxy d’application web de ma
 8. Sur la page **Résultats**, cliquez sur **Fermer**.
 
     
-## <a name="phase-5-configure-office-365-for-federated-identity"></a>Phase 5 : Configuration d’Office 365 pour l’identité fédérée
+## <a name="phase-5-configure-microsoft-365-for-federated-identity"></a>Phase 5: configuration de Microsoft 365 pour l’identité fédérée
 
 Utilisez le [portail Azure](https://portal.azure.com) pour vous connecter à la machine virtuelle APP1 avec les informations d’identification du compte CORP\\User1.
   
-Suivez ces étapes pour configurer Azure AD Connect et votre abonnement Office 365 pour l’authentification fédérée :
+Suivez ces étapes pour configurer Azure AD Connect et votre abonnement Microsoft 365 pour l’authentification fédérée :
   
 1. Sur le bureau, double-cliquez sur **Azure AD Connect**.
     
@@ -361,7 +361,7 @@ Suivez ces étapes pour configurer Azure AD Connect et votre abonnement Office�
     
 3. Sur la page **Tâches supplémentaires**, cliquez sur **Modifier la connexion utilisateur**, puis sur **Suivant**.
     
-4. Sur la page **Connexion à Azure AD**, saisissez vos nom de compte et mot de passe d’administrateur général Office 365, puis cliquez sur **Suivant**.
+4. Sur la page **Connexion à Azure AD**, tapez le nom de votre compte d’administrateur général et le mot de passe, puis cliquez sur **Suivant**.
     
 5. Sur la page **Connexion utilisateur**, cliquez sur **Fédération avec AD FS**, puis sur **Suivant**.
     
@@ -373,7 +373,7 @@ Suivez ces étapes pour configurer Azure AD Connect et votre abonnement Office�
     
 9. Sur la page **Compte de service AD FS**, saisissez **CORP\\ADFS-Service** dans **Nom d’utilisateur du domaine** et le mot de passe du compte dans **Mot de passe utilisateur du domaine**, puis cliquez sur **Suivant**.
     
-10. Sur la page **Domaine Azure AD**, dans **Domaine**, sélectionnez le nom du domaine que vous avez précédemment créé et ajouté à votre abonnement Office 365 lors de la phase 1, puis cliquez sur **Suivant**.
+10. Sur la page **Domaine Azure AD**, dans **Domaine**, sélectionnez le nom du domaine que vous avez précédemment créé et ajouté à votre abonnement à la phase 1 lors de la phase 1, puis cliquez sur **Suivant**.
     
 11. Sur la page **Prêt à configurer**, cliquez sur **Configurer**.
     
@@ -389,7 +389,7 @@ Pour vérifier que l’authentification fédérée fonctionne, procédez comme s
     
 2. Pour les informations d’identification de connexion, saisissez le domaine **user1@**\< créé lors de la phase 1>. 
     
-    Par exemple, si votre domaine de test est **testlab.contoso.com**, vous saisissez « user1@testlab.contoso.com ». Appuyez sur la touche de tabulation ou autorisez Office 365 à vous rediriger automatiquement.
+    Par exemple, si votre domaine de test est **testlab.contoso.com**, vous tapez « user1@testlab.contoso.com ». Appuyez sur la touche de tabulation ou autorisez Microsoft 365 à vous rediriger automatiquement.
     
     Une page **Votre connexion n’est pas privée** devrait s’afficher. Cette page s’affiche, car vous avez installé sur ADFS1 un certificat auto-signé que votre ordinateur de bureau ne peut pas valider. Dans un déploiement de production d’authentification fédérée, vous utiliseriez un certificat provenant d’une autorité de certification approuvée et vos utilisateurs ne verraient pas cette page.
     
@@ -403,9 +403,9 @@ Pour vérifier que l’authentification fédérée fonctionne, procédez comme s
     
     Vous devez voir la **page d’accueil Microsoft Office**.
     
-Cette procédure montre que votre abonnement à la version d’évaluation d’Office 365 est fédéré avec le domaine corp.contoso.com AD DS hébergé sur DC1. Voici les principes de base du processus d’authentification :
+Cette procédure montre que votre abonnement d’évaluation est fédéré avec le domaine corp.contoso.com AD DS hébergé sur DC1. Voici les principes de base du processus d’authentification :
   
-1. Lorsque vous utilisez le domaine fédéré que vous avez créé à la phase 1 dans le nom de compte de connexion, Office 365 redirige votre navigateur vers votre nom de domaine complet du service FS (Federation Service) et PROXY1.
+1. Lorsque vous utilisez le domaine fédéré que vous avez créé à la phase 1 dans le nom de compte de connexion, Microsoft 365 redirige votre navigateur vers le nom de domaine complet de votre service FS (Federation Service) et PROXY1.
     
 2. PROXY1 envoie la page de connexion de l’entreprise fictive à votre ordinateur local.
     
@@ -413,13 +413,13 @@ Cette procédure montre que votre abonnement à la version d’évaluation d’O
     
 4. ADFS1 valide CORP\\User1 et le mot de passe avec DC1 et envoie un jeton de sécurité à votre ordinateur local.
     
-5. Votre ordinateur local envoie le jeton de sécurité à Office 365.
+5. Votre ordinateur local envoie le jeton de sécurité à Microsoft 365.
     
-6. Office 365 confirme que le jeton de sécurité a été créé par ADFS1 et autorise l’accès.
+6. Microsoft 365 confirme que le jeton de sécurité a été créé par ADFS1 et autorise l’accès.
     
-Votre abonnement à la version d’évaluation d’Office 365 est désormais configuré avec l’authentification fédérée. Vous pouvez utiliser cet environnement de développement/test pour les scénarios d’authentification avancés.
+Votre abonnement d’évaluation est désormais configuré avec l’authentification fédérée. Vous pouvez utiliser cet environnement de développement/test pour les scénarios d’authentification avancés.
   
 ## <a name="next-step"></a>Étape suivante
 
-Quand vous êtes prêt à déployer l’authentification fédérée haute disponibilité pour environnements de production pour Microsoft 365 ou Office 365 dans Azure, consultez la rubrique [Deploy high availability federated authentication for Office 365 in Azure](https://docs.microsoft.com/office365/enterprise/deploy-high-availability-federated-authentication-for-office-365-in-azure).
+Quand vous êtes prêt à déployer l’authentification fédérée haute disponibilité pour environnements de production pour Microsoft 365 ou Office 365 dans Azure, consultez la rubrique [Déployer l’authentification fédérée haute disponibilité pour Microsoft 365 à Azure](https://docs.microsoft.com/office365/enterprise/deploy-high-availability-federated-authentication-for-office-365-in-azure).
   

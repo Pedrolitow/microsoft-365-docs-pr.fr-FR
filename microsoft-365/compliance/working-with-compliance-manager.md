@@ -14,17 +14,17 @@ search.appverid:
 - MOE150
 - MET150
 description: Le gestionnaire de conformité Microsoft est un outil d’évaluation des risques gratuit basé sur un flux de travail. Utilisez-le pour suivre, affecter et vérifier les activités de conformité réglementaire relatives aux produits Microsoft.
-ms.openlocfilehash: aaae5f1123872367ad98466833f9e06210bfb652
-ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
+ms.openlocfilehash: 2a2c0b9311062da1269f7b56c926ced9e038627f
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43142659"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43626230"
 ---
 # <a name="working-with-microsoft-compliance-manager-preview"></a>Utilisation du gestionnaire de conformité Microsoft (aperçu)
 
 > [!IMPORTANT]
-> Le gestionnaire de conformité Microsoft est un tableau de bord et un outil de gestion qui fournit un résumé de votre stature de protection et de conformité des données afin d’améliorer la protection et la conformité des données. Les actions client fournies dans le gestionnaire de conformité sont des recommandations. Il revient à votre organisation d’évaluer l’efficacité de ces recommandations dans son environnement réglementaire respectif avant la mise en œuvre. Les recommandations figurant dans le gestionnaire de conformité ne doivent pas être interprétées comme garantie de conformité.
+> Le gestionnaire de conformité Microsoft est un tableau de bord et un outil de gestion qui fournit un résumé de votre stature de protection et de conformité des données afin d’améliorer la protection et la conformité des données. Les actions client fournies dans le gestionnaire de conformité sont des recommandations. Il revient à votre organisation d’évaluer l’efficacité de ces recommandations dans son environnement réglementaire respectif avant la mise en œuvre. Les recommandations du Gestionnaire de conformité ne doivent pas être interprétées comme des garanties de conformité.
 
 ## <a name="access-compliance-manager"></a>Gestionnaire de conformité des accès
 
@@ -93,7 +93,7 @@ Si vous choisissez **définir par action,** suivez ces étapes supplémentaires 
 
 **Remarque :** Seul l’administrateur général peut activer ou désactiver les mises à jour automatiques pour toutes les actions. L’administrateur du gestionnaire de conformité peut activer les mises à jour automatiques pour des actions individuelles, mais pas pour toutes les actions de manière globale.
 
-## <a name="groups"></a>Groups
+## <a name="groups"></a>Groupes
 
 Les groupes sont des conteneurs qui vous permettent d’organiser des évaluations et de partager des informations communes et des tâches de flux de travail entre les évaluations qui ont le même ou les mêmes contrôles gérés par le client.
 
@@ -121,7 +121,7 @@ Suivez les étapes ci-dessous pour créer un groupe :
 2. Dans le volet flyout d' **évaluation** , entrez un titre pour votre évaluation et sélectionnez un modèle dans le menu déroulant.
 3. Sur **Sélectionnez un groupe ou ajouter un nouveau groupe**, sélectionnez **Ajouter un nouveau groupe** , puis entrez le nom de votre groupe dans le champ ci-dessous.
 4. Pour copier des informations à partir d’un groupe existant, faites basculer la **copie des données d’un groupe existant** vers **.** Sélectionnez le groupe à copier dans le menu déroulant, puis activez les cases à cocher de tous les champs que vous souhaitez reporter dans la nouvelle évaluation de votre nouveau groupe.
-5. Cliquez sur **Enregistrer**. Une fois l’opération terminée, le volet flyout se ferme et vous verrez votre nouveau groupe sur votre tableau de bord.
+5. Sélectionnez **Enregistrer**. Une fois l’opération terminée, le volet flyout se ferme et vous verrez votre nouveau groupe sur votre tableau de bord.
 
 Éléments à connaître lors de l’utilisation de groupes :
   
@@ -185,7 +185,7 @@ En un clin d’œil, vous pouvez voir le titre, le propriétaire, la catégorie,
 
 1. Sélectionnez les points de suspension (...) de l’action que vous souhaitez modifier, puis sélectionnez **modifier**.
 2. Basculez le commutateur de la mise à jour continue du score de sécurité sur activé ou désactivé pour activer ou désactiver la surveillance continue via le score de sécurité.
-3. Cliquez sur **Enregistrer**.
+3. Sélectionnez **Enregistrer**.
 
 Lorsque les organisations déploient d’abord Microsoft 365 ou Office 365, il faut environ sept jours pour que l’évaluation complète des données et les intégrer dans votre score. Pendant ce temps, la définition du commutateur de mise à jour continue de score de sécurité sur **désactivé** et la définition manuelle d’une action sur **implémenté** compteront cette action vers votre score. Une fois les sept jours initiaux, l’activation de la mise à jour continue du score sécurisé active la surveillance continue à partir de ce moment-là.
 

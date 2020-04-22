@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: 8d83b530-f4ca-47f6-a666-e5791cbacc7e
 description: 'Découvrez comment renouveler votre abonnement Microsoft 365 pour les entreprises à l’aide d’une clé de produit et activer ou désactiver la facturation périodique. '
-ms.openlocfilehash: 1c3fc5f9648c814d300cd65ac872f1e28e90ca0d
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 9a44f8e65aad46e82134d8f088f6955bcd37ad3b
+ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636558"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43707654"
 ---
 # <a name="renew-microsoft-365-for-business"></a>Renouveler Microsoft 365 pour les entreprises
 
@@ -48,11 +48,10 @@ Si vous avez prépayé votre abonnement avec une clé de produit, votre abonneme
 
 ::: moniker range="o365-worldwide"
 
-
 1. Dans le Centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produits et services</a>.
 
 2. Sélectionnez l’abonnement pour lequel gérer la facturation récurrente.
- 
+
 3. Sous **facturation**, en regard **de la**case à cocher **refaire,** sélectionnez **modifier**.
 
 4. Dans le volet **paramètres de facturation périodique** , sélectionnez **Désactiver** pour le désactiver. Si la facturation périodique est déjà désactivée, sélectionnez une fois par **mois** ou **une fois** pour l’activer.
@@ -68,11 +67,7 @@ Si vous avez prépayé votre abonnement avec une clé de produit, votre abonneme
 
 ::: moniker range="o365-germany"
   
-1. Dans le Centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Abonnements</a>.
-
-    Si vous utilisez Office 365 Allemagne, accédez à cette page <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Abonnements</a>.
-
-    Si vous utilisez Office 365 géré par 21Vianet, accédez à cette page <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Abonnements</a>.
+1. Dans le Centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Abonnements</a>.
 
 2. Sélectionnez l’abonnement pour lequel gérer la facturation récurrente.
  
@@ -91,14 +86,10 @@ Si vous avez prépayé votre abonnement avec une clé de produit, votre abonneme
 
 ::: moniker range="o365-21vianet"
   
-1. Dans le Centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Abonnements</a>.
-
-    Si vous utilisez Office 365 Allemagne, accédez à cette page <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Abonnements</a>.
-
-    Si vous utilisez Office 365 géré par 21Vianet, accédez à cette page <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Abonnements</a>.
+1. Dans le Centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Abonnements</a>.
 
 2. Sélectionnez l’abonnement pour lequel gérer la facturation récurrente.
- 
+
 3. **Pour activer**la **facturation périodique**, activez le bouton bascule.
 
     ![Fermeture d’une carte d’abonnement pour laquelle la facturation périodique est activée.](../../media/984464dc-6b63-4b24-84e1-67f6c4b1d48e.png)

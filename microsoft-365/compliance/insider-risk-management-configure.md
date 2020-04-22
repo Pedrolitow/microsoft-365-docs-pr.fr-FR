@@ -1,5 +1,5 @@
 ---
-title: Prise en main de la gestion des risques initiés
+title: Prise en main de la gestion des risques internes
 description: Configurez la gestion des risques initiaux dans votre organisation.
 keywords: Microsoft 365, gestion des risques internes, gestion des risques, conformité
 localization_priority: Normal
@@ -12,14 +12,14 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: e4f0f90ff7089ba72f7e8b452842d670d45a49f8
-ms.sourcegitcommit: 825037f166eea3ba70f8980cedc5492f90c1cc56
+ms.openlocfilehash: 86aa29d0c271869eb1939b8a6a8dfb004e35d2cf
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "43097189"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637482"
 ---
-# <a name="get-started-with-insider-risk-management"></a>Prise en main de la gestion des risques initiés
+# <a name="get-started-with-insider-risk-management"></a>Prise en main de la gestion des risques internes
 
 Utilisez les stratégies de gestion des risques internes pour identifier les activités risquées et les outils de gestion afin d’agir sur les alertes de risque au sein de votre organisation. Procédez comme suit pour configurer les conditions préalables et configurer une stratégie de gestion des risques inSided.
 
@@ -39,7 +39,7 @@ Avant de commencer à gérer les risques initiaux, vous devez confirmer votre [a
 
 Les utilisateurs inclus dans les stratégies de gestion des risques internes doivent disposer de l’une des licences ci-dessus.
 
-Si vous ne disposez pas d’un plan Microsoft 365 entreprise E5 existant et que vous souhaitez essayer de gérer les risques internes, vous pouvez [Ajouter microsoft 365](https://docs.microsoft.com/office365/admin/try-or-buy-microsoft-365) à votre abonnement Office 365 existant ou [vous inscrire pour obtenir une version d’évaluation](https://www.microsoft.com/microsoft-365/enterprise) de Microsoft 365 entreprise E5.
+Si vous ne disposez pas d’un plan Microsoft 365 entreprise E5 existant et que vous souhaitez essayer de gérer les risques internes, vous pouvez [Ajouter microsoft 365](https://docs.microsoft.com/office365/admin/try-or-buy-microsoft-365) à votre abonnement existant ou [vous inscrire pour obtenir une version d’évaluation](https://www.microsoft.com/microsoft-365/enterprise) de Microsoft 365 entreprise E5.
 
 ## <a name="step-1-required-enable-permissions-for-insider-risk-management"></a>Étape 1 (obligatoire) : activer les autorisations pour la gestion des risques initiés
 
@@ -49,7 +49,7 @@ En fonction de la structure de votre équipe de gestion de la conformité, vous 
 
 | **Groupe de rôles** | **Autorisations de rôle** |
 | :---- | :---------------- |
-| **Gestion des risques initiés** | Utilisez ce groupe de rôles pour gérer la gestion des risques Insider de votre organisation dans un seul groupe. En ajoutant tous les comptes d’utilisateur pour les administrateurs, analystes et investigateurs désignés, vous pouvez configurer des autorisations de gestion des risques Insider dans un seul groupe. Ce groupe de rôles contient tous les rôles d’autorisation de gestion des risques Insider. Il s’agit de la méthode la plus simple pour démarrer rapidement avec la gestion des risques initiés et pour les organisations qui n’ont pas besoin d’autorisations distinctes définies pour des groupes d’utilisateurs distincts.|
+| **Gestion des risques internes** | Utilisez ce groupe de rôles pour gérer la gestion des risques Insider de votre organisation dans un seul groupe. En ajoutant tous les comptes d’utilisateur pour les administrateurs, analystes et investigateurs désignés, vous pouvez configurer des autorisations de gestion des risques Insider dans un seul groupe. Ce groupe de rôles contient tous les rôles d’autorisation de gestion des risques Insider. Il s’agit de la méthode la plus simple pour démarrer rapidement avec la gestion des risques initiés et pour les organisations qui n’ont pas besoin d’autorisations distinctes définies pour des groupes d’utilisateurs distincts.|
 | **Administrateur de gestion des risques des Insiders** | Utilisez ce groupe de rôles pour configurer initialement la gestion des risques initiés et, par la suite, pour séparer les administrateurs des risques des Insiders en un groupe défini.  Les utilisateurs de ce groupe de rôles peuvent créer, lire, mettre à jour et supprimer des stratégies de gestion des risques internes, des paramètres globaux et des affectations de groupes de rôles. |
 | **Analystes de gestion des risques Insiders** | Utilisez ce groupe pour attribuer des autorisations à des utilisateurs qui agiront en tant qu’analystes de cas d’Insider. Les utilisateurs de ce groupe de rôles peuvent accéder aux modèles alertes, incidents et notifications de gestion des risques Insider. Ils ne peuvent pas accéder à l’Explorateur de contenu risque Insider. |
 | **Investigateurs de gestion des risques Insiders** | Utilisez ce groupe pour attribuer des autorisations aux utilisateurs qui agiront en tant qu’enquêteurs de données sur les risques des Insiders. Les utilisateurs de ce groupe de rôles peuvent accéder à toutes les alertes de gestion des risques Insider, les cas, les modèles de notifications et l’Explorateur de contenu dans tous les cas. |
@@ -60,7 +60,7 @@ Procédez comme suit pour ajouter des utilisateurs à un groupe de rôles de ges
 
 1. Connectez- [https://protection.office.com/permissions](https://protection.office.com/permissions) vous à l’aide des informations d’identification d’un compte d’administrateur dans votre organisation Microsoft 365. "" "" "" ""
 
-2. Dans le centre de sécurité et conformité Microsoft Office 365, accédez à **autorisations**. Sélectionnez le lien pour afficher et gérer les rôles dans Office 365.
+2. Dans le centre &amp; de sécurité conformité, accédez à **autorisations**. Sélectionnez le lien pour afficher et gérer les rôles dans Office 365.
 
 3. Sélectionnez le groupe de rôles Gestion des risques Insiders auquel vous souhaitez ajouter des utilisateurs, puis sélectionnez **modifier le groupe de rôles**.
 
@@ -72,11 +72,11 @@ Procédez comme suit pour ajouter des utilisateurs à un groupe de rôles de ges
 
 7. Sélectionnez **Enregistrer** pour ajouter les utilisateurs au groupe de rôles. Sélectionnez **Fermer** pour effectuer les étapes.
 
-## <a name="step-2-required-enable-the-office-365-audit-log"></a>Étape 2 (obligatoire) : activer le journal d’audit Office 365
+## <a name="step-2-required-enable-the-audit-log"></a>Étape 2 (obligatoire) : activer le journal d’audit
 
 La gestion des risques internes utilise les journaux d’audit pour les activités et les informations utilisateur configurées dans les stratégies. Les journaux d’audit sont un résumé de toutes les activités associées à une stratégie de gestion des risques inSided ou à chaque fois qu’une stratégie est modifiée.
 
-Pour obtenir des instructions détaillées sur l’activation de l’audit, voir [activer ou désactiver la recherche dans le journal d’audit Office 365](turn-audit-log-search-on-or-off.md). Une fois que vous avez activé l’audit, un message s’affiche indiquant que le journal d’audit est en cours de préparation et que vous pouvez exécuter une recherche dans quelques heures après la fin de la préparation. Vous n’avez besoin d’effectuer cette action qu’une seule fois. Pour plus d’informations sur l’utilisation du journal d’audit, consultez [la rubrique Search the audit log](search-the-audit-log-in-security-and-compliance.md).
+Pour obtenir des instructions détaillées sur l’activation de l’audit, consultez la rubrique [activer ou désactiver la recherche dans le journal d’audit](turn-audit-log-search-on-or-off.md). Une fois que vous avez activé l’audit, un message s’affiche indiquant que le journal d’audit est en cours de préparation et que vous pouvez exécuter une recherche dans quelques heures après la fin de la préparation. Vous n’avez besoin d’effectuer cette action qu’une seule fois. Pour plus d’informations sur l’utilisation du journal d’audit, consultez [la rubrique Search the audit log](search-the-audit-log-in-security-and-compliance.md).
 
 ## <a name="step-3-optional-configure-prerequisites-for-templates"></a>Étape 3 (facultative) : configuration des éléments prérequis pour les modèles
 

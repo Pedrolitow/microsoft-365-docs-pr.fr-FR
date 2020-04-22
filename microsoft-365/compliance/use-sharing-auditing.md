@@ -1,5 +1,5 @@
 ---
-title: Audit de partage pour trouver les ressources partagées avec des utilisateurs externes
+title: Utiliser le partage d’audit dans le journal d’audit
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -19,17 +19,17 @@ ms.collection:
 - M365-security-compliance
 - SPO_Content
 ms.assetid: 50bbf89f-7870-4c2a-ae14-42635e0cfc01
-description: 'Le partage est une activité essentielle dans SharePoint Online et OneDrive entreprise. Les administrateurs peuvent désormais utiliser l’audit de partage dans le journal d’audit Office 365 pour identifier les ressources partagées avec des utilisateurs en dehors de leur organisation. '
-ms.openlocfilehash: 5aecf1e6126ebd118474054ea6536ed0725e980e
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: 'Le partage est une activité essentielle dans SharePoint Online et OneDrive entreprise. Les administrateurs peuvent désormais utiliser l’audit de partage dans le journal d’audit pour identifier les ressources partagées avec des utilisateurs en dehors de leur organisation. '
+ms.openlocfilehash: 63b56831dc5409cc92a0c4a2f4bf002cd268a878
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42069235"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43626380"
 ---
-# <a name="use-sharing-auditing-in-the-office-365-audit-log"></a>Audit de partage pour trouver les ressources partagées avec des utilisateurs externes
+# <a name="use-sharing-auditing-in-the-audit-log"></a>Utiliser le partage d’audit dans le journal d’audit
 
-Le partage est une activité essentielle dans SharePoint Online et OneDrive entreprise, et est largement utilisée dans les organisations Office 365. Les administrateurs peuvent utiliser l’audit de partage dans le journal d’audit Office 365 pour déterminer le mode d’utilisation du partage dans leur organisation. 
+Le partage est une activité essentielle dans SharePoint Online et OneDrive entreprise, et est largement utilisée dans les organisations. Les administrateurs peuvent utiliser l’audit de partage dans le journal d’audit pour déterminer le mode d’utilisation du partage dans leur organisation. 
   
 ## <a name="the-sharepoint-sharing-schema"></a>Schéma de partage SharePoint
 
@@ -41,13 +41,13 @@ Le schéma de partage fournit deux champs supplémentaires dans un enregistremen
 
 - **TargetUserOrGroupName :** Stocke l’UPN ou le nom de l’utilisateur ou du groupe cible avec lequel une ressource a été partagée (utilisateur B dans l’exemple précédent). 
 
-Ces deux champs, en plus des autres propriétés du schéma de journal d’audit Office 365, telles que User, Operation et date, peuvent indiquer l’histoire complète *de quel utilisateur a partagé* *quelle* ressource avec *qui* et *quand*. 
+Ces deux champs, en plus des autres propriétés du schéma du journal d’audit, comme user, Operation et date, peuvent indiquer l’histoire complète *de quel utilisateur a partagé* *quelle* ressource avec *qui* et *quand*. 
   
 Il existe une autre propriété de schéma importante pour l’histoire du partage. Lorsque vous exportez les résultats de la recherche dans le journal d’audit, la colonne **AuditData** du fichier CSV exporté stocke des informations sur les événements de partage. Par exemple, lorsqu’un utilisateur partage un site avec un autre utilisateur, l’utilisateur cible est ajouté à un groupe SharePoint. La colonne **AuditData** capture ces informations pour fournir un contexte aux administrateurs. Reportez-vous à l' [étape 2](#step-2-use-the-powerquery-editor-to-format-the-exported-audit-log) pour obtenir des instructions sur la façon d’analyser les informations dans la colonne **AuditData** .
 
 ## <a name="sharepoint-sharing-events"></a>Événements de partage SharePoint
 
-Le partage est défini par le fait qu’un utilisateur (l’utilisateur *agissant* ) souhaite partager une ressource avec un autre utilisateur (l’utilisateur *cible* ). Les enregistrements d’audit liés au partage d’une ressource avec un utilisateur externe (un utilisateur qui se trouve en dehors de votre organisation et qui ne dispose pas d’un compte invité dans l’Azure Active Directory de votre organisation) sont identifiés par les événements suivants, qui sont consignés dans Office 365 Journal d’audit :
+Le partage est défini par le fait qu’un utilisateur (l’utilisateur *agissant* ) souhaite partager une ressource avec un autre utilisateur (l’utilisateur *cible* ). Les enregistrements d’audit liés au partage d’une ressource avec un utilisateur externe (un utilisateur qui se trouve en dehors de votre organisation et qui ne dispose pas d’un compte invité dans l’Azure Active Directory de votre organisation) sont identifiés par les événements suivants, qui sont consignés dans le journal d’audit :
 
 - **SharingInvitationCreated :** Un utilisateur de votre organisation a essayé de partager une ressource (vraisemblablement un site) avec un utilisateur externe. Une invitation de partage externe est alors envoyée à l’utilisateur cible. Aucun accès à la ressource n’est accordé à ce stade.
 
@@ -93,11 +93,11 @@ Une exigence commune pour les administrateurs est la création d’une liste de 
   
 ### <a name="step-1-search-for-sharing-events-and-export-the-results-to-a-csv-file"></a>Étape 1 : Rechercher des événements de partage et exporter les résultats dans un fichier CSV
 
-La première étape consiste à rechercher dans le journal d’audit Office 365 des événements de partage. Pour plus d’informations (y compris les autorisations requises) sur la recherche dans le journal d’audit, voir [Search the audit log dans le centre de sécurité & Compliance Center](search-the-audit-log-in-security-and-compliance.md).
+La première étape consiste à rechercher des événements de partage dans le journal d’audit. Pour plus d’informations (y compris les autorisations requises) sur la recherche dans le journal d’audit, voir [Search the audit log dans le centre de sécurité & Compliance Center](search-the-audit-log-in-security-and-compliance.md).
   
 1. Accédez à [https://protection.office.com](https://protection.office.com).
     
-2. Ouvrez une session Office 365 en utilisant votre compte scolaire ou professionnel.
+2. Connectez-vous à l’aide de votre compte professionnel ou scolaire.
     
 3. Dans le volet gauche du Centre de sécurité et de conformité, cliquez sur **Recherche**  > **Recherche dans le journal d’audit**.
     

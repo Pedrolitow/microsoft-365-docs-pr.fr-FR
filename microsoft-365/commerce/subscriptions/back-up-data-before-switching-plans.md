@@ -1,5 +1,5 @@
 ---
-title: Sauvegarder les données avant de basculer vers Microsoft 365 pour les offres professionnelles
+title: Sauvegarder les données avant de modifier les offres
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -20,13 +20,13 @@ search.appverid:
 - MOE150
 - BEA160
 ms.assetid: a1da52c9-2167-4973-9e6d-492314a79b87
-description: Sauvegardez les contenus Outlook, OneDrive, Yammer et SharePoint avant de basculer entre les abonnements Microsoft 365 ou si un utilisateur quitte l’organisation.
-ms.openlocfilehash: fbebe72ec47fb6745cee6a12d81117ad08c50846
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: Sauvegardez les contenus Outlook, OneDrive, Yammer et SharePoint avant de modifier les plans Microsoft 365.
+ms.openlocfilehash: a482d59e92cd7055362663ed92630322e4ccf68a
+ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636079"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43708094"
 ---
 # <a name="back-up-data-before-switching-microsoft-365-for-business-plans"></a>Sauvegarder les données avant de basculer vers Microsoft 365 pour les offres professionnelles
 

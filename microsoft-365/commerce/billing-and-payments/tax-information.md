@@ -21,12 +21,12 @@ search.appverid:
 - BEA160
 description: 'Déterminez le montant des taxes à payer pour votre abonnement Microsoft 365 pour les entreprises dans différentes régions. '
 ms.custom: okr_SMB
-ms.openlocfilehash: e65dc15237cb14959a68a7413227cec2a3163d60
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 491c8241d8517d342e04a214d426e937895aab5a
+ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635003"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43708130"
 ---
 # <a name="tax-information"></a>Informations fiscales
 
@@ -94,7 +94,7 @@ Ces pays peuvent fournir leur numéro de TVA ou leur équivalent local sur leurs
   
 ### <a name="europe-the-middle-east-and-africa-emea"></a>Europe, Moyen Orient et Afrique (EMEA)
 
-Lorsque vous achetez des services Office 365 au sein de l'Union européenne, cet achat est soumis au taux de la taxe sur la valeur ajoutée (TVA).
+Lorsque vous achetez des services Microsoft 365 dans l’Union européenne, cet achat est soumis à la T.V.A. (taxe sur la valeur ajoutée).
   
 - Si vous vous trouvez dans un État membre de l'Union européenne et que vous ne fournissez pas votre numéro de TVA, Microsoft Ireland Operations Ltd. appliquera le taux de TVA de votre pays, sur la base du pays de facturation défini pour votre compte.
 
@@ -154,7 +154,7 @@ Si votre facture est émise depuis un autre emplacement, la taxe locale en vigue
 
 Aux États-Unis et au Canada, des taux différents s'appliquent en fonction votre emplacement. Si vous vous trouvez à Puerto Rico, la TVA locale s'applique.
   
-Si votre facture est émise par Microsoft Corporation ([voir votre facture](view-your-bill-or-invoice.md)) et que vous vous êtes inscrit à Office 365 dans un autre pays que les États-Unis, le Canada et Porto Rico, la taxe n'est généralement pas facturée.
+Si votre facturation est réalisée par Microsoft Corporation ([reportez-vous à votre facture](view-your-bill-or-invoice.md)) et que vous vous êtes inscrit à Microsoft 365 en dehors des États-Unis, du Canada et de Porto Rico, les taxes ne sont généralement pas facturées.
 
 ## <a name="how-taxes-are-calculated"></a>Mode de calcul des taxes
 

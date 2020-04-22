@@ -1,5 +1,5 @@
 ---
-title: Afficher les résultats de l’analyse dans Office 365 Advanced eDiscovery
+title: Afficher les résultats de l’analyse dans Advanced eDiscovery
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -15,13 +15,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 5974f3c2-89fe-4c5f-ac7b-57f214437f7e
-description: 'Comprendre où afficher les résultats du processus d’analyse dans Office 365 Advanced eDiscovery, y compris les définitions des options de tâche affichées.  '
-ms.openlocfilehash: adee00d2b7826827cc14f4ca945952f4892511a1
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+description: 'Comprendre où afficher les résultats du processus d’analyse dans Advanced eDiscovery, y compris les définitions des options de tâche affichées.  '
+ms.openlocfilehash: 09bb682e753730a4c01581e71f05b5b8ef3d4779
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42557622"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43626360"
 ---
 # <a name="view-analyze-results-in-advanced-ediscovery-classic"></a>Afficher les résultats de l’analyse dans Advanced eDiscovery (classique)
 
@@ -77,7 +77,7 @@ Les résultats des **pièces jointes** affichent le nombre de pièces jointes, e
   
 ## <a name="see-also"></a>Voir aussi
 
-[Découverte électronique avancée (classique)](office-365-advanced-ediscovery.md)
+[Advanced eDiscovery (classique)](office-365-advanced-ediscovery.md)
   
 [Présentation de la similarité des documents](understand-document-similarity-in-advanced-ediscovery.md)
   

@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 'Un Conseil de stratégie est une notification ou un avertissement qui s’affiche lorsqu’un utilisateur travaille avec du contenu qui entre en conflit avec une stratégie DLP. Vous pouvez utiliser des notifications par courrier électronique et des conseils de stratégie pour sensibiliser les utilisateurs aux stratégies de votre organisation. Vous pouvez également donner aux utilisateurs la possibilité de remplacer la stratégie, afin qu’ils ne soient pas bloqués s’ils ont un besoin opérationnel valide ou si la stratégie détecte un faux positif. '
-ms.openlocfilehash: 7d54c035d9bb7c9ecc5a543fb8f37749bf9437e7
-ms.sourcegitcommit: 4c6af6530b4997055b8e60bf532e75cbc72fb6c5
+ms.openlocfilehash: fd6c7a33f8c75615019cca32797008a8fa4753ed
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43284269"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43626400"
 ---
 # <a name="send-email-notifications-and-show-policy-tips-for-dlp-policies"></a>Envoi des notifications et affichage des conseils de stratégie pour les stratégies DLP
 
@@ -36,7 +36,7 @@ Un Conseil de stratégie est une notification ou un avertissement qui s’affich
   
 Vous pouvez utiliser des notifications par courrier électronique et des conseils de stratégie pour sensibiliser les utilisateurs aux stratégies de votre organisation. Vous pouvez également donner aux utilisateurs la possibilité de remplacer la stratégie, afin qu’ils ne soient pas bloqués s’ils ont un besoin opérationnel valide ou si la stratégie détecte un faux positif.
   
-Dans le centre de sécurité &amp; conformité Office 365, lorsque vous créez une stratégie DLP, vous pouvez configurer les notifications utilisateur de la façon suivante :
+Dans le centre &amp; de sécurité conformité, lorsque vous créez une stratégie DLP, vous pouvez configurer les notifications utilisateur de la façon suivante :
   
 - Envoyer une notification par courrier électronique aux personnes que vous avez choisies qui décrivent le problème.
     
@@ -54,7 +54,7 @@ Lorsque vous créez une stratégie DLP, vous pouvez activer les **notifications*
   
 1. Accédez à [https://protection.office.com](https://protection.office.com).
     
-2. Ouvrez une session Office 365 en utilisant votre compte scolaire ou professionnel. Vous êtes maintenant dans le centre de sécurité &amp; conformité Office 365.
+2. Connectez-vous à l’aide de votre compte professionnel ou scolaire. Vous êtes maintenant dans le centre &amp; de sécurité conformité.
     
 3. Dans le centre &amp; \> de sécurité conformité, \> **stratégie** \> de **protection contre** \> la perte de données gauche **+ créer une stratégie**.
     
@@ -219,13 +219,13 @@ Actuellement, Outlook 2013 et les versions ultérieures prennent en charge l’a
 
 Notez que toutes ces conditions fonctionnent dans Outlook, où elles correspondent au contenu et appliquent des actions de protection sur le contenu. Mais l’affichage des conseils de stratégie pour les utilisateurs n’est pas encore pris en charge.
   
-### <a name="policy-tips-in-the-exchange-admin-center-vs-the-office-365-security-amp-compliance-center"></a>Conseils de stratégie dans le centre d’administration Exchange et le centre de &amp; sécurité conformité Office 365
+### <a name="policy-tips-in-the-exchange-admin-center-vs-the-security-amp-compliance-center"></a>Conseils de stratégie dans le centre d’administration Exchange et le &amp; Centre de sécurité conformité
 
-Les conseils de stratégie peuvent fonctionner soit avec les stratégies DLP et les règles de flux de messagerie créées dans le centre d’administration Exchange, soit avec les &amp; stratégies DLP créées dans le centre de sécurité conformité Office 365, mais pas dans les deux. Cela est dû au fait que ces stratégies sont stockées à des emplacements différents, mais que les conseils de stratégie ne peuvent tirer qu’à partir d’un seul emplacement.
+Les conseils de stratégie peuvent fonctionner soit avec les stratégies DLP et les règles de flux de messagerie créées dans le centre d’administration Exchange, soit &amp; avec les stratégies DLP créées dans le centre de sécurité conformité, mais pas dans les deux. Cela est dû au fait que ces stratégies sont stockées à des emplacements différents, mais que les conseils de stratégie ne peuvent tirer qu’à partir d’un seul emplacement.
   
-Si vous avez configuré des conseils de stratégie dans le centre d’administration Exchange, tous les conseils de stratégie que vous configurez dans le centre de sécurité &amp; conformité d’Office 365 n’apparaîtront pas aux utilisateurs dans Outlook sur le Web et Outlook 2013 et versions ultérieures jusqu’à ce que vous désactiviez les conseils dans le centre d’administration Exchange. Cela permet de s’assurer que vos règles de flux de messagerie Exchange actuelles (également appelées règles de transport) continueront de fonctionner jusqu’à ce que vous &amp; choisissiez de basculer vers le centre de sécurité conformité Office 365.
+Si vous avez configuré des conseils de stratégie dans le centre d’administration Exchange, tous les conseils de stratégie que &amp; vous configurez dans le centre de sécurité conformité ne s’afficheront pas aux utilisateurs dans Outlook sur le Web et Outlook 2013 et versions ultérieures jusqu’à ce que vous désactiviez les conseils dans le centre d’administration Exchange. Cela permet de s’assurer que vos règles de flux de messagerie Exchange actuelles (également appelées règles de transport) continueront de fonctionner jusqu’à ce &amp; que vous choisissiez de basculer vers le centre de sécurité conformité.
   
-Notez que si 365 les conseils de stratégie ne peuvent tirer qu’à partir d’un seul emplacement, les notifications par courrier électronique sont toujours envoyées, même si vous &amp; utilisez les stratégies DLP dans le centre de sécurité et le centre d’administration Exchange.
+Notez que si les conseils de stratégie ne peuvent être tracés qu’à partir d’un seul emplacement, les notifications par courrier électronique sont toujours envoyées, &amp; même si vous utilisez des stratégies DLP dans le centre d’administration et Exchange.
   
 ### <a name="default-text-for-policy-tips-in-email"></a>Texte par défaut pour les conseils de stratégie dans les courriers électroniques
 
