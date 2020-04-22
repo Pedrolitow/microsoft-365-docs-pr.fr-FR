@@ -1,5 +1,5 @@
 ---
-title: Protection contre l’usurpation d’identité dans Office 365
+title: Protection contre l’usurpation d’identité
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -18,26 +18,26 @@ ms.collection:
 ms.custom: TopSMBIssues
 localization_priority: Priority
 description: ''
-ms.openlocfilehash: 53e671e72922eb337cd5af2cfaa11b3ce3f95399
-ms.sourcegitcommit: db8702cf578b02c6fd6a2670c177b456efae4748
+ms.openlocfilehash: 3a306cb8bda0f5f07660f8a2af60e29a3c4d0776
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43537520"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636033"
 ---
-# <a name="anti-spoofing-protection-in-office-365"></a>Protection contre l’usurpation d’identité dans Office 365
+# <a name="anti-spoofing-protection"></a>Protection contre l’usurpation d’identité
 
-Si vous êtes un client Office 365 avec des boîtes aux lettres dans Exchange Online ou un client Exchange Online Protection autonome (EOP) dépourvu de boîtes aux lettres Exchange Online, EOP comprend des fonctionnalités permettant de protéger votre organisation contre les faux expéditeurs.
+Si vous êtes un client Microsoft 365 avec des boîtes aux lettres dans Exchange Online ou un client Exchange Online Protection autonome (EOP) dépourvu de boîtes aux lettres Exchange Online, EOP comprend des fonctionnalités permettant de protéger votre organisation contre les faux expéditeurs (falsifiés).
 
 Pour protéger ses utilisateurs, Microsoft prend la menace du hameçonnage au sérieux. L’usurpation d’identité est une technique couramment utilisée par les intrus. **Les messages usurpant une identité semblent provenir d’une personne ou d’un emplacement autre que la source réelle**. Cette technique est souvent utilisée dans des campagnes de hameçonnage qui visent à dérober des informations d’identification d’utilisateur. La technologie anti-usurpation dans EOP examine spécifiquement les falsifications de l’en-tête De dans le corps de message (utilisé pour afficher l’expéditeur du message dans les clients de courrier électronique). Lorsque EOP est convaincu que l'en-tête De est falsifié, le message est identifié comme étant falsifié.
 
 Les technologies anti-usurpation suivantes sont disponibles dans EOP :
 
-- **Veille contre l’usurpation d’identité** : passez en revue les messages usurpant une identité provenant des expéditeurs dans les domaines internes et externes, et autorisez ou bloquez ces expéditeurs. Si vous souhaitez en savoir plus, consultez l’article [Configurer la veille contre l’usurpation d’identité dans Office 365](learn-about-spoof-intelligence.md).
+- **Veille contre l’usurpation d’identité** : passez en revue les messages usurpant une identité provenant des expéditeurs dans les domaines internes et externes, et autorisez ou bloquez ces expéditeurs. Si vous souhaitez en savoir plus, consultez l’article [Configurer la veille contre l’usurpation d’identité dans Microsoft 365](learn-about-spoof-intelligence.md).
 
-- **Stratégies anti-hameçonnage** : dans EOP, la stratégie anti-hameçonnage intégrée vous permet d’activer ou de désactiver la veille contre l’usurpation d’identité, d’activer ou de désactiver l’identification d’expéditeur non authentifié dans Outlook, et de spécifier l’action des expéditeurs usurpés bloqués (déplacez-vous vers le dossier courrier indésirable ou la mise en quarantaine). Les stratégies anti-hameçonnage avancées qui sont disponibles dans Protection avancée contre les menaces Office 365 contiennent également des paramètres d’anti-emprunt d’identité (expéditeurs et domaines protégés), des paramètres d’intelligence des boîtes aux lettres et des seuils de hameçonnage avancés ajustables. Si vous souhaitez en savoir plus, consultez l’article [Stratégies anti-hameçonnage dans Office 365](set-up-anti-phishing-policies.md).
+- **Stratégies anti-hameçonnage** : dans EOP, la stratégie anti-hameçonnage intégrée vous permet d’activer ou de désactiver la veille contre l’usurpation d’identité, d’activer ou de désactiver l’identification d’expéditeur non authentifié dans Outlook, et de spécifier l’action des expéditeurs usurpés bloqués (déplacez-vous vers le dossier courrier indésirable ou la mise en quarantaine). Les stratégies anti-hameçonnage avancées qui sont disponibles dans Protection avancée contre les menaces Office 365 contiennent également des paramètres d’anti-emprunt d’identité (expéditeurs et domaines protégés), des paramètres d’intelligence des boîtes aux lettres et des seuils de hameçonnage avancés ajustables. Si vous souhaitez en savoir plus, consultez l’article [Stratégies anti-hameçonnage dans Microsoft 365](set-up-anti-phishing-policies.md).
 
-- **Authentification de messagerie électronique** : l’utilisation de l’authentification de messagerie électronique (également appelée validation de messagerie électronique) pour les enregistrements SPF, DKIM et DMARC dans DNS fait partie intégrante de tout effort anti-usurpation d’identité. Vous pouvez configurer ces enregistrements pour vos domaines de sorte que les systèmes de messagerie électronique de destination peuvent vérifier la validité des messages censés provenir d’expéditeurs figurant de vos domaines. Pour les messages entrants, Office 365 requiert une authentification de messagerie électronique pour les domaines d’expéditeur. Pour plus d’informations, voir [Authentification de messagerie électronique dans Office 365](email-validation-and-authentication.md).
+- **Authentification de messagerie électronique** : l’utilisation de l’authentification de messagerie électronique (également appelée validation de messagerie électronique) pour les enregistrements SPF, DKIM et DMARC dans DNS fait partie intégrante de tout effort anti-usurpation d’identité. Vous pouvez configurer ces enregistrements pour vos domaines de sorte que les systèmes de messagerie électronique de destination peuvent vérifier la validité des messages censés provenir d’expéditeurs figurant de vos domaines. Pour les messages entrants, Microsoft 365 requiert une authentification de messagerie électronique pour les domaines d’expéditeur. Si vous souhaitez en savoir plus, consultez la page [Authentification de messagerie électronique dans Microsoft 365](email-validation-and-authentication.md).
 
 La technologie anti-usurpation de Microsoft a été déployée à l’origine uniquement pour les organisations avec Office 365 – Protection avancée contre les menaces. En octobre 2018, la protection contre l’usurpation d’identité a été ajoutée à EOP.
 
@@ -113,15 +113,15 @@ Microsoft distingue deux types de messages usurpant une identité :
 
   - SFTY est le niveau de sécurité du message. 9 indique un hameçonnage, .22 indique une usurpation inter-domaines.
 
-Pour plus d’informations sur les valeurs de la catégorie et de l’authentification composite (compauth) relatives à l’usurpation d’identité, voir [En-têtes de messages anti-courrier indésirable dans Office 365](anti-spam-message-headers.md).
+Si vous souhaitez en savoir plus sur les valeurs de la Catégorie et de l’authentification composite (compauth) relatives à l’usurpation d’identité, consultez la page [En-têtes de messages anti-courrier indésirable dans Microsoft 365](anti-spam-message-headers.md).
 
-Pour plus d’informations sur DMARC, voir [Utiliser DMARC pour valider les messages électroniques dans Office 365](use-dmarc-to-validate-email.md).
+Si vous souhaitez en savoir plus sur DMARC, consultez la page [Utiliser DMARC pour valider les messages électroniques dans Microsoft 365](use-dmarc-to-validate-email.md).
 
 ## <a name="reports-of-how-many-messages-were-marked-as-spoofed"></a>Rapports sur le nombre de messages marqués comme usurpés
 
 Les organisations EOP peuvent utiliser le rapport sur les **détections d’usurpation d’identité** dans le tableau de bord des rapports du Centre de sécurité et de conformité. Pour plus d’informations, consultez le [rapport sur les détections d’usurpation d’identité](view-email-security-reports.md#spoof-detections-report).
 
-L’organisation Protection avancée contre les menaces Office 365 peut utiliser l’Explorateur de menaces dans le Centre de sécurité et de conformité pour afficher des informations sur les tentatives de hameçonnage. Pour plus d’informations, voir [Examen et réponse contre les menaces Office 365](office-365-ti.md).
+L’organisation Protection avancée contre les menaces Office 365 peut utiliser l’Explorateur de menaces dans le Centre de sécurité et de conformité pour afficher des informations sur les tentatives de hameçonnage. Si vous souhaitez en savoir plus, consultez la page [Examen et réponse contre les menaces Microsoft 365](office-365-ti.md).
 
 ## <a name="problems-with-anti-spoofing-protection"></a>Problèmes liés à la protection contre l’usurpation d’identité
 
@@ -154,7 +154,7 @@ Pour aider les messages de la liste de diffusion à passer les vérifications d�
 
   - Créez des règles de boîte aux lettres dans votre client de messagerie électronique pour déplacer les messages vers la Boîte de réception. Vous pouvez également demander à vos administrateurs de configurer les remplacements comme indiqué dans la section [Utiliser la veille contre l’usurpation d’identité pour configurer les expéditeurs autorisés de courrier électronique non authentifié](email-validation-and-authentication.md#use-spoof-intelligence-to-configure-permitted-senders-of-unauthenticated-email).
 
-  - Créez un ticket de support auprès d’Office 365 pour créer un contournement afin que la liste de diffusion traite les messages comme légitimes. Pour plus d’informations, voir [Contacter le support concernant les produits pour les entreprises – Aide de l’administrateur](../../admin/contact-support-for-business-products.md).
+  - Créez un ticket de support auprès de Microsoft 365 pour créer un contournement afin que la liste de diffusion traite les messages comme légitimes. Pour plus d’informations, voir [Contacter le support concernant les produits pour les entreprises – Aide de l’administrateur](../../admin/contact-support-for-business-products.md).
 
 En cas d’échec de l’opération, vous pouvez signaler le message à Microsoft comme étant un faux positif. Pour plus d’informations, voir [Signaler des messages et des fichiers à Microsoft](report-junk-email-messages-to-microsoft.md).
 
@@ -162,4 +162,4 @@ Vous pouvez également contacter votre administrateur qui peut ouvrir un ticket 
 
 ## <a name="considerations-for-anti-spoofing-protection"></a>Considérations relatives à la protection contre l’usurpation d’identité
 
-Si vous êtes un administrateur qui envoie actuellement des messages à Office 365, vous devez vous assurer que votre courrier électronique est correctement authentifié. Dans le cas contraire, il peut être marqué comme courrier indésirable ou hameçonnage. Pour plus d’informations, voir [Solutions pour les expéditeurs légitimes qui envoient du courrier électronique non authentifié](email-validation-and-authentication.md#solutions-for-legitimate-senders-who-are-sending-unauthenticated-email).
+Si vous êtes un administrateur qui envoie actuellement des messages à Microsoft 365, vous devez vous assurer que votre messagerie électronique est correctement authentifiée. Dans le cas contraire, il peut être marqué comme courrier indésirable ou hameçonnage. Pour plus d’informations, voir [Solutions pour les expéditeurs légitimes qui envoient du courrier électronique non authentifié](email-validation-and-authentication.md#solutions-for-legitimate-senders-who-are-sending-unauthenticated-email).

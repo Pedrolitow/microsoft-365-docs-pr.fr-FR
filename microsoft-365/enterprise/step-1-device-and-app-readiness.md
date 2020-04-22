@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Apprenez à évaluer la disponibilité des applications et des périphériques et dans l’environnement.
-ms.openlocfilehash: abeb6bbfcc5a8de869263f5a4aa922a6642a92f1
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: fc048b046e46b4b2e792aa9bffb695eed742a74c
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42085471"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636855"
 ---
 # <a name="step-1-device-and-app-readiness"></a>Étape 1 : disponibilité des applications et des périphériques
 
@@ -36,10 +36,10 @@ ms.locfileid: "42085471"
 </table>
 
 >[!NOTE]
->La disponibilité des applications et des périphériques est la première étape de notre processus de déploiement recommandé en couvrant les aspects holistiques de la compatibilité du matériel et des applications.  Pour voir le processus complet de déploiement du bureau, visitez le [Centre de déploiement de bureau](https://aka.ms/HowToShift).
+>La disponibilité des applications et des périphériques est la première étape de notre processus de déploiement recommandé en couvrant les aspects holistiques de la compatibilité du matériel et des applications.  Pour voir le processus complet de déploiement du bureau, visitez le [Centre de déploiement du bureau moderne](https://aka.ms/HowToShift).
 >
 
-La compatibilité du matériel et des applications était autrefois un obstacle majeur à la mise à niveau des ordinateurs de bureau des utilisateurs. La bonne nouvelle lorsque vous planifiez votre déploiement vers Windows 10 et Office 365 ProPlus est que la grande majorité des applications créées au cours des 10 dernières années s’exécute sur Windows 10, et les compléments COM et les macros VBA utilisés par votre organisation sur les versions d’Office remontant jusqu’à Office 2010 continueront de fonctionner avec les dernières versions d’Office, sans modification.
+La compatibilité du matériel et des applications était autrefois un obstacle majeur à la mise à niveau des ordinateurs de bureau des utilisateurs. Alors que vous planifiez votre migration vers Windows 10 et les applications Microsoft 365 pour les entreprises, vous devez savoir que la grande majorité des applications créées au cours des 10 dernières années fonctionne sous Windows 10, et les compléments COM et les macros VBA, utilisés par votre organisation sur les versions d’Office remontant jusqu’à Office 2010, continueront de fonctionner avec les dernières versions d’Office, sans modification.
 
 Cela étant dit, selon la taille et l’âge de votre organisation, vérifier la compatibilité du matériel et des applications est probablement toujours une étape essentielle initiale de notre processus de déploiement de 8 étapes recommandé.
 
@@ -89,7 +89,7 @@ Vous constaterez que la plupart des applications, pilotes et compléments de l�
 
 Vous pouvez utiliser Desktop Analytics pour également évaluer les problèmes de compatibilité avec le navigateur, en identifiant les sites et applications web auxquels les utilisateurs accèdent en utilisant toujours des contrôles ActiveX, des objets d’assistance du navigateur, le langage de script VBScript ou d’autres technologies héritées non prises en charge par le navigateur Microsoft Edge. Ces sites nécessitent toujours d’utiliser Internet Explorer 11, et vous pouvez les ajouter à la [liste des sites en mode Entreprise](https://docs.microsoft.com/microsoft-edge/deploy/emie-to-improve-compatibility) à l’aide d’Enterprise Mode Site List Manager.
 
-En outre, pour vous aider dans votre migration vers Office 365 ProPlus, vous pouvez utiliser le [Kit de ressources de préparation pour Office](https://docs.microsoft.com/deployoffice/use-the-readiness-toolkit-to-assess-application-compatibility-for-office-365-pro) pour tester la compatibilité de vos compléments et des macros Microsoft Visual Basic pour Applications (VBA).
+De plus, pour vous aider dans votre migration vers les applications Microsoft 365 pour les entreprises, vous pouvez utiliser le [Readiness Toolkit pour Office](https://docs.microsoft.com/deployoffice/use-the-readiness-toolkit-to-assess-application-compatibility-for-office-365-pro) pour tester la compatibilité de vos compléments et des macros Microsoft Visual Basic for Applications (VBA).
 
 ![](../media/step-1-device-and-app-readiness-media/step-1-device-and-app-readiness-media-6.png)
 
@@ -110,12 +110,12 @@ Pour plus d’informations, voir [Introduction à l’inventaire de logiciel dan
 
 ## <a name="app-assure"></a>Soutien aux applications
 
-Un autre outil pour vous aider avec la compatibilité entre les applications Windows 10 et Office 365 ProPlus est le programme [App Assure](https://aka.ms/appassure) disponible via le centre FastTrack. En cas de problèmes de validité de l’application, un ingénieur Microsoft travaillera avec vous sans frais supplémentaires pour vous aider à solutionner l’incompatibilité des applications dans App Assure.
+Le programme de [Soutien aux applications](https://aka.ms/appassure), disponible via le centre FastTrack, est un autre outil qui peut vous aider avec la compatibilité entre Windows 10 et les applications Microsoft 365 pour les entreprises. En cas de problèmes de validité de l’application, un ingénieur Microsoft travaillera avec vous sans frais supplémentaires pour vous aider à solutionner l’incompatibilité des applications dans App Assure.
 
 ## <a name="continued-use-of-diagnostic-data-tools"></a>Utilisation des outils de données de diagnostic continu
 
-Desktop Analytics n’est pas un outil qui vous permet de basculer vers Windows 10 et Office 365 ProPlus. Une fois que vos ordinateurs de bureau exécutent Windows 10 et Office 365, vous pouvez l’utiliser pour vous aider à maintenir votre déploiement et à gérer les mises à jour de fonctionnalités semi-annuelles afin de rester à jour.
+L’outil Analyses du bureau ne vous permet pas de migrer vers Windows 10 et les applications Microsoft 365 pour les entreprises. Une fois que vos ordinateurs de bureau exécutent Windows 10 et Office 365, vous pouvez l’utiliser pour vous aider à maintenir votre déploiement et à gérer les mises à jour de fonctionnalités semi-annuelles afin de rester à jour.
 
 ## <a name="next-step"></a>Étape suivante 
 
-## <a name="step-2-directory-and-network-readinesshttpsakamsmdd2"></a>[Étape 2 : disponibilité des répertoires et des réseaux](https://aka.ms/mdd2)
+## <a name="step-2-directory-and-network-readiness"></a>[Étape 2 : disponibilité des répertoires et des réseaux](https://aka.ms/mdd2)

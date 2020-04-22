@@ -1,5 +1,5 @@
 ---
-title: Recherche de contenu dans Office 365
+title: Recherche de contenu
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -18,17 +18,17 @@ search.appverid:
 - MED150
 - MET150
 ms.assetid: 53390468-eec6-45cb-b6cd-7511f9c909e4
-description: Utilisez l’outil recherche de contenu dans le centre de conformité dans Office 365 ou Microsoft 365 pour rechercher du contenu dans les boîtes aux lettres, les sites SharePoint Online, les comptes OneDrive, Microsoft Teams, les groupes Office 365, les groupes Yammer et les conversations Skype Entreprise. Vous pouvez utiliser des requêtes de recherche par mot clé et des conditions de recherche pour affiner les résultats de la recherche. Vous pouvez ensuite obtenir un aperçu et exporter les résultats de la recherche. La recherche de contenu est également un outil efficace pour rechercher du contenu lié à une demande d’objet de données RGPD.
-ms.openlocfilehash: 0f37daee28afabb6a63be316bd830f9b3992a044
-ms.sourcegitcommit: 09c3e2f3129c5e43cd8420cccd0676ff3a29a355
+description: Utilisez l’outil recherche de contenu dans le centre de conformité dans Microsoft 365 ou Microsoft 365 pour rechercher du contenu dans les boîtes aux lettres, les sites SharePoint Online, les comptes OneDrive, Microsoft Teams, les Groupes Microsoft 365, les Groupes Yammer et les conversations Skype Entreprise. Vous pouvez utiliser des requêtes de recherche par mot clé et des conditions de recherche pour affiner les résultats de la recherche. Vous pouvez ensuite obtenir un aperçu et exporter les résultats de la recherche. La recherche de contenu est également un outil efficace pour rechercher du contenu lié à une demande d’objet de données RGPD.
+ms.openlocfilehash: 74fb84a46b4dd283eef90f2181a0d084a7a361e8
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "43521500"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632359"
 ---
-# <a name="content-search-in-office-365"></a>Recherche de contenu dans Office 365
+# <a name="content-search"></a>Recherche de contenu
 
-Vous pouvez utiliser l’outil eDiscovery de la recherche de contenu dans le centre de conformité dans Office 365 ou Microsoft 365 pour rechercher des éléments sur place, tels que des messages électroniques, des documents et des conversations par messagerie instantanée dans votre organisation Office 365. Utilisez cet outil pour rechercher des éléments dans ces services Office 365 :
+Vous pouvez utiliser l’outil eDiscovery de la recherche de contenu dans le centre de conformité dans Office 365 ou Microsoft 365 pour rechercher des éléments sur place, tels que des messages électroniques, des documents et des conversations par messagerie instantanée dans votre organisation. Utilisez cet outil pour rechercher des éléments dans ces services :
   
 - Boîtes aux lettres et dossiers publics Exchange Online
     
@@ -36,9 +36,9 @@ Vous pouvez utiliser l’outil eDiscovery de la recherche de contenu dans le cen
     
 - Conversations Skype Entreprise
     
-- Microsoft Teams 
+- Microsoft Teams 
 
-- Groupes Office 365
+- Groupes Microsoft 365
 
 - Groupes Yammer 
     
@@ -48,7 +48,7 @@ Après avoir exécuté une recherche de contenu, le nombre d’emplacements de c
 
 Pour accéder à la page **recherche de contenu** pour effectuer des recherches et afficher un aperçu et exporter les résultats de la recherche, un administrateur, un officier de conformité ou un gestionnaire d’eDiscovery doit être membre du groupe de rôles gestionnaire eDiscovery dans le Centre de conformité & de sécurité. Pour plus d'informations, voir [Attribution d'autorisations eDiscovery](assign-ediscovery-permissions.md).
   
-1. Allez à [https://protection.office.com](https://protection.office.com) et entrez vos adresse de courrier et mot de passe Office 365.
+1. Allez à [https://protection.office.com](https://protection.office.com) et entrez vos adresse de courrier et mot de passe Microsoft.
     
 2. Cliquez sur**Recherche** \> **Recherche de contenu**.
     
@@ -85,7 +85,7 @@ Pour accéder à la page **recherche de contenu** pour effectuer des recherches 
     
        - **Emplacements :** choisissez les emplacements de contenu à rechercher.
     
-      - **Tous les emplacements :** utilisez cette option pour rechercher tous les emplacements de contenu au sein de votre organisation. Il s’agit du courrier dans toutes les boîtes aux lettres Exchange (y compris toutes les boîtes aux lettres inactives et les boîtes aux lettres de Microsoft Teams, groupes Yammer, et groupes Office 365), toutes les conversations Skype Entreprise, l’ensemble des sites SharePoint et OneDrive Entreprise (y compris les sites pour Microsoft Teams, les groupes Yammer et les groupes Office 365) et les éléments dans tous les dossiers publics Exchange.
+      - **Tous les emplacements :** utilisez cette option pour rechercher tous les emplacements de contenu au sein de votre organisation. Il s’agit du courrier dans toutes les boîtes aux lettres Exchange (y compris toutes les boîtes aux lettres inactives et les boîtes aux lettres de Microsoft Teams, Groupes Yammer, et Groupes Microsoft 365), toutes les conversations Skype Entreprise, l’ensemble des sites SharePoint et OneDrive Entreprise (y compris les sites pour Microsoft Teams, les Groupes Yammer et les Groupes Microsoft 365) et les éléments dans tous les dossiers publics Exchange.
     
       - **Emplacements spécifiques :** Utilisez cette option pour rechercher des emplacements de contenu spécifiques. Vous pouvez effectuer une recherche dans tous les emplacements de contenu pour un service Office 365 spécifique (par exemple, la recherche dans toutes les boîtes aux lettres Exchange ou la recherche dans tous les sites SharePoint), ou vous pouvez rechercher du contenu dans des emplacements spécifiques de l’un des services Office 365 affichés. 
     
@@ -178,7 +178,7 @@ Pour plus d’informations sur les recherches de contenu, voir les sections suiv
   
 [Recherche de comptes OneDrive](#searching-onedrive-accounts)
   
-[Recherche Microsoft Teams et Groupes Office 365](#searching-microsoft-teams-and-office-365-groups)
+[Recherche dans Microsoft Teams et les Groupes Microsoft 365](#searching-microsoft-teams-and-microsoft-365-groups)
 
 [Recherche de groupes Yammer](#searching-yammer-groups)
   
@@ -196,7 +196,7 @@ Pour plus d’informations sur les recherches de contenu, voir les sections suiv
 
 - Pour obtenir une description des limites appliquées à la fonctionnalité de recherche de contenu, consultez la rubrique [Limites de la recherche de contenu](limits-for-content-search.md).
     
-- Microsoft collecte les informations de performance pour les recherches de contenu effectuées par toutes les organisations Office 365. Bien que la complexité de la requête de recherche puisse avoir un impact sur les heures de recherche, le facteur le plus important qui détermine la durée de la recherche est le nombre de boîtes aux lettres recherchées. Bien que Microsoft ne fournisse pas d’accord de niveau de service pour les horaires de recherche, le tableau suivant répertorie les durées de recherche moyennes d’une recherche de contenu sur la base du nombre de boîtes aux lettres incluses dans la recherche.
+- Microsoft collecte les informations de performance pour les recherches de contenu effectuées par toutes les organisations. Bien que la complexité de la requête de recherche puisse avoir un impact sur les heures de recherche, le facteur le plus important qui détermine la durée de la recherche est le nombre de boîtes aux lettres recherchées. Bien que Microsoft ne fournisse pas d’accord de niveau de service pour les horaires de recherche, le tableau suivant répertorie les durées de recherche moyennes d’une recherche de contenu sur la base du nombre de boîtes aux lettres incluses dans la recherche.
     
 |**Nombre de boîtes aux lettres**|**Temps moyen de recherche**|
 |:-----|:-----|
@@ -229,7 +229,7 @@ Gardez les points suivants à l’esprit lorsque vous utilisez la liste de mots 
     
     ![Exemple de requête créée lors de l’utilisation de la liste de mots clés et d’une condition](../media/b463750c-57fa-4602-9fed-0d5a420db3ad.png)
   
-- Lorsque vous effectuez une recherche de contenu, Office 365 vérifie automatiquement la présence de caractères non pris en charge et d’opérateurs booléens qui ne sont pas en majuscules dans votre requête de recherche. En règle générale, les caractères non pris en charge sont masqués et entraînent une erreur ou renvoient des résultats inattendus. Pour plus d’informations sur les caractères non pris en charge qui ont été vérifiés, voir [vérifier la présence d’erreurs dans votre requête de recherche de contenu](check-your-content-search-query-for-errors.md).
+- Lorsque vous effectuez une recherche de contenu, Microsoft 365 vérifie automatiquement la présence de caractères non pris en charge et d’opérateurs booléens qui ne sont pas en majuscules dans votre requête de recherche. En règle générale, les caractères non pris en charge sont masqués et entraînent une erreur ou renvoient des résultats inattendus. Pour plus d’informations sur les caractères non pris en charge qui ont été vérifiés, voir [vérifier la présence d’erreurs dans votre requête de recherche de contenu](check-your-content-search-query-for-errors.md).
     
 - Si vous avez une requête de recherche qui contient des mots clés pour les caractères non anglais (tels que les caractères chinois) , vous pouvez cliquer sur l'icône **langue-pays/région**![requête pays/région dans la recherche de contenu ](../media/8d4b60c8-e1f1-40f9-88ae-ee2a7eca0886.png) et sélectionner une valeur de code de culture dans le pays/région pour la recherche. La langue/région par défaut est neutre. Comment savoir si vous avez besoin de modifier le paramètre de langue d’une recherche de contenu ? Si vous êtes certain que les emplacements de contenu contiennent les caractères non anglais que vous recherchez, mais que la recherche ne renvoie aucun résultat, le paramètre de langue peut être à l’origine du problème. 
   
@@ -239,15 +239,15 @@ Gardez les points suivants à l’esprit lorsque vous utilisez la liste de mots 
     
     Dans le cas rare où le nom d’utilisateur principal (UPN) d’une personne est modifié, l’URL de son emplacement OneDrive est modifiée pour incorporer le nouveau nom d’utilisateur principal (UPN). Dans ce cas, vous devez modifier une recherche de contenu en ajoutant la nouvelle URL OneDrive de l’utilisateur et en supprimant l’ancienne. Pour plus d’informations, voir [Comment les modifications du nom d’utilisateur principal affectent l’URL OneDrive](https://docs.microsoft.com/onedrive/upn-changes).
   
-### <a name="searching-microsoft-teams-and-office-365-groups"></a>Recherche Microsoft Teams et Groupes Office 365
+### <a name="searching-microsoft-teams-and-microsoft-365-groups"></a>Recherche dans Microsoft Teams et les Groupes Microsoft 365
 
-Vous pouvez effectuer une recherche dans la boîte aux lettres associée à un groupe Office 365 ou Microsoft Team. Étant donné que Microsoft Teams est basé sur les groupes Office 365, la recherche est similaire. Dans les deux cas, la recherche porte uniquement sur la boîte aux lettres de groupe ou d’équipe. Les boîtes aux lettres des membres du groupe ou de l’équipe ne sont pas recherchées. Pour effectuer une recherche, vous devez les ajouter spécifiquement à la recherche.
+Vous pouvez effectuer une recherche dans la boîte aux lettres associée à un groupe Microsoft 365 ou Microsoft Team. Étant donné que Microsoft Teams est basé sur les Groupes Microsoft 365, la recherche est similaire. Dans les deux cas, la recherche porte uniquement sur la boîte aux lettres de groupe ou d’équipe. Les boîtes aux lettres des membres du groupe ou de l’équipe ne sont pas recherchées. Pour effectuer une recherche, vous devez les ajouter spécifiquement à la recherche.
   
-Gardez les points suivants à l’esprit lors de la recherche de contenu dans les groupes Microsoft Teams et Office 365.
+Gardez les points suivants à l’esprit lors de la recherche de contenu dans les Groupes Microsoft Teams et Microsoft 365.
   
-- Pour rechercher du contenu se trouvant dans Teams et Groupes Office 365, vous devez spécifier la boîte aux lettres et le site SharePoint qui sont associés à une équipe ou à un groupe.
+- Pour rechercher du contenu se trouvant dans Teams et Groupes Microsoft 365, vous devez spécifier la boîte aux lettres et le site SharePoint qui sont associés à une équipe ou à un groupe.
     
-- Exécutez l'applet de commande **Get-UnifiedGroup** dans Exchange Online pour afficher les propriétés d’une équipe ou d’un groupe Office 365. Il s’agit d’un bon moyen pour obtenir l’URL du site associé à une équipe ou à un groupe. Par exemple, la commande suivante affiche les propriétés sélectionnées d’un groupe Office365 nommé Senior Leadership Team : 
+- Exécutez l’applet de commande **Get-UnifiedGroup** dans Exchange Online pour afficher les propriétés d’une équipe ou d’un groupe Microsoft 365. Il s’agit d’un bon moyen pour obtenir l’URL du site associé à une équipe ou à un groupe. Par exemple, la commande suivante affiche les propriétés sélectionnées d’un groupe Microsoft 365 nommé Senior Leadership Team : 
     
   ```text
   Get-UnifiedGroup "Senior Leadership Team" | FL DisplayName,Alias,PrimarySmtpAddress,SharePointSiteUrl
@@ -260,9 +260,9 @@ Gardez les points suivants à l’esprit lors de la recherche de contenu dans le
     > [!NOTE]
     > Pour exécuter l'applet de commande **Get-UnifiedGroup**, vous devez avoir le rôle de destinataires en affichage seul dans Exchange Online ou être membre d’un groupe de rôles affecté du rôle de destinataires en affichage seul. 
   
-- Lorsque vous effectuez une recherche dans la boîte aux lettres d’un utilisateur, aucun des groupes Office365 ou équipe dont l’utilisateur est membre n’est inclus dans la recherche. De même, lorsque vous effectuez une recherche dans une équipe ou un groupe Office 365, seules les boîtes aux lettres de groupe et les sites de groupe que vous spécifiez sont recherchés. Les boîtes aux lettres et les comptes OneDrive Entreprise des membres du groupe ne sont pas recherchés, sauf si vous les ajoutez explicitement à la recherche.
+- Lorsque vous effectuez une recherche dans la boîte aux lettres d’un utilisateur, aucun des Groupes Microsoft 365 ou équipe dont l’utilisateur est membre n’est inclus dans la recherche. De même, lorsque vous effectuez une recherche dans une équipe ou un groupe Microsoft 365, seules les boîtes aux lettres de groupe et les sites de groupe que vous spécifiez sont recherchés. Les boîtes aux lettres et les comptes OneDrive Entreprise des membres du groupe ne sont pas recherchés, sauf si vous les ajoutez explicitement à la recherche.
     
-- Pour obtenir la liste des membres d’une équipe ou d’un groupe Office 365, vous pouvez afficher les propriétés sur la page **Accueil \> Groupes** dans le centre d’administration Microsoft 365. Vous pouvez également exécuter la commande suivante dans Exchange Online PowerShell : 
+- Pour obtenir la liste des membres d’une équipe ou d’un groupe Microsoft 365, vous pouvez afficher les propriétés sur la page **Accueil \> Groupes** dans le Centre d’administration Microsoft 365. Vous pouvez également exécuter la commande suivante dans Exchange Online PowerShell : 
     
   ```powershell
   Get-UnifiedGroupLinks <group or team name> -LinkType Members | FL DisplayName,PrimarySmtpAddress 
@@ -358,7 +358,7 @@ Voici quelques éléments à prendre en considération lors de la recherche de b
 
 ### <a name="searching-disconnected-or-de-licensed-mailboxes"></a>Recherche de boîtes aux lettres déconnectées ou sans licence
 
-Si la licence Exchange Online (ou la licence Office 365 entière) est supprimée d’un compte d’utilisateur dans Office 365 ou Azure Active Directory, la boîte aux lettres de l'utilisateur devient une *boîte aux lettres déconnectée*. Cela signifie que la boîte aux lettres n’est plus associée au compte d’utilisateur. Voici ce qui se produit lorsque vous effectuez des recherches dans les boîtes aux lettres déconnectées :
+Si la licence Exchange Online (ou la licence Microsoft 365 entière) est supprimée d’un compte d’utilisateur ou dans Azure Active Directory, la boîte aux lettres de l’utilisateur devient une *boîte aux lettres déconnectée*. Cela signifie que la boîte aux lettres n’est plus associée au compte d’utilisateur. Voici ce qui se produit lorsque vous effectuez des recherches dans les boîtes aux lettres déconnectées :
 
 - Si la licence est supprimée d’une boîte aux lettres, il n’est plus possible d’y effectuer des recherches. 
 

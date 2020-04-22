@@ -20,12 +20,12 @@ search.appverid:
 ms.assetid: da585eea-f576-4f55-a1e0-87090b6aaa9d
 description: Les rôles d’administrateur correspondent à des fonctions professionnelles et accordent l'autorisation d'effectuer des tâches spécifiques dans le centre d’administration. Par exemple, l’administrateur du service ouvre les tickets de support avec Microsoft.
 ms.custom: okr_smb
-ms.openlocfilehash: ec601e5860460ab77760a5e18c834b987c6b3d07
-ms.sourcegitcommit: 311bbd6f168225ede166d29696126a1e003eee0f
+ms.openlocfilehash: 4e3cec5b2ff86b35d02f8963a584efdb272f2c5e
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "43151394"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43618919"
 ---
 # <a name="about-admin-roles"></a>À propos des rôles d’administrateur
 
@@ -73,10 +73,10 @@ Vous devrez probablement affecter les rôles suivants au sein de votre organisat
 
 |Rôle d’administrateur     |À qui doit être affecté ce rôle ?  |
 |---------|---------|
-|Administrateur Exchange     |   Attribuez le rôle d’administrateur Exchange aux utilisateurs qui doivent afficher et gérer les boîtes aux lettres de messagerie de vos utilisateurs, les groupes Office 365 et Exchange Online. <br><br> Les administrateurs Exchange peuvent aussi :<br> – Récupérer des éléments supprimés dans la boîte aux lettres d’un utilisateur <br> – Configurer les délégués « Envoyer en tant que » et « Envoyer de la part de » <br>  |
+|Administrateur Exchange     |   Attribuez le rôle d’administrateur Exchange aux utilisateurs qui doivent afficher et gérer les boîtes aux lettres de messagerie de vos utilisateurs, les groupes Microsoft 365 et Exchange Online. <br><br> Les administrateurs Exchange peuvent aussi :<br> – Récupérer des éléments supprimés dans la boîte aux lettres d’un utilisateur <br> – Configurer les délégués « Envoyer en tant que » et « Envoyer de la part de » <br>  |
 |Administrateur global     |   Attribuez le rôle d’administrateur général aux utilisateurs qui doivent avoir un accès global à la plupart des fonctionnalités de gestion et des données dans les services Microsoft Online. <br><br> Le fait de donner un accès global à un grand nombre d’utilisateurs représente un risque pour la sécurité et nous vous recommandons de n’avoir que 2 à 4 administrateurs généraux. <br><br> Seuls les administrateurs généraux peuvent :<br> – Réinitialiser les mots de passe pour l'ensemble des utilisateurs <br> – Ajouter et gérer des domaines <br> <br> **Remarque :** la personne qui s’est inscrite aux services Microsoft Online devient automatiquement un administrateur général. |
 |Lecteur général    |   Attribuez le rôle de lecteur global aux utilisateurs qui doivent afficher les fonctionnalités et paramètres d’administration dans des centres d’administration que l’administrateur général peut afficher. Un administrateur lecteur global n'est pas autorisé à modifier des paramètres.   |
-|Administrateur de groupes     |   Attribuez le rôle d’administrateur de groupes aux utilisateurs qui doivent gérer tous les paramètres de groupes dans les centres d’administration, y compris le centre d’administration Microsoft 365 et le portail Azure Active Directory. <br><br> Les administrateurs de groupe peuvent :<br> – Créer, modifier, supprimer et restaurer des Groupes Office 365 <br> – Créer et mettre à jour les stratégies de création, d’expiration et de désignation de groupes <br> – Créer, modifier, supprimer et restaurer des groupes de sécurité Azure Active Directory| 
+|Administrateur de groupes     |   Attribuez le rôle d’administrateur de groupes aux utilisateurs qui doivent gérer tous les paramètres de groupes dans les centres d’administration, y compris le centre d’administration Microsoft 365 et le portail Azure Active Directory. <br><br> Les administrateurs de groupe peuvent :<br> – créer, modifier, supprimer et restaurer les groupes Microsoft 365 <br> – Créer et mettre à jour les stratégies de création, d’expiration et de désignation de groupes <br> – Créer, modifier, supprimer et restaurer des groupes de sécurité Azure Active Directory| 
 |Administrateur du support technique     |   Attribuez le rôle d’administrateur du support technique aux utilisateurs qui doivent effectuer les opérations suivantes :<br> – Réinitialiser des mots de passe <br> – Forcer les utilisateurs à se déconnecter <br> – Gérer des demandes de service <br> – Surveiller l’état d’intégrité des services <br> <br> **Remarque**: l’administrateur du support technique peut uniquement aider des utilisateurs sans rôle d'administrateur et les utilisateurs ayant ces rôles : lecteur d’annuaire, invités hôtes, administrateur du support technique, lecteur de centre de messages et lecteur de rapports.      |
 |Administrateur d'applications Office    |   Attribuez le rôle d’administrateur d'applications Office aux utilisateurs qui doivent effectuer les opérations suivantes : <br> – Utiliser le service de stratégie cloud Office pour créer et gérer des stratégies basées sur le cloud pour Office <br> – Créer et gérer des demandes de service <br> – Gérer le contenu des nouveautés que les utilisateurs peuvent afficher dans les applications Office   <br> – Surveiller l’état d’intégrité des services  |
 |Administrateur de service    |   Attribuez le rôle d’administrateur de service à un rôle supplémentaire pour les administrateurs ou les utilisateurs dont le rôle n’inclut pas les éléments suivants, bien qu'ils doivent effectuer les opérations suivantes : <br> – Ouvrir et gérer des demandes de service <br> – Afficher et partager des billets du centre de messages   |
@@ -127,9 +127,9 @@ Vous devrez probablement affecter les rôles suivants au sein de votre organisat
 |Opérateur de sécurité     |    Recherche et répond aux alertes de sécurité, gère les fonctionnalités dans Identity Protection Center, surveille l’intégrité du service.     |
 |Lecteur Sécurité     |    Accès en lecture seule aux fonctionnalités de sécurité, rapports de connexion et aux journaux d’audit.     |
 |Administrateur de support de service     |    Crée des demandes de service pour Azure, Microsoft 365 et les services Office 365, et contrôle l’état d’intégrité du service.     |
-|Administrateur SharePoint     |    Accès total à Exchange Online, crée et gère des groupes Office 365, gère les demandes de service et surveille l’état d’intégrité du service.     |
+|Administrateur SharePoint     |    Accès total à SharePoint Online, gère les groupes Microsoft 365, gère les demandes de service et surveille l’état d’intégrité du service.     |
 |Administrateur pour Skype Entreprise     | Accès total à toutes les fonctionnalités Skype et Teams, aux attributs utilisateur Skype, gère les demandes de service et surveille l'état d’intégrité du service.      |
-|Administrateur Teams     |    Accès total au centre d'administration Skype et Teams, gère les groupes Office 365 et les demandes de service, et surveille l’état d’intégrité du service.     |
+|Administrateur Teams     |    Accès total au centre d’administration Skype et Teams, gère les groupes Microsoft 365, les demandes de service, et surveille l’état d’intégrité du service.     |
 |Gestionnaire de communication Teams     |    Attribue des numéros de téléphone, crée et gère des stratégies de voix et de réunion, et lit les analyses d'appels.     |
 |Ingénieur du support de communication Teams     |    Lit les détails de l’enregistrement d’appel pour tous les participants à un appel afin de résoudre les problèmes de communication.     |
 |Spécialiste du support de communication Teams     |    Lit les détails d'appel d'un utilisateur spécifique uniquement afin de résoudre les problèmes de communication.|

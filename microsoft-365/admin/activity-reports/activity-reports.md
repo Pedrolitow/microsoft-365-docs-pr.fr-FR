@@ -18,17 +18,17 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
-description: Obtenez un rapport régulier sur la façon dont les membres de votre organisation utilisent les services Office 365. Le tableau de bord Vue d’ensemble de l’utilisation vous permet d’explorer chaque graphique pour obtenir d'autres informations.
-ms.openlocfilehash: fc9416445fec7a873ae7d09e1af366f029f51ed1
-ms.sourcegitcommit: 8a88b7526e6a3a907f33a8567e0d25b74fe60d80
+description: Obtenez un rapport régulier sur la façon dont les membres de votre organisation utilisent les services Microsoft 365. Le tableau de bord Vue d’ensemble de l’utilisation vous permet d’explorer chaque graphique pour obtenir d'autres informations.
+ms.openlocfilehash: 646096b0e9d9f2c1d701fba312901bf744a74501
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43204055"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43621269"
 ---
-# <a name="activity-reports-in-the-microsoft-365-admin-center"></a>Rapports d’activité dans le Centre d’administration Microsoft 365
+# <a name="microsoft-365-reports-in-the-admin-center"></a>Rapports Microsoft 365 dans le centre d'administration
 
-Vous pouvez facilement identifier la manière dont les membres de votre entreprise utilisent les services Office 365. Par exemple, vous pouvez identifier les personnes qui utilisent souvent un service et pour lesquelles les quotas sont atteints, ou celles qui n’ont pas véritablement besoin d’une licence Office 365.
+Vous pouvez facilement identifier la manière dont les membres de votre entreprise utilisent les services Microsoft 365. Par exemple, vous pouvez identifier les personnes qui utilisent souvent un service et pour lesquelles les quotas sont atteints, ou celles qui n’ont pas véritablement besoin d’une licence Microsoft 365.
   
 Des rapports sont disponibles pour les 7, 30, 90 et 180 derniers jours. Les données ne sont pas tout de suite disponibles pour toutes les périodes couvertes par les rapports. Les rapports sont disponibles au bout de 48 heures.
   
@@ -58,7 +58,7 @@ Visionnez cette vidéo pour une vue d’ensemble : sur la façon d'utiliser les
 ::: moniker-end
 
    
-2. Choisissez **Sélectionner un rapport** en haut du tableau de bord et sélectionnez l'un des rapports disponibles proposés. Vous pouvez également sélectionner un widget d'aperçu de l'activité pour un service (courrier, OneDrive, etc.) pour consulter plus d'informations. <br/>![Tableau de bord d’utilisation d’Office 365](../../media/usage-report-dashboard.png)
+2. Choisissez **Sélectionner un rapport** en haut du tableau de bord et sélectionnez l'un des rapports disponibles proposés. Vous pouvez également sélectionner un widget d'aperçu de l'activité pour un service (courrier, OneDrive, etc.) pour consulter plus d'informations. <br/>![Le tableau de bord d'utilisation](../../media/usage-report-dashboard.png)
   
 ## <a name="who-can-see-reports"></a>Qui peut voir ces rapports ?
 
@@ -87,7 +87,6 @@ Pour plus d'informations, voir [À propos des rôles d'administrateur](../add-us
 En fonction de votre abonnement, les rapports suivants sont disponibles.
   
 - [Activité de messagerie](email-activity.md)
-- [Activité des formulaires](forms-activity.md)
     
 - [Utilisation des boîtes aux lettres](mailbox-usage.md)
     
@@ -96,12 +95,15 @@ En fonction de votre abonnement, les rapports suivants sont disponibles.
 - [Utilisateurs actifs](active-users.md)
   
 - [Utilisation des applications de messagerie](email-apps-usage.md)
+
+- [Activité des formulaires](forms-activity.md)
   
-- [Groupes Office 365](office-365-groups.md)
+- [Groupes Microsoft 365](office-365-groups.md)
   
 - [Activité des utilisateurs de OneDrive Entreprise](onedrive-for-business-activity.md)
   
 - [Utilisation de OneDrive Entreprise](onedrive-for-business-usage.md)
+
 - [Utilisation de ProPlus](microsoft365-apps-usage.md)
   
 - [Utilisation du site SharePoint](sharepoint-site-usage.md)
@@ -170,7 +172,7 @@ Si vous voulez masquer les informations concernant les utilisateurs individuels 
   
 Votre liste d’utilisateurs se présente comme suit :
   
-![Rapports Office 365 : liste d’utilisateurs rendus anonymes](../../media/2ed99bce-4978-4ee3-9ea2-4a8db26eef02.png)
+![Rapports : liste d’utilisateurs rendus anonymes](../../media/2ed99bce-4978-4ee3-9ea2-4a8db26eef02.png)
   
 Quelques minutes sont nécessaires pour répercuter ces modifications dans les rapports du tableau de bord Rapports. Ce paramètre s’applique également à l’API Rapports.
   
@@ -184,4 +186,3 @@ Toutefois, lorsque vous sélectionnez un jour particulier (voir numéro 3), jus
 
 [Rapports dans le Centre de conformité ](https://docs.microsoft.com/microsoft-365/compliance/reports-in-security-and-compliance) et sécurité &amp;
   
-

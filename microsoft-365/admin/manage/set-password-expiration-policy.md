@@ -20,12 +20,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0f54736f-eb22-414c-8273-498a0918678f
 description: "Découvrez comment configurer une stratégie d'expiration des mots de passe pour votre organisation dans le Centre d'administration Microsoft 365. "
-ms.openlocfilehash: 88953317bea2b96c04c291dd028a4e9131b9a83e
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: bcea72dadb6f10ac4ef80677f3def57eca2724cd
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42361659"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43628051"
 ---
 # <a name="set-the-password-expiration-policy-for-your-organization"></a>Définir la stratégie d’expiration des mots de passe pour votre organisation
 
@@ -40,12 +40,12 @@ En tant qu'administrateur, vous pouvez faire en sorte qu'ils expirent après un 
 
 Si vous voulez que les mots de passe utilisateur expirent après un certain temps, suivez la procédure ci-dessous.
 > [!IMPORTANT]
-> Seuls les [administrateurs généraux Office 365](../add-users/about-admin-roles.md) peuvent effectuer ces étapes.
+> Seuls les [administrateurs généraux](../add-users/about-admin-roles.md) peuvent effectuer ces étapes.
   
 1. Dans le centre d’administration, cliquez sur la page **Paramètres** \> **Paramètres**.
 
 2. Accédez à la page <a href="https://go.microsoft.com/fwlink/p/?linkid=2072756" target="_blank">Sécurité & confidentialité</a>.
- Si vous n’êtes pas un administrateur général Office 365, l’option Sécurité et confidentialité n'est pas visible.
+ Si vous n’êtes pas un administrateur général, l’option Sécurité et confidentialité n’est pas visible.
   
 3. Sélectionnez **Stratégie d’expiration du mot de passe**.
   
@@ -61,7 +61,7 @@ Si vous voulez que les mots de passe utilisateur expirent après un certain temp
 
 Voici quelques points dont vous devez tenir compte concernant le fonctionnement actuel de cette fonctionnalité à compter du mois de janvier 2018 :
   
-- Les personnes qui utilisent uniquement l’application Outlook ne sont pas obligées de réinitialiser leur mot de passe Office 365 tant que ce dernier n’a pas expiré dans le cache. Cela peut se produire quelques jours après la date d’expiration. Il n’existe aucune solution de contournement à ce problème pour les administrateurs.
+- Les personnes qui utilisent uniquement l’application Outlook ne sont pas obligées de réinitialiser leur mot de passe Microsoft 365 tant que ce dernier n’a pas expiré dans le cache. Cela peut se produire quelques jours après la date d’expiration. Il n’existe aucune solution de contournement à ce problème pour les administrateurs.
     
 - Les utilisateurs ne reçoivent pas de notification par courrier indiquant que leur mot de passe expire dans X jours. Voulez-vous utiliser cette fonctionnalité ? **[Votez ici !](https://office365.uservoice.com/forums/273493-office-365-admin/suggestions/15028344-office-365-password-email-notification)**
     
@@ -69,10 +69,10 @@ Voici quelques points dont vous devez tenir compte concernant le fonctionnement 
 
 Si vous le souhaitez, vous pouvez empêcher vos utilisateurs de recycler d’anciens mots de passe à partir d’Azure Active Directory. Voir [Définir la stratégie d’expiration des mots de passe pour votre organisation](https://docs.microsoft.com/office365/admin/manage/set-password-expiration-policy?view=o365-worldwide).
 
-De plus, si un employé a utilisé un appareil mobile pour l'accès à Office 365, vous pouvez réinitialiser le mot de passe afin de vous assurer qu'il n’est plus stocké et recyclé à partir de cet emplacement. Pour plus d'informations, voir [Réinitialiser et bloquer l’appareil mobile d’un ancien employé](https://docs.microsoft.com/office365/admin/add-users/remove-former-employee?view=o365-worldwide#wipe-and-block-a-former-employees-mobile-device).
+De plus, si un employé a utilisé un appareil mobile pour accéder à Microsoft 365, vous pouvez réinitialiser le mot de passe afin de vous assurer qu’il n’est plus stocké et recyclé à partir de cet emplacement. Pour plus d'informations, voir [Réinitialiser et bloquer l’appareil mobile d’un ancien employé](https://docs.microsoft.com/office365/admin/add-users/remove-former-employee?view=o365-worldwide#wipe-and-block-a-former-employees-mobile-device).
 
 
-## <a name="synchronize-user-passwords-hashes-from-an-on-premises-active-directory-to-azure-ad-office-365"></a>Synchroniser les hachages de mots de passe utilisateur à partir d'une instance Active Directory locale vers une instance Azure AD (Office 365)
+## <a name="synchronize-user-passwords-hashes-from-an-on-premises-active-directory-to-azure-ad-microsoft-365"></a>Synchroniser les hachages de mots de passe utilisateur à partir d’une instance Active Directory locale vers une instance Azure AD (Microsoft 365)
 
 Cet article est consacré à la définition de la stratégie d’expiration pour les utilisateurs exclusivement cloud (Azure AD). Il ne s’applique pas aux utilisateurs d’identité hybride utilisant la synchronisation par hachage du mot de passe, l’authentification directe ou la Fédération locale telle que ADFS.
   

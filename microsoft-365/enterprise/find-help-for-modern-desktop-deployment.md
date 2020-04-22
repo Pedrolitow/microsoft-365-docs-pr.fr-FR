@@ -1,5 +1,5 @@
 ---
-title: Assistance pour votre déploiement de Windows 10 et Office 365 ProPlus
+title: Trouvez de l’aide pour le déploiement de Windows 10 avec Microsoft 365 Apps for enterprise
 f1.keywords:
 - NOCSH
 ms.author: jogruszc
@@ -14,19 +14,19 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom: ''
-description: Où trouver de l’aide et une assistance pour votre déploiement de Windows 10 et Office 365 ProPlus ?
-ms.openlocfilehash: c581cbfc7fdb537fddf10b20d697a42a8e564bcf
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: Où trouver de l’aide et une assistance pour le déploiement de Windows 10 avec Microsoft 365 Apps for enterprise ?
+ms.openlocfilehash: 7c5376228c3c0b7506fd9b9fe7fb565c0bb76446
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42067553"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634085"
 ---
-# <a name="find-help-for-your-windows-10-and-office-365-proplus-deployment"></a>Assistance pour votre déploiement de Windows 10 et Office 365 ProPlus 
+# <a name="find-help-for-your-windows-10-and-microsoft-365-apps-for-enterprise-deployment"></a>Trouvez de l’aide pour le déploiement de Windows 10 avec Microsoft 365 Apps for enterprise 
 
-Si vous planifiez votre déploiement de Windows 10 avec Office 365 ProPlus, il existe plusieurs options pour obtenir une aide supplémentaire de partenaires certifiés Microsoft et [Microsoft FastTrack](https://www.microsoft.com/fasttrack).
+Si vous planifiez le déploiement de votre Windows 10 avec Microsoft 365 Apps for enterprise, il existe plusieurs options pour obtenir une aide supplémentaire de partenaires certifiés Microsoft et [Microsoft FastTrack](https://www.microsoft.com/fasttrack).
 
-Voici une synthèse des services compris dans la Software Assurance [Desktop Deployment](https://www.aka.ms/howtoshift) pour Windows 10, Office 365 ProPlus et Enterprise Mobility + Security selon les partenaires et les offres FastTrack disponibles. Dans de nombreux cas, ces services sont inclus dans votre abonnement Microsoft 365, Office 365 ou Windows 10 Entreprise éligible. Pour les services gérés par un partenaire tels que l’évaluation de bureau Windows 10 et Office 365 ProPlus, en tant qu’organisation éligible, Microsoft fournit un reçu (ou « N° document ») détaillant les services rendus par le partenaire. Vous trouverez ci-dessous un résumé de chaque offre, ainsi que des liens menant vers leurs descriptions détaillées.
+Voici une synthèse des services compris dans la Software Assurance [Desktop Deployment](https://www.aka.ms/howtoshift) pour Windows 10, Microsoft 365 Apps for enterprise et Enterprise Mobility + Security selon les partenaires et les offres FastTrack disponibles. Dans de nombreux cas, ces services sont inclus dans votre abonnement Microsoft 365, Office 365 ou Windows 10 Entreprise éligible. Pour les services gérés par un partenaire tels que l’évaluation de bureau Windows 10 et Microsoft 365 Apps for enterprise, en tant qu’organisation éligible, Microsoft fournit un reçu (ou « N° document ») détaillant les services rendus par le partenaire. Vous trouverez ci-dessous un résumé de chaque offre, ainsi que des liens menant vers leurs descriptions détaillées.
 
 <br>
 
@@ -36,7 +36,7 @@ Voici une synthèse des services compris dans la Software Assurance [Desktop De
 <td><p><strong>Préparation des applications et des appareils</strong></p>
 <ul>
 <li><p><a href="https://aka.ms/MDAcustomerform">Évaluation Modern Desktop</a>, où un partenaire qualifié dans votre région fournit à votre organisation une application approfondie, la compatibilité appareils et mise à niveau préparation évaluation à l’aide des derniers outils de Microsoft et procédures.</p>
-<li><p><a href="https://www.aka.ms/desktopappassure">Application Desktop Assure</a>, où les ingénieurs de Microsoft FastTrack fournissent des conseils concernant l’avis de sécurité et de correction si vous rencontrez des problèmes de compatibilité application lorsque vous déployez Windows 10 et Office 365 ProPlus ou que vous faites des mises à jour.</p>
+<li><p><a href="https://www.aka.ms/desktopappassure">Application Desktop Assure</a>, où les ingénieurs de Microsoft FastTrack fournissent des conseils concernant l’avis de sécurité et de correction si vous rencontrez des problèmes de compatibilité application lorsque vous déployez Windows 10 et Microsoft 365 Apps for enterprise ou que vous faites des mises à jour.</p>
 </ul></td>
 </tr>
 <tbody>
@@ -44,14 +44,14 @@ Voici une synthèse des services compris dans la Software Assurance [Desktop De
 <td><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-5.png" alt="step 2" height="144" width="144" /></td>
 <td><p><strong>Préparation des répertoires et du réseau</strong></p>
 <ul>
-<li><p><a href="https://docs.microsoft.com/fasttrack/o365-onboarding-and-migration#core">Intégration Core</a>, où les spécialistes de Microsoft FastTrack indiquent l’intégration des identités entre vos services de direction actuels et Azure Active Directory. Cela est nécessaire pour Office 365 ProPlus, Microsoft Intune, OneDrive et autres services  cloud Office 365 et EMS dans le cadre de votre déploiement Bureau.</p></li>
+<li><p><a href="https://docs.microsoft.com/fasttrack/o365-onboarding-and-migration#core">Intégration Core</a>, où les spécialistes de Microsoft FastTrack indiquent l’intégration des identités entre vos services de direction actuels et Azure Active Directory. Cela est nécessaire pour Microsoft 365 Apps for enterprise, Microsoft Intune, OneDrive et autres services cloud Office 365 et EMS dans le cadre de votre déploiement Bureau.</p></li>
 </ul></td>
 </tr>
 <tr class="even">
 <td><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-6.png" alt="step 3" height="144" width="144" /></td>
 <td><p><strong>Distribution d’Office et des applications métier</strong></p>
 <ul>
-<li><p><a href="https://docs.microsoft.com/fasttrack/o365-onboarding-and-migration#office-365-proplus">Office 365 ProPlus</a> configuration et déploiement, où les spécialistes de Microsoft FastTrack fournissent une assistance avec mise en service des licences utilisateur, configuration de l’installation et mise à jour des paramètres en un clic, et création de packages si votre organisation utilise Microsoft Endpoint Configuration Manager.</p></li>
+<li><p><a href="https://docs.microsoft.com/fasttrack/o365-onboarding-and-migration#office-365-proplus">Microsoft 365 Apps for enterprise</a> configuration et déploiement, où les spécialistes de Microsoft FastTrack fournissent une assistance avec mise en service des licences utilisateur, configuration de l’installation et mise à jour des paramètres en un clic, et création de packages si votre organisation utilise Microsoft Endpoint Configuration Manager.</p></li>
 </ul></td>
 </tr>
 <tr class="odd">
@@ -79,7 +79,7 @@ Voici une synthèse des services compris dans la Software Assurance [Desktop De
 <td><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-10.png" alt="step 7" height="144" width="144" /></td>
 <td><p><strong>Office et Windows en tant que service</strong></p>
 <ul>
-<li><p><a href="https://docs.microsoft.com/enterprise-mobility-security/Solutions/fasttrack-center-benefit-process-for-ems-fasttrack-responsibilities">Microsoft Intune</a>, où les spécialistes de Microsoft FastTrack fournissent une assistance avec la configuration des stratégies de mise à jour pour Windows 10 et Office 365 ProPlus. <a href="https://docs.microsoft.com/fasttrack/o365-onboarding-and-migration#office-365-proplus">Office 365 ProPlus</a> où Microsoft FastTrack peut également fournir des conseils concernant le paramétrage des anneaux de déploiement pour rester à jour.</p></li>
+<li><p><a href="https://docs.microsoft.com/enterprise-mobility-security/Solutions/fasttrack-center-benefit-process-for-ems-fasttrack-responsibilities">Microsoft Intune</a>, où les spécialistes de Microsoft FastTrack fournissent une assistance avec la configuration des stratégies de mise à jour pour Windows 10 et Microsoft 365 Apps for enterprise. <a href="https://docs.microsoft.com/fasttrack/o365-onboarding-and-migration#office-365-proplus">Microsoft 365 Apps for enterprise</a> où Microsoft FastTrack peut également fournir des conseils concernant le paramétrage des anneaux de déploiement pour rester à jour.</p></li>
 </ul></td>
 </tr>
 <tr class="odd">
@@ -87,7 +87,7 @@ Voici une synthèse des services compris dans la Software Assurance [Desktop De
 <td><p><strong>Formation et communications des utilisateurs</strong></p>
 <ul>
 <li><p><a href="https://www.microsoft.com/microsoft-365/success/productivitylibrary/quickly-and-easily-transform-new-devices?rtc=2">Bibliothèque de productivité</a>, un ensemble de ressources en ligne auprès de Microsoft pour la communication et formation utilisateur final au sein de Microsoft 365.</p></li>
-<li><p><a href="https://www.office.com/training">Formation Office</a>, un ensemble de ressources en ligne de l’utilisateur final Microsoft Formation sur Office 365 et Office 365 ProPlus.</p></li>
+<li><p><a href="https://www.office.com/training">Formation Office</a>, un ensemble de ressources en ligne de l’utilisateur final Microsoft Formation sur Office 365 et Microsoft 365 Apps for enterprise.</p></li>
 <li><p><a href="https://info.microsoft.com/Windows10AdoptionPlanningKit.html">Kit de planification de l’adoption Windows 10</a>, un ensemble de ressources en ligne auprès de Microsoft qui inclut les éléments de préparation utilisateur.</p></li>
 </ul></td>
 </tr>

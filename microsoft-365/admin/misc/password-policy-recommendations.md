@@ -1,5 +1,5 @@
 ---
-title: Recommandations en matière de stratégie de mot de passe pour Office 365
+title: Recommandations en matière de stratégie de mot de passe
 f1.keywords:
 - CSH
 ms.author: kwekua
@@ -18,18 +18,18 @@ search.appverid:
 - MOE150
 ms.assetid: 9fa2539a-2211-41fd-85a0-bc37b9619ca4
 description: Découvrez comment renforcer la sécurité de votre organisation contre les attaques par mot de passe et la raison pour laquelle vous devez interdire les mots de passe courants et activer l’authentification multifacteur basée sur le risque.
-ms.openlocfilehash: 74f78b6abcc3e3aa7eb3c18c858afcd8e916d432
-ms.sourcegitcommit: d767c288ae34431fb046f4cfe36cec485881385f
+ms.openlocfilehash: eff22b5591893ea10f8e04e8e7f470e8a0bf9079
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "43516922"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627823"
 ---
-# <a name="password-policy-recommendations-for-office-365"></a>Recommandations en matière de stratégie de mot de passe pour Office 365
+# <a name="password-policy-recommendations"></a>Recommandations en matière de stratégie de mot de passe
  
-En tant qu’administrateur d’une organisation Office 365, vous êtes en chargé de la configuration d'une stratégie de mot de passe pour les utilisateurs au sein de votre organisation. La configuration d'une stratégie de mot de passe peut être complexe et déconcertante. Cet article vous fournit des recommandations pour renforcer la sécurité de votre organisation contre les attaques par mot de passe.
+En tant qu’administrateur d’une organisation, vous êtes chargé de la configuration d'une stratégie de mot de passe pour les utilisateurs au sein de votre organisation. La configuration d'une stratégie de mot de passe peut être complexe et déconcertante. Cet article vous fournit des recommandations pour renforcer la sécurité de votre organisation contre les attaques par mot de passe.
   
-Pour déterminer la fréquence d’expiration des mots de passe Office 365 dans votre organisation, consultez [Définir une stratégie d’expiration de mot de passe pour Office 365](../manage/set-password-expiration-policy.md).
+Pour déterminer la fréquence d’expiration des mots de passe Microsoft 365 dans votre organisation, consultez la page [Définir une stratégie d’expiration de mot de passe pour Microsoft 365](../manage/set-password-expiration-policy.md).
   
 ## <a name="understanding-password-recommendations"></a>Présentation des recommandations concernant les mots de passe
 

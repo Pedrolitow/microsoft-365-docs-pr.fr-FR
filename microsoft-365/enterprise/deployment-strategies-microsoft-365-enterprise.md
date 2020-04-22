@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Découvrez le déploiement des phases de l’infrastructure de base de Microsoft 365 pour entreprise.
-ms.openlocfilehash: 765bba743485c13c65cd6377abe01f80f2df4c23
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 5eb4851a4c967baae268e04113b4e44023164db4
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42067796"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43638151"
 ---
 # <a name="microsoft-365-for-enterprise-foundation-infrastructure-deployment-strategies"></a>Stratégies de déploiement de l’infrastructure de base de Microsoft 365 pour entreprise
 
@@ -90,7 +90,7 @@ Voici une expérience utilisateur pilote simplifiée à titre d’exemple :
 
 - En décembre, je dois utiliser mon smartphone pour l’authentification multifacteur. (Identity)
 - En mars, Windows 10 Entreprise est installé sur mon ordinateur de bureau Windows 8.1. (Windows 10 Entreprise)
-- En juin, Office 365 ProPlus est installé à la place d’Office 2013. (Office 365 ProPlus)
+- En juin, les applications Microsoft 365 pour les entreprises sont installées et remplacent Office 2013. (Applications Microsoft 365 pour les entreprises)
 - En septembre, j’obtiens l’inscription des appareils. D’autre part, les stratégies des applications et des appareils entrent en vigueur. (Gestion des appareils mobiles)
 - En décembre, le client Azure Information Protection est installé et je reçois une formation pour savoir comment appliquer des étiquettes aux documents. (Information Protection)
 
@@ -100,7 +100,7 @@ Voici une expérience d’utilisateur final simplifiée à titre d’exemple :
 
 - En janvier, je dois utiliser mon smartphone pour l’authentification multifacteur. (Identity)
 - En avril, Windows 10 Entreprise est installé sur mon ordinateur de bureau Windows 8.1. (Windows 10 Entreprise)
-- En juillet, Office 365 ProPlus est installé à la place d’Office 2013. (Office 365 ProPlus)
+- En juillet, les applications Microsoft 365 pour les entreprises sont installées et remplacent Office 2013. (Applications Microsoft 365 pour les entreprises)
 - En octobre, j’obtiens l’inscription des appareils. D’autre part, les stratégies des applications et des appareils entrent en vigueur. (Gestion des appareils mobiles)
 - En janvier de l’année suivante, le client Azure Information Protection est installé et je reçois une formation pour savoir comment appliquer des étiquettes aux documents. (Information Protection)
 
@@ -120,7 +120,7 @@ Voici une expérience utilisateur pilote simplifiée à titre d’exemple :
 
 - En décembre, je dois utiliser mon smartphone pour l’authentification multifacteur. (Identity)
 - En février, Windows 10 Entreprise est installé sur mon ordinateur de bureau Windows 8.1. (Windows 10 Entreprise)
-- En avril, Office 365 ProPlus est installé à la place d’Office 2013. (Office 365 ProPlus)
+- En avril, les applications Microsoft 365 pour les entreprises sont installées et remplacent Office 2013. (Applications Microsoft 365 pour les entreprises)
 - En juin, j’obtiens l’inscription des appareils. D’autre part, les stratégies des applications et des appareils entrent en vigueur. (Gestion des appareils mobiles)
 - En août, le client Azure Information Protection est installé et je reçois une formation pour savoir comment appliquer des étiquettes aux documents. (Information Protection)
 
@@ -130,7 +130,7 @@ Voici une expérience d’utilisateur final simplifiée à titre d’exemple :
 
 - En janvier, je dois utiliser mon smartphone pour l’authentification multifacteur. (Identity)
 - En mars, Windows 10 Entreprise est installé sur mon ordinateur de bureau Windows 8.1. (Windows 10 Entreprise)
-- En mai, Office 365 ProPlus est installé à la place d’Office 2013. (Office 365 ProPlus)
+- En mai, les applications Microsoft 365 pour les entreprises sont installées et remplacent Office 2013. (Applications Microsoft 365 pour les entreprises)
 - En juillet, j’obtiens l’inscription des appareils. D’autre part, les stratégies des applications et des appareils entrent en vigueur. (Gestion des appareils mobiles)
 - En septembre, le client Azure Information Protection est installé et je reçois une formation pour savoir comment appliquer des étiquettes aux documents. (Information Protection)
 
@@ -158,7 +158,7 @@ Voici une expérience utilisateur pilote simplifiée à titre d’exemple :
 
 - En décembre, je dois utiliser mon smartphone pour l’authentification multifacteur. (Identity)
 - En janvier, Windows 10 Entreprise est installé sur mon ordinateur de bureau Windows 8.1. (Windows 10 Entreprise)
-- En février, Office 365 ProPlus est installé à la place d’Office 2013. (Office 365 ProPlus)
+- En février, les applications Microsoft 365 pour les entreprises sont installées et remplacent Office 2013. (Applications Microsoft 365 pour les entreprises)
 - En mars, j’obtiens l’inscription des appareils. D’autre part, les stratégies des applications et des appareils entrent en vigueur. (Gestion des appareils mobiles)
 - En avril, le client Azure Information Protection est installé et je reçois une formation pour savoir comment appliquer des étiquettes aux documents. (Information Protection)
 
@@ -168,7 +168,7 @@ Voici une expérience d’utilisateur final simplifiée à titre d’exemple :
 
 - En janvier, je dois utiliser mon smartphone pour l’authentification multifacteur. (Identity)
 - En février, Windows 10 Entreprise est installé sur mon ordinateur de bureau Windows 8.1. (Windows 10 Entreprise)
-- En mars, Office 365 ProPlus est installé à la place d’Office 2013. (Office 365 ProPlus)
+- En mars, les applications Microsoft 365 pour les entreprises sont installées et remplacent Office 2013. (Applications Microsoft 365 pour les entreprises)
 - En avril, j’obtiens l’inscription des appareils. D’autre part, les stratégies des applications et des appareils entrent en vigueur. (Gestion des appareils mobiles)
 - En mai, le client Azure Information Protection est installé et je reçois une formation pour savoir comment appliquer des étiquettes aux documents. (Information Protection)
 
@@ -186,7 +186,7 @@ Le département informatique configure l’infrastructure pour les phases 2 à�
 
 - Authentification multifacteur et autres fonctionnalités d’identité (Identity)
 - Windows 10 Entreprise sur les appareils Windows (Windows 10 Entreprise)
-- Office 365 ProPlus pour la suite Office (Office 365 ProPlus)
+- Applications Microsoft 365 pour les entreprises pour la suite Office (applications Microsoft 365 pour les entreprises)
 - Stratégies des applications et des appareils (Gestion des appareils mobiles)
 - Client Azure Information Protection installé et formation pour savoir appliquer des étiquettes aux documents (Information Protection)
 

@@ -21,16 +21,16 @@ search.appverid:
 - MOE150
 ms.assetid: 9f518a6d-1e2c-4d44-93f3-e19013a1552b
 description: "Créer une boîte aux lettres de salle ou de ressource pour que tous les membres de l'organisation puissent réserver la salle ou l'équipement pour des réunions ou des événements à l'aide d'Outlook. "
-ms.openlocfilehash: 1690eba40b71972c18f28e02baf0a39d6557651a
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 80562901ecc7382ce6e4ff3375b98efd89a991f0
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42361859"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43628075"
 ---
 # <a name="room-and-equipment-mailboxes"></a>Boîtes aux lettres de salle et de ressource
 
-Si vous avez une salle de conférence, un véhicule de société ou un équipement que plusieurs personnes peuvent utiliser, vous devez mettre au point une méthode de réservation de ces ressources pour tout le monde. Il est recommandé de créer une boîte aux lettres de salle ou de ressource dans Office 365 pour chaque ressource. Vous pouvez en créer une pour une salle de conférence, des équipements multimédia ou un véhicule utilitaire.
+Si vous avez une salle de conférence, un véhicule de société ou un équipement que plusieurs personnes peuvent utiliser, vous devez mettre au point une méthode de réservation de ces ressources pour tout le monde. Il est recommandé de créer une boîte aux lettres de salle ou de ressource dans Microsoft 365 pour chaque ressource. Vous pouvez en créer une pour une salle de conférence, des équipements multimédia ou un véhicule utilitaire.
   
 Une fois que vous avez créé une boîte aux lettres de salle ou de ressource, tous les membres de l’entreprise peuvent réserver la salle ou l’équipement pour des réunions ou des événements à l’aide d’Outlook. Vous allez découvrir **comment utiliser** et **configurer ce type de boîte aux lettres** dans les deux onglets suivants. Voici quelques questions fréquentes sur les boîtes aux lettres de salle et de ressource. 
   
@@ -66,7 +66,7 @@ Pour configurer une boîte aux lettres de salle ou de ressource, accédez au Cen
   
 2. Sélectionnez **Ajouter**.
     
-3. Remplissez les champs de la salle ou de la ressource :<br/>![Ajouter une boîte aux lettres de salle dans Office 365](../../media/114d49e3-976e-40ef-b0af-2b0f5c85f15e.png)<br/>
+3. Remplissez les champs de la salle ou de la ressource :<br/>![Ajouter une boîte aux lettres de salle dans Microsoft 365](../../media/114d49e3-976e-40ef-b0af-2b0f5c85f15e.png)<br/>
   
   - **Salle** ou **Ressource** : type de boîte aux lettres que vous voulez créer.
     
@@ -105,7 +105,7 @@ Ouvrez la réunion que vous avez programmée dans Outlook, puis supprimez la sal
   
 ### <a name="does-a-room-mailbox-or-equipment-mailbox-need-a-product-license"></a>Une boîte aux lettres de salle ou de ressource a-t-elle besoin d’une licence de produit ?
 
-Non. Si la plupart des membres de votre organisation ont besoin d’une licence pour utiliser Office 365, vous n’avez pas besoin d’attribuer une licence à une boîte aux lettres de salle ou de ressource.
+Non. Même si la plupart des membres de votre organisation ont besoin d’une licence pour utiliser Microsoft 365, vous n’avez pas besoin d’attribuer de licence à une boîte aux lettres de salle ou de ressource.
   
 ### <a name="do-i-need-an-owner-in-charge-of-booking-the-rooms-or-equipment"></a>Faut-il désigner un propriétaire chargé de la réservation des salles ou équipements ?
 
