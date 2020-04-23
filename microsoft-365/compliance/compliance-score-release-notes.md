@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Notes de publication et problèmes connus pour le score de conformité Microsoft (aperçu), une fonctionnalité du centre de conformité M365 qui permet de simplifier et d’automatiser les évaluations des risques.
-ms.openlocfilehash: dd7c99d2f0a86826be7803dc36e390250a4fc37b
-ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
+ms.openlocfilehash: 4368255c87da118174ad08b52994865a8fdcd0af
+ms.sourcegitcommit: f70f75b9dd163c00a3c6bc4b9f9b055e90c50367
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43141549"
+ms.lasthandoff: 04/23/2020
+ms.locfileid: "43790589"
 ---
 # <a name="microsoft-compliance-score-preview-release-notes"></a>Notes de publication du score de conformité Microsoft (aperçu)
 
@@ -62,7 +62,7 @@ De nombreuses fonctions gérées dans le gestionnaire de conformité peuvent dé
    - Les utilisateurs doivent accéder au gestionnaire de conformité pour créer de nouveaux modèles et modifier des [modèles](working-with-compliance-manager.md#templates)existants. 
    - Lors de la création d’un modèle, vous devez inclure des dimensions pour le **produit** et la **certification** afin de garantir l’affichage du modèle dans le score de conformité.
  - **Définition des autorisations**: score de conformité les utilisateurs qui n’ont pas déjà des autorisations dans le gestionnaire de conformité ont besoin de leurs autorisations définies dans le centre de conformité Microsoft 365 ([en savoir plus](compliance-score-setup.md#set-user-permissions-and-assign-roles)).
-- **Transfert de données**: les organisations avec des données dans le gestionnaire de conformité verront ces données dans le score de conformité, et la même est la même.
+- **Transfert de données**: les organisations dont les données se trouvent dans le gestionnaire de conformité voient ces données dans le score de conformité, et la même est la même.
 - **Connexion au gestionnaire de conformité à partir du score de conformité**: si un utilisateur est connecté à un score de conformité et sélectionne un lien pour accéder au gestionnaire de conformité, il n’a pas besoin de se reconnecter. Après avoir cliqué sur le lien, un nouvel onglet s’ouvre dans votre navigateur avec une boîte de dialogue. Dans la section supérieure avec l’en-tête «déjà un client des services Cloud Microsoft ? Connectez-vous à votre compte, «cliquez sur le bouton de **connexion** pour vous connecter automatiquement au gestionnaire de conformité.
 
 ## <a name="known-issues-in-compliance-score-preview"></a>Problèmes connus dans le score de conformité (aperçu)

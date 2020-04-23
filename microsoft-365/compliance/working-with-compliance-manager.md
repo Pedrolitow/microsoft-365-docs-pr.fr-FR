@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Le gestionnaire de conformité Microsoft est un outil d’évaluation des risques gratuit basé sur un flux de travail. Utilisez-le pour suivre, affecter et vérifier les activités de conformité réglementaire relatives aux produits Microsoft.
-ms.openlocfilehash: 2a2c0b9311062da1269f7b56c926ced9e038627f
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 2e67114c4b59fbb676c45995c08b9e4faa05e55b
+ms.sourcegitcommit: f70f75b9dd163c00a3c6bc4b9f9b055e90c50367
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43626230"
+ms.lasthandoff: 04/23/2020
+ms.locfileid: "43790661"
 ---
 # <a name="working-with-microsoft-compliance-manager-preview"></a>Utilisation du gestionnaire de conformité Microsoft (aperçu)
 
@@ -35,7 +35,7 @@ Le gestionnaire de conformité est accessible à partir du portail d’approbati
 2. Connectez-vous à l’aide de votre compte de service Microsoft, qui est votre compte d’utilisateur Office 365, Microsoft 365 ou Azure Active Directory (Azure AD).
 
 > [!NOTE]
-> Dans le portail d’approbation de service, sélectionnez **Gestionnaire de conformité**, version d’évaluation avec les fonctionnalités les plus récentes. Ne sélectionnez pas le **Gestionnaire de conformité (classique)**, qui contient des fonctionnalités héritées qui ne sont pas couvertes par cette documentation.
+> Dans le portail d’approbation de service, sélectionnez **Gestionnaire de conformité**, version d’évaluation avec les fonctionnalités les plus récentes. Ne sélectionnez pas le **Gestionnaire de conformité (classique)**, qui contient les fonctionnalités de version préliminaire non couvertes par cette documentation.
 
 ## <a name="administration"></a>Administration
 
@@ -121,7 +121,7 @@ Suivez les étapes ci-dessous pour créer un groupe :
 2. Dans le volet flyout d' **évaluation** , entrez un titre pour votre évaluation et sélectionnez un modèle dans le menu déroulant.
 3. Sur **Sélectionnez un groupe ou ajouter un nouveau groupe**, sélectionnez **Ajouter un nouveau groupe** , puis entrez le nom de votre groupe dans le champ ci-dessous.
 4. Pour copier des informations à partir d’un groupe existant, faites basculer la **copie des données d’un groupe existant** vers **.** Sélectionnez le groupe à copier dans le menu déroulant, puis activez les cases à cocher de tous les champs que vous souhaitez reporter dans la nouvelle évaluation de votre nouveau groupe.
-5. Sélectionnez **Enregistrer**. Une fois l’opération terminée, le volet flyout se ferme et vous verrez votre nouveau groupe sur votre tableau de bord.
+5. Cliquez sur **Enregistrer**. Une fois l’opération terminée, le volet flyout se ferme et vous verrez votre nouveau groupe sur votre tableau de bord.
 
 Éléments à connaître lors de l’utilisation de groupes :
   
@@ -185,7 +185,7 @@ En un clin d’œil, vous pouvez voir le titre, le propriétaire, la catégorie,
 
 1. Sélectionnez les points de suspension (...) de l’action que vous souhaitez modifier, puis sélectionnez **modifier**.
 2. Basculez le commutateur de la mise à jour continue du score de sécurité sur activé ou désactivé pour activer ou désactiver la surveillance continue via le score de sécurité.
-3. Sélectionnez **Enregistrer**.
+3. Cliquez sur **Enregistrer**.
 
 Lorsque les organisations déploient d’abord Microsoft 365 ou Office 365, il faut environ sept jours pour que l’évaluation complète des données et les intégrer dans votre score. Pendant ce temps, la définition du commutateur de mise à jour continue de score de sécurité sur **désactivé** et la définition manuelle d’une action sur **implémenté** compteront cette action vers votre score. Une fois les sept jours initiaux, l’activation de la mise à jour continue du score sécurisé active la surveillance continue à partir de ce moment-là.
 

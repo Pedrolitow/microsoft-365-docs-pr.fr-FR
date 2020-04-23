@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Le gestionnaire de conformité Microsoft est un outil d’évaluation des risques gratuit basé sur un flux de travail dans le portail d’approbation de service Microsoft. Le gestionnaire de conformité vous permet de suivre, d’affecter et de vérifier les activités de conformité réglementaire liées aux services Cloud de Microsoft.
-ms.openlocfilehash: 3e710f83bebd94719ef66cde7844f1301611adf4
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 73fa3ac2ca15d922a74e1d3ceef6cc74a3bdedca
+ms.sourcegitcommit: f70f75b9dd163c00a3c6bc4b9f9b055e90c50367
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637534"
+ms.lasthandoff: 04/23/2020
+ms.locfileid: "43790567"
 ---
 # <a name="microsoft-compliance-manager-preview-release-notes"></a>Notes de publication du gestionnaire de conformité Microsoft (version préliminaire)
 
@@ -62,6 +62,10 @@ Le gestionnaire de conformité est désormais disponible dans les langues suivan
 ## <a name="known-issues-in-compliance-manager-preview"></a>Problèmes connus dans le gestionnaire de conformité (aperçu)
 
 La section suivante décrit les problèmes connus dans la version actuelle du gestionnaire de conformité.
+
+### <a name="dimension-values"></a>Valeurs de dimension
+
+Suite à la migration de données pendant la version d’avril 2020, certaines organisations peuvent voir un **produit** ou une valeur de **certification** « Custom » dans leurs évaluations et modèles. Cette valeur a été insérée automatiquement si les champs de **produit** ou de **certification** sont vides, ce qui n’a aucun effet sur les flux de travail de données.
 
 ### <a name="compliance-score"></a>Score de conformité
 

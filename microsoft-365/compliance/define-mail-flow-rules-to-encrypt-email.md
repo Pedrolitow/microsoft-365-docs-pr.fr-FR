@@ -16,12 +16,12 @@ ms.assetid: 9b7daf19-d5f2-415b-bc43-a0f5f4a585e8
 ms.collection:
 - M365-security-compliance
 description: Les administrateurs peuvent apprendre à créer des règles de flux de messagerie (règles de transport) pour chiffrer et déchiffrer des messages à l’aide du chiffrement de messages Office 365.
-ms.openlocfilehash: 063c3cf5d33e03e7e0c456a6937fee57451ea709
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: f9e9440c40b68f36d0dcca069dcd0797412af184
+ms.sourcegitcommit: f70f75b9dd163c00a3c6bc4b9f9b055e90c50367
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632979"
+ms.lasthandoff: 04/23/2020
+ms.locfileid: "43790703"
 ---
 # <a name="define-mail-flow-rules-to-encrypt-email-messages"></a>Définir des règles de flux de messagerie pour chiffrer les messages électroniques
 
@@ -91,6 +91,28 @@ Vous pouvez définir des règles de flux de messagerie pour déclencher le chiff
    Vous pouvez choisir **Ajouter une action** si vous souhaitez spécifier une autre action.
 
 7. Dans la liste **procédez comme suit** , supprimez toutes les actions qui sont affectées pour **modifier la sécurité** \> **des messages appliquer la version précédente de OME**.
+
+8. Cliquez sur **Enregistrer**.
+
+## <a name="create-mail-flow-rules-to-remove-encryption-for-outgoing-email-messages-with-the-new-ome-capabilities"></a>Créer des règles de flux de messagerie pour supprimer le chiffrement des messages électroniques sortants avec les nouvelles fonctionnalités de OME
+
+Vous pouvez définir des règles de flux de messagerie pour déclencher le déclenchement de la suppression du chiffrement des messages avec les nouvelles fonctionnalités OME à l’aide du centre d’administration Exchange.
+
+### <a name="use-the-eac-to-create-a-rule-to-remove-encryption-from-email-messages-with-the-new-ome-capabilities"></a>Utiliser le centre d’administration Exchange pour créer une règle afin de supprimer le chiffrement des messages électroniques avec les nouvelles fonctionnalités OME
+
+1. Dans un navigateur Web, à l’aide d’un compte professionnel ou scolaire auquel des autorisations d’administrateur général ont été accordées, [Connectez-vous à Office 365](https://support.office.com/article/b9582171-fd1f-4284-9846-bdd72bb28426#ID0EAABAAA=Web_browser).
+
+2. Sélectionnez la vignette **admin** .
+
+3. Dans le centre d’administration 365 de Microsoft, sélectionnez **centres** \> d’administration **Exchange**.
+
+4. Dans le centre d’administration Exchange, accédez à **règles** de **flux** \> de messagerie et sélectionnez **nouvelle** ![icône](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> **créer une nouvelle règle**. Pour plus d’informations sur l’utilisation du centre d’administration Exchange, consultez la rubrique [Exchange Admin Center in Exchange Online](https://docs.microsoft.com/exchange/exchange-admin-center).
+
+5. Dans **nom**, tapez le nom de la règle, par exemple supprimer le chiffrement du courrier sortant.
+
+6. Dans **appliquer cette règle si** vous sélectionnez les conditions où le chiffrement doit être supprimé des messages, ajoutez **l’expéditeur se trouve** \> **à l’intérieur de l’organisation**. À présent, ajoutez des conditions supplémentaires pour cibler des destinataires spécifiques, comme **le destinataire est situé** \> **en dehors de l’organisation**.
+
+7. Dans **effectuer les opérations suivantes**, sélectionnez **modifier la sécurité** \> des messages **supprimer le chiffrement de messages Office 365 et protection des droits**.
 
 8. Cliquez sur **Enregistrer**.
 
@@ -172,7 +194,7 @@ Lorsque vos utilisateurs de messagerie envoient des messages chiffrés, les dest
 
 7. Dans **effectuer les opérations suivantes**, sélectionnez **modifier la sécurité** \> **des messages pour supprimer la version précédente de OME**.
 
-8. Sélectionnez **Enregistrer**.
+8. Cliquez sur **Enregistrer**.
 
 #### <a name="use-exchange-online-powershell-to-create-a-rule-to-remove-encryption-from-email-replies-encrypted-without-the-new-ome-capabilities"></a>Utiliser Exchange Online PowerShell pour créer une règle afin de supprimer le chiffrement des réponses de messagerie chiffrées sans les nouvelles fonctionnalités OME
 
@@ -200,7 +222,7 @@ Lorsque vos utilisateurs de messagerie envoient des messages chiffrés, les dest
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [New-TransportRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/New-TransportRule).
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Rubriques connexes
 
 [Chiffrement dans Office 365](encryption.md)
 

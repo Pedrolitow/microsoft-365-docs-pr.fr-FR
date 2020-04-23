@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Découvrez les considérations importantes relatives à la sécurité et à la conformité de Windows et d’Office.
-ms.openlocfilehash: 1d38347ca1bdf152a891cfd147ec3fabf552ff3d
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 003064f521f1a68c01da9d6a2c9fb19eae7d3eaf
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42085260"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636771"
 ---
 # <a name="step-5-security-and-compliance-considerations"></a>Étape 5 : considérations relatives à la sécurité et à la conformité
 
@@ -30,20 +30,20 @@ ms.locfileid: "42085260"
 <thead>
 <td><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-8.png" alt="Step 5" height="135" width="135" /></td>
 <td><p><strong>Étape 5 : considérations relatives à la sécurité et à la conformité</strong></p>
-<p>Windows 10 et Office 365 ProPlus fournissent de nouveaux moyens pour protéger vos données, vos périphériques et vos utilisateurs, et détecter et traiter les menaces rapidement. De plus, découvrez comment traiter les problèmes courants liés au chiffrement du disque, aux applications anti-programme malveillant et aux stratégies lorsque vous migrez vers Windows 10.</p></td>
+<p>Windows 10 et Microsoft 365 Apps pour entreprise offrent non seulement de nouveaux moyens de protéger vos données, vos appareils et vos utilisateurs, mais aussi permettent de détecter et de traiter rapidement les menaces. De plus, découvrez comment traiter les problèmes courants liés au chiffrement du disque, aux applications anti-programme malveillant et aux stratégies lorsque vous migrez vers Windows 10.</p></td>
 <td><a href="https://aka.ms/ddev5" target="_blank"><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-18.png" alt="Step 5" height="130" width="231" /></a></td>
 </thead>
 </table>
 
 >[!NOTE]
->La partie relative à la sécurité et à la conformité est la cinquième étape de notre processus de déploiement recommandé couvrant les considérations relatives à la sécurité et à la conformité de Windows 10 et d’Office 365 ProPlus. Pour afficher le processus de déploiement de bureau complet, visitez le [Centre de déploiement de Bureau](https://aka.ms/HowToShift).
+>La partie relative à la sécurité et à la conformité est la cinquième étape de notre processus de déploiement recommandé couvrant les considérations relatives à la sécurité et à la conformité de Windows 10 et de Microsoft 365 Apps pour entreprise. Pour voir le processus complet de déploiement du bureau, visitez le [Centre de déploiement du bureau moderne](https://aka.ms/HowToShift).
 >
 
-Examinez les options de ciblage de nouvelles fonctionnalités de sécurité et de conformité dans le cadre du déploiement de Windows 10 et Office 365 ProPlus, ainsi que les considérations et les obstacles courants lors de la migration des versions précédentes de Windows et d’Office. Bon nombre des fonctionnalités de sécurité dans Windows 10 seul façonne l’évolution vers la plateforme la plus récente. Par ailleurs, l’intégration avec les services cloud dans Office 365 et les options d’identité utilisant Azure Active Directory donnent accès à de nouvelles protections mises à jour en continu pour vos données, vos périphériques et vos utilisateurs.
+Examinons maintenant les options de ciblage de nouvelles fonctionnalités de sécurité et de conformité dans le cadre du déploiement de Windows 10 et Microsoft 365 Apps pour entreprise, ainsi que les considérations et les obstacles courants lors de la migration des versions précédentes de Windows et d’Office. Bon nombre des fonctionnalités de sécurité dans Windows 10 seul façonne l’évolution vers la plateforme la plus récente. Par ailleurs, l’intégration avec les services cloud et les options d’identité utilisant Azure Active Directory donnent accès à de nouvelles protections mises à jour en permanence pour vos données, vos appareils et vos utilisateurs.
 
 ## <a name="overcoming-potential-security-related-deployment-blockers"></a>Surmonter les blocages potentiels du déploiement liés à la sécurité
 
-Avant d’expliquer les nouvelles fonctionnalités que vous pouvez ajouter à mesure que vous migrez vers Windows 10 et Office 365 ProPlus et connectez ces expériences au cloud, commençons avec quelques tendances actuelles qui peuvent souvent interrompre la progression du déploiement.
+Avant d’expliquer les nouvelles fonctionnalités que vous pouvez ajouter à mesure que vous migrez vers Windows 10 et Microsoft 365 Apps pour entreprise et connectez ces expériences au cloud, commençons avec quelques tendances actuelles qui peuvent souvent interrompre la progression du déploiement.
 
 ### <a name="disk-encryption"></a>Chiffrement du disque
 
@@ -63,7 +63,7 @@ Par conséquent, ces applications peuvent par nature être fragilisées par les 
 
 ### <a name="security-policies"></a>Stratégies de sécurité
 
-Les paramètres de stratégie de groupe Active Directory utilisés pour les versions antérieures de Windows et Office ne peuvent peut-être pas être directement transférés vers Windows 10 et Office 365 ProPlus, et il existe différentes considérations relatives aux nouvelles fonctionnalités de sécurité et de conformité. Il est recommandé d’utiliser le Kit de ressources Microsoft Security Compliance afin de recevoir la ligne de base des stratégies de sécurité pour les versions actuelles de Windows d’Office. Par ailleurs, il s’avère intéressant de consulter les stratégies relatives à la gestion des appareils mobiles dans le cadre de Microsoft Intune.
+Les paramètres de stratégie de groupe Active Directory utilisés pour les versions antérieures de Windows et Office ne peuvent ne pas être directement transférés vers Windows 10 et Microsoft 365 Apps pour entreprise. De plus, il existe différentes considérations relatives aux nouvelles fonctionnalités de sécurité et de conformité. Il est recommandé d’utiliser le Kit de ressources Microsoft Security Compliance afin de recevoir la ligne de base des stratégies de sécurité pour les versions actuelles de Windows et d’Office. Par ailleurs, il s’avère intéressant de consulter les stratégies relatives à la gestion des appareils mobiles dans le cadre de Microsoft Intune.
 
 ![](../media/step-5-security-and-compliance-media/step-5-security-and-compliance-media-3.png)
 
@@ -71,11 +71,11 @@ Les paramètres de stratégie de groupe Active Directory utilisés pour les vers
 
 ## <a name="new-security-and-compliance-capabilities-in-microsoft-365"></a>Nouvelles fonctionnalités de sécurité et de conformité dans Microsoft 365
 
-Nous venons d’examiner les considérations pour migrer vos services de protection actuels et les points à prendre en compte avant d’effectuer la migration. Voyons maintenant les nouvelles fonctionnalités que vous pouvez utiliser lorsque vous passez à Windows 10 et Office 365 ProPlus, et les options basées sur le cloud à partir d’EMS et au-delà.
+Nous venons d’examiner les considérations pour migrer vos services de protection actuels et les points à prendre en compte avant d’effectuer la migration. Voyons maintenant les nouvelles fonctionnalités que vous pouvez utiliser lorsque vous passez à Windows 10, Microsoft 365 Apps pour entreprise et les options basées sur le cloud à partir d’EMS et au-delà.
 
 ### <a name="identity-and-access-management"></a>Gestion des identités et des accès
 
-Commençons par la gestion des identités et des accès. Azure Active Directory est le plan de contrôle des identités pour les applications, les périphériques et les services cloud. Il s’agit de la façon moderne de se connecter à Office 365 et à d’autres services cloud. L’accès conditionnel vous permet de définir différentes exigences d’authentification basées sur l’emplacement d’origine de la connexion, l’appareil utilisé, ainsi que des éléments tels que des comportements inhabituels.
+Commençons par la gestion des identités et des accès. Azure Active Directory est le plan de contrôle des identités pour les applications, appareils et services cloud. Il s’agit de la façon moderne de se connecter à Microsoft 365 et à d’autres services cloud. L’accès conditionnel vous permet de définir différentes exigences d’authentification basées sur l’emplacement d’origine de la connexion, l’appareil utilisé, ainsi que des éléments tels que des comportements inhabituels.
 
 Au niveau de l’appareil, la biométrie peut fournir des identificateurs uniques pour assurer un accès plus simple et plus sécurisé à vos appareils et à vos applications, à mesure que vous avancez vers l’objectif d’éliminer les mots de passe. Windows Hello offre l’authentification multifacteur basée sur appareil. Elle repose sur l’appareil lui-même, votre code PIN ou un identificateur biométrique unique tel que votre visage ou vos empreintes digitales, que vous pouvez appliquer par le biais d’une stratégie.
 
@@ -99,7 +99,7 @@ Les services cloud fournissent une couche de protection supplémentaire facultat
 
 Grâce à Microsoft Intelligent Security Graph, vous avez plus rapidement accès aux informations et aux protections contre les menaces émergentes. Vous trouverez ci-dessous des exemples des services dont vous pouvez bénéficier, en commençant par Office.
 
-Le service **[Protection contre la perte de données](https://docs.microsoft.com/office365/securitycompliance/data-loss-prevention-policies) ** intégré à Office 365 ProPlus vous aide à informer les utilisateurs des stratégies de sécurité lorsque du contenu à risque élevé, tel qu’une carte de crédit ou des numéros d’identification, est détecté. Les stratégies peuvent informer ou bloquer l’envoi et le partage après avoir averti les utilisateurs.
+Le service **[Protection contre la perte de données](https://docs.microsoft.com/office365/securitycompliance/data-loss-prevention-policies)** intégré à Microsoft 365 Apps pour entreprise vous aide à informer les utilisateurs des stratégies de sécurité lorsque du contenu à risque élevé, tel qu’une carte de crédit ou des numéros d’identification, est détecté. Les stratégies peuvent informer ou bloquer l’envoi et le partage après avoir averti les utilisateurs.
 
 Le service **[Azure Information Protection](https://docs.microsoft.com/azure/information-protection/rms-client/client-admin-guide)** est un service complémentaire qui peut être utilisé avec Office, permettant aux utilisateurs de classer et étiqueter facilement leurs fichiers Office. Il peut déclencher des actions automatiques sur des fichiers étiquetés, telles que le chiffrement ou le verrouillage du partage.
 
@@ -119,12 +119,12 @@ Le service **[Exploit Guard](https://docs.microsoft.com/windows/security/threat-
 
 #### <a name="microsoft-intune"></a>Microsoft Intune
 
-[Microsoft Intune](https://docs.microsoft.com/intune/introduction-intune) fonctionne comme un service de gestion basé sur le cloud pour les scénarios mobiles, notamment les appareils Windows, Android et IOS, et peut désormais être configuré pour la gestion afin de parfaire et d’étendre des contrôles pour les charges de travail spécifiques gérées par Configuration Manager. L’un des avantages ici est que les appareils accédant aux ressources protégées doivent parfois s’inscrire dans la gestion des appareils, même les appareils non gérés, les appareils joints sans domaine ou les appareils joints sans Azure AD. Vous pouvez également bénéficier de l’application de la configuration granulaire et d’une stratégie de conformité au niveau des applications et du système d’exploitation. Les paramètres et les stratégies d’applications peuvent être configurés de manière centralisée et appliqués pour les applications Office 365 ProPlus et Store dans Windows 10 à l’aide de Microsoft Intune.
+[Microsoft Intune](https://docs.microsoft.com/intune/introduction-intune) fonctionne comme un service de gestion basé sur le cloud pour les scénarios mobiles, notamment les appareils Windows, Android et IOS, et peut désormais être configuré pour la co-gestion afin de parfaire et d’étendre des contrôles pour les charges de travail spécifiques gérées par le Gestionnaire de configuration. L’un des avantages ici est que les appareils accédant aux ressources protégées doivent parfois s’inscrire dans la gestion des appareils, même les appareils non gérés, les appareils joints sans domaine ou les appareils joints sans Azure AD. Vous pouvez également bénéficier de l’application de la configuration granulaire et d’une stratégie de conformité au niveau des applications et du système d’exploitation. Les paramètres et les stratégies d’applications peuvent être configurés de manière centralisée et appliqués pour les applications Microsoft 365 Apps pour entreprise et Store dans Windows 10 à l’aide de Microsoft Intune.
 
 ## <a name="next-step"></a>Étape suivante
 
-## <a name="step-6-os-deployment-and-feature-updateshttpsakamsmdd6"></a>[Étape 6 : déploiement du système d’exploitation et mises à jour des fonctionnalités](https://aka.ms/mdd6)
+## <a name="step-6-os-deployment-and-feature-updates"></a>[Étape 6 : déploiement du système d’exploitation et mises à jour des fonctionnalités](https://aka.ms/mdd6)
 
 ## <a name="previous-step"></a>Étape précédente 
 
-## <a name="step-4-user-files-and-settingshttpsakamsmdd4"></a>[Étape 4 : paramètres et fichiers utilisateur](https://aka.ms/mdd4)
+## <a name="step-4-user-files-and-settings"></a>[Étape 4 : paramètres et fichiers utilisateur](https://aka.ms/mdd4)

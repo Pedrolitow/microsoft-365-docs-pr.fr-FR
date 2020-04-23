@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 4ef19b106d5b00bb8b436b56b6da8bb653873f3a
-ms.sourcegitcommit: d818828c66cf98b0b0037ba8b3cb790c940281b7
+ms.openlocfilehash: 02be641b93ffdb245ae6073358b66c1204e46093
+ms.sourcegitcommit: 4581afb3116ccd7d0144398e83cd6a6990e3683b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43583321"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43772515"
 ---
 # <a name="criminal-justice-information-services-cjis-security-policy"></a>Stratégie de sécurité CJIS (pénal Justice Information Services)
 
@@ -43,7 +43,7 @@ Découvrez les avantages de la stratégie de sécurité CJIS sur le Cloud Micros
 
 Découvrez comment accélérer votre stratégie de sécurité CJIS à l’aide de notre plan de sécurité et de conformité Azure : [Télécharger les instructions d’implémentation CJIS pour les services Cloud de Microsoft Governance](https://gallery.technet.microsoft.com/CJIS-Implementation-62af7c27)
 
-## <a name="microsoft-in-scope-cloud-services"></a>Services Cloud Microsoft concernés
+## <a name="microsoft-in-scope-cloud-services"></a>Services Cloud Microsoft dans le périmètre
 
 - [Public Azure](https://aka.ms/AzureCompliance)
 - [Dynamics 365 gouvernement américain](https://aka.ms/d365-compliance-list)
@@ -64,7 +64,7 @@ Alabama, Alaska, Arkansas, Arizona, Californie, Colorado, Floride, Géorgie, Haw
 
 L’engagement de Microsoft à respecter les contrôles de réglementation CJIS applicables permet aux organisations de justice pénale de mettre en œuvre des solutions basées sur le nuage et de respecter la stratégie de sécurité CJIS V 5.8.
 
-## <a name="frequently-asked-questions"></a>Questions fréquemment posées
+## <a name="frequently-asked-questions"></a>Foire aux questions
 
 **Où puis-je demander des informations de conformité ?**
 
@@ -82,7 +82,6 @@ La [stratégie de sécurité CJIS](https://aka.ms/cjis-security-policy) couvre l
 
 - [Services d’information sur la justice pénale](https://aka.ms/cjis)
 - [Stratégie de sécurité CJIS](https://aka.ms/cjis-security-policy)
-- [Documentation de la stratégie de sécurité CJIS version 5,3](https://aka.ms/cjis-backgrounder)
 - [Instructions d’implémentation CJIS pour le gouvernement Azure](https://aka.ms/cjisimplementationguidelines)
 - [Infrastructure de conformité Microsoft Common Controls Hub](https://www.microsoft.com/trustcenter/common-controls-hub)
 - [Cloud Microsoft Service publique](https://go.microsoft.com/fwlink/?linkid=2087246)
