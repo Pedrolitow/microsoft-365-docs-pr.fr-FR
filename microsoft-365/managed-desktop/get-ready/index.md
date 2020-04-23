@@ -5,12 +5,12 @@ keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
-ms.openlocfilehash: 0bfd6e61a08d8db2e6226a004006be9750b94a10
-ms.sourcegitcommit: 053d42480d8aa3792ecb0027ddd53d383a029474
+ms.openlocfilehash: 61bf3b54b5499321288793acea9552b48d7bd492
+ms.sourcegitcommit: f70f75b9dd163c00a3c6bc4b9f9b055e90c50367
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "37595590"
+ms.lasthandoff: 04/23/2020
+ms.locfileid: "43790610"
 ---
 # <a name="get-ready-for-enrollment-in-microsoft-managed-desktop"></a>Préparer son inscription au Bureau géré Microsoft
 
@@ -21,5 +21,6 @@ Ces rubriques décrivent les étapes à suivre dans votre organisation pour vous
 - [Préparer l’accès aux ressources locales pour le Bureau géré Microsoft](network.md)
 - [Préparer les lecteurs mappés pour le Bureau géré Microsoft](mapped-drives.md)
 - [Préparer les certificats et les profils réseau pour le Bureau géré Microsoft](certs-wifi-lan.md)
+- [Préparer les ressources d’impression pour le bureau géré Microsoft](printing.md)
 - [Applications dans Bureau géré Microsoft](apps.md)
 
