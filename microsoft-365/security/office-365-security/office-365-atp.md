@@ -17,17 +17,17 @@ ms.assetid: e100fe7c-f2a1-4b7d-9e08-622330b83653
 ms.collection:
 - M365-security-compliance
 description: Office 365 – Protection avancée contre les menaces inclut des pièces jointes sécurisées, des liens sûrs, des outils anti-hameçonnage avancés, des outils de création de rapports et des fonctionnalités d’intelligence contre les menaces.
-ms.openlocfilehash: 34dc541087eb05af6b688670112cf02489164fb1
-ms.sourcegitcommit: 9ed3283dd6dd959faeca5c22613f9126261b9590
+ms.openlocfilehash: 993939027962bd51ad4fdc3381c1e7d8ea4eddd4
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43528604"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634531"
 ---
 # <a name="office-365-advanced-threat-protection"></a>Office 365 – Protection avancée contre les menaces
 
 > [!IMPORTANT]
-> Cet article est destiné aux entreprises qui ont [Office 365 – Protection avancée contre les menaces](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description). Si vous utilisez Outlook.com, Office 365 Famille ou Office 365 Personnel et que vous recherchez des informations sur les liens ou pièces jointes fiables dans Outlook, reportez-vous à [Sécurité d’Outlook.com renforcée pour abonnés Office 365](https://support.office.com/article/882d2243-eab9-4545-a58a-b36fee4a46e2).
+> Cet article est destiné aux entreprises qui ont [Office 365 – Protection avancée contre les menaces](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description). Si vous utilisez Outlook.com, Microsoft 365 Famille ou Microsoft 365 Personnel et que vous recherchez des informations sur les liens ou pièces jointes fiables dans Outlook, reportez-vous à [Sécurité d’Outlook.com renforcée pour abonnés Microsoft 365](https://support.office.com/article/882d2243-eab9-4545-a58a-b36fee4a46e2).
 
 ## <a name="overview"></a>Vue d’ensemble
 
@@ -61,7 +61,7 @@ Le tableau suivant récapitule les actions incluent dans chaque plan.
 
 ## <a name="configure-atp-policies"></a>Configurez des stratégies ATP
 
-Avec Office 365 ATP – Protection avancée contre les menaces, l’équipe de sécurité de votre organisation peut configurer la protection en définissant des stratégies dans le centre de sécurité et de conformité d’Office 365 (se référer à la [https://protection.office.com](https://protection.office.com) > **gestion des menaces** > **dans la stratégie**).
+Avec Office 365 ATP – Protection avancée contre les menaces, l’équipe de sécurité de votre organisation peut configurer la protection en définissant des stratégies dans le centre de sécurité et de conformité (se référer à la [https://protection.office.com](https://protection.office.com) > **gestion des menaces** > **dans la stratégie**).
 
 > [!TIP]
 > Consulter [Se protéger contre les menaces](protect-against-threats.md) pour définir une brève liste de stratégies.
@@ -112,16 +112,16 @@ Pour accéder aux fonctionnalités ATP dans le Centre de sécurité et conformit
 
 |Rôle ou groupe de rôles|Ressources pour en savoir plus|
 |---------|---------|
-|Administrateur général Office 365 (peut être affecté dans Azure Active Directory ou dans le centre de sécurité et conformité Office 365) |[À propos des rôles d'administrateur Office 365](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)|
-|Administrateur de sécurité (peut être affecté dans Azure Active Directory ou le centre de sécurité et conformité Office 365) |[Autorisations des rôles d’administrateur dans Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)<br><br/>[Autorisations dans le centre de conformité et de sécurité](permissions-in-the-security-and-compliance-center.md)|
+|Administrateur général (peut être affecté dans Azure Active Directory ou dans le centre de sécurité et conformité) |[À propos des rôles d’administrateur Microsoft 365](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)|
+|Administrateur de sécurité (peut être affecté dans Azure Active Directory ou le centre de sécurité et conformité) |[Autorisations des rôles d’administrateur dans Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)<br><br/>[Autorisations dans le centre de conformité et de sécurité](permissions-in-the-security-and-compliance-center.md)|
 |Gestion de l’organisation Exchange Online (elle est affectée à Exchange Online)|[Autorisations dans Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo)<br><br> [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell)|
-|Rechercher et vider (cette opération est attribuée uniquement dans le centre de conformité et sécurité Office 365) |[Autorisations dans le Centre de sécurité et de conformité] (permissions-in-the-security-and-compliance-center.md|
+|Rechercher et vider (cette opération est attribuée uniquement dans le centre de conformité et sécurité) |[Autorisations dans le Centre de sécurité et de conformité] (permissions-in-the-security-and-compliance-center.md|
 
 Pour en savoir plus, consultez [Autorisations dans le Centre de sécurité et de conformité](permissions-in-the-security-and-compliance-center.md).
 
 ## <a name="get-office-365-atp"></a>Obtenir Office 365 ATP – Protection avancée contre les menaces
 
-Office 365 ATP – Protection avancée contre les menaces est inclus dans certains abonnements, tels que Microsoft 365 E5, Office 365 E5, Office 365 A5 et Microsoft 365 Business. Si votre abonnement n’inclut pas Office 365 – Protection avancée contre les menaces, vous pouvez acheter ATP Plan 1 ou ATP Plan 2 en tant que composant additionnel de certains abonnements. Pour en savoir plus, consultez les ressources suivantes :
+Office 365 ATP – Protection avancée contre les menaces est inclus dans certains abonnements, tels que Microsoft 365 E5, Office 365 E5, Office 365 A5 et Microsoft 365 Business Premium. Si votre abonnement n’inclut pas Office 365 – Protection avancée contre les menaces, vous pouvez acheter ATP Plan 1 ou ATP Plan 2 en tant que composant additionnel de certains abonnements. Pour en savoir plus, consultez les ressources suivantes :
 
 - [Disponibilité d’Office 365 – Protection avancée contre les menaces](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#office-365-advanced-threat-protection-atp-availability) pour obtenir la liste des abonnements incluant les plans de protection avancée contre les menaces.
 

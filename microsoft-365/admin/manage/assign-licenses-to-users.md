@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: 997596b5-4173-4627-b915-36abac6786dc
 description: Découvrez l'attribution de licences à des utilisateurs ou le déplacement d'utilisateurs vers un nouvel abonnement.
-ms.openlocfilehash: ab8a54db77ea022cbd3aec7b3c30e8a988ff7853
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 2019aeef0d802e92489b09bbddb564c4ecded8c0
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42362059"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43628243"
 ---
 # <a name="assign-licenses-to-users"></a>Attribuer des licences aux utilisateurs
 
@@ -224,7 +224,7 @@ Si vous disposez de plusieurs abonnements et que certains utilisateurs possèden
 
 ## <a name="what-you-need-to-know-about-assigning-licenses-to-users"></a>Ce que vous devez savoir sur l'attribution de licences à des utilisateurs
 
-- Vous devez être administrateur général, administrateur de facturation, administrateur de licence ou administrateur de gestion des utilisateurs. Pour plus d'informations, consultez [À propos des rôles d'administrateur Office 365](../add-users/about-admin-roles.md).
+- Vous devez être administrateur général, administrateur de facturation, administrateur de licence ou administrateur de gestion des utilisateurs. Pour plus d'informations, consultez [À propos des rôles d'administrateur Microsoft 365](../add-users/about-admin-roles.md).
 
 - Vous pouvez [attribuer des licences à des comptes utilisateurs avec Office 365 PowerShell](https://go.microsoft.com/fwlink/p/?linkid=850410).
 
@@ -236,7 +236,7 @@ Si vous disposez de plusieurs abonnements et que certains utilisateurs possèden
 
 [Comprendre les abonnements et les licences](../../commerce/licenses/subscriptions-and-licenses.md)
 
-[Résoudre les conflits de licence dans Office 365 pour les entreprises](resolve-license-conflicts.md)
+[Résoudre les conflits de licence dans Microsoft 365 pour les entreprises](resolve-license-conflicts.md)
 
 [Retirer des licences aux utilisateurs](remove-licenses-from-users.md)
 

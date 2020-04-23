@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 0e22bcf3-bad3-42a4-b44f-276e0cf4790f
 description: 'Résumé : Créez des abonnements d’essai Office 365 et Enterprise Mobility + Security (EMS) avec des utilisateurs et des groupes pour un environnement de développement/test de campagne électorale.'
-ms.openlocfilehash: a61cc21b67cafd213d47076698929d0aa2644d08
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: f07ccbb648ef20c6b7c6ef005afef59fd89d56aa
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42083483"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43638454"
 ---
 # <a name="configure-groups-and-users-for-a-political-campaign-devtest-environment"></a>Configuration de groupes et d’utilisateurs pour un environnement de développement/test pour une campagne électorale
 
@@ -36,9 +36,9 @@ Dans cette phase, vous obtenez des abonnements d’essai pour Office 365 E5 et E
 
 Suivez d’abord les instructions de la **Phase 2** de l’[environnement de développement/test Office 365](https://docs.microsoft.com/office365/enterprise/office-365-dev-test-environment).
 
-Ensuite, inscrivez-vous à l’abonnement d’évaluation EMS E5 et ajoutez-le à la même organisation que votre abonnement d’évaluation Office 365.
+Ensuite, inscrivez-vous à l’abonnement d’évaluation EMS E5 et ajoutez-le à la même organisation que votre abonnement d’évaluation.
 
-1. Si nécessaire, connectez-vous au centre d’administration avec les identifiants du compte d’administrateur général de votre abonnement d’essai. Pour obtenir de l’aide, consultez [Où se connecter à Office 365](https://support.office.com/article/e9eb7d51-5430-4929-91ab-6157c5a050b4).
+1. Si nécessaire, connectez-vous au centre d’administration avec les identifiants du compte d’administrateur général de votre abonnement d’essai. Pour obtenir de l’aide, consultez [Où se connecter](https://support.office.com/article/e9eb7d51-5430-4929-91ab-6157c5a050b4).
 
 2. Cliquez sur la vignette **Administration**.
 
@@ -191,7 +191,7 @@ Enregistrez ces valeurs pour utiliser les abonnements aux versions d’évaluati
 
   Par exemple, pour le nom de domaine de l’abonnement à la version d’évaluation de contoso.onmicrosoft.com, le nom de l’organisation est « contoso ».
 
-- Le nom de l’administrateur général Office 365 : ![Souligner](../../media/Common-Images/TableLine.png).onmicrosoft.com
+- Nom d’administrateur général : ![Souligner](../../media/Common-Images/TableLine.png).onmicrosoft.com
 
   Enregistrez le mot de passe pour ce compte et le mot de passe initial commun pour les autres comptes d’utilisateurs dans un emplacement sécurisé.
 

@@ -19,12 +19,12 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: 5b9c8e41-25d2-436d-89bb-9aecb9ec2b80
 description: 'Résumé : appliquez des étiquettes de confidentialité pour protéger les fichiers d’une équipe hautement confidentielle.'
-ms.openlocfilehash: b263aeae335b83cadb45b16d70a2a45d56f1cbd3
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: c36daef7f28ad8bd3306fd7f3f7f1558a3594e68
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42083366"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637615"
 ---
 # <a name="protect-files-in-teams-with-sensitivity-labels"></a>Protéger des fichiers dans Teams avec des étiquettes de confidentialité
 
@@ -44,7 +44,7 @@ Suivez [ces instructions](https://docs.microsoft.com/microsoft-365/compliance/en
 
 - Le nom de l’étiquette ou de la sous-étiquette contient le nom de l’équipe
 - Le chiffrement est activé
-- Le groupe Office 365 de l’équipe possède des autorisations de co-édition
+- Le groupe Microsoft 365 pour les membres de l’équipe possède des autorisations de co-édition
 
 Une fois que vous avez créé, publiez la nouvelle étiquette ou sous-étiquette pour vos utilisateurs, puis appliquez-les aux fichiers en local avant de les charger dans l’équipe ou plus tard une fois que le fichier est stocké dans l’équipe.
 

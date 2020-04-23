@@ -18,12 +18,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: Découvrez trois outils qui permettent de surveiller les fuites de données personnelles.
-ms.openlocfilehash: 617f0fde0e4b15a014658ba0fc3cf2def4b88d81
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 9bc56d1de153f1357064d2b3ddada0d0533bc3cf
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42088387"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635159"
 ---
 # <a name="monitor-for-leaks-of-personal-data"></a>Surveillance des fuites de données personnelles
 
@@ -33,13 +33,13 @@ Il existe de nombreux outils qui peuvent être utilisés pour surveiller l’uti
 
 Dans cette illustration :
 
-- Commencez par les rapports sur la protection contre la perte de données Office 365 pour surveiller les données personnelles dans SharePoint Online, OneDrive Entreprise et le courrier électronique en transit. Ils offrent le meilleur niveau de détail pour surveiller les données personnelles. Toutefois, ces rapports n’incluent pas tous les services dans Office 365.
+- Commencez par les rapports sur la protection contre la perte de données Microsoft 365 pour surveiller les données personnelles dans SharePoint Online, OneDrive Entreprise et le courrier électronique en transit. Ils offrent le meilleur niveau de détail pour surveiller les données personnelles. Toutefois, ces rapports n’incluent pas tous les services dans Office 365.
 
-- Utilisez ensuite les stratégies d’alerte et le journal d’audit Office 365 pour surveiller l’activité des services Office 365. Configurez la surveillance continue ou faites des recherches dans le journal d’audit pour identifier un incident. Le journal d’audit Office 365 fonctionne sur tous les services Office 365 (Sway, PowerBI, eDiscovery, Dynamics 365, Microsoft Flow, Microsoft Teams, l’activité d’administration, OneDrive Entreprise, SharePoint Online, le courrier électronique en transit et les boîtes aux lettres au repos). Les conversations Skype sont incluses dans les boîtes aux lettres au repos.
+- Utilisez ensuite les stratégies d’alerte et le journal d’audit pour surveiller l’activité des services. Configurez la surveillance continue ou faites des recherches dans le journal d’audit pour identifier un incident. Le journal d’audit fonctionne sur tous les services (Sway, PowerBI, eDiscovery, Dynamics 365, Microsoft Flow, Microsoft Teams, l’activité d’administration, OneDrive Entreprise, SharePoint Online, le courrier électronique en transit et les boîtes aux lettres au repos). Les conversations Skype sont incluses dans les boîtes aux lettres au repos.
 
-- Enfin, utilisez Microsoft Cloud App Security pour surveiller les fichiers contenant des données sensibles chez d’autres fournisseurs SaaS. Il sera bientôt possible d’utiliser des types d’informations sensibles Office 365 et des étiquettes unifiées dans Azure Information Protection et Office avec Cloud App Security. Vous pouvez configurer des stratégies qui s’appliquent à toutes vos applications SaaS ou des applications spécifiques (Box, par exemple). Cloud App Security ne découvre pas les fichiers dans Exchange Online, y compris les fichiers joints à un courrier électronique.
+- Enfin, utilisez Microsoft Cloud App Security pour surveiller les fichiers contenant des données sensibles chez d’autres fournisseurs SaaS. Il sera bientôt possible d’utiliser des types d’informations sensibles et des étiquettes unifiées dans Azure Information Protection et Office avec Cloud App Security. Vous pouvez configurer des stratégies qui s’appliquent à toutes vos applications SaaS ou des applications spécifiques (Box, par exemple). Cloud App Security ne découvre pas les fichiers dans Exchange Online, y compris les fichiers joints à un courrier électronique.
 
-## <a name="office-365-data-loss-prevention-reports"></a>Rapports de protection contre la perte de données d’Office 365
+## <a name="data-loss-prevention-reports"></a>Rapports de protection contre la perte de données
 
 Après avoir créé des stratégies de protection contre la perte de données, vous voulez vérifier qu’elles fonctionnent comme prévu et vous aident à maintenir la conformité. Avec les rapports DLP d’Office 365, vous pouvez rapidement visualiser le nombre de correspondances de stratégie DLP, de remplacements et de faux positifs, savoir si ce nombre augmente ou diminue dans le temps, filtrer le rapport de différentes manières et afficher des détails supplémentaires en sélectionnant un point sur une ligne du graphique.
 
@@ -65,17 +65,17 @@ Pour plus d’informations, consultez la rubrique [Affichage des rapports de pro
 
 ![Rapport affichant les correspondances de stratégie DLP](../../media/Monitor-for-leaks-of-personal-data-image2.png)
 
-## <a name="office-365-audit-log-and-alert-policies"></a>Journal d’audit Office 365 et stratégies d’alerte
+## <a name="audit-log-and-alert-policies"></a>journal d’audit et stratégies d’alerte
 
-Le journal d’audit Office 365 contient les événements Exchange Online, SharePoint Online, OneDrive Entreprise, Azure Active Directory, Microsoft Teams, Power BI, Sway et d’autres services Office 365.
+Le journal d’audit contient les événements Exchange Online, SharePoint Online, OneDrive Entreprise, Azure Active Directory, Microsoft Teams, Power BI, Sway et d’autres services.
 
-Le Centre de sécurité et de conformité propose deux méthodes pour surveiller et générer des rapports sur la base du journal d’audit Office 365 :
+Le Centre de sécurité et de conformité propose deux méthodes pour surveiller et générer des rapports sur la base du journal d’audit :
 
 - Configurer des stratégies d’alerte, afficher des alertes et surveiller les tendances : utilisez les nouveaux outils de tableau de bord d’alertes et de stratégie d’alerte dans le Centre de sécurité et de conformité.
 
 - Effectuer des recherches directement dans le journal d’audit : vous pouvez rechercher tous les événements dans une plage de dates spécifiée ou filtrer les résultats en fonction de critères spécifiques, tels que l’utilisateur ayant effectué l’action, l’action ou l’objet cible.
 
-Les équipes de conformité et de sécurité des informations peuvent utiliser ces outils pour revoir de façon proactive les activités effectuées par les utilisateurs finaux et les administrateurs dans les services Office 365. Des alertes automatiques peuvent être configurées pour envoyer des notifications par courrier électronique lorsque certaines activités se produisent sur des collections de sites spécifiques (par exemple, lorsque le contenu est partagé à partir de sites connus pour contenir des informations relatives au RGPD). Ainsi, ces équipes peuvent suivre les utilisateurs afin de vérifier que les stratégies de sécurité d’entreprise sont suivies, ou de fournir des formations supplémentaires.
+Les équipes de conformité et de sécurité des informations peuvent utiliser ces outils pour revoir de façon proactive les activités effectuées par les utilisateurs finaux et les administrateurs dans les services. Des alertes automatiques peuvent être configurées pour envoyer des notifications par courrier électronique lorsque certaines activités se produisent sur des collections de sites spécifiques (par exemple, lorsque le contenu est partagé à partir de sites connus pour contenir des informations relatives au RGPD). Ainsi, ces équipes peuvent suivre les utilisateurs afin de vérifier que les stratégies de sécurité d’entreprise sont suivies, ou de fournir des formations supplémentaires.
 
 Les équipes de sécurité des informations peuvent aussi effectuer des recherches dans le journal pour enquêter sur des violations de données présumées, déterminer la cause initiale et l’étendue de la violation. Cette fonctionnalité intégrée facilite la conformité à l’article 33 et 34 du RGPD, qui exige que des notifications soient fournies à l’autorité de surveillance du RGPD et aux personnes victimes d’une violation de données sur une période donnée. Les entrées du journal d’audit sont conservées pendant 90 jours seulement au sein du service (il est souvent recommandé que ces journaux soient conservés pour des périodes de temps plus longues et de nombreuses organisations en ont fait la demande).
 
@@ -87,13 +87,13 @@ Plus d’informations sur les stratégies d’alerte et l’exécution d’une r
 
 - [Effectuer des recherches dans le journal d’audit dans le Centre de sécurité et de conformité Office 365](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log) (introduction)
 
-- [Activer ou désactiver la recherche dans un journal d’audit Office 365](https://docs.microsoft.com/microsoft-365/compliance/turn-audit-log-search-on-or-off)
+- [Activer ou désactiver la recherche dans le journal d’audit](https://docs.microsoft.com/microsoft-365/compliance/turn-audit-log-search-on-or-off)
 
 - [Rechercher le journal d’audit](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance)
 
 - [Search-UnifiedAuditLog](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-unifiedauditlog) (cmdlet)
 
-- [Propriétés détaillées dans le journal d’audit Office 365](https://docs.microsoft.com/microsoft-365/compliance/detailed-properties-in-the-office-365-audit-log)
+- [Propriétés détaillées dans le journal d’audit](https://docs.microsoft.com/microsoft-365/compliance/detailed-properties-in-the-office-365-audit-log)
 
 ## <a name="microsoft-cloud-app-security"></a>Microsoft Cloud App Security
 
@@ -113,9 +113,9 @@ La seconde stratégie bloque les téléchargements de fichiers sur des appareils
 
 Les types d’attribut suivants seront bientôt disponibles dans Cloud App Security :
 
-- Types d'informations sensibles Office 365
+- Types d’informations sensibles
 
-- Étiquettes unifiées dans Office 365 et Azure Information Protection
+- Étiquettes unifiées dans Microsoft 365 et Azure information protection
 
 ### <a name="cloud-app-security-dashboard"></a>Tableau de bord Cloud App Security
 

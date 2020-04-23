@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Comprendre la structure de base de l’infrastructure informatique locale de Contoso et la manière dont les besoins métier ont été satisfaits par Microsoft 365 Entreprise.
-ms.openlocfilehash: 3cee0f3e6cd20b0d93038595cdab9270c8eb30aa
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 38d2b8df611cb06e19abba074f49e00d95496c30
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42068384"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43625289"
 ---
 # <a name="contosos-it-infrastructure-and-business-needs"></a>Infrastructure informatique et besoins métier de Contoso
 
@@ -126,7 +126,7 @@ Le service informatique de Contoso a déterminé le mappage suivant des besoins 
 | Sécurité |  |  |
 |  | Gestion des identités et des accès | Comptes Administrateur général dédiés avec l’authentification multifacteur (MFA) Azure et Azure AD Privileged Identity Management (PIM) <BR> Authentification multifacteur pour tous les comptes d’utilisateur <BR> Accès conditionnel <BR> Windows Hello <BR> Windows Credential Guard |
 |  | Protection contre les menaces | Advanced Threat Analytics <BR> Windows Defender <BR> Protection avancée contre les menaces <BR> Office 365-Protection avancée contre les menaces <BR> Examen et réponse contre les menaces Office 365 <BR> |
-|  | Protection des informations | Azure Information Protection <BR> Protection contre la perte de données Office 365 (DLP) <BR> Protection des informations Windows (WIP) <BR> Microsoft Cloud App Security <BR> Microsoft Intune |
+|  | Protection des informations | Azure Information Protection <BR> Protection contre la perte de données (DLP) <BR> Protection des informations Windows (WIP) <BR> Microsoft Cloud App Security <BR> Microsoft Intune |
 |  | Gestion de la sécurité | Azure Security Center  <BR> Centre de sécurité Windows Defender |
 | Accès mobile et à distance, et partenaires professionnels |  |  |
 |  | Meilleure sécurité pour les travailleurs mobiles et à distance | Microsoft Intune |
@@ -135,7 +135,7 @@ Le service informatique de Contoso a déterminé le mappage suivant des besoins 
 | Conformité |  |  |
 |  | Respecter les exigences réglementaires locales | Fonctionnalités RGPD dans Office 365 |
 | Gestion |  |  |
-|  | Réduire les frais généraux informatiques pour l’installation de mises à jour du client | Anneaux de déploiement <BR> Mises à jour pour Windows 10 Entreprise <BR> Mises à jour pour Office 365 ProPlus |
+|  | Réduire les frais généraux informatiques pour l’installation de mises à jour du client | Anneaux de déploiement <BR> Mises à jour pour Windows 10 Entreprise <BR> Mises à jour pour les Applications Microsoft 365 pour les entreprises |
 ||||
 
 ## <a name="next-step"></a>Étape suivante

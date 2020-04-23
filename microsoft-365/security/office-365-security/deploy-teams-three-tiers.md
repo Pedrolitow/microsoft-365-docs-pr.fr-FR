@@ -19,12 +19,12 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: 1e8e3cfd-b878-4088-b941-9940363a5fae
 description: Créez et configurez des équipes avec Microsoft Teams pour différents niveaux de protection des informations pour les fichiers.
-ms.openlocfilehash: 63a4b6763165f38e1de5331324e5a7b3573ea0f1
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: d8912900a02149d198222a4402e101b0dce53310
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42083329"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637639"
 ---
 # <a name="deploy-teams-for-three-tiers-of-protection-for-files"></a>Déployer des équipes pour trois niveaux de protection des fichiers
 
@@ -32,7 +32,7 @@ Suivez les étapes décrites dans cet article pour créer et déployer des équi
 
 ## <a name="baseline-teams"></a>Équipes de référence
 
-La protection Base de référence inclut les équipes publiques et privées. Les équipes publiques peuvent être découvertes et sont accessibles par toute personne de l’organisation. Les sites privés peuvent être découverts et sont accessibles seulement par les membres du groupe Office 365 associé à l’équipe. Ces deux types d’équipes permettent aux membres de partager le site avec d’autres utilisateurs.
+La protection Base de référence inclut les équipes publiques et privées. Les équipes publiques peuvent être découvertes et sont accessibles par toute personne de l’organisation. Les sites privés peuvent être découverts et sont accessibles seulement par les membres du groupe Microsoft 365 associé à l’équipe. Ces deux types d’équipes permettent aux membres de partager le site avec d’autres utilisateurs.
 
 ### <a name="public"></a>Public
 

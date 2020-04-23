@@ -21,18 +21,18 @@ search.appverid:
 - MOE150
 ms.assetid: 871a246d-3acd-4bba-948e-5de8be0544c9
 description: Créez une boîte aux lettres partagée pour permettre à plusieurs personnes au sein de votre entreprise de partager la responsabilité de la lecture du courrier électronique envoyé à une adresse et de la réponse à ces courriers.
-ms.openlocfilehash: 4469197628feb96980ec2d8b560048acba704c54
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+ms.openlocfilehash: 35711e1a17a244a9f68ac88daf665f0328b293b4
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43212304"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43628902"
 ---
 # <a name="create-a-shared-mailbox"></a>Créer une boîte aux lettres partagée 
 
 > [!NOTE]
 > Si votre organisation utilise un environnement hybride Exchange, vous devez utiliser le Centre d’administration Exchange (CAE) local pour créer et gérer des boîtes aux lettres partagées. Consultez la rubrique [Créer des boîtes aux lettres partagées dans le Centre d’administration Exchange](https://docs.microsoft.com/Exchange/collaboration/shared-mailboxes/create-shared-mailboxes?view=exchserver-2019.)<br><br>
-> Si vous n'êtes pas sûr de devoir créer une boîte aux lettres partagée ou un groupe Office 365 pour Outlook, voir [Comparer les groupes](../create-groups/compare-groups.md) pour plus de conseils. Sachez qu’il n’est pour l'instant pas possible de migrer une boîte aux lettres partagée vers un groupe Office 365. Si vous le souhaitez, dites-le nous en [votant ici](https://go.microsoft.com/fwlink/?linkid=871518).
+> Si vous n'êtes pas sûr de devoir créer une boîte aux lettres partagée ou un groupe Microsoft 365 pour Outlook, voir [Comparer les groupes](../create-groups/compare-groups.md) pour plus de conseils. Sachez qu’il n’est pour l'instant pas possible de migrer une boîte aux lettres partagée vers un groupe Microsoft 365. Si vous le souhaitez, dites-le nous en [votant ici](https://go.microsoft.com/fwlink/?linkid=871518).
 
 Vous pouvez facilement créer des boîtes aux lettres partagées de sorte qu’un groupe de personnes puisse surveiller et envoyer facilement du courrier électronique à partir d’une adresse de courrier commune, comme info@contoso.com. Quand une personne du groupe répond à un courrier envoyé à la boîte aux lettres partagée, la réponse semble provenir de la boîte aux lettres partagée et non de la personne.
 
@@ -42,7 +42,7 @@ Avant de créer une boîte aux lettres partagée, assurez-vous de lire la sectio
 
 ## <a name="create-a-shared-mailbox-and-add-members"></a>Créer une boîte aux lettres partagée et ajouter des membres
   
-1. Connectez-vous avec un compte Administrateur général Office 365 ou un compte Administrateur Exchange. Si vous recevez le message « **Vous ne disposez pas des autorisations requises pour accéder à cette page ou effectuer cette action** », cela signifie que vous n’êtes pas un administrateur. 
+1. Connectez-vous à l’aide d’un compte d’administrateur général ou d’un compte d’administrateur Exchange. Si vous recevez le message « **Vous ne disposez pas des autorisations requises pour accéder à cette page ou effectuer cette action** », cela signifie que vous n’êtes pas un administrateur. 
 
 ::: moniker range="o365-worldwide"
 
@@ -158,7 +158,7 @@ Vous pouvez accéder à une boîte aux lettres partagée sur un appareil mobile 
     
     Pour les instructions, voir <a href="https://support.office.com/article/f866242c-81b2-472e-8776-6c49c5473c9f" target="_blank">Ajouter une boîte aux lettres partagée dans Outlook Mobile</a>.
 
-- Ouvrez votre navigateur, connectez-vous à Office 365, puis accédez à Outlook sur le web. À partir d’Outlook sur le web, vous pouvez accéder à la boîte aux lettres partagée.
+- Ouvrez votre navigateur, connectez-vous, puis accédez à Outlook sur le web. À partir d’Outlook sur le web, vous pouvez accéder à la boîte aux lettres partagée.
 
     Pour les instructions, voir <a href="https://support.office.com/article/98b5a90d-4e38-415d-a030-f09a4cd28207.aspx" target="_blank">Ajouter une boîte aux lettres partagée dans Outlook sur le web</a>.
 

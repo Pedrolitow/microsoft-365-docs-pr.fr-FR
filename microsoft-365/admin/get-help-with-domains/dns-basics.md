@@ -1,5 +1,5 @@
 ---
-title: Notions DNS de base
+title: Principes de base
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -20,21 +20,21 @@ search.appverid:
 - BSA160
 ms.assetid: 854b6b2b-0255-4089-8019-b765cff70377
 ROBOTS: NOINDEX
-description: En savoir davantage sur les domaines et les enregistrements DNS associés pour vous aider à gérer vos domaines Office 365.
-ms.openlocfilehash: 4fd41102193a9e630ed04a9d1fb2e196dc94486b
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+description: En savoir davantage sur les domaines et les enregistrements DNS associés pour vous aider à gérer vos domaines.
+ms.openlocfilehash: 0b1e969dbb8b172c799e98d5470860fec3625fc2
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43210467"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43628481"
 ---
 # <a name="dns-basics"></a>Principes de base
 
- **[Consultez les Forums aux questions des domaines](../setup/domains-faq.md)** si vous ne trouvez pas ce que vous recherchez. 
+ **[Consultez les Forums aux questions sur les domaines](../setup/domains-faq.md)** si vous ne trouvez pas ce que vous recherchez. 
   
 ::: moniker range="o365-worldwide"
 
-Les noms de domaine, tels que contoso.com, sont gérés à l'aide d'un système mondial de bureaux d'enregistrement de domaines et de bases de données. Le système DNS (Domain Name System) fournit un mappage entre les noms d'hôtes d'ordinateurs lisibles et les adresses IP utilisées par l'équipement réseau. Comprendre les concepts de base de DNS et des bureaux d'enregistrement de domaines peut vous aider à gérer les domaines dans Office 365.
+Les noms de domaine, tels que contoso.com, sont gérés à l’aide d’un système mondial de bureaux d’enregistrement de domaines et de bases de données. Le système DNS (Domain Name System) fournit un mappage entre les noms d’hôtes d’ordinateurs lisibles et les adresses IP utilisées par l’équipement réseau. Comprendre les concepts de base de DNS et des bureaux d’enregistrement de domaines peut vous aider à gérer les domaines.
   
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/c005f2a4-90ad-46fe-b1ab-90f41f2a9d53?autoplay=false]
   
@@ -144,7 +144,7 @@ Pourquoi le fichier de zone de votre domaine peut-il se trouver autre part que s
 ::: moniker-end
 
 > [!NOTE]
-> Si vous avez configuré votre domaine dans Office 365 de telle sorte qu’[Office 365 configure et gère vos enregistrements DNS](../setup/domains-faq.md#how-does-office-365-manage-my-dns-records) automatiquement dans le cadre de l’installation, vous devez [modifier la gestion des enregistrements DNS vers Office 365](../setup/domains-faq.md#change-dns-management-to-office-365). 
+> Si vous avez configuré votre domaine dans Office 365 de telle sorte que [Microsoft configure et gère vos enregistrements DNS](../setup/domains-faq.md#how-does-office-365-manage-my-dns-records) automatiquement dans le cadre de l’installation, vous devez [modifier la gestion des enregistrements DNS vers Office 365](../setup/domains-faq.md#change-dns-management-to-office-365). 
  
 
 ::: moniker range="o365-worldwide"
@@ -154,13 +154,13 @@ Pourquoi le fichier de zone de votre domaine peut-il se trouver autre part que s
 L'ajout d'un domaine personnalisé, tel que fourthcoffee.com, à Office 365 vous permet d'utiliser une adresse de courrier plus courte et plus conviviale, et un identifiant d'utilisateur avec le service. [Un domaine vous est octroyé](https://support.office.com/article/b9fc3018-8844-43f3-8db1-1b3a8e9cfd5a.aspx) lorsque vous vous inscrivez pour bénéficier d'un compte Office 365. Celui-ci inclut toutefois « onmicrosoft.com ». Les entreprises ou organisations préfèrent souvent ajouter leur domaine dans le cadre de l'utilisation d'Office 365 pour le courrier électronique. 
   
 > [!NOTE]
-> Si vous souhaitez simplement télécharger et utiliser les applications Office 365, tels que Word ou Outlook, vous n’avez pas besoin d’ajouter un domaine :[installez Office sur votre PC ou Mac](https://support.office.com/article/4414eaaf-0478-48be-9c42-23adc4716658.aspx). 
+> Si vous souhaitez simplement télécharger et utiliser les applications Microsoft, tels que Word ou Outlook, vous n’avez pas besoin d’ajouter un domaine :[installez Office sur votre PC ou Mac](https://support.office.com/article/4414eaaf-0478-48be-9c42-23adc4716658.aspx). 
   
 Vous pouvez utiliser votre nom de domaine dans Office 365 avec votre courrier, votre site web public et votre adresse de messagerie instantanée.
   
 - **Courrier électronique :** votre nom de domaine vous permet de personnaliser vos adresses de courrier électronique. Vous pouvez ainsi utiliser une adresse plus courte et plus facile à retenir que [l'adresse onmicrosoft.com initiale](https://support.office.com/article/b9fc3018-8844-43f3-8db1-1b3a8e9cfd5a.aspx) fournie avec votre compte. Par exemple, au lieu de maurice@contoso.onmicrosoft.com, vous pouvez utiliser l'adresse de courrier (qui est aussi l'compte professionnel à utiliser pour se connecter à Office 365) maurice@contoso.com. 
     
-- **Site web :** si vous avez un abonnement Office 365 incluant un site web public SharePoint Online (désormais indisponible à l'achat), une adresse initiale telle que contoso-public.sharepoint.com est fournie avec votre site web public. Si vous configurez votre site web pour votre entreprise, vous pouvez utiliser un nom de domaine personnalisé pour renommer l'adresse du site web (par exemple, www.contoso.com). 
+- **Site web :** si vous avez un abonnement Microsoft 365 incluant un site web public SharePoint Online (désormais indisponible à l'achat), une adresse initiale telle que contoso-public.sharepoint.com est fournie avec votre site web public. Si vous configurez votre site web pour votre entreprise, vous pouvez utiliser un nom de domaine personnalisé pour renommer l'adresse du site web (par exemple, www.contoso.com). 
     
 - **Messagerie instantanée :** votre adresse Skype Entreprise Online peut également être personnalisée pour utiliser votre nom de domaine, afin que les personnes de votre organisation puissent se contacter sur Skype Entreprise Online en utilisant une adresse plus courte et plus facile à mémoriser (telle que joe@contoso.com). 
     
@@ -179,7 +179,7 @@ Vous pouvez utiliser votre nom de domaine dans Office 365 avec votre courrier, v
   
 - **Courrier électronique :** votre nom de domaine vous permet de personnaliser vos adresses de courrier électronique. Vous pouvez ainsi utiliser une adresse plus courte et plus facile à retenir que [l'adresse onmicrosoft.com initiale](https://support.office.com/article/b9fc3018-8844-43f3-8db1-1b3a8e9cfd5a.aspx) fournie avec votre compte. Par exemple, au lieu de maurice@contoso.onmicrosoft.com, vous pouvez utiliser l'adresse de courrier (qui est aussi l'compte professionnel à utiliser pour se connecter à Office 365) maurice@contoso.com. 
     
-- **Site web :** si vous avez un abonnement Office 365 incluant un site web public SharePoint Online (désormais indisponible à l'achat), une adresse initiale telle que contoso-public.sharepoint.com est fournie avec votre site web public. Si vous configurez votre site web pour votre entreprise, vous pouvez utiliser un nom de domaine personnalisé pour renommer l'adresse du site web (par exemple, www.contoso.com). 
+- **Site web :** si vous avez un abonnement incluant un site web public SharePoint Online (désormais indisponible à l'achat), une adresse initiale telle que contoso-public.sharepoint.com est fournie avec votre site web public. Si vous configurez votre site web pour votre entreprise, vous pouvez utiliser un nom de domaine personnalisé pour renommer l'adresse du site web (par exemple, www.contoso.com). 
     
 - **Messagerie instantanée :** votre adresse Skype Entreprise Online peut également être personnalisée pour utiliser votre nom de domaine, afin que les personnes de votre organisation puissent se contacter sur Skype Entreprise Online en utilisant une adresse plus courte et plus facile à mémoriser (telle que joe@contoso.com). 
     
@@ -189,7 +189,7 @@ Vous pouvez utiliser votre nom de domaine dans Office 365 avec votre courrier, v
 
 Plusieurs enregistrements DNS sont requis pour permettre à Office 365 de fonctionner avec votre domaine. En plus de configurer l'enregistrement MX de votre domaine de sorte que le courrier électronique soit envoyé à Office 365, des enregistrements permettent de s'assurer qu'Outlook peut se connecter automatiquement au serveur Exchange approprié, de configurer la messagerie instantanée et d'éviter le courrier indésirable.
   
-Vous pouvez [consulter une liste de valeurs](information-for-dns-records.md) pour configurer votre domaine. Celles-ci sont incluses directement dans le portail Office 365. 
+Vous pouvez [consulter une liste de valeurs](information-for-dns-records.md) pour configurer votre domaine. Celles-ci sont incluses directement dans le Centre d’administration Microsoft 365. 
   
 Ou, si vous envisagez de procéder à un déploiement, vous pouvez consulter la liste des enregistrements DNS requis pour Office 365 avec leur fonction et des valeurs d'exemple. Consultez les [Enregistrements DNS externes pour Office 365](https://support.office.com/article/c0531a6f-9e25-4f2d-ad0e-a70bfef09ac0).
   

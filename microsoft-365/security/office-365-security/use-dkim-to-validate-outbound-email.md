@@ -16,12 +16,12 @@ ms.assetid: 56fee1c7-dc37-470e-9b09-33fff6d94617
 ms.collection:
 - M365-security-compliance
 description: 'Résumé : Cet article décrit comment utiliser DKIM (DomainKeys Identified Mail) avec Office 365 pour vous assurer que les systèmes de messagerie de destination approuvent les messages envoyés à partir de votre domaine personnalisé.'
-ms.openlocfilehash: d76c31c6a3f0ce1550f0259ee40996189b60cb79
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 4df887fc7db0ef968cc06d0b1b680b9bd91686ec
+ms.sourcegitcommit: a955324e33097bbd2fc4ad7f2b8d1f3d87bc8580
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42084387"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43608149"
 ---
 # <a name="use-dkim-to-validate-outbound-email-sent-from-your-custom-domain-in-office-365"></a>Utiliser DKIM pour valider les messages sortants envoyés à partir de votre domaine personnalisé dans Office 365
 
@@ -80,25 +80,33 @@ Détail important : DKIM utilise une clé privée pour insérer une signature c
 Étant donné que le nombre de bits 1024 et 2048 sont pris en charge pour les clés DKIM, ces instructions vous indiquent comment mettre à niveau votre clé 1024 bits vers 2048. Les étapes ci-dessous concernent deux cas d’utilisation ; veuillez choisir celui qui correspond le mieux à votre configuration.
 
 1. Lorsque vous **avez déjà configuré DKIM**, vous pouvez faire pivoter le nombre de bits comme suit :
-    1. [Connectez-vous aux charges de travail Office 365 via PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-all-office-365-services-in-a-single-windows-powershell-window). (L’applet de commande provient d’Exchange Online.)
-    1. Exécutez ensuite la cmdlet suivante :
 
-&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`Rotate-DkimSigningConfig -KeySize 2048 -Identity {Guid of the existing Signing Config}`
+   1. [Connectez-vous aux charges de travail Office 365 via PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-all-office-365-services-in-a-single-windows-powershell-window). (L’applet de commande provient d’Exchange Online.)
+   1. Exécutez la commande suivante :
+
+      ```powershell 
+      Rotate-DkimSigningConfig -KeySize 2048 -Identity {Guid of the existing Signing Config}
+      ```
 
 1. Ou pour une **nouvelle implémentation de DKIM** :
-    1. [Connectez-vous aux charges de travail Office 365 via PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-all-office-365-services-in-a-single-windows-powershell-window). (Il s’agit d’une cmdlet Exchange Online).
-    1. Saisissez la cmdlet suivante :
 
-&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; `New-DkimSigningConfig -DomainName {Domain for which config is to be created} -KeySize 2048 -Enabled $True`
+   1. [Connectez-vous aux charges de travail Office 365 via PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-all-office-365-services-in-a-single-windows-powershell-window). (Il s’agit d’une cmdlet Exchange Online).
+   1. Exécutez la commande suivante :
 
-Restez connecté à Office 365 pour *vérifier* la configuration.
+      ```powershell
+      New-DkimSigningConfig -DomainName {Domain for which config is to be created} -KeySize 2048 -Enabled $True
+      ```
 
-2. Exécutez la cmdlet :
+   Restez connecté à Office 365 pour *vérifier* la configuration.
 
-&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; `Get-DkimSigningConfig | fl`
+1. Exécutez la commande suivante :
+
+   ```powershell
+   Get-DkimSigningConfig | Format-List
+   ```
 
 > [!TIP]
->Cette nouvelle clé 2048 bits prend effet sur RotateOnDate et envoie des e-mails avec la clé 1024 bits au niveau intermédiaire. Après quatre jours, vous pouvez à nouveau effectuer un test à l’aide de la touche 2048 bits (autrement dit, une fois que la rotation prend effet sur le deuxième sélecteur).
+> Cette nouvelle clé 2048 bits prend effet sur RotateOnDate et envoie des e-mails avec la clé 1024 bits au niveau intermédiaire. Après quatre jours, vous pouvez à nouveau effectuer un test à l’aide de la touche 2048 bits (autrement dit, une fois que la rotation prend effet sur le deuxième sélecteur).
 
 Si vous voulez faire pivoter vers le deuxième sélecteur, vos options sont a) laisser le service Office 365 faire pivoter le sélecteur et effectuer la mise à niveau vers le nombre de bits 2048 dans les 6 mois, ou b) après 4 jours et confirmation que le nombre de bits 2048 est utilisé, faire pivoter manuellement la deuxième touche du sélecteur en utilisant la cmdlet appropriée répertoriée ci-dessus.
 
@@ -119,14 +127,8 @@ Pour chaque domaine auquel vous souhaitez ajouter une signature DKIM dans le sy
 Exécutez les commandes suivantes pour créer les enregistrements de sélecteur :
 
 ```powershell
-    New-DkimSigningConfig -DomainName <domain> -Enabled $false
-    Get-DkimSigningConfig -Identity <domain> | fl Selector1CNAME, Selector2CNAME
-```
-
-Créer des CNAMes référencés dans une sortie de commande Get-DkimSigningConfig
-
-```powershell
-    Set-DkimSigningConfig -Identity <domain> -Enabled $true
+New-DkimSigningConfig -DomainName <domain> -Enabled $false
+Get-DkimSigningConfig -Identity <domain> | Format-List Selector1CNAME, Selector2CNAME
 ```
 
 Office 365 effectue une rotation automatique des clés à l’aide des deux enregistrements que vous établissez. Si vous avez configuré des domaines personnalisés en plus du domaine initial dans Office 365, vous devez publier deux enregistrements CNAME pour chaque domaine supplémentaire. Par conséquent, si vous avez deux domaines, vous devez publier deux enregistrements CNAME supplémentaires, et ainsi de suite.
@@ -152,9 +154,7 @@ Où :
 
 - _domainGUID_ est identique à  _domainGUID_ dans l’enregistrement MX personnalisé pour votre domaine personnalisé figurant devant mail.protection.outlook.com. Par exemple, dans l’enregistrement MX suivant pour le domaine contoso.com, le _domainGUID_ est contoso-com :
 
-    ```text
-    contoso.com.  3600  IN  MX   5 contoso-com.mail.protection.outlook.com
-    ```
+  > contoso.com.  3600  IN  MX   5 contoso-com.mail.protection.outlook.com
 
 - _initialDomain_ est le domaine que vous avez utilisé lorsque vous vous êtes inscrit à Office 365. Les domaines initiaux se terminent toujours par onmicrosoft.com. Pour plus d’informations sur la détermination de votre [domaine initial](https://docs.microsoft.com/office365/admin/setup/domains-faq#why-do-i-have-an-onmicrosoftcom-domain), voir Forum aux questions sur les domaines.
 
@@ -204,17 +204,17 @@ Une fois que vous avez publié les enregistrements CNAME dans le système DNS, 
 
 2. Exécutez la commande suivante :
 
-    ```powershell
-    Set-DkimSigningConfig -Identity <domain> -Enabled $true
-    ```
+   ```powershell
+   Set-DkimSigningConfig -Identity <domain> -Enabled $true
+   ```
 
    Où _domain_ est le nom du domaine personnalisé pour lequel vous souhaitez activer la signature DKIM.
 
    Par exemple, pour le domaine contoso.com :
 
-    ```powershell
-    Set-DkimSigningConfig -Identity contoso.com -Enabled $true
-    ```
+   ```powershell
+   Set-DkimSigningConfig -Identity contoso.com -Enabled $true
+   ```
 
 #### <a name="to-confirm-dkim-signing-is-configured-properly-for-office-365"></a>Confirmation du fait que la signature DKIM est correctement configurée pour Office 365
 
@@ -255,29 +255,29 @@ La désactivation de la stratégie de signature ne désactive pas complètement 
 
 2. Exécutez l’une des commandes suivantes pour chaque domaine pour lequel vous souhaitez désactiver la signature DKIM.
 
-    ```powershell
-    $p = Get-DkimSigningConfig -Identity <domain>
-    $p[0] | Set-DkimSigningConfig -Enabled $false
-    ```
+   ```powershell
+   $p = Get-DkimSigningConfig -Identity <domain>
+   $p[0] | Set-DkimSigningConfig -Enabled $false
+   ```
 
    Par exemple :
 
-    ```powershell
-    $p = Get-DkimSigningConfig -Identity contoso.com
-    $p[0] | Set-DkimSigningConfig -Enabled $false
-    ```
+   ```powershell
+   $p = Get-DkimSigningConfig -Identity contoso.com
+   $p[0] | Set-DkimSigningConfig -Enabled $false
+   ```
 
    Ou
 
-    ```powershell
-    Set-DkimSigningConfig -Identity $p[<number>].Identity -Enabled $false
-    ```
+   ```powershell
+   Set-DkimSigningConfig -Identity $p[<number>].Identity -Enabled $false
+   ```
 
-    Où _number_ est l’index de la stratégie. Par exemple :
+   Où _number_ est l’index de la stratégie. Par exemple :
 
-    ```powershell
-    Set-DkimSigningConfig -Identity $p[0].Identity -Enabled $false
-    ```
+   ```powershell
+   Set-DkimSigningConfig -Identity $p[0].Identity -Enabled $false
+   ```
 
 ## <a name="default-behavior-for-dkim-and-office-365"></a>Comportement par défaut pour DKIM et Office 365
 <a name="DefaultDKIMbehavior"> </a>
@@ -323,9 +323,9 @@ Dans cet exemple, pour obtenir ce résultat :
 
 4. Les systèmes de messagerie de réception effectuent une vérification DKIM en authentifiant la valeur d=<domaine> de l’option DKIM-Signature, en la comparant au domaine indiqué dans l’adresse From: (5322.From) du message. Dans cet exemple, les valeurs sont les mêmes :
 
-    sender@**contoso.com**
+   > sender@**contoso.com**
 
-    d=**contoso.com**
+   > d=**contoso.com**
 
 ## <a name="next-steps-after-you-set-up-dkim-for-office-365"></a>Étapes suivantes : après avoir configuré DKIM pour Office 365
 <a name="DKIMNextSteps"> </a>

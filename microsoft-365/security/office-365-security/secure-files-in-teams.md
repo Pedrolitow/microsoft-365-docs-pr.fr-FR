@@ -20,12 +20,12 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: 1d51bd87-17bf-457c-b698-61821de3afa0
 description: 'Résumé : Recommandations de configuration pour la protection des fichiers dans Microsoft Teams.'
-ms.openlocfilehash: 82c55affc8384c04e0595f82d21c7e3532b5cb0e
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: e177f290dff22943e282080652326dfb65cd07cd
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42088126"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43638475"
 ---
 # <a name="secure-files-in-microsoft-teams"></a>Sécuriser des fichiers dans Microsoft Teams
 
@@ -61,7 +61,7 @@ Comme illustré :
 
 - [Protection contre la perte de données](../../compliance/data-loss-prevention-policies.md)Les stratégies de protection contre la perte de données (DLP) sont configurées pour les étiquettes Sensibles et Hautement confidentielles afin de prévenir les utilisateurs quand ils essaient d’envoyer ces types de fichiers à l’extérieur de l’organisation, ou de les en empêcher.
 
-- Si nécessaire pour votre scénario, vous pouvez utiliser les[étiquettes sensibilité](../../compliance/sensitivity-labels.md) à protéger les fichiers confidentiels hautement avec le chiffrement et les autorisations. Pour les clients Azure Information Protection, vous pouvez utiliser vos étiquettes Azure Information Protection dans le centre de conformité de Microsoft 365 et vos étiquettes sont synchronisées avec le portail Azure au cas où vous choisissez d’effectuer une configuration supplémentaire ou avancée. Les étiquettes Azure Information Protection et les étiquettes de niveau de confidentialité Office 365 sont totalement compatibles avec chacun d’eux. Cela signifie, par exemple, que si vous avez un contenu étiqueté par Azure Information Protection, vous n’avez pas besoin de reclasser ou de ré-étiqueter votre contenu. Tous les clients n’ont pas besoin de ce niveau de protection.
+- Si nécessaire pour votre scénario, vous pouvez utiliser les[étiquettes sensibilité](../../compliance/sensitivity-labels.md) à protéger les fichiers confidentiels hautement avec le chiffrement et les autorisations. Pour les clients Azure Information Protection, vous pouvez utiliser vos étiquettes Azure Information Protection dans le centre de conformité de Microsoft 365 et vos étiquettes sont synchronisées avec le portail Azure au cas où vous choisissez d’effectuer une configuration supplémentaire ou avancée. Les étiquettes Protection des données Azure et les étiquettes de niveau de confidentialité sont totalement compatibles avec chacun d’eux. Cela signifie, par exemple, que si vous avez un contenu étiqueté par Azure Information Protection, vous n’avez pas besoin de reclasser ou de ré-étiqueter votre contenu. Tous les clients n’ont pas besoin de ce niveau de protection.
 
 ## <a name="organization-wide-settings-for-sharepoint-and-onedrive"></a>Paramètres à l’échelle de l’organisation pour SharePoint et OneDrive
 
@@ -115,7 +115,7 @@ Le tableau suivant récapitule la configuration pour chacune des équipes et leu
 |:-----|:-----|:-----|:-----|:-----|
 ||**Protection Base de référence #1**|**Protection Base de référence #2**|**Protection Sensible**|**Hautement confidentiel**|
 |Description|Équipe publique avec découverte et collaboration ouvertes au sein de l’organisation.|Équipe privée avec partage du site SharePoint sous-jacent autorisé à l’extérieur du groupe.|Équipe privée, mais le partage du site SharePoint sous-jacent est uniquement autorisé aux membres du site. La protection contre la perte de données avertit les utilisateurs quand ils tentent d’envoyer des fichiers à l’extérieur de l’organisation.|Équipe privée avec étiquettes de confidentialité pour le chiffrement et les autorisations qui se déplacent avec le fichier. La protection contre la perte de données empêche les utilisateurs d’envoyer des fichiers à l’extérieur de l’organisation.|
-|Site d’équipe privé ou public|Public|Private|Privé|Private|
+|Site d’équipe privé ou public|Public|Private|Private|Private|
 |Qui a accès ?|Tous les membres de l’organisation, y compris les utilisateurs B2B.|Membres du site uniquement. Les autres personnes peuvent demander l’accès.|Membres de l’équipe uniquement. D’autres personnes peuvent demander l’accès au site sous-jacent qui est approuvé par un propriétaire d’équipe.|Membres uniquement. Les autres utilisateurs ne peuvent pas demander l’accès au site sous-jacent.|
 |Contrôles de partage au niveau du site|Partage autorisé avec tout le monde. Paramètres par défaut.|Partage autorisé avec tout le monde. Paramètres par défaut.|Les membres ne peuvent pas partager l’accès au site. <br/> Les non-membres peuvent demander l’accès au site, mais ces demandes doivent être adressées à un propriétaire du groupe pour l’équipe.|Les membres ne peuvent pas partager l’accès au site. <br/> Les non-membres ne peuvent pas demander l’accès au site ou au contenu.|
 |Contrôles d’accès d’appareil au niveau du site|Pas de contrôles supplémentaires.|Pas de contrôles supplémentaires.|Empêchent les utilisateurs de télécharger des fichiers sur des appareils non conformes ou non liés à un domaine. Cela permet un accès par navigateur uniquement à partir de tous les autres appareils.|Bloquent le téléchargement de fichiers sur des appareils non conformes ou non joints à un domaine.|
@@ -125,7 +125,7 @@ Le tableau suivant récapitule la configuration pour chacune des équipes et leu
 
 Pour connaître les étapes de déploiement des quatre types différents d’équipes dans cette solution, consultez [Déployer Teams pour trois niveaux de protection de fichiers](deploy-teams-three-tiers.md).
 
-## <a name="office-365-retention-labels"></a>Étiquettes de rétention Office 365
+## <a name="retention-labels"></a>Étiquettes de rétention
 
 L’utilisation des étiquettes de rétention est recommandée pour les environnements avec des données sensibles. Après avoir configuré et publié des étiquettes de rétention:
 
@@ -135,7 +135,7 @@ L’utilisation des étiquettes de rétention est recommandée pour les environn
 
 - Vous pouvez appliquer des stratégies de protection DLP contre la perte de données qui reposent sur les étiquettes de rétention.
 
-- Le personnel de votre organisation peut appliquer une étiquette manuellement à du contenu dans Outlook sur le web, Outlook 2010 et versions ultérieures, OneDrive, SharePoint et des groupes Office 365. Les utilisateurs ont souvent une meilleure connaissance du type de contenu qu’ils utilisent : ils peuvent donc les classifier et y faire appliquer la stratégie appropriée de protection contre la perte de données.
+- Le personnel de votre organisation peut appliquer une étiquette manuellement à du contenu dans Outlook sur le web, Outlook 2010 et versions ultérieures, OneDrive, SharePoint et des groupes Microsoft 365. Les utilisateurs ont souvent une meilleure connaissance du type de contenu qu’ils utilisent : ils peuvent donc les classifier et y faire appliquer la stratégie appropriée de protection contre la perte de données.
 
 Comme illustré, cette solution inclut la création des étiquettes de rétention suivantes :
 

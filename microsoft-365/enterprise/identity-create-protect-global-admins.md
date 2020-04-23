@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Vos comptes d’administrateur général ont besoin d’un traitement spécial leur assurant une protection contre la compromission des informations d’identification.
-ms.openlocfilehash: 27b76671581ebd2dac32304752a85f8a6f60ac98
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: c23a5730bc4c6af1f7fd829a40b63cc7ccc89184
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42633572"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43621305"
 ---
 # <a name="step-1-create-and-protect-your-global-admin-accounts"></a>Étape 1 : Créer et protéger vos comptes d’administrateur général
 
@@ -41,7 +41,7 @@ Pour vos comptes Administrateur général dédiés, vous devez aussi effectuer l
 1. Testez les paramètres d'authentification multifacteur Azure (MFA) par compte utilisateur ou par accès conditionnel sur un compte utilisateur test pour vous assurer que l'authentification multifacteur fonctionne correctement et de manière prévisible. L’authentification multifacteur requiert une forme secondaire d’authentification, telle qu’un code de vérification envoyé à un smartphone.
 2. Créez et activez une stratégie d'accès conditionnel pour vos comptes d'administrateur général qui nécessite l'authentification multifacteur et utilise la forme d'authentification secondaire la plus efficace disponible au sein de votre entreprise. Pour plus d’informations, consultez [Authentification multifacteur Azure](identity-access-prerequisites.md#protecting-administrator-accounts).
 
-Pour des protections supplémentaires, consultez [Protéger vos comptes d’administrateur général Office 365](https://docs.microsoft.com/office365/enterprise/protect-your-global-administrator-accounts#additional-protections-for-enterprise-organizations).
+Pour des protections supplémentaires, consultez [Protéger vos comptes d’administrateur général](https://docs.microsoft.com/office365/enterprise/protect-your-global-administrator-accounts#additional-protections-for-enterprise-organizations).
 
 > [!Note]
 > Les comptes d'urgence pour les scénarios catastrophes en cas d'urgence, telle une cyberattaque, devraient être des comptes de Cloud uniquement. Vous pouvez également disposer de comptes d’administrateur général (éligibles ou permanents) qui ne sont pas uniquement dans le Cloud. Pour plus d’informations, consultez [Gestion des comptes d’administration de l’accès d’urgence dans Azure AD](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-emergency-access).
@@ -86,9 +86,9 @@ Comme point de vérification intermédiaire, vous pouvez consulter les [critère
 <a name="identity-pam"></a>
 ## <a name="privileged-access-management"></a>Gestion des accès privilégiés
 
-Vous activez la gestion des accès privilégiés en configurant des stratégies qui indiquent l’accès juste-à-temps pour les activités basées sur des tâches dans votre client Office 365. Elle peut vous aider à protéger votre organisation contre les violations qui pourraient survenir par le biais de comptes d’administrateur privilégiés existants qui donnent un accès permanent à des données sensibles ou à des paramètres de configuration critiques. Par exemple, vous pouvez configurer une stratégie de gestion des accès privilégiés qui requiert une approbation explicite pour pouvoir accéder aux paramètres de boîte aux lettres de votre organisation dans votre client Office 365 et les modifier.
+Vous activez la gestion des accès privilégiés en configurant des stratégies qui indiquent l’accès juste-à-temps pour les activités basées sur des tâches dans votre client. Elle peut vous aider à protéger votre organisation contre les violations qui pourraient survenir par le biais de comptes d’administrateur privilégiés existants qui donnent un accès permanent à des données sensibles ou à des paramètres de configuration critiques. Par exemple, vous pouvez configurer une stratégie de gestion des accès privilégiés qui requiert une approbation explicite pour pouvoir accéder aux paramètres de boîte aux lettres de votre organisation dans votre client et les modifier.
 
-Pour cette étape, vous allez activer la gestion des accès privilégiés dans votre client Office 365 et configurer les stratégies d’accès privilégiés qui permettent de renforcer la sécurité des accès basés sur les tâches à vos paramètres de configuration et à vos données Office 365 pour votre organisation. Il existe trois étapes simples pour commencer à utiliser les accès privilégiés dans votre organisation Office 365 :
+Pour cette étape, vous allez activer la gestion des accès privilégiés dans votre client et configurer les stratégies d’accès privilégiés qui permettent de renforcer la sécurité des accès basés sur les tâches à vos paramètres de configuration et à vos données pour votre organisation. Il existe trois étapes simples pour commencer à utiliser les accès privilégiés dans votre organisation :
 
 - Création d’un groupe d’approbateurs
 - Activation des accès privilégiés
@@ -96,14 +96,14 @@ Pour cette étape, vous allez activer la gestion des accès privilégiés dans v
 
 Une fois configurée, la gestion des accès privilégiés permettra à votre organisation de fonctionner sans aucun privilège permanent et de fournir une sécurité renforcée contre les lacunes d’un accès administratif permanent comme celui-ci. L’accès privilégié requiert des approbations pour exécuter toute tâche pour laquelle une stratégie d’approbation associée a été définie. Les utilisateurs ayant besoin d’exécuter des tâches incluses dans la stratégie d’approbation doivent demander l’approbation de l’accès et l’obtenir afin de disposer des autorisations nécessaires pour exécuter les tâches définies dans la stratégie.
 
-Pour activer la gestion des accès privilégiés d’Office 365, consultez la rubrique relative à la [configuration de la gestion des accès privilégiés dans Office 365](https://docs.microsoft.com/office365/securitycompliance/privileged-access-management-configuration).
+Pour activer la gestion de l’accès privilégié, voir la rubrique [Configurer la gestion de l’accès privilégié](https://docs.microsoft.com/office365/securitycompliance/privileged-access-management-configuration).
 
-Pour plus d’informations, reportez-vous à la rubrique relative à la [gestion des accès privilégiés dans Office 365](https://docs.microsoft.com/office365/securitycompliance/privileged-access-management-overview).
+Pour plus d’informations, voir la rubrique [Gestion des accès privilégiés](https://docs.microsoft.com/office365/securitycompliance/privileged-access-management-overview).
 
 
 |||
 |:-------|:-----|
-|![Guides de Laboratoire de Test pour Microsoft Cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)|  Pour tester cette configuration dans un environnement de laboratoire de test, consultez le [Guide de laboratoire de test Gestion des accès privilégiés](privileged-access-microsoft-365-enterprise-dev-test-environment.md). |
+|![Guides de laboratoire de test pour Microsoft Cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)|  Pour tester cette configuration dans un environnement de laboratoire de test, consultez le [Guide de laboratoire de test Gestion des accès privilégiés](privileged-access-microsoft-365-enterprise-dev-test-environment.md). |
 |||
 
 Comme point de contrôle intermédiaire, consultez les [critères de sortie](identity-exit-criteria.md#crit-identity-pam) correspondant à cette étape.

@@ -10,12 +10,12 @@ ms.collection: SPO_Content
 localization_priority: Priority
 f1.keywords: NOCSH
 description: Découvrez comment limiter l’exposition accidentelle des informations lorsque vous partagez des fichiers avec des personnes extérieures à votre organisation.
-ms.openlocfilehash: a84c5183ba3a816cf4d65f854f0143a48374f669
-ms.sourcegitcommit: 21338a9287017a66298e0ff557e80051946ebf13
+ms.openlocfilehash: fbe97eef2841da9bd46d7f05e3b26dea40cd1bd2
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "42604436"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632582"
 ---
 # <a name="limit-accidental-exposure-to-files-when-sharing-with-people-outside-your-organization"></a>Limiter l’exposition accidentelle de fichiers lors de partages avec des personnes extérieures à votre organisation
 
@@ -79,7 +79,7 @@ Pour limiter le partage externe aux membres d’un groupe de sécurité
 3. Sous **Utilisateurs autorisés à partager du contenu en dehors de votre organisation**, cochez l’une des cases ou les deux : a. **Autoriser uniquement les membres des groupes de sécurité sélectionnés à partager du contenu avec des utilisateurs externes authentifiés** pour spécifier un groupe de sécurité pouvant partager du contenu avec des utilisateurs authentifiés b. **Autoriser uniquement les membres des groupes de sécurité sélectionnés à partager du contenu avec des utilisateurs externes authentifiés ou disposant de liens anonymes** pour spécifier un groupe de sécurité pouvant partager du contenu avec des utilisateurs authentifiés et via les liens Tout le monde
 4. Cliquez sur **OK**.
 
-Notez que cela affecte les fichiers, dossiers et sites, mais pas les groupes Office 365 ou Teams. Lorsque les membres acceptent des invités dans un groupe Office 365 privé ou une équipe privée dans Microsoft Teams, l’invitation est envoyée au groupe ou au propriétaire de l’équipe pour approbation.
+Notez que cela affecte les fichiers, dossiers et sites, mais pas les groupes Microsoft 365 ou Teams. Lorsque les membres acceptent des invités dans un groupe Microsoft 365 privé ou une équipe privée dans Microsoft Teams, l’invitation est envoyée au groupe ou au propriétaire de l’équipe pour approbation.
 
 ## <a name="see-also"></a>Voir aussi
 

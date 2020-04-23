@@ -1,5 +1,5 @@
 ---
-title: Rechercher et débloquer les messages en quarantaine en tant qu’utilisateur dans Office 365
+title: Rechercher et débloquer les messages mis en quarantaine en tant qu'utilisateur
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -16,23 +16,23 @@ search.appverid:
 ms.assetid: efff08ec-68ff-4099-89b7-266e3c4817be
 ms.collection:
 - M365-security-compliance
-description: En tant qu'utilisateur Office 365, vous pouvez afficher, déplacer et supprimer les messages mis en quarantaine (les messages dont vous êtes le destinataire et qui sont en quarantaine car considérés comme du courrier indésirable ou comme des e-mails de masse). Vous pouvez afficher et gérer vos messages mis en quarantaine dans le Centre de sécurité et de conformité.
-ms.openlocfilehash: 32ae03c555742b9f08c272806464ed75585d08df
-ms.sourcegitcommit: 1d5db6e8411b45d0dd1c517339074c2840e33a63
+description: En tant qu'utilisateur Microsoft 365, vous pouvez afficher, déplacer et supprimer les messages mis en quarantaine (les messages dont vous êtes le destinataire et qui sont en quarantaine car considérés comme du courrier indésirable ou comme des e-mails de masse). Vous pouvez afficher et gérer vos messages mis en quarantaine dans le Centre de sécurité et de conformité.
+ms.openlocfilehash: 215cbc23aca3b7d10eca8c53d816892d0ca042cb
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43216903"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43638105"
 ---
-# <a name="find-and-release-quarantined-messages-as-a-user-in-office-365"></a>Rechercher et déplacer les messages en quarantaine en tant qu’utilisateur dans Office 365
+# <a name="find-and-release-quarantined-messages-as-a-user"></a>Rechercher et débloquer les messages mis en quarantaine en tant qu'utilisateur
 
-La quarantaine contient des messages potentiellement dangereux ou indésirables dans les organisations Office 365 avec des boîtes aux lettres dans Exchange Online ou des organisations Exchange Online Protection (EOP) autonomes sans boîtes aux lettres Exchange Online. Si vous souhaitez en savoir plus, consultez l’article [La quarantaine dans Office 365](quarantine-email-messages.md).
+La quarantaine contient des messages potentiellement dangereux ou indésirables dans les organisations Microsoft 365 avec des boîtes aux lettres dans Exchange Online ou des organisations Exchange Online Protection (EOP) autonomes sans boîtes aux lettres Exchange Online. Si vous souhaitez en savoir plus, consultez l’article [La quarantaine dans Office 365](quarantine-email-messages.md).
 
 En tant qu'utilisateur, vous pouvez afficher, déplacer et supprimer les messages mis en quarantaine car considérés comme du courrier indésirable, des e-mails de masse, ou (à partir d’avril 2020) de l’hameçonnage, si vous en êtes le destinataire. Vous pouvez afficher et gérer vos messages mis en quarantaine dans le centre de sécurité et de conformité ou (si un administrateur a utilisé cette configuration) dans les [notifications de courrier indésirable de l’utilisateur final](use-spam-notifications-to-release-and-report-quarantined-messages.md).
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu'il faut savoir avant de commencer
 
-- Pour ouvrir le Centre de sécurité et conformité Office 365, accédez à <https://protection.office.com>. Pour ouvrir la page de quarantaine directement, accédez à <https://protection.office.com/quarantine>.
+- Pour ouvrir le Centre de conformité et sécurité, consultez <https://protection.office.com>. Pour ouvrir la page de quarantaine directement, accédez à <https://protection.office.com/quarantine>.
 
 - Les administrateurs peuvent configurer la durée pendant laquelle les messages sont conservés dans la quarantaine avant d’être définitivement supprimés (stratégies anti-courrier indésirable). Les messages dont la mise en quarantaine est arrivée à expiration ne peuvent pas être récupérés. Si vous souhaitez en savoir plus, consultez l’article [Configurer les stratégies anti-courrier indésirable dans Office 365](configure-your-spam-filter-policies.md).
 
@@ -66,7 +66,7 @@ En tant qu'utilisateur, vous pouvez afficher, déplacer et supprimer les message
 
    - **ID de message**
 
-   - **Nom de la stratégie**: cette propriété affiche la stratégie qui a provoqué la mise en quarantaine du message. Vous pouvez fournir ces informations à votre administrateur.
+   - **Nom de la stratégie**
 
    - **Taille**
 
@@ -108,7 +108,7 @@ En tant qu'utilisateur, vous pouvez afficher, déplacer et supprimer les message
 
    - **Sujet** : utiliser l'intégralité du sujet du message. La recherche n’est pas sensible à la casse.
 
-   Après avoir entrer les critères de recherche, cliquez sur le ![Bouton actualiser](../media/scc-quarantine-refresh.png) **Actualiser** pour filtrer les résultats.
+   Après avoir entrer les critères de recherche, cliquez sur le ![Bouton actualiser](../../media/scc-quarantine-refresh.png) **Actualiser** pour filtrer les résultats.
 
 Une fois le message spécifique mis en quarantaine trouvé, sélectionnez-le pour afficher des détails à son sujet et pour prendre des mesures (par exemple, afficher, déplacer, télécharger ou supprimer le message).
 
@@ -150,7 +150,7 @@ Après avoir sélectionné un message, vous pouvez effectuer les actions suivant
 
   Lorsque vous avez terminé, cliquez sur **Déplacer les messages**.
 
-- **Afficher l’en-tête du message** : Sélectionnez ce lien pour afficher le texte d’en-tête du message. Pour analyser en profondeur les champs d'en-tête et les valeurs, copiez le texte d’en-tête du message dans le presse-papiers, puis sélectionnez **Analyseur d’en-tête de message Microsoft** pour accéder à l’analyseur de connectivité à distance (Faites un clic droit et sélectionnez **Ouvrir dans un nouvel onglet** si vous ne souhaitez pas laisser Office 365 accomplir cette tâche). Collez l’en-tête du message dans la section analyseur d’en-tête de message de la page, puis sélectionnez **Analyser les en-têtes** :
+- **Afficher l’en-tête du message** : Sélectionnez ce lien pour afficher le texte d’en-tête du message. Pour analyser en profondeur les champs d'en-tête et les valeurs, copiez le texte d’en-tête du message dans le presse-papiers, puis sélectionnez **Analyseur d’en-tête de message Microsoft** pour accéder à l’analyseur de connectivité à distance (Faites un clic droit et sélectionnez **Ouvrir dans un nouvel onglet** si vous ne souhaitez pas laisser Microsoft 365 accomplir cette tâche). Collez l’en-tête du message dans la section analyseur d’en-tête de message de la page, puis sélectionnez **Analyser les en-têtes** :
 
 - **Prévisualiser le message** : dans le volet déroulant qui apparaît, choisissez l’une des options suivantes :
 

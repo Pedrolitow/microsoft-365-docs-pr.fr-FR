@@ -14,7 +14,7 @@ Si nécessaire, l’[Étape 1](../infoprotect-define-sec-infoprotect-levels.md)
 <a name="crit-infoprotect-step3"></a>
 ### <a name="required-increased-security-for-microsoft-365-is-configured"></a>Obligatoire : le paramètre Sécurité accrue de Microsoft 365 est configuré
 
-Vous avez configuré les paramètres de [Sécurité accrue d’Office 365](https://docs.microsoft.com/office365/securitycompliance/tenant-wide-setup-for-increased-security) suivants :
+Vous avez configuré les paramètres suivants pour [Microsoft 365 a augmenté la sécurité](https://docs.microsoft.com/office365/securitycompliance/tenant-wide-setup-for-increased-security):
 
 - Stratégies de gestion des menaces dans le Centre de sécurité Microsoft 365
 - Autres paramètres à l’échelle du client Exchange Online
@@ -52,11 +52,11 @@ Une stratégie Intune est déployée et appliquée sur vos appareils Windows 10 
 Si nécessaire, l’[Étape 4](../infoprotect-deploy-windows-information-protection.md) peut vous aider à respecter cette exigence. 
 
 <a name="crit-infoprotect-step5"></a>
-### <a name="optional-office-365-data-loss-prevention-dlp-is-deployed"></a>Facultatif : la protection contre la perte de données Office 365 (DLP) est déployée.
+### <a name="optional-data-loss-prevention-dlp-is-deployed"></a>Facultatif : le déploiement de la protection contre la perte de données (DLP)
 
 Vous avez analysé, testé, puis déployé l’ensemble des stratégies DLP (avec des emplacements et des règles assortis de conditions et d’actions) que votre organisation exige pour protéger les données des clients et d’autres types de données privées, ainsi que pour se conformer aux réglementations et exigences sectorielles et régionales.
 
-Votre personnel chargé de la conformité et de la sécurité des données utilise le tableau de bord de sécurité et conformité Office 365 pour surveiller les incidents DLP.
+Votre personnel chargé de la conformité et de la sécurité des données utilise le tableau de bord de sécurité et conformité pour surveiller les incidents DLP.
 
 Si nécessaire, l’[Étape 5](../infoprotect-data-loss-prevention.md) peut vous aider à respecter cette exigence. 
 

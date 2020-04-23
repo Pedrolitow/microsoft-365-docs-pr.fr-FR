@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Comprendre la façon dont Contoso utilise les fonctionnalités de protection des informations dans Microsoft 365 Entreprise pour sécuriser des biens numériques dans le cloud.
-ms.openlocfilehash: 2fed60d18c878bf6e509c6955b8c8df758cc4caf
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 41873f14ac52000635508aca4728572556692cc4
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42068409"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43625301"
 ---
 # <a name="information-protection-for-the-contoso-corporation"></a>Protection des informations de Contoso Corporation
 
@@ -107,10 +107,10 @@ Le tableau suivant décrit le mappage des niveaux de données de Contoso aux fon
 
 |||||
 |:-------|:-----|:-----|:-----|
-| | **Office 365** | **Windows 10 et Office 365 ProPlus** | **EMS** |
+| | **Office 365** | **Applications Windows 10 et Microsoft 365 pour les entreprises** | **EMS** |
 | Niveau 1 : ligne de base  | Stratégies d’accès conditionnel à SharePoint et à Exchange Online <BR> Autorisations sur les sites SharePoint | Étiquettes de confidentialité <BR> BitLocker <BR> Protection des informations Windows | Stratégies d’accès conditionnel aux matériels et stratégies de gestion des applications mobiles |
-| Niveau 2 : Sensible | Niveau 1 plus : <BR> <BR> Étiquettes de confidentialité <BR> Étiquettes de rétention Office 365 sur les sites SharePoint <BR> Protection contre la perte de données Office 365 pour SharePoint et Exchange Online <BR> Sites SharePoint isolés  | Niveau 1 plus : <BR> <BR> Étiquettes de sensibilité sur les biens numériques  | Niveau 1 |
-| Niveau 3 : hautement réglementé | Niveau 2 plus : <BR><BR> Chiffrement Bring Your Own Key (BYOK) et protection des informations commerciales secrètes <BR> Azure Key Vault pour les applications métier qui interagissent avec les services Office 365 | Niveau 2 | Niveau 1 |
+| Niveau 2 : Sensible | Niveau 1 plus : <BR> <BR> Étiquettes de confidentialité <BR> Étiquettes de rétention Microsoft 365 sur les sites SharePoint <BR> Protection contre la perte de données pour SharePoint et Exchange Online <BR> Sites SharePoint isolés  | Niveau 1 plus : <BR> <BR> Étiquettes de sensibilité sur les biens numériques  | Niveau 1 |
+| Niveau 3 : hautement réglementé | Niveau 2 plus : <BR><BR> Chiffrement Bring Your Own Key (BYOK) et protection des informations commerciales secrètes <BR> Azure Key Vault pour les applications métier qui interagissent avec les services Microsoft 365 | Niveau 2 | Niveau 1 |
 |||||
 
 Voici les résultats de la configuration de la protection des informations de Contoso.

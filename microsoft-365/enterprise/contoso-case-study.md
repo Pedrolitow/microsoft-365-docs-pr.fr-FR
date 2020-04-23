@@ -15,18 +15,18 @@ ms.collection:
 - M365-subscription-management
 ms.custom: ''
 description: Comment une multinationale fictive mais représentative a mis en œuvre Microsoft 365 Entreprise.
-ms.openlocfilehash: 8a9727f806783c72a77a941274e4a1b042c430ca
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: bf974d374b9c60744b2efda465a7c5e92f0386bb
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601141"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43625349"
 ---
 # <a name="microsoft-365-enterprise-for-the-contoso-corporation"></a>Microsoft 365 Entreprise pour Contoso Corporation
 
 Microsoft 365 Entreprise est la première offre cloud de Microsoft qui allie les applications et services de productivité locaux et basés sur le cloud à Windows 10 Entreprise et aux fonctionnalités de sécurité avancées dans une solution complète et intelligente, qui permet à chacun d’être créatif et de collaborer en toute sécurité. 
 
-Contoso Corporation est un conglomérat de fabricants international fictif mais représentatif ayant son siège à Paris, en France. Contoso a déployé Microsoft 365 Entreprise et adressé des décisions de conception majeures et les détails d’implémentation pour la mise en réseau, l’identité, Windows 10 Entreprise, Office 365 ProPlus, la gestion des appareils mobiles, la protection des informations et la sécurité. 
+Contoso Corporation est un conglomérat de fabricants international fictif mais représentatif ayant son siège à Paris, en France. Contoso a déployé Microsoft 365 Entreprise et adressé des décisions de conception majeures et les détails d’implémentation pour la mise en réseau, l’identité, Windows 10 Entreprise, Applications Microsoft 365 pour les entreprises, la gestion des appareils mobiles, la protection des informations et la sécurité. 
 
 L’objectif global de Contoso pour Microsoft 365 Entreprise est d’accélérer leur transformation numérique à l’aide de services cloud pour réunir ses employés, partenaires, données, crée une valeur client et maintenir son avantage concurrentiel dans un monde avant tout digital.
 
@@ -52,9 +52,9 @@ Reportez-vous aux articles suivants pour plus d’informations :
 
   L’infrastructure Windows 10 Entreprise de Contoso se déploie et installe automatiquement les mises à jour pour les appareils exécutant son PC principal et le système d’exploitation des appareils.
 
-- [Office 365 ProPlus](contoso-o365pp.md)
+- [Applications Microsoft 365 pour les entreprises](contoso-o365pp.md)
 
-  L’infrastructure Office 365 ProPlus de Contoso se déploie et installe automatiquement les mises à jour pour la suite de logiciels de productivité Microsoft Office.
+  Contoso les Applications Microsoft 365 pour l’infrastructure d’entreprise déploient et installent automatiquement les mises à jour de la suite de logiciels de productivité Microsoft Office.
 
 - [Gestion des appareils mobiles](contoso-mdm.md)
 

@@ -18,18 +18,18 @@ ms.assetid: 712cfcc1-31e8-4e51-8561-b64258a8f1e5
 ms.collection:
 - M365-security-compliance
 description: Les administrateurs peuvent découvrir comment supprimer des utilisateurs du portail des utilisateurs restreints dans Office 365. Les utilisateurs sont ajoutés au portail Utilisateurs restreints pour avoir envoyé du courrier indésirable sortant, généralement en raison de la compromission d’un compte.
-ms.openlocfilehash: f1f869a81ef5b01733bf9060117cf3706094b961
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: 1625046cefbe6a62beacacefdac0318b6c16f49b
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42895202"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634375"
 ---
 # <a name="remove-blocked-users-from-the-restricted-users-portal-in-office-365"></a>Retirer les utilisateurs bloqués du portail Utilisateurs restreints dans Office 365
 
 Si un utilisateur dépasse l’une des limites d’envoi sortant, comme spécifié dans [les limites de service](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-across-office-365-options) ou dans [les stratégies anti-courrier indésirable sortantes](configure-the-outbound-spam-policy.md), l’utilisateur ne peut pas envoyer d’e-mails, mais il peut continuer à en recevoir.
 
-L’utilisateur est ajouté au portail Utilisateurs restreints dans le Centre de sécurité et conformité Office 365. Lorsqu’il essaie d’envoyer des e-mail, le message est renvoyé dans une notification d’échec de remise (ou notification de non-remise) avec le code d’erreur [5.1.8](https://docs.microsoft.com/Exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/fix-error-code-5-1-8-in-exchange-online) et le texte suivant :
+L’utilisateur est ajouté au portail Utilisateurs restreints dans le Centre de sécurité et conformité. Lorsqu’il essaie d’envoyer des e-mail, le message est renvoyé dans une notification d’échec de remise (ou notification de non-remise) avec le code d’erreur [5.1.8](https://docs.microsoft.com/Exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/fix-error-code-5-1-8-in-exchange-online) et le texte suivant :
 
 > «Votre message n’a pas pu être remis parce que vous n’avez pas été reconnu comme expéditeur valide. Le plus souvent, il est possible que votre adresse de messagerie soit susceptible d’envoyer du courrier indésirable et qu’elle ne soit plus autorisée à envoyer du courrier électronique.  Contactez votre administrateur pour obtenir de l’aide. Le serveur distant a renvoyé' 550 5.1.8 accès refusé, expéditeur sortant incorrect».
 
@@ -41,7 +41,7 @@ Les administrateurs peuvent supprimer des utilisateurs du portail Expéditeurs r
 
 - Pour vous connecter à Exchange Online PowerShell, voir [Connexion à Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).
 
-- Des autorisations doivent vous être attribuées avant de pouvoir exécuter ces procédures. Pour supprimer des utilisateurs du portail Utilisateurs restreints, vous devez être membre des groupes de rôles **Management de l’organisation** ou **Administrateur de sécurité**. Pour l’accès en lecture seule au portail Utilisateurs restreints, vous devez être membre du groupe de rôles **Lecteur de sécurité**. Pour plus d’informations sur les groupes de rôles dans le Centre de sécurité et conformité, voir [Autorisations dans le Centre de sécurité et conformité Office 365](permissions-in-the-security-and-compliance-center.md).
+- Des autorisations doivent vous être attribuées avant de pouvoir exécuter ces procédures. Pour supprimer des utilisateurs du portail Utilisateurs restreints, vous devez être membre des groupes de rôles **Management de l’organisation** ou **Administrateur de sécurité**. Pour l’accès en lecture seule au portail Utilisateurs restreints, vous devez être membre du groupe de rôles **Lecteur de sécurité**. Pour des informations supplémentaires sur les groupes de rôles dans le Centre de sécurité et conformité, voir [Autorisations dans le Centre de sécurité et conformité](permissions-in-the-security-and-compliance-center.md).
 
 - Un expéditeur dépassant la limite du nombre de messages sortants est un indicateur de compte compromis. Avant de supprimer l’utilisateur du portail Utilisateurs restreints, veillez à suivre les étapes nécessaires pour reprendre le contrôle de son compte. Pour plus informations, voir [Réponse à un compte de messagerie compromis dans Office 365](responding-to-a-compromised-email-account.md).
 
@@ -65,7 +65,7 @@ Les administrateurs peuvent supprimer des utilisateurs du portail Expéditeurs r
 La stratégie d’alerte par défaut nommée **Utilisateur pour lequel l’envoi de courrier est restreint** avertit automatiquement les administrateurs lorsque les utilisateurs ne peuvent pas envoyer de messages sortants. Vous pouvez vérifier ces paramètres et ajouter des utilisateurs à avertir. Pour plus d’informations sur les stratégies d’alerte, accédez à [Stratégies d’alerte dans le centre de sécurité et conformité](../../compliance/alert-policies.md).
 
 > [!IMPORTANT]
-> Pour que les alertes fonctionnent, la recherche dans le journal d’audit doit être activée. Pour plus d’informations, voir [Activer ou désactiver la recherche dans un journal d’audit Office 365](../../compliance/turn-audit-log-search-on-or-off.md).
+> Pour que les alertes fonctionnent, la recherche dans le journal d’audit doit être activée. Pour plus d’informations, voir [Activer ou désactiver la recherche dans le journal d’audit](../../compliance/turn-audit-log-search-on-or-off.md).
 
 1. Dans le Centre de sécurité et conformité, accédez à **Alertes** \> **Stratégies d’alerte**.
 

@@ -2,7 +2,7 @@
 ### <a name="required-your-network-is-ready-for-microsoft-365-enterprise"></a>Obligatoire : votre réseau est prêt pour Microsoft 365 Entreprise
 
 - Vos bureaux disposent d’une bande passante Internet adéquate pour le trafic Microsoft 365, y compris pour l’installation et les mises à jour d’Office 365, de Microsoft Intune et de Windows 10 Entreprise.
-- Votre réseau global est conforme à une [architecture de référence Office 365](https://docs.microsoft.com/office365/enterprise/office-365-network-connectivity-principles#BKMK_P2).
+- Votre réseau global correspond à un [architecture de référence Microsoft 365](https://docs.microsoft.com/office365/enterprise/office-365-network-connectivity-principles#BKMK_P2).
 - Les modifications de votre réseau ont été testées et répondent aux exigences en matière de latence du trafic.
 
 Si nécessaire, l’[Étape 1](../networking-provide-bandwidth-cloud-services.md) peut vous aider à répondre à cette exigence.

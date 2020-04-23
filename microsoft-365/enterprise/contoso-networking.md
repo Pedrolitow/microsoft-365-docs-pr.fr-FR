@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Comprendre l’infrastructure réseau Contoso et la façon dont elle utilise la technologie SD-WAN pour assurer la performance optimale de la connectivité réseau avec les services cloud Microsoft 365 Entreprise.
-ms.openlocfilehash: 20279ac0aed1b7ad86e1fc8e1d78a412230eba52
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 4e649796b30b96db3b36de2dabec1f276728d3ea
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42068337"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43625277"
 ---
 # <a name="networking-for-the-contoso-corporation"></a>Mise en réseau de Contoso Corporation
 
@@ -50,14 +50,14 @@ La figure 1 indique l’infrastructure réseau de Contoso et ses connexions à 
 
 ## <a name="use-of-sd-wan-for-optimal-network-connectivity-to-microsoft"></a>Utilisation de la technologie SD-WAN pour la connectivité réseau optimale à Microsoft
 
-Contoso a suivi les [principes de connectivité réseau Office 365](https://docs.microsoft.com/office365/enterprise/office-365-network-connectivity-principles) pour :
+Contoso a suivi les [principes de connectivité réseau Microsoft 365](https://docs.microsoft.com/office365/enterprise/office-365-network-connectivity-principles) pour :
 
-1. Identifier et différencier le trafic réseau Office 365
+1. Identification et différenciation du trafic réseau Microsoft 365
 2. Sortir les connexions réseau localement
 3. Éviter les épingles de réseau
 4. Ignorer les périphériques de sécurité réseau en double
 
-Il existe trois catégories de trafic réseau pour Office 365 : Optimiser, Autoriser et Par défaut. Optimiser et Autoriser le trafic est le trafic réseau approuvé qui est chiffré et sécurisé aux points de terminaison et est destiné au réseau Microsoft 365.
+Il existe trois catégories de trafic réseau pour Microsoft 365 : Optimiser, Autoriser et Par défaut. Optimiser et Autoriser le trafic est le trafic réseau approuvé qui est chiffré et sécurisé aux points de terminaison et est destiné au réseau Microsoft 365.
 
 Contoso a décidé d’effectuer les opérations suivantes :
 
@@ -93,7 +93,7 @@ L’adoption réussie des services Microsoft 365 Entreprise par les utilisateur
 
 2. Création d’un plan pour la connectivité réseau de Microsoft 365 Entreprise
 
-   Contoso a utilisé les [principes de connectivité réseau Office 365](https://docs.microsoft.com/office365/enterprise/office-365-network-connectivity-principles) et fourni les architectures réseau de référence pour déterminer SD-WAN comme sa topologie par défaut pour la connectivité Office 365.
+   Contoso a utilisé les [principes de connectivité réseau Microsoft 365](https://docs.microsoft.com/office365/enterprise/office-365-network-connectivity-principles) et fourni les architectures réseau de référence pour déterminer SD-WAN comme sa topologie par défaut pour la connectivité Microsoft 365.
 
 3. Analyse de l’utilisation de la connexion à Internet et de la bande passante WAN MPLS à chaque bureau, et de la bande passante accrue, le cas échéant
 
@@ -105,7 +105,7 @@ L’adoption réussie des services Microsoft 365 Entreprise par les utilisateur
 
 5. Configuration du DNS interne
 
-   Le DNS doit être fonctionnel et le trafic Office 365 doit y être vérifié.
+   Le DNS doit être fonctionnel et le trafic Microsoft 365 doit y être vérifié.
 
 6. Validation de la connectivité des ports et des points de terminaison réseau
 
