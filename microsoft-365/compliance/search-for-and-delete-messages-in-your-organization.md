@@ -1,5 +1,5 @@
 ---
-title: Recherche et suppression de messages électroniques dans votre organisation Office 365
+title: Recherche et suppression de messages électroniques dans votre organisation
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -16,19 +16,19 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 3526fd06-b45f-445b-aed4-5ebd37b3762a
-description: Utilisez la fonctionnalité de recherche et de purge dans le Centre de sécurité et de conformité d’Office 365 pour rechercher et supprimer un message électronique dans toutes les boîtes aux lettres de votre organisation.
-ms.openlocfilehash: c05b6addf2fe50a5e6130e3c53fa1df02e50de30
-ms.sourcegitcommit: d767c288ae34431fb046f4cfe36cec485881385f
+description: Utilisez la fonctionnalité de recherche et de purge dans le Centre de sécurité et de conformité pour rechercher et supprimer un message électronique dans toutes les boîtes aux lettres de votre organisation.
+ms.openlocfilehash: 69df11f00680aec2380ed5663761a29bc1fcfebc
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "43516829"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43626440"
 ---
 # <a name="search-for-and-delete-email-messages"></a>Rechercher et supprimer des messages électroniques
 
 **Cet article est destiné aux administrateurs. Vous essayez de rechercher des éléments à supprimer dans votre boîte aux lettres ? Voir [Rechercher un message ou un élément avec la Recherche instantanée](https://support.office.com/article/69748862-5976-47b9-98e8-ed179f1b9e4d)**.
    
-Vous pouvez utiliser la fonctionnalité de recherche de contenu dans Office 365 pour rechercher et supprimer un message électronique dans toutes les boîtes aux lettres de votre organisation. Cela peut vous aider à rechercher et supprimer les messages potentiellement nuisibles ou à haut risque, tels que :
+Vous pouvez utiliser la fonctionnalité de recherche de contenu pour rechercher et supprimer un message électronique dans toutes les boîtes aux lettres de votre organisation. Cela peut vous aider à rechercher et supprimer les messages potentiellement nuisibles ou à haut risque, tels que :
   
 - Messages contenant des virus ou des pièces jointes dangereuses
 
@@ -105,7 +105,7 @@ Start-ComplianceSearch -Identity $Search.Identity
 
 L’étape suivante consiste à se connecter au Centre de sécurité et conformité PowerShell de votre organisation. Pour consulter des instructions détaillées, voir [Se connecter au Centre de sécurité et conformité PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
   
-Si votre compte Office 365 utilise l’authentification multi-facteur (MFA) ou l’authentification fédérée, vous ne pouvez pas utiliser les instructions de la rubrique précédente pour vous connecter au Centre de sécurité et conformité PowerShell. Consultez plutôt les instructions de la rubrique [Se connecter au Centre de sécurité et conformité PowerShell à l’aide de l’authentification multi-facteur](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/mfa-connect-to-scc-powershell).
+Si votre compte Microsoft 365 utilise l’authentification multi-facteur (MFA) ou l’authentification fédérée, vous ne pouvez pas utiliser les instructions de la rubrique précédente pour vous connecter au Centre de sécurité et conformité PowerShell. Consultez plutôt les instructions de la rubrique [Se connecter au Centre de sécurité et conformité PowerShell à l’aide de l’authentification multi-facteur](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/mfa-connect-to-scc-powershell).
 
 Une fois que vous vous êtes connecté au Centre de sécurité et de conformité PowerShell, exécutez les applets de commande **New-ComplianceSearch** et **Start-ComplianceSearch** préparés à l’étape précédente.
   
@@ -137,9 +137,9 @@ Pour plus d’informations, voir [New-ComplianceSearchAction](https://docs.micro
     
 - **Que se passe-t-il lorsque vous avez supprimé un message ?**
 
-   Un message qui a été supprimé avec  la commande `New-ComplianceSearchAction -Purge -PurgeType HardDelete` est déplacé vers le dossier de purges et ne peut pas être consulté par l’utilisateur. Une fois le message déplacé dans le dossier Purges, il est conservé pour une durée basée sur la période de rétention des éléments supprimés si la récupération d’élément unique est activée pour la boîte aux lettres. (Dans Office 365, la récupération d’élément unique est activée par défaut lors de la création d’une nouvelle boîte aux lettres.) Une fois la période de rétention des éléments supprimés expirée, le message est marqué pour suppression définitive et sera purgé d’Office 365 la prochaine fois que l’Assistant Dossier géré le traitera. 
+   Un message qui a été supprimé avec  la commande `New-ComplianceSearchAction -Purge -PurgeType HardDelete` est déplacé vers le dossier de purges et ne peut pas être consulté par l’utilisateur. Une fois le message déplacé dans le dossier Purges, il est conservé pour une durée basée sur la période de rétention des éléments supprimés si la récupération d’élément unique est activée pour la boîte aux lettres. (Dans Microsoft 365, la récupération d’élément unique est activée par défaut lors de la création d’une nouvelle boîte aux lettres.) Une fois la période de rétention des éléments supprimés expirée, le message est marqué pour suppression définitive et sera purgé de Microsoft 365 la prochaine fois que l’Assistant Dossier géré le traitera. 
 
-   Si vous utilisez la commande `New-ComplianceSearchAction -Purge -PurgeType SoftDelete`, les messages sont déplacés vers le dossier Suppressions dans le dossier Eléments récupérables de l’utilisateur. Il n’est pas immédiatement purgé d’Office 365. L’utilisateur peut récupérer les messages dans le dossier Éléments supprimés pendant une durée basée sur la période de rétention des éléments supprimés configurée pour la boîte aux lettres. Après expiration de cette période de rétention (ou si l’utilisateur purge le message avant son expiration), le message est déplacé vers le dossier Purges et n’est plus accessible par l’utilisateur. Une fois dans le dossier Purges, le message est conservé pour une durée basée sur la période de rétention des éléments supprimés configurée pour la boîte aux lettres si la récupération d’élément unique est activée pour la boîte aux lettres. (Dans Office 365, la récupération d’élément unique est activée par défaut lors de la création d’une nouvelle boîte aux lettres.) Une fois la période de rétention des éléments supprimés expirée, le message est marqué pour suppression définitive et sera purgé d’Office 365 la prochaine fois que l’Assistant Dossier géré le traitera. 
+   Si vous utilisez la commande `New-ComplianceSearchAction -Purge -PurgeType SoftDelete`, les messages sont déplacés vers le dossier Suppressions dans le dossier Eléments récupérables de l’utilisateur. Il n’est pas immédiatement purgé de Microsoft 365. L’utilisateur peut récupérer les messages dans le dossier Éléments supprimés pendant une durée basée sur la période de rétention des éléments supprimés configurée pour la boîte aux lettres. Après expiration de cette période de rétention (ou si l’utilisateur purge le message avant son expiration), le message est déplacé vers le dossier Purges et n’est plus accessible par l’utilisateur. Une fois dans le dossier Purges, le message est conservé pour une durée basée sur la période de rétention des éléments supprimés configurée pour la boîte aux lettres si la récupération d’élément unique est activée pour la boîte aux lettres. (Dans Microsoft 365, la récupération d’élément unique est activée par défaut lors de la création d’une nouvelle boîte aux lettres.) Une fois la période de rétention des éléments supprimés expirée, le message est marqué pour suppression définitive et sera purgé de Microsoft 365 la prochaine fois que l’Assistant Dossier géré le traitera. 
     
 - **Comment faire pour supprimer un message de plus de 50 000 boîtes aux lettres ?**
 
@@ -149,7 +149,7 @@ Pour plus d’informations, voir [New-ComplianceSearchAction](https://docs.micro
 
     Non, la commande New-ComplianceSearchAction-Purge ne supprime pas les éléments non indexés. 
     
-- **Que se passe-t-il si un message est supprimé d’une boîte aux lettres qui a été placée en conservation inaltérable ou en conservation pour litige ou fait l’objet d’une stratégie de rétention Office 365 ?**
+- **Que se passe-t-il si un message est supprimé d’une boîte aux lettres qui a été placée en conservation inaltérable ou en conservation pour litige ou fait l’objet d’une stratégie de rétention Microsoft 365 ?**
 
     Une fois le message supprimé et déplacé vers le dossier de purges, le message est conservé jusqu’à l’expiration de la durée de conservation. Si la durée de la conservation est illimitée, les éléments sont conservés jusqu’à la suppression de la conservation ou la modification de la durée de la conservation.
     
