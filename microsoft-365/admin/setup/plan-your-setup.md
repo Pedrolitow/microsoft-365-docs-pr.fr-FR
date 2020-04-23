@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: eb926624-018b-4486-bf11-5fba6ee4d645
 description: Découvrez ce que vous devez faire pour configurer votre Microsoft 365 pour les entreprises.
-ms.openlocfilehash: 97463e624968c5b3edf563e916cbf4929ac581b6
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: d02e1aaf03449bd976b8db549274002b3ebb6ed6
+ms.sourcegitcommit: b458277f0a9937555bc6c5b3fb2a41613f7cc9a9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627569"
+ms.lasthandoff: 04/23/2020
+ms.locfileid: "43794033"
 ---
 # <a name="plan-your-setup-of-microsoft-365-for-business"></a>Planifier la configuration de Microsoft 365 pour les entreprises
 
@@ -93,7 +93,7 @@ Si vous envisagez de passer d’un service de messagerie existant à Microsoft 3
   
 Si vous envisagez d’utiliser Microsoft 365 pour votre courrier électronique :
   
-- Pour déplacer votre adresse de messagerie professionnelle (par exemple, *Rob@contoso.com*) d’un autre service de messagerie vers Microsoft 365, vous devez diriger votre courrier vers votre nouvelle boîte aux lettres Microsoft 365. Pour ce faire, sélectionnez **migrer les données de vos utilisateurs** sur la page de **configuration** , dans laquelle nous vous guiderons tout au long des mises à jour que vous devez effectuer au niveau de votre hôte de domaine, étape par étape.
+- Pour déplacer votre adresse de messagerie professionnelle (par exemple, *rob\@contoso.com*) à partir d’un autre service de messagerie vers Microsoft 365, vous devez diriger votre courrier vers votre nouvelle boîte aux lettres Microsoft 365. Pour ce faire, sélectionnez **migrer les données de vos utilisateurs** sur la page de **configuration** , dans laquelle nous vous guiderons tout au long des mises à jour que vous devez effectuer au niveau de votre hôte de domaine, étape par étape.
 
 - Une fois votre hôte de domaine mis à jour, les modifications prennent généralement effet après une heure ou deux. Cependant, sachez que la mise à jour des modifications sur Internet peut parfois prendre jusqu’à 72 heures.
 
