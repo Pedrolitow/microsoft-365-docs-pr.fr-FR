@@ -15,25 +15,25 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Ce scénario de solution illustre comment gérer le cycle de vie de documents relatifs aux produits stockés dans SharePoint Online à l’aide d’étiquettes de rétention Office 365. Pour ce faire, vous pouvez utiliser les métadonnées de document pour classifier le contenu, et spécifiquement en appliquant automatiquement des étiquettes de rétention Office 365 et en configurant la rétention basée sur les événements.
-ms.openlocfilehash: bccfb7d20bfcca6476ce5fa971a2ab0c455824a5
-ms.sourcegitcommit: e695bcfc69203da5d3d96f3d6a891664a0e27ae2
+description: Ce scénario de solution illustre comment gérer le cycle de vie de documents relatifs aux produits stockés dans SharePoint Online à l’aide d’étiquettes de rétention. Pour ce faire, vous pouvez utiliser les métadonnées de document pour classifier le contenu, et spécifiquement en appliquant automatiquement des étiquettes de rétention et en configurant la rétention basée sur les événements.
+ms.openlocfilehash: 214384fcdf5099f71c36425102bb62866859f910
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43106036"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636392"
 ---
 # <a name="manage-the-lifecycle-of-sharepoint-documents-with-retention-labels"></a>Gérer le cycle de vie des documents SharePoint avec étiquettes de rétention
 
 >*[Guide de sécurité et conformité pour les licences Microsoft 365](https://aka.ms/ComplianceSD).*
 
-Cet article vous explique comment gérer le cycle de vie de documents relatifs à des produits stockés dans SharePoint Online à l’aide d’étiquettes de rétention d’Office 365 et en particulier de l’application automatique d’étiquettes et de la configuration de la rétention basée sur les événements. La fonctionnalité d’application automatique utilise la classification de documents en utilisant des métadonnées SharePoint. Le scénario décrit dans cet article est basé sur des documents relatifs à des produits, mais les mêmes concepts peuvent être utilisés dans d’autres scénarios. Par exemple, dans l’industrie pétrolière et gazière, vous pouvez gérer le cycle de vie des documents relatifs aux biens matériels tels que les plateformes pétrolières, les registres de forage ou les licences de production. Le secteur des services financiers, vous permet de gérer les documents associés aux comptes bancaires, aux hypothèques ou aux contrats d’assurance. Dans le secteur public, vous pouvez gérer les documents relatifs aux permis de construction ou aux formulaires fiscaux.
+Cet article vous explique comment gérer le cycle de vie de documents relatifs à des produits stockés dans SharePoint Online en utilisant des étiquettes de rétention, en particulier en appliquant automatiquement des étiquettes et en configurant une rétention basée sur les événements. La fonctionnalité d’application automatique utilise la classification de documents en utilisant des métadonnées SharePoint. Le scénario décrit dans cet article est basé sur des documents relatifs à des produits, mais les mêmes concepts peuvent être utilisés dans d’autres scénarios. Par exemple, dans l’industrie pétrolière et gazière, vous pouvez gérer le cycle de vie des documents relatifs aux biens matériels tels que les plateformes pétrolières, les registres de forage ou les licences de production. Le secteur des services financiers, vous permet de gérer les documents associés aux comptes bancaires, aux hypothèques ou aux contrats d’assurance. Dans le secteur public, vous pouvez gérer les documents relatifs aux permis de construction ou aux formulaires fiscaux.
 
 Examinons le scénario de cet article. Nous examinerons l’architecture des informations et la définition des étiquettes de rétention. Nous examinerons ensuite la classification des documents en appliquant automatiquement les étiquettes, puis en générant les événements qui commencent au début de la période de rétention.
 
 ## <a name="information-architecture"></a>Architecture des informations
 
-Le scénario de cet article est basé sur une entreprise manufacturière qui utilise Office 365 SharePoint Online pour stocker tous les documents relatifs aux produits qu’elle développe. Ces documents incluent les spécifications du produit, les accords avec des fournisseurs et les manuels de l’utilisateur. Lorsque ces documents sont stockés dans SharePoint dans le cadre des stratégies de gestion de contenu d’entreprise, les métadonnées de document sont définies et utilisées pour les classifier. Chaque document possède les propriétés de métadonnées suivantes :
+Le scénario de cet article est basé sur une entreprise manufacturière qui utilise SharePoint Online pour stocker tous les documents relatifs aux produits qu’elle développe. Ces documents incluent les spécifications du produit, les accords avec des fournisseurs et les manuels de l’utilisateur. Lorsque ces documents sont stockés dans SharePoint dans le cadre des stratégies de gestion de contenu d’entreprise, les métadonnées de document sont définies et utilisées pour les classifier. Chaque document possède les propriétés de métadonnées suivantes :
 
 - **Type de document** (par exemple, spécification de produit, contrat et manuel de l’utilisateur)
 
@@ -146,7 +146,7 @@ Voici à quoi ressemblent les paramètres de l’étiquette de rétention de sp�
 
 Nous allons [appliquer automatiquement](labels.md#applying-a-retention-label-automatically-based-on-conditions) les étiquettes de rétention que nous avons créées pour ce scénario à l’aide de KQL (Keyword Query Language). KQL est le langage utilisé pour créer des requêtes de recherche. Dans KQL, vous pouvez effectuer une recherche à l’aide de mots clés ou de propriétés gérées. Pour plus d’informations sur le KQL, voir <https://docs.microsoft.com/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference>
 
-À un niveau élevé, nous voulons indiquer à Office 365 d’appliquer l’étiquette de rétention de la **spécification de produit** à tous les documents qui ont un **État** de spécification**Final** et un **Type de document** de **Spécification de produit**. Rappelez-vous que **État** et **Type de document** correspondent aux colonnes de site précédemment définies pour le type de contenu documentation produit dans la section [Architecture d’informations](#information-architecture). Pour y parvenir, vous devez configurer le schéma de recherche.
+À un niveau élevé, nous voulons indiquer à Microsoft 365 d’appliquer l’étiquette de rétention de la **spécification de produit** à tous les documents qui ont un **État** de spécification**Final** et un **Type de document** de **Spécification de produit**. Rappelez-vous que **État** et **Type de document** correspondent aux colonnes de site précédemment définies pour le type de contenu documentation produit dans la section [Architecture d’informations](#information-architecture). Pour y parvenir, vous devez configurer le schéma de recherche.
 
 Lorsque SharePoint indexe le contenu, il génère automatiquement des propriétés analysées pour chaque colonne de site. Pour ce scénario, nous sommes intéressés par les propriétés **Type de document** et **État**. Vous avez besoin de documents dans la bibliothèque en utilisant le type de contenu approprié et avoir renseigné les colonnes de site pour que la recherche puisse créer les propriétés analysées.
 
@@ -237,7 +237,7 @@ Maintenant que nous avons vérifié que la requête KQL fonctionne correctement,
 
 6. Tapez un nom (par exemple, **Appliquer automatiquement une étiquette de spécification de produit**), ainsi qu’une description facultative pour la stratégie d’étiquette, puis sélectionnez **Suivant**. 
 
-7. Dans la page de l'assistant **Choisir des emplacements**, sélectionnez les emplacements de contenu auxquels vous voulez appliquer la stratégie. Dans ce scénario, nous appliquons la stratégie uniquement aux emplacements SharePoint, car tous les documents de production sont stockés uniquement dans les bibliothèques de documents SharePoint. Sélectionnez **Me laisser choisir des emplacements spécifiques**, activer ou désactiver l’état des groupes d’e-mail Exchange, de comptes OneDrive et de groupes Office 365 et vérifier que l’état des sites SharePoint est activé. 
+7. Dans la page de l'assistant **Choisir des emplacements**, sélectionnez les emplacements de contenu auxquels vous voulez appliquer la stratégie. Dans ce scénario, nous appliquons la stratégie uniquement aux emplacements SharePoint, car tous les documents de production sont stockés uniquement dans les bibliothèques de documents SharePoint. Sélectionnez **Me laisser choisir des emplacements spécifiques**, activez ou désactivez l’état du courrier Exchange, des comptes OneDrive et de Groupes Microsoft 365, et vérifiez que l’état des sites SharePoint est activé. 
 
     ![Choisissez des sites spécifiques pour étiquettes à appliquer automatiquement sur](../media/SPRetentionSPlocations.png)
 
@@ -270,7 +270,7 @@ Une autre étape de la vérification consiste à consulter les propriétés du d
 
 Vous pouvez créer manuellement l’événement dans le centre de sécurité et conformité en accédant à **Gestion des enregistrements** > **Événements**, puis en choisissant le type d’événement, en définissant les ID d’actif appropriés et en entrant une date pour l’événement. Pour plus d’informations, voir[Vue d’ensemble de la rétention basée sur un événement](event-driven-retention.md).
 
-Pour ce scénario, nous allons créer automatiquement l’événement en le générant à partir d’un système de production externe. Dans ce cas, le système qui génère l’événement est une simple liste SharePoint qui indique si un produit est en production et un [Microsoft Flow](https://docs.microsoft.com/flow/getting-started) associé à la liste et qui déclenche l’événement. Dans un scénario concret, il peut s’agit d’un système qui génère l’événement, tel qu’un système RH ou CRM. Flow contient de nombreux interactions et blocs de construction prêts à l’emploi pour les charges de travail Office 365 telles qu’Exchange, SharePoint, Teams et Dynamics 365, ainsi que des applications tierces telles que Twitter, Box, Salesforce et Workdays. Vous pouvez ainsi intégrer facilement Flow à ces systèmes. Pour plus d’informations, voir[Automatiser la rétention basée sur un événement](automate-event-driven-retention.md).
+Pour ce scénario, nous allons créer automatiquement l’événement en le générant à partir d’un système de production externe. Dans ce cas, le système qui génère l’événement est une simple liste SharePoint qui indique si un produit est en production et un [Microsoft Flow](https://docs.microsoft.com/flow/getting-started) associé à la liste et qui déclenche l’événement. Dans un scénario concret, il peut s’agit d’un système qui génère l’événement, tel qu’un système RH ou CRM. Flow contient un grand nombre d’interactions et de blocs de construction prêts à l’emploi pour les charges de travail Microsoft 365 telles qu’Exchange, SharePoint, Teams et Dynamics 365, ainsi que des applications tierces telles que Twitter, Box, Salesforce et Workdays. Vous pouvez ainsi intégrer facilement Flow à ces systèmes. Pour plus d’informations, voir[Automatiser la rétention basée sur un événement](automate-event-driven-retention.md).
 
 La capture d’écran suivante montre la liste SharePoint qui sera utilisée pour déclencher l’événement : 
 

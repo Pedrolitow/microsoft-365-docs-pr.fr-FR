@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Les stratégies de rétention du journal d’audit font partie des nouvelles fonctionnalités d’audit avancées de Microsoft 365. Une stratégie de rétention de journal d’audit vous permet de spécifier la durée de conservation des journaux d’audit dans votre organisation.
-ms.openlocfilehash: d19e18fa2c701996306f5b2e567ea01708d96144
-ms.sourcegitcommit: 7d07e7ec84390a8f05034d3639fa5db912809585
+ms.openlocfilehash: 25fbabd4c7524702a985616797b31730b14a2d8f
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42091315"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636372"
 ---
 # <a name="manage-audit-log-retention-policies"></a>Gérer les stratégies de rétention du journal d'audit
 
@@ -85,7 +85,7 @@ Rien n’indique pour le moment que la stratégie de rétention a été correcte
 
 ## <a name="create-an-audit-log-retention-policy-in-powershell"></a>Créer une stratégie de rétention de journal d’audit dans PowerShell
 
-Vous pouvez également utiliser le Centre de sécurité et conformité Office 365 PowerShell pour créer des stratégies de rétention de journal d’audit. 
+Vous pouvez également utiliser le Centre de sécurité et conformité PowerShell pour créer des stratégies de rétention de journal d’audit. 
 
 1. [Se connecter à l’interface PowerShell du Centre de sécurité et conformité](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
 

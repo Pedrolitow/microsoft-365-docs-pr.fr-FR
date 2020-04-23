@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Avec les étiquettes de rétention, vous pouvez baser une période de rétention sur la survenue d’un type d’événement spécifique. L’événement déclenche le début de la période de rétention, et tout le contenu portant une étiquette définie pour ce type d’événement se voit appliquer les actions de rétention de l’étiquette. La rétention basée sur un événement est généralement utilisée dans le cadre d’un processus de gestion des enregistrements.
-ms.openlocfilehash: 4389f3639de3e9e036491026455ce62a9e258432
-ms.sourcegitcommit: e695bcfc69203da5d3d96f3d6a891664a0e27ae2
+ms.openlocfilehash: a33c9ae73c2a1721e62c4c1c294270cc8d27d198
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43105621"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43616018"
 ---
 # <a name="overview-of-event-driven-retention"></a>Vue d’ensemble des rétentions basées sur des événements
 
@@ -84,7 +84,7 @@ Voici le niveau le plus haut du flux de travail pour la rétention basée sur de
 
 ### <a name="step-1-create-a-label-whose-retention-period-is-based-on-an-event"></a>Étape 1 : créer une étiquette dont la période de rétention est basée sur des événements
 
-Dans le Centre de conformité Microsoft 365, Centre de sécurité Microsoft 365 ou Centre de sécurité &amp; conformité Office 365, dans la partie gauche, choisissez l’onglet **Classification** > **Étiquettes de rétention** > **Étiquettes** > **Créer une étiquette**.
+Dans le Centre de conformité Microsoft 365, le Centre de sécurité Microsoft 365 ou le Centre de sécurité et conformité, dans la partie gauche, choisissez l’onglet **Classification** > **Étiquettes de rétention** > **Étiquettes** > **Créer une étiquette**.
   
 Lorsque vous créez l’étiquette, activez la rétention, puis sélectionnez l’option indiquée ci-dessous pour conserver ou supprimer le contenu basé sur un événement. Cela signifie que les paramètres de rétention ne rentrent pas en vigueur avant l’étape 5, lorsque vous créez un événement sur la page **Événements**. 
   
@@ -168,7 +168,7 @@ Pour obtenir plus d’informations, reportez-vous à la rubrique [Requêtes par 
 
 Pour accéder à la page **Événements**, les réviseurs doivent être membres du groupe de rôles possédant le rôle **Gestion de la destruction** et le rôle **Journaux d’audit en lecture seule**. Nous vous recommandons de créer un nouveau groupe de rôles appelé Réviseurs de destruction, d’ajouter ces deux rôles à ce groupe de rôles, puis d’ajouter des membres au groupe de rôles. 
   
-Pour obtenir plus d’informations, consultez l’article [Octroi de l’accès au Centre de sécurité &amp; conformité Office 365 aux utilisateurs](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
+Pour plus d’informations, voir [Autoriser l’accès des utilisateurs au Centre de sécurité et conformité](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
   
 ## <a name="automate-events-by-using-powershell"></a>Automatisation des événements à l’aide de PowerShell
 

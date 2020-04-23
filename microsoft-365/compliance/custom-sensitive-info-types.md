@@ -16,18 +16,18 @@ search.appverid:
 - MOE150
 - MET150
 description: Obtenez une vue d’ensemble des types d’informations sensibles personnalisés pour la protection contre la perte de données (DLP).
-ms.openlocfilehash: b95501c08c2ac53eed6101abfa9f4b814c49f940
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 2e56811cf8e837e698254c0205d5b831f7b1f3b1
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42076977"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43617088"
 ---
 # <a name="custom-sensitive-information-types"></a>Types d’informations sensibles personnalisés
 
 ## <a name="overview"></a>Vue d’ensemble
 
-Office 365 inclut différents types d’informations sensibles intégrés prêts à l’emploi, par exemple, pour la [protection contre la perte de données](data-loss-prevention-policies.md) (DLP) ou avec [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security). Les types d’informations sensibles intégrés peuvent aider à identifier et à protéger des numéros de carte de crédit, de compte bancaire, de passeport et autres sur la base de modèles définis par une expression régulière (regex) ou une fonction. Pour en savoir plus, voir [Éléments recherchés par les types d’informations sensibles](what-the-sensitive-information-types-look-for.md).
+Microsoft 365 inclut différents types d’informations sensibles intégrés prêts à l’emploi, par exemple, pour la [protection contre la perte de données](data-loss-prevention-policies.md) (DLP) ou avec [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security). Les types d’informations sensibles intégrés peuvent aider à identifier et à protéger des numéros de carte de crédit, de compte bancaire, de passeport et autres sur la base de modèles définis par une expression régulière (regex) ou une fonction. Pour en savoir plus, voir [Éléments recherchés par les types d’informations sensibles](what-the-sensitive-information-types-look-for.md).
 
 Mais que se passe-t-il si vous devez identifier et protéger un autre type d’informations sensibles, par exemple, des ID d’employé ou des numéros de projet, à l’aide d’un format spécifique de votre organisation ? Vous pouvez créer un type d’informations sensibles personnalisé.
 

@@ -17,12 +17,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: Déterminez si votre organisation implémentera des étiquettes dans le cadre de votre plan RGPD.
-ms.openlocfilehash: fa10e3ccd320026f06db76feef8711f8483c2b70
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: db61c5c26ed8484e99aa8f06310bdd3385cf2dce
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596041"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637134"
 ---
 # <a name="architect-a-classification-schema-for-personal-data"></a>Création d’un schéma de classification pour les données personnelles
 
@@ -32,11 +32,11 @@ Remarque : la définition d’un schéma de classification pour une organisatio
 
 ## <a name="decide-if-youre-using-labels-in-addition-to-sensitive-data-types"></a>Utilisation ou non d’étiquettes en plus des types de données sensibles
 
-Vous avez le choix entre deux approches de classification dans Office 365 pour les informations personnelles. L’une d’elles peut être utilisée pour la protection RGPD. Si vous décidez d’utiliser uniquement des types d’informations sensibles pour la classification, vous pouvez ignorer le reste de cette rubrique.
+Vous avez le choix entre deux approches de classification dans Microsoft 365 pour les informations personnelles. L’une d’elles peut être utilisée pour la protection RGPD. Si vous décidez d’utiliser uniquement des types d’informations sensibles pour la classification, vous pouvez ignorer le reste de cette rubrique.
 
 Choisissez l'une des options suivantes.
 
-### <a name="option-1-use-only-office-365-sensitive-information-types"></a>Option 1 : utiliser des types d’informations sensibles Office 365 uniquement
+### <a name="option-1-use-only-microsoft-365-sensitive-information-types"></a>Option 1 : utiliser des types d’informations sensibles Microsoft 365 uniquement
 
 - Les types d’informations sensibles sont efficaces pour identifier et protéger les données personnelles soumises au RGPD et d’autres types de règlements.
 

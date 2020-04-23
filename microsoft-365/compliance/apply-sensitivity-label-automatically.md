@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Lorsque vous créez une étiquette de critère de diffusion, vous pouvez affecter automatiquement une étiquette à un document ou message électronique ou vous pouvez inviter les utilisateurs pour sélectionner l’étiquette que vous recommandez.
-ms.openlocfilehash: 8295ec4098e90cac963598ab2d53d47a266b23a7
-ms.sourcegitcommit: bd51f626f0c7788c2a3cf89deee25264659aebd5
+ms.openlocfilehash: 50933032e47ebb6165e1e9354c1c1fc885915852
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "43551145"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637144"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Appliquer automatiquement une étiquette sensibilité au contenu
 
@@ -141,7 +141,7 @@ Pour plus d’informations sur ces classifieurs, voir [Prise en main des classif
 
 Pendant la période d’évaluation, les applications suivantes prennent en charge les classifieurs pour les étiquettes de confidentialité :
 
-- Applications de bureau Office 365 ProPlus pour Windows, de [Office Insider](https://office.com/insider) :
+- Applications Microsoft 365 pour les applications de bureau d’entreprise pour Windows, à partir d’[Office Insider](https://office.com/insider) :
     - Word
     - Excel
     - PowerPoint
@@ -152,7 +152,7 @@ Pendant la période d’évaluation, les applications suivantes prennent en char
     - PowerPoint
     - Outlook
 
-### <a name="recommend-that-the-user-applies-a-sensitivity-label-in-office-apps"></a>Recommander à l’utilisateur d’appliquer une étiquette de confidentialité dans les applications Office
+### <a name="recommend-that-the-user-applies-a-sensitivity-label"></a>Recommander que l’utilisateur applique une étiquette de critère de sensibilité
 
 Si vous le souhaitez, vous pouvez recommander à vos utilisateurs qu’ils appliquent l’étiquette. Cette option permet à vos utilisateurs d’accepter la classification et toute protection associée, ou d’ignorer la recommandation si l’étiquette ne convient pas à leur contenu.
 
@@ -162,7 +162,7 @@ Voici un exemple d’une invite de commandes d’Azure Information Protection lo
 
 ![Invite à appliquer une étiquette recommandée](../media/Sensitivity-label-Prompt-for-required-label.png)
 
-### <a name="when-automatic-or-recommended-labels-are-applied-in-office-apps"></a>Quand les étiquettes automatiques ou recommandées sont appliquées dans les applications Office
+### <a name="when-automatic-or-recommended-labels-are-applied"></a>Quand les étiquettes automatiques ou recommandées sont appliquées
 
 L’implémentation de l’étiquetage automatique et recommandé dans les applications Office varie selon que vous utilisez l’étiquetage intégré à Office ou le client d’étiquetage unifié d’Azure Information Protection. Dans les deux cas, toutefois :
 
@@ -192,7 +192,7 @@ Spécifique au client d’étiquetage unifié Azure Information Protection :
 
 ### <a name="prerequisites-for-auto-labeling-policies"></a>Conditions préalables pour les stratégies d’étiquetage automatique
 
-- L’audit pour Office 365 doit être activé pour le mode simulation. Si vous devez activer l’audit ou si vous ne savez pas celui-ci est déjà activé, consultez l’article [Activer ou désactiver la recherche dans un journal d’audit Office 365](turn-audit-log-search-on-or-off.md).
+- L’audit pour Microsoft 365 doit être activé pour le mode simulation. Si vous devez activer l’audit ou si vous ne savez pas celui-ci est déjà activé, consultez l’article [Activer ou désactiver la recherche dans un journal d’audit](turn-audit-log-search-on-or-off.md).
 
 - Pour étiqueter automatiquement des fichiers dans SharePoint et OneDrive :
     - Vous avez [activé les étiquettes de confidentialité pour les fichiers Office dans SharePoint et OneDrive (préversion publique)](sensitivity-labels-sharepoint-onedrive-files.md)
@@ -292,5 +292,4 @@ Vous pouvez également afficher les résultats de votre stratégie d’étiqueta
 
 > [!TIP]
 > Vous pouvez également utiliser l’Explorateur de contenu pour identifier les emplacements contenant des documents non étiquetés qui contiennent des informations sensibles. À l’aide de ces informations, songez à ajouter ces emplacements à votre stratégie d’étiquetage automatique, et incluez les types d’informations sensibles identifiés comme règles.
-
 

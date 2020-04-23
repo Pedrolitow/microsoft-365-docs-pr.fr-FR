@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Pour implémenter une stratégie de gestion des enregistrements dans votre organisation Microsoft ou Office 365, utilisez des étiquettes de rétention qui déclarent du contenu sous la forme d’un enregistrement. Ensuite, publiez ou appliquez automatiquement l’étiquette de rétention d’enregistrement.
-ms.openlocfilehash: d497f3e536a54226ad9e7b5bb9a399f66774c25e
-ms.sourcegitcommit: e525bcf073a61e1350484719a0c3ceb6ff0d8db1
+ms.openlocfilehash: db33c65b6c3528a717672b0111a9da098a3d5c31
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "43153832"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632113"
 ---
 # <a name="overview-of-records"></a>Vue d’ensemble des enregistrements
 
@@ -108,6 +108,9 @@ Le contrôle de version d’enregistrement est disponible automatiquement pour t
 
 ![Propriété statut de l’enregistrement sur le document marqué en tant qu’enregistrement](../media/recordversioning8.png)
 
+> [!NOTE]
+> Le contrôle de version d’enregistrement nécessite une licence Office 365 Entreprise E5 pour chaque utilisateur autorisé à modifier du contenu qui a été déclaré en tant qu’enregistrement dans un site SharePoint ou un compte OneDrive. Les utilisateurs disposant d’un accès en lecture seule n’ont pas besoin de cette licence.
+
 ### <a name="locking-and-unlocking-a-record"></a>Verrouillage et déverrouillage d'un enregistrement
 
 Lorsqu’une étiquette d’enregistrement est attribuée à un document, tous les utilisateurs ayant des autorisations de collaboration ou un niveau d'autorisation plus réduit peuvent déverrouiller un enregistrement ou verrouiller un enregistrement déverrouillé.
@@ -153,7 +156,7 @@ La bibliothèque de conservation et de préservation est visible uniquement par 
 
 ### <a name="searching-the-audit-log-for-record-versioning-events"></a>Rechercher dans le journal d’audit les événements de contrôle de version d’enregistrement
 
-Les actions de verrouillage et déverrouillage des enregistrements sont enregistrées dans le journal d’audit Office 365. Vous pouvez rechercher les activités spécifiques **Statut de l’enregistrement basculé sur verrouillé** et **Statut de l’enregistrement basculé sur déverrouillé**, situées dans la section **Activités de fichier et de page** dans la liste déroulante **Activités** sur la page **Effectuer une recherche dans le journal d’audit** du centre de sécurité et conformité.
+Les actions de verrouillage et déverrouillage des enregistrements sont enregistrées dans le journal d’audit. Vous pouvez rechercher les activités spécifiques **Statut de l’enregistrement basculé sur verrouillé** et **Statut de l’enregistrement basculé sur déverrouillé**, situées dans la section **Activités de fichier et de page** dans la liste déroulante **Activités** sur la page **Effectuer une recherche dans le journal d’audit** du centre de sécurité et conformité.
 <br/><br/>
 
 ![Rechercher dans le journal d’audit des événements de contrôle de version d’enregistrement](../media/recordversioning13.png)

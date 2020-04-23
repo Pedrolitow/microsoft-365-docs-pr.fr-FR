@@ -17,18 +17,18 @@ search.appverid:
 - MOE150
 - MET150
 description: "Une exigence pour l'ensemble des solutions Microsoft Information Protection : créer, configurer et publier des étiquettes de confidentialité afin de classer et protéger les documents et messages électroniques de votre organisation."
-ms.openlocfilehash: 39e83c74d2df8d0efe12225600813ef8007833e2
-ms.sourcegitcommit: 9ed3283dd6dd959faeca5c22613f9126261b9590
+ms.openlocfilehash: ea9b8d119f431079ff0558eddfae3caf0ec0fffb
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43528347"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43635954"
 ---
 # <a name="create-and-configure-sensitivity-labels-and-their-policies"></a>Créer et configurer des étiquettes de confidentialité et leurs stratégies.
 
 >*[Guide de sécurité et conformité pour les licences Microsoft 365](https://aka.ms/ComplianceSD).*
 
-L'ensemble des solutions Microsoft Information Protection (parfois sous la forme abrégée MIP) sont mises en œuvre à l’aide d’[étiquettes de confidentialité](sensitivity-labels.md). Pour créer et publier ces étiquettes, accédez au centre d'administration des étiquettes, tel que le [Centre de conformité Microsoft 365](https://compliance.microsoft.com/). Vous pouvez également utiliser le Centre de sécurité Microsoft 365 ou le Centre de sécurité et conformité Office 365.
+L'ensemble des solutions Microsoft Information Protection (parfois sous la forme abrégée MIP) sont mises en œuvre à l’aide d’[étiquettes de confidentialité](sensitivity-labels.md). Pour créer et publier ces étiquettes, accédez au centre d'administration des étiquettes, tel que le [Centre de conformité Microsoft 365](https://compliance.microsoft.com/). Vous pouvez également utiliser le Centre de sécurité Microsoft 365 ou le Centre de sécurité et conformité.
 
 Commencez par créer et configurer les étiquettes de confidentialité que vous souhaitez rendre disponibles pour les applications et autres services. Par exemple, les étiquettes que vous voulez que les utilisateurs voient et appliquent à partir des applications Office. 
 
@@ -50,7 +50,7 @@ L’administrateur général de votre organisation dispose des autorisations tot
     - Centre de sécurité Microsoft 365 : 
         - **Classification** > **des étiquettes de confidentialité**
     
-    - Centre de sécurité et conformité Office 365 :
+    - Centre de sécurité et conformité :
         - **Classification** > **des étiquettes de confidentialité**
 
 2. Sous l’onglet **Étiquettes**, sélectionnez **+ Créer une étiquette** pour démarrer l’assistant **Nouvelle étiquette de confidentialité**.
@@ -73,9 +73,9 @@ Les étiquettes sont disponibles dans des applications ou des services après le
 > [!IMPORTANT]
 > Dans l'onglet **Étiquettes**, ne pas sélectionner l'onglet **Publier des étiquettes** (ou le bouton **Publier une étiquette** lorsque vous modifiez une étiquette), sauf si vous devez créer une nouvelle stratégie d'étiquette. Plusieurs stratégies d’étiquette sont nécessaires uniquement si les utilisateurs ont besoin d’étiquettes ou de paramètres de stratégie différents. Votre objectif est d’avoir autant de stratégies d’étiquettes que possible, mais il n’est pas rare de n’avoir qu’une seule stratégie d’étiquette par organisation.
 
-### <a name="additional-label-settings-with-office-365-security--compliance-center-powershell"></a>Paramètres d’étiquette supplémentaires dans le Centre de sécurité et conformité Office 365 PowerShell
+### <a name="additional-label-settings-with-security--compliance-center-powershell"></a>Paramètres d’étiquette supplémentaires dans le Centre de sécurité et conformité PowerShell
 
-D’autres paramètres d’étiquette sont disponibles dans l’applet de commande [Set-Label](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/set-label?view=exchange-ps) depuis le [Centre de sécurité et conformité Office 365 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/office-365-scc-powershell?view=exchange-ps).
+D’autres paramètres d’étiquette sont disponibles dans l’applet de commande [Set-Label](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/set-label?view=exchange-ps) depuis le [Centre de sécurité et conformité PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/office-365-scc-powershell?view=exchange-ps).
 
 Utilisez le paramètre *LocaleSettings* pour des déploiements internationaux pour que les utilisateurs voient le nom de l’étiquette et l’info-bulle dans leur langue locale. Reportez-vous à la section suivante pour consulter un exemple de configuration. 
 
@@ -89,7 +89,7 @@ Suite à cette configuration, les utilisateurs disposant d'applications Office q
 
 Pour les langues que vous devez prendre en charge, utilisez les [identificateurs de langue](https://docs.microsoft.com/deployoffice/office2016/language-identifiers-and-optionstate-id-values-in-office-2016#language-identifiers) d'Office (également appelés balises linguistiques), et spécifiez votre propre traduction pour le nom d’étiquette et l’info-bulle.
 
-Avant d’exécuter les commandes dans PowerShell, vous devez tout d’abord vous [connecter au Centre de sécurité et conformité Office 365 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps).
+Avant d’exécuter les commandes dans PowerShell, vous devez tout d’abord vous [connecter au Centre de sécurité et conformité PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps).
 
 
 ```powershell
@@ -123,7 +123,7 @@ Set-Label -Identity $Label -LocaleSettings (ConvertTo-Json $TooltipLocaleSetting
     - Centre de sécurité Microsoft 365 : 
         - **Classification** > **des étiquettes de confidentialité**
     
-    - Centre de sécurité et conformité Office 365 :
+    - Centre de sécurité et conformité :
         - **Classification** > **des étiquettes de confidentialité**
 
 2. Sélectionnez l'onglet **Stratégies d'étiquette**.
@@ -150,9 +150,9 @@ Pour modifier une stratégie d'étiquette existante, sélectionnez-la, puis choi
 
 Les utilisateurs peuvent généralement voir les étiquettes dans leurs applications Office dans les heures qui suivent. Veuillez toutefois patienter 24 heures pour vos stratégies d’étiquettes et toute modification apportée à celles-ci se répliquent vers l'ensemble des utilisateurs et des services.
 
-### <a name="additional-label-policy-settings-with-office-365-security--compliance-center-powershell"></a>Paramètres de stratégie d'étiquette supplémentaires dans le Centre de sécurité et conformité Office 365 PowerShell
+### <a name="additional-label-policy-settings-with-security--compliance-center-powershell"></a>Paramètres de stratégie d’étiquette supplémentaires dans le Centre de sécurité et conformité PowerShell
 
-D’autres paramètres de stratégie d’étiquette sont disponibles dans l’applet de commande [Set-Label](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/set-label?view=exchange-ps) depuis le [Centre de sécurité et conformité Office 365 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/office-365-scc-powershell?view=exchange-ps).
+Des paramètres de stratégie d’étiquette supplémentaires sont disponibles dans l’applet de commande [Set-Label](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/set-label?view=exchange-ps) depuis le [Centre de sécurité et conformité PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/office-365-scc-powershell?view=exchange-ps).
 
 L'utilisation de cette applet de commande vous permet de spécifier des [paramètres avancés](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide-customizations) pour le client de l'étiquetage unifié Azure Information Protection. Ces paramètres avancés incluent la définition d’une autre étiquette par défaut pour Outlook et l’implémentation de messages contextuels dans Outlook qui avertissent, justifient ou bloquent les messages envoyés. Pour obtenir la liste complète, voir [Paramètres avancés disponibles pour les étiquettes](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide-customizations#available-advanced-settings-for-labels). 
 

@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Lorsque vous créez une étiquette de sensibilité, vous pouvez restreindre l’accès au contenu auquel l’étiquette sera appliquée. Les étiquettes de sensibilité peuvent utiliser le chiffrement pour protéger le contenu.
-ms.openlocfilehash: ca6b3a76efcc25ab19b05bf841e506c6a5aab375
-ms.sourcegitcommit: 4988934836eee45c890b9bdd5ef73590656c78ba
+ms.openlocfilehash: 543050a40848330b5e07c3a804b5718deac7bafa
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43540831"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631689"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>Restreindre l'accès au contenu grâce à la mise en place d'un chiffrement par les étiquettes de confidentialité 
 
@@ -44,7 +44,7 @@ Enfin, en tant qu’administrateur, lorsque vous configurez une étiquette de co
 - **Attribuer des autorisations maintenant**, afin de déterminer précisément les utilisateurs autorisés à accéder au contenu associé à cette étiquette.
 - **Permettre aux utilisateurs d'attribuer des autorisations** lorsqu’ils appliquent l’étiquette au contenu. De cette façon, vous pouvez proposer aux membres de votre organisation la souplesse nécessaire pour mieux collaborer et accomplir leur travail.
 
-Les paramètres de chiffrement sont disponibles lorsque vous [créez une étiquette de sensibilité](create-sensitivity-labels.md) dans le Centre de conformité Microsoft 365, dans le Centre de sécurité Microsoft 365 ou dans le Centre de sécurité et conformité Office 365.
+Les paramètres de chiffrement sont disponibles lorsque vous [créez une étiquette de sensibilité](create-sensitivity-labels.md) dans le Centre de conformité Microsoft 365, le Centre de sécurité Microsoft 365 ou le Centre de sécurité et conformité.
 
 ## <a name="understand-how-the-encryption-works"></a>Comprendre comment fonctionne le chiffrement
 
@@ -120,7 +120,7 @@ Choisissez d’attribuer des autorisations maintenant ou de permettre aux utilis
 
 Utilisez les options suivantes pour contrôler les utilisateurs autorisés à accéder aux e-mails ou aux documents auxquels cette étiquette est appliquée. Vous pouvez :
 
-1. **Autoriser l’expiration des accès au contenu portant l’étiquette**, à une date spécifique ou au bout d’un certain nombre de jours après l’application de l’étiquette. Après cette période, les utilisateurs ne sont plus en mesure d’ouvrir l’élément étiqueté. Si vous spécifiez une date, elle prend effet le jour choisi à minuit dans votre fuseau horaire actuel. (Notez que certains clients de messagerie pourraient ne pas imposer l'expiration et ne pas afficher les e-mails dont la date d'expiration est dépassée, en raison de leurs mécanismes de mise en cache).
+1. **Autoriser l’expiration des accès au contenu portant l’étiquette**, à une date spécifique ou au bout d’un certain nombre de jours après l’application de l’étiquette. Après cette période, les utilisateurs ne sont plus en mesure d’ouvrir l’élément étiqueté. Si vous spécifiez une date, elle prend effet le jour choisi à minuit dans votre fuseau horaire actuel. (Notez que certains clients de messagerie pourraient ne pas imposer l’expiration et ne pas afficher les e-mails dont la date d’expiration est dépassée, en raison de leurs mécanismes de mise en cache).
 
 2. **Autoriser l’accès hors connexion** : Jamais, Toujours ou pendant un nombre de jours déterminé après que l’étiquette a été appliquée. Si vous limitez l’accès hors connexion sur Jamais ou sur un nombre de jours, lorsque ce seuil est atteint, les utilisateurs doivent s’authentifier à nouveau et leur accès est journalisé. Pour plus d’informations, reportez-vous à la section suivante sur la licence d’utilisation de Rights Management.
 
@@ -157,6 +157,8 @@ Lorsque vous attribuez des autorisations, vous pouvez choisir :
 - Tous les membres de votre organisation (tous les membres du client). Ce paramètre exclut les comptes Invité.
 
 - Tout utilisateur authentifié. Assurez-vous de bien comprendre la [configuration requise et les limitations](#requirements-and-limitations-for-add-any-authenticated-users) de ce paramètre avant de le sélectionner.
+- N’importe quel utilisateur, groupe de sécurité à extension messagerie, groupe de distribution, groupe Microsoft 365 ou groupe de distribution dynamique. 
+- Tout domaine ou adresse de courrier. Utilisez cette option pour définir tous les utilisateurs d’une autre organisation qui utilisent Azure Active Directory, en entrant un nom de domaine dans cette organisation. Vous pouvez également utiliser cette option pour les fournisseurs de réseaux sociaux en entrant leur nom de domaine tel que, par exemple, **gmail.com**, **hotmail.com**ou **outlook.com**.
 
 - N’importe quel utilisateur, groupe de sécurité à extension messagerie, groupe de distribution, groupe Office 365 ou [groupe de distribution dynamique](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-create-rule) dans Azure AD. Notez qu’il n’est pas possible d’utiliser un [groupe de distribution dynamique d’Exchange](https://docs.microsoft.com/Exchange/recipients/dynamic-distribution-groups/dynamic-distribution-groups?view=exchserver-2019), car ce type de groupe n’est pas synchronisé avec Azure AD et vous ne pouvez pas utiliser de groupe de sécurité non activé par e-mail.
 

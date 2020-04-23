@@ -18,12 +18,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: Découvrez comment rechercher et localiser des données personnelles dans Office 365.
-ms.openlocfilehash: 31ff182c673b9a8d8f468b81c6cf5d30cf00733a
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 3bcae58049cd844a64bfbff89f78a98df6e25dbc
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597561"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43638128"
 ---
 # <a name="search-for-and-find-personal-data"></a>Recherche et localisation des données personnelles
 
@@ -31,9 +31,9 @@ Les données personnelles sont définies à très grande échelle dans le cadre 
 
 Article 4 - Définitions
 
-> Les « données personnelles » correspondent aux informations relatives à une personne naturelle identifiée ou identifiable (« la personne concernée ») ; une personne naturelle identifiable est une personne qui peut être identifiée, directement ou indirectement, notamment par référence à un identificateur par exemple, un nom, un numéro d’identification, des données de localisation, un identificateur en ligne, ou un ou plusieurs facteurs spécifiques de l’identité physique, physiologique, génétique, mentale, économique, culturelle ou sociale de cette personne naturelle ;
+> Les « données personnelles » correspondent aux informations relatives à une personne naturelle identifiée ou identifiable (« la personne concernée ») ; une personne naturelle identifiable est une personne qui peut être identifiée, directement ou indirectement, notamment par référence à un identificateur par exemple, un nom, un numéro d’identification, des données de localisation, un identificateur en ligne, ou un ou plusieurs facteurs spécifiques de l’identité physique, physiologique, génétique, mentale, économique, culturelle ou sociale de cette personne naturelle.
 
-Cet article explique comment rechercher des données personnelles stockées dans SharePoint Online et OneDrive Entreprise (qui inclut les sites de tous les groupes Office 365 et Microsoft Teams).
+Cet article explique comment rechercher des données personnelles stockées dans SharePoint Online et OneDrive Entreprise (qui inclut les sites de tous les groupes Microsoft 365 et Microsoft Teams).
 
 La recherche de données personnelles soumises au RGPD dépend de l’utilisation de types d’informations sensibles dans Office 365. Celle-ci définit la manière dont le processus automatisé reconnaît des types d’informations spécifiques, tels que les numéros de service de santé ou de carte bancaire. Vous pouvez utiliser des stratégies de protection contre la perte de données pour rechercher des données personnelles dans des courriers pendant leur transit. Vous pouvez utiliser les types d’informations sensibles que vous traitez pour RGPD afin de rechercher et de protéger les informations personnelles telles qu’elles sont envoyées par courrier électronique. Consulter également les [Demandes des personnes associées aux données RGPD gérées à l’aide de l’outil de dossier de DPC dans le Centre de sécurité et conformité](https://docs.microsoft.com/microsoft-365/compliance/manage-gdpr-data-subject-requests-with-the-dsr-case-tool).
 
@@ -97,13 +97,13 @@ Pour l’instant, les types d’informations sensibles ne permettent pas de rech
 <tbody>
 <tr class="odd"><td align="left"><p>Accédez à Recherche de contenu dans le Centre de sécurité et de conformité</p></td>
 <td align="left"><p>Dans le volet gauche du Centre de sécurité et de conformité, cliquez sur **Recherches &amp; enquêtes** &gt; **Recherche de contenu**.</p>
-<p>Reportez-vous à la rubrique <a href="https://support.office.com/article/Run-a-Content-Search-in-the-Office-365-Security-Compliance-Center-61852fd9-fe8a-4880-a339-cb19ed3bff4a">Exécuter une recherche de contenu dans le Centre de sécurité et de conformité Office 365</a>.</p></td>
+<p>Consultez <a href="https://support.office.com/article/Run-a-Content-Search-in-the-Office-365-Security-Compliance-Center-61852fd9-fe8a-4880-a339-cb19ed3bff4a">Exécuter une recherche de contenu dans le Centre de conformité et sécurité</a>.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Création d’un élément de recherche pour chaque type d’informations sensibles</p></td>
 <td align="left"><p>Utilisez la syntaxe suivante :</p>
 <blockquote>
-<p>SensitiveType:”&lt;type&gt;”</p>
+<p>SensitiveType:"&lt;type&gt;"</p>
 </blockquote>
 <p>Par exemple :</p>
 <blockquote>
@@ -117,7 +117,7 @@ Pour l’instant, les types d’informations sensibles ne permettent pas de rech
 <td align="left"><p>Recherchez ces types de problèmes pour déterminer si la précision de la requête est un objectif :</p>
 <p><li>De nombreux faux positifs</li></p>
 <p><li>Instances de données connues manquantes</li></p>
-<p>Reportez-vous à la rubrique relative à l’<a href="https://support.office.com/article/Export-Content-Search-results-from-the-Office-365-Security-Compliance-Center-ed48d448-3714-4c42-85f5-10f75f6a4278">exportation des résultats de la recherche de contenu du Centre de sécurité et de conformité Office 365</a>.</p>
+<p>Reportez-vous à la rubrique relative à l’<a href="https://support.office.com/article/Export-Content-Search-results-from-the-Office-365-Security-Compliance-Center-ed48d448-3714-4c42-85f5-10f75f6a4278">exportation des résultats de la recherche de contenu du Centre de sécurité et de conformité</a>.</p>
 <p>Remarque : si vous utilisez Mozilla Firefox ou Chrome, il se peut que vous deviez d’abord télécharger des rapports avec Internet Explorer ou Edge pour installer le complément requis.</p></td>
 </tr>
 </tbody>
@@ -169,7 +169,7 @@ Commencez par ces types d’informations sensibles. De nombreux autres types d�
 >
 > Numéro de permis de conduire italien
 >
-> Numéro de service des citoyens hollandais (BSN)
+> Numéro de service du citoyen (BSN) néerlandais
 >
 > Numéro d’identité norvégien
 >
@@ -187,7 +187,7 @@ Commencez par ces types d’informations sensibles. De nombreux autres types d�
 >
 > Numéro de passeport suédois
 >
-> Numéro de permis de conduire britannique
+> Numéro de permis de conduire du Royaume-Uni
 >
 > Numéro de liste électorale du Royaume-Uni
 >
@@ -201,19 +201,19 @@ Commencez par ces types d’informations sensibles. De nombreux autres types d�
 
 Vous pouvez ajouter ces paramètres à une requête de type d’informations sensibles :
 
--   Plage de nombre : définit le nombre d'occurrences des informations sensibles qu'un document doit contenir avant qu'il ne soit inclus dans les résultats de la requête.
+-   Plage de nombre : définit le nombre d’occurrences des informations sensibles qu’un document doit contenir avant qu’il ne soit inclus dans les résultats de la requête.
 
 -   Plage de confiance : niveau de confiance auquel le type d'informations sensibles détecté correspond réellement (par exemple, 85 (85 %)).
 
 Syntaxe :
 
--   SensitiveType:”\<type\>|\<count range\>|\<confidence range\>”
+-   SensitiveType:"\<type\>|\<count range\>|\<confidence range\>"
 
 Exemples :
 
--   SensitiveType:“Numéro de carte de crédit|5” (renvoie uniquement les documents qui contiennent exactement cinq numéros de carte de crédit)
+-   SensitiveType:"Credit Card Number|5" (renvoie uniquement les documents qui contiennent exactement cinq numéros de carte de crédit)
 
--   SensitiveType:“Numéro de carte de crédit|\*|85..” (la plage de confiance est de 85 % ou supérieure)
+-   SensitiveType:"Credit Card Number|\*|85.." (la plage de confiance est de 85 % ou supérieure)
 
 Remarque : “SensitiveType” est sensible à la casse, mais le reste de la requête ne l’est pas.
 

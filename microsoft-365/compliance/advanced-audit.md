@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: L’audit avancé de Microsoft 365 offre de nouvelles fonctionnalités d’audit pour aider votre organisation à effectuer des enquêtes de conformité et de légalité.
-ms.openlocfilehash: bdde2552d2c5ccd790740e1f9077e5d26391e920
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: b1a79598fc49d710c54a23dc9ce92c9f2b7f5805
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42634542"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632279"
 ---
 # <a name="advanced-audit-in-microsoft-365"></a>Audit avancé de Microsoft 365
 
@@ -65,7 +65,7 @@ Si vous souhaitez en savoir plus sur les enregistrements d’audit pour les acti
 
 ### <a name="search-for-mailitemsaccessed-audit-records"></a>Rechercher des enregistrements d’audit MailItemsAccessed
 
-Pour rechercher des enregistrements d’audit MailItemsAccessed, vous pouvez rechercher les activités des **éléments de la boîte aux lettres consultés** dans la liste déroulante des **activités de la boîte aux lettres Exchange** dans l’[outil de recherche du journal d’audit](search-the-audit-log-in-security-and-compliance.md) dans le centre de sécurité et conformité Office 365.
+Pour rechercher des enregistrements d’audit MailItemsAccessed, vous pouvez rechercher les activités des **éléments de la boîte aux lettres consultés** dans la liste déroulante des **activités de la boîte aux lettres Exchange** dans l’[outil de recherche du journal d’audit](search-the-audit-log-in-security-and-compliance.md) dans le centre de sécurité et conformité.
 
 ![Recherche d’actions MailItemsAccessed dans l’outil de recherche du journal d’audit](../media/MailItemsAccessedSCC1.png)
 
@@ -85,7 +85,7 @@ Pour plus d’informations, consultez la rubrique « Limitation de l'API » da
 
 **Où puis-je accéder à l’audit avancé ?**
 
-Une fois l’audit avancé déployé dans votre organisation, vous pouvez créer des stratégies de rétention de journal d’audit et rechercher des enregistrements d’audit MailItemsAccessed à l’aide de l’outil de recherche du journal d’audit dans le [Centre de sécurité & conformité Office 365](https://protection.office.com). Nous faisons le nécessaire pour déployer l’audit avancé dans le [Centre de conformité Microsoft 365](https://compliance.microsoft.com) dans les prochaines semaines.
+Une fois l’audit avancé déployé dans votre organisation, vous pouvez créer des stratégies de rétention de journal d’audit et rechercher des enregistrements d’audit MailItemsAccessed à l’aide de l’outil de recherche du journal d’audit dans le [Centre de sécurité & conformité](https://protection.office.com). Nous faisons le nécessaire pour déployer l’audit avancé dans le [Centre de conformité Microsoft 365](https://compliance.microsoft.com) dans les prochaines semaines.
 
 **Est-ce que chaque utilisateur a besoin d'une licence E5 pour bénéficier de l'Audit avancé ?**
 

@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Créer des types d’informations sensibles personnalisés à l’aide d’une classification Exact Data Match.
-ms.openlocfilehash: f4ebd34104cd4f3c5b3976a10e8bf64da990342c
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: 63db4da59a04f13d79da61932f74f49d87fa3ffc
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42894941"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631323"
 ---
 # <a name="create-custom-sensitive-information-types-with-exact-data-match-based-classification"></a>Créez des types d’informations sensibles personnalisés à l’aide d’une classification Exact Data Match.
 
@@ -59,7 +59,7 @@ Dès qu’elle généralement disponible, la classification EDM sera incluse dan
 |---------|---------|
 |[Partie 1: configurer la classification EDM](#part-1-set-up-edm-based-classification)<br/><br/>(selon vos besoins)<br/>- [Modifier le schéma de base de données](#editing-the-schema-for-edm-based-classification) <br/>- [Supprimer le schéma](#removing-the-schema-for-edm-based-classification) |-Accès en lecture aux données sensibles<br/>-Schéma de base de données au format. XML (fourni en exemple)<br/>-Package de règles au format. XML (fourni en exemple)<br/>-Autorisations d’administrateur sur le centre de sécurité & conformité (à l’aide de PowerShell) |
 |[Partie 2: indexer et télécharger les données sensibles](#part-2-index-and-upload-the-sensitive-data)<br/><br/>(selon vos besoins)<br/>[Actualiser les données](#refreshing-your-sensitive-information-database) |-Groupe de sécurité personnalisé et compte d’utilisateur<br/>-Accès administrateur local à l’ordinateur à l’aide de l’agent de téléchargement EDM<br/>-Accès en lecture aux données sensibles<br/>-Processus et planification pour l’actualisation des données|
-|[Partie 3: utiliser la classification EDM avec vos services Cloud Microsoft](#part-3-use-edm-based-classification-with-your-microsoft-cloud-services) |- Abonnement Office 365 avec DLP<br/>- Fonctionnalité de classification EDM activée |
+|[Partie 3: utiliser la classification EDM avec vos services Cloud Microsoft](#part-3-use-edm-based-classification-with-your-microsoft-cloud-services) |- Abonnement Microsoft 365 avec DLP<br/>- Fonctionnalité de classification EDM activée |
 
 ### <a name="part-1-set-up-edm-based-classification"></a>Partie 1 : configurer la classification EDM
 
@@ -101,7 +101,7 @@ La préparation et la configuration de la classification EDM impliquent d’enre
       </EdmSchema>
       ```
 
-4. [Connectez-vous au Centre de sécurité et conformité Office 365 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps).
+4. [Connectez-vous au Centre de conformité et sécurité PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps).
 
 5. Pour charger le schéma de base de données, exécutez les cmdlets suivantes, l’une après l’autre :
 
@@ -134,7 +134,7 @@ Si vous souhaitez modifier votre fichier **edm.xml**, par exemple pour changer l
 
 1. Modifiez votre fichier **edm.xml** (présenté dans la section  [Définir le schéma](#define-the-schema-for-your-database-of-sensitive-information)  de cet article).
 
-2. [Connectez-vous au Centre de sécurité et conformité Office 365 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps).
+2. [Connectez-vous au Centre de conformité et sécurité PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps).
 
 3. Pour mettre à jour votre schéma de base de données, exécutez les cmdlets suivantes, l’une après l’autre :
 
@@ -163,7 +163,7 @@ Si vous souhaitez modifier votre fichier **edm.xml**, par exemple pour changer l
 
 (Le cas échéant) Si vous voulez supprimer le schéma que vous utilisez pour la classification EDM, procédez comme suit :
 
-1. [Connectez-vous au Centre de sécurité et conformité Office 365 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps).
+1. [Connectez-vous au Centre de conformité et sécurité PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps).
 
 2. Exécutez les cmdlets PowerShell suivantes, en remplaçant le nom de magasin de données « patientrecords » par celui que vous voulez supprimer :
 
@@ -389,7 +389,7 @@ $csvext = '.csv'
 $dataFile = "$fileLocation\\$dataStoreName$csvext"
 \# Assuming location to store hash file is same as the location of csv file
 $hashLocation = $fileLocation
-$uploadDataArgs = '/UploadData /DataStoreName ' + $dataStoreName + ' /DataFile ' + $dataFile + ‘ /HashLocation’ + $hashLocation
+$uploadDataArgs = '/UploadData /DataStoreName ' + $dataStoreName + ' /DataFile ' + $dataFile + ' /HashLocation' + $hashLocation
 \# Set up actions associated with the task
 $actions = @()
 $actions += New-ScheduledTaskAction -Execute $edmuploader -Argument $uploadDataArgs -WorkingDirectory $edminstallpath
@@ -446,11 +446,11 @@ Register-ScheduledTask -TaskName $taskName -InputObject $scheduledTask -User $us
 
 ### <a name="part-3-use-edm-based-classification-with-your-microsoft-cloud-services"></a>Partie 3 : utiliser la classification EDM avec vos services de cloud computing Microsoft
 
-Les stratégies DLP Office 365 pour Exchange Online (e-mail), OneDrive Entreprise (fichiers), Microsoft Teams (conversations) et DLP Microsoft Cloud App Security prendront en charge les types d’informations sensibles EDM.
+Les stratégies DLP pour Exchange Online (e-mail), OneDrive Entreprise (fichiers), Microsoft Teams (conversations) et Microsoft Cloud App Security prendront en charge les types d’informations sensibles EDM.
 
 Les types d’informations sensibles EDM pour les scénarios suivants sont en cours de développement, mais pas encore disponibles :
 
-- DLP Office 365 pour SharePoint (fichiers)
+- DLP pour SharePoint (fichiers)
 - Classification automatique des étiquettes de confidentialité et étiquettes de rétention
 
 #### <a name="to-create-a-dlp-policy-with-edm"></a>Pour créer une stratégie DLP avec EDM

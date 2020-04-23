@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Office 365 vous permet d’utiliser des étiquettes de rétention pour implémenter une planification de rétention pour votre organisation. Grâce au script et aux fichiers.csv fournis, vous pouvez créer et publier des étiquettes de rétention et des stratégies de rétention des étiquettes en bloc en utilisant PowerShell.
-ms.openlocfilehash: e7b992b8464e5c505d048b5b945d154a770fd59c
-ms.sourcegitcommit: e695bcfc69203da5d3d96f3d6a891664a0e27ae2
+ms.openlocfilehash: 055bc785c492e2fa37bc60ce4e383f79111c551a
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43105976"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636352"
 ---
 # <a name="bulk-create-and-publish-retention-labels-by-using-powershell"></a>Création et publication en bloc d’étiquettes de rétention à l’aide de PowerShell
 
@@ -716,7 +716,7 @@ if ($ResultCSV)
 
 Consultez les étapes décrites ici :
   
-- [Connexion au Centre de sécurité &amp; conformité Office 365 PowerShell](https://go.microsoft.com/fwlink/?linkid=799771)
+- [Se connecter au Centre de sécurité et conformité PowerShell](https://go.microsoft.com/fwlink/?linkid=799771)
     
 ## <a name="step-5-run-the-powershell-script-to-create-and-publish-the-retention-labels"></a>Étape 5 : exécuter le script PowerShell pour créer et publier les étiquettes de rétention
 

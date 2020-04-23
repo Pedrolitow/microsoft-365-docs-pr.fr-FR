@@ -19,17 +19,17 @@ search.appverid:
 - MET150
 ms.custom: ''
 ms.assetid: ''
-description: Découvrez comment modifier ou créer des types d’informations sensibles Office 365 pour le RGPD.
-ms.openlocfilehash: 006a3e7be35000513053321ebb500cbd627e8779
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+description: Découvrez comment modifier ou créer des types d’informations sensibles pour le RGPD.
+ms.openlocfilehash: e29193e3fdb7f4d2cd6a5810137bc120fb1171e5
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595481"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637776"
 ---
 # <a name="customize-or-create-a-new-sensitive-information-type"></a>Personnalisation ou création d’un type d’informations sensibles
 
-Cet article fournit trois exemples qui décrivent comment modifier ou créer de nouveaux types d’informations sensibles Office 365 pour le RGPD.
+Cet article fournit trois exemples qui décrivent comment modifier ou créer de nouveaux types d’informations sensibles pour le RGPD.
 
 - Modification d’un type d’informations sensibles existant : Numéro de carte de crédit de l'U.E.
 
@@ -47,7 +47,7 @@ Voir également :
 
 Si vous utilisez la recherche de contenu pour rechercher des données personnelles à l’aide des types d’informations sensibles et que vous n’obtenez pas les résultats attendus ou que la requête renvoie un trop grand nombre de faux positifs, vous pouvez modifier le type d’informations sensibles en fonction de votre environnement.
 
-La meilleure pratique lorsque vous créez ou personnalisez un type d’informations sensibles consiste à créer un type d’informations sensibles sur la base d’un type existant et à lui attribuer un nom et des identificateurs uniques. Par exemple, si vous souhaitez ajuster les paramètres du type d’informations sensibles « Numéro de carte de crédit de l'U.E. », vous pouvez nommer votre copie de cette règle « Carte de crédit de l’U.E. améliorée » pour la distinguer de l’originale.
+La meilleure pratique lorsque vous créez ou personnalisez un type d’informations sensibles consiste à créer un type d’informations sensibles sur la base d’un type existant et à lui attribuer un nom et des identificateurs uniques. Par exemple, si vous souhaitez ajuster les paramètres du type d’informations sensibles « Numéro de carte de crédit de l’U.E. », vous pouvez nommer votre copie de cette règle « Carte de crédit de l’U.E. améliorée » pour la distinguer de l’originale.
 
 Dans votre nouveau type d’informations sensibles, il suffit de modifier les valeurs à modifier pour améliorer sa précision. Ensuite, chargez votre nouveau type d’informations sensibles et créez une règle DLP (ou modifiez-en une existante) pour utiliser le nouveau type d’informations sensibles que vous venez d’ajouter. La modification de la précision de types d’informations sensibles peut nécessiter des essais et des erreurs. Par conséquent, conservez une copie du type d’origine pour l’utiliser éventuellement à l’avenir.
 
@@ -75,11 +75,11 @@ Pour personnaliser un type d’informations sensibles :
 
 8.  Analysez de nouveau votre contenu pour identifier les informations sensibles. Reportez-vous à la rubrique [Demander manuellement l’analyse et la réindexation d’un site](https://support.office.com/article/Manually-request-crawling-and-re-indexing-of-a-site-a-library-or-a-list-9AFA977D-39DE-4321-B4CA-8C7C7E6D264E).
 
-## <a name="example-modify-the-eu-debit-card-number-sensitive-information-type"></a>Exemple : modification du type d’informations sensibles « Numéro de carte de crédit de l'U.E. »
+## <a name="example-modify-the-eu-debit-card-number-sensitive-information-type"></a>Exemple : modification du type d’informations sensibles « Numéro de carte de crédit de l’U.E. »
 
-Lorsque vous améliorez la précision des règles DLP dans un système, vous devez effectuer des tests sur un ensemble de données exemple et éventuellement des réglages précis à l’aide de tests et modifications répétitifs. Cet exemple décrit des modifications du type d’informations sensibles « Numéro de carte de crédit de l'U.E. » pour améliorer sa précision.
+Lorsque vous améliorez la précision des règles DLP dans un système, vous devez effectuer des tests sur un ensemble de données exemple et éventuellement des réglages précis à l’aide de tests et modifications répétitifs. Cet exemple décrit des modifications du type d’informations sensibles « Numéro de carte de crédit de l’U.E. » pour améliorer sa précision.
 
-Lorsque vous recherchez un numéro de carte de crédit de l'U.E., la définition de ce numéro est strictement définie comme 16 chiffres utilisant un modèle complexe et soumis à la validation d’une somme de contrôle. Nous ne pouvons pas modifier ce modèle en raison de la définition de chaîne de ce type d’informations sensibles. Toutefois, nous pouvons effectuer les ajustements suivants pour améliorer la précision avec laquelle la DLP Office 365 recherche ce type d’informations sensibles dans Office 365.
+Lorsque vous recherchez un numéro de carte de crédit de l’U.E., la définition de ce numéro est strictement définie comme 16 chiffres utilisant un modèle complexe et soumis à la validation d’une somme de contrôle. Nous ne pouvons pas modifier ce modèle en raison de la définition de chaîne de ce type d’informations sensibles. Toutefois, nous pouvons effectuer les ajustements suivants pour améliorer la précision avec laquelle la DLP recherche ce type d’informations sensibles dans Office 365.
 
 ### <a name="proximity-modification"></a>Modification de la proximité
 
@@ -294,7 +294,7 @@ Exemples de CCN :
 >
 > 17040O1118
 
-Contoso fait toujours référence aux clients en utilisant un CCN dans la correspondance interne, la correspondance externe, les documents, etc. Il souhaite créer un type d’informations sensibles personnalisé pour détecter l’utilisation d’un CCN dans Office 365 pour appliquer la protection à l’utilisation de ce formulaire de données personnelles.
+Contoso fait toujours référence aux clients en utilisant un CCN dans la correspondance interne, la correspondance externe, les documents, etc. Il souhaite créer un type d’informations sensibles personnalisé pour détecter l’utilisation d’un CCN pour appliquer la protection à l’utilisation de ce formulaire de données personnelles.
 
 ### <a name="create-a-new-sensitive-information-type-for-contoso-customer-number"></a>Création d’un type d’informations sensibles pour un numéro de client Contoso
 
@@ -312,7 +312,7 @@ Contoso fait toujours référence aux clients en utilisant un CCN dans la corres
 <td align="left">Contoso utilise PowerShell et la recherche de contenu pour rechercher des documents qui correspondent à un exemple de jeu de CCN.</td>
 <td align="left">
 
-<p>#Se connecter au Centre de sécurité et de conformité Office 365</p>
+<p>#Connectez-vous au Centre de sécurité et conformité.</p>
 <p>$adminUser = &quot;alland@contoso.com&quot;</p>
 <p>Connect-IPPSSession -UserPrincipalName $adminUser</p>
 <p>#Créer et lancer une recherche pour un exemple de données</p>
@@ -363,7 +363,7 @@ Contoso fait toujours référence aux clients en utilisant un CCN dans la corres
 <tr class="even">
 <td align="left">8</td>
 <td align="left">Contoso crée le type d’informations sensibles personnalisé avec le PowerShell suivant.</td>
-<td align="left"><p>#Se connecter au Centre de sécurité et de conformité Office 365</p>
+<td align="left"><p>#Connectez-vous au Centre de sécurité et conformité.</p>
 <p>$adminUser = &quot;alland@contoso.com&quot;</p>
 <p>Connect-IPPSSession -UserPrincipalName $adminUser</p>
 <p>#Créer un type d’informations sensibles</p>

@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: Le gestionnaire de plan de gestion de fichiers offre des fonctionnalités de gestion avancées pour les étiquettes et les stratégies de conservation, et fournit un moyen intégré de parcourir l’activité d’étiquette et d’étiquette vers le contenu pour l’intégralité du cycle de vie de votre contenu, de la création à la destruction finale, en passant par la collaboration, la déclaration d’enregistrement et la conservation.
-ms.openlocfilehash: c4b1ddfaf3191a282a67917c2b2d257712a10802
-ms.sourcegitcommit: 311bbd6f168225ede166d29696126a1e003eee0f
+ms.openlocfilehash: 4c9cbdefe538a0ed2593ec74dfcee1010fd9b818
+ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "43151459"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43708439"
 ---
 # <a name="overview-of-file-plan-manager"></a>Vue d’ensemble du gestionnaire de plan de gestion de fichiers
 
@@ -37,9 +37,9 @@ Pour accéder au gestionnaire du plan de gestion des fichiers dans le centre de 
 
 Pour accéder au gestionnaire de plan de fichiers, vous devez posséder l’un des rôles d’administrateur suivants :
     
-- Gestionnaire de conservation
-
-- Gestionnaire de conservation en lecture seule
+    - Gestionnaire de conservation
+    
+    - Gestionnaire de conservation en lecture seule
 
 ## <a name="default-retention-labels-and-label-policy"></a>Étiquettes de rétention par défaut et stratégie d’étiquette
 
@@ -131,7 +131,7 @@ Pour importer de nouvelles étiquettes de rétention et modifier des étiquettes
 
    ![Modèle de plan de gestion de fichiers vierge ouvert dans Excel](../media/file-plan-blank-template.png)
 
-3. Complétez le modèle. Les éléments suivants décrivent les propriétés et les valeurs valides pour chaque propriété du modèle de plan de gestion de fichiers.<br/>
+3. Complétez le modèle. Les éléments suivants décrivent les propriétés et les valeurs valides pour chaque propriété du modèle de plan de gestion de fichiers. Pour l’importation, chaque valeur a une longueur maximale de 64 caractères. <br/>
 
    |**Property**|**Type**|**Valeurs admises**|
    |:-----|:-----|:-----|
@@ -152,7 +152,7 @@ Pour importer de nouvelles étiquettes de rétention et modifier des étiquettes
    |CitationUrl|Chaîne|Cette propriété spécifie l’URL affichée dans la **Clause/citation** du descripteur du plan de gestion de fichiers.|
    |CitationJurisdiction|Chaîne|Cette propriété spécifie la juridiction ou l’agence qui apparaît dans la **Clause/citation** du descripteur du plan de fichiers ; par exemple, « U.S. Securities and Exchange Commission (SEC) ».|
    |Réglementaire|Chaîne|Laisser la zone vierge. Cette propriété n’est pas utilisée pour le moment.|
-   |EventType|Chaîne|Cette propriété spécifie la règle de rétention associée à l’étiquette. Vous pouvez utiliser une valeur quelconque qui identifie distinctement la règle. Par exemple :</br>**Name**</br>**Nom unique (DN)**</br>**GUID** </br>Vous pouvez utiliser l'applet de commande [Get-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/get-retentioncompliancerule?view=exchange-ps) pour afficher les règles de rétention disponibles. Notez que si vous exportez des étiquettes d’une seule organisation Office 365, vous ne pouvez pas utiliser les valeurs de la propriété EventType de cette organisation lorsque vous importez des étiquettes vers une autre organisation Office 365. Car les valeurs EventType sont uniques à chaque organisation. |
+   |EventType|Chaîne|Cette propriété spécifie la règle de rétention associée à l’étiquette. Vous pouvez utiliser une valeur quelconque qui identifie distinctement la règle. Par exemple :</br>**Name**</br>**Nom unique (DN)**</br>**GUID** </br>Vous pouvez utiliser l'applet de commande [Get-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/get-retentioncompliancerule?view=exchange-ps) pour afficher les règles de rétention disponibles. Notez que si vous exportez des étiquettes d’une seule organisation Microsoft 365, vous ne pouvez pas utiliser les valeurs de la propriété EventType de cette organisation lorsque vous importez des étiquettes vers une autre organisation. Car les valeurs EventType sont uniques à chaque organisation. |
    |||
 
    Voici un exemple de modèle contenant les informations sur les étiquettes de rétention.
