@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: bfb71a88f836fc68967398e3f27bebd11854c1de
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: a83c744bc9f1335e0ce2993801475fdf16164766
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602631"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43627066"
 ---
 # <a name="center-for-internet-security-cis-benchmarks"></a>Critères du Centre pour la sécurité internet (CIS)
 
@@ -46,9 +46,9 @@ Les critères CIS sont reconnus au niveau international comme normes de sécurit
   
 À l’instar de tous les critères CIS, ceux de Microsoft ont été créés à l’aide d’un processus d’examen par consensus basé sur les commentaires d’experts spécialisés venant de divers horizons tels que l’élaboration de logiciels, l’audit et la conformité, la sécurité, les opérations et la loi. Microsoft s’est entièrement associé à CIS dans ses efforts. Par exemple, Office 365 a été testé face à des services répertoriés et le critère de base Microsoft 365 qui en résulte couvre un large éventail de recommandations pour définir les stratégies de sécurité appropriées qui portent sur le compte et l’authentification, la gestion des données, les autorisations d’application, le stockage et d’autres domaines liés à la sécurité.  
   
-Outre les critères pour les produits et services Microsoft, CIS a également publié [images renforcées du service CIS pour les utiliser sur les machines virtuelles Azure](https://www.cisecurity.org/blog/cis-hardened-images-now-in-microsoft-azure-marketplace/) configurées pour respecter les critères CIS. Ceux-ci incluent l’image CIS renforcée pour Microsoft Windows Server 2016 certifié pour fonctionner sur Azure. CIS indique que «toutes les images CIS renforcées qui sont disponibles sur la [Place de marché Microsoft Azure](https://azuremarketplace.microsoft.com/marketplace/apps?search=center%20for%20internet%20security) sont certifiées pour fonctionner sur Azure. Elles ont été préalablement testées pour assurer leur compatibilité avec le cloud public Azure, la plateforme Microsoft Cloud hébergée par les fournisseurs de services via le réseau cloud OS et les déploiements Hyper-V d’un cloud privé local Windows Server gérés par des clients.
+Outre les critères pour les produits et services Microsoft, CIS a également publié [images renforcées du service CIS pour les utiliser sur les machines virtuelles Azure](https://www.cisecurity.org/blog/cis-hardened-images-now-in-microsoft-azure-marketplace/) configurées pour respecter les critères CIS. Ceux-ci incluent l’image CIS renforcée pour Microsoft Windows Server 2016 certifié pour fonctionner sur Azure. CIS indique que « toutes les images CIS renforcées qui sont disponibles sur la [Place de marché Microsoft Azure](https://azuremarketplace.microsoft.com/marketplace/apps?search=center%20for%20internet%20security) sont certifiées pour fonctionner sur Azure. Elles ont été préalablement testées pour assurer leur compatibilité avec le cloud public Azure, la plateforme Microsoft Cloud hébergée par les fournisseurs de services via le réseau cloud OS et les déploiements Hyper-V d’un cloud privé local Windows Server gérés par des clients ».
 
-## <a name="microsoft-in-scope-cloud-services"></a>Services Cloud Microsoft dans le champ d’application
+## <a name="microsoft-in-scope-cloud-services"></a>Services Cloud Microsoft concernés
 
 - [Azure et Azure Government](https://aka.ms/AzureCompliance)
 - [Office et Microsoft 365](https://aka.ms/o365-compliance-framework)
@@ -68,7 +68,7 @@ Obtenez une [liste complète des critères CIS](https://www.cisecurity.org/cis-b
 ## <a name="how-to-implement"></a>Modalités de mise en œuvre
 
 - [Critères CIS pour Azure](https://azure.microsoft.com/mediahandler/files/resourcefiles/cis-microsoft-azure-foundations-security-benchmark/CIS_Microsoft_Azure_Foundations_Benchmark_v1.0.0.pdf) : obtenir une aide normative pour établir une configuration de base sécurisée pour Azure.  
-- [Plan stratégique de sécurité Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/security-roadmap) : réduire le risque d’une violation de données ou de compte compromis en suivant ce plan.
+- [Plan stratégique de sécurité Microsoft 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/security-roadmap) : réduire le risque d’une violation de données ou de compte compromis en suivant ce plan.
 - [Lignes de base de la sécurité Windows](https://docs.microsoft.com/windows/security/threat-protection/windows-security-baselines) : suivre ces instructions pour une utilisation efficace des lignes de base de sécurité au sein de votre organisation.
 - [Guide du compagnon cloud CIS Controls](https://www.cisecurity.org/white-papers/cis-controls-cloud-companion-guide/) : obtenir des conseils sur l’application des meilleures pratiques en matière de sécurité dans CIS Controls version 7 vers les environnements Cloud.
 
@@ -84,7 +84,7 @@ La publication de critères CIS révisés change en fonction de la communauté d
 
 **Qui a participé au développement des critères CIS de Microsoft ?**
 
-CIS note que ses « critères sont développés par le biais de nombreux efforts volontaires d’experts en la matière, de fournisseurs de technologie, de membres privés et publics de la communauté des critères CIS ainsi que de l’équipe de développement du critère CIS. » Vous trouverez par exemple une liste de contributeurs Azure sur [CIS Microsoft Azure Foundations benchmarking v RE1.0.0 désormais disponible](https://www.cisecurity.org/blog/cis-microsoft-azure-foundations-benchmark-v1-0-0-now-available/).
+CIS note que ses « critères sont développés par le biais de nombreux efforts volontaires d’experts en la matière, de fournisseurs de technologie, de membres privés et publics de la communauté des critères CIS ainsi que de l’équipe de développement du critère CIS ». Vous trouverez par exemple une liste de contributeurs Azure sur [CIS Microsoft Azure Foundations benchmarking v RE1.0.0 désormais disponible](https://www.cisecurity.org/blog/cis-microsoft-azure-foundations-benchmark-v1-0-0-now-available/).
 
 ## <a name="resources"></a>Ressources
 

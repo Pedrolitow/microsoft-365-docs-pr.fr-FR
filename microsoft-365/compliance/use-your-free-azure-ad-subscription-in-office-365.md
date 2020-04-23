@@ -1,5 +1,5 @@
 ---
-title: Enregistrer votre abonnement gratuit Azure Active Directory dans Office 365
+title: Utiliser votre abonnement Azure Active Directory gratuit
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -15,17 +15,17 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: d104fb44-1c42-4541-89a6-1f67be22e4ad
-description: Découvrir comment accéder à Azure Active Directory, qui est inclus dans l’abonnement payant à Office 365 de votre organisation.
-ms.openlocfilehash: fb1e2586c0b21c72084d7120b8735fccccd1a004
-ms.sourcegitcommit: 01ead889086ecc7dcf5d10244bcf67c5a33c8114
+description: Découvrir comment accéder à Azure Active Directory, qui est inclus dans l’abonnement payant de votre organisation.
+ms.openlocfilehash: be8edecd348d0019916f4f1b974a2bd0f8cabbc9
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "42710493"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43626370"
 ---
-# <a name="use-your-free-azure-active-directory-subscription-in-office-365"></a>Enregistrer votre abonnement gratuit Azure Active Directory dans Office 365
+# <a name="use-your-free-azure-active-directory-subscription"></a>Utiliser votre abonnement Azure Active Directory gratuit
 
-Si votre organisation a un abonnement payant à Office 365, Microsoft Dynamics CRM Online, Enterprise Mobility Suite ou d’autres services Microsoft, vous disposez d’un abonnement gratuit à Microsoft Azure Active Directory. Vous et les autres administrateurs pouvez utiliser Azure AD pour créer et gérer les comptes d’utilisateur et de groupe. Pour utiliser Azure AD, ouvrez le Portail Azure et connectez-vous à l’aide de votre compte Office 365.
+Si votre organisation a un abonnement payant à Microsoft 365, Microsoft Dynamics CRM Online, Enterprise Mobility Suite ou d’autres services Microsoft, vous disposez d’un abonnement gratuit à Microsoft Azure Active Directory. Vous et les autres administrateurs pouvez utiliser Azure AD pour créer et gérer les comptes d’utilisateur et de groupe. Pour utiliser Azure AD, ouvrez le Portail Azure et connectez-vous à votre compte.
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
@@ -37,7 +37,7 @@ Pour accéder au Portail Microsoft Azure, utilisez une session de navigation pri
 
 ## <a name="access-azure-active-directory"></a>Accès à Azure Active Directory
 
-1. Accédez à [portal.azure.com](https://portal.azure.com) et connectez-vous avec votre compte professionnel ou étudiant Office 365.
+1. Accédez à [portal.azure.com](https://portal.azure.com) et connectez-vous avec votre compte professionnel ou scolaire.
 
 2. Dans le volet de navigation gauche du Portail Azure, cliquez sur **Azure Active Directory**.
 

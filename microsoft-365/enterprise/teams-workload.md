@@ -12,12 +12,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Découvrez comment déployer Microsoft Teams au sein de votre organisation.
-ms.openlocfilehash: 8220d06fe90bc4bc793ab33d6121e93bb855f973
-ms.sourcegitcommit: 0ad0092d9c5cb2d69fc70c990a9b7cc03140611b
+ms.openlocfilehash: d34673a412539dfc73296f0139fa2eb555c17099
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40801239"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636698"
 ---
 # <a name="deploy-microsoft-teams-for-microsoft-365-enterprise"></a>Déploiement de Microsoft Teams pour Microsoft 365 Entreprise
 
@@ -34,7 +34,7 @@ Avant de commencer :
 
 - Vérifiez que vous avez configuré les phases d’[infrastructure de base](deploy-foundation-infrastructure.md) appropriées pour que vos équipes disposent des comptes utilisateur et des fonctionnalités de sécurité nécessaires. Les phases d’identité et de protection des informations sont les plus importantes pour la connexion et l’utilisation de la sécurisation de la messagerie et des fichiers avec les étiquettes de rétention et de confidentialité.
 - En savoir plus sur la sécurité et la conformité dans Teams avec [cet article](https://docs.microsoft.com/microsoftteams/security-compliance-overview).
-- En savoir plus sur la gestion des licences Office 365 pour Teams avec [cet article](https://docs.microsoft.com/microsoftteams/office-365-licensing).
+- En savoir plus sur la gestion des licences pour Teams avec [cet article](https://docs.microsoft.com/microsoftteams/office-365-licensing).
 
 Pour déployer Teams au sein de votre organisation, consultez [Comment déployer Teams](https://docs.microsoft.com/microsoftteams/how-to-roll-out-teams).
 

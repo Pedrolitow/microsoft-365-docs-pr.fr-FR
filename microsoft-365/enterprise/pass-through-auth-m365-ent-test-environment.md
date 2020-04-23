@@ -18,12 +18,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: ''
 description: 'Résumé : Découvrez comment configurer l’authentification directe pour votre environnement de test Microsoft 365.'
-ms.openlocfilehash: 4f9941b017f00b40a6ae7e893211131cae51c611
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 8a9a8847d79e1d114f0ddfb4843cbb7b9f9f0d4c
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42066420"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631416"
 ---
 # <a name="pass-through-authentication-for-your-microsoft-365-test-environment"></a>Authentification directe pour votre environnement de test Microsoft 365
 
@@ -35,8 +35,8 @@ Les organisations désireuses d’utiliser directement leur infrastructure d’A
   
 Les deux phases de configuration de cet environnement de test sont les suivantes :
 
-1.  Création de l’environnement de test Microsoft 365 de l’entreprise simulée avec la synchronisation de hachage de mot de passe.
-2.  Configuration de l’authentification directe pour Azure AD Connect sur APP1.
+1.    Création de l’environnement de test Microsoft 365 de l’entreprise simulée avec la synchronisation de hachage de mot de passe.
+2.    Configuration de l’authentification directe pour Azure AD Connect sur APP1.
     
 ![Guides de laboratoire de test pour Microsoft Cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
@@ -52,7 +52,7 @@ Suivez les instructions fournies dans l’article [Synchronisation de hachage de
 Cette configuration se compose des éléments suivants :  
   
 - Abonnements d’évaluation ou payants Microsoft 365 E5 ou Office 365 E5.
-- Un intranet d’organisation simplifié connecté à Internet, qui se compose des machines virtuelles DC1, APP1 et CLIENT1 sur un sous-réseau d’un réseau virtuel Azure. Azure AD Connect s’exécute sur APP1 pour synchroniser périodiquement le domaine TESTLAB AD DS avec le client Azure AD de votre abonnement Microsoft 365 ou Office 365.
+- Un intranet d’organisation simplifié connecté à Internet, qui se compose des machines virtuelles DC1, APP1 et CLIENT1 sur un sous-réseau d’un réseau virtuel Azure. Azure AD Connect s’exécute sur APP1 pour synchroniser le domaine TESTLAB AD DS avec le client Azure AD de votre abonnement Microsoft 365 de manière périodique.
 
 ## <a name="phase-2-configure-azure-ad-connect-on-app1-for-pass-through-authentication"></a>Phase 2 : Configuration de l’authentification directe pour Azure AD Connect sur APP1
 
@@ -60,25 +60,25 @@ Durant cette phase, vous allez configurer Azure AD Connect sur APP1 pour qu’
 
 ### <a name="configure-azure-ad-connect-on-app1"></a>Configuration d’Azure AD Connect sur APP1
 
-1.  Dans le [Portail Azure](https://portal.azure.com), connectez-vous avec votre compte d’administrateur général, puis connectez-vous à APP1 avec le compte TESTLAB\Utilisateur1.
+1.    Dans le [Portail Azure](https://portal.azure.com), connectez-vous avec votre compte d’administrateur général, puis connectez-vous à APP1 avec le compte TESTLAB\Utilisateur1.
 
-2.  Sur le bureau d’APP1, exécutez Azure AD Connect.
+2.    Sur le bureau d’APP1, exécutez Azure AD Connect.
 
-3.  Sur la page **Bienvenue**, cliquez sur **Configurer**.
+3.    Sur la page **Bienvenue**, cliquez sur **Configurer**.
 
-4.  Sur la page Tâches supplémentaires, cliquez sur **Modifier la connexion utilisateur**, puis sur **Suivant**.
+4.    Sur la page Tâches supplémentaires, cliquez sur **Modifier la connexion utilisateur**, puis sur **Suivant**.
 
-5.  Sur la page **Connexion à Azure AD**, tapez vos informations d’identification d’administrateur général, puis cliquez sur **Suivant**.
+5.    Sur la page **Connexion à Azure AD**, tapez vos informations d’identification d’administrateur général, puis cliquez sur **Suivant**.
 
-6.  Sur la page **Connexion de l’utilisateur**, cliquez sur **Authentification directe**, puis sur **Suivant**.
+6.    Sur la page **Connexion de l’utilisateur**, cliquez sur **Authentification directe**, puis sur **Suivant**.
 
-7.  Sur la page **Prêt à configurer**, cliquez sur **Configurer**.
+7.    Sur la page **Prêt à configurer**, cliquez sur **Configurer**.
 
-8.  Sur la page **Configuration terminée**, cliquez sur **Quitter**.
+8.    Sur la page **Configuration terminée**, cliquez sur **Quitter**.
 
-9.  Sur le Portail Azure, dans le volet gauche, cliquez sur **Azure Active Directory > Azure AD Connect**. Vérifiez que la fonctionnalité **Authentification directe** affiche l’état **Activé**.
+9.    Sur le Portail Azure, dans le volet gauche, cliquez sur **Azure Active Directory > Azure AD Connect**. Vérifiez que la fonctionnalité **Authentification directe** affiche l’état **Activé**.
 
-10. Cliquez sur **Authentification directe**. Le volet **Authentification directe** répertorie les serveurs où vos agents d’authentification sont installés. APP1 devrait figurer dans la liste. Fermez le volet **Authentification directe**.
+10.    Cliquez sur **Authentification directe**. Le volet **Authentification directe** répertorie les serveurs où vos agents d’authentification sont installés. APP1 devrait figurer dans la liste. Fermez le volet **Authentification directe**.
 
 Vérifiez ensuite si vous pouvez vous connecter à votre abonnement avec le nom d’utilisateur <strong>utilisateur1@testlab.</strong>\<votre domaine public> du compte Utilisateur1.
 
@@ -94,8 +94,8 @@ Voici la configuration obtenue :
  
 Cette configuration se compose des éléments suivants : 
 
-- Les abonnements en version payante ou d’évaluation Microsoft 365 E5 et Office 365 E5 avec le domaine DNS TESTLAB.\<votre nom de domaine> enregistré.
-- Un intranet d’organisation simplifié connecté à Internet, qui se compose des machines virtuelles DC1, APP1 et CLIENT1 sur un sous-réseau d’un réseau virtuel Azure. Un agent d’authentification s’exécute sur APP1 pour traiter les demandes d’authentification directe provenant du client Azure AD de vos abonnements Microsoft 365 et Office 365.
+- Les abonnements à la version payante ou d’évaluation Microsoft 365 E5 et Office 365 E5 avec le domaine DNS TESTLAB.\<votre nom de domaine> enregistré.
+- Un intranet d’organisation simplifié connecté à Internet, qui se compose des machines virtuelles DC1, APP1 et CLIENT1 sur un sous-réseau d’un réseau virtuel Azure. Un agent d’authentification s’exécute sur APP1 pour traiter les demandes d’authentification directe provenant du client Azure AD de votre abonnement Microsoft 365.
 
 ## <a name="next-step"></a>Étape suivante
 

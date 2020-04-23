@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Vous pouvez utiliser des groupes pour automatiser la gestion de certaines tâches administratives.
-ms.openlocfilehash: 215bb84cbb0cedc2f1320372ba8239cd51d07c98
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 047d733dbd586f094612c579f2b1685562c58ed1
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42633492"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637035"
 ---
 # <a name="step-5-use-groups-for-management"></a>Étape 5 : Utiliser des groupes pour la gestion
 
@@ -36,7 +36,7 @@ Dans cette section, vous allez identifier les groupes Azure Active Directory (Az
 Les utilisateurs peuvent demander à appartenir à un groupe de sécurité. Cette demande est envoyée au propriétaire du groupe, et non à l’administrateur informatique. Ainsi, le contrôle quotidien de l’appartenance au groupe peut être délégué aux propriétaires d’équipes, de projets ou d’entreprises qui comprennent l’usage du groupe pour l’entreprise et peuvent gérer ses membres.
 
 >[!Note]
->La gestion des groupes en libre-service est réservée aux groupes Office 365 et aux groupes de sécurité Azure AD. Elle n’est pas accessible aux groupes à extension messagerie, aux listes de distribution ou aux groupes synchronisés à partir de vos services AD DS (Active Directory Domain Services) locaux.
+>La gestion des groupes en libre-service est réservée aux groupes Microsoft 365 et aux groupes de sécurité Azure AD. Elle n’est pas accessible aux groupes à extension messagerie, aux listes de distribution ou aux groupes synchronisés à partir de vos services AD DS (Active Directory Domain Services) locaux.
 >
 
 Pour plus d’informations, consultez les [instructions de configuration d’un groupe Azure AD pour la gestion en libre-service](https://docs.microsoft.com/azure/active-directory/active-directory-accessmanagement-self-service-group-management).
@@ -57,7 +57,7 @@ Voici comment les règles sont appliquées :
 - Si un compte d’utilisateur ne correspond pas à toutes les règles pour le groupe, il n’est pas ajouté au groupe.
 - Si un compte d’utilisateur est membre du groupe, mais que ses attributs changent pour qu’il ne corresponde plus à toutes les règles pour le groupe, il est supprimé comme membre du groupe.
 
-Pour utiliser l’appartenance dynamique, vous devez commencer par déterminer les ensembles de groupes qui ont un ensemble commun d’attributs de compte d’utilisateur. Par exemple, tous les membres du service Ventes doivent être dans le groupe Ventes Azure AD, en fonction de l’attribut de compte d’utilisateur Service défini sur « Ventes ».
+Pour utiliser l’appartenance dynamique, vous devez commencer par déterminer les ensembles de groupes qui ont un ensemble commun d’attributs de compte d’utilisateur. Par exemple, tous les membres du service Ventes doivent être dans le groupe Ventes Azure AD, en fonction de l’attribut de compte d’utilisateur Service défini sur « Ventes ».
 
 Reportez-vous aux [instructions pour créer et configurer les règles pour un groupe Azure AD dynamique](https://docs.microsoft.com/azure/active-directory/active-directory-groups-dynamic-membership-azure-portal).
 
@@ -78,7 +78,7 @@ Comme point de contrôle intermédiaire, vous pouvez consulter les [critères de
 
 *Cette étape est facultative et s’applique aux versions E3 et E5 de Microsoft 365*
 
-Dans cette section, vous allez configurer des groupes de sécurité dans Azure AD pour attribuer automatiquement les licences d’un ensemble d’abonnements à tous les membres du groupe. C’est ce que l’on appelle la *gestion des licences basée sur les groupes*. Si un compte d’utilisateur est ajouté ou supprimé du groupe, les licences des abonnements du groupe sont automatiquement attribuées ou supprimées du compte d’utilisateur.
+Dans cette section, vous allez configurer des groupes de sécurité dans Azure AD pour attribuer automatiquement les licences d’un ensemble d’abonnements à tous les membres du groupe. C’est ce que l’on appelle la *gestion des licences basée sur les groupes*. Si un compte d’utilisateur est ajouté au groupe ou supprimé de ce dernier, les licences des abonnements du groupe sont automatiquement attribuées au compte d’utilisateur ou supprimées du compte.
 
 Pour Microsoft 365 Entreprise, vous allez configurer des groupes de sécurité Azure AD afin d’attribuer la licence Microsoft 365 Entreprise qui convient.
 

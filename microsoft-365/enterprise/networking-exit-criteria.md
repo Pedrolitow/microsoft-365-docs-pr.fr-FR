@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Assurez-vous que votre configuration répond aux critères de Microsoft 365 Entreprise pour l’infrastructure réseau.
-ms.openlocfilehash: 1ace68fd19c62e4dc389604c1b0c02ddc18b52dc
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 6d9133fa6f3c993efe88ea53b412b9a272c1b98b
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42633202"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631488"
 ---
 # <a name="phase-1-networking-infrastructure-exit-criteria"></a>Phase 1 : Critères de sortie de l’infrastructure réseau
 
@@ -32,7 +32,7 @@ Vérifiez que votre infrastructure réseau répond aux critères requis suivants
 ## <a name="required-your-network-is-ready-for-microsoft-365-enterprise"></a>Obligatoire : votre réseau est prêt pour Microsoft 365 Entreprise
 
 - Vos bureaux disposent d’une bande passante Internet adéquate pour le trafic Microsoft 365, y compris pour l’installation et les mises à jour d’Office 365, de Microsoft Intune et de Windows 10 Entreprise.
-- Votre réseau global est conforme à une [architecture de référence Office 365](https://docs.microsoft.com/office365/enterprise/office-365-network-connectivity-principles#BKMK_P2).
+- Votre réseau global correspond à une [architecture de référence Microsoft 365](https://docs.microsoft.com/office365/enterprise/office-365-network-connectivity-principles#BKMK_P2).
 - Les modifications de votre réseau ont été testées et répondent aux exigences en matière de latence du trafic.
 
 Si nécessaire, l’[Étape 1](networking-provide-bandwidth-cloud-services.md) peut vous aider à répondre à cette exigence.
@@ -69,11 +69,11 @@ Vous avez configuré vos équipements de périmètre réseau (les pare-feu, SSL 
 
 Utilisez les outils de journalisation sur vos appareils de périmètre réseau pour vous assurer que le trafic vers les destinations Microsoft 365 n’est pas en cours d’inspection, de déchiffrement ou altéré d’une autre façon.
 
-Si nécessaire, l’[Étape 4](networking-configure-proxies-firewalls.md) peut vous aider avec cette option.
+Si nécessaire, l’[Étape 4](networking-configure-proxies-firewalls.md) peut vous aider avec cette option.
 
 
 <a name="crit-networking-step5"></a>
-## <a name="optional-your-clients-and-office-365-applications-are-configured-for-optimal-performance"></a>Facultatif : vos applications Office 365 et clients sont configurés pour des performances optimales
+## <a name="optional-your-clients-and-microsoft-365-applications-are-configured-for-optimal-performance"></a>Facultatif : vos clients et applications Microsoft 365 sont configurés pour des performances optimales
 
 Vous avez optimisé les paramètres TCP sur vos appareils client et pour les services Exchange Online, Skype Entreprise Online, SharePoint Online et Project Online.
 

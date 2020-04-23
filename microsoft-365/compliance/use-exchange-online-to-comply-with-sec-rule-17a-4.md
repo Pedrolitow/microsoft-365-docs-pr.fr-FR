@@ -15,18 +15,18 @@ search.appverid:
 - MOE150
 - MET150
 description: Cohasset Associates a validé que lorsque Exchange Online et le centre de sécurité et conformité sont configurés comme recommandé, ils répondent aux exigences de stockage pertinentes de règle CFTC 1.31(c)-(d), FINRA règle 4511 et SEC règle 17 a-4. Vous pouvez télécharger l’évaluation.
-ms.openlocfilehash: bf54bf5798d4bbb5b655cc367330bbb50de7f7b2
-ms.sourcegitcommit: e695bcfc69203da5d3d96f3d6a891664a0e27ae2
+ms.openlocfilehash: d2624dbc230bb0fb714ab1a5a66b91e70d301a9c
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43106122"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43626420"
 ---
 # <a name="use-exchange-online-and-the-security--compliance-center-to-comply-with-sec-rule-17a-4"></a>Utiliser Exchange Online et le centre de sécurité et conformité pour se conformer à la règle SEC 17a-4
 
 >*[Guide de sécurité et conformité pour les licences Microsoft 365](https://aka.ms/ComplianceSD).*
 
-Si votre organisation doit respecter les normes réglementaires pour conserver vos données, le Centre de Conformité et Sécurité Office 365 fournit des fonctionnalités pour gérer le cycle de vie de vos données dans Exchange Online. Cela inclut la possibilité de conserver, d’audit, rechercher et exporter vos données. Ces fonctionnalités sont suffisantes pour répondre aux besoins de la plupart des organisations.
+Si votre organisation doit respecter les normes réglementaires pour conserver vos données, le Centre de sécurité et conformité fournit des fonctionnalités pour gérer le cycle de vie de vos données dans Exchange Online. Cela inclut la possibilité de conserver, d’audit, rechercher et exporter vos données. Ces fonctionnalités sont suffisantes pour répondre aux besoins de la plupart des organisations.
 
 Toutefois, certaines organisations dans des secteurs hautement réglementés sont soumises à des exigences réglementaires plus stricts. Par exemple, les institutions financières de tels que les banques ou les courtiers sont soumis aux règle 17 a-4 émis par Securities and Exchange Commission (SEC). La Règle 17 a-4 a des exigences spécifiques pour le stockage de données électroniques, y compris de nombreux aspects de la gestion des enregistrements telles que la durée, le format, la qualité, la disponibilité et la responsabilité de rétention des enregistrements.
 
@@ -42,7 +42,7 @@ Vous pouvez [télécharger ici l’évaluation Cohasset](https://servicetrust.mi
 
 ## <a name="this-assessment-is-specific-to-exchange-online"></a>Cette évaluation est spécifique à Exchange Online
 
-Notez que cette évaluation est spécifique à Exchange Online. L’évaluation n’inclut pas les autres services Office 365 tels que SharePoint Online ou OneDrive Entreprise, bien que nous envisageons la prise en charge dans ces services par rapport à SEC 17 a-4 à l’avenir.
+Notez que cette évaluation est spécifique à Exchange Online. L’évaluation n’inclut pas les autres services Microsoft 365 tels que SharePoint Online ou OneDrive Entreprise, bien que nous envisageons la prise en charge dans ces services par rapport à SEC 17 a-4 à l’avenir.
 
 Il est important de comprendre que Skype Entreprise et Teams stockent également des données dans Exchange Online. Par conséquent, l’évaluation traite les messages de Skype Entreprise, le canal et les messages de conversation à partir de Teams.
 
@@ -75,4 +75,4 @@ Il existe actuellement quelques limitations dans Exchange Online :
 - Les mentions j’aime ne sont pas conservées pour les messages de conversation et le canal équipes.
 
 > [!NOTE]
-> L’audit au niveau de l’élément est désormais disponible pour les boîtes aux lettres de groupe Office 365. Pour plus d’informations, voir [Gérer l’audit de boîte aux lettres](enable-mailbox-auditing.md).
+> L’audit au niveau de l’élément est désormais disponible pour les boîtes aux lettres de groupe Microsoft 365. Pour plus d’informations, voir [Gérer l’audit de boîte aux lettres](enable-mailbox-auditing.md).

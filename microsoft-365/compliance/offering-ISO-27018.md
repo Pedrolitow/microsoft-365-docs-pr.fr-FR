@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: e2a26b91de38c876145b9b5b1c7765058b4b25a3
-ms.sourcegitcommit: b6ab845d64e2801051d249de09ad5059809b649a
+ms.openlocfilehash: 4376d2ca5ac27ec8e12f266bb7d3bb54289c1dbd
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42222056"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637524"
 ---
 # <a name="isoiec-27018-code-of-practice-for-protecting-personal-data-in-the-cloud"></a>Code de pratique ISO/IEC 27018 pour la protection des données personnelles dans le cloud
 
@@ -45,8 +45,8 @@ Découvrez les avantages de la norme ISO-lec-27018 sur le Cloud Microsoft : [Té
 ## <a name="microsoft-in-scope-cloud-services"></a>Services Cloud Microsoft dans le périmètre
 
 - [Azure, Azure Gouvernement et Azure Allemagne](https://aka.ms/AzureCompliance)
-- Sécurité des applications Cloud
-- Services professionnels Microsoft : Premier et local pour Azure, Dynamics 365, Intune et pour les clients d’entreprises moyennes et grandes d’Office 365
+- Sécurité de l’application cloud
+- Services professionnels Microsoft : Premier et sur site pour Azure, Dynamics 365, Intune et pour les clients des entreprises moyennes et grandes de Microsoft 365 Entreprise
 - [Dynamics 365 et Dynamics 365 Service Public](https://aka.ms/d365-compliance-list)
 - Genomics
 - Graph
@@ -115,9 +115,9 @@ Dans le contexte d’ISO/IEC 27018 :
 - Vous pouvez également examiner les certificats ISO/CEI 27001 à partir de l’arrêt sur la certification ISO/IEC 27018 pour [Dynamics 365](https://aka.ms/Dynamics-CRM-Online-Cert), [Office 365](https://aka.ms/Office365-Cert) et [Azure DevOps services](https://go.microsoft.com/fwlink/p/?linkid=2062159).
 - Pour consulter les rapports BSI, l’auditeur indépendant qui a validé la conformité de Microsoft avec la norme ISO/IEC 27018, visitez le [Portail d’approbation de services](https://aka.ms/stphelp).
 
-**Puis-je tirer profit de la conformité Microsoft dans le processus de certification de mon organisation ?**
+**Puis-je tirer parti de la conformité Microsoft dans le processus de certification de mon organisation ?**
 
-Oui. Si vous devez obtenir la conformité avec ISO/IEC 27018 pour votre entreprise et certaines implémentations déployées sur les services cloud entreprise dans la portée de Microsoft concernés, vous pouvez utiliser l’attestation de conformité de Microsoft pour la norme ISO/IEC 27018 ainsi que la certification de Microsoft pour la norme ISO/IEC 27001 dans votre évaluation de la conformité.
+Oui. Si vous devez obtenir la conformité avec ISO/IEC 27018 pour votre entreprise et certaines implémentations déployées sur les services cloud entreprise dans la portée de Microsoft concernés, vous pouvez utiliser l’attestation de conformité de Microsoft pour la norme ISO/IEC 27018, ainsi que la certification de Microsoft pour la norme ISO/IEC 27001 dans votre évaluation de la conformité.
 
 Il vous incombe néanmoins d’engager un évaluateur pour mesurer votre mise en œuvre de la conformité, ainsi que des contrôles et des processus au sein de votre propre organisation.
 

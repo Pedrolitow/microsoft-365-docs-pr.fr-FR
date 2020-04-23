@@ -1,5 +1,5 @@
 ---
-title: Application d’une protection aux données personnelles dans Office 365
+title: Application d’une protection aux données personnelles
 f1.keywords:
 - NOCSH
 ms.author: bcarter
@@ -18,21 +18,21 @@ ms.service: O365-seccomp
 localization_priority: Priority
 search.appverid:
 - MET150
-description: Découvrez comment utiliser les stratégies de protection contre la perte de données (DLP) pour protéger les données personnelles dans Office 365.
-ms.openlocfilehash: ef6907f9c6574f53dc6f3ba6e44c72eac308d825
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: Découvrez comment utiliser les stratégies de protection contre la perte de données (DLP) pour protéger les données personnelles dans Microsoft 365.
+ms.openlocfilehash: 54bfdd27f5c18d6c145b1e9f13c5e92c1b322048
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42079746"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634272"
 ---
-# <a name="apply-protection-to-personal-data-in-office-365"></a>Application d’une protection aux données personnelles dans Office 365
+# <a name="apply-protection-to-personal-data"></a>Application d’une protection aux données personnelles
 
-La protection des informations personnelles dans Office 365 inclut l’utilisation des fonctionnalités de protection contre la perte de données. Les stratégies de protection contre la perte de données (DLP) disponibles dans le Centre de sécurité et conformité vous permettent d’identifier, de surveiller et de protéger automatiquement des informations sensibles dans Office 365.
+La protection des informations personnelles dans Microsoft 365 inclut l’utilisation des fonctionnalités de protection contre la perte de données. Les stratégies de protection contre la perte de données (DLP) disponibles dans le Centre de sécurité et conformité vous permettent d’identifier, de surveiller et de protéger automatiquement des informations sensibles dans Microsoft 365.
 
 Cette rubrique décrit comment utiliser la protection contre la perte de données pour protéger les données personnelles. Elle répertorie également les autres fonctionnalités de protection qui peuvent être utilisées pour se conformer au règlement général sur la protection des données (RGPD), notamment en définissant des autorisations dans les bibliothèques SharePoint et en utilisant des stratégies d’accès aux appareils.
 
-## <a name="apply-protection-using-data-loss-prevention-in-office-365"></a>Application d’une protection à l’aide de la protection contre la perte de données dans Office 365
+## <a name="apply-protection-using-data-loss-prevention-in-microsoft-365"></a>Application d’une protection à l’aide de la protection contre la perte de données dans Microsoft 365
 
 Avec la protection contre la perte de données, vous pouvez :
 
@@ -42,7 +42,7 @@ Avec la protection contre la perte de données, vous pouvez :
 
 -   aider les utilisateurs à respecter les règles de conformité sans interrompre leur flux de travail ; et
 
--   consulter les rapports DLP présentant le contenu qui correspond aux stratégies DLP de votre organisation.
+-   Consulter les rapports DLP présentant le contenu qui correspond aux stratégies DLP de votre organisation.
 
 Pour plus d’informations, reportez-vous à [Vue d’ensemble des stratégies de protection contre la perte de données](https://support.office.com/article/Overview-of-data-loss-prevention-policies-1966b2a7-d1e2-4d92-ab61-42efbb137f5e).
 
@@ -62,9 +62,9 @@ Cette illustration montre les options permettant de créer une stratégie DLP :
 
 ### <a name="using-dlp-for-gdpr-compliance"></a>Utilisation de la protection contre la perte de données pour le respect du RGPD
 
-L’une des utilisations principales de la protection contre la perte de données Office 365 consiste à identifier les données personnelles liées à des résidents de l’UE dans votre environnement Office 365. La protection contre la perte de données Office 365 peut indiquer à vos équipes de conformité l’endroit où sont stockées les informations personnelles dans SharePoint Online et OneDrive Entreprise, ou leur signaler quand des utilisateurs envoient des courriers électroniques contenant des informations personnelles. La protection contre la perte de données peut également fournir des conseils de stratégie à vos salariés lorsqu’ils manipulent des informations personnelles liées à des personnes résidant dans l’UE.
+L’une des utilisations principales de la protection contre la perte de données Microsoft 365 consiste à identifier les données personnelles liées à des résidents de l’UE dans votre environnement Microsoft 365. La protection contre la perte de données Microsoft 365 peut indiquer à vos équipes de conformité l’endroit où sont stockées les informations personnelles dans SharePoint Online et OneDrive Entreprise, ou leur signaler quand des utilisateurs envoient des courriers électroniques contenant des informations personnelles. La protection contre la perte de données peut également fournir des conseils de stratégie à vos salariés lorsqu’ils manipulent des informations personnelles liées à des personnes résidant dans l’UE.
 
-En indiquant ainsi où les données des résidents de l’UE sont stockées dans votre environnement, en faisant de la sensibilisation à ce sujet et en comprenant comment vos salariés sont autorisés à les manipuler, vous appliquez un premier niveau de protection des informations selon la protection contre la perte de données d’Office 365. Souvent, les salariés qui ont déjà accès à ce type d’informations ont besoin de cet accès pour effectuer leur travail quotidien. L’application de stratégies DLP pour respecter le RGPD ne requiert pas nécessairement une restriction d’accès.
+En indiquant ainsi où les données des résidents de l’UE sont stockées dans votre environnement, en faisant de la sensibilisation à ce sujet et en comprenant comment vos salariés sont autorisés à les manipuler, vous appliquez un premier niveau de protection des informations selon la protection contre la perte de données de Microsoft 365. Souvent, les salariés qui ont déjà accès à ce type d’informations ont besoin de cet accès pour effectuer leur travail quotidien. L’application de stratégies DLP pour respecter le RGPD ne requiert pas nécessairement une restriction d’accès.
 
 Toutefois, le respect du RGPD implique généralement une évaluation des risques de l’organisation d’un point de vue juridique et de la sécurité des informations, l’identification du type des informations personnelles et de l’endroit où elles sont stockées, ainsi que de la justification juridique pour le stockage et le traitement de ces informations. En fonction de cette évaluation, la mise en œuvre de stratégies pour protéger l’organisation et respecter le RGPD peut nécessiter la suppression de l’accès des employés aux documents contenant des informations personnelles sur des résidents de l’UE. Si une protection supplémentaire est requise, une protection DLP supplémentaire peut être configurée.
 
@@ -132,7 +132,7 @@ Description : Afficher des conseils de stratégie aux employés, avertir les é
 </tr>
 <tr class="even">
 <td align="left">Emplacements</td>
-<td align="left">Tous les emplacements dans Office 365</td>
+<td align="left">Tous les emplacements dans Microsoft 365</td>
 </tr>
 <tr class="odd">
 <td align="left">Chercher du contenu qui contient</td>
@@ -166,7 +166,7 @@ Tous les emplacements incluent :
 
 Étant donné que la recherche de contenu ne vous permet actuellement pas de tester les types d’informations sensibles dans les courriers électroniques, vous pouvez créer des stratégies distinctes pour Exchange avec un sous-ensemble de types d’informations sensibles dans chaque stratégie et surveiller le déploiement de ces stratégies.
 
-## <a name="additional-protection-you-can-apply-to-protect-personal-data-in-office-365"></a>Protection supplémentaire pouvant être appliquée pour protéger les données personnelles dans Office 365
+## <a name="additional-protection-you-can-apply-to-protect-personal-data-in-microsoft-365"></a>Protection supplémentaire pouvant être appliquée pour protéger les données personnelles dans Microsoft 365
 
 Les types d’informations sensibles, les libellés et les stratégies de protection contre la perte de données vous aident à identifier les documents contenant des données spécifiques et à appliquer la protection. Toutefois, pour que ces protections s’appliquent, les autorisations appropriées doivent être définies pour l’accès aux données, les utilisateurs doivent posséder des comptes non compromis et des appareils intègres.
 
@@ -189,16 +189,16 @@ Pour l’accessibilité, le tableau suivant fournit les mêmes informations que 
 <td align="left"><p>Types d’informations sensibles</p>
 <p>Libellés Office</p>
 <p>Stratégies de protection contre la perte de données</p>
-<p>Chiffrement des messages Office 365 pour la messagerie</p></td>
+<p>Chiffrement des messages Microsoft 365 pour la messagerie</p></td>
 </tr>
 <tr class="even">
 <td align="left">Protection au niveau du site et de la bibliothèque (inclut les sites SharePoint Online et OneDrive Entreprise)</td>
 <td align="left"><p>Autorisations pour les sites et les bibliothèques SharePoint Online et OneDrive Entreprise</p>
 <p>Stratégies de partage externe pour SharePoint Online et OneDrive Entreprise (au niveau du site)</p>
-<p>Stratégies d’accès aux appareils au niveau du site</p></td>
+<p>Stratégies d’accès d’appareil au niveau du site</p></td>
 </tr>
 <tr class="odd">
-<td align="left">Protection de l’accès aux services (inclut l’accès à tous les services dans Office 365)</td>
+<td align="left">Protection de l’accès aux services (inclut l’accès à tous les services dans Microsoft 365)</td>
 <td align="left"><p>Protection de l’accès aux identités et aux appareils dans la suite Enterprise Mobility + Security (EMS)</p>
 <p>Gestion des accès privilégiés</p>
 <p>Fonctionnalités de sécurité Windows 10</p></td>
@@ -212,7 +212,7 @@ Le reste de cet article fournit des informations supplémentaires sur chacune de
 
 Vous pouvez utiliser les fonctionnalités suivantes dans un environnement configuré pour le respect du RGPD. Ces fonctionnalités ne sont pas nécessaires pour le respect du RGPD, mais elles peuvent être utilisées sans nuire à votre capacité à détecter, protéger, surveiller et signaler les données liées au respect du RGPD.
 
-Clé client : permet aux clients de fournir et de garder le contrôle sur les clés de chiffrement utilisées pour chiffrer les données au repos dans Office 365. Recommandé uniquement pour les clients ayant besoin, à titre réglementaire, de gérer leurs propres clés de chiffrement.
+Clé client : permet aux clients de fournir et de garder le contrôle sur les clés de chiffrement utilisées pour chiffrer les données au repos dans Microsoft 365. Recommandé uniquement pour les clients ayant besoin, à titre réglementaire, de gérer leurs propres clés de chiffrement.
 
 Customer Lockbox : vous permet de contrôler l’accès des ingénieurs de support Microsoft à vos données, si nécessaire, pour résoudre un problème technique au cas par cas. Vous pouvez décider d’accorder ou non l’accès à vos données à l’ingénieur de support. Un délai d’expiration est fourni avec chaque demande.
 
@@ -259,7 +259,7 @@ Plus d’informations :
 
 De nombreuses organisations autorisent le partage externe pour encourager la collaboration. Découvrez comment vos paramètres client sont configurés. Ensuite, passez en revue les paramètres de partage externe pour les sites qui contiennent des données personnelles.
 
-Un utilisateur externe est une personne extérieure à votre organisation qui est invitée à accéder à vos sites et documents SharePoint Online, mais ne dispose d’aucune licence pour votre abonnement SharePoint Online ou Microsoft Office 365.
+Un utilisateur externe est une personne extérieure à votre organisation qui est invitée à accéder à vos sites et documents SharePoint Online, mais ne dispose d’aucune licence pour votre abonnement SharePoint Online ou Microsoft 365.
 
 Les stratégies de partage externe s’appliquent à SharePoint Online et OneDrive Entreprise.
 
@@ -358,7 +358,7 @@ Plus d’informations : [Centre d’administration SharePoint Online : Contrô
 
 ## <a name="service-access-protection-for-identities-and-devices"></a>Protection de l’accès au service pour les appareils et les identités
 
-Microsoft vous recommande de configurer la protection pour les identités et les appareils qui accèdent au service. Le travail que vous effectuez pour protéger l’accès aux services Office 365 peut également être utilisé pour protéger l’accès à d’autres services SaaS et PaaS, et même à des applications dans d’autres fournisseurs cloud.
+Microsoft vous recommande de configurer la protection pour les identités et les appareils qui accèdent au service. Le travail que vous effectuez pour protéger l’accès aux services Microsoft 365 peut également être utilisé pour protéger l’accès à d’autres services SaaS et PaaS, et même à des applications dans d’autres fournisseurs cloud.
 
 La protection de l’accès pour les appareils et les identités fournit une référence de base de la protection pour garantir que les identités ne sont pas compromises, que les appareils sont sûrs et que les données des organisations figurant sur les appareils sont isolées et protégées.
 
@@ -372,13 +372,13 @@ L’illustration suivante décrit les relations entre les services cloud (SaaS, 
 
 Pour l’accessibilité, le reste de cette section décrit cette illustration.
 
-### <a name="cloud-services"></a>Services de cloud
+### <a name="cloud-services"></a>Services cloud
 
-Azure Active Directory fournit un accès basé sur l’identité à n’importe quel service cloud, y compris les fournisseurs non-Microsoft tels qu’Amazon Web Services. L’illustration montre Office 365, une « autres application SaaS » et une « application PaaS ». Les flèches pointent d’Azure Active Directory vers chacun de ces services, et montrent qu’Azure Active Directory peut être utilisé pour l’authentification à tous ces types d’application.
+Azure Active Directory fournit un accès basé sur l’identité à n’importe quel service cloud, y compris les fournisseurs non-Microsoft tels qu’Amazon Web Services. L’illustration montre Microsoft 365, une « autres application SaaS » et une « application PaaS ». Les flèches pointent d’Azure Active Directory vers chacun de ces services, et montrent qu’Azure Active Directory peut être utilisé pour l’authentification à tous ces types d’application.
 
 ### <a name="types-of-accounts"></a>Types de comptes
 
-Les comptes de domaine clients sont des comptes que vous ajoutez à votre client et que vous gérez directement. Les comptes B2B sont des comptes pour les utilisateurs extérieurs à votre organisation que vous invitez pour collaborer avec eux. Il peut s’agir d’autres comptes Office 365, de comptes d’autres organisations ou de comptes clients (par exemple, Gmail). L’illustration montre les deux types de comptes dans Azure Active Directory.
+Les comptes de domaine clients sont des comptes que vous ajoutez à votre client et que vous gérez directement. Les comptes B2B sont des comptes pour les utilisateurs extérieurs à votre organisation que vous invitez pour collaborer avec eux. Il peut s’agir d’autres comptes Microsoft 365, de comptes d’autres organisations ou de comptes clients (par exemple, Gmail). L’illustration montre les deux types de comptes dans Azure Active Directory.
 
 ### <a name="capabilities"></a>Fonctionnalités
 

@@ -17,12 +17,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: Servez-vous des guides de laboratoire de test pour configurer les environnements de développement/test, de preuve de concept et de démonstration pour Microsoft 365 pour entreprise.
-ms.openlocfilehash: 1ea41cd3553c70b2a8bb99e08da43fd45b1aa558
-ms.sourcegitcommit: e525bcf073a61e1350484719a0c3ceb6ff0d8db1
+ms.openlocfilehash: 582068e84d82bfa681d1e1e64234698544ce3b9d
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "43153915"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631596"
 ---
 # <a name="microsoft-365-for-enterprise-test-lab-guides"></a>Guides de laboratoire de test Microsoft 365 pour entreprise
 
@@ -96,7 +96,7 @@ Pour obtenir une description des fonctionnalités liées à l’identité, repor
 
 - [Accès aux identités et appareils](identity-device-access-m365-test-environment.md)
 
-   Créez un environnement pour tester les configurations recommandées pour l’accès aux identités et aux appareils et les stratégies d’accès conditionnel.
+   Créez un environnement pour tester les configurations recommandées pour l’accès aux identités aux appareils et les stratégies d’accès conditionnel.
 
 
 ## <a name="mobile-device-management"></a>Gestion des appareils mobiles
@@ -116,16 +116,16 @@ Pour obtenir une description des fonctionnalités liées à la gestion des appar
 
 Pour faire la démonstration de fonctionnalités liées à la protection des informations, reportez-vous à :
 
-- [Sécurité Office 365 accrue](increased-o365-security-microsoft-365-enterprise-dev-test-environment.md)
+- [Sécurité Microsoft 365 renforcée](increased-o365-security-microsoft-365-enterprise-dev-test-environment.md)
     
-   Configurez les paramètres pour une sécurité Office 365 accrue et examinez les outils de sécurité intégrée.
+   Configurez les paramètres pour une sécurité Microsoft 365 renforcée et examinez les outils de sécurité intégrée.
   
 - [Classification des données](data-classification-microsoft-365-enterprise-dev-test-environment.md)
     
-   Configurez et appliquez des étiquettes Office 365 à un document dans un site d’équipe SharePoint Online.
+   Configurez et appliquez des étiquettes à un document dans un site d’équipe SharePoint Online.
     
 - [Gestion des accès privilégiés](privileged-access-microsoft-365-enterprise-dev-test-environment.md)
     
-   Configurez la gestion des accès privilégiés pour un accès juste-à-temps aux tâches élevées et privilégiées dans votre organisation Office 365.
+   Configurez la gestion des accès privilégiés pour un accès juste-à-temps aux tâches élevées et privilégiées dans votre organisation.
 
 

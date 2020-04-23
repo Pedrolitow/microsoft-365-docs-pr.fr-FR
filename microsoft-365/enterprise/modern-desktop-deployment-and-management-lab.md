@@ -15,18 +15,18 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: En savoir plus sur le point et où pour accéder au Kit laboratoire de déploiement Windows et Office.
-ms.openlocfilehash: 15bd30e54aaf5c7e7fcd881009f8c51c6d5c74e0
-ms.sourcegitcommit: 7bb340f6b47378bcd1c6e770dc975931470bbc26
+ms.openlocfilehash: 9635e6d12b9f3ef606f8b62edac4dce6d75a1074
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43225930"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631512"
 ---
 # <a name="windows-and-office-deployment-lab-kit"></a>Kit laboratoire de déploiement Windows et Office
 
-Ces ateliers sont conçus pour vous aider à planifier, tester et valider votre déploiement et votre gestion de postes de travail exécutant Windows 10 Entreprise et Office 365 ProPlus. Les ateliers abordent les étapes et les outils décrits dans la roue Déploiement du bureau, couvrant Microsoft Endpoint Configuration Manager, Analyses du bureau, Outil de personnalisation Office, OneDrive, Windows Autopilot et autres.
+Ces ateliers sont conçus pour vous aider à planifier, tester et valider votre déploiement et votre gestion de postes de travail exécutant Windows 10 Entreprise et Microsoft 365 Apps for enterprise. Les ateliers abordent les étapes et les outils décrits dans la roue Déploiement du bureau, couvrant Microsoft Endpoint Configuration Manager, Analyses du bureau, Outil de personnalisation Office, OneDrive, Windows Autopilot et autres.
 
-Cette formation est fortement recommandée pour les organisations qui se préparent à la fin de vie de Windows 7, et s'applique également si vous utilisez actuellement Windows 10 et Office 365 Plus ou Office 2019. De plus, en tant qu'environnement isolé, le laboratoire est idéal pour explorer les mises à jour des outils de déploiement et tester l'automatisation liée au déploiement.
+Cette formation est fortement recommandée pour les organisations qui se préparent à la fin de vie de Windows 7, et s'applique également si vous utilisez actuellement Windows 10 et Office 365 Plus ou Office 2019. De plus, en tant qu'environnement isolé, le laboratoire est idéal pour explorer les mises à jour des outils de déploiement et tester l'automatisation liée au déploiement.
 
 [Télécharger le Kit laboratoire de déploiement Windows et Office](https://www.microsoft.com/evalcenter/evaluate-lab-kit).
 
@@ -69,7 +69,7 @@ Des guides de laboratoire détaillés vous guident dans plusieurs scénarios de 
 
 ### <a name="office-and-lob-app-delivery"></a>Distribution d’Office et des applications métier
 
-  - Déploiement d’Office 365 ProPlus 
+  - Microsoft 365 Apps for enterprise
   - Déploiement géré en entreprise à l’aide de Configuration Manager et de Microsoft Intune
   - Gestion et déploiement de l’application à l’aide de Microsoft Intune
   - Déploiement de l’application et installation en libre-service à l’aide de Microsoft Store pour Entreprises
@@ -113,7 +113,7 @@ Des guides de laboratoire détaillés vous guident dans plusieurs scénarios de 
 
 [Télécharger le Kit laboratoire de déploiement Windows et Office](https://www.microsoft.com/evalcenter/evaluate-lab-kit).
 
-*Utilisez une large bande passante pour télécharger ce contenu afin d’améliorer votre expérience de téléchargement et bénéficier d’une configuration automatique de 30 à 45 minutes. L’environnement de laboratoire nécessite un minimum de 16 Go de mémoire disponible et 150 Go d’espace disque libre. Pour des performances optimales, 32 Go libres sont recommandés. Le laboratoire arrive à expiration le 5 juillet 2020. Une nouvelle version sera publiée avant l’expiration.*
+*Utilisez une large bande passante pour télécharger ce contenu afin d’améliorer votre expérience de téléchargement et bénéficier d’une configuration automatique de 30 à 45 minutes. L’environnement de laboratoire nécessite un minimum de 16 Go de mémoire disponible et 150 Go d’espace disque libre. Pour des performances optimales, 32 Go libres sont recommandés. Le laboratoire arrive à expiration le 18 avril 2020. Une nouvelle version sera publiée avant l’expiration.*
 
 ## <a name="additional-guidance"></a>Conseils supplémentaires
 
@@ -125,7 +125,7 @@ Des guides de laboratoire détaillés vous guident dans plusieurs scénarios de 
 
   - [<span class="underline">Plan de déploiement de Windows 10</span>](https://docs.microsoft.com/windows/deployment/planning/index)
 
-  - [<span class="underline">Guide de déploiement pour Office 365 ProPlus</span>](https://docs.microsoft.com/deployoffice/deployment-guide-for-office-365-proplus)
+  - [<span class="underline">Guide de déploiement pour Microsoft 365 Apps for enterprise</span>](https://docs.microsoft.com/deployoffice/deployment-guide-for-office-365-proplus)
 
   - [<span class="underline">Mise en route d’Intune</span>](https://docs.microsoft.com/intune/get-started-evaluation)
 

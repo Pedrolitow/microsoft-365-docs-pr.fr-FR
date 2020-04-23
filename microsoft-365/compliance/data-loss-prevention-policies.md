@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Les stratégies de protection contre la perte de données (DLP) disponibles dans le Centre de sécurité &amp; conformité vous permettent d’identifier, de surveiller et de protéger automatiquement des informations sensibles dans Office 365.
-ms.openlocfilehash: f61d6c13a66b7f1d93c7bdc1404265e8567e2fb7
-ms.sourcegitcommit: 732bb72a0b5ae09cb39536185aa29d6097ec72fd
+ms.openlocfilehash: 68e81a83242ef4a1a099760044b5ccaec5bd91b7
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43189074"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43630601"
 ---
 # <a name="overview-of-data-loss-prevention"></a>Vue d’ensemble de la protection contre la perte de données
 <!-- this topic needs to be split into smaller, more coherent ones. It is confusing as it is. -->
@@ -79,7 +79,7 @@ Par exemple, vous pouvez avoir une stratégie DLP qui vous aide à détecter la 
   
 ### <a name="locations"></a>Emplacements
 
-Une stratégie DLP peut rechercher et protéger les informations sensibles dans Office 365, que ces informations se trouvent sur Exchange Online, SharePoint Online, OneDrive Entreprise ou Microsoft Teams. Vous pouvez choisir de protéger le contenu dans le courrier Exchange, les conversations et les messages de canal de Microsoft Teams, ainsi que toutes les bibliothèques SharePoint ou OneDrive, ou de sélectionner des emplacements spécifiques pour une stratégie.
+Une stratégie DLP peut rechercher et protéger les informations sensibles dans Microsoft 365, que ces informations se trouvent sur Exchange Online, SharePoint Online, OneDrive Entreprise ou Microsoft Teams. Vous pouvez choisir de protéger le contenu dans le courrier Exchange, les conversations et les messages de canal de Microsoft Teams, ainsi que toutes les bibliothèques SharePoint ou OneDrive, ou de sélectionner des emplacements spécifiques pour une stratégie.
   
 ![Options pour les emplacements dans lesquels une stratégie DLP peut être appliquée](../media/ee50a61a-e867-4571-a150-3eec8d83650f.png)
 
@@ -121,7 +121,7 @@ Les conditions actuellement disponibles peuvent déterminer si :
     
 #### <a name="types-of-sensitive-information"></a>Types d’informations sensibles
 
-Une stratégie DLP peut contribuer à protéger les informations sensibles, définies selon des **types d’informations sensibles**. Office 365 inclut les définitions de nombreux types d’informations sensibles courants dans diverses régions, prêtes pour utilisation, comme les numéros de carte de crédit, numéros de compte bancaire, numéros de carte d’identité et numéros de passeport. 
+Une stratégie DLP peut contribuer à protéger les informations sensibles, définies selon des **types d’informations sensibles**. Microsoft 365 inclut les définitions de nombreux types d’informations sensibles courants dans diverses régions, prêtes pour utilisation, comme les numéros de carte de crédit, numéros de compte bancaire, numéros de carte d’identité et numéros de passeport. 
   
 ![Liste des types d’informations sensibles disponibles](../media/3eaa9911-bc94-44be-902f-363dbf3b07fe.png)
   
@@ -397,7 +397,7 @@ Pour accéder rapidement à une section, cliquez sur un élément de la navigati
 
 La première étape de la création d’une stratégie DLP consiste à choisir les informations à protéger. En utilisant un modèle DLP, vous n’avez alors pas à faire l’effort de créer intégralement un ensemble de règles et d’identifier les types d’informations à inclure par défaut. Vous pouvez ensuite ajouter des éléments à ces exigences ou modifier ces dernières pour ajuster la règle afin de répondre aux besoins spécifiques de votre organisation.
   
-Un modèle de stratégie DLP préconfiguré peut vous aider à détecter des types spécifiques d’informations sensibles, comme des données HIPAA, des données PCI-DSS, des données Gramm-Leach-Bliley Act ou même des informations d’identification personnelle propres aux paramètres régionaux. Pour faciliter la recherche et la protection des types d’informations sensibles courants, les modèles de stratégie inclus dans Office 365 contiennent déjà les types d’informations sensibles les plus courants, nécessaires pour commencer.
+Un modèle de stratégie DLP préconfiguré peut vous aider à détecter des types spécifiques d’informations sensibles, comme des données HIPAA, des données PCI-DSS, des données Gramm-Leach-Bliley Act ou même des informations d’identification personnelle propres aux paramètres régionaux. Pour faciliter la recherche et la protection des types d’informations sensibles courants, les modèles de stratégie inclus dans Microsoft 365 contiennent déjà les types d’informations sensibles les plus courants, nécessaires pour commencer.
   
 ![Liste des modèles de stratégies de protection contre la perte de données avec focus sur le modèle pour le Patriot Act des États-Unis](../media/791b2403-430b-4987-8643-cc20abbd8148.png)
   
@@ -501,11 +501,11 @@ Lorsque vous créez une stratégie DLP qui inclut Microsoft Teams comme emplacem
 
 Les membres de votre équipe de mise en conformité qui créeront des stratégies DLP ont besoin des autorisations d’accès au Centre de conformité et de sécurité. Par défaut, votre administrateur de client a accès à cet emplacement et peut autoriser des agents de conformité et d’autres personnes à accéder au Centre de sécurité et conformité, sans pour autant leur octroyer toutes les autorisations d’un administrateur de client. Pour cela, nous vous recommandons de :
   
-1. Créer un groupe dans Office 365 et d’y ajouter des responsables de la mise en conformité.
+1. Créer un groupe dans Microsoft 365 et d’y ajouter des responsables de la mise en conformité.
     
 2. Créer un groupe de rôles sur la page **Autorisations** du Centre de sécurité et de conformité. 
     
-3. Ajouter le groupe Office 365 au groupe de rôles.
+3. Ajouter le groupe Microsoft 365 au groupe de rôles.
     
 Pour plus d’informations, voir [Give users access to the Office 365 Compliance Center](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
   
@@ -519,7 +519,7 @@ Pour utiliser la plupart des applets de commande du Centre de conformité et de 
     
 2. Utiliser l’une de ces [applets de commande de stratégie et de conformité DLP](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/export-dlppolicycollection?view=exchange-ps)
     
-Toutefois, les rapports DLP doivent extraire des d’Office 365, y compris Exchange Online. Pour cette raison, les **applets de commande des rapports DLP sont disponibles dans Exchange Online Powershell (et non dans le centre de conformité &amp; sécurité Powershell)**. Par conséquent, pour utiliser les applets de commande pour les rapports DLP, vous devez :
+Toutefois, les rapports DLP doivent extraire des données de Microsoft 365, y compris Exchange Online. Pour cette raison, les **applets de commande des rapports DLP sont disponibles dans Exchange Online Powershell (et non dans le centre de conformité &amp; sécurité Powershell)**. Par conséquent, pour utiliser les applets de commande pour les rapports DLP, vous devez :
   
 1. [Vous connecter à Exchange Online à l'aide de Remote PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps)
     
@@ -544,4 +544,3 @@ Toutefois, les rapports DLP doivent extraire des d’Office 365, y compris Exch
 - [Éléments recherchés par les fonctions DLP](what-the-dlp-functions-look-for.md)
     
 - [Créer un type d’informations sensibles personnalisé](create-a-custom-sensitive-information-type.md)
-    

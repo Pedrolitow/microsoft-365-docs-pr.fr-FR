@@ -16,12 +16,12 @@ ms.collection:
 - remotework
 ms.custom: ''
 description: Découvrez en quoi la planification et l’implémentation de la continuité d’activité sont différentes lorsque les services Cloud font partie de votre offre informatique.
-ms.openlocfilehash: bb9f3f1367b376c63b8779f3ff62f05b0312ef55
-ms.sourcegitcommit: ce6121a8e3ca7438071d73b0c76e2b6f33ac1cf7
+ms.openlocfilehash: 6bdecdbacd69d925e5bd44cfc0521a626d64082f
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "43030105"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43633032"
 ---
 # <a name="enterprise-business-continuity-management-ebcm-with-cloud-services"></a>Gestion de la continuité d’activité d’entreprise (EBCM) avec les services Cloud
 
@@ -40,7 +40,7 @@ Si vous n'avez pas encore mis à jour vos plans, cette série de rubriques vous 
 - [Résilience des services Microsoft 365](ebcm-m365-service-resiliency.md)
 - [Développement de votre plan de continuité](ebcm-developing-your-ebcm-plan.md)
 - [Scénarios d’atténuation des incidents de service Microsoft 365](ebcm-microsoft-365-mitigations.md)
-- [Formation et entraînement sur les plans de continuité d’activité Microsoft 365](ebcm-enterprise-business-continuity-management-plan-rehearsal-and-user-training.md)
+- [Formation et entraînement sur les plans de continuité Microsoft 365 Entreprise](ebcm-enterprise-business-continuity-management-plan-rehearsal-and-user-training.md)
 
 ## <a name="see-also"></a>Voir aussi
 

@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Découvrez les options dédiées au déploiement de système d’exploitation et aux mises à jour des fonctionnalités.
-ms.openlocfilehash: 24b6cf30398031cf2bf4032795013338fec39ffb
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: d22a0993b256a1bea1a6a5ac61f14b144c6ac6c7
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42085215"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636758"
 ---
 # <a name="step-6-os-deployment-and-feature-updates"></a>Étape 6 : déploiement de système d’exploitation et mises à jour des fonctionnalités
 
@@ -41,7 +41,7 @@ ms.locfileid: "42085215"
 
 Si vous avez suivi le processus de déploiement jusqu’ici, vous avez effectué (au moins en partie) la procédure relative à la disponibilité des applications et des périphériques, vous avez préparé votre infrastructure, configuré et collecté les packages d’application, mis en place un plan pour migrer les fichiers utilisateur et configurer les paramètres par défaut et mis en place des plans pour conserver vos contrôles de sécurité existants et, éventuellement, en déployer d’autres.
 
-Il est désormais temps d’assembler toutes les pièces du puzzle pour automatiser autant que possible le processus d’installation de Windows 10 et d’Office 365 ProPlus, ainsi que les pilotes, les applications et tous les éléments nécessaires.
+Il est désormais temps d’assembler toutes les pièces du puzzle pour automatiser autant que possible le processus d’installation de Windows 10 et de Microsoft 365 Apps for enterprise, ainsi que les pilotes, les applications et tous les éléments nécessaires.
 
 Enfin, lors d’un déploiement de système d’exploitation, le meilleur indice de réussite est de répondre aux attentes des utilisateurs et d’éviter toute perturbation dans leur travail. Dans cette étape, vous allez commencer les tests et le déploiement pour les utilisateurs pilotes dans le cadre d’un déploiement progressif. Avant d’étendre le déploiement, nous vous conseillons de passer directement à l’étape 8 de notre processus de déploiement [Communications et formation des utilisateurs](https://aka.ms/mdd8) pour vous assurer que les utilisateurs sont informés et préparés aux changements à venir et que le rythme de votre déploiement est validé en permanence à l’aide du déploiement progressif.
 
@@ -131,8 +131,8 @@ Pour plus d’informations sur Windows Update pour Entreprise, veuillez consulte
 
 ## <a name="next-step"></a>Étape suivante 
 
-## <a name="step-7-windows-and-office-servicinghttpsakamsmdd7"></a>[Étape 7 : Windows et Office Servicing](https://aka.ms/mdd7)
+## <a name="step-7-windows-and-office-servicing"></a>[Étape 7 : Windows et Office Servicing](https://aka.ms/mdd7)
 
 ## <a name="previous-step"></a>Étape précédente
 
-## <a name="step-5-security-and-compliance-considerationshttpsakamsmdd5"></a>[Étape 5 : considérations relatives à la sécurité et à la conformité](https://aka.ms/mdd5)
+## <a name="step-5-security-and-compliance-considerations"></a>[Étape 5 : considérations relatives à la sécurité et à la conformité](https://aka.ms/mdd5)

@@ -13,12 +13,12 @@ ms.collection:
 - SPO_Content
 ms.custom: ''
 description: Suivez le processus de planification, de déploiement et de création de valeur de SharePoint au sein de votre organisation.
-ms.openlocfilehash: cb0cf16df328d667d796008ac7cabfc98c21ad17
-ms.sourcegitcommit: 237589a0c8a24510e5c8f3b8b4747d944ad0afbf
+ms.openlocfilehash: ee2c5592015361a678785cb8e4aaad9074c5d804
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "39886321"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636915"
 ---
 # <a name="deploy-sharepoint-and-onedrive-for-microsoft-365-enterprise"></a>Déployer SharePoint et OneDrive pour Microsoft 365 Entreprise
 
@@ -93,8 +93,8 @@ Utilisez [Migrer vers SharePoint](https://docs.microsoft.com/sharepointmigration
 
 Pour mieux comprendre la sécurité dans SharePoint, consultez les ressources suivantes :
 
--   [SharePoint et OneDrive protègent vos données dans le cloud](https://docs.microsoft.com/sharepoint/safeguarding-your-data)
--   [Chiffrement de données dans OneDrive et SharePoint](https://docs.microsoft.com/microsoft-365/compliance/data-encryption-in-odb-and-spo)
+-     [SharePoint et OneDrive protègent vos données dans le cloud](https://docs.microsoft.com/sharepoint/safeguarding-your-data)
+-     [Chiffrement de données dans OneDrive et SharePoint](https://docs.microsoft.com/microsoft-365/compliance/data-encryption-in-odb-and-spo)
 
 #### <a name="result"></a>Résultat
 
@@ -155,8 +155,8 @@ Après avoir effectué le déploiement pour toute votre organisation, vous devez
 
 Voici des suggestions d’activités :
 
-- Consultez la page [Facteurs de succès pour Office 365](https://aka.ms/successfactors) pour en savoir plus sur les meilleures pratiques générales relatives à l’adoption du service cloud. 
-- Consultez l’article [Rapports d’activité Office 365](https://docs.microsoft.com/office365/admin/activity-reports/activity-reports) pour comprendre l’utilisation des services Office 365 au sein de votre organisation. Si vous n’êtes pas administrateur général Office 365 pour votre organisation, demandez à la personne habilitée de vous accorder les autorisations d’accès en lecture aux rapports pour que vous puissiez accéder aux rapports d’activité.
+- Consultez la page [Facteurs de réussite pour Microsoft 365](https://aka.ms/successfactors) pour en savoir plus sur les meilleures pratiques générales relatives à l’adoption du service cloud. 
+- Consultez l’article [Rapports Microsoft 365 dans le centre d’administration](https://docs.microsoft.com/office365/admin/activity-reports/activity-reports) pour comprendre l’utilisation des services au sein de votre organisation. Si vous n’êtes pas administrateur général pour votre organisation, demandez à la personne habilitée de vous accorder les autorisations d’accès en lecture aux rapports pour que vous puissiez accéder aux rapports d’activité.
 - Surveillez vos commentaires (un canal public dans une équipe centrale Teams ou Yammer) pour résoudre les problèmes et traiter les commentaires des personnes qui ont des difficultés à utiliser SharePoint. Répondez aux questions et problèmes dans les meilleurs délais afin d'éviter les frustrations et de montrer du soutien dans le cadre du déploiement.
 - Identifiez et entretenez les champions de chaque groupe d’entreprises et mettez en évidence leurs réalisations et leurs meilleures pratiques lors de l’utilisation de SharePoint. Faites part de leurs réussites à l'organisation pour montrer le succès et l'adoption du projet. L'appui des responsables techniques au sein d'un groupe d'entreprises peut exercer une forte influence sur la direction et les pairs.
 

@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 06af70f3-e7dc-4ee2-a385-fb4d61a5e93b
 description: 'Résumé : créez des équipes d’équipes Sensible et Hautement confidentiel dans Microsoft Teams pour les fichiers dans un environnement de développement/test.'
-ms.openlocfilehash: 7af36e5a3af94297124c6f03cdead514ac941e5b
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 5b3f5c74ac484eb00852d5756b3269fb7c8c6a5b
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42082255"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637967"
 ---
 # <a name="secure-teams-for-files-in-a-devtest-environment"></a>Sécuriser les fichiers Teams dans un environnement de développement/test
 
@@ -64,9 +64,9 @@ Commencez par créer deux groupes pour une organisation standard avec le portail
       
 5. Cliquez sur **Créer** et fermez le panneau **Groupe**.
     
-6.  Répétez les étapes 3–5 pour un nouveau groupe appelé **Équipe marketing**.
+6.    Répétez les étapes 3–5 pour un nouveau groupe appelé **Équipe marketing**.
     
-Ensuite, configurez l’octroi de licence automatique afin que des licences soient automatiquement attribuées aux membres de vos groupes pour les abonnements Office 365 et EMS.
+Ensuite, configurez l’octroi de licence automatique afin que des licences soient automatiquement attribuées aux membres de vos groupes pour les abonnements Microsoft 365 et EMS.
   
 1. Dans le portail Azure, cliquez sur **Azure Active Directory > Licences > Tous les produits**.
     
@@ -125,7 +125,7 @@ Utilisez ces étapes pour vérifier que la gestion des licences basée sur un gr
     
 4. Dans le volet qui affiche les propriétés du compte d’utilisateur **PDG**, vérifiez que les licences **Microsoft 365 Entreprise E5** lui ont été affectées (dans **Licences de produit**).
     
-## <a name="phase-3-create-office-365-retention-labels"></a>Phase 3: Créer des étiquettes de rétention Office 365
+## <a name="phase-3-create-retention-labels"></a>Phase 3 : Création d’étiquettes de rétention
 
 Dans cette phase, vous allez créer les étiquettes de rétention correspondant aux différents niveaux de sécurité pour les dossiers de documents du site d’équipe SharePoint sous-jacent.
 
@@ -171,18 +171,18 @@ Pour créer une équipe de niveau sensible pour les membres du groupe marketing 
 
 1. [Créez une équipe privée](https://support.office.com/article/174adf5f-846b-4780-b765-de1a0a737e2b) avec le nom **Campagnes marketing**.
 2. Ouvrez l’équipe **Campagnes marketing**.
-3.  Dans la barre d’outils de l’équipe, cliquez sur **Fichiers**.
-4.  Cliquez sur les points de suspension, puis sur **Ouvrir dans SharePoint**.
-5.  Dans la barre d’outils du site SharePoint sous-jacent, cliquez sur l’icône Paramètres, puis cliquez sur **Autorisations du site**.
-6.  Dans le volet **Autorisations de site**, sous **Paramètres de partage**, cliquez sur **Modifier les paramètres de partage**.
-7.  Sous **Autorisations de partage**, sélectionnez **Seuls les propriétaires du site peuvent partager des fichiers, des dossiers et le site**, puis cliquez sur **Enregistrer**.
+3.    Dans la barre d’outils de l’équipe, cliquez sur **Fichiers**.
+4.    Cliquez sur les points de suspension, puis sur **Ouvrir dans SharePoint**.
+5.    Dans la barre d’outils du site SharePoint sous-jacent, cliquez sur l’icône Paramètres, puis cliquez sur **Autorisations du site**.
+6.    Dans le volet **Autorisations de site**, sous **Paramètres de partage**, cliquez sur **Modifier les paramètres de partage**.
+7.    Sous **Autorisations de partage**, sélectionnez **Seuls les propriétaires du site peuvent partager des fichiers, des dossiers et le site**, puis cliquez sur **Enregistrer**.
 
 Ensuite, configurez le dossier de documents du site SharePoint sous-jacent Campagnes marketing avec l’étiquette Sensible.
 
-1.  Sous l’onglet **Campagne marketing - Accueil** de votre navigateur, cliquez sur **Documents**.
-2.  Cliquez sur l’icône des paramètres, puis cliquez sur **Paramètres de la bibliothèque**.
-3.  Sous **Autorisations et gestion**, cliquez sur **Appliquer l’étiquette aux éléments de cette bibliothèque**.
-4.  Dans **Paramètres - Appliquer l’étiquette**, sélectionnez **Sensible**, puis cliquez sur **Enregistrer**. 
+1.    Sous l’onglet **Campagne marketing - Accueil** de votre navigateur, cliquez sur **Documents**.
+2.    Cliquez sur l’icône des paramètres, puis cliquez sur **Paramètres de la bibliothèque**.
+3.    Sous **Autorisations et gestion**, cliquez sur **Appliquer l’étiquette aux éléments de cette bibliothèque**.
+4.    Dans **Paramètres - Appliquer l’étiquette**, sélectionnez **Sensible**, puis cliquez sur **Enregistrer**. 
 
 Ensuite, configurez une stratégie de protection contre la perte de données qui avertit les utilisateurs quand ils partagent un document sur un site SharePoint sous-jacent avec l’étiquette Sensible, qui inclut le site Campagnes marketing, en dehors de l’organisation.
 
@@ -236,19 +236,19 @@ Pour créer une équipe de niveau hautement confidentiel pour les membres de l�
 
 1. [Créez une équipe privée](https://support.office.com/article/174adf5f-846b-4780-b765-de1a0a737e2b) avec le nom **Stratégie d’entreprise**.
 2. Ouvrez l’équipe**stratégie d’entreprise** .
-3.  Dans la barre d’outils de l’équipe, cliquez sur **Fichiers**.
-4.  Cliquez sur les points de suspension, puis sur **Ouvrir dans SharePoint**.
-5.  Dans la barre d’outils du site SharePoint sous-jacent, cliquez sur l’icône Paramètres, puis cliquez sur **Autorisations du site**.
-6.  Dans le volet **Autorisations de site**, sous **Paramètres de partage**, cliquez sur **Modifier les paramètres de partage**.
-7.  Sous **Autorisations de partage**, sélectionnez **Seuls les propriétaires du site peuvent partager des fichiers, des dossiers et le site**.
-8.  Désactivez **Autoriser les demandes d’accès**, puis cliquez sur **Enregistrer**.
+3.    Dans la barre d’outils de l’équipe, cliquez sur **Fichiers**.
+4.    Cliquez sur les points de suspension, puis sur **Ouvrir dans SharePoint**.
+5.    Dans la barre d’outils du site SharePoint sous-jacent, cliquez sur l’icône Paramètres, puis cliquez sur **Autorisations du site**.
+6.    Dans le volet **Autorisations de site**, sous **Paramètres de partage**, cliquez sur **Modifier les paramètres de partage**.
+7.    Sous **Autorisations de partage**, sélectionnez **Seuls les propriétaires du site peuvent partager des fichiers, des dossiers et le site**.
+8.    Désactivez **Autoriser les demandes d’accès**, puis cliquez sur **Enregistrer**.
 
 Ensuite, configurez le dossier de documents du site SharePoint sous-jacent Stratégie d’entreprise avec l’étiquette Hautement confidentiel.
 
-1.  Sous l’onglet **Stratégie de l’entreprise - Accueil** de votre navigateur, cliquez sur **Documents**.
-2.  Cliquez sur l’icône des paramètres, puis cliquez sur **Paramètres de la bibliothèque**.
-3.  Sous **Autorisations et gestion**, cliquez sur **Appliquer l’étiquette aux éléments de cette bibliothèque**.
-4.  Dans **Paramètres - Appliquer une étiquette**, sélectionnez **Hautement confidentiel**, puis cliquez sur **Enregistrer**. 
+1.    Sous l’onglet **Stratégie de l’entreprise - Accueil** de votre navigateur, cliquez sur **Documents**.
+2.    Cliquez sur l’icône des paramètres, puis cliquez sur **Paramètres de la bibliothèque**.
+3.    Sous **Autorisations et gestion**, cliquez sur **Appliquer l’étiquette aux éléments de cette bibliothèque**.
+4.    Dans **Paramètres - Appliquer une étiquette**, sélectionnez **Hautement confidentiel**, puis cliquez sur **Enregistrer**. 
 
 Ensuite, configurez une stratégie de protection contre la perte de données qui bloque les utilisateurs quand ils partagent un document à l’extérieur de l’organisation sur un site SharePoint sous-jacent avec l’étiquette Hautement confidentiel, qui inclut le site Stratégie de l’entreprise.
   

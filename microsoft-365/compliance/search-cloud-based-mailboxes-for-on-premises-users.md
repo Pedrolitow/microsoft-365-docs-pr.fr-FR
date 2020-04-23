@@ -1,5 +1,5 @@
 ---
-title: Recherche de boîtes aux lettres sur le cloud des utilisateurs locaux dans Office 365
+title: Recherche de boîtes aux lettres sur le cloud des utilisateurs locaux
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -17,20 +17,20 @@ search.appverid:
 - MET150
 ms.assetid: 3f7dde1a-a8ea-4366-86da-8ee6777f357c
 description: Utilisez l’outil recherche de contenu dans le centre de conformité et de sécurité pour rechercher et exporter des données de conversation MicrosoftTeams (appelées conversations 1xN) pour les utilisateurs locaux dans un déploiement hybride Exchange.
-ms.openlocfilehash: ba3504289306543916667066738a25cf168d13e5
-ms.sourcegitcommit: 21338a9287017a66298e0ff557e80051946ebf13
+ms.openlocfilehash: 9dc9219d6ef1a387e1514deb672386d7d3c18290
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "42604151"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43626450"
 ---
-# <a name="searching-cloud-based-mailboxes-for-on-premises-users-in-office-365"></a>Recherche de boîtes aux lettres sur le cloud des utilisateurs locaux dans Office 365
+# <a name="searching-cloud-based-mailboxes-for-on-premises-users"></a>Recherche de boîtes aux lettres sur le cloud des utilisateurs locaux
 
 Si votre organisation dispose d'un déploiement hybride d'Exchange (ou si votre organisation synchronise une organisation Exchange sur site avec Office 365) et a activé Microsoft Teams, les utilisateurs peuvent utiliser l'application de conversation Teams pour la messagerie instantanée. Pour un utilisateur dans le cloud, les données de conversation Teams (également appelées *conversations 1xN*) sont enregistrées dans leur boîte aux lettres principale basée sur le cloud. Lorsqu’un utilisateur local utilise l’application de conversation Teams, sa boîte aux lettres principale est localisée en local. Pour contourner cette limitation, Microsoft a publié une nouvelle fonctionnalité dans laquelle une zone de stockage basée sur le cloud (appelée boîte aux lettres basée sur le cloud pour les utilisateurs locaux) est créée pour stocker les données de conversation Teams pour les utilisateurs locaux. Cela vous permet d’utiliser l’outil recherche de contenu dans le centre de sécurité et de conformité pour rechercher et exporter des données de conversation pour les utilisateurs locaux. 
   
 Voici la configuration requise et les limitations applicables à la configuration de boîtes aux lettres cloud pour les utilisateurs locaux :
   
-- Les comptes d’utilisateurs dans votre service d’annuaire local (par exemple, Active Directory) doivent être synchronisés avec Azure Active Directory (service d’annuaire dans Office 365). Cela signifie qu’un compte d’utilisateur de courrier est créé dans Office 365 et est associé à un utilisateur dont la boîte aux lettres principale se trouve dans l’organisation locale.
+- Les comptes d’utilisateurs dans votre service d’annuaire local (par exemple, Active Directory) doivent être synchronisés avec Azure Active Directory (service d’annuaire dans Microsoft 365). Cela signifie qu’un compte d’utilisateur de courrier est créé dans Microsoft 365 et est associé à un utilisateur dont la boîte aux lettres principale se trouve dans l’organisation locale.
 
 - Une licence Microsoft Teams doit être attribuée à l’utilisateur dont la boîte aux lettres principale se trouve dans l’organisation locale et au minimum d’une licence Exchange Online (plan 1).
 
@@ -39,9 +39,9 @@ Voici la configuration requise et les limitations applicables à la configuratio
 - Vous devez envoyer une demande de Support Microsoft pour permettre à votre organisation de rechercher des équipes dans les boîtes aux lettres dans le cloud pour les utilisateurs locaux. Consultez [Classement d’une demande auprès du Support Microsoft pour activer cette fonctionnalité](#filing-a-request-with-microsoft-support-to-enable-this-feature) dans cet article. 
 
 > [!NOTE]
-> Les conversations pa canaux Teams sont toujours stockées dans la boîte aux lettres basée sur le cloud qui est associée à Teams. Cela signifie que vous pouvez utiliser la recherche de contenu pour rechercher des conversations de canal sans avoir à classer une demande de support. Pour plus d’informations sur la recherche conversations par canaux Teams, consultez[Recherche Microsoft Teams et Groupes Office 365](content-search.md#searching-microsoft-teams-and-office-365-groups).
+> Les conversations pa canaux Teams sont toujours stockées dans la boîte aux lettres basée sur le cloud qui est associée à Teams. Cela signifie que vous pouvez utiliser la recherche de contenu pour rechercher des conversations de canal sans avoir à classer une demande de support. Pour plus d’informations sur la recherche conversations par canaux Teams, consultez[Recherche Microsoft Teams et Groupes Microsoft 365](content-search.md#searching-microsoft-teams-and-microsoft-365-groups).
   
-## <a name="how-it-works"></a>Fonctionnement
+## <a name="how-it-works"></a>Mode de fonctionnement
 
 Si un utilisateur de Microsoft Teams a une boîte aux lettres locale et que son compte d’utilisateur/son identité est synchronisé avec le cloud, Microsoft crée une boîte aux lettres basée sur le cloud pour stocker les données de conversation de 1xN Teams. Une fois les données de conversation Teams stockées dans la boîte aux lettres basée sur le cloud, celles-ci sont indexées pour la recherche. Cela vous permet d’utiliser la recherche de contenu (et les recherches associées à des cas eDiscovery) pour rechercher, afficher un aperçu et exporter des données de conversation pour les utilisateurs locaux. Vous pouvez également utiliser les applets de commande**\*ComplianceSearch**dans le centre de conformité et de sécurité PowerShell pour rechercher des données de conversation Teams pour les utilisateurs locaux. 
   
@@ -57,17 +57,17 @@ Vous devez effectuer une demande auprès du Support Microsoft pour autoriser vot
   
 Fournissez les informations suivantes lorsque vous envoyez la demande au Support Microsoft :
   
-- Nom de domaine par défaut de votre organisation Office 365.
+- Nom de domaine par défaut de votre organisation.
 
-- Le nom du locataire et l’ID de client de votre organisation Office 365. Celles-ci sont disponibles dans le portail Azure Active Directory (sous **Gérer** \> **Propriétés**). Consultez [Trouver votre ID de client Office 365](https://support.office.com/article/6891b561-a52d-4ade-9f39-b492285e2c9b).
+- Le nom du locataire et l’ID de client de votre organisation. Celles-ci sont disponibles dans le portail Azure Active Directory (sous **Gérer** \> **Propriétés**). Consultez [Rechercher votre ID de client Microsoft 365](https://support.office.com/article/6891b561-a52d-4ade-9f39-b492285e2c9b).
 
-- Le titre ou la description de l’objet de la demande de support : « Activer la recherche de contenu d’application pour les utilisateurs locaux ». Cette opération permet d’acheminer la demande vers l’équipe d’ingénierie d’eDiscovery Office 365 qui implémente la demande.
+- Le titre ou la description de l’objet de la demande de support : « Activer la recherche de contenu d’application pour les utilisateurs locaux ». Cette opération permet d’acheminer la demande vers l’équipe d’ingénierie d’eDiscovery qui implémente la demande.
 
 Une fois la modification d’ingénierie effectuée, le Support Microsoft vous enverra une estimation de la date de déploiement. Le processus de déploiement prend généralement deux à trois semaines après l’envoi de la demande de support.
   
 ### <a name="what-happens-after-this-feature-is-enabled"></a>Que se passe-t-il si cette fonctionnalité est activée ?
 
-Une fois cette fonctionnalité déployée dans votre organisation Office 365, les modifications suivantes sont apportées dans la recherche de contenu et dans les recherches associées à un cas de découverte électronique dans le centre de sécurité et conformité :
+Une fois cette fonctionnalité déployée dans votre organisation, les modifications suivantes sont apportées dans la recherche de contenu et dans les recherches associées à un cas de découverte électronique dans le centre de sécurité et conformité :
   
 - La case à cocher **Ajouter du contenu d’application Office pour les utilisateurs locaux** est ajoutée aux **Emplacements** dans la recherche de contenu.
 
@@ -143,7 +143,7 @@ Pour plus d’informations sur l’utilisation de ces applets de commande, consu
 
  **Où se trouvent les boîtes aux lettres sur le cloud des utilisateurs locaux ?**
   
-Les boîtes aux lettres basées sur le cloud sont créées et stockées dans le même centre de données que votre organisation Office 365.
+Les boîtes aux lettres basées sur le cloud sont créées et stockées dans le même centre de données que votre organisation.
   
  **Y a-t-il d’autres programmes requis que l’envoi d’une demande de support ?**
   
@@ -153,7 +153,7 @@ Les boîtes aux lettres basées sur le cloud sont créées et stockées dans le 
   
 Non. Lorsque vous migrez la boîte aux lettres principale d’un utilisateur local vers le cloud, les informations de conversation associées à cet utilisateur sont déplacées vers leur nouvelle boîte aux lettres principale basée sur le cloud.
   
- **Puis-je appliquer une conservation eDiscovery ou des stratégies de rétention Office 365 à des utilisateurs locaux ?**
+ **Puis-je appliquer une conservation eDiscovery ou des stratégies de rétention à des utilisateurs locaux ?**
   
 Oui. Vous pouvez appliquer des conservations eDiscovery ou des stratégies de rétention pour les conversations Teams et les messages de canaux vers les boîtes aux lettres dans le cloud pour les utilisateurs locaux.
   

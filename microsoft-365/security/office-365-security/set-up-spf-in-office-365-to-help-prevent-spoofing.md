@@ -1,5 +1,5 @@
 ---
-title: Configurer SPF dans Office 365 pour empêcher l’usurpation
+title: Configurer SPF pour empêcher l’usurpation
 f1.keywords:
 - CSH
 ms.author: tracyp
@@ -16,14 +16,14 @@ ms.assetid: 71373291-83d2-466f-86ea-fc61493743a6
 ms.collection:
 - M365-security-compliance
 description: 'Résumé : Cet article explique comment mettre à jour un enregistrement DNS (Domain Name Service) afin que vous puissiez utiliser le SPF (Sender Policy Framework) avec votre domaine personnalisé dans Office 365. L’utilisation de SPF permet de valider les messages sortants envoyés à partir de votre domaine personnalisé.'
-ms.openlocfilehash: 0480e23d00671f0fdfc4795f3844047e02a69122
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: c1424ed9da6a36128d9f4502aadb475068ad029b
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598331"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43638319"
 ---
-# <a name="set-up-spf-in-office-365-to-help-prevent-spoofing"></a>Configurer SPF dans Office 365 pour empêcher l’usurpation
+# <a name="set-up-spf-to-help-prevent-spoofing"></a>Configurer SPF pour empêcher l’usurpation
 
  **Résumé :** Cet article explique comment mettre à jour un enregistrement DNS (Domain Name Service) afin que vous puissiez utiliser le SPF (Sender Policy Framework) avec votre domaine personnalisé dans Office 365. L'utilisation de SPF permet de valider les messages sortants envoyés à partir de votre domaine personnalisé.
 
@@ -59,7 +59,7 @@ Collectez les informations ci-dessous :
 
 1. Assurez-vous que vous connaissez la syntaxe SFP du tableau suivant.
 
-   ||**Si vous utilisez...**|**Courant pour les utilisateurs d'Office 365 ?**|**Ajoutez l'élément suivant...**|
+   ||**Si vous utilisez...**|**Courant pour les utilisateurs ?**|**Ajoutez l'élément suivant...**|
    |:-----|:-----|:-----|:-----|
    |1|Un système de messagerie (obligatoire)|Courant. Tous les enregistrements TXT SPF commencent avec cette valeur|v=spf1|
    |2|Exchange Online|Courant|include:spf.protection.outlook.com|
@@ -75,7 +75,7 @@ Collectez les informations ci-dessous :
 
    `v=spf1 include:spf.protection.outlook.com -all`
 
-   Il s’agit de l’enregistrement TXT SPF Office 365 le plus courant. Cet enregistrement fonctionne pratiquement dans tous les cas, peu importe que votre centre de données Office 365 se trouve aux États-Unis, en Europe (y compris en Allemagne) ou dans une autre région.
+   Il s’agit de l’enregistrement TXT SPF le plus courant. Cet enregistrement fonctionne pratiquement dans tous les cas, peu importe que votre centre de données Microsoft se trouve aux États-Unis, en Europe (y compris en Allemagne) ou dans une autre région.
 
    Toutefois, si vous avez acheté Office 365 Germany, un composant de Microsoft Cloud Germany, vous devez utiliser l’instruction Include de la ligne 4 au lieu de celle de la ligne 2. Par exemple, si vous êtes entièrement hébergé par Office 365 Germany, ce qui signifie que vous n’avez aucun serveur de messagerie local, votre enregistrement TXT SPF inclut les lignes 1, 4 et 7 et se présente comme suit :
 

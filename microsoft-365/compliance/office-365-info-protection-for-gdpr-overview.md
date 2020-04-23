@@ -18,12 +18,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: Obtenez une vue d’ensemble de la protection des informations Office 365 pour le RGPD. Apprenez à découvrir, classer, protéger et surveiller les données personnelles.
-ms.openlocfilehash: dbb420cce572b2e03260f9f5b1be63e65504276b
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: b838ae96c8b93dced8b4da898ed04effc0586463
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42071162"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637218"
 ---
 # <a name="overview-of-office-365-information-protection-for-gdpr"></a>Protection des informations Office 365 pour le RGPD - Vue d’ensemble
 
@@ -103,4 +103,4 @@ Pour plus d’informations sur l’application de la protection, reportez-vous �
 
 ### <a name="step-5--monitor-for-leaks-of-personal-data"></a>Étape 5 - Surveillez les fuites de données personnelles
 
-Les rapports sur la protection contre la perte de données Office 365 fournissent les informations les plus détaillées concernant la surveillance des données sensibles. Vous pouvez configurer des alertes automatisées et examiner les violations de données à l’aide du journal d’audit Office 365. Cloud App Security étend la possibilité de rechercher et de surveiller les données sensibles à d’autres fournisseurs SaaS. Pour plus d’informations sur ces outils, reportez-vous à la rubrique relative à la [surveillance des atteintes à la sécurité des données personnelles](/security/office-365-security/monitor-for-leaks-of-personal-data.md).
+Les rapports sur la protection contre la perte de données Office 365 fournissent les informations les plus détaillées concernant la surveillance des données sensibles. Vous pouvez configurer des alertes automatisées et examiner les violations de données à l’aide du journal d’audit. Cloud App Security étend la possibilité de rechercher et de surveiller les données sensibles à d’autres fournisseurs SaaS. Pour plus d’informations sur ces outils, reportez-vous à la rubrique relative à la [surveillance des atteintes à la sécurité des données personnelles](/security/office-365-security/monitor-for-leaks-of-personal-data.md).

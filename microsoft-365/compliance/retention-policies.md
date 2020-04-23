@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Une stratégie de rétention vous permet de décider de façon proactive de conserver du contenu, de le supprimer (ou les deux), de conserver du contenu, puis de le supprimer ; d’appliquer une stratégie unique à l’ensemble de l’organisation ou à quelques emplacements ou utilisateurs ; et d’appliquer une stratégie à tout le contenu ou au contenu remplissant certaines conditions.
-ms.openlocfilehash: df2e89e26de2baab21cb334c1852cb261e1b8c98
-ms.sourcegitcommit: 09c3e2f3129c5e43cd8420cccd0676ff3a29a355
+ms.openlocfilehash: 7075e043a2d45358447137fbf76bcbf88a65e9f4
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "43521510"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632435"
 ---
 # <a name="overview-of-retention-policies"></a>Vue d’ensemble des stratégies de rétention
 
@@ -95,8 +95,6 @@ Lorsque la stratégie de rétention doit conserver et supprimer :
     > [!NOTE]
     > Pour éviter toute perte de données par inadvertance, le contenu n’est jamais automatiquement supprimé de la bibliothèque de conservation et de préservation, mais il est déplacé vers la corbeille second niveau. Là, la période de grâce de 93 jours permet aux administrateurs de récupérer ce contenu, le cas échéant.
     
-2. **Si le contenu n’est ni modifié ni supprimé** pendant la période de rétention, il est déplacé vers la Corbeille premier niveau à la fin de la période de rétention. Si un utilisateur supprime le contenu à partir de là ou vide cette Corbeille (action également nommée « purge »), le document est déplacé vers la Corbeille second niveau. La période de rétention de 93 jours concerne tant la corbeille premier niveau que la corbeille second niveau. À la fin des 93 jours, le document est définitivement supprimé de l’emplacement en question (corbeille premier niveau ou second niveau). La Corbeille n’est pas indexée et n’est donc pas disponible pour les recherches. Par conséquent, une recherche eDiscovery ne peut pas trouver de contenu de la Corbeille auquel appliquer une conservation.
-
 2. **Si le contenu n’est ni modifié ni supprimé** pendant la période de rétention : il est déplacé vers la Corbeille premier niveau à la fin de la période de rétention. Si un utilisateur supprime le contenu à partir de là ou vide cette corbeille (action également nommée « purge »), le document est déplacé vers la corbeille second niveau. La période de rétention de 93 jours concerne tant la corbeille premier niveau que la corbeille second niveau. À la fin des 93 jours, le document est définitivement supprimé de l’emplacement en question (corbeille premier niveau ou second niveau). La Corbeille n’est pas indexée et n’est donc pas disponible pour les recherches. Par conséquent, une recherche eDiscovery ne peut pas trouver de contenu de la Corbeille auquel appliquer une conservation. 
 
 Lorsque la stratégie de rétention consiste à conserver uniquement ou à supprimer uniquement, les chemins d'accès au contenu sont des variantes de rétention et de suppression :
@@ -333,7 +331,7 @@ Nous cherchons constamment à optimiser les fonctionnalités de rétention dans 
    > [!NOTE]
    > Auparavant, une stratégie de rétention ne pouvait pas supprimer du contenu de Teams qui avait moins de 30 jours, mais nous avons supprimé cette limitation. Vous pouvez désormais choisir le nombre de jours de la période de rétention du contenu de Teams, et ce peut être seulement un jour. Si vous avez une période de rétention d’un jour, il faudra jusqu’à trois jours après l’expiration de la période de rétention avant la suppression définitive des messages.
     
-Dans Teams, les fichiers partagés dans une conversation sont stockés sur le compte OneDrive de l'utilisateur qui a partagé le fichier. Les fichiers téléchargés dans les canaux sont stockés sur le site SharePoint associé à l’équipe. Par conséquent, pour conserver ou supprimer des fichiers dans Teams, vous devez créer une stratégie de rétention qui s’applique aux emplacements OneDrive et Groupe Office 365. Si vous voulez appliquer une stratégie aux fichiers partagés dans Teams par un utilisateur ou une équipe spécifique, vous pouvez choisir les emplacements OneDrive ou Groupe Office 365 et inclure l’utilisateur ou l’équipe spécifique.
+Dans Teams, les fichiers partagés dans une conversation sont stockés sur le compte OneDrive de l'utilisateur qui a partagé le fichier. Les fichiers téléchargés dans les canaux sont stockés sur le site SharePoint associé à l’équipe. Par conséquent, pour conserver ou supprimer des fichiers dans Teams, vous devez créer une stratégie de rétention qui s’applique aux emplacements OneDrive et Groupe Microsoft 365. Si vous voulez appliquer une stratégie aux fichiers partagés dans Teams par un utilisateur ou une équipe spécifique, vous pouvez choisir les emplacements OneDrive ou Groupe Microsoft 365 et inclure l’utilisateur ou l’équipe spécifique.
   
 Une stratégie de rétention qui s’applique à Teams peut utiliser le [Verrouillage de conservation](#locking-a-retention-policy).
   
@@ -342,9 +340,9 @@ Une stratégie de rétention qui s’applique à Teams peut utiliser le [Verroui
 > [!NOTE]
 > Si vous créez des stratégies de rétention pour les emplacements Teams ou Skype au sein de votre organisation, l’une de ces stratégies apparaît comme stratégie de dossier par défaut lorsqu’un utilisateur affiche les propriétés d’un dossier de boîte aux lettres dans le client de bureau Outlook. Il s’agit [d’un problème connu](https://support.microsoft.com/help/4491013/outlook-client-displays-teams-or-skype-for-business-retention-policies)d’affichage incorrect dans Outlook. Ce qui doit s’afficher comme stratégie de dossier par défaut est la stratégie de rétention de boîte aux lettres appliquée au dossier. La stratégie de rétention de Skype ou Teams n’est pas appliquée à la boîte aux lettres de l’utilisateur.  
 
-### <a name="office-365-groups-locations"></a>Emplacements de groupes Office 365
+### <a name="microsoft-365-groups-locations"></a>Emplacements des groupes Microsoft 365
 
-Pour conserver le contenu d'un groupe Office 365, vous devez utiliser l'emplacement des groupes Office 365. Même si un groupe Office 365 possède une boîte aux lettres Exchange, une politique de rétention qui inclut l'ensemble de l'emplacement Exchange n'inclut pas le contenu des boîtes aux lettres du groupe Office 365. Une stratégie de rétention appliquée à un groupe Office 365 inclut la boîte aux lettres de groupe et le site. Une stratégie de rétention appliquée à un groupe Office 365 protège les ressources créées par un groupe Office 365, ce qui inclut Microsoft Teams.
+Pour conserver le contenu d'un groupe Microsoft 365, vous devez utiliser l'emplacement des groupes Microsoft 365. Même si un groupe Microsoft 365 possède une boîte aux lettres Exchange, une politique de rétention qui inclut l'ensemble de l'emplacement Exchange n'inclut pas le contenu des boîtes aux lettres du groupe Microsoft 365. Une stratégie de rétention appliquée à un groupe Microsoft 365 inclut la boîte aux lettres de groupe et le site. Une stratégie de rétention appliquée à un groupe Microsoft 365 protège les ressources créées par un groupe Microsoft 365, ce qui inclut Microsoft Teams.
 
 De plus, il n’est pas possible d’utiliser l’emplacement Exchange pour inclure ou exclure une boîte aux lettres de groupe spécifique. Bien que l’emplacement Exchange permette initialement de sélectionner une boîte aux lettres de groupe, lorsque vous essayez d’enregistrer la stratégie de rétention, vous recevez une erreur qui indique que « RemoteGroupMailbox » n’est pas une sélection valide pour l’emplacement Exchange. 
 
@@ -406,7 +404,7 @@ Pour comprendre comment les différentes stratégies de rétention s’appliquen
     
 3. **L’inclusion explicite prend le pas sur l’inclusion implicite** Voici ce que cela signifie : 
     
-    1. Si une étiquette avec des paramètres de rétention est attribuée manuellement par un utilisateur à un élément tel qu’un courrier électronique Exchange ou un document OneDrive, cette étiquette l’emporte sur toute stratégie appliquée au niveau du site ou de la boîte aux lettres, ainsi que sur une étiquette par défaut attribuée par la bibliothèque de documents. Par exemple, si l’étiquette explicite stipule une période de rétention de dix ans, tandis que la stratégie appliquée au site indique une période de rétention de cinq ans, l’étiquette est prioritaire. Les étiquettes d’application automatique sont considérées comme implicites et non explicites, car Office 365 les applique automatiquement.
+    1. Si une étiquette avec des paramètres de rétention est attribuée manuellement par un utilisateur à un élément tel qu’un courrier électronique Exchange ou un document OneDrive, cette étiquette l’emporte sur toute stratégie appliquée au niveau du site ou de la boîte aux lettres, ainsi que sur une étiquette par défaut attribuée par la bibliothèque de documents. Par exemple, si l’étiquette explicite stipule une période de rétention de dix ans, tandis que la stratégie appliquée au site indique une période de rétention de cinq ans, l’étiquette est prioritaire. Les étiquettes d’application automatique sont considérées comme implicites et non explicites, car Microsoft 365 les applique automatiquement.
     
     2. Si une stratégie de rétention inclut un emplacement spécifique, tel que la boîte aux lettres d’un utilisateur spécifique ou compte OneDrive Entreprise, cette stratégie l’emporte sur une autre stratégie de rétention qui s’applique à l’ensemble des boîtes aux lettres ou des comptes OneDrive Entreprise des utilisateurs, mais n’inclut pas spécifiquement la boîte aux lettres de l’utilisateur en question.
     
@@ -418,13 +416,13 @@ Enfin, une stratégie de rétention ou une étiquette ne peut pas supprimer déf
   
 ## <a name="use-a-retention-policy-instead-of-these-features"></a>Utilisation d’une stratégie de rétention au lieu de ces fonctionnalités
 
-Une stratégie de rétention unique peut s’appliquer facilement à l’ensemble d’une organisation et à des emplacements entiers dans Office 365, notamment Exchange Online, SharePoint Online, OneDrive Entreprise et Groupes Office 365. Si vous devez conserver ou supprimer du contenu n’importe où dans Office 365, nous vous recommandons d’utiliser une stratégie de rétention. (Vous pouvez également utiliser des étiquettes avec des paramètres de rétention. Pour plus d’informations, voir [vue d’ensemble des étiquettes](labels.md).)
+Une stratégie de rétention unique peut s’appliquer facilement à l’ensemble d’une organisation et à des emplacements entiers dans Microsoft 365, notamment Exchange Online, SharePoint Online, OneDrive Entreprise et Groupes Microsoft 365. Si vous devez conserver ou supprimer du contenu n’importe où dans Microsoft 365, nous vous recommandons d’utiliser une stratégie de rétention. (Vous pouvez également utiliser des étiquettes avec des paramètres de rétention. Pour plus d’informations, voir [vue d’ensemble des étiquettes](labels.md).)
   
-Plusieurs autres fonctionnalités étaient auparavant utilisées pour conserver ou supprimer du contenu dans Office 365. Celles-ci sont répertoriées ci-dessous. Ces fonctionnalités continueront de fonctionner parallèlement aux stratégies et étiquettes de rétention. Toutefois, pour la gouvernance des informations, nous vous recommandons d’utiliser une stratégie ou des étiquettes de rétention plutôt que ces fonctionnalités. Une stratégie de rétention est la seule fonctionnalité qui permet de conserver et de supprimer du contenu dans Office 365.
+Plusieurs autres fonctionnalités étaient auparavant utilisées pour conserver ou supprimer du contenu dans Microsoft 365. Celles-ci sont répertoriées ci-dessous. Ces fonctionnalités continueront de fonctionner parallèlement aux stratégies et étiquettes de rétention. Toutefois, pour la gouvernance des informations, nous vous recommandons d’utiliser une stratégie ou des étiquettes de rétention plutôt que ces fonctionnalités. Une stratégie de rétention est la seule fonctionnalité qui permet de conserver et de supprimer du contenu dans Microsoft 365.
   
 ### <a name="exchange-online"></a>Exchange Online
 
-- [Gestion des cas eDiscovery dans le Centre de sécurité &amp; conformité Office 365](https://support.office.com/article/edea80d6-20a7-40fb-b8c4-5e8c8395f6da) (conservation eDiscovery) 
+- [Gestion des cas eDiscovery dans le Centre de sécurité &amp; conformité](https://support.office.com/article/edea80d6-20a7-40fb-b8c4-5e8c8395f6da) (conservation eDiscovery) 
     
 - [Conservation inaltérable et conservation pour litige](https://go.microsoft.com/fwlink/?linkid=846124) (conservation eDiscovery) 
 
@@ -434,7 +432,7 @@ Plusieurs autres fonctionnalités étaient auparavant utilisées pour conserver 
     
 ### <a name="sharepoint-online-and-onedrive-for-business"></a>Sharepoint Online et OneDrive Entreprise
 
-- [Gestion des cas eDiscovery dans le Centre de sécurité &amp; conformité Office 365](https://support.office.com/article/edea80d6-20a7-40fb-b8c4-5e8c8395f6da) (conservation eDiscovery) 
+- [Gestion des cas eDiscovery dans le Centre de sécurité &amp; conformité](https://support.office.com/article/edea80d6-20a7-40fb-b8c4-5e8c8395f6da) (conservation eDiscovery) 
     
 - [Ajout du contenu à un incident et placement des sources en conservation dans le centre eDiscovery](https://support.office.com/article/54d70de9-1ec2-4325-84f3-aeb588554479) (conservation eDiscovery) 
     
@@ -460,9 +458,9 @@ Si vous utilisiez une stratégie de conservation, celle-ci a été automatiqueme
 
 Pour utiliser les cmdlets des stratégies de conservation :
   
-1. [Connexion au Centre de sécurité et de conformité Office 365 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)
+1. [Se connecter à l’interface PowerShell du Centre de sécurité et conformité](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)
     
-2. Utilisez les cmdlets ci-après du Centre de sécurité et de conformité Office 365 :
+2. Utilisez les cmdlets du Centre de conformité et sécurité suivantes :
     
     - [Get-RetentionCompliancePolicy](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/get-retentioncompliancepolicy)
     
@@ -484,7 +482,7 @@ Pour utiliser les cmdlets des stratégies de conservation :
 
 Les membres de votre équipe de conformité appelés à créer des stratégies de rétention ont besoin d’autorisations pour accéder au [Centre de sécurité &amp;et de conformité](https://protection.office.com/). Par défaut, votre administrateur locataire a accès à cet emplacement et peut accorder aux responsables de la mise en conformité et à d’autres personnes l’accès au [Centre de sécurité&amp; et de conformité](https://protection.office.com/), sans leur donner toutes les autorisations d’un administrateur locataire. Pour ce faire, nous vous recommandons d’accéder à la page **Autorisations** du [Centre de sécurité&amp; et de conformité](https://protection.office.com/), de modifier le groupe de rôles **Administrateur de conformité** et d’ajouter des membres à ce groupe de rôles. 
   
-Pour plus d’informations, voir [Autoriser des utilisateurs à accéder au Centre de sécurité et conformité Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/grant-access-to-the-security-and-compliance-center). 
+Pour plus d’informations, consultez [Autoriser l’accès des utilisateurs au Centre de sécurité et conformité](https://docs.microsoft.com/microsoft-365/security/office-365-security/grant-access-to-the-security-and-compliance-center). 
 
 Ces autorisations sont requises uniquement pour créer et appliquer une stratégie de rétention. L’application d’une stratégie ne nécessite pas d’accès au contenu.
 

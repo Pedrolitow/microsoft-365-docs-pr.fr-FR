@@ -22,19 +22,18 @@ search.appverid:
 - BEA160
 - GEA150
 ms.assetid: 32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b
-description: Obtenez un support technique et de facturation à l’aide de numéros de téléphone répertoriés pour votre région ou votre pays, en envoyant une demande de service en ligne ou en accédant à la Boutique Microsoft.
+description: Obtenez un support technique et de facturation à l’aide de numéros de téléphone répertoriés pour votre pays ou région, en envoyant une demande de service en ligne ou en accédant à la Boutique Microsoft.
 feedback_system: None
-ms.openlocfilehash: 8f69b77d8e16d4ed73aa8ecf9f15bc8998cf0f20
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: f1698de8c9b1d80763c983fbc9adf3778be45645
+ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627077"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43707546"
 ---
 # <a name="contact-support-for-business-products---admin-help"></a>Contacter le support relatif aux produits d’entreprises- Aide de l’administrateur
 
 ::: moniker range="o365-worldwide"
-
 
 ## <a name="online-support"></a>[ Support en ligne](#tab/online)
 
@@ -52,7 +51,9 @@ Gagnez du temps en créant votre demande de service en ligne. Nous vous aiderons
 
 ## <a name="phone-support"></a>[Prise en charge des téléphones](#tab/phone)
 
-Le support de facturation est proposé en anglais de 9 h à 17 h (9 h à 18 h en Australie), du lundi au vendredi.  <br/>Le support technique est proposé en anglais 24 heures sur 24, 7 jours sur 7. <br/> Vous, en tant qu'administrateur, devez avoir vos informations de compte à disposition lorsque vous appelez le support.<br/>
+Le support de facturation est proposé en anglais de 9 h à 17 h (9 h à 18 h en Australie), du lundi au vendredi.\
+Le support technique est proposé en anglais 24 heures sur 24, 7 jours sur 7.\
+Vous, en tant qu'administrateur, devez avoir vos informations de compte à disposition lorsque vous appelez le support.\
 
 - **Pour les États-Unis, composez le 1 800 865 9408.**
 
@@ -122,7 +123,7 @@ L'assistance technique pour les abonnements Office 365 géré par 21Vianet fourn
 
 | Catégorie d’assistance | Exemples |
 |------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Installation et configuration | Exchange Online  <ul><li>Migration de boîtes aux lettres Office 365</li><li>Configuration du destinataire (autorisations de boîte aux lettres, configuration de transfert de messages, configuration de boîte aux lettres partagée)</li><li>Configuration de la découverte automatique</li></ul> SharePoint Online <ul><li>Groupes d’utilisateurs et autorisations</li><li>Configuration d’utilisateurs externes</li></ul> Skype Entreprise Online  <ul><li>Installation et création de contacts</li></ul> Applications Microsoft 365 pour les entreprises  <ul><li>Installation et configuration</li></ul> |
+| Installation et configuration | Exchange Online  <ul><li>Migration de boîtes aux lettres Office 365</li><li>Configuration du destinataire (autorisations de boîte aux lettres, configuration de transfert de messages, configuration de boîte aux lettres partagée)</li><li>Configuration de la découverte automatique</li></ul> SharePoint Online <ul><li>Groupes d’utilisateurs et autorisations</li><li>Configuration d’utilisateurs externes</li></ul> Skype Entreprise Online  <ul><li>Installation et création de contacts</li></ul> Microsoft 365 Apps for enterprise  <ul><li>Installation et configuration</li></ul> |
 | Configuration | Problèmes de configuration de service  <ul><li>Authentification unique (SSO)</li><li>Synchronisation Active Directory</li></ul> |
 
 > [!NOTE]

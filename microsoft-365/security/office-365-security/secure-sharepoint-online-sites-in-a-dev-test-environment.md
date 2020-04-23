@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 06af70f3-e7dc-4ee2-a385-fb4d61a5e93b
 description: 'Résumé : Créez des sites d’équipe SharePoint Online sensibles et hautement confidentiels dans un environnement de développement/test.'
-ms.openlocfilehash: 6294daa943c3815b86a9e12154901ed0b58d5e8d
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 016fd99423305e0d11272f3d25115dcffe29ecae
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42088107"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631988"
 ---
 # <a name="secure-sharepoint-online-sites-in-a-devtest-environment"></a>Sécuriser des sites SharePoint Online dans un environnement de développement et de test
 
@@ -66,7 +66,7 @@ Commencez par créer deux groupes pour une organisation standard avec le portail
 
 6. Répétez les étapes 3–5 pour un nouveau groupe appelé **Équipe marketing**.
 
-Ensuite, configurez l’octroi de licence automatique afin que des licences soient automatiquement attribuées aux membres de vos groupes pour les abonnements Office 365 et EMS.
+Ensuite, configurez l’octroi de licence automatique afin que des licences soient automatiquement attribuées aux membres de vos groupes pour les abonnements Microsoft 365 et EMS.
 
 1. Dans le portail Azure, cliquez sur **Azure Active Directory > Licences > Tous les produits**.
 
@@ -125,7 +125,7 @@ Utilisez ces étapes pour vérifier que la gestion des licences basée sur un gr
 
 4. Dans le volet qui affiche les propriétés du compte d’utilisateur **PDG**, vérifiez que les licences **Microsoft 365 Entreprise E5** lui ont été affectées (dans **Licences de produit**).
 
-## <a name="phase-3-create-office-365-retention-labels"></a>Phase 3: Créer des étiquettes de rétention Office 365
+## <a name="phase-3-create-retention-labels"></a>Phase 3 : Création d’étiquettes de rétention
 
 Au cours de cette phase, vous créez les étiquettes de rétention des documents dans vos sites d’équipe SharePoint.
 

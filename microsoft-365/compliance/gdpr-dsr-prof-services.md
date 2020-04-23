@@ -15,12 +15,12 @@ ms.collection:
 - GDPR
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: bcc1634398e86e0f4569d5d5fb0c5bc40ce8fc68
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: bb16c663258647989c4b0ad3ca7f95f857e8a680
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42073324"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632495"
 ---
 # <a name="microsoft-support-and-professional-services-data-subject-requests-for-the-gdpr-and-ccpa"></a>Demandes des personnes concernées du Support Microsoft et des services professionnels concernant le RGPD et le CCPA
 
@@ -228,7 +228,7 @@ Pour les services de migration FastTrack, Microsoft est le responsable du traite
   
 Si vous devez traiter des demandes d’accès, de rectification ou d’exportation de DPC alors que les données d’un utilisateur sont traitées via les systèmes de migration FastTrack, il incombe au client de répondre à ce DPC via les systèmes sources existants dans lesquels les données utilisateur sont stockées. Lorsque la migration de l’utilisateur est terminée et que les données ont été déplacées vers le service Cloud Microsoft de destination, les conseils fournis par Microsoft sur la façon dont les clients peuvent utiliser les produits, services et outils d’administration de Microsoft pour rechercher et agir sur des données personnelles pour répondre à une demande d’objet de données s’appliqueront. Pour consulter ces recommandations, voir[demandes d’objet de données pour le RGPD](https://docs.microsoft.com/microsoft-365/compliance/gdpr-data-subject-requests). 
 
-Si vous devez supprimer un compte d’utilisateur Office 365 en réponse à une demande de personne concernée tandis que votre organisation est engagée dans un projet de migration FastTrack en cours, vous devez savoir que les systèmes de migration peuvent conserver une copie des données de migration de l’utilisateur pendant une certaine période après la fin de la migration de cet utilisateur. La suppression du compte d’utilisateur Office 365 ne supprime pas automatiquement ces données de migration d’utilisateur stockées dans des systèmes de migration FastTrack. Si vous souhaitez que l’équipe Microsoft FastTrack supprime des données de migration d’utilisateur, vous pouvez [envoyer une demande](https://go.microsoft.com/fwlink/?linkid=874544). Dans le cours normal de nos activités, Microsoft FastTrack supprime toutes les copies des données une fois que la migration de votre organisation est terminée.
+Si vous devez supprimer un compte d’utilisateur en réponse à une demande de personne concernée tandis que votre organisation est engagée dans un projet de migration FastTrack en cours, vous devez savoir que les systèmes de migration peuvent conserver une copie des données de migration de l’utilisateur pendant une certaine période après la fin de la migration de cet utilisateur. La suppression du compte d’utilisateur ne supprime pas automatiquement ces données de migration d’utilisateur stockées dans des systèmes de migration FastTrack. Si vous souhaitez que l’équipe Microsoft FastTrack supprime des données de migration d’utilisateur, vous pouvez [envoyer une demande](https://go.microsoft.com/fwlink/?linkid=874544). Dans le cours normal de nos activités, Microsoft FastTrack supprime toutes les copies des données une fois que la migration de votre organisation est terminée.
 
 ## <a name="other-consulting-services"></a>Autres services de conseil
 

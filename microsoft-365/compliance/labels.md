@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Utilisez les étiquettes de rétention pour classer les données au sein de votre organisation à des fins de gouvernance, et appliquer des règles de rétention basées sur cette classification. Vous pouvez également utiliser des étiquettes de rétention pour implémenter une solution de gestion des enregistrements pour Microsoft 365.
-ms.openlocfilehash: 720a5b0b2fca16701dd4c2a752ac31b81e2233ab
-ms.sourcegitcommit: 732bb72a0b5ae09cb39536185aa29d6097ec72fd
+ms.openlocfilehash: 35d91db5a52c9c43a178341417955098a60edc34
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43189061"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637442"
 ---
 # <a name="overview-of-retention-labels"></a>Vue d’ensemble des étiquettes de rétention
 
@@ -38,11 +38,11 @@ Au sein de votre organisation, il existe probablement divers types de contenu de
     
 - Permis de travail qui doivent être **enregistrés** afin de ne pas être modifiés ou supprimés. 
     
-Dans tous ces cas, les étiquettes de rétention dans Office 365 vous aident à entreprendre les bonnes actions sur le contenu approprié. Grâce aux étiquettes de rétention, vous pouvez classer les données au sein de votre organisation à des fins de gouvernance, et appliquer des règles de rétention basées sur cette classification.
+Dans tous ces cas, les étiquettes de rétention vous aident à entreprendre les bonnes actions sur le contenu approprié. Grâce aux étiquettes de rétention, vous pouvez classer les données au sein de votre organisation à des fins de gouvernance, et appliquer des règles de rétention basées sur cette classification.
   
 Avec les étiquettes de rétention, vous pouvez effectuer les actions suivantes :
   
-- **Permettre aux personnes de votre organisation d’appliquer manuellement une étiquette de rétention** à du contenu dans Outlook sur le web, Outlook 2010 et versions ultérieures, OneDrive, SharePoint et les groupes Office 365. Les utilisateurs ont souvent une meilleure connaissance du type de contenu qu’ils utilisent. Ils peuvent donc le classer et lui appliquer la stratégie appropriée. 
+- **Permettre aux personnes de votre organisation d’appliquer manuellement une étiquette de rétention** à du contenu dans Outlook sur le web, Outlook 2010 et versions ultérieures, OneDrive, SharePoint et Groupes Microsoft 365. Les utilisateurs ont souvent une meilleure connaissance du type de contenu qu’ils utilisent. Ils peuvent donc le classer et lui appliquer la stratégie appropriée. 
     
 - **Appliquer automatiquement des étiquettes de rétention au contenu** s’il répond à des conditions spécifiques, comme lorsque le contenu contient : 
     
@@ -64,7 +64,7 @@ Avec les étiquettes de rétention, vous pouvez effectuer les actions suivantes�
 
 - **Appliquer une étiquette de rétention par défaut à une bibliothèque de documents, dossier ou ensemble de documents** dans SharePoint, afin que tous les documents figurant dans cette bibliothèque obtiennent l’étiquette de rétention par défaut.  
     
-Vous créez des étiquettes de rétention dans le Centre de conformité Microsoft 365, le Centre de sécurité Microsoft 365 ou le Centre de sécurité et conformité Office 365.
+Vous créez des étiquettes de rétention dans le Centre de conformité Microsoft 365, le Centre de sécurité Microsoft 365 ou le Centre de sécurité et conformité.
 
 ## <a name="how-retention-labels-work-with-retention-label-policies"></a>Fonctionnement des étiquettes avec les stratégies d’étiquette de rétention
 
@@ -151,9 +151,9 @@ Différents types d’étiquettes de rétention peuvent être publiés dans diff
   
 |**Si l’étiquette de rétention est...**|**La stratégie d’étiquette peut être appliquée à...**|
 |:-----|:-----|
-|Publiée aux utilisateurs finaux  <br/> |Exchange, SharePoint, OneDrive et aux groupes Office 365  <br/> |
+|Publiée aux utilisateurs finaux  <br/> |Exchange, SharePoint, OneDrive et Groupes Microsoft 365  <br/> |
 |Appliquée automatiquement en fonction des types d’informations sensibles  <br/> |Exchange (toutes les boîtes aux lettres uniquement), SharePoint, OneDrive  <br/> |
-|Appliquée automatiquement en fonction d’une requête  <br/> |Exchange, SharePoint, OneDrive et aux groupes Office 365  <br/> |
+|Appliquée automatiquement en fonction d’une requête  <br/> |Exchange, SharePoint, OneDrive et Groupes Microsoft 365  <br/> |
    
 Dans Exchange, les étiquettes de rétention d’application automatique (pour les requêtes et les types d’informations sensibles) sont appliquées uniquement aux nouveaux messages envoyés (données en transit) et pas à tous les éléments présents dans la boîte aux lettres (données au repos). Par ailleurs, les étiquettes de rétention d’application automatique pour les types d’informations sensibles ne peuvent s’appliquer qu’à toutes les boîtes aux lettres. Vous ne pouvez pas sélectionner les boîtes aux lettres spécifiques.
   
@@ -183,7 +183,7 @@ Si votre étiquette de rétention est affectée au contenu par les utilisateurs 
     
 - SharePoint
     
-- Les groupes Office 365 (le site de groupe et la boîte aux lettres de groupe dans Outlook sur le web)
+- Groupes Microsoft 365 (le site de groupe et la boîte aux lettres de groupe dans Outlook sur le web)
     
 Les sections suivantes expliquent comment les étiquettes apparaissent aux membres de votre organisation dans les différentes applications.
   
@@ -235,17 +235,17 @@ Vous pouvez également créer un affichage de la bibliothèque qui contient la c
   
 ![Colonne Bibliothèque pour les étiquettes apparaissant dans l’affichage personnalisé](../media/e3392627-c0a3-405e-bb57-55f27c34cfdd.png)
   
-### <a name="office-365-groups"></a>Groupes Office 365
+### <a name="microsoft-365-groups"></a>Groupes Microsoft 365
 
-Lorsque vous publiez des étiquettes de rétention dans un groupe Office 365, celles-ci apparaissent dans le site de groupe et la boîte aux lettres de groupe dans Outlook sur le web. L’expérience d’application d’une étiquette de rétention au contenu est identique à celle illustrée ci-dessus pour les e-mails et les documents.
+Lorsque vous publiez des étiquettes de rétention dans un groupe Microsoft 365, celles-ci apparaissent dans le site de groupe et la boîte aux lettres de groupe dans Outlook sur le web. L’expérience d’application d’une étiquette de rétention au contenu est identique à celle illustrée ci-dessus pour les e-mails et les documents.
 
-Pour conserver le contenu pour un groupe Office 365, vous devez utiliser l’emplacement de groupes Office 365. Même si un groupe Office 365 a une boîte aux lettres Exchange, une stratégie de rétention qui inclut l’emplacement Exchange entier n’inclut pas du contenu dans les boîtes aux lettres de groupe Office 365. 
+Pour conserver le contenu pour un groupe Microsoft 365, vous devez utiliser l’emplacement de Groupes Microsoft 365. Même si un groupe Microsoft 365 a une boîte aux lettres Exchange, une stratégie de rétention qui inclut l’emplacement Exchange entier n’inclut pas du contenu dans les boîtes aux lettres de groupe Microsoft 365. 
 
 De plus, il n’est pas possible d’utiliser l’emplacement Exchange pour inclure ou exclure une boîte aux lettres de groupe spécifique. Bien que l’emplacement Exchange permette initialement de sélectionner une boîte aux lettres de groupe, lorsque vous essayez d’enregistrer la stratégie de rétention, vous recevez une erreur « RemoteGroupMailbox » n’est pas une sélection valide pour l’emplacement Exchange.
   
 ## <a name="applying-a-retention-label-automatically-based-on-conditions"></a>Application automatique d’une étiquette de rétention en fonction de conditions
 
-L’une des fonctionnalités les plus puissantes des étiquettes de rétention est la possibilité d’appliquer celles-ci automatiquement à tout contenu correspondant à certaines conditions. Dans ce cas, les personnes au sein de votre organisation ne doivent pas appliquer les étiquettes de rétention. Office 365 s’en charge à leur place.
+L’une des fonctionnalités les plus puissantes des étiquettes de rétention est la possibilité d’appliquer celles-ci automatiquement à tout contenu correspondant à certaines conditions. Dans ce cas, les personnes au sein de votre organisation ne doivent pas appliquer les étiquettes de rétention. Microsoft 365 s’en charge à leur place.
   
 ![Diagramme des rôles et des tâches pour les étiquettes à appliquer automatiquement](../media/32f2f2fd-18a8-43fd-839d-72ad7a43e069.png)
   
@@ -373,7 +373,7 @@ Vous pouvez utiliser des étiquettes de rétention pour déclarer du contenu sou
 
 Une étiquette de rétention peut appliquer des actions de rétention sur le contenu. En outre, vous pouvez utiliser une étiquette de rétention comme condition dans une stratégie de prévention contre la perte de données (DLP). Cela signifie qu’une stratégie DLP peut appliquer d’autres actions, telles que la restriction d’accès, au contenu portant une étiquette spécifique. 
   
-Pour obtenir plus d’informations, consultez la rubrique [Utilisation d’une étiquette comme condition dans une stratégie DLP](data-loss-prevention-policies.md#using-a-retention-label-as-a-condition-in-a-dlp-policy).
+Pour plus d’informations, consultez [Utilisation d’une étiquette de rétention comme condition dans une stratégie DLP](data-loss-prevention-policies.md#using-a-retention-label-as-a-condition-in-a-dlp-policy).
   
 ## <a name="monitor-retention-labels"></a>Contrôler les étiquettes de rétention
 
@@ -433,7 +433,7 @@ Toutes les étiquettes de rétention configurées pour les classifieurs présent
 
 ## <a name="use-retention-labels-instead-of-these-features"></a>Utilisation des étiquettes de rétention au lieu de ces fonctionnalités
 
-Les étiquettes de rétention peuvent facilement être rendues disponibles pour l’ensemble d’une organisation et son contenu dans Office 365, y compris Exchange, SharePoint, OneDrive et les groupes Office 365. Si vous devez classer du contenu ou gérer des enregistrements dans Office 365, nous vous recommandons d’utiliser des étiquettes de rétention.
+Les étiquettes de rétention peuvent facilement être rendues disponibles pour l’ensemble d’une organisation et son contenu dans Office 365, y compris Exchange, SharePoint, OneDrive et Groupes Microsoft 365. Si vous devez classer du contenu ou gérer des enregistrements dans Microsoft 365, nous vous recommandons d’utiliser des étiquettes de rétention.
   
 Auparavant, d’autres fonctionnalités étaient utilisées pour classer des contenus ou gérer des enregistrements dans Office 365. Nous les avons répertoriées ci-dessous. Ces fonctionnalités restent utilisables. Même s’il existe encore certaines situations où vous pouvez choisir entre l’une de ces fonctionnalités et les étiquettes de rétention, sachez qu’à l’avenir, seules les étiquettes de rétention seront utilisées pour la gestion des documents dans Office 365. Nous vous recommandons donc d’utiliser immédiatement les étiquettes de rétention pour la gouvernance de vos données, plutôt que ces fonctionnalités.
   
@@ -453,16 +453,16 @@ Auparavant, d’autres fonctionnalités étaient utilisées pour classer des con
 
 Les membres de votre équipe de conformité appelés à créer des étiquettes de rétention ont besoin d’autorisations pour accéder au Centre de sécurité et de conformité. Par défaut, votre administrateur locataire a accès à cet emplacement et peut accorder l’accès aux responsables de la mise en conformité et à d’autres personnes du Centre de sécurité et de conformité, sans leur donner toutes les autorisations d’un administrateur locataire. Pour ce faire, nous vous recommandons d’accéder à la page **Autorisations** du Centre de sécurité et de conformité, de modifier le groupe de rôles **Administrateur de conformité** et d’ajouter des membres à ce groupe de rôles. 
   
-Pour obtenir plus d’informations, consultez l’article [Octroi de l’accès au Centre de sécurité &amp; conformité Office 365 aux utilisateurs](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
+Pour plus d’informations, consultez [Autoriser l’accès des utilisateurs au Centre de sécurité &amp; conformité](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
   
 Ces autorisations sont requises uniquement pour créer et appliquer des étiquettes de rétention et une stratégie d’étiquette. L’application d’une stratégie ne nécessite pas d’accès au contenu.  
 ## <a name="find-the-powershell-cmdlets-for-labels"></a>Trouver les cmdlets PowerShell pour les étiquettes
 
 Pour utiliser les cmdlets, vous devez effectuer les actions suivantes :
   
-1. [Connexion au Centre de sécurité et de conformité Office 365 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)
+1. [Se connecter à l’interface PowerShell du Centre de sécurité et conformité](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)
     
-2. Utilisez les cmdlets ci-après du Centre de sécurité et de conformité Office 365 :
+2. Utilisez les cmdlets du Centre de conformité et sécurité suivantes :
 
   - [Get-ComplianceTag](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/get-compliancetag)
 

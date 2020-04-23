@@ -1,5 +1,5 @@
 ---
-title: 'Étape 5 : Optimiser les performances du service Office 365 et du client'
+title: 'Étape 5 : Optimiser les performances du service Microsoft 365 et du client'
 f1.keywords:
 - NOCSH
 ms.author: josephd
@@ -14,21 +14,21 @@ ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
 ms.custom: ''
-description: Configurez les paramètres TCP et les services Office 365 pour de meilleures performances.
-ms.openlocfilehash: e3aefb417330ab791a3dd217e2e34591eba3e1d1
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: Configurez les paramètres TCP et les services Microsoft 365 pour de meilleures performances.
+ms.openlocfilehash: 2db35f67ff19998b8a70742ec8fa24cb8d517c5d
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42066540"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43631464"
 ---
-# <a name="step-5-optimize-client-and-office-365-service-performance"></a>Étape 5 : Optimiser les performances du service Office 365 et du client
+# <a name="step-5-optimize-client-and-microsoft-365-service-performance"></a>Étape 5 : Optimiser les performances du service Microsoft 365 et du client
 
 *Cette étape est facultative et s’applique aux versions E3 et E5 de Microsoft 365 Entreprise*
 
-![Phase 1 : Mise en réseau](../media/deploy-foundation-infrastructure/networking_icon-small.png)
+![Phase 1 : Réseau](../media/deploy-foundation-infrastructure/networking_icon-small.png)
 
-Vous pouvez accroître les performances en ajustant la façon dont le protocole TCP fonctionne entre les appareils clients et les services Office 365.
+Vous pouvez accroître les performances en ajustant la façon dont le protocole TCP fonctionne entre les appareils clients et les services Microsoft 365.
 
 Pour les appareils clients, vous pouvez modifier les paramètres TCP suivants sur des appareils clients afin d’optimiser les performances TCP :
 
@@ -37,9 +37,9 @@ Pour les appareils clients, vous pouvez modifier les paramètres TCP suivants su
 - [Taille maximale de segment TCP](https://blogs.technet.microsoft.com/onthewire/2014/06/27/checking-your-tcp-packets-are-pulling-their-weight-tcp-max-segment-size-or-mss/), pour que votre appareil client puisse envoyer les blocs de données les plus volumineux dans un paquet
 - [Accusés de réception sélectifs TCP](https://blogs.technet.microsoft.com/onthewire/2014/06/27/ensuring-your-tcp-stack-isnt-throwing-data-away/), pour que votre appareil client puisse accuser reçu des données plus efficacement
 
-Pour les services Office 365, consultez ces ressources supplémentaires pour optimiser les performances :
+Pour les services Microsoft 365, consultez ces ressources supplémentaires pour optimiser les performances :
 
-- [Exchange Online](https://docs.microsoft.com/office365/enterprise/tune-exchange-online-performance)
+- [Exchange Online](https://docs.microsoft.com/office365/enterprise/tune-exchange-online-performance)
 - [Skype Entreprise Online](https://docs.microsoft.com/office365/enterprise/tune-skype-for-business-online-performance)
 - [SharePoint Online](https://docs.microsoft.com/office365/enterprise/tune-sharepoint-online-performance)
 - [Project Web App dans Project Online](https://docs.microsoft.com/ProjectOnline/tune-project-online-performance)

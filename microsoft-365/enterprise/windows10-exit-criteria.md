@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Assurez-vous que votre configuration répond aux critères de Microsoft 365 Entreprise pour Windows 10 Entreprise.
-ms.openlocfilehash: 42d8ec912a70aecef49672682c25f5e42c4bbe21
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: cf4a813a6cf89029eebde8e5947caf7b3c2ea553
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42632992"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636686"
 ---
 # <a name="phase-3-windows-10-enterprise-infrastructure-exit-criteria"></a>Phase 3 : Critères de sortie pour l’infrastructure Windows 10 Entreprise
 
@@ -127,4 +127,4 @@ Votre infrastructure Windows 10 Entreprise est prêt à commencer l’installati
 
 |||
 |:-------|:-----|
-|![Phase 4 : Office 365 ProPlus](../media/deploy-foundation-infrastructure/O365proplus_icon-small.png)| Si vous suivez les phases suivantes dans le processus de déploiement de bout en bout pour Microsoft 365 Entreprise, la suivante est la [Office 365 ProPlus](office365proplus-infrastructure.md). |
+|![Phase 4 : Microsoft 365 Apps for enterprise](../media/deploy-foundation-infrastructure/O365proplus_icon-small.png)| Si vous suivez les phases dans le processus de déploiement de bout en bout pour Microsoft 365 Entreprise, la suivante est [Microsoft 365 Apps for enterprise](office365proplus-infrastructure.md). |

@@ -1,5 +1,5 @@
 ---
-title: 'Étape 5 : configurer la prévention des pertes de données Office 365'
+title: 'Étape 5 : configurer la protection contre la perte de données'
 f1.keywords:
 - NOCSH
 ms.author: josephd
@@ -14,21 +14,21 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
 ms.custom: ''
-description: Comprendre et déployer Prévention des pertes de données Office 365 dans Microsoft 365.
-ms.openlocfilehash: 896670e9ae83324a1220d64f49a8ea48aee85169
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: Comprendre et déployer la protection contre la perte de données dans Microsoft 365.
+ms.openlocfilehash: e3d18bf54ecdfe11f8233163e7f200a70606d81d
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42067221"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636975"
 ---
-# <a name="step-5-configure-office-365-data-loss-prevention"></a>Étape 5 : configurer la prévention des pertes de données Office 365
+# <a name="step-5-configure-data-loss-prevention"></a>Étape 5 : configurer la protection contre la perte de données
 
 *Cette étape est facultative et s’applique aux versions E3 et E5 de Microsoft 365 Entreprise*
 
 ![Phase 6 : Protection des informations](../media/deploy-foundation-infrastructure/infoprotection_icon-small.png)
 
-Les stratégies de protection contre la perte de données (DLP) disponibles dans le Centre de sécurité et conformité Office 365 vous permettent d’identifier, de surveiller et de protéger automatiquement des informations sensibles dans Microsoft 365. Avec les stratégies DLP, vous pouvez :
+Les stratégies de protection contre la perte de données (DLP) disponibles dans le Centre de sécurité et conformité vous permettent d’identifier, de surveiller et de protéger automatiquement des informations sensibles dans Microsoft 365. Avec les stratégies DLP, vous pouvez :
 
 - Identifier les informations sensibles à de nombreux emplacements, comme Exchange Online, SharePoint Online, OneDrive Entreprise et Microsoft Teams.
 - Empêcher le partage accidentel d’informations sensibles en bloquant l’accès à un document ou le courrier qui le contient.

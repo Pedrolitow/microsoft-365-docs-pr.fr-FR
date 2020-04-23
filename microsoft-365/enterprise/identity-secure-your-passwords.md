@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Vous devez rendre vos mots de passe forts et gérables au sein de votre organisation.
-ms.openlocfilehash: c0ad9e2ad86cb803484e3d350fe112580610f509
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: b4eb1861eb8d1c483972cf6a7c22a339dc1b0b36
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42633092"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637047"
 ---
 # <a name="step-2-secure-your-passwords"></a>Étape 2 : Sécuriser vos mots de passe
 
@@ -82,7 +82,7 @@ Comme point de vérification intermédiaire, vous pouvez consulter les [critère
 
 
 <a name="identity-custom-sign-in"></a>
-## <a name="customize-the-office-365-sign-in-page"></a>Personnaliser la page de connexion à Office 365
+## <a name="customize-the-sign-in-page"></a>Personnalisez la page de connexion
 
 *Cette étape est facultative et s’applique aux versions E3 et E5 de Microsoft 365 Entreprise*
 
@@ -90,7 +90,7 @@ Dans cette section, vous allez permettre aux utilisateurs de reconnaître la pag
 
 Microsoft 365 Entreprise vous permet de personnaliser l’aspect des pages de connexion et du panneau d’accès pour y inclure votre logo d’entreprise, des modèles de couleurs et des informations personnalisées sur l’utilisateur. 
 
-Pour plus d’informations, reportez-vous à la rubrique [Ajouter l’identité de votre entreprise à la page de connexion d’Office 365](https://docs.microsoft.com/office365/admin/setup/customize-sign-in-page).
+Pour plus d’informations, reportez-vous à la rubrique [Ajouter l’identité de votre entreprise à la page de connexion de Microsoft 365](https://docs.microsoft.com/office365/admin/setup/customize-sign-in-page).
 
 Pour des instructions de configuration, reportez-vous à la rubrique relative à l’[ajout de l’identité de votre entreprise à vos pages de connexion et de panneau d’accès](https://aka.ms/aadpaddbranding).
 

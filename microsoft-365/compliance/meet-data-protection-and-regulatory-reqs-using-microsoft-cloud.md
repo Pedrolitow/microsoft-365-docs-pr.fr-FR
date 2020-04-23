@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 429e686f-d8a6-455e-a2b6-3791d763f000
 description: Le Gestionnaire de conformité, disponible dans le Portail d’approbation de services de Microsoft, propose des outils pour suivre, implémenter et gérer les contrôles permettant à votre organisation de se conformer aux normes du secteur en matière de sécurité et de protection des données (par exemple, le RGPD, les normes ISO 27001 et 27018, la loi américaine HIPAA), quand elle utilise les services de cloud computing Microsoft, tels qu’Office 365 et Microsoft Azure. Le Gestionnaire de conformité permet à la personne responsable de la stratégie de protection des données et de la vie privée de votre organisation de gérer vos processus d’évaluation des risques et de conformité.
-ms.openlocfilehash: 363b95294a9d06b425edcbb5c587f2f89878926b
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 17884ff51a91ee0131f79fea05416ade59e4153e
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42071761"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43634884"
 ---
 # <a name="microsoft-compliance-manager-classic"></a>Gestionnaire de conformité Microsoft (classique)
 
@@ -700,7 +700,7 @@ Le gestionnaire de conformité est conçu pour être mis à jour régulièrement
     
 - Une modification **mineure** désigne une modification peu importante apportée aux actions du client, tel que la correction d’une faute de frappe ou d’un problème de mise en forme, ou la mise à jour ou la correction des liens hypertexte. En règle générale, les modifications mineures n’exigent pas la ré-évaluation du contrôle. Toutefois, nous vous recommandons de vérifier l’action du client mise à jour.
   
-### <a name="office-365-customer-managed-controls---change-log-for-july-2018"></a>Contrôles gérés par le client Office 365 – Journal des modifications de juillet 2018
+### <a name="customer-managed-controls---change-log-for-july-2018"></a>Contrôles gérés par le client - Journal des modifications de juillet 2018
 
 |**ID de contrôle**|**Évaluation**|**Type de modification**|**Description de la modification**|**Actions recommandées aux clients**|
 |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
@@ -710,7 +710,7 @@ Le gestionnaire de conformité est conçu pour être mis à jour régulièrement
 45 C.F.R.  § 164.316(b)(2)(iii)| Office 365 : HIPAA|Majeure|Ajout du contrôle HITECH à l’évaluation HIPAA pour Office 365|Vérifiez le contrôle ajouté et les actions du client recommandées<br/>|
 |
 
-### <a name="office-365-customer-managed-controls---change-log-for-april-2018"></a>Contrôles gérés par le client Office 365 – Journal des modifications d’avril 2018
+### <a name="customer-managed-controls---change-log-for-april-2018"></a>Contrôles gérés par le client - Journal des modifications d’avril 2018
 
 |**RGPD**|**Loi américaine HIPAA**|**ISO 27001**|**ISO 27018**|**NIST 800-53**|**NIST 800-171**|**Type de modification**|**Description de la modification**|**Actions recommandées aux clients**|
 |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|

@@ -1,5 +1,5 @@
 ---
-title: Affichage des rapports de gouvernance des données
+title: Afficher les rapports de gouvernance des données
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -14,17 +14,17 @@ localization_priority: Priority
 search.appverid:
 - MOE150
 - MET150
-description: Dans les rapports de gouvernance des données du Centre de sécurité &amp; conformité Office 365, vous pouvez rapidement vérifier si vos étiquettes sont appliquées au contenu comme vous le souhaitiez.
-ms.openlocfilehash: 4236f76a651550504bfcb46057517077704d4b2f
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: Dans les rapports de gouvernance des données du Centre de sécurité &amp; conformité, vous pouvez rapidement vérifier si vos étiquettes sont appliquées au contenu comme vous le souhaitiez.
+ms.openlocfilehash: dbfa8b698a4f09a8307f3bbec38555193237a48c
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42068789"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43626300"
 ---
-# <a name="view-the-data-governance-reports"></a>Affichage des rapports de gouvernance des données
+# <a name="view-the-data-governance-reports"></a>Afficher les rapports de gouvernance des données
 
-Après avoir créé vos étiquettes, vous pouvez vérifier si elles sont appliquées au contenu comme vous le souhaitiez. Dans les rapports de gouvernance des données du Centre de sécurité &amp; conformité Office 365, vous pouvez consulter rapidement les informations suivantes :
+Après avoir créé vos étiquettes, vous pouvez vérifier si elles sont appliquées au contenu comme vous le souhaitiez. Dans les rapports de gouvernance des données du Centre de sécurité &amp; conformité, vous pouvez consulter rapidement les informations suivantes :
   
 - **5 premières étiquettes** Ce rapport indique les 5 premières étiquettes qui ont été appliquées au contenu. Cliquez sur ce rapport pour afficher la liste de toutes les étiquettes récemment appliquées au contenu. Vous pouvez connaître leur valeur, leur emplacement, la façon dont elles ont été appliquées, leurs actions de rétention, si ce sont des enregistrements et leur mode de destruction. 
     

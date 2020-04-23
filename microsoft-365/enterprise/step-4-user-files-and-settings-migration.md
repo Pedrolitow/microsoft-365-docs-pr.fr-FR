@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Découvrez comment migrer des paramètres et des fichiers utilisateur.
-ms.openlocfilehash: f17b11efe889359f97087ac5d96ffa968ca8cd88
-ms.sourcegitcommit: 9ca28ae8f7804eb488cf76ca4b09fe88787e0a49
+ms.openlocfilehash: 7904c9035ac87424f361e9ff4d6fb20596e335de
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43113540"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636783"
 ---
 # <a name="step-4-user-files-and-settings-migration"></a>Étape 4 : migration des paramètres et des fichiers utilisateur
 
@@ -38,7 +38,7 @@ Le déplacement de fichiers et paramètres d’utilisateurs vers des ordinateurs
 </table>
 
 >[!NOTE]
->Même si vous pouvez continuer à utiliser le processus de migration que vous avez utilisé dans le passé, en raison de votre migration vers Office 365 ProPlus, nous vous recommandons d’utiliser la fonction « Known Folder Move » de OneDrive (voir ci-après). Pour voir le processus complet de déploiement du bureau, visitez le [Centre de déploiement du bureau moderne](https://aka.ms/HowToShift).
+>Même si vous pouvez continuer à utiliser le processus de migration que vous avez utilisé dans le passé, en raison de votre migration vers Microsoft 365 Apps for enterprise, nous vous recommandons d’utiliser la fonction « Known Folder Move » de OneDrive (voir ci-après). Pour voir le processus complet de déploiement du bureau, visitez le [Centre de déploiement du bureau moderne](https://aka.ms/HowToShift).
 >
 
 L’une des tâches les plus délicates et souvent les plus manuelles d’un déploiement à grande échelle est le transfert des fichiers et des paramètres de vos utilisateurs. Dans cet article, nous allons aborder les options disponibles pour migrer les utilisateurs vers de nouveaux PC, des PC actualisés et remis en image.

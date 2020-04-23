@@ -14,20 +14,20 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 7cb065bb63bc30c4704abd3d4239fd80bca6d21e
-ms.sourcegitcommit: 7bb340f6b47378bcd1c6e770dc975931470bbc26
+ms.openlocfilehash: cdbd14ebd71964728282f5cff2e20f87f5a4a4a0
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43225907"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43633429"
 ---
 # <a name="service-organization-controls-soc"></a>Service Organization Controls (SOC)
 
 ## <a name="soc-1-2-and-3-reports-overview"></a>Présentation des rapports SOC 1, 2 et 3
 
-Les entreprises sous-traitent de plus en plus à des fournisseurs de services cloud (CSP) et à d’autres organisations des fonctions de base telles que le stockage de données et l’accès à des applications. En réponse, l’American Institute of Certified Public Accountants (AICPA) a développé la SOC (Service Organization Controls), une norme pour les contrôles qui assurent la protection de la confidentialité des informations stockées et traitées dans le cloud. Ce cadre s’aligne sur l’International Standard on Assurance Engagements (ISAE), la norme d’information pour les organisations de services internationales.
+Les entreprises sous-traitent de plus en plus à des fournisseurs de services cloud (CSP) et à d’autres organisations des fonctions de base telles que le stockage de données et l’accès à des applications. En réponse, l’American Institute of Certified Public Accountants (AICPA) a développé la SOC (Service Organization Controls), une norme pour les contrôles qui assurent la protection de la confidentialité des informations stockées et traitées dans le cloud. Cela s’aligne sur l’International Standard on Assurance Engagements (ISAE), la norme d’information pour les organisations de services internationales.
 
-Les audits de service basés sur la SOC relèvent de SOC 1 ou SOC 2, des catégories qui s’appliquent dans le cadre des services de cloud computing Microsoft.
+Les audits de service basés sur la SOC relèvent de deux catégories (SOC 1 et SOC 2) qui s’appliquent dans le cadre des services de cloud computing Microsoft.
 
 Un audit SOC 1, conçu pour des cabinets d’expertise comptable qui auditent des rapports financiers, évalue l’efficacité des contrôles internes d’un CSP qui affectent les rapports financiers d’un client utilisant les services cloud du fournisseur. La déclaration sur les normes pour les missions d’attestation (SSAE 18) et les normes internationales pour les missions d’assurance nº. 3402 (ISAE 3402) sont des normes sous lesquelles l’audit est effectué et qui constitue la base du rapport SOC 1.
 
@@ -35,7 +35,7 @@ Un audit SOC 2 évalue l’efficacité du système d’un CSP en fonction des p
 
 Au moment de la conclusion d’un audit SOC 1 ou SOC 2, l’auditeur de service rend un avis dans un rapport SOC 1 Type 2 ou SOC 2 Type 2 qui décrit le système du CSP et évalue son impartialité quant à la description de ses contrôles. Il évalue également si les contrôles du CSP sont conçus de manière adéquate, étaient en fonctionnement à une date spécifique et fonctionnaient efficacement sur une période donnée.
 
-Les auditeurs peuvent également créer un rapport SOC 3 (une version abrégée du rapport d’audit SOC 2 Type 2) pour les utilisateurs souhaitant avoir des garanties sur les contrôles du CSP mais n’ont pas besoin d’un rapport SOC 2 complet. Un rapport SOC 3 peut être octroyé uniquement si le CSP a une option d’audit sans réserve pour SOC 2.
+Les auditeurs peuvent également créer un rapport SOC 3 (une version abrégée du rapport d’audit SOC 2 Type 2) pour les utilisateurs souhaitant avoir des garanties sur les contrôles du CSP, mais n’ont pas besoin d’un rapport SOC 2 complet. Un rapport SOC 3 peut être octroyé uniquement si le CSP a une option d’audit sans réserve pour SOC 2.
 
 ## <a name="microsoft-and-soc-1-2-and-3-reports"></a>Microsoft et les rapports SOC 1, 2 et 3
 
@@ -99,7 +99,7 @@ Les services de cloud computing Microsoft sont audités au moins une fois par a
 - [Office 365 Core : rapport SSAE 18 SOC 2](https://aka.ms/o365SOC-2)
 - [Office 365 Core : rapport SSAE 18 SOC 3](https://aka.ms/o365SOC-3)
 - [Office 365 Microservices T1 : rapport SSAE 18 SOC2 type I](https://aka.ms/o365-MS-SOC-2-type1)
-- [Rapport d'audit Office 365 Customer Lockbox SOC 1 SSAE 16](https://aka.ms/Office365CustomerLockboxSOCAuditReport)
+- [Rapport d'audit Customer Lockbox SOC 1 SSAE 16](https://aka.ms/Office365CustomerLockboxSOCAuditReport)
 - [Rapport d’audit Yammer SOC 2 AT 101 Type I](https://aka.ms/YammerSOC2Type1AuditReport)
 - [Rapport Yammer SOC 2 type II](https://aka.ms/yammerSOC-2)
 - [Voir les lettres de crédit et les rapports d’audit supplémentaires](https://aka.ms/auditreports)
@@ -115,7 +115,7 @@ Les rapports permettent à vos auditeurs de comparer les services Entreprise Cl
 
 **À quelle fréquence des rapports Azure SOC sont-ils générés ?**
 
-Les rapports SOC relatifs à Azure, Cloud App Security, Flow, Graph, Intune, Power BI, PowerApps, Stream et aux centres de données Microsoft reposent sur une période de 12 mois glissants (période d’audit) avec de nouveaux rapports émis chaque semestre (les périodes se terminant le 31 mars et le 30 septembre). Les lettres de crédit sont émises chaque trimestre, généralement la première semaine de chaque mois suivant la fin du trimestre. Les clients peuvent [télécharger](https://aka.ms/stp) les derniers rapports sur le Service Trust Portal.
+Les rapports SOC relatifs à Azure, Cloud App Security, Flow, Graph, Intune, Power BI, PowerApps, Stream et aux centres de données Microsoft reposent sur une période de 12 mois glissants (période d’audit) avec de nouveaux rapports émis chaque semestre (les périodes se terminant le 31 mars et le 30 septembre). Les lettres de crédit sont émises en janvier pour couvrir la période du 01/10 au 31/12 et en juillet pour couvrir la période de 01/04 au 30/06. Les clients peuvent [télécharger](https://aka.ms/stp) les derniers rapports sur le Service Trust Portal.
 
 **Dois-je réaliser mon propre audit des centres de données Microsoft ?**
 

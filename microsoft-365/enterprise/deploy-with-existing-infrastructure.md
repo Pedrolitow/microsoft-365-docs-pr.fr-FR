@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Suivez les critères de sortie pour le déploiement de Microsoft 365 pour entreprise lorsque vous disposez d’une infrastructure existante.
-ms.openlocfilehash: ce9c9343ff6983968f3ed96b1e1558788d04ffc1
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: ace84e53da9b62b39a557b670c54c1be31d0b61a
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597061"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43638191"
 ---
 # <a name="deployment-of-microsoft-365-for-enterprise-with-existing-infrastructure"></a>Déploiement de Microsoft 365 pour entreprise avec une infrastructure existante
 
@@ -49,11 +49,11 @@ Vous trouverez ci-dessous les conditions requises et facultatives pour votre inf
 
 [!INCLUDE [Deployment exit criteria for identity](./includes/deployment-exit-criteria-windows10.md)]
 
-## <a name="exit-criteria-for-office-365-proplus-phase-4"></a>Critères de sortie pour Office 365 ProPlus (phase 4)
+## <a name="exit-criteria-for-microsoft-365-apps-for-enterprise-phase-4"></a>Critères de sortie pour Microsoft 365 Apps for enterprise (phase 4)
 
-Remplissez les conditions requises pour l’évaluation, la planification du déploiement et le déploiement de votre infrastructure Office 365 ProPlus.
+Remplissez les conditions requises pour l’évaluation, la planification du déploiement et le déploiement de votre infrastructure Microsoft 365 Apps for enterprise.
 
-[!INCLUDE [Deployment exit criteria for Office 365 ProPlus](./includes/deployment-exit-criteria-office365proplus.md)]
+[!INCLUDE [Deployment exit criteria for Microsoft 365 Apps for enterprise](./includes/deployment-exit-criteria-office365proplus.md)]
 
 ## <a name="exit-criteria-for-mobile-device-management-phase-5"></a>Critères de sortie pour la gestion des appareils mobiles (phase 5)
 

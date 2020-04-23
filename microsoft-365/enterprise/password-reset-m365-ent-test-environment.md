@@ -18,12 +18,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: ''
 description: 'Résumé : Configurez et testez la réinitialisation de mot de passe pour votre environnement de test Microsoft 365.'
-ms.openlocfilehash: c8d5ed0c7feac98afd3230a305f4ab1f850ca7f8
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 96a8b03ca978ac2b2174742c0208444d853ba7c9
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42633172"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632886"
 ---
 # <a name="password-reset-for-your-microsoft-365-test-environment"></a>Réinitialisation de mot de passe pour votre environnement de test Microsoft 365
 
@@ -33,9 +33,9 @@ La réinitialisation de mot de passe en libre-service (SSPR) d’Azure Active Di
 
 Cet article vous explique comment configurer et tester les réinitialisations de mot de passe dans votre environnement de test Microsoft 365 en trois étapes :
 
-1.  Créer l’environnement de test Microsoft 365 Entreprise.
+1.    Créer l’environnement de test Microsoft 365 Entreprise.
 2.  Activer la réécriture du mot de passe.
-3.  Configurer et tester la réinitialisation de mot de passe pour le compte Utilisateur 3.
+3.    Configurer et tester la réinitialisation de mot de passe pour le compte Utilisateur 3.
     
 ![Guides de laboratoire de test pour Microsoft Cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
@@ -52,7 +52,7 @@ Cette configuration se compose des éléments suivants :
   
 - Abonnements d’évaluation ou payants Microsoft 365 E5 ou Office 365 E5.
 - Un intranet d’organisation simplifié connecté à Internet, qui se compose des machines virtuelles DC1, APP1 et CLIENT1 sur un sous-réseau d’un réseau virtuel Azure. 
-- Azure AD Connect s’exécute sur APP1 pour synchroniser le domaine Windows Server AD TESTLAB (Active Directory Domain Services : AD DS) avec le client Azure AD de votre abonnement Microsoft 365 ou Office 365.
+- Azure AD Connect s’exécute sur APP1 pour synchroniser le domaine TESTLAB Active Directory Domain Services (AD DS) avec le client Azure AD de votre abonnement Microsoft 365.
 
 ## <a name="phase-2-enable-password-writeback"></a>Étape 2 : Activation de la réécriture du mot de passe
 
@@ -81,7 +81,7 @@ Testez ensuite la réinitialisation de mot de passe pour le compte Utilisateur 
 1. Ouvrez une nouvelle instance privée du navigateur et accédez à [https://aka.ms/ssprsetup](https://aka.ms/ssprsetup).
 2. Connectez-vous avec les informations d’identification du compte Utilisateur 3.
 3. Dans **Plus d’informations sont nécessaires**, cliquez sur **Suivant**. 
-5. Dans **Ne perdez pas l’accès à votre compte**, indiquez votre numéro de téléphone portable pour configurer le l’authentification par téléphone et votre adresse électronique personnelle ou professionnelle pour configurer l’authentification par adresse électronique.
+5. Dans **Ne perdez pas l’accès à votre compte**, indiquez votre numéro de téléphone portable pour configurer l’authentification par téléphone et votre adresse électronique personnelle ou professionnelle pour configurer l’authentification par adresse électronique.
 7. Une fois que tous deux ont été vérifiés, cliquez sur **Les informations semblent correctes** et fermez l’instance privée du navigateur.
 8. Ouvrez une nouvelle instance privée du navigateur et accédez à [https://aka.ms/sspr](https://aka.ms/sspr).
 9. Tapez le nom du compte Utilisateur 3, saisissez les caractères de la CAPTCHA, puis cliquez sur **Suivant**.

@@ -12,12 +12,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Intégrez les utilisateurs de votre organisation aux charges de travail productivité de Microsoft 365 Entreprise.
-ms.openlocfilehash: 692deeee652a4d27b8cc46a8e02890cccb8bb311
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 2bb86ec474f93ea9d5f41fb104c6d533b7ec9561
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42633142"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43638163"
 ---
 # <a name="microsoft-365-for-enterprise-workloads-and-scenarios"></a>Scénarios et charges de travail Microsoft 365 Entreprise
 
@@ -60,7 +60,7 @@ Pour obtenir d’autres scénarios, reportez-vous à la [bibliothèque de produc
 | Réseau | Votre réseau est mis à jour vers les services de cloud computing de Microsoft 365 afin d’optimiser les performances. |
 | Identité | L’identité est synchronisée et sécurisée avec une authentification forte pour les comptes d’utilisateurs et la protection des comptes d’administrateurs. |
 | Windows 10 Entreprise | Vos ordinateurs exécutant Windows 7 ou Windows 8.1 peuvent bénéficier d’une mise à niveau vers Windows 10 Entreprise, et les nouveaux appareils sont installés avec Windows 10 Entreprise. |
-| Office 365 ProPlus | Vos utilisateurs existants de Microsoft Office peuvent bénéficier d’une mise à niveau vers Office 365 ProPlus. |
+| Microsoft 365 Apps for enterprise | Vos utilisateurs existants de Microsoft Office peuvent bénéficier d’une mise à niveau vers Microsoft 365 Apps for enterprise. |
 | Gestion des appareils mobiles | Vos appareils peuvent être inscrit et gérés. |
 | Protection des informations | Les fonctionnalités de protection des informations de Microsoft 365 sont configurées et vos étiquettes de confidentialité ou les étiquettes d’Azure Information Protection sont prêtes à protéger les documents et les e-mails. |
 
@@ -69,7 +69,7 @@ N’oubliez pas qu’il s’agit d’un scénario idéal et que la planification
 Voici des charges de travail courantes à déployer immédiatement : 
 
 - Une fois la phase **Identité** de l’infrastructure de base déployée vers les utilisateurs, de nombreuses organisations effectuent les déploiements suivants :
-  - [Office 365 ProPlus](office365proplus-infrastructure.md) combiné avec [OneDrive](https://docs.microsoft.com/onedrive/plan-onedrive-enterprise). Office 365 ProPlus apporte la sécurité de l’authentification moderne et l’expérience utilisateur du dernier client Microsoft Office. La migration des fichiers personnels de l’utilisateur vers OneDrive réduit l’infrastructure et la nécessité de prendre en charge des dossiers et lecteurs locaux.
+  - [Microsoft 365 Apps for enterprise](office365proplus-infrastructure.md) combinée à [OneDrive](https://docs.microsoft.com/onedrive/plan-onedrive-enterprise). Microsoft 365 Apps for enterprise apporte la sécurité de l’authentification moderne et l’expérience utilisateur du dernier client Microsoft Office. La migration des fichiers personnels de l’utilisateur vers OneDrive réduit l’infrastructure et la nécessité de prendre en charge des dossiers et lecteurs locaux.
   - [Exchange Online](exchangeonline-workload.md) pour permettre aux utilisateurs de commencer à utiliser le courrier basé sur le cloud.
 - Si vous n’avez pas immédiatement besoin de stocker des biens numériques hautement réglementés dans le cloud, déployez [Microsoft Teams](teams-workload.md) et [SharePoint](sharepoint-online-onedrive-workload.md) pour vos utilisateurs avant la phase **Protection des informations**.
 

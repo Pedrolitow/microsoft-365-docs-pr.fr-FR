@@ -1,5 +1,5 @@
 ---
-title: Afficher l’activité des étiquettes pour les documents
+title: Afficher l’activité liée aux étiquettes des documents
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -16,17 +16,17 @@ localization_priority: Priority
 search.appverid:
 - MOE150
 - MET150
-description: Avec l’Explorateur d’activité des étiquettes dans le Centre de sécurité &amp; conformité Office 365, vous pouvez rapidement rechercher et afficher l’activité des étiquettes pour tout le contenu au sein de SharePoint et OneDrive Entreprise au cours des 30 derniers jours. Il s’agit des données en temps réel qui vous offrent une bonne visibilité de ce qui se passe dans votre client.
-ms.openlocfilehash: f1bb6f7a79759a9b2d36b5af334ced89e5b2b28a
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: Avec l’Explorateur d’activité des étiquettes dans le Centre de sécurité &amp; conformité, vous pouvez rapidement rechercher et afficher l’activité des étiquettes pour tout le contenu au sein de SharePoint et OneDrive Entreprise au cours des 30 derniers jours. Il s’agit des données en temps réel qui vous offrent une bonne visibilité de ce qui se passe dans votre client.
+ms.openlocfilehash: b0a799e192f6b6c3cb8087b38322094ca7423fea
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42068877"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43626330"
 ---
-# <a name="view-label-activity-for-documents"></a>Afficher l’activité des étiquettes pour les documents
+# <a name="view-label-activity-for-documents"></a>Afficher l’activité liée aux étiquettes des documents
 
-Après avoir créé vos étiquettes, vérifiez qu’elles sont appliquées au contenu comme vous le souhaitez. Avec l’Explorateur d’activité des étiquettes dans le Centre de sécurité &amp; conformité Office 365, vous pouvez rapidement rechercher et afficher l’activité des étiquettes pour tout le contenu au sein de SharePoint et OneDrive Entreprise au cours des 30 derniers jours. Il s’agit des données en temps réel qui vous offrent une bonne visibilité de ce qui se passe dans votre client.
+Après avoir créé vos étiquettes, vérifiez qu’elles sont appliquées au contenu comme vous le souhaitez. Avec l’Explorateur d’activité des étiquettes dans le Centre de sécurité &amp; et conformité, vous pouvez rapidement rechercher et afficher l’activité des étiquettes pour tout le contenu au sein de SharePoint et OneDrive Entreprise au cours des 30 derniers jours. Il s’agit des données en temps réel qui vous offrent une bonne visibilité de ce qui se passe dans votre client.
   
 Par exemple, avec l’Explorateur d’activité des étiquettes, vous pouvez effectuer les actions suivantes :
   

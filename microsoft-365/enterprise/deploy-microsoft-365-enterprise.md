@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Découvrez les ressources que vous pouvez utiliser pour déployer Microsoft 365 pour entreprise dans votre organisation.
-ms.openlocfilehash: 9ea96af7cef0e497e8f7560ef87239828789b117
-ms.sourcegitcommit: 6adfcf042e64b21f09f2b8e072e8eba6d3479e31
+ms.openlocfilehash: 3f6ddb1caf270f2ba261bd7b9c8f8cd938187705
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "42951933"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43638235"
 ---
 # <a name="deploy-microsoft-365-for-enterprise"></a>Déployer Microsoft 365 pour entreprise
 
@@ -124,7 +124,7 @@ Découvrez comment les départements d’ingénierie et d’exploitation de Core
 
 ### <a name="how-the-contoso-corporation-deployed-microsoft-365-for-enterprise"></a>Comment Contoso Corporation a déployé Microsoft 365 pour entreprise
 
-Contoso Corporation est un conglomérat de fabricants international fictif mais représentatif avec son siège à Paris en France. Découvrez comment [Contoso a déployé Microsoft 365 pour entreprise](contoso-case-study.md) et abordé les décisions de conception majeures, ainsi que les détails d’implémentation pour la mise en réseau, la gestion des identités, Windows 10 Entreprise, Office 365 ProPlus, la gestion des appareils mobiles, la protection des informations et la sécurité. 
+Contoso Corporation est un conglomérat de fabricants international fictif mais représentatif avec son siège à Paris en France. Découvrez comment [Contoso a déployé Microsoft 365 for enterprise](contoso-case-study.md) et abordé les décisions de conception majeures, ainsi que les détails d’implémentation pour la mise en réseau, la gestion des identités, Windows 10 Entreprise, Microsoft 365 Apps for enterprise, la gestion des appareils mobiles, la protection des informations et la sécurité. 
 
 ## <a name="stay-current-with-deployment-content"></a>Restez informé du contenu de déploiement
 

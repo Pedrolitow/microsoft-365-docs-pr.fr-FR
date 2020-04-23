@@ -16,18 +16,18 @@ ms.collection:
 - GDPR
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: e1d5afa4e6b6ea92af39b46214397868e518e323
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+ms.openlocfilehash: 7e4f7fb72d6fb2b84c85ecb55301fc2024630f58
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42557964"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43632485"
 ---
 # <a name="fasttrack-migration-toolset-for-submitting-delete-request"></a>Ensemble d’outils de migration FastTrack pour envoyer une demande de suppression
 
 ## <a name="toolset-purpose"></a>Objectif de l’ensemble d’outils
 
-Si vous êtes un client actuellement engagé dans les migrations FastTrack, la suppression du compte d’utilisateur Office 365 n’entraîne pas la suppression de la copie des données détenue par l’équipe Microsoft FastTrack, conservée dans le seul but d’exécuter la migration. Si, lors de la migration, vous souhaitez que l’équipe Microsoft FastTrack supprime également la copie des données, envoyez une demande via cet ensemble d’outils. Dans le cours normal des activités, Microsoft FastTrack supprimera toutes les copies de données une fois la migration terminée.
+Si vous êtes un client actuellement engagé dans les migrations FastTrack, la suppression du compte d’utilisateur n’entraîne pas la suppression de la copie des données détenue par l’équipe Microsoft FastTrack, conservée dans le seul but d’exécuter la migration. Si, lors de la migration, vous souhaitez que l’équipe Microsoft FastTrack supprime également la copie des données, envoyez une demande via cet ensemble d’outils. Dans le cours normal des activités, Microsoft FastTrack supprimera toutes les copies de données une fois la migration terminée.
 
 ### <a name="supported-platforms"></a>Plateformes prises en charge
 Microsoft prend en charge la version initiale de cet ensemble d’outils dans la console PowerShell et la plateforme Windows. Les plateformes connues suivantes sont prises en charge par cet ensemble d’outils :

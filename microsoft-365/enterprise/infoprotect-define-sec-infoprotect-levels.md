@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Comprenez et configurez les niveaux de protection des informations et de sécurité pour votre organisation.
-ms.openlocfilehash: d3ba5f490b7aa80c9149a0451059914c78b8f2f1
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 0fa3e9fa11070ea505752d781ecdd21b344c8222
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42067211"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43636963"
 ---
 # <a name="step-1-define-security-and-information-protection-levels"></a>Étape 1 : Définir les niveaux de protection des informations et de sécurité
 
@@ -33,7 +33,7 @@ Lors de cette étape, vous allez définir les niveaux de sécurité et de protec
 Bien que vous puissiez définir vos propres niveaux de sécurité et même si vous en avez déjà définis, Microsoft recommande d’élaborer un plan pour utiliser au moins trois niveaux de sécurité et de protection différents. Voici une liste pour commencer : 
 
 - **De base :** il s’agit d’un minimum standard pour la protection des données et pour les identités et les appareils qui accèdent à vos données. Vous pouvez suivre des recommandations de base en matière de sécurité et de protection pour fournir une protection par défaut forte qui répond aux besoins de nombreuses organisations ou de leurs services.
-- **Sensible :** il s’agit d’une protection supplémentaire pour un sous-ensemble de vos données qui doivent être protégées au-delà du niveau de base. Vous pouvez appliquer cette protection accrue à des ensembles de données spécifiques dans votre environnement Office 365. Microsoft recommande également d’appliquer le niveau de sécurité sensible aux identités et appareils qui accèdent aux données sensibles.
+- **Sensible :** il s’agit d’une protection supplémentaire pour un sous-ensemble de vos données qui doivent être protégées au-delà du niveau de base. Vous pouvez appliquer cette protection accrue à des ensembles de données spécifiques dans votre environnement Microsoft 365. Microsoft recommande également d’appliquer le niveau de sécurité sensible aux identités et appareils qui accèdent aux données sensibles.
 - **Hautement réglementée :** il s’agit du niveau de protection le plus élevé pour les organisations qui ont généralement une très petite quantité de données hautement classées, considérées comme étant la propriété intellectuelle ou des secrets commerciaux, ou des données devant respecter des réglementations de sécurité strictes. Microsoft 365 Entreprise dispose de fonctionnalités pour aider les organisations à respecter ces exigences de sécurité élevé, avec notamment une protection équivalente pour les appareils et identités.
 
 Pour en savoir plus, consultez la rubrique sur les [trois niveaux de protection](microsoft-365-policies-configurations.md#three-tiers-of-protection).
