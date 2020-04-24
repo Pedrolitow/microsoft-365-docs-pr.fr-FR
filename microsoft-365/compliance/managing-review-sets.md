@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 56ed13ad02c176465f983ffc99af93330f19d00c
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 806e27f85df0c51ffe019f5fd3c702c165afdd89
+ms.sourcegitcommit: 72e43b9bf85dbf8f5cf2040ea6a4750d6dc867c9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632939"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "43800055"
 ---
 # <a name="manage-review-sets-in-advanced-ediscovery"></a>Gérer les ensembles de révision dans Advanced eDiscovery
 
@@ -53,6 +53,6 @@ Il existe trois manières différentes d’ajouter des données à un jeu de ré
 
 1. [Ajouter des résultats de recherche à un jeu à réviser](add-data-to-review-set.md)
 
-2. [Charger des données non-Microsoft 365 dans un jeu de révision](load-non-office365-data.md)
+2. [Charger des données non-Microsoft 365 dans un jeu de révision](load-non-Office-365-data-into-a-review-set.md)
 
 3. [Ajouter des données à un jeu de révision à partir d’un autre ensemble de révision](add-data-to-review-set-from-another-review-set.md)

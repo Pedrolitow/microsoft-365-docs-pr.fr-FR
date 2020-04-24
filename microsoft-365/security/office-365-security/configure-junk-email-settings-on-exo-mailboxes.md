@@ -1,5 +1,5 @@
 ---
-title: Configurer les paramètres du courrier indésirable sur les boîtes aux lettres Exchange Online dans Office 365
+title: Configurer les paramètres de courrier indésirable dans les boîtes aux lettres Exchange Online
 ms.author: chrisda
 author: chrisda
 manager: dansimp
@@ -16,14 +16,14 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Les administrateurs peuvent apprendre à configurer les paramètres de courrier indésirable dans les boîtes aux lettres Exchange Online. Un grand nombre de ces paramètres sont disponibles pour les utilisateurs dans Outlook ou Outlook sur le Web.
-ms.openlocfilehash: 689cec3f6a8b12764d03c98d23a9eb7ab6ca8e5e
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: a18706c4bf63d9d96ba5e2f9bcbb803bddec36db
+ms.sourcegitcommit: 72e43b9bf85dbf8f5cf2040ea6a4750d6dc867c9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43638439"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "43800066"
 ---
-# <a name="configure-junk-email-settings-on-exchange-online-mailboxes-in-office-365"></a>Configurer les paramètres du courrier indésirable sur les boîtes aux lettres Exchange Online dans Office 365
+# <a name="configure-junk-email-settings-on-exchange-online-mailboxes"></a>Configurer les paramètres de courrier indésirable dans les boîtes aux lettres Exchange Online
 
 Les paramètres anti-courrier indésirable de l’organisation dans Exchange Online sont contrôlés par Exchange Online Protection (EOP). Pour plus d’informations, voir [Protection contre le courrier indésirable dans Office 365](anti-spam-protection.md).
 
@@ -48,6 +48,8 @@ Les administrateurs peuvent utiliser Exchange Online PowerShell pour désactiver
 - Des autorisations doivent vous être attribuées avant de pouvoir effectuer ces procédures. Plus précisément, vous avez besoin du rôle **destinataires de messagerie** (qui est affecté par défaut aux groupes de rôles gestion de l' **organisation**, **gestion des destinataires**et **destinataires de messages personnalisés** ) ou aux **options utilisateur** (qui sont affectées par défaut aux groupes de rôles gestion de l' **organisation** et **support technique** ). Pour ajouter des utilisateurs à des groupes de rôles dans Exchange Online, consultez la rubrique [modifier des groupes de rôles dans Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups). Notez qu’un utilisateur disposant des autorisations par défaut peut effectuer ces mêmes procédures sur sa propre boîte aux lettres, à condition qu’il ait [accès à Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/disable-access-to-exchange-online-powershell).
 
 - Dans les environnements de EOP autonomes où EOP protège les boîtes aux lettres Exchange locales, vous devez configurer des règles de flux de courrier (également appelées règles de transport) dans Exchange local pour traduire le verdict de filtrage de courrier indésirable EOP de sorte que la règle de courrier indésirable puisse déplacer le message vers le dossier Courrier indésirable. Pour les détails, voir [Configurer une protection Exchange Online (EOP) autonome pour envoyer des courriers indésirables dans le dossier Courrier indésirable dans les environnements hybrides](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md).
+
+- Les expéditeurs approuvés pour les boîtes aux lettres partagées ne sont pas synchronisés avec Azure AD et EOP par conception.
 
 ## <a name="use-exchange-online-powershell-to-enable-or-disable-the-junk-email-rule-in-a-mailbox"></a>Utiliser Exchange Online PowerShell pour activer ou désactiver la règle de courrier indésirable dans une boîte aux lettres
 
@@ -181,3 +183,38 @@ Lorsque le filtre de courrier indésirable Outlook est défini sur **Faible** ou
 Par conséquent, le filtre de courrier indésirable d’Outlook peut utiliser la collection de listes fiables de la boîte aux lettres et sa propre classification de courrier indésirable pour déplacer des messages vers le dossier courrier indésirable, même si la règle de courrier indésirable est désactivée dans la boîte aux lettres.
 
 Outlook et Outlook sur le Web prennent tous deux en charge la collection de listes fiables. La collection de listes fiables étant enregistrée dans la boîte aux lettres Exchange Online, les modifications apportées à la collection de listes fiables dans Outlook apparaissent dans Outlook sur le Web, et inversement.
+
+## <a name="limits-for-junk-email-settings"></a>Limites pour les paramètres du courrier indésirable
+
+La collection de listes fiables (la liste des expéditeurs approuvés, la liste des destinataires fiables et la liste des expéditeurs bloqués) stockée dans la boîte aux lettres de l’utilisateur est également synchronisée avec EOP. Avec la synchronisation d’annuaires, la collection de listes fiables est synchronisée avec Azure AD.
+
+- La collection de listes fiables dans la boîte aux lettres de l’utilisateur a une limite de 510 Ko, qui inclut toutes les listes, ainsi que d’autres paramètres de filtrage du courrier indésirable. Si un utilisateur dépasse cette limite, un message d’erreur Outlook semblable à celui-ci s’affiche :
+
+  > Impossible/impossible d’ajouter des listes de courrier indésirable au serveur. Vous avez dépassé la taille autorisée sur le serveur. Le filtre de courrier indésirable sur le serveur est désactivé jusqu’à ce que vos listes de courrier indésirable aient été réduites à la taille autorisée par le serveur.
+
+  Pour plus d’informations sur cette limite et sur la façon de la modifier, voir [KB2669081](https://support.microsoft.com/help/2669081/outlook-error-indicates-that-you-are-over-the-junk-e-mail-list-limit).
+
+- La collection de listes fiables synchronisées dans EOP a les limites de synchronisation suivantes :
+
+  - 1024 total des entrées de la liste des expéditeurs approuvés, de la liste des destinataires approuvés et des contacts externes si l’option **approuver le courrier de mes contacts** est activée.
+  - 500 Total des entrées de la liste des expéditeurs bloqués et de la liste des domaines bloqués.
+
+  Lorsque la limite d’entrée 1024 est atteinte, les événements suivants se produisent :
+  
+  - La liste cesse d’accepter les entrées dans PowerShell et Outlook sur le Web, mais aucune erreur n’est affichée.
+
+    Les utilisateurs d’Outlook peuvent continuer à ajouter plus de 1024 entrées jusqu’à ce qu’ils atteignent la limite de 510 Ko pour Outlook. Outlook peut utiliser ces entrées supplémentaires, tant qu’un filtre EOP ne bloque pas le message avant la remise à la boîte aux lettres (règles de flux de messagerie, protection contre l’usurpation, etc.).
+
+- Avec la synchronisation d’annuaires, les entrées sont synchronisées avec Azure AD dans l’ordre suivant :
+
+  1. Contacts de messagerie si l’option **approuver le courrier de mes contacts** est activée.
+  2. La liste des expéditeurs approuvés et la liste des destinataires fiables sont combinées, dédupliquées et triées par ordre alphabétique chaque fois qu’une modification est apportée aux 1024 premières entrées.
+
+  Les premières entrées 1024 sont utilisées et les informations pertinentes sont marquées dans les en-têtes de message.
+  
+  Les entrées supérieures à 1024 et qui n’ont pas été synchronisées avec Azure AD sont traitées par Outlook (pas Outlook sur le Web), et aucune information n’est indiquée dans les en-têtes des messages.
+
+Comme vous pouvez le constater, l’activation du paramètre **approuver le courrier électronique à partir de mes contacts** réduit le nombre d’expéditeurs approuvés et de destinataires approuvés pouvant être synchronisés. S’il s’agit d’un problème, nous vous recommandons d’utiliser la stratégie de groupe pour désactiver cette fonctionnalité :
+
+- Nom de fichier : outlk16. opax
+- Paramètre de stratégie : **approuver la messagerie des contacts**

@@ -25,12 +25,12 @@ search.appverid:
 - MOE150
 ms.assetid: 6383f56d-3d09-4dcb-9b41-b5f5a5efd611
 description: Ajoutez votre domaine à Office 365 dans le centre d’administration Microsoft 365 en ajoutant un enregistrement DNS au niveau de votre hôte DNS. L’Assistant installation vous guide tout au long du processus.
-ms.openlocfilehash: 8e08233ffe33ac2b5d41ad164af80468de52983d
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: a77526efc526073e17b535612213202ad22d5657
+ms.sourcegitcommit: 72e43b9bf85dbf8f5cf2040ea6a4750d6dc867c9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631814"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "43800022"
 ---
 # <a name="add-a-domain-to-office-365"></a>Ajouter un domaine à Office 365
 
@@ -101,6 +101,49 @@ ms.locfileid: "43631814"
     Si vous souhaitez attendre plus tard, faites défiler la liste vers le bas et sélectionnez **ignorer cette étape**.
     
 8. Sélectionnez **Terminer** -vous avez terminé ! 
+
+## <a name="add-or-edit-custom-dns-records"></a>Ajouter ou modifier des enregistrements DNS personnalisés
+
+Suivez les étapes ci-dessous pour ajouter un enregistrement personnalisé pour un site Web ou un service tiers.
+
+1. Connectez-vous au centre d’administration Microsoft <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>à l’adresse.
+
+2. Accédez à la page **paramètres**  > des**domaines** .
+
+3. Dans la page **Domaines**, sélectionnez un domaine. 
+    
+4. Sous **paramètres DNS**, sélectionnez **enregistrements personnalisés**; Ensuite, sélectionnez **nouvel enregistrement personnalisé**.
+
+5. Sélectionnez le type d’enregistrement DNS que vous souhaitez ajouter et tapez les informations pour le nouvel enregistrement.
+    
+6. Cliquez sur **Enregistrer**.
+
+## <a name="registrars-with-domain-connect"></a>Bureaux d’inscriptions avec connexion au domaine
+
+Les bureaux d’accès activés pour la [connexion au domaine](https://www.domainconnect.org/) vous permettent d’ajouter votre domaine à Microsoft 365 dans un processus en trois étapes qui prend quelques minutes. 
+  
+Dans l’Assistant, nous confirmons que vous êtes propriétaire du domaine, puis vous configurez automatiquement les enregistrements de votre domaine, de sorte que le courrier électronique est envoyé à Microsoft 365 et d’autres services Microsoft 365, comme Teams, travaillez avec votre domaine.
+  
+> [!NOTE]
+> Veillez à désactiver les bloqueurs de fenêtres contextuelles dans votre navigateur avant de démarrer l'Assistant de configuration.
+  
+### <a name="domain-connect-registrars-integrating-with-microsoft-365"></a>Bureaux de connexion au domaine intégration à Microsoft 365
+
+- [1&amp;1 Ionos](https://www.1and1.com/)
+- [123Reg](https://www.123-reg.co.uk/)
+- [GoDaddy](https://www.godaddy.com/)
+- [WordPress](https://wordpress.com/)
+- [Plesk](https://www.plesk.com/)
+- [MediaTemple](https://mediatemple.net/)
+- SecureServer ou WildWestDomains (revendeurs GoDaddy utilisant SecureServer hébergement DNS)
+    - [Domaines MadDog](https://www.maddogdomains.com/)
+    - [CheapNames](https://www.cheapnames.com)
+
+### <a name="what-happens-to-my-email-and-website"></a>Qu’arrive-t-il à mon courrier électronique et à mon site Web ?
+
+Une fois que vous avez terminé l’installation, l’enregistrement MX de votre domaine est mis à jour pour pointer vers Microsoft 365 et tous les messages électroniques pour votre domaine vont débuter vers Microsoft 365. Vérifiez que vous avez ajouté les utilisateurs et configuré les boîtes aux lettres dans Office 365 de toutes les personnes qui reçoivent du courrier électronique sur votre domaine.
+  
+Si vous avez un site web que vous utilisez dans le cadre de votre activité, il continuera à fonctionner là où il se trouve. Les étapes de configuration de la connexion au domaine n’affectent pas votre site Web.
 
 ## <a name="related-articles"></a>Articles connexes
 

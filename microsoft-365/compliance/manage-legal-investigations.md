@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 2e5fbe9f-ee4d-4178-8ff8-4356bc1b168e
 description: Utilisez des cas eDiscovery dans le centre de conformité Microsoft 365 pour gérer l’enquête légale de votre organisation. Si vous disposez d’un abonnement E5, vous pouvez analyser les données de cas en utilisant les fonctionnalités d’analyse de texte, d’apprentissage automatique et de codage prédictif de Advanced eDiscovery.
-ms.openlocfilehash: 41eaa4ca4428c21b905d63365a9b3af7da1df9aa
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 1e7279fed51e108886ff0b4a6d64788d6424720e
+ms.sourcegitcommit: 72e43b9bf85dbf8f5cf2040ea6a4750d6dc867c9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635904"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "43799905"
 ---
 # <a name="manage-legal-investigations-in-microsoft-365"></a>Gérer les enquêtes juridiques dans Microsoft 365
 
@@ -64,7 +64,7 @@ Voici une présentation rapide du flux de travail intégré dans Advanced eDisco
 
 - [Indexer les données du dépositaire](processing-data-for-case.md) et corriger les erreurs d’indexation afin de pouvoir recueillir efficacement les données de vos investigations
 
-- [Collecter des données](collecting-data-for-ediscovery.md) pour un cas et ajouter l' [Ajouter à un jeu de révision](collecting-data-for-ediscovery.md#adding-search-results-to-a-review-set) pour une nouvelle enquête
+- [Collecter des données](collecting-data-for-ediscovery.md) pour un cas et ajouter l' [Ajouter à un jeu de révision](collecting-data-for-ediscovery.md#add-search-results-to-a-review-set) pour une nouvelle enquête
 
 - [Afficher](view-documents-in-review-set.md) des documents, des données de [requête](review-set-search.md) et des éléments de [balise](tagging-documents.md) dans un jeu de révision
 
