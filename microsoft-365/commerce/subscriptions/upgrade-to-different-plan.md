@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 description: Découvrez comment effectuer une mise à niveau vers un nouvel abonnement.
 monikerRange: o365-worldwide
-ms.openlocfilehash: a5cede13a64ea1a6562a326c32dc902d14c3dfe5
-ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
+ms.openlocfilehash: faddecffd91eb58dab7a3b498de97633b5efd9d0
+ms.sourcegitcommit: 11198133b43eb6a6369e544c8a0dd408d582591c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43707522"
+ms.lasthandoff: 04/23/2020
+ms.locfileid: "43796511"
 ---
 # <a name="upgrade-to-a-different-plan"></a>Opter pour un abonnement différent 
 
@@ -63,7 +63,7 @@ Lorsque vous avez terminé l’extraction, la finalisation de la mise à niveau 
 
 ## <a name="the-upgrade-tab-is-empty"></a>L’onglet mise à niveau est vide
 
-Si l’onglet **mise à niveau** est vide, vous verrez une explication de la raison pour laquelle vous ne pouvez pas effectuer la mise à niveau pour le moment. Vous pouvez essayer de [modifier les offres manuellement](change-plans-manually.md) ou d' [appeler le support technique](../../admin/contact-support-for-business-products.md). Pour plus d’informations, consultez la rubrique [pourquoi ne puis-je pas mettre à niveau des plans ?](#why-cant-i-upgrade-plans).
+Si l’onglet **mise à niveau** est vide, vous verrez une explication de la raison pour laquelle vous ne pouvez pas effectuer la mise à niveau pour le moment. Vous pouvez essayer de [modifier les plans manuellement](change-plans-manually.md). Pour plus d’informations, consultez la rubrique [pourquoi ne puis-je pas mettre à niveau des plans ?](#why-cant-i-upgrade-plans).
 
 ## <a name="i-dont-see-the-plan-i-want"></a>L'offre à laquelle je veux souscrire n'apparaît pas
 
