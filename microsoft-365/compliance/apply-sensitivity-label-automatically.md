@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Lorsque vous créez une étiquette de critère de diffusion, vous pouvez affecter automatiquement une étiquette à un document ou message électronique ou vous pouvez inviter les utilisateurs pour sélectionner l’étiquette que vous recommandez.
-ms.openlocfilehash: 50933032e47ebb6165e1e9354c1c1fc885915852
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: ee9eef1c8f12d24cdf1c03ee5d7799c63c9acc23
+ms.sourcegitcommit: 72e43b9bf85dbf8f5cf2040ea6a4750d6dc867c9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637144"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "43799977"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Appliquer automatiquement une étiquette sensibilité au contenu
 
@@ -202,9 +202,10 @@ Spécifique au client d’étiquetage unifié Azure Information Protection :
     - Les types d’informations de confidentialité personnalisés sont évalués pour le contenu créé après l’enregistrement des types d’informations de confidentialité personnalisés. 
     - Pour tester de nouveaux types d’informations sensibles personnalisés, créez-les avant de créer votre stratégie d’étiquetage automatique, puis créez de nouveaux documents avec des exemples de données pour pouvoir les tester.
 
-- Une ou plusieurs étiquettes de confidentialité [créées et publiées](create-sensitivity-labels.md) (à au moins un utilisateur) que vous pouvez sélectionner pour votre stratégie d’étiquetage automatique. Pour ces étiquettes :
+- Une ou plusieurs étiquettes de confidentialité [créées et publiées](create-sensitivity-labels.md) (à au moins un utilisateur) que vous pouvez sélectionner pour vos stratégies d’étiquetage automatique. Pour ces étiquettes :
     - Cela n’a pas d’importance si le paramètre d’étiquetage automatique dans les applications Office est activé ou désactivé, car ce paramètre d’étiquette complète les stratégies d’étiquetage automatique, comme expliqué dans l’introduction. 
     - Si les étiquettes que vous souhaitez utiliser pour l’étiquetage automatique sont configurées pour utiliser les marquages visuels (en-têtes, pieds de page, filigranes), notez que ceux-ci ne sont pas appliqués aux documents.
+    - Si les étiquettes appliquent le chiffrement, celles-ci doivent être configurées pour le paramètre **Appliquer les autorisations maintenant**.
 
 ### <a name="learn-about-simulation-mode"></a>En savoir plus sur le mode simulation
 
@@ -239,6 +240,8 @@ Enfin, vous pouvez utiliser le mode simulation pour fournir une approximation du
 2. Sélectionnez l’onglet **Étiquetage automatique (préversion)**  :
     
     ![Onglet Étiquetage automatique (préversion)](../media/auto-labeling-tab.png)
+    
+    Ce nouvel onglet est en cours de déploiement vers les clients. Si vous ne le voyez pas encore, réessayez dans quelques jours.
 
 3. Sélectionnez **+ Créer une stratégie**.
 
@@ -260,7 +263,6 @@ Enfin, vous pouvez utiliser le mode simulation pour fournir une approximation du
     - Le destinataire est
     - L’extension du fichier de pièce jointe est
     - La pièce jointe est protégée par mot de passe
-    - La propriété du document est
     - Le contenu de la pièce jointe n’a pas pu être analysé
     - L’analyse du contenu de la pièce jointe n’a pas été terminée
 
@@ -274,17 +276,23 @@ Enfin, vous pouvez utiliser le mode simulation pour fournir une approximation du
 
 11. Pour la page **Choisir une étiquette à appliquer automatiquement** : sélectionnez **+ Choisir une étiquette**, puis, sélectionnez une étiquette dans le volet **Choisir une étiquette de confidentialité**, et enfin, sélectionnez **Suivant**.
 
-12. Pour la page **Choisir un mode pour la stratégie** : sélectionnez **Tester** si vous êtes prêt à exécuter la stratégie d’étiquetage automatique, en mode simulation. Dans le cas contraire, sélectionnez **Stratégie désactivée**. Sélectionnez **Suivant**. 
+12. Pour la page : **Choisir si vous voulez exécuter la simulation de stratégie maintenant ou plus tard** : sélectionnez **Exécuter la stratégie en mode simulation** si vous êtes prêt à exécuter la stratégie d’attribution automatique d’étiquette maintenant, en mode simulation. Dans le cas contraire, sélectionnez **Stratégie désactivée**. Sélectionnez **Suivant**. 
 
 13. Pour la page **Résumé** : consultez la configuration de la stratégie d’étiquetage automatique et apportez les modifications nécessaires, puis terminez l’Assistant.
     
     Contrairement à l’étiquetage automatique pour les applications Office, il n’y a pas d’option de publication distincte. Cependant, comme pour la publication d’étiquettes, prévoyez jusqu’à 24 heures pour que la stratégie d’étiquetage automatique soit reproduite dans toute votre organisation.
 
-Dans la page **Protection des informations**, dans l’onglet**Étiquetage automatique (préversion)**, vous pouvez voir votre stratégie d’étiquetage automatique dans la section **Test**. Sélectionnez votre stratégie pour afficher les détails de la configuration et de son état (par exemple, en cours de test ou test terminé). Sélectionnez l’onglet **éléments correspondants** pour afficher les messages électroniques ou les documents correspondants aux règles que vous avez spécifiées.
+Désormais, sur la page **Protection des informations**, onglet **Etiquetage automatique (aperçu)**, vous pouvez voir votre stratégie d’attribution automatique dans les sections **Simulation** ou **Désactivée**, selon que vous avez choisi de l’exécuter en mode de simulation ou non. Sélectionnez votre stratégie pour afficher les détails de la configuration et de son état (par exemple, **La simulation de stratégie est en cours d’exécution**). Pour les stratégies en mode simulation, sélectionnez l’onglet **éléments correspondants** pour afficher les messages électroniques ou les documents correspondants aux règles que vous avez spécifiées.
 
-Vous pouvez modifier votre stratégie directement à partir de cette interface en sélectionnant l’option **Modifier** en haut de la page.
+Vous pouvez modifier votre stratégie directement à partir de cette interface :
 
-Lorsque vous êtes prêt à exécuter la stratégie sans simulation, sélectionnez l’option **Activer**.
+- Pour une stratégie dans la section **Désactivé**, sélectionnez le bouton **Modifier la stratégie**.
+
+- Pour une stratégie dans la section **Simulation**, sélectionnez l’option **Modifier** en haut de la page, sous l’un des onglets suivants :
+    
+    ![Modifier les options d’une stratégie d’étiquetage automatique](../media/auto-labeling-edit.png)
+    
+    Lorsque vous êtes prêt à exécuter la stratégie sans simulation, sélectionnez l’option **Activer la stratégie**.
 
 Vous pouvez également afficher les résultats de votre stratégie d’étiquetage automatique à l’aide de l’[explorateur de contenu](data-classification-content-explorer.md) lorsque vous disposez des [autorisations](data-classification-content-explorer.md#permissions) appropriées :
 - La **visionneuse de liste de l’Explorateur de contenu** vous permet de voir l’étiquette d’un fichier, mais pas le contenu du fichier.

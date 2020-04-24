@@ -1,5 +1,5 @@
 ---
-title: Simulateur d’attaque dans la protection avancée contre les menaces
+title: Simulateur d’attaques dans ATP
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -15,88 +15,88 @@ search.appverid:
 ms.assetid: da5845db-c578-4a41-b2cb-5a09689a551b
 ms.collection:
 - M365-security-compliance
-description: En tant qu’administrateur général, vous pouvez utiliser un simulateur d’attaque pour exécuter des scénarios d’attaque réaliste dans votre organisation. Cela peut vous aider à identifier et à trouver des utilisateurs vulnérables avant qu’une attaque réelle ne touche votre entreprise.
+description: En tant qu’administrateur général, vous pouvez utiliser un simulateur d’attaques pour exécuter des scénarios d’attaques réalistes au sein de votre organisation. Cela peut vous aider à identifier les utilisateurs vulnérables avant qu’une véritable attaque ne touche votre entreprise.
 ms.openlocfilehash: cac09ed48a46531ea2246f9c3ef798649dc73196
 ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/21/2020
 ms.locfileid: "43638571"
 ---
-# <a name="attack-simulator-in-atp"></a>Simulateur d’attaque dans la protection avancée contre les menaces
+# <a name="attack-simulator-in-atp"></a>Simulateur d’attaques dans ATP
 
-**Résumé** Si vous êtes un administrateur général ou un administrateur de la sécurité et que votre organisation a Office 365 Advanced Threat Protection Plan 2, qui inclut des [fonctionnalités d’enquête et de réponse aux menaces](office-365-ti.md), vous pouvez utiliser un simulateur d’attaque pour exécuter des scénarios d’attaque réaliste dans votre organisation. Cela peut vous aider à identifier les utilisateurs vulnérables avant qu’une véritable attaque n’ait un impact sur votre chiffre d’affaires. Lisez cet article pour en savoir plus.
+**Synthèse** Si vous êtes administrateur général ou administrateur de sécurité et que votre organisation est équipée du plan 2 de Office 365 ATP, qui inclut [l’examen des menaces et des fonctionnalités de réaction](office-365-ti.md), vous pouvez utiliser le simulateur d’attaque pour exécuter des scénarios d’attaques réalistes au sein de votre organisation. Cela peut vous aider à identifier les utilisateurs vulnérables avant qu’une véritable attaque n’ait un impact sur votre chiffre d’affaires. Pour en savoir plus, lisez cet article.
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu'il faut savoir avant de commencer
 
-- Pour ouvrir le centre de sécurité & conformité, accédez <https://protection.office.com/>à. Le simulateur d’attaque est disponible dans le **simulateur d’attaques** **Threat Management** \> .
+- Pour ouvrir le Centre de conformité et sécurité, consultez <https://protection.office.com/>. Le Simulateur d’attaques est disponible dans **Gestion des menaces** \> **Simulateur d’attaques**.
 
-  ![Gestion des menaces-simulateur d’attaque](../../media/ThreatMgmt-AttackSimulator.png)
+  ![Gestion des menaces : simulateur d’attaques](../../media/ThreatMgmt-AttackSimulator.png)
 
-- Pour plus d’informations sur la disponibilité d’un simulateur d’attaque sur différents abonnements Microsoft 365, consultez la rubrique [Description du service protection avancée contre les menaces d’Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
+- Pour des informations supplémentaires sur la disponibilité du Simulateur d’attaques dans les différents abonnements Microsoft 365, consultez la [Description du service Office 365 ATP](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
 
-- Vous devez être membre des groupes de rôles **gestion** de l’organisation ou **administrateur de sécurité** . Pour plus d’informations sur les groupes de rôles dans le centre de sécurité & conformité, consultez [la rubrique autorisations dans le centre de sécurité & conformité](permissions-in-the-security-and-compliance-center.md).
+- Vous devez être membre des groupes de rôles **Management de l’organisation** ou **Administrateur de sécurité**. Pour des informations supplémentaires sur les groupes de rôles dans le Centre de sécurité et conformité, voir [Autorisations dans le Centre de sécurité et conformité](permissions-in-the-security-and-compliance-center.md).
 
-- Votre compte doit être configuré pour l’authentification multifacteur (MFA) pour créer et gérer des campagnes dans un simulateur d’attaque. Pour obtenir des instructions, consultez la rubrique [set up Multi-Factor Authentication](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication).
+- Votre compte doit être configuré pour l’authentification multifacteur (MFA) afin que vous puissiez créer et gérer des campagnes dans le Simulateur d’attaques. Pour consulter des instructions, voir [Configurer Multi-factor Authentification (MFA)](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication).
 
-Pour qu’une attaque réussisse, assurez-vous que le compte que vous utilisez pour exécuter des attaques simulées utilise l’authentification multifacteur. En outre, vous devez être administrateur général ou administrateur de sécurité. (Pour en savoir plus sur les rôles et les autorisations, consultez [la rubrique autorisations dans le centre de sécurité & conformité](permissions-in-the-security-and-compliance-center.md)).
+Pour qu’une attaque soit lancée avec succès, assurez-vous que le compte que vous utilisez pour exécuter des simulations d’attaques utilise l’authentification multifacteur. De plus, vous devez être administrateur général ou administrateur de sécurité. (Pour en savoir plus sur les rôles et les autorisations, voir [Autorisations dans le Centre de sécurité et conformité](permissions-in-the-security-and-compliance-center.md).)
 
-- Les campagnes de hameçonnage recueillent et traitent les événements pendant 30 jours. Les données de la campagne historique seront disponibles pendant 90 jours après le lancement de la campagne.
+- Les campagnes d’hameçonnage collectent et traitent des événements sur une durée de 30 jours. L’historique des données de la campagne est disponible pendant un maximum de 90 jours après le lancement de la campagne.
 
-- Il n’existe pas d’applet de commande PowerShell correspondante pour un simulateur d’attaque.
+- Il n’existe pas d’applet de commande PowerShell correspondante pour le Simulateur d’attaques.
 
-## <a name="spear-phishing-campaigns"></a>Campagnes de phishing pour le Spear
+## <a name="spear-phishing-campaigns"></a>Campagnes de Harponnage
 
-Le *hameçonnage* est un terme générique pour les attaques par courrier électronique qui tentent de voler des informations sensibles dans les messages semblant provenir d’expéditeurs légitimes ou approuvés. Le *Spear Phishing* est une attaque de hameçonnage ciblée qui utilise un contenu très ciblé et personnalisé qui est spécifiquement adapté aux destinataires ciblés (en général, après la reconnaissance des destinataires par l’agresseur).
+Le *Hameçonnage* est un terme générique qui décrit les attaques par courrier électronique tentant d’accéder à des informations sensibles par le biais de messages qui paraissent provenir d’expéditeurs légitimes ou approuvés. Le *Harponnage* est une attaque ciblée par hameçonnage qui utilise un contenu très concentré et personnalisé conçu spécifiquement pour des destinataires particuliers (généralement, après reconnaissance des destinataires par l’attaquant).
 
-- Vous êtes un administrateur général ou un administrateur de sécurité
+- Vous êtes administrateur global ou administrateur de sécurité.
 
-Dans un simulateur d’attaque, deux types différents de campagnes de Spear Phishing sont disponibles :
+Dans le Simulateur d’attaques, deux types différents de campagnes de harponnage sont disponibles :
 
-- L' [authentification multifacteur/l’accès conditionnel](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication) est activé, pour au moins le compte administrateur général et les administrateurs de sécurité qui utiliseront un simulateur d’attaque. (Idéalement, l’accès à plusieurs facteurs/accès conditionnel est activé pour tous les utilisateurs de votre organisation.)
+- [L’authentification multifacteur/accès conditionnel](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication) est activée, au minimum pour le compte d’administrateur général et pour les administrateurs de sécurité qui utiliseront le simulateur d’attaques. (Idéalement, l’authentification multifacteur/accès conditionnel est activée pour tous les utilisateurs de votre organisation.)
 
-  - Page par défaut qui explique qu’il s’agissait d’un simple test et fournit des conseils pour la reconnaissance des messages de hameçonnage.
+  - Une page par défaut expliquant qu’il s’agit d’un test et donnant des conseils pour reconnaître les messages d’hameçonnage.
 
-    ![Ce que les utilisateurs voient s’ils cliquent sur le lien d’hameçonnage et entrent leurs informations d’identification](../../media/attack-simulator-phishing-result.png)
+    ![Ce que l’utilisateur voit s’il clique sur le lien de hameçonnage, puis entre ses informations d’identification](../../media/attack-simulator-phishing-result.png)
 
   - Une page personnalisée (URL) que vous spécifiez.
 
-- **Spear Phishing (pièce jointe)**: l’attaque tente de convaincre les destinataires d’ouvrir une pièce jointe. docx ou. pdf dans le message. La pièce jointe contient le même contenu que le lien de hameçonnage par défaut, mais la première phrase\<commence par\>« nom complet, vous voyez ce message en tant que message électronique récent que vous avez ouvert... ».
+- **Harponnage (pièce jointe)**  : l’attaque tente de convaincre le destinataire d’ouvrir une pièce jointe .docx ou .pdf contenue dans le message. La pièce jointe contient le même contenu que celui du lien d’hameçonnage par défaut, mais la première phrase commence par « \<Nom d’affichage\>, vous voyez ce message sous la forme d’un récent message électronique que vous avez ouvert... ».
 
 > [!NOTE]
-> Actuellement, les campagnes de phishing de Spear dans un simulateur d’attaque n’expirent pas.
+> Les campagnes de harponnage dans le Simulateur d’attaques n’arrivent pas à expiration pour le moment.
 
-### <a name="create-a-spear-phishing-campaign"></a>Créer une campagne de phishing pour le Spear
+### <a name="create-a-spear-phishing-campaign"></a>Création d’une campagne de harponnage
 
-Une partie importante de toute campagne de hameçonnage est l’apparence du message électronique envoyé aux destinataires ciblés. Pour créer et configurer le message électronique, vous disposez des options suivantes :
+L’apparence du message électronique envoyé aux destinataires ciblés est un élément important dans toute campagne de harponnage. Pour créer et configurer le courrier électronique, vous disposez des options suivantes :
 
-- **Utilisez un modèle de courrier intégré**: les deux modèles prédéfinis sont disponibles : **prix des cadeaux** et **mise à jour**de la paie. Vous pouvez personnaliser davantage certaines, toutes ou aucune des propriétés de messagerie à partir du modèle lors de la création et du lancement de la campagne.
+- **Utiliser un modèle d’e-mail intégré** : deux modèles prédéfinis sont disponibles : **Concours avec de nombreux prix à remporter** et **Mise à jour des données de paie**. Vous pouvez personnaliser certaines, toutes ou aucune des propriétés de courrier à partir du modèle lorsque vous créez et lancez la campagne.
 
-- **Créer un modèle de courrier réutilisable**: après avoir créé et enregistré le modèle de courrier, vous pouvez le réutiliser dans les futures campagnes de hameçonnage. Vous pouvez personnaliser davantage certaines, toutes ou aucune des propriétés de messagerie à partir du modèle lors de la création et du lancement de la campagne.
+- **Créer un modèle d’e-mail réutilisable** : après la création et l’enregistrement du modèle de courrier, vous pouvez le réutiliser pour de prochaines campagnes de harponnage. Vous pouvez personnaliser certaines, toutes ou aucune des propriétés de courrier à partir du modèle lorsque vous créez et lancez la campagne.
 
-- **Créer le message électronique dans l’Assistant**: vous pouvez créer le message électronique directement dans l’Assistant lors de la création et du lancement de la campagne de hameçonnage du Spear.
+- **Créer le message électronique dans l’Assistant** : vous pouvez directement créer le message électronique dans l’Assistant lors de la création et du lancement de la campagne de harponnage.
 
-#### <a name="step-1-optional-create-a-custom-email-template"></a>Étape 1 (facultatif) : créer un modèle de courrier électronique personnalisé
+#### <a name="step-1-optional-create-a-custom-email-template"></a>Étape 1 (facultatif) : création d’un modèle d’e-mail personnalisé
 
-Si vous envisagez d’utiliser l’un des modèles intégrés ou de créer le message électronique directement dans l’Assistant, vous pouvez ignorer cette étape.
+Si vous allez utiliser l’un des modèles intégrés ou créer le message directement dans l’Assistant, vous pouvez ignorer cette étape.
 
-1. Dans le centre de sécurité & conformité, accédez à **Threat Management** \> **Attack Simulator**.
+1. Dans le Centre de sécurité et conformité, accédez à **Gestion des menaces** \> **Simulateur d’attaques**.
 
-2. Sur la page **simuler les attaques** , dans les sections **Spear Phishing (Credentials Harvest)** ou **Spear Phishing (pièce jointe)** , cliquez sur informations sur les **attaques**.
+2. Sur la page **Simulation d’attaques**, dans les sections **Harponnage (recueil des informations d’identification)** ou **Harponnage (pièce jointe)**, cliquez sur **Détails de l’attaque**.
 
-   La création du modèle n’a pas d’importance. Les options disponibles dans le modèle sont les mêmes pour les deux types d’attaques par hameçonnage.
+   Peu importe l’emplacement où vous créez le modèle. Les options disponibles dans le modèle sont identiques pour les deux types d’attaques par hameçonnage.
 
-3. Dans la page **Détails** de l’attaque qui s’ouvre, dans la section **modèles d’hameçonnage** , dans la zone créer des **modèles** , cliquez sur **nouveau modèle**.
+3. Dans la page des **Détails de l’attaque** qui s’ouvre, dans la section **Modèles d’hameçonnage** de la zone **Créer des modèles**, cliquez sur **Nouveau modèle**.
 
-4. L’Assistant **configurer le modèle d’hameçonnage** démarre dans une nouvelle fenêtre mobile. À l’étape de **démarrage** , entrez un nom complet unique pour le modèle, puis cliquez sur **suivant**.
+4. L’Assistant **Configurer le modèle d’hameçonnage** démarre dans un nouveau menu volant. À l’étape **Démarrer**, entrez un nom d’affichage unique pour le modèle, puis cliquez sur **Suivant**.
 
-5. Dans l’étape **configurer les détails du courrier** , configurez les paramètres suivants :
+5. À l’étape **Configurer les détails du courrier**, configurez les paramètres suivants :
 
-   - **From (Name)**: nom complet utilisé pour l’expéditeur du message.
+   - **De (nom)**  : le nom d’affichage utilisé en tant qu’expéditeur du message.
 
-   - **De (courrier électronique)**: adresse de messagerie de l’expéditeur.
+   - **De (adresse de courrier)**  : l’adresse de courrier de l’expéditeur.
 
-   - **URL du serveur de connexion d’hameçonnage**: cliquez sur le menu déroulant et sélectionnez l’une des URL disponibles dans la liste. Il s’agit de l’URL sur laquelle les utilisateurs seront tentés de cliquer. Les possibilités suivantes s'offrent à vous :
+   - **URL du serveur de connexion d’hameçonnage** : cliquez sur la liste déroulante, puis sélectionnez l’une des URL disponibles dans la liste. Elle représente l’URL sur laquelle les utilisateurs sont tentés de cliquer. Les choix possibles sont les suivants :
 
      - <http://portal.docdeliveryapp.com>
      - <http://portal.docdeliveryapp.net>
@@ -112,65 +112,65 @@ Si vous envisagez d’utiliser l’un des modèles intégrés ou de créer le me
      - <http://portal.salarytoolint.net>
 
      > [!NOTE]
-     > <ul><li>Toutes les URL sont intentionnellement http, et non HTTPS.</li><li>Un service de réputation d’URL peut identifier une ou plusieurs de ces URL comme non sécurisées. Vérifiez la disponibilité de l’URL dans vos navigateurs Web pris en charge avant d’utiliser l’URL d’une campagne de hameçonnage.</li></ul>
+     > <ul><li>Toutes les URL sont intentionnellement HTTP et non HTTPS.</li><li>Un service de réputation d’URL peut identifier une ou plusieurs de ces URL comme étant non sécurisées. Vérifiez la disponibilité de l’URL dans vos navigateurs web pris en charge avant d’utiliser l’URL dans une campagne d’hameçonnage.</li></ul>
 
-   - **URL de la page d’accueil personnalisée**: entrez une page d’accueil facultative où les utilisateurs sont pris s’ils cliquent sur le lien d’hameçonnage et entrez leurs informations d’identification. Ce lien remplace la page d’accueil par défaut. Par exemple, si vous avez une formation interne à la sensibilisation, vous pouvez spécifier cette URL ici.
+   - **URL de la page de destination personnalisée** : entrez une page de destination facultative vers laquelle les utilisateurs sont dirigés s’ils cliquent sur le lien d’hameçonnage et entrent leurs informations d’identification. Ce lien remplace la page de destination par défaut. Par exemple, si vous avez une formation interne de sensibilisation, vous pouvez spécifier cette URL ici.
 
-   - **Catégorie**: actuellement, ce paramètre n’est pas utilisé (tout ce que vous entrez n’est pas pris en compte).
+   - **Catégorie** : ce paramètre n’est à ce jour pas utilisé (ce que vous entrez n’est pas pris en compte).
 
-   - **Subject**: champ **Subject** du message électronique.
-
-   Lorsque vous avez terminé, cliquez sur **Suivant**.
-
-6. Dans l’étape **composer un courrier électronique** , créez le corps du message électronique. Vous pouvez utiliser l’onglet **messagerie** (éditeur HTML enrichi) ou l’onglet **source** (code HTML brut).
-
-   La mise en forme HTML peut être simple ou complexe, comme vous en avez besoin. Vous pouvez insérer des images et du texte pour améliorer la convivialité du message dans le client de messagerie du destinataire.
-
-   - `${username}`insère le nom du destinataire.
-
-   - `${loginserverurl}`insère la valeur de l' **URL du serveur de connexion de hameçonnage** à partir de l’étape précédente.
+   - **Objet** : le champ **Objet** du message électronique.
 
    Lorsque vous avez terminé, cliquez sur **Suivant**.
 
-7. Dans l’étape **confirmer** , cliquez sur **Terminer**.
+6. À l’étape **Composer un message**, créez le corps du courrier électronique. Vous pouvez utiliser l’onglet **Courrier** (éditeur HTML enrichi) ou l’onglet **Source** (code HTML brut).
 
-#### <a name="step-2-create-and-launch-the-spear-phishing-campaign"></a>Étape 2 : créer et lancer la campagne de hameçonnage de la sonde
+   La mise en forme HTML peut être simple ou complexe, en fonction de vos besoins. Vous pouvez insérer des images et du texte pour améliorer la crédibilité du message dans le client de courrier du destinataire.
 
-1. Dans le centre de sécurité & conformité, accédez à **Threat Management** \> **Attack Simulator**.
+   - `${username}` insère le nom du destinataire.
 
-2. Sur la page **simuler des attaques** , effectuez l’une des sélections suivantes en fonction du type de campagne que vous souhaitez créer :
+   - `${loginserverurl}` insère l’**URL du serveur de connexion d’hameçonnage** de l’étape précédente.
 
-   - Dans la section **Spear Phishing (informations d’identification)** , cliquez sur **lancer une attaque** ou **sur attaquer les** **Détails** \> de l’attaque.
+   Lorsque vous avez terminé, cliquez sur **Suivant**.
 
-   - Dans la **section Spear Phishing (pièce jointe)** , cliquez sur **lancer une attaque** ou \> sur attaques pour **lancer** **une attaque.**
+7. À l’étape **Confirmer**, cliquez sur **Terminer**.
 
-3. L’Assistant **configurer une attaque de hameçonnage** démarre dans une nouvelle fenêtre mobile. Dans l’étape de **démarrage** , effectuez l’une des opérations suivantes :
+#### <a name="step-2-create-and-launch-the-spear-phishing-campaign"></a>Étape 2 : création et lancement d’une campagne de harponnage
 
-   - Dans la zone **nom** , entrez un nom complet unique pour la campagne. Ne cliquez pas sur **utiliser le modèle**, car vous allez créer le message électronique plus tard dans l’Assistant.
+1. Dans le Centre de sécurité et conformité, accédez à **Gestion des menaces** \> **Simulateur d’attaques**.
 
-   - Cliquez sur **utiliser le modèle** et sélectionnez un modèle de courrier intégré ou personnalisé. Une fois que vous avez sélectionné le modèle, la zone **nom** est automatiquement remplie en fonction du modèle, mais vous pouvez modifier le nom.
+2. Dans la page **Simulation d’attaques**, effectuez l’une des sélections suivantes en fonction du type de campagne que vous voulez créer :
+
+   - Dans la section **Harponnage (recueil des informations d’identification)**, cliquez sur **Lancer l’attaque** ou sur **Détails de l’attaque** \> **Lancer l’attaque**.
+
+   - Dans la section **Harponnage (pièce jointe)**, cliquez sur **Lancer l’attaque** ou sur **Détails de l’attaque** \> **Lancer l’attaque**.
+
+3. L’Assistant **Configurer l’attaque par hameçonnage** démarre dans un nouveau menu volant. À l’étape **Démarrer**, effectuez l’une des étapes suivantes :
+
+   - Dans la zone **Nom**, entrez un nom d’affichage unique pour la campagne. Ne pas cliquer sur **Utiliser le modèle**, car vous allez plus tard créer le message électronique dans l’Assistant.
+
+   - Cliquez sur **Utiliser le modèle**, puis sélectionnez un modèle de courrier prédéfini ou personnalisé. Après avoir sélectionné le modèle, la boîte de dialogue **Nom** est automatiquement remplie en fonction du modèle, mais il vous est possible de modifier le nom.
 
    ![Page de démarrage du hameçonnage](../../media/5e93b3cc-5981-462f-8b45-bdf85d97f1b8.jpg)
 
    Lorsque vous avez terminé, cliquez sur **Suivant**.
 
-4. Dans l’étape **destinataires cibles** , effectuez l’une des opérations suivantes :
+4. À l’étape **Destinataires cible**, effectuez l’une des étapes suivantes :
 
-   - Cliquez sur **carnet d’adresses** pour sélectionner les destinataires (utilisateurs ou groupes) de la campagne. Chaque destinataire ciblé doit disposer d’une boîte aux lettres Exchange Online. Si vous cliquez sur **Filtrer** et **appliquer** sans entrer de critère de recherche, tous les destinataires sont renvoyés et ajoutés à la campagne.
+   - Cliquez sur le **Carnet d'adresses** pour sélectionner les destinataires (utilisateurs ou groupes) pour la campagne. Chaque destinataire ciblé doit avoir une boîte aux lettres Exchange Online. Si vous cliquez sur **Filtrer** et **Appliquer** sans entrer de critères de recherche, tous les destinataires sont renvoyés et ajoutés à la campagne.
 
-   - Cliquez sur **Importer** , puis sur **importation de fichiers** pour importer un fichier de valeurs séparées par des virgules (CSV) ou séparé par une ligne d’adresses de messagerie. Chaque ligne doit contenir l’adresse de messagerie du destinataire.
+   - Cliquez sur **Importer**, puis sur **Importation d’un fichier** pour importer un fichier de valeurs séparées par des virgules (CSV) ou d’adresses e-mail séparées par une ligne. Chaque ligne doit contenir l’adresse e-mail du destinataire.
 
    Lorsque vous avez terminé, cliquez sur **Suivant**.
 
-5. Dans l’étape **configurer les détails du courrier** , configurez les paramètres suivants :
+5. À l’étape **Configurer les détails du courrier**, configurez les paramètres suivants :
 
-   Si vous avez sélectionné un modèle dans l’étape de **démarrage** , la plupart de ces valeurs sont déjà configurées, mais vous pouvez les modifier.
+   Si vous avez sélectionné un modèle au cours de l’étape **Démarrer**, la plupart de ces valeurs sont déjà configurées, mais vous pouvez les modifier.
 
-   - **From (Name)**: nom complet utilisé pour l’expéditeur du message.
+   - **De (nom)**  : le nom d’affichage utilisé en tant qu’expéditeur du message.
 
-   - **De (courrier électronique)**: adresse de messagerie de l’expéditeur. Vous pouvez entrer une adresse de messagerie réelle ou fictive à partir du domaine de messagerie de votre organisation, ou vous pouvez entrer une adresse de messagerie externe réelle ou fictive. Une adresse de messagerie d’expéditeur valide de votre organisation est en fait résolue dans le client de messagerie du destinataire.
+   - **De (adresse de courrier)**  : l’adresse de courrier de l’expéditeur. Vous pouvez entrer une adresse de messagerie véritable ou fictive à partir du domaine de courrier de votre organisation ou vous pouvez saisir une adresse fausse ou réelle de courrier externe. Une adresse de messagerie d’expéditeur valide de votre organisation prend en réalité la forme du client de courrier du destinataire.
 
-   - **URL du serveur de connexion d’hameçonnage**: cliquez sur le menu déroulant et sélectionnez l’une des URL disponibles dans la liste. Il s’agit de l’URL sur laquelle les utilisateurs seront tentés de cliquer. Les possibilités suivantes s'offrent à vous :
+   - **URL du serveur de connexion d’hameçonnage** : cliquez sur la liste déroulante, puis sélectionnez l’une des URL disponibles dans la liste. Elle représente l’URL sur laquelle les utilisateurs sont tentés de cliquer. Les choix possibles sont les suivants :
 
      - <http://portal.docdeliveryapp.com>
      - <http://portal.docdeliveryapp.net>
@@ -186,179 +186,179 @@ Si vous envisagez d’utiliser l’un des modèles intégrés ou de créer le me
      - <http://portal.salarytoolint.net>
 
      > [!NOTE]
-     > <ul><li>Toutes les URL sont intentionnellement http, et non HTTPS.</li><li>Un service de réputation d’URL peut identifier une ou plusieurs de ces URL comme non sécurisées. Vérifiez la disponibilité de l’URL dans vos navigateurs Web pris en charge avant d’utiliser l’URL d’une campagne de hameçonnage.</li><li>Vous devez sélectionner une URL. Pour les campagnes de <b>hameçonnage (de pièces jointes)</b> , vous pouvez supprimer le lien du corps du message à l’étape suivante (dans le cas contraire, le message contiendra un lien <b>et</b> une pièce jointe).</li></ul>
+     > <ul><li>Toutes les URL sont intentionnellement HTTP et non HTTPS.</li><li>Un service de réputation d’URL peut identifier une ou plusieurs de ces URL comme étant non sécurisées. Vérifiez la disponibilité de l’URL dans vos navigateurs web pris en charge avant d’utiliser l’URL dans une campagne d’hameçonnage.</li><li>Vous devez sélectionner une URL. Pour les campagnes d’<b>Harponnage (pièce jointe)</b>, vous pouvez supprimer le lien du corps du message à l’étape suivante (sinon, le message contient un lien <b>et</b> une pièce jointe).</li></ul>
 
-   - **Type de pièce jointe**: ce paramètre est disponible uniquement dans les campagnes de **hameçonnage (de pièces jointes)** . Cliquez sur le menu déroulant et sélectionnez **. DOCX** ou **. PDF** à partir de la liste.
+   - **Type de pièce jointe** : ce paramètre n’est disponible que pour les campagnes de **Harponnage (pièce jointe)**. Cliquez sur la liste déroulante, puis sélectionnez **.DOCX** ou **.PDF** dans la liste.
 
-   - **Nom de la pièce jointe**: ce paramètre est disponible uniquement dans les campagnes de **hameçonnage (de pièces jointes)** . Entrez un nom de fichier pour la pièce jointe. docx ou. pdf.
+   - **Nom de pièce jointe** : ce paramètre n’est disponible que pour les campagnes d’**Harponnage (pièce jointe)**. Entrez un nom de fichier pour la pièce jointe .docx ou .pdf.
 
-   - **URL de la page d’accueil personnalisée**: entrez une page d’accueil facultative où les utilisateurs sont pris s’ils cliquent sur le lien d’hameçonnage et entrez leurs informations d’identification. Ce lien remplace la page d’accueil par défaut. Par exemple, si vous avez une formation interne à la sensibilisation, vous pouvez spécifier cette URL ici.
+   - **URL de la page de destination personnalisée** : entrez une page de destination facultative vers laquelle les utilisateurs sont dirigés s’ils cliquent sur le lien d’hameçonnage et entrent leurs informations d’identification. Ce lien remplace la page de destination par défaut. Par exemple, si vous avez une formation interne de sensibilisation, vous pouvez spécifier cette URL ici.
 
-   - **Subject**: champ **Subject** du message électronique.
-
-   Lorsque vous avez terminé, cliquez sur **Suivant**.
-
-6. Dans l’étape **composer un courrier électronique** , créez le corps du message électronique. Si vous avez sélectionné un modèle dans l’étape de **démarrage** , le corps du message est déjà configuré, mais vous pouvez le personnaliser. Vous pouvez utiliser l’onglet **messagerie** (éditeur HTML enrichi) ou l’onglet **source** (code HTML brut).
-
-   La mise en forme HTML peut être simple ou complexe, comme vous en avez besoin. Vous pouvez insérer des images et du texte pour améliorer la convivialité du message dans le client de messagerie du destinataire.
-
-   - `${username}`insère le nom du destinataire.
-
-   - `${loginserverurl}`insère la valeur de l' **URL du serveur de connexion de hameçonnage** .
-
-   Pour les campagnes de **hameçonnage (de pièces jointes)** , vous devez supprimer le lien du corps du message (dans le cas contraire, le message contient à la fois un lien **et** une pièce jointe, et les clics de liens ne sont pas suivis dans une campagne de pièces jointes).
-
-   ![Composer le corps du message électronique](../../media/9bd65af4-1f9d-45c1-8c06-796d7ccfd425.jpg)
+   - **Objet** : le champ **Objet** du message électronique.
 
    Lorsque vous avez terminé, cliquez sur **Suivant**.
 
-7. Dans l’étape **confirmer** , cliquez sur **Terminer** pour lancer la campagne. Le message de hameçonnage est remis aux destinataires ciblés.
+6. À l’étape **Composer un message**, créez le corps du courrier électronique. Si vous avez sélectionné un modèle au cours de l’étape **Démarrer**, le corps du message est déjà configuré, mais vous pouvez le modifier. Vous pouvez utiliser l’onglet **Courrier** (éditeur HTML enrichi) ou l’onglet **Source** (code HTML brut).
 
-## <a name="password-attack-campaigns"></a>Campagnes d’attaque par mot de passe
+   La mise en forme HTML peut être simple ou complexe, en fonction de vos besoins. Vous pouvez insérer des images et du texte pour améliorer la crédibilité du message dans le client de courrier du destinataire.
 
-Une *attaque par mot de passe* tente de deviner les mots de passe des comptes d’utilisateur d’une organisation, généralement après que l’agresseur a identifié un ou plusieurs comptes d’utilisateurs valides.
+   - `${username}` insère le nom du destinataire.
 
-Dans un simulateur d’attaque, deux types différents de campagnes d’attaque de mot de passe sont disponibles pour vous permettre de tester la complexité des mots de passe des utilisateurs :
+   - `${loginserverurl}` insère la valeur de l’**URL du serveur de connexion d’hameçonnage**.
 
-- **Mot de passe en force (attaque de dictionnaire)**: une attaque en *force ou une* attaque de *dictionnaire* utilise un fichier dictionnaire volumineux de mots de passe sur un compte d’utilisateur en espérant que l’un d’entre eux fonctionnera (de nombreux mots de passe par rapport à un compte). Le verrouillage de mot de passe incorrect permet de dissuader les attaques de mot de passe en force.
+   Pour les campagnes d’**Harponnage (pièce jointe)**, il est recommandé de supprimer le lien du corps du message (sinon, le message contient un lien **et** une pièce jointe et les clics sur un lien ne sont pas suivis dans une campagne de pièce jointe).
 
-  Pour l’attaque de dictionnaire, vous pouvez spécifier un ou plusieurs mots de passe à essayer (entrés manuellement ou dans un fichier téléchargé) et vous pouvez spécifier un ou plusieurs utilisateurs.
+   ![Composer un message](../../media/9bd65af4-1f9d-45c1-8c06-796d7ccfd425.jpg)
 
-- **Attaque par pulvérisation de mot de passe**: une attaque par *pulvérisation de mot de passe* utilise le même mot de passe soigneusement considéré avec une liste de comptes d’utilisateurs (un mot de passe par rapport à de nombreux comptes). Les attaques par pulvérisation de mot de passe sont plus difficiles à détecter que les attaques de mot de passe en force (la probabilité de réussite augmente lorsqu’un agresseur tente un mot de passe entre des dizaines ou des centaines de comptes sans risque de faire passer le verrouillage incorrect du mot de passe de l’utilisateur).
+   Lorsque vous avez terminé, cliquez sur **Suivant**.
 
-  Pour l’attaque par pulvérisation par mot de passe, vous ne pouvez spécifier qu’un seul mot de passe à essayer et vous pouvez spécifier un ou plusieurs utilisateurs.
+7. À l’étape **Confirmer**, cliquez sur **Terminer** pour lancer la campagne. Le message d’hameçonnage est remis aux destinataires ciblés.
+
+## <a name="password-attack-campaigns"></a>Campagnes d’attaques de mot de passe
+
+Une *attaque de mot de passe* tente de deviner les mots de passe des comptes d’utilisateurs au sein d’une organisation, généralement une fois que l’attaquant a identifié un ou plusieurs comptes d’utilisateurs valides.
+
+Dans le Simulateur d’attaques, deux types différents de campagnes d’attaque de mot de passe sont à votre disposition pour tester la complexité des mots de passe des utilisateurs :
+
+- **Mot de passe par force brute (attaque par dictionnaire)**  : une attaque par *force brute* ou *dictionnaire* utilise un grand fichier dictionnaire pour les mots de passe d’un compte utilisateur, avec l’espoir que l’un d’entre eux va réussir (de nombreux mots de passe pour un seul compte). Un mot de passe incorrect permet de dissuader les attaques de mot de passe par force brute.
+
+  Pour l’attaque par dictionnaire, vous pouvez spécifier un ou plusieurs mots de passe à tenter (entrés manuellement ou dans un fichier téléchargé), et vous pouvez spécifier un ou plusieurs utilisateurs.
+
+- L’**Attaque par pulvérisation de mots de passe** : une *pulvérisation de mots de passe* utilise le même mot de passe soigneusement étudié contre une liste de comptes d’utilisateurs (un mot de passe pour plusieurs comptes). Les attaques par pulvérisation de mots de passe sont plus difficiles à détecter que les attaques de mots de passe par force brute (la probabilité de réussite augmente lorsqu’un attaquant essaie un mot de passe sur des dizaines ou des centaines de comptes sans risquer de déclencher le verrouillage du mot de passe incorrect de l’utilisateur).
+
+  Pour l’attaque par pulvérisation de mots de passe, vous ne pouvez spécifier qu’un seul mot de passe et vous pouvez préciser un ou plusieurs utilisateurs.
 
 > [!NOTE]
-> Les attaques de mot de passe dans le simulateur de test du nom d’utilisateur et du mot de passe des demandes d’authentification de base à un point de terminaison fonctionnent également avec d’autres méthodes d’authentification (AD FS, synchronisation de hachage de mot de passe, direct, PingFederate, etc.). Pour les utilisateurs pour lesquels l’authentification multifacteur (MFA) est activée, même si l’attaque par mot de passe essaie son mot de passe réel, la tentative s’inscrit toujours comme un échec (en d’autres termes, les utilisateurs MFA n’apparaissent jamais dans le nombre de **tentatives réussies** de la campagne). Il s’agit du résultat attendu. MFA est une méthode principale pour vous protéger contre les attaques par mot de passe.
+> Les attaques par mot de passe dans le Simulateur d’attaques transmettent les demandes d’authentification de base par nom d’utilisateur et mot de passe à un point de terminaison. Elles fonctionnent ainsi avec d’autres méthodes d’authentification (AD FS, synchronisation du hachage de mot de passe, directe, PingFederate, etc.). Pour les utilisateurs qui ont activé l’authentification multifacteur, même si l’attaque de mot de passe essaie son propre mot de passe, la tentative s’enregistre toujours en tant qu’échec (en d’autres termes, les utilisateurs de l’authentification multifacteur n’apparaissent jamais dans le nombre de **Tentatives réussies** de la campagne). Il s'agit du résultat attendu. L’authentification multifacteur est la méthode principale pour permettre de vous protéger contre des attaques par mot de passe.
 
-### <a name="create-and-launch-a-password-attack-campaign"></a>Créer et lancer une campagne d’attaque par mot de passe
+### <a name="create-and-launch-a-password-attack-campaign"></a>Création et lancement d’une campagne d’attaque par mot de passe
 
-1. Dans le centre de sécurité & conformité, accédez à **Threat Management** \> **Attack Simulator**.
+1. Dans le Centre de sécurité et conformité, accédez à **Gestion des menaces** \> **Simulateur d’attaques**.
 
-2. Sur la page **simuler des attaques** , effectuez l’une des sélections suivantes en fonction du type de campagne que vous souhaitez créer :
+2. Dans la page **Simulation d’attaques**, effectuez l’une des sélections suivantes en fonction du type de campagne que vous voulez créer :
 
-   - Dans la **section mot de passe en force (attaque de dictionnaire)** , cliquez sur **lancer une attaque** ou sur attaque des **Détails** \> de l' **attaque.**
+   - Dans la section **Mot de passe par force brute (attaque par dictionnaire)**, cliquez sur **Lancer l’attaque** ou sur **Détails de l’attaque** \> **Lancer l’attaque**.
 
-   - dans la section **attaque par pulvérisation par mot de passe** , cliquez sur lancer une **attaque** **ou sur** \> attaques pour **lancer**une attaque.
+   - Dans la section **Attaque par pulvérisation de mots de passe**, cliquez sur **Lancer l’attaque** ou sur **Détails de l’attaque** \> **Lancer l’attaque**.
 
-3. L’Assistant Configuration d’une **attaque de mot de passe** démarre dans une nouvelle fenêtre mobile. À l’étape de **démarrage** , entrez un nom complet unique pour la campagne, puis cliquez sur **suivant**.
+3. L’Assistant **Configurer l’attaque de mot de passe** démarre dans un nouveau menu volant. À l’étape **Démarrer**, entrez un nom d’affichage unique pour la campagne, puis cliquez sur **Suivant**.
 
-4. Dans l’étape **utilisateurs cibles** , effectuez l’une des opérations suivantes :
+4. À l’étape **Utilisateurs cible**, effectuez l’une des étapes suivantes :
 
-   - Cliquez sur **carnet d’adresses** pour sélectionner les destinataires (utilisateurs ou groupes) de la campagne. Chaque destinataire ciblé doit disposer d’une boîte aux lettres Exchange Online. Si vous cliquez sur **Filtrer** et **appliquer** sans entrer de critère de recherche, tous les destinataires sont renvoyés et ajoutés à la campagne.
+   - Cliquez sur le **Carnet d'adresses** pour sélectionner les destinataires (utilisateurs ou groupes) pour la campagne. Chaque destinataire ciblé doit avoir une boîte aux lettres Exchange Online. Si vous cliquez sur **Filtrer** et **Appliquer** sans entrer de critères de recherche, tous les destinataires sont renvoyés et ajoutés à la campagne.
 
-   - Cliquez sur **Importer** , puis sur **importation de fichiers** pour importer un fichier de valeurs séparées par des virgules (CSV) ou séparé par une ligne d’adresses de messagerie. Chaque ligne doit contenir l’adresse de messagerie du destinataire.
-
-   Lorsque vous avez terminé, cliquez sur **Suivant**.
-
-5. Dans l’étape **choisir les paramètres d’attaque** , choisissez ce qu’il faut faire en fonction du type de campagne :
-
-   - **Mot de passe en force (attaque de dictionnaire)**: effectuez l’une des opérations suivantes :
-
-     - **Entrez les mots de passe manuellement**: dans la zone **Appuyez sur entrée pour ajouter un mot de passe** , tapez un mot de passe, puis appuyez sur entrée. Répétez cette étape autant de fois que nécessaire.
-
-     - **Charger les mots de passe à partir d’un fichier de dictionnaire**: cliquez sur **Télécharger** pour importer un fichier texte existant qui contient un mot de passe sur chaque ligne et une dernière ligne vide. La taille du fichier texte doit être inférieure ou égale à 10 Mo et ne peut pas contenir plus de 30000 mots de passe.
-
-   - **Attaque par pulvérisation de mot de passe**: dans **le champ mot de passe à utiliser dans la zone attaque** , entrez un mot de passe.
+   - Cliquez sur **Importer**, puis sur **Importation d’un fichier** pour importer un fichier de valeurs séparées par des virgules (CSV) ou d’adresses e-mail séparées par une ligne. Chaque ligne doit contenir l’adresse e-mail du destinataire.
 
    Lorsque vous avez terminé, cliquez sur **Suivant**.
 
-6. Dans l’étape **confirmer** , cliquez sur **Terminer** pour lancer la campagne. Les mots de passe que vous avez spécifiés sont testés sur les utilisateurs que vous avez spécifiés.
+5. À l’étape **Choix des paramètres de l’attaque**, sélectionnez ce que vous voulez faire en fonction du type de campagne :
+
+   - **Mot de passe par force brute (attaque par dictionnaire)**  : effectuez l’une des opérations suivantes :
+
+     - **Entrez les mots de passe manuellement** : dans la boîte de dialogue **Appuyez sur Entrée pour ajouter un mot de passe**, tapez un mot de passe, puis appuyez sur ENTRÉE. Répétez cette étape autant de fois que nécessaire.
+
+     - **Charger des mots de passe à partir d’un fichier dictionnaire**: cliquez sur **Télécharger** pour importer un fichier texte existant qui contient un mot de passe sur chaque ligne et une dernière ligne vide. La taille du fichier texte doit être inférieure ou égale à 10 Mo et ne peut pas contenir plus de 30 000 mots de passe.
+
+   - **Attaque par pulvérisation par mots de passe** : entrez un mot de passe dans la zone de dialogue **Le ou les mots de passe à utiliser dans le cadre de l’attaque**.
+
+   Lorsque vous avez terminé, cliquez sur **Suivant**.
+
+6. À l’étape **Confirmer**, cliquez sur **Terminer** pour lancer la campagne. Les mots de passe que vous avez spécifiés ont été essayés pour les utilisateurs que vous avez précisés.
 
 ## <a name="view-campaign-results"></a>Afficher les résultats de la campagne
 
-Une fois que vous avez lancé une campagne, vous pouvez vérifier la progression et les résultats sur la page principale **attaques par simulation** .
+Après avoir lancé une campagne, vous pouvez consulter l’avancement et les résultats sur la page principale **Simulation d’attaques**.
 
-Les campagnes actives affichent une barre d’État, une valeur de pourcentage terminé et le nombre de (utilisateurs terminés) de (nombre total d’utilisateurs). Cliquez sur le bouton **Actualiser** pour mettre à jour la progression de toutes les campagnes actives. Vous pouvez également cliquer sur **Terminer** pour arrêter une campagne active.
+Les campagnes actives affichent une barre de statut, une valeur de pourcentage terminée et un nombre « (utilisateurs terminés) sur (total des utilisateurs) ». Le fait de cliquer sur le bouton **Actualiser** permet de mettre à jour l’avancement de toutes les campagnes actives. Vous pouvez également cliquer sur **Terminer** pour arrêter une campagne active.
 
-Une fois la campagne terminée, l’État devient **attaque terminée**. Vous pouvez afficher les résultats de la campagne en effectuant l’une des actions suivantes :
+Une fois la campagne terminée, le statut devient **Attaque achevée**. Vous pouvez afficher les résultats de la campagne en effectuant l’une des actions suivantes :
 
-- Sur la page principale **attaques de simulation** , cliquez sur Afficher le **rapport** sous le nom de la campagne.
+- Dans la page principale **Simulation d’attaques**, cliquez sur **Afficher le rapport** sous le nom de la campagne.
 
-- Sur la page principale **attaques de simulation** , cliquez sur informations sur les **attaques** dans la section correspondant au type d’attaque. Sur la page Détails de l' **attaque** qui s’ouvre, sélectionnez la campagne dans la section **historique des attaques** .
+- Dans la page principale **Simulation d’attaques**, cliquez sur les **Détails de l’attaque** dans la section correspondant au type d’attaque. Dans la page **Détails de l’attaque** qui s’ouvre, sélectionnez la campagne dans la section **Historique des attaques**.
 
-L’une des actions précédentes vous permet d’accéder à une page intitulée **informations d’attaque**. Les informations qui sont disponibles sur cette page pour chaque type de campagne sont décrites dans les sections suivantes.
+L’une des actions précédentes vous dirige vers une page intitulée **Détails de l’attaque**. Les informations disponibles dans cette page pour chaque type de campagne sont décrites dans les sections suivantes.
 
-### <a name="spear-phishing-credentials-harvest-campaign-results"></a>Résultats de la campagne de Spear Phishing (informations d’identification)
+### <a name="spear-phishing-credentials-harvest-campaign-results"></a>Résultats de campagne de harponnage (recueil des informations d’identification)
 
-Les informations suivantes sont disponibles dans la page Détails de l' **attaque** de chaque campagne :
+Les informations suivantes sont disponibles sur la page des **Détails de l’attaque** pour chaque campagne :
 
 - Durée (date/heure de début et date/heure de fin) de la campagne.
 
 - **Nombre total d’utilisateurs ciblés**
 
-- **Tentatives réussies**: nombre d’utilisateurs ayant cliqué sur le lien **et** entré leurs informations d’identification (*n’importe quel* nom d’utilisateur et mot de passe).
+- **Tentatives réussies** : le nombre d’utilisateurs qui ont cliqué sur le lien **et** entré leurs informations d’identification (*toute* valeur de nom d’utilisateur et de mot de passe).
 
-- **Taux de réussite global**: pourcentage calculé en / **nombre total d’utilisateurs ciblés**par des **tentatives réussies**.
+- **Taux de réussite globale** : un pourcentage calculé par **Tentatives réussies** / **Nombre total d’utilisateurs ciblés**.
 
-- Le **plus rapide**est de cliquer sur le lien après avoir lancé la campagne.
+- **Le plus rapide – Clic** : le temps qu’il a fallu au premier utilisateur pour cliquer sur le lien après le lancement de votre campagne.
 
-- **Moyenne : cliquez sur**le nombre de fois que tout le monde a pris le temps de cliquer sur le lien, divisé par le nombre d’utilisateurs ayant cliqué sur le lien.
+- **Moyenne – Clic** : le temps total qu’il a fallu à tous les utilisateurs pour cliquer sur le lien, divisé par le nombre d’utilisateurs qui ont cliqué sur le lien.
 
-- **Cliquez sur taux de réussite**: pourcentage calculé par (nombre d’utilisateurs ayant cliqué sur le lien)/ **nombre total d’utilisateurs ciblés**.
+- **Taux de réussite – Clic** : un pourcentage calculé par le (nombre d’utilisateurs qui ont cliqué sur le lien) / **Nombre total d’utilisateurs ciblés**.
 
-- **Informations d’identification les plus rapides**: combien de temps a duré le premier utilisateur pour entrer ses informations d’identification après avoir lancé la campagne.
+- **Le plus rapide – Informations d’identification** : le temps qu’il a fallu au premier utilisateur pour entrer ses informations d’identification après le lancement de votre campagne.
 
-- **Moyenne des informations d’identification**: somme du temps nécessaire à l’utilisateur pour entrer ses informations d’identification divisée par le nombre d’utilisateurs qui ont entré leurs informations d’identification.
+- **Moyenne – Informations d’identification** : le temps total qu’il a fallu à tous les utilisateurs pour entrer leurs informations d’identification divisé par le nombre d’utilisateurs qui ont entré leurs informations d’identification.
 
-- **Taux de réussite des informations d’identification**: pourcentage calculé par (nombre d’utilisateurs qui ont entré leurs informations d’identification)/ **nombre total d’utilisateurs ciblés**.
+- **Taux de réussite – Informations d’identification** : un pourcentage calculé par le (nombre d’utilisateurs qui ont entré leurs informations d’identification) / **Nombre total d’utilisateurs ciblés**.
 
-- Graphique à barres qui affiche le **lien sur lequel l’utilisateur a cliqué** et les numéros **d’identification fournis** par jour.
+- Graphique à barres affichant le **Lien sur lequel un clic a été effectué** et le nombre d’**Informations d’identification fournies** par jour.
 
-- Graphique circulaire qui affiche le **lien sur lequel l’utilisateur a cliqué**, les **informations d’identification fournies**et **aucun** pourcentage de la campagne.
+- Graphique circulaire affichant les pourcentages **Lien sur lequel un clic a été effectué**, **Informations d’identification fournies**et **Aucun** pour la campagne.
 
-- La section **utilisateurs compromis** répertorie les détails des utilisateurs qui ont cliqué sur le lien :
+- La section **Utilisateurs compromis** répertorie des informations sur les utilisateurs qui ont cliqué sur le lien :
 
-  - Adresse de messagerie de l'utilisateur
+  - L’adresse de messagerie de l'utilisateur
 
-  - Date/heure à laquelle l’utilisateur a cliqué sur le lien.
+  - Date/heure à laquelle il a cliqué sur le lien.
 
-  - Adresse IP du client.
+  - L’adresse IP du client.
 
-  - Détails sur la version de l’utilisateur de Windows et du navigateur Web.
+  - Détails sur la version de Windows et le navigateur web de l’utilisateur.
 
   Vous pouvez cliquer sur **Exporter** pour exporter les résultats dans un fichier CSV.
 
-### <a name="spear-phishing-attachment-campaign-results"></a>Résultats de la campagne de hameçonnage (pièce jointe)
+### <a name="spear-phishing-attachment-campaign-results"></a>Résultats de la campagne de harponnage (pièce jointe)
 
-Les informations suivantes sont disponibles dans la page Détails de l' **attaque** de chaque campagne :
-
-- Durée (date/heure de début et date/heure de fin) de la campagne.
-
-- **Nombre total d’utilisateurs ciblés**
-
-- **Tentatives réussies**: nombre d’utilisateurs qui ont ouvert ou téléchargé la pièce jointe et qui l’a ouverte (l’aperçu n’est pas compté).
-
-- **Taux de réussite global**: pourcentage calculé en / **nombre total d’utilisateurs ciblés**par des **tentatives réussies**.
-
-- **Durée maximale d’ouverture des pièces jointes**: durée de l’ouverture de la pièce jointe par le premier utilisateur après le lancement de la campagne.
-
-- **Durée moyenne d’ouverture des pièces jointes : durée**totale de l’ouverture de la pièce jointe, divisée par le nombre d’utilisateurs ayant ouvert la pièce jointe.
-
-- **Taux de réussite d’ouverture des pièces jointes**: pourcentage calculé par (nombre d’utilisateurs ayant ouvert la pièce jointe)/ **nombre total d’utilisateurs ciblés**.
-
-### <a name="brute-force-password-dictionary-attack-campaign-results"></a>Résultats de la campagne de mot de passe en force (attaque de dictionnaire)
-
-Les informations suivantes sont disponibles dans la page Détails de l' **attaque** de chaque campagne :
+Les informations suivantes sont disponibles sur la page des **Détails de l’attaque** pour chaque campagne :
 
 - Durée (date/heure de début et date/heure de fin) de la campagne.
 
 - **Nombre total d’utilisateurs ciblés**
 
-- **Tentatives réussies**: nombre d’utilisateurs pour lesquels l’un des mots de passe spécifiés a été trouvé.
+- **Tentatives réussies** : nombre d’utilisateurs qui ont ouvert ou téléchargé et ouvert la pièce jointe (l’aperçu ne compte pas).
 
-- **Taux de réussite global**: pourcentage calculé en / **nombre total d’utilisateurs ciblés**par des **tentatives réussies**.
+- **Taux de réussite globale** : un pourcentage calculé par **Tentatives réussies** / **Nombre total d’utilisateurs ciblés**.
 
-- La section **utilisateurs compromis** répertorie les adresses de messagerie des utilisateurs concernés. Vous pouvez cliquer sur **Exporter** pour exporter les résultats dans un fichier CSV.
+- **Délai d’ouverture des pièces jointes le plus rapide** : le temps qu’il a fallu au premier utilisateur pour ouvrir la pièce jointe après le lancement de votre campagne.
 
-### <a name="password-spray-attack-campaign-results"></a>Résultats de la campagne d’attaque par pulvérisation
+- **Délai moyen d’ouverture des pièces jointes** : le temps total qu’il a fallu à tous les utilisateurs pour ouvrir la pièce jointe divisé par le nombre de personnes qui ont ouvert la pièce jointe.
 
-Les informations suivantes sont disponibles dans la page Détails de l' **attaque** de chaque campagne :
+- **Taux d’ouverture réussie des pièces jointes ** : un pourcentage calculé par le (nombre d’utilisateurs qui ont ouvert la pièce jointe) / **Nombre total d’utilisateurs ciblés**.
+
+### <a name="brute-force-password-dictionary-attack-campaign-results"></a>Résultats de la campagne de mot de passe par force brute (attaque par dictionnaire)
+
+Les informations suivantes sont disponibles sur la page des **Détails de l’attaque** pour chaque campagne :
 
 - Durée (date/heure de début et date/heure de fin) de la campagne.
 
 - **Nombre total d’utilisateurs ciblés**
 
-- **Tentatives réussies**: nombre d’utilisateurs qui ont été identifiés comme utilisant le mot de passe spécifié.
+- **Tentatives réussies** : nombre d’utilisateurs qui se sont avérées utiliser l’un des mots de passe spécifiés.
 
-- **Taux de réussite global**: pourcentage calculé en / **nombre total d’utilisateurs ciblés**par des **tentatives réussies**.
+- **Taux de réussite globale** : un pourcentage calculé par **Tentatives réussies** / **Nombre total d’utilisateurs ciblés**.
+
+- La section **Utilisateurs compromis** répertorie les adresses de courrier des utilisateurs concernés. Vous pouvez cliquer sur **Exporter** pour exporter les résultats dans un fichier CSV.
+
+### <a name="password-spray-attack-campaign-results"></a>Résultats de la campagne d’attaque par pulvérisation par mots de passe
+
+Les informations suivantes sont disponibles sur la page des **Détails de l’attaque** pour chaque campagne :
+
+- Durée (date/heure de début et date/heure de fin) de la campagne.
+
+- **Nombre total d’utilisateurs ciblés**
+
+- **Tentatives réussies** : nombre d’utilisateurs qui se sont avérées utiliser le mot de passe spécifié.
+
+- **Taux de réussite globale** : un pourcentage calculé par **Tentatives réussies** / **Nombre total d’utilisateurs ciblés**.
