@@ -15,19 +15,19 @@ search.appverid:
 - MET150
 ms.assetid: 429e686f-d8a6-455e-a2b6-3791d763f000
 description: Le Gestionnaire de conformité, disponible dans le Portail d’approbation de services de Microsoft, propose des outils pour suivre, implémenter et gérer les contrôles permettant à votre organisation de se conformer aux normes du secteur en matière de sécurité et de protection des données (par exemple, le RGPD, les normes ISO 27001 et 27018, la loi américaine HIPAA), quand elle utilise les services de cloud computing Microsoft, tels qu’Office 365 et Microsoft Azure. Le Gestionnaire de conformité permet à la personne responsable de la stratégie de protection des données et de la vie privée de votre organisation de gérer vos processus d’évaluation des risques et de conformité.
-ms.openlocfilehash: 17884ff51a91ee0131f79fea05416ade59e4153e
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 3019378c82e263ce438b385a998dcf2475f3b62d
+ms.sourcegitcommit: f70f75b9dd163c00a3c6bc4b9f9b055e90c50367
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634884"
+ms.lasthandoff: 04/23/2020
+ms.locfileid: "43790621"
 ---
 # <a name="microsoft-compliance-manager-classic"></a>Gestionnaire de conformité Microsoft (classique)
 
 > [!NOTE]
-> Cette documentation décrit un produit hérité. Il est fortement déconseillé aux utilisateurs d’utiliser cette version du Gestionnaire de conformité. Ils sont encouragés à utiliser plutôt le nouveau [score de conformité Microsoft](compliance-score.md).
+> Cette documentation décrit une version antérieure de ce produit. Il est fortement déconseillé aux utilisateurs d’utiliser cette version du Gestionnaire de conformité. Ils sont encouragés à utiliser plutôt le nouveau [score de conformité Microsoft](compliance-score.md).
 
- *Le Gestionnaire de conformité n’est pas disponible dans Office 365 géré par 21Vianet, Office 365 Germany, Office 365 U.S. GCC High ou Office 365 Department of Defense.* 
+ *Le Gestionnaire de conformité n’est pas disponible dans Office 365 géré par 21Vianet, Office 365 Germany, Office 365 U.S. GCC High ou Office 365 Department of Defense.*
   
 Le gestionnaire de conformité est un outil d’évaluation des risques des flux de travail disponible dans le [Portail d’approbation de services de Microsoft](https://support.office.com/article/f30e2353-0bd6-41ed-8347-eea1fb8d2662). Il vous permet de suivre, d’affecter et de vérifier les activités de mise en conformité de votre organisation avec les réglementations liées aux services professionnels Microsoft et aux services de cloud computing Microsoft, tels que Microsoft Office 365, Microsoft Dynamics 365 et Microsoft Azure. 
 

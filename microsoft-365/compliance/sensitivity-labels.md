@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Utilisez les étiquettes de confidentialité de l'infrastructure Microsoft Information Protection pour classifier et protéger les données de votre organisation, tout en veillant à ce que la productivité des utilisateurs et leur aptitude à collaborer ne soient pas compromises. Ces étiquettes peuvent appliquer des paramètres de protection incluant des marquages visuels de chiffrement, tels que des pieds de page et des filigranes.
-ms.openlocfilehash: c7a803180cfa839029ce86e19e0ede75c39d6476
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 65f647228db1ce18c7c26ce0f12542569c5f0a2e
+ms.sourcegitcommit: f70f75b9dd163c00a3c6bc4b9f9b055e90c50367
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631291"
+ms.lasthandoff: 04/23/2020
+ms.locfileid: "43790651"
 ---
 # <a name="learn-about-sensitivity-labels"></a>En savoir plus sur les étiquettes de niveau de confidentialité
 
@@ -97,7 +97,7 @@ Une fois qu’une étiquette de confidentialité est appliquée à un e-mail ou 
     Longueurs de chaînes : les filigranes sont limités à 255 caractères. Les en-têtes et les pieds de page sont limités à 1 024 caractères, sauf dans Excel. Excel présente une limite totale de 255 caractères pour les en-têtes et les pieds de page, mais cette limite inclut des caractères qui ne sont pas visibles, tels que des codes de mise en forme. Si cette limite est atteinte, la chaîne entrée n’apparaît pas dans Excel.
 
 
-- **Protégez du contenu dans des conteneurs tels que des sites et des groupes** lorsque vous choisissez la préversion pour [utiliser des étiquettes de confidentialité avec Microsoft Teams, les Groupes Microsoft 365 et les sites SharePoint (version d’évaluation publique)](sensitivity-labels-teams-groups-sites.md).
+- **Protégez du contenu dans des conteneurs tels que des sites et des groupes** lorsque vous choisissez la préversion pour [utiliser des étiquettes de confidentialité avec Microsoft Teams, les Groupes Microsoft 365 et les sites SharePoint (version d'évaluation publique)](sensitivity-labels-teams-groups-sites.md).
     
     Les options de configuration pour les **paramètres de sites et de groupes** n’apparaissent pas si vous n'optez pas pour la préversion. N’oubliez pas que cette configuration d’étiquettes ne permet pas aux documents d’être automatiquement étiquetés. En lieu et place, les paramètres d’étiquette protègent le contenu en contrôlant l’accès au conteneur dans lequel les documents sont stockés. Ces paramètres incluent le niveau de confidentialité qui indique si un propriétaire de groupe Microsoft 365 peut ajouter des invités au groupe et le niveau d’accès accordé à un appareil non géré.
 
@@ -141,7 +141,7 @@ Après avoir créé vos étiquettes de confidentialité, vous devez les publier 
 
 Avec une stratégie d’étiquette, vous pouvez effectuer les actions suivantes :
 
-- **Sélectionnez les utilisateurs et les groupes pouvant voir les étiquettes.** Les étiquettes peuvent être publiées vers n’importe quel groupe de sécurité à extension messagerie, groupe Microsoft 365 ou groupe de distribution dynamique.
+- **Sélectionnez les utilisateurs et les groupes pouvant voir les étiquettes.** Les étiquettes peuvent être publiées à un utilisateur ou un groupe de sécurité à extension de courrier, à un groupe de distribution ou à un groupe Microsoft 365 (pouvant avoir [l’appartenance dynamique](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-create-rule) dans Azure AD.
 
 - **Appliquer une étiquette par défaut** à tous les nouveaux documents et e-mails créés par les utilisateurs et groupes inclus dans la stratégie d’étiquette. Cette option s’applique également aux conteneurs si vous avez [activé les étiquettes de confidentialité pour Microsoft Teams, les groupes Microsoft 365 et les sites SharePoint](sensitivity-labels-teams-groups-sites.md). Les utilisateurs peuvent toujours modifier l’étiquette par défaut s’il ne s’agit pas de l’étiquette appropriée pour leur document ou leur courrier électronique. Utilisez une étiquette par défaut pour définir des paramètres de protection de base à appliquer à votre contenu. Il faut noter que, sans formation des utilisateurs ou autres contrôles, ce paramètre peut également entraîner un étiquetage incorrect. 
 
@@ -197,7 +197,7 @@ Les métadonnées appliquées par ces jeux d’étiquettes sont compatibles. Vou
 
 ### <a name="azure-information-protection-clients"></a>Clients Azure Information Protection
 
-Lorsque vous utilisez des étiquettes de confidentialité dans les Applications Microsoft 365 pour les entreprises sur des ordinateurs Windows, vous avez le choix entre utiliser un client Azure Information Protection ou utiliser l’étiquetage intégré à Office.
+Lorsque vous utilisez des étiquettes de confidentialité dans les Applications Microsoft 365 pour les entreprises sur des ordinateurs Windows, vous avez le choix entre utiliser un client Azure Information Protection ou utiliser l'étiquetage intégré à Office.
 
 L’étiquetage intégré est désactivé par défaut dans ces applications lorsque le client Azure Information Protection est installé. Pour plus d'informations, y compris sur la façon de modifier de comportement par défaut, voir [Client d’étiquetage intégré Office et client Azure Information Protection](sensitivity-labels-office-apps.md#office-built-in-labeling-client-and-the-azure-information-protection-client).
 

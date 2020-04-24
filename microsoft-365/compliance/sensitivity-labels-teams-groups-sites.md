@@ -17,18 +17,18 @@ search.appverid:
 - MOE150
 - MET150
 description: Utilisez les étiquettes de confidentialité pour protéger le contenu des sites SharePoint et Microsoft Teams, ainsi que des Groupes Microsoft 365.
-ms.openlocfilehash: b9ca945ac90ab27d3bc25f1022070eff4737bc10
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 9252fa5a5096e8a0768277f0c72d78e4743f51dc
+ms.sourcegitcommit: f70f75b9dd163c00a3c6bc4b9f9b055e90c50367
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631301"
+ms.lasthandoff: 04/23/2020
+ms.locfileid: "43790682"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites-public-preview"></a>Utiliser les étiquettes de confidentialité pour protéger le contenu dans Microsoft Teams, les Groupes Microsoft 365 et les sites SharePoint (préversion publique)
 
 >*[Guide de sécurité et conformité pour les licences Microsoft 365](https://aka.ms/ComplianceSD).*
 
-Lorsque vous créez des étiquettes de confidentialité dans le [Centre de conformité Microsoft 365](https://protection.office.com/), vous pouvez désormais les appliquer aux conteneurs suivants : les sites Microsoft Teams et SharePoint et les Groupes Microsoft 365. Utilisez les paramètres d’étiquette suivants pour renforcer la protection du contenu de ces conteneurs :
+Lorsque vous créez des étiquettes de confidentialité dans le [Centre de conformité Microsoft 365](https://protection.office.com/), vous pouvez désormais les appliquer aux conteneurs suivants : les sites Microsoft Teams et SharePoint et les Groupes Microsoft 365 (anciennement groupes Office 365). Utilisez les paramètres d’étiquette suivants pour renforcer la protection du contenu de ces conteneurs :
 
 - Confidentialité (privée ou publique) de sites d’équipes Microsoft 365 connectés au groupe
 - Accès des utilisateurs externes
@@ -79,7 +79,7 @@ Si vous avez besoin d’aide pour créer ou modifier une étiquette de confident
 
 Dans cette nouvelle page de **Paramètres de site et de groupe**, configurez les paramètres :
 
-- **Confidentialité des sites d’équipe connectés au groupe Microsoft 365** : le paramètre par défaut actuellement déployé pour les clients est **Aucune, l’utilisateur choisit qui peut accéder au site**. Conservez ce paramètre par défaut si vous souhaitez protéger le contenu dans le conteneur à l’aide de l’étiquette de confidentialité, tout en laissant les utilisateurs configurer eux-même les paramètres de confidentialité.
+- **Confidentialité des sites d’équipe connectés au groupe Office 365** : le paramètre par défaut actuellement déployé pour les clients est **Aucune, l'utilisateur choisit qui peut accéder au site**. Conservez ce paramètre par défaut si vous souhaitez protéger le contenu dans le conteneur à l’aide de l’étiquette de confidentialité, tout en laissant les utilisateurs configurer eux-même les paramètres de confidentialité.
     
     Sélectionnez **Public** ou **privé** pour définir et verrouiller le paramètre de confidentialité lorsque vous appliquez cette étiquette au conteneur. Sélectionnez **Public** si vous souhaitez que tous les membres de votre organisation accèdent au site d’équipe ou au groupe dans lequel cette étiquette est appliquée, ou **Privé** si vous souhaitez limiter l’accès aux seuls membres approuvés au sein de votre organisation. 
     
@@ -299,7 +299,7 @@ Bien que vous ne puissiez pas empêcher les utilisateurs de créer des groupes d
     Get-Label |ft Name, Guid
     ```
 
-3. Notez les GUID des étiquettes de confidentialité que vous voulez appliquer à vos groupes Office 365.
+3. Notez les GUID des étiquettes de confidentialité que vous voulez appliquer à vos Groupes Microsoft 365.
 
 4. [Connectez-vous à Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps).
     
@@ -311,9 +311,7 @@ Bien que vous ne puissiez pas empêcher les utilisateurs de créer des groupes d
     Import-PSSession $Session
     ```
 
-6. Notez les GUID des étiquettes de confidentialité que vous voulez appliquer à vos Groupes Microsoft 365.
-
-7. Utilisez la commande suivante en tant qu’exemple pour obtenir la liste des groupes qui ont actuellement la classification « Général » :
+5. Utilisez la commande suivante en tant qu’exemple pour obtenir la liste des groupes qui ont actuellement la classification « Général » :
 
    ```PowerShell
    $Groups= Get-UnifiedGroup | Where {$_.classification -eq "General"}
