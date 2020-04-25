@@ -19,12 +19,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
 description: Obtenez un rapport régulier sur la façon dont les membres de votre organisation utilisent les services Microsoft 365. Le tableau de bord Vue d’ensemble de l’utilisation vous permet d’explorer chaque graphique pour obtenir d'autres informations.
-ms.openlocfilehash: 646096b0e9d9f2c1d701fba312901bf744a74501
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 665512e322eadd2f590fb5109fd6f1a9e7706e61
+ms.sourcegitcommit: b458277f0a9937555bc6c5b3fb2a41613f7cc9a9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43621269"
+ms.lasthandoff: 04/23/2020
+ms.locfileid: "43794016"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center"></a>Rapports Microsoft 365 dans le centre d'administration
 
@@ -58,7 +58,7 @@ Visionnez cette vidéo pour une vue d’ensemble : sur la façon d'utiliser les
 ::: moniker-end
 
    
-2. Choisissez **Sélectionner un rapport** en haut du tableau de bord et sélectionnez l'un des rapports disponibles proposés. Vous pouvez également sélectionner un widget d'aperçu de l'activité pour un service (courrier, OneDrive, etc.) pour consulter plus d'informations. <br/>![Le tableau de bord d'utilisation](../../media/usage-report-dashboard.png)
+2. Choisissez **Sélectionner un rapport** en haut du tableau de bord et sélectionnez l'un des rapports disponibles proposés. Vous pouvez également sélectionner un widget activité d’un coup d’œil pour un service (par exemple, courrier électronique ou OneDrive) pour afficher plus d’informations. <br/>![Le tableau de bord d'utilisation](../../media/usage-report-dashboard.png)
   
 ## <a name="who-can-see-reports"></a>Qui peut voir ces rapports ?
 
@@ -104,7 +104,7 @@ En fonction de votre abonnement, les rapports suivants sont disponibles.
   
 - [Utilisation de OneDrive Entreprise](onedrive-for-business-usage.md)
 
-- [Utilisation de ProPlus](microsoft365-apps-usage.md)
+- [Utilisation des applications Microsoft 365](microsoft365-apps-usage.md)
   
 - [Utilisation du site SharePoint](sharepoint-site-usage.md)
   
