@@ -14,12 +14,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Les équipes auront désormais accès à des liens fiables au moment de votre clic. Que vous utilisiez des conversations de conversation 1-on-1, entre des groupes ou des canaux, et des onglets, si vous disposez d’un abonnement à la protection avancée contre les menaces pour Office 365, vous pouvez activer et utiliser cette fonctionnalité de sécurité.
-ms.openlocfilehash: 88fe9756188eb16a2347d3c0cd4a98b4003ff457
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 07f20f0adf503e4592d2bd3f3bc9857d08a1e433
+ms.sourcegitcommit: 481fb95d8b80cf2102a9c73b21e7effa79e594e7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635997"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "43808983"
 ---
 <!--06/21/2019-->
 
@@ -28,7 +28,7 @@ ms.locfileid: "43635997"
 > [!IMPORTANT]
 > Cette fonctionnalité est en préversion **publique** pour les clients du programme d’adoption de la technologie Microsoft Teams (TAP) du 28 février 2020. Cette note sera supprimée de l’article lorsque les liens fiables de teams sont plus largement disponibles.
 
-Microsoft Teams, une application Microsoft Cloud pour la gestion de votre travail, utilise déjà des pièces jointes fiables (pour Office 365), mais il aura maintenant accès à des liens fiables au moment de votre clic. Que vous utilisiez des conversations de conversation 1-on-1, entre des groupes ou des canaux, et des onglets, si vous disposez d’un abonnement à la protection avancée contre les menaces pour Office 365, vous pouvez activer et utiliser cette mesure de sécurité.
+Microsoft Teams, une application Microsoft Cloud pour la gestion de votre travail, utilise déjà des pièces jointes fiables (pour Office 365), mais il aura maintenant accès à des liens fiables au moment de votre clic. Que vous utilisiez des conversations, des conversations de groupe, des canaux ou des onglets, si vous disposez d’un abonnement à la protection avancée contre les menaces Office 365, vous pouvez activer et utiliser cette mesure de sécurité. Pour en savoir plus sur les conditions d’octroi de licences, consultez [Conseils sur la gestion des licences des services de niveau client de Microsoft 365](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance).
 
 Voici le principe de fonctionnement : 
 
@@ -51,5 +51,4 @@ Si l’utilisateur qui a envoyé le lien n’est pas protégé par la protection
 Le fait de cliquer sur *le bouton de retour de* cette page dans teams le ferme (ou peut entraîner la fermeture d’une page vierge par les utilisateurs). Toutefois, le fait de cliquer à nouveau sur le lien entraînera une nouvelle évaluation de la réputation du site afin de réafficher cette page.
 
 > [!NOTE]
->Certains administrateurs de Microsoft 365 vont activer le message **continuer quand même** sur la page de blocage. Toutefois, si les liens fiables mesurent la réputation d’un site et le trouvent manquant, aucune autre opération de clic ne doit être effectuée. Il n’est pas recommandé que les utilisateurs contournent les mesures de sécurité. N’hésitez pas à évaluer ces éléments avant d’activer la fonctionnalité continuer. 
-
+> Certains administrateurs de Microsoft 365 vont activer le message **continuer quand même** sur la page de blocage. Toutefois, si les liens fiables mesurent la réputation d’un site et le trouvent manquant, aucune autre opération de clic ne doit être effectuée. Il n’est pas recommandé que les utilisateurs contournent les mesures de sécurité. N’hésitez pas à évaluer ces éléments avant d’activer la fonctionnalité continuer. 

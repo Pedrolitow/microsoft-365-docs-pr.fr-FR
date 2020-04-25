@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 6b5132cad5725e46a49b9010868ede423321f307
-ms.sourcegitcommit: 87cc278ea2ddcd536ecfaa3dfae9a5ddaa502cf9
+ms.openlocfilehash: 7af3e54a13ceabf4acfaa2259ea0089854660721
+ms.sourcegitcommit: 1e9ce51efa583c33625299d17e37f58048a4169c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42179175"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "43804834"
 ---
 # <a name="insider-risk-management-cases"></a>Dossiers de gestion des risques initiés
 
@@ -103,7 +103,7 @@ L’onglet activité de l' **utilisateur** est l’un des outils les plus puissa
 
 ### <a name="content-explorer"></a>Explorateur de contenu
 
-L’onglet **Explorateur de contenu** permet aux analystes et aux enquêteurs de vérifier les copies de tous les fichiers et messages électroniques associés à des alertes de risque. Par exemple, si une alerte est créée lorsqu’un employé télécharge des centaines de fichiers à partir de SharePoint Online vers un périphérique USB et que l’activité déclenche une alerte de stratégie, tous les fichiers téléchargés pour l’alerte sont capturés et copiés dans le cas de la gestion des risques inSided à partir de sources de stockage d’origine.
+L’onglet **Explorateur de contenu** permet aux analystes et aux enquêteurs de vérifier les copies de tous les fichiers et messages électroniques associés à des alertes de risque. Par exemple, si une alerte est créée lorsqu’un employé télécharge des centaines de fichiers à partir de SharePoint Online vers un périphérique USB et que l’activité déclenche une alerte de stratégie, tous les fichiers téléchargés pour l’alerte sont capturés et copiés dans le cas de la gestion des risques initiaux à partir des sources de stockage d’origine.
 
 L’Explorateur de contenu est un outil puissant doté de fonctionnalités de recherche et de filtrage de base et avancées. Pour en savoir plus sur l’utilisation de l’Explorateur de contenu, reportez-vous à l' [Insider Risk Management content Explorer](insider-risk-management-content-explorer.md).
 
@@ -163,7 +163,7 @@ Pour envoyer une notification à l’employé affecté à un cas :
 
 ### <a name="escalate-for-investigation"></a>Escalade de l’enquête
 
-Escaladez le cas à l’enquête d’un employé dans des situations où un examen juridique supplémentaire est nécessaire pour l’activité des risques de l’employé. Cette escalade ouvre un nouveau cas eDiscovery avancé dans votre organisation Microsoft 365. Advanced eDiscovery fournit un flux de travail de bout en bout pour conserver, collecter, examiner, analyser et exporter du contenu réactif aux enquêtes juridiques internes et externes de votre organisation. Il permet également à votre équipe juridique de gérer l’ensemble du flux de travail de notification de suspension légale pour communiquer avec les dépositaires impliqués dans un cas. L’affectation d’un relecteur en tant que dépositaire dans un cas avancé eDiscovery créé à partir d’un cas de gestion des risques Insiders permet à votre équipe juridique de prendre les mesures appropriées et de gérer la conservation du contenu. Pour en savoir plus sur les cas avancés de découverte électronique, consultez la rubrique [vue d’ensemble de l’EDsicovery avancé dans Microsoft 365](overview-ediscovery-20.md).
+Escaladez le cas à l’enquête d’un employé dans des situations où un examen juridique supplémentaire est nécessaire pour l’activité des risques de l’employé. Cette escalade ouvre un nouveau cas eDiscovery avancé dans votre organisation Microsoft 365. Advanced eDiscovery fournit un flux de travail de bout en bout pour conserver, collecter, examiner, analyser et exporter du contenu réactif aux enquêtes juridiques internes et externes de votre organisation. Il permet également à votre équipe juridique de gérer l’ensemble du flux de travail de notification de suspension légale pour communiquer avec les dépositaires impliqués dans un cas. L’affectation d’un relecteur en tant que dépositaire dans un cas avancé eDiscovery créé à partir d’un cas de gestion des risques Insiders permet à votre équipe juridique de prendre les mesures appropriées et de gérer la conservation du contenu. Pour en savoir plus sur les cas avancés de découverte électronique, consultez la rubrique [Overview of Advanced eDiscovery in Microsoft 365](overview-ediscovery-20.md).
 
 Pour escalader un cas à une enquête d’un employé :
 

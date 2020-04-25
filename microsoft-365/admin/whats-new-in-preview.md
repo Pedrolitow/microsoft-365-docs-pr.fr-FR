@@ -21,12 +21,12 @@ ms.assetid: 739574d7-2c5b-4911-a549-f56ecc7d3b48
 description: Centre d’administration Microsoft 365-Découvrez les fonctionnalités qui ont été ajoutées ce mois-ci.
 ms.custom:
 - MACDashWhatsNew
-ms.openlocfilehash: 35a08b7c5ebdfd85a66fd28c46eb601d16298f96
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: a3c042413525ec591f74cd63685490f7de93775a
+ms.sourcegitcommit: 4f2129b161eed3f9ddec47494fa19a2a7a553e4f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627521"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "43805176"
 ---
 # <a name="whats-new-in-the-microsoft-365-admin-center"></a>Nouveautés du centre d’administration Microsoft 365
 
@@ -36,10 +36,59 @@ Nous ajoutons constamment de nouvelles fonctionnalités au [Centre d’administr
 > **«La retraite du centre d’administration classique commence en mars**<br><br>
 Lorsque vous vous connectez à admin.microsoft.com, vous accédez à chaque fois au nouveau centre d’administration. En mars, nous allons commencer à désactiver la possibilité de revenir au centre d’administration classique. Pour le moment, vous pouvez toujours revenir en arrière, mais en tant que nouveau centre d’administration, vous êtes en mesure de désactiver le commutateur pour toutes les organisations. <br><br> *Dernière mise à jour : 2 mars 2020*
 
-Et si vous êtes intéressé par les nouveautés dans les autres centres d’administration :
+Et si vous êtes intéressé par les nouveautés d’autres services Cloud de Microsoft :
 
+- [Nouveautés dans Exchange Online](https://go.microsoft.com/fwlink/?linkid=2119714)
+- [Nouveautés de Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/whats-new)
 - [Nouveautés du centre de conformité Microsoft 365](https://docs.microsoft.com/Office365/SecurityCompliance/whats-new)
 - [Nouveautés du centre d’administration SharePoint](https://docs.microsoft.com/sharepoint/what-s-new-in-admin-center)
+- [Mises à jour Office](https://docs.microsoft.com/OfficeUpdates/)
+
+## <a name="march-2020"></a>Mars 2020
+
+### <a name="featured-feedback-fix-improve-add-user-reliability-for-licensing"></a>Correctif de commentaires en vedette : amélioration de la fiabilité de l’ajout d’utilisateur pour les licences
+
+Nous avons reçu beaucoup de commentaires des administrateurs sur la façon dont il est difficile d’attribuer des licences lors de l’ajout d’utilisateurs. Nous avons effectué la première mise à jour de ce correctif et nous avons migré vers un service en arrière-plan plus fiable pour traiter ces demandes. En cas de problème, vous recevrez un message d’erreur qui vous permettra de réessayer.
+
+:::image type="content" source="../media/MAC-WN-ImprovedLicensing.png" alt-text="Ajoutez la page de confirmation de l’utilisateur avec l’erreur.":::
+
+### <a name="microsoft-teams-home-page-card"></a>Fiche de page d’accueil de Microsoft teams
+
+Avec la mise à niveau de l’utilisation de teams, certaines développées obtiendront une carte de tableau de bord épinglée qui rend les équipes de tournage plus détectables. La carte comporte également des liens vers des formations et des documents pour aider votre organisation à travailler à distance. Il vous suffit d’accéder à la page d' **Accueil** pour afficher la nouvelle carte.
+
+:::image type="content" source="../media/MAC-WN-TeamsCard.PNG" alt-text="Fiche de page d’accueil de Microsoft teams":::
+
+### <a name="customize-your-organizations-sharepoint-mobile-app-theme"></a>Personnaliser le thème de l’application mobile SharePoint de votre organisation
+
+À l’aide du centre d’administration Microsoft 365, vous pouvez désormais personnaliser le thème de votre organisation dans l’application mobile SharePoint pour iOS et l’application mobile SharePoint pour Android. Cette fonctionnalité offre une expérience d’application intranet mobile qui peut correspondre à votre SharePoint Online pour les employés en déplacement. La personnalisation de thème inclut votre image de logo, la couleur de la barre de navigation, les couleurs du texte et des icônes, ainsi que les couleurs d’accentuation, ce qui facilite la reconnaissance.
+
+:::image type="complex" source="../media/MAC-WN-CustThemeSP.png" alt-text="Diagramme mappant les paramètres du centre d’administration vers l’application mobile.":::
+
+:::image-end:::
+
+### <a name="improvements-to-the-add-a-group-wizard"></a>Améliorations apportées à l’Assistant Ajout d’un groupe
+
+Lorsque les administrateurs ont créé un nouveau groupe et lui ont fait une équipe en même temps, ils peuvent affecter des propriétaires qui n’ont pas de licence incluant Teams. Et cela a créé quelques maux de casse. Nous avons mis à jour le flux de l’Assistant pour vérifier que les propriétaires disposent d’une licence teams et qu’ils n’ont pas la possibilité de transformer le groupe en équipe est désactivé.
+
+### <a name="microsoft-365-offerings-for-small-and-medium-businesses"></a>Offres Microsoft 365 pour petites et moyennes entreprises
+
+Nous sommes conscients qu’il s’agit d’une annonce pour le mois prochain, mais nous souhaitons s’assurer que vous êtes prêt.
+
+À partir du 21 avril, nous apportons des modifications liées à nos abonnements Office 365 pour petites et moyennes entreprises, et à Office 365 ProPlus. Ces produits utiliseront désormais la marque Microsoft 365.
+
+Les nouveaux noms de produits entrent en vigueur le 21 avril 2020. Il s’agit d’une modification apportée au nom de produit uniquement et aucune modification de prix ou de fonctionnalité n’existe pour le moment.
+
+|Nom actuel |Nouveau nom  |
+|---------|---------|
+|Office 365 Business Essentials     |   Microsoft 365 Business Basic      |
+|Office 365 Business Premium     |    Microsoft 365 Business Standard     |
+|Microsoft 365 Business     |    Microsoft 365 Business Premium     |
+|Applications Microsoft 365 pour les PME     |    Microsoft 365 Apps for business       | 
+|Office 365 ProPlus    |   Applications Microsoft 365 pour les entreprises      |
+
+### <a name="videos-training-and-docs"></a>Vidéos, formation et documents
+
+[Nouveautés de la série Web microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=2118096): dans l’épisode de ce mois-ci, nous mettons en avant les 3 ans anniversaires de Microsoft teams et couvrent de nouvelles fonctionnalités, notamment une meilleure qualité audio dans les réunions en ligne, les communications ciblées pour les responsables terrain avec l’application équipes, les équipes et l’interopérabilité de Skype client, et bien plus encore.
 
 ## <a name="february-2020"></a>Février 2020
 
@@ -226,7 +275,7 @@ Une mise à jour a été mise à jour vers l’un des assistants d’installatio
 - **Sécurisez les ordinateurs Windows 10** : configurez des stratégies pour mieux protéger vos appareils Windows 10 contre les virus, les programmes malveillants et les attaques des pirates.
 - **Installer automatiquement Office** : lorsque vous activez cette fonction et que les utilisateurs ont connecté leurs PC à Microsoft 365 Business, leurs ordinateurs sont automatiquement mis à jour vers les dernières applications Office et restent à jour.
 
-## <a name="august-2019"></a>Août 2019
+## <a name="august-2019"></a>Août 2019
 
 ### <a name="billing"></a>Facturation
 
@@ -337,7 +386,7 @@ Vous pouvez voir une nouvelle recommandation dans votre centre d’administratio
 - Fonctionnalité **Intune Device protection** : si vos licences incluent Intune et que vous n’avez pas fini de configurer Intune ou inscrit vos appareils, nous vous recommandons de créer une stratégie Intune afin de protéger les fichiers de votre organisation lorsque les utilisateurs y accèdent à partir de leurs appareils mobiles.
 - **Obtenir les mises à jour mensuelles des fonctionnalités Office** : nous avons reçu des commentaires de nos très petits clients qui, lorsqu’ils reçoivent les mises à jour mensuelles des fonctionnalités Office, leurs utilisateurs sont plus heureux. Par conséquent, si vous êtes une très petite entreprise et que vous obtenez actuellement vos mises à jour de fonctionnalité Office tous les six mois, vous verrez cette recommandation.
 
-**Settings** <br>
+**Paramètres** <br>
 En ce qui concerne les paramètres, il y a eu quelques modifications. Il suffit de mettre à jour les paramètres existants vers le nouveau style du centre d’administration. Lors de la progression et de l’ajout de nouveaux paramètres que vous n’avez jamais vus auparavant, nous commencerons à les mentionner ici. Et nous disposons d’un paramètre unique pour annoncer : **authentification moderne**. Oui, il existe un nouveau paramètre pour activer **l’authentification moderne**! Pour l’extraire, accédez à **paramètres** > **services &** > **l’authentification moderne**des compléments.
 
 ## <a name="april-2019"></a>Avril 2019

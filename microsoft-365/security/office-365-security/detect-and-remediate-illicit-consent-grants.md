@@ -16,12 +16,12 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: Découvrez comment reconnaître et corriger le consentement illicite accorde une attaque dans Office 365.
-ms.openlocfilehash: 43ce8de2826006069b815a37208fe2a3834bf313
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 49fbbc1ea687cb5c01b39045a7359ee131a6732a
+ms.sourcegitcommit: 481fb95d8b80cf2102a9c73b21e7effa79e594e7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637603"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "43808990"
 ---
 # <a name="detect-and-remediate-illicit-consent-grants"></a>Détecter et résoudre les accords de consentement illicite
 
@@ -48,17 +48,18 @@ Vous devez rechercher le **Journal d’audit** pour trouver des signes, égaleme
 
 3. Recherche (toutes les activités et tous les utilisateurs), entrez la date de début et la date de fin, si nécessaire, puis cliquez sur **Rechercher**. 
 
-4. Filtrez les résultats de consentement vers l’application et ajoutez OAuth2PermissionGrant.
+4. Cliquez sur **Filtrer les résultats** et entrez le consentement à l’application dans le champ **activité** .
 
 5. Cliquez sur le résultat pour afficher les détails de l’activité. Cliquez sur **informations supplémentaires** pour obtenir les détails de l’activité. Vérifiez si IsAdminContent est défini sur true.
 
 > [!NOTE]
-> * L’affichage de l’entrée du journal d’audit correspondante dans les résultats de la recherche après un événement peut prendre entre 30 minutes et 24 heures. <br/><br/> La durée de conservation et de recherche d’un enregistrement d’audit dans le journal d’audit dépend de votre abonnement Microsoft 365 et, en particulier, du type de licence affecté à un utilisateur spécifique. Pour plus d’informations, consultez la rubrique [Journal d’audit](../../compliance/search-the-audit-log-in-security-and-compliance.md).
-Si cette valeur est true, cela signifie qu’une personne disposant d’un accès administrateur général peut avoir accordé un accès étendu aux données. Si cette opération est inattendue, prenez les mesures nécessaires pour [confirmer une attaque](#how-to-confirm-an-attack).
+> L’affichage de l’entrée du journal d’audit correspondante dans les résultats de la recherche après un événement peut prendre entre 30 minutes et 24 heures. <br/><br/> La durée de conservation et de recherche d’un enregistrement d’audit dans le journal d’audit dépend de votre abonnement Microsoft 365 et, en particulier, du type de licence affecté à un utilisateur spécifique. Pour plus d’informations, consultez la rubrique [Journal d’audit](../../compliance/search-the-audit-log-in-security-and-compliance.md).
+> 
+> Si cette valeur est true, cela signifie qu’une personne disposant d’un accès administrateur général peut avoir accordé un accès étendu aux données. Si cette opération est inattendue, prenez les mesures nécessaires pour [confirmer une attaque](#how-to-confirm-an-attack).
 
 ## <a name="how-to-confirm-an-attack"></a>Procédure de confirmation d’une attaque
 
-Si vous avez une ou plusieurs instances de l’IOCs mentionnées ci-dessus, vous devez procéder à une nouvelle enquête afin de confirmer que l’attaque a eu lieu. Vous pouvez utiliser l’une des trois méthodes suivantes pour confirmer l’attaque.
+Si vous avez une ou plusieurs instances de l’IOCs mentionnées ci-dessus, vous devez procéder à une nouvelle enquête afin de confirmer que l’attaque a eu lieu. Vous pouvez utiliser l’une des trois méthodes suivantes pour confirmer l’attaque :
 
 - Inventorier les applications et leurs autorisations à l’aide du portail Azure Active Directory. Cette méthode est complète, mais vous ne pouvez vérifier qu’un seul utilisateur à la fois, ce qui peut prendre beaucoup de temps si vous avez un grand nombre d’utilisateurs à vérifier.
 
@@ -158,9 +159,9 @@ Une fois que vous avez identifié une application avec des autorisations illéga
 
 - Vous pouvez désactiver les applications intégrées pour votre client. Il s’agit d’une étape importante qui empêche les utilisateurs finaux d’accorder leur consentement à l’échelle du client. Cela empêche vos utilisateurs d’accorder par inadvertance l’accès à une application malveillante. Cette opération n’est pas fortement recommandée car elle affaiblit gravement la capacité de vos utilisateurs à être productifs avec des applications tierces. Pour ce faire, procédez comme suit : [activation ou](https://docs.microsoft.com/office365/admin/misc/integrated-apps)désactivation des applications intégrées.
 
-## <a name="secure-microsoft-365-like-a-cybersecurity-pro"></a>Sécurisation de Microsoft 365 comme un Cybersecurity Pro
+## <a name="secure-microsoft-365-like-a-cybersecurity-pro"></a>Sécuriser Microsoft 365 comme un pro de la cyber-sécurité
 
-Votre abonnement Microsoft 365 est fourni avec un ensemble de fonctionnalités de sécurité puissantes que vous pouvez utiliser pour protéger vos données et vos utilisateurs. Utilisez la feuille de [route de sécurité microsoft 365-priorités principales pour les 30 jours, 90 jours et au-delà](security-roadmap.md) pour implémenter les meilleures pratiques recommandées par Microsoft pour la sécurisation de votre client Microsoft 365.
+Votre abonnement Microsoft 365 inclut un ensemble puissant de fonctionnalités de sécurité que vous pouvez utiliser pour protéger vos données et vos utilisateurs. Utilisez la [Feuille de route du Centre de sécurité Microsoft 365 : principales priorités pour les 30 premiers jours, 90 premiers jours et au-delà](security-roadmap.md), pour implémenter les meilleures pratiques recommandées par Microsoft pour sécuriser votre client Microsoft 365.
 
 - Tâches à effectuer lors des 30 premiers jours. Elle ont un effet immédiat et n’ont qu’un faible impact négatif sur vos utilisateurs.
 

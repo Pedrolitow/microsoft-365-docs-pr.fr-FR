@@ -16,12 +16,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Les administrateurs peuvent apprendre à configurer les paramètres de courrier indésirable dans les boîtes aux lettres Exchange Online. Un grand nombre de ces paramètres sont disponibles pour les utilisateurs dans Outlook ou Outlook sur le Web.
-ms.openlocfilehash: a18706c4bf63d9d96ba5e2f9bcbb803bddec36db
-ms.sourcegitcommit: 72e43b9bf85dbf8f5cf2040ea6a4750d6dc867c9
+ms.openlocfilehash: 55597c45f093a5b9a0b860c6987454f926025e28
+ms.sourcegitcommit: 1e9ce51efa583c33625299d17e37f58048a4169c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/24/2020
-ms.locfileid: "43800066"
+ms.locfileid: "43804795"
 ---
 # <a name="configure-junk-email-settings-on-exchange-online-mailboxes"></a>Configurer les paramètres de courrier indésirable dans les boîtes aux lettres Exchange Online
 
@@ -54,7 +54,7 @@ Les administrateurs peuvent utiliser Exchange Online PowerShell pour désactiver
 ## <a name="use-exchange-online-powershell-to-enable-or-disable-the-junk-email-rule-in-a-mailbox"></a>Utiliser Exchange Online PowerShell pour activer ou désactiver la règle de courrier indésirable dans une boîte aux lettres
 
 > [!NOTE]
-> Vous pouvez uniquement utiliser la cmdlet **Set-MailboxJunkEmailConfiguration** pour désactiver la règle de courrier indésirable sur une boîte aux lettres ouverte dans Outlook (en mode Exchange mis en cache) ou Outlook sur le web. Si la boîte aux lettres n’a pas été ouverte, vous recevez `The Junk Email configuration couldn't be set. The user needs to sign in to Outlook Web App before they can modify their Safe Senders and Recipients or Blocked Senders lists.` l’erreur suivante : Si vous souhaitez supprimer cette erreur pour les opérations en `-ErrorAction SlientlyContinue` bloc, vous pouvez ajouter à la commande **Set-MailboxJunkEmailConfiguration**
+> Vous pouvez uniquement utiliser la cmdlet **Set-MailboxJunkEmailConfiguration** pour désactiver la règle de courrier indésirable sur une boîte aux lettres ouverte dans Outlook (en mode Exchange mis en cache) ou Outlook sur le web. Si la boîte aux lettres n’a pas été ouverte, vous recevez `The Junk Email configuration couldn't be set. The user needs to sign in to Outlook Web App before they can modify their Safe Senders and Recipients or Blocked Senders lists.` l’erreur suivante : Si vous souhaitez supprimer cette erreur pour les opérations en `-ErrorAction SlientlyContinue` bloc, vous pouvez ajouter à la commande **Set-MailboxJunkEmailConfiguration** .
 
 Pour activer ou désactiver la règle de courrier indésirable dans une boîte aux lettres, utilisez la syntaxe suivante :
 
@@ -76,11 +76,11 @@ $All = Get-Mailbox -RecipientTypeDetails UserMailbox -ResultSize Unlimited; $All
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, consultez la rubrique [Set-MailboxJunkEmailConfiguration](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/set-mailboxjunkemailconfiguration).
 
- **Remarques** :
-
-- Si l’utilisateur n’a jamais ouvert sa boîte aux lettres, il se peut que vous receviez une erreur lors de l’exécution de la commande précédente. Pour supprimer cette erreur pour les opérations en bloc `-ErrorAction SlientlyContinue` , ajoutez à la commande **Set-MailboxJunkEmailConfiguration** .
-
-- Même si vous désactivez la règle de courrier indésirable, le filtre de courrier indésirable d’Outlook (en fonction de sa configuration) peut également déterminer si un message est un courrier indésirable et déplacer des messages vers le dossier boîte de réception ou courrier indésirable en fonction de son verdict de courrier indésirable et de la collection de listes fiables sur la boîte aux lettres Pour plus d’informations, consultez la section [À propos des paramètres de courrier indésirable dans Outlook](#about-junk-email-settings-in-outlook) dans cette rubrique.
+> [!NOTE]
+> 
+> - Si l’utilisateur n’a jamais ouvert sa boîte aux lettres, il se peut que vous receviez une erreur lors de l’exécution de la commande précédente. Pour supprimer cette erreur pour les opérations en bloc `-ErrorAction SlientlyContinue` , ajoutez à la commande **Set-MailboxJunkEmailConfiguration** .
+> 
+> - Même si vous désactivez la règle de courrier indésirable, le filtre de courrier indésirable d’Outlook (en fonction de sa configuration) peut également déterminer si un message est un courrier indésirable et déplacer des messages vers le dossier boîte de réception ou courrier indésirable en fonction de son verdict de courrier indésirable et de la collection de listes fiables sur la boîte aux lettres Pour plus d’informations, consultez la section [À propos des paramètres de courrier indésirable dans Outlook](#about-junk-email-settings-in-outlook) dans cette rubrique.
 
 ### <a name="how-do-you-know-this-worked"></a>Comment savoir si cela a fonctionné ?
 
@@ -145,13 +145,13 @@ $All = Get-Mailbox -RecipientTypeDetails UserMailbox -ResultSize Unlimited; $All
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, consultez la rubrique [Set-MailboxJunkEmailConfiguration](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/set-mailboxjunkemailconfiguration).
 
- **Remarques** :
-
-- Si l’utilisateur n’a jamais ouvert sa boîte aux lettres, il se peut que vous receviez une erreur lors de l’exécution des commandes précédentes. Pour supprimer cette erreur pour les opérations en bloc `-ErrorAction SlientlyContinue` , ajoutez à la commande **Set-MailboxJunkEmailConfiguration** .
-
-- Même si la règle de courrier indésirable est désactivée sur la boîte aux lettres, vous pouvez toujours configurer la collection de listes fiables et le filtre de courrier indésirable Outlook est capable de déplacer des messages vers la boîte de réception ou le dossier courrier indésirable. Pour plus d'informations, consultez la section [À propos des paramètres de courrier indésirable dans Outlook](#about-junk-email-settings-in-outlook) dans cette rubrique.
-
-- Le filtre de courrier indésirable d’Outlook comporte des paramètres de collection de listes fiables supplémentaires (par exemple, **Ajouter automatiquement les personnes auxquelles j’envoie un message électronique à la liste des expéditeurs approuvés**). Pour plus d'informations, voir [Utiliser les filtres de courrier indésirable pour contrôler les messages affichés](https://support.office.com/article/274ae301-5db2-4aad-be21-25413cede077).
+> [!NOTE]
+> 
+> - Si l’utilisateur n’a jamais ouvert sa boîte aux lettres, il se peut que vous receviez une erreur lors de l’exécution des commandes précédentes. Pour supprimer cette erreur pour les opérations en bloc `-ErrorAction SlientlyContinue` , ajoutez à la commande **Set-MailboxJunkEmailConfiguration** .
+> 
+> - Même si la règle de courrier indésirable est désactivée sur la boîte aux lettres, vous pouvez toujours configurer la collection de listes fiables et le filtre de courrier indésirable Outlook est capable de déplacer des messages vers la boîte de réception ou le dossier courrier indésirable. Pour plus d'informations, consultez la section [À propos des paramètres de courrier indésirable dans Outlook](#about-junk-email-settings-in-outlook) dans cette rubrique.
+> 
+> - Le filtre de courrier indésirable d’Outlook comporte des paramètres de collection de listes fiables supplémentaires (par exemple, **Ajouter automatiquement les personnes auxquelles j’envoie un message électronique à la liste des expéditeurs approuvés**). Pour plus d'informations, voir [Utiliser les filtres de courrier indésirable pour contrôler les messages affichés](https://support.office.com/article/274ae301-5db2-4aad-be21-25413cede077).
 
 ### <a name="how-do-you-know-this-worked"></a>Comment savoir si cela a fonctionné ?
 

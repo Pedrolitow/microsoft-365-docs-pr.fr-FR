@@ -17,12 +17,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: c15f0b30dbf377da4e01ba199852f02bd7a003ff
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 56c3187999d34ac6d84c1b3857053f82bb40b2a9
+ms.sourcegitcommit: 1e9ce51efa583c33625299d17e37f58048a4169c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637103"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "43804755"
 ---
 # <a name="microsoft-secure-score"></a>Degré de sécurisation Microsoft
 
@@ -38,7 +38,7 @@ Les organisations ont accès à des visualisations robustes de mesures et tendan
 
 En outre, vous pouvez accéder à vos recommandations et à votre score via l' [API Microsoft Graph](https://www.microsoft.com/security/partnerships/graph-security-api). En savoir plus sur le [type de ressource de score sécurisé](https://go.microsoft.com/fwlink/?linkid=2092996).
 
-## <a name="how-it-works"></a>Fonctionnement
+## <a name="how-it-works"></a>Mode de fonctionnement
 
 Vous disposez de points pour configurer les fonctionnalités de sécurité recommandées, effectuer des tâches liées à la sécurité (telles que l’affichage des rapports) ou traiter l’action d’amélioration avec une application ou un logiciel tiers. Certaines actions d’amélioration donnent uniquement des points lorsqu’ils sont complètement terminés, et d’autres les déposent si elles sont terminées pour certains périphériques ou utilisateurs.
 
@@ -120,9 +120,7 @@ Lorsque vous sélectionnez une action d’amélioration spécifique, un survol s
 
 3. Sélectionnez **Ignorer** , car vous avez décidé d’accepter le risque et de ne pas appliquer l’action d’amélioration. Une fois que vous ignorez une action d’amélioration, le nombre total de points de score sécurisé que vous pouvez atteindre est réduit. Vous pouvez afficher cette action dans l’historique ou l’annuler à tout moment.
 
-4. Sélectionnez **Review** , car l’action d’amélioration vous oblige à examiner régulièrement une partie de votre environnement pour gagner et conserver des points. Par exemple, les règles de transfert de boîtes aux lettres doivent être vérifiées chaque semaine afin de s’assurer que les données ne sont pas exportées à partir de votre réseau. Vous n’avez pas besoin d’effectuer des modifications, mais une action doit être effectuée. Si vous examinez régulièrement les règles, vous recevrez les points. Si ce n’est pas le cas, le score est réduit.
-
-![Exemple d’action d’amélioration du score sécurisé](../../media/secure-score/secure-score1x450.png) ![Exemple d’action d’amélioration de la vérification du score sécurisé](../../media/secure-score/secure-score2x450.png)
+![Exemple d’action d’amélioration du score sécurisé](../../media/secure-score/secure-score1x450.png)
 
 *Figures 2 & 3 : lanceurs d’actions d’amélioration*
 
@@ -137,6 +135,15 @@ Microsoft Secure score est un résumé numérique de votre position de sécurit�
 ## <a name="whats-new"></a>Quelles sont les nouveautés ?
 
 Pour faire en sorte que Microsoft Secure score un meilleur représentant de votre position de sécurité, nous avons apporté des modifications. Pour en savoir plus sur les modifications planifiées, consultez [la rubrique what’s from Microsoft Secure score ?](microsoft-secure-score-whats-coming.md)
+
+### <a name="april-21st-2020"></a>21 avril 2020
+
+#### <a name="removing-improvement-actions-that-dont-meet-expectations-for-reliable-measurement-or-dont-provide-a-useful-representation-of-security-posture"></a>Suppression des actions d’amélioration qui ne répondent pas aux attentes en matière de mesure fiable ou ne fournissent pas une représentation utile de la position de la sécurité
+
+Pour vous assurer que le score de sécurité de Microsoft est significatif et que chaque action d’amélioration est mesurable et fiable, nous supprimons les actions d’amélioration suivantes.
+
+- Appliquer des protections IRM aux documents
+- Appliquer des stratégies de protection contre la perte de données
 
 ### <a name="january---march-2020"></a>Janvier-mars 2020
 

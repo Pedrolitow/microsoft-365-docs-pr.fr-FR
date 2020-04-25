@@ -15,18 +15,19 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: Découvrez les actions de correction dans les fonctionnalités d’analyse et de réponse automatisées dans Office 365 Advanced Threat Protection Plan 2.
-ms.openlocfilehash: d14b8827bd3c69461d832d66bb371b5d62d9802e
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: c44b0a535e6838258d3efa63010d7ccc63009af9
+ms.sourcegitcommit: 1e9ce51efa583c33625299d17e37f58048a4169c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634639"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "43804823"
 ---
 # <a name="view-pending-or-completed-remediation-actions-following-an-automated-investigation-in-office-365"></a>Afficher les actions de correction en attente ou terminées à la suite d’une enquête automatisée dans Office 365
 
-## <a name="approve-or-reject-pending-actions"></a>Approuver (ou rejeter) les actions en attente
 
 ![Page action de l’enquête par avion](../../media/air-investigationactionspage.png)
+
+## <a name="approve-or-reject-pending-actions"></a>Approuver (ou rejeter) les actions en attente
 
 Lors de l’affichage [des détails d’une enquête](air-view-investigation-results.md), vous pouvez approuver ou refuser les actions correctives en attente. Nous vous recommandons de le faire dès que possible pour que vos investigations automatiques soient terminées.
 
@@ -44,8 +45,8 @@ Lors de l’affichage [des détails d’une enquête](air-view-investigation-res
 5. Sélectionnez un élément dans la liste. (Cela active les boutons approuver et rejeter.)
 
 6. Examinez les informations disponibles pour les éléments que vous avez sélectionnés, puis approuvez ou rejetez la ou les actions. 
- - **Approuver** : le début de la correction.
- - Le **rejet** n’effectue aucune action supplémentaire
+   - **Approuver** : le début de la correction.
+   - Le **rejet** n’effectue aucune action supplémentaire
 
 ## <a name="next-steps"></a>Étapes suivantes
 

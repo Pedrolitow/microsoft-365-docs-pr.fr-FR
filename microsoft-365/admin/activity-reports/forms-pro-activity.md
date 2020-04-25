@@ -17,14 +17,14 @@ search.appverid:
 - MOE150
 - GEA150
 description: Découvrez comment obtenir un rapport d’activité Microsoft Forms Pro à l’aide du tableau de bord des rapports Microsoft 365 dans le centre d’administration Microsoft 365.
-ms.openlocfilehash: 69938124b1aeb996afd52c119ac61e2e607f871e
-ms.sourcegitcommit: b8a9994b26a6d9865212f5b1871286e719d1608e
+ms.openlocfilehash: b86fffe580e67e86999379cc3186465dcfc7fed8
+ms.sourcegitcommit: 1e9ce51efa583c33625299d17e37f58048a4169c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43781612"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "43804817"
 ---
-# <a name="microsoft-365-reports-in-the-admin-center---forms-activity"></a>Rapports Microsoft 365 dans le centre d’administration-activité des formulaires
+# <a name="microsoft-365-reports-in-the-admin-center---forms-pro-activity"></a>Rapports Microsoft 365 dans le centre d’administration-activité Pro Forms
 
 Le tableau de bord **rapports** Microsoft 365 affiche une vue d’ensemble de l’activité sur les produits de votre organisation. Il vous permet d'explorer les rapports au niveau de chaque produit afin d'offrir des informations plus précises sur les activités pour chaque produit. Voir [la rubrique Présentation des rapports](activity-reports.md).
   

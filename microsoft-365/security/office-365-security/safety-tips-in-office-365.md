@@ -17,16 +17,18 @@ ms.assetid: fb4f8e49-0468-4be2-8fa6-99501f1ad9d5
 ms.collection:
 - M365-security-compliance
 description: Présente des conseils de sécurité pour les messages électroniques filtrés par EOP et le filtre de courrier indésirable.
-ms.openlocfilehash: 7171f5855e295ffac931862c86db011c9f38a4c6
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: c7d7e6819e1374fd941d6eeb992ecf63726d4127
+ms.sourcegitcommit: 481fb95d8b80cf2102a9c73b21e7effa79e594e7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634303"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "43809025"
 ---
 # <a name="safety-tips-in-email-messages"></a>Conseils de sécurité dans les messages électroniques
 
-Exchange Online Protection (EOP) et Microsoft 365 vous protègent en matière de courrier indésirable, de hameçonnage et de protection contre les programmes malveillants. À l’heure actuelle, certaines de ces attaques sont tellement bien conçues qu’elles semblent légitimes. L’envoi de messages vers le dossier courrier indésirable n’est pas toujours suffisant. À présent, lorsque vous vérifiez votre courrier électronique dans Outlook ou Outlook sur le Web, EOP vérifie automatiquement l’expéditeur et ajoute un Conseil de sécurité en haut du message.
+Exchange Online Protection (EOP) et Microsoft 365 vous protègent en matière de courrier indésirable, de hameçonnage et de protection contre les programmes malveillants. À l’heure actuelle, certaines de ces attaques sont tellement bien conçues qu’elles semblent légitimes. L’envoi de messages vers le dossier courrier indésirable n’est pas toujours suffisant. À présent, lorsque vous vérifiez votre courrier électronique dans Outlook ou Outlook sur le Web ou un client de messagerie, EOP vérifie automatiquement l’expéditeur et ajoute un Conseil de sécurité en haut du message.
+
+Les conseils de sécurité dans Outlook ne dépendent pas de la version d’Outlook que vous utilisez, car le Conseil de sécurité est fissuré ouvert et inséré directement dans le corps du message. Cela signifie que le Conseil de sécurité s’affichera dans le client de messagerie que vous utilisez. Il est effectué au niveau du filtre de courrier et n’est pas affiché au niveau du client de messagerie, de sorte qu’il s’affiche non seulement dans n’importe quelle version d’Outlook, mais également dans n’importe quel client de messagerie.
 
 Le Conseil de sécurité, un message codé en couleur, vous avertit des messages potentiellement dangereux. La plupart des messages de votre boîte de réception n’ont pas de Conseil de sécurité. Vous ne les verrez que lorsque EOP et Microsoft 365 disposent des informations dont vous avez besoin pour éviter le courrier indésirable, le hameçonnage et les programmes malveillants. Si les conseils de sécurité s’affichent dans votre boîte de réception, vous pouvez utiliser les exemples suivants pour en savoir plus sur chaque type de Conseil de sécurité.
 
@@ -55,6 +57,7 @@ Le Conseil de sécurité, un message codé en couleur, vous avertit des messages
     Nous vous indiquerons également quand nous avons ignoré la vérification d’un message, car il provient d’un expéditeur que vous approuvez sur votre liste des expéditeurs approuvés ou si une règle de flux de messagerie existe pour contourner le filtrage.
 
     Le Conseil de sécurité gris s’affiche également lorsque les images externes sont bloquées, c’est-à-dire que le message se trouve dans votre boîte de réception et qu’il ne semble pas être un courrier indésirable, mais il contient des images externes que vous n’avez pas choisi de télécharger.
+    
 
 ## <a name="working-with-safety-tips"></a>Utilisation des conseils de sécurité
 
