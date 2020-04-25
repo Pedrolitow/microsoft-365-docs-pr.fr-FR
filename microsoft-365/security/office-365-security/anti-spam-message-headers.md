@@ -15,12 +15,12 @@ ms.assetid: 2e3fcfc5-5604-4b88-ac0a-c5c45c03f1db
 ms.collection:
 - M365-security-compliance
 description: Apprenez-en davantage sur les champs et valeurs d’en-tête ajoutés aux messages par Exchange Online Protection.
-ms.openlocfilehash: 1bb2468908ef9711242bdb236f7f43f9f6e43eb1
-ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
+ms.openlocfilehash: 8b034da9e6c4ac138e804e07e4654c1e269aeda1
+ms.sourcegitcommit: 4f2129b161eed3f9ddec47494fa19a2a7a553e4f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43708582"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "43805210"
 ---
 # <a name="anti-spam-message-headers"></a>En-têtes de messages anti-courrier indésirable
 
@@ -46,7 +46,7 @@ Après avoir accédé aux informations d’un en-tête de message, recherchez **
 |IPV:CAL|Le message a ignoré le filtrage du courrier indésirable, car l’adresse IP source figure dans la liste d’adresses IP autorisées. Pour plus d’informations, consultez [Configuration du filtrage des connexions](configure-the-connection-filter-policy.md).|
 |IPV:NLI|L’adresse IP n’était répertoriée sur aucune liste de réputation d’adresses IP.|
 |LANG|Langue dans laquelle le message a été rédigé, tel que spécifié par le code du pays (par exemple, ru_RU pour le russe).|
-|PTR : \[ReverseDNS\]|Enregistrement PTR (connu également sous le nom d’enregistrement de pointeur ou d’adresse DNS inverse) de l’adresse IP source.|
+|PTR : \[ReverseDNS\]|L’enregistrement PTR (également connu sous le nom de recherche DNS inverse) de l’adresse IP source.|
 |SCL|Seuil de niveau (SCL) du message. Plus cette valeur est élevée, plus il est probable que le message est un courrier indésirable. Pour plus d’informations, consultez [Seuil de probabilité de courrier indésirable (SCL)](spam-confidence-levels.md).|
 |SFTY|Le message a été identifié comme étant du hameçonnage et sera également marqué par l'une des valeurs suivantes : <ul><li>9.1 : valeur par défaut. Le message contient une URL de hameçonnage, peut contenir d’autres contenus de hameçonnage ou peut avoir été marqué comme message de hameçonnage par un autre filtre de messagerie (par exemple, Exchange Server local) avant d’être relayé vers Microsoft 365.</li><li>9.11 : [Usurpation d’identité intra-organisation ou de soi à soi](anti-spoofing-protection.md#different-types-of-spoofing). Le message a échoué aux vérifications anti-usurpation où le domaine de messagerie de l’expéditeur figurant dans l'en-tête De est le même que, correspond à ou fait partie de la même organisation que le domaine de réception. Le conseil de sécurité relatif à l’usurpation d’identité intra-organisation sera ajouté au message.</li><li>9.19 : Emprunt d’identité de domaine. Le domaine expéditeur tente d’emprunter l’identité d’un domaine protégé (domaine appartenant à l’organisation du destinataire ou domaine personnalisé) spécifié dans une stratégie ATP anti-hameçonnage. Le conseil de sécurité pour l’emprunt d’identité de domaine est ajouté au message (si le conseil de sécurité est activé dans la stratégie ATP anti-hameçonnage).</li><li>9.20 : Emprunt d’identité d’un utilisateur. L’utilisateur expéditeur tente d’emprunter l’identité d’un utilisateur dans l’organisation du destinataire ou un utilisateur protégé spécifié dans une stratégie ATP anti-hameçonnage. Le conseil de sécurité pour l’emprunt d’identité d’un utilisateur est ajouté au message (si le conseil de sécurité est activé dans la stratégie ATP anti-hameçonnage).</li><li>9.21 : [Usurpation d’identité inter-domaines](anti-spoofing-protection.md#different-types-of-spoofing). Le message a échoué aux vérifications anti-usurpation où le domaine de messagerie de l’expéditeur figurant dans l'en-tête De ne s’authentifie pas et est un domaine externe. Utilisé conjointement avec [CompAuth](#authentication-results-message-header-fields-used-by-microsoft-email-authentication)).</li><li>9.22 : similaire au point 9.21 hormis que l’utilisateur possède un expéditeur approuvé qui a été remplacé.</li><li>9.23 : similaire au point 9.22 hormis que l’organisation possède un expéditeur ou un domaine autorisé qui a été remplacé.</li><li>9.24 : similaire au point 9.23 hormis que l’utilisateur possède une règle de flux de courrier Exchange (également connue sous le nom de règle de transport) qui a été remplacée.</li></ul>|
 |SFV:BLK|Le filtrage a été ignoré et le message a été bloqué car il a été envoyé à partir d'une adresse figurant sur la liste des expéditeurs bloqués d'un utilisateur (liste Expéditeurs bloqués de l’utilisateur).<br/></br> Pour plus d’informations sur la manière dont les administrateurs peuvent gérer la liste Expéditeurs bloqués d’un utilisateur, consultez [Configurer les paramètres de courrier indésirable dans les boîtes aux lettres Exchange Online](configure-junk-email-settings-on-exo-mailboxes.md).|
