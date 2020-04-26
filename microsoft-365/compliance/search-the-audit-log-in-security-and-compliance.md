@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: 'Utilisez le Centre de sécurité et conformité pour rechercher dans le journal d’audit unifié les activités des utilisateurs et des administrateurs de votre organisation. '
-ms.openlocfilehash: 8798dccb02b35158bce34b710362c5b020a9bb15
-ms.sourcegitcommit: 72e43b9bf85dbf8f5cf2040ea6a4750d6dc867c9
+ms.openlocfilehash: f3cf16da0c7623c1cdd7f90272fa4b11126dcc25
+ms.sourcegitcommit: 4f2129b161eed3f9ddec47494fa19a2a7a553e4f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/24/2020
-ms.locfileid: "43800045"
+ms.locfileid: "43805191"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>Effectuer des recherches dans le journal d’audit depuis le Centre de sécurité et conformité 
 
@@ -129,6 +129,7 @@ Avant de commencer à effectuer une recherche dans le journal d’audit, veillez
   |Power Apps||![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
   |Power BI|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
   |Centre de sécurité et conformité|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+  |Étiquettes de confidentialité||![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
   |Sharepoint Online et OneDrive Entreprise|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
   |Sway||![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
   |Workplace Analytics|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
@@ -818,7 +819,7 @@ Le tableau suivant répertorie les activités de l’Explorateur de contenu qui 
 
 ### <a name="quarantine-activities"></a>Activités de mise en quarantaine
 
-Le tableau suivant illustre une liste d’activités que vous pouvez rechercher dans le journal d’audit. Pour plus d’informations sur la mise en quarantaine, voir [mettre en quarantaine des courriers électroniques dans Office 365](../security/office-365-security/quarantine-email-messages.md).
+Le tableau suivant illustre une liste d’activités que vous pouvez rechercher dans le journal d’audit. Si vous souhaitez en savoir plus sur la mise en quarantaine, consultez l’article [Mettre les e-mails en quarantaine dans Office 365](../security/office-365-security/quarantine-email-messages.md).
 
 |**Nom convivial**|**Opération**|**Description**|
 |:-----|:-----|:-----|
