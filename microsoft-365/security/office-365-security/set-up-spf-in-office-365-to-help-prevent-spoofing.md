@@ -16,12 +16,12 @@ ms.assetid: 71373291-83d2-466f-86ea-fc61493743a6
 ms.collection:
 - M365-security-compliance
 description: 'Résumé : Cet article explique comment mettre à jour un enregistrement DNS (Domain Name Service) afin que vous puissiez utiliser le SPF (Sender Policy Framework) avec votre domaine personnalisé dans Office 365. L’utilisation de SPF permet de valider les messages sortants envoyés à partir de votre domaine personnalisé.'
-ms.openlocfilehash: c1424ed9da6a36128d9f4502aadb475068ad029b
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 9d84fb60886dd1518beb8a94438d5168c869a8c8
+ms.sourcegitcommit: 481fb95d8b80cf2102a9c73b21e7effa79e594e7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43638319"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "43808976"
 ---
 # <a name="set-up-spf-to-help-prevent-spoofing"></a>Configurer SPF pour empêcher l’usurpation
 
@@ -49,7 +49,7 @@ Collectez les informations ci-dessous :
 
 - L'enregistrement TXT SPF actuel pour votre domaine personnalisé. Pour obtenir des instructions, consultez [Recueillez les informations nécessaires pour créer des enregistrements DNS Office 365](https://docs.microsoft.com/office365/admin/get-help-with-domains/information-for-dns-records).
 
-- Les adresses IP de tous les serveurs de messagerie locaux. Par exemple, **192.168.0.1**.
+- Les adresses IP externes de tous les serveurs de messagerie locaux. Par exemple, **131.107.2.200**.
 
 - Les noms de domaine à utiliser pour tous les domaines de tiers que vous devez inclure dans votre enregistrement TXT SPF. Certains fournisseurs de messagerie en bloc disposent de sous-domaines configurés que leurs clients peuvent utiliser. Par exemple, la société MailChimp a configuré **servers.mcsv.net**.
 

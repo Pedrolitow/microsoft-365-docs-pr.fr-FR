@@ -18,12 +18,12 @@ ms.collection:
 ms.custom: TopSMBIssues
 localization_priority: Priority
 description: ''
-ms.openlocfilehash: 3a306cb8bda0f5f07660f8a2af60e29a3c4d0776
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: e66a0b7965212ef65663208efd73378d8c14a726
+ms.sourcegitcommit: 4f2129b161eed3f9ddec47494fa19a2a7a553e4f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636033"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "43805229"
 ---
 # <a name="anti-spoofing-protection"></a>Protection contre l’usurpation d’identité
 
@@ -92,11 +92,9 @@ Microsoft distingue deux types de messages usurpant une identité :
 
   `Authentication-Results: ... compauth=fail reason=6xx`
 
-  `X-Forefront-Antispam-Report: ...CAT:SPM/HSPM/PHSH;...SFTY:9.11`
+  `X-Forefront-Antispam-Report: ...CAT:SPOOF;...SFTY:9.11`
 
   - `reason=6xx` indique l’usurpation intra-organisationnelle.
-
-  - CAT correspond à la catégorie du message qui est normalement SPM (courrier indésirable), mais peut parfois être HSPM (courrier fortement suspecté d’être indésirable) ou PHSH (hameçonnage), en fonction des autres types de structures détectés dans le message.
 
   - SFTY est le niveau de sécurité du message. 9 indique un hameçonnage, .11 indique une usurpation intra-organisationnelle.
 
@@ -109,7 +107,7 @@ Microsoft distingue deux types de messages usurpant une identité :
 
   `X-Forefront-Antispam-Report: ...CAT:SPOOF;...SFTY:9.22`
 
-  - la valeur `reason=000` indique que le message a échoué à l’authentification implicite de courrier électronique. `reason=001` indique que le message a échoué à l’authentification implicite de courrier électronique.
+  - `reason=000` indique que le message a échoué à l’authentification explicite de courrier électronique. `reason=001` indique que le message a échoué à l’authentification implicite de courrier électronique.
 
   - SFTY est le niveau de sécurité du message. 9 indique un hameçonnage, .22 indique une usurpation inter-domaines.
 
