@@ -21,14 +21,21 @@ ms.assetid: 739574d7-2c5b-4911-a549-f56ecc7d3b48
 description: Centre d’administration Microsoft 365-Découvrez les fonctionnalités qui ont été ajoutées ce mois-ci.
 ms.custom:
 - MACDashWhatsNew
-ms.openlocfilehash: a3c042413525ec591f74cd63685490f7de93775a
-ms.sourcegitcommit: 4f2129b161eed3f9ddec47494fa19a2a7a553e4f
+ms.openlocfilehash: 0b6d0741b5c59b1d720ca1ef73c0d45a674569b1
+ms.sourcegitcommit: c758a4290d205394225a0df2fd667cb565c79c8f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "43805176"
+ms.lasthandoff: 04/27/2020
+ms.locfileid: "43907236"
 ---
 # <a name="whats-new-in-the-microsoft-365-admin-center"></a>Nouveautés du centre d’administration Microsoft 365
+
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> Certaines des informations contenues dans cet article peuvent ne pas s’appliquer à Office 365 géré par 21Vianet.
+
+::: moniker-end
 
 Nous ajoutons constamment de nouvelles fonctionnalités au [Centre d’administration Microsoft 365](microsoft-365-admin-center-preview.md), à la résolution des problèmes que nous apprendons et en apportant des modifications en fonction de vos commentaires. Jetez un œil à ce qui est disponible dès aujourd’hui. Certaines fonctionnalités sont déployées à des vitesses différentes à nos clients. Si vous ne voyez pas encore de fonctionnalité, [essayez de vous ajouter à la version ciblée](manage/release-options-in-office-365.md).
 
@@ -83,7 +90,7 @@ Les nouveaux noms de produits entrent en vigueur le 21 avril 2020. Il s’agit d
 |Office 365 Business Essentials     |   Microsoft 365 Business Basic      |
 |Office 365 Business Premium     |    Microsoft 365 Business Standard     |
 |Microsoft 365 Business     |    Microsoft 365 Business Premium     |
-|Applications Microsoft 365 pour les PME     |    Microsoft 365 Apps for business       | 
+|Applications Microsoft 365 pour les PME     |    Applications Microsoft 365 pour les entreprises       | 
 |Office 365 ProPlus    |   Applications Microsoft 365 pour les entreprises      |
 
 ### <a name="videos-training-and-docs"></a>Vidéos, formation et documents
@@ -275,7 +282,7 @@ Une mise à jour a été mise à jour vers l’un des assistants d’installatio
 - **Sécurisez les ordinateurs Windows 10** : configurez des stratégies pour mieux protéger vos appareils Windows 10 contre les virus, les programmes malveillants et les attaques des pirates.
 - **Installer automatiquement Office** : lorsque vous activez cette fonction et que les utilisateurs ont connecté leurs PC à Microsoft 365 Business, leurs ordinateurs sont automatiquement mis à jour vers les dernières applications Office et restent à jour.
 
-## <a name="august-2019"></a>Août 2019
+## <a name="august-2019"></a>Août 2019
 
 ### <a name="billing"></a>Facturation
 
@@ -386,7 +393,7 @@ Vous pouvez voir une nouvelle recommandation dans votre centre d’administratio
 - Fonctionnalité **Intune Device protection** : si vos licences incluent Intune et que vous n’avez pas fini de configurer Intune ou inscrit vos appareils, nous vous recommandons de créer une stratégie Intune afin de protéger les fichiers de votre organisation lorsque les utilisateurs y accèdent à partir de leurs appareils mobiles.
 - **Obtenir les mises à jour mensuelles des fonctionnalités Office** : nous avons reçu des commentaires de nos très petits clients qui, lorsqu’ils reçoivent les mises à jour mensuelles des fonctionnalités Office, leurs utilisateurs sont plus heureux. Par conséquent, si vous êtes une très petite entreprise et que vous obtenez actuellement vos mises à jour de fonctionnalité Office tous les six mois, vous verrez cette recommandation.
 
-**Paramètres** <br>
+**Settings** <br>
 En ce qui concerne les paramètres, il y a eu quelques modifications. Il suffit de mettre à jour les paramètres existants vers le nouveau style du centre d’administration. Lors de la progression et de l’ajout de nouveaux paramètres que vous n’avez jamais vus auparavant, nous commencerons à les mentionner ici. Et nous disposons d’un paramètre unique pour annoncer : **authentification moderne**. Oui, il existe un nouveau paramètre pour activer **l’authentification moderne**! Pour l’extraire, accédez à **paramètres** > **services &** > **l’authentification moderne**des compléments.
 
 ## <a name="april-2019"></a>Avril 2019

@@ -17,16 +17,18 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 904c1a019c55cabce6856a7caaca73d08d6db3f7
-ms.sourcegitcommit: 841c06a5d566d404c35d5e9c0c7de5088daab976
+ms.openlocfilehash: eb6af6b11d2d932f3bd2165aa3f597c14feb5ae8
+ms.sourcegitcommit: b6c4b514b2cb6739af949780d7e2a5a5c8dcc161
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42836879"
+ms.lasthandoff: 04/27/2020
+ms.locfileid: "43901021"
 ---
 # <a name="manage-tickets-through-servicenow"></a>Gérer les tickets via ServiceNow
 
-Le centre de sécurité Microsoft 365 est optimisé grâce à la capacité à créer et suivre en mode natif des tickets dans ServiceNow. Les administrateurs de la sécurité peuvent envoyer une action d’amélioration de la [note sécurisée Microsoft](microsoft-secure-score.md) directement à ServiceNow et créer un ticket. Les tickets de gestion des modifications et de gestion des incidents peuvent être créés.
+ServiceNow est une plateforme de Cloud Computing populaire qui permet aux entreprises de gérer les flux de travail numériques pour les opérations d’entreprise. La plate-forme actuelle possède des flux de travail informatiques, des flux de travail d’employés et des flux de travail client. Microsoft s’est associé à ServiceNow pour permettre aux administrateurs informatiques de gérer plus facilement leurs tickets et leurs tâches sur les deux plateformes. [En savoir plus sur ServiceNow](https://www.servicenow.com/)
+
+Le centre de sécurité Microsoft 365 est désormais amélioré grâce à la capacité à créer et suivre en mode natif des tickets dans ServiceNow. Les administrateurs de la sécurité peuvent envoyer une action d’amélioration de la [note sécurisée Microsoft](microsoft-secure-score.md) directement à ServiceNow et créer un ticket. Les tickets de gestion des modifications et de gestion des incidents peuvent être créés. Ils peuvent ensuite être suivis dans la page d’accueil du centre de sécurité Microsoft et ServiceNow.
 
 ## <a name="prerequisites"></a>Conditions préalables
 

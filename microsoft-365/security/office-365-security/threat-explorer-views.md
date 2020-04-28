@@ -14,12 +14,12 @@ search.appverid: ''
 ms.collection:
 - M365-security-compliance
 description: Découvrez les différents types d’affichage disponibles dans l’Explorateur de menaces et les détections en temps réel.
-ms.openlocfilehash: 7b05ec1346df3bfa428c384a4236a8758e22da28
-ms.sourcegitcommit: 58c1b4208a5e231463091573e40696d08fc39b8e
+ms.openlocfilehash: ccee7905068619d959e0939aca8b31856dd114a1
+ms.sourcegitcommit: c758a4290d205394225a0df2fd667cb565c79c8f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "42955638"
+ms.lasthandoff: 04/27/2020
+ms.locfileid: "43907248"
 ---
 # <a name="views-in-threat-explorer-and-real-time-detections"></a>Affichages dans l’Explorateur de menaces et détections en temps réel
 
@@ -30,7 +30,15 @@ L' [Explorateur de menaces](threat-explorer.md) (et le rapport de détections en
 - Si vous disposez d' [Office 365 Advanced Threat Protection](office-365-atp.md) (ATP) plan 2, vous disposez de l’Explorateur.
 - Si vous disposez d’Office 365 DAV plan 1, vous disposez de détections en temps réel.
 
-Lorsque vous ouvrez l’Explorateur (ou le rapport de détection en temps réel) pour la première fois, la vue par défaut affiche les détections de programmes malveillants de messagerie pour les 7 derniers jours. Ce rapport peut également afficher des détections ATP, telles que les URL malveillantes détectées par les [liens fiables](atp-safe-links.md)et les fichiers malveillants détectés par des [pièces jointes fiables](atp-safe-attachments.md). Ce rapport peut être modifié pour afficher les données des 30 derniers jours (sauf si vous utilisez un abonnement à la version d’évaluation). Les abonnements à la version d’évaluation incluent des données pour les sept derniers jours.
+Lorsque vous ouvrez l’Explorateur (ou le rapport de détection en temps réel) pour la première fois, la vue par défaut affiche les détections de programmes malveillants de messagerie pour les 7 derniers jours. Ce rapport peut également afficher des détections ATP, telles que les URL malveillantes détectées par les [liens fiables](atp-safe-links.md)et les fichiers malveillants détectés par des [pièces jointes fiables](atp-safe-attachments.md). Ce rapport peut être modifié pour afficher les données des 30 derniers jours (avec un abonnement payant P2 ATP). Les abonnements à la version d’évaluation incluent des données pour les sept derniers jours.
+
+|Abonnement  |Utilitaire  |Jours de données  |
+|---------|---------|---------|
+|Version d’évaluation de l’ATP P1     | Détections en temps réel        |   7       |
+|ATP P1 payé     |   Détections en temps réel      |    0,30     |
+|Version d’évaluation de l’ATP P2, tests sponsorisés P1     | Threat Explorer   |   7    |
+|Piste P2 ATP     |  Threat Explorer       |     7     |
+|ATP P2 payé     |     Threat Explorer    |  0,30       |
 
 Utilisez le menu **affichage** pour modifier les informations affichées. Les info-bulles vous aident à déterminer l’affichage à utiliser.
   
@@ -99,7 +107,7 @@ Pour afficher ce rapport, dans l’Explorateur, sélectionnez **Afficher** > le 
 > [!NOTE]
 > Si vous obtenez une erreur indiquant un **trop grand nombre de données à afficher**, ajoutez un filtre et, si nécessaire, Affinez la plage de dates que vous visualisez. 
 
-Pour appliquer un filtre, choisissez **expéditeur**, sélectionnez un élément dans la liste, puis cliquez sur le bouton Actualiser. Dans notre exemple, nous avons utilisé la **technologie de détection** en tant que filtre (plusieurs options sont disponibles). Afficher les informations de l’expéditeur, du domaine de l’expéditeur, des destinataires, de l’objet, du nom de fichier de la pièce jointe, de la famille de programmes malveillants, du statut de protection (actions effectuées par vos stratégies et fonctionnalités de protection contre les menaces dans Office 365), de la technologie de détection (comment le programme malveillant a été détecté) et plus d'. 
+Pour appliquer un filtre, choisissez **expéditeur**, sélectionnez un élément dans la liste, puis cliquez sur le bouton Actualiser. Dans notre exemple, nous avons utilisé la **technologie de détection** en tant que filtre (plusieurs options sont disponibles). Afficher les informations par expéditeur, domaine de l’expéditeur, destinataires, objet, nom de fichier de la pièce jointe, famille de programmes malveillants, statut de protection (actions effectuées par vos stratégies et fonctionnalités de protection contre les menaces dans Office 365), technologie de détection (comment le programme malveillant a été détecté), et plus encore. 
 
 ![Afficher les données sur les messages détectés par la technologie de détection](../../media/0c032eb3-6021-4174-9f06-ff8f30c245ca.png) 
 
