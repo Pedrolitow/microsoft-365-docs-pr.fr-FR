@@ -16,12 +16,12 @@ ms.assetid: 758822b5-0126-463a-9d08-7366bb2a807d
 ms.collection:
 - M365-security-compliance
 description: Les utilisateurs de Microsoft 365 avec des boîtes aux lettres Exchange Online peuvent utiliser Outlook sur le Web (Outlook Web App) pour soumettre les messages de courrier indésirable, de courrier non indésirable et de hameçonnage à Microsoft pour analyse.
-ms.openlocfilehash: 858224074ef7258d59318eef0c685a4ea4f9130f
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 9fc17abafe219a450e0fb6e45438211ea03fb337
+ms.sourcegitcommit: d929fa32fc2dfb0749fa2420eddbc2251d8489dc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632618"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43921479"
 ---
 # <a name="report-junk-and-phishing-email-in-outlook-on-the-web-in-office-365"></a>Signaler les messages de courrier indésirable et de hameçonnage dans Outlook sur le Web dans Office 365
 
@@ -32,6 +32,8 @@ Si vous êtes un client Microsoft 365 avec des boîtes aux lettres Exchange Onli
 - Si vous êtes administrateur d’une organisation avec des boîtes aux lettres Exchange Online, nous vous recommandons d’utiliser le portail d’envoi du centre de sécurité & conformité. Pour plus d’informations, consultez la rubrique [utiliser la soumission de l’administrateur pour envoyer des courriers indésirables, des hameçons, des URL et des fichiers à Microsoft](admin-submission.md).
 
 - Les administrateurs peuvent désactiver ou activer la possibilité pour les utilisateurs de signaler des messages à Microsoft dans Outlook sur le Web. Pour plus d’informations, consultez la section [désactiver ou activer la création de rapports de courrier indésirable dans Outlook sur le Web](#disable-or-enable-junk-email-reporting-in-outlook-on-the-web) plus loin dans cette rubrique.
+
+- Vous pouvez configurer la copie ou la redirection des messages signalés vers une boîte aux lettres que vous spécifiez. Pour plus d’informations, consultez [la rubrique spécifier une boîte aux lettres pour les soumissions utilisateur de messages de courrier indésirable et de hameçonnage dans Office 365](user-submission.md).
 
 - Pour plus d’informations sur la création de rapports de messages à Microsoft, consultez la rubrique [signaler des messages et des fichiers à Microsoft dans Office 365](report-junk-email-messages-to-microsoft.md).
 

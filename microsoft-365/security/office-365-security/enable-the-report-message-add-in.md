@@ -16,12 +16,12 @@ ms.assetid: 4250c4bc-6102-420b-9e0a-a95064837676
 ms.collection:
 - M365-security-compliance
 description: Découvrez comment activer le complément de message de rapport pour Outlook et Outlook sur le Web, pour des utilisateurs individuels ou l’ensemble de votre organisation.
-ms.openlocfilehash: 101a37f48e31f762171b2269055d0e69c889d0dc
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 0024e8c87ef6326c1df4547349631c4f1fd4cab8
+ms.sourcegitcommit: d929fa32fc2dfb0749fa2420eddbc2251d8489dc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43633298"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43921575"
 ---
 # <a name="enable-the-report-message-add-in"></a>Activez le complément Signaler un message
 
@@ -53,6 +53,8 @@ Si vous êtes un administrateur général ou un administrateur Exchange Online e
 
   - Boîtes aux lettres dans l’organisation Exchange locale
   - Abonnements GCC, GCC HIGH ou DoD
+
+- Vous pouvez configurer la copie ou la redirection des messages signalés vers une boîte aux lettres que vous spécifiez. Pour plus d’informations, consultez [la rubrique spécifier une boîte aux lettres pour les soumissions utilisateur de messages de courrier indésirable et de hameçonnage dans Office 365](user-submission.md).
 
 - Votre navigateur Web existant doit fonctionner avec le complément de message de rapport. Toutefois, si vous remarquez que le complément n’est pas disponible ou ne fonctionne pas comme prévu, essayez un autre navigateur.
 

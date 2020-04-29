@@ -19,17 +19,25 @@ search.appverid:
 - MET150
 - MOE150
 titleSuffix: Office 365 Compliance
-ms.openlocfilehash: 2935f6d163a954cf17e4e4ce3c357028c9763b3b
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: c13e481cfc55e56d8cc1c0a772f2f661992f5353
+ms.sourcegitcommit: d929fa32fc2dfb0749fa2420eddbc2251d8489dc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632369"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43921456"
 ---
 # <a name="configure-supervision-policies-in-office-365"></a>Configurer des stratégies de surveillance dans Office 365
 
 >[!IMPORTANT]
->Cette rubrique s’applique à la configuration des stratégies de surveillance dans un abonnement Microsoft 365. Si vous souhaitez configurer la conformité des communications pour un abonnement Microsoft 365, consultez [la rubrique Configure communications compliance in microsoft 365](communication-compliance-configure.md).
+>Suite à la publication de la conformité de la communication dans Microsoft 365 conformité en février 2020, la surveillance dans Office 365 est en cours de retrait. Les stratégies de surveillance ne seront plus disponibles pour la création, et les stratégies seront finalement supprimées après une période prolongée d’accès en lecture seule.
+>
+>Si vous utilisez la surveillance, sachez que :
+>
+>- Depuis le 15 juin, 2020, les locataires ne pourront pas créer de nouvelles stratégies de surveillance.
+>- À partir du 31 août 2020, les stratégies existantes cesseront de capturer de nouveaux messages.
+>- À partir du 26 octobre 2020, les stratégies existantes seront supprimées.
+>
+>Nous encourageons activement les clients qui explorent ou utilisent la surveillance dans Office 365 pour utiliser la nouvelle solution de [conformité de communication](communication-compliance.md) afin de répondre à vos besoins en matière de surveillance des communications ou de réglementation avec un ensemble plus riche de fonctionnalités intelligentes.
 
 Utilisez des stratégies de surveillance pour capturer les communications des employés à des fins d’examen par des relecteurs internes ou externes. Pour plus d’informations sur la façon dont les stratégies de surveillance peuvent vous aider à surveiller les communications au sein de votre organisation, consultez la rubrique [surveillance des stratégies dans Office 365](supervision-policies.md).
 
@@ -67,7 +75,7 @@ Utilisez le tableau suivant pour vous aider à configurer les groupes au sein de
 
 | **Membre de la stratégie** | **Groupes pris en charge** | **Groupes non pris en charge** |
 |:-----|:-----|:-----|
-|Utilisateurs supervisés <br> Utilisateurs non supervisés | Groupes de distribution <br> Groupes Microsoft 365 | Groupes de distribution dynamique |
+|Utilisateurs supervisés <br> Utilisateurs non supervisés | Groupes de distribution <br> Groupes Microsoft 365 | Groupes de distribution dynamique |
 | Relecteurs | Groupes de sécurité à extension messagerie  | Groupes de distribution <br> groupes de distribution dynamiques |
   
 Lorsque vous sélectionnez un groupe Microsoft 365 pour les utilisateurs supervisés, la stratégie surveille le contenu de la boîte aux lettres partagée et des canaux Microsoft teams associés au groupe. Lorsque vous sélectionnez une liste de distribution, la stratégie analyse les boîtes aux lettres des utilisateurs individuels.

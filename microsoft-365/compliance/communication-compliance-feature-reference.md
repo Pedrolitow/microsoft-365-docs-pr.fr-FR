@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 25f69491156d7862d9dc145123ec158a3ff40556
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 1a63e71df0d9ac6d43fce31ad2e974b787697a9a
+ms.sourcegitcommit: 2399ee6f9bc955cf8f2a76c01fc84c19eb37ff42
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634186"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43919671"
 ---
 # <a name="communication-compliance-feature-reference"></a>Référence de la fonctionnalité de conformité des communications
 
@@ -43,13 +43,13 @@ Les modèles de stratégie sont des paramètres de stratégie prédéfinis que v
 
 |**Catégorie**|**Modèle de stratégie**|**Details**|
 |:-----|:-----|:-----|
-| **Langage offensant et blocage du harcèlement** | Surveiller les communications pour un langage offensant | -Emplacements : Exchange, teams, Skype entreprise <br> -Direction : entrant, sortant, interne <br> -Pourcentage de révision : 100% <br> -Conditions : classifieur de langue offensant |
-| **Informations sensibles** | Surveiller les communications pour les informations sensibles | -Emplacements : Exchange, teams, Skype entreprise <br> -Direction : entrant, sortant, interne <br> -Pourcentage de révision : 10% <br> -Conditions : informations sensibles, modèles et types de contenu prédéfinis, option de dictionnaire personnalisé, pièces jointes dont la taille est supérieure à 1 Mo |
-| **Conformité réglementaire** | Surveiller les communications pour les informations relatives à la conformité réglementaire financière | -Emplacements : Exchange, teams, Skype entreprise <br> -Direction : entrant, sortant <br> -Pourcentage de révision : 10% <br> -Conditions : option de dictionnaire personnalisé, pièces jointes d’une taille supérieure à 1 Mo |
+| **Langage offensant et blocage du harcèlement** | Surveiller les communications pour un langage offensant | -Emplacements : Exchange Online, Microsoft Teams, Yammer, Skype entreprise <br> -Direction : entrant, sortant, interne <br> -Pourcentage de révision : 100% <br> -Conditions : classifieur de langue offensant |
+| **Informations sensibles** | Surveiller les communications pour les informations sensibles | -Emplacements : Exchange Online, Microsoft Teams, Yammer, Skype entreprise <br> -Direction : entrant, sortant, interne <br> -Pourcentage de révision : 10% <br> -Conditions : informations sensibles, modèles et types de contenu prédéfinis, option de dictionnaire personnalisé, pièces jointes dont la taille est supérieure à 1 Mo |
+| **Conformité réglementaire** | Surveiller les communications pour les informations relatives à la conformité réglementaire financière | -Emplacements : Exchange Online, Microsoft Teams, Yammer, Skype entreprise <br> -Direction : entrant, sortant <br> -Pourcentage de révision : 10% <br> -Conditions : option de dictionnaire personnalisé, pièces jointes d’une taille supérieure à 1 Mo |
 
 ## <a name="supervised-users"></a>Utilisateurs supervisés
 
-Avant de commencer à utiliser la conformité de la communication, vous devez déterminer qui a besoin de ses communications. Dans la stratégie, les adresses de messagerie des utilisateurs identifient des individus ou des groupes de personnes à superviser. Les groupes Microsoft 365, les listes de distribution basées sur Exchange et les canaux Microsoft teams sont des exemples de ces groupes. Vous pouvez également exclure des utilisateurs ou des groupes spécifiques de l’analyse à l’aide d’un groupe d’exclusion spécifique ou d’une liste de groupes.
+Avant de commencer à utiliser la conformité de la communication, vous devez déterminer qui a besoin de ses communications. Dans la stratégie, les adresses de messagerie des utilisateurs identifient des individus ou des groupes de personnes à superviser. Les groupes Microsoft 365, les listes de distribution Exchange, les communautés Yammer et les canaux Microsoft teams sont des exemples de ces groupes. Vous pouvez également exclure des utilisateurs ou des groupes spécifiques de l’analyse à l’aide d’un groupe d’exclusion spécifique ou d’une liste de groupes.
 
 >[!IMPORTANT]
 >Les utilisateurs couverts par les stratégies de conformité des communications doivent disposer d’une licence de conformité Microsoft 365 E5, d’une licence Office 365 entreprise E3 avec le complément de conformité avancé ou être inclus dans un abonnement Office 365 entreprise E5. Si vous ne disposez pas d’un plan entreprise E5 existant et que vous souhaitez essayer la conformité de la communication, vous pouvez vous [inscrire pour obtenir une version d’évaluation d’Office 365 entreprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279).
@@ -75,6 +75,8 @@ Avec les stratégies de conformité de communication, vous pouvez choisir d’an
 
 - **Messagerie Exchange**: les boîtes aux lettres hébergées sur Exchange Online dans le cadre de votre abonnement Microsoft 365 ou Office 365 sont toutes éligibles pour l’analyse des messages. Les messages électroniques et les pièces jointes Exchange correspondant à des conditions de stratégie de conformité de communication peuvent mettre jusqu’à 24 heures pour être traités. Les types de pièces jointes prises en charge pour la conformité de la communication sont les mêmes que ceux [pris en charge pour les inspections de contenu de règle de flux de messagerie Exchange](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments#supported-file-types-for-mail-flow-rule-content-inspection).
 
+- **Yammer**: les messages privés, les conversations publiques et les pièces jointes associées dans les communautés Yammer peuvent être analysés. Lorsqu’un utilisateur est ajouté à la stratégie de conformité de communication qui inclut Yammer comme canal défini, les communications entre toutes les communautés Yammer dont l’utilisateur est membre sont incluses dans le processus d’analyse. Les conversations et les pièces jointes Yammer correspondant à des conditions de stratégie de conformité de communication peuvent prendre jusqu’à 24 heures pour être traitées. Yammer doit être en [mode natif](https://docs.microsoft.com/yammer/configure-your-yammer-network/overview-native-mode) pour les stratégies de conformité de communication afin de surveiller les communications et les pièces jointes Yammer. En mode natif, tous les utilisateurs de Yammer se trouvent dans Azure Active Directory (AAD), tous les groupes sont des Groupes Office 365 et tous les fichiers sont stockés dans SharePoint Online.
+
 - **Skype entreprise Online**: les communications de conversation et les pièces jointes associées dans Skype entreprise Online peuvent être surveillées. Les conversations Skype entreprise Online qui correspondent à des conditions de stratégie de conformité des communications peuvent prendre jusqu’à 24 heures pour être traitées. Les conversations de conversation surveillées proviennent de [conversations précédentes enregistrées dans Skype entreprise Online](https://support.office.com/article/Find-a-previous-Skype-for-Business-conversation-18892eba-5f18-4281-8c87-fd48bd72e6a2).  Utilisez la configuration de gestion de groupe suivante pour superviser les communications de conversation des utilisateurs dans Skype entreprise Online :
 
     - **Pour les communications de conversation de Skype entreprise Online**: affectez des utilisateurs individuels ou affectez un [groupe de distribution](https://support.office.com/article/Distribution-groups-E8BA58A8-FAB2-4AAF-8AA1-2A304052D2DE) à la stratégie de conformité des communications. Ce paramètre est destiné aux relations utilisateur/conversation un-à-un ou un-à-plusieurs.
@@ -84,7 +86,6 @@ Avec les stratégies de conformité de communication, vous pouvez choisir d’an
     - [Instant Bloomberg](archive-instant-bloomberg-data.md)
     - [Facebook](archive-facebook-data-with-sample-connector.md)
     - [LinkedIn](archive-linkedin-data.md)
-    - SAP SuccessFactors
     - [Twitter](archive-twitter-data-with-sample-connector.md)
     - [Connecteur de données personnalisé](archiving-third-party-data.md)
 
@@ -102,7 +103,7 @@ Pour plus d’informations sur la retraite de la surveillance dans Office 365, c
 
 ## <a name="policy-settings"></a>Paramètres de stratégie
 
-### <a name="users"></a>Users
+### <a name="users"></a>Utilisateurs
 
 Vous avez la possibilité de sélectionner **tous les utilisateurs** ou de définir des utilisateurs spécifiques dans une stratégie de conformité de communication. La sélection de **tous les utilisateurs** applique la stratégie à tous les utilisateurs et tous les groupes auxquels n’importe quel utilisateur est inclus en tant que membre. La définition d’utilisateurs spécifiques applique la stratégie aux utilisateurs définis et à tous les groupes auxquels les utilisateurs définis sont inclus.
 
@@ -236,7 +237,7 @@ Les filtres de conformité de la communication vous permettent de filtrer et de 
 | **Destinataire** | Utilisateur auquel le message a été envoyé. |
 | **Sender** | La personne qui a envoyé le message. |
 | **Domaine de l’expéditeur** | Le domaine qui a envoyé le message. |
-| **Size** | Taille du message en Ko. |
+| **Taille** | Taille du message en Ko. |
 | **Subject/title** | Objet du message ou titre de conversation. |
 | **Tags** | Les balises affectées à un message, qu’elles soient *douteuses*, *conformes*ou *non conformes*. |
 | **Transmis à** | Nom d’utilisateur de la personne incluse dans le cadre d’une action de réaffectation de message. |

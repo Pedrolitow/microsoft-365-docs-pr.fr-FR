@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: 1272bad0-4bd4-4796-8005-67d6fb3afc5a
 description: Pour plus d’informations sur les domaines, recherchez les réponses à vos questions dans FAQ.
 ms.custom: okr_smb
-ms.openlocfilehash: 4ece90306f37b6f07e34ce93423a76f084d50b6f
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 81e67ee4b22ea0682d65ebc0e48a4b3564e79526
+ms.sourcegitcommit: 2399ee6f9bc955cf8f2a76c01fc84c19eb37ff42
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627593"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43919480"
 ---
 # <a name="domains-faq"></a>Foire aux questions domaines
 
@@ -424,7 +424,7 @@ Vous pouvez, mais il existe des limitations :
         
     4. Dans la fenêtre qui s’ouvre, sélectionnez **relais interne**. 
         
-    5. Sélectionnez **Enregistrer**. Ce paramètre peut nécessiter quelques minutes. 
+    5. Cliquez sur **Enregistrer**. Ce paramètre peut nécessiter quelques minutes. 
     
 4. Si vous le souhaitez, débloquez le serveur de messagerie existant.
     
@@ -492,7 +492,7 @@ Vous pouvez, mais il existe des limitations :
         
     4. Testez le courrier électronique à une personne qui se trouve sur l’autre système de courrier. Par exemple, envoyez un message électronique à l’utilisateur C. Ce message électronique doit être remis à la boîte aux lettres de l’utilisateur C sur votre serveur de messagerie d’origine.
         
-    5. À partir d’un compte extérieur ou du compte de messagerie d’un employé sur l’autre système de courrier, vérifiez que le transfert est correctement configuré sur l’autre système de messagerie. Par exemple, à partir du compte de serveur origninal de l’utilisateur C ou d’un compte Hotmail, envoyez un courrier électronique à l’utilisateur et vérifiez qu’il arrive dans la boîte aux lettres Office 365 de l’utilisateur A.
+    5. À partir d’un compte extérieur ou du compte de messagerie d’un employé sur l’autre système de courrier, vérifiez que le transfert est correctement configuré sur l’autre système de messagerie. Par exemple, à partir du compte de serveur d’origine ou d’un compte Hotmail de l’utilisateur, envoyez un courrier électronique à l’utilisateur et vérifiez qu’il arrive dans la boîte aux lettres Office 365 de l’utilisateur A.
         
 9. Déplacer le contenu de la boîte aux lettres
     

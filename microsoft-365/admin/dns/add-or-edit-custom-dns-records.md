@@ -22,12 +22,12 @@ search.appverid:
 - GEA150
 ms.assetid: af00a516-dd39-4eda-af3e-1eaf686c8dc9
 description: 'Découvrez comment modifier ou ajouter un enregistrement DNS personnalisé dans Microsoft. '
-ms.openlocfilehash: 05b1024be658d26a758711177c4a89629e875445
-ms.sourcegitcommit: 72e43b9bf85dbf8f5cf2040ea6a4750d6dc867c9
+ms.openlocfilehash: b8f0cd859b73641a4f6e4c21c9e74fe0a25e2daa
+ms.sourcegitcommit: 2399ee6f9bc955cf8f2a76c01fc84c19eb37ff42
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "43800034"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43919456"
 ---
 # <a name="add-or-edit-custom-dns-records-in-microsoft"></a>Ajouter ou modifier des enregistrements DNS personnalisés dans Microsoft
 
@@ -35,7 +35,7 @@ ms.locfileid: "43800034"
 
 1. Connectez-vous au centre d’administration Microsoft <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>à l’adresse.   
 
-2. Accédez à la page **paramètres**  > des**domaines** .
+2. Accédez à la page **domaines** **d’installation** \> .
 
 3. Dans la page **Domaines**, sélectionnez un domaine. 
     

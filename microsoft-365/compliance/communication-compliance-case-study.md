@@ -1,6 +1,6 @@
 ---
-title: 'Etude de cas : contoso configure rapidement une stratégie de langage offensant pour Microsoft teams et les communications Exchange'
-description: Une étude de cas pour contoso et la façon dont ils configurent rapidement une stratégie de conformité des communications pour surveiller le langage choquant dans Microsoft teams et les communications Exchange Online
+title: Étude de cas-contoso configure rapidement une stratégie de langage offensant pour les communications Microsoft Teams, Exchange et Yammer
+description: Une étude de cas pour contoso et la façon dont ils configurent rapidement une stratégie de conformité des communications pour surveiller le langage choquant dans Microsoft Teams, Exchange Online et les communications Yammer.
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -19,18 +19,18 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: e4cab1d34d17b5ecbe23aaba53698f61473bc6a8
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 39815140d223d95275e03b0e85b931699bd69f7e
+ms.sourcegitcommit: 2399ee6f9bc955cf8f2a76c01fc84c19eb37ff42
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637176"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43919711"
 ---
-# <a name="case-study---contoso-quickly-configures-an-offensive-language-policy-for-microsoft-teams-and-exchange-communications"></a>Etude de cas : contoso configure rapidement une stratégie de langage offensant pour Microsoft teams et les communications Exchange
+# <a name="case-study---contoso-quickly-configures-an-offensive-language-policy-for-microsoft-teams-exchange-and-yammer-communications"></a>Étude de cas-contoso configure rapidement une stratégie de langage offensant pour les communications Microsoft Teams, Exchange et Yammer
 
-La conformité de la communication dans Microsoft 365 aide à réduire les risques de communication en vous aidant à détecter, capturer et prendre des mesures correctives pour les messages inappropriés dans votre organisation. Les stratégies prédéfinies et personnalisées vous permettent d’analyser les communications internes et externes des correspondances de stratégie pour qu’elles puissent être examinées par les relecteurs désignés. Les relecteurs peuvent analyser les e-mails analysés, Microsoft teams ou les communications tierces au sein de votre organisation et prendre les mesures correctives appropriées pour s’assurer qu’ils sont conformes aux standards de messages de votre organisation.
+La conformité de la communication dans Microsoft 365 aide à réduire les risques de communication en vous aidant à détecter, capturer et prendre des mesures correctives pour les messages inappropriés dans votre organisation. Les stratégies prédéfinies et personnalisées vous permettent d’analyser les communications internes et externes des correspondances de stratégie pour qu’elles puissent être examinées par les relecteurs désignés. Les relecteurs peuvent analyser les e-mails analysés, Microsoft Teams, Yammer ou des communications tierces de votre organisation et prendre les mesures correctives appropriées pour s’assurer qu’elles sont conformes aux standards de messages de votre organisation.
 
-Contoso Corporation est une organisation fictive qui doit rapidement configurer une stratégie pour surveiller le langage offensant. Ils utilisaient principalement Microsoft 365 pour le courrier électronique et la prise en charge de Microsoft teams pour leurs employés, mais ont de nouvelles exigences pour appliquer la stratégie de l’entreprise concernant Workplace harcèlement. Les administrateurs informatiques contoso et les spécialistes de la conformité ont une bonne compréhension des notions de base relatives à l’utilisation de Microsoft 365 et cherchent des conseils de bout en bout sur la mise en route rapide de la conformité de la communication.
+Contoso Corporation est une organisation fictive qui doit rapidement configurer une stratégie pour surveiller le langage offensant. Ils utilisaient principalement Microsoft 365 pour la messagerie, Microsoft teams et la prise en charge de Yammer pour leurs employés, mais ont de nouvelles exigences pour appliquer la stratégie de l’entreprise concernant Workplace harcèlement. Les administrateurs informatiques contoso et les spécialistes de la conformité ont une bonne compréhension des notions de base relatives à l’utilisation de Microsoft 365 et cherchent des conseils de bout en bout sur la mise en route rapide de la conformité de la communication.
 
 Cette étude de cas portera sur les principes de base permettant de configurer rapidement une stratégie de conformité des communications pour surveiller les communications dans un langage offensant. Ce guide inclut les éléments suivants :
 
@@ -41,7 +41,7 @@ Cette étude de cas portera sur les principes de base permettant de configurer r
 
 ## <a name="step-1---planning-for-communication-compliance"></a>Étape 1 : planification de la conformité de la communication
 
-Les administrateurs informatiques et les spécialistes de la conformité de contoso ont participé à des conférences en ligne sur les solutions de conformité dans Microsoft 365 et ont décidé que les stratégies de conformité des communications les aident à répondre aux exigences de stratégie d’entreprise mises à jour pour réduire le harcèlement. En travaillant ensemble, ils ont développé un plan de création et d’activation d’une stratégie de conformité de communication qui analysera le langage offensant pour les conversations envoyées dans Microsoft teams dans les messages électroniques envoyés dans Exchange Online. Leur plan inclut l’identification des éléments suivants :
+Les administrateurs informatiques et les spécialistes de la conformité de contoso ont participé à des conférences en ligne sur les solutions de conformité dans Microsoft 365 et ont décidé que les stratégies de conformité des communications les aident à répondre aux exigences de stratégie d’entreprise mises à jour pour réduire le harcèlement. En travaillant ensemble, ils ont développé un plan de création et d’activation d’une stratégie de conformité de communication qui analysera le langage offensant pour les conversations envoyées dans Microsoft Teams, les messages privés et les conversations communautaires dans Yammer, ainsi que dans les messages électroniques envoyés dans Exchange Online. Leur plan inclut l’identification des éléments suivants :
 
 - Les administrateurs informatiques qui ont besoin d’accéder aux fonctionnalités de conformité des communications.
 - Les spécialistes de la conformité qui ont besoin de créer et de gérer des stratégies de communication.
@@ -146,6 +146,12 @@ Pour commencer à utiliser une stratégie de conformité des communications, il 
 La conformité des communications nécessite des journaux d’audit pour afficher les alertes et suivre les actions de correction effectuées par les relecteurs. Les journaux d’audit sont un résumé de toutes les activités associées à une stratégie d’organisation définie ou à chaque fois qu’une stratégie de conformité des communications est modifiée.
 
 Les administrateurs informatiques de contoso examinent et exécutent les [instructions pas à pas](https://docs.microsoft.com/microsoft-365/compliance/turn-audit-log-search-on-or-off) pour activer l’audit. Une fois l’audit activé, un message s’affiche indiquant que le journal d’audit est en cours de préparation et qu’il peut exécuter une recherche dans quelques heures après la fin de la préparation. Les administrateurs informatiques de contoso ne doivent effectuer cette action qu’une seule fois.
+
+### <a name="configuring-yammer-tenant-for-native-mode"></a>Configuration du client Yammer pour le mode natif
+
+La conformité de la communication nécessite que le client Yammer d’une organisation soit en mode natif pour surveiller le langage choquant dans les messages privés et les conversations de la communauté publique.
+
+Les administrateurs informatiques de contoso doivent vérifier les informations dans la [rubrique vue d’ensemble du mode natif Yammer dans Microsoft 365](https://docs.microsoft.com/yammer/configure-your-yammer-network/overview-native-mode) et suivre les étapes nécessaires à l’exécution de l’outil de migration dans la rubrique [Configure Your Yammer Network for Native Mode for Microsoft 365](https://docs.microsoft.com/yammer/configure-your-yammer-network/native-mode) .
 
 ### <a name="setting-up-a-group-for-in-scope-users"></a>Configuration d’un groupe pour les utilisateurs dans l’étendue
 

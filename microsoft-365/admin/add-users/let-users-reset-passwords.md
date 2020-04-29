@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: 5bc3f460-13cc-48c0-abd6-b80bae72d04a
 description: Découvrez comment réinitialiser vos mots de passe à l’aide de l’outil de réinitialisation du mot de passe libre-service.
-ms.openlocfilehash: beffbcac997806f0c13347dfba42a1ab0ec65c1d
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 9d9a1f97f9f6fc59b54f2f9bdce9c337c7d57b13
+ms.sourcegitcommit: 2399ee6f9bc955cf8f2a76c01fc84c19eb37ff42
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43617145"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43919434"
 ---
 # <a name="let-users-reset-their-own-passwords"></a>Autoriser les utilisateurs à réinitialiser leur mot de passe
 
@@ -65,12 +65,12 @@ Ces étapes activent la réinitialisation du mot de passe libre-service pour tou
 
 ::: moniker range="o365-21vianet"
 
-1. Dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">Centre d’administration</a>, accédez à la page **paramètres** \> de confidentialité de la **sécurité &amp; ** .
+1. Dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">Centre d’administration</a>, accédez à la page **confidentialité &amp; ** de la sécurité **des paramètres de** \> **paramètres** \>.
 
 ::: moniker-end
 
    
-2. Sous **permettre à vos personnes de réinitialiser leur mot de passe**, sélectionnez le lien pour le **Centre d’administration Azure ad**. Vous recevrez Azure gratuitement !
+2. Sélectionnez **Réinitialiser le mot de passe libre-service**, sélectionnez le lien pour **accéder au portail Azure afin d’activer la réinitialisation du mot de passe libre-service**. Vous recevrez Azure gratuitement !
   
 3. Sélectionnez **utilisateurs** dans le volet de navigation de gauche, puis **réinitialisation du mot de passe**.
   

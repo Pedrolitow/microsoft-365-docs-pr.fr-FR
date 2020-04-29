@@ -18,16 +18,16 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 24d11f94d2b9139a6e54f29cff39f05076676f78
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: b8e25b55ea20514e452b2c26ee0ad1569dbc3c85
+ms.sourcegitcommit: 2399ee6f9bc955cf8f2a76c01fc84c19eb37ff42
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634176"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43919691"
 ---
 # <a name="communication-compliance-in-microsoft-365"></a>Conformité de la communication dans Microsoft 365
 
-La conformité des communications fait partie de la nouvelle solution de risque initiée dans Microsoft 365 qui permet de réduire les risques de communication en vous aidant à détecter, capturer et prendre des mesures correctives pour les messages inappropriés dans votre organisation. Les stratégies prédéfinies et personnalisées vous permettent d’analyser les communications internes et externes des correspondances de stratégie pour qu’elles puissent être examinées par les relecteurs désignés. Les relecteurs peuvent analyser les e-mails analysés, Microsoft teams ou les communications tierces au sein de votre organisation et prendre les mesures correctives appropriées pour s’assurer qu’ils sont conformes aux standards de messages de votre organisation.
+La conformité des communications fait partie de la nouvelle solution de risque initiée dans Microsoft 365 qui permet de réduire les risques de communication en vous aidant à détecter, capturer et prendre des mesures correctives pour les messages inappropriés dans votre organisation. Les stratégies prédéfinies et personnalisées vous permettent d’analyser les communications internes et externes des correspondances de stratégie pour qu’elles puissent être examinées par les relecteurs désignés. Les relecteurs peuvent analyser les e-mails analysés, Microsoft Teams, Yammer ou des communications tierces de votre organisation et prendre les mesures correctives appropriées pour s’assurer qu’elles sont conformes aux standards de messages de votre organisation.
 
 Les stratégies de conformité des communications dans Microsoft 365 vous aident à surmonter de nombreux défis modernes associés à la conformité et aux communications internes et externes, notamment :
 
@@ -99,6 +99,7 @@ Stratégies de conformité des communications analysez et capturez les messages 
 
 - **Microsoft teams**: les communications de conversation pour les canaux [Microsoft teams](https://docs.microsoft.com/MicrosoftTeams/Teams-overview) publics et privés et les conversations individuelles sont prises en charge dans la conformité de la communication en tant que source de canal autonome ou avec d’autres services Microsoft 365. Les stratégies analysent désormais automatiquement toutes les équipes et tous les canaux Microsoft teams pour des utilisateurs spécifiques définis dans une stratégie, ce qui évite d’avoir à conserver une liste de mappage distincte pour les affectations de Microsoft Teams.
 - **Exchange Online**: toutes les boîtes aux lettres hébergées sur [Exchange Online](https://docs.microsoft.com/Exchange/exchange-online) dans votre organisation Microsoft 365 sont éligibles pour l’analyse. Les e-mails et les pièces jointes correspondant à des conditions de stratégie de conformité de communication sont immédiatement disponibles pour la surveillance et les rapports de surveillance. Exchange Online est maintenant un canal source facultatif et n’est plus requis dans les stratégies de conformité des communications.
+- **Yammer**: les messages privés et les conversations de la communauté publique dans [Yammer](https://docs.microsoft.com/yammer/yammer-landing-page) sont pris en charge dans les stratégies de conformité de communication. Yammer est un canal facultatif qui doit être en [mode natif](https://docs.microsoft.com/yammer/configure-your-yammer-network/overview-native-mode) pour prendre en charge l’analyse des messages et des pièces jointes.
 - **Skype entreprise Online**: les stratégies de conformité des communications prennent en charge l’analyse des communications de conversation et des pièces jointes associées dans [Skype entreprise Online](https://docs.microsoft.com/SkypeForBusiness/skype-for-business-online).
 - **Sources**tierces : vous pouvez analyser les messages provenant de [sources](archiving-third-party-data.md) tierces pour les données importées dans des boîtes aux lettres dans votre organisation Microsoft 365. La conformité de la communication prend en charge les connexions à plusieurs plateformes populaires, notamment la connexion instant Bloomberg, Facebook, Twitter et d’autres.
 
@@ -155,4 +156,4 @@ Le suivi et la gestion des problèmes de conformité identifiés par les straté
 
 ## <a name="ready-to-get-started"></a>Vous êtes prêt ?
 
-Pour configurer la conformité de la communication pour votre organisation Microsoft 365, consultez la rubrique [configure communication Compliance for Microsoft 365](communication-compliance-configure.md) ou consultez l' [étude de cas pour Contoso](communication-compliance-case-study.md) , ainsi que la manière dont ils ont configuré rapidement une stratégie de conformité des communications pour surveiller le langage choquant dans Microsoft teams et les communications Exchange Online.
+Pour configurer la conformité de la communication pour votre organisation Microsoft 365, consultez la rubrique [configure communication Compliance for Microsoft 365](communication-compliance-configure.md) ou consultez l' [étude de cas pour Contoso](communication-compliance-case-study.md) , ainsi que la manière dont ils ont configuré rapidement une stratégie de conformité des communications pour surveiller le langage choquant dans Microsoft Teams, Exchange Online et les communications Yammer.

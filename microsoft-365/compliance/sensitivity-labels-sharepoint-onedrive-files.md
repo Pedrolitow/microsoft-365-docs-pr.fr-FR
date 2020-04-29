@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Les administrateurs peuvent activer la prise en charge de l’étiquette de sensibilité pour les fichiers Word, Excel et PowerPoint dans SharePoint et OneDrive.
-ms.openlocfilehash: 3127b4ac7b661cd5143052d298424e24d26071a5
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 09b955a3cf5b987d2ca7dac37c4c604fb45a2e56
+ms.sourcegitcommit: 90f7bbba5fc23f10b59c75b2b65d6c0903ce66dd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635782"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43930144"
 ---
 # <a name="enable-sensitivity-labels-for-office-files-in-sharepoint-and-onedrive-public-preview"></a>Activer les étiquettes de confidentialité pour les fichiers Office dans SharePoint et OneDrive (préversion publique)
 
@@ -104,7 +104,7 @@ Pour cet aperçu, utilisez la version 19.002.0121.0008 ou une version ultérieur
 
 ## <a name="prepare-the-sharepoint-online-management-shell-for-the-preview"></a>Préparer SharePoint Online Management Shell pour l’aperçu
 
-Avant d’activer l’aperçu, vérifiez que vous exécutez SharePoint Online Management Shell version 16.0.19418.12000 ou supérieure. Si vous disposez déjà de la dernière version, vous pouvez activer l’aperçu.
+Pour activer l’aperçu à l’aide de PowerShell, vérifiez que vous exécutez SharePoint Online Management Shell version 16.0.19418.12000 ou supérieure. Si vous disposez déjà de la dernière version, vous pouvez activer l’aperçu.
 
 1. Si vous avez installé une version antérieure de SharePoint Online Management Shell à partir de la Galerie PowerShell, vous pouvez mettre à jour le module en exécutant l’applet de commande suivante.
 
@@ -119,7 +119,6 @@ Avant d’activer l’aperçu, vérifiez que vous exécutez SharePoint Online Ma
 4. Sélectionnez votre langue, puis cliquez sur **Télécharger**.
 
 5. Choisissez entre le fichier x64 et x86 .msi. Téléchargez le fichier x64 si vous exécutez la version 64 bits de Windows ou le fichier x86 si vous exécutez la version 32 bits. Si vous ne le Sachez pas, consultez [la version du système d’exploitation Windows que je suis en cours d’exécution ?](https://support.microsoft.com/help/13443/windows-which-operating-system)
-
 
 6. Une fois que vous avez téléchargé le fichier, exécutez le fichier et suivez les étapes de l’Assistant d’installation.
 
@@ -137,6 +136,25 @@ Pour activer l’aperçu, utilisez l’applet de commande Set-SPOTenant :
     Set-SPOTenant -EnableAIPIntegration $true  
     ```
 3. Pour Office 365 multi-géo : Répétez les étapes 1 et 2 pour chacun de vos emplacements géographiques restants.
+
+## <a name="use-the-compliance-center-to-enable-support-for-sensitivity-labels"></a>Utiliser le centre de conformité pour activer la prise en charge des étiquettes de sensibilité
+
+Cette option est actuellement déployée vers les locataires comme une autre méthode pour activer l’aperçu.
+
+L’administrateur général de votre organisation dispose des autorisations totales pour créer et gérer tous les aspects des étiquettes de confidentialité. Si vous ne vous connectez pas en tant qu’administrateur général, voir [Autorisations nécessaires pour créer et gérer des étiquettes de confidentialité](get-started-with-sensitivity-labels.md#permissions-required-to-create-and-manage-sensitivity-labels).
+
+1. Connectez-vous au [Centre de conformité Microsoft 365](https://compliance.microsoft.com/)et accédez à **solutions** > **information protection**
+    
+    Si vous ne voyez pas immédiatement cette option, sélectionnez tout d’abord **Tout afficher**. 
+
+2. Sous l’onglet **étiquettes** , si un message s’affiche pour activer la fonctionnalité de traitement du contenu dans les fichiers Office Online, sélectionnez **Activer maintenant**:
+    
+    ![Bouton Activer maintenant pour activer les étiquettes de confidentialité pour Office Online](../media/sensitivity-labels-turn-on-banner.png)
+    
+    La commande est exécutée immédiatement et lors de l’actualisation suivante de la page, le message ou le bouton ne s’affiche plus. 
+
+> [!NOTE]
+> Si vous disposez d’Office 365 multi-géo, vous devez utiliser PowerShell pour activer ces fonctionnalités pour tous vos emplacements géographiques. Pour obtenir des instructions, consultez les sections précédentes.
 
 ## <a name="schedule-roll-out-after-you-create-or-change-a-sensitivity-label"></a>Planifier le déploiement après la création ou la modification d’une étiquette de sensibilité
 

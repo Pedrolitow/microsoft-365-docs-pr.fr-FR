@@ -19,14 +19,25 @@ search.appverid:
 - MET150
 - MOE150
 titleSuffix: Microsoft 365 Compliance
-ms.openlocfilehash: efdb1c7879f00c48e8588b5b9312dad106dc8992
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: df24ee91482785c725acd5b531c6b138e5e165a7
+ms.sourcegitcommit: 90f7bbba5fc23f10b59c75b2b65d6c0903ce66dd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43626968"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43930171"
 ---
 # <a name="supervision-policies"></a>Stratégies de surveillance
+
+>[!IMPORTANT]
+>Suite à la publication de la conformité de la communication dans Microsoft 365 conformité en février 2020, la surveillance dans Office 365 est en cours de retrait. Les stratégies de surveillance ne seront plus disponibles pour la création, et les stratégies seront finalement supprimées après une période prolongée d’accès en lecture seule.
+>
+>Si vous utilisez la surveillance, sachez que :
+>
+>- Depuis le 15 juin, 2020, les locataires ne pourront pas créer de nouvelles stratégies de surveillance.
+>- À partir du 31 août 2020, les stratégies existantes cesseront de capturer de nouveaux messages.
+>- À partir du 26 octobre 2020, les stratégies existantes seront supprimées.
+>
+>Nous encourageons activement les clients qui explorent ou utilisent la surveillance dans Office 365 pour utiliser la nouvelle solution de [conformité de communication](communication-compliance.md) afin de répondre à vos besoins en matière de surveillance des communications ou de réglementation avec un ensemble plus riche de fonctionnalités intelligentes.
 
 Les stratégies de surveillance de Microsoft 365 vous permettent de capturer les communications des employés pour les examiner par les réviseurs désignés. Vous pouvez définir des stratégies spécifiques qui capturent les messages internes et externes, Microsoft teams ou les communications tierces au sein de votre organisation. Les relecteurs peuvent alors examiner les messages pour s’assurer qu’ils sont conformes aux standards de messages de votre organisation et les résoudre avec le type de classification.
 
@@ -39,10 +50,6 @@ Ces stratégies peuvent également vous aider à surmonter de nombreux défis de
 Dans certaines organisations, le support informatique et le groupe de gestion de la conformité peuvent séparer les tâches. Microsoft 365 prend en charge la séparation entre la configuration de la fonctionnalité de stratégie de surveillance et la configuration des stratégies pour les communications capturées. Par exemple, le groupe informatique d’une organisation peut être responsable de la configuration des autorisations de rôle et des groupes afin de prendre en charge les stratégies de surveillance configurées et gérées par l’équipe de conformité de l’organisation.
 
 Pour obtenir une vue d’ensemble rapide des stratégies de surveillance, voir la vidéo sur la [stratégie de surveillance](https://youtu.be/C3Y8WZ7o_dI) sur le [canal des mécanismes Microsoft](https://www.youtube.com/user/OfficeGarageSeries).
-
-Pour en savoir plus sur les améliorations et la disponibilité des fonctionnalités de surveillance, consultez la feuille de [route Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap).
-
-Vous souhaitez essayer la nouvelle expérience de conformité de la communication dans Microsoft 365 ? Découvrez les fonctionnalités nouvelles et améliorées disponibles dans la [conformité de la communication dans Microsoft 365](communication-compliance.md).
 
 ## <a name="transitioning-from-supervision"></a>Transition à partir de la surveillance
 
@@ -60,7 +67,7 @@ Les stratégies de surveillance peuvent faciliter la surveillance des communicat
 
 - **Stratégies d’entreprise**
 
-    Les employés doivent respecter une utilisation acceptable, des normes éthiques et d’autres stratégies d’entreprise dans toutes leurs communications professionnelles. Les stratégies de surveillance peuvent détecter les violations de stratégie et vous aider à prendre des mesures correctives pour limiter ces types d’incidents. Par exemple, vous pouvez surveiller votre organisation pour détecter les éventuelles violations de ressources humaines telles que le harcèlement ou l’utilisation d’un langage inapproprié ou choquant dans les communications des employés.
+    Les employés doivent respecter une utilisation acceptable, des normes éthiques et d’autres stratégies d’entreprise dans toutes leurs communications professionnelles. Les stratégies de surveillance peuvent détecter les violations de stratégie et vous aider à prendre des mesures correctives pour limiter ces types d’incidents. Par exemple, vous pouvez surveiller les éventuelles violations de ressources humaines telles que le harcèlement ou l’utilisation d’un langage inapproprié ou choquant dans les communications des employés.
 
 - **Gestion des risques**
 
@@ -101,12 +108,12 @@ Avec les stratégies de surveillance, vous pouvez choisir de surveiller les mess
 
 - **Microsoft teams :** Les communications de conversation et les pièces jointes associées dans les canaux Microsoft teams publics et privés, ainsi que dans les conversations individuelles, peuvent être surveillées. Les conversations teams correspondant aux conditions de stratégie de contrôle sont traitées une fois toutes les 24 heures, puis disponibles pour la surveillance et les rapports de surveillance. Utilisez les configurations de gestion de groupe suivantes pour superviser les conversations des utilisateurs individuels et les communications de canal dans teams :
 
-    - **Pour la supervision de la conversation teams :** Affectez des utilisateurs individuels ou affectez un [groupe de distribution](https://support.office.com/article/Distribution-groups-E8BA58A8-FAB2-4AAF-8AA1-2A304052D2DE) à la stratégie de surveillance. Il s’agit des relations utilisateur/conversation 1-à-1 ou 1-n.
+    - **Pour la supervision de la conversation teams :** Affectez des utilisateurs individuels ou affectez un [groupe de distribution](https://support.office.com/article/Distribution-groups-E8BA58A8-FAB2-4AAF-8AA1-2A304052D2DE) à la stratégie de surveillance. Cette configuration concerne les relations utilisateur/conversation 1-à-1 ou 1-n.
     - **Pour les communications de canal teams :** Affectez tous les groupes Microsoft Team Channel ou Microsoft 365 que vous souhaitez surveiller qui contient un utilisateur spécifique à la stratégie de surveillance. Si vous ajoutez le même utilisateur à d’autres canaux Microsoft teams ou à des groupes Microsoft 365, veillez à ajouter ces nouveaux canaux et groupes à la stratégie de surveillance.
 
 - **Skype entreprise Online :** Les communications de conversation et les pièces jointes associées dans Skype entreprise Online peuvent être surveillées. Les conversations Skype entreprise Online correspondant à des conditions de stratégie de supervision sont traitées une fois toutes les 24 heures, puis disponibles pour la surveillance et les rapports de surveillance. Les conversations de conversation surveillées proviennent de [conversations précédentes enregistrées dans Skype entreprise Online](https://support.office.com/article/Find-a-previous-Skype-for-Business-conversation-18892eba-5f18-4281-8c87-fd48bd72e6a2).  Utilisez la configuration de gestion de groupe suivante pour superviser les communications de conversation des utilisateurs dans Skype entreprise Online :
 
-    - **Pour la supervision de la conversation Skype entreprise Online :** Affectez des utilisateurs individuels ou affectez un [groupe de distribution](https://support.office.com/article/Distribution-groups-E8BA58A8-FAB2-4AAF-8AA1-2A304052D2DE) à la stratégie de surveillance. Il s’agit des relations utilisateur/conversation 1-à-1 ou 1-n.
+    - **Pour la supervision de la conversation Skype entreprise Online :** Affectez des utilisateurs individuels ou affectez un [groupe de distribution](https://support.office.com/article/Distribution-groups-E8BA58A8-FAB2-4AAF-8AA1-2A304052D2DE) à la stratégie de surveillance. Cette configuration concerne les relations utilisateur/conversation 1-à-1 ou 1-n.
 
 - **Sources** tierces : Vous pouvez superviser les communications provenant de sources tierces (par exemple, Facebook ou DropBox) pour les données importées dans des boîtes aux lettres de votre organisation. [Découvrez comment importer des données tierces](archiving-third-party-data.md).
 
@@ -147,14 +154,14 @@ Surveiller les messages électroniques envoyés ou reçus dans votre organisatio
 >- surveiller les communications de Microsoft teams dans votre organisation pour une langue choquante
 >- empêcher ou bloquer le langage offensant dans les communications dans votre organisation
 
-Veuillez noter que le modèle ne fournit pas une liste exhaustive du langage offensant. De plus, les normes linguistiques et culturelles changent en permanence, et à la lumière de ces réalités, Microsoft se réserve le droit de mettre à jour le modèle à sa discrétion. Bien que le modèle puisse aider votre organisation à surveiller le langage offensant, le modèle n’est pas destiné à fournir aux seuls moyens de surveillance ou d’adressage de cette langue de votre organisation. Votre organisation, et non Microsoft, reste responsable de toutes les décisions relatives à la surveillance et au blocage du langage offensant.
+Le modèle ne fournit pas de liste exhaustive du langage injurieux. De plus, les normes linguistiques et culturelles changent en permanence, et à la lumière de ces réalités, Microsoft se réserve le droit de mettre à jour le modèle à sa discrétion. Bien que le modèle puisse aider votre organisation à surveiller le langage offensant, le modèle n’est pas destiné à fournir aux seuls moyens de surveillance ou d’adressage de cette langue de votre organisation. Votre organisation, et non Microsoft, reste responsable de toutes les décisions relatives à la surveillance et au blocage du langage offensant.
 
 Le modèle de langage offensant surveille le courrier électronique en fonction des types de langue suivants :
 
 |**Type**|**Description**|
 |:-----|:-----|
 | **Blasphèmes** | Expressions qui dépassent la plupart des gens. |
-| **Slurs** | Expressions qui portent préjudice à des groupes particuliers (par exemple, race, ethnique, orientation sexuelle, handicap). |
+| **Slurs** | Expressions qui portent préjudice à des groupes spécifiques (par exemple, race, ethnique, orientation sexuelle, handicap). |
 | **Taunts** | Expressions que taunt, condemn, ridicule, ou qui peut entraîner une Anger ou une violence. |
 | **Expressions masquées** | Expressions pour lesquelles la signification ou la prononciation est identique à celle d’un autre terme offensant. |
 
@@ -277,7 +284,7 @@ Voici une répartition des valeurs affichées dans la colonne **type de balise**
 
 ## <a name="audit"></a>Contrôlé
 
-Dans certains cas, vous devez fournir des informations aux auditeurs de réglementation ou de conformité pour prouver le contrôle des activités et des communications des employés. Il peut s’agir d’un résumé de toutes les activités de surveillance associées à une stratégie définie ou à chaque fois qu’une stratégie de surveillance est modifiée. Les stratégies de surveillance disposent de pistes d’audit intégrées pour une préparation complète des audits internes ou externes. Des historiques d’audit détaillés de toutes les actions surveillées par vos stratégies de surveillance fournissent des preuves de procédures de surveillance.
+Dans certains cas, vous devez fournir des informations aux auditeurs de réglementation ou de conformité pour prouver le contrôle des activités et des communications des employés. Ces informations peuvent être un résumé de toutes les activités de surveillance associées à une stratégie définie ou à chaque fois qu’une stratégie de surveillance est modifiée. Les stratégies de surveillance disposent de pistes d’audit intégrées pour une préparation complète des audits internes ou externes. Des historiques d’audit détaillés de toutes les actions surveillées par vos stratégies de surveillance fournissent des preuves de procédures de surveillance.
 
 Les activités de stratégie de surveillance suivantes sont vérifiées et disponibles dans les journaux d’audit unifiés :
 

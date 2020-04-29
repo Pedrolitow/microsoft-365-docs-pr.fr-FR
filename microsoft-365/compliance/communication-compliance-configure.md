@@ -18,19 +18,19 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 928401f0c4b0fe479d993eba958ca1e109d4c05f
-ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
+ms.openlocfilehash: 990e39484b7f3f5b26b39e52f9344da0a3ffa290
+ms.sourcegitcommit: 2399ee6f9bc955cf8f2a76c01fc84c19eb37ff42
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43708393"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43919681"
 ---
 # <a name="get-started-with-communication-compliance"></a>Prise en main de la conformité des communications
 
 >[!IMPORTANT]
 >Cette rubrique s’applique à la configuration de la conformité de la communication dans un abonnement Microsoft 365. Si vous souhaitez configurer des stratégies de surveillance pour un abonnement Microsoft 365, consultez la rubrique [configure supervision for Microsoft 365](supervision-policies.md).
 
-Utilisez des stratégies de conformité des communications pour capturer les communications des employés à des fins d’examen par des relecteurs internes ou externes. Pour plus d’informations sur la façon dont les stratégies de conformité des communications peuvent vous aider à surveiller les communications au sein de votre organisation, consultez la rubrique [communications Compliance Policies in Microsoft 365](communication-compliance.md). Si vous souhaitez passer en revue la manière dont Contoso a configuré rapidement une stratégie de conformité de communication pour surveiller le langage offensant dans Microsoft teams et les communications Exchange Online, consultez cette [étude de cas](communication-compliance-case-study.md).
+Utilisez des stratégies de conformité des communications pour capturer les communications des employés à des fins d’examen par des relecteurs internes ou externes. Pour plus d’informations sur la façon dont les stratégies de conformité des communications peuvent vous aider à surveiller les communications au sein de votre organisation, consultez la rubrique [communications Compliance Policies in Microsoft 365](communication-compliance.md). Si vous souhaitez passer en revue la manière dont Contoso a configuré rapidement une stratégie de conformité de communication pour surveiller le langage choquant dans Microsoft Teams, Exchange Online et les communications Yammer, consultez cette [étude de cas](communication-compliance-case-study.md).
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
@@ -96,7 +96,7 @@ Utilisez le tableau suivant pour vous aider à configurer les groupes au sein de
 
 | **Membre de la stratégie** | **Groupes pris en charge** | **Groupes non pris en charge** |
 |:-----|:-----|:-----|
-|Utilisateurs supervisés <br> Utilisateurs non supervisés | Groupes de distribution <br> Groupes Microsoft 365 | Groupes de distribution dynamique |
+|Utilisateurs supervisés <br> Utilisateurs non supervisés | Groupes de distribution <br> Groupes Microsoft 365 | Groupes de distribution dynamique |
 | Relecteurs | Aucun | Groupes de distribution <br> groupes de distribution dynamiques <br> Groupes de sécurité à extension messagerie |
   
 Lorsque vous sélectionnez un groupe Microsoft 365 pour les utilisateurs supervisés, la stratégie surveille le contenu de la boîte aux lettres partagée et des canaux Microsoft teams associés au groupe. Lorsque vous sélectionnez une liste de distribution, la stratégie analyse les boîtes aux lettres des utilisateurs individuels.
@@ -106,7 +106,16 @@ Pour plus d’informations sur la configuration des groupes, voir :
 - [Création et gestion de groupes de distribution](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-distribution-groups/manage-distribution-groups)
 - [Vue d’ensemble des groupes Microsoft 365](https://docs.microsoft.com/office365/admin/create-groups/office-365-groups?view=o365-worldwide)
 
-## <a name="step-4-required-create-a-communication-compliance-policy"></a>Étape 4 (obligatoire) : créer une stratégie de conformité de communication
+## <a name="step-4-optional-verify-your-yammer-tenant-is-in-native-mode"></a>Étape 4 (facultatif) : Vérifiez que votre client Yammer est en mode natif
+
+En mode natif, tous les utilisateurs de Yammer se trouvent dans Azure Active Directory (AAD), tous les groupes sont des Groupes Office 365 et tous les fichiers sont stockés dans SharePoint Online. Votre client Yammer doit être en mode natif pour que les stratégies de conformité de communication analysent et identifient les conversations dangereuses dans les messages privés et les conversations communautaires dans Yammer.
+
+Pour plus d’informations sur la configuration de yammer en mode natif, voir :
+
+- [Vue d’ensemble du mode natif Yammer dans Microsoft 365](https://docs.microsoft.com/yammer/configure-your-yammer-network/overview-native-mode)
+- [Configurer votre réseau Yammer en mode natif pour Microsoft 365](https://docs.microsoft.com/yammer/configure-your-yammer-network/native-mode)
+
+## <a name="step-5-required-create-a-communication-compliance-policy"></a>Étape 5 (obligatoire) : créer une stratégie de conformité de communication
   
 >[!Important]
 >L’utilisation de PowerShell pour créer et gérer des stratégies de conformité des communications n’est pas prise en charge. Pour créer et gérer ces stratégies, vous devez utiliser les contrôles de gestion des stratégies dans la [solution de conformité de communication Microsoft 365](https://compliance.microsoft.com/supervisoryreview).
@@ -131,7 +140,7 @@ Pour plus d’informations sur la configuration des groupes, voir :
     - Donnez un nom et une description à la stratégie. Les noms de stratégie ne peuvent pas être modifiés une fois la stratégie créée.
     - Choisissez les utilisateurs ou les groupes à superviser, y compris tous les utilisateurs de votre organisation, des utilisateurs et des groupes spécifiques, ou d’autres utilisateurs et groupes que vous souhaitez exclure.
     - Choisissez les relecteurs de la stratégie. Les relecteurs sont des utilisateurs individuels et tous les relecteurs doivent avoir des boîtes aux lettres hébergées sur Exchange Online.
-    - Choisissez les canaux de communication à analyser, y compris Exchange, Microsoft teams ou Skype entreprise. Vous choisirez également d’analyser les sources tierces si vous avez configuré un connecteur dans Microsoft 365.
+    - Choisissez les canaux de communication à analyser, y compris Exchange, Microsoft Teams, Yammer ou Skype entreprise. Vous choisirez également d’analyser les sources tierces si vous avez configuré un connecteur dans Microsoft 365.
     - Choisissez la direction de communication à surveiller, y compris les communications entrantes, sortantes ou internes.
     - Définir les [conditions](communication-compliance-feature-reference.md#ConditionalSettings)de la stratégie de conformité de communication. Vous pouvez choisir entre une adresse de message, un mot clé, un type de fichier et une condition de correspondance de taille.
     - Choisissez si vous souhaitez inclure des types d’informations sensibles. Cette étape vous permet de sélectionner les types d’informations sensibles par défaut et personnalisés. Sélectionnez des types d’informations sensibles personnalisés ou des dictionnaires de mots clés personnalisés existants dans l’Assistant stratégie de conformité des communications. Si nécessaire, vous pouvez créer ces éléments avant d’exécuter l’Assistant. Vous pouvez également créer des types d’informations sensibles à partir de l’Assistant stratégie de conformité des communications.
@@ -147,7 +156,7 @@ Pour plus d’informations sur la configuration des groupes, voir :
 
 6. La page **votre stratégie a été créée** s’affiche avec des instructions sur le moment où la stratégie sera activée et les communications qui seront capturées.
 
-## <a name="step-5-optional-create-employee-notice-templates"></a>Étape 5 (facultatif) : créer des modèles de notification d’employé
+## <a name="step-6-optional-create-employee-notice-templates"></a>Étape 6 (facultative) : créer des modèles de notification d’employé
 
 Si vous souhaitez pouvoir répondre à une alerte de stratégie en envoyant un rappel à l’employé associé, vous devez créer au moins un modèle d’avis dans votre organisation. Les champs du modèle d’avertissement sont modifiables avant d’être envoyés dans le cadre du processus de correction des alertes et la création d’un modèle d’avertissement personnalisé pour chaque stratégie de conformité des communications est recommandée.
 
@@ -167,14 +176,14 @@ Si vous souhaitez pouvoir répondre à une alerte de stratégie en envoyant un r
 
 5. Sélectionnez **Enregistrer** pour créer et enregistrer le modèle d’avis.
 
-## <a name="step-6-optional-test-your-communication-compliance-policy"></a>Étape 6 (facultative) : tester votre stratégie de conformité de communication
+## <a name="step-7-optional-test-your-communication-compliance-policy"></a>Étape 7 (facultative) : tester votre stratégie de conformité de communication
 
 Une fois que vous avez créé une stratégie de conformité de communication, il est recommandé de la tester pour vous assurer que les conditions que vous avez définies sont appliquées correctement par la stratégie. Vous pouvez également [tester vos stratégies de protection contre la perte de données (DLP)](create-test-tune-dlp-policy.md) si vos stratégies de conformité de communication incluent des types d’informations sensibles. Assurez-vous que vous laissez vos stratégies s’activer afin que les communications que vous souhaitez tester soient capturées.
 
 Procédez comme suit pour tester votre stratégie de conformité de communication :
 
-1. Ouvrez un client de messagerie ou Microsoft teams lors de la connexion en tant qu’utilisateur supervisé défini dans la stratégie que vous souhaitez tester.
-2. Envoyez un message électronique ou une conversation Microsoft teams qui répond aux critères que vous avez définis dans la stratégie de conformité de communication. Ce test peut être un mot clé, une taille de pièce jointe, un domaine, etc. Assurez-vous de déterminer si vos paramètres conditionnels configurés dans la stratégie sont trop restrictifs ou trop stricts.
+1. Ouvrez un client de messagerie, Microsoft teams ou Yammer lors de la connexion en tant qu’utilisateur supervisé défini dans la stratégie que vous souhaitez tester.
+2. Envoyez un message électronique, une conversation Microsoft teams ou un message Yammer correspondant aux critères que vous avez définis dans la stratégie de conformité de communication. Ce test peut être un mot clé, une taille de pièce jointe, un domaine, etc. Assurez-vous de déterminer si vos paramètres conditionnels configurés dans la stratégie sont trop restrictifs ou trop stricts.
 
     > [!NOTE]
     > Les communications de tous les canaux sources peuvent prendre jusqu’à 24 heures pour être entièrement traitées dans une stratégie.
