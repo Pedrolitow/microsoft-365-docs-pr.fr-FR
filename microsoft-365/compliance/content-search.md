@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: 53390468-eec6-45cb-b6cd-7511f9c909e4
 description: Utilisez l’outil recherche de contenu dans le centre de conformité dans Microsoft 365 ou Microsoft 365 pour rechercher du contenu dans les boîtes aux lettres, les sites SharePoint Online, les comptes OneDrive, Microsoft Teams, les Groupes Microsoft 365, les Groupes Yammer et les conversations Skype Entreprise. Vous pouvez utiliser des requêtes de recherche par mot clé et des conditions de recherche pour affiner les résultats de la recherche. Vous pouvez ensuite obtenir un aperçu et exporter les résultats de la recherche. La recherche de contenu est également un outil efficace pour rechercher du contenu lié à une demande d’objet de données RGPD.
-ms.openlocfilehash: 74fb84a46b4dd283eef90f2181a0d084a7a361e8
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: d601db20cbfc8c5ea5a4fcc64d181a99a7f8f940
+ms.sourcegitcommit: b6c4b514b2cb6739af949780d7e2a5a5c8dcc161
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632359"
+ms.lasthandoff: 04/27/2020
+ms.locfileid: "43900738"
 ---
 # <a name="content-search"></a>Recherche de contenu
 
@@ -138,13 +138,13 @@ Pour afficher les statistiques de recherche :
     
 3. Dans la liste déroulante **Résultats individuels**, cliquez sur **Statistiques de recherche**.
     
-4. Dans la liste déroulante **type**, cliquez sur l’une des options suivantes selon les statistiques de recherche que vous voulez afficher. 
+4. Dans la liste déroulante **Type**, cliquez sur l’une des options suivantes selon les statistiques de recherche que vous voulez afficher :
     
-  - **Résumé :** affiche des statistiques pour chaque type d’emplacement de contenu recherché. Ce contenu représente le nombre d’emplacements de contenu contenant des éléments qui correspondaient à la requête de recherche, ainsi que le nombre total et la taille des éléments de résultats de recherche. Il s’agit du paramètre par défaut.
-    
-  - **Requêtes :** affiche les statistiques relatives à la requête de recherche. Il s’agit du type d’emplacement de contenu auquel les statistiques de requête s’appliquent, qui fait partie de la requête de recherche pour laquelle les statistiques sont applicables (Notez que **Primary** indique la requête de recherche entière), le nombre d’emplacements de contenu qui contiennent des éléments qui correspondent à la requête de recherche, ainsi que le nombre total et la taille des éléments trouvés (à l’emplacement de contenu spécifié) qui correspondent à la requête de recherche. Les statistiques relatives aux éléments non indexés ( également appelés *éléments partiellement indexés*) s’affichent également. Toutefois, seuls les éléments partiellement indexés des boîtes aux lettres sont inclus dans les statistiques. Les éléments partiellement indexés de SharePoint et OneDrive ne sont pas inclus dans les statistiques.
-    
-  - **Emplacements principaux :** affiche des statistiques sur le nombre d’éléments qui correspondent à la requête de recherche dans chaque emplacement de contenu. Les 1 000 principaux emplacements sont affichés.
+    - **Résumé :** affiche des statistiques pour chaque type d’emplacement de contenu recherché. Ce contenu représente le nombre d’emplacements de contenu contenant des éléments qui correspondaient à la requête de recherche, ainsi que le nombre total et la taille des éléments de résultats de recherche. Il s’agit du paramètre par défaut.
+
+    - **Requêtes :** affiche les statistiques relatives à la requête de recherche. Il s’agit du type d’emplacement de contenu auquel les statistiques de requête s’appliquent, qui fait partie de la requête de recherche pour laquelle les statistiques sont applicables (Notez que **Primary** indique la requête de recherche entière), le nombre d’emplacements de contenu qui contiennent des éléments qui correspondent à la requête de recherche, ainsi que le nombre total et la taille des éléments trouvés (à l’emplacement de contenu spécifié) qui correspondent à la requête de recherche. Les statistiques relatives aux éléments non indexés ( également appelés *éléments partiellement indexés*) s’affichent également. Toutefois, seuls les éléments partiellement indexés des boîtes aux lettres sont inclus dans les statistiques. Les éléments partiellement indexés de SharePoint et OneDrive ne sont pas inclus dans les statistiques.
+
+    - **Emplacements principaux :** affiche des statistiques sur le nombre d’éléments qui correspondent à la requête de recherche dans chaque emplacement de contenu. Les 1 000 principaux emplacements sont affichés.
     
 Pour plus d’informations sur les statistiques de recherche, voir [afficher les statistiques des mots clés pour les résultats de recherche de contenu](view-keyword-statistics-for-content-search.md).
   
@@ -246,6 +246,8 @@ Vous pouvez effectuer une recherche dans la boîte aux lettres associée à un g
 Gardez les points suivants à l’esprit lors de la recherche de contenu dans les Groupes Microsoft Teams et Microsoft 365.
   
 - Pour rechercher du contenu se trouvant dans Teams et Groupes Microsoft 365, vous devez spécifier la boîte aux lettres et le site SharePoint qui sont associés à une équipe ou à un groupe.
+
+- Le contenu provenant de canaux privés est stocké dans la boîte aux lettres de chaque utilisateur, et non dans celle de l’équipe. Pour rechercher du contenu dans des canaux privés, voir [Découverte automatique des canaux privés](https://docs.microsoft.com/microsoftteams/ediscovery-investigation#ediscovery-of-private-channels).
     
 - Exécutez l’applet de commande **Get-UnifiedGroup** dans Exchange Online pour afficher les propriétés d’une équipe ou d’un groupe Microsoft 365. Il s’agit d’un bon moyen pour obtenir l’URL du site associé à une équipe ou à un groupe. Par exemple, la commande suivante affiche les propriétés sélectionnées d’un groupe Microsoft 365 nommé Senior Leadership Team : 
     
