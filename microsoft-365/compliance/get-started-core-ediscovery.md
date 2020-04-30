@@ -17,14 +17,14 @@ search.appverid:
 - MOE150
 - MET150
 description: Cet article explique comment commencer à utiliser la découverte électronique de base dans Microsoft 365. Une fois que vous avez affecté des autorisations eDiscovery et créé un cas, vous pouvez ajouter des membres, créer des suspensions eDiscovery, puis Rechercher et exporter des données pertinentes pour votre enquête.
-ms.openlocfilehash: 838870f60c55c82225c3809aa8f281beadd0dba1
-ms.sourcegitcommit: bd51f626f0c7788c2a3cf89deee25264659aebd5
+ms.openlocfilehash: c9c3d8c3832703e8dbbcf8b2c04a566af0f5eb6b
+ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "43551390"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43943383"
 ---
-# <a name="get-started-with-core-ediscovery"></a>Prise en main de la découverte électronique principale
+# <a name="get-started-with-core-ediscovery"></a>Prise en main de la découverte électronique de base
 
 La découverte électronique de base dans Microsoft 365 fournit un outil eDiscovery de base que les organisations peuvent utiliser pour rechercher et exporter du contenu dans Microsoft 365 et Office 365. Vous pouvez également utiliser la découverte électronique de base pour mettre en place une conservation eDiscovery sur des emplacements de contenu, tels que des boîtes aux lettres Exchange, des sites SharePoint, des comptes OneDrive et Microsoft Teams. Rien n’est nécessaire pour déployer la découverte électronique de base, mais il existe des tâches préalables à effectuer par un administrateur informatique et un gestionnaire eDiscovery pour que votre organisation puisse commencer à utiliser le service eDiscovery de base pour rechercher, exporter et conserver du contenu.
 
@@ -36,15 +36,25 @@ La gestion des licences pour la découverte électronique principale nécessite 
 
 - **Abonnement à l’Organisation :** Pour accéder à Core eDiscovery dans le centre de conformité Microsoft 365 ou le centre de sécurité & de la sécurité d’Office 365 et utiliser les fonctionnalités de blocage et d’exportation, votre organisation doit avoir un abonnement Microsoft 365 E3 ou Office 365 E3 ou une version ultérieure.
 
-- Gestion **des licences par utilisateur :** Pour placer une conservation eDiscovery sur les boîtes aux lettres des utilisateurs, vous devez disposer de l’une des licences suivantes sur cet utilisateur, en fonction de l’abonnement de votre organisation :
+- Gestion **des licences par utilisateur :** Pour placer une conservation eDiscovery sur les boîtes aux lettres et les sites, l’une des licences suivantes doit être attribuée à un utilisateur, en fonction de l’abonnement à votre organisation :
 
   - Une licence Microsoft 365 E3 ou Office 365 E3 ou supérieure
 
+   OR
+
   - Une licence Microsoft 365 E1 ou Office 365 E1 avec une licence de module complémentaire Exchange Online plan 2 ou Exchange Online Archiving
 
+  AND
+
+  - Une licence Microsoft 365 E1 ou Office 365 E1 avec une licence de module complémentaire SharePoint Online plan 2 ou OneDrive entreprise plan 2
+  
   Pour plus d’informations sur l’attribution des licences, voir [attribuer des licences à des utilisateurs](https://docs.microsoft.com/microsoft-365/admin/manage/assign-licenses-to-users).
 
-Pour plus d’informations sur les licences Microsoft 365 et Office 365, téléchargez et consultez la solution « détecter & répondre » dans la [comparaison des licences de conformité de microsoft 365](https://docs.microsoft.com/office365/servicedescriptions/downloads/microsoft-365-compliance-licensing-comparison.pdf).
+Pour plus d’informations sur la gestion des licences :
+
+- Téléchargez et consultez la solution « détecter & répondre » dans la [comparaison des licences de conformité de Microsoft 365](https://docs.microsoft.com/office365/servicedescriptions/downloads/microsoft-365-compliance-licensing-comparison.xlsx).
+
+- Consultez la rubrique [Description du service Security & Compliance Center](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center).
 
 ## <a name="step-2-assign-ediscovery-permissions"></a>Étape 2 : attribuer des autorisations eDiscovery
 

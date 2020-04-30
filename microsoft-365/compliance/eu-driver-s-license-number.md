@@ -2,8 +2,8 @@
 title: Numéro de permis de conduire de l’UE
 f1.keywords:
 - NOCSH
-ms.author: cabailey
-author: cabailey
+ms.author: chrfox
+author: chrfox
 manager: laurawi
 ms.date: 8/17/2018
 audience: Admin
@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 ms.collection: M365-security-compliance
 localization_priority: Normal
 description: Cette rubrique présente ce qu’une stratégie de protection contre la perte de données (DLP) recherche lorsqu’elle détecte le type d’informations sensibles du pilote de l’UE. Ce type d’informations sensibles définit différents modèles, Mots clés et autres preuves pour chaque pays.
-ms.openlocfilehash: c54fcefcda08d0bc2ec500d25c74bb5789e27398
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 2e75a8724dc91ef2d895c977fdd5fcc21e7a1da4
+ms.sourcegitcommit: c7f11d851073ef14a69669f6c8b7e0c11e4bb7a1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41592655"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43938828"
 ---
 # <a name="eu-drivers-license-number"></a>Numéro de permis de conduire de l’UE
 
@@ -883,7 +883,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 |:-----|
 |LD #  <br/> Permis de conduire  <br/> Numéro de permis de conduire  <br/> permis de conduire  <br/> pilotes.  <br/> permis de conduire  <br/> permis de conduire  <br/> permis de conduire  <br/> Numéro de permis de conduire  <br/> Numéro de permis de conduire  <br/> Numéro de permis de conduire  <br/> dlno #  <br/> permis de conducere  <br/> |
    
-## <a name="slovakia"></a>République de Slovaquie
+## <a name="slovakia"></a>Slovaquie
 
 ### <a name="format"></a>Format
 

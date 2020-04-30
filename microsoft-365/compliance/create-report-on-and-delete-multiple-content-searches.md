@@ -15,14 +15,15 @@ localization_priority: Normal
 search.appverid:
 - SPO160
 - MOE150
+- MET150
 ms.assetid: 1d463dda-a3b5-4675-95d4-83db19c9c4a3
 description: Découvrez comment automatiser des tâches de recherche de contenu, telles que la création de recherches et l’exécution de rapports via des scripts PowerShell dans le centre de sécurité & conformité dans Office 365.
-ms.openlocfilehash: 915ea910eebba8f6f39ceb41d9475769a6403729
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 4e66013ba34c71fd7e2078691f892c2ae289538b
+ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42077190"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43943495"
 ---
 # <a name="create-report-on-and-delete-multiple-content-searches"></a>Créer, générer des rapports et supprimer plusieurs recherches de contenu
 
@@ -60,7 +61,7 @@ Le fichier de valeurs séparées par des virgules (CSV) que vous créez dans cet
     
 2. Ouvrez le fichier. txt dans Excel, puis utilisez les informations du tableau suivant pour modifier le fichier avec les informations pour chaque recherche. 
     
-    |**Parameter**|**Description**|
+    |**Paramètre**|**Description**|
     |:-----|:-----|
     | `ExchangeLocation` <br/> |Adresse SMTP de la boîte aux lettres de l’utilisateur.  <br/> |
     | `SharePointLocation` <br/> |L’URL du site OneDrive entreprise de l’utilisateur ou l’URL de n’importe quel site de votre organisation. Pour l’URL des sites OneDrive entreprise, utilisez le format suivant : ` https://<your organization>-my.sharepoint.com/personal/<user alias>_<your organization>_onmicrosoft_com `. Par exemple : `https://contoso-my.sharepoint.com/personal/sarad_contoso_onmicrosoft_com`.  <br/> |

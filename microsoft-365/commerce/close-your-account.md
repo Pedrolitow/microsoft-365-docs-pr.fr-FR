@@ -1,5 +1,5 @@
 ---
-title: Clôturer votre compte
+title: Fermer votre compte
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -15,14 +15,14 @@ ms.custom: ''
 search.appverid:
 - MET150
 description: Découvrez comment fermer votre compte auprès de Microsoft.
-ms.openlocfilehash: 3a193aea92ff384d53ce320a98cd9043d990b678
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: b71cfe8246b5e3e9471c76cf8043bad52840f194
+ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42080381"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43942852"
 ---
-# <a name="close-your-account"></a>Clôturer votre compte
+# <a name="close-your-account"></a>Fermer votre compte
 
 Lorsque vous fermez votre compte auprès de Microsoft, toutes les informations relatives à votre compte sont supprimées. Ces informations incluent les abonnements, les licences, les modes de paiement, les utilisateurs et les données utilisateur. Avant de commencer cette procédure, assurez-vous de sauvegarder toutes les données que vous souhaitez conserver.
 
@@ -72,7 +72,7 @@ Si votre organisation utilise Active Directory qui se synchronise avec Azure AD,
 
 3. Sur la page authentification multifacteur, désactivez tous les comptes à l’exception du compte d’administrateur global que vous utilisez actuellement.
 
-Vous pouvez également <a href="https://docs.microsoft.com/azure/active-directory/authentication/howto-mfa-userstates#use-powershell">Utiliser PowerShell pour désactiver l’authentification multifacteur pour plusieurs utilisateurs</a>.
+Vous pouvez également <a href="https://docs.microsoft.com/azure/active-directory/authentication/howto-mfa-userstates#change-state-using-powershell">Utiliser PowerShell pour désactiver l’authentification multifacteur pour plusieurs utilisateurs</a>.
 
 ## <a name="step-5-delete-the-directory-in-azure-active-directory"></a>Étape 5 : supprimer le répertoire dans Azure Active Directory
 

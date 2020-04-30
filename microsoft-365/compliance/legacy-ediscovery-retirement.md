@@ -9,14 +9,16 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection: M365-security-compliance
 description: La découverte électronique inaltérable et la conservation inaltérable (et les cmdlets PowerShell correspondantes) dans Exchange Online seront supprimées au cours de la première moitié de 2020. La cmdlet Search-Mailbox et Advanced eDiscovery v 1.0 est également en cours de retrait dans la même période.
-ms.openlocfilehash: 23ff43dfc2131073425deb947aee41662e30616a
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 48dbbd86071f8b07fa3dbf3a699f0d7e085fd50b
+ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635568"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43943343"
 ---
 # <a name="retirement-of-legacy-ediscovery-tools"></a>Retrait des outils eDiscovery hérités
 
@@ -75,7 +77,7 @@ Conformément à l’annonce d’origine le 1er juillet 2017, la fonctionnalité
 
 - Organisations gouvernementales Office 365 et Microsoft 365 ; Cela inclut GCC, GCC High et DoD
 
-- Office 365 Allemagne
+- Office 365 Allemagne
 
 ### <a name="timeline-for-retirement"></a>Chronologie de la retraite
 
@@ -178,7 +180,7 @@ Conformément à la note d’origine annoncée le 1er juillet 2017 dans le centr
 
 - Organisations gouvernementales Office 365 et Microsoft 365 ; Cela inclut GCC, GCC High et DoD
 
-- Office 365 Allemagne
+- Office 365 Allemagne
 
 ### <a name="timeline"></a>Chronologie
 
@@ -259,7 +261,7 @@ La cmdlet **Search-Mailbox** dans Exchange Online PowerShell est en cours de ret
 
 - Organisations gouvernementales Office 365 et Microsoft 365 ; Cela inclut GCC, GCC High et DoD
 
-- Office 365 Allemagne
+- Office 365 Allemagne
 
 ### <a name="timeline"></a>Chronologie
 
@@ -321,7 +323,7 @@ Ces opérations dans l’API des services Web Exchange sont utilisées par la fo
 
 - Organisations gouvernementales Office 365 et Microsoft 365 ; Cela inclut GCC, GCC High et DoD
 
-- Office 365 Allemagne
+- Office 365 Allemagne
 
 ### <a name="timeline"></a>Chronologie
 
@@ -355,7 +357,7 @@ Pour l’instant, nous vous recommandons de commencer la transition de votre flu
 
 - Organisations Office 365 et Microsoft 365 éducation
 
-- Office 365 Allemagne
+- Office 365 Allemagne
 
 ### <a name="timeline"></a>Chronologie
 

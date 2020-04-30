@@ -16,16 +16,16 @@ ms.assetid: 9b7daf19-d5f2-415b-bc43-a0f5f4a585e8
 ms.collection:
 - M365-security-compliance
 description: Les administrateurs peuvent apprendre à créer des règles de flux de messagerie (règles de transport) pour chiffrer et déchiffrer des messages à l’aide du chiffrement de messages Office 365.
-ms.openlocfilehash: f9e9440c40b68f36d0dcca069dcd0797412af184
-ms.sourcegitcommit: f70f75b9dd163c00a3c6bc4b9f9b055e90c50367
+ms.openlocfilehash: ec36e8ff57b45b0f6a3408d6e6bc1e07ce789ffd
+ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2020
-ms.locfileid: "43790703"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43943121"
 ---
 # <a name="define-mail-flow-rules-to-encrypt-email-messages"></a>Définir des règles de flux de messagerie pour chiffrer les messages électroniques
 
-En tant qu’administrateur général, vous pouvez créer des règles de flux de messagerie (également appelées règles de transport) pour protéger les messages électroniques que vous envoyez et recevez. Vous pouvez définir des règles pour chiffrer les messages électroniques sortants et supprimer le chiffrement des messages chiffrés provenant de votre organisation ou des réponses aux messages chiffrés envoyés à partir de votre organisation. Vous pouvez utiliser le centre d’administration Exchange ou Exchange Online PowerShell pour créer ces règles. En plus des règles de chiffrement globales, vous pouvez également choisir d’activer ou de désactiver des options de chiffrement des messages individuelles pour les utilisateurs finaux.
+En tant qu’administrateur général, vous pouvez créer des règles de flux de messagerie (également appelées règles de transport) pour protéger les messages électroniques que vous envoyez et recevez. Vous pouvez définir des règles pour chiffrer les messages électroniques sortants et supprimer le chiffrement des messages chiffrés provenant de votre organisation ou des réponses aux messages chiffrés envoyés à partir de votre organisation. Vous pouvez utiliser le centre d’administration Exchange ou Exchange Online PowerShell pour créer ces règles. En plus des règles de chiffrement globales, vous pouvez également choisir d’activer ou de désactiver des options de chiffrement des messages individuels pour les utilisateurs finaux.
 
 Vous ne pouvez pas chiffrer les messages entrants provenant d’expéditeurs extérieurs à votre organisation.
 
@@ -34,7 +34,7 @@ Si vous avez récemment migré d’AD RMS vers Azure information protection, vou
 Pour plus d’informations sur les composants qui composent les règles de flux de messagerie et le fonctionnement des règles de flux de messagerie, consultez la rubrique [mail Flow Rules (transport Rules) in Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules). Pour plus d’informations sur le fonctionnement des règles de flux de messagerie avec Azure information protection, consultez la rubrique [Configuration des règles de flux de messagerie Exchange Online pour les étiquettes Azure information protection](https://docs.microsoft.com/azure/information-protection/deploy-use/configure-exo-rules).
 
 > [!IMPORTANT]
-> Pour les environnements Exchange hybrides, les utilisateurs locaux peuvent envoyer des messages chiffrés à l’aide de OME uniquement si les messages électroniques sont acheminés via Exchange Online. Pour configurer OME dans un environnement hybride Exchange, vous devez d’abord [configurer le déploiement hybride à l’aide de l’Assistant Configuration hybride](https://docs.microsoft.com/Exchange/exchange-hybrid) , puis [configurer le courrier pour qu’il passe de votre serveur de messagerie vers Office 365](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-to-route-mail#part-2-configure-mail-to-flow-from-your-email-server-to-office-365). Une fois que vous avez configuré le flux de messagerie dans Office 365, vous pouvez configurer des règles de flux de messagerie pour OME en utilisant ces instructions.
+> Pour les environnements Exchange hybrides, les utilisateurs locaux peuvent envoyer et recevoir des messages chiffrés à l’aide de OME uniquement si les messages électroniques sont acheminés via Exchange Online. Pour configurer OME dans un environnement hybride Exchange, vous devez d’abord [configurer le déploiement hybride à l’aide de l’Assistant Configuration hybride](https://docs.microsoft.com/Exchange/exchange-hybrid) , puis configurer le courrier de sorte qu’il [transite depuis Office 365 vers votre serveur de messagerie](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-to-route-mail#part-1-configure-mail-to-flow-from-office-365-to-your-on-premises-email-server) et [configurez le flux de messagerie de votre serveur de messagerie vers Office 365](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-to-route-mail#part-2-configure-mail-to-flow-from-your-email-server-to-office-365). Une fois que vous avez configuré le flux de messagerie dans Office 365, vous pouvez configurer des règles de flux de messagerie pour OME en utilisant ces instructions.
 
 ## <a name="create-mail-flow-rules-to-encrypt-email-messages-with-the-new-ome-capabilities"></a>Créer des règles de flux de messagerie pour chiffrer les messages électroniques avec les nouvelles fonctionnalités de OME
 
@@ -52,7 +52,7 @@ Vous pouvez définir des règles de flux de messagerie pour déclencher le chiff
 
 5. Dans **nom**, tapez un nom pour la règle, tel que chiffrer le courrier pour DrToniRamos@hotmail.com.
 
-6. Dans l’option **Appliquer cette règle si**, sélectionnez une condition, puis entrez une valeur si nécessaire. Par exemple, pour chiffrer les messages adressés à DrToniRamos@hotmail.com :
+6. Dans **appliquer cette règle si**, sélectionnez une condition, puis entrez une valeur si nécessaire. Par exemple, pour chiffrer les messages adressés à DrToniRamos@hotmail.com :
 
    1. Dans **Appliquer cette règle si**, sélectionnez **le destinataire est**.
 
@@ -110,7 +110,7 @@ Vous pouvez définir des règles de flux de messagerie pour déclencher le décl
 
 5. Dans **nom**, tapez le nom de la règle, par exemple supprimer le chiffrement du courrier sortant.
 
-6. Dans **appliquer cette règle si** vous sélectionnez les conditions où le chiffrement doit être supprimé des messages, ajoutez **l’expéditeur se trouve** \> **à l’intérieur de l’organisation**. À présent, ajoutez des conditions supplémentaires pour cibler des destinataires spécifiques, comme **le destinataire est situé** \> **en dehors de l’organisation**.
+6. Dans **appliquer cette règle si**, sélectionnez les conditions dans lesquelles le chiffrement doit être supprimé des messages. Ajoutez **l’expéditeur se trouve** \> **à l’intérieur de l’organisation**. À présent, ajoutez des conditions supplémentaires pour cibler des destinataires spécifiques, comme **le destinataire est situé** \> **en dehors de l’organisation**.
 
 7. Dans **effectuer les opérations suivantes**, sélectionnez **modifier la sécurité** \> des messages **supprimer le chiffrement de messages Office 365 et protection des droits**.
 
@@ -164,14 +164,14 @@ Si vous n’avez pas encore déplacé votre organisation vers les nouvelles fonc
    New-TransportRule -Name "Encrypt rule for Dr Toni Ramos" -SentTo "DrToniRamos@hotmail.com" -SentToScope "NotinOrganization" -ApplyOME $true
    ```
 
-   **Remarques** :
-
-   - Le nom unique de la nouvelle règle est « chiffrer la règle pour Dr toni Ramos ».
-
-   - Le paramètre _SentTo_ spécifie les destinataires des messages (identifiés par nom, adresse de messagerie, nom unique, etc.). Dans cet exemple, le destinataire est identifié par l’adresse de messagerie « DrToniRamos@hotmail.com ».
-
-   - Le paramètre _SentToScope_ spécifie l’emplacement des destinataires du message. Dans cet exemple, la boîte aux lettres du destinataire est dans Hotmail et ne fait pas partie de l’organisation, `NotInOrganization` la valeur est donc utilisée.
-
+   > [!NOTE]
+   > 
+   > - Le nom unique de la nouvelle règle est « chiffrer la règle pour Dr toni Ramos ».
+   > 
+   > - Le paramètre _SentTo_ spécifie les destinataires des messages (identifiés par nom, adresse de messagerie, nom unique, etc.). Dans cet exemple, le destinataire est identifié par l’adresse de messagerie « DrToniRamos@hotmail.com ».
+   > 
+   > - Le paramètre _SentToScope_ spécifie l’emplacement des destinataires du message. Dans cet exemple, la boîte aux lettres du destinataire est dans Hotmail et ne fait pas partie de l’organisation, `NotInOrganization` la valeur est donc utilisée.
+   
    Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [New-TransportRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/New-TransportRule).
 
 ### <a name="remove-encryption-from-email-replies-encrypted-without-the-new-ome-capabilities"></a>Supprimer le chiffrement des réponses de messagerie chiffrées sans les nouvelles fonctionnalités OME
@@ -208,17 +208,17 @@ Lorsque vos utilisateurs de messagerie envoient des messages chiffrés, les dest
    New-TransportRule -Name "Remove encryption from incoming mail" -SentToScope "InOrganization" -RemoveOME $true
    ```
 
-   **Remarques** :
-
-   - Le nom unique de la nouvelle règle est « supprimer le chiffrement du courrier entrant ».
-
-   - Le paramètre _SentToScope_ spécifie l’emplacement des destinataires du message. Dans cet exemple, la valeur `InOrganization` value est utilisée, ce qui indique :
-
-     - Le destinataire est une boîte aux lettres, un utilisateur de messagerie, un groupe ou un dossier public à extension messagerie au sein de votre organisation.
-
-       ou
-
-     - L’adresse de messagerie du destinataire est dans un domaine accepté configuré comme un domaine faisant autorité ou un domaine de relais interne dans votre organisation, _et_ le message a été envoyé ou reçu via une connexion authentifiée.
+   > [!NOTE]
+   > 
+   > - Le nom unique de la nouvelle règle est « supprimer le chiffrement du courrier entrant ».
+   > 
+   > - Le paramètre _SentToScope_ spécifie l’emplacement des destinataires du message. Dans cet exemple, la valeur `InOrganization` value est utilisée, ce qui indique :
+   > 
+   >   - Le destinataire est une boîte aux lettres, un utilisateur de messagerie, un groupe ou un dossier public à extension messagerie au sein de votre organisation.
+   > 
+   >     ou
+   > 
+   >   - L’adresse de messagerie du destinataire est dans un domaine accepté configuré comme un domaine faisant autorité ou un domaine de relais interne dans votre organisation, _et_ le message a été envoyé ou reçu via une connexion authentifiée.
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [New-TransportRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/New-TransportRule).
 

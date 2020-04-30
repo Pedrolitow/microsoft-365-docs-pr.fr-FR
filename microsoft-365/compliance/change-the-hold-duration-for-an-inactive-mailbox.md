@@ -13,15 +13,17 @@ localization_priority: Normal
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
-search.appverid: MOE150
+search.appverid:
+- MOE150
+- MET150
 ms.assetid: bdee24ed-b8cf-4dd0-92ae-b86ec4661e6b
 description: Une fois qu’une boîte aux lettres Microsoft 365 est devenue inactive, vous pouvez modifier la durée de la conservation ou de la stratégie de rétention 365 de Microsoft affectée à la boîte aux lettres inactive. La durée de la conservation définit la durée de conservation des éléments dans le dossier Éléments récupérables.
-ms.openlocfilehash: 3d1368bedcbeda467cbc77a356635440066c11c0
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 15f140959a63b4c1a6da573c8a31ab23dbe55ca1
+ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636332"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43942927"
 ---
 # <a name="change-the-hold-duration-for-an-inactive-mailbox"></a>Modifier la durée de la conservation pour une boîte aux lettres inactive
 
@@ -151,7 +153,7 @@ Les éléments de la boîte aux lettres inactive sont alors conservés indéfini
     
     ![Capture d'écran de la modification de la durée d'une conservation inaltérable](../media/cfcfd92a-9d65-40c0-90ef-ab72697b0166.png)
   
-6. Sélectionnez **Enregistrer**.
+6. Cliquez sur **Enregistrer**.
     
 #### <a name="use-exchange-online-powershell-to-change-the-hold-duration"></a>Utiliser Exchange Online PowerShell pour modifier la durée de conservation
 

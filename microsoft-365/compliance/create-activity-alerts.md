@@ -16,22 +16,23 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 72bbad69-035b-4d33-b8f4-549a2743e97d
+ROBOTS: NOINDEX, NOFOLLOW
 description: Ajoutez et gérez les alertes d’activité dans le centre de sécurité & conformité afin que Microsoft 365 vous envoie des notifications par courrier électronique lorsque les utilisateurs effectuent des activités spécifiques.
-ms.openlocfilehash: c649424ac1c20ea92e9b4cc637bab3ee89ac9a64
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: e6800bf5b8bbc013586a4be248a4e9e71fc70507
+ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634228"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43943163"
 ---
 # <a name="create-activity-alerts"></a>Créer des alertes d’activité
 
 Vous pouvez créer une alerte d’activité qui vous enverra une notification par courrier électronique lorsque les utilisateurs effectuent des activités spécifiques dans Office 365. Les alertes d’activité sont semblables à la recherche d’événements dans le journal d’audit, à l’exception du fait que vous recevrez un message électronique lorsqu’un événement pour une activité pour laquelle vous avez créé une alerte se produit. 
   
- **Pourquoi utiliser des alertes d’activité au lieu de rechercher dans le journal d’audit ?** Il peut y avoir certains types d’activité ou d’activité réalisés par des utilisateurs spécifiques que vous voulez vraiment connaître. Au lieu de se souvenir de rechercher dans le journal d’audit de ces activités, vous pouvez utiliser des alertes d’activité pour que Microsoft 365 vous envoie un message électronique lorsque les utilisateurs effectuent ces activités. Par exemple, vous pouvez créer une alerte activité pour vous avertir lorsqu’un utilisateur supprime des fichiers dans SharePoint ou vous pouvez créer une alerte pour vous avertir lorsqu’un utilisateur supprime définitivement des messages de leur boîte aux lettres. La notification par courrier électronique qui vous a été envoyée inclut des informations sur l’activité qui a été effectuée et sur l’utilisateur qui l’a exécutée. 
+ **Pourquoi utiliser des alertes d’activité au lieu de rechercher dans le journal d’audit ?** Il peut y avoir certains types d’activité ou d’activité réalisés par des utilisateurs spécifiques que vous voulez vraiment connaître. Au lieu de se souvenir de rechercher dans le journal d’audit de ces activités, vous pouvez utiliser des alertes d’activité pour que Microsoft 365 vous envoie un message électronique lorsque les utilisateurs effectuent ces activités. Par exemple, vous pouvez créer une alerte activité pour vous avertir lorsqu’un utilisateur supprime des fichiers dans SharePoint ou vous pouvez créer une alerte pour vous avertir lorsqu’un utilisateur supprime définitivement des messages de leur boîte aux lettres. La notification par courrier électronique qui vous a été envoyée inclut des informations sur l’activité qui a été effectuée et sur l’utilisateur qui l’a exécutée.
 
 > [!NOTE]
-> Nous vous recommandons de commencer à utiliser les stratégies d’alerte dans le centre de sécurité et conformité au lieu de créer des alertes d’activité. Les stratégies d’alerte fournissent des fonctionnalités supplémentaires, telles que la création d’une stratégie d’alerte qui déclenche une alerte lorsqu’un utilisateur effectue une activité spécifique et affiche des alertes sur la page **afficher les alertes** dans le centre de sécurité et de conformité. Pour plus d’informations, consultez la rubrique [Alert Policies](alert-policies.md).
+> Les alertes d’activité sont déconseillées. Nous vous recommandons de commencer à utiliser les stratégies d’alerte dans le centre de sécurité et conformité au lieu de créer des alertes d’activité. Les stratégies d’alerte fournissent des fonctionnalités supplémentaires, telles que la création d’une stratégie d’alerte qui déclenche une alerte lorsqu’un utilisateur effectue une activité spécifique et affiche des alertes sur la page **afficher les alertes** dans le centre de sécurité et de conformité. Pour plus d’informations, consultez la rubrique [Alert Policies](alert-policies.md).
   
 ## <a name="before-you-begin"></a>Avant de commencer
 
@@ -47,7 +48,7 @@ Vous pouvez créer une alerte d’activité qui vous enverra une notification pa
 
 1. Accédez à [https://protection.office.com/managealerts](https://protection.office.com/managealerts).
     
-2. Connectez-vous à l’aide de votre compte professionnel ou scolaire.
+2. Connectez-vous à l’aide de votre compte scolaire ou professionnel.
     
 3. Sur la **page alertes d’activité** , ![cliquez sur](../media/8ee52980-254b-440b-99a2-18d068de62d3.gif) ajouter une icône **nouveau**.
 
@@ -86,7 +87,7 @@ Vous pouvez désactiver une alerte d’activité de sorte qu’aucune notificati
   
 1. Accédez à la vue [https://protection.office.com/managealerts](https://protection.office.com/managealerts).
     
-2. Connectez-vous à l’aide de votre compte professionnel ou scolaire.
+2. Connectez-vous à l’aide de votre compte scolaire ou professionnel.
     
 3. Dans la liste des alertes d’activité pour votre organisation, cliquez sur l’alerte que vous souhaitez désactiver.
     
@@ -113,7 +114,7 @@ Pour réactiver une alerte activité, répétez ces étapes et cliquez sur le bo
     |:-----|:-----|:-----|
     |Affiche un document sur un site.  <br/> |Fichier consulté  <br/> |Activités de fichiers et de dossiers  <br/> |
     |Modifie ou modifie un document.  <br/> |Fichier modifié  <br/> |Activités de fichiers et de dossiers  <br/> |
-    |Partage un document avec un utilisateur en dehors de votre organisation.  <br/> |Partager un fichier, un dossier ou un site  <br/> And  <br/> Invitation de partage créée  <br/> Pour plus d’informations, reportez-vous à [la rubrique utiliser l’audit de partage dans le journal d’audit](use-sharing-auditing.md).  <br/> |Activités de demande d’accès et de partage  <br/> |
+    |Partage un document avec un utilisateur en dehors de votre organisation.  <br/> |Partager un fichier, un dossier ou un site  <br/> And  <br/> Invitation de partage créée  <br/> Pour plus d’informations, voir [Utiliser l’audit du partage dans le journal d’audit](use-sharing-auditing.md).  <br/> |Activités de demande d’accès et de partage  <br/> |
     |Charge ou télécharge un document.  <br/> |Fichier téléchargé  <br/> Et/ou  <br/> Fichier téléchargé  <br/> |Activités de fichiers et de dossiers  <br/> |
     |Modifie les autorisations d’accès à un site.  <br/> |Autorisations de site modifiées  <br/> |Activités d’administration des sites  <br/> |
 

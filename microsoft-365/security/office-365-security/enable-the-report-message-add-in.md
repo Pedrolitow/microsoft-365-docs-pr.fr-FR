@@ -16,12 +16,12 @@ ms.assetid: 4250c4bc-6102-420b-9e0a-a95064837676
 ms.collection:
 - M365-security-compliance
 description: Découvrez comment activer le complément de message de rapport pour Outlook et Outlook sur le Web, pour des utilisateurs individuels ou l’ensemble de votre organisation.
-ms.openlocfilehash: 0024e8c87ef6326c1df4547349631c4f1fd4cab8
-ms.sourcegitcommit: d929fa32fc2dfb0749fa2420eddbc2251d8489dc
+ms.openlocfilehash: 22ce1c8e8084cb0bcbcb2f9fa4c0c80e1a59bf9c
+ms.sourcegitcommit: c7f11d851073ef14a69669f6c8b7e0c11e4bb7a1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "43921575"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43939474"
 ---
 # <a name="enable-the-report-message-add-in"></a>Activez le complément Signaler un message
 
@@ -133,7 +133,7 @@ Pour savoir comment utiliser le complément, voir [use the Report message Add-in
 
    ![Annoncer la page de complément](../../media/announce-add-in-page.png)
 
-### <a name="learn-how-to-use-the-report-message-add-in"></a>En savoir plus sur l’utilisation du complément de message de rapport
+## <a name="learn-how-to-use-the-report-message-add-in"></a>En savoir plus sur l’utilisation du complément de message de rapport
 
 Les personnes auxquelles le complément est attribué voient les icônes suivantes :
 
@@ -147,7 +147,7 @@ Les personnes auxquelles le complément est attribué voient les icônes suivant
 
 Lorsque vous informez les utilisateurs du complément Report message, incluez un lien permettant d' [utiliser le complément Report message](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2).
 
-### <a name="review-or-edit-settings-for-the-report-message-add-in"></a>Vérifier ou modifier les paramètres du complément de message de rapport
+## <a name="review-or-edit-settings-for-the-report-message-add-in"></a>Vérifier ou modifier les paramètres du complément de message de rapport
 
 1. Dans le centre d’administration Microsoft 365, accédez à la page des **compléments de Services &** à l’adresse <https://admin.microsoft.com/AdminPortal/Home#/Settings/ServicesAndAddIns>.
 
@@ -158,3 +158,11 @@ Lorsque vous informez les utilisateurs du complément Report message, incluez un
 3. Dans la fenêtre mobile **modifier un message** qui s’affiche, vérifiez et modifiez les paramètres en fonction de votre organisation. Lorsque vous avez terminé, cliquez sur **Enregistrer**.
 
    ![Paramètres du complément de message de rapport](../../media/EditReportMessageAddIn.png)
+
+## <a name="view-and-review-reported-messages"></a>Afficher et consulter les messages signalés
+
+Pour passer en revue les messages que les utilisateurs signalent à Microsoft, vous disposez des options suivantes :
+
+- Utiliser le portail de soumission des administrateurs. Pour plus d’informations, consultez la rubrique [afficher les soumissions des utilisateurs à Microsoft](admin-submission.md#view-user-submissions-to-microsoft).
+
+- Créer une règle de flux de messagerie (également appelée règle de transport) pour envoyer des copies des messages signalés. Pour obtenir des instructions, consultez [la rubrique utiliser des règles de flux de messagerie pour voir ce que vos utilisateurs signalent à Microsoft](use-mail-flow-rules-to-see-what-your-users-are-reporting-to-microsoft.md).

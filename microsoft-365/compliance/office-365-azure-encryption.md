@@ -15,21 +15,21 @@ ms.collection:
 - Strat_O365_Enterprise
 - M365-security-compliance
 - Strat_O365_Enterprise
-description: 'Résumé : explication du chiffrement dans Azure.'
-ms.openlocfilehash: de018e24fc6681ac613e16d8f151c6ea5362f92d
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: Explication du chiffrement dans Azure.
+ms.openlocfilehash: cac3a27a209b4c2da66dbf583d2be88cf06aca34
+ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637432"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43943313"
 ---
 # <a name="encryption-in-azure"></a>Chiffrement dans Azure
 
+Les protections technologiques d’Azure, telles que les communications chiffrées et les processus opérationnels, vous aident à sécuriser vos données. Vous avez également la possibilité d’implémenter des fonctionnalités de chiffrement supplémentaires et de gérer vos propres clés de chiffrement. Quelle que soit la configuration du client, Microsoft applique le chiffrement pour protéger les données client dans Azure. Microsoft vous permet également de contrôler vos données hébergées dans Azure via un éventail de technologies avancées pour chiffrer, contrôler et gérer les clés de chiffrement, et contrôler et auditer l’accès aux données. De plus, le stockage Azure fournit un ensemble complet de fonctionnalités de sécurité qui, ensemble, permettent aux développeurs de créer des applications sécurisées.
+
 ## <a name="introduction"></a>Introduction
 
-Les protections technologiques d’Azure, telles que les communications chiffrées et les processus opérationnels, vous aident à sécuriser vos données. Vous avez également la possibilité d’implémenter des fonctionnalités de chiffrement supplémentaires et de gérer vos propres clés de chiffrement. Quelle que soit la configuration du client, Microsoft applique le chiffrement pour protéger les données client dans Azure. Microsoft vous permet également de contrôler vos données hébergées dans Azure via un éventail de technologies avancées pour chiffrer, contrôler et gérer les clés de chiffrement, contrôler et auditer l’accès aux données. De plus, le stockage Azure fournit un ensemble complet de fonctionnalités de sécurité qui, ensemble, permettent aux développeurs de créer des applications sécurisées.
-
-Azure offre de nombreux mécanismes de protection des données lors de leur déplacement d’un emplacement à un autre. Microsoft utilise le protocole TLS pour protéger les données lorsqu’il est en déplacement entre les services Cloud et les clients. Les centres de services de Microsoft négocient une connexion TLS avec les systèmes clients qui se connectent à Azure services. PFS (Perfect Forward Secrecy) protège les connexions entre les systèmes clients des clients et les services Cloud de Microsoft par des clés uniques. Les connexions utilisent également des longueurs de clés de chiffrement 2 048 bits basées sur RSA. Cette combinaison complique l’interception et l’accès aux données en transit.
+Azure offre de nombreux mécanismes de protection des données lors de leur déplacement d’un emplacement à un autre. Microsoft utilise le protocole TLS pour protéger les données lorsqu’il est en déplacement entre les services Cloud et les clients. Les centres de données de Microsoft négocient une connexion TLS avec les systèmes clients qui se connectent à Azure services. PFS (Perfect Forward Secrecy) protège les connexions entre les systèmes clients des clients et les services Cloud de Microsoft par des clés uniques. Les connexions utilisent également des longueurs de clés de chiffrement 2 048 bits basées sur RSA. Cette combinaison complique l’interception et l’accès aux données en transit.
 
 Les données peuvent être sécurisées en transit entre une application et Azure à l’aide du [chiffrement côté client](https://docs.microsoft.com/azure/storage/storage-client-side-encryption), HTTPS ou SMB 3,0. Vous pouvez activer le chiffrement pour le trafic entre vos machines virtuelles et vos utilisateurs. Avec les [réseaux virtuels Azure](https://azure.microsoft.com/services/virtual-network/), vous pouvez utiliser le protocole IPSec standard pour chiffrer le trafic entre votre passerelle VPN d’entreprise et Azure, ainsi qu’entre les machines virtuelles situées sur votre réseau virtuel.
 
@@ -41,7 +41,7 @@ Pour plus d’informations sur le chiffrement dans Azure, reportez-vous à Azure
 
 Le chiffrement de disque Azure vous permet de chiffrer vos disques VM de l’infrastructure Windows et Linux en tant que service (IaaS). Le chiffrement de disque Azure exploite la fonctionnalité BitLocker de Windows et la fonctionnalité de chiffrement de chiffrement de Linux pour fournir un chiffrement au niveau du volume pour le système d’exploitation et les disques de données. Elle garantit également que toutes les données des disques VM sont chiffrées au repos dans votre espace de stockage Azure. Le chiffrement de disque Azure est intégré à Azure Key Vault pour vous aider à contrôler, gérer et auditer l’utilisation des clés de chiffrement et des secrets.
 
-Pour plus d’informations, consultez [la rubrique Security Recommendations for Windows Virtual Machines in Azure](https://docs.microsoft.com/azure/security/azure-security-disk-encryption).
+Pour plus d’informations, consultez [la rubrique Security Recommendations for Windows Virtual Machines in Azure](https://docs.microsoft.com/azure/virtual-machines/windows/security-recommendations).
 
 ## <a name="azure-storage-service-encryption"></a>Chiffrement du service de stockage Azure
 

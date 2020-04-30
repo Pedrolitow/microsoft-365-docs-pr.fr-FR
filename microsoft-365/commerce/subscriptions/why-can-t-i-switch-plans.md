@@ -23,18 +23,18 @@ search.appverid:
 ms.assetid: e81e09d2-cd52-4212-8550-5405864b6d62
 ROBOTS: NOINDEX
 description: Comprenez les raisons pour lesquelles il est parfois nécessaire de changer de plan manuellement ou d’appeler le support technique.
-ms.openlocfilehash: 5d446e3492bc9039e490cacca469443c0dc52cbd
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 8b6c4069f2c7f0cfd86981c1001a7211aa298ff7
+ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631928"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43943142"
 ---
 # <a name="why-cant-i-switch-microsoft-365-for-business-plans"></a>Pourquoi ne puis-je pas changer de plan Microsoft 365 pour les entreprises ?
 
 ::: moniker range="o365-worldwide"
 > [!NOTE]
-> Cet article s’applique à l’ancien centre d’administration. Pour afficher l’article sur le centre d’administration (aperçu), voir [pourquoi ne puis-je pas mettre à niveau les plans ?](why-cant-i-change-plans.md). L’aperçu est accessible à tous les administrateurs 365 de Microsoft, vous pouvez choisir **l’option essayer le mode aperçu** situé en haut de la page d’accueil. Pour plus d’informations, voir [À propos du nouveau Centre d’administration Microsoft 365](../../admin/microsoft-365-admin-center-preview.md).
+> Cet article s’applique à l’ancien centre d’administration. Pour afficher l’article sur le centre d’administration (aperçu), voir [pourquoi ne puis-je pas mettre à niveau les plans ?](upgrade-to-different-plan.md#why-cant-i-upgrade-plans). L’aperçu est accessible à tous les administrateurs 365 de Microsoft, vous pouvez choisir **l’option essayer le mode aperçu** situé en haut de la page d’accueil. Pour plus d’informations, voir [À propos du nouveau Centre d’administration Microsoft 365](../../admin/microsoft-365-admin-center-preview.md).
 ::: moniker-end
 
 Si le bouton **changer** de plan n’apparaît pas, votre offre ne peut pas être basculée automatiquement. Dans certains cas, vous pourrez résoudre le problème de manière à pouvoir utiliser le bouton **Changer de plan**, ou éventuellement [changer de plan manuellement](switch-plans-manually.md). Placez la souris sur l'icône d'informations pour afficher un message qui explique pourquoi le bouton **Changer de plan** n'est pas disponible. Utilisez les informations de cet article pour résoudre le problème.

@@ -18,18 +18,18 @@ search.appverid:
 - MET150
 description: Découvrez comment lire et comprendre votre facture pour les produits Microsoft Business.
 keywords: comptes de facturation, informations sur l’organisation, factures
-ms.openlocfilehash: 3028b0e8aa952b932e7d56a5ecceaad5931dee30
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 7b16af7c6ef39743aa8d0a4e927786f64f47c4cd
+ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634979"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43942876"
 ---
 # <a name="understand-your-invoice"></a>Comprendre votre facture
 
 La facture fournit un résumé de vos frais et des instructions de paiement. Vous pouvez [afficher votre facture en ligne](#view-your-online-invoice) dans le centre d’administration 365 de Microsoft. Vous pouvez également le télécharger au format. pdf (portable document format) pour l’envoyer par courrier électronique.
 
-Si vous avez un abonnement Microsoft 365 uniquement, consultez [la rubrique consulter votre facture pour microsoft 365 pour les entreprises](view-your-bill-or-invoice.md).
+Si vous avez un abonnement Microsoft 365 uniquement, consultez [la rubrique comprendre votre facture pour microsoft 365 pour les entreprises](understand-your-invoice2.md).
 
 ## <a name="understand-the-invoice-header"></a>Comprendre l’en-tête de facture
 
@@ -78,7 +78,7 @@ Le montant total dû pour chaque famille de services est calculé en soustrayant
 
 `Total = Charges/Credits - Azure Credit + Tax`
 
-S’il existe des frais Azure sur votre facture pour lesquels vous souhaitez plus d’informations, consultez [la rubrique comprendre les frais sur votre facture de contrat client Microsoft](https://docs.microsoft.com/azure/billing/billing-mca-understand-your-bill).
+S’il existe des frais Azure sur votre facture pour lesquels vous souhaitez plus d’informations, consultez [la rubrique consulter votre facture de contrat de client Microsoft](https://docs.microsoft.com/azure/cost-management-billing/understand/review-customer-agreement-bill).
 
 ## <a name="understand-the-last-invoice-page"></a>Présentation de la dernière page de facturation
 

@@ -2,8 +2,8 @@
 title: Numéro d’identification nationale de l’UE
 f1.keywords:
 - NOCSH
-ms.author: cabailey
-author: cabailey
+ms.author: chrfox
+author: chrfox
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 ms.collection: M365-security-compliance
 localization_priority: Normal
 description: Cette rubrique présente l’aspect d’une stratégie de protection contre la perte de données (DLP) lorsqu’elle détecte le type d’informations sensibles du numéro d’identification national de l’UE. Ce type d’informations sensibles définit différents modèles, Mots clés et autres preuves pour chaque pays.
-ms.openlocfilehash: f001d23ec3d6d8a2b3aa9575d4a9d602c4315e13
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 4dac77f129b45f457a82e709cb5a3b846a95cdf4
+ms.sourcegitcommit: c7f11d851073ef14a69669f6c8b7e0c11e4bb7a1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41592235"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43938760"
 ---
 # <a name="eu-national-identification-number"></a>Numéro d’identification nationale de l’UE
 
@@ -954,7 +954,7 @@ codnumericpersonal #
   
 numărpersonalunic #
   
-## <a name="slovakia"></a>République de Slovaquie
+## <a name="slovakia"></a>Slovaquie
 
 ### <a name="format"></a>Format
 

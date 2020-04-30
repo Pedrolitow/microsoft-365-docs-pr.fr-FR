@@ -11,15 +11,17 @@ ms.topic: hub-page
 ms.service: O365-seccomp
 localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
-search.appverid: MOE150
+search.appverid:
+- MOE150
+- MET150
 ms.assetid: 57ca5138-0ae0-4d34-bd40-240441ef2fb6
 description: 'Le journal d’audit est un journal d’audit unifié. Qu’est-ce qu’un journal d’audit unifié ? Étant donné que les événements de la plupart des services auxquels votre organisation est abonnée sont enregistrés dans un seul journal d’audit que vous pouvez rechercher. Cela signifie que vous pouvez rechercher l’activité de l’utilisateur et de l’administrateur dans les services suivants :'
-ms.openlocfilehash: 95f5025e4831223c93251c7c22d1f43d44086d48
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 3cc76b272516c0e0508c7d76f0b93da44effa487
+ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43625094"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43943643"
 ---
 # <a name="search-the-audit-log-for-user-and-admin-activity"></a>Rechercher les activités de l’utilisateur et de l’administrateur dans le journal d’audit
 

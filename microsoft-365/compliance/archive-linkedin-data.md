@@ -1,5 +1,5 @@
 ---
-title: Configurer un connecteur pour archiver les données LinkedIn
+title: Configurer un connecteur pour archiver des données LinkedIn
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -10,16 +10,18 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection: M365-security-compliance
 description: Les administrateurs peuvent configurer un connecteur natif pour importer des données à partir d’une page de la société LinkedIn vers Microsoft 365. Cela vous permet d’archiver des données provenant de sources de données tierces dans Microsoft 365 de sorte que vous puissiez utiliser les fonctionnalités de conformité telles que la conservation légale, la recherche de contenu et les stratégies de rétention pour gérer la conformité des données tierces de votre organisation.
-ms.openlocfilehash: b42584efb0c99b97c14059ed7d860013f085262c
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 6b74e6ba8dca810a8a185ae6011207a419c3e79d
+ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42079629"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43943213"
 ---
-# <a name="set-up-a-connector-to-archive-linkedin-data"></a>Configurer un connecteur pour archiver les données LinkedIn
+# <a name="set-up-a-connector-to-archive-linkedin-data"></a>Configurer un connecteur pour archiver des données LinkedIn
 
 Utilisez un connecteur dans le centre de conformité Microsoft 365 pour importer et archiver des données à partir des pages de la société LinkedIn. Une fois que vous avez configuré et configuré un connecteur, celui-ci se connecte au compte de la page de la société LinkedIn spécifique une fois toutes les 24 heures. Le connecteur convertit les messages publiés sur la page de l’entreprise en message électronique, puis importe ces éléments dans une boîte aux lettres dans Microsoft 365.
 

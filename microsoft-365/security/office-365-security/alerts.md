@@ -12,17 +12,18 @@ ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MOE150
+- MET150
 - BCS160
 ms.assetid: 2bb4e7c0-5f7f-4144-b647-cc6a956aaa53
 ms.collection:
 - M365-security-compliance
 description: Découvrez les alertes que vous pouvez définir pour faciliter la sécurité dans Office 365.
-ms.openlocfilehash: b8fe746ef18ade5f8e35d5a51ab132377e813915
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 24e36b6867600985a9ca0f9cb3cbafc5a8c6029e
+ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634615"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43943554"
 ---
 # <a name="alerts-in-the-security-amp-compliance-center"></a>Alertes dans le centre &amp; de sécurité conformité
 
@@ -36,13 +37,13 @@ Les alertes se trouvent dans &amp; le centre de sécurité et de conformité. Vo
   
 1. Accédez à [https://protection.office.com](https://protection.office.com).
     
-2. Connectez-vous à l’aide de votre compte professionnel ou scolaire. 
+2. Connectez-vous à l’aide de votre compte scolaire ou professionnel. 
     
 3. Dans le volet de gauche, cliquez sur **alertes** pour afficher les fonctionnalités des alertes. 
     
  **Pour accéder au centre de &amp; sécurité conformité à l’aide du lanceur d’applications :**
   
-1. Connectez-vous à l’aide de votre compte professionnel ou scolaire. 
+1. Connectez-vous à l’aide de votre compte scolaire ou professionnel. 
     
 2. Cliquez sur le lanceur d’applications dans le coin supérieur gauche, puis cliquez sur **conformité de sécurité &amp; **.
     

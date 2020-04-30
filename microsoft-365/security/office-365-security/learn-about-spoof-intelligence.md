@@ -17,12 +17,12 @@ ms.assetid: 978c3173-3578-4286-aaf4-8a10951978bf
 ms.collection:
 - M365-security-compliance
 description: Les administrateurs peuvent apprendre à configurer les expéditeurs usurpés pour autoriser ou non l’autorisation, ainsi que d’autres paramètres d’aide à la décision dans Exchange Online et Exchange Online Protection (EOP).
-ms.openlocfilehash: 958f27d190748ee12976a6b47794a23e025172cf
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: e2aeefbd90a7ed66699778fab54a76a33293e4bb
+ms.sourcegitcommit: f5cecd77e63ae8b47743d4f6dc3135f5decaf28b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43630490"
+ms.lasthandoff: 04/30/2020
+ms.locfileid: "43949236"
 ---
 # <a name="configure-spoof-intelligence-in-microsoft-365"></a>Configurer l’intelligence des usurpations d’identité dans Microsoft 365
 
@@ -166,13 +166,11 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, co
 
 Les options de configuration de l’intelligence d’usurpation sont décrites dans la rubrique [usurpation Settings in anti-phishing Policies](set-up-anti-phishing-policies.md#spoof-settings).
 
-Les options disponibles dépendent de votre abonnement :
+Vous pouvez configurer les paramètres d’aide à la décision d’usurpation d’identité dans la stratégie anti-hameçonnage par défaut, ainsi que dans les stratégies personnalisées. Pour obtenir des instructions sur la base de votre abonnement, consultez l’une des rubriques suivantes :
 
-- Les organisations EOP autonomes sans boîtes aux lettres Exchange Online ne peuvent pas configurer les paramètres d’aide à la décision.
+- [Configurez les stratégies anti-hameçonnage dans EOP](configure-anti-phishing-policies-eop.md).
 
-- Les organisations Microsoft 365 avec des boîtes aux lettres Exchange Online peuvent configurer des paramètres d’aide à la décision par défaut (et uniquement). Pour obtenir des instructions, consultez [la rubrique Configurer la stratégie anti-hameçonnage par défaut dans EOP](configure-anti-phishing-policies-eop.md).
-
-- Les organisations Microsoft 365 avec ATP peuvent configurer les paramètres d’aide à la décision contre le hameçonnage par défaut, ainsi que les stratégies anti-hameçonnage personnalisées ATP. Pour obtenir des instructions, consultez la rubrique [configurer des stratégies anti-hameçonnage ATP dans Microsoft 365](configure-atp-anti-phishing-policies.md).
+- [Configurez les stratégies anti-hameçonnage ATP dans Microsoft 365](configure-atp-anti-phishing-policies.md).
 
 ## <a name="how-do-you-know-these-procedures-worked"></a>Comment savoir si ces procédures ont fonctionné ?
 
@@ -224,7 +222,7 @@ Soyez très à la protection contre l’usurpation d’identité et la protectio
 
 - Vérifiez le **rapport de courrier infalsifiable**. Vous pouvez utiliser ce rapport fréquemment pour afficher et gérer les expéditeurs usurpés. Pour plus d’informations, reportez-vous à la rubrique [Subdetections Report](view-email-security-reports.md#spoof-detections-report).
 
-- Passez en revue votre configuration SPF (Sender Policy Framework). Pour une présentation rapide de SPF et pour qu’il soit configuré rapidement, reportez-vous à la rubrique [set up SPF in Microsoft 365 pour éviter l’usurpation](set-up-spf-in-office-365-to-help-prevent-spoofing.md). Pour consulter des informations plus approfondies sur l’utilisation de SPF par Office 365, la résolution des problèmes et les déploiements non standard tels que les déploiements hybrides, voir Comment Office 365 utilise SPF (Sender Policy Framework) pour empêcher l’usurpation d’identité.
+- Passez en revue votre configuration SPF (Sender Policy Framework). Pour consulter une brève présentation de SPF et le configurer rapidement, voir [Configurer SPF dans Microsoft 365 pour empêcher l’usurpation d’identité](set-up-spf-in-office-365-to-help-prevent-spoofing.md). Pour consulter des informations plus approfondies sur l’utilisation de SPF par Office 365, la résolution des problèmes et les déploiements non standard tels que les déploiements hybrides, voir Comment Office 365 utilise SPF (Sender Policy Framework) pour empêcher l’usurpation d’identité.
 
 - Passez en revue votre configuration DKIM (DomainKeys Identified Identified Mail). Vous devez utiliser DKIM en plus de SPF et de DMARC pour empêcher les agresseurs d’envoyer des messages qui semblent provenir de votre domaine. DKIM vous permet d'ajouter une signature numérique aux messages électroniques dans l'en-tête du message. Pour plus d’informations, consultez [la rubrique use DKIM pour valider les messages sortants envoyés à partir de votre domaine personnalisé dans Office 365](use-dkim-to-validate-outbound-email.md).
 

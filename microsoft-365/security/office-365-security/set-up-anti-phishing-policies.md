@@ -14,27 +14,25 @@ ms.assetid: 5a6f2d7f-d998-4f31-b4f5-f7cbf6f38578
 ms.collection:
 - M365-security-compliance
 description: Découvrez la stratégie anti-hameçonnage de base dans Exchange Online Protection (EOP) et les stratégies anti-hameçonnage avancées dans Office 365 protection avancée contre les menaces.
-ms.openlocfilehash: 64a47d5514ab7a3a845e8d8b008f1cd8f672640b
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 32214d24c7ed030b3bc7aad36bf3ac99f68a17fb
+ms.sourcegitcommit: f5cecd77e63ae8b47743d4f6dc3135f5decaf28b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43638355"
+ms.lasthandoff: 04/30/2020
+ms.locfileid: "43949380"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Stratégies anti-hameçonnage dans Microsoft 365
 
-Les stratégies de configuration des paramètres de protection anti-hameçonnage sont disponibles dans les organisations Office 365 avec des boîtes aux lettres Exchange Online, des organisations Exchange Online Protection (EOP) autonomes sans boîtes aux lettres Exchange Online et des organisations Office 365 Advanced Threat Protection (ATP).
+Les stratégies de configuration des paramètres de protection anti-hameçonnage sont disponibles dans les organisations Microsoft 365 avec les boîtes aux lettres Exchange Online, les organisations Exchange Online Protection (EOP) autonomes sans boîtes aux lettres Exchange Online et les organisations Office 365 Advanced Threat Protection (ATP).
 
 Les stratégies anti-hameçonnage ATP sont disponibles uniquement dans les organisations disposant d’Office 365 ATP. Par exemple :
 
-- Office 365 entreprise E5, Office 365 éducation a5, etc.
+- Microsoft 365 entreprise E5, Microsoft 365 éducation a5, etc.
 - [Microsoft 365 Entreprise](https://www.microsoft.com/microsoft-365/enterprise/home)
 - [Microsoft 365 Business](https://www.microsoft.com/microsoft-365/business)
 - [Office 365 ATP en tant que module complémentaire](https://products.office.com/exchange/advance-threat-protection)
 
-Les stratégies anti-hameçonnage ATP incluent une stratégie anti-hameçonnage par défaut intégrée et vous pouvez créer des stratégies anti-hameçonnage supplémentaires ATP personnalisées.
-
-Les autres organisations Microsoft 365 avec des boîtes aux lettres Exchange Online ou les organisations Exchange Online Protection (EOP) autonomes sans boîte aux lettres Exchange Online possèdent une stratégie anti-hameçonnage par défaut intégrée, mais vous ne pouvez pas créer de stratégies supplémentaires. Seules les organisations disposant d’une boîte aux lettres Exchange Online peuvent modifier leur stratégie anti-hameçonnage par défaut.
+Toutes les autres organisations ont des stratégies anti-hameçonnage.
 
 Les principales différences entre les stratégies de détection d’hameçonnage et les stratégies anti-hameçonnage ATP sont décrites dans le tableau suivant :
 
@@ -42,8 +40,8 @@ Les principales différences entre les stratégies de détection d’hameçonnag
 |---|:---:|:---:|
 |**Fonctionnalité**|**Stratégies anti-hameçonnage.**|**Stratégies anti-hameçonnage ATP**|
 |Stratégie par défaut créée automatiquement|![Coche](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Coche](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|Créer des stratégies personnalisées||![Coche](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|Paramètres de stratégie<sup>\*</sup>||![Coche](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+|Créer des stratégies personnalisées|![Coche](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Coche](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+|Paramètres de stratégie<sup>\*</sup>|![Coche](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Coche](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
 |Paramètres d’emprunt d’identité||![Coche](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
 |Paramètres d’usurpation|![Coche](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Coche](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
 |Seuils de hameçonnage avancés||![Coche](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
@@ -57,7 +55,7 @@ Pour configurer les stratégies anti-hameçonnage, consultez les rubriques suiva
 
 - [Configurer des stratégies anti-hameçonnage ATP dans Microsoft 365](configure-atp-anti-phishing-policies.md)
 
-Le reste de cette rubrique décrit les paramètres disponibles dans les stratégies de détection d’hameçonnage de EOP et ATP.
+Le reste de cette rubrique décrit les paramètres disponibles dans les stratégies anti-hameçonnage et les stratégies anti-hameçonnage ATP.
 
 ## <a name="spoof-settings"></a>Paramètres d’usurpation
 
@@ -65,10 +63,10 @@ L’usurpation se fait lorsque l’adresse de l’expéditeur d’un message él
 
 Les paramètres d’usurpation suivants sont disponibles dans les stratégies anti-hameçonnage et les stratégies anti-hameçonnage ATP :
 
-- **Protection**contre l’usurpation d’identité : active ou désactive la protection contre l’usurpation d’identité. Nous vous recommandons de le laisser activé. Vous utilisez la **stratégie** d’aide à la décision pour autoriser ou bloquer des expéditeurs internes et externes falsifiés spécifiques. Pour plus d’informations, consultez la rubrique [configure usurpation Intelligence in Microsoft 365](learn-about-spoof-intelligence.md).
+- **Protection**contre l’usurpation d’identité : active ou désactive la protection contre l’usurpation d’identité. Nous vous recommandons de le laisser activé. Vous utilisez la **stratégie** d’aide à la décision pour autoriser ou bloquer des expéditeurs internes et externes falsifiés spécifiques. Si vous souhaitez en savoir plus, consultez l’article [Configurer la veille contre l’usurpation d’identité dans Microsoft 365](learn-about-spoof-intelligence.md).
 
   > [!NOTE]
-  > Les paramètres d’usurpation d’identité sont activés par défaut dans la stratégie anti-hameçonnage par défaut dans EOP, la stratégie anti-hameçonnage par défaut ATP, et dans les nouvelles stratégies de détection d’hameçonnage personnalisées ATP que vous créez. <br/><br/> Vous n’avez pas besoin de désactiver la protection contre l’usurpation d’identité si votre enregistrement MX ne pointe pas vers Microsoft 365 ; vous activez le filtrage amélioré pour les connecteurs à la place. Pour obtenir des instructions, voir [Enhanced Filtering for Connectors in Exchange Online](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).
+  > Les paramètres d’usurpation d’identité sont activés par défaut dans la stratégie anti-hameçonnage par défaut dans EOP, la stratégie anti-hameçonnage par défaut de la protection avancée contre les menaces, ainsi que dans les nouvelles stratégies anti-hameçonnage personnalisées ou les stratégies anti-hameçonnage ATP que vous créez. <br/><br/> Vous n’avez pas besoin de désactiver la protection contre l’usurpation d’identité si votre enregistrement MX ne pointe pas vers Microsoft 365 ; vous activez le filtrage amélioré pour les connecteurs à la place. Pour obtenir des instructions, voir [Enhanced Filtering for Connectors in Exchange Online](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).
 
   Pour les messages provenant d’expéditeurs usurpés bloqués, vous pouvez également spécifier l’action à effectuer sur les messages :
 

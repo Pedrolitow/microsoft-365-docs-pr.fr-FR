@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Une stratégie de rétention vous permet de décider de façon proactive de conserver du contenu, de le supprimer (ou les deux), de conserver du contenu, puis de le supprimer ; d’appliquer une stratégie unique à l’ensemble de l’organisation ou à quelques emplacements ou utilisateurs ; et d’appliquer une stratégie à tout le contenu ou au contenu remplissant certaines conditions.
-ms.openlocfilehash: 7075e043a2d45358447137fbf76bcbf88a65e9f4
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 42e130bfb9f988f0b771c45cbe08663f17e7b595
+ms.sourcegitcommit: f5cecd77e63ae8b47743d4f6dc3135f5decaf28b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632435"
+ms.lasthandoff: 04/30/2020
+ms.locfileid: "43949403"
 ---
 # <a name="overview-of-retention-policies"></a>Vue d’ensemble des stratégies de rétention
 
@@ -58,7 +58,7 @@ Vous pouvez créer et gérer les stratégies de rétention à partir du [Centre 
 
 Vous pouvez également accéder au même endroit dans le Centre de conformité Microsoft 365 à l’aide de l’onglet **Rétention** > ** de la gouvernance de l'information** > ** relatives aux solutions**. 
 
-**Si vous souhaitez réviser le contenu avant sa suppression définitive,** vous pouvez utiliser les [étiquettes de rétention](labels.md) plutôt qu’une stratégie de rétention. Lorsque vous créez une étiquette de rétention, vous pouvez configurer une [révision avant destruction](disposition-reviews.md) pour examiner le contenu à la fin de la période de rétention.
+**Si vous souhaitez réviser le contenu avant sa suppression définitive,** vous pouvez utiliser les [étiquettes de rétention](labels.md) plutôt qu’une stratégie de rétention. Lorsque vous créez une étiquette de rétention, vous pouvez configurer une [révision avant destruction](disposition.md#disposition-reviews) pour examiner le contenu à la fin de la période de rétention.
 
 ## <a name="how-a-retention-policy-works-with-content-in-place"></a>Fonctionnement d’une stratégie de rétention avec du contenu sur place
 
