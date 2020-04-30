@@ -18,12 +18,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: Obtenez une vue d’ensemble de la protection des informations Office 365 pour le RGPD. Apprenez à découvrir, classer, protéger et surveiller les données personnelles.
-ms.openlocfilehash: b838ae96c8b93dced8b4da898ed04effc0586463
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 83a090b214821142a312ee81463fb3c395876867
+ms.sourcegitcommit: 2399ee6f9bc955cf8f2a76c01fc84c19eb37ff42
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637218"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43919603"
 ---
 # <a name="overview-of-office-365-information-protection-for-gdpr"></a>Protection des informations Office 365 pour le RGPD - Vue d’ensemble
 
@@ -97,9 +97,9 @@ La protection pour l’accès à Office 365 et les autres services cloud compren
 
 - Gestion des accès privilégiés
 
-- Fonctionnalités de sécurité Windows 10
+- Fonctionnalités de sécurité Windows 10
 
-Pour plus d’informations sur l’application de la protection, reportez-vous à la rubrique relative à l’[application de la protection aux données personnelles dans Office 365](apply-protection-to-personal-data-in-office-365.md).
+Pour plus d’informations sur l’application de la protection, reportez-vous à la rubrique relative à l’[application de la protection aux données personnelles dans Office 365](apply-protection-to-personal-data-in-office-365.md).
 
 ### <a name="step-5--monitor-for-leaks-of-personal-data"></a>Étape 5 - Surveillez les fuites de données personnelles
 
