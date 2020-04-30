@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Créer des types d’informations sensibles personnalisés à l’aide d’une classification Exact Data Match.
-ms.openlocfilehash: 94adbd4382c6e0a5a736feeb7de4bc32e213d25c
-ms.sourcegitcommit: 2399ee6f9bc955cf8f2a76c01fc84c19eb37ff42
+ms.openlocfilehash: d234b4c9ba01b185c367074ee78b0f92be226c46
+ms.sourcegitcommit: c7f11d851073ef14a69669f6c8b7e0c11e4bb7a1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "43919701"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43938614"
 ---
 # <a name="create-custom-sensitive-information-types-with-exact-data-match-based-classification"></a>Créez des types d’informations sensibles personnalisés à l’aide d’une classification Exact Data Match.
 
@@ -72,7 +72,7 @@ La préparation et la configuration de la classification EDM impliquent d’enre
       - 32 colonnes (champs) par source de données
       - 5 colonnes (champs) marquées comme pouvant faire l’objet d’une recherche
 
-2. Structurez les données sensibles dans le fichier .csv de telle sorte que la première ligne contienne les noms des champs utilisés pour la classification EDM. Votre fichier .csv contient peut-être des noms de champs, tels que « ssn », « birthdate », « firstname », « lastname », etc. Par exemple, le fichier .csv est appelé  *PatientRecords.csv* et ses colonnes incluent  *PatientID*,  *MRN*,  *LastName*,  *FirstName*,  *SSN* , etc.
+2. Structurez les données sensibles dans le fichier .csv de telle sorte que la première ligne contienne les noms des champs utilisés pour la classification EDM. Votre fichier .csv contient peut-être des noms de champs, tels que « ssn », « birthdate », « firstname », « lastname », etc. Veuillez noter que les en-têtes de colonne ne peuvent pas contenir d’espaces ou de traits de soulignement dans leur nom. Par exemple, le fichier .csv est appelé  *PatientRecords.csv* et ses colonnes incluent  *PatientID*,  *MRN*,  *NomdeFamille*,  *Prénom*,  *SSN*, etc.
 
 3. Définissez le schéma pour la base de données d’informations sensibles dans un fichier XML (comme dans l’exemple ci-dessous). Nommez ce fichier de schéma **edm.xml** et configurez-le de telle sorte que pour chaque colonne de la base de données, une ligne utilise la syntaxe : 
 

@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Avec les étiquettes de rétention, vous pouvez baser une période de rétention sur la survenue d’un type d’événement spécifique. L’événement déclenche le début de la période de rétention, et tout le contenu portant une étiquette définie pour ce type d’événement se voit appliquer les actions de rétention de l’étiquette. La rétention basée sur un événement est généralement utilisée dans le cadre d’un processus de gestion des enregistrements.
-ms.openlocfilehash: a33c9ae73c2a1721e62c4c1c294270cc8d27d198
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 2ad6d734da77b6e0a706c4ff0d71b82caf0166c8
+ms.sourcegitcommit: f5cecd77e63ae8b47743d4f6dc3135f5decaf28b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43616018"
+ms.lasthandoff: 04/30/2020
+ms.locfileid: "43949301"
 ---
 # <a name="overview-of-event-driven-retention"></a>Vue d’ensemble des rétentions basées sur des événements
 
@@ -43,7 +43,7 @@ Les rétentions basées sur des événements sont généralement utilisées dans
     
 - Un document qui a été déclaré comme enregistrement, mais dont l’événement déclencheur ne s’est pas encore produit, est conservé indéfiniment (les enregistrements ne peuvent pas être supprimés définitivement) jusqu’à ce qu’un événement déclenche la période de rétention du document en question.
     
-- Les étiquettes basées sur des événements déclenchent généralement une révision de destruction à la fin de la période de rétention afin qu’un gestionnaire d’enregistrements puisse manuellement examiner et supprimer le contenu. Pour obtenir plus d’informations, consultez l’article [Vue d’ensemble des révisions de destruction](disposition-reviews.md).
+- Les étiquettes de rétention basées sur des événements déclenchent généralement une révision de destruction à la fin de la période de rétention afin qu’un gestionnaire d’enregistrements puisse manuellement examiner et supprimer le contenu. Pour obtenir plus d’informations, consultez l’article [Destruction du contenu](disposition.md).
     
 Une étiquette basée sur un événement a les mêmes fonctionnalités que les étiquettes dans Office 365. Pour obtenir plus d’informations, consultez l’article [Vue d’ensemble des étiquettes](labels.md).
 

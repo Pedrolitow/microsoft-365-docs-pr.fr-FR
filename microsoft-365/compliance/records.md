@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Pour implémenter une stratégie de gestion des enregistrements dans votre organisation Microsoft ou Office 365, utilisez des étiquettes de rétention qui déclarent du contenu sous la forme d’un enregistrement. Ensuite, publiez ou appliquez automatiquement l’étiquette de rétention d’enregistrement.
-ms.openlocfilehash: db33c65b6c3528a717672b0111a9da098a3d5c31
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: cfd9bbc30313a53c197476ab6b7345fdff1c0c35
+ms.sourcegitcommit: f5cecd77e63ae8b47743d4f6dc3135f5decaf28b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632113"
+ms.lasthandoff: 04/30/2020
+ms.locfileid: "43949281"
 ---
 # <a name="overview-of-records"></a>Vue d’ensemble des enregistrements
 
@@ -38,7 +38,7 @@ La gestion des enregistrements dans Microsoft 365 aide les organisations à resp
 
 - Les enregistrements sont supprimés à l’expiration de leur période de rétention.
 
-Vous pouvez utiliser les [étiquettes de rétention](labels.md) pour classer du contenu sous la forme d’un enregistrement. Une fois que vous avez créé des étiquettes de rétention qui déclarent des enregistrements, vous pouvez [publier](labels.md#how-retention-labels-work-with-retention-label-policies) ces étiquettes (de sorte que les utilisateurs puissent les utiliser pour classifier du contenu en tant qu’enregistrement) ou [appliquer automatiquement ces étiquettes](labels.md#applying-a-retention-label-automatically-based-on-conditions) au contenu que vous voulez classifier en tant qu’enregistrement. En utilisant les étiquettes de rétention pour déclarer des enregistrements, vous pouvez implémenter une stratégie de gestion des enregistrements simple et cohérente dans Office 365, tandis que les autres fonctionnalités de gestion des enregistrements telles que le Centre des enregistrements s’appliquent uniquement au contenu dans SharePoint Online.
+Utilisez les [étiquettes de rétention](labels.md) pour classer du contenu sous la forme d’un enregistrement. Une fois que vous avez créé des étiquettes de rétention qui déclarent des enregistrements, vous pouvez [publier](labels.md#how-retention-labels-work-with-retention-label-policies) ces étiquettes (de sorte que les utilisateurs puissent les utiliser pour classifier du contenu en tant qu’enregistrement) ou [appliquer automatiquement ces étiquettes](labels.md#applying-a-retention-label-automatically-based-on-conditions) au contenu que vous voulez classifier en tant qu’enregistrement. En utilisant les étiquettes de rétention pour déclarer des enregistrements, vous pouvez implémenter une stratégie de gestion des enregistrements simple et cohérente dans Office 365, tandis que les autres fonctionnalités de gestion des enregistrements telles que le Centre des enregistrements s’appliquent uniquement au contenu dans SharePoint Online.
 
 Quelques rappels à propos des enregistrements :
 
@@ -74,10 +74,10 @@ Quelques rappels à propos des enregistrements :
 
 Lorsque vous créez une étiquette de rétention, vous pouvez l’utiliser pour classer le contenu en tant qu’enregistrement. Pour déclarer un contenu en tant qu'enregistrement, suivez la procédure suivante :
 
-1. Créer une étiquette de rétention. Dans le centre de conformité Microsoft 365, accédez à **Gestion des enregistrements** \> **plan de gestion de fichiers**. Sur la page **Plan de gestion de fichiers**, cliquez sur **Créer une étiquette**.
+1. Créer une étiquette de rétention. Dans le centre de conformité Microsoft 365, accédez à **Gestion des enregistrements** \> **plan de gestion de fichiers**. Dans la page **plan de fichiers**, cliquez **créer une étiquette**.
 
-2. Sur la page **Paramètres d’étiquette** de l’Assistant, choisissez l’option permettant de définir l’étiquette de rétention pour déclarer du contenu sous la forme d’un enregistrement.<br/>
-
+2. Sur la page **Paramètres d’étiquette** de l’Assistant, choisissez l’option permettant de définir l’étiquette de rétention pour déclarer du contenu sous la forme d’un enregistrement.
+    
    ![Cliquez sur la case à cocher Utiliser une étiquette pour classer du contenu en tant qu’Enregistrement](../media/recordversioning6.png)
 
 3. [Publier](labels.md#how-retention-labels-work-with-retention-label-policies) ou [appliquer automatiquement](labels.md#applying-a-retention-label-automatically-based-on-conditions) l’étiquette de rétention aux sites SharePoint et/ou aux comptes OneDrive.
