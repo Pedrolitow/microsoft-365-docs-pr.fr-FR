@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: 53390468-eec6-45cb-b6cd-7511f9c909e4
 description: Utilisez l’outil recherche de contenu dans le centre de conformité dans Microsoft 365 ou Microsoft 365 pour rechercher du contenu dans les boîtes aux lettres, les sites SharePoint Online, les comptes OneDrive, Microsoft Teams, les Groupes Microsoft 365, les Groupes Yammer et les conversations Skype Entreprise. Vous pouvez utiliser des requêtes de recherche par mot clé et des conditions de recherche pour affiner les résultats de la recherche. Vous pouvez ensuite obtenir un aperçu et exporter les résultats de la recherche. La recherche de contenu est également un outil efficace pour rechercher du contenu lié à une demande d’objet de données RGPD.
-ms.openlocfilehash: d601db20cbfc8c5ea5a4fcc64d181a99a7f8f940
-ms.sourcegitcommit: b6c4b514b2cb6739af949780d7e2a5a5c8dcc161
+ms.openlocfilehash: 61e8b15af29bf02849a83f6a68bdd1c0accd7e8d
+ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "43900738"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43943173"
 ---
 # <a name="content-search"></a>Recherche de contenu
 
@@ -302,6 +302,8 @@ Gardez les points suivants à l’esprit lors de la recherche de contenu dans le
   Dans les résultats de la recherche, les résumés de la réunion sont identifiés en tant que **réunion** dans le**champ type** et les résumés d’appels sont identifiés en tant qu’**appel**. De plus, les conversations qui font partie d’une chaîne de Teams et de conversations 1xN sont identifiées en tant que **messages instantanés** dans le **champ type**.
   
   ![Les réunions, les appels et les conversations 1xN de Teams sont identifiés dans le champ type.](../media/O365-ContentSearch-Teams-MessageKind.png)
+
+   Pour plus d’informations, voir [Microsoft Teams lance l’eDiscovery pour les appels et les réunions](https://techcommunity.microsoft.com/t5/microsoft-teams-blog/microsoft-teams-launches-ediscovery-for-calling-and-meetings/ba-p/210947).
 
 - Vous pouvez utiliser la propriété**type de courrier**ou la condition de recherche **type de message** pour rechercher spécifiquement du contenu dans Teams. 
   

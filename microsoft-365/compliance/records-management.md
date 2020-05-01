@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: La gestion des enregistrements dans Microsoft 365 vous permet d’appliquer des planifications de rétention spécifiques de votre organisation dans un plan de gestion de fichiers afin de gérer la rétention, la déclaration d’enregistrements et la destruction de ceux-ci à l’appui du cycle de vie complet du contenu.
-ms.openlocfilehash: e74c7d9e5f01b49805fccdfac2c719835354b97a
-ms.sourcegitcommit: e695bcfc69203da5d3d96f3d6a891664a0e27ae2
+ms.openlocfilehash: e4454ba5940d9a67d9f160d90d0a9db14563bcf7
+ms.sourcegitcommit: f5cecd77e63ae8b47743d4f6dc3135f5decaf28b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43106080"
+ms.lasthandoff: 04/30/2020
+ms.locfileid: "43949247"
 ---
 # <a name="records-management-in-microsoft-365"></a>Gestion des enregistrements dans Microsoft 365
 
@@ -30,18 +30,18 @@ Les organisations de tous types ont besoin d’une solution de gestion des enreg
 
 La solution de gestion des enregistrements prend en charge les opérations suivantes :
 
-- **Étiqueter du contenu comme enregistrement** Publier des [étiquettes d’enregistrement](records.md) à appliquer par les utilisateurs finaux ou [appliquées automatiquement](labels.md#applying-a-retention-label-automatically-based-on-conditions) aux éléments contenant des informations sensibles, des mots clés ou certaines types de contenus.
+- **Étiqueter du contenu comme enregistrement** Créez et publiez des étiquettes de rétention qui déclarent du contenu sous la forme d’un [enregistrement](records.md) qui peut ensuite être appliquées par des utilisateurs finaux ou [appliquées automatiquement](labels.md#applying-a-retention-label-automatically-based-on-conditions) en identifiant les informations sensibles, les mots clés ou les types de contenu.
 
 - **Migrer et gérer votre plan de rétention avec le plan de gestion de fichiers**, et utiliser le [gestionnaire du plan de gestion de fichiers](file-plan-manager.md) pour incorporer votre plan de rétention existant ou en créer un avec des descripteurs de fichiers et des hiérarchies en expansion.
 
-- **Établir des stratégies de rétention et de suppression à l’intérieur de l’étiquette d’enregistrement**. Définir des périodes de [rétention](retention-policies.md#retaining-content-for-a-specific-period-of-time) et de [destruction](retention-policies.md#deleting-content-thats-older-than-a-specific-age) en fonction de divers facteurs, dont la date de création ou de dernière modification.
+- **Établir des stratégies de rétention et de suppression**. Définir des périodes de [rétention](retention-policies.md#retaining-content-for-a-specific-period-of-time) et de [destruction](retention-policies.md#deleting-content-thats-older-than-a-specific-age) en fonction de divers facteurs qui incluent la date de création ou de dernière modification.
 
 - **Déclencher une rétention basée sur les événements** avec un [destruction basée sur les événements](event-driven-retention.md).
 
-- **Vérifier et valider la destruction** en effectuant une [révision avant destruction](disposition-reviews.md).
+- **Vérifier et valider la destruction** en effectuant une [révision avant destruction](disposition.md#disposition-reviews) et la preuve de la [suppression d’enregistrements](disposition.md#disposition-of-records).
 
-- **Passer en revue les éléments détruits en effectuant une révision avant destruction**, puis [exporter un rapport d’actions](disposition-reviews.md#export-the-disposition-items) afin d’approfondir la validation et de générer un rapport.
+- **Exporter des informations sur tous les éléments supprimés** avec l’[option exporter](disposition.md#filter-and-export-the-views).
 
 - **Définir des autorisations spécifiques** afin que les fonctions de gestionnaire d’enregistrements au sein de votre organisation [disposent du droit d’accès](../security/office-365-security/permissions-in-the-security-and-compliance-center.md).
 
-La solution de gestion des enregistrements dans Microsoft 365 vous permet d’incorporer des planifications de rétention de votre organisation dans le plan de gestion de fichiers afin de gérer la rétention, la déclaration d’enregistrements et la destruction de ceux-ci à l’appui du cycle de vie complet du contenu.
+La solution de gestion des enregistrements dans Microsoft 365 vous permet d’incorporer des planifications de rétention de votre organisation dans le plan de gestion de fichiers afin de gérer la rétention, la déclaration d’enregistrements et la destruction afin de prendre en charge le cycle de vie complet de votre contenu.
