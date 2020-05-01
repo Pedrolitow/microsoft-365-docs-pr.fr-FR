@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Lorsque vous créez une étiquette de critère de diffusion, vous pouvez affecter automatiquement une étiquette à un document ou message électronique ou vous pouvez inviter les utilisateurs pour sélectionner l’étiquette que vous recommandez.
-ms.openlocfilehash: ee9eef1c8f12d24cdf1c03ee5d7799c63c9acc23
-ms.sourcegitcommit: 72e43b9bf85dbf8f5cf2040ea6a4750d6dc867c9
+ms.openlocfilehash: 48e6b000110014637afbf032f81b23703a763f4d
+ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "43799977"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43943243"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Appliquer automatiquement une étiquette sensibilité au contenu
 
@@ -35,7 +35,7 @@ La possibilité d’appliquer automatiquement des étiquettes à du contenu est 
 
 - Vous n’avez pas à dépendre des utilisateurs pour classer correctement tout le contenu.
 
-- Les utilisateurs n’ont plus à connaître les stratégies de gouvernance des données : à la place, ils peuvent se concentrer sur leur travail.
+- Vos utilisateurs n’ont plus besoin de connaître vos stratégies. À la place, ils peuvent porter leur attention sur leur travail.
 
 Deux méthodes s’offrent à vous pour appliquer automatiquement une étiquette de confidentialité :
 
@@ -131,13 +131,13 @@ De plus, vous pouvez choisir si une condition doit détecter tous les types d’
 
 ![Options pour le nombre d’instances et la précision des correspondances](../media/Sensitivity-labels-instance-count-match-accuracy.png)
 
-### <a name="configuring-classifers-for-a-label"></a>Configuration des classifieurs pour une étiquette
+### <a name="configuring-classifiers-for-a-label"></a>Configuration des classifieurs pour une étiquette
 
-Lorsque vous sélectionnez l’option **classifieurs**, sélectionnez un ou plusieurs classifieurs prédéfinis :
+Lorsque vous sélectionnez l’option **Classifieurs**, sélectionnez un ou plusieurs classifieurs prédéfinis :
 
 ![Options pour les classifieurs et les étiquettes de sensibilité](../media/sensitivity-labels-classifers.png)
 
-Pour plus d’informations sur ces classifieurs, voir [Prise en main des classifieurs d’entraînement (version d'essai)](classifier-getting-started-with.md).
+Pour plus d’informations sur ces classifieurs, voir [Prise en main des classifieurs de formation (préversion)](classifier-getting-started-with.md).
 
 Pendant la période d’évaluation, les applications suivantes prennent en charge les classifieurs pour les étiquettes de confidentialité :
 
@@ -205,7 +205,7 @@ Spécifique au client d’étiquetage unifié Azure Information Protection :
 - Une ou plusieurs étiquettes de confidentialité [créées et publiées](create-sensitivity-labels.md) (à au moins un utilisateur) que vous pouvez sélectionner pour vos stratégies d’étiquetage automatique. Pour ces étiquettes :
     - Cela n’a pas d’importance si le paramètre d’étiquetage automatique dans les applications Office est activé ou désactivé, car ce paramètre d’étiquette complète les stratégies d’étiquetage automatique, comme expliqué dans l’introduction. 
     - Si les étiquettes que vous souhaitez utiliser pour l’étiquetage automatique sont configurées pour utiliser les marquages visuels (en-têtes, pieds de page, filigranes), notez que ceux-ci ne sont pas appliqués aux documents.
-    - Si les étiquettes appliquent le chiffrement, celles-ci doivent être configurées pour le paramètre **Appliquer les autorisations maintenant**.
+    - Si les étiquettes appliquent le chiffrement, celles-ci doivent être configurées pour le paramètre **Attribuer des autorisations maintenant**.
 
 ### <a name="learn-about-simulation-mode"></a>En savoir plus sur le mode simulation
 
@@ -278,7 +278,7 @@ Enfin, vous pouvez utiliser le mode simulation pour fournir une approximation du
 
 12. Pour la page : **Choisir si vous voulez exécuter la simulation de stratégie maintenant ou plus tard** : sélectionnez **Exécuter la stratégie en mode simulation** si vous êtes prêt à exécuter la stratégie d’attribution automatique d’étiquette maintenant, en mode simulation. Dans le cas contraire, sélectionnez **Stratégie désactivée**. Sélectionnez **Suivant**. 
 
-13. Pour la page **Résumé** : consultez la configuration de la stratégie d’étiquetage automatique et apportez les modifications nécessaires, puis terminez l’Assistant.
+13. Pour la page **Résumé** : consultez la configuration de votre stratégie d’étiquetage automatique et apportez les modifications nécessaires, puis terminez l’Assistant.
     
     Contrairement à l’étiquetage automatique pour les applications Office, il n’y a pas d’option de publication distincte. Cependant, comme pour la publication d’étiquettes, prévoyez jusqu’à 24 heures pour que la stratégie d’étiquetage automatique soit reproduite dans toute votre organisation.
 
