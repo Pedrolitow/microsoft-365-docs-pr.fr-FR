@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Surveiller et gérer la suppression du contenu, que vous utilisiez une révision de disposition ou que le contenu soit automatiquement supprimé en fonction des paramètres que vous avez configurés.
-ms.openlocfilehash: cb48d2eb6d2d06093ddea74f13269faeb4798b97
-ms.sourcegitcommit: f5cecd77e63ae8b47743d4f6dc3135f5decaf28b
+ms.openlocfilehash: 47cb8f023f378796f206e436aa33e74b2993ac97
+ms.sourcegitcommit: 9d8816ddc3a97676ff947db80265e47b734f5462
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/30/2020
-ms.locfileid: "43950076"
+ms.locfileid: "43952617"
 ---
 # <a name="disposition-of-content"></a>Disposition de contenu
 
@@ -120,7 +120,7 @@ Le contenu en attente d’une révision de disposition est supprimé uniquement 
 > [!NOTE]
 > La possibilité d’afficher des enregistrements qui ont été supprimés automatiquement sans révision de disposition est progressivement déployée sur les clients en avril et le 2020 mai, de sorte que vous ne verrez peut-être pas cette expérience immédiatement.
 
-Utilisez l’onglet **disposition** de la page **gestion des enregistrements** pour identifier les enregistrements supprimés automatiquement. Ces éléments affichent les **enregistrements supprimés** dans la colonne **type** . En comparaison, les enregistrements libérés approuvés pour être supprimés par le biais d’un affichage de révision de disposition **en attente**. Par exemple :
+Utilisez l’onglet **disposition** de la page **gestion des enregistrements** pour identifier les enregistrements supprimés automatiquement. Ces éléments affichent les **enregistrements supprimés** dans la colonne **type** . Par exemple :
 
 ![Éléments qui ont été supprimés sans révision de disposition](../media/records-disposed2.png)
 

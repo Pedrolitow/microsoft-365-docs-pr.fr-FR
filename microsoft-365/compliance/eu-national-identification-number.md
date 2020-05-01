@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 ms.collection: M365-security-compliance
 localization_priority: Normal
 description: Cette rubrique présente l’aspect d’une stratégie de protection contre la perte de données (DLP) lorsqu’elle détecte le type d’informations sensibles du numéro d’identification national de l’UE. Ce type d’informations sensibles définit différents modèles, Mots clés et autres preuves pour chaque pays.
-ms.openlocfilehash: 4dac77f129b45f457a82e709cb5a3b846a95cdf4
-ms.sourcegitcommit: c7f11d851073ef14a69669f6c8b7e0c11e4bb7a1
+ms.openlocfilehash: c83644fc8870975634651e44e114f2a8e0cf7692
+ms.sourcegitcommit: a2dd93943f68362220b123e3e4b0f7b3facbdd03
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43938760"
+ms.lasthandoff: 04/30/2020
+ms.locfileid: "43955301"
 ---
 # <a name="eu-national-identification-number"></a>Numéro d’identification nationale de l’UE
 
@@ -103,18 +103,18 @@ Oui
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
   
-- La fonction `Func_bulgaria_national_number` trouve le contenu qui correspond au modèle. 
+- La fonction `Func_bulgaria_eu_national_id_card` trouve le contenu qui correspond au modèle. 
     
 - Un mot clé `Keywords_bulgaria_national_number` from est trouvé. 
     
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- La fonction `Func_bulgaria_national_number` trouve le contenu qui correspond au modèle. 
+- La fonction `Func_bulgaria_eu_national_id_card` trouve le contenu qui correspond au modèle. 
     
 ```
 <Entity id="419f449f-6d9d-4be1-a154-b531f7a91b41" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="85">
-          <IdMatch idRef="Func_bulgaria_national_number" />
+          <IdMatch idRef="Func_bulgaria_eu_national_id_card" />
           <Match idRef="Keywords_bulgaria_national_number" />
         </Pattern>
 <Pattern confidenceLevel="75">

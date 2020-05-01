@@ -17,16 +17,15 @@ search.appverid:
 - MET150
 - MOE150
 - FRP150
-ms.assetid: 739574d7-2c5b-4911-a549-f56ecc7d3b48
 description: Centre d’administration Microsoft 365-Découvrez les fonctionnalités qui ont été ajoutées ce mois-ci.
 ms.custom:
 - MACDashWhatsNew
-ms.openlocfilehash: 03fae5d2a9b8adc9859eb16bfd9d98740e7d8bf2
-ms.sourcegitcommit: c7f11d851073ef14a69669f6c8b7e0c11e4bb7a1
+ms.openlocfilehash: bd701f8ea2a6187f73fff91ea1ca2ccf2641f6e3
+ms.sourcegitcommit: 9d8816ddc3a97676ff947db80265e47b734f5462
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43939450"
+ms.lasthandoff: 04/30/2020
+ms.locfileid: "43952650"
 ---
 # <a name="whats-new-in-the-microsoft-365-admin-center"></a>Nouveautés du centre d’administration Microsoft 365
 
@@ -181,7 +180,7 @@ Nous commençons par déployer la fonctionnalité de changement de votre mode de
 
 ![Capture d’écran : section facturation de la carte d’abonnement avec une carte de crédit comme mode de paiement.](../media/MAC-BillingEditCreditCard.png)
 
-Vous souhaitez en savoir plus à ce sujet ? [Passer de la carte de crédit ou du compte bancaire à la facture](../commerce/billing-and-payments/change-payment-method.md)
+Vous souhaitez en savoir plus à ce sujet ? [Passer du mode de paiement par carte bancaire ou compte bancaire au mode de paiement par facture](../commerce/billing-and-payments/change-payment-method.md)
 
 ### <a name="global-reader"></a>Lecteur général
 
