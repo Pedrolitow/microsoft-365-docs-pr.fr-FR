@@ -5,17 +5,21 @@ author: MikePlumleyMSFT
 manager: pamgreen
 audience: ITPro
 ms.topic: article
-ms.service: sharepoint-online
-ms.collection: SPO_Content
+ms.prod: microsoft-365-enterprise
+ms.collection:
+- SPO_Content
+- M365-collaboration
+ms.custom:
+- M365solutions
 localization_priority: Normal
 f1.keywords: NOCSH
 description: Découvrez comment configurer Microsoft 365 pour la collaboration avec des personnes extérieures à votre organisation.
-ms.openlocfilehash: 1b2a15312dcaacc398bb521f3ecfb6e7453f66bb
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 338b486725f727506d654a4507d8ea47c6fa2bab
+ms.sourcegitcommit: 101084f9c81616342d78493232d8f13f5ffa4ddf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43630724"
+ms.lasthandoff: 05/01/2020
+ms.locfileid: "44002251"
 ---
 # <a name="collaborating-with-people-outside-your-organization"></a>Collaboration avec des personnes extérieures à votre organisation
 
@@ -42,7 +46,7 @@ Une fois que vous avez activé le scénario que vous souhaitez utiliser pour le 
 
 - [Meilleures pratiques pour le partage de fichiers et de dossiers avec des utilisateurs non authentifiés](best-practices-anonymous-sharing.md) : Découvrez les meilleures pratiques en matière de partage avec des utilisateurs non authentifiés.
 - [Limiter l’exposition accidentelle](share-limit-accidental-exposure.md) : Découvrez comment réduire les risques de partager accidentellement du contenu sensible avec des personnes extérieures à votre organisation.
-- [Créer un environnement de partage d’invité sécurisé](create-secure-guest-sharing-environment.md)) -Découvrez les outils fournis dans Microsoft 365 pour vous aider à vous assurer que le partage avec des personnes extérieures à votre organisation se fait de manière sécurisée et sécurisée et répond à vos exigences de gouvernance.
+- [Créer un environnement de partage d’invités sécurisé](create-secure-guest-sharing-environment.md) : Découvrez les outils fournis dans Microsoft 365 pour vous assurer que le partage avec des personnes extérieures à votre organisation est réalisé de manière sécurisée et fiable et répond à vos exigences de gouvernance.
 
 ## <a name="collaborate-with-partner-companies"></a>Collaborer avec des sociétés partenaires
 

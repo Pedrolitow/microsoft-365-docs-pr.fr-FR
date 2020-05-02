@@ -5,17 +5,21 @@ author: MikePlumleyMSFT
 manager: pamgreen
 audience: ITPro
 ms.topic: article
-ms.service: sharepoint-online
-ms.collection: SPO_Content
+ms.prod: microsoft-365-enterprise
+ms.collection:
+- SPO_Content
+- M365-collaboration
+ms.custom:
+- M365solutions
 localization_priority: Normal
 f1.keywords: NOCSH
 description: Découvrez comment collaborer avec des invités sur un site SharePoint.
-ms.openlocfilehash: 5a8bc5da55f3582a7e298dab97ec4d6b3d147b60
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: b9b5a50b4d0f7486b3c86546a672b01db3a5b000
+ms.sourcegitcommit: 101084f9c81616342d78493232d8f13f5ffa4ddf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43630736"
+ms.lasthandoff: 05/01/2020
+ms.locfileid: "44002276"
 ---
 # <a name="collaborate-with-guests-in-a-site"></a>Collaborer avec des invités sur un site
 
@@ -52,7 +56,7 @@ Notez les paramètres dans la section **restrictions de collaboration** . Assure
 
 Les sites SharePoint modernes utilisent les groupes Microsoft 365 pour contrôler l’accès au site. Les paramètres invités des groupes Microsoft 365 doivent être activés pour que l’accès invité dans les sites SharePoint fonctionne.
 
-![Capture d’écran des paramètres invités des groupes Microsoft 365 dans le centre d’administration Microsoft 365](../media/office-365-groups-guest-settings.png)
+![Capture d’écran des paramètres d’invité des Groupes Microsoft 365 dans le Centre d’administration Microsoft 365](../media/office-365-groups-guest-settings.png)
 
 Pour définir les paramètres invités des groupes Microsoft 365
 

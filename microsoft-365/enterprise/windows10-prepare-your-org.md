@@ -12,12 +12,12 @@ ms.date: 06/01/2018
 f1.keywords:
 - NOCSH
 ms.author: josephd
-ms.openlocfilehash: 74c8dc4a0d4e2d457462320999ed79e80b372b7a
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 43793a1780542b1825c693030dd9d4dbff4ee3d7
+ms.sourcegitcommit: 101084f9c81616342d78493232d8f13f5ffa4ddf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636662"
+ms.lasthandoff: 05/01/2020
+ms.locfileid: "44002342"
 ---
 # <a name="step-1-prepare-your-organization-for-windows-10-enterprise"></a>Étape 1 : Préparer votre organisation pour Windows 10 Entreprise
 
@@ -53,7 +53,7 @@ Utilisez la valeur appropriée dans le tableau ci-dessous lorsque vous configure
 
 Vous pouvez activer les données de diagnostic à l’aide de l’une des méthodes suivantes :
 
-* **Microsoft Intune** : Si vous envisagez d’utiliser Intune pour gérer vos appareils, vous pouvez créer une stratégie de configuration pour activer les données de diagnostic en configurant la stratégie système <a href="https://docs.microsoft.com/windows/client-management/mdm/policy-csp-system#system-allowtelemetry" target="blank">SystemAllowTelemetry</a> . Pour plus d’informations sur la configuration des stratégies de configuration, voir [gérer les paramètres et les fonctionnalités sur vos appareils avec les stratégies Microsoft Intune](https://aka.ms/intuneconfigpolicies).
+* **Microsoft Intune** : Si vous envisagez d’utiliser Intune pour gérer vos appareils, vous pouvez créer une stratégie de configuration pour activer les données de diagnostic en configurant la stratégie système <a href="https://docs.microsoft.com/windows/client-management/mdm/policy-csp-system#system-allowtelemetry" target="blank">SystemAllowTelemetry</a> .
 * **Éditeur du Registre** : vous pouvez utiliser l’éditeur du Registre pour activer manuellement les données de diagnostic sur chaque appareil de votre organisation. Vous pouvez également écrire un script pour modifier le registre. Si une stratégie de gestion existe déjà, comme la stratégie de groupe ou MDM, elle remplacera ce paramètre de registre.
 * **Stratégie de groupe** : Si vous n’envisagez pas d’inscrire des appareils dans Intune, vous pouvez utiliser un objet de stratégie de groupe pour définir le niveau de données de diagnostic de votre organisation.
 * **Invite de commandes** : vous pouvez définir les données et le service de diagnostic Windows 10 pour qu’ils démarrent automatiquement avec l’invite de commandes. Cette méthode est recommandée si vous testez le service sur seulement quelques appareils. L’activation du démarrage automatique du service avec cette commande ne permet pas de configurer le niveau de données de diagnostic. Si vous n’avez pas configuré de niveau de données de diagnostic à l’aide des outils de gestion, le service fonctionnera avec le niveau avancé par défaut.

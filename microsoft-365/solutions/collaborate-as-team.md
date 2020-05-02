@@ -5,17 +5,21 @@ author: MikePlumleyMSFT
 manager: pamgreen
 audience: ITPro
 ms.topic: article
-ms.service: sharepoint-online
-ms.collection: SPO_Content
+ms.prod: microsoft-365-enterprise
+ms.collection:
+- SPO_Content
+- M365-collaboration
+ms.custom:
+- M365solutions
 localization_priority: Normal
 f1.keywords: NOCSH
 description: Découvrez comment collaborer avec des invités dans Teams.
-ms.openlocfilehash: 4b395f0086198c6226d720c38fc4ea13b1a9d887
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 7d840628ce6d987a907e8be2c8a3c3c5125f7d33
+ms.sourcegitcommit: 101084f9c81616342d78493232d8f13f5ffa4ddf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43630748"
+ms.lasthandoff: 05/01/2020
+ms.locfileid: "44002191"
 ---
 # <a name="collaborate-with-guests-in-a-team"></a>Collaborer avec des invités au sein d’une équipe
 
@@ -72,7 +76,7 @@ Pour définir les paramètres d’accès invité aux équipes
 
 Teams utilise les groupes Microsoft 365 pour les membres de l’équipe. Les paramètres invités des groupes Microsoft 365 doivent être activés pour que l’accès invité dans teams puisse fonctionner.
 
-![Capture d’écran des paramètres invités des groupes Microsoft 365 dans le centre d’administration Microsoft 365](../media/office-365-groups-guest-settings.png)
+![Capture d’écran des paramètres d’invité des Groupes Microsoft 365 dans le Centre d’administration Microsoft 365](../media/office-365-groups-guest-settings.png)
 
 Pour définir les paramètres invités des groupes Microsoft 365
 

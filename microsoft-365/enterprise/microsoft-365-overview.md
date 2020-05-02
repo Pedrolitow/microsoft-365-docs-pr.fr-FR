@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: Fournit une présentation des composants, des plans et des chemins de déploiement pour Microsoft 365 pour les entreprises.
-ms.openlocfilehash: 85f05e85989d7b298ba0575c7447a3ef157ea163
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: d9148acadf5ec05562ac1a5cbbca9cbf7d0a1b65
+ms.sourcegitcommit: 101084f9c81616342d78493232d8f13f5ffa4ddf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631560"
+ms.lasthandoff: 05/01/2020
+ms.locfileid: "44002290"
 ---
 # <a name="microsoft-365-for-enterprise-overview"></a>Vue d’ensemble de Microsoft 365 pour entreprise
 
@@ -45,7 +45,7 @@ Microsoft 365 pour Enterprise est disponible en trois plans.
 |:-------|:-----|
 | E3 | Accédez aux produits et fonctionnalités principaux dans Microsoft 365 afin d’améliorer la productivité de l’espace de travail et de favoriser l’innovation, en toute sécurité. |
 | E5 | Accédez aux derniers produits et fonctionnalités de Microsoft 365, y compris les outils de protection avancée contre les menaces, de sécurité et de collaboration.. Comprend toutes les fonctionnalités E3's, ainsi que les outils de sécurité, vocaux et d’analyse de données avancés. |
-| F1 | Connectez-vous à vos collaborateurs terrain par le biais d’outils et de ressources spécialisés qui leur permettent d’effectuer leur travail. |
+| F3 | Connectez-vous à vos collaborateurs terrain par le biais d’outils et de ressources spécialisés qui leur permettent d’effectuer leur travail. |
 |||
 
 Si vous avez Microsoft 365 E3, vous pouvez également obtenir ces [offres](https://www.microsoft.com/microsoft-365/blog/2019/01/02/introducing-new-advanced-security-and-compliance-offerings-for-microsoft-365/):
@@ -72,7 +72,7 @@ L' [affiche de Microsoft 365 pour entreprise](../media/m365-poster/Microsoft365E
 Pour télécharger une copie de l’affiche, cliquez [ici](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/m365-poster/Microsoft365Enterprise.pdf).
 
 
-## <a name="transition-your-entire-organization"></a>Migration de l’organisation entière
+## <a name="transition-your-entire-organization"></a>Migration de l’ensemble de votre organisation
 
 Pour obtenir une meilleure idée de la façon de déplacer l’intégralité de votre organisation vers les produits et services de Microsoft 365 pour les entreprises, consultez l' [affiche de transition](../media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf).
 
@@ -149,6 +149,6 @@ Pour plus d’informations sur le déploiement, voir How :
 
 Si vous effectuez le déploiement vous-même, commencez votre [déploiement de Microsoft 365 pour les entreprises](deploy-microsoft-365-enterprise.md).
 
-## <a name="see-also"></a>Voir également
+## <a name="see-also"></a>Voir aussi
 
 [Page du produit Microsoft 365 pour entreprise](https://www.microsoft.com/microsoft-365/enterprise)

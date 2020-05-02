@@ -5,23 +5,27 @@ author: MikePlumleyMSFT
 manager: pamgreen
 audience: ITPro
 ms.topic: article
-ms.service: sharepoint-online
-ms.collection: SPO_Content
+ms.prod: microsoft-365-enterprise
+ms.collection:
+- SPO_Content
+- M365-collaboration
+ms.custom:
+- M365solutions
 localization_priority: Normal
 f1.keywords: NOCSH
 description: Découvrez comment créer un site extranet B2B ou une équipe avec des utilisateurs d’invités gérés à partir d’une organisation partenaire.
-ms.openlocfilehash: 24a2652d4d025f194d0754b90b6a21a054f4159a
-ms.sourcegitcommit: 21338a9287017a66298e0ff557e80051946ebf13
+ms.openlocfilehash: 3a1faab90907daf9c48ec02c51eb272187fb0fde
+ms.sourcegitcommit: 101084f9c81616342d78493232d8f13f5ffa4ddf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "42604539"
+ms.lasthandoff: 05/01/2020
+ms.locfileid: "44001698"
 ---
 # <a name="create-a-b2b-extranet-with-managed-guests"></a>Créer un extranet B2B avec des invités gérés
 
 Vous pouvez utiliser la [gestion des droits Azure Active Directory](https://docs.microsoft.com/azure/active-directory/governance/entitlement-management-overview) pour créer un extranet B2B afin de collaborer avec une organisation partenaire qui utilise Azure Active Directory. Cela permet aux utilisateurs de s’inscrire automatiquement sur le site extranet ou l’équipe et de recevoir un accès via un flux de travail d’approbation.
 
-Avec cette méthode de partage des ressources pour la collaboration, l’organisation partenaire peut aider les utilisateurs invités à se terminer et à les approuver, en réduisant la charge de travail de votre service informatique et en permettant aux personnes les plus familières de l’accord de collaboration de gérer les utilisateurs. Access.
+Avec cette méthode de partage des ressources pour la collaboration, l’organisation partenaire peut vous aider à gérer et à approuver les utilisateurs invités à la fin de celle-ci, en réduisant la charge pesant sur votre service informatique et en permettant aux personnes les plus familières de l’accord de collaboration de gérer l’accès des utilisateurs.
 
 Cet article décrit les étapes à suivre pour créer un package de ressources (dans ce cas, un site ou une équipe) que vous pouvez partager avec une organisation partenaire par le biais d’un modèle d’enregistrement d’accès libre-service. 
 
