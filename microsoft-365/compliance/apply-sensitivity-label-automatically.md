@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Lorsque vous créez une étiquette de critère de diffusion, vous pouvez affecter automatiquement une étiquette à un document ou message électronique ou vous pouvez inviter les utilisateurs pour sélectionner l’étiquette que vous recommandez.
-ms.openlocfilehash: 48e6b000110014637afbf032f81b23703a763f4d
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.openlocfilehash: 7d31d77bdb08ce5ae7ef5580301b0432747da2a1
+ms.sourcegitcommit: 9d8816ddc3a97676ff947db80265e47b734f5462
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43943243"
+ms.lasthandoff: 04/30/2020
+ms.locfileid: "43952627"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Appliquer automatiquement une étiquette sensibilité au contenu
 
@@ -135,7 +135,7 @@ De plus, vous pouvez choisir si une condition doit détecter tous les types d’
 
 Lorsque vous sélectionnez l’option **Classifieurs**, sélectionnez un ou plusieurs classifieurs prédéfinis :
 
-![Options pour les classifieurs et les étiquettes de sensibilité](../media/sensitivity-labels-classifers.png)
+![Options pour les classifieurs et les étiquettes de confidentialité](../media/sensitivity-labels-classifers.png)
 
 Pour plus d’informations sur ces classifieurs, voir [Prise en main des classifieurs de formation (préversion)](classifier-getting-started-with.md).
 
@@ -241,7 +241,6 @@ Enfin, vous pouvez utiliser le mode simulation pour fournir une approximation du
     
     ![Onglet Étiquetage automatique (préversion)](../media/auto-labeling-tab.png)
     
-    Ce nouvel onglet est en cours de déploiement vers les clients. Si vous ne le voyez pas encore, réessayez dans quelques jours.
 
 3. Sélectionnez **+ Créer une stratégie**.
 
