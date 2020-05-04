@@ -5,12 +5,12 @@ keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
-ms.openlocfilehash: 86bec329c5e0793be070df311d6058282e7be854
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 0df3f6d2636a277bdca12e7d76279c4c58c9f1d4
+ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636219"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44011910"
 ---
 # <a name="what-is-microsoft-managed-desktop"></a>Qu’est-ce que le Bureau géré Microsoft ?
 
@@ -53,7 +53,7 @@ Les administrateurs informatiques bénéficient des fonctionnalités suivantes 
 Bureau géré Microsoft prend en charge la gestion des appareils enregistrés et des logiciels Microsoft utilisés.
 
 - **Matériel :** au lieu de faire rechercher et tester les appareils (et leurs pilotes) par votre service informatique, des appareils spécifiques sont soigneusement testés par Bureau géré Microsoft, ce qui permet d'établir une [liste d'appareils](../service-description/device-list.md) organisée répondant aux exigences de performance à l'échelle de l'entreprise et garantissant leur fonctionnement avec le service. Vous pouvez soit vous procurer les appareils vous-même (ou travailler avec un partenaire), soit réutiliser les appareils que vous avez déjà, à condition qu'ils figurent sur la liste approuvée. L'inscription des appareils est simple et facile, et avant leur déploiement, vous pouvez également [personnaliser](../working-with-managed-desktop/config-setting-overview.md) certains aspects de l'expérience des appareils pour vos utilisateurs finaux.
-- **Mises à jour :** Bureau géré Microsoft configure et gère tous les aspects des [groupes de déploiement](../service-description/updates.md) pour les mises à jour de qualité et de fonctionnalités de Windows 10, les pilotes, les micrologiciels, les définitions des anti-virus et les mises à jour d’Office ProPlus. Cela comprend des tests et des vérifications approfondies de toutes les mises à jour, afin de s'assurer que les appareils enregistrés sont toujours à jour et de minimiser les perturbations, libérant ainsi votre département informatique de cette tâche permanente.
+- **Mises à jour :** Microsoft Managed Desktop définit et gère tous les aspects des [groupes de déploiement](../service-description/updates.md) pour les mises à jour de qualité et de fonctionnalité de Windows 10, les pilotes, le microprogramme, les définitions de virus et les applications Microsoft 365 pour les mises à jour d’entreprise. Cela comprend des tests et des vérifications approfondies de toutes les mises à jour, afin de s'assurer que les appareils enregistrés sont toujours à jour et de minimiser les perturbations, libérant ainsi votre département informatique de cette tâche permanente.
 - **Applications :** dans le cadre de Microsoft 365 Entreprise, Microsoft fournit (et gère) plusieurs applications Microsoft clés pour vous. Vous avez probablement aussi d'autres applications dont vous avez besoin pour votre entreprise. Au lieu de faire tester, conditionner et déployer ces applications par votre département informatique, Microsoft vous aide à les déployer et peut vous assister avec [Desktop App Assure](https://docs.microsoft.com/fasttrack/win-10-desktop-app-assure) si nécessaire. Pour en savoir plus, consultez la rubrique [Applications dans Bureau géré Microsoft](../get-ready/apps.md).
 
 

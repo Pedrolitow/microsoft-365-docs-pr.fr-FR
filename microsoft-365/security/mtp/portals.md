@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: fe98df2c64bca36bc44c30bddb8b5e53d25aa6a5
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: ac1491a9257ff7169c0e2a10b014897d47a5d14b
+ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634555"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44011838"
 ---
 # <a name="microsoft-security-portals-and-admin-centers"></a>Portails de sécurité Microsoft et centres d’administration
 Tandis que le [Centre de sécurité Microsoft 365](overview-security-center.md) est le nouveau domicile de la surveillance et de la gestion de la sécurité de vos identités, données, périphériques et applications, vous devrez accéder à différents portails pour certaines tâches spécialisées.
@@ -52,5 +52,5 @@ Bien que ces portails ne soient pas spécifiquement destinés à la gestion de l
 | Portail Azure | Afficher et gérer [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis) et toutes vos [ressources Azure](https://docs.microsoft.com/azure/azure-resource-manager/management/overview)  | [portal.azure.com](https://portal.azure.com/) |
 | Centre de conformité Microsoft 365 | Gérer les stratégies de gestion des données et garantir [la conformité aux réglementations](https://docs.microsoft.com/microsoft-365/compliance/offering-home?view=o365-worldwide) | [compliance.microsoft.com](https://compliance.microsoft.com/) |
 | Centre d’administration Microsoft 365 | Configurer les services Microsoft 365 ; gérer les rôles, les licences et suivre les mises à jour de vos services Microsoft 365 | [admin.microsoft.com](https://admin.microsoft.com/) |
-| Centre d’administration du gestionnaire de points de terminaison Microsoft | Utiliser le [Gestionnaire de points de terminaison Microsoft](https://docs.microsoft.com/configmgr/) pour gérer et sécuriser les appareils à l’aide de fonctionnalités Intune et configuration combinées | [devicemanagement.microsoft.com](https://devicemanagement.microsoft.com/) |
+| Centre d’administration Microsoft Endpoint Manager | Utiliser le [Gestionnaire de points de terminaison Microsoft](https://docs.microsoft.com/mem/configmgr/) pour gérer et sécuriser les appareils à l’aide de fonctionnalités Intune et configuration combinées | [devicemanagement.microsoft.com](https://devicemanagement.microsoft.com/) |
 | Portail Microsoft Intune | Utiliser [Microsoft Intune](https://docs.microsoft.com/intune/fundamentals/what-is-intune) pour déployer des stratégies d’appareil et surveiller les périphériques pour la conformité | [portal.azure.com/#blade/Microsoft_Intune_DeviceSettings](https://portal.azure.com/#blade/Microsoft_Intune_DeviceSettings/ExtensionLandingBlade/overview)

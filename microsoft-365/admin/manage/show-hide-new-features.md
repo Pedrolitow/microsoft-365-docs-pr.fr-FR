@@ -1,5 +1,5 @@
 ---
-title: Afficher ou masquer les nouvelles fonctionnalités à l’aide de nouveautés en matière de gestion
+title: Afficher ou masquer les nouvelles fonctionnalités à l’aide de nouveautés gestion
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -18,14 +18,14 @@ search.appverid:
 - MET150
 - MOE150
 description: Déterminez les fonctionnalités et le contenu des nouveautés affichées ou masqués pour les utilisateurs finaux dans Office nouveautés de la gestion des applications de bureau Office.
-ms.openlocfilehash: de4191529c58dd471c6f24e86bdff2177a38b51d
-ms.sourcegitcommit: 256184cf731c1851b04a07dd7d59ecf020d02635
+ms.openlocfilehash: 7399da493f8e6878a92dc13d92482d7ddece0ba3
+ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43131971"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44011698"
 ---
-# <a name="show-or-hide-new-features-using-whats-new-management"></a>Afficher ou masquer les nouvelles fonctionnalités à l’aide de nouveautés en matière de gestion
+# <a name="show-or-hide-new-features-using-whats-new-management"></a>Afficher ou masquer les nouvelles fonctionnalités à l’aide de nouveautés gestion
 
 Office What’s New Management for Win 32 permet à votre organisation de décider des fonctionnalités affichées ou masquées par les utilisateurs finaux dans l’application de bureau Office. Chaque version d’Office inclut des fonctionnalités nouvelles et améliorées, et l’aperçu du contenu vous permet d’afficher le nouveau contenu pour chaque version et canal de publication, et de choisir de masquer ou d’afficher le nouveau contenu pour chaque fonctionnalité pour les utilisateurs finaux. 
 
@@ -62,7 +62,7 @@ Les nouvelles fonctionnalités apparaissent dans Office nouveautés en fonction 
 |**Semi-annuel (ciblé)** <br/> |1er septembre et 1er mars <br/> | 2 semaines avant la version majeure qui offre de nouvelles fonctionnalités
 |**Semi-annuel** <br/> |1er janvier et 1er juillet <br/> | 2 semaines avant la version majeure qui offre de nouvelles fonctionnalités<br/> |
 
-Pour plus d’informations sur les planifications de mise à jour des canaux, consultez [l’historique des mises à jour pour Office 365 ProPlus (affiché par date)](https://docs.microsoft.com/officeupdates/update-history-office365-proplus-by-date).
+Pour plus d’informations sur les planifications de mise à jour des canaux, consultez [l’historique des mises à jour pour les applications Microsoft 365 (classées par date)](https://docs.microsoft.com/officeupdates/update-history-office365-proplus-by-date).
 
 ## <a name="related-articles"></a>Articles connexes
 

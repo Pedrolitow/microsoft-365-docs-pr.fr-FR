@@ -19,12 +19,12 @@ ms.custom:
 - fwlink 824861; CampaignID O365_Comm_SR_UpgradeOffice
 ms.assetid: f6b00895-b5fd-4af6-a656-b7788ea20cbb
 description: Découvrez comment mettre à niveau vos utilisateurs vers le client Office le plus récent.
-ms.openlocfilehash: 148069011784b822c5ce366190afd60bf278772f
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 2140e246882d9d9b30481bc20b78142708408f88
+ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627533"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44011270"
 ---
 # <a name="upgrade-your-microsoft-365-for-business-users-to-the-latest-office-client"></a>Mettre à niveau vos utilisateurs Microsoft 365 vers le dernier client Office
 
@@ -124,4 +124,4 @@ Si vous ne l’avez pas encore fait, attribuez des licences aux utilisateurs de 
 Une fois que vous avez vérifié les utilisateurs que vous souhaitez mettre à niveau, la dernière étape consiste à installer Office, voir [Télécharger et installer ou réinstaller Office sur votre PC ou Mac](https://support.office.com/article/4414eaaf-0478-48be-9c42-23adc4716658.aspx).
   
 > [!TIP]
-> Si vous ne souhaitez pas que vos utilisateurs installent Office eux-mêmes, consultez la rubrique [gérer les paramètres de téléchargement de logiciels dans office 365](https://docs.microsoft.com/DeployOffice/manage-software-download-settings-office-365). Vous pouvez utiliser l' [outil déploiement d’Office](https://docs.microsoft.com/DeployOffice/overview-of-the-office-2016-deployment-tool) pour télécharger le logiciel Office sur votre réseau local, puis déployer Office à l’aide de la méthode de déploiement de logiciels que vous utilisez généralement.
+> Si vous ne souhaitez pas que vos utilisateurs installent Office eux-mêmes, consultez la rubrique [gérer les paramètres de téléchargement de logiciels dans office 365](https://docs.microsoft.com/DeployOffice/manage-software-download-settings-office-365). Vous pouvez utiliser l' [outil déploiement d’Office](https://docs.microsoft.com/DeployOffice/overview-office-deployment-tool) pour télécharger le logiciel Office sur votre réseau local, puis déployer Office à l’aide de la méthode de déploiement de logiciels que vous utilisez généralement.

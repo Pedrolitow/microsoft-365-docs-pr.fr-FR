@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Découvrez comment utiliser l’applet de commande AllowSelfServicePurchase PowerShell pour activer ou désactiver l’achat libre-service.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 0e9f9e3ee87f62b903e4bf7069f31319253de62d
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 6c0bcec70eab4266674ca2a22f1b2054807a26e8
+ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42080341"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44011674"
 ---
 # <a name="use-allowselfservicepurchase-for-the-mscommerce-powershell-module"></a>Utiliser AllowSelfServicePurchase pour le module MSCommerce PowerShell
 
@@ -139,7 +139,7 @@ Cela peut être dû à une version plus ancienne de TLS (Transport Layer Securit
 
 **Solution**
 
-Effectuez une mise à niveau vers TLS 1,2 :[https://docs.microsoft.com/configmgr/core/plan-design/security/enable-tls-1-2](https://docs.microsoft.com/configmgr/core/plan-design/security/enable-tls-1-2)
+Effectuez une mise à niveau vers TLS 1,2 :[https://docs.microsoft.com/mem/configmgr/core/plan-design/security/enable-tls-1-2](https://docs.microsoft.com/mem/configmgr/core/plan-design/security/enable-tls-1-2)
 
 <!--
 ## Uninstall the MSCommerce module

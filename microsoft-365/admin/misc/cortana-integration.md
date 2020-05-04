@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7257cb50-0d5c-4f7a-ac2e-9fe5d13bb5cb
 description: 'Découvrez comment utiliser Cortana, lorsqu’elle est intégrée à Office 365. Vous pouvez désactiver Cortana dans le centre d’administration pour limiter son accès aux données de votre organisation. '
-ms.openlocfilehash: 768abeed4bf40255e9dd7c6e09e20122523a943d
-ms.sourcegitcommit: c758a4290d205394225a0df2fd667cb565c79c8f
+ms.openlocfilehash: 5f1d225e8cf7378bf4548fbbc705cf4ca6c2c63b
+ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "43907212"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44011686"
 ---
 # <a name="cortana-in-office-365"></a>Cortana dans Office 365
 
@@ -106,7 +106,7 @@ Voici les deux façons de penser au fonctionnement de Cortana dans votre entrepr
 
 3. Par exemple, lire mes courriers électroniques est un service Cortana auquel les utilisateurs peuvent se connecter via Outlook pour iOS et utilise Cortana dans Office 365.
 
-4. Les administrateurs disposent toujours de contrôles pour les expériences connectées facultatives pour Cortana, similaires aux expériences en connexion facultatives lors de l’utilisation d’applications Office ProPlus.
+4. Les administrateurs disposent toujours de contrôles pour les expériences connectées facultatives pour Cortana, similaires aux expériences en connexion facultatives lors de l’utilisation d’applications Microsoft 365 pour les applications d’entreprise.
 
 **Services existants pour les consommateurs**: les services connectés facultatifs de Cortana sont conçus principalement pour les expériences de consommation et sont actuellement fournis dans Windows 10 (version 1909 et antérieures) et l’application Cortana sur iOS et Android.
 

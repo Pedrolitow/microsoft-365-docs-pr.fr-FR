@@ -9,12 +9,12 @@ f1.keywords:
 ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 763a9f3c7c517a5d093b9691310720468053bf24
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 02e6eb5914af9ad72971029913d31b214ebbd190
+ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636473"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44011934"
 ---
 # <a name="how-updates-are-handled-in-microsoft-managed-desktop"></a>Gestion des mises à jour dans le bureau géré Microsoft
 
@@ -61,10 +61,10 @@ Fonctionnement du déploiement des mises à jour :
 <tr><td>Mises à jour de fonctionnalité pour le système d’exploitation</td><td>0 jour</td><td>30 jours</td><td>60 jours</td><td>90 jours</td></tr>
 <tr><td>Pilotes/microprogramme</td><td colspan="4">Suit la planification des mises à jour de la qualité</td></tr>
 <tr><td>Définition de la protection antivirus</td><td colspan="4">Mise à jour avec chaque analyse</td></tr>
-<tr><td>Applications Microsoft 365 pour les entreprises</td><td colspan="4">Suit le canal mensuel d’Office
+<tr><td>Microsoft 365 Apps for enterprise</td><td colspan="4">Suit le canal mensuel d’Office
 </table>
 
-Pour plus d’informations sur le canal mensuel pour les applications Microsoft 365 pour entreprise, consultez la rubrique [Overview of Update Channels for microsoft 365 Apps for Enterprise](https://docs.microsoft.com/deployoffice/overview-of-update-channels-for-office-365-proplus).
+Pour plus d’informations sur le canal mensuel pour les applications Microsoft 365 pour les entreprises, voir [Overview of Update Channels for microsoft 365 Apps](https://docs.microsoft.com/deployoffice/overview-update-channels).
 
 >[!NOTE]
 >Ces périodes de report sont intentionnellement conçues pour garantir des normes de performances et de sécurité élevées pour tous les utilisateurs. Par ailleurs, en fonction des données collectées sur tous les appareils de bureau gérés par Microsoft et de l’étendue et de l’impact des mises à jour, Microsoft Managed Desktop réserve de souplesse pour modifier la longueur des périodes de report ci-dessus pour tous les groupes de déploiement sur une base ad hoc.

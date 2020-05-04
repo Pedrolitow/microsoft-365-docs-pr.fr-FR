@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 08c5307c-4a6b-4761-8410-a6c96725760f
 description: 'Découvrez comment l’analyse de l’utilisation se connecte à une API et fournit une tendance mensuelle de l’utilisation des différents services Microsoft 365.  '
-ms.openlocfilehash: 56ef0ffcedee71a4529ff31aecefed0d2645b89a
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 2c39edd66bda19233a67c4623044ffc9e0e8046d
+ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634239"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44011770"
 ---
 # <a name="microsoft-365-usage-analytics-data-model"></a>Modèle de données d'analyse de l'utilisation de Microsoft 365
 
@@ -50,7 +50,7 @@ Cette API fournit des informations sur la tendance mensuelle de l’utilisation 
 |Utilisation de SharePoint Online par les locataires  <br/> |Contient des données sur les sites SharePoint. Celles-ci couvrent les sites d'équipe ou les sites de groupe, avec notamment le nombre total de sites, le nombre de documents stockés sur un site, le nombre de fichiers par type d'activité et l'espace de stockage utilisé.  <br/> |Contient des données d'état de fin de mois pour une période de 12 mois consécutifs, mois en cours compris.  <br/> |
 |Utilisation de OneDrive Entreprise par les locataires  <br/> |Contient des données sur les comptes OneDrive, comme le nombre de comptes, le nombre de documents stockés sur les différents comptes OneDrive, l'espace de stockage utilisé et le nombre de fichiers par type d'activité.  <br/> |Contient des données d'état de fin de mois pour une période de 12 mois consécutifs, mois en cours compris.  <br/> |
 |Utilisation de groupes Microsoft 365 de client  <br/> |Contient des données sur l’utilisation des groupes Microsoft 365, notamment la boîte aux lettres, SharePoint et Yammer.  <br/> |Contient des données d'état de fin de mois pour une période de 12 mois consécutifs, mois en cours compris.  <br/> |
-|Activation d'Office par les locataires  <br/> |Contient des données sur le nombre d'activations d'abonnements Office, le nombre d'activations par appareil (Android/iOS/Mac/PC) et les activations par plan de service (par exemple, Office ProPlus, Visio, Project).  <br/> |Contient des données d'état de fin de mois pour une période de 12 mois consécutifs, mois en cours compris.  <br/> |
+|Activation d'Office par les locataires  <br/> |Contient des données sur le nombre d’activations d’abonnements Office, le nombre d’activations par appareil (Android/iOS/Mac/PC), les activations par plan de service, par exemple Microsoft 365 Apps for Enterprise, Visio, Project.  <br/> |Contient des données d'état de fin de mois pour une période de 12 mois consécutifs, mois en cours compris.  <br/> |
 |État utilisateur  <br/> |Contient des métadonnées sur les utilisateurs, comme le nom d'affichage, les produits attribués, l'emplacement, le service, le titre et la société. Ces données concernent les utilisateurs auxquels une licence a été attribuée au cours du mois complet écoulé. Chaque utilisateur est désigné par un identifiant utilisateur unique.  <br/> |Ces données concernent les utilisateurs qui disposaient d'une licence au cours du mois complet écoulé.  <br/> |
 |Activité utilisateur  <br/> |Contient des informations par utilisateur sur les activités effectuées par les utilisateurs sous licence.  <br/> Voir [Définition d'un utilisateur actif](active-user-in-usage-reports.md) pour plus d'informations sur les activités produit renvoyées dans cette table de données.  <br/> |Ces données concernent les utilisateurs ayant effectué une activité au cours du mois complet écoulé, tous services confondus.  <br/> |
    
@@ -152,7 +152,7 @@ Cette table contient les données relatives à l’adoption du mois sur le mois 
 |ActiveUsers  <br/> |Nombre d'utilisateurs ayant effectué une activité intentionnelle à l'aide du produit au cours de la période concernée.  <br/> Un utilisateur est comptabilisé comme actif au cours d'un mois donné s'il a effectué une des activités clés à l'aide du produit. Les activités clés sont disponibles dans la table **Activité produit des locataires**.  <br/> |
 |CumulativeActiveUsers  <br/> |Nombre d'utilisateurs activés pour utiliser un produit et ayant utilisé ce produit jusqu'au mois pris en compte au moins une fois depuis le début de la collecte des données dans le nouveau système d'utilisation.  <br/> |
 |MoMReturningUsers  <br/> |Nombre d'utilisateurs ayant été actifs au cours du mois pris en compte et qui étaient également actifs au cours du mois précédent.  <br/> |
-|FirstTimeUsers  <br/> |Nombre d'utilisateurs devenus actifs au cours de la période prise en compte pour la première fois depuis la collecte des données dans le nouveau système d'utilisation.  <br/> Un utilisateur est comptabilisé comme nouvel utilisateur au cours d'un mois donné si une activité de celui-ci est détectée pour la première fois depuis le début de la collecte des données dans le nouveau système de création de rapports. Une fois comptabilisé comme nouvel utilisateur, il ne sera jamais recomptabilisé comme tel, même si l'écart entre deux activités est très important.  <br/> |
+|FirstTimeUsers  <br/> |Nombre d'utilisateurs devenus actifs au cours de la période prise en compte pour la première fois depuis la collecte des données dans le nouveau système d'utilisation.  <br/> Un utilisateur est comptabilisé comme nouvel utilisateur au cours d'un mois donné si une activité de celui-ci est détectée pour la première fois depuis le début de la collecte des données dans le nouveau système de création de rapports. Une fois compté en tant qu’utilisateur pour la première fois, même si cet utilisateur a un grand écart dans son activité, il ne sera jamais compté à nouveau comme un utilisateur pour la première fois.  <br/> |
 |Content Date  <br/> |Si la période prise en compte est le mois en cours, cette valeur correspond à la date des données les plus récentes disponibles pour le mois en cours.  <br/> Si la période prise en compte est le mois précédent, cette valeur correspond à la date des données les plus récentes du mois précédent.  <br/> |
    
 ### <a name="data-table---tenant-product-activity"></a>Table de données - Activité produit des locataires
@@ -277,7 +277,7 @@ Ce tableau fournit des données sur la façon dont les groupes Microsoft 365 son
    
 ### <a name="data-table---tenant-office-activation"></a>Table de données - Activation d'Office par les locataires
 
-La table contient des données sur le nombre d'activations d'abonnements Office, tous plans de services confondus (par exemple, Office ProPlus, Visio, Project). Elle fournit également des données sur le nombre d'activations par appareil (Android/iOS/Mac/PC).
+Le tableau fournit des données sur le nombre d’activations d’abonnements Office dans les plans de service, par exemple, Microsoft 365 Apps for Enterprises, Visio, Project. Elle fournit également des données sur le nombre d'activations par appareil (Android/iOS/Mac/PC).
   
 |**Nom de la colonne**|**Description de la colonne**|
 |:-----|:-----|

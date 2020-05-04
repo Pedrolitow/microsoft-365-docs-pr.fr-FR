@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Découvrez comment les utilisateurs utilisent les étiquettes de confidentialité dans les applications Office pour le bureau, les applications Office pour mobile et les applications Office pour le Web. Découvrez les applications qui prennent en charge les étiquettes de sensibilité.
-ms.openlocfilehash: 8015df13735097292be7c2866cdb9f5c061b2c68
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.openlocfilehash: 3323216b6858a76674477519b07bdcd0ffd27724
+ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43943597"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44011805"
 ---
 # <a name="use-sensitivity-labels-in-office-apps"></a>Utiliser les étiquettes de confidentialité dans les applications Office
 
@@ -40,7 +40,7 @@ Pour utiliser les étiquettes de confidentialité avec ces éditions autonomes d
 
 Pour chaque fonctionnalité, les tableaux suivants répertorient la version minimale dont vous avez besoin pour cette application afin de prendre en charge les étiquettes de sensibilité à l’aide d’étiquettes intégrées. Ou, si la fonctionnalité étiquette est en préversion publique ou en révision pour une version ultérieure.
 
-De nouvelles versions des applications sont disponibles à différents moments pour différents canaux de mise à jour. Pour plus d’informations, notamment sur la configuration de votre canal de mise à jour afin de pouvoir tester une nouvelle fonctionnalité d’étiquetage qui vous intéresse, consultez la rubrique [vue d’ensemble des canaux de mise à jour pour Office 365 ProPlus](https://docs.microsoft.com/DeployOffice/overview-of-update-channels-for-office-365-proplus). Les nouvelles fonctionnalités de la préversion privée ne sont pas incluses dans le tableau, mais vous pouvez participer à ces aperçus en décrivant votre organisation pour le [programme d’évaluation privée de la protection des informations Microsoft](https://aka.ms/mip-preview).
+De nouvelles versions des applications sont disponibles à différents moments pour différents canaux de mise à jour. Pour plus d’informations, notamment sur la configuration de votre canal de mise à jour afin de pouvoir tester une nouvelle fonctionnalité d’étiquetage qui vous intéresse, reportez-vous à la rubrique [vue d’ensemble des canaux de mise à jour pour les applications Microsoft 365](https://docs.microsoft.com/DeployOffice/overview-update-channels). Les nouvelles fonctionnalités de la préversion privée ne sont pas incluses dans le tableau, mais vous pouvez participer à ces aperçus en décrivant votre organisation pour le [programme d’évaluation privée de la protection des informations Microsoft](https://aka.ms/mip-preview).
 
 Des fonctionnalités supplémentaires sont disponibles lorsque vous installez le client d’étiquetage unifié Azure information protection, qui s’exécute sur des ordinateurs Windows uniquement. Pour plus d’informations, reportez-vous à [la rubrique comparer les clients d’étiquetage pour les ordinateurs Windows](https://docs.microsoft.com/azure/information-protection/rms-client/use-client#compare-the-labeling-clients-for-windows-computers).
 
@@ -56,7 +56,7 @@ Pour iOS et Android : lorsqu’une version minimale est indiquée, la fonctionn
 |[Fournir un lien aide vers une page d’aide personnalisée](sensitivity-labels.md#what-label-policies-can-do)                       | 1910+          | 16.21 +     | 2.21+ | 16.0.11231+ | [Aperçu](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[Marquer le contenu](sensitivity-labels.md#what-sensitivity-labels-can-do)                                              | 1910+          | 16.21 +     | 2.21+ | 16.0.11231+ | [Aperçu](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[Attribuer des autorisations maintenant](encryption-sensitivity-labels.md#assign-permissions-now)                                 | 1910+          | 16.21 +     | 2.21+ | 16.0.11231+ | [Aperçu](sensitivity-labels-sharepoint-onedrive-files.md) |
-|[Permettre aux utilisateurs d’attribuer des autorisations](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | Déploiement sur le [canal mensuel](https://docs.microsoft.com/DeployOffice/overview-of-update-channels-for-office-365-proplus#monthly-channel-for-microsoft-365-apps) (2003 +) | Déploiement sur le [canal mensuel](https://docs.microsoft.com/DeployOffice/overview-of-update-channels-for-office-365-proplus#monthly-channel-for-microsoft-365-apps) (16.35 +)   | En cours de révision   | En cours de révision         | En cours de révision                                                        |
+|[Permettre aux utilisateurs d’attribuer des autorisations](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | Déploiement sur le [canal mensuel](https://docs.microsoft.com/DeployOffice/overview-update-channels#monthly-channel-for-microsoft-365-apps) (2003 +) | Déploiement sur le [canal mensuel](https://docs.microsoft.com/DeployOffice/overview-update-channels#monthly-channel-for-microsoft-365-apps) (16.35 +)   | En cours de révision   | En cours de révision         | En cours de révision                                                        |
 |[Afficher l’utilisation des étiquettes avec l’analyse d’étiquette et l'](label-analytics.md) envoi de données pour les administrateurs                      | En cours de révision            | En cours de révision        | En cours de révision   | En cours de révision         | En cours de révision                                                        |
 |[Demander aux utilisateurs d’appliquer une étiquette à leurs courriers électroniques et documents](sensitivity-labels.md#what-label-policies-can-do)   | En cours de révision            | En cours de révision        | En cours de révision   | En cours de révision         | En cours de révision                                                        |
 |[Appliquer automatiquement une étiquette de confidentialité à du contenu](apply-sensitivity-label-automatically.md)                    | Aperçu : dans [Office Insider](https://office.com/insider)                                  | En cours de révision | En cours de révision | En cours de révision | [Aperçu](sensitivity-labels-sharepoint-onedrive-files.md) |

@@ -20,12 +20,12 @@ search.appverid:
 description: Centre d’administration Microsoft 365-Découvrez les fonctionnalités qui ont été ajoutées ce mois-ci.
 ms.custom:
 - MACDashWhatsNew
-ms.openlocfilehash: bd701f8ea2a6187f73fff91ea1ca2ccf2641f6e3
-ms.sourcegitcommit: 9d8816ddc3a97676ff947db80265e47b734f5462
+ms.openlocfilehash: 2b25e68fbe07b46243f92bdcd252e86340d5f7eb
+ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/30/2020
-ms.locfileid: "43952650"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44011326"
 ---
 # <a name="whats-new-in-the-microsoft-365-admin-center"></a>Nouveautés du centre d’administration Microsoft 365
 
@@ -289,8 +289,8 @@ Une mise à jour a été mise à jour vers l’un des assistants d’installatio
 
 Nous disposons de mises à jour pour la facturation et les abonnements ce mois-ci :
 
-- Abonnements basés sur des appareils : vous pouvez attribuer ou annuler l’affectation de licences **Office 365 ProPlus for Education (Device)** à des appareils dans le centre d’administration Microsoft 365. **Office 365 ProPlus for Education (Device)** est une licence de module complémentaire qui vous permet d’attribuer une licence à un appareil. Accédez aux services de **facturation** > **& services** pour trouver et acheter la licence.
-- Gestion des licences basées sur les utilisateurs : nous avons mis à jour la manière dont vous attribuez des licences aux utilisateurs > **actifs** des **utilisateurs dans le**nouveau style. Si vous souhaitez en savoir plus, consultez les articles : 
+- Abonnements basés sur des appareils : vous pouvez attribuer ou annuler l’affectation de licences **Microsoft 365 Apps for Education (Device)** à des appareils dans le centre d’administration Microsoft 365. **Microsoft 365 Apps for Education (Device)** est une licence de module complémentaire qui vous permet d’attribuer une licence à un appareil. Accédez aux services de **facturation** > **& services** pour trouver et acheter la licence.
+- Gestion des licences basées sur les utilisateurs : nous avons mis à jour la manière dont vous attribuez des licences aux utilisateurs > **actifs** des **utilisateurs dans le**nouveau style. Pour plus d’informations, reportez-vous aux rubriques suivantes :
   - [Attribuer des licences aux utilisateurs](manage/assign-licenses-to-users.md)
   - [Annuler l'assignation des licences aux utilisateurs](manage/remove-licenses-from-users.md)
 

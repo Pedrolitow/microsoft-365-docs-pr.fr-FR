@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: b4527d49-4073-4b43-8274-31b7a3166f92
 description: Déterminez si votre client et vos utilisateurs satisfont à la configuration requise, afin que vous puissiez utiliser un déploiement centralisé pour déployer des compléments Office.
-ms.openlocfilehash: 10dd97adf67cf3aeb91337fb251e7cebffdce56c
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 0fcdb9901c708842470f72106ab4eea20ff8b17e
+ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43628231"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44011722"
 ---
 # <a name="determine-if-centralized-deployment-of-add-ins-works-for-your-organization"></a>Déterminer si le déploiement centralisé des compléments fonctionne pour votre organisation
 
@@ -73,7 +73,7 @@ La fonctionnalité Déploiement centralisé ne prend pas en charge ce qui suit :
 
 Pour utiliser les applications Microsoft 365 pour Enterprise, un utilisateur doit disposer d’un compte Microsoft 365 et avoir reçu une licence. Pour plus d’informations, reportez-vous à la rubrique [Overview of Microsoft 365 Apps for Enterprise](https://go.microsoft.com/fwlink/p/?linkid=846328).
 
-La façon la plus simple de détecter si un utilisateur dispose de Microsoft 365 ProPlus et de l’utiliser récemment est d’utiliser le rapport sur les activations de Microsoft Office, qui est disponible dans le centre d’administration Microsoft 365. Le rapport fournit la liste de tous les utilisateurs qui ont activé les applications Microsoft 365 pour les entreprises au cours des 7, 30, 90 ou 180 derniers jours. À des fins de déploiement centralisé, les activations de bureau pour Windows ou Mac sont les colonnes importantes dans le rapport. Vous pouvez exporter le rapport vers Excel. Pour plus d’informations sur le rapport, reportez-vous à [la rubrique rapports microsoft 365 dans le centre d’administration-activations de Microsoft Office](../activity-reports/microsoft-office-activations.md).
+Le moyen le plus simple de détecter si les applications Microsoft 365 pour Enterprise sont installées sur un utilisateur et de l’utiliser récemment est d’utiliser le rapport des activations de Microsoft Office, qui est disponible dans le centre d’administration Microsoft 365. Le rapport fournit la liste de tous les utilisateurs qui ont activé les applications Microsoft 365 pour les entreprises au cours des 7, 30, 90 ou 180 derniers jours. À des fins de déploiement centralisé, les activations de bureau pour Windows ou Mac sont les colonnes importantes dans le rapport. Vous pouvez exporter le rapport vers Excel. Pour plus d’informations sur le rapport, reportez-vous à [la rubrique rapports microsoft 365 dans le centre d’administration-activations de Microsoft Office](../activity-reports/microsoft-office-activations.md).
   
 Si vous ne souhaitez pas utiliser le rapport d’activation, vous pouvez demander à un utilisateur d’ouvrir une application Office telle que Word sur son ordinateur, puis choisir le **compte**de **fichier** \> . Sous **informations sur le produit**, vous devez voir le **produit abonnement** et les **applications Microsoft 365 pour entreprise**, comme illustré dans l’image suivante.
 

@@ -1,5 +1,5 @@
 ---
-title: FAQ sur le déploiement centralisé
+title: Forum aux questions sur le déploiement centralisé
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -18,20 +18,20 @@ search.appverid:
 - MET150
 - MOE150
 description: Passez en revue les réponses aux questions fréquemment posées sur le déploiement centralisé à partir du centre d’administration Microsoft 365.
-ms.openlocfilehash: 39df2ec5a1671f800572bc845581bdbe2716d209
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+ms.openlocfilehash: c389ab07136b8a6e625db9ecfeff514a6899cd7d
+ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43209663"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44011734"
 ---
-# <a name="centralized-deployment-faq"></a>FAQ sur le déploiement centralisé
+# <a name="centralized-deployment-faq"></a>Forum aux questions sur le déploiement centralisé
 
 Le déploiement centralisé est la méthode recommandée pour un administrateur Office 365 pour déployer des compléments Office (Word, Excel, PowerPoint et Outlook) pour les utilisateurs et les groupes au sein d’une organisation, à condition que l’organisation remplisse toutes les conditions d’utilisation du déploiement centralisé comme décrit dans cet article.   
   
 ## <a name="how-do-i-know-if-my-organization-is-set-up-for-centralized-deployment"></a>Comment savoir si mon organisation est configurée pour un déploiement centralisé ?  
 
-Le déploiement centralisé des compléments nécessite que les utilisateurs utilisent Office 365 ProPlus (et sont connectés à Office à l’aide de leurs informations d’identification de connexion de l’organisation) et disposent de boîtes aux lettres Exchange Online. Le répertoire de votre abonnement doit être dans Azure Active Directory ou être fédéré.  
+Le déploiement centralisé des compléments nécessite que les utilisateurs utilisent les applications Microsoft 365 pour Enterprise (et sont connectés à Office à l’aide de leurs informations d’identification de connexion de l’organisation) et disposent de boîtes aux lettres Exchange Online. Le répertoire de votre abonnement doit être dans Azure Active Directory ou être fédéré.  
  
 Le déploiement centralisé est uniquement pris en charge pour les boîtes aux lettres en ligne. Il ne prend pas en charge le déploiement vers des boîtes aux lettres Exchange locales.
  

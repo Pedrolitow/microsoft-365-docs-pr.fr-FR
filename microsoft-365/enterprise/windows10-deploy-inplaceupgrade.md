@@ -12,12 +12,12 @@ ms.date: 08/30/2018
 f1.keywords:
 - NOCSH
 ms.author: greglin
-ms.openlocfilehash: ca5abb97628d04a9f29bb3a3fb9b43a578dbab74
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 1c90640fa49aa102d2a4c8420feedf659b5682f2
+ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42085583"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44011816"
 ---
 # <a name="step-2-deploy-windows-10-enterprise-for-existing-devices-as-an-in-place-upgrade"></a>Étape 2 : déployer Windows 10 entreprise pour les appareils existants en tant que mise à niveau sur place
 
@@ -47,7 +47,7 @@ Voir [gérer les mises à niveau Windows avec la préparation](https://docs.micr
 
 Ensuite, suivez le guide pour utiliser le gestionnaire de configuration (branche actuelle) pour mettre à niveau le système d’exploitation Windows 7 ou une version ultérieure vers Windows 10. Comme pour tout déploiement à haut risque, nous vous recommandons de sauvegarder les données utilisateur avant de poursuivre. Le stockage cloud OneDrive est prêt à être utilisé pour les utilisateurs de Microsoft 365 titulaires d’une licence et peut être utilisé pour stocker leurs fichiers en toute sécurité. Pour plus d’informations, reportez-vous à la rubrique [OneDrive Quick Start Guide](https://aka.ms/ODfBquickstartguide). Pour accéder à cette page, vous devez vous connecter en tant qu’administrateur client ou administrateur global dans un client Office 365 ou Microsoft 365.
 
-Pour obtenir la liste des versions de gestionnaire de configuration et les versions de client Windows 10 correspondantes prises en charge, voir [prise en charge de Windows 10 pour Configuration Manager](https://docs.microsoft.com/configmgr/core/plan-design/configs/support-for-windows-10).
+Pour obtenir la liste des versions de gestionnaire de configuration et les versions de client Windows 10 correspondantes prises en charge, voir [prise en charge de Windows 10 pour Configuration Manager](https://docs.microsoft.com/mem/configmgr/core/plan-design/configs/support-for-windows-10).
 
 **Pour vérifier la disponibilité pour la mise à niveau de Windows**
 
@@ -96,7 +96,7 @@ Pour créer une séquence de tâches de mise à niveau, procédez comme suit :
 Après avoir créé la séquence de tâches de mise à niveau, vous devez créer une collection qui contient les périphériques que vous allez mettre à niveau.
 
 > [!NOTE]
-> Utilisez les paramètres suivants pour tester le déploiement sur un seul appareil. Vous pouvez utiliser des règles d’appartenance différentes pour inclure des groupes d’appareils lorsque vous êtes prêt. Pour plus d’informations, reportez-vous [à la rubrique Création de collections dans le gestionnaire de configuration](https://docs.microsoft.com/configmgr/core/clients/manage/collections/create-collections).
+> Utilisez les paramètres suivants pour tester le déploiement sur un seul appareil. Vous pouvez utiliser des règles d’appartenance différentes pour inclure des groupes d’appareils lorsque vous êtes prêt. Pour plus d’informations, reportez-vous [à la rubrique Création de collections dans le gestionnaire de configuration](https://docs.microsoft.com/mem/configmgr/core/clients/manage/collections/create-collections).
 
 1. Dans la console Configuration Manager, dans l’espace de travail **composants et conformité** , cliquez avec le bouton droit sur **ensembles de périphériques**, puis sélectionnez **créer une collection de périphériques**. 
 2. Dans l’assistant créer une collection de périphériques, dans la page **général** , entrez les paramètres suivants, puis cliquez sur **suivant**:
@@ -136,7 +136,7 @@ Procédez comme suit pour démarrer la séquence de tâches de mise à niveau de
  
 1. Ouvrez une session sur l’ordinateur Windows et démarrez le **Centre de logiciels**.
 2. Sélectionnez la séquence de tâches que vous avez créée à une étape précédente, puis sélectionnez **installer**.
-3. Lorsque la séquence de tâches commence, elle lance automatiquement le processus de mise à niveau sur place en appelant le programme d’installation Windows (Setup. exe) avec les paramètres de ligne de commande nécessaires pour effectuer une mise à niveau automatisée, qui conserve toutes les données, paramètres, applications et situés.
+3. Lorsque la séquence de tâches commence, elle lance automatiquement le processus de mise à niveau sur place en appelant le programme d’installation de Windows (Setup. exe) avec les paramètres de ligne de commande nécessaires pour effectuer une mise à niveau automatisée, qui conserve toutes les données, les paramètres, les applications et les pilotes.
 4. Une fois la séquence de tâches terminée, l’ordinateur sera entièrement mis à niveau vers Windows 10.
 
 Si vous rencontrez des problèmes lors de l’utilisation de Windows 10 dans un environnement d’entreprise, vous pouvez consulter les [principales solutions Support Microsoft pour les problèmes les plus courants](https://docs.microsoft.com/windows/client-management/windows-10-support-solutions). Ces ressources incluent des articles de la Base de connaissances, des mises à jour et des articles de bibliothèque.

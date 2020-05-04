@@ -14,12 +14,12 @@ ms.collection:
 ms.custom:
 - M365solutions
 f1.keywords: NOCSH
-ms.openlocfilehash: 53b5bc1bad9a67543fccaa8dcb3223307d2634b9
-ms.sourcegitcommit: 101084f9c81616342d78493232d8f13f5ffa4ddf
+ms.openlocfilehash: 8b792fa659866682df32130992340d9089aebfe7
+ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "44002737"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44011850"
 ---
 # <a name="microsoft-365-productivity-illustrations"></a>Illustrations de productivité Microsoft 365
 
@@ -124,12 +124,12 @@ Pour plus d’informations, voir l’article pour ce poster : [Solutions de té
 <a name="msd"></a>
 ### <a name="deploy-a-modern-and-secure-desktop-with-microsoft"></a>Déploiement d’un environnement de bureau moderne et sécurisé avec Microsoft
 
-Que doivent savoir les architectes informatiques sur le déploiement et la gestion des mises à jour pour Office 365 ProPlus sur Windows 10.
+Ce que les architectes informatiques doivent savoir sur le déploiement et la gestion des mises à jour pour les applications Microsoft 365 pour entreprise (précédemment nommé Office 365 ProPlus) sur Windows 10.
   
 
 |**Élément**|**Description**|
 |:-----|:-----|
-|[![Miniature pour le modèle Déployer un bureau moderne et sécurisé avec Microsoft](../media/solutions-architecture-center/deploy-modern-desktop-thumb.png)](https://www.microsoft.com/download/details.aspx?id=55987) <br/> [PDF](https://download.microsoft.com/download/4/E/9/4E90E227-770A-41D1-99FE-925A64D81A55/MSFT_modern_secure_desktop.pdf)  \| [Visio](https://download.microsoft.com/download/4/E/9/4E90E227-770A-41D1-99FE-925A64D81A55/MSFT_modern_secure_desktop.vsdx) <br/>Mise à jour du 2017 septembre | Ce modèle contient : <ul><li>  Le déploiement de Windows 10 et Office ProPlus à partir du cloud Microsoft </li><li>  Déploiement de Windows 10 et Office ProPlus avec Microsoft Endpoint Configuration Manager </li><li>  La gestion des mises à jour pour Windows 10 et Office ProPlus à partir du cloud Microsoft </li><li>  Gestion des mises à jour de Windows 10 et Office ProPlus avec Microsoft Endpoint Configuration Manager </li><li>  Les fonctionnalités de protection supplémentaires et prêtes à l’emploi de Windows 10 </li></ul><br/> |
+|[![Miniature pour le modèle Déployer un bureau moderne et sécurisé avec Microsoft](../media/solutions-architecture-center/deploy-modern-desktop-thumb.png)](https://www.microsoft.com/download/details.aspx?id=55987) <br/> [PDF](https://download.microsoft.com/download/4/E/9/4E90E227-770A-41D1-99FE-925A64D81A55/MSFT_modern_secure_desktop.pdf)  \| [Visio](https://download.microsoft.com/download/4/E/9/4E90E227-770A-41D1-99FE-925A64D81A55/MSFT_modern_secure_desktop.vsdx) <br/>Mise à jour du 2017 septembre | Ce modèle contient : <ul><li>  Déploiement des applications Windows 10 et Microsoft 365 pour Enterprise à partir du Cloud Microsoft </li><li>  Déploiement des applications Windows 10 et Microsoft 365 pour Enterprise avec le gestionnaire de configuration de point de terminaison Microsoft </li><li>  Gestion des mises à jour pour les applications Windows 10 et Microsoft 365 pour les entreprises à partir du Cloud Microsoft </li><li>  Gestion des mises à jour pour les applications Windows 10 et Microsoft 365 pour les entreprises avec le gestionnaire de configuration de point de terminaison Microsoft </li><li>  Les fonctionnalités de protection supplémentaires et prêtes à l’emploi de Windows 10 </li></ul><br/> |
    
 ## <a name="see-also"></a>Voir aussi
 

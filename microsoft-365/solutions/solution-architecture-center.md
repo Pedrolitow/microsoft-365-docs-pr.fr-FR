@@ -1,6 +1,6 @@
 ---
 title: Centre d’architecture et solution Microsoft 365
-description: Description.
+description: Obtenez les conseils techniques dont vous avez besoin pour comprendre, planifier et implémenter des solutions Microsoft 365 intégrées pour une collaboration moderne sécurisée et conforme.
 ms.author: samanro
 author: samanro
 manager: bcarter
@@ -13,12 +13,12 @@ ms.collection:
 ms.custom:
 - M365solutions
 f1.keywords: NOCSH
-ms.openlocfilehash: 3442e51a3487be859ba546f5be2cab6e8e574de4
-ms.sourcegitcommit: 101084f9c81616342d78493232d8f13f5ffa4ddf
+ms.openlocfilehash: d621586e5ff50bce7be68117a940fc54607362c2
+ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "44002662"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44011746"
 ---
 # <a name="microsoft-365-solution-and-architecture-center"></a>Centre d’architecture et solution Microsoft 365
 
@@ -34,7 +34,7 @@ Cette solution et ce centre d’architecture rassemblent les conseils techniques
 
 ![Symboles](https://docs.microsoft.com/office/media/icons/cloud-architecture2.png) de la solution et de la règle **[illustrations d’architecture](productivity-illustrations.md)** Affichez ou téléchargez ces illustrations pour comprendre les fonctionnalités de Microsoft 365 et l’architecture des services Cloud de Microsoft 365.
 
-![Best Practices](https://docs.microsoft.com/office/media/icons/best-practices-blue.png) **[specific Industry specific Guidance specific](industry-specific-guidance-overview.md)** Best Practices for your Industry-finance, Healthcare, and Education.
+![Meilleures pratiques les](https://docs.microsoft.com/office/media/icons/best-practices-blue.png) **[conseils spécifiques au secteur](industry-specific-guidance-overview.md)** du ruban trouvent les meilleures pratiques pour votre secteur (finance, santé et éducation).
 
 ![Disposition/navigation les](https://docs.microsoft.com/office/media/icons/layout-navigation-blue.png) **[principes de conception](design-principles.md)** de symbole comprennent les principes clés dont vous avez besoin pour comprendre la mise en réseau, l’identité, la sécurité et les architectures multinationales.
 

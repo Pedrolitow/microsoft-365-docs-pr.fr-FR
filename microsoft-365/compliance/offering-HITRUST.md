@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: f04c6bf41e9c09455773c419efec0b7b4e8ca5ae
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: fa35e71d2748e02da12a239f67134c1b25b5a369
+ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637988"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44011827"
 ---
 # <a name="health-information-trust-alliance-hitrust-common-security-framework-csf"></a>Infrastructure de sécurité commune HITRUST (Health Information Trust Alliance)
 
@@ -82,7 +82,7 @@ Vous pouvez télécharger une copie de la lettre de certification pour [Azure](h
 
 **Quels sont les services dans l’étendue pour Office 365 ?**
 
-Les services dans l’étendue de la certification CSF d’HITRUST sont archivage Exchange Online, Exchange Online Protection, Exchange Online, Skype entreprise, Centre d’administration, SharePoint Online, Project Online, OneDrive entreprise, Office Online, MyAnalytics, Microsoft Teams, Office ProPlus dans Office 365 Cloud mutualisés et Office 365 GCC.
+Les services dans l’étendue de la certification CSF d’HITRUST sont archivage Exchange Online, Exchange Online Protection, Exchange Online, Skype entreprise, Centre d’administration, SharePoint Online, Project Online, OneDrive entreprise, Office Online, MyAnalytics, Microsoft Teams, Microsoft 365 Apps for Enterprise in Office 365 Cloud mutualisé et Office 365 GCC.
 
 > [!NOTE]
 > Les applications Microsoft 365 pour entreprise autorisent l’accès à différents services Cloud, tels que les paramètres d’itinérance, les licences et le stockage cloud de OneDrive consommateurs, et peuvent permettre l’accès à d’autres services Cloud à l’avenir. Les licences et les paramètres d’itinérance prennent en charge les normes pour HITRUST. OneDrive Consumer le stockage cloud n’est pas pris en charge et d’autres services Cloud accessibles via les applications Microsoft 365 pour Enterprise et que Microsoft peut proposer à l’avenir peuvent également ne pas prendre en charge ces normes. *
@@ -109,7 +109,7 @@ Connectez-vous à l’outil HITRUST MyCSF® et pré-remplissez votre évaluation
 - [HITRUST CSF 9,3](https://hitrustalliance.net/csf-license-agreement/)
 - [Présentation et exploitation de l’infrastructure de structure](https://hitrustalliance.net/understanding-leveraging-csf/)
 - [En savoir plus sur le programme de responsabilité partagé HITRUST](https://go.microsoft.com/fwlink/p/?linkid=2100268)
-- [Conformité sur le site Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Conformité du Centre de gestion de la confidentialité Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
 ## <a name="download-the-offering-backgrounder"></a>Télécharger notre document d’information sur la conformité
 

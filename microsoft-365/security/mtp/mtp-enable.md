@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: f1c616a3d752324b8db5fdd5069904989a25eade
-ms.sourcegitcommit: b57d597edbff5ab6cff8c2b04d27c15b0024776f
+ms.openlocfilehash: 0bb91f226a29fe6b175cf1ca4866316d1457291e
+ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "43997513"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44011862"
 ---
 # <a name="turn-on-microsoft-threat-protection"></a>Activer la Protection Microsoft contre les menaces
 
@@ -36,7 +36,7 @@ La Protection Microsoft contre les menaces unifie votre processus de réponse au
 Pour bénéficier de la meilleure protection et optimiser la protection Microsoft contre les menaces, nous vous recommandons de déployer tous les services pris en charge applicables sur votre réseau. Pour plus d’informations, consultez la rubrique [Deploying Supported services](deploy-supported-services.md).
 
 ## <a name="check-license-eligibility-and-required-permissions"></a>Vérifier l’éligibilité de la licence et les autorisations requises
-Une licence Microsoft 365 E5, E5 Security, a5 ou a5 ou une combinaison valide de licences donne accès aux services pris en charge et vous permet d’utiliser la protection Microsoft contre les menaces dans le centre de sécurité Microsoft 365.
+Une licence Microsoft 365 E5, E5 Security, a5 ou a5 ou une combinaison valide de licences donne accès aux services pris en charge et vous permet d’utiliser la protection Microsoft contre les menaces dans le centre de sécurité Microsoft 365 sans coût de licence supplémentaire.
 
 Pour obtenir des informations détaillées sur les licences, [Lisez les conditions relatives aux licences](prerequisites.md#licensing-requirements).
 
@@ -44,22 +44,28 @@ Pour obtenir des informations détaillées sur les licences, [Lisez les conditio
 Vous devez être **administrateur général** ou administrateur de **sécurité** dans Azure Active Directory pour activer Microsoft Threat Protection. [Afficher vos rôles dans Azure AD](https://docs.microsoft.com//azure/active-directory/users-groups-roles/directory-manage-roles-portal)
 
 ## <a name="start-using-the-service"></a>Commencez à utiliser le service
-Microsoft Threat Protection agrège les données des différents services intégrés. Il traitera et stockera les données de manière centralisée afin d’identifier les nouvelles idées et de créer des flux de travail de réponse centralisée.
+
+>[!IMPORTANT]
+>À partir du 3 mai 2020, Microsoft mettra progressivement en place de nouvelles expériences optimisées en [matière de licences](prerequisites.md#licensing-requirements) et d’activation de la protection contre les menaces Microsoft. Pendant plusieurs semaines pendant cette période, certains clients commencent à voir les modifications apportées à leurs expériences de portail. Les informations sur les nouvelles expériences sont marquées **nouvelle expérience** dans cet article.
+
+Microsoft Threat Protection agrège les données des différents services intégrés. Il traitera et stockera les données de manière centralisée afin d’identifier les nouvelles idées et de créer des flux de travail de réponse centralisée. Il effectue cette opération sans affecter les déploiements, paramètres ou données existants associés aux services intégrés.
 
 Avant d’activer le service, le centre de sécurité Microsoft 365 ([Security.Microsoft.com](https://security.microsoft.com)) affiche la **page d’accueil** de la protection de Microsoft contre les menaces lorsque vous sélectionnez **incidents**, **Centre de maintenance**ou sélection dans le volet de navigation. Ces options de navigation ne s’affichent pas si vous n’êtes pas éligible à l’utilisation de la protection contre les menaces Microsoft.
 
 ![Image de la page d’accueil de la protection de Microsoft contre les menaces affichée si Microsoft Threat](../../media/mtp-welcome.png)
 protection n’a pas été activé sur la*page d’accueil de Microsoft Threat Protection dans le centre de sécurité Microsoft 365*
 
-Pour activer Microsoft Threat Protection, terminez simplement le processus à partir de la page d’accueil. Vous pouvez également activer Microsoft Threat Protection en accédant aux **paramètres** ([Security.Microsoft.com/Settings](https://security.microsoft.com/settings)) dans le volet de navigation et en sélectionnant **Microsoft Threat Protection**. Cliquez sur **Enregistrer**.
+Pour activer Microsoft Threat Protection, terminez simplement le processus à partir de la page d’accueil. Vous pouvez également activer Microsoft Threat Protection en accédant aux **paramètres** ([Security.Microsoft.com/Settings](https://security.microsoft.com/settings)) dans le volet de navigation et en sélectionnant **Microsoft Threat Protection**.
 
 >[!NOTE]
->Si vous ne voyez pas les **paramètres** dans le volet de navigation ou que vous n’avez pas accès à la page, vérifiez vos autorisations et licences.
+>Si vous ne voyez pas les **paramètres** dans le volet de navigation ou que vous n’avez pas accès à la page, vérifiez vos autorisations et licences.       
 
 ### <a name="select-data-center-location"></a>Sélectionner l’emplacement du centre de données
 Si Microsoft Defender - Protection avancée contre les menaces a été configuré pour votre organisation, les données sont stockées et traitées dans le même emplacement de centre de données que celui que vous avez sélectionné pour [vos données Microsoft Defender – Protection avancée contre les menaces](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy). Si vous n’avez pas Microsoft Defender ATP, vous serez invité à choisir un nouvel emplacement de centre de données spécifiquement pour la Protection Microsoft contre les menaces. 
-
+ 
 Vous devez fournir le consentement avant le partage des données entre les services et l’agrégation.
+
+**Nouvelle expérience :** À partir du 3 mai, 2020, les clients recevront progressivement les modifications apportées à cette expérience. Pour les personnes ayant la nouvelle expérience, le service sélectionne automatiquement l’emplacement de centre de données optimal pour vos données agrégées en fonction de vos services de sécurité Microsoft 365 existants. L’emplacement du centre de données sélectionné est affiché à l’écran.
 
 ### <a name="confirm-that-the-service-is-on"></a>Vérifiez que le service est activé
 Une fois le service configuré, il ajoute :
