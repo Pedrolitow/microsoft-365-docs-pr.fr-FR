@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Apprenez à évaluer la disponibilité des applications et des périphériques et dans l’environnement.
-ms.openlocfilehash: fc048b046e46b4b2e792aa9bffb695eed742a74c
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 8596d23356fd8eda733938ad3a6fc0fbe81fcce3
+ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636855"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44011662"
 ---
 # <a name="step-1-device-and-app-readiness"></a>Étape 1 : disponibilité des applications et des périphériques
 
@@ -89,7 +89,7 @@ Vous constaterez que la plupart des applications, pilotes et compléments de l�
 
 Vous pouvez utiliser Desktop Analytics pour également évaluer les problèmes de compatibilité avec le navigateur, en identifiant les sites et applications web auxquels les utilisateurs accèdent en utilisant toujours des contrôles ActiveX, des objets d’assistance du navigateur, le langage de script VBScript ou d’autres technologies héritées non prises en charge par le navigateur Microsoft Edge. Ces sites nécessitent toujours d’utiliser Internet Explorer 11, et vous pouvez les ajouter à la [liste des sites en mode Entreprise](https://docs.microsoft.com/microsoft-edge/deploy/emie-to-improve-compatibility) à l’aide d’Enterprise Mode Site List Manager.
 
-De plus, pour vous aider dans votre migration vers les applications Microsoft 365 pour les entreprises, vous pouvez utiliser le [Readiness Toolkit pour Office](https://docs.microsoft.com/deployoffice/use-the-readiness-toolkit-to-assess-application-compatibility-for-office-365-pro) pour tester la compatibilité de vos compléments et des macros Microsoft Visual Basic for Applications (VBA).
+De plus, pour vous aider dans votre migration vers les applications Microsoft 365 pour les entreprises, vous pouvez utiliser le [Readiness Toolkit pour Office](https://docs.microsoft.com/deployoffice/readiness-toolkit-application-compatibility-microsoft-365-apps) pour tester la compatibilité de vos compléments et des macros Microsoft Visual Basic for Applications (VBA).
 
 ![](../media/step-1-device-and-app-readiness-media/step-1-device-and-app-readiness-media-6.png)
 
@@ -105,7 +105,7 @@ La phase finale de la disponibilité des applications et des périphériques con
 
 Inventaire logiciel Configuration Manager est une alternative à l’utilisation des solutions analytiques basées sur le cloud pour la préparation des applications et des périphériques. Vous pouvez utiliser le nombre d’installations et explorer des ordinateurs spécifiques pour permettre de hiérarchiser des tests de compatibilité et de validation et définir des packages d’application comme compatibles avec Windows 10 via les paramètres de package. Même si cette option ne propose pas la possibilité de comparer des informations de compatibilité connues par les services de Microsoft Analytics, cela peut être une solution efficace pour cibler un ensemble réduit d’applications par ordre de priorité pour les tests manuels. 
 
-Pour plus d’informations, voir [Introduction à l’inventaire de logiciel dans Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/configmgr/core/clients/manage/inventory/introduction-to-software-inventory) et définir les exigences de la plateforme de packages d’application dans [Packages et programmes dans Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/configmgr/apps/deploy-use/packages-and-programs).
+Pour plus d’informations, voir [Introduction à l’inventaire de logiciel dans Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/mem/configmgr/core/clients/manage/inventory/introduction-to-software-inventory) et définir les exigences de la plateforme de packages d’application dans [Packages et programmes dans Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/mem/configmgr/apps/deploy-use/packages-and-programs).
 
 
 ## <a name="app-assure"></a>Soutien aux applications

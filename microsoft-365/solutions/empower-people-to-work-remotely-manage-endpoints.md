@@ -17,12 +17,12 @@ ms.collection:
 ms.custom:
 - M365solutions
 description: Utilisez Microsoft Endpoint Manager pour gérer vos appareils de gestion, PC et autres points de terminaison.
-ms.openlocfilehash: fdfe38a25947312b878b03734c320de004762506
-ms.sourcegitcommit: 101084f9c81616342d78493232d8f13f5ffa4ddf
+ms.openlocfilehash: 76e18d65865f4ec2bbc8a8d1554bb4cad6fee553
+ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "44002708"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44011602"
 ---
 # <a name="3-deploy-endpoint-management-for-your-devices-pcs-and-other-endpoints"></a>3. Déployer la gestion des points de terminaison pour vos appareils, PC et autres points de terminaison
 
@@ -40,7 +40,7 @@ Si vous souhaitez en savoir plus, consultez la page [Présentation de Microsoft 
 
 Configuration Manager est une solution de gestion locale qui vous permet de gérer les ordinateurs de bureau, les serveurs et les ordinateurs portables qui se trouvent sur votre réseau ou sur Internet. Vous pouvez l’activer dans le cloud pour l’intégrer à Intune, Azure AD, Microsoft Defender - Protection avancée contre les menaces, et d’autres services cloud. Utilisez Configuration Manager pour déployer des applications, des mises à jour logicielles et des systèmes d’exploitation. Vous pouvez également surveiller la conformité, interroger et agir sur les clients en temps réel, et bien plus encore.
 
-Si vous souhaitez en savoir plus, consultez la page [Présentation de Configuration Manager](https://docs.microsoft.com/configmgr/core/understand/introduction).
+Si vous souhaitez en savoir plus, consultez la page [Présentation de Configuration Manager](https://docs.microsoft.com/mem/configmgr/core/understand/introduction).
 
 ## <a name="co-management"></a>Cogestion
 
@@ -48,13 +48,13 @@ La cogestion combine votre investissement Configuration Manager local existant a
 
 Dans Endpoint Manager, la cogestion utilise des fonctionnalités cloud, notamment l’accès conditionnel. Vous conservez certaines tâches en local, tout en exécutant d’autres tâches dans le cloud avec Intune.
 
-Si vous souhaitez en savoir plus, consultez la page [Présentation de la cogestion](https://docs.microsoft.com/configmgr/comanage/overview).
+Si vous souhaitez en savoir plus, consultez la page [Présentation de la cogestion](https://docs.microsoft.com/mem/configmgr/comanage/overview).
 
 ## <a name="desktop-analytics"></a>Analyses du bureau
 
 L’Analyse du bureau est un service basé sur le cloud, qui s’intègre à Configuration Manager et vous fournit des informations et des renseignements, afin que vous puissiez prendre des décisions éclairées concernant vos clients Windows. Elle combine des données de votre organisation à des données cumulées à partir de millions d’appareils connectés à des services cloud de Microsoft. L’Analyse de bureau vous permet de créer un inventaire des applications exécutées au sein de votre organisation, d’évaluer la compatibilité des applications avec les dernières mises à jour des fonctionnalités de Windows 10, d’identifier les problèmes de compatibilité et de recevoir des suggestions d’atténuation basées sur les données orientées cloud. Cela vous permet également de créer des groupes pilotes qui représentent l’ensemble des applications et des pilotes sur un ensemble minimal d’appareils, et de déployer Windows 10 sur des appareils pilotes et gérés par la production.
 
-Si vous souhaitez en savoir plus, consultez la page [Présentation de l’Analyse du bureau](https://docs.microsoft.com/configmgr/desktop-analytics/overview).
+Si vous souhaitez en savoir plus, consultez la page [Présentation de l’Analyse du bureau](https://docs.microsoft.com/mem/configmgr/desktop-analytics/overview).
 
 ## <a name="windows-autopilot"></a>Windows Autopilot
 

@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Découvrez les options dédiées au déploiement de système d’exploitation et aux mises à jour des fonctionnalités.
-ms.openlocfilehash: d22a0993b256a1bea1a6a5ac61f14b144c6ac6c7
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: f372c41b113286d4ecff679f16581200264a9bdd
+ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636758"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44011626"
 ---
 # <a name="step-6-os-deployment-and-feature-updates"></a>Étape 6 : déploiement de système d’exploitation et mises à jour des fonctionnalités
 
@@ -57,7 +57,7 @@ L’image capturée sera au format d’image Windows (ou WIM), comme les support
 
 [Créer une image de référence Windows 10](https://docs.microsoft.com/windows/deployment/deploy-windows-mdt/create-a-windows-10-reference-image)
 
-[Créer une séquence de tâches pour installer un système d’exploitation](https://docs.microsoft.com/configmgr/osd/deploy-use/create-a-task-sequence-to-install-an-operating-system)
+[Créer une séquence de tâches pour installer un système d’exploitation](https://docs.microsoft.com/mem/configmgr/osd/deploy-use/create-a-task-sequence-to-install-an-operating-system)
 
 ### <a name="deployment-types"></a>Types de déploiement
 
@@ -89,7 +89,7 @@ Le scénario de mise à niveau sur place peut être utilisé pour migrer vers Wi
 
 [Effectuer une mise à niveau sur place vers Windows 10 à l’aide du gestionnaire de configuration](https://docs.microsoft.com/windows/deployment/upgrade/upgrade-to-windows-10-with-system-center-configuraton-manager)
 
-[Créer une séquence de tâches pour mettre à niveau un système d’exploitation dans le gestionnaire de configuration](https://docs.microsoft.com/configmgr/osd/deploy-use/create-a-task-sequence-to-upgrade-an-operating-system)
+[Créer une séquence de tâches pour mettre à niveau un système d’exploitation dans le gestionnaire de configuration](https://docs.microsoft.com/mem/configmgr/osd/deploy-use/create-a-task-sequence-to-upgrade-an-operating-system)
 
 ### <a name="phased-deployment"></a>Déploiement progressif
 
@@ -101,7 +101,7 @@ Le scénario de mise à niveau sur place peut être utilisé pour migrer vers Wi
 
 Quel que soit le type de déploiement que vous choisissez, il est préférable qu’il soit autant automatisé que possible en matière de prévisibilité et de répétabilité. Microsoft propose deux solutions pour automatiser le déploiement de système d’exploitation à l’aide des séquences de tâches automatisées :
 
-  - **[Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/configmgr/core/understand/introduction)** (ConfigMgr) offre des fonctionnalités de déploiement de système d’exploitation intégrées afin de compléter ses fonctionnalités pour la distribution de logiciels et la gestion des mises à jour logicielles. ConfigMgr est largement utilisé par les organisations de toutes tailles et prend en charge les quatre types de déploiement Windows. Si vous le souhaitez, vous pouvez intégrer ConfigMgr à Microsoft Intune pour ajouter des fonctionnalités supplémentaires pour le déploiement et la gestion des appareils.
+  - **[Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/mem/configmgr/core/understand/introduction)** (ConfigMgr) offre des fonctionnalités de déploiement de système d’exploitation intégrées afin de compléter ses fonctionnalités pour la distribution de logiciels et la gestion des mises à jour logicielles. ConfigMgr est largement utilisé par les organisations de toutes tailles et prend en charge les quatre types de déploiement Windows. Si vous le souhaitez, vous pouvez intégrer ConfigMgr à Microsoft Intune pour ajouter des fonctionnalités supplémentaires pour le déploiement et la gestion des appareils.
 
   - L’autre option de déploiement populaire est l’application gratuite ** [Microsoft Deployment Toolkit](https://docs.microsoft.com/windows/deployment/deploy-windows-mdt/get-started-with-the-microsoft-deployment-toolkit) ** (MDT) qui est généralement utilisée par de petites et moyennes organisations pour le déploiement de système d’exploitation. Cette approche ne nécessite que très peu d’infrastructure. MDT s’intègre aux Services de déploiement Windows (WDS) pour le démarrage réseau. L’application prend en charge les quatre types de déploiement ainsi que l’installation d’applications, les pilotes et les paramètres. MDT peut même s’intégrer au gestionnaire de configuration.
 

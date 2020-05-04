@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Comprendre la façon dont Contoso utilise Microsoft Endpoint Configuration Manager pour déployer de Microsoft 365 Apps for enterprise.
-ms.openlocfilehash: eca3978103ca1e590d747b3549a3c9e393f871ca
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 2ff05a079d83389ed94445fc011b9f7902c6de56
+ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43625253"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44011886"
 ---
 # <a name="microsoft-365-apps-for-enterprise-deployment-for-contoso"></a>Déploiement de Microsoft 365 Apps for enterprise pour Consoto.
 
@@ -40,7 +40,7 @@ Selon ses besoins, Contoso a choisi de déployer Windows 10 Entreprise et Micros
 - le déploiement du module linguistique intelligent, dont le déploiement automatique de la même langue que celle du système d’exploitation ;
 - la méthode facile d’utilisation et entièrement prise en charge de suppression des versions existantes d’Office à partir d’un client pendant le déploiement.
 
-En plus du gestionnaire de configuration, Contoso a utilisé le [Kit de ressources de préparation](https://docs.microsoft.com/deployoffice/use-the-readiness-toolkit-to-assess-application-compatibility-for-office-365-pro), un outil gratuit de Microsoft permettant d’évaluer les problèmes de compatibilité avec ses compléments et macros Office.
+En plus du gestionnaire de configuration, Contoso a utilisé le [Kit de ressources de préparation](https://docs.microsoft.com/deployoffice/readiness-toolkit-application-compatibility-microsoft-365-apps), un outil gratuit de Microsoft permettant d’évaluer les problèmes de compatibilité avec ses compléments et macros Office.
 
 ## <a name="managing-the-deployment-and-updates"></a>Gestion du déploiement et des mises à jour
 
@@ -51,7 +51,7 @@ Microsoft 365 Apps for enterprise possède un nouveau modèle de publication : 
 
 Au lieu de gérer les mises à jour Office avec le gestionnaire de configuration, Contoso a activé les mises à jour automatiques à partir du cloud. Les mises à jour sur le cloud ont permis de réduire les frais généraux d’administration, et de vérifier la mise à jour des périphériques. 
 
-Contoso a suivi la même approche en deux étapes pour la fonctionnalité de mises à jour updates+ que la société a utilisée pour le déploiement d’Office : les périphériques du groupe pilote ont reçu les mises à jour des fonctionnalités quatre mois avant les périphériques du reste de l’organisation (groupe large). Pour activer cette option pour Office, Contoso a utilisé deux [canaux de mise à jour](https://docs.microsoft.com/DeployOffice/overview-of-update-channels-for-office-365-proplus) recommandés : 
+Contoso a suivi la même approche en deux étapes pour la fonctionnalité de mises à jour updates+ que la société a utilisée pour le déploiement d’Office : les périphériques du groupe pilote ont reçu les mises à jour des fonctionnalités quatre mois avant les périphériques du reste de l’organisation (groupe large). Pour activer cette option pour Office, Contoso a utilisé deux [canaux de mise à jour](https://docs.microsoft.com/DeployOffice/overview-update-channels) recommandés : 
 
 - Canal semi-annuel (ciblé) pour les mises à jour au groupe pilote 
 - Canal semi-annuel pour les mises à jour au groupe pilote 

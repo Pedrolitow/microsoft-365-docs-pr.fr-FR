@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Mises à niveau automatisées de Windows 7 vers Windows 10 pour de grandes entreprises
-ms.openlocfilehash: f9ba1022b4c7f702f6cb9b815deee59047c4b704
-ms.sourcegitcommit: 9ca28ae8f7804eb488cf76ca4b09fe88787e0a49
+ms.openlocfilehash: 575ffba84b2cd7b7cfe5267a35a9f36c75dbe306
+ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43113480"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44011550"
 ---
 # <a name="windows-7-to-windows-10-automated-in-place-upgrades-for-large-organizations"></a>Mises à niveau locales automatisées de Windows 7 vers Windows 10 pour de grandes entreprises
 
@@ -42,7 +42,7 @@ Les mises à niveau sur place vers Windows 10 constituent une approche fiable po
 
 Par défaut, le processus de mise à niveau sauvegarde votre installation précédente de Windows dans le cadre de la mise à niveau, par conséquent, en cas d’échec de la mise à niveau ou si un appareil ou une application ne fonctionne pas correctement après la mise à niveau, l’ordinateur peut revenir à Windows 7. Les Pc mis à jour par défaut disposent de 10 jours pour vous permettre de relancer manuellement une restauration vers Windows 7 si nécessaire.
 
-Les mises à niveau sur place peuvent être automatisées à l’aide d’outils de déploiement de système d’exploitation tels que [Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/configmgr/osd/deploy-use/create-a-task-sequence-to-upgrade-an-operating-system) ou [Microsoft Deployment Toolkit](https://docs.microsoft.com/windows/deployment/upgrade/upgrade-to-windows-10-with-the-microsoft-deployment-toolkit).  Cet article souligne les approches et optimisations automatisées, ainsi que des liens vers des ressources associées pour obtenir une aide supplémentaire.
+Les mises à niveau sur place peuvent être automatisées à l’aide d’outils de déploiement de système d’exploitation tels que [Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/mem/configmgr/osd/deploy-use/create-a-task-sequence-to-upgrade-an-operating-system) ou [Microsoft Deployment Toolkit](https://docs.microsoft.com/windows/deployment/upgrade/upgrade-to-windows-10-with-the-microsoft-deployment-toolkit).  Cet article souligne les approches et optimisations automatisées, ainsi que des liens vers des ressources associées pour obtenir une aide supplémentaire.
 
 ## <a name="upgrading-a-small-number-of-computers"></a>Mise à niveau d’un petit nombre d’ordinateurs
 
@@ -80,13 +80,13 @@ Les raisons les plus courantes de mises à niveau peuvent être incomplètes ou 
 
   - Solutions de code de niveau inférieur, telles que les logiciels anti-programme malveillant, VPN ou la virtualisation
 
-Les modèles de [séquence de tâches de mise à niveau](https://docs.microsoft.com/configmgr/osd/deploy-use/create-a-task-sequence-to-upgrade-an-operating-system) sont intégrés à la branche actuelle de Microsoft Endpoint Configuration Manager et sont disponibles pour plusieurs versions. Dans les versions récentes, les améliorations apportées aux technologies dans Configuration Manager ont été considérables, ce qui rend le processus encore plus efficace pour déterminer la compatibilité des appareils et des compatibilités avec Office, réduire le trafic réseau et configurer de nouveaux options telles que sauvegarde OneDrive. Regardez cette [vidéo de mécanique Microsoft](https://youtu.be/CYRnAmCD7ls) pour en savoir plus sur les mises à jour récentes apportées au déploiement de Configuration Manager OS.
+Les modèles de [séquence de tâches de mise à niveau](https://docs.microsoft.com/mem/configmgr/osd/deploy-use/create-a-task-sequence-to-upgrade-an-operating-system) sont intégrés à la branche actuelle de Microsoft Endpoint Configuration Manager et sont disponibles pour plusieurs versions. Dans les versions récentes, les améliorations apportées aux technologies dans Configuration Manager ont été considérables, ce qui rend le processus encore plus efficace pour déterminer la compatibilité des appareils et des compatibilités avec Office, réduire le trafic réseau et configurer de nouveaux options telles que sauvegarde OneDrive. Regardez cette [vidéo de mécanique Microsoft](https://youtu.be/CYRnAmCD7ls) pour en savoir plus sur les mises à jour récentes apportées au déploiement de Configuration Manager OS.
 
 Si vous n’utilisez pas Configuration Manager, vous pouvez utiliser le kit de ressources de déploiement Microsoft pour créer et exécuter des séquences de tâches de déploiement de mise à niveau.
 
 ## <a name="pre-cache-task-sequence-upgrades"></a>Mise à niveau préalable de la séquence des tâches
 
-L'[option de mise en cache](https://docs.microsoft.com/configmgr/osd/deploy-use/create-a-task-sequence-to-upgrade-an-operating-system#configure-pre-cache-content)préalable pour la séquence de tâches de déploiement de Configuration Manager permet aux clients de télécharger le contenu du package de mise à niveau de système d’exploitation approprié avant que la séquence de tâche ne mette à niveau le système d’exploitation. Auparavant, le lancement de la séquence de tâches déclencherait le téléchargement du contenu du package. Le contenu préalable au cache vous permet également de télécharger le package de mise à niveau de système d’exploitation applicable et tous les autres contenus référencés dès qu’il reçoit le déploiement.
+L'[option de mise en cache](https://docs.microsoft.com/mem/configmgr/osd/deploy-use/create-a-task-sequence-to-upgrade-an-operating-system#configure-pre-cache-content)préalable pour la séquence de tâches de déploiement de Configuration Manager permet aux clients de télécharger le contenu du package de mise à niveau de système d’exploitation approprié avant que la séquence de tâche ne mette à niveau le système d’exploitation. Auparavant, le lancement de la séquence de tâches déclencherait le téléchargement du contenu du package. Le contenu préalable au cache vous permet également de télécharger le package de mise à niveau de système d’exploitation applicable et tous les autres contenus référencés dès qu’il reçoit le déploiement.
 
 Séquences de tâches préalables associées aux analyses de compatibilité
 
