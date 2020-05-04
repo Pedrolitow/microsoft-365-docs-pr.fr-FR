@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Présentation du processus de déploiement du Bureau.
-ms.openlocfilehash: f50a719d87a961c0446757d21d2f8be5d6eedbc0
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 05ec900acbcfed9d148ef4f567aab099dd9b7c7d
+ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634217"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44011874"
 ---
 # <a name="getting-started---desktop-deployment"></a>Prise en main - Déploiement Bureau
 
@@ -53,7 +53,7 @@ Un des clients clés des pratiques de gestion moderne est des appareils qui sont
 
 [Windows 10 pour les professionnels de l’informatique](https://www.microsoft.com/itpro/windows-10)
 
-[À propos de Microsoft 365 Apps pour entreprise dans l’entreprise](https://docs.microsoft.com/deployoffice/about-office-365-proplus-in-the-enterprise)
+[À propos des Applications Microsoft 365 pour les grandes entreprises](https://docs.microsoft.com/deployoffice/about-microsoft-365-apps)
 
 ## <a name="what-has-changed"></a>Qu’est-ce qui a changé ?
 
@@ -67,7 +67,7 @@ Examinons les modifications et les améliorations apportées depuis votre dernie
 
 **Gestion des appareils basée sur le cloud : ** des services comme Microsoft Intune vous permettent de gérer vos appareils Windows 10 comme d’autres appareils mobiles, à partir d’un seul emplacement. Ce qui rend Microsoft Intune unique est que vous pouvez également cogérer des appareils Windows 10 avec Microsoft Endpoint Configuration Manager. Vous pouvez utiliser Configuration Manager pour vous aider à votre passage vers Windows 10, puis ajouter Microsoft Intune. En travaillant ensemble, le Microsoft Endpoint Configuration Manager devient le périmètre intelligent au sein de votre organisation connectée au cloud intelligent de Microsoft. Cela vous permet de gérer les appareils de vos utilisateurs en toute sécurité où qu’ils soient, qu’ils soient connectés sur l’infrastructure de votre organisation ou dans le cloud public.
 
-[Cogestion des appareils Windows 10](https://docs.microsoft.com/configmgr/core/clients/manage/co-management-overview)
+[Cogestion des appareils Windows 10](https://docs.microsoft.com/mem/configmgr/core/clients/manage/co-management-overview)
 
 **Service de déploiement basé sur le cloud :** lorsque vous acquérez de nouveaux PC, nous avons introduit un nouveau service cloud pour vous aider à déployer Microsoft 365 aux appareils, appelé le service de déploiement Windows Autopilot. AutoPilot est intégré avec vos fournisseurs de matériel et les nouveaux PC sont automatiquement enregistrés dans Autopilot, permettant au nouveau PC d’être expédié directement à l’utilisateur final. Lorsque le PC est allumé pour la première fois, il est rapidement configuré selon les préférences de votre organisation et personnalisé pour les besoins spécifiques de l’utilisateur.
 
@@ -77,7 +77,7 @@ Examinons les modifications et les améliorations apportées depuis votre dernie
 
 En un clic est relativement différent des anciens packages basés sur MSI. En un clic est plus rapide, plus léger et prend en charge des mises à jour en arrière-plan pour permettre aux utilisateurs d’être opérationnels. C’est toujours une copie locale d’Office et vous pouvez continuer à utiliser vos outils de déploiement existants, tels que Microsoft Endpoint Configuration Manager, pour approvisionner et configurer les applications.
 
-[Guide de déploiement pour Microsoft 365 Apps pour entreprise](https://docs.microsoft.com/DeployOffice/deployment-guide-for-office-365-proplus)
+[Guide de déploiement des Applications Microsoft 365](https://docs.microsoft.com/DeployOffice/deployment-guide-microsoft-365-apps)
 
 **Mises à jour semestrielles :** une fois que vous êtes passé vers Windows 10 et Microsoft 365 Apps pour entreprise, les mises à jour sont effectuées semestriellement avec de nouvelles fonctionnalités. Mais comme Microsoft peut délivrer des informations à partir du cloud pour vous aider, vous pouvez rapidement déployer sereinement ces mises à jour à des centaines voire des milliers d’appareils. Comme une mise à niveau locale, la mise à jour de fonctionnalité conserve les applications, données et configurations à partir de la version précédente.
 
@@ -109,14 +109,14 @@ Comme dans les mises à jour précédentes, l’outil de Migration état utilisa
 
 **[Étape 6 : déploiement du système d’exploitation et mises à jour de fonctionnalité](https://aka.ms/mdd6)** Une fois que tout est prêt, il ne vous reste plus qu’à déployer les images du système d’exploitation. La plupart des tâches complexes peuvent être effectuées à l’aide de l’infrastructure et des séquences de tâches du System Center Configuration Manager. Pour cela, nous vous recommandons de procéder à un déploiement en plusieurs phases, tout d’abord en ciblant un « groupe d’utilisateurs de la première heure » dans votre organisation pour le déployer à l’aide d’un ensemble représentatif de matériels et d’applications. Vous pouvez ensuite utiliser les données issues de ces appareils et utilisateurs pour élargir progressivement le groupe de PC à cibler.
 
-[Présentation du déploiement du système d’exploitation dans le Configuration Manager](https://docs.microsoft.com/configmgr/osd/understand/introduction-to-operating-system-deployment)
+[Présentation du déploiement du système d’exploitation dans le Configuration Manager](https://docs.microsoft.com/mem/configmgr/osd/understand/introduction-to-operating-system-deployment)
 
 **[Étape 7 : Windows et Office en tant que Service](https://aka.ms/mdd7) ** cette valeur représente un changement majeur dans la façon de maintenir à jour le bureau des utilisateurs. Avec ce passage à Windows 10 et Microsoft 365 Apps pour entreprise, vous pouvez migrer à la gestion de Windows et Office en tant que service. À la place d’un changement massif de technologies tous les ans, vous aurez continuellement de nouvelles fonctionnalités et expériences, et des protections fiables pour vos utilisateurs. Les mises à jour semestrielles des fonctionnalités offrent de nouvelles fonctionnalités chaque automne et printemps, tandis que les mises à jour mensuelles de qualité cumulées contiendront sécurité, fiabilité et correctifs. Même si vous pouvez choisir de déployer le client Office 2019, nous vous recommandons vivement de passer à Microsoft 365 Apps pour entreprise. Cela suit un plan de service similaire à Windows afin que vos utilisateurs reçoivent les mises à jour aux applications Office régulièrement.
 
 ![](../media/getting-started-media/getting-started-media-2.png)
 
 [Vue d’ensemble de Windows en tant que service](https://docs.microsoft.com/windows/deployment/update/waas-overview)
-[vue d’ensemble d’Office en tant que service](https://docs.microsoft.com/DeployOffice/overview-of-update-channels-for-office-365-proplus)
+[vue d’ensemble d’Office en tant que service](https://docs.microsoft.com/DeployOffice/overview-update-channels)
 
 **[Étape 8 : Communications et formation des utilisateurs ](https://aka.ms/mdd8) ** cette dernière étape est critique pour mener l’utilisation des nouvelles fonctionnalités pour optimiser le travail d’équipe, communications, sécurité et autres aspects. Avant que le déploiement à grande échelle ne soit appliqué aux utilisateurs hors premiers utilisateurs, nous vous recommandons de mettre en place la formation et communication utilisateur. Cela vous aidera à apporter les modifications souhaités dans comment les personnes utilisent les nouvelles fonctionnalités disponibles dans Office, Windows ou autres applications et services d’entreprise . Pour aider, nous fournissons une formation en ligne gratuite via Microsoft FastTrack. De plus, nous avons publié des échantillons de plans de communication gratuits et chronologies avec messagerie électronique, réseaux sociaux et modèles intranet pour vous aider avec votre déploiement de Windows 10. En tant qu’entreprise Microsoft 365, votre organisation peut également être éligible pour un service clientèle direct.
 

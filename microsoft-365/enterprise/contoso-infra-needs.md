@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Comprendre la structure de base de l’infrastructure informatique locale de Contoso et la manière dont les besoins métier ont été satisfaits par Microsoft 365 Entreprise.
-ms.openlocfilehash: 38d2b8df611cb06e19abba074f49e00d95496c30
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 3899466e6c8ad50ad3a3d97863d1368ba1d8af20
+ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43625289"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44011196"
 ---
 # <a name="contosos-it-infrastructure-and-business-needs"></a>Infrastructure informatique et besoins métier de Contoso
 
@@ -110,7 +110,7 @@ Gestion :
 
 - Réduire les frais généraux informatiques pour la gestion des logiciels s’exécutant sur des périphériques et des PC client
 
-  Automatiser l’installation des mises à jour pour le système d’exploitation Windows et Microsoft Office ProPlus au sein de l’organisation.
+  Automatiser l’installation des mises à jour pour le système d’exploitation Windows et Applications Microsoft 365 pour les grandes entreprises au sein de l’organisation.
 
 ## <a name="mapping-contosos-business-needs-to-microsoft-365-enterprise"></a>Mappage des besoins métier de Contoso à Microsoft 365 Entreprise
 

@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Découvrez comment préparer la maintenance de Windows et d’Office au sein de votre environnement.
-ms.openlocfilehash: 422cbd4fd8310a9bc63696c0ea6e9da858c51230
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: bca8fbf39bbbcc7b0a37512383caf630ffe3da67
+ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636734"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44011614"
 ---
 # <a name="step-7-windows-and-office-servicing"></a>Étape 7 : maintenance de Windows et d’Office
 
@@ -83,7 +83,7 @@ Nous avons également réfléchi à une méthode pour simplifier le déploiement
 
 [Déployer les mises à jour de Windows 10 avec le gestionnaire de configuration](https://docs.microsoft.com/windows/deployment/update/waas-manage-updates-configuration-manager)
 
-[Gérer les applications Microsoft 365 Apps pour entreprise avec le Gestionnaire de configuration](https://docs.microsoft.com/configmgr/sum/deploy-use/manage-office-365-proplus-updates)
+[Gérer les applications Microsoft 365 Apps pour entreprise avec le Gestionnaire de configuration](https://docs.microsoft.com/mem/configmgr/sum/deploy-use/manage-office-365-proplus-updates)
 
 ## <a name="overview-of-windows-and-office-channels"></a>Vue d’ensemble des canaux Windows et Office
 
@@ -103,7 +103,7 @@ Microsoft 365 propose quatre canaux de maintenance :
 Pour plus d’informations sur les canaux de maintenance de Windows et d’Office, voir la documentation ci-dessous :
 
 - [Vue d’ensemble de Windows as a service](https://docs.microsoft.com/windows/deployment/update/waas-overview#servicing-channels)
-- [Vue d’ensemble des canaux de mise à jour pour Microsoft 365 Apps pour entreprise](https://docs.microsoft.com/DeployOffice/overview-of-update-channels-for-office-365-proplus#BKMK_SAC)
+- [Présentation des canaux de mise à jour des Applications Microsoft 365](https://docs.microsoft.com/DeployOffice/overview-update-channels#BKMK_SAC)
 
 ## <a name="phased-deployment-of-updates"></a>Déploiement progressif des mises à jour
 
@@ -141,7 +141,7 @@ Concernant les outils, vous pouvez utiliser les paramètres de stratégie avec W
 
 [Canal semi-annuel Windows](https://docs.microsoft.com/windows/deployment/update/waas-overview#semi-annual-channel)
 
-[Canal semestriel pour Microsoft 365 Apps pour entreprise](https://docs.microsoft.com/DeployOffice/overview-of-update-channels-for-office-365-proplus#BKMK_SAC)
+[Canal semi-annuel pour les Applications Microsoft 365](https://docs.microsoft.com/DeployOffice/overview-update-channels#BKMK_SAC)
 
 #### <a name="upgrade-task-sequences"></a>Séquences de tâches de mise à niveau
 
@@ -153,7 +153,7 @@ Une séquence de tâches vous permet de créer des vérifications ou des tâches
 
 Si vous utilisez déjà des séquences de tâches pour migrer vos ordinateurs Windows 7 vers Windows 10 et que vous connaissez déjà ces outils, il s’agit d’un excellent point de départ pour maîtriser votre mise à niveau. Même si vous pouvez utiliser une séquence de tâches unique pour l’ensemble de la mise à niveau, il est assez courant que les organisations utilisent deux séquences de tâches : une séquence pour vérifier que les ordinateurs sont prêts pour la mise à niveau (elle pré-configure silencieusement tous les fichiers d’installation requis sur les ordinateurs cibles) et une autre séquence pour exécuter la mise à niveau. En utilisant cette approche, la productivité des utilisateurs est moins affectée.
 
-[Créer une séquence de tâches pour mettre à niveau un système d’exploitation dans le gestionnaire de configuration](https://docs.microsoft.com/configmgr/osd/deploy-use/create-a-task-sequence-to-upgrade-an-operating-system)
+[Créer une séquence de tâches pour mettre à niveau un système d’exploitation dans le gestionnaire de configuration](https://docs.microsoft.com/mem/configmgr/osd/deploy-use/create-a-task-sequence-to-upgrade-an-operating-system)
 
 #### <a name="semi-annual-channel-support-for-feature-updates"></a>Prise en charge du canal semi-annuel pour les mises à jour de fonctionnalité
 

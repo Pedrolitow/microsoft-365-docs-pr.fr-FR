@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Découvrez comment livrer Office et des applications métier.
-ms.openlocfilehash: bf610f6d6684cf8fb6211301468747fbecf3d8f1
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: ab40e59face9e8c4b37db15a9c815ea5579b4a2c
+ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636795"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44011638"
 ---
 # <a name="step-3-office-and-lob-app-delivery"></a>Étape 3 : livraison d’Office et d’applications métier
 
@@ -63,9 +63,9 @@ Une autre méthode populaire de remise application est IMAGERIE PC. Dans ce cas,
 
 Si vous souhaitez inclure Microsoft 365 Apps pour entreprise dans votre image, n’oubliez pas que cette approche utilise une activation basée sur l’utilisateur ; l’administrateur système ne peut pas la préactiver. Utilisez l’outil Déploiement d’Office pour préinstaller Office sur l’appareil sur lequel vous présentez l’image et ignorer la connexion utilisateur. Une fois l’image déployée, les utilisateurs finaux peuvent se connecter à l’aide des informations d’identification et activer Microsoft 365 Apps pour entreprise.
 
-[Créer une séquence de tâches pour installer un système d’exploitation](https://docs.microsoft.com/configmgr/osd/deploy-use/create-a-task-sequence-to-install-an-operating-system)
+[Créer une séquence de tâches pour installer un système d’exploitation](https://docs.microsoft.com/mem/configmgr/osd/deploy-use/create-a-task-sequence-to-install-an-operating-system)
 
-[Déployer Microsoft 365 Apps pour entreprise dans le cadre d’une image de système d’exploitation](https://docs.microsoft.com/deployoffice/deploy-office-365-proplus-as-part-of-an-operating-system-image)
+[Déployer les Applications Microsoft 365 dans le cadre d’une image de système d’exploitation](https://docs.microsoft.com/deployoffice/deploy-microsoft-365-apps-operating-system-image)
 
 ## <a name="office-click-to-run"></a>Office « Démarrer en un clic »  
 
@@ -73,7 +73,7 @@ Microsoft 365 Apps pour entreprise est installé au moyen de la technologie « D
 
 Les programmes remis via Click-to-Run réalisent des tâches dans un environnement virtuel application sur votre ordinateur et donc coexistent avec d’autres applications sans conflit ; ils prennent également environ la moitié de l’espace du disque qu’ils prendraient en tant que package MSI. Les applications Office sont remises et gérées via l’[Outil de Déploiement d’Office](https://www.microsoft.com/download/details.aspx?id=49117) qui est le moteur d’installation Office nécessaire pour télécharger, configurer et personnaliser vos applications Office. L’outil de Déploiement d’Office lit un fichier XML de configuration qui fournit les métadonnées des instructions sur la configuration et la personnalisation de votre installation d’Office.
 
-Microsoft recommande l’utilisation de l’[outil de personnalisation Office](https://config.office.com/) pour personnaliser les paramètres de déploiement et de créer votre fichier XML de configuration. Via l’Outil de Personnalisation Office, vous pouvez définir les applications et les langues seront installées, comment les applications seront mis à jour, les préférences d’applications et les paramètres d’expérience d’installation.
+Microsoft recommande l’utilisation de l’[outil de personnalisation Office](https://config.office.com/) pour personnaliser les paramètres de déploiement et de créer votre fichier XML de configuration. Via l’Outil de Personnalisation Office, vous pouvez définir les applications et les langues qui seront installées, comment les applications seront mises à jour, les préférences d’applications et les paramètres d’expérience d’installation.
 
 ![](../media/step-3-office-and-lob-app-delivery-media/step-3-office-and-lob-app-delivery-media-7.png)
 
@@ -81,11 +81,11 @@ Si vous utilisez l’outil Gestionnaire de configuration, vous pouvez toujours l
 
 ![](../media/step-3-office-and-lob-app-delivery-media/step-3-office-and-lob-app-delivery-media-6.png)
 
-[Guide de déploiement pour Microsoft 365 Apps pour entreprise](https://docs.microsoft.com/deployoffice/deployment-guide-for-office-365-proplus)
+[Guide de déploiement des Applications Microsoft 365](https://docs.microsoft.com/deployoffice/deployment-guide-microsoft-365-apps)
 
-[Suppression des versions MSI existantes d’Office lors de la mise à niveau vers Microsoft 365 Apps pour entreprise](https://docs.microsoft.com/deployoffice/upgrade-from-msi-version)
+[Suppression des versions MSI existantes d’Office lors de la mise à niveau vers les Applications Microsoft 365](https://docs.microsoft.com/deployoffice/upgrade-from-msi-version)
 
-[Gérer Microsoft 365 Apps pour entreprise avec le Gestionnaire de configuration](https://docs.microsoft.com/configmgr/sum/deploy-use/manage-office-365-proplus-updates)
+[Gérer Microsoft 365 Apps pour entreprise avec le Gestionnaire de configuration](https://docs.microsoft.com/mem/configmgr/sum/deploy-use/manage-office-365-proplus-updates)
 
 [Affecter des applications Office 365 à des périphériques Windows 10 avec Microsoft Intune](https://docs.microsoft.com/intune/apps-add-office365)
 
@@ -107,7 +107,7 @@ Les applications Store peuvent être créées de manière native en tant qu’ap
 
 ## <a name="msix-containerization"></a>Mise en conteneur MSIX
 
-Une nouvelle option de package de l’application est MSIX. MSIX utilise la technologie de conteneurs disponibles dans Windows, en combinant les meilleures aspects de package en un clic, UWP et MSI. Grâce à des outils des programmes d’installation de migration existants comme EXE, MSI, APPV et APPX directement à MSIX nous observons que CONTENEURISATION MSIX fournit un chemin d’accès unifié pour de nombreuses technologies d’installation utilisées aujourd'hui. La prise en charge MSIX est inclus dans les versions actuelles de Windows : n’importe quel appareil exécutant Windows 10 RS5 ou plus récentes inclut tout ce dont vous avez besoin pour installer et exécuter des applications incluses dans un package MSIX. Windows 10 intègre dynamiquement les conteneurs MSIX qu’il reçoit, tout en conservant les applications distinct à partir du système d’exploitation.
+Une nouvelle option de package de l’application est MSIX. MSIX utilise la technologie de conteneurs disponibles dans Windows, en combinant les meilleures aspects de package en un clic, UWP et MSI. Grâce à des outils de migration de programmes d’installation existants comme EXE, MSI, APPV et APPX directement à MSIX, nous observons que la mise en conteneur MSIX fournit un chemin d’accès unifié pour de nombreuses technologies d’installation utilisées aujourd'hui. La prise en charge MSIX est inclus dans les versions actuelles de Windows : n’importe quel appareil exécutant Windows 10 RS5 ou plus récentes inclut tout ce dont vous avez besoin pour installer et exécuter des applications incluses dans un package MSIX. Windows 10 intègre dynamiquement les conteneurs MSIX qu’il reçoit, tout en conservant les applications distinct à partir du système d’exploitation.
 
 La mise en conteneur suppose la désinstallation et la suppression nettes de packages, contrairement à un grand nombre de packages basés sur MSI et EXE pouvant laisser des éléments sur le système. Cela signifie également que seules les informations d’identification d’utilisateur standard sont nécessaires pour installer les applications : vous n’avez pas besoin d’avoir des informations d’identification d’administrateur pour installer les conteneurs MSIX. Les conteneurs MSIX sont aussi plus efficaces à mettre à jour. Lorsqu’une mise à jour est publiée, l’utilisation des écarts de niveau de bloc signifie que seuls de nouveaux fichiers binaires sont appliqués, réduisant ainsi la charge de mise à jour pour assurer des déploiements plus rapides et la réduction de la consommation de la bande passante du réseau.
 

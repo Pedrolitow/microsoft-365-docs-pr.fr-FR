@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: En savoir plus sur le point et où pour accéder au Kit laboratoire de déploiement Windows et Office.
-ms.openlocfilehash: 9635e6d12b9f3ef606f8b62edac4dce6d75a1074
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 7df489b75f1c104bb9ad541bbdc2ce09e7a669de
+ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631512"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44011958"
 ---
 # <a name="windows-and-office-deployment-lab-kit"></a>Kit laboratoire de déploiement Windows et Office
 
@@ -104,7 +104,7 @@ Des guides de laboratoire détaillés vous guident dans plusieurs scénarios de 
 ### <a name="windows-and-office-as-a-service"></a>Windows et Office en tant que service
   - Gérer les mises à jour Windows à l’aide d’une stratégie de groupe
   - Maintenance de Windows 10 à l’aide de Configuration Manager et Intune
-  - Maintenance d’Office 365 ProPlus à l’aide de Configuration Manager
+  - Maintenance des Applications Microsoft 365 pour les grandes entreprises avec Configuration Manager
 
 ### <a name="new-windows-virtual-desktop"></a>NOUVEAUTÉ ! Windows Virtual Desktop
   - Windows Virtual Desktop : préparer, déployer et optimiser 
@@ -121,11 +121,11 @@ Des guides de laboratoire détaillés vous guident dans plusieurs scénarios de 
 
   - [Série de vidéos de Microsoft Mechanics consacrées au déploiement des ordinateurs de bureau](https://www.aka.ms/watchhowtoshift)
 
-  - [Déploiement du système d’exploitation Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/configmgr/osd/understand/introduction-to-operating-system-deployment)
+  - [Déploiement du système d’exploitation Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/mem/configmgr/osd/understand/introduction-to-operating-system-deployment)
 
   - [<span class="underline">Plan de déploiement de Windows 10</span>](https://docs.microsoft.com/windows/deployment/planning/index)
 
-  - [<span class="underline">Guide de déploiement pour Microsoft 365 Apps for enterprise</span>](https://docs.microsoft.com/deployoffice/deployment-guide-for-office-365-proplus)
+  - [<span class="underline">Guide de déploiement des applications Microsoft 365</span>](https://docs.microsoft.com/deployoffice/deployment-guide-microsoft-365-apps)
 
   - [<span class="underline">Mise en route d’Intune</span>](https://docs.microsoft.com/intune/get-started-evaluation)
 

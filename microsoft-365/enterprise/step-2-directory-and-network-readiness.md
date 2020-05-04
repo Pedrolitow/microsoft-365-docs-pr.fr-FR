@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Découvrez comment évaluer l’état de préparation des répertoires et du réseau dans votre environnement.
-ms.openlocfilehash: 4db179a2ed4c2aada841e8f7a4ed824aa1e190ff
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: b9b2ed38afd77a5dd487b7e319eeee5300a62a25
+ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636807"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44011650"
 ---
 # <a name="step-2-directory-and-network-readiness"></a>Étape 2 : préparation des répertoires et du réseau
 
@@ -51,7 +51,7 @@ Dans cet article, nous allons explorer les outils et les options pour préparer 
 
 Si votre organisation utilise déjà Office 365, Exchange Online, Microsoft Intune ou les autres services Microsoft Online, la bonne nouvelle est que vous utilisez déjà Azure Active Directory. Si c’est le cas, vous devez vous assurer que les utilisateurs que vous ciblez pour le déploiement Bureau soient dans votre Azure Active Directory et disposent de licences.
 
-Si vous n’utilisez pas actuellement Azure Active Directory, il existe des[nombreux ressources ](https://docs.microsoft.com/azure/active-directory/) pour vous aider à le configurer. Vous pouvez également bénéficier d’une assistance personnalisée via Microsoft FastTrack, dans le cadre de votre licence. Vous pouvez vérifier plus d’informations sur Microsoft Fastrack [ici](https://fasttrack.microsoft.com).
+Si vous n’utilisez pas actuellement Azure Active Directory, il existe des[nombreux ressources ](https://docs.microsoft.com/azure/active-directory/) pour vous aider à le configurer. Vous pouvez également bénéficier d’une assistance personnalisée via Microsoft FastTrack, dans le cadre de votre licence. Vous pouvez extraire plus d’informations sur Microsoft FastTrack [ici](https://fasttrack.microsoft.com).
 
 Une fois Azure Active Directory configuré, vos utilisateurs peuvent se connecter aux applications Microsoft 365 Apps pour entreprise et les activer. Vous pouvez aussi utiliser le déploiement Microsoft Intune ou Windows Autopilot pour déployer automatiquement des applications et des stratégies.
 
@@ -121,7 +121,7 @@ En plus de tirer parti de l’optimisation de la distribution, voici trois élé
 
 **Compression Delta binaire** Microsoft 365 Apps pour entreprise utilise la Compression Delta binaire pour réduire la bande passante consommée par les mises à jour logicielles de la version la plus récente de Microsoft 365 Apps pour entreprise vers la version suivante. En chargeant uniquement les modifications au niveau binaire à partir de la version précédente, vous réduisez l’impact des mises à jour cumulatives qui s’enrichissent de mois en mois. Ainsi, vous économisez plusieurs centaines de mégaoctets de données par PC tous les mois. Cependant, pour utiliser cette fonctionnalité, vous ne pouvez pas sauter une version sinon la mise à jour cumulative complète doit être téléchargée.
 
-[Téléchargement des mises à jour pour Office 365](https://docs.microsoft.com/deployoffice/overview-of-the-update-process-for-office-365-proplus#download-the-updates-for-office-365-proplus)
+[Téléchargement des mises à jour des Applications Microsoft 365](https://docs.microsoft.com/deployoffice/overview-update-process-microsoft-365-apps#download-the-updates-for-microsoft-365-apps)
 
 **Fichiers de données Outlook** Outlook est souvent configuré pour la boîte aux lettres entière des utilisateurs en locale pour une utilisation en mode hors connexion. Dans tout déploiement de Windows, à l’exception d’une mise à niveau inaltérable, il nécessite des fichiers de données Outlook que les utilisateurs reconstruisent eux-mêmes après la mise à niveau. Il s’agit d’un processus automatisé, mais avec des limites de boîtes aux lettres Outlook généralement attribuées à 100 Go, la nouvelle mise en cache de boîte aux lettres entièrement en local pour tous les utilisateurs signifie un grand nombre de transfert de données. À réduire la charge de réseau, vous souhaiterez peut-être prendre en considération l’utilisation d’une stratégie de groupe pour réduire le paramètre « Courrier à conserver hors connexion ». Dans Microsoft 365 Apps pour entreprise ou Office 2016, la valeur par défaut pour Outlook est définie sur 12 mois. Afin de réduire l’impact sur réseau, envisagez de définir la durée du cache en mode hors connexion entre 1 à 6 mois. La modification de ce paramètre n’affecte pas la taille de la boîte aux lettres en ligne et la boîte aux lettres entière peut toujours être recherchée via Outlook lorsqu’il en ligne.
 

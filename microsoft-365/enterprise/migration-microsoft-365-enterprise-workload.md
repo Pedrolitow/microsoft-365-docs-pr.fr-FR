@@ -12,12 +12,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Suivez le processus de migration des versions de Microsoft Office, des serveurs Office et de Windows vers Microsoft 365 Entreprise au sein de votre organisation.
-ms.openlocfilehash: 53d50321ffa2870fb0e94e9f6b7f005b8c666c2d
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 6830b4627eea799e18d32d3f9150617df339d7d4
+ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631536"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44011794"
 ---
 # <a name="migration-to-microsoft-365-enterprise"></a>Migration vers Microsoft 365 Entreprise
 
@@ -49,7 +49,7 @@ De nombreuses petites et grandes entreprises utilisent peut-être une combinaiso
 - ne sont pas configurées de façon optimale pour tirer parti des technologies cloud de Microsoft et pour vous aider à transformer numériquement votre entreprise.
 - Ne contiennent pas de nouvelles fonctionnalités.
  
-Microsoft 365 Entreprise inclut les applications Microsoft 365 pour les entreprises, une version des produits client Office disponible avec une licence Microsoft 365 Entreprise, installée et mise à jour à partir du cloud de Microsoft. Les applications Microsoft 365 pour les entreprises incluent des mises à jour de sécurité et les fonctionnalités les plus récentes. Si vous souhaitez en savoir plus, consultez la rubrique [À propos des applications Microsoft 365 pour les entreprises dans l’entreprise](https://docs.microsoft.com/deployoffice/about-office-365-proplus-in-the-enterprise).
+Microsoft 365 Entreprise inclut les applications Microsoft 365 pour les entreprises, une version des produits client Office disponible avec une licence Microsoft 365 Entreprise, installée et mise à jour à partir du cloud de Microsoft. Les applications Microsoft 365 pour les entreprises incluent des mises à jour de sécurité et les fonctionnalités les plus récentes. Si vous souhaitez en savoir plus, consultez la rubrique [À propos des Applications Microsoft 365 pour les grandes entreprises](https://docs.microsoft.com/deployoffice/about-microsoft-365-apps).
 
 ### <a name="office-2007"></a>Office 2007
 
