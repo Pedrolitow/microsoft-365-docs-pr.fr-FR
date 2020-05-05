@@ -1,5 +1,5 @@
 ---
-title: Décision basée sur les résultats dans Office 365 Advanced eDiscovery
+title: Décision basée sur les résultats dans Advanced eDiscovery
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -14,13 +14,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: aed65bcd-0a4f-43e9-b5e5-b98cc376bdf8
-description: 'Découvrez comment l’onglet décider dans Office 365 Advanced eDiscovery fournit des données qui peuvent vous aider à déterminer la taille correcte de l’ensemble de révision des fichiers de cas. '
-ms.openlocfilehash: 6d515305b01b0273bb2acffaad19c497fc5c82d2
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+description: 'Découvrez comment l’onglet décider dans Advanced eDiscovery fournit des données qui peuvent vous aider à déterminer la taille correcte de l’ensemble de révision des fichiers de cas. '
+ms.openlocfilehash: 279b689e830089c683b8cd575a231635ca32de76
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42557542"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43630571"
 ---
 # <a name="decision-based-on-the-results-in-advanced-ediscovery-classic"></a>Décision basée sur les résultats dans Advanced eDiscovery (classique)
 
@@ -55,7 +55,7 @@ Le volet de détails étendu affiche des détails supplémentaires. Les fichiers
   
 ## <a name="see-also"></a>Voir aussi
 
-[Découverte électronique avancée (classique)](office-365-advanced-ediscovery.md)
+[Advanced eDiscovery (classique)](office-365-advanced-ediscovery.md)
   
 [Présentation de l’évaluation en matière de pertinence](assessment-in-relevance-in-advanced-ediscovery.md)
   

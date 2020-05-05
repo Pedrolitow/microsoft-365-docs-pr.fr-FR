@@ -17,17 +17,17 @@ localization_priority: Normal
 search.appverid:
 - MOE150
 - MET150
-description: La protection contre la perte de données (DLP) dans &amp; le centre de sécurité conformité Office 365 inclut des modèles de stratégie prêts à l’emploi qui répondent à des exigences de conformité communes, telles que la protection des informations sensibles soumises à la loi américaine Health Insurance Act (HIPAA), aux États-Unis Gramm-Leach-Bliley Act (GLBA) ou aux États-Unis Patriot Act. Cette rubrique répertorie tous les modèles de stratégie, les types d’informations sensibles qu’ils recherchent, ainsi que les conditions et les actions par défaut.
-ms.openlocfilehash: 6b87f8c0746611e8ae8cee917e27545ffe5e4373
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+description: La protection contre la perte de données (DLP &amp; ) dans le centre de sécurité conformité inclut des modèles de stratégie prêts à l’emploi qui répondent aux exigences de conformité communes, telles que la protection des informations sensibles à la loi américaine Health Insurance Act (HIPAA), américaine Gramm-Leach-Bliley Act (GLBA) ou Patriot Act. Cette rubrique répertorie tous les modèles de stratégie, les types d’informations sensibles qu’ils recherchent, ainsi que les conditions et les actions par défaut.
+ms.openlocfilehash: 622a613fd0f43a7ad23c25ab52460181a8931e7f
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41597171"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43626270"
 ---
 # <a name="what-the-dlp-policy-templates-include"></a>Ce qu’incluent les modèles de stratégie DLP
 
-La protection contre la perte de données (DLP) dans &amp; le centre de sécurité conformité Office 365 inclut des modèles de stratégie prêts à l’emploi qui répondent à des exigences de conformité communes, telles que la protection des informations sensibles soumises à la loi américaine Health Insurance Act (HIPAA), aux États-Unis Gramm-Leach-Bliley Act (GLBA) ou aux États-Unis Patriot Act. Cette rubrique répertorie tous les modèles de stratégie, les types d’informations sensibles qu’ils recherchent, ainsi que les conditions et les actions par défaut. Elle ne comprend pas tous les détails de configuration de chaque modèle de stratégie, mais présente suffisamment d’informations pour vous aider à déterminer quel modèle est le meilleur point de départ pour votre cas. N’oubliez pas que vous pouvez personnaliser ces modèles de stratégie pour répondre à vos besoins spécifiques.
+La protection contre la perte de données (DLP &amp; ) dans le centre de sécurité conformité inclut des modèles de stratégie prêts à l’emploi qui répondent aux exigences de conformité communes, telles que la protection des informations sensibles à la loi américaine Health Insurance Act (HIPAA), américaine Gramm-Leach-Bliley Act (GLBA) ou Patriot Act. Cette rubrique répertorie tous les modèles de stratégie, les types d’informations sensibles qu’ils recherchent, ainsi que les conditions et les actions par défaut. Elle ne comprend pas tous les détails de configuration de chaque modèle de stratégie, mais présente suffisamment d’informations pour vous aider à déterminer quel modèle est le meilleur point de départ pour votre cas. N’oubliez pas que vous pouvez personnaliser ces modèles de stratégie pour répondre à vos besoins spécifiques.
   
 ## <a name="australia-financial-data"></a>Données financières en Australie
 

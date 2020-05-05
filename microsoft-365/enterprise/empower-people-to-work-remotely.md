@@ -16,12 +16,12 @@ ms.collection:
 - remotework
 ms.custom: ''
 description: Configurez l’infrastructure et la sécurité qui permettent à vos employés de travailler à distance de n’importe où et à tout moment.
-ms.openlocfilehash: 8bbbe4853805c506ee511ecdef684f407166aca0
-ms.sourcegitcommit: dbbdeca5a6cd048e1bde9e820a8b8a0d6022c7a2
+ms.openlocfilehash: 3c4d34e21993f3b0c9327b27dd0a5a14f430b1b8
+ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43504122"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43637503"
 ---
 # <a name="empower-remote-workers"></a>Confiez des responsabilités aux travailleurs à distance
 
@@ -58,14 +58,14 @@ Pour répondre à ces critères pour les travailleurs à distance, utilisez les 
 - Accès sécurisé aux ressources
   - Groupes et autorisations pour Teams, les sites SharePoint et OneDrive pour que seuls les utilisateurs authentifiés et autorisés y aient accès
 - Protection des fichiers qui ont fuité
-  - Stratégies de protection contre la perte de données d’Office 365
+  - Stratégies de protection contre la perte de données
   - Étiquettes de confidentialité pour le chiffrement et les autorisations qui se déplacent avec les fichiers
 - Gestion des périphériques et sécurité avec Microsoft Intune
   - Inscription pour les appareils gérés
   - Paramètres des applications pour les appareils personnels
   - Stratégies d’appareils et d’applications
 - Applications de productivité pour les appareils
-  - Applications Office 365 ProPlus pour les expériences collaboratives avec Teams, SharePoint et OneDrive 
+  - Applications Microsoft 365 pour les entreprises pour les expériences collaboratives avec Teams, SharePoint et OneDrive 
 - Windows 10 Entreprise
   - Fonctionnalités de sécurité complètes pour protéger contre les cyberattaques et empêcher les fuites de données
 - Accès aux applications locales
@@ -108,11 +108,11 @@ Voici la configuration obtenue avec les appareils Windows 10 Entreprise.
 
 ![Éléments de Windows 10 Entreprise pour les travailleurs à distance](../media/empower-people-to-work-remotely/remote-workers-win10-phase.png)
  
-Pour la [Phase 4 : Office 365 ProPlus](office365proplus-infrastructure.md), déployez l’infrastructure pour installer Office 365 ProPlus ou mettez à niveau votre suite Office actuellement installée (par exemple, Office 2010 ou Office 2013) vers Office 365 ProPlus sur les appareils de votre organisation. Cela permet à vos utilisateurs de tirer parti des meilleures expériences en matière de sécurité et de collaboration.
+Pour la [phase 4 : applications Microsoft 365 pour les entreprises](office365proplus-infrastructure.md), déployez l’infrastructure pour installer les applications Microsoft 365 pour les entreprises ou mettre à niveau votre suite Office actuellement installée, comme Office 2010 ou Office 2013, vers les applications Microsoft 365 pour les entreprises sur les appareils de votre organisation. Cela permet à vos utilisateurs de tirer parti des meilleures expériences en matière de sécurité et de collaboration.
 
-Voici la configuration obtenue avec Office 365 ProPlus installé sur des appareils.
+Voici la configuration obtenue avec les applications Microsoft 365 installées sur les appareils.
 
-![Éléments de Office 365 ProPlus pour les travailleurs à distance](../media/empower-people-to-work-remotely/remote-workers-proplus-phase.png)
+![Éléments des applications Microsoft 365 pour les entreprises pour les travailleurs à distance](../media/empower-people-to-work-remotely/remote-workers-proplus-phase.png)
  
 Pour la [Phase 5 : gestion des appareils mobiles](mobility-infrastructure.md), déployez la gestion des appareils et applications Intune pour les éléments suivants :
 
@@ -126,8 +126,8 @@ Voici la configuration obtenue avec les appareils et stratégies Intune inscrits
  
 Pour la [Phase 6 : protection des informations](infoprotect-infrastructure.md), concevez et configurez la protection de vos biens numériques avec les éléments suivants :
 
-- Stratégies de protection contre la perte de données d’Office 365.
-- Étiquettes de confidentialité d’Office 365 pour le chiffrement et autorisations qui se déplacent avec les fichiers.
+- les stratégies de protection contre la perte de données.
+- les étiquettes de confidentialité Microsoft 365 pour le chiffrement et les autorisations qui se déplacent avec les fichiers.
 
 Voici la configuration obtenue avec les stratégies de protection contre la perte de données et les étiquettes de confidentialité mises en surbrillance.
 
@@ -153,7 +153,7 @@ Voici la configuration obtenue avec les charges de travail mises en surbrillance
  
 ### <a name="deployment-results"></a>Résultats du déploiement
 
-Une fois que vous avez déployé l’infrastructure de base et les charges de travail et déployé Windows 10 Entreprise et Office 365 ProPlus, les travailleurs à distance :
+Une fois que vous avez déployé l’infrastructure de base et les charges de travail et déployé Windows 10 Entreprise et les applications Microsoft 365 pour les entreprises, les travailleurs à distance :
 
 - sont soumis à une authentification renforcée et à la protection de l’identité.
 - utilisent la version la plus récente et la plus sécurisée de Windows sur leurs appareils Windows.
@@ -205,7 +205,7 @@ Former à nouveau vos utilisateurs, le cas échéant.
 
 ### <a name="user-adoption-results"></a>Résultats de l’adoption par les utilisateurs
 
-Vos travailleurs à distance peuvent utiliser leur appareil Windows 10 Entreprise ou autre appareil et Office 365 ProPlus pour accéder aux ressources et services partagés dans le Cloud Microsoft 365 Entreprise et collaborer dessus dans un environnement sécurisé, et ils peuvent participer à des réunions, créer et collaborer en temps réel.
+Les travailleurs à distance peuvent utiliser leur appareil Windows 10 Entreprise ou autre appareil et les applications Microsoft 365 pour les entreprises pour accéder aux ressources et services partagés dans le cloud Microsoft 365 Entreprise et collaborer dans un environnement sécurisé. Ils peuvent également participer à des réunions, créer et collaborer en temps réel.
 
 ## <a name="additional-microsoft-features-to-support-remote-workers"></a>Autres fonctionnalités de Microsoft pour la prise en charge des travailleurs à distance
 
