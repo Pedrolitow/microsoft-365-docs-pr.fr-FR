@@ -5,21 +5,25 @@ author: MikePlumleyMSFT
 manager: pamgreen
 audience: ITPro
 ms.topic: article
-ms.service: sharepoint-online
-ms.collection: SPO_Content
+ms.prod: microsoft-365-enterprise
+ms.collection:
+- SPO_Content
+- M365-collaboration
+ms.custom:
+- M365solutions
 localization_priority: Priority
 f1.keywords: NOCSH
 description: Découvrez comment limiter l’exposition accidentelle des informations lorsque vous partagez des fichiers avec des personnes extérieures à votre organisation.
-ms.openlocfilehash: fbe97eef2841da9bd46d7f05e3b26dea40cd1bd2
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 93fceaca45a3f814341678c2d29d5feea3653369
+ms.sourcegitcommit: 101084f9c81616342d78493232d8f13f5ffa4ddf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632582"
+ms.lasthandoff: 05/01/2020
+ms.locfileid: "44002167"
 ---
 # <a name="limit-accidental-exposure-to-files-when-sharing-with-people-outside-your-organization"></a>Limiter l’exposition accidentelle de fichiers lors de partages avec des personnes extérieures à votre organisation
 
-Lorsque vous partagez des fichiers et des dossiers avec des personnes extérieures à votre organisation, plusieurs options permettent de réduire les risques de partager accidentellement des informations confidentielles. Vous pouvez choisir l’une des options de cet article pour répondre au mieux aux besoins de votre organisation.
+Lorsque vous partagez des fichiers et des dossiers avec des personnes extérieures à votre organisation, plusieurs options permettent de réduire les risques de partager accidentellement des informations sensibles. Vous pouvez choisir l’une des options de cet article pour répondre au mieux aux besoins de votre organisation.
 
 ## <a name="use-best-practices-for-anyone-links"></a>Utiliser les pratiques recommandées pour les liens Tout le monde
 

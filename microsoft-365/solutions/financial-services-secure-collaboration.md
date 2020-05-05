@@ -6,18 +6,19 @@ manager: laurawi
 audience: ITPro
 ms.topic: article
 ms.collection:
-- Ent_O365
-- Strat_O365_Enterprise
 - M365-security-compliance
-ms.service: O365-seccomp
+ms.prod: microsoft-365-enterprise
+ms.custom:
+- M365solutions
 localization_priority: Priority
 description: Découvrez comment Microsoft 365 aide les services financiers à passer à une plateforme de collaboration moderne, tout en assurant la sécurité et la conformité des données et des systèmes avec les réglementations.
-ms.openlocfilehash: 4dc2c25001bb817dcf31927d2c15b1246cc52901
-ms.sourcegitcommit: 7646e2d742d1b2fad085a00200a2a10461dd4bac
+f1.keywords: NOCSH
+ms.openlocfilehash: e3ed7d40cf7b4452dd2bc47e870e0a7afe10d629
+ms.sourcegitcommit: 101084f9c81616342d78493232d8f13f5ffa4ddf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "42978277"
+ms.lasthandoff: 05/01/2020
+ms.locfileid: "44002366"
 ---
 # <a name="key-compliance-and-security-considerations-for-us-banking-and-capital-markets"></a>Principales considérations en matière de conformité et de sécurité pour les marchés bancaires et des capitaux américains
 
@@ -55,7 +56,7 @@ Fournir aux employés une plateforme de collaboration moderne, basée sur le clo
 
 Teams offre une plateforme de collaboration pour l’organisation. Il contribue à rassembler les gens pour qu'ils travaillent de manière productive sur des initiatives et des projets courants. Teams permet aux membres d'une équipe de mener des conversations 1:1 et multipartites, de collaborer et de co-créer des documents, et de stocker et partager des fichiers. Teams facilite également les réunions en ligne grâce à l'intégration de la voix et de la vidéo d'entreprise. Teams peut également être personnalisé avec des applications Microsoft telles que Microsoft Planner, Microsoft Dynamics 365, PowerApps, PowerBI, et des applications sectorielles tierces. Teams est conçu pour être utilisé par les membres internes de l'équipe et les utilisateurs externes autorisés pouvant rejoindre les canaux de l'équipe, participer à des conversations en ligne, accéder à des fichiers stockés et tirer parti d'autres applications
 
-Chaque équipe Microsoft est soutenue par un groupe Office 365. Ce groupe est considéré comme le service d'adhésion pour de nombreux services Office 365, y compris Teams. Les groupes Office 365 sont utilisés pour faire la distinction entre « propriétaires » et « membres » de façon sécurisée et contrôler l’accès aux différentes fonctionnalités au sein de Teams. Lorsqu’il est associé à des contrôles de gouvernance appropriés et à des révisions d’accès régulièrement administrées, Teams permet uniquement aux membres et aux propriétaires d'utiliser les canaux et les fonctionnalités autorisés.
+Chaque équipe Microsoft s’appuie sur un groupe Microsoft 365. Ce groupe est considéré comme le service d'adhésion pour de nombreux services Office 365, y compris Teams. Les groupes Microsoft 365 sont utilisés pour faire la distinction entre « propriétaires » et « membres » de façon sécurisée et pour contrôler l’accès aux différentes fonctionnalités au sein de Teams. Lorsqu’il est associé à des contrôles de gouvernance appropriés et à des révisions d’accès régulièrement administrées, Teams permet uniquement aux membres et aux propriétaires d'utiliser les canaux et les fonctionnalités autorisés.
 
 Teams bénéficie souvent de services financiers lors de la gestion de projets ou de programmes internes. Par exemple, de nombreuses institutions financières, notamment les banques, les sociétés de gestion de patrimoine, les coopératives de crédit et les compagnies d'assurance, sont tenues de mettre en place des programmes de lutte contre le blanchiment d'argent et d'autres programmes de conformité. Une équipe inter-fonctionnelle composée de l'informatique, de secteurs d'activité tels que la vente au détail et la gestion de patrimoine, et d'une unité de criminalité financière peut être amenée à partager des données entre elle et à communiquer sur le programme ou des enquêtes spécifiques. Ces programmes ont généralement utilisé des lecteurs réseau partagés, mais cette approche peut présenter plusieurs défis, notamment :
 * Une seule personne peut modifier un document à la fois.
@@ -68,20 +69,20 @@ Vous pouvez également utiliser des équipes comme « salle de données virtuel
 
 :::image type="content" source="../media/m365cO19-ent-dell-latitude13-5951.jpg" alt-text="Un groupe de travailleurs Office dans une réunion discute des images sur un grand écran.":::
  
-### <a name="teams-improve-collaboration-and-reduce-compliance-risk"></a>Teams : améliorer la collaboration et réduire les risques de conformité
+### <a name="teams-improve-collaboration-and-reduce-compliance-risk"></a>Teams : améliorer la collaboration et réduire les risques en matière de conformité
 
-Microsoft 365 fournit d’autres fonctionnalités de stratégie courantes pour Teams via l’utilisation de groupes Office 365 comme service d’appartenance sous-jacent. Ces stratégies peuvent contribuer à améliorer la collaboration et à respecter les exigences de conformité.
+Microsoft 365 fournit d’autres fonctionnalités de stratégie courantes pour Teams via l’utilisation de groupes Microsoft 365 comme service d’appartenance sous-jacent. Ces stratégies peuvent contribuer à améliorer la collaboration et à respecter les exigences de conformité.
 
-**Les stratégies d’attribution de nom de groupe Office 365** permettent de s’assurer que les groupes Office 365, et par conséquent, les équipes, sont nommés selon la stratégie d’entreprise. Les noms peuvent être problématiques s’ils ne sont pas appropriés. Par exemple, les employés peuvent ne pas savoir avec quelles équipes travailler ou partager des informations si les noms ne sont pas correctement appliqués. Les stratégies de noms de groupes (notamment la prise en charge des stratégies basées sur les préfixes/suffixe et les mots bloqués personnalisés) peuvent renforcer « l’hygiène » et empêcher l’utilisation de mots spécifiques, tels que les mots réservés ou la terminologie inappropriée.
+**Les stratégies d’attribution de nom de groupe Microsoft 365** permettent de s’assurer que les groupes Microsoft 365, et par conséquent, les équipes, sont nommés selon la stratégie de l’entreprise. Les noms peuvent être problématiques s’ils ne sont pas appropriés. Par exemple, les employés peuvent ne pas savoir avec quelles équipes travailler ou partager des informations si les noms ne sont pas correctement appliqués. Les stratégies de noms de groupes (notamment la prise en charge des stratégies basées sur les préfixes/suffixe et les mots bloqués personnalisés) peuvent renforcer « l’hygiène » et empêcher l’utilisation de mots spécifiques, tels que les mots réservés ou la terminologie inappropriée.
   
-**Les stratégies d’expiration de groupe Office 365** garantissent que les groupes Office 365 et, par conséquent, les équipes, ne sont pas conservés pendant une période prolongée par rapport aux besoins de l’organisation. Cette fonctionnalité permet d’éviter deux problèmes de gestion des informations clés :
+**Les stratégies d’expiration de groupe Microsoft 365** garantissent que les groupes Microsoft 365 et, par conséquent, les équipes, ne sont pas conservés au-delà des délai requis ou nécessaires pour l’organisation. Cette fonctionnalité permet d’éviter deux problèmes de gestion des informations clés :
 
 * Prolifération des équipes qui ne sont pas nécessaires ou qui ne sont pas utilisées.
 * Dépassement de la rétention des données qui ne sont plus nécessaires ou utilisées par l’organisation (sauf en cas de conservation ou de conservation légale).
 
-Les administrateurs peuvent spécifier une période d’expiration pour les groupes Office 365, tels que 90, 180 ou 365 jours. Si un service stocké par un groupe Office 365 est inactif pendant la période d’expiration, les propriétaires de groupes sont avertis. Si aucune action n'est entreprise, le groupe Office 365 et tous les services associés, y compris Teams, sont supprimés.
+Les administrateurs peuvent spécifier une période d’expiration pour les groupes Microsoft 365. Par exemple : 90, 180 ou 365 jours. Si un service qui s’appuie sur un groupe Microsoft 365 est inactif pendant la période d’expiration, les propriétaires du groupe sont avertis. Si aucune action n’est entreprise, le groupe Microsoft 365 et tous les services associés, y compris Teams, sont supprimés.
   
-La conservation des données stockées dans Teams et les autres services basés sur les groupes peut poser des risques aux organisations de services financiers. Les stratégies d’expiration de groupe Office 365 constituent une méthode recommandée pour empêcher la conservation des données qui ne sont plus nécessaires. Combiné aux étiquettes et stratégies de rétention intégrées, Microsoft 365 permet de garantir aux organisations qu’elles conservent uniquement les données nécessaires pour respecter les stratégies d’entreprise et respecter les obligations réglementaires.
+La conservation des données stockées dans Teams et les autres services basés sur les groupes peut poser des risques aux organisations de services financiers. Les stratégies d’expiration de groupe Microsoft 365 constituent une méthode recommandée pour empêcher la conservation des données qui ne sont plus nécessaires. Combiné aux étiquettes et stratégies de rétention intégrées, Microsoft 365 permet de garantir aux organisations qu’elles conservent uniquement les données nécessaires pour respecter les stratégies d’entreprise et respecter les obligations réglementaires.
 
 #### <a name="teams-integrate-custom-requirements-with-ease"></a>Teams : intégrer facilement les besoins personnalisés
 
@@ -215,7 +216,7 @@ Les institutions financières gèrent de grandes quantités de données. Certain
 - Ce qui se produit à l’expiration de la période de rétention (supprimer le document, commencer une révision de destruction ou ne pas effectuer d’action)
 -  Ce qui déclenche le début de la période de rétention (date de création, date de dernière modification, date étiquetée ou événement) et marque le document ou le courriel en tant qu'enregistrement (ce qui signifie qu'il ne peut pas être modifié ou supprimé)
 
-Les étiquettes de rétention sont ensuite publiées sur les sites SharePoint ou OneDrive, les boîtes aux lettres Exchange et les groupes Office 365. Les utilisateurs peuvent appliquer les étiquettes de rétention manuellement aux documents et messages électroniques. Les responsables des enregistrements peuvent utiliser une intelligence pour appliquer automatiquement les étiquettes. Les fonctionnalités intelligentes peuvent être basées sur [plus de 90 types d’informations sensibles intégrés](https://docs.microsoft.com/microsoft-365/compliance/what-the-sensitive-information-types-look-for?view=o365-worldwide) (par exemple, numéro de compte ABA, numéro de compte bancaire américain ou numéro de sécurité sociale des États-Unis). Ils peuvent également être personnalisés en fonction de mots clés ou de données sensibles figurant dans des documents ou des courriers électroniques, tels que des numéros de carte de crédit ou d’autres informations d’identification personnelle ou sur la base des métadonnées SharePoint. Pour les données qui ne sont pas facilement identifiées par un filtrage manuel ou automatisé, les classifieurs présentant une capacité d’apprentissage pouvant être mis en forme peuvent être utilisés pour classer les documents de façon intelligente sur la base des techniques d’apprentissage automatique.
+Les étiquettes de conservation sont ensuite publiées sur les sites SharePoint ou OneDrive, les boîtes aux lettres Exchange et les groupes Microsoft 365. Les utilisateurs peuvent appliquer les étiquettes de rétention manuellement aux documents et messages électroniques. Les responsables des enregistrements peuvent utiliser une intelligence pour appliquer automatiquement les étiquettes. Les fonctionnalités intelligentes peuvent être basées sur [plus de 90 types d’informations sensibles intégrés](https://docs.microsoft.com/microsoft-365/compliance/what-the-sensitive-information-types-look-for?view=o365-worldwide) (par exemple, numéro de compte ABA, numéro de compte bancaire américain ou numéro de sécurité sociale des États-Unis). Ils peuvent également être personnalisés en fonction de mots clés ou de données sensibles figurant dans des documents ou des courriers électroniques, tels que des numéros de carte de crédit ou d’autres informations d’identification personnelle ou sur la base des métadonnées SharePoint. Pour les données qui ne sont pas facilement identifiées par un filtrage manuel ou automatisé, les classifieurs présentant une capacité d’apprentissage pouvant être mis en forme peuvent être utilisés pour classer les documents de façon intelligente sur la base des techniques d’apprentissage automatique.
  
 Le **Securities and Exchange Commission (SEC)** exige des courtiers et autres institutions financières réglementées de conserver toutes les communications liées à leur activité. Ces exigences s'appliquent à de nombreux types de communications et de données, notamment les courriers électroniques, les documents, les messages instantanés, les télécopies, etc. **La règle 17a-4 de la SEC** définit les critères que ces organisations doivent remplir pour stocker des enregistrements dans un système de stockage électronique de données. En 2003, la SEC a publié une version qui a clarifié ces exigences. Elle comprenait les critères suivants :
 
@@ -259,7 +260,7 @@ Les institutions financières peuvent être soumises à des réglementations qui
 
 Enfin, ces règles exigent que les organisations établissent des stratégies et mettent en place des cloisonnements de l’information entre les rôles impliqués dans les services bancaires, les ventes ou les transactions, pour éviter l'échange d'informations et les communications avec les analystes.
 
-[Cloisonnements de l’information](https://docs.microsoft.com/microsoft-365/compliance/information-barriers?view=o365-worldwide) permettent d’établir des murs éthiques au sein de votre environnement Office 365, ce qui permet aux administrateurs de conformité ou à d’autres administrateurs autorisés de définir des stratégies qui autorisent ou bloquent les communications entre les groupes d’utilisateurs dans Teams. Les cloisonnements de l’information effectuent des contrôles sur des actions spécifiques pour empêcher la communication non autorisée. Les cloisonnements de l’information peuvent également restreindre la communication dans les scénarios dans lesquels des équipes internes travaillent sur des fusions, des acquisitions ou des offres confidentielles, ou sur l’utilisation d’informations internes sensibles qui doivent être fortement limitées.
+[Cloisonnements de l’information](https://docs.microsoft.com/microsoft-365/compliance/information-barriers?view=o365-worldwide) permettent d’établir des murs éthiques au sein de votre environnement Office 365, ce qui permet aux administrateurs de conformité ou à d’autres administrateurs autorisés de définir des stratégies qui autorisent ou bloquent les communications entre les groupes d’utilisateurs dans Teams. Les cloisonnements de l’information effectuent des contrôles sur des actions spécifiques pour empêcher la communication non autorisée. Les cloisonnements de l’information peuvent également restreindre la communication dans les scénarios dans lesquels des équipes internes travaillent sur des fusions, des acquisitions ou des offres sensibles, ou sur l’utilisation d’informations internes sensibles qui doivent être fortement limitées.
 
 Les cloisonnements de l’information dans Microsoft 365 prennent en charge les conversations et fichiers dans Teams. Ils peuvent empêcher les types suivants d’actions liées aux communications de respecter les réglementations FINRA :
 

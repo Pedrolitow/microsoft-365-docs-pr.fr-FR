@@ -9,15 +9,17 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 - M365-security-compliance
-ms.service: O365-seccomp
+ms.prod: microsoft-365-enterprise
 localization_priority: Priority
 description: Découvrez comment Microsoft 365 aide les organisations énergétiques à évoluer vers une plateforme de collaboration moderne, tout en assurant la sécurité et la conformité des données et des systèmes avec les réglementations.
-ms.openlocfilehash: 536c895a52024845d8e37c5a7c0b63ba1b2c2752
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom:
+- M365solutions
+ms.openlocfilehash: b0a791177f201e07d00ecbc4621509c1029c4734
+ms.sourcegitcommit: 101084f9c81616342d78493232d8f13f5ffa4ddf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637187"
+ms.lasthandoff: 05/01/2020
+ms.locfileid: "44002239"
 ---
 # <a name="key-compliance-and-security-considerations-for-the-energy-industry"></a>Principales considérations en matière de conformité et de sécurité pour le secteur de l’énergie
 :::image type="content" source="../media/solution-arch-center/MSC17_global_016.png" alt-text="Illustration métaphorique pour une vue globale de plusieurs industries utilisant le cloud":::
@@ -197,7 +199,7 @@ Avec de nombreux canaux de communication disponibles pour les employés, les org
 
 La conformité des communications peut surveiller plusieurs canaux de communication et utiliser des modèles d’apprentissage automatique pour identifier les violations potentielles des stratégies, et notamment la messagerie Office 365, Microsoft Teams, Skype Entreprise Online, Facebook, Twitter et Bloomberg. La conformité des communications permet aux équipes de conformité d’examiner les messages de façon efficace afin d’éviter les infractions suivantes :
 - Les stratégies d’entreprise, comme l’utilisation acceptable, les normes éthiques et les stratégies propres aux entreprises 
-- La confidentialité ou la divulgation d’informations confidentielles, telles que des communications non autorisées concernant des projets confidentiels, comme les acquisitions imminentes, les fusions, les informations de confidentialité, les réorganisations ou les équipes de direction.
+- La sensibilité ou la divulgation d’informations professionnelles sensibles, telles que des communications non autorisées concernant des projets sensibles, comme les acquisitions imminentes, les fusions, les informations de confidentialité, les réorganisations ou les équipes de direction.
 - Les exigences de conformité réglementaire, comme les communications des employés concernant les types d’entreprises ou de transactions dans lesquelles une organisation s’engage, conformément aux réglementations de la FERC pour les marchés de l’énergie
 
 La conformité des communications fournit des classifieurs de menaces, de harcèlement et de blasphèmes intégrés pour aider à réduire les faux positifs lors de l’examen des communications. Cela permet aux examinateurs de gagner du temps pendant le processus d’enquête et de correction. Cela permet également aux examinateurs de se concentrer sur des messages spécifiques dans de longs fils de discussion qui ont été mis en évidence par des alertes de stratégie. Cela permet aux équipes de conformité d’identifier et de résoudre les problèmes de façon plus rapide. Cela offre aux équipes de conformité la possibilité de configurer et d’affiner facilement les stratégies, d’ajuster la solution aux besoins spécifiques de l’organisation et de réduire les faux positifs. La conformité des communications peut également suivre le comportement des utilisateurs au fil du temps, en mettant en évidence les modèles potentiels de comportements à risque ou de violations de stratégie. Enfin, elle fournit des flux de travail de correction intégrés flexibles, afin que les examinateurs puissent rapidement prendre des mesures et passer le relai aux équipes juridiques ou aux ressources humaines en fonction des processus d’entreprise définis.
