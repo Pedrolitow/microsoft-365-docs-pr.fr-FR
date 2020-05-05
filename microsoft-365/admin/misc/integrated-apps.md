@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7e453a40-66df-44ab-92a1-96786cb7fb34
 description: Découvrez les applications intégrées et comment les activer pour permettre aux applications tierces d’accéder aux informations Microsoft 365.
-ms.openlocfilehash: 7e758facda49bb63e09c9ec667522c2b20fa75bd
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 2e292afc4ab33eef1ace91808f93588b9cec4702
+ms.sourcegitcommit: 44e685a0b193e89de5befb1e1a3740eb31931799
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627847"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44022107"
 ---
 # <a name="turning-integrated-apps-on-or-off"></a>Activer ou désactiver les applications intégrées
 
@@ -35,7 +35,7 @@ Lorsque les applications intégrées sont activées, les utilisateurs de votre o
 
 Voici comment activer ou désactiver les applications intégrées.
 
-1. Dans le centre d’administration Microsoft 365, accédez à **la** \> [page &amp; compléments services](https://go.microsoft.com/fwlink/p/?linkid=2053743) , puis sélectionnez **applications intégrées**.
+1. Dans le centre d’administration 365 de Microsoft, accédez à la page **paramètres** des \> **paramètres** \> , à l’onglet **services** , puis sélectionnez **applications intégrées**.
 
 2. Sur la page **applications intégrées** , sélectionnez l’option permettant d’activer ou de désactiver les applications intégrées.
 

@@ -20,12 +20,12 @@ search.appverid:
 - GEA150
 ms.assetid: a36e5a52-4df2-479e-bb97-9e67b8483e10
 description: Découvrez comment modifier le profil de votre organisation, par exemple le nom de l’organisation, l’adresse, le téléphone, le contact technique et la messagerie électronique.
-ms.openlocfilehash: 59c429a8460d16f2c636beeaf571689d33b400d5
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 94f2c875a9373675fd044db7b73251cefe859647
+ms.sourcegitcommit: 997f6227f33c3683ade9672e881d09216df22ee9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43628219"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44016013"
 ---
 # <a name="change-your-organizations-address-technical-contact-and-more"></a>Modifier l'adresse de votre organisation, le contact technique et d'autres informations de profil
   
@@ -52,7 +52,7 @@ Pour modifier d’autres informations sur la page de profil de votre société 
 
 |**Field**  |**Description**  |
 |---------|---------|
-|Nom  <br/>   | Le nom que vous entrez ici est celui que les utilisateurs verront dans les pages suivantes :  <br/>  Page de connexion : si vos utilisateurs ont configuré d'autres comptes Microsoft avec leur adresse de courrier professionnelle ou scolaire, ils peuvent voir le nom de l'organisation sur la page de connexion. Cela leur permet de faire la distinction entre leur compte professionnel ou scolaire et leurs autres comptes, ils peuvent ainsi identifier celui à utiliser quand ils se connectent.  <br/>  Page et lien du profil de l'organisation : le lien vers le profil de votre organisation affiche le nom de l'organisation.  <br/>  Navigation Yammer : dans Yammer, la navigation de gauche utilise le nom de l’organisation comme nom du réseau Yammer.  <br/> Client de synchronisation OneDrive : le nom de l’organisation est affiché dans l’Explorateur de fichiers sur Windows et Finder sur Mac, les chemins d’accès, le centre d’activité OneDrive, l’info-bulle de l’icône Cloud OneDrive et la fenêtre Paramètres de OneDrive. Actuellement, la mise à jour du nom de l’organisation n’est pas mise à jour pour les clients configurés. <br/>        |
+|Nom  <br/>   | Le nom que vous entrez ici est celui que les utilisateurs verront dans les pages suivantes :  <br/>  Page de connexion : si vos utilisateurs ont configuré d'autres comptes Microsoft avec leur adresse de courrier professionnelle ou scolaire, ils peuvent voir le nom de l'organisation sur la page de connexion. Cela leur permet de faire la distinction entre leur compte professionnel ou scolaire et leurs autres comptes, ils peuvent ainsi identifier celui à utiliser quand ils se connectent.  <br/>  Page et lien du profil de l'organisation : le lien vers le profil de votre organisation affiche le nom de l'organisation.  <br/>  Navigation Yammer : dans Yammer, la navigation de gauche utilise le nom de l’organisation comme nom du réseau Yammer.  <br/> Client de synchronisation OneDrive : le nom de l’organisation est affiché dans l’Explorateur de fichiers sur Windows et Finder sur Mac, les chemins d’accès, le centre d’activité OneDrive, l’info-bulle de l’icône Cloud OneDrive et la fenêtre Paramètres de OneDrive. Actuellement, la mise à jour du nom de l’organisation n’est pas mise à jour pour les clients configurés. <br/> Microsoft teams : le commutateur d’organisation dans teams affiche le nom de l’organisation. <br/>  |
 |Adresse, Ville, Département/région, Code postal  <br/>     | L’adresse entrée ici est celle que vous verrez sur votre facture, sous vendu à : l’adresse vendue à votre facture est identique à l’adresse de votre organisation sur votre page de profil (voir [comprendre votre facture pour Microsoft 365 pour les entreprises](../../commerce/billing-and-payments/understand-your-invoice2.md)).  <br/>        |
 |Pays ou région  <br/>    | Pays ou région dans lequel se trouve le siège social de votre entreprise. Le pays ou la région sélectionné détermine les services qui sont à votre disposition, les taxes et la devise de facturation applicables à votre pays ou région ainsi que l'emplacement du centre de données le plus proche (voir [À propos des restrictions de licence Microsoft Office](https://office.microsoft.com/redir/FX103037529).  <br/>Remarque : une fois sélectionné, le pays ou la région ne peut pas être modifié. Si vous tenez absolument à changer votre sélection, vous devez annuler votre abonnement et en souscrire un autre. Pour obtenir de l’aide sur ce processus, [Contactez le support technique](../contact-support-for-business-products.md).        |
 |Téléphone  <br/>     | Il s'agit du numéro de téléphone principal de votre société. Généralement, il s'agit du numéro de téléphone du siège social.  <br/>        |

@@ -14,12 +14,12 @@ ms.collection:
 ms.custom:
 - M365solutions
 f1.keywords: NOCSH
-ms.openlocfilehash: 8b792fa659866682df32130992340d9089aebfe7
-ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
+ms.openlocfilehash: 8482c6591958e36f2c764d61f3fa7116f348f8d8
+ms.sourcegitcommit: 44e685a0b193e89de5befb1e1a3740eb31931799
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "44011850"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44022131"
 ---
 # <a name="microsoft-365-productivity-illustrations"></a>Illustrations de productivité Microsoft 365
 
@@ -121,16 +121,7 @@ Mise à jour du 2019 janvier
 
 Pour plus d’informations, voir l’article pour ce poster : [Solutions de téléphonie Microsoft (Microsoft Telephony Solutions)](https://docs.microsoft.com/SkypeForBusiness/hybrid/msft-telephony-solutions).
   
-<a name="msd"></a>
-### <a name="deploy-a-modern-and-secure-desktop-with-microsoft"></a>Déploiement d’un environnement de bureau moderne et sécurisé avec Microsoft
-
-Ce que les architectes informatiques doivent savoir sur le déploiement et la gestion des mises à jour pour les applications Microsoft 365 pour entreprise (précédemment nommé Office 365 ProPlus) sur Windows 10.
   
-
-|**Élément**|**Description**|
-|:-----|:-----|
-|[![Miniature pour le modèle Déployer un bureau moderne et sécurisé avec Microsoft](../media/solutions-architecture-center/deploy-modern-desktop-thumb.png)](https://www.microsoft.com/download/details.aspx?id=55987) <br/> [PDF](https://download.microsoft.com/download/4/E/9/4E90E227-770A-41D1-99FE-925A64D81A55/MSFT_modern_secure_desktop.pdf)  \| [Visio](https://download.microsoft.com/download/4/E/9/4E90E227-770A-41D1-99FE-925A64D81A55/MSFT_modern_secure_desktop.vsdx) <br/>Mise à jour du 2017 septembre | Ce modèle contient : <ul><li>  Déploiement des applications Windows 10 et Microsoft 365 pour Enterprise à partir du Cloud Microsoft </li><li>  Déploiement des applications Windows 10 et Microsoft 365 pour Enterprise avec le gestionnaire de configuration de point de terminaison Microsoft </li><li>  Gestion des mises à jour pour les applications Windows 10 et Microsoft 365 pour les entreprises à partir du Cloud Microsoft </li><li>  Gestion des mises à jour pour les applications Windows 10 et Microsoft 365 pour les entreprises avec le gestionnaire de configuration de point de terminaison Microsoft </li><li>  Les fonctionnalités de protection supplémentaires et prêtes à l’emploi de Windows 10 </li></ul><br/> |
-   
 ## <a name="see-also"></a>Voir aussi
 
 [Modèles architecturaux pour SharePoint, Exchange, Skype Entreprise et Lync](https://docs.microsoft.com/office365/enterprise/architectural-models-for-sharepoint-exchange-skype-for-business-and-lync)

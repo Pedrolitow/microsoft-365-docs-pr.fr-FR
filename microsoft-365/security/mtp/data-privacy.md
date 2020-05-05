@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 81773481f79a70cb5996696c9554dfe744170e8c
-ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
+ms.openlocfilehash: d11fdc58f44c9e4bacb708fb246fdea40eb75cff
+ms.sourcegitcommit: 997f6227f33c3683ade9672e881d09216df22ee9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 05/04/2020
-ms.locfileid: "44011242"
+ms.locfileid: "44016061"
 ---
 # <a name="microsoft-threat-protection-data-security-and-privacy"></a>Sécurité et confidentialité des données de la Protection Microsoft contre les menaces
 
@@ -33,7 +33,7 @@ ms.locfileid: "44011242"
 
 En utilisant la protection contre les menaces Microsoft, vous acceptez les termes suivants :
 
-*Le service Microsoft Threat Protection (MTP) transfère certaines données client d’autres services Microsoft Enterprise Online vers le mode MTP et de la technique MTP vers les services d’entreprise en ligne de Microsoft. Ces transferts de données sont régis par les [conditions des services en ligne](https://go.microsoft.com/fwlink/?linkid=2127420) et décrits plus en détail dans le centre de gestion de la [confidentialité Microsoft](https://go.microsoft.com/fwlink/?linkid=2127550).*
+*En activant Microsoft Threat Protection (MTP), vous acceptez les termes suivants. Vos données client applicables telles que définies dans les conditions de service en ligne (OST) seront transférées à partir d’autres services Microsoft dans le mode MTP. L’utilisation de vos données client dans le service MTP respecte les normes de gestion des données et les engagements de la protection avancée contre les menaces Microsoft Defender (Microsoft Defender ATP). Vous reconnaissez que ces engagements peuvent différer des services à partir desquels les données client sont transférées. De plus, les données client stockées dans le service MTP sont stockées dans le reste de la zone géographique sélectionnée pour le stockage de vos données client MDATP, qui peuvent différer de celle que vous avez sélectionnée en relation avec d’autres services. Microsoft ne transfère pas les données client en dehors de cette région, sauf indication contraire dans la section emplacement des données du centre de gestion de la [confidentialité Microsoft](https://www.microsoft.com/trust-center).*
 
 Pour plus d’informations sur le stockage des données et la confidentialité concernant les produits spécifiques, voir :
 - [Stockage de données et confidentialité Microsoft Defender - Protection avancée contre les menaces](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy)

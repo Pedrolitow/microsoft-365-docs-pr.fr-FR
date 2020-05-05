@@ -16,13 +16,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: a85e1c87-a48e-4715-bfa9-d5275cde67b0
-description: "Pour les administrateurs : supprimer des éléments dans une \n\ndossier éléments récupérables de er pour une boîte aux lettres Exchange Online, même si cette boîte aux lettres est placée en conservation légale. Il s’agit d’un moyen efficace de supprimer des données involontairement propagées dans Microsoft 365."
-ms.openlocfilehash: 0e6782c96efa997773b06535d5a0364100bd5433
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: 'Pour les administrateurs : supprimez les éléments du dossier éléments récupérables d’un utilisateur pour une boîte aux lettres Exchange Online, même si cette boîte aux lettres est placée en conservation légale. Il s’agit d’un moyen efficace de supprimer des données involontairement propagées dans Microsoft 365.'
+ms.openlocfilehash: 4cf568c06fc3b6ee886ff1823d8771a64c0286d8
+ms.sourcegitcommit: 44e685a0b193e89de5befb1e1a3740eb31931799
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43630511"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44022084"
 ---
 # <a name="delete-items-in-the-recoverable-items-folder-of-cloud-based-mailboxes-on-hold---admin-help"></a>Supprimer des éléments dans le dossier éléments récupérables des boîtes aux lettres en nuage en attente-aide de l’administrateur
 
@@ -48,21 +48,21 @@ Le dossier éléments récupérables d’une boîte aux lettres Exchange Online 
 ## <a name="before-you-begin"></a>Avant de commencer
 
 - Pour créer et exécuter une recherche de contenu, vous devez être membre du groupe de rôles de gestionnaire de découverte électronique ou disposer du rôle de gestion de recherche de contenu. Pour supprimer des messages, vous devez être membre du groupe de rôles de gestion de l’organisation ou disposer du rôle de gestion de recherche et de purge. Pour plus d’informations sur l’ajout d’utilisateurs à un groupe de rôles, consultez la rubrique [Attribuer des autorisations eDiscovery dans le Centre de sécurité et conformité](https://docs.microsoft.com/microsoft-365/compliance/assign-ediscovery-permissions).
-    
+
 - La procédure décrite dans cet article n’est pas prise en charge pour les boîtes aux lettres inactives. Cela est dû au fait que vous ne pouvez pas réappliquer une stratégie de conservation (ou de rétention) à une boîte aux lettres inactive après l’avoir supprimée. Lorsque vous supprimez une conservation d’une boîte aux lettres inactive, celle-ci est remplacée par une boîte aux lettres normale et supprimée définitivement de votre organisation après avoir été traitée par l’Assistant dossier géré.
-    
-- Vous ne pouvez pas effectuer cette procédure pour une boîte aux lettres qui a été affectée à une stratégie de rétention qui a été verrouillée avec un verrou de conservation. Cela est dû au fait qu’un verrouillage de conservation vous empêche de supprimer ou d’exclure la boîte aux lettres de la stratégie de rétention et de désactiver l’Assistant dossier géré sur la boîte aux lettres. Pour plus d’informations sur le verrouillage des stratégies de rétention, voir [verrouillage d’une stratégie de rétention](retention-policies.md#locking-a-retention-policy).
-    
+
+- Vous ne pouvez pas effectuer cette procédure pour une boîte aux lettres affectée à une stratégie de rétention qui a été verrouillée avec un verrou de conservation. Cela est dû au fait qu’un verrouillage de conservation vous empêche de supprimer ou d’exclure la boîte aux lettres de la stratégie de rétention et de désactiver l’Assistant dossier géré sur la boîte aux lettres. Pour plus d’informations sur le verrouillage des stratégies de rétention, voir [verrouillage d’une stratégie de rétention](retention-policies.md#locking-a-retention-policy).
+
 - Si une boîte aux lettres n’est pas placée en conservation (ou si la récupération d’élément unique n’est pas activée), vous pouvez supprimer les éléments du dossier éléments récupérables. Pour plus d’informations sur la procédure à suivre, consultez la rubrique [Rechercher et supprimer des messages électroniques dans votre organisation](https://docs.microsoft.com/microsoft-365/compliance/search-for-and-delete-messages-in-your-organization).
   
 ## <a name="step-1-collect-information-about-the-mailbox"></a>Étape 1 : collecter des informations sur la boîte aux lettres
 
 Cette première étape consiste à collecter les propriétés sélectionnées à partir de la boîte aux lettres cible qui affecteront cette procédure. N’oubliez pas de noter ces paramètres ou de les enregistrer dans un fichier texte, car vous modifierez certaines de ces propriétés, puis revenir aux valeurs d’origine à l’étape 6, après avoir supprimé des éléments du dossier éléments récupérables. Voici une liste des propriétés de boîte aux lettres que vous devez collecter.
   
--  *SingleItemRecoveryEnabled* et *RetainDeletedItemsFor* ; Si nécessaire, vous allez désactiver la récupération simple et augmenter la période de rétention des éléments supprimés à l’étape 3. 
-    
--  *LitigationHoldEnabled* et *InPlaceHolds* ; vous devez identifier toutes les suspensions placées sur la boîte aux lettres pour pouvoir les supprimer temporairement à l’étape 3. Consultez la section [plus d’informations](#more-information) pour obtenir des conseils sur la façon d’identifier la conservation de type qui peut être placée sur une boîte aux lettres. 
-    
+- *SingleItemRecoveryEnabled* et *RetainDeletedItemsFor*. Si nécessaire, vous allez désactiver la récupération simple et augmenter la période de rétention des éléments supprimés à l’étape 3. 
+
+- *LitigationHoldEnabled* et *InPlaceHolds*. Vous devez identifier toutes les suspensions placées sur la boîte aux lettres pour pouvoir les supprimer temporairement à l’étape 3. Consultez la section [plus d’informations](#more-information) pour obtenir des conseils sur la façon d’identifier la conservation de type qui peut être placée sur une boîte aux lettres. 
+
 En outre, vous devez obtenir les paramètres d’accès au client de boîte aux lettres afin de les désactiver temporairement afin que le propriétaire (ou les autres utilisateurs) ne puissent pas accéder à la boîte aux lettres au cours de cette procédure. Enfin, vous pouvez obtenir la taille et le nombre d’éléments actuels dans le dossier éléments récupérables. Une fois que vous avez supprimé des éléments dans le dossier éléments récupérables à l’étape 5, vous utiliserez ces informations pour vérifier que les éléments ont été supprimés.
   
 1. [Connectez-vous à Exchange Online PowerShell](https://go.microsoft.com/fwlink/?linkid=396554). Veillez à utiliser un nom d’utilisateur et un mot de passe pour un compte administrateur auquel des rôles de gestion appropriés ont été attribués dans Exchange Online. 
@@ -225,9 +225,9 @@ Une fois que vous avez identifié qu’une boîte aux lettres est en attente, ca
 
 Pour en savoir plus sur les étiquettes, consultez l’article [Vue d’ensemble des étiquettes](labels.md).
 
- ### <a name="ediscovery-case-holds"></a>conservations de cas eDiscovery
+ ### <a name="ediscovery-holds"></a>conservations eDiscovery
   
-Exécutez les commandes suivantes dans [Security & Compliance Center PowerShell](https://go.microsoft.com/fwlink/?linkid=627084) pour identifier la conservation associée à un cas eDiscovery qui est appliqué à la boîte aux lettres. Utilisez le GUID (sans le `UniH` préfixe) pour le blocage eDiscovery que vous avez identifié à l’étape 1. La deuxième commande affiche le nom du cas eDiscovery auquel la conservation est associée ; la troisième commande affiche le nom de la suspension. 
+Exécutez les commandes suivantes dans [Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell) pour identifier la conservation associée à un cas eDiscovery (appelé *conservations eDiscovery*) qui est appliquée à la boîte aux lettres. Utilisez le GUID (sans le `UniH` préfixe) pour le blocage eDiscovery que vous avez identifié à l’étape 1. La deuxième commande affiche le nom du cas eDiscovery auquel la conservation est associée ; la troisième commande affiche le nom de la suspension. 
   
 ```powershell
 $CaseHold = Get-CaseHoldPolicy <hold GUID without prefix>
@@ -241,7 +241,7 @@ Get-ComplianceCase $CaseHold.CaseId | FL Name
 $CaseHold.Name
 ```
 
-Une fois que vous avez identifié le nom du cas eDiscovery et le blocage, accédez à la page **découverte** électronique **eDiscovery** \> dans le centre de conformité, ouvrez le cas, puis supprimez la boîte aux lettres de la suspension. Pour plus d’informations, consultez la rubrique [cas eDiscovery](ediscovery-cases.md).
+Une fois que vous avez identifié le nom du cas eDiscovery et le blocage, accédez à la page **découverte** électronique **eDiscovery** \> dans le centre de conformité, ouvrez le cas, puis supprimez la boîte aux lettres de la suspension. Pour plus d’informations sur l’identification des conservations eDiscovery, consultez la section « conservations eDiscovery » dans [How to identifier le type de blocage placé sur une boîte aux lettres Exchange Online](identify-a-hold-on-an-exchange-online-mailbox.md#ediscovery-holds).
   
 ## <a name="step-4-remove-the-delay-hold-from-the-mailbox"></a>Étape 4 : supprimer le délai de conservation de la boîte aux lettres
 
