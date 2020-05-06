@@ -1,7 +1,7 @@
 ---
 title: Délégué à la protection des données de Microsoft
-description: Informations relatives au délégué à la protection des données de Microsoft de l’Union européenne concernant le RGPD
-keywords: Microsoft 365, Microsoft 365 Éducation, documentation Microsoft 365, RGPD
+description: Découvrez le poste et les qualifications du délégué à la protection des données de l’Union européenne (DPO) de Microsoft concernant le RGPD.
+keywords: Microsoft 365, Microsoft 365 Éducation, documentation Microsoft 365, RGPD
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -15,16 +15,17 @@ ms.collection:
 - GDPR
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: 8e517db11806085339f6f431c9b942b468a211ed
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: b09458bfba65a196ff9be4d9bfd7f3fbfda25fda
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42558064"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44036092"
 ---
 # <a name="microsofts-data-protection-officer"></a>Délégué à la protection des données de Microsoft
 
-## <a name="overview"></a>Vue d'ensemble
+## <a name="overview"></a>Vue d’ensemble
 
 Microsoft a désigné un délégué à la protection des données de l’Union européenne comme conseiller indépendant pour les groupes commerciaux et d’ingénierie de Microsoft. Ce délégué est chargé de s’assurer que l’intégralité du traitement proposé des données personnelles répond aux exigences légales de l’UE et aux normes d’entreprise de Microsoft. Le rôle a été conçu pour répondre aux critères du RGPD définis dans les articles 37 à 39.
 
@@ -38,7 +39,7 @@ Le délégué à la protection des données est informé, correctement et dans u
 
 ## <a name="position-of-the-data-protection-officer"></a>Poste de délégué à la protection des données
 
-Le délégué à la protection des données de l’Union européenne relève directement du directeur de confidentialité de Microsoft, un cadre supérieur au sein du département des affaires juridiques de la société. Le délégué à la protection des données peut exécuter en toute autonomie ses fonctions de manière indépendante et juste. Par l’intermédiaire du directeur de confidentialité de l’organisation, le délégué à la protection des données a accès à des formations et à des ressources de réponse client nécessaires pour exercer ses fonctions. Le délégué à la protection des données est soumis à des clauses de confidentialité concernant ses tâches faisant l’objet d’un accord de non-divulgation.  
+Le délégué à la protection des données de l’Union européenne rend compte directement au directeur de confidentialité de Microsoft, un cadre supérieur au sein du département des affaires juridiques de la société. Le délégué à la protection des données peut exécuter en toute autonomie ses fonctions de manière indépendante et juste. Par l’intermédiaire du directeur de confidentialité de l’organisation, le délégué à la protection des données a accès à des formations et à des ressources de réponse client nécessaires pour exercer ses fonctions. Le délégué à la protection des données est soumis à des clauses de confidentialité concernant ses tâches faisant l’objet d’un accord de non-divulgation.  
 
 ## <a name="contact"></a>Contact
 

@@ -15,13 +15,15 @@ search.appverid:
 ms.assetid: f9d4b5b6-8f4c-44df-9b06-2f9b3058ca20
 ms.collection:
 - M365-security-compliance
-description: Ces articles aident les expéditeurs externes à améliorer leur réputation et à augmenter leur capacité à remettre des e-mails à des utilisateurs dans Office 365. Ils fournissent également des informations sur la façon dont vous pouvez signaler des tentatives de courrier indésirable et de hameçonnage même si vous n’êtes pas un utilisateur de Microsoft 365.
-ms.openlocfilehash: c5c84d154b25f29b94635e6506ed54158efc672f
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom:
+- seo-marvel-apr2020
+description: Apprenez en tant qu’expéditeur externe, comment pouvez-vous augmenter la capacité de remise du courrier électronique aux utilisateurs dans Microsoft 365. Découvrez également comment signaler les tentatives de courrier indésirable & les tentatives de hameçonnage en tant qu’utilisateur externe.
+ms.openlocfilehash: c1086088a92240be4bb7bbbd52077cecb1c54476
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43638415"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035383"
 ---
 # <a name="sending-mail-to-microsoft-365"></a>Envoi de messages électroniques à Microsoft 365
 

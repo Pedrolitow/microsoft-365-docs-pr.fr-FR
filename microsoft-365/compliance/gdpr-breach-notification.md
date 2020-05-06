@@ -1,7 +1,7 @@
 ---
 title: Notification de violation
-description: Protection de Microsoft vis-à-vis des violations de données personnelles, et réponse et notification de Microsoft en cas de violation.
-keywords: Microsoft 365, Microsoft 365 Éducation, documentation Microsoft 365, RGPD
+description: Découvrez comment les services Microsoft assurent une protection contre les violations de données personnelles, et comment Microsoft réagit et envoie des notifications en cas de violation.
+keywords: Microsoft 365, Microsoft 365 Éducation, documentation Microsoft 365, RGPD
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -14,13 +14,15 @@ audience: itpro
 ms.collection:
 - GDPR
 - M365-security-compliance
+ms.custom:
+- seo-marvel-mar2020
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: 4cf6bb62034708b6ba21fb060949de6f1ac19066
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+ms.openlocfilehash: 988e5e26f3aa983dec481677fe8d9a3f8d331181
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42558084"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44036102"
 ---
 # <a name="gdpr-breach-notification"></a>Notification de violation RGPD
 

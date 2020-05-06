@@ -1,6 +1,6 @@
 ---
 title: RGPD pour Project Server
-description: Découvrez comment satisfaire aux exigences du RGPD dans l’environnement Project Server local.
+description: Découvrez comment répondre aux exigences en matière de Règlement général sur la protection des données (RGPD) dans un serveurs Project local.
 f1.keywords:
 - NOCSH
 ms.author: mikeplum
@@ -11,12 +11,13 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Priority
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: a9fff9f085fd42f28801a82c3f83d6bdd1f74ff6
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 3a7eb291d0da72adf171594aac307ec0ad91829d
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596411"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44036237"
 ---
 # <a name="gdpr-for-project-server"></a>RGPD pour Project Server
 

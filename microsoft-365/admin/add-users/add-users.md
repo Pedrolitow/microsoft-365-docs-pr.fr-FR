@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: 1970f7d6-03b5-442f-b385-5880b9c256ec
 description: Découvrez comment ajouter des utilisateurs à Microsoft 365, un simultanément ou plusieurs utilisateurs à la fois à partir d’un fichier CSV.
-ms.openlocfilehash: 78e5cf2c3c0148a91d48355881c3aec331213fd5
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 6d7a9d97d4cca25bac6579ea4427136351110658
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43618859"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44049470"
 ---
 # <a name="add-users-individually-or-in-bulk"></a>Ajouter des utilisateurs individuellement ou en bloc
 
@@ -118,7 +118,7 @@ Les membres de votre équipe doivent disposer d’un compte d’utilisateur pour
 Après l'ajout d'un utilisateur, vous recevrez un courrier de l'équipe Microsoft Online Services. Le courrier électronique contiendra le nom d’utilisateur et le mot de passe de la personne afin de pouvoir se connecter à Microsoft 365. Vous devez indiquer à votre nouvel utilisateur les informations de connexion de Microsoft 365. Nous vous conseillons d'utiliser le processus normal pour communiquer les nouveaux mots de passe.
 
 > [!NOTE]
->Si vous créez des utilisateurs en migrant des boîtes aux lettres, vous devrez activer les comptes d’utilisateur en affectant des licences. Si vous n’attribuez pas de licence à un utilisateur, sa boîte aux lettres est désactivée après une période de grâce de 30 jours. Découvrez comment [attribuer des licences à des utilisateurs](https://support.office.com/article/997596b5-4173-4627-b915-36abac6786dc) à l’aide du centre d’administration Microsoft 365.
+>Si vous créez des utilisateurs en migrant des boîtes aux lettres, vous devrez activer les comptes d’utilisateur en affectant des licences. Si vous n’attribuez pas de licence à un utilisateur, sa boîte aux lettres est désactivée après une période de grâce de 30 jours. Découvrez comment [attribuer des licences à des utilisateurs](https://docs.microsoft.com/microsoft-365/admin/add-users/add-users) à l’aide du centre d’administration Microsoft 365.
 
 ### <a name="video-add-and-manage-users-in-the-admin-center"></a>Vidéo : ajouter et gérer des utilisateurs dans le centre d’administration
 

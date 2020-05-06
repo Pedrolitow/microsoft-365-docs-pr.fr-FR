@@ -16,13 +16,14 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 - Strat_O365_Enterprise
-description: 'Résumé : stratégie de chiffrement des messages Office 365 pour les types d’informations sensibles.'
-ms.openlocfilehash: a36ab68eb649c84a46fa96de8ee400632c5c1d26
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: Découvrez comment créer une stratégie de type d’informations sensibles pour votre organisation à l’aide du chiffrement de messages Office 365.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 1a6baf20d755ed30ce962d7cc6b03f6c9734e4a4
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43626872"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44031404"
 ---
 # <a name="create-a-sensitive-information-type-policy-for-your-organization-using-message-encryption"></a>Créer une stratégie de type d’informations sensibles pour votre organisation à l’aide du chiffrement de messages
 

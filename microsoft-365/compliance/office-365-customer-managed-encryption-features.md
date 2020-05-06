@@ -12,13 +12,15 @@ localization_priority: None
 search.appverid:
 - MET150
 ms.collection: Strat_O365_Enterprise
-description: 'Résumé : comprendre la résilience des données dans Microsoft 365.'
-ms.openlocfilehash: 365cde7137247e20bb4fd2b57039057398deafd5
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom:
+- seo-marvel-mar2020
+description: Dans cet article, vous découvrirez les technologies de chiffrement que vous pouvez gérer et configurer dans Microsoft 365.
+ms.openlocfilehash: 3c7050ba0417473b4b387937336aae02c1eba778
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637340"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44033612"
 ---
 # <a name="customer-managed-encryption-features"></a>Fonctionnalités de chiffrement gérées par le client
 
@@ -64,8 +66,8 @@ Si vous souhaitez garantir la communication sécurisée avec un partenaire, vous
 
 Exchange Online Protection (EOP) et Exchange Online prennent en charge la validation entrante des messages DKIM (Domain Keys Identified Mail). Il s'agit d'une méthode de validation des messages envoyés depuis le domaine dont ils indiquent provenir et qui n'ont pas été usurpés par un autre utilisateur. Il lie un message électronique à l’organisation responsable de son envoi, et fait partie d’un plus grand paradigme de chiffrement du courrier électronique. Pour plus d’informations sur les trois parties de ce paradigme, voir :
 
-- [Configurer SPF pour éviter l’usurpation](https://docs.microsoft.com/office365/SecurityCompliance/set-up-spf-in-office-365-to-help-prevent-spoofing)
+- [Configurer SPF pour empêcher l’usurpation](https://docs.microsoft.com/office365/SecurityCompliance/set-up-spf-in-office-365-to-help-prevent-spoofing)
 
-- [Utilisation de DKIM pour valider les messages électroniques sortants envoyés à partir de votre domaine personnalisé](https://docs.microsoft.com/office365/SecurityCompliance/use-dkim-to-validate-outbound-email)
+- [Utilisation de DKIM pour valider les messages sortants envoyés à partir de votre domaine personnalisé](https://docs.microsoft.com/office365/SecurityCompliance/use-dkim-to-validate-outbound-email)
 
 - [Utiliser DMARC pour valider les messages électroniques](https://docs.microsoft.com/office365/SecurityCompliance/use-dmarc-to-validate-email)

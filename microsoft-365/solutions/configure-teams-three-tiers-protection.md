@@ -1,0 +1,126 @@
+---
+title: Configurer Teams avec trois niveaux de protection
+f1.keywords: NOCSH
+ms.author: mikeplum
+author: MikePlumleyMSFT
+manager: pamgreen
+audience: ITPro
+ms.topic: conceptual
+ms.service: O365-seccomp
+localization_priority: Priority
+search.appverid:
+- MET150
+ms.collection:
+- Ent_O365
+- Strat_O365_Enterprise
+- M365-security-compliance
+ms.custom:
+- Ent_Architecture
+ms.assetid: 1d51bd87-17bf-457c-b698-61821de3afa0
+description: Recommandations de configuration pour la protection des fichiers dans Microsoft Teams.
+ms.openlocfilehash: ae15956579c87241096c24347878f0644d0c6929
+ms.sourcegitcommit: 101084f9c81616342d78493232d8f13f5ffa4ddf
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 05/01/2020
+ms.locfileid: "44002789"
+---
+# <a name="configure-teams-with-three-tiers-of-protection"></a>Configurer Teams avec trois niveaux de protection
+
+Les articles de cette série fournissent des recommandations pour la configuration de Microsoft Teams et de leur sites associés SharePoint pour la protection des fichiers qui équilibre la sécurité et la simplicité de la collaboration.
+
+Cet article définit quatre configurations différentes, en commençant par une équipe avec les stratégies de partage les plus ouvertes. Chaque configuration supplémentaire représente une progression significative de la protection, tandis que la possibilité d’accéder et de collaborer sur des fichiers stockés dans Teams est réduite à l’ensemble approprié des membres de l’équipe. 
+
+Les configurations décrites dans cet article respectent les recommandations de Microsoft quant aux trois niveaux de protection des données, des identités et des appareils :
+
+- Protection Base de référence
+
+- protection sensible
+
+- Protection hautement sensible
+
+Pour plus d’informations sur ces niveaux et les fonctionnalités recommandées pour chacun d’eux, consultez les ressources suivantes.
+
+- [Protection des appareils et de l’identité pour Office 365](https://docs.microsoft.com/office365/enterprise/microsoft-cloud-it-architecture-resources#identity-and-device-protection-for-office-365)
+
+- [Solutions de protection des fichiers dans Office 365](https://docs.microsoft.com/office365/enterprise/microsoft-cloud-it-architecture-resources#file-protection-solutions-in-office-365)
+
+## <a name="three-tiers-at-a-glance"></a>Trois niveaux en un coup d’œil
+
+Le tableau suivant récapitule les configurations pour chaque niveau. Utilisez ces recommandations comme point de départ et ajustez les configurations pour répondre aux besoins de votre organisation. Il est possible que vous n’ayez pas besoin de chaque niveau.
+
+||**Base de référence (public)**|**Base de référence (privé)**|**Sensible**|**Hautement sensible**|
+|:-----|:-----|:-----|:-----|:-----|
+|Équipe privé ou publique|Public|Private|Private|Private|
+|Qui a accès ?|Tous les membres de l’organisation, y compris les utilisateurs B2B.|Uniquement les membres de l’équipe. D’autres personnes peuvent demander l’accès au site associé.|Uniquement les membres de l’équipe.|Uniquement les membres de l’équipe.|
+|Canaux privés|Les propriétaires et les membres peuvent créer des canaux privés|Les propriétaires et les membres peuvent créer des canaux privés|Seuls les propriétaires peuvent créer des canaux privés.|Seuls les propriétaires peuvent créer des canaux privés.|
+|Accès invité au niveau du site|**Nouveaux invités et invités existants** (par défaut).|**Nouveaux invités et invités existants** (par défaut).|**Invités nouveaux et existants** ou **Uniquement les membres de votre organisation** en fonction des besoins de votre équipe.|**Invités nouveaux et existants** ou **Uniquement les membres de votre organisation** en fonction des besoins de votre équipe.|
+|Paramètres de partage de site|**Sélectionnez les propriétaires et membres du site, et les personnes disposant des autorisations de modification peuvent partager des fichiers et des dossiers, mais seuls les propriétaires de site peuvent partager le site**.|**Sélectionnez les propriétaires et membres du site, et les personnes disposant des autorisations de modification peuvent partager des fichiers et des dossiers, mais seuls les propriétaires de site peuvent partager le site**.|**Sélectionnez les propriétaires et membres du site, et les personnes disposant des autorisations de modification peuvent partager des fichiers et des dossiers, mais seuls les propriétaires de site peuvent partager le site**.|**Seuls les propriétaires du site peuvent partager des fichiers, des dossiers et le site**.<br>Demandes d’accès **Désactivées**.|
+|Accès à un appareil non géré au niveau du site|**Accès complet à partir des applications de bureau, des applications mobiles et du web** (par défaut).|**Accès complet à partir des applications de bureau, des applications mobiles et du web** (par défaut).|**Autoriser un accès limité, web uniquement**.|**Bloquer l’accès**.|
+|Type de lien de partage par défaut|**Uniquement les personnes de votre organisation**|**Uniquement les personnes de votre organisation**|**Personnes spécifiques**|**Utilisateurs ayant un accès existant**|
+|Étiquettes de confidentialité|Aucun|Aucun|Étiquette de confidentialité permet de classifier l’équipe et de contrôler l’accès des appareils non gérés.|Étiquette de confidentialité permet de classifier l’équipe et de contrôler l’accès des appareils non gérés. Une étiquette peut également être utilisée sur des fichiers pour chiffrer des fichiers.|
+
+Une variante de l’option très sensible, [Équipes avec isolement de sécurité](secure-teams-security-isolation.md) utilise une étiquette de confidentialité unique pour une équipe, ce qui renforce la sécurité. Vous pouvez utiliser cette étiquette pour chiffrer des fichiers. Seuls les membres de cette équipe pourront les lire.
+
+La protection Base de référence inclut les équipes publiques et privées. Les équipes publiques peuvent être découvertes et sont accessibles par toute personne de l’organisation. Les équipes privées peuvent être détectées et sont accessibles seulement par les membres de l’équipe. Ces deux configurations limitent le partage du site SharePoint associé aux propriétaires d’équipes afin d’aider à la gestion des autorisations.
+
+Les équipes pour une protection sensible et hautement sensible sont des équipes privées dans lesquelles le partage et la demande d’accès pour le site associé sont limités et les étiquettes de confidentialité sont utilisées pour créer des stratégies relatives au partage invité, à l’accès aux appareils et au chiffrement de contenu.
+
+## <a name="sensitivity-labels"></a>Étiquettes de confidentialité
+
+Les niveaux sensitives et hautement sensitives utilisent des étiquettes de confidentialité pour renforcer la sécurisation de l’équipe et de ses fichiers. Pour implémenter ces niveaux, vous devez activer [Étiquettes de confidentialité pour protéger le contenu dans Microsoft Teams, les groupes Office 365 et les sites SharePoint](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites).
+
+Bien que le niveau de ligne de base ne nécessite aucune étiquette de confidentialité, vous pouvez créer une étiquette « général » et exiger que toutes les équipes soient étiquetées. Cela permettra de s'assurer que les utilisateurs font un choix conscient en matière de sensibilité lorsqu'ils créent une équipe. Si vous prévoyez de déployer les niveaux sensibles ou hautement sensibles, nous vous recommandons de créer une étiquette « général » que vous pouvez utiliser pour les équipes de référence et pour les fichiers qui ne sont pas sensibles.
+
+Si vous êtes novice dans l'utilisation des étiquettes de confidentialité, nous vous recommandons de lire l’article [Prise en main des étiquettes de confidentialité](https://docs.microsoft.com/microsoft-365/compliance/get-started-with-sensitivity-labels) pour commencer. 
+
+Si vous avez déjà déployé des étiquettes de confidentialité au sein de votre organisation, réfléchissez à la façon dont les étiquettes utilisées dans les niveaux sensibles et hautement sensibles s’adaptent à votre stratégie d’étiquette globale. 
+
+## <a name="sharing-the-sharepoint-site"></a>Partage du site SharePoint
+
+Chaque équipe a un site SharePoint associé dans lequel les documents sont stockés. (Il s’agit de l’onglet **Fichiers** dans un canal d’équipe). Le site SharePoint conserve sa propre gestion des autorisations, mais il est lié aux autorisations d’équipe. Les propriétaires d’équipe sont inclus comme propriétaires de site et les membres d’équipe sont inclus en tant que membres du site sur le site associé.
+
+Les autorisations obtenues permettent :
+
+- Aux propriétaires d’équipe de gérer le site et de disposer d’un contrôle total sur son contenu.
+- Aux membres d’une équipe de créer et modifier des fichiers sur le site. 
+
+Par défaut, les propriétaires et les membres de l'équipe peuvent partager le site lui-même avec les personnes extérieures à l’équipe, sans les ajouter réellement à l’équipe. Nous vous recommandons de le faire, car cela complique la gestion des utilisateurs et peut entraîner des personnes qui ne sont pas des membres de l’équipe ayant accès à des fichiers d’équipe qui ne sont pas en mesure de les regrouper. Pour éviter cela, à partir du niveau de la ligne de base de la protection, nous recommandons aux seuls propriétaires de partager le site directement.
+
+Les équipes n’ont pas d’option d’autorisation en lecture seule, le site SharePoint. Si vous avez des participants à des groupes de partenaires qui doivent pouvoir afficher les fichiers d’équipe, mais pas les modifier, songez à les ajouter directement au site SharePoint avec des autorisations de lecture.
+
+## <a name="sharing-files-and-folders"></a>Partager des fichiers et des dossiers
+
+Par défaut, les propriétaires et les membres de l’équipe peuvent partager des fichiers et des dossiers avec des personnes externes à l’équipe. Cela peut inclure des personnes extérieures à votre organisation, si vous avez autorisé le partage d’invités. Dans les trois niveaux, nous mettons à jour le type de lien de partage par défaut afin d'éviter les surpartages accidentels. Dans le niveau hautement sensible, nous limitons ce partage uniquement aux propriétaires d’équipe.
+
+## <a name="guest-sharing"></a>Partage d’invités
+
+Si vous avez besoin de collaborer avec des personnes extérieures à votre organisation, nous vous recommandons de configurer [Intégration de SharePoint et OneDrive avec Azure AD B2B](https://docs.microsoft.com/sharepoint/sharepoint-azureb2b-integration-preview) pour optimiser le partage et l’administration.
+
+Le partage des invités est désactivé par défaut, même si le partage pour les groupes Office 365 (où les membres de l’équipe sont stockés) et SharePoint est activé. Le partage des équipes est activé dans le niveau de référence, vous pouvez le désactiver si vous le souhaitez dans les niveaux sensibles et hautement sensibles à l’aide d’une étiquette de confidentialité.
+
+L’étiquette de confidentialité affecte uniquement le partage invité pour l’équipe. Les paramètres de partage d’invités pour le site SharePoint associé sont contrôlés séparément. Nous vous recommandons d’aligner les deux paramètres pour les niveaux sensibles et hautement sensibles.
+
+Dans le niveau hautement sensible, nous configurons l’étiquette de confidentialité pour chiffrer les fichiers auxquels elle est appliquée. Si vous voulez que les invités aient accès à ces fichiers, vous devez leur attribuer des autorisations lors de la création de l’étiquette.
+
+Nous vous recommandons vivement de laisser le partage des invités activé pour le niveau de référence et pour les niveaux sensibles ou hautement sensibles si vous avez besoin de collaborer avec des personnes extérieures à votre organisation. Les fonctionnalités de partage d’invités de Microsoft 365 fournissent une expérience de partage bien plus sécurisée et régie que l’envoi de fichiers sous forme de pièces jointes dans des messages électroniques. Elle réduit également le risque d'informatique parallèle lorsque les utilisateurs utilisent des produits de consommation non réglementés pour les partager avec des collaborateurs externes légitimes.
+
+Reportez-vous aux références suivantes pour créer un environnement de partage d’invités sécurisé et productif pour votre organisation :
+
+- [Meilleures pratiques relatives au partage de fichiers et de dossiers avec des utilisateurs non authentifiés](best-practices-anonymous-sharing.md)
+- [Limiter l’exposition accidentelle de fichiers lors de partages avec des personnes extérieures à votre organisation](share-limit-accidental-exposure.md)
+- [Créer un environnement de partage sécurisé avec des invités](create-secure-guest-sharing-environment.md)
+
+## <a name="access-from-unmanaged-devices"></a>Accès à partir d’appareils enregistrés
+
+Pour les niveaux sensibles et hautement sensibles, nous limitons l’accès au contenu SharePoint avec des étiquettes de confidentialité. L’accès conditionnel Azure AD offre de nombreuses options permettant de déterminer la manière dont les utilisateurs accèdent à Microsoft 365, y compris les limitations en fonction de l’emplacement, du risque, de la conformité des appareils et d’autres facteurs. Nous vous recommandons de lire l’article [Qu’est-ce que l’accès conditionnel ?](https://docs.microsoft.com/azure/active-directory/conditional-access/overview) et d’envisager les stratégies supplémentaires qui peuvent être appropriées pour votre organisation.
+
+## <a name="next-step"></a>Étape suivante
+
+Commencez par [configurer le niveau de base de la protection](configure-teams-baseline-protection.md). Si nécessaire, vous pouvez ajouter [Protection sensible](configure-teams-sensitive-protection.md) et [Protection hautement sensible](configure-teams-highly-sensitive-protection.md) au-dessus de la ligne de base.
+
+## <a name="see-also"></a>Voir aussi
+
+[Sécurité et de la conformité dans Microsoft Teams](https://docs.microsoft.com/microsoftteams/security-compliance-overview)
+
+[Stratégies d’alerte dans le Centre de sécurité et de conformité](https://docs.microsoft.com/microsoft-365/compliance/alert-policies)

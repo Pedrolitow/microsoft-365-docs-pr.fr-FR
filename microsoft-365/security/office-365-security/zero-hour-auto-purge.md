@@ -1,5 +1,5 @@
 ---
-title: 'Purge automatique à zéro heure (ZAP) : protection rétroactive contre le courrier indésirable, les programmes malveillants et le hameçonnage.'
+title: Purge automatique (ZAP) zéro heure-fonctionnalité de protection de messagerie
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -18,17 +18,19 @@ search.appverid:
 ms.assetid: 96deb75f-64e8-4c10-b570-84c99c674e15
 ms.collection:
 - M365-security-compliance
-description: La purge automatique à zéro heure (ZAP) est une fonctionnalité de protection de la messagerie électronique dans Microsoft 365 qui détecte les courriers indésirables, les programmes malveillants ou les messages de hameçonnage qui ont déjà été remis à Exchange Online. Le mode de fonctionnement de ZAP dépend du type de contenu malveillant détecté.
-ms.openlocfilehash: f1b36f1152882f446c8f611ceafb44a085cc0a5d
-ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
+ms.custom:
+- seo-marvel-apr2020
+description: En savoir plus sur la purge automatique des heures zéro (ZAP), une fonctionnalité de protection de la messagerie électronique dans Microsoft 365 qui détecte les courriers indésirables, les programmes malveillants ou les messages de hameçonnage qui ont déjà été remis à Exchange Online.
+ms.openlocfilehash: a6f21147e7beaadb3aa6430b299dea8b248561c1
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43708450"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034925"
 ---
 # <a name="zero-hour-auto-purge-zap---protection-against-spam-and-malware-in-microsoft-365"></a>Purge automatique à zéro heure (ZAP)-protection contre le courrier indésirable et les programmes malveillants dans Microsoft 365
 
-## <a name="overview"></a>Vue d’ensemble
+## <a name="overview"></a>Vue d'ensemble
 
 La suppression automatique de zéro heure (ZAP) est une fonctionnalité de protection de la messagerie électronique dans Microsoft 365 qui détecte rétroactivement et neutralise les messages malveillants, de courrier indésirable, de courrier indésirable ou de programmes malveillants qui ont déjà été remis à des boîtes aux lettres Exchange Online.
 
