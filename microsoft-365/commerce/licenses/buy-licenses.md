@@ -25,12 +25,12 @@ search.appverid:
 - GEA150
 ms.assetid: 36081d8d-b3fa-4948-8c34-e217bba825e1
 description: Découvrez comment ajouter et supprimer des licences pour votre abonnement Microsoft 365 pour les entreprises.
-ms.openlocfilehash: ce14021b3d6efaa14c9010a82ad4b522b0b08339
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 57768a7e93b19c14c5428508268c2c1e37d700f6
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632528"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44045223"
 ---
 # <a name="manage-subscription-licenses"></a>Gérer les licences d’abonnement
 
@@ -42,9 +42,9 @@ Vous pouvez ajouter ou supprimer des licences de vos abonnements à l’aide de 
 
 ::: moniker range="o365-worldwide"
 
-1. Dans le Centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produits et services</a>.
+1. Dans le centre d’administration, accédez à la page **facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">de vos produits</a> .
 
-2. Dans la page **produits & services** , recherchez l’abonnement auquel vous voulez ajouter ou supprimer des licences, puis sélectionnez **Ajouter/supprimer des licences**.
+2. Sur la page **vos produits** , recherchez l’abonnement auquel vous voulez ajouter ou supprimer des licences, puis sélectionnez **Ajouter/supprimer des licences**.
 
     [Que faire si le lien Ajouter/Supprimer des licences n'est pas disponible ?](#what-if-i-dont-see-the-addremove-licenses-link)
 

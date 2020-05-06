@@ -1,5 +1,5 @@
 ---
-title: Soumissions de l’administrateur, soumission, problème de courrier indésirable faux négatif, soumettre un courrier indésirable, envoyer un message électronique pour analyse, courrier suspect dans Office 365, analyser un courrier électronique, demander à Microsoft d’analyser les messages hameçons, vérifier le courrier indésirable, envoyer des messages électroniques, envoyer des courriers électroniques à Microsoft, signaler des messages frauduleux à Microsoft, signaler des courriers électroniques à Microsoft, signaler des messages frauduleux à Microsoft , signaler un programme malveillant à Microsoft, courrier indésirable dans la boîte aux lettres, virus dans le courrier électronique
+title: Envois d’administrateur dans Office 365
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -14,13 +14,15 @@ search.appverid:
 - MET150
 ms.collection:
 - M365-security-compliance
+ms.custom:
+- seo-marvel-apr2020
 description: Découvrez comment envoyer des e-mails suspects, des courriers électroniques de hameçonnage suspects, du courrier indésirable, ainsi que d’autres messages, URL et fichiers potentiellement dangereux de votre entreprise à Microsoft pour analyse.
-ms.openlocfilehash: 73c33ba1218a710c33f8b2675bc65c0a7486efda
-ms.sourcegitcommit: d929fa32fc2dfb0749fa2420eddbc2251d8489dc
+ms.openlocfilehash: 79f200963655e5fb07a04b686c1dd8cc3bbd0873
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "43921506"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034199"
 ---
 # <a name="use-admin-submission-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>Utilisez la soumission de l’administrateur pour soumettre des courriers indésirables, l’hameçonnage, des URL et des fichiers à Microsoft
 
@@ -114,7 +116,7 @@ Pour modifier les critères de filtre, cliquez sur le bouton **ID de soumission*
 - **Subject/URL/nom de fichier**
 - **Soumis par**
 - **Type d’envoi**
-- **Status**
+- **État**
 
 ![Options de filtrage pour les soumissions d’administration](../../media/admin-submission-email-filter-options.png)
 

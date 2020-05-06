@@ -16,13 +16,14 @@ search.appverid:
 ms.assetid: 59a3ecaf-15ed-483b-b824-d98961d88bdd
 ms.collection:
 - M365-security-compliance
-description: Découvrez comment fonctionne l’aide à la décision dans Office 365 protection avancée contre les menaces.
-ms.openlocfilehash: 4ad3de8812e09b73018c02232e3e66e4bec9d041
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: Découvrez comment fonctionne le nouvel usurpation d’identité, notamment comment déterminer rapidement les expéditeurs qui envoient légitimement des messages électroniques non authentifiés.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 481d248b833c7910152cd39113ff32fdc1217a5a
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43630928"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44033643"
 ---
 # <a name="walkthrough---atp-spoof-intelligence-insight-in-microsoft-365"></a>Procédure pas à pas-aide à la décision d’usurpation d’identité dans Microsoft 365
 
@@ -38,11 +39,11 @@ Cette procédure pas à pas est l’une des suivantes pour le centre de conformi
 
   Vous pouvez afficher le centre d’aide à la décision à partir de plusieurs tableaux de bord dans le centre de conformité & Compliance Center. Quel que soit le tableau de bord que vous examinez, le détail fournit les mêmes détails et vous permet d’effectuer rapidement les mêmes tâches.
 
-- Des autorisations doivent vous être attribuées avant de pouvoir exécuter ces procédures. Pour utiliser la fonction d’aide à la décision, vous devez être membre des groupes de rôles gestion de l' **organisation**, administrateur de la **sécurité**ou **lecteur de sécurité** . Pour plus d’informations sur les groupes de rôles dans le centre de sécurité & conformité, consultez [la rubrique autorisations dans le centre de sécurité & conformité](permissions-in-the-security-and-compliance-center.md).
+- Des autorisations doivent vous être attribuées avant de pouvoir exécuter ces procédures. Pour utiliser la fonction d’aide à la décision, vous devez être membre des groupes de rôles gestion de l' **organisation**, administrateur de la **sécurité**ou **lecteur de sécurité** . Pour des informations supplémentaires sur les groupes de rôles dans le Centre de sécurité et conformité, voir [Autorisations dans le Centre de sécurité et conformité](permissions-in-the-security-and-compliance-center.md).
 
 - Vous activez et désactivez l’intelligence usurpée dans les stratégies anti-hameçonnage ATP. Pour plus d’informations, reportez-vous à la rubrique [configure ATP anti-phishing Policies in Microsoft 365](configure-atp-anti-phishing-policies.md).
 
-- Dans les organisations Microsoft 365 avec des boîtes aux lettres Exchange Online et dans un environnement Exchange Online Protection (EOP) autonome sans boîte aux lettres Exchange Online, vous pouvez utiliser l’intelligence des usurpations pour surveiller et gérer les expéditeurs auxquels vous envoyez des messages non authentifiés. Pour plus d’informations, consultez la rubrique [configure usurpation Intelligence in Microsoft 365](learn-about-spoof-intelligence.md).
+- Dans les organisations Microsoft 365 avec des boîtes aux lettres Exchange Online et dans un environnement Exchange Online Protection (EOP) autonome sans boîte aux lettres Exchange Online, vous pouvez utiliser l’intelligence des usurpations pour surveiller et gérer les expéditeurs auxquels vous envoyez des messages non authentifiés. Si vous souhaitez en savoir plus, consultez l’article [Configurer la veille contre l’usurpation d’identité dans Microsoft 365](learn-about-spoof-intelligence.md).
 
 ## <a name="open-the-spoof-intelligence-insight-in-the-security--compliance-center"></a>Ouvrir la vue d’aide à la décision dans le centre de sécurité & conformité
 

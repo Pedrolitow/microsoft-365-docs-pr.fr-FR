@@ -15,13 +15,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: ''
-ms.openlocfilehash: bff750f5600fc1daa9c6d87a4b42f0c9b1caa252
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: Découvrez comment créer, enregistrer et exécuter une recherche pour identifier les données pertinentes pour votre enquête, puis ajouter les résultats à vos preuves.
+ms.custom: seo-marvel-mar2020
+ms.openlocfilehash: 29a89c816c658b99b89de7f7a4e912c7b39b613c
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632909"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44036399"
 ---
 # <a name="search-for-data-in-an-investigation"></a>Rechercher des données dans une investigation
 

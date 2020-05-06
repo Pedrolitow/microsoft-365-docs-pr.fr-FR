@@ -1,5 +1,5 @@
 ---
-title: Conseils de sécurité Microsoft pour les campagnes électorales, les organisations à but non lucratif et d’autres organisations flexibles
+title: 'Conseils de sécurité Microsoft : campagnes politiques et organisations à but non lucratif'
 f1.keywords:
 - NOCSH
 ms.author: bcarter
@@ -16,15 +16,17 @@ ms.service: O365-seccomp
 localization_priority: Priority
 search.appverid:
 - MET150
-ms.custom: Strat_O365_Enterprise
+ms.custom:
+- Strat_O365_Enterprise
+- seo-marvel-apr2020
 ms.assetid: 10d1004b-42b6-4e2b-aaa2-18ddd9118f64
 description: 'Résumé : Conseils de planification et d’implémentation pour les organisations à développement rapide présentant un profil susceptible d’attirer les menaces.'
-ms.openlocfilehash: 475707f2c98ade03f3bd558d5e9ea9eb9b5c64df
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: bfec47bb3af59fe193d058830340f15564f63868
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42082529"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44036691"
 ---
 # <a name="microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-organizations"></a>Conseils de sécurité Microsoft pour les campagnes électorales, les organisations à but non lucratif et d’autres organisations flexibles
 

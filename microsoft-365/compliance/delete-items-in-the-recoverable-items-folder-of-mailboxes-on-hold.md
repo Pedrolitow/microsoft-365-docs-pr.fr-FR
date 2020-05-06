@@ -1,5 +1,5 @@
 ---
-title: Supprimer des éléments dans le dossier éléments récupérables des boîtes aux lettres en nuage en attente-aide de l’administrateur
+title: Supprimer des éléments dans le dossier éléments récupérables de la boîte aux lettres Cloud, aide de l’administrateur
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -17,12 +17,13 @@ search.appverid:
 - MET150
 ms.assetid: a85e1c87-a48e-4715-bfa9-d5275cde67b0
 description: 'Pour les administrateurs : supprimez les éléments du dossier éléments récupérables d’un utilisateur pour une boîte aux lettres Exchange Online, même si cette boîte aux lettres est placée en conservation légale. Il s’agit d’un moyen efficace de supprimer des données involontairement propagées dans Microsoft 365.'
-ms.openlocfilehash: 4cf568c06fc3b6ee886ff1823d8771a64c0286d8
-ms.sourcegitcommit: 44e685a0b193e89de5befb1e1a3740eb31931799
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 0e42249fb2ba7143c4c833193b31c72f0fb73137
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 05/05/2020
-ms.locfileid: "44022084"
+ms.locfileid: "44035888"
 ---
 # <a name="delete-items-in-the-recoverable-items-folder-of-cloud-based-mailboxes-on-hold---admin-help"></a>Supprimer des éléments dans le dossier éléments récupérables des boîtes aux lettres en nuage en attente-aide de l’administrateur
 

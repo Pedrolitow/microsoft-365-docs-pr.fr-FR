@@ -19,16 +19,16 @@ search.appverid:
 - MOE150
 ms.assetid: 787d7a75-e201-46f3-a242-f698162ff09f
 description: Découvrez comment mettre à niveau une ou plusieurs listes de distribution vers des groupes Microsoft 365 dans Outlook, et comment utiliser PowerShell pour mettre à niveau plusieurs listes de distribution simultanément.
-ms.openlocfilehash: 14eeedcc898c13c31362731699f575bc06f96878
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 3f364de1e863cef542fb8342e61f537bcd113535
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627991"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44048172"
 ---
 # <a name="upgrade-distribution-lists-to-microsoft-365-groups-in-outlook"></a>Mettre à niveau les listes de distribution vers des groupes Microsoft 365 dans Outlook
 
-Vous pouvez mettre à niveau les listes de distribution vers des groupes Microsoft 365 avec Outlook. Il s’agit d’un excellent moyen d’accorder à la distribution de votre organisation toutes les fonctionnalités des groupes Microsoft 365. [Pourquoi devriez-vous mettre à niveau vos listes de distribution vers des groupes dans Outlook ?](https://support.office.com/article/7fb3d880-593b-4909-aafa-950dd50ce188.aspx)
+Vous pouvez mettre à niveau les listes de distribution vers des groupes Microsoft 365 avec Outlook. Il s’agit d’un excellent moyen d’accorder à la distribution de votre organisation toutes les fonctionnalités des groupes Microsoft 365. [Pourquoi devriez-vous mettre à niveau vos listes de distribution vers des groupes dans Outlook ?](https://support.microsoft.com/en-us/office/why-you-should-upgrade-your-distribution-lists-to-groups-in-outlook-7fb3d880-593b-4909-aafa-950dd50ce188)
 
 Vous pouvez mettre à niveau les listes de distribution une par une ou plusieurs simultanément.
 
@@ -122,7 +122,7 @@ Get-DistributionGroup| Foreach-Object{
 
 Vous ne pouvez mettre à niveau que des listes de distribution non imbriquées gérées dans le Cloud, simples et non imbriquées. Le tableau ci-dessous répertorie les listes de distribution qui **ne peuvent pas** être mises à niveau.
 
-|**Property**|**Exclus?**|
+|**Propriété**|**Exclus?**|
 |:-----|:-----|
 |Liste de distribution gérée locale.  <br/> |Non  <br/> |
 |Listes de distribution imbriquées. La liste de distribution a des groupes enfants ou est membre d’un autre groupe.  <br/> |Non  <br/> |

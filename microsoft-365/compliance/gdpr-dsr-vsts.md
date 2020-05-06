@@ -17,12 +17,14 @@ ms.collection:
 ms.workload:
 - multiple
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: a43c2e874092de70535c0150f10870b8a071aafc
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+description: Découvrez comment utiliser les outils Microsoft pour exporter ou supprimer des données personnelles collectées pendant une session authentifiée des services Azure DevOps.
+ms.custom: seo-marvel-mar2020
+ms.openlocfilehash: 5cfe8f4b8fad19f56b56d101937f9ebacdc57f79
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42557974"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44036289"
 ---
 # <a name="azure-devops-services-data-subject-requests-for-the-gdpr-and-ccpa"></a>Demandes des personnes concernées par les données Azure DevOps Services pour le RGPD et le CCPA
 

@@ -21,12 +21,12 @@ search.appverid:
 - BEA160
 ROBOTS: NOINDEX
 description: Modifiez les abonnements manuellement en achetant un nouvel abonnement et en vous assurant que les abonnements sont répertoriés et actifs.
-ms.openlocfilehash: bcd9a129ef1597469ef9bbf93841b5db4f919f1e
-ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
+ms.openlocfilehash: fcaa3ebfd9d20fa50c9f37f3366aec9d4dd69103
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43707630"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44046191"
 ---
 # <a name="change-plans-manually"></a>Modifier les offres manuellement
 
@@ -58,14 +58,14 @@ Incluez une licence pour chaque utilisateur que vous souhaitez déplacer.
 
 ## <a name="step-3-check-your-new-subscription-and-licenses"></a>Étape 3 : vérifier votre nouvel abonnement et vos nouvelles licences
 
-1. Dans le Centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produits et services</a>.
+1. Dans le centre d’administration, accédez à la page **facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">de vos produits</a> .
 
 2. **Vérifier que les deux abonnements sont répertoriés et actifs** L’abonnement à partir duquel vous déplacez les utilisateurs et l’abonnement vers lequel vous déplacez les utilisateurs doivent être regroupés. Si le nouvel abonnement n’est pas présent lors de la vérification initiale, réessayez ultérieurement. Vérifiez que les deux abonnements sont actifs. [Le nouvel abonnement n’est pas indiqué, ou n’est pas actif](#the-new-subscription-isnt-listed-or-isnt-active).
 
 3. **Vérifier que vous disposez de suffisamment de licences pour chaque utilisateur** Chaque utilisateur doit disposer d’une licence correspondant à son abonnement. Par conséquent, si vous souhaitez déplacer dix utilisateurs vers Microsoft 365 Business Premium, vous devez vous assurer que dix licences sont disponibles.
 
 4. **Vous avez besoin de plus de licences pour le nouvel abonnement ?**
-   Accédez à la page **produits & services** et [achetez plus de licences](../licenses/buy-licenses.md).
+   Accédez à la page **vos produits** et [achetez plus de licences](../licenses/buy-licenses.md).
 
 > [Qu’en est-il des anciennes licences ?](#what-about-the-old-licenses)
 
@@ -83,7 +83,7 @@ Les licences pour l’abonnement actuel seront supprimées ultérieurement ; vo
 
 ### <a name="reassign-a-license-for-one-user"></a>Réattribuer une licence pour un utilisateur
 
-1. Dans le Centre d’administration, accédez à la page **Utilisateurs >** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utilisateurs actifs</a>.
+1. Dans le Centre d’administration, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utilisateurs actifs</a>.
 
 2. Sur la page **utilisateurs actifs** , sélectionnez l’utilisateur auquel vous souhaitez attribuer une licence.
 
@@ -91,7 +91,7 @@ Les licences pour l’abonnement actuel seront supprimées ultérieurement ; vo
 
 ### <a name="reassign-licenses-for-multiple-users-at-once"></a>Réattribuer des licences pour plusieurs utilisateurs à la fois
 
-1. Dans le Centre d’administration, accédez à la page **Utilisateurs >** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utilisateurs actifs</a>.
+1. Dans le Centre d’administration, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utilisateurs actifs</a>.
 
 2. Sélectionnez les cercles en regard des noms des utilisateurs pour lesquels vous souhaitez remplacer les licences existantes.
 

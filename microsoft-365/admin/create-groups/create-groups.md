@@ -19,19 +19,19 @@ search.appverid:
 - MOE150
 ms.assetid: 74a1ef8b-3844-4d08-9980-9f8f7a36000f
 description: Découvrez comment créer et supprimer des groupes Microsoft 365, ajouter et supprimer des membres d’un groupe, et personnaliser le fonctionnement du groupe.
-ms.openlocfilehash: d37058fa3ef3803f3a8f6099d46e1262f314e501
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: a691f2363547c5bffb4c674d61cddde0cdb0266a
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43630454"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44049214"
 ---
 # <a name="create-a-group-in-the-microsoft-365-admin-center"></a>Créer un groupe dans le centre d’administration Microsoft 365
   
 Bien que les utilisateurs puissent créer un groupe Microsoft 365 à partir d’Outlook ou d’autres applications, en tant qu’administrateur, il se peut que vous deviez créer ou supprimer des groupes, ajouter ou supprimer des membres et personnaliser leur fonctionnement. Le centre d’administration Microsoft 365 est l’endroit où vous devez effectuer cette opération. 
 
 > [!TIP]
-> Les groupes Yammer connectés à Microsoft 365 doivent être créés dans Yammer, mais ils peuvent être gérés dans le centre d’administration Microsoft 365 comme les autres groupes Microsoft 365. Pour en savoir plus, consultez la rubrique [groupes Yammer et Microsoft 365](https://support.office.com/article/d8c239dc-a48b-47ab-b85e-6b4b8191a869.aspx). 
+> Les groupes Yammer connectés à Microsoft 365 doivent être créés dans Yammer, mais ils peuvent être gérés dans le centre d’administration Microsoft 365 comme les autres groupes Microsoft 365. Pour en savoir plus, consultez la rubrique [groupes Yammer et Microsoft 365](https://docs.microsoft.com/yammer/manage-yammer-groups/yammer-and-office-365-groups). 
 
 ## <a name="create-a-microsoft-365-group"></a>Créer un groupe Microsoft 365
 
@@ -57,7 +57,7 @@ Une fois le groupe créé, vous pouvez ajouter des membres et configurer des par
 
 ::: moniker range="o365-worldwide"
 
-Les utilisateurs peuvent s' [Ajouter eux-mêmes ou demander une approbation](https://support.office.com/article/Join-a-group-in-Outlook-2e59e19c-b872-44c8-ae84-0acc4b79c45d), ou vous pouvez les ajouter maintenant.
+Les utilisateurs peuvent s' [Ajouter eux-mêmes ou demander une approbation](https://support.microsoft.com/en-us/office/join-a-group-in-outlook-2e59e19c-b872-44c8-ae84-0acc4b79c45d), ou vous pouvez les ajouter maintenant.
 
 1. Dans le centre d’administration, actualisez la page de sorte que votre nouveau groupe s’affiche, puis sélectionnez le nom du groupe auquel vous souhaitez ajouter des membres.
     
@@ -67,7 +67,7 @@ Les utilisateurs peuvent s' [Ajouter eux-mêmes ou demander une approbation](htt
     
 4. Sélectionnez les utilisateurs que vous souhaitez ajouter, puis sélectionnez **Enregistrer**.
     
-5. Sélectionnez **Fermer** trois fois. 
+5. Sélectionnez **Fermer** à trois reprises. 
     
 Le groupe apparaît dans Outlook et des membres lui sont attribués.
 
@@ -75,7 +75,7 @@ Le groupe apparaît dans Outlook et des membres lui sont attribués.
 
 ::: moniker range="o365-germany"
 
-Les utilisateurs peuvent s' [Ajouter eux-mêmes ou demander une approbation](https://support.office.com/article/Join-a-group-in-Outlook-2e59e19c-b872-44c8-ae84-0acc4b79c45d), ou vous pouvez les ajouter maintenant.
+Les utilisateurs peuvent s' [Ajouter eux-mêmes ou demander une approbation](https://support.microsoft.com/en-us/office/join-a-group-in-outlook-2e59e19c-b872-44c8-ae84-0acc4b79c45d), ou vous pouvez les ajouter maintenant.
 1. Dans le centre d' \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">administration,</a>actualisez la page de sorte que votre nouveau groupe s’affiche **, sélectionnez groupes groupes,** puis sélectionnez le groupe auquel vous souhaitez ajouter des membres.
     
 2. En regard de **membres**, sélectionnez **modifier**.
@@ -83,7 +83,7 @@ Les utilisateurs peuvent s' [Ajouter eux-mêmes ou demander une approbation](htt
     
 4. Sélectionnez les utilisateurs que vous souhaitez ajouter, puis sélectionnez **Enregistrer**.
     
-5. Sélectionnez **Fermer** trois fois. 
+5. Sélectionnez **Fermer** à trois reprises. 
     
 Le groupe apparaît dans Outlook et des membres lui sont attribués.
   
@@ -91,7 +91,7 @@ Le groupe apparaît dans Outlook et des membres lui sont attribués.
 
 ::: moniker range="o365-21vianet"
 
-Les utilisateurs peuvent s' [Ajouter eux-mêmes ou demander une approbation](https://support.office.com/article/Join-a-group-in-Outlook-2e59e19c-b872-44c8-ae84-0acc4b79c45d), ou vous pouvez les ajouter maintenant.
+Les utilisateurs peuvent s' [Ajouter eux-mêmes ou demander une approbation](https://support.microsoft.com/en-us/office/join-a-group-in-outlook-2e59e19c-b872-44c8-ae84-0acc4b79c45d), ou vous pouvez les ajouter maintenant.
 1. Dans le centre d' \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">administration,</a>actualisez la page de sorte que votre nouveau groupe s’affiche **, sélectionnez groupes groupes,** puis sélectionnez le groupe auquel vous souhaitez ajouter des membres.
     
 2. En regard de **membres**, sélectionnez **modifier**.
@@ -99,7 +99,7 @@ Les utilisateurs peuvent s' [Ajouter eux-mêmes ou demander une approbation](htt
     
 4. Sélectionnez les utilisateurs que vous souhaitez ajouter, puis sélectionnez **Enregistrer**.
     
-5. Sélectionnez **Fermer** trois fois. 
+5. Sélectionnez **Fermer** à trois reprises. 
     
 Le groupe apparaît dans Outlook et des membres lui sont attribués.
   
@@ -119,7 +119,7 @@ Après avoir créé un groupe et ajouté des membres, vous pouvez configurer vot
 
 ## <a name="related-articles"></a>Articles connexes
 
-[Gérer l’accès invité aux groupes Microsoft 365](https://support.office.com/article/7c713d74-a144-4eab-92e7-d50df526ff96.aspx)
+[Gérer l’accès invité aux groupes Microsoft 365](https://support.office.com/article/adding-guests-to-office-365-groups-bfc7a840-868f-4fd6-a390-f347bf51aff6)
 
 [Choisir le domaine à utiliser lors de la création de groupes Microsoft 365](choose-domain-to-create-groups.md)
 

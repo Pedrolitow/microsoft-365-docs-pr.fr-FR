@@ -13,14 +13,14 @@ localization_priority: Priority
 ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
-ms.custom: ''
-description: Découvrez les ressources que vous pouvez utiliser pour déployer Microsoft 365 pour entreprise dans votre organisation.
-ms.openlocfilehash: b37e7fa844a27596904e5684c5692c0193c35513
-ms.sourcegitcommit: 101084f9c81616342d78493232d8f13f5ffa4ddf
+ms.custom: seo-marvel-apr2020
+description: Découvrez les diverses ressources que vous pouvez utiliser pour déployer Microsoft 365 pour entreprise dans votre organisation.
+ms.openlocfilehash: 0e588816cb2393af05b48900821d7aae92b6853d
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "44002354"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44031425"
 ---
 # <a name="deploy-microsoft-365-for-enterprise"></a>Déployer Microsoft 365 pour entreprise
 
@@ -75,7 +75,7 @@ Commencer votre route de déploiement de bout à bout [ici](deploy-foundation-in
 
 ## <a name="take-a-test-drive"></a>Faites un test
 
-«*Ce que nous devons apprendre à faire, nous l’apprenons en le faisant.*» - Aristote
+« *Ce que nous devons apprendre à faire, nous l’apprenons en le faisant.*  » - Aristote
 
 Si vous êtes nouveau avec Microsoft 365 pour entreprise ou à un produit spécifique ou une fonctionnalité, l’une des meilleures méthodes pour comprendre le fonctionnement consiste à le faire vous-même et voir comment cela fonctionne.
 
@@ -117,7 +117,7 @@ La mise en place d’une culture numérique est une priorité majeure pour tout 
 
 En même temps, les fonctionnalités de sécurité intelligente et l’intégration des produits simplifient la gestion des besoins et réduisent le coût total de possession tout au long du cycle de vie des ressources informatiques. 
 
-Découvrez comment Core Services Engineering and Operations (anciennement Microsoft IT) a [créé un espace de travail moderne avec Microsoft 365](https://www.microsoft.com/en-us/itshowcase/microsoft-365).
+Découvrez comment Core Services Engineering and Operations (anciennement Microsoft IT) a [créé un espace de travail moderne avec Microsoft 365](https://www.microsoft.com/fr-FR/itshowcase/microsoft-365).
 
 > [!Note]
 > Cette page web n’est disponible qu’en anglais.

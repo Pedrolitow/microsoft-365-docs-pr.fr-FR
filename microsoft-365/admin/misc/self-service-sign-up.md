@@ -21,12 +21,12 @@ search.appverid:
 ms.assetid: 4f8712ff-9346-4c6c-bb63-a21ad7a62cbd
 description: Découvrez les programmes libre-service de Microsoft 365 self-service, tels que Microsoft Power Apps, Microsoft Flow et Dynamics 365 pour les finances.
 ms.custom: okr_SMB
-ms.openlocfilehash: d20609d48c71795205940546bef752c236ae3e81
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 02d318fbafb6e062f9c3d1592cd6adc7f764fd56
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627799"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44045271"
 ---
 # <a name="using-self-service-sign-up-in-your-organization"></a>Utilisation de l’authentification en libre-service dans votre organisation
 
@@ -42,7 +42,7 @@ L’exemple suivant décrit le fonctionnement de l’auto-inscription pour un é
 
 3. Nous validerons leur adresse de messagerie, puis nous pouvons commencer à utiliser Microsoft 365, Power BI ou d’autres services immédiatement.
 
-4. En tant qu’administrateur d’entreprise, vous pouvez voir qui a souscrit un abonnement en affichant la page **produits & services** dans le centre d’administration. De cette façon, vous pouvez voir quand des licences de services nouvelles ou non reconnues sont répertoriées dans votre client. Pour contrôler si les utilisateurs peuvent s’inscrire aux abonnements en libre-service, utilisez l’applet de commande PowerShell [Set-MsolCompanySettings](https://docs.microsoft.com/powershell/module/msonline/set-msolcompanysettings?view=azureadps-1.0) avec le paramètre **AllowAdHocSubscriptions** . Pour plus d’informations, voir [Comment puis-je contrôler les paramètres en libre-service ?](https://docs.microsoft.com/microsoft-365/commerce/subscriptions/self-service-purchase-faq?view=o365-worldwide)
+4. En tant qu’administrateur d’entreprise, vous pouvez voir qui a souscrit un abonnement en affichant la page **vos produits** dans le centre d’administration. De cette façon, vous pouvez voir quand des licences de services nouvelles ou non reconnues sont répertoriées dans votre client. Pour contrôler si les utilisateurs peuvent s’inscrire aux abonnements en libre-service, utilisez l’applet de commande PowerShell [Set-MsolCompanySettings](https://docs.microsoft.com/powershell/module/msonline/set-msolcompanysettings?view=azureadps-1.0) avec le paramètre **AllowAdHocSubscriptions** . Pour plus d’informations, voir [Comment puis-je contrôler les paramètres en libre-service ?](https://docs.microsoft.com/microsoft-365/commerce/subscriptions/self-service-purchase-faq?view=o365-worldwide)
 
 ## <a name="available-self-service-programs"></a>Programmes libre-service disponibles
 
@@ -64,5 +64,5 @@ Vous trouverez ci-dessous les programmes libre-service actuellement disponibles.
 |**Centre de service de licences en volume Microsoft** <br/> |Le centre de service de licences en volume Microsoft affiche les licences achetées sous entreprise, Select, Education (campus ou scolaires), Open Value, Open License et les accords de droits ISV.  <br/> |[Formation et ressources VLSC](https://www.microsoft.com/en-us/Licensing/existing-customer/vlsc-training-and-resources.aspx) <br/> |[Centre de service de licence en volume](https://www.microsoft.com/Licensing/servicecenter/default.aspx) <br/> |
 |**Minecraft éducation** <br/> |En utilisant Minecraft comme plate-forme d’apprentissage, les enseignants peuvent motiver et inspirer chaque étudiant pour y parvenir plus et s’enflammer une passion pour l’apprentissage. Participez à une communauté d’enseignants qui apprennent à utiliser Minecraft pour déverrouiller le potentiel des étudiants.  <br/> |[Minecraft éducation](https://go.microsoft.com/fwlink/p/?linkid=841480) <br/> |[Minecraft éducation](https://go.microsoft.com/fwlink/p/?linkid=841471) <br/> |
 |**Microsoft Stream** <br/> |Téléchargez et partagez des vidéos au sein de votre organisation pour améliorer la communication, la participation et l’apprentissage.  <br/> |[Expérience de &amp; la journée de connexion 0](https://go.microsoft.com/fwlink/p/?linkid=841472) <br/> |[Microsoft Stream](https://go.microsoft.com/fwlink/p/?linkid=841473) <br/> |
-|**Automate d’alimentation** <br/> |Power automate est un produit qui vous permet de configurer des flux de travail automatisés entre vos applications et services préférés pour synchroniser des fichiers, obtenir des notifications, collecter des données et bien plus encore.  <br/> |[S’inscrire et se connecter pour une mise à l’arrêt automatique](https://docs.microsoft.com/power-automate/sign-up-sign-in) <br/> |[Automate d’alimentation](https://go.microsoft.com/fwlink/p/?linkid=841465) <br/> |
+|**Power Automate** <br/> |Power automate est un produit qui vous permet de configurer des flux de travail automatisés entre vos applications et services préférés pour synchroniser des fichiers, obtenir des notifications, collecter des données et bien plus encore.  <br/> |[S’inscrire et se connecter pour une mise à l’arrêt automatique](https://docs.microsoft.com/power-automate/sign-up-sign-in) <br/> |[Power Automate](https://go.microsoft.com/fwlink/p/?linkid=841465) <br/> |
 |**Agents virtuels de puissance** <br/> |Les agents virtuels de puissance permettent aux équipes de créer facilement des robots puissants à l’aide d’une interface graphique interactive sans code sans avoir besoin de recourir à des scientifiques de données ou à des développeurs. Les agents virtuels de puissance abordent la plupart des problèmes majeurs liés au développement de robots dans le secteur d’aujourd’hui. Elle élimine le fossé entre les experts techniques et les équipes de développement qui créent les robots, ainsi que la latence longue entre les équipes qui reconnaissent un problème et mettent à jour le bot pour l’adresser.  <br/> |[Licences et informations d’accès](https://go.microsoft.com/fwlink/?linkid=2113708) <br/> |[S’inscrire aux agents virtuels de l’alimentation](https://aka.ms/TryPVA) <br/> |

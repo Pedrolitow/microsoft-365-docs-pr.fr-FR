@@ -14,12 +14,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Les utilisateurs peuvent apprendre à gérer leurs achats en libre-service.
-ms.openlocfilehash: f4be2176d970af426817e975b9942ce5e2b89a9e
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: ed84bfc215d000eaa144aaf1f6eac281fc5a0c16
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636638"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44046167"
 ---
 # <a name="manage-self-service-purchases-users"></a>Gérer les achats libre-service (utilisateurs)
 
@@ -30,11 +30,11 @@ Votre administrateur dispose d’une vue en lecture seule dans les abonnements q
 
 ## <a name="view-your-subscriptions"></a>Afficher vos abonnements
 
-Vous pouvez afficher la liste de tous les abonnements achetés en libre-service que vous avez achetés. Dans le centre d’administration, accédez à la page produits de **facturation** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">& services</a> .
+Vous pouvez afficher la liste de tous les abonnements achetés en libre-service que vous avez achetés. Dans le centre d’administration, accédez à la page **facturation** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">de vos produits</a> .
 
 ## <a name="how-to-buy-more-or-reduce-licenses"></a>Comment acheter plus ou réduire les licences
 
-1. Dans le centre d’administration, accédez à la page produits de **facturation** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">& services</a> .
+1. Dans le centre d’administration, accédez à la page **facturation** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">de vos produits</a> .
 
 2. Recherchez l’abonnement pour lequel vous souhaitez acheter plus ou réduire les licences pour.
 
@@ -74,7 +74,7 @@ Par exemple, si vous avez 100 licences et que vous devez en ajouter 5, entrez 10
 
 ## <a name="cancel-a-subscription"></a>Annuler un abonnement
 
-1. Dans le centre d’administration, accédez à la page produits de **facturation** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">& services</a> .
+1. Dans le centre d’administration, accédez à la page **facturation** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">de vos produits</a> .
 
 2. Recherchez l’abonnement que vous souhaitez annuler.
 

@@ -23,12 +23,12 @@ search.appverid:
 ms.assetid: a25c10d6-c1e9-4299-9185-25178df9eba6
 description: Découvrez comment mettre à jour vos adresses de facturation pour Microsoft 365 pour les entreprises. Vous pouvez également mettre à jour l’adresse de messagerie utilisée pour recevoir des notifications de facturation.
 ms.custom: okr_SMB
-ms.openlocfilehash: 169dfd78ca39e91e065c3bea59242a9f205463d0
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 7edef65eb1cf45192188316b13acfd87eac5a490
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632718"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44048024"
 ---
 # <a name="change-your-billing-addresses"></a>Modifier vos adresses de facturation
 
@@ -121,7 +121,7 @@ Si vous utilisez Office 365 géré par 21Vianet en Chine, reportez-vous à [la r
 
 ::: moniker range="o365-worldwide"
 
-1. Dans le Centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produits et services</a>.
+1. Dans le centre d’administration, accédez à la page **facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">de vos produits</a> .
 
 2. Recherchez l’abonnement que vous souhaitez modifier. Dans la section **paramètres & Actions** , sélectionnez **modifier l’adresse d’utilisation du service**.
 
@@ -170,6 +170,8 @@ Par défaut, les notifications de facturation de votre organisation sont envoyé
 ## <a name="change-the-alternate-email-address-for-another-admin"></a>Modifier l'adresse de messagerie de secours pour un autre administrateur
 
 Vous pouvez également modifier l'adresse de messagerie de secours d'autres administrateurs généraux et de facturation de votre organisation.
+
+::: moniker range="o365-worldwide"
   
 1. Dans le Centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">Notifications de facturation</a>.
 

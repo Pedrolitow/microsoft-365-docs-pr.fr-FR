@@ -26,12 +26,12 @@ search.appverid:
 - GEA150
 ms.assetid: 8652f539-3123-4a8f-b9bd-6aa2f0e0372d
 description: Découvrez comment modifier le mode de paiement pour votre abonnement professionnel.
-ms.openlocfilehash: 8b2528b694dcca181d0508e54894ca50364eac20
-ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
+ms.openlocfilehash: 195bdcd580663fe2cb9789562a52208753500a79
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43708154"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44045903"
 ---
 # <a name="change-your-payment-method"></a>Changer votre mode de paiement
 
@@ -53,7 +53,7 @@ Si vous passez d’une facture à une carte de crédit ou à un compte bancaire,
 Si vous changez de carte bancaire ou de compte bancaire en facture, tout solde impayé est transféré vers votre prochaine facture.
   
 > [!NOTE]
-> Si vous payez par carte de crédit et que votre carte de crédit est refusée, vous recevez un courrier électronique qui vous indique que nous n’avons pas pu traiter le paiement. Vous pouvez mettre à jour les informations de votre carte de crédit et soumettre immédiatement le paiement à l’aide du lien **solde de règlement** de la page **produits & services** . Pour plus d’informations, consultez la rubrique [que se passe-t-il si ma carte de crédit a été refusée et mon paiement est échu ?](pay-for-your-subscription.md#what-if-my-credit-card-was-declined-and-my-payment-is-past-due) 
+> Si vous payez par carte de crédit et que votre carte de crédit est refusée, vous recevez un courrier électronique qui vous indique que nous n’avons pas pu traiter le paiement. Vous pouvez mettre à jour les informations de votre carte de crédit et soumettre immédiatement le paiement à l’aide du lien **solde de règlement** sur la page **vos produits** . Pour plus d’informations, consultez la rubrique [que se passe-t-il si ma carte de crédit a été refusée et mon paiement est échu ?](pay-for-your-subscription.md#what-if-my-credit-card-was-declined-and-my-payment-is-past-due) 
   
 ::: moniker-end
 
@@ -86,9 +86,9 @@ Si vous passez d’une *carte de crédit ou d’un compte bancaire à une factur
 > [!TIP]
 > Les étapes suivantes s'appliquent uniquement aux abonnements individuels. Si vous avez plusieurs abonnements au sein de votre organisation, procédez comme suit pour chaque abonnement à modifier.
   
-Lorsque vous passez d’un paiement par une facture à un paiement avec une carte bancaire ou un compte bancaire, nous créons automatiquement un nouvel abonnement pour vous, déplacez vos utilisateurs vers le nouvel abonnement, puis désactivez votre ancien abonnement. Ne vous inquiétez pas, vos utilisateurs ne verront pas une interruption de service et toutes leurs informations seront disponibles via le nouvel abonnement.
+Lorsque vous passez d’un paiement par facture à un paiement avec un carte bancaire ou compte bancaire, nous créons automatiquement un abonnement pour vous, déplaçons vos utilisateurs vers le nouvel abonnement, puis désactivons l’ancien abonnement. Ne vous inquiétez pas, vos utilisateurs ne sont pas affectés par une quelconque interruption de service et toutes leurs informations sont disponibles dans le nouvel abonnement.
 
-1. Dans le centre d’administration, accédez à la page produits de **facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">& services</a> .
+1. Dans le centre d’administration, accédez à la page **facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">de vos produits</a> .
 
 2. Si vous êtes en mode **tableau** , sélectionnez **cartes**.
 
@@ -139,20 +139,20 @@ Lorsque vous revenez à la page **Abonnements**, l'ancien abonnement est marqué
 
 ## <a name="change-from-credit-card-or-bank-account-to-invoice"></a>Passer du mode de paiement par carte bancaire ou compte bancaire au mode de paiement par facture
 
-Vous pouvez modifier le paiement par facture uniquement si votre commande est au-dessus d’une certaine quantité. Si vous ne répondez pas à la condition requise, le message « la quantité de votre commande n’est pas suffisante pour être facturé avec le câble de vérification » s’affiche.
+Vous pouvez changer de mode de paiement par facture uniquement si votre commande ne dépasse pas une certaine quantité. Si vous ne remplissez pas cette condition, le message « Votre commande n'est pas assez importante pour être facturée avec un chèque » s'affiche.
 
-Si la quantité de votre commande est trop élevée, une vérification de solvabilité peut être nécessaire. Si c’est le cas, le message «pas autorisé à passer à la facture s’affiche. Votre commande nécessite une vérification de solvabilité. " Dans ce cas, vous devez modifier le salaire manuellement. Procédez comme suit pour terminer la modification manuelle.
+Si la quantité commandée est trop élevée, une vérification de solvabilité peut être nécessaire. Si c’est le cas, le message « Vous n’êtes pas éligible à la modification de la facture. Votre commande nécessite une vérification de solvabilité» s’affiche. Dans ce cas, vous pouvez modifier le paiement par facture manuellement. Procédez comme suit pour terminer la modification manuelle.
 
-1. Accédez à <a href="https://Office365.com" target="_blank">office365.com</a> et achetez le même abonnement que celui dont vous disposez actuellement. Lors de l’extraction, choisissez l’option de paiement par facture.
+1. Accédez à <a href="https://Microsoft365.com" target="_blank">Microsoft365.com</a> et achetez le même abonnement que celui dont vous disposez actuellement. Lors de l’extraction, choisissez l’option de paiement par facture.
 
     > [!IMPORTANT]
-    > Vous ne pouvez pas utiliser la page **produits & services** dans le centre d’administration pour acheter l’abonnement. Vous devez utiliser <a href="https://Office365.com" target="_blank">office365.com</a>.
+    > Vous ne pouvez pas utiliser la page **vos produits** dans le centre d’administration pour acheter l’abonnement. Vous devez utiliser <a href="https://Microsoft365.com" target="_blank">Microsoft365.com</a>.
 
 2. Une fois l’achat terminé, annulez l’abonnement d’origine. Vos utilisateurs sont automatiquement déplacés vers le nouvel abonnement.
 
 Si aucune vérification de solvabilité n’est requise, procédez comme suit pour modifier le paiement par facture.
 
-1. Dans le centre d’administration, accédez à la page produits de **facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">& services</a> .
+1. Dans le centre d’administration, accédez à la page **facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">de vos produits</a> .
 
 2. Si vous êtes en mode **tableau** , sélectionnez **cartes**.
 
@@ -164,7 +164,7 @@ Si aucune vérification de solvabilité n’est requise, procédez comme suit po
 
 6. Entrez votre nom, votre adresse et votre numéro de téléphone. Vous pouvez également ajouter un numéro de bon de commande à afficher sur la facture.
   
-7. Lorsque vous avez terminé, sélectionnez **Enregistrer**.
+7. Quand vous avez terminé, sélectionnez **Enregistrer**.
 
 8. Vérifiez que le mode de paiement sélectionné est correct, puis sélectionnez **Enregistrer**.
 
@@ -198,7 +198,7 @@ Si aucune vérification de solvabilité n’est requise, procédez comme suit po
 
 Procédez comme suit pour vérifier le mode de paiement associé à un abonnement.
 
-1. Dans le centre d’administration, accédez à la page produits de **facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">& services</a> .
+1. Dans le centre d’administration, accédez à la page **facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">de vos produits</a> .
 
 2. Recherchez l’abonnement que vous souhaitez vérifier. Le mode de paiement configuré pour l’abonnement apparaît dans la section **facturation** .
 

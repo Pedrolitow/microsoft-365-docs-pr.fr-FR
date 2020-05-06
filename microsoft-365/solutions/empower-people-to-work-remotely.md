@@ -17,16 +17,18 @@ ms.collection:
 ms.custom:
 - M365solutions
 description: Configurez l’infrastructure de service et de sécurité qui permet à vos employés de travailler à distance de n’importe où et à tout moment.
-ms.openlocfilehash: da83dc788f31edb56a155f29dd6f14529840f8d5
-ms.sourcegitcommit: 101084f9c81616342d78493232d8f13f5ffa4ddf
+ms.openlocfilehash: af5246971de87866c41eb90ec8524e567cfd48f1
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "44003794"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44049533"
 ---
 # <a name="empower-remote-workers-with-microsoft-365"></a>Confier des responsabilités aux travailleurs à distance avec Microsoft 365
 
 Suite à la crise de COVID-19, votre entreprise devra sans doute autoriser vos employés à bénéficier d’un accès sécurisé aux informations, outils et ressources en local et sur le cloud de votre organisation depuis leur domicile. 
+
+![Mesures pour confier des responsabilités aux travailleurs à distance avec Microsoft 365](../media/empower-people-to-work-remotely/remote-workers-step-grid.png)
 
 Procédez comme suit pour sécuriser et optimiser l’accès aux serveurs, aux données et aux services cloud de votre organisation et activer la productivité maximale des employés.
 

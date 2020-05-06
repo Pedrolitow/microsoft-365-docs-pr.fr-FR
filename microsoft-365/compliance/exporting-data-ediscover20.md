@@ -15,13 +15,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: ''
-ms.openlocfilehash: 099b19df89026562201131d1e7c099785b1cb03e
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+description: Découvrez comment exporter ou télécharger du contenu à partir d’un jeu de révision pour des présentations ou des analyses externes dans un cas avancé de découverte électronique.
+ms.custom: seo-marvel-mar2020
+ms.openlocfilehash: 2aeb8b2cdfa850c3878b23205ce965794ea3be15
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42558185"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035952"
 ---
 # <a name="export-case-data-in-advanced-ediscovery"></a>Exporter des données de cas dans Advanced eDiscovery
 
@@ -29,7 +30,7 @@ Il existe trois façons d’exporter des données à partir d’un jeu de révis
 
 **Téléchargement :** Télécharger (à l’aide d’un navigateur) un petit ensemble de fichiers natifs. Il s’agit de la méthode la plus rapide pour exporter un petit groupe de données. Cette méthode conserve les noms de fichiers natifs.
 
-**Exportation :** Personnaliser les données exportées. Cela inclut l’exportation des métadonnées de fichier, des fichiers natifs, des fichiers texte et des documents biffés qui ont été enregistrés dans un fichier PDF. Une fois que les données exportées sont téléchargées vers un emplacement de stockage Azure, vous pouvez les télécharger sur un ordinateur local. Pour plus d’informations, voir : 
+**Exportation :** Personnaliser les données exportées. Cela inclut l’exportation des métadonnées de fichier, des fichiers natifs, des fichiers texte et des documents biffés qui ont été enregistrés dans un fichier PDF. Une fois que les données exportées sont téléchargées vers un emplacement de stockage Azure, vous pouvez les télécharger sur un ordinateur local. Pour plus d’informations, reportez-vous aux rubriques suivantes : 
 
    - [Exporter des documents d’un jeu à réviser](export-documents-from-review-set.md)
 

@@ -16,13 +16,15 @@ search.appverid:
 ms.assetid: 6a601501-a6a8-4559-b2e7-56b59c96a586
 ms.collection:
 - M365-security-compliance
-description: Découvrez les paramètres de blocage du courrier indésirable et les filtres qui vous permettront d’éviter le courrier indésirable dans Exchange Online et Microsoft 365. Vous recevez trop de courrier indésirable dans Microsoft 365 ? Vous pouvez personnaliser vos filtres de courrier indésirable et de blocage du courrier indésirable.
-ms.openlocfilehash: 3bb1c81af0061cc20b4c7bb2a963c0d06b7914e3
-ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
+ms.custom:
+- seo-marvel-apr2020
+description: Découvrez les paramètres de blocage du courrier indésirable et les filtres qui vous permettront d’éviter le courrier indésirable dans Exchange Online et Microsoft 365.
+ms.openlocfilehash: 96132bf66438861eb117aedd841f7912de1258cc
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43708570"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034057"
 ---
 # <a name="anti-spam-protection-in-microsoft-365"></a>Protection contre le courrier indésirable dans Microsoft 365
 
@@ -71,7 +73,7 @@ Voici quelques-unes des meilleures pratiques qui s’appliquent à l’un ou l�
 
 - **Utiliser l’authentification de messagerie**: Si vous êtes propriétaire d’un domaine de messagerie, vous pouvez utiliser DNS pour vous assurer que les messages provenant d’expéditeurs de ce domaine sont légitimes. Pour éviter le courrier indésirable et l’usurpation indésirable dans EOP, utilisez toutes les méthodes d’authentification de messagerie suivantes :
 
-  - **SPF**: l’infrastructure des stratégies des expéditeurs vérifie l’adresse IP source du message par rapport au propriétaire du domaine d’envoi. Pour une présentation rapide de SPF et pour qu’il soit configuré rapidement, reportez-vous à la rubrique [configurer SPF pour éviter l’usurpation](set-up-spf-in-office-365-to-help-prevent-spoofing.md). Pour mieux comprendre comment Microsoft 365 utilise SPF, ou pour résoudre des problèmes ou des déploiements non standard tels que des déploiements hybrides, commencez par [Comment Microsoft 365 utilise SPF (Sender Policy Framework) pour éviter l’usurpation](how-office-365-uses-spf-to-prevent-spoofing.md).
+  - **SPF**: l’infrastructure des stratégies des expéditeurs vérifie l’adresse IP source du message par rapport au propriétaire du domaine d’envoi. Pour une présentation rapide de SPF et pour qu’il soit configuré rapidement, reportez-vous à la rubrique [configurer SPF pour éviter l’usurpation](set-up-spf-in-office-365-to-help-prevent-spoofing.md). Pour consulter des informations plus approfondies sur l’utilisation de SPF par Microsoft 365, la résolution des problèmes et les déploiements non standard tels que les déploiements hybrides, voir [Comment Microsoft 365 utilise SPF (Sender Policy Framework) pour empêcher l’usurpation d’identité](how-office-365-uses-spf-to-prevent-spoofing.md).
 
   - **DKIM**: DomainKeys Identified de messagerie identifiée ajoute une signature numérique à l’en-tête de message des messages envoyés à partir de votre domaine. Pour plus d’informations, consultez [la rubrique use DKIM pour valider les messages sortants envoyés à partir de votre domaine personnalisé dans Microsoft 365](use-dkim-to-validate-outbound-email.md).
 

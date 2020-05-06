@@ -16,13 +16,15 @@ ms.collection:
 - M365-security-compliance
 search.appverid: MET150
 ms.assetid: 8d274fe3-db51-4107-ba64-865e7155b355
-description: Vous guide tout au long de la configuration recommandée pour les paramètres à l’échelle du client qui affectent la sécurité de votre environnement Microsoft 365. Vos besoins en matière de sécurité peuvent nécessiter plus ou moins de sécurité. Utilisez ces recommandations comme point de départ.
-ms.openlocfilehash: 0d16011a7abfcaa20d2a053ee9c00b3719a2b3c6
-ms.sourcegitcommit: f5cecd77e63ae8b47743d4f6dc3135f5decaf28b
+ms.custom:
+- seo-marvel-apr2020
+description: Cette rubrique décrit la configuration recommandée pour les paramètres à l’échelle du client qui affectent la sécurité de votre environnement Microsoft 365.
+ms.openlocfilehash: 25338e95a638173abeebd3477955ad16c9116712
+ms.sourcegitcommit: e55e4747d3b838baacab8985aefc24aac245c431
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/30/2020
-ms.locfileid: "43949392"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44043356"
 ---
 # <a name="configure-your-microsoft-365-tenant-for-increased-security"></a>Configuration de votre client Microsoft 365 pour une sécurité accrue
 
@@ -109,7 +111,7 @@ Pour les environnements sécurisés, veillez à désactiver l’authentification
 
 En attendant, utilisez l’une des méthodes suivantes pour effectuer cette commande pour SharePoint Online et OneDrive entreprise :
 
-- Utiliser PowerShell, consultez la rubrique [bloquer les applications qui n’utilisent pas l’authentification moderne](https://docs.microsoft.com/intune-classic/deploy-use/block-apps-with-no-modern-authentication).
+- Utiliser PowerShell, consultez la rubrique [bloquer les applications qui n’utilisent pas l’authentification moderne (Adal)](https://docs.microsoft.com/mem/intune/protect/app-modern-authentication-block).
 
 - Configurez-le dans le centre d’administration SharePoint sur la page « accès au périphérique » — « contrôler l’accès à partir d’applications qui n’utilisent pas l’authentification moderne ». Choisissez bloquer.
 

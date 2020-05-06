@@ -21,12 +21,12 @@ search.appverid:
 - BEA160
 ms.assetid: 75533195-f1f6-4c2c-8ceb-0b5597790d7b
 description: Découvrez comment prolonger votre abonnement à la version d’évaluation pour une autre période de 30 jours.
-ms.openlocfilehash: 2656e23120e114f2bc83988aff614790663131d7
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: a158f737b0606ec8b3ae451d92d312ea2969f176
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634895"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44045763"
 ---
 # <a name="extend-your-trial"></a>Prolonger votre version d’essai
 
@@ -34,10 +34,9 @@ Avez-vous besoin de plus de temps pour tester les fonctionnalités de Microsoft 
 
 ::: moniker range="o365-worldwide"
 
+1. Dans le centre d’administration, accédez à la page **facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">de vos produits</a> .
 
-1. Dans le Centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produits et services</a>.
-
-2. Sur la page **produits & services** , recherchez l’abonnement à la version d’évaluation que vous souhaitez étendre. Dans la section **paramètres & Actions** , sélectionnez **Etendre la version d’évaluation**.
+2. Sur la page **vos produits** , recherchez l’abonnement d’évaluation que vous souhaitez étendre. Dans la section **paramètres & Actions** , sélectionnez **Etendre la version d’évaluation**.
 
 3. Passez en revue les informations d’extension et, si nécessaire, modifiez votre mode de paiement. Lorsque vous avez terminé, sélectionnez **prolonger la version d’évaluation**.
 
@@ -45,9 +44,7 @@ Avez-vous besoin de plus de temps pour tester les fonctionnalités de Microsoft 
 
 ::: moniker range="o365-germany"
 
-
 1. Dans le Centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Abonnements</a>.
-
 
 2. Sur la page **abonnements** , sélectionnez l’abonnement à la version d’évaluation que vous souhaitez étendre, puis sous la date d’expiration, sélectionnez **prolonger la version d’évaluation**.
 

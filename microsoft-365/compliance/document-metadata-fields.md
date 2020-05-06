@@ -15,17 +15,18 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: ''
-ms.openlocfilehash: 1edf55298981fe8c20a38c863229a7349d6b0862
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+description: Afficher un tableau répertoriant les champs de métadonnées pour les documents dans un ensemble de preuves dans les enquêtes de données (aperçu).
+ms.custom: seo-marvel-mar2020
+ms.openlocfilehash: 3e13d62446cff3efdacaa5f8e1ade8a37006d922
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595179"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035696"
 ---
 # <a name="document-metadata-fields-in-data-investigations-preview"></a>Champs de métadonnées de document dans les enquêtes de données (aperçu)
 
-Le tableau suivant répertorie les champs de métadonnées pour les documents dans un ensemble de preuves lors d’une enquête sur les enquêtes de données (aperçu). Le tableau indique le nom du champ de métadonnées, indique s’il est possible d’effectuer une recherche dans le champ lors de l’exécution d’une requête dans un jeu de preuves, si le champ est présent lors de l’affichage des métadonnées de fichier d’un document sélectionné dans un jeu de preuves et si le champ est inclus lorsque les documents sont exportés. 
+Le tableau suivant répertorie les champs de métadonnées pour les documents dans un ensemble de preuves lors d’une enquête sur les enquêtes de données (aperçu). Le tableau indique le nom du champ de métadonnées, indique s’il est possible d’effectuer une recherche dans le champ lors de l’exécution d’une requête dans un jeu de preuves, si le champ est présent lors de l’affichage des métadonnées de fichier d’un document sélectionné dans un jeu de preuves et si le champ est inclus lors de l’exportation des documents. 
 
 > [!NOTE]
 > Les valeurs entre parenthèses dans la colonne **de l’ensemble de preuves** pouvant faire l’objet d’une recherche sont le nom de la propriété que vous pouvez rechercher. Les valeurs entre parenthèses dans la colonne **de métadonnées de fichier affichables** sont le nom de la propriété qui s’affiche lorsque vous affichez les métadonnées du fichier.

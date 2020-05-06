@@ -12,14 +12,15 @@ ms.collection:
 f1.keywords: NOCSH
 ms.custom:
 - M365solutions
+- seo-marvel-apr2020
 localization_priority: Priority
-description: Apprenez-en davantage sur les paramètres de partage d’invités disponibles dans Microsoft 365.
-ms.openlocfilehash: 419fed11ec0eed5c49828a43510b3b396b9ec0f5
-ms.sourcegitcommit: 101084f9c81616342d78493232d8f13f5ffa4ddf
+description: Découvrez les paramètres de partage d’invités disponibles dans Microsoft 365 qui peuvent affecter le partage avec les personnes extérieures à votre organisation.
+ms.openlocfilehash: 39b768a8ec512d45e3de5d57e07dbbfdf9d148b3
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "44002227"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44036775"
 ---
 # <a name="microsoft-365-guest-sharing-settings-reference"></a>Informations de référence sur les paramètres de partage d’invités de Microsoft 365
 
