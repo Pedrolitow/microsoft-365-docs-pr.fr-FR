@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: b6c15128-b456-49b4-8b5e-5b823c700f26
 description: Découvrez comment vérifier votre domaine et configurer les enregistrements DNS pour la messagerie, Skype entreprise Online et d’autres services sur Names.co.uk pour Microsoft.
-ms.openlocfilehash: 91c328877d583f415ffd2b8312ff1dc899a05bcc
-ms.sourcegitcommit: c7f11d851073ef14a69669f6c8b7e0c11e4bb7a1
+ms.openlocfilehash: 2df1a18f00fd7cd48b0d24860ddcf651c2fdac4e
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43939166"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44048938"
 ---
 # <a name="create-dns-records-at-namescouk-for-microsoft"></a>Créer des enregistrements DNS sur Names.co.uk pour Microsoft
 
@@ -72,7 +72,7 @@ Avant que vous puissiez utiliser votre domaine avec Microsoft, nous devons véri
        
     ![NamesUK-BP-Verify-1-1](../../media/91ed1f22-a796-418d-bbb0-345e2cd99bde.png)
   
-4. Cliquez sur **Enregistrer**.
+4. Sélectionnez **Enregistrer**.
     
     (You may have to scroll down.)
     
@@ -120,11 +120,11 @@ Lorsque Microsoft trouve l’enregistrement TXT approprié, votre domaine est v�
     
     |**Host name (Nom d'hôte)**|**Priority (Priorité)**|**Résultat**|
     |:-----|:-----|:-----|
-    |(Laissez ce champ vide.)  <br/> |0,1  <br/> Pour plus d'informations sur la priorité, voir [Qu'est-ce que la priorité MX ?](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx). <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/> > [!NOTE]> obtenir votre * \<clé\> de domaine* à partir de votre compte Microsoft.           [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md)          |
+    |(Laissez ce champ vide.)  <br/> |0,1  <br/> Pour plus d'informations sur la priorité, voir [Qu'est-ce que la priorité MX ?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq). <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/> > [!NOTE]> obtenir votre * \<clé\> de domaine* à partir de votre compte Microsoft.           [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md)          |
        
     ![NamesUK-BP-configure-2-1](../../media/e211d73d-864f-4114-864b-8e636c69f595.png)
   
-4. Cliquez sur **Enregistrer**.
+4. Sélectionnez **Enregistrer**.
     
     (You may have to scroll down.)
     
@@ -134,7 +134,7 @@ Lorsque Microsoft trouve l’enregistrement TXT approprié, votre domaine est v�
     
     ![NamesUK-BP-configure-2-3](../../media/f8e43926-b724-4690-94e7-ec4b8d7a8da5.png)
   
-6. Cliquez sur **Enregistrer**.
+6. Sélectionnez **Enregistrer**.
     
     (You may have to scroll down.)
     
@@ -171,11 +171,11 @@ Lorsque Microsoft trouve l’enregistrement TXT approprié, votre domaine est v�
        
     ![NamesUK-BP-configure-3-1](../../media/392772bf-2ed3-4959-9a9a-bb1611905e86.png)
   
-4. Cliquez sur **Enregistrer**.
+4. Sélectionnez **Enregistrer**.
     
     ![NamesUK-BP-configure-3-2](../../media/c009795e-7eef-4804-bf23-556f498306cc.png)
   
-## <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a>Ajouter un enregistrement TXT pour SPF afin d'éviter le courrier indésirable
+## <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a>Ajoutez un enregistrement TXT pour SPF afin d'éviter le courrier indésirable
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
@@ -209,7 +209,7 @@ Lorsque Microsoft trouve l’enregistrement TXT approprié, votre domaine est v�
        
     ![NamesUK-BP-configure-4-1](../../media/cfc61387-630e-4aa0-8762-ef36eaeda44a.png)
   
-5. Cliquez sur **Enregistrer**.
+5. Sélectionnez **Enregistrer**.
     
     (You may have to scroll down.)
     
@@ -239,7 +239,7 @@ Lorsque Microsoft trouve l’enregistrement TXT approprié, votre domaine est v�
        
     ![NamesUK-BP-configure-5-1](../../media/97a96523-005a-4058-9e12-19f6c3bf9b3b.png)
   
-4. Cliquez sur **Enregistrer**.
+4. Sélectionnez **Enregistrer**.
     
     (Vous devrez peut-être faire défiler la page vers le bas.)
     

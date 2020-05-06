@@ -14,13 +14,15 @@ search.appverid:
 ms.assetid: c534a35d-b121-45da-9d0a-ce738ce51fce
 ms.collection:
 - M365-security-compliance
-description: Questions fréquemment posées et réponses pour les administrateurs concernant la protection contre le courrier indésirable dans Exchange Online et autonome Exchange Online Protection (EOP).
-ms.openlocfilehash: 0bd34639d717b979a02272e3c2f5de243c68d3ab
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom:
+- seo-marvel-apr2020
+description: Cette rubrique fournit des FAQ & des réponses sur la protection contre le courrier indésirable. Les réponses sont applicables pour les clients de Microsoft Exchange Online & Exchange Online Protection (EOP).
+ms.openlocfilehash: 33fb1fb5d73f0d686a72e89d460c0973d2bbdabe
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636057"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44033737"
 ---
 # <a name="anti-spam-protection-faq"></a>Forum Aux Questions sur la protection anti-courrier indésirable
 
@@ -133,7 +135,7 @@ R. Les instructions ci-dessous constituent les meilleures pratiques pour l'envoi
 
   Les enregistrements SPF constituent un mécanisme permettant de valider le fait que du courrier électronique envoyé par un domaine provient réellement de ce dernier et n'est pas falsifié. Pour plus d'informations sur les enregistrements SPF, consultez les liens suivants :
 
-  [Configurer SPF pour éviter l’usurpation](set-up-spf-in-office-365-to-help-prevent-spoofing.md)
+  [Configurer SPF pour empêcher l’usurpation](set-up-spf-in-office-365-to-help-prevent-spoofing.md)
 
   [Foire aux questions domaines](https://docs.microsoft.com/office365/admin/setup/domains-faq#how-can-i-validate-spf-records-for-my-domain)
 

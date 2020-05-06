@@ -15,13 +15,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: ''
-ms.openlocfilehash: 0b6c42f594ef10c868051d81b0a7ea4b7ff84e00
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: Découvrez comment le module de pertinence analyse les données dans les preuves avec une description du flux de travail de pertinence et les étapes de formation dans les enquêtes de données (aperçu).
+ms.custom: seo-marvel-mar2020
+ms.openlocfilehash: 10b05d4d648bc781a2ec1c7ff8a35d5e82583c55
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42080611"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034486"
 ---
 # <a name="use-the-relevance-module-to-analyze-data-in-evidence"></a>Utiliser le module de pertinence pour analyser les données dans les preuves
 
@@ -121,7 +122,7 @@ Dans l' **onglet \> suivi de pertinence** , les enquêtes de données fournissen
     
   - Implication : aucune formation pertinente n’est requise à ce stade.
     
-Bien que les enquêtes de données vous guident tout au long du processus, avec les étapes suivantes recommandées à différentes étapes, il vous permet également de naviguer entre les onglets et les pages, et de faire des choix pour répondre aux situations susceptibles de concerner votre cas, problème ou processus de révision de documents. 
+Bien que les enquêtes de données vous guident tout au long du processus, avec les étapes suivantes recommandées à différentes étapes, il vous permet également de naviguer entre les onglets et les pages, et de faire des choix pour répondre aux situations susceptibles de concerner votre cas, problème ou processus de révision de document. 
   
 Il est possible d’accepter ou de remplacer les analyses de données par les choix de traitement de l’étape suivante. Si vous souhaitez effectuer une étape différente de l’étape suivante recommandée, cliquez sur l' **étape suivante** figurant dans la boîte de dialogue Affichage du problème développé dans la boîte de dialogue, cliquez sur le bouton **modifier** en regard de l’étape suivante, puis sélectionnez une autre étape suivante. 
   

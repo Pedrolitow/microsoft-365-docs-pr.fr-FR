@@ -1,5 +1,5 @@
 ---
-title: Utiliser l’outil de collecte PST pour rechercher, copier et supprimer des fichiers PST dans votre organisation
+title: Utiliser l’outil de collecte PST pour rechercher, copier et supprimer les fichiers PST
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -15,12 +15,13 @@ search.appverid:
 - MET150
 ms.assetid: 7a150c84-049c-4a9c-8c91-22355b35f2a7
 description: Utilisez l’outil de collection Microsoft PST pour effectuer des recherches sur le réseau de votre organisation afin d’obtenir un inventaire des fichiers PST disséminés au sein de votre organisation. Une fois que vous avez trouvé des fichiers PST, vous pouvez utiliser l’outil de collecte PST pour les copier dans un emplacement central afin de pouvoir les importer dans Office 365.
-ms.openlocfilehash: 3d28db482bc3c17570b4cf4a952939c3c221d94b
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: fd547d0d5244df40bd5fa118bccdfe95fcba9341
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43942197"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44033808"
 ---
 # <a name="use-the-pst-collection-tool-to-find-copy-and-delete-pst-files-in-your-organization"></a>Utiliser l’outil de collecte PST pour rechercher, copier et supprimer des fichiers PST dans votre organisation
 

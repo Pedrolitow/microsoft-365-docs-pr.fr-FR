@@ -1,5 +1,5 @@
 ---
-title: Examen et réponse automatisés (AIR)
+title: 'Recherche et réponse automatisées (AIR) : prise en main'
 keywords: AIR, autoIR, ATP, automatisation, analyse, réponse, correction, menaces, avancé, menace, protection
 f1.keywords:
 - NOCSH
@@ -15,15 +15,15 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: Prise en main des fonctionnalités d’analyse et de réponse automatisées dans Office 365 Advanced Threat Protection Plan 2.
-ms.custom: air
-ms.openlocfilehash: 3b7ddd88161b695e8929b749dac61d7947392a0d
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom: air - seo-marvel-mar2020
+ms.openlocfilehash: b9811963210f253bbfe90af02dd6d38926776a62
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634543"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44033949"
 ---
-# <a name="automated-investigation-and-response-air"></a>Examen et réponse automatisés (AIR)
+# <a name="get-started-using-automated-investigation-and-response-air-in-office-365"></a>Prise en main de l’analyse et de la réponse automatisées (AIR) dans Office 365
 
 [Office 365 Advanced Threat Protection](office-365-atp.md) (Office 365 ATP) plan 2 inclut de puissantes fonctionnalités d’analyse et de réponse automatisées (air) qui permettent d’économiser le temps et les efforts de l’équipe des opérations de sécurité. Comme les alertes sont déclenchées, c’est à votre équipe chargée des opérations de sécurité de passer en revue les alertes, de les classer par ordre de priorité et de les répondre. Le volume des alertes entrantes peut être insurmontable. L’automatisation de certains d’entre eux peut vous aider. Avec AIR, votre équipe des opérations de sécurité peut se concentrer sur les tâches de plus haute priorité sans perdre en visibilité les alertes déclenchées.
 
@@ -52,7 +52,7 @@ Cet article décrit le [flux](#the-overall-flow-of-air) d’air global, la [faç
     Comme les actions de correction en attente sont approuvées (ou rejetées), l’enquête automatisée se termine.
 
 > [!NOTE]
-> Dans Office 365 ATP, aucune action de correction n’est effectuée automatiquement. Les actions de correction ne sont prises qu’après approbation de l’équipe de sécurité de votre organisation. 
+> Dans Office 365 ATP, aucune action de correction n’est effectuée automatiquement. Les actions correctives sont mises en œuvre uniquement après approbation par l’équipe de sécurité de votre organisation. 
 
 Pendant et après un processus d’enquête automatisé, votre équipe de sécurité peut effectuer les opérations suivantes :
 
