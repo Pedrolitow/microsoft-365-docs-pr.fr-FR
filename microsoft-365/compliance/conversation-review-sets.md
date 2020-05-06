@@ -15,13 +15,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: ''
-ms.openlocfilehash: ca8389bf6a7622d4db98bdf7422aea85942e8978
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+description: Découvrez comment utiliser la fonctionnalité de reconstruction de conversation dans Advanced eDiscovery pour reconstruire, examiner et exporter des conversations thématiques.
+ms.custom: seo-marvel-mar2020
+ms.openlocfilehash: 45cf4bdbf0956ee28e75878b7db5ec84b81c7230
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42556772"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035492"
 ---
 # <a name="review-conversations-in-advanced-ediscovery"></a>Examiner les conversations dans Advanced eDiscovery 
 

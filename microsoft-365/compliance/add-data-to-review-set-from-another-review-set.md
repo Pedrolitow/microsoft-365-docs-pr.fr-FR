@@ -15,13 +15,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: ''
-ms.openlocfilehash: a6bd4672c75e2e633ede2ad54effb4c6562b822c
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: Découvrez comment sélectionner des documents dans un ensemble de validation et les utiliser individuellement dans un autre ensemble dans un cas avancé eDiscovery.
+ms.custom: seo-marvel-mar2020
+ms.openlocfilehash: 636e76b1740cfa07254e4c56165cfafa8f1fad5a
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42080178"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034678"
 ---
 # <a name="add-data-to-a-review-set-from-another-review-set"></a>Ajouter des données à un jeu de révision à partir d’un autre ensemble de révision
 

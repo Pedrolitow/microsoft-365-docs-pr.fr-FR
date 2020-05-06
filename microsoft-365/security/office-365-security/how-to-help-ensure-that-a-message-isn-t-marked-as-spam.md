@@ -15,13 +15,15 @@ search.appverid:
 ms.assetid: ceeda109-6c24-4270-bd09-a36959417276
 ms.collection:
 - M365-security-compliance
-description: En tant qu'administrateur Exchange Online ou Exchange Online Protection (EOP), vous pouvez faire en sorte qu'un message électronique circulant via le service ne soit pas marqué comme courrier indésirable. Consultez la version mise à jour des conseils et procédures pour y parvenir dans la rubrique relative à la procédure visant à empêcher que des courriers électroniques faux positifs soient marqués comme courrier indésirable à l'aide d'une liste fiable ou d'autres techniques.
-ms.openlocfilehash: 7ff5c7d027a4caabaaadc8169d6afab5698a50bb
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.custom:
+- seo-marvel-apr2020
+description: Apprenez en tant qu’administrateur Exchange Online ou Exchange Online Protection (EOP), comment pouvez-vous vous assurer qu’un message électronique circulant via le service n’est pas marqué comme courrier indésirable.
+ms.openlocfilehash: 4661e695d4bea363de396853ae78c3b31f878243
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42893633"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44036376"
 ---
 # <a name="how-to-help-ensure-that-a-message-isnt-marked-as-spam"></a>Comment s’assurer qu’un message n’est pas marqué comme courrier indésirable
 

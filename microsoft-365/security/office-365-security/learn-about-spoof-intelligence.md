@@ -16,13 +16,15 @@ search.appverid:
 ms.assetid: 978c3173-3578-4286-aaf4-8a10951978bf
 ms.collection:
 - M365-security-compliance
-description: Les administrateurs peuvent apprendre à configurer les expéditeurs usurpés pour autoriser ou non l’autorisation, ainsi que d’autres paramètres d’aide à la décision dans Exchange Online et Exchange Online Protection (EOP).
-ms.openlocfilehash: e2aeefbd90a7ed66699778fab54a76a33293e4bb
-ms.sourcegitcommit: f5cecd77e63ae8b47743d4f6dc3135f5decaf28b
+ms.custom:
+- seo-marvel-apr2020
+description: Dans cet article, vous apprendrez à utiliser et à gérer l’usurpation d’identité pour la protection contre l’usurpation de courrier électronique.
+ms.openlocfilehash: 32a7668edced5c9dbca2f7b16ff00253b56a5988
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/30/2020
-ms.locfileid: "43949236"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034243"
 ---
 # <a name="configure-spoof-intelligence-in-microsoft-365"></a>Configurer l’intelligence des usurpations d’identité dans Microsoft 365
 

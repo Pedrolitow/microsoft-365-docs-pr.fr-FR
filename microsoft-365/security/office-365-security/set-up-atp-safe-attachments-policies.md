@@ -16,13 +16,14 @@ search.appverid:
 ms.assetid: 078eb946-819a-4e13-8673-fe0c0ad3a775
 ms.collection:
 - M365-security-compliance
-description: Définir des stratégies de pièces jointes approuvées pour protéger votre organisation contre les fichiers malveillants par courrier électronique.
-ms.openlocfilehash: d9139ff1b3adef2f70b6aede630791d355127573
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: Découvrez comment définir des stratégies de pièces jointes fiables afin de protéger votre organisation contre les fichiers malveillants par courrier électronique.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: ab67b66b8773f45e819abef34e1d77ce5de4cc62
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43638343"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035319"
 ---
 # <a name="set-up-office-365-atp-safe-attachments-policies"></a>Configuration des stratégies de pièces jointes approuvées ATP Office 365
 

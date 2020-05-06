@@ -1,5 +1,5 @@
 ---
-title: Configurer les paramètres de recherche et d’analyse
+title: Configurer les paramètres de recherche et d’analyse-eDiscovery
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -15,13 +15,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
+ms.custom: seo-marvel-mar2020
 description: Configurez des paramètres eDiscovery avancés qui s’appliquent à tous les jeux de révision dans un cas. Cela inclut les paramètres d’analyse et de reconnaissance optique de caractères.
-ms.openlocfilehash: 9a7568fac91fa9c021d05b255fc0a145002e7f29
-ms.sourcegitcommit: 0b2c41dad19da5f0513097c36a4ff32a5868836c
+ms.openlocfilehash: eb934146b065454b54d797e47f7a643b95be546d
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "42588807"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44033674"
 ---
 # <a name="configure-search-and-analytics-settings"></a>Configurer les paramètres de recherche et d’analyse
 
@@ -83,7 +84,7 @@ Il existe des situations dans lesquelles certains textes réduisent la qualité 
 
 ## <a name="optical-character-recognition-ocr"></a>Reconnaissance optique de caractères (OCR)
 
-Lorsque ce paramètre est activé, la reconnaissance optique de caractères est exécutée sur les fichiers d’image ajoutés aux ensembles de révision afin que le texte de l’image puisse être révisé, recherché, balisé et analysé. Vous pouvez afficher le texte extrait dans la visionneuse de texte du fichier image sélectionné dans l’ensemble de révision. Pour plus d’informations, voir :
+Lorsque ce paramètre est activé, la reconnaissance optique de caractères est exécutée sur les fichiers d’image ajoutés aux ensembles de révision afin que le texte de l’image puisse être révisé, recherché, balisé et analysé. Vous pouvez afficher le texte extrait dans la visionneuse de texte du fichier image sélectionné dans l’ensemble de révision. Pour plus d’informations, reportez-vous aux rubriques suivantes :
 
 - [Ajouter des résultats de recherche à un jeu à réviser](add-data-to-review-set.md#optical-character-recognition)
 

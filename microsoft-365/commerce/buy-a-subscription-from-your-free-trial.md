@@ -27,12 +27,12 @@ search.appverid:
 - BEA160
 ms.assetid: 485fee6d-b22e-440a-9053-a4e7fa509c92
 description: Achetez un abonnement Microsoft 365 pour les entreprises. Vous pouvez acheter le même type d’abonnement que vous avez essayé, ou une autre offre.
-ms.openlocfilehash: 3635a4ae729aa0759ef1f2de2905fa745a48951a
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 48786ffc4bd0a8c5e8e13e0062b6db1dd5bed561
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634943"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44045799"
 ---
 # <a name="buy-a-subscription-to-microsoft-365-for-business-from-your-free-trial"></a>Acheter un abonnement à Microsoft 365 pour les entreprises à partir de votre version d’évaluation gratuite
 
@@ -50,9 +50,9 @@ La procédure est simple. Par ailleurs, lorsque vous achetez un abonnement du m�
 
 ::: moniker range="o365-worldwide"
 
-1. Dans le centre d’administration, choisissez la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produits et services</a>.
+1. Dans le centre d’administration, accédez à la page **facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">de vos produits</a> .
 
-2. Dans la page **Produits et services**, recherchez l’abonnement que vous souhaitez acheter. Dans la section **licences**, sélectionnez **Acheter un abonnement**.
+2. Sur la page **vos produits** , recherchez l’abonnement que vous souhaitez acheter. Dans la section **licences**, sélectionnez **Acheter un abonnement**.
 
 3. Choisissez un engagement mensuel ou annuel pour votre abonnement, puis sélectionnez **Validation de l'achat**.
 
@@ -163,6 +163,6 @@ Si vous achetez un abonnement d'un type différent de celui de votre version d'�
 
 [Prolonger votre version d’évaluation](extend-your-trial.md)
   
-[Inscrivez-vous à Microsoft 365](../admin/admin-overview/sign-up-for-office-365.md)
+[Inscrivez-vous à Microsoft 365](../admin/admin-overview/sign-up-for-office-365.md)
   
 [Basculer vers un autre plan ou abonnement Microsoft 365](subscriptions/switch-to-a-different-plan.md)

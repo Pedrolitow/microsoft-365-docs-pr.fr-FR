@@ -1,5 +1,5 @@
 ---
-title: Afficher les rapports pour la protection avancée contre les menaces Office 365, les rapports de programmes malveillants, les rapports de hameçonnage, les comptes compromis, l’état de protection des URL, les rapports de menace, les menaces de rapports
+title: Afficher les rapports de protection avancée contre les menaces
 f1.keywords:
 - CSH
 ms.author: tracyp
@@ -17,12 +17,13 @@ ms.assetid: e47e838c-d99e-4c0b-b9aa-e66c4fae902f
 ms.collection:
 - M365-security-compliance
 description: Recherchez et utilisez des rapports pour Office 365 protection avancée contre les menaces &amp; dans le centre de sécurité conformité.
-ms.openlocfilehash: 09e2f4be133d395b738219b3a280f08b915030e0
-ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 56e8b79ad85a5801f75a6ed36a58afe58b552527
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43708498"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034961"
 ---
 # <a name="view-reports-for-office-365-advanced-threat-protection"></a>Afficher les rapports pour Office 365 protection avancée contre les menaces
 
@@ -132,7 +133,7 @@ Outre les rapports ATP décrits dans cet article, plusieurs autres rapports sont
 
 |||
 |---|---|
-|**Rapport (s)**|**Details**|
+|**Rapport (s)**|**Détails**|
 |**Explorateur** ou **détections en temps réel**: (Office 365 DAV ATP plan 2 les clients disposent de l’Explorateur ; Office 365 DAV plan 1 les clients ont des détections en temps réel.)|[Explorateur de menaces (et détections en temps réel)](threat-explorer.md)|
 |**Rapports de sécurité de messagerie**, tels que le rapport des expéditeurs et des destinataires, un rapport de courrier indésirable et un rapport de détection du courrier indésirable.|[Afficher les rapports de sécurité de messagerie &amp; dans le centre de sécurité conformité](view-email-security-reports.md)|
 |**Suivi des URL de liens approuvés ATP**: (il s’agit d’un rapport que vous générez à l’aide de PowerShell.) Ce rapport affiche les résultats des actions de liens approuvés ATP au cours des sept (7) derniers jours.|[Référence de l’applet de commande Get-UrlTrace](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/get-urltrace)|

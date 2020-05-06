@@ -13,13 +13,15 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection:
 - M365-security-compliance
-description: Décrit l’ordre des applications des protections Office 365 et la façon dont la valeur de priorité dans les stratégies de protection détermine quelle stratégie est appliquée.
-ms.openlocfilehash: ed4806bad6299dc5a5380bec2f6e1247f9d6b448
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom:
+- seo-marvel-apr2020
+description: Découvrez l’ordre des applications des protections Office 365 et la façon dont la valeur de priorité dans les stratégies de protection détermine quelle stratégie est appliquée.
+ms.openlocfilehash: 856b3bc39cd971e605cd9f1c0f31554a853c1b67
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43633965"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44036715"
 ---
 # <a name="order-and-precedence-of-email-protection"></a>Ordre et priorité de la protection de la messagerie
 

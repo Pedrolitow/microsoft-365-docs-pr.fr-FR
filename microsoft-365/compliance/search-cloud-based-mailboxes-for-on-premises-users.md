@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 3f7dde1a-a8ea-4366-86da-8ee6777f357c
 description: Utilisez l’outil recherche de contenu dans le centre de conformité et de sécurité pour rechercher et exporter des données de conversation MicrosoftTeams (appelées conversations 1xN) pour les utilisateurs locaux dans un déploiement hybride Exchange.
-ms.openlocfilehash: 9dc9219d6ef1a387e1514deb672386d7d3c18290
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 7b05460bb41ff97c8571a96b38a8eebd50a206fd
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43626450"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034571"
 ---
 # <a name="searching-cloud-based-mailboxes-for-on-premises-users"></a>Recherche de boîtes aux lettres sur le cloud des utilisateurs locaux
 
@@ -47,7 +47,7 @@ Si un utilisateur de Microsoft Teams a une boîte aux lettres locale et que son 
   
 Le graphique suivant montre comment Teams peut consulter les données de conversation pour les utilisateurs locaux pour pouvoir effectuer des recherches, des aperçus et des exportations.
   
-![Stockage sur le cloud pour les utilisateurs locaux de Microsoft Teams](../media/895845f8-2ceb-47ed-96c9-5ab7f1aea916.png)
+![Stockage sur le cloud pour les utilisateurs locaux de Microsoft Teams](../media/EHAMShard1.png)
   
 En plus de cette nouvelle fonctionnalité, vous pouvez encore utiliser la recherche de contenu pour rechercher, afficher un aperçu et exporter du contenu d’équipes sur le site SharePoint dans le cloud et sur la boîte aux lettres Exchange associée à chaque Microsoft Teams et 1xN Teams discutent des données dans la boîte aux lettres Exchange Online pour utilisateurs dans le cloud.
 

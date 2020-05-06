@@ -15,13 +15,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: ''
-ms.openlocfilehash: 2666b1f4add1a55453162d1555e9b7e1f01eada7
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+description: Trouvez des informations sur les limites de description, d’indexation, de recherche, d’exportation et de téléchargement dans les enquêtes de données (aperçu).
+ms.custom: seo-marvel-mar2020
+ms.openlocfilehash: 95e779d56861e22f6fdab41442bb3e839329d193
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600771"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44036331"
 ---
 # <a name="data-investigations-preview-limits"></a>Limites des enquêtes de données (aperçu)
 
@@ -36,7 +37,7 @@ Le tableau suivant répertorie les limites pour les recherches dans les enquête
   |Nombre maximal d’analyses.  <br/> |50  <br/> |
   |Nombre total de documents pouvant être ajoutés à une enquête (pour tous les ensembles de preuves de l’enquête).  <br/> |1 million  <br/> |
   |Taille totale du fichier par charge.  <br/> |100 Go  <br/> |
-  |Taille maximale d’un fichier unique.   <br/> |100 Mo <sup></sup> <br/> |
+  |Taille maximale d’un fichier unique.   <br/> |100 Mo <sup>1</sup> <br/> |
   |Nombre maximal de caractères extraits d’un fichier unique.  <br/> |10 millions <sup>1</sup> <br/> |
   |Profondeur des éléments incorporés dans un seul fichier.  <br/> |25 <sup>1</sup> <br/> |
 |||

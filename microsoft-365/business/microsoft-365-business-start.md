@@ -27,12 +27,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Découvrez Microsoft 365 for Business, comment le configurer et comment préparer les appareils et les ordinateurs de vos utilisateurs pour vous assurer qu’ils sont protégés par Microsoft 365 pour les entreprises.
-ms.openlocfilehash: 17b142fb704d1b0be088a649490e751effb19517
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 8754c470cb6369f0814f953288be130fa49cea86
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43633200"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44048082"
 ---
 # <a name="get-started-with-microsoft-365-for-business"></a>Prise en main de Microsoft 365 pour les entreprises
 
@@ -44,7 +44,7 @@ Regardez cette vidéo pour obtenir une vue d’ensemble rapide de Microsoft 365 
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2mhaA] 
   
-Microsoft 365 pour les entreprises est destiné à 300 licences. Si vous avez besoin de plus de licences, consultez la documentation de [Microsoft 365 Enterprise](https://go.microsoft.com/fwlink/p/?linkid=860986) pour plus d’informations. 
+Microsoft 365 pour les entreprises est destiné à 300 licences. Si vous avez besoin de licences supplémentaires, consultez la documentation de [Microsoft 365 Entreprise](https://go.microsoft.com/fwlink/p/?linkid=860986) pour obtenir plus d’informations. 
   
 ## <a name="get-microsoft-365-for-business"></a>Obtenir Microsoft 365 pour les entreprises
 
@@ -52,7 +52,7 @@ Microsoft 365 pour les entreprises est destiné à 300 licences. Si vous avez be
     
 - Si vous ne disposez pas d’un partenaire et que vous souhaitez obtenir Microsoft 365 pour les entreprises, vous pouvez l' [acheter ici](https://www.microsoft.com/microsoft-365/business).
     
-## <a name="set-up-microsoft-365-for-business"></a>Configurer Microsoft 365 pour les entreprises
+## <a name="set-up-microsoft-365-for-business"></a>Configurer Microsoft 365 Entreprises
 
  **Vue d’ensemble de la mise en place de Microsoft 365 pour Business Suite**
   
@@ -83,7 +83,7 @@ Connectez-vous au [Centre d’administration microsoft 365](https://portal.offic
     
     - Utilisez l’Assistant synchronisation d’annuaires pour synchroniser vos utilisateurs avec le Cloud. Suivez les étapes de la procédure de configuration de la [synchronisation d’annuaires pour Microsoft 365](https://support.office.com/article/1b3b5318-6977-42ed-b5c7-96fa74b08846) pour effectuer ce processus. Après avoir synchronisé vos utilisateurs sur le Cloud, vous devez désactiver la [synchronisation d’annuaires pour Office 365](https://support.office.com/article/ee5f861e-bd48-4267-83d1-a4ead4b4a00d).
     
-    Vous devrez également donner à chaque utilisateur qui a été ajouté de cette manière une licence Microsoft 365 pour les entreprises. Vous pouvez effectuer cette opération dans l' [Assistant Installation](set-up.md) ou vous pouvez [attribuer des licences aux utilisateurs dans Microsoft 365 pour les entreprises](https://support.office.com/article/997596B5-4173-4627-B915-36ABAC6786DC).
+    Vous devrez également donner à chaque utilisateur qui a été ajouté de cette manière une licence Microsoft 365 pour les entreprises. Vous pouvez effectuer cette opération dans l' [Assistant Installation](set-up.md) ou vous pouvez [attribuer des licences aux utilisateurs dans Microsoft 365 pour les entreprises](https://docs.microsoft.com/microsoft-365/admin/add-users/add-users).
     
 ### <a name="2-prepare-mobile-devices"></a>2 : préparer les appareils mobiles
 
@@ -106,10 +106,10 @@ Si vous conservez un annuaire Active Directory local contenant certaines ressour
     
 - En tant qu’administrateur Microsoft 365 pour les entreprises, vous avez accès à notre équipe de support technique : ** [contacter le support pour les entreprises-aide de l’administrateur](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)**
     
-## <a name="see-also"></a>Voir également
+## <a name="see-also"></a>Voir aussi
 
 [Documentation et ressources de Microsoft 365 pour les entreprises](https://go.microsoft.com/fwlink/p/?linkid=853701)
   
 [Gérer microsoft 365 pour les entreprises](manage.md)[migrer vers Microsoft 365 pour les entreprises](migrate-to-microsoft-365-business.md)
 
-[Vidéos de formation Microsoft 365 pour les entreprises](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816) 
+[Vidéos de formation Microsoft 365 Entreprise](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816) 

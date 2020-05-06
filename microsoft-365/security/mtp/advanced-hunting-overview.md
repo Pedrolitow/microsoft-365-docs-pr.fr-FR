@@ -1,5 +1,5 @@
 ---
-title: Vue d’ensemble du repérage avancé dans la Protection Microsoft contre les menaces
+title: Vue d’ensemble-chasse avancée
 description: En savoir plus sur les requêtes de repérage avancés dans Microsoft 365 et leur utilisation pour rechercher de manière proactive les menaces et faiblesses de votre réseau
 keywords: chasse de menace, recherche de menace, recherche de menace informatique, protection contre les menaces Microsoft, Microsoft 365, MTP, M365, recherche, requête, télémétrie, détections personnalisées, schéma, Kusto, Microsoft 365, protection contre les menaces Microsoft
 search.product: eADQiWindows 10XVcnh
@@ -17,12 +17,13 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: dc91b97f48d6a5ca76c405e4c1006dceb9dc0b34
-ms.sourcegitcommit: 3b2fdf159d7dd962493a3838e3cf0cf429ee2bf2
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: c4b5d58a006591da23d37aaeccf72cfccc6d1c43
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "42929027"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44033973"
 ---
 # <a name="proactively-hunt-for-threats-with-advanced-hunting-in-microsoft-threat-protection"></a>Repérage proactive de menaces avec repérage avancé dans la Protection Microsoft contre les menaces
 
@@ -35,7 +36,7 @@ Le repérage avancé est un outil de repérage de menaces basé sur des requête
 
 Vous pouvez utiliser les mêmes requêtes de recherche de menace pour créer des règles de détection personnalisées. Ces règles s’exécutent automatiquement pour vérifier et répondre à divers événements et États du système, y compris l’activité de violation présumée et les machines mal configurées.
 
-Dans le centre de sécurité Microsoft 365, la recherche avancée prend en charge les requêtes qui examinent des données provenant de différents espaces de travail, notamment des données sur les appareils, les e-mails, les applications et les identités de Microsoft Defender ATP, Office 365 ATP, sécurité des applications Cloud Microsoft et Azure Cumulé. Pour utiliser le repérage avancé, [activez Protection Microsoft contre les menaces](mtp-enable.md).
+Dans le centre de sécurité Microsoft 365, la recherche avancée prend en charge les requêtes qui examinent des données provenant de différents espaces de travail, notamment des données sur les appareils, les e-mails, les applications et les identités de Microsoft Defender ATP, Office 365 ATP, sécurité des applications Cloud Microsoft et Azure ATP. Pour utiliser le repérage avancé, [activez Protection Microsoft contre les menaces](mtp-enable.md).
 
 ## <a name="get-started-with-advanced-hunting"></a>Prise en main du repérage avancé
 
@@ -49,12 +50,6 @@ Nous vous recommandons de suivre plusieurs étapes pour devenir rapidement opér
 | **Utiliser les requêtes prédéfinies** | Explorez les collections de requêtes prédéfinies couvrant différents scénarios de repérage de menaces. | [Utiliser des requêtes partagées](advanced-hunting-shared-queries.md) |
 | **Optimiser les requêtes** | Découvrez comment créer des requêtes et des requêtes efficaces qui combinent des données provenant des e-mails et d’appareils. | - [Meilleures pratiques en matière de requêtes](advanced-hunting-shared-queries.md) <br>- [Recherche sur les appareils et les e-mails](advanced-hunting-best-practices.md) |
 | **Créer des règles de détection personnalisées** | Découvrez comment utiliser les requêtes de chasse avancées pour déclencher des alertes et appliquer les actions de réponse automatiquement. | - [Vue d’ensemble des détections personnalisées](custom-detections-overview.md)<br>- [Règles de détection personnalisées](custom-detection-rules.md) |
-
-## <a name="get-help-as-you-write-queries"></a>Obtenez de l’aide lorsque vous rédigez des requêtes
-Tirez parti des fonctionnalités suivantes pour rédiger des requêtes plus rapidement :
-- **Suggestion** automatique : lors de l’écriture de requêtes, la recherche avancée fournit des suggestions d’IntelliSense. 
-- **Référence de schéma** : une référence de schéma qui inclut la liste des tableaux et leurs colonnes est fournie à côté de votre espace de travail. Si vous souhaitez en savoir plus, veuillez placer le pointeur sur un élément. Double-cliquez sur un élément pour l’insérer dans l’éditeur de requête.
-
 
 ## <a name="related-topics"></a>Sujets associés
 - [Apprendre le langage de requête](advanced-hunting-query-language.md)

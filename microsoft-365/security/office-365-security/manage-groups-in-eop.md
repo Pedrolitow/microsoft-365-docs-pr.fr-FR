@@ -11,13 +11,15 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 212e68ac-6330-47e9-a169-6cf5e2f21e13
-description: Vous pouvez utiliser Exchange Online Protection (EOP) pour créer des groupes à extension messagerie pour une organisation Exchange. Vous pouvez également utiliser EOP pour définir ou mettre à jour les propriétés de groupe qui indiquent l'appartenance, les adresses électroniques et d'autres aspects des groupes.
-ms.openlocfilehash: ad07066906f78703c568850afbfa5dfa8d8cc3c1
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.custom:
+- seo-marvel-apr2020
+description: Dans cet article, vous apprendrez à créer et à gérer des groupes à extension messagerie pour une organisation Exchange dans Exchange Online Protection (EOP).
+ms.openlocfilehash: 37825175e3332e975065a3807c6ed9d5096b1a7f
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42082889"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034401"
 ---
 # <a name="manage-groups-in-eop"></a>Gestion des groupes dans Exchange Online Protection (EOP)
 
@@ -84,7 +86,7 @@ Vous pouvez créer deux types de groupes pour votre organisation Exchange :
 
    - Pour modifier un groupe : dans la liste des groupes, cliquez sur le groupe que vous souhaitez afficher ou modifier, puis cliquez sur **modifier** ![l’icône](../../media/ITPro-EAC-EditIcon.gif)modifier. Vous pouvez mettre à jour les paramètres généraux, ajouter ou supprimer des propriétaires de groupes, et ajouter ou supprimer des membres du groupe selon vos besoins.
 
-   - Pour supprimer un groupe : sélectionnez le groupe, puis **** ![cliquez sur supprimer](../../media/ITPro-EAC-RemoveIcon.gif)l’icône Supprimer.
+   - Pour supprimer un groupe : sélectionnez le groupe, puis **Remove** ![cliquez sur supprimer](../../media/ITPro-EAC-RemoveIcon.gif)l’icône Supprimer.
 
 3. Après avoir effectué toutes les modifications voulues, cliquez sur **Enregistrer**.
 

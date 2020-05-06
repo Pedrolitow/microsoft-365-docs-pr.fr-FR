@@ -15,13 +15,14 @@ search.appverid:
 ms.assetid: 4ccab17a-6d49-4786-aa28-92fb28893e99
 ms.collection:
 - M365-security-compliance
-description: Les administrateurs peuvent apprendre à définir la valeur SCL des messages dans Exchange Online Protection.
-ms.openlocfilehash: cc75130d1e30b4cd64c32b1729c8145ad3088742
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: Découvrez comment créer des règles de flux de messagerie (règles de transport) pour identifier les messages et définir le seuil de probabilité de courrier indésirable (SCL) des messages dans Exchange Online Protection.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 444a7f2a8342102c2222cc734b2592f46632f8d3
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636427"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035009"
 ---
 # <a name="use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages"></a>Utilisation des règles de flux de courrier pour définir le seuil de probabilité de courrier indésirable (SCL) dans les messages
 
@@ -56,7 +57,7 @@ Si vous souhaitez marquer des messages spécifiques comme courrier indésirable 
    - **Contournement du filtrage du courrier indésirable**: définit la valeur SCL sur-1, ce qui signifie que les messages ignorent le filtrage du courrier indésirable.
 
      > [!CAUTION]
-     > Soyez très vigilant lorsque vous autorisez les messages à ignorer le filtrage du courrier indésirable. Les attaquants peuvent utiliser cette vulnérabilité pour envoyer du hameçonnage et d’autres messages malveillants dans votre organisation. Les règles de flux de messagerie nécessitent plus que l’adresse de messagerie ou le domaine de l’expéditeur. Pour plus d’informations, consultez la rubrique [créer des listes d’expéditeurs approuvés dans Office 365](create-safe-sender-lists-in-office-365.md).
+     > Soyez très vigilant lorsque vous autorisez les messages à ignorer le filtrage du courrier indésirable. Les attaquants peuvent utiliser cette vulnérabilité pour envoyer du hameçonnage et d’autres messages malveillants dans votre organisation. Les règles de flux de messagerie nécessitent plus que l’adresse de messagerie ou le domaine de l’expéditeur. Si vous souhaitez en savoir plus, consultez la page [Créer des listes d’expéditeurs approuvés dans Office 365](create-safe-sender-lists-in-office-365.md).
 
    - **0 à 4**: le message est envoyé par le biais du filtrage du courrier indésirable pour un traitement supplémentaire.
 

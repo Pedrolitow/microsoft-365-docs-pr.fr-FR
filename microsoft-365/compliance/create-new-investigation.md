@@ -15,19 +15,20 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: ''
-ms.openlocfilehash: 007a7517cb0ea3c810d667cbfa88c0da1755b0d8
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: Découvrez comment créer, configurer et enregistrer une nouvelle enquête dans les enquêtes de données (aperçu) dans le centre de conformité Microsoft 365.
+ms.custom: seo-marvel-mar2020
+ms.openlocfilehash: 62166f1fb820c33e1e8981b31c5fc9a48e54390a
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42077465"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035776"
 ---
 # <a name="create-a-new-investigation-in-data-investigations-preview"></a>Créer une nouvelle enquête dans les enquêtes de données (aperçu)
 
 1. Accédez à [https://compliance.microsoft.com](https://compliance.microsoft.com).
     
-2. Connectez-vous à l’aide de votre compte professionnel ou scolaire.
+2. Connectez-vous à l’aide de votre compte scolaire ou professionnel.
     
 3. Dans le centre de conformité, cliquez sur **analyses de données**.
  

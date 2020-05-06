@@ -15,13 +15,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: ''
-ms.openlocfilehash: 2ddc9a6ae868682a3a241e9896d3aa63ac46f985
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: Découvrez comment le module de pertinence analyse les données dans les preuves avec une description du flux de travail de pertinence et les étapes de formation dans Advanced eDiscovery.
+ms.custom: seo-marvel-mar2020
+ms.openlocfilehash: 4babb0aa7693bc1107cc7594da967bca2d307228
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42069155"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034466"
 ---
 # <a name="use-the-relevance-module-to-analyze-data-in-advanced-ediscovery"></a>Utiliser le module de pertinence pour analyser les données dans Advanced eDiscovery
 
@@ -127,7 +128,7 @@ Dans l' **onglet \> suivi de pertinence** , Advanced eDiscovery fournit des reco
     
   - Implication : aucune formation pertinente n’est requise à ce stade.
     
-Bien qu’Advanced eDiscovery vous guide tout au long du processus, avec les étapes suivantes recommandées à différentes étapes, il vous permet également de naviguer entre les onglets et les pages, et de faire des choix pour répondre aux situations susceptibles de concerner votre cas, problème ou processus de révision de documents. 
+Bien que Advanced eDiscovery vous guide tout au long du processus, avec les étapes suivantes recommandées à différentes étapes, il vous permet également de naviguer entre les onglets et les pages, et de faire des choix pour répondre aux situations susceptibles de concerner votre cas, problème ou processus de révision de document. 
   
 Il est possible d’accepter ou de remplacer les choix avancés de traitement de l’étape suivante de eDiscovery. Si vous souhaitez effectuer une étape différente de l’étape suivante recommandée, cliquez sur l' **étape suivante** figurant dans la boîte de dialogue Affichage du problème développé dans la boîte de dialogue, cliquez sur le bouton **modifier** en regard de l’étape suivante, puis sélectionnez une autre étape suivante. 
   

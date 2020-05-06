@@ -15,13 +15,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: Utilisez l’onglet communications dans un cas avancé de découverte électronique pour gérer le flux de travail de notification des dépositaires.
-ms.openlocfilehash: b4d3c4c3ed132914ebe46b03eb65d24e073ee687
-ms.sourcegitcommit: 6d672eb8287526a9db90df5fa85bc4984a7047d1
+description: Utilisez l’outil de communication dans un cas avancé de découverte électronique pour envoyer, collecter et suivre les notifications de conservation légale.
+ms.custom: seo-marvel-mar2020
+ms.openlocfilehash: 0bcbdef1c1393ff3e7f3baf30279909ed3a663f5
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "42280232"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035786"
 ---
 # <a name="create-a-legal-hold-notice"></a>Créer une notice de suspension légale
 

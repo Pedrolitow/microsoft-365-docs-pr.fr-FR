@@ -10,16 +10,19 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
+ms.custom:
+- seo-marvel-mar2020
+- seo-marvel-apr2020
 search.appverid:
 - MOE150
 - MET150
-description: Le gestionnaire de conformité Microsoft est un outil d’évaluation des risques gratuit basé sur un flux de travail dans le portail d’approbation de service Microsoft. Le gestionnaire de conformité vous permet de suivre, d’affecter et de vérifier les activités de conformité réglementaire liées aux services Cloud de Microsoft.
-ms.openlocfilehash: 31a56f7cba8bb8957d758ca2905853f26d1f8edf
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: Découvrez le gestionnaire de conformité Microsoft, un outil d’évaluation des risques gratuit basé sur un flux de travail dans le portail d’approbation de service Microsoft.
+ms.openlocfilehash: cc62e989a3ef0a40a05c5f2e34e6e15dc6e7f399
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632989"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44046282"
 ---
 # <a name="microsoft-compliance-manager-preview"></a>Gestionnaire de conformité Microsoft (aperçu)
 
@@ -42,17 +45,15 @@ Avec le gestionnaire de conformité, votre organisation peut :
 - Fournir un référentiel sécurisé pour le téléchargement et la gestion des preuves et d’autres artefacts liés à vos activités de conformité.
 - Produire des rapports Microsoft Excel détaillés pour documenter les activités de conformité effectuées par Microsoft et votre organisation pour les auditeurs, les organismes de réglementation et d’autres vérificateurs de conformité.
 
-> [!NOTE]
-> Les actions client fournies dans le gestionnaire de conformité sont des recommandations ; Il revient à votre organisation d’évaluer l’efficacité de ces recommandations dans son environnement réglementaire respectif avant la mise en œuvre. Les recommandations du Gestionnaire de conformité ne doivent pas être interprétées comme des garanties de conformité.
+  
+> [!IMPORTANT]
+> Les recommandations du Gestionnaire de conformité ne doivent pas être interprétées comme une garantie de conformité. Il vous revient d’évaluer et de valider l’efficacité des contrôles client selon votre environnement réglementaire. Ces services sont actuellement en version préliminaire et soumis aux conditions des [services en ligne](https://go.microsoft.com/fwlink/?linkid=2108910). Consultez également [les conseils Microsoft 365 sur les licences pour la sécurité et la conformité](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
 
 ## <a name="relationship-to-compliance-score"></a>Relation avec le score de conformité
 
 [Microsoft Compliance score (Preview)](compliance-score.md) est une fonctionnalité du centre de conformité Microsoft 365 qui fournit une vue de niveau supérieur à la position de conformité de votre organisation. Il calcule un score basé sur les risques mesurant votre progression dans la réalisation d’actions qui contribuent à réduire les risques liés à la protection des données et aux normes réglementaires. Connaître votre score de conformité global permet à votre organisation de comprendre et de gérer la conformité. Comprendre [Comment le score de conformité est calculé](compliance-score-methodology.md).
 
 Le gestionnaire de conformité partage le même serveur principal avec le score de conformité. Lors de la phase d’aperçu public pour les deux outils, le gestionnaire de conformité est l’endroit où vous allez gérer vos évaluations et les implémentations de contrôles personnalisés. En savoir plus sur la [relation entre le score de conformité et le gestionnaire de conformité](compliance-score-release-notes.md#compliance-score-relationship-to-compliance-manager).
-  
-> [!IMPORTANT]
-> Le score de conformité n’est pas une mesure absolue de la conformité de l’organisation par rapport à une norme ou réglementation particulière. Il exprime le degré d’adoption des contrôles permettant de réduire les risques auxquels sont exposés les données à caractère personnel et la confidentialité individuelle. Aucun service ne peut garantir la conformité avec une norme ou une réglementation, et le score de conformité ne doit pas être interprété comme une garantie de quelque façon que ce soit.
 
 ## <a name="compliance-manager-components"></a>Composants du gestionnaire de conformité
 

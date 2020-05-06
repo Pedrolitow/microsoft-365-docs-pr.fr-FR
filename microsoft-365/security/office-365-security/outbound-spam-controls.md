@@ -16,13 +16,15 @@ search.appverid:
 ms.assetid: 6a601501-a6a8-4559-b2e7-56b59c96a586
 ms.collection:
 - M365-security-compliance
-description: Les administrateurs peuvent découvrir comment Microsoft 365 et Exchange Online Protection (EOP) protègent les clients contre le courrier indésirable sortant et ce qu’ils doivent faire si vous avez besoin d’envoyer des publipostages en masse.
-ms.openlocfilehash: 71fe5d5ba1ffbecc77b646a06c3da4d9681ee3ea
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom:
+- seo-marvel-apr2020
+description: Découvrez en tant qu’administrateur comment Office 365 et Exchange Online Protection (EOP) protège les clients contre le courrier indésirable sortant et ce qu’il convient de faire si vous avez besoin d’envoyer des publipostages en masse.
+ms.openlocfilehash: ffedcf68489914865c00eb68aecfa6c74e519ee2
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634495"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44033925"
 ---
 # <a name="outbound-spam-protection"></a>Protection contre le courrier indésirable sortant
 

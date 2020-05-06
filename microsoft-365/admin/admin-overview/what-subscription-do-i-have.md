@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: 092252f8-08df-4cdb-a8d2-b8653caa29a1
 description: Découvrez comment vérifier les abonnements de votre organisation en accédant à la page abonnements.
 ms.custom: okr_SMB
-ms.openlocfilehash: a8ebff405d57578142318a2111db1dcb53d54435
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: b855c533627aadf6117e6830d7484276003ea665
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43621429"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44045211"
 ---
 # <a name="what-subscription-do-i-have"></a>Quel abonnement ai-je ?
 
@@ -40,9 +40,9 @@ Si vous êtes administrateur, vous pouvez vérifier les abonnements de votre org
 > [!NOTE]
 > Si le nouveau Centre d’administration Microsoft 365 n’est pas celui que vous utilisez, vous pouvez l’activer en sélectionnant le bouton bascule **Essayer le nouveau Centre d’administration** situé en haut de la page d’accueil.
 
-1. Dans le Centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produits et services</a>.
+1. Dans le centre d’administration, accédez à la page **facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">de vos produits</a> .
 
-2. Vos abonnements s’affichent dans la page **produits & services** , ainsi que le nom de l’abonnement, des informations sur l’abonnement et son état. Pour afficher une vue condensée, sélectionnez **affichage tableau**.
+2. Vos abonnements s’affichent sur la page **vos produits** , avec le nom de l’abonnement, des informations sur l’abonnement et son état. Pour afficher une vue condensée, sélectionnez **affichage tableau**.
 
 ::: moniker-end
   

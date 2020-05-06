@@ -1,5 +1,5 @@
 ---
-title: Surveillance et création de rapports sur les appareils dans le centre de sécurité Microsoft 365
+title: Rapports sur les & de surveillance des appareils-Centre de sécurité
 description: Décrit comment maintenir vos appareils sécurisés, mis à jour et détecter les menaces potentielles au sein de votre organisation
 keywords: sécurité, programmes malveillants, Microsoft 365, M365, centre de sécurité, moniteur, rapport, appareils
 ms.prod: microsoft-365-enterprise
@@ -14,12 +14,13 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: f8adb04e968f19c6b0577127e4f9c0ceb7d9e315
-ms.sourcegitcommit: 1e9ce51efa583c33625299d17e37f58048a4169c
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 870d2ce1f70028c917cc8b165e8a1c55b746100a
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "43804883"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44033997"
 ---
 # <a name="device-monitoring-and-reporting-in-the-microsoft-365-security-center"></a>Surveillance et création de rapports sur les appareils dans le centre de sécurité Microsoft 365
 
