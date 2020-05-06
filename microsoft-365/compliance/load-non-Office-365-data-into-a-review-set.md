@@ -15,13 +15,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: Importez des données non-Microsoft 365 vers un jeu de réexamen dans un cas avancé de découverte électronique.
-ms.openlocfilehash: 823ecbdbd50adbb1925bcda154db2c1b8ba24cca
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: Découvrez comment importer des données non-Microsoft 365 vers un jeu de réexamen pour analyse dans un cas avancé de découverte électronique.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: ed4a26ea1dd68b9198cce67ce0f97580ed4b2a99
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632639"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034422"
 ---
 # <a name="load-non-microsoft-365-data-into-a-review-set"></a>Charger des données non-Microsoft 365 dans un jeu de révision
 

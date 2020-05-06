@@ -21,12 +21,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Configurez les fonctionnalités de conformité pour empêcher toute perte de données et protéger les informations sensibles de vos clients.
-ms.openlocfilehash: e0d853223c7e6f455cba6e68ad173b137992d863
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 523d020587bcf16e46263b88ee7654b9c786e7a2
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635121"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44048062"
 ---
 # <a name="set-up-compliance-features"></a>Configurer les fonctionnalités de conformité
 
@@ -54,7 +54,7 @@ Pour placer une boîte aux lettres en conservation pour litige, dans le centre d
     
 4. Dans la boîte de dialogue **conservation pour litige** , vous pouvez spécifier la durée de la conservation pour litige dans le champ Durée de la **conservation pour litige** . Laissez le champ vide si vous voulez placer un blocage infini. Vous pouvez également ajouter des notes et diriger le propriétaire de la boîte aux lettres vers un site Web vous devrez peut-être en savoir plus sur la suspension pour litige. \>**Enregistrer**.
     
-**Rétention :** Vous pouvez activer des stratégies de rétention personnalisées, par exemple, pour conserver un certain temps ou supprimer définitivement le contenu à la fin de la période de rétention. Pour en savoir plus, consultez la rubrique [vue d’ensemble des stratégies de rétention](https://support.office.com/article/5e377752-700d-4870-9b6d-12bfc12d2423).
+**Rétention :** Vous pouvez activer des stratégies de rétention personnalisées, par exemple, pour conserver un certain temps ou supprimer définitivement le contenu à la fin de la période de rétention. Pour en savoir plus, consultez la rubrique [vue d’ensemble des stratégies de rétention](https://docs.microsoft.com/microsoft-365/compliance/retention-policies).
 
 ## <a name="set-up-sensitivity-labels"></a>Configurer les étiquettes de confidentialité
 

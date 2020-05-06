@@ -15,13 +15,14 @@ search.appverid:
 ms.assetid: 0cbaccf8-4afc-47e3-a36d-a84598a55fb8
 ms.collection:
 - M365-security-compliance
-description: Les administrateurs peuvent apprendre à configurer leur environnement Exchange local pour acheminer le courrier indésirable vers les dossiers de courrier indésirable des utilisateurs locaux s’ils utilisent Exchange Online Protection (EOP) autonome dans des environnements hybrides.
-ms.openlocfilehash: f2964324c6d9104719fc79ff31f14b4b94c627cc
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: Les administrateurs peuvent apprendre à acheminer le courrier indésirable vers les dossiers de courrier indésirable de l’utilisateur dans un environnement hybride Exchange Online Protection.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 14193fecf90a6f2ddde05fbfdaded0ff2bcb5875
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43621281"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44036571"
 ---
 # <a name="configure-standalone-eop-to-deliver-spam-to-the-junk-email-folder-in-hybrid-environments"></a>Configurer EOP autonome pour envoyer du courrier indésirable dans le dossier courrier indésirable dans des environnements hybrides
 

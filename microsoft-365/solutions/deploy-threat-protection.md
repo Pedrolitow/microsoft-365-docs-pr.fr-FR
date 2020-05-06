@@ -1,6 +1,6 @@
 ---
 title: Déployer les fonctionnalités de protection contre les menaces sur Microsoft 365
-description: Découvrez comment déployer les fonctionnalités de protection contre les menaces dans Microsoft 365 E5.
+description: Découvrez comment déployer les services et les fonctionnalités de protection contre les menaces à travers Microsoft 365 E5.
 ms.author: bcarter
 author: brendacarter
 manager: dansimp
@@ -13,12 +13,12 @@ ms.collection:
 ms.custom:
 - M365solutions
 f1.keywords: NOCSH
-ms.openlocfilehash: ff6854636c13e6c1ea40cf4cc6fa39d7b2b340b4
-ms.sourcegitcommit: 997f6227f33c3683ade9672e881d09216df22ee9
+ms.openlocfilehash: 81b069bb5c316bea211bee98c293f2d1fcdd2422
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "44016095"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44046261"
 ---
 # <a name="deploy-threat-protection-capabilities-across-microsoft-365"></a>Déployer les fonctionnalités de protection contre les menaces sur Microsoft 365
 
@@ -48,7 +48,16 @@ L’illustration suivante représente un chemin d’accès recommandé pour le d
 
 ![Signaux de protection contre les menaces M365](../media/solutions-architecture-center/deploy-threat-protection-across-m365.png)
 
-Les organisations avec plusieurs équipes de sécurité peuvent implémenter ces fonctionnalités en parallèle.
+|Solution/fonctionnalités  |Description  |
+|---------|---------|
+|Authentification multifacteur et accès conditionnel     |Protégez-vous contre les identités et les appareils compromis. Commencez par cette protection, car elle est fondamentale. La configuration recommandée dans ce guide inclut la protection des identités Azure AD comme condition préalable.     |
+|Azure Advanced Threat Protection     |  Solution de sécurité basée sur le Cloud qui tire parti de vos signaux Active Directory sur site pour identifier, détecter et examiner les menaces avancées, les identités compromises et les actions malveillantes dirigées vers votre organisation. Concentrez-vous sur cette étape, car elle protège votre infrastructure local et votre infrastructure cloud, ne dispose d’aucune dépendance ou prérequis et peut fournir des avantages immédiats.       | 
+|Office 365-Protection avancée contre les menaces     | Protège votre organisation contre les menaces malveillantes posées par les messages électroniques, les liens (URL) et les outils de collaboration. Protections contre les programmes malveillants, le hameçonnage, l’usurpation d’identité et d’autres types d’attaques. Cette étape est recommandée en raison du fait que le contrôle des modifications, la migration des paramètres du système en place et d’autres considérations peuvent mettre plus de temps à déployer. <br><br>Remarque : Vérifiez également que vous configurez les fonctionnalités de protection contre les menaces incluses dans tous les abonnements Office 365 (Exchange Online Protection).       |
+|Microsoft Defender – Protection avancée contre les menaces    | Une plateforme de protection des points de terminaison qui permet de prévenir, de détecter, d’examiner et de répondre aux menaces avancées. Le déploiement prend plus de temps, mais peut être réalisé en parallèle avec les autres fonctionnalités si d’autres administrateurs sont responsables.   |
+|Microsoft Cloud App Security     |   Un courtier en matière de sécurité d’accès au Cloud pour la découverte, l’enquête et la gouvernance. Vous pouvez activer ce début avant de commencer à collecter des données et des informations. L’implémentation d’informations et d’autres protections ciblées dans vos applications SaaS implique une planification et peut prendre plus de temps.       | 
+
+> [!TIP]
+> Les organisations avec plusieurs équipes de sécurité peuvent implémenter ces fonctionnalités en parallèle.
 
 ## <a name="deploy-your-threat-protection-solution"></a>Déployer votre solution de protection contre les menaces
 

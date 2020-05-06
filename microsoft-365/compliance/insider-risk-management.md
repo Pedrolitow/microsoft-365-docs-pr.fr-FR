@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 509b8643ffd2b9ee8b364615e2ed3f56afe84733
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: e820eed8e47adf040b267ffc0a3cf3e23410d7ef
+ms.sourcegitcommit: e55e4747d3b838baacab8985aefc24aac245c431
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637472"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44043305"
 ---
 # <a name="insider-risk-management-in-microsoft-365"></a>Gestion des risques internes dans Microsoft 365
 
@@ -132,4 +132,5 @@ Les communications entre les employés et les employés sont souvent une source 
 
 ## <a name="ready-to-get-started"></a>Vous êtes prêt ?
 
-Vous êtes prêt à configurer la gestion des risques initiés pour votre organisation ? Consultez la rubrique [prise en main de la gestion des risques initiés](insider-risk-management-configure.md) pour configurer les conditions préalables, créer des stratégies et commencer à recevoir des alertes.
+- Pour plus d’informations sur les stratégies de gestion des risques Insider dans votre organisation, reportez-vous à la rubrique [plan for Insider Management Management](insider-risk-management-plan.md) .
+- Consultez la rubrique [prise en main de la gestion des risques initiés](insider-risk-management-configure.md) pour configurer les conditions préalables, créer des stratégies et commencer à recevoir des alertes.

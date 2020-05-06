@@ -15,13 +15,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: ''
-ms.openlocfilehash: 7c59b36e3594d653f188742890ea849e2595a648
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: Les statistiques de recherche sont un moyen efficace de valider les résultats de la recherche et s’affichent sous état sur la page de menu volant détails de la recherche.
+ms.custom: seo-marvel-mar2020
+ms.openlocfilehash: dc6aea96e86388ae7ecfa0fa545bc5571eeff0cd
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42081368"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035836"
 ---
 # <a name="search-statistics"></a>Statistiques de recherche
 

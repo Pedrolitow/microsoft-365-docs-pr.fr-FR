@@ -1,6 +1,6 @@
 ---
 title: Demandes des personnes concernées par le traitement des données pour Visual Studio Family concernant le RGPD et le CCPA
-description: Demandes des personnes concernées par le traitement des données pour Visual Studio Family concernant le RGPD et le CCPA
+description: Découvrez comment utiliser les outils Microsoft pour gérer les demandes de la personne concernée familiales dans Visual Studio pour les RGPD et CCPA.
 keywords: Visual Studio, Visual Studio Code, Visual Studio pour Mac, documentation Visual Studio, confidentialité, RGPD, CCPA
 localization_priority: Priority
 audience: itpro
@@ -18,12 +18,13 @@ ms.collection:
 ms.workload:
 - multiple
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: 81dfd4b0c0724e2ab40113c1d134e0932c215c8f
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: f6d5e4fe6db8ef776435cc75da04ac5d2e038a47
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42557984"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44036299"
 ---
 # <a name="visual-studio-family-data-subject-requests-for-the-gdpr-and-ccpa"></a>Demandes des personnes concernées par le traitement des données pour Visual Studio Family concernant le RGPD et le CCPA
 

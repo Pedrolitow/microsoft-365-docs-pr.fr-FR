@@ -1,6 +1,5 @@
 ---
 title: Demandes des personnes concernées pour le RGPD et le CCPA
-description: ''
 keywords: Microsoft 365, Microsoft 365 Éducation, documentation Microsoft 365, RGPD, CCPA
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
@@ -15,18 +14,20 @@ ms.collection:
 - GDPR
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: fc5f4f8752d17595cfafaa39626f0d36675d7c82
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+description: Découvrez comment effectuer des demandes de la personne concernée (DPC) dans le cadre des règlements généraux sur la protection des données (GPDR) et le California Consumer Privacy Act (CCPA) à l’aide de produits et services Microsoft.
+ms.custom: seo-marvel-mar2020
+ms.openlocfilehash: 7342c0ae4105c05ae2e2956df51581d3afedb286
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42558054"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035472"
 ---
 # <a name="data-subject-requests-and-the-gdpr-and-ccpa"></a>Demandes des personnes concernées et le RGPD et CCPA
 
 Le règlement général sur la protection des données (RGPD) présente de nouvelles règles pour les organisations qui offrent des produits et des services aux membres de l’Union européenne (UE), ou qui collectent et analysent des données pour les résidents de l’UE quel que soit l’endroit où vous vous trouvez et celui où se trouve votre entreprise. Pour plus de détails, consultez la [rubrique Synthèse RGPD](gdpr.md).
 
-De même, le CCPA (California Consumer Privacy Act), prévoit des droits de confidentialité et des obligations pour les consommateurs de la Californie, y compris des droits similaires aux droits des personnes concernées du RGPD, tels que le droit de supprimer, d’accéder et de recevoir (portabilité) leurs informations personnelles.  Le CCPA prévoit également des publications d’informations, des protections contre la discrimination des personnes faisant usage de leurs droits et la possibilité d’opter pour ou contre certains transferts de données classés en tant que « ventes ». Ce document vous permet d’obtenir des informations sur le traitement des demandes des personnes concernées (DPC) dans le cadre du RGPD et du CCPA à l’aide des produits etdes services Microsoft.
+De même, le CCPA (California Consumer Privacy Act) prévoit des droits de confidentialité et des obligations pour les consommateurs de la Californie, y compris des droits similaires aux droits des personnes concernées en vertu du RGPD, tels que le droit de supprimer, d’accéder et de recevoir (portabilité) leurs informations personnelles.  Le CCPA prévoit également des publications d’informations, des protections contre la discrimination des personnes faisant usage de leurs droits et la possibilité d’opter pour ou contre certains transferts de données classés en tant que « ventes ». Ce document vous permet d’obtenir des informations sur le traitement des demandes des personnes concernées (DPC) dans le cadre du RGPD et du CCPA à l’aide des produits etdes services Microsoft.
 
 - [Office 365](gdpr-dsr-Office365.md)
 - [Azure](gdpr-dsr-Azure.md)
@@ -49,18 +50,18 @@ Définitions utiles pour les termes RGPD utilisés dans ce document :
 
 Le Règlement général sur la protection des données (RGPD) accorde le droit aux individus (appelés, dans le règlement, personnes concernées) de gérer les données personnelles qui ont été collectées par un employeur ou tout autre type d’agence ou d’organisation (également appelé responsable du traitement des données ou responsable du traitement). Le RGPD confère aux personnes concernées des droits précis sur leurs données personnelles ; ces droits vous donnent la possibilité d’obtenir des copies de ces données, de les faire modifier, d’en limiter le traitement, de les supprimer ou de les recevoir dans un format électronique afin de pouvoir les transférer à un autre responsable du traitement.
 
-Le CCPA (California Consumer Privacy Act), prévoit des droits de confidentialité et des obligations pour les consommateurs de la Californie, y compris des droits similaires aux droits des personnes concernées du RGPD, tels que le droit de supprimer, d’accéder et de recevoir (portabilité) leurs informations personnelles.  
+Le CCPA (California Consumer Privacy Act) prévoit des droits de confidentialité et des obligations pour les consommateurs de la Californie, y compris des droits similaires aux droits des personnes concernées en vertu du RGPD, tels que le droit de supprimer, d’accéder et de recevoir (portabilité) leurs informations personnelles.  
 
 En tant que contrôleur, vous avez l’obligation de prendre en compte chaque DPC et de fournir une réponse de fond en effectuant l’action demandée ou en indiquant pourquoi la DPC ne peut pas être traitée par le contrôleur. Un contrôleur doit consulter ses propres conseillers juridiques ou de conformité en relation avec la destruction correcte d’une DSR donnée.
 
-Plusieurs processus peuvent impliquer l’exécution d’une DSR, conformément aux règles de conformité RGPD de votre organisation.
+Plusieurs processus peuvent impliquer l’exécution d’une DPC, conformément aux règles de conformité RGPD de votre organisation.
   
 - **Découverte**. Processus de détermination des données nécessaires à l’exécution d’une DSR.
 - **Accès**. Récupération et transmission potentielle à la personne concernée par les informations découvertes.
 - **Rectifier**. Implémentation des modifications ou d’autres modifications de données personnelles demandées.
 - **Restreindre**. Modification de l’accès ou du traitement des données de personne en restreignant l’accès ou en supprimant des données du Cloud Microsoft.
-- **Exporter**. Fournir un format « structuré, communément utilisé, lisible par l’ordinateur » de données personnelles à la personne concernée, comme fourni par le « droit de la portabilité des données » du RGPD.
-- **Supprimer**. Suppression définitive de données personnelles du Microsoft Cloud.
+- **Exporter**. Fournir un « format structuré, communément utilisé, lisible par l’ordinateur » de données personnelles à la personne concernée, comme fourni par le « droit de portabilité des données » du RGPD.
+- **Supprimer** Suppression définitive de données personnelles du Microsoft Cloud.
 
 ## <a name="specific-dsr-considerations"></a>Considérations spécifiques concernant une DSR
 
@@ -78,7 +79,7 @@ Les journaux et données associées générés par Microsoft peuvent contenir de
 
 ### <a name="yammer-and-kaizala"></a>Yammer et Kaizala
 
-La suppression d’un compte d’utilisateur ne supprime pas les journaux générées par le système pour Yammer et Kaizala. Pour supprimer les données de ces applications, voir une des ressources suivantes :
+La suppression du compte d'un utilisateur ne supprime pas les journaux générés par le système pour Yammer et Kaizala. Pour supprimer les données contenues dans ces applications, consultez l'une des ressources suivantes :
 
 - [Gérer les demandes des personnes concernées RGPD dans Yammer Entreprise](https://docs.microsoft.com/yammer/manage-security-and-compliance/gdpr-requests-in-yammer-enterprise)
 - [Exporter ou supprimer les données organisationnelles d’un utilisateur dans Kaizala](https://docs.microsoft.com/office365/kaizala/export-or-delete-a-user-s-data)

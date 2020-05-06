@@ -1,7 +1,7 @@
 ---
 title: Créer et gérer des règles de détection personnalisées dans Microsoft Threat Protection
 description: Découvrez comment créer et gérer des règles de détection personnalisées sur la base de requêtes de chasse avancées.
-keywords: chasse aux menaces, recherche de menace, recherche sur les menaces informatiques, protection contre les menaces Microsoft, Microsoft 365, MTP, M365, recherche, requête, télémétrie, détections personnalisées, règles, schéma, Kusto, Microsoft 365, protection contre les menaces Microsoft, RBAC, autorisations, Microsoft Defender ATP
+keywords: chasse de menace, recherche de menace, recherche de menace informatique, protection contre les menaces Microsoft, Microsoft 365, MTP, M365, recherche, requête, télémétrie, détections personnalisées, règles, schéma, Kusto, Microsoft 365, protection contre les menaces Microsoft, RBAC, autorisations, Microsoft Defender ATP
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: adb8c7dfa0050ef2eb0d59e1e55d07da7aaa3f39
-ms.sourcegitcommit: 3b2fdf159d7dd962493a3838e3cf0cf429ee2bf2
+ms.openlocfilehash: cdfc23f34d90c9d725ec6fb314728553a987c025
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "42931739"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034863"
 ---
 # <a name="create-and-manage-custom-detections-rules"></a>Créer et gérer des règles de détection personnalisées
 
@@ -114,7 +114,7 @@ Identifiez les colonnes de vos résultats de requête où vous vous attendez à 
 
 Vous pouvez sélectionner une seule colonne pour chaque type d’entité (boîte aux lettres, utilisateur ou appareil). Les colonnes qui ne sont pas renvoyées par votre requête ne peuvent pas être sélectionnées.
 
-### <a name="3-specify-actions-on-files-or-machines"></a>3. spécifiez des actions sur des fichiers ou des ordinateurs.
+### <a name="4-specify-actions-on-files-or-machines"></a>4. spécifiez des actions sur des fichiers ou des ordinateurs.
 Votre règle de détection personnalisée peut effectuer automatiquement des actions sur les fichiers ou les ordinateurs qui sont renvoyés par la requête.
 
 #### <a name="actions-on-machines"></a>Actions sur les ordinateurs
@@ -130,7 +130,7 @@ Lorsque cette option est sélectionnée, l’action du **fichier de quarantaine*
 > [!NOTE]
 > L’action autoriser ou bloquer pour les règles de détection personnalisées n’est pas prise en charge actuellement sur la protection contre les menaces Microsoft.
 
-### <a name="4-set-the-rule-scope"></a>4. définir l’étendue de la règle.
+### <a name="5-set-the-rule-scope"></a>5. définir l’étendue de la règle.
 Définissez l’étendue pour spécifier les appareils couverts par la règle. L’étendue influe sur les règles qui vérifient les périphériques et n’affecte pas les règles qui vérifient uniquement les boîtes aux lettres et les comptes d’utilisateur ou les identités.
 
 Lors de la définition de l’étendue, vous pouvez sélectionner :
@@ -140,7 +140,7 @@ Lors de la définition de l’étendue, vous pouvez sélectionner :
 
 Seules les données provenant d’appareils dans l’étendue seront interrogées. En outre, les actions ne seront effectuées que sur ces appareils.
 
-### <a name="5-review-and-turn-on-the-rule"></a>5. Vérifiez et activez la règle.
+### <a name="6-review-and-turn-on-the-rule"></a>6. Vérifiez et activez la règle.
 Après avoir examiné la règle, cliquez sur **créer** pour l’enregistrer. La règle de détection personnalisée s’exécute immédiatement. Il s’exécute à nouveau en fonction de la fréquence configurée pour vérifier les correspondances, générer des alertes et prendre des mesures de réponse.
 
 ## <a name="manage-existing-custom-detection-rules"></a>Gérer les règles de détection personnalisées existantes

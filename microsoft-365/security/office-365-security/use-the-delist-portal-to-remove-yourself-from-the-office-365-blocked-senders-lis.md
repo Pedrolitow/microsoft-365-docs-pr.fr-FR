@@ -1,5 +1,5 @@
 ---
-title: Utiliser le portail supprimer de la liste pour vous supprimer de la liste des expéditeurs bloqués
+title: Vous supprimer de la liste des expéditeurs bloqués
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -15,15 +15,17 @@ search.appverid:
 ms.assetid: 0bcecdd4-3343-4cc0-9e58-e19d4de515e8
 ms.collection:
 - M365-security-compliance
-description: Vous recevez un message d’erreur lorsque vous essayez d’envoyer un message électronique à un destinataire dont l’adresse de messagerie est dans Microsoft 365 ? Si vous pensez que vous ne devriez pas recevoir le message d’erreur, vous pouvez utiliser le portail supprimer de la liste pour vous supprimer de la liste des expéditeurs bloqués.
-ms.openlocfilehash: 39f2c9335f162f26e8bf07a213236e0e0eefef2a
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom:
+- seo-marvel-apr2020
+description: Dans cet article, vous allez apprendre à utiliser le portail supprimer de la liste pour vous supprimer de la liste des expéditeurs bloqués de Microsoft 365.
+ms.openlocfilehash: 700382a494865b80116cfd8419213ed43b35b8a1
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636403"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034985"
 ---
-# <a name="use-the-delist-portal-to-remove-yourself-from-the-blocked-senders-list"></a>Utiliser le portail supprimer de la liste pour vous supprimer de la liste des expéditeurs bloqués
+# <a name="use-the-delist-portal-to-remove-yourself-from-the-blocked-senders-list"></a>Utilisation du portail Supprimer de la liste pour vous supprimer de la liste des expéditeurs bloqués
 
 Vous recevez un message d’erreur lorsque vous essayez d’envoyer un message électronique à un destinataire dont l’adresse de messagerie est dans Microsoft 365 ? Si vous pensez que vous ne devriez pas recevoir le message d’erreur, vous pouvez utiliser le portail supprimer de la liste pour vous supprimer de la liste des expéditeurs bloqués.
 

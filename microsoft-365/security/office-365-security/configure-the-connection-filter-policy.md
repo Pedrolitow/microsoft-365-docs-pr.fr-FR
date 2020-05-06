@@ -1,5 +1,5 @@
 ---
-title: Configurer la stratégie de filtrage des connexions par défaut, la liste d’adresses IP autorisées, la liste d’adresses IP bloquées, activer ou désactiver la liste verte
+title: Configurer la stratégie de filtrage des connexions par défaut
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -15,13 +15,15 @@ search.appverid:
 ms.assetid: 6ae78c12-7bbe-44fa-ab13-c3768387d0e3
 ms.collection:
 - M365-security-compliance
-description: Pour vous assurer que le courrier électronique envoyé par des personnes de confiance n’est pas bloqué, vous pouvez utiliser la stratégie de filtrage des connexions pour créer une liste verte d’adresses IP que vous approuvez. Vous pouvez également créer une liste d’adresses IP bloquées d’expéditeurs bloqués.
-ms.openlocfilehash: 54e68c79f78bb1408684ac583edff137cb687b53
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom:
+- seo-marvel-apr2020
+description: Découvrez comment configurer le filtrage des connexions dans Office 365 pour autoriser ou bloquer les courriers électroniques provenant de serveurs de messagerie.
+ms.openlocfilehash: 0848e9a59df8c312891add29d14eec2dfed420df
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637745"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035081"
 ---
 # <a name="configure-connection-filtering"></a>Configuration du filtrage des connexions
 
@@ -44,7 +46,7 @@ Cette rubrique décrit comment configurer la stratégie de filtrage des connexio
 
 - Pour vous connecter à Exchange Online PowerShell, voir [Connexion à Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell). Pour vous connecter à un service Exchange Online Protection autonome, voir [Se connecter à PowerShell d’Exchange Online Protection](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell).
 
-- Des autorisations doivent vous être attribuées avant de pouvoir exécuter ces procédures. Pour modifier la stratégie de filtrage des connexions par défaut, vous devez être membre des groupes de rôles gestion de l' **organisation** ou **administrateur de sécurité** . Pour un accès en lecture seule à la stratégie de filtrage des connexions par défaut, vous devez être membre du groupe de rôles **lecteur de sécurité** . Pour plus d’informations sur les groupes de rôles dans le centre de sécurité & conformité, consultez [la rubrique autorisations dans le centre de sécurité & conformité](permissions-in-the-security-and-compliance-center.md).
+- Des autorisations doivent vous être attribuées avant de pouvoir exécuter ces procédures. Pour modifier la stratégie de filtrage des connexions par défaut, vous devez être membre des groupes de rôles gestion de l' **organisation** ou **administrateur de sécurité** . Pour un accès en lecture seule à la stratégie de filtrage des connexions par défaut, vous devez être membre du groupe de rôles **lecteur de sécurité** . Pour des informations supplémentaires sur les groupes de rôles dans le Centre de sécurité et conformité, voir [Autorisations dans le Centre de sécurité et conformité](permissions-in-the-security-and-compliance-center.md).
 
 - Pour rechercher les adresses IP sources des serveurs de messagerie (expéditeurs) que vous souhaitez autoriser ou bloquer, vous pouvez vérifier le champ d’en-**tête de connexion**IP dans l’en-tête du message. Pour afficher un en-tête de message dans différents clients de messagerie, consultez la rubrique [afficher les en-têtes de message Internet dans Outlook](https://support.office.com/article/cd039382-dc6e-4264-ac74-c048563d212c).
 

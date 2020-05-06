@@ -14,13 +14,14 @@ search.appverid:
 ms.assetid: 2e3fcfc5-5604-4b88-ac0a-c5c45c03f1db
 ms.collection:
 - M365-security-compliance
-description: Apprenez-en davantage sur les champs et valeurs d’en-tête ajoutés aux messages par Exchange Online Protection.
-ms.openlocfilehash: 8b034da9e6c4ac138e804e07e4654c1e269aeda1
-ms.sourcegitcommit: 4f2129b161eed3f9ddec47494fa19a2a7a553e4f
+description: Découvrez les champs d’en-tête ajoutés par Exchange Online Protection aux messages pour fournir des informations sur le message et la manière dont il a été traité.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 035b081980e52d1e68d21e6227636ed78697b4cc
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "43805210"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44033749"
 ---
 # <a name="anti-spam-message-headers"></a>En-têtes de messages anti-courrier indésirable
 

@@ -15,12 +15,12 @@ ms.collection:
 - M365-security-compliance
 - remotework
 description: Protégez votre courrier électronique et vos données professionnelles contre les menaces informatiques, notamment les ransomware, le hameçonnage et les pièces jointes malveillantes.
-ms.openlocfilehash: 04f59d4f87bda9460930b54818d2ab43933d11e5
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.openlocfilehash: a5d81eed4d3d6edae48cd82109f83320953782a3
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43943542"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44046351"
 ---
 # <a name="top-12-tasks-for-security-teams-to-support-working-from-home"></a>12 premières tâches pour les équipes de sécurité qui prennent en charge le travail à domicile
 
@@ -65,7 +65,7 @@ Normalement, Microsoft vous recommande de donner aux utilisateurs 14 jours pour 
 L’application de ces stratégies ne prend que quelques minutes, mais il est prêt à prendre en charge vos utilisateurs au cours des prochains jours.  
 
 
-|Prévision  |Recommandation  |
+|Plan  |Recommandation  |
 |---------|---------|
 |Plans Microsoft 365 (sans Azure AD P1 ou P2)     |[Activer les paramètres de sécurité par défaut dans Azure ad](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults). Les paramètres de sécurité par défaut dans Azure AD incluent MFA pour les utilisateurs et les administrateurs.   |
 |Microsoft 365 E3 (avec Azure AD P1)     | Utilisez des [stratégies d’accès conditionnel courantes](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-policy-common) pour configurer les stratégies suivantes : <br>- [Exiger l’authentification multifacteur pour les administrateurs](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-admin-mfa) <br>- [Exiger l’authentification multifacteur pour tous les utilisateurs](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa) <br> - [Bloquer l’authentification héritée](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-block-legacy)       |
@@ -100,7 +100,7 @@ Votre administrateur général peut configurer les protections suivantes :
 - [Configurer des liens fiables ATP](office-365-security/set-up-atp-safe-links-policies.md)
 - [Définir des stratégies de pièces jointes fiables de PACM](office-365-security/set-up-atp-safe-attachments-policies.md)
 - [Configurer une liste d’URL personnalisée « ne pas réécrire »](office-365-security/set-up-a-custom-do-not-rewrite-urls-list-with-atp.md)
-- [Configurer une liste d’URL bloquée personnalisée](office-365-security/set-up-a-custom-blocked-urls-list-wtih-atp.md)
+- [Configurer une liste d’URL bloquée personnalisée](office-365-security/set-up-a-custom-blocked-urls-list-atp.md)
 
 Vous devrez collaborer avec votre administrateur Exchange Online et votre administrateur SharePoint Online pour configurer la protection avancée contre les menaces pour ces charges de travail :
 - [Activer la protection avancée contre les menaces pour SharePoint, OneDrive et Microsoft Teams](office-365-security/turn-on-atp-for-spo-odb-and-teams.md)
@@ -131,7 +131,7 @@ Une fois que vous avez configuré un ou plusieurs services de protection avancé
 ## <a name="6-configure-intune-mobile-app-protection-for-phones-and-tablets"></a>6 : configurer la protection des applications mobiles Intune pour les téléphones et les tablettes
 
 Microsoft Intune Mobile Application Management (MAM) vous permet de gérer et de protéger les données de votre organisation sur les téléphones et les tablettes sans gérer ces appareils. Voici le principe de fonctionnement :
-- Vous créez une stratégie de protection des applications (APP) qui détermine les applications sur un appareil qui sont gérées et les comportements autorisés (par exemple, empêcher que les données d’une application gérée soient copiées dans une application non gérée). Vous créez une stratégie pour chaque Platorm (iOS, Android).
+- Vous créez une stratégie de protection des applications (APP) qui détermine les applications sur un appareil qui sont gérées et les comportements autorisés (par exemple, empêcher que les données d’une application gérée soient copiées dans une application non gérée). Vous créez une stratégie pour chaque plateforme (iOS, Android).
 - Après avoir créé les stratégies de protection des applications, vous les appliquez en créant une règle d’accès conditionnel dans Azure AD pour exiger des applications approuvées et la protection des données d’application.
 
 Les stratégies de protection des applications incluent de nombreux paramètres. Heureusement, vous n’avez pas besoin d’en savoir plus sur chaque paramètre et de peser les options. Microsoft facilite l’application d’une configuration de paramètres en recommandant les points de départ. L' [infrastructure de protection des données utilisant des stratégies de protection des applications](https://docs.microsoft.com/mem/intune/apps/app-protection-framework) comprend trois niveaux parmi lesquels vous pouvez choisir. 
@@ -154,7 +154,8 @@ Utilisez les instructions de [mise à jour des stratégies communes pour autoris
 
 Les stratégies de protection d’application mobile Intune que vous avez créées, ainsi que la règle d’accès conditionnel pour exiger les applications approuvées et la protection d’application, s’appliquent aux comptes invités et vous aideront à protéger les données de votre organisation. 
 
-**Remarque**: Si vous avez déjà déployé des PC dans la gestion des appareils pour exiger des PC conformes, vous devrez également exclure les comptes invités de la règle d’accès conditionnel qui applique la conformité de l’appareil. 
+> [!NOTE]
+> Si vous avez déjà déployé des PC dans la gestion des appareils pour exiger des PC conformes, vous devrez également exclure les comptes invités de la règle d’accès conditionnel qui applique la conformité de l’appareil. 
 
 
 ## <a name="8-enroll-pcs-into-device-management-and-require-compliant-pcs"></a>8 : inscrire des PC dans la gestion des appareils et exiger des PC conformes
@@ -179,12 +180,12 @@ Si vous activez rapidement la plupart de vos employés à partir de la maison, c
 
 Les éléments réseau, tels que les concentrateurs VPN, les équipements de sortie réseau centraux (tels que les proxies et les appareils de protection contre la perte de données), la bande passante Internet centrale, les circuits MPLS, les fonctionnalités NAT, etc., sont soudainement soumis à une déformation considérable en raison de la charge de l’ensemble de l’entreprise. Le résultat final est une baisse des performances et de la productivité couplée à une expérience utilisateur médiocre pour les utilisateurs qui s’adaptent au travail à partir de la maison.
 
-Certaines des protections traditionnellement fournies par le routage du trafic via un réseau d’entreprise sont fournies par les applications Cloud auxquelles les utilisateurs accèdent. Si vous avez atteint cette étape dans cet article, vous avez implémenté un ensemble de contrôles de sécurité Cloud sophistiqués pour les données et les services Microsoft 365. Une fois ces contrôles en place, vous pouvez router le trafic des utilisateurs distants directement vers Office 365. Si vous avez toujours besoin d’un lien VPN pour accéder à d’autres applications, vous pouvez grandement améliorer les performances et l’expérience utilisateur en implémentant le tunneling fractionné. Une fois que vous avez obtenu un accord dans votre Oganization, vous pouvez le faire dans une journée par une équipe de réseau bien coordonnée.
+Certaines des protections traditionnellement fournies par le routage du trafic via un réseau d’entreprise sont fournies par les applications Cloud auxquelles les utilisateurs accèdent. Si vous avez atteint cette étape dans cet article, vous avez implémenté un ensemble de contrôles de sécurité Cloud sophistiqués pour les données et les services Microsoft 365. Une fois ces contrôles en place, vous pouvez router le trafic des utilisateurs distants directement vers Office 365. Si vous avez toujours besoin d’un lien VPN pour accéder à d’autres applications, vous pouvez grandement améliorer les performances et l’expérience utilisateur en implémentant le tunneling fractionné. Une fois que vous avez obtenu un accord au sein de votre organisation, vous pouvez le faire dans une journée par une équipe de réseau bien coordonnée.
 
 
 Pour plus d’informations, reportez-vous à ces ressources sur docs :
 - [Vue d’ensemble : optimiser la connectivité pour les utilisateurs distants à l’aide du tunneling VPN Split](https://docs.microsoft.com/Office365/Enterprise/office-365-vpn-split-tunnel)
-- [Implémentation de la segmentation du tunnel par VPN pour Office 365](https://docs.microsoft.com/Office365/Enterprise/office-365-vpn-implement-split-tunnel)
+- [Implémentation d'un tunnel VPN partagé pour Office 365](https://docs.microsoft.com/Office365/Enterprise/office-365-vpn-implement-split-tunnel)
 
 Articles de blog récents sur cette rubrique :
 - [Comment optimiser rapidement le trafic pour le personnel à distance & réduire la charge sur votre infrastructure](https://techcommunity.microsoft.com/t5/office-365-blog/how-to-quickly-optimize-office-365-traffic-for-remote-staff-amp/ba-p/1214571#)

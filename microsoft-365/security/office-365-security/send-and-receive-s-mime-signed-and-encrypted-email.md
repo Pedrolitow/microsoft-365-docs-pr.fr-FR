@@ -1,5 +1,5 @@
 ---
-title: Envoyer et recevoir des messages électroniques chiffrés et signés S/MIME dans Exchange Online
+title: Envoyer & recevoir des messages chiffrés S/MIME chiffrés-Exchange Online
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -14,12 +14,13 @@ search.appverid:
 - MET150
 ms.assetid: 1ce37ada-0a80-4b47-8611-d008979589ff
 description: L'envoi d'un message chiffré S/MIME ou la réponse à un tel message dans Microsoft Outlook est très proche de la procédure avec un message non chiffré.
-ms.openlocfilehash: a7050ed2b2cd37b08bd2e95b90577f36086f0e85
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: b573cb7a0a299b5b8c942b198e141b98b8301087
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41598421"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035395"
 ---
 # <a name="send-and-receive-smime-signed-and-encrypted-email-in-exchange-online"></a>Envoyer et recevoir des messages électroniques chiffrés et signés S/MIME dans Exchange Online
 

@@ -16,13 +16,14 @@ search.appverid:
 ms.assetid: eef8408b-54d3-4d7d-9cf7-ad2af10b2e0e
 ms.collection:
 - M365-security-compliance
-description: Effacer les conditions requises sur les adresses de messagerie pour les messages entrants dans Microsoft 365. À compter du 2017 novembre, le service requiert désormais des adresses conformes à RFC pour empêcher l’usurpation d’identité.
-ms.openlocfilehash: 876ede087b37c381b9e9b557268057122e0987c0
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: 'Pour éviter les attaques par hameçonnage, Microsoft 365 et Outlook.com requièrent désormais une conformité RFC pour from : Addresses.'
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: ef361c7009cc8903ab2721d299412b7d44a4f87c
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43633977"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034081"
 ---
 # <a name="how-microsoft-365-validates-the-from-address-to-prevent-phishing"></a>Comment Microsoft 365 valide l’adresse de pour empêcher le hameçonnage
 
