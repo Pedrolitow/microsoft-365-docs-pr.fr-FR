@@ -15,13 +15,15 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-description: Vous pouvez utiliser l’outil de recherche du journal d’audit pour vous aider à résoudre les problèmes courants, tels que l’enquête sur un compte compromis, la personne qui a configuré le transfert de courrier pour une boîte aux lettres ou la manière dont un utilisateur externe a réussi à se connecter à votre organisation.
-ms.openlocfilehash: 8eaff1fa3eea6a0fa60edcfd43f4f2aedb5a5ffc
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom:
+- seo-marvel-apr2020
+description: Découvrez comment utiliser l’outil de recherche de journal d’audit Office 365 pour résoudre les problèmes de prise en charge courants des comptes de messagerie.
+ms.openlocfilehash: 64ddffab518fdf54dba1ffca87548a65037b8eb7
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636382"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034210"
 ---
 # <a name="search-the-audit-log-to-investigate-common-support-issues"></a>Recherche du journal d’audit pour examiner les problèmes de prise en charge courants
 
@@ -236,6 +238,6 @@ Voici deux exemples de scénarios permettant à un utilisateur de se **connecter
 
     En plus des activités de l' **utilisateur connecté** , d’autres enregistrements d’audit peuvent être renvoyés, qui indiquent qu’un utilisateur de votre organisation a partagé des ressources avec l’utilisateur externe et si l’utilisateur externe a accédé à un document qui lui a été partagé.
 
-- Recherchez les activités de partage SharePoint qui indiquent qu’un fichier a été partagé avec l’utilisateur externe identifié par un **utilisateur connecté à** un enregistrement d’audit. Pour plus d’informations, reportez-vous à [la rubrique utiliser l’audit de partage dans le journal d’audit](use-sharing-auditing.md).
+- Recherchez les activités de partage SharePoint qui indiquent qu’un fichier a été partagé avec l’utilisateur externe identifié par un **utilisateur connecté à** un enregistrement d’audit. Pour plus d’informations, voir [Utiliser l’audit du partage dans le journal d’audit](use-sharing-auditing.md).
 
 - Exportez les résultats de recherche du journal d’audit qui contiennent des enregistrements pertinents pour votre enquête afin que vous puissiez utiliser Excel pour rechercher d’autres activités liées à l’utilisateur externe. Pour plus d’informations, consultez la rubrique [Exporter, configurer et afficher les enregistrements du journal d’audit](export-view-audit-log-records.md).

@@ -15,13 +15,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: Gérer les dépositaires dans un cas avancé eDiscovery.
-ms.openlocfilehash: b497aef50c2bafd58e3b9cf8643a1ecc038520a4
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: Découvrez comment afficher les détails, modifier et modifier en bloc la liste des dépositaires dans un cas avancé de découverte électronique.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 895383f72259fa5e46a46df35925bcc73f62e3a5
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635894"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034176"
 ---
 # <a name="manage-custodians-in-an-advanced-ediscovery-case"></a>Gestion des dépositaires dans un cas avancé eDiscovery
 
@@ -110,7 +111,7 @@ Pour déclencher le processus de réindexation afin d’adresser des éléments 
 
 La réindexation des données du dépositaire est un processus long ; le travail correspondant créé est nommé **réindexation des données des dépositaires**. Vous pouvez suivre l’avancement sous l’onglet **travaux** ou sous l’onglet **dépositaires** en surveillant le statut dans la colonne **État du travail d’indexation** .
 
-Si vous souhaitez en savoir plus, consultez les articles : 
+Pour plus d’informations, reportez-vous aux rubriques suivantes :
 
 - [Utiliser les erreurs de traitement](processing-data-for-case.md)
 
@@ -126,9 +127,9 @@ Pour libérer un dépositaire :
 
 1. Accédez à **ediscovery > Advanced eDiscovery** et ouvrez le cas.
 
-2.  Accédez à l’onglet **dépositaires** .
+2.    Accédez à l’onglet **dépositaires** .
 
-3.  Cliquez sur l' **onglet dépositaires**, puis sélectionnez le dépositaire qui est lancé à partir du cas.
+3.    Cliquez sur l' **onglet dépositaires**, puis sélectionnez le dépositaire qui est lancé à partir du cas.
 
 4. Sur la page flyout, cliquez sur **libérer le dépositaire**.
 
