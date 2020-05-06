@@ -15,12 +15,12 @@ ms.custom: ''
 search.appverid:
 - MET150
 description: Découvrez comment fermer votre compte auprès de Microsoft.
-ms.openlocfilehash: b71cfe8246b5e3e9471c76cf8043bad52840f194
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.openlocfilehash: 43ec3fe2eedc354c0494818f97b01e8de63694c7
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43942852"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44045775"
 ---
 # <a name="close-your-account"></a>Fermer votre compte
 
@@ -40,7 +40,7 @@ Si votre organisation utilise Active Directory qui se synchronise avec Azure AD,
 
 ## <a name="step-2-cancel-all-active-subscriptions"></a>Étape 2 : annuler tous les abonnements actifs
 
-1. Dans le centre d’administration, accédez à la page produits de **facturation** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">& services</a> .
+1. Dans le centre d’administration, accédez à la page **facturation** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">de vos produits</a> .
 
 2. Si la liste abonnements est affichée en mode **table** , cliquez sur la droite sur **cartes**.
 
@@ -52,7 +52,7 @@ Si votre organisation utilise Active Directory qui se synchronise avec Azure AD,
 
 ## <a name="step-3-delete-all-disabled-subscriptions"></a>Étape 3 : supprimer tous les abonnements désactivés
 
-1. Dans le centre d’administration, accédez à la page produits de **facturation** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">& services</a> .
+1. Dans le centre d’administration, accédez à la page **facturation** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">de vos produits</a> .
 
 2. Si la liste abonnements est affichée en mode **table** , cliquez sur la droite sur **cartes**.
 

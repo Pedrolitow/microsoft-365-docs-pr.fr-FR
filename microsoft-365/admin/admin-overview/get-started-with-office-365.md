@@ -22,12 +22,12 @@ search.appverid:
 - GEA150
 ms.assetid: d6466f0d-5d13-464a-adcb-00906ae87029
 description: Découvrez comment configurer et utiliser Microsoft 365 sur votre ordinateur, votre téléphone et votre tablette.
-ms.openlocfilehash: fd52b12ab008e2c8d7b7a4476ae2212e01e1bb10
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 6db85e57757d627c22767289761b4cb3120b3716
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43623917"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44049422"
 ---
 # <a name="get-started"></a>Prise en main
 
@@ -60,7 +60,7 @@ Voici quelques ressources pour vous aider à commencer.
   
 - [Formation pour les administrateurs](https://support.office.com/article/e990f8ff-56d7-450e-ad9f-74ae8718ef09.aspx): Obtenez des liens vers des cours en ligne gratuits pour les administrateurs.
     
-- [Aide de l’administrateur](https://support.office.com/article/17d3ff3f-3601-466e-b5a1-482b31cfb791.aspx): Obtenez des informations sur les tâches principales, la prise en main des outils d’administration et la résolution des problèmes.
+- [Aide de l’administrateur](https://docs.microsoft.com/microsoft-365/admin/admin-home): Obtenez des informations sur les tâches principales, la prise en main des outils d’administration et la résolution des problèmes.
     
 - [Contacter le support-aide de l’administrateur](../contact-support-for-business-products.md) : appelez-nous, ouvrez une demande en ligne ou laissez l’aide communautaire. 
     

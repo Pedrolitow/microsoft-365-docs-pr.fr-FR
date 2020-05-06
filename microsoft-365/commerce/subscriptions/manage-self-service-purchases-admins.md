@@ -14,12 +14,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Les administrateurs peuvent apprendre à gérer les achats en libre-service effectués par les utilisateurs au sein de leur organisation.
-ms.openlocfilehash: ab0e98963e1274925fcf678307907a93eafc9663
-ms.sourcegitcommit: 9c335d110e0b499501edc8a31b987641819118a1
+ms.openlocfilehash: 7074a829bed3e65a160a9a33afb4f2b130f6c8d1
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/04/2020
-ms.locfileid: "42409629"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44046179"
 ---
 # <a name="manage-self-service-purchases-admin"></a>Gérer les achats libre-service (administrateur)
 
@@ -29,7 +29,7 @@ Vous pouvez également contrôler si les utilisateurs de votre organisation peuv
 
 ## <a name="view-self-service-subscriptions"></a>Afficher les abonnements en libre-service
 
-1. Dans le centre d’administration, accédez à la page produits de **facturation** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">& services</a> .
+1. Dans le centre d’administration, accédez à la page **facturation** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">de vos produits</a> .
 
 2. En regard d' **affiner les résultats**, dans la liste déroulante **type de compte** , choisissez **self-service**.
 
@@ -56,7 +56,7 @@ Vous pouvez désactiver ou activer les achats en libre-service pour les utilisat
 
 Vous pouvez utiliser le module PowerShell **MSCommerce** pour :
 
-- Afficher l’État par défaut de **** la valeur &mdash; du paramètre AllowSelfServicePurchase, qu’elle soit activée ou désactivée par le produit
+- Afficher l’État par défaut de **AllowSelfServicePurchase** la valeur &mdash; du paramètre AllowSelfServicePurchase, qu’elle soit activée ou désactivée par le produit
 - Afficher la liste des produits applicables et indiquer si les achats en libre-service sont activés ou désactivés
 - Afficher ou modifier le paramètre actuel d’un produit spécifique pour l’activer ou le désactiver
 

@@ -11,13 +11,14 @@ ms.topic: hub-page
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 70ab4af2-fec4-4886-8e12-27d348649204
-description: Voici quelques éléments que vous devez connaître avant de commencer à utiliser EOP.
-ms.openlocfilehash: c86d8dbf71cdfddf0562e9c572dc8d65043e1c69
-ms.sourcegitcommit: d00efe6010185559e742304b55fa2d07127268fa
+description: Découvrez le service de filtrage de courrier électronique hébergé de Microsoft Exchange Online Protection (EOP), notamment comment configurer votre service EOP.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: ee39e051d3be0e3b27013929bdc3d3a948457c9b
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/28/2020
-ms.locfileid: "43032863"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44036535"
 ---
 # <a name="exchange-online-protection"></a>Exchange Online Protection
 
@@ -63,7 +64,7 @@ Le contenu de l’aide pour les administrateurs d’EOP se compose des catégori
 
 Le contenu de l’aide permettant de guider les utilisateurs finaux d’EOP dans la gestion du courrier indésirable contient les rubriques suivantes :
 
-- [Signaler des messages et des fichiers à Microsoft](report-junk-email-messages-to-microsoft.md)
+- [Signalez les messages et fichiers à Microsoft](report-junk-email-messages-to-microsoft.md)
 
 - Les utilisateurs finaux peuvent ajouter des expéditeurs à leur propre liste des expéditeurs approuvés ou liste des expéditeurs bloqués dans Outlook ou Outlook sur le Web. Les administrateurs peuvent également modifier ces listes dans les boîtes aux lettres des utilisateurs. Pour plus d’informations, consultez la rubrique [à propos des paramètres du courrier indésirable dans Outlook](configure-junk-email-settings-on-exo-mailboxes.md#about-junk-email-settings-in-outlook).
 

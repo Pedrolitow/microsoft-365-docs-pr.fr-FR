@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 5e81c9ff65db6ecd4a1ac1995c8a592f4377ae1c
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: e135ceec2ac4abcd0bfd5183fb19089a97dc4bb4
+ms.sourcegitcommit: e55e4747d3b838baacab8985aefc24aac245c431
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42634352"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44043295"
 ---
 # <a name="insider-risk-management-policies"></a>Stratégies de gestion des risques internes
 
@@ -42,7 +42,7 @@ Les modèles de gestion des risques initiés sont des conditions de stratégie p
 
 ### <a name="departing-employee-data-theft"></a>Défaition des vols de données des employés
 
-Lorsque les employés quittent votre organisation, il existe des indicateurs de risque spécifiques généralement associés au vol de données par le fait de sortir des employés. Ce modèle de stratégie donne la priorité à ces indicateurs et concentre la détection et les alertes sur ce domaine à risque. Le vol de données pour le retrait des employés peut inclure le téléchargement de fichiers à partir de SharePoint Online, la copie de fichiers sur des appareils portables tels que des lecteurs USB, l’impression de fichiers et la copie de données vers des services de stockage et de messagerie Cloud personnels à proximité de leur démission de l’emploi et dates de fin. Ce modèle établit la priorité des indicateurs de risque liés à ces activités et la façon dont ils correspondent à l’état d’emploi de l’employé.
+Lorsque les employés quittent votre organisation, il existe des indicateurs de risque spécifiques généralement associés au vol de données par le fait de sortir des employés. Ce modèle de stratégie donne la priorité à ces indicateurs et concentre la détection et les alertes sur ce domaine à risque. Le vol de données pour le retrait des employés peut inclure le téléchargement de fichiers à partir de SharePoint Online, la copie de fichiers sur des appareils portables tels que des lecteurs USB, l’impression de fichiers et la copie de données vers des services de stockage et de messagerie Cloud personnels à proximité de leurs dates de démission et de fin d’emploi. Ce modèle établit la priorité des indicateurs de risque liés à ces activités et la façon dont ils correspondent à l’état d’emploi de l’employé.
 
 >[!IMPORTANT]
 >Lors de l’utilisation de ce modèle, vous devez configurer un connecteur RH Microsoft 365 pour importer régulièrement les informations de date de démission et de cessation d’emploi pour les employés de votre organisation. Pour obtenir des conseils détaillés sur la configuration du connecteur RH Microsoft 365 pour votre organisation, voir la rubrique [importer des données avec le connecteur RH](import-hr-data.md) .
@@ -60,13 +60,13 @@ Détecter et prendre des mesures pour empêcher le comportement offensant et abu
 
 ## <a name="policy-settings"></a>Paramètres de stratégie
 
-Les paramètres des risques internes s’appliquent à toutes les stratégies de gestion des risques internes, quel que soit le modèle que vous avez choisi lors de la création d’une stratégie. Les paramètres sont configurés à l’aide du contrôle **Insider Risk Settings* situé en haut de tous les onglets de gestion des risques Insiders. Ces paramètres contrôlent la confidentialité, les indicateurs, les fenêtres de surveillance et les détections intelligentes.
+Les paramètres des risques internes s’appliquent à toutes les stratégies de gestion des risques internes, quel que soit le modèle que vous avez choisi lors de la création d’une stratégie. Les paramètres sont configurés à l’aide du contrôle des **paramètres des risques Insiders** situé en haut de tous les onglets de gestion des risques Insiders. Ces paramètres contrôlent la confidentialité, les indicateurs, les fenêtres de surveillance et les détections intelligentes.
 
 ### <a name="privacy"></a>Confidentialité
 
 La protection de la confidentialité des utilisateurs qui ont des correspondances de stratégie est importante et peut contribuer à promouvoir l’objection en matière d’analyse des données et d’analyse des alertes relatives aux risques internes. Pour les utilisateurs disposant d’une stratégie de risque Insider, vous pouvez choisir l’un des paramètres suivants :
 
-- **Afficher les versions anonymes des**noms d’utilisateur : les noms d’utilisateur sont rendus anonymes pour empêcher les administrateurs, les investigateurs de données et les relecteurs de voir qui est associé à des alertes de stratégie. Par exemple, un utilisateur « gracieuses Taylor » apparaît avec une psuedonym aléatoire telle que « AnonIS8-988 » dans tous les secteurs de la gestion des risques Insider. Le choix de ce paramètre anonymizes tous les utilisateurs avec des correspondances de stratégie actuelle et passée et s’applique à toutes les stratégies. Les informations de profil utilisateur dans les détails des alertes de risque et des cas d’Insider ne seront pas disponibles lorsque cette option est sélectionnée. Toutefois, les noms d’utilisateur sont affichés lors de l’ajout de nouveaux utilisateurs à des stratégies existantes ou lors de l’affectation d’utilisateurs à de nouvelles stratégies. Si vous choisissez de désactiver ce paramètre, les noms d’utilisateur sont affichés pour tous les utilisateurs qui ont des correspondances de stratégie actuelle ou passée.
+- **Afficher les versions anonymes des**noms d’utilisateur : les noms d’utilisateur sont rendus anonymes pour empêcher les administrateurs, les investigateurs de données et les relecteurs de voir qui est associé à des alertes de stratégie. Par exemple, un utilisateur « gracieuses Taylor » apparaît avec un pseudonyme aléatoire tel que « AnonIS8-988 » dans tous les domaines de l’expérience de gestion des risques inSided. Le choix de ce paramètre anonymizes tous les utilisateurs avec des correspondances de stratégie actuelle et passée et s’applique à toutes les stratégies. Les informations de profil utilisateur dans les détails des alertes de risque et des cas d’Insider ne seront pas disponibles lorsque cette option est sélectionnée. Toutefois, les noms d’utilisateur sont affichés lors de l’ajout de nouveaux utilisateurs à des stratégies existantes ou lors de l’affectation d’utilisateurs à de nouvelles stratégies. Si vous choisissez de désactiver ce paramètre, les noms d’utilisateur s’affichent pour tous les utilisateurs qui ont des correspondances de stratégie actuelle ou passée.
 - **Ne pas afficher les versions anonymes des noms d’utilisateur**: les noms d’utilisateur sont affichés pour toutes les correspondances de stratégie actuelle et passée pour les alertes et les incidents. Les informations de profil utilisateur (nom, titre, alias, organisation ou service) s’affichent pour l’utilisateur pour toutes les alertes et les incidents liés à la gestion des risques Insiders.
 
 ### <a name="indicators"></a>Confirme
@@ -87,14 +87,14 @@ Les périodes de stratégie vous permettent de définir des périodes passées e
 
 ### <a name="intelligent-detections"></a>Détections intelligentes
 
-Les paramètres de détection intelligents permettent d’affiner la manière dont la détection des activités à risque est traitée pour les alertes. Dans certains cas, vous devrez peut-être définir des types de fichiers à ignorer ou vous souhaitez appliquer un niveau de détection pour les fichiers afin de définir une barre minimale pour les alertes. Lorsque vous utilisez des stratégies de langue offensantes, vous devrez peut-être augmenter ou diminuer la sensibilité de la détection pour contrôler la quantité de correspondances de stratégie signalées. Utilisez ces paramètres pour contrôler les exclusions de types de fichiers, les limites de volume de fichiers et la sensibilité de détection de langue offensant.
+Les paramètres de détection intelligents permettent d’affiner la manière dont les détections d’activités à risque sont traitées pour les alertes. Dans certains cas, vous devrez peut-être définir des types de fichiers à ignorer ou vous souhaitez appliquer un niveau de détection pour les fichiers afin de définir une barre minimale pour les alertes. Lorsque vous utilisez des stratégies de langue offensantes, vous devrez peut-être augmenter ou diminuer la sensibilité de la détection pour contrôler la quantité de correspondances de stratégie signalées. Utilisez ces paramètres pour contrôler les exclusions de types de fichiers, les limites de volume de fichiers et la sensibilité de détection de langue offensant.
 
 #### <a name="anomaly-detections"></a>Détections d’anomalies
 
 Les détections anormales incluent des paramètres pour les exclusions de types de fichiers et les limites de volume de fichiers.
 
 - **Exclusions**de types de fichiers : pour exclure des types de fichiers spécifiques de toutes les correspondances de stratégie de gestion des risques Insider, entrez les extensions de types de fichiers séparées par des virgules. Par exemple, pour exclure certains types de fichiers musicaux de la stratégie, vous pouvez entrer *AAC, mp3, WAV, WMA* dans le champ **type de fichier exclusions** . Les fichiers avec ces extensions seront ignorés par toutes les stratégies de gestion des risques Insiders.
-- **Limite de volume de fichiers dépassée**: pour définir un niveau de fichier minimal avant que les alertes d’activité soient consignées dans les stratégies de risque initié, entrez le nombre de fichiers. Par exemple, vous devez entrer « 10 » si vous ne souhaitez pas générer d’alertes relatives aux risques initiés lorsqu’un utilisateur télécharge 10 fichiers ou moins, même si vos stratégies considèrent qu’il s’agit d’une anomalie.
+- **Limite de volume de fichiers dépassée**: pour définir un niveau de fichier minimal avant que les alertes d’activité soient consignées dans les stratégies de risque initié, entrez le nombre de fichiers. Par exemple, vous devez entrer « 10 » si vous ne souhaitez pas générer d’alertes relatives aux risques initiés lorsqu’un utilisateur télécharge 10 fichiers ou moins, même si les stratégies considèrent cette activité comme une anomalie.
 
 #### <a name="offensive-language-detections"></a>Détections de langue choquantes
 

@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 84acd4fc-6eec-4d00-8bed-568f036ae2af
 description: Découvrez comment vérifier votre domaine et configurer les enregistrements DNS pour la messagerie, Skype entreprise Online et d’autres services sur cloudflare pour Microsoft.
-ms.openlocfilehash: 116132d096db61e7004315dcf159fc78dd790d43
-ms.sourcegitcommit: c7f11d851073ef14a69669f6c8b7e0c11e4bb7a1
+ms.openlocfilehash: 36578d8eed2c5630a9ce5abfb355983a26028888
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43939318"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44049070"
 ---
 # <a name="create-dns-records-at-cloudflare-for-microsoft"></a>Créer des enregistrements DNS sur cloudflare pour Microsoft
 
@@ -90,7 +90,7 @@ Avant que vous puissiez utiliser votre domaine avec Microsoft, nous devons véri
     |TXT  <br/> |@  <br/> |30 minutes  <br/> |MS=ms *XXXXXXXX*  <br/> **Remarque :** il s'agit d'un exemple. Utilisez votre valeur spécifique d’**Adresse de destination ou de pointage** ici, à partir du tableau.           [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md)    |
   
     
-5. Cliquez sur **Enregistrer**.
+5. Sélectionnez **Enregistrer**.
   
   
 9. Patientez quelques minutes, le temps que l'enregistrement que vous venez de créer soit mis à jour sur Internet.
@@ -131,11 +131,11 @@ Lorsque Microsoft trouve l’enregistrement TXT approprié, votre domaine est v�
     
     |**Type**|**Nom**|**Mail Server (Serveur de courrier)**|**Priorité**|**TTL**|
     |:-----|:-----|:-----|:-----|:-----|
-    |MX  <br/> |@  <br/> |*\<domain-key\>*  .mail.protection.outlook.com  <br/> **Remarque :** Obtenez votre * \<clé\> de domaine* à partir de votre compte Microsoft 365.   [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md) |0,1  <br/> Pour plus d'informations sur la priorité, voir [Qu'est-ce que la priorité MX ?](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx). <br/>|30 minutes  <br/> |
+    |MX  <br/> |@  <br/> |*\<domain-key\>*  .mail.protection.outlook.com  <br/> **Remarque :** Obtenez votre * \<clé\> de domaine* à partir de votre compte Microsoft 365.   [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md) |0,1  <br/> Pour plus d'informations sur la priorité, voir [Qu'est-ce que la priorité MX ?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq). <br/>|30 minutes  <br/> |
    
 
   
-5. Cliquez sur **Enregistrer**.
+5. Sélectionnez **Enregistrer**.
   
 9. Si d’autres enregistrements MX sont répertoriés dans la section **MX Records (enregistrements MX** ), supprimez-les en sélectionnant l’icône **Delete (X)** . 
   
@@ -170,12 +170,12 @@ Lorsque Microsoft trouve l’enregistrement TXT approprié, votre domaine est v�
   
 5. Sélectionnez l’icône du **trafic DNS** (Cloud orange) pour contourner les serveurs cloudflare.
   
-6. Cliquez sur **Enregistrer**.
+6. Sélectionnez **Enregistrer**.
   
 7. Ajoutez successivement les 5 autres enregistrements CNAME.
 
     
-## <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a>Ajouter un enregistrement TXT pour SPF afin d'éviter le courrier indésirable
+## <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a>Ajoutez un enregistrement TXT pour SPF afin d'éviter le courrier indésirable
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
@@ -196,7 +196,7 @@ Lorsque Microsoft trouve l’enregistrement TXT approprié, votre domaine est v�
     |TXT  <br/> |@  <br/> |30 minutes  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/> **Remarque :** nous vous recommandons de copier et coller cette entrée, afin que l’espacement reste correcte.   |
 
  
-5. Cliquez sur **Enregistrer**.
+5. Sélectionnez **Enregistrer**.
     
 
   
@@ -222,7 +222,7 @@ Lorsque Microsoft trouve l’enregistrement TXT approprié, votre domaine est v�
     |SRV|_sipfederationtls | TCP|Utiliser votre *domain_name*; par exemple, contoso.com   |30 minutes |100 |0,1 |5061 | sipfed.online.lync.com |
 
   
-5. Cliquez sur **Enregistrer**.
+5. Sélectionnez **Enregistrer**.
 
   
 6. Ajoutez l’autre enregistrement SRV en choisissant les valeurs de la deuxième ligne du tableau. 

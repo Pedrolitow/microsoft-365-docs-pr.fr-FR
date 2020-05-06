@@ -1,6 +1,6 @@
 ---
 title: Stratégies de surveillance
-description: En savoir plus sur les stratégies de surveillance
+description: Découvrez comment utiliser les stratégies de surveillance dans Microsoft 365 pour capturer les communications des employés afin de les examiner par les réviseurs désignés.
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -18,13 +18,14 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
+ms.custom: seo-marvel-apr2020
 titleSuffix: Microsoft 365 Compliance
-ms.openlocfilehash: df24ee91482785c725acd5b531c6b138e5e165a7
-ms.sourcegitcommit: 90f7bbba5fc23f10b59c75b2b65d6c0903ce66dd
+ms.openlocfilehash: b0778cd05565057fde8982e791a75801d097046c
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "43930171"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034558"
 ---
 # <a name="supervision-policies"></a>Stratégies de surveillance
 

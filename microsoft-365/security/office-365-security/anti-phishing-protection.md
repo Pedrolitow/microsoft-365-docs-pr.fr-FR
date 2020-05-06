@@ -13,16 +13,18 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 75af74b2-c7ea-4556-a912-8c48e07271d3
-ms.custom: TopSMBIssues
 ms.collection:
 - M365-security-compliance
-description: Microsoft 365 offre une large gamme de protection contre les attaques par hameçonnage par défaut, ainsi que par des fonctionnalités supplémentaires dans Office 365 Advanced Threat Protection (ATP). Cette rubrique présente les ressources en ligne que vous pouvez utiliser pour découvrir et mettre en œuvre des stratégies et des options anti-hameçonnage dans Microsoft 365.
-ms.openlocfilehash: bdab6c05fb9be85c2ffb4914390ecc893fdd162b
-ms.sourcegitcommit: f5cecd77e63ae8b47743d4f6dc3135f5decaf28b
+ms.custom:
+- TopSMBIssues
+- seo-marvel-apr2020
+description: Cet article présente les ressources en ligne disponibles qui peuvent être utilisées pour découvrir et mettre en œuvre des stratégies et des options anti-hameçonnage dans Microsoft 365.
+ms.openlocfilehash: 09d384376b1e44989987c40ef3c7860e4fac6167
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/30/2020
-ms.locfileid: "43949368"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44033761"
 ---
 # <a name="anti-phishing-protection-in-microsoft-365"></a>Protection anti-hameçonnage dans Microsoft 365
 

@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9cdfa29d-7681-4af2-a79d-3e72e7ab9778
 description: Ajoutez de nouveaux employés à Microsoft 365 pour les applications de messagerie, Skype et Office.
-ms.openlocfilehash: 43685a786da7ec43c982f91b4fca554424cad624
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: f25f9445cba31942a58c656d8d7f212dc093024d
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43618895"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44049496"
 ---
 # <a name="add-a-new-employee-to-microsoft-365"></a>Ajouter un nouvel employé à Microsoft 365
 
@@ -82,7 +82,7 @@ Et voici un aide-mémoire pour les aider à démarrer :
 |Configurez Skype entreprise afin de pouvoir vous connecter à vos collègues ou partenaires professionnels dans votre entreprise ou dans le monde entier. Vous pouvez démarrer des conversations avec des appels vocaux, vocaux ou vidéo.  <br/> |[Installez Skype entreprise sur votre ordinateur](https://support.office.com/article/8a0d4da8-9d58-44f9-9759-5c8f340cb3fb.aspx).  <br/> <br/>Pour en savoir plus sur l’utilisation de Skype entreprise, [Regardez une vidéo.](https://support.office.com/article/3a21eca4-434d-41f1-ab06-3d4a268573b7.aspx) <br/> <br/>Avez-vous configuré Skype entreprise afin que vos employés puissent contacter des personnes externes à votre entreprise qui utilisent l’application Skype gratuite ? Si ce n’est pas le cas, indiquez à votre nouvel employé afin qu’il sache ce qu’il faut attendre lors de l’utilisation de Skype entreprise.  <br/> |
 |Installez les applications sur votre appareil mobile si vous souhaitez recevoir des courriers électroniques ou utiliser Skype entreprise sur votre téléphone.  <br/> |Si vous souhaitez configurer l’application mobile Outlook de sorte que vous puissiez recevoir des courriers électroniques via votre téléphone. Pour obtenir des instructions, voir [iOS](https://support.office.com/article/b2de2161-cc1d-49ef-9ef9-81acd1c8e234.aspx), [Android](https://support.office.com/article/886db551-8dfa-4fd5-b835-f8e532091872.aspx), [Windows Phone](https://support.microsoft.com/en-us/office/set-up-email-on-windows-phone-181a112a-be92-49ca-ade5-399264b3d417) <br/> <br/>Si vous souhaitez utiliser Skype entreprise sur votre appareil mobile, téléchargez et installez l’application mobile. Pour obtenir des instructions, voir [iOS](https://support.microsoft.com/en-us/office/install-skype-for-business-on-a-mobile-device-3239c8a3-cf55-4ff0-a967-5de51911c049#OS_Type=iOS), [Android](https://support.microsoft.com/en-us/office/sign-in-to-skype-for-business-on-a-mobile-device-4d1b7dfa-5b0b-4868-bae5-25947fb99e6e#OS_Type=Android), [Windows Phone](https://support.microsoft.com/en-us/office/sign-in-to-skype-for-business-on-a-mobile-device-4d1b7dfa-5b0b-4868-bae5-25947fb99e6e#OS_Type=Windows_Phone) <br/> |
 |Complétez la formation OneDrive entreprise pour savoir comment stocker et organiser vos documents, présentations et feuilles de calcul dans le Cloud.  <br/> |Conservez vos documents professionnels dans le Cloud à l’aide de OneDrive entreprise. Vous pouvez toujours accéder à votre contenu, même si vous êtes connecté à Microsoft 365 sur un autre ordinateur. [Regarder une vidéo pour découvrir comment utiliser votre OneDrive entreprise](https://support.office.com/article/b30da4eb-ddd2-44b6-943b-e6fbfc6b8dde.aspx) <br/><br/> **Formation :** [formation onedrive entreprise](https://support.office.com/article/1f608184-b7e6-43ca-8753-2ff679203132.aspx) (sélectionnez onedrive entreprise).  <br/> |
-|Suivez la formation SharePoint Online pour collaborer avec vos collègues et partager du contenu.  <br/> |La meilleure solution pour conserver les documents auxquels les collègues seront également accessibles est de SharePoint Online.  <br/> <br/>**Formation :** [vidéo : collaborer avec du contenu d’équipe à l’aide de SharePoint Online](https://support.office.com/article/2dd9aeff-7749-4b78-9696-eb0f6267f1f5.aspx) <br/><br/> **Découvrez :** Comment votre organisation utilise-elle SharePoint Online et quels types de documents y sont stockés ? De plus, quels documents sont stockés dans OneDrive entreprise.  <br/> |
+|Suivez la formation SharePoint Online pour collaborer avec vos collègues et partager du contenu.  <br/> |La meilleure solution pour conserver les documents auxquels les collègues seront également accessibles est de SharePoint Online.  <br/> <br/>**Formation :** [vidéo : collaborer avec du contenu d’équipe à l’aide de SharePoint Online](https://support.office.com/article/what-is-sharepoint-online-c17b6824-cc22-478f-8757-497cc6b57121) <br/><br/> **Découvrez :** Comment votre organisation utilise-elle SharePoint Online et quels types de documents y sont stockés ? De plus, quels documents sont stockés dans OneDrive entreprise.  <br/> |
 
    
 ## <a name="related-articles"></a>Articles connexes

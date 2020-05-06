@@ -1,6 +1,6 @@
 ---
 title: RGPD pour SharePoint Server
-description: Découvrez comment satisfaire aux exigences du RGPD dans un environnement SharePoint Server local.
+description: Découvrez comment répondre aux exigences en matière de Règlements généraux sur la protection des données (RGPD) dans SharePoint Server local.
 f1.keywords:
 - NOCSH
 ms.author: mikeplum
@@ -11,12 +11,13 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Priority
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: 6cbcb7f0918d472d953cb0f837adcb23b642a3a3
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 58ddbe98ec5ca6b08e6d6be58c4258265c13e3de
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596391"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44036227"
 ---
 # <a name="gdpr-for-sharepoint-server"></a>RGPD pour SharePoint Server
 
@@ -300,7 +301,7 @@ Lors de la migration des données de SharePoint Server vers SharePoint Online,
 
 Le service de profil utilisateur permet d’importer des données de profil provenant de diverses sources externes. Les requêtes et les mises à jour liées à ces données de profil utilisateur doivent être gérées dans les systèmes dans lesquels les données sont administrées. Si vous effectuez des mises à jour sur le système externe, veillez à synchroniser à nouveau les profils utilisateur dans SharePoint Server.
 
-Suivez la procédure de base pour supprimer les informations personnelles d’un utilisateur de son profil utilisateur SharePoint Server :
+Suivez ces étapes de base pour supprimer les informations personnelles d’un utilisateur de son profil d’utilisateur SharePoint Server :
 
 1.  Supprimez les informations utilisateur sur tout système externe alimentant le profil utilisateur SharePoint Server. Si vous utilisez la synchronisation d’annuaires, l’utilisateur doit être supprimé de l’environnement Active Directory local.
 

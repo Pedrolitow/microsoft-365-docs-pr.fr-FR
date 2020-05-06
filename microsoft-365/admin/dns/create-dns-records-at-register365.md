@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 004030b4-10ad-4026-96e7-011b6afc7e73
 description: Découvrez comment vérifier votre domaine et configurer les enregistrements DNS pour la messagerie, Skype entreprise Online et d’autres services sur Register365 pour Microsoft.
-ms.openlocfilehash: 29aaa225a291880f0fb6b5cd039903d74e3f32a2
-ms.sourcegitcommit: c7f11d851073ef14a69669f6c8b7e0c11e4bb7a1
+ms.openlocfilehash: 056d4dbf923c49b0586ed556f1844cd3b29abe75
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43938851"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44048890"
 ---
 # <a name="create-dns-records-at-register365-for-microsoft"></a>Créer des enregistrements DNS sur Register365 pour Microsoft
 
@@ -82,7 +82,7 @@ Avant que vous puissiez utiliser votre domaine avec Microsoft, nous devons véri
    
     ![Entrée de valeurs dans la page Add/Modify DNS zone (ajouter/modifier la zone DNS)](../../media/22326005-de95-464d-8e33-08ea31a89b2d.png)
   
-4. Cliquez sur **Enregistrer**.
+4. Sélectionnez **Enregistrer**.
     
     (You may have to scroll down.)
     
@@ -130,11 +130,11 @@ Lorsque Microsoft trouve l’enregistrement TXT approprié, votre domaine est v�
     
     |**Host name (Nom d'hôte)**|**Priority (Priorité)**|**Résultat**|
     |:-----|:-----|:-----|
-    |(Laissez ce champ vide.)  <br/> |0,1  <br/> Pour plus d'informations sur la priorité, voir [Qu'est-ce que la priorité MX ?](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx). <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/> **Remarque :** Obtenir votre * \<clé\> de domaine* à partir de votre compte Microsoft.  [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md)     |
+    |(Laissez ce champ vide.)  <br/> |0,1  <br/> Pour plus d'informations sur la priorité, voir [Qu'est-ce que la priorité MX ?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq). <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/> **Remarque :** Obtenir votre * \<clé\> de domaine* à partir de votre compte Microsoft.  [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md)     |
    
     ![Entrée de valeurs dans la page Add/Modify DNS zone (ajouter/modifier la zone DNS)](../../media/2d3645a8-9cb8-435e-b895-5535b6b1fffd.png)
   
-4. Cliquez sur **Enregistrer**.
+4. Sélectionnez **Enregistrer**.
     
     (You may have to scroll down.)
     
@@ -144,7 +144,7 @@ Lorsque Microsoft trouve l’enregistrement TXT approprié, votre domaine est v�
     
     ![Deleting records in the Mail exchange records section](../../media/8cc37e4f-2e85-4242-af0e-78149434167f.png)
   
-6. Cliquez sur **Enregistrer**.
+6. Sélectionnez **Enregistrer**.
     
     (You may have to scroll down.)
     
@@ -181,11 +181,11 @@ Lorsque Microsoft trouve l’enregistrement TXT approprié, votre domaine est v�
    
     ![Entrée de valeurs dans la page Add/Modify DNS zone (ajouter/modifier la zone DNS)](../../media/3b79f0de-9cab-4c98-8fa8-c92b35241e8b.png)
   
-4. Cliquez sur **Enregistrer**.
+4. Sélectionnez **Enregistrer**.
     
     ![Sélectionnez Enregistrer.](../../media/8ded6428-af97-4fd8-9104-477fa22a5586.png)
   
-## <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a>Ajouter un enregistrement TXT pour SPF afin d'éviter le courrier indésirable
+## <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a>Ajoutez un enregistrement TXT pour SPF afin d'éviter le courrier indésirable
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
@@ -215,7 +215,7 @@ Lorsque Microsoft trouve l’enregistrement TXT approprié, votre domaine est v�
    
     ![Entrée de valeurs dans la page Add/Modify DNS zone (ajouter/modifier la zone DNS)](../../media/33976398-da8a-439b-8e3d-534503b20ee0.png)
   
-4. Cliquez sur **Enregistrer**.
+4. Sélectionnez **Enregistrer**.
     
     (You may have to scroll down.)
     
@@ -245,7 +245,7 @@ Lorsque Microsoft trouve l’enregistrement TXT approprié, votre domaine est v�
    
     ![Entrée de valeurs dans la section des enregistrements de service](../../media/56bb1813-90e2-40c8-98bf-750e2dc3f8b6.png)
   
-4. Cliquez sur **Enregistrer**.
+4. Sélectionnez **Enregistrer**.
     
     (You may have to scroll down.)
     

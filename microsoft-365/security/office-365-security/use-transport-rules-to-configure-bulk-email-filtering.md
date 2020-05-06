@@ -14,13 +14,14 @@ search.appverid:
 ms.assetid: 2889c82e-fab0-4e85-87b0-b001b2ccd4f7
 ms.collection:
 - M365-security-compliance
-description: Les administrateurs peuvent apprendre à utiliser des règles de flux de messagerie dans Exchange Online Protection pour le filtrage de courrier en nombre.
-ms.openlocfilehash: 229a66658e041be737efbc4cbb7c36ba667d3aed
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: Les administrateurs peuvent apprendre à utiliser des règles de flux de messagerie dans Exchange Online Protection (EOP) pour le filtrage de courrier en bloc.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 43a10951a24ac76108fb0531f9e2c205c3fc9047
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631072"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034973"
 ---
 # <a name="use-mail-flow-rules-to-filter-bulk-email-in-office-365"></a>Utiliser des règles de flux de messagerie pour filtrer les messages électroniques en masse dans Office 365
 

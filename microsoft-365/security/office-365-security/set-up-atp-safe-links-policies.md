@@ -17,12 +17,12 @@ ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
 ms.collection:
 - M365-security-compliance
 description: Configurez des stratégies de liens fiables pour protéger votre organisation contre les liens malveillants dans les fichiers Word, Excel, PowerPoint et Visio, ainsi que dans les messages électroniques.
-ms.openlocfilehash: 31401e8f890f329f5724347deec2d85b6e473552
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 946b4bd9eee9b19b2b88eaca8f0ff80e173bb139
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43638331"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44045235"
 ---
 # <a name="set-up-office-365-atp-safe-links-policies"></a>Configuration des stratégies de liens approuvés Office 365 ATP
 
@@ -39,7 +39,7 @@ De [nouvelles fonctionnalités sont continuellement ajoutées à](office-365-atp
   
 1. Passez en revue les conditions préalables.
     
-2. Passez en revue et modifiez la stratégie de liens approuvés par défaut ATP qui s’applique à tout le monde. Par exemple, vous pouvez [configurer votre liste d’URL bloquées personnalisées pour les liens fiables ATP](set-up-a-custom-blocked-urls-list-wtih-atp.md).
+2. Passez en revue et modifiez la stratégie de liens approuvés par défaut ATP qui s’applique à tout le monde. Par exemple, vous pouvez [configurer votre liste d’URL bloquées personnalisées pour les liens fiables ATP](set-up-a-custom-blocked-urls-list-atp.md).
     
 3. Ajouter ou modifier des stratégies pour des destinataires de messagerie spécifiques, y compris [la configuration de votre liste d’URL « ne pas réécrire » personnalisée pour les liens fiables ATP](set-up-a-custom-do-not-rewrite-urls-list-with-atp.md).
     
@@ -75,7 +75,7 @@ Lorsque vous disposez de la [protection avancée contre les menaces Office 365](
     
 3. Dans la section **stratégies qui s’appliquent à l’ensemble de l’organisation** , sélectionnez **par défaut**, puis **modifier** (le bouton modifier ressemble à un crayon).<br/>![Cliquez sur modifier pour modifier votre stratégie par défaut pour la protection des liens fiables.](../../media/d08f9615-d947-4033-813a-d310ec2c8cca.png)
   
-4. Dans la section **bloquer les URL suivantes** , spécifiez une ou plusieurs URL pour lesquelles vous souhaitez empêcher les personnes de votre organisation de se visiter. (Voir [configurer une liste d’URL bloquées personnalisées à l’aide de liens fiables ATP](set-up-a-custom-blocked-urls-list-wtih-atp.md).)
+4. Dans la section **bloquer les URL suivantes** , spécifiez une ou plusieurs URL pour lesquelles vous souhaitez empêcher les personnes de votre organisation de se visiter. (Voir [configurer une liste d’URL bloquées personnalisées à l’aide de liens fiables ATP](set-up-a-custom-blocked-urls-list-atp.md).)
     
 5. Dans la section **paramètres qui s’appliquent au contenu à l’exception de la messagerie** , activez (ou désactivez) les options que vous souhaitez utiliser. (Nous vous recommandons de sélectionner toutes les options.) 
     
@@ -128,7 +128,7 @@ Les options de stratégie par défaut s’appliquent à tous les membres de votr
 
 |Cette option  |Effectue cette action  |
 |---------|---------|
-| **Bloquer les URL suivantes** <br/>    | Permet à votre organisation d’avoir une liste personnalisée d’URL qui sont automatiquement bloquées. Lorsque les utilisateurs cliquent sur une URL de cette liste, ils sont dirigés vers une [page d’avertissement](atp-safe-links-warning-pages.md) expliquant pourquoi l’URL est bloquée. Pour plus d’informations, consultez [la rubrique Configurer une liste d’URL bloquées personnalisées à l’aide des liens de sécurité ATP Office 365](set-up-a-custom-blocked-urls-list-wtih-atp.md). |
+| **Bloquer les URL suivantes** <br/>    | Permet à votre organisation d’avoir une liste personnalisée d’URL qui sont automatiquement bloquées. Lorsque les utilisateurs cliquent sur une URL de cette liste, ils sont dirigés vers une [page d’avertissement](atp-safe-links-warning-pages.md) expliquant pourquoi l’URL est bloquée. Pour plus d’informations, consultez [la rubrique Configurer une liste d’URL bloquées personnalisées à l’aide des liens de sécurité ATP Office 365](set-up-a-custom-blocked-urls-list-atp.md). |
 | **Applications Microsoft 365 pour les entreprises, Office pour iOS et Android** <br/>    | Lorsque cette option est sélectionnée, ATP Safe Links protection est appliqué aux URL des fichiers Word, Excel et PowerPoint sur Windows ou Mac OS, les messages électroniques dans Outlook, les documents Office sur les appareils iOS ou Android, les fichiers Visio 2016 sur Windows et les fichiers ouverts dans les versions Web des applications Office (Word, PowerPoint, Excel, Outlook et OneNote), à condition que l’utilisateur s’est connecté à Office 365. |
 | **Ne pas suivre lorsque les utilisateurs cliquent sur les liens fiables ATP** <br/>  | Lorsque cette option est sélectionnée, vous pouvez cliquer sur données pour les URL dans les messages électroniques Word, Excel, PowerPoint, Visio et Outlook ne sont pas stockés.  <br/> |
 |**Ne pas autoriser les utilisateurs à cliquer sur les liens fiables ATP vers l’URL d’origine** <br/> |Lorsque cette option est sélectionnée, les utilisateurs ne peuvent pas passer une [page d’avertissement](atp-safe-links-warning-pages.md) à une URL qui est considérée comme malveillante.  <br/> |

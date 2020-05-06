@@ -15,13 +15,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: " "
-ms.openlocfilehash: 15b6327809b3557c4d0d90b6c10dc5568ba47f43
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+description: Découvrez ce qui se passe lorsqu’une enquête ou une casse légale prise en charge par un cas de découverte électronique est fermée ou supprimée.
+ms.custom: seo-marvel-mar2020
+ms.openlocfilehash: f91755e6d2aeba89e795a623cd1268af0a53e675
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595871"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035636"
 ---
 # <a name="close-or-delete-a-case"></a>Fermer ou supprimer un cas
 

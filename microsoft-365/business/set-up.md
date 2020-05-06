@@ -29,12 +29,12 @@ search.appverid:
 - MET150
 ms.assetid: 6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece
 description: Découvrez les étapes de configuration de Microsoft 365 Business Premium, y compris l’ajout d’un domaine et d’utilisateurs, la configuration des stratégies de sécurité, et bien plus encore.
-ms.openlocfilehash: a34ede0002e7e78c5dc437c663fe527cf94e46c5
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: cfc8523fe88ebca6b8c03db0ad0f6caeba662923
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635759"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44048036"
 ---
 # <a name="set-up-microsoft-365-business-premium-in-the-setup-wizard"></a>Configurer Microsoft 365 Business Premium dans l’Assistant Installation
 
@@ -124,7 +124,7 @@ Les stratégies que vous configurez dans l’Assistant sont appliquées automati
 
 ## <a name="secure-windows-10-pcs"></a>Sécurisation des PC Windows 10
 
-Dans le volet de navigation de gauche, sélectionnez **configuration** , puis sous **sécurité unique et sécurité**, choisissez **sécuriser vos ordinateurs Windows 10**. Choisissez **affichage** pour commencer. Pour plus d’informations, consultez [la rubrique sécuriser vos ordinateurs Windows 10](secure-win-10-pcs.md) .
+Dans le volet de navigation de gauche, sélectionnez **configuration** , puis sous **connexion et sécurité**, choisissez **sécuriser vos ordinateurs Windows 10**. Choisissez **affichage** pour commencer. Pour plus d’informations, consultez [la rubrique sécuriser vos ordinateurs Windows 10](secure-win-10-pcs.md) .
 
 ## <a name="deploy-office-365-client-apps"></a>Déployer des applications clientes Office 365
 
@@ -134,6 +134,6 @@ Pour installer Office sur des appareils mobiles iOS ou Android, consultez la rub
 
 Vous pouvez également installer Office individuellement. Pour obtenir des instructions, voir [installer Office sur un PC ou un Mac](https://support.office.com/article/4414eaaf-0478-48be-9c42-23adc4716658) .
 
-## <a name="see-also"></a>Voir également
+## <a name="see-also"></a>Voir aussi
 
-[Vidéos de formation Microsoft 365 pour les entreprises](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[Vidéos de formation Microsoft 365 Entreprise](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

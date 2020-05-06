@@ -5,17 +5,21 @@ author: MikePlumleyMSFT
 manager: pamgreen
 audience: ITPro
 ms.topic: article
-ms.service: sharepoint-online
-ms.collection: SPO_Content
+ms.prod: microsoft-365-enterprise
+ms.collection:
+- SPO_Content
+- M365-security-compliance
+ms.custom:
+- M365solutions
 localization_priority: Priority
 f1.keywords: NOCSH
 description: Découvrir comment créer un environnement de partage d’invités sécurisé avec Microsoft 365.
-ms.openlocfilehash: 63a636ccf65b5439d5e83cf5fbe64e5db2ce40b5
-ms.sourcegitcommit: 21338a9287017a66298e0ff557e80051946ebf13
+ms.openlocfilehash: 73d3e2a9a55ead5447d2c6d640123ee3befd8373
+ms.sourcegitcommit: 101084f9c81616342d78493232d8f13f5ffa4ddf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "42604484"
+ms.lasthandoff: 05/01/2020
+ms.locfileid: "44003746"
 ---
 # <a name="create-a-secure-guest-sharing-environment"></a>Créer un environnement de partage d’invités sécurisé
 
@@ -29,9 +33,9 @@ Ce scénario comprend les points suivants :
 - Limitation de l’accès des invités au Web uniquement pour les appareils non gérés.
 - Configuration d’une stratégie de délai d’expiration de session pour assurer l’authentification quotidienne des invités.
 - Création et publication des étiquettes de sensibilité pour classifier le contenu.
-- Création d’un type d’informations sensibles pour un projet hautement confidentiel.
-- Attribution automatique d’une étiquette *hautement confidentielle* aux documents contenant le type d’informations sensibles.
-- Suppression automatique de l’accès invité des fichiers étiquetés comme *hautement confidentiels*.
+- Création d’un type d’informations sensibles pour un projet hautement sensible.
+- Attribution automatique d’une étiquette *hautement sensible* aux documents contenant le type d’informations sensibles.
+- Suppression automatique de l’accès invité des fichiers étiquetés comme *hautement sensibles*.
 
 Certaines des options décrites dans cet article exigent que les invités disposent d’un compte dans Azure Active Directory. Pour vous assurer que les invités sont bien inclus dans le répertoire lorsque vous partagez des fichiers et des dossiers avec eux, utilisez l’[intégration de SharePoint et OneDrive avec Azure AD B2B Préversion](https://docs.microsoft.com/sharepoint/sharepoint-azureb2b-integration-preview).
 
@@ -188,34 +192,34 @@ Les étiquettes de sensibilité peuvent être utilisées de différentes manièr
 Tout d’abord, vous allez créer trois étiquettes de sensibilité dans le Centre de conformité Microsoft 365 :
 
 - Général
-- Confidentiel
-- Hautement confidentiel
+- Sensible
+- Hautement sensible
 
-Utilisez la procédure suivante pour créer les étiquettes *Général* et *Confidentiel*.
+Utilisez la procédure suivante pour créer les étiquettes *Général* et *Sensible*.
 
-Pour créer une étiquette de classification (Général et Confidentiel), procédez comme suit :
+Pour créer une étiquette de classification (Général et Sensible), procédez comme suit :
 1. Dans le [Centre de conformité Microsoft 365](https://compliance.microsoft.com), dans le volet de navigation gauche, développez **Classification**, puis cliquez sur **Étiquettes de sensibilité**.
 2. Cliquez sur **Créer une étiquette**.
-3. Dans **Nom d’étiquette**, tapez *Général* ou *Confidentiel*.
-4. Dans **Infobulle**, tapez *Informations générales pouvant être partagées avec des employés, des invités et des partenaires* ou *Informations confidentielles. Partagez-les uniquement avec les employés et les invités*, puis cliquez sur **Suivant**.
+3. Dans **Nom d’étiquette**, tapez *Général* ou *Sensible*.
+4. Dans **Infobulle**, tapez *Informations générales pouvant être partagées avec des employés, des invités et des partenaires* ou *Informations sensibles. Partagez-les uniquement avec les employés et les invités*, puis cliquez sur **Suivant**.
 5. Laissez l'option Chiffrement sur **Désactiver**, puis cliquez sur **Suivant**.
 6. Laissez l’option Marquage de contenu sur **Désactiver**, puis cliquez sur **Suivant**.
 7. Laissez l’option Prévention contre la perte de données sur **Désactiver**, puis cliquez sur **Suivant**.
 8. Laissez l’option Étiquetage automatique sur **Désactiver**, puis cliquez sur **Suivant**.
 9. Cliquez sur **Créer**.
 
-Grâce à l'étiquette *Hautement confidentiel*, vous ajoutez le filigranage automatique des documents avec l'étiquette.
+Grâce à l'étiquette *Hautement sensible*, vous ajoutez le filigrane automatique des documents avec l'étiquette.
 
-Pour créer une étiquette de classification (Hautement confidentiel), procédez comme suit :
+Pour créer une étiquette de classification (Hautement sensible), procédez comme suit :
 1. Cliquez sur **Créer une étiquette**.
-2. Dans **Nom d’étiquette**, tapez *Hautement confidentiel*.
-3. Dans **Infobulle**, tapez *Informations hautement confidentielles. Ne les partagez pas avec les invités*, puis cliquez sur **Suivant**.
+2. Dans **Nom d’étiquette**, tapez *Hautement sensible*.
+3. Dans **Infobulle**, tapez *Informations hautement sensibles. Ne les partagez pas avec les invités*, puis cliquez sur **Suivant**.
 4. Laissez l'option Chiffrement sur **Désactiver**, puis cliquez sur **Suivant**.
 5. Mettez l'option Marquage de contenu sur **Activer**, cochez la case **Ajouter un en-tête**, puis cliquez sur **Personnaliser le texte**.
-6. Tapez *Hautement confidentiel* comme texte d'en-tête et cliquez sur **Enregistrer**.
+6. Tapez *Hautement sensible* comme texte d'en-tête et cliquez sur **Enregistrer**.
 7. Sur la page **Marquage de contenu**, mettez l'option Marquage de contenu sur **Activer**.
 8. Activez la case à cocher **Ajouter un filigrane**, puis cliquez sur **Personnaliser le texte**.
-9. Comme **texte de filigrane**, tapez *Hautement confidentiel*.
+9. Comme **texte de filigrane**, tapez *Hautement sensible*.
 10. Tapez *24* comme **Taille de police**, puis cliquez sur **Enregistrer**.
 11. Dans la page **Marque de contenu**, cliquez sur **Suivant**.
 12. Laissez l’option Prévention contre la perte de données sur **Désactiver**, puis cliquez sur **Suivant**.
@@ -237,16 +241,16 @@ Pour publier les étiquettes, procédez comme suit :
 8. Dans la page **Paramètres de stratégie**, tapez *Sensibilité du document* comme nom, puis cliquez sur **Suivant**.
 9. Cliquez sur **Publier**.
 
-Une fois les étiquettes publiées, celles-ci sont disponibles pour les utilisateurs des applications de bureau Office. Lorsque les utilisateurs appliquent l’étiquette **Hautement confidentiel**, un filigrane est automatiquement ajouté au document.
+Une fois les étiquettes publiées, celles-ci sont disponibles pour les utilisateurs des applications de bureau Office. Lorsque les utilisateurs appliquent l’étiquette **Hautement sensible**, un filigrane est automatiquement ajouté au document.
 
 ### <a name="more-information"></a>Plus d’informations
-[Vue d’ensemble des étiquettes de sensibilité](https://docs.microsoft.com/Office365/SecurityCompliance/sensitivity-labels)
+[Vue d’ensemble des étiquettes de confidentialité](https://docs.microsoft.com/Office365/SecurityCompliance/sensitivity-labels)
 
-## <a name="create-a-sensitive-information-type-for-a-highly-confidential-project"></a>Créer un type d’informations sensibles pour un projet hautement confidentiel.
+## <a name="create-a-sensitive-information-type-for-a-highly-sensitive-project"></a>Créer un type d’informations sensibles pour un projet hautement sensible
 
 Les types d’informations sensibles sont des chaînes prédéfinies qui peuvent être utilisées dans les flux de travail de stratégie afin d’appliquer les exigences de conformité. Le Centre de conformité Microsoft 365 est fourni avec plus d’une centaine de types d’informations sensibles, y compris les numéros de permis de conduire, les numéros de cartes de crédit, les numéros de comptes bancaires, etc.
 
-Vous pouvez créer des types d'informations sensibles personnalisés pour vous aider à gérer le contenu propre à votre organisation. Dans cet exemple, vous allez créer un type d’informations sensibles personnalisé pour un projet hautement confidentiel. Vous pouvez ensuite utiliser ce type d’informations sensibles pour appliquer automatiquement une étiquette de classification.
+Vous pouvez créer des types d'informations sensibles personnalisés pour vous aider à gérer le contenu propre à votre organisation. Dans cet exemple, vous allez créer un type d’informations sensibles personnalisé pour un projet hautement sensible. Vous pouvez ensuite utiliser ce type d’informations sensibles pour appliquer automatiquement une étiquette de classification.
 
 Pour créer un type d’informations sensibles personnalisé, procédez comme suit :
 1. Dans le [Centre de conformité Microsoft 365](https://compliance.microsoft.com), dans le volet de navigation gauche, développez **Classification**, puis cliquez sur **Types d’informations sensibles**.
@@ -262,7 +266,7 @@ Pour créer un type d’informations sensibles personnalisé, procédez comme su
 
 ## <a name="create-a-policy-to-assign-a-label-based-on-a-sensitive-information-type"></a>Créer une stratégie pour attribuer une étiquette sur la base d’un type d’informations sensibles
 
-Une fois le type d’informations sensibles créé, nous pouvons créer une stratégie de fichier dans Microsoft Cloud App Security pour appliquer automatiquement l’étiquette *Hautement confidentiel* aux documents qui contiennent la chaîne du *Projet Saturne*.
+Une fois le type d’informations sensibles créé, nous pouvons créer une stratégie de fichier dans Microsoft Cloud App Security pour appliquer automatiquement l’étiquette *Hautement sensible* aux documents qui contiennent la chaîne du *Projet Saturne*.
 
 > [!NOTE]
 > Il existe un processus de réplication qui rend les étiquettes de sensibilité disponibles dans Cloud App Security. Vous ne verrez peut-être pas l’étiquette disponible pour une stratégie immédiatement.
@@ -279,19 +283,19 @@ Pour créer une stratégie de fichier basée sur le type d'informations sensible
 10. Recherchez et sélectionnez l’étiquette de sensibilité du *Projet Saturne*, puis cliquez sur **Terminé**.</br>
    ![Capture d’écran des paramètres de la méthode d’inspection de Cloud App Security](../media/mcas-sensitive-info-type-project-saturn.png)
 11. Sous **Gouvernance**, développez **Microsoft SharePoint Online**.
-12. Activez la case à cocher **Appliquer une étiquette de classification**, puis sélectionnez l’étiquette **Hautement confidentiel**.
+12. Activez la case à cocher **Appliquer une étiquette de classification**, puis sélectionnez l’étiquette **Hautement sensible**.
 13. Cliquez sur **Créer**.
 
-Une fois la stratégie en place, lorsqu’un utilisateur tape « Projet Saturne » dans un document, Cloud App Security applique automatiquement l’étiquette *Hautement confidentiel* lors de l’analyse du fichier.
+Une fois la stratégie en place, lorsqu’un utilisateur tape « Projet Saturne » dans un document, Cloud App Security applique automatiquement l’étiquette *Hautement sensible* lors de l’analyse du fichier.
 
 ### <a name="more-information"></a>Plus d’informations
 [Stratégies de fichier](https://docs.microsoft.com/cloud-app-security/data-protection-policies)
 
-## <a name="create-a-policy-to-remove-guest-access-to-highly-confidential-files"></a>Créer une stratégie pour supprimer l’accès invité aux fichiers hautement confidentiels
+## <a name="create-a-policy-to-remove-guest-access-to-highly-sensitive-files"></a>Créer une stratégie pour supprimer l’accès invité aux fichiers hautement sensibles
 
-Dans l’exemple de cet article, les fichiers comportant l’étiquette *Hautement confidentiel* ne doivent pas être partagés avec des invités. Nous pouvons créer une stratégie de fichier dans Cloud App Security qui supprime automatiquement l’accès invité aux fichiers comportant cette étiquette.
+Dans l’exemple de cet article, les fichiers comportant l’étiquette *Hautement sensible* ne doivent pas être partagés avec des invités. Nous pouvons créer une stratégie de fichier dans Cloud App Security qui supprime automatiquement l’accès invité aux fichiers comportant cette étiquette.
 
-Notez que cela n’empêche pas les utilisateurs de partager ou de repartager ces fichiers. Vous êtes tout de même tributaire de vos utilisateurs pour suivre vos stratégies de gouvernance pour les fichiers stockés dans des sites qui autorisent le partage avec des invités. Toutefois, il peut s’agir d’un outil utile pour supprimer l’accès invité à partir de fichiers auxquels des informations confidentielles ont été ajoutées une fois qu’elles ont été partagées avec des invités.
+Notez que cela n’empêche pas les utilisateurs de partager ou de repartager ces fichiers. Vous êtes tout de même tributaire de vos utilisateurs pour suivre vos stratégies de gouvernance pour les fichiers stockés dans des sites qui autorisent le partage avec des invités. Toutefois, il peut s’agir d’un outil utile pour supprimer l’accès invité à partir de fichiers auxquels des informations sensibles ont été ajoutées une fois qu’elles ont été partagées avec des invités.
 
 Pour créer une stratégie de fichier sur la base d’étiquette, procédez comme suit :
 1. Ouvrez [Microsoft Cloud App Security](https://portal.cloudappsecurity.com).
@@ -302,20 +306,20 @@ Pour créer une stratégie de fichier sur la base d’étiquette, procédez comm
 6. Dans la liste **Sélectionner un filtre**, choisissez **Applications**, puis sélectionnez **Microsoft SharePoint Online** dans la liste **Sélectionner les applications...**.
 7. Cliquez sur **Ajouter un filtre**.
 8. Dans la liste **Sélectionner un filtre**, choisissez **Étiquette de classification**, puis sélectionnez l’option **Protection des informations Azure** dans la liste **Sélectionner un filtre...**.
-9. Dans la liste **Sélectionner une étiquette de classification**, sélectionnez **Hautement confidentiel**.</br>
+9. Dans la liste **Sélectionner une étiquette de classification**, sélectionnez **Hautement sensible**.</br>
    ![Capture d’écran des paramètres de filtre de la stratégie de Cloud App Security](../media/mcas-sharepoint-confidential-label-filter.png)
 10. Sous **Gouvernance**, développez **Microsoft SharePoint Online**.
 11. Activez les cases à cocher **Envoyer le résumé des correspondances de stratégie au propriétaire du fichier** et **Supprimer les utilisateurs externes**.
-12. Comme message de notification personnalisé, tapez *Ce fichier est hautement confidentiel. La stratégie d’entreprise interdit de le partager avec des invités*.
+12. Comme message de notification personnalisé, tapez *Ce fichier est hautement sensible. La stratégie d’entreprise interdit de le partager avec des invités*.
 13. Cliquez sur **Créer**.
 
-Il est important de noter que cette politique supprime l'accès aux fichiers partagés à l'aide d'un lien de *Personnes spécifiques*. Elle ne supprime pas l'accès aux liens (*des personnes*) non authentifiés. Elle ne supprime pas non plus l’accès si l’invité est membre du site ou de l’équipe dans son ensemble. Si vous comptez utiliser des documents hautement confidentiels dans un site ou une équipe comptant des membres invités, envisagez d'utiliser des c[anaux privés dans Teams ](https://support.office.com/article/60ef929a-4d68-418b-bf4f-5784db184ec9)et d'autoriser uniquement les membres de votre organisation dans les canaux privés.
+Il est important de noter que cette politique supprime l'accès aux fichiers partagés à l'aide d'un lien de *Personnes spécifiques*. Elle ne supprime pas l'accès aux liens (*des personnes*) non authentifiés. Elle ne supprime pas non plus l’accès si l’invité est membre du site ou de l’équipe dans son ensemble. Si vous comptez utiliser des documents hautement sensibles dans un site ou une équipe comptant des membres invités, envisagez d'utiliser des c[anaux privés dans Teams ](https://support.office.com/article/60ef929a-4d68-418b-bf4f-5784db184ec9)et d'autoriser uniquement les membres de votre organisation dans les canaux privés.
 
-## <a name="test-the-solution"></a>Tester la solution
+## <a name="test-the-solution"></a>Test de la solution
 
 Pour tester la solution décrite dans cet article, créez un document Word et enregistrez-le dans une bibliothèque de documents. Partagez le fichier avec un utilisateur invité. Lorsque l’invité tente d'accéder au document, il doit être tenu de s'inscrire à l'authentification multifacteur, puis d'accepter les conditions d'utilisation.
 
-Une fois que l'invité a accès au document, tapez *Projet Saturne* dans le document et enregistrez-le. Une fois que Cloud App Security a analysé le document, l’étiquette *Hautement confidentiel* doit être appliquée et l’utilisateur invité ne doit plus y avoir accès.
+Une fois que l'invité a accès au document, tapez *Projet Saturne* dans le document et enregistrez-le. Une fois que Cloud App Security a analysé le document, l’étiquette *Hautement sensible* doit être appliquée et l’utilisateur invité ne doit plus y avoir accès.
 
 Vous pouvez utiliser les outils décrits dans cet article dans diverses combinaisons pour aider à créer un environnement de partage d'invités productif mais sûr pour votre organisation.
 

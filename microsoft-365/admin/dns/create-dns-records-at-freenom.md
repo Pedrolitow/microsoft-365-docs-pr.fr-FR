@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: d8ff45a2-19e3-413d-aa64-a9982bd6633c
 description: Découvrez comment vérifier votre domaine et configurer les enregistrements DNS pour la messagerie, Skype entreprise Online et d’autres services sur Freenom pour Microsoft.
-ms.openlocfilehash: a7ad45d3d785478966df5120567836200de316da
-ms.sourcegitcommit: c7f11d851073ef14a69669f6c8b7e0c11e4bb7a1
+ms.openlocfilehash: 39963b5c0f5f3f82fe193160e8aa8ab03894cedd
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43939226"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44049034"
 ---
 # <a name="create-dns-records-at-freenom-for-microsoft"></a>Créer des enregistrements DNS sur Freenom pour Microsoft
 
@@ -137,9 +137,9 @@ Lorsque Microsoft trouve l’enregistrement TXT approprié, votre domaine est v�
   
 8. Dans les zones du nouvel enregistrement, tapez ou copiez-collez les valeurs de la première ligne du tableau suivant. 
     
-    |**Name**|**Type**|**TTL (Durée de vie)**|**Target (Cible)**|**Priority (Priorité)**|
+    |**Name**|**Type**|**TTL (Durée de vie)**|**Target (Cible)**|**Priorité**|
     |:-----|:-----|:-----|:-----|:-----|
-    |(Laisser vide)  <br/> |MX (Mail Exchanger) (MX - Serveur de courrier)  <br/> |3600 (secondes)  <br/> |\<Key\>. mail.protection.Outlook.com  <br/> **Remarque :** Obtenir votre * \<clé\> de domaine* à partir de votre compte Microsoft.   [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md)          |10   <br/> Pour plus d'informations sur la priorité, voir [Qu'est-ce que la priorité MX ?](https://support.office.com/article/17d415c1-067e-4974-84d5-aaeaf3a0c0a9). <br/> |
+    |(Laisser vide)  <br/> |MX (Mail Exchanger) (MX - Serveur de courrier)  <br/> |3600 (secondes)  <br/> |\<Key\>. mail.protection.Outlook.com  <br/> **Remarque :** Obtenir votre * \<clé\> de domaine* à partir de votre compte Microsoft.   [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md)          |10   <br/> Pour plus d'informations sur la priorité, voir [Qu'est-ce que la priorité MX ?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq). <br/> |
    
    ![Enregistrement MX Freenom](../../media/8896c4a9-b3dd-45ed-9916-f7da2715ba8c.png)
   
@@ -192,7 +192,7 @@ Lorsque Microsoft trouve l’enregistrement TXT approprié, votre domaine est v�
     
     Pour chaque enregistrement, tapez ou copiez-collez les valeurs de la ligne suivante du tableau ci-dessus dans les zones de cet enregistrement.
     
-## <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a>Ajouter un enregistrement TXT pour SPF afin d'éviter le courrier indésirable
+## <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a>Ajoutez un enregistrement TXT pour SPF afin d'éviter le courrier indésirable
 <a name="bkmk_spf"> </a>
 
 > [!IMPORTANT]
@@ -220,7 +220,7 @@ Lorsque Microsoft trouve l’enregistrement TXT approprié, votre domaine est v�
   
 6. In the boxes for the new record, type or copy and paste the following values. 
     
-    |**Name (Nom)**|**Type d'enregistrement**|**TTL (Durée de vie)**|**Target (Cible)**|
+    |**Name**|**Type d'enregistrement**|**TTL (Durée de vie)**|**Target (Cible)**|
     |:-----|:-----|:-----|:-----|
     |(Laisser vide)  <br/> |TXT  <br/> |3600 (secondes)  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/>**Remarque :** nous vous recommandons de copier et coller cette entrée, afin que l’espacement reste correcte.           |
    

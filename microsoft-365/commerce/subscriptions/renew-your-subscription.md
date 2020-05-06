@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: 8d83b530-f4ca-47f6-a666-e5791cbacc7e
 description: 'Découvrez comment renouveler votre abonnement Microsoft 365 pour les entreprises à l’aide d’une clé de produit et activer ou désactiver la facturation périodique. '
-ms.openlocfilehash: 9a44f8e65aad46e82134d8f088f6955bcd37ad3b
-ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
+ms.openlocfilehash: 7cceae61891da31dbb058af1db12598a02b172e2
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43707654"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44046227"
 ---
 # <a name="renew-microsoft-365-for-business"></a>Renouveler Microsoft 365 pour les entreprises
 
@@ -48,7 +48,7 @@ Si vous avez prépayé votre abonnement avec une clé de produit, votre abonneme
 
 ::: moniker range="o365-worldwide"
 
-1. Dans le Centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produits et services</a>.
+1. Dans le centre d’administration, accédez à la page **facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">de vos produits</a> .
 
 2. Sélectionnez l’abonnement pour lequel gérer la facturation récurrente.
 
@@ -60,7 +60,7 @@ Si vous avez prépayé votre abonnement avec une clé de produit, votre abonneme
 
     > [!NOTE]
     > - Vous ne pouvez modifier le paramètre de **facturation périodique** que pour les abonnements actifs. Si votre abonnement a déjà expiré ou est désactivé, vous devez le [réactiver](reactivate-your-subscription.md) pour pouvoir activer ou désactiver la **facturation périodique** .
-    > - Lorsque la **facturation périodique** est désactivée, l’abonnement n’est pas annulé immédiatement. Il reste actif jusqu'à son expiration. Vous pouvez afficher la date d’expiration dans la section **facturation** des détails de l’abonnement de la page **produits & services** .
+    > - Lorsque la **facturation périodique** est désactivée, l’abonnement n’est pas annulé immédiatement. Il reste actif jusqu'à son expiration. Vous pouvez afficher la date d’expiration dans la section **facturation** des détails de l’abonnement sur la page **vos produits** .
     > - Pour savoir comment annuler l’abonnement immédiatement, voir [annuler mon abonnement](cancel-your-subscription.md).
 
 ::: moniker-end
@@ -70,7 +70,7 @@ Si vous avez prépayé votre abonnement avec une clé de produit, votre abonneme
 1. Dans le Centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Abonnements</a>.
 
 2. Sélectionnez l’abonnement pour lequel gérer la facturation récurrente.
- 
+
 3. **Pour activer**la **facturation périodique**, activez le bouton bascule.
 
     ![Fermeture d’une carte d’abonnement pour laquelle la facturation périodique est activée.](../../media/984464dc-6b63-4b24-84e1-67f6c4b1d48e.png)
@@ -109,10 +109,6 @@ Si vous avez prépayé votre abonnement avec une clé de produit, votre abonneme
   
 [Qu'arrive-t-il à mes données et à mon accès à la fin de mon abonnement ?](what-if-my-subscription-expires.md)
 
-[Ajouter, mettre à jour ou supprimer vos modes de paiement](../billing-and-payments/add-update-or-remove-credit-card-or-bank-account.md)
-
-[Changer votre mode de paiement](../billing-and-payments/change-payment-method.md)
-  
 [Entrer votre clé de produit](../enter-your-product-key.md)
   
 [Acheter votre version d’évaluation de Microsoft 365 pour les entreprises](../buy-a-subscription-from-your-free-trial.md)

@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 0432dce9-d9b6-4e73-8a13-4a932eb0081e
 description: Vous avez une question sur la façon dont les nouvelles fonctionnalités de protection des messages fonctionnent ? Recherchez une réponse ici.
-ms.openlocfilehash: 93b57e2b973fadd8b4ac2388e42f460114228c3c
-ms.sourcegitcommit: b8a9994b26a6d9865212f5b1871286e719d1608e
+ms.openlocfilehash: 75b414aecfbe9d3952d7e3c5994946775d353a6f
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43781459"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44049519"
 ---
 # <a name="message-encryption-faq"></a>FAQ sur le chiffrement de messages
 
@@ -109,11 +109,11 @@ Si un format de fichier est pris en charge, par exemple un fichier Word, Excel o
   
 ## <a name="are-pdf-file-attachments-supported"></a>Les pièces jointes aux fichiers PDF sont-elles prises en charge ?
 
-La réponse courte est oui. Le chiffrement PDF vous permet de protéger des documents PDF sensibles via une communication sécurisée ou une collaboration sécurisée. Lorsque vous envoyez des messages électroniques, le service Office 365 chiffre les pièces jointes des fichiers PDF et non le client Outlook. 
+La réponse courte est oui. Le chiffrement PDF vous permet de protéger des documents PDF sensibles via une communication sécurisée ou une collaboration sécurisée. Lorsque vous envoyez des messages électroniques, le service Office 365 chiffre les pièces jointes des fichiers PDF et non le client Outlook.
 
-Une fois que vous avez activé le chiffrement des pièces jointes PDF, vous pouvez chiffrer les fichiers PDF que vous envoyez sans les étapes supplémentaires d’Outlook sur le Web, Outlook pour iOS et Outlook pour Android.
+Pour Outlook sur le Web, Outlook pour iOS et Outlook pour Android, vous pouvez chiffrer les fichiers PDF que vous envoyez sans étapes supplémentaires. Ces clients prennent en charge en mode natif le chiffrement PDF.
 
-Outlook Desktop ne prend pas en charge le chiffrement des pièces jointes des fichiers PDF en mode natif. Pour contourner ce problème, vous pouvez toujours activer le chiffrement des pièces jointes des fichiers PDF dans votre organisation. Lorsque vous envoyez des messages à partir d’un bureau Outlook avec une pièce jointe au format PDF, le client envoie d’abord le message avec la pièce jointe au service. Lorsque le service reçoit le fichier, le service applique la protection OME de la stratégie de protection contre la perte de données (DLP) ou de la règle de flux de messagerie dans Exchange Online. Ensuite, Exchange Online envoie le message avec la pièce jointe au fichier PDF protégé.
+Outlook Desktop ne prend pas en charge le chiffrement des pièces jointes des fichiers PDF en mode natif. Au lieu de cela, vous devez configurer des règles de flux de messagerie Exchange ou DLP pour appliquer d’abord le chiffrement aux pièces jointes PDF. Lorsque vous envoyez des messages à partir d’un bureau Outlook avec une pièce jointe au format PDF, le client envoie d’abord le message avec la pièce jointe au service. Lorsque le service reçoit le fichier, le service applique la protection OME de la stratégie de protection contre la perte de données (DLP) ou de la règle de flux de messagerie dans Exchange Online. Ensuite, Exchange Online envoie le message avec la pièce jointe au fichier PDF protégé.
 
 Pour activer le chiffrement des pièces jointes au format PDF, exécutez la commande suivante dans [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell):
 

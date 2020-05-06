@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 description: Découvrez comment effectuer une mise à niveau vers un nouvel abonnement.
 monikerRange: o365-worldwide
-ms.openlocfilehash: faddecffd91eb58dab7a3b498de97633b5efd9d0
-ms.sourcegitcommit: 11198133b43eb6a6369e544c8a0dd408d582591c
+ms.openlocfilehash: 7739da2d56fa0d37dd64b22b2959ad6dca198e75
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2020
-ms.locfileid: "43796511"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44046215"
 ---
 # <a name="upgrade-to-a-different-plan"></a>Opter pour un abonnement différent 
 
@@ -42,7 +42,7 @@ Lorsque votre entreprise change ou que vous avez besoin de davantage de fonction
 
 Lorsque vous utilisez l’onglet **mise à niveau** , vous pouvez acheter une nouvelle offre. Tous les utilisateurs reçoivent automatiquement des licences dans le nouveau plan, et votre ancien forfait est annulé pour vous.
 
-1. Dans le centre d’administration, accédez à la page produits de **facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">& services</a> .
+1. Dans le centre d’administration, accédez à la page **facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">de vos produits</a> .
 
 2. Sélectionnez l’abonnement que vous souhaitez mettre à niveau.
 
@@ -59,7 +59,7 @@ Lorsque vous utilisez l’onglet **mise à niveau** , vous pouvez acheter une no
 
 7. Lorsque vous avez terminé, sélectionnez **passer une commande**.
 
-Lorsque vous avez terminé l’extraction, la finalisation de la mise à niveau peut prendre quelques minutes. Vous pouvez commencer à utiliser le nouvel abonnement immédiatement. Sélectionnez **vérifier l’État** de la mise à niveau pour vérifier la progression de la mise à niveau. Vous serez averti lorsque la mise à niveau sera terminée. La notification s’affiche dans la page **produits & services** , en regard de votre nouvel abonnement.
+Lorsque vous avez terminé l’extraction, la finalisation de la mise à niveau peut prendre quelques minutes. Vous pouvez commencer à utiliser le nouvel abonnement immédiatement. Sélectionnez **vérifier l’État** de la mise à niveau pour vérifier la progression de la mise à niveau. Vous serez averti lorsque la mise à niveau sera terminée. La notification s’affiche sur la page **vos produits** , en regard de votre nouvel abonnement.
 
 ## <a name="the-upgrade-tab-is-empty"></a>L’onglet mise à niveau est vide
 
@@ -137,7 +137,7 @@ Si vous disposez d’un module complémentaire avec votre abonnement, vous pourr
 
 #### <a name="your-subscription-has-an-unpaid-balance"></a>Votre abonnement a un solde impayé
 
-Pour résoudre ce message, recherchez l’abonnement sur la page <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">produits & services</a> , puis sélectionnez le lien **payer maintenant** dans la section **facturation** . Une fois le paiement effectué, réactivez l’onglet **mise à niveau** .
+Pour résoudre ce message, recherchez l’abonnement sur la page <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">vos produits</a> , puis sélectionnez le lien **payer maintenant** dans la section **facturation** . Une fois le paiement effectué, réactivez l’onglet **mise à niveau** .
 
 ## <a name="what-does-upgrading-a-plan-do-to-my-service-and-billing"></a>Qu’est-ce que la mise à niveau d’un plan vers mon service et ma facturation ?
 

@@ -23,12 +23,12 @@ search.appverid:
 ms.assetid: 7b7b075d-79f9-4e37-8a9e-fb60c1d95166
 description: Apprenez à vérifier votre domaine et à créer des enregistrements DNS auprès d’un fournisseur d'hébergement DNS pour Microsoft 365.
 ms.custom: okr_smb
-ms.openlocfilehash: c727092c153e43369d5ed52d71bfcd256878db4b
-ms.sourcegitcommit: 2399ee6f9bc955cf8f2a76c01fc84c19eb37ff42
+ms.openlocfilehash: a2d9b57f0230aa736944727e39845f3a0a533426
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "43919504"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44048782"
 ---
 # <a name="create-dns-records-at-any-dns-hosting-provider"></a>Créer des enregistrements DNS auprès d'un fournisseur d'hébergement DNS
 
@@ -41,7 +41,7 @@ Si vous ne connaissez pas le fournisseur d'hébergement DNS ou le bureau d'enreg
 Pour configurer les enregistrements vous-même, vous devez ajouter les enregistrements suivants. Notez que vos enregistrement de vérification et enregistrement MX sont spécifiques à votre domaine. Pour les configurer, vous devez obtenir et utiliser une valeur de « jeton » spécifique pour votre domaine. Les étapes suivantes vous expliquent comment procéder.
   
 > [!IMPORTANT]
-> Le nom exact des zones ou  *champs*  dans lesquels vous entrez ou collez les informations pour créer chaque type d'enregistrement DNS est différent pour chaque hôte DNS. Votre hôte DNS peut éventuellement proposer une section d'aide sur son site web pour vous aider à mapper les instructions affichées ici aux champs exacts sur son site web. N'oubliez pas de vérifier si nous avons publié des instructions détaillées applicables à votre hôte DNS dans la rubrique [Créer des enregistrements DNS pour Microsoft 365](https://support.office.com/article/b0f3fdca-8a80-4e8e-9ef3-61e8a2a9ab23.aspx). >  Certains hôtes DNS ne vous permettent pas de créer tous les types d'enregistrements requis, ce qui entraîne des [limitations du service](https://support.office.com/article/7ae9a655-041d-4724-aa92-60392ee390c2.aspx) dans Microsoft 365. Si l'hôte de votre domaine ne prend pas en charge les enregistrements SRV, TXT ou CNAME, par exemple, nous vous recommandons de [transférer votre domaine](../get-help-with-domains/buy-a-domain-name.md) à un hôte DNS qui prend en charge tous les enregistrements requis. Pour utiliser un processus rapide et automatisé de configuration avec Microsoft 365, transférez votre domaine vers GoDaddy. 
+> Le nom exact des zones ou  *champs*  dans lesquels vous entrez ou collez les informations pour créer chaque type d'enregistrement DNS est différent pour chaque hôte DNS. Votre hôte DNS peut éventuellement proposer une section d'aide sur son site web pour vous aider à mapper les instructions affichées ici aux champs exacts sur son site web. N'oubliez pas de vérifier si nous avons publié des instructions détaillées applicables à votre hôte DNS dans la rubrique [Créer des enregistrements DNS pour Microsoft 365](https://support.office.com/article/b0f3fdca-8a80-4e8e-9ef3-61e8a2a9ab23.aspx). >  Certains hôtes DNS ne vous permettent pas de créer tous les types d'enregistrements requis, ce qui entraîne des [limitations du service](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) dans Microsoft 365. Si l'hôte de votre domaine ne prend pas en charge les enregistrements SRV, TXT ou CNAME, par exemple, nous vous recommandons de [transférer votre domaine](../get-help-with-domains/buy-a-domain-name.md) à un hôte DNS qui prend en charge tous les enregistrements requis. Pour utiliser un processus rapide et automatisé de configuration avec Microsoft 365, transférez votre domaine vers GoDaddy. 
   
 > [!NOTE]
 > L'application des enregistrements DNS modifiés prend généralement quelques minutes. Il peut toutefois arriver que la répercussion d'une modification dans le système DNS sur Internet prenne davantage de temps. Si vous rencontrez des problèmes avec le flux de courrier ou d'autres problèmes suite à l'ajout des enregistrements DNS, voir [Rechercher et corriger les problèmes suite à la modification de votre nom de domaine ou des enregistrements DNS](../get-help-with-domains/find-and-fix-issues.md). 
@@ -81,7 +81,7 @@ Avant que vous puissiez utiliser votre domaine avec Microsoft 365, nous devons 
       ||||||
       |:-----|:-----|:-----|:-----|:-----|
       |**Type d’enregistrement**|**Alias** ou **nom d’hôte**|**Valeur**|**Priorité**|**TTL**|
-      |MX|Entrez soit **@**, soit votre nom de domaine. |MS=ms *XXXXXXXX* <br/> **Remarque :** il s'agit d'un exemple. Utilisez votre valeur **Adresse de destination ou de pointage** spécifique ici, à partir du tableau dans Office 365.    <br/>       [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md)     <br/>     |Pour **Priorité**, afin d’éviter les conflits avec l’enregistrement MX utilisé pour le flux de courrier électronique, utilisez une priorité plus basse que la priorité des enregistrements MX existants. <br/> Pour plus d'informations sur la priorité, voir [Qu'est-ce que la priorité MX ?](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx). <br/> |Définissez cette valeur sur **1 heure** ou sur l'équivalent en minutes ( **60** ), en secondes ( **3600** ), etc. |
+      |MX|Entrez soit **@**, soit votre nom de domaine. |MS=ms *XXXXXXXX* <br/> **Remarque :** il s'agit d'un exemple. Utilisez votre valeur **Adresse de destination ou de pointage** spécifique ici, à partir du tableau dans Office 365.    <br/>       [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md)     <br/>     |Pour **Priorité**, afin d’éviter les conflits avec l’enregistrement MX utilisé pour le flux de courrier électronique, utilisez une priorité plus basse que la priorité des enregistrements MX existants. <br/> Pour plus d'informations sur la priorité, voir [Qu'est-ce que la priorité MX ?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq). <br/> |Définissez cette valeur sur **1 heure** ou sur l'équivalent en minutes ( **60** ), en secondes ( **3600** ), etc. |
    
 2. Enregistrez l'enregistrement.
     
@@ -141,7 +141,7 @@ Trouver la page sur laquelle vous pouvez créer les enregistrements pour votre d
     
    - **Priorité** : définissez la priorité de l’enregistrement MX sur la valeur la plus élevée disponible (généralement **0**).
     
-      Pour plus d'informations sur la priorité, voir [Qu'est-ce que la priorité MX ?](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx).
+      Pour plus d'informations sur la priorité, voir [Qu'est-ce que la priorité MX ?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq).
     
    - **Nom de l’hôte**: **@**
     

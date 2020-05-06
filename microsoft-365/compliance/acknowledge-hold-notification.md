@@ -15,13 +15,15 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: Vous pouvez être amené à informer les dépositaires de leur obligation de conserver les informations stockées électroniquement dans le cadre d’une enquête légale. Advanced eDiscovery vous permet de gérer facilement le processus de notification de blocage.
-ms.openlocfilehash: 703034088b03badae309961c2abda9db80425b99
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.custom:
+- seo-marvel-apr2020
+description: Découvrez comment utiliser Advanced eDiscovery pour envoyer et suivre des notifications de conservation légale par courrier électronique, ainsi que pour surveiller l’état des obligations.
+ms.openlocfilehash: 393d8884a4d4d39056267666fdce6a2754cb582b
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42080274"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034884"
 ---
 # <a name="acknowledge-a-hold-notification"></a>Reconnaitre une notification de conservation
 

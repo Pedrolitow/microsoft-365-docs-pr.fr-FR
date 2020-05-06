@@ -16,20 +16,22 @@ search.appverid:
 ms.assetid: 35dbfd99-da5a-422b-9b0e-c6caf3b645fa
 ms.collection:
 - M365-security-compliance
-description: Lorsque vous configurez vos stratégies de liens approuvés ATP, vous pouvez inclure une liste d’URL do-not-Rewrite’pour permettre à certaines personnes de votre organisation de visiter des sites que vous incluez dans votre liste.
-ms.openlocfilehash: 490fb3279f2c54bc6f2335510aa711866318e01d
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom:
+- seo-marvel-apr2020
+description: Découvrez comment configurer des URL bloquées personnalisées pour des utilisateurs et une liste d’URL de non-réécriture pour un groupe d’utilisateurs dans les stratégies de liens fiables ATP d’Office 365.
+ms.openlocfilehash: d7bd6c7d4c3dccfb4a16b2b2f172f8f75123692e
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43638379"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44046303"
 ---
 # <a name="set-up-a-custom-do-not-rewrite-urls-list-using-atp-safe-links"></a>Configurer une liste d’URL do-not-Rewrite personnalisée à l’aide de liens fiables ATP
 
 > [!IMPORTANT]
 > Cet article est destiné aux entreprises qui ont [Office 365 – Protection avancée contre les menaces](office-365-atp.md). Si vous êtes un utilisateur à domicile et que vous recherchez des informations sur les liens fiables dans Outlook, consultez la rubrique [Advanced Outlook.com Security](https://support.office.com/article/882d2243-eab9-4545-a58a-b36fee4a46e2).
 
-Avec [Office 365 Advanced Threat Protection](office-365-atp.md) (ATP), votre organisation peut avoir une [URL bloquée personnalisée](set-up-a-custom-blocked-urls-list-wtih-atp.md), de telle sorte que lorsque des utilisateurs cliquent sur des adresses Web (URL) dans des messages électroniques ou certains documents Office, ils ne peuvent pas atteindre ces URL. Votre organisation peut également avoir des listes personnalisées « ne pas réécrire » pour des groupes spécifiques de votre organisation. Une liste « ne pas réécrire » permet à certaines personnes de visiter des URL qui sont bloquées par [des liens fiables ATP dans Office 365](atp-safe-links.md).
+Avec [Office 365 Advanced Threat Protection](office-365-atp.md) (ATP), votre organisation peut avoir une [URL bloquée personnalisée](set-up-a-custom-blocked-urls-list-atp.md), de telle sorte que lorsque des utilisateurs cliquent sur des adresses Web (URL) dans des messages électroniques ou certains documents Office, ils ne peuvent pas atteindre ces URL. Votre organisation peut également avoir des listes personnalisées « ne pas réécrire » pour des groupes spécifiques de votre organisation. Une liste « ne pas réécrire » permet à certaines personnes de visiter des URL qui sont bloquées par [des liens fiables ATP dans Office 365](atp-safe-links.md).
 
 Cet article explique comment spécifier une liste d’URL exclues de l’analyse des liens fiables ATP et quelques points importants à garder à l’esprit.
 
@@ -65,7 +67,7 @@ Pour modifier (ou définir) des stratégies ATP, vous devez disposer d’un rôl
 7. Lorsque vous avez terminé d’ajouter des URL, dans le coin inférieur droit de l’écran, sélectionnez **Enregistrer**.
 
 > [!NOTE]
-> Veillez à consulter la liste personnalisée des URL bloquées de votre organisation. Consultez [la rubrique Configurer une liste d’URL bloquées personnalisées à l’aide de liens fiables ATP](set-up-a-custom-blocked-urls-list-wtih-atp.md).
+> Veillez à consulter la liste personnalisée des URL bloquées de votre organisation. Consultez [la rubrique Configurer une liste d’URL bloquées personnalisées à l’aide de liens fiables ATP](set-up-a-custom-blocked-urls-list-atp.md).
 
 ## <a name="important-points-to-keep-in-mind"></a>Points importants à garder à l’esprit
 

@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: b8e25b55ea20514e452b2c26ee0ad1569dbc3c85
-ms.sourcegitcommit: 2399ee6f9bc955cf8f2a76c01fc84c19eb37ff42
+ms.openlocfilehash: 71226634f17e8e801c409e513494dfdcc19d0719
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "43919691"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44046292"
 ---
 # <a name="communication-compliance-in-microsoft-365"></a>Conformité de la communication dans Microsoft 365
 
@@ -156,4 +156,6 @@ Le suivi et la gestion des problèmes de conformité identifiés par les straté
 
 ## <a name="ready-to-get-started"></a>Vous êtes prêt ?
 
-Pour configurer la conformité de la communication pour votre organisation Microsoft 365, consultez la rubrique [configure communication Compliance for Microsoft 365](communication-compliance-configure.md) ou consultez l' [étude de cas pour Contoso](communication-compliance-case-study.md) , ainsi que la manière dont ils ont configuré rapidement une stratégie de conformité des communications pour surveiller le langage choquant dans Microsoft Teams, Exchange Online et les communications Yammer.
+- Pour plus d’informations sur la planification des informations, voir [plan for communication Compliance](communication-compliance-plan.md).
+- Consultez l' [étude de cas pour Contoso](communication-compliance-case-study.md) et découvrez comment ils ont configuré rapidement une stratégie de conformité de communication pour surveiller le langage choquant dans Microsoft Teams, Exchange Online et les communications Yammer.
+- Pour configurer la conformité de la communication pour votre organisation Microsoft 365, consultez la rubrique [configure communication Compliance for microsoft 365](communication-compliance-configure.md).

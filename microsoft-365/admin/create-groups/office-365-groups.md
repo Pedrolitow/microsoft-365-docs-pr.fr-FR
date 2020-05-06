@@ -1,5 +1,5 @@
 ---
-title: Vue d’ensemble des groupes Microsoft 365 pour les administrateurs
+title: Présentation des Groupes Microsoft 365 pour les administrateurs
 ms.reviewer: arvaradh
 f1.keywords: NOCSH
 ms.author: mikeplum
@@ -18,14 +18,14 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez les groupes Microsoft 365.
-ms.openlocfilehash: 9d47383d3226d5a18b9a30a579f6497c7ce63477
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: aca6dfee26e05f162b8cc3efb69005d773a9a9dc
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43630042"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44049166"
 ---
-# <a name="overview-of-microsoft-365-groups-for-administrators"></a>Vue d’ensemble des groupes Microsoft 365 pour les administrateurs
+# <a name="overview-of-microsoft-365-groups-for-administrators"></a>Présentation des Groupes Microsoft 365 pour les administrateurs
 
 Microsoft 365 groups est le service d’appartenance de base qui dirige tout le travail d’équipe dans Microsoft 365. Avec les groupes Microsoft 365, vous pouvez donner à un groupe de personnes l’accès à une collection de ressources de collaboration que ces personnes peuvent partager. Ces ressources sont les suivantes :
 
@@ -56,7 +56,7 @@ En tant qu’administrateur, vous pouvez :
 - [Spécifier qui peut créer des groupes](manage-creation-of-groups.md)
 - [Créer une stratégie d’attribution de noms pour les groupes de votre organisation](groups-naming-policy.md)
 - [Choisir le domaine à utiliser lors de la création d’un groupe](choose-domain-to-create-groups.md)
-- [Gérer l’accès invité à des groupes](manage-guest-access-in-groups.md)
+- [Gérer l’accès invité aux groupes](manage-guest-access-in-groups.md)
 - [Récupérer un groupe supprimé](restore-deleted-group.md) (dans les 30 jours suivant la suppression)
 
 Si vous préférez un moyen plus automatisé de gérer le cycle de vie de vos groupes Microsoft 365, vous pouvez utiliser des stratégies d’expiration pour faire expirer les groupes à un intervalle de temps spécifique. Les propriétaires du groupe reçoivent un message électronique 30, 15 et 1 jour avant l’expiration du groupe qui leur permet de renouveler facilement le groupe s’il est toujours nécessaire. Consultez la rubrique relative à la [stratégie d’expiration de groupe Microsoft 365](office-365-groups-expiration-policy.md).
@@ -79,7 +79,7 @@ Les limites suivantes s’appliquent aux groupes Microsoft 365 :
 |Stockage de fichiers|1 téraoctet + 10 Go par utilisateur abonné + tout stockage supplémentaire acheté. Vous pouvez acheter une quantité illimitée de stockage supplémentaire.|
 |Taille de la boîte aux lettres de groupe|50 Go|
 
-Le nombre maximal par défaut de groupes Microsoft 365 qu’une organisation peut avoir est 500 000, mais peut être augmenté par demande. Pour plus d’informations sur les limites des groupes Microsoft 365, consultez la rubrique [groupes microsoft 365-aide de l’administrateur](https://support.office.com/article/3f780e8e-61aa-4287-830d-ff6209cbc192.aspx).
+Le nombre maximal par défaut de groupes Microsoft 365 qu’une organisation peut avoir est 500 000, mais peut être augmenté par demande. Pour plus d’informations sur les limites des groupes Microsoft 365, consultez la rubrique [groupes microsoft 365-aide de l’administrateur](https://support.office.com/article/learn-about-office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2).
 
 La gestion de vos groupes Microsoft 365 est plus efficace lorsque vous disposez d’informations sur l’utilisation des groupes. Le centre d’administration Microsoft 365 dispose d’un outil de création de rapports qui vous permet de voir des éléments tels que l’utilisation du stockage, le nombre de groupes actifs dont vous disposez et même le mode d’utilisation des groupes par vos utilisateurs. Pour plus d’informations, reportez-vous à [la rubrique rapports Microsoft 365 dans le centre d’administration](../activity-reports/office-365-groups.md) .
 
