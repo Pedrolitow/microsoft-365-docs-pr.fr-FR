@@ -1,5 +1,5 @@
 ---
-title: Créer des requêtes de recherche
+title: Créer des requêtes de recherche-eDiscovery
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -15,13 +15,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
+ms.custom: seo-marvel-mar2020
 description: Utilisez des mots clés et des conditions pour limiter l’étendue de la recherche lors de la recherche de données à l’aide de Advanced eDiscovery dans Microsoft 365.
-ms.openlocfilehash: c704b338600c715193829e442e1bd6ba7c780455
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 86e763577c24473f8f55c5c8dc26d1853509d50a
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42079041"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035512"
 ---
 # <a name="build-search-queries"></a>Créer des requêtes de recherche
 

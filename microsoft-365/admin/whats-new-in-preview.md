@@ -20,12 +20,12 @@ search.appverid:
 description: Centre d’administration Microsoft 365-Découvrez les fonctionnalités qui ont été ajoutées ce mois-ci.
 ms.custom:
 - MACDashWhatsNew
-ms.openlocfilehash: 2b25e68fbe07b46243f92bdcd252e86340d5f7eb
-ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
+ms.openlocfilehash: afb18a9e9a249459665781bb1105397684f04653
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "44011326"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44045951"
 ---
 # <a name="whats-new-in-the-microsoft-365-admin-center"></a>Nouveautés du centre d’administration Microsoft 365
 
@@ -176,7 +176,7 @@ Nous combinons les nouveautés de novembre et de décembre car, après s’enfla
 
 ### <a name="change-from-credit-card-to-invoice-payment"></a>Passer de la carte de crédit au paiement de la facture
 
-Nous commençons par déployer la fonctionnalité de changement de votre mode de paiement par carte bancaire. Accédez aux services de **facturation** \> **& services**, sélectionnez un abonnement, puis cliquez sur le lien **modifier** en regard du paiement par carte de crédit.
+Nous commençons par déployer la fonctionnalité de changement de votre mode de paiement par carte bancaire. Accédez à **facturation** \> de **vos produits**, sélectionnez un abonnement, puis cliquez sur le lien **modifier** en regard du paiement par carte de crédit.
 
 ![Capture d’écran : section facturation de la carte d’abonnement avec une carte de crédit comme mode de paiement.](../media/MAC-BillingEditCreditCard.png)
 
@@ -244,7 +244,7 @@ L’état du service a été mis à jour vers le nouveau style et, si vous êtes
 
 ### <a name="viral-subscriptions"></a>Abonnements « viraux »
 
-Comme vous le souhaitez, les utilisateurs peuvent activer des abonnements gratuits à une myriade de produits tels que Power BI et App Connect. Vous pouvez maintenant voir les « abonnements viraux » que vos utilisateurs ont essayés. Accédez aux services de **facturation** > **& aux services**. Sélectionnez le filtre de **type de compte** sous l’onglet abonnements pour afficher les abonnements achetés par l’utilisateur. Si nécessaire, vous pouvez maintenant supprimer ces abonnements de votre compte.
+Comme vous le souhaitez, les utilisateurs peuvent activer des abonnements gratuits à une myriade de produits tels que Power BI et App Connect. Vous pouvez maintenant voir les « abonnements viraux » que vos utilisateurs ont essayés. Accédez à **facturation** > de**vos produits**. Sélectionnez le filtre de **type de compte** sous l’onglet abonnements pour afficher les abonnements achetés par l’utilisateur. Si nécessaire, vous pouvez maintenant supprimer ces abonnements de votre compte.
 
 ### <a name="user-templates"></a>Modèles de l'utilisateur
 
@@ -289,7 +289,7 @@ Une mise à jour a été mise à jour vers l’un des assistants d’installatio
 
 Nous disposons de mises à jour pour la facturation et les abonnements ce mois-ci :
 
-- Abonnements basés sur des appareils : vous pouvez attribuer ou annuler l’affectation de licences **Microsoft 365 Apps for Education (Device)** à des appareils dans le centre d’administration Microsoft 365. **Microsoft 365 Apps for Education (Device)** est une licence de module complémentaire qui vous permet d’attribuer une licence à un appareil. Accédez aux services de **facturation** > **& services** pour trouver et acheter la licence.
+- Abonnements basés sur des appareils : vous pouvez attribuer ou annuler l’affectation de licences **Microsoft 365 Apps for Education (Device)** à des appareils dans le centre d’administration Microsoft 365. **Microsoft 365 Apps for Education (Device)** est une licence de module complémentaire qui vous permet d’attribuer une licence à un appareil. Accédez à **facturation** > de**vos produits** pour trouver et acheter la licence.
 - Gestion des licences basées sur les utilisateurs : nous avons mis à jour la manière dont vous attribuez des licences aux utilisateurs > **actifs** des **utilisateurs dans le**nouveau style. Pour plus d’informations, reportez-vous aux rubriques suivantes :
   - [Attribuer des licences aux utilisateurs](manage/assign-licenses-to-users.md)
   - [Annuler l'assignation des licences aux utilisateurs](manage/remove-licenses-from-users.md)
@@ -333,7 +333,7 @@ Nous avons des modifications passionnantes pour vous aider à configurer votre o
 
 ### <a name="billing--subscriptions"></a>Abonnements aux & de facturation
 
-- Type de produit **logiciel** -vous pouvez désormais consulter les logiciels achetés par le biais d’un fournisseur de services Cloud (CSP). Pour afficher vos téléchargements et clés, accédez à l’onglet**logiciels** des services de **facturation** > **& services** > .
+- Type de produit **logiciel** -vous pouvez désormais consulter les logiciels achetés par le biais d’un fournisseur de services Cloud (CSP). Pour afficher vos téléchargements et clés, accédez à l’onglet **facturation** > **de votre** > **logiciel** produits.
 - Vous pouvez afficher les produits et services Azure modernes à partir du centre d’administration Microsoft 365, que vous les achetiez auprès de Microsoft ou d’un fournisseur tiers. Exemples de produits Azure modernes inclus :
   - Instances virtuelles réservées Azure
   - Plans de prise en charge Azure
@@ -431,7 +431,7 @@ Nous avons apporté quelques modifications supplémentaires à la **gestion des 
 - Ce mois-ci contient une Bonanza des modifications de **facturation** ...
   - Vous pouvez maintenant mettre à jour le CVV pour les cartes de crédit existantes sans avoir à le supprimer et à le rajouter. Vous pouvez mettre à jour le CVV en accédant à **Bill** > **Payment Methods**.
     - Nous avons facilité la localisation de vos **factures** et comprenons les problèmes de facturation que votre compte peut rencontrer. À présent, vous pouvez voir vos factures dans le navigateur Web au lieu de télécharger le PDF. Accédez à **factures** > et**factures.**
-    - Dans la page **Products & services** , nous regroupons maintenant vos informations d’abonnement si vous avez plusieurs abonnements du même type.
+    - Sur la page **vos produits** , nous regroupons maintenant vos informations d’abonnement si vous avez plusieurs abonnements du même type.
 
 ## <a name="march-2019---weve-officially-released-the-admin-center"></a>Mars 2019-nous avons officiellement publié le centre d’administration
 

@@ -15,17 +15,19 @@ search.appverid:
 ms.assetid: 065cc2cf-2f3a-47fd-a434-2a20b8f51d0c
 ms.collection:
 - M365-security-compliance
-description: Les administrateurs peuvent afficher, publier et supprimer tous les types de messages mis en quarantaine pour tous les utilisateurs. Seuls les administrateurs peuvent gérer les messages mis en quarantaine en tant que programmes malveillants, le hameçonnage à haute fiabilité ou à la suite de règles de flux de messagerie (règles de transport).
-ms.openlocfilehash: 1ae64b71d29f9e2d973f5a73cc19790fe0736913
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom:
+- seo-marvel-apr2020
+description: Dans cet article, vous allez découvrir comment les administrateurs peuvent gérer les messages et les fichiers mis en quarantaine pour les utilisateurs dans Office 365.
+ms.openlocfilehash: e69887b54b3e892775c16fa3e306da3b17ab7db3
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635353"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44036172"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-administrator"></a>Gérer les fichiers et les messages mis en quarantaine en tant qu’administrateur
 
-La mise en quarantaine bloque les messages potentiellement dangereux ou indésirables dans les organisations Microsoft 365 avec des boîtes aux lettres dans Exchange Online ou des organisations Exchange Online Protection (EOP) autonomes sans boîtes aux lettres Exchange Online. Si vous souhaitez en savoir plus, consultez l’article [La quarantaine dans Office 365](quarantine-email-messages.md).
+La quarantaine contient des messages potentiellement dangereux ou indésirables dans les organisations Microsoft 365 avec des boîtes aux lettres dans Exchange Online ou des organisations Exchange Online Protection (EOP) autonomes sans boîtes aux lettres Exchange Online. Si vous souhaitez en savoir plus, consultez l’article [La quarantaine dans Office 365](quarantine-email-messages.md).
 
 Les administrateurs peuvent afficher, publier et supprimer tous les types de messages mis en quarantaine pour tous les utilisateurs. Seuls les administrateurs peuvent gérer les messages mis en quarantaine en tant que programmes malveillants, le hameçonnage à haute fiabilité ou à la suite de règles de flux de messagerie (également appelées règles de transport). Les administrateurs peuvent également signaler les faux positifs à Microsoft.
 
@@ -35,7 +37,7 @@ Vous pouvez afficher et gérer les messages mis en quarantaine dans le centre de
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu'il faut savoir avant de commencer
 
-- Pour ouvrir le centre de sécurité & conformité, accédez <https://protection.office.com>à. Pour ouvrir la page de quarantaine directement, accédez à <https://protection.office.com/quarantine>.
+- Pour ouvrir le Centre de conformité et sécurité, consultez <https://protection.office.com>. Pour ouvrir la page de quarantaine directement, accédez à <https://protection.office.com/quarantine>.
 
 - Pour vous connecter à Exchange Online PowerShell, voir [Connexion à Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell). Pour vous connecter à Exchange Online Protection PowerShell, consultez la rubrique [Connect to Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell).
 
@@ -189,7 +191,7 @@ Une fois que vous avez sélectionné un message, vous disposez de plusieurs opti
 
   - Seuls les destinataires qui n’ont pas reçu le message s’affichent dans la liste des destinataires potentiels.
 
-- **Afficher l’en-tête du message** : Sélectionnez ce lien pour afficher le texte d’en-tête du message. Pour analyser les champs d’en-tête et les valeurs en profondeur, copiez le texte de l’en-tête du message dans votre presse-papiers, puis choisissez **analyseur d’en-têtes de message Microsoft** pour accéder à l’analyseur de connectivité à distance (cliquez avec le bouton droit et choisissez **ouvrir dans un nouvel onglet** si vous ne souhaitez pas laisser Microsoft 365 pour effectuer cette tâche). Collez l’en-tête du message dans la section analyseur d’en-tête de message de la page, puis sélectionnez **Analyser les en-têtes** :
+- **Afficher l’en-tête du message** : Sélectionnez ce lien pour afficher le texte d’en-tête du message. Pour analyser en profondeur les champs d'en-tête et les valeurs, copiez le texte d’en-tête du message dans le presse-papiers, puis sélectionnez **Analyseur d’en-tête de message Microsoft** pour accéder à l’analyseur de connectivité à distance (Faites un clic droit et sélectionnez **Ouvrir dans un nouvel onglet** si vous ne souhaitez pas laisser Microsoft 365 accomplir cette tâche). Collez l’en-tête du message dans la section analyseur d’en-tête de message de la page, puis sélectionnez **Analyser les en-têtes** :
 
 - **Prévisualiser le message** : dans le volet déroulant qui apparaît, choisissez l’une des options suivantes :
 

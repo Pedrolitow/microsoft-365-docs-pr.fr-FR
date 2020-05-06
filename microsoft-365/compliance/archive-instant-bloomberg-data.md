@@ -13,13 +13,15 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.collection: M365-security-compliance
-description: Les administrateurs peuvent configurer un connecteur natif pour importer des données à partir de l’outil de conversation Bloomberg dans Microsoft 365. Cela vous permet d’archiver des données provenant de sources de données tierces dans Microsoft 365 de sorte que vous puissiez utiliser les fonctionnalités de conformité telles que la conservation légale, la recherche de contenu et les stratégies de rétention pour gérer les données tierces de votre organisation.
-ms.openlocfilehash: d423de02695b1727f3c2ac7de00dde99a36a073c
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.custom:
+- seo-marvel-apr2020
+description: Configurez un connecteur pour importer les données de instant Bloomberg vers Microsoft 365 afin de pouvoir utiliser divers outils de conformité.
+ms.openlocfilehash: 49fdef36e6ae2b425878641c1a368e982e391eeb
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43943223"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035146"
 ---
 # <a name="set-up-a-connector-to-archive-instant-bloomberg-data"></a>Configurer un connecteur pour archiver des données Instant Bloomberg
 

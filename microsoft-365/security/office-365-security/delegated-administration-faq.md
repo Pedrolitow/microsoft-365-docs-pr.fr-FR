@@ -11,13 +11,15 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: d6a87ce8-2c22-433a-b430-5eab14f6afdc
-description: Cette rubrique fournit des questions fréquemment posées et des réponses pour les partenaires et les revendeurs Microsoft qui souhaitent effectuer des tâches d’administration déléguées, y compris la possibilité de gérer Exchange Online Protection (EOP) pour d’autres clients (sociétés).
-ms.openlocfilehash: b79c0aba026a8d59aac338ceac0f1c4a60d71c4d
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom:
+- seo-marvel-apr2020
+description: Cette rubrique fournit des questions fréquentes et des réponses pour les partenaires et les revendeurs Microsoft qui souhaitent effectuer des tâches d’administration Microsoft 365 déléguées.
+ms.openlocfilehash: d2411734e583cce2be817793e2b39abba2b186a5
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637651"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44036462"
 ---
 # <a name="delegated-administration-faq"></a>FAQ sur l’administration déléguée
 

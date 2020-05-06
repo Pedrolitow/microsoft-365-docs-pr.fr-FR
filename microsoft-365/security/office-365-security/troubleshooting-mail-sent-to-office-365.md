@@ -15,13 +15,15 @@ search.appverid:
 ms.assetid: f4caa4e1-e414-4b21-8822-31c08064c059
 ms.collection:
 - M365-security-compliance
-description: Cet article fournit des informations de dépannage pour les expéditeurs qui rencontrent des problèmes lors de la tentative d’envoi de messages électroniques à des boîtes de réception dans Microsoft 365 et les meilleures pratiques pour le publipostage à des clients.
-ms.openlocfilehash: 89fd6d11cca0d7689203948922b27e46ae2c602a
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom:
+- seo-marvel-apr2020
+description: Cet article fournit des informations sur la résolution des problèmes liés à l’envoi de messages électroniques à des boîtes de réception dans Microsoft 365 & meilleures pratiques pour le publipostage vers les clients Microsoft 365.
+ms.openlocfilehash: 849707ee8b703f13ac12ecb414a8ed9ea6421704
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631144"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44036739"
 ---
 # <a name="troubleshooting-mail-sent-to-office-365"></a>Résolution des problèmes de messages envoyés à Office 365
 

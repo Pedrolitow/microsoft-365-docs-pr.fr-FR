@@ -1,5 +1,5 @@
 ---
-title: Utiliser les notifications de courrier indésirable de l’utilisateur pour publier et signaler les messages mis en quarantaine
+title: Notifications de courrier indésirable à l’utilisateur final dans Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -17,17 +17,19 @@ search.appverid:
 ms.assetid: 56de4ed5-b0aa-4195-9f46-033d7cc086bc
 ms.collection:
 - M365-security-compliance
-description: Lorsqu’un administrateur Active les notifications de courrier indésirable de l’utilisateur final dans les stratégies de blocage du courrier indésirable, les destinataires des messages reçoivent régulièrement des notifications sur leurs messages mis en quarantaine.
-ms.openlocfilehash: 641efc024a2842f30f7754c52f624a9f668851de
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom:
+- seo-marvel-apr2020
+description: Dans cet article, vous allez découvrir les notifications de courrier indésirable de l’utilisateur final pour les messages mis en quarantaine.
+ms.openlocfilehash: 2a865130bf1fa0c09b5b68254fb604795b204c22
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636415"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034997"
 ---
 # <a name="use-user-spam-notifications-to-release-and-report-quarantined-messages"></a>Utiliser les notifications de courrier indésirable de l’utilisateur pour publier et signaler les messages mis en quarantaine
 
-La mise en quarantaine bloque les messages potentiellement dangereux ou indésirables dans les organisations Microsoft 365 avec des boîtes aux lettres dans Exchange Online ou des organisations Exchange Online Protection (EOP) autonomes sans boîtes aux lettres Exchange Online. Si vous souhaitez en savoir plus, consultez l’article [La quarantaine dans Office 365](quarantine-email-messages.md).
+La quarantaine contient des messages potentiellement dangereux ou indésirables dans les organisations Microsoft 365 avec des boîtes aux lettres dans Exchange Online ou des organisations Exchange Online Protection (EOP) autonomes sans boîtes aux lettres Exchange Online. Si vous souhaitez en savoir plus, consultez l’article [La quarantaine dans Office 365](quarantine-email-messages.md).
 
 Par défaut, les notifications de courrier indésirable de l’utilisateur final sont désactivées dans les stratégies anti-courrier indésirable. Lorsqu’un administrateur [active les notifications de courrier indésirable de l’utilisateur final](configure-your-spam-filter-policies.md#configure-end-user-spam-notifications), les destinataires reçoivent des notifications périodiques sur leurs messages mis en quarantaine en tant que courrier indésirable, en masse ou (depuis avril 2020).
 

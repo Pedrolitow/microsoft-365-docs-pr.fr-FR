@@ -15,13 +15,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: ''
-ms.openlocfilehash: 5421ba811e401bdd191aee0ddbff21a1286dc9fe
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: Découvrez comment utiliser la correction des erreurs pour corriger les problèmes de données dans Advanced eDiscovery, qui peut empêcher le traitement approprié du contenu.
+ms.custom: seo-marvel-mar2020
+ms.openlocfilehash: 8ada53dd6339541fc39b37903a0f58fd4ad84c8c
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42074571"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035908"
 ---
 # <a name="error-remediation-when-processing-data"></a>Correction d’erreur lors du traitement des données
 

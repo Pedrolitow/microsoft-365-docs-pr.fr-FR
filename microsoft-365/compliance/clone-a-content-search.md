@@ -15,13 +15,15 @@ search.appverid:
 - MED150
 - MET150
 ms.assetid: 7b40eeaa-544c-4534-b89b-9f79998e374c
-description: Utilisez le script Windows PowerShell dans cet article pour cloner rapidement une recherche de contenu existante dans le centre de conformité dans Office 365 ou Microsoft 365. Lorsque vous clonez une recherche, une nouvelle recherche (avec un nouveau nom) est créée et contient les mêmes propriétés que la recherche d’origine. Ensuite, vous pouvez modifier la nouvelle recherche en changeant la requête par mot clé ou la plage de dates, puis l’exécuter.
-ms.openlocfilehash: bba683e7ffbad6177a6214ebb36e3aaece7aada7
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.custom:
+- seo-marvel-apr2020
+description: Utilisez le script Windows PowerShell dans cet article pour cloner rapidement une recherche de contenu existante dans le centre de conformité dans Office 365 ou Microsoft 365.
+ms.openlocfilehash: 013a3cd04b665e1da800638a2335adb034878a4a
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43942937"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035646"
 ---
 # <a name="clone-a-content-search"></a>Cloner une recherche de contenu
 
@@ -139,7 +141,7 @@ Pour cloner une recherche :
   
 ## <a name="step-2-edit-and-run-the-cloned-search-in-the-compliance-center"></a>Étape 2 : modifier et exécuter la recherche clonée dans le centre de conformité
 
-Une fois que vous avez exécuté le script pour cloner une recherche de contenu existante, l’étape suivante consiste à accéder au centre de conformité pour modifier et exécuter la nouvelle recherche. Comme indiqué précédemment, vous pouvez modifier une recherche en modifiant la requête de recherche par mot clé et en ajoutant ou supprimant des conditions de recherche. Si vous souhaitez en savoir plus, consultez les articles : 
+Une fois que vous avez exécuté le script pour cloner une recherche de contenu existante, l’étape suivante consiste à accéder au centre de conformité pour modifier et exécuter la nouvelle recherche. Comme indiqué précédemment, vous pouvez modifier une recherche en modifiant la requête de recherche par mot clé et en ajoutant ou supprimant des conditions de recherche. Pour plus d’informations, reportez-vous aux rubriques suivantes :
   
 - [Recherche de contenu dans Office 365](content-search.md)
     

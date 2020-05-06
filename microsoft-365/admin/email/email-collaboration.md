@@ -25,12 +25,12 @@ search.appverid:
 - SPB160
 ms.assetid: eb3e840f-ed60-4461-81f5-12381c132b89
 description: Découvrez les différents types de groupes et comment les utiliser avec les différentes fonctionnalités de collaboration de Microsoft 365.
-ms.openlocfilehash: 09dce9a26d22989fecf828bf91c0e8ce9583a589
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: b5b8030b1f16562007ac2786dca776db6482eecb
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43628866"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44048794"
 ---
 # <a name="email-collaboration"></a>Collaborer par message électronique
 
@@ -47,7 +47,7 @@ Ce tableau explique les différentes options de collaboration à votre dispositi
 |:-----|:-----|
 |Groupes dans Outlook  <br/> |Espace de travail partagé qui fonctionne dans toutes les applications de Microsoft 365. Inclut une boîte aux lettres et un calendrier partagés, et un site OneDrive Entreprise pour le stockage des fichiers. Les utilisateurs peuvent créer, Rechercher et rejoindre des groupes dans Outlook directement à partir de leur courrier électronique ou de leur calendrier. Les utilisateurs nouveaux et existants disposant d’un abonnement Exchange Online ou Microsoft 365 peuvent utiliser des groupes dans Outlook.  <br/> |
 |Boîte aux lettres partagée  <br/> |Boîte aux lettres qui permet à certains utilisateurs de lire et d'envoyer des messages électroniques, et de partager un calendrier. Les boîtes aux lettres partagées peuvent également servir d'adresse de messagerie générique (par exemple, info@contoso.com ou ventes@contoso.com) et permettre aux clients de demander des informations sur l'entreprise. Lorsque l'autorisation Envoyer en tant que est activée sur la boîte aux lettres partagée, les messages envoyés à partir de la boîte aux lettres utilisent l'adresse générique (par exemple, ventes@contoso.com).  <br/> |
-|Liste de distribution (ou groupe de distribution)  <br/> |Permet de distribuer les messages électroniques à plusieurs personnes simultanément. Les groupes de distribution sont également appelés groupes de distribution à extension messagerie. Une variante du groupe de distribution, appelée groupe de distribution dynamique, est un objet Groupe Active Directory qui permet d'envoyer des messages électroniques à un grand groupe de destinataires susceptible d'évoluer. Les destinataires sont déterminés à l'aide des filtres et conditions que vous spécifiez (par exemple, membres d'un site particulier ou employés à temps plein).<br/><br/> Les groupes Microsoft 365 dans Outlook offrent une solution plus puissante pour la collaboration que les groupes de distribution. Pour en savoir plus, consultez [la rubrique pourquoi vous devez mettre à niveau vos listes de distribution vers des groupes dans Outlook](https://support.office.com/article/7fb3d880-593b-4909-aafa-950dd50ce188.aspx) et [migrer les listes de distribution vers des groupes Microsoft 365](../manage/upgrade-distribution-lists.md).  <br/> |
+|Liste de distribution (ou groupe de distribution)  <br/> |Permet de distribuer les messages électroniques à plusieurs personnes simultanément. Les groupes de distribution sont également appelés groupes de distribution à extension messagerie. Une variante du groupe de distribution, appelée groupe de distribution dynamique, est un objet Groupe Active Directory qui permet d'envoyer des messages électroniques à un grand groupe de destinataires susceptible d'évoluer. Les destinataires sont déterminés à l'aide des filtres et conditions que vous spécifiez (par exemple, membres d'un site particulier ou employés à temps plein).<br/><br/> Les groupes Microsoft 365 dans Outlook offrent une solution plus puissante pour la collaboration que les groupes de distribution. Pour en savoir plus, consultez [la rubrique pourquoi vous devez mettre à niveau vos listes de distribution vers des groupes dans Outlook](https://support.microsoft.com/en-us/office/why-you-should-upgrade-your-distribution-lists-to-groups-in-outlook-7fb3d880-593b-4909-aafa-950dd50ce188) et [migrer les listes de distribution vers des groupes Microsoft 365](../manage/upgrade-distribution-lists.md).  <br/> |
 |Dossier public  <br/> |Conçu pour un accès partagé, les dossiers publics offrent un moyen simple et efficace de collecter, d’organiser et de partager des informations avec d’autres membres de votre organisation. Ils organisent le contenu au sein d'une hiérarchie étendue facile à parcourir et toujours visible dans l'affichage des dossiers Outlook. Les dossiers publics peuvent être à extension messagerie et ajoutés en tant que membres du groupe de distribution. Les messages envoyés au groupe de distribution sont ajoutés automatiquement au dossier public à des fins d'archivage ou de référence. Les dossiers publics fournissent également un partage de documents simple lorsque vous n'avez pas d'abonnement SharePoint Online.  <br/> |
    
 ## <a name="which-collaboration-tool-to-use"></a>Quel outil de collaboration devez-vous utiliser ?

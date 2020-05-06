@@ -13,13 +13,15 @@ localization_priority: Normal
 search.appverid:
 - MET150s
 ms.assetid: 9721b46d-cbea-4121-be51-542395e6fd21
-description: Les administrateurs peuvent en savoir plus sur les options disponibles dans Microsoft 365 et EOP qui permettent aux messages entrants d’ignorer le filtrage du courrier indésirable.
-ms.openlocfilehash: ff4f2715ddfe0029aced27ed466a5af8eb95e790
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom:
+- seo-marvel-apr2020
+description: Découvrez comment les administrateurs peuvent créer une liste d’expéditeurs approuvés dans Microsoft 365 et EOP qui permet aux messages entrants d’ignorer le filtrage du courrier indésirable.
+ms.openlocfilehash: e09d607f6b5203bdc3ab23ad5bd6e8f85782605a
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637675"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44036342"
 ---
 # <a name="create-safe-sender-lists"></a>Créer des listes d’expéditeurs approuvés
 
@@ -135,4 +137,4 @@ Pour empêcher le filtrage de ce message, procédez comme suit :
 
 - [Utilisez une règle de flux de messagerie](#recommended-use-mail-flow-rules) avec une condition qui recherche les messages provenant de `5322.From` blueyonder@news.blueyonderairlines.com (l’adresse, `5321.MailFrom`blueyonder.Airlines@margiestravel.com (le) ou les deux.
 
-Pour plus d’informations, consultez la rubrique [créer des listes d’expéditeurs approuvés dans Office 365](create-safe-sender-lists-in-office-365.md).
+Si vous souhaitez en savoir plus, consultez la page [Créer des listes d’expéditeurs approuvés dans Office 365](create-safe-sender-lists-in-office-365.md).

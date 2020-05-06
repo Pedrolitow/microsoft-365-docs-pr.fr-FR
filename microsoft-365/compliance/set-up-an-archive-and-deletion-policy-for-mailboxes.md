@@ -19,13 +19,14 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: ec3587e4-7b4a-40fb-8fb8-8aa05aeae2ce
-description: Créer une stratégie d’archivage et de suppression qui déplace automatiquement les éléments vers la boîte aux lettres d’archivage d’un utilisateur.
-ms.openlocfilehash: b8d156ec9340e644e8f0bf213f04135e756421eb
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+description: Créer une stratégie d’archivage et de suppression dans Microsoft 365 qui déplace automatiquement les éléments vers la boîte aux lettres d’archivage d’un utilisateur.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 0d2dd6d95018742247655f085553ad6583f8843d
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43943577"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034316"
 ---
 # <a name="set-up-an-archive-and-deletion-policy-for-mailboxes-in-your-organization"></a>Configurer une stratégie d’archivage et de suppression pour les boîtes aux lettres de votre organisation
 

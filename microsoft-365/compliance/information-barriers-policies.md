@@ -13,16 +13,17 @@ ms.collection:
 - M365-security-compliance
 localization_priority: None
 description: Découvrez comment définir des stratégies pour les barrières d’informations dans Microsoft Teams.
-ms.openlocfilehash: c7bc7a1f90962910a0626967e4f6dee005695e30
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 1c81fedddf5e3553ec4b24353fac43079305c5b2
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43621370"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035040"
 ---
 # <a name="define-information-barrier-policies"></a>Définir des stratégies d’obstacle aux informations
 
-## <a name="overview"></a>Vue d’ensemble
+## <a name="overview"></a>Vue d'ensemble
 
 Avec les barrières d’informations, vous pouvez définir des stratégies conçues pour empêcher certains segments d’utilisateurs de communiquer les uns avec les autres ou d’autoriser des segments spécifiques à communiquer uniquement avec certains autres segments. Les stratégies de barrière des informations peuvent aider votre organisation à respecter les normes et réglementations pertinentes de l’industrie et éviter les conflits d’intérêt potentiels. Pour en savoir plus, consultez la rubrique [barrières relatives aux informations](information-barriers.md). 
 
@@ -56,7 +57,7 @@ Lorsque vous définissez des stratégies pour les barrières d’informations, v
 |(Si nécessaire) [Modifier un segment ou une stratégie](information-barriers-edit-segments-policies.md)    |-Modifier un segment<br/>-Modifier ou supprimer une stratégie<br/>-Réexécuter l’application de stratégie<br/>-Afficher le statut de la stratégie         |
 |(Si nécessaire) [Résolution des problèmes](information-barriers-troubleshooting.md)|Action à effectuer lorsque des choses ne fonctionnent pas comme prévu|
 
-## <a name="prerequisites"></a>Conditions préalables
+## <a name="prerequisites"></a>Conditions requises
 
 En plus des [licences et des autorisations requises](information-barriers.md#required-licenses-and-permissions), assurez-vous que les conditions suivantes sont remplies : 
      

@@ -14,13 +14,15 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 88898874-e262-4c5c-b6d2-4e697497fc74
-description: Vérifiez votre requête par mot clé pour la recherche de contenu pour les erreurs et les fautes de frappe, telles que les caractères non pris en charge et les opérateurs booléens en minuscules, avant d’exécuter la recherche. Si nous trouvons une erreur, nous vous suggérons une requête révisée.
-ms.openlocfilehash: bd87faa774f8449833287ff0c583f9e15a4298ff
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.custom:
+- seo-marvel-apr2020
+description: Découvrez comment vérifier votre requête par mot clé pour rechercher des erreurs et des fautes de frappe, telles que des caractères non pris en charge et des opérateurs booléens en minuscules.
+ms.openlocfilehash: 489afd8b2fe19742b63232d323197afecc257ccc
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43942907"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035626"
 ---
 # <a name="check-your-content-search-query-for-errors"></a>Vérifier la présence d’erreurs dans vos requêtes de recherche de contenu
 

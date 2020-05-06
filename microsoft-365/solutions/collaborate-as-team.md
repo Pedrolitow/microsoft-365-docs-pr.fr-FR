@@ -11,15 +11,16 @@ ms.collection:
 - M365-collaboration
 ms.custom:
 - M365solutions
+- seo-marvel-apr2020
 localization_priority: Normal
 f1.keywords: NOCSH
-description: Découvrez comment collaborer avec des invités dans Teams.
-ms.openlocfilehash: 7d840628ce6d987a907e8be2c8a3c3c5125f7d33
-ms.sourcegitcommit: 101084f9c81616342d78493232d8f13f5ffa4ddf
+description: Découvrez les étapes de configuration de Microsoft 365 nécessaires pour configurer une équipe de collaboration avec des invités dans Teams.
+ms.openlocfilehash: bf074d9115d8e5d9e2c7c265ee96e493ac3d59e3
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "44002191"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44036006"
 ---
 # <a name="collaborate-with-guests-in-a-team"></a>Collaborer avec des invités au sein d’une équipe
 
@@ -60,17 +61,17 @@ Vérifiez que l’accès invité est activé dans teams et effectuez les ajustem
 
 ![Capture d’écran du commutateur Accès invité dans Teams](../media/teams-guest-access-toggle-on.png)
 
-Pour définir les paramètres d’accès invité aux équipes
+Pour déterminer les paramètres d’accès invité Teams, procédez comme suit :
 
-1. Connectez-vous au centre d’administration Microsoft 365 [https://admin.microsoft.com](https://admin.microsoft.com)à l’adresse.
-2. Dans le volet de navigation de gauche, cliquez sur **Afficher tout**.
-3. Sous **centres d’administration**, cliquez sur **équipes**.
-4. Dans le centre d’administration Teams, dans le volet de navigation de gauche, développez Paramètres à l’échelle de l' **organisation** , puis cliquez sur **accès invité**.
-5. Assurez-vous que **l’autorisation autoriser l’accès invité dans teams** est **activée.**
-6. Effectuez toutes les modifications souhaitées dans les paramètres d’invité supplémentaires, puis cliquez sur **Enregistrer**.
+1. Connectez-vous au Centre d’administration Microsoft 365 sur[https://admin.microsoft.com](https://admin.microsoft.com).
+2. Dans la barre de navigation de gauche, cliquez sur **Afficher tout**.
+3. Sous **Centres d’administration**, cliquez sur **Teams**.
+4. Dans le Centre d’administration Teams, dans le volet de navigation gauche, développez **Paramètres à l’échelle de l’organisation**, puis cliquez sur **Accès invité**.
+5. Assurez-vous que **Autoriser l’accès invité dans Teams** est défini sur **Activé**.
+6. Apportez les modifications souhaitées aux autres paramètres invités, puis cliquez sur **Enregistrer**.
 
 > [!NOTE]
-> Le paramètre invité de teams peut prendre jusqu’à vingt-quatre heures après son activation.
+> La mise en service du paramètre invité Teams peut prendre jusqu'à vingt-quatre heures.
 
 ## <a name="microsoft-365-groups-guest-settings"></a>Paramètres invités des groupes Microsoft 365
 

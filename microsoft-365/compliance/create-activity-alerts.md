@@ -17,13 +17,13 @@ search.appverid:
 - MET150
 ms.assetid: 72bbad69-035b-4d33-b8f4-549a2743e97d
 ROBOTS: NOINDEX, NOFOLLOW
-description: Ajoutez et gérez les alertes d’activité dans le centre de sécurité & conformité afin que Microsoft 365 vous envoie des notifications par courrier électronique lorsque les utilisateurs effectuent des activités spécifiques.
-ms.openlocfilehash: e6800bf5b8bbc013586a4be248a4e9e71fc70507
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+description: Ajouter et gérer des alertes d’activité dans le centre de sécurité & conformité afin que Microsoft 365 vous envoie des notifications par courrier électronique lorsque les utilisateurs effectuent des activités spécifiques
+ms.openlocfilehash: 16c40ebeb44ecb1c54a1715a936436b3427a7d54
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43943163"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035806"
 ---
 # <a name="create-activity-alerts"></a>Créer des alertes d’activité
 

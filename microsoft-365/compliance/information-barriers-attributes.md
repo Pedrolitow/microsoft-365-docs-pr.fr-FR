@@ -12,13 +12,14 @@ ms.service: O365-seccomp
 ms.collection:
 - M365-security-compliance
 localization_priority: None
-description: Utilisez cet article comme référence pour différents attributs que vous pouvez utiliser dans les stratégies de barrière des informations.
-ms.openlocfilehash: ff7b6e22370c086f6b685fce4de8b61396017bf9
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+description: Il s’agit d’un article de référence sur les attributs de compte d’utilisateur Azure Active Directory que vous utilisez pour définir des segments de barrière des informations.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 75a568b4d54432de0b72c379e83077c222acb687
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600621"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035050"
 ---
 # <a name="attributes-for-information-barrier-policies"></a>Attributs pour les stratégies d’obstacle aux informations
 
@@ -43,7 +44,7 @@ Les attributs mentionnés dans cet article peuvent être utilisés pour définir
 
 3. [Définissez des segments à l’aide de PowerShell](information-barriers-policies.md#define-segments-using-powershell), comme dans les exemples suivants :
 
-    |Exemple  |Applet de commande  |
+    |Exemple  |Cmdlet  |
     |---------|---------|
     |Définition d’un segment nommé Segment1 à l’aide de l’attribut Department     | `New-OrganizationSegment -Name "Segment1" -UserGroupFilter "Department -eq 'Department1'"`        |
     |Définissez un segment appelé Segmenta à l’aide de l’attribut MemberOf (Supposons que cet attribut contient des noms de groupe, par exemple « BlueGroup »).     | `New-OrganizationSegment -Name "SegmentA" -UserGroupFilter "MemberOf -eq 'BlueGroup'"`        |
@@ -88,10 +89,10 @@ Le tableau suivant répertorie les attributs que vous pouvez utiliser avec les b
 |StreetAddress |StreetAddress |
 |TargetAddress |ExternalEmailAddress |
 |UsageLocation |UsageLocation |
-|UserPrincipalName  |UserPrincipalName  |
-|Application de messagerie   |WindowsEmailAddress    |
+|UserPrincipalName    |UserPrincipalName    |
+|Courrier    |WindowsEmailAddress    |
 |Description    |Description    |
-|MemberOf   |MemberOfGroup  |
+|MemberOf    |MemberOfGroup    |
 
 ## <a name="related-topics"></a>Voir aussi
 

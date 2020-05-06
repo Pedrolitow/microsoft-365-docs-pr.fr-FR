@@ -20,19 +20,19 @@ search.appverid:
 - MOE150
 ms.assetid: 5762c3ca-1de2-4999-bfe5-4c5e25a8957e
 description: Découvrez comment vérifier votre domaine et configurer les enregistrements DNS pour le courrier électronique, Skype entreprise Online et d’autres services sur 1&1 IONOS pour Microsoft.
-ms.openlocfilehash: 2b029856617c853047a0c1da9aeb0f07a158a88e
-ms.sourcegitcommit: c7f11d851073ef14a69669f6c8b7e0c11e4bb7a1
+ms.openlocfilehash: 1c32e15be8bfdf9ea29647af511d0f8ff0ac0b57
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43939378"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44049142"
 ---
 # <a name="create-dns-records-at-11-ionos-for-microsoft"></a>Créer des enregistrements DNS à 1&IONOS 1 pour Microsoft
 
  **[Consultez les Forums aux questions sur les domaines](../setup/domains-faq.md)** si vous ne trouvez pas ce que vous recherchez. 
   
 > [!CAUTION]
-> Notez que 1&1 IONOS ne permet pas à un domaine d’avoir à la fois un enregistrement MX et un enregistrement CNAMe de découverte automatique de niveau supérieur. Cela limite les moyens de configurer Exchange Online pour Microsoft. Il existe une solution de contournement, mais nous vous recommandons de l’utiliser **uniquement** si vous avez déjà des expériences en matière de création de sous-domaines à 1&1 Ionos. > si en dépit de cette [limitation de service](https://support.office.com/article/7ae9a655-041d-4724-aa92-60392ee390c2.aspx) vous choisissez de gérer vos propres enregistrements DNS Microsoft à 1&1 Ionos, suivez les étapes décrites dans cet article pour vérifier votre domaine et configurer les enregistrements DNS pour le courrier électronique, Skype entreprise Online, etc. 
+> Notez que 1&1 IONOS ne permet pas à un domaine d’avoir à la fois un enregistrement MX et un enregistrement CNAMe de découverte automatique de niveau supérieur. Cela limite les moyens de configurer Exchange Online pour Microsoft. Il existe une solution de contournement, mais nous vous recommandons de l’utiliser **uniquement** si vous avez déjà des expériences en matière de création de sous-domaines à 1&1 Ionos. > si en dépit de cette [limitation de service](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) vous choisissez de gérer vos propres enregistrements DNS Microsoft à 1&1 Ionos, suivez les étapes décrites dans cet article pour vérifier votre domaine et configurer les enregistrements DNS pour le courrier électronique, Skype entreprise Online, etc. 
   
 Une fois ces enregistrements ajoutés à 1&1 IONOS, votre domaine est configuré pour utiliser les services Microsoft.
   
@@ -47,7 +47,7 @@ Avant que vous puissiez utiliser votre domaine avec Microsoft, nous devons véri
 > [!NOTE]
 > Cet enregistrement sert uniquement à vérifier que vous êtes propriétaire du domaine. Vous pouvez éventuellement le supprimer ultérieurement. 
   
-Suivez les étapes décrites ci-dessous ou [regardez la vidéo (commencez la lecture à 0:42)](https://support.office.com/article/Video-Create-DNS-records-at-1-1-Internet-for-Office-365-543fb112-ecf5-47ae-b096-07f3f942a089?ui=en-US&amp;rs=en-US&amp;ad=US).
+Suivez les étapes décrites ci-dessous ou [regardez la vidéo (commencez la lecture à 0:42)](https://docs.microsoft.com/microsoft-365/admin/dns/create-dns-records-at-1-1-internet).
   
 1. Pour commencer, accédez à la page de vos domaines à l’adresse 1&1 IONOS à l’aide de [ce lien](https://my.1and1.com/). You'll be prompted to log in.
     
@@ -68,7 +68,7 @@ Suivez les étapes décrites ci-dessous ou [regardez la vidéo (commencez la lec
     |**Type** <br/> |**Prefix (Préfixe)** <br/> |**Name Value (Valeur de nom)** <br/> |
     |TXT  <br/> |(Laissez ce champ vide)  <br/> |MS=ms *XXXXXXXX*  <br/> Remarque : Voici un exemple. Utilisez votre valeur spécifique d’**Adresse de destination ou de pointage** ici, à partir du tableau. [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md)          |
    
-7. Cliquez sur **Enregistrer**.
+7. Sélectionnez **Enregistrer**.
     
 8. Sélectionnez de nouveau **Enregistrer** . 
     
@@ -95,7 +95,7 @@ Lorsque Microsoft trouve l’enregistrement TXT approprié, votre domaine est v�
 ## <a name="add-an-mx-record-so-email-for-your-domain-will-come-to-microsoft"></a>Ajouter un enregistrement MX afin que les courriers électroniques pour votre domaine soient transférés vers Microsoft
 <a name="BKMK_add_MX"> </a>
 
-Suivez les étapes décrites ci-dessous ou [regardez la vidéo (commencez la lecture à 3:22)](https://support.office.com/article/Video-Create-DNS-records-at-1-1-Internet-for-Office-365-543fb112-ecf5-47ae-b096-07f3f942a089?ui=en-US&amp;rs=en-US&amp;ad=US).
+Suivez les étapes décrites ci-dessous ou [regardez la vidéo (commencez la lecture à 3:22)](https://docs.microsoft.com/microsoft-365/admin/dns/create-dns-records-at-1-1-internet).
   
 > [!NOTE]
 > Si vous avez enregistré auprès de 1und1.de, connectez-vous [ici](https://go.microsoft.com/fwlink/?linkid=859152). 
@@ -116,11 +116,11 @@ Suivez les étapes décrites ci-dessous ou [regardez la vidéo (commencez la lec
     
     |**MX 1**|**Priority (Priorité)**|
     |:-----|:-----|
-    | *\<domain-key\>*  .mail.protection.outlook.com  <br/>  Remarque : Obtenez votre \<clé\> de domaine à partir de votre compte Microsoft. [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md)          |10   <br/> Pour plus d'informations sur la priorité, voir [Qu'est-ce que la priorité MX ?](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx). <br/> | 
+    | *\<domain-key\>*  .mail.protection.outlook.com  <br/>  Remarque : Obtenez votre \<clé\> de domaine à partir de votre compte Microsoft. [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md)          |10   <br/> Pour plus d'informations sur la priorité, voir [Qu'est-ce que la priorité MX ?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq). <br/> | 
     
     ![1 et 1-configurer 2 et 3](../../media/3afb04d1-7bbf-4147-89ae-561e14ded26d.png)<br/>
   
-8. Cliquez sur **Enregistrer**.<br/>(You may have to scroll down.)<br/>![1&amp;-BP-configurer-2-4](../../media/355b3ba7-4d2b-45ed-aa17-ac4affb54fe3.png)
+8. Sélectionnez **Enregistrer**.<br/>(You may have to scroll down.)<br/>![1&amp;-BP-configurer-2-4](../../media/355b3ba7-4d2b-45ed-aa17-ac4affb54fe3.png)
   
 9. Dans la boîte de dialogue **modifier les paramètres DNS** , sélectionnez **Oui**.<br/>![Sélection de Oui dans la boîte de dialogue Modifier les paramètres DNS](../../media/920cc95f-fedf-4da2-94a4-9cb41ed49bcf.png)
   
@@ -134,7 +134,7 @@ Suivez les étapes décrites ci-dessous ou [regardez la vidéo (commencez la lec
   
 ### <a name="basic-cname-records"></a>Enregistrements CNAME de base
 
-Suivez les étapes décrites ci-dessous ou [regardez la vidéo (commencez la lecture à 3:57)](https://support.office.com/article/Video-Create-DNS-records-at-1-1-Internet-for-Office-365-543fb112-ecf5-47ae-b096-07f3f942a089?ui=en-US&amp;rs=en-US&amp;ad=US).
+Suivez les étapes décrites ci-dessous ou [regardez la vidéo (commencez la lecture à 3:57)](https://docs.microsoft.com/microsoft-365/admin/dns/create-dns-records-at-1-1-internet).
   
 > [!NOTE]
 > Si vous avez enregistré auprès de 1und1.de, connectez-vous [ici](https://go.microsoft.com/fwlink/?linkid=859152). 
@@ -175,7 +175,7 @@ Suivez les étapes décrites ci-dessous ou [regardez la vidéo (commencez la lec
   
 11. Cochez la case correspondant à la clause d'exclusion de responsabilité **I am aware** (J'accepte).<br/>![1&amp;-BP-configurer-3-8-1](../../media/6c4cac1a-23f2-4ff3-b2d1-3dca908638d2.png)
   
-12. Cliquez sur **Enregistrer**.<br/>![1&amp;-BP-configurer-3-8-2](../../media/ea1dfc06-c175-4146-ab40-da4d162097e1.png)
+12. Sélectionnez **Enregistrer**.<br/>![1&amp;-BP-configurer-3-8-2](../../media/ea1dfc06-c175-4146-ab40-da4d162097e1.png)
   
   
 ### <a name="additional-cname-records"></a>Enregistrements CNAME supplémentaires
@@ -244,12 +244,12 @@ Les enregistrements CNAME supplémentaires créés au cours de la procédure sui
 |enterpriseregistration  <br/> |enterpriseregistration.windows.net  <br/> |
 |enterpriseenrollment  <br/> |enterpriseenrollment-s.manage.microsoft.com  <br/> |
    
-## <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a>Ajouter un enregistrement TXT pour SPF afin d'éviter le courrier indésirable
+## <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a>Ajoutez un enregistrement TXT pour SPF afin d'éviter le courrier indésirable
 
 > [!IMPORTANT]
-> Vous ne pouvez avoir qu’un enregistrement TXT pour SPF pour un domaine. Si votre domaine comporte plusieurs enregistrements SPF, vous rencontrez des erreurs au niveau de la transmission du courrier électronique ainsi que des problèmes de remise du courrier et de classification en tant que courrier indésirable. Si vous avez déjà un enregistrement SPF pour votre domaine, il n’est pas nécessaire d’en créer un nouveau pour Microsoft. Ajoutez plutôt les valeurs Microsoft requises à l’enregistrement actuel afin de disposer d’un *seul* enregistrement SPF qui inclut les deux ensembles de valeurs. Voici quelques exemples. Consultez ces [Enregistrements DNS externes pour Microsoft](https://support.office.com/article/c0531a6f-9e25-4f2d-ad0e-a70bfef09ac0). Pour valider votre enregistrement SPF, vous pouvez utiliser l’un de ces[outils de validation SPF](../setup/domains-faq.md). 
+> Vous ne pouvez avoir qu’un enregistrement TXT pour SPF pour un domaine. Si votre domaine comporte plusieurs enregistrements SPF, vous rencontrez des erreurs au niveau de la transmission du courrier électronique ainsi que des problèmes de remise du courrier et de classification en tant que courrier indésirable. Si vous avez déjà un enregistrement SPF pour votre domaine, il n’est pas nécessaire d’en créer un nouveau pour Microsoft. Ajoutez plutôt les valeurs Microsoft requises à l’enregistrement actuel afin de disposer d’un *seul* enregistrement SPF qui inclut les deux ensembles de valeurs. Voici quelques exemples. Consultez ces [Enregistrements DNS externes pour Microsoft](https://docs.microsoft.com/office365/enterprise/external-domain-name-system-records). Pour valider votre enregistrement SPF, vous pouvez utiliser l’un de ces[outils de validation SPF](../setup/domains-faq.md). 
   
-Suivez les étapes décrites ci-dessous ou [regardez la vidéo (commencez la lecture à 5:09)](https://support.office.com/article/Video-Create-DNS-records-at-1-1-Internet-for-Office-365-543fb112-ecf5-47ae-b096-07f3f942a089?ui=en-US&amp;rs=en-US&amp;ad=US).
+Suivez les étapes décrites ci-dessous ou [regardez la vidéo (commencez la lecture à 5:09)](https://docs.microsoft.com/microsoft-365/admin/dns/create-dns-records-at-1-1-internet).
   
 > [!NOTE]
 > Si vous avez enregistré auprès de 1und1.de, connectez-vous [ici](https://go.microsoft.com/fwlink/?linkid=859152). 
@@ -272,15 +272,15 @@ Suivez les étapes décrites ci-dessous ou [regardez la vidéo (commencez la lec
     
     ![Enregistrement TXT](../../media/0b3ba3b4-64b9-4d68-9ee1-04eb3a17d4c5.png)
   
-7. Cliquez sur **Enregistrer**.<br/>![Ajouter un enregistrement](../../media/0f222eb9-3bfd-4908-9a99-516cc6fb1d0e.png)
+7. Sélectionnez **Enregistrer**.<br/>![Ajouter un enregistrement](../../media/0f222eb9-3bfd-4908-9a99-516cc6fb1d0e.png)
   
-8. Cliquez sur **Enregistrer**.<br/>![Enregistrer un enregistrement](../../media/86ed1b59-31b2-4094-9cd4-32b94eb09e35.png)
+8. Sélectionnez **Enregistrer**.<br/>![Enregistrer un enregistrement](../../media/86ed1b59-31b2-4094-9cd4-32b94eb09e35.png)
   
 9. Dans la boîte de dialogue **modifier les paramètres DNS** , sélectionnez **Oui**.<br/>![Sélection de Oui dans la boîte de dialogue Modifier les paramètres DNS](../../media/920cc95f-fedf-4da2-94a4-9cb41ed49bcf.png)
   
 ## <a name="add-the-two-srv-records-that-are-required-for-microsoft"></a>Ajoutez les deux enregistrements SRV requis pour Microsoft
 
-Suivez les étapes décrites ci-dessous ou [regardez la vidéo (commencez la lecture à 5:51)](https://support.office.com/article/Video-Create-DNS-records-at-1-1-Internet-for-Office-365-543fb112-ecf5-47ae-b096-07f3f942a089?ui=en-US&amp;rs=en-US&amp;ad=US).
+Suivez les étapes décrites ci-dessous ou [regardez la vidéo (commencez la lecture à 5:51)](https://docs.microsoft.com/microsoft-365/admin/dns/create-dns-records-at-1-1-internet).
   
 > [!NOTE]
 > Si vous avez enregistré auprès de 1und1.de, connectez-vous [ici](https://go.microsoft.com/fwlink/?linkid=859152). 
@@ -304,9 +304,9 @@ Suivez les étapes décrites ci-dessous ou [regardez la vidéo (commencez la lec
     
     ![1&amp;-BP-configurer-5-1](../../media/087e337d-926b-42ff-b11d-b449cfaed76c.png)
   
-7. Cliquez sur **Enregistrer**. <br/>![1&amp;-BP-configurer-5-2](../../media/aa5f803d-fb24-48e0-976a-6759c5fd252c.png)
+7. Sélectionnez **Enregistrer**. <br/>![1&amp;-BP-configurer-5-2](../../media/aa5f803d-fb24-48e0-976a-6759c5fd252c.png)
   
-8. Cliquez sur **Enregistrer**. <br/>![1&amp;-BP-configurer-5-3](../../media/097e7e95-4899-4878-b6e7-c3abd8193c52.png)
+8. Sélectionnez **Enregistrer**. <br/>![1&amp;-BP-configurer-5-3](../../media/097e7e95-4899-4878-b6e7-c3abd8193c52.png)
   
 9. Dans la boîte de dialogue **modifier les paramètres DNS** , sélectionnez **Oui**. <br/>![Sélection de Oui dans la boîte de dialogue Modifier les paramètres DNS](../../media/920cc95f-fedf-4da2-94a4-9cb41ed49bcf.png)
   

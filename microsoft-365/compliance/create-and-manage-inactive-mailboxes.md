@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 296a02bd-ebde-4022-900e-547acf38ddd7
 description: Vous pouvez créer une boîte aux lettres inactive dans Microsoft 365 en appliquant une stratégie de conservation ou de rétention à la boîte aux lettres, puis en supprimant le compte d’utilisateur correspondant. Les éléments d’une boîte aux lettres inactive sont conservés pendant la durée de la conservation ou de la stratégie de rétention qui lui a été appliquée avant qu’elle ne soit devenue inactive. Pour supprimer définitivement une boîte aux lettres inactive, supprimez simplement la stratégie de conservation ou de rétention.
-ms.openlocfilehash: 9c34acb22e1be7f88d87d254c0fac34ca9ff8105
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 6265504f12adeadbc51c36c1e97c999e30a0d141
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634206"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44048013"
 ---
 # <a name="create-and-manage-inactive-mailboxes"></a>Créer et gérer des boîtes aux lettres inactives
 
@@ -36,7 +36,7 @@ Microsoft 365 vous permet de conserver le contenu des boîtes aux lettres suppri
 
 - Pour désactiver une boîte aux lettres, une licence Exchange Online plan 2 doit lui être attribuée afin qu’une conservation pour litige ou une stratégie de rétention puissent être appliquées à la boîte aux lettres avant sa suppression. Les licences Exchange Online plan 2 font partie d’un abonnement Office 365 entreprise E3 et E5. Si une boîte aux lettres est affectée à une licence Exchange Online plan 1 ou Exchange Online Kiosk (qui fait respectivement partie d’un abonnement Office 365 E1 et F1), vous devez lui attribuer une licence d’archivage Exchange Online distincte de sorte qu’une conservation puisse être appliquée à la boîte aux lettres avant d’être supprimée. Pour plus d'informations, consultez la page [Archivage Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=286153).
 
-- Les licences associées à la boîte aux lettres Exchange Online supprimée seront disponibles une fois que vous aurez supprimé le compte d’utilisateur correspondant. Vous pouvez ensuite [attribuer ces licences à un autre utilisateur](https://support.office.com/article/997596b5-4173-4627-b915-36abac6786dc). 
+- Les licences associées à la boîte aux lettres Exchange Online supprimée seront disponibles une fois que vous aurez supprimé le compte d’utilisateur correspondant. Vous pouvez ensuite [attribuer ces licences à un autre utilisateur](https://docs.microsoft.com/microsoft-365/admin/add-users/add-users). 
 
 - Si une conservation pour litige ou une stratégie de rétention (configurée pour conserver ou conserver et supprimer du contenu) n’est pas appliquée à une boîte aux lettres avant sa suppression, le contenu de la boîte aux lettres n’est pas conservé ni découvrable. Cependant, la boîte aux lettres peut être récupérée dans les 30 jours suivant sa suppression, mais, à défaut de récupération, elle est définitivement supprimée avec son contenu à l'issue de cette période.
 
@@ -73,7 +73,7 @@ Une fois la boîte aux lettres placée en conservation ou une stratégie de rét
 
 Pour afficher la liste des boîtes aux lettres inactives dans votre organisation, procédez comme suit :
   
-1. Accédez à [https://protection.office.com](https://protection.office.com) et connectez-vous à l’aide des informations d’identification d’un compte d’administrateur de votre organisation. 
+1. Accédez à [https://protection.office.com](https://protection.office.com) et connectez-vous à l'aide des informations d'identification d'un compte administrateur dans votre organisation. 
     
 2. Cliquez sur**rétention**de **gouvernance** > des informations.
     

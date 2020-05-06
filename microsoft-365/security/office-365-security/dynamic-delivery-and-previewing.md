@@ -17,16 +17,17 @@ ms.assetid: f16c9928-8e3d-4219-b994-271dc9a16272
 ms.collection:
 - M365-security-compliance
 description: Lorsque vous configurez vos stratégies de pièces jointes approuvées ATP, vous choisissez la remise dynamique pour éviter les retards de message et permettre aux utilisateurs de prévisualiser les pièces jointes en cours d’analyse.
-ms.openlocfilehash: c8e0a60912244a636fbbe6ca62f7c1b9c260e0f6
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 7c30803efd2dafedd6d988de5374f08bd61f7d2a
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637567"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034791"
 ---
 # <a name="dynamic-delivery-and-previewing-with-atp-safe-attachments"></a>Remise et aperçu dynamiques à l’aide de pièces jointes fiables ATP
 
-## <a name="overview"></a>Vue d’ensemble
+## <a name="overview"></a>Vue d'ensemble
 
 La remise dynamique est une option qui peut être sélectionnée pour [les pièces jointes sûres ATP](atp-safe-attachments.md). Lisez cet article pour en savoir plus sur la remise dynamique et les fonctionnalités d’aperçu des pièces jointes dans [les pièces jointes approuvées ATP dans Office 365](atp-safe-attachments.md).
 

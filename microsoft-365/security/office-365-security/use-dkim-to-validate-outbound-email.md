@@ -1,5 +1,5 @@
 ---
-title: Utiliser le service DKIM pour les e-mails dans votre domaine personnalisé dans Microsoft 365, 2048 bits, 1024 bits, procédure, mode de fonctionnement, SPF, DMARC
+title: Utiliser DKIM pour le courrier électronique dans votre domaine personnalisé
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -15,13 +15,15 @@ search.appverid:
 ms.assetid: 56fee1c7-dc37-470e-9b09-33fff6d94617
 ms.collection:
 - M365-security-compliance
-description: 'Résumé : Cet article décrit comment utiliser DKIM (DomainKeys Identified Mail) avec Microsoft 365 pour vous assurer que les systèmes de messagerie de destination approuvent les messages envoyés à partir de votre domaine personnalisé.'
-ms.openlocfilehash: 17cfbcbe4f7279e8142e5102fc2d1f61c53d8ddc
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom:
+- seo-marvel-apr2020
+description: Découvrez comment utiliser DKIM (DomainKeys Identified Mail) avec Microsoft 365 pour vous assurer que les systèmes de messagerie de destination approuvent les messages envoyés à partir de votre domaine personnalisé.
+ms.openlocfilehash: 2db8af2c0651388998967db239ceed92a8be1018
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631108"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44036607"
 ---
 # <a name="use-dkim-to-validate-outbound-email-sent-from-your-custom-domain"></a>Utilisation de DKIM pour valider les messages sortants envoyés à partir de votre domaine personnalisé
 

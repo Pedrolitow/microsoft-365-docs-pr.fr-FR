@@ -18,12 +18,13 @@ ms.collection:
 - SPO_Content
 ms.assetid: ce9eb942-3589-42cb-88fd-1576ecb09c5c
 description: Le RGPD donne aux citoyens de l’Union européenne (appelés « personnes des données ») des droits spécifiques sur leurs données personnelles ; ces droits incluent l’obtention de copies de celle-ci, la demande de modifications, la limitation du traitement de celle-ci, sa suppression ou sa réception dans un format électronique. Une demande officielle d’un objet de données qui doit agir sur ses données personnelles est appelée demande de l’objet de données ou DSR. Vous pouvez utiliser les dossiers DSR dans le centre de conformité dans Office 365 et Microsoft 365 pour gérer les investigations DSR de votre organisation.
-ms.openlocfilehash: 7fc786f1e330b03884ef279e210c8f8ef22e9793
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: f3be609ae1245b20b39d26fe60444e6e54f171d3
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635924"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035868"
 ---
 # <a name="manage-gdpr-data-subject-requests-with-the-dsr-case-tool-in-the-security--compliance-center"></a>Gérer les demandes des personnes associées aux données RGPD avec l’outil de cas DSR dans le centre de sécurité & conformité
 

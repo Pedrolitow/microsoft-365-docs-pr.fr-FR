@@ -1,5 +1,5 @@
 ---
-title: Détection des quasi-duplicatas
+title: Détection quasi-doublons-eDiscovery
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -15,13 +15,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: ''
-ms.openlocfilehash: e1a9ffe264925911f475732ffd98a43fa533e458
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: Utilisez la détection presque en double pour regrouper des documents textuellement similaires lors de l’analyse des données de cas pour Advanced eDiscovery.
+ms.custom: seo-marvel-mar2020
+ms.openlocfilehash: 4c24e1b67af68dc5fccd900fc390a63e8da3c389
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42071311"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44036439"
 ---
 # <a name="near-duplicate-detection"></a>Détection des quasi-duplicatas
 

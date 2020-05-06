@@ -1,5 +1,5 @@
 ---
-title: Nouveautés du centre de conformité Microsoft 365
+title: Nouveautés du centre de conformité
 f1.keywords:
 - NOCSH
 ms.author: brendonb
@@ -17,12 +17,13 @@ ms.assetid: e3c6df61-8513-499d-ad8e-8a91770bff63
 ms.collection:
 - M365-security-compliance
 description: Nous ajoutons constamment de nouvelles fonctionnalités au centre de conformité Microsoft 365, à la résolution des problèmes que nous apprendons et en apportant des modifications en fonction de vos commentaires. Découvrez ce que nous avons fait dans ce mois-ci.
-ms.openlocfilehash: 2f172c8639215285a793f16f4913917be6a58614
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom: seo-marvel-mar2020
+ms.openlocfilehash: 940d316c97370a477c963785ae7e90482b35a46c
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43626260"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034266"
 ---
 # <a name="whats-new-in-the-microsoft-365-compliance-center"></a>Nouveautés du centre de conformité Microsoft 365
 
@@ -163,14 +164,14 @@ Si vous avez utilisé le centre de sécurité & conformité d’Office 365 pour 
 |Advanced eDiscovery|eDiscovery > Advanced eDiscovery <br/> https://protection.office.com/advancedediscoverycases |Découverte électronique > avancée <br/> https://compliance.microsoft.com/advancedediscovery | [Vue d’ensemble de la solution avancée eDiscovery dans Microsoft 365](overview-ediscovery-20.md) |
 |Stratégies d’alerte|Alertes > les stratégies d’alerte <br/> https://protection.office.com/alertpolicies |Pour l’instant, les stratégies d’alerte sont gérées uniquement dans le centre de conformité & Office 365 Security. |[Stratégies d’alerte dans le centre de sécurité et conformité](alert-policies.md) |
 |Alertes|Alertes > afficher les alertes <br/> https://protection.office.com/viewalerts |Alertes <br/> https://compliance.microsoft.com/compliancealerts |[Affichage des alertes](alert-policies.md#viewing-alerts)|
-|Archive|Archive de > de gouvernance des informations <br/> https://protection.office.com/archiving |Onglet Archive de > de gouvernance des informations <br/> https://compliance.microsoft.com/informationgovernance?viewid=archive |[Activer des boîtes aux lettres d’archivage](enable-archive-mailboxes.md)|
+|Archiver|Archive de > de gouvernance des informations <br/> https://protection.office.com/archiving |Onglet Archive de > de gouvernance des informations <br/> https://compliance.microsoft.com/informationgovernance?viewid=archive |[Activer des boîtes aux lettres d’archivage](enable-archive-mailboxes.md)|
 |Recherche de journal d’audit|Recherche dans le journal d’audit > <br/> https://protection.office.com/unifiedauditlog |Contrôlé <br/> https://compliance.microsoft.com/auditlogsearch | [Rechercher dans le journal d’audit dans le centre de sécurité & conformité](search-the-audit-log-in-security-and-compliance.md)|
 |Recherche de contenu|Recherche > recherche de contenu <br/> https://protection.office.com/contentsearchbeta?ContentOnly=1 | Recherche de contenu <br/> https://compliance.microsoft.com/contentsearch |[Rechercher du contenu dans Office 365](search-for-content.md) |
 |Connecteurs de données|Gestion des informations > archivage des données tierces <br/> https://protection.office.com/nativeconnector | Connecteurs de données <br/> https://compliance.microsoft.com/connectorlanding |[Archiver des données tierces](archiving-third-party-data.md)|
 |Protection contre la perte de données|Protection contre la perte de données <br/> https://protection.office.com/datalossprevention |Protection contre la perte de données <br/> https://compliance.microsoft.com/datalossprevention |[Vue d’ensemble de la protection contre la perte de données](data-loss-prevention-policies.md)|
 |Demandes des personnes concernées |Confidentialité des données > demandes des personnes concernées <br/> https://protection.office.com/dsrcases |Demandes des personnes concernées <br/> https://compliance.microsoft.com/datasubjectrequest |[Gérer les demandes des personnes associées aux données RGPD avec l’outil de cas DSR](manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md)|
 |eDiscovery|découverte électronique > eDiscovery <br/> https://protection.office.com/ediscoveryv1 |> de découverte électronique <br/> https://compliance.microsoft.com/classicediscovery |[Gérer des cas eDiscovery](ediscovery-cases.md) |
-|Évènements|Événements de > de la gestion des enregistrements <br/> https://protection.office.com/events |Onglet > des événements de gestion des enregistrements <br/> https://compliance.microsoft.com/recordsmanagement?viewid=events |[Vue d’ensemble des rétentions basées sur des événements](event-driven-retention.md)|
+|Événements|Événements de > de la gestion des enregistrements <br/> https://protection.office.com/events |Onglet > des événements de gestion des enregistrements <br/> https://compliance.microsoft.com/recordsmanagement?viewid=events |[Vue d’ensemble des rétentions basées sur des événements](event-driven-retention.md)|
 |Plan de gestion de fichiers|Gestion des enregistrements > plan de gestion des fichiers <br/> https://protection.office.com/fileplan |Onglet gestion des enregistrements > plan de fichiers <br/> https://compliance.microsoft.com/recordsmanagement?viewid=fileplan |[Vue d’ensemble du gestionnaire de plan de gestion de fichiers](file-plan-manager.md)|
 |Importer des fichiers PST|Gouvernance des informations > importer des fichiers PST <br/> https://protection.office.com/importV2 |Onglet > d’importation de la gouvernance des informations <br/> https://compliance.microsoft.com/informationgovernance?viewid=import |[Vue d’ensemble de l’importation des fichiers PST de votre organisation](importing-pst-files-to-office-365.md)|
 |Explorateur d’activité des étiquettes|Explorateur d’informations > d’activité des étiquettes <br/> https://protection.office.com/labelexplorer |Onglet Explorateur d’activités > classification des données <br/> https://compliance.microsoft.com/dataclassification?viewid=activitiesexplorer |[Afficher l’activité sur votre contenu étiqueté (aperçu)](data-classification-activity-explorer.md)|

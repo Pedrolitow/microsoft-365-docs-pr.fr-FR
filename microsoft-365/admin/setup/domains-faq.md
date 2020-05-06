@@ -1,5 +1,5 @@
 ---
-title: Foire aux questions domaines
+title: Forum aux questions sur les domaines
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -22,14 +22,14 @@ search.appverid:
 ms.assetid: 1272bad0-4bd4-4796-8005-67d6fb3afc5a
 description: Pour plus d’informations sur les domaines, recherchez les réponses à vos questions dans FAQ.
 ms.custom: okr_smb
-ms.openlocfilehash: 81e67ee4b22ea0682d65ebc0e48a4b3564e79526
-ms.sourcegitcommit: 2399ee6f9bc955cf8f2a76c01fc84c19eb37ff42
+ms.openlocfilehash: 0b9b79c3cab74f4f809f0bd96ed5a51c17282ccd
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "43919480"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44048160"
 ---
-# <a name="domains-faq"></a>Foire aux questions domaines
+# <a name="domains-faq"></a>Forum aux questions sur les domaines
 
 Cet article contient des réponses aux questions fréquemment posées à propos des domaines dans Office 365.
 
@@ -366,7 +366,7 @@ Vous pouvez continuer à utiliser le domaine onmicrosoft.de initial même après
 
 ## <a name="how-do-i-verify-my-nonprofit-or-education-status"></a>Comment puis-je vérifier mon statut de l’organisme ou de l’éducation ?
 
-1. Sélectionnez **configuration** dans le [Centre d’administration](https://support.office.com/article/17d3ff3f-3601-466e-b5a1-482b31cfb791.aspx) pour démarrer l’Assistant. (Veillez à vous connecter d’abord à Office 365.) 
+1. Sélectionnez **configuration** dans le [Centre d’administration](https://docs.microsoft.com/microsoft-365/admin/admin-home) pour démarrer l’Assistant. (Veillez à vous connecter d’abord à Office 365.) 
     
 2. Pour devenir l’administrateur de votre école, sélectionnez l’option **devenir administrateur** dans Office 365. 
     
@@ -424,7 +424,7 @@ Vous pouvez, mais il existe des limitations :
         
     4. Dans la fenêtre qui s’ouvre, sélectionnez **relais interne**. 
         
-    5. Cliquez sur **Enregistrer**. Ce paramètre peut nécessiter quelques minutes. 
+    5. Sélectionnez **Enregistrer**. Ce paramètre peut nécessiter quelques minutes. 
     
 4. Si vous le souhaitez, débloquez le serveur de messagerie existant.
     

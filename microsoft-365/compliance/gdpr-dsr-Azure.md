@@ -1,6 +1,6 @@
 ---
 title: Demandes des personnes concernées en lien avec des données Azure dans le cadre du RGPD et du CCPA
-description: ''
+description: Découvrez comment utiliser les produits Microsoft, les services et les outils d’administration pour rechercher et agir sur des données personnelles afin de répondre aux DSRs.
 keywords: Microsoft 365, Microsoft 365 Éducation, documentation Microsoft 365, RGPD, CCPA
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
@@ -16,12 +16,13 @@ ms.collection:
 - M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: 3ed96d032a16eee066e4f9fb3be56a5a0a8cec84
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+ms.custom: seo-marvel-mar2020
+ms.openlocfilehash: 47aca22a5766b39bce513772874bca56de3420c5
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42558014"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035452"
 ---
 # <a name="azure-data-subject-requests-for-the-gdpr-and-ccpa"></a>Demandes des personnes concernées en lien avec des données Azure dans le cadre du RGPD et du CCPA
 
@@ -31,7 +32,7 @@ Le [Règlement général sur la protection des données (RGPD)](https://ec.europ
 
 De même, le CCPA (California Consumer Privacy Act), prévoit des droits de confidentialité et des obligations pour les consommateurs de la Californie, y compris des droits similaires aux droits des personnes concernées du RGPD, tels que le droit de supprimer, d’accéder et de recevoir (portabilité) leurs informations personnelles. Le CCPA prévoit également des publications d’informations, des protections contre la discrimination des personnes faisant usage de leurs droits et la possibilité d’opter pour ou contre certains transferts de données classés en tant que « ventes ». Les ventes sont largement définies pour inclure le partage de données à des fins importantes. Pour plus d’informations sur le CCPA, voir le [California Consumer Privacy Act](offering-ccpa.md) et le [Forum aux questions California Consumer Privacy Act](ccpa-faq.md).
 
-Le guide explique comment utiliser les outils d’administration, les services et les produits Microsoft pour aider nos clients étant des entités de contrôle à rechercher des données personnelles et à agir dessus pour répondre à des DPC. Plus précisément, il décrit comment rechercher des données personnelles stockées dans le cloud Microsoft, y accéder et agir dessus. Voici un aperçu des processus décrits dans ce guide :
+Le guide explique comment utiliser les produits, services et outils d’administration Microsoft pour aider les clients de notre entité de contrôle à rechercher des données personnelles et à prendre des mesures pour répondre aux DPC. Plus précisément, il explique comment rechercher des données personnelles qui sont stockées dans le cloud Microsoft, comment y accéder et comment entreprendre une action sur ces données. Voici un aperçu rapide des processus présentés dans ce guide :
 
 - **Découvrir** : utilisez les outils de recherche et de détection pour rechercher plus facilement les données du client qui peuvent faire l’objet d’une demande DPC. Une fois que vous avez collecté les documents susceptibles de répondre à la demande, vous pouvez effectuer une ou plusieurs des actions DPC décrites ci-après. Vous pouvez également décider que la demande ne satisfait pas aux directives de votre organisation en termes de réponse à une demande DPC.
 - **Accéder :** récupérez des données à caractère personnel qui résident dans le cloud Microsoft et, si nécessaire, effectuez-en une copie pour la personne concernée.
@@ -46,10 +47,10 @@ Chaque section de ce guide décrit les procédures techniques qu’une organisat
 
 Vous trouverez ci-dessous des définitions de termes utilisés dans ce guide.
 
-- **Entité de contrôle** : la personne physique ou morale, l’autorité publique, le service ou tout autre organisme qui, seul ou conjointement avec d’autres, détermine les finalités et les moyens du traitement des données personnelles ; lorsque les finalités et les moyens du traitement sont déterminés par la législation de l’Union ou des États membres, le contrôleur peut être désigné, ou les critères spécifiques relatifs à sa nomination peuvent être définis, par la législation de l’Union ou des États membres.
+- **Responsable du traitement des données :** la personne physique ou morale, l’autorité publique, le service ou tout autre organisme qui, seul ou conjointement avec d’autres, détermine les finalités et les moyens du traitement des données à caractère personnel ; lorsque les finalités et les moyens du traitement sont déterminés par la législation de l’Union ou des États membres, le responsable du traitement peut être désigné, ou les critères spécifiques relatifs à sa nomination être définis, par la législation de l’Union ou des États membres.
 - **Données personnelles et personne concernée par le traitement des données :** informations relatives à une personne physique identifiée ou identifiable (« la personne concernée par le traitement des données ») ; une personne physique identifiable est une personne qui peut être identifiée, directement ou indirectement, notamment par référence à un identificateur par exemple, un nom, un numéro d’identification, des données de localisation, un identificateur en ligne, ou un ou plusieurs facteurs spécifiques de l’identité physique, physiologique, génétique, mentale, économique, culturelle ou sociale de cette personne physique.
 - **Sous-traitant de données :** la personne physique ou morale, l’autorité publique, le service ou tout autre organisme qui traite des données à caractère personnel pour le compte du responsable du traitement.
-- **Données client :** toutes les données, y compris tous les fichiers texte, son, vidéo ou image et les logiciels qui ont été fournis à Microsoft par le client ou pour son compte dans le cadre du service d’entreprise. Les données client incluent à la fois les (1) informations d’identification personnelle des utilisateurs finaux (par exemple, les noms d’utilisateur et les informations de contact dans Azure Active Directory) et le contenu client chargé ou créé par un client dans des services spécifiques (par exemple, le contenu client dans un compte de stockage Azure, le contenu client d’une base de données Azure SQL ou l’image de la machine virtuelle d’un client dans des machines virtuelles Azure).
+- **Données client :** toutes les données, y compris tous les fichiers texte, son, vidéo ou image et les logiciels qui ont été fournis à Microsoft par le client ou pour son compte dans le cadre du service d’entreprise. Les données client incluent à la fois les (1) informations d’identification personnelle des utilisateurs finaux (par exemple, les noms d’utilisateur et les informations de contact dans Azure Active Directory) et le Contenu Client chargé ou créé par un client dans des services spécifiques (par exemple, le contenu client dans un compte de stockage Azure, le contenu client d’une base de données Azure SQL ou l’image de la machine virtuelle d’un client dans des machines virtuelles Azure).
 - **Journaux générés par le système :** journaux et données associées générés par Microsoft qui permettent à Microsoft de fournir des services d’entreprise aux utilisateurs. Les journaux générés par le système contiennent essentiellement des données pseudonymes, généralement un numéro généré par le système qui ne permet pas, en soi, d’identifier une personne individuelle, mais qui est utilisé pour fournir les services d’entreprise aux utilisateurs. Les journaux générés par le système peuvent également contenir des informations d’identification personnelle sur les utilisateurs finaux, telles qu’un nom d’utilisateur.
 
 ## <a name="how-to-use-this-guide"></a>Comment utiliser ce guide
@@ -77,7 +78,7 @@ Les DPC par rapport à un compte de service Microsoft lui-même, **en dehors d�
 Microsoft permet de supprimer et d’exporter certaines données client, et d’y accéder, via le portail Azure et directement aussi via des interfaces de programmation d’applications (API) ou des interfaces utilisateur (UI) préexistantes pour des services spécifiques (également appelées *expériences intégrées au produit*). Vous trouverez des informations sur ces expériences intégrées au produit dans la documentation de référence des services respectifs.
 
 >[!IMPORTANT]  
-> Les services qui prennent en charge les DPC intégrées au produit requièrent l’utilisation directe de l’API ou de l’UI du service, décrivant les applications CRUD (créer, lire, mettre à jour, supprimer) applicables. Par conséquent, l’exécution des DPC dans un service donné doit être effectuée en plus de l’exécution d’une DPC dans le portail Azure afin d’effectuer une demande complète pour une personne concernée par le traitement des données. Consultez la documentation de référence des services spécifiques pour plus d’informations.
+> Les services qui prennent en charge les DSRs du service nécessitent l’utilisation directe de l’interface de programmation d’application (API) ou de l’interface utilisateur (UI) du service, qui décrit les opérations de CRUD (Create, Read, Update, Delete) appropriées. Par conséquent, l’exécution de DSRs au sein d’un service donné doit être effectuée en plus de l’exécution d’un DSR dans le portail Azure afin de remplir une demande complète pour une personne donnée. Pour plus d’informations, consultez la documentation de référence des services spécifiques.
 
 ### <a name="step-1-discover"></a>Étape 1 : Découvrir
 
@@ -85,9 +86,9 @@ La première étape pour répondre à un DPC consiste à trouver les données pe
 
 Lorsque vous avez trouvé les données, vous pouvez ensuite effectuer l’action spécifique pour satisfaire la demande de la personne concernée.
 
-[Azure Active Directory](https://azure.microsoft.com/services/active-directory/) est le service d’annuaire et de gestion des identités mutualisé de Microsoft basé sur le cloud. Vous pouvez localiser les informations d’identification personnelle des utilisateurs finaux, telles que les profils utilisateur d’un client et d’un employé et les informations professionnelles d’un utilisateur qui contiennent des données personnelles dans votre environnement [Azure Active Directory](https://azure.microsoft.com/services/active-directory/) (AAD) à l’aide du [ portail Azure](https://portal.azure.com/).
+[Azure Active Directory](https://azure.microsoft.com/services/active-directory/) est le service de gestion des identités et des annuaires basés sur le Cloud de Microsoft. Vous pouvez localiser les informations d’identification personnelle des utilisateurs finaux, telles que les profils utilisateur d’un client et d’un employé et les informations professionnelles d’un utilisateur qui contiennent des données personnelles dans votre environnement [Azure Active Directory](https://azure.microsoft.com/services/active-directory/) (AAD) à l’aide du [ portail Azure](https://portal.azure.com/).
 
-Ceci est particulièrement utile si vous souhaitez rechercher ou modifier des données personnelles pour un utilisateur spécifique. Vous pouvez aussi ajouter ou modifier le profil utilisateur et les informations professionnelles. Vous devez vous connecter avec un compte Administrateur général pour l’annuaire.
+Cette fonctionnalité est particulièrement utile si vous voulez rechercher ou modifier des données personnelles pour un utilisateur spécifique. Vous pouvez également ajouter ou modifier des informations de profil utilisateur et de travail. Vous devez vous connecter avec un compte d’administrateur général pour l’annuaire.
 
 #### <a name="how-do-i-locate-or-view-user-profile-and-work-information"></a>Comment localiser ou afficher le profil utilisateur et les informations professionnelles ?
 
@@ -113,9 +114,9 @@ Microsoft permet de découvrir des données client directement via des interface
 
 ### <a name="step-2-access"></a>Étape 2 : Accéder
 
-Lorsque vous avez trouvé les données client contenant des données personnelles répondant potentiellement à une DPC, vous et votre organisation devez décider quelles données fournir à la personne concernée par le traitement des données. Vous pouvez les fournir avec une copie du document réel, une version correctement rédigée ou une capture d’écran des parties que vous considérez pouvoir partager. Pour chacune de ces réponses à une demande d’accès, vous devrez récupérer une copie du document ou de tout autre élément contenant les données pertinentes.
+Une fois que vous avez trouvé les données client contenant des données personnelles susceptibles de répondre à un DSR, il vous incombe, et à votre organisation, de choisir les données à fournir à la personne concernée. Vous pouvez fournir une copie du document réel, une version biffée appropriée ou une capture d’écran des parties que vous avez jugées appropriées. Pour chacune de ces réponses à une demande d’accès, vous devez récupérer une copie du document ou d’un autre élément contenant les données réactives.
 
-Lorsque vous fournissez une copie à la personne concernée par le traitement des données, il se peut que vous deviez supprimer ou rédiger des informations personnelles sur d’autres personnes concernées par le traitement des données et des informations confidentielles.
+Lorsque vous fournissez une copie à la personne concernée, vous devrez peut-être supprimer ou modifier des informations personnelles sur d’autres personnes concernées et des informations confidentielles.
 
 #### <a name="azure-active-directory"></a>Azure Active Directory
 
@@ -127,7 +128,7 @@ Microsoft permet de découvrir des données client directement via des interface
 
 ### <a name="step-3-rectify"></a>Étape 3 : Rectifier
 
-Si une personne concernée vous a demandé de rectifier les données personnelles qui résident dans les données de votre organisation, vous et votre organisation devrez déterminer s’il convient d’accepter et de répondre à la demande. Rectifier les données peut éventuellement signifier prendre des mesures comme modifier, rédiger ou supprimer des données personnelles d’un document ou d’un autre type ou élément. La méthode la plus indiquée pour effectuer cette opération pour les données du Support Microsoft et FastTrack est décrite ci-dessous.
+Si un objet de données vous a demandé de rectifier les données personnelles qui résident dans les données de votre organisation, vous et votre organisation devez déterminer s’il est approprié d’honorer la demande. La rectification des données peut inclure la prise d’actions telles que la modification, rédaction ou la suppression de données personnelles d’un document ou d’un autre type ou élément. La façon la plus simple d’effectuer cette opération pour le support Microsoft et les données FastTrack est indiquée ci-dessous.
 
 #### <a name="azure-active-directory"></a>Azure Active Directory
 
@@ -135,7 +136,7 @@ Les clients d’entreprise peuvent gérer les demandes de rectification corréla
 
 ##### <a name="azure-active-directory-rectifycorrect-inaccurate-or-incomplete-personal-data"></a>Azure Active Directory : rectifier/corriger des données personnelles inexactes ou incomplètes
 
-Vous pouvez corriger, mettre à jour ou supprimer des informations d’identification personnelle concernant des utilisateurs finaux, comme par exemple les profils utilisateur du client et de l’employé et les informations professionnelles de l’utilisateur qui contiennent des données personnelles, comme par exemple, le nom d’un utilisateur, son poste, son adresse ou son numéro de téléphone, dans votre environnement [Azure Active Directory](https://azure.microsoft.com/services/active-directory/) (AAD) à l’aide du [portail Azure](https://portal.azure.com/). Vous devez vous connecter avec un compte Administrateur général pour l’annuaire.
+Vous pouvez corriger, mettre à jour ou supprimer des informations d’identification personnelle concernant des utilisateurs finaux, comme par exemple les profils utilisateur du client et de l’employé et les informations professionnelles de l’utilisateur qui contiennent des données personnelles, comme par exemple, le nom d’un utilisateur, son poste, son adresse ou son numéro de téléphone, dans votre environnement [Azure Active Directory](https://azure.microsoft.com/services/active-directory/) (AAD) à l’aide du [portail Azure](https://portal.azure.com/).  Vous devez vous connecter avec un compte d’administrateur général pour l’annuaire.
 
 ###### <a name="how-do-i-correct-or-update-user-profile-and-work-information-in-azure-active-directory"></a>Comment corriger ou mettre à jour les informations de profil utilisateur et les informations professionnelles dans Azure Active Directory ?
 
@@ -159,7 +160,7 @@ Vous pouvez corriger, mettre à jour ou supprimer des informations d’identific
 
 #### <a name="service-specific-interfaces"></a>Interfaces propres au service
 
-Microsoft permet de découvrir des données client directement via des interfaces de programmation d’applications (API) ou des interfaces utilisateur (UI) préexistantes pour des services spécifiques. Vous trouverez des détails dans la documentation de référence des services respectifs, décrivant les opérations CRUD (créer, lire, mettre à jour, supprimer) applicables.
+Microsoft permet de découvrir des données client directement via des interfaces de programmation d’applications (API) ou des interfaces utilisateur (UI) pré-existantes pour des services spécifiques. Vous trouverez des détails dans la documentation de référence des services respectifs, décrivant les opérations CRUD (créer, lire, mettre à jour, supprimer) applicables.
 
 ### <a name="step-4-restrict"></a>Étape 4 : Restreindre
 
@@ -167,7 +168,7 @@ Les personnes concernées peuvent vous demander de restreindre le traitement de 
 
 ### <a name="step-5-delete"></a>Étape 5 : Supprimer
 
-Le «droit à l’effacement» par la suppression des données personnelles des données client d’une organisation est une protection essentielle du RGPD. La suppression des données personnelles inclut la suppression de toutes les données personnelles et journaux générés par le système, à l’exception des informations du journal d’audit. Quand un utilisateur est **supprimé de façon douce** (voir les détails ci-dessous), le compte est désactivé pendant 30 jours. Si aucune autre action n’est prise pendant cette période de 30 jours, l’utilisateur **est définitivement supprimé** (voir les détails ci-dessous). Lors d'**une suppression définitive**, le compte d’utilisateur, les données personnelles et les journaux générés par le système sont supprimés dans un délai de 30 jours supplémentaire. Si un administrateur du client émet immédiatement**une suppression définitive**, le compte d’utilisateur, les données personnelles et les journaux générés par le système sont supprimés dans les 30 jours suivants.
+Le « droit à l’effacement » moyennant la suppression des données personnelles des données client d’une organisation est une protection essentielle du RGPD. La suppression des données personnelles inclut la suppression de toutes les données personnelles et journaux générés par le système, à l’exception des informations du journal d’audit. Quand un utilisateur est **supprimé de façon douce** (voir les détails ci-dessous), le compte est désactivé pendant 30 jours. Si aucune autre action n’est prise pendant cette période de 30 jours, l’utilisateur **est définitivement supprimé** (voir les détails ci-dessous). Lors d'**une suppression définitive**, le compte d’utilisateur, les données personnelles et les journaux générés par le système sont supprimés dans un délai de 30 jours supplémentaires. Si un administrateur du client émet immédiatement**une suppression définitive**, le compte d’utilisateur, les données personnelles et les journaux générés par le système sont supprimés dans les 30 jours suivants.
 
 > [!IMPORTANT]
 > Vous devez être un administrateur client pour supprimer un utilisateur du client.
@@ -182,7 +183,7 @@ Voici le processus de haut niveau permettant de supprimer des utilisateurs de vo
 
 1. Accédez au portail Azure et localisez l’utilisateur.
 
-2. Supprimez l’utilisateur. Lorsque vous supprimez initialement l’utilisateur, le compte de l’utilisateur est envoyé à la corbeille. **À ce stade, l’utilisateur est supprimé de façon réversible, ce qui signifie que le compte est désactivé, mais pas vidé d’Azure Active Directory.**
+2. Supprimez l’utilisateur. Lorsque vous supprimez l’utilisateur pour la première fois, le compte de l’utilisateur est envoyé à la corbeille. **À ce stade, l’utilisateur est supprimé de manière douce, ce qui signifie que le compte est désactivé, mais pas supprimé d’Azure Active Directory.**
 
 3. Accédez à la liste des utilisateurs récemment supprimés et supprimez définitivement l’utilisateur. **À ce stade, l’utilisateur est supprimé définitivement (suppression définitive), ce qui signifie que le compte a été vidé d’Azure Active Directory**
 
@@ -206,10 +207,10 @@ Voici le processus de haut niveau permettant de supprimer des utilisateurs de vo
 
     ![Afficher le profil utilisateur](../media/gdpr-azure-dsr-azure-deleted-user.png)
 
-4. Sélectionnez de nouveau le même utilisateur, sélectionnez  **Supprimer définitivement** dans la barre de commandes, puis  **Oui**  dans la zone vous demandant de confirmer la suppression définitive.
+4. Sélectionnez de nouveau le même utilisateur, sélectionnez  **Supprimer définitivement** dans la barre de commandes, puis  **Oui** dans la zone vous demandant de confirmer la suppression définitive.
 
 >[!IMPORTANT]  
->N’oubliez pas qu’en cliquant sur **Oui** vous supprimez (de façon définitive et irrévocable) l’utilisateur, toutes les données associées et les journaux générés par le système. Si cela se produit par erreur, vous devrez ajouter manuellement l’utilisateur au client. Les données associées et les journaux générés par le système ne sont pas récupérables.
+>Lorsque vous cliquez sur **Oui** vous supprimez définitivement et irrévocablement l’utilisateur ainsi que toutes les données associées et les journaux générés par le système. Si vous effectuez cette opération par erreur, vous devrez rajouter manuellement l’utilisateur au client. Les données associées et les journaux générés par le système ne sont pas récupérables.
 
    ![Afficher les informations professionnelles de l’utilisateur](../media/gdpr-azure-dsr-azure-permanently-deleted-user.png)
 
@@ -241,14 +242,14 @@ Microsoft vous permet de supprimer et d’exporter certains journaux générés 
 
 ### <a name="executing-dsrs-against-system-generated-logs"></a>Exécution de DPC par rapport aux journaux générés par le système
 
-Microsoft permet de supprimer et d’exporter certains journaux générés par le système, et d’y accéder, via le portail Azure et aussi directement via les interfaces de programmation ou les interfaces utilisateur des services spécifiques. Vous trouverez des détails dans la documentation de référence des services respectifs.
+Microsoft permet de supprimer et d’exporter certains journaux générés par le système, et d’y accéder, via le portail Azure et aussi directement via les interfaces de programmation ou les interfaces utilisateur des services spécifiques.  Vous trouverez des détails dans la documentation de référence des services respectifs.
 
 >[!IMPORTANT]  
-> Les services qui prennent en charge les DPC intégrées au produit requièrent l’utilisation directe de l’API ou de l’UI du service. Par conséquent, l’exécution des DPC intégrées dans un produit **doit être effectuée en plus de l’exécution d’une DPC dans le portail Azure afin d’effectuer une demande complète pour une personne concernée par le traitement des données. Consultez la documentation de référence des services spécifiques pour plus d’informations.**
+> Les services qui prennent en charge les DSRs du service nécessitent l’utilisation directe de l’interface de programmation d’application (API) ou de l’interface utilisateur (UI) du service. Par conséquent, l’exécution des DPC intégrées dans un produit **doit être effectuée en plus de l’exécution d’une DPC dans le portail Azure afin d’effectuer une demande complète pour une personne concernée par le traitement des données. Consultez la documentation de référence des services spécifiques pour plus d’informations.**
 
 ### <a name="step-1-access"></a>Étape 1 : Accéder
 
-L’administrateur client est la seule personne au sein de votre organisation qui peut accéder aux journaux générés par le système associés à l’utilisation d’Azure d’un utilisateur particulier. Les données récupérées pour une demande d’accès seront fournies dans un format lisible par un ordinateur et dans des fichiers qui permettront à l’utilisateur de savoir à quels services sont associées les données. Comme indiqué ci-dessus, les données récupérées n’incluront pas les données pouvant compromettre la sécurité du service.
+L’administrateur du client est la seule personne au sein de votre organisation qui peut accéder aux journaux générés par le système associé à l’utilisation d’Azure par un utilisateur particulier. Les données récupérées pour une demande d’accès seront fournies dans un format lisible par l’ordinateur et seront fournies dans des fichiers qui permettront à l’utilisateur de savoir à quels services les données sont associées. Comme indiqué ci-dessus, les données récupérées n’incluent pas de données susceptibles de compromettre la sécurité du service.
 
 #### <a name="azure-active-directory"></a>Azure Active Directory
 
@@ -264,7 +265,7 @@ L’administrateur client est la seule personne au sein de votre organisation qu
 
 #### <a name="azure-active-directory"></a>Azure Active Directory
 
-Microsoft offre un portail et des expériences intégrées au produit qui permettent à l’administrateur client du client d’entreprise de gérer les demandes de suppression d’une DPC. Les demandes de suppression d’une DPC suivent le même processus que celui décrit dans la section Supprimer un utilisateur et les données associées dans la section du portail Azure de la Partie 1, Étape 5 : Supprimer.
+Microsoft offre un portail et des expériences intégrées au produit permettant à l’administrateur client de l’entreprise cliente de gérer les demandes de suppression de DSR de personne concernée. Les demandes de suppression DSR suivent la même procédure que celles décrites dans la section supprimer un utilisateur et les données associées via le portail Azure de la partie 1, étape 5 : supprimer.
 
 #### <a name="service-specific-interfaces"></a>Interfaces propres au service
 
@@ -272,7 +273,7 @@ Microsoft permet de découvrir des données client directement via des interface
 
 ### <a name="step-3-export"></a>Étape 3 : Exporter
 
-L’administrateur client est la seule personne au sein de votre organisation qui peut accéder aux journaux générés par le système associés à l’utilisation d’Azure d’un utilisateur particulier. Les données récupérées pour une demande d’exportation seront fournies dans un format lisible par un ordinateur et dans des fichiers qui permettront à l’utilisateur de savoir à quels services sont associées les données. Comme indiqué ci-dessus, les données récupérées n’incluront pas les données pouvant compromettre la sécurité ou la stabilité du service.
+L’administrateur du client est la seule personne au sein de votre organisation qui peut accéder aux journaux générés par le système associé à l’utilisation d’Azure par un utilisateur particulier. Les données récupérées pour une demande d’exportation seront fournies dans un format lisible par l’ordinateur et seront fournies dans des fichiers qui permettront à l’utilisateur de savoir à quels services les données sont associées. Comme indiqué ci-dessus, les données récupérées n’incluent pas de données susceptibles de compromettre la sécurité ou la stabilité du service.
 
 #### <a name="export-system-generated-logs-using-the-azure-portal"></a>Exporter les journaux générés par le système à l’aide du portail Azure
 

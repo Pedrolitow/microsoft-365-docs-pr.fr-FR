@@ -1,5 +1,5 @@
 ---
-title: Configurer les paramètres S/MIME dans Exchange Online pour Outlook sur le Web
+title: Configurer les paramètres S/MIME-Exchange Online pour Outlook sur le Web
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -15,12 +15,13 @@ ms.assetid: c7dee22c-9b5b-425c-91a9-d093204ff84e
 ms.collection:
 - M365-security-compliance
 description: Brève description des administrateurs Exchange Online à faire pour afficher et configurer les paramètres S/MIME dans Outlook sur le Web dans Exchange Online.
-ms.openlocfilehash: 354b247c2b0e0e610e6cb0626f4a404b582db717
-ms.sourcegitcommit: c2a36b16e354e20db5fd6275175ca856eae55bfc
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 2ed3f3c6289c4663c6bebecdf9ab03eacd94e373
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "41960320"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035093"
 ---
 # <a name="configure-smime-settings-in-exchange-online-for-outlook-on-the-web"></a>Configurer les paramètres S/MIME dans Exchange Online pour Outlook sur le Web
 
@@ -44,6 +45,6 @@ Pour plus d’informations sur la stratégie **ExtensionInstallForcelist** , voi
 
 Cette étape est requise pour utiliser Chrome ; il ne remplace pas le contrôle S/MIME qui est installé par les utilisateurs. Les utilisateurs sont invités à télécharger et à installer le contrôle S/MIME dans Outlook sur le Web lors de leur première utilisation de S/MIME. Ou, les utilisateurs peuvent accéder de manière proactive à **S/MIME** dans leurs paramètres Outlook sur le Web pour obtenir le lien de téléchargement pour le contrôle.
 
-## <a name="for-more-information"></a>Pour plus d’informations
+## <a name="for-more-information"></a>Pour plus d'informations
 
 [S/MIME pour la signature et le chiffrement des messages](s-mime-for-message-signing-and-encryption.md)

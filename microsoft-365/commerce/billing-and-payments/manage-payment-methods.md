@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - BEA160
 description: Découvrez comment gérer vos modes de paiement dans le centre d’administration 365 de Microsoft.
-ms.openlocfilehash: 997b957bb28d32402e17eb855bc891ed07e5f27f
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: fb3efa7aa2e098462e8c323d1cd0038222862e7b
+ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42894840"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44045867"
 ---
 # <a name="manage-payment-methods"></a>Créer des méthodes de paiement
 
@@ -73,7 +73,7 @@ Pour modifier le mode de paiement d’un abonnement unique, consultez la rubriqu
 
 Vous pouvez modifier le mode de paiement utilisé pour payer un seul abonnement.
 
-1. Dans le centre d’administration, accédez à la page produits de **facturation** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">& services</a> .
+1. Dans le centre d’administration, accédez à la page **facturation** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">de vos produits</a> .
 2. Sous l’onglet **abonnements** , sélectionnez l’abonnement que vous souhaitez payer avec l’autre mode de paiement. 
 3. Sous **facturation**, en regard de mode de paiement, sélectionnez **modifier**.
 4. En regard de votre mode de paiement existant, sélectionnez **modifier**.
@@ -108,7 +108,7 @@ Si un mode de paiement est associé à des abonnements ou des profils de factura
 7. Le nouveau mode de paiement est déjà sélectionné dans la liste déroulante. Sélectionnez **Suivant**.
 8. Sélectionnez **Supprimer**.
 
-## <a name="troubleshoot-payment-methods"></a>Résolution des problèmes liés aux modes de paiement
+## <a name="troubleshoot-payment-methods"></a>Résolution des problèmes des modes de paiement
 
 |**Problème**|**Étapes de dépannage**|
 |:----------|:-----|

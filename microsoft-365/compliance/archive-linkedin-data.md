@@ -13,13 +13,15 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.collection: M365-security-compliance
-description: Les administrateurs peuvent configurer un connecteur natif pour importer des données à partir d’une page de la société LinkedIn vers Microsoft 365. Cela vous permet d’archiver des données provenant de sources de données tierces dans Microsoft 365 de sorte que vous puissiez utiliser les fonctionnalités de conformité telles que la conservation légale, la recherche de contenu et les stratégies de rétention pour gérer la conformité des données tierces de votre organisation.
-ms.openlocfilehash: 6b74e6ba8dca810a8a185ae6011207a419c3e79d
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.custom:
+- seo-marvel-apr2020
+description: Configurez un connecteur pour importer des données LinkedIn vers Microsoft 365 afin de pouvoir utiliser des outils de conformité tels que la conservation légale, la recherche de contenu et les stratégies de rétention.
+ms.openlocfilehash: 7d88d366ea19be7d158a04edc7d7fb11dca7bab9
+ms.sourcegitcommit: e55e4747d3b838baacab8985aefc24aac245c431
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43943213"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44043345"
 ---
 # <a name="set-up-a-connector-to-archive-linkedin-data"></a>Configurer un connecteur pour archiver des données LinkedIn
 
@@ -45,7 +47,7 @@ Une fois que les données de la page de la société LinkedIn sont stockées dan
 
 4. Sur la page **se connecter avec LinkedIn** , cliquez sur **se connecter avec LinkedIn**.
 
-   La page de connexion LinkedIn s’affiche.
+   La page de connexion à LinkedIn s’affiche.
 
    ![Page de connexion à LinkedIn](../media/LinkedInSigninPage.png)
 
@@ -57,17 +59,15 @@ Une fois que les données de la page de la société LinkedIn sont stockées dan
 
 6. Sélectionnez la page de la société à partir de laquelle vous souhaitez archiver des éléments, puis cliquez sur **suivant**.
 
-7. Sur la page **définir les filtres** , vous pouvez appliquer un filtre pour importer initialement les éléments qui sont un certain âge. Sélectionnez un âge, puis cliquez sur **suivant**.
+7. Dans la page **choisir l’emplacement de stockage** , cliquez dans la zone, sélectionnez l’adresse de messagerie d’une boîte aux lettres Microsoft 365 dans laquelle les éléments LinkedIn seront importés, puis cliquez sur **suivant**. Les éléments sont importés dans le dossier boîte de réception de cette boîte aux lettres.
 
-8. Dans la page **choisir l’emplacement de stockage** , cliquez dans la zone, sélectionnez l’adresse de messagerie d’une boîte aux lettres Microsoft 365 dans laquelle les éléments LinkedIn seront importés, puis cliquez sur **suivant**. Les éléments sont importés dans le dossier boîte de réception de cette boîte aux lettres.
+8. Sur l' **autorisation fournir un administrateur**, cliquez sur **accorder le consentement** , puis suivez les étapes. Vous devez être un administrateur général pour accorder le consentement du service d’importation Office 365 pour accéder aux données de votre organisation.
 
-9. Sur l' **autorisation fournir un administrateur**, cliquez sur **accorder le consentement** , puis suivez les étapes. Vous devez être un administrateur général pour accorder le consentement du service d’importation Office 365 pour accéder aux données de votre organisation.
-
-10. Cliquez sur **suivant** pour passer en revue les paramètres du connecteur, puis cliquez sur **Terminer** pour terminer l’installation du connecteur.
+9. Cliquez sur **suivant** pour passer en revue les paramètres du connecteur, puis cliquez sur **Terminer** pour terminer l’installation du connecteur.
 
 Après avoir créé le connecteur, vous pouvez revenir à la page **connecteurs de données** pour voir la progression du processus d’importation pour le nouveau connecteur (sélectionnez **Actualiser** si nécessaire pour mettre à jour la liste des connecteurs). La valeur dans la colonne d' **État** est en **attente de démarrage**. Le processus initial d’importation doit prendre jusqu’à 24 heures. Après la première exécution du connecteur et l’importation des éléments LinkedIn, le connecteur s’exécute une fois toutes les 24 heures et importe les nouveaux éléments créés sur la page de la société LinkedIn dans les 24 heures qui précèdent.
 
-Pour afficher plus de détails, sélectionnez le connecteur dans la liste sur la page **connecteurs de données** pour afficher la page de menu volant. Sous **État**, la plage de dates affichée indique le filtre d’âge qui a été sélectionné lors de la création du connecteur. 
+Pour afficher plus de détails, sélectionnez le connecteur dans la liste sur la page **connecteurs de données** pour afficher la page de menu volant. Sous **État**, la plage de dates affichée indique le filtre d’âge qui a été sélectionné lors de la création du connecteur.
 
 ## <a name="more-information"></a>Plus d’informations
 

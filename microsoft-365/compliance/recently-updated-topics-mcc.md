@@ -1,5 +1,5 @@
 ---
-title: Nouveautés du centre de conformité Microsoft 365
+title: Mises à jour récentes dans le centre de conformité
 f1.keywords:
 - NOCSH
 ms.author: brendonb
@@ -17,12 +17,13 @@ ms.assetid: e3c6df61-8513-499d-ad8e-8a91770bff63
 ms.collection:
 - m365-security-compliance
 description: Tout comme les fonctionnalités du centre de conformité Microsoft 365, notre contenu d’aide est toujours évolutif. Nous créons en permanence de nouveaux articles, en mettant à jour ceux existants et en apportant des modifications en fonction de vos commentaires. Découvrez les nouveautés et mises à jour ce mois-ci.
-ms.openlocfilehash: 4a07327f9ea830483aa3abbaa1b6bd52ca825230
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom: seo-marvel-mar2020
+ms.openlocfilehash: b7edcf8c4c530c926d323fddbf795cd930efd649
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632159"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44036017"
 ---
 # <a name="recent-updates-to-microsoft-365-compliance-content"></a>Mises à jour récentes du contenu de conformité Microsoft 365
 

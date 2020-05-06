@@ -1,5 +1,5 @@
 ---
-title: Télécharger l’exportation des travaux
+title: Télécharger des travaux d’exportation pour un cas
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -15,13 +15,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
+ms.custom: seo-marvel-mar2020
 description: Installez et utilisez l’Explorateur de stockage Azure pour télécharger des documents qui ont été exportés à partir d’un jeu de vérification dans Advanced eDiscovery.
-ms.openlocfilehash: 640dd9b6d5768a22cb6529f476e4003c5eeb4d86
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 617ef0b27d5cab4098c505eaefb935ba8ae4ae2a
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42074863"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035676"
 ---
 # <a name="download-export-jobs"></a>Télécharger l’exportation des travaux
 

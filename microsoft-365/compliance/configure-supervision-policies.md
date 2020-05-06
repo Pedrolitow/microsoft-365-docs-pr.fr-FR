@@ -1,6 +1,6 @@
 ---
 title: Configurer les stratégies de surveillance
-description: Configurer la surveillance de la communication pour Office 365
+description: Configurez les stratégies de surveillance de communication dans Office 365 pour capturer les communications des employés à des fins d’examen par des relecteurs internes ou externes.
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -19,12 +19,13 @@ search.appverid:
 - MET150
 - MOE150
 titleSuffix: Office 365 Compliance
-ms.openlocfilehash: c13e481cfc55e56d8cc1c0a772f2f661992f5353
-ms.sourcegitcommit: d929fa32fc2dfb0749fa2420eddbc2251d8489dc
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 9cbde149419320495e3848867846322733cb56f9
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "43921456"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44033654"
 ---
 # <a name="configure-supervision-policies-in-office-365"></a>Configurer des stratégies de surveillance dans Office 365
 

@@ -15,13 +15,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: ''
-ms.openlocfilehash: 11115db9e9a29f9abe83b3c26322f7586806d4dc
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: Découvrez comment utiliser l’outil de gestion des dépositaires intégré dans Advanced eDiscovery pour coordonner vos flux de travail et identifier les sources de données pertinentes dans un cas.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: b0c85fb080faeeafd5909c033bc95ef14efc2c45
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632309"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034688"
 ---
 # <a name="add-custodians-to-an-advanced-ediscovery-case"></a>Ajouter des dépositaires à un cas avancé eDiscovery
 
