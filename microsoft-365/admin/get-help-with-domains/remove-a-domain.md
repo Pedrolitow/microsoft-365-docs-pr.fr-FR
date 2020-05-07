@@ -21,14 +21,21 @@ search.appverid:
 - GEA150
 ms.assetid: f09696b2-8c29-4588-a08b-b333da19810c
 description: Découvrez comment supprimer un ancien domaine de Microsoft 365 et déplacer des utilisateurs et des groupes vers un autre domaine.
-ms.openlocfilehash: b072a8f30d6b6a655441dec49ff9af9b4d0fdbe4
-ms.sourcegitcommit: c7f11d851073ef14a69669f6c8b7e0c11e4bb7a1
+ms.openlocfilehash: ef0209d6ccb7534745172585fe599f627e386cb4
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43938635"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44140404"
 ---
 # <a name="remove-a-domain"></a>Supprimer un domaine
+
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> Le centre d’administration change. Si votre expérience ne correspond pas aux détails présentés ici, reportez-vous [à la rubrique à propos du nouveau centre d’administration Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+
+::: moniker-end
   
  **[Consultez les Forums aux questions sur les domaines](../setup/domains-faq.md)** si vous ne trouvez pas ce que vous recherchez. 
   
@@ -217,7 +224,7 @@ Si vous avez des centaines voire des milliers d'utilisateurs, utilisez PowerShel
 ::: moniker range="o365-worldwide"
 
 > [!NOTE]
-> Vous ne pouvez pas supprimer le domaine [« onmicrosoft.com »](https://support.office.com/article/b9fc3018-8844-43f3-8db1-1b3a8e9cfd5a.aspx) de votre compte.
+> Vous ne pouvez pas supprimer le domaine [« onmicrosoft.com »](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) de votre compte.
   
 Cela ne fonctionne toujours pas ? Vous devez peut-être supprimer votre domaine manuellement. [Appelez-nous](../contact-support-for-business-products.md) et nous vous aiderons à effectuer cette tâche.
   

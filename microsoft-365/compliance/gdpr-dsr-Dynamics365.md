@@ -1,6 +1,6 @@
 ---
 title: Demandes des personnes concernées par le traitement des données pour Dynamics 365 concernant le RGPD et le CCPA
-description: Ce guide explique comment utiliser les produits, services et outils d’administration Microsoft pour aider les clients de notre entité de contrôle à rechercher des données personnelles et à prendre des mesures pour répondre aux DPC et au CCPA.
+description: Ce guide vous permet de comprendre comment trouver des données personnelles et agir sur celles-ci, et de répondre aux demandes DSR et CCPA des clients Dynamics 365.
 keywords: Microsoft 365, Microsoft 365 Éducation, documentation Microsoft 365, RGPD, CCPA
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
@@ -15,13 +15,15 @@ ms.collection:
 - GDPR
 - M365-security-compliance
 hideEdit: true
+ms.custom:
+- seo-marvel-mar2020
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: 38c50703fbc58e85a646720b5bbe8b400477b9d4
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+ms.openlocfilehash: ec598816158068445f3f662bbdd6ea7c7edafd82
+ms.sourcegitcommit: e55e4747d3b838baacab8985aefc24aac245c431
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42558004"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44043326"
 ---
 # <a name="dynamics-365-data-subject-requests-for-the-gdpr-and-ccpa"></a>Demandes des personnes concernées par le traitement des données pour Dynamics 365 concernant le RGPD et le CCPA
 
@@ -223,7 +225,7 @@ Les administrateurs peuvent accéder aux journaux générés par le système ass
 
 Une fois la demande créée, elle apparaît sur la page **Exportation des journaux de données** où vous pouvez suivre son statut. Lorsqu’une demande est terminée, vous pouvez cliquer sur un lien pour accéder aux journaux générés par le système qui sont exportés vers l’emplacement de stockage Azure de votre organisation dans les 30 jours suivant la création de la demande. Les données sont enregistrées dans un format de fichier courant lisible par une machine tel que JSON ou XML. Si vous n’avez pas de compte Azure ni d’emplacement de stockage Azure, vous devez créer un compte Azure ou un emplacement de stockage Azure pour votre organisation de sorte que l’outil Exportation des journaux de données puisse exporter les journaux générés par le système. 
 
-Azure prend cela en charge en permettant à votre organisation d’exporter les données au format JSON natif vers votre conteneur de stockage Azure spécifié[. Article de présentation du Stockage Microsoft Azure – Stockage Blob](https://docs.microsoft.com/azure/storage/common/storage-introduction#blob-storage).
+Azure prend cela en charge en permettant à votre organisation d’exporter les données au format JSON natif vers votre conteneur de stockage Azure spécifié[. Article de présentation du Stockage Microsoft Azure – Stockage Blob](https://docs.microsoft.com/azure/storage/common/storage-introduction#blob-storage). Les données récupérées n’incluent pas de données susceptibles de compromettre la sécurité et la stabilité du service.
 
 > [!IMPORTANT]
 > Pour exporter des données utilisateur à partir du client, vous devez être un administrateur client.
@@ -245,9 +247,7 @@ Le tableau suivant récapitule la consultation et l’exportation des journaux g
 
 ### <a name="deleting-system-generated-logs"></a>Suppression des journaux générés par le système
 
-Pour supprimer des journaux générés par le système et récupérés via une demande d’accès, vous devez supprimer l’utilisateur du service et supprimer définitivement son compte Azure Active Directory. Pour obtenir des instructions sur comment supprimer définitivement un utilisateur, consultez la section [Suppression d’un utilisateur](https://microsoft-my.sharepoint.com/personal/kated_microsoft_com/Documents/DSR%20Guide%20v4%20-(newly%20created%20for%20O365%20only).docx#_Deleting_a_user) de ce guide. Il est important de noter que la suppression définitive d’un compte d’utilisateur est irréversible une fois amorcée.
-
-La suppression définitive d’un compte d’utilisateur supprime les données de l’utilisateur des journaux générés par le système pour pratiquement tous les services Dynamics 365 dans un délai de 30 jours.
+Pour supprimer les journaux générés par le système récupérés via une demande d’accès, vous devez supprimer l’utilisateur du service et supprimer définitivement son compte Azure Active Directory. Il est important de noter que la suppression définitive d’un compte d’utilisateur est irréversible une fois lancée. La suppression définitive d’un compte d’utilisateur supprime les données de l’utilisateur des journaux générés par le système pour pratiquement tous les services Dynamics 365 dans un délai de 30 jours.
 
 ## <a name="learn-more"></a>En savoir plus
 

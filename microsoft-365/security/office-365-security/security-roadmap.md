@@ -1,5 +1,5 @@
 ---
-title: Feuille de route de sécurité-priorités principales des 30 premiers jours, 90 jours, et au-delà
+title: Feuille de route Microsoft 365 Security-principales priorités
 f1.keywords:
 - NOCSH
 ms.author: bcarter
@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 28c86a1c-e4dd-4aad-a2a6-c768a21cb352
 description: 'Principales recommandations de l’équipe Cybersecurity de Microsoft pour la mise en œuvre de fonctionnalités de sécurité pour protéger votre environnement Microsoft 365. '
-ms.openlocfilehash: f00cf7c63e84f19ac2cae080adb87209b32d3012
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 762f0772002917d11459b97f76b7bfbddceb2016
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43633724"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035407"
 ---
 # <a name="security-roadmap---top-priorities-for-the-first-30-days-90-days-and-beyond"></a>Feuille de route de sécurité-priorités principales des 30 premiers jours, 90 jours, et au-delà
 

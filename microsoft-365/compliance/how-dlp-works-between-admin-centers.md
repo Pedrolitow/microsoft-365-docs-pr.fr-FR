@@ -1,5 +1,5 @@
 ---
-title: Fonctionnement du DLP entre le Centre de sécurité et conformité et le Centre d’administration Exchange
+title: Fonctionnement de DLP avec le centre de sécurité & conformité & Centre d’administration Exchange
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -17,12 +17,13 @@ search.appverid:
 - MET150
 ms.assetid: a7e4342a-a0a1-4b43-b166-3d7eecf5d2fd
 description: Découvrez comment DLP dans le centre de sécurité & conformité fonctionne avec DLP et les règles de flux de messagerie (règles de transport) dans le centre d’administration Exchange.
-ms.openlocfilehash: 82b3d371303b647488c08416c5392d006c81e479
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 05e3c6342ab6d57c1f22de96e64a01df5fd15131
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42073064"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44036195"
 ---
 # <a name="how-dlp-works-between-the-security--compliance-center-and-exchange-admin-center"></a>Fonctionnement du DLP entre le Centre de sécurité et conformité et le Centre d’administration Exchange
 

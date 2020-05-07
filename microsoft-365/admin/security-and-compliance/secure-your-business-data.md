@@ -20,20 +20,27 @@ search.appverid:
 - MOE150
 ms.assetid: de2da300-dbb6-4725-bb12-b85a9d296e75
 description: 'Protégez votre courrier électronique et vos données professionnelles contre les menaces informatiques, notamment les ransomware, le hameçonnage et les pièces jointes malveillantes. '
-ms.openlocfilehash: 2f70bf8d7b3a98416eca288aaa68f12fde1ba211
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 5d0a006c13d7149afe39466da49e21579b4195f7
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627691"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44140824"
 ---
 # <a name="top-10-ways-to-secure-microsoft-365-for-business-plans"></a>10 façons de sécuriser les offres Microsoft 365 pour les entreprises
+
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> Le centre d’administration change. Si votre expérience ne correspond pas aux détails présentés ici, reportez-vous [à la rubrique à propos du nouveau centre d’administration Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+
+::: moniker-end
 
 Si vous êtes une petite ou moyenne organisation utilisant l’un des plans de gestion de Microsoft et que votre type d’organisation est ciblé par les cybercriminels et les pirates, utilisez les conseils fournis dans cet article pour renforcer la sécurité de votre organisation. Ces instructions aident votre organisation à atteindre les objectifs décrits dans le manuel de [campagne](https://go.microsoft.com/fwlink/?linkid=2015598&amp;clcid=0x409)Harvard Kennedy School Cybersecurity.
   
 Microsoft vous recommande d’effectuer les tâches indiquées dans le tableau suivant qui s’appliquent à votre plan de service. 
   
-||**Tâche**|**Microsoft 365 Business standard**|**Microsoft 365 Business Premium**|
+||**Tâche**|**Microsoft 365 Business Standard**|**Microsoft 365 Business Premium**|
 |:-----|:-----|:-----|:-----|
 |0,1  <br/> |[Configurer l’authentification multifacteur](secure-your-business-data.md#setup) <br/> |![Inclus](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |![Inclus](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
 |n°2  <br/> |[Former vos utilisateurs](secure-your-business-data.md#train) <br/> |![Inclus](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |![Inclus](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
@@ -160,7 +167,7 @@ Pour créer une règle de transport de messagerie, affichez une [vidéo de forma
 > [!TIP]
 > Vous pouvez également ajouter les fichiers que vous souhaitez bloquer à la liste anti-programmes malveillants à l' [étape 4](#4-raise-the-level-of-protection-against-malware-in-mail).
 
-Si vous souhaitez en savoir plus, consultez les articles : 
+Pour plus d’informations, reportez-vous aux rubriques suivantes :
   
 - [Comment traiter les ransomware](https://go.microsoft.com/fwlink/?linkid=2016501&amp;clcid=0x409)
     

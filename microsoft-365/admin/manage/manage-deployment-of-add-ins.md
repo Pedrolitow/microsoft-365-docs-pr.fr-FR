@@ -19,14 +19,21 @@ search.appverid:
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
 description: Découvrez comment déployer des compléments pour les utilisateurs et les groupes de votre organisation à l’aide du déploiement centralisé dans le centre d’administration.
-ms.openlocfilehash: 30f2c08aa895f63ed529b4390d208e3daa9d6d7b
-ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
+ms.openlocfilehash: cb41d02d8075e94c788a9964e0a3ac69d8363ef4
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "44011710"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44139708"
 ---
 # <a name="manage-deployment-of-add-ins-in-the-microsoft-365-admin-center"></a>Gérer le déploiement de compléments dans le Centre d’administration Microsoft 365
+
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> Le centre d’administration change. Si votre expérience ne correspond pas aux détails présentés ici, reportez-vous [à la rubrique à propos du nouveau centre d’administration Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+
+::: moniker-end
 
 [] Les compléments Office vous aident à personnaliser vos documents et à accéder plus simplement aux informations sur le web (voir [Commencer à utiliser votre complément Office](https://support.office.com/article/82e665c4-6700-4b56-a3f3-ef5441996862.aspx)). En tant qu’administrateur, vous pouvez déployer des compléments Office pour les utilisateurs de votre organisation. Vous pouvez effectuer cette opération à l’aide de la fonctionnalité déploiement centralisé dans le centre d’administration 365 de Microsoft.
   
@@ -234,7 +241,7 @@ Pour être conforme à RGPD pour les mineurs, vous devez vous assurer que l’un
   
 Word, Excel et PowerPoint 2013 pour Windows prend en charge les mêmes vérifications mineures si la bibliothèque d’authentification Active Directory (ADAL) est activée. Il existe deux options pour la conformité, comme expliqué ci-dessous.
   
-- **Activez Adal**. Cet article explique comment activer ADAL pour Office 2013 : utilisation de l' [authentification moderne Microsoft 365 avec les clients Office](https://support.office.com/article/776c0036-66fd-41cb-8928-5495c0f9168a).<br/>Vous devez également définir les clés de Registre pour activer ADAL, comme expliqué dans la rubrique [activation de l’authentification moderne pour Office 2013 sur les appareils Windows](../security-and-compliance/enable-modern-authentication.md).<br/>En outre, vous devez installer les mises à jour d’avril suivantes pour Office 2013 :
+- **Activez Adal**. Cet article explique comment activer ADAL pour Office 2013 : utilisation de l' [authentification moderne Microsoft 365 avec les clients Office](https://docs.microsoft.com/office365/enterprise/modern-auth-for-office-2013-and-2016).<br/>Vous devez également définir les clés de Registre pour activer ADAL, comme expliqué dans la rubrique [activation de l’authentification moderne pour Office 2013 sur les appareils Windows](../security-and-compliance/enable-modern-authentication.md).<br/>En outre, vous devez installer les mises à jour d’avril suivantes pour Office 2013 :
     
   - [Description de la mise à jour de sécurité pour Office 2013:10 avril 2018](https://support.microsoft.com/help/4018330/description-of-the-security-update-for-office-2013-april-10-2018)
     
@@ -281,6 +288,6 @@ Vous pouvez également supprimer un complément qui a été déployé.
 
 Pour en savoir plus sur la création et la génération de compléments, voir [Compléments Office](https://go.microsoft.com/fwlink/p/?linkid=846362).
   
-[Utilisez les cmdlets PowerShell de déploiement centralisé pour gérer les compléments](https://support.office.com/article/94f4e86d-b8e5-42dd-b558-e6092f830ec9).
+[Utilisez les cmdlets PowerShell de déploiement centralisé pour gérer les compléments](https://docs.microsoft.com/office365/enterprise/use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins).
   
 [Résolution des problèmes : l’utilisateur ne voit pas les compléments](https://docs.microsoft.com/office365/troubleshoot/access-management/user-not-seeing-add-ins)

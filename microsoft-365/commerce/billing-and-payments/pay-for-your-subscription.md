@@ -24,14 +24,21 @@ description: Découvrez les options de paiement disponibles pour le paiement de 
 ms.custom:
 - okr_SMB
 - fwlink 808700 for SEPA UI glink 906 for older uI
-ms.openlocfilehash: 599eb7eafda81f59b02ab11c822307d0db0c49c2
-ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
+ms.openlocfilehash: 613bb0fcc776b65090ee66faf6dc0516987947b2
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44045835"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44140870"
 ---
 # <a name="pay-for-your-subscription"></a>Régler votre abonnement
+
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> Le centre d’administration change. Si votre expérience ne correspond pas aux détails présentés ici, reportez-vous [à la rubrique à propos du nouveau centre d’administration Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+
+::: moniker-end
 
 Lorsque vous configurez votre abonnement, vous pouvez choisir de régler à l’aide d’une carte de crédit ou d’un compte bancaire, ou de payer à la réception de la facture soit par chèque, soit par transfert électronique de fonds (TEF). Quelle que soit la méthode que vous choisissez, nous continuerons d'utiliser ce mode de paiement pour les périodes de facturation suivantes, sauf si vous [modifiez votre mode de paiement](change-payment-method.md).
 

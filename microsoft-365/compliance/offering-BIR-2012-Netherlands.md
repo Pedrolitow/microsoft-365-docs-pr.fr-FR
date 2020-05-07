@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 695edb08c8316cf3f95af37321d5ab3a7d53399d
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 765e9b3ed18e15cd458913e7f943d52f791dbafd
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602681"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44065879"
 ---
 # <a name="baseline-informatiebeveiliging-rijksdienst-standard-bir-2012"></a>Norme standard Informatiebeveiliging Rijksdienst (BIR 2012)
 
@@ -74,8 +74,4 @@ Ce rapport est fourni aux clients en vertu d’un accord de confidentialité de 
 - [Prescription de sécurité nationale 2013 (BVR)](https://wetten.overheid.nl/BWBR0033512/2013-06-01)
 - [Information sur les prescription de sécurité nationale 2007 (VIR)](https://wetten.overheid.nl/BWBR0022141/2007-07-01)
 - [Sécurité des informations de référence (BIR)](https://www.earonline.nl/index.php/BIR_2012)
-- [Conformité du Centre de gestion de la confidentialité Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>Télécharger notre document d’information sur la conformité
-
-Vous souhaitez en savoir plus sur nos démarches concernant la conformité ? Téléchargez notre fichier [PDF](https://download.microsoft.com/download/F/0/0/F00F62B6-254B-41AC-AC79-7A43CD6E376C/BIR2012-Compliance.pdf) (disponible uniquement en anglais pour le moment).
+- [Conformité sur le site Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)

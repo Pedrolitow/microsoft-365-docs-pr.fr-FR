@@ -24,14 +24,21 @@ search.appverid:
 - BEA160
 ms.assetid: 30ba9c83-50d8-4020-90ed-830a5b8c8724
 description: Découvrez comment gérer vos modes de paiement dans le centre d’administration 365 de Microsoft.
-ms.openlocfilehash: b15381ee4eba7c1a91e108743fc326c890ab1820
-ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
+ms.openlocfilehash: fda0bc13fc8c15644eeabd497cd3783b4f50e9db
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44045927"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44140946"
 ---
 # <a name="add-update-or-remove-your-payment-methods"></a>Ajouter, mettre à jour ou supprimer vos modes de paiement
+
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> Le centre d’administration change. Si votre expérience ne correspond pas aux détails présentés ici, reportez-vous [à la rubrique à propos du nouveau centre d’administration Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+
+::: moniker-end
 
 ::: moniker range="o365-worldwide"
 Vous pouvez acheter des produits et services auprès de Microsoft à l’aide d’une carte bancaire ou d’un compte bancaire. Vous pouvez entrer vos informations de paiement sur la page **Modes de paiement** ou lorsque vous effectuez un achat.

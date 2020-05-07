@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - BSA160
 description: Découvrez comment planifier la gouvernance de groupes Microsoft 365.
-ms.openlocfilehash: 4427f210bc1691ef04b97fa4802313078f8d0997
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+ms.openlocfilehash: 85dfbb27899d7b79257eba4cff4b7cd715f762a5
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 05/06/2020
-ms.locfileid: "44049410"
+ms.locfileid: "44064786"
 ---
 # <a name="plan-for-governance-in-groups"></a>Planifier la gouvernance dans les groupes
 
@@ -154,7 +154,7 @@ Si vous avez supprimé un groupe Microsoft 365, par défaut, il est conservé pe
 >Si un utilisateur tente d'accéder au site pendant la période de « suppression réversible », il verra un message d'erreur 403 Interdit. Après cette période, si l'utilisateur tente d'accéder au site, il obtiendra un message 404 Introuvable.
 
 #### <a name="resources"></a>*Resources*
-- [Restaurer un groupe Microsoft 365 supprimé](https://docs.microsoft.com/en-us/microsoft-365/admin/create-groups/restore-deleted-group?ui=en-US&rs=en-001&ad=US)
+- [Restaurer un groupe Microsoft 365 supprimé](https://docs.microsoft.com/microsoft-365/admin/create-groups/restore-deleted-group?ui=en-US&rs=en-001&ad=US)
 - [Restaurer un groupe Microsoft 365 supprimé dans Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-restore-deleted)
 - [Supprimer des groupes à l'aide de l'applet de commande Remove-UnifiedGroup](https://technet.microsoft.com/library/mt238270%28v=exchg.160%29.aspx)
 

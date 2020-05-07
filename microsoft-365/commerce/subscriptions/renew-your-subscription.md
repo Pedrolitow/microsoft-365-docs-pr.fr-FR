@@ -24,14 +24,21 @@ search.appverid:
 - GEA150
 ms.assetid: 8d83b530-f4ca-47f6-a666-e5791cbacc7e
 description: 'Découvrez comment renouveler votre abonnement Microsoft 365 pour les entreprises à l’aide d’une clé de produit et activer ou désactiver la facturation périodique. '
-ms.openlocfilehash: 7cceae61891da31dbb058af1db12598a02b172e2
-ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
+ms.openlocfilehash: 7bcd0fcc9d3984589ff7c05ec2c1b95afad22c29
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44046227"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44141077"
 ---
 # <a name="renew-microsoft-365-for-business"></a>Renouveler Microsoft 365 pour les entreprises
+
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> Le centre d’administration change. Si votre expérience ne correspond pas aux détails présentés ici, reportez-vous [à la rubrique à propos du nouveau centre d’administration Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+
+::: moniker-end
 
 Cet article s’applique aux abonnements Microsoft 365 les plus payants.
   

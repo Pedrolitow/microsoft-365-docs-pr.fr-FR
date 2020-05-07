@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 9cf5d3eed1854dbf715a9574b4efaa666c934a52
-ms.sourcegitcommit: 053d42480d8aa3792ecb0027ddd53d383a029474
+ms.openlocfilehash: ac8829d681e27609a505e7539e835c5c58c8474e
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "42313769"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44064723"
 ---
 # <a name="european-standards-en-301-549"></a>Normes européennes EN 301 549
 
@@ -52,8 +52,4 @@ Trouvez des [rapports de conformité](https://cloudblogs.microsoft.com/industry-
 - [Site d'accessibilité Microsoft](https://www.microsoft.com/accessibility) : informez-vous sur l'utilisation des fonctionnalités d'accessibilité et explorez la manière dont Microsoft innove pour aider les utilisateurs à gagner en efficacité.
 - [Centre d’accessibilité Office 365](https://go.microsoft.com/fwlink/p/?linkid=2051801) : ressources Office 365 pour les personnes souffrant de handicaps.
 - [Answer Desk Accessibilité Entreprise](https://go.microsoft.com/fwlink/p/?linkid=2050890) : prise en charge dédiée pour les clients professionnels ayant des questions d’accessibilité sur nos produits et services ou la conformité.
-- [Conformité du Centre de gestion de la confidentialité Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>Télécharger notre document d’information sur la conformité
-
-Vous souhaitez en savoir plus sur nos démarches concernant la conformité ? Téléchargez notre fichier [PDF](https://download.microsoft.com/download/F/B/B/FBB0D35E-A1B3-4078-A75D-702368311649/China-Compliance.pdf) (disponible uniquement en anglais pour le moment).
+- [Conformité sur le site Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)

@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7dc5d983-84b2-4802-bef0-602ae1780a42
 description: Découvrez comment transférer des données manuellement entre deux comptes Microsoft 365 lorsque vous avez modifié le plan ou le nom de la société, ou combiné plusieurs abonnements en un seul.
-ms.openlocfilehash: c0cb6531518c18e8cdc5b5829dc05a5b9b375291
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 1eaaf48f445eb54ebf91b96924c39e9062eea4fb
+ms.sourcegitcommit: 83f980927728bc080f97a3e6dc70dc305f3df841
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43628374"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44053739"
 ---
 # <a name="transfer-data-manually-between-two-accounts"></a>Transférer des données manuellement entre deux comptes
 
@@ -55,7 +55,7 @@ Préparez-vous à cumuler vos manches et à bloquer un intervalle de temps sur v
 
 Accédez aux pages suivantes sur chaque compte, puis configurez le nouveau compte en fonction des paramètres de l’ancien compte.
   
-Si vous transférez des données de Microsoft 365 vers Microsoft 365 Midmarket ou Microsoft 365 Enterprise, les pages d’administration sont structurées différemment. Regardez une [vidéo : présentation de Microsoft 365 Enterprise](https://support.office.com/article/11f7b4a0-1294-4e94-9238-beaae26efa9c.aspx)et accédez aux paramètres d’administration suivants.
+Si vous transférez des données de Microsoft 365 vers Microsoft 365 Midmarket ou Microsoft 365 Enterprise, les pages d’administration sont structurées différemment. Regardez une [vidéo : présentation de Microsoft 365 Enterprise](https://docs.microsoft.com/microsoft-365/admin/)et accédez aux paramètres d’administration suivants.
   
 Pour Microsoft 365 entreprise et Microsoft 365 moyenne entreprise :
   
@@ -90,9 +90,9 @@ Il existe plusieurs façons d’enregistrer ou de transférer des données de si
   
 - Vous pouvez enregistrer l’ancien site en tant que modèle et importer le modèle dans le nouveau site.
 
-- Pour transférer des documents, commencez par recréer manuellement votre hiérarchie sur le nouveau site. Vous pouvez ensuite ouvrir les deux sites d’équipe SharePoint simultanément, ouvrir les deux bibliothèques de documents à l’aide de l’Explorateur Windows et copier-coller les documents. Consultez la [vidéo : copier ou déplacer des fichiers de bibliothèque à l’aide de la fonction ouvrir avec l’Explorateur](https://support.office.com/article/c27bc6f3-7b38-4c29-b947-5d00c7153384.aspx).
+- Pour transférer des documents, commencez par recréer manuellement votre hiérarchie sur le nouveau site. Vous pouvez ensuite ouvrir les deux sites d’équipe SharePoint simultanément, ouvrir les deux bibliothèques de documents à l’aide de l’Explorateur Windows et copier-coller les documents. Consultez la [vidéo : copier ou déplacer des fichiers de bibliothèque à l’aide de la fonction ouvrir avec l’Explorateur](https://support.office.com/article/where-to-store-files-c7c20284-bc94-47f4-9728-d28e9daf0790).
 
-- Pour transférer des données de liste, enregistrez un [modèle de liste](https://support.office.com/article/c3884ad1-bc49-44b8-b3d6-3bc6a01eb393.aspx)et utilisez le modèle enregistré pour recréer la liste sur le nouveau site.
+- Pour transférer des données de liste, enregistrez un [modèle de liste](https://support.microsoft.com/en-us/office/manage-list-templates-c3884ad1-bc49-44b8-b3d6-3bc6a01eb393)et utilisez le modèle enregistré pour recréer la liste sur le nouveau site.
 
 - Pour enregistrer une bibliothèque de documents ou un contenu de liste à partir d’un environnement SharePoint Online (OneDrive entreprise ou sites d’équipe) vers des partages de fichiers ou vers un ordinateur local, voir [informations sur la migration manuelle du contenu SharePoint Online](https://support.microsoft.com/kb/2783484).
 

@@ -14,14 +14,21 @@ ms.collection:
 search.appverid:
 - MET150
 description: Les administrateurs peuvent apprendre à gérer les achats en libre-service effectués par les utilisateurs au sein de leur organisation.
-ms.openlocfilehash: 7074a829bed3e65a160a9a33afb4f2b130f6c8d1
-ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
+ms.openlocfilehash: 991dc87c40f41a6cbd2f1c08d4bc72bbb34d28f1
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44046179"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44141149"
 ---
 # <a name="manage-self-service-purchases-admin"></a>Gérer les achats libre-service (administrateur)
+
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> Le centre d’administration change. Si votre expérience ne correspond pas aux détails présentés ici, reportez-vous [à la rubrique à propos du nouveau centre d’administration Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+
+::: moniker-end
 
 En tant qu’administrateur, vous pouvez voir les achats en libre-service effectués par les membres de votre organisation. Vous pouvez voir le produit, le nom de l’acheteur, les abonnements achetés, la date d’expiration, le prix d’achat et les utilisateurs affectés pour chaque achat en libre-service. Si cela est nécessaire pour votre organisation, vous pouvez désactiver l’achat en libre-service sur une base par produit via PowerShell. Vous disposez des mêmes stratégies de gestion des données et d’accès que les produits achetés via l’achat en libre-service ou de manière centralisée.
 

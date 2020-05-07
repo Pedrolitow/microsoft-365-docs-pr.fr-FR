@@ -13,14 +13,21 @@ ms.collection:
 - commerce
 search.appverid: MET150
 description: Découvrez comment activer et gérer des applications tierces dans le centre d’administration Microsoft 365.
-ms.openlocfilehash: 521a535115cd3a082348485f4d03dade27c71d92
-ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
+ms.openlocfilehash: eb2826a4b0c69d61eb35a9dfff37e9dc2dd6ad71
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44045963"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44141187"
 ---
 # <a name="manage-third-party-app-subscriptions-for-your-organization"></a>Gérer les abonnements aux applications tierces pour votre organisation
+
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> Le centre d’administration change. Si votre expérience ne correspond pas aux détails présentés ici, reportez-vous [à la rubrique à propos du nouveau centre d’administration Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+
+::: moniker-end
 
 Vous pouvez gérer les licences et la facturation pour les applications tierces dans le centre d’administration Microsoft 365 avec le mode aperçu activé. Les fonctionnalités mises à jour incluent une gestion améliorée des abonnements, un meilleur accès aux informations de facturation et une flexibilité accrue pour la gestion des factures. La gestion des abonnements repose sur la plateforme commerce mise à jour de Microsoft. Cela s’applique aux applications logicielles en tant que service que les clients achètent directement ou à partir d’un fournisseur tiers.
 

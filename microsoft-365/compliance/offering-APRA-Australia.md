@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 568a078c18ead86ddbf3e92cfec3bfc7367595e2
-ms.sourcegitcommit: 2913fd74ad5086c7cac6388447285be9aa5a8e44
+ms.openlocfilehash: b344f9c4d750c6e6571c0e76be0c9db0c421271b
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "41662040"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44065889"
 ---
 # <a name="australian-prudential-regulation-authority-apra"></a>Autorité de régulation prudentielle australienne (APRA)
 
@@ -66,7 +66,7 @@ CPS 234 reflète fidèlement l’infrastructure de sécurité principale de Micr
 
 Cette liste de vérification Microsoft présente les exigences réglementaires APRA que les entreprises financières doivent respecter lors du passage au Cloud. Il mappe Azure sur non seulement la [norme prudentielle CPS 231](https://www.apra.gov.au/sites/default/files/Prudential-Standard-CPS-231-Outsourcing-%28July-2017%29.pdf), mais aussi d’autres normes APRA pertinentes, telles que la continuité de l’activité et la gestion des risques. Cette liste de vérification permet à vos établissements financiers de prendre la certitude qu’ils répondent aux exigences APRA pertinentes.
 
-En s’appuyant sur notre approche complète de la garantie des risques dans le Cloud, nous sommes convaincus que les organisations australiennes de services financiers peuvent passer aux services Cloud de Microsoft d’une manière non seulement cohérente avec les conseils APRA, mais peuvent fournir aux clients des un profil de gestion des risques de sécurité plus avancé que les solutions locales ou d’autres solutions hébergées.
+En s’appuyant sur notre approche complète de la garantie des risques dans le Cloud, nous sommes convaincus que les organisations australiennes de services financiers peuvent passer aux services Cloud de Microsoft d’une manière non seulement cohérente avec les conseils APRA, mais elles peuvent fournir aux clients un profil de gestion des risques de sécurité plus avancé que les solutions locales ou autres.
 
 Bénéficiez d’un support pratique pour le transfert de données et de charges de travail vers Azure conformément à la réglementation APRA : [Télécharger les services Cloud Microsoft : liste de vérification de la conformité pour les établissements financiers en Australie](https://www.microsoft.com/cms/api/am/binary/RE3ez0C).
 
@@ -76,7 +76,7 @@ Bénéficiez d’un support pratique pour le transfert de données et de charges
 - [Office 365](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
 - Dynamics 365
 
-## <a name="frequently-asked-questions"></a>Foire aux questions
+## <a name="frequently-asked-questions"></a>Forum Aux Questions
 
 **Les institutions financières ont-elles besoin d’une approbation APRA avant d’externaliser les activités de gestion des matières ?**
 

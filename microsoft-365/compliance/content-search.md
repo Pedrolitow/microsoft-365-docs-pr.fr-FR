@@ -18,13 +18,15 @@ search.appverid:
 - MED150
 - MET150
 ms.assetid: 53390468-eec6-45cb-b6cd-7511f9c909e4
-description: Utilisez l’outil recherche de contenu dans le centre de conformité dans Microsoft 365 ou Microsoft 365 pour rechercher du contenu dans les boîtes aux lettres, les sites SharePoint Online, les comptes OneDrive, Microsoft Teams, les Groupes Microsoft 365, les Groupes Yammer et les conversations Skype Entreprise. Vous pouvez utiliser des requêtes de recherche par mot clé et des conditions de recherche pour affiner les résultats de la recherche. Vous pouvez ensuite obtenir un aperçu et exporter les résultats de la recherche. La recherche de contenu est également un outil efficace pour rechercher du contenu lié à une demande d’objet de données RGPD.
-ms.openlocfilehash: 61e8b15af29bf02849a83f6a68bdd1c0accd7e8d
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.custom:
+- seo-marvel-apr2020
+description: Utilisez l’outil Recherche de contenu dans le Centre de conformité dans Office 365 ou Microsoft 365 pour rechercher du contenu dans différents services Office 365.
+ms.openlocfilehash: e16b369c2844f75673ac4f6eee1cb3b8f4fdfab4
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43943173"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035502"
 ---
 # <a name="content-search"></a>Recherche de contenu
 

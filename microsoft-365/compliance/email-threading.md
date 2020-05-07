@@ -1,5 +1,5 @@
 ---
-title: Threading de messagerie
+title: 'Threading de messagerie : enquêtes sur les données'
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -15,13 +15,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: ''
-ms.openlocfilehash: 423b3a4ebb00473a45122cf89d2810e6d7c1fc2d
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: Lors de la gestion d’une enquête sur les données, le Threading de messagerie analyse une conversation électronique et sépare chaque message en différentes catégories.
+ms.custom: seo-marvel-mar2020
+ms.openlocfilehash: 6cc466bf89187f292acd454fd8ca6efb05958d2b
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42074701"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035656"
 ---
 # <a name="email-threading"></a>Threading de messagerie
 

@@ -1,5 +1,7 @@
 ---
 title: Gérer les profils de facturation
+f1.keywords:
+- NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: mnirkhe
@@ -16,14 +18,22 @@ search.appverid:
 - MET150
 description: Découvrez comment les profils de facturation prennent en charge les factures.
 keywords: Profil de facturation, factures, frais, charges gérées
-ms.openlocfilehash: 3dbdbb57b46b915891640483bde56ebc8ad1cff6
-ms.sourcegitcommit: 95a07b328166f637a481c8b5c53669eaf8ff0db8
+ms.openlocfilehash: f93ca5af11ba416fecd13fcceffe75055a776553
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39837388"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44140889"
 ---
 # <a name="manage-billing-profiles"></a>Gérer les profils de facturation
+
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> Le centre d’administration change. Si votre expérience ne correspond pas aux détails présentés ici, reportez-vous [à la rubrique à propos du nouveau centre d’administration Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+
+::: moniker-end
+
 Pour les clients commerciaux qui achètent des produits et des services auprès de Microsoft, les profils de facturation vous permettent de personnaliser les éléments inclus dans votre facture, ainsi que le mode de paiement de vos factures.
 
 Les profils de facturation incluent les informations suivantes :
@@ -42,7 +52,7 @@ Un profil de facturation est automatiquement créé pour votre compte de factura
 
 Les rôles sur les profils de facturation sont des autorisations permettant de contrôler les achats et d’afficher et de gérer les factures. Affectez ces rôles aux utilisateurs qui effectuent le suivi, organisent et paient des factures, comme les membres de l’équipe d’approvisionnement de votre organisation.
 
-| Rôle                          | Description                                                                       |
+| Role                          | Description                                                                       |
 |-----------------------------  |---------------------------------------------------------------------------------  |
 | Propriétaire du profil de facturation         | Gérer tout le contenu d’un profil de facturation                                           |
 | Collaborateur de profil de facturation   | Gérer tout sauf les autorisations dans un profil de facturation                         |
@@ -51,7 +61,7 @@ Les rôles sur les profils de facturation sont des autorisations permettant de c
 
 ## <a name="view-billing-profiles"></a>Afficher les profils de facturation
 
-1. Dans le centre d’administration, accédez à **la** \> page <a href="https://go.microsoft.com/fwlink/p/?linkid=848039" target="_blank">factures & paiement</a> .
+1. Dans le Centre d’administration, accédez à la page **Factures** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=848039" target="_blank">Factures & paiements</a>.
 
 2. Sélectionnez **profils de facturation**, puis un profil de facturation dans la liste.
 

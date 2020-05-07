@@ -21,14 +21,21 @@ search.appverid:
 - BEA160
 ms.assetid: b1bc0bef-4608-4601-813a-cdd9f746709a
 description: Découvrez comment annuler votre abonnement d’évaluation ou payant Microsoft 365 pour les entreprises.
-ms.openlocfilehash: c12b574d29b50432cdb480dca711588ad1f0df32
-ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
+ms.openlocfilehash: f0f635529a7d7c6ee0f9a2d6b15b887e3fd23bfb
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44046203"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44141168"
 ---
 # <a name="cancel-your-subscription"></a>Annuler votre abonnement
+
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> Le centre d’administration change. Si votre expérience ne correspond pas aux détails présentés ici, reportez-vous [à la rubrique à propos du nouveau centre d’administration Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+
+::: moniker-end
 
 *Éligibilité :* Si vous avez moins de 25 licences attribuées à des utilisateurs, vous pouvez annuler votre abonnement d’évaluation ou payant Microsoft 365 Online dans le centre d’administration Microsoft 365 à tout moment. Si vous avez plus de 25 licences affectées à des utilisateurs, [appelez le support pour annuler votre abonnement](../../admin/contact-support-for-business-products.md).
 

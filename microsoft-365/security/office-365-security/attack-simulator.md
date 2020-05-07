@@ -15,13 +15,15 @@ search.appverid:
 ms.assetid: da5845db-c578-4a41-b2cb-5a09689a551b
 ms.collection:
 - M365-security-compliance
-description: En tant qu’administrateur général, vous pouvez utiliser un simulateur d’attaques pour exécuter des scénarios d’attaques réalistes au sein de votre organisation. Cela peut vous aider à identifier les utilisateurs vulnérables avant qu’une véritable attaque ne touche votre entreprise.
-ms.openlocfilehash: cac09ed48a46531ea2246f9c3ef798649dc73196
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
-ms.translationtype: HT
+ms.custom:
+- seo-marvel-apr2020
+description: Découvrez comment utiliser un simulateur d’attaque pour exécuter des attaques de hameçonnage et de mot de passe simulées dans votre organisation Microsoft 365 E5 ou ATP (plan 2).
+ms.openlocfilehash: e2c6859291e4a25e56dd8dd20a8ecc5962310680
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43638571"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035857"
 ---
 # <a name="attack-simulator-in-atp"></a>Simulateur d’attaques dans ATP
 

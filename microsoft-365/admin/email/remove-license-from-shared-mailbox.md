@@ -21,14 +21,21 @@ search.appverid:
 - MOE150
 ms.assetid: bb229ee9-e7be-4990-b3eb-354e75740496
 description: 'Supprimer une licence d’une boîte aux lettres partagée pour l’affecter à un autre utilisateur. '
-ms.openlocfilehash: 02c98570a1742d710373c6711d2621a0a9ebe818
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+ms.openlocfilehash: fb09036fc28ea3d9c182395d0a85e467f611dfdc
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43210527"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44140428"
 ---
-# <a name="remove-a-license-from-a-shared-mailbox"></a>Supprimer une licence à partir d’une boîte aux lettres partagée
+# <a name="remove-a-license-from-a-shared-mailbox"></a>Supprimer une licence d’une boîte aux lettres partagée
+
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> Le centre d’administration change. Si votre expérience ne correspond pas aux détails présentés ici, reportez-vous [à la rubrique à propos du nouveau centre d’administration Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+
+::: moniker-end
 
 Les boîtes aux lettres partagées n’ont besoin d’une licence que si la boîte aux lettres contient plus de 50 Go de données. Suivez ces instructions pour supprimer une licence d’une boîte aux lettres partagée afin de pouvoir l’attribuer à un utilisateur ou renvoyer la licence afin de ne pas payer une licence dont vous n’avez pas besoin.
   
@@ -67,7 +74,7 @@ Les boîtes aux lettres partagées n’ont besoin d’une licence que si la boî
 
 3. Sur la page **licences de produits** , définissez le bouton bascule sur **désactivé** pour la licence que vous souhaitez supprimer.
 
-4. Cliquez sur **Enregistrer**.
+4. Sélectionnez **Enregistrer**.
 
 5. Lorsque vous revenez à la page **utilisateurs actifs** , l’état de la boîte aux lettres partagée est sans **licence**.
 
@@ -86,7 +93,7 @@ Les boîtes aux lettres partagées n’ont besoin d’une licence que si la boî
 
 3. Sur la page **licences de produits** , définissez le bouton bascule sur **désactivé** pour la licence que vous souhaitez supprimer.
 
-4. Cliquez sur **Enregistrer**.
+4. Sélectionnez **Enregistrer**.
 
 5. Lorsque vous revenez à la page **utilisateurs actifs** , l’état de la boîte aux lettres partagée est sans **licence**.
 

@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Découvrez comment configurer et commencer à utiliser le score de conformité Microsoft, ce qui permet de simplifier et d’automatiser les évaluations des risques.
-ms.openlocfilehash: 4ccd89647540aeda8ba6253f6e5eefab1dc81791
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 7a0030ed417e21484717b6edf12406d2f5e760e5
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632389"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44140859"
 ---
 # <a name="microsoft-compliance-score-preview-setup"></a>Programme d’installation du score de conformité Microsoft (aperçu)
 
@@ -40,16 +40,14 @@ Le score de conformité utilise un modèle d’autorisation de contrôle d’acc
 
 ### <a name="where-to-set-permissions"></a>Où définir les autorisations
 
-L’administrateur général de votre organisation peut définir des autorisations utilisateur dans le centre de conformité Microsoft 365 ou dans Azure Active Directory (Azure AD). Une fois les rôles définis dans l’un de ces emplacements, les utilisateurs peuvent accéder au score de conformité ainsi qu’au gestionnaire de conformité.
-
-Notez que les rôles du gestionnaire de conformité existants **ne sont pas** transférés vers le score de conformité. Si vous avez un rôle dans le gestionnaire de conformité et que vous débutez avec le score de conformité, votre rôle de gestionnaire de conformité ne vous permettra pas d’accéder au score de conformité. Votre administrateur global devra définir des autorisations et un rôle pour vous dans le centre de conformité Microsoft 365 ou Azure AD pour pouvoir accéder au score de conformité.
+L’administrateur général de votre organisation peut définir des autorisations utilisateur dans [Azure Active Directory (Azure AD)](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal) ou dans le [Gestionnaire de conformité](compliance-manager-overview.md#permissions). Une fois les rôles définis dans l’un de ces emplacements, les utilisateurs peuvent accéder au score de conformité ainsi qu’au gestionnaire de conformité.
 
 ### <a name="role-types"></a>Types de rôles
 
-Le tableau ci-dessous montre comment chaque rôle du centre de conformité Microsoft 365 est mappé aux rôles du gestionnaire de conformité existants, ainsi qu’aux fonctions autorisées par chaque rôle.
+Le tableau ci-dessous montre comment chaque [rôle Azure ad](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles) correspond aux rôles du gestionnaire de conformité existants et aux fonctions autorisées par chaque rôle. Les utilisateurs doivent disposer au moins du rôle de lecteur global Azure AD pour accéder au score de conformité.
 
 
-| L’utilisateur peut : | Rôle du centre de conformité Microsoft 365 | Rôle du gestionnaire de conformité | 
+| L’utilisateur peut : | Rôle Azure AD | Rôle du gestionnaire de conformité | 
 | :------------- | :-------------: | :------------: |
 | **Lire mais ne pas modifier les données**| Lecteur global Azure AD  | Lecteur global Azure AD | 
 | **Lire mais ne pas modifier les données**| Lecteur Sécurité | Lecteur du gestionnaire de conformité  | 
@@ -60,13 +58,6 @@ Le tableau ci-dessous montre comment chaque rôle du centre de conformité Micro
 
 > [!NOTE]
 > Lorsque vous passez du score de conformité au gestionnaire de conformité pour effectuer une tâche (par exemple, pour gérer les évaluations), votre navigateur ouvre un nouvel onglet et une boîte de dialogue s’affiche. Dans la section supérieure avec l’en-tête «déjà un client des services Cloud Microsoft ? Connectez-vous à votre compte, «sélectionnez **connexion** pour accéder au gestionnaire de conformité ; vous n’avez pas besoin d’entrer de nouveau vos informations d’identification.
-
-### <a name="how-to-set-permissions-and-roles-in-the-microsoft-365-compliance-center"></a>Procédure de définition des autorisations et des rôles dans le centre de conformité Microsoft 365
-
-Pour définir des autorisations dans le centre de conformité Microsoft 365 :
-
-1. Accédez au [Centre de conformité Microsoft 365](https://compliance.microsoft.com) et connectez-vous avec votre compte d’administrateur général.
-2. Sélectionnez **autorisations** dans le volet de navigation de gauche. À partir de là, vous pouvez afficher les rôles et attribuer des autorisations.
 
 ## <a name="configure-automatic-secure-score-updates"></a>Configurer les mises à jour automatiques du score de sécurité
 

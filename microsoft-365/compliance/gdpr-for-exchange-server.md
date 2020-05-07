@@ -1,6 +1,6 @@
 ---
 title: RGPD pour Exchange Server
-description: Découvrez comment satisfaire aux exigences du RGPD pour l’environnement Exchange Server local.
+description: Découvrez comment résoudre les conditions RGPD requises pour un serveur Exchange local, telles que la rétention des éléments supprimés et la collecte automatique des données.
 f1.keywords:
 - NOCSH
 ms.author: mikeplum
@@ -10,13 +10,16 @@ audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Priority
+ms.custom:
+- seo-marvel-mar2020
+- seo-marvel-apr2020
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: 7d7837716cd453ee3331dced52fc82872a09fc8f
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: c6cf5aa14c9b38f2d6a4323bd2d424d5abd72140
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596441"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44036279"
 ---
 # <a name="gdpr-for-exchange-server"></a>RGPD pour Exchange Server
 

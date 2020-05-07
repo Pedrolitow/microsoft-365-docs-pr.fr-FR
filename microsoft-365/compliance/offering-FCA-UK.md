@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: f96b4eccec92f78b22eb28caecf3910a5d4ace2d
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 1a45b101363c3b881161384a241c1ea50e951552
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602441"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44066387"
 ---
 # <a name="united-kingdom-financial-conduct-authority-fca"></a>Autorité financière pour le Royaume-Uni (FCA)
 
@@ -27,13 +27,13 @@ ms.locfileid: "41602441"
 
 L' [autorité financière](https://www.fca.org.uk/) (FCA), un organisme public indépendant qui est responsable du Trésor, réglemente 58 000 les entreprises financières et les marchés au Royaume-Uni et sert de régulateur prudentiel pour plus de 18 000 de ces organisations. [Autorité de régulation prudentielle](https://www.bankofengland.co.uk/pra/pages/default.aspx) , qui sert également de régulateur prudentiel pour la Banque d’Angleterre et réglemente 1 500 des plus grands établissements financiers tels que les banques, les sociétés de construction, les syndicats, les assureurs et les entreprises d’investissement. (Le FCA récupère le règlement prudentiel pour les entreprises qui ne tombent pas sous le paiement des PRA.)
 
-Le FCA avait reçu des commentaires que les établissements financiers et les fournisseurs de services Cloud n’étaient pas clairement clairs quant à l’application de ses règles d’externalisation sur le Cloud, une barrière potentielle à l’utilisation du Cloud. Étant donné que le mandat FCA inclut la promotion d’une concurrence effective (pour laquelle l’innovation peut être un pilote), le FCA souhaitait prendre en charge l’utilisation des services Cloud, indiquant «nous ne voyons aucune raison fondamentale pour laquelle les services Cloud (y compris les services Cloud publics) ne peuvent pas être mise en œuvre, avec un examen approprié, d’une manière conforme à nos règles. " Par conséquent, le FCA a clarifié ses exigences en matière d’externalisation sur le Cloud, publiant des conseils finaux en novembre 2016 dans le [Guide de l’externalisation des entreprises vers le Cloud et d’autres services informatiques tiers](https://www.fca.org.uk/publication/finalised-guidance/fg16-5.pdf) destinés à aider les entreprises financières et les fournisseurs de services Cloud à comprendre les attentes FCA lorsque les entreprises sous-traitant le nuage (ou plan de le faire). Bien que ces conseils ne soient pas obligatoires, le FCA attend que les entreprises l’utilisent, le cas échéant. (Notez que le PRA a des objectifs légaux différents, de sorte que les entreprises qu’il réglemente doivent confirmer leur approche avec le PRA.) Il s’agit d’un document détaillé qui fournit des instructions spécifiques pour l’utilisation, l’évaluation et la surveillance continue de tiers dans la fourniture de services informatiques. Il divise les considérations en 13 domaines d’intérêt, allant des questions juridiques, réglementaires et de la gestion des risques à la planification de la continuité et aux plans pour quitter le déploiement de l’externalisation.
+Le FCA avait reçu des commentaires que les établissements financiers et les fournisseurs de services Cloud n’étaient pas clairement clairs quant à l’application de ses règles d’externalisation sur le Cloud, une barrière potentielle à l’utilisation du Cloud. Étant donné que le mandat FCA inclut la promotion d’une concurrence effective (pour laquelle l’innovation peut être un pilote), le FCA souhaitait prendre en charge l’utilisation des services Cloud, indiquant « nous ne voyons aucune raison fondamentale pour laquelle les services Cloud (y compris les services de cloud public) ne peuvent pas être implémentés, avec une attention appropriée, de manière à respecter nos règles. » Par conséquent, le FCA a clarifié ses exigences en matière d’externalisation sur le Cloud, publiant des conseils finaux en novembre 2016 dans le [Guide de l’externalisation des entreprises vers le Cloud et d’autres services informatiques tiers](https://www.fca.org.uk/publication/finalised-guidance/fg16-5.pdf) destinés à aider les entreprises financières et les fournisseurs de services Cloud à comprendre les attentes FCA lorsque les entreprises sous-traitant le nuage (ou plan de le faire). Bien que ces conseils ne soient pas obligatoires, le FCA attend que les entreprises l’utilisent, le cas échéant. (Notez que le PRA a des objectifs légaux différents, de sorte que les entreprises qu’il réglemente doivent confirmer leur approche avec le PRA.) Il s’agit d’un document détaillé qui fournit des instructions spécifiques pour l’utilisation, l’évaluation et la surveillance continue de tiers dans la fourniture de services informatiques. Il divise les considérations en 13 domaines d’intérêt, allant des questions juridiques, réglementaires et de la gestion des risques à la planification de la continuité et aux plans pour quitter le déploiement de l’externalisation.
 
 ## <a name="microsoft-and-fca-uk"></a>Microsoft et FCA (Royaume-Uni)
 
 Microsoft a publié un guide complet, [permettant la conformité : approche Microsoft de FCA finaliser les conseils en nuage](https://go.microsoft.com/fwlink/p/?linkid=2101561), détaillant comment Azure peut aider les clients des services financiers autorisés et réglementés par l’autorité financière britannique (FCA) et l’autorité de régulation prudentielle (PRA) lors du transfert d’opérations dans le Cloud.
 
-Le Guide de Microsoft décrit en détail notre conformité avec de nombreuses normes internationales reconnues, notre transparence concernant la façon dont vos données client sont gérées pour vous permettre de contrôler le service informatique, ainsi que les dispositions contractuelles propres à l’adresse financière exigences réglementaires.
+Le Guide de Microsoft décrit en détail notre conformité avec de nombreuses normes internationales reconnues, notre transparence concernant la façon dont vos données client sont gérées pour vous permettre de les contrôler, ainsi que les dispositions contractuelles répondant à des exigences réglementaires spécifiques aux adresses.
 
 Les sections du Guide Microsoft correspondent à chaque domaine d’intérêt dans les conseils FCA. Par exemple, l’un des aspects clés des exigences en matière de conformité réglementaire est que les sociétés de services financiers doivent identifier et gérer les risques que l’entreprise peut adopter. Microsoft étudie son approche dans la réalisation d’une évaluation des risques, de la documentation, de l’identification des meilleures pratiques actuelles, etc. Nous vous aidons à évaluer les risques pertinents et à mettre à disposition une large gamme de ressources pour faciliter votre diligence.
 
@@ -49,7 +49,7 @@ Découvrez comment Azure active la conformité FCA aux banques britanniques : [
 - Intune
 - Service Cloud Power BI soit en service autonome, soit inclus dans un plan ou une suite Office 365
 
-## <a name="frequently-asked-questions"></a>Questions fréquentes (FAQ)
+## <a name="frequently-asked-questions"></a>Foire aux questions
 
 **Puis-je utiliser les réponses Microsoft à cette infrastructure dans le cadre du processus de conformité de mon organisation ?**
 
@@ -66,7 +66,3 @@ Oui. Toutefois, bien que les réponses Microsoft à cette infrastructure soient 
 - [Conformité des services financiers dans Azure](https://azure.microsoft.com/resources/videos/azurecon-2015-financial-services-compliance-in-azure/)
 - [Services Enterprise Cloud et financiers Microsoft](https://www.microsoft.com/trustcenter/cloudservices/financialservices)
 - [Conformité sur le site Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>Télécharger notre document d’information sur la conformité
-
-Vous souhaitez en savoir plus sur nos démarches concernant la conformité ? Téléchargez notre fichier [PDF](https://download.microsoft.com/download/E/F/4/EF49C18B-BB31-44F8-BCDD-655702C63BE8/FCA-PRA-Compliance.pdf) (disponible uniquement en anglais pour le moment).

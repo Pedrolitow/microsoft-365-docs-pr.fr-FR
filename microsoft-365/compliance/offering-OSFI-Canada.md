@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: f4cb36cd208017881dd03a99d4e8c8adbbea65d4
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 7a43011a1d81c014526b1dd9178d051162e96acd
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602071"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44065959"
 ---
 # <a name="office-of-the-superintendent-of-financial-institutions-osfi-canada"></a>Le Bureau du surintendant des institutions financières (BSIF) Canada
 
@@ -74,8 +74,4 @@ Oui, mais seulement si l'entente d'externalisation est une externalisation maté
 - [Services commerciaux cloud computing et services financiers Microsoft](https://www.microsoft.com/trustcenter/cloudservices/financialservices)
 - [Conformité des services financiers dans Azure](https://azure.microsoft.com/resources/videos/azurecon-2015-financial-services-compliance-in-azure/)
 - [Outil d’évaluation des risques dans le Cloud Azure Financial Services](https://aka.ms/FFIEC-CSDT)
-- [Conformité du Centre de gestion de la confidentialité Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>Télécharger notre document d’information sur la conformité
-
-Vous souhaitez en savoir plus sur nos démarches concernant la conformité ? Téléchargez notre fichier [PDF](https://download.microsoft.com/download/6/9/9/699E9434-6376-4F2A-A666-1F10D715B898/OFSI-Compliance.pdf) (disponible uniquement en anglais pour le moment).
+- [Conformité sur le site Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)

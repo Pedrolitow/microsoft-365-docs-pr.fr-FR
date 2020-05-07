@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 0c3898fd808a588578cba29f7f40b8d5be183e1c
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 695471d51e391957a5dfea8770cb1928dd39ee86
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602261"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44065909"
 ---
 # <a name="iso-223012012-business-continuity-management-standard"></a>Norme de gestion de la continuité des activités ISO/IEC 22301:2012
 
@@ -33,9 +33,7 @@ Publiée en 2012 par le comité technique, ISO 22301:2012 est la première norm
 
 Microsoft est le premier fournisseur de services Cloud à grande échelle à obtenir la certification ISO 22301 pour la gestion de la continuité des activités. Une entité de certification indépendante a accordé cette certification à Microsoft Azure, Microsoft Azure Government, Microsoft Office 365 (y compris les offres commerciales, gouvernementales et éducatives), Microsoft Cloud App Security, Microsoft Intune et Microsoft Power BI à l’issue d’un audit rigoureux couvrant tous les aspects des processus de gestion de la continuité opérationnelle. L’audit a couvert les services dans le périmètre listés ci-dessous et les fonctions de gestion Azure, le portail Azure et les systèmes permettant de suivre, d’exploiter et de mettre à jour les services dans le périmètre.
 
-Découvrez les avantages de la norme ISO/IEC 22301 sur le Cloud Microsoft : [Télécharger la fiche d'information de la norme ISO/IEC 22301](https://aka.ms/iso22301-backgrounder)
-
-## <a name="microsoft-in-scope-cloud-services"></a>Services Cloud Microsoft dans le périmètre
+## <a name="microsoft-in-scope-cloud-services"></a>Services Cloud Microsoft concernés
 
 - [Azure et Azure Government](https://aka.ms/AzureCompliance)
 - Cloud App Security
@@ -78,8 +76,4 @@ Oui. Si votre activité a besoin de la certification ISO 22301 pour des implém
 - [Conditions de Microsoft Online Services](https://aka.ms/Online-Services-Terms)
 - [Description programme de gestion de la continuité d’entreprise de Microsoft Entreprise](https://go.microsoft.com/fwlink/p/?linkid=2092212)
 - [Score de conformité](compliance-score.md)
-- [Ressources pour les spécialistes de la conformité sur le site Centre de gestion de la confidentialité Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>Télécharger notre document d’information sur la conformité
-
-Vous souhaitez en savoir plus sur nos démarches concernant la conformité ? Téléchargez notre fichier [PDF](https://download.microsoft.com/download/0/0/9/009B2F34-96F6-4D85-8BDC-238B91A2C6EE/ISO-22301-Compliance.pdf ) (disponible uniquement en anglais pour le moment).
+- [Conformité sur le site Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
