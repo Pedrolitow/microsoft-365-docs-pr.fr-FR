@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 4376d2ca5ac27ec8e12f266bb7d3bb54289c1dbd
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 8c04362747a3e4767defcf746e1158849c00725b
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637524"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44065759"
 ---
 # <a name="isoiec-27018-code-of-practice-for-protecting-personal-data-in-the-cloud"></a>Code de pratique ISO/IEC 27018 pour la protection des données personnelles dans le cloud
 
@@ -40,9 +40,7 @@ En respectant les normes d’ISO/IEC 27001 et le code de pratique incorporé da
 - **Les clients Microsoft savent ce qui se passe avec leurs PII.** ISO/IEC 27018 nécessite une stratégie qui permette le retour, le transfert et l’élimination sécurisée d’informations personnelles dans un délai raisonnable. Si Microsoft travaille avec d’autres sociétés qui ont besoin d’accéder à vos données client, Microsoft divulgue proactivement les identités de ces sous-traitants.
 - **Microsoft se conformera uniquement à des requêtes ayant force de loi concernant la divulgation des données client**. Si Microsoft doit se conformer à une telle requête, dans le cas par exemple d’une enquête criminelle, elle notifiera systématiquement le client, sauf si cela est interdit par la loi.
 
-Découvrez les avantages de la norme ISO-lec-27018 sur le Cloud Microsoft : [Télécharger la fiche d'information de la norme ISO/IEC 27017](https://aka.ms/iso27017-backgrounder)
-
-## <a name="microsoft-in-scope-cloud-services"></a>Services Cloud Microsoft dans le périmètre
+## <a name="microsoft-in-scope-cloud-services"></a>Services Cloud Microsoft concernés
 
 - [Azure, Azure Gouvernement et Azure Allemagne](https://aka.ms/AzureCompliance)
 - Sécurité de l’application cloud
@@ -133,7 +131,3 @@ Il vous incombe néanmoins d’engager un évaluateur pour mesurer votre mise en
 - [Conditions de Microsoft Online Services](https://aka.ms/Online-Services-Terms)
 - [Cloud Microsoft Service publique](https://go.microsoft.com/fwlink/p/?linkid=2087246)
 - [Conformité sur le site Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>Télécharger notre document d’information sur la conformité
-
-Vous souhaitez en savoir plus sur nos démarches concernant la conformité ? Téléchargez notre fichier [PDF](https://download.microsoft.com/download/F/D/A/FDA4697E-D72D-4513-8626-A5F294DC7A0F/ISOIEC_27018_Compliance_Backgrounder.pdf) (disponible uniquement en anglais pour le moment).

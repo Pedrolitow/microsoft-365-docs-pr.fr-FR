@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 2aa68d75f795e670390c913c999c154a0164c18c
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: e8d7ce93438ce3699dd30ac8b5f0f8818045eaf5
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602461"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44066397"
 ---
 # <a name="federation-against-copyright-theft-fact"></a>Fédération contre le vol de droits d’auteur (fait)
 
@@ -29,11 +29,9 @@ Le contenu protégé par des droits d’auteur est proposé sous plusieurs forme
 
 ## <a name="microsoft-and-federation-against-copyright-theft-fact"></a>Microsoft et la Fédération contre le vol de droits d’auteur (fait)
 
-Pour insister sur l’engagement de Microsoft à protéger les clients lorsqu’ils confient ces biens au cloud public, Microsoft Azure a été certifié par la Fédération avec le vol de droits d’auteur au Royaume-Uni. La certification de fait est basée sur la norme ISO 27001, axée sur la sécurité physique et numérique, l’examen et la formation du personnel, ainsi que sur le contrôle d’accès. Le programme de protection et de sécurité du contenu de faits s’appuie sur les compétences de l’application juridique, des partenaires technologiques et des associations industrielles pour combattre les violations de droits d’auteur et le vol de contenu, tels que le partage P2P, la duplication de disque illégale et le signal. identité.
+Pour insister sur l’engagement de Microsoft à protéger les clients lorsqu’ils confient ces biens au cloud public, Microsoft Azure a été certifié par la Fédération avec le vol de droits d’auteur au Royaume-Uni. La certification de fait est basée sur la norme ISO 27001, axée sur la sécurité physique et numérique, l’examen et la formation du personnel, ainsi que sur le contrôle d’accès. Le programme de protection et de sécurité du contenu de faits s’appuie sur les compétences de l’application juridique, des partenaires technologiques et des associations industrielles pour combattre les violations de droits d’auteur et le vol de contenu, tels que le partage P2P, la duplication de disque illégale et le vol de signal.
 
 En fonction de l’envoi volontaire par Microsoft à un audit de faits, le vérificateur de faits a certifié Azure. Azure était le premier service de cloud public mutualisée pour obtenir la certification de fait, ajoutant au portefeuille Azure de certifications liées aux médias, y compris la certification CDSA et une évaluation formelle de la MPAA.
-
-Découvrez les avantages de Microsoft Cloud : [Téléchargez les documentation de faits](https://aka.ms/fact-backgrounder)
 
 ## <a name="microsoft-in-scope-cloud-services"></a>Services Cloud Microsoft dans le périmètre
 
@@ -43,7 +41,7 @@ Découvrez les avantages de Microsoft Cloud : [Téléchargez les documentation 
 
 La certification Azure est renouvelée annuellement : [certificat de faits Azure](https://aka.ms/azurefactcert)
 
-## <a name="frequently-asked-questions"></a>Questions fréquentes (FAQ)
+## <a name="frequently-asked-questions"></a>Forum Aux Questions
 
 **Pourquoi est-il important ?**
 
@@ -62,7 +60,3 @@ La conformité avec le fait est volontaire, mais Microsoft a choisi d’effectue
 - [Évaluation de MPAA](offering-mpaa.md)
 - [Réponses d'Azure au CAIQ v3.0.1 CSA (en anglais)](https://aka.ms/csacaiqresponses)
 - [Conformité sur le site Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>Télécharger notre document d’information sur la conformité
-
-Vous souhaitez en savoir plus sur nos démarches concernant la conformité ? Téléchargez notre fichier [PDF](https://download.microsoft.com/download/D/B/B/DBBA0998-F08A-4CA8-B668-41A5EE0CFBED/FACT-Compliance.pdf) (disponible uniquement en anglais pour le moment).

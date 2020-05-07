@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 448dbcf250a34d7c7d7acb2d3f3acc4c8de4d14b
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 08f912492d1874b940156e3a6165f9476add7711
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602641"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44065849"
 ---
 # <a name="commodity-futures-trading-commission-cftc-rule-131c-d-united-states"></a>1.31 (c-d) de la règle de négociation des perspectives de marchandises (CFTC) pour les États-Unis
 
@@ -27,7 +27,7 @@ ms.locfileid: "41602641"
 
 La [Commission de négociation futures des produits](https://www.cftc.gov/) de la CFTC, une Agence américaine fédérale américaine, réglemente les futures marchés de produits et options et, plus récemment, le marché des swaps.  
   
-La règle CFTC de longue durée 1,31 définit les exigences de rétention des enregistrements établies par la règle 17A -4 (f). En outre, il spécifie que les enregistrements électroniques doivent être conservés pendant cinq ans et que les originaux restent « facilement accessibles » pendant les deux premières années et mis à disposition pour inspection par la Commission ou le ministère américain de la justice pendant toute la durée période de rétention.  
+La règle CFTC de longue durée 1,31 définit les exigences de rétention des enregistrements établies par la règle 17A -4 (f). En outre, il spécifie que les enregistrements électroniques doivent être conservés pendant cinq ans et que les originaux restent « facilement accessibles » pendant les deux premières années et mis à disposition pour inspection par la Commission ou le ministère américain de la justice pendant toute la période de rétention.  
   
 Dans 2017, le [CFTC a modifié sa règle](https://www.cftc.gov/sites/default/files/idc/groups/public/@lrfederalregister/documents/file/2017-11014a.pdf), modifiant et modernisant son règlement d’archivage pour adopter des normes moins normatives et fondées sur des principes qui offrent une plus grande flexibilité dans la façon dont les enregistrements peuvent être maintenus. Cela rend la règle plus indépendante de la technologie, ce qui permet aux entités réglementées de choisir la technologie la mieux adaptée à leur activité tout en conservant les protections qui « garantissent la fiabilité du processus d’archivage ». La règle révisée supprime la nécessité pour les organisations de maintenir les enregistrements originaux pendant deux ans, mais conserve la période de maintenance de cinq ans, ce qui harmonise les pratiques pour les entreprises réglementées par les CFTC et la SEC.
 
@@ -59,7 +59,7 @@ L’archivage dans Office 365 permet de conserver une large gamme de données, n
 ## <a name="how-to-implement"></a>Modalités de mise en œuvre
 
 - [Réglementation des services financiers](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=5b483567-00b0-4d86-96ae-ee887dadb61c&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_Compliance_Guides): plan de conformité des principes de réglementation des clés américaines pour le Cloud Computing et Microsoft Online Services.
-- [Guide d'évaluation des risques et de conformité](https://aka.ms/RiskGovernanceGuide): créez un modèle de gouvernance pour l'évaluation des risques des services de cloud computing Microsoft et la notification aux autorités de réglementation.
+- [Guide d'évaluation des risques et de la conformité](https://aka.ms/RiskGovernanceGuide): créez un modèle de gouvernance pour l'évaluation des risques des services de cloud computing Microsoft et la notification aux autorités de régulation.
 - [Cas d'utilisation financière](https://docs.microsoft.com/azure/industry/financial/) : utilisez des aperçus de cas, des didacticiels et d'autres ressources pour créer des solutions Azure pour services financiers.
 
 ## <a name="resources"></a>Ressources
@@ -71,7 +71,3 @@ L’archivage dans Office 365 permet de conserver une large gamme de données, n
 - [Stratégies de rétention de Microsoft Office 365](https://docs.microsoft.com/office365/securitycompliance/retention-policies)
 - [Blog Microsoft Financial Services](https://techcommunity.microsoft.com/t5/Financial-Services-Blog/bg-p/FinancialServicesBlog)
 - [Conformité sur le site Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>Télécharger notre document d’information sur la conformité
-
-Vous souhaitez en savoir plus sur nos démarches concernant la conformité ? Téléchargez notre fichier [PDF](https://download.microsoft.com/download/9/A/9/9A9847FE-164A-4321-8112-50719D9EA877/CFTC1.31-Compliance.pdf) (disponible uniquement en anglais pour le moment).

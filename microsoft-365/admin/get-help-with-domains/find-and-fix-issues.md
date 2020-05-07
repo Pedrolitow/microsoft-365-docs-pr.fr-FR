@@ -21,12 +21,12 @@ search.appverid:
 - GEA150
 ms.assetid: 40398b0b-bdd0-4afd-ab5e-b5ae6b7990bf
 description: Découvrez comment détecter les problèmes que vous rencontrez lors de la configuration d’un domaine personnalisé en vous assurant que les enregistrements DNS sont correctement configurés.
-ms.openlocfilehash: 13d867559684d80ee5c0e1f7005d1dcaf3b4d611
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 457b9a0f76e66f121572064f359f120b770b65de
+ms.sourcegitcommit: 83f980927728bc080f97a3e6dc70dc305f3df841
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43628469"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44053719"
 ---
 # <a name="find-and-fix-issues-after-adding-your-domain-or-dns-records"></a>Rechercher et corriger des problèmes après avoir ajouté votre domaine ou des enregistrements DNS
 
@@ -65,21 +65,21 @@ Plusieurs raisons fréquentes peuvent empêcher le fonctionnement correct de la 
 ## <a name="outlook-isnt-working"></a>Outlook ne fonctionne pas ?
 <a name="BKMK_OutlookBroken"> </a>
 
-Si vous avez défini votre enregistrement MX et les autres enregistrements DNS correctement pour votre domaine, mais que le courrier ne fonctionne pas, nous pouvons vous aider à [résoudre les problèmes liés à Outlook que vous rencontrez](https://support.office.com/article/b3e740b9-171d-4179-bcd1-e279a363fa75.aspx).
+Si vous avez défini votre enregistrement MX et les autres enregistrements DNS correctement pour votre domaine, mais que le courrier ne fonctionne pas, nous pouvons vous aider à [résoudre les problèmes liés à Outlook que vous rencontrez](https://docs.microsoft.com/exchange/troubleshoot/outlook-connectivity/outlook-connection-issues).
   
 ## <a name="everyones-email-got-switched-to-microsoft-365-and-you-only-wanted-your-email-to-switch"></a>Le courrier de tous les utilisateurs a été remplacé par Microsoft 365 et vous n’avez besoin que de votre courrier électronique pour basculer ?
 <a name="BKMK_EmailSwitched"> </a>
 
 Lorsque vous ajoutez votre domaine à Microsoft 365, l’enregistrement MX de votre domaine est généralement mis à jour (par vous-même ou par Microsoft 365) pour pointer vers Microsoft 365, et tous les messages envoyés à ce domaine débuteront à Microsoft 365. Assurez-vous que vous avez créé des boîtes aux lettres dans Microsoft 365 pour toutes les personnes qui disposent d’un courrier électronique sur votre domaine avant de modifier l’enregistrement MX.
   
-Que faire si vous ne souhaitez pas déplacer le courrier électronique de tous les membres de votre domaine vers Microsoft 365 ? Vous pouvez prendre des mesures pour [piloter Microsoft 365 avec seulement quelques adresses de messagerie](https://support.office.com/article/39cee536-6a03-40cf-b9c1-f301bb6001d7.aspx).
+Que faire si vous ne souhaitez pas déplacer le courrier électronique de tous les membres de votre domaine vers Microsoft 365 ? Vous pouvez prendre des mesures pour [piloter Microsoft 365 avec seulement quelques adresses de messagerie](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq).
   
 ## <a name="cant-confirm-non-profit-or-school-account-status"></a>Vous ne pouvez pas confirmer l’état des comptes scolaires ou scolaires ?
 <a name="BKMK_validateAcct"> </a>
 
 Il existe deux scénarios pour vérifier que le domaine de votre organisation n’a pas été configuré. Par exemple, pour prouver à Microsoft 365 que votre organisation est qualifiée pour un abonnement scolaire.
   
-Consultez les conseils fournis dans la partie relative [à la vérification de votre domaine Microsoft 365 pour prouver la propriété, l’état de l’organisme ou l’état de l’éducation, ou pour activer Yammer](https://support.office.com/article/87d1844e-aa47-4dc0-a61b-1b773fd4e590) afin de vous assurer que vous avez effectué toutes les étapes requises. Il s’agit d’un peu différent pour chaque situation. 
+Consultez les conseils fournis dans la partie relative [à la vérification de votre domaine Microsoft 365 pour prouver la propriété, l’état de l’organisme ou l’état de l’éducation, ou pour activer Yammer](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) afin de vous assurer que vous avez effectué toutes les étapes requises. Il s’agit d’un peu différent pour chaque situation. 
   
 ## <a name="services-not-working-with-your-domain"></a>Les services ne fonctionnent pas avec votre domaine ?
 <a name="BKMK_Test"> </a>
@@ -87,14 +87,14 @@ Consultez les conseils fournis dans la partie relative [à la vérification de v
 Nous pouvons vous aider à identifier les problèmes liés à la configuration DNS de votre domaine. L’utilitaire de résolution des problèmes liés aux domaines dans Microsoft 365 affiche tous les enregistrements qui doivent être corrigés, ainsi que les éléments sur lesquels les enregistrements doivent être définis. 
 
 > [!TIP]
-> Votre DNS est correctement configuré, mais le courrier électronique ne fonctionne pas dans Outlook sur votre ordinateur de bureau ? Découvrez les [différents scénarios de flux de messagerie que vous pouvez rencontrer avec Microsoft 365](https://go.microsoft.com/fwlink/?LinkId=787530) afin de vous assurer que vous avez configuré correctement les éléments pour votre entreprise. Vous pouvez également obtenir de l'aide concernant la résolution des problèmes liés à le courrier dans la page suivante : [Résoudre les problèmes liés à Outlook](https://support.office.com/article/b3e740b9-171d-4179-bcd1-e279a363fa75.aspx). 
+> Votre DNS est correctement configuré, mais le courrier électronique ne fonctionne pas dans Outlook sur votre ordinateur de bureau ? Découvrez les [différents scénarios de flux de messagerie que vous pouvez rencontrer avec Microsoft 365](https://www.microsoft.com/?ref=go) afin de vous assurer que vous avez configuré correctement les éléments pour votre entreprise. Vous pouvez également obtenir de l'aide concernant la résolution des problèmes liés à le courrier dans la page suivante : [Résoudre les problèmes liés à Outlook](https://docs.microsoft.com/exchange/troubleshoot/outlook-connectivity/outlook-connection-issues). 
   
 ## <a name="accessing-your-website-isnt-working"></a>Vous ne parvenez pas à accéder à votre site web ?
 <a name="BKMK_Website"> </a>
 
 Si vous avez corrigé tous les problèmes DNS et que vous rencontrez toujours des difficultés, essayez l'une des solutions suivantes.
   
-- Les utilisateurs ne peuvent pas accéder à votre site web à l'adresse www.mondomaine.com : [Identifier les problèmes liés au site web](https://support.office.com/article/61f34ca1-ca7f-4a65-9348-def20db09ddf.aspx)
+- Les utilisateurs ne peuvent pas accéder à votre site web à l'adresse www.mondomaine.com : [Identifier les problèmes liés au site web](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain)
     
 - Vous ne pouvez pas mettre à jour votre enregistrement A ou CNAMe pour qu’il pointe vers votre site Web : [mettre à jour les enregistrements DNS personnalisés dans Microsoft 365](../dns/add-or-edit-custom-dns-records.md)
     

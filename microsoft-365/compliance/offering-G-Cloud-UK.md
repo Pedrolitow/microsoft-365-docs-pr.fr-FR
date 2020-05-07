@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 27f664f9657e88db1dab86f765be36458b4090d9
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 66db28688a483aea8c0092202eda258a2032027f
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42236884"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44066559"
 ---
 # <a name="united-kingdom-government-cloud-g-cloud"></a>Gouvernement britannique-Cloud (G-Cloud)
 
@@ -72,7 +72,7 @@ Pour vérifier que les services de Cloud Computing Microsoft conservent leur con
 - [Intune UK G risque résiduel dans le Cloud](https://aka.ms/IntuneUKGCloudResidualRisk)
 - [Résumé de l’évaluation de la sécurité du Cloud pour Azure UK G](https://aka.ms/IntuneUKGCloudSecurityAssessmentSummary)
 
-### <a name="office-365"></a>Office 365
+### <a name="office-365"></a>Office 365
 
 - [Environnement Office 365 UK G Risk Risk Environment](https://go.microsoft.com/fwlink/?linkid=2099702)
 
@@ -82,7 +82,7 @@ Le transfert de vos services gouvernementaux vers le nuage est désormais plus f
 
 [Commencer à utiliser le modèle Azure UK G-Cloud](https://aka.ms/ukofficialblueprint)
 
-## <a name="frequently-asked-questions"></a>Foire aux questions
+## <a name="frequently-asked-questions"></a>Forum Aux Questions
 
 **Qui est éligible pour utiliser le marché numérique ?**
 
@@ -115,7 +115,3 @@ Le [portail d’approbation de services](https://support.office.com/article/Get-
 - [Marché numérique](https://www.digitalmarketplace.service.gov.uk/)
 - [Microsoft Online Services](https://aka.ms/Online-Services-Terms)
 - [Conformité sur le site Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>Télécharger notre document d’information sur la conformité
-
-Vous souhaitez en savoir plus sur nos démarches concernant la conformité ? Téléchargez notre fichier [PDF](https://download.microsoft.com/download/9/E/0/9E008CC0-6783-4472-B19D-F5B6970DD73A/UK_GCloud_Compliance_Backgrounder.pdf) (disponible uniquement en anglais pour le moment).

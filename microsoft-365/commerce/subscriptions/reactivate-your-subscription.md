@@ -25,14 +25,21 @@ search.appverid:
 - GEA150
 ms.assetid: 23aa9dd5-a2b0-42f5-8893-9541d2f3761f
 description: Découvrez comment réactiver votre abonnement lorsqu’il arrive à expiration, ou si Microsoft le désactive, ou si vous l’annulez au milieu.
-ms.openlocfilehash: 9f665cc9ca80b7338197a5401cdf9a4c2283d123
-ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
+ms.openlocfilehash: d75ebb3b09ec8b72c60e829406c1341939a4e534
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44046239"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44141097"
 ---
 # <a name="reactivate-your-subscription"></a>Réactiver votre abonnement
+
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> Le centre d’administration change. Si votre expérience ne correspond pas aux détails présentés ici, reportez-vous [à la rubrique à propos du nouveau centre d’administration Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+
+::: moniker-end
 
 Si votre abonnement expire ou a été désactivé par Microsoft, ou si vous l’avez annulé au milieu d’un abonnement, vous pouvez le réactiver dans le centre d’administration.
   

@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 07a722101aaf9a3413e5821459ea9a980a8b76fe
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 1b24460940d583eeb9ed431b61453e87a218a816
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42071281"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44066377"
 ---
 # <a name="food-and-drug-administration-cfr-title-21-part-11"></a>Food and Drug Administration CFR titre 21, partie 11
 
@@ -39,9 +39,9 @@ CFR titre 21 partie 11 définit les exigences permettant de s’assurer que les 
 
 Les services Cloud d’entreprise Microsoft sont soumis à des audits de type 2 et SOC 2 tiers, indépendants et certifiés conformément aux normes ISO/IEC 27001 et ISO/IEC 27018.
 
-Bien que ces audits et certifications régulières ne visent pas spécifiquement le respect de la réglementation FDA, leur objectif et leurs objectifs sont similaires à ceux de la rubrique CFR titre 21, partie 11, et servent à garantir la confidentialité, l’intégrité et la disponibilité des données stockées dans les services de Cloud Computing Microsoft. Notre approche de qualification est également basée sur les meilleures pratiques du secteur, y compris les bonnes pratiques en matière de série de bonnes pratiques en matière d’ingénierie pharmaceutique (ISPE) GAMP et de méthodes de coopération pour les systèmes informatiques dans les environnements GxP réglementés.
+Bien que ces audits réguliers et certifications ne visent pas spécifiquement le respect de la réglementation FDA, leur objectif et leurs objectifs sont similaires à ceux de la rubrique CFR titre 21, partie 11, et servent à garantir la confidentialité, l’intégrité et la disponibilité des données stockées dans les services Cloud de Microsoft. Notre approche de qualification est également basée sur les meilleures pratiques du secteur, y compris les bonnes pratiques en matière de série de bonnes pratiques en matière d’ingénierie pharmaceutique (ISPE) GAMP et de méthodes de coopération pour les systèmes informatiques dans les environnements GxP réglementés.
 
-Les clients peuvent demander l’accès aux rapports de conformité, sous réserve des conditions générales de l’accord de non-divulgation, via leur représentant commercial Microsoft ou via le [portail d’approbation de service](https://aka.ms/stphelp). En outre, les directives de qualification pour Microsoft Azure et Microsoft Office 365 fournissent une explication détaillée de la façon dont les contrôles d’audit Microsoft correspondent aux exigences de la section CFR titre 21 partie 11, des conseils pour la mise en œuvre d’une stratégie de qualification FDA et Description des domaines de responsabilité partagée.
+Les clients peuvent demander l’accès aux rapports de conformité, sous réserve des conditions générales de l’accord de non-divulgation, via leur représentant commercial Microsoft ou via le [portail d’approbation de service](https://aka.ms/stphelp). En outre, les instructions de qualification pour Microsoft Azure et Microsoft Office 365 fournissent une explication détaillée de la façon dont les contrôles d’audit Microsoft correspondent aux exigences de la section CFR titre 21 partie 11, des conseils pour la mise en œuvre d’une stratégie de qualification FDA, ainsi qu’une description des domaines de responsabilité partagée.
 
 Découvrez comment accélérer votre déploiement de la FDA CFR titre 21 : [Télécharger le Guide de qualification de Azure FDA 21](https://go.microsoft.com/fwlink/p/?linkid=2086604)
 
@@ -59,7 +59,7 @@ Bien qu’il n’existe pas de certification pour se conformer au titre CFR 21 p
 
 Les rapports d’audit pour les normes SOC 1 et SOC 2 type 2, ISO/IEC 27001 et ISO/IEC 27018 attestent de l’efficacité des contrôles que Microsoft a mis en œuvre et peuvent aider les clients à se conformer à la norme FDA CFR titre 21 partie 11.
 
-## <a name="frequently-asked-questions"></a>Questions fréquentes (FAQ)
+## <a name="frequently-asked-questions"></a>Foire aux questions
 
 **À qui la norme s'applique-t-elle ?**
 
@@ -93,8 +93,4 @@ Microsoft veille à ce que ses services Cloud d’entreprise respectent les term
 - [Infrastructure de conformité Microsoft Common Controls Hub](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 - [Conditions de Microsoft Online Services](https://aka.ms/Online-Services-Terms)
 - [Microsoft Cloud pour le secteur public](https://aka.ms/govt-cloud)
-- [Conformité du Centre de gestion de la confidentialité Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>Télécharger notre document d’information sur la conformité
-
-Vous souhaitez en savoir plus sur nos démarches concernant la conformité ? Téléchargez notre fichier [PDF](https://download.microsoft.com/download/8/8/D/88DA8B65-8CEE-46A5-8E93-DAFC3699AD06/FDA_Compliance_Backgrounder.pdf) (disponible uniquement en anglais pour le moment).
+- [Conformité sur le site Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)

@@ -1,7 +1,7 @@
 ---
 title: Règlement général sur la protection des données
-description: Conseils techniques de Microsoft concernant le Règlement général sur la protection des données (RGPD)
-keywords: Microsoft 365, Microsoft 365 Éducation, documentation Microsoft 365, RGPD
+description: Découvrez les conseils techniques de Microsoft et trouvez des informations utiles concernant le Règlement général sur la protection des données (RGPD)
+keywords: Microsoft 365, Microsoft 365 Éducation, documentation Microsoft 365, RGPD
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -15,12 +15,13 @@ ms.collection:
 - GDPR
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: 960a09c89c855861e3db0402f40dd558b27527ac
-ms.sourcegitcommit: 6c7f6ef98c321c80a9254c10bbbb917895b5c156
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: fb89a24e48dbdadd9a1af863cb8c44ded46435b1
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "42322553"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44036207"
 ---
 # <a name="general-data-protection-regulation-summary"></a>Sythèse du règlement général sur la protection des données
 
@@ -99,7 +100,7 @@ Vous trouverez ici une série d'articles relatifs à la RGPD. Produits par Micro
 
 **Moyens mis à votre disposition par Microsoft pour vous permettre de répondre aux demandes des personnes concernées ?**
 
-Online Services offre un éventail de fonctionnalités pour vous permettre, en tant que contrôleur, de répondre à une demande d’une personne concernée par les données. Les contrôles administratifs et les services en ligne d’entreprise de Microsoft vous aident à réagir concernant les données personnelles en réponse aux demandes de droits des personnes concernées par les données, ce qui vous permet de repérer, disposer, rectifier, limiter, supprimer et exporter des données personnelles qui résident dans les données gérées par le contrôleur stockées dans le cloud Microsoft. Online Services fournit également les données dans un formulaire lisible par machine si nécessaire.
+Online Services offre un éventail de fonctionnalités pour vous permettre, en tant que contrôleur, de répondre à la demande d’une personne concernée par les données. Les contrôles administratifs et les services en ligne d’entreprise de Microsoft vous aident à réagir concernant les données personnelles en réponse aux demandes de droits des personnes concernées par les données, ce qui vous permet de repérer, disposer, rectifier, limiter, supprimer et exporter des données personnelles qui résident dans les données gérées par le contrôleur stockées dans le cloud Microsoft. Online Services fournit également les données dans un formulaire lisible par machine si nécessaire.
 
 ## <a name="data-protection-impact-assessment"></a>Analyses d’impact sur la protection des données
 
@@ -190,7 +191,7 @@ Microsoft fournit des outils et de la documentation pour vous aider à assumer l
 
 **Quels engagements se trouvent dans les conditions RGPD ?**
 
-Les conditions RGPD de Microsoft reflètent les engagements requis des responsables du traitement à l’article 28. L’article 28 exige que les responsables du traitement s’engagent à :
+Les conditions RGPD de Microsoft reflètent les engagements requis des responsables du traitement à l’article 28. L’article 28 exige que les responsables du traitement s’engagent à :
 
 - N’utiliser que les sous-responsables du traitement avec le consentement du contrôleur et demeurez responsable des sous-responsables du traitement.
 - Traiter les données personnelles uniquement pour les instructions du contrôleur, y compris en relation avec les transferts.
@@ -204,7 +205,7 @@ Les conditions RGPD de Microsoft reflètent les engagements requis des responsab
 
 **Sous quelle base Microsoft facilite-t-il le transfert de données personnelles en dehors de l’UE ?**
 
-Microsoft utilise depuis longtemps les clauses contractuelles standard (également appelées clauses de modèle) comme base de transfert de données pour ses services en ligne d'entreprise. Les clauses contractuelles standard sont des termes standard fournis par la Commission européenne, qui peuvent être utilisés pour transférer des données en dehors de l’espace économique européen de façon conforme. Microsoft a incorporé les clauses contractuelles standard dans tous nos contrats de licence en volume via les [Conditions d’utilisation des services en ligne](http://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=46). L’article 29 a détecté que la mise en place des clauses contractuelles standard par Microsoft est conforme. Lorsque le bouclier de protection des données UE-US est devenu disponible, Microsoft a été la première entreprise à certifier. Pour plus d’informations, consultez [Certification Microsoft du bouclier de protection des données](https://www.privacyshield.gov/participant?id=a2zt0000000KzNaAAK&status=Active)et lisez les [Conditions d’utilisation des services en ligne](http://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=46). Le bouclier de protection des données EU-US permet aux clients qui souhaitent transférer leurs données vers les États-Unis de façon cohérente avec leurs obligations en matière de protection des données.
+Microsoft utilise depuis longtemps les clauses contractuelles standard (également appelées clauses de modèle) comme base de transfert de données pour ses services en ligne d'entreprise. Les clauses contractuelles standard sont des termes standard fournis par la Commission européenne, qui peuvent être utilisés pour transférer des données en dehors de l’espace économique européen de façon conforme. Microsoft a incorporé les clauses contractuelles standard dans tous nos contrats de licence en volume via les [Conditions d’utilisation des services en ligne](http://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=46). L’article 29 a détecté que la mise en place des clauses contractuelles standard par Microsoft est conforme. Lorsque le bouclier de protection des données UE-US est devenu disponible, Microsoft a été la première entreprise à certifier. Pour plus d’informations, consultez [Certification Microsoft du bouclier de protection des données](https://www.privacyshield.gov/participant?id=a2zt0000000KzNaAAK&status=Active)et lisez les [Conditions d’utilisation des services en ligne](http://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=46). Le bouclier de protection des données EU-US permet aux clients qui souhaitent transférer leurs données vers les États-Unis de façon cohérente avec leurs obligations en matière de protection des données.
 
 **Quelles sont les autres offres de conformité Microsoft ?**
 
@@ -249,7 +250,7 @@ Oui, le RGPD s’applique aux contrôleurs et responsables du traitement. Les co
 
 **Quel est le montant des amendes auxquelles les entreprises s’exposent en cas de non-conformité ?**
 
-Les entreprises peuvent se voir infliger des amendes allant jusqu'à 20 millions d'euros ou 4 % du chiffre d'affaires mondial annuel, le montant le plus élevé étant retenu, pour non-respect de certaines exigences du RGPD. D’autres recours peuvent augmenter votre risque si vous ne parvenez pas à respecter les exigences du RGPD.
+Les entreprises peuvent se voir infliger des amendes allant jusqu'à &euro;20 millions d'euros ou 4 % du chiffre d'affaires mondial annuel, le montant le plus élevé étant retenu, pour non-respect de certaines exigences du RGPD. D’autres recours peuvent augmenter votre risque si vous ne parvenez pas à respecter les exigences du RGPD.
 
 **Mon entreprise doit-elle nommer un délégué à la protection des données (DPO) ?**
 
@@ -312,9 +313,9 @@ Le chiffrement est identifié dans le RGPD comme mesure de protection qui rend l
 
 **Comment le RGPD modifie-t-il la réponse d’une organisation aux violations de données personnelles ?**
 
-Le RGPD modifie les exigences en matière de protection des données et impose des obligations plus strictes aux responsables de données et aux contrôleurs en relation avec les violations de données personnelles. Dans le cadre du nouveau règlement, le responsable du traitement doit avertir le contrôleur de données d’une violation de données personnelles, une fois qu’il a pris connaissance de celle-ci, sans délai injustifié. Une fois qu'il a connaissance d'une violation de données personnelles, le contrôleur doit en informer l'autorité compétente en matière de protection des données dans un délai de 72 heures. Si la violation risque de générer un risque élevé pour les droits et libertés de personnes, les contrôleurs devront également avertir les personnes concernées sans délai injustifié. Des conseils supplémentaires sur ce sujet sont mis au point par l’article 29 de l’UE.
+Le RGPD modifie les exigences en matière de protection des données et impose des obligations plus strictes aux responsables de données et aux contrôleurs en relation avec les violations de données personnelles. Dans le cadre du nouveau règlement, le responsable du traitement doit avertir le contrôleur de données d’une violation de données personnelles, une fois qu’il a pris connaissance de celle-ci, sans délai injustifié. Une fois qu'il a connaissance d'une violation de données personnelles, le contrôleur doit en informer l'autorité compétente en matière de protection des données dans un délai de 72 heures. Si la violation risque de générer un risque élevé pour les droits et libertés de personnes, les contrôleurs devront également avertir les personnes concernées sans délai injustifié. Des conseils supplémentaires sur ce sujet sont mis au point par l’article 29 de l’UE.
 
-Les produits et services Microsoft (par exemple, Azure, Dynamics 365, Enterprise Mobility + Security, Microsoft Office 365 et Windows 10) intègrent actuellement des solutions pour vous aider à détecter et évaluer les menaces et violations à la sécurité et à respecter la notification de violation du RGPD résultant.
+Les produits et services Microsoft (par exemple, Azure, Dynamics 365, Enterprise Mobility + Security, Microsoft Office 365 et Windows 10) intègrent actuellement des solutions pour vous aider à détecter et évaluer les menaces et violations à la sécurité et à respecter la notification de violation du RGPD résultant.
 
 ## <a name="additional-resources"></a>Ressources supplémentaires
 

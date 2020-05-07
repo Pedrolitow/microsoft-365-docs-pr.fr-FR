@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 3142ce35cdc55e32cf5f40042967ba60de789dcc
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: cbf118d918dd5c3bc922fbea157fb56a709fad66
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601881"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44065799"
 ---
 # <a name="new-zealand-government-cloud-computing-security-and-privacy-considerations"></a>Considérations relatives à la sécurité et à la confidentialité du Cloud Government de la Nouvelle-Zélande
 
@@ -33,9 +33,7 @@ Pour aider les agences gouvernementales à mener une diligence cohérente et fia
 
 Considérations relatives à la sécurité et à la confidentialité de Microsoft et de la Nouvelle-Zélande
 
-Pour aider les agences à effectuer leur analyse et leur évaluation des services Cloud d’entreprise Microsoft, Microsoft New Zealand a créé une série de documents illustrant la façon dont ses services Cloud d’entreprise répondent aux questions exposées dans le « Cloud Computing ISPC » en les liant aux normes auxquelles les services Cloud Microsoft sont certifiés. Ces certifications sont les principaux facteurs de la façon dont Microsoft garantit aux clients du secteur public et privé que ses services Cloud sont conçus, créés et exploités afin d’atténuer efficacement les risques de confidentialité et de sécurité et de résoudre les problèmes de souveraineté des données.
-
-Découvrez les avantages de NZ CC Framework sur le Cloud Microsoft : [Télécharger la documentation de la version de la structure CC de NZ](https://aka.ms/nzcc-framework-backgrounder)
+Pour aider les agences à effectuer leur analyse et leur évaluation des services Cloud d’entreprise Microsoft, Microsoft New Zealand a créé une série de documents illustrant la façon dont ses services Cloud d’entreprise répondent aux questions définies dans le « Cloud Computing ISPC » en les associant aux normes auxquelles les services Cloud de Microsoft sont certifiés. Ces certifications sont les principaux facteurs de la façon dont Microsoft garantit aux clients du secteur public et privé que ses services Cloud sont conçus, créés et exploités afin d’atténuer efficacement les risques de confidentialité et de sécurité et de résoudre les problèmes de souveraineté des données.
 
 Découvrez comment accélérer le déploiement de l’infrastructure de la version de CC de votre application avec notre plan de sécurité et de conformité Azure : [Télécharger la réponse Azure vers la version de l’infrastructure de CC](https://gallery.technet.microsoft.com/Response-to-GCIO-Cloud-e117bbb9) .
 
@@ -48,7 +46,7 @@ Découvrez comment accélérer le déploiement de l’infrastructure de la versi
 - [Office 365](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
 - Exchange Online, SharePoint Online et Skype entreprise online. Microsoft NZ a collaboré avec l’équipe GCIO pour développer une architecture de référence pour l’intégration d’Exchange Online et du courrier électronique décrit dans le livre blanc [Office 365 : intégration de l’architecture de messagerie et](https://download.microsoft.com/download/8/5/9/859CDCEE-D293-47D8-9B6A-670B108B48E1/Microsoft_Office_365_white_paper_EN_US.pdf) de l’architecture de référence
 
-## <a name="frequently-asked-questions"></a>Questions fréquentes (FAQ)
+## <a name="frequently-asked-questions"></a>Forum Aux Questions
 
 **À qui s’applique l’infrastructure ?**
 
@@ -76,7 +74,3 @@ Si votre Agence est tenue de procéder à la certification et à l’accréditat
 - [Intune](https://aka.ms/Intune-NZ-response)
 - [Office 365](https://aka.ms/O365-NZ-Response)
 - [Power BI](https://download.microsoft.com/download/5/1/7/51726B9B-2E76-49C4-9D4F-A36BF025CB93/Response-to-GCIO-105-questions-Power-BI.pdf)
-
-## <a name="download-the-offering-backgrounder"></a>Télécharger notre document d’information sur la conformité
-
-Vous souhaitez en savoir plus sur nos démarches concernant la conformité ? Téléchargez notre fichier [PDF](https://download.microsoft.com/download/6/6/4/664E4B6F-15C6-421E-8F74-3FA468587A47/NZ_CC_Compliance_Backgrounder.pdf) (disponible uniquement en anglais pour le moment).

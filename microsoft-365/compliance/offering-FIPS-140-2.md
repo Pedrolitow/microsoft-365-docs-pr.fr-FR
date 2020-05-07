@@ -14,18 +14,18 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 1a1e8b19ff214d29dc8a309cce4f79de92cf8155
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 8288438eed0f658d8058125bc90315e9a2626c08
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42071291"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44066579"
 ---
 # <a name="federal-information-processing-standard-fips-publication-140-2"></a>Publication 140-2 (Federal Information Processing Standard)
 
 ## <a name="fips-140-2-standard-overview"></a>Vue d’ensemble de la norme FIPS 140-2
 
-La publication 140-2 FIPS (Federal Information Processing Standard) est une norme gouvernementale américaine qui définit les exigences minimales de sécurité pour les modules de chiffrement dans les produits informatiques, comme défini dans la section 5131 des informations. Loi sur la gestion de la technologie de 1996.
+La publication 140-2 FIPS (Federal Information Processing Standard) est une norme de gouvernement américain qui définit les exigences minimales de sécurité pour les modules de chiffrement dans les produits informatiques, comme défini dans la section 5131 de la réforme de l’information sur la gestion des technologies de l’information de 1996.
 
 Le [programme de validation du module de chiffrement](https://csrc.nist.gov/Projects/cryptographic-module-validation-program) (CMVp), un effort commun de l’Institut NIST (National Institute of Standards and Technology) et le Centre canadien pour la sécurité informatique (CCCS), valide les modules de chiffrement aux *exigences de sécurité pour les modules de chiffrement* standard (par exemple, FIPS 140-2) et les normes de chiffrement FIPS associées. Les exigences de sécurité FIPS 140-2 couvrent 11 domaines liés à la conception et l’implémentation d’un module de chiffrement. Le laboratoire NIST Information Technology opère un programme connexe qui valide les algorithmes de chiffrement approuvés FIPS dans le module.
 
@@ -43,7 +43,7 @@ Alors que le Guide d’implémentation actuel de CMVP FIPS 140-2 exclut une vali
 - [Dynamics 365 et Dynamics 365 Government](https://docs.microsoft.com/microsoft-365/compliance/office-365-encryption-in-microsoft-dynamics-365)
 - [Office 365, Office 365 U.S. Government, Office 365 U.S. Government Defense](https://docs.microsoft.com/microsoft-365/compliance/office-365-encryption-risks-and-protections)
 
-## <a name="frequently-asked-questions"></a>Questions fréquemment posées
+## <a name="frequently-asked-questions"></a>Forum Aux Questions
 
 **Quelle est la différence entre « FIPS 140 Valided » et « FIPS 140 compatible » ?**
 
@@ -61,7 +61,7 @@ Microsoft valide les modules de chiffrement sur un échantillon représentatif d
 
 Si vous devez utiliser des modules de chiffrement validés via FIPS 140-2, vérifiez que la version que vous utilisez apparaît dans la liste validation. Le CMVP et Microsoft gèrent une liste de modules de chiffrement validés, organisés par version de produit, ainsi que des instructions pour l’identification des modules installés sur un système Windows. Pour plus d’informations sur la configuration des systèmes de façon à ce qu’ils soient conformes, consultez le [contenu Windows et Windows Server FIPS 140-2](https://aka.ms/AA6ehud).
 
-**Qu’est-ce que le terme « en mode FIPS » signifie sur un certificat ?**
+**Qu’est-ce que’quand fonctionne en mode FIPS’signifie sur un certificat ?**
 
 Ce inconvénient informe le lecteur que les règles de configuration et de sécurité requises doivent être suivies pour utiliser le module de chiffrement de manière cohérente avec sa stratégie de sécurité 140-2 FIPS. Chaque module possède sa propre stratégie de sécurité, une spécification précise des règles de sécurité sous lesquelles elle fonctionne, et utilise des algorithmes de chiffrement approuvés, la gestion de clés de chiffrement et les techniques d’authentification. Les règles de sécurité sont définies dans la stratégie de sécurité pour chaque module. Pour plus d’informations, notamment des liens vers la stratégie de sécurité pour chaque module validé via le CMVP, voir le [contenu Windows et Windows Server FIPS 140-2](https://aka.ms/AA6ehud).
 
@@ -87,7 +87,3 @@ Il s’agit de deux normes de sécurité distinctes avec des objectifs différen
 - [Programme de validation du module de chiffrement NIST](https://csrc.nist.gov/groups/STM/cmvp/index.html)
 - [Windows, Windows Server et FIPS 140-2](https://docs.microsoft.com/windows/security/threat-protection/fips-140-validation)
 - [Conformité sur le site Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>Télécharger notre document d’information sur la conformité
-
-Vous souhaitez en savoir plus sur nos démarches concernant la conformité ? Téléchargez notre fichier [PDF](https://download.microsoft.com/download/B/7/2/B7226B91-1A56-41E4-AC01-43FCFEE50B7F/FIPS_Compliance_Backgrounder.pdf) (disponible uniquement en anglais pour le moment).

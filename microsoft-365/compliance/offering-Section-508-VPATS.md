@@ -14,18 +14,18 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: dc5e8312f219176dbed7a84072c90e0ca165cd11
-ms.sourcegitcommit: 8876c216954b94adce9cdf493c49bd5a10190a3a
+ms.openlocfilehash: 7f61248fc6e31d0982eedd153aa71ae3eed71de5
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42228520"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44066297"
 ---
 # <a name="us-section-508"></a>Section américaine 508
 
 ## <a name="about-us-section-508"></a>À propos de la section américaine 508
 
-Le Congrès des États-Unis a modifié le service de réhabilitation en 1998 et 2000 pour que les agences fédérales aient besoin d’avoir leurs produits électroniques et informatiques (EIT), tels que les logiciels, le matériel, le contenu électronique et la documentation de support, accessibles à personnes présentant un handicap. La section 508 de la loi américaine de réhabilitation du 1973 (29 US code § 794D), telle que modifiée, oblige les agences fédérales à prendre, maintenir et utiliser EIT de manière à garantir aux employés fédéraux un accès comparable à, et à l’utilisation de données et EIT par rapport aux autres employés fédéraux.
+Le Congrès des États-Unis a modifié le service de réhabilitation des 1998 et 2000 pour que les agences fédérales aient besoin de leurs produits électroniques et informatiques (logiciels, matériel, contenu électronique et documentation de support technique) accessibles aux personnes présentant un handicap. La section 508 de la loi américaine de réhabilitation du 1973 (29 US code § 794D), telle que modifiée, oblige les agences fédérales à prendre, maintenir et utiliser EIT de manière à garantir aux employés fédéraux un accès comparable aux données et à l’utilisation des données et des EIT par rapport à d’autres employés fédéraux.
 
 Microsoft est un fournisseur de services logiciels et de service Cloud important pour les gouvernements des États-Unis et des gouvernements des États-Unis.  Pour aider les clients gouvernementaux à prendre des décisions d’approvisionnement, Microsoft publie des rapports de conformité d’accessibilité qui décrivent dans quelle mesure nos produits et services prennent en charge les critères de la section 508.  Ces informations peuvent aider les clients Microsoft à déterminer si un produit ou service spécifique répondra à leurs besoins spécifiques.
 
@@ -54,7 +54,3 @@ Trouvez des [rapports de conformité](https://cloudblogs.microsoft.com/industry-
 - [Answer Desk Accessibilité Entreprise](https://go.microsoft.com/fwlink/p/?linkid=2050890) : prise en charge dédiée pour les clients professionnels ayant des questions d’accessibilité sur nos produits et services ou la conformité.
 - [Programme testeur approuvé DHS](https://go.microsoft.com/fwlink/?linkid=2052171): Obtenez des informations sur le programme de test approuvé du ministère américain de la sécurité nationale (DHS), dont Microsoft participe.
 - [Conformité sur le site Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>Télécharger notre document d’information sur la conformité
-
-Vous souhaitez en savoir plus sur nos démarches concernant la conformité ? Téléchargez notre fichier [PDF](https://download.microsoft.com/download/3/E/1/3E10CC43-036D-4DB5-ACBA-8665A752C8F7/Accessibility-Compliance.pdf) (disponible uniquement en anglais pour le moment).

@@ -14,24 +14,24 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 292e565064a91d2256dc62831dc1f0957a9b96eb
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 3207d0d29c837064ac5c27cc7022a8d0d7e63a22
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601871"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44065789"
 ---
 # <a name="police-assured-secure-facilities-pasf-united-kingdom"></a>Installations sécurisées de police (PASF)
 
 ## <a name="about-pasf"></a>À propos de PASF
 
-L’équipe nationale de gestion des risques liés aux informations sur l’information (NPIRMT) du Royaume-Uni (ministère chargé de la sécurité, de l’immigration et de l’ordre) est chargée de s’assurer que le stockage et l’accès aux informations de police répondent à ses normes. Par le biais de la [stratégie nationale de gestion des risques liés aux informations](http://library.college.police.uk/docs/APP-National-Policing-Information-Risk-Management-Policy.pdf), elle définit les normes et contrôles centraux pour les organismes d’application de la Loi sur le Royaume-Uni qui évaluent le risque de transfert de systèmes d’information de police vers le nuage. La stratégie exige que tous les services de police nationaux au Royaume-Uni qui stockent et traitent de manière protectrice ou d’autres informations d’application de la loi sensibles effectuent une étape supplémentaire dans leur évaluation des risques : une inspection physique du centre de données où leurs données seront enregistrement. L’évaluation réussie d’un centre de contenu détermine qu’il s’agit d’PASF.
+L’équipe nationale de gestion des risques liés aux informations sur l’information (NPIRMT) du Royaume-Uni (ministère chargé de la sécurité, de l’immigration et de l’ordre) est chargée de s’assurer que le stockage et l’accès aux informations de police répondent à ses normes. Par le biais de la [stratégie nationale de gestion des risques liés aux informations](http://library.college.police.uk/docs/APP-National-Policing-Information-Risk-Management-Policy.pdf), elle définit les normes et contrôles centraux pour les organismes d’application de la Loi sur le Royaume-Uni qui évaluent le risque de transfert de systèmes d’information de police vers le nuage. La stratégie exige que tous les services de police nationaux au Royaume-Uni qui stockent et traitent de manière protectrice ou d’autres informations d’application de la loi sensibles effectuent une étape supplémentaire dans l’évaluation des risques : une inspection physique du centre de données où les données sont stockées. L’évaluation réussie d’un centre de contenu détermine qu’il s’agit d’PASF.
 
-Pour aider les services de police locaux avec leur révision de la diligence, l’NPIRMT a effectué un audit PASF des centres de calcul Azure et a déterminé qu’ils étaient conformes. Les services de police locaux peuvent utiliser cette évaluation NPIRMT pour prendre en charge leur propre examen. À l’aide des directives de stratégie NPIRMT, le propriétaire des risques des informations de chaque service de police est responsable de l’évaluation de la pertinence d’un centre de données individuel dans le contexte de son application particulière, qu’il soumet ensuite à l’NPIRMT pour approbation. .
+Pour aider les services de police locaux avec leur révision de la diligence, l’NPIRMT a effectué un audit PASF des centres de calcul Azure et a déterminé qu’ils étaient conformes. Les services de police locaux peuvent utiliser cette évaluation NPIRMT pour prendre en charge leur propre examen. À l’aide des directives de stratégie NPIRMT, le propriétaire des risques de l’information principal pour chaque service de police est responsable de l’évaluation de l’aptitude d’un centre de données individuel dans le contexte de son application particulière, qu’il soumet ensuite à l’NPIRMT pour approbation.
 
 ## <a name="microsoft-and-pasf"></a>Microsoft et PASF
 
-L’équipe nationale de gestion des risques des informations sur l’information (NPIRMT) pour le Royaume-Uni a effectué une évaluation complète de la sécurité de l’infrastructure physique des centres de données Microsoft Azure au Royaume-Uni et a conclu qu’elle est conforme aux exigences de NPIRMT sans toutes les actions de réparation. Cet audit physique réussi signifie que les services Cloud d’entreprise de Microsoft peuvent désormais prendre en charge les forces de police au Royaume-Uni, qui nécessitent des installations de sécurité conformes à la police (PASF) pour traiter et stocker leurs données dans le Cloud.
+L’équipe nationale de gestion des risques des informations sur l’information (NPIRMT) pour le Royaume-Uni a effectué une évaluation complète de la sécurité de l’infrastructure physique des centres de données Microsoft Azure au Royaume-Uni et a conclu qu’elle est conforme aux exigences de NPIRMT sans aucune action de réparation. Cet audit physique réussi signifie que les services Cloud d’entreprise de Microsoft peuvent désormais prendre en charge les forces de police au Royaume-Uni, qui nécessitent des installations de sécurité conformes à la police (PASF) pour traiter et stocker leurs données dans le Cloud.
 
 Microsoft prend une approche holistique de la sécurité en profondeur. Nos centres de connaissances britanniques (par exemple, tous les centres de documents Microsoft) sont certifiés pour respecter le [portefeuille le plus complet](https://azure.microsoft.com/overview/trusted-cloud/) de normes reconnues au niveau international de n’importe quel fournisseur de services Cloud et satisfont régulièrement à ces exigences. Cela inclut la certification pour notre implémentation des [normes ISO/iec 27001 de gestion](offering-iso-27001.md) de la sécurité des informations et le [Code de la norme iso/IEC 27018 pour la protection des données personnelles dans le Cloud](offering-iso-27018.md).
 
@@ -51,7 +51,7 @@ Le NPIRMT audite un centre de gestion des datacenters chaque année, en parcoura
 
 - [Public officiel Azure UK](https://servicetrust.microsoft.com/ViewPage/UKBlueprints): aide les clients britanniques à accélérer le déploiement d’IaaS et de services PaaS de charges de travail conformes dans Azure.
 
-## <a name="frequently-asked-questions"></a>Questions fréquentes (FAQ)
+## <a name="frequently-asked-questions"></a>Forum Aux Questions
 
 **Les services de police au Royaume-Uni peuvent-ils utiliser l’évaluation Azure PASF dans le cadre de leurs évaluations des risques propres ?**
 
@@ -63,8 +63,4 @@ Oui. L’application de la loi peut utiliser l’évaluation NPIRMT d’Azure po
 - [Services Azure, locaux et sécurité physique](https://azure.microsoft.com/blog/azure-layered-approach-to-physical-security/)
 - [Normes ISM Microsoft et ISO/IEC 27001:2013](offering-iso-27001.md)
 - [Conditions de Microsoft Online Services](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31)
-- [Conformité du Centre de gestion de la confidentialité Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>Télécharger notre document d’information sur la conformité
-
-Vous souhaitez en savoir plus sur nos démarches concernant la conformité ? Téléchargez notre fichier [PDF](https://download.microsoft.com/download/C/9/7/C97C7B62-F582-4C25-8ABB-80DFB87628CA/PASF-Compliance.pdf) (disponible uniquement en anglais pour le moment).
+- [Conformité sur le site Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)

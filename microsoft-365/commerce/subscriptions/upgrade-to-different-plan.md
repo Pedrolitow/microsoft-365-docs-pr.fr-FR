@@ -23,15 +23,21 @@ search.appverid:
 - BEA160
 - GEA150
 description: Découvrez comment effectuer une mise à niveau vers un nouvel abonnement.
-monikerRange: o365-worldwide
-ms.openlocfilehash: 7739da2d56fa0d37dd64b22b2959ad6dca198e75
-ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
+ms.openlocfilehash: b0f79233e6a05c2838026093bb0027cd4789b01b
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44046215"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44141065"
 ---
-# <a name="upgrade-to-a-different-plan"></a>Opter pour un abonnement différent 
+# <a name="upgrade-to-a-different-plan"></a>Opter pour un abonnement différent
+
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> Le centre d’administration change. Si votre expérience ne correspond pas aux détails présentés ici, reportez-vous [à la rubrique à propos du nouveau centre d’administration Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+
+::: moniker-end
 
 Lorsque votre entreprise change ou que vous avez besoin de davantage de fonctionnalités, vous pouvez mettre à niveau les plans. Pour ce faire, la méthode la plus simple consiste à utiliser l’onglet **mise à niveau** dans le centre d’administration. Toutefois, l’utilisation de l’onglet **mise à niveau** n’est pas prise en charge dans toutes les situations. Dans certains cas, vous pouvez modifier les plans manuellement.
 

@@ -14,24 +14,24 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 045f6c177acd3f5feb0645fb56d25426632638e7
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: c19b10b436d40364d15ce6bf8569d18b0a0e7b7b
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602191"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44065729"
 ---
 # <a name="international-traffic-in-arms-regulations-itar"></a>Trafic international en matière de réglementations sur les armes (ITAR)
 
 ## <a name="itar-overview"></a>Vue d’ensemble de ITAR
 
-Le ministère américain de l’État est responsable de la gestion de l’exportation et de l’importation temporaire des Articles de défense (c.-à-d. les données d’éléments ou techniques désignées dans la liste USA munitions, comme décrit dans le titre 22 CFR 121,1) et qui sont régis par le contrôle d’exportation des bras ( Titre 22 USC 2778) et le trafic international dans les réglementations sur les armes (ITAR) (titre 22 CFR 120 – 130). La direction des contrôles commerciaux de la défense (DDTC) est responsable de la gestion des entités régies par ces programmes.
+Le ministère américain de l’État est responsable de la gestion de l’exportation et de l’importation temporaire des Articles de défense (c.-à-d. les données d’éléments ou techniques désignées dans la liste USA munitions, comme décrit dans le titre 22 CFR 121,1) et qui sont régis par le contrôle d’exportation des bras (titre 22 USC 2778) et le trafic international des ITAR (titre 22 CFR La direction des contrôles commerciaux de la défense (DDTC) est responsable de la gestion des entités régies par ces programmes.
 
 ## <a name="microsoft-and-itar"></a>Microsoft et ITAR
 
 Microsoft offre des services Cloud ou des fonctionnalités de service qui peuvent prendre en charge les clients ayant des obligations ITAR. S’il n’existe pas de certification de conformité pour le ITAR, Microsoft agit et a conçu des services dans l’étendue afin de pouvoir prendre en charge le programme d’obligations ITAR et de conformité d’un client.  
   
-Microsoft Azure Government et Microsoft Office 365 le gouvernement américain pour la défense prennent en charge les clients disposant de données soumises au ITAR via des engagements contractuels supplémentaires pour les clients concernant l’emplacement des données stockées, ainsi que des limitations sur le possibilité d’accéder à ces données à des personnes américaines. Microsoft fournit ces assurances pour les composants opérationnels et d’infrastructure de ces services Cloud dans le secteur public, mais les clients sont responsables de la protection et de l’architecture de leurs applications dans leurs environnements.  
+Microsoft Azure Government et Microsoft Office 365 le gouvernement américain pour la défense prennent en charge les clients disposant de données soumises au ITAR par le biais d’engagements contractuels supplémentaires aux clients concernant l’emplacement des données stockées, ainsi que des limitations quant à la possibilité d’accéder à ces données à des personnes américaines. Microsoft fournit ces assurances pour les composants opérationnels et d’infrastructure de ces services Cloud dans le secteur public, mais les clients sont responsables de la protection et de l’architecture de leurs applications dans leurs environnements.  
   
 Les clients doivent signer des accords supplémentaires informant officiellement Microsoft de leur intention de stocker des données contrôlées par ITAR, afin que Microsoft puisse se conformer aux responsabilités à la fois à nos clients et au gouvernement américain.  
   
@@ -44,7 +44,7 @@ Les clients cherchant à héberger des données réglementées par ITAR doivent 
 - [Public Azure](https://aka.ms/AzureCompliance)
 - [Office 365 U.S. Government Defense](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
 
-## <a name="frequently-asked-questions"></a>Questions fréquentes (FAQ)
+## <a name="frequently-asked-questions"></a>Forum Aux Questions
 
 **Où puis-je demander des informations de conformité ?**
 
@@ -58,7 +58,3 @@ Contactez votre responsable de compte Microsoft.
 - [Public Azure](https://azure.microsoft.com/features/gov/)
 - [Office 365 gouvernement américain](https://products.office.com/government/office-365-web-services-for-government)
 - [Conformité sur le site Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>Télécharger notre document d’information sur la conformité
-
-Vous souhaitez en savoir plus sur nos démarches concernant la conformité ? Téléchargez notre fichier [PDF](https://download.microsoft.com/download/A/7/4/A74AFF71-6EAC-4CFD-A09B-51852E1A1200/ITAR-Compliance.pdf) (disponible uniquement en anglais pour le moment).

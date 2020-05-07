@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 989d30a53b767bc8ec757c92e72198e3900bcfeb
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.openlocfilehash: 70e36d4f11f7fc1a5870f41a32351cf7078bdc68
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43943663"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44065769"
 ---
 # <a name="russian-personal-data-localization-requirements"></a>Exigences en russe de localisation des données personnelles
 
@@ -71,5 +71,5 @@ Pour des questions techniques et de facturation, reportez-vous aux ressources de
 - **Support en ligne**: soumettre des requêtes via [Power Platform Support](https://docs.microsoft.com/power-platform/admin/get-help-support)
 
 > [!NOTE]
-> <sup>1</sup> numéro de loi fédérale. 242-FZ (édition datée du 12.31.2014) "sur la saisie d’amendements dans certains actes législatifs de la Fédération de Russie concernant la clarification de la procédure de traitement des données personnelles dans les réseaux d’information et de télécommunications" datée du 07.21.2014 <br>
+> <sup>1</sup> numéro de loi fédérale. 242-FZ (12.31.2014 version datée)» concernant la saisie de modifications apportées à certains actes législatifs de la Fédération de Russie concernant la clarification de la procédure de traitement des données personnelles dans les réseaux d’information et de télécommunications (07.21.2014) <br>
 > <sup>2</sup> n ° de loi fédérale 152-FZ sur les données personnelles à 07,27. 2006<br>
