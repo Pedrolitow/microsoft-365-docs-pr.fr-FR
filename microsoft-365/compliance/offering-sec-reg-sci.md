@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 4ad74c8d4ec71587f88a80c3ee109500e230be35
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: e2b314934a51c16ab4e907b7d9f6208e7de21641
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42071221"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44065709"
 ---
 # <a name="securities-and-exchange-commission-regulation-systems-compliance-and-integrity-sci"></a>Securities and Exchange Commission : réglementation sur la conformité et l’intégrité des systèmes (SIC)
 
@@ -54,7 +54,7 @@ Ce document fournit une liste de contrôle approfondie des zones ciblées du SIC
 - [Conception d’applications à haut niveau de disponibilité](https://docs.microsoft.com/azure/storage/common/storage-designing-ha-apps-with-ragrs): les développeurs peuvent s’assurer que leurs applications de stockage Azure sont hautement disponibles.
 - [Guide d'évaluation des risques et de la conformité](https://aka.ms/RiskGovernanceGuide): créez un modèle de gouvernance pour l'évaluation des risques des services de cloud computing Microsoft et la notification aux autorités de régulation.
 
-## <a name="frequently-asked-questions"></a>Questions fréquemment posées
+## <a name="frequently-asked-questions"></a>Forum Aux Questions
 
 **Que signifie les responsabilités partagées lors de l’utilisation de la technologie Cloud ?**
 
@@ -62,7 +62,7 @@ Ce document fournit une liste de contrôle approfondie des zones ciblées du SIC
 
 **Quels établissements financiers peuvent tirer parti d’Azure pour répondre aux exigences en matière de réglementation du SIC ?**
 
-Les organismes financiers ou les entités SCI, soumis à cette réglementation, peuvent déployer Azure. Le SEC indique que son règlement s’applique aux «organisations d’autoréglementation (SROs), y compris aux échanges boursiers, aux agences de compensation enregistrées, FINRA, et aux systèmes d’échange MSRB, alternatifs (ATSs), que les stocks de commerce et de non-NMS dépassant le montant spécifié. seuils de volume, disséminateurs de données de marché consolidées (planification de processeurs) et certaines agences de compensation exonérées.
+Les organismes financiers ou les entités SCI, soumis à cette réglementation, peuvent déployer Azure. Le SEC indique que son règlement s’applique aux «organisations d’autoréglementation (SROs), y compris les échanges de stocks et d’options, les agences de compensation inscrites, les FINRA et les MSRB, les systèmes de commerce alternatifs (ATSs), les stocks de services de région commerciale et de non-NMS qui dépassent les seuils de volume spécifiés, les disséminateurs de données
 
 ## <a name="resources"></a>Ressources
 
@@ -74,7 +74,3 @@ Les organismes financiers ou les entités SCI, soumis à cette réglementation, 
 - [Services financiers Microsoft](https://aka.ms/FinServ-Compliance)
 - [Règles Microsoft et SEC 17A -4](offering-SEC-17a-4.md)
 - [Conformité sur le site Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>Télécharger notre document d’information sur la conformité
-
-Vous souhaitez en savoir plus sur nos démarches concernant la conformité ? Téléchargez notre fichier [PDF](https://download.microsoft.com/download/8/1/a/81aa04eb-3c1f-4c1a-ba7d-9d30032acc52/SEC_Reg_SCI-Compliance.pdf) (disponible uniquement en anglais pour le moment).

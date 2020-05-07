@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 85fa3c8a8e8ac2dda725227235512385bf991c12
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 334e93a009e69b8c5ec6ec74edb486d0e2fd3dbb
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44036353"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44065949"
 ---
 # <a name="payment-card-industry-pci-data-security-standard-dss"></a>Norme de sécurité des données (DSS) d’industrie de carte de paiement (PCI)
 
@@ -101,7 +101,3 @@ Pour l’instant, seuls les fichiers et documents téléchargés sur OneDrive En
 - [Matrice de responsabilités PCI DSS 3.2.1 Azure](https://aka.ms/pciresponsibilitymatrix)
 - [Guide de référence rapide PCI DSS](https://www.pcisecuritystandards.org/documents/PCISSC%20QRG%20August%202014%20-print.pdf)
 - [Conformité sur le site Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>Télécharger notre document d’information sur la conformité
-
-Vous souhaitez en savoir plus sur nos démarches concernant la conformité ? Téléchargez notre fichier [PDF](https://download.microsoft.com/download/3/7/7/377F1BBC-37D5-4677-AB4A-7C01D089CA67/PCI-DSS-Compliance.pdf) (disponible uniquement en anglais pour le moment).

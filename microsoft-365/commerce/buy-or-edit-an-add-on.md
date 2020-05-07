@@ -22,14 +22,21 @@ search.appverid:
 ms.assetid: 4e7b57d6-b93b-457d-aecd-0ea58bff07a6
 description: Découvrez comment acheter un module complémentaire pour ajouter des fonctionnalités supplémentaires à votre abonnement Microsoft 365 pour les entreprises. Vous pouvez également mettre à jour et supprimer un module complémentaire.
 ms.custom: okr_SMB
-ms.openlocfilehash: 801da522c9fea9efcc4d3d4a0285a6ffcb5adc0b
-ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
+ms.openlocfilehash: 60bc63d4db84667f00ab0bde95e8541f45a38df7
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44045787"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44141289"
 ---
 # <a name="buy-or-edit-an-add-on"></a>Acheter ou modifier un composant additionnel
+
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> Le centre d’administration change. Si votre expérience ne correspond pas aux détails présentés ici, reportez-vous [à la rubrique à propos du nouveau centre d’administration Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+
+::: moniker-end
 
 Plusieurs des offres Microsoft 365 pour les entreprises ont des modules complémentaires que vous pouvez acheter pour votre abonnement. Un module complémentaire apporte des fonctionnalités supplémentaires à l'abonnement pour lequel vous l'achetez.
 

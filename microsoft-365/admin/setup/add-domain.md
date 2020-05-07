@@ -25,14 +25,21 @@ search.appverid:
 - MOE150
 ms.assetid: 6383f56d-3d09-4dcb-9b41-b5f5a5efd611
 description: Ajoutez votre domaine à Office 365 dans le centre d’administration Microsoft 365 en ajoutant un enregistrement DNS au niveau de votre hôte DNS. L’Assistant installation vous guide tout au long du processus.
-ms.openlocfilehash: a77526efc526073e17b535612213202ad22d5657
-ms.sourcegitcommit: 72e43b9bf85dbf8f5cf2040ea6a4750d6dc867c9
+ms.openlocfilehash: bab4da6e4a8191d91ccdd38dd54f62f4d790c3b8
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "43800022"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44140774"
 ---
 # <a name="add-a-domain-to-office-365"></a>Ajouter un domaine à Office 365
+
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> Le centre d’administration change. Si votre expérience ne correspond pas aux détails présentés ici, reportez-vous [à la rubrique à propos du nouveau centre d’administration Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+
+::: moniker-end
 
  **[Consultez les Forums aux questions sur les domaines](domains-faq.md)** si vous ne trouvez pas ce que vous recherchez. 
   
@@ -94,7 +101,7 @@ ms.locfileid: "43800022"
   
     Si le portail ne reconnaît pas votre bureau d'enregistrement, vous pouvez [suivre ces instructions générales](../get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md).
     
-    Consultez notre liste d’[instructions spécifiques selon l’hôte](https://support.office.com/article/ae950c9e-e8d9-4108-b0cb-449156998580) pour rechercher votre hôte et suivre les étapes d’ajout des enregistrements dont vous avez besoin. 
+    Consultez notre liste d’[instructions spécifiques selon l’hôte](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/set-up-your-domain-host-specific-instructions) pour rechercher votre hôte et suivre les étapes d’ajout des enregistrements dont vous avez besoin. 
     
     Si vous ne connaissez pas le fournisseur d'hébergement DNS ou le bureau d'enregistrement pour votre domaine, voir [Rechercher mon bureau d'enregistrement de domaines ou mon fournisseur d'hébergement DNS](../get-help-with-domains/find-your-domain-registrar.md).
     
@@ -116,7 +123,7 @@ Suivez les étapes ci-dessous pour ajouter un enregistrement personnalisé pour 
 
 5. Sélectionnez le type d’enregistrement DNS que vous souhaitez ajouter et tapez les informations pour le nouvel enregistrement.
     
-6. Cliquez sur **Enregistrer**.
+6. Sélectionnez **Enregistrer**.
 
 ## <a name="registrars-with-domain-connect"></a>Bureaux d’inscriptions avec connexion au domaine
 

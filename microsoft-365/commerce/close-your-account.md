@@ -15,14 +15,21 @@ ms.custom: ''
 search.appverid:
 - MET150
 description: Découvrez comment fermer votre compte auprès de Microsoft.
-ms.openlocfilehash: 43ec3fe2eedc354c0494818f97b01e8de63694c7
-ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
+ms.openlocfilehash: e41d11502b0c0f738cc23405c387bd5fca1cb0fe
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44045775"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44141277"
 ---
 # <a name="close-your-account"></a>Fermer votre compte
+
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> Le centre d’administration change. Si votre expérience ne correspond pas aux détails présentés ici, reportez-vous [à la rubrique à propos du nouveau centre d’administration Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+
+::: moniker-end
 
 Lorsque vous fermez votre compte auprès de Microsoft, toutes les informations relatives à votre compte sont supprimées. Ces informations incluent les abonnements, les licences, les modes de paiement, les utilisateurs et les données utilisateur. Avant de commencer cette procédure, assurez-vous de sauvegarder toutes les données que vous souhaitez conserver.
 

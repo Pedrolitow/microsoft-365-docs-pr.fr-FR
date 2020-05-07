@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Le score de conformité Microsoft aide les organisations à simplifier et à automatiser les évaluations des risques et suggère des actions recommandées pour résoudre les risques.
-ms.openlocfilehash: 507ff021095dfc0b18cffb6db313009c22ad2693
-ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
+ms.openlocfilehash: 5fced1a9452f2345a678bfef670e1a19b9811e81
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44046272"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44140849"
 ---
 # <a name="microsoft-compliance-score-preview"></a>Score de conformité Microsoft (aperçu)
 
@@ -104,7 +104,7 @@ Affichez les instructions détaillées pour [la gestion des évaluations dans le
 
 ### <a name="templates"></a>Modèles
 
-Le score de conformité fournit des modèles préconfigurés pour les évaluations. Vous pouvez également personnaliser un modèle préconfiguré en ajoutant vos propres contrôles et actions. Par exemple, vous pouvez créer un modèle pour votre contrôle de processus d’entreprise ou un modèle pour une norme de conformité et de protection des données régionale qui n’est pas couverte par l’un des modèles préconfigurés. En plaçant vos propres modèles dans le score de conformité, vous pouvez suivre non seulement les évaluations de Microsoft Cloud, mais également d’autres évaluations des risques dans l’étendue de votre organisation.
+Le score de conformité fournit des modèles préconfigurés pour les évaluations. Vous pouvez également créer une évaluation personnalisée en ajoutant vos propres contrôles et actions à un modèle préconfiguré. Par exemple, vous pouvez créer un modèle pour votre contrôle de processus d’entreprise ou un modèle pour une norme de conformité et de protection des données régionale qui n’est pas couverte par l’un des modèles préconfigurés. En plaçant vos propres modèles dans le score de conformité, vous pouvez suivre non seulement les évaluations de Microsoft Cloud, mais également d’autres évaluations des risques dans l’étendue de votre organisation.
 
 Les modèles préconfigurés pour le score de conformité sont les suivants :
 

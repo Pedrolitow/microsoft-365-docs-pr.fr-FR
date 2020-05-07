@@ -20,14 +20,21 @@ search.appverid:
 - BEA160
 ms.assetid: 796f7eda-b1f8-479a-adee-bd9226ca47ec
 description: Découvrez comment résoudre les conflits de licences avec votre abonnement Microsoft 365 pour les entreprises.
-ms.openlocfilehash: 51f87c055402d9e6e3bd732a99abf2c155887290
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 7d7da843ba747679f36539bcf920b1b9b2b7ad28
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43628087"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44139576"
 ---
 # <a name="resolve-license-conflicts"></a>Résoudre les conflits de licence
+
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> Le centre d’administration change. Si votre expérience ne correspond pas aux détails présentés ici, reportez-vous [à la rubrique à propos du nouveau centre d’administration Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+
+::: moniker-end
 
 Nous vous recommandons d’acheter les licences dont vous avez besoin pour votre abonnement avant de créer de nouveaux utilisateurs. De cette manière, une licence peut être attribuée à chaque nouvel utilisateur lors de la création d'un compte d'utilisateur. Si vous avez déjà attribué toutes vos licences aux utilisateurs, mais que certaines licences ont expiré, ou vous essayez de supprimer une licence déjà attribuée à un utilisateur, vous rencontrerez un conflit de licence. Pour plus d’informations, consultez [la rubrique supprimer des licences de votre abonnement](../../commerce/licenses/remove-licenses-from-subscription.md).
   

@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: e1bd69e7038ce3bf6372a3f53cd985ce54f350a8
-ms.sourcegitcommit: b8a9994b26a6d9865212f5b1871286e719d1608e
+ms.openlocfilehash: 47e001fafedbdcaab6e1aa6365789bc309d9f65c
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43781449"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44065809"
 ---
 # <a name="nist-sp-800171"></a>NIST SP 800 – 171
 
@@ -57,7 +57,7 @@ Toute entité qui traite ou stocke les CUIs du gouvernement américain (institut
 
 - [Exemples de modèle Azure](https://docs.microsoft.com/azure/governance/blueprints/samples/): obtenez de la prise en charge de la mise en œuvre de charges de travail conformes aux contrôles NIST.
 
-## <a name="frequently-asked-questions"></a>Foire aux questions
+## <a name="frequently-asked-questions"></a>Forum Aux Questions
 
 **Puis-je utiliser Microsoft Compliance avec NIST SP 800 – 171 pour mon organisation ?**
 
@@ -76,7 +76,3 @@ Oui. Les clients Microsoft peuvent utiliser les contrôles audités décrits dan
 - [Microsoft et l’infrastructure Cybersecurity NIST](offering-nist-csf.md)
 - [Cloud Microsoft Service publique](https://www.microsoft.com/enterprise/government)
 - [Conformité sur le site Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>Télécharger notre document d’information sur la conformité
-
-Vous souhaitez en savoir plus sur nos démarches concernant la conformité ? Téléchargez notre fichier [PDF](https://download.microsoft.com/download/9/8/F/98F1D966-FB62-4B58-B6F0-8F3DCCAC484A/NIST_SP-800-171-Compliance.pdf ) (disponible uniquement en anglais pour le moment).

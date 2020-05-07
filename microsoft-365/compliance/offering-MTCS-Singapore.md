@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 7a0dfc1b03099d52255f2e474ba8d99c2ea3a2cb
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: a305c66aaa3359417bd72b8525ed63787d655f8f
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602151"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44065679"
 ---
 # <a name="multi-tier-cloud-security-mtcs-standard-for-singapore"></a>Norme Multi-Tier Cloud Security (MTCS) pour Singapour
 
@@ -42,9 +42,7 @@ Après de rigoureuses évaluations menées par l’organe d’homologation de la
 
 Les services Microsoft Azure (IaaS et PaaS), les services Microsoft Dynamics 365 (SaaS) et les services Microsoft Office 365 (SaaS) ont obtenu la certification de niveau 3. Une certification de niveau 3 signifie que les services de cloud computing Microsoft dans le périmètre peuvent héberger des données à fort impact pour des organisations réglementées avec les exigences de sécurité les plus strictes. C’est un élément requis par le gouvernement de Singapour pour les implémentations de certaines solutions Cloud.
 
-Découvrez les avantages de la norme MTCS sur le Cloud Microsoft : [Télécharger la fiche d'information de la norme MTCS pour Singapour](https://aka.ms/mtcs-backgrounder)
-
-## <a name="microsoft-in-scope-cloud-services"></a>Services Cloud Microsoft dans le périmètre
+## <a name="microsoft-in-scope-cloud-services"></a>Services Cloud Microsoft concernés
 
 - [Azure](https://go.microsoft.com/fwlink/p/?linkid=2092718)
 - [Dynamics 365](https://go.microsoft.com/fwlink/p/?linkid=2051700)
@@ -104,8 +102,4 @@ Oui. Si vous avez des exigences pour certifier vos services s’appuyant sur ces
 - [Schéma de certification MTCS](https://go.microsoft.com/fwlink/p/?linkid=2092918)
 - [Conformité Azure dans le contexte des conditions de sécurité et de confidentialité de Singapour](https://aka.ms/azurecompliancesingapore)
 - [Conditions de Microsoft Online Services](https://aka.ms/Online-Services-Terms)
-- [Conformité du Centre de gestion de la confidentialité Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>Télécharger notre document d’information sur la conformité
-
-Vous souhaitez en savoir plus sur nos démarches concernant la conformité ? Téléchargez notre fichier [PDF](https://download.microsoft.com/download/3/1/A/31AA4618-A5AE-4013-832B-C7A23CEBC26E/MCTS_Compliance_Backgrounder.pdf) (disponible uniquement en anglais pour le moment).
+- [Conformité sur le site Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)

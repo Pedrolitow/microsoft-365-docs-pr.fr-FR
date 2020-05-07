@@ -14,14 +14,21 @@ ms.collection:
 search.appverid:
 - MET150
 description: Les utilisateurs peuvent apprendre à gérer leurs achats en libre-service.
-ms.openlocfilehash: ed84bfc215d000eaa144aaf1f6eac281fc5a0c16
-ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
+ms.openlocfilehash: 8f141f28c2f1241d19ed34ae234c3b122dd9d69c
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44046167"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44141123"
 ---
 # <a name="manage-self-service-purchases-users"></a>Gérer les achats libre-service (utilisateurs)
+
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> Le centre d’administration change. Si votre expérience ne correspond pas aux détails présentés ici, reportez-vous [à la rubrique à propos du nouveau centre d’administration Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+
+::: moniker-end
 
 En tant qu’utilisateur, vous pouvez acheter des abonnements à certains produits et attribuer des licences pour ces abonnements à des personnes de votre équipe. Vous êtes responsable du paiement des achats en libre-service que vous effectuez. Vous pouvez gérer vos abonnements dans le centre d’administration Microsoft 365 sur <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin.Microsoft.com</a>.
 

@@ -19,14 +19,21 @@ search.appverid:
 - MOE150
 ms.assetid: 55c96b32-e086-4c9e-948b-a018b44510cb
 description: Apprenez à créer, modifier ou supprimer un groupe de sécurité.
-ms.openlocfilehash: 689adb46bdec4d4f669482af6b5467fdcf63482c
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 6f4daa66c11675674fdbfbfeb625128d8f817520
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43628878"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44140440"
 ---
 # <a name="create-edit-or-delete-a-security-group-in-the-microsoft-365-admin-center"></a>Créer, modifier ou supprimer un groupe de sécurité dans le centre d’administration Microsoft 365
+
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> Le centre d’administration change. Si votre expérience ne correspond pas aux détails présentés ici, reportez-vous [à la rubrique à propos du nouveau centre d’administration Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+
+::: moniker-end
 
 Sur la page **groupes** Microsoft 365, vous pouvez créer des groupes de comptes d’utilisateur que vous pouvez utiliser pour attribuer les mêmes autorisations à dans SharePoint Online et CRM Online. Par exemple, un administrateur peut créer un groupe de sécurité pour accorder à un certain groupe de personnes l’accès à un site SharePoint. Seuls les administrateurs de gestion des utilisateurs et globaux sont autorisés à créer, modifier ou supprimer des groupes de sécurité ; Pour plus d’informations sur les rôles d’administrateur, consultez la rubrique [attribution de rôles](../add-users/assign-admin-roles.md)d’administrateur. 
   
@@ -145,7 +152,7 @@ Si vous souhaitez créer des groupes d’utilisateurs afin de pouvoir leur envoy
     
 Après avoir créé des groupes de distribution et des groupes de sécurité à extension messagerie dans le centre d’administration Exchange, leurs noms et leurs listes d’utilisateurs apparaissent dans la page **groupes de sécurité** . Vous pouvez supprimer ces groupes aux deux emplacements, mais vous ne pouvez les modifier que dans le Centre d'administration Exchange. Les groupes de distribution dynamique n’apparaissent pas dans la page **groupes de sécurité** . 
   
- Les groupes SharePoint sont générés automatiquement quand vous créez une collection de sites. Les groupes par défaut utilisent les niveaux d'autorisation par défaut dans SharePoint  parfois appelés rôles SharePoint  pour accorder aux utilisateurs des droits et un accès. Pour plus d’informations, voir [groupes SharePoint par défaut dans SharePoint Online](https://support.office.com/article/13bb2b6b-dd8c-447e-b71b-0e4bb9efe1d3.aspx).
+ Les groupes SharePoint sont générés automatiquement quand vous créez une collection de sites. Les groupes par défaut utilisent les niveaux d'autorisation par défaut dans SharePoint  parfois appelés rôles SharePoint  pour accorder aux utilisateurs des droits et un accès. Pour plus d’informations, voir [groupes SharePoint par défaut dans SharePoint Online](https://docs.microsoft.com/sharepoint/default-sharepoint-groups).
   
 ## <a name="how-is-a-security-group-different-from-security-groups-i-create-in-sharepoint"></a>En quoi un groupe de sécurité est-il différent des groupes de sécurité que j’ai créés dans SharePoint ?
 

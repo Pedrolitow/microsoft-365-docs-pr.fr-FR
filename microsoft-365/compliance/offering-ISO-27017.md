@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 6bd989a5600252ee60ada4eb4e3d1414ef3853d5
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 1f44c46046fc107e8059cebda3388fcd775bd31e
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602241"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44065689"
 ---
 # <a name="isoiec-270172015-code-of-practice-for-information-security-controls"></a>ISO/IEC 27017:2015 Code de pratique international des contrôles de sécurité des informations
 
@@ -41,9 +41,7 @@ Cette norme internationale fournit des conseils d'implémentation supplémentair
 
 La norme ISO/IEC 27017 est la seule à fournir des conseils à la fois aux fournisseurs et aux clients des services Cloud. Elle fournit également aux clients des services cloud des informatiques pratiques sur ce à quoi ils doivent s'attendre de la part des fournisseurs de services cloud. Les clients peuvent tirer parti directement de la norme ISO/IEC 27017 en s’assurant qu’ils ont bien compris les responsabilités partagées dans le Cloud.
 
-Découvrez les avantages de la norme ISO/IEC 27017 sur le Microsoft Cloud : [Télécharger la norme ISO/IEC 27017 : Code de pratique pour les contrôles de sécurité des données](https://aka.ms/iso27017-backgrounder)
-
-## <a name="microsoft-in-scope-cloud-services"></a>Services Cloud Microsoft dans le périmètre
+## <a name="microsoft-in-scope-cloud-services"></a>Services Cloud Microsoft concernés
 
 - [Azure, Azure Gouvernement et Azure Allemagne](https://aka.ms/AzureCompliance)
 - Cloud App Security
@@ -64,7 +62,7 @@ Les services Cloud Microsoft font l’objet d’un audit une fois par an pour l
 
 - [Certificat ISO 27017 Azure](https://go.microsoft.com/fwlink/p/?linkid=2078005)
 - [Rapport d’évaluation d’Azure ISO 27017](https://go.microsoft.com/fwlink/p/?linkid=2078010)
-- [Déclaration d'applicabilité ISO 27017 Azure](https://aka.ms/AzureISO27017StatementofApplicability)
+- [Déclaration d'applicabilité ISO 27017 Azure](https://aka.ms/azureiso27017StatementofApplicability)
 - [Rapport d'évaluation d'audit ISO 27001, 27018 et 27017 Office 365](https://aka.ms/o365isoreport)
 
 ## <a name="frequently-asked-questions"></a>Questions fréquentes (FAQ)
@@ -89,8 +87,4 @@ Le [portail d'approbation de services](https://aka.ms/stphelp) fournit des rappo
 
 - [Code de pratique ISO/IEC 27017:2015](https://www.iso.org/iso/iso_catalogue/catalogue_tc/catalogue_detail.htm?csnumber=43757)
 - [Conditions de Microsoft Online Services](https://aka.ms/Online-Services-Terms)
-- [Conformité du Centre de gestion de la confidentialité Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>Télécharger notre document d’information sur la conformité
-
-Vous souhaitez en savoir plus sur nos démarches concernant la conformité ? Téléchargez notre fichier [PDF](https://download.microsoft.com/download/7/7/9/7799D02B-A97A-48E0-A057-C19DD543BB24/ISO-IEC-27017_backgrounder.pdf) (disponible uniquement en anglais pour le moment).
+- [Conformité sur le site Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)

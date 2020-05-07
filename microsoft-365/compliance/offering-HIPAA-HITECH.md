@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 182e3489824c7842f5e9cf6a410d49d574b7462c
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 8a7a64532aeb7053572b78a6b05a757bf6d1b006
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637998"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44066457"
 ---
 # <a name="health-insurance-portability-and-accountability-hipaa--hitech-acts"></a>Loi HIPAA (Health Insurance Portability and Accountability Act) & Hi-Tech
 
@@ -57,7 +57,7 @@ Pour savoir comment le Cloud Microsoft aide les clients à prendre en charge les
 - Cloud App Security
 - Service Microsoft Health bot
 - Microsoft Stream
-- Services professionnels Microsoft : premier et local pour Azure, Dynamics 365, Intune, et pour les clients de taille moyenne et entreprise de Microsoft 365 pour les entreprises
+- Services professionnels Microsoft : Premier et sur site pour Azure, Dynamics 365, Intune et pour les clients des entreprises moyennes et grandes de Microsoft 365 Entreprise
 - [Dynamics 365 et Dynamics 365 Service Public](https://aka.ms/d365-compliance-list)
 - Service Cloud Microsoft Flow, soit en service autonome, soit inclus dans un plan ou une suite Office 365 ou Dynamics 365
 - Intune
@@ -72,7 +72,7 @@ Commencez à tirer parti des avantages du Cloud pour les solutions de données d
 
 [Commencer à utiliser le modèle Azure HIPAA/HITRUST](https://docs.microsoft.com/azure/governance/blueprints/samples/hipaa-hitrust/)
 
-## <a name="frequently-asked-questions"></a>Questions fréquemment posées
+## <a name="frequently-asked-questions"></a>Forum Aux Questions
 
 **Mon organisation peut-elle entrer dans un contrat avec Microsoft ?**
 
@@ -115,7 +115,3 @@ Pour aider les clients avec cette tâche, Microsoft a publié ces guides :
 - [Présentation de la conformité HIPAA avec Azure](https://www.youtube.com/embed/6ptdye1LZ5k?autoplay=0)(19 mai 2016)
 - [Guide de mise en œuvre d’Azure HIPAA](https://aka.ms/azure-hipaa-guide)
 - [Conformité sur le site Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>Télécharger notre document d’information sur la conformité
-
-Vous souhaitez en savoir plus sur nos démarches concernant la conformité ? Téléchargez notre fichier [PDF](https://download.microsoft.com/download/4/6/B/46BB3C98-AE2B-42C1-A2CD-F7C0040FB6B8/HIPAA_Compliance_Backgrounder.pdf) (disponible uniquement en anglais pour le moment).

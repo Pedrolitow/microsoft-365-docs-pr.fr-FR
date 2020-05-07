@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 3b1f93b301ba4db44b7260ae588688acf648e345
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 86a3e7ce703881452d3d112aace3b418bf0984af
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602141"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44066095"
 ---
 # <a name="ministry-of-electronics-and-information-technology-meity"></a>Ministère de l’électronique et des technologies de l’information (MeitY)
 
@@ -27,7 +27,7 @@ ms.locfileid: "41602141"
 
 Le ministère des technologies de l’information et des technologies de l’information (MeitY), une Agence du gouvernement de l’Inde, fournit des directives de stratégie à toutes les organisations du secteur public public et de l’État. Ses directives sont également fréquemment adoptées par les organisations du secteur privé dans les industries réglementées, telles que les services financiers et les télécommunications.
 
-MeitY fournit une accréditation (désignée par MeitY en tant que « empanelment ») des fournisseurs de services Cloud, ce qui exige que les services Cloud soient certifiés conformes à un ensemble de normes prédéfinies et des directives sur la sécurité, l’interopérabilité, la portabilité des données, contrat de niveau de service et conditions contractuelles. Les auditeurs accrédités par MeitY vérifient la conformité en effectuant des audits des fournisseurs de services Cloud.
+MeitY fournit une accréditation (désignée par MeitY en tant que « empanelment ») des fournisseurs de services Cloud, ce qui exige que les services Cloud soient certifiés conformes à un ensemble prédéfini de normes et à des directives sur la sécurité, l’interopérabilité, la portabilité des données, le contrat de niveau de service et les conditions contractuelles. Les auditeurs accrédités par MeitY vérifient la conformité en effectuant des audits des fournisseurs de services Cloud.
 
 Une fois l’accréditation, les fournisseurs de services Cloud sont répertoriés dans un annuaire des services Cloud du gouvernement où les organisations du secteur public peuvent comparer et procurer des services Cloud accrédités. L’annuaire est un service de l' [initiative Cloud MeghRaj](https://meity.gov.in/content/gi-cloud-meghraj) (ou du \[gouvernement GI du\] Cloud indien), qui favorise l’utilisation du Cloud Computing dans le secteur public et régit l’implémentation des services informatiques du secteur public.
 
@@ -39,7 +39,7 @@ En novembre 2017, Microsoft est devenu l’un des premiers fournisseurs de servi
 - Nuage privé virtuel public, qui doit être logiquement séparé des autres offres publiques et autres du fournisseur de services Cloud
 - Nuage communautaire du gouvernement, pour les services Cloud qui sont dédiés aux services gouvernementaux et physiquement séparés des offres publiques et autres offres du fournisseur de services Cloud
 
-L’accréditation MeitY de Microsoft était le résultat d’un audit rigoureux mené par les tests de normalisation et la certification de qualité (STQC) direction, une organisation gouvernementale qui fournit des services d’assurance qualité, à l’aide d’une infrastructure d’évaluation basé sur le travail de l’initiative Cloud MeghRaj. Par le biais de Microsoft Azure, les organisations du secteur public peuvent désormais tirer un grand nombre de modèles de déploiement et d’offres de services, notamment IaaS (infrastructure as a service), plateforme As a service (PaaS), récupération d’urgence, DevOps et sauvegarde gérée.
+L’accréditation MeitY de Microsoft était le résultat d’un audit rigoureux mené par les tests de normalisation et la certification de qualité (STQC), une organisation gouvernementale qui fournit des services d’assurance qualité, à l’aide d’une infrastructure d’évaluation basée sur le travail de l’initiative Cloud MeghRaj. Par le biais de Microsoft Azure, les organisations du secteur public peuvent désormais tirer un grand nombre de modèles de déploiement et d’offres de services, notamment IaaS (infrastructure as a service), plateforme As a service (PaaS), récupération d’urgence, DevOps et sauvegarde gérée.
 
 ## <a name="microsoft-in-scope-cloud-services"></a>Services Cloud Microsoft dans le périmètre
 
@@ -51,7 +51,7 @@ L’accréditation MeitY de Microsoft était le résultat d’un audit rigoureux
 
 - Accréditation Microsoft Cloud sous [l’état d’audit des fournisseurs de services Cloud](https://meity.gov.in/content/gi-cloud-meghraj)
 
-## <a name="frequently-asked-questions"></a>Questions fréquentes (FAQ)
+## <a name="frequently-asked-questions"></a>Forum Aux Questions
 
 **Pourquoi MeitY est-il important ?**
 
@@ -63,7 +63,3 @@ Le fait de rendre les services gouvernementaux accessibles aux citoyens en ligne
 - [Initiative Cloud MeghRaj](https://meity.gov.in/content/gi-cloud-meghraj)
 - [Fournisseurs de services Cloud accrédités](https://meity.gov.in/content/gi-cloud-meghraj)
 - [Conformité sur le site Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>Télécharger notre document d’information sur la conformité
-
-Vous souhaitez en savoir plus sur nos démarches concernant la conformité ? Téléchargez notre fichier [PDF](https://download.microsoft.com/download/E/8/B/E8B5BC95-2B66-4759-8BBE-31D2F641B3FD/MeitY-Compliance.pdf) (disponible uniquement en anglais pour le moment).

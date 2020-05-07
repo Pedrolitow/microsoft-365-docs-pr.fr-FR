@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 71226634f17e8e801c409e513494dfdcc19d0719
-ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
+ms.openlocfilehash: e49b80cc873887cf9cc447a28ac2a274034176fc
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44046292"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44066237"
 ---
 # <a name="communication-compliance-in-microsoft-365"></a>Conformité de la communication dans Microsoft 365
 
@@ -49,7 +49,7 @@ Les stratégies de conformité des communications peuvent vous aider à examiner
 
 - **Gestion des risques**
 
-    Les organisations sont responsables de toutes les communications distribuées au sein de leur infrastructure et des systèmes réseau d’entreprise. L’utilisation de stratégies de surveillance des communications pour aider à identifier et à gérer les risques juridiques et les risques potentiels peut vous aider à réduire les risques avant qu’ils ne puissent endommager les opérations de l’entreprise. Par exemple, vous pouvez analyser les messages de votre organisation pour les communications non autorisées concernant les projets confidentiels, tels que les acquisitions à venir, les fusions, les informations de résultats, les réorganisations ou les modifications apportées à l’équipe de leadership.
+    Les organisations sont responsables de toutes les communications distribuées au sein de leur infrastructure et des systèmes réseau d’entreprise. L’utilisation de stratégies de conformité des communications pour identifier et gérer les risques et les risques légaux potentiels peut vous aider à réduire les risques avant qu’ils puissent endommager les opérations de l’entreprise. Par exemple, vous pouvez analyser les messages de votre organisation pour les communications non autorisées concernant les projets confidentiels, tels que les acquisitions à venir, les fusions, les informations de résultats, les réorganisations ou les modifications apportées à l’équipe de leadership.
 
 - **Conformité réglementaire**
 
@@ -98,7 +98,7 @@ Les nouveaux tableaux de bord interactifs pour les alertes, les correspondances 
 Stratégies de conformité des communications analysez et capturez les messages sur plusieurs canaux de communication pour vous aider à examiner et à corriger rapidement les problèmes de conformité :
 
 - **Microsoft teams**: les communications de conversation pour les canaux [Microsoft teams](https://docs.microsoft.com/MicrosoftTeams/Teams-overview) publics et privés et les conversations individuelles sont prises en charge dans la conformité de la communication en tant que source de canal autonome ou avec d’autres services Microsoft 365. Les stratégies analysent désormais automatiquement toutes les équipes et tous les canaux Microsoft teams pour des utilisateurs spécifiques définis dans une stratégie, ce qui évite d’avoir à conserver une liste de mappage distincte pour les affectations de Microsoft Teams.
-- **Exchange Online**: toutes les boîtes aux lettres hébergées sur [Exchange Online](https://docs.microsoft.com/Exchange/exchange-online) dans votre organisation Microsoft 365 sont éligibles pour l’analyse. Les e-mails et les pièces jointes correspondant à des conditions de stratégie de conformité de communication sont immédiatement disponibles pour la surveillance et les rapports de surveillance. Exchange Online est maintenant un canal source facultatif et n’est plus requis dans les stratégies de conformité des communications.
+- **Exchange Online**: toutes les boîtes aux lettres hébergées sur [Exchange Online](https://docs.microsoft.com/Exchange/exchange-online) dans votre organisation Microsoft 365 sont éligibles pour l’analyse. Les e-mails et les pièces jointes correspondant aux conditions de stratégie de conformité de communication sont immédiatement disponibles pour la surveillance et dans les rapports de conformité. Exchange Online est maintenant un canal source facultatif et n’est plus requis dans les stratégies de conformité des communications.
 - **Yammer**: les messages privés et les conversations de la communauté publique dans [Yammer](https://docs.microsoft.com/yammer/yammer-landing-page) sont pris en charge dans les stratégies de conformité de communication. Yammer est un canal facultatif qui doit être en [mode natif](https://docs.microsoft.com/yammer/configure-your-yammer-network/overview-native-mode) pour prendre en charge l’analyse des messages et des pièces jointes.
 - **Skype entreprise Online**: les stratégies de conformité des communications prennent en charge l’analyse des communications de conversation et des pièces jointes associées dans [Skype entreprise Online](https://docs.microsoft.com/SkypeForBusiness/skype-for-business-online).
 - **Sources**tierces : vous pouvez analyser les messages provenant de [sources](archiving-third-party-data.md) tierces pour les données importées dans des boîtes aux lettres dans votre organisation Microsoft 365. La conformité de la communication prend en charge les connexions à plusieurs plateformes populaires, notamment la connexion instant Bloomberg, Facebook, Twitter et d’autres.
@@ -125,13 +125,13 @@ Vous pouvez choisir parmi les modèles de stratégie suivants dans le centre de 
 - **Langage offensant et anti-harcèlement**: utilisez ce modèle pour créer rapidement une stratégie qui utilise le classifieur intégré pour détecter automatiquement le contenu qui peut être considéré comme injurieux ou choquant.
 - **Informations sensibles**: utilisez ce modèle pour créer une stratégie d’analyse des communications contenant des types d’informations sensibles ou des mots clés définis afin de vous assurer que les données importantes ne sont pas partagées avec des personnes qui n’ont pas accès.
 - **Conformité réglementaire**: utilisez ce modèle pour créer une stratégie d’analyse des communications concernant des références à des termes financiers standard associés à des normes réglementaires.
-- **Stratégie personnalisée**: utilisez ce modèle pour configurer des canaux de communication spécifiques, des conditions de détection et la quantité de contenu à examiner au sein de votre organisation.
+- **Stratégie personnalisée**: utilisez ce modèle pour configurer des canaux de communication spécifiques, des conditions de détection et la quantité de contenu à surveiller et à réviser dans votre organisation.
 
 ### <a name="investigate"></a>Pench
 
 Dans cette étape, vous allez approfondir les problèmes détectés comme correspondant à vos stratégies de conformité de communication. Cette étape inclut les actions suivantes disponibles dans le centre de conformité Microsoft 365 :
 
-- **Alertes**: lorsqu’un message correspond à une stratégie de surveillance, une alerte est générée automatiquement. Pour chaque alerte, vous pouvez voir l’État, la gravité, l’heure détectée et le cas échéant, ainsi que son état. Les nouvelles alertes sont affichées dans la page d’accueil de la conformité de la communication et la page des **alertes** et sont répertoriées par ordre de gravité.
+- **Alertes**: lorsqu’un message correspond à une condition de stratégie, une alerte est générée automatiquement. Pour chaque alerte, vous pouvez voir l’État, la gravité, l’heure détectée et le cas échéant, ainsi que son état. Les nouvelles alertes sont affichées dans la page d’accueil de la conformité de la communication et la page des **alertes** et sont répertoriées par ordre de gravité.
 - **Gestion des problèmes**: pour chaque alerte, vous pouvez prendre des mesures d’enquête afin de résoudre le problème détecté dans le message.
 - **Révision de document**: lors de l’enquête sur un problème, vous pouvez utiliser plusieurs vues du message pour évaluer correctement le problème détecté. Les affichages incluent un résumé de conversation, du texte, des annotations et des affichages détaillés de la conversation de communication.
 - **Examen de l’historique des activités utilisateur**: Affichez l’historique des activités des messages utilisateur et des actions de correction, telles que les notifications et les escalades passées, pour les correspondances de stratégie.

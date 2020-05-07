@@ -21,12 +21,12 @@ search.appverid:
 ms.assetid: 854b6b2b-0255-4089-8019-b765cff70377
 ROBOTS: NOINDEX
 description: En savoir davantage sur les domaines et les enregistrements DNS associés pour vous aider à gérer vos domaines.
-ms.openlocfilehash: bd011add44ea462dacab41fde1ef0ebe4a6b4aa8
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+ms.openlocfilehash: feef7de31f1576173f7377afe3eac8a6f6aaacb1
+ms.sourcegitcommit: 83f980927728bc080f97a3e6dc70dc305f3df841
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 05/06/2020
-ms.locfileid: "44048184"
+ms.locfileid: "44053751"
 ---
 # <a name="dns-basics"></a>Principes de base
 
@@ -151,14 +151,14 @@ Pourquoi le fichier de zone de votre domaine peut-il se trouver autre part que s
 ## <a name="why-add-a-domain-in-office-365"></a>Pourquoi ajouter un domaine dans Office 365 ?
 
 
-L'ajout d'un domaine personnalisé, tel que fourthcoffee.com, à Office 365 vous permet d'utiliser une adresse de courrier plus courte et plus conviviale, et un identifiant d'utilisateur avec le service. [Un domaine vous est octroyé](https://support.office.com/article/b9fc3018-8844-43f3-8db1-1b3a8e9cfd5a.aspx) lorsque vous vous inscrivez pour bénéficier d'un compte Office 365. Celui-ci inclut toutefois « onmicrosoft.com ». Les entreprises ou organisations préfèrent souvent ajouter leur domaine dans le cadre de l'utilisation d'Office 365 pour le courrier électronique. 
+L'ajout d'un domaine personnalisé, tel que fourthcoffee.com, à Office 365 vous permet d'utiliser une adresse de courrier plus courte et plus conviviale, et un identifiant d'utilisateur avec le service. [Un domaine vous est octroyé](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) lorsque vous vous inscrivez pour bénéficier d'un compte Office 365. Celui-ci inclut toutefois « onmicrosoft.com ». Les entreprises ou organisations préfèrent souvent ajouter leur domaine dans le cadre de l'utilisation d'Office 365 pour le courrier électronique. 
   
 > [!NOTE]
 > Si vous souhaitez simplement télécharger et utiliser les applications Microsoft, tels que Word ou Outlook, vous n’avez pas besoin d’ajouter un domaine :[installez Office sur votre PC ou Mac](https://support.office.com/article/4414eaaf-0478-48be-9c42-23adc4716658.aspx). 
   
 Vous pouvez utiliser votre nom de domaine dans Office 365 avec votre courrier, votre site web public et votre adresse de messagerie instantanée.
   
-- **Courrier électronique :** votre nom de domaine vous permet de personnaliser vos adresses de courrier électronique. Vous pouvez ainsi utiliser une adresse plus courte et plus facile à retenir que [l'adresse onmicrosoft.com initiale](https://support.office.com/article/b9fc3018-8844-43f3-8db1-1b3a8e9cfd5a.aspx) fournie avec votre compte. Par exemple, au lieu de maurice@contoso.onmicrosoft.com, vous pouvez utiliser l'adresse de courrier (qui est aussi l'compte professionnel à utiliser pour se connecter à Office 365) maurice@contoso.com. 
+- **Courrier électronique :** votre nom de domaine vous permet de personnaliser vos adresses de courrier électronique. Vous pouvez ainsi utiliser une adresse plus courte et plus facile à retenir que [l'adresse onmicrosoft.com initiale](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) fournie avec votre compte. Par exemple, au lieu de maurice@contoso.onmicrosoft.com, vous pouvez utiliser l'adresse de courrier (qui est aussi l'compte professionnel à utiliser pour se connecter à Office 365) maurice@contoso.com. 
     
 - **Site web :** si vous avez un abonnement Microsoft 365 incluant un site web public SharePoint Online (désormais indisponible à l'achat), une adresse initiale telle que contoso-public.sharepoint.com est fournie avec votre site web public. Si vous configurez votre site web pour votre entreprise, vous pouvez utiliser un nom de domaine personnalisé pour renommer l'adresse du site web (par exemple, www.contoso.com). 
     
@@ -170,14 +170,14 @@ Vous pouvez utiliser votre nom de domaine dans Office 365 avec votre courrier, v
 ## <a name="why-add-a-domain-in-office-365"></a>Pourquoi ajouter un domaine dans Office 365 ?
 
 
-L'ajout d'un domaine personnalisé, tel que fourthcoffee.com, à Office 365 vous permet d'utiliser une adresse de courrier plus courte et plus conviviale, et un identifiant d'utilisateur avec le service. [Un domaine vous est octroyé](https://support.office.com/article/b9fc3018-8844-43f3-8db1-1b3a8e9cfd5a.aspx) lorsque vous vous inscrivez pour bénéficier d'un compte Office 365. Celui-ci inclut toutefois « onmicrosoft.com ». Les entreprises ou organisations préfèrent souvent ajouter leur domaine dans le cadre de l'utilisation d'Office 365 pour le courrier électronique. 
+L'ajout d'un domaine personnalisé, tel que fourthcoffee.com, à Office 365 vous permet d'utiliser une adresse de courrier plus courte et plus conviviale, et un identifiant d'utilisateur avec le service. [Un domaine vous est octroyé](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) lorsque vous vous inscrivez pour bénéficier d'un compte Office 365. Celui-ci inclut toutefois « onmicrosoft.com ». Les entreprises ou organisations préfèrent souvent ajouter leur domaine dans le cadre de l'utilisation d'Office 365 pour le courrier électronique. 
   
 > [!NOTE]
 > Si vous souhaitez simplement télécharger et utiliser les applications Office 365, tels que Word ou Outlook, vous n’avez pas besoin d’ajouter un domaine :[installez Office sur votre PC ou Mac](https://support.office.com/article/4414eaaf-0478-48be-9c42-23adc4716658.aspx). 
   
 Vous pouvez utiliser votre nom de domaine dans Office 365 avec votre courrier, votre site web public et votre adresse de messagerie instantanée.
   
-- **Courrier électronique :** votre nom de domaine vous permet de personnaliser vos adresses de courrier électronique. Vous pouvez ainsi utiliser une adresse plus courte et plus facile à retenir que [l'adresse onmicrosoft.com initiale](https://support.office.com/article/b9fc3018-8844-43f3-8db1-1b3a8e9cfd5a.aspx) fournie avec votre compte. Par exemple, au lieu de maurice@contoso.onmicrosoft.com, vous pouvez utiliser l'adresse de courrier (qui est aussi l'compte professionnel à utiliser pour se connecter à Office 365) maurice@contoso.com. 
+- **Courrier électronique :** votre nom de domaine vous permet de personnaliser vos adresses de courrier électronique. Vous pouvez ainsi utiliser une adresse plus courte et plus facile à retenir que [l'adresse onmicrosoft.com initiale](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) fournie avec votre compte. Par exemple, au lieu de maurice@contoso.onmicrosoft.com, vous pouvez utiliser l'adresse de courrier (qui est aussi l'compte professionnel à utiliser pour se connecter à Office 365) maurice@contoso.com. 
     
 - **Site web :** si vous avez un abonnement incluant un site web public SharePoint Online (désormais indisponible à l'achat), une adresse initiale telle que contoso-public.sharepoint.com est fournie avec votre site web public. Si vous configurez votre site web pour votre entreprise, vous pouvez utiliser un nom de domaine personnalisé pour renommer l'adresse du site web (par exemple, www.contoso.com). 
     

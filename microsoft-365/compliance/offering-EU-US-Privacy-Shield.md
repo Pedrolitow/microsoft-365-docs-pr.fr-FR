@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 1ed1703ac30a9c7c8392ad61ec0d126d1e17c17e
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: f58baecce1d1972c7aee1fdb7121375d5ddd111c
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602471"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44066407"
 ---
 # <a name="eu-us-and-swiss-us-privacy-shield-frameworks"></a>Infrastructures de bouclier de protection des données UE-EU et Suisse-EU
 
@@ -82,7 +82,7 @@ Le bouclier de protection des données n’est pas un mécanisme de conformité 
 
 **Comment Microsoft gère-t-il les plaintes dans le cadre bouclier de protection des données UE-EU et Suisse-EU ?**
 
-Si vous avez une réclamation concernant le bouclier de protection des données, merci de nous en faire part via la section [Comment nous contacter](https://privacy.microsoft.com/PrivacyStatement#mainhowtocontactusmodule) de la [Déclaration de confidentialité Microsoft](https://privacy.microsoft.com/privacystatement). Pour les réclamations que vous ne pouvez pas résoudre avec Microsoft directement, nous coopérons avec les DPA de l’UE et respectons leurs conseils. Contactez-nous pour être redirigé vers les contacts appropriés au sein des DPA. Comme expliqué plus en détail dans les [principes du bouclier de protection des données](https://www.privacyshield.gov/article?id=Requirements-of-Participation), vous pouvez tirer parti d’une option d’arbitrage contraignant pour traiter les plaintes non résolues par d’autres moyens.
+Si vous avez une réclamation concernant le bouclier de protection des données, merci de nous en faire part via la section [Comment nous contacter](https://privacy.microsoft.com/privacystatement#mainhowtocontactusmodule) de la [Déclaration de confidentialité Microsoft](https://privacy.microsoft.com/privacystatement). Pour les réclamations que vous ne pouvez pas résoudre avec Microsoft directement, nous coopérons avec les DPA de l’UE et respectons leurs conseils. Contactez-nous pour être redirigé vers les contacts appropriés au sein des DPA. Comme expliqué plus en détail dans les [principes du bouclier de protection des données](https://www.privacyshield.gov/article?id=Requirements-of-Participation), vous pouvez tirer parti d’une option d’arbitrage contraignant pour traiter les plaintes non résolues par d’autres moyens.
 
 ## <a name="resources"></a>Ressources
 
@@ -92,7 +92,3 @@ Si vous avez une réclamation concernant le bouclier de protection des données,
 - [Confidentialité chez Microsoft](https://privacy.microsoft.com)
 - [Considérations relatives à la confidentialité dans le cloud](https://download.microsoft.com/download/0/9/D/09DE47F6-F9E5-4C14-B9E8-E8119A130ACC/Privacy_considerations_in_the_cloud.pdf)
 - [Conformité sur le site Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>Télécharger notre document d’information sur la conformité
-
-Vous souhaitez en savoir plus sur nos démarches concernant la conformité ? Téléchargez notre fichier [PDF](https://download.microsoft.com/download/3/F/4/3F4C5C35-6653-4E9B-8C4F-917B1064F537/PrivacyShield-Compliance.pdf) (disponible uniquement en anglais pour le moment).

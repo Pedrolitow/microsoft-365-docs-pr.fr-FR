@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: bb7a805fa927756753e3ba09c3dd5eb2998467e7
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: b64b69d52028a09ddd54863d4e2cbf5f0642bd67
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602291"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44066327"
 ---
 # <a name="us-internal-revenue-service-publication-1075"></a>Publication 1075 de U.S. Internal Revenue Service
 
@@ -33,7 +33,7 @@ Pour protéger FTI, l’IRS 1075 impose des contrôles de sécurité et de confi
 
 Microsoft Azure Government et [Microsoft Office 365](https://products.office.com/government/office-365-web-services-for-government) les services Cloud du gouvernement américain fournissent un engagement contractuel selon lequel les contrôles appropriés sont en place, ainsi que les fonctionnalités de sécurité nécessaires pour que les clients de Microsoft Agency répondent aux exigences de fond de l’IRS 1075.  
   
-Ces services Cloud Microsoft pour le gouvernement fournissent une plateforme sur laquelle les clients peuvent créer et exploiter leurs solutions, mais les clients doivent déterminer à eux-mêmes si ces solutions spécifiques sont gérées conformément à l’IRS 1075 et, par conséquent, soumis à un audit de l’IRS.  
+Ces services Cloud Microsoft pour le gouvernement fournissent une plateforme sur laquelle les clients peuvent créer et exploiter leurs solutions, mais les clients doivent déterminer à eux-mêmes si ces solutions spécifiques sont gérées conformément à l’IRS 1075 et, par conséquent, soumises à un audit de l’IRS.  
   
 Pour aider les agences gouvernementales dans leurs efforts de conformité, Microsoft :
 
@@ -42,8 +42,6 @@ Pour aider les agences gouvernementales dans leurs efforts de conformité, Micro
 - Fournit des rapports d’audit et des informations de surveillance disponibles par des évaluateurs indépendants pour ses services Cloud.
 - Fournit aux considérations relatives à la conformité du gouvernement d’administration fiscale pour les États-Unis, ainsi qu’aux considérations relatives à la conformité des administrations américaines Office 365, qui décrivent comment une Agence peut utiliser Microsoft Cloud pour les services gouvernementaux d’une manière conforme à l’IRS 1075. Les clients gouvernementaux sous NDA peuvent demander ces documents.
 - Offre aux clients l’opportunité (à leurs dépens) de communiquer avec des experts techniques Microsoft ou des auditeurs externes, le cas échéant.
-
-Découvrez les avantages de l’IRS 1075 sur le Cloud Microsoft : [Télécharger la documentation de l’irs 1075](https://aka.ms/irs1075-backgrounder)
 
 ## <a name="microsoft-in-scope-cloud-services"></a>Services Cloud Microsoft dans le périmètre
 
@@ -62,7 +60,7 @@ Le respect des exigences de fond de l’IRS 1075 est couvert par l’audit FedRA
 - [Autorisations FedRAMP](https://marketplace.fedramp.gov/#/product/azure-government?sort=productName&productNameSearch=azure)
 - [Rapport de sécurité de la sécurité de l’IRS 1075](https://aka.ms/AzureIRS1075SafeguardSecurityReport)
 
-## <a name="frequently-asked-questions"></a>Questions fréquentes (FAQ)
+## <a name="frequently-asked-questions"></a>Forum Aux Questions
 
 **Comment Microsoft répond-t-il aux exigences de l’IRS 1075 ?**
 
@@ -84,8 +82,4 @@ Non. Les seuls environnements dans lesquels FTI peut être stocké et traité so
 - [Programme de protection des impôts](https://www.irs.gov/uac/Safeguards-Program)
 - [Infrastructure de conformité Microsoft Common Controls Hub](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 - [Microsoft Cloud pour le secteur public](https://enterprise.microsoft.com/industries/government/start-your-microsoft-cloud-for-government-trial-today)
-- [Conformité du Centre de gestion de la confidentialité Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>Télécharger notre document d’information sur la conformité
-
-Vous souhaitez en savoir plus sur nos démarches concernant la conformité ? Téléchargez notre fichier [PDF](https://download.microsoft.com/download/D/1/8/D1825AE2-4FDA-4A4B-8D4F-9B7D2976D54A/IRS1075_Compliance_Backgrounder.pdf) (disponible uniquement en anglais pour le moment).
+- [Conformité sur le site Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)

@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 31c67d9beb0a99019ceb204293de50c194a3d2a6
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: f80167a45379a143d7a96e568aedbc27484090a4
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602491"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44064713"
 ---
 # <a name="spain-esquema-nacional-de-seguridad-ens-high-level-security-measures"></a>Mesures de sécurité de niveau élevé de l’Esquema Nacional de Seguridad (ENS) d’Espagne
 
@@ -39,9 +39,7 @@ L'infrastructure prescrit un processus d'accréditation qui est volontaire pour 
 
 Microsoft Azure et Microsoft Office 365 ont fait l’objet d’une évaluation rigoureuse par BDO, un auditeur indépendant, qui a publié une déclaration officielle au sujet de leur conformité. BDO a indiqué que les mesures de sécurité dans les deux services et leurs systèmes d’information et installations de traitement des données, sont conformes au niveau élevé du RD 3/2010 sans qu’aucune mesure corrective supplémentaire ne soit nécessaire. Microsoft a été le premier fournisseur de services Cloud à grande échelle à recevoir cette certification en Espagne.
 
-Découvrez les avantages des mesures de sécurité de niveau élevé de l’ENS (Espagne) sur le Cloud Microsoft : [Télécharger la fiche d'information de l'ENS (Espagne)](https://aka.ms/spainens-backgrounder)
-
-## <a name="microsoft-in-scope-cloud-services"></a>Services Cloud Microsoft dans le périmètre
+## <a name="microsoft-in-scope-cloud-services"></a>Services Cloud Microsoft concernés
 
 - [Azure et Azure Government](https://aka.ms/AzureCompliance)
 - [Office 365](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
@@ -78,8 +76,4 @@ Si votre organisation utilise Azure ou Office 365, vous pourrez alors tirer par
 
 - Esquema Nacional de Seguridad d'Espagne ([espagnol](https://administracionelectronica.gob.es/pae_Home/pae_Estrategias/pae_Seguridad_Inicio/pae_Esquema_Nacional_de_Seguridad.html?idioma=sp#.Vwxp82mcGM8) et [anglais](https://administracionelectronica.gob.es/pae_Home/pae_Estrategias/pae_Seguridad_Inicio/pae_Esquema_Nacional_de_Seguridad.html?idioma=en#.VwvcgmmcGM9))
 - [Conditions de Microsoft Online Services](https://aka.ms/Online-Services-Terms)
-- [Conformité du Centre de gestion de la confidentialité Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>Télécharger notre document d’information sur la conformité
-
-Vous souhaitez en savoir plus sur nos démarches concernant la conformité ? Téléchargez notre fichier [PDF](https://download.microsoft.com/download/2/3/2/23208181-BA86-4011-8B4A-3CA7E8E383A1/ENS-Spain-Compliance.pdf) (disponible uniquement en anglais pour le moment).
+- [Conformité sur le site Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)

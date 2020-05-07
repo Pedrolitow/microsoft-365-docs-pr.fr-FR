@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: d621017a125a43fc0fc9523e6ce8700b66077f2e
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 4f97b0c0d5af681ed55a119f7ebbaf6c89fb1393
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602531"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44066631"
 ---
 # <a name="digital-production-partnership-dpp-united-kingdom"></a>Partenariat de production numérique (DPP) Royaume-Uni
 
@@ -56,7 +56,3 @@ La marque de diffusion Azure est valide pour un an et renouvelée annuellement.
 - [DPP validé dans le Guide de l’utilisateur de la liste de vérification de diffusion du programme de sécurité](https://dpp-assets.s3.amazonaws.com/wp-content/uploads/2017/10/CTS_BroadcastChecklistUserGuide.pdf)
 - [NABA et DPP diffuseurs pour promouvoir les besoins en matière de sécurité informatique pour les fournisseurs](https://nabanet.com/wp-content/uploads/2017/08/NABAcaster-Issue_26.pdf)
 - [Conformité sur le site Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>Télécharger notre document d’information sur la conformité
-
-Vous souhaitez en savoir plus sur nos démarches concernant la conformité ? Téléchargez notre fichier [PDF](https://download.microsoft.com/download/3/C/6/3C63143B-41BA-4ED7-A2A8-DDE6B0B04036/DPP-Compliance.pdf) (disponible uniquement en anglais pour le moment).

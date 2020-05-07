@@ -17,13 +17,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: ''
-ms.openlocfilehash: 1334a90dc2e98e720aa9da392bd558adb34b37b2
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: Découvrez comment placer des suspensions sur des dépositaires et leurs sources de données afin de conserver le contenu pertinent pour votre cas de découverte électronique avancée.
+ms.custom: seo-marvel-mar2020
+ms.openlocfilehash: 8789889a243bad15f1c29c0bd392d7273574b62c
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632959"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034123"
 ---
 # <a name="manage-holds-in-advanced-ediscovery"></a>Gérer les suspensions dans Advanced eDiscovery
 
@@ -122,7 +123,7 @@ Microsoft teams est basé sur les groupes Office 365. Par conséquent, leur mise
 - **Comment puis-je mapper un site Microsoft 365 supplémentaire ou Microsoft teams à un dépositaire ? Qu’en est-il de la mise en place d’une absence privative de rôle sur les groupes Microsoft 365 et Microsoft teams ?** Microsoft teams est basé sur les groupes Microsoft 365. Par conséquent, leur mise en attente dans un cas eDiscovery est très similaire. Gardez les points suivants à l’esprit lorsque vous placez des groupes Microsoft 365 et Microsoft teams en conservation.
   - Pour placer le contenu situé dans les groupes Microsoft 365 et Microsoft teams en conservation, vous devez spécifier la boîte aux lettres et le site SharePoint associés à un groupe ou une équipe.
   
-  - Exécutez la cmdlet **Get-UnifiedGroup** dans Exchange Online pour afficher les propriétés d’un groupe ou d’une équipe Microsoft 365. Il s’agit d’un moyen efficace pour obtenir l’URL du site associé à un groupe Microsoft 365 ou une équipe Microsoft. Par exemple, la commande suivante affiche les propriétés sélectionnées pour un groupe Microsoft 365 nommé équipe leadership senior :
+  - Exécutez la cmdlet **Get-UnifiedGroup** dans Exchange Online pour afficher les propriétés d’un groupe ou d’une équipe Microsoft 365. Il s’agit d’un moyen efficace pour obtenir l’URL du site associé à un groupe Microsoft 365 ou une équipe Microsoft. Par exemple, la commande suivante affiche les propriétés sélectionnées d’un groupe Microsoft 365 nommé Senior Leadership Team :
 
 
     ```text

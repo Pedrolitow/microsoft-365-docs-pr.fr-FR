@@ -20,14 +20,21 @@ search.appverid:
 - GEA150
 ms.assetid: a36e5a52-4df2-479e-bb97-9e67b8483e10
 description: Découvrez comment modifier le profil de votre organisation, par exemple le nom de l’organisation, l’adresse, le téléphone, le contact technique et la messagerie électronique.
-ms.openlocfilehash: 94f2c875a9373675fd044db7b73251cefe859647
-ms.sourcegitcommit: 997f6227f33c3683ade9672e881d09216df22ee9
+ms.openlocfilehash: a1b792dd74c38e93489bccc49e3a034e1da889e4
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "44016013"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44139672"
 ---
 # <a name="change-your-organizations-address-technical-contact-and-more"></a>Modifier l'adresse de votre organisation, le contact technique et d'autres informations de profil
+
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> Le centre d’administration change. Si votre expérience ne correspond pas aux détails présentés ici, reportez-vous [à la rubrique à propos du nouveau centre d’administration Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+
+::: moniker-end
   
 Vous pouvez modifier votre profil d’organisation, comme le nom de votre organisation, votre adresse, votre téléphone et votre contact technique. **Pour mettre à jour ces informations, vous devez être un administrateur général.**
   

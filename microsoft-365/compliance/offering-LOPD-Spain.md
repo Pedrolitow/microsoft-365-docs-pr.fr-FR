@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: dd12d261c52f79bf6b9e8de747bb8fcaec775686
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 2582dcc9c865ad96390163ffef819811906cf0de
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602201"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44066621"
 ---
 # <a name="spanish-royal-decree-17202007-spanish-organic-law-151999"></a>Décret Royal espagnol 1720/2007, Loi organique espagnole 15/1999
 
@@ -73,7 +73,3 @@ Oui. Si votre organisation requiert ou cherche une accréditation conformément 
 - Loi organique 15/1999 du 13 décembre pour la protection des données à caractère personnel ([espagnol](https://www.boe.es/buscar/act.php?id=BOE-A-1999-23750))
 - [Conditions de Microsoft Online Services](https://aka.ms/Online-Services-Terms)
 - [Conformité sur le site Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>Télécharger notre document d’information sur la conformité
-
-Vous souhaitez en savoir plus sur nos démarches concernant la conformité ? Téléchargez notre fichier [PDF](https://download.microsoft.com/download/A/2/8/A280F049-3C15-4638-A2FA-EFD2793A956E/LOPD-Compliance.pdf) (disponible uniquement en anglais pour le moment).

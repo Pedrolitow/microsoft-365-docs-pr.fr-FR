@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: f4d8cae9-6d06-4c4b-b4e5-6581fd05ea82
 description: 'Remplacez votre adresse de messagerie initiale par une adresse de messagerie conviviale telle que tom@fourthcoffee.com. Pour ce faire, vous devez acheter un nom de domaine et l’ajouter à Microsoft 365. '
-ms.openlocfilehash: d419521210740cfa76a911cf0d66e7826ee8e626
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: baa2e49d98ed1d7b3de9af78b84403d028b4c91d
+ms.sourcegitcommit: 83f980927728bc080f97a3e6dc70dc305f3df841
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43629058"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44053823"
 ---
 # <a name="change-your-email-address-to-use-your-custom-domain"></a>Changer votre adresse de courrier pour utiliser votre domaine personnalisé
 
@@ -53,7 +53,7 @@ Votre adresse de messagerie initiale dans Office 365 géré par 21Vianet inclut 
 
 ::: moniker-end
 
-Lorsque vous modifiez l’adresse de messagerie de votre domaine pour qu’elle vienne à Microsoft 365, en mettant à jour l’enregistrement MX de votre domaine au cours de l’installation, tous les messages envoyés à ce domaine débuteront à Microsoft 365. Vérifiez que vous avez ajouté des utilisateurs et créé des boîtes aux lettres dans Microsoft 365 pour toutes les personnes qui disposent d’un courrier électronique sur votre domaine avant de modifier l’enregistrement MX. Vous ne souhaitez pas déplacer le courrier électronique de tous les membres de votre domaine vers Microsoft 365 ? Vous pouvez prendre des mesures pour [piloter Microsoft 365 avec seulement quelques adresses de messagerie](https://support.office.com/article/39cee536-6a03-40cf-b9c1-f301bb6001d7.aspx).
+Lorsque vous modifiez l’adresse de messagerie de votre domaine pour qu’elle vienne à Microsoft 365, en mettant à jour l’enregistrement MX de votre domaine au cours de l’installation, tous les messages envoyés à ce domaine débuteront à Microsoft 365. Vérifiez que vous avez ajouté des utilisateurs et créé des boîtes aux lettres dans Microsoft 365 pour toutes les personnes qui disposent d’un courrier électronique sur votre domaine avant de modifier l’enregistrement MX. Vous ne souhaitez pas déplacer le courrier électronique de tous les membres de votre domaine vers Microsoft 365 ? Vous pouvez prendre des mesures pour [piloter Microsoft 365 avec seulement quelques adresses de messagerie](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq).
   
 ## <a name="change-your-email-address-to-use-your-custom-domain-using-the-microsoft-365-admin-center"></a>Modifier votre adresse de courrier pour utiliser votre domaine personnalisé à l’aide du centre d’administration Microsoft 365
 

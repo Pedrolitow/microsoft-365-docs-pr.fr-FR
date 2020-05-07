@@ -19,14 +19,21 @@ search.appverid:
 - MOE150
 ms.assetid: 9b76065f-29b9-4b89-8059-c5f9db9ddbf6
 description: Découvrez comment personnaliser des rapports dans le navigateur et Power BI Desktop.
-ms.openlocfilehash: 6e4bb6cf977607ca6e3b3f57240ac89dbd530e4f
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 4f0c85802ecb5db9c57add2fa6dd561827e8fa22
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42355155"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44140708"
 ---
 # <a name="customize-the-reports-in-microsoft-365-usage-analytics"></a>Personnaliser les rapports dans l’analyse de l’utilisation de Microsoft 365
+
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> Le centre d’administration change. Si votre expérience ne correspond pas aux détails présentés ici, reportez-vous [à la rubrique à propos du nouveau centre d’administration Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+
+::: moniker-end
 
 L’analyse de l’utilisation de Microsoft 365 fournit un tableau de bord dans Power BI qui offre des informations sur la façon dont les utilisateurs adoptent et utilisent Microsoft 365. Le tableau de bord n'est qu'un point de départ pour interagir avec les données d'utilisation. Les rapports peuvent être personnalisés pour fournir des informations plus pertinentes.
   

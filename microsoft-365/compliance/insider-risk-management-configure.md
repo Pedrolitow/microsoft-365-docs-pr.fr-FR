@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 7e903467a35427e4d1c6fae0b29f41d970d0fbc8
-ms.sourcegitcommit: e55e4747d3b838baacab8985aefc24aac245c431
+ms.openlocfilehash: b5efda8f6b4b7937b98a9357ad3bb2c661541256
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44043315"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44065819"
 ---
 # <a name="get-started-with-insider-risk-management"></a>Prise en main de la gestion des risques internes
 
@@ -34,8 +34,10 @@ Avant de commencer à gérer les risques initiaux, vous devez confirmer votre [a
 
 - Abonnement Microsoft 365 E5 (payant ou version d’évaluation)
 - Microsoft 365 E3 subscription + le complément de conformité Microsoft 365 E5
+- Microsoft 365 E3 subscription + le complément de gestion des risques de Microsoft 365 E5 Insider
 - Abonnement Microsoft 365 a5 (payant ou version d’évaluation)
 - Abonnement Microsoft 365 a3 + complément Microsoft 365 a5 Compliance
+- Abonnement Microsoft 365 a3 + complément de gestion des risques Microsoft 365 a5 Insider
 
 Les utilisateurs inclus dans les stratégies de gestion des risques internes doivent disposer de l’une des licences ci-dessus.
 
@@ -49,7 +51,7 @@ En fonction de la structure de votre équipe de gestion de la conformité, vous 
 
 | **Groupe de rôles** | **Autorisations de rôle** |
 | :---- | :---------------- |
-| **Gestion des risques internes** | Utilisez ce groupe de rôles pour gérer la gestion des risques Insider de votre organisation dans un seul groupe. En ajoutant tous les comptes d’utilisateur pour les administrateurs, analystes et investigateurs désignés, vous pouvez configurer des autorisations de gestion des risques Insider dans un seul groupe. Ce groupe de rôles contient tous les rôles d’autorisation de gestion des risques Insider. Cette configuration est la méthode la plus simple pour démarrer rapidement avec la gestion des risques initiés et pour les organisations qui n’ont pas besoin d’autorisations distinctes définies pour des groupes d’utilisateurs distincts.|
+| **Gestion des risques initiés** | Utilisez ce groupe de rôles pour gérer la gestion des risques Insider de votre organisation dans un seul groupe. En ajoutant tous les comptes d’utilisateur pour les administrateurs, analystes et investigateurs désignés, vous pouvez configurer des autorisations de gestion des risques Insider dans un seul groupe. Ce groupe de rôles contient tous les rôles d’autorisation de gestion des risques Insider. Cette configuration est la méthode la plus simple pour démarrer rapidement avec la gestion des risques initiés et pour les organisations qui n’ont pas besoin d’autorisations distinctes définies pour des groupes d’utilisateurs distincts.|
 | **Administrateur de gestion des risques des Insiders** | Utilisez ce groupe de rôles pour configurer initialement la gestion des risques initiés et, par la suite, pour séparer les administrateurs des risques des Insiders en un groupe défini.  Les utilisateurs de ce groupe de rôles peuvent créer, lire, mettre à jour et supprimer des stratégies de gestion des risques internes, des paramètres globaux et des affectations de groupes de rôles. |
 | **Analystes de gestion des risques Insiders** | Utilisez ce groupe pour attribuer des autorisations à des utilisateurs qui agiront en tant qu’analystes de cas d’Insider. Les utilisateurs de ce groupe de rôles peuvent accéder aux modèles alertes, incidents et notifications de gestion des risques Insider. Ils ne peuvent pas accéder à l’Explorateur de contenu risque Insider. |
 | **Investigateurs de gestion des risques Insiders** | Utilisez ce groupe pour attribuer des autorisations aux utilisateurs qui agiront en tant qu’enquêteurs de données sur les risques des Insiders. Les utilisateurs de ce groupe de rôles peuvent accéder à toutes les alertes de gestion des risques Insider, les cas, les modèles de notifications et l’Explorateur de contenu dans tous les cas. |
