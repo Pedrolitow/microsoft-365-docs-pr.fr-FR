@@ -16,14 +16,21 @@ search.appverid:
 - MET150
 description: Découvrez comment travailler avec des fournisseurs de solutions certifiés par Microsoft (partenaires) pour acheter et gérer des produits et services pour votre organisation ou votre établissement scolaire.
 keywords: partenaire, fournisseur de solutions
-ms.openlocfilehash: ad51ee23b780de33aaaca6ad651816dba89c7bc9
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 3ba5a62caf199bf1e111ecf921df0f21568d5257
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42080361"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44141206"
 ---
 # <a name="manage-partner-relationships"></a>Gérer les relations avec les partenaires
+
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> Le centre d’administration change. Si votre expérience ne correspond pas aux détails présentés ici, reportez-vous [à la rubrique à propos du nouveau centre d’administration Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+
+::: moniker-end
 
 Vous pouvez travailler avec des fournisseurs de solutions certifiés par Microsoft (partenaires) pour acheter et gérer des produits et des services pour votre organisation ou votre établissement scolaire. Il y a quelques étapes à suivre pour l’obtention des éléments configurés.
 
@@ -72,7 +79,7 @@ Si vous disposez déjà d’un partenaire, mais que vous n’avez pas encore sig
 1. Si vous recevez un courrier électronique de votre partenaire, sélectionnez le lien pour accéder au centre d’administration 365 de Microsoft ou accédez à la page <a href="https://go.microsoft.com/fwlink/?linkid=2116573" target="_blank">accepter le contrat</a> .
 2. Sélectionnez le lien pour le **contrat client Microsoft** et lisez le document.
 3. Cochez la case pour confirmer que vous lisez le contrat.
-4. Sélectionnez **accepter**.
+4. Sélectionnez **Accepter**.
 5. La liste des partenaires avec lesquels vous travaillez s’affiche. Sélectionnez un partenaire pour afficher les détails.
 
 ## <a name="remove-partner-admin-privileges"></a>Supprimer les privilèges d’administrateur partenaire

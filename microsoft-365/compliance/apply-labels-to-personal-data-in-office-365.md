@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 description: Découvrez comment utiliser des étiquettes Office dans le cadre de votre plan de protection Règlement général sur la protection des données (RGPD).
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 2ad80a63470d0afa4cfb946def18f3408f8a27f4
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 42cfc73433a7087f0f5dd62f2da9b27b5a3cf48d
+ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034358"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44165257"
 ---
 # <a name="apply-labels-to-personal-data"></a>Appliquer des étiquettes aux données personnelles
 
@@ -182,7 +182,7 @@ Créez des étiquettes et des stratégies dans le Centre de sécurité ou de con
 <tr class="odd">
 <td align="left"><p>Accordez des autorisations aux membres de votre équipe de conformité.</p></td>
 <td align="left"><p>Les membres de votre équipe de conformité qui créent des étiquettes ont besoin d’autorisations pour utiliser le Centre de sécurité et/ou de conformité. Accédez à des Autorisations dans le Centre de sécurité ou de conformité et modifiez les membres du groupe Administrateur de conformité.</p>
-<p>Pour plus d’informations, voir<a href="https://support.office.com/en-ie/article/Give-users-access-to-the-Office-365-Security-Compliance-Center-2cfce2c8-20c5-47f9-afc4-24b059c1bd76">Autoriser l’accès aux utilisateurs au Centre de sécurité et/ou de conformité</a>.</p></td>
+<p>Pour plus d’informations, voir<a href="https://docs.microsoft.com/microsoft-365/security/office-365-security/grant-access-to-the-security-and-compliance-center">Autoriser l’accès aux utilisateurs au Centre de sécurité et/ou de conformité</a>.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Créer des étiquettes de rétention.</p></td>

@@ -17,12 +17,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 56c3187999d34ac6d84c1b3857053f82bb40b2a9
-ms.sourcegitcommit: 1e9ce51efa583c33625299d17e37f58048a4169c
+ms.openlocfilehash: 9f39878ca56aef3ec8c9d89805a87196c19eb5b8
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "43804755"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44141506"
 ---
 # <a name="microsoft-secure-score"></a>Degré de sécurisation Microsoft
 
@@ -52,7 +52,7 @@ La plupart sont évaluées de manière binaire : Si vous implémentez l’actio
 
 ### <a name="products-included-in-secure-score"></a>Produits inclus dans le score de sécurité
 
-Il existe actuellement des recommandations pour l’inclusion de SharePoint Online, Exchange Online, OneDrive entreprise, la protection des informations Microsoft, etc.), Azure AD et la sécurité des applications Cloud. Des recommandations pour d’autres produits de sécurité, tels que Azure ATP et Microsoft Defender ATP, sont bientôt disponibles. Les recommandations ne couvrent pas toutes les surfaces d’attaque associées à chaque produit, mais il s’agit d’une base de référence correcte. Vous pouvez également marquer les actions d’amélioration telles qu’elles sont couvertes par un tiers.
+Il existe actuellement des recommandations pour Microsoft 365 (y compris Exchange Online), Azure AD, Microsoft Defender ATP, Azure ATP et la sécurité des applications Cloud. Des recommandations pour d’autres produits de sécurité seront bientôt disponibles. Les recommandations ne couvrent pas toutes les surfaces d’attaque associées à chaque produit, mais il s’agit d’une base de référence correcte. Vous pouvez également marquer les actions d’amélioration telles qu’elles sont couvertes par un tiers.
 
 ## <a name="required-permissions"></a>Autorisations requises
 
@@ -110,8 +110,6 @@ Le classement repose sur le nombre de points restants à atteindre, les difficul
 
 ### <a name="actions"></a>Actions
 
-Les actions étiquetées [non notées] ne sont pas suivies par le score de sécurité Microsoft. Vous pouvez toujours prendre des mesures, mais ces dernières n’affecteront pas votre score. Si une action est suivie par le score de sécurité Microsoft à l’avenir et que vous l’avez déjà effectuée, votre score de sécurité reflète automatiquement le changement.
-
 Lorsque vous sélectionnez une action d’amélioration spécifique, un survol s’affiche. Pour terminer l’action, vous disposez de plusieurs options :
 
 1. Sélectionnez **afficher les paramètres** pour accéder à l’écran de configuration et effectuer les modifications. Vous pouvez ensuite obtenir les points que l’action est utile, visible en haut du volant. La mise à jour des points peut prendre jusqu’à 24 heures.
@@ -122,7 +120,7 @@ Lorsque vous sélectionnez une action d’amélioration spécifique, un survol s
 
 ![Exemple d’action d’amélioration du score sécurisé](../../media/secure-score/secure-score1x450.png)
 
-*Figures 2 & 3 : lanceurs d’actions d’amélioration*
+*Figures 2 : menu démenu d’action d’amélioration*
 
 ## <a name="monitor-improvements-over-time"></a>Surveiller les améliorations au fil du temps
 

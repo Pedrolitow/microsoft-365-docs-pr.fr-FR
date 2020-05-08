@@ -21,14 +21,21 @@ search.appverid:
 - GEA150
 ms.assetid: 9b497c85-d0a4-4735-80fa-d3565bc05bd1
 description: Découvrez comment supprimer des licences de comptes d’utilisateur.
-ms.openlocfilehash: e3c6150c2eb228e29bf6fc2b87d90809a7033660
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 49d3b4b6786bc6ab66bc0416aac847ada592664d
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43628099"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44139636"
 ---
 # <a name="unassign-licenses-from-users"></a>Annuler l'assignation des licences aux utilisateurs
+
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> Le centre d’administration change. Si votre expérience ne correspond pas aux détails présentés ici, reportez-vous [à la rubrique à propos du nouveau centre d’administration Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+
+::: moniker-end
 
 ::: moniker range="o365-worldwide"
 Vous pouvez supprimer ou annuler l’affectation des licences des utilisateurs sur la page **utilisateurs actifs** ou sur la page **licences** . La méthode à utiliser varie selon que vous souhaitez annuler l’affectation de licences de produits à des utilisateurs spécifiques ou supprimer l’affectation de licences aux utilisateurs de produits spécifiques.
@@ -67,7 +74,7 @@ Lorsque vous utilisez la page **licences** pour annuler l’affectation des lice
 
 ::: moniker range="o365-germany"
 
-1. Dans le Centre d’administration, accédez à la page **Utilisateurs >** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Utilisateurs actifs</a>.
+1. Dans le Centre d’administration, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Utilisateurs actifs</a>.
 
 2. Sélectionnez l’utilisateur pour lequel vous souhaitez annuler l’affectation de la licence.
 
@@ -114,7 +121,7 @@ Lorsque vous utilisez la page **licences** pour annuler l’affectation des lice
 
 ::: moniker range="o365-germany"
   
-1. Dans le Centre d’administration, accédez à la page **Utilisateurs >** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Utilisateurs actifs</a>.
+1. Dans le Centre d’administration, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Utilisateurs actifs</a>.
 
 2. Activez les cases à cocher en regard des noms des utilisateurs pour lesquels vous souhaitez annuler l’affectation de toutes les licences.
 
@@ -128,7 +135,7 @@ Lorsque vous utilisez la page **licences** pour annuler l’affectation des lice
 
 ::: moniker range="o365-21vianet"
   
-1. Dans le Centre d’administration, accédez à la page **Utilisateurs >** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Utilisateurs actifs</a>.
+1. Dans le Centre d’administration, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Utilisateurs actifs</a>.
 
 2. Activez les cases à cocher en regard des noms des utilisateurs pour lesquels vous souhaitez annuler l’affectation de toutes les licences.
 
@@ -142,7 +149,7 @@ Lorsque vous utilisez la page **licences** pour annuler l’affectation des lice
 
 ## <a name="what-you-need-to-know-about-unassigning-licenses-for-users"></a>Ce que vous devez savoir sur l’annulation de l’affectation de licences aux utilisateurs
 
-- Vous devez être un administrateur général, un administrateur de facturation, un administrateur de licence ou un administrateur de gestion des utilisateurs. Pour plus d’informations, consultez la rubrique [à propos des rôles d’administrateur Microsoft 365](../add-users/about-admin-roles.md).
+- Vous devez être administrateur général, administrateur de facturation, administrateur de licence ou administrateur de gestion des utilisateurs. Pour plus d'informations, consultez [À propos des rôles d'administrateur Microsoft 365](../add-users/about-admin-roles.md).
 
 - Vous pouvez [supprimer des licences de comptes d'utilisateurs à l'aide d'Office 365 PowerShell](https://go.microsoft.com/fwlink/p/?linkid=848428).
 

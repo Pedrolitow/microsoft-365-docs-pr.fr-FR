@@ -21,12 +21,12 @@ ms.assetid: 0dc55430-98d6-4cbe-ba69-1a4ad29a967d
 ROBOTS: NOINDEX
 description: 'Découvrez les types d’utilisateurs dans le centre d’administration. '
 ms.custom: okr_smb
-ms.openlocfilehash: b9a705d651aff3cde9fdd32d0122e8947e574715
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 152be955ffdb5526c974d3b0f4d19693cb29e948
+ms.sourcegitcommit: d688a296dc2b094b70da55334c9a3ad91236cf6f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627763"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44155351"
 ---
 # <a name="quick-help-types-of-users"></a>Aide rapide : Types d'utilisateurs
 
@@ -45,7 +45,7 @@ Sur la page **utilisateurs actifs** dans le centre d’administration 365 de Mic
 |Administrateurs de mot de passe  <br/> |Ces utilisateurs peuvent réinitialiser les mots de passe, gérer les demandes de service et surveiller l'état d'intégrité des services à votre place.  <br/> |
 |Administrateurs de services  <br/> |Ces utilisateurs peuvent gérer les demandes de service et surveiller l'état d'intégrité des services à votre place.  <br/> |
 |Administrateurs de gestion des utilisateurs  <br/> |Ces utilisateurs peuvent réinitialiser les mots de passe, surveiller l'état d'intégrité des services et gérer les comptes d'utilisateurs, les groupes d'utilisateurs et les demandes de service. Ils ne peuvent pas supprimer un administrateur général, créer d'autres rôles d'administrateur ou réinitialiser les mots de passe des administrateurs de facturation, généraux et de services.  <br/> |
-|Ajouter un filtre personnalisé  <br/> |Cette option vous permet de créer un filtre personnalisé pour afficher uniquement certains types d’utilisateurs de votre préférence, tels que les utilisateurs qui se trouvent sur le plan Microsoft 365 Apps for Business. [Aide rapide : filtrer les utilisateurs](https://support.office.com/article/8ac6a63c-04d8-4ceb-91af-d7e27b6eac0c).  <br/> |
+|Ajouter un filtre personnalisé  <br/> |Cette option vous permet de créer un filtre personnalisé pour afficher uniquement certains types d’utilisateurs de votre préférence, tels que les utilisateurs qui se trouvent sur le plan Microsoft 365 Apps for Business. [Aide rapide : filtrer les utilisateurs](https://docs.microsoft.com/microsoft-365/admin/add-users/create-edit-or-delete-a-custom-user-view).  <br/> |
    
 ## <a name="related-articles"></a>Articles connexes
 

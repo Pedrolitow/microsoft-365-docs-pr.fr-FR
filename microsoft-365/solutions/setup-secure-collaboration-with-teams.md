@@ -9,16 +9,16 @@ ms.prod: microsoft-365-enterprise
 localization_priority: Normal
 ms.collection:
 - M365-collaboration
-ms.custom:
 - M365solutions
+ms.custom: ''
 f1.keywords: NOCSH
 description: Découvrez comment configurer teams pour protéger vos données en fonction de leur sensibilité.
-ms.openlocfilehash: 77493398b11109a51c4e60599561fd8cd4f6c3ac
-ms.sourcegitcommit: 101084f9c81616342d78493232d8f13f5ffa4ddf
+ms.openlocfilehash: 8704c3a0a271c247652d611e963ff1d26308dcdb
+ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "44002671"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44159466"
 ---
 # <a name="set-up-secure-collaboration-with-microsoft-365"></a>Configurer la collaboration sécurisée avec Microsoft 365
 
@@ -68,7 +68,7 @@ Ces niveaux de *ligne de base*, *sensibles*et *hautement sensibles* , augmentent
 
 ||**Niveau de référence**|**Niveau sensible**|**Niveau hautement sensible**|
 |:--|:-----------|:------------|:-------------------|
-|Équipe publique ou privée|Les deux|Private|Private|
+|Équipe publique ou privée|Les deux|Privé|Privé|
 |Partage non authentifié|Blocked|Blocked|Blocked|
 |Partage de fichiers|Autorisé|Autorisé|Seuls les propriétaires d’équipe peuvent partager.|
 |Membres de l’équipe|Tout le monde peut rejoindre des équipes publiques.<br>Approbation du propriétaire de l’équipe requise pour rejoindre des équipes privées.|Approbation du propriétaire de l’équipe requise pour rejoindre le groupe.|Approbation du propriétaire de l’équipe requise pour rejoindre le groupe.|
@@ -85,9 +85,9 @@ La configuration de ces couches implique les opérations suivantes :
 
 Commencez par le niveau de ligne de base, puis ajoutez des équipes qui utilisent les niveaux *sensibles* et *hautement sensibles* selon vos besoins afin de protéger les informations de votre organisation. Consultez les ressources suivantes pour commencer :
 
-- [Configurer teams avec la protection de base](configure-teams-baseline-protection.md)
-- [Configurer teams avec protection des données sensibles](configure-teams-sensitive-protection.md)
-- [Configurer teams avec la protection des données hautement sensibles](configure-teams-highly-sensitive-protection.md)
+- [Configurer les équipes avec la protection de référence](configure-teams-baseline-protection.md)
+- [Configurer les équipes avec la protection des données sensibles](configure-teams-sensitive-protection.md)
+- [Configurer des équipes avec la protection des données hautement sensibles](configure-teams-highly-sensitive-protection.md)
 
 Si vous disposez d’un projet hautement sensible qui nécessite une protection supplémentaire contre le partage même au sein de votre organisation, vous pouvez configurer une équipe qui utilise sa propre étiquette de confidentialité pour chiffrer les fichiers afin que seuls les membres de l’équipe puissent les lire. Pour plus d’informations, consultez [la rubrique Configure a Team with Security isolation](secure-teams-security-isolation.md) .
 

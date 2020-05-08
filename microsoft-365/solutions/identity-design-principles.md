@@ -11,15 +11,15 @@ localization_priority: Normal
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.custom:
 - M365solutions
+ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 0b0d79906093df544dc501dd5fff7638833ea54c
-ms.sourcegitcommit: 101084f9c81616342d78493232d8f13f5ffa4ddf
+ms.openlocfilehash: c830e7f7b0366623520d7ba4e5a47a51e73f09ad
+ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "44002849"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44160377"
 ---
 # <a name="to-identity-and-beyond--one-architects-viewpoint"></a>Pour identifier et au-delà : point de vue d’un architecte
 
@@ -143,7 +143,7 @@ Si vous acceptez cette définition d’autorisation étendue, vous devez implém
 
 Bien entendu, outre Azure AD, divers services et applications ont leurs propres modèles d’autorisation spécifiques. Certains de ces éléments sont décrits plus loin dans la section délégation.
 
-### <a name="audit"></a>Contrôlé
+### <a name="audit"></a>Audit
 Azure AD offre [des fonctionnalités d’audit et de création de rapports](https://docs.microsoft.com/azure/active-directory/reports-monitoring/) détaillées. Toutefois, il ne s’agit généralement pas de la seule source d’informations nécessaire pour prendre des décisions en matière de sécurité. Pour plus d’informations, reportez-vous à la section délégation.
 
 ## <a name="there-is-no-exchange"></a>Il n’existe pas d’Exchange

@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_IP
 description: Avec Office 365, votre contenu est chiffré au repos et en transit avec le chiffrement, les protocoles et les technologies les plus puissants disponibles. Obtenez une vue d’ensemble du chiffrement dans Office 365.
-ms.openlocfilehash: fdd1c50c7fde1892b5bab4ad83cddf8e032f4d61
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 16b7786097690af6a2dbb558582a7cf88e605bec
+ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631679"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44166005"
 ---
 # <a name="encryption"></a>Chiffrement
 
@@ -63,7 +63,7 @@ Pour en savoir plus, consultez les ressources suivantes :
   
 - [Qu’est-ce que Azure Rights Management?](https://docs.microsoft.com/information-protection/understand-explore/what-is-azure-rms)
 
-- [Activer la gestion des droits dans le centre d’administration](https://support.office.com/article/5b6d3ac7-b1ac-428e-b03e-50e882f85a6e)
+- [Activer la gestion des droits dans le centre d’administration](https://docs.microsoft.com/office365/enterprise/activate-rms-in-office-365)
 
 - [Set up Information Rights Management (IRM) in SharePoint admin center](set-up-irm-in-sp-admin-center.md)
 
@@ -75,11 +75,11 @@ Pour en savoir plus, consultez les ressources suivantes :
 |:-----|:-----|
 |Configurer le chiffrement pour mon organisation  <br/> |[Configurer le chiffrement dans Office 365 Entreprise](set-up-encryption.md) <br/> |
 |Afficher des détails sur les certificats, les technologies et les suites de chiffrement TLS <br/> |[Détails techniques sur le chiffrement](technical-reference-details-about-encryption.md) <br/> |
-|Utiliser des messages chiffrés sur un appareil mobile  <br/> |[Afficher des messages chiffrés sur votre appareil Android](https://support.office.com/article/83d60f17-2305-407a-a762-7d518401fdeb) <br/> [Afficher des messages chiffrés sur votre iPhone ou iPad](https://support.office.com/article/4d631321-0d26-4bcc-a483-d294dd0b1caf) <br/> |
+|Utiliser des messages chiffrés sur un appareil mobile  <br/> |[Afficher des messages chiffrés sur votre appareil Android](https://support.office.com/article/83d60f17-2305-407a-a762-7d518401fdeb) <br/> [Afficher des messages chiffrés sur votre iPhone ou iPad](https://support.microsoft.com/en-us/office/view-protected-messages-on-your-iphone-or-ipad-4d631321-0d26-4bcc-a483-d294dd0b1caf) <br/> |
 |Chiffrer un document à l’aide de la protection par mot de passe  <br/><br/>  La protection par mot de passe n’est pas prise en charge dans un navigateur. Utiliser les versions de bureau de Word, Excel et PowerPoint pour la protection par mot de passe. |[Ajouter ou supprimer la protection dans votre document, classeur ou présentation](https://support.office.com/article/05084cc3-300d-4c1a-8416-38d3e37d6826) <br/> Choisissez une section **Ajouter une protection** , puis sélectionnez **chiffrer avec mot de passe**.  |
 |Supprimer le chiffrement d’un document  <br/> |[Ajouter ou supprimer la protection dans votre document, classeur ou présentation](https://support.office.com/article/05084cc3-300d-4c1a-8416-38d3e37d6826) <br/> Choisissez une section **protection contre la suppression** , puis consultez **supprimer le chiffrement du mot de passe**.  |
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Sujets associés
 
 [Planifier les fonctionnalités de protection des informations et de sécurité de Microsoft 365](plan-for-security-and-compliance.md)
 

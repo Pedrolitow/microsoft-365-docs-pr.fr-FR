@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Protégez-vous contre le hameçonnage et les autres attaques à l’aide de Microsoft 365 pour les campagnes.
-ms.openlocfilehash: 2b0acd42b1c272bba7078bf6bc09944540ca9e42
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 6f53cc069de2d9162d81a5049128dd35064003c1
+ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42080601"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44165708"
 ---
 # <a name="protect-yourself-against-phishing-and-other-attacks"></a>Protégez-vous contre le hameçonnage et les autres attaques
 
@@ -43,7 +43,7 @@ Microsoft 365 inclut de nombreuses protections pour vous protéger contre les at
 
 **Réduire le courrier indésirable**
 
-Suivez ces [10 conseils sur la façon de réduire le courrier indésirable](https://support.office.com/article/10-tips-on-how-to-help-reduce-spam-55F756E8-688B-41C3-A086-8F68CCC592F6).
+Suivez ces [10 conseils sur la façon de réduire le courrier indésirable](https://support.microsoft.com/en-us/office/10-tips-on-how-to-help-reduce-spam-55f756e8-688b-41c3-a086-8f68ccc592f6).
 
 **Rapport.**
 
@@ -74,6 +74,6 @@ Téléchargez cette infographie avec des conseils pour vous et les membres de vo
 ## <a name="set-it-up"></a>Configuration
 
 Pour en savoir plus, consultez les informations suivantes :
-- [Protégez vos fichiers et vos communications avec Office](https://support.office.com/article/keep-your-files-and-communications-safe-with-office-c4ddc381-7395-42da-887c-8836a3bb975f).
+- [Protégez vos fichiers et vos communications avec Office](https://support.microsoft.com/en-us/office/keep-your-files-and-communications-safe-with-office-c4ddc381-7395-42da-887c-8836a3bb975f).
 - [Restez sécurisé et privé au travail](https://support.office.com/article/stay-secure-and-private-at-work-104c7d91-b25a-453d-beee-ba64b6c6fc2d).
   

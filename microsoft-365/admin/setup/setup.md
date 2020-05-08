@@ -25,12 +25,12 @@ search.appverid:
 - BEA160
 ms.assetid: 6a3a29a0-e616-4713-99d1-15eda62d04fa
 description: Découvrez comment configurer Microsoft 365 Business Standard, Microsoft 365 Business Basic, Microsoft 365 Apps for business ou un abonnement Office 365 pour l’éducation.
-ms.openlocfilehash: 812d1a65986f53e53a02d4c1b70c823dffa98786
-ms.sourcegitcommit: 83f980927728bc080f97a3e6dc70dc305f3df841
+ms.openlocfilehash: 9415d81e88234ac537bb531d531b891f0a4feb80
+ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44053859"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44165082"
 ---
 # <a name="set-up-microsoft-365-for-business"></a>Configurer Microsoft 365 Entreprises
 
@@ -285,7 +285,7 @@ Vous avez besoin d’étapes plus détaillées ou vous voulez installer la versi
 
 Installez Office sur votre appareil mobile et configurez Outlook pour utiliser votre nouvelle boîte aux lettres Microsoft. Tous les membres de votre équipe doivent effectuer cette étape. Chaque membre peut installer les applications mobiles Office sur un maximum de 5 téléphones et 5 tablettes.
   
-Découvrez les étapes à suivre en fonction de votre appareil : [Android](https://support.office.com/article/6ef2ebf2-fc2d-474a-be4a-5a801365c87f.aspx) | [iOS](https://support.office.com/article/0402b37e-49c4-4419-a030-f34c2013041f.aspx) | [Windows Phone](https://support.office.com/article/9bccc8b8-a321-4d0d-a45e-6e06a3438e43.aspx)
+Découvrez les étapes à suivre en fonction de votre appareil : [Android](https://support.office.com/article/6ef2ebf2-fc2d-474a-be4a-5a801365c87f.aspx) | [iOS](https://support.office.com/article/0402b37e-49c4-4419-a030-f34c2013041f.aspx) | [Windows Phone](https://support.microsoft.com/fr-FR/office/set-up-office-apps-and-email-on-windows-phone-9bccc8b8-a321-4d0d-a45e-6e06a3438e43)
   
 ### <a name="4-store-files-online"></a>4. Stocker des fichiers en ligne
 
@@ -313,7 +313,7 @@ Pour explorer Microsoft 365 et découvrir comment utiliser les différentes app
 
 - **Vous avez besoin d'aide ?** Si vous avez besoin d'aide pour un déploiement plus avancé, **[FastTrack](https://www.microsoft.com/fr-FR/fasttrack/microsoft-365/office-365)** est un excellent point de départ. Vous pouvez également [rechercher un partenaire](https://go.microsoft.com/fwlink/p/?linkid=391089) pour vous aider.
 
-- **Offre** Les outils et ressources suivants vous aideront à préparer votre réseau, votre annuaire et vos utilisateurs au déploiement d’Office 365 : [Préparer votre organisation à l’utilisation d’Office 365 Entreprise](https://support.office.com/article/712fced7-f9d0-4fde-8b79-286262a5d0bc).
+- **Offre** Les outils et ressources suivants vous aideront à préparer votre réseau, votre annuaire et vos utilisateurs au déploiement d’Office 365 : [Préparer votre organisation à l’utilisation d’Office 365 Entreprise](https://docs.microsoft.com/office365/enterprise/get-your-organization-ready-for-office-365).
 
 ### <a name="1-add-your-school-domain-or-connect-your-directory"></a>1. Ajouter votre domaine d’établissement d’enseignement ou connecter votre annuaire
 
@@ -339,25 +339,25 @@ Si vous utilisez Office 365 géré par 21Vianet, accédez à ce [Centre d’admi
 
 Pour démarrer l'assistant, sélectionnez **Accéder à la configuration**.
 
-Pour connaître de manière détaillée les étapes de l’Assistant, voir [Utilisation de l’Assistant Configuration](https://support.office.com/article/3c62a3b7-1680-41ca-943c-0ff01566bace.aspx).
+Pour connaître de manière détaillée les étapes de l’Assistant, voir [Utilisation de l’Assistant Configuration](https://docs.microsoft.com/microsoft-365/admin/setup/plan-your-setup).
   
-Si vous voulez synchroniser vos utilisateurs à partir d'un annuaire local ou utiliser l'authentification unique, **n'utilisez pas l'Assistant Configuration pour ajouter des utilisateurs**. À la place, lisez ce guide pour mieux comprendre les options : [Connexion de votre annuaire à Office 365](https://support.office.com/article/06a189e7-5ec6-4af2-94bf-a22ea225a7a9). Vous devez configurer l'une de ces deux options :
+Si vous voulez synchroniser vos utilisateurs à partir d'un annuaire local ou utiliser l'authentification unique, **n'utilisez pas l'Assistant Configuration pour ajouter des utilisateurs**. À la place, lisez ce guide pour mieux comprendre les options : [Connexion de votre annuaire à Office 365](https://docs.microsoft.com/office365/enterprise/about-office-365-identity). Vous devez configurer l'une de ces deux options :
   
-- [](https://support.office.com/article/06a189e7-5ec6-4af2-94bf-a22ea225a7a9#BK_Sync). Synchronisez les objets de l'annuaire local. Gérez vos utilisateurs localement. Vous pouvez également synchroniser les mots de passe de telle sorte que les utilisateurs aient le même mot de passe localement et dans le cloud. Ceux-ci doivent toutefois se reconnecter pour utiliser Office 365.
+- [](https://docs.microsoft.com/office365/enterprise/about-office-365-identity#BK_Sync). Synchronisez les objets de l'annuaire local. Gérez vos utilisateurs localement. Vous pouvez également synchroniser les mots de passe de telle sorte que les utilisateurs aient le même mot de passe localement et dans le cloud. Ceux-ci doivent toutefois se reconnecter pour utiliser Office 365.
 
-- [](https://support.office.com/article/06a189e7-5ec6-4af2-94bf-a22ea225a7a9#BK_Federated). Synchronisez les objets de l'annuaire local. Gérez vos utilisateurs localement. Les utilisateurs ont le même mot de passe localement et dans le cloud. Ils n'ont pas besoin de se reconnecter pour utiliser Office 365. Ce modèle est souvent appelé authentification unique.
+- [](https://docs.microsoft.com/office365/enterprise/about-office-365-identity#BK_Federated). Synchronisez les objets de l'annuaire local. Gérez vos utilisateurs localement. Les utilisateurs ont le même mot de passe localement et dans le cloud. Ils n'ont pas besoin de se reconnecter pour utiliser Office 365. Ce modèle est souvent appelé authentification unique.
 
 ### <a name="2-set-up-services"></a>2. Configurer des services
 
-Configurez le courrier, le partage de fichiers, la messagerie instantanée et d’autre services et applications Office 365 : [Configurer les services et applications Office 365 Entreprise](https://support.office.com/article/7cec08a5-97fd-4761-b23b-ef3d66519e30).
+Configurez le courrier, le partage de fichiers, la messagerie instantanée et d’autre services et applications Office 365 : [Configurer les services et applications Office 365 Entreprise](https://docs.microsoft.com/office365/enterprise/configure-services-and-applications).
   
 Dans cette étape, vous pouvez installer Office 365 sur un maximum de 5 ordinateurs personnels et ordinateurs portables par personne.
   
 ### <a name="3-migrate-data"></a>3. Migrer des données
 
-Une fois que les services sont configurés, vous pouvez commencer la migration des données, telles que du courrier électronique et des fichiers : voir [Migrer les données de votre organisation vers Office 365 Entreprise](https://support.office.com/article/e2fdfc8d-547e-4419-8628-2738ed4e0f46).
+Une fois que les services sont configurés, vous pouvez commencer la migration des données, telles que du courrier électronique et des fichiers : voir [Migrer les données de votre organisation vers Office 365 Entreprise](https://docs.microsoft.com/office365/enterprise/migrate-data-to-office-365).
   
-Si vous utilisez un système de gestion des informations sur les étudiants (SIS) pour vos élèves et membres du personnel, découvrez comment [configurer une intégration SIS](https://support.office.com/article/f3d1147b-4ade-4905-8518-508e729f2e91.aspx).
+Si vous utilisez un système de gestion des informations sur les étudiants (SIS) pour vos élèves et membres du personnel, découvrez comment [configurer une intégration SIS](https://docs.microsoft.com/schooldatasync/overview-of-school-data-sync).
   
 ### <a name="train-your-users"></a>Former vos utilisateurs
 
