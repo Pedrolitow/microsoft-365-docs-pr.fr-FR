@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Surveiller et gérer la suppression du contenu, que vous utilisiez une révision de disposition ou que le contenu soit automatiquement supprimé en fonction des paramètres que vous avez configurés.
-ms.openlocfilehash: 47cb8f023f378796f206e436aa33e74b2993ac97
-ms.sourcegitcommit: 9d8816ddc3a97676ff947db80265e47b734f5462
+ms.openlocfilehash: 07790175d56db9b82610b4882070a54ddce3d0c2
+ms.sourcegitcommit: 8a15038a6ac16f41f6b90af52e367f888104cec9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/30/2020
-ms.locfileid: "43952617"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44156889"
 ---
 # <a name="disposition-of-content"></a>Disposition de contenu
 
@@ -63,11 +63,14 @@ Lorsque le contenu atteint la fin de sa période de rétention, il existe plusie
 
 Lorsqu’une révision de disposition est déclenchée à la fin de la période de rétention :
   
-- Les personnes que vous choisissez reçoivent une notification par courrier électronique dont le contenu doit être révisé. Ces relecteurs peuvent être des utilisateurs individuels, des groupes de distribution ou des groupes de sécurité ou des groupes Office 365. Notez que les notifications sont envoyées chaque semaine.
+- Les personnes que vous choisissez reçoivent une notification par courrier électronique dont le contenu doit être révisé. Ces relecteurs peuvent être des utilisateurs individuels, des groupes de distribution ou de sécurité, ou des groupes Microsoft 365 ([anciennement groupes Office 365](https://techcommunity.microsoft.com/t5/microsoft-365-blog/office-365-groups-will-become-microsoft-365-groups/ba-p/1303601)). Notez que les notifications sont envoyées chaque semaine.
     
 - Les réviseurs accèdent à l’onglet **disposition** dans le centre de conformité Microsoft 365 pour examiner le contenu et décider s’il faut le supprimer définitivement, prolonger sa période de rétention ou appliquer une étiquette de rétention différente.
 
 Une révision de disposition peut inclure du contenu dans des boîtes aux lettres Exchange, des sites SharePoint, des comptes OneDrive et des groupes Microsoft 365. Le contenu en attente d’une révision de disposition dans ces emplacements est supprimé uniquement lorsqu’un relecteur choisit de supprimer définitivement le contenu.
+
+> [!NOTE]
+> Une boîte aux lettres doit avoir au moins 10 Mo de données pour prendre en charge les révisions de la disposition.
 
 Vous pouvez obtenir une vue d’ensemble de toutes les destructions en attente dans l’onglet **vue d’ensemble** . Par exemple :
 
@@ -106,10 +109,10 @@ Comme vous pouvez le voir à partir de l’image, les actions prises en charge s
 - Appliquer une étiquette de rétention différente
 
 En vous fournissant des autorisations sur l’emplacement et le contenu, vous pouvez utiliser le lien dans la colonne **emplacement** pour afficher les documents à leur emplacement d’origine. Lors d’une révision de destruction, le contenu ne se déplace jamais à partir de son emplacement d’origine et n’est jamais supprimé tant que le relecteur n’a pas choisi de le faire.
-  
+
 Les notifications par courrier électronique sont envoyées automatiquement aux relecteurs chaque semaine. Ce processus planifié signifie que lorsque le contenu atteint la fin de sa période de rétention, il peut falloir jusqu’à sept jours pour que les relecteurs reçoivent la notification par courrier électronique que le contenu attend.
   
-Toutes les actions de disposition peuvent être auditées.
+Toutes les actions de disposition peuvent être auditées et le texte de justification entré par le réviseur est enregistré et affiché dans la colonne **Commentaire** de la page **éléments supprimés** .
   
 ### <a name="how-long-until-disposed-content-is-permanently-deleted"></a>Durée jusqu’à la suppression définitive du contenu supprimé
 

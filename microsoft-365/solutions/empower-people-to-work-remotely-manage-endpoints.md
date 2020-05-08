@@ -1,5 +1,5 @@
 ---
-title: 3. Déployer la gestion des points de terminaison pour vos appareils, PC et autres points de terminaison
+title: Étape 3. Déployer la gestion des points de terminaison pour vos appareils, PC et autres points de terminaison
 f1.keywords:
 - NOCSH
 author: JoeDavies-MSFT
@@ -17,14 +17,14 @@ ms.collection:
 ms.custom:
 - M365solutions
 description: Utilisez Microsoft Endpoint Manager pour gérer vos appareils de gestion, PC et autres points de terminaison.
-ms.openlocfilehash: 2a5b047aabb95d0b60c46fe3bec339e723adee0e
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+ms.openlocfilehash: 4bc467b3da76a846d6d86e8812c542aa33f5e8b1
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44049581"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44141454"
 ---
-# <a name="3-deploy-endpoint-management-for-your-devices-pcs-and-other-endpoints"></a>3. Déployer la gestion des points de terminaison pour vos appareils, PC et autres points de terminaison
+# <a name="step-3-deploy-endpoint-management-for-your-devices-pcs-and-other-endpoints"></a>Étape 3. Déployer la gestion des points de terminaison pour vos appareils, PC et autres points de terminaison
 
 Avec les travailleurs à distance, vous devez prendre en charge un nombre croissant d’appareils personnels. La gestion des points de terminaison est une approche de sécurité, basée sur des stratégies, qui exige que les appareils respectent des critères spécifiques avant de pouvoir accéder aux ressources. Microsoft Endpoint Manager offre un lieu de travail et des capacités de gestion modernes pour sécuriser vos données dans le cloud et en local. 
 

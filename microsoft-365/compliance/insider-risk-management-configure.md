@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: b5efda8f6b4b7937b98a9357ad3bb2c661541256
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: ace04c61b8bb26661201b3a2616799f0dc4ea87e
+ms.sourcegitcommit: 9ffa2fd25776726475e10148940987fa076bbd91
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44065819"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44162676"
 ---
 # <a name="get-started-with-insider-risk-management"></a>Prise en main de la gestion des risques internes
 
@@ -91,17 +91,19 @@ La gestion des risques internes prend en charge l’importation des données d�
 Consultez la rubrique [configurer un connecteur pour importer des données RH](import-hr-data.md) pour obtenir des instructions détaillées sur la configuration du connecteur rh Microsoft 365 pour votre organisation. Une fois que vous avez configuré le connecteur RH, revenez à ces étapes de configuration.
 
 >[!IMPORTANT]
->Si vous configurez un p’licy à l’aide du modèle de *vol de données emplo’ee* , vous devez configurer le connecteur RH de sorte qu’il utilise les fonctionnalités de détection de signal complètes du modèle de stratégie. Si vous configurez plusieurs connecteurs RH pour votre organisation, la gestion des risques internes extrait automatiquement les indicateurs de tous les connecteurs RH.
+>Si vous configurez une stratégie à l’aide du modèle de *vol de données des employés qui fait partie* du, vous devez configurer le connecteur RH pour qu’il utilise les fonctionnalités de détection de signal complètes du modèle de stratégie. Si vous configurez plusieurs connecteurs RH pour votre organisation, la gestion des risques internes extrait automatiquement les indicateurs de tous les connecteurs RH.
 
 ### <a name="configure-data-loss-prevention-dlp-policies"></a>Configurer les stratégies de protection contre la perte de données (DLP)
 
-La gestion des risques internes prend en charge l’utilisation des stratégies DLP pour identifier l’exposition intentionnelle ou accidentelle d’informations sensibles aux parties indésirables. Lors de la configuration d’une stratégie de gestion des risques inSided avec le modèle *fuites de données* , vous devez affecter une stratégie DLP spécifique à la stratégie. Cette stratégie permet de piloter les indicateurs d’alerte pour les informations sensibles est une partie importante de la configuration de la couverture complète de la gestion des risques dans votre organisation.
+La gestion des risques internes prend en charge l’utilisation des stratégies DLP pour identifier l’exposition intentionnelle ou accidentelle d’informations sensibles aux parties indésirables. Lors de la configuration d’une stratégie de gestion des risques inSided avec le modèle *fuites de données* , vous devez affecter une stratégie DLP spécifique à la stratégie.
 
-Consultez la rubrique [créer, tester et régler une stratégie DLP](create-test-tune-dlp-policy.md) pour obtenir des instructions détaillées sur la configuration des stratégies DLP pour votre organisation. Une fois que vous avez configuré une stratégie DLP, revenez à ces instructions de configuration "ration". "" "" "" "" "" "
+Cette stratégie permet de piloter les indicateurs de gestion des risques initiaux pour les alertes DLP de gravité élevée pour les informations sensibles et constitue une partie importante de la configuration de la couverture de la gestion des risques. Si vous configurez plusieurs stratégies DLP pour votre organisation, vous devez attribuer une stratégie de gestion des risques inSided par stratégie DLP.
+
+Consultez la rubrique [créer, tester et régler une stratégie DLP](create-test-tune-dlp-policy.md) pour obtenir des instructions détaillées sur la configuration des stratégies DLP pour votre organisation. Une fois que vous avez configuré une stratégie DLP, revenez à ces étapes de configuration.
 
 >[!IMPORTANT]
->Si vous configurez une stratégie à l’aide du modèle *fuites de données* , vous devez configurer au moins une stratégie DLP pour utiliser les fonctionnalités de détection de signal complètes du modèle de stratégie. Si vous configurez plusieurs stratégies DLP pour votre organisation, vous devez attribuer une stratégie de gestion des risques inSided par stratégie DLP.
-""""""""
+>Assurez-vous que le paramètre **rapports d’incident** de la stratégie DLP pour la gestion des risques initiés utilisé avec ce modèle est configuré pour des alertes de niveau de gravité *élevé* . Les alertes de gestion des risques internes ne seront pas générées à partir des stratégies DLP avec le champ **rapports d’incident** défini sur *faible* ou *moyen*.
+
 ## <a name="step-4-required-configure-insider-risk-settings"></a>Étape 4 (obligatoire) : configure Insider Risk Settings
 
 Les [paramètres des risques internes](insider-risk-management-policies.md#policy-settings) s’appliquent à toutes les stratégies de gestion des risques internes, quel que soit le modèle que vous avez choisi lors de la création d’une stratégie. Les paramètres sont configurés à l’aide du contrôle des **paramètres des risques Insiders** situé en haut de tous les onglets de gestion des risques Insiders. Ces paramètres contrôlent la confidentialité, les indicateurs, les fenêtres de surveillance et les détections intelligentes.

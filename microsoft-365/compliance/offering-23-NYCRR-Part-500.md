@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: e5d9c847173af4155d6c9eb0f8c59a07053435c2
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: e9b72f7206ff83b790cf41c00e3f7042eadf3664
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602891"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44066661"
 ---
 # <a name="title-23-nycrr-part-500"></a>Titre 23 NYCRR partie 500
 
@@ -76,7 +76,3 @@ Pour déterminer si votre institution est régie par le présent règlement, con
 - [Programme de conformité des services financiers de Microsoft Cloud](https://www.microsoft.com/download/confirmation.aspx?id=55332)
 - [Conformité destinée au secteur des services financiers dans Azure](https://azure.microsoft.com/resources/videos/azurecon-2015-financial-services-compliance-in-azure/)
 - [Responsabilités partagées pour le cloud computing](https://aka.ms/sharedresponsibility)- 
-
-## <a name="download-the-offering-backgrounder"></a>Téléchargez la fiche d'information sur l'offre
-
-Vous souhaitez en savoir plus sur nos démarches concernant la conformité ? Téléchargez notre fichier [PDF](https://download.microsoft.com/download/9/F/B/9FB6EE03-0096-4820-A5BF-B633EE2BE0B7/23NYCRR_Part500-Compliance.pdf) (disponible uniquement en anglais pour le moment).

@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: 70a62f09-45ea-4968-8482-43cddfb8cc01
 description: Dans cet article, vous allez apprendre à personnaliser, à organiser et à gérer votre site d’équipe pour le stockage et le partage de fichiers.
-ms.openlocfilehash: 1830cd3df75ee80f25ff0ca3147d4491103102e4
-ms.sourcegitcommit: d688a296dc2b094b70da55334c9a3ad91236cf6f
+ms.openlocfilehash: 465cd3781fb5023fa6a1c943b41fa7802d7b4a45
+ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44155280"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44165106"
 ---
 # <a name="customize-your-team-site-for-file-storage-and-sharing"></a>Personnaliser votre site d’équipe pour le stockage et le partage de fichiers
 
@@ -77,7 +77,7 @@ Pour plus d’informations sur l’expansion de vos listes avec davantage de col
   
 Si vous stockez un grand nombre de données dans une liste, voir [gérer les grandes listes et les bibliothèques dans SharePoint](https://support.office.com/article/B8588DAE-9387-48C2-9248-C24122F07C59.aspx).
   
-Visionnez une vidéo sur l’ajout de calendriers à votre site, voir [Create a Shared Calendar](https://support.office.com/article/61B96006-70E2-4535-A34F-EE4FC772F798.aspx).
+Visionnez une vidéo sur l’ajout de calendriers à votre site, voir [Create a Shared Calendar](https://support.microsoft.com/en-us/office/video-create-a-shared-calendar-in-office-365-61b96006-70e2-4535-a34f-ee4fc772f798).
 
 ## <a name="organize-sites-into-hubs"></a>Organiser les sites en hubs
 
@@ -87,7 +87,7 @@ Les sites hub vous permettent d’ajouter et d’associer des sites. Pour plus d
   
 Prêt à créer un site Hub, reportez-vous à la rubrique [créer un site hub dans SharePoint Online](/sharepoint/create-hub-site).
   
-Pour savoir comment ajouter des sites à un site Hub, consultez la rubrique [associer un site SharePoint à un site hub](https://support.office.com/article/ae0009fd-af04-4d3d-917d-88edb43efc05.aspx).
+Pour savoir comment ajouter des sites à un site Hub, consultez la rubrique [associer un site SharePoint à un site hub](https://support.microsoft.com/en-us/office/associate-a-sharepoint-site-with-a-hub-site-ae0009fd-af04-4d3d-917d-88edb43efc05).
   
 ## <a name="sharing-files-with-the-team"></a>Partage de fichiers avec l’équipe
 
@@ -115,7 +115,7 @@ Découvrez comment gérer les demandes d’accès à l’aide de la [configurati
     
   - [Installer et configurer Office sur un iPhone ou un iPad avec Microsoft 365](https://support.office.com/article/9df6d10c-7281-4671-8666-6ca8e339b628.aspx)
     
-  - [Configurer Office sur Windows Phone avec Microsoft 365](https://support.office.com/article/2b7c1b51-a717-45d6-90c9-ee1c1c5ee0b7.aspx)
+  - [Configurer Office sur Windows Phone avec Microsoft 365](https://support.microsoft.com/en-us/office/set-up-office-mobile-apps-on-a-windows-mobile-device-2b7c1b51-a717-45d6-90c9-ee1c1c5ee0b7)
     
 - [En savoir plus sur l'utilisation de OneDrive](https://go.microsoft.com/fwlink/?LinkID=511458).
     

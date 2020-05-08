@@ -15,12 +15,12 @@ ms.collection:
 - M365-security-compliance
 - remotework
 description: Protégez votre courrier électronique et vos données professionnelles contre les menaces informatiques, notamment les ransomware, le hameçonnage et les pièces jointes malveillantes.
-ms.openlocfilehash: a5d81eed4d3d6edae48cd82109f83320953782a3
-ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
+ms.openlocfilehash: abc75a7c7a8b771e5b15fb3c4f0aeb2125be4684
+ms.sourcegitcommit: d688a296dc2b094b70da55334c9a3ad91236cf6f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44046351"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44155420"
 ---
 # <a name="top-12-tasks-for-security-teams-to-support-working-from-home"></a>12 premières tâches pour les équipes de sécurité qui prennent en charge le travail à domicile
 
@@ -35,7 +35,7 @@ Pour les clients qui utilisent nos plans d’entreprise, Microsoft vous recomman
 - Microsoft 365 E3 inclut Enterprise Mobility + Security (EMS) E3 et Azure AD P1
 - Microsoft 365 E5 inclut EMS E5 et Azure AD P2
   
-||**Tâche**| Tous les plans Office 365 Enterprise|**Microsoft 365 E3** |**Microsoft 365 E5**|
+||**Tâche**| Tous les plans Office 365 Enterprise|**Microsoft 365 E3** |**Microsoft 365 E5**|
 |:-----|:-----|:-----|:-----|:-----|
 |0,1      |[Activer l’authentification multifacteur Azure](#1-enable-azure-multi-factor-authentication-mfa)   |   ![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)  |![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)   | ![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)      | 
 |n°2     | [Se protéger contre les menaces](#2-protect-against-threats) |![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png) |  ![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)       | ![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)       | 
@@ -65,11 +65,11 @@ Normalement, Microsoft vous recommande de donner aux utilisateurs 14 jours pour 
 L’application de ces stratégies ne prend que quelques minutes, mais il est prêt à prendre en charge vos utilisateurs au cours des prochains jours.  
 
 
-|Plan  |Recommandation  |
+|Planification  |Recommandation  |
 |---------|---------|
-|Plans Microsoft 365 (sans Azure AD P1 ou P2)     |[Activer les paramètres de sécurité par défaut dans Azure ad](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults). Les paramètres de sécurité par défaut dans Azure AD incluent MFA pour les utilisateurs et les administrateurs.   |
-|Microsoft 365 E3 (avec Azure AD P1)     | Utilisez des [stratégies d’accès conditionnel courantes](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-policy-common) pour configurer les stratégies suivantes : <br>- [Exiger l’authentification multifacteur pour les administrateurs](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-admin-mfa) <br>- [Exiger l’authentification multifacteur pour tous les utilisateurs](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa) <br> - [Bloquer l’authentification héritée](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-block-legacy)       |
-|Microsoft 365 E5 (avec Azure AD P2)     | En tirant parti de Azure AD Identity Protection, commencez à implémenter l' [ensemble recommandé par Microsoft de l’accès conditionnel et des stratégies associées](../enterprise/identity-access-policies.md) en créant ces deux stratégies :<br> - [Exiger l’authentification multifacteur lorsque le risque de connexion est moyen ou élevé](../enterprise/identity-access-policies.md#require-mfa-based-on-sign-in-risk) <br>- [Bloquer les clients qui ne prennent pas en charge l’authentification moderne](../enterprise/identity-access-policies.md#block-clients-that-dont-support-modern-authentication)<br>- [Les utilisateurs à haut risque doivent changer leur mot de passe](../enterprise/identity-access-policies.md#high-risk-users-must-change-password)       |
+|Plans Microsoft 365 (sans Azure AD P1 ou P2)     |[Activer les paramètres de sécurité par défaut dans Azure AD](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults). La sécurité par défaut d’Azure AD inclut l’authentification multifacteur pour les utilisateurs et les administrateurs.   |
+|Microsoft 365 E3 (avec Azure AD P1)     | Utilisez les [Stratégies d’accès conditionnel courantes](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-policy-common) pour configurer les stratégies suivantes : <br>- [Exiger l’authentification multifacteur pour les administrateurs](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-admin-mfa) <br>- [Exiger l’authentification multifacteur pour tous les utilisateurs](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa) <br> - [Bloquer l’authentification héritée](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-block-legacy)       |
+|Microsoft 365 E5 (avec Azure AD P2)     | Pour tirer parti de la protection d’identité Azure AD Identity Protection, commencez à implémenter la [série recommandée concernant l’accès conditionnel et les stratégies associées](../enterprise/identity-access-policies.md) en créant les deux stratégies suivantes :<br> - [Exiger l’authentification multifacteur lorsque le risque de connexion est moyen ou élevé](../enterprise/identity-access-policies.md#require-mfa-based-on-sign-in-risk) <br>- [Bloquer les clients ne prenant pas en charge l’authentification moderne](../enterprise/identity-access-policies.md#block-clients-that-dont-support-modern-authentication)<br>- [Les utilisateurs à risque élevé doivent modifier leur mot de passe](../enterprise/identity-access-policies.md#high-risk-users-must-change-password)       |
 | | |
 
 
@@ -217,7 +217,7 @@ En plus de ces conseils, Microsoft recommande à vos utilisateurs d’effectuer 
     
 Microsoft recommande également aux utilisateurs de protéger leurs comptes de messagerie personnels en effectuant les actions recommandées dans les articles suivants :
   
-- [Protéger votre compte de messagerie Outlook.com](https://support.office.com/article/a4f20fc5-4307-4ece-8231-6d4d4bd8a9ba.aspx)
+- [Protéger votre compte de messagerie Outlook.com](https://support.microsoft.com/en-us/office/help-protect-your-outlook-com-email-account-a4f20fc5-4307-4ece-8231-6d4d4bd8a9ba)
     
 - [Protégez votre compte Gmail à l’aide de la vérification en deux étapes](https://go.microsoft.com/fwlink/?linkid=2015688&amp;clcid=0x409)
 

@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: d7138188-086e-4a54-a155-11fa953c3930
 ROBOTS: NOINDEX
 description: Découvrez comment activer, renouveler ou ajouter des licences à un abonnement Microsoft 365 pour les entreprises.
-ms.openlocfilehash: da4e42ae2dadec8d376b9ef8d12c6d4cb4fe7af5
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 0f8233613f7929dad37167e7237be335d4e8f567
+ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636451"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44165126"
 ---
 # <a name="enter-your-product-key-purchased-from-microsoft-open"></a>Entrer la clé de produit achetée auprès de Microsoft Open
 
@@ -63,7 +63,7 @@ Si vous débutez avec Microsoft 365 for Business, Découvrez comment [configurer
 
 Consultez la liste des erreurs et solutions courantes : [problèmes liés à votre clé de produit ?](product-key-errors-and-solutions.md)
   
-Les partenaires peuvent consulter la rubrique [Partenaires : utiliser une clé de produit pour configurer un abonnement client](https://support.office.com/article/cf22c50f-95c9-4fa2-b959-c264de256d40.aspx).
+Les partenaires peuvent consulter la rubrique [Partenaires : utiliser une clé de produit pour configurer un abonnement client](https://support.microsoft.com/en-us/office/partners-use-a-product-key-to-set-up-a-customer-subscription-cf22c50f-95c9-4fa2-b959-c264de256d40).
   
 Les clients ayant acquis des licences en volume peuvent en apprendre davantage en visitant le site [Ressources et formation sur le Centre de gestion des licences en volume Microsoft](https://go.microsoft.com/fwlink/p/?LinkId=618103).
   

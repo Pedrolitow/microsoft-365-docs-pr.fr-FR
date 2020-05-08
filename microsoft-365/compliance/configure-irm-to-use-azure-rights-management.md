@@ -18,15 +18,15 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Cet article contient des informations sur les nouvelles fonctionnalités d’Office 365 le chiffrement de messages (OME).
-ms.openlocfilehash: e379e4cd9c4a1620dd394541b08c447d62a741ca
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: b1a9c58a17b5f8434325191828063ec91a116e88
+ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44033684"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44166095"
 ---
 # <a name="configure-irm-to-use-azure-rights-management"></a>Configurer IRM pour utiliser Azure Rights Management
 
-Avec la publication de nouvelles fonctionnalités pour le chiffrement de messages Office 365 (OME), vous n'avez plus besoin configurer IRM séparément. Microsoft ne recommande pas de configurer de nouveaux déploiements avec d'anciennes versions d'OME hérité et d'IRM avec Azure Rights Management. Pour plus d'informations sur les nouvelles fonctionnalités d'OME, consultez la [FAQ sur le chiffrement de messages Office 365](https://support.office.com/article/0432dce9-d9b6-4e73-8a13-4a932eb0081e). Si vous êtes prêt à commencer à utiliser les nouvelles fonctionnalités d'OME au sein de votre organisation, consultez [Configurer les nouvelles fonctionnalités de chiffrement de messages Office 365 intégrées en haut de la Protection des informations Azure](https://support.office.com/article/7ff0c040-b25c-4378-9904-b1b50210d00e).
+Avec la publication de nouvelles fonctionnalités pour le chiffrement de messages Office 365 (OME), vous n'avez plus besoin configurer IRM séparément. Microsoft ne recommande pas de configurer de nouveaux déploiements avec d'anciennes versions d'OME hérité et d'IRM avec Azure Rights Management. Pour plus d'informations sur les nouvelles fonctionnalités d'OME, consultez la [FAQ sur le chiffrement de messages Office 365](https://docs.microsoft.com/microsoft-365/compliance/ome-faq). Si vous êtes prêt à commencer à utiliser les nouvelles fonctionnalités d'OME au sein de votre organisation, consultez [Configurer les nouvelles fonctionnalités de chiffrement de messages Office 365 intégrées en haut de la Protection des informations Azure](https://docs.microsoft.com/microsoft-365/compliance/set-up-new-message-encryption-capabilities).
   
 

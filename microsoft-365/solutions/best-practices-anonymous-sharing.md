@@ -15,12 +15,12 @@ ms.custom:
 localization_priority: Priority
 f1.keywords: NOCSH
 description: Dans cet article, vous allez découvrir les meilleures pratiques relatives au partage de fichiers et de dossiers avec des utilisateurs non authentifiés.
-ms.openlocfilehash: 4660d1ab34172bf73e6bea0de3065d2c946a7d2c
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 10de9c43497bd8e07071235868414e91c20aadb5
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44036763"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44141382"
 ---
 # <a name="best-practices-for-sharing-files-and-folders-with-unauthenticated-users"></a>Meilleures pratiques relatives au partage de fichiers et de dossiers avec des utilisateurs non authentifiés
 
@@ -40,7 +40,7 @@ Une fois qu' un lien *Tout le monde* arrive à expiration, il ne peut plus être
 Pour définir une date d’expiration pour les liens Tout le monde
 1. Ouvrez le centre d’administration SharePoint Online.
 2. Dans la barre de navigation de gauche, cliquez sur **Partage**.
-3. Sous **Paramètres avancés pour les liens Tout le monde**, cochez la case **Ces liens doivent expirer dans tant de jours**.</br>
+3. Sous **Sélectionnez les options d’expiration et d’autorisations pour tous les liens**, sélectionnez la case à cocher **Ces liens doivent expirer dans ce nombre de jours**.</br>
    ![Capture d’écran des paramètres d’expiration du lien Tout le monde au niveau de l’organisation dans SharePoint](../media/sharepoint-organization-anyone-link-expiration.png)
 4. Tapez un nombre de jours dans la zone, puis cliquez sur **Enregistrer**.
 

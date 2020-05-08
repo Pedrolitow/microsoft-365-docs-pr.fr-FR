@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: c792653cf8434a14bc89776a4ec870bc0d9a67ca
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 778338220cf7897f8a557fb1e335062d3effeac5
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637978"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44066417"
 ---
 # <a name="european-union-model-clauses"></a>Clauses contractuelles types de l’Union européenne
 
@@ -39,11 +39,7 @@ Microsoft a fourni ses clauses contractuelles types au groupe de travail « Art
 
 Le groupe a déterminé que la mise en œuvre des dispositions des accords avec Microsoft satisfaisait leurs exigences strictes. (Microsoft a été le premier fournisseur de service Cloud à recevoir une lettre de soutien et d'approbation du groupe.) L’approbation couvrait les engagements pris dans les clauses contractuelles types de l’Union européenne 2010/87/EU mais pas les annexes, qui décrivent les transferts de données et les mesures de sécurité mises en œuvre par l’importateur de données. Les annexes peuvent être analysées séparément par le DPA.
 
-En savoir plus sur les avantages des clauses contractuelles types de l’Union européenne sur le Cloud Microsoft
-
-[Téléchargez la fiche d’information sur les clauses contractuelles types de l’Union européenne](https://aka.ms/eu-model-backgrounder)
-
-## <a name="microsoft-in-scope-cloud-services"></a>Services Cloud Microsoft dans le périmètre
+## <a name="microsoft-in-scope-cloud-services"></a>Services Cloud Microsoft concernés
 
 - [Azure et Azure Government](https://aka.ms/AzureCompliance)
 - Sécurité de l’application cloud
@@ -75,7 +71,7 @@ Un fournisseur de service qui s’engage contractuellement dans les clauses cont
 
 La conformité est un engagement contractuel. Les clauses contractuelles standard de Microsoft sont accessibles à tous les clients cloud dans les [Conditions d’Online Services](https://aka.ms/Online-Services-Terms) ; pour les autres services, consultez votre contrat existant avec Microsoft.
 
-**Qu'est-ce qu'un « sous-processeur » ?**
+**Qu'est-ce qu’un « sous-processeur » ?**
 
 Un « sous-processeur » est une personne qui traite les données personnelles en suivant les instructions du contrôleur de données et les conditions des clauses contractuelles types de l’Union européenne et le sous-contrat. Les clients Microsoft (en particulier les éditeurs de logiciels indépendants) sont parfois eux-mêmes des processeurs de données. Dans ces cas, Microsoft est le sous-processeur.
 
@@ -93,8 +89,4 @@ Vous pouvez vous Lier à un contrat tel que les [Conditions d'Online Services](
 - [Microsoft et le Bouclier de protection des données UE-ÉTATS-UNIS](https://go.microsoft.com/fwlink/p/?linkid=2099701)
 - [Infrastructure de conformité Microsoft Common Controls Hub](https://www.microsoft.com/trustcenter/common-controls-hub)
 - [Conditions de Microsoft Online Services](https://aka.ms/Online-Services-Terms)
-- [Conformité du Centre de gestion de la confidentialité Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>Télécharger notre document d’information sur la conformité
-
-Vous souhaitez en savoir plus sur nos démarches concernant la conformité ? Téléchargez notre fichier [PDF](https://download.microsoft.com/download/E/5/F/E5FA8D11-07A4-4496-82B3-0BCFABAA2FB7/EU_Model_Clauses_Compliance_Backgrounder.pdf) (disponible uniquement en anglais pour le moment).
+- [Conformité sur le site Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)

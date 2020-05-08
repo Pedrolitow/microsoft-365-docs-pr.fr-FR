@@ -27,12 +27,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Découvrez Microsoft 365 for Business, comment le configurer et comment préparer les appareils et les ordinateurs de vos utilisateurs pour vous assurer qu’ils sont protégés par Microsoft 365 pour les entreprises.
-ms.openlocfilehash: 8754c470cb6369f0814f953288be130fa49cea86
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+ms.openlocfilehash: a470f015857117d3cbbc15255e8d815438222509
+ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44048082"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44165786"
 ---
 # <a name="get-started-with-microsoft-365-for-business"></a>Prise en main de Microsoft 365 pour les entreprises
 
@@ -79,9 +79,9 @@ Connectez-vous au [Centre d’administration microsoft 365](https://portal.offic
     
     Si vous êtes en **déplacement permanent d’un annuaire Active Directory local vers le Cloud**, vous pouvez accéder au centre d’administration Microsoft 365 et utiliser l’Assistant Installation pour ajouter vos utilisateurs manuellement ou effectuer une synchronisation unique avec Azure ad Connect. Vous pouvez procéder de deux manières : 
     
-    - Si vous disposez également d’un serveur Exchange 2010, Exchange 2013 ou Exchange 2016, vous pouvez [utiliser un environnement hybride minimal pour migrer rapidement des boîtes aux lettres Exchange vers Office 365](https://support.office.com/article/fdecceed-0702-4af3-85be-f2a0013937ef). Les étapes hybrides minimales incluent une synchronisation unique des utilisateurs vers Azure AD et la migration de la messagerie électronique sur site vers le Cloud. Une fois la migration de la messagerie terminée, la synchronisation d’annuaires est automatiquement désactivée lorsque vous utilisez cette méthode.
+    - Si vous disposez également d’un serveur Exchange 2010, Exchange 2013 ou Exchange 2016, vous pouvez [utiliser un environnement hybride minimal pour migrer rapidement des boîtes aux lettres Exchange vers Office 365](https://docs.microsoft.com/Exchange/mailbox-migration/use-minimal-hybrid-to-quickly-migrate). Les étapes hybrides minimales incluent une synchronisation unique des utilisateurs vers Azure AD et la migration de la messagerie électronique sur site vers le Cloud. Une fois la migration de la messagerie terminée, la synchronisation d’annuaires est automatiquement désactivée lorsque vous utilisez cette méthode.
     
-    - Utilisez l’Assistant synchronisation d’annuaires pour synchroniser vos utilisateurs avec le Cloud. Suivez les étapes de la procédure de configuration de la [synchronisation d’annuaires pour Microsoft 365](https://support.office.com/article/1b3b5318-6977-42ed-b5c7-96fa74b08846) pour effectuer ce processus. Après avoir synchronisé vos utilisateurs sur le Cloud, vous devez désactiver la [synchronisation d’annuaires pour Office 365](https://support.office.com/article/ee5f861e-bd48-4267-83d1-a4ead4b4a00d).
+    - Utilisez l’Assistant synchronisation d’annuaires pour synchroniser vos utilisateurs avec le Cloud. Suivez les étapes de la procédure de configuration de la [synchronisation d’annuaires pour Microsoft 365](https://docs.microsoft.com/office365/enterprise/set-up-directory-synchronization) pour effectuer ce processus. Après avoir synchronisé vos utilisateurs sur le Cloud, vous devez désactiver la [synchronisation d’annuaires pour Office 365](https://docs.microsoft.com/office365/enterprise/turn-off-directory-synchronization).
     
     Vous devrez également donner à chaque utilisateur qui a été ajouté de cette manière une licence Microsoft 365 pour les entreprises. Vous pouvez effectuer cette opération dans l' [Assistant Installation](set-up.md) ou vous pouvez [attribuer des licences aux utilisateurs dans Microsoft 365 pour les entreprises](https://docs.microsoft.com/microsoft-365/admin/add-users/add-users).
     
@@ -104,7 +104,7 @@ Si vous conservez un annuaire Active Directory local contenant certaines ressour
   
 - Contactez votre partenaire.
     
-- En tant qu’administrateur Microsoft 365 pour les entreprises, vous avez accès à notre équipe de support technique : ** [contacter le support pour les entreprises-aide de l’administrateur](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)**
+- En tant qu’administrateur Microsoft 365 pour les entreprises, vous avez accès à notre équipe de support technique : ** [contacter le support pour les entreprises-aide de l’administrateur](https://docs.microsoft.com/microsoft-365/admin/contact-support-for-business-products)**
     
 ## <a name="see-also"></a>Voir aussi
 

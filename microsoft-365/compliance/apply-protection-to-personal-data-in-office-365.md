@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 description: Découvrez comment utiliser les stratégies de protection contre la perte de données (DLP) dans le centre de conformité pour protéger les données personnelles dans Office 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f5c82a1f841cca1eea9a79d8f9dbcc1f81a3ad74
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: eb6ae528e54f93fea26a20be35a6f5bfb33337d2
+ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035176"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44165227"
 ---
 # <a name="apply-protection-to-personal-data"></a>Application d’une protection aux données personnelles
 
@@ -45,7 +45,7 @@ Avec la protection contre la perte de données, vous pouvez :
 
 -   Consulter les rapports DLP présentant le contenu qui correspond aux stratégies DLP de votre organisation.
 
-Pour plus d’informations, reportez-vous à [Vue d’ensemble des stratégies de protection contre la perte de données](https://support.office.com/article/Overview-of-data-loss-prevention-policies-1966b2a7-d1e2-4d92-ab61-42efbb137f5e).
+Pour plus d’informations, reportez-vous à [Vue d’ensemble des stratégies de protection contre la perte de données](https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies).
 
 ![Options de création d’une stratégie de protection contre la perte de données](../media/Apply-protection-to-personal-data-in-Office-365-image1.png)
 
@@ -146,7 +146,7 @@ Description : Afficher des conseils de stratégie aux employés, avertir les é
 <tr class="odd">
 <td align="left">Avertir les utilisateurs lorsque le contenu correspond aux paramètres de la stratégie</td>
 <td align="left"><p>Cochez cette case (« Afficher des conseils de stratégie aux utilisateurs et leur envoyer une notification par courrier électronique ».)</p>
-<p>Cliquez sur « Personnaliser le conseil et le courrier électronique » et mettez à jour les champs pour votre environnement. Consultez les notifications par défaut dans cet article : <a href="https://support.office.com/article/Send-email-notifications-and-show-policy-tips-for-DLP-policies-87496bc5-9601-4473-8021-cb05c71369c1?ui=en-US&amp;rs=en-US&amp;ad=US">Envoyer des notifications par courrier électronique et afficher des conseils de stratégie pour les stratégies DLP</a>.</p></td>
+<p>Cliquez sur « Personnaliser le conseil et le courrier électronique » et mettez à jour les champs pour votre environnement. Consultez les notifications par défaut dans cet article : <a href="https://docs.microsoft.com/microsoft-365/compliance/use-notifications-and-policy-tips">Envoyer des notifications par courrier électronique et afficher des conseils de stratégie pour les stratégies DLP</a>.</p></td>
 </tr>
 <tr class="even">
 <td align="left">Détecter quand une quantité spécifique d’informations sensibles est partagée à un moment donné</td>
@@ -252,9 +252,9 @@ L’illustration représente les niveaux d’autorisation complète de contrôle
 
 Plus d’informations :
 
--   [Présentation des niveaux d’autorisation dans SharePoint](https://support.office.com/fr-FR/article/Understanding-permission-levels-in-SharePoint-87ecbb0e-6550-491a-8826-c075e4859848)
+-   [Présentation des niveaux d’autorisation dans SharePoint](https://docs.microsoft.com/sharepoint/understanding-permission-levels)
 
--   [Présentation des groupes SharePoint](https://support.office.com/fr-FR/article/Understanding-SharePoint-groups-94d9b261-161e-4ace-829e-eca1c8cd2eb8)
+-   [Présentation des groupes SharePoint](https://docs.microsoft.com/sharepoint/default-sharepoint-groups)
 
 ### <a name="external-sharing-policies-for-sharepoint-and-onedrive-for-business-libraries"></a>Stratégies de partage externe pour les bibliothèques SharePoint et OneDrive Entreprise
 
@@ -304,9 +304,9 @@ Le tableau suivant récapitule les contrôles que vous pouvez configurer.
 
 Plus d’informations :
 
--   [Gérer le partage externe pour votre environnement SharePoint Online](https://support.office.com/article/Manage-external-sharing-for-your-SharePoint-Online-environment-C8A462EB-0723-4B0B-8D0A-70FEAFE4BE85?ui=en-US&rs=en-US&ad=US)
+-   [Gérer le partage externe pour votre environnement SharePoint Online](https://docs.microsoft.com/sharepoint/external-sharing-overview)
 
--   [Partager des sites ou des documents avec des personnes extérieures à votre organisation](https://support.office.com/fr-FR/article/Share-sites-or-documents-with-people-outside-your-organization-80e49744-e30f-44db-8d51-16661b1d4232)
+-   [Partager des sites ou des documents avec des personnes extérieures à votre organisation](https://support.office.com/article/share-sharepoint-files-or-folders-1fe37332-0f9a-4719-970e-d2578da4941c)
 
 ### <a name="site-level-device-access-policies"></a>Stratégies d’accès aux appareils au niveau du site
 
@@ -355,7 +355,7 @@ Les stratégies d’accès aux appareils pour SharePoint et OneDrive Entreprise
 </tbody>
 </table>
 
-Plus d’informations : [Centre d’administration SharePoint Online : Contrôler l’accès à partir d’appareils non gérés](https://support.office.com/article/Control-access-from-unmanaged-devices-5ae550c4-bd20-4257-847b-5c20fb053622?ui=en-US&rs=en-US&ad=US).
+Plus d’informations : [Centre d’administration SharePoint Online : Contrôler l’accès à partir d’appareils non gérés](https://docs.microsoft.com/sharepoint/control-access-from-unmanaged-devices).
 
 ## <a name="service-access-protection-for-identities-and-devices"></a>Protection de l’accès au service pour les appareils et les identités
 

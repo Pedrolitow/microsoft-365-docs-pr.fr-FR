@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: L’audit avancé de Microsoft 365 offre de nouvelles fonctionnalités d’audit pour aider votre organisation à effectuer des enquêtes de conformité et de légalité.
-ms.openlocfilehash: b1a79598fc49d710c54a23dc9ce92c9f2b7f5805
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 6fb42e9df35fe025c5c5f292238217aebb4098c7
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632279"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44141042"
 ---
 # <a name="advanced-audit-in-microsoft-365"></a>Audit avancé de Microsoft 365
 
@@ -93,7 +93,7 @@ Pour bénéficier des fonctionnalités d’audit avancées de niveau utilisateur
 
 **Pourquoi je ne vois pas l’audit avancé dans mon organisation, même si nous avons un abonnement E5 et des utilisateurs auxquels des licences E5 ont été attribuées ?**
 
-Il est possible que les fonctionnalités d’audit avancées (telles que la possibilité de créer des stratégies de rétention de journal d’audit et la journalisation des enregistrements d’audit MailItemsAccessed) ne soient pas disponibles dans votre organisation, même si les licences appropriées sont en place. Si cela vous arrive, c'est parce que le package d'audit avancé n'a pas encore été déployé dans votre organisation. Il s'agit d'un problème de remplacement temporaire de licence, qui devrait être résolu pour les organisations concernées au cours des prochaines semaines. Pour résoudre ce problème, procédez comme suit pour chaque utilisateur E5 :
+Il est possible que les fonctionnalités d’audit avancées (telles que la possibilité de créer des stratégies de rétention de journal d’audit et la journalisation des enregistrements d’audit MailItemsAccessed) ne soient pas disponibles dans votre organisation, même si les licences appropriées sont en place. Si cela vous arrive, c'est parce que le package d'audit avancé n'a pas encore été déployé dans votre organisation. Il s'agit d'un problème de remplacement temporaire de licence, qui devrait être résolu sous peu pour les organisations concernées . Pour résoudre ce problème, procédez comme suit pour chaque utilisateur E5 :
 
 1. Dans le Centre d’administration Microsoft 365, accédez à **Utilisateurs > Utilisateurs actifs** et ensuite, sélectionnez l’utilisateur.
 
@@ -106,6 +106,8 @@ Il est possible que les fonctionnalités d’audit avancées (telles que la poss
    b. Si la case**audit avancé Microsoft 365** est cochée, désactivez-la, puis cliquez sur **enregistrer les modifications.** Voir l’étape 4
 
 4. Si vous avez désactivé la case à cocher à l’étape 3, patientez 60 minutes, puis répétez l’étape 3a pour activer l’application d’audit avancé Microsoft 365.
+
+Pour les organisations qui attribuent des licences à des groupes d’utilisateurs à l’aide d’une gestion de licences basée sur les groupes, vous devez désactiver l’attribution des licences pour Microsoft 365 audit avancé pour le groupe. Une fois que vous avez enregistré vos modifications, vérifiez que l’audit avancé Microsoft 365 est désactivé pour le groupe. Réactivez ensuite l’attribution des licences pour le groupe. Pour obtenir des instructions sur la gestion des licences basée sur les groupes, voir [Attribuer des licences aux utilisateurs par appartenance aux groupes dans Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/licensing-groups-assign).
 
 **Que se passe-t-il si mon organisation était en version d’évaluation privée pour une période de conservation d’un an des enregistrements d’audit ?**
 

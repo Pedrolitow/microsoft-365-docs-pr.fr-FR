@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: d945f7dd-f62f-4ca7-b3e7-469824cfd493
 description: Utilisez eDiscovery et les outils de recherche pour gérer et répondre à un incident de débordement de données dans votre organisation.
-ms.openlocfilehash: fd230d3e54ca61046a28f60d81d497a413bfa4f7
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 708343992d2b8d51d9b10f89cd6b986de00423d6
+ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43630591"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44166055"
 ---
 # <a name="ediscovery-solution-series-data-spillage-scenario---search-and-purge"></a>série de solutions eDiscovery : scénario de fuite de données-recherche et purge
 
@@ -120,7 +120,7 @@ Pour plus d’informations sur le partage de messages avec des données mises en
   
 Vous pouvez utiliser le suivi des messages dans le centre de sécurité et de conformité ou utiliser les applets de commande correspondantes dans Exchange Online PowerShell. Il est important de noter que le suivi des messages ne propose pas de garanties complètes quant à l’intégralité des données renvoyées. Pour plus d’informations sur l’utilisation du suivi des messages, voir : 
   
-- [Suivi des messages dans le centre de conformité et de sécurité](https://support.office.com/article/3e64f99d-ac33-4aba-91c5-9cb4ca476803.aspx)
+- [Suivi des messages dans le centre de conformité et de sécurité](https://docs.microsoft.com/microsoft-365/security/office-365-security/message-trace-scc)
     
 - [Nouveau suivi des messages dans le centre de sécurité & conformité](https://blogs.technet.microsoft.com/exchange/2018/05/02/new-message-trace-in-office-365-security-compliance-center/)
     
@@ -194,7 +194,7 @@ Si les mots clés de la requête de recherche que vous avez créée et utilisée
     
 ### <a name="auditing-the-data-spillage-investigation-process"></a>Audit du processus d’enquête de fuite de données
 
-Vous pouvez rechercher dans le journal d’audit les activités eDiscovery effectuées pendant l’enquête. Vous pouvez également effectuer des recherches dans le journal d’audit pour renvoyer les enregistrements d’audit de la commande **New-ComplianceSearchAction-purge** exécutée à l’étape 7 pour supprimer les données déduites. Si vous souhaitez en savoir plus, consultez les articles : 
+Vous pouvez rechercher dans le journal d’audit les activités eDiscovery effectuées pendant l’enquête. Vous pouvez également effectuer des recherches dans le journal d’audit pour renvoyer les enregistrements d’audit de la commande **New-ComplianceSearchAction-purge** exécutée à l’étape 7 pour supprimer les données déduites. Pour plus d’informations, reportez-vous aux rubriques suivantes :
 
 - [Rechercher le journal d’audit](search-the-audit-log-in-security-and-compliance.md)
 
