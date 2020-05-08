@@ -19,14 +19,21 @@ search.appverid:
 - MOE150
 ms.assetid: 9db96e9f-a622-4d5d-b134-09dcace55b6a
 description: Découvrez comment commencer à collecter des données pour votre client à l’aide de l’application de modèle d’analyse de l’utilisation 365 de Microsoft dans Power BI.
-ms.openlocfilehash: 249fadce15ca2e4c979d6e1930ff0d14ccd9bc08
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 386b64b1db15ba9f00450ac037a74bfc702e95ea
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42355005"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44140682"
 ---
 # <a name="enable-microsoft-365-usage-analytics"></a>Activation de l'analyse de l'utilisation de Microsoft 365
+
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> Le centre d’administration change. Si votre expérience ne correspond pas aux détails présentés ici, reportez-vous [à la rubrique à propos du nouveau centre d’administration Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+
+::: moniker-end
 
 Microsoft 365 l’analyse de l’utilisation est également disponible pour la communauté du gouvernement américain Microsoft 365.
   
@@ -68,7 +75,7 @@ Pour lancer l’application de modèle, vous devez être un **administrateur gé
     
 2.  Lorsque vous accédez à Power BI, connectez-vous. Sélectionnez applications->obtenir des applications à partir du menu de navigation.    
   
-3. Dans l’onglet **apps** , tapez Microsoft 365 dans la zone de recherche, puis sélectionnez analyse \> **** de **l’utilisation de Microsoft 365** .
+3. Dans l’onglet **apps** , tapez Microsoft 365 dans la zone de recherche, puis sélectionnez analyse \> **Get it now**de **l’utilisation de Microsoft 365** .
 
     [![Sélectionnez obtenir maintenant](../../media/78102250-9874-4a32-8365-436f13560b52.png)](https://app.powerbi.com/groups/me/getapps/services/cia_microsoft365.microsoft-365-usage-analytics)
     
@@ -78,7 +85,7 @@ Pour lancer l’application de modèle, vous devez être un **administrateur gé
 
 6.  Une fois que vous avez cliqué sur **connexion**, dans l’écran **se connecter à l’utilisation de Microsoft 365** , tapez l’ID client que \> vous avez copié à l’étape (1) **suivant**.
     
-7. Dans l’écran suivant, sélectionnez **oAuth2** comme \> **** **méthode d’authentification** . Si vous choisissez une autre méthode d’authentification, la connexion à l’application de modèle échouera.
+7. Dans l’écran suivant, sélectionnez **oAuth2** comme \> **Sign in** **méthode d’authentification** . Si vous choisissez une autre méthode d’authentification, la connexion à l’application de modèle échouera.
     
     ![Choose oAuth2 as authentication method](../../media/ac85a360-c278-4c60-8aa3-68f4828f1d96.png)
   
@@ -90,7 +97,7 @@ Les agrégats de niveau client seront disponibles dans tous les rapports. **Les 
 
 Pour anonymiser les données collectées pour tous les rapports, vous devez être administrateur général. Cette opération masque les informations identifiables telles que les noms d’utilisateur, de groupe et de site dans les rapports et l’application de modèle.
   
-1. Dans le centre d’administration, accédez aux **** \> **paramètres**paramètres, puis sous l’onglet **services** , choisissez **rapports**.
+1. Dans le centre d’administration, accédez aux **Settings** \> **paramètres**paramètres, puis sous l’onglet **services** , choisissez **rapports**.
     
 2. Sélectionnez **rapports**, puis choisissez d' **afficher les identificateurs anonymes**. Ce paramètre est appliqué à la fois aux rapports d’utilisation ainsi qu’à l’application de modèle.
   

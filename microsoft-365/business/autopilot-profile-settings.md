@@ -29,12 +29,12 @@ search.appverid:
 - MOE150
 ms.assetid: 99bfbf81-e719-4630-9b0f-c187edfa1f8a
 description: Les profils AutoPilot vous permettent de contrôler la manière dont Windows est installé sur les appareils utilisateur. Les profils contiennent des paramètres par défaut et facultatifs, comme ignorer l’installation de Cortana.
-ms.openlocfilehash: 5c2ec3f4c3e0ebc4ea545d11f819c897f414ad52
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 0c706d12ba262856ff40ea3bee57c64234fd77f7
+ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627411"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44165838"
 ---
 # <a name="about-autopilot-profile-settings"></a>À propos des paramètres du profil AutoPilot
 
@@ -47,7 +47,7 @@ Vous pouvez utiliser les profils AutoPilot pour contrôler la façon dont Window
 |**Paramètre**|**Description**|
 |:-----|:-----|
 |Ignorer l’inscription de Cortana, OneDrive et OEM  <br/> |Ignore l’installation des applications grand public telles que Cortana et OneDrive personnel. L’utilisateur de l’appareil peut l’installer ultérieurement tant que l’utilisateur est un administrateur local sur l’appareil. L’inscription du fabricant d’origine est ignorée car l’appareil est géré par Microsoft 365 Business Premium.  <br/> |
-|Expérience de connexion avec la marque de votre entreprise  <br/> |Si votre société dispose d’une [page de connexion ajouter votre société à Microsoft 365](https://support.office.com/article/a1229cdb-ce19-4da5-90c7-2b9b146aef0a), l’utilisateur de l’appareil bénéficiera de cette expérience lors de la connexion.  <br/> |
+|Expérience de connexion avec la marque de votre entreprise  <br/> |Si votre société dispose d’une [page de connexion ajouter votre société à Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/setup/customize-sign-in-page), l’utilisateur de l’appareil bénéficiera de cette expérience lors de la connexion.  <br/> |
 |Auto-inscriptions MDM avec comptes AAD configurés.  <br/> |L’identité de l’utilisateur sera gérée par Azure Active Directory, et les utilisateurs se connecteront à Windows et à Microsoft 365 avec leurs informations d’identification Microsoft 365 Business Premium.  <br/> |
    
  **Paramètres facultatifs :**

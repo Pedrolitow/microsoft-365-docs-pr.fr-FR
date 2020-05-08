@@ -20,12 +20,12 @@ search.appverid:
 ms.custom: seo-marvel-apr2020
 ms.assetid: ''
 description: Découvrez comment modifier ou créer des types d’informations sensibles Office 365 pour les Règlements généraux sur la protection des données (RGPD).
-ms.openlocfilehash: ffe9792eabc8607506f2ebabd75ae24b70214449
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 3eca04fcf949a19615dc574c90d8dbeea0894a23
+ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035736"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44166065"
 ---
 # <a name="customize-or-create-a-new-sensitive-information-type"></a>Personnalisation ou création d’un type d’informations sensibles
 
@@ -73,7 +73,7 @@ Pour personnaliser un type d’informations sensibles :
 
 7.  Chargez le nouveau type d'informations sensibles.
 
-8.  Analysez de nouveau votre contenu pour identifier les informations sensibles. Reportez-vous à la rubrique [Demander manuellement l’analyse et la réindexation d’un site](https://support.office.com/article/Manually-request-crawling-and-re-indexing-of-a-site-a-library-or-a-list-9AFA977D-39DE-4321-B4CA-8C7C7E6D264E).
+8.  Analysez de nouveau votre contenu pour identifier les informations sensibles. Reportez-vous à la rubrique [Demander manuellement l’analyse et la réindexation d’un site](https://docs.microsoft.com/sharepoint/crawl-site-content).
 
 ## <a name="example-modify-the-eu-debit-card-number-sensitive-information-type"></a>Exemple : modification du type d’informations sensibles « Numéro de carte de crédit de l’U.E. »
 
@@ -147,11 +147,11 @@ Utilisez ces ressources pour formuler et optimiser des requêtes à l’aide de 
 
 - [Exécuter une Recherche de Contenu](content-search.md)
 
-La recherche de contenu fournit une autre ressource pour vous aider à développer des requêtes KQL appropriées et des types d’informations sensibles : les mots-clés. Pourquoi utiliser la liste de mots-clés ? Vous pouvez obtenir des statistiques indiquant le nombre d’éléments qui correspondent à chaque mot-clé. Cela peut vous aider à identifier rapidement les mots-clés les plus (et les moins) efficaces. Pour plus d’informations sur les statistiques de recherche, reportez-vous à la rubrique relative à l’[affichage des statistiques de mots-clés pour les résultats de la recherche de contenu](https://support.office.com/article/View-keyword-statistics-for-Content-Search-results-9701a024-c52e-43f0-b545-9a53478aec04).
+La recherche de contenu fournit une autre ressource pour vous aider à développer des requêtes KQL appropriées et des types d’informations sensibles : les mots-clés. Pourquoi utiliser la liste de mots-clés ? Vous pouvez obtenir des statistiques indiquant le nombre d’éléments qui correspondent à chaque mot-clé. Cela peut vous aider à identifier rapidement les mots-clés les plus (et les moins) efficaces. Pour plus d’informations sur les statistiques de recherche, reportez-vous à la rubrique relative à l’[affichage des statistiques de mots-clés pour les résultats de la recherche de contenu](https://docs.microsoft.com/microsoft-365/compliance/view-keyword-statistics-for-content-search).
 
 Les mots-clés sur chaque ligne sont connectés par l’opérateur OR dans la requête de recherche qui est créée. Vous pouvez également utiliser une expression de mots-clés (entre parenthèses) dans une ligne.
 
-Pour plus d’informations, reportez-vous à la rubrique [Requêtes par mots-clés et conditions de recherche pour la recherche de contenu](https://support.office.com/article/Keyword-queries-and-search-conditions-for-Content-Search-c4639c2e-7223-4302-8e0d-b6e10f1c3be3).
+Pour plus d’informations, reportez-vous à la rubrique [Requêtes par mots-clés et conditions de recherche pour la recherche de contenu](https://docs.microsoft.com/microsoft-365/compliance/keyword-queries-and-search-conditions).
 
 ### <a name="exampleusing-content-search-to-identify-email-addresses"></a>Exemple : utilisation de la recherche de contenu pour identifier des adresses e-mail
 

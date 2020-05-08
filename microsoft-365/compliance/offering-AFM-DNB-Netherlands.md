@@ -14,18 +14,18 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: d4efa625c4026ce87d0895d03b4a9993bb4bca40
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 09d6514a3b18535820f31b50736591314182d140
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602701"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44066651"
 ---
 # <a name="dutch-authority-for-the-financial-markets-and-the-central-bank-of-the-netherlands"></a>La Dutch Authority for the Financial Markets (Autorité néerlandaise pour les marchés financiers, AFM) et la Central Bank of the Netherlands (Banque centrale des Pays-Bas, DNB)
 
 ## <a name="about-the-afm-and-dnb"></a>À propos de l’AFM et de la DNB
 
-Les principaux organismes financiers aux Pays-Bas sont les [l’Autorité néerlandaise pour les marchés financiers](https://afm.nl/en) ([Autoriteit Financiële Markten, AFM](https://afm.nl/)) et la [Banque centrale des Pays-Bas](https://www.dnb.nl/en/home/index.jsp) ([De Nederlandsche Bank, DNB](https://www.dnb.nl/home/)). L’AFM, dont le rôle est comparable à la SEC aux États-Unis, est « l’autorité de contrôle indépendante pour l’épargne, les prêts, l’investissement et les marchés d’assurances ». La DNB, au sein du Système européen de banques centrales, détermine et met en œuvre la politique monétaire et exerce une surveillance prudentielle des organisations financières aux Pays-Bas.  
+Les principaux organismes financiers aux Pays-Bas sont les [l’Autorité néerlandaise pour les marchés financiers](https://afm.nl/en) ([Autoriteit Financiële Markten, AFM](https://afm.nl/)) et la [Banque centrale des Pays-Bas](https://www.dnb.nl/en/home/index.jsp) ([De Nederlandsche Bank, DNB](https://www.dnb.nl/home/)). L’AFM, dont le rôle est comparable à la SEC aux États-Unis, est l’autorité de contrôle indépendante pour l’épargne, les prêts, l’investissement et les marchés d’assurances. La DNB, au sein du Système européen de banques centrales, détermine et met en œuvre la politique monétaire et exerce une surveillance prudentielle des organisations financières aux Pays-Bas.  
   
 Ces deux autorités agissent de concert avec l'Autorité bancaire européenne (ABE), « une autorité indépendante de l'UE qui travaille pour assurer une réglementation et une supervision prudentes, efficaces et cohérentes dans le secteur bancaire européenne ». À cette fin, l'ABE a défini une approche globale de l'utilisation du cloud computing par les institutions financières de l'UE, [Recommandations sur l'externalisation auprès de fournisseurs de services Cloud](https://eba.europa.eu/sites/default/documents/files/documents/10180/1848359/c1005743-567e-40fc-a995-d05fb93df5d1/Draft%20Recommendation%20on%20outsourcing%20to%20Cloud%20Service%20%20%28EBA-CP-2017-06%29.pdf ).  
   
@@ -80,8 +80,4 @@ Oui. Les dispositions et les dispositifs à prendre en compte dans le cadre des 
 - [Services commerciaux cloud computing et services financiers Microsoft](https://servicetrust.microsoft.com/viewpage/financialservicesoverview)
 - [Conformité des services financiers dans Azure](https://azure.microsoft.com/resources/videos/azurecon-2015-financial-services-compliance-in-azure/)
 - [Outil d’évaluation des risques dans le Cloud Azure Financial Services](https://aka.ms/FFIEC-CSDT)
-- [Conformité du Centre de gestion de la confidentialité Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>Télécharger notre document d’information sur la conformité
-
-Vous souhaitez en savoir plus sur nos démarches concernant la conformité ? Téléchargez notre fichier [PDF](https://download.microsoft.com/download/A/E/5/AE505D51-DA54-4B2D-B1BD-C76D9102F36A/AFM-DNB-Compliance.pdf) (disponible uniquement en anglais pour le moment).
+- [Conformité sur le site Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)

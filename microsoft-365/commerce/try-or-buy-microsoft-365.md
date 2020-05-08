@@ -1,5 +1,5 @@
 ---
-title: Essayer ou acheter un abonnement Microsoft 365
+title: Essayez ou achetez un abonnement Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -19,14 +19,21 @@ search.appverid:
 - MOE150
 ms.assetid: 9e8ceac6-8d20-4d28-837a-d766ae99cbd1
 description: Découvrez comment obtenir une version d’évaluation gratuite ou acheter un abonnement pour Microsoft 365.
-ms.openlocfilehash: 255cd1779f3fb29a619110160faefdd3d5369eca
-ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
+ms.openlocfilehash: 19529192e2fa48ac081a84e9ad54669c3ef16791
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43707534"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44141053"
 ---
-# <a name="try-or-buy-a-microsoft-365-subscription"></a>Essayer ou acheter un abonnement Microsoft 365
+# <a name="try-or-buy-a-microsoft-365-subscription"></a>Essayez ou achetez un abonnement Microsoft 365
+
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> Le centre d’administration change. Si votre expérience ne correspond pas aux détails présentés ici, reportez-vous [à la rubrique à propos du nouveau centre d’administration Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+
+::: moniker-end
 
 Microsoft 365 est une solution complète qui combine Office 365 et Windows 10 avec les fonctionnalités avancées de sécurité et de gestion des appareils. Si vous disposez déjà d’un abonnement et que vous souhaitez effectuer une évaluation ou acheter un abonnement Microsoft 365, la meilleure façon de le faire est d’utiliser le centre d’administration. Les abonnements Microsoft 365 suivants sont disponibles dans le centre d’administration pour que vous essayiez ou achetiez maintenant :
   
@@ -38,7 +45,7 @@ Microsoft 365 est une solution complète qui combine Office 365 et Windows 10 av
 
 Lorsque vous ajoutez un abonnement via le centre d’administration, le nouvel abonnement est associé à la même organisation (espace de noms de domaine) que votre abonnement existant. Ainsi, il est plus facile de déplacer les utilisateurs de votre organisation entre les abonnements ou de leur attribuer une licence pour l’abonnement supplémentaire dont ils ont besoin.
   
-## <a name="try-or-buy-a-microsoft-365-subscription"></a>Essayer ou acheter un abonnement Microsoft 365
+## <a name="try-or-buy-a-microsoft-365-subscription"></a>Essayez ou achetez un abonnement Microsoft 365
 
 ::: moniker range="o365-worldwide"
 

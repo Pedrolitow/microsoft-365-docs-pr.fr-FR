@@ -19,14 +19,21 @@ search.appverid:
 - MOE150
 ms.assetid: 286fcf0b-ffc7-4593-8073-d7a4a5dd2b45
 description: Découvrez comment afficher les rapports à l’aide des onglets de navigation et des filtres.
-ms.openlocfilehash: 3abbd2362cb6216d5dd561c7792fa41588daac66
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: dedcaf52a2b5e69d53f8c41494b5fd68ac1f248b
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42355105"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44140670"
 ---
 # <a name="navigate-and-utilize-the-reports-in-microsoft-365-usage-analytics"></a>Explorer et utiliser les rapports d’analyse sur l’utilisation de Microsoft 365
+
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> Le centre d’administration change. Si votre expérience ne correspond pas aux détails présentés ici, reportez-vous [à la rubrique à propos du nouveau centre d’administration Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+
+::: moniker-end
 
 Le tableau de bord vous offre un aperçu rapide des principaux indicateurs d'utilisation et d'adoption. En sélectionnant les mesures de niveau supérieur, vous pouvez accéder à des rapports qui fournissent plus de détails et d’informations. Chaque onglet de rapport contient des visualisations de données spécifiques à un aspect de l’utilisation et de l’adoption de votre organisation. Les données collectées sont expliquées dans le titre de chaque rapport et une vignette contenant des informations supplémentaires sur les visualisations de l’onglet rapport que vous affichez s’affiche.
 
