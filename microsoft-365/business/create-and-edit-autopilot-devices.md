@@ -25,12 +25,12 @@ search.appverid:
 - MOE150
 ms.assetid: 0f7b1d7c-4086-4331-8534-45d7886f9f34
 description: Découvrez comment télécharger des périphériques à l’aide de AutoPilot dans Microsoft 365 Business Premium. Vous pouvez affecter un profil à un appareil ou à un groupe d’appareils.
-ms.openlocfilehash: f2a7f801ae471352595a36b355a874b2de653326
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 83c027cfe019e037518c4ca13eb331e5300fc2c1
+ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627391"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44165858"
 ---
 # <a name="create-and-edit-autopilot-devices"></a>Créer et modifier des appareils AutoPilot
 
@@ -50,7 +50,7 @@ Les appareils doivent respecter les conditions suivantes :
     
     ![In the Devices tab, choose Add devices.](../media/6ba81e22-c873-40ad-8a72-ce64d15ea6ba.png)
   
-3. Dans le **panneau ajouter des appareils** , accédez à un [fichier CSV de liste](https://support.office.com/article/932e3676-2491-49f0-9177-d893d2f5276e) de périphériques \> que vous avez préparé à **Enregistrer** \> **.**
+3. Dans le **panneau ajouter des appareils** , accédez à un [fichier CSV de liste](https://docs.microsoft.com/microsoft-365/admin/misc/device-list) de périphériques \> que vous avez préparé à **Enregistrer** \> **.**
     
     Vous pouvez obtenir ces informations auprès de votre fournisseur de matériel ou vous pouvez utiliser le [script PowerShell Get-WindowsAutoPilotInfo](https://www.powershellgallery.com/packages/Get-WindowsAutoPilotInfo) pour générer un fichier CSV. 
     

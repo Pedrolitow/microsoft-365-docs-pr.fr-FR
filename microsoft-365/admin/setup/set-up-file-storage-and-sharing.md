@@ -27,12 +27,12 @@ search.appverid:
 - ODB160
 ms.assetid: 7aa9cdc8-2245-4218-81ee-86fa7c35f1de
 description: Découvrez comment utiliser OneDrive et un site d’équipe pour le stockage et le partage de fichiers.
-ms.openlocfilehash: 56057bc33adaf92a415c443bfb7bf89c10f8d646
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 98fc168e42fea50ae21914d5f44e403ae459c1d9
+ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627557"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44165216"
 ---
 # <a name="set-up-file-storage-and-sharing"></a>Configurer le stockage et le partage des fichiers
 
@@ -63,7 +63,7 @@ Voici des recommandations pour les éléments à stocker dans chaque emplacement
 |**Sites d’équipe SharePoint** <br/> |Collaboration. Lorsque vous créez un groupe Microsoft 365 (par exemple, dans le centre d’administration 365 Microsoft, dans Outlook ou en créant une équipe dans Microsoft Teams), un site d’équipe SharePoint est créé pour ce groupe. De même, lorsque vous créez un site d’équipe SharePoint à partir de la page d’accueil SharePoint ou à partir du nouveau centre d’administration SharePoint, il crée également un groupe Microsoft 365. Pour plus d’informations, consultez [la rubrique qu’est-ce qu’un site d’équipe SharePoint](https://support.office.com/article/75545757-36c3-46a7-beed-0aaa74f0401e.aspx) et [créez un site d’équipe dans SharePoint Online](https://support.office.com/article/ef10c1e7-15f3-42a3-98aa-b5972711777d.aspx).  <br/> |Fichiers dont l’appartenance est partagée. Nous vous recommandons de séparer les sites d’équipe pour chaque unité de travail au sein de votre organisation. Par exemple, pour que les documents financiers et de personnel soient confidentiels pour une petite équipe, créez un site d’équipe distinct.  <br/> |
 
 > [!NOTE]
-> SharePoint propose également d’autres types de sites que vous pouvez utiliser pour votre entreprise. Vous pouvez utiliser les [sites de communication](https://support.office.com/article/7fb44b20-a72f-4d2c-9173-fc8f59ba50eb.aspx) de votre intranet pour publier des informations pour un large public. Vous pouvez utiliser des [sites hub](https://support.office.com/article/fe26ae84-14b7-45b6-a6d1-948b3966427f.aspx) pour connecter des sites dans votre intranet.
+> SharePoint propose également d’autres types de sites que vous pouvez utiliser pour votre entreprise. Vous pouvez utiliser les [sites de communication](https://support.microsoft.com/en-us/office/create-a-communication-site-in-sharepoint-online-7fb44b20-a72f-4d2c-9173-fc8f59ba50eb) de votre intranet pour publier des informations pour un large public. Vous pouvez utiliser des [sites hub](https://support.office.com/article/fe26ae84-14b7-45b6-a6d1-948b3966427f.aspx) pour connecter des sites dans votre intranet.
   
 ## <a name="start-using-onedrive-and-your-team-site"></a>Commencer à utiliser OneDrive et votre site d’équipe
 
@@ -201,4 +201,4 @@ Vous pouvez activer le stockage tiers pour vos utilisateurs dans Microsoft 365 a
 
   - [Installer et configurer Office sur un iPhone ou un iPad avec Microsoft 365](https://support.office.com/article/9df6d10c-7281-4671-8666-6ca8e339b628.aspx)
 
-  - [Configurer Office sur Windows Phone avec Microsoft 365](https://support.office.com/article/2b7c1b51-a717-45d6-90c9-ee1c1c5ee0b7.aspx)
+  - [Configurer Office sur Windows Phone avec Microsoft 365](https://support.microsoft.com/en-us/office/set-up-office-mobile-apps-on-a-windows-mobile-device-2b7c1b51-a717-45d6-90c9-ee1c1c5ee0b7)

@@ -21,12 +21,12 @@ search.appverid:
 ms.assetid: a8ab5061-3346-4da0-bb7c-5260822b53ae
 description: En savoir plus sur Office 365 géré par 21Vianet qui est conçu pour répondre aux besoins des services Cloud sécurisés, fiables et évolutifs en Chine.
 monikerRange: o365-21vianet
-ms.openlocfilehash: c473dacee7fe6f2e779960711a87368e261c3448
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 6d3facba5beb9398f26ede5345b9121275a47b94
+ms.sourcegitcommit: d688a296dc2b094b70da55334c9a3ad91236cf6f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42360795"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44155408"
 ---
 # <a name="office-365-operated-by-21vianet"></a>Office 365 géré par 21Vianet
 
@@ -54,12 +54,12 @@ Pour en savoir plus sur la prise en main des services généraux Office 365, con
 
 |||
 |:-----|:-----|
-|Domaines personnalisés  <br/> |Les administrateurs peuvent créer et/ou utiliser des domaines personnalisés inscrits via des fournisseurs de domaine spécifiques au chinois. Si vous n’avez pas de domaine personnalisé, vous pouvez [acheter un nom de domaine](https://support.office.com/article/a6689b24-eeca-41f1-afe6-19917936b73c.aspx) à partir d’un serveur d’inscriptions de noms de domaine. Si vous en avez déjà un, [recherchez votre bureau d’enregistrement de domaines ou votre fournisseur d’hébergement DNS](https://support.office.com/article/98b6bfa3-1b0b-4484-8a12-02061cc9f9c3).  <br/> En outre, si vous créez un site Web public à l’aide du service SharePoint Online Office 365, la stratégie de conformité Internet de la Chine exige que vous obteniez un numéro de fournisseur de contenu Internet (ICP).  **Remarque :** La validation automatique des mots non autorisés dans les noms de domaine personnalisés n’est pas disponible.           |
+|Domaines personnalisés  <br/> |Les administrateurs peuvent créer et/ou utiliser des domaines personnalisés inscrits via des fournisseurs de domaine spécifiques au chinois. Si vous n’avez pas de domaine personnalisé, vous pouvez [acheter un nom de domaine](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/buy-a-domain-name) à partir d’un serveur d’inscriptions de noms de domaine. Si vous en avez déjà un, [recherchez votre bureau d’enregistrement de domaines ou votre fournisseur d’hébergement DNS](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/find-your-domain-registrar).  <br/> En outre, si vous créez un site Web public à l’aide du service SharePoint Online Office 365, la stratégie de conformité Internet de la Chine exige que vous obteniez un numéro de fournisseur de contenu Internet (ICP).  **Remarque :** La validation automatique des mots non autorisés dans les noms de domaine personnalisés n’est pas disponible.           |
 |Support technique, sur les abonnements et la facturation  <br/> |Fourni par 21Vianet. Pour plus d’informations sur la façon de contacter le support technique, consultez la rubrique [contacter le support technique Office 365](../contact-support-for-business-products.md).  <br/> |
-|Réinitialisation du mot de passe en libre-service  <br/> |Disponible uniquement pour les administrateurs. Pour plus d’informations, consultez [la rubrique modifier ou réinitialiser votre mot de passe dans Office 365 géré par 21ViaNet](https://support.office.com/article/d8eb5b62-9d0e-4267-a9bf-2aa491ee6d0b).  <br/> |
+|Réinitialisation du mot de passe en libre-service  <br/> |Disponible uniquement pour les administrateurs. Pour plus d’informations, consultez [la rubrique modifier ou réinitialiser votre mot de passe dans Office 365 géré par 21ViaNet](https://support.microsoft.com/en-us/office/change-or-reset-your-password-in-microsoft-365-operated-by-21vianet-d8eb5b62-9d0e-4267-a9bf-2aa491ee6d0b).  <br/> |
 |Sécurité, confidentialité, conformité et détails sur les niveaux de prise en charge  <br/> |Fourni par 21Vianet.  <br/> |
 |Programme d’installation d’Office Desktop  <br/> |Le programme d’installation de bureau Office n’est pas disponible pour Office 2010 et Office 2007. Toutefois, les administrateurs peuvent [configurer les applications de bureau Office actuelles pour qu’elles fonctionnent avec Office 365](https://support.office.com/article/85646aba-7e6c-4e24-a047-8fd9ce4f9d2e).  <br/> |
-|Prise en charge des appareils mobiles et périphériques\*  <br/> | Les fonctionnalités mobiles suivantes seront bientôt disponibles :  <br/>  Gestion des appareils mobiles (MDM)  <br/>  BlackBerry Business cloud services (BBCS) n’est pas disponible, mais vous pouvez utiliser les appareils Exchange ActiveSync ou une offre de Research in Motion (RIM, la solution de messagerie sans fil BlackBerry) pour exécuter BlackBerry Enterprise Server (BES).  <br/>  Pour plus d’informations sur la prise en charge des appareils mobiles, consultez [la rubrique Configurer et gérer l’accès mobile pour vos utilisateurs](https://support.office.com/article/01fff219-4492-40f2-82d3-fd2ffc0ad802).  <br/> |
+|Prise en charge des appareils mobiles et périphériques\*  <br/> | Les fonctionnalités mobiles suivantes seront bientôt disponibles :  <br/>  Gestion des appareils mobiles (MDM)  <br/>  BlackBerry Business cloud services (BBCS) n’est pas disponible, mais vous pouvez utiliser les appareils Exchange ActiveSync ou une offre de Research in Motion (RIM, la solution de messagerie sans fil BlackBerry) pour exécuter BlackBerry Enterprise Server (BES).  <br/>  Pour plus d’informations sur la prise en charge des appareils mobiles, consultez [la rubrique Configurer et gérer l’accès mobile pour vos utilisateurs](https://support.microsoft.com/en-us/office/set-up-and-manage-mobile-access-for-your-users-01fff219-4492-40f2-82d3-fd2ffc0ad802).  <br/> |
 |Office Lens  <br/> |Non disponible.  <br/> |
 |Microsoft Planner  <br/> |À venir.  <br/> |
 |Microsoft Teams  <br/> |Non disponible.  <br/> |
@@ -210,7 +210,7 @@ Partage des données de contacts Exchange sur des appareils mobiles Apple vers A
 
 |||
 |:-----|:-----|
-|Fournisseurs de domaine pour la prise en charge de Skype entreprise  <br/> |Vous devrez inscrire votre domaine auprès d’un fournisseur de domaine spécifique au chinois qui prend en charge les enregistrements SRV. Pour plus d’informations sur l’enregistrement des domaines, consultez [la rubrique Rechercher votre bureau d’enregistrement de domaines ou le fournisseur d’hébergement DNS](https://support.office.com/article/98b6bfa3-1b0b-4484-8a12-02061cc9f9c3).  <br/> |
+|Fournisseurs de domaine pour la prise en charge de Skype entreprise  <br/> |Vous devrez inscrire votre domaine auprès d’un fournisseur de domaine spécifique au chinois qui prend en charge les enregistrements SRV. Pour plus d’informations sur l’enregistrement des domaines, consultez [la rubrique Rechercher votre bureau d’enregistrement de domaines ou le fournisseur d’hébergement DNS](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/find-your-domain-registrar).  <br/> |
 |Conférence rendez-vous (possibilité d’ajouter un accès téléphonique aux réunions pour les utilisateurs qui ne peuvent pas accéder à un ordinateur)  <br/> |Vous pouvez voir les options dans Skype entreprise et dans le centre d’administration Skype entreprise pour les fournisseurs et les conférences rendez-vous, mais ces fonctionnalités ne sont pas encore disponibles. Elles seront bientôt disponibles.  <br/> |
 |Aide de l’ordinateur de bureau Skype entreprise  <br/> |Vous trouverez des rubriques d’aide sur les ordinateurs de bureau Skype entreprise [ici](https://support.office.com/article/6ae5853c-f0fd-4710-aecf-f46def8377ad.aspx). Toutefois, l’aide du Bureau n’est pas disponible à partir du produit, sauf si vous utilisez Office « démarrer en un clic ».  <br/> |
 |Lync 2010  <br/> |Non disponible.  <br/> |
@@ -225,7 +225,7 @@ Partage des données de contacts Exchange sur des appareils mobiles Apple vers A
    
 ## <a name="data-subject-requests-for-gdpr"></a>Demandes des personnes concernées pour RGPD
 
-RGPD accorde aux personnes (ou aux personnes concernées) certains droits en relation avec le traitement de leurs données personnelles, y compris le droit de corriger des données inexactes, d’effacer des données ou de restreindre leur traitement, de recevoir leurs données et de répondre à une demande de transmission de leurs données vers un autre contrôleur. Le rôle administrateur client pour Office 365 géré par 21Vianet peut demander des données au nom d’une personne concernée de la manière suivante :
+RGPD accorde aux personnes (ou aux personnes concernées) certains droits en relation avec le traitement de leurs données personnelles, y compris le droit de corriger des données inexactes, d’effacer des données ou de restreindre leur traitement, de recevoir leurs données et de répondre à une demande de transmission de leurs données à un autre contrôleur. Le rôle administrateur client pour Office 365 géré par 21Vianet peut demander des données au nom d’une personne concernée de la manière suivante :
   
 - À l’aide du centre d’administration Azure Active Directory, un administrateur client peut supprimer définitivement un objet de données d’Azure Active Directory et des services associés.
     

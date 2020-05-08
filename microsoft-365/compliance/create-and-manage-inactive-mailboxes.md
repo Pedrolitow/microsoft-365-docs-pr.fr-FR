@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 296a02bd-ebde-4022-900e-547acf38ddd7
 description: Vous pouvez créer une boîte aux lettres inactive dans Microsoft 365 en appliquant une stratégie de conservation ou de rétention à la boîte aux lettres, puis en supprimant le compte d’utilisateur correspondant. Les éléments d’une boîte aux lettres inactive sont conservés pendant la durée de la conservation ou de la stratégie de rétention qui lui a été appliquée avant qu’elle ne soit devenue inactive. Pour supprimer définitivement une boîte aux lettres inactive, supprimez simplement la stratégie de conservation ou de rétention.
-ms.openlocfilehash: 6265504f12adeadbc51c36c1e97c999e30a0d141
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+ms.openlocfilehash: bf8539ad8cfdd0170d17b490e7cfeaee8e0bd789
+ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44048013"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44166085"
 ---
 # <a name="create-and-manage-inactive-mailboxes"></a>Créer et gérer des boîtes aux lettres inactives
 
@@ -63,7 +63,7 @@ Pour obtenir des procédures pas à pas pour le placement d’une boîte aux let
   
 ### <a name="step-2-delete-the-mailbox"></a>Étape 2 : Suppression de la boîte aux lettres
 
-Une fois la boîte aux lettres placée en conservation ou une stratégie de rétention appliquée, l’étape suivante consiste à supprimer la boîte aux lettres. La meilleure façon de supprimer une boîte aux lettres est de supprimer le compte d’utilisateur correspondant dans le centre d’administration Microsoft 365. Pour plus d’informations sur la suppression des comptes d’utilisateur, consultez la rubrique [supprimer un utilisateur de votre organisation](https://support.office.com/article/d5155593-3bac-4d8d-9d8b-f4513a81479e).
+Une fois la boîte aux lettres placée en conservation ou une stratégie de rétention appliquée, l’étape suivante consiste à supprimer la boîte aux lettres. La meilleure façon de supprimer une boîte aux lettres est de supprimer le compte d’utilisateur correspondant dans le centre d’administration Microsoft 365. Pour plus d’informations sur la suppression des comptes d’utilisateur, consultez la rubrique [supprimer un utilisateur de votre organisation](https://docs.microsoft.com/microsoft-365/admin/add-users/delete-a-user).
   
 > [!NOTE]
 > Vous pouvez également supprimer la boîte aux lettres en utilisant la cmdlet **Remove-Mailbox** dans Exchange Online PowerShell. Pour plus d’informations, consultez la rubrique [supprimer ou restaurer des boîtes aux lettres utilisateur dans Exchange Online](https://go.microsoft.com/fwlink/?linkid=856287). 

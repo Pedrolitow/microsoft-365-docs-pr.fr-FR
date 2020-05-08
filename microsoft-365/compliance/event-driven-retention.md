@@ -16,18 +16,18 @@ search.appverid:
 - MOE150
 - MET150
 description: Avec les étiquettes de rétention, vous pouvez baser une période de rétention sur la survenue d’un type d’événement spécifique. L’événement déclenche le début de la période de rétention, et tout le contenu portant une étiquette définie pour ce type d’événement se voit appliquer les actions de rétention de l’étiquette. La rétention basée sur un événement est généralement utilisée dans le cadre d’un processus de gestion des enregistrements.
-ms.openlocfilehash: 2ad6d734da77b6e0a706c4ff0d71b82caf0166c8
-ms.sourcegitcommit: f5cecd77e63ae8b47743d4f6dc3135f5decaf28b
+ms.openlocfilehash: 00bc5b44a23dfd08eb56fd7b1f6577bf8411003d
+ms.sourcegitcommit: 83f980927728bc080f97a3e6dc70dc305f3df841
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/30/2020
-ms.locfileid: "43949301"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44053882"
 ---
 # <a name="overview-of-event-driven-retention"></a>Vue d’ensemble des rétentions basées sur des événements
 
 >*[Guide de sécurité et conformité pour les licences Microsoft 365](https://aka.ms/ComplianceSD).*
 
-Lorsque vous conservez du contenu, la période de rétention est souvent basée sur l’ancienneté du contenu. Par exemple, vous pouvez conserver des documents pendant sept ans à compter de leur création, puis les supprimer. Cependant, dans Office 365, vous pouvez baser une période de rétention sur l’occurrence d’un type spécifique d’événement grâce aux étiquettes. L’événement déclenche le début de la période de rétention, et les actions de rétention d’une étiquette sont appliquées sur tout le contenu portant l’étiquette en question pour ce type d’événement.
+Lorsque vous conservez du contenu, la période de rétention est souvent basée sur l’ancienneté du contenu. Par exemple, vous pouvez conserver des documents pendant sept ans à compter de leur création, puis les supprimer. Cependant, dans Microsoft 365, vous pouvez baser une période de rétention sur l’occurrence d’un type spécifique d’événement grâce aux étiquettes. L’événement déclenche le début de la période de rétention, et les actions de rétention d’une étiquette sont appliquées sur tout le contenu portant l’étiquette en question pour ce type d’événement.
   
 Par exemple, vous pouvez utiliser des étiquettes avec des rétentions basées sur des événements pour les éléments suivants :
   
@@ -45,19 +45,19 @@ Les rétentions basées sur des événements sont généralement utilisées dans
     
 - Les étiquettes de rétention basées sur des événements déclenchent généralement une révision de destruction à la fin de la période de rétention afin qu’un gestionnaire d’enregistrements puisse manuellement examiner et supprimer le contenu. Pour obtenir plus d’informations, consultez l’article [Destruction du contenu](disposition.md).
     
-Une étiquette basée sur un événement a les mêmes fonctionnalités que les étiquettes dans Office 365. Pour obtenir plus d’informations, consultez l’article [Vue d’ensemble des étiquettes](labels.md).
+Une étiquette de rétention basée sur un événement présente les mêmes fonctionnalités qu’une étiquette de rétention dans Microsoft 365. Pour plus d’informations, voir [Vue d’ensemble des étiquettes](labels.md).
 
 ## <a name="understanding-the-relationship-between-event-types-labels-events-and-asset-ids"></a>Compréhension de la relation entre les types d’événements, les étiquettes, les événements et les ID d’élément
 
-Pour utiliser correctement les rétentions basées sur des événements, il est important de comprendre la relation entre les types d’événements, les étiquettes, les événements et les ID d’élément comme illustré ci-dessous. Vous trouverez une explication après le diagramme.
+Pour utiliser avec succès la rétention basée sur les événements, il est important de comprendre la relation entre les types d’événement, les étiquettes de rétention, les événements et les ID d’éléments, comme illustré dans les diagrammes et l’explication qui suit : 
   
 ![Diagramme illustrant le type d’événement, les étiquettes, les événements et les ID d’élément](../media/a5141a6b-61ca-4a60-9ab0-24e6bb45bbdb.png)
   
 ![Diagramme illustrant le type d’événement, les étiquettes, les événements et les ID d’élément](../media/ce89a91f-49aa-4b5a-933c-ac3a13dccd5d.png)
   
-1. Créez des étiquettes pour différents types de contenu et associez-les à un type d’événement. Par exemple, les étiquettes pour différents types de fichiers et d’enregistrements de produit sont associées à un type d’événement nommé Durée de vie des produits, car ces enregistrements doivent être conservés pendant 10 ans à compter de la fin de vie du produit.
+1. Vous créez des étiquettes de rétention pour différents types de contenu et vous les associez à un type d’événement. Par exemple, les étiquettes pour différents types de fichiers et d’enregistrements de produit sont associées à un type d’événement nommé Durée de vie des produits, car ces enregistrements doivent être conservés pendant 10 ans à compter de la fin de vie du produit.
     
-2. Les utilisateurs (généralement des gestionnaires d’enregistrements) appliquent ces étiquettes au contenu et saisissent un ID d’élément pour chaque élément (pour les documents SharePoint et OneDrive). Dans cet exemple, l’ID d’élément est un nom de produit ou un code utilisé par l’organisation. Par conséquent, une étiquette est appliquée aux enregistrements de chaque produit, et chaque enregistrement a une propriété qui contient un ID d’élément. Le diagramme représente **tout le contenu** pour tous les enregistrements de produit dans une organisation, et chaque élément porte l’ID d’élément du produit de l’enregistrement dont il s’agit. 
+2. Les utilisateurs (en général les gestionnaires des enregistrements) appliquent ces étiquettes de rétention au contenu et (pour les documents SharePoint et OneDrive) entrent un ID d’élément pour chaque élément. Dans cet exemple, l’ID d’actif est un nom de produit ou un code utilisé par l’organisation. Par conséquent, les enregistrements de chaque produit se voient attribuer une étiquette de rétention, et chaque enregistrement possède une propriété contenant un ID d’actif. Le diagramme représente **l’ensemble du contenu** de tous les enregistrements des produits d’une organisation, et chaque élément porte l’ID d’élément du produit auquel appartient l’enregistrement. 
     
 3. Durée de vie des produits est le type d’événement ; un produit spécifique qui arrive en fin de vie est un événement. Lorsqu’un événement de ce type d’événement se produit (dans ce cas, quand un produit arrive en fin de vie), créez un événement qui spécifie les éléments suivants :
     
@@ -67,17 +67,17 @@ Pour utiliser correctement les rétentions basées sur des événements, il est 
     
   - La date à laquelle l’événement s'est produit. Cette date est utilisée comme point de départ de la période de rétention. Cette date peut être la date actuelle, passée ou une date future.
     
-4. Une fois que vous avez créé un événement, la date de cet événement est synchronisée avec tout le contenu portant une étiquette de ce type d’événement et qui contient le mot clé ou l’ID d’élément spécifié. Comme pour toute étiquette, cette synchronisation peut prendre jusqu’à 7 jours. Dans le diagramme ci-dessus, la période de rétention de tous les éléments entourés en rouge est déclenchée par cet événement. En d’autres termes, quand ce produit arrive en fin de vie, cet événement déclenche la période de rétention pour les enregistrements de ce produit.
+4. Une fois un événement créé, la date correspondante est synchronisée avec tout le contenu portant l’étiquette de rétention de ce type d’événement et contenant l’ID d’élément ou le mot clé spécifié. Comme pour toute étiquette de rétention, cette synchronisation peut prendre jusqu’à 7 jours. Dans le diagramme précédent, la période de rétention de tous les éléments encerclés en rouge est déclenchée par cet événement. En d’autres termes, lorsque ce produit atteint sa fin de vie, cet événement déclenche la période de rétention pour les enregistrements de ce produit.
     
-Il est important de comprendre que si vous ne spécifiez aucun mot clé ou ID d’élément pour un événement, la période de rétention de **tout le contenu** portant une étiquette de ce type d’événement est déclenchée par l’événement. Cela signifie que dans le diagramme ci-dessus, la conservation serait déclenchée pour tout le contenu. Ce n’est peut-être pas ce que vous souhaitez faire. 
+Il est important de comprendre que si vous ne spécifiez pas d’ID d’élément ou de mot clé pour un événement, **tout le contenu** portant une étiquette de ce type d’événement verra sa période de rétention déclenchée par l’événement. Cela signifie que, dans le diagramme précédent, tout le contenu commencera à être conservé. Ce n’est peut-être pas ce que vous voulez faire. 
   
-Enfin, n’oubliez pas que chaque étiquette a ses propres paramètres de rétention. Dans cet exemple, ils indiquent tous 10 ans, mais il est possible qu’un événement déclenche des étiquettes dont la période de rétention est différente.
+Enfin, rappelez-vous que chaque étiquette de rétention possède ses propres paramètres de rétention. Dans cet exemple, ils indiquent tous 10 ans, mais un événement peut très bien déclencher des étiquettes de rétention dont chacune possède sa propre période de rétention.
   
 ## <a name="how-to-set-up-event-driven-retention"></a>Configuration des rétentions basées sur des événements
 
-Voici le niveau le plus haut du flux de travail pour la rétention basée sur des événements. Vous trouverez les étapes détaillées ci-après.
+Flux de travail général pour la rétention basée sur un événement :
   
-![Diagramme du flux de travail de la configuration des rétentions basées sur des événements](../media/161146d9-e0fc-4248-abc1-a18045eaad5c.png)
+![Diagramme du flux de travail de la configuration des rétentions basées sur des événements](../media/event-based-retention-process.png)
   
 > [!TIP]
 > Voir [Gérer le cycle de vie des documents SharePoint avec des étiquettes de rétention](auto-apply-retention-labels-scenario.md) pour un scénario détaillé sur l’utilisation de propriétés gérées dans SharePoint pour appliquer automatiquement des étiquettes de rétention et implémenter la rétention basée sur les événements.
@@ -88,7 +88,7 @@ Dans le Centre de conformité Microsoft 365, le Centre de sécurité Microsoft�
   
 Lorsque vous créez l’étiquette, activez la rétention, puis sélectionnez l’option indiquée ci-dessous pour conserver ou supprimer le contenu basé sur un événement. Cela signifie que les paramètres de rétention ne rentrent pas en vigueur avant l’étape 5, lorsque vous créez un événement sur la page **Événements**. 
   
-Notez que les rétentions basées sur des événements sont généralement utilisées pour le contenu classé comme enregistrement. Pour cette raison, lorsque vous créez des étiquettes basées sur un événement, vous choisissez généralement l’option pour **utiliser une étiquette pour classer le contenu en tant que « Enregistrement »**.
+Notez que la rétention basée sur un événement est généralement utilisée pour le contenu classé comme enregistrement. C’est pourquoi, lorsque vous créez des étiquettes de rétention en fonction d’un événement, vous choisissez généralement l’option **Utiliser une étiquette pour classer le contenu comme un « enregistrement »**.
   
 Notez également que les rétentions basées sur des événements requièrent des paramètres de rétention qui :
   
@@ -102,15 +102,17 @@ Notez également que les rétentions basées sur des événements requièrent de
 
 Dans les paramètres d’étiquette, après avoir choisi l’option pour baser l’étiquette sur **un événement**, vous pourrez sélectionner l’option **Choisir un type d’événement**. Un type d’événement est simplement une description générale d’un événement auquel vous voulez associer une étiquette.
   
-Par exemple, si vous créez un type d’événement nommé Durée de vie des produits, vous allez créer des étiquettes basées sur un événement avec des noms qui décrivent les types de contenu auxquels vous souhaitez appliquer des étiquettes. Par exemple, « Fichiers de développement des produits » ou « Enregistrements de la décision commerciale des produits ».
+Par exemple, si vous créez un type d’événement nommé Durée de vie des produits, vous allez créer des étiquettes de rétention basées sur un événement avec des noms qui décrivent les types de contenu auxquels vous souhaitez appliquer des étiquettes. Par exemple, « Fichiers de développement des produits » ou « Enregistrements de la décision commerciale des produits ».
   
-Notez qu’une fois que vous sélectionnez un type d’événement et créez l’étiquette, le type d’événement ne peut pas être modifié.
+Notez qu’une fois que vous sélectionnez un type d’événement et créez l’étiquette de rétention, le type d’événement ne peut pas être modifié.
   
 ![Options permettant de créer ou de sélectionner un type d’événement](../media/8b7afe79-72cb-462e-81d4-b5ddbe899dbc.png)
   
-### <a name="step-3-publish-or-auto-apply-the-label"></a>Étape 3 : publier ou appliquer automatiquement l’étiquette
+### <a name="step-3-publish-the-event-based-retention-labels"></a>Étape 3 : publier les étiquettes de rétention basées sur les événements
 
-Comme pour n’importe quelle étiquette, vous devez publier ou appliquer automatiquement une étiquette basée sur un événement, de sorte qu’elle soit appliquée au contenu de façon manuelle ou automatique. Vous pouvez effectuer cette opération sous la page**Classification** > **étiquettes de rétention**.
+Publiez vos étiquettes de rétention basées sur les événements afin de pouvoir les appliquer manuellement au contenu. Vous ne pouvez pas sélectionner une étiquette de rétention basée sur l’événement pour une stratégie d’application automatique. 
+
+Pour publier vos étiquettes de rétention basées sur les événements, allez à la page **Classification** > **Étiquettes de rétention**.
   
 ![Options permettant de publier ou d’appliquer automatiquement une étiquette de rétention](../media/options-to-publish-auto-apply-retention-label.png)
 
@@ -124,7 +126,7 @@ Une fois qu’une étiquette basée sur un événement a été appliquée au con
     
 - ID d’employé à utiliser pour conserver uniquement le contenu d’une personne spécifique.
     
-Il faut comprendre que la propriété ID d’élément est tout simplement une autre propriété de document dans SharePoint et OneDrive Entreprise. Votre organisation utilise peut-être déjà d’autres propriétés de document et d’ID pour classer le contenu. Si tel est le cas, vous pouvez également utiliser ces propriétés et valeurs lorsque vous créez un événement : consultez l’étape 6 ci-dessous. L’essentiel est que votre organisation doit utiliser une association propriété:valeur dans les propriétés du document pour associer cet élément à un type d’événement.
+L’ID d’élément constitue simplement une autre propriété de document dans SharePoint et OneDrive Entreprise. Votre organisation utilise peut-être déjà d’autres ID et propriétés de document pour classer le contenu. Le cas échéant, vous pouvez également utiliser ces propriétés et valeurs lorsque vous créez un événement (voir l’étape 6 ci-après). L’essentiel est que votre organisation utilise une combinaison propriété:valeur dans les propriétés du document pour associer cet élément à un type d’événement.
   
 ![Zone de texte pour saisir un ID d’élément](../media/6d31628e-7162-4370-a8d7-de704aafa350.png)
   
@@ -134,7 +136,7 @@ Lorsqu’une instance précise de ce type d’événement se produit (par exempl
   
 ### <a name="step-6-choose-the-same-event-type-used-by-the-label-in-step-2"></a>Étape 6 : choisir le même type d’événement utilisé par l’étiquette à l’étape 2
 
-Lorsque vous créez l’événement, sélectionnez le type d’événement utilisé par l’étiquette à l’étape 2 : par exemple, Durée de vie des produits. Seule la période de rétention du contenu portant les étiquettes de ce type d’événement sera déclenchée.
+Lorsque vous créez l’événement, choisissez le type d’événement utilisé par l’étiquette de rétention à l’étape 2 (par exemple, durée de vie du produit). La période de rétention sera déclenchée uniquement pour le contenu auquel sont appliquées des étiquettes de rétention de ce type d’événement.
   
 ![Option dans les paramètres d’événement permettant de choisir un type d’événement](../media/11663591-5628-419e-9537-61eb8f5c741f.png)
   
@@ -148,17 +150,17 @@ Votre organisation a peut-être appliqué d’autres propriétés et ID aux docu
   
 Pour les éléments Exchange, vous pouvez inclure des mots clés. Vous pouvez affiner votre requête à l’aide d’opérateurs de recherche comme AND, OR et NOT. Pour obtenir plus d’informations sur les opérateurs, consultez l’article [Requêtes par mots clés et conditions de recherche pour la recherche de contenu](keyword-queries-and-search-conditions.md).
   
-Enfin, sélectionnez la date à laquelle l’événement est survenu. Cette date est utilisée comme point de départ de la période de rétention. Après avoir créé un événement, la date de cet événement est synchronisée avec tout le contenu portant une étiquette de ce type d’événement, de cet ID d’élément et de ces mots clés. Comme pour toute étiquette, cette synchronisation peut prendre jusqu’à 7 jours.
+Enfin, sélectionnez la date à laquelle l’événement s’est produit. cette date est utilisée comme début de la période de rétention. Une fois que vous avez créé un événement, la date de l’événement est synchronisée avec tout le contenu avec une étiquette de rétention de ce type d’événement, de l’ID d’actif et des mots clés. Comme pour toute étiquette de rétention, cette synchronisation peut prendre jusqu’à 7 jours.
   
 ![Page Paramètres des événements](../media/40d3c9db-f624-49a5-b38a-d16bcce20231.png)
   
 ## <a name="use-content-search-to-find-all-content-with-a-specific-label-or-asset-id"></a>Utilisation de la recherche de contenu pour rechercher tout le contenu portant une étiquette ou un ID d’élément spécifique
 
-Une fois que les étiquettes sont attribuées au contenu, vous pouvez utiliser la recherche de contenu pour rechercher tout le contenu classé avec une étiquette spécifique ou qui contient un ID d’élément spécifique.
+Une fois que les étiquettes de rétention sont attribuées au contenu, vous pouvez utiliser la recherche de contenu pour rechercher tout le contenu classé avec une étiquette de rétention spécifique ou qui contient un ID d’élément spécifique.
   
 Lorsque vous créez une recherche de contenu, procédez comme suit :
   
-- Pour trouver tout le contenu portant une étiquette spécifique, sélectionnez la condition **Balise de conformité**, puis saisissez le nom d’étiquette en partie ou en intégralité et utilisez un caractère générique. 
+- Pour trouver tout le contenu portant une étiquette de rétention spécifique, sélectionnez la condition **Balise de conformité**, puis saisissez le nom d’étiquette en partie ou en intégralité et utilisez un caractère générique. 
     
 - Pour trouver tout le contenu portant un ID d’élément spécifique, saisissez la propriété **ComplianceAssetID** et une valeur, telle que ComplianceAssetID:\<valeur\>. 
     
@@ -174,7 +176,7 @@ Pour plus d’informations, voir [Autoriser l’accès des utilisateurs au Centr
 
 Dans le centre administrateur, vous pouvez uniquement créer des événements manuellement ; il n’est pas possible de déclencher automatiquement un événement lorsqu’il se produit. Toutefois, vous pouvez utiliser un Rest API pour automatiser les événements ; pour plus d’informations, voir [Automatiser la rétention basée sur des événements](automate-event-driven-retention.md).
 
-Vous pouvez aussi utiliser un script PowerShell pour automatiser une rétention basée sur l’événement à partir de vos applications entreprise. Voici les cmdlets PowerShell disponibles pour les rétentions basées sur des événements :
+Vous pouvez aussi utiliser un script PowerShell pour automatiser une rétention basée sur l’événement à partir de vos applications entreprise. Les cmdlets PowerShell disponibles pour les rétentions basées sur des événements :
   
 - [Get-ComplianceRetentionEventType](https://go.microsoft.com/fwlink/?linkid=873002)
     
