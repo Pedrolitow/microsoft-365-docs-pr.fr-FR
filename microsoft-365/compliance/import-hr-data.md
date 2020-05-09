@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: Les administrateurs peuvent configurer un connecteur de données pour importer les données des employés depuis le système des ressources humaines (RH) de leur organisation vers Microsoft 365. Cela vous permet d’utiliser des données RH dans des stratégies de gestion des risques initiées pour vous aider à détecter les activités d’utilisateurs spécifiques susceptibles de constituer une menace interne pour votre organisation.
-ms.openlocfilehash: 0850e3fbbccb7653ddb9c56c07deaad9ed13f84a
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.openlocfilehash: 118e2a8ad4ff134a4529e3ffc95fa22cdb7cbdaf
+ms.sourcegitcommit: 614666afb104fc97acb4a2ee5577ef63c0de153a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43943363"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44173484"
 ---
 # <a name="set-up-a-connector-to-import-hr-data"></a>Configurer un connecteur pour importer des données RH
 
@@ -68,7 +68,7 @@ Le tableau suivant décrit chaque colonne du fichier CSV :
 |**LastWorkingDate**|Spécifie le dernier jour de travail de l’employé terminé. Vous devez utiliser le format de date suivant `yyyy-mm-ddThh:mm:ss.nnnnnn+|-hh:mm`:, qui est le [format de date et d’heure ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html).|
 |||
 
-Après avoir créé le fichier CSV avec les données RH requises, stockez-le sur l’ordinateur local sur lequel vous exécutez le script à l’étape 4. Vous devez également mettre en œuvre une stratégie de mise à jour pour vous assurer que le fichier CSV contient toujours les informations les plus récentes, de sorte que les données de terminaison de l’employé les plus récentes soient téléchargées vers le Cloud Microsoft.
+Après avoir créé le fichier CSV avec les données RH requises, stockez-le sur le même système que le script exécuté à l’étape 4. Vous devez également mettre en œuvre une stratégie de mise à jour pour vous assurer que le fichier CSV contient toujours les informations les plus récentes, de sorte que les données de terminaison de l’employé les plus récentes soient téléchargées vers le Cloud Microsoft.
 
 ## <a name="step-3-create-the-hr-connector"></a>Étape 3 : créer le connecteur RH
 
@@ -136,7 +136,7 @@ La dernière étape de la configuration d’un connecteur RH consiste à exécut
    |`appId` |Il s’agit de l’ID d’application AAD pour l’application que vous avez créée dans Azure AD à l’étape 1. Il est utilisé par Azure AD pour l’authentification lorsque le script tente d’accéder à votre organisation Microsoft 365. | 
    |`appSecret`|Il s’agit de la clé secrète de l’application AAD pour l’application que vous avez créée dans Azure AD à l’étape 1. Cela est également utilisé pour l’authentification.|
    |`jobId`|Il s’agit de l’ID de travail pour le connecteur HR que vous avez créé à l’étape 3. Il est utilisé pour associer les données RH téléchargées vers le Cloud Microsoft avec le connecteur RH.|
-   |`csvFilePath`|Il s’agit du chemin d’accès au fichier sur l’ordinateur local (celui que vous utilisez pour exécuter le script) pour le fichier CSV que vous avez créé à l’étape 2. Essayez d’éviter les espaces dans le chemin d’accès du fichier ; Sinon, utilisez des guillemets simples.|
+   |`csvFilePath`|Il s’agit du chemin d’accès au fichier CSV (stocké sur le même système que le script) que vous avez créé à l’étape 2. Essayez d’éviter les espaces dans le chemin d’accès du fichier ; Sinon, utilisez des guillemets simples.|
    |||
    
    Voici un exemple de syntaxe pour le script du connecteur RH en utilisant les valeurs réelles de chaque paramètre :
@@ -177,7 +177,7 @@ Vous pouvez utiliser l’application planificateur de tâches de Windows pour ex
 
 3. Dans la section **actions** , cliquez sur **créer une tâche**.
 
-4. Sous l’onglet **général** , entrez un nom descriptif pour la tâche planifiée ; par exemple, le **script du connecteur RH**. Vous pouvez également ajouter une description facultative. 
+4. Sous l’onglet **général** , entrez un nom descriptif pour la tâche planifiée ; par exemple, le **script du connecteur RH**. Vous pouvez également ajouter une description facultative.
 
 5. Sous **options de sécurité**, procédez comme suit :
 

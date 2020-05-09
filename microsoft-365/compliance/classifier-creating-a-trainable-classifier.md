@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Utilisez des classifieurs pilotables lorsque l’un des classifieurs intégrés ne répond pas à vos besoins. Un classificateur Microsoft 365 est un outil que vous pouvez former afin de reconnaître différents types de contenu en leur donnant des exemples à consulter. Cette rubrique vous montre comment créer un classifieur personnalisé.
-ms.openlocfilehash: 31fb4374290bcf92a5c68bc4e7531e9472622b0b
-ms.sourcegitcommit: 59b006f8e82d1772cae2029f278a59ae8a106736
+ms.openlocfilehash: 6358f333b274c4a1ce618d87598e7ea5340b77c9
+ms.sourcegitcommit: 614666afb104fc97acb4a2ee5577ef63c0de153a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "42266893"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44173506"
 ---
 # <a name="creating-a-trainable-classifier-preview"></a>Création d’un classifieur de formation (aperçu)
 
@@ -118,7 +118,7 @@ Une fois que le classifieur peut traiter suffisamment d’échantillons positifs
 
 21. Publiez le classifieur.
 
-22. Une fois publié, votre classifieur est disponible sous forme de condition dans la [stratégie d’attribution automatique d’étiquette de rétention basée sur une condition](labels.md#applying-a-retention-label-automatically-based-on-conditions) et [la conformité de communication](communication-compliance.md).
+22. Une fois publié, votre classifieur sera disponible sous forme de condition dans [Office autolabeling avec des étiquettes de confidentialité](apply-sensitivity-label-automatically.md), [appliquant automatiquement une stratégie d’étiquette de rétention basée sur une condition](labels.md#applying-a-retention-label-automatically-based-on-conditions) et [la conformité de la communication](communication-compliance.md).
 
 > [!CAUTION]
 > Une fois qu’un classifieur est publié, il ne peut pas passer par une formation supplémentaire, nous vous recommandons donc de tester et de réviser autant d’éléments que possible afin de vous assurer que la précision est la plus élevée possible.

@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Les administrateurs peuvent activer la prise en charge de l’étiquette de sensibilité pour les fichiers Word, Excel et PowerPoint dans SharePoint et OneDrive.
-ms.openlocfilehash: bdf66e4160e324fa3b83cc58214b16fbacf5c233
-ms.sourcegitcommit: fa6a1e432747e150df945050a3744b4408ceb2d9
+ms.openlocfilehash: bb35d4ed287e87ba17780c0e7106b837beb9666a
+ms.sourcegitcommit: 758263ad484e00f5a561a47c8c22d5787af7671e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "43957284"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44170913"
 ---
 # <a name="enable-sensitivity-labels-for-office-files-in-sharepoint-and-onedrive"></a>Activer les étiquettes de confidentialité pour les fichiers Office dans SharePoint et OneDrive
 
@@ -56,7 +56,7 @@ Regardez la vidéo suivante (pas de son) pour voir les nouvelles fonctionnalité
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed//RE4ornZ]
 
-Vous avez toujours la possibilité de désactiver les étiquettes de confidentialité pour les fichiers Office dans SharePoint et OneDrive à tout moment.
+Vous avez toujours la possibilité de désactiver les étiquettes de confidentialité pour les fichiers Office dans SharePoint et[OneDrive (à tout moment.](#how-to-disable-sensitivity-labels-for-sharepoint-and-onedrive-opt-out)
 
 ## <a name="requirements"></a>Configuration requise
 
@@ -66,21 +66,13 @@ Utilisez la version 19.002.0121.0008 ou une version ultérieure de l’applicati
 
 ## <a name="limitations"></a>Limites
 
-- Lorsque vous activez les étiquettes de confidentialité pour les fichiers Office dans SharePoint et OneDrive, les utilisateurs qui modifient une étiquette sur un fichier dans un dossier de synchronisation OneDrive peuvent ne pas être en mesure d’enregistrer les autres modifications qu’ils ont apportées au fichier. Ce scénario s’applique aux fichiers étiquetés avec chiffrement, ainsi que la modification de l’étiquette d’une étiquette qui n’a pas appliqué le chiffrement à une étiquette qui applique le chiffrement. Les utilisateurs voient un [cercle rouge avec une erreur d’icône en croix blanche](https://support.office.com/article/what-do-the-onedrive-icons-mean-11143026-8000-44f8-aaa9-67c985aa49b3)et ils sont invités à enregistrer les nouvelles modifications en tant que copie distincte.  
-    
-    En plus des modifications apportées aux étiquettes par les utilisateurs, le même comportement peut se produire si un administrateur modifie les paramètres d’une étiquette publiée qui est déjà appliquée aux fichiers téléchargés sur le client de synchronisation des utilisateurs.
-    
-    Pour éviter de perdre le travail de ces scénarios, effectuez l’une des actions suivantes :
-    - Pour appliquer des étiquettes, utilisez les versions Web des applications Office.
-    - Fermez un fichier après avoir appliqué une étiquette, puis rouvrez le fichier pour effectuer d’autres modifications.
-
 - SharePoint n’applique pas automatiquement les étiquettes de confidentialité aux fichiers existants que vous avez déjà chiffrés à l’aide des étiquettes Azure information protection. Au lieu de cela, pour que les fonctionnalités fonctionnent après l’activation des étiquettes de sensibilité pour les fichiers Office dans SharePoint et OneDrive, effectuez les tâches suivantes :
     
-    1. Assurez-vous que vous avez déplacé les étiquettes Azure information protection sur les étiquettes de confidentialité et les avez publiées à partir du centre de conformité Microsoft 365 ou du centre d’administration des étiquettes équivalent.
+    1. Assurez-vous que vous avez [déplacé les étiquettes Azure information protection](https://docs.microsoft.com/azure/information-protection/configure-policy-migrate-labels) sur les étiquettes de confidentialité et les avez [publiées](create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy) à partir du centre de conformité Microsoft 365 ou du centre d’administration des étiquettes équivalent.
     
     2. Téléchargez les fichiers, puis téléchargez-les vers SharePoint.
 
-- SharePoint ne peut pas traiter les fichiers chiffrés lorsque l’étiquette qui a appliqué le chiffrement a l’une des configurations suivantes pour le chiffrement :
+- SharePoint ne peut pas traiter les fichiers chiffrés lorsque l’étiquette qui a appliqué le chiffrement a l’une des [configurations suivantes pour le chiffrement](encryption-sensitivity-labels.md#configure-encryption-settings):
     - **Autoriser les utilisateurs à attribuer des autorisations lorsqu’ils appliquent l’étiquette** et la case à cocher **dans Word, PowerPoint et Excel, inviter les utilisateurs à spécifier des autorisations** est sélectionné. Ce paramètre est parfois appelé « autorisations définies par l’utilisateur ».
     - **L’accès des utilisateurs au contenu expire** est défini sur une valeur autre que **jamais**.
     
@@ -91,6 +83,8 @@ Utilisez la version 19.002.0121.0008 ou une version ultérieure de l’applicati
 - Le site de suivi des documents Azure information protection n’est pas pris en charge.
 
 - Les applications de bureau Office et les applications mobiles ne prennent pas en charge la co-création pour les fichiers étiquetés avec le chiffrement. Ces applications continuent à ouvrir des fichiers étiquetés et chiffrés en mode d’édition exclusive.
+
+- Si un administrateur modifie les paramètres d’une étiquette publiée déjà appliquée aux fichiers téléchargés sur le client de synchronisation des utilisateurs, il se peut que les utilisateurs ne puissent pas enregistrer les modifications qu’ils ont apportées au fichier dans leur dossier de synchronisation OneDrive. Ce scénario s’applique aux fichiers étiquetés avec chiffrement, ainsi que la modification de l’étiquette d’une étiquette qui n’a pas appliqué le chiffrement à une étiquette qui applique le chiffrement. Les utilisateurs voient un [cercle rouge avec une erreur d’icône en croix blanche](https://support.office.com/article/what-do-the-onedrive-icons-mean-11143026-8000-44f8-aaa9-67c985aa49b3)et ils sont invités à enregistrer les nouvelles modifications en tant que copie distincte. Au lieu de cela, ils peuvent fermer et rouvrir le fichier ou utiliser Office sur le Web.
 
 - Si un document étiqueté est téléchargé vers SharePoint et que l’étiquette a été appliquée à l’aide d’un compte d’un nom principal de service, le document ne peut pas être ouvert dans Office sur le Web. Les exemples de scénarios incluent Microsoft Cloud App Security et un fichier envoyé à teams par courrier électronique.
 
