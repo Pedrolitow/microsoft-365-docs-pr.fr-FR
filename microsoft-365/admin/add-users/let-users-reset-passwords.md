@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: 5bc3f460-13cc-48c0-abd6-b80bae72d04a
 description: Découvrez comment réinitialiser vos mots de passe à l’aide de l’outil de réinitialisation du mot de passe libre-service.
-ms.openlocfilehash: 9d9a1f97f9f6fc59b54f2f9bdce9c337c7d57b13
-ms.sourcegitcommit: 2399ee6f9bc955cf8f2a76c01fc84c19eb37ff42
+ms.openlocfilehash: 01099f6f678bbaa3b163ac59e0417614352e0e97
+ms.sourcegitcommit: 614666afb104fc97acb4a2ee5577ef63c0de153a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "43919434"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44173529"
 ---
 # <a name="let-users-reset-their-own-passwords"></a>Autoriser les utilisateurs à réinitialiser leur mot de passe
 
@@ -53,7 +53,7 @@ Si vous avez trouvé cette vidéo utile, consultez les [séries de formations co
 Ces étapes activent la réinitialisation du mot de passe libre-service pour tout le monde dans votre entreprise.
   
 ::: moniker range="o365-worldwide"
-1.  Dans le centre d’administration, accédez à la page **paramètres** \> de <a href="https://go.microsoft.com/fwlink/p/?linkid=2072756" target="_blank">sécurité & de confidentialité</a> .
+1. Dans le centre d’administration, accédez à la page <a href="https://go.microsoft.com/fwlink/p/?linkid=2072756" target="_blank">paramètres</a> des **paramètres** \> .
 
 ::: moniker-end
 
@@ -70,13 +70,13 @@ Ces étapes activent la réinitialisation du mot de passe libre-service pour tou
 ::: moniker-end
 
    
-2. Sélectionnez **Réinitialiser le mot de passe libre-service**, sélectionnez le lien pour **accéder au portail Azure afin d’activer la réinitialisation du mot de passe libre-service**. Vous recevrez Azure gratuitement !
+2. En haut de la page Paramètres, sélectionnez **sécurité & confidentialité**.
   
-3. Sélectionnez **utilisateurs** dans le volet de navigation de gauche, puis **réinitialisation du mot de passe**.
+3. Sélectionnez **réinitialisation du mot de passe libre-service**.
   
 4. Sur la page Propriétés, sélectionnez **tous** pour l’activer pour tous les membres de votre entreprise, puis sélectionnez **Enregistrer**.
   
-5. Lorsque vos utilisateurs se connecteront à Office 365, ils seront invités à entrer des informations de contact supplémentaires qui leur permettront de réinitialiser leur mot de passe à l'avenir.
+5. Lorsque les utilisateurs se connectent, ils sont invités à entrer des informations de contact supplémentaires qui les aideront à réinitialiser leur mot de passe à l’avenir.
 
 ## <a name="related-articles"></a>Articles connexes
 

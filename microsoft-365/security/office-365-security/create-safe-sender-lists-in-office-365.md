@@ -16,12 +16,12 @@ ms.assetid: 9721b46d-cbea-4121-be51-542395e6fd21
 ms.custom:
 - seo-marvel-apr2020
 description: Découvrez comment les administrateurs peuvent créer une liste d’expéditeurs approuvés dans Microsoft 365 et EOP qui permet aux messages entrants d’ignorer le filtrage du courrier indésirable.
-ms.openlocfilehash: e09d607f6b5203bdc3ab23ad5bd6e8f85782605a
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 300ecf8cfdb7436b8eda306a28c237ed8bf19760
+ms.sourcegitcommit: 614666afb104fc97acb4a2ee5577ef63c0de153a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44036342"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44173415"
 ---
 # <a name="create-safe-sender-lists"></a>Créer des listes d’expéditeurs approuvés
 
@@ -85,7 +85,7 @@ L’exemple suivant suppose que vous avez besoin d’un courrier électronique d
 
 ## <a name="use-outlook-safe-senders"></a>Utiliser des expéditeurs approuvés Outlook
 
-Au lieu d’un paramètre organisationnel, les utilisateurs ou les administrateurs peuvent ajouter les adresses de messagerie de l’expéditeur à la liste des expéditeurs approuvés dans la boîte aux lettres. Pour obtenir des instructions, consultez la rubrique [configurer les paramètres de courrier indésirable sur les boîtes aux lettres Exchange Online dans Office 365](configure-junk-email-settings-on-exo-mailboxes.md).
+Au lieu d’un paramètre organisationnel, les utilisateurs ou les administrateurs peuvent ajouter les adresses de messagerie de l’expéditeur à la liste des expéditeurs approuvés dans la boîte aux lettres. Pour obtenir des instructions, consultez la rubrique [configurer les paramètres de courrier indésirable sur les boîtes aux lettres Exchange Online dans Office 365](configure-junk-email-settings-on-exo-mailboxes.md). Cette opération n’est pas recommandée dans la plupart des situations puisque les expéditeurs contournent des parties de la pile de filtrage. Bien que vous approuviez l’expéditeur, l’expéditeur pourrait être compromis et terminer l’envoi de contenu malveillant. Il est préférable de laisser nos filtres faire ce qui est nécessaire pour vérifier chaque message, puis [signaler le faux positif/négatif à Microsoft](report-junk-email-messages-to-microsoft.md) si nos filtres ne sont pas corrects. Cela empêche également la préversion de ce qu’elle doit [faire dans le](zero-hour-auto-purge.md) message.
 
 Lorsque les messages ignorent le filtrage du courrier indésirable en raison de la liste des expéditeurs approuvés d’un utilisateur, le champ d’en `SFV:SFE`-tête **X-Forefront-antispam-Report** contient la valeur qui indique que le courrier indésirable, l’usurpation et le filtrage du hameçonnage ont été ignorés.
 

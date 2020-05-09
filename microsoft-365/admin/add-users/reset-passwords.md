@@ -26,12 +26,12 @@ search.appverid:
 - GEA150
 ms.assetid: 7a5d073b-7fae-4aa5-8f96-9ecd041aba9c
 description: 'Découvrez comment réinitialiser le mot de passe d’un utilisateur dans Microsoft 365 pour un abonnement professionnel. '
-ms.openlocfilehash: 14226927680c70035a01d9390f114cb0bfddbf38
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: 32d2d529ab4e2592556613b016231dbbd93458b3
+ms.sourcegitcommit: 614666afb104fc97acb4a2ee5577ef63c0de153a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44064808"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44173517"
 ---
 # <a name="reset-passwords"></a>Réinitialiser les mots de passe
 
@@ -79,11 +79,11 @@ Ces étapes sont destinées uniquement aux personnes qui utilisent un forfait Mi
 
 Suivez ces étapes si vous avez oublié votre mot de passe, mais que vous êtes en mesure de vous connecter à Microsoft 365 car, par exemple, votre mot de passe est enregistré dans votre navigateur : 
     
-1. Dans Microsoft 365, sélectionnez **paramètres** \> **Office 365** \> **informations personnelles**. 
+1. Sélectionnez votre nom (icône) dans le coin supérieur droit > **mon compte** > **informations personnelles**. 
           
-2. Vérifiez que les coordonnées de votre **contact** et de votre **courrier de secours** sont correctes. Si ce n’est pas le cas, modifiez-les maintenant. 
+2. Sous **Détails du contact**, vérifiez que votre **autre courrier électronique** est précis et que vous avez fourni un numéro de téléphone mobile. Si ce n’est pas le cas, modifiez-les maintenant. 
         
-3. Déconnexion d’Office 365 : sélectionnez votre nom dans le coin supérieur droit (dans l’image ci-dessus, affichée en tant que **Diane**) \> **déconnectez-vous**. 
+3. Se déconnecter : sélectionnez votre nom dans le coin supérieur droit (dans l’image ci-dessus, affichée en tant que **Diane**) \> **déconnectez-vous**. 
         
 4. À \> présent, reconnectez-vous : saisissez \> **votre nom d'** utilisateur puis sélectionnez **mot de passe oublié**. 
     
@@ -92,6 +92,8 @@ Suivez ces étapes si vous avez oublié votre mot de passe, mais que vous êtes 
 Si vous avez oublié votre mot de passe et que vous ne parvenez pas à vous connecter : 
     
 - Demandez à un autre administrateur global de votre entreprise de réinitialiser votre mot de passe pour vous.
+
+- Assurez-vous que vous avez fourni d’autres informations de contact, notamment un numéro de téléphone mobile. 
     
 - Ou, [appelez le support Microsoft](https://docs.microsoft.com/microsoft-365/admin/contact-support-for-business-products). 
     

@@ -1,6 +1,6 @@
 ---
-title: Degré de sécurisation Microsoft
-description: Décrit Microsoft Secure score dans le centre de sécurité Microsoft 365, la façon dont les détails sont calculés et les administrateurs de la sécurité qui peuvent s’y attendre.
+title: Microsoft Secure score (itération précédente)
+description: Décrit Microsoft Secure score dans le centre de sécurité Microsoft 365, comment améliorer votre position de sécurité et ce que les administrateurs de sécurité peuvent vous attendre.
 keywords: sécurité, programmes malveillants, Microsoft 365, M365, Secure score, centre de sécurité, actions d’amélioration
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
@@ -17,14 +17,19 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 9f39878ca56aef3ec8c9d89805a87196c19eb5b8
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: 383ef5a0ff61b861bd72dc08d7b974ef98592fcc
+ms.sourcegitcommit: 614666afb104fc97acb4a2ee5577ef63c0de153a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44141506"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44173391"
 ---
-# <a name="microsoft-secure-score"></a>Degré de sécurisation Microsoft
+# <a name="microsoft-secure-score-previous-iteration"></a>Microsoft Secure score (itération précédente)
+
+>[!IMPORTANT]
+>Cette itération du score de sécurité Microsoft est remplacée par de nouveaux éléments et fonctionnalités de conception au cours des prochains mois. Si vous n’avez pas encore affiché l’itération la plus récente, vous allez bientôt.
+>
+>Si vous voyez un onglet **mesures & des tendances** en regard de l’historique, c’est que vous êtes dans la nouvelle itération. [Accédez à Microsoft Secure score (nouveau)](microsoft-secure-score-new.md)
 
 Microsoft Secure score est une mesure de la position de sécurité d’une organisation, avec un nombre supérieur indiquant d’autres actions d’amélioration. Le suivi des recommandations de score de sécurité peut protéger votre organisation contre les menaces. À partir d’un tableau de bord centralisé dans le centre de sécurité Microsoft 365, les organisations peuvent surveiller et gérer la sécurité des identités, des données, des applications, des périphériques et de l’infrastructure de Microsoft 365.
 

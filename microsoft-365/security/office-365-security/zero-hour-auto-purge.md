@@ -21,16 +21,16 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: En savoir plus sur la purge automatique des heures zéro (ZAP), une fonctionnalité de protection de la messagerie électronique dans Microsoft 365 qui détecte les courriers indésirables, les programmes malveillants ou les messages de hameçonnage qui ont déjà été remis à Exchange Online.
-ms.openlocfilehash: a6f21147e7beaadb3aa6430b299dea8b248561c1
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: ba7aa74dd9152990ce327d1b1564c3246d15cbb8
+ms.sourcegitcommit: 614666afb104fc97acb4a2ee5577ef63c0de153a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034925"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44173297"
 ---
 # <a name="zero-hour-auto-purge-zap---protection-against-spam-and-malware-in-microsoft-365"></a>Purge automatique à zéro heure (ZAP)-protection contre le courrier indésirable et les programmes malveillants dans Microsoft 365
 
-## <a name="overview"></a>Vue d'ensemble
+## <a name="overview"></a>Vue d’ensemble
 
 La suppression automatique de zéro heure (ZAP) est une fonctionnalité de protection de la messagerie électronique dans Microsoft 365 qui détecte rétroactivement et neutralise les messages malveillants, de courrier indésirable, de courrier indésirable ou de programmes malveillants qui ont déjà été remis à des boîtes aux lettres Exchange Online.
 
@@ -42,7 +42,7 @@ Microsoft 365 met à jour quotidiennement les signatures de courrier indésirabl
 
 L’action ZAP est transparente pour l’utilisateur ; ils ne sont pas avertis si un message est détecté et déplacé.
 
-Les [listes des expéditeurs approuvés](create-safe-sender-lists-in-office-365.md), les règles de flux de messagerie (également appelées règles de transport), les règles de boîte de réception ou les filtres supplémentaires prévalent sur zap.
+Les [listes des expéditeurs approuvés](create-safe-sender-lists-in-office-365.md), les règles de flux de messagerie (également appelées règles de transport), les règles de boîte de réception ou les filtres supplémentaires prévalent sur zap. À l’instar de ce qui se passe dans le flux de messagerie, cela signifie que même si le service détermine que le message remis a besoin de l’élément ZAP, le message n’est pas traité en raison de la configuration des expéditeurs approuvés. Il s’agit d’une autre raison de contourner le filtrage des messages.
 
 ### <a name="malware-zap"></a>Programme malveillant ZAP
 
@@ -88,28 +88,28 @@ Pour déterminer si l’élément ZAP a déplacé votre message, vous pouvez uti
 
 ## <a name="zap-faq"></a>FAQ ZAP
 
-### <a name="q-what-happens-if-a-legitimate-message-is-moved-to-the-junk-email-folder"></a>Q : que se passe-t-il si un message légitime est déplacé vers le dossier courrier indésirable ?
+### <a name="what-happens-if-a-legitimate-message-is-moved-to-the-junk-email-folder"></a>Que se passe-t-il si un message légitime est déplacé vers le dossier courrier indésirable ?
 
-A : vous devez suivre le processus de création de rapports normal pour les [faux positifs](report-junk-email-messages-to-microsoft.md). La seule raison pour laquelle le message est déplacé de la boîte de réception vers le dossier courrier indésirable est que le service a déterminé que le message était du courrier indésirable ou malveillant.
+Vous devez suivre le processus de création de rapports normal pour les [faux positifs](report-junk-email-messages-to-microsoft.md). La seule raison pour laquelle le message est déplacé de la boîte de réception vers le dossier courrier indésirable est que le service a déterminé que le message était du courrier indésirable ou malveillant.
 
-### <a name="q-what-if-i-use-the-quarantine-folder-instead-of-the-junk-mail-folder"></a>Q : que se passe-t-il si j’utilise le dossier de quarantaine au lieu du dossier courrier indésirable ?
+### <a name="what-if-i-use-the-quarantine-folder-instead-of-the-junk-mail-folder"></a>Que se passe-t-il si j’utilise le dossier de quarantaine au lieu du dossier courrier indésirable ?
 
-Un : ZAP effectue une action sur un message en fonction de la configuration de vos stratégies anti-courrier indésirable, comme décrit plus haut dans cette rubrique.
+ZAP effectue une action sur un message en fonction de la configuration de vos stratégies anti-courrier indésirable, comme décrit plus haut dans cette rubrique.
 
-### <a name="q-what-if-im-using-mail-flow-rules-or-allowedblocked-sender-lists"></a>Q : que se passe-t-il si j’utilise des règles de flux de messagerie ou des listes d’expéditeurs autorisés/bloqués ?
+### <a name="what-if-im-using-safe-senders-mail-flow-rules-or-allowedblocked-sender-lists"></a>Que se passe-t-il si j’utilise des expéditeurs approuvés, des règles de flux de messagerie ou des listes d’expéditeurs autorisés/bloqués ?
 
-A : les règles de flux de messagerie ou bloquer et autoriser les paramètres organisationnels sont prioritaires. Ces messages sont exclus de ZAP.
+Les expéditeurs approuvés, les règles de flux de messagerie ou le blocage et l’autorisation des paramètres organisationnels sont prioritaires. Ces messages sont exclus de l’opération ZAP puisque le service effectue les opérations que vous avez configurées. Il s’agit d’une autre raison de contourner le filtrage des messages.
 
-### <a name="q-what-if-a-message-is-moved-to-another-folder-eg-inbox-rules"></a>Q : que se passe-t-il si un message est déplacé vers un autre dossier (par exemple, les règles de boîte de réception) ?
+### <a name="what-if-a-message-is-moved-to-another-folder-eg-inbox-rules"></a>Que se passe-t-il si un message est déplacé vers un autre dossier (par exemple, des règles de boîte de réception) ?
 
-Un : ZAP fonctionne toujours tant que le message n’a pas été supprimé, ou tant que l’action même ou renforcée n’a pas encore été appliquée. Par exemple, si la stratégie de hameçonnage est définie sur quarantaine et que l’utilisateur ou l’administrateur a déjà un courrier indésirable du courrier, la mise en quarantaine exécute l’action de mise en quarantaine du fichier.
+L’application ZAP fonctionne toujours tant que le message n’a pas été supprimé ou que l’action même ou renforcée n’a pas encore été appliquée. Par exemple, si la stratégie de hameçonnage est définie sur quarantaine et que l’utilisateur ou l’administrateur a déjà un courrier indésirable du courrier, la mise en quarantaine exécute l’action de mise en quarantaine du fichier.
 
-### <a name="q-does-zap-change-the-message-header"></a>Q : est-ce que l’en-tête de message est modifié ?
+### <a name="does-zap-change-the-message-header"></a>L’en-tête de message est-il modifié par ZAP ?
 
-A : une action ZAP n’effectue aucune modification dans l’en-tête du message.
+Une action ZAP n’effectue aucune modification dans l’en-tête du message.
 
-### <a name="q-how-does-zap-affect-mailboxes-on-hold"></a>Q : Comment ZAP affecte-t-il les boîtes aux lettres en conservation ?
+### <a name="how-does-zap-affect-mailboxes-on-hold"></a>Comment ZAP affecte-t-il les boîtes aux lettres en conservation ?
 
-Un : ZAP ne met pas en quarantaine les messages des boîtes aux lettres en conservation. ZAP peut déplacer des messages vers le dossier courrier indésirable en fonction de l’action configurée pour le verdict de courrier indésirable ou de hameçonnage dans les stratégies de blocage du courrier indésirable.
+ZAP ne met pas en quarantaine les messages des boîtes aux lettres en conservation. ZAP peut déplacer des messages vers le dossier courrier indésirable en fonction de l’action configurée pour le verdict de courrier indésirable ou de hameçonnage dans les stratégies de blocage du courrier indésirable.
 
 Pour plus d’informations sur les suspensions dans Exchange Online, consultez la rubrique mise [en attente inaltérable et conservation pour litige dans Exchange Online](https://docs.microsoft.com/Exchange/security-and-compliance/in-place-and-litigation-holds).

@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Dans cet article, vous découvrirez comment configurer des stratégies de courrier indésirable sortant qui s’appliquent à des utilisateurs, des groupes ou des domaines spécifiques de votre organisation.
-ms.openlocfilehash: 644ffb51c92f4d71d3ae2cde1eba408289573f48
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: efd3fecc2447435f40e4e20fd958e8f3b2d8e48f
+ms.sourcegitcommit: 614666afb104fc97acb4a2ee5577ef63c0de153a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44036787"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44173439"
 ---
 # <a name="configure-outbound-spam-filtering"></a>Configurer le filtrage du courrier indésirable sortant
 
@@ -53,7 +53,7 @@ La différence entre ces deux éléments n’est pas évidente lorsque vous gér
 
 - Lorsque vous supprimez une stratégie de courrier indésirable sortant du centre de sécurité & conformité, la règle de filtrage du courrier indésirable sortant et la stratégie de filtrage du courrier indésirable sortant associée sont supprimées.
 
-Dans Exchange Online PowerShell ou une version autonome d’Exchange Online Protection PowerShell, la différence entre les stratégies de filtrage du courrier indésirable sortant et les règles de filtrage du courrier indésirable sortant est apparente. Vous gérez les stratégies de filtrage du ** \*** courrier indésirable sortant à l’aide des cmdlets-HostedContentFilterPolicy et vous gérez les règles de ** \*** filtrage du courrier indésirable sortant à l’aide des cmdlets-hostedcontentfilterrule permet.
+Dans Exchange Online PowerShell ou une version autonome d’Exchange Online Protection PowerShell, la différence entre les stratégies de filtrage du courrier indésirable sortant et les règles de filtrage du courrier indésirable sortant est apparente. Vous gérez les stratégies de filtrage du ** \*** courrier indésirable sortant à l’aide des cmdlets-HostedOutboundSpamFilterPolicy et vous gérez les règles de ** \*** filtrage du courrier indésirable sortant à l’aide des cmdlets-HostedOutboundSpamFilterRule.
 
 - Dans PowerShell, vous devez d’abord créer la stratégie de filtrage du courrier indésirable sortant, puis créer la règle de filtrage du courrier indésirable sortant qui identifie la stratégie à laquelle s’applique la règle.
 

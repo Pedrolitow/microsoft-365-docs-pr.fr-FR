@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Recherchez et utilisez des rapports pour Office 365 protection avancée contre les menaces &amp; dans le centre de sécurité conformité.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 56e8b79ad85a5801f75a6ed36a58afe58b552527
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: c202e7df274e81da5395f7466199d85443361c05
+ms.sourcegitcommit: 614666afb104fc97acb4a2ee5577ef63c0de153a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034961"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44173321"
 ---
 # <a name="view-reports-for-office-365-advanced-threat-protection"></a>Afficher les rapports pour Office 365 protection avancée contre les menaces
 
@@ -101,7 +101,7 @@ Ce rapport est basé sur les données collectées, ainsi que sur les menaces dé
 Dans le tableau des détails, vous serez en mesure d’obtenir plus d’informations sur le temps de clic et les informations utilisateur. Enfin, gardez à l’esprit que le rapport d’état de protection des URL affiche la protection contre la fonctionnalité de liens fiables ATP, afin que seuls les clients ayant activé les liens de sécurité ATP voient les données reflétées dans ce rapport.
 
 > [!NOTE]
-> Il s’agit d’un *rapport de tendance de protection*, ce qui signifie que les données représentent des tendances dans un jeu de données plus volumineux. La création de rapports n’est pas disponible en temps réel ici. Pour l’URL en temps réel, cliquez sur données, continuer à utiliser le suivi des URL.
+> Il s’agit d’un *rapport de tendance de protection*, ce qui signifie que les données représentent des tendances dans un jeu de données plus volumineux. Par conséquent, les données de l’affichage agrégé ne sont pas disponibles en temps réel ici, mais les données de la vue de la table des détails sont, de sorte que vous pouvez constater une légère divergence entre les deux vues.
 
 ## <a name="atp-file-types-report"></a>Rapport sur les types de fichiers ATP
 
