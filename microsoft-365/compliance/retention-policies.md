@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Une stratégie de rétention vous permet de décider de façon proactive de conserver du contenu, de le supprimer (ou les deux), de conserver du contenu, puis de le supprimer ; d’appliquer une stratégie unique à l’ensemble de l’organisation ou à quelques emplacements ou utilisateurs ; et d’appliquer une stratégie à tout le contenu ou au contenu remplissant certaines conditions.
-ms.openlocfilehash: 42e130bfb9f988f0b771c45cbe08663f17e7b595
-ms.sourcegitcommit: f5cecd77e63ae8b47743d4f6dc3135f5decaf28b
+ms.openlocfilehash: 36866f457369248f642a4189f2d9f46e58baa2a3
+ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/30/2020
-ms.locfileid: "43949403"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44165945"
 ---
 # <a name="overview-of-retention-policies"></a>Vue d’ensemble des stratégies de rétention
 
@@ -342,7 +342,7 @@ Une stratégie de rétention qui s’applique à Teams peut utiliser le [Verroui
 
 ### <a name="microsoft-365-groups-locations"></a>Emplacements des groupes Microsoft 365
 
-Pour conserver le contenu d'un groupe Microsoft 365, vous devez utiliser l'emplacement des groupes Microsoft 365. Même si un groupe Microsoft 365 possède une boîte aux lettres Exchange, une politique de rétention qui inclut l'ensemble de l'emplacement Exchange n'inclut pas le contenu des boîtes aux lettres du groupe Microsoft 365. Une stratégie de rétention appliquée à un groupe Microsoft 365 inclut la boîte aux lettres de groupe et le site. Une stratégie de rétention appliquée à un groupe Microsoft 365 protège les ressources créées par un groupe Microsoft 365, ce qui inclut Microsoft Teams.
+Pour conserver le contenu d’un groupe Microsoft 365, vous devez utiliser l’emplacement des groupes Microsoft 365. Même si un groupe Microsoft 365 possède une boîte aux lettres Exchange, une politique de rétention qui inclut l’ensemble de l’emplacement Exchange n’inclut pas le contenu des boîtes aux lettres du groupe Microsoft 365. Une stratégie de rétention appliquée à un groupe Microsoft 365 inclut la boîte aux lettres de groupe et le site. Une stratégie de rétention appliquée à un groupe Microsoft 365 protège les ressources créées par un groupe Microsoft 365, ce qui inclut Microsoft Teams.
 
 De plus, il n’est pas possible d’utiliser l’emplacement Exchange pour inclure ou exclure une boîte aux lettres de groupe spécifique. Bien que l’emplacement Exchange permette initialement de sélectionner une boîte aux lettres de groupe, lorsque vous essayez d’enregistrer la stratégie de rétention, vous recevez une erreur qui indique que « RemoteGroupMailbox » n’est pas une sélection valide pour l’emplacement Exchange. 
 
