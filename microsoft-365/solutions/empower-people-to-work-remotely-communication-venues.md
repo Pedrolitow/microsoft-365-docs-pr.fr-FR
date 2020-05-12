@@ -14,14 +14,15 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
 - remotework
+- M365solutions
 ms.custom: ''
 description: Utilisez Microsoft 365 pour créer des moyens uniques pour communiquer des informations publiques et internes sur COVID-19.
-ms.openlocfilehash: 4f9144f743998a511b76d26f69ae6cc734193232
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: 686cfa12d76bf4122ebe4ae22a49da938322fee9
+ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 05/07/2020
-ms.locfileid: "44141478"
+ms.locfileid: "44160809"
 ---
 # <a name="step-5-create-covid-19-crisis-communication-venues"></a>Étape 5 : créer des salles de communication sur la crise du COVID-19
 
