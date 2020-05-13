@@ -2,10 +2,10 @@
 title: Envoi de messages électroniques à Microsoft 365
 f1.keywords:
 - NOCSH
-ms.author: tracyp
-author: MSFTTracyP
+ms.author: chrisda
+author: chrisda
 manager: dansimp
-ms.date: 04/09/2016
+ms.date: ''
 audience: ITPro
 ms.topic: hub-page
 ms.service: O365-seccomp
@@ -18,16 +18,16 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Apprenez en tant qu’expéditeur externe, comment pouvez-vous augmenter la capacité de remise du courrier électronique aux utilisateurs dans Microsoft 365. Découvrez également comment signaler les tentatives de courrier indésirable & les tentatives de hameçonnage en tant qu’utilisateur externe.
-ms.openlocfilehash: c1086088a92240be4bb7bbbd52077cecb1c54476
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: c464d09ddd5f6324c9b3e22e9cad6a613862c9a1
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035383"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44209822"
 ---
 # <a name="sending-mail-to-microsoft-365"></a>Envoi de messages électroniques à Microsoft 365
 
-Ces articles aident les expéditeurs externes à améliorer leur réputation et à augmenter leur capacité à remettre des e-mails à des utilisateurs dans Office 365. Ils fournissent également des informations sur la façon dont vous pouvez signaler des tentatives de courrier indésirable et de hameçonnage même si vous n’êtes pas un utilisateur de Microsoft 365.
+Ces articles aident les expéditeurs externes à améliorer leur réputation et à proposer des courriers électroniques aux utilisateurs dans Microsoft 365. Ils fournissent également des informations sur la façon dont vous pouvez signaler des tentatives de courrier indésirable et de hameçonnage même si vous n’êtes pas un utilisateur de Microsoft 365.
 
 Si vous n’êtes pas un client, mais que vous essayez d’envoyer un message à une personne qui est, vous êtes au bon endroit. Si vous êtes administrateur et que vous avez besoin d’aide pour combattre le courrier indésirable, ce n’est pas la bonne section pour vous. Au lieu de cela, accédez à protection contre le [courrier indésirable et les programmes malveillants dans Microsoft 365](anti-spam-and-anti-malware-protection.md).
 

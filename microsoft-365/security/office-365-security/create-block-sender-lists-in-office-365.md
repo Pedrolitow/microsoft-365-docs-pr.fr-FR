@@ -12,17 +12,17 @@ ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150s
-description: Les administrateurs peuvent en savoir plus sur les options disponibles dans Microsoft 365 et EOP pour bloquer les messages entrants.
-ms.openlocfilehash: 626eff3a1ea28cc16b12acaaa2ba52f7d094a347
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: Les administrateurs peuvent en savoir plus sur les options disponibles et préférées pour bloquer les messages entrants dans Exchange Online Protection (EOP).
+ms.openlocfilehash: d9db3d4ac123998e6ab4f108199b3aee852f95d6
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637687"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44209546"
 ---
-# <a name="create-blocked-sender-lists"></a>Créer des listes d’expéditeurs bloqués
+# <a name="create-blocked-sender-lists-in-eop"></a>Créer des listes d’expéditeurs bloqués dans EOP
 
-Si vous êtes un client Microsoft 365 avec des boîtes aux lettres dans Exchange Online ou un client Exchange Online Protection (EOP) autonome sans boîte aux lettres Exchange Online, EOP offre plusieurs méthodes de blocage des messages provenant d’expéditeurs indésirables. Ces options incluent les expéditeurs bloqués Outlook, les listes d’expéditeurs bloqués ou les listes de domaines bloqués dans les stratégies de blocage du courrier indésirable, les règles de flux de messagerie Exchange (également appelées règles de transport) et la liste d’adresses IP bloquées (filtrage des connexions). Collectivement, ces options peuvent être considérées comme des _listes d’expéditeurs bloqués_.
+Dans les organisations Microsoft 365 avec des boîtes aux lettres dans Exchange Online ou des organisations Exchange Online Protection (EOP) autonomes sans boîte aux lettres Exchange Online, EOP offre plusieurs méthodes de blocage des messages provenant d’expéditeurs indésirables. Ces options incluent les expéditeurs bloqués Outlook, les listes d’expéditeurs bloqués ou les listes de domaines bloqués dans les stratégies de blocage du courrier indésirable, les règles de flux de messagerie Exchange (également appelées règles de transport) et la liste d’adresses IP bloquées (filtrage des connexions). Collectivement, ces options peuvent être considérées comme des _listes d’expéditeurs bloqués_.
 
 La meilleure méthode pour bloquer les expéditeurs varie en fonction de l’étendue de l’impact. Pour un seul utilisateur, la bonne solution peut être des expéditeurs bloqués Outlook. Pour de nombreux utilisateurs, l’une des autres options est plus appropriée. Les options suivantes sont classées par portée et étendue d’impact. La liste passe de étroite à large, mais *lit les détails* pour obtenir des recommandations complètes.
 
@@ -37,20 +37,20 @@ La meilleure méthode pour bloquer les expéditeurs varie en fonction de l’ét
 > [!NOTE]
 > Bien que vous puissiez utiliser les paramètres de blocage à l’échelle de l’Organisation pour résoudre les faux négatifs (courrier indésirable manqué), vous devez également envoyer ces messages à Microsoft pour analyse. La gestion des faux négatifs à l’aide de listes rouges augmente considérablement votre charge administrative. Si vous utilisez des listes rouges pour déviation du courrier indésirable manqué, vous devez conserver la rubrique [signaler les messages et les fichiers à Microsoft](report-junk-email-messages-to-microsoft.md) à l’adresse.
 
-En revanche, vous disposez également de plusieurs options pour toujours autoriser les messages provenant de sources spécifiques en utilisant des _listes d’expéditeurs approuvés_. Pour plus d’informations, consultez la rubrique [créer des listes d’expéditeurs approuvés](create-safe-sender-lists-in-office-365.md).
+En revanche, vous disposez également de plusieurs options pour toujours autoriser les messages provenant de sources spécifiques en utilisant des _listes d’expéditeurs approuvés_. Si vous souhaitez en savoir plus, consultez la page [Créer des listes d’expéditeurs approuvés](create-safe-sender-lists-in-office-365.md).
 
 ## <a name="use-outlook-blocked-senders"></a>Utiliser les expéditeurs bloqués d’Outlook
 
 Lorsque seul un petit nombre d’utilisateurs a reçu du courrier indésirable, les utilisateurs ou les administrateurs peuvent ajouter les adresses de messagerie de l’expéditeur à la liste des expéditeurs bloqués dans la boîte aux lettres. Pour obtenir des instructions, consultez la rubrique [configurer les paramètres du courrier indésirable dans les boîtes aux lettres Exchange Online](configure-junk-email-settings-on-exo-mailboxes.md).
 
-Lorsque les messages sont bloqués en raison de la liste des expéditeurs bloqués d’un utilisateur, le champ d’en-tête **X-Forefront-antispam-Report** contient la valeur `SFV:BLK`.
+Lorsque les messages sont bloqués en raison de la liste des expéditeurs bloqués d’un utilisateur, le champ d’en-tête **X-Forefront-antispam-Report** contient la valeur `SFV:BLK` .
 
 > [!NOTE]
 > Si les messages indésirables sont des bulletins d’informations provenant d’une source digne de réputation et reconnaissables, l’annulation de l’abonnement au courrier électronique est une autre option permettant d’empêcher l’utilisateur de recevoir les messages.
 
 ## <a name="use-blocked-sender-lists-or-blocked-domain-lists"></a>Utiliser les listes d’expéditeurs bloqués ou les listes de domaines bloqués
 
-Lorsque plusieurs utilisateurs sont affectés, l’étendue est plus large, de sorte que la meilleure meilleure option est les listes d’expéditeurs bloqués ou les listes de domaines bloqués dans les stratégies anti-courrier indésirable. Les messages provenant d’expéditeurs figurant dans les listes sont marqués comme **courrier indésirable**et l’action que vous avez configurée pour le verdict du filtre de **courrier indésirable** est appliquée au message. Pour plus d’informations, consultez la rubrique [configurer des stratégies anti-courrier indésirable](configure-your-spam-filter-policies.md).
+Lorsque plusieurs utilisateurs sont affectés, l’étendue est plus large, de sorte que la meilleure meilleure option est les listes d’expéditeurs bloqués ou les listes de domaines bloqués dans les stratégies anti-courrier indésirable. Les messages provenant d’expéditeurs figurant dans les listes sont marqués comme **courrier indésirable**et l’action que vous avez configurée pour le verdict du filtre de **courrier indésirable** est appliquée au message. Pour plus d’informations, consultez [Configurer les stratégies anti-courrier indésirable](configure-your-spam-filter-policies.md).
 
 La limite maximale de ces listes est d’environ 1000 entrées.
 

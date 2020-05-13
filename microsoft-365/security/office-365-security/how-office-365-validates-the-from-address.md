@@ -1,5 +1,5 @@
 ---
-title: Comment Microsoft 365 valide l’adresse de pour empêcher le hameçonnage
+title: Comment EOP valide l’adresse de pour empêcher le hameçonnage
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -16,18 +16,18 @@ search.appverid:
 ms.assetid: eef8408b-54d3-4d7d-9cf7-ad2af10b2e0e
 ms.collection:
 - M365-security-compliance
-description: 'Pour éviter les attaques par hameçonnage, Microsoft 365 et Outlook.com requièrent désormais une conformité RFC pour from : Addresses.'
+description: Les administrateurs peuvent en savoir plus sur les types d’adresses de messagerie qui sont acceptés ou refusés par Exchange Online Protection (EOP) et Outlook.com afin d’empêcher le hameçonnage.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ef361c7009cc8903ab2721d299412b7d44a4f87c
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: f16bb9b0af1ca5481437ef253c6d36dd519ff9e2
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034081"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44209450"
 ---
-# <a name="how-microsoft-365-validates-the-from-address-to-prevent-phishing"></a>Comment Microsoft 365 valide l’adresse de pour empêcher le hameçonnage
+# <a name="how-eop-validates-the-from-address-to-prevent-phishing"></a>Comment EOP valide l’adresse de pour empêcher le hameçonnage
 
-Les comptes de messagerie Microsoft 365 reçoivent un nombre plus important d’attaques par hameçonnage. En plus des [adresses de messagerie d’expéditeur usurpées (falsifiées)](anti-spoofing-protection.md), les agresseurs utilisent souvent des valeurs de l’adresse de provenance qui enfreignent les normes Internet. Afin d’éviter ce type de phishing, Microsoft 365 et Outlook.com requièrent désormais que les messages entrants incluent une adresse à partir de la RFC, comme décrit dans cette rubrique. Cette mise en œuvre a été activée en novembre 2017.
+Les attaques par hameçonnage représentent une menace constante pour toute organisation de messagerie. En plus des [adresses de messagerie d’expéditeur usurpées (falsifiées)](anti-spoofing-protection.md), les agresseurs utilisent souvent des valeurs de l’adresse de provenance qui enfreignent les normes Internet. Pour éviter ce type de hameçonnage, Exchange Online Protection (EOP) et Outlook.com requièrent désormais que les messages entrants incluent une adresse d’adresse conforme à la RFC, comme décrit dans cette rubrique. Cette mise en œuvre a été activée en novembre 2017.
 
 **Remarques** :
 
@@ -53,7 +53,7 @@ L’adresse de l’adresse est définie en détail dans plusieurs RFC (par exemp
   - Si l’adresse de l’adresse contient un nom d’affichage, la valeur EmailAddress doit être placée entre chevrons (< >) comme illustré.
   - Microsoft recommande vivement d’insérer un espace entre le nom d’affichage et l’adresse de messagerie.
 
-- **EmailAddress**: une adresse de messagerie utilise le `local-part@domain`format suivant :
+- **EmailAddress**: une adresse de messagerie utilise le format `local-part@domain` suivant :
 
   - **local-part**: une chaîne qui identifie la boîte aux lettres associée à l’adresse. Cette valeur est unique au sein du domaine. Souvent, le nom d’utilisateur ou le GUID du propriétaire de la boîte aux lettres est utilisé.
   - **domaine**: nom de domaine complet (FQDN) du serveur de messagerie qui héberge la boîte aux lettres identifiée par la partie locale de l’adresse de messagerie.
@@ -104,7 +104,7 @@ Les adresses de messagerie suivantes ne sont pas valides :
 
 ## <a name="suppress-auto-replies-to-your-custom-domain"></a>Supprimer les réponses automatiques à votre domaine personnalisé
 
-Vous ne pouvez pas utiliser `From: <>` la valeur pour supprimer les réponses automatiques. Au lieu de cela, vous devez configurer un enregistrement MX null pour votre domaine personnalisé. Les réponses automatiques (et toutes les réponses) sont naturellement supprimées, car il n’existe aucune adresse publiée à laquelle le serveur de réponse peut envoyer des messages.
+Vous ne pouvez pas utiliser la valeur `From: <>` pour supprimer les réponses automatiques. Au lieu de cela, vous devez configurer un enregistrement MX null pour votre domaine personnalisé. Les réponses automatiques (et toutes les réponses) sont naturellement supprimées, car il n’existe aucune adresse publiée à laquelle le serveur de réponse peut envoyer des messages.
 
 - Choisissez un domaine de messagerie qui ne peut pas recevoir de courrier électronique. Par exemple, si votre domaine principal est contoso.com, vous pouvez choisir noreply.contoso.com.
 

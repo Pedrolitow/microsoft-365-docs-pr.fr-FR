@@ -15,37 +15,37 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 2fb94c23-1846-4a0e-994d-da6d02445f15
-description: 'Découvrez comment utiliser le centre de &amp; sécurité conformité pour préparer les données à analyser avec Advanced eDiscovery. '
-ms.openlocfilehash: edc92aeac0c76e64d1d2dcfd6ceae08d766b9397
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: 'Découvrez comment utiliser le centre de sécurité &amp; conformité pour préparer les données à analyser avec Advanced eDiscovery. '
+ms.openlocfilehash: 25b500e88e53dfae9b8fa9d504a402f4e2f7ce12
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43626658"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208098"
 ---
 # <a name="prepare-data-for-advanced-ediscovery-classic"></a>Préparation des données pour Advanced eDiscovery (classique)
 
 Cette rubrique décrit comment charger les résultats d’une recherche de contenu dans dans un cas dans Advanced eDiscovery (classique). 
   
 > [!IMPORTANT]
-> À mesure que nous continuons à investir dans les versions plus récentes de Advanced eDiscovery, nous annonçaons le retrait de la fonctionnalité eDiscovery avancée, également appelée *Advanced eDiscovery (Classic)* ou *Advanced eDiscovery v 1.0*. Si vous utilisez Advanced eDiscovery v 1.0, veuillez faire la transition vers [Advanced eDiscovery v2.0](overview-ediscovery-20.md) (également connu sous le nom de *solution eDiscovery avancée dans Microsoft 365*) dès que possible. Advanced eDiscovery 2.0 contient des fonctionnalités similaires à celles de Advanced eDiscovery v1.0, et elle offre également de nombreuses fonctions inédites telles que la gestion des consignataires, la gestion des communications et les jeux à réviser. Pour en savoir plus sur le retrait d’Advanced eDiscovery v1.0, voir la [Suppression des outils hérités eDiscovery](legacy-ediscovery-retirement.md#advanced-ediscovery-v10).  
+> Au fur et à mesure que nous investissons dans de nouvelles versions d’Advanced eDiscovery, nous annonçons le retrait d’Advanced eDiscovery, également appelé *Advanced eDiscovery (classique)* ou *Advanced eDiscovery v1.0*. Si vous utilisez Advanced eDiscovery v 1.0, veuillez faire la transition vers [Advanced eDiscovery v2.0](overview-ediscovery-20.md) (également connu sous le nom de *solution eDiscovery avancée dans Microsoft 365*) dès que possible. Advanced eDiscovery 2.0 contient des fonctionnalités similaires à celles de Advanced eDiscovery v1.0, et elle offre également de nombreuses fonctions inédites telles que la gestion des consignataires, la gestion des communications et les jeux à réviser. Pour en savoir plus sur le retrait d’Advanced eDiscovery v1.0, voir la [Suppression des outils hérités eDiscovery](legacy-ediscovery-retirement.md#advanced-ediscovery-v10).  
   
 ## <a name="step-1-prepare-data-for-advanced-ediscovery"></a>Étape 1 : préparer les données pour Advanced eDiscovery
 
-Pour analyser les données avec Advanced eDiscovery, vous pouvez utiliser les résultats d’une recherche de contenu que vous exécutez dans le centre &amp; de sécurité conformité Microsoft 365 (qui se trouve sur la page **recherche** de &amp; contenu dans le centre de sécurité conformité de Microsoft 365) ou dans une recherche associée à un cas de &amp; découverte électronique (dans la page **eDiscovery** du centre de sécurité conformité). 
+Pour analyser les données avec Advanced eDiscovery, vous pouvez utiliser les résultats d’une recherche de contenu que vous exécutez dans le centre de sécurité conformité Microsoft 365 (qui se &amp; trouve sur la page **recherche de contenu** dans le centre de sécurité conformité de Microsoft 365 &amp; ) ou dans une recherche associée à un cas de découverte électronique (dans la page **eDiscovery** du centre de sécurité &amp; conformité). 
   
 Pour obtenir la procédure détaillée sur la préparation des résultats de recherche pour analyse dans Advanced eDiscovery, reportez-vous à [Prepare Search Results for Advanced eDiscovery](prepare-search-results-for-advanced-ediscovery.md).
   
 > [!NOTE]
-> Si vous disposez de données en dehors de Microsoft 365 et que vous souhaitez les importer dans Microsoft 365 afin de pouvoir les préparer et les analyser dans Advanced eDiscovery, voir [Overview of Import PST Files to microsoft 365](https://support.office.com/article/ba688e0a-0fcb-4bd7-8e57-2b669564ea84) and [Archiving tiers Data](https://go.microsoft.com/fwlink/p/?linkid=716918). 
+> Si vous disposez de données en dehors de Microsoft 365 et que vous souhaitez les importer dans Microsoft 365 afin de pouvoir les préparer et les analyser dans Advanced eDiscovery, voir [Overview of Import PST Files to microsoft 365](https://docs.microsoft.com/microsoft-365/compliance/importing-pst-files-to-office-365) and [Archiving tiers Data](https://go.microsoft.com/fwlink/p/?linkid=716918). 
   
 ## <a name="step-2-load-search-result-data-in-to-a-case-in-advanced-ediscovery"></a>Étape 2 : chargement des données de résultats de recherche dans dans un cas dans Advanced eDiscovery
 
-Une fois que vous avez préparé les résultats de &amp; la recherche dans le centre de sécurité conformité pour analyse, l’étape suivante consiste à charger les résultats de la recherche dans un cas dans Advanced eDiscovery. Pour plus d’informations, consultez [la rubrique exécuter le module de processus](run-the-process-module-in-advanced-ediscovery.md).
+Une fois que vous avez préparé les résultats de la recherche dans le &amp; Centre de sécurité conformité pour analyse, l’étape suivante consiste à charger les résultats de la recherche dans un cas dans Advanced eDiscovery. Pour plus d’informations, consultez [la rubrique exécuter le module de processus](run-the-process-module-in-advanced-ediscovery.md).
   
 1. Accédez à [https://protection.office.com](https://protection.office.com).
     
-2. Connectez-vous à l’aide de votre compte professionnel ou scolaire.
+2. Connectez-vous à l’aide de votre compte scolaire ou professionnel.
     
 3. Dans le Centre de sécurité &amp; conformité, cliquez sur **Recherches &amp; enquêtes** \> **eDiscovery** pour afficher la liste des cas de votre organisation. 
     
@@ -63,7 +63,7 @@ Une fois que vous avez préparé les résultats de &amp; la recherche dans le ce
     
 6. Pour charger les données de résultats de recherche à partir d’un conteneur dans le cas dans Advanced eDiscovery, sélectionnez un conteneur, puis cliquez sur **traiter**.
     
-Une fois que les résultats de la &amp; recherche du centre de sécurité conformité sont ajoutés à l’incident dans Advanced eDiscovery, l’étape suivante consiste à utiliser les outils dans Advanced eDiscovery pour analyser et rechercher les données pertinentes pour le cas. 
+Une fois que les résultats de la recherche du centre de sécurité &amp; conformité sont ajoutés à l’incident dans Advanced eDiscovery, l’étape suivante consiste à utiliser les outils dans Advanced eDiscovery pour analyser et rechercher les données pertinentes pour le cas. 
   
 ## <a name="see-also"></a>Voir aussi
 

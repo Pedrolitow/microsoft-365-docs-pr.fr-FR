@@ -1,5 +1,5 @@
 ---
-title: Gérer les autorisations de groupe de rôles d’administrateur dans EOP
+title: Gérer les groupes de rôles dans EOP
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -12,56 +12,236 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 125834f4-1024-4325-ad5a-d2573cfb005e
 description: Les administrateurs peuvent apprendre à attribuer ou supprimer des autorisations dans le centre d’administration Exchange dans Exchange Online Protection.
-ms.openlocfilehash: 01676fab3ed69120a35687d1c6939cb466b8d672
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 3d7b709304f901c4adc41c67b0d6fe9c6ff382bf
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42082913"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44209675"
 ---
-# <a name="manage-admin-role-group-permissions-in-eop"></a>Gérer les autorisations de groupe de rôles d’administrateur dans EOP
+# <a name="manage-role-groups-in-standalone-eop"></a>Gérer les groupes de rôles dans une version autonome EOP
 
-Dans Microsoft Exchange Online Protection (EOP), vous pouvez utiliser le Centre d'administration Exchange (CAE) pour inclure un utilisateur en tant que membre d'un ou de plusieurs groupes de rôles afin de lui attribuer des autorisations lui permettant de réaliser des tâches administratives particulières. Le CAE vous permet également de supprimer un utilisateur d'un ou de plusieurs groupes de rôles.
+Dans les organisations Exchange Online Protection (EOP) autonomes sans boîtes aux lettres Exchange Online, vous pouvez utiliser le centre d’administration Exchange pour ajouter des utilisateurs à des groupes de rôles. L’ajout d’un utilisateur à un groupe de rôles donne à l’utilisateur des autorisations pour effectuer des tâches d’administration spécifiques. Vous pouvez également supprimer des utilisateurs des groupes de rôles.
+
+Pour plus d’informations sur les rôles et les groupes de rôles, voir [Permissions in standalone EOP](feature-permissions-in-eop.md).
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu'il faut savoir avant de commencer
 
-- Durée d'exécution estimée : 5 à 10 minutes
+- Pour ouvrir le centre d’administration Exchange, consultez la rubrique [Exchange Admin Center in standalone EOP](exchange-admin-center-in-exchange-online-protection-eop.md).
 
-- Pour ouvrir le centre d’administration Exchange, consultez la rubrique [Exchange Admin Center in Exchange Online Protection](exchange-admin-center-in-exchange-online-protection-eop.md).
+- Pour ouvrir la version PowerShell d’EOP autonome, consultez la rubrique [Connect to Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell).
 
-- Des autorisations doivent vous être attribuées avant de pouvoir exécuter cette procédure. Pour voir les autorisations qui vous sont nécessaires, consultez l'entrée « Utilisateurs, contacts et groupes de rôles » dans la rubrique [Autorisations des fonctionnalités dans EOP](feature-permissions-in-eop.md).
+- Des autorisations doivent vous être attribuées avant de pouvoir exécuter ces procédures. Plus précisément, vous avez besoin du rôle de gestion des rôles, qui est affecté par défaut au groupe de rôles OrganizationManagement (administrateurs globaux). Pour plus d’informations, consultez la rubrique [autorisations dans EOP autonome](feature-permissions-in-eop.md) et utiliser le centre d’administration Exchange pour [modifier la liste des membres dans les groupes de rôles](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups).
 
 - Pour plus d’informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir [raccourcis clavier pour le centre d’administration Exchange dans Exchange Online](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center).
 
 > [!TIP]
 > Vous rencontrez des difficultés ? Demandez de l’aide dans le forum [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351) .
 
-## <a name="use-the-eac-to-assign-members-to-admin-role-groups"></a>Utiliser le Centre d'administration Exchange (CAE) pour affecter des membres à des groupes de rôles d'administrateur
+## <a name="use-the-eac-to-manage-role-groups"></a>Utiliser le centre d’administration Exchange pour gérer les groupes de rôles
 
-1. Dans le centre d’administration Exchange, accédez à **rôles d’administrateur**des **autorisations** \> , cliquez sur le groupe de rôles auquel vous souhaitez ajouter l’utilisateur ou les utilisateurs,](../../media/ITPro-EAC-EditIcon.gif)puis cliquez sur **modifier** ![l’icône modifier.
+### <a name="use-the-eac-to-view-role-groups"></a>Utiliser le centre d’administration Exchange pour afficher les groupes de rôles
 
-2. Sous membres, cliquez sur **Ajouter** ![une](../../media/ITPro-EAC-AddIcon.gif)icône Ajouter. La fenêtre Sélectionner les membres s'affiche.
+1. Dans le centre d’administration Exchange, accédez à rôles d’administrateur des **autorisations** \> **Admin roles**. Tous les groupes de rôles de votre organisation sont répertoriés ici.
 
-3. Recherchez le ou les utilisateurs à ajouter, ou sélectionnez-les dans la liste.
+2. Sélectionnez un groupe de rôles. Le volet d’informations affiche le **nom**, la **Description**, les **rôles attribués**et **gérés par** le groupe de rôles. Vous pouvez également afficher ces informations en cliquant sur **modifier** l' ![ icône modifier ](../../media/ITPro-EAC-EditIcon.png) .
 
-4. Lorsque vous avez sélectionné les utilisateurs à ajouter, cliquez sur **Ajouter**, puis sur **OK**. La fenêtre Sélectionner les membres se ferme.
+### <a name="use-the-eac-to-create-role-groups"></a>Utiliser le centre d’administration Exchange pour créer des groupes de rôles
 
-5. Vous constatez que les utilisateurs ont été ajoutés au volet **Membres**. Cliquez sur **Enregistrer**.
+Lorsque vous créez un nouveau groupe de rôles, vous pouvez configurer tous les paramètres vous-même (lors de la création du groupe ou après). Sinon, vous pouvez copier un groupe de rôles existant et le modifier.
+
+1. Dans le centre d’administration Exchange, accédez à rôles d’administrateur des **autorisations** \> **Admin roles**, puis effectuez l’une des opérations suivantes :
+
+   - **Créez manuellement un nouveau groupe de rôles**: cliquez sur **Ajouter** une ![ icône Ajouter ](../../media/ITPro-EAC-AddIcon.png) .
+
+   - **Copier un groupe de rôles existant**: sélectionnez le groupe de rôles que vous souhaitez copier, puis cliquez sur icône **copier** ![ ](../../media/ITPro-EAC-CopyIcon.png) .
+
+2. Dans la fenêtre **nouveau groupe de rôles** qui s’affiche, configurez les paramètres suivants :
+
+    - **Nom**: entrez un nom unique pour le groupe de rôles.
+
+    - **Description**: entrez une description facultative pour le groupe de rôles.
+
+    - **Rôles**: cliquez sur **Ajouter** une ![ icône Ajouter ](../../media/ITPro-EAC-AddIcon.png) ou **supprimer** ![ ITPro-EAC-RemoveIcon. gif ](../../media/ITPro-EAC-RemoveIcon.gif) pour sélectionner ou modifier les rôles attribués au groupe de rôles.
+
+    - **Membres**: cliquez sur **Ajouter** une ![ icône Ajouter ](../../media/ITPro-EAC-AddIcon.png) ou **supprimer** ![ ITPro-EAC-RemoveIcon. gif ](../../media/ITPro-EAC-RemoveIcon.gif) pour modifier l’appartenance au groupe de rôles.
+
+3. Lorsque vous avez terminé, cliquez sur **Enregistrer** pour créer le groupe de rôles.
+
+### <a name="use-the-eac-to-modify-role-groups"></a>Utiliser le centre d’administration Exchange pour modifier des groupes de rôles
+
+Dans le centre d’administration Exchange, accédez à rôles d’administrateur des **autorisations** \> **Admin roles**, sélectionnez le groupe de rôles que vous souhaitez modifier, puis cliquez sur **modifier** l' ![ icône d’édition ](../../media/ITPro-EAC-EditIcon.png) .
+
+Les mêmes options sont disponibles lorsque vous modifiez des groupes de rôles, comme lorsque vous créez des groupes de rôles. Vous pouvez :
+
+- Modifiez le nom et la description.
+
+- Ajouter et supprimer des rôles de gestion (créer ou supprimer des attributions de rôles).
+
+- Ajouter et supprimer des membres.
+
+**Remarque**: certains groupes de rôles (par exemple, gestion de l’organisation) restreignent les rôles que vous pouvez supprimer du groupe.
+
+#### <a name="use-the-eac-modify-the-list-of-members-in-role-groups"></a>Utiliser le centre d’administration Exchange modifier la liste des membres dans les groupes de rôles
+
+1. Dans le centre d’administration Exchange, accédez à rôles d’administrateur des **autorisations** \> **Admin roles**, sélectionnez le groupe de rôles que vous souhaitez modifier, puis cliquez sur **modifier** l' ![ icône d’édition ](../../media/ITPro-EAC-EditIcon.png) .
+
+2. Dans la page des propriétés du groupe de rôles qui s’ouvre, dans la section **memebers** , effectuez l’une des opérations suivantes :
+
+   - Cliquez sur **Ajouter** une ![ icône Ajouter ](../../media/ITPro-EAC-AddIcon.png) . Dans la page qui s’affiche, recherchez l’utilisateur que Wou souhaite ajouter, puis cliquez sur **Ajouter->**. Sélectionnez utilisateurs, puis cliquez sur **ajouter >** plusieurs fois autant de fois que nécessaire. Lorsque vous avez terminé, cliquez sur **OK**.
+
+   - Sélectionnez les utilisateurs à supprimer, puis cliquez sur **supprimer** l' ![ icône Supprimer ](../../media/ITPro-EAC-RemoveIcon.gif) .
+
+3. Lorsque vous avez terminé, cliquez sur **Enregistrer**.
 
    > [!NOTE]
    > Après avoir ajouté ou supprimé des membres dans le groupe de rôles, il est possible que les utilisateurs doivent se déconnecter puis se reconnecter pour que les modifications au niveau de leurs droits d'administration soit appliquées.
 
-## <a name="use-the-eac-to-remove-members-from-admin-role-groups"></a>Utiliser le Centre d'administration Exchange (CAE) pour supprimer des membres de groupes de rôles d'administrateur
+### <a name="use-the-eac-to-remove-role-groups"></a>Utiliser le centre d’administration Exchange pour supprimer des groupes de rôles
 
-1. Dans le centre d’administration Exchange, accédez à **rôles d’administrateur**des **autorisations** \> , cliquez sur le groupe de rôles duquel vous souhaitez supprimer un ou les utilisateurs, puis](../../media/ITPro-EAC-EditIcon.gif)cliquez sur **modifier** ![l’icône de modification.
+Vous ne pouvez pas supprimer les groupes de rôles intégrés, mais vous pouvez supprimer les groupes de rôles personnalisés que vous avez créés.
 
-2. Sous membres, sélectionnez le ou les utilisateurs que vous souhaitez supprimer, puis cliquez sur **supprimer** ![l'](../../media/ITPro-EAC-RemoveIcon.gif)icône Supprimer.
+1. Dans le centre d’administration Exchange, accédez à rôles d’administrateur des **autorisations** \> **Admin roles**.
 
-3. Cliquez sur **Enregistrer** pour enregistrer la modification apportée au groupe de rôles et retourner à la page **Rôles d'administrateur**. Pour vérifier que vous avez supprimé l'utilisateur du groupe de rôles d'administrateur, assurez-vous que le membre n'apparaît plus sous Membres dans le volet Détails relatif au groupe de rôles sélectionné.
+2. Sélectionnez le groupe de rôles que vous souhaitez supprimer, puis cliquez sur **supprimer** l' ![ icône Supprimer ](../../media/ITPro-EAC-DeleteIcon.png) .
 
-   > [!NOTE]
-   > Après avoir ajouté ou supprimé des membres dans le groupe de rôles, il est possible que les utilisateurs doivent se déconnecter puis se reconnecter pour que les modifications au niveau de leurs droits d'administration soit appliquées.
+3. Cliquez sur **Oui** dans la fenêtre de confirmation qui s’affiche.
 
-## <a name="for-more-information"></a>Pour plus d'informations
+## <a name="use-powershell-to-manage-role-groups"></a>Utiliser PowerShell pour gérer les groupes de rôles
 
-[Autorisations des fonctionnalités dans EOP](feature-permissions-in-eop.md)
+### <a name="use-standalone-eop-powershell-to-view-role-groups"></a>Utilisation d’EOP PowerShell autonome pour afficher des groupes de rôles
+
+Pour afficher un groupe de rôles, utilisez la syntaxe suivante :
+
+```PowerShell
+Get-RoleGroup [-Identity "<Role Group Name>"] [-Filter <Filter>]
+```
+
+Cet exemple renvoie la liste récapitulative de tous les groupes de rôles.
+
+```PowerShell
+Get-RoleGroup
+```
+
+Cet exemple renvoie des informations détaillées sur le groupe de rôles administrateurs des destinataires.
+
+```PowerShell
+Get-RoleGroup -Identity "Recipient Administrators" | Format-List
+```
+
+Cet exemple renvoie tous les groupes de rôles pour lesquels l’utilisateur Julia est membre. Vous devez utiliser la valeur DistinguishedName (DN) pour Julia, que vous pouvez trouver en exécutant la commande : `Get-User -Identity Julia | Format-List DistinguishedName` .
+
+```PowerShell
+Get-RoleGroup -Filter "Members -eq 'CN=Julia,OU=contoso.onmicrosoft.com,OU=Microsoft Exchange Hosted Organizations,DC=NAMPR001,DC=PROD,DC=OUTLOOK,DC=COM'"
+```
+
+Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Get-RoleGroup](https://docs.microsoft.com/powershell/module/exchange/role-based-access-control/Get-RoleGroup).
+
+### <a name="use-standalone-eop-powershell-to-create-role-groups"></a>Utilisation d’EOP PowerShell autonome pour créer des groupes de rôles
+
+Lorsque vous créez un nouveau groupe de rôles, vous pouvez configurer tous les paramètres manuellement (lors de la création du groupe ou après). Sinon, vous pouvez copier un groupe de rôles existant et le modifier.
+
+- Pour créer manuellement un nouveau groupe de rôles, utilisez la syntaxe suivante :
+
+  ```PowerShell
+  New-RoleGroup -Name "Unique Name" -Description "Descriptive text" -Roles <"Role1","Role2"...>
+  ```
+
+  - Le paramètre _roles_ spécifie les rôles de gestion à affecter au groupe de rôles à l’aide de la syntaxe suivante `"Role1","Role1",..."RoleN"` . Vous pouvez voir les rôles disponibles à l’aide de la cmdlet **Get-ManagementRole** .
+
+  - Le paramètre _members_ spécifie les membres du groupe de rôles à l’aide de la syntaxe suivante : `"Member1","Member2",..."MemberN"` . Vous pouvez spécifier des utilisateurs, des groupes de sécurité universels à extension messagerie (USG) ou d’autres groupes de rôles (principaux de sécurité).
+
+  Cet exemple crée un groupe de rôles nommé « gestion limitée des destinataires » avec les paramètres suivants :
+
+  - Le rôle Destinataires de message est attribué au groupe de rôles.
+
+  - Les utilisateurs Kim et Martin sont ajoutés en tant que membres.
+
+  ```PowerShell
+  New-RoleGroup -Name "Limited Recipient Management" -Roles "Mail Recipients" -Members "Kim","Martin"
+  ```
+
+- Pour copier un groupe de rôles existant, procédez comme suit :
+
+  1. Stockez le groupe de rôles que vous souhaitez copier dans une variable à l’aide de la commande suivante :
+
+     ```PowerShell
+     $RoleGroup = Get-RoleGroup "<Existing Role Group Name>"
+     ```
+
+  2. Créez le nouveau groupe de rôles à l’aide de la syntaxe suivante :
+
+     ```PowerShell
+     New-RoleGroup -Name "<Unique Name>" -Roles $RoleGroup.Roles [-Members <Members>]
+     ```
+
+     Le paramètre _members_ spécifie les membres du groupe de rôles à l’aide de la syntaxe suivante : `"Member1","Member2",..."MemberN"` . Vous pouvez spécifier des utilisateurs, des groupes de sécurité universels à extension messagerie (USG) ou d’autres groupes de rôles (principaux de sécurité).
+
+     Cet exemple copie le groupe de rôles gestion de l’organisation dans le nouveau groupe de rôles appelé « gestion limitée de l’organisation ». Les membres du groupe de rôles sont Isabelle, Carter et Lukas.
+
+     ```PowerShell
+     $RoleGroup = Get-RoleGroup "Organization Management"
+     New-RoleGroup "Limited Organization Management" -Roles $RoleGroup.Roles -Members "Isabelle","Carter","Lukas"
+     ```
+
+Pour obtenir des informations détaillées sur la syntaxe et les paramètres, [New-RoleGroup](https://docs.microsoft.com/powershell/module/exchange/role-based-access-control/New-RoleGroup).
+
+### <a name="use-standalone-eop-powershell-modify-the-list-of-members-in-role-groups"></a>Utiliser l’PowerShell EOP autonome modifier la liste des membres dans les groupes de rôles
+
+- Les applets **de commande Add-RoleGroupMember** et **Remove-RoleGroupMember** ajoutent ou suppriment des membres individuels un par un. L’applet de commande **Update-RoleGroupMember** peut remplacer ou modifier la liste de membres existante.
+
+- Les membres d’un groupe de rôles peuvent être des utilisateurs, des groupes de sécurité universels à extension messagerie (USG) ou d’autres groupes de rôles (principaux de sécurité).
+
+Pour modifier les membres d’un groupe de rôles, utilisez la syntaxe suivante :
+
+```PowerShell
+Update-RoleGroupMember -Identity "<Role Group Name>" -Members <Members>
+```
+
+- Pour _remplacer_ la liste de membres existante par les valeurs que vous spécifiez, utilisez la syntaxe suivante : `"Member1","Member2",..."MemberN"` .
+
+- Pour _modifier de manière sélective_ la liste de membres existante, utilisez la syntaxe suivante : `@{Add="Member1","Member2"...; Remove="Member3","Member4"...}` .
+
+Cet exemple remplace tous les membres actuels du groupe de rôles support technique par les utilisateurs spécifiés.
+
+```PowerShell
+Update-RoleGroupMember -Identity "Help Desk" -Members "Gabriela Laureano","Hyun-Ae Rim","Jacob Berger"
+```
+
+Cet exemple montre comment ajouter Daigoro Akai et supprimer Valeria Barrio de la liste des membres du groupe de rôles support technique.
+
+```PowerShell
+Update-RoleGroupMember -Identity "Help Desk" -Members @{Add="Daigoro Akai"; Remove="Valeria Barrios"}
+```
+
+Pour obtenir des informations détaillées sur la syntaxe et les paramètres, consultez la rubrique [Update-RoleGroupMember](https://docs.microsoft.com/powershell/module/exchange/role-based-access-control/Update-RoleGroupMember).
+
+### <a name="use-standalone-eop-powershell-to-remove-role-groups"></a>Utilisation d’EOP PowerShell autonome pour supprimer des groupes de rôles
+
+Vous ne pouvez pas supprimer les groupes de rôles intégrés, mais vous pouvez supprimer les groupes de rôles personnalisés que vous avez créés.
+
+Pour supprimer un groupe de rôles personnalisé, utilisez la syntaxe suivante :
+
+```PowerShell
+Remove-RoleGroup -Identity "<Role Group Name>" [-BypassSecurityGroupManagerCheck]
+```
+
+Cet exemple supprime le groupe de rôles Administrateurs de formation.
+
+```PowerShell
+Remove-RoleGroup -Identity "Training Administrators"
+```
+
+Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Remove-RoleGroup](https://docs.microsoft.com/powershell/module/exchange/role-based-access-control/Remove-RoleGroup).
+
+### <a name="how-do-you-know-these-procedures-worked"></a>Comment savoir si ces procédures ont fonctionné ?
+
+Pour vérifier que vous avez bien copié un groupe de rôles, effectuez l’une des opérations suivantes :
+
+- Dans le centre d’administration Exchange, accédez à rôles d’administrateur des **autorisations** \> **Admin roles**et vérifiez que le groupe de rôles est affiché (ou non). Sélectionnez le groupe de rôles et vérifiez les paramètres dans le volet d’informations ou cliquez sur **modifier** ![ l’icône modifier ](../../media/ITPro-EAC-EditIcon.png) pour vérifier les paramètres.
+
+- Dans Exchange Online PowerShell, remplacez \< nom du groupe \> de rôles par le nom du groupe de rôles, puis exécutez la commande suivante pour vérifier que le groupe de rôles existe (ou n’existe pas) et vérifiez les paramètres :
+
+    ```PowerShell
+    Get-RoleGroup -Identity "<Role Group Name>" | Format-List
+    ```

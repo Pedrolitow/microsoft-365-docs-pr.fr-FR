@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Cet article explique comment gérer les cas de découverte électronique principaux. Cela inclut la fermeture d’un cas, la réouverture d’un incident fermé et la suppression d’un cas.
-ms.openlocfilehash: 41ba622a58b0abb5ce668e6d94d89b1694a328c9
-ms.sourcegitcommit: bd51f626f0c7788c2a3cf89deee25264659aebd5
+ms.openlocfilehash: 45282486c2c3b1d00b99a1cda5968b3bb042f6c2
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "43551389"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208416"
 ---
 # <a name="close-reopen-and-delete-a-core-ediscovery-case"></a>Fermer, rouvrir et supprimer un cas de découverte électronique principale
 
@@ -42,7 +42,7 @@ Lorsque le cas juridique ou l’enquête pris en charge par un cas de découvert
 
 Pour fermer un incident :
   
-1. Dans l’entrée de conformité Microsoft 365, cliquez sur**Centre** de **découverte électronique** > pour afficher la liste des cas eDiscovery principaux dans votre organisation.
+1. Dans le centre de conformité Microsoft 365, cliquez sur base de **découverte électronique**  >  **Core** pour afficher la liste des cas de découverte électronique de base dans votre organisation.
 
 2. Cliquez sur le nom de l’incident que vous souhaitez fermer.
 
@@ -66,7 +66,7 @@ Pour fermer un incident :
 
 Lorsque vous rouvrez un cas, les conservations de découverte électronique qui étaient en place lors de la fermeture de l’incident ne sont pas automatiquement rétablis. Une fois le cas rouvert, vous devez accéder à la page **suspensions** et activer les suspensions précédentes. Pour activer une suspension, sélectionnez-la pour afficher la page de menu volant, puis définissez la bascule d' **État** sur **activé**.
   
-1. Dans l’entrée de conformité Microsoft 365, cliquez sur**Centre** de **découverte électronique** > pour afficher la liste des cas eDiscovery principaux dans votre organisation.
+1. Dans le centre de conformité Microsoft 365, cliquez sur base de **découverte électronique**  >  **Core** pour afficher la liste des cas de découverte électronique de base dans votre organisation.
 
 2. Cliquez sur le nom de l’incident à rouvrir.
 
@@ -102,7 +102,7 @@ Pour supprimer une conservation eDiscovery :
 
 Pour supprimer un cas :
 
-1. Dans l’entrée de conformité Microsoft 365, cliquez sur**Centre** de **découverte électronique** > pour afficher la liste des cas eDiscovery principaux dans votre organisation.
+1. Dans le centre de conformité Microsoft 365, cliquez sur base de **découverte électronique**  >  **Core** pour afficher la liste des cas de découverte électronique de base dans votre organisation.
 
 2. Cliquez sur le nom de la demande de devis que vous souhaitez supprimer.
 

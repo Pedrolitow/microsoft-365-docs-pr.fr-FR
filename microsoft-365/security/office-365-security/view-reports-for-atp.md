@@ -16,20 +16,20 @@ search.appverid:
 ms.assetid: e47e838c-d99e-4c0b-b9aa-e66c4fae902f
 ms.collection:
 - M365-security-compliance
-description: Recherchez et utilisez des rapports pour Office 365 protection avancée contre les menaces &amp; dans le centre de sécurité conformité.
+description: Recherchez et utilisez des rapports pour Office 365 protection avancée contre les menaces dans le centre de sécurité &amp; conformité.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: c202e7df274e81da5395f7466199d85443361c05
-ms.sourcegitcommit: 614666afb104fc97acb4a2ee5577ef63c0de153a
+ms.openlocfilehash: af5844cf05d14e34059a26291d2034187439ec56
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44173321"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208488"
 ---
 # <a name="view-reports-for-office-365-advanced-threat-protection"></a>Afficher les rapports pour Office 365 protection avancée contre les menaces
 
-Si votre organisation dispose d' [Office 365 Advanced Threat Protection](office-365-atp.md) (ATP) et que vous disposez des [autorisations nécessaires](#what-permissions-are-needed-to-view-the-atp-reports), vous pouvez utiliser plusieurs rapports ATP dans &amp; le centre de sécurité conformité. (Accédez au **Reports** \> **tableau de bord**rapports.)
+Si votre organisation dispose d' [Office 365 Advanced Threat Protection](office-365-atp.md) (ATP) et que vous disposez des [autorisations nécessaires](#what-permissions-are-needed-to-view-the-atp-reports), vous pouvez utiliser plusieurs rapports ATP dans le centre de sécurité &amp; conformité. (Accéder aux **rapports** \> **Tableau de bord**.)
 
-![Le tableau &amp; de bord du centre de sécurité conformité peut vous aider à déterminer le fonctionnement de la protection avancée contre les menaces](../../media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
+![Le tableau de bord du centre de sécurité &amp; conformité peut vous aider à déterminer le fonctionnement de la protection avancée contre les menaces](../../media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
 
 Les rapports ATP sont les suivants :
 
@@ -61,7 +61,7 @@ Les filtres et les répartitions des informations permettent des catégorisation
 
 ![Liste déroulante rapport d’état de protection contre les menaces avec « dépanner ».](../../media/tp-threatProtectStatRpt-BreakDownBy.png)
 
-Ces affichages vous permettent d’exporter, via un clic sur un bouton (dans le cas de **messages** \> **hameçons** **, de** **courriers électroniques** \> et de **programmes malveillants** de **contenu** \> ). Les données agrégées exportées sur votre ordinateur peuvent être ouvertes dans Excel.
+Ces affichages vous permettent d’exporter, via un clic sur un bouton (dans le cas de **messages** \> **hameçons**, de **courriers électroniques** \> **Malware**et de **Content** \> **programmes malveillants** de contenu). Les données agrégées exportées sur votre ordinateur peuvent être ouvertes dans Excel.
 
 ![Ce graphique indique exporter en tant qu’option dans le menu de l’affichage de programmes malveillants, directement entre créer une planification et rapport de requête.](../../media/tp-threatProtectStatRpt-BreakDownByExport.png)
 
@@ -70,9 +70,9 @@ Ces affichages vous permettent d’exporter, via un clic sur un bouton (dans le 
 Les affichages vue d’ensemble et courriels affichent des informations dans les heures de traitement et non dans les 24 heures (à la demande). une augmentation des vitesses a été un signal clair) !
 
 > [!NOTE]
-> Un rapport d’état de protection contre les menaces est disponible pour les clients qui ont [Office 365 ATP](office-365-atp.md) ou [Exchange Online Protection](exchange-online-protection-eop.md) (EoP); Toutefois, les informations affichées dans le rapport d’état de protection contre les menaces pour les clients ATP contiennent probablement des données différentes de celles que peuvent afficher les clients EOP. Par exemple, le rapport d’état de protection contre les menaces pour les clients ATP contient des informations sur les [fichiers malveillants détectés dans SharePoint Online, OneDrive ou Microsoft teams](atp-for-spo-odb-and-teams.md). Ces informations sont spécifiques à la protection avancée contre les menaces, de sorte que les clients qui disposent d’EOP mais pas de la fonctionnalité ATP ne verront pas ces détails dans le rapport d’état de protection contre les menaces.
+> Un rapport d’état de protection contre les menaces est disponible pour les clients disposant d' [Office 365 ATP](office-365-atp.md) ou d' [Exchange Online Protection](exchange-online-protection-overview.md)) (EoP); Toutefois, les informations affichées dans le rapport d’état de protection contre les menaces pour les clients ATP contiennent probablement des données différentes de celles que peuvent afficher les clients EOP. Par exemple, le rapport d’état de protection contre les menaces pour les clients ATP contient des informations sur les [fichiers malveillants détectés dans SharePoint Online, OneDrive ou Microsoft teams](atp-for-spo-odb-and-teams.md). Ces informations sont spécifiques à la protection avancée contre les menaces, de sorte que les clients qui disposent d’EOP mais pas de la fonctionnalité ATP ne verront pas ces détails dans le rapport d’état de protection contre les menaces.
 
-Pour afficher le rapport d’état de protection contre les menaces, dans le [Centre de sécurité &amp; conformité](https://protection.office.com), accédez à **rapports** \> **tableau de bord** \> de **protection contre les menaces**.
+Pour afficher le rapport d’état de protection contre les menaces, dans le [Centre de sécurité &amp; conformité](https://protection.office.com), accédez à **rapports** \> **tableau de bord** de \> **protection contre les menaces**.
 
 ![Rapport d’état de protection contre les menaces ATP](../../media/6bdd41eb-62e0-423b-9fd4-d1d5baf0cbd5.png)
 
@@ -107,11 +107,11 @@ Dans le tableau des détails, vous serez en mesure d’obtenir plus d’informat
 
 Le rapport **types de fichiers ATP** indique le type de fichiers détectés comme malveillants par des [pièces jointes sûres ATP](atp-safe-attachments.md).
 
-Pour afficher ce rapport, dans le [Centre &amp; de sécurité conformité](https://protection.office.com), accédez à **types de fichiers DAV**du **tableau de bord** \> des **rapports** \> .
+Pour afficher ce rapport, dans le [Centre de sécurité &amp; conformité](https://protection.office.com), accédez à types de **Reports** \> **Dashboard** \> **fichiers DAV**du tableau de bord des rapports.
 
 ![Rapport sur les types de fichiers ATP](../../media/6e3f5d33-79aa-4b2d-938c-6ef135d9e54c.png)
   
-Lorsque vous placez le curseur de la souris sur un jour particulier, vous pouvez voir la répartition des types de fichiers malveillants détectés par la protection contre les [programmes malveillants &amp; ](anti-spam-and-anti-malware-protection.md)et anti-programme malveillant [ATP](atp-safe-attachments.md) .
+Lorsque vous placez le curseur de la souris sur un jour particulier, vous pouvez voir la répartition des types de fichiers malveillants détectés par la protection contre les [ &amp; programmes malveillants](anti-spam-and-anti-malware-protection.md)et anti-programme malveillant [ATP](atp-safe-attachments.md) .
   
 ![Données de rapport sur les types de fichiers ATP pendant une journée](../../media/10d18428-699a-41d2-a73e-be3a8214ada1.png)
 
@@ -119,7 +119,7 @@ Lorsque vous placez le curseur de la souris sur un jour particulier, vous pouvez
 
 Le rapport de **disposition des messages ATP** indique les actions qui ont été effectuées pour les messages électroniques détectés comme présentant du contenu malveillant.
 
-Pour afficher ce rapport, dans le [Centre &amp; de sécurité conformité](https://protection.office.com), accédez à rapports **tableau de bord** \> des **rapports** \> **ATP**.
+Pour afficher ce rapport, dans le [ &amp; Centre de sécurité conformité](https://protection.office.com), accédez à rapports tableau de bord des **rapports** \> **Dashboard** \> **ATP**.
 
 ![Rapport de disposition des messages ATP](../../media/b0ff65c4-53d3-496d-bafa-8937a5eb69e5.png)
 
@@ -133,9 +133,9 @@ Outre les rapports ATP décrits dans cet article, plusieurs autres rapports sont
 
 |||
 |---|---|
-|**Rapport (s)**|**Détails**|
+|**Rapport (s)**|**Details**|
 |**Explorateur** ou **détections en temps réel**: (Office 365 DAV ATP plan 2 les clients disposent de l’Explorateur ; Office 365 DAV plan 1 les clients ont des détections en temps réel.)|[Explorateur de menaces (et détections en temps réel)](threat-explorer.md)|
-|**Rapports de sécurité de messagerie**, tels que le rapport des expéditeurs et des destinataires, un rapport de courrier indésirable et un rapport de détection du courrier indésirable.|[Afficher les rapports de sécurité de messagerie &amp; dans le centre de sécurité conformité](view-email-security-reports.md)|
+|**Rapports de sécurité de messagerie**, tels que le rapport des expéditeurs et des destinataires, un rapport de courrier indésirable et un rapport de détection du courrier indésirable.|[Afficher les rapports de sécurité de messagerie dans le centre de sécurité &amp; conformité](view-email-security-reports.md)|
 |**Suivi des URL de liens approuvés ATP**: (il s’agit d’un rapport que vous générez à l’aide de PowerShell.) Ce rapport affiche les résultats des actions de liens approuvés ATP au cours des sept (7) derniers jours.|[Référence de l’applet de commande Get-UrlTrace](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/get-urltrace)|
 |**Résultats EOP et ATP**: (il s’agit d’un rapport personnalisé que vous générez à l’aide de PowerShell). Ce rapport contient des informations, telles que le domaine, la date, le type d’événement, la direction, l’action et le nombre de messages.|[Référence de l’applet de commande Get-MailTrafficATPReport](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/get-mailtrafficatpreport)|
 |**Détections EOP et ATP**: (il s’agit d’un rapport personnalisé que vous générez à l’aide de PowerShell). Ce rapport contient des détails sur les URL ou les fichiers malveillants, les tentatives de hameçonnage, l’emprunt d’identité et d’autres menaces potentielles dans les messages électroniques ou les fichiers.|[Référence de l’applet de commande Get-MailDetailATPReport](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/get-maildetailatpreport)|
@@ -145,14 +145,14 @@ Outre les rapports ATP décrits dans cet article, plusieurs autres rapports sont
 
 Pour afficher et utiliser les rapports décrits dans cet article, **vous devez disposer d’un rôle approprié pour le centre de sécurité &amp; et le centre d’administration Exchange**.
 
-- Pour le centre &amp; de sécurité conformité, vous devez disposer de l’un des rôles suivants :
+- Pour le centre de sécurité &amp; conformité, vous devez disposer de l’un des rôles suivants :
 
   - Gestion de l’organisation
-  - Administrateur de la sécurité (qui peut être affecté dans le centre d’administration Azure[https://aad.portal.azure.com](https://aad.portal.azure.com)Active Directory ())
-  - Opérateur de sécurité (cela peut être attribué dans le centre d’administration Azure active[https://aad.portal.azure.com](https://aad.portal.azure.com)Directory ())
+  - Administrateur de la sécurité (qui peut être affecté dans le centre d’administration Azure Active Directory ( [https://aad.portal.azure.com](https://aad.portal.azure.com) ))
+  - Opérateur de sécurité (cela peut être attribué dans le centre d’administration Azure Active Directory ( [https://aad.portal.azure.com](https://aad.portal.azure.com) ))
   - Lecteur de sécurité
 
-- Pour Exchange Online, vous devez disposer de l’un des rôles suivants, qui est affecté dans le centre[https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)d’administration Exchange () ou avec des applets de commande PowerShell (consultez la rubrique [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell)) :
+- Pour Exchange Online, vous devez disposer de l’un des rôles suivants, qui est affecté dans le centre d’administration Exchange ( [https://outlook.office365.com/ecp](https://outlook.office365.com/ecp) ) ou avec des applets de commande PowerShell (consultez la rubrique [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell)) :
 
   - Gestion de l’organisation
   - Gestion de l’organisation en affichage seul
@@ -161,7 +161,7 @@ Pour afficher et utiliser les rapports décrits dans cet article, **vous devez d
 
 Pour en savoir plus, consultez les ressources suivantes :
 
-- [Autorisations dans le centre &amp; de sécurité conformité](permissions-in-the-security-and-compliance-center.md)
+- [Autorisations dans le centre de sécurité &amp; conformité](permissions-in-the-security-and-compliance-center.md)
 
 - [Autorisations des fonctionnalités dans Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/feature-permissions)
 
@@ -173,8 +173,8 @@ Si vous ne voyez pas de données dans vos rapports ATP, vérifiez que vos strat�
 
 [Rapports et Insights dans le centre de sécurité &amp; conformité](reports-and-insights-in-security-and-compliance.md)
   
-[Créer une planification pour un rapport dans le centre &amp; de sécurité conformité](create-a-schedule-for-a-report.md)
+[Créer une planification pour un rapport dans le centre de sécurité &amp; conformité](create-a-schedule-for-a-report.md)
 
-[Configurer et télécharger un rapport personnalisé dans le centre de &amp; sécurité conformité](set-up-and-download-a-custom-report.md)
+[Configurer et télécharger un rapport personnalisé dans le centre de sécurité &amp; conformité](set-up-and-download-a-custom-report.md)
 
 [Autorisations de rôle (Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#role-permissions)

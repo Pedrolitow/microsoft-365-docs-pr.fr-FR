@@ -16,12 +16,12 @@ ms.assetid: ac11edd9-2da3-462d-8ea3-bbf9dbc6f948
 ms.collection:
 - M365-security-compliance
 description: Découvrez comment le pool de remise à haut risque est utilisé pour protéger la réputation des serveurs de messagerie dans les centres de connaissances Microsoft 365.
-ms.openlocfilehash: 7fb4788361534335be1e07bae44ed7511bebe434
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 190dc3bd7ed2a6cddb23c8bc7c117dee30fd4f13
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43638033"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44209186"
 ---
 # <a name="high-risk-delivery-pool-for-outbound-messages"></a>Pool de remise à risque élevé pour les messages sortants
 
@@ -45,11 +45,8 @@ Le pool de remise à haut risque sortant gère la remise de tous les rapports de
 Voici les causes possibles d’une augmentation des notifications d’échec de remise :
 
 - Une campagne d’usurpation d’identité qui affecte l’un des clients utilisant le service.
-
 - Une attaque par extraction d’annuaire.
-
 - Une attaque de courrier indésirable.
-
 - Un serveur de messagerie non autorisé.
 
 Tous ces problèmes peuvent entraîner une augmentation soudaine du nombre de notifications d’échec de remise traitées par le service. Bien souvent, ces notifications d’échec de remise semblent être du courrier indésirable pour les autres serveurs et services de messagerie (également appelés _[rétrodiffusion](backscatter-messages-and-eop.md)_).

@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 394fceffb96350b7702c5eef4a8138b3eb53f714
-ms.sourcegitcommit: 997f6227f33c3683ade9672e881d09216df22ee9
+ms.openlocfilehash: 9a57929e42f08db8abda170c889441d3a50ade72
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "44016073"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44209246"
 ---
 # <a name="turn-on-microsoft-threat-protection"></a>Activer la Protection Microsoft contre les menaces
 
@@ -45,22 +45,27 @@ Vous devez être **administrateur général** ou administrateur de **sécurité*
 
 ## <a name="start-using-the-service"></a>Commencez à utiliser le service
 
+>[!IMPORTANT]
+>À partir du 12 mai 2020, Microsoft mettra progressivement en place de nouvelles expériences optimisées concernant les [licences requises](prerequisites.md#licensing-requirements) et l’activation de la protection contre les menaces Microsoft. Pendant plusieurs semaines pendant cette période, certains clients commencent à voir les modifications apportées à leurs expériences de portail. Les informations sur les nouvelles expériences sont marquées **nouvelle expérience** dans cet article.
+
 Microsoft Threat Protection agrège les données des différents services intégrés. Il traitera et stockera les données de manière centralisée afin d’identifier les nouvelles idées et de créer des flux de travail de réponse centralisée. Il effectue cette opération sans affecter les déploiements, paramètres ou données existants associés aux services intégrés.
 
 Avant d’activer le service, le centre de sécurité Microsoft 365 ([Security.Microsoft.com](https://security.microsoft.com)) affiche la **page d’accueil** de la protection de Microsoft contre les menaces lorsque vous sélectionnez **incidents**, **Centre de maintenance**ou sélection dans le volet de navigation. Ces options de navigation ne s’affichent pas si vous n’êtes pas éligible à l’utilisation de la protection contre les menaces Microsoft.
 
-![Image de la page d’accueil de la protection de Microsoft contre les menaces affichée si Microsoft Threat](../../media/mtp-welcome.png)
-protection n’a pas été activé sur la*page d’accueil de Microsoft Threat Protection dans le centre de sécurité Microsoft 365*
+![Image de la page d’accueil de la protection de Microsoft contre les menaces affichée si Microsoft Threat Protection n’a pas été activé sur la ](../../media/mtp-welcome.png)
+ *page d’accueil de Microsoft Threat Protection dans le centre de sécurité Microsoft 365*
 
 Pour activer Microsoft Threat Protection, terminez simplement le processus à partir de la page d’accueil. Vous pouvez également activer Microsoft Threat Protection en accédant aux **paramètres** ([Security.Microsoft.com/Settings](https://security.microsoft.com/settings)) dans le volet de navigation et en sélectionnant **Microsoft Threat Protection**.
 
 >[!NOTE]
->Si vous ne voyez pas les **paramètres** dans le volet de navigation ou que vous n’avez pas accès à la page, vérifiez vos autorisations et licences.       
+>Si vous ne voyez pas les **paramètres** dans le volet de navigation ou que vous n’avez pas accès à la page, vérifiez vos autorisations et licences.
 
 ### <a name="select-data-center-location"></a>Sélectionner l’emplacement du centre de données
 Si Microsoft Defender - Protection avancée contre les menaces a été configuré pour votre organisation, les données sont stockées et traitées dans le même emplacement de centre de données que celui que vous avez sélectionné pour [vos données Microsoft Defender – Protection avancée contre les menaces](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy). Si vous n’avez pas Microsoft Defender ATP, vous serez invité à choisir un nouvel emplacement de centre de données spécifiquement pour la Protection Microsoft contre les menaces. 
  
 Vous devez fournir le consentement avant le partage des données entre les services et l’agrégation.
+
+**Nouvelle expérience :** À partir du 2020 12 mai, les clients recevront progressivement les modifications apportées à cette expérience. Pour les personnes ayant la nouvelle expérience, le service sélectionne automatiquement l’emplacement de centre de données optimal pour vos données agrégées en fonction de vos services de sécurité Microsoft 365 existants. L’emplacement du centre de données sélectionné est affiché à l’écran.
 
 ### <a name="confirm-that-the-service-is-on"></a>Vérifiez que le service est activé
 Une fois le service configuré, il ajoute :
@@ -69,8 +74,8 @@ Une fois le service configuré, il ajoute :
 - Centre de notifications pour la gestion des [examen et réponse automatisés](mtp-autoir.md)
 - Fonctionnalités de [chasse avancées](advanced-hunting-overview.md)
 
-![Image du volet de navigation du centre de sécurité Microsoft 365 avec les](../../media/mtp-on.png)
-fonctionnalités de protection de Microsoft Threat*Centre de sécurité Microsoft 365 avec gestion des incidents et autres fonctionnalités de protection contre les menaces Microsoft*
+![Image du volet de navigation du centre de sécurité Microsoft 365 avec les fonctionnalités de protection de Microsoft Threat ](../../media/mtp-on.png)
+ *Centre de sécurité Microsoft 365 avec gestion des incidents et autres fonctionnalités de protection contre les menaces Microsoft*
 
 ### <a name="getting-azure-atp-data"></a>Obtention de données Azure ATP
 Pour partager des données Azure ATP avec la Protection Microsoft contre les menaces, assurez-vous que Microsoft Cloud App Security et l’intégration Azure ATP sont activées. [Découvrez cette intégration](https://docs.microsoft.com/cloud-app-security/aatp-integration)

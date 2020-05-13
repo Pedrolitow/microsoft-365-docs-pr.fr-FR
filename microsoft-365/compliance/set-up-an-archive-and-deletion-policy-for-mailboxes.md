@@ -21,12 +21,12 @@ search.appverid:
 ms.assetid: ec3587e4-7b4a-40fb-8fb8-8aa05aeae2ce
 description: Créer une stratégie d’archivage et de suppression dans Microsoft 365 qui déplace automatiquement les éléments vers la boîte aux lettres d’archivage d’un utilisateur.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 0d2dd6d95018742247655f085553ad6583f8843d
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: d4c1bd1c993444c38596642bf974e734870c79d8
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034316"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208058"
 ---
 # <a name="set-up-an-archive-and-deletion-policy-for-mailboxes-in-your-organization"></a>Configurer une stratégie d’archivage et de suppression pour les boîtes aux lettres de votre organisation
 
@@ -68,7 +68,7 @@ La première étape consiste à activer la boîte aux lettres d’archivage pour
 2. Connectez-vous à l’aide de votre compte d’administrateur général.
     
     
-3. Dans le centre de sécurité & conformité, accédez à **Archives**de **gouvernance** \> des informations.
+3. Dans le centre de sécurité & conformité, accédez à Archives de **gouvernance des informations** \> **Archive**.
     
     Une liste des boîtes aux lettres de votre organisation s’affiche et indique si la boîte aux lettres d’archivage correspondante est activée ou désactivée. 
     
@@ -83,7 +83,7 @@ La première étape consiste à activer la boîte aux lettres d’archivage pour
     
 6. Cliquez sur **Oui** pour fermer le message d’avertissement et démarrer le processus pour activer la boîte aux lettres d’archivage pour chaque boîte aux lettres sélectionnée. 
     
-7. Une fois le processus terminé, cliquez sur **Actualiser** ![l’actualisation](../media/165fb3ad-38a8-4dd9-9e76-296aefd96334.png) pour mettre à jour la liste sur la page d' **archivage** . 
+7. Une fois le processus terminé, cliquez sur **Actualiser** ![ ](../media/165fb3ad-38a8-4dd9-9e76-296aefd96334.png) l’actualisation pour mettre à jour la liste sur la page d' **archivage** . 
     
     La boîte aux lettres d’archivage est activée pour tous les utilisateurs de votre organisation.
     
@@ -109,7 +109,7 @@ Pour créer des balises de rétention, vous devez utiliser le centre d’adminis
     
     ![Capture d’écran : affiche le centre d’administration Microsoft 365 avec l’option centres d’administration développée et Exchange sélectionné.](../media/47399df2-0bc4-42e2-b183-07750a46bc68.png)
   
-3. Dans le centre d’administration Exchange, accédez à **balises de rétention** de **gestion** \> de conformité
+3. Dans le centre d' **administration** Exchange, accédez à \> **balises de rétention** de gestion de conformité
     
     Une liste des balises de rétention de votre organisation s’affiche.
     
@@ -117,7 +117,7 @@ Pour créer des balises de rétention, vous devez utiliser le centre d’adminis
   
 Tout d’abord, vous allez créer une balise de stratégie d’archivage par défaut personnalisée (DPT) qui déplace les éléments vers la boîte aux lettres d’archivage après 3 ans. 
   
-1. Sur la **page balises de rétention** , cliquez](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif)sur nouvelle icône nouvelle **balise**![, puis sélectionnez **appliqué automatiquement à la boîte aux lettres entière (par défaut)**. 
+1. Sur la page **balises de rétention** , cliquez sur nouvelle icône nouvelle **balise** ![ ](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) , puis sélectionnez **appliqué automatiquement à la boîte aux lettres entière (par défaut)**. 
     
 2. Sur la page **nouvelle balise appliquée automatiquement à la boîte aux lettres entière (par défaut)** , renseignez les champs suivants : 
     
@@ -139,7 +139,7 @@ Tout d’abord, vous allez créer une balise de stratégie d’archivage par dé
   
 Ensuite, vous allez créer un autre DPT personnalisé, mais celui-ci sera une stratégie de suppression qui supprime définitivement les éléments après 7 ans.
   
-1. Sur la **page balises de rétention** , cliquez](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif)sur nouvelle icône nouvelle **balise**![, puis sélectionnez **appliqué automatiquement à la boîte aux lettres entière (par défaut)**. 
+1. Sur la page **balises de rétention** , cliquez sur nouvelle icône nouvelle **balise** ![ ](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) , puis sélectionnez **appliqué automatiquement à la boîte aux lettres entière (par défaut)**. 
     
 2. Sur la page **nouvelle balise appliquée automatiquement à la boîte aux lettres entière (par défaut)** , renseignez les champs suivants : 
     
@@ -161,7 +161,7 @@ Ensuite, vous allez créer un autre DPT personnalisé, mais celui-ci sera une st
   
 La dernière balise de rétention que vous allez créer est une balise de stratégie de rétention personnalisée (RPT) pour le dossier éléments supprimés. Cette balise supprime les éléments du dossier éléments supprimés après 5 ans et fournit une période de récupération lorsque les utilisateurs peuvent utiliser l’outil récupérer les éléments supprimés pour récupérer un élément.
   
-1. Sur la **page balises de rétention** , cliquez](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif)sur nouvelle icône nouvelle **balise** ![, puis sélectionnez **appliqué automatiquement à un dossier par défaut**. 
+1. Sur la page **balises de rétention** , cliquez sur nouvelle icône nouvelle **balise** ![ ](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) , puis sélectionnez **appliqué automatiquement à un dossier par défaut**. 
     
 2. Sur la **nouvelle balise appliquée automatiquement à une page de dossier par défaut** , renseignez les champs suivants : 
     
@@ -185,13 +185,13 @@ La dernière balise de rétention que vous allez créer est une balise de strat�
 
 Une fois que vous avez créé les balises de rétention personnalisées, l’étape suivante consiste à créer une nouvelle stratégie de rétention et à ajouter les balises de rétention. Vous allez ajouter les trois balises de rétention personnalisées que vous avez créées à l’étape 2, et les balises intégrées mentionnées dans la première section. À l’étape 4, vous allez affecter cette nouvelle stratégie de rétention aux boîtes aux lettres des utilisateurs.
   
-1. Dans le centre d’administration Exchange, accédez à \> **stratégies de rétention**de **gestion de la conformité** .
+1. Dans le centre d' **administration** Exchange, accédez à \> **stratégies de rétention**de gestion de la conformité.
     
-2. Sur la page **stratégies de rétention** , cliquez](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif)sur **nouvelle** ![icône.
+2. Sur la page **stratégies de rétention** , cliquez sur **nouvelle** ![ icône ](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) .
     
 3. Dans la zone **nom** , tapez un nom pour la nouvelle stratégie de rétention ; par exemple, **stratégie d’archivage et de suppression Alpine House**. 
     
-4. Sous **balises de rétention**,](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif)cliquez sur **Ajouter** ![une nouvelle icône.
+4. Sous **balises de rétention**, cliquez sur **Ajouter** une ![ nouvelle icône ](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) .
     
     Une liste des balises de rétention de votre organisation s’affiche. Remarque les balises personnalisées que vous avez créées à l’étape 2 sont affichées.
     
@@ -230,7 +230,7 @@ Lorsqu’une nouvelle boîte aux lettres est créée, une stratégie de rétenti
     
 7. Pour vérifier que la nouvelle stratégie de rétention a été affectée à des boîtes aux lettres, vous pouvez effectuer les opérations suivantes : sélectionnez une boîte aux lettres dans la page boîtes aux lettres, puis cliquez sur modifier. 
     
-1. Sélectionnez une boîte aux lettres dans la page **boîtes aux lettres** , **puis cliquez sur** ![modifier](../media/d7dc7e5f-17a1-4eb9-b42d-487db59e2e21.png). 
+1. Sélectionnez une boîte aux lettres dans la page **boîtes aux lettres** , **puis cliquez sur modifier** ![ ](../media/d7dc7e5f-17a1-4eb9-b42d-487db59e2e21.png) . 
     
 2. Dans la page des propriétés de boîte aux lettres de l’utilisateur sélectionné, cliquez sur **fonctionnalités de boîte aux lettres**.
     
@@ -243,37 +243,10 @@ Une fois que vous avez appliqué la nouvelle stratégie de rétention aux boîte
  **Que se passe-t-il lorsque vous exécutez l’Assistant dossier géré ?** Il applique les paramètres dans la stratégie de rétention en inspectant les éléments de la boîte aux lettres et en déterminant s’ils font l’objet d’une rétention. Il marque ensuite les éléments soumis à la rétention à l’aide de la balise de rétention appropriée, puis prend l’action de rétention spécifiée sur les éléments après leur âge de rétention. 
   
 Voici les étapes à suivre pour vous connecter à Exchange Online PowerShell, puis exécuter l’Assistant dossier géré sur toutes les boîtes aux lettres de votre organisation.
+
+1. [Connectez-vous à Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=517283).
   
-1. Sur votre ordinateur local, ouvrez Windows PowerShell et exécutez la commande suivante.
-    
-    ```powershell
-    $UserCredential = Get-Credential
-    ```
-
-    Dans la boîte de dialogue **demande d’informations d’identification Windows PowerShell** , tapez le nom d’utilisateur et le mot de passe de votre compte d’administrateur général, puis cliquez sur **OK**.
-    
-2. Exécutez la commande suivante.
-    
-    ```powershell
-    $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://outlook.office365.com/powershell-liveid/ -Credential $UserCredential -Authentication Basic -AllowRedirection
-    ```
-
-3. Exécutez la commande suivante.
-    
-    ```powershell
-    Import-PSSession $Session
-    ```
-
-4. Pour vérifier que vous êtes connecté à votre organisation Exchange Online, exécutez la commande suivante pour obtenir la liste de toutes les boîtes aux lettres de votre organisation.
-    
-    ```powershell
-    Get-Mailbox
-    ```
-
-    > [!NOTE]
-    > Pour plus d’informations ou si vous rencontrez des problèmes pour vous connecter à votre organisation Exchange Online, consultez la rubrique [connexion à Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=517283). 
-  
-5. Exécutez les deux commandes suivantes pour démarrer l’Assistant dossier géré pour toutes les boîtes aux lettres utilisateur de votre organisation.
+2. Exécutez les deux commandes suivantes pour démarrer l’Assistant dossier géré pour toutes les boîtes aux lettres utilisateur de votre organisation.
     
     ```powershell
     $Mailboxes = Get-Mailbox -ResultSize Unlimited -Filter {RecipientTypeDetails -eq "UserMailbox"}
@@ -289,7 +262,7 @@ Voilà ! Vous avez configuré une stratégie d’archivage et de suppression po
 
 À l’étape 4, vous devez affecter la nouvelle stratégie de rétention aux boîtes aux lettres existantes. Toutefois, vous pouvez configurer Exchange Online de sorte que la nouvelle stratégie de rétention soit affectée à de nouvelles boîtes aux lettres créées à l’avenir. Pour ce faire, utilisez Exchange Online PowerShell pour mettre à jour le plan de boîte aux lettres par défaut de votre organisation. Un *plan de boîte aux lettres* est un modèle qui configure automatiquement les propriétés sur les nouvelles boîtes aux lettres.  Cette étape facultative vous permet de remplacer la stratégie de rétention actuelle affectée au plan de boîte aux lettres (par défaut, la stratégie MRM par défaut) par la stratégie de rétention que vous avez créée à l’étape 3. Une fois que vous avez mis à jour le plan de boîte aux lettres, la nouvelle stratégie de rétention est attribuée aux nouvelles boîtes aux lettres.
 
-1. [Connectez-vous à Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=517283) ou consultez l’étape 5.
+1. [Connectez-vous à Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=517283).
 
 2. Exécutez la commande suivante pour afficher les informations sur les plans de boîte aux lettres dans votre organisation.
 

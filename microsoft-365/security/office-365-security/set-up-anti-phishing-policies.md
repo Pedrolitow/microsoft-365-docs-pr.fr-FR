@@ -15,17 +15,17 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: Dans cet article, vous allez apprendre à configurer la protection anti-hameçonnage dans Microsoft 365, afin de protéger votre organisation contre les attaques par hameçonnage malveillant.
-ms.openlocfilehash: bbde781114cadb6535bdb09c133d834ce23793a3
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+description: Les administrateurs peuvent en savoir plus sur les stratégies anti-hameçonnage disponibles dans Exchange Online Protection (EOP) et Office 365 Advanced Threat Protection (Office 365 ATP).
+ms.openlocfilehash: 0b1342d61ab4ab1fedde63271082c577211f6595
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035331"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44209810"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Stratégies anti-hameçonnage dans Microsoft 365
 
-Les stratégies de configuration des paramètres de protection anti-hameçonnage sont disponibles dans les organisations Microsoft 365 avec les boîtes aux lettres Exchange Online, les organisations Exchange Online Protection (EOP) autonomes sans boîtes aux lettres Exchange Online et les organisations Office 365 Advanced Threat Protection (ATP).
+Les stratégies de configuration des paramètres de protection anti-hameçonnage sont disponibles dans les organisations Microsoft 365 avec les boîtes aux lettres Exchange Online, les organisations Exchange Online Protection (EOP) autonomes sans boîtes aux lettres Exchange Online et les organisations Office 365 Advanced Threat Protection (Office 365 ATP).
 
 Les stratégies anti-hameçonnage ATP sont disponibles uniquement dans les organisations disposant d’Office 365 ATP. Par exemple :
 
@@ -185,7 +185,7 @@ Les paramètres d’emprunt d’identité suivants sont disponibles uniquement d
 
 ### <a name="advanced-phishing-thresholds-in-atp-anti-phishing-policies"></a>Seuils de hameçonnage avancés dans les stratégies anti-hameçonnage ATP
 
-Les seuils de hameçonnage avancés suivants sont disponibles uniquement dans les stratégies anti-hameçonnage ATP pour indiquer comment traiter les messages de hameçonnage détectés :
+Les seuils de hameçonnage avancés suivants sont disponibles uniquement dans les stratégies anti-hameçonnage ATP pour contrôler la sensibilité de l’application des modèles d’apprentissage automatique aux messages permettant de déterminer un verdict de hameçonnage :
 
 - **1-standard**: il s’agit de la valeur par défaut. La gravité de l’action effectuée sur le message dépend du degré de certitude que le message est de type hameçonnage (faible, moyenne, haute ou très élevée). Par exemple, les messages qui sont identifiés comme un hameçonnage avec un degré de confiance très élevé ont les actions les plus graves appliquées, tandis que les messages identifiés comme du hameçonnage avec un faible degré de confiance ont des actions moins graves appliquées.
 

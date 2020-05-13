@@ -16,17 +16,17 @@ ms.assetid: 4250c4bc-6102-420b-9e0a-a95064837676
 ms.collection:
 - M365-security-compliance
 description: Découvrez comment activer le complément de message de rapport pour Outlook et Outlook sur le Web, pour des utilisateurs individuels ou l’ensemble de votre organisation.
-ms.openlocfilehash: 22ce1c8e8084cb0bcbcb2f9fa4c0c80e1a59bf9c
-ms.sourcegitcommit: c7f11d851073ef14a69669f6c8b7e0c11e4bb7a1
+ms.openlocfilehash: 67fe2112e5d507ac1f0dc78ffa3534ebc9874916
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43939474"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44209486"
 ---
 # <a name="enable-the-report-message-add-in"></a>Activez le complément Signaler un message
 
 > [!NOTE]
-> Si vous êtes administrateur d’une organisation avec des boîtes aux lettres Exchange Online, nous vous recommandons d’utiliser le portail d’envoi du centre de sécurité & conformité. Pour plus d’informations, consultez la rubrique [utiliser la soumission de l’administrateur pour envoyer des courriers indésirables, des hameçons, des URL et des fichiers à Microsoft](admin-submission.md).
+> Si vous êtes administrateur dans une organisation Microsoft 365 avec des boîtes aux lettres Exchange Online, nous vous recommandons d’utiliser le portail d’envoi dans le centre de sécurité & conformité. Pour plus d’informations, consultez la rubrique [utiliser la soumission de l’administrateur pour envoyer des courriers indésirables, des hameçons, des URL et des fichiers à Microsoft](admin-submission.md).
 
 Le complément de message de rapport pour Outlook et Outlook sur le Web (anciennement appelé Outlook Web App) permet aux utilisateurs de signaler facilement les faux positifs (courrier électronique marqué comme incorrect) ou les faux négatifs (courrier incorrect autorisé) à Microsoft et à ses filiales pour analyse. Microsoft utilise ces soumissions pour améliorer l’efficacité des technologies de protection de la messagerie.
 
@@ -54,7 +54,7 @@ Si vous êtes un administrateur général ou un administrateur Exchange Online e
   - Boîtes aux lettres dans l’organisation Exchange locale
   - Abonnements GCC, GCC HIGH ou DoD
 
-- Vous pouvez configurer la copie ou la redirection des messages signalés vers une boîte aux lettres que vous spécifiez. Pour plus d’informations, consultez [la rubrique spécifier une boîte aux lettres pour les soumissions utilisateur de messages de courrier indésirable et de hameçonnage dans Office 365](user-submission.md).
+- Vous pouvez configurer la copie ou la redirection des messages signalés vers une boîte aux lettres que vous spécifiez. Pour plus d’informations, consultez [la rubrique spécifier une boîte aux lettres pour les soumissions utilisateur de messages de courrier indésirable et de hameçonnage dans Exchange Online](user-submission.md).
 
 - Votre navigateur Web existant doit fonctionner avec le complément de message de rapport. Toutefois, si vous remarquez que le complément n’est pas disponible ou ne fonctionne pas comme prévu, essayez un autre navigateur.
 
@@ -64,7 +64,7 @@ Si vous êtes un administrateur général ou un administrateur Exchange Online e
 
 ## <a name="get-the-report-message-add-in-for-yourself"></a>Obtenir le complément de message de rapport pour vous-même
 
-1. Accédez au site Microsoft AppSource à <https://appsource.microsoft.com/marketplace/apps> l’adresse et recherchez le complément de message de rapport. Pour accéder directement au complément de message de rapport, accédez à <https://appsource.microsoft.com/product/office/wa104381180>.
+1. Accédez au site Microsoft AppSource à l’adresse <https://appsource.microsoft.com/marketplace/apps> et recherchez le complément de message de rapport. Pour accéder directement au complément de message de rapport, accédez à <https://appsource.microsoft.com/product/office/wa104381180> .
 
 2. Cliquez sur **obtenir maintenant**.
 
@@ -91,7 +91,7 @@ Pour savoir comment utiliser le complément, voir [use the Report message Add-in
 > [!NOTE]
 > Le complément peut prendre jusqu’à 12 heures pour apparaître dans votre organisation.
 
-1. Dans le centre d’administration Microsoft 365, accédez à la page <https://admin.microsoft.com/AdminPortal/Home#/Settings/ServicesAndAddIns>des **compléments de services &** , puis cliquez sur **déployer le complément**.
+1. Dans le centre d’administration Microsoft 365, accédez à la page des **compléments de Services &** , puis <https://admin.microsoft.com/AdminPortal/Home#/Settings/ServicesAndAddIns> cliquez sur **déployer le complément**.
 
    ![Page services et compléments dans le centre d’administration Microsoft 365](../../media/ServicesAddInsPageNewM365AdminCenter.png)
 
@@ -101,7 +101,7 @@ Pour savoir comment utiliser le complément, voir [use the Report message Add-in
 
    ![Déployer une nouvelle page de complément](../../media/NewAddInScreen2.png)
 
-4. Dans la page **Sélectionner un complément** qui s’affiche, cliquez sur dans la zone de **recherche** , entrez **message de rapport**, **puis cliquez sur** ![icône](../../media/search-icon.png)de recherche de recherche. Dans la liste des résultats, recherchez **message de rapport** , puis cliquez sur **Ajouter**.
+4. Dans la page **Sélectionner un complément** qui s’affiche, cliquez sur dans la zone de **recherche** , entrez **message de rapport**, **puis cliquez sur** ![ icône de recherche de recherche ](../../media/search-icon.png) . Dans la liste des résultats, recherchez **message de rapport** , puis cliquez sur **Ajouter**.
 
    ![Sélectionner les résultats de la recherche de complément](../../media/NewAddInScreen3.png)
 
@@ -149,7 +149,7 @@ Lorsque vous informez les utilisateurs du complément Report message, incluez un
 
 ## <a name="review-or-edit-settings-for-the-report-message-add-in"></a>Vérifier ou modifier les paramètres du complément de message de rapport
 
-1. Dans le centre d’administration Microsoft 365, accédez à la page des **compléments de Services &** à l’adresse <https://admin.microsoft.com/AdminPortal/Home#/Settings/ServicesAndAddIns>.
+1. Dans le centre d’administration Microsoft 365, accédez à la page des **compléments de Services &** à l’adresse <https://admin.microsoft.com/AdminPortal/Home#/Settings/ServicesAndAddIns> .
 
    ![Page services et compléments dans le nouveau centre d’administration Microsoft 365](../../media/ServicesAddInsPageNewM365AdminCenter.png)
 

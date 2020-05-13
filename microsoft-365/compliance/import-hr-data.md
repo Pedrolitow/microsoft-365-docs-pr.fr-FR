@@ -14,14 +14,14 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: Les administrateurs peuvent configurer un connecteur de données pour importer les données des employés depuis le système des ressources humaines (RH) de leur organisation vers Microsoft 365. Cela vous permet d’utiliser des données RH dans des stratégies de gestion des risques initiées pour vous aider à détecter les activités d’utilisateurs spécifiques susceptibles de constituer une menace interne pour votre organisation.
-ms.openlocfilehash: 118e2a8ad4ff134a4529e3ffc95fa22cdb7cbdaf
-ms.sourcegitcommit: 614666afb104fc97acb4a2ee5577ef63c0de153a
+ms.openlocfilehash: 69b290dfb6d5a07ad0fd3b0b356a4b9f6d467613
+ms.sourcegitcommit: ab0a944159d9349fbc7adc2f51c7f881254d7782
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44173484"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44210570"
 ---
-# <a name="set-up-a-connector-to-import-hr-data"></a>Configurer un connecteur pour importer des données RH
+# <a name="set-up-a-connector-to-import-hr-data-preview"></a>Configurer un connecteur pour importer des données RH (aperçu)
 
 Vous pouvez configurer un connecteur de données dans le centre de conformité Microsoft 365 pour importer les données des ressources humaines (RH), telles que la date à laquelle un employé a envoyé sa démission et sa date de la dernière journée de l’employé. Ces données RH peuvent ensuite être utilisées par les solutions Microsoft information protection, telles que la nouvelle [solution de gestion des risques Insiders](insider-risk-management.md), pour protéger votre organisation contre les activités malveillantes ou le vol de données au sein de votre organisation. La configuration d’un connecteur RH consiste à créer une application dans Azure Active Directory qui est utilisée pour l’authentification par un connecteur, à créer un fichier de mappage CSV contenant vos données RH, à créer un connecteur de données dans le centre de conformité, puis à exécuter un script (de manière planifiée) qui informera les données RH dans le fichier CSV vers le Cloud Microsoft. Le connecteur de données utilise ensuite les solutions de conformité Microsoft (telles que la gestion des risques internes) pour accéder aux données RH importées dans votre organisation Microsoft 365.
 
@@ -64,8 +64,8 @@ Le tableau suivant décrit chaque colonne du fichier CSV :
 |**Nom de colonne**|**Description**|
 |:-----|:-----|
 | **EmailAddress** <br/> |Spécifie l’adresse e-mail de l’employé qui a terminé.|
-| **TerminationDate** <br/> |Indique la date à laquelle l’emploi de la personne a été officiellement terminé au sein de votre organisation. Par exemple, il peut s’agir de la date à laquelle l’employé a donné son avis sur la cessation de son organisation. Cette date peut être différente de la date du dernier jour de travail de la personne. Vous devez utiliser le format de date suivant `yyyy-mm-ddThh:mm:ss.nnnnnn+|-hh:mm`:, qui est le [format de date et d’heure ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html).|
-|**LastWorkingDate**|Spécifie le dernier jour de travail de l’employé terminé. Vous devez utiliser le format de date suivant `yyyy-mm-ddThh:mm:ss.nnnnnn+|-hh:mm`:, qui est le [format de date et d’heure ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html).|
+| **TerminationDate** <br/> |Indique la date à laquelle l’emploi de la personne a été officiellement terminé au sein de votre organisation. Par exemple, il peut s’agir de la date à laquelle l’employé a donné son avis sur la cessation de son organisation. Cette date peut être différente de la date du dernier jour de travail de la personne. Vous devez utiliser le format de date suivant : `yyyy-mm-ddThh:mm:ss.nnnnnn+|-hh:mm` , qui est le [format de date et d’heure ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html).|
+|**LastWorkingDate**|Spécifie le dernier jour de travail de l’employé terminé. Vous devez utiliser le format de date suivant : `yyyy-mm-ddThh:mm:ss.nnnnnn+|-hh:mm` , qui est le [format de date et d’heure ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html).|
 |||
 
 Après avoir créé le fichier CSV avec les données RH requises, stockez-le sur le même système que le script exécuté à l’étape 4. Vous devez également mettre en œuvre une stratégie de mise à jour pour vous assurer que le fichier CSV contient toujours les informations les plus récentes, de sorte que les données de terminaison de l’employé les plus récentes soient téléchargées vers le Cloud Microsoft.
@@ -118,7 +118,7 @@ La dernière étape de la configuration d’un connecteur RH consiste à exécut
 
 4. Modifiez l’exemple de script pour votre organisation, le cas échéant.
 
-5. Enregistrez le fichier texte sous forme de fichier de script Windows PowerShell à l’aide d' `.ps1`un suffixe de nom de fichier ; par exemple, `HRConnector.ps1`.
+5. Enregistrez le fichier texte sous forme de fichier de script Windows PowerShell à l’aide d’un suffixe de nom de fichier `.ps1` , par exemple, `HRConnector.ps1` .
 
 6. Ouvrez une invite de commandes sur votre ordinateur local et accédez au répertoire dans lequel vous avez enregistré le script.
 
@@ -130,7 +130,7 @@ La dernière étape de la configuration d’un connecteur RH consiste à exécut
 
    Le tableau suivant décrit les paramètres à utiliser avec ce script et leurs valeurs requises. Les informations que vous avez obtenues dans les étapes précédentes sont utilisées dans les valeurs de ces paramètres.
 
-   |**Paramètre**|**Description**
+   |**Parameter**|**Description**
    |:-----|:-----|:-----|
    |`tenantId`|Il s’agit de l’ID de votre organisation Microsoft 365 que vous avez obtenu à l’étape 1. Vous pouvez également obtenir le tenantId pour votre organisation sur le panneau de présentation dans le centre **d'** administration Azure ad. Il est utilisé pour identifier votre organisation.|
    |`appId` |Il s’agit de l’ID d’application AAD pour l’application que vous avez créée dans Azure AD à l’étape 1. Il est utilisé par Azure AD pour l’authentification lorsque le script tente d’accéder à votre organisation Microsoft 365. | 
@@ -199,7 +199,7 @@ Vous pouvez utiliser l’application planificateur de tâches de Windows pour ex
 
    a. Dans la liste déroulante **action** , assurez-vous que l’option **Démarrer un programme** est sélectionnée.
 
-   b. Dans la zone **programme/script** , cliquez sur **Parcourir**, accédez à l’emplacement suivant et sélectionnez-le pour afficher le chemin d’accès dans la `C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe`zone :.
+   b. Dans la zone **programme/script** , cliquez sur **Parcourir**, accédez à l’emplacement suivant et sélectionnez-le pour afficher le chemin d’accès dans la zone : `C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe` .
 
    c. Dans la zone **Ajouter des arguments (facultatif)** , collez la même commande de script que celle que vous avez exécutée à l’étape 4. Par exemple, `.\HRConnector.ps1 -tenantId "d5723623-11cf-4e2e-b5a5-01d1506273g9" -appId "c12823b7-b55a-4989-faba-02de41bb97c3" -appSecret "MNubVGbcQDkGCnn"  -jobId "e081f4f4-3831-48d6-7bb3-fcfab1581458" -csvFilePath "C:\Users\contosoadmin\Desktop\Data\employee_termination_data.csv"`
 

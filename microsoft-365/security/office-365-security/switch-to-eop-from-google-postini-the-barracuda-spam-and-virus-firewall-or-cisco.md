@@ -14,12 +14,12 @@ ms.assetid: 81b75194-3b04-48da-8b81-951afbabedde
 ms.custom:
 - seo-marvel-apr2020
 description: Dans cet article, vous découvrirez comment basculer vers Exchange Online Protection (EOP) à partir d’un équipement d’hygiène de messagerie local ou d’un service de protection en nuage.
-ms.openlocfilehash: 4bbd0b60d42b52d5c9343126f12059fcf1fc3d62
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: d7b2cfbe84d1e03bcd549c5220f6063592962792
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035223"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44209270"
 ---
 # <a name="switch-to-eop-from-google-postini-the-barracuda-spam-and-virus-firewall-or-cisco-ironport"></a>Basculement vers EOP à partir de Google Postini, Barracuda Spam and Virus Firewall, ou Cisco IronPort
 
@@ -55,9 +55,9 @@ Pour commencer, si vous envisagez d’utiliser un déploiement hybride, il s’a
 
 Si vous décidez de passer à EOP, soyez particulièrement attentif aux aspects suivants :
 
-- **Règles de filtrage personnalisées**: Si vous avez des règles de filtrage ou de stratégie d’entreprise personnalisées pour intercepter des courriers indésirables spécifiques, nous vous recommandons d’essayer EOP avec les paramètres par défaut pour une période, avant de migrer vos règles. EOP offre une protection contre le courrier indésirable au niveau de l’entreprise avec les paramètres par défaut, il se peut que vous n’ayez pas besoin de migrer certaines de vos règles vers EOP. Bien entendu, si vous avez des règles en place qui appliquent des stratégies d’entreprise personnalisées spécifiques, vous pouvez les créer. Les [règles de flux de messagerie (règles de transport) dans Exchange Online Protection](mail-flow-rules-transport-rules-0.md) fournissent des instructions détaillées sur la création de règles de flux de messagerie dans EOP.
+- **Règles de filtrage personnalisées**: Si vous avez des règles de filtrage ou de stratégie d’entreprise personnalisées pour intercepter des courriers indésirables spécifiques, nous vous recommandons d’essayer EOP avec les paramètres par défaut pendant un certain temps avant de migrer vos règles. EOP offre une protection contre le courrier indésirable au niveau de l’entreprise avec les paramètres par défaut, il se peut que vous n’ayez pas besoin de migrer certaines de vos règles vers EOP. Bien entendu, si vous avez des règles en place qui appliquent des stratégies d’entreprise personnalisées spécifiques, vous pouvez les créer. Les [règles de flux de messagerie (règles de transport) dans Exchange Online Protection](mail-flow-rules-transport-rules-0.md) fournissent des instructions détaillées sur la création de règles de flux de messagerie dans EOP.
 
-- Listes d' **adresses IP autorisées et listes d’adresses IP bloquées**: Si vous avez des listes d’autorisation par utilisateur et des listes rouges, prévoyez un certain temps pour copier les listes vers EOP dans le cadre de votre processus de configuration. Pour plus d’informations sur les listes d’adresses IP autorisées et les listes d’adresses IP bloquées, consultez [la rubrique Configure the connection filter Policy](configure-the-connection-filter-policy.md).
+- Listes d' **adresses IP autorisées et listes d’adresses IP bloquées**: Si vous avez des listes d’autorisation par utilisateur et des listes rouges, prévoyez un certain temps pour copier les listes vers EOP dans le cadre de votre processus de configuration. Pour plus d’informations sur la liste d’adresses IP autorisées et les listes d’adresses IP bloquées, consultez [la rubrique Configure the connection filter Policy](configure-the-connection-filter-policy.md).
 
 - **Communication sécurisée**: Si vous avez un partenaire qui requiert une messagerie chiffrée, nous vous recommandons de le configurer dans le centre d’administration Exchange. Pour configurer ce scénario, consultez la rubrique [set up Connectors for Secure Mail Flow with a Partner Organization](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-for-secure-mail-flow-with-a-partner).
 

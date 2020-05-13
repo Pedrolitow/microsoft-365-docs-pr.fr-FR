@@ -9,6 +9,7 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
+monikerRange: o365-germany
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -19,18 +20,17 @@ search.appverid:
 - BEA160
 ms.assetid: 8a5a4bbc-667a-4cac-8769-d8ac9015db4c
 description: Découvrez Office 365 Germany.
-ms.openlocfilehash: d992d437e40baaa105ca407d40bb81ff84d9e3f3
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 2c63672865ac2c64bd9731df797202cf9cfdd9cd
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43623905"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208353"
 ---
-> [!NOTE]
-> Office 365 Germany n’accepte plus de nouveaux clients ou ne déploie pas de nouveaux services. Les nouvelles régions de nuage en Allemagne, disponibles au cours du premier trimestre de 2020 pour Microsoft 365 et Office 365, fourniront à la fois des données client fondamentales, ainsi qu’une connectivité complète avec le réseau Cloud global Microsoft. 
->
+# <a name="learn-about-office-365-germany"></a>En savoir plus sur Office 365 Germany
 
-# <a name="learn-about-office-365-germany"></a>En savoir plus à propos d’Office 365 Allemagne
+> [!NOTE]
+> Office 365 Germany n’accepte plus de nouveaux clients ou ne déploie pas de nouveaux services. Les nouvelles régions de nuage en Allemagne, disponibles au cours du premier trimestre de 2020 pour Microsoft 365 et Office 365, fourniront à la fois des données client fondamentales, ainsi qu’une connectivité complète avec le réseau Cloud global Microsoft.
 
 Office 365 Germany était une option différenciée des services Office 365 disponibles dans l’Europe. Elle a permis de répondre aux besoins des clients les plus réglementés en Allemagne, l’Union européenne (UE) et l’Association de libre-échange européenne (AELE) en fournissant nos services de productivité de pointe pour le travail numérique, les centres de données allemands, la résidence des données en Allemagne, ainsi que les mesures d’accès aux données et de contrôle strictes via un modèle de tiers de confiance de
   

@@ -13,124 +13,178 @@ localization_priority: Normal
 ms.assetid: 212e68ac-6330-47e9-a169-6cf5e2f21e13
 ms.custom:
 - seo-marvel-apr2020
-description: Dans cet article, vous apprendrez à créer et à gérer des groupes à extension messagerie pour une organisation Exchange dans Exchange Online Protection (EOP).
-ms.openlocfilehash: 37825175e3332e975065a3807c6ed9d5096b1a7f
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+description: Les administrateurs dans les organisations Exchange Online Protection (EOP) autonomes peuvent apprendre à créer, modifier et supprimer des groupes de distribution et des groupes de sécurité à extension messagerie dans le centre d’administration Exchange et dans Exchange Online Protection (EOP) autonome.
+ms.openlocfilehash: fc3f3807216b269a9868e87c5ec784d75385f878
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034401"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44209018"
 ---
 # <a name="manage-groups-in-eop"></a>Gestion des groupes dans Exchange Online Protection (EOP)
 
- Vous pouvez utiliser Exchange Online Protection (EOP) pour créer des groupes à extension messagerie pour une organisation Exchange. Vous pouvez également utiliser EOP pour définir ou mettre à jour les propriétés de groupe qui indiquent l'appartenance, les adresses électroniques et d'autres aspects des groupes. Vous pouvez créer des groupes de distribution et des groupes de sécurité, en fonction de vos besoins. Ces groupes peuvent être créés à l'aide du Centre d'administration Exchange (CAE) ou via Windows PowerShell à distance.
+Dans les organisations Exchange Online Protection (EOP) autonomes sans boîtes aux lettres Exchange Online, vous pouvez créer, modifier et supprimer les types de groupes suivants :
 
-## <a name="types-of-mail-enabled-groups"></a>Types de groupe à extension messagerie
+- **Groupes de distribution**: collection d’utilisateurs de messagerie ou d’autres groupes de distribution. Par exemple, les équipes ou autres groupes ad hoc qui doivent recevoir ou envoyer des courriers électroniques dans un domaine d’intérêt commun. Les groupes de distribution sont exclusivement destinés à la distribution de messages électroniques et ne sont pas des principaux de sécurité (ils ne peuvent pas avoir d’autorisations associées).
 
-Vous pouvez créer deux types de groupes pour votre organisation Exchange :
-
-- Les groupes de distribution sont des collections d’utilisateurs de messagerie, tels qu’une équipe ou un autre groupe ad hoc, qui doivent recevoir ou envoyer des courriers électroniques concernant un domaine d’intérêt commun. Les groupes de distribution sont exclusivement destinés à la distribution de messages électroniques. Dans EOP, un groupe de distribution fait référence à n'importe quel groupe à extension messagerie, qu'il dispose ou non d'un contexte de sécurité.
-
-- Les groupes de sécurité sont des collections d’utilisateurs de messagerie qui ont besoin d’autorisations d’accès pour les rôles d’administrateur. Par exemple, vous voudrez peut-être accorder à un groupe spécifique d'utilisateurs des autorisations de rôle d'administrateur afin qu'ils puissent configurer des paramètres de blocage du courrier indésirable et des programmes malveillants.
+- **Groupes de sécurité à extension messagerie**: collection d’utilisateurs de messagerie et d’autres groupes de sécurité qui ont besoin d’autorisations d’accès pour les rôles d’administrateur. Par exemple, vous pouvez accorder à un groupe spécifique d’utilisateurs des autorisations d’administrateur afin qu’ils puissent configurer les paramètres de blocage du courrier indésirable et des programmes malveillants.
 
     > [!NOTE]
-    > Par défaut, tous les nouveaux groupes de sécurité à extension messagerie exigent que tous les expéditeurs soient identifiés. En procédant de la sorte, les expéditeurs externes ne peuvent pas envoyer de messages aux groupes de sécurité à extension messagerie.
+    > <ul><li>Par défaut, les nouveaux groupes de sécurité à extension messagerie refusent les messages provenant d’expéditeurs externes (non authentifiés).</li><li>N’ajoutez pas de groupes de distribution aux groupes de sécurité à extension messagerie.</li></ul>.
 
-## <a name="before-you-begin"></a>Avant de commencer
+Vous pouvez gérer les groupes dans le centre d’administration Exchange (Centre d’administration Exchange) et dans la version PowerShell d’EOP autonome.
 
-- Des autorisations doivent vous être attribuées avant de pouvoir exécuter cette procédure. Pour voir les autorisations qui vous sont nécessaires, consultez l'entrée « Groupes de distribution et groupes de sécurité » dans la rubrique [Autorisations des fonctionnalités dans EOP](feature-permissions-in-eop.md).
+## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu'il faut savoir avant de commencer
 
-- Pour ouvrir le centre d’administration Exchange, consultez la rubrique [Exchange Admin Center in Exchange Online Protection](exchange-admin-center-in-exchange-online-protection-eop.md).
+- Pour ouvrir le centre d’administration Exchange, consultez la rubrique [Exchange Admin Center in standalone EOP](exchange-admin-center-in-exchange-online-protection-eop.md).
 
-- N’oubliez pas que lors de la création et de la gestion des groupes à l’aide des cmdlets PowerShell d’Exchange Online Protection, vous pouvez rencontrer des limitations.
+- Pour vous connecter à la version PowerShell d’EOP autonome, consultez la rubrique [Connect to Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell).
 
-- Les procédures PowerShell de cette rubrique utilisent une méthode de traitement par lots qui entraîne un délai de propagation de quelques minutes avant que les résultats des commandes soient visibles.
+- Lorsque vous gérez des groupes dans une version autonome d’EOP PowerShell, il se peut que vous rencontriez une limitation. Les procédures PowerShell de cette rubrique utilisent une méthode de traitement par lots qui entraîne un délai de propagation de quelques minutes avant que les résultats des commandes soient visibles.
 
-- Pour apprendre à utiliser Windows PowerShell afin d’établir une connexion à Exchange Online Protection, voir [Connexion à Exchange Online Protection à l’aide de Remote PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell).
+- Des autorisations doivent vous être attribuées avant de pouvoir exécuter ces procédures. Plus précisément, vous avez besoin du rôle groupes de distribution, qui est affecté aux groupes de rôles OrganizationManagement (administrateurs globaux) et RecipientManagement par défaut. Pour plus d’informations, consultez la rubrique [autorisations dans EOP autonome](feature-permissions-in-eop.md) et utiliser le centre d’administration Exchange pour [modifier la liste des membres dans les groupes de rôles](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups).
 
 - Pour plus d’informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir [raccourcis clavier pour le centre d’administration Exchange dans Exchange Online](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center).
 
 > [!TIP]
 > Vous rencontrez des difficultés ? Demandez de l’aide dans le forum [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351) .
 
-## <a name="create-a-group-in-the-eac"></a>Créer un groupe dans le CAE
+## <a name="use-the-exchange-admin-center-to-manage-distribution-groups"></a>Utiliser le centre d’administration Exchange pour gérer les groupes de distribution
+
+### <a name="use-the-eac-to-create-groups"></a>Utiliser le centre d’administration Exchange pour créer des groupes
 
 1. Dans le CAE, accédez à **Destinataires** \> **Groupes**.
 
-2. Cliquez sur **nouvelle** ![icône](../../media/ITPro-EAC-AddIcon.gif)ajouter, puis sur **groupe de distribution** ou groupe de **sécurité**, en fonction de vos besoins.
+2. Cliquez sur **nouvelle** ![ icône ](../../media/ITPro-EAC-AddIcon.png) , puis sélectionnez l’une des options suivantes :
 
-3. Sur la page **nouveau groupe de distribution** ou **nouveau groupe de sécurité** , configurez les paramètres suivants :
+   - **Groupe de distribution**
 
-   - **Nom d’affichage**: tapez un nom d’affichage propre à votre organisation et pertinent pour les utilisateurs EOP. Le nom complet est requis.
+   - **Groupe de sécurité à extension messagerie**
 
-   - **Alias**: tapez un alias de groupe de jusqu’à 64 caractères qui sont propres à votre organisation. Les utilisateurs EOP tapent l’alias dans la ligne à : des messages électroniques et l’alias est résolu en nom complet du groupe. Si vous modifiez l’alias, l’adresse SMTP principale du groupe est également modifiée et contiendra le nouvel alias. L'alias est un champ obligatoire.
+3. Dans la page nouveau groupe qui s’ouvre, configurez les paramètres suivants. Les paramètres marqués par un <sup>\*</sup> sont obligatoires.
 
-   - **Description**: tapez une description du groupe afin que les utilisateurs connaissent l’objectif du groupe.
+   - <sup>\*</sup>**Nom d’affichage**: ce nom s’affiche dans le carnet d’adresses de votre organisation, sur la ligne à : quand un message électronique est envoyé à ce groupe, et dans la liste **groupes** du centre d’administration Exchange. Le nom complet est obligatoire, doit être unique et doit être convivial afin que les utilisateurs puissent reconnaître ce qu’il est.
 
-   - **Propriétaires**: par défaut, la personne qui crée le groupe est le propriétaire. Vous pouvez ajouter un propriétaire en sélectionnant **Ajouter** ![une](../../media/ITPro-EAC-AddIcon.gif)icône Ajouter. Tous les groupes doivent avoir au moins un propriétaire.
+   - <sup>\*</sup>**Alias**: ce champ permet de taper le nom de l’alias du groupe. L’alias ne peut pas dépasser 64 caractères et doit être unique. Lorsqu’un utilisateur tape l’alias dans la ligne à d’un message électronique, il est résolu en nom complet du groupe.
 
-     > [!NOTE]
-     > Les propriétaires des groupes ne doivent pas nécessairement en être membres.
+   - <sup>\*</sup>**Adresse de messagerie**: l’adresse de messagerie se compose de l’alias sur le côté gauche du symbole arobase (@) et d’un domaine sur le côté droit. Par défaut, la valeur d' **alias** est utilisée pour la valeur d’alias, mais vous pouvez la modifier. Pour la valeur Domain (domaine), cliquez sur le menu déroulant et sélectionnez le domaine accepté dans votre organisation.
 
-   - **Membres**: utilisez cette section pour ajouter des membres du groupe et pour spécifier si une approbation est requise pour que des personnes puissent rejoindre ou quitter le groupe. Pour ajouter des membres au groupe, cliquez sur **Ajouter** ![une](../../media/ITPro-EAC-AddIcon.gif)icône Ajouter.
+   - **Description**: cette description apparaît dans le carnet d’adresses et dans le volet d’informations du centre d’administration Exchange.
 
-4. Cliquez sur **OK** pour revenir à la page d'origine.
+   - <sup>\*</sup>**Propriétaires**: un propriétaire de groupe peut gérer l’appartenance à un groupe. Par défaut, la personne qui crée un groupe en est le propriétaire. Tous les groupes doivent avoir au moins un propriétaire.
 
-5. Lorsque vous avez terminé, cliquez sur **Enregistrer** pour créer le groupe. Le nouveau groupe doit apparaître dans la liste des groupes.
+     Pour ajouter des propriétaires, cliquez sur **Ajouter** une ![ icône Ajouter ](../../media/ITPro-EAC-AddIcon.png) . Dans la boîte de dialogue qui s’affiche, recherchez et sélectionnez un destinataire ou un groupe, puis cliquez sur **Ajouter->**. Répétez cette étape autant de fois que nécessaire. Lorsque vous avez terminé, cliquez sur **OK**.
 
-## <a name="edit-or-remove-a-group-in-the-eac"></a>Modifier ou supprimer un groupe dans le CAE
+     Pour supprimer un propriétaire, sélectionnez-le, puis cliquez sur **supprimer** l' ![ icône Supprimer ](../../media/ITPro-EAC-RemoveIcon.gif) .
+
+   - **Membres**: ajouter et supprimer des membres du groupe.
+
+     Pour ajouter des membres, cliquez sur **Ajouter** une ![ icône Ajouter ](../../media/ITPro-EAC-AddIcon.png) . Dans la boîte de dialogue qui s’affiche, recherchez et sélectionnez un destinataire ou un groupe, puis cliquez sur **Ajouter->**. Répétez cette étape autant de fois que nécessaire. Lorsque vous avez terminé, cliquez sur **OK**.
+
+     Pour supprimer un membre, sélectionnez-le, puis cliquez sur **supprimer** l' ![ icône Supprimer ](../../media/ITPro-EAC-RemoveIcon.gif) .
+
+4. Lorsque vous avez terminé, cliquez sur **Enregistrer** pour créer le groupe de distribution.
+
+### <a name="use-the-eac-to-modify-distribution-groups"></a>Utiliser le centre d’administration Exchange pour modifier des groupes de distribution
 
 1. Dans le CAE, accédez à **Destinataires** \> **Groupes**.
 
-2. Effectuez l'une des étapes suivantes :
+2. Dans la liste des groupes, sélectionnez le groupe de distribution ou le groupe de sécurité à extension messagerie à modifier, puis cliquez sur **modifier** l' ![ icône modifier ](../../media/ITPro-EAC-AddIcon.png) .
 
-   - Pour modifier un groupe : dans la liste des groupes, cliquez sur le groupe que vous souhaitez afficher ou modifier, puis cliquez sur **modifier** ![l’icône](../../media/ITPro-EAC-EditIcon.gif)modifier. Vous pouvez mettre à jour les paramètres généraux, ajouter ou supprimer des propriétaires de groupes, et ajouter ou supprimer des membres du groupe selon vos besoins.
+3. Dans la page des propriétés du groupe de distribution qui s’ouvre, cliquez sur l’un des onglets suivants pour afficher ou modifier les propriétés.
 
-   - Pour supprimer un groupe : sélectionnez le groupe, puis **Remove** ![cliquez sur supprimer](../../media/ITPro-EAC-RemoveIcon.gif)l’icône Supprimer.
+   Lorsque vous avez terminé, cliquez sur **Enregistrer**.
 
-3. Après avoir effectué toutes les modifications voulues, cliquez sur **Enregistrer**.
+#### <a name="general"></a>Général
 
-## <a name="create-edit-or-remove-a-group-using-remote-windows-powershell"></a>Créer, modifier ou supprimer un groupe à l’aide de Windows PowerShell à distance
+Utilisez cet onglet pour afficher ou modifier les informations de base relatives au groupe.
 
-Cette section fournit des informations sur la création de groupes et la modification de leurs propriétés dans Exchange Online Protection PowerShell. Elle explique également comment supprimer un groupe existant.
+- **Nom d’affichage**: ce nom s’affiche dans le carnet d’adresses, sur la ligne à lorsque le courrier électronique est envoyé à ce groupe, et dans la **Liste groupes**. Le nom d'affichage est obligatoire et doit être convivial afin que les personnes identifient facilement de quoi il s'agit. Il doit également être unique dans votre domaine.
 
-### <a name="create-a-group-using-remote-windows-powershell"></a>Créer un groupe à l’aide de Windows PowerShell à distance
+  Si vous avez implémenté une stratégie de noms de groupes, le nom d'affichage doit se conformer au format de nom défini par la stratégie.
 
-Cet exemple utilise la cmdlet [New-EOPDistributionGroup](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/New-EOPDistributionGroup) pour créer un groupe de distribution avec l'alias itadmin et le nom IT Administrators. Il ajoute également des utilisateurs en tant que membres du groupe.
+- **Alias**: il s’agit de la partie de l’adresse de messagerie qui apparaît à gauche du symbole arobase (@). Si vous modifiez l'alias, l'adresse SMTP principale du groupe est également modifiée et contient le nouvel alias. De plus, l'adresse de messagerie électronique qui comprend l'alias précédent est gardée en tant qu'adresse de proxy du groupe.
 
-```PowerShell
-New-EOPDistributionGroup -Type Distribution -Name "IT Administrators" -Alias itadmin -Members @("Member1","Member2","Member3") -ManagedBy Member1
+- **Adresse de messagerie**: l’adresse de messagerie se compose de l’alias sur le côté gauche du symbole arobase (@) et d’un domaine sur le côté droit. Par défaut, la valeur d' **alias** est utilisée pour la valeur d’alias, mais vous pouvez la modifier. Pour la valeur Domain (domaine), cliquez sur le menu déroulant et sélectionnez le domaine accepté dans votre organisation.
+
+- **Description**: cette description apparaît dans le carnet d’adresses et dans le volet d’informations du centre d’administration Exchange.
+
+#### <a name="ownership"></a>Propriété
+
+Utilisez cet onglet pour affecter des propriétaires de groupe. Un propriétaire de groupe peut gérer l’appartenance à un groupe. Par défaut, la personne qui crée un groupe en est le propriétaire. Tous les groupes doivent avoir au moins un propriétaire.
+
+Pour ajouter des propriétaires, cliquez sur **Ajouter** une ![ icône Ajouter ](../../media/ITPro-EAC-AddIcon.png) . Dans la boîte de dialogue qui s’affiche, recherchez et sélectionnez un destinataire, puis cliquez sur **Ajouter->**. Répétez cette étape autant de fois que nécessaire. Lorsque vous avez terminé, cliquez sur **OK**.
+
+Pour supprimer un propriétaire, sélectionnez-le, puis cliquez sur **supprimer** l' ![ icône Supprimer ](../../media/ITPro-EAC-RemoveIcon.gif) .
+
+#### <a name="membership"></a>Appartenance
+
+Utilisez cet onglet pour ajouter ou supprimer des membres du groupe. Les propriétaires de groupe n’ont pas besoin d’être membres du groupe.
+
+Pour ajouter des membres, cliquez sur **Ajouter** une ![ icône Ajouter ](../../media/ITPro-EAC-AddIcon.png) . Dans la boîte de dialogue qui s’affiche, recherchez et sélectionnez un destinataire ou un groupe, puis cliquez sur **Ajouter->**. Répétez cette étape autant de fois que nécessaire. Lorsque vous avez terminé, cliquez sur **OK**.
+
+Pour supprimer un membre, sélectionnez-le, puis cliquez sur **supprimer** l' ![ icône Supprimer ](../../media/ITPro-EAC-RemoveIcon.gif) .
+
+### <a name="use-the-eac-to-remove-groups"></a>Utiliser le centre d’administration Exchange pour supprimer des groupes
+
+1. Dans le CAE, accédez à **Destinataires** \> **Groupes**.
+
+2. Dans la liste des groupes, sélectionnez le groupe de distribution que vous souhaitez supprimer, puis cliquez sur **supprimer** l' ![ icône Supprimer ](../../media/ITPro-EAC-RemoveIcon.gif) .
+
+## <a name="use-powershell-to-manage-groups"></a>Utiliser PowerShell pour gérer les groupes
+
+### <a name="use-standalone-eop-powershell-to-view-groups"></a>Utilisation d’EOP PowerShell autonome pour afficher des groupes
+
+Pour renvoyer une liste récapitulative de tous les groupes de distribution et des groupes de sécurité à extension messagerie dans la version autonome d’EOP PowerShell, exécutez la commande suivante :
+
+```powershell
+Get-Recipient -RecipientType MailUniversalDistributionGroup,MailUniversalSecurityGroup -ResultSize unlimited
 ```
 
-**Remarque**: pour créer un groupe de sécurité au lieu d’un groupe de distribution, `Security` utilisez la valeur pour le paramètre *type* .
+Pour renvoyer la liste des membres du groupe, remplacez \< groupIdentity \> par le nom, l’alias ou l’adresse de messagerie du groupe, puis exécutez la commande suivante :
 
-Pour vérifier que vous avez bien créé le groupe administrateurs informatiques, exécutez la commande suivante pour afficher les informations sur le nouveau groupe :
-
-```PowerShell
-Get-Recipient "IT Administrators" | Format-List
+```powershell
+Get-DistributionGroupMember -Identity <GroupIdentity>
 ```
 
-Pour obtenir des informations détaillées sur la syntaxe et les paramètres, consultez la rubrique [Get-Recipient](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/Get-Recipient).
+Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Get-Recipient](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/get-recipient) et [Get-DistributionGroupMember](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/get-distributiongroupmember).
 
-Pour obtenir la liste des membres du groupe, exécutez la commande suivante :
+### <a name="use-standalone-eop-powershell-to-create-groups"></a>Utilisation d’EOP PowerShell autonome pour créer des groupes
 
-```PowerShell
-Get-DistributionGroupMember "IT Administrators"
-```
-
-Pour obtenir des informations détaillées sur la syntaxe et les paramètres, consultez la rubrique [Get-DistributionGroupMember](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/get-distributiongroupmember).
-
-Pour obtenir la liste complète de tous vos groupes, exécutez la commande suivante :
+Pour créer des groupes de distribution ou des groupes de sécurité à extension messagerie dans une version autonome d’EOP PowerShell, utilisez la syntaxe suivante :
 
 ```PowerShell
-Get-Recipient -RecipientType "MailUniversalDistributionGroup" | Format-Table | more
+New-EOPDistributionGroup -Name "<Unique Name>" -ManagedBy @("UserOrGroup1","UserOrGroup2",..."UserOrGroupN">) [-Alias <text>] [-DisplayName "<Descriptive Name>"] [-Members @("UserOrGroup1","UserOrGroup2",..."UserOrGroupN">)] [-Notes "<Optional Text>"] [-PrimarySmtpAddress <SmtpAddress>] [-Type <Distribution | Security>]
 ```
 
-### <a name="change-the-properties-of-a-group-using-remote-windows-powershell"></a>Modifier les propriétés d’un groupe à l’aide de Windows PowerShell à distance
+**Remarques** :
 
-L’utilisation de PowerShell au lieu du centre d’administration Exchange permet de modifier les propriétés de plusieurs groupes.
+- Le paramètre _Name_ est obligatoire, sa longueur maximale est de 64 caractères et doit être unique. Si vous n’utilisez pas le paramètre _DisplayName_, la valeur du paramètre _Name_ est utilisée pour le nom complet.
 
-Voici quelques exemples d’utilisation d’Exchange Online Protection PowerShell pour modifier les propriétés d’un groupe.
+- Si vous n’utilisez pas le paramètre _alias_ , le paramètre _Name_ est utilisé pour la valeur alias. Les espaces sont supprimés et les caractères non pris en charge sont convertis en points d’interrogation ( ?).
+
+- Si vous n’utilisez pas le paramètre _PrimarySmtpAddress_ , la valeur d’alias est utilisée dans le paramètre _PrimarySmtpAddress_ .
+
+- Si vous n’utilisez pas le paramètre _type_ , la valeur par défaut est distribution.
+
+Cet exemple crée un groupe de distribution nommé administrateurs informatiques avec les propriétés spécifiées.
+
+```PowerShell
+New-EOPDistributionGroup -Name "IT Administrators" -Alias itadmin -Members @("michelle@contoso.com","laura@contoso.com","julia@contoso.com") -ManagedBy "chris@contoso.com"
+```
+
+Pour obtenir des informations détaillées sur la syntaxe et les paramètres, consultez la rubrique [New-EOPDistributionGroup](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/New-EOPDistributionGroup).
+
+### <a name="use-standalone-eop-powershell-to-modify-groups"></a>Utilisation d’EOP PowerShell autonome pour modifier des groupes
+
+Pour modifier des groupes dans une version autonome d’EOP PowerShell, utilisez la syntaxe suivante :
+
+```powershell
+Set-EOPDistributionGroup -Identity <GroupIdentity> [-Alias <Text>] [-DisplayName <Text>] [-ManagedBy @("User1","User2",..."UserN")] [-PrimarySmtpAddress <SmtpAddress>]
+
+```powershell
+Update-EOPDistributionGroupMember -Identity <GroupIdentity> -Members @("User1","User2",..."UserN")
+```
 
 Cet exemple utilise la modification de l’adresse SMTP principale (également appelée adresse de réponse) pour le groupe Seattle Employees vers sea.employees@contoso.com.
 
@@ -138,27 +192,22 @@ Cet exemple utilise la modification de l’adresse SMTP principale (également a
 Set-EOPDistributionGroup "Seattle Employees" -PrimarysmptAddress "sea.employees@contoso.com"
 ```
 
-Pour obtenir des informations détaillées sur la syntaxe et les paramètres, consultez la rubrique [Set-EOPDistributionGroup](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/set-eopdistributiongroup).
+Cet exemple remplace les membres actuels du groupe d’équipe de sécurité par Kitty Petersen et Tyson Fawcett.
 
-Pour vérifier que vous avez bien modifié les propriétés du groupe, exécutez la commande suivante pour vérifier la nouvelle valeur :
-
-```PowerShell
-Get-Recipient "Seattle Employees" | Format-List "PrimarySmtpAddress"
+```powershell
+Update-EOPDistributionGroupMember -Identity "Security Team" -Members @("Kitty Petersen","Tyson Fawcett")
 ```
 
-Cet exemple met à jour tous les membres du groupe Seattle Employees. Utilisez des virgules pour séparer tous les membres.
+Cet exemple ajoute un nouvel utilisateur appelé Tyson Fawcett au groupe nommé « équipe de sécurité » tout en conservant les membres actuels du groupe.
 
-```PowerShell
-Update-EOPDistributionGroupMember -Identity "Seattle Employees" -Members @("Member1","Member2","Member3","Member4","Member5")
+```powershell
+$CurrentMemberObjects = Get-DistributionGroupMember "Security Team"
+$CurrentMemberNames = $CurrentMemberObjects | % {$_.name}
+$CurrentMemberNames += "Tyson Fawcett"
+Update-EOPDistributionGroupMember -Identity "Security Team" -Members $CurrentMemberNames
 ```
 
-Pour obtenir des informations détaillées sur la syntaxe et les paramètres, consultez la rubrique [Update-EOPDistributionGroupMember](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/update-eopdistributiongroupmember).
-
-Pour obtenir la liste de tous les membres du groupe Seattle Employees, exécutez la commande suivante :
-
-```PowerShell
-Get-DistributionGroupMember "Seattle Employees"
-```
+Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Set-EOPDistributionGroup](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/set-eopdistributiongroup) et [Update-EOPDistributionGroupMember](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/update-eopdistributiongroupmember).
 
 ### <a name="remove-a-group-using-remote-windows-powershell"></a>Supprimer un groupe à l’aide de Windows PowerShell à distance
 
@@ -170,8 +219,26 @@ Remove-EOPDistributionGroup -Identity "IT Administrators"
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, consultez la rubrique [Remove-EOPDistributionGroup](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/remove-eopdistributiongroup).
 
-Pour vérifier que le groupe a été supprimé, exécutez la commande suivante et assurez-vous que le groupe (dans ce cas administrateurs informatiques) a été supprimé.
+## <a name="how-do-you-know-these-procedures-worked"></a>Comment savoir si ces procédures ont fonctionné ?
 
-```PowerShell
-Get-Recipient -RecipientType "MailUniversalDistributionGroup"
-```
+Pour vérifier que vous avez bien créé, modifié ou supprimé un groupe de distribution ou un groupe de sécurité à extension messagerie, effectuez l’une des opérations suivantes :
+
+- Dans le CAE, accédez à **Destinataires** \> **Groupes**. Vérifiez que le groupe est affiché (ou non), puis vérifiez la valeur du **type de groupe** . Sélectionnez le groupe et affichez les informations dans le volet d’informations, ou cliquez sur **modifier** ![ l’icône modifier ](../../media/ITPro-EAC-AddIcon.png) pour afficher les paramètres.
+
+- Dans la version autonome d’EOP PowerShell, exécutez la commande suivante pour vérifier que le groupe est affiché (ou non) :
+
+  ```PowerShell
+  Get-Recipient -RecipientType MailUniversalDistributionGroup,MailUniversalSecurityGroup -ResultSize unlimited
+  ```
+
+- Remplacez \< groupIdentity \> par le nom, l’alias ou l’adresse de messagerie du groupe, puis exécutez la commande suivante pour vérifier les paramètres :
+
+  ```PowerShell
+  Get-Recipient -Identity <GroupIdentity> | Format-List
+  ```
+
+- Pour afficher les membres du groupe, remplacez \< groupIdentity \> par le nom, l’alias ou l’adresse de messagerie du groupe, puis exécutez la commande suivante :
+
+  ```PowerShell
+  Get-DistributionGroupMember -Identity "<GroupIdentity>"
+  ```

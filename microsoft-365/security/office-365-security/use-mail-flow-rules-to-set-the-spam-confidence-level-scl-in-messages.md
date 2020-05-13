@@ -17,18 +17,18 @@ ms.collection:
 - M365-security-compliance
 description: Découvrez comment créer des règles de flux de messagerie (règles de transport) pour identifier les messages et définir le seuil de probabilité de courrier indésirable (SCL) des messages dans Exchange Online Protection.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 444a7f2a8342102c2222cc734b2592f46632f8d3
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: f9af154a9f71992597e111147b792cd5286e2ad3
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035009"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208560"
 ---
-# <a name="use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages"></a>Utilisation des règles de flux de courrier pour définir le seuil de probabilité de courrier indésirable (SCL) dans les messages
+# <a name="use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages-in-eop"></a>Utiliser des règles de flux de messagerie pour définir le seuil de probabilité de courrier indésirable (SCL) dans les messages dans EOP
 
-Si vous êtes un client Microsoft 365 avec des boîtes aux lettres dans Exchange Online ou un client Exchange Online Protection (EOP) autonome sans boîte aux lettres Exchange Online, EOP utilise des stratégies de blocage du courrier indésirable (également appelées stratégies de filtrage du courrier indésirable ou stratégies de filtrage de contenu) pour analyser les messages entrants pour le courrier indésirable. Si vous souhaitez en savoir plus, consultez l’article [Configurer les stratégies anti-courrier indésirable dans Office 365](configure-your-spam-filter-policies.md).
+Dans les organisations Microsoft 365 avec des boîtes aux lettres dans Exchange Online ou des organisations Exchange Online Protection (EOP) autonomes sans boîte aux lettres Exchange Online, EOP utilise des stratégies de blocage du courrier indésirable (également appelées stratégies de filtrage du courrier indésirable ou stratégies de filtrage de contenu) pour analyser les messages entrants pour le courrier indésirable. Pour plus d’informations, consultez la rubrique [configurer des stratégies de blocage du courrier indésirable dans EOP](configure-your-spam-filter-policies.md).
 
-Si vous souhaitez marquer des messages spécifiques comme courrier indésirable avant qu’ils soient encore analysés par le filtrage du courrier indésirable, ou marquer les messages de sorte qu’ils ignorent le filtrage du courrier indésirable, vous pouvez créer des règles de flux de messagerie (également appelées règles de transport) pour identifier les messages et définir le seuil de probabilité de courrier indésirable. Pour plus d’informations sur la valeur SCL, consultez la rubrique [Spam Confidence Level (SCL) in Office 365](spam-confidence-levels.md).
+Si vous souhaitez marquer des messages spécifiques comme courrier indésirable avant qu’ils soient encore analysés par le filtrage du courrier indésirable, ou marquer les messages de sorte qu’ils ignorent le filtrage du courrier indésirable, vous pouvez créer des règles de flux de messagerie (également appelées règles de transport) pour identifier les messages et définir le seuil de probabilité de courrier indésirable. Pour plus d’informations sur la valeur SCL, consultez la rubrique [Spam Confidence Level (SCL) in EOP](spam-confidence-levels.md).
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu'il faut savoir avant de commencer
 
@@ -42,7 +42,7 @@ Si vous souhaitez marquer des messages spécifiques comme courrier indésirable 
 
 1. Dans le CAE, accédez à **Flux de messagerie** \> **Règles**.
 
-2. Cliquez sur **Ajouter** ![une](../../media/ITPro-EAC-AddIcon.png) icône Ajouter, puis sélectionnez **créer une nouvelle règle**.
+2. Cliquez sur **Ajouter** ![ une icône Ajouter ](../../media/ITPro-EAC-AddIcon.png) , puis sélectionnez **créer une nouvelle règle**.
 
 3. Dans la page **Nouvelle règle** qui s'ouvre, configurez les paramètres suivants :
 
@@ -52,12 +52,12 @@ Si vous souhaitez marquer des messages spécifiques comme courrier indésirable 
 
    - **Appliquer cette règle si**: sélectionnez une ou plusieurs conditions pour identifier les messages. Pour plus d’informations, consultez la rubrique [mail Flow Rule conditions and exceptions (prédicats) dans Exchange Online](https://docs.microsoft.com/Exchange/security-and-compliance/mail-flow-rules/conditions-and-exceptions).
 
-   - **Procédez comme suit**: sélectionnez **modifier les propriétés** \> du message **définir le seuil de probabilité de courrier indésirable (SCL)**. Dans la boîte de dialogue spécifier la valeur **SCL** qui s’affiche, configurez l’une des valeurs suivantes :
+   - **Procédez comme suit**: sélectionnez **modifier les propriétés du message** \> **définir le seuil de probabilité de courrier indésirable (SCL)**. Dans la boîte de dialogue spécifier la valeur **SCL** qui s’affiche, configurez l’une des valeurs suivantes :
 
    - **Contournement du filtrage du courrier indésirable**: définit la valeur SCL sur-1, ce qui signifie que les messages ignorent le filtrage du courrier indésirable.
 
      > [!CAUTION]
-     > Soyez très vigilant lorsque vous autorisez les messages à ignorer le filtrage du courrier indésirable. Les attaquants peuvent utiliser cette vulnérabilité pour envoyer du hameçonnage et d’autres messages malveillants dans votre organisation. Les règles de flux de messagerie nécessitent plus que l’adresse de messagerie ou le domaine de l’expéditeur. Si vous souhaitez en savoir plus, consultez la page [Créer des listes d’expéditeurs approuvés dans Office 365](create-safe-sender-lists-in-office-365.md).
+     > Soyez très vigilant lorsque vous autorisez les messages à ignorer le filtrage du courrier indésirable. Les attaquants peuvent utiliser cette vulnérabilité pour envoyer du hameçonnage et d’autres messages malveillants dans votre organisation. Les règles de flux de messagerie nécessitent plus que l’adresse de messagerie ou le domaine de l’expéditeur. Pour plus d’informations, consultez la rubrique [créer des listes d’expéditeurs approuvés dans EOP](create-safe-sender-lists-in-office-365.md).
 
    - **0 à 4**: le message est envoyé par le biais du filtrage du courrier indésirable pour un traitement supplémentaire.
 
@@ -69,4 +69,4 @@ Si vous souhaitez marquer des messages spécifiques comme courrier indésirable 
 
 ## <a name="how-do-you-know-this-worked"></a>Comment savoir si cela a fonctionné ?
 
-Pour vous assurer que cette procédure fonctionne correctement, envoyez un message électronique à un membre de votre organisation et vérifiez que l'action effectuée sur le message correspond à celle prévue. Par exemple, si vous avez **défini le seuil de probabilité de courrier indésirable (SCL)** sur **Contourner le filtrage du courrier indésirable**, le message doit être envoyé vers la boîte de réception du destinataire spécifié. Cependant, si vous avez **défini le seuil de probabilité de courrier indésirable (SCL)** sur **9** et que l'action **Probabilité élevée de courrier indésirable** pour les stratégies de filtre de contenu applicables consiste à déplacer le message vers le dossier Courrier indésirable, le message doit être envoyé vers le dossier Courrier indésirable du destinataire spécifié.
+Pour vous assurer que cette procédure fonctionne correctement, envoyez un message électronique à un membre de votre organisation et vérifiez que l'action effectuée sur le message correspond à celle prévue. Par exemple, si vous avez **défini le seuil de probabilité de courrier indésirable (SCL)** sur **Contourner le filtrage du courrier indésirable**, le message doit être envoyé vers la boîte de réception du destinataire spécifié. Toutefois, si vous **Définissez le seuil de probabilité de courrier indésirable (SCL)** sur **9**et que l’action de courrier indésirable à **haut niveau de fiabilité** pour vos stratégies de blocage du courrier indésirable est de déplacer le message vers le dossier courrier indésirable, le message doit être envoyé vers le dossier de courrier indésirable du destinataire spécifié.

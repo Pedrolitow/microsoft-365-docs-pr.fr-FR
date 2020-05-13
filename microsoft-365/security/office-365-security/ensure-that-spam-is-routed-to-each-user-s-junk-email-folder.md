@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 description: Les administrateurs peuvent apprendre à acheminer le courrier indésirable vers les dossiers de courrier indésirable de l’utilisateur dans un environnement hybride Exchange Online Protection.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 14193fecf90a6f2ddde05fbfdaded0ff2bcb5875
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: a5b4d16c864b25c4d47910f0dd69f0ed3e71a0de
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44036571"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44209474"
 ---
 # <a name="configure-standalone-eop-to-deliver-spam-to-the-junk-email-folder-in-hybrid-environments"></a>Configurer EOP autonome pour envoyer du courrier indésirable dans le dossier courrier indésirable dans des environnements hybrides
 
@@ -44,7 +44,7 @@ Pour plus d’informations sur ces valeurs d’en-tête, consultez la rubrique [
 Cette rubrique décrit comment créer ces règles de flux de messagerie le centre d’administration Exchange et l’environnement de commande Exchange Management Shell (Exchange PowerShell) dans l’organisation Exchange locale.
 
 > [!TIP]
-> Au lieu de transmettre les messages au dossier de courrier indésirable de l’utilisateur local, vous pouvez configurer des stratégies de blocage du courrier indésirable dans EOP pour mettre en quarantaine les messages de courrier indésirable dans EOP. Si vous souhaitez en savoir plus, consultez l’article [Configurer les stratégies anti-courrier indésirable dans Office 365](configure-your-spam-filter-policies.md).
+> Au lieu de transmettre les messages au dossier de courrier indésirable de l’utilisateur local, vous pouvez configurer des stratégies de blocage du courrier indésirable dans EOP pour mettre en quarantaine les messages de courrier indésirable dans EOP. Pour plus d’informations, consultez la rubrique [configurer des stratégies de blocage du courrier indésirable dans EOP](configure-your-spam-filter-policies.md).
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu'il faut savoir avant de commencer
 
@@ -60,7 +60,7 @@ Cette rubrique décrit comment créer ces règles de flux de messagerie le centr
 
   - Si la règle de courrier indésirable est activée sur la boîte aux lettres (la valeur du paramètre _Enabled_ est $true sur la cmdlet [Set-MailboxJunkEmailConfiguration](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/set-mailboxjunkemailconfiguration) dans l’environnement de commande Exchange Management Shell). Il s’agit de la règle de courrier indésirable qui déplace le message vers le dossier courrier indésirable après la remise. Par défaut, la règle de courrier indésirable est activée sur les boîtes aux lettres. Pour plus d’informations, consultez la rubrique [Configure Exchange antispam settings on mailboxes](https://docs.microsoft.com/Exchange/antispam-and-antimalware/antispam-protection/configure-antispam-settings).
   
-- Pour ouvrir le centre d’administration Exchange sur un serveur Exchange, consultez la rubrique [Exchange Admin Center in Exchange Server](https://docs.microsoft.com/Exchange/architecture/client-access/exchange-admin-center). Pour ouvrir l’environnement de commande Exchange Management [https://docs.microsoft.com/powershell/exchange/exchange-server/open-the-exchange-management-shell](https://docs.microsoft.com/powershell/exchange/exchange-server/open-the-exchange-management-shell)Shell, reportez-vous à.
+- Pour ouvrir le centre d’administration Exchange sur un serveur Exchange, consultez la rubrique [Exchange Admin Center in Exchange Server](https://docs.microsoft.com/Exchange/architecture/client-access/exchange-admin-center). Pour ouvrir l’environnement de commande Exchange Management Shell, reportez-vous à [https://docs.microsoft.com/powershell/exchange/exchange-server/open-the-exchange-management-shell](https://docs.microsoft.com/powershell/exchange/exchange-server/open-the-exchange-management-shell) .
 
 - Pour plus d’informations sur les règles de flux de messagerie dans Exchange sur site, consultez les rubriques suivantes :
 
@@ -74,7 +74,7 @@ Cette rubrique décrit comment créer ces règles de flux de messagerie le centr
 
 1. Dans le CAE, accédez à **Flux de messagerie** \> **Règles**.
 
-2. Cliquez sur **Ajouter** ![une](../../media/ITPro-EAC-AddIcon.png) icône et sélectionnez **créer une nouvelle règle** dans la liste déroulante qui s’affiche.
+2. Cliquez sur **Ajouter** ![ ](../../media/ITPro-EAC-AddIcon.png) une icône et sélectionnez **créer une nouvelle règle** dans la liste déroulante qui s’affiche.
 
 3. Dans la page **Nouvelle règle** qui s'ouvre, configurez les paramètres suivants :
 
@@ -94,9 +94,9 @@ Cette rubrique décrit comment créer ces règles de flux de messagerie le centr
 
      - Cliquez sur **entrer du texte**. Dans la boîte de dialogue spécifier le nom de l' **en-tête** qui s’affiche, entrez **X-Forefront-antispam-Report** , puis cliquez sur **OK**.
 
-     - Cliquez sur **Entrez les mots**. Dans la boîte de dialogue **spécifier des mots ou des expressions** qui s’affiche, entrez l’une des valeurs d’en-tête de courrier indésirable EOP (**SFV : SPM**, **SFV : SKS**ou **SFV : SKB**), cliquez sur **Ajouter** ![une icône](../../media/ITPro-EAC-AddIcon.png)d’ajout, puis cliquez sur **OK**.
+     - Cliquez sur **Entrez les mots**. Dans la boîte de dialogue **spécifier des mots ou des expressions** qui s’affiche, entrez l’une des valeurs d’en-tête de courrier indésirable EOP (**SFV : SPM**, **SFV : SKS**ou **SFV : SKB**), cliquez sur **Ajouter** une ![ icône d’ajout, puis ](../../media/ITPro-EAC-AddIcon.png) cliquez sur **OK**.
 
-   - **Procédez comme suit**: sélectionnez **modifier les propriétés** \> du message **définir le seuil de probabilité de courrier indésirable (SCL)**.
+   - **Procédez comme suit**: sélectionnez **modifier les propriétés du message** \> **définir le seuil de probabilité de courrier indésirable (SCL)**.
 
      Dans la boîte de dialogue spécifier la valeur **SCL** qui s’affiche, sélectionnez **6** (la valeur par défaut est **5**).
 
@@ -132,9 +132,9 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, vo
 
 Pour vérifier que vous avez bien configuré EOP autonome pour envoyer du courrier indésirable dans le dossier courrier indésirable dans un environnement hybride, effectuez l’une des opérations suivantes :
 
-- Dans le centre d’administration Exchange, accédez à **règles**de **flux** \> de messagerie, sélectionnez la règle, puis](../../media/ITPro-EAC-EditIcon.png) cliquez sur **modifier** ![l’icône modifier pour vérifier les paramètres.
+- Dans le centre d’administration Exchange, accédez à règles de **flux de messagerie** \> **Rules**, sélectionnez la règle, puis cliquez sur **modifier** ![ l’icône modifier ](../../media/ITPro-EAC-EditIcon.png) pour vérifier les paramètres.
 
-- Dans l’environnement de commande Exchange Management \<Shell\> , remplacez RuleName par le nom de la règle de flux de messagerie et RUL la commande suivante pour vérifier les paramètres :
+- Dans l’environnement de commande Exchange Management Shell, remplacez \< RuleName \> par le nom de la règle de flux de messagerie et RUL la commande suivante pour vérifier les paramètres :
 
   ```powershell
   Get-TransportRule -Identity "<RuleName>" | Format-List

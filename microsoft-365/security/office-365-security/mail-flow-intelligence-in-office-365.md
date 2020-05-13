@@ -13,16 +13,16 @@ search.appverid:
 - MET150
 ms.assetid: c29f75e5-c16e-409e-a123-430691e38276
 description: Les administrateurs peuvent en savoir plus sur les codes d’erreur associés à la remise des messages à l’aide de connecteurs (également appelés intelligence de flux de messagerie).
-ms.openlocfilehash: aa156299dcc835369b7eb69bb5719b27078d8404
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 55b57e4b487444abb57bcc184ef6fd742ea9dc1d
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635635"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44206615"
 ---
-# <a name="mail-flow-intelligence"></a>Intelligence de flux de messagerie
+# <a name="mail-flow-intelligence-in-eop"></a>Intelligence de flux de messagerie dans EOP
 
-En règle générale, vous utilisez un connecteur pour acheminer les messages électroniques de votre organisation vers votre environnement de messagerie local. Vous pouvez également utiliser un connecteur pour router les messages de Microsoft 365 vers une organisation partenaire. Lorsque Microsoft 365 ne peut pas fournir ces messages via le connecteur, ils sont mis en file d’attente dans Microsoft 365. Microsoft 365 continue de relancer la remise de chaque message pendant 24 heures. Au bout de 24 heures, le message en file d’attente expire et le message est renvoyé à l’expéditeur d’origine dans une notification d’échec de remise (également appelée notification de non-remise).
+Dans les organisations Microsoft 365 avec des boîtes aux lettres dans Exchange Online ou des organisations Exchange Online Protection (EOP) autonomes sans boîtes aux lettres Exchange Online, vous utilisez généralement un connecteur pour acheminer les messages électroniques d’EOP vers votre environnement de messagerie local. Vous pouvez également utiliser un connecteur pour router les messages de Microsoft 365 vers une organisation partenaire. Lorsque Microsoft 365 ne peut pas fournir ces messages via le connecteur, ils sont mis en file d’attente dans Microsoft 365. Microsoft 365 continue de relancer la remise de chaque message pendant 24 heures. Au bout de 24 heures, le message en file d’attente expire et le message est renvoyé à l’expéditeur d’origine dans une notification d’échec de remise (également appelée notification de non-remise).
 
 Microsoft 365 génère une erreur lorsqu’un message ne peut pas être remis à l’aide d’un connecteur. Les erreurs les plus courantes et leurs solutions sont décrites dans cette rubrique. Les erreurs de notification et de mise en file d’attente pour les messages non remis envoyés via des connecteurs sont appelées _intelligence de flux de messagerie_.
 
@@ -68,13 +68,13 @@ En règle générale, cette erreur signifie que Microsoft 365 a rencontré une e
 
   - Dans le [Centre d’administration Exchange](https://docs.microsoft.com/Exchange/exchange-admin-center), désactivez ou supprimez le connecteur qui remet le courrier électronique de Microsoft 365 à votre environnement de messagerie local :
 
-    1. Dans le centre d’administration Exchange, accédez à **connecteurs**de **flux** \> de messagerie.
+    1. Dans le centre d’administration Exchange, accédez à connecteurs de **flux de messagerie** \> **Connectors**.
 
     2. Sélectionnez le connecteur avec la valeur **à partir d'** **Office 365** et la valeur **pour** le **serveur de messagerie de votre organisation** , puis effectuez l’une des opérations suivantes :
 
-       - Supprimez le connecteur en cliquant sur **supprimer** ![l’icône Supprimer.](../../media/adf01106-cc79-475c-8673-065371c1897b.gif)
+       - Supprimez le connecteur en cliquant sur **supprimer** l' ![ icône Supprimer.](../../media/adf01106-cc79-475c-8673-065371c1897b.gif)
 
-       - Désactivez le connecteur **Edit** ![en cliquant sur](../../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif) modifier l’icône modifier, puis désactivez la case à cocher **activer**.
+       - Désactivez le connecteur en cliquant sur **modifier** l' ![ icône modifier, puis désactivez la case à ](../../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif) cocher **activer**.
 
   - Modifiez le domaine accepté dans Microsoft 365 qui est associé à votre environnement de messagerie local de **relais interne** à **faisant autorité**. Pour obtenir des instructions, consultez la rubrique [gestion des domaines acceptés dans Exchange Online](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains).
 
@@ -86,7 +86,7 @@ En règle générale, cette erreur signifie que Microsoft 365 a rencontré une e
 
 En règle générale, cette erreur signifie que Microsoft 365 est connecté au serveur de messagerie de destination, mais que le serveur a répondu avec une erreur immédiate ou ne répond pas aux exigences de connexion. Les détails de l'erreur expliquent le problème. Par exemple :
 
-- Le serveur de messagerie de destination a répondu avec une erreur « service non disponible », ce qui indique que le serveur ne peut pas maintenir la communication avec Office 365.
+- Le serveur de messagerie de destination a répondu avec une erreur « service non disponible », ce qui indique que le serveur n’est pas en mesure de maintenir la communication avec Microsoft 365.
 
 - Le connecteur est configuré pour exiger TLS, mais le serveur de messagerie de destination ne prend pas en charge le protocole TLS.
 
@@ -102,15 +102,15 @@ En règle générale, cette erreur signifie que Microsoft 365 rencontre des diff
 
 - Votre pare-feu utilise des règles d'examen de paquet SMTP, lesquelles ne fonctionnent pas correctement.
 
-- Votre serveur de messagerie local ne fonctionne pas correctement (par exemple, blocage du service, blocage ou ressources système faibles), ce qui entraîne l’expiration du serveur et la fermeture de la connexion à Office 365.
+- Votre serveur de messagerie local ne fonctionne pas correctement (par exemple, blocage du service, blocage ou ressources système faibles), ce qui entraîne l’expiration du serveur et la fermeture de la connexion à Microsoft 365.
 
-- Il y a des problèmes réseau entre votre environnement local et Office 365.
+- Il existe des problèmes de réseau entre votre environnement local et Microsoft 365.
 
 ### <a name="how-do-i-fix-error-code-450-44318"></a>Comment corriger le code d’erreur 450 4.4.318 la ?
 
 - Déterminez le scénario qui vous concerne et apportez les corrections nécessaires.
 
-- Si le problème est dû à des problèmes de réseau entre votre environnement local et Office 365, contactez votre équipe réseau pour résoudre le problème.
+- Si le problème est dû à des problèmes de réseau entre votre environnement local et Microsoft 365, contactez votre équipe réseau pour résoudre le problème.
 
 - Si votre organisation partenaire (par exemple, un fournisseur de services cloud tiers) est à l'origine de l'erreur, vous devez contacter votre partenaire afin de résoudre le problème.
 

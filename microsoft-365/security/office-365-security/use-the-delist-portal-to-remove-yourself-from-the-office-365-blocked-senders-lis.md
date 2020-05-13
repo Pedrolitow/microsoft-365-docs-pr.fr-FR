@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Dans cet article, vous allez apprendre à utiliser le portail supprimer de la liste pour vous supprimer de la liste des expéditeurs bloqués de Microsoft 365.
-ms.openlocfilehash: 700382a494865b80116cfd8419213ed43b35b8a1
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 239d30fec4d904af353731974435d377801be6c7
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034985"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208536"
 ---
 # <a name="use-the-delist-portal-to-remove-yourself-from-the-blocked-senders-list"></a>Utilisation du portail Supprimer de la liste pour vous supprimer de la liste des expéditeurs bloqués
 
@@ -35,7 +35,7 @@ Microsoft utilise la liste des expéditeurs bloqués pour protéger ses clients 
 
 Vous savez que vous avez été ajouté à la liste si vous recevez une réponse à un courrier électronique incluant une erreur ressemblant à ce qui suit :
 
-> 550 5.7.606-649 accès refusé, IP d’envoi interdit [_adresse IP_]; Pour demander la suppression de cette liste, https://sender.office.com/ visitez le site et suivez les instructions. Pour plus d’informations, consultez la rubrique [notifications de non-remise aux messages électroniques dans Exchange Online](https://docs.microsoft.com/Exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/non-delivery-reports-in-exchange-online).
+> 550 5.7.606-649 accès refusé, IP d’envoi interdit [_adresse IP_]; Pour demander la suppression de cette liste, visitez https://sender.office.com/ le site et suivez les instructions. Pour plus d’informations, consultez la rubrique [notifications de non-remise aux messages électroniques dans Exchange Online](https://docs.microsoft.com/Exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/non-delivery-reports-in-exchange-online).
 
 où  _IP address_ est l'adresse IP de l'ordinateur sur lequel s'exécute le serveur de messagerie.
 
@@ -47,7 +47,7 @@ où  _IP address_ est l'adresse IP de l'ordinateur sur lequel s'exécute le serv
 
 3. Cliquez sur **Envoyer**.
 
-    Le portail envoie un courrier électronique à l'adresse de messagerie que vous indiquez. Le message électronique se présente comme suit : ![capture d’écran du courrier électronique reçu lorsque vous envoyez une demande via le portail supprimer de la liste](../../media/bf13e4f7-f68c-4e46-baa7-b6ab4cfc13f3.png)
+    Le portail envoie un courrier électronique à l'adresse de messagerie que vous indiquez. Le message électronique se présente comme suit : ![ capture d’écran du courrier électronique reçu lorsque vous envoyez une demande via le portail supprimer de la liste](../../media/bf13e4f7-f68c-4e46-baa7-b6ab4cfc13f3.png)
 
 4. Cliquez sur le lien de confirmation dans le courrier électronique envoyé par le portail de suppression de la liste.
 
@@ -60,4 +60,4 @@ où  _IP address_ est l'adresse IP de l'ordinateur sur lequel s'exécute le serv
     > [!NOTE]
     > Cette opération peut prendre jusqu’à 24 heures ou les résultats peuvent varier considérablement avant la suppression des restrictions.
 
-Consultez la rubrique [créer des listes d’expéditeurs approuvés dans office 365](create-safe-sender-lists-in-office-365.md) et protection contre le [courrier indésirable sortant dans Office 365](outbound-spam-controls.md) pour empêcher la liste de blocage sur IP.
+Consultez la rubrique [créer des listes d’expéditeurs approuvés dans EOP](create-safe-sender-lists-in-office-365.md) et la protection contre le [courrier indésirable sortant dans EOP](outbound-spam-controls.md) pour empêcher IP d’être en liste de blocage.

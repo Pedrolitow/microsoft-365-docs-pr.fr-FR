@@ -14,19 +14,19 @@ ms.assetid: 4650fec1-4ee3-4659-abbc-bf091718cb26
 ms.collection:
 - M365-security-compliance
 description: Découvrez comment installer et utiliser le complément Microsoft Junk Email Reporting pour signaler les messages de courrier indésirable, de courrier indésirable et de hameçonnage à Microsoft.
-ms.openlocfilehash: be087a15071114b2d1ec564cbb118dcd85e32429
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 5c0b802bea89a0f0f62952261bf0d2864842024f
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43638499"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208826"
 ---
-# <a name="install-and-use-the-junk-email-reporting-add-in-for-microsoft-outlook-in-office-365"></a>Installer et utiliser le complément de création de rapports de courrier indésirable pour Microsoft Outlook dans Office 365
+# <a name="install-and-use-the-junk-email-reporting-add-in-for-microsoft-outlook"></a>Installer et utiliser le complément de création de rapports de courrier indésirable pour Microsoft Outlook
 
 > [!NOTE]
-> Si vous n’utilisez pas actuellement le complément de création de rapports de courrier indésirable, nous vous recommandons d’utiliser le [complément de rapport de message](enable-the-report-message-add-in.md) .
+> Si vous n’utilisez pas actuellement le complément de création de rapports de courrier indésirable, nous vous recommandons d’utiliser le [complément de rapport de message](enable-the-report-message-add-in.md) . Pour plus d’informations, voir [Signaler des messages et des fichiers à Microsoft](report-junk-email-messages-to-microsoft.md).
 
-Le complément de création de rapports de courrier indésirable pour Microsoft Outlook permet aux utilisateurs d’envoyer des faux positifs (courrier marqué comme courrier indésirable), des faux négatifs (courrier incorrect autorisé) et des messages de hameçonnage vers Exchange Online Protection (EOP). Si votre organisation n’utilise pas EOP, votre envoi de rapports de courrier indésirable n’affectera pas le filtrage du courrier indésirable.
+Le complément de création de rapports de courrier indésirable pour Microsoft Outlook permet aux utilisateurs de soumettre des faux positifs (courrier électronique marqué comme courrier indésirable), des faux négatifs (courrier incorrect autorisé) et des messages de hameçonnage à Microsoft. Si votre organisation n’utilise pas Exchange Online Protection (par exemple, les services de messagerie ou Exchange locaux autres qu’Exchange Online), votre envoi de rapports de courrier indésirable n’affecte pas le filtrage du courrier indésirable.
 
 Cette rubrique explique comment installer et utiliser le complément de création de rapports de courrier indésirable.
 
@@ -39,7 +39,7 @@ Cette rubrique explique comment installer et utiliser le complément de créatio
   - Outlook 2013 ou une version ultérieure
   - Outlook inclus avec les applications Microsoft 365 pour les entreprises
 
-- Pour plus d’informations sur la création de rapports de messages à Microsoft, consultez la rubrique [signaler des messages et des fichiers à Microsoft dans Office 365](report-junk-email-messages-to-microsoft.md).
+- Pour plus d’informations sur la création de rapports de messages à Microsoft, consultez la rubrique [signaler des messages et des fichiers à Microsoft](report-junk-email-messages-to-microsoft.md).
 
 ## <a name="use-the-junk-email-reporting-add-in-to-report-spam-and-phishing-messages"></a>Utiliser le complément de création de rapports de courrier indésirable pour signaler les messages de courrier indésirable et de hameçonnage
 
@@ -197,7 +197,7 @@ Pour vérifier que vous avez correctement installé le complément de création 
 
 Une fois que vous avez fermé Outlook, utilisez l’une des procédures suivantes pour désinstaller le complément de création de rapports de courrier indésirable :
 
-- **Panneau de configuration**: Appuyez sur la touche Windows + R. Dans la boîte de dialogue **exécuter** qui s' `control appwiz.cpl` ouvre, saisissez puis cliquez sur **OK**.
+- **Panneau de configuration**: Appuyez sur la touche Windows + R. Dans la boîte de dialogue **exécuter** qui s’ouvre, saisissez `control appwiz.cpl` puis cliquez sur **OK**.
 
   Recherchez et sélectionnez **complément Microsoft Junk Email Reporting** dans la liste, puis cliquez sur **désinstaller**.
 
@@ -209,7 +209,7 @@ Une fois que vous avez fermé Outlook, utilisez l’une des procédures suivante
 
   Dans la boîte de dialogue qui s’affiche, sélectionnez **supprimer le complément Microsoft Junk Email Reporting pour Outlook** , puis cliquez sur **suivant**.
 
-- **Mode silencieux**: recherchez ou téléchargez le fichier. msi approprié. Dans une fenêtre d’invite de commandes \<,\> remplacez PathToFile par l’emplacement du fichier. msi et exécutez l’une des commandes suivantes :
+- **Mode silencieux**: recherchez ou téléchargez le fichier. msi approprié. Dans une fenêtre d’invite de commandes, remplacez \< PathToFile \> par l’emplacement du fichier. msi et exécutez l’une des commandes suivantes :
 
   - **32-bit**:
 
@@ -288,7 +288,7 @@ Pour les autres méthodes que vous pouvez utiliser pour envoyer des messages à 
 
 #### <a name="problem-users-selected-not-to-receive-a-confirmation-prompt-when-they-report-messages-and-now-they-want-the-prompt-back"></a>Problème : les utilisateurs sélectionnés ne reçoivent pas d’invite de confirmation lorsqu’ils signalent des messages, et souhaitent maintenant que l’invite se redirige.
 
-1. Créez la `ConfirmReportJunk`clé de Registre wih la valeur « true » :
+1. Créez la `ConfirmReportJunk` clé de Registre wih la valeur « true » :
 
    ```text
    Windows Registry Editor Version 5.00

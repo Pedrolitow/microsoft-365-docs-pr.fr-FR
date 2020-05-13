@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: fb185239ee670c9fa4bd4add5bd36140db2f7706
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 3cef513d6b89634e16e0a0b4516f403cf1a794af
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42632855"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208396"
 ---
 # <a name="investigate-and-remediate-communication-compliance-alerts"></a>Examiner et corriger les alertes de conformité des communications
 
@@ -33,14 +33,14 @@ Une fois que vous avez configuré vos stratégies de conformité de communicatio
 
 La première étape pour examiner les problèmes détectés par vos stratégies consiste à passer en revue les alertes générées dans le centre de conformité Microsoft 365. Il existe plusieurs domaines dans le centre de conformité pour vous aider à examiner rapidement les alertes, en fonction de la manière dont vous préférez afficher le regroupement des alertes :
 
-- **Page d’accueil de la communication**: lorsque vous vous [https://compliance.microsoft.com](https://compliance.microsoft.com) connectez à à l’aide des informations d’identification d’un compte d’administrateur de votre organisation Microsoft 365, sélectionnez **communication Compliance** > **Overview** pour afficher la page d’accueil de la communication. Vous verrez ici :
+- **Page d’accueil de la communication**: lorsque vous vous connectez à à [https://compliance.microsoft.com](https://compliance.microsoft.com) l’aide des informations d’identification d’un compte d’administrateur de votre organisation Microsoft 365, sélectionnez **communication Compliance**  >  **Overview** pour afficher la page d’accueil de la communication. Vous verrez ici :
     - Alertes nécessitant une révision dont la gravité est élevée à faible. Sélectionnez une alerte pour lancer la page Détails de l’alerte et démarrer les actions de correction.
     - Les stratégies récentes correspondent à celles indiquées par nom de stratégie.
     - Éléments résolus affichés par nom de stratégie.
     - Escalades indiquées par nom de stratégie.
     - Utilisateurs avec le plus grand nombre de correspondances de stratégie, classés par ordre décroissant de correspondance.
-- **Onglet Alertes**: accédez à **Communication compliance** > **alertes** de conformité des communications pour afficher les alertes groupées en fonction de la stratégie de conformité de communication correspondante. Cet affichage vous permet de voir rapidement les stratégies de conformité des communications qui génèrent le plus d’alertes classées par gravité.  Pour démarrer les actions de correction, développez une stratégie pour sélectionner une alerte spécifique et pour lancer la page Détails de l’alerte.
-- **Onglet stratégies**: accédez à **Communication compliance** > **stratégies** de conformité des communications pour afficher les stratégies de conformité de communication configurées pour votre organisation Microsoft 365. Chaque stratégie indiquée inclut le nombre d’alertes qui doivent être réexaminées. La sélection d’une stratégie affiche toutes les alertes en attente concernant la stratégie, la sélection d’une alerte spécifique pour le lancement de la page de détails de stratégie et le démarrage des actions de correction.
+- **Onglet Alertes**: accédez à **Communication compliance**  >  **alertes** de conformité des communications pour afficher les 30 derniers jours des alertes regroupées par correspondances de stratégie. Cet affichage vous permet de voir rapidement les stratégies de conformité des communications qui génèrent le plus d’alertes classées par gravité.  Pour démarrer les actions de correction, développez une stratégie pour sélectionner une alerte spécifique et pour lancer la page Détails de l’alerte.
+- **Onglet stratégies**: accédez à **Communication compliance**  >  **stratégies** de conformité des communications pour afficher les stratégies de conformité de communication configurées pour votre organisation Microsoft 365. Chaque stratégie indiquée inclut le nombre d’alertes qui doivent être réexaminées. La sélection d’une stratégie affiche toutes les alertes en attente concernant la stratégie, la sélection d’une alerte spécifique pour le lancement de la page de détails de stratégie et le démarrage des actions de correction.
 
 ### <a name="using-filters"></a>Utilisation de filtres
 
@@ -50,7 +50,7 @@ Pour obtenir la liste complète des filtres et des détails sur les champs, voir
 
 #### <a name="to-configure-a-filter"></a>Pour configurer un filtre
 
-1. Connectez- [https://compliance.microsoft.com](https://compliance.microsoft.com) vous à l’aide des informations d’identification d’un compte d’administrateur dans votre organisation Microsoft 365.
+1. Connectez-vous [https://compliance.microsoft.com](https://compliance.microsoft.com) à l’aide des informations d’identification d’un compte d’administrateur dans votre organisation Microsoft 365.
 
 2. Dans le centre de conformité Microsoft 365, accédez à **conformité des communications**.
 
@@ -74,7 +74,7 @@ Les stratégies de conformité des communications analysent et regroupent automa
 
 #### <a name="to-remediate-duplicates"></a>Pour corriger les doublons
 
-1. Connectez- [https://compliance.microsoft.com](https://compliance.microsoft.com) vous à l’aide des informations d’identification d’un compte d’administrateur dans votre organisation Microsoft 365.
+1. Connectez-vous [https://compliance.microsoft.com](https://compliance.microsoft.com) à l’aide des informations d’identification d’un compte d’administrateur dans votre organisation Microsoft 365.
 
 2. Dans le centre de conformité Microsoft 365, accédez à **conformité des communications**.
 
