@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 599b8048-1056-457b-aae4-c063138fd319
 description: Le tableau suivant fournit la liste des fonctionnalités disponibles dans le service de filtrage de courrier électronique hébergé Exchange Online Protection (EOP).
-ms.openlocfilehash: d3b7638a1ff060d1c1760f62e487a7cd649a9131
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: fc9a13ce7a2fc8782ed260ce0ce64aec456a4d51
+ms.sourcegitcommit: 8e655c6cbb91bfb97efda9a99c39fac33eaa974a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44209462"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44213423"
 ---
 # <a name="eop-features"></a>Fonctionnalités EOP
 
@@ -78,7 +78,7 @@ Le tableau suivant fournit la liste des fonctionnalités disponibles dans le ser
 |Administration web|Les administrateurs peuvent gérer le service dans le centre d’administration Exchange, qui est pris en charge dans 60 langues. Pour plus d’informations, consultez la rubrique [Exchange Admin Center in standalone EOP](exchange-admin-center-in-exchange-online-protection-eop.md).|
 |Synchronisation d'annuaires|La synchronisation d'annuaires est disponible via l' Outil de synchronisation Windows Azure Active Directory. Pour plus d'informations, voir « Utilisation de la synchronisation d'annuaires pour gérer les utilisateurs de messagerie » dans [Gestion des utilisateurs de messagerie dans EOP](manage-mail-users-in-eop.md).  |
 |Blocage du périmètre basé sur l'annuaire (DBEB)|La fonctionnalité DBEB vous permet de rejeter les messages pour les destinataires non valides sur le périmètre du réseau de service. DBEB permet aux administrateurs d’ajouter des destinataires à extension messagerie à Microsoft 365 et de bloquer tous les messages envoyés à des adresses de messagerie qui ne sont pas présentes dans Microsoft 365. Pour plus d’informations sur la configuration de DBEB, consultez la rubrique [use Directory based Edge Blocking to Reject messages sent to Invalid Recipients](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-directory-based-edge-blocking).|
-|PowerShell|La fonctionnalité EOP complète est disponible dans Exchange Online Protection PowerShell. Pour plus d’informations, consultez la rubrique [Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/exchange-online-protection-powershell).|
+|PowerShell|La fonctionnalité EOP complète est disponible dans la version autonome d’EOP PowerShell. Pour plus d’informations, consultez la rubrique [Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/exchange-online-protection-powershell).|
 |**Création de rapports et journalisation**||
 |Suivi des messages|Les administrateurs peuvent suivre les messages électroniques quand ils sont acheminés via le service. Vous pouvez déterminer si un message électronique ciblé a été reçu, rejeté, différé ou remis par le service. Vous pouvez ainsi répondre efficacement aux questions de vos utilisateurs, résoudre les problèmes de flux de messagerie et valider les modifications de stratégie, tout en réduisant la nécessité de demander de l'aide à l'assistance technique. Pour en savoir plus, voir [Suivi de message dans le Centre de sécurité et de conformité](message-trace-scc.md).|
 |Rapports web|Les rapports de protection de la messagerie dans le centre de sécurité & conformité fournissent des données de messagerie. Par exemple, vous pouvez surveiller la proportion de courrier indésirable et de programmes malveillants détectés ou la fréquence de mise en correspondance des règles de flux de messagerie. Avec ces rapports interactifs, vous pouvez afficher rapidement un rapport des données de synthèse et accéder à des informations plus détaillées sur des messages individuels remontant jusqu'à 90 jours. Pour plus d’informations, voir [utiliser les rapports de protection de messagerie pour afficher les données sur les programmes malveillants, le courrier indésirable et les détections de règles](https://docs.microsoft.com/exchange/monitoring/use-mail-protection-reports).|

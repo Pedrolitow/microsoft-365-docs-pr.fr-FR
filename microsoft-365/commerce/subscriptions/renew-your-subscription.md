@@ -1,5 +1,5 @@
 ---
-title: Renouveler Microsoft 365 pour les entreprises
+title: Renouveler Microsoft 365 pour les entreprises
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -8,7 +8,7 @@ manager: mnirkhe
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+localization_priority: Priority
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -23,52 +23,52 @@ search.appverid:
 - BEA160
 - GEA150
 ms.assetid: 8d83b530-f4ca-47f6-a666-e5791cbacc7e
-description: 'Découvrez comment renouveler votre abonnement Microsoft 365 pour les entreprises à l’aide d’une clé de produit et activer ou désactiver la facturation périodique. '
-ms.openlocfilehash: 7bcd0fcc9d3984589ff7c05ec2c1b95afad22c29
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
-ms.translationtype: MT
+description: 'Découvrez comment renouveler votre abonnement Microsoft 365 pour les entreprises à l’aide d’une clé de produit et activer ou désactiver la facturation périodique. '
+ms.openlocfilehash: 992a3c2cb100f9153cae5cbd681f6f789a361935
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44141077"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208427"
 ---
-# <a name="renew-microsoft-365-for-business"></a>Renouveler Microsoft 365 pour les entreprises
+# <a name="renew-microsoft-365-for-business"></a>Renouveler Microsoft 365 pour les entreprises
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> Le centre d’administration change. Si votre expérience ne correspond pas aux détails présentés ici, reportez-vous [à la rubrique à propos du nouveau centre d’administration Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> Le centre d’administration change. Si votre expérience ne correspond pas aux informations présentées ici, voir [À propos du nouveau centre d’administration Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
 
 ::: moniker-end
 
-Cet article s’applique aux abonnements Microsoft 365 les plus payants.
+Cet article s'applique uniquement à la plupart des abonnements Microsoft 365 pour les entreprises payants.
   
-Pour renouveler votre abonnement à l’aide d’une clé de produit achetée auprès d’un détaillant ou d’un partenaire Microsoft, voir [Rechercher et entrer votre clé de produit](../enter-your-product-key.md).
+Pour renouveler un abonnement avec une clé de produit prépayée achetée auprès d’un magasin ou d’un partenaire Microsoft, voir [Rechercher et entrer votre clé de produit](../enter-your-product-key.md).
 
 > [!NOTE]
-> Le paiement par compte bancaire n’est pas disponible dans certains pays ou certaines régions.
+> Le règlement par compte bancaire n’est pas disponible dans certains pays ou régions.
   
 ## <a name="turn-recurring-billing-off-or-on"></a>Activer ou désactiver la facturation périodique
 
-Si vous payez par carte de crédit ou compte bancaire, la **facturation périodique** est activée par défaut. Lorsque la **facturation périodique** est activée, votre abonnement reste facturé chaque année le jour de votre abonnement. Vous pouvez le désactiver ou le réactiver dans le centre d’administration si votre abonnement est actif.
+Si vous payez par carte ou virement bancaire, **Facturation périodique** est activée par défaut. Lorsque **Facturation périodique** est activée, votre abonnement sera toujours facturé chaque année le jour de votre abonnement. Vous pouvez le désactiver ou le réactiver dans le Centre d'administration si votre abonnement a l'état Actif.
   
-Si vous avez prépayé votre abonnement avec une clé de produit, votre abonnement arrivera à expiration à la fin de cette période. Vous pouvez activer la **facturation périodique** et fournir des informations sur la carte de crédit ou le compte bancaire de sorte que votre abonnement reste facturé tous les ans le jour de l’abonnement. Vous avez également la possibilité de payer tous les mois, ou de payer pour l’ensemble de l’année en amont. Votre carte ou votre compte bancaire ne sera pas débité avant l'expiration de votre période d'abonnement initiale.
+Si vous avez prépayé votre abonnement avec une clé de produit, votre abonnement arrivera à expiration à la fin de cette période. Vous pouvez activer **Facturation périodique** et fournir des informations de carte ou de compte bancaire afin que votre abonnement continue d'être facturé chaque année à la date anniversaire de votre inscription. Vous avez également la possibilité de payer mensuellement ou de payer pour l’année entière. Votre carte ou votre compte bancaire ne sera pas débité avant l’expiration de votre période d’abonnement initiale.
 
 ::: moniker range="o365-worldwide"
 
-1. Dans le centre d’administration, accédez à la page **facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">de vos produits</a> .
+1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produits</a>.
 
 2. Sélectionnez l’abonnement pour lequel gérer la facturation récurrente.
 
-3. Sous **facturation**, en regard **de la**case à cocher **refaire,** sélectionnez **modifier**.
+3. Sous **Facturation**, en regard de **Renouvellement automatique le** ou **Expiration le**, sélectionnez **Modifier**.
 
-4. Dans le volet **paramètres de facturation périodique** , sélectionnez **Désactiver** pour le désactiver. Si la facturation périodique est déjà désactivée, sélectionnez une fois par **mois** ou **une fois** pour l’activer.
+4. Dans le volet **Paramètres de facturation périodique**, sélectionnez **Désactiver** pour la désactiver. Si la facturation périodique est déjà désactivée, sélectionnez **Mensuelle** ou **Une fois** pour l’activer.
 
-5. Sélectionnez **soumettre la modification**.
+5. Sélectionnez **Envoyer la modification**.
 
     > [!NOTE]
-    > - Vous ne pouvez modifier le paramètre de **facturation périodique** que pour les abonnements actifs. Si votre abonnement a déjà expiré ou est désactivé, vous devez le [réactiver](reactivate-your-subscription.md) pour pouvoir activer ou désactiver la **facturation périodique** .
-    > - Lorsque la **facturation périodique** est désactivée, l’abonnement n’est pas annulé immédiatement. Il reste actif jusqu'à son expiration. Vous pouvez afficher la date d’expiration dans la section **facturation** des détails de l’abonnement sur la page **vos produits** .
-    > - Pour savoir comment annuler l’abonnement immédiatement, voir [annuler mon abonnement](cancel-your-subscription.md).
+    > - Vous ne pouvez modifier le paramètre de **Facturation périodique** que pour les abonnements actifs. Si votre abonnement a déjà expiré ou s’il est désactivé, vous devez [le réactiver](reactivate-your-subscription.md) avant de pouvoir activer ou désactiver le **Facturation périodique**.
+    > - Lorsque l **Facturation périodique** est désactivé, l’abonnement n’est pas annulé immédiatement. Il reste actif jusqu’à son expiration. Vous pouvez afficher la date d’expiration dans la section **Facturation** des détails de l’abonnement sur la page **Produits**.
+    > - Pour découvrir comment annuler l’abonnement directement, voir [Annuler votre abonnement](cancel-your-subscription.md).
 
 ::: moniker-end
 
@@ -78,16 +78,16 @@ Si vous avez prépayé votre abonnement avec une clé de produit, votre abonneme
 
 2. Sélectionnez l’abonnement pour lequel gérer la facturation récurrente.
 
-3. **Pour activer**la **facturation périodique**, activez le bouton bascule.
+3. Pour activer **Facturation périodique**, basculez le bouton sur **Activer**.
 
-    ![Fermeture d’une carte d’abonnement pour laquelle la facturation périodique est activée.](../../media/984464dc-6b63-4b24-84e1-67f6c4b1d48e.png)
+    ![Gros plan d’une carte d’abonnement pour laquelle la facturation périodique est activée.](../../media/984464dc-6b63-4b24-84e1-67f6c4b1d48e.png)
   
-    Vous pouvez désactiver la **facturation périodique** en **désactivant**le bouton bascule.
+    Vous pouvez désactiver la **Facturation périodique** en basculant le bouton sur **Désactiver**.
 
     > [!NOTE]
-    > - Vous ne pouvez modifier le paramètre de **facturation périodique** que pour les abonnements actifs. Si votre abonnement a déjà expiré ou est désactivé, vous devez le [réactiver](reactivate-your-subscription.md) pour pouvoir activer ou désactiver la **facturation périodique** .
-    > - Lorsque la **facturation périodique** est désactivée, l’abonnement n’est pas annulé immédiatement. Il reste actif jusqu'à son expiration. Vous pouvez afficher la date d’expiration sur la carte d’abonnement.
-    > - Pour savoir comment annuler l’abonnement immédiatement, voir [annuler mon abonnement](cancel-your-subscription.md).
+    > - Vous ne pouvez modifier le paramètre de **Facturation périodique** que pour les abonnements actifs. Si votre abonnement a déjà expiré ou s’il est désactivé, vous devez [le réactiver](reactivate-your-subscription.md) avant de pouvoir activer ou désactiver le **Facturation périodique**.
+    > - Lorsque l **Facturation périodique** est désactivé, l’abonnement n’est pas annulé immédiatement. Il reste actif jusqu’à son expiration. Vous pouvez afficher la date d’expiration sur la carte d’abonnement
+    > - Pour découvrir comment annuler l’abonnement directement, voir [Annuler votre abonnement](cancel-your-subscription.md).
 
 ::: moniker-end
 
@@ -97,16 +97,16 @@ Si vous avez prépayé votre abonnement avec une clé de produit, votre abonneme
 
 2. Sélectionnez l’abonnement pour lequel gérer la facturation récurrente.
 
-3. **Pour activer**la **facturation périodique**, activez le bouton bascule.
+3. Pour activer **Facturation périodique**, basculez le bouton sur **Activer**.
 
-    ![Fermeture d’une carte d’abonnement pour laquelle la facturation périodique est activée.](../../media/984464dc-6b63-4b24-84e1-67f6c4b1d48e.png)
+    ![Gros plan d’une carte d’abonnement pour laquelle la facturation périodique est activée.](../../media/984464dc-6b63-4b24-84e1-67f6c4b1d48e.png)
   
-    Vous pouvez désactiver la **facturation périodique** en **désactivant**le bouton bascule.
+    Vous pouvez désactiver la **Facturation périodique** en basculant le bouton sur **Désactiver**.
 
     > [!NOTE]
-    > - Vous ne pouvez modifier le paramètre de **facturation périodique** que pour les abonnements actifs. Si votre abonnement a déjà expiré ou est désactivé, vous devez le [réactiver](reactivate-your-subscription.md) pour pouvoir activer ou désactiver la **facturation périodique** .
-    > - Lorsque la **facturation périodique** est désactivée, l’abonnement n’est pas annulé immédiatement. Il reste actif jusqu'à son expiration. Vous pouvez afficher la date d’expiration sur la carte d’abonnement.
-    > - Pour savoir comment annuler l’abonnement immédiatement, voir [annuler mon abonnement](cancel-your-subscription.md).
+    > - Vous ne pouvez modifier le paramètre de **Facturation périodique** que pour les abonnements actifs. Si votre abonnement a déjà expiré ou s’il est désactivé, vous devez [le réactiver](reactivate-your-subscription.md) avant de pouvoir activer ou désactiver le **Facturation périodique**.
+    > - Lorsque l **Facturation périodique** est désactivé, l’abonnement n’est pas annulé immédiatement. Il reste actif jusqu’à son expiration. Vous pouvez afficher la date d’expiration sur la carte d’abonnement.
+    > - Pour découvrir comment annuler l’abonnement directement, voir [Annuler votre abonnement](cancel-your-subscription.md).
 
 ::: moniker-end
 
@@ -114,8 +114,8 @@ Si vous avez prépayé votre abonnement avec une clé de produit, votre abonneme
 
 [Réactiver votre abonnement](reactivate-your-subscription.md)
   
-[Qu'arrive-t-il à mes données et à mon accès à la fin de mon abonnement ?](what-if-my-subscription-expires.md)
+[Qu’arrive-t-il à mes données et à mon accès à la fin de mon abonnement ?](what-if-my-subscription-expires.md)
 
-[Entrer votre clé de produit](../enter-your-product-key.md)
+[Entrez votre clé de produit](../enter-your-product-key.md)
   
-[Acheter votre version d’évaluation de Microsoft 365 pour les entreprises](../buy-a-subscription-from-your-free-trial.md)
+[Acheter votre version d’évaluation de Microsoft 365 pour les entreprises](../buy-a-subscription-from-your-free-trial.md)

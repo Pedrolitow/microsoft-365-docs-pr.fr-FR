@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Les administrateurs peuvent apprendre à créer, modifier et supprimer les stratégies anti-hameçonnage disponibles dans les organisations Exchange Online Protection (EOP) avec ou sans boîte aux lettres Exchange Online.
-ms.openlocfilehash: 076c8aa8a0111643ab0f43bcd5f6ff21f82277b2
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 5c2e036c075072056e7783ca4dc5aeb1289d827a
+ms.sourcegitcommit: 8e655c6cbb91bfb97efda9a99c39fac33eaa974a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208898"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44213387"
 ---
 # <a name="configure-anti-phishing-policies-in-eop"></a>Configurer des stratégies anti-hameçonnage dans EOP
 
@@ -31,7 +31,7 @@ Les organisations disposant d’une boîte aux lettres Exchange Online peuvent c
 
 Pour plus d’informations sur la création et la modification des stratégies anti-hameçonnage plus avancées disponibles dans Office 365 Advanced Threat Protection (Office 365 ATP), voir [configure ATP anti-phishing Policies](configure-atp-anti-phishing-policies.md).
 
-## <a name="anti-phishing-policies-in-the-security--compliance-center-vs-exchange-online-powershell"></a>Stratégies de détection d’hameçonnage dans le centre de sécurité & Compliance Center vs Exchange Online PowerShell
+## <a name="anti-phishing-policies-in-the-security--compliance-center-vs-powershell"></a>Stratégies de détection d’hameçonnage dans le centre de sécurité & Compliance Center et PowerShell
 
 Les éléments de base d’une stratégie anti-hameçonnage sont les suivants :
 
