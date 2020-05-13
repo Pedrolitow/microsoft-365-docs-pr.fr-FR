@@ -18,12 +18,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 775a4e9e-3135-4a48-b32f-bbdd9f2bd0aa
 description: Concevoir des sites d’équipe SharePoint Online isolés, notamment déterminer les niveaux d’autorisation, attribuer des autorisations à des utilisateurs avec des groupes d’accès et des groupes Azure AD imbriqués.
-ms.openlocfilehash: 4663a0b9710fc05d0b063a3100d3b5ac223a2161
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 821e15a05bc80e3795f9e18d4457416baf7145b7
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034839"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44209510"
 ---
 # <a name="design-an-isolated-sharepoint-online-team-site"></a>Conception d’un site d’équipe SharePoint Online isolé
 
@@ -59,25 +59,25 @@ Voici les groupes et les niveaux d’autorisation SharePoint par défaut.
   
 ## <a name="phase-2-assign-permissions-to-users-with-access-groups"></a>Phase 2 : attribution des autorisations aux utilisateurs membres de groupes d’accès
 
-Vous pouvez attribuer des autorisations à des utilisateurs en ajoutant leur compte d’utilisateur, ou un groupe Microsoft 365 ou Azure AD dont le compte d’utilisateur est membre, aux groupes SharePoint. Une fois ajoutés, les comptes d’utilisateur, directement ou indirectement via l’appartenance à un groupe Microsoft 365 ou Azure AD, se voient attribuer le niveau d’autorisation associé au groupe SharePoint.
+Vous pouvez attribuer des autorisations à des utilisateurs en ajoutant leur compte d’utilisateur ou un groupe Microsoft 365 ou Azure AD dont le compte d’utilisateur est membre, aux groupes SharePoint. Une fois ajoutés, les comptes d’utilisateur, directement ou indirectement via l’appartenance à un groupe Microsoft 365 ou Azure AD, se voient attribuer le niveau d’autorisation associé au groupe SharePoint.
   
 En prenant l’exemple des groupes SharePoint par défaut :
   
-- Les membres du ** \<nom du site>** groupe SharePoint membres, qui peut inclure à la fois des comptes d’utilisateur et des groupes, se voient attribuer le niveau d’autorisation **modifier**
+- Les membres du ** \< nom du site>** groupe SharePoint membres, qui peut inclure à la fois des comptes d’utilisateur et des groupes, se voient attribuer le niveau d’autorisation **modifier**
     
-- Les membres du ** \<nom du site>** groupe SharePoint visiteurs, qui peut inclure à la fois des comptes d’utilisateur et des groupes, se voient attribuer le niveau d’autorisation **lecture**
+- Les membres du ** \< nom du site>** groupe SharePoint visiteurs, qui peut inclure à la fois des comptes d’utilisateur et des groupes, se voient attribuer le niveau d’autorisation **lecture**
     
-- Les membres du ** \<nom du site>** groupe SharePoint propriétaires, qui peut inclure à la fois des comptes d’utilisateur et des groupes, se voient attribuer le niveau d’autorisation **contrôle total** .
+- Les membres du ** \< nom du site>** groupe SharePoint propriétaires, qui peut inclure à la fois des comptes d’utilisateur et des groupes, se voient attribuer le niveau d’autorisation **contrôle total** .
     
  **Conseil :** même si vous pouvez gérer les autorisations dans chaque compte d’utilisateur, nous vous recommandons plutôt d’utiliser un seul groupe Azure AD, appelé groupe d’accès. Cela simplifie la gestion des autorisations via l’appartenance au groupe d’accès, plutôt que via la gestion de la liste des comptes d’utilisateur pour chaque groupe SharePoint.
   
-Les groupes Azure AD pour Microsoft 365 sont différents des groupes Microsoft 365. Les groupes Azure AD apparaissent dans le centre d’administration 365 de Microsoft, dont le **type** est défini sur **sécurité** et n’ont pas d’adresse de messagerie. Les groupes Azure AD peuvent être gérés dans les éléments suivants :
+Les groupes Azure AD pour Microsoft 365 sont différents groupes Microsoft 365. Les groupes Azure AD apparaissent dans le centre d’administration 365 de Microsoft, dont le **type** est défini sur **sécurité** et n’ont pas d’adresse de messagerie. Les groupes Azure AD peuvent être gérés dans les éléments suivants :
   
 - Services de domaine Active Directory (AD DS)
     
     Il s’agit de groupes qui ont été créés dans votre infrastructure AD DS sur site et synchronisés avec votre abonnement Microsoft 365. Dans le centre d’administration 365 de Microsoft, ces groupes ont l' **État** **synchronisé avec Active Directory**.
     
-- Office 365
+- Office 365
     
     Il s’agit de groupes qui ont été créés à l’aide du centre d’administration Microsoft 365, du portail Azure ou de Microsoft PowerShell. Dans le centre d’administration 365 de Microsoft, ces groupes ont l' **État** **Cloud**.
     
@@ -99,9 +99,9 @@ Voici les groupes SharePoint par défaut configurés pour utiliser les groupes d
   
 Lorsque vous concevez les trois groupes d’accès, rappelez-vous de ceci :
   
-- Le ** \<nom du site>** groupe d’accès administrateurs ne doit contenir que quelques membres, ce qui correspond à un petit nombre d’administrateurs SharePoint Online qui gèrent le site d’équipe.
+- Le ** \< nom du site>** groupe d’accès administrateurs ne doit contenir que quelques membres, ce qui correspond à un petit nombre d’administrateurs SharePoint Online qui gèrent le site d’équipe.
     
-- La plupart des membres de votre site figurent dans le ** \<nom du site> les membres** ou ** \<le nom du site> les utilisateurs** accèdent aux groupes. Étant donné que les membres du site dans le groupe d’accès ** \<nom du site> membres** ont la possibilité de supprimer ou de modifier les ressources du site, il est préférable de prendre en compte son appartenance. En cas de doute, ajoutez le membre du site au ** \<nom du site>** groupe d’accès observateurs.
+- La plupart des membres de votre site figurent dans le ** \< nom du site> les membres** ou le nom du ** \< site> les utilisateurs** accèdent aux groupes. Étant donné que les membres du site dans le groupe d’accès ** \< nom du site> membres** ont la possibilité de supprimer ou de modifier les ressources du site, il est préférable de prendre en compte son appartenance. En cas de doute, ajoutez le membre du site au ** \< nom du site>** groupe d’accès observateurs.
     
 Voici un exemple des groupes SharePoint et des groupes d’accès pour un site isolé nommé ProjectX.
   

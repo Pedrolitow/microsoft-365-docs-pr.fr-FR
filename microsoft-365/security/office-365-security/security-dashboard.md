@@ -16,16 +16,16 @@ ms.assetid: fe0b9b8f-faa9-44ff-8095-4d1b2f507b74
 ms.collection:
 - M365-security-compliance
 description: Utilisez le nouveau tableau de bord de sécurité pour consulter l’état de protection contre les menaces d’Office 365, et afficher et agir sur les alertes de sécurité.
-ms.openlocfilehash: 3b6d754505d0e23f1080520e66061b8f6fef523e
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: d750c0055a9a55f573e4b920166284f6d95ae70f
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632516"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208035"
 ---
 # <a name="security-dashboard"></a>Tableau de bord de sécurité
 
-## <a name="overview"></a>Vue d’ensemble
+## <a name="overview"></a>Vue d'ensemble
 
 Le [Centre de sécurité & conformité](../../compliance/go-to-the-securitycompliance-center.md) permet à votre organisation de gérer la protection et la conformité des données. En supposant que vous disposez des autorisations nécessaires, le tableau de bord de sécurité vous permet d’examiner votre statut de protection contre les menaces, ainsi que d’afficher et d’agir sur les alertes de sécurité.
 
@@ -35,7 +35,7 @@ Regardez la vidéo pour obtenir une vue d’ensemble, puis lisez cet article pou
 
 En fonction de l’abonnement de votre organisation, le tableau de bord de sécurité inclut plusieurs widgets, tels que le résumé de la gestion des menaces, l’état de protection contre les menaces, des détections de menaces globales hebdomadaires, des programmes malveillants, etc., comme décrit dans les sections suivantes.
 
-Pour afficher le tableau de bord sécurité, dans le [Centre de sécurité & conformité](../../compliance/go-to-the-securitycompliance-center.md), accédez au **tableau de bord**gestion \> des **menaces** .
+Pour afficher le tableau de bord sécurité, dans le [Centre de sécurité & conformité](../../compliance/go-to-the-securitycompliance-center.md), accédez au tableau de bord **gestion des menaces** \> **Dashboard**.
 
 > [!NOTE]
 > Vous devez être un administrateur général, un administrateur de sécurité ou un lecteur de sécurité pour afficher le tableau de bord de sécurité. Certains widgets nécessitent des autorisations supplémentaires pour être visualisées. Pour en savoir plus, consultez [la rubrique autorisations dans le centre de sécurité & conformité](permissions-in-the-security-and-compliance-center.md).
@@ -61,7 +61,7 @@ Le widget état de protection contre les menaces indique l’efficacité de la p
 
 ![Widget d’état de protection contre les menaces](../../media/tpswidget.png)
 
-Les détails varient selon que votre abonnement Microsoft 365 inclut ou non [Exchange Online Protection](exchange-online-protection-eop.md) (EoP) avec ou sans [Office 365 Advanced Threat Protection](office-365-atp.md) (ATP).
+Les détails varient selon que votre abonnement Microsoft 365 inclut ou non [Exchange Online Protection](exchange-online-protection-overview.md) (EoP) avec ou sans [Office 365 Advanced Threat Protection](office-365-atp.md) (ATP).
 
 |||
 |---|---|
@@ -82,7 +82,7 @@ Les mesures sont calculées de la manière décrite dans le tableau suivant :
 
 |||
 |---|---|
-|**Liées**|**Mode de calcul**|
+|**Métrique**|**Mode de calcul**|
 |Messages analysés|Nombre de messages électroniques analysés multiplié par le nombre de destinataires|
 |Menaces arrêtées|Nombre de messages électroniques identifiés comme contenant des programmes malveillants multiplié par le nombre de destinataires|
 |Bloqué par [la](office-365-atp.md) protection avancée contre les menaces|Nombre de messages électroniques bloqués par la protection avancée contre les menaces multiplié par le nombre de destinataires|

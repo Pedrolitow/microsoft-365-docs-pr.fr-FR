@@ -15,34 +15,31 @@ search.appverid:
 ms.assetid: 9721b46d-cbea-4121-be51-542395e6fd21
 ms.custom:
 - seo-marvel-apr2020
-description: Découvrez comment les administrateurs peuvent créer une liste d’expéditeurs approuvés dans Microsoft 365 et EOP qui permet aux messages entrants d’ignorer le filtrage du courrier indésirable.
-ms.openlocfilehash: 300ecf8cfdb7436b8eda306a28c237ed8bf19760
-ms.sourcegitcommit: 614666afb104fc97acb4a2ee5577ef63c0de153a
+description: Les administrateurs peuvent en savoir plus sur les options disponibles et préférées pour autoriser les messages entrants dans Exchange Online Protection (EOP).
+ms.openlocfilehash: 3ef05c919a86bc3458cceb2a2bc73522e16e4bb1
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44173415"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44209534"
 ---
-# <a name="create-safe-sender-lists"></a>Créer des listes d’expéditeurs approuvés
+# <a name="create-safe-sender-lists-in-eop"></a>Créer des listes d’expéditeurs approuvés dans EOP
 
 Si vous êtes un client Microsoft 365 avec des boîtes aux lettres dans Exchange Online ou un client Exchange Online Protection (EOP) autonome sans boîte aux lettres Exchange Online, EOP offre plusieurs moyens de s’assurer que les utilisateurs recevront des messages provenant d’expéditeurs approuvés. Ces options incluent les règles de flux de messagerie Exchange (également appelées règles de transport), les expéditeurs approuvés Outlook, la liste d’adresses IP autorisées (filtrage des connexions) et les listes d’expéditeurs autorisés ou les listes de domaines autorisés dans les stratégies anti-courrier indésirable. Collectivement, ces options peuvent être considérées comme des _listes d’expéditeurs approuvés_.
 
 Les listes d’expéditeurs approuvés disponibles sont décrites dans la liste suivante dans l’ordre, de la plus recommandée au moins recommandé :
 
 1. Règles de flux de messagerie
-
 2. Expéditeurs approuvés Outlook
-
 3. Liste d’adresses IP autorisées (filtrage des connexions)
-
 4. Listes d’expéditeurs autorisés ou listes de domaines autorisés (stratégies anti-courrier indésirable)
 
 Les règles de flux de messagerie offrent une flexibilité maximale pour garantir que seuls les messages corrects sont autorisés. Les listes d’expéditeurs autorisés et de domaines autorisés dans les stratégies de blocage du courrier indésirable ne sont pas aussi sécurisées que la liste d’adresses IP autorisées, car le domaine de messagerie de l’expéditeur est facilement falsifié. Toutefois, la liste d’adresses IP autorisées présente également un risque, car les messages provenant de _n’importe quel_ domaine qui est envoyé à partir de cette adresse IP contourneront le filtrage du courrier indésirable.
 
 > [!IMPORTANT]
-> <ul><li>Veillez à contrôler attentivement *les* exceptions de filtrage du courrier indésirable à l’aide des listes des expéditeurs autorisés.</li><li>Bien que vous puissiez utiliser des listes d’expéditeurs approuvés pour vous aider à obtenir des faux positifs (courrier électronique marqué comme courrier indésirable), vous devez envisager d’utiliser des listes d’expéditeurs approuvés comme solution temporaire qui doit être évitée dans la mesure du possible. Nous vous déconseillons de gérer les faux positifs à l’aide de listes d’expéditeurs approuvés, car les exceptions au filtrage du courrier indésirable peuvent ouvrir votre organisation à l’usurpation d’identité et à d’autres attaques. Si vous insistez sur l’utilisation de listes d’expéditeurs approuvés pour gérer les faux positifs, vous devez être vigilant et conserver la rubrique [signaler les messages et les fichiers à Microsoft](report-junk-email-messages-to-microsoft.md) à l’adresse.</li><li>Pour autoriser un domaine à envoyer des courriers électroniques non authentifiés (ignorer la protection contre l’usurpation d’identité) mais ne pas contourner les vérifications anti-courrier indésirable et anti-programme malveillant, vous pouvez l’ajouter à la [liste des expéditeurs approuvés AllowedToSpoof](walkthrough-spoof-intelligence-insight.md)</li><li>EOP et Outlook inspectent les différentes propriétés des messages pour déterminer l’expéditeur du message. Pour plus d’informations, consultez la section [considérations relatives à l’envoi en nombre de messages électroniques](#considerations-for-bulk-email) plus loin dans cette rubrique.</li></ul>
+> • Veillez à contrôler attentivement *les* exceptions de filtrage du courrier indésirable à l’aide des listes d’expéditeurs autorisés. <br/><br/> • Si vous pouvez utiliser des listes d’expéditeurs autorisés pour obtenir des faux positifs (courrier marqué comme courrier indésirable), vous devez envisager d’utiliser des listes d’expéditeurs approuvés comme solution temporaire qui doit être évitée dans la mesure du possible. Nous vous déconseillons de gérer les faux positifs à l’aide de listes d’expéditeurs approuvés, car les exceptions au filtrage du courrier indésirable peuvent ouvrir votre organisation à l’usurpation d’identité et à d’autres attaques. Si vous insistez sur l’utilisation de listes d’expéditeurs approuvés pour gérer les faux positifs, vous devez être vigilant et conserver la rubrique [signaler les messages et les fichiers à Microsoft](report-junk-email-messages-to-microsoft.md) à l’adresse. <br/><br/> • Pour autoriser un domaine à envoyer des courriers électroniques non authentifiés (ignorer la protection contre l’usurpation d’identité) mais ne pas contourner les vérifications contre le courrier indésirable et les programmes malveillants, vous pouvez l’ajouter à la [liste des expéditeurs approuvés AllowedToSpoof](walkthrough-spoof-intelligence-insight.md) <br/><br/> • EOP et Outlook inspecter différentes propriétés de message pour déterminer l’expéditeur du message. Pour plus d’informations, consultez la section [considérations relatives à l’envoi en nombre de messages électroniques](#considerations-for-bulk-email) plus loin dans cette rubrique.
 
-En revanche, vous disposez également de plusieurs options pour bloquer les messages provenant de sources spécifiques en utilisant des _listes d’expéditeurs bloqués_. Pour plus d’informations, voir [Créer des listes d’expéditeurs bloqués dans Office 365](create-block-sender-lists-in-office-365.md).
+En revanche, vous disposez également de plusieurs options pour bloquer les messages provenant de sources spécifiques en utilisant des _listes d’expéditeurs bloqués_. Pour plus d’informations, consultez la rubrique [créer des listes d’expéditeurs bloqués dans EOP](create-block-sender-lists-in-office-365.md).
 
 ## <a name="recommended-use-mail-flow-rules"></a>Recommandation Utiliser des règles de flux de messagerie
 
@@ -54,7 +51,7 @@ L’exemple suivant suppose que vous avez besoin d’un courrier électronique d
 
 2. Configurez l’un des paramètres suivants :
 
-   - **Condition de règle de flux de messagerie**: **un en-tête** \> **de message inclut l’un de ces mots** \> **nom** `Authentication-Results` \> d’en-tête : **valeur d’en-tête**: `dmarc=pass` ou. `dmarc=bestguesspass`
+   - **Condition de règle de flux de messagerie**: **un en-tête** \> **de message inclut l’un de ces mots nom d'** en-tête : valeur d' \> **Header name** `Authentication-Results` \> **en-tête**: `dmarc=pass` ou `dmarc=bestguesspass` .
 
      Cette condition vérifie l’état de l’authentification de l’expéditeur du domaine de messagerie d’envoi pour s’assurer que le domaine d’envoi n’est pas usurpé. Pour plus d’informations sur l’authentification de messagerie, voir [SPF](set-up-spf-in-office-365-to-help-prevent-spoofing.md), [DKIM](use-dkim-to-validate-outbound-email.md)et [DMARC](use-dmarc-to-validate-email.md).
 
@@ -67,31 +64,31 @@ L’exemple suivant suppose que vous avez besoin d’un courrier électronique d
 
 3. **Conditions facultatives**:
 
-   - **L’expéditeur** \> **est interne/externe** \> à **l’extérieur de l’organisation**: cette condition est implicite, mais il est possible de l’utiliser pour prendre en compte les serveurs de messagerie locaux qui ne sont peut-être pas correctement configurés.
+   - **L’expéditeur** \> **est interne/externe** \> À **l’extérieur de l’organisation**: cette condition est implicite, mais il est possible de l’utiliser pour prendre en compte les serveurs de messagerie locaux qui ne sont peut-être pas correctement configurés.
 
-   - **L’objet ou** \> le corps **de texte ou le corps de texte comprend l’un des** \> \<Mots-clés\>suivants : Si vous pouvez restreindre davantage les messages en fonction de mots clés ou d’expressions dans la ligne d’objet ou le corps du message, vous pouvez utiliser ces mots comme condition.
+   - **L’objet ou le corps** \> **l’objet ou le corps inclut l’un de ces mots** \> \<Mots-clés \> : Si vous pouvez restreindre davantage les messages en fonction de mots clés ou d’expressions dans la ligne d’objet ou le corps du message, vous pouvez utiliser ces mots comme condition.
 
 4. **Action**: configurez ces deux actions dans la règle :
 
-   a. **Modifier les propriétés** \> du message définir le seuil de probabilité de courrier indésirable **(SCL)** \> **ignorer le filtrage du courrier indésirable**.
+   a. **Modifier les propriétés** \> du message **définir le seuil de probabilité de courrier indésirable (SCL)** \> **Contourner le filtrage du courrier indésirable**.
 
-   b. **Un en-tête** \> **de message comprend l’un des mots** \> **suivants :** \<CustomHeaderName\> d' \<en\> **-** tête : CustomHeaderValue.
+   b. **Un en-tête** \> de message **inclut l’un de ces mots** \> **Nom**de l’en-tête : \< CustomHeaderName d' \> **en-tête**: \< CustomHeaderValue \> .
 
       Par exemple, `X-ETR: Bypass spam filtering for authenticated sender 'contoso.com'`. Si vous avez plusieurs domaines dans la règle, vous pouvez personnaliser le texte d’en-tête en fonction de vos besoins.
 
-      Lorsqu’un message ignore le filtrage du courrier indésirable en raison d’une `SFV:SKN` règle de flux de messagerie, la valeur de la valeur est marquée dans l’en-tête **X-Forefront-antispam-Report** . Si le message provient d’une source située dans la liste d’adresses IP autorisées, la `IPV:CAL` valeur est également ajoutée. Ces valeurs peuvent vous aider à résoudre les problèmes.
+      Lorsqu’un message ignore le filtrage du courrier indésirable en raison d’une règle de flux de messagerie, la valeur de la valeur `SFV:SKN` est marquée dans l’en-tête **X-Forefront-antispam-Report** . Si le message provient d’une source située dans la liste d’adresses IP autorisées, la valeur `IPV:CAL` est également ajoutée. Ces valeurs peuvent vous aider à résoudre les problèmes.
 
 ![Paramètres de règle de flux de messagerie dans le centre d’administration Exchange pour ignorer le filtrage du courrier indésirable.](../../media/1-AllowList-SkipFilteringFromContoso.png)
 
 ## <a name="use-outlook-safe-senders"></a>Utiliser des expéditeurs approuvés Outlook
 
-Au lieu d’un paramètre organisationnel, les utilisateurs ou les administrateurs peuvent ajouter les adresses de messagerie de l’expéditeur à la liste des expéditeurs approuvés dans la boîte aux lettres. Pour obtenir des instructions, consultez la rubrique [configurer les paramètres de courrier indésirable sur les boîtes aux lettres Exchange Online dans Office 365](configure-junk-email-settings-on-exo-mailboxes.md). Cette opération n’est pas recommandée dans la plupart des situations puisque les expéditeurs contournent des parties de la pile de filtrage. Bien que vous approuviez l’expéditeur, l’expéditeur pourrait être compromis et terminer l’envoi de contenu malveillant. Il est préférable de laisser nos filtres faire ce qui est nécessaire pour vérifier chaque message, puis [signaler le faux positif/négatif à Microsoft](report-junk-email-messages-to-microsoft.md) si nos filtres ne sont pas corrects. Cela empêche également la préversion de ce qu’elle doit [faire dans le](zero-hour-auto-purge.md) message.
+Au lieu d’un paramètre organisationnel, les utilisateurs ou les administrateurs peuvent ajouter les adresses de messagerie de l’expéditeur à la liste des expéditeurs approuvés dans la boîte aux lettres. Pour obtenir des instructions, consultez la rubrique [configurer les paramètres de courrier indésirable sur les boîtes aux lettres Exchange Online dans Office 365](configure-junk-email-settings-on-exo-mailboxes.md). Cette opération n’est pas recommandée dans la plupart des situations puisque les expéditeurs contournent des parties de la pile de filtrage. Bien que vous approuviez l’expéditeur, les boîtes de l’expéditeur sont toujours compromises et peuvent envoyer du contenu malveillant. Il est préférable de laisser nos filtres faire ce qui est nécessaire pour vérifier chaque message, puis [signaler le faux positif/négatif à Microsoft](report-junk-email-messages-to-microsoft.md) si nos filtres ne sont pas corrects. Le contournement de la pile de filtrage interfère également avec [zap](zero-hour-auto-purge.md).
 
-Lorsque les messages ignorent le filtrage du courrier indésirable en raison de la liste des expéditeurs approuvés d’un utilisateur, le champ d’en `SFV:SFE`-tête **X-Forefront-antispam-Report** contient la valeur qui indique que le courrier indésirable, l’usurpation et le filtrage du hameçonnage ont été ignorés.
+Lorsque les messages ignorent le filtrage du courrier indésirable en raison de la liste des expéditeurs approuvés d’un utilisateur, le champ d’en-tête **X-Forefront-antispam-Report** contient la valeur `SFV:SFE` qui indique que le courrier indésirable, l’usurpation et le filtrage du hameçonnage ont été ignorés.
 
 ## <a name="use-the-ip-allow-list"></a>Utiliser la liste d’adresses IP autorisées
 
-Si vous ne pouvez pas utiliser les règles de flux de messagerie comme décrit précédemment, la meilleure solution consiste à ajouter le ou les serveurs de messagerie source à la liste d’adresses IP autorisées dans la stratégie de filtrage des connexions. Pour plus d’informations, consultez la rubrique [configurer le filtrage des connexions dans Office 365](configure-the-connection-filter-policy.md).
+Si vous ne pouvez pas utiliser les règles de flux de messagerie comme décrit précédemment, la meilleure solution consiste à ajouter le ou les serveurs de messagerie source à la liste d’adresses IP autorisées dans la stratégie de filtrage des connexions. Pour plus d’informations, consultez la rubrique [Configure connection Filtering in EOP](configure-the-connection-filter-policy.md).
 
 **Remarques** :
 
@@ -106,7 +103,7 @@ Si vous ne pouvez pas utiliser les règles de flux de messagerie comme décrit p
 
 ## <a name="use-allowed-sender-lists-or-allowed-domain-lists"></a>Utiliser des listes d’expéditeurs autorisés ou des listes de domaines autorisés
 
-L’option la moins intéressante consiste à utiliser la liste des expéditeurs autorisés ou la liste des domaines autorisés dans les stratégies de blocage du courrier indésirable. Vous devez éviter cette option *si possible* , car les expéditeurs contournent tout le courrier indésirable, l’usurpation d’identité et la protection contre le hameçonnage, et l’authentification des expéditeurs (SPF, DKIM, DMARC). Cette méthode est recommandée pour le test temporaire uniquement. La procédure détaillée est décrite dans la rubrique [configurer des stratégies anti-courrier indésirable dans Office 365](configure-your-spam-filter-policies.md) .
+L’option la moins intéressante consiste à utiliser la liste des expéditeurs autorisés ou la liste des domaines autorisés dans les stratégies de blocage du courrier indésirable. Vous devez éviter cette option *si possible* , car les expéditeurs contournent tout le courrier indésirable, l’usurpation d’identité et la protection contre le hameçonnage, et l’authentification des expéditeurs (SPF, DKIM, DMARC). Cette méthode est recommandée pour le test temporaire uniquement. La procédure détaillée est décrite dans la rubrique [configurer des stratégies anti-courrier indésirable dans EOP](configure-your-spam-filter-policies.md) .
 
 La limite maximale de ces listes est d’environ 1000 entrées ; Bien que vous ne puissiez entrer que 30 entrées dans le portail. Vous devez utiliser PowerShell pour ajouter plus de 30 entrées.
 
@@ -121,7 +118,7 @@ Un message électronique SMTP standard est constitué d’une *enveloppe de mes
 
 - Le `5322.From` (également appelé l’adresse **de** l’expéditeur ou l’expéditeur P2) est l’adresse de messagerie dans le champ de l’en-tête **de** , et est l’adresse de messagerie de l’expéditeur affichée dans les clients de messagerie.
 
-Fréquemment, les `5321.MailFrom` adresses `5322.From` et sont identiques (communication de personne à personne). Toutefois, lorsqu'un courrier électronique est envoyé à la place d'une autre personne, les adresses sont souvent différentes. Cela se produit généralement avec les messages de courrier indésirable.
+Fréquemment, les `5321.MailFrom` `5322.From` adresses et sont identiques (communication de personne à personne). Toutefois, lorsqu'un courrier électronique est envoyé à la place d'une autre personne, les adresses sont souvent différentes. Cela se produit généralement avec les messages de courrier indésirable.
 
 Par exemple, supposons que Blue Yonder Airlines a embauché Margie’s Travel pour envoyer sa publicité par courrier électronique. Le message que vous recevez dans votre boîte de réception comporte les propriétés suivantes :
 
@@ -129,12 +126,12 @@ Par exemple, supposons que Blue Yonder Airlines a embauché Margie’s Travel po
 
 - L' `5322.From` adresse est blueyonder@news.blueyonderairlines.com, ce que vous verrez dans Outlook.
 
-Listes des expéditeurs approuvés et listes de domaines fiables dans les stratégies de blocage du courrier indésirable dans EOP, inspectez les `5321.MailFrom` adresses et. `5322.From` Les expéditeurs approuvés Outlook utilisent uniquement `5322.From` l’adresse.
+Listes des expéditeurs approuvés et listes de domaines fiables dans les stratégies de blocage du courrier indésirable dans EOP, inspectez les `5321.MailFrom` `5322.From` adresses et. Les expéditeurs approuvés Outlook utilisent uniquement l' `5322.From` adresse.
 
 Pour empêcher le filtrage de ce message, procédez comme suit :
 
 - Ajoutez blueyonder@news.blueyonderairlines.com (l' `5322.From` adresse) en tant qu’expéditeur approuvé Outlook.
 
-- [Utilisez une règle de flux de messagerie](#recommended-use-mail-flow-rules) avec une condition qui recherche les messages provenant de `5322.From` blueyonder@news.blueyonderairlines.com (l’adresse, `5321.MailFrom`blueyonder.Airlines@margiestravel.com (le) ou les deux.
+- [Utilisez une règle de flux de messagerie](#recommended-use-mail-flow-rules) avec une condition qui recherche les messages provenant de blueyonder@news.blueyonderairlines.com (l' `5322.From` adresse, blueyonder.Airlines@margiestravel.com (le `5321.MailFrom` ) ou les deux.
 
-Si vous souhaitez en savoir plus, consultez la page [Créer des listes d’expéditeurs approuvés dans Office 365](create-safe-sender-lists-in-office-365.md).
+Pour plus d’informations, consultez la rubrique [créer des listes d’expéditeurs approuvés dans EOP](create-safe-sender-lists-in-office-365.md).

@@ -2,8 +2,8 @@
 title: Protéger contre les menaces
 f1.keywords:
 - NOCSH
-ms.author: tracyp
-author: msfttracyp
+ms.author: chrisda
+author: chrisda
 manager: dansimp
 audience: Admin
 ms.topic: hub-page
@@ -16,14 +16,14 @@ search.appverid:
 ms.assetid: b10023f6-f30f-45d3-b3ad-b71aa4aa0d58
 ms.collection:
 - M365-security-compliance
-description: Découvrez la protection contre les menaces Office 365 et configurez son utilisation pour votre organisation.
+description: Les administrateurs peuvent en savoir plus sur la protection contre les menaces dans Microsoft 365 et configurer la façon de l’utiliser pour votre organisation.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 7bdc7d619f3c48318572116fbc52647a0858ec5e
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 3ed243d36866e9ebadf00a0247dd4545113788e8
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44033889"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44206603"
 ---
 # <a name="protect-against-threats"></a>Protéger contre les menaces
 
@@ -61,13 +61,13 @@ Vous devez disposer d’un rôle approprié pour configurer les stratégies dans
 |Gestion d’Organisation Exchange Online|[Autorisations dans Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo) <br>et<br> [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell)|
 |
 
-Pour en savoir plus, consultez [la rubrique autorisations &amp; dans le centre de sécurité conformité](permissions-in-the-security-and-compliance-center.md).
+Pour en savoir plus, consultez [la rubrique autorisations dans le centre de sécurité &amp; conformité](permissions-in-the-security-and-compliance-center.md).
 
 ## <a name="part-1---anti-malware-protection"></a>Partie 1 : protection anti-programme malveillant
 
 La [protection contre les programmes malveillants](anti-malware-protection.md) est disponible dans les abonnements incluant [EOP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description).
 
-1. Dans le [Centre de sécurité & conformité](https://protection.office.com), choisissez**protection contre les programmes malveillants**pour la**stratégie** > de **gestion** > des menaces.
+1. Dans le [Centre de sécurité & conformité](https://protection.office.com), **Threat management**choisissez  >  **Policy**  >  **protection contre les programmes malveillants**pour la stratégie de gestion des menaces.
 
 2. Double-cliquez sur la stratégie **par défaut** , puis sélectionnez **paramètres**.
 
@@ -89,15 +89,15 @@ La protection du temps de clic à partir d’URL et de fichiers malveillants est
 
 Pour configurer des [pièces jointes sûres ATP](atp-safe-attachments.md), vous devez définir au moins une stratégie de pièces jointes approuvées ATP.
 
-1. Dans**Policy** > le [Centre de sécurité & conformité](https://protection.office.com), sélectionnez **gestion** > des menaces-**pièces jointes ATP**.
+1. Dans le [Centre de sécurité & conformité](https://protection.office.com), sélectionnez **gestion des menaces**-  >  **Policy**  >  **pièces jointes ATP**.
 
 2. Sélectionnez l’option Activer la protection avancée contre **les menaces pour SharePoint, OneDrive et Microsoft teams**.
 
-3. Dans la section **protéger les pièces jointes** , cliquez sur le**+** signe plus ().
+3. Dans la section **protéger les pièces jointes** , cliquez sur le signe plus ( **+** ).
 
 4. Spécifiez les paramètres suivants :
 
-   - Dans la zone **nom** , tapez `Block malware`.
+   - Dans la zone **nom** , tapez `Block malware` .
 
    - Dans la section réponse, sélectionnez **bloquer**.
 
@@ -115,17 +115,17 @@ Pour en savoir plus, consultez la rubrique [configurer des stratégies de pièce
 
 Pour configurer [des liens approuvés ATP](atp-safe-links.md), vérifiez et modifiez votre stratégie par défaut, puis ajoutez une stratégie pour des utilisateurs spécifiques.
 
-1. Dans le [Centre de sécurité & conformité](https://protection.office.com), **sélectionnez gestion** > **Policy** > **des menaces-liens fiables ATP**.
+1. Dans le [Centre de sécurité & conformité](https://protection.office.com), sélectionnez **gestion des menaces**-  >  **Policy**  >  **liens fiables ATP**.
 
 2. Double-cliquez sur la stratégie **par défaut** .
 
 3. Dans la section **utiliser les liens approuvés dans** , sélectionnez l’option **applications Microsoft 365 pour les entreprises, Office pour iOS et Android**, puis cliquez sur **Enregistrer**.
 
-4. Dans la section **stratégies qui s’appliquent à des destinataires spécifiques** , cliquez**+** sur le signe plus ().
+4. Dans la section **stratégies qui s’appliquent à des destinataires spécifiques** , cliquez sur le signe plus ( **+** ).
 
 5. Spécifiez les paramètres suivants :
 
-   - Dans la zone **nom** , tapez un nom, tel que `Safe Links`.
+   - Dans la zone **nom** , tapez un nom, tel que `Safe Links` .
 
    - Dans la section **Sélectionnez l’action** , choisissez **activé**.
 
@@ -151,7 +151,7 @@ La [protection anti-hameçonnage](anti-phishing-protection.md) est disponible da
 
 La procédure suivante décrit comment configurer une stratégie anti-hameçonnage ATP. Les étapes sont similaires pour la configuration d’une stratégie anti-hameçonnage (sans ATP).
 
-1. Dans le [Centre de sécurité & conformité](https://protection.office.com), sélectionnez**Policy** > **protection contre les** **menaces** > pour le hameçonnage.
+1. Dans le [Centre de sécurité & conformité](https://protection.office.com), **Threat management**sélectionnez  >  **Policy**  >  **protection contre les**menaces pour le hameçonnage.
 
 2. Cliquez sur **stratégie par défaut**.
 
@@ -179,13 +179,13 @@ La procédure suivante décrit comment configurer une stratégie anti-hameçonna
 
 5. Fermez la page Paramètres de stratégie par défaut.
 
-Pour en savoir plus sur les options de stratégie anti-hameçonnage, consultez la rubrique [configure ATP anti-phishing Policies in Office 365](configure-atp-anti-phishing-policies.md).
+Pour en savoir plus sur les options de stratégie anti-hameçonnage, consultez la rubrique [configure ATP anti-phishing Policies](configure-atp-anti-phishing-policies.md).
 
 ## <a name="part-4---anti-spam-protection"></a>Partie 4 : protection contre le courrier indésirable
 
 La [protection contre le courrier indésirable](anti-spam-protection.md) est disponible dans les abonnements incluant [EOP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description).
 
-1. Dans le [Centre de sécurité & conformité](https://protection.office.com), choisissez**protection contre le courrier indésirable**pour la**stratégie** > de **gestion** > des menaces.
+1. Dans le [Centre de sécurité & conformité](https://protection.office.com), **Threat management**choisissez  >  **Policy**  >  **protection contre le courrier indésirable**pour la stratégie de gestion des menaces.
 
 2. Sous l’onglet **personnalisé** , activez les **paramètres personnalisés** .
 
@@ -197,7 +197,7 @@ La [protection contre le courrier indésirable](anti-spam-protection.md) est dis
 
 4. Cliquez sur **Enregistrer**.
 
-Pour en savoir plus sur les options de votre stratégie de blocage du courrier indésirable, consultez la rubrique [configure anti-spam Policies in Office 365](configure-your-spam-filter-policies.md).
+Pour en savoir plus sur les options de votre stratégie de blocage du courrier indésirable, consultez la rubrique [configure anti-spam Policies in EOP](configure-your-spam-filter-policies.md).
 
 ## <a name="part-5---additional-settings-to-configure"></a>Partie 5 : paramètres supplémentaires à configurer
 

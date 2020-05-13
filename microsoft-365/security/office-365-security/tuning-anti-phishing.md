@@ -11,17 +11,17 @@ ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
-description: Les administrateurs peuvent apprendre à identifier les raisons et le mode de réception d’un message de hameçonnage, ainsi que la marche à suivre pour éviter d’autres messages de phishing à l’avenir.
-ms.openlocfilehash: a27d41b01069e763ea2b3baab6576c8046b0f8e7
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: Les administrateurs peuvent apprendre à identifier les raisons et le mode de réception d’un message de hameçonnage dans Microsoft 365, ainsi que la marche à suivre pour éviter d’autres messages de hameçonnage.
+ms.openlocfilehash: a9b7a58f32fd14c157d72e8f91a1f1b8bfe3aedc
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631132"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208584"
 ---
 # <a name="tune-anti-phishing-protection"></a>Protection anti-hameçonnage
 
-Bien que Microsoft 365 propose plusieurs fonctionnalités anti-hameçonnage qui sont activées par défaut, il est possible que certains messages de phishing continuent à accéder à vos boîtes aux lettres. Cette rubrique décrit ce que vous pouvez faire pour découvrir pourquoi un message de hameçonnage s’affiche, et ce que vous pouvez faire pour ajuster les paramètres anti-hameçonnage de votre organisation Exchange Online sans que cela ne _soit pire_.
+Bien que Microsoft 365 propose plusieurs fonctionnalités anti-hameçonnage qui sont activées par défaut, il est possible que certains messages de phishing continuent à accéder à vos boîtes aux lettres. Cette rubrique décrit ce que vous pouvez faire pour découvrir pourquoi un message de hameçonnage s’affiche, et ce que vous pouvez faire pour ajuster les paramètres anti-hameçonnage dans votre organisation Microsoft 365 _sans accidentellement_compliquer les choses.
 
 ## <a name="first-things-first-deal-with-any-compromised-accounts-and-make-sure-you-block-any-more-phishing-messages-from-getting-through"></a>Tout d’abord : traitez les comptes compromis et assurez-vous de bloquer les messages de hameçonnage
 
@@ -33,7 +33,7 @@ Si votre abonnement inclut la protection avancée contre les menaces (ATP), vous
 
 - [Pièces jointes fiables ATP](set-up-atp-safe-attachments-policies.md)
 
-- [Stratégies anti-hameçonnage ATP dans Office 365](configure-atp-anti-phishing-policies.md). Notez que vous pouvez augmenter temporairement les **seuils de phishing avancés** dans la stratégie, de **standard** à **agressif**, **plus agressif**ou **plus agressif**.
+- [Stratégies anti-hameçonnage ATP dans Microsoft 365](configure-atp-anti-phishing-policies.md). Notez que vous pouvez augmenter temporairement les **seuils de phishing avancés** dans la stratégie, de **standard** à **agressif**, **plus agressif**ou **plus agressif**.
 
 Vérifiez que ces fonctionnalités ATP sont activées.
 
@@ -45,7 +45,7 @@ La création de messages de phishing est utile pour régler les filtres utilisé
 
 Vous pouvez examiner les en-têtes du message de hameçonnage pour voir s’il y a quelque chose que vous pouvez faire vous-même pour empêcher d’autres messages de phishing de venir. En d’autres termes, l’examen des en-têtes de messages peut vous aider à identifier tous les paramètres de votre organisation qui ont été chargés d’autoriser les messages de hameçonnage dans.
 
-Plus précisément, vous devez vérifier le champ d’en-tête **X-Forefront-antispam-Report** dans les en-têtes de message pour obtenir des indications de courrier indésirable ignoré ou de filtrage du courrier indésirable dans la valeur de filtrage du courrier indésirable (SFV). Les messages qui ignorent le filtrage auront une `SCL:-1`entrée de, ce qui signifie que l’un de vos paramètres a autorisé ce message en remplaçant le courrier indésirable ou le score de phishing déterminé par le service. Pour plus d’informations sur l’obtention des en-têtes de message et la liste complète des en-têtes de message anti-courrier indésirable et anti-hameçonnage disponibles, consultez les en [-têtes de message anti-courrier indésirable dans Office 365](anti-spam-message-headers.md).
+Plus précisément, vous devez vérifier le champ d’en-tête **X-Forefront-antispam-Report** dans les en-têtes de message pour obtenir des indications de courrier indésirable ignoré ou de filtrage du courrier indésirable dans la valeur de filtrage du courrier indésirable (SFV). Les messages qui ignorent le filtrage auront une entrée de `SCL:-1` , ce qui signifie que l’un de vos paramètres a autorisé ce message en remplaçant le courrier indésirable ou le score de phishing déterminé par le service. Pour plus d’informations sur l’obtention des en-têtes de message et la liste complète des en-têtes de message anti-courrier indésirable et anti-hameçonnage disponibles, consultez les [en-têtes de message anti-courrier indésirable dans Microsoft 365](anti-spam-message-headers.md).
 
 ## <a name="best-practices-to-stay-protected"></a>Meilleures pratiques pour rester protégé
 
@@ -61,18 +61,18 @@ Plus précisément, vous devez vérifier le champ d’en-tête **X-Forefront-ant
 
   - Vérifiez que votre enregistrement SPF identifie _toutes les_ sources de courrier pour les expéditeurs de votre domaine (n’oubliez pas les services tiers).
 
-  - Utilisez la défaillance matérielle\-() pour vous assurer que les expéditeurs non autorisés sont rejetés par les systèmes de messagerie qui sont configurés pour le faire. Vous pouvez utiliser l’Assistant d’aide à la [décision](learn-about-spoof-intelligence.md) pour identifier les expéditeurs qui utilisent votre domaine afin que vous puissiez inclure des expéditeurs tiers autorisés dans votre enregistrement SPF.
+  - Utilisez la défaillance matérielle ( \- ) pour vous assurer que les expéditeurs non autorisés sont rejetés par les systèmes de messagerie qui sont configurés pour le faire. Vous pouvez utiliser l’Assistant d’aide à la [décision](learn-about-spoof-intelligence.md) pour identifier les expéditeurs qui utilisent votre domaine afin que vous puissiez inclure des expéditeurs tiers autorisés dans votre enregistrement SPF.
 
   Pour obtenir des instructions de configuration, voir :
   
-  - [Configurer SPF pour éviter l’usurpation](set-up-spf-in-office-365-to-help-prevent-spoofing.md)
+  - [Configurer SPF pour empêcher l’usurpation](set-up-spf-in-office-365-to-help-prevent-spoofing.md)
 
-  - [Utilisation de DKIM pour valider les messages électroniques sortants envoyés à partir de votre domaine personnalisé](use-dkim-to-validate-outbound-email.md)
+  - [Utilisation de DKIM pour valider les messages sortants envoyés à partir de votre domaine personnalisé](use-dkim-to-validate-outbound-email.md)
 
   - [Utiliser DMARC pour valider les messages électroniques](use-dmarc-to-validate-email.md)
 
-- Dans la mesure du possible, nous vous recommandons de livrer le courrier électronique pour votre domaine directement à Office 365. En d’autres termes, pointez l’enregistrement MX de votre domaine Office 365 vers Office 365. Exchange Online Protection (EOP) est capable de fournir la meilleure protection aux utilisateurs de votre nuage lorsque leur courrier est remis directement à Office 365. Si vous devez utiliser un système d’hygiène de messagerie tiers devant l’interface EOP, utilisez un filtrage amélioré pour les connecteurs. Pour obtenir des instructions, voir [Enhanced Filtering for Connectors in Exchange Online](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).
+- Dans la mesure du possible, nous vous recommandons de livrer le courrier électronique pour votre domaine directement à Microsoft 365. En d’autres termes, pointez l’enregistrement MX de votre domaine Microsoft 365 vers Microsoft 365. Exchange Online Protection (EOP) est capable de fournir la meilleure protection aux utilisateurs de votre nuage lorsque leur courrier est remis directement à Microsoft 365. Si vous devez utiliser un système d’hygiène de messagerie tiers devant l’interface EOP, utilisez un filtrage amélioré pour les connecteurs. Pour obtenir des instructions, voir [Enhanced Filtering for Connectors in Exchange Online](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).
 
-- L’authentification multifacteur (MFA) est un moyen efficace pour empêcher les comptes compromis. Vous devez sérieusement envisager d’activer l’authentification multifacteur pour tous vos utilisateurs. Pour une approche progressive, commencez par activer l’authentification multifacteur pour vos utilisateurs les plus sensibles (administrateurs, cadres, etc.) avant d’activer l’authentification multifacteur pour tout le monde. Pour obtenir des instructions, consultez la rubrique [set up Multi-Factor Authentication](../../admin/security-and-compliance/set-up-multi-factor-authentication.md).
+- L’authentification multifacteur (MFA) est un moyen efficace pour empêcher les comptes compromis. Vous devez sérieusement envisager d’activer l’authentification multifacteur pour tous vos utilisateurs. Pour une approche progressive, commencez par activer l’authentification multifacteur pour vos utilisateurs les plus sensibles (administrateurs, cadres, etc.) avant d’activer l’authentification multifacteur pour tout le monde. Pour consulter des instructions, voir [Configurer Multi-factor Authentification (MFA)](../../admin/security-and-compliance/set-up-multi-factor-authentication.md).
 
 - Les règles de transfert vers des destinataires externes sont souvent utilisées par des agresseurs pour extraire des données. Utilisez les **règles de transfert des boîtes aux lettres** dans le [score de sécurité Microsoft](../mtp/microsoft-secure-score.md) pour rechercher et même empêcher le transfert des règles vers des destinataires externes. Pour plus d’informations, consultez la rubrique [minimisation des règles de transfert externe des clients avec le score sécurisé](https://blogs.technet.microsoft.com/office365security/mitigating-client-external-forwarding-rules-with-secure-score/).

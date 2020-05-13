@@ -2,10 +2,10 @@
 title: Référence  Stratégies, pratiques et conseils
 f1.keywords:
 - NOCSH
-ms.author: tracyp
-author: MSFTTracyP
+ms.author: chrisda
+author: chrisda
 manager: dansimp
-ms.date: 12/09/2016
+ms.date: ''
 audience: ITPro
 ms.topic: reference
 ms.service: O365-seccomp
@@ -16,12 +16,12 @@ ms.assetid: ff3f140b-b005-445f-bfe0-7bc3f328aaf0
 ms.collection:
 - M365-security-compliance
 description: Microsoft a développé diverses stratégies, procédures et a adopté plusieurs meilleures pratiques du secteur afin de protéger les utilisateurs contre des courriers indésirables, indésirables ou malveillants.
-ms.openlocfilehash: 6e73355c02e0416a80441aff8143fcbf51150b94
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 9684453503329e955c21051885c5d93e8c927c48
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634387"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208209"
 ---
 # <a name="reference-policies-practices-and-guidelines"></a>Référence : Stratégies, pratiques et conseils
 
@@ -31,9 +31,9 @@ Si vous ne respectez pas ces instructions et stratégies, il se peut que notre �
 
 ## <a name="general-microsoft-policies"></a>Stratégies générales Microsoft
 
-Les messages envoyés aux utilisateurs de Microsoft 365 doivent être conformes à toutes les stratégies Microsoft qui régissent la transmission et l’utilisation d’Office 365.
+Les messages envoyés aux utilisateurs de Microsoft 365 doivent être conformes à toutes les stratégies Microsoft qui régissent la transmission de courrier et l’utilisation de Microsoft 365.
 
-- Conditions d'utilisation d'Office 365, en particulier, interdiction d'utiliser le service pour distribuer des courriers indésirables ou des programmes malveillants
+- Conditions de service applicables à Microsoft 365 ; en particulier, l’interdiction de l’utilisation du service pour le courrier indésirable ou la distribution de programmes malveillants.
 
 - [Contrat de Services Microsoft](https://www.microsoft.com/servicesagreement/)
 
@@ -85,7 +85,7 @@ Microsoft collabore activement avec des organismes et fournisseurs de services d
 
 - [Alliance d’approbation en ligne](https://www.otalliance.org/resources)
 
-- [Email Sender &amp; Provider Coalition](https://www.espcoalition.org/)
+- [Fournisseur de courriers électroniques & Coalition](https://www.espcoalition.org/)
 
 ## <a name="abuse-and-spam-reporting"></a>Création de rapport de courrier indésirable et de mauvaise utilisation
 

@@ -1,9 +1,9 @@
 ---
-title: Meilleures pratiques pour la configuration de EOP et de la protection avancée contre les menaces
+title: Meilleures pratiques de configuration d’EOP
 f1.keywords:
 - NOCSH
-ms.author: tracyp
-author: MSFTTracyP
+ms.author: chrisda
+author: chrisda
 manager: dansimp
 ms.date: ''
 audience: ITPro
@@ -11,17 +11,17 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: faf1efd1-3b0c-411a-804d-17f37292eac0
-description: Pour vous donner un maximum de chances de succès et éviter les erreurs courantes de configuration, suivez ces recommandations relatives aux meilleures pratiques pour Exchange Online Protection (EOP).
-ms.openlocfilehash: 69d069377a061c440c22b7a00dd43795597c50e9
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: Suivez ces recommandations sur les meilleures pratiques pour la protection autonome d’Exchange Online Protection (EOP) afin de vous configurer pour réussir et éviter les erreurs de configuration courantes.
+ms.openlocfilehash: 157d6b76631336e3c6f6e5e669323266c17e015f
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43638535"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44209618"
 ---
-# <a name="best-practices-for-configuring-eop-and-atp"></a>Meilleures pratiques pour la configuration de EOP et de la protection avancée contre les menaces
+# <a name="best-practices-for-configuring-standalone-eop"></a>Meilleures pratiques pour la configuration d’EOP autonome
 
-Pour vous donner un maximum de chances de succès et éviter les erreurs courantes de configuration, suivez ces recommandations relatives aux meilleures pratiques pour Exchange Online Protection (EOP). Cette rubrique part de l'hypothèse que vous avez déjà effectué le processus de configuration. Si vous n'avez pas encore configuré EOP, consultez la rubrique [Configurer votre service EOP](set-up-your-eop-service.md).
+Suivez ces recommandations sur les meilleures pratiques pour la protection autonome d’Exchange Online Protection (EOP) afin de vous configurer pour réussir et éviter les erreurs de configuration courantes. Cette rubrique part de l'hypothèse que vous avez déjà effectué le processus de configuration. Si vous n'avez pas encore configuré EOP, consultez la rubrique [Configurer votre service EOP](set-up-your-eop-service.md).
 
 ## <a name="use-a-test-domain"></a>Utiliser un domaine de test
 
@@ -39,38 +39,40 @@ Nous habilitons les administrateurs de sécurité à personnaliser leurs paramè
 
 Ces paramètres couvrent un éventail de fonctionnalités en dehors des stratégies de sécurité.
 
-|Nom de la fonctionnalité de sécurité|Standard|Empêcher|Commentaire|
-|---------|---------|---------|---------|
-|[Configurer SPF pour éviter l’usurpation](set-up-spf-in-office-365-to-help-prevent-spoofing.md)|Oui|Oui||
+|||||
+|---|---|---|---|
+|**Nom de la fonctionnalité de sécurité**|**Standard**|**Empêcher**|**Comment**|
+|[Configurer SPF pour empêcher l’usurpation](set-up-spf-in-office-365-to-help-prevent-spoofing.md)|Oui|Oui||
 |[Utilisation de DKIM pour valider les messages sortants envoyés à partir de votre domaine personnalisé dans Office 365](use-dkim-to-validate-outbound-email.md)|Oui|Oui||
-|[Utiliser DMARC pour valider les e-mails dans Office 365](use-dmarc-to-validate-email.md)|Oui|Oui|Utilisez action = Quarantine for standard et action = Reject pour strict.|
-|Déployer le complément de rapport de message pour améliorer la création de rapports d’utilisateur final sur les E-mails suspects|Oui|Oui||
+|[Utiliser DMARC pour valider les e-mails dans Office 365](use-dmarc-to-validate-email.md)|Oui|Oui|Utilisez `action=quarantine` for standard et `action=reject` strict.|
+|Déployer le [complément de message de rapport](enable-the-report-message-add-in.md) afin d’améliorer la création de rapports d’utilisateur final de courrier suspect|Oui|Oui||
 |Planifier les programmes malveillants et le courrier indésirable|Oui|Oui||
 |Le transfert automatique vers les domaines externes ne doit pas être autorisé ni surveillé|Oui|Oui||
 |L’audit unifié doit être activé|Oui|Oui||
 |[Connectivité IMAP à la boîte aux lettres](https://docs.microsoft.com/Exchange/clients-and-mobile-in-exchange-online/pop3-and-imap4/enable-or-disable-pop3-or-imap4-access)|Désactivé|Désactivé||
 |[Connectivité POP à la boîte aux lettres](https://docs.microsoft.com/Exchange/clients-and-mobile-in-exchange-online/pop3-and-imap4/enable-or-disable-pop3-or-imap4-access)|Désactivé|Désactivé||
-|Envoi authentifié SMTP vers la boîte aux lettres|Désactivé|Désactivé||
+|Envoi SMTP authentifié|Désactivé|Désactivé|L’envoi SMTP de client authentifié (également appelé envoi SMTP client ou authentification SMTP) est requis pour les clients POP3 et IMAP4 pour envoyer des courriers électroniques.|
 |Connectivité EWS à la boîte aux lettres|Désactivé|Désactivé||
 |[Connectivité PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/disable-access-to-exchange-online-powershell)|Désactivé|Désactivé|Disponible pour les utilisateurs de boîte aux lettres ou les utilisateurs de messagerie (objets utilisateur retournés par la cmdlet [Get-User](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/get-user) ).|
 |Utiliser l' [intelligence d’usurpation d’identité](learn-about-spoof-intelligence.md) pour les expéditeurs de liste d’autorisation dès que possible|Oui|Oui||
-|Blocage du périmètre basé sur l’annuaire (DBEB)|Activé|Activé|Type de domaine = faisant autorité|
+|[Blocage du périmètre basé sur l’annuaire (DBEB)](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-directory-based-edge-blocking)|Activé|Activé|Type de domaine = faisant autorité|
 |[Configurer l’authentification multifacteur pour tous les comptes d’administrateur](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication)|Activé|Activé||
+|
 
 ## <a name="troubleshooting"></a>Résolution des problèmes
 
 Résoudre les problèmes et tendances généraux à l’aide des rapports dans le centre d’administration. Pour trouver des données concernant un point précis d'un message, utilisez l'outil de suivi des messages. Pour plus d'informations sur la génération de rapports, consultez la rubrique [Création de rapports et suivi des messages dans Exchange Online Protection](reporting-and-message-trace-in-exchange-online-protection.md). Pour plus d’informations sur l’outil de suivi des messages [, consultez la rubrique suivi des messages dans le centre de sécurité & Compliance Center](message-trace-scc.md).
 
-## <a name="report-false-positive-and-false-negatives-to-microsoft"></a>Signaler les faux positifs et faux négatifs à Microsoft
+## <a name="report-false-positives-and-false-negatives-to-microsoft"></a>Signaler les faux positifs et les faux négatifs à Microsoft
 
 Pour améliorer le filtrage du courrier indésirable dans le service pour tout le monde, vous devez signaler les faux positifs (courrier électronique marqué comme incorrect) et les faux négatifs (courrier incorrect autorisé) à Microsoft pour analyse. Pour plus d’informations, voir [Signaler des messages et des fichiers à Microsoft](report-junk-email-messages-to-microsoft.md).
 
 ## <a name="create-mail-flow-rules"></a>Création de règles de flux de messagerie
 
-Créez des règles de flux de messagerie ou des filtres personnalisés pour répondre aux besoins de votre entreprise.
+Créez des règles de flux de messagerie (également appelées règles de transport) ou des filtres personnalisés pour répondre aux besoins de votre entreprise.
 
 Lorsque vous déployez une nouvelle règle en production, commencez par sélectionner l'un des modes test pour voir son effet. Lorsque vous estimez que la règle fonctionne de la manière souhaitée, modifiez son mode d'effet en le définissant sur **Appliquer**.
 
 Lors du déploiement d'une nouvelle règle, songez à ajouter l'action supplémentaire **Générer un rapport d'incident** pour contrôler son action.
 
-Dans les environnements hybrides où votre organisation inclut Exchange et Office 365 sur site, prenez en compte les conditions que vous utilisez dans les règles de flux de messagerie. Si vous souhaitez que les règles s’appliquent à l’ensemble de l’organisation, veillez à utiliser des conditions qui sont disponibles dans Exchange sur site et dans Office 365. Alors que la plupart des conditions sont disponibles dans les deux environnements, il existe quelques éléments qui ne sont disponibles que dans un seul environnement ou l’autre. Pour plus d’informations, consultez la rubrique [règles de flux de messagerie (règles de transport) dans Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules).
+Dans les environnements hybrides où votre organisation inclut Exchange sur site et Exchange Online, prenez en compte les conditions que vous utilisez dans les règles de flux de messagerie. Si vous souhaitez que les règles s’appliquent à l’ensemble de l’organisation, veillez à utiliser les conditions disponibles dans Exchange local et dans Exchange Online. Alors que la plupart des conditions sont disponibles dans les deux environnements, il existe quelques éléments qui ne sont disponibles que dans un seul environnement ou l’autre. Pour plus d’informations, consultez la rubrique [règles de flux de messagerie (règles de transport) dans Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules).

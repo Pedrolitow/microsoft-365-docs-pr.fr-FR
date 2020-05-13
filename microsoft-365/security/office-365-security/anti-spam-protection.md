@@ -18,20 +18,20 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: Découvrez les paramètres de blocage du courrier indésirable et les filtres qui vous permettront d’éviter le courrier indésirable dans Exchange Online et Microsoft 365.
-ms.openlocfilehash: 96132bf66438861eb117aedd841f7912de1258cc
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+description: Les administrateurs peuvent en savoir plus sur les paramètres et les filtres anti-courrier indésirable qui permettent d’éviter le courrier indésirable dans Exchange Online Protection (EOP).
+ms.openlocfilehash: d7c58fd4751bc7d92d5dfa3cadcfb7b24a3fc465
+ms.sourcegitcommit: 4cfb8a9c3675d0aefcabd690273e2af85f2e38b0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034057"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44211415"
 ---
-# <a name="anti-spam-protection-in-microsoft-365"></a>Protection contre le courrier indésirable dans Microsoft 365
+# <a name="anti-spam-protection-in-eop"></a>Protection contre le courrier indésirable dans EOP
 
 > [!NOTE]
-> Cette rubrique est destinée aux administrateurs 365 de Microsoft. Pour les rubriques destinées aux utilisateurs finaux, consultez [la rubrique vue d’ensemble du filtre courrier indésirable](https://support.Microsoft.com/article/5ae3ea8e-cf41-4fa0-b02a-3b96e21de089) et [en savoir plus sur le courrier indésirable et le hameçonnage](https://support.Microsoft.com/article/86c1d76f-4d5a-4967-9647-35665dc17c31).
+> Cette rubrique est destinée aux administrateurs. Pour les rubriques destinées aux utilisateurs finaux, consultez [la rubrique vue d’ensemble du filtre courrier indésirable](https://support.Microsoft.com/article/5ae3ea8e-cf41-4fa0-b02a-3b96e21de089) et [en savoir plus sur le courrier indésirable et le hameçonnage](https://support.Microsoft.com/article/86c1d76f-4d5a-4967-9647-35665dc17c31).
 
-Si vous êtes un client Microsoft 365 avec des boîtes aux lettres dans Exchange Online ou un client Exchange Online Protection (EOP) autonome sans boîte aux lettres Exchange Online, vos messages électroniques sont automatiquement protégés contre le courrier indésirable (courrier indésirable) par EOP.
+Dans les organisations Microsoft 365 avec des boîtes aux lettres dans Exchange Online ou des organisations Exchange Online Protection (EOP) autonomes sans boîte aux lettres Exchange Online, les messages électroniques sont automatiquement protégés contre le courrier indésirable par EOP.
 
 La feuille de route sécurité de messagerie de Microsoft implique une approche inter-produits sans correspondance. La technologie de blocage du courrier indésirable et anti-hameçonnage EOP est appliquée sur nos plates-formes de messagerie pour fournir aux utilisateurs les derniers outils de blocage du courrier indésirable et anti-hameçonnage, ainsi que leurs innovations sur le réseau. L'objectif d'EOP est de proposer un service de messagerie complet et utilisable qui vous aide à détecter le courrier indésirable, les menaces d'e-mails frauduleux (hameçonnage) et les logiciels malveillants, et de protéger les utilisateurs.
 
@@ -43,7 +43,7 @@ Pour réduire le courrier indésirable, EOP inclut la protection du courrier ind
 
 Les paramètres de blocage du courrier indésirable dans EOP sont les suivants :
 
-- **Filtrage des connexions**: identifie les serveurs sources de messagerie bons et incorrects au début de la connexion de messagerie entrante via la liste d’adresses IP autorisées, la liste d’adresses IP bloquées et la *liste sécurisée* (une liste dynamique mais non modifiable des expéditeurs approuvés gérés par Microsoft). Vous configurez ces paramètres dans la stratégie de filtrage des connexions. Pour plus d’informations, consultez la rubrique [configurer le filtrage des connexions dans Microsoft 365](configure-the-connection-filter-policy.md).
+- **Filtrage des connexions**: identifie les serveurs sources de messagerie bons et incorrects au début de la connexion de messagerie entrante via la liste d’adresses IP autorisées, la liste d’adresses IP bloquées et la *liste sécurisée* (une liste dynamique mais non modifiable des expéditeurs approuvés gérés par Microsoft). Vous configurez ces paramètres dans la stratégie de filtrage des connexions. Pour plus d’informations, consultez la rubrique [configurer le filtrage des connexions](configure-the-connection-filter-policy.md).
 
   > [!NOTE]
   > Usurpation d’identité utilise le filtrage des connexions pour créer des listes verte et rouge d’expéditeurs qui usurpent votre domaine de messagerie. Pour plus d’informations, consultez la rubrique [en savoir plus sur les informations d’usurpation d’identité dans Microsoft 365](learn-about-spoof-intelligence.md).
@@ -105,7 +105,7 @@ Voici quelques étapes à suivre pour éviter les faux positifs :
 
   Pour plus d’informations sur ces paramètres, consultez la rubrique [configurer les paramètres du courrier indésirable sur les boîtes aux lettres Exchange Online dans Microsoft 365](configure-junk-email-settings-on-exo-mailboxes.md).
 
-- **Utiliser les listes d’expéditeurs approuvés disponibles**: pour plus d’informations, reportez-vous à [créer des listes d’expéditeurs approuvés] (Create Safe-sender-Lists-in-office-365.MD.
+- **Utilisez les listes d’expéditeurs approuvés disponibles**: pour plus d’informations, consultez la rubrique [créer des listes d’expéditeurs approuvés](create-safe-sender-lists-in-office-365.md).
 
 - **Vérifiez que les utilisateurs respectent les limites d’envoi et de réception** , comme décrit dans la rubrique [réception et envoi de limites](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#receiving-and-sending-limits) dans la description du service Exchange Online.
 

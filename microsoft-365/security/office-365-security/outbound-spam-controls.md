@@ -18,17 +18,17 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: Découvrez en tant qu’administrateur comment Office 365 et Exchange Online Protection (EOP) protège les clients contre le courrier indésirable sortant et ce qu’il convient de faire si vous avez besoin d’envoyer des publipostages en masse.
-ms.openlocfilehash: ffedcf68489914865c00eb68aecfa6c74e519ee2
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+description: Les administrateurs peuvent en savoir plus sur les contrôles de courrier indésirable sortants dans Exchange Online Protection (EOP) et la marche à suivre si vous devez envoyer des publipostages en masse.
+ms.openlocfilehash: 99502e7fb55419dedb4d0f7d4a7e6c4591eff859
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44033925"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208922"
 ---
-# <a name="outbound-spam-protection"></a>Protection contre le courrier indésirable sortant
+# <a name="outbound-spam-protection-in-eop"></a>Protection contre le courrier indésirable sortant dans EOP
 
-Nous assurons la gestion du courrier indésirable sortant, car Microsoft 365 (Exchange Online ou une version autonome d’Exchange Online Protection (EOP) sans boîte aux lettres Exchange Online) est un service en ligne où de nombreux clients utilisent un pool de ressources partagé. Un client Microsoft 365 qui envoie intentionnellement ou involontairement du courrier indésirable à partir de son organisation peut dégrader la réputation de l’ensemble du service et peut avoir une incidence sur la remise des messages pour d’autres clients.
+Dans les organisations Microsoft 365 avec des boîtes aux lettres dans Exchange Online ou des organisations Exchange Online Protection (EOP) autonomes sans boîte aux lettres Exchange Online, nous prévoyons la gestion du courrier indésirable sortant. Un client qui envoie intentionnellement ou involontairement du courrier indésirable à partir de son organisation peut dégrader la réputation de l’ensemble du service et peut avoir une incidence sur la remise des messages pour d’autres clients.
 
 Cette rubrique décrit les contrôles et les notifications conçus pour éviter le courrier indésirable sortant, et ce que vous pouvez faire si vous devez envoyer des publipostages en masse.
 
@@ -36,17 +36,17 @@ Cette rubrique décrit les contrôles et les notifications conçus pour éviter 
 
 - **Utiliser des notifications intégrées**: lorsqu’un utilisateur dépasse les limites d’envoi du [service](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-across-office-365-options) ou des [stratégies de courrier indésirable sortant](configure-the-outbound-spam-policy.md) et qu’il ne peut pas envoyer de courrier électronique, la stratégie d’alerte par défaut nommée **User Restricted from sending email** envoie des notifications par courrier électronique aux membres du groupe **TenantAdmins** (**administrateurs globaux**). Pour configurer les personnes qui reçoivent ces notifications, consultez [la rubrique vérifier les paramètres d’alerte pour les utilisateurs restreints](removing-user-from-restricted-users-portal-after-spam.md#verify-the-alert-settings-for-restricted-users). Par ailleurs, les stratégies d’alerte par défaut nommées **e-mail Send Limit dépassées** et les **modèles d’envoi de courrier électronique suspects ont été détectés** envoyer des notifications par courrier électronique aux membres du groupe **TenantAdmins** (**administrateurs globaux**). Pour plus d’informations sur les stratégies d’alerte, accédez à [Stratégies d’alerte dans le centre de sécurité et conformité](../../compliance/alert-policies.md).
 
-- **Passer en revue les plaintes de courrier indésirable émanant de fournisseurs de courrier tiers**: de nombreux services de messagerie comme Outlook.com, Yahoo et AOL fournissent une boucle de commentaires où, si un utilisateur de son service marque un E-mail de Microsoft 365 comme courrier indésirable, le message est empaqueté et renvoyé à nous pour révision. Pour en savoir plus sur la prise en charge de l’expéditeur <https://sendersupport.olc.protection.outlook.com/pm/services.aspx>pour Outlook.com, accédez à.
+- **Passer en revue les plaintes de courrier indésirable émanant de fournisseurs de courrier tiers**: de nombreux services de messagerie comme Outlook.com, Yahoo et AOL fournissent une boucle de commentaires où, si un utilisateur de son service marque un E-mail de Microsoft 365 comme courrier indésirable, le message est empaqueté et renvoyé à nous pour révision. Pour en savoir plus sur la prise en charge de l’expéditeur pour Outlook.com, accédez à <https://sendersupport.olc.protection.outlook.com/pm/services.aspx> .
 
 ## <a name="how-eop-controls-outbound-spam"></a>Comment EOP contrôle le courrier indésirable sortant
 
-- **Répartition du trafic de messagerie sortant**: tous les messages sortants envoyés via le service sont analysés pour rechercher le courrier indésirable. Si le message est identifié comme courrier indésirable, il est envoyé à partir d’un pool d’adresses IP secondaire, moins fiable, nommé _pool de remise à haut risque_. Pour plus d’informations, consultez la rubrique [pool de remise à haut risque pour les messages sortants dans Office 365](high-risk-delivery-pool-for-outbound-messages.md).
+- **Répartition du trafic de messagerie sortant**: tous les messages sortants envoyés via le service sont analysés pour rechercher le courrier indésirable. Si le message est identifié comme courrier indésirable, il est envoyé à partir d’un pool d’adresses IP secondaire, moins fiable, nommé _pool de remise à haut risque_. Pour plus d’informations, consultez la rubrique [pool de remise à haut risque pour les messages sortants](high-risk-delivery-pool-for-outbound-messages.md).
 
 - **Surveillance de notre réputation d’adresse IP source**: Microsoft 365 interroge différentes listes d’adresses IP bloquées. Une alerte est générée si l’une des adresses IP que nous utilisons pour le courrier électronique sortant apparaît sur ces listes. Cela nous permet de réagir rapidement quand le courrier indésirable a provoqué une dégradation de notre réputation. Lorsqu’une alerte est générée, nous disposons d’une documentation interne qui explique comment obtenir nos adresses IP supprimer (désinscrite) des listes rouges.
 
-- **Désactiver les comptes qui envoient trop de courrier indésirable**<sup>\*</sup>: bien que nous puissions isoler le courrier indésirable sortant dans le pool de remise à haut risque, nous ne pouvons pas autoriser un compte (souvent un compte compromis) à envoyer indéfiniment du courrier indésirable. Nous Surveillez les comptes qui envoient du courrier indésirable, et lorsqu’ils dépassent une limite non divulguée, le compte ne peut pas envoyer de courrier électronique. Il existe différents seuils pour les utilisateurs individuels et l’ensemble du client.
+- **Désactiver les comptes qui envoient trop de courrier indésirable** <sup>\*</sup> : bien que nous puissions isoler le courrier indésirable sortant dans le pool de remise à haut risque, nous ne pouvons pas autoriser un compte (souvent un compte compromis) à envoyer indéfiniment du courrier indésirable. Nous Surveillez les comptes qui envoient du courrier indésirable, et lorsqu’ils dépassent une limite non divulguée, le compte ne peut pas envoyer de courrier électronique. Il existe différents seuils pour les utilisateurs individuels et l’ensemble du client.
 
-- **Désactivation des comptes qui envoient trop de courriers électroniques trop rapidement**<sup>\*</sup>: en plus des limites qui recherchent les messages marqués comme courriers indésirables, il existe également des limites qui bloquent les comptes lorsqu’ils atteignent une limite globale de messages sortants, quel que soit le filtrage du courrier indésirable sur les messages sortants. Un compte compromis peut envoyer du courrier indésirable de zéro jour (non reconnu) par le filtre anti-courrier indésirable. Étant donné qu’il peut être difficile d’identifier une campagne de publipostage légitime contre une campagne de courrier indésirable, ces limites contribuent à minimiser les dommages potentiels.
+- **Désactivation des comptes qui envoient trop de courriers électroniques trop rapidement** <sup>\*</sup> : en plus des limites qui recherchent les messages marqués comme courriers indésirables, il existe également des limites qui bloquent les comptes lorsqu’ils atteignent une limite globale de messages sortants, quel que soit le filtrage du courrier indésirable sur les messages sortants. Un compte compromis peut envoyer du courrier indésirable de zéro jour (non reconnu) par le filtre anti-courrier indésirable. Étant donné qu’il peut être difficile d’identifier une campagne de publipostage légitime contre une campagne de courrier indésirable, ces limites contribuent à minimiser les dommages potentiels.
 
 <sup>\*</sup>Nous n’avons pas annoncé les limites exactes pour lesquelles les spammeurs ne peuvent pas jouer le système, et donc nous pouvons augmenter ou diminuer les limites en conséquence. Les limites sont suffisamment élevées pour empêcher un utilisateur d’entreprise moyen de les dépasser, et suffisamment bas pour aider à contenir les dommages causés par un expéditeur de courrier indésirable.
 
@@ -60,4 +60,4 @@ Comme décrit dans la [Description du service Exchange Online](https://docs.micr
 
 - **Utiliser un fournisseur de courrier en nombre**tiers : il existe plusieurs fournisseurs de solutions de courrier en nombre tiers que vous pouvez utiliser pour envoyer des publipostages de masse. Ces sociétés ont un intérêt à collaborer avec les clients pour garantir de bonnes pratiques en matière d’envoi de courrier électronique.
 
-Le groupe de travail de messagerie, mobile, anti-abus de programmes malveillants (MAAWG) publie <https://www.maawg.org/about/roster>sa liste d’appartenance sur. Plusieurs fournisseurs de courrier en masse figurent dans la liste et sont appelés citoyens Internet responsables.
+Le groupe de travail de messagerie, mobile, anti-abus de programmes malveillants (MAAWG) publie sa liste d’appartenance sur <https://www.maawg.org/about/roster> . Plusieurs fournisseurs de courrier en masse figurent dans la liste et sont appelés citoyens Internet responsables.

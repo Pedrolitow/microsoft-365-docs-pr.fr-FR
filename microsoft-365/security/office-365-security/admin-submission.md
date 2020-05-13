@@ -1,5 +1,5 @@
 ---
-title: Envois d’administrateur dans Office 365
+title: Soumissions de l’administrateur
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -16,17 +16,17 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: Découvrez comment envoyer des e-mails suspects, des courriers électroniques de hameçonnage suspects, du courrier indésirable, ainsi que d’autres messages, URL et fichiers potentiellement dangereux de votre entreprise à Microsoft pour analyse.
-ms.openlocfilehash: 79f200963655e5fb07a04b686c1dd8cc3bbd0873
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+description: Les administrateurs peuvent apprendre à utiliser le portail d’envoi du centre de sécurité & conformité pour envoyer des e-mails suspects, des courriers électroniques de hameçonnage suspects, du courrier indésirable et d’autres messages potentiellement nuisibles, des URL et des fichiers à Microsoft à des fins d’analyse.
+ms.openlocfilehash: ae84c9ca111c7e7056ae97abff20471c474dccb2
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034199"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44209750"
 ---
 # <a name="use-admin-submission-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>Utilisez la soumission de l’administrateur pour soumettre des courriers indésirables, l’hameçonnage, des URL et des fichiers à Microsoft
 
-Si vous êtes administrateur dans une organisation Microsoft 365 avec des boîtes aux lettres dans Exchange Online, vous pouvez utiliser le portail d’envoi du centre de sécurité & conformité pour soumettre des messages électroniques, des URL et des pièces jointes à Microsoft à des fins d’analyse.
+Dans les organisations Microsoft 365 avec des boîtes aux lettres dans Exchange Online, les administrateurs peuvent utiliser le portail d’envoi du centre de sécurité & conformité pour soumettre des messages électroniques, des URL et des pièces jointes à Microsoft pour analyse.
 
 Lorsque vous soumettez un message électronique, vous obtenez des informations sur les stratégies susceptibles d’avoir autorisé le courrier entrant dans votre client, ainsi que sur l’examen de toutes les URL et pièces jointes du courrier. Les stratégies pouvant avoir autorisé un courrier incluent la liste des expéditeurs approuvés d’un utilisateur individuel, ainsi que des stratégies au niveau du client, telles que les règles de flux de messagerie Exchange (également appelées règles de transport).
 
@@ -34,7 +34,7 @@ Pour d’autres façons d’envoyer des messages électroniques, des URL et des 
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu'il faut savoir avant de commencer
 
-- Vous ouvrez le Centre de conformité et sécurité sur <https://protection.office.com/>. Pour accéder directement à la page d' **envoi** , <https://protection.office.com/reportsubmission>utilisez.
+- Vous ouvrez le Centre de sécurité et conformité sur <https://protection.office.com/>. Pour accéder directement à la page d' **envoi** , utilisez <https://protection.office.com/reportsubmission> .
 
 - Des autorisations doivent vous être attribuées avant de pouvoir exécuter ces procédures. Pour ajouter, modifier et supprimer des stratégies de blocage du courrier indésirable, vous devez être membre des groupes de rôles gestion de l' **organisation**, administrateur de la **sécurité**ou **lecteur de sécurité** . Pour des informations supplémentaires sur les groupes de rôles dans le Centre de sécurité et conformité, voir [Autorisations dans le Centre de sécurité et conformité](permissions-in-the-security-and-compliance-center.md).
 
@@ -42,7 +42,7 @@ Pour d’autres façons d’envoyer des messages électroniques, des URL et des 
 
 ## <a name="report-suspicious-content-to-microsoft"></a>Signaler du contenu suspect à Microsoft
 
-1. Dans le centre de sécurité & conformité, accédez **à gestion** \> des menaces- **vérifier** \> **les messages d’envoi**de l’administrateur.
+1. Dans le centre de sécurité & conformité, accédez à **gestion des menaces** - \> **vérifier** \> **les messages d’envoi**de l’administrateur.
 
 2. Sur la page des **envois** qui s’affiche, cliquez sur le bouton **nouvelle soumission** .
 
@@ -74,7 +74,7 @@ Pour d’autres façons d’envoyer des messages électroniques, des URL et des 
 
 ### <a name="send-a-suspect-url-to-microsoft"></a>Envoyer une URL suspecte à Microsoft
 
-1. Dans la section **type d’objet** , sélectionnez **URL**. Dans la zone qui s’affiche, entrez l’URL complète (par exemple <https://www.fabrikam.com/marketing.html>,).
+1. Dans la section **type d’objet** , sélectionnez **URL**. Dans la zone qui s’affiche, entrez l’URL complète (par exemple, <https://www.fabrikam.com/marketing.html> ).
 
 2. Dans la section **raison de l’envoi** , sélectionnez l’une des options suivantes :
 
@@ -104,11 +104,11 @@ Pour d’autres façons d’envoyer des messages électroniques, des URL et des 
 
 ## <a name="view-admin-submissions"></a>Afficher les soumissions de l’administrateur
 
-1. Dans le centre de sécurité & conformité, accédez **à gestion** \> des menaces- **vérifier** \> **les messages d’envoi**de l’administrateur.
+1. Dans le centre de sécurité & conformité, accédez à **gestion des menaces** - \> **vérifier** \> **les messages d’envoi**de l’administrateur.
 
 2. Sur la page des **envois** qui s’affiche, vérifiez que l’onglet **soumissions** de l’administrateur est sélectionné.
 
-En haut de la page, vous pouvez entrer une date de début, une date de fin et, par défaut, vous pouvez filtrer par **ID de soumission** en entrant une valeur dans la zone, ![puis en](../../media/scc-quarantine-refresh.png)cliquant sur le bouton Actualiser. Update
+En haut de la page, vous pouvez entrer une date de début, une date de fin et, par défaut, vous pouvez filtrer par **ID de soumission** en entrant une valeur dans la zone, puis en cliquant sur le ![ bouton actualiser ](../../media/scc-quarantine-refresh.png) . Update
 
 Pour modifier les critères de filtre, cliquez sur le bouton **ID de soumission** , puis choisissez l’une des valeurs suivantes :
 
@@ -116,7 +116,7 @@ Pour modifier les critères de filtre, cliquez sur le bouton **ID de soumission*
 - **Subject/URL/nom de fichier**
 - **Soumis par**
 - **Type d’envoi**
-- **État**
+- **Status**
 
 ![Options de filtrage pour les soumissions d’administration](../../media/admin-submission-email-filter-options.png)
 
@@ -178,7 +178,7 @@ Vous pouvez cliquer sur le bouton **options de colonne** dans la partie inférie
 
 Si vous avez déployé le [complément de rapport de message](enable-the-report-message-add-in.md)ou que les utilisateurs utilisent la [création de rapports intégrée dans Outlook sur le Web](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md), vous pouvez voir ce que les utilisateurs signalent sous l’onglet **soumissions** de l’utilisateur.
 
-1. Dans le centre de sécurité & conformité, accédez **à gestion** \> des menaces- **vérifier** \> **les messages d’envoi**de l’administrateur.
+1. Dans le centre de sécurité & conformité, accédez à **gestion des menaces** - \> **vérifier** \> **les messages d’envoi**de l’administrateur.
 
 2. Sur la page des **envois** qui s’affiche, cliquez sur l’onglet **soumissions** de l’utilisateur.
 
@@ -193,7 +193,7 @@ Vous pouvez cliquer sur le bouton **options de colonne** dans la partie inférie
 
 <sup>\*</sup>Si vous cliquez sur cette valeur, des informations détaillées s’affichent dans un lanceur.
 
-En haut de la page, vous pouvez entrer une date de début, une date de fin et, par défaut, vous pouvez filtrer par **expéditeur** en entrant une valeur dans la zone, puis en ![cliquant sur](../../media/scc-quarantine-refresh.png)le bouton Actualiser. Update
+En haut de la page, vous pouvez entrer une date de début, une date de fin et, par défaut, vous pouvez filtrer par **expéditeur** en entrant une valeur dans la zone, puis en cliquant sur le ![ bouton actualiser ](../../media/scc-quarantine-refresh.png) . Update
 
 Pour modifier les critères de filtre, cliquez sur le bouton **expéditeur** , puis choisissez l’une des valeurs suivantes :
 
@@ -211,7 +211,7 @@ Pour exporter les résultats, cliquez sur **Exporter** vers le haut de la page, 
 
 Si vous avez [configuré une boîte aux lettres personnalisée](user-submission.md) pour recevoir des messages signalés par l’utilisateur, vous pouvez afficher et envoyer également les messages qui ont été remis à la boîte aux lettres de création de rapports.
 
-1. Dans le centre de sécurité & conformité, accédez **à gestion** \> des menaces- **vérifier** \> **les messages d’envoi**de l’administrateur.
+1. Dans le centre de sécurité & conformité, accédez à **gestion des menaces** - \> **vérifier** \> **les messages d’envoi**de l’administrateur.
 
 2. Sur la page des **envois** qui s’affiche, cliquez sur l’onglet **boîte aux lettres personnalisée** .
 
@@ -224,7 +224,7 @@ Vous pouvez cliquer sur le bouton **options de colonne** dans la partie inférie
 - **IP de l’expéditeur**<sup>\*</sup>
 - **Type d’envoi**
 
-En haut de la page, vous pouvez entrer une date de début, une date de fin et un filtre par **envoyé par** en entrant une valeur dans la zone, puis en ![cliquant sur](../../media/scc-quarantine-refresh.png)le bouton Actualiser. Update
+En haut de la page, vous pouvez entrer une date de début, une date de fin et un filtre par **envoyé par** en entrant une valeur dans la zone, puis en cliquant sur le ![ bouton actualiser ](../../media/scc-quarantine-refresh.png) . Update
 
 Pour exporter les résultats, cliquez sur **Exporter** vers le haut de la page, puis sélectionnez **données de graphique** ou **tableau**. Dans la boîte de dialogue qui s’affiche, enregistrez le fichier. csv.
 

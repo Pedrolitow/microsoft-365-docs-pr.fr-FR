@@ -15,26 +15,26 @@ ms.assetid: 8401f520-8e7c-467b-9e06-4a9fdb2ba548
 ms.collection:
 - M365-security-compliance
 description: Les administrateurs peuvent apprendre à utiliser des règles de flux de messagerie (également appelées règles de transport) pour recevoir des copies de messages que les utilisateurs signalent à Microsoft.
-ms.openlocfilehash: 2b1e82ece936551c48e5617955f546cf851a8913
-ms.sourcegitcommit: c7f11d851073ef14a69669f6c8b7e0c11e4bb7a1
+ms.openlocfilehash: faafd8fb750259c192807349b63eee14279179de
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43939498"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208572"
 ---
 # <a name="use-mail-flow-rules-to-see-what-your-users-are-reporting-to-microsoft"></a>Utiliser des règles de transport pour bloquer le signalement des courriers indésirables à Microsoft
 
-Il existe plusieurs façons pour les utilisateurs de signaler des messages à Microsoft pour analyse, comme décrit dans la section [rapports de messages et de fichiers à Microsoft](report-junk-email-messages-to-microsoft.md).
+Dans les organisations Microsoft 365 avec des boîtes aux lettres dans Exchange Online ou des organisations Exchange Online Protection (EOP) autonomes sans boîte aux lettres Exchange Online, les utilisateurs peuvent signaler des messages à Microsoft pour analyse, comme décrit dans la section [rapports de messages et de fichiers à Microsoft](report-junk-email-messages-to-microsoft.md).
 
 Vous pouvez créer une règle de flux de messagerie (également appelée règle de transport) qui recherche les messages que les utilisateurs signalent à Microsoft, et vous pouvez configurer les destinataires CCI de sorte qu’ils reçoivent des copies de ces messages signalés.
 
-Vous pouvez créer la règle de flux de messagerie dans le centre d’administration Exchange et PowerShell (Exchange Online PowerShell pour les clients Microsoft 365 ; Exchange Online Protection PowerShell pour les clients EOP autonomes).
+Vous pouvez créer la règle de flux de messagerie dans le centre d’administration Exchange et PowerShell (Exchange Online PowerShell pour les organisations Microsoft 365 avec des boîtes aux lettres dans Exchange Online ; environnement de ligne de commande Exchange (PowerShell) autonome pour les organisations sans boîtes aux lettres Exchange Online).
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu'il faut savoir avant de commencer
 
 - Pour pouvoir effectuer ces procédures, vous devez disposer d’autorisations dans Exchange Online ou EOP. Plus précisément, vous devez disposer du rôle **de règles de transport** , qui est affecté aux rôles de gestion de l' **organisation**, de gestion de **la conformité**et de **gestion des enregistrements** par défaut. Pour plus d’informations, voir [Gérer les groupes de rôles dans Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/role-groups).
 
-- Pour ouvrir le centre d’administration Exchange, consultez la rubrique [Centre d’administration Exchange dans Exchange Online](https://docs.microsoft.com/Exchange/exchange-admin-center) ou [Centre d’administration Exchange dans Exchange Online Protection](exchange-admin-center-in-exchange-online-protection-eop.md).
+- Pour ouvrir le centre d’administration Exchange, consultez la rubrique [Centre d’administration Exchange dans Exchange Online](https://docs.microsoft.com/Exchange/exchange-admin-center) ou [Centre d’administration Exchange dans la version autonome EOP](exchange-admin-center-in-exchange-online-protection-eop.md).
 
 - Pour vous connecter à Exchange Online PowerShell, voir [Connexion à Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell). Pour vous connecter à un service Exchange Online Protection autonome, voir [Se connecter à PowerShell d’Exchange Online Protection](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell).
 
@@ -50,7 +50,7 @@ Vous pouvez créer la règle de flux de messagerie dans le centre d’administra
 
 1. Dans le CAE, accédez à **Flux de messagerie** \> **Règles**.
 
-2. Cliquez sur **Ajouter** ![une](../../media/ITPro-EAC-AddIcon.png) icône Ajouter, puis sélectionnez **créer une nouvelle règle**.
+2. Cliquez sur **Ajouter** ![ une icône Ajouter ](../../media/ITPro-EAC-AddIcon.png) , puis sélectionnez **créer une nouvelle règle**.
 
 3. Dans la page **Nouvelle règle** qui s'ouvre, configurez les paramètres suivants :
 
@@ -58,14 +58,14 @@ Vous pouvez créer la règle de flux de messagerie dans le centre d’administra
 
    - Cliquez sur **Autres options**.
 
-   - **Appliquer cette règle si**: sélectionnez **l’adresse du destinataire** \> **contient l’un des mots**suivants : dans la boîte de dialogue **spécifier des mots ou des expressions** qui s’affiche, entrez l’une des valeurs suivantes, puis cliquez sur **Ajouter** ![une icône](../../media/ITPro-EAC-AddIcon.png)et répétez l’opération jusqu’à ce que vous ayez entré toutes les valeurs.
+   - **Appliquer cette règle si**: sélectionnez **l’adresse du destinataire** contient l’un \> **des mots**suivants : dans la boîte de dialogue **spécifier des mots ou des expressions** qui s’affiche, entrez l’une des valeurs suivantes, puis cliquez sur **Ajouter** une ![ icône ](../../media/ITPro-EAC-AddIcon.png) et répétez l’opération jusqu’à ce que vous ayez entré toutes les valeurs.
 
      - `junk@office365.microsoft.com`
      - `abuse@messaging.microsoft.com`
      - `phish@office365.microsoft.com`
      - `false_positive@messaging.microsoft.com`
 
-     Pour modifier une entrée, sélectionnez-la et **Edit** ![cliquez sur modifier](../../media/ITPro-EAC-EditIcon.png)l’icône modifier. Pour supprimer une entrée, sélectionnez-la et **Remove** ![cliquez sur supprimer](../../media/ITPro-EAC-DeleteIcon.png)l’icône Supprimer.
+     Pour modifier une entrée, sélectionnez-la et cliquez sur **modifier** l' ![ icône modifier ](../../media/ITPro-EAC-EditIcon.png) . Pour supprimer une entrée, sélectionnez-la et cliquez sur **supprimer** l' ![ icône Supprimer ](../../media/ITPro-EAC-DeleteIcon.png) .
 
      Lorsque vous avez terminé, cliquez sur **OK**.
 
@@ -89,7 +89,7 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, vo
 
 Pour vérifier que vous avez configuré des règles de flux de messagerie pour recevoir des copies de messages signalés, effectuez l’une des opérations suivantes :
 
-- Dans le centre d’administration Exchange, accédez à **règles** \> de **flux** \> de **Edit** ![messagerie sélectionnez la](../../media/ITPro-EAC-EditIcon.png)règle \> , cliquez sur modifier l’icône d’édition et vérifiez les paramètres.
+- Dans le centre d’administration Exchange, accédez à règles de **flux de messagerie** \> **Rules** \> Sélectionnez la règle \> , cliquez sur **modifier** ![ l’icône d’édition ](../../media/ITPro-EAC-EditIcon.png) et vérifiez les paramètres.
 
 - Dans PowerShell, exécutez la commande suivante pour vérifier les paramètres :
 

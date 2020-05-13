@@ -1,11 +1,11 @@
 ---
-title: Protéger la boîte aux lettres locale-Exchange Online Protection
+title: Protéger les boîtes aux lettres locales en Chine avec EOP autonome
 f1.keywords:
 - NOCSH
-ms.author: tracyp
-author: MSFTTracyP
+ms.author: chrisda
+author: chrisda
 manager: dansimp
-ms.date: 6/1/2017
+ms.date: ''
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -20,15 +20,15 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: Dans cet article, vous apprendrez à protéger les boîtes aux lettres locales à l’aide d’Exchange Online Protection (EOP).
-ms.openlocfilehash: bdfebf16d77f26f3e3bb2890bd4aa8ccfa12f27b
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+description: Les administrateurs de la Chine utilisant Office 365 géré par 21Vianet peuvent apprendre à utiliser Exchange Online Protection (EOP) autonome pour protéger leurs boîtes aux lettres locales.
+ms.openlocfilehash: 6ce85e626f9bf4c960de57ad5cd15ac3148954cb
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44033877"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208293"
 ---
-# <a name="protect-on-premises-mailboxes-with-exchange-online-protection"></a>Protéger les boîtes aux lettres locales avec Exchange Online Protection
+# <a name="protect-on-premises-mailboxes-in-china-with-standalone-eop"></a>Protéger les boîtes aux lettres locales en Chine avec EOP autonome
 
 > [!NOTE]
 > Cet article s’applique uniquement à Office 365 géré par 21Vianet en Chine.
@@ -65,7 +65,7 @@ Après avoir configuré les connecteurs, attendez 72 heures avant d’autoriser
 
 ## <a name="step-5-ensure-that-spam-is-routed-to-each-users-junk-email-folder"></a>Étape 5 : vérifier que le courrier indésirable est acheminé vers le dossier de courrier indésirable de chaque utilisateur
 
-Pour vous assurer que le courrier indésirable est correctement routé vers le dossier Courrier indésirable de chaque utilisateur, vous pouvez effectuer quelques opérations de configuration. Les étapes sont fournies dans [configure standalone EOP pour envoyer du courrier indésirable dans le dossier courrier indésirable dans des environnements hybrides](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md). Si vous ne souhaitez pas déplacer les messages vers le dossier Courrier indésirable de chaque utilisateur, vous pouvez choisir une autre action en modifiant vos stratégies de filtrage de contenu dans le Centre d'administration Exchange. Si vous souhaitez en savoir plus, consultez l’article [Configurer les stratégies anti-courrier indésirable dans Office 365](configure-your-spam-filter-policies.md).
+Pour vous assurer que le courrier indésirable est correctement routé vers le dossier Courrier indésirable de chaque utilisateur, vous pouvez effectuer quelques opérations de configuration. Les étapes sont fournies dans [configure standalone EOP pour envoyer du courrier indésirable dans le dossier courrier indésirable dans des environnements hybrides](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md). Si vous ne souhaitez pas déplacer les messages vers le dossier de courrier indésirable de chaque utilisateur, vous pouvez choisir une autre action en modifiant vos stratégies de blocage du courrier indésirable (également appelées stratégies de filtrage de contenu). Si vous souhaitez en savoir plus, consultez l’article [Configurer les stratégies anti-courrier indésirable dans Office 365](configure-your-spam-filter-policies.md).
 
 ## <a name="step-6-use-the-microsoft-365-admin-center-to-point-your-mx-record-to-eop"></a>Étape 6 : utiliser le centre d’administration Microsoft 365 pour faire pointer votre enregistrement MX vers EOP
 

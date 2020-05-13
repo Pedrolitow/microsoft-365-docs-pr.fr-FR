@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: e49b80cc873887cf9cc447a28ac2a274034176fc
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: 49b5491cb67f447bf8cca1d88aab807c1bf30624
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44066237"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208386"
 ---
 # <a name="communication-compliance-in-microsoft-365"></a>Conformité de la communication dans Microsoft 365
 
@@ -97,7 +97,7 @@ Les nouveaux tableaux de bord interactifs pour les alertes, les correspondances 
 
 Stratégies de conformité des communications analysez et capturez les messages sur plusieurs canaux de communication pour vous aider à examiner et à corriger rapidement les problèmes de conformité :
 
-- **Microsoft teams**: les communications de conversation pour les canaux [Microsoft teams](https://docs.microsoft.com/MicrosoftTeams/Teams-overview) publics et privés et les conversations individuelles sont prises en charge dans la conformité de la communication en tant que source de canal autonome ou avec d’autres services Microsoft 365. Les stratégies analysent désormais automatiquement toutes les équipes et tous les canaux Microsoft teams pour des utilisateurs spécifiques définis dans une stratégie, ce qui évite d’avoir à conserver une liste de mappage distincte pour les affectations de Microsoft Teams.
+- **Microsoft teams**: les communications de conversation pour les canaux [Microsoft teams](https://docs.microsoft.com/MicrosoftTeams/Teams-overview) publics et privés et les conversations individuelles sont prises en charge dans la conformité de la communication en tant que source de canal autonome ou avec d’autres services Microsoft 365. Vous devez ajouter manuellement des utilisateurs individuels, des groupes de distribution ou des canaux Microsoft teams spécifiques lorsque vous sélectionnez des utilisateurs et des groupes à superviser dans une stratégie de conformité de communication.
 - **Exchange Online**: toutes les boîtes aux lettres hébergées sur [Exchange Online](https://docs.microsoft.com/Exchange/exchange-online) dans votre organisation Microsoft 365 sont éligibles pour l’analyse. Les e-mails et les pièces jointes correspondant aux conditions de stratégie de conformité de communication sont immédiatement disponibles pour la surveillance et dans les rapports de conformité. Exchange Online est maintenant un canal source facultatif et n’est plus requis dans les stratégies de conformité des communications.
 - **Yammer**: les messages privés et les conversations de la communauté publique dans [Yammer](https://docs.microsoft.com/yammer/yammer-landing-page) sont pris en charge dans les stratégies de conformité de communication. Yammer est un canal facultatif qui doit être en [mode natif](https://docs.microsoft.com/yammer/configure-your-yammer-network/overview-native-mode) pour prendre en charge l’analyse des messages et des pièces jointes.
 - **Skype entreprise Online**: les stratégies de conformité des communications prennent en charge l’analyse des communications de conversation et des pièces jointes associées dans [Skype entreprise Online](https://docs.microsoft.com/SkypeForBusiness/skype-for-business-online).

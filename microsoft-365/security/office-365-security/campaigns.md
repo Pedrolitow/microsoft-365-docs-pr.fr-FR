@@ -17,12 +17,12 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Découvrez Campaign Views dans Office 365 - Protection avancée contre les menaces.
-ms.openlocfilehash: 69b11319ffb033b628e59abac931b6a3f30d082c
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 5441c877dac70330bf1e5653983494be5b1b3293
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637817"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44209594"
 ---
 # <a name="campaign-views-in-atp"></a>Affichages de campagne dans la protection avancée contre les menaces
 
@@ -54,15 +54,15 @@ Une campagne peut être à courte durée de vie ou peut s’étendre sur plusieu
 
 ## <a name="campaign-views-the-security--compliance-center"></a>Vue de campagne du centre de sécurité & conformité
 
-Les vues de campagne sont disponibles dans le [Centre de sécurité & conformité](https://protection.office.com) aux **campagnes**de **gestion** \> des menaces.
+Les vues de campagne sont disponibles dans le [Centre de sécurité & conformité](https://protection.office.com) aux campagnes de **gestion des menaces** \> **Campaigns**.
 
 ![Vue d’ensemble des campagnes dans la Centre de sécurité et conformité](../../media/campaigns-overview.png)
 
 Vous pouvez également accéder à la vue campagnes à partir de :
 
-- **Threat management** \> **Explorer** \> **View** Affichage \> des **campagnes marketing** dans l’Explorateur de gestion des menaces
+- **Gestion** \> des menaces **Explorateur** \> **Affichage** \> **Campagnes marketing**
 
-- **Threat management** \> **Explorer** Explorateur \> de gestion des menaces **Afficher** \> **toutes les** \> **campagnes** de messagerie
+- **Gestion** \> des menaces **Explorateur** \> **Affichage** \> **Tous les messages électroniques** \> **Campagne marketing**
 
 > [!TIP]
 > Si aucune donnée de campagne n’apparaît, essayez de modifier la plage de dates.
@@ -83,7 +83,7 @@ La page vue d’ensemble présente les informations suivantes sur la campagne :
 
 - **Clic**: nombre d’utilisateurs sur lesquels l’utilisateur a cliqué sur l’URL dans le message de hameçonnage.
 
-- **Cliquez sur taux**: pourcentage tel que calculé par «**boîte de réception**sur laquelle l'**utilisateur a cliqué** / ». Cette valeur est un indicateur de l’efficacité de la campagne et indique si les destinataires ont pu identifier le message en tant qu’hameçonnage et éviter de cliquer sur l’URL de la charge utile.
+- **Cliquez sur taux**: pourcentage tel que calculé par « boîte de réception sur laquelle l'**utilisateur a cliqué**  /  **Inboxed**». Cette valeur est un indicateur de l’efficacité de la campagne et indique si les destinataires ont pu identifier le message en tant qu’hameçonnage et éviter de cliquer sur l’URL de la charge utile.
 
 - **Consulté**le nombre d’utilisateurs qui l’ont fait par le biais du site Web de charge utile. S’il y a des valeurs de **clic** , mais que les liens fiables bloquent l’accès au site Web, cette valeur est égale à zéro.
 
@@ -144,7 +144,7 @@ Le diagramme contient les informations suivantes :
 
   <sup>\*\*</sup>Examinez vos stratégies de blocage du courrier indésirable, car ces messages doivent être mis en quarantaine et non remis.
 
-- **Emplacements de remise**: vous souhaiterez peut-être examiner les messages qui ont été remis aux destinataires (soit dans la boîte de réception, soit dans le dossier courrier indésirable), même si les utilisateurs n'ont pas cliqué sur l'URL de la charge utile dans le message. Vous pouvez également supprimer les messages mis en quarantaine en quarantaine. Pour plus d’informations, consultez la rubrique [mise en quarantaine des messages électroniques dans Office 365](quarantine-email-messages.md).
+- **Emplacements de remise**: vous souhaiterez peut-être examiner les messages qui ont été remis aux destinataires (soit dans la boîte de réception, soit dans le dossier courrier indésirable), même si les utilisateurs n'ont pas cliqué sur l'URL de la charge utile dans le message. Vous pouvez également supprimer les messages mis en quarantaine en quarantaine. Pour plus d’informations, consultez la rubrique [messages électroniques mis en quarantaine dans EOP](quarantine-email-messages.md).
 
   - **Dossier supprimé**
 

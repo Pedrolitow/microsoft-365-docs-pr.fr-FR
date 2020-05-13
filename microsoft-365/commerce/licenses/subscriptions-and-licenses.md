@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: 7ac93507-0e38-4398-8bfe-9c1d123cb387
 description: 'Découvrez les abonnements et les licences dans Microsoft 365 pour les entreprises et les personnes qui peuvent attribuer des licences et ce qui se passe quand vous attribuez une licence à quelqu’un. '
 ms.custom: okr_SMB
-ms.openlocfilehash: 1508daa6dae30c35a9517fceb81b0a4d2b4a7f58
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 5178b25de6f66968f8a89c7b2c34ee466f8855bd
+ms.sourcegitcommit: 4cfb8a9c3675d0aefcabd690273e2af85f2e38b0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635435"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44211437"
 ---
 # <a name="understand-subscriptions-and-licenses-in-microsoft-365-for-business"></a>Comprendre les abonnements et les licences dans Microsoft 365 pour les entreprises
 
@@ -58,20 +58,20 @@ Le tableau suivant indique ce qui se produit automatiquement lorsque vous attrib
   
 |**Si l'abonnement inclut ce service**|**Cet événement se produit automatiquement**|
 |:-----|:-----|
-|Exchange Online  <br/> |Une boîte aux lettres est créée pour cette personne.  <br/> |
+|Exchange Online  <br/> |Une boîte aux lettres est créée pour cette personne.  <br/> Pour plus d’informations sur le contrat SLA pour cette tâche, voir [«Configuration... messages dans le centre d’administration Microsoft 365](https://support.microsoft.com/help/2635238/setting-up-messages-in-the-office-365-admin-center). |
 |SharePoint Online  <br/> |Les autorisations de modification du site d'équipe SharePoint Online par défaut sont attribuées à cette personne.  <br/> |
 |Skype Entreprise Online  <br/> |La personne aura accès aux fonctionnalités associées à la licence.  <br/> |
-|Applications Microsoft 365 pour les entreprises  <br/> |La personne pourra télécharger Microsoft Office sur un maximum de 5 Mac ou PC, 5 tablettes et 5 smartphones.  <br/> |
+|Applications Microsoft 365 for entreprise  <br/> |La personne pourra télécharger Microsoft Office sur un maximum de 5 Mac ou PC, 5 tablettes et 5 smartphones.  <br/> |
    
 ## <a name="how-many-devices-can-people-install-office-on"></a>Sur combien d'appareils les utilisateurs peuvent-ils installer Office ?
 
 Si votre abonnement comprend un des produits suivants, chaque personne peut installer Office sur un maximum de 5 PC ou Mac, 5 tablettes et 5 téléphones.
   
-- Microsoft 365 apps pour les entreprises
+- Microsoft 365 Apps for business
     
-- Microsoft 365 Business standard
+- Microsoft 365 Business Standard
     
-- Applications Microsoft 365 pour les entreprises
+- Microsoft 365 Apps for enterprise
     
 - Office 365 Entreprise E3
     

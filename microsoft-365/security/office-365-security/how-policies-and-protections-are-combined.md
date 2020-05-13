@@ -15,17 +15,17 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: Découvrez l’ordre des applications des protections Office 365 et la façon dont la valeur de priorité dans les stratégies de protection détermine quelle stratégie est appliquée.
-ms.openlocfilehash: 856b3bc39cd971e605cd9f1c0f31554a853c1b67
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+description: Les administrateurs peuvent en savoir plus sur l’ordre des applications des protections dans Exchange Online Protection (EOP) et la façon dont la valeur de priorité dans les stratégies de protection détermine quelle stratégie est appliquée.
+ms.openlocfilehash: 176d39a240d49e0118b4bb8e8cee52a6e7c61b0e
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44036715"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44209438"
 ---
 # <a name="order-and-precedence-of-email-protection"></a>Ordre et priorité de la protection de la messagerie
 
-En tant qu’utilisateur de Microsoft 365, votre courrier électronique entrant peut être marqué par plusieurs formes de protection. Par exemple, les stratégies de protection contre le hameçonnage intégrées, disponibles pour tous les clients Microsoft 365, et les stratégies anti-hameçonnage plus robustes disponibles pour les clients Office 365 Advanced Threat Protection. Les messages passent également par des analyses de détection multiples pour les programmes malveillants, le courrier indésirable, le hameçonnage, etc. Une fois cette activité terminée, il peut y avoir une certaine confusion quant à l’application de la stratégie.
+Dans les organisations Microsoft 365 avec des boîtes aux lettres dans Exchange Online ou des organisations Exchange Online Protection (EOP) autonomes sans boîte aux lettres Exchange Online, le courrier électronique entrant peut être marqué par plusieurs formes de protection. Par exemple, les stratégies de protection contre le hameçonnage intégrées, disponibles pour tous les clients Microsoft 365, et les stratégies anti-hameçonnage plus robustes disponibles pour les clients Office 365 Advanced Threat Protection (Office 365 ATP). Les messages passent également par des analyses de détection multiples pour les programmes malveillants, le courrier indésirable, le hameçonnage, etc. Une fois cette activité terminée, il peut y avoir une certaine confusion quant à l’application de la stratégie.
 
 En règle générale, une stratégie appliquée à un message est identifiée dans l’en-tête **X-Forefront-antispam-Report** de la propriété **Cat (Category)** . Pour plus d’informations, consultez la rubrique [en-têtes de message anti-courrier indésirable](anti-spam-message-headers.md).
 
@@ -36,19 +36,19 @@ Il existe deux facteurs principaux qui déterminent la stratégie appliquée à 
   |||||
   |---|---|---|---|
   |**Priorité**|**Protection de la messagerie**|**Catégorie**|**Où gérer**|
-  |0,1|Programme malveillant|CAT : MALW|[Configurer des stratégies anti-programmes malveillants dans Office 365](configure-anti-malware-policies.md)|
-  |n°2|Hameçonnage|CAT : PHSH|[Configuration de stratégies de blocage du courrier indésirable dans Office 365](configure-your-spam-filter-policies.md)|
-  |3|Courrier fortement suspecté d’être indésirable|CAT : HSPM|[Configuration de stratégies de blocage du courrier indésirable dans Office 365](configure-your-spam-filter-policies.md)|
-  |4 |Usurpation|CAT : USURPATION|[Configurer l’intelligence des usurpations d’identité dans Office 365](learn-about-spoof-intelligence.md)|
-  |5 |Courrier indésirable|CAT : SPM|[Configuration de stratégies de blocage du courrier indésirable dans Office 365](configure-your-spam-filter-policies.md)|
-  |6 |Courrier en nombre|CAT : BULK|[Configuration de stratégies de blocage du courrier indésirable dans Office 365](configure-your-spam-filter-policies.md)|
-  |7j/7<sup>\*</sup>|Emprunt d’identité de domaine (utilisateurs protégés)|DIMP|[Configurer des stratégies anti-hameçonnage ATP dans Office 365](configure-atp-anti-phishing-policies.md)|
-  |8bits<sup>\*</sup>|Emprunt d’identité d’utilisateur (domaines protégés)|UIMP|[Configurer des stratégies anti-hameçonnage ATP dans Office 365](configure-atp-anti-phishing-policies.md)|
+  |0,1|Programme malveillant|CAT : MALW|[Configurer des stratégies anti-programmes malveillants dans EOP](configure-anti-malware-policies.md)|
+  |n°2|Hameçonnage|CAT : PHSH|[Configurer des stratégies de blocage du courrier indésirable dans EOP](configure-your-spam-filter-policies.md)|
+  |3|Courrier fortement suspecté d’être indésirable|CAT : HSPM|[Configurer des stratégies de blocage du courrier indésirable dans EOP](configure-your-spam-filter-policies.md)|
+  |4 |Usurpation|CAT : USURPATION|[Configurer l’intelligence des usurpations d’identité dans EOP](learn-about-spoof-intelligence.md)|
+  |5 |Courrier indésirable|CAT : SPM|[Configurer des stratégies de blocage du courrier indésirable dans EOP](configure-your-spam-filter-policies.md)|
+  |6 |Courrier en nombre|CAT : BULK|[Configurer des stratégies de blocage du courrier indésirable dans EOP](configure-your-spam-filter-policies.md)|
+  |7j/7<sup>\*</sup>|Emprunt d’identité de domaine (utilisateurs protégés)|DIMP|[Configurer des stratégies anti-hameçonnage ATP](configure-atp-anti-phishing-policies.md)|
+  |8bits<sup>\*</sup>|Emprunt d’identité d’utilisateur (domaines protégés)|UIMP|[Configurer des stratégies anti-hameçonnage ATP](configure-atp-anti-phishing-policies.md)|
   |
 
   <sup>\*</sup>Ces fonctionnalités sont disponibles uniquement dans les stratégies anti-hameçonnage ATP.
 
-- **Priorité de la stratégie**: pour chaque type de protection (blocage du courrier indésirable, anti-programme malveillant, anti-hameçonnage, etc.), il existe une stratégie par défaut qui s’applique à tous les utilisateurs, mais vous pouvez souvent créer des stratégies personnalisées qui s’appliquent à des utilisateurs spécifiques. Chaque stratégie personnalisée a une valeur de priorité qui détermine l’ordre dans lequel les stratégies sont appliquées. La stratégie par défaut est toujours appliquée en dernier.
+- **Priorité de la stratégie**: pour chaque type de protection (blocage du courrier indésirable, anti-programme malveillant, anti-hameçonnage, etc.), il existe une stratégie par défaut qui s’applique à tous les utilisateurs, mais vous pouvez créer des stratégies personnalisées qui s’appliquent à des utilisateurs spécifiques. Chaque stratégie personnalisée a une valeur de priorité qui détermine l’ordre dans lequel les stratégies sont appliquées. La stratégie par défaut est toujours appliquée en dernier.
 
   Si un utilisateur est défini dans plusieurs stratégies du même type, seule la stratégie avec la priorité la plus élevée est appliquée. Les stratégies restantes de ce type ne sont pas évaluées pour l’utilisateur (y compris la stratégie par défaut).
 

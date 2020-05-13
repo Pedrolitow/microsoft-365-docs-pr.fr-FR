@@ -26,12 +26,12 @@ search.appverid:
 - ZWD160
 ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: Dans cet article, vous découvrirez comment utiliser les liens fiables pour protéger votre organisation contre le hameçonnage et les autres attaques.
-ms.openlocfilehash: 5f166848fe5c2beb46fedfaa33394e1e73c94a10
-ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
+ms.openlocfilehash: 9f6222889d213c25c7411e39f0714ccf09cfe0d9
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44045248"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208946"
 ---
 # <a name="atp-safe-links"></a>Liens fiables ATP
 
@@ -48,7 +48,7 @@ Une fois vos stratégies de liens fiables ATP en place, les administrateurs gén
          
 ## <a name="how-to-get-atp-safe-links-protection"></a>Comment obtenir la protection des liens fiables ATP
 
-Tout d’abord, assurez-vous **que votre abonnement inclut la [protection avancée contre les menaces](office-365-atp.md)**. La protection avancée contre les menaces est incluse dans les abonnements, tels que [microsoft 365 entreprise](https://www.microsoft.com/microsoft-365/enterprise/home), [Microsoft 365 Business Premium](https://www.microsoft.com/microsoft-365/business), Office 365 entreprise E5, Office 365 éducation a5, etc. Si votre organisation dispose d’un abonnement Microsoft 365 qui n’inclut pas Office 365 ATP, vous pouvez potentiellement acheter l’ATP en tant que module complémentaire. Pour plus d’informations, reportez-vous aux ressources suivantes : 
+Tout d’abord, assurez-vous **que votre abonnement inclut la [protection avancée contre les menaces](office-365-atp.md)**. La protection avancée contre les menaces est incluse dans les abonnements, tels que [microsoft 365 entreprise](https://www.microsoft.com/microsoft-365/enterprise/home), [Microsoft 365 Business Premium](https://www.microsoft.com/microsoft-365/business), Office 365 entreprise E5, Office 365 éducation a5, etc. Si votre organisation dispose d’un abonnement Microsoft 365 qui n’inclut pas Office 365 ATP, vous pouvez acheter l’ATP en tant que module complémentaire. Pour plus d’informations, reportez-vous aux ressources suivantes : 
 
 - [Offres et tarifs de protection avancée contre les menaces Office 365](https://products.office.com/exchange/advance-threat-protection)
 
@@ -69,8 +69,8 @@ Assurez- **vous également que vous disposez des autorisations nécessaires**. P
 |Role  |WHERE/How Assigned  |
 |---------|---------|
 |administrateur général |La personne qui s’inscrit pour acheter Microsoft 365 est un administrateur global par défaut. (Pour en savoir plus, consultez la rubrique [à propos des rôles d’administrateur Microsoft 365](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles) .)         |
-|Administrateur de sécurité |Centre d’administration Azure Active Directory[https://aad.portal.azure.com](https://aad.portal.azure.com)()|
-|Gestion d’Organisation Exchange Online |Centre d’administration Exchange[https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)() <br>ou <br>  Applets de commande PowerShell (consultez la rubrique [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell)) |
+|Administrateur de sécurité |Centre d’administration Azure Active Directory ( [https://aad.portal.azure.com](https://aad.portal.azure.com) )|
+|Gestion d’Organisation Exchange Online |Centre d’administration Exchange ( [https://outlook.office365.com/ecp](https://outlook.office365.com/ecp) ) <br>ou <br>  Applets de commande PowerShell (consultez la rubrique [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell)) |
     
 ## <a name="how-to-make-sure-atp-safe-links-protection-is-in-place"></a>Comment s’assurer que la protection des liens fiables DAV est en place
 
@@ -87,7 +87,7 @@ Le tableau suivant décrit certains exemples de scénarios dans lesquels la prot
 |Jean est membre d’un groupe qui a des stratégies de liens fiables ATP couvrant les URL des documents de messagerie et Office. Jean ouvre une présentation PowerPoint qu’une personne a envoyée, puis clique sur une URL dans la présentation.  <br/> |Oui. Les stratégies de liens fiables ATP définies s’appliquent au groupe de Jean, à la messagerie de Jean, ainsi qu’aux documents Word, Excel, PowerPoint ou Visio que Jean ouvre, tant que Jean est connecté et utilise les applications Microsoft 365 pour les appareils Windows, iOS ou Android.  <br/> |
 |Dans l’organisation de Chris, aucun administrateur général ou de sécurité n’a défini de stratégie de liens fiables ATP. Chris reçoit un courrier électronique contenant une URL vers un site Web malveillant. Chris ignore que l’URL est malveillante et clique sur le lien.  <br/> |Non. La stratégie par défaut qui couvre les URL de tous les membres de l’organisation doit être définie de manière à ce que la protection soit mise en place.  <br/> |
 |Dans l’organisation de Pat, aucun administrateur général ou de sécurité n’a défini ou modifié les stratégies de liens fiables ATP. Pat ouvre un document Word et clique sur une URL dans le fichier.  <br/> |Non. Une stratégie qui inclut des documents Office doit être définie de manière à ce que la protection soit mise en place. Consultez la rubrique [configurer des stratégies de liens fiables ATP dans Office 365](set-up-atp-safe-links-policies.md).  <br/> |
-|L’organisation de Lee a une stratégie de liens approuvés ATP `https://tailspintoys.com` qui apparaît sous la forme d’un site Web bloqué. Lee reçoit un message électronique contenant une URL vers `https://tailspintoys.com/aboutus/trythispage`. Lee clique sur l’URL.  <br/> |Cela dépend du fait que le site entier et toutes ses sous-pages sont inclus dans la liste des URL bloquées. Consultez [la rubrique Configurer une liste d’URL bloquées personnalisées à l’aide de liens fiables ATP](set-up-a-custom-blocked-urls-list-atp.md).  <br/> |
+|L’organisation de Lee a une stratégie de liens approuvés ATP qui `https://tailspintoys.com` apparaît sous la forme d’un site Web bloqué. Lee reçoit un message électronique contenant une URL vers `https://tailspintoys.com/aboutus/trythispage` . Lee clique sur l’URL.  <br/> |Cela dépend du fait que le site entier et toutes ses sous-pages sont inclus dans la liste des URL bloquées. Consultez [la rubrique Configurer une liste d’URL bloquées personnalisées à l’aide de liens fiables ATP](set-up-a-custom-blocked-urls-list-atp.md).  <br/> |
 |Marie, collègue de Jean, envoie un message électronique à Jean, sans savoir que le courrier électronique contient une URL malveillante.  <br/> |Cela dépend du fait que des stratégies de liens fiables ATP sont définies pour les messages envoyés au sein de l’organisation. Consultez la rubrique [configurer des stratégies de liens fiables ATP dans Office 365](set-up-atp-safe-links-policies.md).  <br/> |
 
 

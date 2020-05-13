@@ -15,12 +15,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 description: Obtenez une vue d’ensemble des fonctionnalités d’analyse et de réponse automatisées dans Office 365 Advanced Threat Protection Plan 2.
 ms.custom: air - seo-marvel-mar2020
-ms.openlocfilehash: 3f8aa761207be61f78eb5f9b5140439c86455bf3
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: d62d24a8f4cbd0541099ece91e46a23d3fbc786c
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035615"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208910"
 ---
 # <a name="an-overview-of-automated-investigation-and-response-air-in-microsoft-365"></a>Vue d’ensemble de l’analyse et de la réponse automatisées (AIR) dans Microsoft 365
 
@@ -50,7 +50,7 @@ Pour l’AIR, les alertes générées à partir des types de stratégies d’ale
 > [!NOTE]
 > Les alertes signalées par un astérisque (*) sont affectées d’une gravité *informatif* dans les stratégies d’alerte respectives dans le centre de sécurité & conformité, les notifications par courrier étant désactivées. Les notifications par courrier électronique peuvent être activées par le biais de la [Configuration des stratégies d’alerte](../../compliance/alert-policies.md#alert-policy-settings). Les alertes marquées avec un hachage (#) sont généralement des alertes disponibles associées aux règles de préversion publique.
 
-Pour afficher les alertes, dans le centre de sécurité & conformité, sélectionnez **alertes** > **afficher les alertes**. Sélectionnez une alerte pour afficher ses détails, puis, à partir de là, utilisez le lien **consulter l’enquête** pour accéder à l' [enquête](air-view-investigation-results.md#investigation-graph)correspondante.  
+Pour afficher les alertes, dans le centre de sécurité & conformité, sélectionnez **alertes**  >  **afficher les alertes**. Sélectionnez une alerte pour afficher ses détails, puis, à partir de là, utilisez le lien **consulter l’enquête** pour accéder à l' [enquête](air-view-investigation-results.md#investigation-graph)correspondante.  
 
 > [!NOTE]
 > Les alertes d’information sont masquées par défaut dans l’affichage des alertes. Pour les afficher, modifiez le filtrage des alertes de manière à inclure des alertes d’information.
@@ -68,6 +68,7 @@ Les règles de sécurité que vous obtenez avec AIR sont conçues pour aborder l
 ### <a name="security-playbooks-are-rolling-out-in-phases"></a>Les règles de sécurité sont déployées en plusieurs phases
 
 Dans le cadre de l’AIR, les règles de sécurité sont déployées en plusieurs phases. La phase 1 est désormais généralement disponible et comprend plusieurs règles qui fournissent des recommandations pour les actions que les administrateurs de la sécurité peuvent examiner et approuver :
+
 - Message hameçon signalé par l’utilisateur
 - URL cliquez sur modifier le verdict
 - Détection de programmes malveillants après la livraison (programmes malveillants ZAP)
@@ -76,6 +77,7 @@ Dans le cadre de l’AIR, les règles de sécurité sont déployées en plusieur
 La phase 1 prend également en charge les enquêtes de courrier électronique déclenchées par l’administrateur (à l’aide de l' [Explorateur de menaces](threat-explorer.md)).
 
 La phase 2 est désormais en cours avec les règles suivantes en **Aperçu public**, en fournissant des recommandations pour les actions et en aidant les administrateurs de la sécurité à examiner les problèmes :
+
 - Utilisateur signalé comme compromis (préversion publique)
 
 D’autres règles seront publiées au fur et à mesure de leur exécution. Consultez la feuille de [route Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap) pour voir les autres éléments planifiés et bientôt disponibles.
@@ -83,6 +85,7 @@ D’autres règles seront publiées au fur et à mesure de leur exécution. Cons
 ### <a name="playbooks-include-investigation-and-recommendations"></a>Les règles incluent une enquête et des recommandations
 
 Dans AIR, chaque manuel de sécurité inclut les éléments suivants : 
+
 - une enquête racine des entités d’un e-mail (fichiers, URL, destinataires, adresses IP, etc.);
 - la chasse aux courriels similaires reçus par l’Organisation ; 
 - les étapes à suivre pour identifier et corréler les autres menaces potentielles, et 
@@ -95,6 +98,7 @@ Chaque étape de haut niveau inclut un certain nombre de sous-étapes qui sont e
 Supposons qu’un utilisateur de votre organisation reçoit un message indiquant qu’il s’agit d’une tentative de hameçonnage. L’utilisateur, formé pour signaler de tels messages, utilise le [complément de message de rapport](enable-the-report-message-add-in.md) pour l’envoyer à Microsoft pour analyse. L’envoi est également envoyé à votre système et est visible dans l’Explorateur dans l’affichage des **soumissions** (anciennement appelé vue **signalée** par l’utilisateur). En outre, le message signalée par l’utilisateur déclenche désormais une alerte d’information basée sur le système, qui lance automatiquement le manuel d’enquête.
 
 Lors de la phase d’enquête de racine, différents aspects du courrier électronique sont évalués. Cela inclut ce qui suit :
+
 - Détermination du type de menace susceptible de se présenter ;
 - Expéditeur ;
 - Emplacement d’envoi du courrier électronique (infrastructure émettrice);
@@ -110,8 +114,8 @@ Ensuite, plusieurs étapes d’enquête sur les menaces et de chasse sont exécu
 - Les messages électroniques similaires sont identifiés par des recherches de cluster de messagerie.
 - Le signal est partagé avec d’autres plateformes, telles que [Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection).
 - Une détermination est effectuée sur le fait que les utilisateurs aient cliqué sur les liens malveillants dans les messages électroniques suspects.
-- Une vérification est effectuée sur Exchange Online Protection ([EOP](exchange-online-protection-eop.md)) et Office 365 Advanced Threat Protection ([ATP](office-365-atp.md)) pour voir s’il existe d’autres messages similaires signalés par les utilisateurs.
-- Une vérification est exécutée pour déterminer si un utilisateur a été compromis. Cette vérification exploite les signaux entre Office 365, [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security)et [Azure Active Directory](https://docs.microsoft.com/azure/active-directory), en mettant en corrélation les anomalies d’activité de l’utilisateur associées. 
+- Une vérification est effectuée sur Exchange Online Protection ([EOP](exchange-online-protection-overview.md)) et Office 365 Advanced Threat Protection ([ATP](office-365-atp.md)) pour voir s’il existe d’autres messages similaires signalés par les utilisateurs.
+- Une vérification est exécutée pour déterminer si un utilisateur a été compromis. Cette vérification exploite les signaux entre Office 365, [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security)et [Azure Active Directory](https://docs.microsoft.com/azure/active-directory), en mettant en corrélation les anomalies d’activité de l’utilisateur associées.
 
 Au cours de la phase de chasse, les risques et les menaces sont affectés à différentes étapes de la chasse. 
 
@@ -136,4 +140,3 @@ Dans le menu **actions** , vous pouvez sélectionner l' **enquête du déclenche
 - [Prise en main de l’utilisation de l’AIR](office-365-air.md)
 
 - [Consultez la feuille de route Microsoft 365 pour découvrir les éléments bientôt disponibles et à déployer](https://www.microsoft.com/microsoft-365/roadmap?filters=)
-

@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 12e68cd8fcd7c784b1d0b4c70c5c25370cbbb409
-ms.sourcegitcommit: 997f6227f33c3683ade9672e881d09216df22ee9
+ms.openlocfilehash: 66b3f7e446416b6252050e6f41a2b22d99d25767
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "44016001"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44209234"
 ---
 # <a name="microsoft-threat-protection-prerequisites"></a>Conditions préalables pour la Protection Microsoft contre les menaces
 
@@ -34,6 +34,9 @@ ms.locfileid: "44016001"
 Découvrez la gestion des licences, la configuration matérielle et logicielle requise, ainsi que d’autres paramètres de configuration pour mettre en service et utiliser la protection contre les menaces Microsoft.
 
 ## <a name="licensing-requirements"></a>Critères de licence
+
+>[!IMPORTANT]
+>À partir du 12 mai 2020, Microsoft mettra progressivement en place de nouvelles expériences optimisées concernant les licences requises et l' [activation de la protection contre les menaces Microsoft](mtp-enable.md). Pendant plusieurs semaines pendant cette période, certains clients commencent à voir les modifications apportées à leurs expériences de portail. Les informations sur les nouvelles expériences sont marquées **nouvelle expérience** dans cet article.
 
 Pour utiliser la protection contre les menaces Microsoft, vous avez besoin d’une licence unique ou d’une combinaison de licences. Ces licences ou combinaisons de licences vous donnent accès aux fonctionnalités de protection contre les menaces de Microsoft sans frais supplémentaires.
 
@@ -54,6 +57,19 @@ Pour plus d’informations, [consultez les plans de services d’entreprise Micr
 
 > Vous n’avez pas encore de licence ? [Essayez ou achetez un abonnement Microsoft 365](https://docs.microsoft.com/microsoft-365/commerce/try-or-buy-microsoft-365?view=o365-worldwide)
 
+
+**Nouvelle expérience :** À partir du 2020 12 mai, les clients recevront progressivement les modifications apportées à cette expérience. Pour les personnes ayant la nouvelle expérience, l’option d’activation de Microsoft Threat Protection sera disponible pour *tous* les clients disposant des licences suivantes :
+
+- Microsoft 365 E5 ou a5
+- Microsoft 365 E5 sécurité ou a5 sécurité
+- Windows 10 entreprise E5 ou a5
+- Enterprise Mobility + Security (EMS) E5 ou a5 
+- Office 365 E5 ou a5
+- Microsoft Defender – Protection avancée contre les menaces 
+- Azure Advanced Threat Protection 
+- Microsoft Cloud App Security 
+- Office 365 – Protection avancée contre les menaces (plan 2) 
+
 ### <a name="check-your-existing--licenses"></a>Vérifiez vos licences existantes
 Accédez au centre d’administration Microsoft 365 ([admin.Microsoft.com](https://admin.microsoft.com/)) pour afficher vos licences existantes. Dans le Centre d'administration, accédez à **Facturation** > **Licences**.
 
@@ -63,8 +79,8 @@ Accédez au centre d’administration Microsoft 365 ([admin.Microsoft.com](https
 ## <a name="browser-requirements"></a>Configuration requise pour le navigateur
 Accédez à la protection contre les menaces Microsoft dans le centre de sécurité Microsoft 365 à l’aide de Microsoft Edge, d’Internet Explorer 11 ou de n’importe quel navigateur Web compatible HTML 5.
 
-## <a name="microsoft-threat-protection-for-us-government-community-cloud-and-us-government-community-cloud-high-gcc-high-customers"></a>Protection Microsoft contre les menaces pour les clients du nuage communautaire du gouvernement américain et du Cloud communautaire pour le secteur public américain (GCC High)
-Actuellement, la protection Microsoft contre les menaces n’est pas disponible pour les clients des États-Unis GCC et GCC High. 
+## <a name="us-gcc-and-gcc-high-availability"></a>US GCC et GCC High Availability
+Actuellement, la protection Microsoft contre les menaces n’est pas disponible pour les clients du secteur public américain (GCC) et du Cloud communautaire public (GCC High). 
 
 ## <a name="related-topics"></a>Sujets associés
 - [Vue d’ensemble de la Protection Microsoft contre les menaces](microsoft-threat-protection.md)

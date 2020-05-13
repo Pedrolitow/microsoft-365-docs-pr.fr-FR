@@ -1,5 +1,5 @@
 ---
-title: Protection anti-hameçonnage dans Microsoft 365
+title: Protection anti-hameçonnage
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -18,13 +18,13 @@ ms.collection:
 ms.custom:
 - TopSMBIssues
 - seo-marvel-apr2020
-description: Cet article présente les ressources en ligne disponibles qui peuvent être utilisées pour découvrir et mettre en œuvre des stratégies et des options anti-hameçonnage dans Microsoft 365.
-ms.openlocfilehash: 09d384376b1e44989987c40ef3c7860e4fac6167
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+description: Les administrateurs peuvent en savoir plus sur les fonctionnalités de protection anti-hameçonnage dans Exchange Online Protection (EOP) et Office 365 Advanced Threat Protection (Office 365 ATP).
+ms.openlocfilehash: c1b9332fc35997dfe1cbfdfbef79e2d7beed736f
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44033761"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208970"
 ---
 # <a name="anti-phishing-protection-in-microsoft-365"></a>Protection anti-hameçonnage dans Microsoft 365
 
@@ -38,13 +38,13 @@ ms.locfileid: "44033761"
 
 - **Ransomware** qui chiffre vos données et demande un paiement pour les déchiffrer presque toujours dans les messages de hameçonnage. La protection anti-hameçonnage ne peut pas vous aider à déchiffrer les fichiers chiffrés, mais elle peut vous aider à détecter les messages de hameçonnage initiaux associés à la campagne de ransomware. Pour plus d’informations sur la récupération d’une attaque par ransomware, consultez [la rubrique relative à la récupération à partir d’une attaque par ransomware dans Microsoft 365](recover-from-ransomware.md).
 
-Avec la complexité croissante des attaques, il est même difficile pour les utilisateurs formés d’identifier les messages de hameçonnage sophistiqués. Heureusement, Exchange Online Protection (EOP) et les fonctionnalités supplémentaires de la protection avancée contre les menaces (ATP) de Microsoft 365 peuvent vous aider.
+Avec la complexité croissante des attaques, il est même difficile pour les utilisateurs formés d’identifier les messages de hameçonnage sophistiqués. Heureusement, Exchange Online Protection (EOP) et les fonctionnalités supplémentaires d’Office 365 Advanced Threat Protection (Office 365 ATP) peuvent vous aider.
 
 ## <a name="anti-phishing-protection-in-eop"></a>Protection anti-hameçonnage dans EOP
 
 EOP (les organisations Microsoft 365 sans ATP) contient des fonctionnalités qui peuvent vous aider à protéger votre organisation contre les menaces de hameçonnage :
 
-- **Veille contre l’usurpation d’identité** : passez en revue les messages usurpant une identité provenant des expéditeurs dans les domaines internes et externes, et autorisez ou bloquez ces expéditeurs. Si vous souhaitez en savoir plus, consultez l’article [Configurer la veille contre l’usurpation d’identité dans Microsoft 365](learn-about-spoof-intelligence.md).
+- **Veille contre l’usurpation d’identité** : passez en revue les messages usurpant une identité provenant des expéditeurs dans les domaines internes et externes, et autorisez ou bloquez ces expéditeurs. Pour plus d’informations, consultez la rubrique [configure usurpation Intelligence in EOP](learn-about-spoof-intelligence.md).
 
 - **Stratégies de détection d’hameçonnage dans EOP**: activation ou désactivation de l’intelligence des usurpations, activation ou désactivation de l’identification des expéditeurs non authentifiés dans Outlook, et spécification de l’action pour les expéditeurs usurpés bloqués (déplacer vers le dossier courrier indésirable ou mise en quarantaine). Pour plus d’informations, consultez la rubrique [configure anti-phishing Policies in EOP](configure-anti-phishing-policies-eop.md).
 

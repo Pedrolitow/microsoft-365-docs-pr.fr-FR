@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 1d463dda-a3b5-4675-95d4-83db19c9c4a3
 description: Découvrez comment automatiser des tâches de recherche de contenu, telles que la création de recherches et l’exécution de rapports via des scripts PowerShell dans le centre de sécurité & conformité dans Office 365.
-ms.openlocfilehash: 1967d17ab24c991d38a7c5881d3cff87750084c3
-ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
+ms.openlocfilehash: 2832b533c6350cdc2ab2852b6dd0d592603af46e
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "44166075"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208138"
 ---
 # <a name="create-report-on-and-delete-multiple-content-searches"></a>Créer, générer des rapports et supprimer plusieurs recherches de contenu
 
@@ -61,10 +61,10 @@ Le fichier de valeurs séparées par des virgules (CSV) que vous créez dans cet
     
 2. Ouvrez le fichier. txt dans Excel, puis utilisez les informations du tableau suivant pour modifier le fichier avec les informations pour chaque recherche. 
     
-    |**Paramètre**|**Description**|
+    |**Parameter**|**Description**|
     |:-----|:-----|
     | `ExchangeLocation` <br/> |Adresse SMTP de la boîte aux lettres de l’utilisateur.  <br/> |
-    | `SharePointLocation` <br/> |L’URL du site OneDrive entreprise de l’utilisateur ou l’URL de n’importe quel site de votre organisation. Pour l’URL des sites OneDrive entreprise, utilisez le format suivant : ` https://<your organization>-my.sharepoint.com/personal/<user alias>_<your organization>_onmicrosoft_com `. Par exemple : `https://contoso-my.sharepoint.com/personal/sarad_contoso_onmicrosoft_com`.  <br/> |
+    | `SharePointLocation` <br/> |L’URL du site OneDrive entreprise de l’utilisateur ou l’URL de n’importe quel site de votre organisation. Pour l’URL des sites OneDrive entreprise, utilisez le format suivant : ` https://<your organization>-my.sharepoint.com/personal/<user alias>_<your organization>_onmicrosoft_com ` . Par exemple : `https://contoso-my.sharepoint.com/personal/sarad_contoso_onmicrosoft_com`.  <br/> |
     | `ContentMatchQuery` <br/> |Requête de recherche pour la recherche. Pour plus d’informations sur la création d’une requête de recherche, consultez la rubrique [requêtes de mots clés et conditions de recherche pour la recherche de contenu](keyword-queries-and-search-conditions.md).  <br/> |
     | `StartDate` <br/> |Pour le courrier électronique, date à laquelle un message a été reçu par un destinataire ou envoyé par l’expéditeur. Pour les documents sur les sites SharePoint ou OneDrive entreprise, date de la dernière modification d’un document.  <br/> |
     | `EndDate` <br/> |Pour le courrier électronique, date à laquelle un message a été envoyé par l’utilisateur ou avant celui-ci. Pour les documents sur les sites SharePoint ou OneDrive entreprise, date de la dernière modification d’un document.  <br/> |
@@ -72,24 +72,10 @@ Le fichier de valeurs séparées par des virgules (CSV) que vous créez dans cet
 3. Enregistrez le fichier Excel en tant que fichier CSV dans un dossier sur votre ordinateur local. Le script que vous créez à l’étape 3 utilise les informations contenues dans ce fichier CSV pour créer les recherches. 
   
 ## <a name="step-2-connect-to-security--compliance-center-powershell"></a>Étape 2 : connectez-vous au Centre de sécurité et conformité PowerShell
-
-L’étape suivante consiste à vous connecter au centre de sécurité & de conformité PowerShell pour votre organisation.
   
-1. Enregistrez le texte suivant dans un fichier de script Windows PowerShell à l’aide d’un suffixe de nom de fichier. ps1 ; par exemple, `ConnectSCC.ps1`. Enregistrez le fichier dans le dossier dans lequel vous avez enregistré le fichier CSV à l’étape 1.
-    
-    ```powershell
-    # Get login credentials 
-    $UserCredential = Get-Credential 
-    $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.compliance.protection.outlook.com/powershell-liveid -Credential $UserCredential -Authentication Basic -AllowRedirection 
-    Import-PSSession $Session -AllowClobber -DisableNameChecking 
-    $Host.UI.RawUI.WindowTitle = $UserCredential.UserName + " (Security & Compliance Center)" 
-    ```
-
-2. Sur votre ordinateur local, ouvrez Windows PowerShell, accédez au dossier dans lequel se trouve le script que vous avez créé à l’étape précédente, puis exécutez le script ; par exemple :
-    
-    ```powershell
-    .\ConnectSCC.ps1
-    ```
+L’étape suivante consiste à se connecter au Centre de sécurité et conformité PowerShell de votre organisation. Pour consulter des instructions détaillées, voir [Se connecter au Centre de sécurité et conformité PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
+  
+Si votre compte Microsoft 365 utilise l’authentification multi-facteur (MFA) ou l’authentification fédérée, vous ne pouvez pas utiliser les instructions de la rubrique précédente pour vous connecter au Centre de sécurité et conformité PowerShell. Consultez plutôt les instructions de la rubrique [Se connecter au Centre de sécurité et conformité PowerShell à l’aide de l’authentification multi-facteur](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/mfa-connect-to-scc-powershell).
 
 ## <a name="step-3-run-the-script-to-create-and-start-the-searches"></a>Étape 3 : exécuter le script pour créer et démarrer les recherches
 
@@ -97,11 +83,11 @@ Le script de cette étape crée une recherche de contenu distincte pour chaque l
   
 - **ID de groupe de recherche** : ce nom permet d’organiser facilement les recherches créées à partir du fichier CSV. Chaque recherche créée est nommée avec l’ID de groupe de recherche, puis un numéro est ajouté au nom de la recherche. Par exemple, si vous entrez **ContosoCase** pour l’ID de groupe de recherche, les recherches sont nommées **ContosoCase_1**, **ContosoCase_2**, **ContosoCase_3**, et ainsi de suite. Notez que le nom que vous tapez est sensible à la casse. Lorsque vous utilisez l’ID de groupe de recherche à l’étape 4 et à l’étape 5, vous devez utiliser la même casse que celle que vous avez utilisée lors de sa création. 
     
-- **Fichier CSV** : nom du fichier CSV que vous avez créé à l’étape 1. Veillez à inclure le nom de fichier complet, en incluant l’extension de fichier. csv ; par exemple, `ContosoCase.csv`.
+- **Fichier CSV** : nom du fichier CSV que vous avez créé à l’étape 1. Veillez à inclure le nom de fichier complet, en incluant l’extension de fichier. csv ; par exemple, `ContosoCase.csv` .
     
 Pour exécuter le script :
 
-1. Enregistrez le texte suivant dans un fichier de script Windows PowerShell à l’aide d’un suffixe de nom de fichier. ps1 ; par exemple, `CreateSearches.ps1`. Enregistrez le fichier dans le dossier où vous avez enregistré les autres fichiers.
+1. Enregistrez le texte suivant dans un fichier de script Windows PowerShell à l’aide d’un suffixe de nom de fichier. ps1 ; par exemple, `CreateSearches.ps1` . Enregistrez le fichier dans le dossier où vous avez enregistré les autres fichiers.
     
   ```Powershell
   # Get the Search Group ID and the location of the CSV input file
@@ -184,9 +170,9 @@ Pour exécuter le script :
     .\CreateSearches.ps1
     ```
 
-3. À l’invite **ID de groupe de recherche** , tapez un nom de groupe de recherche, puis appuyez sur **entrée**; par exemple, `ContosoCase`. N’oubliez pas que ce nom est sensible à la casse, de sorte que vous devez le taper de la même manière dans les étapes suivantes.
+3. À l’invite **ID de groupe de recherche** , tapez un nom de groupe de recherche, puis appuyez sur **entrée**; par exemple, `ContosoCase` . N’oubliez pas que ce nom est sensible à la casse, de sorte que vous devez le taper de la même manière dans les étapes suivantes.
     
-4. À l’invite **fichier csv source** , tapez le nom du fichier CSV, y compris l’extension de fichier. csv ; par exemple, `ContosoCase.csv`.
+4. À l’invite **fichier csv source** , tapez le nom du fichier CSV, y compris l’extension de fichier. csv ; par exemple, `ContosoCase.csv` .
     
 5. Appuyez sur **entrée** pour poursuivre l’exécution du script. 
     
@@ -198,7 +184,7 @@ Pour exécuter le script :
 
 Une fois que vous avez créé les recherches, l’étape suivante consiste à exécuter un script qui affiche un rapport simple du nombre d’accès de recherche pour chaque recherche créée à l’étape 3. Le rapport inclut également la taille des résultats pour chaque recherche, ainsi que le nombre total d’accès et la taille totale de toutes les recherches. Lorsque vous exécutez le script de création de rapports, vous êtes invité à entrer l’ID de groupe de recherche et un nom de fichier CSV Si vous voulez enregistrer le rapport dans un fichier CSV.
   
-1. Enregistrez le texte suivant dans un fichier de script Windows PowerShell à l’aide d’un suffixe de nom de fichier. ps1 ; par exemple, `SearchReport.ps1`. Enregistrez le fichier dans le dossier où vous avez enregistré les autres fichiers.
+1. Enregistrez le texte suivant dans un fichier de script Windows PowerShell à l’aide d’un suffixe de nom de fichier. ps1 ; par exemple, `SearchReport.ps1` . Enregistrez le fichier dans le dossier où vous avez enregistré les autres fichiers.
     
   ```Powershell
   $searchGroup = Read-Host 'Search Group ID'
@@ -259,9 +245,9 @@ Une fois que vous avez créé les recherches, l’étape suivante consiste à ex
     .\SearchReport.ps1
     ```
 
-3. À l’invite **ID de groupe de recherche** , tapez un nom de groupe de recherche, puis appuyez sur **entrée**; par exemple `ContosoCase`. N’oubliez pas que ce nom est sensible à la casse, de sorte que vous devez le taper de la même manière que lorsque vous avez exécuté le script à l’étape 3.
+3. À l’invite **ID de groupe de recherche** , tapez un nom de groupe de recherche, puis appuyez sur **entrée**; par exemple `ContosoCase` . N’oubliez pas que ce nom est sensible à la casse, de sorte que vous devez le taper de la même manière que lorsque vous avez exécuté le script à l’étape 3.
     
-4. Dans le **chemin d’accès du fichier pour enregistrer le rapport dans un fichier CSV (laissez vide pour afficher l’État)** , tapez le chemin d’accès complet du nom de fichier (y compris l’extension. csv) si vous souhaitez enregistrer le rapport dans un fichier CSV. nom du fichier CSV, y compris l’extension de fichier. csv. Par exemple, vous pouvez taper `ContosoCaseReport.csv` pour l’enregistrer dans le répertoire actif ou taper `C:\Users\admin\OneDrive for Business\ContosoCase\ContosoCaseReport.csv` pour l’enregistrer dans un autre dossier. Vous pouvez également laisser l’invite vide pour afficher le rapport sans l’enregistrer dans un fichier. 
+4. Dans le **chemin d’accès du fichier pour enregistrer le rapport dans un fichier CSV (laissez vide pour afficher l’État)** , tapez le chemin d’accès complet du nom de fichier (y compris l’extension. csv) si vous souhaitez enregistrer le rapport dans un fichier CSV. nom du fichier CSV, y compris l’extension de fichier. csv. Par exemple, vous pouvez taper `ContosoCaseReport.csv` pour l’enregistrer dans le répertoire actif ou taper pour l' `C:\Users\admin\OneDrive for Business\ContosoCase\ContosoCaseReport.csv` enregistrer dans un autre dossier. Vous pouvez également laisser l’invite vide pour afficher le rapport sans l’enregistrer dans un fichier. 
     
 5. Appuyez sur **Entrée**.
     
@@ -276,7 +262,7 @@ Une fois que vous avez créé les recherches, l’étape suivante consiste à ex
 
 Étant donné que vous pouvez créer un grand nombre de recherches, ce dernier script facilite la suppression rapide des recherches que vous avez créées à l’étape 3. Comme les autres scripts, il vous invite également à indiquer l’ID de groupe de recherche. Toutes les recherches avec l’ID de groupe de recherche dans le nom de recherche seront supprimées lorsque vous exécuterez ce script. 
   
-1. Enregistrez le texte suivant dans un fichier de script Windows PowerShell à l’aide d’un suffixe de nom de fichier. ps1 ; par exemple, `DeleteSearches.ps1`. Enregistrez le fichier dans le dossier où vous avez enregistré les autres fichiers.
+1. Enregistrez le texte suivant dans un fichier de script Windows PowerShell à l’aide d’un suffixe de nom de fichier. ps1 ; par exemple, `DeleteSearches.ps1` . Enregistrez le fichier dans le dossier où vous avez enregistré les autres fichiers.
     
   ```Powershell
   # Delete all searches in a search group
@@ -298,7 +284,7 @@ Une fois que vous avez créé les recherches, l’étape suivante consiste à ex
     .\DeleteSearches.ps1
     ```
 
-3. À l’invite **ID de groupe de recherche** , tapez un nom de groupe de recherche pour les recherches que vous souhaitez supprimer, puis appuyez sur **entrée**; par exemple, `ContosoCase`. N’oubliez pas que ce nom est sensible à la casse, de sorte que vous devez le taper de la même manière que lorsque vous avez exécuté le script à l’étape 3.
+3. À l’invite **ID de groupe de recherche** , tapez un nom de groupe de recherche pour les recherches que vous souhaitez supprimer, puis appuyez sur **entrée**; par exemple, `ContosoCase` . N’oubliez pas que ce nom est sensible à la casse, de sorte que vous devez le taper de la même manière que lorsque vous avez exécuté le script à l’étape 3.
     
     Le script affiche le nom de chaque recherche qui a été supprimée.
     

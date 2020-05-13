@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 4c46c8cb-17d0-44b5-9776-005fced8e618
 description: Découvrez comment contrôler quels utilisateurs peuvent créer des groupes Microsoft 365.
-ms.openlocfilehash: 5ecd48161a751a1558146236d48df13bb0662ad1
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 55b3ec119e8c74982ce340c58f6b8da684c9ffa8
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43630404"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208341"
 ---
 # <a name="manage-who-can-create-groups"></a>Gérer les personnes autorisées à créer des groupes
 
@@ -41,7 +41,7 @@ Cet article explique comment désactiver la possibilité de créer des groupes d
     
 - Yammer
     
-- Microsoft Teams
+- Microsoft Teams
 
 - Microsoft Stream
     
@@ -96,7 +96,7 @@ Les administrateurs appartenant aux rôles mentionnés ci-dessus n’ont pas bes
 > [!IMPORTANT]
 > Veillez à utiliser un **groupe de sécurité** pour limiter les personnes autorisées à créer des groupes. Si vous essayez d’utiliser un groupe Microsoft 365, les membres ne pourront pas créer de groupe à partir de SharePoint, car il recherche un groupe de sécurité. 
     
-1. Dans le centre d’administration, accédez \> à **la page groupes de** <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">groupes.</a>
+1. Dans le centre d’administration, accédez à **la page groupes de** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">groupes</a> .
 
 2. Cliquez sur **Ajouter un groupe**.
 
@@ -120,13 +120,13 @@ Vous devez utiliser la version d’évaluation d' [Azure Active Directory PowerS
 
 Copiez le script ci-dessous dans un éditeur de texte, tel que le bloc-notes, ou [Windows PowerShell ISE](https://docs.microsoft.com/powershell/scripting/components/ise/introducing-the-windows-powershell-ise).
 
-Remplacez * \<SecurityGroupName\> * par le nom du groupe de sécurité que vous avez créé. Par exemple :
+Remplacez * \< SecurityGroupName \> * par le nom du groupe de sécurité que vous avez créé. Par exemple :
 
 `$GroupName = "Group Creators"`
 
 Enregistrez le fichier sous le GroupCreators. ps1. 
 
-Dans la fenêtre PowerShell, accédez à l’emplacement où vous avez enregistré le fichier (tapez « <FileLocation>CD »).
+Dans la fenêtre PowerShell, accédez à l’emplacement où vous avez enregistré le fichier (tapez « CD <FileLocation> »).
 
 Exécutez le script en tapant :
 
@@ -173,6 +173,8 @@ Si, à l’avenir, vous souhaitez modifier le groupe de sécurité utilisé, vou
 Si vous souhaitez désactiver la restriction de création de groupe et permettre à tous les utilisateurs de créer des groupes, définissez $GroupName sur "" et $AllowGroupCreation sur "true", puis réexécutez le script.
     
 ## <a name="step-4-verify-that-it-works"></a>Étape 4 : vérifier qu’elle fonctionne
+
+Les modifications peuvent durer au moins 30 minutes. Vous pouvez vérifier les nouveaux paramètres en procédant comme suit :
 
 1. Connectez-vous à l’aide d’un compte d’utilisateur qui ne doit pas avoir la possibilité de créer des groupes. Autrement dit, ils ne sont pas membres du groupe de sécurité que vous avez créé ou d’un administrateur.
     

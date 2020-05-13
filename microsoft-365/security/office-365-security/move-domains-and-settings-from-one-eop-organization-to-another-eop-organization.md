@@ -14,14 +14,14 @@ ms.assetid: 9d64867b-ebdb-4323-8e30-4560d76b4c97
 ms.custom:
 - seo-marvel-apr2020
 description: Dans cet article, vous découvrirez comment déplacer des domaines et des paramètres d’une organisation Microsoft Exchange Online Protection (EOP) vers une autre.
-ms.openlocfilehash: 86f268e6bfb5ed7229137df8b6bf017f15ab1f9c
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: c57f8363093c2e1a9bfad5c34f62a0ca2c1ae689
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44033961"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208314"
 ---
-# <a name="move-domains-and-settings-from-one-eop-organization-to-another-eop-organization"></a>Déplacement de domaines et de paramètres d’une organisation EOP vers une autre organisation EOP
+# <a name="move-domains-and-settings-from-one-eop-organization-to-another"></a>Déplacement de domaines et de paramètres d’une organisation EOP à une autre
 
 L'évolution des besoins professionnels peut parfois imposer de séparer une organisation Microsoft Exchange Online Protection (EOP) (locataire) en deux organisations distinctes, de fusionner deux organisations en une seule ou de déplacer vos domaines et vos paramètres EOP d'une organisation vers une autre. Le déplacement d'une organisation EOP vers une deuxième organisation EOP peut être difficile, mais avec quelques scripts Windows PowerShell à distance basiques et un peu de préparation, cette opération peut être réalisée dans une fenêtre de maintenance relativement courte.
 
@@ -44,9 +44,13 @@ Afin de recréer l’organisation source dans l’organisation cible, veillez à
 
 - Groupes
 
-- Filtres de contenu anti-courrier indésirable
+- Anti-spam
 
-- Filtres de contenu anti-logiciel malveillant
+  - Stratégies de blocage du courrier indésirable (également appelées stratégies de filtrage de contenu)
+  - Stratégies de filtrage du courrier indésirable sortant
+  - Stratégies de filtrage des connexions
+
+- Stratégies de protection contre les programmes malveillants
 
 - Connecteurs
 
@@ -125,7 +129,7 @@ Get-HostedContentFilterPolicy | Export-Clixml HostedContentFilterPolicy.xml
 Get-HostedContentFilterRule | Export-Clixml HostedContentFilterRule.xml
 Get-HostedOutboundSpamFilterPolicy | Export-Clixml HostedOutboundSpamFilterPolicy.xml
 #****************************************************************************
-# Anti-malware content filters
+# Anti-malware policies
 #****************************************************************************
 Get-MalwareFilterPolicy | Export-Clixml MalwareFilterPolicy.xml
 Get-MalwareFilterRule | Export-Clixml MalwareFilterRule.xml
@@ -175,9 +179,11 @@ Foreach ($domain in $Domains) {
 
 À présent, vous pouvez consulter et collecter les informations du centre d’administration Microsoft 365 de votre organisation cible afin de pouvoir vérifier rapidement vos domaines lorsque le temps est le suivant :
 
-1. Connectez-vous au centre d’administration Microsoft 365 [https://portal.office.com](https://portal.office.com)à l’adresse.
+1. Connectez-vous au centre d’administration Microsoft 365 à l’adresse <https://portal.office.com> .
 
 2. Cliquez sur **Domaines**.
+
+   Si vous ne voyez pas de domaine, cliquez sur **personnaliser navigtion**, sélectionnez **configuration**, puis cliquez sur **Enregistrer**.
 
 3. Cliquez sur chaque lien **Démarrer l'installation** et suivez les étapes de l'assistant d'installation.
 
@@ -185,7 +191,7 @@ Foreach ($domain in $Domains) {
 
 5. Sauvegardez l'enregistrement MX ou l'enregistrement TXT dossier que vous allez utiliser pour vérifier votre domaine, puis fermez l'assistant d'installation.
 
-6. Ajoutez les enregistrements TXT de vérification à vos enregistrements DNS. Vous pourrez ainsi vérifier plus rapidement les domaines de l'organisation source après leur retrait de l'organisation cible. Pour plus d’informations sur la configuration du DNS, consultez la rubrique [créer des enregistrements DNS auprès d’un fournisseur d’hébergement DNS pour Office 365](https://docs.microsoft.com/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider).
+6. Ajoutez les enregistrements TXT de vérification à vos enregistrements DNS. Vous pourrez ainsi vérifier plus rapidement les domaines de l'organisation source après leur retrait de l'organisation cible. Pour plus d’informations sur la configuration du DNS, consultez la rubrique [créer des enregistrements DNS auprès d’un fournisseur d’hébergement DNS pour Microsoft 365](https://docs.microsoft.com/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider).
 
 ## <a name="step-3-force-senders-to-queue-mail"></a>Étape 3 : Forcer les expéditeurs à mettre les messages en attente
 
@@ -195,8 +201,7 @@ Une des manières de forcer les expéditeurs à mettre les messages en attente c
 
 Une autre option consiste à placer un enregistrement MX non valide dans chaque domaine où sont conservés les enregistrements DNS de votre domaine (également connu comme service d'hébergement DNS). L'expéditeur doit alors mettre vos messages en attente et retenter l'opération (les nouvelles tentatives ont généralement lieu sous 48 heures, mais cela peut varier d'un fournisseur à l'autre). Vous pouvez utiliser invalid.outlook.com comme cible MX non valide. L'abaissement de la durée de vie (TTL) à cinq minutes pour l'enregistrement MX permet de propager plus rapidement la modification aux fournisseurs DNS.
 
-Pour plus d’informations sur la configuration du DNS, consultez la rubrique [créer des enregistrements DNS auprès d’un fournisseur d’hébergement DNS pour Office 365](https://docs.microsoft.com/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider).
-
+Pour plus d’informations sur la configuration du DNS, consultez la rubrique [créer des enregistrements DNS auprès d’un fournisseur d’hébergement DNS pour Microsoft 365](https://docs.microsoft.com/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider).
 
 > [!IMPORTANT]
 > Chaque fournisseur met les messages en attente pour des durées différentes. Vous devrez configurer rapidement votre nouveau locataire et rétablir vos paramètres DNS afin d'éviter l'envoi de rapports de non-remise (NDR) à l'expéditeur lors de l'expiration du délai d'attente.
@@ -244,7 +249,7 @@ Remove-MsolDomain -DomainName $Domain.Name -Force
 
 ## <a name="step-5-verify-domains-for-the-target-organization"></a>Étape 5 : Vérifier les domaines de l’organisation cible
 
-1. Connectez-vous au centre d’administration [https://portal.office.com](https://portal.office.com)à l’adresse.
+1. Connectez-vous au centre d’administration à l’adresse [https://portal.office.com](https://portal.office.com) .
 
 2. Cliquez sur **Domaines**.
 
@@ -926,4 +931,4 @@ if($HostedContentFilterPolicyCount -gt 0){
 
 ## <a name="step-8-revert-your-dns-settings-to-stop-mail-queuing"></a>Étape 8 : Rétablir vos paramètres DNS pour interrompre la mise en attente des messages
 
-Si vous avez choisi de définir vos enregistrements MX sur une adresse non valide de façon à ce que les expéditeurs envoient des messages en file d’attente pendant votre transition, vous devez les rétablir sur la valeur correcte, comme indiqué dans le [Centre d’administration](https://admin.microsoft.com). Pour plus d’informations sur la configuration du DNS, consultez la rubrique [créer des enregistrements DNS auprès d’un fournisseur d’hébergement DNS pour Office 365](https://docs.microsoft.com/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider).
+Si vous avez choisi de définir vos enregistrements MX sur une adresse non valide de façon à ce que les expéditeurs envoient des messages en file d’attente pendant votre transition, vous devez les rétablir sur la valeur correcte, comme indiqué dans le [Centre d’administration](https://admin.microsoft.com). Pour plus d’informations sur la configuration du DNS, consultez la rubrique [créer des enregistrements DNS auprès d’un fournisseur d’hébergement DNS pour Microsoft 365](https://docs.microsoft.com/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider).
