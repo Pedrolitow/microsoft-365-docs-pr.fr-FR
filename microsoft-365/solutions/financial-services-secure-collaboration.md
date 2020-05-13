@@ -13,12 +13,12 @@ ms.custom: ''
 localization_priority: Priority
 description: Découvrez comment Microsoft 365 aide les services financiers à passer à une plateforme de collaboration moderne, tout en assurant la sécurité et la conformité des données et des systèmes avec les réglementations.
 f1.keywords: NOCSH
-ms.openlocfilehash: affaf7ee6d9251003aec084d73b501212ebeda40
-ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
+ms.openlocfilehash: 24177c6e878116b8d60d8f38be77d0b52141699a
+ms.sourcegitcommit: 1c90bcc5c56f24895f01c3e0423c3f6b73715c13
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44160458"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44214695"
 ---
 # <a name="key-compliance-and-security-considerations-for-us-banking-and-capital-markets"></a>Principales considérations en matière de conformité et de sécurité pour les marchés bancaires et des capitaux américains
 
@@ -216,7 +216,7 @@ Les institutions financières gèrent de grandes quantités de données. Certain
 - Ce qui se produit à l’expiration de la période de rétention (supprimer le document, commencer une révision de destruction ou ne pas effectuer d’action)
 -  Ce qui déclenche le début de la période de rétention (date de création, date de dernière modification, date étiquetée ou événement) et marque le document ou le courriel en tant qu'enregistrement (ce qui signifie qu'il ne peut pas être modifié ou supprimé)
 
-Les étiquettes de conservation sont ensuite publiées sur les sites SharePoint ou OneDrive, les boîtes aux lettres Exchange et les groupes Microsoft 365. Les utilisateurs peuvent appliquer les étiquettes de rétention manuellement aux documents et messages électroniques. Les responsables des enregistrements peuvent utiliser une intelligence pour appliquer automatiquement les étiquettes. Les fonctionnalités intelligentes peuvent être basées sur [plus de 90 types d’informations sensibles intégrés](https://docs.microsoft.com/microsoft-365/compliance/what-the-sensitive-information-types-look-for?view=o365-worldwide) (par exemple, numéro de compte ABA, numéro de compte bancaire américain ou numéro de sécurité sociale des États-Unis). Ils peuvent également être personnalisés en fonction de mots clés ou de données sensibles figurant dans des documents ou des courriers électroniques, tels que des numéros de carte de crédit ou d’autres informations d’identification personnelle ou sur la base des métadonnées SharePoint. Pour les données qui ne sont pas facilement identifiées par un filtrage manuel ou automatisé, les classifieurs présentant une capacité d’apprentissage pouvant être mis en forme peuvent être utilisés pour classer les documents de façon intelligente sur la base des techniques d’apprentissage automatique.
+Les étiquettes de conservation sont ensuite publiées sur les sites SharePoint ou OneDrive, les boîtes aux lettres Exchange et les groupes Microsoft 365. Les utilisateurs peuvent appliquer les étiquettes de rétention manuellement aux documents et messages électroniques. Les responsables des enregistrements peuvent utiliser une intelligence pour appliquer automatiquement les étiquettes. Les fonctionnalités intelligentes peuvent être basées sur [plus de 90 types d’informations sensibles intégrés](https://docs.microsoft.com/microsoft-365/compliance/content-search?view=o365-worldwide) (par exemple, numéro de compte ABA, numéro de compte bancaire américain ou numéro de sécurité sociale des États-Unis). Ils peuvent également être personnalisés en fonction de mots clés ou de données sensibles figurant dans des documents ou des courriers électroniques, tels que des numéros de carte de crédit ou d’autres informations d’identification personnelle ou sur la base des métadonnées SharePoint. Pour les données qui ne sont pas facilement identifiées par un filtrage manuel ou automatisé, les classifieurs présentant une capacité d’apprentissage pouvant être mis en forme peuvent être utilisés pour classer les documents de façon intelligente sur la base des techniques d’apprentissage automatique.
  
 Le **Securities and Exchange Commission (SEC)** exige des courtiers et autres institutions financières réglementées de conserver toutes les communications liées à leur activité. Ces exigences s'appliquent à de nombreux types de communications et de données, notamment les courriers électroniques, les documents, les messages instantanés, les télécopies, etc. **La règle 17a-4 de la SEC** définit les critères que ces organisations doivent remplir pour stocker des enregistrements dans un système de stockage électronique de données. En 2003, la SEC a publié une version qui a clarifié ces exigences. Elle comprenait les critères suivants :
 
