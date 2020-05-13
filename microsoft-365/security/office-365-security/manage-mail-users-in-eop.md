@@ -1,9 +1,9 @@
 ---
-title: Gestion des utilisateurs de messagerie dans EOP
+title: Gérer les utilisateurs de messagerie dans une version autonome EOP
 f1.keywords:
 - NOCSH
-ms.author: tracyp
-author: MSFTTracyP
+ms.author: chrisda
+author: chrisda
 manager: dansimp
 ms.date: ''
 audience: ITPro
@@ -13,139 +13,184 @@ localization_priority: Normal
 ms.assetid: 4bfaf2ab-e633-4227-8bde-effefb41a3db
 description: Découvrez comment gérer les utilisateurs de messagerie dans Exchange Online Protection (EOP), notamment à l’aide de la synchronisation d’annuaires, du centre d’administration Exchange et de PowerShell pour gérer les utilisateurs.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 9a4555bf4b6a716839c327c692f0e44b590f8175
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: e40465901747bcbd006d437fa527a9803aad1e24
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035555"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208644"
 ---
-# <a name="manage-mail-users-in-eop"></a>Gestion des utilisateurs de messagerie dans EOP
+# <a name="manage-mail-users-in-standalone-eop"></a>Gérer les utilisateurs de messagerie dans une version autonome EOP
 
-La définition des utilisateurs de messagerie constitue une partie importante de la gestion du service Exchange Online Protection (EOP). Vous pouvez gérer les utilisateurs de différentes manières dans EOP.
-
-- **Utilisation de la synchronisation d'annuaires pour gérer les utilisateurs de messagerie** : si votre entreprise dispose de comptes d'utilisateur dans un environnement Active Directory local, vous pouvez synchroniser ces comptes sur Azure Active Directory (AD), où des copies des comptes sont stockées dans le nuage. Lorsque vous synchronisez vos comptes d'utilisateur sur Azure Active Directory, vous pouvez consulter ces utilisateurs dans le volet **Destinataires** du Centre d'administration Exchange (CAE). L'utilisation de la synchronisation d'annuaires est recommandée.
-
-- **Utilisation du CAE pour gérer les utilisateurs de messagerie** : ajoutez et gérez les utilisateurs de messagerie directement dans le CAE. Il s'agit du moyen le plus facile pour ajouter des utilisateurs de messagerie et cette méthode est également utile pour ajouter un utilisateur à la fois.
-
-- **Utiliser PowerShell pour gérer les utilisateurs de messagerie**: ajoutez et gérez les utilisateurs de messagerie dans Exchange Online Protection PowerShell. Cette méthode est utile pour ajouter plusieurs enregistrements et pour la création de scripts.
+Dans les organisations Exchange Online Protection (EOP) autonomes sans boîtes aux lettres Exchange Online, les utilisateurs de messagerie constituent le type de compte d’utilisateur fondamental. Un utilisateur de messagerie dispose d’informations d’identification de compte dans votre organisation EOP autonome et peut accéder aux ressources (auxquelles des autorisations sont attribuées). L’adresse de messagerie d’un utilisateur de messagerie est externe (par exemple, dans votre environnement de messagerie local).
 
 > [!NOTE]
-> Vous pouvez ajouter des utilisateurs dans le centre d’administration 365 de Microsoft, mais ces utilisateurs ne peuvent pas être utilisés comme destinataires de courrier.
+> Lorsque vous créez un utilisateur de messagerie, le compte d’utilisateur correspondant est disponible dans le centre d’administration 365 de Microsoft. Lorsque vous créez un compte d’utilisateur dans le centre d’administration 365 de Microsoft, vous ne pouvez pas utiliser ce compte pour créer un utilisateur de messagerie.
 
-## <a name="before-you-begin"></a>Avant de commencer
+La méthode recommandée pour créer et gérer des utilisateurs de messagerie en mode autonome EOP consiste à utiliser la synchronisation d’annuaires comme décrit dans la section [utilisation de la synchronisation d’annuaires pour gérer les utilisateurs de messagerie](#use-directory-synchronization-to-manage-mail-users) plus loin dans cette rubrique.
 
-- Pour ouvrir le centre d’administration Exchange, consultez la rubrique [Exchange Admin Center in Exchange Online Protection](exchange-admin-center-in-exchange-online-protection-eop.md).
+Pour les organisations EOP autonomes avec un petit nombre d’utilisateurs, vous pouvez ajouter et gérer des utilisateurs de messagerie dans le centre d’administration Exchange ou dans une version PowerShell d’EOP autonome comme décrit dans cette rubrique.
 
-- Des autorisations doivent vous être attribuées avant de pouvoir exécuter cette procédure. Pour voir les autorisations qui vous sont nécessaires, consultez l'entrée « Utilisateurs, contacts et groupes de rôles » dans la rubrique [Autorisations des fonctionnalités dans EOP](feature-permissions-in-eop.md).
+## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu'il faut savoir avant de commencer
 
-- N’oubliez pas que lors de la création d’utilisateurs de messagerie à l’aide des cmdlets PowerShell d’Exchange Online Protection, vous pouvez rencontrer des limitations.
+- Pour ouvrir le centre d’administration Exchange, consultez la rubrique [Exchange Admin Center in standalone EOP](exchange-admin-center-in-exchange-online-protection-eop.md).
 
-- Les commandes PowerShell de cette rubrique utilisent une méthode de traitement par lots qui entraîne un délai de propagation de quelques minutes avant que les résultats des commandes soient visibles.
+- Pour vous connecter à la version PowerShell d’EOP autonome, consultez la rubrique [Connect to Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell).
 
-- Pour apprendre à utiliser Windows PowerShell afin d’établir une connexion à Exchange Online Protection, voir [Connexion à Exchange Online Protection à l’aide de Remote PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell).
+- Lorsque vous créez des utilisateurs de messagerie dans EOP PowerShell, il se peut que vous rencontriez une limitation. En outre, les cmdlets PowerShell d’EOP utilisent une méthode de traitement par lots qui entraîne un délai de propagation de quelques minutes avant que les résultats des commandes soient visibles.
+
+- Des autorisations doivent vous être attribuées avant de pouvoir exécuter ces procédures. Plus précisément, vous avez besoin des rôles création du destinataire de messagerie (création) et destinataires (modifier), qui sont attribués aux groupes de rôles OrganizationManagement (administrateurs globaux) et RecipientManagement par défaut. Pour plus d’informations, consultez la rubrique [autorisations dans EOP autonome](feature-permissions-in-eop.md) et utiliser le centre d’administration Exchange pour [modifier la liste des membres dans les groupes de rôles](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups).
 
 - Pour plus d’informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir [raccourcis clavier pour le centre d’administration Exchange dans Exchange Online](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center).
 
 > [!TIP]
-> Vous rencontrez des difficultés ? Demandez de l’aide dans le forum [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351) .
+> Vous rencontrez des difficultés ? Demandez de l’aide en participant aux forums Exchange. Visitez le forum [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351) .
 
-## <a name="use-directory-synchronization-to-manage-mail-users"></a>Utilisation de la synchronisation d’annuaires pour gérer les utilisateurs de messagerie
+## <a name="use-the-exchange-admin-center-to-manage-mail-users"></a>Utiliser le centre d’administration Exchange pour gérer les utilisateurs de messagerie
 
-Cette section fournit des informations sur la gestion des utilisateurs de messagerie électronique à l’aide de la synchronisation d’annuaires.
+### <a name="use-the-eac-to-create-mail-users"></a>Utiliser le centre d’administration Exchange pour créer des utilisateurs de messagerie
+
+1. Dans le centre d’administration Exchange, accédez à contacts des **destinataires** \> **Contacts**
+
+2. Cliquez sur **nouvelle** ![ icône ](../../media/ITPro-EAC-AddIcon.png) . Dans la page **nouvel utilisateur de messagerie** qui s’ouvre, configurez les paramètres suivants. Les paramètres marqués par un <sup>\*</sup> sont obligatoires.
+
+   - **Prénom**
+
+   - **Initiales**: initiale du deuxième prénom de la personne.
+
+   - **Nom de famille**
+
+   - <sup>\*</sup>**Nom d’affichage**: par défaut, cette zone affiche les valeurs des **zones Prénom**, **initiales**et nom de **famille** . Vous pouvez accepter cette valeur ou la modifier. La valeur doit être unique et sa longueur maximale est de 64 caractères.
+
+   - <sup>\*</sup>**Alias**: entrez un alias unique, en utilisant jusqu’à 64 caractères, pour l’utilisateur.
+
+   - **Adresse de messagerie externe**: entrez l’adresse de messagerie de l’utilisateur. Le domaine doit être externe à votre organisation en nuage.
+
+   - <sup>\*</sup>**ID d’utilisateur**: entrez le compte que la personne utilisera pour se connecter au service. L’ID d’utilisateur est constitué d’un nom d’utilisateur à gauche du symbole arobas (@) et d’un domaine sur le côté droit.
+
+   - <sup>\*</sup>**Nouveau mot de** passe et <sup>\*</sup> **confirmer le mot de passe**: entrez et entrez à nouveau le mot de passe du compte. Vérifiez que le mot de passe est conforme aux exigences de longueur, de complexité et d’historique de votre organisation.
+
+3. Lorsque vous avez terminé, cliquez sur **Enregistrer** pour créer l'utilisateur de messagerie.
+
+### <a name="use-the-eac-to-modify-mail-users"></a>Utiliser le centre d’administration Exchange pour modifier les utilisateurs de messagerie
+
+1. Dans le CAE, accédez à **Destinataires** \> **Contacts**.
+
+2. Sélectionnez l’utilisateur de messagerie à modifier, puis cliquez sur modifier l' **Edit** ![ icône modifier ](../../media/ITPro-EAC-AddIcon.png) .
+
+3. Sur la page Propriétés de l’utilisateur de messagerie qui s’ouvre, cliquez sur l’un des onglets suivants pour afficher ou modifier les propriétés.
+
+   Lorsque vous avez terminé, cliquez sur **Enregistrer**.
+
+#### <a name="general"></a>Général
+
+Utilisez l’onglet **général** pour afficher ou modifier des informations de base sur l’utilisateur de messagerie.
+
+- **Prénom**
+
+- **Initiales**
+
+- **Nom de famille**
+
+- **Nom d’affichage**: ce nom s’affiche dans le carnet d’adresses de votre organisation, sur les lignes à : et de : dans le courrier électronique, et dans la liste des contacts du centre d’administration Exchange. Ce nom ne peut pas contenir d'espaces vides avant ou après le nom complet.
+
+- **ID utilisateur**: il s’agit du compte de l’utilisateur dans Microsoft 365. Vous ne pouvez pas modifier cette valeur ici.
+
+#### <a name="contact-information"></a>Informations de contact
+
+L’onglet **informations** sur le contact permet d’afficher ou de modifier les informations de contact de l’utilisateur. L'information sur cette page s'affiche dans le carnet d'adresses.
+
+- **Street**
+- **Ville**
+- **État/Province**
+- **Code postal**
+- **Pays**
+- **Téléphone professionnel**
+- **Téléphone portable **
+- **Télécopie**
+- **Autres options**
+
+  - **Bureau**
+  - **Téléphone personnel **
+  - **Page Web**
+  - **Notes**
+
+#### <a name="organization"></a>Organisation
+
+L’onglet **organisation** permet d’enregistrer des informations détaillées sur le rôle de l’utilisateur dans l’organisation.
+
+- **Poste**
+- **Service**
+- **Entreprise**
+
+### <a name="use-the-eac-to-remove-mail-users"></a>Utiliser le centre d’administration Exchange pour supprimer des utilisateurs de messagerie
+
+1. Dans le CAE, accédez à **Destinataires** \> **Contacts**.
+
+2. Sélectionnez l’utilisateur de messagerie à supprimer, puis cliquez sur supprimer l' **Remove** ![ icône Supprimer ](../../media/ITPro-EAC-RemoveIcon.gif) .
+
+## <a name="use-powershell-to-manage-mail-users"></a>Utiliser PowerShell pour gérer les utilisateurs de messagerie
+
+### <a name="use-standalone-eop-powershell-to-view-mail-users"></a>Utilisation d’EOP PowerShell autonome pour afficher les utilisateurs de messagerie
+
+Pour renvoyer une liste récapitulative de tous les utilisateurs de messagerie dans une version autonome d’EOP PowerShell, exécutez la commande suivante :
+
+```powershell
+Get-Recipient -RecipientType MailUser -ResultSize unlimited
+```
+
+Pour afficher des informations détaillées sur un utilisateur de messagerie spécifique, remplacez \< MailUserIdentity \> par le nom, l’alias ou le nom de compte de l’utilisateur de messagerie, puis exécutez les commandes suivantes :
+
+```powershell
+Get-Recipient -Identity <MailUserIdentity> | Format-List
+```
+
+```powershell
+Get-User -Identity <MailUserIdentity> | Format-List
+```
+
+Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Get-Recipient](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/get-recipient) et [Get-User](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/get-user).
+
+### <a name="use-standalone-eop-powershell-to-create-mail-users"></a>Utilisation d’EOP PowerShell autonome pour créer des utilisateurs de messagerie
+
+Pour créer des utilisateurs de messagerie dans une version autonome d’EOP PowerShell, utilisez la syntaxe suivante :
+
+```powershell
+New-EOPMailUser -Name "<UniqueName>" -MicrosoftOnlineServicesID <Account> -Password (ConvertTo-SecureString -String '<password>' -AsPlainText -Force) [-Alias <AliasValue>] [-DisplayName "<Display Name>"] [-ExternalEmailAddress <ExternalEmailAddress>] [-FirstName <Text>] [-Initials <Text>] [-LastName <Text>]
+```
 
 **Remarques** :
 
-- Si vous utilisez la synchronisation d’annuaires pour gérer vos destinataires, vous pouvez toujours ajouter et gérer des utilisateurs dans le centre d’administration 365 de Microsoft, mais ils ne seront pas synchronisés avec votre annuaire Active Directory local. Cela est dû au fait que la synchronisation d’annuaires ne synchronise que les destinataires **de** votre annuaire Active Directory local **vers** le Cloud.
+- Le paramètre _Name_ est obligatoire, sa longueur maximale est de 64 caractères et doit être unique. Si vous n’utilisez pas le paramètre _DisplayName_, la valeur du paramètre _Name_ est utilisée pour le nom complet.
+- Si vous n’utilisez pas le paramètre _alias_ , le côté gauche du paramètre _MicrosoftOnlneServicesID_ est utilisé pour l’alias.
+- Si vous n’utilisez pas le paramètre _ExternalEmailAddress_ , la valeur _MicrosoftOnlineServicesID_ est utilisée pour l’adresse de messagerie externe.
 
-- La synchronisation d’annuaires est recommandée pour une utilisation avec les fonctionnalités suivantes :
+Cet exemple crée un utilisateur de messagerie avec les paramètres suivants :
 
-  - **Listes des expéditeurs autorisés et des expéditeurs bloqués Outlook**: lorsqu’ils sont synchronisés avec le service, ces listes prévalent sur le filtrage du courrier indésirable dans le service. Cela permet aux utilisateurs de gérer leurs propres listes d’expéditeurs autorisés et bloqués en fonction de l’utilisateur et du domaine.
-
-  - **Blocage du périmètre basé sur l’annuaire (DBEB)**: pour plus d’informations sur DBEB, voir [use Directory based Edge Blocking to Reject messages sent to Invalid Recipients](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-directory-based-edge-blocking).
-
-  - **Mise en quarantaine du courrier indésirable**de l’utilisateur final : pour accéder à la mise en quarantaine du courrier indésirable de l’utilisateur final, les utilisateurs finaux doivent avoir un ID d’utilisateur et un mot de passe valide Les clients qui utilisent EOP pour la protection des boîtes aux lettres locales doivent être des utilisateurs de messagerie électronique valides.
-
-  - **Règles de flux de messagerie**: lorsque vous utilisez la synchronisation d’annuaires, vos utilisateurs et groupes Active Directory existants sont automatiquement téléchargés dans le Cloud, puis vous pouvez créer des règles de flux de messagerie (également appelées règles de transport) qui ciblent des utilisateurs et/ou des groupes spécifiques sans avoir à les ajouter manuellement via le centre d’administration Exchange ou Exchange Online Protection PowerShell. Notez que les [groupes de distribution dynamique](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-dynamic-distribution-groups/manage-dynamic-distribution-groups) ne peuvent pas être synchronisés via la synchronisation d’annuaires.
-
-Obtenir les autorisations nécessaires et préparer la synchronisation d’annuaires, comme décrit dans [What is Hybrid Identity with Azure Active Directory ?](https://docs.microsoft.com/azure/active-directory/hybrid/whatis-hybrid-identity).
-
-### <a name="to-synchronize-user-directories-with-azure-active-directory-connect-aad-connect"></a>Pour synchroniser les annuaires d’utilisateurs avec Azure Active Directory Connect (AAD Connect)
-
-Pour synchroniser les utilisateurs avec Azure Active Directory (AAD), vous devez d’abord **activer la synchronisation d’annuaires**, comme décrit dans [Azure ad Connect Sync : comprendre et personnaliser la synchronisation](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-sync-whatis).
-
-Ensuite, l’installation et la configuration d’un ordinateur local pour exécuter AAD Connect (si vous n’avez pas encore besoin de vérifier à l’avance). La rubrique [configuration de AAD Connect, la rubrique relative à la méthode rapide](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-install-express) vous indique comment configurer et synchroniser vos comptes de l’organisation locale vers Azure ad avec AAD Connect.
-
-Mais avant cela, [vous devez vous assurer que vous répondez aux conditions préalables](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-install-prerequisites)et [Choisissez votre type d’installation](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-install-select-installation). Le lien précédent est un petit article pour les installations rapides. Vous pouvez également trouver des articles sur les [installations personnalisées](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-install-custom)ou [l’authentification directe](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-pta-quick-start) si elles sont nécessaires.
-
-> [!IMPORTANT]
-> Après exécution de l'Assistant Configuration de l'outil de synchronisation Azure Active Directory, le compte **MSOL_AD_SYNC** est créé dans votre forêt Active Directory. Ce compte permet de lire et de synchroniser vos informations Active Directory sur site. Pour que la synchronisation d'annuaires fonctionne correctement, assurez-vous que le port TCP 443 est ouvert sur votre serveur de synchronisation d'annuaires sur site.
-
-Après avoir configuré votre synchronisation, assurez-vous de vérifier que EOP effectue une synchronisation correcte. Dans le CAE, accédez à **Destinataires** \> **Contacts** et vérifiez que la liste des utilisateurs a été correctement synchronisée à partir de votre environnement local.
-
-## <a name="use-the-eac-to-manage-mail-users"></a>Utilisation du CAE pour gérer les utilisateurs de messagerie
-
-Cette section fournit des informations sur l’ajout et la gestion des utilisateurs de messagerie directement dans le CAE.
-
-### <a name="use-the-eac-to-add-a-mail-user"></a>Utiliser le centre d’administration Exchange pour ajouter un utilisateur de messagerie
-
-1. Créez un utilisateur de messagerie électronique en accédant à **Destinataires** \> **Contacts** dans le CAE, puis cliquez sur **Nouveau +**.
-
-2. Sur la page **Nouvel utilisateur de messagerie**, saisissez les informations de l'utilisateur, notamment les éléments suivants :
-
-   ****
-
-   |**Propriété d'utilisateur de messagerie**|**Description**|
-   |:-----|:-----|
-   |**Prénom**, **Initiales** et **Nom de famille**|Dans les zones appropriées, saisissez le nom de l'utilisateur.|
-   |**Nom complet**|Saisissez le nom (64 caractères maximum). Par défaut, cette zone est renseignée avec les noms que vous avez entrés dans les champs **Prénom**, **Initiales** et **Nom de famille**, le cas échéant. Le nom complet est requis.  |
-   |**Alias**|Saisissez un alias unique pour l'utilisateur (64 caractères maximum). L'alias est obligatoire.|
-   |**Adresse de messagerie externe**|Saisissez l'adresse de messagerie électronique externe de l'utilisateur.|
-   |**ID utilisateur**|Saisissez le nom que l'utilisateur de messagerie utilisera pour se connecter au service. Le nom de connexion de l'utilisateur est constitué du nom d'utilisateur à gauche du symbole (@) et d'un suffixe à droite. Généralement, le suffixe est le nom du domaine dans lequel le compte d'utilisateur réside.|
-   |**Nouveau mot de passe**|Saisissez le mot de passe que l'utilisateur de messagerie utilisera pour se connecter au service. Assurez-vous que le mot de passe que vous saisissez est conforme aux exigences de longueur, de complexité et d'historique de mot de passe du domaine dans lequel vous créez le compte d'utilisateur.|
-   |**Confirmer le mot de passe**|Ressaisissez le mot de passe pour le confirmer.|
-
-3. Cliquez sur **Nouveau** pour créer l'utilisateur de messagerie. Le nouvel utilisateur doit apparaître dans la liste des utilisateurs.
-
-### <a name="use-the-eac-to-edit-or-remove-a-mail-user"></a>Utiliser le centre d’administration Exchange pour modifier ou supprimer un utilisateur de messagerie
-
-- Dans le CAE, accédez à **Destinataires** \> **Contacts**. Dans la liste des utilisateurs, cliquez sur l’utilisateur que vous souhaitez afficher ou modifier, puis sélectionnez **modifier** ![l’icône](../../media/ITPro-EAC-EditIcon.gif) modifier pour mettre à jour les paramètres utilisateur selon vos besoins. Vous pouvez modifier le nom, l'alias ou les coordonnées de l'utilisateur et vous pouvez enregistrer des informations détaillées sur le rôle de l'utilisateur dans l'organisation. Vous pouvez également sélectionner un utilisateur, puis cliquer sur **supprimer** ![l'](../../media/ITPro-EAC-RemoveIcon.gif) icône Supprimer pour le supprimer.
-
-## <a name="use-exchange-online-protection-powershell-to-manage-mail-users"></a>Utiliser Exchange Online Protection PowerShell pour gérer les utilisateurs de messagerie
-
-Cette section fournit des informations sur l'ajout et la gestion des utilisateurs de messagerie à l'aide de Windows PowerShell à distance.
-
-### <a name="use-eop-powershell-to-add-a-mail-user"></a>Utiliser EOP PowerShell pour ajouter un utilisateur de messagerie
-
-Cet exemple illustre la création d'un compte d'utilisateur à extension messagerie avec la cmdlet [New-EOPMailUser](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/new-eopmailuser) pour l'utilisateur Jeffrey Zeng, avec les informations suivantes :
-
+- Le nom est JeffreyZeng et le nom d’affichage est Jeffrey Zeng.
 - Le prénom est Jeffrey et le nom est Zeng.
-
-- Le nom est Jeffrey et le nom d'affichage est Jeffrey Zeng.
-
 - L'alias est jeffreyz.
-
 - L'adresse de messagerie externe est jzeng@tailspintoys.com.
-
-- Le nom de connexion de Microsoft 365 est jeffreyz@contoso.onmicrosoft.com.
-
+- Le nom du compte est jeffreyz@contoso.onmicrosoft.com.
 - Le mot de passe est Pa$$word1.
 
 ```PowerShell
-New-EOPMailUser -LastName Zeng -FirstName Jeffrey -DisplayName "Jeffrey Zeng" -Name Jeffrey -Alias jeffreyz -MicrosoftOnlineServicesID jeffreyz@contoso.onmicrosoft.com -ExternalEmailAddress jeffreyz@tailspintoys.com -Password (ConvertTo-SecureString -String 'Pa$$word1' -AsPlainText -Force)
+New-EOPMailUser -Name JeffreyZeng -MicrosoftOnlineServicesID jeffreyz@contoso.onmicrosoft.com -Password (ConvertTo-SecureString -String 'Pa$$word1' -AsPlainText -Force) -ExternalEmailAddress jeffreyz@tailspintoys.com -DisplayName "Jeffrey Zeng" -Alias jeffreyz -FirstName Jeffrey -LastName Zeng
 ```
 
-Pour vérifier qu’elle a fonctionné, exécutez la commande suivante pour afficher les informations sur le nouvel utilisateur de messagerie Jeffrey Zeng :
+Pour obtenir des informations détaillées sur la syntaxe et les paramètres, consultez la rubrique [New-EOPMailUser](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/new-eopmailuser).
 
-```PowerShell
-Get-User -Identity "Jeffrey Zeng"
+### <a name="use-standalone-eop-powershell-to-modify-mail-users"></a>Utilisation d’EOP PowerShell autonome pour modifier des utilisateurs de messagerie
+
+Pour modifier des utilisateurs de messagerie existants dans une version autonome d’EOP PowerShell, utilisez la syntaxe suivante :
+
+```powershell
+Set-EOPMailUser -Identity <MailUserIdentity> [-Alias <Text>] [-DisplayName <Textg>] [-EmailAddresses <ProxyAddressCollection>] [-MicrosoftOnlineServicesID <SmtpAddress>]
 ```
 
-Pour obtenir des informations détaillées sur la syntaxe et les paramètres, consultez la rubrique [Get-User](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/get-user).
-
-### <a name="use-eop-powershell-to-edit-the-properties-of-a-mail-user"></a>Utiliser EOP PowerShell pour modifier les propriétés d’un utilisateur de messagerie
-
-Utilisez les cmdlets [Get-Recipient](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/get-recipient) et [Set-EOPMailUser](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/set-eopmailuser) pour afficher et modifier les propriétés des utilisateurs de messagerie.
+```powershell
+Set-EOPUser -Identity <MailUserIdentity> [-City <Text>] [-Company <Text>] [-CountryOrRegion <CountryInfo>] [-Department <Text>] [-Fax <PhoneNumber>] [-FirstName <Text>] [-HomePhone <PhoneNumber>] [-Initials <Text>] [-LastName <Text>] [-MobilePhone <PhoneNumber>] [-Notes <Text>] [-Office <Text>] [-Phone <PhoneNumber>] [-PostalCode <String>] [-StateOrProvince <String>] [-StreetAddress <Tet>] [-Title <Text>] [-WebPage <Text>]
+```
 
 Cet exemple illustre la configuration de l'adresse de messagerie externe pour Pilar Pinilla.
 
@@ -156,34 +201,85 @@ Set-EOPMailUser -Identity "Pilar Pinilla" -EmailAddresses pilarp@tailspintoys.co
 Cet exemple illustre la définition de la propriété Company sur Contoso pour tous les utilisateurs de messagerie.
 
 ```PowerShell
-$Recip = Get-Recipient -ResultSize unlimited -Filter {(RecipientTypeDetails -eq 'mailuser')}
+$Recip = Get-Recipient -RecipientType MailUser -ResultSize unlimited
 $Recip | foreach {Set-EOPUser -Identity $_.Alias -Company Contoso}
 ```
 
-Pour vérifier que cela a fonctionné, utilisez la cmdlet [Get-Recipient](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/get-recipient) pour vérifier les modifications. (Vous pouvez afficher plusieurs propriétés pour plusieurs contacts de messagerie.)
+Pour obtenir des informations détaillées sur la syntaxe et les paramètres, consultez la rubrique [Set-EOPMailUser](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/set-eopmailuser).
+
+### <a name="use-standalone-eop-powershell-to-remove-mail-users"></a>Utilisation d’EOP PowerShell autonome pour supprimer des utilisateurs de messagerie
+
+Pour supprimer des utilisateurs de messagerie en mode autonome EOP PowerShell, remplacez \< MailUserIdentity \> par le nom, l’alias ou le nom de compte de l’utilisateur de messagerie, puis exécutez la commande suivante :
 
 ```PowerShell
-Get-Recipient -Identity "Pilar Pinilla" | Format-List
+Remove-EOPMailUser -Identity <MailUserIdentity\>
 ```
 
-Dans l'exemple précédent où la propriété Company a été définie sur Contoso pour tous les utilisateurs de messagerie, exécutez la commande suivante pour vérifier les modifications :
+Cet exemple supprime l’utilisateur de messagerie pour Jeffrey Zeng.
 
 ```PowerShell
-Get-Recipient -ResultSize unlimited -Filter {(RecipientTypeDetails -eq 'mailuser')} | Format-List Name,Company
+Remove-EOPMailUser -Identity "Jeffrey Zeng"
 ```
+
+Pour obtenir des informations détaillées sur la syntaxe et les paramètres, consultez la rubrique [Remove-EOPMailUser](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/remove-eopmailuser).
+
+## <a name="how-do-you-know-these-procedures-worked"></a>Comment savoir si ces procédures ont fonctionné ?
+
+Pour vérifier que vous avez bien créé, modifié ou supprimé des utilisateurs de messagerie dans une version autonome d’EOP, utilisez l’une des procédures suivantes :
+
+- Dans le CAE, accédez à **Destinataires** \> **Contacts**. Vérifiez que l’utilisateur de messagerie est indiqué (ou non). Sélectionnez l’utilisateur de messagerie et affichez les informations dans le volet d’informations, ou cliquez sur **modifier** ![ l’icône modifier ](../../media/ITPro-EAC-AddIcon.png) pour afficher les paramètres.
+
+- Dans la version autonome d’EOP PowerShell, exécutez la commande suivante pour vérifier que l’utilisateur de messagerie est indiqué (ou non) :
+
+  ```powershell
+  Get-Recipient -RecipientType MailUser -ResultSize unlimited
+  ```
+
+- Remplacez \< MailUserIdentity \> par le nom, l’alias ou le nom de compte de l’utilisateur de messagerie, puis exécutez les commandes suivantes pour vérifier les paramètres :
+
+  ```powershell
+  Get-Recipient -Identity <MailUserIdentity> | Format-List
+  ```
+
+  ```powershell
+  Get-User -Identity <MailUserIdentity> | Format-List
+  ```
+
+## <a name="use-directory-synchronization-to-manage-mail-users"></a>Utilisation de la synchronisation d’annuaires pour gérer les utilisateurs de messagerie
+
+Dans la version autonome d’EOP, la synchronisation d’annuaires est disponible pour les clients disposant d’Active Directory sur site. Vous pouvez synchroniser ces comptes avec Azure Active Directory (Azure AD), où les copies des comptes sont stockées dans le Cloud. Lorsque vous synchronisez vos comptes d’utilisateur existants avec Azure Active Directory, vous pouvez afficher ces utilisateurs dans le volet **destinataires** du centre d’administration Exchange ou dans un PowerShell d’EOP autonome.
+
+**Remarques** :
+
+- Si vous utilisez la synchronisation d’annuaires pour gérer vos destinataires, vous pouvez toujours ajouter et gérer des utilisateurs dans le centre d’administration 365 de Microsoft, mais ils ne seront pas synchronisés avec votre annuaire Active Directory local. En effet, la synchronisation d’annuaires ne synchronise que les destinataires de votre annuaire Active Directory sur site vers le nuage.
+
+- Il est recommandé d’utiliser la synchronisation d’annuaires avec les fonctionnalités suivantes :
+
+  - Listes **des expéditeurs approuvés Outlook et listes des expéditeurs bloqués**: lorsqu’ils sont synchronisés avec le service, ces listes prévalent sur le filtrage du courrier indésirable dans le service. Cela permet aux utilisateurs de gérer leur propre liste d’expéditeurs approuvés et la liste des expéditeurs bloqués avec des entrées individuelles de domaine et d’expéditeur. Pour plus d’informations, consultez la rubrique [configurer les paramètres du courrier indésirable dans les boîtes aux lettres Exchange Online](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-junk-email-settings-on-exo-mailboxes).
+
+  - **Blocage du périmètre basé sur l’annuaire (DBEB)**: pour plus d’informations sur DBEB, voir [use Directory based Edge Blocking to Reject messages sent to Invalid Recipients](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-directory-based-edge-blocking).
+
+  - **Accès de l’utilisateur final à la mise en quarantaine**: pour accéder à ses messages mis en quarantaine, les destinataires doivent disposer d’un ID d’utilisateur et d’un mot de passe valides dans le service. Pour plus d’informations sur la mise en quarantaine, consultez [la rubrique Rechercher et débloquer les messages mis en quarantaine en tant qu’utilisateur](https://docs.microsoft.com/microsoft-365/security/office-365-security/find-and-release-quarantined-messages-as-a-user).
+
+  - **Règles de flux de messagerie (également appelées règles de transport)**: lorsque vous utilisez la synchronisation d’annuaires, vos utilisateurs et groupes Active Directory existants sont automatiquement téléchargés dans le Cloud, et vous pouvez créer des règles de flux de messagerie qui ciblent des utilisateurs et/ou des groupes spécifiques sans avoir à les ajouter manuellement au service. Notez que les [groupes de distribution dynamique](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-dynamic-distribution-groups/manage-dynamic-distribution-groups) ne peuvent pas être synchronisés via la synchronisation d’annuaires.
+
+Obtenir les autorisations nécessaires et préparer la synchronisation d’annuaires, comme décrit dans [What is Hybrid Identity with Azure Active Directory ?](https://docs.microsoft.com/azure/active-directory/hybrid/whatis-hybrid-identity).
+
+### <a name="synchronize-directories-with-azure-active-directory-connect-aad-connect"></a>Synchroniser des annuaires avec Azure Active Directory Connect (AAD Connect)
+
+1. Activer la synchronisation d’annuaires, comme décrit dans [Azure ad Connect Sync : comprendre et personnaliser la synchronisation](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-sync-whatis).
+
+2. Installez et configurez un ordinateur local pour exécuter AAD Connect comme décrit dans [Prerequisites for Azure ad Connect](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-install-prerequisites).
+
+3. [Sélectionnez le type d’installation à utiliser pour Azure ad Connect](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-install-select-installation):
+
+   - [Sous](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-install-express)
+
+   - [Personnalisé](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-install-custom)
+
+   - [Authentification directe](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-pta-quick-start)
 
 > [!IMPORTANT]
-> Cette cmdlet utilise une méthode de traitement par lots qui se traduit par un retard de propagation de quelques minutes avant que les résultats de la cmdlet ne soient visibles.
+> Après exécution de l'Assistant Configuration de l'outil de synchronisation Azure Active Directory, le compte **MSOL_AD_SYNC** est créé dans votre forêt Active Directory. Ce compte permet de lire et de synchroniser vos informations Active Directory sur site. Pour que la synchronisation d'annuaires fonctionne correctement, assurez-vous que le port TCP 443 est ouvert sur votre serveur de synchronisation d'annuaires sur site.
 
-### <a name="use-eop-powershell-to-remove-a-mail-user"></a>Utiliser EOP PowerShell pour supprimer un utilisateur de messagerie
-
-Cet exemple utilise la cmdlet [Remove-EOPMailUser](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/remove-eopmailuser) pour supprimer l'utilisateur Jeffrey Zeng :
-
-```PowerShell
-Remove-EOPMailUser -Identity Jeffrey
-```
-Pour vérifier que cela a fonctionné, exécutez la cmdlet [Get-Recipient](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/get-recipient) pour vérifier que l’utilisateur de messagerie n’existe plus.
-
-```PowerShell
-Get-Recipient Jeffrey | Format-List
-```
+Après avoir configuré votre synchronisation, veillez à vérifier que la synchronisation AAD se synchronise correctement. Dans le CAE, accédez à **Destinataires** \> **Contacts** et vérifiez que la liste des utilisateurs a été correctement synchronisée à partir de votre environnement local.

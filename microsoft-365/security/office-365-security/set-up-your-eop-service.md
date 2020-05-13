@@ -1,5 +1,5 @@
 ---
-title: Configurer votre service EOP
+title: Configurer votre service EOP autonome
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -13,17 +13,17 @@ ms.custom:
 - seo-marvel-apr2020
 localization_priority: Normal
 ms.assetid: d74c6ddf-11b0-43ee-b298-8bb0340895f0
-description: Cet article décrit la configuration de Microsoft Exchange Online Protection (EOP).
-ms.openlocfilehash: c00d39cae440bc95e26c853e107d8d7a8f4c50d8
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+description: Les administrateurs peuvent apprendre à configurer Exchange Online Protection (EOP) autonome pour protéger les environnements de messagerie locaux.
+ms.openlocfilehash: bf762eabcfebf34ca8cb8d37935ffac011228df0
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035283"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44209798"
 ---
-# <a name="set-up-your-eop-service"></a>Configurer votre service EOP
+# <a name="set-up-your-standalone-eop-service"></a>Configurer votre service EOP autonome
 
-Cette rubrique explique comment configurer Microsoft Exchange Online Protection (EOP). Si vous avez été redirigé depuis l'Assistant Domaines Office 365, revenez à l'Assistant Domaines Office 365 si vous ne souhaitez pas utiliser Exchange Online Protection. Si vous recherchez plus d'informations sur la configuration des connecteurs, consultez la rubrique [Configure mail flow using connectors in Office 365](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow).
+Cette rubrique explique comment configurer Exchange Online Protection (EOP) en mode autonome. Si vous avez été redirigé depuis l'Assistant Domaines Office 365, revenez à l'Assistant Domaines Office 365 si vous ne souhaitez pas utiliser Exchange Online Protection. Si vous recherchez plus d'informations sur la configuration des connecteurs, consultez la rubrique [Configure mail flow using connectors in Office 365](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow).
 
 > [!NOTE]
 > Elle suppose que vous disposez de boîtes aux lettres locales et que vous voulez les protéger avec EOP (scénario dit « autonome »). Si vous voulez héberger toutes vos boîtes aux lettres dans le nuage avec Exchange Online, il n'est pas nécessaire de réaliser toutes les étapes décrites dans cette rubrique. Consultez la [comparaison des plans Exchange Online](https://products.office.com/exchange/compare-microsoft-exchange-online-plans) pour vous inscrire et acheter des boîtes aux lettres Cloud. Si vous voulez héberger certaines de vos boîtes aux lettres localement et d'autres dans le nuage, il s'agit d'un scénario hybride. Des paramètres de flux de messagerie plus avancés sont requis. [Déploiements hybrides Exchange Server](https://docs.microsoft.com/exchange/exchange-hybrid) explique le flux de messagerie hybride et comporte des liens vers des ressources qui expliquent comment le configurer.
@@ -32,7 +32,7 @@ Cette rubrique explique comment configurer Microsoft Exchange Online Protection 
 
 - Durée d'exécution estimée de cette tâche : 1 heure
 
-- Pour configurer des connecteurs, votre compte doit être un administrateur général ou un administrateur d’entreprise Exchange (le groupe de rôles gestion de l’organisation). Pour plus d’informations, consultez la rubrique [Feature Permissions in EOP](feature-permissions-in-eop.md).
+- Des autorisations doivent vous être attribuées avant de pouvoir exécuter ces procédures. Plus précisément, vous avez besoin du rôle domaines approuvés et distants, qui est affecté aux groupes de rôles MailFlowAdministrator et OrganizationManagement (administrateurs globaux) par défaut. Pour plus d’informations, consultez la rubrique [autorisations dans EOP autonome](feature-permissions-in-eop.md) et utiliser le centre d’administration Exchange pour [modifier la liste des membres dans les groupes de rôles](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups).
 
 - Si vous ne vous êtes pas inscrit à EOP, consultez la page [Exchange Online Protection](https://products.office.com/exchange/exchange-email-security-spam-protection), et choisissez d'acheter ou d'essayer le service.
 
@@ -56,7 +56,7 @@ Avant de configurer votre flux de messagerie vers et depuis le service EOP, nous
 
 ## <a name="step-3-use-the-eac-to-set-up-mail-flow"></a>Étape 3 : Utiliser le CAE pour configurer le flux de messagerie
 
-Créez des connecteurs dans le Centre d'administration Exchange (CAE) qui activent le flux de messagerie entre EOP et vos serveurs de messagerie locaux. Pour obtenir des instructions détaillées, consultez [la rubrique Set up Connectors to route mail between 365 and your own email Servers](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-to-route-mail).
+Créez des connecteurs dans le Centre d'administration Exchange (CAE) qui activent le flux de messagerie entre EOP et vos serveurs de messagerie locaux. Pour obtenir des instructions détaillées, reportez-vous [à configurer des connecteurs pour router les messages entre Microsoft 365 et vos propres serveurs de messagerie](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-to-route-mail).
 
 ### <a name="how-do-you-know-this-task-worked"></a>Comment savoir si cette tâche a fonctionné ?
 
@@ -64,7 +64,7 @@ Vérifiez le flux de messagerie entre le service et votre environnement. Pour pl
 
 ## <a name="step-4-allow-inbound-port-25-smtp-access"></a>Étape 4 : Autoriser l’accès SMTP entrant sur le port 25
 
-Après avoir configuré les connecteurs, attendez 72 heures avant d'autoriser la propagation de vos mises à jour d'enregistrement DNS. Ensuite, limitez le trafic SMTP entrant sur le port 25 au niveau du pare-feu ou des serveurs de messagerie de façon à accepter uniquement le courrier électronique en provenance des centres de données EOP, en particulier des adresses IP répertoriées dans [Adresses IP d'Exchange Online Protection](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges). Cela protège votre environnement local en limitant l'étendue des messages entrants. Si des paramètres définis sur votre serveur de messagerie contrôlent les adresses IP autorisées à se connecter pour le relais de messagerie, mettez-les à jour également.
+Une fois que vous avez configuré les connecteurs, attendez 72 heures pour autoriser la propagation de vos mises à jour des enregistrements DNS. Ensuite, limitez le trafic SMTP entrant sur le port 25 au niveau du pare-feu ou des serveurs de messagerie de façon à accepter uniquement le courrier électronique en provenance des centres de données EOP, en particulier des adresses IP répertoriées dans [Adresses IP d'Exchange Online Protection](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges). Cela protège votre environnement local en limitant l'étendue des messages entrants. Si des paramètres définis sur votre serveur de messagerie contrôlent les adresses IP autorisées à se connecter pour le relais de messagerie, mettez-les à jour également.
 
 > [!TIP]
 > Configurez les paramètres du serveur SMTP en définissant l'expiration du délai de connexion sur 60 secondes. Ce paramètre est acceptable pour la plupart des situations, ce qui permet un certain délai dans le cas d’un message envoyé avec une pièce jointe de grande taille, par exemple.
@@ -73,11 +73,14 @@ Après avoir configuré les connecteurs, attendez 72 heures avant d'autoriser la
 
 Pour vous assurer que le courrier indésirable est correctement routé vers le dossier Courrier indésirable de chaque utilisateur, vous pouvez effectuer quelques opérations de configuration. Les étapes sont fournies dans [configure standalone EOP pour envoyer du courrier indésirable dans le dossier courrier indésirable dans des environnements hybrides](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md).
 
-Si vous ne souhaitez pas déplacer les messages vers le dossier Courrier indésirable de chaque utilisateur, vous pouvez choisir une autre action en modifiant vos stratégies de filtrage de contenu dans le Centre d'administration Exchange. Si vous souhaitez en savoir plus, consultez l’article [Configurer les stratégies anti-courrier indésirable dans Office 365](configure-your-spam-filter-policies.md).
+Si vous ne souhaitez pas déplacer les messages vers le dossier de courrier indésirable de chaque utilisateur, vous pouvez choisir une autre action en modifiant vos stratégies anti-courrier indésirable. Si vous souhaitez en savoir plus, consultez l’article [Configurer les stratégies anti-courrier indésirable dans Office 365](configure-your-spam-filter-policies.md).
 
 ## <a name="step-6-use-the-microsoft-365-admin-center-to-point-your-mx-record-to-eop"></a>Étape 6 : utiliser le centre d’administration Microsoft 365 pour faire pointer votre enregistrement MX vers EOP
 
 Suivez les étapes de configuration du domaine pour mettre à jour votre enregistrement MX pour votre domaine, de sorte que votre courrier entrant passe par EOP. Veillez à pointer directement votre enregistrement MX vers EOP plutôt que de faire relayer votre courrier électronique vers EOP par un service de filtrage tiers. Pour plus d'informations, vous pouvez de nouveau vous reporter à la rubrique [Créer des enregistrements DNS pour Office 365 lorsque vous gérez vos enregistrements DNS](https://docs.microsoft.com/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider).
+
+> [!NOTE]
+> Si vous devez faire pointer votre enregistrement MX vers un autre serveur ou service qui se trouve devant EOP, reportez-vous à la rubrique [filtrage amélioré pour les connecteurs dans Exchange Online](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).
 
 ### <a name="how-do-you-know-this-task-worked"></a>Comment savoir si cette tâche a fonctionné ?
 
@@ -90,4 +93,4 @@ Suivez les étapes de configuration du domaine pour mettre à jour votre enregis
 - Si vous souhaitez effectuer un test de message sortant, vous pouvez envoyer un message électronique d'un utilisateur de votre organisation vers un compte de messagerie basé sur le web et confirmer sa réception.
 
 > [!TIP]
-> Une fois votre configuration terminée, aucune étape supplémentaire n'est requise pour activer la suppression du courrier indésirable et des programmes malveillants par EOP. Ces opérations sont effectuées automatiquement. Vous pouvez cependant adapter vos paramètres aux exigences de votre entreprise à l'aide du CAE. Pour plus d’informations, consultez la rubrique protection contre le [courrier indésirable et les programmes malveillants dans Office 365](anti-spam-and-anti-malware-protection.md). <br/><br/> Maintenant que votre service est en cours d’exécution, nous vous recommandons de lire les [meilleures pratiques pour la configuration d’EOP](best-practices-for-configuring-eop.md), qui décrit les paramètres recommandés et les éléments à prendre en compte après avoir configuré EOP.
+> Une fois votre configuration terminée, aucune étape supplémentaire n'est requise pour activer la suppression du courrier indésirable et des programmes malveillants par EOP. Ces opérations sont effectuées automatiquement. Toutefois, vous pouvez affiner vos paramètres en fonction des besoins de votre entreprise. Pour plus d’informations, consultez la rubrique [protection contre le courrier indésirable et les programmes malveillants dans Office 365](anti-spam-and-anti-malware-protection.md) et [configure usurpation d’identité](learn-about-spoof-intelligence.md). <br/><br/> Maintenant que votre service est en cours d’exécution, nous vous recommandons de lire les [meilleures pratiques pour la configuration d’EOP](best-practices-for-configuring-eop.md), qui décrit les paramètres recommandés et les éléments à prendre en compte après avoir configuré EOP.

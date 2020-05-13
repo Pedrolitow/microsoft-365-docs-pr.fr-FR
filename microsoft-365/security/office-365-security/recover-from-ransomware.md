@@ -13,14 +13,14 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Les administrateurs de Microsoft 365 peuvent découvrir comment effectuer une récupération suite à une attaque par ransomware.
-ms.openlocfilehash: 49e14e92505f5241828a525aba82a2dc871e6784
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 51f5bb365fe707615444c1399479171aa72755e1
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634399"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208257"
 ---
-# <a name="recover-from-a-ransomware-attack-in-office-365"></a>Récupération suite à une attaque de ransomware dans Office 365
+# <a name="recover-from-a-ransomware-attack-in-microsoft-365"></a>Récupération d’une attaque par ransomware dans Microsoft 365
 
 Même si vous avez toutes les précautions à prendre pour protéger votre organisation, vous pouvez toujours devenir victime d’une attaque par [ransomware](https://docs.microsoft.com/windows/security/threat-protection/intelligence/ransomware-malware) . Les ransomware sont de grandes entreprises et les attaques sont vérifiées de façon sophistiquée.
 
@@ -42,7 +42,7 @@ Le point important ici est d’arrêter la propagation du chiffrement des donné
 
 Si vous pensez que le courrier électronique est une cible, vous devez temporairement désactiver l’accès des utilisateurs aux boîtes aux lettres. Exchange ActiveSync est utilisé par les appareils mobiles pour synchroniser les données entre l’appareil et la boîte aux lettres Exchange Online.
 
-Pour désactiver ActiveSync pour une boîte aux lettres, consultez [la rubrique How to Disable Exchange ActiveSync for users in Office 365](https://support.microsoft.com/help/2795303/how-to-disable-exchange-activesync-for-users-in-office-365).
+Pour désactiver ActiveSync pour une boîte aux lettres, consultez [la rubrique How to Disable Exchange ActiveSync for users in Exchange Online](https://support.microsoft.com/help/2795303/how-to-disable-exchange-activesync-for-users-in-office-365).
 
 Pour désactiver d’autres types d’accès à une boîte aux lettres, voir :
 
@@ -78,7 +78,7 @@ La restauration des fichiers dans OneDrive entreprise vous permet de restaurer l
 
 ## <a name="step-6-recover-deleted-email"></a>Étape 6 : récupérer les messages électroniques supprimés
 
-Dans le cas rare où le ransomware a supprimé tous vos courriers électroniques, vous pouvez probablement récupérer les éléments supprimés. Si vous souhaitez en savoir plus, consultez les articles : 
+Dans le cas rare où le ransomware a supprimé tous vos courriers électroniques, vous pouvez probablement récupérer les éléments supprimés. Pour plus d’informations, voir :
 
 - [Récupérer des messages supprimés dans la boîte aux lettres d’un utilisateur](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-user-mailboxes/recover-deleted-messages)
 
@@ -124,7 +124,7 @@ Si votre pays n’est pas indiqué, demandez à vos organismes d’application d
 
 Vous pouvez signaler un message de hameçonnage contenant des ransomware à l’aide de l’une des méthodes suivantes. Pour plus d’informations, voir [Signaler des messages et des fichiers à Microsoft](report-junk-email-messages-to-microsoft.md).
 
-## <a name="see-also"></a>Voir également
+## <a name="see-also"></a>Articles associés
 
 - [Rançongiciels](https://docs.microsoft.com/windows/security/threat-protection/intelligence/ransomware-malware)
 

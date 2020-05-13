@@ -1,11 +1,11 @@
 ---
-title: Services pour les non clients qui envoient des messages vers Office 365
+title: Services pour les non-clients envoyant des courriers électroniques à Microsoft 365
 f1.keywords:
 - NOCSH
-ms.author: tracyp
-author: MSFTTracyP
+ms.author: chrisda
+author: chrisda
 manager: dansimp
-ms.date: 5/2/2016
+ms.date: ''
 audience: ITPro
 ms.topic: overview
 ms.service: O365-seccomp
@@ -16,16 +16,16 @@ ms.assetid: 19fd3e0f-8dbf-4049-a810-2c8ee6cefd48
 ms.collection:
 - M365-security-compliance
 description: Pour préserver la confiance des utilisateurs dans l'utilisation de la messagerie électronique, Microsoft a mis en place diverses stratégies et technologies pour aider à protéger ses utilisateurs.
-ms.openlocfilehash: 2d8de601fd24f30c342768b8b27e44248f05b5fe
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 3a3dc26d757de84f5abd46c85f3596db67d676ae
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43638391"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208233"
 ---
-# <a name="services-for-non-customers-sending-mail-to-office-365"></a>Services pour les non clients qui envoient des messages vers Office 365
+# <a name="services-for-non-customers-sending-mail-to-microsoft-365"></a>Services pour les non-clients envoyant des courriers électroniques à Microsoft 365
 
-L'utilisation abusive de la messagerie électronique, les courriers indésirables et les e-mails frauduleux (hameçonnage) continuent à peser sur l'ensemble de l'écosystème de la messagerie. Pour préserver la confiance des utilisateurs dans l'utilisation de la messagerie électronique, Microsoft a mis en place diverses stratégies et technologies pour aider à protéger ses utilisateurs. Cependant, Microsoft comprend que les e-mails légitimes ne doivent pas être affectés négativement. Par conséquent, nous avons établi une suite de services pour aider les expéditeurs à améliorer leur capacité à livrer des courriers électroniques aux utilisateurs de Microsoft 365 en gérant leur réputation d’envoi de manière proactive.
+L'utilisation abusive de la messagerie électronique, les courriers indésirables et les e-mails frauduleux (hameçonnage) continuent à peser sur l'ensemble de l'écosystème de la messagerie. Pour faciliter la gestion de l’approbation des utilisateurs dans l’utilisation de la messagerie, Microsoft a mis en place différentes stratégies et technologies afin de protéger les utilisateurs. Cependant, Microsoft comprend que les e-mails légitimes ne doivent pas être affectés négativement. Par conséquent, nous avons établi une suite de services pour aider les expéditeurs à améliorer leur capacité à livrer des courriers électroniques aux utilisateurs de Microsoft 365 en gérant leur réputation d’envoi de manière proactive.
 
 Cette vue d’ensemble fournit des informations sur les avantages que nous fournissons à votre organisation, même si vous n’êtes pas un client.
 
@@ -33,14 +33,14 @@ Cette vue d’ensemble fournit des informations sur les avantages que nous fourn
 
 |**Service**|**Avantages**|
 |:-----|:-----|
-|Ce contenu d'aide en ligne| Fournit :  <br/>  Un point de départ pour toutes les questions relatives à la mise à disposition de communications aux utilisateurs EOP  <br/>  Comprend un guide en ligne simple avec nos stratégies et exigences  <br/>  Une présentation des filtres de courrier indésirable et des technologies d'authentification utilisés par Microsoft|
+|Ce contenu d'aide en ligne|Fournit : <br/> Point de départ pour toutes les questions relatives à la remise des communications aux utilisateurs EOP. <br/><br/> Comprend un guide en ligne simple avec nos stratégies et exigences. <br/><br/> Vue d’ensemble des filtres de courrier indésirable et des technologies d’authentification employés par Microsoft.|
 |[Support technique Microsoft](#microsoft-support)|Offre un support autonome et de transmission à une instance supérieure pour les problèmes de remise.|
 |[Portail d’adresses IP de blocage du courrier indésirable](#anti-spam-ip-delist-portal)|Un outil permettant d'envoyer une demande de suppression d'adresse IP de la liste. Avant d'envoyer cette demande, il incombe à l'expéditeur de s'assurer que tout autre courrier provenant de l'adresse IP en question n'est pas abusif ou malveillant.|
-|[Création de rapport de courrier indésirable et de mauvaise utilisation pour le courrier indésirable provenant d'Exchange Online](#abuse-and-spam-reporting-for-junk-email-originating-from-exchange-online)|Permet de ne pas envoyer le courrier indésirable à partir d'Exchange Online et de ne pas encombrer Internet et votre système de messagerie.|
+|[Création de rapport de courrier indésirable et de mauvaise utilisation pour le courrier indésirable provenant d'Exchange Online](#abuse-and-spam-reporting-for-junk-email-originating-from-exchange-online)|Empêche l’envoi de courrier indésirable et d’autres messages indésirables à partir d’Exchange Online et le désordre sur Internet et votre système de messagerie.|
 
 ## <a name="microsoft-support"></a>Support technique Microsoft
 
-Microsoft offre plusieurs options de prise en charge pour les personnes qui rencontrent des problèmes pour envoyer des messages à des boîtes aux lettres Microsoft 365. Nous vous recommandons d'effectuer les actions suivantes :
+Microsoft offre plusieurs options de prise en charge pour les personnes qui rencontrent des problèmes pour envoyer des messages à des destinataires Microsoft 365. Nous vous recommandons d'effectuer les actions suivantes :
 
 - Suivez les instructions fournies dans les rapports de non-remise que vous recevez.
 

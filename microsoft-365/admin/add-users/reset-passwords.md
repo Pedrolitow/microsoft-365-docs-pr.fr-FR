@@ -26,12 +26,12 @@ search.appverid:
 - GEA150
 ms.assetid: 7a5d073b-7fae-4aa5-8f96-9ecd041aba9c
 description: 'Découvrez comment réinitialiser le mot de passe d’un utilisateur dans Microsoft 365 pour un abonnement professionnel. '
-ms.openlocfilehash: 32d2d529ab4e2592556613b016231dbbd93458b3
-ms.sourcegitcommit: 614666afb104fc97acb4a2ee5577ef63c0de153a
+ms.openlocfilehash: 0cd9bfe2b4f60ed0150e95f35d1f24994724ca60
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44173517"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208197"
 ---
 # <a name="reset-passwords"></a>Réinitialiser les mots de passe
 
@@ -79,13 +79,13 @@ Ces étapes sont destinées uniquement aux personnes qui utilisent un forfait Mi
 
 Suivez ces étapes si vous avez oublié votre mot de passe, mais que vous êtes en mesure de vous connecter à Microsoft 365 car, par exemple, votre mot de passe est enregistré dans votre navigateur : 
     
-1. Sélectionnez votre nom (icône) dans le coin supérieur droit > **mon compte** > **informations personnelles**. 
+1. Sélectionnez votre nom (icône) dans le coin supérieur droit > **mon compte**  >  **informations personnelles**. 
           
 2. Sous **Détails du contact**, vérifiez que votre **autre courrier électronique** est précis et que vous avez fourni un numéro de téléphone mobile. Si ce n’est pas le cas, modifiez-les maintenant. 
         
 3. Se déconnecter : sélectionnez votre nom dans le coin supérieur droit (dans l’image ci-dessus, affichée en tant que **Diane**) \> **déconnectez-vous**. 
         
-4. À \> présent, reconnectez-vous : saisissez \> **votre nom d'** utilisateur puis sélectionnez **mot de passe oublié**. 
+4. À présent, reconnectez-vous : saisissez votre nom d’utilisateur \> **Next** \> puis sélectionnez **mot de passe oublié**. 
     
 5. Suivez les étapes de l’Assistant pour réinitialiser votre mot de passe. Il utilise les autres informations de contact pour vérifier que vous êtes la personne appropriée pour réinitialiser votre mot de passe. 
     
@@ -100,7 +100,7 @@ Si vous avez oublié votre mot de passe et que vous ne parvenez pas à vous conn
 ## <a name="reset-all-business-passwords-for-everyone-in-your-organization-at-the-same-time"></a>Réinitialiser tous les mots de passe d’entreprise pour tous les membres de votre organisation en même temps
 <a name="bkmk_forgot"> </a>
 
-Ces étapes s'appliquent à une entreprise comptant des dizaines d'utilisateurs. Si votre entreprise compte des centaines voire des milliers d'utilisateurs, reportez-vous à la section suivante concernant la réinitialisation de mots de passe en bloc.
+Ces étapes s'appliquent à une entreprise comptant des dizaines d'utilisateurs. Si vous avez des centaines ou des milliers d’utilisateurs, reportez-vous à la section suivante sur la réinitialisation des mots de passe en bloc (maximum 40 utilisateurs à la fois).
   
 1. Dans le Centre d’administration, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utilisateurs actifs</a>.
     

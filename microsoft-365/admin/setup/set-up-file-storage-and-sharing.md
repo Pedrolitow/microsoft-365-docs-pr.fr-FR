@@ -27,12 +27,12 @@ search.appverid:
 - ODB160
 ms.assetid: 7aa9cdc8-2245-4218-81ee-86fa7c35f1de
 description: Découvrez comment utiliser OneDrive et un site d’équipe pour le stockage et le partage de fichiers.
-ms.openlocfilehash: 98fc168e42fea50ae21914d5f44e403ae459c1d9
-ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
+ms.openlocfilehash: 7eb9ece0408fc495938c319390267790b01a2b89
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "44165216"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208185"
 ---
 # <a name="set-up-file-storage-and-sharing"></a>Configurer le stockage et le partage des fichiers
 
@@ -144,7 +144,7 @@ Pour synchroniser des fichiers sur votre site d'équipe avec votre ordinateur de
 
     ![Modifier votre dossier local à cet écran](../../media/6395485a-e729-4a9a-8e7d-b35e662435da.png)
   
-6. Les fichiers de vos sites d’équipe apparaissent dans le volet gauche de l’Explorateur de fichiers sous le nom de votre organisation. Les fichiers dans OneDrive s’affichent sous « OneDrive \<-nom de\>l’Organisation »
+6. Les fichiers de vos sites d’équipe apparaissent dans le volet gauche de l’Explorateur de fichiers sous le nom de votre organisation. Les fichiers dans OneDrive s’affichent sous « OneDrive- \< nom de l’organisation \> »
 
     ![Voir les éléments qui ont été synchronisés dans votre dossier local](../../media/93e2ca9f-4b5b-4930-a94d-ebc5b95aca84.png)
   
@@ -185,7 +185,7 @@ Vous pouvez activer le stockage tiers pour vos utilisateurs dans Microsoft 365 a
   
 1. Connectez-vous au <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centre d’administration</a>.
 
-2. Accédez à la page <a href="https://go.microsoft.com/fwlink/p/?linkid=2118715" target="_blank">paramètres</a> des **paramètres** \> .
+2. Accédez à la **Settings** \> page <a href="https://go.microsoft.com/fwlink/p/?linkid=2118715" target="_blank">**paramètres d’organisation**</a> des paramètres.
 
 3. Dans l’onglet **services** , sélectionnez **Office sur le Web**.
 

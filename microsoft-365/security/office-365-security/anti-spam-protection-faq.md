@@ -16,17 +16,17 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: Cette rubrique fournit des FAQ & des réponses sur la protection contre le courrier indésirable. Les réponses sont applicables pour les clients de Microsoft Exchange Online & Exchange Online Protection (EOP).
-ms.openlocfilehash: 33fb1fb5d73f0d686a72e89d460c0973d2bbdabe
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+description: Les administrateurs peuvent consulter les questions fréquemment posées et les réponses à propos de la protection contre le courrier indésirable dans Exchange Online Protection (EOP).
+ms.openlocfilehash: 69d9e72e3be53f0ddd5bc5771493564f364bef54
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44033737"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44209642"
 ---
 # <a name="anti-spam-protection-faq"></a>Forum Aux Questions sur la protection anti-courrier indésirable
 
-Cette rubrique fournit des questions fréquemment posées et des réponses à propos de la protection contre le courrier indésirable pour les clients Microsoft 365 avec des boîtes aux lettres dans Exchange Online ou des clients Exchange Online Protection (EOP) autonomes sans boîtes aux lettres Exchange Online.
+Cette rubrique fournit des questions fréquemment posées et des réponses à propos de la protection anti-programme malveillant pour les organisations Microsoft 365 avec des boîtes aux lettres dans Exchange Online ou des organisations Exchange Online (EOP) autonomes sans boîte aux lettres Exchange Online.
 
 Pour accéder à des questions et des réponses sur la mise en quarantaine, voir [FAQ sur la mise en quarantaine](quarantine-faq.md).
 
@@ -34,88 +34,88 @@ Pour obtenir des questions et des réponses sur la protection contre les program
 
 Pour obtenir des questions et des réponses sur la protection contre l’usurpation d’identité, consultez la rubrique [anti-spoofing protection FAQ](anti-spoofing-protection-faq.md).
 
-## <a name="q-by-default-what-happens-to-a-spam-detected-message"></a>Clench. Par défaut, qu'arrive-t-il à un message identifié comme courrier indésirable ?
+## <a name="by-default-what-happens-to-a-spam-detected-message"></a>Par défaut, qu'arrive-t-il à un message identifié comme courrier indésirable ?
 
-A. **Pour les messages entrants :** La majorité du courrier indésirable est supprimée via le filtrage des connexions, qui est basé sur l’adresse IP du serveur de messagerie source. Les stratégies de blocage du courrier indésirable (également appelées stratégies de filtrage du courrier indésirable ou stratégies de filtrage de contenu) inspectent et classifient les messages comme courrier indésirable, en bloc ou par hameçonnage. Par défaut, les messages classés comme courrier indésirable ou en bloc sont remis dans le dossier de courrier indésirable du destinataire, tandis que les messages classés comme hameçonnage sont mis en quarantaine. Vous pouvez modifier la stratégie de blocage du courrier indésirable par défaut (s’applique à tous les destinataires) ou vous pouvez créer des stratégies de blocage du courrier indésirable personnalisées avec des paramètres plus stricts pour des groupes d’utilisateurs spécifiques (par exemple, vous pouvez mettre en quarantaine le courrier indésirable envoyé aux cadres dirigeants). Pour plus d’informations, consultez la rubrique [configurer les stratégies anti-courrier indésirable](configure-your-spam-filter-policies.md) et les [paramètres de stratégie anti-courrier indésirable recommandés](recommended-settings-for-eop-and-office365-atp.md#eop-anti-spam-policy-settings).
+**Pour les messages entrants :** La majorité du courrier indésirable est supprimée via le filtrage des connexions, qui est basé sur l’adresse IP du serveur de messagerie source. Les stratégies de blocage du courrier indésirable (également appelées stratégies de filtrage du courrier indésirable ou stratégies de filtrage de contenu) inspectent et classifient les messages comme courrier indésirable, en bloc ou par hameçonnage. Par défaut, les messages classés comme courrier indésirable ou en bloc sont remis dans le dossier de courrier indésirable du destinataire, tandis que les messages classés comme hameçonnage sont mis en quarantaine. Vous pouvez modifier la stratégie de blocage du courrier indésirable par défaut (s’applique à tous les destinataires) ou vous pouvez créer des stratégies de blocage du courrier indésirable personnalisées avec des paramètres plus stricts pour des groupes d’utilisateurs spécifiques (par exemple, vous pouvez mettre en quarantaine le courrier indésirable envoyé aux cadres dirigeants). Pour plus d’informations, consultez la rubrique [configurer les stratégies anti-courrier indésirable](configure-your-spam-filter-policies.md) et les [paramètres de stratégie anti-courrier indésirable recommandés](recommended-settings-for-eop-and-office365-atp.md#eop-anti-spam-policy-settings).
 
 > [!IMPORTANT]
 > Dans les déploiements hybrides où EOP protège les boîtes aux lettres locales, vous devez configurer deux règles de flux de messagerie Exchange (également appelées règles de transport) dans votre organisation Exchange locale pour détecter les en-têtes de filtrage du courrier indésirable EOP ajoutés aux messages. Pour les détails, voir [Configurer une protection Exchange Online (EOP) autonome pour envoyer des courriers indésirables dans le dossier Courrier indésirable dans les environnements hybrides](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md).
 
  **Pour les messages sortants :** Le message est routé via le pool de [remise à haut risque](high-risk-delivery-pool-for-outbound-messages.md) ou renvoyé à l’expéditeur dans une notification d’échec de remise (également appelée notification de non-remise). Pour plus d’informations sur la protection contre le courrier indésirable sortant, consultez la rubrique [Sorted spam Controls](outbound-spam-controls.md).
 
-## <a name="q-whats-a-zero-day-spam-variant-and-how-is-it-handled-by-the-service"></a>Clench. Qu’est-ce qu’une variante de courrier indésirable de zéro jour et comment est-elle gérée par le service ?
+## <a name="whats-a-zero-day-spam-variant-and-how-is-it-handled-by-the-service"></a>Qu’est-ce qu’une variante de courrier indésirable de zéro jour et comment est-elle gérée par le service ?
 
-A. Une variante de courrier indésirable du jour zéro est une variante de courrier indésirable précédemment inconnue du courrier indésirable qui n’a jamais été capturée ou analysée, de sorte que nos filtres anti-courrier indésirable n’ont aucune information disponible pour la détecter. Une fois qu’un échantillon de courrier indésirable de zéro jour est capturé et analysé par nos analystes du courrier indésirable s’il répond aux critères de classification du courrier indésirable, nos filtres de blocage du courrier indésirable sont mis à jour pour le détecter et ne sont plus considérés comme « Zero-Day ».
+Une variante de courrier indésirable du jour zéro est une variante de courrier indésirable précédemment inconnue du courrier indésirable qui n’a jamais été capturée ou analysée, de sorte que nos filtres anti-courrier indésirable n’ont aucune information disponible pour la détecter. Une fois qu’un échantillon de courrier indésirable de zéro jour est capturé et analysé par nos analystes du courrier indésirable s’il répond aux critères de classification du courrier indésirable, nos filtres de blocage du courrier indésirable sont mis à jour pour le détecter et ne sont plus considérés comme « Zero-Day ».
 
 **Remarque :** Si vous recevez un message qui peut être une variante de courrier indésirable de zéro jour, afin de nous aider à améliorer le service, envoyez le message à Microsoft à l’aide de l’une des méthodes décrites dans [rapport messages and files to Microsoft](report-junk-email-messages-to-microsoft.md).
 
-## <a name="q-do-i-need-to-configure-the-service-to-provide-anti-spam-protection"></a>Clench. Dois-je configurer le service pour bénéficier d'une protection anti-courrier indésirable ?
+## <a name="do-i-need-to-configure-the-service-to-provide-anti-spam-protection"></a>Dois-je configurer le service pour bénéficier d'une protection anti-courrier indésirable ?
 
-A. Une fois que vous vous êtes inscrit au service et ajouté votre domaine, le filtrage du courrier indésirable est automatiquement activé. Par défaut, le filtrage du courrier indésirable est réglé pour vous protéger sans nécessiter aucune configuration supplémentaire (hormis l’exception décrite précédemment pour les clients autonomes EOP autonomes dans les environnements hybrides). En tant qu’administrateur, vous pouvez modifier les paramètres de filtrage du courrier indésirable par défaut pour répondre au mieux aux besoins de votre organisation. Pour une granularité accrue, vous pouvez également créer des stratégies de blocage du courrier indésirable et de blocage du courrier indésirable pour les utilisateurs, les groupes ou les domaines spécifiés dans votre organisation. Les stratégies personnalisées ont toujours priorité sur la stratégie par défaut, mais vous pouvez modifier la priorité (c’est-à-dire, l’ordre d’exécution) de vos stratégies personnalisées.
+Une fois que vous vous êtes inscrit au service et ajouté votre domaine, le filtrage du courrier indésirable est automatiquement activé. Par défaut, le filtrage du courrier indésirable est réglé pour vous protéger sans nécessiter aucune configuration supplémentaire (hormis l’exception décrite précédemment pour les clients autonomes EOP autonomes dans les environnements hybrides). En tant qu’administrateur, vous pouvez modifier les paramètres de filtrage du courrier indésirable par défaut pour répondre au mieux aux besoins de votre organisation. Pour une granularité accrue, vous pouvez également créer des stratégies de blocage du courrier indésirable et de blocage du courrier indésirable pour les utilisateurs, les groupes ou les domaines spécifiés dans votre organisation. Les stratégies personnalisées ont toujours priorité sur la stratégie par défaut, mais vous pouvez modifier la priorité (c’est-à-dire, l’ordre d’exécution) de vos stratégies personnalisées.
 
 Pour plus d’informations, voir les rubriques suivantes :
 
 [Paramètres recommandés pour la sécurité ATP d’Office 365](recommended-settings-for-eop-and-office365-atp.md)
 
-[Configurer la protection contre les stratégies](configure-the-connection-filter-policy.md)
+[Configurer le filtrage des connexions dans EOP](configure-the-connection-filter-policy.md)
 
-[Configuration de stratégies de blocage du courrier indésirable dans Office 365](configure-your-spam-filter-policies.md)
+[Configurer des stratégies de blocage du courrier indésirable dans EOP](configure-your-spam-filter-policies.md)
 
 [Configurer la stratégie anti-courrier indésirable sortant](configure-the-outbound-spam-policy.md)
 
-## <a name="q-if-i-make-a-change-to-an-anti-spam-policy-how-long-does-it-take-after-i-save-my-changes-for-them-to-take-effect"></a>Clench. Si je modifie une stratégie anti-courrier indésirable, combien de temps après l'enregistrement de mes changements ces derniers prennent-ils effet ?
+## <a name="if-i-make-a-change-to-an-anti-spam-policy-how-long-does-it-take-after-i-save-my-changes-for-them-to-take-effect"></a>Si je modifie une stratégie anti-courrier indésirable, combien de temps après l'enregistrement de mes changements ces derniers prennent-ils effet ?
 
-A. Les changements devraient prendre effet au bout d’une heure maximum.
+Les changements devraient prendre effet au bout d’une heure maximum.
 
-## <a name="q-is-bulk-email-filtering-automatically-enabled"></a>Clench. Le filtrage des messages électroniques en bloc est-il automatiquement activé ?
+## <a name="is-bulk-email-filtering-automatically-enabled"></a>Le filtrage des messages électroniques en bloc est-il automatiquement activé ?
 
-A. Oui. Pour plus d’informations sur les messages électroniques en masse, consultez [la rubrique quelle est la différence entre courrier indésirable et courrier électronique en masse ?](what-s-the-difference-between-junk-email-and-bulk-email.md).
+Oui. Pour plus d’informations sur les messages électroniques en masse, consultez [la rubrique quelle est la différence entre courrier indésirable et courrier électronique en masse ?](what-s-the-difference-between-junk-email-and-bulk-email.md).
 
-## <a name="q-does-the-service-provide-url-filtering"></a>Clench. Le service fournit-il le filtrage d’URL ?
+## <a name="does-the-service-provide-url-filtering"></a>Le service fournit-il le filtrage d’URL ?
 
-A. Oui, le service dispose d’un filtre d’URL qui recherche les URL dans les messages. Si des URL associées à du contenu indésirable ou malveillant connu sont détectées, le message est marqué comme courrier indésirable.
+Oui, le service dispose d’un filtre d’URL qui recherche les URL dans les messages. Si des URL associées à du contenu indésirable ou malveillant connu sont détectées, le message est marqué comme courrier indésirable.
 
-## <a name="q-how-can-customers-using-the-service-send-false-negative-spam-and-false-positive-non-spam-messages-to-microsoft"></a>Clench. Comment les clients utilisant le service peuvent-ils signaler des faux négatifs (courrier indésirable) et des faux positifs (messages légitimes) à Microsoft ?
+## <a name="how-can-customers-using-the-service-send-false-negative-spam-and-false-positive-non-spam-messages-to-microsoft"></a>Comment les clients utilisant le service peuvent-ils signaler des faux négatifs (courrier indésirable) et des faux positifs (messages légitimes) à Microsoft ?
 
-A. Les messages de courrier indésirable et de courrier non indésirable peuvent être envoyés à Microsoft pour être analysés de plusieurs façons. Pour plus d’informations, voir [Signaler des messages et des fichiers à Microsoft](report-junk-email-messages-to-microsoft.md).
+Les messages de courrier indésirable et de courrier non indésirable peuvent être envoyés à Microsoft pour être analysés de plusieurs façons. Pour plus d’informations, voir [Signaler des messages et des fichiers à Microsoft](report-junk-email-messages-to-microsoft.md).
 
-## <a name="q-can-i-get-spam-reports"></a>Clench. Puis-je obtenir des rapports sur le courrier indésirable ?
+## <a name="can-i-get-spam-reports"></a>Puis-je obtenir des rapports sur le courrier indésirable ?
 
-A. Oui, par exemple, vous pouvez obtenir un rapport de détection de courrier indésirable dans le centre d’administration 365 de Microsoft. Ce rapport indique le volume du courrier indésirable sous forme de nombre de messages uniques. Pour plus d'informations sur les rapports, consultez les liens suivants :
+Oui, par exemple, vous pouvez obtenir un rapport de détection de courrier indésirable dans le centre d’administration 365 de Microsoft. Ce rapport indique le volume du courrier indésirable sous forme de nombre de messages uniques. Pour plus d'informations sur les rapports, consultez les liens suivants :
 
 Clients Exchange Online : [surveillance, création de rapports et suivi des messages dans Exchange Online](https://docs.microsoft.com/exchange/monitoring/monitoring)
 
 Clients EOP autonomes : [création de rapports et suivi des messages dans Exchange Online Protection](reporting-and-message-trace-in-exchange-online-protection.md)
 
-## <a name="q-someone-sent-me-a-message-and-i-cant-find-it-i-suspect-that-it-may-have-been-detected-as-spam-is-there-a-tool-that-i-can-use-to-find-out"></a>Clench. Quelqu’un m’a envoyé un message et je ne le trouve pas. Je pense qu'il a peut-être été détecté comme courrier indésirable. Existe-t-il un outil qui me permettrait de m'en assurer ?
+## <a name="someone-sent-me-a-message-and-i-cant-find-it-i-suspect-that-it-may-have-been-detected-as-spam-is-there-a-tool-that-i-can-use-to-find-out"></a>Quelqu’un m’a envoyé un message et je ne le trouve pas. Je pense qu'il a peut-être été détecté comme courrier indésirable. Existe-t-il un outil qui me permettrait de m'en assurer ?
 
-A. Oui, l'outil de suivi des messages vous permet de suivre les messages électroniques quand ils sont acheminés via le service afin de déterminer ce qui leur est arrivé. Pour plus d’informations sur l’utilisation de l’outil de suivi des messages afin de déterminer pourquoi un message a été marqué comme courrier indésirable, voir was a- [t-il un message marqué comme courrier indésirable ?](https://docs.microsoft.com/exchange/monitoring/trace-an-email-message/message-trace-faq#was-a-message-marked-as-spam)
+Oui, l'outil de suivi des messages vous permet de suivre les messages électroniques quand ils sont acheminés via le service afin de déterminer ce qui leur est arrivé. Pour plus d’informations sur l’utilisation de l’outil de suivi des messages afin de déterminer pourquoi un message a été marqué comme courrier indésirable, voir was a- [t-il un message marqué comme courrier indésirable ?](https://docs.microsoft.com/exchange/monitoring/trace-an-email-message/message-trace-faq#was-a-message-marked-as-spam)
 
-## <a name="q-will-the-service-throttle-rate-limit-my-mail-if-my-users-send-outbound-spam"></a>Clench. Le service limite-t-il (limite de débit) ma messagerie si mes utilisateurs envoient du courrier indésirable sortant ?
+## <a name="will-the-service-throttle-rate-limit-my-mail-if-my-users-send-outbound-spam"></a>Le service limite-t-il (limite de débit) ma messagerie si mes utilisateurs envoient du courrier indésirable sortant ?
 
-R. Si plus de la moitié du courrier envoyé via le service par un même utilisateur au cours d'une certain laps de temps (par exemple, par heure) est considéré comme indésirable par Office 365, l'utilisateur ne peut plus envoyer de messages. Dans la plupart des cas, si un message sortant est déterminé comme étant du courrier indésirable, il est routé via le pool de remises à haut risque, ce qui réduit la probabilité d'ajout du pool d'IP sortantes normales à une liste rouge.
+Si plus de la moitié des messages envoyés par un utilisateur via le service au cours d’une période donnée (par exemple, par heure) est déterminé comme courrier indésirable par EOP, l’utilisateur ne peut pas envoyer de messages. Dans la plupart des cas, si un message sortant est déterminé comme étant du courrier indésirable, il est routé via le pool de remises à haut risque, ce qui réduit la probabilité d'ajout du pool d'IP sortantes normales à une liste rouge.
 
 Vous pouvez envoyer une notification à une adresse de messagerie spécifique quand un utilisateur est bloqué en relation avec l'envoi de courrier indésirable sortant. Pour plus d'informations sur ce paramètre, consultez la rubrique [Configurer la stratégie anti-courrier indésirable sortant](configure-the-outbound-spam-policy.md).
 
-## <a name="q-can-i-use-a-third-party-anti-spam-and-anti-malware-provider-in-conjunction-with-exchange-online"></a>Clench. Puis-je utiliser un fournisseur tiers de blocage de courrier indésirable et de programme malveillant en association avec Exchange Online ?
+## <a name="can-i-use-a-third-party-anti-spam-and-anti-malware-provider-in-conjunction-with-exchange-online"></a>Puis-je utiliser un fournisseur tiers de blocage de courrier indésirable et de programme malveillant en association avec Exchange Online ?
 
-A. Oui. Bien que nous vous recommandons de faire pointer votre enregistrement MX vers Microsoft, nous savons qu’il existe des raisons professionnelles légitimes pour acheminer votre courrier électronique vers un autre emplacement que Microsoft.
+Oui. Bien que nous vous recommandons de faire pointer votre enregistrement MX vers Microsoft, nous savons qu’il existe des raisons professionnelles légitimes pour acheminer votre courrier électronique vers un autre emplacement que Microsoft.
 
 - **Entrant**: modifiez vos enregistrements MX pour qu’ils pointent vers le fournisseur tiers, puis redirigez les messages vers EOP pour un traitement supplémentaire. Pour plus d’informations, reportez-vous à la rubrique [filtrage amélioré pour les connecteurs dans Exchange Online](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).
 
 - **Sortant**: configurez le routage d’hôte actif de Microsoft 365 vers le fournisseur de destination tiers.
 
-## <a name="q-does-microsoft-have-any-documentation-about-how-i-can-protect-myself-from-phishing-scams"></a>Clench. Est-ce que Microsoft dispose de documentation concernant la façon dont je peux me protéger contre les tentatives de hameçonnage ?
+## <a name="does-microsoft-have-any-documentation-about-how-i-can-protect-myself-from-phishing-scams"></a>Est-ce que Microsoft dispose de documentation concernant la façon dont je peux me protéger contre les tentatives de hameçonnage ?
 
-A. Oui. Pour plus d’informations, consultez [la rubrique Protégez votre confidentialité sur Internet](https://support.microsoft.com/help/4091455) .
+Oui. Pour plus d’informations, consultez [la rubrique Protégez votre confidentialité sur Internet](https://support.microsoft.com/help/4091455) .
 
-## <a name="q-are-spam-and-malware-messages-being-investigated-as-to-who-sent-them-or-being-transferred-to-law-enforcement-entities"></a>Clench. Le courrier indésirable et les messages malveillants font-ils l’objet d’une enquête pour savoir qui les a envoyés, ou sont-ils transférés à des services chargés de l’application de la loi ?
+## <a name="are-spam-and-malware-messages-being-investigated-as-to-who-sent-them-or-being-transferred-to-law-enforcement-entities"></a>Le courrier indésirable et les messages malveillants font-ils l’objet d’une enquête pour savoir qui les a envoyés, ou sont-ils transférés à des services chargés de l’application de la loi ?
 
-R. Le service se concentre sur la détection et la suppression du courrier indésirable et des programmes malveillants. Il nous arrive toutefois d'enquêter sur des campagnes de courrier indésirable ou d'attaque particulièrement dangereuses ou nuisibles, et de poursuivre leurs auteurs. Cela peut impliquer une collaboration avec nos unités criminalité numérique et juridique afin de retrouver le réseau zombie de l'expéditeur du courrier indésirable, d'empêcher celui-ci d'utiliser le service (s'il l'utilise pour envoyer des messages sortants) et de transmettre les informations à la justice en vue de poursuites pénales.
+Le service se concentre sur la détection et la suppression de courrier indésirable et de programmes malveillants, bien que nous puissions parfois enquêter sur des campagnes de courrier indésirable ou d’attaque malveillants ou nuisibles et poursuivre les auteurs Cela peut impliquer l’utilisation de nos unités juridiques et de crime numérique pour arrêter un botnet de spammeurs, bloquant le courrier indésirable d’utiliser le service (s’il l’utilise pour l’envoi de messages sortants) et en transmettant les informations à la loi en matière de poursuites pénales.
 
-## <a name="q-what-are-a-set-of-best-outbound-mailing-practices-that-will-ensure-that-my-mail-is-delivered"></a>Clench. Quelles sont les meilleures pratiques d'envoi de courrier sortant pour garantir la remise de mes messages électroniques ?
+## <a name="what-are-a-set-of-best-outbound-mailing-practices-that-will-ensure-that-my-mail-is-delivered"></a>Quelles sont les meilleures pratiques d'envoi de courrier sortant pour garantir la remise de mes messages électroniques ?
 
-R. Les instructions ci-dessous constituent les meilleures pratiques pour l'envoi de messages électroniques sortants.
+Les instructions ci-dessous constituent les meilleures pratiques pour l'envoi de messages électroniques sortants.
 
 - **Le domaine de messagerie source doit être résolu dans le système DNS.**
 
@@ -125,7 +125,7 @@ R. Les instructions ci-dessous constituent les meilleures pratiques pour l'envoi
 
 - **Le courrier sortant eServer doit avoir une entrée DNS (PTR) inverse.**
 
-  Par exemple, si l’adresse IP de la source de courrier électronique est 192.0.43.10, l’entrée `43-10.any.icann.org`DNS inverse serait.
+  Par exemple, si l’adresse IP de la source de courrier électronique est 192.0.43.10, l’entrée DNS inverse serait `43-10.any.icann.org` .
 
 - **Les commandes HELO/EHLO et MAIL FROM doivent être cohérentes, et se présenter sous la forme d'un nom de domaine plutôt que d'une adresse IP.**
 
