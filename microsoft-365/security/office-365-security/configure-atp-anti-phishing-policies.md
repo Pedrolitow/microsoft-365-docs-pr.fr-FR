@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Les administrateurs peuvent apprendre à créer, modifier et supprimer les stratégies anti-hameçonnage avancées disponibles dans les organisations avec Office 365 Advanced Threat Protection (Office 365 ATP).
-ms.openlocfilehash: efecd830db7ed10210605e31aa0ded2599de1b72
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 5b67fe1a39f577209d1f10688215722a67d5546a
+ms.sourcegitcommit: 8e655c6cbb91bfb97efda9a99c39fac33eaa974a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208886"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44213459"
 ---
 # <a name="configure-atp-anti-phishing-policies"></a>Configurer des stratégies anti-hameçonnage ATP
 
@@ -31,7 +31,7 @@ Vous pouvez configurer des stratégies anti-hameçonnage ATP dans le centre de s
 
 Pour plus d’informations sur la configuration des stratégies de blocage plus limitées disponibles dans les organisations Exchange Online Protection (autrement dit, les organisations Microsoft 365 sans Office 365 ATP), voir [configure anti-phishing Policies in EOP](configure-anti-phishing-policies-eop.md).
 
-## <a name="atp-anti-phishing-policies-in-the-security--compliance-center-vs-exchange-online-powershell"></a>Stratégies anti-hameçonnage ATP dans le centre de sécurité & Compliance Center vs Exchange Online PowerShell
+## <a name="atp-anti-phishing-policies-in-the-security--compliance-center-vs-powershell"></a>Stratégies anti-hameçonnage ATP dans le centre de sécurité & Compliance Center
 
 Les éléments de base d’une stratégie anti-hameçonnage ATP sont les suivants :
 

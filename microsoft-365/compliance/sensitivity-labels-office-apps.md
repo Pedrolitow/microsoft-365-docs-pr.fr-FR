@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Découvrez comment les utilisateurs utilisent les étiquettes de confidentialité dans les applications Office pour le bureau, les applications Office pour mobile et les applications Office pour le Web. Découvrez les applications qui prennent en charge les étiquettes de sensibilité.
-ms.openlocfilehash: 5a5b793358364efdd725de5478318a8237d78ca8
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 39ab61a13af311339174c0e37a10f4637f51ba84
+ms.sourcegitcommit: 8e655c6cbb91bfb97efda9a99c39fac33eaa974a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208068"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44213304"
 ---
 # <a name="use-sensitivity-labels-in-office-apps"></a>Utiliser les étiquettes de confidentialité dans les applications Office
 
@@ -169,9 +169,9 @@ Sinon :
 
 Pour utiliser le client d’étiquetage Office intégré avec Office sur le Web pour des documents dans OneDrive entreprise ou SharePoint Online, vérifiez que vous avez opté pour l’aperçu afin d' [activer les étiquettes de sensibilité pour les fichiers Office dans SharePoint et OneDrive](sensitivity-labels-sharepoint-onedrive-files.md).
 
-## <a name="when-office-365-applies-content-marking-and-encryption"></a>Lorsque Office 365 applique le marquage de contenu et le chiffrement
+## <a name="when-office-apps-apply-content-marking-and-encryption"></a>Lorsque les applications Office appliquent le marquage de contenu et le chiffrement
 
-Office 365 applique le marquage de contenu et le chiffrement avec une étiquette de sensibilité différemment, en fonction de l’application que vous utilisez.
+Les applications Office appliquent le marquage de contenu et le chiffrement avec une étiquette de sensibilité différemment, en fonction de l’application que vous utilisez.
 
 | Application | Marquage du contenu | Chiffrement |
 | --- | --- | --- |
@@ -179,6 +179,22 @@ Office 365 applique le marquage de contenu et le chiffrement avec une étiquette
 | Outlook pour PC et Mac | Après l’envoi du courrier électronique par Exchange Online | Immédiatement |
 | Outlook sur le web, iOS et Android | Après l’envoi du courrier électronique par Exchange Online | Après l’envoi du courrier électronique par Exchange Online |
 |
+
+Les solutions qui appliquent des étiquettes de sensibilité aux fichiers en dehors des applications Office le font en appliquant des métadonnées d’étiquetage au fichier. Dans ce scénario, le marquage de contenu à partir de la configuration de l’étiquette n’est pas inséré dans le fichier, mais le chiffrement est appliqué. 
+
+Lorsque ces fichiers sont ouverts dans une application de bureau Office, les marques de contenu sont appliquées automatiquement par le client d’étiquetage unifié Azure information protection. Les marques de contenu ne sont pas appliquées automatiquement lorsque vous utilisez des étiquettes prédéfinies pour les applications de bureau, mobiles ou Web.
+
+Les scénarios qui incluent l’application d’une étiquette de sensibilité en dehors des applications Office sont les suivants :
+
+- Scanneur, Explorateur de fichiers et PowerShell à partir du client d’étiquetage unifié Azure information protection 
+
+- Stratégies d’étiquetage automatique pour SharePoint et OneDrive
+
+- Exportation des données étiquetées et chiffrées à partir de Power BI
+
+- Microsoft Cloud App Security
+
+Pour ces scénarios, à l’aide de leurs applications Office, un utilisateur avec étiquetage intégré peut appliquer les marques de contenu de l’étiquette en supprimant ou en remplaçant temporairement l’étiquette actuelle, puis en réappliquant l’étiquette d’origine.
 
 ## <a name="end-user-documentation"></a>Documentation destinée aux utilisateurs finaux
 

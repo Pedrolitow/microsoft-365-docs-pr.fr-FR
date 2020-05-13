@@ -11,12 +11,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 3e64f99d-ac33-4aba-91c5-9cb4ca476803
 description: Les administrateurs peuvent utiliser le suivi des messages dans le centre de sécurité & conformité afin de déterminer ce qui s’est passé aux messages.
-ms.openlocfilehash: e78d3361306a93542302e29ff5c1fac4e2262b2f
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 22ae7293dfe85fe5354d21e690de6f060a931788
+ms.sourcegitcommit: 8e655c6cbb91bfb97efda9a99c39fac33eaa974a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44209426"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44212985"
 ---
 # <a name="message-trace-in-the-security--compliance-center"></a>Suivi des messages dans le centre de conformité et de sécurité
 
@@ -27,7 +27,7 @@ Le suivi des messages dans le centre de sécurité & conformité suit les messag
 Le suivi des messages dans le centre de sécurité & conformité améliore le suivi du message d’origine qui était disponible dans le centre d’administration Exchange. Vous pouvez utiliser les informations du suivi des messages pour répondre efficacement aux questions de l’utilisateur sur ce qui s’est passé aux messages, résoudre les problèmes de flux de messagerie et valider les modifications de stratégie.
 
 > [!NOTE]
-> • Pour effectuer un suivi des messages, vous devez être membre des groupes de rôles gestion de l’organisation, gestion de la conformité ou support technique. Pour en savoir plus, consultez [Autorisations dans le Centre de sécurité et de conformité](permissions-in-the-security-and-compliance-center.md). <br/><br/>• Le nombre maximal de messages affichés dans les résultats dépend du type de rapport que vous avez sélectionné (pour plus d’informations, reportez-vous à la section [choisir le type de rapport](#choose-report-type) ). La cmdlet [Get-HistoricalSearch](https://docs.microsoft.com/powershell/module/exchange/reporting/get-historicalsearch) dans Exchange Online PowerShell ou Exchange Online Protection PowerShell renvoie tous les messages dans les résultats.
+> • Pour effectuer un suivi des messages, vous devez être membre des groupes de rôles gestion de l’organisation, gestion de la conformité ou support technique. Pour en savoir plus, consultez [Autorisations dans le Centre de sécurité et de conformité](permissions-in-the-security-and-compliance-center.md). <br/><br/>• Le nombre maximal de messages affichés dans les résultats dépend du type de rapport que vous avez sélectionné (pour plus d’informations, reportez-vous à la section [choisir le type de rapport](#choose-report-type) ). La cmdlet [Get-HistoricalSearch](https://docs.microsoft.com/powershell/module/exchange/reporting/get-historicalsearch) dans Exchange Online PowerShell ou la version PowerShell d’EOP autonome renvoie tous les messages dans les résultats.
 
 ## <a name="open-message-trace"></a>Ouvrir le suivi des messages
 

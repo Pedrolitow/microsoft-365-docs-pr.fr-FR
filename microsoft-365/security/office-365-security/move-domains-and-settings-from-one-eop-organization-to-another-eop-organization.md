@@ -14,12 +14,12 @@ ms.assetid: 9d64867b-ebdb-4323-8e30-4560d76b4c97
 ms.custom:
 - seo-marvel-apr2020
 description: Dans cet article, vous découvrirez comment déplacer des domaines et des paramètres d’une organisation Microsoft Exchange Online Protection (EOP) vers une autre.
-ms.openlocfilehash: c57f8363093c2e1a9bfad5c34f62a0ca2c1ae689
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: e9e0bd0d18ad73c08f0bc5b487a46289f67e40ba
+ms.sourcegitcommit: 8e655c6cbb91bfb97efda9a99c39fac33eaa974a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208314"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44213447"
 ---
 # <a name="move-domains-and-settings-from-one-eop-organization-to-another"></a>Déplacement de domaines et de paramètres d’une organisation EOP à une autre
 
@@ -59,11 +59,11 @@ Afin de recréer l’organisation source dans l’organisation cible, veillez à
   > [!NOTE]
   > La prise en charge de l’applet de commande pour l’exportation et l’importation de la règle de flux de messagerie n’est actuellement prise en charge que pour les plans d’abonnement d’EOP Premium.
 
-Le moyen le plus simple de collecter tous vos paramètres est d’utiliser PowerShell. Pour vous connecter à Exchange Online Protection PowerShell, consultez la rubrique [Connect to Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell).
+Le moyen le plus simple de collecter tous vos paramètres est d’utiliser PowerShell. Pour vous connecter à la version PowerShell d’EOP autonome, consultez la rubrique [Connect to Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell).
 
 Ensuite, vous pouvez collecter tous vos paramètres et les exporter vers un fichier .xml à importer dans le locataire cible. En général, vous pouvez orienter la sortie de la cmdlet **Get** pour chaque paramètre vers la cmdlet **Export-Clixml** afin d'enregistrer les paramètres dans des fichiers .xml, tel qu'illustré dans l'exemple de code ci-après.
 
-Dans Exchange Online Protection PowerShell, créez un répertoire appelé export dans un emplacement facile à trouver et à modifier dans ce répertoire. Par exemple :
+Dans la version autonome d’EOP PowerShell, créez un répertoire appelé export dans un emplacement facile à trouver et à modifier dans ce répertoire. Par exemple :
 
 ```PowerShell
 mkdir C:\EOP\Export
