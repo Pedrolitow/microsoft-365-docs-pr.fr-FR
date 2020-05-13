@@ -2,8 +2,8 @@
 title: En-têtes de messages anti-courrier indésirable
 f1.keywords:
 - NOCSH
-ms.author: tracyp
-author: MSFTTracyP
+ms.author: chrisda
+author: chrisda
 manager: dansimp
 audience: ITPro
 ms.topic: article
@@ -14,18 +14,18 @@ search.appverid:
 ms.assetid: 2e3fcfc5-5604-4b88-ac0a-c5c45c03f1db
 ms.collection:
 - M365-security-compliance
-description: Découvrez les champs d’en-tête ajoutés par Exchange Online Protection aux messages pour fournir des informations sur le message et la manière dont il a été traité.
+description: Les administrateurs peuvent en savoir plus sur les champs d’en-tête ajoutés aux messages par Exchange Online Protection (EOP) pour fournir des informations sur le message et la manière dont il a été traité.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 7f86b5ffa02b6f84c10ab2300f913b5f03726713
-ms.sourcegitcommit: 614666afb104fc97acb4a2ee5577ef63c0de153a
+ms.openlocfilehash: d63d173b90ffd868cfbeac212f2c9d5a6ee125c6
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44173403"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208221"
 ---
-# <a name="anti-spam-message-headers"></a>En-têtes de messages anti-courrier indésirable
+# <a name="anti-spam-message-headers-in-microsoft-365"></a>En-têtes de message anti-courrier indésirable dans Microsoft 365
 
-Lorsque Exchange Online Protection (EOP) analyse un message entrant, il insère l'en-tête **X-Forefront-Antispam-Report** dans chaque message. Les champs de cet en-tête permettent de fournir des informations aux administrateurs en ce qui concerne le message et sur la manière dont ce dernier a été traité. Les champs de l'en-tête **X-Microsoft-Antispam** fournissent des informations supplémentaires sur le courrier en nombre et le hameçonnage. En plus de ces deux en-têtes, Exchange Online Protection insère également les résultats de l'authentification d'e-mail pour chaque message qu'il traite dans l'en-tête **Authentication-results** (résultats de l'authentification).
+Dans Microsoft 365 organisations disposant de boîtes aux lettres dans Exchange Online ou d’organisations Exchange Online Protection (EOP) autonomes sans boîtes aux lettres Exchange Online, EOP analyse et insère le **X-Forefront-anti-courrier indésirable** en-tête de chaque message électronique entrant. Les champs de cet en-tête permettent de fournir aux administrateurs des informations sur le message et sur la manière dont il a été traité. Les champs de l’en-tête de **X-Microsoft-anti-courrier indésirable** fournissent des informations supplémentaires sur le courrier en nombre et le hameçonnage. En plus de ces deux en-têtes, Exchange Online Protection insère également les résultats d’authentification de courrier pour chaque message traité dans l’en-tête **Authentication-Results**.
 
 Pour plus d’informations sur le mode d’affichage de l’en-tête d’un e-mail dans divers clients de messagerie, consultez [Afficher les en-têtes de messages Internet dans Outlook](https://support.office.com/article/cd039382-dc6e-4264-ac74-c048563d212c).
 

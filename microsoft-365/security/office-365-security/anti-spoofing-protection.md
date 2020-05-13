@@ -19,17 +19,17 @@ ms.custom:
 - TopSMBIssues
 - seo-marvel-apr2020
 localization_priority: Priority
-description: Dans cet article, vous allez découvrir la protection contre l’usurpation d’identité dans Microsoft 365, qui assure la protection les attaques par hameçonnage provenant de domaines usurpés.
-ms.openlocfilehash: a5236161e1df6df1d007135c9ae700e87a06ccf0
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+description: Les administrateurs peuvent découvrir les fonctionnalités d’usurpation d’identité disponibles dans Exchange Online Protection (EOP), qui peuvent vous aider à atténuer les attaques par hameçonnage d’expéditeurs et de domaines usurpés.
+ms.openlocfilehash: c28f5cf18a8da3be06906eb1e6b118c856c40066
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034069"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44209030"
 ---
-# <a name="anti-spoofing-protection"></a>Protection contre l’usurpation d’identité
+# <a name="anti-spoofing-protection-in-eop"></a>Protection contre l’usurpation d’identité dans EOP
 
-Si vous êtes un client Microsoft 365 avec des boîtes aux lettres dans Exchange Online ou un client Exchange Online Protection autonome (EOP) dépourvu de boîtes aux lettres Exchange Online, EOP comprend des fonctionnalités permettant de protéger votre organisation contre les faux expéditeurs (falsifiés).
+Dans Microsoft 365, les organisations avec des boîtes aux lettres dans Exchange Online ou une organisation Exchange Online Protection autonome (EOP) dépourvu de boîtes aux lettres Exchange Online, EOP comprend des fonctionnalités permettant de protéger votre organisation contre les faux expéditeurs (falsifiés).
 
 Pour protéger ses utilisateurs, Microsoft prend la menace du hameçonnage au sérieux. L’usurpation d’identité est une technique couramment utilisée par les intrus. **Les messages usurpant une identité semblent provenir d’une personne ou d’un emplacement autre que la source réelle**. Cette technique est souvent utilisée dans des campagnes de hameçonnage qui visent à dérober des informations d’identification d’utilisateur. La technologie anti-usurpation dans EOP examine spécifiquement les falsifications de l’en-tête De dans le corps de message (utilisé pour afficher l’expéditeur du message dans les clients de courrier électronique). Lorsque EOP est convaincu que l'en-tête De est falsifié, le message est identifié comme étant falsifié.
 
@@ -37,11 +37,11 @@ Les technologies anti-usurpation suivantes sont disponibles dans EOP :
 
 - **Veille contre l’usurpation d’identité** : passez en revue les messages usurpant une identité provenant des expéditeurs dans les domaines internes et externes, et autorisez ou bloquez ces expéditeurs. Si vous souhaitez en savoir plus, consultez l’article [Configurer la veille contre l’usurpation d’identité dans Microsoft 365](learn-about-spoof-intelligence.md).
 
-- **Stratégies anti-hameçonnage** : dans EOP, la stratégie anti-hameçonnage intégrée vous permet d’activer ou de désactiver la veille contre l’usurpation d’identité, d’activer ou de désactiver l’identification d’expéditeur non authentifié dans Outlook, et de spécifier l’action des expéditeurs usurpés bloqués (déplacez-vous vers le dossier courrier indésirable ou la mise en quarantaine). Les stratégies anti-hameçonnage avancées qui sont disponibles dans Protection avancée contre les menaces Office 365 contiennent également des paramètres d’anti-emprunt d’identité (expéditeurs et domaines protégés), des paramètres d’intelligence des boîtes aux lettres et des seuils de hameçonnage avancés ajustables. Si vous souhaitez en savoir plus, consultez l’article [Stratégies anti-hameçonnage dans Microsoft 365](set-up-anti-phishing-policies.md).
+- **Stratégies anti-hameçonnage** : dans EOP, les stratégies anti-hameçonnages vous permettent d’activer ou de désactiver la veille contre l’usurpation d’identité, d’activer ou de désactiver l’identification d’expéditeur non authentifié dans Outlook, et de spécifier l’action des expéditeurs usurpés bloqués (déplacez-vous vers le dossier courrier indésirable ou la mise en quarantaine). Les stratégies anti-hameçonnage avancées qui sont disponibles dans Office 365 Protection avancée contre les menaces (Office 365 DAV) contiennent également des paramètres d’anti-emprunt d’identité (expéditeurs et domaines protégés), des paramètres d’intelligence des boîtes aux lettres et des seuils de hameçonnage avancés ajustables. Si vous souhaitez en savoir plus, consultez l’article [Stratégies anti-hameçonnage dans Microsoft 365](set-up-anti-phishing-policies.md).
 
 - **Authentification de messagerie électronique** : l’utilisation de l’authentification de messagerie électronique (également appelée validation de messagerie électronique) pour les enregistrements SPF, DKIM et DMARC dans DNS fait partie intégrante de tout effort anti-usurpation d’identité. Vous pouvez configurer ces enregistrements pour vos domaines de sorte que les systèmes de messagerie électronique de destination peuvent vérifier la validité des messages censés provenir d’expéditeurs figurant de vos domaines. Pour les messages entrants, Microsoft 365 requiert une authentification de messagerie électronique pour les domaines d’expéditeur. Si vous souhaitez en savoir plus, consultez la page [Authentification de messagerie électronique dans Microsoft 365](email-validation-and-authentication.md).
 
-La technologie anti-usurpation de Microsoft a été déployée à l’origine uniquement pour les organisations avec Office 365 – Protection avancée contre les menaces. En octobre 2018, la protection contre l’usurpation d’identité a été ajoutée à EOP.
+À compter du 2018 octobre, la protection contre l’usurpation d’identité est disponible dans EOP. Avant cela, la protection contre l’usurpation d’identité n’était disponible que dans organisations avec Office 365 DAV.
 
 EOP analyse et bloque les messages qui ne peuvent pas être authentifiés par la combinaison de méthodes standard d'authentification de messagerie électronique et de techniques de réputation de l'expéditeur.
 

@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Vous êtes prêt à instaurer la mise en place d'étiquettes de confidentialité pour protéger les données de votre organisation, mais vous ne savez pas par où commencer ? Consultez quelques conseils pratiques permettant de vous familiariser lors de votre parcours dans l'univers de l'étiquetage.
-ms.openlocfilehash: f024995f63af19efa410cdb02a1f8c8d110902eb
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: ab05b9226c244b1e6cdf1e552d32d4d9fc0d95d2
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44140990"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208675"
 ---
 # <a name="get-started-with-sensitivity-labels"></a>Prise en main des étiquettes de confidentialité
 
@@ -75,14 +75,14 @@ Utilisez la section de documentation suivante qui vous vient en aide lors du dé
 |----------------|---------------|
 |Créer et publier des étiquettes de confidentialité qui me permettent de protéger les données de mon organisation|[Créer et configurer des étiquettes de confidentialité ainsi que leurs stratégies](create-sensitivity-labels.md)|
 |Chiffrer des documents et messages électroniques à l’aide d’étiquettes de confidentialité et limiter l’accès à ces contenus ainsi que leur utilisation |[Restreindre l'accès au contenu grâce à la mise en place d'un chiffrement par les étiquettes de confidentialité](encryption-sensitivity-labels.md)|
-|Activer les fonctionnalités de collaboration dans SharePoint (et OneDrive) pour les documents étiquetés à l'aide du chiffrement | [Activer les étiquettes de confidentialité pour les fichiers Office dans SharePoint et OneDrive](sensitivity-labels-sharepoint-onedrive-files.md)
+|Activer les étiquettes de confidentialité pour Office sur le Web, avec la prise en charge de la co-création, de la découverte électronique, de la protection contre la perte de données, la recherche, même lorsque les documents sont chiffrés. | [Activer les étiquettes de confidentialité pour les fichiers Office dans SharePoint et OneDrive](sensitivity-labels-sharepoint-onedrive-files.md)
 |Gérer les étiquettes de confidentialité des applications Office pour que le contenu soit étiqueté lors de sa création |[Utiliser les étiquettes de confidentialité dans les applications Office](sensitivity-labels-office-apps.md)|
 |Appliquer automatiquement des étiquettes de confidentialité aux documents et messages électroniques | [Appliquer automatiquement une étiquette de confidentialité à du contenu](apply-sensitivity-label-automatically.md)|
 |Utiliser des étiquettes de confidentialité pour protéger du contenu dans Teams et SharePoint |[Utiliser des étiquettes de confidentialité avec Microsoft Teams, les Groupes Microsoft 365 et les sites SharePoint (préversion publique)](sensitivity-labels-teams-groups-sites.md)|
 |Découvrir, étiqueter et protéger des fichiers stockés dans des banques de données situées dans les locaux |[Déploiement du scanner Azure Information Protection pour classifier et protéger automatiquement des fichiers](https://docs.microsoft.com/azure/information-protection/deploy-aip-scanner)|
 |Découvrir, étiqueter et protéger des fichiers stockés sur le cloud|[Découvrir, classifier, étiqueter et protéger les données réglementées et sensibles stockées dans le cloud](https://docs.microsoft.com/cloud-app-security/best-practices#discover-classify-label-and-protect-regulated-and-sensitive-data-stored-in-the-cloud)|
 |Appliquer et afficher les étiquettes de confidentialité dans Power BI et protéger les rapports téléchargés|[Protection des données dans Power BI (version d’évaluation)](https://docs.microsoft.com/power-bi/admin/service-security-data-protection-overview)|
-|Visualiser la façon dont les étiquettes de confidentialité sont utilisées pour établir un état du déploiement et ajuster la configuration des étiquettes|[Afficher l’utilisation d’étiquettes à l'aide des analyses d’étiquettes](label-analytics.md)|
+|Voir comment et où mes étiquettes de confidentialité sont utilisées et effectuer un zoom avant pour examiner le contenu étiqueté|[Connaissez vos données : vue d’ensemble de la classification des données (aperçu) ](data-classification-overview.md)|
 
 
 ## <a name="end-user-documentation-for-sensitivity-labels"></a>Documentation sur les étiquettes de confidentialité pour l’utilisateur final
