@@ -15,19 +15,19 @@ search.appverid:
 localization_priority: Normal
 ms.assetid: 7acd33ce-1ec8-49fb-b625-43bac7b58c5a
 description: 'Utilisez le centre de sécurité & conformité pour obtenir divers rapports pour votre organisation SharePoint Online et Exchange Online, ainsi que des rapports Azure Active Directory.  '
-ms.openlocfilehash: 9134cf403c8452ea457983226be04ba139bf72e6
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.openlocfilehash: 4783c3171f5f49dd50d6da8f5f4835ba243f7ab3
+ms.sourcegitcommit: 1c90bcc5c56f24895f01c3e0423c3f6b73715c13
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43943283"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44214706"
 ---
 # <a name="reports-in-the-security--compliance-center"></a>Rapports dans le Centre de conformité et sécurité
 
 Vous pouvez utiliser la page **afficher les rapports** du centre de sécurité & conformité pour accéder rapidement aux rapports d’audit de vos organisations SharePoint Online et Exchange Online. Vous pouvez également accéder aux rapports de connexion de l’utilisateur Azure Active Directory (AD), aux rapports d’activité de l’utilisateur et au Journal d’audit Azure AD à partir de la page **afficher les rapports** . Cela est dû au fait que votre abonnement Microsoft 365 payant inclut un abonnement gratuit à Microsoft Azure. La première fois que vous essayez d’accéder à ces rapports Azure, vous devez effectuer un processus d’enregistrement unique. 
   
 > [!TIP]
-> Pour afficher des rapports supplémentaires sur l’activité au sein de votre organisation, consultez [la rubrique Activity Reports dans le centre d’administration 365 de Microsoft](https://support.office.com/article/0d6dfb17-8582-4172-a9a9-aed798150263). 
+> Pour afficher des rapports supplémentaires sur l’activité au sein de votre organisation, consultez [la rubrique Activity Reports dans le centre d’administration 365 de Microsoft](https://docs.microsoft.com/microsoft-365/admin/activity-reports/activity-reports). 
   
  **Avant de commencer**
   
@@ -58,7 +58,7 @@ Le tableau suivant décrit les rapports figurant dans la section **audit** de la
 |**Rapport**|**Description**|
 |:-----|:-----|
 |**rapport du journal d’audit** <br/> |Vous pouvez rechercher dans le journal d’audit l’activité de l’utilisateur et de l’administrateur au sein de votre organisation. Le rapport contient les entrées utilisateur et administrateur dans Exchange Online, SharePoint Online, OneDrive entreprise et Azure Active Directory, qui est le service d’annuaire pour Office 365. Pour plus d’informations, reportez-vous [à la rubrique Rechercher dans le journal d’audit dans Office 365](search-the-audit-log-in-security-and-compliance.md).  <br/> |
-|**Rapports Azure AD** <br/> |Pour rechercher des activités de connexion inhabituelles ou suspectes dans votre organisation, vous pouvez utiliser des rapports de connexion et d’activité dans Microsoft Azure. Vous pouvez également afficher les événements dans le journal d’audit Azure AD. Pour afficher les rapports dans Azure, il vous suffit de cliquer sur **afficher les rapports Azure ad**. Si vous souhaitez en savoir plus, consultez les articles :  <br/><br/>[Utilisez votre abonnement Azure Active Directory gratuit dans Office 365](use-your-free-azure-ad-subscription-in-office-365.md). <br/> [Afficher vos rapports d’utilisation et d’accès](https://go.microsoft.com/fwlink/p/?LinkId=506902).  <br/> |
+|**Rapports Azure AD** <br/> |Pour rechercher des activités de connexion inhabituelles ou suspectes dans votre organisation, vous pouvez utiliser des rapports de connexion et d’activité dans Microsoft Azure. Vous pouvez également afficher les événements dans le journal d’audit Azure AD. Pour afficher les rapports dans Azure, il vous suffit de cliquer sur **afficher les rapports Azure ad**. Pour plus d’informations, voir : <br/><br/>[Utilisez votre abonnement Azure Active Directory gratuit dans Office 365](use-your-free-azure-ad-subscription-in-office-365.md). <br/> [Afficher vos rapports d’utilisation et d’accès](https://go.microsoft.com/fwlink/p/?LinkId=506902).  <br/> |
 |**Rapports d’audit Exchange** <br/> | Vous pouvez utiliser la fonctionnalité d’audit de Microsoft 365 pour suivre les modifications apportées à votre configuration Exchange Online par les administrateurs de votre organisation. Les modifications apportées à votre organisation Exchange Online par un administrateur du centre de données Microsoft ou par un administrateur délégué sont également consignées. Pour Exchange Online, la journalisation d’audit de l’administrateur est activée par défaut, de sorte que vous n’avez rien à faire pour l’activer. Exchange Online fournit également une journalisation d’audit de boîte aux lettres pour vous permettre de suivre l’accès aux boîtes aux lettres par une personne autre que le propriétaire de la boîte aux lettres. Vous devez activer l’enregistrement d’audit des boîte aux lettres pour chaque boîte aux lettres dont vous souhaitez surveiller l’accès par une autre personne que son propriétaire.  <br/>  Pour l’enregistrement d’audit de l’administrateur et de la boîte aux lettres, vous pouvez exécuter des rapports d’audit pour afficher les entrées du journal d’audit. Vous pouvez également exporter des journaux d’audit de boîte aux lettres et d’administration, qui vous sont envoyés dans les 24 heures, dans un fichier XML joint à un message électronique. <br/><br/>Pour plus d’informations sur l’exportation des journaux d’audit, voir :  <br/><br/> [Exporter les journaux d’audit de boîte aux lettres](https://go.microsoft.com/fwlink/p/?LinkID=404104) <br/> [Afficher et exporter le journal d’audit de l’administrateur de centre de fichiers](https://go.microsoft.com/fwlink/p/?LinkId=404109) <br/> [Rechercher les modifications des groupes de rôles ou les journaux d’audit de l’administrateur](https://go.microsoft.com/fwlink/p/?LinkId=404105) <br/>   [Rapports d’audit Exchange](https://go.microsoft.com/fwlink/p/?LinkID=395232).  <br/> |
    
 ## <a name="supervisory-review-report"></a>Rapport de vérification de surveillance

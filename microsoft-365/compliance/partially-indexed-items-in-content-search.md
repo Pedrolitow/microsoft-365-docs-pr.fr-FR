@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.assetid: d1691de4-ca0d-446f-a0d0-373a4fc8487b
 description: 'Découvrez les éléments non indexés dans Exchange et SharePoint que vous pouvez inclure dans une recherche de contenu exécutée via le centre de sécurité & conformité. '
-ms.openlocfilehash: c44138c11c2703cda4accba9976c254a0b135d65
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 534f0014a448b4ef280586a724067f1a4f820693
+ms.sourcegitcommit: 1c90bcc5c56f24895f01c3e0423c3f6b73715c13
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43626678"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44214210"
 ---
 # <a name="partially-indexed-items-in-content-search"></a>Éléments partiellement indexés dans la recherche de contenu
 
@@ -57,11 +57,11 @@ Certains types de fichier, tels que les fichiers Bitmap ou MP3, ne comportent 
   
 Pour obtenir une liste de formats de fichier pris en charge et désactivés, consultez les rubriques suivantes :
   
-- **Exchange** - [Formats de fichiers Exchange indexés par la recherche Exchange](https://go.microsoft.com/fwlink/p/?LinkID=386618)
+- **Exchange**  -  [Formats de fichiers indexés par la recherche Exchange](https://go.microsoft.com/fwlink/p/?LinkID=386618)
     
-- **Exchange** - [Get-searchdocumentformat permet](https://go.microsoft.com/fwlink/p/?LinkID=724037)
+- **Exchange**  -  [Get-searchdocumentformat permet](https://go.microsoft.com/fwlink/p/?LinkID=724037)
     
-- **SharePoint**Extensions de[nom de fichier analysées et types de fichiers analysés par défaut dans SharePoint](https://go.microsoft.com/fwlink/p/?LinkID=404033)  - 
+- **SharePoint**  -  [Extensions de nom de fichier et types de fichier analysés par défaut dans SharePoint](https://go.microsoft.com/fwlink/p/?LinkID=404033)
     
 
   
@@ -112,7 +112,7 @@ Une exception à cette règle est lorsque vous créez un blocage basé sur une r
 
 Le tableau suivant décrit les limites d’indexation susceptibles d’entraîner le renvoi d’un message électronique sous la forme d’un élément partiellement indexé dans une recherche de contenu dans Office 365.
   
-Pour obtenir la liste des limites d’indexation pour les documents SharePoint, consultez la rubrique [limites de recherche pour SharePoint Online](https://support.office.com/article/7c06e9ed-98b6-4304-a900-14773a8fa32f).
+Pour obtenir la liste des limites d’indexation pour les documents SharePoint, consultez la rubrique [limites de recherche pour SharePoint Online](https://docs.microsoft.com/sharepoint/search-limits).
   
 |**Limite d’indexation**|**Commentaires**|**Description**|
 |:-----|:-----|:-----|
@@ -141,7 +141,7 @@ Pour obtenir la liste des limites d’indexation pour les documents SharePoint, 
 
 - Les messages protégés par la Gestion des droits relatifs à l’information (IRM) sont indexés et seront inclus dans les résultats de la recherche s’ils correspondent à la requête de recherche.
 
-## <a name="see-also"></a>Voir également
+## <a name="see-also"></a>Voir aussi
 
 [Étude des éléments partiellement indexés dans eDiscovery](investigating-partially-indexed-items-in-ediscovery.md)
 

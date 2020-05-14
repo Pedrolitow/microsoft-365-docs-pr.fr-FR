@@ -16,12 +16,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: 2b0d015485196bc76e7de580c888892967fe5d05
-ms.sourcegitcommit: c079cc893cd1bd5d894b13814063a2f42238806e
+ms.openlocfilehash: 6429c3dee32087d6e82a427b2f374ec49bab5cac
+ms.sourcegitcommit: 98782ee4497d72232462c51a3071fae313282980
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/28/2020
-ms.locfileid: "43035122"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44222684"
 ---
 # <a name="policy-recommendations-for-securing-sharepoint-sites-and-files"></a>Recommandations de stratégie pour sécuriser les sites et les fichiers SharePoint
 
@@ -45,7 +45,7 @@ Le tableau suivant répertorie les stratégies dont vous avez besoin pour vérif
 
 |Niveau de protection|Stratégies|Plus d’informations|
 |:---------------|:-------|:----------------|
-|**Baseline**|[Exiger l’authentification multifacteur lorsque le risque de connexion est *moyen* ou *élevé*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Inclure SharePoint Online lors de l’affectation d’applications Cloud|
+|**Référence**|[Exiger l’authentification multifacteur lorsque le risque de connexion est *moyen* ou *élevé*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Inclure SharePoint Online lors de l’affectation d’applications Cloud|
 |        |[Bloquer les clients ne prenant pas en charge l’authentification moderne](identity-access-policies.md#block-clients-that-dont-support-modern-authentication)|Inclure SharePoint Online lors de l’affectation d’applications Cloud|
 |        |[Appliquer des stratégies de protection des données d’application](identity-access-policies.md#apply-app-data-protection-policies)|Assurez-vous que toutes les applications recommandées sont incluses dans la liste des applications. Veillez à mettre à jour la stratégie pour chaque plateforme (iOS, Android, Windows)|
 |        |[Exiger des PC conformes](identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets)|Inclure SharePoint Online dans la liste des applications Cloud|
@@ -60,7 +60,7 @@ Le tableau suivant répertorie les stratégies dont vous avez besoin pour vérif
 
 Si vous implémentez des contrôles d’accès dans SharePoint Online, vous devez créer cette stratégie d’accès conditionnel dans Azure AD pour indiquer à Azure AD d’appliquer les stratégies que vous configurez dans SharePoint Online. Cette règle s’applique à tous les utilisateurs, mais affecte uniquement l’accès aux sites que vous spécifiez à l’aide de PowerShell lorsque vous créez les contrôles d’accès dans SharePoint Online.
 
-Pour configurer cette stratégie, voir « bloquer ou limiter l’accès à des collections de sites SharePoint ou des comptes OneDrive spécifiques » dans cet article : [contrôler l’accès à partir d’appareils non gérés](https://support.office.com/article/Control-access-from-unmanaged-devices-5ae550c4-bd20-4257-847b-5c20fb053622).
+Pour configurer cette stratégie, voir « bloquer ou limiter l’accès à des collections de sites SharePoint ou des comptes OneDrive spécifiques » dans cet article : [contrôler l’accès à partir d’appareils non gérés](https://docs.microsoft.com/sharepoint/control-access-from-unmanaged-devices).
 
 ## <a name="sharepoint-online-access-control-policies"></a>Stratégies de contrôle d’accès SharePoint Online
 
@@ -69,7 +69,7 @@ Microsoft vous recommande de protéger le contenu des sites SharePoint avec du c
 - Sites sensibles : autoriser l’accès au navigateur uniquement. Cela empêche les utilisateurs de modifier et de télécharger des fichiers.
 - Sites hautement réglementés : bloquer l’accès à partir des appareils non gérés.
 
-Voir « bloquer ou limiter l’accès à des collections de sites SharePoint ou des comptes OneDrive spécifiques » dans cet article : [contrôler l’accès à partir d’appareils non gérés](https://support.office.com/article/Control-access-from-unmanaged-devices-5ae550c4-bd20-4257-847b-5c20fb053622).
+Voir « bloquer ou limiter l’accès à des collections de sites SharePoint ou des comptes OneDrive spécifiques » dans cet article : [contrôler l’accès à partir d’appareils non gérés](https://docs.microsoft.com/sharepoint/control-access-from-unmanaged-devices).
 
 ## <a name="how-these-policies-work-together"></a>Collaboration de ces stratégies
 

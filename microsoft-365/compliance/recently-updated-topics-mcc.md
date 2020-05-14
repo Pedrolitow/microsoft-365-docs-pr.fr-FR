@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 description: Tout comme les fonctionnalités du centre de conformité Microsoft 365, notre contenu d’aide est toujours évolutif. Nous créons en permanence de nouveaux articles, en mettant à jour ceux existants et en apportant des modifications en fonction de vos commentaires. Découvrez les nouveautés et mises à jour ce mois-ci.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: b7edcf8c4c530c926d323fddbf795cd930efd649
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 6995413d6bbd068ac5e126351dc1a8fb761a0934
+ms.sourcegitcommit: ad789f1e7bf9c9dc0d45c731373e667a26ed30b1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44036017"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44221418"
 ---
 # <a name="recent-updates-to-microsoft-365-compliance-content"></a>Mises à jour récentes du contenu de conformité Microsoft 365
 
@@ -32,7 +32,122 @@ Tout comme les fonctionnalités du centre de conformité Microsoft 365, notre co
 > [!TIP]
 > Pour rester au fait des dernières mises à jour des fonctionnalités dans le centre de conformité Microsoft 365, consultez les nouveautés [du centre de conformité microsoft 365](whats-new.md).
 
+## <a name="march-2020"></a>Mars 2020
+
+### <a name="auditing"></a>Audit
+
+[Utiliser l’audit avancé pour examiner les comptes compromis](mailitemsaccessed-forensics-investigations.md) (nouveauté)<br>Nouvelles instructions sur l’utilisation de la nouvelle action d’audit de boîte aux lettres *MailItemsAccessed* pour les enquêtes de dépistage.
+
+Plusieurs mises à jour pour effectuer [des recherches dans le journal d’audit](search-the-audit-log-in-security-and-compliance.md), notamment :
+- [Nouvelle section](search-the-audit-log-in-security-and-compliance.md#the-appsharepoint-user-in-audit-records) avec des détails sur l’utilisateur « App@sharepoint » figurant dans enregistrements d’audit.
+- [Nouvelles descriptions](search-the-audit-log-in-security-and-compliance.md#quarantine-activities) des activités de mise en quarantaine.
+- Dans la section [activité d’administration des utilisateurs](search-the-audit-log-in-security-and-compliance.md#user-administration-activities) , l’événement « modifier le mot de passe utilisateur » est déclenché lorsqu’un utilisateur modifie son propre mot de passe (via la réinitialisation du mot de passe libre-service) et l’événement « réinitialiser le mot de passe utilisateur » est déclenché lorsqu’un administrateur réinitialise le mot de passe d’un utilisateur.
+
+### <a name="auto-expanding-archive"></a>Archive à extension automatique
+
+[Vue d’ensemble d’un archivage illimité](unlimited-archiving.md#outlook-requirements-for-accessing-items-in-an-auto-expanded-archive)(mis à jour)<br>Clarification supplémentaire : vous ne pouvez pas supprimer un dossier dans l’archive principale ou une archive auxiliaire une fois l’archivage à extension automatique activé sur une boîte aux lettres.
+
+### <a name="compliance-scorecompliance-manager"></a>Score de conformité/gestionnaire de conformité
+
+Toutes les rubriques sur le [score de conformité](compliance-score.md) et le [Gestionnaire de conformité](compliance-manager-overview.md) reflètent les mises à jour de ces produits publiées en début d’avril (les deux sont toujours en version préliminaire publique). Les mises à jour de clés sont les suivantes :
+- Processus simplifié de création et de modification de modèles
+- Notification de versioning et contrôle pour les modèles et les actions
+- Synchronisation des actions courantes entre les groupes
+- Prise en charge des langues désormais étendues au chinois (simplifié), chinois (traditionnel), français, allemand, italien, japonais, coréen, portugais (Brésil), russe et espagnol
+
+### <a name="communication-compliance"></a>Conformité des communications
+
+[Etude de cas : contoso configure rapidement une stratégie de langue offensant pour les communications Microsoft Teams, Exchange et Yammer](communication-compliance-case-study.md) (nouveauté)<br>Étude de cas pas à pas pour les organisations d’éducation et de petite entreprise afin de les aider à configurer rapidement une stratégie de langue offensante. Augmentation des demandes des clients au fur et à mesure de la progression des réponses COVID19.
+
+[Prise en main de la conformité des communications](communication-compliance-configure.md) (mise à jour)<br>Mise à jour des exigences en matière de licences et d’autorisations.
+
+### <a name="customer-key"></a>Clé client
+
+[Faire pivoter ou faire pivoter une clé client ou une clé de disponibilité](customer-key-availability-key-roll.md) (mise à jour)<br>Les mises à jour organisationnelles qui permettent de clarifier les clés que vous pouvez et ne pouvez pas effectuer.
+
+[En savoir plus sur la clé de disponibilité pour la clé client](customer-key-availability-key-understand.md) (mise à jour)<br>Ajout de clarification sur l’architecture Exchange Online pour la clé client.
+
+### <a name="data-loss-prevention"></a>Protection contre la perte de données
+
+[Vue d’ensemble de la protection contre la perte de données](data-loss-prevention-policies.md) (mise à jour)<br>Mise à jour de la durée d’exécution des étiquettes de rétention et des stratégies de comportement par défaut sans alerte.
+
+### <a name="ediscovery"></a>eDiscovery
+
+[Prise en main de la découverte électronique avancée](get-started-with-advanced-ediscovery.md) (nouveauté)<br>Fournit des informations sur les exigences en matière de licences et d’autorisations, les étapes de configuration des paramètres globaux et la création d’un cas, ainsi qu’une procédure pas à pas du flux de travail eDiscovery avancé.
+
+[Déclassement des outils eDiscovery hérités](legacy-ediscovery-retirement.md) (mis à jour)<br>Les dates de retraite ont été déplacées sur trois mois en raison de la situation de santé publique. L’article mis à jour cite les nouvelles dates de retraite.
+
+### <a name="insider-risk-management"></a>Gestion des risques internes
+
+[Prise en main de la gestion des risques initiés](insider-risk-management-configure.md) (mise à jour)<br>Mise à jour des exigences en matière de licences et d’autorisations.
+
+[Définir des stratégies de barrière des informations](information-barriers-policies.md) (mise à jour)<br>Clarification de la vitesse de traitement et du temps requis pour l’application. Ajout de détails sur la façon dont aucune stratégie de carnet d’adresses ne doit être mise en place. Il s’agit également de différentes mises à jour de code PowerShell, y compris le nouveau code pour le filtrage.
+
+[Barrières des informations](information-barriers.md) (mises à jour)<br>Correction de liens rompus et de liens PDF et de titres mis à jour. Par commentaire client, clarification de la prise en charge des restrictions de l’information uniquement. Les restrictions à sens unique (par exemple, marketing peuvent communiquer avec les négociants de jour, mais les commerçants ne peuvent pas communiquer avec le service marketing) ne sont pas prises en charge.
+
+[Dépannage des barrières relatives aux informations](information-barriers-troubleshooting.md) (mise à jour)<br>Ajout de la nouvelle section de scénario de dépannage. Ajout d’un lien vers les étapes de réapplication des barrières d’informations.
+
+### <a name="office-365-message-encryption"></a>Chiffrement de messages Office 365
+
+[Gérer le chiffrement de messages Office 365](manage-office-365-message-encryption.md) (mis à jour)<br>Mise à jour pour indiquer que la fonction de wrapper de force est une fonctionnalité OME standard, pas une fonctionnalité avancée. Exemples de PowerShell réécrits pour exclure toutes les références à la révocation et à l’expiration des fonctionnalités OME avancées.
+
+[FAQ sur le chiffrement de messages](ome-faq.md) (mis à jour)<br>Clarification indiquant que seul Outlook pour le Web peut appliquer un chiffrement ad hoc. De même, pour tous les clients, les messages et les pièces jointes PDF non protégés d’Outlook héritent de la protection OME de la stratégie de protection contre la perte de données (DLP) ou de la règle de flux de messagerie dans Exchange Online.
+
+### <a name="privileged-access-management"></a>Gestion des accès privilégiés
+
+[Prise en main de la gestion des accès privilégiés](privileged-access-management-configuration.md) (mise à jour)<br>Mise à jour des exigences en matière de licences et d’autorisations.
+
+### <a name="pst-import"></a>Importation des fichiers PST
+
+[FAQ sur l’importation de fichiers PST](faqimporting-pst-files-to-office-365.md) (mise à jour)<br>Ajout d’un Forum aux questions sur la façon dont le processus d’importation PST gère les éléments de messagerie en double.
+
+### <a name="retention"></a>Conversation
+
+[Vue d’ensemble des stratégies de rétention](retention-policies.md) (mises à jour)<br>Les modifications sont les suivantes :
+
+- Ajout de chemins de contenu pour les stratégies de rétention de conservation uniquement et de suppression uniquement (auparavant, les chemins de contenu sont expliqués uniquement conserver et supprimer).
+- [Mise à jour](retention-policies.md#applying-a-retention-policy-to-an-entire-organization-or-specific-locations) de la section expliquant que, pour les emplacements SharePoint, vous spécifiez désormais une URL au lieu de choisir un site. Cela signifie que vous n’avez pas besoin d’autorisations pour accéder au site afin de l’inclure dans une stratégie de rétention.
+
+### <a name="sensitivity-labels"></a>Étiquettes de confidentialité
+
+[En savoir plus sur les étiquettes de sensibilité](sensitivity-labels.md) (mises à jour)<br>Ajout des détails de la gestion des étiquettes dans le portail Azure, y compris un lien vers [l’avis officiel](https://techcommunity.microsoft.com/t5/azure-information-protection/announcing-timelines-for-sunsetting-label-management-in-the/ba-p/1226179).
+
+[Prise en main des étiquettes de confidentialité](get-started-with-sensitivity-labels.md) (mise à jour)<br>Ajout d’informations sur le nouveau rôle de lecteur d’étiquette de sensibilité, qui est pris en charge uniquement pour les cmdlets PowerShell d’étiquetage.
+
+[Créer et configurer des étiquettes de confidentialité et leurs stratégies](create-sensitivity-labels.md#removing-and-deleting-labels) (mises à jour)<br>Ajout d’une nouvelle section explique les conséquences de la suppression et de la suppression d’étiquettes.
+
+[Utiliser des étiquettes de confidentialité pour protéger le contenu de Microsoft Teams, des groupes microsoft 365 et des sites SharePoint](sensitivity-labels-teams-groups-sites.md) (préversion publique) (mise à jour)<br>Les modifications sont les suivantes :
+
+- Suppression des instructions Azure AD et liaison avec les [informations de référence Azure ad](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-assign-sensitivity-labels).
+- Mise à jour de la section [procédure de configuration des paramètres de site et de groupe lors de la création ou de la modification des étiquettes](sensitivity-labels-teams-groups-sites.md#how-to-configure-site-and-group-settings-when-you-create-or-edit-sensitivity-labels) de confidentialité avec des informations sur la **confidentialité du paramètre sites teams connectés à un groupe Office 365** , qui inclut l’option **aucun** .
+- Ajout d’une note décrivant la façon dont seules les étiquettes avec des paramètres de site et de groupe seront disponibles pour sélection lorsque les utilisateurs créent des équipes, des groupes et des sites. Cette fonctionnalité est progressivement déployée dans les organisations.
+
+[Restreindre l’accès au contenu à l’aide des étiquettes de confidentialité pour appliquer le chiffrement](encryption-sensitivity-labels.md) (mis à jour)<br>[Nouvelle section](encryption-sensitivity-labels.md#example-configurations-for-the-encryption-settings) avec des exemples de paramètres de chiffrement pour certaines des configurations les plus couramment utilisées pour protéger des documents et des courriers électroniques.
+
+[Appliquer une étiquette de sensibilité au contenu automatiquement](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-for-office-apps) (mis à jour)<br>Explication des différences de comportement entre l’étiquetage intégré et le client d’étiquetage unifié Azure information protection.
+
+[Activer les étiquettes de confidentialité pour les fichiers Office dans SharePoint et OneDrive](sensitivity-labels-sharepoint-onedrive-files.md) (mis à jour)<br>Les modifications sont les suivantes :
+
+- Clarification indiquant que l’activation de cette version d’évaluation affiche le bouton de **sensibilité** dans le ruban pour les étiquettes dans Office pour le Web, en plus de la prise en charge des documents étiquetés et chiffrés.
+- Mise à jour des instructions pour Office 365 multi-géo.
+- La liste des limitations comporte une nouvelle entrée qui inclut ce qui se produit lorsqu’un ordinateur passe en mode hors connexion ou en veille, et si une étiquette est supprimée.
+
+[Utiliser les étiquettes de confidentialité dans les applications Office](sensitivity-labels-office-apps.md) (mise à jour)<br>Les modifications sont les suivantes :
+
+- Déplacement des informations de licence vers pour commencer à [utiliser les étiquettes de confidentialité](get-started-with-sensitivity-labels.md).
+- [Nouvelle section](sensitivity-labels-office-apps.md#labeling-client-for-desktop-apps) expliquant comment utiliser des étiquettes intégrées dans les applications de bureau Office, vous devez utiliser une édition d’abonnement d’Office au lieu d’éditions autonomes.
+- Les tableaux des applications prises en charge incluent l’application Office pour iOS et Android et la configuration qui permet aux utilisateurs d’attribuer des autorisations pour Word, Excel et PowerPoint est mise à jour, en se déployant sur le canal mensuel pour Windows et Mac.  
+- [Nouvelle section](sensitivity-labels-office-apps.md#office-built-in-labeling-client-and-other-labeling-solutions) expliquant comment vous pouvez utiliser le paramètre de stratégie de groupe pour désactiver les étiquettes prédéfinies si vous utilisez actuellement d’autres solutions d’étiquetage que vous souhaitez continuer à utiliser pour vos ordinateurs Windows. 
+- Mise à jour de la section Options de gestion des droits relatifs à l' [information (IRM) et des étiquettes de confidentialité](sensitivity-labels-office-apps.md#information-rights-management-irm-options-and-sensitivity-labels) avec la recommandation pour utiliser des étiquettes qui appliquent le chiffrement plutôt que les options IRM, avec une explication des conséquences potentielles lorsque les deux solutions de protection sont mélangées.
+
+### <a name="trainable-classifiers"></a>Classifieurs de formation
+
+[Prise en main des classifieurs de formation (](classifier-getting-started-with.md) préversion) (mise à jour)<br>Ajout d’informations sur la façon dont le modèle de langage offensant est déconseillé. Ajout d’un tableau répertoriant les 25 premiers langages de code utilisés dans le classificateur intégré de code source.
+
 ## <a name="february-2020"></a>Février 2020
+
+> [!NOTE]
+> Les articles répertoriés dans les mois précédents ont peut-être été mis à jour, déplacés ou supprimés depuis. Par conséquent, certains des détails ci-dessous peuvent être obsolètes et des liens peuvent être rompus.
 
 ### <a name="auditing"></a>Audit
 

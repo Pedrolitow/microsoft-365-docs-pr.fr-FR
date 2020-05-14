@@ -16,12 +16,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: 0512d51f2789383c7612c3dbd97c0a77c2c4c7fa
-ms.sourcegitcommit: 1c90bcc5c56f24895f01c3e0423c3f6b73715c13
+ms.openlocfilehash: 4ffc6a8771a93e0aea4583dce092109afe57175d
+ms.sourcegitcommit: 98782ee4497d72232462c51a3071fae313282980
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 05/13/2020
-ms.locfileid: "44214661"
+ms.locfileid: "44222326"
 ---
 # <a name="identity-and-device-access-configurations"></a>Configurations des identités et de l’accès aux appareils
 
@@ -120,7 +120,7 @@ Ce guide vous montre comment créer des stratégies recommandées pour appliquer
 
 Ce guide vous montre comment implémenter un ensemble de stratégies pour protéger l’accès à Office 365, notamment Exchange Online, SharePoint Online et OneDrive entreprise. En plus de mettre en œuvre ces stratégies, nous vous recommandons d’augmenter également le niveau de protection de votre client à l’aide de ces ressources :
 
-- [Configurez votre client pour renforcer la sécurité](https://support.office.com/article/Configure-your-Office-365-tenant-for-increased-security-8d274fe3-db51-4107-ba64-865e7155b355): ces recommandations s’appliquent à la sécurité de base pour votre client.
+- [Configurez votre client pour renforcer la sécurité](https://docs.microsoft.com/microsoft-365/security/office-365-security/tenant-wide-setup-for-increased-security): ces recommandations s’appliquent à la sécurité de base pour votre client.
 - Feuille [de route de sécurité Microsoft 365 : les principales priorités des 30 premiers jours, 90 jours et au-delà](https://docs.microsoft.com/microsoft-365/security/office-365-security/security-roadmap): ces recommandations incluent la journalisation, la gouvernance des données, l’accès administrateur et la protection contre les menaces.
 
 

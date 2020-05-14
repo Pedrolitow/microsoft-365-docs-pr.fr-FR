@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 66db28688a483aea8c0092202eda258a2032027f
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: cc6f2a8c52a5fc829a9f04c51f78cf7ea5c2f1e1
+ms.sourcegitcommit: 1c90bcc5c56f24895f01c3e0423c3f6b73715c13
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44066559"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44214498"
 ---
 # <a name="united-kingdom-government-cloud-g-cloud"></a>Gouvernement britannique-Cloud (G-Cloud)
 
@@ -41,7 +41,7 @@ Pour en savoir plus sur les avantages du Royaume-Uni G-Cloud V6 sur le Cloud Mic
 
 Découvrez comment accélérer votre déploiement du Royaume-Uni G-Cloud V6 à l’aide de notre plan de sécurité et de conformité Azure : [Télécharger les conseils de mise en œuvre des principes généraux de l’implémentation de principe de Cloud pour Azure](https://servicetrust.microsoft.com/ViewPage/Blueprint?command=Download&downloadType=Document&downloadId=c3804aba-03a7-4d21-88ad-d9bbe5314a00&docTab=fc060920-cdb8-11e7-bacf-0bf52b09d912_UK_G-Cloud_Blueprint)
 
-## <a name="microsoft-in-scope-cloud-services"></a>Services Cloud Microsoft dans le périmètre
+## <a name="microsoft-in-scope-cloud-services"></a>Services Cloud Microsoft concernés
 
 - [Azure](https://aka.ms/AzureCompliance)
 - Cloud App Security
@@ -82,7 +82,7 @@ Le transfert de vos services gouvernementaux vers le nuage est désormais plus f
 
 [Commencer à utiliser le modèle Azure UK G-Cloud](https://aka.ms/ukofficialblueprint)
 
-## <a name="frequently-asked-questions"></a>Forum Aux Questions
+## <a name="frequently-asked-questions"></a>Foire aux questions
 
 **Qui est éligible pour utiliser le marché numérique ?**
 
@@ -105,7 +105,7 @@ En plus des centres de données britanniques, les services de Cloud Computing Mi
 
 **Comment puis-je obtenir des copies des rapports de l’auditeur ?**
 
-Le [portail d’approbation de services](https://support.office.com/article/Get-started-with-the-Service-Trust-Portal-for-Office-365-for-business-Azure-and-Dynamics-CRM-Online-subscriptions-f30e2353-0bd6-41ed-8347-eea1fb8d2662) fournit des rapports de conformité audités indépendamment. Vous pouvez utiliser le portail pour demander des rapports d’audit afin que vos auditeurs puissent comparer les résultats Microsoft avec vos propres exigences légales et réglementaires.
+Le [portail d’approbation de services](https://docs.microsoft.com/microsoft-365/compliance/get-started-with-service-trust-portal) fournit des rapports de conformité audités indépendamment. Vous pouvez utiliser le portail pour demander des rapports d’audit afin que vos auditeurs puissent comparer les résultats Microsoft avec vos propres exigences légales et réglementaires.
 
 ## <a name="resources"></a>Ressources
 

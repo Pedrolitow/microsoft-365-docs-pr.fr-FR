@@ -19,12 +19,12 @@ ms.custom:
 - TopSMBIssues
 - seo-marvel-apr2020
 description: Les administrateurs peuvent en savoir plus sur les fonctionnalités de protection anti-hameçonnage dans Exchange Online Protection (EOP) et Office 365 Advanced Threat Protection (Office 365 ATP).
-ms.openlocfilehash: c1b9332fc35997dfe1cbfdfbef79e2d7beed736f
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 3c15c67f059793c904641a70c12cd072bb69e2aa
+ms.sourcegitcommit: 98782ee4497d72232462c51a3071fae313282980
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208970"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44222728"
 ---
 # <a name="anti-phishing-protection-in-microsoft-365"></a>Protection anti-hameçonnage dans Microsoft 365
 
@@ -62,6 +62,6 @@ La protection avancée contre les menaces Office 365 contient des fonctionnalit�
 
 ## <a name="other-anti-phishing-resources"></a>Autres ressources anti-hameçonnage
 
-- Pour les utilisateurs finaux : [Protégez-vous des schémas de hameçonnage et d’autres formes de fraude en ligne](https://support.office.com/article/f84750b4-2f2c-46c3-89f6-e65f7f8c3546).
+- Pour les utilisateurs finaux : [Protégez-vous des schémas de hameçonnage et d’autres formes de fraude en ligne](https://support.office.com/article/protect-yourself-from-phishing-schemes-and-other-forms-of-online-fraud-be0de46a-29cd-4c59-aaaf-136cf177d593).
 
 - [Comment Microsoft 365 valide l’adresse de pour empêcher le hameçonnage](how-office-365-validates-the-from-address.md).

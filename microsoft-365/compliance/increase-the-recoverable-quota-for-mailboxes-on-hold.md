@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: a8bdcbdd-9298-462f-b889-df26037a990c
 description: 'Activez la boîte aux lettres d’archivage et activez l’archivage à extension automatique pour augmenter la taille du dossier éléments récupérables pour une boîte aux lettres dans Office 365. '
-ms.openlocfilehash: 37d0e783f3b3a5157fe4a7a9b7d512b09c05d32c
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 884a03bc1693ec76cd3e80d85f62f4054e1d9911
+ms.sourcegitcommit: 98782ee4497d72232462c51a3071fae313282980
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42072919"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44222707"
 ---
 # <a name="increase-the-recoverable-items-quota-for-mailboxes-on-hold"></a>Augmenter le quota des éléments récupérables pour les boîtes aux lettres placées en conservation
 
@@ -78,7 +78,7 @@ La première étape consiste à créer une balise de rétention personnalisée (
     ```
 
     > [!TIP]
-    > Nous recommandons que la période de rétention (définie par le paramètre _AgeLimitForRetention_ ) pour l’arborescence des éléments récupérables soit identique à la période de rétention des éléments supprimés pour les boîtes aux lettres auxquelles l’arborescence RPT sera appliquée. Cela permet à un utilisateur de disposer de l’intégralité de la période de rétention des éléments supprimés pour récupérer les éléments supprimés avant qu’ils ne soient déplacés vers la boîte aux lettres d’archivage. Dans l’exemple précédent, la période de rétention était définie sur 30 jours en supposant que la période de rétention de l’élément supprimé pour les boîtes aux lettres est aussi de 30 jours. Une boîte aux lettres Exchange Online est configurée pour conserver les éléments supprimés pendant 14 jours, par défaut. Toutefois, vous pouvez augmenter la valeur de ce paramètre jusqu’à 30 jours au maximum. Pour plus d’informations, consultez [la rubrique modifier la période de rétention des éléments supprimés pour une boîte aux lettres dans Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=286940). 
+    > Nous recommandons que la période de rétention (définie par le paramètre _AgeLimitForRetention_ ) pour l’arborescence des éléments récupérables soit identique à la période de rétention des éléments supprimés pour les boîtes aux lettres auxquelles l’arborescence RPT sera appliquée. Cela permet à un utilisateur de disposer de l’intégralité de la période de rétention des éléments supprimés pour récupérer les éléments supprimés avant qu’ils ne soient déplacés vers la boîte aux lettres d’archivage. Dans l’exemple précédent, la période de rétention était définie sur 30 jours en supposant que la période de rétention de l’élément supprimé pour les boîtes aux lettres est aussi de 30 jours. Une boîte aux lettres Exchange Online est configurée pour conserver les éléments supprimés pendant 14 jours, par défaut. Toutefois, vous pouvez augmenter la valeur de ce paramètre jusqu’à 30 jours au maximum. Pour plus d’informations, consultez [la rubrique modifier la période de rétention des éléments supprimés pour une boîte aux lettres dans Exchange Online](https://www.microsoft.com/?ref=go). 
   
 ## <a name="step-2-create-a-new-retention-policy-for-mailboxes-on-hold"></a>Étape 2 : Création d’une stratégie de rétention pour les boîtes aux lettres placées en conservation
 
@@ -96,11 +96,11 @@ Vous pouvez utiliser le centre d’administration Exchange ou Exchange Online Po
   
 ### <a name="use-the-eac-to-create-a-retention-policy"></a>Utilisation du Centre d’administration Exchange pour créer une stratégie de rétention
   
-1. Dans le centre d’administration Exchange, accédez à stratégies de \> **rétention**de gestion de](../media/ITPro-EAC-AddIcon.gif) **la conformité** , puis cliquez sur **Ajouter** ![une icône Ajouter.
+1. Dans le centre d’administration Exchange, accédez à stratégies de rétention de **gestion de la conformité** \> **Retention policies**, puis cliquez sur **Ajouter** une ![ icône Ajouter ](../media/ITPro-EAC-AddIcon.gif) .
     
 2. Sur la page **Nouvelle stratégie de rétention**, sous **Nom**, saisissez un nom qui décrit l’objectif de la stratégie de rétention ; par exemple, **MRM Policy for Mailboxes on Hold**.  
     
-3. Sous **balises de rétention**,](../media/ITPro-EAC-AddIcon.gif)cliquez sur **Ajouter** ![une icône Ajouter.
+3. Sous **balises de rétention**, cliquez sur **Ajouter** une ![ icône Ajouter ](../media/ITPro-EAC-AddIcon.gif) .
     
 4. Dans la liste des balises de rétention, sélectionnez la balise de stratégie de rétention des éléments récupérables que vous avez créée à l’étape 1, puis cliquez sur **Ajouter**.
     
@@ -139,7 +139,7 @@ La dernière étape consiste à appliquer la nouvelle stratégie de rétention q
   
 1. Accédez à **Destinataires** \> **Boîtes aux lettres**.
     
-2. Dans l’affichage liste, sélectionnez la boîte aux lettres à laquelle vous souhaitez appliquer la stratégie de rétention, puis](../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif)cliquez sur **modifier** ![l’icône modifier.
+2. Dans l’affichage liste, sélectionnez la boîte aux lettres à laquelle vous souhaitez appliquer la stratégie de rétention, puis cliquez sur **modifier** l' ![ icône modifier ](../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif) .
     
 3. Sur la page **Boîte aux lettres de l’utilisateur**, cliquez sur **Fonctionnalités de boîte aux lettres**.
     
@@ -225,6 +225,6 @@ $MailboxesOnHold.DistinguishedName | Start-ManagedFolderAssistant
 
 ## <a name="more-information"></a>Plus d’informations
 
-- Après avoir activé la boîte aux lettres d’archivage d’un utilisateur, envisagez d’indiquer à l’utilisateur que d’autres éléments de sa boîte aux lettres (pas seulement les éléments du dossier Éléments récupérables) peuvent être déplacés vers la boîte aux lettres d’archivage. Cela est dû au fait que la stratégie MRM par défaut affectée aux boîtes aux lettres Exchange Online contient une balise de rétention (nommée 2 ans par défaut) qui déplace les éléments vers la boîte aux lettres d’archivage deux ans après la date à laquelle l’élément a été remis à la boîte aux lettres ou créé par le Guide. Pour plus d’informations, consultez la rubrique [stratégie de rétention par défaut dans Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=746954) .
+- Après avoir activé la boîte aux lettres d’archivage d’un utilisateur, envisagez d’indiquer à l’utilisateur que d’autres éléments de sa boîte aux lettres (pas seulement les éléments du dossier Éléments récupérables) peuvent être déplacés vers la boîte aux lettres d’archivage. Cela est dû au fait que la stratégie MRM par défaut affectée aux boîtes aux lettres Exchange Online contient une balise de rétention (nommée 2 ans par défaut) qui déplace les éléments vers la boîte aux lettres d’archivage deux ans après la date à laquelle l’élément a été remis à la boîte aux lettres ou créé par l’utilisateur. Pour plus d’informations, consultez la rubrique [stratégie de rétention par défaut dans Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=746954) .
     
 - Après avoir activé la boîte aux lettres d’archivage d’un utilisateur, vous pouvez également indiquer à l’utilisateur qu’il peut récupérer les éléments supprimés dans le dossier Éléments récupérables dans sa boîte aux lettres d’archivage. Pour ce faire, dans Outlook, sélectionnez le dossier **éléments supprimés** dans la boîte aux lettres d’archivage, puis cliquez sur **récupérer les éléments supprimés du serveur** sous l’onglet **Accueil** . Pour plus d’informations sur la récupération des éléments supprimés, consultez la rubrique [récupérer des éléments supprimés dans Outlook pour Windows](https://go.microsoft.com/fwlink/p/?LinkId=624829). 

@@ -1,18 +1,18 @@
 ---
 title: Services Microsoft Managed Desktop Device
 description: Cette rubrique répertorie les services de périphérique et la limitation pour le bureau géré Microsoft.
-keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
+keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.date: 02/06/2019
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: cb138d14a35324840d78000b55a2f4376c3869b5
-ms.sourcegitcommit: 9a4084ce2b80bac883412e0ec956b6c0cc18d0f5
+ms.openlocfilehash: 99ae4fda67de060a5c4dd7c9cd0550f751706e86
+ms.sourcegitcommit: 98782ee4497d72232462c51a3071fae313282980
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/03/2020
-ms.locfileid: "42400871"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44222394"
 ---
 # <a name="microsoft-managed-desktop-device-services"></a>Services Microsoft Managed Desktop Device
 
@@ -33,9 +33,9 @@ Configuration de l’appareil    | Les appareils seront préconfigurés avec la 
 Pour plus d’informations sur le remplacement des appareils, les mises à niveau et les conditions d’assistance, consultez votre contrat avec votre fournisseur d’appareils et vos conditions de garantie.
 
 Pour plus d’informations sur les garanties et les réparations de surface :
+- [Surface du centre d’aide de l’entreprise](https://support.microsoft.com/hub/4339296/surface-for-business-help)
 - [Garanties, plans de service étendus et conditions générales pour votre appareil](https://support.microsoft.com/help/4040687/info-about-warranties-extended-service-plans-and-terms-conditions)
-- [Garantie standard de surface](https://support.microsoft.com/help/4036296)
-- [Service et réparation des appareils](https://support.microsoft.com/devices)
+
 
 ## <a name="device-service-limitations"></a>Limitations du service d’appareil
 

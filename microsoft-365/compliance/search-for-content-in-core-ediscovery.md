@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Vous pouvez rechercher du contenu qui peut être pertinent à un cas de découverte électronique de base.
-ms.openlocfilehash: b8aa090094dc2699ee774a9b662da17fefde1188
-ms.sourcegitcommit: bd51f626f0c7788c2a3cf89deee25264659aebd5
+ms.openlocfilehash: d17a9d16643ec9077e02b5438597237b80f09af5
+ms.sourcegitcommit: 6007dbe2cf758c683de399f94023122c678bcada
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "43551401"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "44224621"
 ---
 # <a name="search-for-content-in-a-core-ediscovery-case"></a>Rechercher du contenu dans un cas de découverte électronique principale
 
@@ -44,7 +44,7 @@ Pour créer une recherche de découverte électronique principale :
 
     ![Nouvelle recherche](../media/0e9954e7-c0ea-4e05-820b-e4b81dc5f81d.png)
   
-   a. Vous pouvez spécifier des mots clés, des propriétés de message, telles que des dates d’envoi et de réception, ou des propriétés de document, telles que des noms de fichiers ou la date de la dernière modification d’un document. Vous pouvez utiliser des requêtes plus complexes qui utilisent un opérateur booléen, comme **and**, **or**, **not**, **near**ou **ONEAR**. Vous pouvez également rechercher des informations sensibles (des numéros de sécurité sociale, par exemple) dans des documents ou rechercher des documents qui ont été partagés en externe. Si vous laissez la zone mot clé vide, tout le contenu situé dans les emplacements de contenu spécifiés sera inclus dans les résultats de la recherche.
+   a. Vous pouvez spécifier des mots clés, des propriétés de message, telles que des dates d’envoi et de réception, ou des propriétés de document, telles que des noms de fichiers ou la date de la dernière modification d’un document. Vous pouvez utiliser des requêtes plus complexes qui utilisent un opérateur booléen, comme **and**, **or**, **not**ou **near**. Vous pouvez également rechercher des informations sensibles (des numéros de sécurité sociale, par exemple) dans des documents ou rechercher des documents qui ont été partagés en externe. Si vous laissez la zone mot clé vide, tout le contenu situé dans les emplacements de contenu spécifiés sera inclus dans les résultats de la recherche.
 
    b. Vous pouvez activer la case à cocher **afficher la liste des mots clés** et taper un mot clé dans chaque ligne. Dans ce cas, les mots clés de chaque ligne sont connectés par l’opérateur **or** dans la requête de recherche qui est créée. Vous pouvez entrer un maximum de 20 Mots clés dans la liste.
 

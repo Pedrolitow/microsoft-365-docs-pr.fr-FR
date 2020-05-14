@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 78fe3147-1979-4c41-83bb-aeccf244368d
 description: 'Découvrez les limites en vigueur pour la fonctionnalité de recherche de contenu dans le centre de sécurité & conformité dans Office 365, comme le nombre maximal de recherches simultanées. '
-ms.openlocfilehash: 6c2093bced166901a4442e9ab6593de2b64b785b
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: ef6feaf6da51a49278ccd387bda0041c081659a6
+ms.sourcegitcommit: 6007dbe2cf758c683de399f94023122c678bcada
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632649"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "44224599"
 ---
 # <a name="limits-for-content-search-in-the-security--compliance-center"></a>Limites de recherche de contenu dans le centre de sécurité & conformité
 
@@ -39,7 +39,7 @@ Le tableau suivant répertorie les limites de recherche dans le centre de sécur
 |:-----|:-----|
 |Nombre maximal de boîtes aux lettres ou de sites qui peuvent être recherchées dans une recherche de contenu unique  <br/> |Sans limite  <br/> |
 |Nombre maximal de recherches de contenu pouvant être exécutées en même temps dans votre organisation.  <br/> |Sans limite  <br/> |
-|Nombre maximal de recherches de contenu qu’un utilisateur peut démarrer simultanément. Notez que cette limite est probablement atteinte lorsque l’utilisateur tente de démarrer plusieurs recherches à l’aide de la commande **get \| -ComplianceSearch Start-ComplianceSearch** dans la sécurité & PowerShell du centre de conformité.  <br/> |10   <br/> |
+|Nombre maximal de recherches de contenu qu’un utilisateur peut démarrer simultanément. Notez que cette limite est probablement atteinte lorsque l’utilisateur tente de démarrer plusieurs recherches à l’aide de la commande **Get-ComplianceSearch \| Start-ComplianceSearch** dans la sécurité & PowerShell du centre de conformité.  <br/> |10   <br/> |
 |Nombre maximal d’éléments par boîte aux lettres utilisateur qui s’affichent dans la page d’aperçu lors de la prévisualisation des résultats de la recherche de contenu.  <br/> |100  <br/> |
 |Nombre maximal d’éléments trouvés dans toutes les boîtes aux lettres utilisateur qui s’affichent dans la page d’aperçu lors de la prévisualisation des résultats de la recherche de contenu. Les éléments les plus récents sont affichés.  <br/> |1 000  <br/> |
 |Nombre maximal de boîtes aux lettres d’utilisateur dont vous pouvez afficher un aperçu des résultats de recherche. S'il existe plus de 1 000 boîtes aux lettres dont le contenu correspond à la requête de recherche, seules les 1 000 premières boîtes aux lettres contenant la majorité des résultats seront disponibles pour l'aperçu.  <br/> |1 000  <br/> |
@@ -49,12 +49,12 @@ Le tableau suivant répertorie les limites de recherche dans le centre de sécur
 |Nombre maximal d’éléments trouvés dans toutes les boîtes aux lettres de dossiers publics qui s’affichent dans la page d’aperçu lors de la prévisualisation des résultats de la recherche de contenu.  <br/> |200  <br/> |
 |Nombre maximal de boîtes aux lettres publiques pouvant être prévisualisées pour les résultats de la recherche. S’il y a plus de 500 boîtes aux lettres de dossiers publics qui contiennent du contenu correspondant à la requête de recherche, seules les 500 premières boîtes aux lettres de dossiers publics avec le plus de résultats de recherche seront disponibles pour l’aperçu.  <br/> |500  <br/> |
 |Nombre maximal de caractères pour la requête de recherche (y compris les opérateurs et les conditions) pour une recherche de contenu.  <br/><br/> **Remarque :** Cette limite prend effet après l’extension de la requête, ce qui signifie que la requête est développée par rapport à chacun des mots clés. Par exemple, si une requête de recherche comporte 15 Mots clés et des paramètres et conditions supplémentaires, la requête est développée 15 fois, chacune avec les autres paramètres et conditions de la requête. Par conséquent, même si le nombre de caractères dans la requête de recherche est inférieur à la limite, il s’agit de la requête étendue susceptible de contribuer au dépassement de cette limite.  <br/> |**Boîtes aux lettres :** 10 000  <br/> **Sites :** 4 000 lors de la recherche sur tous les sites ou 2 000 lors de la recherche sur 20 sites <sup>1</sup> <br/> |
-|Nombre maximal de variantes renvoyées lors de l’utilisation d’un caractère générique de préfixe pour rechercher une expression exacte dans une requête de recherche ou lorsque vous utilisez un caractère générique de préfixe et l’opérateur booléen **near** ou **ONEAR** .  <br/> |10 000 <sup>2</sup> <br/> |
-|Nombre minimal de caractères alpha pour les caractères génériques de préfixe ; par exemple, `time*` `one*`, ou `set*`.  <br/> |3  <br/> |
+|Nombre maximal de variantes renvoyées lors de l’utilisation d’un caractère générique de préfixe pour rechercher une expression exacte dans une requête de recherche ou lors de l’utilisation d’un caractère générique de préfixe et de l’opérateur de **proximité** .  <br/> |10 000 <sup>2</sup> <br/> |
+|Nombre minimal de caractères alpha pour les caractères génériques de préfixe ; par exemple, `time*` , `one*` ou `set*` .  <br/> |3   <br/> |
 |Nombre maximal de boîtes aux lettres dans une recherche de contenu que vous pouvez supprimer des éléments à l’aide d’une action de recherche et de purge (à l’aide de la commande **New-ComplianceSearchAction-purge** ). Si la recherche de contenu pour laquelle vous effectuez une action de vidage pour a plus de boîtes aux lettres source que cette limite, l’action de vidage échouera. Pour plus d’informations sur la recherche et le vidage, voir [Rechercher et supprimer des messages électroniques dans votre organisation](search-for-and-delete-messages-in-your-organization.md).  <br/> |50 000  <br/> |
    
 > [!NOTE]
-> <sup>1</sup> lors de la recherche de sites SharePoint et OneDrive entreprise, les caractères des URL des sites en cours de recherche sont comptabilisés par rapport à cette limite. <br/> <sup>2</sup> pour les requêtes sans expression (valeur de mot clé qui n’utilise pas de guillemets doubles), nous utilisons un index de préfixe spécial. Cela indique qu’un mot a lieu dans un document, mais pas à son emplacement dans le document. Pour effectuer une requête d’expression (valeur de mot clé avec des guillemets doubles), nous devons comparer la position dans le document pour les mots de l’expression. Cela signifie que nous ne pouvons pas utiliser l’index de préfixe pour les requêtes d’expression. Dans ce cas, nous développons la requête en interne avec tous les mots que le préfixe développe ; par exemple, `"time*"` peut se développer `"time OR timer OR times OR timex OR timeboxed OR …"`sur. Le nombre maximal de variantes que le mot peut développer, et non le nombre de documents correspondant à la requête, est de 10 000. Il n’existe pas de limite supérieure pour les termes autres que les expressions. 
+> <sup>1</sup> lors de la recherche de sites SharePoint et OneDrive entreprise, les caractères des URL des sites en cours de recherche sont comptabilisés par rapport à cette limite. <br/> <sup>2</sup> pour les requêtes sans expression (valeur de mot clé qui n’utilise pas de guillemets doubles), nous utilisons un index de préfixe spécial. Cela indique qu’un mot a lieu dans un document, mais pas à son emplacement dans le document. Pour effectuer une requête d’expression (valeur de mot clé avec des guillemets doubles), nous devons comparer la position dans le document pour les mots de l’expression. Cela signifie que nous ne pouvons pas utiliser l’index de préfixe pour les requêtes d’expression. Dans ce cas, nous développons la requête en interne avec tous les mots que le préfixe développe ; par exemple, `"time*"` peut se développer sur `"time OR timer OR times OR timex OR timeboxed OR …"` . Le nombre maximal de variantes que le mot peut développer, et non le nombre de documents correspondant à la requête, est de 10 000. Il n’existe pas de limite supérieure pour les termes autres que les expressions. 
   
 ## <a name="indexing-limits-for-email-messages"></a>Limites d’indexation pour les messages électroniques
 
@@ -82,7 +82,7 @@ Il existe des limites supplémentaires liées à différents aspects de la reche
     
 - [Étude des éléments partiellement indexés dans eDiscovery](investigating-partially-indexed-items-in-ediscovery.md)
     
-- [Limites de recherche pour SharePoint Online](https://support.office.com/article/7c06e9ed-98b6-4304-a900-14773a8fa32f)
+- [Limites de recherche pour SharePoint Online](https://docs.microsoft.com/sharepoint/search-limits)
     
 Pour plus d’informations sur les recherches de contenu, voir :
   

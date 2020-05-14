@@ -15,12 +15,12 @@ ms.collection: Strat_O365_Enterprise
 ms.custom:
 - seo-marvel-mar2020
 description: Dans cet article, vous découvrirez les technologies de chiffrement que vous pouvez gérer et configurer dans Microsoft 365.
-ms.openlocfilehash: 3c7050ba0417473b4b387937336aae02c1eba778
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: a70f737d1af10622b093bddc682cc493396fff45
+ms.sourcegitcommit: 1c90bcc5c56f24895f01c3e0423c3f6b73715c13
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44033612"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44214220"
 ---
 # <a name="customer-managed-encryption-features"></a>Fonctionnalités de chiffrement gérées par le client
 
@@ -56,11 +56,11 @@ Le protocole S/MIME (Secure/Multipurpose Internet Mail Extensions) est une norme
 
 ## <a name="office-365-message-encryption"></a>Chiffrement de messages Office 365
 
-[Office 365 message Encryption](https://products.office.com/exchange/office-365-message-encryption) (OME) basé sur [Azure information protection](https://docs.microsoft.com/information-protection/understand-explore/what-is-information-protection) (AIP) vous permet d’envoyer des messages chiffrés et protégés par des droits à tous. OME atténue les menaces telles que le taraudage et les attaques de l’intercepteur, ainsi que d’autres menaces, telles que l’accès non garanti de données par un utilisateur non autorisé qui ne dispose pas des autorisations appropriées. Nous avons réalisé des investissements qui vous offrent une expérience de messagerie sécurisée, plus simple et plus intuitive, basée sur Azure information protection. Vous pouvez protéger les messages envoyés par Microsoft 365 à quiconque se trouve à l’intérieur ou à l’extérieur de votre organisation. Ces messages peuvent être affichés sur un ensemble diversifié de clients de messagerie à l’aide de n’importe quelle identité, y compris Azure Active Directory, le compte Microsoft et les ID Google. Pour plus d’informations sur la façon dont votre organisation peut utiliser des messages chiffrés, consultez la rubrique [Office 365 message Encryption](https://support.office.com/article/F87CB016-7876-4317-AE3C-9169B311FF8A).
+[Office 365 message Encryption](https://products.office.com/exchange/office-365-message-encryption) (OME) basé sur [Azure information protection](https://docs.microsoft.com/information-protection/understand-explore/what-is-information-protection) (AIP) vous permet d’envoyer des messages chiffrés et protégés par des droits à tous. OME atténue les menaces telles que le taraudage et les attaques de l’intercepteur, ainsi que d’autres menaces, telles que l’accès non garanti de données par un utilisateur non autorisé qui ne dispose pas des autorisations appropriées. Nous avons réalisé des investissements qui vous offrent une expérience de messagerie sécurisée, plus simple et plus intuitive, basée sur Azure information protection. Vous pouvez protéger les messages envoyés par Microsoft 365 à quiconque se trouve à l’intérieur ou à l’extérieur de votre organisation. Ces messages peuvent être affichés sur un ensemble diversifié de clients de messagerie à l’aide de n’importe quelle identité, y compris Azure Active Directory, le compte Microsoft et les ID Google. Pour plus d’informations sur la façon dont votre organisation peut utiliser des messages chiffrés, consultez la rubrique [Office 365 message Encryption](https://docs.microsoft.com/microsoft-365/compliance/ome).
 
 ## <a name="transport-layer-security"></a>Transport Layer Security
 
-Si vous souhaitez garantir la communication sécurisée avec un partenaire, vous pouvez utiliser des connecteurs entrants et sortants pour assurer la sécurité et l’intégrité des messages. Vous pouvez configurer le protocole TLS entrant et sortant forcé sur chaque connecteur à l’aide d’un certificat. L’utilisation d’un canal SMTP chiffré peut empêcher les données d’être volées via une attaque de l’intercepteur. Pour plus d’informations, consultez [la rubrique utilisation de TLS par Exchange Online pour sécuriser les connexions de messagerie](https://support.office.com/article/How-Exchange-Online-uses-TLS-to-secure-email-connections-in-Office-365-4CDE0CDA-3430-4DC0-B489-F2C0736C929F).
+Si vous souhaitez garantir la communication sécurisée avec un partenaire, vous pouvez utiliser des connecteurs entrants et sortants pour assurer la sécurité et l’intégrité des messages. Vous pouvez configurer le protocole TLS entrant et sortant forcé sur chaque connecteur à l’aide d’un certificat. L’utilisation d’un canal SMTP chiffré peut empêcher les données d’être volées via une attaque de l’intercepteur. Pour plus d’informations, consultez [la rubrique utilisation de TLS par Exchange Online pour sécuriser les connexions de messagerie](https://docs.microsoft.com/microsoft-365/compliance/exchange-online-uses-tls-to-secure-email-connections).
 
 ## <a name="domain-keys-identified-mail"></a>Messages identifiés par des clés de domaine
 

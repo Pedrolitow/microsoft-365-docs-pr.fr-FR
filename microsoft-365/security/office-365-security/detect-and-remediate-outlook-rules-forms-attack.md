@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: Découvrez comment reconnaître et corriger les attaques d’injections de formulaires personnalisés et de règles Outlook dans Office 365
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6e818d05465f7b91268cc44c345c6699e8c6d0ed
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: e18635b9b9d090dbc2808b5b8142b59ec1f29c6e
+ms.sourcegitcommit: 6007dbe2cf758c683de399f94023122c678bcada
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034815"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "44224588"
 ---
 # <a name="detect-and-remediate-outlook-rules-and-custom-forms-injections-attacks"></a>Détecter et résoudre les attaques d’injections de formulaires personnalisés et de règles Outlook
 
@@ -137,7 +137,7 @@ Vous devez disposer des droits d’administrateur général pour exécuter le sc
 
 3. Ouvrez une instance PowerShell en tant qu’administrateur et ouvrez le dossier dans lequel vous avez enregistré le script.
 
-4. Exécutez cette ligne de commande PowerShell comme `.\Get-AllTenantRulesAndForms.ps1`suit .\Get-AllTenantRulesAndForms.ps1
+4. Exécutez cette ligne de commande PowerShell comme suit `.\Get-AllTenantRulesAndForms.ps1` .\Get-AllTenantRulesAndForms.ps1
 
 #### <a name="interpreting-the-output"></a>Interprétation de la sortie
 
@@ -159,7 +159,7 @@ Si vous trouvez des preuves de l’une de ces attaques, la correction est simple
 
 1. Identifier tous les appareils utilisés par l’utilisateur avec Outlook. Ils devront tous être nettoyés du programme malveillant potentiel. Ne pas autoriser l’utilisateur à se connecter et à utiliser le courrier électronique jusqu’à ce que tous les appareils soient nettoyés.
 
-2. Suivez les étapes de la procédure [supprimer une règle](https://support.office.com/article/2f0e7139-f696-4422-8498-44846db9067f) pour chaque appareil.
+2. Suivez les étapes de la procédure [supprimer une règle](https://support.microsoft.com/en-us/office/delete-a-rule-2f0e7139-f696-4422-8498-44846db9067f) pour chaque appareil.
 
 3. Si vous n’êtes pas sûr de la présence d’autres programmes malveillants, vous pouvez formater et réinstaller tous les logiciels sur l’appareil. Pour les appareils mobiles, vous pouvez suivre les étapes des constructeurs pour réinitialiser l’appareil à l’image installée en usine.
 

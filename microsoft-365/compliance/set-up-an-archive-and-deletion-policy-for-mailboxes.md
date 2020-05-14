@@ -21,12 +21,12 @@ search.appverid:
 ms.assetid: ec3587e4-7b4a-40fb-8fb8-8aa05aeae2ce
 description: Créer une stratégie d’archivage et de suppression dans Microsoft 365 qui déplace automatiquement les éléments vers la boîte aux lettres d’archivage d’un utilisateur.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d4c1bd1c993444c38596642bf974e734870c79d8
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 5bc48b8192af3ca4edd591307e5945b9171cf665
+ms.sourcegitcommit: 98782ee4497d72232462c51a3071fae313282980
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208058"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44222525"
 ---
 # <a name="set-up-an-archive-and-deletion-policy-for-mailboxes-in-your-organization"></a>Configurer une stratégie d’archivage et de suppression pour les boîtes aux lettres de votre organisation
 
@@ -298,6 +298,6 @@ Voilà ! Vous avez configuré une stratégie d’archivage et de suppression po
     |Ne jamais supprimer  <br/> |Cette balise empêche la suppression d’éléments par une stratégie de rétention.  <br/> |Intégré  <br/> |Familiale Cette balise peut être appliquée par les utilisateurs.  <br/> |
     |Déplacement vers l’archive après 1 ans - Personnel  <br/> |Déplace les éléments vers la boîte aux lettres d’archivage après 1 an.  <br/> |Intégré  <br/> |Familiale Cette balise peut être appliquée par les utilisateurs.  <br/> |
    
-    > <sup>\*</sup>Les utilisateurs peuvent utiliser l’outil de récupération des éléments supprimés dans Outlook et Outlook sur le Web (anciennement Outlook Web App) pour récupérer un élément supprimé pendant la période de rétention des éléments supprimés, qui est de 14 jours par défaut dans Exchange Online. Un administrateur peut utiliser Windows PowerShell pour augmenter la période de rétention des éléments supprimés jusqu’à un maximum de 30 jours. Pour plus d’informations, reportez-vous à la rubrique : [récupérer des éléments supprimés dans Outlook pour Windows](https://support.office.com/article/49e81f3c-c8f4-4426-a0b9-c0fd751d48ce) et [modifier la période de rétention des éléments supprimés pour une boîte aux lettres dans Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=286940)
+    > <sup>\*</sup>Les utilisateurs peuvent utiliser l’outil de récupération des éléments supprimés dans Outlook et Outlook sur le Web (anciennement Outlook Web App) pour récupérer un élément supprimé pendant la période de rétention des éléments supprimés, qui est de 14 jours par défaut dans Exchange Online. Un administrateur peut utiliser Windows PowerShell pour augmenter la période de rétention des éléments supprimés jusqu’à un maximum de 30 jours. Pour plus d’informations, reportez-vous à la rubrique : [récupérer des éléments supprimés dans Outlook pour Windows](https://support.office.com/article/49e81f3c-c8f4-4426-a0b9-c0fd751d48ce) et [modifier la période de rétention des éléments supprimés pour une boîte aux lettres dans Exchange Online](https://www.microsoft.com/?ref=go)
   
 - L’utilisation de la balise de rétention **éléments récupérables 14 jours** permet de libérer de l’espace de stockage dans le dossier éléments récupérables dans la boîte aux lettres principale de l’utilisateur. Ceci est utile lorsque la boîte aux lettres d’un utilisateur est placée en conservation, ce qui signifie que rien n’est définitivement supprimé de la boîte aux lettres de l’utilisateur. Si vous ne déplacez pas les éléments vers la boîte aux lettres d’archivage, il est possible que le quota de stockage du dossier éléments récupérables dans la boîte aux lettres principale soit atteint. Pour plus d’informations à ce sujet et sur la façon de l’éviter, voir [augmenter le quota des éléments récupérables pour les boîtes aux lettres en attente](https://go.microsoft.com/fwlink/p/?LinkId=786479).
