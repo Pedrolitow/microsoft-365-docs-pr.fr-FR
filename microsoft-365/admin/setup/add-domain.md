@@ -25,19 +25,19 @@ search.appverid:
 - MOE150
 ms.assetid: 6383f56d-3d09-4dcb-9b41-b5f5a5efd611
 description: Ajoutez votre domaine à Office 365 dans le centre d’administration Microsoft 365 en ajoutant un enregistrement DNS au niveau de votre hôte DNS. L’Assistant installation vous guide tout au long du processus.
-ms.openlocfilehash: bab4da6e4a8191d91ccdd38dd54f62f4d790c3b8
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: 336e6ee78d7020d73c7e00f639e8f1e1b20c62cd
+ms.sourcegitcommit: 98782ee4497d72232462c51a3071fae313282980
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44140774"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44222338"
 ---
-# <a name="add-a-domain-to-office-365"></a>Ajouter un domaine à Office 365
+# <a name="add-a-domain-to-microsoft-365"></a>Ajouter un domaine à Microsoft 365
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> Le centre d’administration change. Si votre expérience ne correspond pas aux détails présentés ici, reportez-vous [à la rubrique à propos du nouveau centre d’administration Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> Le centre d’administration change. Si votre expérience ne correspond pas aux informations présentées ici, voir [À propos du nouveau centre d’administration Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
 
 ::: moniker-end
 
@@ -74,7 +74,7 @@ ms.locfileid: "44140774"
 
 ::: moniker-end
     
-2. Accédez à la page**domaines** **d’installation** > . 
+2. Accédez à la page domaines **d’installation**  >  **Domains** . 
 
 3. Sélectionnez **Ajouter un domaine**.
     
@@ -82,7 +82,7 @@ ms.locfileid: "44140774"
     
 5. Choisissez la manière dont vous souhaitez vérifier que vous êtes propriétaire du domaine.
     
-    1. Si votre domaine est inscrit sur GoDaddy ou 1&amp;1, sélectionnez **connexion** > **suivante** et Microsoft[configure automatiquement vos enregistrements](../get-help-with-domains/domain-connect.md).
+    1. Si votre domaine est inscrit sur GoDaddy ou 1 &amp; 1, sélectionnez **connexion**  >  **suivante** et Microsoft [configure automatiquement vos enregistrements](../get-help-with-domains/domain-connect.md).
     
     2. Vous pouvez demander à ce qu'un courrier incluant un code de vérification soit envoyé au contact enregistré pour le domaine. Si vous ne reconnaissez pas ou n’avez pas accès au courrier électronique, vous pouvez utiliser la troisième option.
     
@@ -113,9 +113,9 @@ ms.locfileid: "44140774"
 
 Suivez les étapes ci-dessous pour ajouter un enregistrement personnalisé pour un site Web ou un service tiers.
 
-1. Connectez-vous au centre d’administration Microsoft <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>à l’adresse.
+1. Connectez-vous au centre d’administration Microsoft à l’adresse <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> .
 
-2. Accédez à la page **paramètres**  > des**domaines** .
+2. Accédez à la page **paramètres**des   >  **domaines** .
 
 3. Dans la page **Domaines**, sélectionnez un domaine. 
     
@@ -136,7 +136,7 @@ Dans l’Assistant, nous confirmons que vous êtes propriétaire du domaine, pui
   
 ### <a name="domain-connect-registrars-integrating-with-microsoft-365"></a>Bureaux de connexion au domaine intégration à Microsoft 365
 
-- [1&amp;1 Ionos](https://www.1and1.com/)
+- [1 &amp; 1 Ionos](https://www.1and1.com/)
 - [123Reg](https://www.123-reg.co.uk/)
 - [GoDaddy](https://www.godaddy.com/)
 - [WordPress](https://wordpress.com/)

@@ -21,12 +21,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Configurez Office 365 Advanced Threat Protection et protégez les données sensibles contre le hameçonnage, les programmes malveillants et d’autres menaces.
-ms.openlocfilehash: 2dd75b20bf203b9b8f0cdefb2459c45d1d0ccec1
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 748868b07ac8759a66bac3c6b4165509270426a6
+ms.sourcegitcommit: 6007dbe2cf758c683de399f94023122c678bcada
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627123"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "44224468"
 ---
 # <a name="increase-threat-protection"></a>Renforcer la protection contre les menaces
 
@@ -34,7 +34,7 @@ Cet article vous aide à renforcer la protection de votre abonnement Microsoft 3
 
 Avant de commencer, vérifiez votre score de sécurité Office 365. Le score de sécurité d’Office 365 analyse la sécurité de votre organisation en fonction de vos activités normales et des paramètres de sécurité, et attribue un score. Commencez par prendre note de votre score actuel. Pour augmenter votre score, effectuez les actions recommandées dans cet article. L’objectif n’est pas d’atteindre le score maximal, mais de prendre conscience des possibilités de protection de votre environnement qui n’ont pas d’impact négatif sur la productivité de vos utilisateurs. 
 
-Pour plus d’informations, consultez la rubrique [Microsoft Secure score](https://docs.microsoft.com/office365/securitycompliance/microsoft-secure-score).
+Pour plus d’informations, consultez la rubrique [Microsoft Secure score](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-secure-score).
 
 ## <a name="raise-the-level-of-protection-against-malware-in-mail"></a>Augmenter le niveau de protection contre les programmes malveillants dans les messages
 
@@ -42,7 +42,7 @@ Votre environnement Office 365 ou Microsoft 365 inclut une protection contre les
   
 1. Accédez à [https://protection.office.com](https://protection.office.com) et connectez-vous avec vos informations d’identification de compte d’administrateur. 
     
-2. Dans le centre &amp; de navigation de gauche du centre de sécurité **conformité, sélectionnez** **protection contre les programmes malveillants**pour la **stratégie** \> .
+2. Dans le centre de navigation de gauche du centre de sécurité &amp; conformité, **Threat management**sélectionnez **Policy** \> **protection contre les programmes malveillants**pour la stratégie.
     
 3. Double-cliquez sur la stratégie par défaut pour modifier cette stratégie à l’échelle de l’entreprise.
     
@@ -67,11 +67,11 @@ En plus des fichiers que vous avez bloqués à l’étape précédente, il est r
 
 Pour créer une règle de transport de messagerie :
   
-1. Accédez au centre d’administration sur <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>, puis choisissez Centre d' **administration** \> **Exchange**.
+1. Accédez au centre d’administration sur <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> , puis choisissez Centre d' **administration** \> **Exchange**.
     
 2. Dans la catégorie **flux de messagerie** , sélectionnez **règles**.
     
-3. Sélectionnez **+**, puis sélectionnez **créer une règle**.
+3. Sélectionnez **+** , puis sélectionnez **créer une règle**.
     
 4. Sélectionnez **plus d’options** en bas de la boîte de dialogue pour afficher l’ensemble complet des options. 
     
@@ -87,7 +87,7 @@ Pour créer une règle de transport de messagerie :
 |Procédez comme suit. . .  <br/> |Avertir le destinataire avec un message  <br/> |
 |Fournir le texte du message  <br/> |N’ouvrez pas ces types de fichiers provenant de contacts inconnus, car ils peuvent contenir des macros avec du code malveillant.  <br/> |
    
-Si vous souhaitez en savoir plus, consultez les articles : 
+Pour plus d’informations, voir :
   
 - [Comment traiter les ransomware](https://go.microsoft.com/fwlink/?linkid=2016501)
     
@@ -99,11 +99,11 @@ Les pirates qui accèdent à la boîte aux lettres d’un utilisateur peuvent vo
   
 Pour créer une règle de transport de courrier, regardez [cette courte vidéo](https://support.office.com/article/f9d693ba-5c78-47c0-b156-8e461e062aa7) ou procédez comme suit :
   
-1. Dans le centre d’administration Microsoft 365 \> , **sélectionnez Centre d’administration** **Exchange**.
+1. Dans le centre d’administration Microsoft 365, **sélectionnez Centre d’administration** \> **Exchange**.
     
 2. Dans la catégorie **flux de messagerie** , sélectionnez **règles**.
     
-3. Sélectionnez **+**, puis sélectionnez **créer une règle**.
+3. Sélectionnez **+** , puis sélectionnez **créer une règle**.
     
 4. Pour afficher toutes les options, sélectionnez **plus d’options** en bas de la boîte de dialogue. 
     
@@ -130,7 +130,7 @@ Pour créer une stratégie anti-hameçonnage ATP, regardez [cette vidéo de form
   
 1. Accédez à [https://protection.office.com](https://protection.office.com). 
     
-2. Dans le centre &amp; de navigation de gauche du centre de sécurité conformité, sous **gestion des menaces**, sélectionnez **stratégie**.
+2. Dans le centre de navigation de gauche du centre de sécurité &amp; conformité, sous gestion des **menaces**, sélectionnez **stratégie**.
     
 3. Sur la page **stratégie** , choisissez **protection contre le hameçonnage ATP**.
     
@@ -147,10 +147,10 @@ Pour créer une stratégie anti-hameçonnage ATP, regardez [cette vidéo de form
 |Description  <br/> |Assurez-vous que le personnel le plus important et que notre domaine ne sont pas empruntés.  <br/> |
 |Ajouter des utilisateurs à protéger  <br/> |Sélectionnez **+ Ajouter une condition, le destinataire est**. Tapez noms d’utilisateur ou entrez l’adresse de messagerie du candidat, du gestionnaire de campagnes et d’autres membres importants du personnel. Vous pouvez ajouter jusqu’à 20 adresses internes et externes que vous souhaitez protéger contre l’emprunt d’identité.  <br/> |
 |Ajouter des domaines à protéger  <br/> |Sélectionnez **+ Ajouter une condition, le domaine du destinataire est**. Entrez le domaine personnalisé associé à votre abonnement Microsoft 365, si vous en avez défini un. Vous pouvez entrer plusieurs domaines.  <br/> |
-|Choisir des actions  <br/> |Si un message électronique est envoyé par un utilisateur représenté : choisissez **Rediriger le message vers une autre adresse de messagerie**, puis tapez l’adresse de messagerie de l’administrateur de sécurité ; par exemple, *Alice<span><span>@contoso. com*. Si le courrier électronique est envoyé par un domaine dont l’identité a été empruntée : sélectionnez **Mettre le message en quarantaine**.  <br/> |
+|Choisir des actions  <br/> |Si un message électronique est envoyé par un utilisateur représenté : choisissez **Rediriger le message vers une autre adresse de messagerie**, puis tapez l’adresse de messagerie de l’administrateur de sécurité ; par exemple, *Alice <span> <span> @contoso. com*. Si le courrier électronique est envoyé par un domaine dont l’identité a été empruntée : sélectionnez **Mettre le message en quarantaine**.  <br/> |
 |Veille des boîtes aux lettres  <br/> |Par défaut, la veille des boîtes aux lettres est activée lorsque vous créez une stratégie anti-hameçonnage. Laissez ce paramètre **activé** pour obtenir de meilleurs résultats.  <br/> |
 |Ajouter des expéditeurs et domaines de confiance  <br/> |Ici, vous pouvez ajouter votre propre domaine ou tout autre domaine approuvé.  <br/> |
-|Appliqué à  <br/> |Sélectionnez **Le domaine du destinataire est**. Sous **Un de ces éléments**, sélectionnez **Choisir**. Sélectionnez **+ Ajouter**. Activez la case à cocher en regard du nom du domaine, par exemple, *Contoso<span> . com <span>*, dans la liste, puis sélectionnez **Ajouter**. Sélectionnez **Terminé**.  <br/> |
+|Appliqué à  <br/> |Sélectionnez **Le domaine du destinataire est**. Sous **Un de ces éléments**, sélectionnez **Choisir**. Sélectionnez **+ Ajouter**. Activez la case à cocher en regard du nom du domaine, par exemple, *contoso. <span> <span> com*, dans la liste, puis sélectionnez **Ajouter**. Sélectionnez **Terminé**.  <br/> |
   
 ## <a name="protect-against-malicious-attachments-and-files-with-atp-safe-attachments"></a>Protection contre les pièces jointes et les fichiers malveillants avec des pièces jointes fiables ATP
 
@@ -158,15 +158,15 @@ Les personnes envoient, reçoivent et partagent régulièrement des pièces join
   
 Pour créer une stratégie de pièces jointes approuvées pour la protection avancée contre les menaces, regardez [cette courte vidéo](https://support.office.com/article/e7e68934-23dc-4b9c-b714-e82e27a8f8a5)ou effectuez les étapes suivantes :
   
-1. Accédez à [https://protection.office.com](https://protection.office.com)et connectez-vous à l’aide de votre compte d’administrateur. 
+1. Accédez à [https://protection.office.com](https://protection.office.com) et connectez-vous à l’aide de votre compte d’administrateur. 
     
-2. Dans le centre &amp; de navigation de gauche du centre de sécurité conformité, sous **gestion des menaces**, sélectionnez **stratégie**.
+2. Dans le centre de navigation de gauche du centre de sécurité &amp; conformité, sous gestion des **menaces**, sélectionnez **stratégie**.
     
 3. Sur la page stratégie, choisissez **pièces jointes approuvées ATP**.
     
 4. Sur la page pièces jointes fiables, appliquez largement cette protection en activant la case à cocher Activer la protection avancée contre **les menaces pour SharePoint, OneDrive et Microsoft teams** . 
     
-5. Sélectionnez **+** cette option pour créer une stratégie. 
+5. Sélectionnez cette option **+** pour créer une stratégie. 
     
 6. Appliquez les paramètres dans le tableau suivant. 
     
@@ -195,9 +195,9 @@ Nous vous recommandons d’effectuer les opérations suivantes :
     
 Pour configurer des liens fiables ATP, regardez [cette vidéo de formation courte](https://support.office.com/article/61492713-53c2-47da-a6e7-fa97479e97fa)ou effectuez les étapes suivantes :
   
-1. Accédez à [https://protection.office.com](https://protection.office.com)et connectez-vous à l’aide de votre compte d’administrateur. 
+1. Accédez à [https://protection.office.com](https://protection.office.com) et connectez-vous à l’aide de votre compte d’administrateur. 
     
-2. Dans le centre &amp; de navigation de gauche du centre de sécurité conformité, sous **gestion des menaces**, sélectionnez **stratégie**.
+2. Dans le centre de navigation de gauche du centre de sécurité &amp; conformité, sous gestion des **menaces**, sélectionnez **stratégie**.
     
 3. Sur la page stratégie, choisissez **liens fiables ATP**.
     
