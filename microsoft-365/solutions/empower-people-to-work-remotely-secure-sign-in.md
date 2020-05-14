@@ -17,12 +17,12 @@ ms.collection:
 - M365solutions
 ms.custom: ''
 description: Demander à vos employés à distance de se connecter à l’aide de l’authentification multifacteur (MFA).
-ms.openlocfilehash: 2cb16c78f7fb0b1f9f48559c61a6200d6adcf470
-ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
+ms.openlocfilehash: a0350be5cf75024fbefadb21ae56017bf64ca0d8
+ms.sourcegitcommit: 8e655c6cbb91bfb97efda9a99c39fac33eaa974a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "44166136"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44213471"
 ---
 # <a name="step-1-increase-sign-in-security-for-remote-workers-with-mfa"></a>Étape 1. Augmenter la sécurité de connexion pour les travailleurs à distance à l’aide d’une authentification multifacteur (MFA)
 
@@ -55,9 +55,9 @@ Pour plus d’informations, voir[Vue d’ensemble des paramètres de sécurité 
 
 Les stratégies d’accès conditionnel sont un groupe de règles qui spécifient les conditions dans lesquelles les connexions sont évaluées et autorisées. Par exemple, vous pouvez créer une stratégie d’accès conditionnel qui indique :
 
-- Si le nom du compte d’utilisateur concerne un utilisateur qui est un administrateur Exchange, utilisateur, mot de passe, sécurité, SharePoint ou un administrateur général, exiger l’authentification multifacteur avant d’autoriser l’accès.
+- Si le nom du compte d’utilisateur concerne membre d’un groupe d’utilisateurs bénéficiant des rôles d’administrateur Exchange, utilisateur, mot de passe, sécurité, SharePoint ou global, exigez l’authentification multifacteur avant d’autoriser l’accès.
 
-Cette stratégie est plus simple que de penser à configurer des comptes d’utilisateurs individuels pour l’authentification multifacteur lorsqu’ils sont ajoutés ou supprimés de ces rôles d’administrateur.
+Cette stratégie vous permet de demander une authentification multifacteur basée sur l’appartenance au groupe, plutôt que d’essayer de configurer des comptes d’utilisateur individuels pour l’authentification multifacteur lorsqu’ils sont attribués ou non à des rôles d’administrateur.
 
 Vous pouvez également utiliser les stratégies d’accès conditionnel pour des fonctionnalités plus avancées, telles que la nécessité de se connecter à partir d’un appareil compatible, tel que votre ordinateur portable fonctionnant sous Windows 10.
 
@@ -65,15 +65,15 @@ L’accès conditionnel exige Azure AD Premium P1, lequel est inclus dans Micros
 
 Si vous souhaitez en savoir plus, consultez [Présentation de l’accès conditionnel](https://docs.microsoft.com/azure/active-directory/conditional-access/overview).
 
-## <a name="azure-ad-identity-protection-policies"></a>Stratégies Azure AD Identity Protection
+## <a name="azure-ad-identity-protection-support"></a>Prise en charge d’Azure AD Identity Protection
 
-Les stratégies Azure AD Identity Protection sont des règles qui spécifient les conditions dans lesquelles les connexions sont évaluées et autorisées. Par exemple, vous pouvez créer une stratégie Azure AD Identity Protection qui indique :
+Avec Azure AD Identity Protection, vous pouvez créer une stratégie d’accès conditionnel supplémentaire qui indique :
 
-- Si une connexion est considéré comme présentant un risque moyen ou élevé, l’utilisateur doit utiliser l’authentification multifacteur pour se connecter.
+- Si une connexion est considéré comme présentant un risque moyen ou élevé, exigez l’authentification multifacteur.
 
 Azure AD Identity Protection exige Azure AD Premium P2, lequel est inclus dans Microsoft 365 E5.
 
-Si vous souhaitez en savoir plus, consultez la page [Présentation de Azure AD Identity Protection](https://docs.microsoft.com/azure/active-directory/identity-protection/overview-identity-protection).
+Pour en savoir plus, consultez l'article [Accès conditionnel basé sur les risques](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-risk#require-mfa-medium-or-high-sign-in-risk-users).
 
 ## <a name="using-these-methods-together"></a>Utilisation combinée des méthodes
 
@@ -84,12 +84,12 @@ Gardez à l’esprit les éléments suivants :
 
 Si les paramètres de sécurité par défaut sont activés, les nouveaux utilisateurs sont invités à s’inscrire pour l’authentification multifacteur et à utiliser l’application Microsoft Authenticator. 
 
-Ce tableau présente les résultats de l’activation de l’authentification multifacteur avec les paramètres de sécurité par défaut, les stratégies d’accès conditionnel et les paramètres de compte par utilisateur.
+Ce tableau présente les résultats de l’activation de l’authentification multifacteur avec les paramètres de sécurité par défaut et les stratégies d’accès conditionnel.
 
-|| Activé | Désactivé | Méthode d'authentification secondaire |
+|| Activé | Désactivé | Méthode d'authentification supplémentaire |
 |:-------|:-----|:-------|:-------|
 | **Paramètres de sécurité par défaut**  | Ne peut pas utiliser les stratégies d’accès conditionnel | Peut utiliser les stratégies d’accès conditionnel | Application Microsoft Authenticator |
-| **Stratégies d’accès conditionnel** | Si l’une d’elles est activée, vous ne pouvez pas activer les paramètres de sécurité par défaut | Si aucune d’entre elles n’est activée, vous pouvez activer les paramètres de sécurité par défaut  | Utilisateur spécifié lors de l’inscription à l’authentification multifacteur  |
+| **Stratégies d’accès conditionnel** | Si l’une d’elles est activée, vous ne pouvez pas activer les paramètres de sécurité par défaut | Si tous ces éléments sont désactivés, vous pouvez activer les paramètres de sécurité par défaut  | Utilisateur spécifié lors de l’inscription à l’authentification multifacteur  |
 ||||
 
 ## <a name="admin-training-and-technical-resources-for-mfa-and-identity"></a>Ressources techniques et de formation pour l’administrateur pour l’authentification multifacteur et l’identité

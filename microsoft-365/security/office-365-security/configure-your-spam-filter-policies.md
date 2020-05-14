@@ -15,21 +15,21 @@ search.appverid:
 ms.assetid: 316544cb-db1d-4c25-a5b9-c73bbcf53047
 ms.collection:
 - M365-security-compliance
-description: Les paramètres du filtre de courrier indésirable de base incluent la sélection de l’action à effectuer sur les messages identifiés comme indésirables.
-ms.openlocfilehash: 027cea45159131ebe4718dfb2209d8be15f8e355
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: Les administrateurs peuvent découvrir comment afficher, créer, modifier et supprimer des stratégies anti-courrier indésirable dans Exchange Online Protection (EOP) autonome.
+ms.openlocfilehash: 66266ac79f6f442c8551b9ec15d553d6fb074cdc
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637711"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44209558"
 ---
-# <a name="configure-anti-spam-policies"></a>Configuration de stratégies de blocage du courrier indésirable
+# <a name="configure-anti-spam-policies-in-eop"></a>Configuration de stratégies de blocage du courrier indésirable dans Exchange Online Protection
 
-Si vous êtes un client Microsoft 365 avec des boîtes aux lettres dans Exchange Online ou un client Exchange Online Protection autonome (EOP) dépourvu de boîtes aux lettres Exchange Online, les courriers électroniques entrants sont automatiquement protégés contre le courrier indésirable par EOP. EOP utilise les stratégies anti-courrier indésirable (également appelées stratégies de filtrage de courrier indésirable ou stratégies de filtrage de contenu) dans le cadre de la défense globale de votre organisation contre le courrier indésirable. Pour plus d’informations, voir [Protection contre le courrier indésirable](anti-spam-protection.md).
+Dans les organisations Microsoft 365 ayant des boîtes aux lettres dans Exchange Online ou dans les organisations ayant Exchange Online Protection autonome (EOP) dépourvu de boîtes aux lettres Exchange Online, les courriers électroniques entrants sont automatiquement protégés contre le courrier indésirable par EOP. EOP utilise les stratégies anti-courrier indésirable (également appelées stratégies de filtrage de courrier indésirable ou stratégies de filtrage de contenu) dans le cadre de la défense globale de votre organisation contre le courrier indésirable. Pour plus d’informations, voir [Protection contre le courrier indésirable](anti-spam-protection.md).
 
 Les administrateurs peuvent afficher, modifier et configurer (mais pas supprimer) la stratégie anti-courrier indésirable par défaut. Pour une précision accrue, vous pouvez également créer des stratégies de filtrage de courrier indésirable qui s’appliquent à des utilisateurs, à des groupes ou à des domaines spécifiques de votre organisation. Les stratégies personnalisées priment toujours sur la stratégie par défaut. Vous pouvez cependant modifier la priorité (l'ordre d'exécution) de vos stratégies personnalisées.
 
-Vous pouvez configurer des stratégies anti-courrier indésirable dans le Centre de sécurité et conformité ou dans PowerShell (Exchange Online PowerShell pour clients Microsoft 365 ; Exchange Online Protection PowerShell pour les clients EOP autonomes).
+Vous pouvez configurer des stratégies anti-courrier indésirable dans le Centre de sécurité et conformité ou dans PowerShell (Exchange Online PowerShell pour les organisations Microsoft 365 sans boîtes aux lettres dans Exchange Online ; Exchange Online Protection PowerShell autonome pour les organisations sans boîtes aux lettres dans Exchange Online).
 
 ## <a name="anti-spam-policies-in-the-security--compliance-center-vs-exchange-online-powershell-or-exchange-online-protection-powershell"></a>Stratégies anti-courrier indésirable dans le Centre de sécurité et conformité vs Exchange Online PowerShell ou Exchange Online Protection PowerShell
 
@@ -120,9 +120,9 @@ En créant une stratégie contre le courrier indésirable dans le Centre de séc
     |**Aucune action**|||||![Coche](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
     |
 
-    > <sup>1</sup>Dans Exchange Online, le message est déplacé vers le dossier Courrier indésirable si la règle de courrier indésirable est activée sur la boîte aux lettres (elle est activée par défaut). Pour plus d’informations, voir [Configurer les paramètres du courrier indésirable sur les boîtes aux lettres Exchange Online dans Office 365](configure-junk-email-settings-on-exo-mailboxes.md).<br/>Dans les environnements de EOP autonomes où EOP protège les boîtes aux lettres Exchange locales, vous devez configurer des règles de flux de courrier (également appelées règles de transport) dans Exchange local pour traduire le verdict de filtrage de courrier indésirable EOP de sorte que la règle de courrier indésirable puisse déplacer le message vers le dossier Courrier indésirable. Pour les détails, voir [Configurer une protection Exchange Online (EOP) autonome pour envoyer des courriers indésirables dans le dossier Courrier indésirable dans les environnements hybrides](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md).<br/><br/><sup>2</sup> Vous pouvez utiliser cette valeur comme condition dans les règles de flux de courrier (ou règles de transport) pour filtrer ou acheminer le message.
+    > <sup>1</sup>Dans Exchange Online, le message est déplacé vers le dossier Courrier indésirable si la règle de courrier indésirable est activée sur la boîte aux lettres (elle est activée par défaut). Pour plus d’informations, voir [Configurer les paramètres du courrier indésirable sur les boîtes aux lettres Exchange Online](configure-junk-email-settings-on-exo-mailboxes.md).<br/>Dans les environnements de EOP autonomes où EOP protège les boîtes aux lettres Exchange locales, vous devez configurer des règles de flux de courrier (également appelées règles de transport) dans Exchange local pour traduire le verdict de filtrage de courrier indésirable EOP de sorte que la règle de courrier indésirable puisse déplacer le message vers le dossier Courrier indésirable. Pour les détails, voir [Configurer une protection Exchange Online (EOP) autonome pour envoyer des courriers indésirables dans le dossier Courrier indésirable dans les environnements hybrides](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md).<br/><br/><sup>2</sup> Vous pouvez utiliser cette valeur comme condition dans les règles de flux de courrier (ou règles de transport) pour filtrer ou acheminer le message.
 
-   - **Sélectionner le seuil**: indique le niveau de réclamation en bloc (BCL) d’un message déclenchant l’action spécifiée pour le verdict de filtrage du courrier indésirable **Courrier en bloc** (supérieur à la valeur spécifiée, non supérieur ou égal à). Une valeur plus élevée indique que le message est moins souhaité (ce qui peut ressembler au courrier indésirable). La valeur par défaut est 7. Pour plus d’informations, voir [Niveau de réclamation en bloc (BCL) dans Office 365](bulk-complaint-level-values.md) et [Quelle est la différence entre le courrier indésirable et le courrier en bloc ?](what-s-the-difference-between-junk-email-and-bulk-email.md).
+   - **Sélectionner le seuil**: indique le niveau de réclamation en bloc (BCL) d’un message déclenchant l’action spécifiée pour le verdict de filtrage du courrier indésirable **Courrier en bloc** (supérieur à la valeur spécifiée, non supérieur ou égal à). Une valeur plus élevée indique que le message est moins souhaité (ce qui peut ressembler au courrier indésirable). La valeur par défaut est 7. Pour plus d’informations, voir [Niveau de réclamation en bloc (BCL) dans Exchange Online PowerShell](bulk-complaint-level-values.md) et [Quelle est la différence entre le courrier indésirable et le courrier en bloc ?](what-s-the-difference-between-junk-email-and-bulk-email.md).
 
      Par défaut, le paramètre PowerShell uniquement _MarkAsSpamBulkMail_ est `On` dans les stratégies anti-courrier indésirable. Ce paramètre affecte radicalement les résultats d’un verdict de filtrage de **Courrier en bloc** :
 
@@ -132,9 +132,9 @@ En créant une stratégie contre le courrier indésirable dans le Centre de séc
 
    - **Quarantaine** : indique la durée de la mise en quarantaine du message si vous avez sélectionné **Message de quarantaine** comme action pour le verdict de filtrage du courrier indésirable. Une fois la période écoulée, le message est supprimé. La valeur par défaut est de 30 jours. Une valeur valide est comprise entre 1 et 30 jours. Pour plus d'informations à propos de la quarantaine, consultez les rubriques suivantes :
 
-     - [Quarantaine dans Office 365](quarantine-email-messages.md)
-     - [Gérer les messages et fichiers mis en quarantaine en tant qu’administrateur dans Office 365](manage-quarantined-messages-and-files.md)
-     - [Rechercher et publier des messages mis en quarantaine en tant qu’utilisateur dans Office 365](find-and-release-quarantined-messages-as-a-user.md)
+     - [Messages mis en quarantaine dans Exchange Online PowerShell](quarantine-email-messages.md)
+     - [Gérer les messages et fichiers mis en quarantaine en tant qu’administrateur dans Exchange Online PowerShell](manage-quarantined-messages-and-files.md)
+     - [Rechercher et publier des messages mis en quarantaine en tant qu’utilisateur dans Exchange Online PowerShell](find-and-release-quarantined-messages-as-a-user.md)
 
    - **Ajouter ce texte d’en-tête X**: cette zone est obligatoire et disponible uniquement si vous avez sélectionné **Ajouter une en-tête X** comme verdict de filtrage du courrier indésirable. La valeur que vous spécifiez est le *nom*du champ d’en-tête ajouté à l’en-tête du message. La *valeur* du champ d’en-tête est toujours `This message appears to be spam`.
 
@@ -148,7 +148,7 @@ En créant une stratégie contre le courrier indésirable dans le Centre de séc
 
    - **Rediriger vers cette adresse de courrier**: cette zone est obligatoire et disponible uniquement si vous avez sélectionné le message de redirection **Rediriger vers l’adresse de courrier** comme action pour le verdict de filtrage du courrier indésirable. Entrez l’adresse de courrier à laquelle vous voulez envoyer le message. Vous pouvez saisir plusieurs valeurs séparées par des points-virgules (;).
 
-   - **Conseils de sécurité**: par défaut, les Conseils de sécurité sont activés, mais vous pouvez les désactiver en désactivant la case à cocher **Activé**. Pour plus d’informations sur les conseils de sécurité, voir [Conseils de sécurité dans les messages électroniques dans Office 365](safety-tips-in-office-365.md).
+   - **Conseils de sécurité**: par défaut, les Conseils de sécurité sont activés, mais vous pouvez les désactiver en désactivant la case à cocher **Activé**. Pour plus d’informations sur les conseils de sécurité, voir [Conseils de sécurité dans les messages électroniques](safety-tips-in-office-365.md).
 
    Paramètres**Purge automatique heure zéro (ZAP)** : ZAP détecte et effectue des actions sur les messages qui ont déjà été remis aux boîtes aux lettres Exchange Online. Pour plus d’informations sur la fonction ZAP, voir [Suppression automatique heure zéro - protection contre le courrier indésirable et les programmes malveillants](zero-hour-auto-purge.md).
 
@@ -159,7 +159,7 @@ En créant une stratégie contre le courrier indésirable dans le Centre de séc
 5. (Facultatif) Développez la section **Liste Autoriser** pour configurer les expéditeurs de messages par adresse de courrier ou domaine de courrier qui sont autorisés à ignorer le filtrage du courrier indésirable :
 
    > [!CAUTION]
-   > <ul><li>Réfléchissez soigneusement avant d’ajouter des domaines ici. Pour plus d’informations, voir [Créer des listes d’expéditeurs approuvés dans Office 365](create-safe-sender-lists-in-office-365.md)</li><li>Ne jamais ajouter des domaines acceptés (domaines vous appartenant) ou des domaines courants (par exemple, microsoft.com ou office.com) à la liste des domaines autorisés. Cela permettrait aux attaquants d’envoyer des messages électroniques qui contournent le filtrage du courrier indésirable au sein de votre organisation.</li></ul>
+   > • Réfléchissez sérieusement avant d’ajouter des domaines ici. Si vous souhaitez en savoir plus, consultez la page [Créer des listes d’expéditeurs approuvés dans Exchange Online PowerShell](create-safe-sender-lists-in-office-365.md) <br/><br/> • Ne jamais ajouter des domaines acceptés (domaines vous appartenant) ou des domaines courants (par exemple, microsoft.com ou office.com) à la liste des domaines autorisés. Cela permettrait aux attaquants d’envoyer des messages électroniques qui contournent le filtrage du courrier indésirable au sein de votre organisation.
 
    - **Autoriser l’expéditeur** : cliquez sur **Modifier**. Dans le menu**Liste d’expéditeurs autorisés** qui s’affiche :
 
@@ -188,7 +188,7 @@ En créant une stratégie contre le courrier indésirable dans le Centre de séc
 6. (Facultatif) Développez la section **Liste Bloquer** pour configurer les expéditeurs de messages par adresse de courrier ou domaine de courrier qui seront toujours marqués comme courrier indésirable à forte confiance :
 
    > [!NOTE]
-   > Le blocage manuel de domaines n’est pas dangereux, mais il peut augmenter votre charge de travail administratif. Pour plus d’informations, voir [Créer des listes d’expéditeurs bloqués dans Office 365](create-block-sender-lists-in-office-365.md).
+   > Le blocage manuel de domaines n’est pas dangereux, mais il peut augmenter votre charge de travail administratif. Pour plus d’informations, voir [Créer des listes d’expéditeurs bloqués dans Exchange Online PowerShell](create-block-sender-lists-in-office-365.md).
 
    - **Bloquer l’expéditeur** : cliquez sur **Modifier**. Dans le menu **Liste de d’expéditeurs bloqués** qui s’affiche, procédez comme suit :
 
@@ -238,7 +238,7 @@ En créant une stratégie contre le courrier indésirable dans le Centre de séc
 
 8. La section facultative **Propriétés de courrier indésirable** contient les paramètres de Filtre de courrier indésirable avancés (ASF) qui sont désactivés par défaut. Les paramètres ASF sont en cours de dépréciation et leurs fonctionnalités sont incorporées dans d’autres parties de la pile de filtrage. Nous vous recommandons de laisser tous ces paramètres ASF désactivés dans vos stratégies anti-courrier indésirable.
 
-   Pour plus d’informations sur ces paramètres, voir [Paramètres de filtre anti-courrier indésirable avancés dans Office 365](advanced-spam-filtering-asf-options.md).
+   Pour plus d’informations sur ces paramètres, voir [Paramètres de filtre anti-courrier indésirable avancés dans Exchange Online PowerShell](advanced-spam-filtering-asf-options.md).
 
 9. (Obligatoire) Développez la section **Appliqué à** pour identifier les destinataires internes auxquels la stratégie s’applique.
 
@@ -246,7 +246,7 @@ En créant une stratégie contre le courrier indésirable dans le Centre de séc
 
     Il est plus facile de cliquer sur**Ajouter une condition** trois fois pour afficher toutes les conditions disponibles. Vous pouvez cliquer sur le ![bouton Supprimer](../../media/scc-remove-icon.png) pour supprimer les conditions que vous ne voulez pas configurer.
 
-    - **Le domaine du destinataire est**: spécifie les destinataires dans un ou plusieurs domaines configurés et acceptés dans Office 365. Cliquez dans la zone **Ajouter un indicateur** pour afficher et sélectionner un domaine. Cliquez de nouveau sur la zone **Ajouter un indicateur** pour sélectionner d’autres domaines si plusieurs domaines sont disponibles.
+    - **Le domaine du destinataire est** : spécifie les destinataires dans un ou plusieurs domaines configurés et acceptés dans votre organisation. Cliquez dans la zone **Ajouter un indicateur** pour afficher et sélectionner un domaine. Cliquez de nouveau sur la zone **Ajouter un indicateur** pour sélectionner d’autres domaines si plusieurs domaines sont disponibles.
 
     - **Le destinataire est** : spécifie une ou plusieurs boîtes aux lettres, utilisateurs ou contacts de messagerie dans votre organisation. Cliquez sur **Ajouter un indicateur** et commencez à taper pour filtrer la liste. Cliquez de nouveau sur la zone**Ajouter un indicateur** pour sélectionner d’autres destinataires.
 
@@ -324,7 +324,7 @@ Pour modifier la priorité d’une stratégie, déplacez-la vers le haut ou vers
 
 ### <a name="configure-end-user-spam-notifications"></a>Configurer des notifications de courrier indésirable pour l’utilisateur final
 
-Lorsqu’un verdict de filtre anti-courrier indésirable met un message en quarantaine, vous pouvez configurer les notifications de courrier indésirable de l’utilisateur final pour informer les destinataires de qu’il est advenu des messages qui leur ont été envoyés. Pour plus d’informations sur ces notifications, voir [Notifications de courrier indésirable à l’utilisateur final dans Office 365](use-spam-notifications-to-release-and-report-quarantined-messages.md).
+Lorsqu’un verdict de filtre anti-courrier indésirable met un message en quarantaine, vous pouvez configurer les notifications de courrier indésirable de l’utilisateur final pour informer les destinataires de qu’il est advenu des messages qui leur ont été envoyés. Pour plus d’informations sur ces notifications, voir [Notifications de courrier indésirable à l’utilisateur final dans Exchange Online PowerShell](use-spam-notifications-to-release-and-report-quarantined-messages.md).
 
 1. Dans le Centre de sécurité et conformité, accédez à **Gestion des menaces** \> **Stratégie** \> **Anti-courrier indésirable**.
 

@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Utilisez les étiquettes de confidentialité de l'infrastructure Microsoft Information Protection pour classifier et protéger les données de votre organisation, tout en veillant à ce que la productivité des utilisateurs et leur aptitude à collaborer ne soient pas compromises. Ces étiquettes peuvent appliquer des paramètres de protection incluant des marquages visuels de chiffrement, tels que des pieds de page et des filigranes.
-ms.openlocfilehash: b09a107c6b03743eeaddf86e812cc747482d2eb4
-ms.sourcegitcommit: 44e685a0b193e89de5befb1e1a3740eb31931799
+ms.openlocfilehash: 418a52a8a9798fa0e08a6a2d4951fe91e0685c1a
+ms.sourcegitcommit: 8e655c6cbb91bfb97efda9a99c39fac33eaa974a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44022152"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44213282"
 ---
 # <a name="learn-about-sensitivity-labels"></a>En savoir plus sur les étiquettes de niveau de confidentialité
 
@@ -89,7 +89,7 @@ Une fois qu’une étiquette de confidentialité est appliquée à un e-mail ou 
     
     ![Filigrane et en-tête appliqués au document](../media/Sensitivity-label-watermark-header.png)
     
-    Avez-vous besoin de vérifier la date de l’application des marques de contenu ? Consultez [Délai de marquage et de chiffrement de contenus par Microsoft 365](sensitivity-labels-office-apps.md#when-office-365-applies-content-marking-and-encryption).
+    Avez-vous besoin de vérifier la date de l’application des marques de contenu ? Veuillez consulter la section [Délai de marquage et de chiffrage de contenus par les applications Office](sensitivity-labels-office-apps.md#when-office-apps-apply-content-marking-and-encryption).
     
     Longueurs de chaînes : les filigranes sont limités à 255 caractères. Les en-têtes et les pieds de page sont limités à 1 024 caractères, sauf dans Excel. Excel présente une limite totale de 255 caractères pour les en-têtes et les pieds de page, mais cette limite inclut des caractères qui ne sont pas visibles, tels que des codes de mise en forme. Si cette limite est atteinte, la chaîne entrée n’apparaît pas dans Excel.
 
