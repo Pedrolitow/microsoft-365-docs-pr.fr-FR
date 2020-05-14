@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 3f7dde1a-a8ea-4366-86da-8ee6777f357c
 description: Utilisez l’outil recherche de contenu dans le centre de conformité et de sécurité pour rechercher et exporter des données de conversation MicrosoftTeams (appelées conversations 1xN) pour les utilisateurs locaux dans un déploiement hybride Exchange.
-ms.openlocfilehash: 7b05460bb41ff97c8571a96b38a8eebd50a206fd
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 488a08067a39ff4bab61696d5faf8b7c849b4ab8
+ms.sourcegitcommit: 1c90bcc5c56f24895f01c3e0423c3f6b73715c13
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034571"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44214598"
 ---
 # <a name="searching-cloud-based-mailboxes-for-on-premises-users"></a>Recherche de boîtes aux lettres sur le cloud des utilisateurs locaux
 
@@ -59,7 +59,7 @@ Fournissez les informations suivantes lorsque vous envoyez la demande au Support
   
 - Nom de domaine par défaut de votre organisation.
 
-- Le nom du locataire et l’ID de client de votre organisation. Celles-ci sont disponibles dans le portail Azure Active Directory (sous **Gérer** \> **Propriétés**). Consultez [Rechercher votre ID de client Microsoft 365](https://support.office.com/article/6891b561-a52d-4ade-9f39-b492285e2c9b).
+- Le nom du locataire et l’ID de client de votre organisation. Celles-ci sont disponibles dans le portail Azure Active Directory (sous **Gérer** \> **Propriétés**). Consultez [Rechercher votre ID de client Microsoft 365](https://docs.microsoft.com/onedrive/find-your-office-365-tenant-id).
 
 - Le titre ou la description de l’objet de la demande de support : « Activer la recherche de contenu d’application pour les utilisateurs locaux ». Cette opération permet d’acheminer la demande vers l’équipe d’ingénierie d’eDiscovery qui implémente la demande.
 

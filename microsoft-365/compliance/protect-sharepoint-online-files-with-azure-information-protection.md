@@ -20,12 +20,12 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: 5b9c8e41-25d2-436d-89bb-9aecb9ec2b80
 description: 'Résumé : Découvrez comment appliquer la protection Azure Information Protection pour protéger les fichiers d’un site d’équipe SharePoint Online hautement confidentiel.'
-ms.openlocfilehash: 1c704689518da14bcabb56e81830b8456ebd2951
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: f905f673efe050e07ad26728628bce05073a26b8
+ms.sourcegitcommit: 1c90bcc5c56f24895f01c3e0423c3f6b73715c13
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632189"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44214638"
 ---
 # <a name="protect-sharepoint-online-files-with-azure-information-protection"></a>Protéger les fichiers SharePoint Online avec Azure Information Protection
 
@@ -42,7 +42,7 @@ L’utilisation d’Azure Information Protection pour les fichiers dans SharePoi
 Voici quelques remarques importantes concernant cette solution :
 - Lorsque le chiffrement Azure Information Protection est appliqué aux fichiers stockés dans Office 365, le service ne peut pas traiter le contenu de ces fichiers. La co-création, eDiscovery, la recherche, Delve et d’autres fonctionnalités de collaboration ne fonctionnent pas. Les stratégies de protection contre la perte de données peuvent uniquement fonctionner avec les métadonnées (y compris les étiquettes Microsoft 365), mais pas le contenu de ces fichiers (par exemple, des numéros de cartes de crédit au sein des fichiers).
 
-- Cette solution implique qu’un utilisateur doit sélectionner une étiquette qui applique la protection à partir d’Azure Information Protection. Si vous avez besoin du chiffrement automatique et si vous souhaitez que SharePoint puisse indexer et inspecter les fichiers, pensez à utiliser les services RMS dans SharePoint Online. Lorsque vous configurez une bibliothèque SharePoint pour les services RMS, les fichiers sont chiffrés automatiquement lorsqu’ils sont téléchargés pour modification. Les services RMS SharePoint comportent des limites pouvant influencer votre décision. Pour plus d’informations, reportez-vous à l’article [Configurer la Gestion des droits relatifs à l’information (Information Rights Management, IRM) dans le Centre d’administration SharePoint](https://support.office.com/article/Set-up-Information-Rights-Management-IRM-in-SharePoint-admin-center-239CE6EB-4E81-42DB-BF86-A01362FED65C).
+- Cette solution implique qu’un utilisateur doit sélectionner une étiquette qui applique la protection à partir d’Azure Information Protection. Si vous avez besoin du chiffrement automatique et si vous souhaitez que SharePoint puisse indexer et inspecter les fichiers, pensez à utiliser les services RMS dans SharePoint Online. Lorsque vous configurez une bibliothèque SharePoint pour les services RMS, les fichiers sont chiffrés automatiquement lorsqu’ils sont téléchargés pour modification. Les services RMS SharePoint comportent des limites pouvant influencer votre décision. Pour plus d’informations, reportez-vous à l’article [Configurer la Gestion des droits relatifs à l’information (Information Rights Management, IRM) dans le Centre d’administration SharePoint](https://docs.microsoft.com/microsoft-365/compliance/set-up-irm-in-sp-admin-center).
 
 ## <a name="admin-setup"></a>Configuration de l’administrateur
 Tout d’abord, suivez les instructions contenues dans [Activer Azure RMS avec le Centre d’administration Microsoft 365](https://docs.microsoft.com/information-protection/deploy-use/activate-office365) pour votre abonnement Microsoft 365.

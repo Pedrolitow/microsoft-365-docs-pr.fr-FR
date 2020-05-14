@@ -17,17 +17,17 @@ ms.collection:
 - Strat_O365_IP
 ms.custom: TopSMBIssues
 localization_priority: Priority
-description: Découvrez comment les services Exchange Online et Exchange Online Protection (EOP) dans Microsoft 365 utilisent l’authentification de messagerie électronique (SPF, DKIM et DMARC) pour empêcher l’usurpation d’identité, le hameçonnage et le courrier indésirable.
-ms.openlocfilehash: f3a3ea902cb0c4fede4fcfd919f0969765bc4a96
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: Les administrateurs peuvent découvrir comment les services Exchange Online et Exchange Online Protection (EOP) utilisent l’authentification de messagerie électronique (SPF, DKIM et DMARC) pour empêcher l’usurpation d’identité, le hameçonnage et le courrier indésirable.
+ms.openlocfilehash: c79a75f1ae520a0c4f885c923b4a56cdb0f7fb87
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637555"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44209498"
 ---
-# <a name="email-authentication-in-microsoft-365"></a>Authentification de messagerie électronique dans Microsoft 365
+# <a name="email-authentication-in-eop"></a>Authentification de messagerie électronique dans EOP
 
-L’authentification de messagerie électronique (également appelée validation du courrier électronique) est un ensemble de normes qui tente de bloquer l’usurpation d’identité (messages électroniques provenant de faux expéditeurs). Dans les organisations Microsoft 365 disposant de boîtes aux lettres Exchange Online et les organisations autonomes Exchange Online Protection (EOP) sans boîtes aux lettres Exchange Online, EOP utilise les normes pour vérifier le courrier électronique entrant :
+L’authentification de messagerie électronique (également appelée validation du courrier électronique) est un ensemble de normes qui tente de bloquer l’usurpation d’identité (messages électroniques provenant de faux expéditeurs). Dans les organisations Microsoft 365 disposant de boîtes aux lettres dans Exchange Online et les organisations autonomes Exchange Online Protection (EOP) sans boîtes aux lettres Exchange Online, EOP utilise ces normes pour vérifier l’e-mail entrant :
 
 - [SPF](how-office-365-uses-spf-to-prevent-spoofing.md)
 

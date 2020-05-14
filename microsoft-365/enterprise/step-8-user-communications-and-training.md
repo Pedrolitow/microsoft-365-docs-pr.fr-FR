@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Découvrez comment préparer vos utilisateurs finaux à l’utilisation de Windows 10 et Microsoft 365 Apps pour entreprise au travers d’une formation et de communications.
-ms.openlocfilehash: 7497925b7efd66dd4b86dd4d64df81490bbc7d90
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: e6118e1029186c84bebdb0fee079364f22356c2e
+ms.sourcegitcommit: 98782ee4497d72232462c51a3071fae313282980
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636746"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44222660"
 ---
 # <a name="step-8-user-communications-and-training"></a>Étape 8 : formation et communications des utilisateurs
 
@@ -61,7 +61,7 @@ Il existe également des contrôles de sécurité et de conformité visibles aux
 
 Par exemple, l’authentification multifacteur utilise Azure AD et protège la connexion des utilisateurs aux ressources à l’aide d’une application mobile ou d’un code confidentiel pour accéder aux services en toute sécurité. Azure Information Protection, quant à elle, permet aux utilisateurs de classer et d’étiqueter facilement les documents.
 
-[Configurer l'authentification multifacteur pour les utilisateurs](https://support.office.com/article/set-up-multi-factor-authentication-for-office-365-users-8f0454b2-f51a-4d9c-bcde-2c48e41621c6)
+[Configurer l'authentification multifacteur pour les utilisateurs](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/set-up-multi-factor-authentication)
 
 Ce sont quelques exemples des nouvelles fonctionnalités que pourront utiliser vos utilisateurs. Certaines d’entre elles pourront même les surprendre, de manière positive ou non. Il est possible que ces surprises entraînent un plus grand nombre d’appels et de tickets reçus par votre support technique, en particulier si elles modifient le flux de travail normal des utilisateurs.
 

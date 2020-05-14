@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Une stratégie de rétention vous permet de décider de façon proactive de conserver du contenu, de le supprimer (ou les deux), de conserver du contenu, puis de le supprimer ; d’appliquer une stratégie unique à l’ensemble de l’organisation ou à quelques emplacements ou utilisateurs ; et d’appliquer une stratégie à tout le contenu ou au contenu remplissant certaines conditions.
-ms.openlocfilehash: 36866f457369248f642a4189f2d9f46e58baa2a3
-ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
+ms.openlocfilehash: a4bf22f7064e74926935a228f84281af9171bedc
+ms.sourcegitcommit: 1c90bcc5c56f24895f01c3e0423c3f6b73715c13
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "44165945"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44214608"
 ---
 # <a name="overview-of-retention-policies"></a>Vue d’ensemble des stratégies de rétention
 
@@ -422,7 +422,7 @@ Plusieurs autres fonctionnalités étaient auparavant utilisées pour conserver 
   
 ### <a name="exchange-online"></a>Exchange Online
 
-- [Gestion des cas eDiscovery dans le Centre de sécurité &amp; conformité](https://support.office.com/article/edea80d6-20a7-40fb-b8c4-5e8c8395f6da) (conservation eDiscovery) 
+- [Gestion des cas eDiscovery dans le Centre de sécurité &amp; conformité](https://docs.microsoft.com/microsoft-365/compliance/get-started-core-ediscovery) (conservation eDiscovery) 
     
 - [Conservation inaltérable et conservation pour litige](https://go.microsoft.com/fwlink/?linkid=846124) (conservation eDiscovery) 
 
@@ -432,15 +432,15 @@ Plusieurs autres fonctionnalités étaient auparavant utilisées pour conserver 
     
 ### <a name="sharepoint-online-and-onedrive-for-business"></a>Sharepoint Online et OneDrive Entreprise
 
-- [Gestion des cas eDiscovery dans le Centre de sécurité &amp; conformité](https://support.office.com/article/edea80d6-20a7-40fb-b8c4-5e8c8395f6da) (conservation eDiscovery) 
+- [Gestion des cas eDiscovery dans le Centre de sécurité &amp; conformité](https://docs.microsoft.com/microsoft-365/compliance/get-started-core-ediscovery) (conservation eDiscovery) 
     
-- [Ajout du contenu à un incident et placement des sources en conservation dans le centre eDiscovery](https://support.office.com/article/54d70de9-1ec2-4325-84f3-aeb588554479) (conservation eDiscovery) 
+- [Ajout du contenu à un incident et placement des sources en conservation dans le centre eDiscovery](https://docs.microsoft.com/SharePoint/governance/add-content-to-a-case-and-place-sources-on-hold-in-the-ediscovery-center) (conservation eDiscovery) 
     
-- [Vue d’ensemble des stratégies de suppression de documents](https://support.office.com/article/55e8d858-f278-482b-a198-2e62d6a2e6e5) (suppression uniquement) 
+- [Vue d’ensemble des stratégies de suppression de documents](https://docs.microsoft.com/microsoft-365/compliance/document-deletion-policies) (suppression uniquement) 
     
 - [Configuration en place de gestion des enregistrements](https://support.office.com/article/7707a878-780c-4be6-9cb0-9718ecde050a) (rétention) 
     
-- [Utilisation de stratégies pour la fermeture et la suppression de sites](https://support.office.com/article/a8280d82-27fd-48c5-9adf-8a5431208ba5) (suppression uniquement) 
+- [Utilisation de stratégies pour la fermeture et la suppression de sites](https://support.microsoft.com/fr-FR/office/use-policies-for-site-closure-and-deletion-a8280d82-27fd-48c5-9adf-8a5431208ba5) (suppression uniquement) 
     
 - [Stratégies de gestion des informations](intro-to-info-mgmt-policies.md) (suppression uniquement) 
     

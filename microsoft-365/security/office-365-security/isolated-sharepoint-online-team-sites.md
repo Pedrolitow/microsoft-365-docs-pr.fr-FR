@@ -18,18 +18,18 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 71250a04-fd2d-4c3c-a32b-b8a838b19a54
 description: Découvrez les sites d’équipe SharePoint Online isolés, y compris les utilisations, les exigences et les fonctionnalités compatibles.
-ms.openlocfilehash: f88be4b16d7f3a65ba624f7bf4c490b0173883c8
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 91d8394c40597dfc66c4df39f49223e472e7c663
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44036703"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44209042"
 ---
 # <a name="isolated-sharepoint-online-team-sites"></a>Sites d’équipe SharePoint Online isolés
 
  **Résumé :** Découvrez les utilisations pour les sites d'équipe SharePoint Online isolés.
   
-Les sites d'équipe SharePoint Online vous permettent de créer facilement et rapidement un espace dédié à la collaboration et au partage des notes, des documents, des articles, du calendrier et d'autres ressources dans Microsoft Office 365. Les sites d'équipe SharePoint Online sont créés à partir d'un groupe Microsoft 365. Ils comportent un modèle d'administration simplifié pour favoriser une collaboration ouverte entre les membres d'un groupe privé ou de l'organisation tout entière. Un site d'équipe SharePoint Online par défaut permet aux membres du groupe Microsoft 365 d'inviter d'autres utilisateurs et de contrôler les paramètres d'autorisations.
+Les sites d'équipe SharePoint Online vous permettent de créer facilement et rapidement un espace dédié à la collaboration et au partage des notes, des documents, des articles, d’un calendrier et d'autres ressources dans Microsoft Office 365. Les sites d'équipe SharePoint Online sont créés à partir d'un groupe Microsoft 365. Ils comportent un modèle d'administration simplifié pour favoriser une collaboration ouverte entre les membres d'un groupe privé ou de l'organisation tout entière. Un site d'équipe SharePoint Online par défaut permet aux membres du groupe Microsoft 365 d'inviter d'autres utilisateurs et de contrôler les paramètres d'autorisations.
   
 Toutefois, dans certains cas, vous souhaitez créer un site d'équipe SharePoint Online pour une collaboration où les autorisations de ce site sont plus étroitement contrôlées via l'appartenance au groupe et les niveaux d'autorisation SharePoint Online, qui sont gérés uniquement par les administrateurs SharePoint. C'est ce que nous appelons un site isolé, car il est réservé aux utilisateurs qui collaborent sur le site, consultent son contenu ou gèrent le site. Vous aurez besoin d'un site isolé pour :
   

@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 description: Découvrez comment rechercher et trouver des données personnelles soumises aux Règlements généraux sur la protection des données (RGPD) dans Office 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 50c8db59cfd5e9a7de3da0dc696227e85dab1cee
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: e0d29697a28221b5ff998f5ce923c143bf7a0804
+ms.sourcegitcommit: 1c90bcc5c56f24895f01c3e0423c3f6b73715c13
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208088"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44214578"
 ---
 # <a name="search-for-and-find-personal-data"></a>Recherche et localisation des données personnelles
 
@@ -80,7 +80,7 @@ Commencer la recherche en utilisant les types d’informations sensibles incluse
 
 Cette rubrique inclut une liste de certains types d’informations sensibles qui s’appliquent aux citoyens dans l’Union européenne. Vérifiez le centre de sécurité ou le centre de conformité pour les nouveaux ajouts qui peuvent vous aider avec la mise en conformité RGPD.
 
-Consultez également l’article relatif à la [liste des types d’informations sensibles et à ce qu’ils recherchent](https://support.office.com/article/What-the-sensitive-information-types-look-for-fd505979-76be-4d9f-b459-abef3fc9e86b).
+Consultez également l’article relatif à la [liste des types d’informations sensibles et à ce qu’ils recherchent](https://docs.microsoft.com/microsoft-365/compliance/content-search).
 
 Les types d’informations sensibles définissent la façon dont le processus automatisé reconnaît des types d’informations spécifiques tels que les numéros de compte bancaire, de sécurité sociale et de carte de crédit. Les types d’informations sensibles sont également appelés conditions. Un type d’informations sensibles est défini par un modèle qui peut être identifié par une fonction ou une expression régulière. En outre, des preuves corroborantes comme les mots-clés et les sommes de contrôle peuvent être utilisées pour identifier un type d’informations sensibles. La proximité et le niveau de confiance sont également utilisés dans le processus d’évaluation.
 
@@ -111,7 +111,7 @@ Pour l’instant, les types d’informations sensibles ne permettent pas de rech
 <p>SensitiveType:&quot;Numéro de passeport français&quot;</p>
 </blockquote>
 <p>Étendue de la recherche Scope dans SharePoint (inclut OneDrive Entreprise). Vérifiez que la syntaxe est exacte et qu’il n’y a pas d’espaces supplémentaires ni de fautes de frappe.</p>
-<p>Reportez-vous à la rubrique relative à la <a href="https://support.office.com/article/Form-a-query-to-find-sensitive-data-stored-on-sites-3019fbc5-7f15-4972-8d0e-dc182dc7f836">création d’une requête pour rechercher des données sensibles stockées sur des sites</a>.</p></td>
+<p>Reportez-vous à la rubrique relative à la <a href="https://docs.microsoft.com/microsoft-365/compliance/form-a-query-to-find-sensitive-data-stored-on-sites">création d’une requête pour rechercher des données sensibles stockées sur des sites</a>.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Analyse des résultats pour chaque recherche</p></td>
@@ -218,4 +218,4 @@ Exemples :
 
 Remarque : “SensitiveType” est sensible à la casse, mais le reste de la requête ne l’est pas.
 
-Vous pouvez également utiliser des propriétés et des opérateurs pour illustrer la façon dont vous pouvez affiner vos requêtes. Pour plus d’informations et des exemples, reportez-vous à la rubrique relative à la [création d’une requête pour rechercher des données sensibles stockées sur des sites](https://support.office.com/article/Form-a-query-to-find-sensitive-data-stored-on-sites-3019fbc5-7f15-4972-8d0e-dc182dc7f836).
+Vous pouvez également utiliser des propriétés et des opérateurs pour illustrer la façon dont vous pouvez affiner vos requêtes. Pour plus d’informations et des exemples, reportez-vous à la rubrique relative à la [création d’une requête pour rechercher des données sensibles stockées sur des sites](https://docs.microsoft.com/microsoft-365/compliance/form-a-query-to-find-sensitive-data-stored-on-sites).

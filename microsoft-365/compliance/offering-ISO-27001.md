@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 3cc92be00eca4f1e90917cadea26df8f10adf267
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: dfbb5ed43c5256109ccc0a137a3d144d084e573e
+ms.sourcegitcommit: 1c90bcc5c56f24895f01c3e0423c3f6b73715c13
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44066611"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44214240"
 ---
 # <a name="isoiec-270012013-information-security-management-standards"></a>Normes de gestion de la sécurité des informations ISO/IEC 27001:2013
 
@@ -125,7 +125,7 @@ La conformité à ces normes, confirmée par un auditeur agréé, démontre que 
 
 **Où puis-je obtenir les déclarations de champ d’application et les rapports d'audit ISO/IEC 27001 pour les services Microsoft ?**
 
-Le [portail d’approbation de services](https://support.office.com/article/Get-started-with-the-Service-Trust-Portal-for-Office-365-for-business-Azure-and-Dynamics-CRM-Online-subscriptions-f30e2353-0bd6-41ed-8347-eea1fb8d2662) fournit des rapports de conformité audités indépendamment. Vous pouvez utiliser le portail pour demander des rapports afin que vos auditeurs puissent comparer les services Cloud Microsoft à vos propres exigences légales et réglementaires.
+Le [portail d’approbation de services](https://docs.microsoft.com/microsoft-365/compliance/get-started-with-service-trust-portal) fournit des rapports de conformité audités indépendamment. Vous pouvez utiliser le portail pour demander des rapports afin que vos auditeurs puissent comparer les services Cloud Microsoft à vos propres exigences légales et réglementaires.
 
 **Microsoft exécute-t-elle des tests annuels pour les défaillances d’infrastructure ?**
 

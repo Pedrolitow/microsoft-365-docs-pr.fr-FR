@@ -20,12 +20,12 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: 5b9c8e41-25d2-436d-89bb-9aecb9ec2b80
 description: 'Résumé : Découvrez comment appliquer la protection Azure Information Protection pour protéger les fichiers d’un site d’équipe SharePoint Online hautement confidentiel.'
-ms.openlocfilehash: 7d98ed6813e1c52ef2646cdbe402ab0bb3a50e3c
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 8d802d8c2b5202e51089659264b2e2c14f14ad3d
+ms.sourcegitcommit: 1c90bcc5c56f24895f01c3e0423c3f6b73715c13
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632179"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44214628"
 ---
 # <a name="protect-sharepoint-online-files-with-a-sensitivity-label"></a>Protéger les fichiers SharePoint Online à l’aide d’une étiquette de confidentialité
 
@@ -38,7 +38,7 @@ L’utilisation d’étiquettes de confidentialité pour les fichiers dans Share
 Voici quelques remarques importantes concernant cette solution :
 - Si votre organisation n’a pas [activé les étiquettes de confidentialité pour les fichiers Office dans SharePoint et OneDrive (préversion publique)](/microsoft-365/compliance/sensitivity-labels-sharepoint-onedrive-files) : notez que lorsque le chiffrement d'étiquettes de confidentialité est appliqué aux fichiers stockés dans Office 365, le service ne peut pas traiter leur contenu. La co-édition, eDiscovery, la recherche, Delve et d’autres fonctionnalités de collaboration ne fonctionnent pas. Les stratégies de protection contre la perte de données ne peuvent fonctionner qu’avec les métadonnées (notamment les étiquettes), pas avec le contenu des fichiers (comme des numéros de carte de crédit dans des fichiers).
 
-- Cette solution exige que l’utilisateur sélectionne une étiquette qui applique la protection. Si vous avez besoin d'un chiffrement automatique et de la possibilité pour SharePoint d'indexer et d'inspecter les fichiers, pensez à utiliser la gestion des droits relatifs à l'information (IRM) dans SharePoint Online. Lorsque vous configurez une bibliothèque SharePoint pour la gestion des droits relatifs à l’information (IRM), les fichiers sont automatiquement chiffrés lorsqu’ils sont téléchargés à des fins de modification.  La gestion des droits relatifs à l’information (IRM) de SharePoint inclut des restrictions pouvant influencer votre décision. Pour plus d’informations, voir [Configurer la Gestion des droits relatifs à l’information (Information Rights Management, IRM) dans le Centre d’administration SharePoint](https://support.office.com/article/Set-up-Information-Rights-Management-IRM-in-SharePoint-admin-center-239CE6EB-4E81-42DB-BF86-A01362FED65C).
+- Cette solution exige que l’utilisateur sélectionne une étiquette qui applique la protection. Si vous avez besoin d'un chiffrement automatique et de la possibilité pour SharePoint d'indexer et d'inspecter les fichiers, pensez à utiliser la gestion des droits relatifs à l'information (IRM) dans SharePoint Online. Lorsque vous configurez une bibliothèque SharePoint pour la gestion des droits relatifs à l’information (IRM), les fichiers sont automatiquement chiffrés lorsqu’ils sont téléchargés à des fins de modification.  La gestion des droits relatifs à l’information (IRM) de SharePoint inclut des restrictions pouvant influencer votre décision. Pour plus d’informations, voir [Configurer la Gestion des droits relatifs à l’information (Information Rights Management, IRM) dans le Centre d’administration SharePoint](https://docs.microsoft.com/microsoft-365/compliance/set-up-irm-in-sp-admin-center).
 
 ## <a name="admin-setup"></a>Configuration de l’administrateur
 
