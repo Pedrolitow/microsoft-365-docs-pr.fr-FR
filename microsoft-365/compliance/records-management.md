@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: La gestion des enregistrements dans Microsoft 365 vous permet d’appliquer des planifications de rétention spécifiques de votre organisation dans un plan de gestion de fichiers afin de gérer la rétention, la déclaration d’enregistrements et la destruction de ceux-ci à l’appui du cycle de vie complet du contenu.
-ms.openlocfilehash: e4454ba5940d9a67d9f160d90d0a9db14563bcf7
-ms.sourcegitcommit: f5cecd77e63ae8b47743d4f6dc3135f5decaf28b
+ms.openlocfilehash: 261ae3286792dde540d9bf648c15e529863091ed
+ms.sourcegitcommit: 252b1d1d8ae735b99bf46e27c08353afc330aef3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/30/2020
-ms.locfileid: "43949247"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "44231867"
 ---
 # <a name="records-management-in-microsoft-365"></a>Gestion des enregistrements dans Microsoft 365
 
@@ -34,7 +34,7 @@ La solution de gestion des enregistrements prend en charge les opérations suiva
 
 - **Migrer et gérer votre plan de rétention avec le plan de gestion de fichiers**, et utiliser le [gestionnaire du plan de gestion de fichiers](file-plan-manager.md) pour incorporer votre plan de rétention existant ou en créer un avec des descripteurs de fichiers et des hiérarchies en expansion.
 
-- **Établir des stratégies de rétention et de suppression**. Définir des périodes de [rétention](retention-policies.md#retaining-content-for-a-specific-period-of-time) et de [destruction](retention-policies.md#deleting-content-thats-older-than-a-specific-age) en fonction de divers facteurs qui incluent la date de création ou de dernière modification.
+- **Établir des stratégies de rétention et de suppression à l’intérieur de l’étiquette d’enregistrement**. Définir des périodes de [rétention](create-retention-policies.md#retaining-content-for-a-specific-period-of-time) et de [destruction](create-retention-policies.md#deleting-content-thats-older-than-a-specific-age) en fonction de divers facteurs, dont la date de création ou de dernière modification.
 
 - **Déclencher une rétention basée sur les événements** avec un [destruction basée sur les événements](event-driven-retention.md).
 
