@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: fb00dd4e-2d5f-4e8d-8ff4-94b2cf002bdd
 description: 'Découvrez comment permettre à vos utilisateurs de partager leurs calendriers avec des utilisateurs externes pour des réunions et des rendez-vous. '
-ms.openlocfilehash: bd297fc2d684357d0500495e5a8263e5279efa39
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 6e5a4a3a7e29dcbb6b19aeb1dd3b914ff98eb06e
+ms.sourcegitcommit: 708857a82eab3d37da1dec027399b09bd306a5dd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43628039"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "44249871"
 ---
 # <a name="share-calendars-with-external-users"></a>Partager des calendriers avec des utilisateurs externes
 
@@ -39,10 +39,9 @@ Le partage de calendrier est un paramètre global, ce qui signifie que vous pouv
   
 ## <a name="enable-calendar-sharing-using-the-microsoft-365-admin-center"></a>Activer le partage de calendrier à l’aide du centre d’administration Microsoft 365
 
-1. Dans le centre d’administration, accédez à la page **paramètres** \> de <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">& des compléments</a> . 
+1. Dans le centre d’administration, accédez à paramètres des **paramètres** \> **Settings**. 
     
-  
-2. Sur la **page &amp; compléments de services** , sélectionnez **calendrier**.
+2. Dans l’onglet **services** , sélectionnez **calendrier**.
   
 3. Sur la page **calendrier** qui s’ouvre, indiquez si vous souhaitez autoriser vos utilisateurs à partager leurs calendriers avec des personnes extérieures à votre organisation qui disposent de Microsoft 365 ou Exchange.
     
@@ -55,4 +54,3 @@ Le partage de calendrier est un paramètre global, ce qui signifie que vous pouv
 
 Une fois le partage activé pour le client, les propriétaires de calendrier peuvent envoyer des invitations à des utilisateurs spécifiques. Pour plus d'informations, voir [Partage de votre calendrier dans Outlook Web App](https://support.office.com/article/7ecef8ae-139c-40d9-bae2-a23977ee58d5.aspx). 
   
-
