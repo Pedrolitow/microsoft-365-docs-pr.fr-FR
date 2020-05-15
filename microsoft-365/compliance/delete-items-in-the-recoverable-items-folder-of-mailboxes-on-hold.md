@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: a85e1c87-a48e-4715-bfa9-d5275cde67b0
 description: 'Pour les administrateurs : supprimez les éléments du dossier éléments récupérables d’un utilisateur pour une boîte aux lettres Exchange Online, même si cette boîte aux lettres est placée en conservation légale. Il s’agit d’un moyen efficace de supprimer des données involontairement propagées dans Microsoft 365.'
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 0e42249fb2ba7143c4c833193b31c72f0fb73137
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 223c589d191eef14662b7e19aa5ed113db9ff3b2
+ms.sourcegitcommit: 252b1d1d8ae735b99bf46e27c08353afc330aef3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035888"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "44232056"
 ---
 # <a name="delete-items-in-the-recoverable-items-folder-of-cloud-based-mailboxes-on-hold---admin-help"></a>Supprimer des éléments dans le dossier éléments récupérables des boîtes aux lettres en nuage en attente-aide de l’administrateur
 
@@ -52,7 +52,7 @@ Le dossier éléments récupérables d’une boîte aux lettres Exchange Online 
 
 - La procédure décrite dans cet article n’est pas prise en charge pour les boîtes aux lettres inactives. Cela est dû au fait que vous ne pouvez pas réappliquer une stratégie de conservation (ou de rétention) à une boîte aux lettres inactive après l’avoir supprimée. Lorsque vous supprimez une conservation d’une boîte aux lettres inactive, celle-ci est remplacée par une boîte aux lettres normale et supprimée définitivement de votre organisation après avoir été traitée par l’Assistant dossier géré.
 
-- Vous ne pouvez pas effectuer cette procédure pour une boîte aux lettres affectée à une stratégie de rétention qui a été verrouillée avec un verrou de conservation. Cela est dû au fait qu’un verrouillage de conservation vous empêche de supprimer ou d’exclure la boîte aux lettres de la stratégie de rétention et de désactiver l’Assistant dossier géré sur la boîte aux lettres. Pour plus d’informations sur le verrouillage des stratégies de rétention, voir [verrouillage d’une stratégie de rétention](retention-policies.md#locking-a-retention-policy).
+- Vous ne pouvez pas effectuer cette procédure pour une boîte aux lettres affectée à une stratégie de rétention qui a été verrouillée avec un verrou de conservation. Cela est dû au fait qu’un verrouillage de conservation vous empêche de supprimer ou d’exclure la boîte aux lettres de la stratégie de rétention et de désactiver l’Assistant dossier géré sur la boîte aux lettres. Pour plus d’informations sur le verrouillage des stratégies de rétention, voir [utiliser le verrouillage de conservation pour respecter les exigences réglementaires](retention-policies.md#use-preservation-lock-to-comply-with-regulatory-requirements).
 
 - Si une boîte aux lettres n’est pas placée en conservation (ou si la récupération d’élément unique n’est pas activée), vous pouvez supprimer les éléments du dossier éléments récupérables. Pour plus d’informations sur la procédure à suivre, consultez la rubrique [Rechercher et supprimer des messages électroniques dans votre organisation](https://docs.microsoft.com/microsoft-365/compliance/search-for-and-delete-messages-in-your-organization).
   
@@ -92,7 +92,7 @@ En outre, vous devez obtenir les paramètres d’accès au client de boîte aux 
 
 
    > [!TIP]
-    > S’il y a trop de valeurs dans la propriété *InPlaceHolds* et qu’elles ne sont pas toutes affichées, vous pouvez `Get-Mailbox <username> | Select-Object -ExpandProperty InPlaceHolds` exécuter la commande pour afficher chaque valeur sur une ligne distincte. 
+    > S’il y a trop de valeurs dans la propriété *InPlaceHolds* et qu’elles ne sont pas toutes affichées, vous pouvez exécuter la `Get-Mailbox <username> | Select-Object -ExpandProperty InPlaceHolds` commande pour afficher chaque valeur sur une ligne distincte. 
   
 5. Exécutez la commande suivante pour obtenir des informations sur les stratégies de rétention à l’échelle de l’organisation. 
 
@@ -103,7 +103,7 @@ En outre, vous devez obtenir les paramètres d’accès au client de boîte aux 
    Si votre organisation a des stratégies de rétention à l’échelle de l’organisation, vous devez exclure la boîte aux lettres de ces stratégies à l’étape 3.
 
    > [!TIP]
-    > S’il y a trop de valeurs dans la propriété *InPlaceHolds* et qu’elles ne sont pas toutes affichées, vous pouvez `Get-OrganizationConfig | Select-Object -ExpandProperty InPlaceHolds` exécuter la commande pour afficher chaque valeur sur une ligne distincte. 
+    > S’il y a trop de valeurs dans la propriété *InPlaceHolds* et qu’elles ne sont pas toutes affichées, vous pouvez exécuter la `Get-OrganizationConfig | Select-Object -ExpandProperty InPlaceHolds` commande pour afficher chaque valeur sur une ligne distincte. 
   
 6. Exécutez la commande suivante pour obtenir la taille actuelle et le nombre total d’éléments dans les dossiers et sous-dossiers du dossier éléments récupérables dans la boîte aux lettres principale de l’utilisateur. 
 
@@ -194,13 +194,13 @@ Après avoir identifié le blocage sur place, vous pouvez utiliser le centre d�
   
  ### <a name="retention-policies-applied-to-specific-mailboxes"></a>Stratégies de rétention appliquées à des boîtes aux lettres spécifiques
   
-Exécutez la commande suivante dans [Security & Compliance Center PowerShell](https://go.microsoft.com/fwlink/?linkid=627084) pour identifier la stratégie de rétention appliquée à la boîte aux lettres. Utilisez le GUID (sans le `mbx` préfixe `skp` ou) pour la stratégie de rétention que vous avez identifiée à l’étape 1. 
+Exécutez la commande suivante dans [Security & Compliance Center PowerShell](https://go.microsoft.com/fwlink/?linkid=627084) pour identifier la stratégie de rétention appliquée à la boîte aux lettres. Utilisez le GUID (sans le `mbx` `skp` préfixe ou) pour la stratégie de rétention que vous avez identifiée à l’étape 1. 
 
 ```powershell
 Get-RetentionCompliancePolicy <retention policy GUID without prefix> | FL Name
 ```
 
-Après avoir identifié la stratégie de rétention, accédez à la page **rétention** de la **gouvernance** \> des informations dans le centre de sécurité & conformité, modifiez la stratégie de rétention que vous avez identifiée à l’étape précédente, puis supprimez la boîte aux lettres de la liste des destinataires inclus dans la stratégie de rétention. 
+Après avoir identifié la stratégie de rétention, **Information governance** accédez à la \> page **rétention** de la gouvernance des informations dans le centre de sécurité & conformité, modifiez la stratégie de rétention que vous avez identifiée à l’étape précédente, puis supprimez la boîte aux lettres de la liste des destinataires inclus dans la stratégie de rétention. 
   
  ### <a name="organization-wide-retention-policies"></a>Stratégies de rétention à l’échelle de l’Organisation
   
@@ -210,7 +210,7 @@ Les stratégies de rétention à l’échelle de l’organisation et d’Exchang
 Get-RetentionCompliancePolicy <retention policy GUID without prefix> | FL Name
 ```
 
-Après avoir identifié les stratégies de rétention à l’échelle de l’organisation, accédez à la page **rétention** de la **gouvernance** \> des informations dans le centre de sécurité & conformité, modifiez chaque stratégie de rétention à l’échelle de l’organisation que vous avez identifiée à l’étape précédente, puis ajoutez la boîte aux lettres à la liste des destinataires exclus. Cette opération supprimera la boîte aux lettres de l’utilisateur de la stratégie de rétention. 
+Après avoir identifié les stratégies de rétention à l’échelle de **Information governance** l’organisation, accédez à la \> page **rétention** de la gouvernance des informations dans le centre de sécurité & conformité, modifiez chaque stratégie de rétention à l’échelle de l’organisation que vous avez identifiée à l’étape précédente, puis ajoutez la boîte aux lettres à la liste des destinataires exclus. Cette opération supprimera la boîte aux lettres de l’utilisateur de la stratégie de rétention. 
 
 ### <a name="retention-labels"></a>Étiquettes de rétention
 
@@ -242,7 +242,7 @@ Get-ComplianceCase $CaseHold.CaseId | FL Name
 $CaseHold.Name
 ```
 
-Une fois que vous avez identifié le nom du cas eDiscovery et le blocage, accédez à la page **découverte** électronique **eDiscovery** \> dans le centre de conformité, ouvrez le cas, puis supprimez la boîte aux lettres de la suspension. Pour plus d’informations sur l’identification des conservations eDiscovery, consultez la section « conservations eDiscovery » dans [How to identifier le type de blocage placé sur une boîte aux lettres Exchange Online](identify-a-hold-on-an-exchange-online-mailbox.md#ediscovery-holds).
+Une fois que vous avez identifié le nom du cas eDiscovery et le blocage, accédez à la page découverte électronique **eDiscovery** \> **eDiscovery** dans le centre de conformité, ouvrez le cas, puis supprimez la boîte aux lettres de la suspension. Pour plus d’informations sur l’identification des conservations eDiscovery, consultez la section « conservations eDiscovery » dans [How to identifier le type de blocage placé sur une boîte aux lettres Exchange Online](identify-a-hold-on-an-exchange-online-mailbox.md#ediscovery-holds).
   
 ## <a name="step-4-remove-the-delay-hold-from-the-mailbox"></a>Étape 4 : supprimer le délai de conservation de la boîte aux lettres
 
@@ -345,11 +345,11 @@ Effectuez les étapes suivantes (dans la séquence spécifiée) dans Exchange On
     
     **Stratégies de rétention appliquées à des boîtes aux lettres spécifiques**
     
-    Utilisez le centre de sécurité & conformité pour rajouter la boîte aux lettres à la stratégie de rétention. Accédez à la page **rétention** de la **gouvernance** \> des informations dans le centre de sécurité & conformité, modifiez la stratégie de rétention, puis rajoutez la boîte aux lettres à la liste des destinataires auxquels la stratégie de rétention est appliquée. 
+    Utilisez le centre de sécurité & conformité pour rajouter la boîte aux lettres à la stratégie de rétention. Accédez à la **Information governance** \> page **rétention** de la gouvernance des informations dans le centre de sécurité & conformité, modifiez la stratégie de rétention, puis rajoutez la boîte aux lettres à la liste des destinataires auxquels la stratégie de rétention est appliquée. 
     
     **Stratégies de rétention à l’échelle de l’Organisation**
     
-    Si vous avez supprimé une stratégie de rétention à l’échelle de l’organisation ou de l’entreprise en l’excluant de la stratégie, utilisez le centre de sécurité & conformité pour supprimer la boîte aux lettres de la liste des utilisateurs exclus. Accédez à la page **rétention** de la **gouvernance** \> des informations dans le centre de sécurité & conformité, modifiez la stratégie de rétention à l’échelle de l’organisation et supprimez la boîte aux lettres de la liste des destinataires exclus. Cette opération permet de réappliquer la stratégie de rétention à la boîte aux lettres de l’utilisateur. 
+    Si vous avez supprimé une stratégie de rétention à l’échelle de l’organisation ou de l’entreprise en l’excluant de la stratégie, utilisez le centre de sécurité & conformité pour supprimer la boîte aux lettres de la liste des utilisateurs exclus. Accédez à la **Information governance** \> page **rétention** de la gouvernance des informations dans le centre de sécurité & conformité, modifiez la stratégie de rétention à l’échelle de l’organisation et supprimez la boîte aux lettres de la liste des destinataires exclus. Cette opération permet de réappliquer la stratégie de rétention à la boîte aux lettres de l’utilisateur. 
     
     **conservations de cas eDiscovery**
     
@@ -381,8 +381,8 @@ Comme expliqué précédemment, vous devez supprimer toutes les conservations et
 |:-----|:-----|:-----|
 |Conservation pour litige  <br/> | `True` <br/> |La propriété  *LitigationHoldEnabled*  est définie sur  `True`.  <br/> |
 |Blocage local  <br/> | `c0ba3ce811b6432a8751430937152491` <br/> |La propriété *InPlaceHolds* contient le GUID de la conservation inaltérable qui est placée sur la boîte aux lettres. Vous pouvez indiquer qu’il s’agit d’une conservation inaltérable, car le GUID ne commence pas par un préfixe.  <br/> Vous pouvez utiliser la `Get-MailboxSearch -InPlaceHoldIdentity <hold GUID> | FL` commande dans Exchange Online PowerShell pour obtenir des informations sur la conservation inaltérable sur la boîte aux lettres.  <br/> |
-| Stratégies de rétention dans le centre de sécurité & conformité appliquées à des boîtes aux lettres spécifiques  <br/> | `mbxcdbbb86ce60342489bff371876e7f224` <br/> ou  <br/>  `skp127d7cf1076947929bf136b7a2a8c36f` <br/> |Lorsque vous exécutez la cmdlet **Get-Mailbox** , la propriété *InPlaceHolds* contient également les GUID des stratégies de rétention appliquées à la boîte aux lettres. Vous pouvez identifier les stratégies de rétention, car `mbx` le GUID commence par le préfixe. Si le GUID de la stratégie de rétention `skp` commence par le préfixe, cela indique que la stratégie de rétention est appliquée aux conversations Skype entreprise.  <br/> Pour identifier la stratégie de rétention appliquée à la boîte aux lettres, exécutez la commande suivante dans sécurité & Centre de conformité PowerShell : <br/> <br/>`Get-RetentionCompliancePolicy <retention policy GUID without prefix> | FL Name`<br/><br/>N'oubliez pas de supprimer le préfixe  `mbx` ou  `skp` lorsque vous exécutez cette commande.  <br/> |
-|Stratégies de rétention à l’échelle de l’organisation dans le centre de sécurité & conformité  <br/> |Aucune valeur  <br/> ou  <br/>  `-mbxe9b52bf7ab3b46a286308ecb29624696`(indique que la boîte aux lettres est exclue d’une stratégie à l’échelle de l’organisation)  <br/> |Même si la propriété *InPlaceHolds* est vide lorsque vous exécutez la cmdlet **Get-Mailbox** , il peut y avoir une ou plusieurs stratégies de rétention à l’échelle de l’organisation appliquées à la boîte aux lettres.  <br/> Pour ce faire, vous pouvez exécuter la `Get-OrganizationConfig | FL InPlaceHolds` commande dans Exchange Online PowerShell pour obtenir la liste des GUID pour les stratégies de rétention à l’échelle de l’organisation. Le GUID des stratégies de rétention à l’échelle de l’organisation appliquées aux `mbx` boîtes aux lettres Exchange commence par le préfixe ; par exemple, `mbxa3056bb15562480fadb46ce523ff7b02`.  <br/> Pour identifier la stratégie de rétention à l’échelle de l’organisation appliquée à la boîte aux lettres, exécutez la commande suivante dans Security & Compliance Center PowerShell : <br/><br/> `Get-RetentionCompliancePolicy <retention policy GUID without prefix> | FL Name`<br/><br/>Si une boîte aux lettres est exclue d’une stratégie de rétention à l’échelle de l’organisation, le GUID de la stratégie de rétention est affiché dans la propriété *InPlaceHolds* de la boîte aux lettres de l’utilisateur lorsque vous exécutez la cmdlet **Get-Mailbox** ; elle est identifiée par le `-mbx`préfixe ; par exemple,`-mbxe9b52bf7ab3b46a286308ecb29624696` <br/> |
+| Stratégies de rétention dans le centre de sécurité & conformité appliquées à des boîtes aux lettres spécifiques  <br/> | `mbxcdbbb86ce60342489bff371876e7f224` <br/> ou  <br/>  `skp127d7cf1076947929bf136b7a2a8c36f` <br/> |Lorsque vous exécutez la cmdlet **Get-Mailbox** , la propriété *InPlaceHolds* contient également les GUID des stratégies de rétention appliquées à la boîte aux lettres. Vous pouvez identifier les stratégies de rétention, car le GUID commence par le `mbx` préfixe. Si le GUID de la stratégie de rétention commence par le `skp` préfixe, cela indique que la stratégie de rétention est appliquée aux conversations Skype entreprise.  <br/> Pour identifier la stratégie de rétention appliquée à la boîte aux lettres, exécutez la commande suivante dans sécurité & Centre de conformité PowerShell : <br/> <br/>`Get-RetentionCompliancePolicy <retention policy GUID without prefix> | FL Name`<br/><br/>N'oubliez pas de supprimer le préfixe  `mbx` ou  `skp` lorsque vous exécutez cette commande.  <br/> |
+|Stratégies de rétention à l’échelle de l’organisation dans le centre de sécurité & conformité  <br/> |Aucune valeur  <br/> ou  <br/>  `-mbxe9b52bf7ab3b46a286308ecb29624696`(indique que la boîte aux lettres est exclue d’une stratégie à l’échelle de l’organisation)  <br/> |Même si la propriété *InPlaceHolds* est vide lorsque vous exécutez la cmdlet **Get-Mailbox** , il peut y avoir une ou plusieurs stratégies de rétention à l’échelle de l’organisation appliquées à la boîte aux lettres.  <br/> Pour ce faire, vous pouvez exécuter la `Get-OrganizationConfig | FL InPlaceHolds` commande dans Exchange Online PowerShell pour obtenir la liste des GUID pour les stratégies de rétention à l’échelle de l’organisation. Le GUID des stratégies de rétention à l’échelle de l’organisation appliquées aux boîtes aux lettres Exchange commence par le `mbx` préfixe ; par exemple, `mbxa3056bb15562480fadb46ce523ff7b02` .  <br/> Pour identifier la stratégie de rétention à l’échelle de l’organisation appliquée à la boîte aux lettres, exécutez la commande suivante dans Security & Compliance Center PowerShell : <br/><br/> `Get-RetentionCompliancePolicy <retention policy GUID without prefix> | FL Name`<br/><br/>Si une boîte aux lettres est exclue d’une stratégie de rétention à l’échelle de l’organisation, le GUID de la stratégie de rétention est affiché dans la propriété *InPlaceHolds* de la boîte aux lettres de l’utilisateur lorsque vous exécutez la cmdlet **Get-Mailbox** ; elle est identifiée par le préfixe `-mbx` ; par exemple,`-mbxe9b52bf7ab3b46a286308ecb29624696` <br/> |
 |conservation des cas eDiscovery dans le centre de sécurité & conformité  <br/> | `UniH7d895d48-7e23-4a8d-8346-533c3beac15d` <br/> |La propriété *InPlaceHolds* contient également le GUID de tout blocage associé à un cas de découverte électronique dans le centre de sécurité & conformité qui peut être placé sur la boîte aux lettres. Vous pouvez déterminer qu'il s'agit d'une mise en conservation de cas eDiscovery, car le GUID commence par le préfixe  `UniH`.  <br/> Vous pouvez utiliser l' `Get-CaseHoldPolicy` applet de commande dans Security & Compliance Center PowerShell pour obtenir des informations sur le cas eDiscovery auquel est associée la conservation de la boîte aux lettres. Par exemple, vous pouvez exécuter la commande `Get-CaseHoldPolicy <hold GUID without prefix> | FL Name` pour afficher le nom du blocage de la boîte aux lettres qui se trouve sur la boîte aux lettres. Be sure to remove the  `UniH` lorsque vous exécutez cette commande.  <br/><br/> Pour identifier le cas eDiscovery auquel est associée la conservation de la boîte aux lettres, exécutez les commandes suivantes :<br/><br/>`$CaseHold = Get-CaseHoldPolicy <hold GUID without prefix>`<br/><br/>`Get-ComplianceCase $CaseHold.CaseId | FL Name`
 
 

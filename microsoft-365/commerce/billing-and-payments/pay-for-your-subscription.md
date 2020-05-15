@@ -24,19 +24,19 @@ description: Découvrez les options de paiement disponibles pour le paiement de 
 ms.custom:
 - okr_SMB
 - fwlink 808700 for SEPA UI glink 906 for older uI
-ms.openlocfilehash: 613bb0fcc776b65090ee66faf6dc0516987947b2
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: a1ee158079e30348c3b1f9f26ef0b62160bf9544
+ms.sourcegitcommit: cf7c410268175e2633e9f0d65dc859c5034658e5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44140870"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "44232874"
 ---
 # <a name="pay-for-your-subscription"></a>Régler votre abonnement
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> Le centre d’administration change. Si votre expérience ne correspond pas aux détails présentés ici, reportez-vous [à la rubrique à propos du nouveau centre d’administration Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> Le centre d’administration change. Si votre expérience ne correspond pas aux informations présentées ici, voir [À propos du nouveau centre d’administration Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
 
 ::: moniker-end
 
@@ -58,7 +58,7 @@ Si vous payez par carte bancaire et que cette dernière est refusée, vous recev
 
 ::: moniker range="o365-worldwide"
 
-1. Dans le centre d’administration, accédez à la page **facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">de vos produits</a> .
+1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produits</a>.
 
 2. Recherchez l’abonnement ayant un solde impayé. Dans la section **Facturation**, en regard de l'**Abonnement a un montant dû**, sélectionnez **Régler le solde**.
 
@@ -107,7 +107,7 @@ Si vous payez votre abonnement par facture, vous recevrez un courrier vous avert
 Malheureusement, si votre abonnement est configuré pour être payé par facture, nous n'acceptons pas les paiements directs en ligne. Vous pouvez toutefois [changer votre mode de paiement sur Carte bancaire ou Compte bancaire](change-payment-method.md). Le montant dû sera alors prélevé automatiquement via le compte bancaire ou carte bancaire après chaque période de service. Pour Azure, voir [Comment modifier la carte de paiement utilisée pour régler un abonnement Azure ?](https://go.microsoft.com/fwlink/p/?LinkId=718057)
 
 > [!NOTE]
-> Si vous optez pour le paiement automatique par carte bancaire, n'oubliez pas de régler le solde restant. Consultez votre relevé de facturation pour connaître les options et instructions de paiement. Pour plus d'informations, consultez [Comprendre votre facture](understand-your-invoice2.md).
+> Si vous optez pour le paiement automatique par carte bancaire, n'oubliez pas de régler le solde restant. Consultez votre relevé de facturation pour connaître les options et instructions de paiement. Pour plus d’informations, reportez-vous à [la rubrique comprendre votre facture](understand-your-invoice2.md).
 
 ### <a name="where-do-i-send-my-check-or-eft-payment"></a>Où envoyer mon chèque ou mon paiement par TEF ?
 

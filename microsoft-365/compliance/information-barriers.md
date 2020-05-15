@@ -13,16 +13,16 @@ ms.collection:
 - M365-security-compliance
 localization_priority: None
 description: Utilisez les barrières relatives aux informations pour garantir la conformité de la communication à l’aide de Microsoft teams au sein de votre organisation.
-ms.openlocfilehash: c4b4b31de90e8c72c346da5574b8854492de19ba
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+ms.openlocfilehash: 341c4f54ac48cbebd17b8d9ded267091f098dcbd
+ms.sourcegitcommit: 252b1d1d8ae735b99bf46e27c08353afc330aef3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44047996"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "44232007"
 ---
 # <a name="information-barriers"></a>Obstacles aux informations
 
-## <a name="overview"></a>Vue d'ensemble
+## <a name="overview"></a>Vue d’ensemble
 
 Les services de Cloud Computing Microsoft incluent de puissantes fonctionnalités de communication et de collaboration. Mais supposons que vous souhaitiez restreindre les communications entre deux groupes afin d’éviter un conflit d’intérêts au sein de votre organisation. Vous pouvez aussi souhaiter restreindre les communications entre certaines personnes au sein de votre organisation afin de protéger les informations internes. Microsoft 365 permet la communication et la collaboration entre les groupes et les organisations, de sorte qu’y a-t-il un moyen de restreindre les communications entre des groupes d’utilisateurs spécifiques lorsque cela est nécessaire ? Avec des barrières d’informations, vous pouvez le faire ! 
 
@@ -65,7 +65,7 @@ Les barrières de l’information se dérouleront maintenant et sont incluses da
 - Microsoft 365 E5
 - Office 365 E5
 - Conformité avancée Office 365
-- Microsoft 365 E5 – Conformité et protection des informations
+- Conformité Microsoft 365 E5
 
 Pour plus d’informations, consultez [la rubrique solutions de conformité](https://products.office.com/business/security-and-compliance/compliance-solutions).
 

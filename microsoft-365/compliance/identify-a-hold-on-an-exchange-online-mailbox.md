@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 6057daa8-6372-4e77-a636-7ea599a76128
 description: Découvrez comment identifier les différents types de conservation pouvant être placés sur une boîte aux lettres Microsoft 365. Ces types de conservation incluent la conservation pour litige, les conservations eDiscovery et les stratégies de rétention de Microsoft 365. Vous pouvez également déterminer si un utilisateur a été exclu d’une stratégie de rétention à l’échelle de l’organisation.
-ms.openlocfilehash: 594b8550cdd418af9551c732b78091817da7bfc3
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 12d91d987af2ba11b2d9aa417dff92adb745fb03
+ms.sourcegitcommit: 252b1d1d8ae735b99bf46e27c08353afc330aef3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208665"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "44232069"
 ---
 # <a name="how-to-identify-the-type-of-hold-placed-on-an-exchange-online-mailbox"></a>Comment identifier le type de conservation placé sur une boîte aux lettres Exchange Online
 
@@ -41,7 +41,8 @@ Microsoft 365 offre plusieurs méthodes permettant à votre organisation d’emp
     - **Stratégies de rétention d’emplacement spécifiques :** Il s’agit de stratégies affectées aux emplacements de contenu d’utilisateurs spécifiques. Vous utilisez la cmdlet **Get-Mailbox** dans Exchange Online PowerShell pour obtenir des informations sur les stratégies de rétention affectées à des boîtes aux lettres spécifiques.
 
     - **Stratégies de rétention à l’échelle de l’Organisation :** Il s’agit de stratégies affectées à tous les emplacements de contenu de votre organisation. Vous utilisez la cmdlet **Get-OrganizationConfig** dans Exchange Online PowerShell pour obtenir des informations sur les stratégies de rétention à l’échelle de l’organisation.
-  Pour plus d’informations, consultez la section « application d’une stratégie de rétention à l’ensemble d’une organisation ou d’emplacements spécifiques » dans [vue d’ensemble des stratégies de rétention Microsoft 365](retention-policies.md#applying-a-retention-policy-to-an-entire-organization-or-specific-locations).
+    
+  Pour plus d’informations, reportez-vous [à la section application d’une stratégie de rétention à une organisation entière ou à des emplacements spécifiques](create-retention-policies.md#applying-a-retention-policy-to-an-entire-organization-or-specific-locations) .
 
 - **[Étiquettes de rétention microsoft 365](labels.md):** si un utilisateur applique une étiquette de rétention Microsoft 365 (une étiquette configurée pour conserver le contenu ou conserver et supprimer du contenu) pour *un* dossier ou un élément de sa boîte aux lettres, une conservation est placée sur la boîte aux lettres comme si elle était placée en conservation pour litige ou affectée à une stratégie de rétention Microsoft 365. Pour plus d’informations, consultez la section [identification des boîtes aux lettres en attente, car une étiquette de rétention a été appliquée à un dossier ou à une](#identifying-mailboxes-on-hold-because-a-retention-label-has-been-applied-to-a-folder-or-item) section d’élément de cet article.
 
@@ -97,7 +98,7 @@ Le tableau suivant décrit les différents types de conservations à l’échell
 |Stratégies de rétention Microsoft 365 appliquées aux boîtes aux lettres Exchange, aux dossiers publics Exchange et aux conversations teams    |      `mbx7cfb30345d454ac0a989ab3041051209:2`   |   Les stratégies de rétention à l’échelle de l’organisation appliquées aux boîtes aux lettres Exchange, aux dossiers publics Exchange et aux conversations 1xN dans Microsoft teams sont identifiées par des GUID qui commencent par le `mbx` préfixe. Remarque les conversations 1xN sont stockées dans la boîte aux lettres des participants individuels de la conversation.      |
 |Stratégie de rétention Microsoft 365 appliquée aux groupes Microsoft 365 les messages de canal et Teams     |   `grp1a0a132ee8944501a4bb6a452ec31171:3`      |    Les stratégies de rétention à l’échelle de l’organisation appliquées aux groupes et messages de canal Microsoft 365 dans Microsoft teams sont identifiées par des GUID qui commencent par le `grp` préfixe. Remarque les messages de canal sont stockés dans la boîte aux lettres de groupe qui est associée à une équipe Microsoft.     |
 
-Pour plus d’informations sur les stratégies de rétention appliquées à Microsoft Teams, consultez la section « emplacement des équipes » [vue d’ensemble des stratégies de rétention](retention-policies.md#applying-a-retention-policy-to-an-entire-organization-or-specific-locations).
+Pour plus d’informations sur les stratégies de rétention appliquées à Microsoft Teams, consultez la section « emplacement des équipes » [vue d’ensemble des stratégies de rétention](create-retention-policies.md#applying-a-retention-policy-to-an-entire-organization-or-specific-locations).
 
 ### <a name="understanding-the-format-of-the-inplaceholds-value-for-retention-policies"></a>Présentation du format de la valeur InPlaceHolds pour les stratégies de rétention
 
@@ -117,7 +118,7 @@ Le tableau suivant définit les trois actions de rétention possibles :
 |**n°2**    |    Indique que la stratégie de rétention est configurée pour conserver les éléments. La stratégie ne supprime pas les éléments après l’expiration de la période de rétention.     |
 |**3**     |   Indique que la stratégie de rétention est configurée pour conserver les éléments, puis les supprimer une fois la période de rétention expirée.      |
 
-Pour plus d’informations sur les actions de rétention, voir la section « conservation du contenu pendant une période de temps spécifique » dans [vue d’ensemble des stratégies de rétention](retention-policies.md#retaining-content-for-a-specific-period-of-time).
+Pour plus d’informations sur les actions de rétention, voir la section « conservation du contenu pendant une période de temps spécifique » dans [vue d’ensemble des stratégies de rétention](create-retention-policies.md#retaining-content-for-a-specific-period-of-time).
    
 ## <a name="step-2-use-the-guid-to-identify-the-hold"></a>Étape 2 : utiliser le GUID pour identifier la conservation
 

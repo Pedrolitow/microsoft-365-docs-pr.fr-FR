@@ -13,19 +13,19 @@ ms.collection:
 - commerce
 search.appverid: MET150
 description: Découvrez comment activer et gérer des applications tierces dans le centre d’administration Microsoft 365.
-ms.openlocfilehash: eb2826a4b0c69d61eb35a9dfff37e9dc2dd6ad71
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: 3e6d77eec71ca1137e0aaf44b62d198d9c87b0c5
+ms.sourcegitcommit: cf7c410268175e2633e9f0d65dc859c5034658e5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44141187"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "44232744"
 ---
 # <a name="manage-third-party-app-subscriptions-for-your-organization"></a>Gérer les abonnements aux applications tierces pour votre organisation
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> Le centre d’administration change. Si votre expérience ne correspond pas aux détails présentés ici, reportez-vous [à la rubrique à propos du nouveau centre d’administration Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> Le centre d’administration change. Si votre expérience ne correspond pas aux informations présentées ici, voir [À propos du nouveau centre d’administration Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
 
 ::: moniker-end
 
@@ -67,7 +67,7 @@ La prise en charge des applications tierces est disponible dans les régions sui
 
 Les administrateurs doivent activer les applications tierces avant de les affecter aux utilisateurs. Ces applications sont activées sur le portail de l’éditeur tiers.
 
-1. Dans le centre d’administration, accédez à la page **facturation** > **de vos** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2125823" target="_blank">applications</a> de produits.
+1. Dans le centre d’administration, accédez à la page **facturation**  >  **de vos**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2125823" target="_blank">applications</a> de produits.
 2. Recherchez et sélectionnez l’application que vous souhaitez gérer.
 3. Sous **paramètres & Actions**, sélectionnez **gérer dans le portail de l’éditeur**.
 
@@ -89,7 +89,7 @@ Une fois l’application activée, elle reste active sauf si elle est annulée, 
 
 Les administrateurs doivent activer des applications tierces avant de les affecter aux utilisateurs. Elles sont activées sur le portail de l’éditeur tiers. Sur la page application, sous **paramètres & Actions**, sélectionnez le lien pour attribuer des licences.
 
-1. Dans le centre d’administration, accédez à la page **facturation** > **de vos** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2125823" target="_blank">applications</a> de produits.
+1. Dans le centre d’administration, accédez à la page **facturation**  >  **de vos**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2125823" target="_blank">applications</a> de produits.
 2. Recherchez et sélectionnez l’application que vous souhaitez gérer.
 3. Sous **paramètres & Actions**, sélectionnez le lien à **gérer dans le portail de l’éditeur**.
 
@@ -97,7 +97,7 @@ Les administrateurs doivent activer des applications tierces avant de les affect
 
 Les administrateurs peuvent modifier le nombre de licences appartenant à leur organisation. Ceci ne s’applique qu’aux applications achetées avec une tarification par siège.
 
-1. Dans le centre d’administration, accédez à la page **facturation** > **de vos** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2125823" target="_blank">applications</a> de produits.
+1. Dans le centre d’administration, accédez à la page **facturation**  >  **de vos**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2125823" target="_blank">applications</a> de produits.
 2. Recherchez et sélectionnez l’application que vous souhaitez gérer.
 3. Sélectionnez **modifier la quantité des licences**.
 
@@ -113,7 +113,7 @@ Pour plus d’informations sur les profils de facturation, consultez la rubrique
 
 ### <a name="change-the-billing-profile-on-a-software-as-a-service-app-subscription"></a>Modifier le profil de facturation sur un abonnement d’application Software-as-a-service
 
-1. Dans le centre d’administration, accédez à la page **facturation** > **de vos** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2125823" target="_blank">applications</a> de produits.
+1. Dans le centre d’administration, accédez à la page **facturation**  >  **de vos**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2125823" target="_blank">applications</a> de produits.
 2. Recherchez et sélectionnez l’application que vous souhaitez gérer.
 3. En regard de **profil de facturation**, sélectionnez **modifier**.
 
@@ -123,6 +123,6 @@ Pour plus d’informations sur les factures, reportez-vous à [la rubrique compr
 
 Vous pouvez annuler une application Software-as-a-service à partir de la page de l’application.
 
-1. Dans le centre d’administration, accédez à la page **facturation** > **de vos** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2125823" target="_blank">applications</a> de produits.
+1. Dans le centre d’administration, accédez à la page **facturation**  >  **de vos**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2125823" target="_blank">applications</a> de produits.
 2. Recherchez et sélectionnez l’application que vous souhaitez gérer.
 3. Sous **paramètres & Actions**, sélectionnez **Annuler l’abonnement**.

@@ -14,16 +14,16 @@ ms.collection:
 localization_priority: None
 description: Découvrez comment définir des stratégies pour les barrières d’informations dans Microsoft Teams.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 1c81fedddf5e3553ec4b24353fac43079305c5b2
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 41d56927f3f9c22782b10640330ca9d0167402d2
+ms.sourcegitcommit: 252b1d1d8ae735b99bf46e27c08353afc330aef3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035040"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "44232050"
 ---
 # <a name="define-information-barrier-policies"></a>Définir des stratégies d’obstacle aux informations
 
-## <a name="overview"></a>Vue d'ensemble
+## <a name="overview"></a>Vue d’ensemble
 
 Avec les barrières d’informations, vous pouvez définir des stratégies conçues pour empêcher certains segments d’utilisateurs de communiquer les uns avec les autres ou d’autoriser des segments spécifiques à communiquer uniquement avec certains autres segments. Les stratégies de barrière des informations peuvent aider votre organisation à respecter les normes et réglementations pertinentes de l’industrie et éviter les conflits d’intérêt potentiels. Pour en savoir plus, consultez la rubrique [barrières relatives aux informations](information-barriers.md). 
 
@@ -57,7 +57,7 @@ Lorsque vous définissez des stratégies pour les barrières d’informations, v
 |(Si nécessaire) [Modifier un segment ou une stratégie](information-barriers-edit-segments-policies.md)    |-Modifier un segment<br/>-Modifier ou supprimer une stratégie<br/>-Réexécuter l’application de stratégie<br/>-Afficher le statut de la stratégie         |
 |(Si nécessaire) [Résolution des problèmes](information-barriers-troubleshooting.md)|Action à effectuer lorsque des choses ne fonctionnent pas comme prévu|
 
-## <a name="prerequisites"></a>Conditions requises
+## <a name="prerequisites"></a>Conditions préalables
 
 En plus des [licences et des autorisations requises](information-barriers.md#required-licenses-and-permissions), assurez-vous que les conditions suivantes sont remplies : 
      
@@ -72,7 +72,7 @@ En plus des [licences et des autorisations requises](information-barriers.md#req
 
 - Aucune stratégie de carnet d’adresses-avant de définir et d’appliquer des stratégies de barrière des informations, assurez-vous qu’aucune stratégie de carnet d’adresses Exchange n’est mise en place. Les barrières d’informations sont basées sur les stratégies de carnet d’adresses, mais les deux types de stratégies ne sont pas compatibles. Si vous disposez de ces stratégies, veillez à [Supprimer les stratégies de carnet d’adresses](https://docs.microsoft.com/exchange/address-books/address-book-policies/remove-an-address-book-policy) en premier. Une fois que les stratégies de barrière des informations sont activées et que le carnet d’adresses hiérarchique est activé, tous les utilisateurs ***qui ne sont pas inclus*** dans un segment de barrière des informations voient le [carnet d’adresses hiérarchique](https://docs.microsoft.com/exchange/address-books/hierarchical-address-books/hierarchical-address-books) dans Exchange Online.
 
-- PowerShell-actuellement, les stratégies de barrière des informations sont définies et gérées dans le centre de conformité Office 365 Security & à l’aide des cmdlets PowerShell. Bien que plusieurs exemples soient fournis dans cet article, vous devez être familiarisé avec les cmdlets et les paramètres PowerShell. Vous aurez également besoin du module AzureRM.
+- PowerShell-actuellement, les stratégies de barrière des informations sont définies et gérées dans le centre de conformité Office 365 Security & à l’aide des cmdlets PowerShell. Bien que plusieurs exemples soient fournis dans cet article, vous devez être familiarisé avec les cmdlets et les paramètres PowerShell. Vous aurez également besoin du module Azure PowerShell.
     - [Se connecter à l’interface PowerShell du Centre de sécurité et conformité](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps)
     - [Installer le module Azure PowerShell](https://docs.microsoft.com/powershell/azure/install-az-ps?view=azps-2.3.2)
 
@@ -81,10 +81,10 @@ En plus des [licences et des autorisations requises](information-barriers.md#req
    1. Exécutez les applets de commande PowerShell suivantes :
 
       ```powershell
-      Login-AzureRmAccount 
+      Login-AzAccount 
       $appId="bcf62038-e005-436d-b970-2a472f8c1982" 
-      $sp=Get-AzureRmADServicePrincipal -ServicePrincipalName $appId
-      if ($sp -eq $null) { New-AzureRmADServicePrincipal -ApplicationId $appId }
+      $sp=Get-AzADServicePrincipal -ServicePrincipalName $appId
+      if ($sp -eq $null) { New-AzADServicePrincipal -ApplicationId $appId }
       Start-Process  "https://login.microsoftonline.com/common/adminconsent?client_id=$appId"
       ```
 
@@ -213,13 +213,13 @@ Par exemple, supposons que vous souhaitez bloquer les communications entre le se
 
     |Syntaxe  |Exemple  |
     |---------|---------|
-    |`New-InformationBarrierPolicy -Name "policyname" -AssignedSegment "segment1name" -SegmentsAllowed "segment2name"`     |`New-InformationBarrierPolicy -Name "Manufacturing-HR" -AssignedSegment "Manufacturing" -SegmentsAllowed "HR" -State Inactive` <p>    Dans cet exemple, nous avons défini une stratégie appelée *Manufacturing-HR* pour un segment appelé *Manufacturing*. Lorsqu’il est actif et appliqué, cette stratégie permet aux personnes de *fabrication* de communiquer uniquement avec des personnes dans un segment appelé *RH*. (Dans ce cas, la *fabrication* ne peut pas communiquer avec des utilisateurs qui ne font pas partie de *RH*.)         |
+    |`New-InformationBarrierPolicy -Name "policyname" -AssignedSegment "segment1name" -SegmentsAllowed "segment2name","segment1name"`     |`New-InformationBarrierPolicy -Name "Manufacturing-HR" -AssignedSegment "Manufacturing" -SegmentsAllowed "HR","Manufacturing" -State Inactive` <p>    Dans cet exemple, nous avons défini une stratégie appelée *Manufacturing-HR* pour un segment appelé *Manufacturing*. Lorsqu’il est actif et appliqué, cette stratégie permet aux personnes de *fabrication* de communiquer uniquement avec des personnes dans un segment appelé *RH*. (Dans ce cas, la *fabrication* ne peut pas communiquer avec des utilisateurs qui ne font pas partie de *RH*.)         |
 
     **Si nécessaire, vous pouvez spécifier plusieurs segments avec cette applet de commande, comme illustré dans l’exemple suivant.**
 
     |Syntaxe  |Exemple  |
     |---------|---------|
-    |`New-InformationBarrierPolicy -Name "policyname" -AssignedSegment "segment1name" -SegmentsAllowed "segment2name", "segment3name"`     |`New-InformationBarrierPolicy -Name "Research-HRManufacturing" -AssignedSegment "Research" -SegmentsAllowed "HR","Manufacturing" -State Inactive` <p>Dans cet exemple, nous avons défini une stratégie qui permet au segment de *recherche* de communiquer avec les *RH* et la *fabrication*.        |
+    |`New-InformationBarrierPolicy -Name "policyname" -AssignedSegment "segment1name" -SegmentsAllowed "segment2name", "segment3name","segment1name"`     |`New-InformationBarrierPolicy -Name "Research-HRManufacturing" -AssignedSegment "Research" -SegmentsAllowed "HR","Manufacturing","Research" -State Inactive` <p>Dans cet exemple, nous avons défini une stratégie qui permet au segment de *recherche* de communiquer avec les *RH* et la *fabrication*.        |
 
     Répétez cette étape pour chaque stratégie que vous souhaitez définir pour permettre à des segments spécifiques de communiquer avec certains autres segments spécifiques.
 
@@ -256,7 +256,7 @@ Avec PowerShell, vous pouvez afficher l’état des comptes d’utilisateur, des
 
 |Pour afficher cette  |Procédez comme suit  |
 |---------|---------|
-|Comptes d’utilisateur     |Utilisez la cmdlet **Get-InformationBarrierRecipientStatus** avec les paramètres d’identité. <p>Syntaxe`Get-InformationBarrierRecipientStatus -Identity <value> -Identity2 <value>` <p>Vous pouvez utiliser n’importe quelle valeur qui identifie de façon unique chaque utilisateur, comme le nom, l’alias, le nom unique, le nom de domaine canonique, l’adresse de messagerie ou le GUID. <p>Exemple : `Get-InformationBarrierRecipientStatus -Identity meganb -Identity2 alexw` <p>Dans cet exemple, nous faisons référence à deux comptes d’utilisateur dans Office 365 : *meganb* pour *Megan*, et *Alexw* pour *Alex*. <p>(Vous pouvez également utiliser cette applet de commande pour un seul `Get-InformationBarrierRecipientStatus -Identity <value>`utilisateur :) <p>Cette applet de commande retourne des informations sur les utilisateurs, telles que les valeurs d’attribut et les stratégies de barrière des informations qui sont appliquées.|
+|Comptes d’utilisateurs     |Utilisez la cmdlet **Get-InformationBarrierRecipientStatus** avec les paramètres d’identité. <p>Syntaxe`Get-InformationBarrierRecipientStatus -Identity <value> -Identity2 <value>` <p>Vous pouvez utiliser n’importe quelle valeur qui identifie de façon unique chaque utilisateur, comme le nom, l’alias, le nom unique, le nom de domaine canonique, l’adresse de messagerie ou le GUID. <p>Exemple : `Get-InformationBarrierRecipientStatus -Identity meganb -Identity2 alexw` <p>Dans cet exemple, nous faisons référence à deux comptes d’utilisateur dans Office 365 : *meganb* pour *Megan*, et *Alexw* pour *Alex*. <p>(Vous pouvez également utiliser cette applet de commande pour un seul utilisateur : `Get-InformationBarrierRecipientStatus -Identity <value>` ) <p>Cette applet de commande retourne des informations sur les utilisateurs, telles que les valeurs d’attribut et les stratégies de barrière des informations qui sont appliquées.|
 |Pertinents     |Utilisez la cmdlet **Get-OrganizationSegment** .<p>Syntaxe`Get-OrganizationSegment` <p>Cette opération permet d’afficher la liste de tous les segments définis pour votre organisation.         |
 |Stratégies de barrière des informations     |Utilisez la cmdlet **Get-InformationBarrierPolicy** . <p> Syntaxe`Get-InformationBarrierPolicy` <p>Cette opération affiche la liste des stratégies de barrière des informations qui ont été définies, ainsi que leur état.       |
 |Application de stratégie de barrière des informations la plus récente     | Utilisez la cmdlet **Get-InformationBarrierPoliciesApplicationStatus** . <p>Syntaxe`Get-InformationBarrierPoliciesApplicationStatus`<p>    Cela permet d’afficher des informations indiquant si l’application de stratégie a été exécutée, si elle a échoué ou est en cours d’exécution.       |
@@ -321,7 +321,7 @@ Contoso définit trois stratégies, comme décrit dans le tableau suivant :
 |---------|---------|
 |Stratégie 1 : empêcher les ventes de communiquer avec la recherche     | `New-InformationBarrierPolicy -Name "Sales-Research" -AssignedSegment "Sales" -SegmentsBlocked "Research" -State Inactive` <p> Dans cet exemple, la stratégie de barrière des informations est appelée *Sales-Research*. Lorsque cette stratégie est active et appliquée, cela permet d’empêcher les utilisateurs qui se trouvent dans le segment des ventes de communiquer avec les utilisateurs du segment de recherche. Il s’agit d’une stratégie à sens unique ; Il n’empêchera pas la recherche de communiquer avec les ventes. Pour cela, la stratégie 2 est requise.      |
 |Policy 2 : empêcher les recherches de communiquer avec les ventes     | `New-InformationBarrierPolicy -Name "Research-Sales" -AssignedSegment "Research" -SegmentsBlocked "Sales" -State Inactive` <p> Dans cet exemple, la stratégie de barrière des informations est appelée *Research-Sales*. Lorsque cette stratégie est active et appliquée, cela permet d’empêcher les utilisateurs qui se trouvent dans le segment de recherche de communiquer avec les utilisateurs du segment de ventes.       |
-|Stratégie 3 : autoriser la fabrication à communiquer avec RH et marketing uniquement     | `New-InformationBarrierPolicy -Name "Manufacturing-HRMarketing" -AssignedSegment "Manufacturing" -SegmentsAllowed "HR","Marketing" -State Inactive` <p>Dans ce cas, la stratégie de barrière des informations est appelée *Manufacturing-HRMarketing*. Lorsque cette stratégie est active et appliquée, la fabrication ne peut communiquer qu’avec RH et marketing. Notez que les ressources RH et marketing ne sont pas limitées à la communication avec d’autres segments. |
+|Stratégie 3 : autoriser la fabrication à communiquer avec RH et marketing uniquement     | `New-InformationBarrierPolicy -Name "Manufacturing-HRMarketing" -AssignedSegment "Manufacturing" -SegmentsAllowed "HR","Marketing","Manufacturing" -State Inactive` <p>Dans ce cas, la stratégie de barrière des informations est appelée *Manufacturing-HRMarketing*. Lorsque cette stratégie est active et appliquée, la fabrication ne peut communiquer qu’avec RH et marketing. Notez que les ressources RH et marketing ne sont pas limitées à la communication avec d’autres segments. |
 
 Une fois les segments et les stratégies définis, contoso applique les stratégies en exécutant l’applet de commande **Start-InformationBarrierPoliciesApplication** . 
 

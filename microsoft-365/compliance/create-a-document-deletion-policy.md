@@ -14,17 +14,17 @@ search.appverid:
 - SPO160
 ms.assetid: 41b2ed73-eb8d-4429-945e-a8197894585a
 description: Les organisations doivent souvent conserver des documents pendant une certaine période de temps en raison des réglementations de conformité, juridiques, ou autres. Toutefois, conserver des documents plus longtemps que nécessaire peut exposer l’organisation à un risque juridique.
-ms.openlocfilehash: 5550f65e5b2ecb5dca775e1d851548913b8e8517
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 065cb3c278a4c859c46d7d1c13c1f1160822337b
+ms.sourcegitcommit: 252b1d1d8ae735b99bf46e27c08353afc330aef3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632259"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "44232109"
 ---
 # <a name="create-a-document-deletion-policy"></a>Création d’une stratégie de suppression de documents
 
 > [!IMPORTANT]
-> Pour aller plus loin, nous vous recommandons d’utiliser une stratégie de rétention ou des étiquettes de rétention créées dans le centre de conformité &amp; Microsoft 365, le centre de sécurité Microsoft 365 ou le centre de sécurité conformité au lieu d’une stratégie de suppression de documents. Les stratégies de suppression de documents continueront à fonctionner côte à côte avec des stratégies de rétention, mais si vous devez conserver ou supprimer du contenu n’importe où dans Office 365, nous vous recommandons d’utiliser une stratégie de rétention. Pour plus d’informations, consultez [la rubrique utiliser une stratégie de rétention au lieu de ces fonctionnalités](retention-policies.md#use-a-retention-policy-instead-of-these-features). 
+> Pour aller plus loin, nous vous recommandons d’utiliser une stratégie de rétention du centre de conformité Microsoft 365 au lieu d’une stratégie de suppression de documents. Les stratégies de suppression de documents continueront à fonctionner côte à côte avec des stratégies de rétention, mais si vous devez conserver ou supprimer du contenu n’importe où dans Office 365, nous vous recommandons d’utiliser une stratégie de rétention ou des étiquettes de rétention. Pour plus d’informations, consultez [la rubrique utiliser une stratégie de rétention au lieu de fonctionnalités plus anciennes](retention-policies.md#use-a-retention-policy-instead-of-older-features).
   
 Les organisations doivent souvent conserver des documents pendant une certaine période de temps en raison des réglementations de conformité, juridiques, ou autres. Toutefois, conserver des documents plus longtemps que nécessaire peut exposer l’organisation à un risque juridique.
   
@@ -108,9 +108,9 @@ En outre, les stratégies et les règles sont adaptées à une collection de sit
   
 ## <a name="create-a-document-deletion-policy"></a>Création d’une stratégie de suppression de documents
 
-1. Dans le centre de &amp; conformité Office 365Security, accédez à **conservation**de la **gestion** \> des données. Sous **supprimer**, cliquez sur **gérer les stratégies de suppression de documents pour SharePoint Online et OneDrive entreprise**. Le centre de stratégies de suppression de documents s’ouvre dans un nouvel onglet du navigateur.
+1. Dans le centre de &amp; conformité Office 365Security, accédez à conservation de la **gestion des données** \> **Retention**. Sous **supprimer**, cliquez sur **gérer les stratégies de suppression de documents pour SharePoint Online et OneDrive entreprise**. Le centre de stratégies de suppression de documents s’ouvre dans un nouvel onglet du navigateur.
     
-    La première fois que vous naviguez depuis &amp; le centre de sécurité conformité vers le centre de stratégie de suppression de documents, le centre de stratégies est automatiquement créé pour vous. Vous pouvez également créer manuellement le centre de stratégies en [créant la collection de sites](https://go.microsoft.com/fwlink/p/?LinkID=404342) et en choisissant **Centre de stratégies de conformité** sous l’onglet **entreprise** . 
+    La première fois que vous naviguez depuis le centre de sécurité &amp; conformité vers le centre de stratégie de suppression de documents, le centre de stratégies est automatiquement créé pour vous. Vous pouvez également créer manuellement le centre de stratégies en [créant la collection de sites](https://go.microsoft.com/fwlink/p/?LinkID=404342) et en choisissant **Centre de stratégies de conformité** sous l’onglet **entreprise** . 
     
 2. Choisissez **stratégies de suppression**.
     
@@ -151,7 +151,7 @@ En affectant une stratégie à un modèle de collection de sites, vous mettez la
   
 Il est important de comprendre que la période spécifiée pour une stratégie de suppression de documents signifie le temps écoulé depuis que le document a été créé ou modifié, et non le moment où la stratégie a été affectée. Lorsque vous affectez la stratégie pour la première fois, tous les documents du site sont évalués et supprimés s’ils répondent aux critères. Cela s’applique à tous les documents existants, et non simplement aux documents créés depuis l’affectation de la stratégie.
   
-1. Dans le centre &amp; de sécurité conformité, accédez à **conservation**de **gestion** \> des données. Sous **supprimer**, cliquez sur **gérer les stratégies de suppression de documents pour SharePoint Online et OneDrive entreprise**. Le centre de stratégies de suppression de documents s’ouvre dans un nouvel onglet du navigateur.
+1. Dans le centre de sécurité &amp; conformité, accédez à conservation de **gestion des données** \> **Retention**. Sous **supprimer**, cliquez sur **gérer les stratégies de suppression de documents pour SharePoint Online et OneDrive entreprise**. Le centre de stratégies de suppression de documents s’ouvre dans un nouvel onglet du navigateur.
     
 2. Choisissez **Attributions de stratégies pour les modèles**.
     
@@ -173,7 +173,7 @@ Il est important de comprendre que la période spécifiée pour une stratégie d
 5. Cliquez sur **Enregistrer**.
     
     > [!NOTE]
-    > Chaque modèle ne peut avoir qu’un seul ensemble de règles qui lui est affecté. Si vous voyez une erreur indiquant que ce modèle a déjà des stratégies qui lui sont affectées, sélectionnez **Annuler** \> l' **affectation à la collection de sites** dans le volet de navigation \> de gauche sélectionnez une collection de sites pour afficher et gérer l’ensemble des stratégies déjà affectées. 
+    > Chaque modèle ne peut avoir qu’un seul ensemble de règles qui lui est affecté. Si vous voyez une erreur indiquant que ce modèle a déjà des stratégies qui lui sont affectées, sélectionnez **Annuler** \> l' **affectation à la collection de sites** dans le volet de navigation de gauche \> Sélectionnez une collection de sites pour afficher et gérer l’ensemble des stratégies déjà affectées. 
   
 6. Choisissez **Gérer les stratégies affectées**, sélectionnez les stratégies à affecter, puis indiquez si une stratégie est la stratégie par défaut. Lorsque vous définissez une stratégie par défaut, tous les sites affectés à la stratégie ont automatiquement la stratégie active sans action requise par le propriétaire du site.
     
@@ -193,7 +193,7 @@ En affectant une stratégie à une collection de sites spécifique, vous mettez 
   
 Il est important de comprendre que la période spécifiée pour une stratégie de suppression de documents signifie le temps écoulé depuis que le document a été créé ou modifié, et non le moment où la stratégie a été affectée. Lorsque vous affectez la stratégie pour la première fois, tous les documents du site sont évalués et supprimés s’ils répondent aux critères. Cela s’applique à tous les documents existants, et non simplement aux documents créés depuis l’affectation de la stratégie.
   
-1. Dans le centre &amp; de sécurité conformité, accédez à **conservation**de **gestion** \> des données. Sous **supprimer**, choisissez **gérer les stratégies de suppression de documents pour SharePoint Online et OneDrive entreprise**. Le centre de stratégies de suppression de documents s’ouvre dans un nouvel onglet du navigateur.
+1. Dans le centre de sécurité &amp; conformité, accédez à conservation de **gestion des données** \> **Retention**. Sous **supprimer**, choisissez **gérer les stratégies de suppression de documents pour SharePoint Online et OneDrive entreprise**. Le centre de stratégies de suppression de documents s’ouvre dans un nouvel onglet du navigateur.
     
 2. Choisissez **Attributions de stratégies pour les collections de sites**.
     
@@ -224,7 +224,7 @@ Il est important de comprendre que la période spécifiée pour une stratégie d
 
 Lorsque vous supprimez une affectation, les stratégies affectées ne s’appliquent plus à aucun site dans la collection de sites ou le modèle de collection de sites.
   
-1. Dans le centre &amp; de sécurité conformité, accédez à **conservation**de **gestion** \> des données. Sous **supprimer**, choisissez **gérer les stratégies de suppression de documents pour SharePoint Online et OneDrive entreprise**. Le centre de stratégies de suppression de documents s’ouvre dans un nouvel onglet du navigateur.
+1. Dans le centre de sécurité &amp; conformité, accédez à conservation de **gestion des données** \> **Retention**. Sous **supprimer**, choisissez **gérer les stratégies de suppression de documents pour SharePoint Online et OneDrive entreprise**. Le centre de stratégies de suppression de documents s’ouvre dans un nouvel onglet du navigateur.
     
 2. Choisissez **Attributions de stratégies pour les modèles** ou **Attributions de stratégies pour les collections de sites**.
     
@@ -236,7 +236,7 @@ Lorsque vous supprimez une affectation, les stratégies affectées ne s’appliq
 
 Vous ne pouvez pas supprimer une stratégie en cours d’utilisation. Avant de pouvoir supprimer une stratégie, vous devez d’abord supprimer toutes les affectations aux collections de sites et aux modèles de collection de sites qui incluent cette stratégie — consultez la section précédente.
   
-1. Dans le centre &amp; \> de sécurité conformité, sélectionnez **rétention** de la \> **gestion** \> des données dans le volet de navigation de gauche sous **supprimer** \> **gérer les stratégies de suppression de documents pour SharePoint Online et OneDrive entreprise**. Le centre de stratégies de suppression de documents s’ouvre dans un nouvel onglet du navigateur.
+1. Dans le centre de sécurité &amp; conformité, \> sélectionnez **Data management** \> **rétention** de la gestion des données dans le volet de navigation de gauche \> sous **supprimer** \> **gérer les stratégies de suppression de documents pour SharePoint Online et OneDrive entreprise**. Le centre de stratégies de suppression de documents s’ouvre dans un nouvel onglet du navigateur.
     
 2. Choisissez * * stratégies de suppression * *.
     
@@ -244,7 +244,7 @@ Vous ne pouvez pas supprimer une stratégie en cours d’utilisation. Avant de p
   
 3. Sélectionnez la stratégie.
     
-4. Dans l’onglet \> **Items** \> éléments du ruban, **supprimez la stratégie**.
+4. Dans l’onglet \> **éléments** du ruban \> , **supprimez la stratégie**.
     
     ![Bouton Supprimer la stratégie sur le ruban](../media/IP-Remove-Policy-button-on-Ribbon.png)
   

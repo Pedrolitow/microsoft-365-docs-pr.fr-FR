@@ -21,12 +21,12 @@ search.appverid:
 - BEA160
 description: 'Déterminez le montant des taxes à payer pour votre abonnement Microsoft 365 pour les entreprises dans différentes régions. '
 ms.custom: okr_SMB
-ms.openlocfilehash: 0aeabd49477bdef856a7ddb9f3b7c39211be2479
-ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
+ms.openlocfilehash: 7c071a29fa5cedfc12c69a6471d1321a9167106f
+ms.sourcegitcommit: cf7c410268175e2633e9f0d65dc859c5034658e5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44045823"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "44232828"
 ---
 # <a name="tax-information"></a>Informations fiscales
 
@@ -114,7 +114,7 @@ Vous pouvez prétendre à un taux de TVA de 0 % :
 
 #### <a name="add-your-vat-id-eu-countries-only"></a>Ajouter votre numéro de TVA (pays de l'UE uniquement)
 
-1. Dans le centre d’administration, accédez à la page **facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">de vos produits</a> .
+1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produits</a>.
 
 2. Recherchez la carte d’abonnement pour l’abonnement que vous souhaitez mettre à jour.
 

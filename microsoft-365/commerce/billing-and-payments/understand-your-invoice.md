@@ -18,14 +18,14 @@ search.appverid:
 - MET150
 description: Découvrez comment lire et comprendre votre facture pour les produits Microsoft Business.
 keywords: comptes de facturation, informations sur l’organisation, factures
-ms.openlocfilehash: 63186bb0fc601be786e223fe2e6febbdb48361e2
-ms.sourcegitcommit: 4cfb8a9c3675d0aefcabd690273e2af85f2e38b0
+ms.openlocfilehash: 25e9f2865c5970d11fac14d9427cb54374884541
+ms.sourcegitcommit: cf7c410268175e2633e9f0d65dc859c5034658e5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44211403"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "44232816"
 ---
-# <a name="understand-your-invoice"></a>Comprendre votre facture
+# <a name="understand-your-bill-or-invoice"></a>Comprendre votre facture
 
 ::: moniker range="o365-21vianet"
 

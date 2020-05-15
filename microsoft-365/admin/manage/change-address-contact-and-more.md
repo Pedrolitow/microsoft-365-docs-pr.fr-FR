@@ -20,12 +20,12 @@ search.appverid:
 - GEA150
 ms.assetid: a36e5a52-4df2-479e-bb97-9e67b8483e10
 description: Découvrez comment modifier le profil de votre organisation, par exemple le nom de l’organisation, l’adresse, le téléphone, le contact technique et la messagerie électronique.
-ms.openlocfilehash: d3871e683aed862cfe58e072035b75cc004b9ef6
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: cae24ebb6ad317767c7798b808f166024cd9d73a
+ms.sourcegitcommit: cf7c410268175e2633e9f0d65dc859c5034658e5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208173"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "44232898"
 ---
 # <a name="change-your-organizations-address-technical-contact-and-more"></a>Modifier l'adresse de votre organisation, le contact technique et d'autres informations de profil
 

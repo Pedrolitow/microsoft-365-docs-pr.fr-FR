@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 description: Tout comme les fonctionnalités du centre de conformité Microsoft 365, notre contenu d’aide est toujours évolutif. Nous créons en permanence de nouveaux articles, en mettant à jour ceux existants et en apportant des modifications en fonction de vos commentaires. Découvrez les nouveautés et mises à jour ce mois-ci.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 6995413d6bbd068ac5e126351dc1a8fb761a0934
-ms.sourcegitcommit: ad789f1e7bf9c9dc0d45c731373e667a26ed30b1
+ms.openlocfilehash: 750165aab3612e3edb6a56f69eebf0778e141fde
+ms.sourcegitcommit: 252b1d1d8ae735b99bf46e27c08353afc330aef3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44221418"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "44231897"
 ---
 # <a name="recent-updates-to-microsoft-365-compliance-content"></a>Mises à jour récentes du contenu de conformité Microsoft 365
 
@@ -38,14 +38,14 @@ Tout comme les fonctionnalités du centre de conformité Microsoft 365, notre co
 
 [Utiliser l’audit avancé pour examiner les comptes compromis](mailitemsaccessed-forensics-investigations.md) (nouveauté)<br>Nouvelles instructions sur l’utilisation de la nouvelle action d’audit de boîte aux lettres *MailItemsAccessed* pour les enquêtes de dépistage.
 
-Plusieurs mises à jour pour effectuer [des recherches dans le journal d’audit](search-the-audit-log-in-security-and-compliance.md), notamment :
+[Rechercher dans le journal d’audit](search-the-audit-log-in-security-and-compliance.md) (mis à jour)<br>Les modifications sont les suivantes :
 - [Nouvelle section](search-the-audit-log-in-security-and-compliance.md#the-appsharepoint-user-in-audit-records) avec des détails sur l’utilisateur « App@sharepoint » figurant dans enregistrements d’audit.
 - [Nouvelles descriptions](search-the-audit-log-in-security-and-compliance.md#quarantine-activities) des activités de mise en quarantaine.
 - Dans la section [activité d’administration des utilisateurs](search-the-audit-log-in-security-and-compliance.md#user-administration-activities) , l’événement « modifier le mot de passe utilisateur » est déclenché lorsqu’un utilisateur modifie son propre mot de passe (via la réinitialisation du mot de passe libre-service) et l’événement « réinitialiser le mot de passe utilisateur » est déclenché lorsqu’un administrateur réinitialise le mot de passe d’un utilisateur.
 
 ### <a name="auto-expanding-archive"></a>Archive à extension automatique
 
-[Vue d’ensemble d’un archivage illimité](unlimited-archiving.md#outlook-requirements-for-accessing-items-in-an-auto-expanded-archive)(mis à jour)<br>Clarification supplémentaire : vous ne pouvez pas supprimer un dossier dans l’archive principale ou une archive auxiliaire une fois l’archivage à extension automatique activé sur une boîte aux lettres.
+[Vue d’ensemble d’un archivage illimité](unlimited-archiving.md#outlook-requirements-for-accessing-items-in-an-auto-expanded-archive) (mis à jour)<br>Clarification supplémentaire : vous ne pouvez pas supprimer un dossier dans l’archive principale ou une archive auxiliaire une fois l’archivage à extension automatique activé sur une boîte aux lettres.
 
 ### <a name="compliance-scorecompliance-manager"></a>Score de conformité/gestionnaire de conformité
 
@@ -147,7 +147,7 @@ Toutes les rubriques sur le [score de conformité](compliance-score.md) et le [G
 ## <a name="february-2020"></a>Février 2020
 
 > [!NOTE]
-> Les articles répertoriés dans les mois précédents ont peut-être été mis à jour, déplacés ou supprimés depuis. Par conséquent, certains des détails ci-dessous peuvent être obsolètes et des liens peuvent être rompus.
+> Les articles répertoriés dans les mois précédents peuvent avoir été mis à jour, déplacés ou supprimés depuis. Par conséquent, certains des détails ci-dessous peuvent être obsolètes et des liens peuvent être rompus.
 
 ### <a name="auditing"></a>Audit
 
