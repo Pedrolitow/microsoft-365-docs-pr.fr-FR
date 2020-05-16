@@ -15,12 +15,12 @@ ms.collection:
 - M365-security-compliance
 - remotework
 description: Protégez votre courrier électronique et vos données professionnelles contre les menaces informatiques, notamment les ransomware, le hameçonnage et les pièces jointes malveillantes.
-ms.openlocfilehash: abc75a7c7a8b771e5b15fb3c4f0aeb2125be4684
-ms.sourcegitcommit: d688a296dc2b094b70da55334c9a3ad91236cf6f
+ms.openlocfilehash: 1b21c59e95eccced66a7b64ec7c67354de53e59d
+ms.sourcegitcommit: 76edb413cbd7436252075ea7e314f5e1d07d8d55
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44155420"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "44267178"
 ---
 # <a name="top-12-tasks-for-security-teams-to-support-working-from-home"></a>12 premières tâches pour les équipes de sécurité qui prennent en charge le travail à domicile
 
@@ -35,19 +35,19 @@ Pour les clients qui utilisent nos plans d’entreprise, Microsoft vous recomman
 - Microsoft 365 E3 inclut Enterprise Mobility + Security (EMS) E3 et Azure AD P1
 - Microsoft 365 E5 inclut EMS E5 et Azure AD P2
   
-||**Tâche**| Tous les plans Office 365 Enterprise|**Microsoft 365 E3** |**Microsoft 365 E5**|
+||**Task**| Tous les plans Office 365 Enterprise|**Microsoft 365 E3** |**Microsoft 365 E5**|
 |:-----|:-----|:-----|:-----|:-----|
-|0,1      |[Activer l’authentification multifacteur Azure](#1-enable-azure-multi-factor-authentication-mfa)   |   ![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)  |![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)   | ![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)      | 
-|n°2     | [Se protéger contre les menaces](#2-protect-against-threats) |![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png) |  ![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)       | ![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)       | 
+|1       |[Activer l’authentification multifacteur Azure](#1-enable-azure-multi-factor-authentication-mfa)   |   ![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)  |![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)   | ![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)      | 
+|2      | [Se protéger contre les menaces](#2-protect-against-threats) |![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png) |  ![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)       | ![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)       | 
 |3      |  [Configurer la protection avancée contre les menaces Office 365](#3-configure-office-365-advanced-threat-protection)  |   |      |  ![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)     | 
 |4       | [Configurer Azure Advanced Threat Protection (ATP)](#4-configure-azure-advanced-threat-protection)   |   |      |  ![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)     | 
-|5      |   [Activer la protection avancée contre les menaces Microsoft](#5-turn-on-microsoft-advanced-threat-protection)  |  |      | ![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)      | 
+|5      |   [Activer la Protection Microsoft contre les menaces](#5-turn-on-microsoft-threat-protection)  |  |      | ![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)      | 
 |6       | [Configurer la protection des applications mobiles Intune pour les téléphones et les tablettes](#6-configure-intune-mobile-app-protection-for-phones-and-tablets) |    |  ![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)       |  ![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)       | 
 |7      | [Configurer l’authentification MFA et l’accès conditionnel pour les invités, y compris la protection des applications Intune](#7-configure-mfa-and-conditional-access-for-guests-including-intune-mobile-app-protection)  |    |  ![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)     | ![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)      | 
 |8       |  [Inscrire des PC dans la gestion des appareils et exiger des PC conformes](#8-enroll-pcs-into-device-management-and-require-compliant-pcs)   |  | ![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)        | ![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)        | 
 |9       | [Optimiser votre réseau pour la connectivité Cloud](#9-optimize-your-network-for-cloud-connectivity)  |  ![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png) |![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)      |![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)        | 
 |10    | [Former les utilisateurs](#10-train-users) |    ![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png) |![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)      |![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)      | 
-|11  |[Pris en main de Microsoft Cloud App Security](#11-get-started-with-microsoft-cloud-app-security) |  |  |![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)   |
+|a4 |[Pris en main de Microsoft Cloud App Security](#11-get-started-with-microsoft-cloud-app-security) |  |  |![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)   |
 |12  |[Surveiller les menaces et prendre des mesures](#12-monitor-for-threats-and-take-action) |![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)   |![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)  |![Inclus](../media/d238e041-6854-4a78-9141-049224df0795.png)  |
 | | | |
 
@@ -114,7 +114,7 @@ Vous devrez collaborer avec votre administrateur Exchange Online et votre admini
 - Regarder la [vidéo : présentation de](https://www.youtube.com/watch?reload=9&v=EGY2m8yU_KE) la protection avancée contre les menaces
 - Passer en revue les [trois phases du déploiement Azure ATP](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp#whats-next)
 
-## <a name="5-turn-on-microsoft-advanced-threat-protection"></a>5 : activer Microsoft Advanced Threat Protection
+## <a name="5-turn-on-microsoft-threat-protection"></a>5 : activer la protection contre les menaces Microsoft
 
 À présent que vous disposez d’Office 365 ATP et d’Azure ATP configurés, vous pouvez afficher les signaux combinés à partir de ces fonctionnalités dans un tableau de bord. [Microsoft Threat Protection](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-threat-protection) (MTP) rassemble des alertes, des incidents, une enquête et une réponse automatiques, ainsi qu’une recherche avancée sur les charges de travail (Azure ATP, Office 365 ATP, Microsoft Defender ATP et Microsoft Cloud App Security) dans un seul volet sur [Security.Microsoft.com](https://security.microsoft.com). 
 <br>
@@ -236,7 +236,7 @@ Prise en main de la sécurité des applications Cloud maintenant. Par la suite, 
 
 ## <a name="12-monitor-for-threats-and-take-action"></a>12 : surveiller les menaces et prendre des mesures
 
-Microsoft 365 propose plusieurs méthodes pour surveiller l’État et prendre les mesures appropriées. Le meilleur point de départ est le centre de sécurité Microsoft[https://security.microsoft.com](https://security.microsoft.com)365 (), où vous pouvez afficher le [score](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-secure-score?view=o365-worldwide)de sécurité Microsoft de votre organisation, ainsi que les alertes ou les entités nécessitant votre attention.
+Microsoft 365 propose plusieurs méthodes pour surveiller l’État et prendre les mesures appropriées. Le meilleur point de départ est le centre de sécurité Microsoft 365 ( [https://security.microsoft.com](https://security.microsoft.com) ), où vous pouvez afficher le [score](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-secure-score?view=o365-worldwide)de sécurité Microsoft de votre organisation, ainsi que les alertes ou les entités nécessitant votre attention.
 
 - [Prise en main du centre de sécurité Microsoft 365](https://docs.microsoft.com/microsoft-365/security/mtp/overview-security-center?view=o365-worldwide)
 - [Surveiller et afficher les rapports](https://docs.microsoft.com/microsoft-365/security/mtp/monitoring-and-reporting?view=o365-worldwide)

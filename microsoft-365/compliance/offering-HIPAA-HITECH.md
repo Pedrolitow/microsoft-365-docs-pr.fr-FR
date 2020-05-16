@@ -1,7 +1,7 @@
 ---
 title: Loi HIPAA (Health Insurance Portability and Accountability Act) & Hi-Tech
 description: Microsoft propose des accords de portabilité de l’assurance maladie & la Loi d’entreprise Associate Act (HIPAA).
-keywords: Offres pour la conformité Microsoft 365
+keywords: Microsoft 365, conformité, offres
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 8a7a64532aeb7053572b78a6b05a757bf6d1b006
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: 4a774613283c9639e36aa868538b338f60286246
+ms.sourcegitcommit: daad5f2f1994a812c2b9c78e7dd148d10c51f61d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44066457"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "44254207"
 ---
 # <a name="health-insurance-portability-and-accountability-hipaa--hitech-acts"></a>Loi HIPAA (Health Insurance Portability and Accountability Act) & Hi-Tech
 
@@ -51,15 +51,15 @@ Les services Cloud d’entreprise de Microsoft sont également couverts par les 
 
 Pour savoir comment le Cloud Microsoft aide les clients à prendre en charge les normes HIPAA et Hi-Tech, consultez les [témoignages des clients Microsoft](https://customers.microsoft.com).
 
-## <a name="microsoft-in-scope-cloud-services"></a>Services Cloud Microsoft dans le périmètre
+## <a name="microsoft-in-scope-cloud-services"></a>Services Cloud Microsoft dans le champ d’application
 
 - [Azure et Azure Government](https://aka.ms/AzureCompliance)
-- Cloud App Security
-- Service Microsoft Health bot
+- Microsoft Cloud App Security
+- Service Microsoft Microsoft Healthcare bot
 - Microsoft Stream
 - Services professionnels Microsoft : Premier et sur site pour Azure, Dynamics 365, Intune et pour les clients des entreprises moyennes et grandes de Microsoft 365 Entreprise
 - [Dynamics 365 et Dynamics 365 Service Public](https://aka.ms/d365-compliance-list)
-- Service Cloud Microsoft Flow, soit en service autonome, soit inclus dans un plan ou une suite Office 365 ou Dynamics 365
+- Service Cloud Automated (anciennement Microsoft Flow) en tant que service autonome ou inclus dans un plan ou une suite Office 365 ou Dynamics 365
 - Intune
 - [Office 365, Office 365 U.S. Government, Office 365 U.S. Government Defense](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
 - Service Cloud PowerApps, soit en service autonome, soit inclus dans un plan ou une suite Office 365 ou Dynamics 365
@@ -72,7 +72,7 @@ Commencez à tirer parti des avantages du Cloud pour les solutions de données d
 
 [Commencer à utiliser le modèle Azure HIPAA/HITRUST](https://docs.microsoft.com/azure/governance/blueprints/samples/hipaa-hitrust/)
 
-## <a name="frequently-asked-questions"></a>Forum Aux Questions
+## <a name="frequently-asked-questions"></a>Foire aux questions
 
 **Mon organisation peut-elle entrer dans un contrat avec Microsoft ?**
 

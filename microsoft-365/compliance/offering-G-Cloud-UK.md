@@ -1,7 +1,7 @@
 ---
 title: Gouvernement britannique-Cloud (G-Cloud)
 description: Le service commercial de la Couronne a renouvelé la classification des services de Cloud Computing Microsoft sur le cloud public v. 6.
-keywords: Offres pour la conformité Microsoft 365
+keywords: Microsoft 365, conformité, offres
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: cc6f2a8c52a5fc829a9f04c51f78cf7ea5c2f1e1
-ms.sourcegitcommit: 1c90bcc5c56f24895f01c3e0423c3f6b73715c13
+ms.openlocfilehash: 5a8d0b95a0abb93eef352a442ff6c8203eda6e0e
+ms.sourcegitcommit: daad5f2f1994a812c2b9c78e7dd148d10c51f61d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44214498"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "44254177"
 ---
 # <a name="united-kingdom-government-cloud-g-cloud"></a>Gouvernement britannique-Cloud (G-Cloud)
 
@@ -41,13 +41,13 @@ Pour en savoir plus sur les avantages du Royaume-Uni G-Cloud V6 sur le Cloud Mic
 
 Découvrez comment accélérer votre déploiement du Royaume-Uni G-Cloud V6 à l’aide de notre plan de sécurité et de conformité Azure : [Télécharger les conseils de mise en œuvre des principes généraux de l’implémentation de principe de Cloud pour Azure](https://servicetrust.microsoft.com/ViewPage/Blueprint?command=Download&downloadType=Document&downloadId=c3804aba-03a7-4d21-88ad-d9bbe5314a00&docTab=fc060920-cdb8-11e7-bacf-0bf52b09d912_UK_G-Cloud_Blueprint)
 
-## <a name="microsoft-in-scope-cloud-services"></a>Services Cloud Microsoft concernés
+## <a name="microsoft-in-scope-cloud-services"></a>Services Cloud Microsoft dans le périmètre
 
 - [Azure](https://aka.ms/AzureCompliance)
-- Cloud App Security
+- Microsoft Cloud App Security
 - [Dynamics 365](https://aka.ms/d365-compliance-list)
 - Intune
-- Service Cloud Microsoft Flow, soit en service autonome, soit inclus dans un plan ou une suite Office 365 ou Dynamics 365
+- Service Cloud Automated (anciennement Microsoft Flow) en tant que service autonome ou inclus dans un plan ou une suite Office 365 ou Dynamics 365
 - Office 365 : Exchange Online, SharePoint Online et Skype entreprise Online
 - Service Cloud PowerApps, soit en service autonome, soit inclus dans un plan ou une suite Office 365 ou Dynamics 365
 - Service Cloud Power BI soit en service autonome, soit inclus dans un plan ou une suite Office 365

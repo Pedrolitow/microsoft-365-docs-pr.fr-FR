@@ -19,16 +19,16 @@ ms.custom:
 - TopSMBIssues
 - seo-marvel-apr2020
 description: Les administrateurs peuvent en savoir plus sur les fonctionnalités de protection anti-hameçonnage dans Exchange Online Protection (EOP) et Office 365 Advanced Threat Protection (Office 365 ATP).
-ms.openlocfilehash: 3c15c67f059793c904641a70c12cd072bb69e2aa
-ms.sourcegitcommit: 98782ee4497d72232462c51a3071fae313282980
+ms.openlocfilehash: 2b5d5786e363b0d74e29b1f0c27ab110d2e60b0d
+ms.sourcegitcommit: 22e9f54d0d3ead2be91a38d49325308c70f43f90
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44222728"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "44262282"
 ---
 # <a name="anti-phishing-protection-in-microsoft-365"></a>Protection anti-hameçonnage dans Microsoft 365
 
-*Hameçonnage* attaque par courrier électronique qui tente de dérober des informations sensibles dans les messages semblant provenir d’expéditeurs légitimes ou approuvés. Il existe des catégories spécifiques de hameçonnage. Par exemple :
+Le *hameçonnage* est une attaque par courrier électronique qui tente de dérober des informations sensibles dans les messages semblant provenir d’expéditeurs légitimes ou approuvés. Il existe des catégories spécifiques de hameçonnage. Par exemple :
 
 - Le **Spear Phishing** utilise du contenu ciblé et personnalisé, spécialement adapté aux destinataires ciblés (en général, après la reconnaissance des destinataires par l’agresseur).
 

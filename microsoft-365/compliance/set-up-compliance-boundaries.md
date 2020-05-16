@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 1b45c82f-26c8-44fb-9f3b-b45436fe2271
 description: Utilisez les limites de conformité pour créer des limites logiques au sein d’une organisation qui contrôlent les emplacements de contenu utilisateur qu’un gestionnaire eDiscovery peut rechercher. Les limites de conformité utilisent le filtrage des autorisations de recherche (également appelé filtres de sécurité de conformité) pour contrôler les boîtes aux lettres, les sites SharePoint et les comptes OneDrive pouvant être recherchés par des utilisateurs spécifiques.
-ms.openlocfilehash: 6bad8aaba9b9905966797c21abe211850bf805a3
-ms.sourcegitcommit: 252b1d1d8ae735b99bf46e27c08353afc330aef3
+ms.openlocfilehash: da03f60be55b0ac6438adcc1648231e5b9798e56
+ms.sourcegitcommit: 22e9f54d0d3ead2be91a38d49325308c70f43f90
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "44231847"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "44262567"
 ---
 # <a name="set-up-compliance-boundaries-for-ediscovery-investigations"></a>Configuration des limites de conformité pour les enquêtes eDiscovery
 
@@ -75,19 +75,20 @@ Bien que d’autres attributs utilisateur soient disponibles, en particulier pou
   
 ## <a name="step-2-file-a-request-with-microsoft-support-to-synchronize-the-user-attribute-to-onedrive-accounts"></a>Étape 2 : classer une demande auprès du support Microsoft pour synchroniser l’attribut utilisateur avec les comptes OneDrive
 
-L’étape suivante consiste à classer une demande auprès du support Microsoft pour synchroniser l’attribut Azure Active Directory que vous avez choisi à l’étape 1 sur tous les comptes OneDrive de votre organisation. Une fois cette synchronisation effectuée, l’attribut (et sa valeur) que vous avez choisi à l’étape 1 seront mappés à une propriété gérée masquée dans SharePoint nommé `ComplianceAttribute` . Utilisez cet attribut pour créer le filtre d’autorisations de recherche pour OneDrive à l’étape 4.
+L’étape suivante consiste à classer une demande auprès du support Microsoft pour synchroniser l’attribut Azure Active Directory que vous avez choisi à l’étape 1 sur tous les comptes OneDrive de votre organisation. Une fois cette synchronisation effectuée, l’attribut (et sa valeur) que vous avez choisi à l’étape 1 seront mappés à une propriété gérée masquée nommée `ComplianceAttribute` . Utilisez cet attribut pour créer le filtre d’autorisations de recherche pour OneDrive à l’étape 4.
   
 Incluez les informations suivantes lorsque vous soumettez la demande au support Microsoft :
   
 - Le nom de domaine par défaut de votre organisation
-    
+
 - Nom de l’attribut Azure Active Directory (à partir de l’étape 1)
-    
+
 - Le titre ou la description de l’objet de la demande de support : « activer la synchronisation OneDrive entreprise avec Azure Active Directory pour les filtres de sécurité de conformité ». Cela permet d’acheminer la demande à l’équipe d’ingénierie de découverte électronique qui implémente la demande.
-    
+
 Une fois le changement d’ingénierie effectué et l’attribut synchronisé sur OneDrive, le support Microsoft vous enverra le numéro de build dans lequel la modification a été apportée, ainsi qu’une date de déploiement estimée. Le processus de déploiement prend généralement entre 4 et 6 semaines après l’envoi de la demande de support.
   
- **Important :** Vous pouvez effectuer les étapes 3 à 5 avant le déploiement de la modification. Toutefois, l’exécution de recherches de contenu ne renverra pas les documents à partir des sites OneDrive spécifiés dans le filtre d’autorisations de recherche tant que la modification n’a pas été déployée. 
+> [!IMPORTANT]
+> Vous pouvez effectuer les étapes 3 à 5 avant le déploiement de cette modification d’attribut. Toutefois, l’exécution de recherches de contenu ne renverra pas les documents à partir des sites OneDrive spécifiés dans le filtre d’autorisations de recherche tant que la modification n’a pas été déployée.
   
 ## <a name="step-3-create-a-role-group-for-each-agency"></a>Étape 3 : créer un groupe de rôles pour chaque agence
 

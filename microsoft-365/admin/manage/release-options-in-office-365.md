@@ -21,12 +21,12 @@ search.appverid:
 - GEA150
 ms.assetid: 3b3adfa4-1777-4ff0-b606-fb8732101f47
 description: Découvrez comment configurer l’option de publication pour les mises à jour de nouveaux produits et fonctionnalités dans le centre d’administration 365 de Microsoft.
-ms.openlocfilehash: 3a7a0562edef527718816bba6e67ea948cfad6b5
-ms.sourcegitcommit: 708857a82eab3d37da1dec027399b09bd306a5dd
+ms.openlocfilehash: 2738cf7af32d2e15b0c2c790a241dabbb1f104bc
+ms.sourcegitcommit: 22e9f54d0d3ead2be91a38d49325308c70f43f90
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 05/15/2020
-ms.locfileid: "44249883"
+ms.locfileid: "44262316"
 ---
 # <a name="set-up-the-standard-or-targeted-release-options"></a>Configurer les options de publication standard ou ciblée
 
@@ -99,7 +99,7 @@ Vous pouvez modifier la façon dont votre organisation reçoit les mises à jour
 > [!IMPORTANT]
 > Le suivi des modifications suivantes peut prendre jusqu’à 24 heures pour être pris en compte dans Microsoft 365. Si vous décidez de ne plus participer au programme de publication ciblée après l'avoir activé, vos utilisateurs risquent de perdre l'accès aux fonctionnalités qui n'ont pas encore atteint le niveau de publication planifiée. 
   
-1. Dans le centre d’administration, accédez au **Settings**  >  **paramètre**paramètres, puis sous l’onglet **Profil** de l’organisation, choisissez Modifier les **Préférences de publication**.
+1. Dans le centre d’administration, accédez au **Settings**  >  **paramètre org**paramètres, puis sous l’onglet Profil de l' **organisation** , choisissez **publier les préférences**.
 
 5. Pour désactiver la version ciblée, sélectionnez **version standard**, puis **enregistrer les modifications**. 
     

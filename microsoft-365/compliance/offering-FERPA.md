@@ -1,7 +1,7 @@
 ---
 title: Loi sur la confidentialité et les droits d’enseignement familial (FERPA)
 description: Microsoft s’aligne sur les exigences des droits éducatifs et de la confidentialité de la famille américain.
-keywords: Offres pour la conformité Microsoft 365
+keywords: Microsoft 365, conformité, offres
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 6685a542ac082b97ec771bb14481eecf212f4898
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: c7d3120f7094e91157c5a20df435c1c1438677bf
+ms.sourcegitcommit: daad5f2f1994a812c2b9c78e7dd148d10c51f61d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44066367"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "44254267"
 ---
 # <a name="family-educational-rights-and-privacy-act-ferpa"></a>Loi sur la confidentialité et les droits d’enseignement familial (FERPA)
 
@@ -41,7 +41,7 @@ FERPA n’exige ni ne reconnaît des audits ou d’autres certifications, de sor
 
 À la suite de ces engagements contractuels, les clients soumis à FERPA, à la fois les établissements scolaires et les tiers auxquels ils donnent accès aux données des étudiants sensibles, peuvent utiliser en toute confiance les services Cloud d’entreprise de Microsoft pour traiter, stocker et transmettre ces données.
 
-## <a name="microsoft-in-scope-cloud-services"></a>Services Cloud Microsoft dans le périmètre
+## <a name="microsoft-in-scope-cloud-services"></a>Services Cloud Microsoft dans le champ d’application
 
 Les services pour lesquels Microsoft s’engagent à être désignés comme un « fonctionnaire scolaire » avec des « intérêts éducatifs légitimes » dans les données client sont les suivants :
 
@@ -49,7 +49,7 @@ Les services pour lesquels Microsoft s’engagent à être désignés comme un �
 - [Dynamics 365](https://aka.ms/d365-compliance-list)
 - Intune
 - [Office 365, Office 365 U.S. Government, Office 365 U.S. Government Defense](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
-- Power BI, PowerApps et Microsoft circulent en tant que service autonome ou inclus dans un plan ou une suite Office 365
+- Power BI, PowerApps et Power automatiser (anciennement Microsoft Flow) en tant que service autonome ou inclus dans un plan ou une suite Office 365
 - Azure DevOps Services
 - Windows Defender ATP
 
@@ -57,7 +57,7 @@ Les services pour lesquels Microsoft s’engagent à être désignés comme un �
 
 FERPA n’exige ni ne reconnaît les audits ou les certifications.
 
-## <a name="frequently-asked-questions"></a>Forum Aux Questions
+## <a name="frequently-asked-questions"></a>Foire aux questions
 
 **Pourquoi FERPA est-il important ?**
 

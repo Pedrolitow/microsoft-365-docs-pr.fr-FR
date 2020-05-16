@@ -20,19 +20,19 @@ search.appverid:
 - GEA150
 ms.assetid: 1136115a-75af-4497-b693-640c4ce70bc6
 description: 'Créez des liens rapides vers vos courriers électroniques, vos documents, vos applications, vos sites SharePoint, vos sites externes et d’autres ressources en ajoutant des vignettes personnalisées au lanceur d’applications. '
-ms.openlocfilehash: 2c0a1cbd2f7c605bc03a55787266c7a627f8e329
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: f099eabef7a22e9ebd8f20b23ccd3d8da142f07f
+ms.sourcegitcommit: 22e9f54d0d3ead2be91a38d49325308c70f43f90
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44139720"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "44262362"
 ---
 # <a name="add-custom-tiles-to-the-app-launcher"></a>Ajouter des vignettes personnalisées au lanceur d'applications
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> Le centre d’administration change. Si votre expérience ne correspond pas aux détails présentés ici, reportez-vous [à la rubrique à propos du nouveau centre d’administration Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> Le centre d’administration change. Si votre expérience ne correspond pas aux informations présentées ici, voir [À propos du nouveau centre d’administration Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
 
 ::: moniker-end
 
@@ -44,7 +44,7 @@ Vous pouvez ajouter vos propres vignettes au lanceur d'applications pointant ver
   
 ## <a name="add-a-custom-tile-to-the-app-launcher"></a>Ajouter une vignette personnalisée au lanceur d'applications
 
-1. Dans le centre d’administration, accédez à **Settings** > **paramètres** des paramètres et sélectionnez l’onglet Profil de l' **organisation** .
+1. Dans le centre d’administration, accédez aux **Settings**paramètres  >  **org** paramètres et sélectionnez l’onglet **Profil** de l’organisation.
     
 2. Sous l’onglet Profil de l' **organisation** , choisissez les **vignettes du lanceur d’applications personnalisé**.
   
@@ -76,15 +76,15 @@ Celle-ci apparaît désormais dans l'onglet **Toutes** du lanceur d'applications
   
 ## <a name="edit-or-delete-a-custom-tile"></a>Edit or delete a custom tile
 
-1. Dans le centre d’administration, accédez à l’onglet<a href="https://go.microsoft.com/fwlink/p/?linkid=2067339" target="_blank">profil d’organisation</a> des**paramètres** > de **paramètres** > .
+1. Dans le centre d’administration, accédez à **Settings**l'  >  **Org Settings**  >  onglet Profil d’organisation des paramètres d'**organisation** des paramètres </a> .
     
 2. Sur la page profil de l' **organisation** , en regard de **Ajouter des vignettes personnalisées pour votre organisation**, sélectionnez **modifier**.
 
 3. Mettez à jour les champs **Nom de la vignette**, **URL**, **Description** ou **URL de l'image** de la vignette personnalisée (voir la [Ajouter une vignette personnalisée au lanceur d'applications](#add-a-custom-tile-to-the-app-launcher)).
     
-4. Sélectionnez **Fermer**la **mise à jour** \> . 
+4. Sélectionnez Fermer la **mise à jour** \> **Close**. 
     
-Pour supprimer une vignette personnalisée, dans la fenêtre **mosaïques personnalisées** , sélectionnez la vignette, sélectionnez Supprimer la**suppression**de **mosaïque** > . 
+Pour supprimer une vignette personnalisée, dans la fenêtre **mosaïques personnalisées** , sélectionnez la vignette, sélectionnez Supprimer la suppression de **mosaïque**  >  **Delete**. 
   
 ## <a name="whats-next"></a>Étape suivante
 

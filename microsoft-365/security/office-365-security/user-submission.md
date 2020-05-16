@@ -15,12 +15,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Les administrateurs peuvent apprendre à configurer une boîte aux lettres pour collecter le courrier indésirable et le courrier indésirable transmis par les utilisateurs.
-ms.openlocfilehash: 38fa16b5270273813b4549b0c3c9baaa1b05b098
-ms.sourcegitcommit: 6007dbe2cf758c683de399f94023122c678bcada
+ms.openlocfilehash: 6aa343b337139c4d81f35f78a227634d3b6a8781
+ms.sourcegitcommit: 22e9f54d0d3ead2be91a38d49325308c70f43f90
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "44224552"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "44262522"
 ---
 # <a name="specify-a-mailbox-for-user-submissions-of-spam-and-phishing-messages-in-exchange-online"></a>Spécifier une boîte aux lettres pour les soumissions d’utilisateurs de messages de courrier indésirable et de hameçonnage dans Exchange Online
 
@@ -39,7 +39,7 @@ La remise des messages signalés par l’utilisateur à une boîte aux lettres p
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu'il faut savoir avant de commencer
 
-- Vous ouvrez le Centre de sécurité et conformité sur <https://protection.office.com/>. Pour accéder directement à la page **soumissions** de l’utilisateur, utilisez <https://protection.office.com/userSubmissionsReportMessage> .
+- Vous ouvrez le Centre de conformité et sécurité sur <https://protection.office.com/>. Pour accéder directement à la page **soumissions** de l’utilisateur, utilisez <https://protection.office.com/userSubmissionsReportMessage> .
 
 - Pour vous connecter à Exchange Online PowerShell, voir [Connexion à Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell). Pour vous connecter à la version PowerShell d’EOP autonome, consultez la rubrique [Connect to Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell).
 
@@ -51,36 +51,63 @@ La remise des messages signalés par l’utilisateur à une boîte aux lettres p
 
 2. Dans la page **soumissions** de l’utilisateur qui s’affiche, sélectionnez l’une des options suivantes :
 
-   - **Activer la fonctionnalité de rapport de message pour Outlook (recommandé)**: sélectionnez cette option si vous utilisez le complément de rapport de message ou le complément de création de rapports dans Outlook sur le Web, puis configurez les paramètres suivants :
+   a. **Activer la fonctionnalité de rapport de message pour Outlook (recommandé)**: sélectionnez cette option si vous utilisez le complément de rapport de message ou le complément de création de rapports dans Outlook sur le Web, puis configurez les paramètres suivants :
 
-     - **Personnaliser le message de confirmation de l’utilisateur final**: cliquez sur ce lien. Dans la fenêtre mobile **personnaliser le message de confirmation** qui s’affiche, configurez les paramètres suivants :
+      - **Personnaliser le message de confirmation de l’utilisateur final**: cliquez sur ce lien. Dans la fenêtre mobile **personnaliser le message de confirmation** qui s’affiche, configurez les paramètres suivants :
 
-       - **Avant l’envoi**: dans les zones de message de **titre** et de **confirmation** , entrez le texte descriptif que les utilisateurs voient avant de signaler un message à l’aide du complément de message de rapport. Vous pouvez utiliser la variable% type% pour inclure le type d’envoi (courrier indésirable, pas courrier indésirable, hameçonnage, etc.).
+      - **Avant l’envoi**: dans les zones de message de **titre** et de **confirmation** , entrez le texte descriptif que les utilisateurs voient avant de signaler un message à l’aide du complément de message de rapport. Vous pouvez utiliser la variable% type% pour inclure le type d’envoi (courrier indésirable, pas courrier indésirable, hameçonnage, etc.).
 
-         Comme indiqué précédemment, le texte suivant est également ajouté à la notification :
+        Comme indiqué, si vous sélectionnez une option qui envoie les messages signalés à Microsoft, le texte suivant est également ajouté à la notification :
 
-         > Votre courrier électronique sera envoyé tel quel à Microsoft pour analyse. Certains courriers électroniques peuvent contenir des informations personnelles ou sensibles.
+        > Votre courrier électronique sera envoyé tel quel à Microsoft pour analyse. Certains courriers électroniques peuvent contenir des informations personnelles ou sensibles.
 
-       - **Après l’envoi**: cliquez sur ![ développer ](../../media/scc-expand-icon.png) . Dans les zones de **message** de **titre** et de confirmation, entrez le texte descriptif que les utilisateurs voient lorsqu’ils signalent un message à l’aide du complément de message de rapport. Vous pouvez utiliser la variable% type% pour inclure le type d’envoi.
+      - **Après l’envoi**: cliquez sur ![ développer ](../../media/scc-expand-icon.png) . Dans les zones de **message** de **titre** et de confirmation, entrez le texte descriptif que les utilisateurs voient lorsqu’ils signalent un message à l’aide du complément de message de rapport. Vous pouvez utiliser la variable% type% pour inclure le type d’envoi.
 
       Lorsque vous avez terminé, cliquez sur **Enregistrer**. Pour effacer ces valeurs, cliquez sur **restaurer** sur la page **soumissions** de l’utilisateur.
 
-   - **Envoyer les messages signalés à**: effectuez l’une des sélections suivantes :
+      - **Envoyer les messages signalés à**: effectuez l’une des sélections suivantes :
 
-     - **Microsoft (recommandé)**: la boîte aux lettres d’envoi n’est pas utilisée (tous les messages signalés sont transmis à Microsoft).
+        - **Microsoft (recommandé)**: la boîte aux lettres d’envoi n’est pas utilisée (tous les messages signalés sont transmis à Microsoft).
 
-     - **Microsoft et une boîte aux lettres personnalisée**: dans la zone qui s’affiche, entrez l’adresse de messagerie d’une boîte aux lettres Exchange Online existante. Les groupes de distribution ne sont pas autorisés.
+        - **Microsoft et une boîte aux lettres personnalisée**: dans la zone qui s’affiche, entrez l’adresse de messagerie d’une boîte aux lettres Exchange Online existante. Les groupes de distribution ne sont pas autorisés. Les soumissions des utilisateurs seront dirigées vers Microsoft pour analyse et vers la boîte aux lettres personnalisée que votre administrateur ou votre équipe chargée des opérations de sécurité doit analyser.
 
-     - **Boîte aux lettres personnalisée**: dans la zone qui s’affiche, entrez l’adresse de messagerie d’une boîte aux lettres Exchange Online existante. Les groupes de distribution ne sont pas autorisés.
+        - **Boîte aux lettres personnalisée**: dans la zone qui s’affiche, entrez l’adresse de messagerie d’une boîte aux lettres Exchange Online existante. Les groupes de distribution ne sont pas autorisés. Utilisez cette option si vous souhaitez que le message s’affiche en premier dans l’équipe d’administration ou d’opérations de sécurité d’analyse. Les messages ne seront pas envoyés à Microsoft à moins que l’administrateur ne le transfère.
 
-     Lorsque vous avez terminé, cliquez sur **confirmer**.
+        Lorsque vous avez terminé, cliquez sur **confirmer**.
 
-     ![Envoyer des messages signalés à Microsoft et à une boîte aux lettres personnalisée](../../media/user-submission-enable-outlook-report-message.png)
+        ![Envoyer des messages signalés à Microsoft et à une boîte aux lettres personnalisée](../../media/user-submission-enable-outlook-report-message.png)
+
+     > [!CAUTION]
+     > Si vous avez [désactivé la création de rapports de courrier indésirable dans Outlook sur le Web](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md#disable-or-enable-junk-email-reporting-in-outlook-on-the-web) à l’aide des stratégies de boîte aux lettres Outlook sur le Web, mais que vous configurez l’un des paramètres précédents pour signaler les messages à Microsoft, les utilisateurs pourront signaler les messages à Microsoft dans Outlook sur le Web à l’aide du complément Report message.
 
    - **Désactiver la fonctionnalité de rapport de message pour Outlook**: sélectionnez cette option si vous utilisez des outils de création de rapports tiers à la place du complément de rapport de message ou de la création de rapports intégrée dans Outlook sur le Web, puis configurez les paramètres suivants :
 
-     Sélectionnez **utiliser cette boîte aux lettres personnalisée pour recevoir des envois signalés par l’utilisateur**. Dans la zone qui s’affiche, entrez l’adresse de messagerie d’une boîte aux lettres existante ou l’adresse de messagerie de la boîte aux lettres que vous souhaitez créer.
+      Sélectionnez **utiliser cette boîte aux lettres personnalisée pour recevoir des envois signalés par l’utilisateur**. Dans la zone qui s’affiche, entrez l’adresse de messagerie d’une boîte aux lettres existante qui se trouve déjà dans Office 365. Il doit s’agir d’une boîte aux lettres existante dans Exchange Online qui peut recevoir des courriers électroniques.
 
-     Lorsque vous avez terminé, cliquez sur **confirmer**.
+      Lorsque vous avez terminé, cliquez sur **confirmer**.
 
-     ![Envoyer des messages signalés à une boîte aux lettres personnalisée à l’aide d’outils tiers](../../media/user-submission-disable-outlook-report-message.png)
+      ![Envoyer des messages signalés à une boîte aux lettres personnalisée à l’aide d’outils tiers](../../media/user-submission-disable-outlook-report-message.png)
+     
+## <a name="message-submission-format"></a>Format de dépôt des messages
+
+Les messages envoyés à des boîtes aux lettres personnalisées doivent suivre un format de message d’envoi spécifique. L’objet (titre de l’enveloppe) de l’envoi doit être au format suivant :
+
+`{(int)safetyApiAction}|{networkId}|{senderIp}|{fromAddress}|({subject.Substring(0, Math.Min(subjectLen, subject.Length))})`
+
+étaient SafetyApiAction :
+
+- Courrier indésirable = 1
+- NotJunk = 2
+- Hameçonnage = 3
+
+Dans l’exemple suivant :
+
+- Le message est signalé comme hameçonnage.
+- L’ID de message réseau est 49871234-6dc6-43e8-ABCD-08d797f20abe.
+- L’adresse IP de l’expéditeur est 167.220.232.101.
+- L’adresse de l’adresse est test@contoso.com.
+- L’objet du message électronique est « tester la soumission de hameçonnage »
+
+`3|49871234-6dc6-43e8-abcd-08d797f20abe|167.220.232.101|test@contoso.com|(test phish submission)`
+
+Les messages qui ne suivent pas ce format ne s’afficheront pas correctement dans le portail des dépôts.

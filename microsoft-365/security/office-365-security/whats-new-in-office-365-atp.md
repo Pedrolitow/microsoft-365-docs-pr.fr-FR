@@ -15,14 +15,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 02/21/2020
+ms.date: 05/15/2020
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 4e6dfaa8a6a2a0157e9274c7b25dae6e7aed2395
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 83ae99a75e3c3aa8d109766418abcf0888b8cbf4
+ms.sourcegitcommit: 76edb413cbd7436252075ea7e314f5e1d07d8d55
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44036583"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "44267166"
 ---
 # <a name="whats-new-in-office-365-atp"></a>Nouveautés d’Office 365 - Protection avancée contre les menaces
 
@@ -35,6 +35,10 @@ Cet article répertorie les nouvelles fonctionnalités de la dernière version d
 > [!TIP]
 > Vous n’avez pas encore Office 365 ATP ? [Contactez le service commercial pour commencer une version d’évaluation](https://go.microsoft.com/fwlink/p/?LinkId=518644).
 
+## <a name="marchapril-2020"></a>Mars/avril 2020
+
+- La possibilité d' [adresser des comptes d’utilisateurs compromis avec une enquête et une réponse automatisée](https://docs.microsoft.com/microsoft-365/security/office-365-security/address-compromised-users-quickly?view=o365-worldwide) est désormais généralement disponible.
+
 ## <a name="januaryfebruary-2020"></a>Janvier/février 2020
 
 - [Disponibilité générale des vues de campagne dans Office 365 DAV](campaigns.md)
@@ -46,7 +50,7 @@ Cet article répertorie les nouvelles fonctionnalités de la dernière version d
     - Options non Filter avancé (il s’agit d’options de filtrage avancées qui incluent ne pas inclure, pas, etc.)
     - Filtres de temps granulaire (jour, heure, demi-heure) 
 
-- Le widget **incidents** est maintenant le widget **Centre de notifications** . (Pour afficher vos widgets de sécurité, dans le centre de sécurité & conformité, accédez à la**vérification**de la **gestion** > des menaces.)
+- Le widget **incidents** est maintenant le widget **Centre de notifications** . (Pour afficher vos widgets de sécurité, dans le centre de sécurité & conformité, accédez à **gestion**  >  des menaces **Révision**.)
 
 - [Documents approuvés dans Microsoft 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/safe-docs) **(version d’évaluation)**
 
@@ -68,7 +72,7 @@ Cet article répertorie les nouvelles fonctionnalités de la dernière version d
 
 - [Afficher les en-têtes des messages électroniques et télécharger le corps du courrier](investigate-malicious-email-that-was-delivered.md) (plan 1 de l’ATP Office 365 ou plan 2)
 
-## <a name="august-2019"></a>Août 2019
+## <a name="august-2019"></a>Août 2019
 
 - [Affichage de la chronologie de l’e-mail](investigate-malicious-email-that-was-delivered.md#view-the-timeline-of-your-email) (plan 1 Office 365 DAV ou plan 2)
 
