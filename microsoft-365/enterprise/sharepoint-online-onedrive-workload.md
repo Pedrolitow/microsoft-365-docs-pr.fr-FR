@@ -13,12 +13,12 @@ ms.collection:
 - SPO_Content
 ms.custom: ''
 description: Suivez le processus de planification, de déploiement et de création de valeur de SharePoint au sein de votre organisation.
-ms.openlocfilehash: ee2c5592015361a678785cb8e4aaad9074c5d804
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 6b0483073a836f29b1faa5a30018848ef7b2df34
+ms.sourcegitcommit: 47c45bd81afdc4867ff2980ced3df31dbad92b84
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636915"
+ms.lasthandoff: 05/16/2020
+ms.locfileid: "44268208"
 ---
 # <a name="deploy-sharepoint-and-onedrive-for-microsoft-365-enterprise"></a>Déployer SharePoint et OneDrive pour Microsoft 365 Entreprise
 
@@ -67,10 +67,6 @@ Voici des piliers commerciaux qui peuvent répondre aux besoins de votre organis
 Consultez la rubrique sur l’[administration de SharePoint](https://docs.microsoft.com/sharepoint/sharepoint-online) pour obtenir des informations sur la configuration de SharePoint en fonction de vos besoins.
 
 Pour découvrir les avantages de SharePoint, étudiez la manière dont les individus, les équipes, les services ou l’ensemble de votre organisation interagissent actuellement, puis recherchez un scénario approprié qui propose des méthodes plus faciles pour stocker et partager des fichiers. Gardez à l’esprit que [Microsoft Teams](teams-workload.md) peut s’avérer un meilleur choix dans certains de vos scénarios.
-
-#### <a name="sharepoint-site-for-highly-regulated-data"></a>Sites SharePoint pour les données hautement réglementées
-
-Les données hautement réglementées sont soumises aux réglementations régionales représentent les données les plus précieuses de votre organisation comme les secrets commerciaux, les informations sur les ressources humaines ou financières et la stratégie de l’organisation. Vous pouvez configurer un site SharePoint pour un accès restreint, la classification des données, la protection contre la perte de données et le chiffrement pour ce type de données. Pour plus d’informations, consultez l’article [Les sites SharePoint et Microsoft Teams pour un scénario de données hautement réglementées](teams-sharepoint-online-sites-highly-regulated-data.md).
 
 #### <a name="result"></a>Résultat
 Une liste des scénarios SharePoint qui répondent aux besoins de votre organisation pour le stockage et le partage de documents, la gestion de contenu, la collaboration et la sécurité.

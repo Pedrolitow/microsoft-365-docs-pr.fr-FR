@@ -20,12 +20,12 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: c9f837af-8d71-4df1-a285-dedb1c5618b3
 description: 'Résumé : appliquez des étiquettes de rétention et des stratégies DLP à des sites d’équipe SharePoint Online, avec différents niveaux de protection des informations.'
-ms.openlocfilehash: ab9026fa4c00038abb166677277145c8129e33e2
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: b924b0d62d7c66a008739dfa12c0d1dd00deac9b
+ms.sourcegitcommit: 22e9f54d0d3ead2be91a38d49325308c70f43f90
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42081744"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "44262395"
 ---
 # <a name="protect-sharepoint-online-files-with-retention-labels-and-dlp"></a>Protéger les fichiers SharePoint Online avec des étiquettes de rétention et la protection contre la perte de données (DLP)
 
@@ -216,6 +216,10 @@ Utilisez ces étapes pour configurer une stratégie de protection contre la pert
 Voici le résultat de votre configuration pour les sites d’équipe SharePoint Online hautement confidentiels.
   
 ![Stratégie DLP pour un site d’équipe SharePoint Online isolé utilisant l’étiquette de rétention Hautement confidentiel](../media/f705d3d0-23c9-4333-8b70-ad3b91f835ea.png)
+
+### <a name="support-for-sensitivity-labels-is-coming"></a>La prise en charge des étiquettes de confidentialité est pour bientôt
+
+Vous pouvez actuellement utiliser uniquement une étiquette de rétention comme condition, et non une [étiquette de confidentialité](sensitivity-labels.md). Nous travaillons actuellement à l’utilisation d’une étiquette de confidentialité dans cette condition.
   
 ## <a name="next-step"></a>Étape suivante
 

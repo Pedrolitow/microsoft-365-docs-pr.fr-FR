@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Utilisation des fonctionnalités de sécurité sur Microsoft 365 Entreprise par Contoso.
-ms.openlocfilehash: f8a16b07c6d4cb9a62e0131a1f667b675d5eaf66
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: c0f3497eb49a0490fccf6c0ec5174d932a21005e
+ms.sourcegitcommit: 47c45bd81afdc4867ff2980ced3df31dbad92b84
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636485"
+ms.lasthandoff: 05/16/2020
+ms.locfileid: "44268397"
 ---
 # <a name="summary-of-microsoft-365-enterprise-security-for-the-contoso-corporation"></a>Résumé de la sécurité de Microsoft 365 Entreprise pour Contoso Corporation
 
@@ -134,9 +134,4 @@ Conformément aux meilleures pratiques de sécurité et aux exigences de déploi
 - Tableau de bord central de sécurité pour les utilisateurs utilisant le Centre de sécurité Windows Defender
 
   Contoso a déployé l’[application de sécurité Windows](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-security-center/windows-defender-security-center) vers ses PC et périphériques exécutant Windows 10 Entreprise afin que les utilisateurs puissent voir leur posture de sécurité en un clin d’œil et prendre des mesures.
-
-
-## <a name="next-step"></a>Étape suivante
-
-[Découvrez](contoso-sharepoint-online-site-for-highly-confidential-assets.md) comment Contoso a créé un site SharePoint pour les données hautement réglementées afin de favoriser la collaboration entre ses équipes de recherche.
 

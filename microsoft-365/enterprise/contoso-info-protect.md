@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Comprendre la façon dont Contoso utilise les fonctionnalités de protection des informations dans Microsoft 365 Entreprise pour sécuriser des biens numériques dans le cloud.
-ms.openlocfilehash: 41873f14ac52000635508aca4728572556692cc4
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 137e6ff499ba8fb119c696dba9337307876ee0c2
+ms.sourcegitcommit: 47c45bd81afdc4867ff2980ced3df31dbad92b84
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43625301"
+ms.lasthandoff: 05/16/2020
+ms.locfileid: "44268409"
 ---
 # <a name="information-protection-for-the-contoso-corporation"></a>Protection des informations de Contoso Corporation
 
@@ -65,15 +65,11 @@ Contoso a utilisé les étapes suivantes pour préparer Microsoft 365 Entrepris
 
    Contoso a créé des étiquettes de confidentialité pour ses niveaux de données dont les étiquettes hautement réglementées incluent chiffrement, autorisations et filigranes.
 
-4. Création de sites SharePoint protégés pour les données confidentielles et hautement réglementées avec des autorisations qui verrouillent l’accès.
-
-   Les sites sensibles et hautement réglementés ont été configurés en tant que sites d’équipe privés avec des restrictions d’autorisations supplémentaires. Les sites SharePoint confidentiels et hautement réglementés ont été également configurés avec une étiquette de rétention correspondante. Les fichiers stockés sur des sites SharePoint hautement réglementés sont protégés par une sous-étiquette de confidentialité fortement réglementée. Pour plus d’informations, consultez le scénario des [sites SharePoint pour données hautement réglementées](teams-sharepoint-online-sites-highly-regulated-data.md).
-
-5.  Migration des données des sites SharePoint locaux et des partages de fichiers vers leurs nouveaux sites SharePoint
+4.  Migration des données des sites SharePoint locaux et des partages de fichiers vers leurs nouveaux sites SharePoint
 
     Les fichiers ayant migré vers les nouveaux sites SharePoint ont hérité des étiquettes de rétention par défaut attribuées au site.
 
-6.  Formation des employés sur la façon d’utiliser les étiquettes de confidentialité pour les nouveaux documents, d’interagir avec les services informatiques Contoso lors de la création de nouveaux sites SharePoint et de constamment stocker les biens numériques sur les sites SharePoint
+5.  Formation des employés sur la façon d’utiliser les étiquettes de confidentialité pour les nouveaux documents, d’interagir avec les services informatiques Contoso lors de la création de nouveaux sites SharePoint et de constamment stocker les biens numériques sur les sites SharePoint
 
     Cette partie étant considérée comme la plus difficile au niveau de la transition en protection des informations pour le cloud, les services informatiques et de gestion de Contoso ont dû modifier les mauvaises habitudes de stockage d’information des employés de l’organisation pour systématiquement étiqueter leurs biens numériques dans le cloud, renoncer au partage de fichiers sur site et ne jamais utiliser les services de stockage cloud de tiers ou de clés USB.
 
@@ -107,9 +103,9 @@ Le tableau suivant décrit le mappage des niveaux de données de Contoso aux fon
 
 |||||
 |:-------|:-----|:-----|:-----|
-| | **Office 365** | **Applications Windows 10 et Microsoft 365 pour les entreprises** | **EMS** |
+| | **Office 365** | **Windows 10 et Microsoft 365 Apps for enterprise** | **EMS** |
 | Niveau 1 : ligne de base  | Stratégies d’accès conditionnel à SharePoint et à Exchange Online <BR> Autorisations sur les sites SharePoint | Étiquettes de confidentialité <BR> BitLocker <BR> Protection des informations Windows | Stratégies d’accès conditionnel aux matériels et stratégies de gestion des applications mobiles |
-| Niveau 2 : Sensible | Niveau 1 plus : <BR> <BR> Étiquettes de confidentialité <BR> Étiquettes de rétention Microsoft 365 sur les sites SharePoint <BR> Protection contre la perte de données pour SharePoint et Exchange Online <BR> Sites SharePoint isolés  | Niveau 1 plus : <BR> <BR> Étiquettes de sensibilité sur les biens numériques  | Niveau 1 |
+| Niveau 2 : Sensible | Niveau 1 plus : <BR> <BR> Étiquettes de confidentialité <BR> Étiquettes de rétention Microsoft 365 sur les sites SharePoint <BR> Protection contre la perte de données pour SharePoint et Exchange Online <BR> Sites SharePoint isolés  | Niveau 1 plus : <BR> <BR> Étiquettes de sensibilité sur les biens numériques  | Niveau 1 |
 | Niveau 3 : hautement réglementé | Niveau 2 plus : <BR><BR> Chiffrement Bring Your Own Key (BYOK) et protection des informations commerciales secrètes <BR> Azure Key Vault pour les applications métier qui interagissent avec les services Microsoft 365 | Niveau 2 | Niveau 1 |
 |||||
 

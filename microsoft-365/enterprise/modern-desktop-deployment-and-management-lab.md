@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: En savoir plus sur le point et où pour accéder au Kit laboratoire de déploiement Windows et Office.
-ms.openlocfilehash: 7df489b75f1c104bb9ad541bbdc2ce09e7a669de
-ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
+ms.openlocfilehash: 48d8cf5bc618f4f1e840872c4369bc5cdda19727
+ms.sourcegitcommit: 22e9f54d0d3ead2be91a38d49325308c70f43f90
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "44011958"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "44262556"
 ---
 # <a name="windows-and-office-deployment-lab-kit"></a>Kit laboratoire de déploiement Windows et Office
 
@@ -113,7 +113,7 @@ Des guides de laboratoire détaillés vous guident dans plusieurs scénarios de 
 
 [Télécharger le Kit laboratoire de déploiement Windows et Office](https://www.microsoft.com/evalcenter/evaluate-lab-kit).
 
-*Utilisez une large bande passante pour télécharger ce contenu afin d’améliorer votre expérience de téléchargement et bénéficier d’une configuration automatique de 30 à 45 minutes. L’environnement de laboratoire nécessite un minimum de 16 Go de mémoire disponible et 150 Go d’espace disque libre. Pour des performances optimales, 32 Go libres sont recommandés. Le laboratoire arrive à expiration le 18 avril 2020. Une nouvelle version sera publiée avant l’expiration.*
+*Utilisez une large bande passante pour télécharger ce contenu afin d’améliorer votre expérience de téléchargement et bénéficier d’une configuration automatique de 30 à 45 minutes. L’environnement de laboratoire nécessite un minimum de 16 Go de mémoire disponible et 150 Go d’espace disque libre. Pour des performances optimales, 32 Go libres sont recommandés. Le laboratoire arrive à expiration le 5 juillet 2020. Une nouvelle version sera publiée avant l’expiration.*
 
 ## <a name="additional-guidance"></a>Conseils supplémentaires
 

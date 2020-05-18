@@ -15,18 +15,18 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Les étapes du déploiement de l’infrastructure de protection des informations pour Microsoft 365 Entreprise.
-ms.openlocfilehash: 0e6fdf1a9c63200bfb57fc9f833515553c1609f4
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: d6e3501e8262a0c3245c6e13da6633ac465276fb
+ms.sourcegitcommit: 47c45bd81afdc4867ff2980ced3df31dbad92b84
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631620"
+ms.lasthandoff: 05/16/2020
+ms.locfileid: "44268302"
 ---
 # <a name="phase-6-information-protection"></a>Phase 6 : Protection des informations
 
 ![Phase 6 : Protection des informations](../media/deploy-foundation-infrastructure/infoprotection_icon.png)
 
-La protection des informations est un ensemble de stratégies et de technologies qui définissent la façon dont vous transmettez, stockez et traitez les informations sensibles. À la phase 6, vous accédez aux fonctionnalités et aux paramètres de protection des informations de Microsoft 365 Entreprise qui vous aident à sécuriser les données pour vos scénarios et charges de travail informatiques.
+La protection des informations est un ensemble de stratégies et de technologies qui définissent la façon dont vous transmettez, stockez et traitez les informations sensibles. À la Phase 6, vous accédez aux fonctionnalités et paramètres de protection des informations de Microsoft 365 Entreprise qui vous aident à sécuriser les données pour vos charges de travail informatiques.
 
 >[!Note]
 >Si vous avez déjà déployé la protection des informations, consultez les [critères de sortie](infoprotect-exit-criteria.md) de cette phase pour vous assurer que vous répondez aux conditions requises et facultatives pour Microsoft 365 Entreprise.
