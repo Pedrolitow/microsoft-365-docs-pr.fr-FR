@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Cet article explique comment commencer à utiliser la découverte électronique de base dans Microsoft 365. Une fois que vous avez affecté des autorisations eDiscovery et créé un cas, vous pouvez ajouter des membres, créer des suspensions eDiscovery, puis Rechercher et exporter des données pertinentes pour votre enquête.
-ms.openlocfilehash: c9c3d8c3832703e8dbbcf8b2c04a566af0f5eb6b
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.openlocfilehash: 5faae81eb81ce8c69e3ae801d153c664ac152bda
+ms.sourcegitcommit: 6ea9a910a8106a5f1aa589c55d166bfa67fd12a8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43943383"
+ms.lasthandoff: 05/18/2020
+ms.locfileid: "44280544"
 ---
 # <a name="get-started-with-core-ediscovery"></a>Prise en main de la découverte électronique de base
 
@@ -42,11 +42,11 @@ La gestion des licences pour la découverte électronique principale nécessite 
 
    OR
 
-  - Une licence Microsoft 365 E1 ou Office 365 E1 avec une licence de module complémentaire Exchange Online plan 2 ou Exchange Online Archiving
+  - Licence Office 365 E1 avec une licence de module complémentaire Exchange Online plan 2 ou Exchange Online Archiving
 
   AND
 
-  - Une licence Microsoft 365 E1 ou Office 365 E1 avec une licence de module complémentaire SharePoint Online plan 2 ou OneDrive entreprise plan 2
+  - Licence Office 365 E1 avec une licence de module complémentaire SharePoint Online plan 2 ou OneDrive entreprise plan 2
   
   Pour plus d’informations sur l’attribution des licences, voir [attribuer des licences à des utilisateurs](https://docs.microsoft.com/microsoft-365/admin/manage/assign-licenses-to-users).
 
