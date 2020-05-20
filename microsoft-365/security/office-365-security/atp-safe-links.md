@@ -6,7 +6,6 @@ ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
 audience: Admin
-ms.date: 05/17/2019
 ms.topic: overview
 f1_keywords:
 - "197503"
@@ -26,12 +25,12 @@ search.appverid:
 - ZWD160
 ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: Dans cet article, vous découvrirez comment utiliser les liens fiables pour protéger votre organisation contre le hameçonnage et les autres attaques.
-ms.openlocfilehash: 9f6222889d213c25c7411e39f0714ccf09cfe0d9
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 3dfa4016b34f430a260c9af4be2ed0c4126dea34
+ms.sourcegitcommit: 4ce28ad4d17d336106c1720d65349f19f9e90e04
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208946"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44294228"
 ---
 # <a name="atp-safe-links"></a>Liens fiables ATP
 
@@ -40,7 +39,7 @@ ms.locfileid: "44208946"
 > [!IMPORTANT]
 > Cet article est destiné aux entreprises qui ont [Office 365 – Protection avancée contre les menaces](office-365-atp.md). Si vous utilisez Outlook.com, la famille Microsoft 365 ou Microsoft 365 personnel, et que vous recherchez des informations sur les liens fiables dans Outlook, consultez la rubrique [Advanced Outlook.com Security](https://support.office.com/article/882d2243-eab9-4545-a58a-b36fee4a46e2).
 
-Office 365 DAV Safe Links (partie de la [protection avancée contre les menaces](office-365-atp.md)) peut vous aider à protéger votre organisation en fournissant un temps de clic pour la vérification des adresses Web (URL) dans [les messages électroniques](how-atp-safe-links-works.md#how-atp-safe-links-works-with-urls-in-email) et les [documents Office](how-atp-safe-links-works.md#how-atp-safe-links-works-with-urls-in-office-documents). La protection est définie via les [stratégies de liens fiables ATP](set-up-atp-safe-links-policies.md) définies par votre équipe de sécurité Microsoft 365.
+Office 365 DAV Safe Links (partie d' [office 365 Advanced Threats protection](office-365-atp.md)) peut vous aider à protéger votre organisation en fournissant un temps de vérification des adresses Web (URL) dans [les messages électroniques](how-atp-safe-links-works.md#how-atp-safe-links-works-with-urls-in-email) et les [documents Office](how-atp-safe-links-works.md#how-atp-safe-links-works-with-urls-in-office-documents). La protection est définie via les [stratégies de liens fiables ATP](set-up-atp-safe-links-policies.md) définies par votre équipe de sécurité Microsoft 365.
   
 Une fois vos stratégies de liens fiables ATP en place, les administrateurs généraux, les administrateurs de sécurité et les lecteurs de sécurité peuvent [afficher des rapports pour une protection avancée contre les menaces](view-reports-for-atp.md). Les informations contenues dans ces rapports peuvent aider votre équipe de sécurité à prendre des mesures supplémentaires pour protéger votre organisation ou Rechercher des incidents de sécurité.
 
@@ -48,7 +47,7 @@ Une fois vos stratégies de liens fiables ATP en place, les administrateurs gén
          
 ## <a name="how-to-get-atp-safe-links-protection"></a>Comment obtenir la protection des liens fiables ATP
 
-Tout d’abord, assurez-vous **que votre abonnement inclut la [protection avancée contre les menaces](office-365-atp.md)**. La protection avancée contre les menaces est incluse dans les abonnements, tels que [microsoft 365 entreprise](https://www.microsoft.com/microsoft-365/enterprise/home), [Microsoft 365 Business Premium](https://www.microsoft.com/microsoft-365/business), Office 365 entreprise E5, Office 365 éducation a5, etc. Si votre organisation dispose d’un abonnement Microsoft 365 qui n’inclut pas Office 365 ATP, vous pouvez acheter l’ATP en tant que module complémentaire. Pour plus d’informations, reportez-vous aux ressources suivantes : 
+Tout d’abord, assurez-vous **que votre abonnement inclut [Office 365 protection avancée contre les menaces](office-365-atp.md) ** Plan 1 ou plan 2. La protection avancée contre les menaces Office 365 est incluse dans les abonnements, tels que [microsoft 365 entreprise](https://www.microsoft.com/microsoft-365/enterprise/home), [Microsoft 365 Business Premium](https://www.microsoft.com/microsoft-365/business), Office 365 entreprise E5, Office 365 éducation a5, etc. Si votre organisation dispose d’un abonnement Microsoft 365 qui n’inclut pas Office 365 ATP, vous pouvez acheter l’ATP en tant que module complémentaire. Pour plus d’informations, reportez-vous aux ressources suivantes : 
 
 - [Offres et tarifs de protection avancée contre les menaces Office 365](https://products.office.com/exchange/advance-threat-protection)
 

@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: ace04c61b8bb26661201b3a2616799f0dc4ea87e
-ms.sourcegitcommit: 9ffa2fd25776726475e10148940987fa076bbd91
+ms.openlocfilehash: 68e8f432008a6322921ef440878a1cca1354e196
+ms.sourcegitcommit: 261d51b90a9ad53a6a42348c414b1b1e1230c37f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44162676"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44292472"
 ---
 # <a name="get-started-with-insider-risk-management"></a>Prise en main de la gestion des risques internes
 
@@ -60,9 +60,9 @@ En fonction de la structure de votre équipe de gestion de la conformité, vous 
 
 Procédez comme suit pour ajouter des utilisateurs à un groupe de rôles de gestion des risques Insider :
 
-1. Connectez- [https://protection.office.com/permissions](https://protection.office.com/permissions) vous à l’aide des informations d’identification d’un compte d’administrateur dans votre organisation Microsoft 365. "" "" "" ""
+1. Connectez-vous [https://protection.office.com/permissions](https://protection.office.com/permissions) à l’aide des informations d’identification d’un compte d’administrateur dans votre organisation Microsoft 365. "" "" "" ""
 
-2. Dans le centre &amp; de sécurité conformité, accédez à **autorisations**. Sélectionnez le lien pour afficher et gérer les rôles dans Office 365.
+2. Dans le centre de sécurité &amp; conformité, accédez à **autorisations**. Sélectionnez le lien pour afficher et gérer les rôles dans Office 365.
 
 3. Sélectionnez le groupe de rôles Gestion des risques Insiders auquel vous souhaitez ajouter des utilisateurs, puis sélectionnez **modifier le groupe de rôles**.
 
@@ -118,7 +118,7 @@ Avant de configurer une stratégie, définissez les paramètres de risque Inside
     >Pour recevoir des alertes relatives aux activités à risque définies dans vos stratégies, vous devez sélectionner un ou plusieurs indicateurs.
 
 4. Dans la page périodes de la **stratégie** , sélectionnez les [périodes de stratégie](insider-risk-management-policies.md#policy-timeframes) à appliquer à un utilisateur lorsqu’il déclenche une correspondance pour une stratégie de risque initié par les utilisateurs.
-5. Sur la page **détections intelligentes** , configurez les [détections d’anomalies et de langues choquantes](insider-risk-management-policies.md#intelligent-detections) pour les stratégies de risque pour les initiés.
+5. Sur la page **détections intelligentes** , configurez la [détection d’anomalies, la détection de langue offensante et le niveau de volume d’alerte](insider-risk-management-policies.md#intelligent-detections) pour les stratégies de risque d’initié.
 6. Sélectionnez **Enregistrer** pour activer ces paramètres pour vos stratégies de risque Insider.
 
 ## <a name="step-5-required-create-an-insider-risk-management-policy"></a>Étape 5 (obligatoire) : créer une stratégie de gestion des risques Insider
@@ -142,8 +142,8 @@ Les stratégies de gestion des risques internes incluent les utilisateurs affect
     - **Type d’informations sensibles**: sélectionnez **Ajouter un type d’informations sensibles** et sélectionnez les types de critère de diffusion dont vous souhaitez définir la priorité. Par exemple, *« numéro de compte bancaire américain »* et *« numéro de carte de crédit »*.
     - **Étiquettes de sensibilité**: sélectionnez **Ajouter une étiquette de confidentialité** et sélectionnez les étiquettes dont vous souhaitez définir la priorité. Par exemple, *« confidentiel »* et *« secret »*.
 7. Sélectionnez **suivant** pour continuer.
-8. Sur la **page indicateurs d’alerte** , vous verrez les indicateurs que vous avez définis sur la page**indicateurs** de paramètres > de **risque inSided**. Si vous avez sélectionné le modèle *fuites de données* au début de l’Assistant, vous devez sélectionner une stratégie DLP dans la liste déroulante **stratégie DLP** .
-9. Sur la page **Sélectionner la fenêtre d’analyse** , vous verrez les conditions de la fenêtre de [surveillance](insider-risk-management-policies.md#policy-timeframes) pour la stratégie qui s’affichent dans la page**périodes de stratégie** des paramètres > des **risques Insider**. Si vous avez sélectionné le modèle de stratégie de *vol de données par employé* , vous pouvez activer la case à cocher valider l’activité après *arrêt* pour détecter toute activité postérieure à la date d’expiration importée du connecteur RH de Microsoft 365.
+8. Sur la page **indicateurs d’alerte** , vous verrez les indicateurs que vous avez définis sur la page indicateurs de paramètres de **risque inSided**  >  **Indicators** . Si vous avez sélectionné le modèle *fuites de données* au début de l’Assistant, vous devez sélectionner une stratégie DLP dans la liste déroulante **stratégie DLP** .
+9. Sur la page **Sélectionner la fenêtre d’analyse** , vous verrez les conditions de la fenêtre de [surveillance](insider-risk-management-policies.md#policy-timeframes) pour la stratégie qui s’affichent dans la page périodes de stratégie des **paramètres des risques Insider**  >  **Policy timeframes** . Si vous avez sélectionné le modèle de stratégie de *vol de données par employé* , vous pouvez activer la case à cocher valider l’activité après *arrêt* pour détecter toute activité postérieure à la date d’expiration importée du connecteur RH de Microsoft 365.
 10. Sélectionnez **suivant** pour continuer.
 11. Sur la page **révision** , passez en revue les paramètres que vous avez choisis pour la stratégie. Sélectionnez **modifier** pour modifier les valeurs de la stratégie ou sélectionnez **Envoyer** pour créer et activer la stratégie.
 

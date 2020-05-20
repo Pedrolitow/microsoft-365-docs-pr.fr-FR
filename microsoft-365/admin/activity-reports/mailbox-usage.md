@@ -18,12 +18,12 @@ search.appverid:
 - GEA150
 ms.assetid: beffbe01-ce2d-4614-9ae5-7898868e2729
 description: Découvrez comment obtenir un rapport d’utilisation des boîtes aux lettres pour connaître les activités des utilisateurs à l’aide d’une boîte aux lettres utilisateur.
-ms.openlocfilehash: 7453bf20949e04f07d74f6cf1df13e88de522b92
-ms.sourcegitcommit: 2b626a7924b4be08f6eb21181453b778e6fde418
+ms.openlocfilehash: a866a586c9d36be03b39cb1c75be884eae3cb41b
+ms.sourcegitcommit: 5c43e89ed94ad9fd1db049446383c65e548189b7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/30/2020
-ms.locfileid: "43046926"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44321992"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---mailbox-usage"></a>Rapports Microsoft 365 dans le centre d’administration-utilisation des boîtes aux lettres
 
@@ -37,7 +37,7 @@ Le **rapport d’utilisation des boîtes aux lettres** fournit des informations 
 1. Dans le centre d’administration, accédez à la page **Rapports** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">Utilisation</a>.
 
     
-2. Dans la liste déroulante **Sélectionner un rapport** , sélectionnez **utilisation des boîtes aux lettres** **Exchange** \> .
+2. Dans la liste déroulante **Sélectionner un rapport** , **Exchange** sélectionnez \> **utilisation des boîtes aux lettres**Exchange.
   
 ## <a name="interpret-the-mailbox-usage-report"></a>Interpréter le rapport Utilisation des boîtes aux lettres
 
@@ -48,7 +48,7 @@ Pour obtenir un aperçu de l' **utilisation des boîtes aux lettres** de votre o
 |1.  <br/> |Le rapport **Utilisation des boîtes aux lettres** permet d'observer les tendances des 7, 30, 90 ou 180 derniers jours. Toutefois, si vous sélectionnez un jour particulier dans le rapport, le tableau affiche les données de 28 jours maximum à compter de la date actuelle (pas la date à laquelle le rapport a été généré).  <br/> |
 |2.  <br/> |Les données de chaque rapport couvrent généralement les 24 à 48 heures.  <br/> |
 |3.  <br/> |Le graphique Boîte aux lettres vous montre le nombre total de boîtes aux lettres utilisateur au sein de votre organisation ainsi que le nombre total de boîtes aux lettres actives pour un jour donné de la période de rapport. Une boîte aux lettres utilisateur est considérée comme étant active si elle avait un message électronique envoyer, lire, créer un rendez-vous, envoyer une réunion, accepter une réunion, refuser une réunion et annuler une activité de réunion.  <br/> |
-|4.  <br/> |Le graphique **Stockage** présente l'espace de stockage utilisé au sein de votre organisation. Le graphique de stockage n’inclut pas les boîtes aux lettres d’archivage. Pour plus d’informations sur l’archivage à extension automatique, consultez la rubrique [Overview of Unlimited Archiving in Microsoft 365](https://docs.microsoft.com/office365/securitycompliance/unlimited-archiving).<br/> |
+|4.  <br/> |Le graphique **Stockage** présente l'espace de stockage utilisé au sein de votre organisation. Le graphique de stockage n’inclut pas les boîtes aux lettres d’archivage. Pour plus d’informations sur l’archivage à extension automatique, consultez la rubrique [Overview of Unlimited Archiving in Microsoft 365](https://docs.microsoft.com/microsoft-365/compliance/unlimited-archiving).<br/> |
 |5.  <br/> | Le graphique **Quota** présente le nombre de boîtes aux lettres utilisateur dans chaque catégorie de quota. Il existe quatre catégories de quota :  <br/>  Satisfaisante - Nombre d'utilisateurs dont l'espace de stockage utilisé est inférieur au quota d'émission d'avertissement.  <br/>  Avertissement - Nombre d'utilisateurs dont l'espace de stockage utilisé est supérieur ou égal au quota d'émission d'avertissement, mais inférieur au quota d'interdiction d'envoi.  <br/>  Envoi impossible - Nombre d'utilisateurs dont l'espace de stockage utilisé est supérieur ou égal au quota d'interdiction d'envoi, mais inférieur au quota d'interdiction d'envoi et de réception.  <br/>  Envoi/réception impossible - Nombre d'utilisateurs dont l'espace de stockage utilisé est supérieur ou égal au quota d'interdiction d'envoi et de réception.  <br/> |
 |6.  <br/> | Sur le graphique **Boîte aux lettres**, l'axe Y représente le nombre de boîtes aux lettres utilisateur.  <br/>  Dans le graphique **Stockage**, l'axe Y indique la quantité d'espace de stockage utilisée par les boîtes aux lettres utilisateur au sein de votre organisation.  <br/>  Sur le graphique **Quota**, l'axe Y représente le nombre de boîtes aux lettres utilisateur appartenant à chaque catégorie de quota de stockage.  <br/>  L'axe X sur les graphiques Boîte aux lettres et Stockage indique la plage de dates sélectionnée pour ce rapport particulier.  <br/>  L'axe X sur le graphique Quota indique la catégorie du quota.  <br/> |
 |7.  <br/> |Vous pouvez filtrer les graphiques que vous voyez en sélectionnant un élément dans la légende.  <br/> |

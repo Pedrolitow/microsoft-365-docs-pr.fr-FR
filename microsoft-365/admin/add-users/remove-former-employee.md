@@ -24,19 +24,19 @@ search.appverid:
 - MOE150
 ms.assetid: 44d96212-4d90-4027-9aa9-a95eddb367d1
 description: 'Suivez cette liste de vérification pour supprimer un employé de Microsoft 365 et sécuriser les données. '
-ms.openlocfilehash: d54a37575c0280ca9ad23fdd4a4b878286dde1ab
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: bfde2f55f12967e15213ecb12274a215c4190c93
+ms.sourcegitcommit: 5c43e89ed94ad9fd1db049446383c65e548189b7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44140592"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44322086"
 ---
 # <a name="remove-a-former-employee"></a>Supprimer un ancien employé
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> Le centre d’administration change. Si votre expérience ne correspond pas aux détails présentés ici, reportez-vous [à la rubrique à propos du nouveau centre d’administration Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> Le centre d’administration change. Si votre expérience ne correspond pas aux informations présentées ici, voir [À propos du nouveau centre d’administration Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
 
 ::: moniker-end
   
@@ -135,7 +135,7 @@ Il existe deux façons d'enregistrer le contenu de la boîte aux lettres de l'an
     
     Les boîtes aux lettres inactives ne peuvent pas recevoir de courriers, et n'apparaissent pas dans le carnet d'adresses partagé de votre organisation ou d'autres listes.
     
-    Pour savoir comment placer une conservation sur une boîte aux lettres, consultez la rubrique [gestion des boîtes aux lettres inactives dans Exchange Online](https://docs.microsoft.com/office365/securitycompliance/create-and-manage-inactive-mailboxes).
+    Pour savoir comment placer une conservation sur une boîte aux lettres, consultez la rubrique [gestion des boîtes aux lettres inactives dans Exchange Online](https://docs.microsoft.com/microsoft-365/compliance/create-and-manage-inactive-mailboxes).
     
 ## <a name="forward-a-former-employees-email-to-another-employee-or-convert-to-a-shared-mailbox"></a>Transférer l'adresse e-mail d'un ancien employé à un autre employé ou la convertir en boîte aux lettres partagée
 <a name="bkmk_forward"> </a>
@@ -218,7 +218,7 @@ Si votre ancien employé disposait d'un téléphone fourni par l'organisation, v
     
 4. Sélectionnez l’utilisateur, puis sous **appareils mobiles**, sélectionnez **afficher les détails**. 
     
-5. Sur la page Détails de l' **appareil mobile** , sous **appareils mobiles**, sélectionnez l’appareil mobile, sélectionnez **Réinitialiser**![l'](../../media/1c113a36-53cb-4974-884f-3ecd9535506e.png)effacement de données, puis **bloquer**. 
+5. Sur la page Détails de l' **appareil mobile** , sous **appareils mobiles**, sélectionnez l’appareil mobile, sélectionnez Réinitialiser l’effacement de **données** ![ ](../../media/1c113a36-53cb-4974-884f-3ecd9535506e.png) , puis **bloquer**. 
     
 6. Sélectionnez **Enregistrer**. 
     
@@ -325,7 +325,7 @@ Lorsque vous effectuez cette opération, toutes les données de cet utilisateur 
 
 
 
-1. Dans le centre d’administration, accédez à la page **facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">de vos produits</a> .
+1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produits</a>.
 
 
 ::: moniker-end

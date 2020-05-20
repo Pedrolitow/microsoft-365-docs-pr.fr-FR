@@ -20,12 +20,12 @@ search.appverid:
 - GEA150
 ms.assetid: 097ae285-c4af-4319-9770-e2559d66e4c8
 description: 'Les administrateurs Exchange Online gèrent les courriers électroniques et les boîtes aux lettres de votre organisation. Par exemple, ils récupèrent les éléments supprimés dans la boîte aux lettres d’un utilisateur. '
-ms.openlocfilehash: e45d6a0e9f2151e03a300b1e36bf53b7c9f8ef68
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 984345dd92e9b9a6da3c803b77b663bd8299c62e
+ms.sourcegitcommit: 5c43e89ed94ad9fd1db049446383c65e548189b7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43618907"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44322074"
 ---
 # <a name="about-the-exchange-online-admin-role"></a>À propos du rôle d’administrateur Exchange Online
 
@@ -37,7 +37,7 @@ Voici quelques-unes des tâches clés que les utilisateurs peuvent effectuer lor
   
 - [Récupérer des éléments supprimés dans une boîte aux lettres utilisateur - Aide aux administrateurs](https://docs.microsoft.com/office365/enterprise/recover-deleted-items-in-a-mailbox)
     
-- [Configurez une stratégie d’archivage et de suppression pour les boîtes aux lettres de votre organisation](https://docs.microsoft.com/office365/securitycompliance/set-up-an-archive-and-deletion-policy-for-mailboxes).
+- [Configurez une stratégie d’archivage et de suppression pour les boîtes aux lettres de votre organisation](https://docs.microsoft.com/microsoft-365/compliance/set-up-an-archive-and-deletion-policy-for-mailboxes).
     
 - Configurez des fonctionnalités de boîte aux lettres, telles que la stratégie de partage de boîtes aux lettres : comment les utilisateurs peuvent partager des informations de calendrier et de contacts avec d’autres personnes en dehors de votre organisation. 
     
@@ -45,7 +45,7 @@ Voici quelques-unes des tâches clés que les utilisateurs peuvent effectuer lor
     
 - [Créez une boîte aux lettres partagée](../email/create-a-shared-mailbox.md) pour permettre à un groupe de personnes de surveiller et d’envoyer des courriers électroniques à partir d’une adresse de messagerie commune. 
     
-- Filtres de protection contre le [courrier indésirable](https://docs.microsoft.com/office365/securitycompliance/anti-spam-protection) et de programmes malveillants pour l’organisation. 
+- Filtres de protection contre le [courrier indésirable](https://docs.microsoft.com/microsoft-365/security/office-365-security/anti-spam-protection) et de programmes malveillants pour l’organisation. 
     
 - Gérer les groupes Microsoft 365
     

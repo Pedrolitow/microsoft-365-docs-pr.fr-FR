@@ -1,17 +1,17 @@
 ---
 title: Sécurité dans le bureau géré Microsoft
 description: ''
-keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
+keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.date: 09/24/2018
-ms.openlocfilehash: 6b18b0c681950c2bce75045aef70dd3d021b0fb9
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 791a69433653de3960af6f8d8e1e9b23067dd6c0
+ms.sourcegitcommit: 5c43e89ed94ad9fd1db049446383c65e548189b7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42250434"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44322004"
 ---
 # <a name="security-in-microsoft-managed-desktop"></a>Sécurité dans le bureau géré Microsoft
 
@@ -25,6 +25,7 @@ Microsoft Managed Desktop utilise plusieurs technologies Microsoft pour sécuris
 - [Sécurité réseau](#network-security) – informations VPN et solution et paramètres recommandés pour Microsoft Managed Desktop
 - [Sécurité des informations](#information-security) – services disponibles en option pour protéger davantage les informations sensibles 
 
+Pour plus d’informations sur le stockage de données, l’utilisation et les pratiques de sécurité utilisées par le bureau géré Microsoft, téléchargez notre livre blanc sur la page [https://aka.ms/mmd-data](https://aka.ms/mmd-data) .
 
 Pour en savoir plus sur l’équipe des opérations de sécurité de Microsoft Managed Desktop et sur la façon dont elles fonctionnent pour assurer la sécurité de vos appareils, consultez la vidéo sur les [opérations de sécurité de bureau géré Microsoft](https://www.microsoft.com/videoplayer/embed/RE4q6nP). 
 

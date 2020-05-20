@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: d945f7dd-f62f-4ca7-b3e7-469824cfd493
 description: Utilisez eDiscovery et les outils de recherche pour gérer et répondre à un incident de débordement de données dans votre organisation.
-ms.openlocfilehash: 708343992d2b8d51d9b10f89cd6b986de00423d6
-ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
+ms.openlocfilehash: 4246460f2f7d7fdc41754fc2acd3125601bb5f79
+ms.sourcegitcommit: 261d51b90a9ad53a6a42348c414b1b1e1230c37f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "44166055"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44292450"
 ---
 # <a name="ediscovery-solution-series-data-spillage-scenario---search-and-purge"></a>série de solutions eDiscovery : scénario de fuite de données-recherche et purge
 
@@ -90,7 +90,7 @@ Si une licence Office 365 E5 est attribuée à un dépositaire ou à un utilisat
 
 Lorsque vous trouvez un message électronique contenant des données déduites, vérifiez les destinataires du message afin de déterminer s’il a été partagé en externe. Pour poursuivre le suivi d’un message, vous pouvez collecter les informations et la plage de dates de l’expéditeur de sorte que vous puissiez utiliser les journaux de suivi des messages, comme décrit à l' [étape 5](#step-5-use-message-trace-log-to-check-how-spilled-data-was-shared).
 
-Afer vous avez vérifié les résultats de la recherche, vous souhaiterez peut-être partager vos découvertes avec d’autres personnes pour une révision secondaire. Les personnes auxquelles vous avez attribué le cas à l’étape 1 peuvent passer en revue le contenu de la découverte électronique avancée et eDiscovery et approuver les résultats de la recherche de cas. Vous pouvez également générer un rapport sans exporter le contenu réel. Vous pouvez également utiliser ce même rapport comme preuve de suppression, comme décrit à l' [étape 8](#step-8-verify-provide-a-proof-of-deletion-and-audit).
+Une fois que vous avez vérifié les résultats de la recherche, vous souhaiterez peut-être partager vos découvertes avec d’autres personnes pour une révision secondaire. Les personnes auxquelles vous avez attribué le cas à l’étape 1 peuvent passer en revue le contenu de la découverte électronique avancée et eDiscovery et approuver les résultats de la recherche de cas. Vous pouvez également générer un rapport sans exporter le contenu réel. Vous pouvez également utiliser ce même rapport comme preuve de suppression, comme décrit à l' [étape 8](#step-8-verify-provide-a-proof-of-deletion-and-audit).
   
  **Pour générer un rapport statistique :**
   
@@ -157,14 +157,15 @@ Ouvrez le rapport de synthèse d’exportation que vous avez téléchargé à l'
 Si la récupération d’élément unique est activée ou si une boîte aux lettres est placée en conservation, un message supprimé définitivement (purgé) est conservé dans le dossier éléments récupérables. Par conséquent, avant de pouvoir purger les données débloquées, vous devez vérifier les configurations des boîtes aux lettres existantes et désactiver la récupération d’élément unique et supprimer les stratégies de conservation ou de rétention. N’oubliez pas que vous pouvez préparer une boîte aux lettres à la fois, puis exécuter la même commande sur différentes boîtes aux lettres ou créer un script PowerShell pour préparer plusieurs boîtes aux lettres en même temps.
 
 - Voir « étape 1 : collecte des informations sur la boîte aux lettres » dans [supprimer des éléments du dossier éléments récupérables des boîtes aux lettres en nuage](delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md#step-1-collect-information-about-the-mailbox) pour obtenir des instructions sur la manière de vérifier si la récupération d’élément unique est activée ou si la boîte aux lettres est placée en conservation ou si elle est affectée à une stratégie de rétention. 
-    
+
 - Pour obtenir des instructions sur la désactivation de la récupération d’élément unique, voir « étape 2 : préparer la boîte aux lettres » dans [supprimer des éléments du dossier éléments récupérables des boîtes aux lettres en nuage](delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md#step-2-prepare-the-mailbox) . 
-    
+
 - Pour obtenir des instructions sur la suppression d’une stratégie de conservation ou de rétention d’une boîte aux lettres, consultez la section « étape 3 : supprimer toutes les suspensions de la boîte aux lettres » dans [la rubrique Suppression des éléments du dossier éléments récupérables des boîtes aux lettres en nuage](delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md#step-3-remove-all-holds-from-the-mailbox) . 
 
 - Consultez la section « étape 4 : supprimer le délai de conservation de la boîte aux lettres » dans [la rubrique supprimer des éléments du dossier éléments récupérables des boîtes aux lettres en nuage](delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md#step-4-remove-the-delay-hold-from-the-mailbox) pour obtenir des instructions sur la suppression du blocage de retard placé sur la boîte aux lettres après la suppression d’un type de conservation.
-    
- **Important :** Vérifiez auprès de votre gestion des enregistrements ou de vos services juridiques avant de supprimer une stratégie de conservation ou de rétention. Votre organisation peut avoir une stratégie qui détermine si une boîte aux lettres en attente ou un incident de débordement de données est prioritaire. 
+
+> [!IMPORTANT]
+> Vérifiez auprès de votre gestion des enregistrements ou de vos services juridiques avant de supprimer une stratégie de conservation ou de rétention. Votre organisation peut avoir une stratégie qui détermine si une boîte aux lettres en attente ou un incident de débordement de données est prioritaire. 
   
 Veillez à rétablir les configurations précédentes de la boîte aux lettres après avoir vérifié que les données déversées ont été définitivement supprimées. Consultez les détails de l' [étape 7](#step-7-permanently-delete-the-spilled-data).
 
@@ -173,6 +174,9 @@ Veillez à rétablir les configurations précédentes de la boîte aux lettres a
 À l’aide des emplacements de boîte aux lettres que vous avez collectés et préparés à l’étape 6, ainsi que de la requête de recherche créée et affinée à l’étape 3 pour rechercher les messages électroniques contenant les données indésirables, vous pouvez maintenant supprimer définitivement les données propagées.  Comme expliqué précédemment, pour supprimer des messages, vous devez être membre du groupe de rôles gestion de l’organisation ou disposer du rôle de gestion de la recherche et de la purge. Pour plus d’informations sur l’ajout d’utilisateurs à un groupe de rôles, consultez la rubrique [Attribuer des autorisations eDiscovery dans le Centre de sécurité et conformité](https://docs.microsoft.com/microsoft-365/compliance/assign-ediscovery-permissions).
 
 Pour supprimer les messages déversés, reportez-vous aux étapes 2 & 3 dans [Rechercher et supprimer des messages électroniques](https://docs.microsoft.com/microsoft-365/compliance/search-for-and-delete-messages-in-your-organization)
+
+> [!IMPORTANT]
+> Les éléments de messagerie dans un jeu de révision dans un cas avancé de découverte électronique ne peuvent pas être supprimés à l’aide des procédures décrites dans cet article. Cela est dû au fait que les éléments d’un ensemble de révision sont des copies d’éléments du service actif qui sont copiées et stockées dans un emplacement de stockage Azure. Cela signifie qu’ils ne seront pas renvoyés par une recherche de contenu que vous créez à l’étape 3. Pour supprimer des éléments dans un jeu de réexamens, vous devez supprimer le cas avancé de découverte électronique qui contient l’ensemble de révision. Pour plus d’informations, consultez la rubrique [Close or delete a Advanced eDiscovery case](close-or-delete-case.md).
   
 ## <a name="step-8-verify-provide-a-proof-of-deletion-and-audit"></a>Étape 8 : vérifier, fournir une preuve de suppression et d’audit
 
@@ -194,7 +198,7 @@ Si les mots clés de la requête de recherche que vous avez créée et utilisée
     
 ### <a name="auditing-the-data-spillage-investigation-process"></a>Audit du processus d’enquête de fuite de données
 
-Vous pouvez rechercher dans le journal d’audit les activités eDiscovery effectuées pendant l’enquête. Vous pouvez également effectuer des recherches dans le journal d’audit pour renvoyer les enregistrements d’audit de la commande **New-ComplianceSearchAction-purge** exécutée à l’étape 7 pour supprimer les données déduites. Pour plus d’informations, reportez-vous aux rubriques suivantes :
+Vous pouvez rechercher dans le journal d’audit les activités eDiscovery effectuées pendant l’enquête. Vous pouvez également effectuer des recherches dans le journal d’audit pour renvoyer les enregistrements d’audit de la commande **New-ComplianceSearchAction-purge** exécutée à l’étape 7 pour supprimer les données déduites. Pour plus d’informations, voir :
 
 - [Rechercher le journal d’audit](search-the-audit-log-in-security-and-compliance.md)
 

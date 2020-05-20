@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 4f52cb4ff6809bee7582e2c030fb782f6ac35fd8
-ms.sourcegitcommit: 9ffa2fd25776726475e10148940987fa076bbd91
+ms.openlocfilehash: be7b417f9127197bea96e79eab94c69b5c6e3fcb
+ms.sourcegitcommit: 261d51b90a9ad53a6a42348c414b1b1e1230c37f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44162686"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44292500"
 ---
 # <a name="insider-risk-management-policies"></a>Stratégies de gestion des risques internes
 
@@ -75,7 +75,7 @@ La protection de la confidentialité des utilisateurs qui ont des correspondance
 
 Les modèles de stratégie de risque initié définissent le type d’activités de risque que vous souhaitez détecter et examiner. Chaque modèle de stratégie est basé sur des indicateurs spécifiques qui correspondent à des activités de risque spécifiques et les alertes sont déclenchées par des stratégies lorsque les utilisateurs effectuent des activités liées à ces indicateurs. Dans certains cas, vous souhaiterez peut-être limiter les indicateurs appliqués aux stratégies de risque des initiés au sein de votre organisation. Vous pouvez désactiver les indicateurs pour des zones spécifiques en les désactivant de toutes les stratégies de risque d’initié.
 
-Pour définir les indicateurs activés dans toutes les stratégies, accédez à > **indicateurs** de **paramètres des risques internes**et sélectionnez un ou plusieurs indicateurs. Les indicateurs sélectionnés sur la page Paramètres des **indicateurs** ne peuvent pas être configurés individuellement lors de la création ou de la modification d’une stratégie de risque initié dans l’Assistant stratégie.
+Pour définir les indicateurs activés dans toutes les stratégies, accédez à indicateurs de **paramètres des risques internes**  >  **Indicators** et sélectionnez un ou plusieurs indicateurs. Les indicateurs sélectionnés sur la page Paramètres des **indicateurs** ne peuvent pas être configurés individuellement lors de la création ou de la modification d’une stratégie de risque initié dans l’Assistant stratégie.
 
 >[!IMPORTANT]
 >Pour recevoir des alertes relatives aux activités à risque définies dans vos stratégies, vous devez sélectionner un ou plusieurs indicateurs avant de configurer une stratégie d’Insider Risk.
@@ -89,7 +89,7 @@ Les périodes de stratégie vous permettent de définir des périodes passées e
 
 ### <a name="intelligent-detections"></a>Détections intelligentes
 
-Les paramètres de détection intelligents permettent d’affiner la manière dont les détections d’activités à risque sont traitées pour les alertes. Dans certains cas, vous devrez peut-être définir des types de fichiers à ignorer ou vous souhaitez appliquer un niveau de détection pour les fichiers afin de définir une barre minimale pour les alertes. Lorsque vous utilisez des stratégies de langue offensantes, vous devrez peut-être augmenter ou diminuer la sensibilité de la détection pour contrôler la quantité de correspondances de stratégie signalées. Utilisez ces paramètres pour contrôler les exclusions de types de fichiers, les limites de volume de fichiers et la sensibilité de détection de langue offensant.
+Les paramètres de détection intelligents permettent d’affiner la manière dont les détections d’activités à risque sont traitées pour les alertes. Dans certains cas, vous devrez peut-être définir des types de fichiers à ignorer ou vous souhaitez appliquer un niveau de détection pour les fichiers afin de définir une barre minimale pour les alertes. Lorsque vous utilisez des stratégies de langue offensantes, vous devrez peut-être augmenter ou diminuer la sensibilité de la détection pour contrôler la quantité de correspondances de stratégie signalées. Utilisez ces paramètres pour contrôler le volume global d’alertes, les exclusions de types de fichiers, les limites de volume de fichiers et la sensibilité de détection du langage offensant.
 
 #### <a name="anomaly-detections"></a>Détections d’anomalies
 
@@ -105,6 +105,14 @@ Pour ajuster la sensibilité du classificateur de langue offensant aux stratégi
 - **Faible**: niveau de sensibilité le plus élevé avec la plage la plus large pour la détection du langage offensant et des sentiments. La probabilité de faux positifs pour une correspondance choquante est élevée.
 - **Moyenne**: niveau de confidentialité de milieu de gamme avec une plage équilibrée pour la détection du langage offensant et des sentiments. La probabilité de faux positifs pour une mise en correspondance choquante est moyenne.
 - **Élevé**: niveau de sensibilité le plus élevé avec une plage étroite pour la détection du langage offensant et des sentiments. La probabilité de faux positifs pour une mise en correspondance choquante est faible.
+
+#### <a name="alert-volume"></a>Volume d’alerte
+
+Les activités de l’utilisateur détectées par les stratégies de risque d’initié se voient attribuer une note de risque spécifique, qui détermine à son tour la gravité de l’alerte (faible, moyenne, haute). Par défaut, nous allons générer une certaine quantité d’alertes de gravité faible, moyenne et élevée, mais vous pouvez augmenter ou diminuer le volume en fonction de vos besoins. Pour ajuster le volume des alertes pour toutes les stratégies de gestion des risques Insider, choisissez l’un des paramètres suivants :
+
+- **Alertes moins nombreuses**: vous verrez toutes les alertes de gravité élevée, moins les alertes de gravité moyenne et aucune gravité faible. Cela signifie que vous risquez de manquer des vrais positifs.
+- **Volume par défaut**: vous verrez toutes les alertes de gravité élevée et une quantité équilibrée d’alertes de gravité moyenne et faible.
+- **Plus d’alertes**: vous verrez toutes les alertes de gravité moyenne et élevée, ainsi que les alertes de gravité faible. Cela peut entraîner des faux positifs supplémentaires.
 
 ## <a name="create-a-new-policy"></a>Créer une stratégie
 
@@ -129,7 +137,7 @@ Pour créer une stratégie, procédez comme suit :
     - Type d’informations sensibles : sélectionnez **choisir les types d’informations sensibles** et sélectionnez les types de critère de diffusion dont vous souhaitez définir la priorité. Par exemple, *« numéro de compte bancaire américain »* et *« numéro de carte de crédit »*.
     - Étiquettes de sensibilité : sélectionnez **choisir les étiquettes de confidentialité** et sélectionnez les étiquettes dont vous souhaitez définir la priorité. Par exemple, *« confidentiel »* et *« secret »*.
 7. Sélectionnez **suivant** pour continuer.
-8. Sur la **page indicateurs d’alerte** , vous verrez les indicateurs que vous avez définis sur la page**indicateurs** de paramètres > de **risque inSided**. Si vous avez sélectionné le modèle *fuites de données* au début de l’Assistant, vous devez sélectionner une stratégie DLP dans la liste déroulante **stratégie DLP** .
+8. Sur la page **indicateurs d’alerte** , vous verrez les indicateurs que vous avez définis sur la page indicateurs de paramètres de **risque inSided**  >  **Indicators** . Si vous avez sélectionné le modèle *fuites de données* au début de l’Assistant, vous devez sélectionner une stratégie DLP dans la liste déroulante **stratégie DLP** .
 9. Sur la page **Sélectionner la fenêtre d’analyse** , vous verrez les conditions de la fenêtre de [surveillance](insider-risk-management-policies.md#policy-timeframes) pour la stratégie que vous avez configurée dans les paramètres des risques initiés. Si vous avez sélectionné le modèle de stratégie de *vol de données par employé* , vous pouvez activer la case à cocher valider l’activité après *arrêt* pour détecter toute activité postérieure à la date d’expiration importée du connecteur RH de Microsoft 365.
 10. Sélectionnez **suivant** pour continuer.
 11. Sur la page **révision** , passez en revue les paramètres que vous avez choisis pour la stratégie. Sélectionnez **modifier** pour modifier les valeurs de la stratégie ou sélectionnez **Envoyer** pour créer et activer la stratégie.
@@ -153,7 +161,7 @@ Pour gérer une stratégie existante, procédez comme suit :
     - Type d’informations sensibles : sélectionnez **choisir les types d’informations sensibles** et sélectionnez les types de critère de diffusion dont vous souhaitez définir la priorité. Par exemple, *« numéro de compte bancaire américain »* et *« numéro de carte de crédit »*.
     - Étiquettes de sensibilité : sélectionnez **choisir les étiquettes de confidentialité** et sélectionnez les étiquettes dont vous souhaitez définir la priorité. Par exemple, *« confidentiel »* et *« secret »*.
 8. Sélectionnez **suivant** pour continuer.
-9. Sur la **page indicateurs d’alerte** , vous verrez les indicateurs que vous avez définis sur la page**indicateurs** de paramètres > de **risque inSided**. Si vous avez sélectionné le modèle *fuites de données* au début de l’Assistant, vous devez sélectionner une stratégie DLP dans la liste déroulante **stratégie DLP** .
+9. Sur la page **indicateurs d’alerte** , vous verrez les indicateurs que vous avez définis sur la page indicateurs de paramètres de **risque inSided**  >  **Indicators** . Si vous avez sélectionné le modèle *fuites de données* au début de l’Assistant, vous devez sélectionner une stratégie DLP dans la liste déroulante **stratégie DLP** .
 10. Sur la page **Sélectionner la fenêtre d’analyse** , vous verrez les conditions de la fenêtre de [surveillance](insider-risk-management-policies.md#policy-timeframes) pour la stratégie que vous avez configurée dans les paramètres des risques initiés. Si vous avez sélectionné le modèle de stratégie de *vol de données par employé* , vous pouvez activer la case à cocher valider l’activité après *arrêt* pour détecter toute activité postérieure à la date d’expiration importée du connecteur RH de Microsoft 365.
 11. Sur la page **révision** , passez en revue les paramètres que vous avez choisis pour la stratégie. Sélectionnez **modifier** pour modifier les valeurs de la stratégie ou sélectionnez **Envoyer** pour mettre à jour et activer les modifications apportées à la stratégie.
 

@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Cet article fournit une vue d’ensemble de Advanced eDiscovery dans Microsoft 365, un outil destiné aux investigations internes et externes.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: fae09b33364f9ff57233ee25ccf40e4956dfd408
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 84fbf3bbdc4a4ee08901001f7898355e4c8b2705
+ms.sourcegitcommit: 5c43e89ed94ad9fd1db049446383c65e548189b7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034904"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44322039"
 ---
 # <a name="overview-of-the-advanced-ediscovery-solution-in-microsoft-365"></a>Vue d’ensemble de la solution avancée eDiscovery dans Microsoft 365
 
@@ -85,7 +85,7 @@ L’onglet **recherches** permet de créer des recherches pour effectuer des rec
 
 ## <a name="reviewing-and-analyzing-case-data"></a>Révision et analyse des données de cas
 
-Utilisez l’onglet **examiner les ensembles** pour examiner et analyser le contenu que vous avez collecté à partir du système réel et ajouté à un jeu de révision. Un *ensemble de révision* est une collection statique de ces données (en d’autres termes, une copie hors connexion) de données privatives de temps (et, le cas échéant, de données non privatives) que vous avez collectées au cours de la phase précédente du flux de travail de découverte électronique. Lorsque vous ajoutez des résultats de recherche à un ensemble de révision, un processus est déclenché qui extrait les fichiers des conteneurs, extrait les métadonnées et extrait le texte. Une fois le processus terminé, le système génère un nouvel index de toutes les données collectées auprès des dépositaires et les ajoute à l’ensemble de révision. Une fois que les données sont ajoutées à l’ensemble de vérification, vous pouvez exécuter davantage de requêtes pour affiner les données de cas, afficher les données au format texte ou au format de fichier natif, et annoter, biffer et baliser les documents dans l’ensemble de révision. Vous pouvez également effectuer des analyses avancées, telles que l’identification de la duplication de documents, le Threading de courrier électronique et les thèmes. Une fois que vous avez consulté les données uniquement sur ce qui est pertinent pour le cas, vous pouvez télécharger les documents directement ou les exporter, ainsi que les métadonnées de fichier, les annotations et les balises. Pour plus d’informations, reportez-vous aux rubriques suivantes :
+Utilisez l’onglet **examiner les ensembles** pour examiner et analyser le contenu que vous avez collecté à partir du système réel et ajouté à un jeu de révision. Un *ensemble de révision* est une collection statique de ces données (en d’autres termes, une copie hors connexion) de données privatives de temps (et, le cas échéant, de données non privatives) que vous avez collectées au cours de la phase précédente du flux de travail de découverte électronique. Lorsque vous ajoutez des résultats de recherche à un ensemble de révision, un processus est déclenché qui extrait les fichiers des conteneurs, extrait les métadonnées et extrait le texte. Une fois le processus terminé, le système génère un nouvel index de toutes les données collectées auprès des dépositaires et les ajoute à l’ensemble de révision. Une fois que les données sont ajoutées à l’ensemble de vérification, vous pouvez exécuter davantage de requêtes pour affiner les données de cas, afficher les données au format texte ou au format de fichier natif, et annoter, biffer et baliser les documents dans l’ensemble de révision. Vous pouvez également effectuer des analyses avancées, telles que l’identification de la duplication de documents, le Threading de courrier électronique et les thèmes. Une fois que vous avez consulté les données uniquement sur ce qui est pertinent pour le cas, vous pouvez télécharger les documents directement ou les exporter, ainsi que les métadonnées de fichier, les annotations et les balises. Pour plus d’informations, voir :
 
 - [Afficher les documents d’un jeu à réviser](view-documents-in-review-set.md)
 
@@ -106,7 +106,3 @@ Utilisez l’onglet **travaux** pour surveiller les processus de longue durée p
 ## <a name="configuring-case-settings"></a>Configuration des paramètres de cas
 
 Utilisez l’onglet **paramètres** pour configurer les paramètres à l’échelle de l’incident. Cela inclut l’ajout de membres à un cas, la fermeture ou la suppression d’un cas et la configuration des paramètres de recherche et d’analyse.
-
-## <a name="advanced-ediscovery-reports"></a>Rapports avancés de découverte électronique
-
-Vous pouvez utiliser les rapports eDiscovery avancés sur la page d’accueil pour aider votre organisation à suivre l’activité et l’État dans tous les cas avancés de découverte électronique. La fonctionnalité Advanced eDiscovery Reports regroupe des informations sur les cas, les dépositaires, les sources de données et les communications. Vous pouvez filtrer les données du rapport en fonction de divers critères et exporter les informations d’agrégation dans un fichier CSV pour une analyse plus poussée.  Pour plus d’informations, voir [Advanced eDiscovery Reports](advanced-ediscovery-reports.md).

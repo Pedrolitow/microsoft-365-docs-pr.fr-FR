@@ -15,12 +15,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Les administrateurs peuvent apprendre à configurer une boîte aux lettres pour collecter le courrier indésirable et le courrier indésirable transmis par les utilisateurs.
-ms.openlocfilehash: 6aa343b337139c4d81f35f78a227634d3b6a8781
-ms.sourcegitcommit: 22e9f54d0d3ead2be91a38d49325308c70f43f90
+ms.openlocfilehash: 2a1872aff88cd1cc21c6a6e3258671c303b55e17
+ms.sourcegitcommit: 4ce28ad4d17d336106c1720d65349f19f9e90e04
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "44262522"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44294192"
 ---
 # <a name="specify-a-mailbox-for-user-submissions-of-spam-and-phishing-messages-in-exchange-online"></a>Spécifier une boîte aux lettres pour les soumissions d’utilisateurs de messages de courrier indésirable et de hameçonnage dans Exchange Online
 
@@ -31,7 +31,7 @@ Dans les organisations Microsoft 365 avec des boîtes aux lettres Exchange Onlin
 - [Création de rapports intégrée dans Outlook sur le Web](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md) (anciennement appelé Outlook Web App)
 
   > [!NOTE]
-  > Si la création de rapports a été [désactivée dans Outlook sur le Web](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop#disable-or-enable-junk-email-reporting-in-outlook-on-the-web), l’activation des soumissions d’utilisateurs ici remplacera ce paramètre et permettra aux utilisateurs de signaler à nouveau les messages dans Outlook sur le Web.
+  > Si la création de rapports a été [désactivée dans Outlook sur le Web](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md#disable-or-enable-junk-email-reporting-in-outlook-on-the-web), l’activation des soumissions d’utilisateurs ici remplacera ce paramètre et permettra aux utilisateurs de signaler à nouveau les messages dans Outlook sur le Web.
 
 Vous pouvez également configurer des outils de création de rapports de messages tiers pour transférer des messages vers la boîte aux lettres que vous spécifiez.
 
@@ -75,8 +75,6 @@ La remise des messages signalés par l’utilisateur à une boîte aux lettres p
 
         Lorsque vous avez terminé, cliquez sur **confirmer**.
 
-        ![Envoyer des messages signalés à Microsoft et à une boîte aux lettres personnalisée](../../media/user-submission-enable-outlook-report-message.png)
-
      > [!CAUTION]
      > Si vous avez [désactivé la création de rapports de courrier indésirable dans Outlook sur le Web](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md#disable-or-enable-junk-email-reporting-in-outlook-on-the-web) à l’aide des stratégies de boîte aux lettres Outlook sur le Web, mais que vous configurez l’un des paramètres précédents pour signaler les messages à Microsoft, les utilisateurs pourront signaler les messages à Microsoft dans Outlook sur le Web à l’aide du complément Report message.
 
@@ -86,8 +84,6 @@ La remise des messages signalés par l’utilisateur à une boîte aux lettres p
 
       Lorsque vous avez terminé, cliquez sur **confirmer**.
 
-      ![Envoyer des messages signalés à une boîte aux lettres personnalisée à l’aide d’outils tiers](../../media/user-submission-disable-outlook-report-message.png)
-     
 ## <a name="message-submission-format"></a>Format de dépôt des messages
 
 Les messages envoyés à des boîtes aux lettres personnalisées doivent suivre un format de message d’envoi spécifique. L’objet (titre de l’enveloppe) de l’envoi doit être au format suivant :

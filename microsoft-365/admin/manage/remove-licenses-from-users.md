@@ -21,19 +21,19 @@ search.appverid:
 - GEA150
 ms.assetid: 9b497c85-d0a4-4735-80fa-d3565bc05bd1
 description: Découvrez comment supprimer des licences de comptes d’utilisateur.
-ms.openlocfilehash: 49d3b4b6786bc6ab66bc0416aac847ada592664d
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: d4ac823a7345cb4d04f599c5635248d6ce324257
+ms.sourcegitcommit: 5c43e89ed94ad9fd1db049446383c65e548189b7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44139636"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44322028"
 ---
 # <a name="unassign-licenses-from-users"></a>Annuler l'assignation des licences aux utilisateurs
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> Le centre d’administration change. Si votre expérience ne correspond pas aux détails présentés ici, reportez-vous [à la rubrique à propos du nouveau centre d’administration Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> Le centre d’administration change. Si votre expérience ne correspond pas aux informations présentées ici, voir [À propos du nouveau centre d’administration Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
 
 ::: moniker-end
 
@@ -129,7 +129,7 @@ Lorsque vous utilisez la page **licences** pour annuler l’affectation des lice
 
 4. Dans le volet **Remplacer les produits existants**, sélectionnez **Remplacer les attributions de licence de produit existantes** \> **Suivant**.
 
-5. En bas du volet remplacer les **produits existants** , activez la case à cocher **supprimer toutes les licences de produits des utilisateurs sélectionnés** , puis sélectionnez **remplacer** \> **Close** \> **Close**le fermer.
+5. En bas du volet **remplacer les produits existants** , activez la case à cocher **supprimer toutes les licences de produits des utilisateurs sélectionnés** , puis sélectionnez **remplacer** \> **le fermer** \> **Close**.
 
 ::: moniker-end
 
@@ -143,7 +143,7 @@ Lorsque vous utilisez la page **licences** pour annuler l’affectation des lice
 
 4. Dans le volet **Remplacer les produits existants**, sélectionnez **Remplacer les attributions de licence de produit existantes** \> **Suivant**.
 
-5. En bas du volet remplacer les **produits existants** , activez la case à cocher **supprimer toutes les licences de produits des utilisateurs sélectionnés** , puis sélectionnez **remplacer** \> **Close** \> **Close**le fermer.
+5. En bas du volet **remplacer les produits existants** , activez la case à cocher **supprimer toutes les licences de produits des utilisateurs sélectionnés** , puis sélectionnez **remplacer** \> **le fermer** \> **Close**.
 
 ::: moniker-end
 
@@ -159,9 +159,9 @@ Lorsque vous utilisez la page **licences** pour annuler l’affectation des lice
 
 - Notez que les fichiers enregistrés dans OneDrive entreprise ne sont pas supprimés sauf si l’utilisateur est supprimé du centre d’administration 365 de Microsoft ou s’il est supprimé par le biais de la synchronisation Active Directory. Pour plus d’informations, consultez la rubrique [OneDrive Retention and suppression](https://docs.microsoft.com/onedrive/retention-and-deletion).
 
-- De plus, la boîte aux lettres de l’utilisateur ne peut plus faire l’objet d’une recherche à l’aide d’un outil eDiscovery tel que la recherche de contenu ou Advanced eDiscovery lorsque la licence est supprimée. Pour plus d’informations, consultez la section « recherche de boîtes aux lettres déconnectées ou de sous-licence » dans [recherche de contenu dans Microsoft 365](https://docs.microsoft.com/office365/securitycompliance/content-search#searching-disconnected-or-de-licensed-mailboxes).
+- De plus, la boîte aux lettres de l’utilisateur ne peut plus faire l’objet d’une recherche à l’aide d’un outil eDiscovery tel que la recherche de contenu ou Advanced eDiscovery lorsque la licence est supprimée. Pour plus d’informations, consultez la section « recherche de boîtes aux lettres déconnectées ou de sous-licence » dans [recherche de contenu dans Microsoft 365](https://docs.microsoft.com/microsoft-365/compliance/content-search#searching-disconnected-or-de-licensed-mailboxes).
 
-- Si vous disposez d’un abonnement Enterprise, comme Office 365 entreprise E3, Exchange Online vous permet de conserver les données de boîte aux lettres d’un compte d’utilisateur supprimé en utilisant des [boîtes aux lettres inactives](https://docs.microsoft.com/office365/securitycompliance/inactive-mailboxes-in-office-365). Pour plus d’informations, consultez la rubrique [créer et gérer des boîtes aux lettres inactives dans Exchange Online](https://docs.microsoft.com/office365/securitycompliance/create-and-manage-inactive-mailboxes).
+- Si vous disposez d’un abonnement Enterprise, comme Office 365 entreprise E3, Exchange Online vous permet de conserver les données de boîte aux lettres d’un compte d’utilisateur supprimé en utilisant des [boîtes aux lettres inactives](https://docs.microsoft.com/microsoft-365/compliance/inactive-mailboxes-in-office-365). Pour plus d’informations, consultez la rubrique [créer et gérer des boîtes aux lettres inactives dans Exchange Online](https://docs.microsoft.com/microsoft-365/compliance/create-and-manage-inactive-mailboxes).
 
 - Pour plus d’informations sur la façon de bloquer l’accès d’un utilisateur aux données Microsoft 365 après la suppression de leur licence et l’accès aux données par la suite, consultez la rubrique [supprimer un ancien employé](../add-users/remove-former-employee.md).
 
