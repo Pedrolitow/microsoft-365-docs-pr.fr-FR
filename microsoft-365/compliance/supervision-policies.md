@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.custom: seo-marvel-apr2020
 titleSuffix: Microsoft 365 Compliance
-ms.openlocfilehash: b0778cd05565057fde8982e791a75801d097046c
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 45dc5a3e9674ebdf9488d14813abf04fc81b6781
+ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034558"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44327252"
 ---
 # <a name="supervision-policies"></a>Stratégies de surveillance
 
@@ -139,7 +139,7 @@ Vous pouvez inclure des types d’informations sensibles dans le cadre de votre 
 - Confidentialité
 - Type d’informations personnalisées
 
-Pour en savoir plus sur les détails des informations sensibles et les modèles inclus dans les types par défaut, consultez la rubrique [types d’informations sensibles](what-the-sensitive-information-types-look-for.md).
+Pour en savoir plus sur les détails des informations sensibles et les modèles inclus dans les types par défaut, consultez la rubrique [informations sensibles](sensitive-information-type-entity-definitions.md)sur les définitions d’entités.
 
 #### <a name="custom-keyword-dictionaries"></a>Dictionnaires de mots clés personnalisés
 
@@ -182,7 +182,7 @@ Le tableau suivant décrit plus en plus de chaque condition.
 | **La pièce jointe contient l’un de ces mots** <br><br> **La pièce jointe ne contient aucun de ces mots** | Pour appliquer la stratégie lorsque certains mots ou expressions sont inclus ou exclus dans une pièce jointe (par exemple, un document Word), entrez chaque mot ou expression et séparez-les par une virgule. Chaque mot que vous entrez est appliqué séparément (un seul mot doit obligatoirement s’appliquer à la stratégie à appliquer à la pièce jointe). Pour plus d’informations sur la saisie des mots ou des expressions, voir la section suivante [Matching words and phrases to emails or attachments](supervision-policies.md#Matchwords).|
 | **La pièce jointe est l’un de ces types de fichiers** <br><br> **Aucune de ces types de fichiers n’est associée à la pièce jointe** | Pour superviser les communications qui incluent ou excluent des types spécifiques de pièces jointes, entrez les extensions de fichiers (par exemple,. exe ou. pdf). Si vous souhaitez inclure ou exclure plusieurs extensions de fichiers, entrez-les sur des lignes distinctes. Une seule extension de pièce jointe doit correspondre pour que la stratégie s’applique.|
 | **La taille du message est supérieure à** <br><br> **La taille du message n’est pas supérieure à** | Pour examiner les messages en fonction d’une certaine taille, utilisez les conditions suivantes pour spécifier la taille maximale ou minimale qu’un message peut contenir avant d’être soumis à révision. Par exemple, si vous spécifiez une **taille de message supérieure à** \> **1,0 Mo**, tous les messages de 1,01 Mo et plus sont soumis à révision. Vous pouvez choisir des octets, kilo-octets, mégaoctets ou gigaoctets pour cette condition.|
-| **La taille de la pièce jointe est supérieure à** <br><br> **La pièce jointe n’est pas supérieure à** | Pour examiner les messages en fonction de la taille de leurs pièces jointes, spécifiez la taille maximale ou minimale qu’une pièce jointe peut contenir avant que le message et ses pièces jointes soient soumis à révision. Par exemple, si vous spécifiez une **taille de pièce jointe supérieure** \> à **2,0 Mo**, tous les messages avec des pièces jointes 2,01 Mo et supérieures sont soumis à la révision. Vous pouvez choisir des octets, kilo-octets, mégaoctets ou gigaoctets pour cette condition.|
+| **La taille de la pièce jointe est supérieure à** <br><br> **La pièce jointe n’est pas supérieure à** | Pour examiner les messages en fonction de la taille de leurs pièces jointes, spécifiez la taille maximale ou minimale qu’une pièce jointe peut contenir avant que le message et ses pièces jointes soient soumis à révision. Par exemple, si vous spécifiez une **taille de pièce jointe supérieure** à \> **2,0 Mo**, tous les messages avec des pièces jointes 2,01 Mo et supérieures sont soumis à la révision. Vous pouvez choisir des octets, kilo-octets, mégaoctets ou gigaoctets pour cette condition.|
    
 ##### <a name="matching-words-and-phrases-to-emails-or-attachments"></a>Correspondance de mots et expressions avec des courriers électroniques ou des pièces jointes
 <a name="Matchwords"> </a> Chaque mot que vous entrez et séparé par une virgule est appliqué séparément (un seul mot doit obligatoirement s’appliquer à la condition de stratégie à appliquer à la messagerie ou à la pièce jointe). Par exemple, nous utilisons la condition, le **message contient l’un de ces mots**, avec les mots-clés « Banker » et « negociing Insider » séparé par une virgule (Banking, Insider Insider). La stratégie s’applique aux messages qui incluent le mot « Banker » ou l’expression « negociation Insiders ». Un seul de ces mots ou expression doit être présent pour que cette condition de stratégie s’applique. Les mots contenus dans le message ou dans la pièce jointe doivent correspondre exactement à ce que vous entrez.
@@ -213,7 +213,7 @@ Il est facile de surveiller les résultats de vos stratégies de surveillance et
 
 ### <a name="supervision-policy-dashboard"></a>Tableau de bord de stratégie de supervision
 
-Utilisez le tableau de bord de stratégie de supervision pour gérer les résultats de stratégie de surveillance et résoudre les éléments non traités. Ce tableau de bord permet aux relecteurs d’afficher les éléments devant être vérifiés, d’agir sur un élément et de passer en revue les résultats des éléments précédemment examinés et résolus pour chaque stratégie de surveillance. Vous pouvez accéder au tableau de bord de stratégie de supervision dans le centre de conformité à la **surveillance** > *de votre stratégie* > **Open**personnalisée.
+Utilisez le tableau de bord de stratégie de supervision pour gérer les résultats de stratégie de surveillance et résoudre les éléments non traités. Ce tableau de bord permet aux relecteurs d’afficher les éléments devant être vérifiés, d’agir sur un élément et de passer en revue les résultats des éléments précédemment examinés et résolus pour chaque stratégie de surveillance. Vous pouvez accéder au tableau de bord de stratégie de supervision dans le centre de conformité à la **surveillance**de  >  *votre stratégie personnalisée*  >  **Open**.
 
 #### <a name="dashboard-home"></a>Accueil du tableau de bord
 
@@ -252,7 +252,7 @@ Utilisez les rapports de surveillance pour afficher l’activité de révision a
 ### <a name="view-the-supervision-report"></a>Afficher le rapport de supervision
 
 1. Connectez-vous au [Centre de conformité](https://compliance.microsoft.com) avec des informations d’identification pour un compte d’administrateur disposant des autorisations pour afficher les rapports de surveillance.
-2. Accédez au **tableau de bord** **rapports** \> ou à la **surveillance** pour afficher le widget rapports de supervision pour un résumé de l’activité de stratégie de surveillance actuelle.
+2. Accédez au **Reports** \> **tableau de bord** rapports ou à la **surveillance** pour afficher le widget rapports de supervision pour un résumé de l’activité de stratégie de surveillance actuelle.
 3. Sélectionnez le widget **surveillance** pour ouvrir la page rapport détaillé.
 
 >[!NOTE]
@@ -283,7 +283,7 @@ Voici une répartition des valeurs affichées dans la colonne **type de balise**
 >[!NOTE]
 >Les stratégies de surveillance doivent être mises en service avant d’apparaître dans les rapports. Si des stratégies sont supprimées, les données historiques continuent d’apparaître. Toutefois, elles sont indiquées en tant que « stratégie inexistante » et la fonction d' **exportation** n’est pas disponible.
 
-## <a name="audit"></a>Contrôlé
+## <a name="audit"></a>Audit
 
 Dans certains cas, vous devez fournir des informations aux auditeurs de réglementation ou de conformité pour prouver le contrôle des activités et des communications des employés. Ces informations peuvent être un résumé de toutes les activités de surveillance associées à une stratégie définie ou à chaque fois qu’une stratégie de surveillance est modifiée. Les stratégies de surveillance disposent de pistes d’audit intégrées pour une préparation complète des audits internes ou externes. Des historiques d’audit détaillés de toutes les actions surveillées par vos stratégies de surveillance fournissent des preuves de procédures de surveillance.
 

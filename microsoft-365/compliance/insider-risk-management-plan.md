@@ -1,5 +1,5 @@
 ---
-title: Planification de la gestion des risques initiés
+title: Planifier la gestion des risques Insider
 description: Découvrez comment planifier l’utilisation des stratégies de gestion des risques Insiders dans votre organisation.
 keywords: Microsoft 365, Insider Risk, gestion des risques, conformité
 localization_priority: Normal
@@ -12,14 +12,14 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 2b2abd68d767f169ea8e20fc349e6314cc6400d5
-ms.sourcegitcommit: e55e4747d3b838baacab8985aefc24aac245c431
+ms.openlocfilehash: ca15f26cf8eb19990c3252acf66ba50d52567e44
+ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44043400"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44327122"
 ---
-# <a name="plan-for-insider-risk-management"></a>Planification de la gestion des risques initiés
+# <a name="plan-for-insider-risk-management"></a>Planifier la gestion des risques Insider
 
 Avant de commencer à [gérer les risques initiaux](insider-risk-management.md) au sein de votre organisation, il existe des activités de planification et des considérations importantes qui doivent être examinées par vos équipes de gestion de la conformité et de la technologie de l’information. La compréhension et la planification rigoureuses du déploiement dans les domaines suivants permettent de s’assurer que l’implémentation et l’utilisation des fonctionnalités de gestion des risques internes se déroulent en douceur et sont alignées sur les meilleures pratiques pour la solution.
 
@@ -48,7 +48,7 @@ En fonction de la structure de votre équipe de gestion de la conformité, vous 
 
 | **Groupe de rôles** | **Autorisations de rôle** |
 | :---- | :---------------- |
-| **Gestion des risques internes** | Utilisez ce groupe de rôles pour gérer la gestion des risques Insider de votre organisation dans un seul groupe. En ajoutant tous les comptes d’utilisateur pour les administrateurs, analystes et investigateurs désignés, vous pouvez configurer des autorisations de gestion des risques Insider dans un seul groupe. Ce groupe de rôles contient tous les rôles d’autorisation de gestion des risques Insider. Cette configuration est la méthode la plus simple pour démarrer rapidement avec la gestion des risques initiés et pour les organisations qui n’ont pas besoin d’autorisations distinctes définies pour des groupes d’utilisateurs distincts.|
+| **Gestion des risques initiés** | Utilisez ce groupe de rôles pour gérer la gestion des risques Insider de votre organisation dans un seul groupe. En ajoutant tous les comptes d’utilisateur pour les administrateurs, analystes et investigateurs désignés, vous pouvez configurer des autorisations de gestion des risques Insider dans un seul groupe. Ce groupe de rôles contient tous les rôles d’autorisation de gestion des risques Insider. Cette configuration est la méthode la plus simple pour démarrer rapidement avec la gestion des risques initiés et pour les organisations qui n’ont pas besoin d’autorisations distinctes définies pour des groupes d’utilisateurs distincts.|
 | **Administrateur de gestion des risques des Insiders** | Utilisez ce groupe de rôles pour configurer initialement la gestion des risques initiés et, par la suite, pour séparer les administrateurs des risques des Insiders en un groupe défini.  Les utilisateurs de ce groupe de rôles peuvent créer, lire, mettre à jour et supprimer des stratégies de gestion des risques internes, des paramètres globaux et des affectations de groupes de rôles. |
 | **Analystes de gestion des risques Insiders** | Utilisez ce groupe pour attribuer des autorisations à des utilisateurs qui agiront en tant qu’analystes de cas d’Insider. Les utilisateurs de ce groupe de rôles peuvent accéder aux modèles alertes, incidents et notifications de gestion des risques Insider. Ils ne peuvent pas accéder à l’Explorateur de contenu risque Insider. |
 | **Investigateurs de gestion des risques Insiders** | Utilisez ce groupe pour attribuer des autorisations aux utilisateurs qui agiront en tant qu’enquêteurs de données sur les risques des Insiders. Les utilisateurs de ce groupe de rôles peuvent accéder à toutes les alertes de gestion des risques Insider, les cas, les modèles de notifications et l’Explorateur de contenu dans tous les cas. |

@@ -22,19 +22,19 @@ search.appverid:
 ms.assetid: 1272bad0-4bd4-4796-8005-67d6fb3afc5a
 description: Pour plus d’informations sur les domaines, recherchez les réponses à vos questions dans FAQ.
 ms.custom: okr_smb
-ms.openlocfilehash: 09e811b64def4d507a9d825f95b9d22f910669bb
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: 1af20ed0052a7bb4f98072a7142bf7e112b8305e
+ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44140748"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44327111"
 ---
 # <a name="domains-faq"></a>Forum aux questions sur les domaines
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> Le centre d’administration change. Si votre expérience ne correspond pas aux détails présentés ici, reportez-vous [à la rubrique à propos du nouveau centre d’administration Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> Le centre d’administration change. Si votre expérience ne correspond pas aux informations présentées ici, voir [À propos du nouveau centre d’administration Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
 
 ::: moniker-end
 
@@ -102,7 +102,7 @@ Vous devez configurer les enregistrements DNS pour les services Office 365 vous-
 
 [] Un domaine est un nom unique qui apparaît après le signe **@** dans les adresses de messagerie et après **www.** dans les adresses web. Il prend généralement la forme du nom de votre organisation et d’un suffixe Internet standard, tel que *yourbusiness.com* ou *stateuniversity.edu.* 
   
-L’utilisation d’un domaine personnalisé comme «**rob\@contoso.com**» avec Office 365 peut vous aider à créer une crédibilité et une reconnaissance pour votre marque. 
+L’utilisation d’un domaine personnalisé comme «**rob \@ contoso.com**» avec Office 365 peut vous aider à créer une crédibilité et une reconnaissance pour votre marque. 
   
 Vous pouvez [acheter un domaine dans Office 365 et nous allons le configurer automatiquement](../get-help-with-domains/buy-a-domain-name.md), ou vous pouvez acheter ou en disposer un dont vous êtes déjà propriétaire auprès d’un bureau d’enregistrement de domaines.
   
@@ -128,11 +128,11 @@ Suivez les étapes ci-dessous pour obtenir le code sur Office 365, puis accédez
 
 ::: moniker range="o365-21vianet"
 
-1. Dans le centre d’administration, accédez à la page des <a href="https://go.microsoft.com/fwlink/p/?linkid=850625" target="_blank">licences</a> de **paramètres** > .
+1. Dans le centre d’administration, accédez à la page des licences de **paramètres** > <a href="https://go.microsoft.com/fwlink/p/?linkid=850625" target="_blank">Licenses</a> .
 
 ::: moniker-end
     
-2. Sur la page **domaines** , sélectionnez le domaine Office 365 que vous souhaitez transférer vers un autre bureau d’enregistrement de domaines, puis sélectionnez **transfert** > de domaine activé pour le transfert de**domaine**.
+2. Sur la page **domaines** , sélectionnez le domaine Office 365 que vous souhaitez transférer vers un autre bureau d’enregistrement de domaines, puis sélectionnez **transfert**de domaine activé pour le transfert de  >  **domaine**.
        
 4. Suivez les étapes pour préparer le transfert de votre domaine.
     
@@ -187,7 +187,7 @@ Suivez les étapes ci-dessous pour obtenir le code sur Office 365, puis accédez
 
 ::: moniker range="o365-worldwide"
 
-1. Dans le centre d’administration, accédez à la page **paramètres** \> des <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">domaines</a> ..
+1. Dans le centre d’administration, accédez à la page **paramètres** des \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">domaines</a> ..
 
 ::: moniker-end
 
@@ -258,6 +258,8 @@ Fournisseurs qui prennent en charge tous les enregistrements DNS requis :
 - Les clients de bureau Skype entreprise Online peuvent utiliser la découverte automatique pour trouver automatiquement le service Skype entreprise Online afin que les utilisateurs puissent se connecter sans avoir à entrer un nom de serveur.
     
 - Les clients mobiles Skype entreprise Online peuvent utiliser la découverte automatique pour trouver automatiquement le service Skype entreprise Online afin que les utilisateurs puissent se connecter sans avoir à entrer un nom de serveur.
+
+- Fédération Microsoft teams avec Skype entreprise, soit en local, soit en ligne. Pour plus d’informations, consultez [la rubrique préparer le réseau de votre organisation pour Microsoft teams](https://docs.microsoft.com/microsoftteams/prepare-network).
     
  **Si les enregistrements SPF/txt ne sont pas pris en charge**, d’autres personnes peuvent être en mesure d’utiliser votre domaine pour envoyer du courrier indésirable ou d’autres messages malveillants. Les enregistrements SPF fonctionnent en identifiant les serveurs qui sont autorisés à envoyer des messages électroniques à partir de votre domaine. 
   
@@ -342,7 +344,7 @@ Lorsque vous ajoutez plusieurs domaines à Office 365, vous pouvez héberger des
 
 Office 365 crée un domaine pour vous, comme *contoso.onmicrosoft.com*, lorsque vous vous inscrivez auprès du service. Le nom d’utilisateur que vous créez lors de votre inscription comprend le domaine, par exemple *Alan@contoso.onmicrosoft.com*. 
   
- **Si vous voulez faire ressembler votre courrier *électronique\@Alan contoso.com*:** [acheter le domaine](../get-help-with-domains/buy-a-domain-name.md) ou simplement suivre les étapes de la procédure [ajouter vos utilisateurs et votre domaine à Office 365](add-domain.md) si vous en êtes déjà propriétaire. 
+ **Si vous voulez faire ressembler votre courrier électronique *Alan \@ contoso.com*:** [acheter le domaine](../get-help-with-domains/buy-a-domain-name.md) ou simplement suivre les étapes de la procédure [ajouter vos utilisateurs et votre domaine à Office 365](add-domain.md) si vous en êtes déjà propriétaire. 
   
 - **Vous ne pouvez pas renommer le domaine onmicrosoft après l’inscription.** Par exemple, si le domaine initial que vous avez choisi était fourthcoffee.onmicrosoft.com, vous ne pouvez pas le modifier pour qu’il soit fabrikam.onmicrosoft.com. Pour utiliser un autre domaine onmicrosoft.com, vous devez démarrer un nouvel abonnement avec Office 365. 
     
@@ -441,13 +443,13 @@ Vous pouvez, mais il existe des limitations :
         
     3. Dans le centre d’administration Exchange, sélectionnez **protection**, puis **filtre de connexion**. 
         
-    4. Dans la **liste**d’adresses IP autorisées **+**, sélectionnez et ajoutez l’adresse IP du serveur de messagerie que vous pouvez obtenir de votre fournisseur de messagerie actuel. 
+    4. Dans la **liste d’adresses IP autorisées**, sélectionnez **+** et ajoutez l’adresse IP du serveur de messagerie que vous pouvez obtenir de votre fournisseur de messagerie actuel. 
     
 5. Créer des comptes d’utilisateurs et définir l’adresse principale (de réponse)
     
     1. Aller au Centre d’administration Microsoft 365.
         
-    2. Dans la barre de navigation de gauche **, sélectionnez** \> utilisateurs **actifs**. 
+    2. Dans la barre de navigation de gauche **, sélectionnez utilisateurs** \> **actifs**. 
         
     3. Créez les comptes d’utilisateur.
         
@@ -457,7 +459,7 @@ Vous pouvez, mais il existe des limitations :
         
     6. En regard de nom d’utilisateur, sélectionnez votre nom de domaine personnalisé dans la liste déroulante.
         
-    7. Sélectionnez **créer** \> une **fermeture**. 
+    7. Sélectionnez **créer** une \> **fermeture**. 
         
 6. Mettre à jour les enregistrements DNS au niveau de votre fournisseur d’hébergement DNS
     

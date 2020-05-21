@@ -15,12 +15,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 80b7e209f87d3612e753127f5d1a1b3c36304cc3
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: a41510deb8bad39e2f871babfbcb91a2e43f6dd8
+ms.sourcegitcommit: 56772bed89516cebc5eb370e292ccfbb4889cb38
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44209351"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44330854"
 ---
 # <a name="configure-microsoft-threat-protection-pillars-for-your-trial-lab-environment"></a>Configurer les piliers de protection contre les menaces Microsoft pour votre environnement de laboratoire d’évaluation
 
@@ -237,5 +237,14 @@ Cliquez sur **Suivant**.
 16. Faites défiler la liste vers le bas et cliquez sur **enregistrer les préférences** pour confirmer les nouvelles intégrations.
 <br>![Image of_Save bouton préférences que vous devez cliquer](../../media/mtp-eval-72.png) <br>
 
+## <a name="turn-on-microsoft-threat-protection"></a>Activer la Protection Microsoft contre les menaces
+1. Accédez au [Centre de sécurité Microsoft 365](https://security.microsoft.com/homepage). Accédez à **paramètres** , puis sélectionnez **Microsoft Threat Protection**.
+<br>![Capture d’écran des options d’image of_Microsoft protection contre les menaces à partir de la page Paramètres du centre de sécurité Microsoft 365](../../media/mtp-eval-72b.png) <br>
+
+2. Activez la case à cocher **activer la protection contre les menaces Microsoft** , puis cliquez sur **Enregistrer**.
+<br>![Capture d’écran des options d’image of_Microsoft protection contre les menaces à partir de la page Paramètres du centre de sécurité Microsoft 365](../../media/mtp-eval-72c.png) <br>
+
+Félicitations ! Vous venez de créer votre environnement de laboratoire d’évaluation de la protection contre les menaces Microsoft ! Vous pouvez désormais simuler une attaque et voir comment les fonctionnalités du produit peuvent détecter, créer des alertes et répondre automatiquement à une attaque sans fichier sur un point de terminaison.
+
 ## <a name="next-steps"></a>Étapes suivantes
-[Activez Microsoft Threat Protection](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-enable?view=o365-worldwide#start-using-the-service) , puis [générez une alerte de test](generate-test-alert.md).
+[Générer une alerte de test](generate-test-alert.md).

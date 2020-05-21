@@ -21,23 +21,30 @@ search.appverid:
 - MOE150
 ms.assetid: bb229ee9-e7be-4990-b3eb-354e75740496
 description: 'Supprimer une licence d’une boîte aux lettres partagée pour l’affecter à un autre utilisateur. '
-ms.openlocfilehash: fb09036fc28ea3d9c182395d0a85e467f611dfdc
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: 9ba411c614fee93e37ac45e58fd40bf246a9c2ab
+ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44140428"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44327241"
 ---
 # <a name="remove-a-license-from-a-shared-mailbox"></a>Supprimer une licence d’une boîte aux lettres partagée
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> Le centre d’administration change. Si votre expérience ne correspond pas aux détails présentés ici, reportez-vous [à la rubrique à propos du nouveau centre d’administration Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> Le centre d’administration change. Si votre expérience ne correspond pas aux informations présentées ici, voir [À propos du nouveau centre d’administration Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
 
 ::: moniker-end
 
-Les boîtes aux lettres partagées n’ont besoin d’une licence que si la boîte aux lettres contient plus de 50 Go de données. Suivez ces instructions pour supprimer une licence d’une boîte aux lettres partagée afin de pouvoir l’attribuer à un utilisateur ou renvoyer la licence afin de ne pas payer une licence dont vous n’avez pas besoin.
+En règle générale, les boîtes aux lettres partagées ne nécessitent pas de licence. Suivez ces instructions pour supprimer une licence d’une boîte aux lettres partagée afin de pouvoir l’attribuer à un utilisateur ou renvoyer la licence afin de ne pas payer une licence dont vous n’avez pas besoin.
+
+> [!NOTE]
+> Une licence est requise dans les scénarios suivants :
+> 1. La boîte aux lettres partagée dispose de plus de 50 Go d’espace de stockage.
+> 2. La boîte aux lettres partagée utilise l’archivage inaltérable.
+> 3. La boîte aux lettres partagée est placée en conservation pour litige.
+
   
 ## <a name="remove-the-license"></a>Supprimer la licence
 

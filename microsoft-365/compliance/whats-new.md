@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Nous ajoutons constamment de nouvelles fonctionnalités au centre de conformité Microsoft 365, à la résolution des problèmes que nous apprendons et en apportant des modifications en fonction de vos commentaires. Découvrez ce que nous avons fait dans ce mois-ci.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 940d316c97370a477c963785ae7e90482b35a46c
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: baccff8699f9ec7b38090fb5adc0fcde8811c764
+ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034266"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44327736"
 ---
 # <a name="whats-new-in-the-microsoft-365-compliance-center"></a>Nouveautés du centre de conformité Microsoft 365
 
@@ -70,7 +70,7 @@ L’attente est terminée. Nous sommes heureux de vous annoncer que le centre de
 > [!TIP]
 > Découvrez de nouveau la mise à jour du mois dernier pour un actualisateur sur certaines des [nouvelles solutions](#new-compliance-solutions) que nous avons consultées récemment, ainsi qu’une feuille de [route](#updated-compliance-solutions) illustrant l’emplacement des fonctionnalités de conformité du centre de sécurité & conformité dans Microsoft 365.
 
-Créer un signet et des en [https://compliance.microsoft.com](https://compliance.microsoft.com) -têtes maintenant pour parcourir votre atelier pour gérer la conformité dans votre organisation... ou [Lisez cet article](microsoft-365-compliance-center.md) pour approfondir vos recherches.
+Créer un signet et des en-têtes maintenant pour parcourir [https://compliance.microsoft.com](https://compliance.microsoft.com) votre atelier pour gérer la conformité dans votre organisation... ou [Lisez cet article](microsoft-365-compliance-center.md) pour approfondir vos recherches.
 
 ![Page d’accueil du centre de conformité Microsoft 365](../media/mcc-home-ga.png)
 
@@ -92,7 +92,7 @@ Nous serions ravis d’entendre ce que vous pensez. Lors de l’utilisation de l
 
 ### <a name="just-launched"></a>Venez de lancer
 
-**Conformité de la communication**
+**Conformité des communications**
 
 Le diplôme de la phase d’évaluation à la disponibilité complète, la conformité de la communication est un élément clé de notre nouvelle solution Insider Risk. Cette solution robuste permet de réduire les risques de communication à l’aide de flux de travail pour détecter, examiner et prendre des mesures correctives pour les messages qui ne répondent pas aux normes de votre organisation.
 
@@ -162,10 +162,10 @@ Si vous avez utilisé le centre de sécurité & conformité d’Office 365 pour 
 |**Fonctionnalité**|**Centre de sécurité et conformité Office 365**|**Centre de conformité Microsoft 365**|**En savoir plus**|
 |:-----|:-----|:-----|:-----|
 |Advanced eDiscovery|eDiscovery > Advanced eDiscovery <br/> https://protection.office.com/advancedediscoverycases |Découverte électronique > avancée <br/> https://compliance.microsoft.com/advancedediscovery | [Vue d’ensemble de la solution avancée eDiscovery dans Microsoft 365](overview-ediscovery-20.md) |
-|Stratégies d’alerte|Alertes > les stratégies d’alerte <br/> https://protection.office.com/alertpolicies |Pour l’instant, les stratégies d’alerte sont gérées uniquement dans le centre de conformité & Office 365 Security. |[Stratégies d’alerte dans le centre de sécurité et conformité](alert-policies.md) |
+|Stratégies d’alerte|Alertes > les stratégies d’alerte <br/> https://protection.office.com/alertpolicies |Pour l’instant, les stratégies d’alerte sont gérées uniquement dans le centre de conformité & Office 365 Security. |[Stratégies d’alerte dans le Centre de sécurité et de conformité](alert-policies.md) |
 |Alertes|Alertes > afficher les alertes <br/> https://protection.office.com/viewalerts |Alertes <br/> https://compliance.microsoft.com/compliancealerts |[Affichage des alertes](alert-policies.md#viewing-alerts)|
 |Archiver|Archive de > de gouvernance des informations <br/> https://protection.office.com/archiving |Onglet Archive de > de gouvernance des informations <br/> https://compliance.microsoft.com/informationgovernance?viewid=archive |[Activer des boîtes aux lettres d’archivage](enable-archive-mailboxes.md)|
-|Recherche de journal d’audit|Recherche dans le journal d’audit > <br/> https://protection.office.com/unifiedauditlog |Contrôlé <br/> https://compliance.microsoft.com/auditlogsearch | [Rechercher dans le journal d’audit dans le centre de sécurité & conformité](search-the-audit-log-in-security-and-compliance.md)|
+|Recherche de journal d’audit|Recherche dans le journal d’audit > <br/> https://protection.office.com/unifiedauditlog |Audit <br/> https://compliance.microsoft.com/auditlogsearch | [Rechercher dans le journal d’audit dans le centre de sécurité & conformité](search-the-audit-log-in-security-and-compliance.md)|
 |Recherche de contenu|Recherche > recherche de contenu <br/> https://protection.office.com/contentsearchbeta?ContentOnly=1 | Recherche de contenu <br/> https://compliance.microsoft.com/contentsearch |[Rechercher du contenu dans Office 365](search-for-content.md) |
 |Connecteurs de données|Gestion des informations > archivage des données tierces <br/> https://protection.office.com/nativeconnector | Connecteurs de données <br/> https://compliance.microsoft.com/connectorlanding |[Archiver des données tierces](archiving-third-party-data.md)|
 |Protection contre la perte de données|Protection contre la perte de données <br/> https://protection.office.com/datalossprevention |Protection contre la perte de données <br/> https://compliance.microsoft.com/datalossprevention |[Vue d’ensemble de la protection contre la perte de données](data-loss-prevention-policies.md)|
@@ -177,7 +177,7 @@ Si vous avez utilisé le centre de sécurité & conformité d’Office 365 pour 
 |Explorateur d’activité des étiquettes|Explorateur d’informations > d’activité des étiquettes <br/> https://protection.office.com/labelexplorer |Onglet Explorateur d’activités > classification des données <br/> https://compliance.microsoft.com/dataclassification?viewid=activitiesexplorer |[Afficher l’activité sur votre contenu étiqueté (aperçu)](data-classification-activity-explorer.md)|
 |Étiquettes de rétention et stratégies d’étiquette |Étiquettes de rétention > étiquettes de rétention > des étiquettes et des stratégies d’étiquette <br/> https://protection.office.com/retentionlabels |Onglets de gouvernance des informations > des étiquettes et des stratégies d’étiquette <br/> https://compliance.microsoft.com/informationgovernance?viewid=labels <br/> https://compliance.microsoft.com/informationgovernance?viewid=labelpolicies | [Vue d’ensemble des étiquettes de rétention](labels.md)|
 |Stratégies de rétention|Conservation des > de gouvernance des informations <br/> https://protection.office.com/retention |Onglet rétention > de gouvernance des informations <br/> https://compliance.microsoft.com/informationgovernance?viewid=retention |[Vue d’ensemble des stratégies de rétention](retention-policies.md)|
-|Types d’informations sensibles|Classification > types d’informations sensibles <br/> https://protection.office.com/sensitivetypes |Classification des données > onglet types d’informations sensibles <br/> https://compliance.microsoft.com/dataclassification?viewid=sensitiveinfotypes |[Éléments recherchés par les types d’informations sensibles](what-the-sensitive-information-types-look-for.md)|
+|Types d’informations sensibles|Classification > types d’informations sensibles <br/> https://protection.office.com/sensitivetypes |Classification des données > onglet types d’informations sensibles <br/> https://compliance.microsoft.com/dataclassification?viewid=sensitiveinfotypes |[Définitions d’entités de type d’informations sensibles](sensitive-information-type-entity-definitions.md)|
 |Étiquettes de confidentialité et stratégies d’étiquette|Étiquettes de sensibilité > de classification > les étiquettes et les onglets stratégies d’étiquette <br/> https://protection.office.com/sensitivity |Onglets de protection des informations > des étiquettes et des stratégies d’étiquette <br/> https://compliance.microsoft.com/informationprotection?viewid=sensitivitylabels <br/> https://compliance.microsoft.com/informationprotection?viewid=sensitivitylabelpolicies |[En savoir plus sur les étiquettes de niveau de confidentialité](sensitivity-labels.md) |
 |Certification de service|Certification de service <br/> https://protection.office.com/serviceassurance/dashboard |Pour l’instant, les ressources de service assurance ne sont accessibles que dans le centre de conformité & Office 365 Security. |[Garantie de service dans le centre de sécurité & conformité](service-assurance.md)|
 |Surveillance|Surveillance <br/> https://protection.office.com/supervisoryreviewv2 |Conformité des communications <br/> https://compliance.microsoft.com/supervisoryreview |[Conformité de la communication dans Microsoft 365 (version d’évaluation)](communication-compliance.md) |
@@ -194,7 +194,7 @@ Lors de la configuration du chiffrement pour une étiquette de sensibilité, vou
 
 [En savoir plus](encryption-sensitivity-labels.md#let-users-assign-permissions)
 
-## <a name="august-2019"></a>Août 2019
+## <a name="august-2019"></a>Août 2019
 
 ### <a name="update-to-data-investigations"></a>Mise à jour des enquêtes de données
 

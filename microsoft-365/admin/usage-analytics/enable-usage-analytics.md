@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9db96e9f-a622-4d5d-b134-09dcace55b6a
 description: Découvrez comment commencer à collecter des données pour votre client à l’aide de l’application de modèle d’analyse de l’utilisation 365 de Microsoft dans Power BI.
-ms.openlocfilehash: 3c5e1a35b93b755b92710f0499599d849a6c251c
-ms.sourcegitcommit: 22e9f54d0d3ead2be91a38d49325308c70f43f90
+ms.openlocfilehash: 375bc26a2e106d909eb9ea5d0990a054553d71b0
+ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "44262534"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44327671"
 ---
 # <a name="enable-microsoft-365-usage-analytics"></a>Activation de l'analyse de l'utilisation de Microsoft 365
 
@@ -83,7 +83,7 @@ Pour lancer l’application de modèle, vous devez être un **administrateur gé
 
 5.  Cliquez sur **Explorer l’application** pour afficher l’application avec des exemples de données. Cliquez sur **se connecter** pour connecter l’application aux données de votre organisation.
 
-6.  Une fois que vous avez cliqué sur **connexion**, dans l’écran **se connecter à l’utilisation de Microsoft 365** , tapez l’ID client que vous avez copié à l’étape (1) \> **suivant**.
+6.  Une fois que vous avez cliqué sur **connexion**, dans l’écran **se connecter à l’utilisation de Microsoft 365** , tapez l’ID du locataire (sans les tirets) que vous avez copié à l’étape (1), puis sélectionnez **suivant**.
     
 7. Dans l’écran suivant, sélectionnez **oAuth2** comme **méthode d’authentification** \> **Sign in**. Si vous choisissez une autre méthode d’authentification, la connexion à l’application de modèle échouera.
     

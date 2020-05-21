@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Découvrez le gestionnaire de conformité Microsoft, un outil d’évaluation des risques gratuit basé sur un flux de travail dans le portail d’approbation de service Microsoft.
-ms.openlocfilehash: 84f076a45a3944d1d711a8e04199b357aa52791d
-ms.sourcegitcommit: 6007dbe2cf758c683de399f94023122c678bcada
+ms.openlocfilehash: 79f3145e2512bfb174339ef2cde9a2594b116004
+ms.sourcegitcommit: 56772bed89516cebc5eb370e292ccfbb4889cb38
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "44224641"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44330744"
 ---
 # <a name="microsoft-compliance-manager-preview"></a>Gestionnaire de conformité Microsoft (aperçu)
 
@@ -155,20 +155,21 @@ Les modèles préconfigurés sont les suivants :
 1. [Loi sur la protection générale des données du Brésil (LGPD)](https://go.microsoft.com/fwlink/?linkid=2115387)
 2. [California Consumer Privacy Act (CCPA)](https://go.microsoft.com/fwlink/?linkid=2108871) (aperçu)
 3. [Matrice de contrôles Cloud CSA (Cloud Security Alliance) 3.0.1](https://go.microsoft.com/fwlink/?linkid=2109076)
-4. [RGPD de l’Union européenne](https://go.microsoft.com/fwlink/?linkid=2108870)
-5. [Livret de sécurité des informations sur les institutions financières fédérales (FFIEC)](https://go.microsoft.com/fwlink/?linkid=2109077)
-6. [FedRAMP modéré](https://go.microsoft.com/fwlink/?linkid=2108869)
-7. [HIPAA](https://go.microsoft.com/fwlink/?linkid=2109078)  /  [Hi-Tech](https://go.microsoft.com/fwlink/?linkid=2109079)
-8. [IRAP](https://go.microsoft.com/fwlink/?linkid=2113709)  /  [Australian Government ISM](https://go.microsoft.com/fwlink/?linkid=2113024) (Preview)
-9. [ISO 27001:2013](https://go.microsoft.com/fwlink/?linkid=2109073)
-10. [ISO 27018:2014](https://go.microsoft.com/fwlink/?linkid=2109074)
-11. [ISO 27701:2019](https://go.microsoft.com/fwlink/?linkid=2113025)
-12. [Base de données de protection des données Microsoft 365](compliance-score-methodology.md#initial-score-based-on-microsoft-365-data-protection-baseline)
-13. [NIST 800-53 rév. 4](https://go.microsoft.com/fwlink/?linkid=2109075)
-14. [NIST 800-171](https://go.microsoft.com/fwlink/?linkid=2108867)
-15. [Infrastructure NIST Cybersecurity (CSF)](https://go.microsoft.com/fwlink/?linkid=2108868)
-16. [SOC 1](https://go.microsoft.com/fwlink/?linkid=2115184)
-17. [SOC 2](https://go.microsoft.com/fwlink/?linkid=2115184)
+4. [Résolution de la sécurité des informations de Dubaï (DGISR)](https://go.microsoft.com/fwlink/?linkid=2131193)
+5. [RGPD de l’Union européenne](https://go.microsoft.com/fwlink/?linkid=2108870)
+6. [Livret de sécurité des informations sur les institutions financières fédérales (FFIEC)](https://go.microsoft.com/fwlink/?linkid=2109077)
+7. [FedRAMP modéré](https://go.microsoft.com/fwlink/?linkid=2108869)
+8. [HIPAA](https://go.microsoft.com/fwlink/?linkid=2109078)  /  [Hi-Tech](https://go.microsoft.com/fwlink/?linkid=2109079)
+9. [IRAP](https://go.microsoft.com/fwlink/?linkid=2113709)  /  [Australian Government ISM](https://go.microsoft.com/fwlink/?linkid=2113024) (Preview)
+10. [ISO 27001:2013](https://go.microsoft.com/fwlink/?linkid=2109073)
+11. [ISO 27018:2014](https://go.microsoft.com/fwlink/?linkid=2109074)
+12. [ISO 27701:2019](https://go.microsoft.com/fwlink/?linkid=2113025)
+13. [Base de données de protection des données Microsoft 365](compliance-score-methodology.md#initial-score-based-on-microsoft-365-data-protection-baseline)
+14. [NIST 800-53 rév. 4](https://go.microsoft.com/fwlink/?linkid=2109075)
+15. [NIST 800-171](https://go.microsoft.com/fwlink/?linkid=2108867)
+16. [Infrastructure NIST Cybersecurity (CSF)](https://go.microsoft.com/fwlink/?linkid=2108868)
+17. [SOC 1](https://go.microsoft.com/fwlink/?linkid=2115184)
+18. [SOC 2](https://go.microsoft.com/fwlink/?linkid=2115184)
 
 ## <a name="secure-score-integration"></a>Intégration de la note sécurisée
 

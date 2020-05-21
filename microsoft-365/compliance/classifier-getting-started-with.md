@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Un classificateur Microsoft 365 pouvant être formé est un outil que vous pouvez former afin de reconnaître différents types de contenu en lui donnant des échantillons positifs et négatifs. Une fois que le classifieur est formé, vous confirmez que ses résultats sont précis. Vous l’utilisez ensuite pour effectuer une recherche dans le contenu de votre organisation et le classifier pour appliquer des étiquettes de rétention ou de sensibilité ou l’inclure dans la protection contre la perte de données (DLP) ou les stratégies de rétention.
-ms.openlocfilehash: edfa708077e273d9c644801f5461c880d87261b5
-ms.sourcegitcommit: 261d51b90a9ad53a6a42348c414b1b1e1230c37f
+ms.openlocfilehash: 99d1d9039ef70347515f80da73a487f40534d2e7
+ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44292430"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44327756"
 ---
 # <a name="getting-started-with-trainable-classifiers-preview"></a>Prise en main des classificateurs de formation (préversion)
 
@@ -34,7 +34,7 @@ Cette méthode nécessite un jugement humain et une action. Un administrateur pe
 Cette catégorie de mécanismes de classification inclut la recherche de contenu en :
 
 - Mots clés ou valeurs de métadonnées (langage de requête par mot clé)
-- utilisation de modèles d’informations sensibles précédemment identifiés comme des numéros de sécurité sociale, de carte bancaire ou de compte bancaire [(types d’informations sensibles)](what-the-sensitive-information-types-look-for.md)
+- utilisation de modèles d’informations sensibles précédemment identifiés comme des numéros de sécurité sociale, de carte de crédit ou de compte bancaire [(définitions d’entités de type d’informations sensibles)](sensitive-information-type-entity-definitions.md)
 - Reconnaissance d’un élément car il s’agit d’une variante d’un modèle [(impression des doigts de document)](document-fingerprinting.md)
 - utilisation de la présence de chaînes exactes [(correspondance exacte de données)](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md). '
 
@@ -114,10 +114,10 @@ La création et la publication d’un classificateur pour l’utilisation dans l
 
 ## <a name="see-also"></a>Voir aussi
 
-- [étiquettes de rétention](labels.md)
-- [stratégies de rétention](retention-policies.md)
-- [protection contre la perte de données (DLP)](data-loss-prevention-policies.md)
-- [étiquettes de sensibilité](sensitivity-labels.md)
-- [types d’informations sensibles](what-the-sensitive-information-types-look-for.md)
-- [impression des doigts de document](document-fingerprinting.md)
-- [correspondance exacte des données](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)
+- [Étiquettes de rétention](labels.md)
+- [Stratégies de rétention](retention-policies.md)
+- [Protection contre la perte de données (DLP)](data-loss-prevention-policies.md)
+- [Étiquettes de confidentialité](sensitivity-labels.md)
+- [Définitions d’entités de type d’informations sensibles](sensitive-information-type-entity-definitions.md)
+- [Impression des doigts de document](document-fingerprinting.md)
+- [Correspondance exacte des données](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)

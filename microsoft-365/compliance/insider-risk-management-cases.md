@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 7af3e54a13ceabf4acfaa2259ea0089854660721
-ms.sourcegitcommit: 1e9ce51efa583c33625299d17e37f58048a4169c
+ms.openlocfilehash: 9959d41cf112c1ebcc88a8dd0335cae5a5537059
+ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "43804834"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44327860"
 ---
 # <a name="insider-risk-management-cases"></a>Dossiers de gestion des risques initiés
 
@@ -172,7 +172,7 @@ Pour escalader un cas à une enquête d’un employé :
 3. Dans la boîte de dialogue **escalade de l’enquête** , entrez un nom pour la nouvelle enquête de l’employé. Si nécessaire, entrez des remarques sur le cas et sélectionnez **escalade**.
 5. Sélectionnez **confirmer** pour créer le cas d’enquête des employés ou sélectionnez **Annuler** pour fermer la boîte de dialogue sans créer de cas d’enquête d’employé.
 
-Une fois que le cas de gestion des risques initiés a été remonté vers un nouveau cas d’enquête chez les employés, vous pouvez passer en revue le nouveau cas dans la zone**avancé** de **découverte électronique** > dans le centre de conformité Microsoft 365.
+Une fois que le cas de gestion des risques initiés a été remonté vers un nouveau cas d’enquête chez les employés, vous pouvez passer en revue le nouveau cas dans la zone avancé de **découverte électronique**  >  **Advanced** dans le centre de conformité Microsoft 365.
 
 ### <a name="resolve-the-case"></a>Résoudre le cas
 

@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: bfaead99bf439173cb353bc745488a5d0aee70c4
-ms.sourcegitcommit: ab0a944159d9349fbc7adc2f51c7f881254d7782
+ms.openlocfilehash: 6ca0edb1338c21f710ae493c8697b0c2740860ba
+ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44210535"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44327602"
 ---
 # <a name="communication-compliance-feature-reference"></a>Référence de la fonctionnalité de conformité des communications
 
@@ -41,7 +41,7 @@ Vous créez des stratégies de conformité des communications pour les organisat
 
 Les modèles de stratégie sont des paramètres de stratégie prédéfinis que vous pouvez utiliser pour créer rapidement des stratégies pour répondre aux scénarios de conformité courants. Chacun de ces modèles présente des différences dans les conditions et l’étendue, et tous les modèles utilisent les mêmes types de signaux d’analyse. Vous pouvez choisir parmi les modèles de stratégie suivants :
 
-|**Catégorie**|**Modèle de stratégie**|**Details**|
+|**Catégorie**|**Modèle de stratégie**|**Détails**|
 |:-----|:-----|:-----|
 | **Langage offensant et blocage du harcèlement** | Surveiller les communications pour un langage offensant | -Emplacements : Exchange Online, Microsoft Teams, Yammer, Skype entreprise <br> -Direction : entrant, sortant, interne <br> -Pourcentage de révision : 100% <br> -Conditions : classifieur de langue offensant |
 | **Informations sensibles** | Surveiller les communications pour les informations sensibles | -Emplacements : Exchange Online, Microsoft Teams, Yammer, Skype entreprise <br> -Direction : entrant, sortant, interne <br> -Pourcentage de révision : 10% <br> -Conditions : informations sensibles, modèles de contenu prédéfinis et types, option de dictionnaire personnalisé, pièces jointes dont la taille est supérieure à 1 Mo |
@@ -103,7 +103,7 @@ Pour plus d’informations sur la retraite de la surveillance dans Office 365, c
 
 ## <a name="policy-settings"></a>Paramètres de stratégie
 
-### <a name="users"></a>Utilisateurs
+### <a name="users"></a>Users
 
 Vous avez la possibilité de sélectionner **tous les utilisateurs** ou de définir des utilisateurs spécifiques dans une stratégie de conformité de communication. La sélection de **tous les utilisateurs** applique la stratégie à tous les utilisateurs et tous les groupes auxquels n’importe quel utilisateur est inclus en tant que membre. La définition d’utilisateurs spécifiques applique la stratégie aux utilisateurs définis et à tous les groupes auxquels les utilisateurs définis sont inclus.
 
@@ -124,7 +124,7 @@ Vous pouvez inclure des types d’informations sensibles dans le cadre de votre 
 - Confidentialité
 - Type d’informations personnalisées
 
-Pour en savoir plus sur les détails des informations sensibles et les modèles inclus dans les types par défaut, consultez la rubrique [types d’informations sensibles](what-the-sensitive-information-types-look-for.md).
+Pour en savoir plus sur les détails des informations sensibles et les modèles inclus dans les types par défaut, consultez la rubrique [informations sensibles](sensitive-information-type-entity-definitions.md)sur les définitions d’entités.
 
 ### <a name="custom-keyword-dictionaries"></a>Dictionnaires de mots clés personnalisés
 
@@ -195,7 +195,7 @@ Vous pouvez créer des modèles d’avis si vous souhaitez envoyer aux utilisate
 
 Les modèles de notifications sont des modèles de courrier électronique personnalisés dans lesquels vous pouvez définir les champs de message suivants :
 
-|**Field**|**Obligatoire**| **Details** |
+|**Field**|**Obligatoire**| **Détails** |
 |:-----|:-----|:-----|
 |**Nom du modèle** | Oui | Nom convivial du modèle d’avis que vous sélectionnerez dans le flux de travail de notification lors de la correction, prend en charge les caractères de texte. |
 | **Adresse de l’expéditeur** | Oui | Adresse d’un ou de plusieurs utilisateurs ou groupes qui envoient le message à l’employé avec une correspondance de stratégie, sélectionnée dans Active Directory pour votre abonnement. |
@@ -227,7 +227,7 @@ Si vous souhaitez créer un message électronique en texte simple pour les notif
 
 Les filtres de conformité de la communication vous permettent de filtrer et de trier les messages d’alerte pour des actions plus rapides d’enquête et de correction. Le filtrage est disponible sur les onglets **en attente** et **résolus** pour chaque stratégie. Pour enregistrer un filtre ou un jeu de filtres en tant que requête de filtre enregistrée, une ou plusieurs valeurs doivent être configurées en tant que sélections de filtre. Le tableau suivant présente les détails des filtres :
 
-|**Filtre**|**Details**|
+|**Filtre**|**Détails**|
 |:-----|:-----|
 | **Date** | Date à laquelle le message a été envoyé ou reçu par un utilisateur au sein de votre organisation. |
 | **Classe file** | Classe du message en fonction du type de message, qu’il *s’agisse d’un message ou* d’une *pièce jointe*. |
@@ -287,7 +287,7 @@ Dans certains cas, vous devez fournir des informations aux auditeurs de régleme
 
 Pour afficher les activités de stratégie de conformité de communication, sélectionnez le contrôle **Exporter les activités de révision** dans la page principale pour n’importe quelle stratégie. Cette action génère un fichier d’audit au format. csv qui contient les informations suivantes :
 
-|**Field**|**Details**|
+|**Field**|**Détails**|
 |:-----|:-----|
 | **CreationDate** | Date à laquelle l’activité a été effectuée dans une stratégie. |
 | **UserIds** | Utilisateur qui a exécuté l’activité dans une stratégie. |

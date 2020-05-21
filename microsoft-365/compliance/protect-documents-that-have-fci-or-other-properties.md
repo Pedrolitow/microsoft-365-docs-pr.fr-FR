@@ -17,12 +17,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: De nombreuses organisations appliquent déjà un processus permettant d’identifier et de classer les informations sensibles à l’aide des propriétés de classification dans l’infrastructure de classification des fichiers (ICF) Windows Server, des propriétés de document dans SharePoint ou des propriétés de document appliquées par un système tiers. Si cela décrit votre organisation, vous pouvez créer une stratégie DLP qui reconnaît les propriétés qui ont été appliquées aux documents par Windows Server ICF ou un autre système, afin que la stratégie DLP puisse être appliquée aux documents Office avec des valeurs de propriété ICF ou autres.
-ms.openlocfilehash: e2b64412a6f35dc3f29fe538a849f84e764af156
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 3fa28492ef4d19903797741795091561de3fa257
+ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632199"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44327100"
 ---
 # <a name="create-a-dlp-policy-to-protect-documents-with-fci-or-other-properties"></a>Création d’une stratégie DLP pour protéger les documents avec l’ICF ou d’autres propriétés
 
@@ -54,13 +54,13 @@ Vous devez d’abord charger un document avec la propriété que vous souhaitez 
 
 1. Connectez-vous au Centre d’administration Microsoft 365.
     
-2. Dans le volet de navigation de gauche, sélectionnez **centres** \> d’administration **SharePoint**. Vous vous trouvez maintenant dans le Centre d’administration SharePoint.
+2. Dans le volet de navigation de gauche, sélectionnez **centres d’administration** \> **SharePoint**. Vous vous trouvez maintenant dans le Centre d’administration SharePoint.
     
-3. Dans le volet de navigation de gauche, sélectionnez **recherche** \> dans la \> **page**administration de la **recherche** .
+3. Dans le volet de navigation de gauche, sélectionnez **recherche** \> dans la page **administration** de la recherche \> **Manage Search Schema**.
     
     ![Page d’administration de la recherche dans le Centre d’administration SharePoint](../media/6bcd3aec-d11a-4f8c-9987-8f35da14d80b.png)
   
-4. Sur la page \> **propriétés gérées** , **nouvelle propriété gérée**.
+4. Sur la page **propriétés gérées** \> **, nouvelle propriété gérée**.
     
     ![Page Propriétés gérées avec le bouton Nouvelle propriété gérée mis en surbrillance](../media/b161c764-414c-4037-83ed-503a49fb4410.png)
   
@@ -70,13 +70,13 @@ Vous devez d’abord charger un document avec la propriété que vous souhaitez 
     
 7. Sous **Caractéristiques principales**, sélectionnez **Utilisable dans une requête** et **Affichable dans les résultats d’une recherche**.
     
-8. \> Sous **mappages sur les propriétés analysées** , **Ajoutez un mappage**.
+8. Sous **mappages sur les propriétés analysées** \> , **Ajoutez un mappage**.
     
-9. Dans la boîte \> de dialogue **sélection des propriétés analysées** , recherchez et sélectionnez la propriété analysée qui correspond à la propriété ICF de Windows Server ou à une autre propriété que vous \> utiliserez dans votre stratégie DLP **OK**.
+9. Dans la boîte de dialogue **sélection des propriétés analysées** \> , recherchez et sélectionnez la propriété analysée qui correspond à la propriété ICF de Windows Server ou à une autre propriété que vous utiliserez dans votre stratégie DLP \> **OK**.
     
     ![Boîte de dialogue de sélection des propriétés analysées](../media/aeda1dce-1342-48bf-9594-a8e4f230e8aa.png)
   
-10. Au bas de la page \> , **OK**.
+10. Au bas de la page, \> **OK**.
     
 ## <a name="create-a-dlp-policy-that-uses-an-fci-property-or-other-property"></a>Création d’une stratégie DLP qui utilise une propriété ICF ou une autre propriété
 
@@ -92,13 +92,13 @@ Ensuite, ils créent une stratégie DLP avec deux règles qui utilisent les **Pr
     
 ### <a name="create-the-dlp-policy-by-using-powershell"></a>Création de la stratégie DLP à l’aide de PowerShell
 
-Notez que les propriétés de document de condition **contiennent l’une de ces valeurs** ne sont temporairement pas disponibles dans l' &amp; interface utilisateur du centre de sécurité conformité, mais vous pouvez toujours utiliser cette condition à l’aide de PowerShell. Vous pouvez utiliser les `New\Set\Get-DlpCompliancePolicy` cmdlets pour travailler avec une stratégie DLP et utiliser les `New\Set\Get-DlpComplianceRule` applets de commande avec `ContentPropertyContainsWords` le paramètre pour ajouter les **Propriétés de document de condition contiennent l’une de ces valeurs**.
+Notez que les propriétés de document de condition **contiennent l’une de ces valeurs** ne sont temporairement pas disponibles dans l’interface utilisateur du centre de sécurité &amp; conformité, mais vous pouvez toujours utiliser cette condition à l’aide de PowerShell. Vous pouvez utiliser les `New\Set\Get-DlpCompliancePolicy` cmdlets pour travailler avec une stratégie DLP et utiliser les `New\Set\Get-DlpComplianceRule` applets de commande avec le `ContentPropertyContainsWords` paramètre pour ajouter les **Propriétés de document de condition contiennent l’une de ces valeurs**.
   
 Pour plus d’informations sur ces applets de commande, voir [Security &amp; Compliance Center cmdlets](https://go.microsoft.com/fwlink/?LinkID=799772&amp;clcid=0x409).
   
-1. [Connexion au centre de &amp; sécurité conformité à l’aide de PowerShell à distance](https://go.microsoft.com/fwlink/?LinkID=799771&amp;clcid=0x409)
+1. [Connexion au centre de sécurité &amp; conformité à l’aide de PowerShell à distance](https://go.microsoft.com/fwlink/?LinkID=799771&amp;clcid=0x409)
     
-2. Créez la stratégie à l' `New-DlpCompliancePolicy`aide de.
+2. Créez la stratégie à l’aide de `New-DlpCompliancePolicy` .
 
 Voici un exemple de PowerShell qui crée une stratégie DLP qui s’applique à tous les emplacements.
 
@@ -106,7 +106,7 @@ Voici un exemple de PowerShell qui crée une stratégie DLP qui s’applique à 
 New-DlpCompliancePolicy -Name FCI_PII_policy -ExchangeLocation All -SharePointLocation All -OneDriveLocation All -Mode Enable
 ```
 
-3. Créez les deux règles décrites ci-dessus `New-DlpComplianceRule`à l’aide de, où une règle est pour la valeur **faible** et une autre pour les valeurs **élevée** et **modérée** . 
+3. Créez les deux règles décrites ci-dessus à l’aide de `New-DlpComplianceRule` , où une règle est pour la valeur **faible** et une autre pour les valeurs **élevée** et **modérée** . 
     
     Voici un exemple PowerShell qui crée ces deux règles. Notez que les paires nom/valeur de la propriété sont placées entre guillemets et qu’un nom de propriété peut spécifier plusieurs valeurs séparées par des virgules sans espaces, comme`"<Property1>:<Value1>,<Value2>","<Property2>:<Value3>,<Value4>"....`
 
@@ -135,9 +135,9 @@ Pour plus d’informations, voir [Demander manuellement l’analyse et la réind
   
 ### <a name="re-index-a-site-optional"></a>Réindexation d’un site (facultatif)
 
-1. Sur le site, choisissez **paramètres** (icône d’engrenage dans le coin \> supérieur **droit).**
+1. Sur le site, choisissez **paramètres** (icône d’engrenage dans le coin supérieur droit) \> **Site Settings**.
     
-2. Sous **recherche**, choisissez \> **site de réindexation**de la **recherche et de la disponibilité hors connexion** .
+2. Sous **recherche**, choisissez site de réindexation **de la recherche et de la disponibilité hors connexion** \> **Reindex site**.
     
 ## <a name="more-information"></a>Plus d’informations
 
@@ -149,4 +149,4 @@ Pour plus d’informations, voir [Demander manuellement l’analyse et la réind
     
 - [Contenu des modèles de stratégie DLP](what-the-dlp-policy-templates-include.md)
     
-- [Inventaire des types d'informations sensibles](what-the-sensitive-information-types-look-for.md)
+- [Définitions d’entités de type d’informations sensibles](sensitive-information-type-entity-definitions.md)

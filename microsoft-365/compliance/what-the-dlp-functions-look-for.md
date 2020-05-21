@@ -16,18 +16,18 @@ search.appverid:
 - MOE150
 - MET150
 description: Les types d’informations sensibles recherchent un modèle spécifique et le corroborent en garantissant une mise en forme appropriée, en appliquant des checksums et en recherchant des mots clés pertinents ou d’autres informations. Certaines de ces fonctionnalités sont effectuées par des fonctions internes. Cette rubrique explique ce que ces fonctions recherchent, pour vous aider à comprendre le fonctionnement des types d’informations sensibles prédéfinis.
-ms.openlocfilehash: 86ce1c9d546f776e239fdaca76219129c24a73e8
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 710cd371cbf67a03d75a928baab4b63587cdcfc1
+ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601201"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44327746"
 ---
 # <a name="what-the-dlp-functions-look-for"></a>Éléments recherchés par les fonctions DLP
 
 La protection contre la perte de données (DLP) inclut des types d’informations sensibles, tels que le numéro de carte de crédit et le numéro de carte de débit de l’Union européenne, qui sont prêts à être utilisés dans vos stratégies DLP. Ces types d’informations sensibles recherchent un modèle spécifique et le corroborent en veillant à l’adéquation de la mise en forme, en appliquant des sommes de contrôle et en recherchant des mots clés pertinents ou d’autres informations. Certaines de ces fonctionnalités sont effectuées par des fonctions internes. Par exemple, le type d’informations sensibles de numéro de carte de crédit utilise une fonction pour rechercher des dates mises en forme comme une date d’expiration, pour aider à confirmer qu’un numéro est un numéro de carte de crédit.
   
-Cette rubrique explique ce que ces fonctions recherchent, pour vous aider à comprendre le fonctionnement des types d’informations sensibles prédéfinis. Pour plus d’informations, voir [What the sensitive information types look for](what-the-sensitive-information-types-look-for.md).
+Cette rubrique explique ce que ces fonctions recherchent, pour vous aider à comprendre le fonctionnement des types d’informations sensibles prédéfinis. Pour plus d’informations, consultez la rubrique [informations sensibles type d’entité définitions](sensitive-information-type-entity-definitions.md)
   
 ## <a name="func_us_date"></a>Func_us_date
 
@@ -124,9 +124,9 @@ Noms de mois acceptés :
 ## <a name="func_eu_date1-deprecated"></a>Func_eu_date1 (déconseillée)
 
 > [!NOTE]
-> Cette fonction est déconseillée, car elle prend en charge uniquement les noms de mois portugais, `Func_eu_date` qui sont désormais inclus dans la fonction ci-dessus. 
+> Cette fonction est déconseillée, car elle prend en charge uniquement les noms de mois portugais, qui sont désormais inclus dans la `Func_eu_date` fonction ci-dessus. 
   
-Cette fonction recherche une date au format couramment utilisé en portugais. Le format de cette fonction est le même que `Func_eu_date`, qui diffère uniquement dans la langue utilisée.
+Cette fonction recherche une date au format couramment utilisé en portugais. Le format de cette fonction est le même que `Func_eu_date` , qui diffère uniquement dans la langue utilisée.
   
 Exemples :
   
@@ -155,9 +155,9 @@ Noms de mois acceptés :
 ## <a name="func_eu_date2-deprecated"></a>Func_eu_date2 (déconseillée)
 
 > [!NOTE]
-> Cette fonction est déconseillée, car elle prend en charge uniquement les noms de mois néerlandais, `Func_eu_date` qui sont désormais inclus dans la fonction ci-dessus. 
+> Cette fonction est déconseillée, car elle prend en charge uniquement les noms de mois néerlandais, qui sont désormais inclus dans la `Func_eu_date` fonction ci-dessus. 
   
-Cette fonction recherche une date au format couramment utilisé en néerlandais. Le format de cette fonction est le même que `Func_eu_date`, qui diffère uniquement dans la langue utilisée.
+Cette fonction recherche une date au format couramment utilisé en néerlandais. Le format de cette fonction est le même que `Func_eu_date` , qui diffère uniquement dans la langue utilisée.
   
 Exemples :
   

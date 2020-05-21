@@ -17,12 +17,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 965b4cf872129dc7bc9b439c1c15025acceb44c6
-ms.sourcegitcommit: 614666afb104fc97acb4a2ee5577ef63c0de153a
+ms.openlocfilehash: dbc8d1e8dae1845412b1fb3ad86b831b08a4a518
+ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44173545"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44327143"
 ---
 # <a name="microsoft-secure-score-new"></a>Microsoft Secure score (nouveauté)
 
@@ -31,7 +31,7 @@ ms.locfileid: "44173545"
 >
 >Si vous ne voyez pas d’onglet de **mesures & d’tendances** en regard de l’historique, c’est que vous êtes dans l’itération précédente. [Accéder à Microsoft Secure score (itération précédente)](microsoft-secure-score.md)
 
-Microsoft Secure score est une mesure de la position de sécurité d’une organisation, avec un nombre supérieur indiquant d’autres actions d’amélioration. Vous pouvez le trouver https://security.microsoft.com/securescore dans le centre de [sécurité Microsoft 365](overview-security-center.md).
+Microsoft Secure score est une mesure de la position de sécurité d’une organisation, avec un nombre supérieur indiquant d’autres actions d’amélioration. Vous pouvez https://security.microsoft.com/securescore le trouver dans le [Centre de sécurité Microsoft 365](overview-security-center.md).
 
 Le suivi des recommandations de score de sécurité peut protéger votre organisation contre les menaces. À partir d’un tableau de bord centralisé dans le centre de sécurité Microsoft 365, les organisations peuvent surveiller et gérer la sécurité des identités, des données, des applications, des périphériques et de l’infrastructure de Microsoft 365.
 
@@ -103,6 +103,9 @@ Pour vous aider à trouver plus rapidement les informations dont vous avez besoi
 * Application (applications de messagerie et de Cloud, y compris Office 365 et Microsoft Cloud App Security)
 * Infrastructure (aucune action d’amélioration pour l’instant)
 
+>[!NOTE]
+>Dans la version récente de Microsoft Secure score, un modèle de notation amélioré a été publié, ce qui rendait le score de sécurité Microsoft temporairement incompatible avec le score de sécurité d’identité et l’API Graph. [Afficher les détails](microsoft-secure-score-new.md#incompatibility-with-identity-secure-score-and-graph-api)
+
 Dans la page de présentation de Microsoft Secure score, vous pouvez voir la répartition des points entre ces groupes et les points disponibles. La page de vue d’ensemble est également l’endroit où vous pouvez obtenir une vue d’ensemble du score total, de la tendance historique de votre score de sécurité avec comparaisons de référence et des actions d’amélioration hiérarchisée qui peuvent être prises pour améliorer votre score.
 
 ![Page d’accueil du score sécurisé](../../media/secure-score/secure-score-homepage-new.png)
@@ -120,8 +123,8 @@ Le classement repose sur le nombre de points restants à atteindre, les difficul
 
 Lorsque vous sélectionnez une action d’amélioration spécifique, un menu volant de page entière s’affiche.  
 
-![Exemple](../../media/secure-score/secure-score-improvement-action-details.png)
-de menu contextuel d’action d’amélioration*figure 2 : exemple de menu contextuel d’action d’amélioration*
+![Exemple de menu contextuel d’action d’amélioration ](../../media/secure-score/secure-score-improvement-action-details.png)
+ *figure 2 : exemple de menu contextuel d’action d’amélioration*
 
 Pour terminer l’action, vous disposez de plusieurs options :
 
@@ -177,6 +180,14 @@ Microsoft Secure score est un résumé numérique de votre position de sécurit�
 ## <a name="whats-new"></a>Quelles sont les nouveautés ? 
 
 Pour faire en sorte que Microsoft Secure score un meilleur représentant de votre position de sécurité, nous avons apporté des modifications. Pour en savoir plus sur les modifications planifiées, consultez [la rubrique what’s from Microsoft Secure score ?](microsoft-secure-score-whats-coming.md).
+
+### <a name="incompatibility-with-identity-secure-score-and-graph-api"></a>Incompatibilité avec le score de sécurité d’identité et l’API Graph
+
+Dans la version récente de Microsoft Secure score, un modèle de notation amélioré a été publié. Ces modifications permettent d’obtenir une vue plus flexible et précise de votre position de sécurité. Toutefois, ces mises à jour ont rendu le score de sécurité Microsoft incompatible temporairement avec le score de sécurité d’identité et l’API Graph.
+
+Dans le temps, le score de sécurité d’identité et l’API Graph adopteront le nouveau modèle de notation. Jusqu’à ce moment, les clients verront les différences entre les scores communiqués par Microsoft Secure score, Identity Secure score et l’API Graph. Nous nous excusons des désagréments que cela peut entraîner et nous travaillons pour garantir que ces expériences sont plus compatibles à l’avenir.
+
+### <a name="updated-improvement-actions"></a>Actions d’amélioration mises à jour
 
 - Ajout d’actions d’amélioration Azure Active Directory
 - Ajout d’actions d’amélioration de la protection avancée contre les menaces

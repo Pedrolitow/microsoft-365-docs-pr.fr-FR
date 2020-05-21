@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-mar2020
 ms.assetid: 59414438-99f5-488b-975c-5023f2254369
 description: Dans cet article, vous apprendrez à créer, tester et régler une stratégie DLP en fonction des besoins de votre organisation.
-ms.openlocfilehash: 2a7ef029d00aff8450d9e8cf41253c2a86606807
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 2cbf30f3d0c5d70aecce77c7a07820812699797a
+ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035756"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44327796"
 ---
 # <a name="create-test-and-tune-a-dlp-policy"></a>Création, test et réglage d’une stratégie DLP
 
@@ -51,13 +51,13 @@ En d’autres termes, DLP est généralement assez intelligent pour reconnaître
 - «Pouvez-vous commander un nouvel ordinateur portable. Utilisez mon numéro de VISA 1111-1111-1111-1111, expiration 11/22, et m’envoyer la date de livraison estimée lorsque vous l’avez. "
 - «Mon numéro de série d’ordinateur portable est 2222-2222-2222-2222 et il a été acheté le 11/2010. À propos, est-ce que mon visa de voyage est encore approuvé ?»
 
-Cette rubrique présente les types d’informations [sensibles](what-the-sensitive-information-types-look-for.md) qui expliquent le mode de détection de chaque type d’informations.
+Une référence intéressante pour conserver les signets est une [définition d’entité de type informations sensibles](sensitive-information-type-entity-definitions.md) qui explique comment chaque type d’informations est détecté.
 
 ## <a name="where-to-start-with-data-loss-prevention"></a>Où commencer avec la protection contre la perte de données
 
 Lorsque les risques de fuites de données ne sont pas totalement évidents, il est difficile de déterminer exactement où commencer à mettre en œuvre DLP. Heureusement, les stratégies DLP peuvent être exécutées en « mode test », ce qui vous permet d’évaluer leur efficacité et leur exactitude avant de les activer.
 
-Les stratégies DLP pour Exchange Online peuvent être gérées via le centre d’administration Exchange. Toutefois, vous pouvez configurer des stratégies DLP pour toutes les charges de travail via le centre de sécurité & conformité, ce que nous allons utiliser pour les démonstrations de cet article. Dans le centre de sécurité & conformité, vous trouverez les stratégies DLP sous**stratégie**de **protection contre** > la perte de données. Cliquez sur **créer une stratégie** à démarrer.
+Les stratégies DLP pour Exchange Online peuvent être gérées via le centre d’administration Exchange. Toutefois, vous pouvez configurer des stratégies DLP pour toutes les charges de travail via le centre de sécurité & conformité, ce que nous allons utiliser pour les démonstrations de cet article. Dans le centre de sécurité & conformité, vous trouverez les stratégies DLP sous stratégie de **protection contre la perte de données**  >  **Policy**. Cliquez sur **créer une stratégie** à démarrer.
 
 Microsoft 365 fournit une gamme de [modèles de stratégie DLP](what-the-dlp-policy-templates-include.md) que vous pouvez utiliser pour créer des stratégies DLP. Imaginons que vous êtes une entreprise australienne. Vous pouvez filtrer les modèles de stratégie pour n’afficher que ceux qui sont pertinents pour l’Australie, qui entrent dans les catégories générales de finances, médecine et santé, ainsi que la confidentialité.
 
@@ -95,7 +95,7 @@ Dans l’écran révision finale, cliquez sur **créer** pour terminer la créat
 
 ## <a name="test-a-dlp-policy"></a>Tester une stratégie DLP
 
-Votre nouvelle stratégie DLP commencera à prendre effet dans environ 1 heure. Vous pouvez vous asseoir et attendre qu’elle soit déclenchée par une activité utilisateur normale, ou vous pouvez essayer de la déclencher vous-même. Précédemment, j’ai lié à cette [rubrique sur les types d’informations sensibles](what-the-sensitive-information-types-look-for.md), qui vous fournissent des informations sur la façon de déclencher des correspondances DLP.
+Votre nouvelle stratégie DLP commencera à prendre effet dans environ 1 heure. Vous pouvez vous asseoir et attendre qu’elle soit déclenchée par une activité utilisateur normale, ou vous pouvez essayer de la déclencher vous-même. Précédemment, j’ai lié à des [définitions d’entités de type d’informations sensibles](sensitive-information-type-entity-definitions.md), qui vous fournissent des informations sur la façon de déclencher des correspondances DLP.
 
 Par exemple, la stratégie DLP que j’ai créée pour cet article détectera les numéros de fichiers fiscaux australiens (TFN). Conformément à la documentation, la correspondance est basée sur les critères suivants.
 
@@ -192,7 +192,7 @@ Une autre solution consiste à augmenter simplement le nombre d’instances, de 
 
 En plus de modifier le nombre d’instances, vous pouvez également ajuster la précision de la correspondance (ou le niveau de confiance). Si votre type d’informations sensibles comporte plusieurs modèles, vous pouvez ajuster la précision des correspondances dans votre règle, afin que votre règle corresponde uniquement à des modèles spécifiques. Par exemple, pour réduire les faux positifs, vous pouvez définir la précision de la règle de sorte qu’elle corresponde uniquement au modèle ayant le niveau de confiance le plus élevé. Comprendre comment le niveau de confiance est calculé est un peu délicat (et au-delà de l’étendue de cette publication), mais voici une bonne explication de [l’utilisation du niveau de confiance pour régler vos règles](data-loss-prevention-policies.md#match-accuracy).
 
-Enfin, si vous souhaitez obtenir un peu plus de détails, vous pouvez personnaliser tout type d’informations sensibles, par exemple, vous pouvez supprimer « Sydney NSW » de la liste des mots-clés de la [licence australienne](what-the-sensitive-information-types-look-for.md#australia-drivers-license-number)pour éliminer le faux positif déclenché ci-dessus. Pour savoir comment effectuer cette opération à l’aide de XML et de PowerShell, consultez cette rubrique relative à la [Personnalisation d’un type d’informations sensibles intégré](customize-a-built-in-sensitive-information-type.md).
+Enfin, si vous souhaitez obtenir un peu plus de détails, vous pouvez personnaliser tout type d’informations sensibles, par exemple, vous pouvez supprimer « Sydney NSW » de la liste des mots-clés du [numéro de permis de conduire Australie](sensitive-information-type-entity-definitions.md#australia-drivers-license-number), afin d’éliminer le faux positif déclenché ci-dessus. Pour savoir comment effectuer cette opération à l’aide de XML et de PowerShell, consultez cette rubrique relative à la [Personnalisation d’un type d’informations sensibles intégré](customize-a-built-in-sensitive-information-type.md).
 
 ## <a name="turn-on-a-dlp-policy"></a>Activer une stratégie DLP
 

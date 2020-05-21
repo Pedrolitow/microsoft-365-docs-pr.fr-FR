@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Notes de publication et problèmes connus pour le score de conformité Microsoft (aperçu), une fonctionnalité du centre de conformité M365 qui permet de simplifier et d’automatiser les évaluations des risques.
-ms.openlocfilehash: 4368255c87da118174ad08b52994865a8fdcd0af
-ms.sourcegitcommit: f70f75b9dd163c00a3c6bc4b9f9b055e90c50367
+ms.openlocfilehash: 1567921b8bd07b0fe4deda0bab6601898eed75a9
+ms.sourcegitcommit: 56772bed89516cebc5eb370e292ccfbb4889cb38
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2020
-ms.locfileid: "43790589"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44330778"
 ---
 # <a name="microsoft-compliance-score-preview-release-notes"></a>Notes de publication du score de conformité Microsoft (aperçu)
 
@@ -32,6 +32,7 @@ Le score de conformité est une nouvelle fonctionnalité du [Centre de conformit
 De nouveaux modèles préconfigurés pour les évaluations sont publiés en production pour le score de conformité (aperçu) dès qu’ils sont disponibles. Consultez la [liste complète des modèles ici](compliance-score.md#templates). Les modèles récemment ajoutés sont les suivants :
 
 - Loi sur la protection générale des données du Brésil (LGPD)
+- Résolution de la sécurité des informations de Dubaï (DGISR)
 - IRAP/Australian Government ISM (Preview)
 - ISO 27701:2019
 - SOC 1
@@ -47,7 +48,7 @@ Le score de conformité est désormais disponible dans les langues suivantes, en
 
 ## <a name="common-actions-will-synch-status-across-groups"></a>Les actions courantes synchronisent l’état entre les groupes
 
-Si votre organisation dispose de plusieurs groupes d’évaluations, le comportement des actions **techniques** (c’est-à-dire, des actions affectant l’ensemble de votre organisation) a changé. Toutes les actions dupliquées entre les groupes ont été regroupées en une seule action. Cette action unique contient toutes les notes et preuves téléchargées des versions en double. Avec cette modification, les actions techniques se comporteront désormais comme lorsqu’elles appartenaient au même groupe. Toutes les modifications apportées à l’action dans un groupe ou une évaluation apparaissent maintenant dans toutes les instances. L' **État de mise en œuvre**, la **Date de mise en œuvre**, l' **État du test**et la **Date** de test reflètent les mises à jour les plus récentes.
+Si votre organisation dispose de plusieurs groupes d’évaluations, le comportement des actions **techniques** (c’est-à-dire, des actions affectant l’ensemble de votre organisation) a changé. Toutes les actions dupliquées entre les groupes ont été regroupées en une seule action. Cette action unique contient toutes les notes et preuves téléchargées des versions en double. Avec cette modification, les actions techniques se comporteront désormais comme lorsqu’elles appartenaient au même groupe. Toutes les modifications apportées à l’action dans un groupe ou une évaluation apparaissent maintenant dans toutes les instances. L' **État de mise en œuvre**, la **Date de mise en œuvre**, l' **État du test**et la date de **test**   reflètent les mises à jour les plus récentes.
 
 ## <a name="compliance-score-relationship-to-compliance-manager"></a>Relation avec le score de conformité avec le gestionnaire de conformité
 

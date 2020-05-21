@@ -5,12 +5,12 @@ keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
-ms.openlocfilehash: d481a53da541b28975071a9dff6b7cdcc671345b
-ms.sourcegitcommit: 1e9ce51efa583c33625299d17e37f58048a4169c
+ms.openlocfilehash: 034305eec75bd369752915084b2857ebea455aa0
+ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "43804805"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44327923"
 ---
 # <a name="microsoft-managed-desktop-devices"></a>Appareils de bureau gérés Microsoft 
 
@@ -25,7 +25,7 @@ Pour être inscrit dans Microsoft Managed Desktop, un appareil doit être l’un
 Les liens vers les appareils sont fournis à des fins de référence uniquement. Si vous souhaitez commander des appareils, utilisez les contacts de votre canal commercial afin de vous assurer que vous choisissez les configurations correctes. Dans ce tableau, la *Date d’archivage* correspond à la date à laquelle ces modèles feront l’objet d’une durée de vie de service de bureau gérée Microsoft plus courte ; tous les appareils embarqués après cette date ne recevront pas de prise en charge complète de trois ans par le bureau géré Microsoft. Les appareils archivés sont également répertoriés dans [Microsoft Managed Desktop Archived Devices](archived-device-list.md). *Date de suppression* est la date à laquelle ce modèle ne sera plus pris en charge par le bureau géré par Microsoft. À cette date, tous les périphériques d’enregistrement de ce modèle seront supprimés du bureau géré Microsoft, quel que soit le moment de leur enregistrement.
 
 >[!NOTE]
->Des appareils peuvent être ajoutés à ce tableau à tout moment, mais nous vous fournirons un préavis de 90 jours pour toute modification affectant les archives ou la date de retraite. Les derniers périphériques ajoutés sont marqués par **\***.
+>Des appareils peuvent être ajoutés à ce tableau à tout moment, mais nous vous fournirons un préavis de 90 jours pour toute modification affectant les archives ou la date de retraite. Les derniers périphériques ajoutés sont marqués par **\*** .
 
 
 **Appareils de bureau gérés Microsoft**
@@ -60,13 +60,17 @@ Les liens vers les appareils sont fournis à des fins de référence uniquement.
 | [Surface Pro 6](https://www.microsoft.com/p/surface-pro-6-for-business/8xjq3d3lrp0r/grf9?cid=msft_web_collection&CustomerIntent=Consumer&activetab=pivot%3aoverviewtab) | 128 Go/Intel i5/8 Go de RAM | Aucun | 16 octobre 2020 | 16 octobre 2023 |
 | **\*[Surface Pro 7](https://www.microsoft.com/en-us/surface/business/surface-pro-7)** | 128 Go/Intel i5/8 Go de RAM | Aucun | 22 octobre 2021 | 22 octobre 2024 |
 
-
-
 En outre, l’appareil doit également répondre aux critères suivants :     
 
 - Disposer d’une image approuvée par le bureau géré Microsoft. Lorsque vous commandez des appareils, vérifiez que vous spécifiez qu’ils sont utilisés avec Microsoft Managed Desktop.
 - N’ont pas terminé l’expérience de première exécution de Windows.
 - Être inscrit auprès du bureau géré Microsoft à l’aide de la fonctionnalité [d’inscription](https://aka.ms/mmddrhelp) de l’appareil.
+
+>[!NOTE]
+>Les appareils dotés d’un processeur 2,0 GHz ou plus rapides offriront une expérience bien meilleure aux utilisateurs impliqués dans ces activités :
+>- Utilisation de la vidéoconférence avec Teams. Pour plus d’informations, consultez la rubrique [Hardware Requirements for Microsoft teams](https://docs.microsoft.com/microsoftteams/hardware-requirements-for-the-teams-app) .
+>-  Utilisation d’un appareil pour plusieurs charges de travail différentes.
+>- Utilisation de plusieurs moniteurs.
 
 **Aide supplémentaire**
 

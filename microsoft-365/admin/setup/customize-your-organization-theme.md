@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 8275da91-7a48-4591-94ab-3123a3f79530
 description: 'Découvrez comment modifier le thème par défaut de Microsoft 365 et le personnaliser pour qu’il corresponde au logo ou à la couleur de votre entreprise. '
-ms.openlocfilehash: 3674c26be50d622364a4dc077a85eaa974d71fcd
-ms.sourcegitcommit: 22e9f54d0d3ead2be91a38d49325308c70f43f90
+ms.openlocfilehash: dba7003f6624a2635976ac689d608a83e62de5c0
+ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "44262328"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44327205"
 ---
 # <a name="customize-the-microsoft-365-theme-for-your-organization"></a>Personnaliser le thème Microsoft 365 de votre organisation
 
@@ -64,7 +64,7 @@ Découvrez comment personnaliser votre thème dans le centre d’administration 
     
 4. Sélectionnez **Enregistrer les modifications**.
     
-Vous verrez immédiatement votre nouveau thème sur le centre d’administration et après un court délai, vous le verrez dans Microsoft 365, y compris les pages dans Outlook, SharePoint, l' [application mobile SharePoint pour iOS](https://support.office.com/article/SharePoint-mobile-app-for-iOS-339402ce-16bb-4c97-9475-0c5375ccef7a)et l' [application mobile SharePoint pour Android](https://support.office.com/article/SharePoint-mobile-app-for-Android-d875654b-fb0a-4dbe-a17a-a676cf936284). Pour obtenir un exemple d’emplacement où vous pouvez personnaliser les modifications apportées au thème à partir du centre d’administration, consultez l’image suivante.
+Vous verrez immédiatement votre nouveau thème sur le centre d’administration et, après un court délai, vous le verrez dans Microsoft 365, y compris les pages dans Outlook, SharePoint, l' [application mobile SharePoint pour iOS](https://support.office.com/article/SharePoint-mobile-app-for-iOS-339402ce-16bb-4c97-9475-0c5375ccef7a)et l' [application mobile SharePoint pour Android](https://support.office.com/article/SharePoint-mobile-app-for-Android-d875654b-fb0a-4dbe-a17a-a676cf936284). Pour obtenir un exemple d’emplacement où vous pouvez personnaliser les modifications apportées au thème à partir du centre d’administration, consultez l’image suivante.
 
 ![M365-admin-client-Theme-Conceptual](../../media/m365-admin-tenant-theme-conceptual.png)
 
