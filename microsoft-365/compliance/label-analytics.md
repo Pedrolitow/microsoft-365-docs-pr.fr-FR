@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Après avoir créé vos étiquettes de rétention et vos étiquettes de sensibilité, vous souhaiterez voir comment ils sont utilisés au sein de votre client. Les portails Centre de conformité Microsoft 365 et Centre de sécurité Microsoft 365 sont dotés d’une page intitulée Analyse des étiquettes. Elle indique les étiquettes les plus utilisées et leurs types d’applications.
-ms.openlocfilehash: 75eb86cb8671c81b80afc67b19d7c54830c4c401
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 3905b868ec3815fd9bf63ca131a20ceb1034f2c7
+ms.sourcegitcommit: 252b1d1d8ae735b99bf46e27c08353afc330aef3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42072278"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "44231987"
 ---
 # <a name="view-label-usage-with-label-analytics"></a>Afficher l’utilisation d’étiquette grâce à la page Analyse des étiquettes
 
@@ -99,5 +99,5 @@ Pour afficher analytique étiquette, vous devez être affecté parmi les rôles 
 - Administrateur de sécurité
 - Lecteur Sécurité
 
-Par ailleurs, notez que ces rapports utilisent Azure Monitor pour stocker les données dans un espace de travail journal Analytique appartenant à votre organisation. Par conséquent, l’utilisateur doit être ajouté en tant qu’un lecteur d’à l’espace de travail Azure surveillance que suspensions données-pour plus d’informations, voir [Autorisations nécessaires à analytique Protection Informations Azure](https://docs.microsoft.com/azure/information-protection/reports-aip#permissions-required-for-azure-information-protection-analytics).
+Par ailleurs, notez que ces rapports utilisent Azure Monitor pour stocker les données dans un espace de travail journal Analytique appartenant à votre organisation. Par conséquent, l’utilisateur doit être ajouté en tant que lecteur à l’espace de travail Azure Monitor qui détient les données. Pour plus d’informations, voir [Autorisations nécessaires pour les analyses Azure Information Protection](https://docs.microsoft.com/azure/information-protection/reports-aip#permissions-required-for-azure-information-protection-analytics).
 

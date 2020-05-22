@@ -20,12 +20,12 @@ search.appverid:
 ms.custom: seo-marvel-apr2020
 ms.assetid: ''
 description: Découvrez comment modifier ou créer des types d’informations sensibles Office 365 pour les Règlements généraux sur la protection des données (RGPD).
-ms.openlocfilehash: 3eca04fcf949a19615dc574c90d8dbeea0894a23
-ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
+ms.openlocfilehash: 70ce61f582cbc952811d01cccc7b958bf1b52dbb
+ms.sourcegitcommit: 6007dbe2cf758c683de399f94023122c678bcada
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "44166065"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "44224631"
 ---
 # <a name="customize-or-create-a-new-sensitive-information-type"></a>Personnalisation ou création d’un type d’informations sensibles
 
@@ -165,7 +165,7 @@ Le langage KQL et les mots-clés ne peuvent pas être utilisés conjointement. U
 
 Remarques :
 
--   Vous pouvez utiliser NEAR et ONEAR pour les recherches de proximité.
+-   Vous pouvez utiliser NEAR pour effectuer des recherches de proximité.
 
 -   Malheureusement, le langage KQL ne prend pas en charge les requêtes avec la classe Regex (ex : IdRef="Regex\_email\_address")
 

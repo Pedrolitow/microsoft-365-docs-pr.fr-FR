@@ -1,5 +1,5 @@
 ---
-title: Prise en main de la classification des données (aperçu)
+title: Découvrir la classification de données
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -16,16 +16,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Le tableau de bord de classification des données vous permet de consulter les données sensibles qui ont été trouvées et classifiées au sein de votre organisation.
-ms.openlocfilehash: 15beb3c0716aeb780fb3bfed3b3a8fa74557574d
-ms.sourcegitcommit: fa6a1e432747e150df945050a3744b4408ceb2d9
+ms.openlocfilehash: eda58ea2d34713a5c2cef40bbc2aa21b9964ddab
+ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "43957274"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44327870"
 ---
-# <a name="know-your-data---data-classification-overview-preview"></a>Connaissez vos données : vue d’ensemble de la classification des données (aperçu)
+# <a name="know-your-data---data-classification-overview"></a>Connaissez vos données : vue d’ensemble de la classification des données
 
-En tant qu’administrateur Microsoft 365 ou administrateur de conformité, vous pouvez évaluer et baliser les contenus de votre organisation afin de contrôler leur destination, de les protéger où qu’ils soient et de vous assurer qu’ils sont conservés et supprimés en fonction des besoins de votre organisation. Pour ce faire, vous devez utiliser les [étiquettes de confidentialité](sensitivity-labels.md), les [étiquettes de rétention](labels.md) et la classification des informations sensibles par types. Plusieurs méthodes s’offrent à vous pour effectuer la découverte, l’évaluation et le balisage, mais le résultat final est de disposer d’un grand nombre de documents et de messages électroniques balisés et classifiés avec ces étiquettes. Après avoir appliqué vos étiquettes de rétention et vos étiquettes de sensibilité, vous souhaiterez voir de quelle manière elles sont utilisées par vos clients. La page classification des données fournit une visibilité dans ce corps de contenu, notamment :
+En tant qu’administrateur Microsoft 365 ou administrateur de conformité, vous pouvez évaluer et baliser les contenus de votre organisation afin de contrôler leur destination, de les protéger où qu’ils soient et de vous assurer qu’ils sont conservés et supprimés en fonction des besoins de votre organisation. Pour ce faire, vous devez utiliser les [étiquettes de confidentialité](sensitivity-labels.md), les [étiquettes de rétention](labels.md) et la classification des informations sensibles par types. Plusieurs méthodes s’offrent à vous pour effectuer la découverte, l’évaluation et le balisage, mais le résultat final est de disposer d’un grand nombre de documents et de messages électroniques balisés et classifiés avec ces étiquettes. Après avoir appliqué vos étiquettes de rétention et vos étiquettes de confidentialité, vous souhaiterez voir de quelle manière elles sont utilisées par vos clients. La page classification des données fournit une visibilité dans ce corps de contenu, notamment :
 
 - le nombre d’éléments qui ont été classifiés en tant que types d’informations sensibles et la nature de ces classifications
 - les étiquettes de confidentialité les plus utilisées dans Microsoft 365 et Azure Information Protection
@@ -33,11 +33,41 @@ En tant qu’administrateur Microsoft 365 ou administrateur de conformité, vous
 - la synthèse des activités que les utilisateurs effectuent sur votre contenu sensible
 - les emplacements de vos données sensibles et conservées
 
-Vous trouverez la classification des données dans le **Centre de conformité Microsoft 365** ou le **Centre de sécurité Microsoft 365** > **Classification** > **Classification des données**.
+Vous pouvez également gérer ces fonctionnalités sur la page classification de données :
+- [classifieurs avec capacité d’apprentissage](classifier-getting-started-with.md)
+- [types d’informations sensibles](what-the-sensitive-information-types-look-for.md)
+
+Vous trouverez la classification des données dans le **Centre de conformité Microsoft 365** ou le **Centre de sécurité Microsoft 365** > **Classification** > **Classification de données**.
+
+Suivez une visite guidée par vidéo sur nos fonctionnalités de classification de données.
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4vx8x]
+
+La classification de données analyse votre contenu sensible et le contenu étiqueté avant votre création de stratégies. Cette opération est appelée **zéro gestion des modifications**. Cela vous permet de voir l’impact de toutes les étiquettes de rétention et de confidentialité sur votre environnement, et de vous aider à évaluer vos besoins en matière de protection et de stratégie de gouvernance.
+
+## <a name="prerequisites"></a>Configuration requise
+
+Chaque compte accédant et utilisant la classification de données doit posséder une licence pour l’un de ces abonnements :
+
+- Microsoft 365 (E5)
+- Office 365 (E5)
+- Complément Conformité avancée (E5)
+- Complément Threat Intelligence avancé (E5)
+
+### <a name="permissions"></a>Autorisations
+
+ Pour accéder à la page de classification de données, un compte doit être affecté à une appartenance dans l’un de ces rôles ou groupes de rôles.
+
+**Groupes de rôles Microsoft 365**
+
+- Administrateur général
+- Administrateur de conformité
+- Administrateur de sécurité
+- Administrateur des données de conformité
 
 ## <a name="sensitive-information-types-used-most-in-your-content"></a>Types d’informations sensibles utilisés le plus fréquemment dans votre contenu
 
-Microsoft 365 fournit de nombreuses définitions des types d’informations sensibles, par exemple un élément contenant un numéro de sécurité sociale ou un numéro de carte bancaire. Pour plus d’informations sur les types d’informations sensibles, voir [Eléments recherchés par les types d’informations sensibles](what-the-sensitive-information-types-look-for.md).
+Microsoft 365 fournit de nombreuses définitions des types d’informations sensibles, par exemple un élément contenant un numéro de sécurité sociale ou un numéro de carte bancaire. Pour plus d’informations sur les types d’informations sensibles, voir les [Définitions d’entités des types d’informations sensibles](sensitive-information-type-entity-definitions.md).
 
 La carte type d’informations sensibles présente les principaux types d’informations sensibles qui ont été détectés et étiquetés au sein de votre organisation.
 
@@ -51,7 +81,7 @@ Pour déterminer le nombre d’éléments dans une catégorie de classification 
 > Si la carte affiche le message « Aucune donnée détectée avec des informations sensibles ». Cela signifie qu’il n’y a aucun élément de votre organisation classifié comme étant un type d’informations sensibles ou aucun élément analysé. Pour commencer à utiliser les étiquettes, voir :
 >- [Étiquettes de confidentialité](sensitivity-labels.md)
 >- [Étiquettes de rétention](labels.md)
->- [Éléments recherchés par les types d’informations sensibles](what-the-sensitive-information-types-look-for.md)
+>- [Définitions d’entités des types d’informations sensibles](sensitive-information-type-entity-definitions.md)
 
 ## <a name="top-sensitivity-labels-applied-to-content"></a>Principales étiquettes de confidentialité appliquées au contenu
 
@@ -106,5 +136,6 @@ L’objectif de la création de rapports sur la classification des données est 
 - [Afficher le contenu étiqueté (aperçu)](data-classification-content-explorer.md)
 - [Étiquettes de confidentialité](sensitivity-labels.md)
 - [Étiquettes de rétention](labels.md)
-- [Éléments recherchés par les types d’informations sensibles](what-the-sensitive-information-types-look-for.md)
+- [Définitions d’entités des types d’informations sensibles](sensitive-information-type-entity-definitions.md)
 - [Vue d’ensemble des stratégies de rétention](retention-policies.md)
+- [Prise en main des classificateurs pouvant être formés (préversion)](classifier-getting-started-with.md)
