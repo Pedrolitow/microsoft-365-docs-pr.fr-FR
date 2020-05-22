@@ -20,77 +20,100 @@ search.appverid:
 - BEA160
 - GEA150
 ms.assetid: 8f0454b2-f51a-4d9c-bcde-2c48e41621c6
-description: Découvrez comment utiliser les paramètres de sécurité par défaut pour configurer l’authentification multifacteur pour les utilisateurs.
+description: Découvrez comment configurer l’authentification multifacteur pour votre organisation.
 monikerRange: o365-worldwide
-ms.openlocfilehash: c4ea6037b34d29f2d1e05e248e03e49ee6b06f56
-ms.sourcegitcommit: 22e9f54d0d3ead2be91a38d49325308c70f43f90
+ms.openlocfilehash: 893a4ae535dfb781a4f77ee57c0ead40fda8454f
+ms.sourcegitcommit: 185d62f41f6b173894ba6e3e87b11b2b5d02db58
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "44262374"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "44340773"
 ---
 # <a name="set-up-multi-factor-authentication"></a>Configurer Multi-factor Authentification (MFA)
   
-> [!IMPORTANT]
-> Si vous avez acheté votre abonnement ou une version d’évaluation après le 21 octobre 2019, et que vous êtes invité de manière inattendue à utiliser l’authentification multifacteur (MFA), les [paramètres par défaut de sécurité](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults) ont été automatiquement activés pour votre abonnement.
+En fonction de votre compréhension de [Multi-Factor Authentication (MFA) et de sa prise en charge dans Microsoft 365](multi-factor-authentication-microsoft-365.md), il est temps de le configurer et de le déployer dans votre organisation.
 
-Tous les nouveaux abonnements Microsoft 365 auront automatiquement des [paramètres de sécurité par défaut](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults) activés. Cela signifie que chaque utilisateur devra configurer l’authentification multifacteur (MFA) et installer l’application Microsoft Authenticator sur son appareil mobile. Pour plus d’informations, consultez [la rubrique Configurer l’authentification multifacteur pour un compte Microsoft 365](https://support.office.com/article/ace1d096-61e5-449b-a875-58eb3d74de14).
+Avant de commencer, déterminez si ces conditions spéciales s’appliquent à vous et prenez les mesures appropriées :
 
-Les neuf rôles d’administrateur suivants sont nécessaires pour effectuer une authentification supplémentaire lorsqu’ils se connectent :
+- Si vous avez des clients Office 2013 sur des appareils Windows, [activez l’authentification moderne](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/enable-modern-authentication).
 
-- Administrateur général
-- Administrateur SharePoint
-- Administrateur Exchange
-- Administrateur de l’accès conditionnel
-- Administrateur de sécurité
-- Administrateur du support technique ou Administrateur de mot de passe
-- Administrateur de facturation
-- Administrateur d’utilisateurs
-- Administrateur d’authentification
+- Si vous disposez de services d’annuaire tiers avec Active Directory Federation Services (AD FS), configurez le serveur Azure MFA. Pour plus d’informations, consultez la rubrique [scénarios avancés avec Azure Multi-Factor Authentication et des solutions VPN tierces](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfaserver-nps-vpn) .
 
-Tous les autres utilisateurs seront invités à effectuer une authentification supplémentaire si nécessaire.
+## <a name="step-1-decide-on-the-method-of-requiring-your-users-to-use-mfa"></a>Étape 1 : décider de la méthode d’utilisation de l’authentification multifacteur par les utilisateurs
 
-> [!NOTE]
-> Vous devez être un administrateur général pour configurer ou modifier l’authentification multifacteur <br><br>
-> Si le nouveau Centre d’administration Microsoft 365 n’est pas celui que vous utilisez, vous pouvez l’activer en sélectionnant le bouton bascule **Essayer le nouveau Centre d’administration** situé en haut de la page d’accueil.
+Il existe trois façons de demander à vos utilisateurs d’utiliser l’authentification multifacteur pour les connexions. Pour plus d’informations, consultez la [prise en charge MFA dans Microsoft 365](multi-factor-authentication-microsoft-365.md) .
 
-Si vous avez déjà configuré MFA avec des stratégies de base, [vous devez les désactiver pour activer les paramètres de sécurité par défaut](#move-from-baseline-policies-to-security-defaults). Toutefois, si vous avez Microsoft 365 Business ou que votre abonnement inclut [Azure Active Directory Premium P1 ou Azure Active Directory Premium P2](https://azure.microsoft.com/pricing/details/active-directory/), vous pouvez également configurer des stratégies d' [accès conditionnel](https://docs.microsoft.com/azure/active-directory/conditional-access/overview) . Pour utiliser des stratégies d’accès conditionnel, vous devez vous assurer que les paramètres de sécurité par défaut sont désactivés et que [l’authentification moderne](#enable-modern-authentication-for-your-organization) est activée.
+- Paramètres de sécurité par défaut (recommandé pour les petites entreprises)
 
-> [!TIP]
-> Pour expliquer à vos utilisateurs comment configurer l’application Microsoft Authenticator, consultez la rubrique [utiliser Microsoft Authenticator avec Office 365](https://support.office.com/article/use-microsoft-authenticator-with-office-365-1412611f-ad8d-43ab-807c-7965e5155411).
+  Si vous avez acheté votre abonnement ou une version d’évaluation après le 21 octobre 2019 et que vous êtes invité de manière inattendue à utiliser l’authentification multifacteur, les [paramètres de sécurité par défaut](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults) ont été automatiquement activés pour votre abonnement.
+  
+  Tous les nouveaux abonnements Microsoft 365 auront automatiquement des paramètres de sécurité par défaut activés. Cela signifie que chaque utilisateur devra configurer MFA et installer l’application Microsoft Authenticator sur son appareil mobile.
 
-## <a name="manage-security-defaults"></a>Gérer les paramètres de sécurité par défaut
+  Tous les utilisateurs doivent utiliser l’application Microsoft Authenticator comme méthode de vérification supplémentaire et l’authentification héritée est bloquée. 
 
-1. Connectez-vous au [Centre d'administration](https://go.microsoft.com/fwlink/p/?linkid=834822) avec des informations d'identification d'administrateur général.
-2. Accédez à la [page Propriétés Azure Active Directory](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Properties).
-3. Au bas de la page, sélectionnez **Gérer les paramètres de sécurité par défaut**.
-4. Choisissez **Oui** pour activer les paramètres de sécurité par défaut et **non** pour désactiver les paramètres de sécurité par défaut, puis cliquez sur **Enregistrer**.
+- Stratégies d’accès conditionnel (recommandé pour les entreprises)
 
-## <a name="move-from-baseline-policies-to-security-defaults"></a>Basculez des stratégies de base aux paramètres de sécurité par défaut
+  Les utilisateurs choisissent la méthode de vérification supplémentaire lors de l’inscription MFA.
 
-1. Accédez à la [page des stratégies d’accès conditionnel](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ConditionalAccessBlade/Policies).
-2. Choisissez chaque stratégie de planification qui est **activée** et définissez **activer la stratégie** sur **désactivé**.
-3. Accédez à la [page Propriétés Azure Active Directory](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Properties).
-4. En bas de la page, choisissez **gérer les paramètres de sécurité par défaut**, puis dans le volet **activer les paramètres de sécurité par défaut** , définissez activer les **paramètres** de sécurité par défaut sur **Oui**, puis cliquez sur **Enregistrer**. 
+- Compte par utilisateur (non recommandé)
 
-## <a name="enable-modern-authentication-for-your-organization"></a>Activer l’authentification moderne pour votre organisation
+  Les utilisateurs choisissent la méthode de vérification supplémentaire lors de l’inscription MFA.
 
-Les applications clientes Office 2016 prennent en charge l'authentification multifacteur via l'utilisation de la bibliothèque ADAL (Active Directory Authentication Library). Par conséquent, les mots de passe d'application ne sont pas requis pour les clients Office 2016. Pour plus d’informations, consultez [cet article](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfa-mfasettings#app-passwords) .
+## <a name="step-2-test-mfa-on-your-pilot-users"></a>Étape 2. Test MFA sur vos utilisateurs pilotes
 
-Toutefois, vous devez vous assurer que votre abonnement Microsoft 365 est activé pour ADAL ou l’authentification moderne.
+Si vous utilisez des stratégies d’accès conditionnel ou l’authentification multifacteur (MFA) par utilisateur (non recommandé), sélectionnez les utilisateurs pilotes de votre entreprise ou organisation pour tester l’inscription et les connexions MFA. Par exemple :
 
-1. Pour activer l’authentification moderne, dans le [Centre d’administration](https://go.microsoft.com/fwlink/p/?linkid=834822), sélectionnez Paramètres d’organisation des **paramètres,** \> **Org Settings** puis, dans l’onglet **services** , sélectionnez **authentification moderne** dans la liste.
+- Pour les stratégies d’accès conditionnel, créez un groupe d’utilisateurs pilotes et une stratégie qui requiert l’authentification multifacteur pour les membres du groupe et pour toutes les applications. Ensuite, ajoutez les comptes de votre utilisateur pilote au groupe.
 
-2. Activez la case à cocher **activer l’authentification moderne (recommandé)** dans le panneau **authentification moderne** , puis choisissez **enregistrer les modifications**. 
+- Pour l’authentification multifacteur par utilisateur, activez une authentification multifacteur (MFA) pour les comptes d’utilisateur de vos utilisateurs pilotes un par un.
 
-    ![Panneau d’authentification moderne avec la case Activer cochée.](../../media/enablemodernauth.png)
-    
-> [!IMPORTANT]
-> À compter d’août 2017, tous les nouveaux abonnements Microsoft 365 qui incluent Skype entreprise Online et Exchange Online sont activés pour l’authentification moderne par défaut. Pour vérifier le statut de votre authentification moderne pour Skype Entreprise Online, vous pouvez utiliser PowerShell Skype Entreprise Online avec les informations d’identification d’Administrateur général. Exécutez Get-CsOAuthConfiguration pour vérifier la sortie de-ClientADALAuthOverride. Si-ClientADALAuthOverride est « Autorisé », votre authentification moderne est activée.
-Pour vérifier l’état de votre MA pour Exchange Online, consultez [Activer l’authentification moderne dans Exchange Online](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/enable-or-disable-modern-authentication-in-exchange-online).
+Collaborez avec vos utilisateurs pilotes pour répondre à des questions et des problèmes afin de préparer un déploiement en douceur pour votre organisation.
 
-## <a name="related-articles"></a>Articles connexes
+## <a name="step-3-inform-your-organization-that-mfa-is-coming"></a>Étape 3. Informer votre organisation de l’arrivée à l’authentification multifacteur
 
-[10 façons de sécuriser les offres Microsoft 365 pour les entreprises](secure-your-business-data.md)
+Utilisez des notifications par courrier électronique, des affiches de couloir, des réunions d’équipe ou une formation formelle pour vous assurer que vos employés comprennent :
 
-[Activer l’Authentification moderne pour Office 2013 sur les appareils Windows](enable-modern-authentication.md)
+- Pourquoi la MFA est-elle nécessaire pour les connexions ?
+- [Comment s’inscrire pour obtenir une autre méthode de vérification](https://support.office.com/article/set-up-your-microsoft-365-sign-in-for-multi-factor-authentication-ace1d096-61e5-449b-a875-58eb3d74de14?ui=en-US&rs=en-001&ad=US)
+- [Comment se connecter après l’inscription](https://support.office.com/article/sign-in-to-microsoft-365-with-multi-factor-authentication-2b856342-170a-438e-9a4f-3c092394d3cb)
+- [Comment modifier la méthode de vérification supplémentaire](https://support.office.com/article/change-how-you-do-additional-verification-956ec8d0-7081-4518-a701-f8414cc20831)
+- [Comment traiter des situations comme un nouveau téléphone intelligent ?](https://support.office.com/article/fix-common-problems-with-multi-factor-authentication-6951be76-af50-49a4-847f-21391eaa59f2)
+
+Plus important encore, assurez-vous que vos employés comprennent ***quand les exigences MFA doivent être imposées*** afin de ne pas les surcharger.
+
+## <a name="step-4-roll-out-the-mfa-requirement-to-your-organization-or-users"></a>Étape 4. Déployer l’authentification multifacteur (MFA) pour votre organisation ou vos utilisateurs
+
+En fonction de la méthode d’authentification multifacteur que vous avez choisie, déployez l’authentification MFA auprès des employés au-delà de vos testeurs pilotes.
+
+### <a name="security-defaults"></a>Paramètres de sécurité par défaut
+
+Vous activez ou désactivez les paramètres de sécurité par défaut dans le volet des **Propriétés** d’Azure Active Directory (Azure AD) dans le portail Azure.
+
+1.  Connectez-vous au [Centre d’administration 365 de Microsoft](https://admin.microsoft.com) avec les informations d’identification d’administrateur général.
+2.  Accédez à la [page Propriétés Azure Active Directory](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Properties).
+3.  Au bas de la page, sélectionnez **Gérer les paramètres de sécurité par défaut**.
+4.  Choisissez **Oui** pour activer les paramètres de sécurité par défaut et **non** pour désactiver les paramètres de sécurité par défaut, puis cliquez sur **Enregistrer**.
+
+Si vous avez utilisé des [stratégies d’accès conditionnel de référence](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-baseline-protection), voici comment vous pouvez utiliser les paramètres de sécurité par défaut.
+
+1.  Accédez à la [page des stratégies d’accès conditionnel](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ConditionalAccessBlade/Policies).
+2.  Choisissez chaque stratégie de planification qui est **activée** et définissez **activer la stratégie** sur **désactivé**.
+2.  Accédez à la [page Propriétés Azure Active Directory](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Properties).
+4.  Au bas de la page, sélectionnez **Gérer les paramètres de sécurité par défaut**.
+5.  Choisissez **Oui** pour activer les paramètres de sécurité par défaut et **non** pour désactiver les paramètres de sécurité par défaut, puis cliquez sur **Enregistrer**.
+
+### <a name="conditional-access-policies"></a>Stratégies d’accès conditionnel
+
+Créez, configurez ou activez les stratégies appropriées qui incluent le groupe d’utilisateurs qui nécessitent l’authentification MFA pour la connexion.
+
+### <a name="per-user-mfa-not-recommended"></a>Authentification multifacteur par utilisateur (non recommandé)
+
+Activez les comptes d’utilisateur pour MFA correspondant à votre déploiement.
+
+### <a name="supporting-your-employees"></a>Prise en charge de vos employés
+
+À mesure que vos employés s’inscrivent et commencent à se connecter avec l’authentification multifacteur, assurez-vous que vos spécialistes informatiques, votre service informatique ou le support technique peuvent répondre rapidement à des questions et résoudre les problèmes.
+
+Consultez cet article pour obtenir des [informations sur la résolution des problèmes de connexion MFA](https://support.office.com/article/fix-common-problems-with-multi-factor-authentication-6951be76-af50-49a4-847f-21391eaa59f2). 
+
+

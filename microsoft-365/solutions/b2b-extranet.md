@@ -14,12 +14,12 @@ ms.custom: ''
 localization_priority: Normal
 f1.keywords: NOCSH
 description: Découvrez comment créer un site extranet B2B ou une équipe avec des utilisateurs d’invités gérés à partir d’une organisation partenaire.
-ms.openlocfilehash: 1b7542dd2fcd5fa28afc013f83da713c37e1187b
-ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
+ms.openlocfilehash: f01a558d55f497952494676f0148a1e3e4f06b35
+ms.sourcegitcommit: b18949de721c6eef3521d5f8286d9b926ad4aabe
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "44166148"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "44342516"
 ---
 # <a name="create-a-b2b-extranet-with-managed-guests"></a>Créer un extranet B2B avec des invités gérés
 
@@ -30,6 +30,12 @@ Avec cette méthode de partage des ressources pour la collaboration, l’organis
 Cet article décrit les étapes à suivre pour créer un package de ressources (dans ce cas, un site ou une équipe) que vous pouvez partager avec une organisation partenaire par le biais d’un modèle d’enregistrement d’accès libre-service. 
 
 Avant de commencer, créez le site ou l’équipe que vous souhaitez partager avec l’organisation partenaire et activez-le pour le partage d’invité. Pour plus d’informations, consultez la rubrique [collaborer avec des invités dans un site](collaborate-in-site.md) ou [collaborer avec des invités dans une équipe](collaborate-as-team.md) . Nous vous recommandons également de consulter la rubrique [Create a Secure Guest Sharing Environment](create-secure-guest-sharing-environment.md) pour obtenir des informations sur les fonctionnalités de sécurité et de conformité que vous pouvez utiliser pour gérer vos stratégies de gouvernance lors de la collaboration avec des invités.
+
+## <a name="video-demonstration"></a>Démonstration vidéo
+
+Cette vidéo démontre les procédures décrites dans cet article.
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4wKUj?autoplay=false]
 
 ## <a name="connect-the-partner-organization"></a>Connecter l’organisation partenaire
 

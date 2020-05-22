@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 9d2c5ba495d6250ffb20f695edd515c63b123c30
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 1e67d4a4af84da9651f091f45eddaa01f467e06c
+ms.sourcegitcommit: 2fbcecaa60e9f551738b9235bd380af807a6681a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44209258"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "44339901"
 ---
 # <a name="microsoft-threat-protection-data-security-and-privacy"></a>Sécurité et confidentialité des données de la Protection Microsoft contre les menaces
 
@@ -32,6 +32,9 @@ ms.locfileid: "44209258"
 - Protection Microsoft contre les menaces
 
 La protection contre les menaces Microsoft fonctionne dans les centres de données Microsoft Azure dans l’Union européenne, le Royaume-Uni et les États-Unis. Les données client collectées par le service sont stockées au repos dans (a) l’emplacement géographique du client tel qu’identifié lors de la mise en service ou, (b) si Microsoft Threat Protection utilise un autre service Microsoft Online pour traiter ces données, la géolocalisation, telle que définie par les règles de stockage de données de cet autre service en ligne.
+
+Les données client sous forme pseudonyme peuvent également être stockées dans des systèmes de stockage et de traitement centralisés aux États-Unis.
+
 
 Pour plus d’informations sur le stockage des données et la confidentialité concernant les produits spécifiques, voir :
 - [Stockage de données et confidentialité Microsoft Defender - Protection avancée contre les menaces](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy)

@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Les administrateurs peuvent activer la prise en charge de l’étiquette de sensibilité pour les fichiers Word, Excel et PowerPoint dans SharePoint et OneDrive.
-ms.openlocfilehash: bb35d4ed287e87ba17780c0e7106b837beb9666a
-ms.sourcegitcommit: 758263ad484e00f5a561a47c8c22d5787af7671e
+ms.openlocfilehash: 62bc2b748cf004722f94a7231046930d78437603
+ms.sourcegitcommit: b18949de721c6eef3521d5f8286d9b926ad4aabe
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "44170913"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "44342512"
 ---
 # <a name="enable-sensitivity-labels-for-office-files-in-sharepoint-and-onedrive"></a>Activer les étiquettes de confidentialité pour les fichiers Office dans SharePoint et OneDrive
 
@@ -106,7 +106,7 @@ Cette option est la méthode la plus simple pour activer les étiquettes de conf
 
 L’administrateur général de votre organisation dispose des autorisations totales pour créer et gérer tous les aspects des étiquettes de confidentialité. Si vous ne vous connectez pas en tant qu’administrateur général, voir [Autorisations nécessaires pour créer et gérer des étiquettes de confidentialité](get-started-with-sensitivity-labels.md#permissions-required-to-create-and-manage-sensitivity-labels).
 
-1. Connectez-vous au [Centre de conformité Microsoft 365](https://compliance.microsoft.com/)et accédez à **solutions** > **information protection**
+1. Connectez-vous au [Centre de conformité Microsoft 365](https://compliance.microsoft.com/)et accédez à **solutions**  >  **information protection**
     
     Si vous ne voyez pas immédiatement cette option, sélectionnez tout d’abord **Tout afficher**. 
 
@@ -117,13 +117,13 @@ L’administrateur général de votre organisation dispose des autorisations tot
     La commande est exécutée immédiatement et lors de l’actualisation suivante de la page, le message ou le bouton ne s’affiche plus. 
 
 > [!NOTE]
-> Si vous disposez d’Office 365 multi-géo, vous devez utiliser PowerShell pour activer ces fonctionnalités pour tous vos emplacements géographiques. Pour plus d’informations, voir la section suivante.
+> Si vous disposez de Microsoft 365 multi-géo, vous devez utiliser PowerShell pour activer ces fonctionnalités pour tous vos emplacements géographiques. Pour plus d’informations, voir la section suivante.
 
 ### <a name="use-powershell-to-enable-support-for-sensitivity-labels"></a>Utiliser PowerShell pour activer la prise en charge des étiquettes de sensibilité
 
 Au lieu d’utiliser le centre de conformité, vous pouvez activer la prise en charge des étiquettes de sensibilité à l’aide de la cmdlet [Set-SPOTenant](https://docs.microsoft.com/powershell/module/sharepoint-online/set-spotenant?view=sharepoint-ps) à partir de SharePoint Online PowerShell. 
 
-Si vous disposez d’Office 365 multi-géo, vous devez utiliser PowerShell pour activer cette prise en charge de tous les emplacements géographiques.
+Si vous disposez de Microsoft 365 multi-géo, vous devez utiliser PowerShell pour activer cette prise en charge de tous les emplacements géographiques.
 
 #### <a name="prepare-the-sharepoint-online-management-shell"></a>Préparer SharePoint Online Management Shell
 
@@ -149,16 +149,16 @@ Avant d’exécuter la commande PowerShell pour activer les étiquettes de sensi
 
 Pour activer les nouvelles fonctionnalités, utilisez la cmdlet [Set-SPOTenant](https://docs.microsoft.com/powershell/module/sharepoint-online/set-spotenant?view=sharepoint-ps) avec le paramètre *EnableAIPIntegration* :
 
-1. À l’aide d’un compte professionnel ou scolaire disposant de privilèges d’administrateur général ou d’administrateur SharePoint dans Office 365, connectez-vous à SharePoint. Pour savoir comment procéder, reportez-vous à l’article [Prise en main de SharePoint Online Management Shell](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online).
+1. À l’aide d’un compte professionnel ou scolaire disposant de privilèges d’administrateur général ou d’administrateur SharePoint dans Microsoft 365, connectez-vous à SharePoint. Pour savoir comment procéder, reportez-vous à l’article [Prise en main de SharePoint Online Management Shell](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online).
     
-    Remarque : Si vous disposez d’Office 365 multi-géo, utilisez le paramètre-URL avec [Connect-SPOService](https://docs.microsoft.com/powershell/module/sharepoint-online/connect-sposervice?view=sharepoint-ps)et spécifiez l’URL du site Centre d’administration SharePoint Online pour l’un de vos emplacements géographiques.
+    Remarque : Si vous disposez de Microsoft 365 multi-géo, utilisez le paramètre-URL avec [Connect-SPOService](https://docs.microsoft.com/powershell/module/sharepoint-online/connect-sposervice?view=sharepoint-ps)et spécifiez l’URL du site Centre d’administration SharePoint Online pour l’un de vos emplacements géographiques.
 
 2. Exécutez la commande suivante et appuyez sur **Y** pour confirmer :
 
     ```PowerShell
     Set-SPOTenant -EnableAIPIntegration $true  
     ```
-3. Pour Office 365 multi-géo : Répétez les étapes 1 et 2 pour chacun de vos emplacements géographiques restants.
+3. Pour Microsoft 365 multi-géo : Répétez les étapes 1 et 2 pour chacun de vos emplacements géographiques restants.
 
 ## <a name="schedule-roll-out-after-you-create-or-change-a-sensitivity-label"></a>Planifier le déploiement après la création ou la modification d’une étiquette de sensibilité
 
@@ -182,7 +182,7 @@ Pour désactiver ces nouvelles fonctionnalités, vous devez utiliser PowerShell.
 Set-SPOTenant -EnableAIPIntegration $false
 ```
 
-Si vous disposez d’Office 365 multi-géo, vous devez exécuter cette commande pour chaque emplacement géographique.
+Si vous disposez de Microsoft 365 multi-géo, vous devez exécuter cette commande pour chacun de vos emplacements géographiques.
 
 ## <a name="next-steps"></a>Étapes suivantes
 

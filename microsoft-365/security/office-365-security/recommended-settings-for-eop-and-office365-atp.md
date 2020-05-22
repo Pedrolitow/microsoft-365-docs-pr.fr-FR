@@ -16,12 +16,12 @@ ms.assetid: 6f64f2de-d626-48ed-8084-03cc72301aa4
 ms.collection:
 - M365-security-compliance
 description: Quelles sont les meilleures pratiques pour les paramètres de sécurité Exchange Online Protection (EOP) et Advanced Threat Protection (ATP) ? Quelles sont les recommandations actuelles pour la protection standard ? Qu’est-ce qui doit être utilisé si vous voulez être plus strict ? Quels sont les autres éléments que vous obtenez si vous utilisez également la protection avancée contre les menaces ?
-ms.openlocfilehash: a88d58db68816cd6aeb9173c36b964f3f97653db
-ms.sourcegitcommit: f5cecd77e63ae8b47743d4f6dc3135f5decaf28b
+ms.openlocfilehash: 922457d231681bc4643ea1805fc6060de3abcb65
+ms.sourcegitcommit: b18949de721c6eef3521d5f8286d9b926ad4aabe
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/30/2020
-ms.locfileid: "43949224"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "44342531"
 ---
 # <a name="recommended-settings-for-eop-and-office-365-atp-security"></a>Paramètres recommandés pour la sécurité ATP d’Office 365
 
@@ -35,7 +35,7 @@ Bien que nous permettons aux administrateurs de sécurité de personnaliser leur
 Cette rubrique décrit ces paramètres recommandés par Microsoft pour vous aider à protéger vos utilisateurs.
 
 > [!TIP]
-> Il existe un nouveau module PowerShell que vous pouvez télécharger appelé Office 365 Advanced Threat Protection Recommended Configuration Analyzer (ORCA) qui permet de déterminer certains de ces paramètres. Lorsqu’il est exécuté en tant qu’administrateur dans votre client, Get-ORCAReport permet de générer une évaluation du blocage du courrier indésirable, de l’anti-hameçonnage et d’autres paramètres d’hygiène des messages. Vous pouvez télécharger ce module à https://www.powershellgallery.com/packages/ORCA/l’adresse.
+> Il existe un nouveau module PowerShell que vous pouvez télécharger appelé Office 365 Advanced Threat Protection Recommended Configuration Analyzer (ORCA) qui permet de déterminer certains de ces paramètres. Lorsqu’il est exécuté en tant qu’administrateur dans votre client, Get-ORCAReport permet de générer une évaluation du blocage du courrier indésirable, de l’anti-hameçonnage et d’autres paramètres d’hygiène des messages. Vous pouvez télécharger ce module à l’adresse https://www.powershellgallery.com/packages/ORCA/ .
 
 ## <a name="anti-spam-anti-malware-and-anti-phishing-protection-in-eop"></a>Blocage du courrier indésirable, des programmes malveillants et de la protection anti-hameçonnage dans EOP
 
@@ -45,8 +45,9 @@ Le blocage du courrier indésirable, anti-programme malveillant et anti-hameçon
 
 Pour créer et configurer des stratégies de blocage du courrier indésirable, consultez la rubrique [configure anti-spam Policies in Office 365](configure-your-spam-filter-policies.md).
 
-|Nom de la fonctionnalité de sécurité|Standard|Empêcher|Commentaire|
+|||||
 |---|---|---|---|
+|**Nom de la fonctionnalité de sécurité**|**Standard**|**Empêcher**|**Comment**|
 |Action de détection du **courrier indésirable** <br/><br/> _SpamAction_|**Déplacer le message dans le dossier Courrier indésirable** <br/><br/> `MoveToJmf`|**Mettre en quarantaine le message** <br/><br/> `Quarantine`||
 |Action de détection de **courrier indésirable à fiabilité élevée** <br/><br/> _HighConfidenceSpamAction_|**Mettre en quarantaine le message** <br/><br/> `Quarantine`|**Mettre en quarantaine le message** <br/><br/> `Quarantine`||
 |Action de détection de **courrier d’hameçonnage** <br/><br/> _PhishSpamAction_|**Mettre en quarantaine le message** <br/><br/> `Quarantine`|**Mettre en quarantaine le message** <br/><br/> `Quarantine`||
@@ -55,22 +56,24 @@ Pour créer et configurer des stratégies de blocage du courrier indésirable, c
 |Seuil de courrier électronique en masse <br/><br/> _BulkThreshold_|6 |4 |La valeur par défaut est actuellement 7, mais nous vous recommandons de la remplacer par 6. Pour plus d’informations, reportez-vous à [Bulk Complaint Level (BCL) in Office 365](bulk-complaint-level-values.md).|
 |Période de rétention de quarantaine <br/><br/> _QuarantineRetentionPeriod_|30 jours|30 jours||
 |**Conseils de sécurité** <br/><br/> _InlineSafetyTipsEnabled_|Activé <br/><br/> `$true`|Activé <br/><br/> `$true`||
-|Expéditeurs autorisés <br/><br/> _AllowedSenders_|Aucune|Aucune||
-|Domaines d’expéditeur autorisés <br/><br/> _AllowedSenderDomains_|Aucune|Aucune|L’ajout de domaines dont vous êtes propriétaire (également appelés _domaines acceptés_) à la liste des expéditeurs autorisés n’est pas obligatoire. En fait, il est considéré comme un risque élevé, car il permet aux acteurs incorrects de vous envoyer des messages qui seraient autrement filtrés. Utilisez les fonctionnalités d' [usurpation d’identité](learn-about-spoof-intelligence.md) dans le centre de sécurité & conformité de la page **paramètres anti-courrier indésirable** pour examiner tous les expéditeurs qui usurpent l’identité des expéditeurs dans les domaines de messagerie de votre organisation ou usurper les adresses de messagerie de l’expéditeur dans les domaines externes.|
-|Expéditeurs bloqués <br/><br/> _BlockedSenders_|Aucune|Aucune||
-|Domaines des expéditeurs bloqués <br/><br/> _BlockedSenderDomains_|Aucune|Aucune||
+|Expéditeurs autorisés <br/><br/> _AllowedSenders_|Aucun|Aucun||
+|Domaines d’expéditeur autorisés <br/><br/> _AllowedSenderDomains_|Aucun|Aucun|L’ajout de domaines dont vous êtes propriétaire (également appelés _domaines acceptés_) à la liste des expéditeurs autorisés n’est pas obligatoire. En fait, il est considéré comme un risque élevé, car il permet aux acteurs incorrects de vous envoyer des messages qui seraient autrement filtrés. Utilisez les fonctionnalités d' [usurpation d’identité](learn-about-spoof-intelligence.md) dans le centre de sécurité & conformité de la page **paramètres anti-courrier indésirable** pour examiner tous les expéditeurs qui usurpent l’identité des expéditeurs dans les domaines de messagerie de votre organisation ou usurper les adresses de messagerie de l’expéditeur dans les domaines externes.|
+|Expéditeurs bloqués <br/><br/> _BlockedSenders_|Aucun|Aucun||
+|Domaines des expéditeurs bloqués <br/><br/> _BlockedSenderDomains_|Aucun|Aucun||
 |**Activer les notifications de courrier indésirable à l’utilisateur final** <br/><br/> _EnableEndUserSpamNotifications_|Activé <br/><br/> `$true`|Activé <br/><br/> `$true`||
 |**Envoyer des notifications de courrier indésirable à l’utilisateur final tous les (jours)** <br/><br/> _EndUserSpamNotificationFrequency_|3 jours|3 jours||
 |**Blocage du courrier indésirable** <br/><br/> _SpamZapEnabled_|Activé <br/><br/> `$true`|Activé <br/><br/> `$true`||
 |**Hameçon ZAP** <br/><br/> _PhishZapEnabled_|Activé <br/><br/> `$true`|Activé <br/><br/> `$true`||
 |_MarkAsSpamBulkMail_|Activé|Activé|Ce paramètre est disponible uniquement dans PowerShell.|
+|
 
 Il existe plusieurs autres paramètres de filtre de courrier indésirable (ASF) dans les stratégies de blocage du courrier indésirable qui sont en cours de désapprobation. Pour plus d’informations sur les chronologies de l’amortissement de ces fonctionnalités, reportez-vous à cette rubrique.
 
 Nous vous **recommandons de désactiver ces paramètres ASF** pour les niveaux **standard** et **strict** . Pour plus d’informations sur les paramètres ASF, voir [paramètres de filtre de courrier indésirable avancés (ASF) dans Office 365](advanced-spam-filtering-asf-options.md).
 
-|Nom de la fonctionnalité de sécurité|Comments|
-|----|---|
+|||
+|---|---|
+|**Nom de la fonctionnalité de sécurité**|**Comment**|
 |**Liens d’image vers des sites distants** (_IncreaseScoreWithImageLinks_)||
 |**Adresse IP numérique dans l’URL** (_IncreaseScoreWithNumericIps_)||
 |**Redirection UL vers un autre port** (_IncreaseScoreWithRedirectToOtherPort_)||
@@ -86,39 +89,46 @@ Nous vous **recommandons de désactiver ces paramètres ASF** pour les niveaux *
 |**Enregistrement SPF : échec matériel** (_MarkAsSpamSpfRecordHardFail_)||
 |**Filtrage des ID de l’expéditeur conditionnel : échec matériel** (_MarkAsSpamFromAddressAuthFail_)||
 |Notification de **non-remise rétrodiffusion** (_MarkAsSpamNdrBackscatter_)||
+|
 
 #### <a name="eop-outbound-spam-policy-settings"></a>Paramètres de stratégie de courrier indésirable sortant EOP
 
 Pour créer et configurer des stratégies de courrier indésirable sortant, consultez la rubrique [configuration du filtrage du courrier indésirable sortant dans Office 365](configure-the-outbound-spam-policy.md).
 
-|Nom de la fonctionnalité de sécurité|Standard|Empêcher|Commentaire|
+|||||
 |---|---|---|---|
+|**Nom de la fonctionnalité de sécurité**|**Standard**|**Empêcher**|**Comment**|
 |**Nombre maximal de destinataires par utilisateur : limite horaire externe** <br/><br/> _RecipientLimitExternalPerHour_|500|400||
 |**Nombre maximal de destinataires par utilisateur : limite horaire interne** <br/><br/> _RecipientLimitInternalPerHour_|1000|800||
 |**Nombre maximal de destinataires par utilisateur : limite quotidienne** <br/><br/> _RecipientLimitPerDay_|1000|800||
 |**Action lorsqu’un utilisateur dépasse les limites** <br/><br/> _ActionWhenThresholdReached_|**Empêcher l’utilisateur d’envoyer des messages** <br/><br/> `BlockUser`|**Empêcher l’utilisateur d’envoyer des messages** <br/><br/> `BlockUser`||
+|
 
 ### <a name="eop-anti-malware-policy-settings"></a>Paramètres de stratégie anti-programme malveillant EOP
 
 Pour créer et configurer des stratégies de protection contre les programmes malveillants, consultez la rubrique [configure anti-malware Policies in Office 365](configure-anti-malware-policies.md).
 
-|Nom de la fonctionnalité de sécurité|Standard|Empêcher|Commentaire|
+|||||
 |---|---|---|---|
+|**Nom de la fonctionnalité de sécurité**|**Standard**|**Empêcher**|**Comment**|
 |**Voulez-vous avertir les destinataires si leurs messages sont mis en quarantaine ?** <br/><br/> _Action_|Non <br/><br/> _DeleteMessage_|Non <br/><br/> _DeleteMessage_|Si un programme malveillant est détecté dans une pièce jointe, le message est mis en quarantaine et ne peut être libéré que par un administrateur.|
 |**Filtre de types de pièces jointes courantes** <br/><br/> _EnableFileFilter_|Activé <br/><br/> `$true`|Activé <br/><br/> `$true`|Ce paramètre met en quarantaine les messages qui contiennent des pièces jointes exécutables en fonction du type de fichier, quel que soit le contenu des pièces jointes.|
 |**Purge automatique contre les programmes malveillants à zéro heure** <br/><br/> _ZapEnabled_|Activé <br/><br/> `$true`|Activé <br/><br/> `$true`||
 |**Informer les expéditeurs internes** du message non remis <br/><br/> _EnableInternalSenderNotifications_|Désactivé <br/><br/> `$false`|Désactivé <br/><br/> `$false`||
 |**Informer les expéditeurs externes** du message non remis <br/><br/> _Paramètre enableexternalsendernotifications_|Désactivé <br/><br/> `$false`|Désactivé <br/><br/> `$false`||
+|
 
 ### <a name="eop-default-anti-phishing-policy-settings"></a>Paramètres de stratégie anti-hameçonnage par défaut EOP
 
-Pour configurer ces paramètres, consultez la rubrique [configure anti-phishing Policies in EOP](configure-anti-phishing-policies-eop.md).
+Pour plus d’informations sur ces paramètres, reportez-vous à la rubrique [usurpation Settings](set-up-anti-phishing-policies.md#spoof-settings). Pour configurer ces paramètres, consultez la rubrique [configure anti-phishing Policies in EOP](configure-anti-phishing-policies-eop.md).
 
-|Nom de la fonctionnalité de sécurité|Standard|Empêcher|Commentaire|
+|||||
 |---|---|---|---|
+|**Nom de la fonctionnalité de sécurité**|**Standard**|**Empêcher**|**Comment**|
 |**Activer la protection contre l’usurpation d’identité** <br/><br/> _EnableAntispoofEnforcement_|Activé <br/><br/> `$true`|Activé <br/><br/> `$true`||
 |**Activer l’expéditeur non authentifié** <br/><br/> _EnableUnauthenticatedSender_|Activé <br/><br/> `$true`|Activé <br/><br/> `$true`|Ajoute un point d’interrogation ( ?) à la photo de l’expéditeur dans Outlook pour les expéditeurs usurpés non identifiés. Pour plus d’informations, reportez-vous à la rubrique [usurpation des paramètres dans les stratégies anti-hameçonnage](set-up-anti-phishing-policies.md).|
 |**Si un message électronique est envoyé par une personne qui n’est pas autorisé à usurper votre domaine** <br/><br/> _AuthenticationFailAction_|**Déplacer le message vers les dossiers de courrier indésirable des destinataires** <br/><br/> `MoveToJmf`|**Mettre en quarantaine le message** <br/><br/> `Quarantine`|Cela s’applique aux expéditeurs bloqués dans l' [intelligence d’usurpation d’identité](learn-about-spoof-intelligence.md).|
+|
 
 ## <a name="office-365-advanced-threat-protection-security"></a>Sécurité avancée contre les menaces Office 365
 
@@ -135,31 +145,13 @@ Si vous avez ajouté un abonnement Office 365 ATP à votre EOP, définissez les 
 
 Les clients EOP bénéficient d’une protection antiphishing de base comme décrit précédemment, mais Office 365 ATP inclut davantage de fonctionnalités et de contrôles pour vous aider à prévenir, détecter et corriger les attaques. Pour créer et configurer ces stratégies, consultez la rubrique [configure ATP anti-phishing Policies in Office 365](configure-atp-anti-phishing-policies.md).
 
-|Nom de la fonctionnalité de sécurité de l’emprunt d’identité|Standard|Empêcher|Commentaire|
-|---------|---------|---------|---------|
-|(Modifier la stratégie d’emprunt d’identité) Ajouter des utilisateurs à protéger|Activé|Activé|Dépend de votre organisation, mais nous vous recommandons d’ajouter des utilisateurs dans les rôles clés. En interne, il peut s’agir de votre PDG, directeur financier et autres dirigeants. En externe, il peut s’agir des membres du Conseil ou de votre Conseil d’administration.|
-|(Modifier la stratégie d’emprunt d’identité) Inclure automatiquement les domaines dont je suis propriétaire|Activé|Activé||
-|(Modifier la stratégie d’emprunt d’identité) Inclure les domaines personnalisés|Activé|Activé|Dépend de votre organisation, mais nous vous recommandons d’ajouter des domaines que vous interagissez avec la plupart des personnes dont vous n’êtes pas propriétaire.|
-|Si le courrier électronique est envoyé par un utilisateur représenté que vous avez spécifié|Mettre en quarantaine le message|Mettre en quarantaine le message||
-|Si le courrier électronique est envoyé par un domaine emprunté que vous avez spécifié|Mettre en quarantaine le message|Mettre en quarantaine le message||
-|Afficher le Conseil pour les utilisateurs empruntés|Activé|Activé||
-|Afficher le Conseil pour les domaines empruntés|Activé|Activé||
-|Afficher le Conseil pour les caractères inhabituels|Activé|Activé||
-|Activer l’intelligence des boîtes aux lettres|Activé|Activé||
-|Activer la protection contre l’usurpation d’identité basée sur les boîtes aux lettres|Activé|Activé||
-|Si le courrier électronique est envoyé par un utilisateur emprunté protégé par la boîte aux lettres|Déplacer le message vers les dossiers de courrier indésirable des destinataires|Mettre en quarantaine le message||
-|(Modifier la stratégie d’emprunt d’identité) Ajouter des expéditeurs et des domaines approuvés|Aucune|Aucune|Dépend de votre organisation, mais nous vous recommandons d’ajouter des utilisateurs ou des domaines qui ne sont pas marqués correctement comme des hameçons en raison de l’emprunt d’identité uniquement et non d’autres filtres.|
-
-|Nom de la fonctionnalité de sécurité usurpée|Standard|Empêcher|Commentaire|
-|---------|---------|---------|---------|
-|Activer la protection contre l’usurpation d’identité|Activé|Activé||
-|Activer l’expéditeur non authentifié (marquage)|Activé|Activé||
-|Si un message électronique est envoyé par une personne qui n’est pas autorisé à usurper votre domaine|Déplacer le message vers les dossiers de courrier indésirable des destinataires|Mettre en quarantaine le message||
-
 #### <a name="impersonation-settings-in-atp-anti-phishing-policies"></a>Paramètres d’emprunt d’identité dans les stratégies anti-hameçonnage ATP
 
-|Nom de la fonctionnalité de sécurité|Standard|Empêcher|Commentaire|
+Pour plus d’informations sur ces paramètres, consultez la rubrique [emprunt d’identité dans les stratégies anti-hameçonnage ATP](set-up-anti-phishing-policies.md#impersonation-settings-in-atp-anti-phishing-policies). Pour configurer ces paramètres, consultez la rubrique [configure ATP anti-phishing Policies](configure-atp-anti-phishing-policies.md).
+
+|||||
 |---|---|---|---|
+|**Nom de la fonctionnalité de sécurité**|**Standard**|**Empêcher**|**Comment**|
 |Utilisateurs protégés : **Ajouter des utilisateurs à protéger** <br/><br/> _EnableTargetedUserProtection_ <br/><br/> _TargetedUsersToProtect_|Activé <br/><br/> `$true` <br/><br/> \<Liste des utilisateurs\>|Activé <br/><br/> `$true` <br/><br/> \<Liste des utilisateurs\>|Dépend de votre organisation, mais nous vous recommandons d’ajouter des utilisateurs dans les rôles clés. En interne, il peut s’agir de votre PDG, directeur financier et autres dirigeants. En externe, il peut s’agir des membres du Conseil ou de votre Conseil d’administration.|
 |Domaines protégés : **inclure automatiquement les domaines dont je suis propriétaire** <br/><br/> _EnableOrganizationDomainsProtection_|Activé <br/><br/> `$true`|Activé <br/><br/> `$true`||
 |Domaines protégés : **inclure des domaines personnalisés** <br/><br/> _EnableTargetedDomainsProtection_ <br/><br/> _TargetedDomainsToProtect_|Activé <br/><br/> `$true` <br/><br/> \<Liste des domaines\>|Activé <br/><br/> `$true` <br/><br/> \<Liste des domaines\>|Dépend de votre organisation, mais nous vous recommandons d’ajouter des domaines avec lesquels vous interagissez fréquemment.|
@@ -171,47 +163,91 @@ Les clients EOP bénéficient d’une protection antiphishing de base comme déc
 |**Activer l’intelligence des boîtes aux lettres ?** <br/><br/> _EnableMailboxIntelligence_|Activé <br/><br/> `$true`|Activé <br/><br/> `$true`||
 |**Activer la protection contre l’usurpation d’identité basée sur les boîtes aux lettres ?** <br/><br/> _EnableMailboxIntelligenceProtection_|Activé <br/><br/> `$true`|Activé <br/><br/> `$true`||
 |**Si le courrier électronique est envoyé par un utilisateur emprunté protégé par la boîte aux lettres** <br/><br/> _MailboxIntelligenceProtectionAction_|**Déplacer le message vers les dossiers de courrier indésirable des destinataires** <br/><br/> `MoveToJmf`|**Mettre en quarantaine le message** <br/><br/> `Quarantine`||
-|**Expéditeurs approuvés** <br/><br/> _ExcludedSenders_|Aucune|Aucune|Dépend de votre organisation, mais nous vous recommandons d’ajouter des utilisateurs qui sont identifiés de manière incorrecte comme des hameçons en raison de l’emprunt d’identité uniquement et non d’autres filtres.|
-|**Domaines approuvés** <br/><br/> _ExcludedDomains_|Aucune|Aucune|Dépend de votre organisation, mais nous vous recommandons d’ajouter des domaines qui sont identifiés de manière incorrecte comme des hameçons en raison de l’emprunt d’identité uniquement et non d’autres filtres.|
+|**Expéditeurs approuvés** <br/><br/> _ExcludedSenders_|Aucun|Aucun|Dépend de votre organisation, mais nous vous recommandons d’ajouter des utilisateurs qui sont identifiés de manière incorrecte comme des hameçons en raison de l’emprunt d’identité uniquement et non d’autres filtres.|
+|**Domaines approuvés** <br/><br/> _ExcludedDomains_|Aucun|Aucun|Dépend de votre organisation, mais nous vous recommandons d’ajouter des domaines qui sont identifiés de manière incorrecte comme des hameçons en raison de l’emprunt d’identité uniquement et non d’autres filtres.|
+|
 
 #### <a name="spoof-settings-in-atp-anti-phishing-policies"></a>Paramètres d’usurpation dans les stratégies anti-hameçonnage ATP
 
 Notez qu’il s’agit des mêmes paramètres que ceux disponibles dans les [paramètres de stratégie anti-courrier indésirable dans EOP](#eop-anti-spam-policy-settings).
 
-|Nom de la fonctionnalité de sécurité|Standard|Empêcher|Commentaire|
+|||||
 |---|---|---|---|
+|**Nom de la fonctionnalité de sécurité**|**Standard**|**Empêcher**|**Comment**|
 |**Activer la protection contre l’usurpation d’identité** <br/><br/> _EnableAntispoofEnforcement_|Activé <br/><br/> `$true`|Activé <br/><br/> `$true`||
 |**Activer l’expéditeur non authentifié** <br/><br/> _EnableUnauthenticatedSender_|Activé <br/><br/> `$true`|Activé <br/><br/> `$true`|Ajoute un point d’interrogation ( ?) à la photo de l’expéditeur dans Outlook pour les expéditeurs usurpés non identifiés. Pour plus d’informations, reportez-vous à la rubrique [usurpation des paramètres dans les stratégies anti-hameçonnage](set-up-anti-phishing-policies.md).|
 |**Si un message électronique est envoyé par une personne qui n’est pas autorisé à usurper votre domaine** <br/><br/> _AuthenticationFailAction_|**Déplacer le message vers les dossiers de courrier indésirable des destinataires** <br/><br/> `MoveToJmf`|**Mettre en quarantaine le message** <br/><br/> `Quarantine`|Cela s’applique aux expéditeurs bloqués dans l' [intelligence d’usurpation d’identité](learn-about-spoof-intelligence.md).|
+|
 
 #### <a name="advanced-settings-in-atp-anti-phishing-policies"></a>Paramètres avancés dans les stratégies anti-hameçonnage ATP
 
-|Nom de la fonctionnalité de sécurité|Standard|Empêcher|Commentaire|
+Pour plus d’informations sur ce paramètre, consultez la rubrique [seuils d’hameçonnage avancés dans les stratégies anti-hameçonnage ATP](set-up-anti-phishing-policies.md#advanced-phishing-thresholds-in-atp-anti-phishing-policies). Pour configurer ce paramètre, consultez la rubrique [configure ATP anti-phishing Policies](configure-atp-anti-phishing-policies.md).
+
+|**Nom de la fonctionnalité de sécurité**|**Standard**|**Empêcher**|**Comment**|
 |---|---|---|---|
 |**Seuils de hameçonnage avancés** <br/><br/> _PhishThresholdLevel_|**2-agressif** <br/><br/> `2`|**3-plus agressif** <br/><br/> `3`||
 
-### <a name="safe-links-settings"></a>Paramètres de liens fiables
+### <a name="atp-safe-links-policy-settings"></a>Paramètres de stratégie de liens fiables ATP
 
-|Nom de la fonctionnalité de sécurité|Standard|Empêcher|Commentaire|
-|---------|---------|---------|---------|
-|Utiliser des liens fiables ATP dans les applications Office 365, Office pour iOS et Android|Activé|Activé|Cela relève des stratégies de liens fiables ATP qui s’appliquent à l’ensemble de l’Organisation|
-Ne pas suivre lorsque les utilisateurs cliquent sur les liens fiables|Désactivé|Désactivé|Il s’agit des stratégies qui s’appliquent à l’ensemble de l’organisation et à toutes les stratégies qui s’appliquent à des destinataires spécifiques.|
-|Ne pas autoriser les utilisateurs à cliquer sur les liens fiables vers l’URL d’origine|Activé|Activé|Il s’agit des stratégies qui s’appliquent à l’ensemble de l’organisation et des stratégies qui s’appliquent à des destinataires spécifiques.|
-|Action pour les URL potentiellement malveillantes dans les messages|Activé|Activé||
-|Application de l’analyse des URL en temps réel pour les liens suspects et les liens pointant vers des fichiers|Activé|Activé||
-|Attendre la fin de l’analyse des URL avant de remettre le message|Activé|Activé||
-|Appliquer des liens fiables aux messages électroniques envoyés au sein de l’Organisation|Activé|Activé||
+Pour configurer ces paramètres, reportez-vous à la rubrique [set up Office 365 ATP Safe Links Policies](set-up-atp-safe-links-policies.md).
 
-### <a name="safe-attachments"></a>Pièces jointes fiables
+#### <a name="safe-links-policy-settings-in-the-default-policy-for-all-users"></a>Paramètres de stratégie de liens fiables dans la stratégie par défaut pour tous les utilisateurs
 
-|Nom de la fonctionnalité de sécurité|Standard|Empêcher|Commentaire|
-|---------|---------|---------|---------|
-|Activer PACM pour SharePoint, OneDrive et Microsoft Teams.|Activé|Activé||
-|Pièces jointes approuvées ATP réponse aux programmes malveillants inconnus|Bloc|Bloc||
-|Redirection de la pièce jointe sur la détection|Activé|Activé|Rediriger vers l’adresse de messagerie d’un administrateur de sécurité qui sait comment déterminer si la pièce jointe est un programme malveillant ou non|
-|Réponse aux pièces jointes approuvées ATP si l’analyse contre les pièces jointes expire ou si une erreur se produit|Activé|Activé||
+**Remarque**: dans PowerShell, vous utilisez la cmdlet [Set-AtpPolicyForO365](https://docs.microsoft.com/powershell/module/exchange/set-atppolicyforo365) pour ces paramètres.
 
-## <a name="related-topics"></a>Voir aussi
+|||||
+|---|---|---|---|
+|**Nom de la fonctionnalité de sécurité**|**Standard**|**Empêcher**|**Comment**|
+|**Utiliser les liens fiables dans : applications Office 365** <br/><br/> _EnableSafeLinksForO365Clients_|Activé <br/><br/> `$true`|Activé <br/><br/> `$true`|Utiliser des liens fiables ATP dans les applications Office 365, Office pour iOS et Android.|
+|**Ne pas suivre lorsque les utilisateurs cliquent sur les liens fiables** <br/><br/> _TrackClicks_|Désactivé <br/><br/> `$true`|Désactivé <br/><br/> `$true`||
+|**Ne pas autoriser les utilisateurs à cliquer sur les liens fiables vers l’URL d’origine** <br/><br/> _AllowClickThrough_|Activé <br/><br/> `$false`|Activé <br/><br/> `$false`||
+|
+
+#### <a name="safe-links-policy-settings-in-custom-policies-for-specific-users"></a>Paramètres de stratégie de liens fiables dans les stratégies personnalisées pour des utilisateurs spécifiques
+
+**Remarque**: dans PowerShell, vous utilisez les cmdlets [New-Safelinkspolicy permet](https://docs.microsoft.com/powershell/module/exchange/new-safelinkspolicy) et [Set-safelinkspolicy permet] ( https://docs.microsoft.com/powershell/module/exchange/set-safelinkspolicycmdlet cmdlets pour ces paramètres.
+
+|||||
+|---|---|---|---|
+|**Nom de la fonctionnalité de sécurité**|**Standard**|**Empêcher**|**Comment**|
+|**Sélectionner l’action pour les URL potentiellement malveillantes dans les messages** <br/><br/> _IsEnabled_|Activé <br/><br/> `$true`|Activé <br/><br/> `$true`||
+|**Sélectionnez l’action pour les URL inconnues ou potentiellement malveillantes dans Microsoft teams** <br/><br/> _EnableSafeLinksForTeams_|Activé <br/><br/> `$true`|Activé <br/><br/> `$true`||
+|**Application de l’analyse des URL en temps réel pour les liens suspects et les liens pointant vers des fichiers** <br/><br/> _ScanUrls_|Activé <br/><br/> `$true`|Activé <br/><br/> `$true`||
+|**Attendre la fin de l’analyse des URL avant de remettre le message** <br/><br/> _DeliverMessageAfterScan_|Activé <br/><br/> `$true`|Activé <br/><br/> `$true`||
+|**Appliquer des liens fiables aux messages électroniques envoyés au sein de l’Organisation** <br/><br/> _EnableForInternalSenders_|Activé <br/><br/> `$true`|Activé <br/><br/> `$true`||
+|**Ne pas suivre lorsque les utilisateurs cliquent sur les liens fiables** <br/><br/> _DoNotTrackUserClicks_|Désactivé <br/><br/> `$false`|Désactivé <br/><br/> `$false`|
+|**Ne pas autoriser les utilisateurs à cliquer sur les liens fiables vers l’URL d’origine** <br/><br/> _DoNotAllowClickThrough_|Activé <br/><br/> `$true`|Activé <br/><br/> `$true`||
+|
+
+### <a name="atp-safe-attachments-policy-settings"></a>Paramètres de stratégie de pièces jointes approuvées ATP
+
+Pour configurer ces paramètres, reportez-vous à la rubrique [set up Office 365 ATP Safe Attachments Policies](set-up-atp-safe-attachments-policies.md).
+
+#### <a name="safe-attachments-policy-settings-in-the-default-policy-for-all-users"></a>Paramètres de stratégie de pièces jointes fiables dans la stratégie par défaut pour tous les utilisateurs
+
+**Remarque**: dans PowerShell, vous utilisez la cmdlet [Set-AtpPolicyForO365](https://docs.microsoft.com/powershell/module/exchange/set-atppolicyforo365) pour ces paramètres.
+
+|||||
+|---|---|---|---|
+|**Nom de la fonctionnalité de sécurité**|**Standard**|**Empêcher**|**Comment**|
+|**Activer la protection avancée contre les menaces pour SharePoint, OneDrive et Microsoft Teams** <br/><br/> _EnableATPForSPOTeamsODB_|Activé <br/><br/> `$true`|Activé <br/><br/> `$true`||
+|**Activer des documents approuvés pour les clients Office**<bt/><br/> _EnableSafeDocs_|Activé <br/><br/> `$true`|Activé <br/><br/> `$true`||Ce paramètre est disponible uniquement avec les licences de sécurité Microsoft 365 E5 ou Microsoft 365 E5. Pour plus d’informations, consultez la rubrique [documents approuvés dans Office 365 protection avancée contre les menaces](safe-docs.md).|
+|**Autoriser les utilisateurs à cliquer en mode protégé même si les documents fiables identifient le fichier comme étant malveillant**<bt/><br/> _AllowSafeDocsOpen_|Désactivé <br/><br/> `$false`|Désactivé <br/><br/> `$false`||
+|
+
+#### <a name="safe-attachments-policy-settings-in-custom-policies-for-specific-users"></a>Paramètres de stratégie de pièces jointes fiables dans les stratégies personnalisées pour des utilisateurs spécifiques
+
+**Remarque**: dans PowerShell, vous utilisez les applets de commande [New-safeattachmentpolicy permet](https://docs.microsoft.com/powershell/module/exchange/new-safeattachmentpolicy) et [Set-safeattachmentpolicy permet](https://docs.microsoft.com/powershell/module/exchange/set-safelinkspolicy) pour ces paramètres.
+
+|||||
+|---|---|---|---|
+|**Nom de la fonctionnalité de sécurité**|**Standard**|**Empêcher**|**Comment**|
+|**Pièces jointes fiables réponse aux programmes malveillants inconnus** <br/><br/> _Action_|Bloc <br/><br/> `Block`|Bloc <br/><br/> `Block`||
+|**Redirection de la pièce jointe sur la détection** : **activer la redirection** <br/><br/> _Redirect_ <br/><br/> _RedirectAddress_|Sur et spécifiez une adresse de messagerie. <br/><br/> `$true` <br/><br/> une adresse de messagerie|Sur et spécifiez une adresse de messagerie. <br/><br/> `$true` <br/><br/> une adresse de messagerie|Rediriger les messages vers un administrateur de sécurité pour révision.|
+|**Appliquer la sélection ci-dessus si l’analyse anti-programme malveillant pour les pièces jointes expire ou si une erreur se produit.** <br/><br/> _ActionOnError_|Activé <br/><br/> `$true`|Activé <br/><br/> `$true`||
+|
+
+## <a name="related-topics"></a>Sujets associés
 
 - Vous recherchez les meilleures pratiques avec des **règles de transport Exchange mail Flow/Exchange**? Pour plus d’informations, consultez [cet article](https://docs.microsoft.com/microsoft-365/security/office-365-security/best-practices-for-configuring-eop) .
 

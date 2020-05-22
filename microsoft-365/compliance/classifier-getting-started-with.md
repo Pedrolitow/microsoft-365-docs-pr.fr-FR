@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Un classificateur Microsoft 365 pouvant être formé est un outil que vous pouvez former afin de reconnaître différents types de contenu en lui donnant des échantillons positifs et négatifs. Une fois que le classifieur est formé, vous confirmez que ses résultats sont précis. Vous l’utilisez ensuite pour effectuer une recherche dans le contenu de votre organisation et le classifier pour appliquer des étiquettes de rétention ou de sensibilité ou l’inclure dans la protection contre la perte de données (DLP) ou les stratégies de rétention.
-ms.openlocfilehash: 99d1d9039ef70347515f80da73a487f40534d2e7
-ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
+ms.openlocfilehash: ba24bbe76bce5e3a41345c80616a57d3fb67a5fc
+ms.sourcegitcommit: 2fbcecaa60e9f551738b9235bd380af807a6681a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "44327756"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "44339912"
 ---
 # <a name="getting-started-with-trainable-classifiers-preview"></a>Prise en main des classificateurs de formation (préversion)
 
@@ -33,10 +33,10 @@ Cette méthode nécessite un jugement humain et une action. Un administrateur pe
 
 Cette catégorie de mécanismes de classification inclut la recherche de contenu en :
 
-- Mots clés ou valeurs de métadonnées (langage de requête par mot clé)
-- utilisation de modèles d’informations sensibles précédemment identifiés comme des numéros de sécurité sociale, de carte de crédit ou de compte bancaire [(définitions d’entités de type d’informations sensibles)](sensitive-information-type-entity-definitions.md)
-- Reconnaissance d’un élément car il s’agit d’une variante d’un modèle [(impression des doigts de document)](document-fingerprinting.md)
-- utilisation de la présence de chaînes exactes [(correspondance exacte de données)](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md). '
+- Mots clés ou valeurs de métadonnées (langage de requête par mot clé).
+- Utilisation de modèles d’informations sensibles précédemment identifiés comme des numéros de sécurité sociale, de carte de crédit ou de compte bancaire [(définitions d’entités de type d’informations sensibles)](sensitive-information-type-entity-definitions.md).
+- Reconnaissance d’un élément, car il s’agit d’une variante d’un modèle [(impression des doigts de document)](document-fingerprinting.md).
+- À l’aide de la présence de chaînes exactes [(correspondance de données exacte)](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md).
 
 Les étiquettes de sensibilité et de rétention peuvent ensuite être appliquées automatiquement pour que le contenu soit disponible dans la [protection contre la perte de données (DLP)](data-loss-prevention-policies.md) et les [stratégies de rétention](retention-policies.md).
 
@@ -44,8 +44,10 @@ Les étiquettes de sensibilité et de rétention peuvent ensuite être appliqué
 
 Cette méthode de classification est particulièrement adaptée au contenu qui n’est pas facilement identifiable par les méthodes de correspondance manuelle ou automatisée. Cette méthode de classification est plus relative à la formation d’un classifieur permettant d’identifier un élément en fonction de ce que est l’élément, pas par les éléments qui se trouvent dans l’élément (critères spéciaux). Un classifieur apprend à identifier un type de contenu en examinant des centaines d’exemples du contenu que vous souhaitez classer. Commencez par alimenter des exemples qui sont tous dans la catégorie. Une fois qu’il les traite, vous les testez en leur donnant une combinaison des exemples de correspondance et de non-correspondance. Le classifieur effectue ensuite des prévisions quant à l’existence d’un élément donné dans la catégorie que vous créez. Ensuite, vérifiez ses résultats, en triant les positifs, les négatifs, les faux positifs et les faux négatifs pour améliorer la précision de ses prévisions. Lorsque vous publiez le classifieur formé, il trie les éléments dans des emplacements comme SharePoint Online, Exchange et OneDrive, et classifie le contenu.
 
-> [!IMPORTANT]
-> Les classifieurs intégrés et les classifieurs de formation sont disponibles en tant que condition pour la [stratégie d’étiquette de rétention automatique basée sur une condition et une](labels.md#applying-a-retention-label-automatically-based-on-conditions) conformité de [communication](communication-compliance.md). Les étiquettes de sensibilité ne peuvent utiliser des classifieurs intégrés qu’en tant que condition, voir [appliquer automatiquement une étiquette de sensibilité au contenu](apply-sensitivity-label-automatically.md).
+### <a name="where-you-can-use-trainable-classifiers"></a>Où vous pouvez utiliser des classifieurs de formation
+Les classifieurs intégrés et les classifieurs de formation sont disponibles en tant que condition pour la [stratégie d’étiquette de rétention automatique basée sur une condition et une](labels.md#applying-a-retention-label-automatically-based-on-conditions) conformité de [communication](communication-compliance-configure.md). 
+
+Les étiquettes de sensibilité peuvent utiliser des classifieurs intégrés et personnalisés comme conditions, voir [appliquer une étiquette de sensibilité au contenu automatiquement](apply-sensitivity-label-automatically.md)et l' [étiquetage automatique pour les applications Office](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-for-office-apps).
 
 > [!IMPORTANT]
 > Les classifieurs pouvant être formés ne fonctionnent qu’avec des éléments qui ne sont pas chiffrés et qui sont en anglais.
@@ -53,6 +55,18 @@ Cette méthode de classification est particulièrement adaptée au contenu qui n
 ### <a name="licensing-requirements"></a>Critères de licence
 
 Les classifieurs de formation sont une fonctionnalité de conformité Microsoft 365 E5 ou E5. Vous devez disposer de l’un de ces abonnements pour pouvoir les utiliser.
+
+### <a name="pre-requisites"></a>Conditions préalables
+
+Pour accéder aux classifieurs de formation dans l’interface utilisateur : 
+- l’administrateur global doit s’abonner au client.
+- Le rôle d’administrateur de conformité ou l’administrateur des données de conformité est requis pour former un classifieur
+
+Vous aurez besoin de comptes dotés des autorisations suivantes pour utiliser des classifieurs avec apprentissage dans les scénarios suivants :
+
+- Scénario de stratégie d’étiquette de rétention : RecordManagement et rôles de gestion de rétention 
+- Scénario de stratégie d’étiquette de confidentialité : administrateur de sécurité, administrateur de conformité, administrateur de données de conformité
+- Scénario de stratégie de conformité des communications : administrateur de gestion des risques Insiders, administrateur de vérification de la surveillance 
 
 ## <a name="types-of-classifiers"></a>Types de classifieurs
 
@@ -113,6 +127,7 @@ La création et la publication d’un classificateur pour l’utilisation dans l
 ![classificateur de flux de processus](../media/classifier-trainable-classifier-flow.png)
 
 ## <a name="see-also"></a>Voir aussi
+
 
 - [Étiquettes de rétention](labels.md)
 - [Stratégies de rétention](retention-policies.md)
