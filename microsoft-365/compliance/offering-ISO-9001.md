@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: b2542f697edb28c4949b844ae32d606dba5e7a1c
-ms.sourcegitcommit: 1c90bcc5c56f24895f01c3e0423c3f6b73715c13
+ms.openlocfilehash: 3f733f3baf0db4d01a78e7984f44b17a5d5584e7
+ms.sourcegitcommit: daad5f2f1994a812c2b9c78e7dd148d10c51f61d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44214302"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "44254307"
 ---
 # <a name="iso-90012015-quality-management-systems-standards"></a>Normes des systèmes de gestion de la qualité ISO 9001:2015
 
@@ -31,25 +31,29 @@ ISO 9001:2015 est une norme internationale qui établit les critères propres à
 
 Une société d’audit tierce et indépendante a réalisé un examen rigoureux de la solution Microsoft Azure et de plusieurs services en ligne Microsoft pour vérifier leur conformité aux principes de gestion de la qualité établis par la norme ISO 9001:2015. La certification tierce disponible permet de confirmer en toute indépendance que la solution Azure et les services en ligne Microsoft couverts sont conformes aux exigences de la norme 9001:2015.
 
-## <a name="microsoft-in-scope-cloud-services"></a>Services Cloud Microsoft dans le périmètre
+## <a name="microsoft-in-scope-cloud-services"></a>Services Cloud Microsoft concernés
 
-- [Azure](https://aka.ms/AzureCompliance)
-- Cloud App Security
-- Génomique
-- Graph
+- [Azure, Azure Gouvernement et Azure Allemagne](https://aka.ms/AzureCompliance)
+- Microsoft Cloud App Security
+- Dynamics 365, Dynamics 365 Gouvernement et Dynamics 365 Allemagne
+- Microsoft Graph
 - Intune
+- Microsoft Defender – Protection avancée contre les menaces
+- Microsoft Healthcare Bot
 - Bureau géré Microsoft
-- Service Cloud Microsoft Flow, soit en service autonome, soit inclus dans un plan ou une suite Office 365 ou Dynamics 365
-- Service Cloud Microsoft PowerApps, soit en service autonome, soit inclus dans un plan ou une suite Office 365 ou Dynamics 365
+- Service Cloud Power Automate (anciennement Microsoft Flow), soit en service autonome, soit inclus dans un plan ou une suite Office 365 ou Dynamics 365
+- Service Cloud PowerApps, soit en service autonome, soit inclus dans un plan ou une suite Office 365 ou Dynamics 365
 - Service Cloud Power BI soit en service autonome, soit inclus dans un plan ou une suite Office 365
+- Power BI intégré
+- Microsoft Stream
 
 ## <a name="audits-reports-and-certificates"></a>Audits, rapports et certificats
 
-- [Rapport d’évaluation FY19 Microsoft Azure ISO 9001](https://go.microsoft.com/fwlink/p/?linkid=2077661)
-- [Certificat FY19 Microsoft Azure ISO 9001](https://go.microsoft.com/fwlink/p/?linkid=2077747)
-- [Voir rapports d’audit complémentaires](https://aka.ms/auditreports)
+- [Azure, Dynamics 365 et services en ligne : certificat ISO9001](https://aka.ms/azureiso9001cert)
+- [Azure, Dynamics 365 et services en ligne : rapport d’évaluation ISO9001](https://aka.ms/azureiso9001report)
+- [Azure, Dynamics 365 et services en ligne : Déclaration d’applicabilité (SOA) ISO9001](https://aka.ms/azureiso9001soa)
 
-## <a name="frequently-asked-questions"></a>Questions fréquentes (FAQ)
+## <a name="frequently-asked-questions"></a>Foire aux questions
 
 À qui la norme s'applique-t-elle ?
 
@@ -61,7 +65,7 @@ Le [portail d’approbation de services](https://docs.microsoft.com/microsoft-36
 
 **Microsoft exécute-t-elle des tests annuels pour les défaillances d’infrastructure ?**
 
-Oui. L’évaluation annuelle ISO 9001:2015 inclut l’infrastructure physique de centre de données sous-jacent. Merci d’[examiner le certificat](https://www.microsoft.com/?ref=aka) pour connaître les détails de la couverture.
+Oui. L’évaluation annuelle ISO 9001:2015 inclut l’infrastructure physique de centre de données sous-jacent. [Examinez le certificat](https://www.microsoft.com/?ref=aka) pour connaître les détails de la couverture.
 
 **Où puis-je consulter les informations de conformité Microsoft concernant la norme ISO 9001:2015 ?**
 

@@ -16,12 +16,12 @@ ms.assetid: 316544cb-db1d-4c25-a5b9-c73bbcf53047
 ms.collection:
 - M365-security-compliance
 description: Les administrateurs peuvent découvrir comment afficher, créer, modifier et supprimer des stratégies anti-courrier indésirable dans Exchange Online Protection (EOP) autonome.
-ms.openlocfilehash: 66266ac79f6f442c8551b9ec15d553d6fb074cdc
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 4850fa9f44bb4f9b23b40bc4e30c6e8ba4fac0ff
+ms.sourcegitcommit: 185d62f41f6b173894ba6e3e87b11b2b5d02db58
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44209558"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "44340809"
 ---
 # <a name="configure-anti-spam-policies-in-eop"></a>Configuration de stratégies de blocage du courrier indésirable dans Exchange Online Protection
 
@@ -29,9 +29,9 @@ Dans les organisations Microsoft 365 ayant des boîtes aux lettres dans Exchang
 
 Les administrateurs peuvent afficher, modifier et configurer (mais pas supprimer) la stratégie anti-courrier indésirable par défaut. Pour une précision accrue, vous pouvez également créer des stratégies de filtrage de courrier indésirable qui s’appliquent à des utilisateurs, à des groupes ou à des domaines spécifiques de votre organisation. Les stratégies personnalisées priment toujours sur la stratégie par défaut. Vous pouvez cependant modifier la priorité (l'ordre d'exécution) de vos stratégies personnalisées.
 
-Vous pouvez configurer des stratégies anti-courrier indésirable dans le Centre de sécurité et conformité ou dans PowerShell (Exchange Online PowerShell pour les organisations Microsoft 365 sans boîtes aux lettres dans Exchange Online ; Exchange Online Protection PowerShell autonome pour les organisations sans boîtes aux lettres dans Exchange Online).
+Vous pouvez configurer des stratégies anti-courrier indésirable dans le Centre de sécurité et de conformité ou dans PowerShell (Exchange Online PowerShell pour les organisations Microsoft 365 sans boîtes aux lettres dans Exchange Online ; Exchange Online Protection PowerShell autonome pour les organisations sans boîtes aux lettres dans Exchange Online).
 
-## <a name="anti-spam-policies-in-the-security--compliance-center-vs-exchange-online-powershell-or-exchange-online-protection-powershell"></a>Stratégies anti-courrier indésirable dans le Centre de sécurité et conformité vs Exchange Online PowerShell ou Exchange Online Protection PowerShell
+## <a name="anti-spam-policies-in-the-security--compliance-center-vs-powershell"></a>Stratégies anti-courrier indésirable dans le Centre de sécurité et de conformité en regard de PowerShell
 
 Les éléments de base d’une stratégie anti-courrier indésirable dans EOP sont les suivants :
 
@@ -47,7 +47,7 @@ La différence entre ces deux éléments n’est pas évidente lorsque vous gér
 
 - Lorsque vous supprimez une stratégie anti-courrier indésirable dans le Centre de conformité & sécurité, la règle de filtrage du courrier indésirable et la stratégie de filtrage du courrier indésirable correspondante sont supprimées.
 
-Dans Exchange Online PowerShell ou Exchange Online Protection autonome, la différence entre les stratégies de filtrage du courrier indésirable et les règles de filtrage du courrier indésirable est évidente. Vous pouvez gérer les stratégies de filtrage du courrier indésirable à l’aide des applets de commande **\*-HostedContentFilterPolicy** et gérer les règles de filtrage du courrier indésirable à l’aide des applets de commande **\*-HostedContentFilterRule**.
+Dans Exchange Online PowerShell ou Exchange Online Protection PowerShell autonome, la différence entre les stratégies de filtrage du courrier indésirable et les règles de filtrage du courrier indésirable est évidente. Vous pouvez gérer les stratégies de filtrage du courrier indésirable à l’aide des applets de commande **\*-HostedContentFilterPolicy** et gérer les règles de filtrage du courrier indésirable à l’aide des applets de commande **\*-HostedContentFilterRule**.
 
 - Dans PowerShell, commencez par créer la stratégie de filtrage du courrier indésirable, puis créez la règle de filtrage de courrier indésirable qui détermine la stratégie à laquelle s’applique à la règle.
 
@@ -71,7 +71,7 @@ Pour améliorer l’efficacité du filtrage du courrier indésirable, vous pouve
 
 - Vous ouvrez le Centre de conformité et sécurité sur <https://protection.office.com/>. Pour accéder directement à la page **Paramètres anti-courrier indésirable**, utilisez <https://protection.office.com/antispam>.
 
-- Pour vous connecter à Exchange Online PowerShell, voir [Connexion à Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell). Pour vous connecter à un service Exchange Online Protection autonome, voir [Se connecter à PowerShell d’Exchange Online Protection](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell).
+- Pour vous connecter à Exchange Online PowerShell, voir [Connexion à Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell). Pour vous connecter à un service Exchange Online Protection PowerShell autonome, voir [Se connecter à Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell).
 
 - Des autorisations doivent vous être attribuées avant de pouvoir exécuter ces procédures. Pour ajouter, modifier et supprimer des stratégies anti-courrier indésirable, vous devez être membre des groupes de rôles **Management de l’organisation** ou **Administrateur de sécurité**. Pour l’accès en lecture seule aux stratégies anti-courrier indésirable, vous devez être membre du groupe de rôles **Lecteur de sécurité**. Pour des informations supplémentaires sur les groupes de rôles dans le Centre de sécurité et conformité, voir [Autorisations dans le Centre de sécurité et conformité](permissions-in-the-security-and-compliance-center.md).
 
@@ -341,9 +341,9 @@ Lorsqu’un verdict de filtre anti-courrier indésirable met un message en quara
    - **Activer les notifications de courrier indésirable pour l’utilisateur final**: sélectionnez la case à cocher pour activer les notifications. Décochez la case pour désactiver les notifications.
 
    - **Envoyez des notifications de courrier indésirable à l’utilisateur final chaque (jours)**: sélectionnez la fréquence d’envoi des notifications. La valeur par défaut est de 3 jours. Vous pouvez entrer 1 à 15 jours.
-   
+
      Il existe trois cycles de notification de courrier indésirable pour l’utilisateur final sur une période de 24 heures qui commencent aux heures suivantes : 01:00 UTC, 08:00 UTC et 16:00 UTC. 
-    
+
      > [!NOTE]
      > Si une notification du cycle précédent n’a pas été envoyée, un cycle ultérieur enverra la notification. Vous aurez alors l’impression de recevoir plusieurs notifications pour une même journée.
 
@@ -363,7 +363,7 @@ Lorsqu’un verdict de filtre anti-courrier indésirable met un message en quara
 
 Vous ne pouvez pas supprimer la stratégie par défaut.
 
-## <a name="use-exchange-online-powershell-or-exchange-online-protection-powershell-to-configure-anti-spam-policies"></a>Utiliser Exchange Online PowerShell ou Exchange Online Protection PowerShell pour configurer les stratégies anti-courrier indésirable
+## <a name="use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-anti-spam-policies"></a>Utiliser Exchange Online PowerShell ou Exchange Online Protection PowerShell autonome pour configurer les stratégies anti-courrier indésirable
 
 Les paramètres de stratégie anti-courrier indésirable suivants sont disponibles uniquement dans PowerShell :
 

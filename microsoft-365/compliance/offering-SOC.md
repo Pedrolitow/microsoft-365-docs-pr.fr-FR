@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: cc6f99dea89a5abc7f4c5bc07187c82d8999a064
-ms.sourcegitcommit: 8a15038a6ac16f41f6b90af52e367f888104cec9
+ms.openlocfilehash: ec4bd2e3244add3b14d614c308fea736c6ceccb6
+ms.sourcegitcommit: daad5f2f1994a812c2b9c78e7dd148d10c51f61d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44156879"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "44254297"
 ---
 # <a name="service-organization-controls-soc"></a>Service Organization Controls (SOC)
 
@@ -48,30 +48,30 @@ Microsoft a obtenu les rapports SOC 1 Type 2, SOC 2 Type 2 et SOC 3. La dis
 ### <a name="covered-services-for-soc-1-and-soc-2"></a>Les services couverts pour SOC 1 et SOC 2 incluent :
 
 - [Azure, Azure Gouvernement et Azure Allemagne](https://aka.ms/AzureCompliance)
-- Sécurité de l’application cloud
+- Microsoft Cloud App Security
 - [Dynamics 365 et Dynamics 365 Service Public](https://aka.ms/d365-compliance-list)
-- Graph
+- Microsoft Graph
 - Intune
 - Bureau géré Microsoft
-- Service Cloud Microsoft Flow, soit en service autonome, soit inclus dans un plan ou une suite Office 365 ou Dynamics 365
+- Service Cloud Power Automate (anciennement Microsoft Flow), soit en service autonome, soit inclus dans un plan ou une suite Office 365 ou Dynamics 365
 - [Office 365, Office 365 U.S. Government, Office 365 U.S. Government Defense](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
 - Service Cloud PowerApps, soit en service autonome, soit inclus dans un plan ou une suite Office 365 ou Dynamics 365
 - Service Cloud Power BI soit en service autonome, soit inclus dans un plan ou une suite Office 365
-- Flux
+- Microsoft Stream
 - Azure DevOps Services
 
 ### <a name="covered-services-for-soc-3"></a>Les services couverts pour SOC 3 incluent :
 
 - [Azure, Azure Gouvernement et Azure Allemagne](https://aka.ms/AzureCompliance)
-- Sécurité de l’application cloud
-- Graph
+- Microsoft Cloud App Security
+- Microsoft Graph
 - Intune
 - Bureau géré Microsoft
-- Service Cloud Microsoft Flow, soit en service autonome, soit inclus dans un plan ou une suite Office 365 ou Dynamics 365
+- Service Cloud Power Automate (anciennement Microsoft Flow), soit en service autonome, soit inclus dans un plan ou une suite Office 365 ou Dynamics 365
 - Service Cloud PowerApps, soit en service autonome, soit inclus dans un plan ou une suite Office 365 ou Dynamics 365
 - [Office 365, Office 365 U.S. Government, Office 365 U.S. Government Defense](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
 - Power BI
-- Flux
+- Microsoft Stream
 
 ## <a name="audits-reports-and-certificates"></a>Audits, rapports et certificats
 
@@ -79,7 +79,7 @@ Microsoft a obtenu les rapports SOC 1 Type 2, SOC 2 Type 2 et SOC 3. La dis
 
 Les services de cloud computing Microsoft sont audités au moins une fois par an au regard des normes SOC 1 (SSAE18, ISAE 3402), SOC 2 (AT Section 101) et SOC 3.
 
-#### <a name="azure-dynamics-365-cloud-app-security-flow-graph-intune-power-bi-powerapps-stream-and-microsoft-datacenters"></a>Azure, Dynamics 365, Cloud App Security, Flow, Graph, Intune, Power BI, PowerApps, Stream et datacenters Microsoft
+#### <a name="azure-dynamics-365-microsoft-cloud-app-security-flow-microsoft-graph-intune-power-bi-powerapps-microsoft-stream-and-microsoft-datacenters"></a>Azure, Dynamics 365, Microsoft Cloud App Security, Flow, Microsoft Graph, Intune, Power BI, PowerApps, Microsoft Stream et les centres de données Microsoft
 
 - [Rapport Azure + Dynamics 365 et Azure + Dynamics 365 Government SOC 1 Type 2](https://aka.ms/azuresoc1auditreport)
 - [Rapport Azure + Dynamics 365 et Azure + Dynamics 365 Government SOC 2 Type 2](https://aka.ms/azuresoc2auditreport)
@@ -107,7 +107,7 @@ Les rapports permettent à vos auditeurs de comparer les services Entreprise Cl
 
 **À quelle fréquence des rapports Azure SOC sont-ils générés ?**
 
-Les rapports SOC relatifs à Azure, Cloud App Security, Flow, Graph, Intune, Power BI, PowerApps, Stream et aux centres de données Microsoft reposent sur une période de 12 mois glissants (période d’audit) avec de nouveaux rapports émis chaque semestre (les périodes se terminant le 31 mars et le 30 septembre). Les lettres de crédit sont émises en janvier pour couvrir la période du 01/10 au 31/12 et en juillet pour couvrir la période de 01/04 au 30/06. Les clients peuvent [télécharger](https://aka.ms/stp) les derniers rapports sur le Service Trust Portal.
+Les rapports SOC relatifs à Azure, Microsoft Cloud App Security, Flow, Microsoft Graph, Intune, Power BI, PowerApps, Microsoft Stream et aux centres de données Microsoft reposent sur une période de 12 mois glissants (période d’audit) avec de nouveaux rapports émis chaque semestre (périodes se terminant le 31 mars et le 30 septembre). Les lettres de crédit sont émises en janvier pour couvrir la période du 01/10 au 31/12 et en juillet pour couvrir la période de 01/04 au 30/06. Les clients peuvent [télécharger](https://aka.ms/stp) les derniers rapports sur le Service Trust Portal.
 
 **Dois-je réaliser mon propre audit des centres de données Microsoft ?**
 

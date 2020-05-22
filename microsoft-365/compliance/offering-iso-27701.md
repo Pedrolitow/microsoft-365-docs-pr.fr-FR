@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: e6d28d3095f0a08aa7c2bf66df3b32b2dc7bec86
-ms.sourcegitcommit: b6ab845d64e2801051d249de09ad5059809b649a
+ms.openlocfilehash: 8a4f59a817e8ddd38ee8132e7028a3357d15d578
+ms.sourcegitcommit: daad5f2f1994a812c2b9c78e7dd148d10c51f61d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42222016"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "44254167"
 ---
 # <a name="isoiec-27701-privacy-information-management-system-pims"></a>ISO/CEI 27701 Système de gestion de l'information sur la protection de la vie privée (SGIP)
 
@@ -51,7 +51,7 @@ Il est important de reconnaître qu’une certification officielle RGPD nécessi
 
 Les organisations modernes opèrent dans le cadre de transferts de données complexes auprès d’un réseau de partenaires commerciaux, notamment d’organisations de partenaires, de co-contrôleurs, de processeurs tels que des fournisseurs Cloud et de sous-processeurs, tels que les fournisseurs qui prennent en charge ces mêmes processeurs. Le non-respect des réglementations dans une partie de ce réseau peut entraîner des problèmes de conformité en cascade dans la chaîne d’approvisionnement. Il s’agit de l’endroit où une vérification de la conformité peut être précieuse au-delà des conditions contractuelles entre ces organisations. Étant donné que l’économie globale impose que la plupart de ces organisations soient réparties dans le monde entier, il est possible d’utiliser une norme internationale à partir de l’ISO pour gérer la conformité au sein du réseau.
 
-Cette dépendance à l'égard de la conformité accroît l'importance de la certification à la norme. Bien que toutes les entreprises et organisations n'aient pas besoin d'obtenir une telle certification, la plupart d'entre elles bénéficient de partenaires et de fournisseurs, notamment lorsque des volumes sensibles ou élevés sont concernés par le traitement des données.
+Cette dépendance à l'égard de la conformité accroît l'importance de la certification à la norme. Bien que toutes les entreprises et organisations n’aient pas besoin d’obtenir une telle certification, la plupart d’entre elles en bénéficient grâce à des partenaires et fournisseurs, notamment lorsque des volumes sensibles ou élevés sont concernés par le traitement des données.
 
 ## <a name="building-blocks-of-the-standard"></a>Blocs de construction de la norme
 
@@ -65,12 +65,32 @@ Points clés sur la norme ISO/IEC 27001 et SGIP :
 
 ## <a name="what-should-your-organization-do-with-pims"></a>Que doit faire votre organisation avec le SGIP ?
 
-Quelle que soit la taille de votre organisation, qu’il s’agisse d’un contrôleur ou d’un processeur, votre organisation doit envisager d’effectuer une certification, soit pour votre organisation, soit auprès d’un sous-traitants ou d’un fournisseur en fonction des besoins de votre entreprise. Cela s’applique particulièrement aux processeurs, sous-processeurs et co-contrôleurs qui traitent des volumes sensibles ou importants de données personnelles. Dans tous les cas, votre organisation devrait évaluer ses besoins opérationnels pour déterminer si la certification de ses propres produits et services est appropriée.
+Quelle que soit la taille de votre organisation, qu’il s’agisse d’un contrôleur ou d’un processeur, votre organisation doit envisager d’effectuer une certification, soit pour votre organisation, soit auprès d’un sous-traitants ou d’un fournisseur en fonction des besoins de votre entreprise. Cela s’applique particulièrement aux processeurs, sous-processeurs et co-contrôleurs qui traitent des volumes sensibles ou importants de données personnelles. Dans tous les cas, votre organisation doit évaluer ses besoins opérationnels pour déterminer si la certification de ses propres produits et services est appropriée.
+
+## <a name="microsoft-in-scope-cloud-services"></a>Services Cloud Microsoft concernés
+
+- Azure, Azure Gouvernement et Azure Allemagne
+- Azure DevOps Services
+- Microsoft Cloud App Security
+- Dynamics 365, Dynamics 365 Gouvernement et Dynamics 365 Allemagne
+- Microsoft Graph
+- Microsoft Healthcare Bot
+- Intune
+- Bureau géré Microsoft
+- Power Automate (anciennement Microsoft Flow) 
+- PowerApps
+- Power BI
+- Power BI intégré
+- Power Virtual Agents
+- Microsoft Stream
+- Spécialistes des menaces Microsoft
+- Windows Defender Protection avancée contre les menaces
+
 
 ## <a name="audits-reports-and-certificates"></a>Audits, rapports et certificats
 
-- [Certification d’Azure ISO/IEC 27701](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuideV3?command=Download&downloadType=Document&downloadId=c0431b3f-7716-4332-9c26-44b58174bdaf&tab=7027ead0-3d6b-11e9-b9e1-290b1eb4cdeb&docTab=7027ead0-3d6b-11e9-b9e1-290b1eb4cdeb_ISO_Reports)
-- [Rapport d’évaluation d’Azure ISO/CEI 27701](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuideV3?command=Download&downloadType=Document&downloadId=1abbb81e-f4ca-4436-bbdb-b196a672efda&tab=7027ead0-3d6b-11e9-b9e1-290b1eb4cdeb&docTab=7027ead0-3d6b-11e9-b9e1-290b1eb4cdeb_ISO_Reports)
+- [Azure, Dynamics 365 et services en ligne : certification ISO27701](https://aka.ms/azureiso27701cert)
+- [Azure, Dynamics 365 et services en ligne : rapport d’évaluation ISO27701](https://aka.ms/azureiso27701report)
 
 ## <a name="use-microsoft-compliance-score-to-assess-your-risk"></a>Utilisez le score de conformité Microsoft pour évaluer vos risques
 

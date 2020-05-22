@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Cohasset Associates a validé que lorsque Exchange Online et le centre de sécurité et conformité sont configurés comme recommandé, ils répondent aux exigences de stockage pertinentes de règle CFTC 1.31(c)-(d), FINRA règle 4511 et SEC règle 17 a-4. Vous pouvez télécharger l’évaluation.
-ms.openlocfilehash: d2624dbc230bb0fb714ab1a5a66b91e70d301a9c
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 4d494c519576ed86ed56a331a3440d9237270e33
+ms.sourcegitcommit: 252b1d1d8ae735b99bf46e27c08353afc330aef3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43626420"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "44231837"
 ---
 # <a name="use-exchange-online-and-the-security--compliance-center-to-comply-with-sec-rule-17a-4"></a>Utiliser Exchange Online et le centre de sécurité et conformité pour se conformer à la règle SEC 17a-4
 
@@ -65,7 +65,7 @@ Le verrouillage de conservation peut vous aider à répondre aux exigences régl
 
 ## <a name="how-to-set-up-preservation-lock"></a>Comment configurer le verrouillage de conservation
 
-Vous pouvez verrouiller une stratégie de rétention à l’aide de PowerShell. Pour plus d’informations, voir [Verrouillage d’une stratégie de rétention](retention-policies.md#locking-a-retention-policy).
+Vous pouvez verrouiller une stratégie de rétention à l’aide de PowerShell. Pour plus d’informations, voir [Utiliser le verrouillage de conservation pour se conformer aux exigences réglementaires](retention-policies.md#use-preservation-lock-to-comply-with-regulatory-requirements).
 
 ## <a name="known-limitations"></a>Limitations connues
 
