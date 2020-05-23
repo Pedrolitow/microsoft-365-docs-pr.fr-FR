@@ -15,12 +15,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Vous pouvez désormais appliquer des stratégies DLP aux conversations et canaux Microsoft Teams. Lisez cet article pour en savoir plus sur son fonctionnement.
-ms.openlocfilehash: 290e1e7a7c3fd395c1f7e1739b08eba64c8d2d8d
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 2e65800f747b4e6eae4e19e9da92ad2589ac0d4e
+ms.sourcegitcommit: 8d9509e617ede7cc5ba933c54fb9300d2d1c6344
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43633053"
+ms.lasthandoff: 05/22/2020
+ms.locfileid: "44347853"
 ---
 # <a name="data-loss-prevention-and-microsoft-teams"></a>Protection contre la perte de données et Microsoft teams
 
@@ -31,10 +31,8 @@ Pour en savoir plus sur les conditions d’octroi de licences, consultez [Consei
 
 ## <a name="overview-of-dlp-for-microsoft-teams"></a>Vue d’ensemble de DLP pour Microsoft teams
 
-Récemment, les fonctionnalités de [protection contre la perte de données](data-loss-prevention-policies.md) (DLP) ont été étendues de façon à inclure la conversation Microsoft teams et les messages de canal.
+Récemment, les fonctionnalités de [protection contre la perte de données](data-loss-prevention-policies.md) (DLP) ont été étendues pour inclure la conversation de Microsoft teams et les messages de canal, **y compris les messages de canal privé**.
 
-> [!NOTE]
-> DLP n’est pas pris en charge pour le moment pour les messages de canal privé.
 
 Si votre organisation dispose de DLP, vous pouvez maintenant définir des stratégies qui empêchent les utilisateurs de partager des informations sensibles dans un canal Microsoft teams ou une session de conversation. Voici quelques exemples illustrant le fonctionnement de cette protection :
 
@@ -67,9 +65,9 @@ Le lien **qu’est-ce que c’est ?** ouvre un [article](data-loss-prevention-p
 
 Pour effectuer cette tâche, vous devez disposer d’un rôle disposant d’autorisations pour modifier les stratégies DLP. Pour en savoir plus, voir [Autorisations](data-loss-prevention-policies.md#permissions).
 
-1. Accédez au centre de sécurité & conformité ([https://protection.office.com](https://protection.office.com)) et connectez-vous.
+1. Accédez au centre de sécurité & conformité ( [https://protection.office.com](https://protection.office.com) ) et connectez-vous.
 
-2. Choisissez**stratégie**de **protection contre** > la perte de données.
+2. Choisissez stratégie de **protection contre la perte de données**  >  **Policy**.
 
 3. Sélectionnez une stratégie, puis en regard de **paramètres de stratégie**, sélectionnez **modifier**.
 
@@ -87,9 +85,9 @@ Prévoyez environ une heure pour que vos modifications fonctionnent dans votre c
 
 Pour effectuer cette tâche, vous devez disposer d’un rôle disposant d’autorisations pour modifier les stratégies DLP. Pour en savoir plus, voir [Autorisations](data-loss-prevention-policies.md#permissions).
 
-1. Accédez au centre de sécurité & conformité ([https://protection.office.com](https://protection.office.com)) et connectez-vous.
+1. Accédez au centre de sécurité & conformité ( [https://protection.office.com](https://protection.office.com) ) et connectez-vous.
 
-2. Choisissez**stratégie**de **protection contre** > la perte de données.
+2. Choisissez stratégie de **protection contre la perte de données**  >  **Policy**.
 
 3. Sélectionnez une stratégie, puis examinez les valeurs figurant dans la zone **emplacements**. Si vous voyez la **conversation teams et les messages de canal**, tous sont définis. Si ce n’est pas le cas, cliquez sur **modifier**.<br/>![Emplacements pour la stratégie existante](../media/dlp-teams-editexistingpolicy.png)<br/>
 
@@ -105,9 +103,9 @@ Prévoyez environ une heure pour que vos modifications fonctionnent dans votre c
 
 Pour effectuer cette tâche, vous devez disposer d’un rôle disposant d’autorisations pour modifier les stratégies DLP. Pour en savoir plus, voir [Autorisations](data-loss-prevention-policies.md#permissions).
 
-1. Accédez au centre de sécurité & conformité ([https://protection.office.com](https://protection.office.com)) et connectez-vous.
+1. Accédez au centre de sécurité & conformité ( [https://protection.office.com](https://protection.office.com) ) et connectez-vous.
 
-2. Choisir une**stratégie** > de **protection contre** > la perte**de données + créer une stratégie**.
+2. Choisir une stratégie de **protection contre la perte**  >  **Policy**  >  **de données + créer une stratégie**.
 
 3. Choisissez un [modèle](data-loss-prevention-policies.md#dlp-policy-templates), puis cliquez sur **suivant**.<br/>Dans notre exemple, nous avons choisi le modèle de données des informations d’identification personnelle aux États-Unis.<br/>![Modèle de confidentialité pour la stratégie DLP](../media/dlp-teams-createnewpolicy-template.png)<br/>
 

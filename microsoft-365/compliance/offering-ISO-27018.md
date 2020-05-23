@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 8c04362747a3e4767defcf746e1158849c00725b
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: a5e5879bf176c7be72ead3c80c91934d0a1c5a01
+ms.sourcegitcommit: daad5f2f1994a812c2b9c78e7dd148d10c51f61d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44065759"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "44254413"
 ---
 # <a name="isoiec-27018-code-of-practice-for-protecting-personal-data-in-the-cloud"></a>Code de pratique ISO/IEC 27018 pour la protection des données personnelles dans le cloud
 
@@ -43,22 +43,24 @@ En respectant les normes d’ISO/IEC 27001 et le code de pratique incorporé da
 ## <a name="microsoft-in-scope-cloud-services"></a>Services Cloud Microsoft concernés
 
 - [Azure, Azure Gouvernement et Azure Allemagne](https://aka.ms/AzureCompliance)
-- Sécurité de l’application cloud
+- Azure DevOps Services
+- Microsoft Cloud App Security
+- Dynamics 365, Dynamics 365 et Dynamics 365 Allemagne
 - Services professionnels Microsoft : Premier et sur site pour Azure, Dynamics 365, Intune et pour les clients des entreprises moyennes et grandes de Microsoft 365 Entreprise
-- [Dynamics 365 et Dynamics 365 Service Public](https://aka.ms/d365-compliance-list)
-- Genomics
-- Graph
-- Health Bot
+- Microsoft Graph
+- Microsoft Healthcare Bot
 - Intune
 - Bureau géré Microsoft
-- Service Cloud Microsoft Flow, soit en service autonome, soit inclus dans un plan ou une suite Office 365 ou Dynamics 365
+- Power Automate (anciennement Microsoft Flow) : service Cloud soit en service autonome, soit inclus dans un plan ou une suite Office 365 ou Dynamics 365
 - [Office 365, Office 365 U.S. Government, Office 365 U.S. Government Defense](https://go.microsoft.com/fwlink/p/?linkid=2077751)
 - Office 365 Allemagne
 - OMS Service Map
-- Service Cloud PowerApps, soit en service autonome, soit inclus dans un plan ou une suite Office 365 ou Dynamics 365
-- Service Cloud Power BI soit en service autonome, soit inclus dans un plan ou une suite Office 365
-- Flux
-- Azure DevOps Services
+- Service Cloud PowerApps : soit en service autonome, soit inclus dans un plan ou une suite Office 365 ou Dynamics 365
+- Service Cloud Power BI : soit en service autonome, soit inclus dans un plan ou une suite Office 365
+- Power BI intégré
+- Power Virtual Agents
+- Spécialistes des menaces Microsoft
+- Microsoft Stream
 - Windows Defender ATP – Détection et réponse des point de terminaison, Vérification automatique et correction, Degré de sécurisation
 
 ## <a name="audits-reports-and-certificates"></a>Audits, rapports et certificats
@@ -69,30 +71,18 @@ Les services cloud Microsoft et les services de support technique sont audités
 
 ### <a name="audits-and-reports"></a>Audits et rapports
 
-- [Azure, Intune, Bureau géré Microsoft, Power BI, Cloud App Security, Microsoft PowerApps, Microsoft Flow, Microsoft Graph, Microsoft Genomics et Microsoft Datacenter – Certificat ISO 27001 et 27018](https://go.microsoft.com/fwlink/p/?linkid=2078016)
-- [Azure, Intune, Bureau géré Microsoft, Power BI, Cloud App Security, Microsoft PowerApps, Microsoft Flow, Microsoft Graph, Microsoft Genomics et Microsoft Datacenter – Rapport d'évaluation d'audit ISO 27001 et 27018](https://go.microsoft.com/fwlink/p/?linkid=2078020)
-- [Azure, Intune, Bureau géré Microsoft, Power BI, Cloud App Security, Microsoft PowerApps, Microsoft Flow, Microsoft Graph, Microsoft Genomics et Microsoft Datacenter – Certificat ISO 27001 et 27018, Déclaration d’applicabilité 2017 (SOA)](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=47d89200-b24b-491d-b657-7c523ddfb6f9&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_ISO_Reports)
-- [Azure – ISO 27018 Allemagne – Code de pratique pour la protection des données personnelles dans le cloud – Certificat](https://servicetrust.microsoft.com/Documents/ComplianceReports?downloadDocument=1&documentId=6a0dab80-8382-4af6-980c-ed2ed9a341c6)
+- [Azure, Dynamics 365 et services en ligne : certificat ISO27018](https://aka.ms/azureiso27018cert)
+- [Azure, Dynamics 365 et services en ligne : rapport d’évaluation ISO27018](https://aka.ms/azureiso27001report)
+- [Azure Allemagne : code de pratique ISO 27018 pour la protection des données personnelles dans le Certificat Cloud](https://servicetrust.microsoft.com/Documents/ComplianceReports?downloadDocument=1&documentId=6a0dab80-8382-4af6-980c-ed2ed9a341c6)
 
 ### <a name="office-365"></a>Office 365
 
-- [Office 365 – ISO 27001, ISO 27018 et ISO 27017 Rapport d'évaluation d'audit](https://aka.ms/o365isoreport)
+- [Office 365 : rapport d’évaluation d’audit ISO 27001, 27018 et 27017](https://aka.ms/o365isoreport)
 - [Rapport d’évaluation d’audit ISO 27018 Yammer](https://aka.ms/YammerISO27018Auditreport)
-
-### <a name="dynamics-365"></a>Dynamics 365
-
-- [Rapport d'évaluation d’audit Dynamics 365 ISO 27018](https://aka.ms/dynamics365iso27018auditreport)
-- [Rapport d’évaluation d’audit Dynamics 365 for Marketing ISO 27018](https://aka.ms/dynamics365Marketingiso27018auditreport)
-- [Rapport d'évaluation d'audit Dynamics 365 Parature ISO 27018](https://aka.ms/dynamics365Paratureiso27018auditreport)
 
 ### <a name="azure-devops-services"></a>Azure DevOps Services
 
-- [Azure DevOps Services ISO 27018 Certificat PII 665918](https://go.microsoft.com/fwlink/p/?linkid=2062252)
-
-### <a name="windows-defender-atp"></a>Windows Defender ATP
-
-- [Windows Defender ATP – Détection et réponse des point de terminaison, Vérification automatique et correction, Degré de sécurisation – Certificat ISO 27018](https://aka.ms/windowsdefenderatpiso27018certificate)
-- [Windows Defender ATP – Détection et réponse des point de terminaison, Vérification automatique et correction, Degré de sécurisation – Rapport d’audit d’évaluation certificat ISO 27001 et 27018](https://aka.ms/WindowsDefenderATPISO27001AuditReport)
+- [Azure DevOps Services : Certificat PII 665918 ISO27018](https://go.microsoft.com/fwlink/p/?linkid=2062252)
 
 ## <a name="frequently-asked-questions"></a>Foire aux questions
 
@@ -105,7 +95,7 @@ Ce code de pratique s’applique aux fournisseurs de solutions Cloud qui traiten
 Dans le contexte d’ISO/IEC 27018 :
 
 - Les « responsables de traitement » vérifient la collection, l’exploitation, le traitement et l’utilisation d’informations personnelles. Ils incluent ceux qui se chargent du contrôle au nom d’une autre société.
-- Les « processeurs » traitent les informations au nom des contrôleurs. Ils ne prennent pas de décisions quant à la manière dont les informations sont utilisées ou quant aux fins du traitement. Microsoft, en tant que votre fournisseur, est un processeur d’informations dans la fourniture de ses services Enterprise Cloud.
+- Les « processeurs » traitent les informations au nom des contrôleurs. Ils ne prennent pas de décisions quant à la manière dont les informations sont utilisées ou quant aux fins du traitement. Microsoft, en tant que votre fournisseur, est un processeur d’informations dans la fourniture de ses services Cloud.
 
 **Où puis-je consulter les informations de conformité Microsoft concernant ISO/IEC 27018 ?**
 

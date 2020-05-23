@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Utilisez l’action d’audit de boîte aux lettres MailItemsAccessed pour effectuer des enquêtes légales sur des comptes d'utilisateur compromis.
-ms.openlocfilehash: 20c57f1d11af8fded15cc2fdf280414f7172ffd7
-ms.sourcegitcommit: 22e9f54d0d3ead2be91a38d49325308c70f43f90
+ms.openlocfilehash: cd76a49e1f7b6e52d2a21e74162781771a8552a1
+ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "44262577"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44327648"
 ---
 # <a name="use-advanced-audit-to-investigate-compromised-accounts"></a>Utiliser l’audit avancé pour analyser des comptes compromis
 
@@ -37,13 +37,13 @@ L’action d’audit de boîte aux lettres MailItemsAccessed englobe tous les pr
 
 ### <a name="auditing-sync-access"></a>Audit de l’accès à la synchronisation
 
-Les opérations de synchronisation sont uniquement enregistrées lorsqu’une boîte aux lettres est consultée par une version de bureau du client Outlook pour Windows ou Mac. Pendant l’opération de synchronisation, ces clients téléchargent généralement un grand nombre de courriers du cloud vers un ordinateur local. Le volume d’audit pour les opérations de synchronisation est important. Par conséquent, au lieu de générer un enregistrement d’audit par courrier synchronisé, un événement d’audit est tout simplement créé pour le dossier de courrier contenant les éléments qui ont été synchronisés. Ainsi, l’hypothèse est que *tous* les éléments de courrier présents dans le dossier synchronisé sont corrompus. Le type d’accès est enregistré dans le champ OperationsProperties de l’enregistrement d’audit. 
+Les opérations de synchronisation sont uniquement enregistrées lorsqu’une boîte aux lettres est consultée par une version de bureau du client Outlook pour Windows ou Mac. Pendant l’opération de synchronisation, ces clients téléchargent généralement un grand nombre de courriers du cloud vers un ordinateur local. Le volume d’audit pour les opérations de synchronisation est important. Par conséquent, au lieu de générer un enregistrement d’audit par courrier synchronisé, un événement d’audit est tout simplement créé pour le dossier de courrier contenant les éléments qui ont été synchronisés. Ainsi, l’hypothèse est que *tous* les éléments de courrier présents dans le dossier synchronisé sont corrompus. Le type d’accès est enregistré dans le champ OperationProperties de l’enregistrement d’audit. 
 
 Pour consulter un exemple d’affichage du type d’accès à la synchronisation dans un enregistrement d’audit, voir l’étape 2 de la section [Utiliser les enregistrements d’audit MailItemsAccessed pour des investigations criminalistiques](#use-mailitemsaccessed-audit-records-for-forensic-investigations).
 
 ### <a name="auditing-bind-access"></a>Audit de l’accès liaison
 
-Une opération de liaison consiste en un accès individuel à un message électronique. Pour l’accès liaison, l’ID de message internet des messages individuels est enregistré dans l’enregistrement d’audit. L’action d’audit MailItemsAccessed enregistre les opérations de liaison, puis les rassemble dans un seul enregistrement d’audit. Toutes les opérations de liaison effectuées au cours d’un intervalle de deux minutes sont regroupées dans un seul enregistrement d’audit dans le champ Dossiers de la propriété AuditData. Les messages consultés sont identifiés par leur ID de message Internet. Le nombre d’opérations de liaison regroupées dans l’enregistrement s’affiche dans le champ OperationCount de la propriété AuditData.
+Une opération de liaison consiste en un accès individuel à un message électronique. Pour l’accès liaison, l’InternetMessageId des messages individuels est enregistré dans l’enregistrement d’audit. L’action d’audit MailItemsAccessed enregistre les opérations de liaison, puis les rassemble dans un seul enregistrement d’audit. Toutes les opérations de liaison effectuées au cours d’un intervalle de deux minutes sont regroupées dans un seul enregistrement d’audit dans le champ Dossiers de la propriété AuditData. Les messages consultés sont identifiés par leur InternetMessageId. Le nombre d’opérations de liaison regroupées dans l’enregistrement s’affiche dans le champ OperationCount de la propriété AuditData.
 
 Pour consulter un exemple d’affichage du type d’accès à la liaison dans un enregistrement d’audit, voir l’étape 4 de la section [Utiliser les enregistrements d’audit MailItemsAccessed pour des investigations criminalistiques](#use-mailitemsaccessed-audit-records-for-forensic-investigations).
 
@@ -152,13 +152,13 @@ Voici les étapes à suivre pour utiliser les enregistrements d’audit MailItem
  
    Vous pouvez utiliser les données d’audit pour les opérations de liaison de deux façon différentes :
 
-     - Accéder ou recueillir tous les courriers électroniques auxquels la personne malveillante a eu accès en utilisant l’ID de message Internet pour les retrouver, puis vérifiez si l’un de ces messages contient des informations sensibles.
+     - Accéder ou recueillir tous les courriers électroniques auxquels la personne malveillante a eu accès en utilisant l’InternetMessageId pour les retrouver, puis vérifiez si l’un de ces messages contient des informations sensibles.
 
-     - Utilisez l’ID de message Internet pour rechercher des enregistrements d’audit relatifs à un groupe de courriers électroniques potentiellement sensibles. Ceci est utile si un petit nombre de message vous préoccupe.
+     - Utilisez l’InternetMessageId pour rechercher des enregistrements d’audit relatifs à un groupe de courriers électroniques potentiellement sensibles. Ceci est utile si un petit nombre de message vous préoccupe.
 
 ## <a name="filtering-of-duplicate-audit-records"></a>Filtrage des enregistrements d’audit dupliqués
 
-Les enregistrements d’audit dupliqués pour les mêmes opérations de liaison qui se produisent au cours de la même heure sont filtrés pour supprimer les bruits d’audit. Les opérations de synchronisation sont également filtrées à intervalles d’une heure. L’exception à ce processus de déduplication se produit si, pour le même ID de message Internet, l'une des propriétés décrites dans le tableau suivant est différente. Si l’une de ces propriétés est différente dans une opération de duplication, un nouvel enregistrement d’audit est généré. Ce processus est décrit en détail dans la section suivante.
+Les enregistrements d’audit dupliqués pour les mêmes opérations de liaison qui se produisent au cours de la même heure sont filtrés pour supprimer les bruits d’audit. Les opérations de synchronisation sont également filtrées à intervalles d’une heure. L’exception à ce processus de déduplication se produit si, pour le même InternetMessageId, l'une des propriétés décrites dans le tableau suivant est différente. Si l’une de ces propriétés est différente dans une opération de duplication, un nouvel enregistrement d’audit est généré. Ce processus est décrit en détail dans la section suivante.
 
 | Propriété| Description|
 |:--------|:---------|

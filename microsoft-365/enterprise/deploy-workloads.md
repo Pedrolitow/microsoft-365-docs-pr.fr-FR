@@ -1,8 +1,8 @@
 ---
-title: Scénarios et charges de travail Microsoft 365 Entreprise
+title: Microsoft 365 pour les charges de travail d’entreprise
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 10/21/2019
+ms.date: 05/15/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -12,14 +12,14 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Intégrez les utilisateurs de votre organisation aux charges de travail productivité de Microsoft 365 Entreprise.
-ms.openlocfilehash: 7767f01d87029c7fc641a65442a5171b0d03eab5
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: 0e1658655c4b97a7e571d1ac09c4b2edcc6c82ce
+ms.sourcegitcommit: 47c45bd81afdc4867ff2980ced3df31dbad92b84
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44066214"
+ms.lasthandoff: 05/16/2020
+ms.locfileid: "44268278"
 ---
-# <a name="microsoft-365-for-enterprise-workloads-and-scenarios"></a>Scénarios et charges de travail Microsoft 365 Entreprise
+# <a name="microsoft-365-for-enterprise-workloads"></a>Microsoft 365 pour les charges de travail d’entreprise
 
 Pour bénéficier des avantages de la créativité et du travail d’équipe de Microsoft 365 Entreprise, déployez sur votre infrastructure de base les charges de travail suivantes :
 
@@ -29,31 +29,13 @@ Pour bénéficier des avantages de la créativité et du travail d’équipe de 
 
 Pour disposer d’une feuille de route générale concernant la migration de votre organisation toute entière vers Microsoft 365 Entreprise, incluant les produits clients Microsoft Office, les produits Office Server locaux et les appareils basés sur Microsoft Windows, voir l’article [migration](migration-microsoft-365-enterprise-workload.md).
 
-Les scénarios utilisent des fonctionnalités et services de Microsoft 365 Entreprise de façon intégrée pour répondre à des besoins métier. 
+Les charges de travail décrits dans le guide de déploiement global de Microsoft 365 pour entreprise sont les suivants :
 
-Il peut être nécessaire de s’assurer que vos employés peuvent travailler de manière efficace et sécurisée lorsqu’ils ne sont pas connectés directement à votre intranet. Pour plus d’informations sur la feuille de route de déploiement des éléments d’infrastructure et la favorisation de l’adoption par les utilisateurs distants des charges de travail clés, telles que Teams et Exchange Online, consultez le scénario [Confiez des responsabilités aux travailleurs à distance](empower-people-to-work-remotely.md).
-
-Un autre de ces besoins est la protection des données hautement réglementées stockées dans Microsoft 365. Les données hautement réglementées incluent les biens numériques suivants :
-
-- sujettes à des réglementations régionales ;
-- les plus précieuses de votre organisation comme les secrets commerciaux, les informations sur les ressources humaines ou financières et la stratégie de l’organisation.
-
-Pour protéger ces données contre les menaces internes et externes, voir :
-
-- [Teams pour les données hautement réglementées](secure-teams-highly-regulated-data-scenario.md)
-- [Sites SharePoint pour les données hautement réglementées](teams-sharepoint-online-sites-highly-regulated-data.md). 
-
-Ces scénarios vous guident dans la configuration d’une équipe Microsoft Teams ou d’un site SharePoint afin de stocker en toute sécurité vos données les plus précieuses.
-
-Les charges de travail et les scénarios décrits dans le guide de déploiement global de Microsoft 365 Entreprise sont les suivants :
-
-![Les charges de travail et les scénarios décrits dans le guide de déploiement global de Microsoft 365 Entreprise sont les suivants](media/deploy-workloads/m365-deploy-content-arch-workloads.png)
-
-Pour obtenir d’autres scénarios, reportez-vous à la [bibliothèque de productivité Microsoft 365](https://aka.ms/productivitylibrary)https://aka.ms/productivitylibrary). 
+![Les charges de travail décrits dans le guide de déploiement global de Microsoft 365 pour entreprise](../media/deploy-workloads/m365-deploy-content-arch-workloads.png)
 
 ## <a name="foundation-infrastructure-prerequisites"></a>Conditions préalables pour l’infrastructure de base
 
-*Idéalement *, vous devez déployer les charges de travail et les scénarios après avoir configuré toutes les phases de l’[infrastructure de base](deploy-foundation-infrastructure.md). Cela garantit que toutes les couches de base sous-jacentes sont en place pour offrir une intégration, une sécurité et une expérience optimale à vos utilisateurs ainsi qu’à leurs appareils.
+*Idéalement *, vous devez déployer les charges de travail après avoir configuré toutes les phases de l’[infrastructure de base](deploy-foundation-infrastructure.md). Cela garantit que toutes les couches de base sous-jacentes sont en place pour offrir une intégration, une sécurité et une expérience optimale à vos utilisateurs ainsi qu’à leurs appareils.
 
 | Phase | Résultat |
 |:-------|:-----|

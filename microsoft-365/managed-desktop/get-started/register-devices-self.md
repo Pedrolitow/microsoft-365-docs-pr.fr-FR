@@ -7,19 +7,19 @@ f1.keywords:
 - NOCSH
 ms.author: jaimeo
 ms.localizationpriority: medium
-ms.openlocfilehash: 1d4ca01e7b791dafc952b62a5f5dd59263b31546
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+ms.openlocfilehash: 8765d6ecd180d71d918a5feda8cd5089e7f561ee
+ms.sourcegitcommit: 8d9509e617ede7cc5ba933c54fb9300d2d1c6344
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42557552"
+ms.lasthandoff: 05/22/2020
+ms.locfileid: "44347818"
 ---
 # <a name="register-new-devices-yourself"></a>Inscrivez vous-même les nouveaux appareils
 
 Microsoft Managed Desktop peut fonctionner avec les nouveaux appareils ou vous pouvez réutiliser des appareils que vous avez peut-être déjà (ce qui vous obligera à les réimager). Vous pouvez enregistrer des appareils à l’aide de Microsoft Managed Desktop sur le portail Azure.
 
 > [!NOTE]
-> Vous travaillez avec un partenaire pour obtenir des appareils ? Si c’est le cas, vous n’avez pas à vous soucier de l’obtention des hachages matériels ; ils s’occupent de cela pour vous. Assurez-vous que votre partenaire établit une relation avec vous dans le [Centre de partenaires](https://partner.microsoft.com/dashboard) et qu’il inclut des privilèges d’administration délégués pour Azure Active Directory et Office 365. Votre partenaire peut en savoir plus sur [l’aide du centre de partenaires](https://docs.microsoft.com/partner-center/request-a-relationship-with-a-customer). Une fois que cette relation est établie, votre partenaire enregistrera simplement les appareils de votre part, aucune autre action n’est requise de votre part. Si vous souhaitez consulter les détails ou si votre partenaire a des questions, consultez les [étapes pour les partenaires d’inscription des appareils](register-devices-partner.md). Une fois les appareils enregistrés, vous pouvez procéder à la [vérification de l’image](#check-the-image) et à [la remise des périphériques](#deliver-the-device) à vos utilisateurs.
+> Vous travaillez avec un partenaire pour obtenir des appareils ? Si c’est le cas, vous n’avez pas à vous soucier de l’obtention des hachages matériels ; ils s’occupent de cela pour vous. Assurez-vous que votre partenaire établit une relation avec vous dans le [Centre de partenaires](https://partner.microsoft.com/dashboard). Votre partenaire peut en savoir plus sur [l’aide du centre de partenaires](https://docs.microsoft.com/partner-center/request-a-relationship-with-a-customer). Une fois que cette relation est établie, votre partenaire enregistrera simplement les appareils de votre part, aucune autre action n’est requise de votre part. Si vous souhaitez consulter les détails ou si votre partenaire a des questions, consultez les [étapes pour les partenaires d’inscription des appareils](register-devices-partner.md). Une fois les appareils enregistrés, vous pouvez procéder à la [vérification de l’image](#check-the-image) et à [la remise des périphériques](#deliver-the-device) à vos utilisateurs.
 
 ## <a name="prepare-to-register-brand-new-devices"></a>Préparation à l’enregistrement de nouveaux appareils
 
@@ -53,7 +53,7 @@ Microsoft Managed Desktop identifie chaque appareil de manière unique en réfé
 3. Générer`Save-Script -Name Get-MMDRegistrationInfo -Path <pathToUsb>`
 4. Activez l’appareil que vous enregistrez, mais *ne démarrez pas l’installation*. Si vous démarrez accidentellement le programme d’installation, vous devrez réinitialiser ou recréer l’image de l’appareil.
 5. Insérez le lecteur USB, puis appuyez sur MAJ + F10.
-6. Ouvrez une invite PowerShell avec des droits d’administration, puis `cd <pathToUsb>`exécutez.
+6. Ouvrez une invite PowerShell avec des droits d’administration, puis exécutez `cd <pathToUsb>` .
 7. Générer`Set-ExecutionPolicy -ExecutionPolicy Unrestricted`
 8. Générer`.\Get-MMDRegistrationInfo -OutputFile <path>\hardwarehash.csv`
 9. Supprimez le lecteur USB, puis arrêtez l’appareil en exécutant`shutdown -s -t 0`

@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Les stratégies de protection contre la perte de données (DLP) disponibles dans le Centre de sécurité &amp; conformité vous permettent d’identifier, de surveiller et de protéger automatiquement des informations sensibles dans Office 365.
-ms.openlocfilehash: 68e81a83242ef4a1a099760044b5ccaec5bd91b7
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 705c105853a67d4bb006efbfd0f3d6150f5e7181
+ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43630601"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44327702"
 ---
 # <a name="overview-of-data-loss-prevention"></a>Vue d’ensemble de la protection contre la perte de données
 <!-- this topic needs to be split into smaller, more coherent ones. It is confusing as it is. -->
@@ -289,7 +289,7 @@ En règle générale, les actions moins restrictives, telles que l’envoi de no
   
 ### <a name="match-accuracy"></a>Précision de correspondance
 
-Comme décrit ci-dessus, un type d’informations sensibles est défini et détecté en utilisant une combinaison de différents types de critères. En règle générale, un type d’informations sensibles est défini par plusieurs de ces combinaisons, appelés modèles. Un modèle qui nécessite moins de critères a une précision de correspondance (ou niveau de confiance) inférieure, alors qu’un modèle qui nécessite plus de critères a une précision de correspondance (ou niveau de confiance) supérieure. Pour en savoir plus sur les modèles et les niveaux de confiance réels utilisés par tous les types d’informations sensibles, consultez [Éléments recherchés par les types d’informations sensibles](what-the-sensitive-information-types-look-for.md).
+Comme décrit ci-dessus, un type d’informations sensibles est défini et détecté en utilisant une combinaison de différents types de critères. En règle générale, un type d’informations sensibles est défini par plusieurs de ces combinaisons, appelés modèles. Un modèle qui nécessite moins de critères a une précision de correspondance (ou niveau de confiance) inférieure, alors qu’un modèle qui nécessite plus de critères a une précision de correspondance (ou niveau de confiance) supérieure. Pour en savoir plus sur les modèles et les niveaux de confiance réels utilisés par chaque type d’informations sensibles, consultez [Définitions d’entités des types d’informations sensibles](sensitive-information-type-entity-definitions.md).
   
 Par exemple, le type d’informations sensibles Numéro de carte bancaire est défini par deux modèles :
   
@@ -332,7 +332,7 @@ Pour ces raisons, les conseils pour la création de règles avec des précisions
 Lorsque vous utilisez une [étiquette de rétention](labels.md) précédemment créée et publiée comme condition dans une stratégie DLP, vous devez tenir compte des éléments suivants :
 
 - Vous devez avoir déjà créé, publié et appliqué l’étiquette de rétention avant de tenter de l’utiliser en tant que condition dans une stratégie DLP.
-- La synchronisation d’étiquettes de rétention peut prendre jusqu’à une journée et il faut compter jusqu’à sept jours pour qu’elles s’appliquent automatiquement après leur création et leur publication. Voir le [Délai d’activation des étiquettes de rétention](labels.md#how-long-it-takes-for-retention-labels-to-take-effect) pour plus d’informations.
+- La synchronisation d’étiquettes de rétention peut prendre jusqu’à une journée et il faut compter jusqu’à sept jours pour qu’elles s’appliquent automatiquement après leur création et leur publication. Voir le [Délai d’activation des étiquettes de rétention](create-retention-labels.md#how-long-it-takes-for-retention-labels-to-take-effect) pour plus d’informations.
 - L’utilisation d’une étiquette de rétention dans une stratégie ***est prise en charge uniquement pour des éléments SharePoint Online et OneDrive Entreprise***.
 
 
@@ -504,9 +504,13 @@ Les membres de votre équipe de mise en conformité qui créeront des stratégie
 1. Créer un groupe dans Microsoft 365 et d’y ajouter des responsables de la mise en conformité.
     
 2. Créer un groupe de rôles sur la page **Autorisations** du Centre de sécurité et de conformité. 
+
+3. Lors de la création du groupe de rôles, utilisez la section **Choisir des rôles** pour ajouter le rôle suivant au groupe de rôles : **Gestion de la conformité DLP**.
     
-3. Ajouter le groupe Microsoft 365 au groupe de rôles.
-    
+4. Utilisez la section **Choisir des membres** pour ajouter le groupe Microsoft 365 que vous avez créé précédemment au groupe de rôles.
+
+Vous pouvez également créer un groupe de rôles avec des privilèges en affichage seul vers les stratégies DLP et les rapports DLP en accordant au rôle **Gestion de la conformité DLP en affichage seul**.
+
 Pour plus d’informations, voir [Give users access to the Office 365 Compliance Center](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
   
 Ces autorisations sont requises uniquement pour créer et appliquer une stratégie DLP. L’application d’une stratégie ne nécessite pas d’accès au contenu.
@@ -539,7 +543,7 @@ Toutefois, les rapports DLP doivent extraire des données de Microsoft 365, y c
     
 - [Contenu des modèles de stratégie DLP](what-the-dlp-policy-templates-include.md)
     
-- [Éléments recherchés par les types d’informations sensibles](what-the-sensitive-information-types-look-for.md)
+- [Définitions d’entités des types d’informations sensibles](sensitive-information-type-entity-definitions.md)
     
 - [Éléments recherchés par les fonctions DLP](what-the-dlp-functions-look-for.md)
     

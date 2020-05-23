@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: seo-marvel-apr2020
 description: Découvrez les diverses ressources que vous pouvez utiliser pour déployer Microsoft 365 pour entreprise dans votre organisation.
-ms.openlocfilehash: 0e588816cb2393af05b48900821d7aae92b6853d
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 42b193683a2e0c5efce73b62b00747b20baec05a
+ms.sourcegitcommit: 47c45bd81afdc4867ff2980ced3df31dbad92b84
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44031425"
+ms.lasthandoff: 05/16/2020
+ms.locfileid: "44268330"
 ---
 # <a name="deploy-microsoft-365-for-enterprise"></a>Déployer Microsoft 365 pour entreprise
 
@@ -55,7 +55,7 @@ Pour déployer Microsoft 365 pour entreprise vous-même, vous pouvez :
 
 - Déployez l’[infrastructure de base](deploy-foundation-infrastructure.md) requise pour l’intégration et la sécurité intégrées pour une gestion simplifiée, ce qui permet de vérifier plus facilement que le logiciel client est mis à jour avec les dernières améliorations en matière de productivité et de sécurité. 
  
-  L’infrastructure de base est organisée comme une série de phases numérotées se basant l’une sur l’autre et vers un environnement qui prend en charge des scénarios et des charges de travail Microsoft 365 pour entreprise. 
+  L’infrastructure de base est organisée comme une série de phases numérotées se basant l’une sur l’autre et vers un environnement qui prend en charge des charges de travail Microsoft 365 pour entreprise. 
 
   **Si vous êtes une entreprise de petite taille ou jeune**, suivez les phases selon vos besoins pour assembler votre infrastructure méthodiquement.
 
@@ -63,13 +63,13 @@ Pour déployer Microsoft 365 pour entreprise vous-même, vous pouvez :
 
   **Si vous êtes une organisation d’entreprise**, envisagez les phases comme des couches de l’infrastructure informatique, plutôt qu’une trajectoire définie et déterminez comment mieux travailler pour une adhérence finale à la configuration requise pour chaque couche au sein de votre organisation.
 
-- Déployer les[scénarios et charges de travail](deploy-workloads.md) de productivité clé en haut de votre infrastructure. Déverrouiller la créativité et le travail d’équipe dans votre organisation.
+- Déployer les[charges de travail](deploy-workloads.md) de productivité clé en haut de votre infrastructure. Déverrouiller la créativité et le travail d’équipe dans votre organisation.
 
-Voici la relation entre l’infrastructure de base et les charges de travail et les scénarios.
+Voici la relation entre l’infrastructure de base et les charges de travail.
 
-![Relation entre l’infrastructure de base et les charges de travail et les scénarios](../media/deploy-microsoft-365-enterprise/m365-deploy-content-arch.png)
+![Relation entre l’infrastructure de base et les charges de travail](../media/deploy-microsoft-365-enterprise/m365-deploy-content-arch.png)
 
-Scénarios et charges de travail fonctionnent sur la partie supérieure de l’infrastructure de base. Toutefois, pas besoin que toutes les phases de l’infrastructure de base soient prédéfinies pour commencer à utiliser des charges de travail pour la productivité et la collaboration.
+Les charges de travail fonctionnent sur la partie supérieure de l’infrastructure de base. Toutefois, pas besoin que toutes les phases de l’infrastructure de base soient prédéfinies pour commencer à utiliser des charges de travail pour la productivité et la collaboration.
 
 Commencer votre route de déploiement de bout à bout [ici](deploy-foundation-infrastructure.md).
 
@@ -125,10 +125,6 @@ Découvrez comment Core Services Engineering and Operations (anciennement Micros
 ### <a name="how-the-contoso-corporation-deployed-microsoft-365-for-enterprise"></a>Comment Contoso Corporation a déployé Microsoft 365 pour entreprise
 
 Contoso Corporation est un conglomérat de fabricants international fictif mais représentatif avec son siège à Paris en France. Découvrez comment [Contoso a déployé Microsoft 365 for enterprise](contoso-case-study.md) et abordé les décisions de conception majeures, ainsi que les détails d’implémentation pour la mise en réseau, la gestion des identités, Windows 10 Entreprise, Microsoft 365 Apps for enterprise, la gestion des appareils mobiles, la protection des informations et la sécurité. 
-
-## <a name="stay-current-with-deployment-content"></a>Restez informé du contenu de déploiement
-
-Pour les dernières modifications apportées au contenu, consultez [cet article](microsoft-365-deploment-guide-changes.md).
 
 ## <a name="next-step"></a>Étape suivante
 

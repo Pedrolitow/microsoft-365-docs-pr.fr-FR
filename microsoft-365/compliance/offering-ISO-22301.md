@@ -14,18 +14,18 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 695471d51e391957a5dfea8770cb1928dd39ee86
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: 64a43fc281e5074314ca2b272306a0733297d34e
+ms.sourcegitcommit: daad5f2f1994a812c2b9c78e7dd148d10c51f61d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44065909"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "44254433"
 ---
 # <a name="iso-223012012-business-continuity-management-standard"></a>Norme de gestion de la continuité des activités ISO/IEC 22301:2012
 
 ## <a name="iso-22301-overview"></a>Présentation de la norme ISO 22301
 
-L’Organisation internationale de normalisation ISO est une organisation non-gouvernementale indépendante et le plus grand développeur au monde de normes internationales volontaires. L'organisation ISO a mis en place un comité technique de sécurité sociétale TC 223 pour élaborer des normes de protection des sociétés, y compris des organisations, dans l'éventualité d'incidents, comme les catastrophes naturelles, les attaques terroristes ou les coupures électriques.
+L’Organisation internationale de normalisation ISO est une organisation non-gouvernementale indépendante et le plus grand développeur au monde de normes internationales volontaires. L’organisation ISO a mis en place un comité technique de sécurité sociétale TC 223 pour élaborer des normes de protection des sociétés, y compris les organisations, en cas de catastrophes telles qu'une catastrophe naturelle, une attaque terroriste majeure ou la fermeture de réseaux électriques.
 
 Publiée en 2012 par le comité technique, ISO 22301:2012 est la première norme internationale relative à la gestion de la continuité des affaires. ISO 22301 est la norme premium en matière de continuité des activités, et la certification atteste de la conformité aux pratiques rigoureuses afin d’éviter et d’atténuer les incidents, d’y réagir et d’assurer la reprise après sinistre.
 
@@ -35,21 +35,24 @@ Microsoft est le premier fournisseur de services Cloud à grande échelle à obt
 
 ## <a name="microsoft-in-scope-cloud-services"></a>Services Cloud Microsoft concernés
 
-- [Azure et Azure Government](https://aka.ms/AzureCompliance)
-- Cloud App Security
-- Génomique
-- Graph
+- [Azure, Azure Gouvernement et Azure Allemagne](https://aka.ms/AzureCompliance)
+- Microsoft Cloud App Security
+- Dynamics 365, Dynamics 365 Gouvernement et Dynamics 365 Allemagne
+- Microsoft Defender – Protection avancée contre les menaces
+- Microsoft Graph
+- Microsoft Healthcare Bot
 - Intune
 - Bureau géré Microsoft
-- Service Cloud Microsoft Flow, soit en service autonome, soit inclus dans un plan ou une suite Office 365 ou Dynamics 365
+- Service Cloud Power Automate (anciennement Microsoft Flow), soit en service autonome, soit inclus dans un plan ou une suite Office 365 ou Dynamics 365
 - [Office 365 commercial, secteur public et éducation](https://go.microsoft.com/fwlink/p/?linkid=2077751)
 - Service Cloud Power Apps, soit en service autonome, soit inclus dans un plan ou une suite Office 365 ou Dynamics 365
 - Service Cloud Power BI soit en service autonome, soit inclus dans un plan ou une suite Office 365
+- Power BI intégré
 
 ## <a name="audits-reports-and-certificates"></a>Audits, rapports et certificats
 
-- [Certificat d’inscription Azure et Azure ISO 22301](https://go.microsoft.com/fwlink/p/?linkid=2099078)
-- [Rapport d’évaluation d’Azure ISO 22301](https://go.microsoft.com/fwlink/p/?linkid=2099079)
+- [Azure, Dynamics 365 et services en ligne : certificat ISO22301](https://aka.ms/azureiso22301cert)
+- [Azure, Dynamics 365 et services en ligne : rapport d’évaluation ISO22301](https://aka.ms/azureiso22301report)
 - [Certificat BSI 22301 Microsoft Office 365](https://go.microsoft.com/fwlink/p/?linkid=2092109)
 - [Addendum étape 2 BSI 22301 Microsoft Office 365](https://go.microsoft.com/fwlink/p/?linkid=2092209)
 - [Rapport étape 2 Office 365 ISO 22301](https://go.microsoft.com/fwlink/p/?linkid=2092211)
