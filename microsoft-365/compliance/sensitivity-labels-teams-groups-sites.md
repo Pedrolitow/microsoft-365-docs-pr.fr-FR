@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Utilisez les étiquettes de confidentialité pour protéger le contenu des sites SharePoint et Microsoft Teams, ainsi que des Groupes Microsoft 365.
-ms.openlocfilehash: 4bf640598b072064dcdec657b80182a58d430235
-ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
+ms.openlocfilehash: 8717f6dc9f86ed8d0d9bab378588d70e2854e8e7
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "44327272"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44352486"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites-public-preview"></a>Utiliser les étiquettes de confidentialité pour protéger le contenu dans Microsoft Teams, les Groupes Microsoft 365 et les sites SharePoint (préversion publique)
 
@@ -198,7 +198,7 @@ Lorsque vous apportez des modifications aux paramètres de site et de groupe pou
     Import-PSSession $Session -DisableNameChecking
     ```
 
-2. Obtenez la liste des étiquettes de confidentialité et leurs GUID à l’aide de l’applet de commande [Get-Label](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/get-label?view=exchange-ps) :
+2. Obtenez la liste des étiquettes de confidentialité et leurs GUID à l’aide de l’applet de commande [Get-Label](https://docs.microsoft.com/powershell/module/exchange/get-label?view=exchange-ps) :
     
     ```powershell
     Get-Label |ft Name, Guid
@@ -216,7 +216,7 @@ Lorsque vous apportez des modifications aux paramètres de site et de groupe pou
     Import-PSSession $Session
     ```
     
-5. Exécutez l’applet de commande [Get-UnifiedGroup](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/get-unifiedgroup?view=exchange-ps), en indiquant votre GUID d’étiquette à la place du GUID d’exemple de « e48058ea-98e8-4940-8db0-ba1310fd955e » : 
+5. Exécutez l’applet de commande [Get-UnifiedGroup](https://docs.microsoft.com/powershell/module/exchange/get-unifiedgroup?view=exchange-ps), en indiquant votre GUID d’étiquette à la place du GUID d’exemple de « e48058ea-98e8-4940-8db0-ba1310fd955e » : 
     
     ```powershell
     $Groups= Get-UnifiedGroup | Where {$_.SensitivityLabel  -eq "e48058ea-98e8-4940-8db0-ba1310fd955e"}
@@ -295,7 +295,7 @@ Bien que vous ne puissiez pas empêcher les utilisateurs de créer des groupes d
     Import-PSSession $Session -DisableNameChecking
     ```
 
-2. Obtenez la liste des étiquettes de confidentialité et leurs GUID à l’aide de l’applet de commande [Get-Label](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/get-label?view=exchange-ps) :
+2. Obtenez la liste des étiquettes de confidentialité et leurs GUID à l’aide de l’applet de commande [Get-Label](https://docs.microsoft.com/powershell/module/exchange/get-label?view=exchange-ps) :
     
     ```powershell
     Get-Label |ft Name, Guid
