@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: Découvrez comment créer des types d’informations sensibles personnalisés à l’aide d’une classification Exact Data Match.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 525d58a37fe4bb254d06ce7a4fcb6e2a54344a79
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 42adeca60c97fa2a3877f04055725a99a453b032
+ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035796"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44327776"
 ---
 # <a name="create-custom-sensitive-information-types-with-exact-data-match-based-classification"></a>Créez des types d’informations sensibles personnalisés à l’aide d’une classification Exact Data Match.
 
@@ -494,7 +494,7 @@ Les types d’informations sensibles EDM pour les scénarios suivants sont en co
 
 ## <a name="related-articles"></a>Articles connexes
 
-[Obtenir la liste des types d’informations sensibles intégrés et ce qu’ils recherchent](what-the-sensitive-information-types-look-for.md)
+[Définitions d’entités des types d’informations sensibles](sensitive-information-type-entity-definitions.md)
 
 [Types d’informations sensibles personnalisés](custom-sensitive-info-types.md)
 

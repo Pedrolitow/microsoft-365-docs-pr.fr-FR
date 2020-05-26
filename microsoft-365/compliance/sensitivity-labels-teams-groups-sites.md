@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Utilisez les étiquettes de confidentialité pour protéger le contenu des sites SharePoint et Microsoft Teams, ainsi que des Groupes Microsoft 365.
-ms.openlocfilehash: ff99489d933ee932c79fee8c655a46268eb8a6a4
-ms.sourcegitcommit: 44e685a0b193e89de5befb1e1a3740eb31931799
+ms.openlocfilehash: 4bf640598b072064dcdec657b80182a58d430235
+ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44022142"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44327272"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites-public-preview"></a>Utiliser les étiquettes de confidentialité pour protéger le contenu dans Microsoft Teams, les Groupes Microsoft 365 et les sites SharePoint (préversion publique)
 
@@ -38,15 +38,15 @@ Lorsque vous appliquez cette étiquette à l’un des conteneurs pris en charge,
 
 Le contenu de ces conteneurs n’hérite toutefois pas des étiquettes pour les paramètres tels que le nom d’étiquette, les marques visuelles ou le chiffrement. Pour que les utilisateurs puissent étiqueter leurs documents sur des sites SharePoint ou des sites d’équipe, [Activer les étiquettes de confidentialité pour les fichiers Office dans SharePoint et OneDrive](sensitivity-labels-sharepoint-onedrive-files.md).
 
-## <a name="about-the-public-preview-for-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>À propos de la préversion publique Microsoft Teams, les Groupes Microsoft 365 et les sites SharePoint
+## <a name="about-the-public-preview-for-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>À propos de la préversion publique Microsoft Teams, les groupes Microsoft 365 et les sites SharePoint
 
-Les étiquettes de confidentialité pour Microsoft Teams, les Groupes Microsoft 365 et les sites SharePoint sont progressivement déployés pour les clients, et peuvent encore être modifiées avant la publication finale. Cette préversion publique ne fonctionne pas avec les réseaux de distribution de contenu Office 365 (CDN).
+Les étiquettes de confidentialité pour Microsoft Teams, les groupes Microsoft 365 et les sites SharePoint sont en mode Aperçu et peuvent changer avant la publication finale. Cette préversion publique ne fonctionne pas avec les réseaux de distribution de contenu Office 365 (CDN).
 
 Avant d’activer cette préversion et de configurer des étiquettes de confidentialité pour les nouveaux paramètres, les utilisateurs peuvent afficher et appliquer des étiquettes de confidentialité dans leurs applications. Par exemple, à partir de Word :
 
 ![Étiquette de confidentialité affichée dans l’application de bureau Word](../media/sensitivity-label-word.png)
 
-Après avoir activé et configuré cette préversion, les utilisateurs peuvent également voir et appliquer des étiquettes de confidentialité à Microsoft Teams, à des Groupes Microsoft 365 et à des sites SharePoint. Par exemple, lorsque vous créez un nouveau site d’équipe à partir de SharePoint :
+Après avoir activé et configuré cette préversion, les utilisateurs peuvent également voir et appliquer des étiquettes de confidentialité à Microsoft Teams, à des groupes Microsoft 365 et à des sites SharePoint. Par exemple, lorsque vous créez un nouveau site d’équipe à partir de SharePoint :
 
 ![Étiquette de confidentialité lors de la création d’un site d’équipe à partir de SharePoint](../media/sensitivity-labels-new-team-site.png)
 
@@ -65,7 +65,7 @@ Après avoir activé et configuré cette préversion, les utilisateurs peuvent �
     Import-PSSession $Session -DisableNameChecking
     ```
 
-3. Exécutez la commande suivante pour synchroniser vos étiquettes de confidentialité avec Azure AD afin de pouvoir les utiliser avec des Groupes Microsoft 365 :
+3. Exécutez la commande suivante pour synchroniser vos étiquettes de confidentialité avec Azure AD afin de pouvoir les utiliser avec des groupes Microsoft 365 :
     
     ```powershell
     Execute-AzureAdLabelSync
@@ -79,17 +79,19 @@ Si vous avez besoin d’aide pour créer ou modifier une étiquette de confident
 
 Dans cette nouvelle page de **Paramètres de site et de groupe**, configurez les paramètres :
 
-- **Confidentialité des sites d’équipe connectés au groupe Office 365** : le paramètre par défaut actuellement déployé pour les clients est **Aucune, l'utilisateur choisit qui peut accéder au site**. Conservez ce paramètre par défaut si vous souhaitez protéger le contenu dans le conteneur à l’aide de l’étiquette de confidentialité, tout en laissant les utilisateurs configurer eux-même les paramètres de confidentialité.
+- **Confidentialité des sites d’équipe connectés aux groupes Office 365**: conserver la valeur par défaut de **Publique-tous les membres de l’organisation peuvent accéder au site** si vous souhaitez que tous les membres de votre organisation accèdent au site d’équipe ou au groupe auquel cette étiquette est appliquée.
     
-    Sélectionnez **Public** ou **privé** pour définir et verrouiller le paramètre de confidentialité lorsque vous appliquez cette étiquette au conteneur. Sélectionnez **Public** si vous souhaitez que tous les membres de votre organisation accèdent au site d’équipe ou au groupe dans lequel cette étiquette est appliquée, ou **Privé** si vous souhaitez limiter l’accès aux seuls membres approuvés au sein de votre organisation. 
+    Sélectionnez **Privé** si vous voulez limiter l’accès aux seuls membres approuvés au sein de votre organisation.
     
-    Le paramètre **Public** or **Privé** remplace le paramètre précédemment configuré pour l’équipe ou le groupe et verrouille la valeur de confidentialité afin qu’elle puisse être modifiée uniquement en supprimant d’abord l’étiquette de confidentialité du conteneur. Une fois l’étiquette de confidentialité supprimée, le paramètre de confidentialité de l’étiquette peut à nouveau être modifié par les utilisateurs.
+    Sélectionnez **Aucune-laisser l’utilisateur choisir qui peut accéder au site** lorsque vous voulez protéger le contenu dans le conteneur à l’aide de l’étiquette de confidentialité, tout en laissant les utilisateurs configurer eux-mêmes le paramètre de confidentialité proprement dit.
+    
+    Les paramètres **Publique** ou **Privé** pour définir et verrouiller le paramètre de confidentialité lorsque vous appliquez cette étiquette au conteneur. Votre paramètre remplace le paramètre précédemment configuré pour l’équipe ou le groupe et verrouille la valeur de confidentialité afin qu’elle puisse être modifiée uniquement en supprimant d’abord l’étiquette de confidentialité du conteneur. Une fois l’étiquette de confidentialité supprimée, le paramètre de confidentialité de l’étiquette peut à nouveau être modifié par les utilisateurs.
 
 - **Accès des utilisateurs externes** : déterminez si le propriétaire du groupe peut [ajouter des invités au groupe](/office365/admin/create-groups/manage-guest-access-in-groups).
 
 - **Appareils non gérés** : pour les [appareils non gérés](/sharepoint/control-access-from-unmanaged-devices), autorisez l’accès total, l’accès web uniquement ou bloquer totalement l’accès. 
 
-![L’onglet Paramètres de site et de groupe](../media/edit-sensitivity-label-site-group.png)
+![L’onglet Paramètres de site et de groupe](../media/edit-sensitivity-label-site-group2.png)
 
 > [!IMPORTANT]
 > Seuls ces paramètres de sites et de groupes prennent effet lorsque vous appliquez une étiquette à une équipe, un groupe ou un site. D’autres paramètres d’étiquette, tels que le chiffrement et le marquage de contenu, ne sont pas appliqués au contenu au sein de l’équipe, du groupe ou du site.
@@ -103,7 +105,7 @@ Si votre étiquette de confidentialité n’est pas encore publiée, publiez-la 
 ## <a name="sensitivity-label-management"></a>Gestion des étiquettes de confidentialité
 
 > [!WARNING]
-> La création, la modification et la suppression des étiquettes de confidentialité utilisées pour Microsoft Teams, les Groupes Microsoft 365 et les sites SharePoint nécessitent une coordination soigneuse avec les stratégies de publication des étiquettes pour les utilisateurs. 
+> La création, la modification et la suppression des étiquettes de confidentialité utilisées pour Microsoft Teams, les groupes Microsoft 365 et les sites SharePoint nécessitent une coordination soigneuse avec les stratégies de publication des étiquettes pour les utilisateurs. 
 
 Évitez les erreurs de création pour les sites et les groupes pouvant affecter tous les utilisateurs à l’aide des instructions suivantes.
 
@@ -131,7 +133,7 @@ Modifier ou supprimer une étiquette de confidentialité avec les paramètres de
 
 4. Si l’étiquette de confidentialité n’est pas visible, vous pouvez désormais modifier ou supprimer l’étiquette en toute sécurité. Si l’étiquette est toujours visible, contactez le [Support Microsoft](https://docs.microsoft.com/office365/admin/contact-support-for-business-products).
 
-## <a name="assign-sensitivity-labels-to-microsoft-365-groups"></a>Attribuer des étiquettes de confidentialité à des Groupes Microsoft 365
+## <a name="assign-sensitivity-labels-to-microsoft-365-groups"></a>Attribuer des étiquettes de confidentialité à des groupes Microsoft 365
 
 Vous êtes désormais prêt à appliquer une ou plusieurs étiquettes de confidentialité à des Groupes Microsoft 365. Revenez à la documentation Azure Active Directory pour les instructions suivantes :
 

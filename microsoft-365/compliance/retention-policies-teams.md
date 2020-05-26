@@ -1,0 +1,139 @@
+---
+title: Découvrir les stratégies de rétention pour Teams
+f1.keywords:
+- NOCSH
+ms.author: cabailey
+author: cabailey
+manager: laurawi
+ms.date: ''
+audience: Admin
+ms.topic: conceptual
+ms.service: O365-seccomp
+localization_priority: Priority
+ms.collection:
+- M365-security-compliance
+- SPO_Content
+search.appverid:
+- MOE150
+- MET150
+description: Découvrir les stratégies de rétention qui s’appliquent à Microsoft Teams.
+ms.openlocfilehash: 709d4414ebb01081172aff932899146c06d05a19
+ms.sourcegitcommit: 47c45bd81afdc4867ff2980ced3df31dbad92b84
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 05/16/2020
+ms.locfileid: "44268272"
+---
+# <a name="learn-about-retention-policies-for-microsoft-teams"></a>Découvrir les stratégies de rétention pour Microsoft Teams
+
+>*[Guide pour la sécurité et la conformité des licences Microsoft 365](https://aka.ms/ComplianceSD).*
+
+Les informations contenues dans cet article complètent l’article [Découvrir les stratégies de rétention](retention-policies.md) car elles contiennent des informations spécifiques à Microsoft Teams.
+
+## <a name="how-a-retention-policy-works-with-microsoft-teams"></a>Fonctionnement d’une stratégie de rétention avec Microsoft Teams
+
+Vous pouvez utiliser une stratégie de rétention pour conserver des conversations et des messages de canal dans Teams. Les conversations Teams sont stockées dans un dossier masqué de la boîte aux lettres de chaque utilisateur participant à la conversation. Les messages de canal Teams sont stockés dans un dossier masqué similaire dans la boîte aux lettres de groupe de l’équipe. 
+
+Il est important de comprendre que Teams utilise un service de conversation Azure qui stocke également ces données. Par défaut, ce service stocke les données sans limite de durée. C’est pour cette raison qu’il est vivement recommandé d’utiliser les emplacements Teams pour conserver et supprimer les données Teams. Le fait d’utiliser les emplacements Teams supprime les données de manière définitive dans les boîtes aux lettres Exchange et le service de conversation Azure sous-jacent. Si vous souhaitez en savoir plus, consultez la page [ Sécurité et conformité dans Microsoft Teams](https://go.microsoft.com/fwlink/?linkid=871258) et plus précisément, la section [Architecture de protection des informations](https://docs.microsoft.com/MicrosoftTeams/security-compliance-overview#information-protection-architecture).
+
+Les conversations et les messages de canal Teams ne sont pas affectés par les stratégies de rétention configurées pour les boîtes aux lettres des utilisateurs et des groupes. Même si les conversations et les messages de canal Teams sont stockés dans Exchange, ces données Teams sont incluses uniquement par une stratégie de rétention configurée pour les **messages de canal Teams** et les emplacements des **conversations Teams**.
+
+> [!NOTE]
+> Si un utilisateur est inclus dans une stratégie de rétention active qui conserve les données Teams et que vous supprimez une boîte aux lettres d’un utilisateur inclus dans cette stratégie, la boîte aux lettres est convertie en [boîte aux lettres inactive](inactive-mailboxes-in-office-365.md) pour conserver les données Teams. Si vous n’avez pas besoin de conserver ces données Teams pour l’utilisateur, excluez son compte de la stratégie de rétention avant de supprimer sa boîte aux lettres.
+
+Une fois qu’une stratégie de rétention est configurée pour les conversations et les messages de canal, les chemins d’accès empruntés par le contenu dépendent de la stratégie de rétention qui soit conserve et supprime le contenu, soit le conserve uniquement, soit le supprime uniquement.
+
+Lorsque la stratégie de rétention doit conserver et supprimer le contenu :
+
+![Diagramme de flux de rétention pour les conversations et messages de canal Teams](../media/TeamsRetentionLifecycle.png)
+
+1. **Si une conversation ou un message de canal est modifié ou supprimé** par l’utilisateur pendant la période de rétention, le message est déplacé (ou copié, en cas de modification) dans le dossier SubstrateHolds (qui est un dossier masqué dans chaque boîte aux lettres d’utilisateur ou de groupe) et est stocké dans ce dossier jusqu’à l’expiration de la période de rétention. Les messages sont supprimés définitivement le jour où la période de rétention expire.
+
+2. **Si une conversation ou un message de canal n’est pas supprimé** pendant la période de rétention, le message est déplacé vers le dossier SubstrateHolds dans un délai d’un jour après l’expiration de la période de rétention (cela prend entre 0 et 24 heures). Le message est définitivement supprimé un jour après son déplacement vers le dossier SubstrateHolds. 
+
+> [!NOTE]
+> Les messages dans le dossier SubstrateHolds peuvent faire l’objet de recherches par les outils eDiscovery. Une fois un message supprimé définitivement, il n’apparaîtra pas dans les recherches eDiscovery.
+
+Lorsque la stratégie de rétention consiste à conserver uniquement ou à supprimer uniquement, les chemins d'accès au contenu sont des variantes de rétention et de suppression :
+
+### <a name="content-paths-for-retain-only-retention-policy"></a>Chemins d’accès au contenu pour la stratégie de rétention de conservation uniquement
+
+1. **Si une conversation ou un message de canal est modifié ou supprimé** pendant la période de rétention : une copie du message d’origine est créée dans le dossier SubstrateHolds et conservée jusqu’à la fin de la période de rétention, lorsque la copie dans le dossier SubstrateHolds est définitivement supprimée un jour après l’expiration de l’élément. 
+
+2. **Si l’élément n’est ni modifié ni supprimé** pendant la période de rétention : rien ne se passe avant et après la période de rétention. Le message reste à son emplacement d’origine.
+
+#### <a name="content-paths-for-delete-only-retention-policy"></a>Chemins d’accès du contenu pour la stratégie de rétention de suppression uniquement
+
+1. **Si le message n’est pas supprimé** pendant la période de rétention : à la fin de la période de rétention, il est déplacé vers le dossier SubstrateHolds. 
+
+2. **Si l’élément est supprimé par l’utilisateur** pendant la période de rétention, l’élément est placé immédiatement dans le dossier SubstrateHolds. Si un utilisateur supprime le message à partir du dossier SubstrateHolds ou vide celui-ci, l’élément est définitivement supprimé. Sinon, le message est définitivement supprimé un jour après son déplacement vers le dossier SubstrateHolds.
+
+
+## <a name="skype-for-business-and-teams-interop-chats"></a>Interopérabilité des conversations Skype Entreprise et Teams
+
+Le même flux fonctionne pour les conversations interopérables Skype Entreprise et Teams. Lorsqu’une conversation Skype Entreprise intervient dans Teams, celle-ci devient un message de la conversation Teams et est stockée dans la boîte aux lettres appropriée. Les stratégies de conservation Teams supprimeront ces messages du fil de conversation Teams. 
+
+Cependant, si l’historique des conversations est activé pour Skype Entreprise et par le côté client Skype Entreprise, celui-ci est enregistré dans une boîte aux lettres. Ces données de conversation ne sont pas gérées par une stratégie de rétention Teams.
+
+## <a name="files-in-teams"></a>Les fichiers dans Teams
+
+Dans Teams, les fichiers partagés dans une conversation sont stockés sur le compte OneDrive de l’utilisateur qui a partagé le fichier. Les fichiers chargés dans les canaux sont stockés sur le site SharePoint associé à l’équipe. Par conséquent, pour conserver ou supprimer des fichiers dans Teams, vous devez configurer une ou plusieurs stratégies de rétention qui s’appliquent aux **comptes OneDrive** et aux **sites SharePoint** en plus des stratégies de rétention que vous configurez pour Teams. Si vous souhaitez en savoir plus sur le fonctionnement des stratégies de rétention pour ces emplacements, consultez la page [Découvrir les stratégies de rétention pour SharePoint et OneDrive](retention-policies-sharepoint.md).
+
+> [!NOTE]
+> Une stratégie de rétention qui inclut les messages de canal ou les conversations Teams peut uniquement inclure des emplacements Teams. Pour conserver ou supprimer ces fichiers dans Teams, vous devez donc créer une stratégie de rétention distincte.
+> 
+> Pour appliquer une stratégie de rétention aux fichiers d’une équipe spécifique, vous pouvez choisir le site SharePoint de l’équipe et les comptes OneDrive des utilisateurs qui font partie de l’équipe.
+
+Il est possible qu’une stratégie de rétention appliquée à SharePoint ou OneDrive supprime un fichier référencé dans une conversation ou un message de canal Teams avant la suppression de ces messages. Dans ce cas, le fichier apparaîtra toujours dans le message Teams, mais lorsque les utilisateurs cliquent sur le fichier, le message d’erreur « fichier introuvable » s’affiche. Ce comportement n’est pas spécifique aux stratégies de rétention et peut également se produire si un utilisateur supprime manuellement un fichier à partir de SharePoint ou de OneDrive.
+
+## <a name="meetings-and-external-users"></a>Réunions et utilisateurs externes
+
+Les messages de réunion de canal sont stockés de la même façon que les messages de canal. Par conséquent, pour ces données, sélectionnez l’emplacement des **messages de canal Teams** lorsque vous configurez votre stratégie de rétention.
+
+Les messages de réunion impromptus sont stockés de la même façon que les messages de conversation de groupe. Par conséquent, pour ces données, sélectionnez l’emplacement des **conversations Teams** lorsque vous configurez votre stratégie de rétention.
+
+Lorsque des utilisateurs externes sont inclus dans une réunion organisée par votre organisation :
+
+- si un utilisateur externe se connecte à l’aide d’un compte invité dans votre client, il dispose d’une boîte aux lettres fantôme qui peut être soumise à la stratégie de rétention de votre organisation pour Teams. Les messages de la réunion sont stockés dans la boîte aux lettres de vos utilisateurs et dans la boîte aux lettres fantôme. 
+
+- Si un utilisateur externe se connecte à l’aide d’un compte d’une autre organisation Microsoft 365, vos stratégies de rétention ne peuvent pas supprimer les messages de cet utilisateur, car ils sont stockés dans sa boîte aux lettres dans un autre client. Cependant, pour la même réunion, vos stratégies de rétention peuvent supprimer des messages pour vos utilisateurs.
+
+
+## <a name="limitations"></a>Limites
+
+Nous travaillons sans cesse afin d’optimiser les fonctionnalités de rétention dans Teams. En attendant, voici quelques limitations importantes dont vous devez tenir compte :
+  
+- **Teams nécessite une stratégie de rétention distincte**. Lorsque vous créez une stratégie de rétention et activez les emplacements Teams, tous les autres emplacements sont désactivés. Une stratégie de rétention qui inclut Teams ne peut inclure que Teams et aucun autre emplacement. 
+    
+- **Teams n’est pas inclus dans une stratégie à l’échelle de l’organisation**. Si vous créez une stratégie à l’échelle de l’organisation, Teams n’est pas inclus, car il nécessite une stratégie de rétention distincte. 
+    
+- **Teams ne prend pas en charge les rétentions avancées**. Lorsque vous créez une stratégie de rétention, si vous choisissez les [Paramètres avancés permettant d’identifier du contenu qui répond à certaines conditions](create-retention-policies.md#advanced-settings-to-identify-content-that-meets-specific-conditions), les emplacements Teams ne sont pas disponibles. Pour le moment, la rétention dans Teams s’applique à l’ensemble du contenu des conversations et des messages de canal lorsque vous sélectionnez ces emplacements. 
+
+- **Les messages Teams dans les canaux privés ne sont pas inclus lorsque vous configurez une stratégie de rétention pour les messages de canal Teams**. En effet, les messages provenant des canaux privés sont inclus pour les utilisateurs en tant que conversations de groupe avec l’option **conversations Teams**. 
+    
+- **Teams peut prendre jusqu’à trois jours pour nettoyer les messages arrivés à expiration**. Une stratégie de rétention appliquée à Teams supprimera les conversations et les messages de canal à l’expiration de la période de rétention. Toutefois, le nettoyage et la suppression définitive de ces messages peut prendre jusqu’à trois jours. De plus, les conversations et les messages de canal pourront faire l’objet d’une recherche avec les outils eDiscovery entre le moment qui suit l’expiration de la période de rétention et celui où les messages sont supprimés définitivement.
+    
+   > [!NOTE]
+   > Auparavant, une stratégie de rétention ne pouvait pas supprimer du contenu de Teams qui avait moins de 30 jours, mais nous avons supprimé cette limitation. Vous pouvez désormais choisir le nombre de jours de la période de rétention du contenu de Teams, et ce peut être seulement un jour. Si vous avez une période de rétention d’un jour, il faudra jusqu’à trois jours après l’expiration de la période de rétention avant la suppression définitive des messages.
+
+- **Problème d’affichage incorrect dans Outlook**. Si vous créez des stratégies de rétention pour les emplacements Skype ou Teams, l’une de ces stratégies apparaît comme stratégie de dossier par défaut lorsqu’un utilisateur affiche les propriétés d’un dossier de boîte aux lettres dans le client de la version bureau de Outlook. Il s’agit [d’un problème connu](https://support.microsoft.com/help/4491013/outlook-client-displays-teams-or-skype-for-business-retention-policies)d’affichage incorrect dans Outlook. Ce qui doit s’afficher comme stratégie de dossier par défaut est la stratégie de rétention de boîte aux lettres appliquée au dossier. La stratégie de rétention de Skype ou Teams n’est pas appliquée à la boîte aux lettres de l’utilisateur.
+
+- **Problèmes liés à la configuration** : 
+    - Lorsque vous sélectionnez **Choisir les équipes** pour l’emplacement des **messages de canal Teams**, les groupes Office 365, qui ne sont pas des équipes, peuvent s’afficher. Ne sélectionnez pas ces groupes.
+    
+    - Lorsque vous sélectionnez **Choisir les utilisateurs** pour l’emplacement des **conversations Teams**, les invités et les utilisateurs qui n’utilisent pas de boîte aux lettres peuvent être s’afficher. Les stratégies de rétention ne sont pas conçues pour ces utilisateurs. Ne les sélectionnez pas.
+
+
+## <a name="how-to-configure-a-retention-policy-for-microsoft-teams"></a>Comment configurer une stratégie de rétention pour Microsoft Teams
+
+Consultez la page [Créer et configurer des stratégies de rétention](create-retention-policies.md).
+
+Pour la page de l’Assistant **Choisir les emplacements**, sélectionnez les options suivantes :
+
+- **Choisir des emplacements spécifiques** > **Messages de canal Teams** et **Conversations Teams**
+
+Une stratégie de rétention qui s’applique à Teams peut utiliser un [Verrouillage de conservation](retention-policies.md#use-preservation-lock-to-comply-with-regulatory-requirements), ce qui peut être nécessaire pour des raisons réglementaires.
+
+## <a name="related-information"></a>Informations connexes
+
+[Stratégies de rétention dans Microsoft Teams](https://docs.microsoft.com/microsoftteams/retention-policies)

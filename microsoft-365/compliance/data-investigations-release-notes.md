@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-mar2020
 - seo-marvel-apr2020
 description: Dans cet article, vous trouverez des notes de publication qui contiennent des modifications et de nouvelles fonctionnalités pour l’outil des enquêtes de données (aperçu) dans Microsoft 365.
-ms.openlocfilehash: 5bb18ccb3354082634780720938fb18164da0ccb
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 9567e9d83c6fc952e61271e665b96fad8fc6b69a
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035726"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44352281"
 ---
 # <a name="release-notes-for-data-investigations-preview-in-microsoft-365"></a>Notes de publication pour les enquêtes sur les données (aperçu) dans Microsoft 365
 
@@ -50,4 +50,4 @@ Vous pouvez utiliser l’outil nouvelles enquêtes de données (aperçu) dans Mi
 
 - **Travaux** : suivre l’état des processus de longue durée.
 
-- **Supprimer des éléments de boîte aux lettres** de manière irréversible : dans les situations urgentes, vous devrez peut-être supprimer définitivement les éléments mal placés. Pour ce faire, vous pouvez exécuter la commande **New-ComplianceSearchAction-purge-PurgeType permet HardDelete** dans Security & Compliance Center PowerShell pour supprimer définitivement des éléments des boîtes aux lettres. Pour plus d’informations, voir [New-ComplianceSearchAction](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/new-compliancesearchaction).
+- **Supprimer des éléments de boîte aux lettres** de manière irréversible : dans les situations urgentes, vous devrez peut-être supprimer définitivement les éléments mal placés. Pour ce faire, vous pouvez exécuter la commande **New-ComplianceSearchAction-purge-PurgeType permet HardDelete** dans Security & Compliance Center PowerShell pour supprimer définitivement des éléments des boîtes aux lettres. Pour plus d’informations, voir [New-ComplianceSearchAction](https://docs.microsoft.com/powershell/module/exchange/new-compliancesearchaction).

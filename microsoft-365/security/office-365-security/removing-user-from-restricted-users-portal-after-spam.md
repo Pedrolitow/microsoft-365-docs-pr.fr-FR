@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 description: Les administrateurs peuvent découvrir comment supprimer des utilisateurs du portail des utilisateurs restreints dans Office 365. Les utilisateurs sont ajoutés au portail Utilisateurs restreints pour avoir envoyé du courrier indésirable sortant, généralement en raison de la compromission d’un compte.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 370d2ff5f98b507cd819a57e4b0de613de7ab395
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: f9865b409be6bce14b84a9175e8f17cdad58befe
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035419"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44351006"
 ---
 # <a name="remove-blocked-users-from-the-restricted-users-portal-in-office-365"></a>Retirer les utilisateurs bloqués du portail Utilisateurs restreints dans Office 365
 
@@ -102,7 +102,7 @@ Pour afficher les détails d’un utilisateur spécifique, remplacez \<emailaddr
 Get-BlockedSenderAddress -SenderAddress <emailaddress>
 ```
 
-Pour des informations détaillées sur la syntaxe et les paramètres, voir [Get-BlockedSenderAddress](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/get-blockedsenderaddress).
+Pour des informations détaillées sur la syntaxe et les paramètres, voir [Get-BlockedSenderAddress](https://docs.microsoft.com/powershell/module/exchange/get-blockedsenderaddress).
 
 Pour supprimer un utilisateur de la liste Utilisateurs restreints, remplacez \<emailaddress\> par son adresse e-mail, puis exécutez la commande suivante :
 
@@ -110,4 +110,4 @@ Pour supprimer un utilisateur de la liste Utilisateurs restreints, remplacez \<e
 Remove-BlockedSenderAddress -SenderAddress <emailaddress>
 ```
 
-Pour des informations détaillées sur la syntaxe et les paramètres, voir [Remove-BlockedSenderAddress](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/remove-blockedsenderaddress).
+Pour des informations détaillées sur la syntaxe et les paramètres, voir [Remove-BlockedSenderAddress](https://docs.microsoft.com/powershell/module/exchange/remove-blockedsenderaddress).

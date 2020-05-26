@@ -14,12 +14,12 @@ ms.collection:
 localization_priority: None
 description: Utilisez cet article pour résoudre les problèmes liés aux barrières relatives aux informations.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f73493f53937c38f33eeab9595ddb07ef4813c89
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 5aa45e3e9dea5ce413b2b0e62d825003bc24e20e
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035030"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44352323"
 ---
 # <a name="troubleshooting-information-barriers"></a>Résolution des problèmes d’obstacles aux informations
 
@@ -45,7 +45,7 @@ Déterminez si les utilisateurs sont affectés par une stratégie de barrière d
 
     |Syntaxe  |Exemple  |
     |---------|---------|
-    | `Get-InformationBarrierRecipientStatus -Identity` <p>Vous pouvez utiliser n’importe quelle valeur d’identité qui identifie de façon unique chaque destinataire, comme le nom, l’alias, le nom unique (DN), le DN canonique, l’adresse de messagerie ou le GUID.     |`Get-InformationBarrierRecipientStatus -Identity meganb` <p>Dans cet exemple, nous utilisons un alias (*meganb*) pour le paramètre Identity. Cette applet de commande renvoie des informations qui indiquent si l’utilisateur est concerné par une stratégie de barrière des informations. (Recherchez * ExoPolicyId : \<GUID>.)         |
+    | `Get-InformationBarrierRecipientStatus -Identity` <p>Vous pouvez utiliser n’importe quelle valeur d’identité qui identifie de façon unique chaque destinataire, comme le nom, l’alias, le nom unique (DN), le DN canonique, l’adresse de messagerie ou le GUID.     |`Get-InformationBarrierRecipientStatus -Identity meganb` <p>Dans cet exemple, nous utilisons un alias (*meganb*) pour le paramètre Identity. Cette applet de commande renvoie des informations qui indiquent si l’utilisateur est concerné par une stratégie de barrière des informations. (Recherchez * ExoPolicyId : \< GUID>.)         |
 
     **Si les utilisateurs ne sont pas inclus dans les stratégies de barrière des informations, contactez le support technique**. Sinon, passez à l’étape suivante.
 
@@ -57,7 +57,7 @@ Déterminez si les utilisateurs sont affectés par une stratégie de barrière d
 
     Une fois que vous avez exécuté l’applet de commande, recherchez les valeurs **AssignedSegment**, **SegmentsAllowed**et **SegmentsBlocked** dans les résultats.
 
-    Par exemple, après avoir exécuté `Get-InformationBarrierPolicy` l’applet de commande, nous avons vu les éléments suivants dans notre liste de résultats :
+    Par exemple, après avoir exécuté l' `Get-InformationBarrierPolicy` applet de commande, nous avons vu les éléments suivants dans notre liste de résultats :
 
     ```powershell
         AssignedSegment      : Sales
@@ -74,7 +74,7 @@ Déterminez si les utilisateurs sont affectés par une stratégie de barrière d
     |---------|---------|
     |`Get-OrganizationSegment`<p>Utilisez cette applet de commande avec un paramètre Identity.     |`Get-OrganizationSegment -Identity c96e0837-c232-4a8a-841e-ef45787d8fcd` <p>Dans cet exemple, nous obtenons des informations sur le segment qui a le GUID *c96e0837-C232-4A8A-841e-ef45787d8fcd*.         |
 
-    Passez en revue les détails du segment. Si nécessaire, [modifiez un segment](information-barriers-edit-segments-policies.md#edit-a-segment), puis réutilisez l' `Start-InformationBarrierPoliciesApplication` applet de commande.
+    Passez en revue les détails du segment. Si nécessaire, [modifiez un segment](information-barriers-edit-segments-policies.md#edit-a-segment), puis réutilisez l’applet de commande `Start-InformationBarrierPoliciesApplication` .
 
     **Si vous rencontrez toujours des problèmes avec votre stratégie de barrière des informations, contactez le support technique**.
 
@@ -126,7 +126,7 @@ Les stratégies de barrière des informations sont affectées à des segments d�
 
 3. Pour supprimer un utilisateur d’un segment affecté par les barrières d’informations, [Mettez à jour les informations de profil de l’utilisateur dans Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal).
 
-4. Patientez environ 30 minutes avant que FwdSync se produise. Vous pouvez également exécuter `Start-InformationBarrierPoliciesApplication` l’applet de commande pour appliquer toutes les stratégies de barrière des informations actives.
+4. Patientez environ 30 minutes avant que FwdSync se produise. `Start-InformationBarrierPoliciesApplication`Vous pouvez également exécuter l’applet de commande pour appliquer toutes les stratégies de barrière des informations actives.
 
 ## <a name="issue-the-information-barrier-application-process-is-taking-too-long"></a>Problème : le processus de l’application de barrière des informations prend trop de temps
 
@@ -163,7 +163,7 @@ Assurez-vous que votre organisation ne dispose pas des [stratégies de carnet d�
 
 1. Connectez-vous à [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps). 
 
-2. Exécutez la cmdlet [Get-AddressBookPolicy](https://docs.microsoft.com/powershell/module/exchange/email-addresses-and-address-books/get-addressbookpolicy?view=exchange-ps) et examinez les résultats.
+2. Exécutez la cmdlet [Get-AddressBookPolicy](https://docs.microsoft.com/powershell/module/exchange/get-addressbookpolicy?view=exchange-ps) et examinez les résultats.
 
     |Résultats  |Étape suivante  |
     |---------|---------|
@@ -189,13 +189,13 @@ Lorsque vous exécutez l' `Get-InformationBarrierPoliciesApplicationStatus` appl
 
 ### <a name="what-to-do"></a>Procédure
 
-1. Recherchez dans le journal d’audit `<application guid>`. Vous pouvez copier ce code PowerShell et le modifier pour vos variables.
+1. Recherchez dans le journal d’audit `<application guid>` . Vous pouvez copier ce code PowerShell et le modifier pour vos variables.
 
 ```powershell
 $DetailedLogs = Search-UnifiedAuditLog -EndDate <yyyy-mm-ddThh:mm:ss>  -StartDate <yyyy-mm-ddThh:mm:ss> -RecordType InformationBarrierPolicyApplication -ResultSize 1000 |?{$_.AuditData.Contains(<application guid>)} 
 ```
 
-2. Consultez la sortie détaillée du journal d’audit pour connaître les valeurs des `"UserId"` champs `"ErrorDetails"` et. Cela vous permettra d’obtenir la raison de l’échec. Vous pouvez copier ce code PowerShell et le modifier pour vos variables.
+2. Consultez la sortie détaillée du journal d’audit pour connaître les valeurs des `"UserId"` `"ErrorDetails"` champs et. Cela vous permettra d’obtenir la raison de l’échec. Vous pouvez copier ce code PowerShell et le modifier pour vos variables.
 
 ```powershell
    $DetailedLogs[1] |fl
@@ -206,11 +206,11 @@ $DetailedLogs = Search-UnifiedAuditLog -EndDate <yyyy-mm-ddThh:mm:ss>  -StartDat
 > 
 >« ErrorDetails » : «Status : IBPolicyConflict. Erreur : le segment IB "segment ID1" et IB segment "segment ID2" a un conflit et ne peut pas être affecté au destinataire. 
 
-3. En règle générale, vous constaterez qu’un utilisateur a été inclus dans plusieurs segments. Vous pouvez résoudre ce problème en mettant à `-UserGroupFilter` jour la `OrganizationSegments`valeur dans.
+3. En règle générale, vous constaterez qu’un utilisateur a été inclus dans plusieurs segments. Vous pouvez résoudre ce problème en mettant à jour la `-UserGroupFilter` valeur dans `OrganizationSegments` .
 
 4. Réappliquer les stratégies de barrière des informations à l’aide de ces procédures : [informations sur les stratégies de barrières](information-barriers-policies.md#part-3-apply-information-barrier-policies).
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Sujets associés
 
 [Définir des stratégies pour les barrières d’informations dans Microsoft teams](information-barriers-policies.md)
 

@@ -12,16 +12,16 @@ ms.service: exchange-online
 ms.collection: M365-security-compliance
 localization_priority: Normal
 description: Les professionnels de l'informatique de votre organisation gèrent toutes sortes d'informations sensibles au cours d'une journée typique. La création d'une empreinte numérique de document facilite la protection de ces informations en identifiant les formulaires standard utilisés au sein de votre organisation. Cette rubrique décrit les concepts sous-jacents à la création d’une empreinte numérique de document et la manière d’en créer une à l’aide de PowerShell.
-ms.openlocfilehash: 61fe5082b4808f153cc4092b429c0c5e6a54b110
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 37b5649e357f24993e41ae93db6737d980ce0c72
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42074945"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44352021"
 ---
 # <a name="document-fingerprinting"></a>Création d’une empreinte numérique de document
 
-Les professionnels de l'informatique de votre organisation gèrent toutes sortes d'informations sensibles au cours d'une journée typique. Dans le centre &amp; de sécurité conformité, la création d’une empreinte numérique de document facilite la protection de ces informations en identifiant les formulaires standard utilisés dans votre organisation. Cette rubrique décrit les concepts sous-jacents à la création d’une empreinte numérique de document et la manière d’en créer une à l’aide de PowerShell.
+Les professionnels de l'informatique de votre organisation gèrent toutes sortes d'informations sensibles au cours d'une journée typique. Dans le centre de sécurité &amp; conformité, la création d’une empreinte numérique de document facilite la protection de ces informations en identifiant les formulaires standard utilisés dans votre organisation. Cette rubrique décrit les concepts sous-jacents à la création d’une empreinte numérique de document et la manière d’en créer une à l’aide de PowerShell.
   
 ## <a name="basic-scenario-for-document-fingerprinting"></a>Scénario de base de création d’une empreinte numérique de document
 
@@ -65,7 +65,7 @@ L’empreinte numérique de document ne détecte pas les informations sensibles 
 
 ## <a name="use-powershell-to-create-a-classification-rule-package-based-on-document-fingerprinting"></a>Utiliser PowerShell pour créer un package de règles de classification basé sur l’empreinte numérique de document
 
-Notez que vous pouvez créer une empreinte numérique de document uniquement à l’aide de PowerShell &amp; dans le centre de sécurité conformité. Pour vous connecter, voir [Connect to Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
+Notez que vous pouvez créer une empreinte numérique de document uniquement à l’aide de PowerShell dans le centre de sécurité &amp; conformité. Pour vous connecter, voir [Connect to Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
 
 DLP utilise les packages de règles de classification pour détecter le contenu sensible. Pour créer un package de règles de classification basé sur une empreinte numérique de document, utilisez les cmdlets **New-DlpFingerprint** et **New-DlpSensitiveInformationType** . Étant donné que les résultats de **New-DlpFingerprint** ne sont pas stockés en dehors de la règle de classification des données, vous devez toujours exécuter **New-DlpFingerprint** et **New-DlpSensitiveInformationType** ou **Set-DlpSensitiveInformationType** dans la même session PowerShell. L'exemple suivant crée une empreinte numérique de document à partir du fichier C:\My Documents\Contoso Employee Template.docx. La nouvelle empreinte est stockée en tant que variable pour que vous puissiez l’utiliser avec la cmdlet **New-DlpSensitiveInformationType** dans la même session PowerShell.
   
@@ -84,7 +84,7 @@ New-DlpSensitiveInformationType -Name "Contoso Customer Confidential" -Fingerpri
 
 Vous pouvez désormais utiliser l’applet de commande **Get-DlpSensitiveInformationType** pour rechercher tous les packages de règles de classification des données DLP et, dans cet exemple, « contoso Customer Confidential » fait partie de la liste des packages de règles de classification des données. 
   
-Enfin, ajoutez le package de règles de classification des données « Contoso Customer Confidential » à une stratégie &amp; DLP dans le centre de sécurité conformité. Cet exemple ajoute une règle à une stratégie DLP existante nommée « ConfidentialPolicy ».
+Enfin, ajoutez le package de règles de classification des données « Contoso Customer Confidential » à une stratégie DLP dans le centre de sécurité &amp; conformité. Cet exemple ajoute une règle à une stratégie DLP existante nommée « ConfidentialPolicy ».
 
 ```powershell
 New-DlpComplianceRule -Name "ContosoConfidentialRule" -Policy "ConfidentialPolicy" -ContentContainsSensitiveInformation @{Name="Contoso Customer Confidential"} -BlockAccess $True
@@ -100,8 +100,8 @@ DLP détecte désormais les documents qui correspondent à l’empreinte numéri
   
 Pour obtenir des informations sur la syntaxe et les paramètres, voir :
 
-- [New-DlpFingerprint](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/New-DlpFingerprint)
-- [New-DlpSensitiveInformationType](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/New-DlpSensitiveInformationType)
-- [Remove-DlpSensitiveInformationType](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/Remove-DlpSensitiveInformationType)
-- [Set-DlpSensitiveInformationType](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/Set-DlpSensitiveInformationType)
-- [Get-DlpSensitiveInformationType](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/Get-DlpSensitiveInformationType)
+- [New-DlpFingerprint](https://docs.microsoft.com/powershell/module/exchange/New-DlpFingerprint)
+- [New-DlpSensitiveInformationType](https://docs.microsoft.com/powershell/module/exchange/New-DlpSensitiveInformationType)
+- [Remove-DlpSensitiveInformationType](https://docs.microsoft.com/powershell/module/exchange/Remove-DlpSensitiveInformationType)
+- [Set-DlpSensitiveInformationType](https://docs.microsoft.com/powershell/module/exchange/Set-DlpSensitiveInformationType)
+- [Get-DlpSensitiveInformationType](https://docs.microsoft.com/powershell/module/exchange/Get-DlpSensitiveInformationType)

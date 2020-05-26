@@ -16,18 +16,18 @@ search.appverid:
 - MOE150
 - MET150
 description: Lorsque vous recherchez des informations sensibles dans du contenu, vous devez décrire ces informations dans ce que l’on appelle une règle. La protection contre la perte de données (DLP) comprend des règles pour les types d’informations sensibles les plus courants que vous pouvez utiliser immédiatement. Pour utiliser ces règles, vous devez les inclure dans une stratégie. Vous voudrez peut-être ajuster ces règles intégrées pour répondre aux besoins spécifiques de votre organisation, et vous pouvez le faire en créant un type d’informations sensibles personnalisé. Cette rubrique vous montre comment personnaliser le fichier XML qui contient la collection de règles existante pour détecter un plus large éventail d’informations potentielles relatives aux cartes de crédit.
-ms.openlocfilehash: 4c61ab1a60b6259509d2928e22d31e447a996ec9
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 2aa552fb7a2623aaa7783063e82101a1993b9d1c
+ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595491"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44327292"
 ---
 # <a name="customize-a-built-in-sensitive-information-type"></a>Personnaliser un type d’informations sensibles intégré
 
 Lorsque vous recherchez des informations sensibles dans du contenu, vous devez décrire ces informations dans ce que l’on appelle une *règle*. La protection contre la perte de données (DLP) comprend des règles pour les types d’informations sensibles les plus courants que vous pouvez utiliser immédiatement. Pour utiliser ces règles, vous devez les inclure dans une stratégie. Vous voudrez peut-être ajuster ces règles intégrées pour répondre aux besoins spécifiques de votre organisation, et vous pouvez le faire en créant un type d’informations sensibles personnalisé. Cette rubrique vous montre comment personnaliser le fichier XML qui contient la collection de règles existante pour détecter un plus large éventail d’informations potentielles relatives aux cartes de crédit. 
   
-Vous pouvez prendre cet exemple et l’appliquer à d’autres types d’informations sensibles intégrés. Pour obtenir la liste des types d’informations sensibles par défaut et des définitions XML, consultez l’article [Éléments recherchés par les types d’informations sensibles](what-the-sensitive-information-types-look-for.md). 
+Vous pouvez prendre cet exemple et l’appliquer à d’autres types d’informations sensibles intégrés. Pour obtenir la liste des types d’informations sensibles par défaut et des définitions XML, voir [Définitions des entités de type information sensible](sensitive-information-type-entity-definitions.md). 
   
 ## <a name="export-the-xml-file-of-the-current-rules"></a>Exporter le fichier XML des règles actuelles
 
@@ -234,7 +234,7 @@ Voici les définitions des termes que vous avez rencontrés au cours de cette pr
    
 ## <a name="for-more-information"></a>Pour plus d'informations
 
-- [Éléments recherchés par les types d’informations sensibles](what-the-sensitive-information-types-look-for.md)
+- [Définitions d’entités des types d’informations sensibles](sensitive-information-type-entity-definitions.md)
     
 - [Créer un type d’informations sensibles personnalisé](create-a-custom-sensitive-information-type.md)
     

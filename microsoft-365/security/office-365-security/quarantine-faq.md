@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 description: Les administrateurs peuvent consulter les réponses et les questions fréquemment posées sur les messages mis en quarantaine dans Exchange Online Protection (EOP).
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b2022a43f1dd89d47fdb4f3898f8f481419962c0
-ms.sourcegitcommit: 8e655c6cbb91bfb97efda9a99c39fac33eaa974a
+ms.openlocfilehash: 0a231e363d5764465547ee1e80cc080c3d7c006c
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44213103"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44351094"
 ---
 # <a name="quarantined-messages-faq"></a>FAQ sur les messages mis en quarantaine
 
@@ -40,7 +40,7 @@ Seuls les administrateurs peuvent gérer les messages mis en quarantaine pour le
 
 ## <a name="how-do-i-quarantine-spam"></a>Comment mettre en quarantaine le courrier indésirable ?
 
-Par défaut, les messages classés comme courriers indésirables ou en masse par filtrage du courrier indésirable sont remis à la boîte aux lettres de l’utilisateur et sont déplacés vers le dossier courrier indésirable. Toutefois, vous pouvez créer et configurer des stratégies de blocage du courrier indésirable pour mettre en quarantaine les messages électroniques en masse ou le courrier indésirable. Pour plus d’informations, consultez la rubrique [configurer des stratégies de blocage du courrier indésirable dans EOP](configure-your-spam-filter-policies.md).
+Par défaut, les messages classés comme courriers indésirables ou en masse par filtrage du courrier indésirable sont remis à la boîte aux lettres de l’utilisateur et sont déplacés vers le dossier courrier indésirable. Toutefois, vous pouvez créer et configurer des stratégies de blocage du courrier indésirable pour mettre en quarantaine les messages électroniques en masse ou le courrier indésirable. Si vous souhaitez en savoir plus, consultez l’article [Configurer les stratégies anti-courrier indésirable dans EOP](configure-your-spam-filter-policies.md).
 
 ## <a name="how-do-i-give-users-access-to-the-quarantine"></a>Comment accorder aux utilisateurs l’accès à la mise en quarantaine ?
 
@@ -62,7 +62,7 @@ Une fois la période expirée, les messages sont supprimés et ne sont pas récu
 
 Dans le centre de sécurité & conformité, vous pouvez sélectionner et publier jusqu’à 100 messages à la fois.
 
-Les administrateurs peuvent utiliser les cmdlets [Get-QuarantineMessage](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/get-quarantinemessage) et [Release-QuarantineMessage](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/release-quarantinemessage) dans Exchange Online PowerShell ou autonome EOP PowerShell pour rechercher et débloquer les messages mis en quarantaine en bloc, et pour signaler les faux positifs en bloc.
+Les administrateurs peuvent utiliser les cmdlets [Get-QuarantineMessage](https://docs.microsoft.com/powershell/module/exchange/get-quarantinemessage) et [Release-QuarantineMessage](https://docs.microsoft.com/powershell/module/exchange/release-quarantinemessage) dans Exchange Online PowerShell ou autonome EOP PowerShell pour rechercher et débloquer les messages mis en quarantaine en bloc, et pour signaler les faux positifs en bloc.
 
 ## <a name="are-wildcards-supported-when-searching-for-quarantined-messages-can-i-search-for-quarantined-messages-for-a-specific-domain"></a>Les caractères génériques sont-ils pris en charge lors de la recherche de messages mis en quarantaine ? Puis-je rechercher des messages mis en quarantaine pour un domaine spécifique ?
 

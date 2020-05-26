@@ -16,13 +16,13 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Utilisez les étiquettes de confidentialité de l'infrastructure Microsoft Information Protection pour classifier et protéger les données de votre organisation, tout en veillant à ce que la productivité des utilisateurs et leur aptitude à collaborer ne soient pas compromises. Ces étiquettes peuvent appliquer des paramètres de protection incluant des marquages visuels de chiffrement, tels que des pieds de page et des filigranes.
-ms.openlocfilehash: 418a52a8a9798fa0e08a6a2d4951fe91e0685c1a
-ms.sourcegitcommit: 8e655c6cbb91bfb97efda9a99c39fac33eaa974a
+description: Utilisez les étiquettes de confidentialité de Microsoft information protection Framework pour classifier et protéger les données de votre organisation, sans entraver la productivité et la collaboration de l’utilisateur.
+ms.openlocfilehash: 76d6a57c02f2623b65287b5429c41728a07724bd
+ms.sourcegitcommit: 261d51b90a9ad53a6a42348c414b1b1e1230c37f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44213282"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44292542"
 ---
 # <a name="learn-about-sensitivity-labels"></a>En savoir plus sur les étiquettes de niveau de confidentialité
 

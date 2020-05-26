@@ -18,12 +18,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Découvrez comment utiliser l’outil de recherche de journal d’audit Office 365 pour résoudre les problèmes de prise en charge courants des comptes de messagerie.
-ms.openlocfilehash: 64ddffab518fdf54dba1ffca87548a65037b8eb7
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: e370a0220fcc42854d3cc570e175ab96845f7d4b
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034210"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44351127"
 ---
 # <a name="search-the-audit-log-to-investigate-common-support-issues"></a>Recherche du journal d’audit pour examiner les problèmes de prise en charge courants
 
@@ -128,7 +128,7 @@ Si vous déterminez que le transfert du courrier ne doit pas être défini sur l
 Set-Mailbox <mailbox alias> -ForwardingSmtpAddress $null 
 ```
 
-Pour plus d’informations sur les paramètres liés au transfert du courrier, consultez l’article [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/set-mailbox) .
+Pour plus d’informations sur les paramètres liés au transfert du courrier, consultez l’article [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/set-mailbox) .
 
 ## <a name="determine-if-a-user-deleted-email-items"></a>Déterminer si un utilisateur a supprimé des éléments de courrier électronique
 
@@ -192,9 +192,9 @@ Après avoir exécuté la recherche, tous les enregistrements d’audit de cette
 
 a. Dans le champ **ObjectID** , le nom complet de la règle de boîte de réception est affiché. Ce nom inclut l’alias de la boîte aux lettres de l’utilisateur (par exemple, Sarad) et le nom de la règle de boîte de réception (par exemple, « Move messages from admin »).
 
-b. Dans le champ **paramètres** , la condition de la règle de boîte de réception est affichée. Dans cet exemple, la condition est spécifiée par le paramètre *from* . La valeur définie pour le paramètre *from* indique que la règle de boîte de réception agit sur les messages envoyés par admin@alpinehouse.onmicrosoft.com. Pour obtenir la liste complète des paramètres qui peuvent être utilisés pour définir les conditions des règles de boîte de réception, consultez l’article [New-InboxRule](https://docs.microsoft.com/powershell/module/exchange/mailboxes/new-inboxrule) .
+b. Dans le champ **paramètres** , la condition de la règle de boîte de réception est affichée. Dans cet exemple, la condition est spécifiée par le paramètre *from* . La valeur définie pour le paramètre *from* indique que la règle de boîte de réception agit sur les messages envoyés par admin@alpinehouse.onmicrosoft.com. Pour obtenir la liste complète des paramètres qui peuvent être utilisés pour définir les conditions des règles de boîte de réception, consultez l’article [New-InboxRule](https://docs.microsoft.com/powershell/module/exchange/new-inboxrule) .
 
-c. Le paramètre *MoveToFolder* spécifie l’action pour la règle de boîte de réception. Dans cet exemple, les messages reçus à partir de admin@alpinehouse.onmicrosoft.com sont déplacés vers le dossier nommé *AdminSearch*. Consultez également l’article [New-InboxRule](https://docs.microsoft.com/powershell/module/exchange/mailboxes/new-inboxrule) pour obtenir la liste complète des paramètres qui peuvent être utilisés pour définir l’action d’une règle de boîte de réception.
+c. Le paramètre *MoveToFolder* spécifie l’action pour la règle de boîte de réception. Dans cet exemple, les messages reçus à partir de admin@alpinehouse.onmicrosoft.com sont déplacés vers le dossier nommé *AdminSearch*. Consultez également l’article [New-InboxRule](https://docs.microsoft.com/powershell/module/exchange/new-inboxrule) pour obtenir la liste complète des paramètres qui peuvent être utilisés pour définir l’action d’une règle de boîte de réception.
 
 d. Le champ **userid** indique l’utilisateur qui a créé la règle de boîte de réception spécifiée dans le champ **ObjectID** . Cet utilisateur est également affiché dans la colonne **utilisateur** de la page des résultats de la recherche.
 
@@ -202,7 +202,7 @@ d. Le champ **userid** indique l’utilisateur qui a créé la règle de boîte 
 
 Lors de l’examen des enregistrements d’audit dans le journal d’audit, vous pouvez voir des enregistrements indiquant qu’un utilisateur externe a été authentifié par Azure Active Directory et a réussi à se connecter à votre organisation. Par exemple, un administrateur dans contoso.onmicrosoft.com peut voir un enregistrement d’audit indiquant qu’un utilisateur d’une autre organisation (par exemple, fabrikam.onmicrosoft.com) a réussi à se connecter à contoso.onmicrosoft.com. De même, vous pouvez voir des enregistrements d’audit qui indiquent que les utilisateurs disposant d’un compte Microsoft (MSA), tels qu’un Outlook.com ou Live.com, ont réussi à se connecter à votre organisation. Dans ce cas, l’activité auditée est l' **utilisateur connecté**. 
 
-Il s'agit du comportement par défaut. Azure Active Directory (Azure AD), le service d’annuaire, autorise une opération appelée *authentification directe* lorsqu’un utilisateur externe tente d’accéder à un site SharePoint ou à un emplacement OneDrive de votre organisation. Lorsque l’utilisateur externe tente de le faire, il est invité à entrer ses informations d’identification. Azure AD utilise les informations d’identification pour authentifier l’utilisateur, ce qui signifie qu’Azure AD vérifie que l’utilisateur est bien ce qu’il dit. L’indication de la connexion réussie dans l’enregistrement d’audit est le résultat de l’authentification de l’utilisateur par Azure AD. La connexion réussie ne signifie pas que l’utilisateur a pu accéder à des ressources ou effectuer d’autres actions dans votre organisation. Il indique uniquement que l’utilisateur a été authentifié par Azure AD. Pour qu’un utilisateur direct puisse accéder aux ressources SharePoint ou OneDrive, un utilisateur de votre organisation doit partager explicitement une ressource avec l’utilisateur externe en lui envoyant une invitation de partage ou un lien de partage anonyme. 
+Ce comportement est inhérent au produit. Azure Active Directory (Azure AD), le service d’annuaire, autorise une opération appelée *authentification directe* lorsqu’un utilisateur externe tente d’accéder à un site SharePoint ou à un emplacement OneDrive de votre organisation. Lorsque l’utilisateur externe tente de le faire, il est invité à entrer ses informations d’identification. Azure AD utilise les informations d’identification pour authentifier l’utilisateur, ce qui signifie qu’Azure AD vérifie que l’utilisateur est bien ce qu’il dit. L’indication de la connexion réussie dans l’enregistrement d’audit est le résultat de l’authentification de l’utilisateur par Azure AD. La connexion réussie ne signifie pas que l’utilisateur a pu accéder à des ressources ou effectuer d’autres actions dans votre organisation. Il indique uniquement que l’utilisateur a été authentifié par Azure AD. Pour qu’un utilisateur direct puisse accéder aux ressources SharePoint ou OneDrive, un utilisateur de votre organisation doit partager explicitement une ressource avec l’utilisateur externe en lui envoyant une invitation de partage ou un lien de partage anonyme. 
 
 > [!NOTE]
 > Azure AD autorise l’authentification directe uniquement pour les *applications tierces*, telles que SharePoint Online et OneDrive entreprise. Il n’est pas autorisé pour d’autres applications tierces.

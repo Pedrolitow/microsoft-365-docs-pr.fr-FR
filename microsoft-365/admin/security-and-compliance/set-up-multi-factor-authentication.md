@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: 8f0454b2-f51a-4d9c-bcde-2c48e41621c6
 description: Découvrez comment configurer l’authentification multifacteur pour votre organisation.
 monikerRange: o365-worldwide
-ms.openlocfilehash: 893a4ae535dfb781a4f77ee57c0ead40fda8454f
-ms.sourcegitcommit: 185d62f41f6b173894ba6e3e87b11b2b5d02db58
+ms.openlocfilehash: ca1a8bd47e2fa5bbd7b7aed396debefaad10ea5e
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "44340773"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44351714"
 ---
 # <a name="set-up-multi-factor-authentication"></a>Configurer Multi-factor Authentification (MFA)
   
@@ -104,7 +104,7 @@ Si vous avez utilisé des [stratégies d’accès conditionnel de référence](h
 
 ### <a name="conditional-access-policies"></a>Stratégies d’accès conditionnel
 
-Créez, configurez ou activez les stratégies appropriées qui incluent le groupe d’utilisateurs qui nécessitent l’authentification MFA pour la connexion.
+Créez, configurez et activez les stratégies appropriées qui incluent le groupe d’utilisateurs qui nécessitent l’authentification MFA pour la connexion.
 
 ### <a name="per-user-mfa-not-recommended"></a>Authentification multifacteur par utilisateur (non recommandé)
 

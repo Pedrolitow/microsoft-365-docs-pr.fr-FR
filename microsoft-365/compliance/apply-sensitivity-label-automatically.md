@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Lorsque vous créez une étiquette de critère de diffusion, vous pouvez affecter automatiquement une étiquette à un document ou message électronique ou vous pouvez inviter les utilisateurs pour sélectionner l’étiquette que vous recommandez.
-ms.openlocfilehash: 7d31d77bdb08ce5ae7ef5580301b0432747da2a1
-ms.sourcegitcommit: 9d8816ddc3a97676ff947db80265e47b734f5462
+ms.openlocfilehash: 752a394b2e1c3d2219093f2342f597bdac38aee1
+ms.sourcegitcommit: 6ea9a910a8106a5f1aa589c55d166bfa67fd12a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/30/2020
-ms.locfileid: "43952627"
+ms.lasthandoff: 05/18/2020
+ms.locfileid: "44280554"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Appliquer automatiquement une étiquette sensibilité au contenu
 
@@ -48,7 +48,7 @@ Deux méthodes s’offrent à vous pour appliquer automatiquement une étiquette
 - **Étiquetage côté service lorsque le contenu est déjà enregistré (dans SharePoint Online ou dans OneDrive Entreprise) ou est envoyé par e-mail (traité par Exchange Online)**  : utilisez une stratégie d’étiquetage automatique, actuellement en préversion. 
     
     > [!NOTE]
-    > Consultez l’annonce de la préversion, [annonçant une préversion publique de la classification automatique avec des étiquettes de confidentialité dans les services Microsoft 365](https://techcommunity.microsoft.com/t5/security-privacy-and-compliance/announcing-public-preview-of-auto-classification-with/ba-p/1279961).
+    > Consultez l’aperçu de l’annonce, [Annonçant une préversion publique de la classification automatique avec les étiquettes de confidentialité dans les services Microsoft 365](https://techcommunity.microsoft.com/t5/security-privacy-and-compliance/announcing-public-preview-of-auto-classification-with/ba-p/1279961) et la conférence Web [Présentation de SharePoint & l’étiquetage automatique de OneDrive avec des étiquettes de confidentialité](https://aka.ms/SPOAutoLabelWebinar-Recording).
     
     Cette méthode est appelée classification automatique avec des étiquettes de confidentialité. Elle est également appelée étiquetage automatique des données au repos (documents dans SharePoint et dans OneDrive) et de données en transit (courriers envoyés ou reçus par Exchange). Dans le cas d’Exchange, cela n’inclut pas les e-mails au repos (boîtes aux lettres). 
     
@@ -76,7 +76,7 @@ Utilisez le tableau suivant pour vous aider à déterminer les différences de c
 |:-----|:-----|:-----|:-----|
 |Dépendance de l’application|[Oui](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps) |Non |
 |Limiter par emplacement|Non |Oui |
-|Conditions : classifieurs formés|Oui (préversion limitée) |Non |
+|Conditions : classifieurs formés|Oui |Non |
 |Conditions : options de partage et options supplémentaires pour le courrier électronique|Non |Oui |
 |Recommandations, info-bulle de stratégie et remplacements de l’utilisateur|Oui |Non |
 |Mode simulation|Non |Oui |
@@ -104,16 +104,12 @@ Pour en savoir plus sur les étiquettes parents et les sous-étiquettes, consult
 
 L’étiquetage automatique dans les applications Office pour Windows est pris en charge par le client d’étiquetage unifié Azure Information Protection. Pour l’étiquetage intégré dans les applications Office, cette fonctionnalité est [en mode Aperçu pour certaines applications](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps).
 
-Les paramètres d’étiquetage automatique des applications Office sont disponibles lorsque vous [créer ou modifier une étiquette de confidentialité](create-sensitivity-labels.md) :
-
-![Options d’étiquetage automatique pour les étiquettes de confidentialité](../media/sensitivity-labels-auto-labeling-options.png)
-
-Vous pouvez choisir d’appliquer automatiquement des étiquettes de confidentialité au contenu lorsque celui-ci contient des types spécifiques d’informations sensibles. Choisissez parmi une liste de types d’informations ou de classifieurs sensibles :
+Les paramètres d’étiquetage automatique des applications Office sont disponibles lorsque vous [créer ou modifier une étiquette de confidentialité](create-sensitivity-labels.md). Vous pouvez choisir d’appliquer automatiquement des étiquettes de confidentialité au contenu lorsque des informations sensibles sont détectées. Choisissez parmi une liste de types d’information sensibles ou de classificateurs pouvant être formés :
 
 ![Conditions de l’étiquetage automatique dans les applications Office](../media/sensitivity-labels-conditions.png)
 
 > [!NOTE]
-> Pour le moment, l’option des **classifieurs** se présente sous la forme d’une version d’évaluation limitée et vous devez envoyer un formulaire à Microsoft pour activer cette fonctionnalité pour votre client. Pour plus d’informations, consultez l’article de blog [annonçant l'étiquetage automatique dans les applications Office à l'aide de classifieurs intégrés (édition limitée)](https://techcommunity.microsoft.com/t5/security-privacy-and-compliance/announcing-automatic-labeling-in-office-apps-using-built-in/ba-p/1192889).
+> L’option pour **classifieurs pouvant être formés** est actuellement déployée sur les clients en version publique. Si cette option n’apparaît pas, réessayez dans quelques jours.
 
 Lorsqu’une étiquette de confidentialité est appliquée automatiquement, les utilisateurs voit une notification dans leur application Office. Par exemple :
 
@@ -131,22 +127,25 @@ De plus, vous pouvez choisir si une condition doit détecter tous les types d’
 
 ![Options pour le nombre d’instances et la précision des correspondances](../media/Sensitivity-labels-instance-count-match-accuracy.png)
 
-### <a name="configuring-classifiers-for-a-label"></a>Configuration des classifieurs pour une étiquette
+### <a name="configuring-trainable-classifiers-for-a-label"></a>Configuration des classifieurs pouvant être formés pour une étiquette
 
-Lorsque vous sélectionnez l’option **Classifieurs**, sélectionnez un ou plusieurs classifieurs prédéfinis :
+Lorsque vous sélectionnez l’option **Classifieurs pouvant être formés**, sélectionnez un ou plusieurs classifieurs pouvant être formés prédéfinis. Si vous avez créé vos propres classifieurs pouvant être formés personnalisés, vous pouvez également les sélectionner :
 
-![Options pour les classifieurs et les étiquettes de confidentialité](../media/sensitivity-labels-classifers.png)
+![Options pour les classifieurs pouvant être formés et les étiquettes de confidentialité](../media/sensitivity-labels-classifers.png)
+
+> [!CAUTION]
+> Nous déprécions le **langage inconvenant** classifieur intégré, car il génère un grand nombre de faux positifs. N’utilisez pas ce classifieur intégré et si vous l’utilisez actuellement, vous devez déplacer vos processus métier. Nous vous recommandons d’utiliser les classifieurs intégrés de **Harcèlement ciblée** , de **blasphème** et de **Menace** à la place.
 
 Pour plus d’informations sur ces classifieurs, voir [Prise en main des classifieurs de formation (préversion)](classifier-getting-started-with.md).
 
-Pendant la période d’évaluation, les applications suivantes prennent en charge les classifieurs pour les étiquettes de confidentialité :
+Pendant la période d’évaluation, les applications suivantes prennent en charge les classifieurs pouvant être formés pour les étiquettes de confidentialité :
 
-- Applications Microsoft 365 pour les applications de bureau d’entreprise pour Windows, à partir d’[Office Insider](https://office.com/insider) :
+- Microsoft 365 applications pour les entreprises (anciennement Office 365 ProPlus) pour Windows, [Office Insider](https://office.com/insider):
     - Word
     - Excel
     - PowerPoint
 
-- Office pour les applications Web, lorsque vous avez [activé les étiquettes de confidentialité pour les fichiers Office dans SharePoint et OneDrive (préversion publique)](sensitivity-labels-sharepoint-onedrive-files.md) :
+- Office pour les applications Web, lorsque vous avez [activé les étiquettes de confidentialité pour les fichiers Office dans SharePoint et OneDrive](sensitivity-labels-sharepoint-onedrive-files.md) :
     - Word
     - Excel
     - PowerPoint
@@ -176,7 +175,7 @@ Spécifique à l’étiquetage intégré :
 
 - Pour les étiquettes recommandées dans les versions de bureau de Word, le contenu sensible ayant déclenché la recommandation est signalé de sorte que les utilisateurs puissent examiner et supprimer le contenu sensible au lieu d’appliquer l’étiquette de confidentialité recommandée.
 
-- Pour plus d’informations sur l’application de ces étiquettes dans les applications Office, les captures d’écran et la détection d’informations sensibles, voir [Appliquer ou recommander automatiquement des étiquettes de confidentialité à vos fichiers et e-mails dans Office](https://support.office.com/en-us/article/automatically-apply-or-recommend-sensitivity-labels-to-your-files-and-emails-in-office-622e0d9c-f38c-470a-bcdb-9e90b24d71a1).
+- Pour plus d’informations sur l’application de ces étiquettes dans les applications Office, les captures d’écran et la détection d’informations sensibles, voir [Appliquer ou recommander automatiquement des étiquettes de confidentialité à vos fichiers et e-mails dans Office](https://support.office.com/fr-FR/article/automatically-apply-or-recommend-sensitivity-labels-to-your-files-and-emails-in-office-622e0d9c-f38c-470a-bcdb-9e90b24d71a1).
 
 Spécifique au client d’étiquetage unifié Azure Information Protection :
 
@@ -298,5 +297,5 @@ Vous pouvez également afficher les résultats de votre stratégie d’étiqueta
 - La **visionneuse de contenu de l’Explorateur de contenu** vous permet de voir le contenu du fichier.
 
 > [!TIP]
-> Vous pouvez également utiliser l’Explorateur de contenu pour identifier les emplacements contenant des documents non étiquetés qui contiennent des informations sensibles. À l’aide de ces informations, songez à ajouter ces emplacements à votre stratégie d’étiquetage automatique, et incluez les types d’informations sensibles identifiés comme règles.
+> Vous pouvez également utiliser l’Explorateur de contenu pour identifier les emplacements qui ont des documents contenant des informations sensibles, mais qui ne sont pas étiquetés. À l’aide de ces informations, songez à ajouter ces emplacements à votre stratégie d’étiquetage automatique, et incluez les types d’informations sensibles identifiés comme règles.
 

@@ -13,12 +13,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Découvrez comment configurer la clé client pour les fichiers Microsoft 365 pour Exchange Online, Skype entreprise, SharePoint Online, OneDrive entreprise et Teams.
-ms.openlocfilehash: c9c02f697e04a5cd01ddce1546b6712091712025
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: d9438b1578b5708e9b7740f001da3870c3616c39
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634196"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44352271"
 ---
 # <a name="set-up-customer-key"></a>Configurer la clé client
 
@@ -312,7 +312,7 @@ Backup-AzKeyVaultKey -VaultName <vault name> -Name <key name>
 -OutputFile <filename.backup>
 ```
 
-Assurez-vous que votre fichier de `.backup`sortie utilise le suffixe.
+Assurez-vous que votre fichier de sortie utilise le suffixe `.backup` .
   
 Le fichier de sortie résultant de cette cmdlet est chiffré et ne peut pas être utilisé en dehors du coffre-fort de clés Azure. La sauvegarde ne peut être restaurée qu’à partir de l’abonnement Azure à partir duquel la sauvegarde a été effectuée.
   
@@ -448,7 +448,7 @@ Affecter la DEP à une boîte aux lettres à l’aide de la cmdlet Set-Mailbox. 
 Set-Mailbox -Identity <MailboxIdParameter> -DataEncryptionPolicy <PolicyName>
 ```
 
-Où *MailboxIdParameter* spécifie une boîte aux lettres. Pour plus d’informations sur la cmdlet Set-Mailbox, consultez la rubrique [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/set-mailbox?view=exchange-ps).
+Où *MailboxIdParameter* spécifie une boîte aux lettres. Pour plus d’informations sur la cmdlet Set-Mailbox, consultez la rubrique [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/set-mailbox?view=exchange-ps).
   
 ### <a name="validate-mailbox-encryption"></a>Valider le chiffrement de boîtes aux lettres
 

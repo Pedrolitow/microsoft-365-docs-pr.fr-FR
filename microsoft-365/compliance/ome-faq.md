@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 04/13/2020
+ms.date: 05/22/2020
 audience: ITPro
 ms.topic: overview
 ms.service: O365-seccomp
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 0432dce9-d9b6-4e73-8a13-4a932eb0081e
 description: Vous avez une question sur la façon dont les nouvelles fonctionnalités de protection des messages fonctionnent ? Recherchez une réponse ici.
-ms.openlocfilehash: 75b414aecfbe9d3952d7e3c5994946775d353a6f
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+ms.openlocfilehash: f7c6de7eba9cb5e0f165b345b5c97e98cb96b870
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44049519"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44352079"
 ---
 # <a name="message-encryption-faq"></a>FAQ sur le chiffrement de messages
 
@@ -28,7 +28,7 @@ Vous avez une question sur la façon dont les nouvelles fonctionnalités de prot
 ## <a name="what-is-office-365-message-encryption-ome"></a>Qu’est-ce que le chiffrement de messages Office 365 (OME) ?
 
 OME combine les fonctionnalités de chiffrement de courrier électronique et de gestion des droits. Les fonctionnalités de gestion des droits sont gérées par Azure information protection.
-  
+
 ## <a name="who-can-use-ome"></a>Qui peut utiliser OME ?
 
 Vous pouvez utiliser les nouvelles fonctionnalités de OME dans les conditions suivantes :
@@ -137,9 +137,9 @@ Oui. Utilisez des règles de flux de messagerie dans Exchange Online pour chiffr
 
 Les administrateurs peuvent configurer une règle de flux de messagerie pour supprimer le chiffrement du courrier sortant. Vous ne pouvez pas configurer une règle pour supprimer le chiffrement pour le courrier entrant.
 
-## <a name="can-i-automatically-encrypt-messages-by-setting-up-policies-in-data-loss-prevention-dlp-through-the-security-amp-compliance-center"></a>Puis-je chiffrer automatiquement les messages en configurant des stratégies de protection contre la perte de &amp; données (DLP) via le centre de sécurité conformité ?
+## <a name="can-i-automatically-encrypt-messages-by-setting-up-policies-in-data-loss-prevention-dlp-through-the-security-amp-compliance-center"></a>Puis-je chiffrer automatiquement les messages en configurant des stratégies de protection contre la perte de données (DLP) via le centre de sécurité &amp; conformité ?
 
-OK! Vous pouvez configurer des règles de flux de messagerie dans Exchange Online ou à l’aide de &amp; DLP dans le centre de sécurité conformité.
+OK! Vous pouvez configurer des règles de flux de messagerie dans Exchange Online ou à l’aide de DLP dans le centre de sécurité &amp; conformité.
   
 ## <a name="can-i-customize-encrypted-messages-with-my-company-branding"></a>Puis-je personnaliser les messages chiffrés avec mon entreprise ?
 
@@ -185,3 +185,9 @@ Il existe actuellement deux limitations connues :
 - Nous ne prenons en charge que l’attribution directe des utilisateurs à la boîte aux lettres partagée. Nous ne prenons pas en charge l’affectation via un groupe de sécurité à extension messagerie.
 
 - Vous ne pouvez pas ouvrir les pièces jointes aux courriers électroniques que vous recevez sur les appareils mobiles à l’aide d’Outlook Mobile.
+
+## <a name="what-do-i-do-if-i-dont-receive-the-one-time-pass-code-after-i-requested-it"></a>Que faire si je ne reçois pas le code d’accès unique une fois qu’il a été demandé ?
+
+Tout d’abord, vérifiez le dossier courrier indésirable dans votre client de messagerie. Les paramètres DKIM et DMARC de votre organisation peuvent entraîner l’expiration de ces messages filtrés en tant que courrier indésirable.
+
+Ensuite, vérifiez la mise en quarantaine dans le centre de sécurité & conformité. En règle générale, les messages contenant un code d’accès unique, en particulier ceux qui sont les premiers destinataires de votre organisation, finissent en quarantaine.

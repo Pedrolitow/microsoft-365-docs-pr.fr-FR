@@ -13,12 +13,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Après avoir configuré la clé client, Découvrez comment la gérer en restaurant les clés AKV et en gérant les autorisations et vos stratégies de chiffrement de données.
-ms.openlocfilehash: 4796fcef69e052725b635acb4170d73bb36de787
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: dbdbd61b4d06e183d8cc5461122e316b2b6b1797
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635600"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44352201"
 ---
 # <a name="manage-customer-key"></a>Gérer la clé client
 
@@ -88,7 +88,7 @@ Pour afficher la liste de tous les DEPs que vous avez créés pour Exchange Onli
   Get-DataEncryptionPolicy
   ```
 
-  Pour plus d’informations sur la cmdlet Get-DataEncryptionPolicy, consultez la rubrique [Get-DataEncryptionPolicy](https://docs.microsoft.com/powershell/module/exchange/encryption-and-certificates/get-dataencryptionpolicy?view=exchange-ps).
+  Pour plus d’informations sur la cmdlet Get-DataEncryptionPolicy, consultez la rubrique [Get-DataEncryptionPolicy](https://docs.microsoft.com/powershell/module/exchange/get-dataencryptionpolicy?view=exchange-ps).
 
 ### <a name="assign-a-dep-before-you-migrate-a-mailbox-to-the-cloud"></a>Affectation d’une DEP avant la migration d’une boîte aux lettres vers le Cloud
 
@@ -104,7 +104,7 @@ Pour affecter une DEP à une boîte aux lettres avant de la migrer vers Office 3
   Set-MailUser -Identity <GeneralMailboxOrMailUserIdParameter> -DataEncryptionPolicy <DataEncryptionPolicyIdParameter>
   ```
 
-  Où *GeneralMailboxOrMailUserIdParameter* spécifie une boîte aux lettres et *DATAENCRYPTIONPOLICYIDPARAMETER* est l’ID de la DEP. Pour plus d’informations sur la cmdlet Set-MailUser, voir [Set-MailUser](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/set-mailuser?view=exchange-ps).
+  Où *GeneralMailboxOrMailUserIdParameter* spécifie une boîte aux lettres et *DATAENCRYPTIONPOLICYIDPARAMETER* est l’ID de la DEP. Pour plus d’informations sur la cmdlet Set-MailUser, voir [Set-MailUser](https://docs.microsoft.com/powershell/module/exchange/set-mailuser?view=exchange-ps).
 
 ### <a name="determine-the-dep-assigned-to-a-mailbox"></a>Déterminer la DEP affectée à une boîte aux lettres
 
@@ -116,7 +116,7 @@ Pour déterminer la DEP affectée à une boîte aux lettres, utilisez la cmdlet 
    Get-MailboxStatistics -Identity <GeneralMailboxOrMailUserIdParameter> | fl DataEncryptionPolicyID
    ```
 
-   Où *GeneralMailboxOrMailUserIdParameter* spécifie une boîte aux lettres et DataEncryptionPolicyID renvoie le GUID de la DEP. Pour plus d’informations sur la cmdlet Get-MailboxStatistics, consultez la rubrique [Get-MailboxStatistics](https://docs.microsoft.com/powershell/module/exchange/mailboxes/get-mailboxstatistics?view=exchange-ps).
+   Où *GeneralMailboxOrMailUserIdParameter* spécifie une boîte aux lettres et DataEncryptionPolicyID renvoie le GUID de la DEP. Pour plus d’informations sur la cmdlet Get-MailboxStatistics, consultez la rubrique [Get-MailboxStatistics](https://docs.microsoft.com/powershell/module/exchange/get-mailboxstatistics?view=exchange-ps).
   
 2. Exécutez la cmdlet Get-DataEncryptionPolicy pour connaître le nom convivial de la DEP à laquelle la boîte aux lettres est affectée.
   
@@ -148,7 +148,7 @@ Le temps nécessaire pour effectuer des déplacements de boîtes aux lettres dé
 New-MoveRequest <alias>
 ```
 
-Pour plus d’informations sur cette cmdlet, consultez la rubrique [Get-MailboxStatistics](https://docs.microsoft.com/powershell/module/exchange/move-and-migration/new-moverequest?view=exchange-ps).
+Pour plus d’informations sur cette cmdlet, consultez la rubrique [Get-MailboxStatistics](https://docs.microsoft.com/powershell/module/exchange/new-moverequest?view=exchange-ps).
 
 ### <a name="verify-encryption-completes-for-sharepointonlineonedriveforbusinessandteamsfiles"></a>Vérifier que le chiffrement est terminé pour SharePoint Online, OneDrive entreprise et les fichiers teams
 
@@ -201,7 +201,7 @@ Pour lancer le chemin de purge des données, procédez comme suit :
 
 2. À l’aide d’un compte professionnel ou scolaire disposant de privilèges d’administrateur général dans votre organisation, [Connectez-vous à Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps).
 
-3. Pour chaque DEP contenant des boîtes aux lettres que vous souhaitez supprimer, exécutez la cmdlet [Set-DataEncryptionPolicy](https://docs.microsoft.com/powershell/module/exchange/encryption-and-certificates/set-dataencryptionpolicy) comme suit.
+3. Pour chaque DEP contenant des boîtes aux lettres que vous souhaitez supprimer, exécutez la cmdlet [Set-DataEncryptionPolicy](https://docs.microsoft.com/powershell/module/exchange/set-dataencryptionpolicy) comme suit.
 
     ```powershell
     Set-DataEncryptionPolicy <Policy ID> -PermanentDataPurgeRequested -PermanentDataPurgeReason <Reason> -PermanentDataPurgeContact <ContactName>

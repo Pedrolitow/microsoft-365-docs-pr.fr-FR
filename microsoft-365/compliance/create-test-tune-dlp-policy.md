@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-mar2020
 ms.assetid: 59414438-99f5-488b-975c-5023f2254369
 description: Dans cet article, vous apprendrez à créer, tester et régler une stratégie DLP en fonction des besoins de votre organisation.
-ms.openlocfilehash: 2cbf30f3d0c5d70aecce77c7a07820812699797a
-ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
+ms.openlocfilehash: 9f5f1b1f84ba44dbf52366d30b0e26bbf310e9fe
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "44327796"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44352221"
 ---
 # <a name="create-test-and-tune-a-dlp-policy"></a>Création, test et réglage d’une stratégie DLP
 
@@ -200,7 +200,7 @@ Lorsque vous êtes satisfait que votre stratégie DLP détecte des types d’inf
 
 ![Option d’activation de la stratégie](../media/DLP-create-test-tune-turn-on-policy.png)
  
-Si vous attendez que la stratégie prenne effet, [Connectez-vous à la sécurité & Centre de conformité PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps) et exécutez la [cmdlet Get-dlpcompliancepolicy permet](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/get-dlpcompliancepolicy?view=exchange-ps) pour afficher le DistributionStatus.
+Si vous attendez que la stratégie prenne effet, [Connectez-vous à la sécurité & Centre de conformité PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps) et exécutez la [cmdlet Get-dlpcompliancepolicy permet](https://docs.microsoft.com/powershell/module/exchange/get-dlpcompliancepolicy?view=exchange-ps) pour afficher le DistributionStatus.
 
 ![Exécution d’une cmdlet dans PowerShell](../media/DLP-create-test-tune-PowerShell.png)
 
@@ -214,6 +214,6 @@ Les stratégies qui restreignent le contenu présentent l’avertissement à l�
 
 ![Conseil de stratégie indiquant que le contenu est restreint](../media/DLP-create-test-tune-restrict-warning.png)
 
-## <a name="summary"></a>Résumé
+## <a name="summary"></a>Synthèse
 
 Les stratégies de protection contre la perte de données sont utiles pour les organisations de tous types. Le test de certaines stratégies DLP est un exercice à risque faible en raison du contrôle dont vous disposez sur les éléments tels que les conseils de stratégie, les remplacements des utilisateurs finaux et les rapports d’incident. Vous pouvez tester silencieusement certaines stratégies DLP afin de déterminer le type de violations qui se produisent dans votre organisation, puis de concevoir des stratégies avec des taux de faux positifs faibles, informer vos utilisateurs de ce qui est autorisé et non autorisé, puis déployer vos stratégies DLP dans l’organisation.

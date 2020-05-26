@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: Après avoir exporté et téléchargé les résultats d’une recherche de journal d’audit dans un fichier CSV, vous pouvez utiliser la fonctionnalité transformation JSON de l’éditeur de la requête Power dans Excel pour fractionner chaque propriété de l’objet JSON dans la colonne AuditData en sa propre colonne. Cela peut vous aider à localiser rapidement les données d’audit spécifiques que vous recherchez. Vous pouvez également utiliser PowerShell pour rechercher et exporter des enregistrements de journal d’audit.
-ms.openlocfilehash: c06fbe28a62cf04e1ffdd6ecf173d027e89b5074
-ms.sourcegitcommit: 72e43b9bf85dbf8f5cf2040ea6a4750d6dc867c9
+ms.openlocfilehash: 763a20a7da09007e54c0714b82b86ffe3586e501
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "43799927"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44352384"
 ---
 # <a name="export-configure-and-view-audit-log-records"></a>Exporter, configurer et afficher des enregistrements du journal d’audit
 
@@ -100,7 +100,7 @@ L’étape suivante consiste à utiliser la fonctionnalité transformation JSON 
 
 ## <a name="use-powershell-to-search-and-export-audit-log-records"></a>Utiliser PowerShell pour rechercher et exporter des enregistrements de journal d’audit
 
-Au lieu d’utiliser l’outil de recherche de journal d’audit dans le centre de sécurité & conformité, vous pouvez utiliser la cmdlet [Search-UnifiedAuditLog](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-unifiedauditlog) dans Exchange Online PowerShell pour exporter les résultats d’une recherche de journal d’audit dans un fichier CSV. Vous pouvez ensuite suivre la même procédure que celle décrite à l’étape 2 pour mettre en forme le journal d’audit à l’aide de l’éditeur de requête Power. L’un des avantages de l’utilisation de l’applet de commande PowerShell est que vous pouvez rechercher des événements à partir d’un service spécifique à l’aide du paramètre *RecordType* . Voici quelques exemples d’utilisation de PowerShell pour exporter des enregistrements d’audit dans un fichier CSV afin que vous puissiez utiliser l’éditeur de requête Power pour transformer l’objet JSON dans la colonne **AuditData** , comme décrit à l’étape 2.
+Au lieu d’utiliser l’outil de recherche de journal d’audit dans le centre de sécurité & conformité, vous pouvez utiliser la cmdlet [Search-UnifiedAuditLog](https://docs.microsoft.com/powershell/module/exchange/search-unifiedauditlog) dans Exchange Online PowerShell pour exporter les résultats d’une recherche de journal d’audit dans un fichier CSV. Vous pouvez ensuite suivre la même procédure que celle décrite à l’étape 2 pour mettre en forme le journal d’audit à l’aide de l’éditeur de requête Power. L’un des avantages de l’utilisation de l’applet de commande PowerShell est que vous pouvez rechercher des événements à partir d’un service spécifique à l’aide du paramètre *RecordType* . Voici quelques exemples d’utilisation de PowerShell pour exporter des enregistrements d’audit dans un fichier CSV afin que vous puissiez utiliser l’éditeur de requête Power pour transformer l’objet JSON dans la colonne **AuditData** , comme décrit à l’étape 2.
 
 Dans cet exemple, exécutez les commandes suivantes pour renvoyer tous les enregistrements liés aux opérations de partage SharePoint.
 

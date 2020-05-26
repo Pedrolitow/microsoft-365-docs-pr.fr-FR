@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 778338220cf7897f8a557fb1e335062d3effeac5
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: 6a66a5b6f6ad2480dfc3af212e7663ad3f869d10
+ms.sourcegitcommit: daad5f2f1994a812c2b9c78e7dd148d10c51f61d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44066417"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "44254317"
 ---
 # <a name="european-union-model-clauses"></a>Clauses contractuelles types de l’Union européenne
 
@@ -42,11 +42,11 @@ Le groupe a déterminé que la mise en œuvre des dispositions des accords avec 
 ## <a name="microsoft-in-scope-cloud-services"></a>Services Cloud Microsoft concernés
 
 - [Azure et Azure Government](https://aka.ms/AzureCompliance)
-- Sécurité de l’application cloud
+- Microsoft Cloud App Security
 - Services professionnels Microsoft : Premier et sur site pour Azure, Dynamics 365, Intune et pour les clients des entreprises moyennes et grandes de Microsoft 365 Entreprise
 - [Dynamics 365](https://aka.ms/d365-compliance-list)
 - Intune : Portion du service cloud service d’Intune Add-on Product et de la gestion des périphériques mobiles pour Office 365
-- Service Cloud Microsoft Flow, soit en service autonome, soit inclus dans un plan ou une suite Office 365 ou Dynamics 365
+- Service Cloud Power Automate (anciennement Microsoft Flow), soit en service autonome, soit inclus dans un plan ou une suite Office 365 ou Dynamics 365
 - [Office 365](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
 - Service Cloud Microsoft PowerApps, soit en service autonome, soit inclus dans un plan ou une suite Office 365 ou Dynamics 365
 - Service Cloud Power BI soit en service autonome, soit inclus dans un plan ou une suite Office 365

@@ -15,16 +15,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Apprenez à créer et importer un type d’informations sensibles personnalisé pour la protection contre la perte de données dans le Centre de sécurité et conformité.
-ms.openlocfilehash: b937cfe1ce4de7b380ef47d14d5fe4c500e173d3
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 536662737e2e3fc4fc2796b616adf59b544b2376
+ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632349"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44327786"
 ---
 # <a name="create-a-custom-sensitive-information-type-in-security--compliance-center-powershell"></a>Créer un type d’informations sensibles personnalisé dans l’interface PowerShell du Centre de sécurité et conformité
 
-La protection contre la perte de données (DLP) dans Microsoft 365 inclut de nombreux [types d’informations sensibles](what-the-sensitive-information-types-look-for.md) intégrés qui sont prêts à l’emploi dans vos stratégies DLP. Ces types intégrés permettent d’identifier et de protéger les numéros de carte de crédit, les numéros de compte bancaire, les numéros de passeport, et bien plus encore. 
+La protection contre la perte de données (DLP) dans Microsoft 365 inclut de nombreux [Définitions d’entités des types d’informations sensibles](sensitive-information-type-entity-definitions.md) intégrés qui sont prêts à l’emploi dans vos stratégies DLP. Ces types intégrés permettent d’identifier et de protéger les numéros de carte de crédit, les numéros de compte bancaire, les numéros de passeport, et bien plus encore. 
   
 Mais qu’en est-il si vous devez identifier et protéger un autre type d’informations sensibles (par exemple, l’ID d’un employé qui utilise un format spécifique de votre organisation) ? Pour ce faire vous pouvez créer un type personnalisé d’informations sensibles défini dans un fichier XML appelé *package de règles*.
   
@@ -908,6 +908,6 @@ Vous pouvez copier ce balisage, l’enregistrer sous la forme d’un fichier XS
 
 - [Vue d’ensemble des stratégies de protection contre la perte de données](data-loss-prevention-policies.md)
     
-- [Éléments recherchés par les types d’informations sensibles](what-the-sensitive-information-types-look-for.md)
+- [Définitions d’entités des types d’informations sensibles](sensitive-information-type-entity-definitions.md)
     
 - [Éléments recherchés par les fonctions DLP](what-the-dlp-functions-look-for.md)

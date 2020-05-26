@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 description: Les administrateurs peuvent apprendre à acheminer le courrier indésirable vers les dossiers de courrier indésirable de l’utilisateur dans un environnement hybride Exchange Online Protection.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a5b4d16c864b25c4d47910f0dd69f0ed3e71a0de
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 1d5d83f8cfb994499be98eccf77b36d83e1f3d7c
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44209474"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44351962"
 ---
 # <a name="configure-standalone-eop-to-deliver-spam-to-the-junk-email-folder-in-hybrid-environments"></a>Configurer EOP autonome pour envoyer du courrier indésirable dans le dossier courrier indésirable dans des environnements hybrides
 
@@ -44,7 +44,7 @@ Pour plus d’informations sur ces valeurs d’en-tête, consultez la rubrique [
 Cette rubrique décrit comment créer ces règles de flux de messagerie le centre d’administration Exchange et l’environnement de commande Exchange Management Shell (Exchange PowerShell) dans l’organisation Exchange locale.
 
 > [!TIP]
-> Au lieu de transmettre les messages au dossier de courrier indésirable de l’utilisateur local, vous pouvez configurer des stratégies de blocage du courrier indésirable dans EOP pour mettre en quarantaine les messages de courrier indésirable dans EOP. Pour plus d’informations, consultez la rubrique [configurer des stratégies de blocage du courrier indésirable dans EOP](configure-your-spam-filter-policies.md).
+> Au lieu de transmettre les messages au dossier de courrier indésirable de l’utilisateur local, vous pouvez configurer des stratégies de blocage du courrier indésirable dans EOP pour mettre en quarantaine les messages de courrier indésirable dans EOP. Si vous souhaitez en savoir plus, consultez l’article [Configurer les stratégies anti-courrier indésirable dans EOP](configure-your-spam-filter-policies.md).
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu'il faut savoir avant de commencer
 
@@ -52,13 +52,13 @@ Cette rubrique décrit comment créer ces règles de flux de messagerie le centr
 
 - Si et quand un message est remis dans le dossier courrier indésirable d’une organisation Exchange locale est contrôlé par une combinaison des paramètres suivants :
 
-  - Valeur du paramètre _SCLJunkThreshold_ sur la cmdlet [Set-OrganizationConfig](https://docs.microsoft.com/powershell/module/exchange/organization/set-organizationconfig) dans l’environnement de commande Exchange Management Shell. La valeur par défaut est 4, ce qui signifie qu’une valeur SCL supérieure ou égale à 5 doit transmettre le message au dossier de courrier indésirable de l’utilisateur.
+  - Valeur du paramètre _SCLJunkThreshold_ sur la cmdlet [Set-OrganizationConfig](https://docs.microsoft.com/powershell/module/exchange/set-organizationconfig) dans l’environnement de commande Exchange Management Shell. La valeur par défaut est 4, ce qui signifie qu’une valeur SCL supérieure ou égale à 5 doit transmettre le message au dossier de courrier indésirable de l’utilisateur.
 
-  - Valeur du paramètre _SCLJunkThreshold_ sur la cmdlet [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/set-mailbox) dans l’environnement de commande Exchange Management Shell. La valeur par défaut est vide ($null), ce qui signifie que le paramètre de l’organisation est utilisé.
+  - Valeur du paramètre _SCLJunkThreshold_ sur la cmdlet [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/set-mailbox) dans l’environnement de commande Exchange Management Shell. La valeur par défaut est vide ($null), ce qui signifie que le paramètre de l’organisation est utilisé.
 
   Pour plus d’informations, consultez la rubrique [seuils de probabilité de courrier indésirable Exchange](https://docs.microsoft.com/Exchange/antispam-and-antimalware/antispam-protection/scl).
 
-  - Si la règle de courrier indésirable est activée sur la boîte aux lettres (la valeur du paramètre _Enabled_ est $true sur la cmdlet [Set-MailboxJunkEmailConfiguration](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/set-mailboxjunkemailconfiguration) dans l’environnement de commande Exchange Management Shell). Il s’agit de la règle de courrier indésirable qui déplace le message vers le dossier courrier indésirable après la remise. Par défaut, la règle de courrier indésirable est activée sur les boîtes aux lettres. Pour plus d’informations, consultez la rubrique [Configure Exchange antispam settings on mailboxes](https://docs.microsoft.com/Exchange/antispam-and-antimalware/antispam-protection/configure-antispam-settings).
+  - Si la règle de courrier indésirable est activée sur la boîte aux lettres (la valeur du paramètre _Enabled_ est $true sur la cmdlet [Set-MailboxJunkEmailConfiguration](https://docs.microsoft.com/powershell/module/exchange/set-mailboxjunkemailconfiguration) dans l’environnement de commande Exchange Management Shell). Il s’agit de la règle de courrier indésirable qui déplace le message vers le dossier courrier indésirable après la remise. Par défaut, la règle de courrier indésirable est activée sur les boîtes aux lettres. Pour plus d’informations, consultez la rubrique [Configure Exchange antispam settings on mailboxes](https://docs.microsoft.com/Exchange/antispam-and-antimalware/antispam-protection/configure-antispam-settings).
   
 - Pour ouvrir le centre d’administration Exchange sur un serveur Exchange, consultez la rubrique [Exchange Admin Center in Exchange Server](https://docs.microsoft.com/Exchange/architecture/client-access/exchange-admin-center). Pour ouvrir l’environnement de commande Exchange Management Shell, reportez-vous à [https://docs.microsoft.com/powershell/exchange/exchange-server/open-the-exchange-management-shell](https://docs.microsoft.com/powershell/exchange/exchange-server/open-the-exchange-management-shell) .
 
@@ -126,7 +126,7 @@ New-TransportRule -Name "EOP SFV:SKS to SCL 6" -HeaderContainsMessageHeader "X-F
 New-TransportRule -Name "EOP SFV:SKB to SCL 6" -HeaderContainsMessageHeader "X-Forefront-Antispam-Report" -HeaderContainsWords "SFV:SKB" -SetSCL 6
 ```
 
-Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [New-TransportRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/new-transportrule).
+Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [New-TransportRule](https://docs.microsoft.com/powershell/module/exchange/new-transportrule).
 
 ## <a name="how-do-you-know-this-worked"></a>Comment savoir si cela a fonctionné ?
 

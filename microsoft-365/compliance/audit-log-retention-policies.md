@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Les stratégies de rétention du journal d’audit font partie des nouvelles fonctionnalités d’audit avancées de Microsoft 365. Une stratégie de rétention de journal d’audit vous permet de spécifier la durée de conservation des journaux d’audit dans votre organisation.
-ms.openlocfilehash: 25fbabd4c7524702a985616797b31730b14a2d8f
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 0b68eac3dde2f6802d5a5419f8f28b5df26e0a92
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636372"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44351039"
 ---
 # <a name="manage-audit-log-retention-policies"></a>Gérer les stratégies de rétention du journal d'audit
 
@@ -111,7 +111,7 @@ Voici un autre exemple de création d’une stratégie de rétention de journal 
 New-UnifiedAuditLogRetentionPolicy -Name "SixMonth retention for admin logons" -RecordTypes AzureActiveDirectoryStsLogon -Operations UserLoggedIn -UserIds admin@contoso.onmicrosoft.com -RetentionDuration SixMonths -Priority 25
 ```
 
-Pour plus d’informations, voir [New-UnifiedAuditLogRetentionPolicy](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/new-unifiedauditlogretentionpolicy).
+Pour plus d’informations, voir [New-UnifiedAuditLogRetentionPolicy](https://docs.microsoft.com/powershell/module/exchange/new-unifiedauditlogretentionpolicy).
 
 ## <a name="view-audit-log-retention-policies"></a>Afficher les stratégies de rétention du journal d'audit
 
@@ -124,13 +124,13 @@ Get-UnifiedAuditLogRetentionPolicy | Sort-Object -Property Priority -Descending 
 > [!NOTE]
 > Pour l’instant, l’applet de commande **Get-UnifiedAuditLogRetentionPolicy** ne renvoie pas la stratégie par défaut du journal d’audit pour votre organisation.
 
-Pour plus d’informations, voir [Get-UnifiedAuditLogRetentionPolicy](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/get-unifiedauditlogretentionpolicy).
+Pour plus d’informations, voir [Get-UnifiedAuditLogRetentionPolicy](https://docs.microsoft.com/powershell/module/exchange/get-unifiedauditlogretentionpolicy).
 
 ## <a name="more-information"></a>Plus d’informations
 
-- Pour modifier une stratégie de rétention de journal d’audit existante, utilisez l’applet de commande **UnifiedAuditLogRetentionPolicy** dans le Centre de sécurité & conformité PowerShell. Pour plus d’informations, voir [Set-UnifiedAuditLogRetentionPolicy](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/set-unifiedauditlogretentionpolicy).
+- Pour modifier une stratégie de rétention de journal d’audit existante, utilisez l’applet de commande **UnifiedAuditLogRetentionPolicy** dans le Centre de sécurité & conformité PowerShell. Pour plus d’informations, voir [Set-UnifiedAuditLogRetentionPolicy](https://docs.microsoft.com/powershell/module/exchange/set-unifiedauditlogretentionpolicy).
 
-- Pour supprimer une stratégie de rétention de journal d’audit, utilisez l’applet de commande **Remove-UnifiedAuditLogRetentionPolicy** dans le Centre de sécurité & conformité PowerShell. La suppression complète de la stratégie peut prendre jusqu’à 30 minutes. Pour plus d’informations, voir [Remove-UnifiedAuditLogRetentionPolicy](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/remove-unifiedauditlogretentionpolicy).
+- Pour supprimer une stratégie de rétention de journal d’audit, utilisez l’applet de commande **Remove-UnifiedAuditLogRetentionPolicy** dans le Centre de sécurité & conformité PowerShell. La suppression complète de la stratégie peut prendre jusqu’à 30 minutes. Pour plus d’informations, voir [Remove-UnifiedAuditLogRetentionPolicy](https://docs.microsoft.com/powershell/module/exchange/remove-unifiedauditlogretentionpolicy).
 
 - Comme indiqué précédemment, les enregistrements d’audit pour les opérations dans Azure Active Directory, Exchange et SharePoint sont conservés pendant un an. Le tableau suivant répertorie tous les types d’enregistrements (pour chaque service) inclus dans la stratégie de rétention par défaut du journal d’audit. Cela signifie que les journaux d’audit pour toute opération ayant ce type d’enregistrement sont conservés pendant un an, sauf si une stratégie de rétention de journal d’audit personnalisée est prioritaire pour un type d’enregistrement, une opération ou un utilisateur spécifique. La valeur Enum (affichée comme valeur de la propriété RecordType dans un enregistrement d’audit) pour chaque type d’enregistrement est affichée entre parenthèses.
 

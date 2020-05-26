@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 titleSuffix: Office 365 Compliance
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 9cbde149419320495e3848867846322733cb56f9
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 54ff4012767b156bc72289473e289fa4d93d1a2c
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44033654"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44352157"
 ---
 # <a name="configure-supervision-policies-in-office-365"></a>Configurer des stratégies de surveillance dans Office 365
 
@@ -83,7 +83,7 @@ Lorsque vous sélectionnez un groupe Microsoft 365 pour les utilisateurs supervi
 
 Pour gérer les utilisateurs supervisés dans les grandes organisations d’entreprise, il se peut que vous deviez surveiller tous les utilisateurs entre les grands groupes. Vous pouvez utiliser PowerShell pour configurer un groupe de distribution pour une stratégie de surveillance globale pour le groupe affecté. Cela vous permet de surveiller des milliers d’utilisateurs à l’aide d’une seule stratégie et de mettre à jour la stratégie de supervision lorsque de nouveaux employés rejoignent votre organisation.
 
-1. Créez un [groupe de distribution](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/new-distributiongroup?view=exchange-ps) dédié pour votre stratégie de surveillance globale avec les propriétés suivantes : Assurez-vous que ce groupe de distribution n’est pas utilisé à d’autres fins ou d’autres services Office 365.
+1. Créez un [groupe de distribution](https://docs.microsoft.com/powershell/module/exchange/new-distributiongroup?view=exchange-ps) dédié pour votre stratégie de surveillance globale avec les propriétés suivantes : Assurez-vous que ce groupe de distribution n’est pas utilisé à d’autres fins ou d’autres services Office 365.
 
     - **MemberDepartRestriction = fermé**. Garantit que les utilisateurs ne peuvent pas se supprimer eux-mêmes du groupe de distribution.
     - **MemberJoinRestriction = fermé**. Garantit que les utilisateurs ne peuvent pas s’ajouter eux-mêmes au groupe de distribution.
@@ -124,7 +124,7 @@ Pour ce faire, vous pouvez vous ajouter en tant que membre du groupe de rôles e
   
 ### <a name="add-members-to-the-supervisory-review-role-group"></a>Ajouter des membres au groupe de rôles examen de surveillance
 
-1. Connectez- [https://protection.office.com](https://protection.office.com) vous à l’aide des informations d’identification d’un compte d’administrateur de votre organisation.
+1. Connectez-vous [https://protection.office.com](https://protection.office.com) à l’aide des informations d’identification d’un compte d’administrateur de votre organisation.
 
 2. Dans le centre de sécurité & conformité, accédez à **autorisations**.
 
@@ -134,11 +134,11 @@ Pour ce faire, vous pouvez vous ajouter en tant que membre du groupe de rôles e
 
 ### <a name="create-a-new-role-group"></a>Créer un groupe de rôles
 
-1. Connectez- [https://protection.office.com/permissions](https://protection.office.com/permissions) vous à l’aide des informations d’identification d’un compte d’administrateur de votre organisation.
+1. Connectez-vous [https://protection.office.com/permissions](https://protection.office.com/permissions) à l’aide des informations d’identification d’un compte d’administrateur de votre organisation.
 
-2. Dans le centre de sécurité & conformité, accédez à **autorisations** , puis cliquez sur**+** ajouter ().
+2. Dans le centre de sécurité & conformité, accédez à **autorisations** , puis cliquez sur Ajouter ( **+** ).
 
-3. Dans la section **rôles** , cliquez sur Ajouter**+**() et faites défiler vers le bas jusqu’à administrateur de la **vérification de surveillance**. Ajoutez ce rôle au groupe de rôles.
+3. Dans la section **rôles** , cliquez sur Ajouter ( **+** ) et faites défiler vers le bas jusqu’à administrateur de la **vérification de surveillance**. Ajoutez ce rôle au groupe de rôles.
 
 4. Dans la section **membres** , ajoutez les personnes dont vous souhaitez gérer la surveillance des communications pour votre organisation.
 
@@ -158,7 +158,7 @@ Utilisez un éditeur de texte (comme le bloc-notes) pour créer un fichier qui i
 
 ### <a name="create-custom-sensitive-information-types"></a>Créer des types d’informations sensibles personnalisés
 
-1. Créez un nouveau type d’informations sensibles et ajoutez votre dictionnaire personnalisé dans le centre de sécurité & conformité. Naviguez jusqu’à **types d’informations sensibles** sur les **classifications** \> et suivez les étapes de l' **Assistant Nouveau type d’informations sensibles**. Ici, vous allez :
+1. Créez un nouveau type d’informations sensibles et ajoutez votre dictionnaire personnalisé dans le centre de sécurité & conformité. Naviguez **Classifications** jusqu’à \> **types d’informations sensibles** sur les classifications et suivez les étapes de l' **Assistant Nouveau type d’informations sensibles**. Ici, vous allez :
 
     - Définir un nom et une description pour le type d’informations sensibles
     - Définir les éléments de proximité, de niveau de confiance et de modèle principal
@@ -167,11 +167,11 @@ Utilisez un éditeur de texte (comme le bloc-notes) pour créer un fichier qui i
 
     Pour plus d’informations, consultez [la rubrique créer un type d’informations sensibles personnalisé](create-a-custom-sensitive-information-type.md) et [créer un dictionnaire de mots clés](create-a-keyword-dictionary.md)
 
-    Une fois le dictionnaire/lexique personnalisé créé, vous pouvez afficher les mots clés configurés à l’aide de la cmdlet [Get-dlpkeyworddictionary permet](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/get-dlpkeyworddictionary) ou ajouter et supprimer des termes à l’aide de la cmdlet [Set-dlpkeyworddictionary permet](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/set-dlpkeyworddictionary) .
+    Une fois le dictionnaire/lexique personnalisé créé, vous pouvez afficher les mots clés configurés à l’aide de la cmdlet [Get-dlpkeyworddictionary permet](https://docs.microsoft.com/powershell/module/exchange/get-dlpkeyworddictionary) ou ajouter et supprimer des termes à l’aide de la cmdlet [Set-dlpkeyworddictionary permet](https://docs.microsoft.com/powershell/module/exchange/set-dlpkeyworddictionary) .
 
 ## <a name="step-4-set-up-a-supervision-policy-required"></a>Étape 4 : configurer une stratégie de surveillance (obligatoire)
   
-1. Connectez- [https://protection.office.com](https://protection.office.com) vous à l’aide des informations d’identification d’un compte d’administrateur de votre organisation.
+1. Connectez-vous [https://protection.office.com](https://protection.office.com) à l’aide des informations d’identification d’un compte d’administrateur de votre organisation.
 
 2. Dans le centre de sécurité & conformité, sélectionnez **surveillance**.
   
@@ -196,5 +196,5 @@ Une fois que vous avez créé une stratégie de supervision de communication, il
     >[!NOTE]
     >Les e-mails soumis à des stratégies définies sont traités en temps réel et peuvent être testés immédiatement après la configuration de la stratégie. Les conversations dans Microsoft teams peuvent prendre jusqu’à 24 heures pour être entièrement traitées dans une stratégie. 
 
-3. Connectez-vous à Microsoft 365 en tant que réviseur désigné dans la stratégie de surveillance des communications. Accédez à **surveillance** > de*votre stratégie* > personnalisée pour afficher le rapport de**la stratégie.**
+3. Connectez-vous à Microsoft 365 en tant que réviseur désigné dans la stratégie de surveillance des communications. Accédez à **surveillance**de  >  *votre stratégie personnalisée*  >  **Open** pour afficher le rapport de la stratégie.
 

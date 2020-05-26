@@ -14,12 +14,12 @@ search.appverid: MET150
 ms.assetid: 39db1659-0b12-4243-a21c-2614512dcb44
 description: Découvrez comment placer une boîte aux lettres en conservation pour litige, en conservant tout le contenu de la boîte aux lettres pendant une enquête.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 3ea5c07065788e342edcd0b5c70ef9dcaae48e16
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 8f4d95e1174c9070dd51f27ae9ab90c64bfeaafd
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035816"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44351049"
 ---
 # <a name="create-a-litigation-hold"></a>Créer une suspension pour litige
 
@@ -78,7 +78,7 @@ La commande précédente conserve les éléments indéfiniment, car la durée de
 Set-Mailbox <username> -LitigationHoldEnabled $true -LitigationHoldDuration <number of days>
 ```
 
-Pour plus d’informations, consultez [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/set-mailbox).
+Pour plus d’informations, consultez [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/set-mailbox).
 
 ## <a name="how-does-litigation-hold-work"></a>Comment fonctionne la conservation pour litige ?
 

@@ -19,12 +19,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Les administrateurs peuvent en savoir plus sur l’usurpation d’identité dans Exchange Online Protection (EOP), où vous pouvez autoriser ou bloquer des expéditeurs usurpés spécifiques.
-ms.openlocfilehash: fb5193566ee359dfe2e5652707c1846280a45c33
-ms.sourcegitcommit: 8d9509e617ede7cc5ba933c54fb9300d2d1c6344
+ms.openlocfilehash: 638f130c448f14bf7214afc705b5650311866fce
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/22/2020
-ms.locfileid: "44347842"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44351938"
 ---
 # <a name="configure-spoof-intelligence-in-eop"></a>Configurer l’intelligence des usurpations d’identité dans EOP
 
@@ -48,7 +48,7 @@ Lorsqu’un expéditeur usurpe une adresse de messagerie, il semble être un uti
 
   - Une société externe envoie un courrier électronique au nom d’une autre société (par exemple, un rapport automatisé ou une société de service de logiciel).
 
-L’intelligence d’usurpation d’identité, et en particulier la stratégie d’intelligence d’usurpation d’identité par défaut (et uniquement), permet de s’assurer que le courrier électronique usurpé envoyé par des expéditeurs légitimes ne se trouve pas dans les filtres de courrier indésirable de Microsoft 365 ou des systèmes de messagerie externes, tout en protégeant vos utilisateurs contre les attaques de courrier indésirable
+L’intelligence d’usurpation d’identité, et en particulier la stratégie d’intelligence d’usurpation par défaut (et uniquement), permet de s’assurer que le courrier électronique usurpé envoyé par des expéditeurs légitimes ne se trouve pas dans les filtres de courrier indésirable EOP ou les systèmes de messagerie externes, tout en protégeant vos utilisateurs contre le courrier indésirable ou le hameçonnage
 
 Vous pouvez gérer l’aide à la décision dans le centre de sécurité & conformité ou dans PowerShell (Exchange Online PowerShell pour les organisations Microsoft 365 avec des boîtes aux lettres dans Exchange Online ; environnement de ligne de commande Exchange pour les organisations sans boîtes aux lettres Exchange Online).
 
@@ -60,7 +60,7 @@ Vous pouvez gérer l’aide à la décision dans le centre de sécurité & confo
 
 - Des autorisations doivent vous être attribuées avant de pouvoir exécuter ces procédures. Pour modifier la stratégie d’aide à la décision d’usurpation d’identité ou activer ou désactiver l’intelligence d’usurpation d’identité, vous devez être membre des groupes de rôles gestion de l' **organisation** ou **administrateur de sécurité** . Pour un accès en lecture seule à la stratégie d’aide à la décision, vous devez être membre du groupe de rôles **lecteur de sécurité** . Pour des informations supplémentaires sur les groupes de rôles dans le Centre de sécurité et conformité, voir [Autorisations dans le Centre de sécurité et conformité](permissions-in-the-security-and-compliance-center.md).
 
-- Pour les paramètres recommandés pour l’aide à l’usurpation, [paramètres de stratégie anti-hameçonnage par défaut EOP](recommended-settings-for-eop-and-office365-atp.md#eop-default-anti-phishing-policy-settings).
+- Pour connaître les paramètres recommandés pour l’intelligence d’usurpation, voir paramètres de la [stratégie anti-hameçonnage par défaut EOP](recommended-settings-for-eop-and-office365-atp.md#eop-default-anti-phishing-policy-settings).
 
 ## <a name="use-the-security--compliance-center-to-manage-spoofed-senders"></a>Utiliser le centre de sécurité & conformité pour gérer les expéditeurs usurpés
 
@@ -140,7 +140,7 @@ Cet exemple renvoie des informations détaillées sur tous les expéditeurs auto
 Get-PhishFilterPolicy -AllowedToSpoof Yes -Detailed -SpoofType Internal
 ```
 
-Pour obtenir des informations détaillées sur la syntaxe et les paramètres, consultez la rubrique [Get-PhishFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/get-phishfilterpolicy).
+Pour obtenir des informations détaillées sur la syntaxe et les paramètres, consultez la rubrique [Get-PhishFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/get-phishfilterpolicy).
 
 Pour configurer les expéditeurs autorisés et bloqués dans l’intelligence des usurpations d’identité, procédez comme suit :
 
@@ -162,7 +162,7 @@ Pour configurer les expéditeurs autorisés et bloqués dans l’intelligence de
    Set-PhishFilterPolicy -Identity Default -SpoofAllowBlockList $UpdateSpoofedSenders
    ```
 
-Pour obtenir des informations détaillées sur la syntaxe et les paramètres, consultez la rubrique [Set-PhishFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/set-phishfilterpolicy).
+Pour obtenir des informations détaillées sur la syntaxe et les paramètres, consultez la rubrique [Set-PhishFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/set-phishfilterpolicy).
 
 ## <a name="use-the-security--compliance-center-to-configure-spoof-intelligence"></a>Utiliser le centre de sécurité & conformité pour configurer l’aide à l’usurpation d’identité
 
@@ -195,28 +195,16 @@ Pour vérifier que vous avez configuré l’intelligence des usurpations d’ide
    Get-PhishFilterPolicy -Detailed | Export-CSV "C:\My Documents\Spoofed Senders.csv"
    ```
 
-- Dans les organisations Microsoft 365 avec des boîtes aux lettres Exchange Online, effectuez l’une des opérations suivantes :
+- Dans le centre de sécurité & conformité, accédez à anti-hameçonnage de la stratégie de **gestion des menaces** \> **Policy** \> **Anti-phishing** et effectuez l’une des opérations suivantes : **ATP anti-phishing**  
 
-  - Dans le centre de sécurité & conformité, accédez à stratégie de **gestion** \> **Policy** \> **des menaces-hameçonnage** , \> cliquez sur **stratégie par défaut** et affichez les détails dans le menu volant.
+  - Sélectionnez une stratégie dans la liste. Dans le menu volant qui s’affiche, vérifiez les valeurs de la section **usurpation** .
+  - Cliquez sur **stratégie par défaut**. Dans le menu volant qui s’affiche, vérifiez les valeurs de la section **usurpation** .
 
-  - Dans Exchange Online PowerShell, exécutez la commande suivante et vérifiez les paramètres :
+- Dans Exchange Online PowerShell, remplacez \< Name par \> le paramètre par défaut Office 365 antiphishing ou le nom d’une stratégie personnalisée, puis exécutez la commande suivante pour vérifier les paramètres :
 
-    ```PowerShell
-    Get-AntiPhishPolicy -Identity "Office365 AntiPhish Default"
-    ```
-
-- Dans les organisations Microsoft 365 ATP, effectuez l’une des opérations suivantes :
-
-  - Dans le centre de sécurité & conformité, accédez **Threat management** à protection contre le hameçonnage de la stratégie de gestion des menaces \> **Policy** \> **ATP anti-phishing** et effectuez l’une des opérations suivantes :
-
-    - Sélectionnez une stratégie dans la liste. Dans le menu volant qui s’affiche, vérifiez les valeurs de la section **usurpation** .
-    - Cliquez sur **stratégie par défaut**. Dans le menu volant qui s’affiche, vérifiez les valeurs de la section **usurpation** .
-
-  - Dans Exchange Online PowerShell, remplacez \< nom par \> la valeur par défaut Office 365 antiphishing ou le nom d’une stratégie anti-hameçonnage personnalisée ATP, puis exécutez la commande suivante et vérifiez les paramètres :
-
-    ```PowerShell
-    Get-AntiPhishPolicy -Identity "<Name>"
-    ```
+  ```PowerShell
+  Get-AntiPhishPolicy -Identity "<Name>" | Format-List EnableAntiSpoofEnforcement,EnableUnauthenticatedSender,AuthenticationFailAction
+  ```
 
 ## <a name="other-ways-to-manage-spoofing-and-phishing"></a>Autres façons de gérer l’usurpation d’identité et le hameçonnage
 

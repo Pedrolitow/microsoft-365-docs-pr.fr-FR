@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Mises à niveau automatisées de Windows 7 vers Windows 10 pour de grandes entreprises
-ms.openlocfilehash: 575ffba84b2cd7b7cfe5267a35a9f36c75dbe306
-ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
+ms.openlocfilehash: c151c5488fdbc77dc2da7dd308bafb75b6bb5f22
+ms.sourcegitcommit: ad789f1e7bf9c9dc0d45c731373e667a26ed30b1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "44011550"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44221397"
 ---
 # <a name="windows-7-to-windows-10-automated-in-place-upgrades-for-large-organizations"></a>Mises à niveau locales automatisées de Windows 7 vers Windows 10 pour de grandes entreprises
 
@@ -90,7 +90,7 @@ L'[option de mise en cache](https://docs.microsoft.com/mem/configmgr/osd/deploy-
 
 Séquences de tâches préalables associées aux analyses de compatibilité
 
-Outre la possibilité de gagner du temps lors du téléchargement du package, vous pouvez préinstaller le package de mise à niveau et utiliser le programme d’installation de Windows pour évaluer si la mise à niveau sur place réussit avant d’exécuter la mise à niveau de Windows. La syntaxe de la ligne de commande suivante peut être utilisée pour effectuer une analyse de compatibilité silencieuse et déterminer si le programme d’installation de Windows évalue l’appareil comme étant prêt pour la mise à niveau.
+Outre la possibilité de gagner du temps lors du téléchargement du package, vous pouvez préinstaller le package de mise à niveau et utiliser le programme d’installation de Windows pour évaluer si la mise à niveau sur place réussit avant d’exécuter la mise à niveau de Windows. La syntaxe de la ligne de commande suivante peut être utilisée pour effectuer une analyse de compatibilité silencieuse et déterminer si le programme d’installation de Windows évalue l’appareil comme étant prêt pour la mise à niveau : **Setup.EXE /Auto Upgrade /Quiet /NoReboot /Compat ScanOnly**
 
 Les journaux sont ensuite envoyés à votre chemin d’accès au serveur défini et le programme d’installation de Windows ne s’affiche pas à l’utilisateur et se ferme sans aucune intervention de l’utilisateur.
 

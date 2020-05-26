@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: Découvrez comment reconnaître et corriger les attaques d’injections de formulaires personnalisés et de règles Outlook dans Office 365
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e18635b9b9d090dbc2808b5b8142b59ec1f29c6e
-ms.sourcegitcommit: 6007dbe2cf758c683de399f94023122c678bcada
+ms.openlocfilehash: b892a72c2016222d34df8c58fcda20d2d2b9ba74
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "44224588"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44351974"
 ---
 # <a name="detect-and-remediate-outlook-rules-and-custom-forms-injections-attacks"></a>Détecter et résoudre les attaques d’injections de formulaires personnalisés et de règles Outlook
 
@@ -175,17 +175,17 @@ Il existe deux cmdlets PowerShell à distance que vous pouvez utiliser pour supp
 
 1. Connectez-vous au serveur Exchange à l’aide de PowerShell à distance. Suivez les étapes de la procédure [connexion à des serveurs Exchange à l’aide de PowerShell à distance](https://docs.microsoft.com/powershell/exchange/exchange-server/connect-to-exchange-servers-using-remote-powershell).
 
-2. Si vous souhaitez supprimer complètement une seule règle, plusieurs règles ou toutes les règles d’une boîte aux lettres utilisent l’applet de commande [Remove-InboxRule](https://docs.microsoft.com/powershell/module/exchange/mailboxes/Remove-InboxRule) .
+2. Si vous souhaitez supprimer complètement une seule règle, plusieurs règles ou toutes les règles d’une boîte aux lettres utilisent l’applet de commande [Remove-InboxRule](https://docs.microsoft.com/powershell/module/exchange/Remove-InboxRule) .
 
-3. Si vous souhaitez conserver la règle et son contenu à des fins d’aide, utilisez la cmdlet [Disable-InboxRule](https:https://docs.microsoft.com/powershell/module/exchange/mailboxes/disable-inboxrule/library/dd298120(v=exchg.160).aspx) .
+3. Si vous souhaitez conserver la règle et son contenu à des fins d’aide, utilisez la cmdlet [Disable-InboxRule](https:https://docs.microsoft.com/powershell/module/exchange/disable-inboxrule/library/dd298120(v=exchg.160).aspx) .
 
 #### <a name="steps-for-mailboxes-in-exchange-online"></a>Étapes pour les boîtes aux lettres dans Exchange Online
 
 1. Suivez les étapes de la procédure [connexion à Exchange Online à l’aide de PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).
 
-2. Si vous souhaitez supprimer entièrement une seule règle, plusieurs règles ou toutes les règles d’une boîte aux lettres, utilisez la cmdlet [Remove-Inbox Rule](https://docs.microsoft.com/powershell/module/exchange/mailboxes/Remove-InboxRule) .
+2. Si vous souhaitez supprimer entièrement une seule règle, plusieurs règles ou toutes les règles d’une boîte aux lettres, utilisez la cmdlet [Remove-Inbox Rule](https://docs.microsoft.com/powershell/module/exchange/Remove-InboxRule) .
 
-3. Si vous souhaitez conserver la règle et son contenu à des fins d’aide, utilisez la cmdlet [Disable-InboxRule](https:https://docs.microsoft.com/powershell/module/exchange/mailboxes/disable-inboxrule/library/dd298120(v=exchg.160).aspx) .
+3. Si vous souhaitez conserver la règle et son contenu à des fins d’aide, utilisez la cmdlet [Disable-InboxRule](https:https://docs.microsoft.com/powershell/module/exchange/disable-inboxrule/library/dd298120(v=exchg.160).aspx) .
 
 ## <a name="how-to-minimize-future-attacks"></a>Comment limiter les attaques futures
 

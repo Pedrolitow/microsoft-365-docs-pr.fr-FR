@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 2cfce2c8-20c5-47f9-afc4-24b059c1bd76
 description: Les utilisateurs doivent disposer d’autorisations dans le centre de conformité Microsoft 365 Security & pour pouvoir gérer les fonctionnalités de sécurité ou de conformité.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d6071bb6260e0c0f524eb6e5d4e78c78fa8ff750
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 19358e3cca0c4d47338fe5fc72b671e36477ce7e
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44036667"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44351950"
 ---
 # <a name="give-users-access-to-the-security--compliance-center"></a>Octroi de l’accès au Centre de conformité et sécurité aux utilisateurs
 
@@ -50,11 +50,11 @@ Pour plus d’informations sur les différentes autorisations que vous pouvez ac
 
 3. Dans le centre de sécurité & conformité, accédez à **autorisations**.
 
-4. Dans la liste, choisissez le groupe de rôles auquel vous souhaitez ajouter l’utilisateur, puis cliquez sur **modifier** ![l'](../../media/O365-MDM-CreatePolicy-EditIcon.gif)icône modifier.
+4. Dans la liste, choisissez le groupe de rôles auquel vous souhaitez ajouter l’utilisateur, puis cliquez sur **modifier** l' ![ icône modifier ](../../media/O365-MDM-CreatePolicy-EditIcon.gif) .
 
-5. Dans la page des propriétés du groupe de rôles sous **membres**, cliquez sur](../../media/ITPro-EAC-AddIcon.gif) **Ajouter**![une icône et sélectionnez le nom de l’utilisateur (ou des utilisateurs) que vous souhaitez ajouter.
+5. Dans la page des propriétés du groupe de rôles sous **membres**, cliquez sur **Ajouter**une ![ icône ](../../media/ITPro-EAC-AddIcon.gif) et sélectionnez le nom de l’utilisateur (ou des utilisateurs) que vous souhaitez ajouter.
 
-6. Une fois que vous avez sélectionné tous les utilisateurs que vous souhaitez ajouter au groupe de rôles, cliquez sur **ajouter-\> ** puis sur **OK**.
+6. Une fois que vous avez sélectionné tous les utilisateurs que vous souhaitez ajouter au groupe de rôles, cliquez sur **ajouter- \> ** puis sur **OK**.
 
 7. Cliquez sur **Enregistrer** pour enregistrer les modifications apportées au groupe de rôles.
 
@@ -82,7 +82,7 @@ Pour plus d’informations sur les différentes autorisations que vous pouvez ac
 
    - _Membre_ est la boîte aux lettres, le groupe de sécurité universel ou l’ordinateur à ajouter au groupe de rôles. Vous ne pouvez spécifier qu’un membre à la fois.
 
-Pour plus d’informations sur la syntaxe et les paramètres, voir [Add-RoleGroupMember](https://docs.microsoft.com/powershell/module/exchange/role-based-access-control/Add-RoleGroupMember).
+Pour plus d’informations sur la syntaxe et les paramètres, voir [Add-RoleGroupMember](https://docs.microsoft.com/powershell/module/exchange/Add-RoleGroupMember).
 
 ### <a name="how-do-you-know-this-worked"></a>Comment savoir si cela a fonctionné ?
 
@@ -92,4 +92,4 @@ Pour vérifier que vous avez accordé aux utilisateurs l’accès au centre de s
 Get-RoleGroupMember -Identity "Organization Management"
 ```
 
-Pour plus d’informations sur la syntaxe et les paramètres, consultez la rubrique [Get-RoleGroupMember](https://docs.microsoft.com/powershell/module/exchange/role-based-access-control/Get-RoleGroupMember).
+Pour plus d’informations sur la syntaxe et les paramètres, consultez la rubrique [Get-RoleGroupMember](https://docs.microsoft.com/powershell/module/exchange/Get-RoleGroupMember).

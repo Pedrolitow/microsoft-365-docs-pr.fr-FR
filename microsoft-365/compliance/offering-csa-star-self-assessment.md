@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 03f80deca7ba9a65dd47ac814d15eb5a8f764f10
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: 5abbfff81bd79e200eeaf0db680245ae8e449cb0
+ms.sourcegitcommit: daad5f2f1994a812c2b9c78e7dd148d10c51f61d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44066447"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "44254187"
 ---
 # <a name="cloud-security-alliance-csa-star-self-assessment"></a>Auto-évaluation Azure CSA (Cloud Security Alliance) STAR
 
@@ -68,7 +68,7 @@ Elle permet aux CSP de documenter leur conformité avec les meilleures pratiques
 **À quels niveaux d’assurance CSA STAR les services Entreprise Cloud de Microsoft se situent-ils ?**
 
 - **Niveau 1** : **CSA STAR Self-Assessment** : Azure, Dynamics 365 et Office 365. L'autoévaluation est une offre gratuite des fournisseurs de service cloud pour documenter leurs contrôles de sécurité afin d'aider les clients à évaluer la sécurité du service.
-- **Niveau 2** : **Certification CSA STAR** : Azure, Cloud App Security, Intune et Power BI. La certification STAR est basée sur l'obtention de la certification ISO/IEC 27001 et la satisfaction des critères spécifiés dans la matrice CCM. Elle est attribuée après une évaluation tierce rigoureuse des contrôles et pratiques de sécurité d'un fournisseur de service cloud.
+- **Niveau 2** : **Certification CSA STAR** : Azure, Microsoft Cloud App Security, Intune et Power BI. La certification STAR est basée sur l'obtention de la certification ISO/IEC 27001 et la satisfaction des critères spécifiés dans la matrice CCM. Elle est attribuée après une évaluation tierce rigoureuse des contrôles et pratiques de sécurité d'un fournisseur de service cloud.
 - **Niveau 2** : **Attestation CSA STAR** : Azure et Intune. La CSA et l'AICPA ont collaboré pour fournir des directives à l'ACP à utiliser lors de missions SOC 2, à l'aide des critères de l'AICPA (principes d'approbation de services, AT 101) et de la CSA CCM. L’attestation STAR est basée sur ces directives et est attribuée après des évaluations indépendantes rigoureuses des fournisseurs de Cloud.
 
 ## <a name="resources"></a>Ressources

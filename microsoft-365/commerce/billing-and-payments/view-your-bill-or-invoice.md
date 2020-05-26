@@ -27,18 +27,18 @@ ms.custom:
 - OKR_SMB_Videos
 ms.assetid: 2ae3ea58-4fce-4592-91d6-46e9ae3ec218
 description: Recherchez votre facture ou relevé de facturation dans le Centre d’administration Microsoft 365. Vous pouvez également enregistrer et imprimer une copie de votre facture.
-ms.openlocfilehash: 9a7f6f7c28d429135959fa2612dd24721e35366b
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.openlocfilehash: 7425c0b49ff65fa0d5c777e3c7fdb7af99488a9d
+ms.sourcegitcommit: cf7c410268175e2633e9f0d65dc859c5034658e5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43942864"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "44232780"
 ---
 # <a name="view-your-bill-or-invoice"></a>Consulter votre facture
 
 Cet article s’adresse aux personnes dotées d’un abonnement à Microsoft 365 pour les entreprises. Pour suivre les étapes décrites dans cet article, vous devez être administrateur général ou administrateur de facturation.
   
-Si vous avez besoin d’aide pour identifier les frais qui apparaissent sur votre facture, reportez-vous à [Comprendre votre facture](understand-your-invoice2.md) pour bénéficier d’informations détaillées.
+Si vous avez besoin d’aide pour identifier les frais qui apparaissent sur votre facture, voir [Comprendre votre facture](understand-your-invoice2.md) pour bénéficier d’informations détaillées.
   
  **Vous n’êtes pas administrateur ?** Demandez de l’aide à votre administrateur informatique. 
   

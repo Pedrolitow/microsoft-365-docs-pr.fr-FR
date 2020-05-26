@@ -17,12 +17,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Cet article vous guidera, comment empêcher les messages de hameçonnage d’atteindre votre boîte aux lettres, Outlook.com et Outlook sur le Web.
-ms.openlocfilehash: 2172a9890d629dd840c3e2e2591d78546899d17e
-ms.sourcegitcommit: 6007dbe2cf758c683de399f94023122c678bcada
+ms.openlocfilehash: 9583161c9e64d6a24312565d68ae516a2be8606e
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "44224874"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44352453"
 ---
 # <a name="unverified-sender"></a>Expéditeur non vérifié
 
@@ -50,7 +50,7 @@ Les messages qui ne parvient pas à s’authentifier ne sont pas tous malveillan
 
 Si vous êtes un client Office 365, vous pouvez gérer cette fonctionnalité via le centre de sécurité & conformité d’Office 365.
 
-- Dans le centre de sécurité & conformité, les administrateurs globaux ou de sécurité peuvent activer ou désactiver la fonctionnalité via la protection contre l’usurpation d’identité dans le cadre de la stratégie anti-hameçonnage. En outre, vous pouvez utiliser la cmdlet **Set-antiphishpolicy permet** dans Exchange Online PowerShell. Pour plus d’informations, consultez la rubrique [anti-hameçonnage protection dans Office 365](anti-phishing-protection.md) et [Set-antiphishpolicy permet](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/set-antiphishpolicy).
+- Dans le centre de sécurité & conformité, les administrateurs globaux ou de sécurité peuvent activer ou désactiver la fonctionnalité via la protection contre l’usurpation d’identité dans le cadre de la stratégie anti-hameçonnage. En outre, vous pouvez utiliser la cmdlet **Set-antiphishpolicy permet** dans Exchange Online PowerShell. Pour plus d’informations, consultez la rubrique [anti-hameçonnage protection dans Office 365](anti-phishing-protection.md) et [Set-antiphishpolicy permet](https://docs.microsoft.com/powershell/module/exchange/set-antiphishpolicy).
 
     ![Modification des expéditeurs non authentifiés dans l’interface graphique.](../../media/unverified-sender-article-editing-unauthenticated-senders.jpg)
 
@@ -58,7 +58,7 @@ Si vous êtes un client Office 365, vous pouvez gérer cette fonctionnalité via
 
   - Ajoutez la paire de domaines par le biais de la vue d’aide à la décision. Pour plus d’informations, consultez la [procédure pas à pas : usurpation](walkthrough-spoof-intelligence-insight.md)d’information.
 
-  - Ajoutez la paire de domaines via la cmdlet **Set-PhishFilterPolicy** dans Exchange Online PowerShell. Pour plus d’informations, reportez-vous à [Set-PhishFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/set-phishfilterpolicy) et à [configurer les stratégies anti-hameçonnage et anti-hameçonnage d’Office 365 ATP](set-up-anti-phishing-policies.md).
+  - Ajoutez la paire de domaines via la cmdlet **Set-PhishFilterPolicy** dans Exchange Online PowerShell. Pour plus d’informations, reportez-vous à [Set-PhishFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/set-phishfilterpolicy) et à [configurer les stratégies anti-hameçonnage et anti-hameçonnage d’Office 365 ATP](set-up-anti-phishing-policies.md).
 
 De plus, nous n’appliquons pas le traitement de l’expéditeur non vérifié si le message a été remis à la boîte de réception via des règles de flux de messagerie (également appelées règles de transport) ou la liste des domaines approuvés (stratégies anti-courrier indésirable).
 
@@ -66,7 +66,7 @@ De plus, nous n’appliquons pas le traitement de l’expéditeur non vérifié 
 
 Si vous êtes un client Office 365, vous pouvez gérer cette fonctionnalité via le centre de sécurité & conformité d’Office 365, de la même manière que vous gérez le traitement des expéditeurs non vérifiés. Si vous ajoutez l’expéditeur à la liste d’usurpation d’identité usurpée, le traitement « via » ne sera pas appliqué.
 
-## <a name="frequently-asked-questions"></a>Foire aux questions
+## <a name="frequently-asked-questions"></a>Questions fréquentes (FAQ)
 
 ### <a name="what-criteria-does-outlookcom-and-outlook-win32-desktop-use-to-add-the--and-the-via-properties"></a>Quels sont les critères utilisés par Outlook.com et le bureau Win32 Outlook pour ajouter les propriétés «  ? » et « via » ?
 
@@ -84,7 +84,7 @@ Pour la balise via : en tant qu’expéditeur, vous devez vous assurer que le d
 
 Pas nécessairement. Office 365 peut avoir d’autres propriétés dans le message pour authentifier l’expéditeur.
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Sujets associés
 
 [Protéger votre compte de messagerie Outlook.com](https://support.microsoft.com/en-us/office/help-protect-your-outlook-com-email-account-a4f20fc5-4307-4ece-8231-6d4d4bd8a9ba)
 
