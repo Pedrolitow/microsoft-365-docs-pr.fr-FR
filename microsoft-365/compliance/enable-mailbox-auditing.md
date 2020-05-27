@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: aaca8987-5b62-458b-9882-c28476a66918
 description: La journalisation d’audit des boîtes aux lettres est activée par défaut (également appelée audit des boîtes aux lettres par défaut ou audit des boîtes aux lettres par défaut). En d’autres termes, certaines actions effectuées par les propriétaires de boîtes aux lettres, les délégués et les administrateurs sont automatiquement enregistrées dans un journal d’audit de boîte aux lettres, dans lequel vous pouvez rechercher des activités effectuées sur la boîte aux lettres.
-ms.openlocfilehash: f25232dd30fe0fba0f4cc31acae3235012bb025a
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: 03e32a11176530d26f33076331f8f6a2093e7200
+ms.sourcegitcommit: 87eff6e8a08cec3cb0464a3b765434717584a4a9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44352107"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "44371428"
 ---
 # <a name="manage-mailbox-auditing"></a>Gérer l’audit de boîte aux lettres
 
@@ -39,7 +39,8 @@ Voici quelques avantages de l’audit des boîtes aux lettres par défaut :
 - Vous disposez d’une stratégie d’audit de boîte aux lettres cohérente au sein de votre organisation (car vous auditez les mêmes actions pour toutes les boîtes aux lettres).
 
 > [!NOTE]
->* Il est important de garder à l’esprit la publication de l’audit des boîtes aux lettres sur par défaut : vous n’avez rien à faire pour gérer l’audit des boîtes aux lettres. Toutefois, pour en savoir plus, personnaliser l’audit des boîtes aux lettres à partir des paramètres par défaut ou le désactiver, cette rubrique peut vous aider. <br><br>* Par défaut, seuls les événements d’audit de boîte aux lettres pour E5 utilisateurs sont disponibles dans les recherches dans le journal d’audit dans le centre de sécurité & conformité ou via l’API activité de gestion d’Office 365. Pour plus d’informations, reportez-vous à la section [plus d’informations](#more-information) de cette rubrique.
+>* Il est important de garder à l’esprit la publication de l’audit des boîtes aux lettres sur par défaut : vous n’avez rien à faire pour gérer l’audit des boîtes aux lettres. Toutefois, pour en savoir plus, personnaliser l’audit des boîtes aux lettres à partir des paramètres par défaut ou le désactiver, cette rubrique peut vous aider.
+>- Par défaut, seuls les événements d’audit de boîte aux lettres pour E5 utilisateurs sont disponibles dans les recherches dans le journal d’audit dans le centre de sécurité & conformité ou via l’API activité de gestion d’Office 365. Pour plus d’informations, reportez-vous à la section [plus d’informations](#more-information) de cette rubrique.
 
 ## <a name="verify-mailbox-auditing-on-by-default-is-turned-on"></a>Vérifier que l’audit de boîte aux lettres activé est activé par défaut
 

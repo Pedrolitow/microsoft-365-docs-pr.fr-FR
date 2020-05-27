@@ -1,5 +1,5 @@
 ---
-title: Prise en main des classificateurs de formation (préversion)
+title: Prise en main des classificateurs pouvant être formés (préversion)
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -14,14 +14,14 @@ search.appverid:
 - MOE150
 - MET150
 description: Un classificateur Microsoft 365 pouvant être formé est un outil que vous pouvez former afin de reconnaître différents types de contenu en lui donnant des échantillons positifs et négatifs. Une fois que le classifieur est formé, vous confirmez que ses résultats sont précis. Vous l’utilisez ensuite pour effectuer une recherche dans le contenu de votre organisation et le classifier pour appliquer des étiquettes de rétention ou de sensibilité ou l’inclure dans la protection contre la perte de données (DLP) ou les stratégies de rétention.
-ms.openlocfilehash: ba24bbe76bce5e3a41345c80616a57d3fb67a5fc
-ms.sourcegitcommit: 2fbcecaa60e9f551738b9235bd380af807a6681a
+ms.openlocfilehash: de52c8c7f96d2d3c0383f27b17bcc5162bb662c5
+ms.sourcegitcommit: 87eff6e8a08cec3cb0464a3b765434717584a4a9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "44339912"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "44371462"
 ---
-# <a name="getting-started-with-trainable-classifiers-preview"></a>Prise en main des classificateurs de formation (préversion)
+# <a name="getting-started-with-trainable-classifiers-preview"></a>Prise en main des classificateurs pouvant être formés (préversion)
 
 La classification et l’étiquetage du contenu de sorte qu’il puisse être protégé et géré correctement est le point de départ de la discipline de protection des informations. Microsoft 365 propose trois façons de classer le contenu.
 
@@ -80,18 +80,18 @@ Il existe des classifieurs intégrés et des classifieurs de formation. L’obte
 Microsoft 365 est fourni avec cinq classifieurs intégrés recommandés :
 
 > [!CAUTION]
-> Nous détenons le classificateur intégré en **langage offensant** , car il a généré un nombre élevé de faux positifs. Ne l’utilisez pas et, si vous l’utilisez, vous devez déconnecter vos processus d’entreprise. Nous vous recommandons d’utiliser à la place les classifieurs intégrés de **menace**, de **blasphème**et de **harcèlement** .
+> Nous déprécions le **langage inconvenant** classifieur intégré, car il génère un grand nombre de faux positifs. Ne l’utilisez pas et, si vous l’utilisez, vous devez déconnecter vos processus d’entreprise. Nous vous recommandons d’utiliser à la place les classifieurs intégrés de **menace**, de **blasphème**et de **harcèlement** .
 
 - **CV**: détecte les éléments qui sont des comptes textuels des qualifications personnelles, éducatives, qualifications professionnelles, expérience professionnelle et autres informations d’identification personnelle d’un demandeur.
 - **Code source**: détecte les éléments qui contiennent un ensemble d’instructions et d’instructions écrites dans les 25 principaux langages de programmation informatique utilisés sur GitHub
 
-|nom de la langue|||||
-|---------|---------|---------|---------|---------|
-|3.0|C        |C#       |C++     |Clojure  |
-|CoffeeScript|CSS     |Activer       |Haskell |HTML     |
-|Java     |JavaScript|Privilège      |MATLAB   |Objective-C|
-|Langage     |PHP      |Python   |R        |Ruby     |
-|Scalaire    |Shell    |Rapide    |6,7      |Script vim|
+  |nom de la langue|||||
+  |---------|---------|---------|---------|---------|
+  |3.0|C        |C #       |C++     |Clojure  |
+  |CoffeeScript|CSS     |Activer       |Haskell |HTML     |
+  |Java     |JavaScript|Privilège      |MATLAB   |Objective-C|
+  |Langage     |PHP      |Python   |R        |Ruby     |
+  |Scalaire    |Shell    |Rapide    |6,7      |Script vim|
 
 > [!NOTE]
 > Le code source est formé pour détecter si la majorité du texte est du code source. Il ne détecte pas le texte de code source qui est intercalé en texte brut.
@@ -133,6 +133,6 @@ La création et la publication d’un classificateur pour l’utilisation dans l
 - [Stratégies de rétention](retention-policies.md)
 - [Protection contre la perte de données (DLP)](data-loss-prevention-policies.md)
 - [Étiquettes de confidentialité](sensitivity-labels.md)
-- [Définitions d’entités de type d’informations sensibles](sensitive-information-type-entity-definitions.md)
+- [Définitions d’entités des types d’informations sensibles](sensitive-information-type-entity-definitions.md)
 - [Impression des doigts de document](document-fingerprinting.md)
 - [Correspondance exacte des données](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)

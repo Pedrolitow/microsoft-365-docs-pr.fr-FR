@@ -1,5 +1,5 @@
 ---
-title: Authentification multifacteur pour Microsoft 365
+title: Multi-Factor Authentication pour Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -20,14 +20,14 @@ search.appverid:
 ms.assetid: 043807b2-21db-4d5c-b430-c8a6dee0e6ba
 ROBOTS: NOINDEX, NOFOLLOW
 description: Découvrez l’authentification multifacteur dans Microsoft 365.
-ms.openlocfilehash: 128296b7dbc37ba5ebffb25a87bce589f8e5a904
-ms.sourcegitcommit: 185d62f41f6b173894ba6e3e87b11b2b5d02db58
+ms.openlocfilehash: eba9ae38dbc17a22abb5d5ef92b8cd30a827ae11
+ms.sourcegitcommit: 87eff6e8a08cec3cb0464a3b765434717584a4a9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "44340832"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "44371451"
 ---
-# <a name="multi-factor-authentication-for-microsoft-365"></a>Authentification multifacteur pour Microsoft 365
+# <a name="multi-factor-authentication-for-microsoft-365"></a>Multi-Factor Authentication pour Microsoft 365
 
 Les mots de passe constituent la méthode la plus courante pour authentifier une connexion à un ordinateur ou un service en ligne, mais ils sont également les plus vulnérables. Les utilisateurs peuvent choisir des mots de passe faciles à utiliser et utiliser les mêmes mots de passe pour plusieurs connexions à différents ordinateurs et services.
 
@@ -151,17 +151,10 @@ Ce tableau présente les résultats de l’activation de l’authentification mu
 |:-------|:-----|:-------|:-------|
 | **Paramètres de sécurité par défaut** | Ne peut pas utiliser les stratégies d’accès conditionnel |   Peut utiliser les stratégies d’accès conditionnel | Application Microsoft Authenticator |
 | **Stratégies d’accès conditionnel** |Si l’une d’elles est activée, vous ne pouvez pas activer les paramètres de sécurité par défaut | Si tous ces éléments sont désactivés, vous pouvez activer les paramètres de sécurité par défaut | Utilisateur spécifié lors de l’inscription à l’authentification multifacteur |
-| **Paramètre de compte par utilisateur (non recommandé)** | Remplacé par les paramètres de sécurité par défaut et les stratégies d’accès conditionnel exigeant une authentification multifacteur | Remplacé par les paramètres de sécurité et les stratégies d’accès conditionnel | Utilisateur spécifié lors de l’inscription à l’authentification multifacteur|
+| **Paramètre de compte par utilisateur (non recommandé)** | Remplace les paramètres de sécurité par défaut et les stratégies d’accès conditionnel exigeant une authentification multifacteur à chaque connexion | Remplacé par les paramètres de sécurité et les stratégies d’accès conditionnel | Utilisateur spécifié lors de l’inscription à l’authentification multifacteur|
 ||||
 
 Si les paramètres de sécurité par défaut sont activés, tous les nouveaux utilisateurs sont invités à indiquer l’enregistrement MFA et l’utilisation de l’application Microsoft Authenticator lors de la prochaine connexion.
-
-Toutefois, si un utilisateur dispose d’un téléphone plus ancien pouvant recevoir des messages texte mais ne pouvant pas exécuter l’application Microsoft Authenticator, vous pouvez activer l’authentification multifacteur sur ce compte d’utilisateur spécifique et les inscrire à l’aide de la méthode de vérification de code texte en procédant comme suit :
-
-1. Désactivez les paramètres de sécurité par défaut dans le portail Azure.
-2. Activez l’authentification multifacteur pour le compte d’utilisateur dans le centre d’administration 365 de Microsoft.
-3. Demandez à l’utilisateur de se connecter et de s’inscrire pour l’authentification multifacteur (MFA) et la méthode d’authentification par code texte.
-4. Lorsque vous avez terminé, activez les paramètres de sécurité par défaut dans le portail Azure.
 
 ## <a name="ways-to-manage-mfa-settings"></a>Méthodes de gestion des paramètres MFA
 

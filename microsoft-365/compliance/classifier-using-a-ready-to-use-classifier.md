@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365 est fourni avec un certain nombre de classifieurs intégrés que vous pouvez utiliser pour identifier et étiqueter le contenu au sein de votre organisation. Cette rubrique vous explique comment vous préparer à l’utilisation de ces classifieurs.
-ms.openlocfilehash: 485ef8013c5a6656be9d0e025048154ec8b2f250
-ms.sourcegitcommit: 261d51b90a9ad53a6a42348c414b1b1e1230c37f
+ms.openlocfilehash: 2652df8d79b06d6614e2478843195e67de0a8ebb
+ms.sourcegitcommit: 87eff6e8a08cec3cb0464a3b765434717584a4a9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44292420"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "44371406"
 ---
 # <a name="testing-built-in-classifiers-using-retention-labels-preview"></a>Test des classifieurs intégrés à l’aide d’étiquettes de rétention (aperçu)
 
@@ -33,18 +33,18 @@ Pour plus d’informations sur les classifieurs dotés de la formation, voir [Ge
 Microsoft 365 est fourni avec cinq classifieurs intégrés recommandés :
 
 > [!CAUTION]
-> Nous détenons le classificateur intégré en **langage offensant** , car il a généré un nombre élevé de faux positifs. Ne l’utilisez pas et, si vous l’utilisez, vous devez déconnecter vos processus d’entreprise. Nous vous recommandons d’utiliser à la place les classifieurs intégrés de **menace**, de **blasphème**et de **harcèlement** .
+> Nous déprécions le **langage inconvenant** classifieur intégré, car il génère un grand nombre de faux positifs. Ne l’utilisez pas et, si vous l’utilisez, vous devez déconnecter vos processus d’entreprise. Nous vous recommandons d’utiliser à la place les classifieurs intégrés de **menace**, de **blasphème**et de **harcèlement** .
 
 - **CV**: détecte les éléments qui sont des comptes textuels des qualifications personnelles, éducatives, qualifications professionnelles, expérience professionnelle et autres informations d’identification personnelle d’un demandeur.
 - **Code source**: détecte les éléments qui contiennent un ensemble d’instructions et d’instructions écrites dans les 25 principaux langages de programmation informatique utilisés sur GitHub
 
-|nom de la langue|||||
-|---------|---------|---------|---------|---------|
-|3.0|C        |C#       |C++     |Clojure  |
-|CoffeeScript|CSS     |Activer       |Haskell |HTML     |
-|Java     |JavaScript|Privilège      |MATLAB   |Objective-C|
-|Langage     |PHP      |Python   |R        |Ruby     |
-|Scalaire    |Shell    |Rapide    |6,7      |Script vim|
+  |nom de la langue|||||
+  |---------|---------|---------|---------|---------|
+  |3.0|C        |C #       |C++     |Clojure  |
+  |CoffeeScript|CSS     |Activer       |Haskell |HTML     |
+  |Java     |JavaScript|Privilège      |MATLAB   |Objective-C|
+  |Langage     |PHP      |Python   |R        |Ruby     |
+  |Scalaire    |Shell    |Rapide    |6,7      |Script vim|
 
 > [!NOTE]
 > Le code source est formé pour détecter si la majorité du texte est du code source. Il ne détecte pas le texte de code source qui est intercalé en texte brut.
@@ -60,8 +60,8 @@ Microsoft 365 est fourni avec cinq classifieurs intégrés recommandés :
 
 1. Collecter les éléments de contenu de test jetables qui vous intéressent dans la catégorie du classifieur intégré (correspondances positives) et ceux qui ne doivent pas être inclus (correspondances négatives) dans la catégorie que vous testez.
 
-> [!IMPORTANT]
-> Les éléments de l’exemple ne doivent pas être chiffrés et doivent être en anglais.
+   > [!IMPORTANT]
+   > Les éléments de l’exemple ne doivent pas être chiffrés et doivent être en anglais.
 
 2. Créez un dossier SharePoint Online dédié ; Patientez au moins une heure pour que le dossier soit ajouté à l’index de recherche. Notez l’URL du dossier.
 
@@ -79,7 +79,7 @@ Microsoft 365 est fourni avec cinq classifieurs intégrés recommandés :
 
 9. Choisissez `Apply label to content that matches a trainable classifier` .
 
-![sélection du classifieur comme condition](../media/classifier-pre-trained-apply-label-match-trainable-classifier.png).
+   ![sélection du classifieur comme condition](../media/classifier-pre-trained-apply-label-match-trainable-classifier.png)
 
 10. Choisissez votre classifieur dans la liste, dans ce cas.`Source Code`
 
@@ -105,6 +105,6 @@ Microsoft 365 est fourni avec cinq classifieurs intégrés recommandés :
 
 Voir aussi :
 
-- [Prise en main des classificateurs de formation (préversion)](classifier-getting-started-with.md)
+- [Prise en main des classificateurs pouvant être formés (préversion)](classifier-getting-started-with.md)
 - [Vue d’ensemble des étiquettes de rétention](labels.md)
 - [Application automatique d’une stratégie d’étiquette de rétention basée sur une condition](labels.md#applying-a-retention-label-automatically-based-on-conditions)

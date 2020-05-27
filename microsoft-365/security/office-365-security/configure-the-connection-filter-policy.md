@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Les administrateurs peuvent apprendre à configurer le filtrage des connexions dans Exchange Online Protection (EOP) pour autoriser ou bloquer les messages électroniques provenant de serveurs de messagerie.
-ms.openlocfilehash: 14221298ed8e85bd776e7a58a1d2e427c3d19438
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: 6fb1fd95a701802d9373c07b7661196271ac1e2c
+ms.sourcegitcommit: 87eff6e8a08cec3cb0464a3b765434717584a4a9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44352010"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "44371473"
 ---
 # <a name="configure-connection-filtering"></a>Configuration du filtrage des connexions
 

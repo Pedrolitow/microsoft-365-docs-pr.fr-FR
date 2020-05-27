@@ -15,12 +15,12 @@ ms.custom:
 localization_priority: Normal
 f1.keywords: NOCSH
 description: Découvrez les étapes de configuration de Microsoft 365 nécessaires pour configurer une équipe de collaboration avec des invités dans Teams.
-ms.openlocfilehash: dabcfa53e9ccf4b3ea136b5ab522619fe81ae738
-ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
+ms.openlocfilehash: 6742409732e1ef9b466dae6854768c3843f33bd0
+ms.sourcegitcommit: 87eff6e8a08cec3cb0464a3b765434717584a4a9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44160026"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "44371501"
 ---
 # <a name="collaborate-with-guests-in-a-team"></a>Collaborer avec des invités au sein d’une équipe
 
@@ -44,10 +44,10 @@ Vérifiez les paramètres de relations organisationnelles pour vous assurer que 
 
 Pour définir les paramètres de relation organisationnelle
 
-1. Connectez-vous à Microsoft Azure [https://portal.azure.com](https://portal.azure.com)à l’adresse.
+1. Connectez-vous à Microsoft Azure à l’adresse [https://portal.azure.com](https://portal.azure.com) .
 2. Dans le volet de navigation de gauche, cliquez sur **Azure Active Directory**.
-3. Dans le volet de **vue d’ensemble** , cliquez sur **relations organisationnelles**.
-4. Dans le volet **relations organisationnelles** , cliquez sur **paramètres**.
+3. Dans le volet de **vue d’ensemble** , cliquez sur **identités externes**.
+4. Dans le volet **identités organisationnelles** , cliquez sur **paramètres de collaboration externe**.
 5. Assurez-vous que les **administrateurs et les utilisateurs du rôle d’invité invité peuvent inviter** et que les **membres peuvent inviter** sont tous deux la valeur **Oui**.
 6. Si vous avez effectué des modifications, cliquez sur **Enregistrer**.
 
@@ -161,12 +161,12 @@ Pour définir les paramètres de partage au niveau du site
 Les paramètres de partage des invités sont désormais configurés, de sorte que vous pouvez commencer à ajouter des utilisateurs et des invités internes à votre équipe. 
 
 Pour inviter des utilisateurs internes à une équipe
-1. Dans l’équipe, cliquez sur plus d'**\*\*** **options** (), puis sur **Ajouter un membre**.
+1. Dans l’équipe, cliquez sur **plus d’options** ( **\*\*\*** ), puis sur **Ajouter un membre**.
 2. Tapez le nom de la personne que vous souhaitez inviter.
 3. Cliquez sur **Ajouter**, puis sur **Fermer**.
 
 Pour inviter des invités à une équipe
-1. Dans l’équipe, cliquez sur plus d'**\*\*** **options** (), puis sur **Ajouter un membre**.
+1. Dans l’équipe, cliquez sur **plus d’options** ( **\*\*\*** ), puis sur **Ajouter un membre**.
 2. Tapez l’adresse de messagerie de l’invité que vous souhaitez inviter.
 3. Cliquez sur **modifier les informations invité**.
 4. Tapez le nom complet de l’invité et cliquez sur la coche.
