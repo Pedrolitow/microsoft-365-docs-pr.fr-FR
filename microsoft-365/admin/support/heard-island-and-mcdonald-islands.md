@@ -9,15 +9,16 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
+ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Découvrez comment contacter le support pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 091ef9166f043ba0eebfe44449b605455f75e12e
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: b8bd2209688e2f74cf60a767a85e4ee267fc8e75
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42358475"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44397657"
 ---
 # <a name="contact-support-for-heard-island-and-mcdonald-islands"></a>Contacter le support pour les îles Heard et McDonald
 

@@ -9,15 +9,16 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
+ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Découvrez comment contacter le support pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 99f2a57b0b3c33ae190ae8d8f820ff94a02cde0c
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: a60d588d638d1389366a6883f4b8f3fd20e189e8
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42359145"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44398053"
 ---
 # <a name="contact-support-for-dominican-republic"></a>Contacter le support pour la République dominicaine
 

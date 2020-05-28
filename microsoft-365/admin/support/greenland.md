@@ -9,15 +9,16 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
+ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Découvrez comment contacter le support pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 4d7da7cb380d4ff0d0d39a9b353abddebdfc00e8
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: ebd5052c556a94ac6cf9e47296a8c707783e4923
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42358665"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44397777"
 ---
 # <a name="contact-support-for-greenland"></a>Contacter le support pour le Groenland
 
