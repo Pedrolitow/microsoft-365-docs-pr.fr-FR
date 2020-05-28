@@ -13,19 +13,21 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
+ms.custom:
+- AdminSurgePortfolio
+- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: da585eea-f576-4f55-a1e0-87090b6aaa9d
 description: Les rôles d’administrateur correspondent à des fonctions professionnelles et accordent l'autorisation d'effectuer des tâches spécifiques dans le centre d’administration. Par exemple, l’administrateur du service ouvre les tickets de support avec Microsoft.
-ms.custom: okr_smb
-ms.openlocfilehash: 2f3b5fedf77c2f763f60c097b25101255d55ecaf
-ms.sourcegitcommit: 4ce28ad4d17d336106c1720d65349f19f9e90e04
+ms.openlocfilehash: d67f80ef00f6decb7172d4ea484a3c4161fcbf31
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44294211"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44387420"
 ---
 # <a name="about-admin-roles"></a>À propos des rôles d’administrateur
 

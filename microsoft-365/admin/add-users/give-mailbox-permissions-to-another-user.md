@@ -1,5 +1,5 @@
 ---
-title: 'Accorder des autorisations de boîte aux lettres à un autre utilisateur: aide de l’administrateur'
+title: Accorder des autorisations de boîte aux lettres à un autre utilisateur – Aide de l’administrateur
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -15,20 +15,21 @@ ms.collection:
 - Adm_TOC
 ms.custom:
 - MSStore_Link
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 1dbcf12f-a9de-4d1d-b0b3-a227f8a736d8
 description: "Découvrez comment accorder le droit à un utilisateur d'accéder à la boîte aux lettres d'un autre utilisateur. Cela permet à l’utilisateur de lire et d’envoyer des messages électroniques à partir de la boîte aux lettres d'un autre utilisateur. "
-ms.openlocfilehash: 5a0677844e8503253561c57f926c9c4fadadd76d
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 51de5f4e2b134a503ec935b1f1d0ec6519d2c229
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43617169"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44387176"
 ---
-# <a name="give-mailbox-permissions-to-another-user---admin-help"></a>Accorder des autorisations de boîte aux lettres à un autre utilisateur: aide de l’administrateur
+# <a name="give-mailbox-permissions-to-another-user---admin-help"></a>Accorder des autorisations de boîte aux lettres à un autre utilisateur – Aide de l’administrateur
 
 ::: moniker range="o365-worldwide"
 
@@ -53,7 +54,7 @@ pour configurer des autorisations, la première étape consiste à décider des 
     
 - [Envoyer du courrier à partir de la boîte aux lettres d’un autre utilisateur](give-mailbox-permissions-to-another-user.md#send-email-from-another-users-mailbox)
 
-- [Envoyer du courrier de la part d’un autre utilisateur](give-mailbox-permissions-to-another-user.md#send-email-on-behalf-of-another-user)
+- [Envoyer un e-mail de la part d’un autre utilisateur](give-mailbox-permissions-to-another-user.md#send-email-on-behalf-of-another-user)
     
  **Propagation des modifications :**
   
