@@ -17,18 +17,19 @@ ms.collection:
 ms.custom:
 - TopSMBIssues
 - okr_SMB
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 - BEA160
 description: Découvrez comment gérer vos modes de paiement dans le centre d’administration 365 de Microsoft.
-ms.openlocfilehash: d31da19c10eb61719ba813d271dbdcf573a5aff3
-ms.sourcegitcommit: 5c43e89ed94ad9fd1db049446383c65e548189b7
+ms.openlocfilehash: 0320f71180a5c2c127217ebf01854943409e6386
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44322158"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44403677"
 ---
 # <a name="manage-payment-methods"></a>Gestion des modes de paiement
 
@@ -70,7 +71,7 @@ L’ajout d’un mode de paiement n’associe pas d’abonnements à celui-ci. P
 
 4. Entrez les informations pour la nouvelle carte ou le nouveau compte bancaire, puis sélectionnez **Ajouter**.
 
-## <a name="update-payment-method-details"></a>Mettre à jour les détails du mode de paiement
+## <a name="update-payment-method-details"></a>Mettre à jour les informations sur le mode de paiement
 
 Vous pouvez modifier le nom de la carte bancaire, de l’adresse de facturation ou de la date d’expiration d’un mode de paiement existant. Toutefois, vous ne pouvez pas modifier la carte ou le numéro de compte. Si le numéro de compte a changé, [Remplacez-le par un autre mode de paiement](#replace-a-payment-method), puis [supprimez l’ancien](#delete-a-payment-method).
 
@@ -86,9 +87,9 @@ Vous pouvez modifier le nom de la carte bancaire, de l’adresse de facturation 
 1. Dans le centre d’administration, accédez à **la** > page **factures &** > **paiement** des paiements.
 ::: moniker-end
 
-2. Sélectionnez la ligne du mode de paiement à mettre à jour. Dans le volet droit, sélectionnez **modifier**.
+2. Sélectionnez la ligne du mode de paiement à mettre à jour. Dans le volet droit, sélectionnez **Modifier**.
 
-3. Mettez à jour les informations de votre mode de paiement, notamment le nom de la carte bancaire, de l’adresse de facturation ou de la date d’expiration, puis sélectionnez **Enregistrer**.
+3. Mettez à jour les informations relatives au mode de paiement, notamment le nom figurant sur la carte de crédit ou de débit, l’adresse de facturation ou la date d’expiration, puis sélectionnez **Enregistrer**.
 
 ## <a name="replace-a-payment-method"></a>Remplacer un mode de paiement
 
@@ -108,17 +109,17 @@ Pour modifier le mode de paiement d’un abonnement unique, consultez la rubriqu
 1. Dans le centre d’administration, accédez à **la** > page **factures &** > **paiement** des paiements.
 ::: moniker-end
 
-2. Sélectionnez la ligne du mode de paiement à remplacer. Le volet droit répertorie tous les profils de facturation et les abonnements individuels qui utilisent le mode de paiement sélectionné.
+2. Sélectionnez la ligne du mode de paiement à changer. Le volet droit répertorie tous les profils de facturation et les abonnements individuels qui utilisent le moyen de paiement sélectionné.
 
-3. Dans le volet droit, sélectionnez **remplacer le mode de paiement pour tous les éléments**.
+3. Dans le volet droit, sélectionnez **Changer le mode de paiement pour tous les éléments**.
 
-4. Pour utiliser un mode de paiement existant, sélectionnez-en un dans la liste déroulante, puis sélectionnez **remplacer**.
+4. Pour utiliser un mode de paiement existant, choisissez-le dans la liste déroulante, puis sélectionnez **Remplacer**.
     > [!NOTE]
-    > Si vous avez des abonnements associés à un profil de facturation, vous pouvez uniquement utiliser une carte bancaire pour les payer. Si vous avez des comptes bancaires répertoriés sur la page **modes de paiement** , ils ne sont pas disponibles dans la liste déroulante.
+    > Si vous avez des abonnements associés à un profil de facturation, vous pouvez uniquement utiliser une carte de débit ou de crédit pour les régler. Si vous avez des comptes bancaires répertoriés sur la page **Modes de paiement**, vous ne pouvez pas les sélectionner dans la liste déroulante.
 
 5. Pour ajouter un nouveau mode de paiement, sélectionnez **Ajouter un mode de paiement**.
 
-6. Dans le volet **Ajouter un mode de paiement** , entrez les informations de compte, puis sélectionnez **Enregistrer**. Vous devez utiliser un mode de paiement du même pays que votre client.
+6. Dans le volet **Ajouter un mode de paiement**, entrez les informations de compte, puis sélectionnez **Enregistrer**. Vous devez utiliser un mode de paiement provenant du même pays que celui de votre client.
 
 7. Le nouveau mode de paiement est déjà sélectionné dans la liste déroulante. Sélectionnez **Remplacer**.
 

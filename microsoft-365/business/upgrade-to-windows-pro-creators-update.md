@@ -20,17 +20,18 @@ ms.custom:
 - TRN_M365B
 - OKR_SMB_Videos
 - seo-marvel-mar
+- AdminSurgePortfolio
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: ffc4d886-9e1d-453d-a0d0-2f62f18635e2
 description: Découvrez comment vous pouvez mettre à niveau vos appareils Windows vers Windows 10 professionnel pour utiliser des fonctionnalités de mise en réseau plus avancées et de sécurité.
-ms.openlocfilehash: f0cedda49dbff2a8c2884bb52e240fabfbeb4537
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: c982f59ded0b0d2e1cd321f5856b38bd792eebed
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632048"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44403527"
 ---
 # <a name="upgrade-windows-devices-to-windows-10-pro"></a>Mettre à niveau les appareils Windows vers Windows 10 professionnel
 
@@ -44,11 +45,11 @@ Si vous avez trouvé cette vidéo utile, consultez les [séries de formations co
   
 Pour effectuer une mise à niveau vers Windows 10 professionnel, vous disposez de plusieurs options. Vous pouvez :
     
-- Installer la mise à niveau à partir du [site](https://go.microsoft.com/fwlink/?LinkID=836951 ) &ndash; de téléchargement de logiciels Microsoft sélectionnez cette option si l’appareil auquel vous êtes connecté se trouve sur le même appareil que celui que vous souhaitez mettre à jour. 
+- Installer la mise à niveau à partir du [site de téléchargement de logiciels Microsoft](https://go.microsoft.com/fwlink/?LinkID=836951 ) &ndash; Sélectionnez cette option si l’appareil auquel vous êtes connecté se trouve sur le même appareil que celui que vous souhaitez mettre à jour. 
 
     - À partir du site de téléchargement de logiciels, cliquez sur **mettre à jour maintenant** pour commencer la mise à niveau de l’appareil vers Windows 10 professionnel Creators Update. 
     
-- Créer un support d’installation à l’aide de l' [outil](https://go.microsoft.com/fwlink/?LinkID=836960) &ndash; de création de médias sélectionnez cette option pour créer un support d’installation Windows 10 professionnel Creators Update (lecteur flash USB ou fichier ISO) pour installer Windows 10 sur un PC différent de celui que vous utilisez.
+- Créer un support d’installation à l’aide de l' [outil de création de médias](https://go.microsoft.com/fwlink/?LinkID=836960) &ndash; Sélectionnez cette option pour créer un support d’installation Windows 10 professionnel Creators Update (lecteur flash USB ou fichier ISO) pour installer Windows 10 sur un PC différent de celui que vous utilisez.
 
     - Lisez les instructions relatives à l’utilisation de l’outil et à la création de votre support d’installation. 
 
@@ -61,4 +62,4 @@ Pour terminer la configuration des appareils Android et iOS, consultez la rubriq
   
 ## <a name="for-more-on-setting-up-and-using-microsoft-365-for-business"></a>Pour en savoir plus sur la configuration et l’utilisation de Microsoft 365 pour les entreprises
 
-[Vidéos de formation Microsoft 365 pour les entreprises](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[Vidéos de formation Microsoft 365 Entreprise](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

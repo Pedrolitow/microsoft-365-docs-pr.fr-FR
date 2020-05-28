@@ -17,17 +17,18 @@ ms.custom:
 - MiniMaven
 - MSB365
 - OKR_SMB_M365
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: 6b70fa27-d171-4593-8ecf-f78bb4ed2e99
 description: Affichez les stratégies et les actions des appareils en vous connectant à Microsoft 365 pour les entreprises avec des informations d’identification d’administrateur général.
-ms.openlocfilehash: e514b48c17de492bd1eaa75b48418ce0f2ff493e
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: f65365584d8b05f4df012d9f5727a74c33c06ae8
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635681"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44403567"
 ---
 # <a name="view-and-manage-policies-and-devices"></a>Afficher et gérer les stratégies et les appareils
 
@@ -36,7 +37,7 @@ ms.locfileid: "43635681"
 ## <a name="view-and-edit-device-policies"></a>Afficher et modifier des stratégies d’appareil
 
 1.  Accédez au Centre d’administration à l’adresse <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>.
-2. Dans le volet de navigation de gauche, choisissez **stratégies**de **périphériques** \> .
+2. Dans le volet de navigation de gauche, choisissez stratégies de **périphériques** \> **Policies**.
 
     Cette page vous permet de créer, de modifier, de modifier ou de supprimer une stratégie.
 
@@ -44,7 +45,7 @@ ms.locfileid: "43635681"
   
 ## <a name="view-and-manage-devices"></a>Afficher et gérer les appareils
 
-1. Dans le volet de navigation de gauche, choisissez **gestion**des **appareils** \> . 
+1. Dans le volet de navigation de gauche, choisissez gestion des **appareils** \> **Manage**. 
     
     Sur cette page, vous pouvez sélectionner un ou plusieurs appareils et supprimer les données de l’entreprise. Pour les appareils Windows 10 pour lesquels vous avez défini des paramètres de protection d'appareil, vous pouvez également choisir de rétablir les paramètres d'usine.
   

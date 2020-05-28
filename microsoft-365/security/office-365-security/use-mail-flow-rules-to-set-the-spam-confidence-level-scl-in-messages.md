@@ -17,16 +17,16 @@ ms.collection:
 - M365-security-compliance
 description: Découvrez comment créer des règles de flux de messagerie (règles de transport) pour identifier les messages et définir le seuil de probabilité de courrier indésirable (SCL) des messages dans Exchange Online Protection.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f9af154a9f71992597e111147b792cd5286e2ad3
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 223e676579c99eca7db641146d3a1b6bd22f9ca2
+ms.sourcegitcommit: 1f3101326e8a54b9bda4ba0324eae00fafcf5e7b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208560"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44405118"
 ---
 # <a name="use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages-in-eop"></a>Utiliser des règles de flux de messagerie pour définir le seuil de probabilité de courrier indésirable (SCL) dans les messages dans EOP
 
-Dans les organisations Microsoft 365 avec des boîtes aux lettres dans Exchange Online ou des organisations Exchange Online Protection (EOP) autonomes sans boîte aux lettres Exchange Online, EOP utilise des stratégies de blocage du courrier indésirable (également appelées stratégies de filtrage du courrier indésirable ou stratégies de filtrage de contenu) pour analyser les messages entrants pour le courrier indésirable. Pour plus d’informations, consultez la rubrique [configurer des stratégies de blocage du courrier indésirable dans EOP](configure-your-spam-filter-policies.md).
+Dans les organisations Microsoft 365 avec des boîtes aux lettres dans Exchange Online ou des organisations Exchange Online Protection (EOP) autonomes sans boîte aux lettres Exchange Online, EOP utilise des stratégies de blocage du courrier indésirable (également appelées stratégies de filtrage du courrier indésirable ou stratégies de filtrage de contenu) pour analyser les messages entrants pour le courrier indésirable. Si vous souhaitez en savoir plus, consultez l’article [Configurer les stratégies anti-courrier indésirable dans EOP](configure-your-spam-filter-policies.md).
 
 Si vous souhaitez marquer des messages spécifiques comme courrier indésirable avant qu’ils soient encore analysés par le filtrage du courrier indésirable, ou marquer les messages de sorte qu’ils ignorent le filtrage du courrier indésirable, vous pouvez créer des règles de flux de messagerie (également appelées règles de transport) pour identifier les messages et définir le seuil de probabilité de courrier indésirable. Pour plus d’informations sur la valeur SCL, consultez la rubrique [Spam Confidence Level (SCL) in EOP](spam-confidence-levels.md).
 
@@ -54,7 +54,7 @@ Si vous souhaitez marquer des messages spécifiques comme courrier indésirable 
 
    - **Procédez comme suit**: sélectionnez **modifier les propriétés du message** \> **définir le seuil de probabilité de courrier indésirable (SCL)**. Dans la boîte de dialogue spécifier la valeur **SCL** qui s’affiche, configurez l’une des valeurs suivantes :
 
-   - **Contournement du filtrage du courrier indésirable**: définit la valeur SCL sur-1, ce qui signifie que les messages ignorent le filtrage du courrier indésirable.
+   - **Ignorer le filtrage du courrier indésirable**: les messages ignorent le filtrage du courrier indésirable.
 
      > [!CAUTION]
      > Soyez très vigilant lorsque vous autorisez les messages à ignorer le filtrage du courrier indésirable. Les attaquants peuvent utiliser cette vulnérabilité pour envoyer du hameçonnage et d’autres messages malveillants dans votre organisation. Les règles de flux de messagerie nécessitent plus que l’adresse de messagerie ou le domaine de l’expéditeur. Pour plus d’informations, consultez la rubrique [créer des listes d’expéditeurs approuvés dans EOP](create-safe-sender-lists-in-office-365.md).

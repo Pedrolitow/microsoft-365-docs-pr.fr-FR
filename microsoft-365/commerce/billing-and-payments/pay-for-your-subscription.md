@@ -25,12 +25,12 @@ ms.custom:
 - okr_SMB
 - fwlink 808700 for SEPA UI glink 906 for older uI
 - AdminSurgePortfolio
-ms.openlocfilehash: 387cc4af038bea572a60176b2c2b400f410aa6ad
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: baf09d87f6229cb530c328d570fa70dc25729a11
+ms.sourcegitcommit: b95e958df130b5fbbe5d8a8882d1bbf20b27a285
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44401761"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "44407955"
 ---
 # <a name="pay-for-your-subscription"></a>Régler votre abonnement
 
@@ -48,7 +48,7 @@ Lorsque vous configurez votre abonnement, vous pouvez choisir de régler à l’
 
 ## <a name="pay-by-credit-card-or-bank-account"></a>Régler par carte de crédit ou compte bancaire
 
-Lorsque vous payez par carte de crédit ou compte bancaire, les frais correspondant à votre abonnement sont automatiquement débités le lendemain de la date de facturation, jusqu’à l’expiration de votre abonnement. Vous pouvez [mettre à jour les informations de votre carte bancaire ou compte bancaire](add-update-or-remove-credit-card-or-bank-account.md) à tout moment. Vous pouvez également choisir de [Envoyer une copie de votre relevé de facturation par courrier électronique](#receive-a-copy-of-your-billing-statement-in-email).
+Lorsque vous payez par carte de crédit ou compte bancaire, les frais correspondant à votre abonnement sont automatiquement débités le lendemain de la date de facturation, jusqu’à l’expiration de votre abonnement. Vous pouvez [gérer les modes de paiement](manage-payment-methods.md) chaque fois que vous le souhaitez. Vous pouvez également choisir de [Envoyer une copie de votre relevé de facturation par courrier électronique](#receive-a-copy-of-your-billing-statement-in-email).
 
 ### <a name="what-if-my-credit-card-was-declined-and-my-payment-is-past-due"></a>Que se passe-t-il si ma carte bancaire a été refusée et que mon paiement arrive en retard ?
 
@@ -63,12 +63,12 @@ Si vous payez par carte bancaire et que cette dernière est refusée, vous recev
 
 2. Recherchez l’abonnement ayant un solde impayé. Dans la section **Facturation**, en regard de l'**Abonnement a un montant dû**, sélectionnez **Régler le solde**.
 
-3. Si la carte bancaire vous appartient, vous pouvez modifier la date d'expiration associée à la carte, choisir une autre carte ou [ajouter une nouvelle carte](add-update-or-remove-credit-card-or-bank-account.md).
+3. Si la carte bancaire vous appartient, vous pouvez modifier la date d'expiration associée à la carte, choisir une autre carte ou [ajouter une nouvelle carte](manage-payment-methods.md).
 
     > [!NOTE]
     > Lorsque vous utilisez la fonctionnalité **Régler le solde**, la totalité du solde restant dû pour votre compte vous est facturée. Le montant peut donc être différent de celui qui vous est présenté dans une autre page.
 
-4. Si la carte bancaire ne vous appartient pas, vous pouvez choisir une autre carte bancaire ou [ajouter une nouvelle carte](add-update-or-remove-credit-card-or-bank-account.md).
+4. Si la carte bancaire ne vous appartient pas, vous pouvez choisir une autre carte bancaire ou [ajouter une nouvelle carte](manage-payment-methods.md).
 
 5. Après avoir mis à jour les informations de la carte de crédit ou changé de carte utilisée pour régler votre abonnement, sélectionnez **Enregistrer**.
 
@@ -80,12 +80,12 @@ Si vous payez par carte bancaire et que cette dernière est refusée, vous recev
 
 2. Sélectionnez l'abonnement que vous voulez modifier. Dans la section **Ma facture**, sélectionnez **Payer maintenant**.
 
-3. Si la carte bancaire vous appartient, vous pouvez modifier la date d'expiration associée à la carte, choisir une autre carte ou [ajouter une nouvelle carte](add-update-or-remove-credit-card-or-bank-account.md).
+3. Si la carte bancaire vous appartient, vous pouvez modifier la date d'expiration associée à la carte, choisir une autre carte ou [ajouter une nouvelle carte](manage-payment-methods.md).
 
     > [!NOTE]
     > Lorsque vous utilisez la fonctionnalité **Payer maintenant**, la totalité du solde restant pour votre compte vous est facturée. Le montant peut donc être différent de celui qui vous est présenté dans une autre page.
 
-4. Si la carte bancaire ne vous appartient pas, vous pouvez choisir une autre carte bancaire ou [ajouter une nouvelle carte](add-update-or-remove-credit-card-or-bank-account.md).
+4. Si la carte bancaire ne vous appartient pas, vous pouvez choisir une autre carte bancaire ou [ajouter une nouvelle carte](manage-payment-methods.md).
 
 5. Après avoir mis à jour les informations de la carte de crédit ou changé de carte utilisée pour régler votre abonnement, sélectionnez **Envoyer**. Un message de confirmation indiquant « Votre mode de paiement a été mis à jour et tous les frais en suspens ont été réglés. Merci. »
 
@@ -311,6 +311,6 @@ Si les raisons qui vous ont poussé à choisir un mode de paiement sur facture o
 
 ## <a name="related-articles"></a>Articles connexes
 
-[Ajouter, mettre à jour ou supprimer une carte de crédit ou un compte bancaire](add-update-or-remove-credit-card-or-bank-account.md)
+[Gérer les modes de paiement](manage-payment-methods.md)
 
 [Comprendre votre facture](understand-your-invoice2.md)

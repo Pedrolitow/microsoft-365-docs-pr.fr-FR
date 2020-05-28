@@ -27,12 +27,12 @@ search.appverid:
 - GEA150
 ms.assetid: 8652f539-3123-4a8f-b9bd-6aa2f0e0372d
 description: Découvrez comment modifier le mode de paiement pour votre abonnement professionnel.
-ms.openlocfilehash: babc8911305fe009ad3b9dc49163a0525c6d0666
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 7350546da14ebd68182e158c0d15cdfb727f5718
+ms.sourcegitcommit: b95e958df130b5fbbe5d8a8882d1bbf20b27a285
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44401809"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "44407967"
 ---
 # <a name="change-your-payment-method"></a>Changer votre mode de paiement
 
@@ -43,7 +43,7 @@ Lorsque vous achetez un abonnement, vous choisissez de payer avec une carte banc
 > [!IMPORTANT]
 > Le paiement avec un compte bancaire n’est pas disponible dans certains pays ou certaines régions.
 
- **Vous voulez uniquement mettre à jour les informations concernant votre carte bancaire ou votre compte bancaire ?** Voir [Ajouter, mettre à jour ou supprimer une carte bancaire ou un compte bancaire](add-update-or-remove-credit-card-or-bank-account.md).
+ **Vous voulez uniquement mettre à jour les informations concernant votre carte bancaire ou votre compte bancaire ?** Voir [gérer les modes de paiement](manage-payment-methods.md).
 
  **Vous souhaitez simplement modifier la fréquence de facturation ?** Voir [modifier votre fréquence de paiement](change-payment-frequency.md).
   
@@ -67,7 +67,7 @@ Lorsque vous achetez Office 365 pour les entreprises, vous choisissez de payer p
   
  **Vous voulez modifier la fréquence de paiement ?** Si vous souhaitez modifier la fréquence de paiement de votre abonnement, de la valeur annuelle à mensuelle ou mensuelle, vous devez [contacter le support Microsoft](../../admin/contact-support-for-business-products.md) pour obtenir de l’aide.
   
- **Vous voulez uniquement mettre à jour les informations concernant votre carte bancaire ou votre compte bancaire ?** Voir [Ajouter, mettre à jour ou supprimer une carte bancaire ou un compte bancaire](add-update-or-remove-credit-card-or-bank-account.md).
+ **Vous voulez uniquement mettre à jour les informations concernant votre carte bancaire ou votre compte bancaire ?** Voir [gérer les modes de paiement](manage-payment-methods.md).
   
  **Que se passe-t-il s'il me reste un solde impayé ?**
   

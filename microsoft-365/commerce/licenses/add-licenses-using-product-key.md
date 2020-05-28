@@ -16,6 +16,7 @@ ms.collection:
 - Adm_NonTOC
 ms.custom:
 - TopSMBIssues
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -24,12 +25,12 @@ search.appverid:
 ms.assetid: 4fb4bd7e-3920-4ce0-98fb-0c06e3fedf53
 ROBOTS: NOINDEX
 description: Découvrez comment ajouter des licences à votre abonnement.
-ms.openlocfilehash: 20e822d6124b3a4383df5308e7a5d47a34d49ed6
-ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
+ms.openlocfilehash: 370ed833a1c7c5142c7725666885a945e1524b53
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44045403"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44404009"
 ---
 # <a name="add-licenses-to-or-extend-a-subscription-paid-for-using-a-product-key"></a>Ajouter des licences ou prolonger un abonnement payé pour l’utilisation d’une clé de produit
 
@@ -42,7 +43,7 @@ Les licences prépayées vous sont émises sous la forme d’un code alphanumér
 
 ::: moniker range="o365-worldwide"
 
-1. Dans le centre d’administration, accédez à la page **facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">de vos produits</a> .
+1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produits</a>.
 
 2. Recherchez l’abonnement auquel vous souhaitez ajouter des licences. Dans la section **licences** , sélectionnez **ajouter d’autres licences**.
 
@@ -99,7 +100,7 @@ Les licences prépayées vous sont émises sous la forme d’un code alphanumér
 
 ::: moniker range="o365-worldwide"
 
-1. Dans le centre d’administration, accédez à la page **facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">de vos produits</a> .
+1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produits</a>.
 
 2. Recherchez l’abonnement que vous souhaitez étendre. Dans la section **facturation** , sélectionnez **prolonger la date de fin**.
 

@@ -17,6 +17,7 @@ ms.collection:
 ms.custom:
 - SaRA
 - okr_SMB
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -25,19 +26,19 @@ search.appverid:
 - GEA150
 ms.assetid: 36081d8d-b3fa-4948-8c34-e217bba825e1
 description: Découvrez comment ajouter et supprimer des licences pour votre abonnement Microsoft 365 pour les entreprises.
-ms.openlocfilehash: f8ae177052be325673af96d9535f25dfcdc93180
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: c4b2b30c9d444aad11ea4cd2faf8b2546e33c39c
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44141232"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44404021"
 ---
 # <a name="manage-subscription-licenses"></a>Gérer les licences d’abonnement
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> Le centre d’administration change. Si votre expérience ne correspond pas aux détails présentés ici, reportez-vous [à la rubrique à propos du nouveau centre d’administration Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> Le centre d’administration change. Si votre expérience ne correspond pas aux informations présentées ici, voir [À propos du nouveau centre d’administration Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
 
 ::: moniker-end
 
@@ -49,7 +50,7 @@ Vous pouvez ajouter ou supprimer des licences de vos abonnements à l’aide de 
 
 ::: moniker range="o365-worldwide"
 
-1. Dans le centre d’administration, accédez à la page **facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">de vos produits</a> .
+1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produits</a>.
 
 2. Sur la page **vos produits** , recherchez l’abonnement auquel vous voulez ajouter ou supprimer des licences, puis sélectionnez **Ajouter/supprimer des licences**.
 
@@ -69,7 +70,7 @@ Une fois que vous avez acheté de nouvelles licences, veillez à [attribuer les 
 
     [Que faire si le lien Ajouter/Supprimer des licences n'est pas disponible ?](#what-if-i-dont-see-the-addremove-licenses-link)
 
-3. Dans la zone nombre **total de licences** , entrez le nombre total de licences dont vous avez besoin pour cet abonnement, puis sélectionnez **Envoyer** \> **.** Par exemple, si vous avez 100 licences et que vous devez en ajouter 5, entrez 105. Si vous souhaitez en supprimer 5, entrez 95.
+3. Dans la zone nombre **total de licences** , entrez le nombre total de licences dont vous avez besoin pour cet abonnement, puis sélectionnez **Envoyer** \> **Close**. Par exemple, si vous avez 100 licences et que vous devez en ajouter 5, entrez 105. Si vous souhaitez en supprimer 5, entrez 95.
 
 Une fois que vous avez acheté de nouvelles licences, veillez à [attribuer les licences aux utilisateurs](../../admin/manage/assign-licenses-to-users.md).
 
@@ -83,7 +84,7 @@ Une fois que vous avez acheté de nouvelles licences, veillez à [attribuer les 
 
     [Que faire si le lien Ajouter/Supprimer des licences n'est pas disponible ?](#what-if-i-dont-see-the-addremove-licenses-link)
 
-3. Dans la zone nombre **total de licences** , entrez le nombre total de licences dont vous avez besoin pour cet abonnement, puis sélectionnez **Envoyer** \> **.** Par exemple, si vous avez 100 licences et que vous devez en ajouter 5, entrez 105. Si vous souhaitez en supprimer 5, entrez 95.
+3. Dans la zone nombre **total de licences** , entrez le nombre total de licences dont vous avez besoin pour cet abonnement, puis sélectionnez **Envoyer** \> **Close**. Par exemple, si vous avez 100 licences et que vous devez en ajouter 5, entrez 105. Si vous souhaitez en supprimer 5, entrez 95.
 
 Une fois que vous avez acheté de nouvelles licences, veillez à [attribuer les licences aux utilisateurs](../../admin/manage/assign-licenses-to-users.md).
 
@@ -93,7 +94,7 @@ Une fois que vous avez acheté de nouvelles licences, veillez à [attribuer les 
 
 Ce tableau décrit les raisons pour lesquelles le lien **Ajouter/supprimer des licences** n’est peut-être pas disponible, et ce que vous pouvez faire. 
 
-|Reason  |Description  |Solution  |
+|Raison  |Description  |Solution  |
 |---------|---------|---------|
 |Une vérification de solvabilité est en attente. |Si une vérification de solvabilité est en cours, un message mentionnant cette opération s'affiche et vous ne pouvez pas acheter de licence avant la fin de la vérification de solvabilité.  | Vérifiez plus tard pour voir si la vérification du crédit est terminée. Les vérifications de la solvabilité nécessitent en général deux jours ouvrés.<br>Une fois la vérification terminée, le lien **Ajouter/Supprimer des licences** devrait être disponible dans la section **Utilisateurs**. Si c’est le cas, accédez à [gérer les licences d’abonnement](#manage-subscription-licenses). |
 |Vous avez activé l’abonnement à l’aide d’une clé de produit.| Si l'abonnement a été acheté et activé à l'aide d'une clé de produit à 25 caractères, le texte « Prépayé » s'affiche.  |Voir [Ajouter des licences à un abonnement payé pour l’utilisation d’une clé de produit](add-licenses-using-product-key.md). |

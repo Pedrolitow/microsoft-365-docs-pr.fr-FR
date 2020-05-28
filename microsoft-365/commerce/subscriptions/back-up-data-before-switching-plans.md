@@ -14,6 +14,7 @@ ms.collection:
 - Adm_O365
 - commerce
 - Adm_TOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -21,12 +22,12 @@ search.appverid:
 - BEA160
 ms.assetid: a1da52c9-2167-4973-9e6d-492314a79b87
 description: Sauvegardez les contenus Outlook, OneDrive, Yammer et SharePoint avant de modifier les plans Microsoft 365.
-ms.openlocfilehash: a482d59e92cd7055362663ed92630322e4ccf68a
-ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
+ms.openlocfilehash: b7a29912416bd659f2e0dd40c7aa6b9f6309676e
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43708094"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44403617"
 ---
 # <a name="back-up-data-before-switching-microsoft-365-for-business-plans"></a>Sauvegarder les données avant de basculer vers Microsoft 365 pour les offres professionnelles
 
@@ -61,8 +62,8 @@ Par défaut, l’URL du site Web d’équipe se présente comme suit :
 https://<orgDomain>/_layouts/15/start.aspx#/SitePages/Home.aspx
 ```
 
-où _ \<orgDomain\> _ est l’URL de l’organisation.
+où _\<orgDomain\>_ est l’URL de l’organisation.
   
-Par exemple, si le domaine de l’organisation est contoso.onmicrosoft.com, l’URL directe vers le site d’équipe serait https://contoso.onmicrosoft.com/_layouts/15/start.aspx#/SitePages/Home.aspx.
+Par exemple, si le domaine de l’organisation est contoso.onmicrosoft.com, l’URL directe vers le site d’équipe serait https://contoso.onmicrosoft.com/_layouts/15/start.aspx#/SitePages/Home.aspx .
   
 Bien entendu, les utilisateurs peuvent également télécharger des documents SharePoint Online à partir du site d’équipe SharePoint vers leur ordinateur local ou vers un autre emplacement à tout moment.
