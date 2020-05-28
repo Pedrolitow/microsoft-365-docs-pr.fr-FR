@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 description: Tout comme les fonctionnalités du centre de conformité Microsoft 365, notre contenu d’aide est toujours évolutif. Nous créons en permanence de nouveaux articles, en mettant à jour ceux existants et en apportant des modifications en fonction de vos commentaires. Découvrez les nouveautés et mises à jour ce mois-ci.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 750165aab3612e3edb6a56f69eebf0778e141fde
-ms.sourcegitcommit: 252b1d1d8ae735b99bf46e27c08353afc330aef3
+ms.openlocfilehash: 94a4025a0a30ce26175a1a598713721aaa835ee7
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "44231897"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44401198"
 ---
 # <a name="recent-updates-to-microsoft-365-compliance-content"></a>Mises à jour récentes du contenu de conformité Microsoft 365
 
@@ -100,13 +100,6 @@ Toutes les rubriques sur le [score de conformité](compliance-score.md) et le [G
 ### <a name="pst-import"></a>Importation des fichiers PST
 
 [FAQ sur l’importation de fichiers PST](faqimporting-pst-files-to-office-365.md) (mise à jour)<br>Ajout d’un Forum aux questions sur la façon dont le processus d’importation PST gère les éléments de messagerie en double.
-
-### <a name="retention"></a>Conversation
-
-[Vue d’ensemble des stratégies de rétention](retention-policies.md) (mises à jour)<br>Les modifications sont les suivantes :
-
-- Ajout de chemins de contenu pour les stratégies de rétention de conservation uniquement et de suppression uniquement (auparavant, les chemins de contenu sont expliqués uniquement conserver et supprimer).
-- [Mise à jour](retention-policies.md#applying-a-retention-policy-to-an-entire-organization-or-specific-locations) de la section expliquant que, pour les emplacements SharePoint, vous spécifiez désormais une URL au lieu de choisir un site. Cela signifie que vous n’avez pas besoin d’autorisations pour accéder au site afin de l’inclure dans une stratégie de rétention.
 
 ### <a name="sensitivity-labels"></a>Étiquettes de confidentialité
 

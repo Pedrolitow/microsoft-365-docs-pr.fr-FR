@@ -14,18 +14,19 @@ ms.collection:
 - Adm_O365
 - Adm_NonTOC
 - Adm_O365_Setup
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: f3bd3c62-0477-48e4-b2b5-21e329d67985
 description: Découvrez comment configurer Microsoft pour gérer les enregistrements DNS de votre domaine personnalisé sur Hostgator.
-ms.openlocfilehash: 09f0409ed2a5f81b450c9aae7bb3699373ce6f22
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 787fe5f5e768d9d93cfca9d1644037142822216e
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43629886"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44400640"
 ---
 # <a name="change-nameservers-to-set-up-microsoft-365-with-hostgator"></a>Modifier les serveurs de noms pour configurer Microsoft 365 avec Hostgator
 
@@ -70,7 +71,7 @@ Suivez ces étapes pour associer votre domaine et vos comptes d'hébergement.
 > [!IMPORTANT]
 > Avant d’effectuer cette procédure, vous devez d’abord effectuer la procédure décrite dans la première section de cet article, [faire pointer votre domaine vers votre compte d’hébergement.](#point-your-domain-to-your-hosting-account).
   
-Avant d’utiliser votre domaine avec Microsoft, vous devez vous assurer que vous en êtes propriétaire. Votre capacité à vous connecter à votre compte auprès de votre bureau d’enregistrement de domaines et à créer l’enregistrement DNS prouve à Microsoft que vous êtes propriétaire du domaine.
+Avant que vous puissiez utiliser votre domaine avec Microsoft, nous devons vérifier qu’il vous appartient. Votre capacité à vous connecter à votre compte auprès de votre bureau d’enregistrement de domaines et à créer l’enregistrement DNS prouve à Microsoft que le domaine vous appartient.
   
 > [!NOTE]
 > Cet enregistrement sert uniquement à vérifier que vous êtes propriétaire du domaine. Vous pouvez éventuellement le supprimer ultérieurement.
@@ -93,7 +94,7 @@ Avant d’utiliser votre domaine avec Microsoft, vous devez vous assurer que vou
 |||||
 |:-----|:-----|:-----|:-----|
 |**Name (Nom)** <br/> |**TTL (Durée de vie)** <br/> |**Type (Type)** <br/> |**TXT Data (Données TXT)** <br/> |
-|Utilisez votre  *nom_de_domaine*  (par exemple, fourthcoffee.com).<br/> **Cette valeur DOIT se terminer par un point (.)** <br/> |0,1  <br/> |TXT  <br/> |MS=ms *XXXXXXXX*  <br/> **Remarque :** il s'agit d'un exemple. Utilisez votre **adresse de destination ou de pointage** spécifique ici, à partir du tableau. [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md)     <br/>  |
+|Utilisez votre  *nom_de_domaine*  (par exemple, fourthcoffee.com).<br/> **Cette valeur DOIT se terminer par un point (.)** <br/> |1   <br/> |TXT  <br/> |MS=ms *XXXXXXXX*  <br/> **Remarque :** il s'agit d'un exemple. Utilisez votre valeur spécifique d’**Adresse de destination ou de pointage** ici, à partir du tableau. [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md)     <br/>  |
    
 4. Sélectionnez **Ajouter un enregistrement**.
     
@@ -101,7 +102,7 @@ Avant d’utiliser votre domaine avec Microsoft, vous devez vous assurer que vou
     
 À présent que vous avez ajouté l’enregistrement sur le site de votre bureau d’enregistrement de domaines, vous allez retourner à Microsoft et demander une recherche pour l’enregistrement.
   
-Lorsque Microsoft trouve l’enregistrement TXT correct, votre domaine est vérifié.
+Lorsque Microsoft trouve l’enregistrement TXT approprié, votre domaine est vérifié.
   
 1. Dans le centre d’administration, accédez à la page **Paramètres** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domaines</a>.
 
@@ -113,7 +114,7 @@ Lorsque Microsoft trouve l’enregistrement TXT correct, votre domaine est véri
 4. Dans la page **Vérifier le domaine**, sélectionnez **Vérifier**.
     
 > [!NOTE]
-> Généralement, les modifications DNS sont appliquées dans les 15 minutes. Il peut toutefois arriver que la répercussion d’une modification dans le système DNS sur Internet prenne davantage de temps. Si vous rencontrez des problèmes avec le flux de messagerie ou d’autres problèmes après avoir ajouté des enregistrements DNS, consultez [la rubrique Rechercher et corriger les problèmes après avoir ajouté votre domaine ou des enregistrements DNS](../get-help-with-domains/find-and-fix-issues.md). 
+> Généralement, les modifications DNS sont appliquées dans les 15 minutes. Il peut toutefois arriver que la répercussion d’une modification dans le système DNS sur Internet prenne davantage de temps. Si vous rencontrez des difficultés avec le flux de courrier ou d’autres problèmes suite à l’ajout des enregistrements DNS, consultez la page [Rechercher et corriger les problèmes suite à l’ajout de votre domaine ou des enregistrements DNS](../get-help-with-domains/find-and-fix-issues.md). 
   
 ## <a name="change-your-domains-nameserver-ns-records"></a>Modifier les enregistrements de serveur de noms (NS) de votre domaine
 

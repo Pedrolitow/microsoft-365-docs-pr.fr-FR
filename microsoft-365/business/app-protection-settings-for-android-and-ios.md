@@ -19,27 +19,28 @@ ms.custom:
 - MiniMaven
 - MSB365
 - OKR_SMB_M365
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: 6f2b80b4-81c3-4714-a7bc-ae69313e8a33
 description: Découvrez comment créer, modifier ou supprimer une stratégie de gestion des applications et protéger les fichiers de travail sur les appareils Android ou iOS.
-ms.openlocfilehash: 0d9e901cac94fe7692ffe705c6b0a51df2bc542f
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 01c50e6660d8d8640a2bff2794ee0ea8a69188c8
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627431"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44401051"
 ---
 # <a name="set-app-protection-settings-for-android-or-ios-devices"></a>Définir les paramètres de protection des applications pour les appareils Android ou iOS
 
-![Bannière pointant vers https://aka.ms/aboutM365preview.](../media/m365admincenterchanging.png)
+![Bannière pointant vers https://aka.ms/aboutM365preview .](../media/m365admincenterchanging.png)
 
 ## <a name="create-an-app-management-policy"></a>Créer une stratégie de gestion des applications
 
 1. Accédez au Centre d’administration à l’adresse <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>. 
     
-2. Dans le volet de navigation de gauche, choisissez **Ajout**de **stratégies** \> de **périphériques** \> .
+2. Dans le volet de navigation de gauche, choisissez ajout de stratégies de **périphériques** \> **Policies** \> **Add**.
   
 3. Dans le volet **Ajouter une stratégie**, entrez un nom unique pour cette stratégie. 
     
@@ -51,7 +52,7 @@ ms.locfileid: "43627431"
     
     ![Screenshot of Create a policy with Application management for Android selected](../media/eabbe06d-ac0a-4f3a-8630-68c808b1e662.png)
   
-6. Maintenant, définissez **Qui recevra ces paramètres ?** Si vous ne souhaitez pas utiliser le groupe de sécurité par défaut **tous les utilisateurs** , choisissez **modifier**, puis \> **Sélectionnez**les groupes de sécurité qui obtiennent ces paramètres.
+6. Maintenant, définissez **Qui recevra ces paramètres ?** Si vous ne souhaitez pas utiliser le groupe de sécurité par défaut **tous les utilisateurs** , choisissez **modifier**, puis sélectionnez les groupes de sécurité qui obtiennent ces paramètres \> **Select**.
     
 7. Enfin, sélectionnez **Terminé** pour enregistrer la stratégie et l'affecter à des appareils. 
     
@@ -83,7 +84,7 @@ Les paramètres suivants sont disponibles pour protéger les fichiers profession
   
 |||
 |:-----|:-----|
-|Paramètre  <br/> |Description  <br/> |
+|Setting  <br/> |Description  <br/> |
 |Supprimer les fichiers professionnels d'un appareil inactif après tant de jours  <br/> |Si un appareil n’est pas utilisé pendant le nombre de jours que vous spécifiez ici, tous les fichiers de travail stockés sur l’appareil seront automatiquement supprimés.  <br/> |
 |Obliger les utilisateurs à enregistrer tous les fichiers de travail dans OneDrive Entreprise  <br/> |Si ce paramètre est **activé**, la seule emplacement d’enregistrement disponible pour les fichiers de travail est OneDrive entreprise.  <br/> |
 |Chiffrer les fichiers professionnels  <br/> |Laissez ce paramètre **activé** afin que les fichiers professionnels soient protégés par chiffrement. Même si l’appareil est perdu ou volé, personne ne peut lire les données de votre entreprise.  <br/> |
@@ -94,7 +95,7 @@ Les paramètres suivants sont disponibles pour gérer la manière dont les utili
   
 |||
 |:-----|:-----|
-|Paramètre  <br/> |Description  <br/> |
+|Setting  <br/> |Description  <br/> |
 |Exiger un code confidentiel ou une empreinte pour accéder aux applications Office  <br/> |Si ce paramètre est **activé** , les utilisateurs doivent fournir une autre forme d’authentification, en plus de leur nom d’utilisateur et de leur mot de passe, avant de pouvoir utiliser les applications Office sur leurs appareils mobiles.<br/> |
 |Réinitialiser le code confidentiel en cas d'échecs successifs de la connexion  <br/> |Afin d'empêcher un utilisateur non autorisé de deviner un code confidentiel de façon aléatoire, le code confidentiel est réinitialisé après le nombre d'entrées incorrectes que vous spécifiez.  <br/> |
 |Demander aux utilisateurs de se reconnecter à l'issue d'une période d'inactivité des applications Office  <br/> |Ce paramètre détermine la durée pendant laquelle un utilisateur peut être inactif avant d’être invité à se reconnecter.  <br/> |

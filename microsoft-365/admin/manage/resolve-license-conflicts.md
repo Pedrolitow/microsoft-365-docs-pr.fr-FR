@@ -13,6 +13,7 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -20,19 +21,19 @@ search.appverid:
 - BEA160
 ms.assetid: 796f7eda-b1f8-479a-adee-bd9226ca47ec
 description: Découvrez comment résoudre les conflits de licences avec votre abonnement Microsoft 365 pour les entreprises.
-ms.openlocfilehash: 7d7da843ba747679f36539bcf920b1b9b2b7ad28
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: 05efe9e75b051ece900ba9defe047f1244b713a9
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44139576"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44399667"
 ---
 # <a name="resolve-license-conflicts"></a>Résoudre les conflits de licence
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> Le centre d’administration change. Si votre expérience ne correspond pas aux détails présentés ici, reportez-vous [à la rubrique à propos du nouveau centre d’administration Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> Le centre d’administration change. Si votre expérience ne correspond pas aux informations présentées ici, voir [À propos du nouveau centre d’administration Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
 
 ::: moniker-end
 
@@ -42,19 +43,19 @@ Nous vous recommandons d’acheter les licences dont vous avez besoin pour votre
 
 ::: moniker range="o365-worldwide"
 
-1. Dans le centre d’administration, accédez à la page <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">licences</a> de **facturation** > .
+1. Dans le centre d’administration, accédez à **Billing** la > page <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">licences</a> de facturation.
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. Dans le centre d’administration, accédez à la page <a href="https://go.microsoft.com/fwlink/p/?linkid=848038" target="_blank">licences</a> de **facturation** > .
+1. Dans le centre d’administration, accédez à **Billing** la > page <a href="https://go.microsoft.com/fwlink/p/?linkid=848038" target="_blank">licences</a> de facturation.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. Dans le centre d’administration, accédez à la page <a href="https://go.microsoft.com/fwlink/p/?linkid=850625" target="_blank">licences</a> de **facturation** > .
+1. Dans le centre d’administration, accédez à **Billing** la > page <a href="https://go.microsoft.com/fwlink/p/?linkid=850625" target="_blank">licences</a> de facturation.
 
 ::: moniker-end
 

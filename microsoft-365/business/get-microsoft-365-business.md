@@ -19,19 +19,20 @@ ms.custom:
 - MSB365
 - OKR_SMB_M365
 - seo-marvel-mar
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: Découvrez les options disponibles pour l’achat de Microsoft 365 Business Premium et des instructions détaillées pour l’acheter auprès du centre partenaires Microsoft.
-ms.openlocfilehash: 4247160c87a6a910358d9b740b28dc14747b72a8
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 550ab62b46ffc09f8c4822a2e1741ee51b4579ca
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627229"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44400937"
 ---
-# <a name="get-microsoft-365-business-premium"></a>Obtenir Microsoft 365 Business Premium
+# <a name="get-microsoft-365-business-premium"></a>Obtenir Microsoft 365 Business Premium
 
 ## <a name="get-microsoft-365-business-premium-from-microsoft"></a>Obtenir Microsoft 365 Business Premium de Microsoft
 

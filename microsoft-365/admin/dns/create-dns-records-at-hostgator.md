@@ -14,18 +14,19 @@ ms.collection:
 - Adm_O365
 - Adm_NonTOC
 - Adm_O365_Setup
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 5f0c840e-4140-4571-88ed-cf235ff142d6
 description: Découvrez comment vérifier votre domaine et configurer les enregistrements DNS pour la messagerie, Skype entreprise Online et d’autres services sur Hostgator pour Microsoft.
-ms.openlocfilehash: fb510bcdcdefb141535e9a1099e18b63adffd2ab
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+ms.openlocfilehash: 8adfc4b6154dad0da7dd2fe037c73fcfc4f84d58
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44048998"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44400436"
 ---
 # <a name="create-dns-records-at-hostgator-for-microsoft"></a>Créer des enregistrements DNS sur Hostgator pour Microsoft
 
@@ -91,7 +92,7 @@ Avant que vous puissiez utiliser votre domaine avec Microsoft, nous devons véri
     |||||
     |:-----|:-----|:-----|:-----|
     |**Name (Nom)** <br/> |**TTL (Durée de vie)** <br/> |**Type** <br/> |**TXT Data (Données TXT)** <br/> |
-    |Utilisez votre *domain_name*. (for example, fourthcoffee.com.)  <br/> **This value MUST end with a period (.)** <br/> |0,1  <br/> |TXT  <br/> |MS=ms *XXXXXXXX*  <br/> **Remarque :** il s'agit d'un exemple. Utilisez votre valeur spécifique d’**Adresse de destination ou de pointage** ici, à partir du tableau. [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md)          |
+    |Utilisez votre *domain_name*. (for example, fourthcoffee.com.)  <br/> **This value MUST end with a period (.)** <br/> |1   <br/> |TXT  <br/> |MS=ms *XXXXXXXX*  <br/> **Remarque :** il s'agit d'un exemple. Utilisez votre valeur spécifique d’**Adresse de destination ou de pointage** ici, à partir du tableau. [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md)          |
    
 4. Sélectionnez **Ajouter un enregistrement**.
     
@@ -136,7 +137,7 @@ Lorsque Microsoft trouve l’enregistrement TXT approprié, votre domaine est v�
     
     |**Priority (Priorité)**|**Destination (Destination)**|
     |:-----|:-----|
-    |0  <br/> Pour plus d'informations sur la priorité, voir [Qu'est-ce que la priorité MX ?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq). <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/> **Remarque :** Obtenir votre \< *clé* \> de domaine à partir de votre compte Microsoft.    [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md)          |
+    |0  <br/> Pour plus d'informations sur la priorité, voir [Qu'est-ce que la priorité MX ?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq). <br/> | *\<domain-key\>*. mail.protection.outlook.com  <br/> **Remarque :** Obtenir votre \< *domain-key*  \> à partir de votre compte Microsoft.  [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md)          |
   
 6. Sélectionnez **Ajouter un nouvel enregistrement**.
    
@@ -182,7 +183,7 @@ Lorsque Microsoft trouve l’enregistrement TXT approprié, votre domaine est v�
     
     Répétez cette procédure jusqu'à avoir créé les 6 enregistrements CNAME.
     
-## <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a>Ajoutez un enregistrement TXT pour SPF afin d'éviter le courrier indésirable
+## <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a>Ajouter un enregistrement TXT pour SPF afin d'éviter le courrier indésirable
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
@@ -234,8 +235,8 @@ Lorsque Microsoft trouve l’enregistrement TXT approprié, votre domaine est v�
     
     |**Name (Nom)**|**TTL (Durée de vie)**|**Type**|**Priority (Priorité)**|**Weight (Poids)**|**Port (Port)**|**Target (Cible)**|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-    |_sip. _tls. *domain_name*. (par exemple, _sip. _tls. fourthcoffee. com.)  <br/> **Cette valeur DOIT se terminer par un point (.)** <br/> |3600  <br/> |SRV  <br/> |100  <br/> |0,1  <br/> |443  <br/> |sipdir.online.lync.com  <br/> |
-    |_sipfederationtls. _tcp. *domain_name*. (par exemple, _sipfederationtls. _tcp. fourthcoffee. com.)  <br/> **Cette valeur DOIT se terminer par un point (.)** <br/> |3600  <br/> |SRV  <br/> |100  <br/> |0,1  <br/> |5061  <br/> |sipfed.online.lync.com  <br/> |
+    |_sip. _tls. *domain_name*. (par exemple, _sip. _tls. fourthcoffee. com.)  <br/> **Cette valeur DOIT se terminer par un point (.)** <br/> |3600  <br/> |SRV  <br/> |100  <br/> |1   <br/> |443  <br/> |sipdir.online.lync.com  <br/> |
+    |_sipfederationtls. _tcp. *domain_name*. (par exemple, _sipfederationtls. _tcp. fourthcoffee. com.)  <br/> **Cette valeur DOIT se terminer par un point (.)** <br/> |3600  <br/> |SRV  <br/> |100  <br/> |1   <br/> |5061  <br/> |sipfed.online.lync.com  <br/> |
    
 
 4. Sélectionnez **Ajouter un enregistrement**.

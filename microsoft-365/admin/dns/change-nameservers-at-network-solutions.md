@@ -14,18 +14,19 @@ ms.collection:
 - Adm_O365
 - Adm_NonTOC
 - Adm_O365_Setup
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: d4ba60f3-4e1c-4180-99bd-250b8955be2a
 description: 'Apprenez à configurer votre domaine personnalisé Microsoft avec des solutions réseau si vous souhaitez que Microsoft gère vos enregistrements DNS. '
-ms.openlocfilehash: 2b3b575943ebd95ffcbd34dd4578133fa7dd4f79
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 4a7c1eaab132b0ab41a62ba62d87956ccfafc014
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43629754"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44400604"
 ---
 # <a name="change-nameservers-to-set-up-microsoft-with-network-solutions"></a>Modifier les serveurs de noms pour configurer Microsoft avec les solutions réseau
 
@@ -36,7 +37,7 @@ Suivez ces instructions si vous voulez que Microsoft gère vos enregistrements D
     
 ## <a name="add-a-txt-record-at-network-solutions-to-verify-that-you-own-the-domain"></a>Ajouter un enregistrement TXT auprès de Network Solutions pour vérifier que vous êtes propriétaire du domaine
 
-Avant d’utiliser votre domaine avec Microsoft, vous devez vous assurer que vous en êtes propriétaire. Votre capacité à vous connecter à votre compte auprès de votre bureau d’enregistrement de domaines et à créer l’enregistrement DNS prouve à Microsoft que vous êtes propriétaire du domaine.
+Avant que vous puissiez utiliser votre domaine avec Microsoft, nous devons vérifier qu’il vous appartient. Votre capacité à vous connecter à votre compte auprès de votre bureau d’enregistrement de domaines et à créer l’enregistrement DNS prouve à Microsoft que le domaine vous appartient.
   
 > [!NOTE]
 > Cet enregistrement sert uniquement à vérifier que vous êtes propriétaire du domaine. Vous pouvez éventuellement le supprimer ultérieurement. 
@@ -72,7 +73,7 @@ Suivez les étapes décrites ci-dessous ou [regardez la vidéo (commencez la lec
     
 |**Host (Hôte)**|**TTL (Durée de vie)**|**Text (Texte)**|
 |:-----|:-----|:-----|
-|@  <br/> (The system will change this value to **@ (None)** when you save the record.)  <br/> |3600  <br/> |MS=ms *XXXXXXXX*  <br/> **Remarque**: Voici un exemple. Utilisez votre **adresse de destination ou de pointage** spécifique ici, à partir du tableau de Microsoft 365.           [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md)
+|@  <br/> (The system will change this value to **@ (None)** when you save the record.)  <br/> |3600  <br/> |MS=ms *XXXXXXXX*  <br/> **Remarque**: Voici un exemple. Utilisez votre valeur **Adresse de destination ou de pointage** spécifique ici, à partir du tableau dans Microsoft 365.           [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md)
    
     
    ![Tapez ou collez des valeurs dans les zones du nouvel enregistrement.](../../media/8a76daab-b6ff-4c82-ba68-192b24fbb934.png)
@@ -87,11 +88,11 @@ Suivez les étapes décrites ci-dessous ou [regardez la vidéo (commencez la lec
   
 9. Patientez quelques minutes, le temps que l'enregistrement que vous venez de créer soit mis à jour sur Internet.
     
-À présent que vous avez ajouté l’enregistrement sur le site de votre bureau d’enregistrement de domaines, vous revenez à Microsoft 365 et demandez à Microsoft 365 de Rechercher l’enregistrement.
+L’enregistrement étant désormais ajouté sur le site de votre bureau d’enregistrement de domaines, revenez à Microsoft 365 et demandez à Microsoft 365 de rechercher l’enregistrement.
   
-Lorsque Microsoft trouve l’enregistrement TXT correct, votre domaine est vérifié.
+Lorsque Microsoft trouve l’enregistrement TXT approprié, votre domaine est vérifié.
   
-1. Dans le centre d’administration Microsoft, accédez à la page **paramètres** \> des <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">domaines</a> .
+1. Dans le centre d’administration Microsoft, accédez à la page **Paramètres** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domaines</a>.
 
     
 2. Dans la page **Domaines**, sélectionnez le domaine que vous vérifiez. 

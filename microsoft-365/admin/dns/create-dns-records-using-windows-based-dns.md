@@ -14,18 +14,19 @@ ms.collection:
 - Adm_O365
 - Adm_NonTOC
 - Adm_O365_Setup
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 9eec911d-5773-422c-9593-40e1147ffbde
 description: Découvrez comment vérifier votre domaine et configurer les enregistrements DNS pour la messagerie, Skype entreprise Online et d’autres services sur le serveur DNS Windows pour Microsoft.
-ms.openlocfilehash: 1aaf81dddf27911ad3562bec6f56fb34c64fd37d
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+ms.openlocfilehash: 8f65a397552813f22d4bde82f7fcd51c478d82bd
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44048842"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44400243"
 ---
 # <a name="create-dns-records-for-microsoft-using-windows-based-dns"></a>Créer des enregistrements DNS pour Microsoft à l’aide du DNS basé sur Windows
 
@@ -38,21 +39,21 @@ Pour commencer, vous devez [Rechercher vos enregistrements DNS dans le DNS Windo
 Problèmes de flux de messagerie ou autres problèmes après avoir ajouté des enregistrements DNS, consultez [la rubrique résolution des problèmes après avoir modifié votre nom de domaine ou des enregistrements DNS](../get-help-with-domains/find-and-fix-issues.md). 
   
 ## <a name="find-your-dns-records-in-windows-based-dns"></a>Rechercher vos enregistrements DNS dans un DNS Windows
-<a name="BKMK_find_your_dns_1"> </a> Accédez à la page qui contient les enregistrements DNS pour votre domaine. Si vous utilisez Windows Server 2008, accédez à **Démarrer** > l'**exécution**. Si vous utilisez Windows Server 2012, appuyez sur la touche Windows et sur **r**. Tapez **dnsmgmnt. msc**, puis cliquez sur **OK**. Dans le Gestionnaire DNS, développez ** \<le\> \> nom du serveur DNS zones de recherche directes  **. Sélectionnez votre domaine. Vous pouvez à présent créer les enregistrements DNS.
+<a name="BKMK_find_your_dns_1"> </a> Accédez à la page qui contient les enregistrements DNS pour votre domaine. Si vous utilisez Windows Server 2008, accédez à démarrer l' **Start**  >  **exécution**. Si vous utilisez Windows Server 2012, appuyez sur la touche Windows et sur **r**. Tapez **dnsmgmnt. msc**, puis cliquez sur **OK**. Dans le Gestionnaire DNS, développez ** \<DNS server name\> \> zones de recherche directes  **. Sélectionnez votre domaine. Vous pouvez à présent créer les enregistrements DNS.
    
 ## <a name="add-mx-record"></a>Ajouter l'enregistrement MX
 <a name="BKMK_add_MX"> </a>
 
 Ajoutez un enregistrement MX afin que les messages électroniques pour votre domaine soient envoyés à Microsoft.
-- L'enregistrement MX que vous ajouterez inclut une valeur ( **Pointe vers l'adresse**) qui ressemble à ceci : \<MX token\>.mail.protection.outlook.com, où \<MX token\> est une valeur telle que MSxxxxxxx. 
+- L’enregistrement MX que vous ajoutez inclut une valeur ( **points à** la valeur de l’adresse) ressemblant à ceci : \<MX token\> . mail.protection.Outlook.com, où \<MX token\> est une valeur comme MSxxxxxxx. 
 - À partir de la ligne MX de la section Exchange Online de la page Ajouter des enregistrements DNS de Microsoft, copiez la valeur figurant sous points à l’adresse. Vous utiliserez cette valeur dans l’enregistrement que vous créez dans cette tâche. 
-- Sur la page Gestionnaire DNS du domaine, accédez à **action** > **Mail Exchanger (MX)**. Pour trouver cette page pour le domaine, voir [Rechercher vos enregistrements DNS dans le DNS Windows](#find-your-dns-records-in-windows-based-dns).  
+- Sur la page Gestionnaire DNS du domaine, accédez à **action**  >  **Mail Exchanger (MX)**. Pour trouver cette page pour le domaine, voir [Rechercher vos enregistrements DNS dans le DNS Windows](#find-your-dns-records-in-windows-based-dns).  
 - Dans la boîte de dialogue **nouvel enregistrement de ressource** , vérifiez que les champs sont définis sur les valeurs suivantes : 
     - Nom de l’hôte:  
     - @Address : collez la valeur de pointage vers l’adresse que vous venez de copier à partir de Microsoft ici.  
     - Préférences 
 - Sélectionnez **enregistrer les modifications**.
-- Supprimez les enregistrements MX obsolètes. Si vous avez des anciens enregistrements MX pour ce domaine qui acheminent les messages ailleurs, activez la case à cocher en regard de chaque ancien enregistrement, puis sélectionnez **supprimer** > **OK**. 
+- Supprimez les enregistrements MX obsolètes. Si vous avez des anciens enregistrements MX pour ce domaine qui acheminent les messages ailleurs, activez la case à cocher en regard de chaque ancien enregistrement, puis sélectionnez **supprimer**  >  **OK**. 
    
 ## <a name="add-cname-records"></a>Ajouter les enregistrements CNAME
 <a name="BKMK_add_CNAME"> </a>
@@ -62,7 +63,7 @@ Ajoutez les enregistrements CNAMe requis pour Microsoft. Si d’autres enregistr
 > [!IMPORTANT]
 > Si vous disposez de la gestion des appareils mobiles pour Microsoft, vous devez créer deux enregistrements CNAMe supplémentaires. Suivez la procédure que vous avez utilisée pour les quatre autres enregistrements CNAME, mais fournissez les valeurs du tableau suivant. (Si vous ne disposez pas de MDM, vous pouvez ignorer cette étape.) 
 
-- Sur la page du Gestionnaire DNS du domaine, accédez à l' **action** > **CNAME (CNAME)**.
+- Sur la page du Gestionnaire DNS du domaine, accédez à l' **action**  >  **CNAME (CNAME)**.
 - Dans la boîte de dialogue **nouvel enregistrement de ressource** , vérifiez que les champs sont définis sur les valeurs suivantes :  
     - Nom de l’hôte : découverte automatique
     - Type : 
@@ -106,7 +107,7 @@ Ajoutez l'enregistrement CNAME Enterpriseenrollment MDM.
     - Adresse : enterpriseenrollment-s.manage.microsoft.com
 - Sélectionnez **OK**.
    
-## <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a>Ajoutez un enregistrement TXT pour SPF afin d'éviter le courrier indésirable
+## <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a>Ajouter un enregistrement TXT pour SPF afin d'éviter le courrier indésirable
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
@@ -183,14 +184,14 @@ Ajoutez un enregistrement TXT.
 - Nom de l’hôte : @
 - Type : TXT
 - Adresse : collez la valeur adresse de destination ou de pointage que vous venez de copier à partir de Microsoft ici.  
-- Sélectionnez **OK** > **.**
+- Sélectionnez **OK**  >  **Done**.
 
 Vérifiez votre domaine dans Microsoft.  
 > [!IMPORTANT]
 > Patientez environ 15 minutes avant de le faire, afin que l’enregistrement que vous venez de créer puisse être mis à jour sur Internet.       
 
 - Revenez à Microsoft et suivez les étapes ci-dessous pour demander un contrôle de vérification. La vérification recherche l'enregistrement TXT que vous avez ajouté à l'étape précédente. Lorsqu'elle trouve l'enregistrement TXT correct, le domaine est vérifié.  
-1. Dans le centre d’administration, accédez à la page <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">domaines</a> **d’installation** \> .
+1. Dans le centre d’administration, accédez à la page domaines **d’installation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains</a> .
 2. Dans la page **domaines** , dans la colonne **action** du domaine que vous vérifiez, sélectionnez Démarrer la **configuration**. 
 3. Dans la page **confirmer que vous êtes le propriétaire de votre domaine** , sélectionnez **terminé, vérifier maintenant**, puis, dans la boîte de dialogue de confirmation, sélectionnez **Terminer**. 
    

@@ -16,6 +16,7 @@ ms.collection:
 - Adm_O365_Setup
 ms.custom:
 - MSStore_Link
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -24,19 +25,19 @@ search.appverid:
 - GEA150
 ms.assetid: f4d8cae9-6d06-4c4b-b4e5-6581fd05ea82
 description: 'Remplacez votre adresse de messagerie initiale par une adresse de messagerie conviviale telle que tom@fourthcoffee.com. Pour ce faire, vous devez acheter un nom de domaine et l’ajouter à Microsoft 365. '
-ms.openlocfilehash: 50739c01fda9528140870798324dd69a1c68abce
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: e1ac40fb38a207cc0f19f48ac4ab7c6f34ffbb35
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44140499"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44400159"
 ---
 # <a name="change-your-email-address-to-use-your-custom-domain"></a>Changer votre adresse de courrier pour utiliser votre domaine personnalisé
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> Le centre d’administration change. Si votre expérience ne correspond pas aux détails présentés ici, reportez-vous [à la rubrique à propos du nouveau centre d’administration Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> Le centre d’administration change. Si votre expérience ne correspond pas aux informations présentées ici, voir [À propos du nouveau centre d’administration Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
 
 ::: moniker-end
 
@@ -84,7 +85,7 @@ Pour effectuer ces étapes, vous devez disposer d’un compte d’administrateur
 
 ::: moniker-end 
 
-2. Accédez à la page**domaines** **d’installation** > . 
+2. Accédez à la page domaines **d’installation**  >  **Domains** . 
 
 3. Dans la page **domaines** , sélectionnez **Ajouter un domaine**.
     

@@ -13,18 +13,19 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: b9707ec8-2247-4e25-9bad-f11ddbc686e4
 description: Découvrez comment vérifier la propriété de votre messagerie et de votre domaine pour prendre le relais d’un locataire non géré dans Microsoft 365
-ms.openlocfilehash: 1772ba9929433c87603d4b9d7027419063fd2fca
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 4c2dcdb0f6c4f6b795d9579c8796e9668ed2ed05
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627943"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44399445"
 ---
 # <a name="perform-an-internal-admin-takeover"></a>Effectuer un rachat administratif interne
 
@@ -40,9 +41,9 @@ Si vous êtes un administrateur et que vous souhaitez prendre le relais d’un c
 > [!NOTE]
 > Si le self-service est activé dans votre client, les utilisateurs peuvent s’abonner à des services gratuits, comme Power BI, de leur côté. Ces étapes supposent qu’un abonnement d’utilisateur libre-service a créé le locataire non géré que vous souhaitez prendre en compte en tant qu’administrateur. La première étape consiste à créer un contexte utilisateur dans le locataire non géré à l’aide de Power BI pour illustrer le chemin de la prise en compte de l’administrateur.
 
-1. Pour vous inscrire à Power bi, accédez au [site Power bi](https://powerbi.com) et sélectionnez **Démarrer** > la**version d’évaluation** gratuite de démarrage gratuit (dans la zone partager avec Power bi Pro). 
+1. Pour vous inscrire à Power bi, accédez au [site Power bi](https://powerbi.com) et sélectionnez **Démarrer**la  >  **version d’évaluation** gratuite de démarrage gratuit (dans la zone partager avec Power bi Pro). 
 
-2. Inscrivez-vous à l’aide d’un compte d’utilisateur qui utilise le nom de `powerbiadmin@contoso.com`domaine de votre organisation (par exemple). Si votre compte est déjà utilisé, connectez-vous à l’aide de votre mot de passe actuel.
+2. Inscrivez-vous à l’aide d’un compte d’utilisateur qui utilise le nom de domaine de votre organisation (par exemple `powerbiadmin@contoso.com` ). Si votre compte est déjà utilisé, connectez-vous à l’aide de votre mot de passe actuel.
 
 3. Consultez votre courrier électronique pour obtenir le **Code de vérification** et entrez le code permettant de valider votre adresse e-mail.
     

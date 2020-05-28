@@ -16,17 +16,18 @@ ms.custom:
 - MiniMaven
 - MSB365
 - OKR_SMB_M365
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: ed34fff3-2881-4ed4-9906-1ba6bb8dd804
 description: Découvrez comment installer automatiquement les applications Office 32 bits sur les ordinateurs Windows 10 et les maintenir à jour.
-ms.openlocfilehash: b5f01bc9bb10765929f3c6bdd5908e8b48a51a11
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 6f3a80be9729a3818607c0f42e2cc7ece66a07ee
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43633096"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44401319"
 ---
 # <a name="prepare-for-office-client-deployment-by-microsoft-365-for-business"></a>Préparer le déploiement de clients Office par Microsoft 365 pour les entreprises
 

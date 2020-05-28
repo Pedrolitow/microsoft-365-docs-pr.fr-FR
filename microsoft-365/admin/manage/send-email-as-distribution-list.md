@@ -14,18 +14,19 @@ ms.collection:
 - Adm_TOC
 ms.custom:
 - MSStore_Link
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: a7c98273-067e-4162-b3a1-4ba081796012
 description: Découvrez comment envoyer des courriers électroniques en tant que liste de distribution dans Microsoft 365.
-ms.openlocfilehash: e9f8e52350dfd27e58ee160ed10f5c45e33391d7
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: a917e59bbac40846fa289a97465f6d6e065b87ee
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43628063"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44399589"
 ---
 # <a name="send-email-as-a-distribution-list"></a>Envoyer un courrier électronique en tant que liste de distribution
 
@@ -45,7 +46,7 @@ Avant d’effectuer ces étapes, vérifiez que vous avez été ajouté à une li
     
 4. En bas du message, sélectionnez **autres** \> **afficher dans**.<br/> ![Sélectionnez autres, puis afficher dans](../../media/534f13b7-9f15-48ea-8835-ea2ed1863ece.png)
   
-5. Cliquez avec le bouton droit sur l’adresse de provenance `Ina@weewalter.me` -par exemple, puis choisissez **supprimer**.<br/> ![Supprimer l’alias de](../../media/9b8d8e8f-dc46-499c-89bd-0a480603bf1f.png)
+5. Cliquez avec le bouton droit sur l’adresse de provenance-par exemple, `Ina@weewalter.me` puis choisissez **supprimer**.<br/> ![Supprimer l’alias de](../../media/9b8d8e8f-dc46-499c-89bd-0a480603bf1f.png)
   
 6. Ensuite, tapez l’adresse de la liste de distribution, par exemple support@contoso.com, et envoyez le message. La prochaine fois que vous répondez à la liste de distribution, son adresse apparaît sous la forme d’une option dans la liste **de** .<br/>![L’alias de la boîte aux lettres partagée apparaît.](../../media/f7632a9a-9cab-446c-9e37-23ef50c5b975.png)
   

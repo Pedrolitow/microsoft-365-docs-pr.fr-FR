@@ -19,18 +19,19 @@ ms.custom:
 - MiniMaven
 - MSB365
 - OKR_SMB_M365
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 0f7b1d7c-4086-4331-8534-45d7886f9f34
 description: Découvrez comment télécharger des périphériques à l’aide de AutoPilot dans Microsoft 365 Business Premium. Vous pouvez affecter un profil à un appareil ou à un groupe d’appareils.
-ms.openlocfilehash: 83c027cfe019e037518c4ca13eb331e5300fc2c1
-ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
+ms.openlocfilehash: 8c3d029d682ae30444bdc7d30a4790a8f982e0e0
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "44165858"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44400991"
 ---
 # <a name="create-and-edit-autopilot-devices"></a>Créer et modifier des appareils AutoPilot
 
@@ -46,11 +47,11 @@ Les appareils doivent respecter les conditions suivantes :
 
 1. Dans le centre d’administration 365 de Microsoft, sélectionnez **périphériques** \> **AutoPilot**.
   
-2. Sur la **page AutoPilot** , sélectionnez l' **Devices** onglet \> appareils **Add Devices**.
+2. Sur la page **AutoPilot** , sélectionnez l’onglet **appareils** \> **Add Devices**.
     
     ![In the Devices tab, choose Add devices.](../media/6ba81e22-c873-40ad-8a72-ce64d15ea6ba.png)
   
-3. Dans le **panneau ajouter des appareils** , accédez à un [fichier CSV de liste](https://docs.microsoft.com/microsoft-365/admin/misc/device-list) de périphériques \> que vous avez préparé à **Enregistrer** \> **.**
+3. Dans le panneau **Ajouter des appareils** , accédez à un [fichier CSV de liste de périphériques](https://docs.microsoft.com/microsoft-365/admin/misc/device-list) que vous avez préparé à \> **Enregistrer** \> **Close**.
     
     Vous pouvez obtenir ces informations auprès de votre fournisseur de matériel ou vous pouvez utiliser le [script PowerShell Get-WindowsAutoPilotInfo](https://www.powershellgallery.com/packages/Get-WindowsAutoPilotInfo) pour générer un fichier CSV. 
     

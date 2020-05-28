@@ -15,17 +15,18 @@ ms.collection:
 - Adm_TOC
 ms.custom:
 - MSStore_Link
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Une fois que vous avez créé une boîte aux lettres partagée, vous pouvez configurer certains paramètres pour ses utilisateurs, tels que le transfert de courrier électronique et les réponses automatiques. Par la suite, vous pouvez modifier d’autres paramètres, tels que le nom de la boîte aux lettres ou les membres.
-ms.openlocfilehash: 63d3d0a5867875344ff4635071bbbad69e02eadc
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 7c88ffa3276f40ea983f9060658f4e4091e36280
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43629046"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44400147"
 ---
 # <a name="configure-a-shared-mailbox"></a>Configurer une boîte aux lettres partagée
 
@@ -79,7 +80,7 @@ Il n’est pas nécessaire d’attribuer une licence à la boîte aux lettres pa
 
 ::: moniker-end
 
-2. Sélectionnez la boîte aux lettres partagée que vous souhaitez modifier, puis cliquez sur **modifier**le **transfert** \> du courrier.
+2. Sélectionnez la boîte aux lettres partagée que vous souhaitez modifier, puis cliquez sur modifier le **transfert du courrier** \> **Edit**.
     
 3. Définissez le bouton bascule **sur activé**, puis entrez une adresse de messagerie à laquelle transférer les messages. Il peut s’agir de n’importe quelle adresse de messagerie valide. Pour transférer vers plusieurs adresses, vous devez [créer un groupe de distribution](https://docs.microsoft.com/office365/admin/setup/create-distribution-lists?view=o365-worldwide) pour les adresses, puis entrer le nom du groupe dans cette zone.
     
@@ -105,7 +106,7 @@ Il n’est pas nécessaire d’attribuer une licence à la boîte aux lettres pa
 
 ::: moniker-end
 
-2. Sélectionnez la boîte aux lettres partagée que vous souhaitez modifier, puis sélectionnez \> **modification**des **réponses automatiques** .
+2. Sélectionnez la boîte aux lettres partagée que vous souhaitez modifier, puis sélectionnez modification des **réponses automatiques** \> **Edit**.
     
 3. Définissez le bouton bascule **sur activé**, puis indiquez si vous souhaitez envoyer la réponse à des personnes au sein de votre organisation ou à l’extérieur de votre organisation.
 
@@ -119,7 +120,7 @@ Il n’est pas nécessaire d’attribuer une licence à la boîte aux lettres pa
 
 Par défaut, les courriers envoyés à partir de la boîte aux lettres partagée ne sont pas enregistrés dans le dossier Éléments envoyés de la boîte aux lettres partagée. En revanche, ils sont enregistrés dans le dossier Éléments envoyés de la personne qui a envoyé le courrier.
 
-Si vous souhaitez autoriser tout le monde à voir le courrier envoyé, dans le centre d’administration \> **, modifiez les**paramètres de boîte aux lettres partagée, puis sélectionnez **éléments envoyés** .
+Si vous souhaitez autoriser tout le monde à voir le courrier envoyé, dans le centre d’administration, modifiez les paramètres de boîte aux lettres partagée, puis sélectionnez **éléments envoyés** \> **Edit**.
 
 
 ## <a name="choose-the-apps-that-a-shared-mailbox-can-use-to-access-microsoft-email"></a>Choisir les applications qu’une boîte aux lettres partagée peut utiliser pour accéder à la messagerie Microsoft
@@ -142,7 +143,7 @@ Si vous souhaitez autoriser tout le monde à voir le courrier envoyé, dans le c
 
 ::: moniker-end
 
-2. Sélectionnez la boîte aux lettres partagée que vous souhaitez modifier, puis sélectionnez **applications** \> de messagerie **modifier**.
+2. Sélectionnez la boîte aux lettres partagée que vous souhaitez modifier, puis sélectionnez **applications de messagerie** \> **modifier**.
 
 3. Définissez le bouton bascule **sur activé** pour toutes les applications que vous souhaitez que les membres puissent utiliser pour accéder à la boîte aux lettres partagée. **Désactivez** le bouton bascule pour toutes les applications que vous ne voulez pas utiliser. 
 
@@ -171,7 +172,7 @@ Pour en savoir plus sur la conservation pour litige, consultez [la rubrique Cré
 
 ::: moniker-end
 
-2. Sélectionnez la boîte aux lettres partagée que vous souhaitez modifier, puis sélectionnez **modifier**la **conservation** \> pour litige.
+2. Sélectionnez la boîte aux lettres partagée que vous souhaitez modifier, puis sélectionnez Modifier la **conservation pour litige** \> **Edit**.
 
 3. Définissez le bouton bascule **sur activé**. 
 
@@ -260,7 +261,7 @@ Si vous choisissez de ne pas afficher la boîte aux lettres partagée dans la li
 
 ::: moniker-end
 
-2. Sélectionnez la boîte aux lettres partagée que vous souhaitez modifier, puis sélectionnez Afficher dans la \> **modification** **de la liste d’adresses globale** .
+2. Sélectionnez la boîte aux lettres partagée que vous souhaitez modifier, puis sélectionnez **afficher dans la modification de la liste d’adresses globale** \> **Edit**.
 
 3. Activer ou **Désactiver**le bouton **On** bascule. 
 

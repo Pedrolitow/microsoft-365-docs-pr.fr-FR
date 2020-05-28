@@ -14,18 +14,19 @@ ms.collection:
 - Adm_O365
 - Adm_NonTOC
 - Adm_O365_Setup
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 31efc571-c8b9-46fb-b42d-203c2fb25289
 description: Découvrez comment configurer Office 365 géré par 21Vianet pour gérer vos enregistrements DNS, quand 1&1 Internet est le fournisseur d’hébergement DNS.
-ms.openlocfilehash: 99ac40472d0afa0cb734b0e86a0f10d7904133e1
-ms.sourcegitcommit: c7f11d851073ef14a69669f6c8b7e0c11e4bb7a1
+ms.openlocfilehash: b63dc0664791eb4941513f701824b813d77e67bd
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43939407"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44400700"
 ---
 # <a name="change-nameservers-to-set-up-microsoft-365-with-11-ionos"></a>Modifier les serveurs de noms pour configurer Microsoft 365 avec 1&1 IONOS
 
@@ -140,7 +141,7 @@ Vous êtes prêt à modifier vos enregistrements NS de sorte que Microsoft 365 p
    
 ![Entrée de valeurs de serveur de noms](../../media/0f15880c-88b6-4133-8f31-62f0d98ee63f.png)
   
-4. Cliquez sur **Enregistrer**.
+4. Sélectionnez **Enregistrer**.
     
     ![Sélectionnez Enregistrer dans la page Paramètres du serveur de noms.](../../media/864f7927-7127-4784-b8d2-dadfea2f9dc8.png)
   
@@ -171,7 +172,7 @@ Vous êtes prêt à modifier vos enregistrements NS de sorte que Microsoft 365 p
    
    ![Entrée de valeurs de serveur de noms](../../media/52826bd1-0596-4103-a728-d5d28b9610d2.png)
   
-3. Cliquez sur **Enregistrer**.
+3. Sélectionnez **Enregistrer**.
     
     ![Sélectionnez Enregistrer dans la page Paramètres du serveur de noms.](../../media/cd10e4fb-b7fa-480f-855b-a443f2705cf2.png)
   

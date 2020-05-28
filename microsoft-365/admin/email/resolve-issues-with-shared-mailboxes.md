@@ -15,17 +15,18 @@ ms.collection:
 - Adm_TOC
 ms.custom:
 - MSStore_Link
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Essayez ces solutions si vous rencontrez des problèmes avec les boîtes aux lettres partagées.
-ms.openlocfilehash: 52aac8ab6936dfeba2ae4b5b7a80c45029ec6105
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 5d6de9ac66b11f0e50b259cdca0b1bb50b8326ee
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43628746"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44400015"
 ---
 # <a name="resolve-issues-with-shared-mailboxes"></a>Résoudre les problèmes liés aux boîtes aux lettres partagées
 
@@ -34,7 +35,7 @@ Si des messages d’erreur s’affichent lors de la création ou de l’utilisat
 ## <a name="error-when-creating-shared-mailboxes"></a>Erreur lors de la création de boîtes aux lettres partagées
 <a name="bkmk_Fix"> </a>
 
-Si le message d’erreur s’affiche, **l’adresse proxy « SMTP : <nom\>de la boîte aux lettres partagée » est déjà utilisée par les adresses proxy\<ou legacyExchangeDN de « Name> ». Veuillez choisir une autre adresse proxy**, ce qui signifie que vous essayez de donner à la boîte aux lettres partagée un nom qui est déjà utilisé. Par exemple, imaginons que vous vouliez donner les noms info@domaine1 et info@domaine2 à des boîtes aux lettres partagées. Vous pouvez procéder de deux manières :
+Si le message d’erreur s’affiche, **l’adresse proxy « SMTP : nom de la boîte aux lettres partagée <\> » est déjà utilisée par les adresses proxy ou legacyExchangeDN de « \<name> ». Veuillez choisir une autre adresse proxy**, ce qui signifie que vous essayez de donner à la boîte aux lettres partagée un nom qui est déjà utilisé. Par exemple, imaginons que vous vouliez donner les noms info@domaine1 et info@domaine2 à des boîtes aux lettres partagées. Vous pouvez procéder de deux manières :
 
   - Utiliser Windows PowerShell. Consultez ce billet de blog pour obtenir des instructions : [créer des boîtes aux lettres partagées avec le même alias sur des domaines différents](https://www.cogmotive.com/blog/office-365-tips/create-shared-mailboxes-with-same-alias-at-different-domains-in-office-365)
     

@@ -14,6 +14,7 @@ ms.collection:
 - Adm_O365
 - Adm_NonTOC
 - Adm_O365_Setup
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -21,12 +22,12 @@ search.appverid:
 - BEA160
 ms.assetid: 48e09394-2287-4b3c-9853-21eadf61277e
 description: Découvrez comment vérifier votre domaine et configurer les enregistrements DNS pour la messagerie, Skype entreprise Online et d’autres services sur NetRegistry pour Microsoft.
-ms.openlocfilehash: ed3e3bae232dcbb3c8e4eea3d1a3bc4dd0a88799
-ms.sourcegitcommit: c7f11d851073ef14a69669f6c8b7e0c11e4bb7a1
+ms.openlocfilehash: c4e81e92b9f86d0a2974e6f95e397f3584c9a01e
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43939154"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44400363"
 ---
 # <a name="create-dns-records-at-netregistry-for-microsoft"></a>Créer des enregistrements DNS sur NetRegistry pour Microsoft
 
@@ -81,7 +82,7 @@ Avant que vous puissiez utiliser votre domaine avec Microsoft, nous devons véri
   
     Dans le **nouveau formulaire d’enregistrement txt** , tapez ou copiez-collez les valeurs du tableau suivant. 
     
-    |**Name (Nom)**|**DURÉE DE VIE (S)**|**TXT (pointe vers l’adresse ou la valeur)**|
+    |**Name**|**DURÉE DE VIE (S)**|**TXT (pointe vers l’adresse ou la valeur)**|
     |:-----|:-----|:-----|
     |(Laisser vide)  <br/> |3600 (secondes)  <br/> |« MS = msXXXXXXXX »  <br/> **Remarque :** il s'agit d'un exemple. Utilisez votre valeur spécifique d’**Adresse de destination ou de pointage** ici, à partir du tableau. [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md)  |
        
@@ -135,9 +136,9 @@ Lorsque Microsoft trouve l’enregistrement TXT approprié, votre domaine est v�
   
 6. Dans le **nouveau formulaire d’enregistrement MX** , tapez ou copiez-collez les valeurs du tableau suivant. 
     
-    |**Name (Nom)**|**DURÉE DE VIE (S)**|**Exchange (pointe vers l’adresse ou la valeur)**|**L’hôte est-il entièrement qualifié ?**|**Préférence (priorité)**|
+    |**Name**|**DURÉE DE VIE (S)**|**Exchange (pointe vers l’adresse ou la valeur)**|**L’hôte est-il entièrement qualifié ?**|**Préférence (priorité)**|
     |:-----|:-----|:-----|:-----|:-----|
-    |(Laisser vide)  <br/> |3600 (secondes)  <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/> **Remarque :** Obtenir votre * \<clé\> de domaine* à partir de votre compte Microsoft.  [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md)      |(cochez la case)  <br/> |10   <br/> For more information about priority, see What is MX priority?  <br/> |
+    |(Laisser vide)  <br/> |3600 (secondes)  <br/> | *\<domain-key\>*. mail.protection.outlook.com  <br/> **Remarque :** Obtenir votre *\<domain-key\>* à partir de votre compte Microsoft.  [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md)      |(cochez la case)  <br/> |10   <br/> For more information about priority, see What is MX priority?  <br/> |
        
     ![Netregistry_MX_values](../../media/518b3da6-4055-4e2d-b5ce-44a0fee25419.png)
   
@@ -247,8 +248,8 @@ Lorsque Microsoft trouve l’enregistrement TXT approprié, votre domaine est v�
   
     |**Type**|**Nom**|**DURÉE DE VIE (S)**|**Priority (Priorité)**|**Weight (Poids)**|**Port (Port)**|**Target (Cible)**|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-    |SRV (service)  <br/> |_sip. _tls  <br/> |3600 (secondes)  <br/> |100  <br/> |0,1  <br/> |443  <br/> |sipdir.online.lync.com  <br/> |
-    |SRV (service)  <br/> |_sipfederationtls. _tcp  <br/> |3600 (secondes)  <br/> |100  <br/> |0,1  <br/> |5061  <br/> |sipfed.online.lync.com  <br/> |
+    |SRV (service)  <br/> |_sip. _tls  <br/> |3600 (secondes)  <br/> |100  <br/> |1   <br/> |443  <br/> |sipdir.online.lync.com  <br/> |
+    |SRV (service)  <br/> |_sipfederationtls. _tcp  <br/> |3600 (secondes)  <br/> |100  <br/> |1   <br/> |5061  <br/> |sipfed.online.lync.com  <br/> |
        
     ![Netregistry_SRV_values](../../media/49292846-1598-4b8c-9940-db6e10675753.png)
   

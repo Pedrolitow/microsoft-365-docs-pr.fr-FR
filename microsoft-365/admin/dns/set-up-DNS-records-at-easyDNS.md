@@ -14,17 +14,18 @@ ms.collection:
 - Adm_O365
 - Adm_NonTOC
 - Adm_O365_Setup
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: 446babfe-2e08-4cc2-bbfb-c05b854933ac
 description: Découvrez comment vérifier votre domaine et configurer les enregistrements DNS pour la messagerie, Skype entreprise Online et d’autres services sur easyDNS pour Microsoft.
-ms.openlocfilehash: b7b29900108ab94f0fd99dcf3404cfa137ce92ff
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 24f477d240af936975141c53d382e114a24c0ac5
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631356"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44400231"
 ---
 # <a name="create-dns-records-at-easydns-for-microsoft"></a>Créer des enregistrements DNS sur easyDNS pour Microsoft
 
@@ -44,7 +45,7 @@ Remarque : les enregistrements SRV ne sont actuellement pas disponibles dans to
     
 4. Entrez les enregistrements suivants dans les champs de texte :
     
-    |**Host**|**Texte**|
+    |**Hôte**|**Text**|
     |:-----|:-----|
     |@  <br/> |MS = msXXXXXXXX (utilisez la valeur fournie dans la page domaines du centre d’administration)  <br/> |
    
@@ -54,7 +55,7 @@ Remarque : les enregistrements SRV ne sont actuellement pas disponibles dans to
     
 7. Patientez quelques minutes avant de poursuivre, afin que l’enregistrement que vous venez de créer puisse se propager sur Internet et soit détecté par Microsoft.
     
-8. À présent que vous avez ajouté l’enregistrement sur le site de votre bureau d’enregistrement de domaines, vous allez revenir à Microsoft et demander l’enregistrement.
+8. L’enregistrement étant désormais ajouté sur le site de votre bureau d’enregistrement de domaines, revenez sur Microsoft et demandez l’enregistrement.
     
 9. Dans le centre d’administration, accédez à la page **Paramètres** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domaines</a>.
     
@@ -76,7 +77,7 @@ Remarque : les enregistrements SRV ne sont actuellement pas disponibles dans to
     
     |**COURRIER POUR LA ZONE**|**SERVEUR DE MESSAGERIE**|**PRÉFÉRENCES**|
     |:-----|:-----|:-----|
-    |@  <br/> |\<Key\>. mail.protection.Outlook.com (obtenir votre \<valeur de clé\> de domaine à partir de la page domaines du centre d’administration)  <br/> |0  <br/> |
+    |@  <br/> |\<domain-key\>. mail.protection.outlook.com (obtenir votre \<domain-key\> valeur à partir de la page domaines du centre d’administration)  <br/> |0  <br/> |
    
 2. Si vous souhaitez enregistrer vos autres enregistrements MX à des fins de sauvegarde, copiez-les quelque part. Avant de poursuivre, supprimez tous les autres enregistrements MX ici.
     
@@ -107,7 +108,7 @@ Remarque : les enregistrements SRV ne sont actuellement pas disponibles dans to
     
 6. Vérifiez que l’enregistrement est correct, puis sélectionnez **confirmer**. 
     
-## <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a>Ajoutez un enregistrement TXT pour SPF afin d'éviter le courrier indésirable
+## <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a>Ajouter un enregistrement TXT pour SPF afin d'éviter le courrier indésirable
 
 1. Accédez à [https://cp.easydns.com/manage/domains/](https://cp.easydns.com/manage/domains/) et connectez-vous avec vos informations d’identification. 
     
@@ -117,7 +118,7 @@ Remarque : les enregistrements SRV ne sont actuellement pas disponibles dans to
     
 4. Entrez les enregistrements suivants dans les champs de texte :
     
-    |**Host**|**Texte**|
+    |**Hôte**|**Text**|
     |:-----|:-----|
     |@  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/> |
    
@@ -125,7 +126,7 @@ Remarque : les enregistrements SRV ne sont actuellement pas disponibles dans to
     
 6. Vérifiez que l’enregistrement est correct, puis sélectionnez **confirmer**. 
     
-## <a name="add-the-two-srv-records-that-are-required-for-microsoft"></a>Ajouter les deux enregistrements SRV requis pour Microsoft
+## <a name="add-the-two-srv-records-that-are-required-for-microsoft"></a>Ajoutez les deux enregistrements SRV requis pour Microsoft
 
 Remarque : les enregistrements SRV ne sont actuellement pas disponibles dans easyDNS’domaine plus niveau de service. Vous devrez peut-être effectuer une mise à niveau vers un niveau de service supérieur avec easyDNS pour ajouter des enregistrements SRV 
   
@@ -139,8 +140,8 @@ Remarque : les enregistrements SRV ne sont actuellement pas disponibles dans ea
     
     |**SERVICE**|**DEST**|**HOST (HÔTE)**|**PRI**|**WGT**|**PORT**|**CIBLE (doit se terminer par un « . »)**|**TTL (Durée de vie)**|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-    |_sip  <br/> |TLS  <br/> |@  <br/> |100  <br/> |0,1  <br/> |443  <br/> |sipdir.online.lync.com.  <br/> |1800  <br/> |
-    |_sipfederationtls  <br/> |TCP  <br/> |@  <br/> |100  <br/> |0,1  <br/> |5061  <br/> |sipfed.online.lync.com.  <br/> |1800  <br/> |
+    |_sip  <br/> |TLS  <br/> |@  <br/> |100  <br/> |1   <br/> |443  <br/> |sipdir.online.lync.com.  <br/> |1800  <br/> |
+    |_sipfederationtls  <br/> |TCP  <br/> |@  <br/> |100  <br/> |1   <br/> |5061  <br/> |sipfed.online.lync.com.  <br/> |1800  <br/> |
    
 5. Sélectionnez **suivant**. 
     

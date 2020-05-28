@@ -21,17 +21,18 @@ ms.custom:
 - TRN_M365B
 - OKR_SMB_Videos
 - seo-marvel-mar
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: cbc6bfe5-565a-4fb8-95f0-b06e7b74ac46
 description: Aidez vos utilisateurs à installer des applications Office sur des appareils Windows 10 et à installer facilement Office sur des PC Windows 10 à partir du centre d’administration 365 de Microsoft.
-ms.openlocfilehash: a7078ad6d7423900aefba47605cb2b2852856108
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 617942c08b1fb27e8e864906774b4120486e0bb3
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627197"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44400905"
 ---
 # <a name="help-your-users-install-office-on-windows-10-devices"></a>Aider vos utilisateurs à installer Office sur des appareils Windows 10
 
@@ -49,7 +50,7 @@ Si vous avez trouvé cette vidéo utile, consultez les [séries de formations co
 
 ## <a name="manage-office-deployments"></a>Gérer les déploiements d'Office
 
-1. Accédez au centre d’administration à <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>l’adresse, puis connectez-vous à l’aide des informations d’identification d’administrateur général. 
+1. Accédez au centre d’administration à l’adresse <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> , puis connectez-vous à l’aide des informations d’identification d’administrateur général. 
 
 2. Accédez au **programme d’installation** dans le volet de navigation de gauche, puis, dans la page de **configuration** , faites défiler jusqu’à **applications et mises à jour**.
     > [!NOTE]
@@ -64,4 +65,4 @@ Si vous avez trouvé cette vidéo utile, consultez les [séries de formations co
 
 ## <a name="for-more-on-setting-up-and-using-microsoft-365-business-premium"></a>Pour en savoir plus sur la configuration et l’utilisation de Microsoft 365 Business Premium
 
-[Vidéos de formation Microsoft 365 pour les entreprises](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[Vidéos de formation Microsoft 365 Entreprise](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

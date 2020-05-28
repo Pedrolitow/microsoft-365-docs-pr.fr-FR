@@ -14,18 +14,19 @@ ms.collection:
 - Adm_O365
 - Adm_NonTOC
 - Adm_O365_Setup
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 84f467f6-28cf-40f0-94d0-a2a27ddfc2e7
 description: 'Apprenez à configurer votre domaine personnalisé Microsoft avec NameCheap si vous souhaitez que Microsoft gère vos enregistrements DNS. '
-ms.openlocfilehash: 6fdec37e837c74666ada82af81d43faaa0a6d589
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 55fde3b0db960d78ad77c9f9189c5367de16c73f
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43629778"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44400616"
 ---
 # <a name="change-nameservers-to-set-up-microsoft-with-namecheap"></a>Modifier les serveurs de noms pour configurer Microsoft avec NameCheap
 
@@ -69,7 +70,7 @@ Suivez ces instructions si vous voulez que Microsoft gère vos enregistrements D
     
 |**Type**|**Host (Hôte)**|**Valeur**|**TTL**|
 |:-----|:-----|:-----|:-----|
-|TXT  <br/> |@  <br/> |MS=ms *XXXXXXXX*  <br/> **Remarque**: Voici un exemple. Utilisez votre **adresse de destination ou de pointage** spécifique ici, à partir du tableau.           [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md)          |30 min  <br/> |
+|TXT  <br/> |@  <br/> |MS=ms *XXXXXXXX*  <br/> **Remarque**: Voici un exemple. Utilisez votre valeur spécifique d’**Adresse de destination ou de pointage** ici, à partir du tableau.           [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md)          |30 min  <br/> |
    
    ![NameCheap-BP-Verify-1-2](../../media/fe75c0fd-f85c-4bef-8068-edaf9779b7f1.png)
   
@@ -81,7 +82,7 @@ Suivez ces instructions si vous voulez que Microsoft gère vos enregistrements D
     
 À présent que vous avez ajouté l’enregistrement sur le site de votre bureau d’enregistrement de domaines, vous allez retourner à Microsoft et demander une recherche pour l’enregistrement.
   
-Lorsque Microsoft trouve l’enregistrement TXT correct, votre domaine est vérifié.
+Lorsque Microsoft trouve l’enregistrement TXT approprié, votre domaine est vérifié.
   
 1. Dans le centre d’administration, accédez à la page **Paramètres** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domaines</a>.
 

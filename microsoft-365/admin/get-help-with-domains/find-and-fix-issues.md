@@ -14,6 +14,7 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 - Adm_O365_Setup
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -21,12 +22,12 @@ search.appverid:
 - GEA150
 ms.assetid: 40398b0b-bdd0-4afd-ab5e-b5ae6b7990bf
 description: Découvrez comment détecter les problèmes que vous rencontrez lors de la configuration d’un domaine personnalisé en vous assurant que les enregistrements DNS sont correctement configurés.
-ms.openlocfilehash: 457b9a0f76e66f121572064f359f120b770b65de
-ms.sourcegitcommit: 83f980927728bc080f97a3e6dc70dc305f3df841
+ms.openlocfilehash: e3c66e10a673d840cfddad81a057739b6dfac721
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44053719"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44399943"
 ---
 # <a name="find-and-fix-issues-after-adding-your-domain-or-dns-records"></a>Rechercher et corriger des problèmes après avoir ajouté votre domaine ou des enregistrements DNS
 
@@ -35,7 +36,7 @@ ms.locfileid: "44053719"
 L’obtention de votre domaine configuré pour fonctionner avec Microsoft 365 peut être complexe. Le système DNS est exigeant et la configuration DNS pour votre domaine a une incidence sur les activités professionnelles importantes, comme le courrier.
 
 > [!NOTE]
-> Vous pouvez vérifier les problèmes liés à votre domaine en vérifiant son état. Accédez à **configurer** > les**domaines** et affichez les notifications dans la colonne **État** . Si vous voyez un problème, sélectionnez autres actions (trois points), puis sélectionnez **vérifier l’intégrité**. Le volet qui s’ouvre décrit tous les problèmes liés à votre domaine.
+> Vous pouvez vérifier les problèmes liés à votre domaine en vérifiant son état. Accédez à **configurer**  >  les**domaines** et affichez les notifications dans la colonne **État** . Si vous voyez un problème, sélectionnez autres actions (trois points), puis sélectionnez **vérifier l’intégrité**. Le volet qui s’ouvre décrit tous les problèmes liés à votre domaine.
   
 ## <a name="whats-going-on"></a>Que se passe-t-il ?
 

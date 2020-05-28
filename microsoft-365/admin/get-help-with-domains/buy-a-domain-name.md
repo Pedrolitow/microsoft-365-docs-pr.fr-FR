@@ -14,6 +14,9 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 - Adm_O365_Setup
+ms.custom:
+- AdminSurgePortfolio
+- okr_smb
 search.appverid:
 - BCS160
 - MET150
@@ -21,20 +24,19 @@ search.appverid:
 - GEA150
 ms.assetid: 1561140a-16a9-4a02-822d-a989250e479d
 description: Découvrez comment acheter un nom de domaine dans Microsoft 365.
-ms.custom: okr_smb
-ms.openlocfilehash: e60947b2f0f2591d09add00bd5aeb2ad3a5aa161
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: 9358df6728e1e29228241887be65fb68a4720281
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44140416"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44400003"
 ---
 # <a name="buy-a-domain-name"></a>Acheter un nom de domaine
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> Le centre d’administration change. Si votre expérience ne correspond pas aux détails présentés ici, reportez-vous [à la rubrique à propos du nouveau centre d’administration Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> Le centre d’administration change. Si votre expérience ne correspond pas aux informations présentées ici, voir [À propos du nouveau centre d’administration Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
 
 ::: moniker-end
 
@@ -80,7 +82,7 @@ Nous offrons un abonnement de confidentialité de domaine gratuit avec l’achat
 ### <a name="buy-a-domain-from-another-domain-registrar"></a>Acheter un domaine auprès d'un autre bureau d'enregistrement de domaines
 Si vous souhaitez acheter un domaine à partir d’un bureau d’enregistrement de domaine autre que [GoDaddy](https://www.godaddy.com), nous vous recommandons d’en utiliser une ci-dessous qui prend en charge la configuration automatique (connexion à un domaine). 
   
-- [1&amp;1 Ionos](https://www.1and1.com/)
+- [1 &amp; 1 Ionos](https://www.1and1.com/)
 - [WordPress](https://www.wordpress.com) 
 
    

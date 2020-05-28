@@ -14,18 +14,19 @@ ms.collection:
 - Adm_O365
 - Adm_NonTOC
 - Adm_O365_Setup
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: e158b079-b054-4b7e-8e01-e55169ce18d7
 description: Découvrez comment vérifier votre domaine et configurer les enregistrements DNS pour la messagerie, Skype entreprise Online et d’autres services sur DNSMadeEasy pour Microsoft.
-ms.openlocfilehash: d69a497c08ff905c28b923ebdb0e6fba6c5f82fa
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+ms.openlocfilehash: db28ac0cb95bd86bc13a1a1ce47f273989aa4436
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44049058"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44400520"
 ---
 # <a name="create-dns-records-at-dnsmadeeasy-for-microsoft"></a>Créer des enregistrements DNS sur DNSMadeEasy pour Microsoft
 
@@ -55,7 +56,7 @@ Avant que vous puissiez utiliser votre domaine avec Microsoft, nous devons véri
     
 2. Dans la page **console de gestion** , dans la zone **domaines récemment mis** à jour, sélectionnez le domaine que vous souhaitez mettre à jour. 
     
-3. Sur la page **DNS géré** , dans la zone **txt Records (enregistrements TXT** ) **+**, sélectionnez le contrôle () ( **Ajouter nouveau**).
+3. Sur la page **DNS géré** , dans la zone **txt Records (enregistrements TXT** ), sélectionnez le **+** contrôle () ( **Ajouter nouveau**).
     
     (You may have to scroll down.)
     
@@ -109,7 +110,7 @@ Lorsque Microsoft trouve l’enregistrement TXT approprié, votre domaine est v�
     
     |**Name**|**Server**|**MX Level (Niveau MX)**|**TTL (Durée de vie)**|
     |:-----|:-----|:-----|:-----|
-    |(Laissez ce champ vide.)  <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/> **Cette valeur DOIT se terminer par un point (.)** <br/> **Remarque :** Obtenez votre \<*clé de domaine*\> à partir de votre compte Microsoft. [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md)          |10   <br/> Pour plus d'informations sur la priorité, voir [Qu'est-ce que la priorité MX ?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq). <br/> |1800  <br/> |
+    |(Laissez ce champ vide.)  <br/> | *\<domain-key\>*. mail.protection.outlook.com  <br/> **This value MUST end with a period (.)** <br/> **Remarque :** Obtenir votre \<*domain-key*\> à partir de votre compte Microsoft. [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md)          |10   <br/> Pour plus d'informations sur la priorité, voir [Qu'est-ce que la priorité MX ?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq). <br/> |1800  <br/> |
    
     ![DNSMadeEasy-BP-configure-2-2](../../media/69b53af9-1eec-435c-8434-1b6058c1ec82.png)
   
@@ -166,7 +167,7 @@ Lorsque Microsoft trouve l’enregistrement TXT approprié, votre domaine est v�
     
     Répétez cette procédure jusqu’à ce que vous ayez créé les cinq enregistrements CNAMe.
     
-## <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a>Ajoutez un enregistrement TXT pour SPF afin d'éviter le courrier indésirable
+## <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a>Ajouter un enregistrement TXT pour SPF afin d'éviter le courrier indésirable
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
@@ -213,8 +214,8 @@ Lorsque Microsoft trouve l’enregistrement TXT approprié, votre domaine est v�
     
     |**Name (Nom)**|**Priority (Priorité)**|**Weight (Poids)**|**Port (Port)**|**Host (Hôte)**|**TTL (Durée de vie)**|
     |:-----|:-----|:-----|:-----|:-----|:-----|
-    |_sip. _tls  <br/> |100  <br/> |0,1  <br/> |443  <br/> |sipdir.online.lync.com.  <br/> **Cette valeur DOIT se terminer par un point (.)** <br/> |1800  <br/> |
-    |_sipfederationtls. _tcp  <br/> |100  <br/> |0,1  <br/> |5061  <br/> |sipfed.online.lync.com.  <br/> **Cette valeur DOIT se terminer par un point (.)** <br/> |1800  <br/> |
+    |_sip. _tls  <br/> |100  <br/> |1   <br/> |443  <br/> |sipdir.online.lync.com.  <br/> **Cette valeur DOIT se terminer par un point (.)** <br/> |1800  <br/> |
+    |_sipfederationtls. _tcp  <br/> |100  <br/> |1   <br/> |5061  <br/> |sipfed.online.lync.com.  <br/> **Cette valeur DOIT se terminer par un point (.)** <br/> |1800  <br/> |
    
     ![DNSMadeEasy-BP-configure-5-2](../../media/e1155f94-575f-441a-9a61-d948391d42ca.png)
   

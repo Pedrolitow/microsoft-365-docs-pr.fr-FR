@@ -13,18 +13,19 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 787d7a75-e201-46f3-a242-f698162ff09f
 description: Découvrez comment mettre à niveau une ou plusieurs listes de distribution vers des groupes Microsoft 365 dans Outlook, et comment utiliser PowerShell pour mettre à niveau plusieurs listes de distribution simultanément.
-ms.openlocfilehash: 993b0baf46b702322df64693f682e25b0240a0ab
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: cac0232b721c07ce8e07c7b101e0313eb9cd91df
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44065668"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44399493"
 ---
 # <a name="upgrade-distribution-lists-to-microsoft-365-groups-in-outlook"></a>Mettre à niveau les listes de distribution vers des groupes Microsoft 365 dans Outlook
 
@@ -38,7 +39,7 @@ Vous devez être un administrateur général ou un administrateur Exchange pour 
 
 1. Accédez au <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Centre d’administration Exchange</a>.
 
-2. Dans le centre d’administration Exchange, accédez à **groupes**de **destinataires** \> .<br/>Vous verrez une notification indiquant que des listes de distribution (également appelées **groupes de distribution** ) sont éligibles pour être mises à niveau vers les groupes Microsoft 365.<br/> ![Sélectionnez le bouton prise en main](../../media/8cf838b4-2644-401f-a366-08c1eea183eb.png)
+2. Dans le centre d’administration Exchange, accédez à groupes de **destinataires** \> **Groups**.<br/>Vous verrez une notification indiquant que des listes de distribution (également appelées **groupes de distribution** ) sont éligibles pour être mises à niveau vers les groupes Microsoft 365.<br/> ![Sélectionnez le bouton prise en main](../../media/8cf838b4-2644-401f-a366-08c1eea183eb.png)
 
 3. Sélectionnez une ou plusieurs listes de distribution (également appelées **groupe de distribution** ) dans la page **groupes** .<br/>![Sélectionner un groupe de distribution](../../media/2c303433-d60b-4100-a6ae-5809b03a8cdb.png)
 
@@ -89,7 +90,7 @@ Upgrade-DistributionGroup -DlIdentities \<DL SMTP address1\>, \< DL SMTP address
 \< DL SMTP address3\>, \< DL SMTP address 4\>
 ```
 
-Par exemple, si vous souhaitez mettre à niveau cinq listes de distribution `dl1@contoso.com` avec `dl2@contoso.com`adresse `dl3@contoso.com`SMTP `dl4@contoso.com` et `dl5@contoso.com`, et, exécutez la commande suivante :
+Par exemple, si vous souhaitez mettre à niveau cinq listes de distribution avec adresse SMTP `dl1@contoso.com` et, `dl2@contoso.com` et, `dl3@contoso.com` `dl4@contoso.com` `dl5@contoso.com` exécutez la commande suivante :
 
 `Upgrade-DistributionGroup -DlIdentities dl1@contoso.com, dl2@contoso.com, dl3@contoso.com, dl4@contoso.com, dl5@contoso.com`
 
@@ -98,7 +99,7 @@ Par exemple, si vous souhaitez mettre à niveau cinq listes de distribution `dl1
 Il existe deux façons de mettre à niveau toutes les listes de distribution éligibles.
 
 > [!NOTE]
-> La cmdlet Upgrade-DistributionGroup ne reçoit pas de données du pipeline, pour cette raison, il est nécessaire d’utiliser{}l’opérateur « ForEach-Object » pour s’exécuter correctement.
+> La cmdlet Upgrade-DistributionGroup ne reçoit pas de données du pipeline, pour cette raison, il est nécessaire d’utiliser l’opérateur « ForEach-Object {} » pour s’exécuter correctement.
 
 1. Obtenez les listes de distribution éligibles dans le client et mettez-les à niveau à l’aide de la commande de mise à niveau :
 
@@ -122,7 +123,7 @@ Get-DistributionGroup| Foreach-Object{
 
 Vous ne pouvez mettre à niveau que des listes de distribution non imbriquées gérées dans le Cloud, simples et non imbriquées. Le tableau ci-dessous répertorie les listes de distribution qui **ne peuvent pas** être mises à niveau.
 
-|**Propriété**|**Exclus?**|
+|**Property**|**Exclus?**|
 |:-----|:-----|
 |Liste de distribution gérée locale.  <br/> |Non  <br/> |
 |Listes de distribution imbriquées. La liste de distribution a des groupes enfants ou est membre d’un autre groupe.  <br/> |Non  <br/> |

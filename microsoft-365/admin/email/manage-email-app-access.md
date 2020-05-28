@@ -12,6 +12,7 @@ localization_priority: Normal
 ms.collection:
 - Adm_O365
 - Adm_NonTOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 - MOE150
@@ -20,12 +21,12 @@ search.appverid:
 ms.assetid: d00b6b83-1f14-4e9c-a2c5-dbd9a92816f4
 ROBOTS: NOINDEX, NOFOLLOW
 description: Découvrez comment choisir les applications mobiles que les utilisateurs peuvent utiliser pour accéder à la messagerie, au calendrier et aux contacts.
-ms.openlocfilehash: 8627a31f7ec5e3c14b853618bb0383ecc58597cc
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: f114aa43b4bbade09d53f415aae4c5c033c20694
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43628806"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44400051"
 ---
 # <a name="manage-email-app-access-in-the-microsoft-365-admin-center"></a>Gérer l’accès aux applications de messagerie dans le centre d’administration Microsoft 365
 

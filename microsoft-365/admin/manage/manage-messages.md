@@ -13,18 +13,19 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 97af2932-0868-4ccf-8f6b-21a94946c58a
 description: Apprenez à gérer les messages du centre de messages pour faciliter la gestion des modifications.
-ms.openlocfilehash: 95a4544dd99ebce793242532ae144f00c3b16fcb
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 63c46b10913b3388c833470041da3695f0988327
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43628147"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44399715"
 ---
 # <a name="manage-messages-in-message-center"></a>Gérer les messages dans le centre de messages
 
@@ -32,7 +33,7 @@ Les publications du centre de messages sont des annonces importantes sur les fon
   
 ## <a name="read-a-message"></a>Lire un message
 
-Pour accéder au centre de messages, accédez au [Centre d’administration](https://go.microsoft.com/fwlink/p/?linkid=2024339), puis sélectionnez**Centre de messages**d' **intégrité** > . 
+Pour accéder au centre de messages, accédez au [Centre d’administration](https://go.microsoft.com/fwlink/p/?linkid=2024339), puis sélectionnez **Health**  >  **Centre de messages**d’intégrité. 
 
 Sélectionnez le titre d’un message pour l’ouvrir dans le volet de lecture. Chaque message contient un résumé de la modification, une indication de la façon dont la modification peut vous affecter, des informations sur la façon dont vous pouvez préparer votre organisation pour la modification, et (dans la plupart des cas) d’un lien d’informations supplémentaire dans lequel vous pouvez en savoir plus. Les informations supplémentaires continuent d’être disponibles, même après l’expiration d’un message.
 

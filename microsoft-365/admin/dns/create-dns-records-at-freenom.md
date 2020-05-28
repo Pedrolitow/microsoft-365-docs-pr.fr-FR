@@ -14,18 +14,19 @@ ms.collection:
 - Adm_O365
 - Adm_NonTOC
 - Adm_O365_Setup
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: d8ff45a2-19e3-413d-aa64-a9982bd6633c
 description: Découvrez comment vérifier votre domaine et configurer les enregistrements DNS pour la messagerie, Skype entreprise Online et d’autres services sur Freenom pour Microsoft.
-ms.openlocfilehash: 39963b5c0f5f3f82fe193160e8aa8ab03894cedd
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+ms.openlocfilehash: f139c21915d6922c2f77281990dd09949d9db928
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44049034"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44400472"
 ---
 # <a name="create-dns-records-at-freenom-for-microsoft"></a>Créer des enregistrements DNS sur Freenom pour Microsoft
 
@@ -70,7 +71,7 @@ Avant que vous puissiez utiliser votre domaine avec Microsoft, nous devons véri
   
 6. Dans les zones du nouvel enregistrement, tapez ou copiez-collez les valeurs du tableau suivant. 
     
-    |**Name**|**Type**|**TTL (Durée de vie)**|**Target (Cible)**|
+    |**Name**|**Type**|**TTL (Durée de vie)**|**Target**|
     |:-----|:-----|:-----|:-----|
     |(Laisser vide)  <br/> |TXT  <br/> |3600 (secondes)  <br/> |MS = msXXXXXXXX  <br/> **Remarque :** il s'agit d'un exemple. Utilisez votre valeur spécifique d’**Adresse de destination ou de pointage** ici, à partir du tableau.           [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md)          |
    
@@ -137,9 +138,9 @@ Lorsque Microsoft trouve l’enregistrement TXT approprié, votre domaine est v�
   
 8. Dans les zones du nouvel enregistrement, tapez ou copiez-collez les valeurs de la première ligne du tableau suivant. 
     
-    |**Name**|**Type**|**TTL (Durée de vie)**|**Target (Cible)**|**Priorité**|
+    |**Name**|**Type**|**TTL (Durée de vie)**|**Target**|**Priorité**|
     |:-----|:-----|:-----|:-----|:-----|
-    |(Laisser vide)  <br/> |MX (Mail Exchanger) (MX - Serveur de courrier)  <br/> |3600 (secondes)  <br/> |\<Key\>. mail.protection.Outlook.com  <br/> **Remarque :** Obtenir votre * \<clé\> de domaine* à partir de votre compte Microsoft.   [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md)          |10   <br/> Pour plus d'informations sur la priorité, voir [Qu'est-ce que la priorité MX ?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq). <br/> |
+    |(Laisser vide)  <br/> |MX (Mail Exchanger) (MX - Serveur de courrier)  <br/> |3600 (secondes)  <br/> |\<domain-key\>. mail.protection.outlook.com  <br/> **Remarque :** Obtenir votre *\<domain-key\>* à partir de votre compte Microsoft.   [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md)          |10   <br/> Pour plus d'informations sur la priorité, voir [Qu'est-ce que la priorité MX ?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq). <br/> |
    
    ![Enregistrement MX Freenom](../../media/8896c4a9-b3dd-45ed-9916-f7da2715ba8c.png)
   
@@ -174,7 +175,7 @@ Lorsque Microsoft trouve l’enregistrement TXT approprié, votre domaine est v�
   
 6. Créez le premier enregistrement CNAME. Dans les zones du nouvel enregistrement, tapez ou copiez-collez les valeurs de la première ligne du tableau suivant. 
     
-    |**Name (Nom)**|**Type d'enregistrement**|**TTL (Durée de vie)**|**Target (Cible)**|
+    |**Name (Nom)**|**Type d'enregistrement**|**TTL (Durée de vie)**|**Target**|
     |:-----|:-----|:-----|:-----|
     |autodiscover  <br/> |CNAME  <br/> |3600 (secondes)  <br/> |autodiscover.outlook.com  <br/> |
     |sip  <br/> |CNAME  <br/> |3600 (secondes)  <br/> |sipdir.online.lync.com  <br/> |
@@ -192,7 +193,7 @@ Lorsque Microsoft trouve l’enregistrement TXT approprié, votre domaine est v�
     
     Pour chaque enregistrement, tapez ou copiez-collez les valeurs de la ligne suivante du tableau ci-dessus dans les zones de cet enregistrement.
     
-## <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a>Ajoutez un enregistrement TXT pour SPF afin d'éviter le courrier indésirable
+## <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a>Ajouter un enregistrement TXT pour SPF afin d'éviter le courrier indésirable
 <a name="bkmk_spf"> </a>
 
 > [!IMPORTANT]
@@ -220,7 +221,7 @@ Lorsque Microsoft trouve l’enregistrement TXT approprié, votre domaine est v�
   
 6. In the boxes for the new record, type or copy and paste the following values. 
     
-    |**Name**|**Type d'enregistrement**|**TTL (Durée de vie)**|**Target (Cible)**|
+    |**Name**|**Type d'enregistrement**|**TTL (Durée de vie)**|**Target**|
     |:-----|:-----|:-----|:-----|
     |(Laisser vide)  <br/> |TXT  <br/> |3600 (secondes)  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/>**Remarque :** nous vous recommandons de copier et coller cette entrée, afin que l’espacement reste correcte.           |
    

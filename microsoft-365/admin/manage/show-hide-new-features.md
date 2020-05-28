@@ -13,17 +13,18 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Déterminez les fonctionnalités et le contenu des nouveautés affichées ou masqués pour les utilisateurs finaux dans Office nouveautés de la gestion des applications de bureau Office.
-ms.openlocfilehash: 7399da493f8e6878a92dc13d92482d7ddece0ba3
-ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
+ms.openlocfilehash: 0723823e76be2baf15273d23ad343d91bcec8d60
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "44011698"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44399541"
 ---
 # <a name="show-or-hide-new-features-using-whats-new-management"></a>Afficher ou masquer les nouvelles fonctionnalités à l’aide de nouveautés gestion
 

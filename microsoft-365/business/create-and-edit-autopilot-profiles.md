@@ -20,18 +20,19 @@ ms.custom:
 - MSB365
 - OKR_SMB_M365
 - seo-marvel-mar
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 5cf7139e-cfa1-4765-8aad-001af1c74faa
 description: Apprenez à créer un profil AutoPilot et à l’appliquer à un appareil, ainsi qu’à modifier ou supprimer un profil ou à supprimer un profil d’un appareil.
-ms.openlocfilehash: a6e02ab56faeb08718a9831657b55cff0356a4ec
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: e58418813ed0b4d23a5fa7e1d23aae33d8850e7f
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627371"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44400971"
 ---
 # <a name="create-and-edit-autopilot-profiles"></a>Créer et modifier des profils AutoPilot
 
@@ -41,7 +42,7 @@ Un profil s'applique à un appareil ou à un groupe d'appareils,
   
 1. Dans le centre d’administration 365 de Microsoft, sélectionnez **périphériques** \> **AutoPilot**.
   
-2. Sur la **page AutoPilot** , sélectionnez l' **Profiles** onglet \> profils **Create Profile**.
+2. Sur la page **AutoPilot** , sélectionnez l’onglet **profils** \> **Create Profile**.
     
 3. Sur la page **créer un profil** , entrez un nom pour le profil qui vous permet de l’identifier, par exemple marketing. Activez le paramètre souhaité, puis choisissez **Enregistrer**. Pour plus d’informations sur les paramètres du profil AutoPilot, voir [à propos des paramètres du profil AutoPilot](autopilot-profile-settings.md).
     
@@ -53,7 +54,7 @@ Une fois que vous avez créé un profil, vous pouvez l’appliquer à un apparei
   
 1. Sur la page **Préparer Windows**, choisissez l'onglet **Appareils**. 
     
-2. Activez la case à cocher en regard du nom d’un appareil, puis dans le panneau **périphérique** , sélectionnez un profil dans la liste \> déroulante **Profil affecté** **Enregistrer**.
+2. Activez la case à cocher en regard du nom d’un appareil, puis dans le panneau **périphérique** , sélectionnez un profil dans la liste déroulante **Profil affecté** \> **Enregistrer**.
     
     ![In the Device panel, select an Assigned profile to apply it.](../media/ed0ce33f-9241-4403-a5de-2dddffdc6fb9.png)
   
@@ -65,7 +66,7 @@ Lorsque vous avez affecté un profil à un appareil, vous pouvez le mettre à jo
 
 1. Sur la page **Préparer Windows**, choisissez l'onglet **Profils**. 
     
-2. Activez la case à cocher en regard du nom d’un appareil, puis, dans le volet **Profil** , mettez \> à jour les paramètres d' **enregistrement**disponibles.
+2. Activez la case à cocher en regard du nom d’un appareil, puis, dans le volet **Profil** , mettez à jour les paramètres d' \> **enregistrement**disponibles.
     
     Si vous effectuez cette opération avant qu'un utilisateur connecte l'appareil à Internet, le profil sera appliqué pendant le processus de configuration.
     
@@ -73,7 +74,7 @@ Lorsque vous avez affecté un profil à un appareil, vous pouvez le mettre à jo
 
 1. Sur la page **Préparer Windows**, choisissez l'onglet **Profils**. 
     
-2. Activez la case à cocher en regard du nom d’un appareil, puis, dans le volet **Profil** , sélectionnez Supprimer l' **enregistrement**du **Profil** \> .
+2. Activez la case à cocher en regard du nom d’un appareil, puis, dans le volet **Profil** , sélectionnez Supprimer l’enregistrement du **Profil** \> **Save**.
     
     Lorsque vous supprimez un profil, il est supprimé de l'appareil ou du groupe d'appareils auquel il a été affecté.
     
@@ -81,5 +82,5 @@ Lorsque vous avez affecté un profil à un appareil, vous pouvez le mettre à jo
 
 1. Sur la page **Préparer Windows**, choisissez l'onglet **Appareils**. 
     
-2. Activez la case à cocher en regard du nom d’un appareil, puis, dans le panneau **périphérique** , choisissez **aucun** dans la liste \> déroulante **Profil affecté** **Enregistrer**.
+2. Activez la case à cocher en regard du nom d’un appareil, puis, dans le panneau **périphérique** , choisissez **aucun** dans la liste déroulante **Profil affecté** \> **Enregistrer**.
     

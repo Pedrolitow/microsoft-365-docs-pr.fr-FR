@@ -14,6 +14,7 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 - Adm_O365_Setup
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -21,19 +22,19 @@ search.appverid:
 - GEA150
 ms.assetid: f09696b2-8c29-4588-a08b-b333da19810c
 description: Découvrez comment supprimer un ancien domaine de Microsoft 365 et déplacer des utilisateurs et des groupes vers un autre domaine.
-ms.openlocfilehash: ef0209d6ccb7534745172585fe599f627e386cb4
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: c5e629f0d683c6dc3e18b1278027ac3a88cc834b
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44140404"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44399895"
 ---
 # <a name="remove-a-domain"></a>Supprimer un domaine
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> Le centre d’administration change. Si votre expérience ne correspond pas aux détails présentés ici, reportez-vous [à la rubrique à propos du nouveau centre d’administration Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> Le centre d’administration change. Si votre expérience ne correspond pas aux informations présentées ici, voir [À propos du nouveau centre d’administration Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
 
 ::: moniker-end
   
@@ -52,7 +53,7 @@ ms.locfileid: "44140404"
 
 1. Accédez au <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centre d’administration</a>.
 
-2. > Sélectionnez **utilisateurs** **actifs**.
+2. Sélectionnez **utilisateurs** > **actifs**.
 
 3. Activez les cases à cocher en regard des noms de tous les utilisateurs que vous souhaitez déplacer.
 
@@ -68,7 +69,7 @@ Vous devrez également effectuer cette action pour vous-même si vous êtes sur 
 
 1. Accédez au <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">Centre d’administration</a>.  
 
-2. > Sélectionnez **utilisateurs** **actifs**.
+2. Sélectionnez **utilisateurs** > **actifs**.
 
 3. Activez les cases à cocher en regard des noms de tous les utilisateurs que vous souhaitez déplacer.
 
@@ -84,7 +85,7 @@ Vous devrez également effectuer cette action pour vous-même si vous êtes sur 
 
 1. Accédez au <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">Centre d’administration</a>.  
 
-2. > Sélectionnez **utilisateurs** **actifs**.
+2. Sélectionnez **utilisateurs** > **actifs**.
 
 3. Activez les cases à cocher en regard des noms de tous les utilisateurs que vous souhaitez déplacer.
 
@@ -105,7 +106,7 @@ Vous devrez également effectuer cette action pour vous-même si vous êtes sur 
 
 1. Accédez au <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">Centre d’administration</a>.
 
-2. Accédez à **Users** \> utilisateurs **actifs**, puis sélectionnez votre compte dans la liste.
+2. Accédez à **utilisateurs** \> **actifs**, puis sélectionnez votre compte dans la liste.
 
 3. Dans l’onglet **compte** , sélectionnez **gérer le nom d’utilisateur**, puis choisissez un autre domaine.
   
@@ -119,11 +120,11 @@ Vous pouvez également utiliser PowerShell pour déplacer des utilisateurs vers 
 
 ::: moniker range="o365-germany"
 
-1. Accédez à **Users** \> utilisateurs **actifs**, puis sélectionnez votre nom dans la liste.
+1. Accédez à **utilisateurs** \> **actifs**, puis sélectionnez votre nom dans la liste.
 
 2. Dans la section **nom d’utilisateur/adresse de messagerie** , sélectionnez **modifier**, puis choisissez un autre domaine.
 
-3. Sélectionnez **définir comme** > **enregistrement** > principal- **Fermer**.
+3. Sélectionnez **définir comme** > **enregistrement** principal- > **Fermer**.
   
 4. Dans la partie supérieure, sélectionnez le nom de votre compte, puis **déconnectez-vous**.
 
@@ -135,11 +136,11 @@ Vous pouvez également utiliser PowerShell pour déplacer des utilisateurs vers 
 
 ::: moniker range="o365-21vianet"
 
-1. Accédez à **Users** \> utilisateurs **actifs**, puis sélectionnez votre nom dans la liste.
+1. Accédez à **utilisateurs** \> **actifs**, puis sélectionnez votre nom dans la liste.
 
 2. Dans la section **nom d’utilisateur/adresse de messagerie** , sélectionnez **modifier**, puis choisissez un autre domaine.
 
-3. Sélectionnez **définir comme** > **enregistrement** > principal- **Fermer**.
+3. Sélectionnez **définir comme** > **enregistrement** principal- > **Fermer**.
   
 4. Dans la partie supérieure, sélectionnez le nom de votre compte, puis **déconnectez-vous**.
 
@@ -153,7 +154,7 @@ Vous pouvez également utiliser PowerShell pour déplacer des utilisateurs vers 
 
 ::: moniker range="o365-worldwide"
 
-1. Dans le centre d’administration, accédez \> à **la page groupes de** <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">groupes.</a>
+1. Dans le centre d’administration, accédez à **la page groupes de** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">groupes</a> .
   
 2. Sélectionnez le nom du groupe, puis sous l’onglet **général** , sous **adresse de messagerie, principal**, sélectionnez **modifier**.
 
@@ -165,7 +166,7 @@ Vous pouvez également utiliser PowerShell pour déplacer des utilisateurs vers 
 
 ::: moniker range="o365-germany"
 
-1. Dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">Centre d’administration</a>, accédez à **la** > page groupes de **groupes.**
+1. Dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">Centre d’administration</a>, accédez à **la page groupes de** > **groupes** .
 
 2. Sélectionnez le nom du groupe, puis cliquez sur **modifier** en regard de **nom**.
 
@@ -177,7 +178,7 @@ Vous pouvez également utiliser PowerShell pour déplacer des utilisateurs vers 
 
 ::: moniker range="o365-21vianet"
 
-1. Dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">Centre d’administration</a>, accédez à **la** > page groupes de **groupes.**
+1. Dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">Centre d’administration</a>, accédez à **la page groupes de** > **groupes** .
 
 2. Sélectionnez le nom du groupe, puis cliquez sur **modifier** en regard de **nom**.
 
@@ -197,13 +198,13 @@ Vous pouvez également utiliser PowerShell pour déplacer des utilisateurs vers 
 
 ::: moniker range="o365-germany"
 
-1. Dans le centre d’administration, accédez à la page <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">domaines</a> **d’installation** \> .
+1. Dans le centre d’administration, accédez à la page domaines **d’installation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">Domains</a> .
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. Dans le centre d’administration, accédez à la page <a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">domaines</a> **d’installation** \> .
+1. Dans le centre d’administration, accédez à la page domaines **d’installation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">Domains</a> .
 
 ::: moniker-end
   

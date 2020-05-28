@@ -14,18 +14,19 @@ ms.collection:
 - Adm_O365
 - Adm_NonTOC
 - Adm_O365_Setup
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 46ab4b10-6857-44b1-b08d-d1b5f45a69c6
 description: Découvrez comment vérifier votre domaine et configurer les enregistrements DNS pour le courrier électronique, Skype entreprise Online et d’autres services sur le point de contrôle de Microsoft.
-ms.openlocfilehash: 4779b8f6fadcd4b134d3954d2c6c133da40c19e6
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+ms.openlocfilehash: 74662f37c3f72f02767f2434d9b251e3bd37ff1b
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44048986"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44400424"
 ---
 # <a name="create-dns-records-at-hover-for-microsoft"></a>Créer des enregistrements DNS sur le point de suspension pour Microsoft
 
@@ -127,7 +128,7 @@ Suivez les étapes ci-dessous ou [regardez la vidéo](https://support.office.com
     
     |**Hostname (Nom d'hôte)**|**Record Type (Type d'enregistrement)**|**Priority (Priorité)**|**Hostname (Nom d'hôte)**|
     |:-----|:-----|:-----|:-----|
-    |@  <br/> |MX  <br/> |0  <br/> Pour plus d'informations sur la priorité, voir [Qu'est-ce que la priorité MX ?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq). <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/> **Remarque :** Obtenir votre * \<clé\> de domaine* à partir de votre compte Microsoft.           [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md)          |
+    |@  <br/> |MX  <br/> |0  <br/> Pour plus d'informations sur la priorité, voir [Qu'est-ce que la priorité MX ?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq). <br/> | *\<domain-key\>*. mail.protection.outlook.com  <br/> **Remarque :** Obtenir votre *\<domain-key\>* à partir de votre compte Microsoft.           [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md)          |
    
     ![Tapez ou copiez-collez les valeurs DNS](../../media/2c8915fa-04a8-4d2a-a8ae-a79de0c8ef99.png)
   
@@ -188,7 +189,7 @@ Suivez les étapes ci-dessous ou [regardez la vidéo](https://support.office.com
   
 7. En suivant les trois étapes précédentes et en utilisant les valeurs des cinq autres lignes du tableau, ajoutez les cinq autres enregistrements CNAME.
     
-## <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a>Ajoutez un enregistrement TXT pour SPF afin d'éviter le courrier indésirable
+## <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a>Ajouter un enregistrement TXT pour SPF afin d'éviter le courrier indésirable
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
@@ -251,8 +252,8 @@ Suivez les étapes ci-dessous ou [regardez la vidéo](https://support.office.com
     
     |**Hostname (Nom d'hôte)**|**Record Type (Type d'enregistrement)**|**Priority (Priorité)**|**Weight (Poids)**|**Port (Port)**|**Target (Cible)**|
     |:-----|:-----|:-----|:-----|:-----|:-----|
-    |_sip. _tls  <br/> |SRV  <br/> |100  <br/> |0,1  <br/> |443  <br/> |sipdir.online.lync.com  <br/> |
-    |_sipfederationtls. _tcp  <br/> |SRV  <br/> |100  <br/> |0,1  <br/> |5061  <br/> |sipfed.online.lync.com  <br/> |
+    |_sip. _tls  <br/> |SRV  <br/> |100  <br/> |1   <br/> |443  <br/> |sipdir.online.lync.com  <br/> |
+    |_sipfederationtls. _tcp  <br/> |SRV  <br/> |100  <br/> |1   <br/> |5061  <br/> |sipfed.online.lync.com  <br/> |
    
     ![Tapez ou copiez-collez les valeurs DNS](../../media/67562cd6-c598-4c37-af53-626f153c0197.png)
   

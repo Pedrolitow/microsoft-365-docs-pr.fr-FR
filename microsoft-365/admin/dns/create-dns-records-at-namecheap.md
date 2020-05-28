@@ -14,18 +14,19 @@ ms.collection:
 - Adm_O365
 - Adm_NonTOC
 - Adm_O365_Setup
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 54ae2002-b38e-43a1-82fa-3e49d78fda56
 description: Découvrez comment vérifier votre domaine et configurer les enregistrements DNS pour la messagerie, Skype entreprise Online et d’autres services sur NameCheap pour Microsoft.
-ms.openlocfilehash: 57ba92f3ad31a54abae6a6a212a84d3b7a665da1
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+ms.openlocfilehash: 2aae667428aba5ea22ab210c47aa9c994a9acf14
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44048950"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44400387"
 ---
 # <a name="create-dns-records-at-namecheap-for-microsoft"></a>Créer des enregistrements DNS sur NameCheap pour Microsoft
 
@@ -150,7 +151,7 @@ Suivez la procédure ci-dessous.
     
     |**Type**|**Host (Hôte)**|**Valeur**|**Priorité**|**TTL**|
     |:-----|:-----|:-----|:-----|:-----|
-    |MX Record (Enregistrement MX)  <br/> |@  <br/> |\<*Key*\>. mail.protection.Outlook.com.  <br/> **This value MUST end with a period (.)** <br/> **Remarque :** Obtenir votre * \<clé\> de domaine* à partir de votre compte Microsoft.  [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md)          |0  <br/> Pour plus d'informations sur la priorité, voir [Qu'est-ce que la priorité MX ?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq). <br/> |30 min  <br/> |
+    |MX Record (Enregistrement MX)  <br/> |@  <br/> |\<*domain-key*\>. mail.protection.outlook.com.  <br/> **This value MUST end with a period (.)** <br/> **Remarque :** Obtenir votre *\<domain-key\>* à partir de votre compte Microsoft.  [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md)          |0  <br/> Pour plus d'informations sur la priorité, voir [Qu'est-ce que la priorité MX ?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq). <br/> |30 min  <br/> |
        
     ![NameCheap-BP-configure-2-2-2](../../media/f3b76d62-5022-48c1-901b-8615a8571309.png)
   
@@ -222,7 +223,7 @@ Suivez la procédure ci-dessous.
 9. À l’aide des quatre étapes précédentes et des valeurs des cinq autres lignes du tableau, ajoutez chacun des cinq autres enregistrements CNAMe.
 
   
-## <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a>Ajoutez un enregistrement TXT pour SPF afin d'éviter le courrier indésirable
+## <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a>Ajouter un enregistrement TXT pour SPF afin d'éviter le courrier indésirable
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
@@ -303,8 +304,8 @@ Suivez la procédure ci-dessous.
     
     |**Service**|**Protocol (Protocole)**|**Priority (Priorité)**|**Weight (Poids)**|**Port (Port)**|**Target (Cible)**|**TTL (Durée de vie)**|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-    |_sip  <br/> |_tls  <br/> |100  <br/> |0,1  <br/> |443  <br/> |sipdir.online.lync.com.  <br/> **This value MUST end with a period (.)** <br/> |30 min  <br/> |
-    |_sipfederationtls  <br/> |_tcp  <br/> |100  <br/> |0,1  <br/> |5061  <br/> |sipfed.online.lync.com.  <br/> **Cette valeur DOIT se terminer par un point (.)** <br/> |30 min  <br/> |
+    |_sip  <br/> |_tls  <br/> |100  <br/> |1   <br/> |443  <br/> |sipdir.online.lync.com.  <br/> **This value MUST end with a period (.)** <br/> |30 min  <br/> |
+    |_sipfederationtls  <br/> |_tcp  <br/> |100  <br/> |1   <br/> |5061  <br/> |sipfed.online.lync.com.  <br/> **Cette valeur DOIT se terminer par un point (.)** <br/> |30 min  <br/> |
        
     ![NameCheap-BP-configure-5-2](../../media/ff9566ea-0096-4b7f-873c-027080a23b56.png)
   

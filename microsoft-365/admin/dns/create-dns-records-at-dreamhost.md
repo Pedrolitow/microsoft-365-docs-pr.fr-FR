@@ -14,18 +14,19 @@ ms.collection:
 - Adm_O365
 - Adm_NonTOC
 - Adm_O365_Setup
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 9c0812e0-908b-4b41-a64b-77f0dbd3db7a
 description: Découvrez comment vérifier votre domaine et configurer les enregistrements DNS pour la messagerie, Skype entreprise Online et d’autres services sur Dreamhost pour Microsoft.
-ms.openlocfilehash: 756889457e802bdd9ee18b239b6986fb69f6b924
-ms.sourcegitcommit: c7f11d851073ef14a69669f6c8b7e0c11e4bb7a1
+ms.openlocfilehash: 4b321138892cb4a7b5f67c37ed66f3baf0f6c45a
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43939294"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44400508"
 ---
 # <a name="create-dns-records-at-dreamhost-for-microsoft"></a>Créer des enregistrements DNS sur Dreamhost pour Microsoft
 
@@ -65,7 +66,7 @@ Avant que vous puissiez utiliser votre domaine avec Microsoft, nous devons véri
     
     (Choose the **Type** value from the drop-down list.) 
     
-    |**Name**|**Type**|**Valeur**|**Commentaire**|
+    |**Name**|**Type**|**Valeur**|**Comment**|
     |:-----|:-----|:-----|:-----|
     |(Leave this field empty.)  <br/> |TXT  <br/> |MS=ms *XXXXXXXX*  <br/> **Remarque :** il s'agit d'un exemple. Utilisez votre valeur spécifique d’**Adresse de destination ou de pointage** ici, à partir du tableau.           [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md)          |(Ce champ est facultatif.)  <br/> |
    
@@ -126,7 +127,7 @@ Suivez la procédure ci-dessous.
     
     |**Enregistrement MX (obligatoire)**|
     |:-----|
-    |0  *\<clé_de_domaine\>*  .mail.protection.outlook.com.  <br/> **Cette valeur DOIT se terminer par un point (.)** <br/> La valeur 0 est la valeur de priorité Max. Ajoutez-la au début de la valeur MX, séparée du reste de la valeur par une espace.  <br/> **Remarque :** Obtenir votre * \<clé\> de domaine* à partir de votre compte Microsoft.           [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md)          |
+    |0 *\<domain-key\>* . mail.protection.Outlook.com.  <br/> **This value MUST end with a period (.)** <br/> La valeur 0 est la valeur de priorité Max. Ajoutez-la au début de la valeur MX, séparée du reste de la valeur par une espace.  <br/> **Remarque :** Obtenir votre *\<domain-key\>* à partir de votre compte Microsoft.           [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md)          |
    
     ![Dreamhost-BP-configure-2-3](../../media/90da1816-e186-4016-ab22-7962f8b86add.png)
   
@@ -166,13 +167,13 @@ Suivez la procédure ci-dessous.
     
     (Choose the **Type** value from the drop-down list.) 
     
-    |**Name**|**Type**|**Valeur**|**Commentaire**|
+    |**Name**|**Type**|**Valeur**|**Comment**|
     |:-----|:-----|:-----|:-----|
     |autodiscover  <br/> |CNAME  <br/> |autodiscover.outlook.com.  <br/> **This value MUST end with a period (.)** <br/> |(Ce champ est facultatif.)  <br/> |
     |sip  <br/> |CNAME  <br/> |sipdir.online.lync.com.  <br/> **This value MUST end with a period (.)** <br/> |(Ce champ est facultatif.)  <br/> |
     |lyncdiscover  <br/> |CNAME  <br/> |webdir.online.lync.com.  <br/> **This value MUST end with a period (.)** <br/> |(Ce champ est facultatif.)  <br/> |
     |enterpriseregistration  <br/> |CNAME  <br/> |enterpriseregistration.windows.net.  <br/> **This value MUST end with a period (.)** <br/> |(Ce champ est facultatif.)  <br/> |
-    |enterpriseenrollment  <br/> |CNAME  <br/> |enterpriseenrollment-s.manage.microsoft.com.  <br/> **This value MUST end with a period (.)** <br/> |(Ce champ est facultatif.)  <br/> |
+    |enterpriseenrollment  <br/> |CNAME  <br/> |enterpriseenrollment-s.manage.microsoft.com.  <br/> **Cette valeur DOIT se terminer par un point (.)** <br/> |(Ce champ est facultatif.)  <br/> |
    
     ![Dreamhost-BP-configure-3-1](../../media/0c4cc587-ea24-47f2-8dc6-a35735b250e6.png)
   
@@ -209,7 +210,7 @@ Suivez la procédure ci-dessous.
     
     (Choose the **Type** value from the drop-down list.) 
     
-    |**Name**|**Type**|**Valeur**|**Commentaire**|
+    |**Name**|**Type**|**Valeur**|**Comment**|
     |:-----|:-----|:-----|:-----|
     |(Leave this field empty.)  <br/> |TXT  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/> **Remarque :** nous vous recommandons de copier et coller cette entrée, afin que l’espacement reste correcte.           |(Ce champ est facultatif.)  <br/> |
    
@@ -245,7 +246,7 @@ Suivez la procédure ci-dessous.
     
     (Choose the **Type** value from the drop-down list.) 
     
-    |**Name**|**Type**|**Valeur**|**Commentaire**|
+    |**Name**|**Type**|**Valeur**|**Comment**|
     |:-----|:-----|:-----|:-----|
     |_sip. _tls  <br/> |SRV  <br/> |100 1 443  <br/> sipdir.online.lync.com.  <br/> **This value MUST end with a period (.)** <br/> |(Ce champ est facultatif.)  <br/> |
     |_sipfederationtls. _tcp  <br/> |SRV  <br/> |100 1 5061  <br/> sipfed.online.lync.com.  <br/> **Cette valeur DOIT se terminer par un point (.)** <br/> |(Ce champ est facultatif.)  <br/> |

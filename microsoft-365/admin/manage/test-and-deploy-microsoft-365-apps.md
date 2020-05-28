@@ -10,15 +10,16 @@ ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: ''
+ms.custom: AdminSurgePortfolio
 search.appverid: MET150
 ROBOTS: NOINDEX, NOFOLLOW
 description: Recherchez, testez et déployez des applications Microsoft Partner et Microsoft pour les utilisateurs et les groupes de votre organisation à partir du portail d’applications intégré dans le centre d’administration 365 de Microsoft.
-ms.openlocfilehash: bc9ad91a664072f4291f0c95c029fb2ca06530f5
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.openlocfilehash: 787c1670cff865e1f207a1554f3fa6a0b1a28f1d
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43942152"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44399517"
 ---
 # <a name="test-and-deploy-microsoft-365-apps-in-the-microsoft-365-admin-center"></a>Test et déploiement des applications Microsoft 365 dans le centre d’administration Microsoft 365
 

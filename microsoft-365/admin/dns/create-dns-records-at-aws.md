@@ -14,18 +14,19 @@ ms.collection:
 - Adm_O365
 - Adm_NonTOC
 - Adm_O365_Setup
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 7a2efd75-0771-4897-ba7b-082fe5bfa9da
 description: Découvrez comment vérifier votre domaine et configurer les enregistrements DNS pour la messagerie, Skype entreprise Online et d’autres services sur Amazon Web Services (AWS) pour Microsoft.
-ms.openlocfilehash: d75822feef5848575b8ec7fe09f834f67cdc6c55
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+ms.openlocfilehash: fcc4da3a5841e9df2f6edabd540363fe70bb73ad
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44049106"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44400568"
 ---
 # <a name="create-dns-records-at-amazon-web-services-aws-for-microsoft"></a>Créer des enregistrements DNS auprès d’Amazon Web Services (AWS) pour Microsoft
 
@@ -105,7 +106,7 @@ Lorsque Microsoft trouve l’enregistrement TXT approprié, votre domaine est v�
     
     |**Name**|**Type**|**Alias**|**TTL (Seconds) (Durée de vie (secondes))**|**Value (Valeur)**|**Routing Policy (Stratégie de routage)**|
     |:-----|:-----|:-----|:-----|:-----|:-----|
-    |(Laissez ce champ vide.)  <br/> |MX - Serveur de courrier  <br/> |Non  <br/> |300  <br/> |0  *\<clé_de_domaine\>*  .mail.protection.outlook.com.  <br/> La valeur 0 est la valeur de priorité Max. Ajoutez-la au début de la valeur MX, séparée du reste de la valeur par une espace.  <br/> **Cette valeur DOIT se terminer par un point (.)** <br/> **Remarque :** Obtenez votre \< *clé* \> de domaine à partir de votre compte Microsoft 365. [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md)          |Simple  <br/> |
+    |(Laissez ce champ vide.)  <br/> |MX - Serveur de courrier  <br/> |Non  <br/> |300  <br/> |0 *\<domain-key\>* . mail.protection.Outlook.com.  <br/> La valeur 0 est la valeur de priorité Max. Ajoutez-la au début de la valeur MX, séparée du reste de la valeur par une espace.  <br/> **Cette valeur DOIT se terminer par un point (.)** <br/> **Remarque :** Obtenir votre \<*domain-key*\> à partir de votre compte Microsoft 365. [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md)          |Simple  <br/> |
        
     ![AWS-BP-configure-2-1](../../media/94a71ce7-1b3b-4b1a-9ad3-9592db133075.png)
   
@@ -167,7 +168,7 @@ Lorsque Microsoft trouve l’enregistrement TXT approprié, votre domaine est v�
     
     Répétez cette procédure jusqu’à ce que vous ayez créé les cinq enregistrements CNAMe.
     
-## <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a>Ajoutez un enregistrement TXT pour SPF afin d'éviter le courrier indésirable
+## <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a>Ajouter un enregistrement TXT pour SPF afin d'éviter le courrier indésirable
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]

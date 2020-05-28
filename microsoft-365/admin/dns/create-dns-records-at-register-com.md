@@ -14,18 +14,19 @@ ms.collection:
 - Adm_O365
 - Adm_NonTOC
 - Adm_O365_Setup
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 55bd8c38-3316-48ae-a368-4959b2c1684e
 description: Découvrez comment vérifier votre domaine et configurer les enregistrements DNS pour la messagerie, Skype entreprise Online et d’autres services sur Register.com pour Microsoft.
-ms.openlocfilehash: 125baf224cc9f3f21746a2f802b17f2572b65316
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+ms.openlocfilehash: 7b2353b4b6832c9316e302ace4db948e2550a28f
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44048902"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44400327"
 ---
 # <a name="create-dns-records-at-registercom-for-microsoft"></a>Créer des enregistrements DNS sur Register.com pour Microsoft
 
@@ -123,7 +124,7 @@ Suivez les étapes décrites ci-dessous ou [regardez la vidéo (commencez la lec
     
     |****Host Name (Nom d'hôte)****|****Priority (Priorité)****|****Mail Server (Serveur de courrier)****|
     |:-----|:-----|:-----|
-    |@  <br/> |Élevé  <br/> Pour plus d'informations sur la priorité, voir [Qu'est-ce que la priorité MX ?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq). <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/>  <br/>**Remarque :** Obtenez votre \<*clé de domaine*\> à partir de votre compte Microsoft. <br> [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md)          |
+    |@  <br/> |High  <br/> Pour plus d'informations sur la priorité, voir [Qu'est-ce que la priorité MX ?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq). <br/> | *\<domain-key\>*. mail.protection.outlook.com  <br/>  <br/>**Remarque :** Obtenir votre \<*domain-key*\> à partir de votre compte Microsoft. <br> [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md)          |
    
     ![Copiez et collez la valeur à partir du tableau](../../media/a1a15a14-c3dc-45dc-adcd-90fdb3f7455d.png)
   
@@ -182,7 +183,7 @@ Suivez les étapes décrites ci-dessous ou [regardez la vidéo (commencez la lec
     
     ![Sélectionnez continuer](../../media/3342b570-0633-49c5-9175-5cc8e4a67b53.png)
   
-## <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a>Ajoutez un enregistrement TXT pour SPF afin d'éviter le courrier indésirable
+## <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a>Ajouter un enregistrement TXT pour SPF afin d'éviter le courrier indésirable
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
@@ -243,8 +244,8 @@ Suivez les étapes décrites ci-dessous ou [regardez la vidéo (commencez la lec
     
     |****Service (Service)****|****Proto (Protocole)****|****Name (Nom)****|****Priority (Priorité)****|****Weight (Poids)****|****Port (Port)****|****Target (Cible)****|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-    |_sip  <br/> |_tls  <br/> |@  <br/> |High  <br/> |0,1  <br/> |443  <br/> |sipdir.online.lync.com  <br/>  <br/> |
-    |_sipfederationtls  <br/> |_tcp  <br/> |@  <br/> |High  <br/> |0,1  <br/> |5061  <br/> |sipfed.online.lync.com  <br/>  <br/> |
+    |_sip  <br/> |_tls  <br/> |@  <br/> |High  <br/> |1   <br/> |443  <br/> |sipdir.online.lync.com  <br/>  <br/> |
+    |_sipfederationtls  <br/> |_tcp  <br/> |@  <br/> |High  <br/> |1   <br/> |5061  <br/> |sipfed.online.lync.com  <br/>  <br/> |
    
     ![Copiez et collez les valeurs de la table.](../../media/71304c81-5845-4a8f-b969-d9efc8721184.png)
   

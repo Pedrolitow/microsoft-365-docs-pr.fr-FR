@@ -14,17 +14,18 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: 48b26596-9e5b-4e5a-a64f-7430eb2a1e45
 description: 'Découvrez comment devenir administrateur et obtenir un abonnement Microsoft 365 pour votre organisation. '
-ms.openlocfilehash: ac18b40a1160d58e343df8196881769b7200d5a5
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 7d1e5673e6c995d007603d364b22ad81638d1782
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627955"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44399457"
 ---
 # <a name="become-the-admin-and-purchase-microsoft-365-for-your-organization"></a>Devenir l’administrateur et acheter Microsoft 365 pour votre organisation
 
@@ -75,7 +76,7 @@ L’abonnement Microsoft 365 auquel votre organisation est mise à niveau dépen
 |||
 |:-----|:-----|
 |**Mode de lancement de l'Assistant** <br/> |**Options d'abonnement** <br/> |
-|En utilisant la vignette Administrateur dans le lanceur d'applications  <br/> |Microsoft 365 entreprise Basic  <br/> |
+|En utilisant la vignette Administrateur dans le lanceur d'applications  <br/> |Microsoft 365 Business Basic  <br/> |
 |En choisissant la **mise à niveau vers Microsoft 365 pour les entreprises** dans les réunions Skype  <br/> |Microsoft 365 Business Basic ou Microsoft 365 Business standard  <br/> |
    
 ## <a name="whats-next"></a>Étape suivante

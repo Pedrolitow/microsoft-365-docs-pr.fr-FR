@@ -13,17 +13,18 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: 7dc5d983-84b2-4802-bef0-602ae1780a42
 description: Découvrez comment transférer des données manuellement entre deux comptes Microsoft 365 lorsque vous avez modifié le plan ou le nom de la société, ou combiné plusieurs abonnements en un seul.
-ms.openlocfilehash: 1eaaf48f445eb54ebf91b96924c39e9062eea4fb
-ms.sourcegitcommit: 83f980927728bc080f97a3e6dc70dc305f3df841
+ms.openlocfilehash: 69476687915024accabdce2a603ebdd7e8b653af
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44053739"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44399871"
 ---
 # <a name="transfer-data-manually-between-two-accounts"></a>Transférer des données manuellement entre deux comptes
 
@@ -59,18 +60,18 @@ Si vous transférez des données de Microsoft 365 vers Microsoft 365 Midmarket o
   
 Pour Microsoft 365 entreprise et Microsoft 365 moyenne entreprise :
   
-|**Location**|**Objectif**|
+|**Emplacement**|**Objectif**|
 |:-----|:-----|
-|**Paramètres du service** **Microsoft 365** \> **admin** \> <br/> |Sélectionnez chaque onglet pour les paramètres de messagerie, sites, Lync, logiciel utilisateur, mots de passe, communauté, gestion des droits et mobile.  <br/> |
+|**Administrateur** \> **Microsoft 365** \> **Paramètres de service** <br/> |Sélectionnez chaque onglet pour les paramètres de messagerie, sites, Lync, logiciel utilisateur, mots de passe, communauté, gestion des droits et mobile.  <br/> |
 |**Administrateur** \> **Exchange** <br/> | Paramètres Exchange Online  <br/> |
-|**Admin** \> **SharePoint** admin <br/> | Paramètres SharePoint Online  <br/> |
-|**Admin** \> **Skype entreprise** admin <br/> |Paramètres supplémentaires de Skype entreprise  <br/> |
+|**Administrateur** \> **SharePoint** <br/> | Paramètres SharePoint Online  <br/> |
+|**Administrateur** \> **Skype entreprise** <br/> |Paramètres supplémentaires de Skype entreprise  <br/> |
 
 Pour Microsoft 365 petite entreprise
   
-|**Location**|**Objectif**|
+|**Emplacement**|**Objectif**|
 |:-----|:-----|
-|**Administration** \> **gérer les paramètres à l’échelle de l’organisation** <br/> |Paramètres d’administration  <br/> |
+|**Administrateur** \> **Gérer les paramètres à l’échelle de l’organisation** <br/> |Paramètres d’administration  <br/> |
 
 ## <a name="transfer-a-public-website-between-subscriptions"></a>Transférer un site Web public entre les abonnements
 

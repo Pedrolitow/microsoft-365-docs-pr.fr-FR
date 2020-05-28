@@ -14,18 +14,19 @@ ms.collection:
 - Adm_O365
 - Adm_NonTOC
 - Adm_O365_Setup
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 84acd4fc-6eec-4d00-8bed-568f036ae2af
 description: Découvrez comment vérifier votre domaine et configurer les enregistrements DNS pour la messagerie, Skype entreprise Online et d’autres services sur web.com pour Microsoft.
-ms.openlocfilehash: a7567688ad9935b30c0749cb7aeffdbe128506ef
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+ms.openlocfilehash: 2a9162c1ca6fc6a00e564e8f004768fac49bd3e3
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44048878"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44400303"
 ---
 # <a name="create-dns-records-at-webcom-for-microsoft"></a>Créer des enregistrements DNS sur web.com pour Microsoft
 
@@ -130,7 +131,7 @@ Lorsque Microsoft trouve l’enregistrement TXT approprié, votre domaine est v�
     
     |**Priorité**|**TTL**|**Mail Server (Serveur de courrier)**|
     |:-----|:-----|:-----|
-    |0,1  <br/> Pour plus d'informations sur la priorité, voir [Qu'est-ce que la priorité MX ?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq). <br/> |3600  <br/> |*\<domain-key\>*  .mail.protection.outlook.com  <br/> **Remarque :** Obtenir votre * \<clé\> de domaine* à partir de votre compte Microsoft.   [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md) |
+    |1   <br/> Pour plus d'informations sur la priorité, voir [Qu'est-ce que la priorité MX ?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq). <br/> |3600  <br/> |*\<domain-key\>*. mail.protection.outlook.com  <br/> **Remarque :** Obtenir votre *\<domain-key\>* à partir de votre compte Microsoft.   [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md) |
    
 
 5. Sélectionnez **Enregistrer**.
@@ -169,7 +170,7 @@ Lorsque Microsoft trouve l’enregistrement TXT approprié, votre domaine est v�
 6. Ajoutez successivement les 5 autres enregistrements CNAME.
 
     
-## <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a>Ajoutez un enregistrement TXT pour SPF afin d'éviter le courrier indésirable
+## <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a>Ajouter un enregistrement TXT pour SPF afin d'éviter le courrier indésirable
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
@@ -214,8 +215,8 @@ Lorsque Microsoft trouve l’enregistrement TXT approprié, votre domaine est v�
         
     |**Service**|**Protocol (Protocole)**|**TTL (Durée de vie)**|**Priority (Priorité)**|**Weight (Poids)**|**Port (Port)**|**Target (Cible)**|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-    |_sip |_tls |3600 | 100|0,1 |443 |sipfed.online.lync.com  |
-    |_sipfederationtls |_tcp |3600 |100 |0,1 |5061 | sipfed.online.lync.com |
+    |_sip |_tls |3600 | 100|1  |443 |sipfed.online.lync.com  |
+    |_sipfederationtls |_tcp |3600 |100 |1  |5061 | sipfed.online.lync.com |
 
   
 5. Ajoutez l’autre enregistrement SRV en choisissant les valeurs de la deuxième ligne du tableau. 

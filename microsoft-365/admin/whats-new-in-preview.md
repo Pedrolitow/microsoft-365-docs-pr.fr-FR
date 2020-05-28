@@ -20,12 +20,13 @@ search.appverid:
 description: Centre d’administration Microsoft 365-Découvrez les fonctionnalités qui ont été ajoutées ce mois-ci.
 ms.custom:
 - MACDashWhatsNew
-ms.openlocfilehash: 6514456a16a6ee2079a1b93e053c21863809db24
-ms.sourcegitcommit: 5c43e89ed94ad9fd1db049446383c65e548189b7
+- AdminSurgePortfolio
+ms.openlocfilehash: 460eba757d9fa35e6031ca3382630a6bcd38c392
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44322134"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44401141"
 ---
 # <a name="whats-new-in-the-microsoft-365-admin-center"></a>Nouveautés du centre d’administration Microsoft 365
 
@@ -306,7 +307,7 @@ De nombreuses modifications ont été apportées aux rôles dans le centre d’a
 
 - **Favoris** : vous pouvez ajouter une étoile à vos rôles préférés ou les plus utilisés, afin de pouvoir les trouver facilement en triant la colonne ou en créant un filtre.
 - **Utilisateurs actifs**  >  **Manage Roles** -il a été mis à jour pour s’aligner sur les modifications apportées aux rôles. Comme avec la liste de rôles, nous avons défini l’étendue de la liste de rôles par défaut sur le plus utile, mais vous pouvez voir tous les rôles en développant **Afficher tout par catégorie**.
-- **Rôle de lecteur global** : vous avez demandé à le faire ! Compris! Le rôle de [lecteur global](add-users/about-admin-roles.md#roles-available-in-the-microsoft-365-admin-center) !
+- **Rôle de lecteur global** : vous avez demandé à le faire ! Compris! Le rôle de [lecteur global](add-users/about-admin-roles.md#azure-ad-roles-available-in-the-microsoft-365-admin-center) !
 
 ### <a name="report-an-issue"></a>Signaler un problème
 
@@ -464,7 +465,7 @@ Vous pouvez voir une nouvelle recommandation dans votre centre d’administratio
 - Fonctionnalité **Intune Device protection** : si vos licences incluent Intune et que vous n’avez pas fini de configurer Intune ou inscrit vos appareils, nous vous recommandons de créer une stratégie Intune afin de protéger les fichiers de votre organisation lorsque les utilisateurs y accèdent à partir de leurs appareils mobiles.
 - **Obtenir les mises à jour mensuelles des fonctionnalités Office** : nous avons reçu des commentaires de nos très petits clients qui, lorsqu’ils reçoivent les mises à jour mensuelles des fonctionnalités Office, leurs utilisateurs sont plus heureux. Par conséquent, si vous êtes une très petite entreprise et que vous obtenez actuellement vos mises à jour de fonctionnalité Office tous les six mois, vous verrez cette recommandation.
 
-**Settings** <br>
+**Paramètres** <br>
 En ce qui concerne les paramètres, il y a eu quelques modifications. Il suffit de mettre à jour les paramètres existants vers le nouveau style du centre d’administration. Lors de la progression et de l’ajout de nouveaux paramètres que vous n’avez jamais vus auparavant, nous commencerons à les mentionner ici. Et nous disposons d’un paramètre unique pour annoncer : **authentification moderne**. Oui, il existe un nouveau paramètre pour activer **l’authentification moderne**! Pour l’extraire, accédez à **paramètres**  >  **services &**  >  **l’authentification moderne**des compléments.
 
 ## <a name="april-2019"></a>Avril 2019

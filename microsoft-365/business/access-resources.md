@@ -15,17 +15,18 @@ ms.custom:
 - MiniMaven
 - MSB365
 - OKR_SMB_M365
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: b0f4d010-9fd1-44d0-9d20-fabad2cdbab5
 description: Découvrez comment accéder à des ressources locales telles que des applications métier, des partages de fichiers et des imprimantes à partir d’un appareil Azure Active Directory joint à Windows 10.
-ms.openlocfilehash: 980efbf09349cc0203ac50ae5e028c008d5694ca
-ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
+ms.openlocfilehash: da5fab99cf00a65986fb5e555cc19e432fe0fe8d
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "44165898"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44401111"
 ---
 # <a name="access-on-premises-resources-from-an-azure-ad-joined-device-in-microsoft-365-business-premium"></a>Accéder aux ressources locales à partir d’un appareil joint à Azure AD dans Microsoft 365 Business Premium
 

@@ -14,18 +14,19 @@ ms.collection:
 - Adm_O365
 - Adm_NonTOC
 - Adm_O365_Setup
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 5176feef-36dc-4d84-842f-1f2b5a21ba96
 description: Découvrez comment vérifier votre domaine et configurer les enregistrements DNS pour la messagerie, Skype entreprise Online et d’autres services sur OVH pour Microsoft.
-ms.openlocfilehash: 18ddcba9cdb4f45f624d32369db07b24f9a357cf
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+ms.openlocfilehash: b462979a3ab1bcf769c78d15d9fd3ad03f307ef0
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44048914"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44400339"
 ---
 # <a name="create-dns-records-at-ovh-for-microsoft"></a>Créer des enregistrements DNS sur OVH pour Microsoft
 
@@ -140,9 +141,9 @@ Lorsque Microsoft trouve l’enregistrement TXT approprié, votre domaine est v�
     > [!NOTE]
     > Par défaut OVH utilise la notation relative pour la cible, qui ajoute le nom de domaine à la fin de l’enregistrement cible. Pour utiliser la notation absolue, ajoutez un point à l’enregistrement cible comme indiqué dans le tableau ci-dessous. 
   
-    |**Type d'enregistrement**|**Sous-domaine**|**TTL (Durée de vie)**|**Priority (Priorité)**|**Target (Cible)**|
+    |**Type d'enregistrement**|**Sous-domaine**|**TTL (Durée de vie)**|**Priority (Priorité)**|**Target**|
     |:-----|:-----|:-----|:-----|:-----|
-    |MX  <br/> |(Laisser vide)  <br/> |3600 (secondes)  <br/> |10   <br/> Pour plus d'informations sur la priorité, voir [Qu'est-ce que la priorité MX ?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq). <br/> |\<Key\>. mail.protection.Outlook.com.  <br/> **Remarque :** Obtenir votre * \<clé\> de domaine* à partir de votre compte Microsoft.  [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md)  |
+    |MX  <br/> |(Laisser vide)  <br/> |3600 (secondes)  <br/> |10   <br/> Pour plus d'informations sur la priorité, voir [Qu'est-ce que la priorité MX ?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq). <br/> |\<domain-key\>. mail.protection.outlook.com.  <br/> **Remarque :** Obtenir votre *\<domain-key\>* à partir de votre compte Microsoft.  [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md)  |
    
     ![Enregistrement MX OVH pour le courrier électronique](../../media/6e2f5655-93e2-4620-8f19-c452e7edf8f0.png)
   
@@ -207,7 +208,7 @@ Lorsque Microsoft trouve l’enregistrement TXT approprié, votre domaine est v�
     
     Pour chaque enregistrement, tapez ou copiez-collez les valeurs de la ligne suivante du tableau ci-dessus dans les zones de cet enregistrement.
     
-## <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a>Ajoutez un enregistrement TXT pour SPF afin d'éviter le courrier indésirable
+## <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a>Ajouter un enregistrement TXT pour SPF afin d'éviter le courrier indésirable
 <a name="bkmk_spf"> </a>
 
 > [!IMPORTANT]
@@ -274,10 +275,10 @@ Lorsque Microsoft trouve l’enregistrement TXT approprié, votre domaine est v�
     
     Dans les zones du nouvel enregistrement, tapez ou copiez-collez les valeurs de la première ligne du tableau suivant. Pour affecter une valeur de durée de vie, sélectionnez **personnalisée** dans la liste déroulante, puis tapez la valeur dans la zone de texte. 
     
-    |**Type d'enregistrement**|**Sous-domaine**|**Priority (Priorité)**|**Weight (Poids)**|**Port (Port)**|**TTL (Durée de vie)**|**Target (Cible)**|
+    |**Type d'enregistrement**|**Sous-domaine**|**Priority (Priorité)**|**Weight (Poids)**|**Port (Port)**|**TTL (Durée de vie)**|**Target**|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-    |SRV (Service)  <br/> |_sip. _tls  <br/> |100  <br/> |0,1  <br/> |443  <br/> |3600 (secondes)  <br/> |sipdir.online.lync.com.  <br/> |
-    |SRV (Service)  <br/> |_sipfederationtls. _tcp  <br/> |100  <br/> |0,1  <br/> |5061  <br/> |3600 (secondes)  <br/> |sipfed.online.lync.com.  <br/> |
+    |SRV (Service)  <br/> |_sip. _tls  <br/> |100  <br/> |1   <br/> |443  <br/> |3600 (secondes)  <br/> |sipdir.online.lync.com.  <br/> |
+    |SRV (Service)  <br/> |_sipfederationtls. _tcp  <br/> |100  <br/> |1   <br/> |5061  <br/> |3600 (secondes)  <br/> |sipfed.online.lync.com.  <br/> |
        
     ![Enregistrement SRV OVH](../../media/73956b9e-9e4f-40a5-803e-c4ead2f77fa6.png)
   

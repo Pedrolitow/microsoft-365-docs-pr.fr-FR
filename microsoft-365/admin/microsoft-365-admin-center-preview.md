@@ -12,17 +12,18 @@ localization_priority: Normal
 ms.collection:
 - Adm_O365
 - Adm_TOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 - MOE150
 - FRP150
 description: Découvrez le nouveau centre d’administration Microsoft 365.
-ms.openlocfilehash: 95453380fc693c4313debf5baaa96264d486385b
-ms.sourcegitcommit: 9d8816ddc3a97676ff947db80265e47b734f5462
+ms.openlocfilehash: 0eeebcd0c96b5f3741c01a2776391ceaa698a40e
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/30/2020
-ms.locfileid: "43952638"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44399481"
 ---
 # <a name="about-the-new-microsoft-365-admin-center"></a>À propos du nouveau centre d’administration Microsoft 365
 
@@ -30,7 +31,7 @@ ms.locfileid: "43952638"
 
 Le nouveau centre d’administration Microsoft 365 est conçu pour les équipes informatiques comme un moyen simple de gérer vos services Microsoft 365. Le centre d’administration offre une expérience personnalisée basée sur les besoins uniques de votre rôle ou organisation, améliore l’efficacité des tâches quotidiennes et fournit des informations utiles pour vous aider à prendre des décisions basées sur les données afin de fournir une meilleure expérience à vos utilisateurs.
 
-Le centre d’administration Microsoft 365 est le point d’entrée commun pour tous les administrateurs de Microsoft 365 et [https://admin.microsoft.com](https://go.microsoft.com/fwlink/?linkid=2024339)est accessible à l’adresse. Les espaces de travail spécialisés, tels que la gestion de la sécurité ou des périphériques, permettent un contrôle plus granulaire. Pour plus d’informations sur le fonctionnement des centres d’administration, voir [Quels sont les types spécifiques de rôles informatiques et d’autres espaces de travail, tels que la sécurité, la gestion des appareils ou Exchange ?,](#what-about-the-specific-types-of-it-roles-and-other-workspaces-like-security-device-management-or-exchange) plus loin dans cet article.
+Le centre d’administration Microsoft 365 est le point d’entrée commun pour tous les administrateurs de Microsoft 365 et est accessible à l’adresse [https://admin.microsoft.com](https://go.microsoft.com/fwlink/?linkid=2024339) . Les espaces de travail spécialisés, tels que la gestion de la sécurité ou des périphériques, permettent un contrôle plus granulaire. Pour plus d’informations sur le fonctionnement des centres d’administration, voir [Quels sont les types spécifiques de rôles informatiques et d’autres espaces de travail, tels que la sécurité, la gestion des appareils ou Exchange ?,](#what-about-the-specific-types-of-it-roles-and-other-workspaces-like-security-device-management-or-exchange) plus loin dans cet article.
 
 ::: moniker-end
 
@@ -38,7 +39,7 @@ Le centre d’administration Microsoft 365 est le point d’entrée commun pour 
 
 Le nouveau centre d’administration Microsoft 365, qui est actuellement en version d’évaluation, est conçu pour les équipes informatiques comme un moyen simple de gérer vos services Microsoft 365. Le centre d’administration offre une expérience personnalisée basée sur les besoins uniques de votre rôle ou organisation, améliore l’efficacité des tâches quotidiennes et fournit des informations utiles pour vous aider à prendre des décisions basées sur les données afin de fournir une meilleure expérience à vos utilisateurs.
 
-Le centre d’administration Microsoft 365 est le point d’entrée commun pour tous les administrateurs de Microsoft 365 et est accessible en [https://portal.partner.microsoftonline.cn/AdminPortal/Home#/homepage](https://go.microsoft.com/fwlink/p/?linkid=850627)se connectant à. En outre, les espaces de travail spécialisés, comme Azure Active Directory et Exchange, permettent un contrôle plus granulaire. Vous pouvez accéder aux espaces de travail spécialisés à partir du volet de navigation dans le centre d’administration Microsoft 365.
+Le centre d’administration Microsoft 365 est le point d’entrée commun pour tous les administrateurs de Microsoft 365 et est accessible en se connectant à [https://portal.partner.microsoftonline.cn/AdminPortal/Home#/homepage](https://go.microsoft.com/fwlink/p/?linkid=850627) . En outre, les espaces de travail spécialisés, comme Azure Active Directory et Exchange, permettent un contrôle plus granulaire. Vous pouvez accéder aux espaces de travail spécialisés à partir du volet de navigation dans le centre d’administration Microsoft 365.
 
 ::: moniker-end
 
@@ -55,9 +56,9 @@ Nous serions ravis de participer au nouveau centre d’administration Microsoft 
 
 ### <a name="turn-on-targeted-release"></a>Activer la publication ciblée
 
-1. Connectez-vous à [admin.Microsoft.com](https://admin.microsoft.com), accédez au volet de navigation et sélectionnez **profil d’organisation**des **paramètres** \> .
+1. Connectez-vous à [admin.Microsoft.com](https://admin.microsoft.com), accédez au volet de navigation et sélectionnez profil d’organisation des **paramètres** \> **Organization profile**.
 
-1. Connectez-vous à [Portal.Partner.microsoftonline.CN](https://go.microsoft.com/fwlink/p/?linkid=513813), accédez au volet de navigation et sélectionnez **profil d’organisation**des **paramètres** \> .
+1. Connectez-vous à [Portal.Partner.microsoftonline.CN](https://go.microsoft.com/fwlink/p/?linkid=513813), accédez au volet de navigation et sélectionnez profil d’organisation des **paramètres** \> **Organization profile**.
 
 2. Accédez à la fiche des **Préférences de publication** , puis sélectionnez **modifier**. 
     
@@ -92,7 +93,7 @@ Pour revenir à l’utilisation de l’ancien centre d’administration, désact
 
 ::: moniker range="o365-worldwide"
 
-## <a name="frequently-asked-questions"></a>Questions fréquemment posées
+## <a name="frequently-asked-questions"></a>Foire aux questions
 
 Vos questions ne s’affichent pas ici ? Accédez à la section **Commentaires** au bas de cette page et posez votre question. 
   
@@ -118,7 +119,7 @@ Vous pouvez également envoyer des commentaires en dehors du centre d’administ
 
 ## <a name="what-about-the-specific-types-of-it-roles-and-other-workspaces-like-security-device-management-or-exchange"></a>Qu’en est-il des types spécifiques de rôles informatiques et d’autres espaces de travail, tels que la sécurité, la gestion des périphériques ou Exchange ?
 
-Le centre d’administration Microsoft 365 est le point d’entrée commun pour toutes les équipes et tous les rôles qui gèrent Microsoft 365. L’expérience, les informations et les contrôles sont adaptés et personnalisables pour chaque administrateur et rôle. En outre, les espaces de travail spécialisés permettent un contrôle granulaire détaillé. Ces espaces de travail spécialisés incluent SharePoint, &amp; teams Skype, Exchange, la sécurité, la conformité, la gestion des périphériques et Azure Active Directory. Vous pouvez trouver les espaces de travail spécialisés dans le volet de navigation dans le centre d’administration [https://admin.microsoft.com](https://go.microsoft.com/fwlink/?linkid=2024339)Microsoft 365 à l’adresse.
+Le centre d’administration Microsoft 365 est le point d’entrée commun pour toutes les équipes et tous les rôles qui gèrent Microsoft 365. L’expérience, les informations et les contrôles sont adaptés et personnalisables pour chaque administrateur et rôle. En outre, les espaces de travail spécialisés permettent un contrôle granulaire détaillé. Ces espaces de travail spécialisés incluent SharePoint, teams &amp; Skype, Exchange, la sécurité, la conformité, la gestion des périphériques et Azure Active Directory. Vous pouvez trouver les espaces de travail spécialisés dans le volet de navigation dans le centre d’administration Microsoft 365 à l’adresse [https://admin.microsoft.com](https://go.microsoft.com/fwlink/?linkid=2024339) .
   
 La mise à jour de tous les centres d’administration pour avoir une expérience cohérente prendra un peu de temps, mais vous pouvez en savoir plus sur les centres d’administration que nous avons déjà commencé à intenter :
   

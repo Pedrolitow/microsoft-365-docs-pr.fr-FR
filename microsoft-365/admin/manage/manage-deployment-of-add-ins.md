@@ -13,25 +13,26 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
 description: Découvrez comment déployer des compléments pour les utilisateurs et les groupes de votre organisation à l’aide du déploiement centralisé dans le centre d’administration.
-ms.openlocfilehash: cb41d02d8075e94c788a9964e0a3ac69d8363ef4
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: e71afad19690d3a05dc5f06bc0718861cb22f12d
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44139708"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44399727"
 ---
 # <a name="manage-deployment-of-add-ins-in-the-microsoft-365-admin-center"></a>Gérer le déploiement de compléments dans le Centre d’administration Microsoft 365
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> Le centre d’administration change. Si votre expérience ne correspond pas aux détails présentés ici, reportez-vous [à la rubrique à propos du nouveau centre d’administration Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> Le centre d’administration change. Si votre expérience ne correspond pas aux informations présentées ici, voir [À propos du nouveau centre d’administration Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
 
 ::: moniker-end
 
@@ -67,7 +68,7 @@ Selon la taille du groupe cible, vous pouvez ajouter ou supprimer des étapes de
 Avant de commencer, consultez [la rubrique déterminer si un déploiement centralisé de compléments fonctionne pour votre organisation](centralized-deployment-of-add-ins.md).
 
   
-1. Dans le centre d’administration, accédez à la page **compléments** de **paramètres** \> .
+1. Dans le centre d’administration, accédez à **Settings** la \> page **compléments** de paramètres.
     
 2. Sélectionnez **déployer un complément** en haut de la page. Sur la page vue d’ensemble, sélectionnez **suivant**.
     
@@ -147,7 +148,7 @@ Les mises à jour des compléments se produisent comme suit :
 
 Post-déploiement, les administrateurs peuvent également modifier l’accès des utilisateurs aux compléments.
 
-1. Dans le centre d’administration, accédez à la page **paramètres** > de **& des compléments** .
+1. Dans le centre d’administration, accédez à la page **paramètres**de  >  **& des compléments** .
 
 2. Sélectionnez le complément déployé.
 
@@ -277,7 +278,7 @@ Si le complément déployé ne prend pas en charge les commandes de complément 
 
 Vous pouvez également supprimer un complément qui a été déployé.
 
-1. Dans le centre d’administration, accédez à la page **paramètres** > de **& des compléments** .
+1. Dans le centre d’administration, accédez à la page **paramètres**de  >  **& des compléments** .
 
 2. Sélectionnez le complément déployé.
 

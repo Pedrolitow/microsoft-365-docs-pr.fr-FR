@@ -13,17 +13,18 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Passez en revue les réponses aux questions fréquemment posées sur le déploiement centralisé à partir du centre d’administration Microsoft 365.
-ms.openlocfilehash: c389ab07136b8a6e625db9ecfeff514a6899cd7d
-ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
+ms.openlocfilehash: 0d0f2163982042f7b8f868a36f5cc115a17295a2
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "44011734"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44399823"
 ---
 # <a name="centralized-deployment-faq"></a>Forum aux questions sur le déploiement centralisé
 
@@ -35,7 +36,7 @@ Le déploiement centralisé des compléments nécessite que les utilisateurs uti
  
 Le déploiement centralisé est uniquement pris en charge pour les boîtes aux lettres en ligne. Il ne prend pas en charge le déploiement vers des boîtes aux lettres Exchange locales.
  
-Vous pouvez utiliser le [Vérificateur de compatibilité du déploiement centralisé Office 365](https://docs.microsoft.com/microsoft-365/admin/manage/centralized-deployment-of-add-ins?view=o365-worldwide#office-365-centralized-deployment-compatibility-checker)pour déterminer si votre abonnement est éligible. 
+Vous pouvez utiliser le [Vérificateur de compatibilité du déploiement centralisé Office 365](https://docs.microsoft.com/microsoft-365/admin/manage/centralized-deployment-of-add-ins?view=o365-worldwide#office-365-centralized-deployment-compatibility-checker)   pour déterminer si votre abonnement est éligible. 
   
 ## <a name="how-do-you-target-add-in-user-assignments-with-centralized-deployment"></a>Comment ciblez-vous les affectations d’utilisateurs de compléments avec un déploiement centralisé ?  
 
@@ -59,7 +60,7 @@ Pour plus d’informations sur la gestion de l’accès utilisateur, voir </br>[
 
 Oui. Le déploiement centralisé offre aux administrateurs la souplesse nécessaire pour choisir l’une des trois méthodes de déploiement pour les compléments Outlook lors du déploiement de compléments :
 
-**Fixed (valeur par défaut)**   le complément est déployé automatiquement sur les utilisateurs affectés, et ils ne peuvent pas le supprimer.  
+**Fixed (valeur par défaut)**   Le complément est déployé automatiquement sur les utilisateurs affectés, et ils ne peuvent pas le supprimer.  
  
 **Disponible** Les utilisateurs peuvent installer le complément dans Outlook en choisissant Accueil > obtenir d’autres compléments > gérés par l’administrateur.   
  

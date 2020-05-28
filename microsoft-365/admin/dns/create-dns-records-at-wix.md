@@ -14,18 +14,19 @@ ms.collection:
 - Adm_O365
 - Adm_NonTOC
 - Adm_O365_Setup
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 7173c635-58b3-400f-95e0-97abe915565e
 description: Découvrez comment vérifier votre domaine et configurer les enregistrements DNS pour la messagerie, Skype entreprise Online et d’autres services chez WiX pour Microsoft.
-ms.openlocfilehash: 6f88cc65ae19f747a9fc3740ea1578f30d18b5e2
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+ms.openlocfilehash: b5fe216e65954bbcbdd9a1da223258a8362743ca
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44048854"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44400291"
 ---
 # <a name="create-dns-records-at-wix-for-microsoft"></a>Créer des enregistrements DNS auprès de WiX pour Microsoft
 
@@ -109,7 +110,7 @@ Lorsque Microsoft trouve l’enregistrement TXT approprié, votre domaine est v�
     
 |**Host Name**|**Points to (Pointe vers)**|**Priorité**|**TTL**|
 |:-----|:-----|:-----|:-----|
-|Rempli automatiquement <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/> **Remarque :** Obtenir votre * \<clé\> de domaine* à partir de votre compte Microsoft.   [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md) |0  <br/> Pour plus d'informations sur la priorité, voir [Qu'est-ce que la priorité MX ?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq). | 1 Hour|
+|Rempli automatiquement <br/> | *\<domain-key\>*. mail.protection.outlook.com  <br/> **Remarque :** Obtenir votre *\<domain-key\>* à partir de votre compte Microsoft.   [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md) |0  <br/> Pour plus d'informations sur la priorité, voir [Qu'est-ce que la priorité MX ?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq). | 1 Hour|
    
 6. Si d’autres enregistrements MX sont répertoriés, supprimez-les chacun. 
     
@@ -140,7 +141,7 @@ Lorsque Microsoft trouve l’enregistrement TXT approprié, votre domaine est v�
     
 6. Patientez quelques minutes, le temps que l'enregistrement que vous venez de créer soit mis à jour sur Internet.
     
-## <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a>Ajoutez un enregistrement TXT pour SPF afin d'éviter le courrier indésirable
+## <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a>Ajouter un enregistrement TXT pour SPF afin d'éviter le courrier indésirable
 <a name="BKMK_spf"> </a>
 
 > [!IMPORTANT]
@@ -175,8 +176,8 @@ Lorsque Microsoft trouve l’enregistrement TXT approprié, votre domaine est v�
     
 |**Service**|**Protocol (Protocole)**|**Name (Nom)**|**Weight (Poids)**|**Port (Port)**|**Target (Cible)**|**Priorité**|**TTL**|
 |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-|sip  |tls  |Rempli automatiquement |0,1  |443   |sipdir.online.lync.com |100 |1 Hour |
-|sipfed|tcp |Rempli automatiquement|0,1 |5061 |sipfed.online.lync.com|100 | 1 Hour |
+|sip  |tls  |Rempli automatiquement |1   |443   |sipdir.online.lync.com |100 |1 Hour |
+|sipfed|tcp |Rempli automatiquement|1  |5061 |sipfed.online.lync.com|100 | 1 Hour |
    
 5. Sélectionnez le bouton **enregistrer le DNS** en haut de l’éditeur DNS. 
     

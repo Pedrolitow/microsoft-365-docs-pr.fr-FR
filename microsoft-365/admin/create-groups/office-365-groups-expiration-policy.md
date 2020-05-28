@@ -13,17 +13,18 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Découvrez les stratégies d’expiration des groupes Microsoft 365.
-ms.openlocfilehash: 0cb67b87a542d021387365802bd5969f4c4332b8
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: 00dfb09cdf4fe3f70344152444e7433c1de8a8c2
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44064820"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44400724"
 ---
 # <a name="microsoft-365-group-expiration-policy"></a>Stratégie d’expiration de groupe Microsoft 365
 
@@ -57,7 +58,7 @@ Il est important de comprendre que l’expiration est désactivée par défaut. 
 
 ## <a name="how-to-set-the-expiration-policy"></a>Procédure de définition de la stratégie d’expiration
 
-Comme indiqué ci-dessus, l’expiration est désactivée par défaut. Un administrateur doit activer la stratégie d’expiration et définir les propriétés pour qu’elle prenne effet. Pour l’activer, accédez à l'**expiration**des**groupes** >  **Azure Active Directory (AAD)** > . Ici, vous pouvez définir la durée de vie du groupe par défaut et spécifier le délai d’expiration de la première et de la deuxième notifications d’expiration pour le propriétaire du groupe.
+Comme indiqué ci-dessus, l’expiration est désactivée par défaut. Un administrateur doit activer la stratégie d’expiration et définir les propriétés pour qu’elle prenne effet. Pour l’activer, accédez à l’expiration des groupes **Azure Active Directory (AAD)**  >  **Groups**  >  **Expiration**. Ici, vous pouvez définir la durée de vie du groupe par défaut et spécifier le délai d’expiration de la première et de la deuxième notifications d’expiration pour le propriétaire du groupe.
 
 La durée de vie du groupe est spécifiée en jours et peut être définie sur 180, 365 ou sur une valeur personnalisée que vous spécifiez. La valeur personnalisée doit être d’au moins 30 jours.
 
