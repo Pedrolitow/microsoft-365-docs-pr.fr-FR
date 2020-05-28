@@ -13,18 +13,19 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: c7228a3e-061f-4575-b1ef-adf1d1669870
 description: 'Découvrez le centre d’administration Microsoft 365 : comment vous connecter, votre administrateur, et regarder une présentation vidéo à son sujet.'
-ms.openlocfilehash: 79c43c0f918c8d4793b02bea08aa092e3a5ef421
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 84c8ef52c4cd3bf687a0849e1e3b1a25f9b31f4d
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43623963"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44386936"
 ---
 # <a name="admin-center-overview"></a>Vue d’ensemble du centre d’administration 
 
@@ -35,19 +36,19 @@ Avec ce compte, vous pouvez accéder au centre d’administration Microsoft 365 
   
 ::: moniker range="o365-worldwide"
 
- **Connectez-vous à l’aide de <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>votre compte d’administrateur.**
+ **Connectez-vous à l’aide de votre compte d’administrateur <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> .**
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-**Connectez-vous avec votre compte d’administrateur à Office 365 <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">https://portal.office.de</a>Germany à l’adresse.**
+**Connectez-vous avec votre compte d’administrateur à Office 365 Germany à l’adresse <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">https://portal.office.de</a> .**
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-**Connectez-vous avec votre compte d’administrateur à Office 365 géré par <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">https://portal.partner.microsoftonline.cn</a>21ViaNet à l’adresse.**
+**Connectez-vous avec votre compte d’administrateur à Office 365 géré par 21Vianet à l’adresse <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">https://portal.partner.microsoftonline.cn</a> .**
 
 ::: moniker-end
 

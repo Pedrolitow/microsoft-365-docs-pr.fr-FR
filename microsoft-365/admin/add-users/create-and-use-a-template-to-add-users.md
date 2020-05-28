@@ -15,23 +15,24 @@ ms.collection:
 - Adm_TOC
 ms.custom:
 - MSStore_Link
+- AdminSurgePortfolio
 search.appverid:
 - MET150
 - MOE150
 description: Vous pouvez créer et utiliser un modèle pour gagner du temps et normaliser les paramètres lors de l’ajout de plusieurs utilisateurs.
-ms.openlocfilehash: a39ad3df7928e45f7cb93a13c6ffc40111f2ee48
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: 3173d28f27acdf1a084137d36cd71894e94e9547
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44140651"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44387224"
 ---
 # <a name="create-and-use-a-template-to-add-users"></a>Créer et utiliser un modèle pour ajouter des utilisateurs
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> Le centre d’administration change. Si votre expérience ne correspond pas aux détails présentés ici, reportez-vous [à la rubrique à propos du nouveau centre d’administration Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> Le centre d’administration change. Si votre expérience ne correspond pas aux informations présentées ici, voir [À propos du nouveau centre d’administration Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
 
 ::: moniker-end
 
@@ -39,7 +40,7 @@ Vous pouvez créer et utiliser un modèle pour gagner du temps et normaliser les
 
 ## <a name="create-a-template"></a>Créer un modèle
 
-&mdash;Modèles faciles à créer vous pouvez sélectionner **les** > **modèles utilisateur**des utilisateurs**actifs** > , puis sélectionner **Ajouter un modèle** dans la liste déroulante, ou vous pouvez ajouter un nouvel utilisateur et lorsque vous avez terminé, vous aurez la possibilité d’enregistrer l’entrée en tant que modèle.
+Modèles faciles à créer &mdash; vous pouvez sélectionner **les**  >  **Active users**  >  **modèles utilisateur**des utilisateurs actifs, puis sélectionner **Ajouter un modèle** dans la liste déroulante, ou vous pouvez ajouter un nouvel utilisateur et lorsque vous avez terminé, vous aurez la possibilité d’enregistrer l’entrée en tant que modèle.
 
 Lorsque vous créez un modèle après avoir ajouté un utilisateur, les valeurs que vous choisissez pour les paramètres suivants sont enregistrées dans le modèle :
 
@@ -68,12 +69,12 @@ Lorsque vous créez un modèle en sélectionnant l’option **Ajouter un modèle
 
 Pour utiliser un modèle existant afin d’ajouter un utilisateur :
 
-1. Dans le centre d’administration, **Sélectionnez** > utilisateurs**actifs**.
+1. Dans le centre d’administration, **Sélectionnez utilisateurs**  >  **actifs**.
 
 2. Sélectionnez **modèles utilisateur**, puis sélectionnez un modèle dans la liste déroulante. (La liste ne contient que les modèles que vous avez créés, pas ceux créés par les autres administrateurs.)
 
  > [!NOTE]
- > Vous pouvez également utiliser un modèle pour ajouter un utilisateur en sélectionnant **modèles** > utilisateur**gérer les modèles**, en sélectionnant un modèle, puis en sélectionnant **utiliser le modèle**.
+ > Vous pouvez également utiliser un modèle pour ajouter un utilisateur en sélectionnant **modèles utilisateur**  >  **gérer les modèles**, en sélectionnant un modèle, puis en sélectionnant **utiliser le modèle**.
 
 3. Suivez les étapes pour créer un utilisateur à partir du modèle que vous avez sélectionné.
 
@@ -84,7 +85,7 @@ Pour utiliser un modèle existant afin d’ajouter un utilisateur :
 
 Vous pouvez facilement supprimer les modèles dont vous n’avez plus besoin et en ajouter de nouveaux. Pour supprimer un modèle :
 
-1. Dans le centre d’administration, **Sélectionnez** > utilisateurs**actifs**.
+1. Dans le centre d’administration, **Sélectionnez utilisateurs**  >  **actifs**.
 
 2. Sélectionnez **modèles**, puis gérer les **modèles** dans la liste déroulante.
 

@@ -13,18 +13,19 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: c7c9f938-5b8e-4d52-b1a2-c7c32cb2312a
 description: Obtenir le rapport d’activité Yammer et en savoir plus sur le nombre d’utilisateurs qui utilisent Yammer pour publier, comme ou lire un message.
-ms.openlocfilehash: bd128e17b8d435b8d5c6b06f16ff37fea11a6ce3
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 2bf02c0599f999b0eebb52d119096567bb09508b
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43618955"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44387464"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---yammer-activity-report"></a>Rapports Microsoft 365 dans le centre d’administration-rapport d’activité Yammer
 
@@ -38,7 +39,7 @@ En tant qu’administrateur Microsoft 365, le tableau de bord **rapports** affic
 1. Dans le centre d’administration, accédez à la page **Rapports** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">Utilisation</a>.
 
     
-2. Dans la liste déroulante **Sélectionner un rapport** , sélectionnez **activité** **Yammer** \> .
+2. Dans la liste déroulante **Sélectionner un rapport** , **Yammer** sélectionnez \> **activité**Yammer.
   
 ## <a name="interpret-the-yammer-activity-report"></a>Interpréter le rapport d'activité Yammer
 

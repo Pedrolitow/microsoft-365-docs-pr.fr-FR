@@ -13,18 +13,19 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 0ad41414-0cc6-4b97-90fb-06bec7bcf590
 description: Découvrez comment autoriser les membres à envoyer des messages électroniques en tant que groupe Microsoft 365 ou envoyer des courriers électroniques de la part d’un groupe Microsoft 365.
-ms.openlocfilehash: ce4527321468ee01864177fc1a607fab6a474481
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+ms.openlocfilehash: a4d8cb65feab3fca69824adc8f7b4ef10e705d8c
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44049386"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44388136"
 ---
 # <a name="allow-members-to-send-as-or-send-on-behalf-of-a-group"></a>Autoriser les membres à envoyer en tant que ou envoyer de la part d’un groupe
 
@@ -44,13 +45,13 @@ L’autorisation **Envoyer de la part** de permet à un utilisateur d’envoyer 
 
 Cette section explique comment autoriser les utilisateurs à envoyer des courriers électroniques en tant que groupe dans le [Centre d’administration Exchange](https://go.microsoft.com/fwlink/p/?linkid=2059104) dans Exchange Online.
   
-1. Dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Centre d’administration Exchange</a>, accédez à **groupes**de **destinataires** \> .
+1. Dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Centre d’administration Exchange</a>, accédez à groupes de **destinataires** \> **Groups**.
     
-2. Sélectionnez **modifier**![l’icône](../../media/0cfcb590-dc51-4b4f-9276-bb2ce300d87e.png) du groupe de modification sur le groupe que vous souhaitez autoriser les utilisateurs à envoyer en tant que.   
+2. Sélectionnez **modifier** ![ ](../../media/0cfcb590-dc51-4b4f-9276-bb2ce300d87e.png) l’icône du groupe de modification sur le groupe que vous souhaitez autoriser les utilisateurs à envoyer en tant que.   
     
 3. Sélectionnez **délégation de groupe**.
     
-4. Dans la section **Envoyer en tant que** , **+** sélectionnez le signe pour ajouter les utilisateurs que vous souhaitez envoyer en tant que groupe. 
+4. Dans la section **Envoyer en tant que** , sélectionnez le **+** signe pour ajouter les utilisateurs que vous souhaitez envoyer en tant que groupe. 
     
     ![Sélectionnez le signe plus pour ajouter les utilisateurs que vous souhaitez envoyer en tant que groupe Microsoft 365](../../media/1df167f6-1eff-4f98-9ecd-4230fab46557.png)
   
@@ -62,13 +63,13 @@ Cette section explique comment autoriser les utilisateurs à envoyer des courrie
 
 Cette section explique comment autoriser les utilisateurs à envoyer des courriers électroniques de la part d’un groupe dans le centre d’administration Exchange dans Exchange Online.
   
-1. Dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Centre d’administration Exchange</a>, accédez à **groupes**de **destinataires** \> .
+1. Dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Centre d’administration Exchange</a>, accédez à groupes de **destinataires** \> **Groups**.
     
-2. Sélectionnez **modifier** ![l’icône](../../media/0cfcb590-dc51-4b4f-9276-bb2ce300d87e.png) modifier le groupe dans le groupe que vous souhaitez autoriser les utilisateurs à envoyer en tant que. 
+2. Sélectionnez **modifier** ![ l’icône modifier ](../../media/0cfcb590-dc51-4b4f-9276-bb2ce300d87e.png) le groupe dans le groupe que vous souhaitez autoriser les utilisateurs à envoyer en tant que. 
     
 3. Sélectionnez **délégation de groupe**.
     
-4. Dans la section envoyer de la part de, **+** sélectionnez le signe pour ajouter les utilisateurs que vous souhaitez envoyer en tant que groupe. 
+4. Dans la section envoyer de la part de, sélectionnez le **+** signe pour ajouter les utilisateurs que vous souhaitez envoyer en tant que groupe. 
     
     ![Sélectionnez le signe plus pour ajouter les utilisateurs que vous souhaitez envoyer en tant que groupe Microsoft 365](../../media/2bae0579-8907-4d6b-8920-ddd6555897b4.png)
   

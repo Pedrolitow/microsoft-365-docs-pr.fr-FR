@@ -18,6 +18,7 @@ ms.custom:
 - okr_smb
 - TRN_M365B
 - OKR_SMB_Videos
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -26,12 +27,12 @@ search.appverid:
 - GEA150
 ms.assetid: eac4d046-1afd-4f1a-85fc-8219c79e1504
 description: Découvrez comment attribuer des rôles d’administrateur à un ou plusieurs utilisateurs de votre entreprise afin qu’ils puissent effectuer des tâches spécifiques dans le centre d’administration.
-ms.openlocfilehash: 7842714d7a57c7db9c3f0afe7e4b2e353137b66f
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 86759a07221e93e211107dcbd41a6bee5e6ca9a4
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43618787"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44387236"
 ---
 # <a name="assign-admin-roles"></a>Attribuer des rôles d’administrateur
 
@@ -65,16 +66,16 @@ Vous pouvez attribuer des utilisateurs à un rôle de deux manières différente
 
 ### <a name="assign-admin-roles-to-users-using-roles"></a>Attribuer des rôles d’administrateur aux utilisateurs à l’aide de rôles
 
-1. Dans le > **Centre d’administration** , accédez **à rôles rôles pour** afficher tous les rôles d’administrateur disponibles pour votre organisation.
+1. Dans le centre d’administration, accédez **à rôles rôles** > **Roles** pour afficher tous les rôles d’administrateur disponibles pour votre organisation.
 2. Sélectionnez le rôle d’administrateur auquel vous souhaitez attribuer l’utilisateur.
-3. Sélectionnez > **Ajouter**des **administrateurs attribués** .
+3. Sélectionnez Ajouter des **administrateurs attribués** > **Add**.
 4. Tapez le nom d' **affichage** ou le nom **d'** utilisateur de l’utilisateur, puis sélectionnez l’utilisateur dans la liste de suggestions.
 5. Ajoutez plusieurs utilisateurs jusqu’à ce que vous ayez fini.
 6. Sélectionnez **Enregistrer**, puis l’utilisateur est ajouté à la liste des administrateurs attribués.
 
 ### <a name="assign-a-user-to-an-admin-role-from-active-users"></a>Affecter un utilisateur à un rôle d’administrateur à partir d’utilisateurs actifs
 
-1. Dans le centre d’administration, > accédez **à la page utilisateurs** [actifs active](https://go.microsoft.com/fwlink/p/?linkid=834822) Users.
+1. Dans le centre d’administration, accédez **à la page utilisateurs** > [actifs active](https://go.microsoft.com/fwlink/p/?linkid=834822) Users.
 
 2. Sur la page **utilisateurs actifs** , sélectionnez l’utilisateur dont vous souhaitez modifier le rôle d’administrateur. Dans le volet flyout, en regard de **rôles**, sélectionnez **gérer les rôles**.
 
@@ -84,7 +85,7 @@ Vous pouvez attribuer des utilisateurs à un rôle de deux manières différente
 
 ::: moniker range="o365-germany"
 
-1. Dans le Centre d’administration, accédez à la page **Utilisateurs >** > <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Utilisateurs actifs</a>.
+1. Dans le Centre d’administration, accédez à la page **Utilisateurs** > <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Utilisateurs actifs</a>.
 
 2. Sur la page **utilisateurs actifs** , sélectionnez l’utilisateur dont vous souhaitez modifier le rôle d’administrateur. Dans le volet flyout, en regard de **rôles**, sélectionnez **modifier**. 
 
@@ -96,7 +97,7 @@ Vous pouvez attribuer des utilisateurs à un rôle de deux manières différente
 
 ::: moniker range="o365-21vianet"
 
-1. Dans le Centre d’administration, accédez à la page **Utilisateurs >** > <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Utilisateurs actifs</a>.
+1. Dans le Centre d’administration, accédez à la page **Utilisateurs** > <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Utilisateurs actifs</a>.
 
 2. Sur la page **utilisateurs actifs** , sélectionnez l’utilisateur dont vous souhaitez modifier le rôle d’administrateur. Dans le volet flyout, en regard de **rôles**, sélectionnez **modifier**. 
 

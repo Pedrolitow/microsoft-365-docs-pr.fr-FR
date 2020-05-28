@@ -11,18 +11,19 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 - GEA150
 description: Découvrez comment obtenir un rapport d’utilisation Microsoft 365 Apps for usage à l’aide du tableau de bord des rapports Microsoft 365 dans le centre d’administration Microsoft 365.
-ms.openlocfilehash: eb8978c878b2356c8fe73cb0f9f0021b65fcc333
-ms.sourcegitcommit: b8a9994b26a6d9865212f5b1871286e719d1608e
+ms.openlocfilehash: bdf6863b47739e77355137f0bb559e7cc425d055
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43781438"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44387656"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-365-apps-usage"></a>Rapports Microsoft 365 dans le centre d’administration-utilisation des applications Microsoft 365
 
@@ -38,7 +39,7 @@ Le tableau de bord **rapports** Microsoft 365 affiche une vue d’ensemble de l�
 
 1. Dans le centre d’administration, accédez à la page **Rapports** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">Utilisation</a>.
 
- 2. Dans la liste déroulante **Sélectionner un rapport** , sélectionnez utilisation des applications **Office 365** \> **Microsoft 365** .
+ 2. Dans la liste déroulante **Sélectionner un rapport** , sélectionnez utilisation des applications **Office 365**   \>  **Microsoft 365** .
 
 ## <a name="interpret-the-microsoft-365-apps-usage-report"></a>Interpréter le rapport d’utilisation des applications Microsoft 365
 
@@ -52,7 +53,7 @@ Vous pouvez obtenir une vue d’ensemble de l’activité Microsoft 365 apps de 
  |2. <br/> |Les données de chaque rapport couvrent généralement les 24 à 48 heures. <br/> |
  |3. <br/> |L’affichage **utilisateurs** affiche la tendance du nombre d’utilisateurs actifs pour chaque application : Outlook, Word, Excel, PowerPoint, OneNote et Teams. « Les utilisateurs actifs » sont les personnes qui effectuent des actions intentionnelles au sein de ces applications. <br/> |
  |4. <br/> |L’affichage **plates-formes** illustre la tendance des utilisateurs actifs dans toutes les applications pour chaque plateforme (Windows, Mac, Web et mobile). <br/> |
- |5.<br/>|Sur le graphique **utilisateurs** , l’axe Y indique le nombre d’utilisateurs actifs uniques pour l’application concernée. Sur le graphique **plates-formes** , l’axe Y indique le nombre d’utilisateurs uniques pour la plateforme correspondante. L’axe X sur les deux graphiques est la date à laquelle une application a été utilisée sur une plateforme. RM donnée.<br/>|
+ |5.<br/>|Sur le graphique **utilisateurs** , l’axe Y indique le nombre d’utilisateurs actifs uniques pour l’application concernée. Sur le graphique **plates-formes**   , l’axe Y indique le nombre d’utilisateurs uniques pour la plateforme correspondante. L’axe X sur les deux graphiques est la date à laquelle une application a été utilisée sur une plateforme. RM donnée.<br/>|
  6.<br/>|Vous pouvez filtrer la série que vous voyez sur le graphique en sélectionnant un élément dans la légende. Par exemple, dans le graphique **utilisateurs** , sélectionnez Outlook, Word, Excel, PowerPoint, OneDrive ou teams pour afficher uniquement les informations relatives à chacun d’eux. La modification de cette sélection ne modifie pas les informations dans le tableau de grille en dessous.|
  |7.<br/>|Le tableau présente une répartition des données au niveau utilisateur. Vous pouvez ajouter ou supprimer des colonnes. <br/><br/>**Username** est l’adresse de messagerie de l’utilisateur qui a effectué l’activité sur les applications Microsoft.<br><br/>**Date de la dernière activation (UTC)** est la dernière date à laquelle l’utilisateur a activé son abonnement aux applications Microsoft 365.<br/><br/>**Date de la dernière activité (UTC)** indique la dernière date à laquelle une activité intentionnelle a été effectuée par l’utilisateur. Pour voir l'activité qui s'est produite à une date spécifique, sélectionnez celle-ci directement dans le graphique.<br/><br/>Colonnes suivantes correspondant à chaque application qui identifie si l’utilisateur était actif sur cette application pendant la période sélectionnée :<br> <br>**Outlook** <br>**Word** <br>**Excel**<br>**PowerPoint** <br>**OneNote**<br><br> Colonnes suivantes correspondant à chaque plateforme qui identifie si l’utilisateur était actif sur cette plateforme pour n’importe quelle application (dans les applications Microsoft 365) pendant la période sélectionnée :<br><br>**Outlook (Windows)**<br>**Outlook (Mac)**<br>**Outlook (Web)** <br>**Outlook (mobile)**<br> **Word (Windows)**<br> **Word (Mac)**<br> **Word (Web)**<br> **Word (mobile)**<br> **Excel (Windows)**<br> **Excel (Mac)**<br> **Excel (Web)**<br> **Excel (mobile)**<br> **PowerPoint (Windows)**<br> **PowerPoint (Mac)**<br>**PowerPoint (Web)**<br> **PowerPoint (mobile)**<br> **OneNote (Windows)**<br> **OneNote (Mac)**<br> **OneNote (Web)**<br>**OneNote (mobile)**<br> **Teams (Windows)**<br> **Teams (Mac)**<br> **Teams (Web)**<br>**Équipes (mobile)** |
  |8.<br/>|Sélectionnez l’icône **gérer les colonnes** pour ajouter ou supprimer des colonnes dans le rapport.|

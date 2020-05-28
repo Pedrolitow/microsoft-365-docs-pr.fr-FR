@@ -14,6 +14,9 @@ ms.collection:
 - Adm_O365
 - Adm_O365_Setup
 - Adm_TOC
+ms.custom:
+- okr_SMB
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -21,13 +24,12 @@ search.appverid:
 - BEA160
 ms.assetid: 092252f8-08df-4cdb-a8d2-b8653caa29a1
 description: Découvrez comment vérifier les abonnements de votre organisation en accédant à la page abonnements.
-ms.custom: okr_SMB
-ms.openlocfilehash: b855c533627aadf6117e6830d7484276003ea665
-ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
+ms.openlocfilehash: 438d9932b2e0dcce0e75e0d979908cdab5979f13
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44045211"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44386744"
 ---
 # <a name="what-subscription-do-i-have"></a>Quel abonnement ai-je ?
 
@@ -40,7 +42,7 @@ Si vous êtes administrateur, vous pouvez vérifier les abonnements de votre org
 > [!NOTE]
 > Si le nouveau Centre d’administration Microsoft 365 n’est pas celui que vous utilisez, vous pouvez l’activer en sélectionnant le bouton bascule **Essayer le nouveau Centre d’administration** situé en haut de la page d’accueil.
 
-1. Dans le centre d’administration, accédez à la page **facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">de vos produits</a> .
+1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produits</a>.
 
 2. Vos abonnements s’affichent sur la page **vos produits** , avec le nom de l’abonnement, des informations sur l’abonnement et son état. Pour afficher une vue condensée, sélectionnez **affichage tableau**.
 
@@ -48,7 +50,7 @@ Si vous êtes administrateur, vous pouvez vérifier les abonnements de votre org
   
 ::: moniker range="o365-germany"
 
-1. Dans le centre d’administration, accédez à la page <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">abonnements</a> de **facturation** \>.  
+1. Dans le centre d’administration, accédez à **Billing** la \> page <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">abonnements</a> de facturation.  
 
 2. Si vous n'avez souscrit qu'un seul abonnement, celui-ci s'affiche dans la page **Abonnements**, conjointement avec le nom de l'abonnement, des informations sur ce dernier ainsi que son état. Dans la capture d’écran suivante, vous pouvez voir que j’ai un abonnement apps pour les applications Microsoft 365.
 
@@ -67,7 +69,7 @@ Si vous êtes administrateur, vous pouvez vérifier les abonnements de votre org
 
 ::: moniker range="o365-21vianet"
 
-1. Dans le centre d’administration, accédez à la page <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">abonnements</a> de **facturation** \>.  
+1. Dans le centre d’administration, accédez à **Billing** la \> page <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">abonnements</a> de facturation.  
 
 2. Si vous n'avez souscrit qu'un seul abonnement, celui-ci s'affiche dans la page **Abonnements**, conjointement avec le nom de l'abonnement, des informations sur ce dernier ainsi que son état. Dans la capture d’écran suivante, vous pouvez voir que j’ai un abonnement apps pour les applications Microsoft 365.
 

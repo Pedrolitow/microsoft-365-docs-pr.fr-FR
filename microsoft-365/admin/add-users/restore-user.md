@@ -15,6 +15,7 @@ ms.collection:
 - Adm_TOC
 ms.custom:
 - MSStore_Link
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -22,19 +23,19 @@ search.appverid:
 - GEA150
 ms.assetid: 2c261e42-5dd1-48b0-845f-2a016d29cfc1
 description: Découvrez comment restaurer des comptes d’utilisateurs supprimés et toutes les données associées.
-ms.openlocfilehash: 7ac0805024ebf78075a66f77c99496675f20e497
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: 27b3f4a0077b5ef0dcfaef1dbe5019a5d69652f2
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44140566"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44387000"
 ---
 # <a name="restore-a-user"></a>Restaurer un utilisateur
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> Le centre d’administration change. Si votre expérience ne correspond pas aux détails présentés ici, reportez-vous [à la rubrique à propos du nouveau centre d’administration Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> Le centre d’administration change. Si votre expérience ne correspond pas aux informations présentées ici, voir [À propos du nouveau centre d’administration Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
 
 ::: moniker-end
    
@@ -53,7 +54,7 @@ Pour effectuer ces étapes, vous devez être un administrateur général Microso
  
 ::: moniker range="o365-worldwide"
 
-1. Dans le centre d’administration, accédez à **la** \> page utilisateurs <a href="https://go.microsoft.com/fwlink/p/?linkid=2071581" target="_blank">supprimés</a> .
+1. Dans le centre d’administration, accédez à **la page utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2071581" target="_blank">supprimés</a> .
 
 ::: moniker-end
 
@@ -88,7 +89,7 @@ Pour résoudre ce problème, vous pouvez soit remplacer le compte d'utilisateur 
 
 ::: moniker range="o365-worldwide"
 
-1. Dans le centre d’administration, accédez à **la** \> page utilisateurs <a href="https://go.microsoft.com/fwlink/p/?linkid=2071581" target="_blank">supprimés</a> .
+1. Dans le centre d’administration, accédez à **la page utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2071581" target="_blank">supprimés</a> .
 
 ::: moniker-end
 
@@ -129,7 +130,7 @@ Pour ce faire, vous devez disposer des [autorisations d’administrateur](about-
 
 ::: moniker range="o365-worldwide"
 
-1. Dans le centre d’administration, accédez à **la** \> page utilisateurs <a href="https://go.microsoft.com/fwlink/p/?linkid=2071581" target="_blank">supprimés</a> .
+1. Dans le centre d’administration, accédez à **la page utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2071581" target="_blank">supprimés</a> .
 
 ::: moniker-end
 

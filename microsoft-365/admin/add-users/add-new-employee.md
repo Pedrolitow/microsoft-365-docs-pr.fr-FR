@@ -15,17 +15,18 @@ ms.collection:
 - Adm_TOC
 ms.custom:
 - MSStore_Link
+- AdminSurgePortfolio
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: 9cdfa29d-7681-4af2-a79d-3e72e7ab9778
 description: Ajoutez de nouveaux employés à Microsoft 365 pour les applications de messagerie, Skype et Office.
-ms.openlocfilehash: f25f9445cba31942a58c656d8d7f212dc093024d
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+ms.openlocfilehash: 0df9ed292cd4d8010c779cb822b84f9916cf1928
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44049496"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44387308"
 ---
 # <a name="add-a-new-employee-to-microsoft-365"></a>Ajouter un nouvel employé à Microsoft 365
 
@@ -63,7 +64,7 @@ Sauf si vous les avez envoyés à leur adresse de messagerie personnelle, imprim
 
 Tout comme Facebook, Amazon ou Gmail, votre employé se connecte pour utiliser Microsoft 365. Donnez-leur les informations de connexion suivantes :
   
-- Connectez-vous [https://www.office.com](https://www.office.com)à l’adresse.
+- Connectez-vous à l’adresse [https://www.office.com](https://www.office.com) .
     
 - Sélectionnez **connexion**, puis tapez le nom d’utilisateur et le mot de passe.
     
@@ -74,9 +75,9 @@ Partagez-les avec les [employés de la configuration rapide de Microsoft 365](ht
   
 Et voici un aide-mémoire pour les aider à démarrer :
   
-|**Tâche**|**Trouver les détails**|
+|**Task**|**Trouver les détails**|
 |:-----|:-----|
-|Se connecter à Office  <br/> |Accédez à [https://www.office.com](https://www.office.com), sélectionnez **se connecter**, puis entrez votre ID d’utilisateur et votre mot de passe.  <br/> |
+|Se connecter à Office  <br/> |Accédez à [https://www.office.com](https://www.office.com) , sélectionnez **se connecter**, puis entrez votre ID d’utilisateur et votre mot de passe.  <br/> |
 |Installez les applications Office sur votre ordinateur.  <br/><br/> |Lorsque vous vous connectez, la page d’accueil est dotée d’un lien permettant de télécharger et d’installer des applications comme Word et Outlook.  Sélectionnez **installer Office**.         Pour obtenir des instructions, consultez [la rubrique How to install Office](https://support.office.com/article/4414eaaf-0478-48be-9c42-23adc4716658.aspx).  <br/> |
 |Configurez votre courrier électronique dans Outlook 2016.  <br/> |Une fois les applications Office installées sur votre ordinateur, configurez votre courrier électronique. Pour obtenir des instructions, consultez [la rubrique How to Setup Outlook](https://support.office.com/article/6e27792a-9267-4aa4-8bb6-c84ef146101b.aspx).  <br/> |
 |Configurez Skype entreprise afin de pouvoir vous connecter à vos collègues ou partenaires professionnels dans votre entreprise ou dans le monde entier. Vous pouvez démarrer des conversations avec des appels vocaux, vocaux ou vidéo.  <br/> |[Installez Skype entreprise sur votre ordinateur](https://support.office.com/article/8a0d4da8-9d58-44f9-9759-5c8f340cb3fb.aspx).  <br/> <br/>Pour en savoir plus sur l’utilisation de Skype entreprise, [Regardez une vidéo.](https://support.office.com/article/3a21eca4-434d-41f1-ab06-3d4a268573b7.aspx) <br/> <br/>Avez-vous configuré Skype entreprise afin que vos employés puissent contacter des personnes externes à votre entreprise qui utilisent l’application Skype gratuite ? Si ce n’est pas le cas, indiquez à votre nouvel employé afin qu’il sache ce qu’il faut attendre lors de l’utilisation de Skype entreprise.  <br/> |

@@ -13,6 +13,7 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MST160
@@ -20,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 6ceca4d3-cad1-4532-9f0f-d469dfbbb552
 description: Découvrez comment créer une stratégie d’attribution de noms pour les groupes Microsoft 365.
-ms.openlocfilehash: 2d8b016e0830f0d20ea6fb6227dd7789878bfc94
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 38b5bbed0c6e4c12af2f529568a53df329d9a933
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43630442"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44388004"
 ---
 # <a name="groups-naming-policy"></a>Stratégie de noms de groupes
 
@@ -38,7 +39,7 @@ La stratégie de noms est appliquée aux groupes qui sont créés dans toutes le
 
 La stratégie de noms de groupes se compose des fonctionnalités suivantes :
 
-- **Préfixe-suffixe stratégie de noms**: vous pouvez utiliser des préfixes ou des suffixes pour définir la Convention d’affectation de\_noms des\_groupes (par exemple : « US My Group Engineering »). Les préfixes/suffixes peuvent être des chaînes fixes ou des attributs utilisateur comme [service] qui sont remplacés en fonction de l’utilisateur qui crée le groupe.
+- **Préfixe-suffixe stratégie de noms**: vous pouvez utiliser des préfixes ou des suffixes pour définir la Convention d’affectation de noms des groupes (par exemple : « US \_ My Group \_ Engineering »). Les préfixes/suffixes peuvent être des chaînes fixes ou des attributs utilisateur comme [service] qui sont remplacés en fonction de l’utilisateur qui crée le groupe.
 
 - **Mots bloqués personnalisés**: vous pouvez télécharger un ensemble de mots bloqués spécifiques à votre organisation qui seraient bloqués dans les groupes créés par les utilisateurs. (Par exemple : « PDG, paie, RH »).
 
@@ -54,7 +55,7 @@ Les préfixes et suffixes peuvent être des chaînes fixes ou des attributs d’
 
 ### <a name="fixed-strings"></a>Chaînes fixes
 
-Vous pouvez utiliser des chaînes courtes qui peuvent vous aider à différencier les groupes dans la liste d’adresses globale et la navigation de gauche des charges de travail de groupe. Certains suffixes de préfixe courants sont des mots clés tels que\_« GRP name »\#, « name »\_, « Name »
+Vous pouvez utiliser des chaînes courtes qui peuvent vous aider à différencier les groupes dans la liste d’adresses globale et la navigation de gauche des charges de travail de groupe. Certains suffixes de préfixe courants sont des mots clés tels que « GRP \_ Name », « \# Name », « \_ Name »
 
 ### <a name="attributes"></a>Attributs
 
@@ -80,7 +81,7 @@ Il est recommandé d’utiliser des attributs dont les valeurs sont renseignées
 
 - Les préfixes et les suffixes peuvent contenir des caractères spéciaux pris en charge dans le nom du groupe et l’alias de groupe. Lorsque les préfixes et les suffixes contiennent des caractères spéciaux qui ne sont pas autorisés dans l’alias de groupe, ils ne sont appliqués qu’au nom du groupe. Dans ce cas, les préfixes et les suffixes appliqués au nom de groupe diffèrent de ceux appliqués à l’alias de groupe.
 
-- Si vous utilisez des groupes Microsoft 365 connectés à Yammer, évitez d’utiliser les caractères suivants dans votre stratégie de noms \#: \[@ \], \<,, \>, et. Si ces caractères sont dans la stratégie de noms, les utilisateurs de Yammer ordinaires ne pourront pas créer de groupes.
+- Si vous utilisez des groupes Microsoft 365 connectés à Yammer, évitez d’utiliser les caractères suivants dans votre stratégie de noms : @, \# , \[ , \] , \<, and \> . Si ces caractères sont dans la stratégie de noms, les utilisateurs de Yammer ordinaires ne pourront pas créer de groupes.
 
 ## <a name="custom-blocked-words"></a>Mots bloqués personnalisés
 

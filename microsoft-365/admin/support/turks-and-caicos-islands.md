@@ -9,15 +9,16 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
+ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Découvrez comment contacter le support pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 4e1dd35e668c7815824962beda5480cd7b6121e4
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: c54fad567130fe72abc39d063fedfda616b8f8f3
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42355783"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44388268"
 ---
 # <a name="contact-support-for-turks-and-caicos-islands"></a>Contacter le support pour les îles Turks et Caïcos
 

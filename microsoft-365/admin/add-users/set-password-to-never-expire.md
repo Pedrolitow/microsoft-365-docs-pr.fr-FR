@@ -15,24 +15,25 @@ ms.collection:
 - Adm_TOC
 ms.custom:
 - MSStore_Link
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: f493e3af-e1d8-4668-9211-230c245a0466
 description: Découvrez comment définir certains mots de passe utilisateur individuels pour ne jamais expirer à l’aide de Windows PowerShell.
-ms.openlocfilehash: 3d5d65f687a5ed02e0e20ff77482f7bef5b6b695
-ms.sourcegitcommit: 614666afb104fc97acb4a2ee5577ef63c0de153a
+ms.openlocfilehash: 6562a4092c47d9c4bf7bf294767e6050a3e0577a
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44173495"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44387001"
 ---
 # <a name="set-an-individual-users-password-to-never-expire"></a>Définir le mot de passe d'un utilisateur de façon à ce qu'il n'expire jamais
 
 ## <a name="set-the-password-expiration-policy-for-your-organization"></a>Définir la stratégie d’expiration des mots de passe pour votre organisation
 
-1. Dans le centre d’administration, accédez à la page <a href="https://go.microsoft.com/fwlink/p/?linkid=2072756" target="_blank">paramètres</a> des **paramètres** \> .
+1. Dans le centre d’administration, accédez à **Settings** la \> page <a href="https://go.microsoft.com/fwlink/p/?linkid=2072756" target="_blank">paramètres</a> des paramètres.
 2. En haut de la page Paramètres, sélectionnez **sécurité & confidentialité**.
 3. Sélectionnez **Stratégie d’expiration du mot de passe**. 
 4. Si les mots de passe sont configurés pour ne jamais expirer, activez la case à cocher en regard de **définir les mots de passe d’utilisateur pour qu’ils expirent après un certain nombre de jours**. Vous aurez la possibilité de spécifier le nombre de jours avant l’expiration des mots de passe.
@@ -127,4 +128,4 @@ Exécutez l’une des commandes suivantes :
     ```
 
 > [!WARNING]
-> Mots de passe définis `-PasswordPolicies DisablePasswordExpiration` sur Age en fonction de `pwdLastSet` l’attribut. Si vous configurez les mots de passe des utilisateurs de sorte qu’ils n’expirent jamais, les mots de passe expirent dans 90 jours. En fonction de `pwdLastSet` l’attribut, si vous modifiez l’expiration `-PasswordPolicies None`, tous les mots de passe dont `pwdLastSet` le délai d’expiration est antérieur à 90 jours doivent être modifiés par l’utilisateur lors de sa prochaine connexion. Cette modification peut affecter un grand nombre d’utilisateurs.
+> Mots de passe définis sur `-PasswordPolicies DisablePasswordExpiration` Age en fonction de l' `pwdLastSet` attribut. Si vous configurez les mots de passe des utilisateurs de sorte qu’ils n’expirent jamais, les mots de passe expirent dans 90 jours. En fonction de l' `pwdLastSet` attribut, si vous modifiez l’expiration `-PasswordPolicies None` , tous les mots de passe dont le délai d’expiration est antérieur à `pwdLastSet` 90 jours doivent être modifiés par l’utilisateur lors de sa prochaine connexion. Cette modification peut affecter un grand nombre d’utilisateurs.

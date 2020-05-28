@@ -11,6 +11,7 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -18,12 +19,12 @@ search.appverid:
 - GEA150
 ms.assetid: 87c24ae2-82e0-4d1e-be01-c3bcc3f18c60
 description: Découvrez comment obtenir un rapport d’activation Office pour savoir quels utilisateurs ont activé leur abonnement Office et identifier les utilisateurs qui pourraient avoir besoin d’aide supplémentaire.
-ms.openlocfilehash: 632973c8d50dffd50725c46163e0af874c64b0c6
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 3b7d3e599d31377fb11a07623a53a3c75dced129
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43621221"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44387740"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-office-activations"></a>Rapports Microsoft 365 dans le centre d’administration-activations de Microsoft Office
 
@@ -39,7 +40,7 @@ Le rapport Activation d'Office vous offre un aperçu des utilisateurs ayant acti
 1. Dans le centre d’administration, accédez à la page **Rapports** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">Utilisation</a>.
 
     
-2. Dans la liste déroulante **Sélectionner un rapport** , sélectionnez **activations** **Office 365** \> . 
+2. Dans la liste déroulante **Sélectionner un rapport** , sélectionnez **Office 365** \> **activations**Office 365. 
   
 ## <a name="interpret-the-office-activations-report"></a>Interprétation du rapport Activations d'Office
 
@@ -49,7 +50,7 @@ Les graphiques **Activations** et **Utilisateurs** vous offrent un aperçu des a
   
 |||
 |:-----|:-----|
-|0,1  <br/> |Le rapport Activations d'Office présente l'état actuel des données d'activation de licences Office [à la date du rapport présentée en haut à droite du graphique].  <br/> |
+|1   <br/> |Le rapport Activations d'Office présente l'état actuel des données d'activation de licences Office [à la date du rapport présentée en haut à droite du graphique].  <br/> |
 |n°2  <br/> |Les données de chaque rapport couvrent généralement les 24 à 48 heures.  <br/> |
 |3  <br/> |Le graphique **Activations** indique le nombre d'activations d'Office sur des ordinateurs et appareils.  <br/> |
 |4   <br/> |Le graphique **Utilisateurs** indique le nombre d'utilisateurs activés et le nombre d'utilisateurs ayant activé l'abonnement Office sur un ordinateur ou un appareil.  <br/> |

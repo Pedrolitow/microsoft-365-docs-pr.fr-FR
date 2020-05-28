@@ -11,18 +11,19 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: b793ffdd-effa-43d0-849a-b1ca2e899f38
 description: 'Obtenir le rapport d’utilisation de Yammer sur les appareils sur lesquels vos utilisateurs utilisent Yammer. '
-ms.openlocfilehash: 1dfd72c8974aa10b3774d2cdb17ac1bf82b9501b
-ms.sourcegitcommit: 2b626a7924b4be08f6eb21181453b778e6fde418
+ms.openlocfilehash: 17fcf6c7d46988f0783b5097d3381b9bc08cbbe7
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/30/2020
-ms.locfileid: "43047010"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44387452"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---yammer-device-usage-report"></a>Rapports Microsoft 365 dans le centre d’administration-rapport d’utilisation de Yammer Device
 
@@ -38,7 +39,7 @@ Les rapports d'utilisation de Yammer sur les appareils vous donnent des informat
 1. Dans le centre d’administration, accédez à la page **Rapports** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">Utilisation</a>.
 
     
-2. Dans la liste déroulante **Sélectionner un rapport** , sélectionnez **utilisation de l’appareil** **Yammer** \> .
+2. Dans la liste déroulante **Sélectionner un rapport** , **Yammer** sélectionnez \> **utilisation de l’appareil**Yammer.
   
 ## <a name="interpret-the-yammer-activity-report"></a>Interpréter le rapport d'activité Yammer
 
