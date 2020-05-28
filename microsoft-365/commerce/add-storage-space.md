@@ -18,6 +18,7 @@ ms.collection:
 ms.custom:
 - MAX_CampaignID
 - okr_SMB
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -28,19 +29,19 @@ search.appverid:
 - GSP150
 ms.assetid: 96ea3533-de64-4b01-839a-c560875a662c
 description: Découvrez comment ajouter et réduire le stockage de fichiers dans votre abonnement Microsoft 365. Avec le stockage de fichiers supplémentaire, vous pouvez stocker davantage de contenu dans SharePoint Online et OneDrive.
-ms.openlocfilehash: 921fd4a232d288971150a3379b138613f009f9dc
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: f31495127feb345cccdc792c60333f5fc0c7cc6f
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44140965"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44402677"
 ---
 # <a name="add-storage-space-for-your-subscription"></a>Ajouter de l’espace de stockage pour votre abonnement
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> Le centre d’administration change. Si votre expérience ne correspond pas aux détails présentés ici, reportez-vous [à la rubrique à propos du nouveau centre d’administration Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> Le centre d’administration change. Si votre expérience ne correspond pas aux informations présentées ici, voir [À propos du nouveau centre d’administration Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
 
 ::: moniker-end
 
@@ -58,7 +59,7 @@ Si vous commencez à manquer d’espace de stockage pour vos collections de site
 
 ::: moniker range="o365-germany"
 
-1. Connectez-vous https://portal.office.de à en tant qu’administrateur global ou SharePoint, puis sélectionnez la vignette admin pour ouvrir le centre d’administration. (Si vous voyez un message indiquant que vous n’êtes pas autorisé à accéder à la page, vous ne disposez pas des autorisations d’administrateur 365 de Microsoft dans votre organisation.)
+1. Connectez-vous à https://portal.office.de en tant qu’administrateur global ou SharePoint, puis sélectionnez la vignette admin pour ouvrir le centre d’administration. (Si vous voyez un message indiquant que vous n’êtes pas autorisé à accéder à la page, vous ne disposez pas des autorisations d’administrateur 365 de Microsoft dans votre organisation.)
 
 2. Dans le volet gauche, sous **centres d’administration**, sélectionnez **SharePoint**. Si la version classique du Centre d’administration SharePoint s’affiche, en haut de la page, sélectionnez **Ouvrir maintenant** pour ouvrir la nouvelle version du Centre d’administration SharePoint.
 
@@ -70,7 +71,7 @@ Si vous commencez à manquer d’espace de stockage pour vos collections de site
 
 ::: moniker range="o365-21vianet"
 
-1. Connectez-vous https://login.partner.microsoftonline.cn/ à en tant qu’administrateur global ou SharePoint, puis sélectionnez la vignette admin pour ouvrir le centre d’administration. (Si vous voyez un message indiquant que vous n’êtes pas autorisé à accéder à la page, vous ne disposez pas des autorisations d’administrateur 365 de Microsoft dans votre organisation.)
+1. Connectez-vous à https://login.partner.microsoftonline.cn/ en tant qu’administrateur global ou SharePoint, puis sélectionnez la vignette admin pour ouvrir le centre d’administration. (Si vous voyez un message indiquant que vous n’êtes pas autorisé à accéder à la page, vous ne disposez pas des autorisations d’administrateur 365 de Microsoft dans votre organisation.)
 
 2. Dans le volet gauche, sous **centres d’administration**, sélectionnez **SharePoint**. Si la version classique du Centre d’administration SharePoint s’affiche, en haut de la page, sélectionnez **Ouvrir maintenant** pour ouvrir la nouvelle version du Centre d’administration SharePoint.
 
@@ -113,7 +114,7 @@ Si vous n’avez pas encore acheté de stockage supplémentaire pour votre abonn
 
 ::: moniker range="o365-germany"
 
-1. Dans le centre d’administration, accédez à la page <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">abonnements</a> de **facturation** \>.  
+1. Dans le centre d’administration, accédez à **Billing** la \> page <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">abonnements</a> de facturation.  
 
 2. Sur la page **abonnements** , choisissez l’abonnement auquel vous voulez ajouter de l’espace de stockage, puis sélectionnez **composants additionnels**.
 
@@ -167,7 +168,7 @@ Si vous avez déjà acheté le stockage de fichiers supplémentaire via le compl
 
 ::: moniker range="o365-worldwide"
 
-1. Dans le centre d’administration, accédez à la page **facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">de vos produits</a> .
+1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produits</a>.
 
 2. Choisissez l’abonnement qui contient le complément de **stockage de fichiers supplémentaire Office 365** .
 

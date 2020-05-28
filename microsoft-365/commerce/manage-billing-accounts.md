@@ -11,16 +11,16 @@ ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
 - commerce
-ms.custom: ''
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 description: Découvrez les comptes de facturation et comment les gérer.
-ms.openlocfilehash: ce7b9d2a2cc35261c7e6e3f5547574ea9c49e658
-ms.sourcegitcommit: 2859c82b30ae9cbd3a3e4bcdebd65f18444f1a9e
+ms.openlocfilehash: 87cc861ab48b99106a3cbd50d8ded91205ffb0a2
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42826266"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44402605"
 ---
 # <a name="manage-billing-accounts"></a>Gérer les comptes de facturation
 
@@ -66,9 +66,9 @@ Cette section répertorie les adresses de livraison associées à votre compte d
 
 Vous pouvez fournir aux autres utilisateurs l’accès au compte de facturation dans le centre d’administration 365 de Microsoft via les rôles et les autorisations. Seul le propriétaire d’un compte de facturation peut accorder l’accès à un compte de facturation. Vous pouvez attribuer l’un des rôles suivants aux utilisateurs :
 
-- Le **propriétaire** &mdash; du compte de facturation peut attribuer des autorisations, modifier des comptes, signer des contrats et afficher des comptes.
-- Le **collaborateur** &mdash; de compte de facturation peut modifier des comptes, signer des contrats et afficher des comptes.
-- Le **lecteur** &mdash; de compte de facturation peut afficher les comptes.
+- Propriétaire du compte de **facturation** &mdash; Peut attribuer des autorisations, modifier des comptes, signer des contrats et afficher des comptes.
+- Collaborateur de compte de **facturation** &mdash; Peut modifier des comptes, signer des contrats et afficher des comptes.
+- Lecteur de compte de **facturation** &mdash; Peut afficher les comptes.
 
 > [!Note]
 > Les rôles de compte de facturation s’appliquent uniquement aux comptes de facturation, et ne s’appliquent pas aux autres scénarios du centre d’administration 365 de Microsoft.

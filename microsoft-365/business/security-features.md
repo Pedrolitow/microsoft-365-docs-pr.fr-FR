@@ -18,17 +18,18 @@ ms.custom:
 - MSB365
 - OKR_SMB_M365
 - seo-marvel-mar
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: c123694a-1efb-459e-a8d5-2187975373dc
 description: Découvrez les fonctionnalités de sécurité fournies avec Microsoft 365 Business Premium pour vous aider à protéger vos données sur des PC, des téléphones et des tablettes.
-ms.openlocfilehash: f6aef84afc76217161dee6b68d626128e0cc15b2
-ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
+ms.openlocfilehash: 839b5481e27591e1762a0d8eb5623f279d6d22dd
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "44165754"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44402711"
 ---
 # <a name="microsoft-365-business-premium-security-and-compliance-features"></a>Fonctionnalités de sécurité et de conformité de Microsoft 365 Business Premium
 
@@ -109,7 +110,7 @@ Votre abonnement Microsoft 365 Business Premium inclut des fonctionnalités qui 
 
    Microsoft 365 Business Premium inclut toutes les fonctionnalités d' [Azure information Protection Plan 1](https://go.microsoft.com/fwlink/p/?linkid=871407). Grâce à ce plan, vous pouvez créer des **étiquettes de confidentialité** qui vous permettent de contrôler l’accès aux informations sensibles dans les e-mails et les documents, avec des contrôles tels que « ne pas transférer » et « ne pas copier ». Vous pouvez également classer les informations sensibles comme « confidentielles » et spécifier le mode de partage des informations confidentielles à l’extérieur et à l’intérieur de l’entreprise. Le chiffrement au niveau de l’entreprise est facile à appliquer aux e-mails et aux documents afin de garantir la confidentialité de vos informations. Vous pouvez également installer le complément client Azure information protection pour les applications Office. Pour plus d’informations, consultez la rubrique [Azure information protection Unified Labeling client](https://docs.microsoft.com/azure/information-protection/rms-client/unifiedlabelingclient-version-release-history). Pour les étiquettes de sensibilité, installez le **AzInfoProtection_UL. exe**.
 
-Vous pouvez gérer ces fonctionnalités dans le centre &amp; d’administration et de sécurité et dans le centre d’administration Intune. Au fil du temps, les contrôles simplifiés seront ajoutés au centre d’administration 365 de Microsoft.
+Vous pouvez gérer ces fonctionnalités dans le centre d’administration et de sécurité et dans le centre d' &amp; administration Intune. Au fil du temps, les contrôles simplifiés seront ajoutés au centre d’administration 365 de Microsoft.
   
     
 ## <a name="faq"></a>FAQ
@@ -126,4 +127,4 @@ Oui, ces fonctionnalités sont disponibles sur tous les marchés où Microsoft 3
     
     ![Dans le volet de navigation de gauche, dans le centre d’administration Microsoft 365, sélectionnez centres d’administration.](../media/fa4484f8-c637-45fd-a7bd-bdb3abfd6c03.png)
   
-3. Choisissez **conformité &amp; de sécurité** pour accéder au &amp; Centre de sécurité conformité.
+3. Choisissez ** &amp; conformité de sécurité** pour accéder au &amp; Centre de sécurité conformité.

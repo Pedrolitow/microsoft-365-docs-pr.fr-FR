@@ -20,17 +20,18 @@ ms.custom:
 - MiniMaven
 - MSB365
 - OKR_SMB_M365
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: aad21b1a-c775-469a-b89c-c5d1d59d27db
 description: Découvrez comment les fonctionnalités de protection de Microsoft 365 Business Premium correspondent aux paramètres Intune. L’abonnement vous offre une licence pour modifier les paramètres Intune.
-ms.openlocfilehash: 572d3364e465067536e8369b49404d3d1de1bb5b
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: ce75073f748f6005a843e31f7c38d06b38a3c706
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43633240"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44401575"
 ---
 # <a name="how-do-protection-features-in-microsoft-365-business-premium-map-to-intune-settings"></a>Comment les fonctionnalités de protection de Microsoft 365 Business Premium correspondent aux paramètres Intune
 
@@ -44,7 +45,7 @@ Pour rechercher le paramètre Intune, connectez-vous à l’aide de vos informat
  > 
  > Un abonnement Microsoft 365 Business Premium vous offre une licence pour modifier tous les paramètres Intune. Voir [Introduction to Intune pour commencer.](https://docs.microsoft.com/intune/introduction-intune)
   
-Sélectionnez le nom &mdash; de la stratégie souhaitée par exemple, stratégie d’application &mdash; pour Android, puis choisissez **paramètres de stratégie**.
+Sélectionnez le nom de la stratégie souhaitée &mdash; par exemple, stratégie d’application pour Android, &mdash; puis choisissez **paramètres de stratégie**.
   
 Sous **Protéger les fichiers de travail en cas de perte ou de vol des appareils**
   
@@ -73,7 +74,7 @@ Sous **Gérer la façon dont les utilisateurs accèdent aux fichiers Office sur 
 
 Le tableau suivant décrit en détail comment les paramètres de stratégie d'application Windows 10 sont mis en correspondance avec les paramètres Intune.
   
-Pour rechercher le paramètre Intune, connectez-vous à l’aide de vos informations d’identification d’administrateur Microsoft 365 Business Premium et accédez au [portail Azure](https://portal.azure.com). Sélectionnez **plus de services**, puis tapez Intune dans le **filtre**. Sélectionnez \> **stratégie d’application** **protection des applications Intune** .
+Pour rechercher le paramètre Intune, connectez-vous à l’aide de vos informations d’identification d’administrateur Microsoft 365 Business Premium et accédez au [portail Azure](https://portal.azure.com). Sélectionnez **plus de services**, puis tapez Intune dans le **filtre**. Sélectionnez stratégie d’application **protection des applications Intune** \> **App Policy**.
   
  > [!IMPORTANT]
  >
@@ -95,7 +96,7 @@ Pour explorer les paramètres disponibles, sélectionnez le nom de la stratégie
 
 Le tableau suivant décrit en détail comment les paramètres de configuration des appareils Windows 10 sont mis en correspondance avec les paramètres Intune.
   
-Pour rechercher le paramètre Intune, connectez-vous à l’aide de vos informations d’identification d’administrateur Microsoft 365 Business Premium, accédez au [portail Azure](https://portal.azure.com), sélectionnez **autres services**et tapez Intune dans le **filtre**, puis sélectionnez **profils**de **configuration** \> d’appareil **Intune** \> . Sélectionnez ensuite **Stratégie d'appareils pour Windows 10** \> **Propriétés** \> **Paramètres**.
+Pour rechercher le paramètre Intune, connectez-vous à l’aide de vos informations d’identification d’administrateur Microsoft 365 Business Premium, accédez au [portail Azure](https://portal.azure.com), sélectionnez **autres services**et tapez Intune dans le **filtre**, puis sélectionnez profils de configuration d’appareil **Intune** \> **Device configuration** \> **Profiles**. Sélectionnez ensuite **Stratégie d'appareils pour Windows 10** \> **Propriétés** \> **Paramètres**.
   
 |**Paramètre de stratégie d'appareil Windows 10**|**Paramètre(s) Intune**|
 |:-----|:-----|
@@ -103,7 +104,7 @@ Pour rechercher le paramètre Intune, connectez-vous à l’aide de vos informat
 |Protéger les ordinateurs contre les menaces web dans Microsoft Edge  <br/> |**SmartScreen** dans **Paramètres du navigateur Edge** est défini sur **Obligatoire**.  <br/> |
 |Désactiver l'écran d'un appareil resté inactif pendant (minutes)  <br/> |Nombre maximal de minutes d'inactivité avant le verrouillage de l'appareil (minutes)  <br/> |
 |Autoriser les utilisateurs à télécharger des applications à partir du Microsoft Store  <br/> |Stratégie URI personnalisée  <br/> |
-|Autoriser les utilisateurs à accéder à Cortana  <br/> |En **général** \> , **Cortana** est définie sur **bloquer** dans Intune lorsque la valeur est définie sur **désactivé** dans Microsoft 365 Business Premium.  <br/> |
+|Autoriser les utilisateurs à accéder à Cortana  <br/> |**Généralités** \> **Cortana** est définie sur **bloquer** dans Intune lorsque la valeur est définie sur **désactivé** dans Microsoft 365 Business Premium.  <br/> |
 |Autoriser les utilisateurs à recevoir des conseils de Windows et des annonces de Microsoft  <br/> |**Windows en vedette**, tous bloqués si ce paramètre est défini sur **désactivé** dans Microsoft 365 Business Premium.  <br/> |
 |Maintenir les appareils Windows 10 à jour automatiquement  <br/> | Ce paramètre est dans **Microsoft Intune** \> **service updates-Windows 10 Update Rings**, choose **Update Policy for Windows 10 Devices**, Then **Properties** \> **Settings**.  <br/>  Lorsque le paramètre Microsoft 365 Business Premium est **activé**, tous les paramètres suivants sont définis :  <br/> La **branche de service** est définie sur **CB** (CBB lorsque cette fonctionnalité est désactivée dans Microsoft 365 Business Premium).  <br/> **Mises à jour de produits Microsoft** est défini sur **Autoriser**.  <br/> **Pilotes Windows** est défini sur **Autoriser**.  <br/> **Comportement des mises à jour automatiques** est défini sur **Installation automatique à l'heure de la maintenance** avec ce qui suit :  <br/> **Démarrage après ces heures** est défini sur **06:00**.  <br/> **Fin des heures actives** est défini sur **22:00**.  <br/> **Période de report des mises à jour qualité (jours)** est défini sur **0**.  <br/> **Période de report des mises à jour des fonctionnalités (jours)** est défini sur **0**.  <br/> **Mode de téléchargement de l'optimisation de la distribution** est défini sur **HTTP fusionné avec un appairage derrière le même NAT**.  <br/> |
 |||

@@ -14,6 +14,7 @@ ms.collection:
 - Adm_O365
 - commerce
 - Adm_NonTOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -21,12 +22,12 @@ search.appverid:
 - BEA160
 ROBOTS: NOINDEX
 description: Modifiez les abonnements manuellement en achetant un nouvel abonnement et en vous assurant que les abonnements sont répertoriés et actifs.
-ms.openlocfilehash: fcaa3ebfd9d20fa50c9f37f3366aec9d4dd69103
-ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
+ms.openlocfilehash: 20f5492a816c6c819456ac2ca4aa0f20da24eccd
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44046191"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44403281"
 ---
 # <a name="change-plans-manually"></a>Modifier les offres manuellement
 
@@ -53,12 +54,12 @@ OR
 
 **Acheter un nouvel abonnement et des licences :** Suivez les étapes de la procédure [acheter un autre abonnement Microsoft 365 pour les entreprises](../buy-another-subscription.md) pour acheter un nouvel abonnement.
 
-Assurez-vous que vous achetez un abonnement pour la même organisation que les utilisateurs. Par exemple, vérifiez les adresses de messagerie des utilisateurs que vous souhaitez déplacer. Si leurs adresses de messagerie \@incluent contoso.com, vous devez acheter un nouvel abonnement pour contoso.com.
+Assurez-vous que vous achetez un abonnement pour la même organisation que les utilisateurs. Par exemple, vérifiez les adresses de messagerie des utilisateurs que vous souhaitez déplacer. Si leurs adresses de messagerie incluent \@ contoso.com, vous devez acheter un nouvel abonnement pour contoso.com.
 Incluez une licence pour chaque utilisateur que vous souhaitez déplacer.
 
 ## <a name="step-3-check-your-new-subscription-and-licenses"></a>Étape 3 : vérifier votre nouvel abonnement et vos nouvelles licences
 
-1. Dans le centre d’administration, accédez à la page **facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">de vos produits</a> .
+1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produits</a>.
 
 2. **Vérifier que les deux abonnements sont répertoriés et actifs** L’abonnement à partir duquel vous déplacez les utilisateurs et l’abonnement vers lequel vous déplacez les utilisateurs doivent être regroupés. Si le nouvel abonnement n’est pas présent lors de la vérification initiale, réessayez ultérieurement. Vérifiez que les deux abonnements sont actifs. [Le nouvel abonnement n’est pas indiqué, ou n’est pas actif](#the-new-subscription-isnt-listed-or-isnt-active).
 

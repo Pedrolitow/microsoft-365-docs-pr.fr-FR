@@ -21,13 +21,15 @@ search.appverid:
 - GEA150
 ms.assetid: 7ac93507-0e38-4398-8bfe-9c1d123cb387
 description: 'Découvrez les abonnements et les licences dans Microsoft 365 pour les entreprises et les personnes qui peuvent attribuer des licences et ce qui se passe quand vous attribuez une licence à quelqu’un. '
-ms.custom: okr_SMB
-ms.openlocfilehash: 5178b25de6f66968f8a89c7b2c34ee466f8855bd
-ms.sourcegitcommit: 4cfb8a9c3675d0aefcabd690273e2af85f2e38b0
+ms.custom:
+- okr_SMB
+- AdminSurgePortfolio
+ms.openlocfilehash: 5ed1925fd51dd1798d4c6ab275494fde01535177
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44211437"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44402401"
 ---
 # <a name="understand-subscriptions-and-licenses-in-microsoft-365-for-business"></a>Comprendre les abonnements et les licences dans Microsoft 365 pour les entreprises
 
@@ -61,7 +63,7 @@ Le tableau suivant indique ce qui se produit automatiquement lorsque vous attrib
 |Exchange Online  <br/> |Une boîte aux lettres est créée pour cette personne.  <br/> Pour plus d’informations sur le contrat SLA pour cette tâche, voir [«Configuration... messages dans le centre d’administration Microsoft 365](https://support.microsoft.com/help/2635238/setting-up-messages-in-the-office-365-admin-center). |
 |SharePoint Online  <br/> |Les autorisations de modification du site d'équipe SharePoint Online par défaut sont attribuées à cette personne.  <br/> |
 |Skype Entreprise Online  <br/> |La personne aura accès aux fonctionnalités associées à la licence.  <br/> |
-|Applications Microsoft 365 for entreprise  <br/> |La personne pourra télécharger Microsoft Office sur un maximum de 5 Mac ou PC, 5 tablettes et 5 smartphones.  <br/> |
+|Microsoft 365 Apps for enterprise  <br/> |La personne pourra télécharger Microsoft Office sur un maximum de 5 Mac ou PC, 5 tablettes et 5 smartphones.  <br/> |
    
 ## <a name="how-many-devices-can-people-install-office-on"></a>Sur combien d'appareils les utilisateurs peuvent-ils installer Office ?
 
@@ -73,7 +75,7 @@ Si votre abonnement comprend un des produits suivants, chaque personne peut inst
     
 - Microsoft 365 Apps for enterprise
     
-- Office 365 Entreprise E3
+- Office 365 Entreprise E3
     
 - Office 365 Entreprise E5
     

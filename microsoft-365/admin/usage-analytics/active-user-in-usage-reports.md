@@ -11,18 +11,19 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 093a6d0d-890b-489e-9f46-b15687d3fe4f
 description: Découvrez un utilisateur actif de l’analyse de l’utilisation, des rapports d’activité et des mesures d’adoption de Microsoft 365.
-ms.openlocfilehash: 2117bae32913ad713318c1df25be66d6ef6859e5
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: b4834d96b2f762d77f0d27309cf8c71a782b0dcd
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631790"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44402881"
 ---
 # <a name="active-user-in-microsoft-365-usage-reports"></a>Utilisateur actif dans les rapports d’utilisation de Microsoft 365
 
@@ -38,14 +39,14 @@ Un utilisateur actif de produits Microsoft 365 pour l' [analyse de l’utilisati
 |Yammer  <br/> |Tout utilisateur ayant lu, publié ou aimé un message sur Yammer.  <br/> ||
 |Skype Entreprise  <br/> |Tout utilisateur ayant participé à une session P2P (messages instantanés, appels audio et vidéo, partage d'application, transferts de fichiers, etc.) ou ayant organisé ou participé à une conférence.  <br/> ||
 |Office  <br/> |Tout utilisateur ayant activé son abonnement Microsoft 365 Pro plus, Visio Pro ou Project Pro sur au moins un appareil.  <br/> ||
-|Groupes Microsoft 365  <br/> |Tout membre d'un groupe présentant une activité de boîte aux lettres (si un message a été envoyé au groupe)  <br/> |Cette définition sera améliorée avec l’activité de fichier de site de groupe et l’activité de groupe Yammer (activité de fichier sur le site de groupe et message publié dans le groupe Yammer associé au groupe.) Ces données ne sont actuellement pas disponibles dans l’application de modèle d’analyse de l’utilisation de Microsoft 365  <br/> |
+|Groupes Microsoft 365  <br/> |Tout membre d'un groupe présentant une activité de boîte aux lettres (si un message a été envoyé au groupe)  <br/> |Cette définition sera améliorée avec l’activité de fichier de site de groupe et l’activité de groupe Yammer (activité de fichier sur le site de groupe et message publié dans le groupe Yammer associé au groupe.) Ces données ne sont actuellement pas disponibles dans l’application de modèle d’analyse de l’utilisation de Microsoft 365  <br/> |
 |Microsoft Teams  <br/> |Tout utilisateur qui a participé à des messages de conversation, des messages de conversation privés, des appels, des réunions ou d’autres activités. Les autres activités se définissent comme le nombre d’autres activités d’équipe de l’utilisateur qui incluent, et non, les messages, les applications, le travail sur les fichiers, la recherche, les équipes et les canaux et les Favoriting.  <br/> ||
    
 ## <a name="adoption-metrics"></a>Mesures d’adoption
 
 [L’analyse de l’utilisation de Microsoft 365](usage-analytics.md) contient des mesures d’adoption supplémentaires relatives aux utilisateurs actifs pour montrer l’adoption des produits au fil du temps. Ces mesures sont valides pour le mois, l’année et le produit sélectionnés et sont définies comme suit. 
   
-|**Liées**|**Description**|
+|**Métrique**|**Description**|
 |:-----|:-----|
 |EnabledUsers  <br/> |Nombre d’utilisateurs activés pour utiliser le produit dans le mois.  <br/> |
 |ActiveUsers  <br/> |Nombre d’utilisateurs actifs dans le mois.  <br/> |

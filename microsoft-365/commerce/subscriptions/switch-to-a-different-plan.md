@@ -1,5 +1,5 @@
 ---
-title: Basculer vers un autre plan Microsoft 365 pour les entreprises
+title: Basculer vers une autre offre Microsoft 365 pour les entreprises
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -16,6 +16,7 @@ ms.collection:
 - commerce
 ms.custom:
 - SaRA
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -24,14 +25,14 @@ search.appverid:
 - GEA150
 ms.assetid: 73318661-8f33-478b-bcc7-fb8d69dbb22a
 description: Découvrez comment passer à un nouvel abonnement Microsoft 365 pour les entreprises.
-ms.openlocfilehash: 8682ced4aab6fd1b0cbfc132527e977eabc59306
-ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
+ms.openlocfilehash: c1216f0eb5069610ea63ca1a81d90243d3ef111d
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43707498"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44403185"
 ---
-# <a name="switch-to-a-different-microsoft-365-for-business-plan"></a>Basculer vers un autre plan Microsoft 365 pour les entreprises
+# <a name="switch-to-a-different-microsoft-365-for-business-plan"></a>Basculer vers une autre offre Microsoft 365 pour les entreprises
 
 Lorsque votre entreprise change ou que vous avez besoin de davantage de fonctionnalités, vous pouvez changer d’offre.  
 

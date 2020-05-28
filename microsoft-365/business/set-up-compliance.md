@@ -17,16 +17,17 @@ ms.custom:
 - MSB365
 - OKR_SMB_M365
 - seo-marvel-mar
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 description: Configurez les fonctionnalités de conformité pour empêcher toute perte de données et protéger les informations sensibles de vos clients.
-ms.openlocfilehash: a3405207cd7d2d6565807ef0f3a51acbcb80409a
-ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
+ms.openlocfilehash: 9b900367c22ec5bb5c2719af63049045ecd5e466
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "44165734"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44402691"
 ---
 # <a name="set-up-compliance-features"></a>Configurer les fonctionnalités de conformité
 
@@ -46,7 +47,7 @@ DLP comprend de nombreux modèles de stratégie prêts à l’emploi pour de nom
     
 Pour placer une boîte aux lettres en conservation pour litige, dans le centre d’administration :
     
-1. Dans le volet de **navigation de gauche, accédez à** \> utilisateurs **actifs**.
+1. Dans le volet de **navigation de gauche, accédez à utilisateurs** \> **actifs**.
     
 2. Sélectionnez un utilisateur dont vous souhaitez placer la boîte aux lettres en conservation pour litige. Dans le volet utilisateur, développez **paramètres de messagerie**, puis en regard de **paramètres supplémentaires**, choisissez **modifier les propriétés Exchange**.
     

@@ -14,18 +14,19 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 - commerce
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 - BEA160
 description: Découvrez comment vous inscrire pour obtenir un abonnement à la version d’évaluation de Microsoft 365 pour les entreprises.
-ms.openlocfilehash: 9d1c9068b1d6596aabc09d44d854f89e76dd7ddb
-ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
+ms.openlocfilehash: 968ab3c8bf7b377eba1aafb3fbc710eb4d36dad7
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43708106"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44402833"
 ---
 # <a name="sign-up-for-a-trial-subscription"></a>Inscription à un abonnement d’évaluation
 
@@ -52,4 +53,4 @@ Si vous décidez d’annuler votre version d’évaluation avant la fin de la p�
 
 ## <a name="see-also"></a>Voir aussi
 
-[Vidéos de formation Microsoft 365 pour les entreprises](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[Vidéos de formation Microsoft 365 Entreprise](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

@@ -19,29 +19,30 @@ ms.custom:
 - MSB365
 - OKR_SMB_M365
 - seo-marvel-mar
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Découvrez comment configurer des stratégies d’accès conditionnel pour les campagnes Microsoft 365 afin d’ajouter une sécurité supplémentaire substantielle.
-ms.openlocfilehash: 26fadecc69486d7931dac069d8f53061592f397f
-ms.sourcegitcommit: e525bcf073a61e1350484719a0c3ceb6ff0d8db1
+ms.openlocfilehash: d7c9cfee2ef00e4ebe231a28ccca185c10f53c6b
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "43153763"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44403015"
 ---
-# <a name="set-up-conditional-access-policies"></a>Configurer des stratégies d’accès conditionnel
+# <a name="set-up-conditional-access-policies"></a>Configurer les stratégies d’accès conditionnel
 
 Les stratégies d' [accès conditionnel](https://docs.microsoft.com/azure/active-directory/conditional-access/overview) ajoutent une sécurité supplémentaire importante. Microsoft fournit un ensemble de stratégies d’accès conditionnel de base qui sont recommandées pour tous les clients. Les stratégies de référence sont un ensemble de stratégies prédéfinies qui permettent de protéger les organisations contre de nombreuses attaques courantes. Ces attaques courantes peuvent inclure le pulvérisation de mot de passe, la relecture et le hameçonnage.
 
 Ces stratégies exigent que les administrateurs et les utilisateurs entrent une deuxième forme d’authentification (appelée authentification multifacteur ou MFA) lorsque certaines conditions sont remplies. Par exemple, si un utilisateur se connecte à partir d’un autre pays, la connexion peut être considérée comme risquée et l’utilisateur doit fournir une forme supplémentaire d’authentification. 
 
 Actuellement, les stratégies de base sont les suivantes :
-- **Exiger** &ndash; l’authentification multifacteur pour les administrateurs nécessite l’authentification multifacteur pour les rôles d’administrateur les plus privilégiés, y compris l’administrateur général.
-- La **protection** &ndash; des utilisateurs finaux nécessite une authentification multifacteur pour les utilisateurs uniquement lorsqu’une connexion est risquée. 
-- **Bloquer l’authentification** &ndash; héritée les anciennes applications clientes et certaines nouvelles applications n’utilisent pas de protocoles d’authentification plus récents et plus sécurisés. Ces anciennes applications peuvent contourner des stratégies d’accès conditionnel et obtenir un accès non autorisé à votre environnement. Cette stratégie bloque l’accès à partir des clients qui ne prennent pas en charge l’accès conditionnel. 
-- **Exiger MFA pour la gestion** &ndash; de service nécessite l’authentification multifacteur pour l’accès aux outils de gestion, y compris le portail Azure (où vous configurez les stratégies de base). 
+- **Exiger l’authentification multifacteur pour les administrateurs** &ndash; Nécessite l’authentification multifacteur pour les rôles d’administrateur les plus privilégiés, y compris l’administrateur général.
+- Protection des utilisateurs **finaux** &ndash; Nécessite l’authentification multifacteur pour les utilisateurs uniquement lorsqu’une connexion est risquée. 
+- **Bloquer l’authentification** &ndash; héritée Les applications clientes plus anciennes et certaines nouvelles applications n’utilisent pas de protocoles d’authentification plus récents et plus sécurisés. Ces anciennes applications peuvent contourner des stratégies d’accès conditionnel et obtenir un accès non autorisé à votre environnement. Cette stratégie bloque l’accès à partir des clients qui ne prennent pas en charge l’accès conditionnel. 
+- **Exiger MFA pour la gestion** &ndash; des services Nécessite l’authentification multifacteur pour l’accès aux outils de gestion, y compris le portail Azure (où vous configurez les stratégies de base). 
 
 Microsoft vous recommande d’activer toutes ces stratégies de base. Une fois ces stratégies activées, les administrateurs et les utilisateurs sont invités à s’inscrire pour l’authentification Azure Multi-Factor.
 

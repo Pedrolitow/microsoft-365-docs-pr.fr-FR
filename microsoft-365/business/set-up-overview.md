@@ -21,17 +21,18 @@ ms.custom:
 - MSB365
 - OKR_SMB_M365
 - seo-marvel-mar
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: 6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece
 description: Découvrez les étapes de configuration de Microsoft 365 Business Premium, de l’abonnement, à l’ajout d’un domaine et des utilisateurs, à la configuration des stratégies de sécurité, et bien plus encore.
-ms.openlocfilehash: 8b26d423d4f62ee8f9ea4a61eb8f7efa72ee26cb
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 80243fac6ca2efcfca030b6ee1c1113c026a80ce
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43633352"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44402975"
 ---
 # <a name="overview-of-setup"></a>Vue d’ensemble de la configuration
 
@@ -92,6 +93,6 @@ Lorsque vous joignez un appareil Windows 10 à Azure AD, les stratégies que vou
 
     - Si votre entreprise dispose d’un annuaire Active Directory local qui contient certaines ressources locales (telles que des partages de fichiers et des imprimantes), vous pouvez donner à vos appareils joints à Azure AD l’accès à ces ressources en suivant les étapes ci-dessous : [accéder aux ressources locales à partir d’un appareil joint à Azure ad dans Microsoft 365 Business Premium](access-resources.md).
 
-## <a name="see-also"></a>Voir également
+## <a name="see-also"></a>Voir aussi
 
-[Vidéos de formation Microsoft 365 pour les entreprises](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[Vidéos de formation Microsoft 365 Entreprise](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

@@ -14,18 +14,19 @@ ms.collection:
 - Adm_O365
 - commerce
 - Adm_NonTOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: 66315e5b-883a-432b-8650-d896f95af228
 ROBOTS: NOINDEX
 description: En savoir plus sur la facture électronique de Microsoft 365 pour Taïwan.
-ms.openlocfilehash: 0b57ce0cb6b30b4c9dcd37c3b6931a3389b50b68
-ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
+ms.openlocfilehash: 1ea9ff21e25229924cd6815999b9c0868173026f
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44045879"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44401785"
 ---
 # <a name="understand-your-e-invoice-for-microsoft-365-for-business-taiwan"></a>Comprendre votre facture électronique pour Microsoft 365 pour les entreprises (Taïwan)
 
@@ -55,7 +56,7 @@ Au moment de la création du compte, à l' **étape 1**, Bienvenue, nous allons 
   
 Une fois que vous avez créé votre compte, vous pouvez mettre à jour votre ID TVA via votre centre d’administration en procédant comme suit :
   
-1. Dans le centre d’administration, accédez à la page **facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">de vos produits</a> .
+1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produits</a>.
     
 2. Sélectionnez un abonnement, puis sélectionnez **autres actions**.
     

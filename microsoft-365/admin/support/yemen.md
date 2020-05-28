@@ -9,15 +9,16 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
+ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Découvrez comment contacter le support pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 261c32ba640add67034437dcb3e615d02c086013
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 54be75c7062c7defa8e35c7becffd247f51dfe9b
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42355535"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44402437"
 ---
 # <a name="contact-support-for-yemen"></a>Contacter le support pour le Yémen
 

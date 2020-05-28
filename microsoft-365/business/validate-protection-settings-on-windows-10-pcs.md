@@ -17,17 +17,18 @@ ms.custom:
 - Core_O365Admin_Migration
 - MSB365
 - seo-marvel-mar
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: fae8819d-7235-495f-9f07-d016f545887f
 description: Valider les paramètres de protection des applications Premium de Microsoft 365 sur les appareils Windows 10 et vérifier que les utilisateurs ne peuvent pas copier les données d’entreprise dans des fichiers personnels ou des applications non gérées.
-ms.openlocfilehash: 20b2e43ae53486c046440ff1066d241ec9661888
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 589d2fc25cc1425a775523595881660cc03e152e
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635741"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44403387"
 ---
 # <a name="validate-app-protection-settings-on-windows-10-pcs"></a>Valider les paramètres de protection des applications sur les PC Windows 10
 
@@ -37,11 +38,11 @@ Une fois les [stratégies de protection des applications configurées](protectio
   
  **Vérifiez les paramètres de connexion**
   
-1. Une fois que vous vous êtes connecté à l’aide des informations d’identification de Microsoft 365 Business Premium et que vous vous connectez à Azure AD comme décrit dans la rubrique [configurer des appareils Windows pour les utilisateurs de Microsoft 365 Business Premium](set-up-windows-devices.md), accédez à **paramètres** \> **Accounts** \> Windows **accès aux comptes d’accès professionnel ou scolaire**. Choisissez **Connecté à \<nom du client\> Azure AD**, puis **Informations**.
+1. Une fois que vous vous êtes connecté à l’aide des informations d’identification de Microsoft 365 Business Premium et que vous vous connectez à Azure AD comme décrit dans la rubrique [configurer des appareils Windows pour les utilisateurs de Microsoft 365 Business Premium](set-up-windows-devices.md), accédez à **Paramètres Windows** \> **Accounts** \> **accès aux comptes d’accès professionnel ou scolaire**. Choisissez **connecté à \<tenant name\> Azure ad**, puis sélectionnez **informations**.
     
     ![Click or tap Info on the Connected to Azure AD dialog.](../media/a36ede2b-d1a0-4d4e-8ea7-af39b4b63890.png)
   
-2. Sur la page **géré par** \<nom\> de client, vous pouvez voir les **informations de connexion** qui incluent une adresse de serveur de **gestion** telle que celle illustrée dans la figure suivante. 
+2. Sur la page **géré par** \<tenant name\> , vous pouvez voir les **informations de connexion** qui incluent une **adresse de serveur de gestion** telle que celle illustrée dans la figure suivante. 
     
     ![Managed by page shows connection info of the device manager URL.](../media/47515a8e-2d0c-4bea-99f0-6b2545b88a11.png)
   
@@ -63,11 +64,11 @@ Une fois les [stratégies de protection des applications configurées](protectio
 
  **Vérifiez les paramètres de connexion**
   
-1. Sur votre appareil personnel Windows 10 où vous êtes connecté en tant qu’utilisateur local, accédez à **Paramètres Windows**, puis cliquez ou appuyez **Accounts** \> sur **l’accès aux comptes professionnel ou scolaire**.
+1. Sur votre appareil personnel Windows 10 où vous êtes connecté en tant qu’utilisateur local, accédez à **Paramètres Windows**, puis cliquez ou appuyez **Accounts** sur \> **l’accès aux comptes professionnel ou scolaire**.
     
 2. Sous **Accès Professionnel ou Scolaire**, choisissez **Connexion**.
     
-3. Entrez vos informations d’identification Microsoft 365 Business Premium dans la boîte **de** \> **dialogue Configurer un compte professionnel ou scolaire** .
+3. Entrez vos informations d’identification Microsoft 365 Business Premium dans la **boîte de dialogue Configurer un compte professionnel ou scolaire** \> **Sign in**.
     
 4. Sur la page **Accès Professionnel ou Scolaire**, choisissez **Compte professionnel ou scolaire**, puis **Informations**.
     

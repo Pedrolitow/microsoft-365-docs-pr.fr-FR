@@ -1,5 +1,5 @@
 ---
-title: Qu'arrive-t-il à mes données et à mon accès à la fin de mon abonnement ?
+title: Qu’arrive-t-il à mes données et à mon accès à la fin de mon abonnement ?
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -14,6 +14,7 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 - commerce
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -22,12 +23,12 @@ search.appverid:
 - GEA150
 ms.assetid: 4436582f-211a-45ec-b72e-33647f97d8a3
 description: Découvrez ce qui arrive à vos données lorsque votre abonnement Microsoft 365 pour les entreprises expire, est désactivé ou si vous annulez l’opération.
-ms.openlocfilehash: 363d8379bb2fa34e58a81892beadcebb9c6624f2
-ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
+ms.openlocfilehash: e1953f439577b9339b035968a63e8d1a6eddcd29
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "44165119"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44403161"
 ---
 # <a name="what-happens-to-my-data-and-access-when-my-microsoft-365-for-business-subscription-ends"></a>Qu’arrive-t-il à mes données et à l’accès à la fin de mon abonnement Microsoft 365 pour les entreprises ?
 
@@ -40,9 +41,9 @@ Si votre abonnement prend fin, parce qu’il arrive à expiration ou parce que v
 
 Le tableau suivant décrit ce à quoi vous pouvez vous attendre lors de l’expiration d’un abonnement Microsoft 365 pour les entreprises payant.
 
-| **Active**                                                             | **Expiré <br/>(30 jours\*)**                                                | **Désactivé <br/>(90 jours\*)**                                               | **Supprimé**                                                                         |
+| **Active**                                                             | **Expiré <br/> (30 jours \* )**                                                | **Désactivé <br/> (90 jours \* )**                                               | **Supprimé**                                                                         |
 |------------------------------------------------------------------------|------------------------------------------------------------------------------|------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------|
-| *Données accessibles à tous les*                                               | *Données accessibles à tous les*                                                     | *Données accessibles aux administrateurs uniquement*                                             | **Données supprimées<br/>Azure Active Directory est supprimé, s’il n’est pas utilisé par d’autres services** |
+| *Données accessibles à tous les*                                               | *Données accessibles à tous les*                                                     | *Données accessibles aux administrateurs uniquement*                                             | **Données supprimées <br/> Azure Active Directory est supprimé, s’il n’est pas utilisé par d’autres services** |
 | Les utilisateurs ont un accès normal à Microsoft 365, les données et les applications Office  | Les utilisateurs ont un accès normal à Microsoft 365, les fichiers et les applications              | Les utilisateurs ne peuvent pas accéder à Microsoft 365, aux fichiers ou aux applications                        | Les utilisateurs ne peuvent pas accéder à Microsoft 365, aux fichiers ou aux applications                                     |
 | Les administrateurs ont un accès normal à Microsoft 365, les données et les applications Office | Les administrateurs peuvent accéder au centre d’administration                                           | Les administrateurs peuvent accéder au centre d’administration, mais ils ne peuvent pas attribuer de licences aux utilisateurs       | Les administrateurs peuvent accéder au centre d’administration pour acheter et gérer d’autres abonnements             |
 |                                                                        | Les administrateurs globaux ou de facturation peuvent réactiver l’abonnement dans le centre d’administration. | Les administrateurs globaux ou de facturation peuvent réactiver l’abonnement dans le centre d’administration. |                                                                                           |

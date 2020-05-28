@@ -1,5 +1,5 @@
 ---
-title: Acheter ou modifier un composant additionnel
+title: Acheter ou modifier un module complémentaire
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -21,20 +21,22 @@ search.appverid:
 - BEA160
 ms.assetid: 4e7b57d6-b93b-457d-aecd-0ea58bff07a6
 description: Découvrez comment acheter un module complémentaire pour ajouter des fonctionnalités supplémentaires à votre abonnement Microsoft 365 pour les entreprises. Vous pouvez également mettre à jour et supprimer un module complémentaire.
-ms.custom: okr_SMB
-ms.openlocfilehash: 60bc63d4db84667f00ab0bde95e8541f45a38df7
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.custom:
+- okr_SMB
+- AdminSurgePortfolio
+ms.openlocfilehash: e22c4193fffa1d97334f61e789265e75d55d53a3
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44141289"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44402189"
 ---
-# <a name="buy-or-edit-an-add-on"></a>Acheter ou modifier un composant additionnel
+# <a name="buy-or-edit-an-add-on"></a>Acheter ou modifier un module complémentaire
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> Le centre d’administration change. Si votre expérience ne correspond pas aux détails présentés ici, reportez-vous [à la rubrique à propos du nouveau centre d’administration Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> Le centre d’administration change. Si votre expérience ne correspond pas aux informations présentées ici, voir [À propos du nouveau centre d’administration Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
 
 ::: moniker-end
 
@@ -116,7 +118,7 @@ Les *modules complémentaires autonomes* ne sont pas liés à un abonnement spé
 
 ::: moniker range="o365-worldwide"
 
-1. Dans le centre d’administration, accédez à la page **facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">de vos produits</a> .
+1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produits</a>.
 
 2. Sur la page **vos produits** , sélectionnez l’abonnement pour lequel vous souhaitez mettre à jour un module complémentaire.
 
@@ -179,7 +181,7 @@ Les *modules complémentaires autonomes* ne sont pas liés à un abonnement spé
 
 ::: moniker range="o365-worldwide"
 
-1. Dans le centre d’administration, accédez à la page **facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">de vos produits</a> .
+1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produits</a>.
 
 2. Sur la page **vos produits** , sélectionnez l’abonnement au module complémentaire que vous souhaitez mettre à jour, puis sélectionnez **Ajouter/supprimer des licences**.
 
@@ -231,14 +233,14 @@ Pour plus d'informations sur les modules complémentaires d'Skype Entreprise, vo
 
 |**Module complémentaire**|**Disponible dans les abonnements suivants**|
 |:-----|:-----|
-|Référentiel sécurisé du client  <br/> | Office 365 Entreprise E1  <br/>  Office 365 Entreprise E3  <br/>  Office 365 Entreprise E4  <br/> |
-|[Office 365 Online-Protection avancée contre les menaces](https://go.microsoft.com/fwlink/p/?LinkId=691156) <br/> | Office 365 Entreprise E1  <br/>  Office 365 Entreprise E3  <br/>  Office 365 Entreprise E4  <br/> |
+|Référentiel sécurisé du client  <br/> | Office 365 Entreprise E1  <br/>  Office 365 Entreprise E3  <br/>  Office 365 Entreprise E4  <br/> |
+|[Office 365 Online-Protection avancée contre les menaces](https://go.microsoft.com/fwlink/p/?LinkId=691156) <br/> | Office 365 Entreprise E1  <br/>  Office 365 Entreprise E3  <br/>  Office 365 Entreprise E4  <br/> |
 |[Archivage Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=691157) <br/> | Microsoft 365 Business Basic  <br/>  Microsoft 365 Business Standard  <br/>  Office 365 Entreprise E1  <br/>  Office 365 Entreprise F1  <br/> |
-|Microsoft MyAnalytics  <br/> | Office 365 Entreprise E1  <br/>  Office 365 Entreprise E3  <br/>  Office 365 Entreprise E4  <br/> |
-|Conformité avancée Office 365  <br/> | Office 365 Entreprise E1  <br/>  Office 365 Entreprise E3  <br/>  Office 365 Entreprise E4  <br/> |
-|Espace de stockage supplémentaire Office 365  <br/> | Applications Microsoft 365 pour les entreprises  <br/>  Microsoft 365 Business Basic  <br/>  Microsoft 365 Business Standard  <br/>  Office 365 Entreprise E1  <br/>  Office 365 Entreprise E2  <br/>  Office 365 Entreprise E3  <br/>  Office 365 Entreprise E4  <br/>  Office 365 Entreprise E5  <br/>  Office pour le Web avec SharePoint plan 1  <br/>  Office pour le Web avec SharePoint plan 2  <br/>  SharePoint Online (plan 1)  <br/>  SharePoint Online (plan 2)  <br/> |
-|Système téléphonique  <br/> | Office 365 Entreprise E1  <br/>  Office 365 Entreprise E3  <br/>  Office 365 Entreprise E4  <br/>  Office 365 Entreprise E5  <br/> |
-|Audioconférence  <br/> |  Microsoft 365 Business Basic <br/> Microsoft 365 Business Standard <br/> Office 365 Entreprise E1 <br/> Office 365 Entreprise E3 <br/> Office 365 Entreprise E4 <br/> Office 365 Entreprise E5 sans audioconférence <br/> Microsoft 365 Business Premium <br/> Microsoft 365 E3 <br/> Microsoft 365 E5  <br/> |
+|Microsoft MyAnalytics  <br/> | Office 365 Entreprise E1  <br/>  Office 365 Entreprise E3  <br/>  Office 365 Entreprise E4  <br/> |
+|Conformité avancée Office 365  <br/> | Office 365 Entreprise E1  <br/>  Office 365 Entreprise E3  <br/>  Office 365 Entreprise E4  <br/> |
+|Espace de stockage supplémentaire Office 365  <br/> | Applications Microsoft 365 pour les entreprises  <br/>  Microsoft 365 Business Basic  <br/>  Microsoft 365 Business Standard  <br/>  Office 365 Entreprise E1  <br/>  Office 365 Entreprise E2  <br/>  Office 365 Entreprise E3  <br/>  Office 365 Entreprise E4  <br/>  Office 365 Entreprise E5  <br/>  Office pour le Web avec SharePoint plan 1  <br/>  Office pour le Web avec SharePoint plan 2  <br/>  SharePoint Online (plan 1)  <br/>  SharePoint Online (plan 2)  <br/> |
+|Système téléphonique  <br/> | Office 365 Entreprise E1  <br/>  Office 365 Entreprise E3  <br/>  Office 365 Entreprise E4  <br/>  Office 365 Entreprise E5  <br/> |
+|Audioconférence  <br/> |  Microsoft 365 Business Basic <br/> Microsoft 365 Business Standard <br/> Office 365 Entreprise E1 <br/> Office 365 Entreprise E3 <br/> Office 365 Entreprise E4 <br/> Office 365 Entreprise E5 sans audioconférence <br/> Microsoft 365 Business Premium <br/> Microsoft 365 E3 <br/> Microsoft 365 E5  <br/> |
 |Crédits de communication  <br/> | Office 365 Entreprise E5  <br/> |
 |Plan d’appels nationaux <br/> | Office 365 Entreprise E5  <br/> |
 |Plan d’appels internationaux  <br/> | Office 365 Entreprise E5  <br/> |

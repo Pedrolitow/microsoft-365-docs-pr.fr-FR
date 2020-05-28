@@ -11,30 +11,30 @@ ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
 - commerce
-ms.custom: ''
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 description: Découvrez comment travailler avec des fournisseurs de solutions certifiés par Microsoft (partenaires) pour acheter et gérer des produits et services pour votre organisation ou votre établissement scolaire.
 keywords: partenaire, fournisseur de solutions
-ms.openlocfilehash: 3ba5a62caf199bf1e111ecf921df0f21568d5257
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: 752c9e0237bbdde7be996b5675848e948e866dce
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44141206"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44402593"
 ---
 # <a name="manage-partner-relationships"></a>Gérer les relations avec les partenaires
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> Le centre d’administration change. Si votre expérience ne correspond pas aux détails présentés ici, reportez-vous [à la rubrique à propos du nouveau centre d’administration Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> Le centre d’administration change. Si votre expérience ne correspond pas aux informations présentées ici, voir [À propos du nouveau centre d’administration Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
 
 ::: moniker-end
 
 Vous pouvez travailler avec des fournisseurs de solutions certifiés par Microsoft (partenaires) pour acheter et gérer des produits et des services pour votre organisation ou votre établissement scolaire. Il y a quelques étapes à suivre pour l’obtention des éléments configurés.
 
-- Les administrateurs trouver et contacter un partenaire à l’aide <a href="https://www.microsoft.com/en-us/solution-providers/home" target="_blank">https://www.microsoft.com/en-us/solution-providers/home</a>du formulaire à l’adresse.
+- Les administrateurs trouver et contacter un partenaire à l’aide du formulaire à l’adresse <a href="https://www.microsoft.com/en-us/solution-providers/home" target="_blank">https://www.microsoft.com/en-us/solution-providers/home</a> .
 - Les partenaires envoient une demande de courrier électronique aux clients pour établir une relation de partenariat.
 - Les clients acceptent l’invitation dans le centre d’administration Microsoft 365 et commencent à travailler avec le partenaire.
 
@@ -90,7 +90,7 @@ Si vous ne souhaitez pas déléguer les privilèges d’administrateur au parten
 
 Si vous déléguez les privilèges d’administrateur à un partenaire, vous pouvez supprimer ces privilèges à tout moment. La suppression des privilèges d’administrateur n’entraîne pas la suppression de la relation partenaire. Ils peuvent continuer à travailler avec vous, par exemple en tant que revendeur.
 
-1. Dans le centre d’administration, accédez à **la** > page<a href="https://go.microsoft.com/fwlink/p/?linkid=2103629" target="_blank">comptes de facturation</a> de facturation.
+1. Dans le centre d’administration, accédez à **la**  >  page<a href="https://go.microsoft.com/fwlink/p/?linkid=2103629" target="_blank">comptes de facturation</a> de facturation.
 2. Sur la page **comptes de facturation** , sélectionnez l’onglet relations des **partenaires** .
 3. Sélectionnez la ligne qui contient le nom du partenaire.
 4. Dans la page partenaire, sélectionnez **Supprimer les rôles d’administrateur**.
@@ -99,7 +99,7 @@ Si vous déléguez les privilèges d’administrateur à un partenaire, vous pou
 
 Si vous décidez que vous ne voulez plus utiliser un partenaire, vous pouvez mettre fin à la relation. Toutefois, vous ne pouvez supprimer que les relations dans lesquelles le partenaire est un administrateur délégué ou un conseiller. Pour tous les autres types de partenaires, contactez votre partenaire pour mettre fin à la relation.
 
-1. Dans le centre d’administration, accédez à **la** > page<a href="https://go.microsoft.com/fwlink/p/?linkid=2103629" target="_blank">comptes de facturation</a> de facturation.
+1. Dans le centre d’administration, accédez à **la**  >  page<a href="https://go.microsoft.com/fwlink/p/?linkid=2103629" target="_blank">comptes de facturation</a> de facturation.
 2. Sur la page **comptes de facturation** , sélectionnez l’onglet relations des **partenaires** .
 3. Sélectionnez la ligne qui contient le nom du partenaire.
 4. Sur la page des détails du partenaire, sélectionnez **supprimer un partenaire**.

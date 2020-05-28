@@ -11,22 +11,23 @@ ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
 - commerce
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 description: Les administrateurs peuvent apprendre à gérer les achats en libre-service effectués par les utilisateurs au sein de leur organisation.
-ms.openlocfilehash: 991dc87c40f41a6cbd2f1c08d4bc72bbb34d28f1
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: 562e0e26d9ca7d10d71a46b8cf2d87c487c1b529
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44141149"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44403269"
 ---
 # <a name="manage-self-service-purchases-admin"></a>Gérer les achats libre-service (administrateur)
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> Le centre d’administration change. Si votre expérience ne correspond pas aux détails présentés ici, reportez-vous [à la rubrique à propos du nouveau centre d’administration Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> Le centre d’administration change. Si votre expérience ne correspond pas aux informations présentées ici, voir [À propos du nouveau centre d’administration Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
 
 ::: moniker-end
 
@@ -36,7 +37,7 @@ Vous pouvez également contrôler si les utilisateurs de votre organisation peuv
 
 ## <a name="view-self-service-subscriptions"></a>Afficher les abonnements en libre-service
 
-1. Dans le centre d’administration, accédez à la page **facturation** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">de vos produits</a> .
+1. Dans le centre d’administration, accédez à la page **facturation**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">de vos produits</a> .
 
 2. En regard d' **affiner les résultats**, dans la liste déroulante **type de compte** , choisissez **self-service**.
 
@@ -44,7 +45,7 @@ Vous pouvez également contrôler si les utilisateurs de votre organisation peuv
 
 ## <a name="view-who-has-licenses-for-a-self-service-purchase-subscription"></a>Afficher les personnes ayant des licences pour un abonnement achat libre-service
 
-1. Dans le centre d’administration, accédez à la page<a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">licences</a> de **facturation** > .
+1. Dans le centre d’administration, accédez à **Billing**la  >  page<a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">licences</a> de facturation.
 
 2. Choisissez l’icône de filtre, puis choisissez **self-service**.
 
@@ -63,7 +64,7 @@ Vous pouvez désactiver ou activer les achats en libre-service pour les utilisat
 
 Vous pouvez utiliser le module PowerShell **MSCommerce** pour :
 
-- Afficher l’État par défaut de **AllowSelfServicePurchase** la valeur &mdash; du paramètre AllowSelfServicePurchase, qu’elle soit activée ou désactivée par le produit
+- Afficher l’État par défaut de la valeur du paramètre **AllowSelfServicePurchase** , &mdash; qu’elle soit activée ou désactivée par le produit
 - Afficher la liste des produits applicables et indiquer si les achats en libre-service sont activés ou désactivés
 - Afficher ou modifier le paramètre actuel d’un produit spécifique pour l’activer ou le désactiver
 
@@ -75,7 +76,7 @@ Vous pouvez attribuer des licences existantes ou acheter des abonnements supplé
 
 1. Connectez-vous au <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centre d’administration</a> à l’aide de votre administrateur général ou de votre compte d’administrateur de facturation.
 
-2. Accédez à la page<a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">services d’achat</a> de **facturation** > .
+2. Accédez à la **Billing**  >  page<a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">services d’achat</a> de facturation.
 
 3. Recherchez et sélectionnez le produit que vous souhaitez acheter, puis choisissez **acheter**.
 

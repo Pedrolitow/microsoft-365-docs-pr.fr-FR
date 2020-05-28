@@ -14,6 +14,7 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 - commerce
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -21,19 +22,19 @@ search.appverid:
 - BEA160
 ms.assetid: b1bc0bef-4608-4601-813a-cdd9f746709a
 description: Découvrez comment annuler votre abonnement d’évaluation ou payant Microsoft 365 pour les entreprises.
-ms.openlocfilehash: f0f635529a7d7c6ee0f9a2d6b15b887e3fd23bfb
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: 863bb9c5cd6a6c9468715f02df6b40e91859ca27
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44141168"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44403293"
 ---
 # <a name="cancel-your-subscription"></a>Annuler votre abonnement
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> Le centre d’administration change. Si votre expérience ne correspond pas aux détails présentés ici, reportez-vous [à la rubrique à propos du nouveau centre d’administration Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> Le centre d’administration change. Si votre expérience ne correspond pas aux informations présentées ici, voir [À propos du nouveau centre d’administration Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
 
 ::: moniker-end
 
@@ -50,7 +51,7 @@ Si vous avez ajouté votre propre nom de domaine à utiliser avec votre abonneme
 
 ::: moniker range="o365-worldwide"
 
-1. Dans le centre d’administration, accédez à la page **facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">de vos produits</a> .
+1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produits</a>.
 
 2. Recherchez l’abonnement que vous souhaitez annuler et sous **paramètres & Actions**, sélectionnez Annuler l' **abonnement**.
 

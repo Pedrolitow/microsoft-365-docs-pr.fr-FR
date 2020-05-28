@@ -16,6 +16,7 @@ ms.collection:
 - commerce
 ms.custom:
 - SaRA
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -23,19 +24,19 @@ search.appverid:
 - BEA160
 - GEA150
 description: Découvrez comment effectuer une mise à niveau vers un nouvel abonnement.
-ms.openlocfilehash: b0f79233e6a05c2838026093bb0027cd4789b01b
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: 2a0dcff5b4326fc75b4e8e4154ee73e0ac17897d
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44141065"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44403173"
 ---
 # <a name="upgrade-to-a-different-plan"></a>Opter pour un abonnement différent
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> Le centre d’administration change. Si votre expérience ne correspond pas aux détails présentés ici, reportez-vous [à la rubrique à propos du nouveau centre d’administration Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> Le centre d’administration change. Si votre expérience ne correspond pas aux informations présentées ici, voir [À propos du nouveau centre d’administration Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
 
 ::: moniker-end
 
@@ -95,7 +96,7 @@ Pour effectuer une mise à niveau automatique des plans, tous vos utilisateurs d
 
 #### <a name="you-cant-upgrade-subscriptions-right-now-because-this-subscription-isnt-fully-set-up-or-the-service-isnt-available"></a>Vous ne pouvez pas mettre à niveau les abonnements pour le moment car cet abonnement n’est pas entièrement configuré ou le service n’est pas disponible.
 
-Par exemple, si l’un des services rencontre un incident, vous ne pourrez pas effectuer la mise à niveau tant que tous les services ne seront pas sains. Pour voir s’il existe des problèmes liés à l’intégrité des services ou de l’approvisionnement, dans le centre d’administration, accédez à la page <a href="https://go.microsoft.com/fwlink/p/?linkid=842900" target="_blank">État du service</a> d' **intégrité** \> .
+Par exemple, si l’un des services rencontre un incident, vous ne pourrez pas effectuer la mise à niveau tant que tous les services ne seront pas sains. Pour voir s’il existe des problèmes liés à l’intégrité des services ou de l’approvisionnement, dans le centre **Health** d’administration, accédez à la \> page <a href="https://go.microsoft.com/fwlink/p/?linkid=842900" target="_blank">État du service</a> d’intégrité.
 
 Si vous découvrez qu'un service n'est pas entièrement configuré ou si vous rencontrez un problème d'état du service, attendez quelques heures que votre service redevienne disponible et réessayez. Si le problème persiste, appelez le [support technique](../../admin/contact-support-for-business-products.md).
 
@@ -133,7 +134,7 @@ Vous ne verrez peut-être aucun plan sous l’onglet **mise à niveau** , car le
 
 #### <a name="the-plan-that-you-want-to-upgrade-to-isnt-a-supported-option"></a>L’offre sur laquelle vous souhaitez effectuer la mise à niveau n’est pas prise en charge.
 
-Lorsque vous mettez à niveau les plans, les plans disponibles pour la mise à niveau sont affichés en fonction des services de votre forfait actuel. Vous pouvez uniquement effectuer une mise à niveau vers un plan qui a les mêmes services liés aux données, comme Exchange Online ou SharePoint Online, ou vers une version ultérieure. Cela garantit que les utilisateurs\'ne perdent pas les données liées à ces services pendant la mise à niveau.
+Lorsque vous mettez à niveau les plans, les plans disponibles pour la mise à niveau sont affichés en fonction des services de votre forfait actuel. Vous pouvez uniquement effectuer une mise à niveau vers un plan qui a les mêmes services liés aux données, comme Exchange Online ou SharePoint Online, ou vers une version ultérieure. Cela garantit que les utilisateurs ne perdent pas les \' données liées à ces services pendant la mise à niveau.
 
 Si votre plan ne peut pas être mis à niveau automatiquement, vous pouvez [modifier les plans manuellement](change-plans-manually.md). Vous pouvez également [appeler le support](../../admin/contact-support-for-business-products.md) pour obtenir de l’aide.
 

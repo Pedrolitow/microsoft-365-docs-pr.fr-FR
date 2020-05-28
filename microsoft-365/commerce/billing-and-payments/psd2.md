@@ -11,17 +11,17 @@ ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
 - commerce
-ms.custom: ''
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 description: À partir du 14 septembre 2019, les banques des 31 pays de l’espace économique européen sont tenues de vérifier l’identité de la personne qui effectue un achat en ligne avant que le paiement ne puisse être traité.
 keywords: services de paiement directive 2, authentification client renforcée, authentification multifacteur
-ms.openlocfilehash: 53de6ce3158760299a3ed2a7bc840919babf20bd
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 571664736ac4c6e825398a076597bf4b69ec31a8
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42080391"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44402213"
 ---
 # <a name="payment-services-directive-2-and-strong-customer-authentication-for-commercial-customers"></a>Services de paiement directive 2 et authentification client forte pour les clients commerciaux
 

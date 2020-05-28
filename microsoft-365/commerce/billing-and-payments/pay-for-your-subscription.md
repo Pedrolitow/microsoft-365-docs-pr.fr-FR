@@ -24,12 +24,13 @@ description: Découvrez les options de paiement disponibles pour le paiement de 
 ms.custom:
 - okr_SMB
 - fwlink 808700 for SEPA UI glink 906 for older uI
-ms.openlocfilehash: a1ee158079e30348c3b1f9f26ef0b62160bf9544
-ms.sourcegitcommit: cf7c410268175e2633e9f0d65dc859c5034658e5
+- AdminSurgePortfolio
+ms.openlocfilehash: 387cc4af038bea572a60176b2c2b400f410aa6ad
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "44232874"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44401761"
 ---
 # <a name="pay-for-your-subscription"></a>Régler votre abonnement
 

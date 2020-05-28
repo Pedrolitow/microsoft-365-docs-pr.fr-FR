@@ -18,17 +18,18 @@ ms.custom:
 - MSB365
 - OKR_SMB_M365
 - seo-marvel-mar
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: 80bdae57-f8bc-4e40-a58c-956007117ecb
 description: Découvrez comment utiliser Microsoft 365 pour les entreprises afin de supprimer les données de la société dont disposent vos utilisateurs sur leurs appareils ou PC Windows.
-ms.openlocfilehash: 80997a48bb3924ab20f16a454120d24caf76e1e7
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 42784149fcf6b850e7d0483c17dd605e7ecb7cf0
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634845"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44402783"
 ---
 # <a name="remove-company-data-from-devices"></a>Supprimer des données d'entreprise sur des appareils
 
@@ -40,7 +41,7 @@ Vous pouvez utiliser Microsoft 365 pour les entreprises afin de supprimer les do
   
 1. Accédez au Centre d’administration à l’adresse <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>.
     
-2. Dans le volet de navigation de gauche, choisissez **gestion**des **appareils** \> .  
+2. Dans le volet de navigation de gauche, choisissez gestion des **appareils** \> **Manage**.  
   
 3. Sur la page **gérer** , choisissez ou recherchez un utilisateur dont vous souhaitez supprimer les données, puis choisissez son nom. 
     
@@ -48,7 +49,7 @@ Vous pouvez utiliser Microsoft 365 pour les entreprises afin de supprimer les do
     
     ![Dans le volet supprimer les données de l’entreprise, sélectionnez l’appareil à partir duquel vous souhaitez supprimer les données.](../media/resetorremove.png)
   
-5. Dans le volet confirmation, sélectionnez **confirmer** \> la **fermeture**.
+5. Dans le volet confirmation, sélectionnez **confirmer** la \> **fermeture**.
     
 
 

@@ -18,6 +18,7 @@ ms.custom:
 - TopSMBIssues
 - MSStore_Link
 - okr_SMB
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -26,12 +27,12 @@ search.appverid:
 - GEA150
 ms.assetid: 8652f539-3123-4a8f-b9bd-6aa2f0e0372d
 description: Découvrez comment modifier le mode de paiement pour votre abonnement professionnel.
-ms.openlocfilehash: 195bdcd580663fe2cb9789562a52208753500a79
-ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
+ms.openlocfilehash: babc8911305fe009ad3b9dc49163a0525c6d0666
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44045903"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44401809"
 ---
 # <a name="change-your-payment-method"></a>Changer votre mode de paiement
 
@@ -113,7 +114,7 @@ Lorsque vous passez d’un paiement par facture à un paiement avec un carte ban
   
 Lorsque vous passez du paiement par facture au paiement par carte bancaire ou compte bancaire, nous créons automatiquement un abonnement pour vous, déplaçons vos utilisateurs vers le nouvel abonnement, puis désactivons l'ancien abonnement. Ne vous inquiétez pas, vos utilisateurs ne sont pas affectés par une quelconque interruption de service et toutes leurs informations sont disponibles dans le nouvel abonnement.
 
-1. Dans le centre d’administration, accédez à la page <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">abonnements</a> de **facturation** \> .
+1. Dans le centre d’administration, accédez à **Billing** la \> page <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">abonnements</a> de facturation.
 
 2. Recherchez l’abonnement que vous souhaitez modifier. Dans la section **Détails du paiement** , sélectionnez Modifier les **Détails**du paiement.
   
@@ -177,7 +178,7 @@ Si aucune vérification de solvabilité n’est requise, procédez comme suit po
 > [!NOTE]
 > L’option de paiement par facture n’est disponible que si votre abonnement coûte sur un certain montant (ce qui varie en fonction de l’emplacement du service). Une vérification de solvabilité sera peut-être requise pour les paiements par facture d'un montant élevé. Pour en savoir plus, consultez [la rubrique paiement de votre abonnement](pay-for-your-subscription.md).
 
-1. Dans le centre d’administration, accédez à la page <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">abonnements</a> de **facturation** \> .
+1. Dans le centre d’administration, accédez à **Billing** la \> page <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">abonnements</a> de facturation.
 
 2. Recherchez l’abonnement que vous souhaitez modifier. Dans la section **mode de paiement** , sélectionnez Modifier les détails du **paiement**.
   
@@ -204,7 +205,7 @@ Procédez comme suit pour vérifier le mode de paiement associé à un abonnemen
 
 ### <a name="use-the-old-admin-center-to-verify-which-payment-method-is-configured"></a>Utiliser l’ancien centre d’administration pour vérifier la configuration du mode de paiement
 
-1. Dans le centre d’administration, accédez à la page <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">abonnements</a> de **facturation** \> .
+1. Dans le centre d’administration, accédez à **Billing** la \> page <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">abonnements</a> de facturation.
 
 2. Recherchez l’abonnement que vous souhaitez vérifier. Le mode de paiement configuré pour l’abonnement s’affiche sous **mode de paiement**.
 
@@ -216,7 +217,7 @@ Procédez comme suit pour vérifier le mode de paiement associé à un abonnemen
 
 Procédez comme suit pour vérifier le mode de paiement associé à un abonnement.
 
-1. Dans le centre d’administration, accédez à la page <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">abonnements</a> de **facturation** \> .
+1. Dans le centre d’administration, accédez à **Billing** la \> page <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">abonnements</a> de facturation.
 
 2. Recherchez l’abonnement que vous souhaitez vérifier. Le mode de paiement configuré pour l’abonnement s’affiche sous **mode de paiement**.
 

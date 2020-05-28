@@ -9,19 +9,17 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: None
-search.appverid:
-- MET150
 ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
 - commerce
-ms.custom: ''
+ms.custom: AdminSurgePortfolio
 description: En savoir plus sur la nouvelle fonctionnalité unités.
-ms.openlocfilehash: e6fe91ee2c0e2de58b54e40eddba6d3066999e6d
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.openlocfilehash: c8c472fbf30bb898f9a10eca778ee7c668c8c388
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43942174"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44402413"
 ---
 # <a name="allotment-basics"></a>Notions de base sur les unités
 
@@ -51,4 +49,4 @@ Vous devez être un administrateur général ou un administrateur de licence pou
 
 ## <a name="getting-started"></a>Prise en main
 
-La fonctionnalité unités est disponible dans une préversion privée pour un petit nombre de clients. Si vous êtes intéressé par la jointure, remplissez ce formulaire : [https://aka.ms/allotment-pilot-signup](https://aka.ms/allotment-pilot-signup).
+La fonctionnalité unités est disponible dans une préversion privée pour un petit nombre de clients. Si vous êtes intéressé par la jointure, remplissez ce formulaire : [https://aka.ms/allotment-pilot-signup](https://aka.ms/allotment-pilot-signup) .

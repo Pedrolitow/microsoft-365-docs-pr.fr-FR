@@ -14,6 +14,7 @@ ms.collection:
 - Adm_O365
 - Adm_NonTOC
 - commerce
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -23,12 +24,12 @@ search.appverid:
 ms.assetid: e81e09d2-cd52-4212-8550-5405864b6d62
 ROBOTS: NOINDEX
 description: Comprenez les raisons pour lesquelles il est parfois nécessaire de changer de plan manuellement ou d’appeler le support technique.
-ms.openlocfilehash: 8b6c4069f2c7f0cfd86981c1001a7211aa298ff7
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.openlocfilehash: 9f48ed56f230802ebd305d9b79e8ad694fadcc4c
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43943142"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44403149"
 ---
 # <a name="why-cant-i-switch-microsoft-365-for-business-plans"></a>Pourquoi ne puis-je pas changer de plan Microsoft 365 pour les entreprises ?
 
@@ -41,18 +42,18 @@ Si le bouton **changer** de plan n’apparaît pas, votre offre ne peut pas êtr
   
 ::: moniker range="o365-worldwide"
 
- **Vous avez besoin d'autres informations ?** [Acheter un autre abonnement](../buy-another-subscription.md) | [annuler les](cancel-your-subscription.md) | [abonnements](../index.yml) | aux abonnements et la[prise en charge des appels](../../admin/contact-support-for-business-products.md) de facturation
+ **Vous avez besoin d'autres informations ?** [Acheter un autre abonnement](../buy-another-subscription.md)  |  [Annuler votre abonnement](cancel-your-subscription.md)  |  [Abonnements et facturation](../index.yml)  |  [Prise en charge des appels](../../admin/contact-support-for-business-products.md)
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
- **Vous avez besoin d'autres informations ?** [Acheter un autre abonnement](../buy-another-subscription.md) | [annuler les](cancel-your-subscription.md) | [abonnements](../index.yml) | aux abonnements et la[prise en charge des appels](../../admin/contact-support-for-business-products.md) de facturation
+ **Vous avez besoin d'autres informations ?** [Acheter un autre abonnement](../buy-another-subscription.md)  |  [Annuler votre abonnement](cancel-your-subscription.md)  |  [Abonnements et facturation](../index.yml)  |  [Prise en charge des appels](../../admin/contact-support-for-business-products.md)
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
- **Vous avez besoin d'autres informations ?** [Acheter ou essayer des abonnements pour Office 365 géré par 21ViaNet](../../admin/services-in-china/buy-or-try-subscriptions.md) | [annuler votre](cancel-your-subscription.md) | [appel](../../admin/contact-support-for-business-products.md) d’abonnement
+ **Vous avez besoin d'autres informations ?** [Acheter ou essayer des abonnements pour Office 365 géré par 21ViaNet](../../admin/services-in-china/buy-or-try-subscriptions.md)  |  [Annuler votre abonnement](cancel-your-subscription.md)  |  [Prise en charge des appels](../../admin/contact-support-for-business-products.md)
 
 ::: moniker-end
 
@@ -83,19 +84,19 @@ Pour changer d'offre automatiquement à l'aide du bouton **Changer de plan**, de
 
 ::: moniker range="o365-worldwide"
 
-Pour voir s’il existe des problèmes liés à l’intégrité des services ou de l’approvisionnement, dans le centre d’administration, accédez à la page <a href="https://go.microsoft.com/fwlink/p/?linkid=842900" target="_blank">État du service</a> ou sélectionnez intégrité du **service**d' **intégrité** \> .
+Pour voir s’il existe des problèmes liés à l’intégrité des services ou de l’approvisionnement, dans le centre d’administration, accédez à la page <a href="https://go.microsoft.com/fwlink/p/?linkid=842900" target="_blank">État du service</a> ou sélectionnez intégrité du service d' **intégrité** \> **Service health**.
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-Pour voir s’il existe des problèmes liés à l’intégrité des services ou de l’approvisionnement, dans le centre d’administration 365 de Microsoft, accédez à la page <a href="https://go.microsoft.com/fwlink/p/?linkid=848042" target="_blank">État du service</a> ou sélectionnez intégrité du **service**d' **intégrité** \> .
+Pour voir s’il existe des problèmes liés à l’intégrité des services ou de l’approvisionnement, dans le centre d’administration 365 de Microsoft, accédez à la page <a href="https://go.microsoft.com/fwlink/p/?linkid=848042" target="_blank">État du service</a> ou sélectionnez intégrité du service d' **intégrité** \> **Service health**.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-Pour voir s’il existe des problèmes liés à l’intégrité des services ou de l’approvisionnement, dans le centre d’administration 365 de Microsoft, accédez à la page <a href="https://go.microsoft.com/fwlink/p/?linkid=850629" target="_blank">État du service</a> ou sélectionnez intégrité du **service**d' **intégrité** \> .
+Pour voir s’il existe des problèmes liés à l’intégrité des services ou de l’approvisionnement, dans le centre d’administration 365 de Microsoft, accédez à la page <a href="https://go.microsoft.com/fwlink/p/?linkid=850629" target="_blank">État du service</a> ou sélectionnez intégrité du service d' **intégrité** \> **Service health**.
 
 ::: moniker-end
 

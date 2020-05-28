@@ -21,20 +21,22 @@ search.appverid:
 - BEA160
 ms.assetid: fab3b86c-3359-4042-8692-5d4dc7550b7c
 description: 'Découvrez comment acheter un autre abonnement Microsoft 365 pour entreprise pour votre organisation lorsque vous disposez déjà d’un abonnement. '
-ms.custom: okr_SMB
-ms.openlocfilehash: 63dc9554d1783f81615e52a83ad338368d482e93
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.custom:
+- okr_SMB
+- AdminSurgePortfolio
+ms.openlocfilehash: ebadf9a019829080c145eec2f3f5d612473e91b3
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44141301"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44402201"
 ---
 # <a name="buy-another-microsoft-365-for-business-subscription"></a>Acheter un autre abonnement Microsoft 365 pour les entreprises
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> Le centre d’administration change. Si votre expérience ne correspond pas aux détails présentés ici, reportez-vous [à la rubrique à propos du nouveau centre d’administration Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> Le centre d’administration change. Si votre expérience ne correspond pas aux informations présentées ici, voir [À propos du nouveau centre d’administration Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
 
 ::: moniker-end
 

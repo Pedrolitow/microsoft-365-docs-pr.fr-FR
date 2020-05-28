@@ -11,23 +11,23 @@ ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
 - commerce
-ms.custom: ''
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 description: Découvrez comment fermer votre compte auprès de Microsoft.
-ms.openlocfilehash: e41d11502b0c0f738cc23405c387bd5fca1cb0fe
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: f399a1ba4d67abf5982c111e9b915f02324150a5
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44141277"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44402177"
 ---
 # <a name="close-your-account"></a>Fermer votre compte
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> Le centre d’administration change. Si votre expérience ne correspond pas aux détails présentés ici, reportez-vous [à la rubrique à propos du nouveau centre d’administration Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> Le centre d’administration change. Si votre expérience ne correspond pas aux informations présentées ici, voir [À propos du nouveau centre d’administration Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
 
 ::: moniker-end
 
@@ -47,7 +47,7 @@ Si votre organisation utilise Active Directory qui se synchronise avec Azure AD,
 
 ## <a name="step-2-cancel-all-active-subscriptions"></a>Étape 2 : annuler tous les abonnements actifs
 
-1. Dans le centre d’administration, accédez à la page **facturation** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">de vos produits</a> .
+1. Dans le centre d’administration, accédez à la page **facturation**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">de vos produits</a> .
 
 2. Si la liste abonnements est affichée en mode **table** , cliquez sur la droite sur **cartes**.
 
@@ -59,7 +59,7 @@ Si votre organisation utilise Active Directory qui se synchronise avec Azure AD,
 
 ## <a name="step-3-delete-all-disabled-subscriptions"></a>Étape 3 : supprimer tous les abonnements désactivés
 
-1. Dans le centre d’administration, accédez à la page **facturation** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">de vos produits</a> .
+1. Dans le centre d’administration, accédez à la page **facturation**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">de vos produits</a> .
 
 2. Si la liste abonnements est affichée en mode **table** , cliquez sur la droite sur **cartes**.
 
@@ -73,7 +73,7 @@ Si votre organisation utilise Active Directory qui se synchronise avec Azure AD,
 
 ## <a name="step-4-disable-multi-factor-authentication"></a>Étape 4 : désactivation de l’authentification multifacteur
 
-1. Dans le centre d’administration, accédez à **la** > page utilisateurs<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">actifs</a> .
+1. Dans le centre d’administration, accédez à **la page utilisateurs**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">actifs</a> .
 
 2. Choisissez **l’authentification multifacteur**.
 

@@ -17,6 +17,7 @@ ms.collection:
 ms.custom:
 - TopSMBIssues
 - fwlink 874703
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -25,19 +26,19 @@ search.appverid:
 - GEA150
 ms.assetid: 23aa9dd5-a2b0-42f5-8893-9541d2f3761f
 description: Découvrez comment réactiver votre abonnement lorsqu’il arrive à expiration, ou si Microsoft le désactive, ou si vous l’annulez au milieu.
-ms.openlocfilehash: d75ebb3b09ec8b72c60e829406c1341939a4e534
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: 922646dc02cbe8ed2072920a92c5c818d9f682a9
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44141097"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44403233"
 ---
 # <a name="reactivate-your-subscription"></a>Réactiver votre abonnement
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> Le centre d’administration change. Si votre expérience ne correspond pas aux détails présentés ici, reportez-vous [à la rubrique à propos du nouveau centre d’administration Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> Le centre d’administration change. Si votre expérience ne correspond pas aux informations présentées ici, voir [À propos du nouveau centre d’administration Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
 
 ::: moniker-end
 
@@ -47,7 +48,7 @@ Si votre abonnement expire ou a été désactivé par Microsoft, ou si vous l’
 
 ::: moniker range="o365-worldwide"
 
-1. Dans le centre d’administration, accédez à la page **facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">de vos produits</a> .
+1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produits</a>.
 
 2. Sur la page **vos produits** , recherchez l’abonnement que vous souhaitez réactiver. Dans la section **facturation** , sélectionnez **réactiver**.
   

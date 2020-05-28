@@ -17,16 +17,17 @@ ms.custom:
 - MiniMaven
 - MSB365
 - OKR_SMB_M365
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 description: Découvrez comment déplacer votre entreprise vers Microsoft 365 Business Premium à partir d’Office 365 E3.
-ms.openlocfilehash: 0d23e293d599f5b9d6c829d101f2395d6ac21215
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 23d024ed7f18fe6a5f5dc9b59e3ad20069dc3e6a
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43633186"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44402237"
 ---
 # <a name="migrating-from-office-365-e3-to-microsoft-365-business-premium"></a>Migration à partir d’Office 365 E3 vers Microsoft 365 Business Premium 
 
@@ -40,8 +41,8 @@ Ce tableau présente les différences entre Microsoft 365 Business Premium et Of
 
 | Fonctionnalité    | Prise en charge dans Microsoft 365 Business Premium    | Prise en charge dans Office 365 E3 | 
 |:-------|:-----|:-----|
-| **En local**        | | | 
-| Applications Office<sup>1</sup>    | Microsoft 365 apps pour les entreprises    | Applications Microsoft 365 pour les entreprises | 
+| **Sur site**        | | | 
+| Applications Office<sup>1</sup>    | Applications Microsoft 365 pour les entreprises    | Microsoft 365 Apps for enterprise | 
 | **Applications de productivité sur le Cloud**        | | | 
 | Exchange Online et Outlook    | limite de stockage de 50 Go par boîte aux lettres et archivage Exchange Online illimité    | limite de stockage de 100 Go par boîte aux lettres et archivage Exchange Online illimité | 
 | Équipes    | ![Inclus avec Microsoft 365 Business Premium](../media/check-mark.png)    | ![Inclus dans Office 365 E3](../media/check-mark.png) | 
@@ -93,7 +94,7 @@ Si vous avez mis à niveau tous les membres de votre organisation vers Microsoft
 
 Vous pouvez également effectuer ces étapes dans la page périphériques :
   
-1. Dans le centre d’administration, dans le volet de navigation de gauche, accédez à **stratégies**de **périphériques** \> .
+1. Dans le centre d’administration, dans le volet de navigation de gauche, accédez à stratégies de **périphériques** \> **Policies**.
     
 2. Sur la page **stratégies d’appareil** , sélectionnez **Ajouter**.
     

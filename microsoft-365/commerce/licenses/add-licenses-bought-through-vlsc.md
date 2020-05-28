@@ -14,6 +14,7 @@ ms.collection:
 - Adm_O365
 - commerce
 - Adm_NonTOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -22,12 +23,12 @@ search.appverid:
 ms.assetid: 82ba88fa-ebdf-4d44-a7b3-cea82b25d71a
 ROBOTS: NOINDEX
 description: Découvrez comment ajouter des licences à votre abonnement Microsoft 365 acheté auprès du partenaire tiers, reconnu par Microsoft.
-ms.openlocfilehash: 9e463e53d51e7fc0a3828cc6163296084995f9c9
-ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
+ms.openlocfilehash: a1761f01383e2321ca86c91bf0b998b697c566e3
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44045751"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44402129"
 ---
 # <a name="add-licenses-to-a-subscription-purchased-through-the-volume-licensing-service-center"></a>Ajouter des licences à un abonnement acheté auprès du Centre de gestion des licences en volume
 
@@ -35,7 +36,7 @@ Si vous avez acheté votre offre Microsoft 365 entreprise ou Office 365 Enterpri
 
 ::: moniker range="o365-worldwide"
   
-1. Dans le centre d’administration, accédez à la page **facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">de vos produits</a> .
+1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produits</a>.
 
 2. Sélectionnez l’abonnement auquel vous souhaitez ajouter des licences, puis sélectionnez le lien Centre de gestion des **licences en volume (VLSC)** .
 

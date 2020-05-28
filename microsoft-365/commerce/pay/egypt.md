@@ -9,15 +9,16 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Commerce_Pay
+ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Découvrez où envoyer le paiement pour votre abonnement.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: c2fd4b6b2e59e23edea2ef507d9123724b1aec5a
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 68e8a0d3847f78c8ae3675dd2920f648db697d98
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42253390"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44402473"
 ---
 # <a name="payment-information-for-egypt"></a>Informations de paiement pour l’Égypte
 

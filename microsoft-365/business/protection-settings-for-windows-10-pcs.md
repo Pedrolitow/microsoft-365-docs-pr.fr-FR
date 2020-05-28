@@ -17,17 +17,18 @@ ms.custom:
 - MiniMaven
 - MSB365
 - OKR_SMB_M365
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: bd66c26c-73a4-45a8-8642-3ea4ee7cd89d
 description: Découvrez les paramètres par défaut et d’autres paramètres disponibles dans Microsoft 365 pour les entreprises afin de sécuriser les appareils Windows 10.
-ms.openlocfilehash: 9096fb6a8fc790d9a9432578cfd8623f9cb69c7a
-ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
+ms.openlocfilehash: 0403ea2c30221dd5693b7f3e9b4921ad175399a1
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "44011564"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44402803"
 ---
 # <a name="set-device-protection-settings-for-windows-10-pcs"></a>Définir les paramètres de protection des appareils pour les PC Windows 10
 
@@ -39,7 +40,7 @@ Regardez une vidéo sur la sécurisation des appareils Windows 10 avec Microsoft
   
 1. Accédez au Centre d’administration à l’adresse <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>. 
     
-2. Dans le volet de navigation de gauche, choisissez **Ajout**de **stratégies** \> de **périphériques** \> .
+2. Dans le volet de navigation de gauche, choisissez ajout de stratégies de **périphériques** \> **Policies** \> **Add**.
   
 3. Dans le volet **Ajouter une stratégie**, entrez un nom unique pour cette stratégie. 
     

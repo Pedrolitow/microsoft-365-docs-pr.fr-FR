@@ -17,22 +17,23 @@ ms.collection:
 ms.custom:
 - TopSMBIssues
 - okr_SMB
+- AdminSurgePortfolio
 search.appverid:
 - MET150
 description: Découvrez comment modifier la fréquence de facturation de votre abonnement professionnel.
-ms.openlocfilehash: ce659f03ee94a47728a097e73749c2a0a01c962b
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: 321bf660caf53a39a85ad45b20bd7ed2267c8748
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44140934"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44402653"
 ---
 # <a name="change-your-payment-frequency"></a>Modifier la fréquence de paiement
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> Le centre d’administration change. Si votre expérience ne correspond pas aux détails présentés ici, reportez-vous [à la rubrique à propos du nouveau centre d’administration Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> Le centre d’administration change. Si votre expérience ne correspond pas aux informations présentées ici, voir [À propos du nouveau centre d’administration Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
 
 ::: moniker-end
 

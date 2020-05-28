@@ -13,24 +13,24 @@ ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
 - commerce
-ms.custom: ''
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 description: Découvrez comment les profils de facturation prennent en charge les factures.
 keywords: Profil de facturation, factures, frais, charges gérées
-ms.openlocfilehash: f93ca5af11ba416fecd13fcceffe75055a776553
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: 64f0f6bf456b1251a2db49aa9c2f7473cb7c885b
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44140889"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44401773"
 ---
 # <a name="manage-billing-profiles"></a>Gérer les profils de facturation
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> Le centre d’administration change. Si votre expérience ne correspond pas aux détails présentés ici, reportez-vous [à la rubrique à propos du nouveau centre d’administration Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> Le centre d’administration change. Si votre expérience ne correspond pas aux informations présentées ici, voir [À propos du nouveau centre d’administration Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
 
 ::: moniker-end
 
@@ -38,11 +38,11 @@ Pour les clients commerciaux qui achètent des produits et des services auprès 
 
 Les profils de facturation incluent les informations suivantes :
 
-- Nom du **compte** &ndash; de facturation du compte de facturation auquel le profil est lié
-- **Modes** &ndash; de paiement cartes de crédit ou de débit, comptes bancaires, chèques ou virement bancaire
-- **Informations** &ndash; de contact adresse de facturation et nom de contact
-- Devise des **paramètres** &ndash; de facturation basée sur le pays du compte de facturation, un numéro de bon de commande facultatif et la possibilité de recevoir des factures en pièces jointes de courrier électronique
-- Autorisations des **autorisations** &ndash; qui vous permettent de modifier le profil de facturation, de payer des factures ou d’utiliser le mode de paiement sur le profil de facturation pour effectuer des achats
+- **Compte** &ndash; de facturation Nom du compte de facturation auquel le profil est lié
+- **Modes** &ndash; de paiement Cartes de crédit ou de débit, comptes bancaires, chèques ou virement bancaire
+- **Informations** &ndash; de contact Adresse de facturation et nom de contact
+- **Paramètres** &ndash; de facturation Devise basée sur le pays du compte de facturation, un numéro de bon de commande facultatif et la possibilité de recevoir des factures en pièces jointes de courrier électronique
+- **Autorisations** &ndash; Autorisations qui vous permettent de modifier le profil de facturation, de payer des factures ou d’utiliser le mode de paiement sur le profil de facturation pour effectuer des achats
 
 Utilisez les profils de facturation pour contrôler vos achats et personnaliser votre facture. Une facture mensuelle est générée pour les produits achetés avec le profil de facturation. Vous pouvez personnaliser la facture telle que mettre à jour les numéros de bon de commande et de facture par e-mail.
 

@@ -14,6 +14,7 @@ ms.collection:
 - Adm_O365
 - Adm_NonTOC
 - commerce
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -22,12 +23,12 @@ search.appverid:
 ms.assetid: eb0d0680-5677-41a0-8c46-4b9d47f1c209
 ROBOTS: NOINDEX
 description: Changez manuellement les abonnements Microsoft 365 pour les entreprises en achetant un nouvel abonnement et en vous assurant que les abonnements sont répertoriés et actifs.
-ms.openlocfilehash: f06e6a5f441286cbe048187eea39889772bb4e75
-ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
+ms.openlocfilehash: 6d6f28dc45f1d5c8efc7202f1be718f8517cf12f
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43707510"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44403197"
 ---
 # <a name="switch-microsoft-365-for-business-plans-manually"></a>Changer manuellement les offres Microsoft 365 pour les entreprises
 
@@ -110,19 +111,19 @@ Les licences pour l’abonnement actuel seront supprimées ultérieurement ; vo
 
 ::: moniker range="o365-worldwide"
 
-1. Dans le Centre d’administration, accédez à la page **Utilisateurs >** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utilisateurs actifs</a>.
+1. Dans le Centre d’administration, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utilisateurs actifs</a>.
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. Dans le Centre d’administration, accédez à la page **Utilisateurs >** > <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Utilisateurs actifs</a>.
+1. Dans le Centre d’administration, accédez à la page **Utilisateurs** > <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Utilisateurs actifs</a>.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. Dans le Centre d’administration, accédez à la page **Utilisateurs >** > <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Utilisateurs actifs</a>.
+1. Dans le Centre d’administration, accédez à la page **Utilisateurs** > <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Utilisateurs actifs</a>.
 
 ::: moniker-end
 
@@ -143,19 +144,19 @@ Les licences pour l’abonnement actuel seront supprimées ultérieurement ; vo
 
 ::: moniker range="o365-worldwide"
 
-1. Dans le centre d’administration, accédez à **la** \> page utilisateurs <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">actifs</a> .
+1. Dans le centre d’administration, accédez à **la page utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">actifs</a> .
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. Dans le Centre d’administration, accédez à la page **Utilisateurs >** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Utilisateurs actifs</a>.
+1. Dans le Centre d’administration, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Utilisateurs actifs</a>.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. Dans le Centre d’administration, accédez à la page **Utilisateurs >** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Utilisateurs actifs</a>.
+1. Dans le Centre d’administration, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Utilisateurs actifs</a>.
 
 ::: moniker-end
 

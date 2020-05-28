@@ -11,16 +11,18 @@ ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
 - commerce
+ms.custom:
+- AdminSurgePortfolio
+- aka.ms/self-service-purchase-faq
 search.appverid:
 - MET150
 description: Trouvez des réponses aux questions fréquemment posées sur les achats en libre-service.
-ms.custom: aka.ms/self-service-purchase-faq
-ms.openlocfilehash: c7f91b8067aac5baa3c792dac10c1fdadae55fa2
-ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
+ms.openlocfilehash: cc0a059c745c64c9c196deccf771fffa30a5fe63
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44046155"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44403209"
 ---
 # <a name="self-service-purchase-faq"></a>FAQ sur les achats en libre-service
 
@@ -119,7 +121,7 @@ Les administrateurs peuvent attribuer des licences existantes ou acheter des abo
 
 ### <a name="where-does-the-admin-see-self-service-purchases"></a>Où l’administrateur voit-il les achats en libre service ?
 
-Les administrateurs globaux et de facturation peuvent consulter les abonnements achetés par le biais de l’achat en libre-service dans **facturation** > de**vos produits** dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centre d’administration 365 de Microsoft</a> , ainsi que tous les autres abonnements achetés via le service d’approvisionnement central. Ils peuvent filtrer la liste sur les abonnements achetés par le biais de l’approvisionnement central ou inclure les abonnements achetés via un achat en libre-service.
+Les administrateurs globaux et de facturation peuvent consulter les abonnements achetés par le biais de l’achat en libre-service dans **facturation**de  >  **vos produits** dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centre d’administration 365 de Microsoft</a> , ainsi que tous les autres abonnements achetés via le service d’approvisionnement central. Ils peuvent filtrer la liste sur les abonnements achetés par le biais de l’approvisionnement central ou inclure les abonnements achetés via un achat en libre-service.
 
 Les administrateurs peuvent voir le produit, le nom de l’acheteur, l’abonnement acheté, la date d’expiration, l’historique des commandes, le prix d’achat et les utilisateurs affectés.
 

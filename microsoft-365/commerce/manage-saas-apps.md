@@ -11,14 +11,15 @@ ms.service: o365-administration
 ms.localizationpriority: Normal
 ms.collection:
 - commerce
+ms.custom: AdminSurgePortfolio
 search.appverid: MET150
 description: Découvrez comment activer et gérer des applications tierces dans le centre d’administration Microsoft 365.
-ms.openlocfilehash: 3e6d77eec71ca1137e0aaf44b62d198d9c87b0c5
-ms.sourcegitcommit: cf7c410268175e2633e9f0d65dc859c5034658e5
+ms.openlocfilehash: ed1a88345ae5cc135a43f4297ce518b444eaabe7
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "44232744"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44402581"
 ---
 # <a name="manage-third-party-app-subscriptions-for-your-organization"></a>Gérer les abonnements aux applications tierces pour votre organisation
 
@@ -101,7 +102,7 @@ Les administrateurs peuvent modifier le nombre de licences appartenant à leur o
 2. Recherchez et sélectionnez l’application que vous souhaitez gérer.
 3. Sélectionnez **modifier la quantité des licences**.
 
-## <a name="manage-payment-methods"></a>Créer des méthodes de paiement
+## <a name="manage-payment-methods"></a>Gestion des modes de paiement
 
 Les applications logicielles en tant que service ont chacune un profil de facturation affecté. Les profils de facturation vous permettent de personnaliser les produits inclus dans votre facture, ainsi que le mode de paiement de vos factures. Ces parties prenantes sont les suivantes :
 

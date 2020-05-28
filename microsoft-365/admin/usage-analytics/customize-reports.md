@@ -13,25 +13,26 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 9b76065f-29b9-4b89-8059-c5f9db9ddbf6
 description: Découvrez comment personnaliser des rapports dans le navigateur et Power BI Desktop.
-ms.openlocfilehash: 4f0c85802ecb5db9c57add2fa6dd561827e8fa22
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: 121a9be4a83570b7fcf358c48bf558d3bc7c1131
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44140708"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44402929"
 ---
 # <a name="customize-the-reports-in-microsoft-365-usage-analytics"></a>Personnaliser les rapports dans l’analyse de l’utilisation de Microsoft 365
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> Le centre d’administration change. Si votre expérience ne correspond pas aux détails présentés ici, reportez-vous [à la rubrique à propos du nouveau centre d’administration Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> Le centre d’administration change. Si votre expérience ne correspond pas aux informations présentées ici, voir [À propos du nouveau centre d’administration Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
 
 ::: moniker-end
 
@@ -49,7 +50,7 @@ Cet exemple montre comment modifier l’onglet **activation** dans le rapport d'
   
 1. Dans le rapport **activation/** gestion des licences, cliquez sur l’onglet **activation** .
     
-2. Entrez le mode d’édition en cliquant sur le bouton **modifier** dans la partie ![supérieure via le bouton autres pages du](../../media/d8da3c19-3f2d-4bf6-811e-faa804f74770.png) bouton Power bi. 
+2. Entrez le mode d’édition en cliquant sur le bouton **modifier** dans la partie supérieure via le bouton ![ autres pages du ](../../media/d8da3c19-3f2d-4bf6-811e-faa804f74770.png) bouton Power bi. 
     
     ![Click Edit report on the top right navigation](../../media/e2c16663-1fbd-4d7f-887c-0cbb891d3b3d.png)
   
@@ -69,7 +70,7 @@ L'exemple suivant montre comment créer un élément visuel pour assurer le suiv
   
 1. Accédez au rapport d' **utilisation du produit** à l’aide du point de navigation gauche, puis cliquez sur l’onglet **Yammer** .
     
-2. Passez en mode édition en cliquant sur ![le bouton autres pages de Power bi](../../media/d8da3c19-3f2d-4bf6-811e-faa804f74770.png) et **Modifiez**. 
+2. Passez en mode édition en cliquant sur ![ le bouton autres pages de Power bi ](../../media/d8da3c19-3f2d-4bf6-811e-faa804f74770.png) et **Modifiez**. 
     
 3. Au bas de la page, cliquez sur ![Bouton Ajouter une page dans Power BI](../../media/d3b8c117-17d4-4f53-b078-8fefc2155b24.png) pour créer une page.
   
@@ -95,7 +96,7 @@ L'exemple suivant montre comment créer un élément visuel pour assurer le suiv
 
     ![Case à cocher Sélectionner Yammer](../../media/82e99730-0de9-42da-928a-76aab0c3e609.png)
   
-12. Juste en dessous de la liste des visualisations, cliquez **sur l’icône format de** l' ![icône](../../media/ee0602f3-3df5-4930-b862-db1d90ae4ae2.png)dans Power bi Visualizaions.
+12. Juste en dessous de la liste des visualisations, cliquez **sur l'** icône format de l’icône ![ dans Power bi Visualizaions ](../../media/ee0602f3-3df5-4930-b862-db1d90ae4ae2.png) .
 
 13. Développez Titre et remplacez la valeur **Texte du titre** par **Nouveaux utilisateurs de Yammer par mois**.
     
@@ -115,7 +116,7 @@ Vous pouvez commencer par vous connecter directement aux API de création de rap
   
 1. Accédez à **Obtenir des données** \> **Autres** \> **Flux ODATA** \> **Connexion**.
     
-2. Dans la fenêtre URL, entrez «<i></i>https://\<Reports.Office.com/PBI/v1.0/\>tenantid ».
+2. Dans la fenêtre URL, entrez « https:// <i></i> reports.Office.com/PBI/v1.0/ \<tenantid\> ».
     
     **Remarque :** Les API de création de rapports sont en aperçu et sont susceptibles d’être modifiées jusqu’à ce qu’elles soient en production. 
   

@@ -13,17 +13,17 @@ ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
 - commerce
-ms.custom: ''
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 description: Découvrez comment lire et comprendre votre facture pour les produits Microsoft Business.
 keywords: comptes de facturation, informations sur l’organisation, factures
-ms.openlocfilehash: 25e9f2865c5970d11fac14d9427cb54374884541
-ms.sourcegitcommit: cf7c410268175e2633e9f0d65dc859c5034658e5
+ms.openlocfilehash: 17cfba93e8d892081900f6fcefb4504fb553b5bf
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "44232816"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44402641"
 ---
 # <a name="understand-your-bill-or-invoice"></a>Comprendre votre facture
 

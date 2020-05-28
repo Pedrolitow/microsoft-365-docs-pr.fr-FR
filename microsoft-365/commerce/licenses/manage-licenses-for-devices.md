@@ -15,15 +15,17 @@ ms.collection:
 - Adm_TOC
 - commerce
 description: Découvrez comment attribuer des licences à des groupes en vue de les utiliser avec des appareils.
-ms.custom: okr_SMB
+ms.custom:
+- okr_SMB
+- AdminSurgePortfolio
 search.appverid:
 - MET150
-ms.openlocfilehash: 1a525117c25a2471ad696ef1447fd7e4ccb6bed0
-ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
+ms.openlocfilehash: ce3c8f7d669f2fe5d19c48d7a1fb1f224aaec7f4
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "44011184"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44402869"
 ---
 # <a name="manage-licenses-for-devices"></a>Gérer les licences pour les appareils
 
@@ -41,7 +43,7 @@ Pour commencer, créez un groupe dans le centre d’administration Azure Active 
 
 Lorsque vous attribuez des licences à un groupe, vous attribuez des licences à tous les périphériques au sein du groupe. Vous ne pouvez attribuer qu’un seul abonnement à un seul groupe.
 
-1. Dans le centre d’administration Microsoft 365, accédez à la page<a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">licences</a> de **facturation** > .
+1. Dans le centre d’administration Microsoft 365, accédez à **Billing**la  >  page<a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">licences</a> de facturation.
 2. Sur la page **licences** , choisissez **Microsoft 365 Apps for Education (Device)** ou **Microsoft 365 apps pour entreprise (appareil)**.
 3. Sur la page suivante, choisissez un abonnement, puis choisissez **attribuer des licences**.
 4. Dans le volet **attribuer des licences à un groupe** , commencez à taper un nom de groupe, puis sélectionnez-le dans les résultats pour l’ajouter à la liste.
@@ -51,7 +53,7 @@ Lorsque vous attribuez des licences à un groupe, vous attribuez des licences à
 
 Lorsque vous désaffectez des licences à un groupe, vous supprimez les licences de tous les périphériques au sein du groupe. Toutes les applications et leurs données associées sont alors en lecture seule.
 
-1. Dans le centre d’administration, accédez à la page<a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">licences</a> de **facturation** > .
+1. Dans le centre d’administration, accédez à **Billing**la  >  page<a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">licences</a> de facturation.
 2. Sur la page **licences** , choisissez **Microsoft 365 Apps for Education (Device)** ou **Microsoft 365 apps pour entreprise (appareil)**.
 3. Sur la page suivante, sélectionnez un abonnement, sélectionnez **autres actions**, puis **désaffecter les licences**.
 4. Dans la boîte de dialogue **Annuler l’attribution des licences** , sélectionnez Annuler l' **affectation**.

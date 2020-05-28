@@ -17,17 +17,18 @@ ms.custom:
 - Core_O365Admin_Migration
 - MSB365
 - OKR_SMB_M365
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: f3433b6b-02f7-447f-9d62-306bf03638b0
 description: Découvrez comment valider les paramètres de protection des applications Microsoft 365 Business Premium dans vos appareils Android ou iOS.
-ms.openlocfilehash: d25a23bc8eb56e05bd74f7bf4658ee9e18dc41f8
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: d4b8ec3ff3a15c25133b20d437249611530977a5
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635721"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44403367"
 ---
 # <a name="validate-app-protection-settings-on-android-or-ios-devices"></a>Valider les paramètres de protection des applications sur les appareils Android ou iOS
 
@@ -41,7 +42,7 @@ Une fois que vous avez [défini des configurations d'application pour les appare
   
 Tout d’abord, assurez-vous que la stratégie s’applique à l’application dans laquelle vous allez la valider.
   
-1. Dans le [Centre d’administration](https://portal.office.com)Microsoft 365 Business Premium, accédez à **stratégies** \> de **modification**des stratégies.
+1. Dans le [Centre d’administration](https://portal.office.com)Microsoft 365 Business Premium, accédez à stratégies de modification des **stratégies** \> **Edit policy**.
     
 2. Choisissez **stratégie d’application pour Android** pour les paramètres que vous avez créés lors de l’installation, ou une autre stratégie que vous avez créée et vérifiez qu’elle est appliquée pour Outlook, par exemple. 
     
@@ -130,7 +131,7 @@ Une fois que vous avez [défini des configurations d'application pour les appare
   
 Tout d’abord, assurez-vous que la stratégie s’applique à l’application dans laquelle vous allez la valider.
   
-1. Dans le [Centre d’administration](https://portal.office.com)Microsoft 365 Business Premium, accédez à **stratégies** \> de **modification**des stratégies.
+1. Dans le [Centre d’administration](https://portal.office.com)Microsoft 365 Business Premium, accédez à stratégies de modification des **stratégies** \> **Edit policy**.
     
 2. Choisissez **stratégie d’application pour iOS** pour les paramètres que vous avez créés lors de l’installation, ou une autre stratégie que vous avez créée et vérifiez qu’elle est appliquée pour Outlook par exemple. 
     

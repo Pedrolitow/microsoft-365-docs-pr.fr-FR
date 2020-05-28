@@ -16,17 +16,18 @@ ms.custom:
 - MiniMaven
 - MSB365
 - OKR_SMB_M365
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: 27ff1678-865a-4707-8145-e1155aa815d6
 description: Découvrez comment gérer Microsoft 365 pour les tâches d’administration liées à l’entreprise, les appareils mobiles, les PC Windows 10 et de nombreuses tâches de ce type.
-ms.openlocfilehash: 5e6d4633410d4aa38ad1eebcab3405f57f5b2446
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 0534356f4ffc4a05504121d96edbc381e00632e9
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43633260"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44403035"
 ---
 # <a name="manage-microsoft-365-for-business"></a>Gérer Microsoft 365 pour les entreprises
 
