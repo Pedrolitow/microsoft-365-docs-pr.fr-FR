@@ -13,18 +13,19 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 - GEU150
 - GEA150
 description: En savoir plus sur Azure information protection pour Office 365 géré par 21Vianet et sur la façon de le configurer pour les clients en Chine.
 monikerRange: o365-21vianet
-ms.openlocfilehash: 3d24b450cc9ba9a6427732d408e35af1394b4a34
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 1f5d73f5c421a545ea0085f018a2c2a703b0b374
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627653"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44399037"
 ---
 # <a name="parity-between-azure-information-protection-for-office-365-operated-by-21vianet-and-commercial-offerings"></a>Parité entre Azure information protection pour Office 365 géré par 21Vianet et offres commerciales
 
@@ -54,35 +55,35 @@ Pour que le chiffrement fonctionne correctement, le RMS doit être activé pour 
 
 - Vérifiez si le RMS est activé :
   1. Lancez PowerShell en tant qu’administrateur.
-  2. Si le module AIPService n’est pas installé, `Install-Module AipService`exécutez.
-  3. Importez le `Import-Module AipService`module à l’aide du.
-  4. Connectez-vous au service `Connect-AipService -environmentname azurechinacloud`à l’aide de.
-  5. Exécutez `(Get-AipServiceConfiguration).FunctionalState` et vérifiez si l’État est `Enabled`.
+  2. Si le module AIPService n’est pas installé, exécutez  `Install-Module AipService` .
+  3. Importez le module à l’aide du `Import-Module AipService` .
+  4. Connectez-vous au service à l’aide de  `Connect-AipService -environmentname azurechinacloud` .
+  5. Exécutez  `(Get-AipServiceConfiguration).FunctionalState`   et vérifiez si l’État est  `Enabled` .
 
-- Si l’état de fonctionnement `Disabled`est, `Enable-AipService`exécuter.
+- Si l’état de fonctionnement est  `Disabled` , exécuter  `Enable-AipService` .
 
 ### <a name="dns-configuration-for-encryption-windows"></a>Configuration DNS pour le chiffrement (Windows)
 
 Pour que le chiffrement fonctionne correctement, les applications clientes Office doivent se connecter à l’instance chinoise du service et des données d’amorçage à partir de là. Pour rediriger les applications clientes vers l’instance de service appropriée, l’administrateur client doit configurer un enregistrement SRV DNS avec des informations sur l’URL Azure RMS. Sans l’enregistrement DNS SRV, l’application cliente tente de se connecter à l’instance de cloud public par défaut et échoue.
 
-En outre, l’hypothèse est que les utilisateurs se connectent avec un nom d’utilisateur basé sur le domaine appartenant au client `joe@contoso.cn`(par exemple,) `onmschina` et non sur le nom `joe@contoso.onmschina.cn`d’utilisateur (par exemple,). Le nom de domaine du nom d’utilisateur est utilisé pour la redirection DNS vers l’instance de service correcte.
+En outre, l’hypothèse est que les utilisateurs se connectent avec un nom d’utilisateur basé sur le domaine appartenant au client (par exemple, `joe@contoso.cn` ) et non sur le `onmschina` nom d’utilisateur (par exemple, `joe@contoso.onmschina.cn` ). Le nom de domaine du nom d’utilisateur est utilisé pour la redirection DNS vers l’instance de service correcte.
 
 - Obtenir l’ID RMS :
   1. Lancez PowerShell en tant qu’administrateur.
-  2. Si le module AIPService n’est pas installé, `Install-Module AipService`exécutez.
-  3. Connectez-vous au service `Connect-AipService -environmentname azurechinacloud`à l’aide de.
-  4. Exécutez `(Get-AipServiceConfiguration).RightsManagementServiceId` pour obtenir l’ID RMS.
+  2. Si le module AIPService n’est pas installé, exécutez  `Install-Module AipService` .
+  3. Connectez-vous au service à l’aide de  `Connect-AipService -environmentname azurechinacloud` .
+  4. Exécutez  `(Get-AipServiceConfiguration).RightsManagementServiceId`   pour obtenir l’ID RMS.
 
 - Connectez-vous à votre fournisseur DNS, accédez aux paramètres DNS du domaine, puis ajoutez un nouvel enregistrement SRV.
   - Service = `_rmsredir`
   - Protocole = `_http`
   - Nom = `_tcp`
-  - Target = `[GUID].rms.aadrm.cn` (où GUID est l’ID RMS)
+  - Target =  `[GUID].rms.aadrm.cn`   (où GUID est l’ID RMS)
   - Priorité, poids, secondes, durée de vie = valeurs par défaut
 
 - Associez le domaine personnalisé au client dans le [portail Azure](https://portal.azure.cn/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Domains). Cette opération ajoute une entrée dans DNS, qui peut prendre plusieurs minutes pour être vérifiée après l’ajout de la valeur aux paramètres DNS.
 
-- Connectez-vous au centre d’administration Microsoft 365 avec les informations d’identification d’administrateur global correspondantes et ajoutez le domaine `contoso.cn`(par exemple,) pour la création de l’utilisateur. Dans le processus de vérification, des modifications DNS supplémentaires peuvent être nécessaires. Une fois la vérification terminée, les utilisateurs peuvent être créés.
+- Connectez-vous au centre d’administration Microsoft 365 avec les informations d’identification d’administrateur global correspondantes et ajoutez le domaine (par exemple, `contoso.cn` ) pour la création de l’utilisateur. Dans le processus de vérification, des modifications DNS supplémentaires peuvent être nécessaires. Une fois la vérification terminée, les utilisateurs peuvent être créés.
 
 ### <a name="dns-configuration-for-encryption-mac-ios-android"></a>Configuration DNS pour le chiffrement (Mac, iOS, Android)
 

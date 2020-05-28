@@ -12,18 +12,19 @@ localization_priority: Priority
 ms.collection:
 - Adm_O365
 - Adm_NonTOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 9fa2539a-2211-41fd-85a0-bc37b9619ca4
 description: Découvrez comment renforcer la sécurité de votre organisation contre les attaques par mot de passe et la raison pour laquelle vous devez interdire les mots de passe courants et activer l’authentification multifacteur basée sur le risque.
-ms.openlocfilehash: eff22b5591893ea10f8e04e8e7f470e8a0bf9079
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: b4437f2af409fa3040894a1b0f802140df169635
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627823"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44399313"
 ---
 # <a name="password-policy-recommendations"></a>Recommandations en matière de stratégie de mot de passe
  

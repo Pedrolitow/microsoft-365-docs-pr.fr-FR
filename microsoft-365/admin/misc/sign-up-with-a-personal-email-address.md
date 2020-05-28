@@ -12,18 +12,19 @@ localization_priority: Normal
 ms.collection:
 - Adm_O365
 - Adm_NonTOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: 20816b8b-8b21-458f-81c1-320b8116597e
 ROBOTS: NOINDEX
 description: 'Découvrez comment s’inscrire à Office 365 avec votre adresse de messagerie personnelle, si vous ne souhaitez pas ajouter de domaine personnalisé. '
-ms.openlocfilehash: c49da60af4d369ea2529ddaf5e9b9f0c44251319
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 0b188754b169f6f0f0fb807a8ba236497a7439ff
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42254242"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44399253"
 ---
 # <a name="signing-up-for-office-365-with-a-personal-email-address"></a>Inscription à Office 365 avec une adresse de messagerie personnelle
 
@@ -52,7 +53,7 @@ Si vous décidez d’ajouter un domaine personnalisé maintenant, vous pouvez ac
   
 ## <a name="how-to-add-a-domain"></a>Procédure d’ajout d’un domaine
 
-Dans le centre d’administration, accédez à **configuration** > <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains</a> > **Add Domain**.
+Dans le centre d’administration, accédez à **configuration**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains</a>  >  **Add Domain**.
   
 
 

@@ -17,14 +17,15 @@ search.appverid:
 - MOE150
 ms.custom:
 - fwlink 824861; CampaignID O365_Comm_SR_UpgradeOffice
+- AdminSurgePortfolio
 ms.assetid: f6b00895-b5fd-4af6-a656-b7788ea20cbb
 description: Découvrez comment mettre à niveau vos utilisateurs vers le client Office le plus récent.
-ms.openlocfilehash: 2140e246882d9d9b30481bc20b78142708408f88
-ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
+ms.openlocfilehash: 22fe8e12e4aff4f9afe52e913ad57d37866dbb95
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "44011270"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44398809"
 ---
 # <a name="upgrade-your-microsoft-365-for-business-users-to-the-latest-office-client"></a>Mettre à niveau vos utilisateurs Microsoft 365 vers le dernier client Office
 

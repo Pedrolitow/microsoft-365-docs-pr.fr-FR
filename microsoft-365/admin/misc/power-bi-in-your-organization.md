@@ -12,18 +12,19 @@ localization_priority: Normal
 ms.collection:
 - Adm_O365
 - Adm_NonTOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 - PWB150
 ms.assetid: d7941332-8aec-4e5e-87e8-92073ce73dc5
 ROBOTS: NOINDEX
 description: Découvrez Power BI et comment les utilisateurs de votre organisation peuvent utiliser ce service Business Analytics.
-ms.openlocfilehash: 3cf0c96534b6d8d02ef89f430ae246c6f32ac356
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: cabe489915061a773c0faeb8687695f2672fe478
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627811"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44399301"
 ---
 # <a name="power-bi-in-your-organization"></a>Power BI dans votre organisation
 
@@ -201,7 +202,7 @@ Si un utilisateur s'est inscrit à Power BI mais que vous ne souhaitez plus qu'i
 
 ::: moniker range="o365-21vianet"
 
-1. Dans le Centre d’administration, accédez à la page **Utilisateurs >** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Utilisateurs actifs</a>.
+1. Dans le Centre d’administration, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Utilisateurs actifs</a>.
 
 2. Recherchez l’utilisateur dont vous souhaitez supprimer la licence, puis sélectionnez son nom.
     

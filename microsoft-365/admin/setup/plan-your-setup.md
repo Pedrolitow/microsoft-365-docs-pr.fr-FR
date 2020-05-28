@@ -14,17 +14,18 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 - Adm_O365_Setup
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: eb926624-018b-4486-bf11-5fba6ee4d645
 description: Découvrez ce que vous devez faire pour configurer votre Microsoft 365 pour les entreprises.
-ms.openlocfilehash: d02e1aaf03449bd976b8db549274002b3ebb6ed6
-ms.sourcegitcommit: b458277f0a9937555bc6c5b3fb2a41613f7cc9a9
+ms.openlocfilehash: 7c329e8f4df5076a9f4826d18e8a82bcc7cd6dd8
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2020
-ms.locfileid: "43794033"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44398845"
 ---
 # <a name="plan-your-setup-of-microsoft-365-for-business"></a>Planifier la configuration de Microsoft 365 pour les entreprises
 
@@ -49,7 +50,7 @@ L’Assistant installation vous guide tout au long de l’installation des appli
 > [!NOTE]
 > Si vous devez [attribuer des rôles d’administrateur dans Microsoft 365 pour les entreprises](../add-users/assign-admin-roles.md) aux utilisateurs que vous ajoutez dans l’Assistant, vous pouvez le faire plus tard dans la page **utilisateurs** . 
   
-Si vous n’exécutez pas l’Assistant Installation, vous pouvez effectuer les tâches de configuration à tout moment à partir du**programme d’installation**du [Centre](https://go.microsoft.com/fwlink/p/?linkid=2024339) > d’administration. À partir de là, vous pouvez migrer le courrier électronique et les contacts à partir d’un autre service de messagerie, modifier le domaine de votre compte d’administrateur, gérer vos informations de facturation, ajouter ou supprimer des utilisateurs, réinitialiser des mots de passe et effectuer d’autres fonctions professionnelles. Pour plus d’informations sur les différences entre l’Assistant Installation et la page **installation** , consultez la rubrique [différences entre l’Assistant installation de Microsoft 365 et la page installation](o365-setup-wizard-and-setup-page.md).
+Si vous n’exécutez pas l’Assistant Installation, vous pouvez effectuer les tâches de configuration à [admin center](https://go.microsoft.com/fwlink/p/?linkid=2024339)tout moment à partir du  >  **programme d’installation**du centre d’administration. À partir de là, vous pouvez migrer le courrier électronique et les contacts à partir d’un autre service de messagerie, modifier le domaine de votre compte d’administrateur, gérer vos informations de facturation, ajouter ou supprimer des utilisateurs, réinitialiser des mots de passe et effectuer d’autres fonctions professionnelles. Pour plus d’informations sur les différences entre l’Assistant Installation et la page **installation** , consultez la rubrique [différences entre l’Assistant installation de Microsoft 365 et la page installation](o365-setup-wizard-and-setup-page.md).
 
 Si vous êtes bloqué à un moment quelconque, contactez-nous. [Nous sommes là pour vous aider.](../contact-support-for-business-products.md)
   
@@ -93,7 +94,7 @@ Si vous envisagez de passer d’un service de messagerie existant à Microsoft 3
   
 Si vous envisagez d’utiliser Microsoft 365 pour votre courrier électronique :
   
-- Pour déplacer votre adresse de messagerie professionnelle (par exemple, *rob\@contoso.com*) à partir d’un autre service de messagerie vers Microsoft 365, vous devez diriger votre courrier vers votre nouvelle boîte aux lettres Microsoft 365. Pour ce faire, sélectionnez **migrer les données de vos utilisateurs** sur la page de **configuration** , dans laquelle nous vous guiderons tout au long des mises à jour que vous devez effectuer au niveau de votre hôte de domaine, étape par étape.
+- Pour déplacer votre adresse de messagerie professionnelle (par exemple, *rob \@ contoso.com*) à partir d’un autre service de messagerie vers Microsoft 365, vous devez diriger votre courrier vers votre nouvelle boîte aux lettres Microsoft 365. Pour ce faire, sélectionnez **migrer les données de vos utilisateurs** sur la page de **configuration** , dans laquelle nous vous guiderons tout au long des mises à jour que vous devez effectuer au niveau de votre hôte de domaine, étape par étape.
 
 - Une fois votre hôte de domaine mis à jour, les modifications prennent généralement effet après une heure ou deux. Cependant, sachez que la mise à jour des modifications sur Internet peut parfois prendre jusqu’à 72 heures.
 

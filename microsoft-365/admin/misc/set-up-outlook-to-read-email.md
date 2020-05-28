@@ -13,18 +13,19 @@ ms.custom:
 - Core_O365Admin_Migration
 - GSTips
 - MiniMaven
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 2e155154-bc66-48cc-8476-ab558c97115a
 description: Découvrez comment configurer un compte de messagerie dans Outlook pour Windows et Mac, et pour savoir comment installer les applications Office et accéder aux courriers électroniques en ligne.
-ms.openlocfilehash: 6f256a9b528c5ee51490007f388b8d3bd5a92f02
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 04d14c314fbcda4f8d0edff57a141a89688bec28
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627787"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44399277"
 ---
 # <a name="set-up-outlook-to-read-email"></a>Configurer Outlook pour lire le courrier électronique
 
@@ -34,9 +35,9 @@ Votre abonnement Microsoft 365 est fourni avec un Outlook basé sur le Web, mais
 
 La première fois que vous ouvrez Outlook, un Assistant compte automatique s’ouvre. Si ce n’est pas le cas, sélectionnez **fichier** , puis **Ajouter un compte**.
   
-1. Sur la **page comptes de messagerie** , cliquez sur Ajouter un **compte** **suivant** \> .
+1. Sur la page **comptes de messagerie** , cliquez sur Ajouter un compte **suivant** \> **Add Account**.
     
-2. Sur la page **configuration de compte automatique** , entrez votre nom, votre adresse de messagerie et votre mot de passe, puis cliquez sur **Terminer**la **prochaine** \> .
+2. Sur la page **configuration de compte automatique** , entrez votre nom, votre adresse de messagerie et votre mot de passe, puis cliquez sur terminer la **prochaine** \> **Finish**.
     
 Lire [l’article complet](https://support.office.com/article/6e27792a-9267-4aa4-8bb6-c84ef146101b.aspx).
   

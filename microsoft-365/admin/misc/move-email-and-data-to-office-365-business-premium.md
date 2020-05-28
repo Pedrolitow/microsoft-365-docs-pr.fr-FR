@@ -14,6 +14,7 @@ ms.collection:
 - Adm_O365
 - Adm_NonTOC
 - SPO_Content
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -21,12 +22,12 @@ search.appverid:
 ms.assetid: 1062115d-e312-482a-bb5a-765235990f41
 ROBOTS: NOINDEX
 description: Découvrez comment déplacer des données vers votre nouvelle identité d’entreprise.
-ms.openlocfilehash: 64db403b27d661fe812acd209ca6ed8e95961125
-ms.sourcegitcommit: d688a296dc2b094b70da55334c9a3ad91236cf6f
+ms.openlocfilehash: 03a8ff6b3cfab43d80401a10825a1c274e278ed9
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44155361"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44399325"
 ---
 # <a name="move-email-and-data-to-microsoft-365-business-standard"></a>Déplacer le courrier électronique et les données vers Microsoft 365 Business standard
 
@@ -39,7 +40,7 @@ Si vous voulez déplacer certaines de vos données personnelles vers votre nouve
  **Copier vos données à partir de OneDrive**
 1. Créez un dossier temporaire sur votre disque dur pour stocker temporairement les fichiers que vous souhaitez migrer vers Microsoft 365 pour les entreprises.
     
-2. Accédez à [https://onedrive.live.com/](https://onedrive.live.com/) et connectez-vous à l’aide du compte Microsoft que vous utilisez pour accéder à votre abonnement familial Microsoft 365. 
+2. Accédez à [https://onedrive.live.com/](https://onedrive.live.com/) et connectez-vous à l’aide du compte Microsoft que vous utilisez pour accéder à votre abonnement familial microsoft 365. 
     
 3. Copiez les fichiers que vous souhaitez utiliser avec Microsoft 365 pour les entreprises dans le dossier local que vous avez créé à l’étape 1.
     

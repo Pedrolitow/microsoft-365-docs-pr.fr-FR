@@ -12,16 +12,17 @@ localization_priority: Normal
 ms.custom:
 - SMB_SuccessCenter
 - seo-marvel-mar
+- AdminSurgePortfolio
 search.appverid:
 - MET150
 - MOE150
 description: Découvrez les menaces de sécurité auxquelles votre entreprise est face et vous pouvez facilement protéger vos données, vos comptes et vos appareils.
-ms.openlocfilehash: 4fafa348977d2eefe11cab865bacc999d625dc47
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: a3c22f5644322beec942b8ba656a718317fc0940
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627667"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44399109"
 ---
 # <a name="security-info-graphic-for-small-businesses"></a>Graphique des informations de sécurité pour les petites entreprises
 
@@ -31,4 +32,4 @@ Les liens pour PowerPoint et PDF ci-dessous peuvent être téléchargés et impr
 
 ![Image pour sécuriser votre graphisme d’informations Small Business](../media/smbthreatprotectioninfographic-thumbnail.png)
 
-[PDF](downloads/smbthreatprotection-infographic.pdf) | [PowerPoint](https://github.com/MicrosoftDocs/microsoft-365-docs-pr/raw/live/m365-democracy/microsoft-365/admin/downloads/smbthreatprotection-infographic.pptx)
+[PDF](downloads/smbthreatprotection-infographic.pdf)  |  [PowerPoint](https://github.com/MicrosoftDocs/microsoft-365-docs-pr/raw/live/m365-democracy/microsoft-365/admin/downloads/smbthreatprotection-infographic.pptx)

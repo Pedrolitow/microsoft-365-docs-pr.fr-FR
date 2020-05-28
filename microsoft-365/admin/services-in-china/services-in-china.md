@@ -14,6 +14,7 @@ ms.collection:
 - Adm_O365
 - Adm_NonTOC
 - SPO_Content
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 - GEU150
@@ -21,12 +22,12 @@ search.appverid:
 ms.assetid: a8ab5061-3346-4da0-bb7c-5260822b53ae
 description: En savoir plus sur Office 365 géré par 21Vianet qui est conçu pour répondre aux besoins des services Cloud sécurisés, fiables et évolutifs en Chine.
 monikerRange: o365-21vianet
-ms.openlocfilehash: 6d3facba5beb9398f26ede5345b9121275a47b94
-ms.sourcegitcommit: d688a296dc2b094b70da55334c9a3ad91236cf6f
+ms.openlocfilehash: f18dd909cedb69e509d6da69e45940337cda8c17
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44155408"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44399013"
 ---
 # <a name="office-365-operated-by-21vianet"></a>Office 365 géré par 21Vianet
 

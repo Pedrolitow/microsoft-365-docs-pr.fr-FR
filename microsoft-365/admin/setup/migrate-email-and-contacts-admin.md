@@ -17,6 +17,7 @@ ms.collection:
 ms.custom:
 - TopSMBIssues
 - okr_smb
+- AdminSurgePortfolio
 search.appverid:
 - MET150
 - MOE150
@@ -26,12 +27,12 @@ search.appverid:
 - MOW150
 ms.assetid: a3e3bddb-582e-4133-8670-e61b9f58627e
 description: 'Découvrez comment importer des contacts, des calendriers, des courriers électroniques à partir de Gmail ou d’un autre fournisseur de messagerie vers Microsoft 365. '
-ms.openlocfilehash: 3200ee91e4ca01fb946cbb045805a213958be000
-ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
+ms.openlocfilehash: 6fa8ff991bf9c02743b81d7947d9486e8f7b7b0f
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "44165154"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44398869"
 ---
 # <a name="migrate-email-and-contacts-to-microsoft-365"></a>Migrer le courrier électronique et les contacts vers Microsoft 365
 
@@ -69,7 +70,7 @@ Si vous voulez simplement exporter des contacts, procédez comme suit :
     
 To start the process, open Outlook and choose **File** \> **Open &amp; Export** \> **Import/Export**.
   
-![Menu fichier dans Outlook 2016](../../media/2f1c39a5-177e-4052-9dd8-90c0d140be2c.png)![Ouvrir &amp; la commande exporter dans Outlook 2016](../../media/eecab6df-c372-45b1-8a8a-2f6d7af0dd68.png)![Bouton Importer/exporter dans Outlook 2016](../../media/ed90ae47-20db-4be1-b0c0-826008432c6e.png)
+![Menu fichier dans Outlook 2016](../../media/2f1c39a5-177e-4052-9dd8-90c0d140be2c.png)![Ouvrir la &amp; commande exporter dans Outlook 2016](../../media/eecab6df-c372-45b1-8a8a-2f6d7af0dd68.png)![Bouton Importer/exporter dans Outlook 2016](../../media/ed90ae47-20db-4be1-b0c0-826008432c6e.png)
   
 ## <a name="see-other-email-accounts-in-outlook"></a>Consulter les autres comptes de courrier dans Outlook
 

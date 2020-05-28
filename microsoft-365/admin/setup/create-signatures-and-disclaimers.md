@@ -16,18 +16,19 @@ ms.collection:
 ms.custom:
 - TRN_M365B
 - OKR_SMB_Videos
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 2d75860f-c527-4352-a7f6-73eba54c0c72
 description: Apprenez à ajouter une signature électronique, une clause d’exclusion de responsabilité ou une déclaration de divulgation à tous les messages électroniques qui entrent ou sortent de votre organisation.
-ms.openlocfilehash: affd091f951b81541214b4f98c414b5cd4675cd3
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 5149f6f4a0276cc1384f15a8134d1ede0b673b8c
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631976"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44398953"
 ---
 # <a name="create-organization-wide-signatures-and-disclaimers"></a>Créer des signatures à l’échelle de l’organisation et des clauses d’exclusion de responsabilité
 
@@ -62,7 +63,7 @@ Accédez au Centre d’administration à l’adresse <a href="https://go.microso
 
 ::: moniker-end
 
-1. Sélectionnez le lanceur ![d’applications icône](../../media/7502f4ec-3c9a-435d-a7b4-b9cda85189a7.png)du lanceur d’applications, puis sélectionnez **administrateur**.
+1. Sélectionnez le lanceur d’applications ![ icône du lanceur d’applications ](../../media/7502f4ec-3c9a-435d-a7b4-b9cda85189a7.png) , puis sélectionnez **administrateur**.
    
     Vous ne trouvez pas l'application que vous cherchez ? Dans le lanceur d’applications, sélectionnez **toutes les applications** pour afficher une liste alphabétique des applications disponibles. À partir de là, vous pouvez rechercher une application spécifique. 
     

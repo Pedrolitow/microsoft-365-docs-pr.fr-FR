@@ -13,17 +13,18 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: 211c5c90-9719-4d73-9ad9-1925bb80f5f6
 description: Découvrez comment Microsoft 365 pour les entreprises peut vous aider dans le processus général de protection des données (RGPD).
-ms.openlocfilehash: a77de1b835e4cf6e312b8976a972ac10eb60e3b4
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 066803e15fe107c8a20b61d9871b6807629f2a9f
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627715"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44399157"
 ---
 # <a name="gdpr-simplified-a-guide-for-your-small-business"></a>RGPD simplifié : Guide pour votre petite entreprise
 
@@ -53,7 +54,7 @@ Vous verrez quelques termes fréquemment cités dans le RGPD. Il est important d
   
 États RGPD : « le traitement des données personnelles doit être conçu pour accueillir l’humanité ». Le RGPD espère atteindre cet objectif en utilisant le consentement lors du traitement des données personnelles. Cela peut être le simple acte de demander à vos clients s’ils souhaitent recevoir des messages électroniques de votre entreprise. Il ne s’agit pas non plus de cases à cocher d’exclusion sur votre site Web lorsque vous souhaitez utiliser des données pour le marketing. Vous devez avoir un consentement explicite à l’aide d’un « acte affirmatif ». Par ailleurs, vous devez également conserver des enregistrements relatifs à la prise ou à la révocation d’un consentement.
   
- **Droits des personnes concernées par les données**
+ **Droits des personnes concernées**
   
 Le RGPD établit les droits des personnes concernées, ce qui signifie que, en ce qui concerne les données personnelles, les clients, les employés, les partenaires professionnels, les clients, les entrepreneurs, les fournisseurs, etc., ont le droit d’effectuer les opérations suivantes :
   

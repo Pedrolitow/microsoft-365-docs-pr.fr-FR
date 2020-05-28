@@ -13,17 +13,18 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 - MOE150
 ROBOTS: NOINDEX, NOFOLLOW
 description: Vue d’ensemble du score de productivité Microsoft.
-ms.openlocfilehash: ae2d6188af6a0964dc7670adf0777c0bb3d77a77
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.openlocfilehash: 52a520e36c6b121984aef650ffba1867f4d3e8c9
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43942234"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44399181"
 ---
 # <a name="microsoft-productivity-score-preview"></a>Score de productivité Microsoft (aperçu)
 
@@ -82,7 +83,7 @@ Pour afficher le score de productivité de votre organisation, vous devez dispos
 - Lecteur général 
 - Lecteur de rapports 
 
-Vous pouvez accéder à l’expérience utilisateur à partir de la maison d’administration 365 sous **rapports** > de**productivité**.
+Vous pouvez accéder à l’expérience utilisateur à partir de la maison d’administration 365 sous **rapports**de  >  **productivité**.
 
 ## <a name="interpreting-productivity-score"></a>Interprétation de la note de productivité 
 

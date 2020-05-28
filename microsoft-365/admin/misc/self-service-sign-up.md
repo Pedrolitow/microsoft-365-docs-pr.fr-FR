@@ -13,6 +13,9 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
+ms.custom:
+- AdminSurgePortfolio
+- okr_SMB
 search.appverid:
 - BCS160
 - MET150
@@ -20,13 +23,12 @@ search.appverid:
 - BEA160
 ms.assetid: 4f8712ff-9346-4c6c-bb63-a21ad7a62cbd
 description: Découvrez les programmes libre-service de Microsoft 365 self-service, tels que Microsoft Power Apps, Microsoft Flow et Dynamics 365 pour les finances.
-ms.custom: okr_SMB
-ms.openlocfilehash: 02d318fbafb6e062f9c3d1592cd6adc7f764fd56
-ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
+ms.openlocfilehash: d2d4d23eeb3ddeda0dc5b66acfe072a66f4ce267
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44045271"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44399289"
 ---
 # <a name="using-self-service-sign-up-in-your-organization"></a>Utilisation de l’authentification en libre-service dans votre organisation
 
@@ -63,6 +65,6 @@ Vous trouverez ci-dessous les programmes libre-service actuellement disponibles.
 |**Centre d’affaires Microsoft** <br/> |Microsoft Business Center est le portail pour les clients qui ont effectué des achats via le contrat de services et de produits Microsoft (MPSA). <br/> |[Démarrage rapide : Inscrivez-vous au centre d’affaires Microsoft](https://go.microsoft.com/fwlink/p/?linkid=841479) <br/> |[Centre d’affaires Microsoft](https://go.microsoft.com/fwlink/p/?linkid=841470) <br/> |
 |**Centre de service de licences en volume Microsoft** <br/> |Le centre de service de licences en volume Microsoft affiche les licences achetées sous entreprise, Select, Education (campus ou scolaires), Open Value, Open License et les accords de droits ISV.  <br/> |[Formation et ressources VLSC](https://www.microsoft.com/en-us/Licensing/existing-customer/vlsc-training-and-resources.aspx) <br/> |[Centre de service de licence en volume](https://www.microsoft.com/Licensing/servicecenter/default.aspx) <br/> |
 |**Minecraft éducation** <br/> |En utilisant Minecraft comme plate-forme d’apprentissage, les enseignants peuvent motiver et inspirer chaque étudiant pour y parvenir plus et s’enflammer une passion pour l’apprentissage. Participez à une communauté d’enseignants qui apprennent à utiliser Minecraft pour déverrouiller le potentiel des étudiants.  <br/> |[Minecraft éducation](https://go.microsoft.com/fwlink/p/?linkid=841480) <br/> |[Minecraft éducation](https://go.microsoft.com/fwlink/p/?linkid=841471) <br/> |
-|**Microsoft Stream** <br/> |Téléchargez et partagez des vidéos au sein de votre organisation pour améliorer la communication, la participation et l’apprentissage.  <br/> |[Expérience de &amp; la journée de connexion 0](https://go.microsoft.com/fwlink/p/?linkid=841472) <br/> |[Microsoft Stream](https://go.microsoft.com/fwlink/p/?linkid=841473) <br/> |
+|**Microsoft Stream** <br/> |Téléchargez et partagez des vidéos au sein de votre organisation pour améliorer la communication, la participation et l’apprentissage.  <br/> |[Expérience de la journée de connexion &amp; 0](https://go.microsoft.com/fwlink/p/?linkid=841472) <br/> |[Microsoft Stream](https://go.microsoft.com/fwlink/p/?linkid=841473) <br/> |
 |**Power Automate** <br/> |Power automate est un produit qui vous permet de configurer des flux de travail automatisés entre vos applications et services préférés pour synchroniser des fichiers, obtenir des notifications, collecter des données et bien plus encore.  <br/> |[S’inscrire et se connecter pour une mise à l’arrêt automatique](https://docs.microsoft.com/power-automate/sign-up-sign-in) <br/> |[Power Automate](https://go.microsoft.com/fwlink/p/?linkid=841465) <br/> |
-|**Agents virtuels de puissance** <br/> |Les agents virtuels de puissance permettent aux équipes de créer facilement des robots puissants à l’aide d’une interface graphique interactive sans code sans avoir besoin de recourir à des scientifiques de données ou à des développeurs. Les agents virtuels de puissance abordent la plupart des problèmes majeurs liés au développement de robots dans le secteur d’aujourd’hui. Elle élimine le fossé entre les experts techniques et les équipes de développement qui créent les robots, ainsi que la latence longue entre les équipes qui reconnaissent un problème et mettent à jour le bot pour l’adresser.  <br/> |[Licences et informations d’accès](https://go.microsoft.com/fwlink/?linkid=2113708) <br/> |[S’inscrire aux agents virtuels de l’alimentation](https://aka.ms/TryPVA) <br/> |
+|**Power Virtual Agents** <br/> |Les agents virtuels de puissance permettent aux équipes de créer facilement des robots puissants à l’aide d’une interface graphique interactive sans code sans avoir besoin de recourir à des scientifiques de données ou à des développeurs. Les agents virtuels de puissance abordent la plupart des problèmes majeurs liés au développement de robots dans le secteur d’aujourd’hui. Elle élimine le fossé entre les experts techniques et les équipes de développement qui créent les robots, ainsi que la latence longue entre les équipes qui reconnaissent un problème et mettent à jour le bot pour l’adresser.  <br/> |[Licences et informations d’accès](https://go.microsoft.com/fwlink/?linkid=2113708) <br/> |[S’inscrire aux agents virtuels de l’alimentation](https://aka.ms/TryPVA) <br/> |
