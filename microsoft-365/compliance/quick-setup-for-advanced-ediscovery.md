@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: d7ccd944-9698-41c7-a21b-677dc62973c4
 description: 'Découvrez comment accéder à Advanced eDiscovery à partir du Centre de sécurité et conformité, et consulter un flux de travail classique pour utiliser Advanced eDiscovery.  '
-ms.openlocfilehash: 62c2ef316daafebeba6f91483277ea344039a271
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: b824183c88e4bbf300c2e07c9e8802dfb704aadf
+ms.sourcegitcommit: 5c96d06496d40d2523edbea336f7355c3c77cc80
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632169"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "44412833"
 ---
 # <a name="quick-setup-advanced-ediscovery-classic"></a>Configuration rapide Advanced eDiscovery (classique)
 
@@ -32,7 +32,6 @@ Cette section explique aux gestionnaires eDiscovery du Centre de sécurité &amp
   
 ## <a name="accessing-a-case-in-advanced-ediscovery"></a>Accès à un cas dans Advanced eDiscovery
 
-
 Advanced eDiscovery est accessible depuis le Centre de sécurité &amp; conformité. Vous devez être membre d’un cas eDiscovery dans le Centre de sécurité &amp; conformité pour accéder au cas dans Advanced eDiscovery. Pour savoir comment affecter des autorisations à un cas eDiscovery et ajouter des utilisateurs à un cas eDiscovery, consultez l’article relatif à la [gestion des cas eDiscovery dans Office 365](ediscovery-cases.md). 
   
 Pour accéder à un cas dans Advanced eDiscovery : 
@@ -41,15 +40,15 @@ Pour accéder à un cas dans Advanced eDiscovery :
     
 2. Dans le Centre de sécurité &amp; conformité, cliquez sur **Recherches &amp; enquêtes** \> **eDiscovery** pour afficher la liste des cas de votre organisation. 
     
-3. Sur la page **eDiscovery**, cliquez sur **Ouvrir** à côté du cas auquel vous voulez accéder dans Advanced eDiscovery. 
+3. Sur la page **eDiscovery**, cliquez sur **Ouvrir** à côté du cas auquel vous voulez accéder dans Advanced eDiscovery.
     
-4. Sur la page **Accueil** du cas, cliquez sur **Advanced eDiscovery**.
+4. Sur la page **Accueil** du cas, cliquez sur **Basculer vers Advanced eDiscovery**.
     
     La barre de progression **Connexion à Advanced eDiscovery** s’affiche. Quand vous êtes connecté, le cas est ouvert dans Advanced eDiscovery. 
     
 ## <a name="workflow"></a>Flux de travail
 
-Le diagramme suivant illustre le flux de travail courant pour gérer et utiliser des cas eDiscovery dans le Centre de sécurité &amp; conformité et dans Advanced eDiscovery. 
+Le diagramme suivant illustre le flux de travail courant pour gérer et utiliser des cas eDiscovery dans le Centre de sécurité &amp; conformité et dans Advanced eDiscovery.
   
 ![Ce diagramme présente le flux de travail en quatre phases de configuration d’Advanced eDiscovery, à savoir la configuration des utilisateurs et des cas, l’identification des données des cas, l’exportation et le traitement, puis les phases d’analyse et d’exportation vers l’ordinateur local.](../media/76589ccc-789d-4581-b3a8-98d339b05979.png)
   
