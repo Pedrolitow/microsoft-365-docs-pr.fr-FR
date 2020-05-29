@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Cet article explique comment gérer les cas de découverte électronique principaux. Cela inclut la fermeture d’un cas, la réouverture d’un incident fermé et la suppression d’un cas.
-ms.openlocfilehash: 45282486c2c3b1d00b99a1cda5968b3bb042f6c2
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 17b243a7207fd6927188b42e585101ff1d258b76
+ms.sourcegitcommit: 5c96d06496d40d2523edbea336f7355c3c77cc80
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208416"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "44412793"
 ---
 # <a name="close-reopen-and-delete-a-core-ediscovery-case"></a>Fermer, rouvrir et supprimer un cas de découverte électronique principale
 
@@ -32,7 +32,7 @@ Cet article explique comment fermer, rouvrir et supprimer des cas de découverte
 
 Lorsque le cas juridique ou l’enquête pris en charge par un cas de découverte électronique de base est terminé, vous pouvez fermer le cas. Voici ce qui se passe lorsque vous fermez un cas :
   
-- Si le cas contient des emplacements de contenu sur le blocage de la découverte électronique, ces conservations seront désactivées. Cela peut entraîner la suppression ou le vidage définitifs du contenu, soit par l’utilisateur, soit par un processus automatisé, tel qu’une stratégie de suppression.
+- Si le cas contient des emplacements de contenu sur le blocage de la découverte électronique, ces conservations seront désactivées. Une fois la conservation désactivée, une période de grâce de 30 jours (appelée *conservation différée*) est appliquée aux emplacements de contenu en attente. Cela permet d’empêcher la suppression immédiate du contenu et permet aux administrateurs de rechercher et de restaurer du contenu avant qu’il ne soit supprimé définitivement après l’expiration de la période de blocage. Pour plus d’informations, consultez la rubrique [suppression des emplacements de contenu d’une conservation eDiscovery](create-ediscovery-holds.md#removing-content-locations-from-an-ediscovery-hold).
 
 - La fermeture d’un incident ne désactive que les blocages associés à ce cas. Si d’autres suspensions sont placées sur un emplacement de contenu (comme une suspension pour litige, une stratégie de rétention ou une conservation d’un autre cas de découverte électronique de base), ces conservations seront conservées.
 

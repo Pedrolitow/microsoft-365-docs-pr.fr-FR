@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Les administrateurs peuvent activer la prise en charge de l’étiquette de sensibilité pour les fichiers Word, Excel et PowerPoint dans SharePoint et OneDrive.
-ms.openlocfilehash: 62bc2b748cf004722f94a7231046930d78437603
-ms.sourcegitcommit: b18949de721c6eef3521d5f8286d9b926ad4aabe
+ms.openlocfilehash: 178359ae993e0db3ec5fd09cae0a13de351a3b94
+ms.sourcegitcommit: 21977f5cb6b01aee5cae54979717530b2a31a46a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "44342512"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "44411011"
 ---
 # <a name="enable-sensitivity-labels-for-office-files-in-sharepoint-and-onedrive"></a>Activer les étiquettes de confidentialité pour les fichiers Office dans SharePoint et OneDrive
 
@@ -57,6 +57,8 @@ Regardez la vidéo suivante (pas de son) pour voir les nouvelles fonctionnalité
 > [!VIDEO https://www.microsoft.com/videoplayer/embed//RE4ornZ]
 
 Vous avez toujours la possibilité de désactiver les étiquettes de confidentialité pour les fichiers Office dans SharePoint et[OneDrive (à tout moment.](#how-to-disable-sensitivity-labels-for-sharepoint-and-onedrive-opt-out)
+
+Si vous protégez actuellement des documents dans SharePoint à l’aide de la gestion des droits relatifs à l’information (IRM) de SharePoint, veillez à consulter la section gestion des droits relatifs à l' [information (IRM) et les étiquettes de confidentialité](#sharepoint-information-rights-management-irm-and-sensitivity-labels) de SharePoint sur cette page. 
 
 ## <a name="requirements"></a>Configuration requise
 
@@ -171,6 +173,26 @@ Nous vous recommandons de suivre les étapes suivantes :
 2. Patientez pendant au moins 24 heures après la publication initiale. Vérifiez que l’étiquette est entièrement synchronisée.
 
 3. Publiez l’étiquette plus largement.
+
+## <a name="sharepoint-information-rights-management-irm-and-sensitivity-labels"></a>Étiquettes de confidentialité et de gestion des droits relatifs à l’information (IRM) SharePoint
+
+La gestion des droits relatifs à l' [information (IRM) de SharePoint](set-up-irm-in-sp-admin-center.md) est une ancienne technologie permettant de protéger les fichiers au niveau de la liste et de la bibliothèque en appliquant le chiffrement et les restrictions lors du téléchargement des fichiers. Cette technologie de protection plus ancienne est conçue pour empêcher les utilisateurs non autorisés d’ouvrir le fichier pendant qu’il est en dehors de SharePoint.
+
+En comparaison, les étiquettes de sensibilité fournissent les paramètres de protection des marques visuelles (en-têtes, pieds de page, filigranes) en plus du chiffrement. Les paramètres de chiffrement prennent en charge l’ensemble des [droits d’utilisation](https://docs.microsoft.com/azure/information-protection/configure-usage-rights) pour limiter ce que les utilisateurs peuvent faire avec le contenu, et les mêmes étiquettes de confidentialité sont prises en charge pour de [nombreux scénarios](get-started-with-sensitivity-labels.md#common-scenarios-for-sensitivity-labels). L’utilisation de la même méthode de protection avec des paramètres cohérents entre les charges de travail et les applications génère une stratégie de protection cohérente.
+
+Toutefois, vous pouvez utiliser les deux solutions de protection conjointement et le comportement est le suivant : 
+
+- Si vous téléchargez un fichier avec une étiquette de sensibilité qui applique le chiffrement, le chiffrement n’est pas supprimé pour ces fichiers, la co-création, la découverte électronique, DLP et la recherche ne sont pas pris en charge.
+
+- Si vous étiquetez un fichier à l’aide d’Office sur le Web, tous les paramètres de chiffrement de l’étiquette sont appliqués. Pour ces fichiers, la co-création, la découverte électronique, DLP et la recherche sont prises en charge.
+
+- Si vous téléchargez un fichier étiqueté à l’aide d’Office sur le Web, l’étiquette est conservée et tous les paramètres de chiffrement de l’étiquette sont appliqués au lieu des paramètres de restriction IRM.
+
+- Si vous téléchargez un fichier Office ou PDF qui n’est pas chiffré avec une étiquette de sensibilité, les paramètres IRM sont appliqués.
+
+- Si vous avez activé les paramètres supplémentaires de la bibliothèque IRM, ce qui implique d’empêcher les utilisateurs de télécharger des documents qui ne prennent pas en charge la gestion des droits relatifs à l’information (IRM), ces paramètres sont appliqués.
+
+Dans ce cas, vous pouvez être sûr que tous les fichiers Office et PDF sont protégés contre tout accès non autorisé s’ils sont téléchargés, même s’ils ne sont pas étiquetés. Toutefois, les fichiers étiquetés téléchargés ne bénéficieront pas des nouvelles fonctionnalités.
 
 ## <a name="how-to-disable-sensitivity-labels-for-sharepoint-and-onedrive-opt-out"></a>Procédure de désactivation des étiquettes de confidentialité pour SharePoint et OneDrive (exclusion)
 

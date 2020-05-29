@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Vous pouvez créer une conservation associée à un cas de découverte électronique de base pour conserver le contenu qui peut être pertinent pour une enquête.
-ms.openlocfilehash: c4f3b258fecde8b5a49a77585fe8f1d6cdfe2c11
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: 41e5f21d36456eb39999afa71852b169de864356
+ms.sourcegitcommit: 5c96d06496d40d2523edbea336f7355c3c77cc80
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44352251"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "44412853"
 ---
 # <a name="create-an-ediscovery-hold"></a>Créer une suspension de cas eDiscovery
 
@@ -113,7 +113,7 @@ Voici quelques autres éléments à garder à l’esprit lors de la recherche d�
 
 - Si une recherche est configurée pour rechercher des emplacements de recherche, puis modifier une conservation de découverte électronique dans le cas (en ajoutant ou en supprimant un emplacement ou en modifiant une requête de suspension), la configuration de la recherche est mise à jour avec ces modifications. Toutefois, vous devez réexécuter la recherche après la modification de la conservation pour mettre à jour les résultats de la recherche.
 
-- Si plusieurs conservations eDiscovery sont placées à un seul emplacement dans un cas de découverte électronique et que vous choisissez de rechercher des emplacements en conservation, le nombre maximal de mots clés pour cette requête de recherche est de 500. Cela est dû au fait que la recherche combine toutes les conservations basées sur une requête à l’aide de l’opérateur **or** . S’il y a plus de 500 mots clés dans les requêtes de suspension combinées et la requête de recherche, tout le contenu de la boîte aux lettres est recherché, et pas seulement celui qui correspond à la casse basée sur une requête. 
+- Si plusieurs conservations eDiscovery sont placées à un seul emplacement dans un cas de découverte électronique et que vous choisissez de rechercher des emplacements en conservation, le nombre maximal de mots clés pour cette requête de recherche est de 500. Cela est dû au fait que la recherche combine toutes les conservations basées sur une requête à l’aide de l’opérateur **or** . S’il y a plus de 500 mots clés dans les requêtes de suspension combinées et la requête de recherche, tout le contenu de la boîte aux lettres est recherché, et pas seulement celui qui correspond à la casse basée sur une requête.
     
 - Si une conservation de découverte électronique a l’état **activer**, vous pouvez toujours effectuer des recherches dans les emplacements pendant que la conservation est activée.
 
@@ -174,6 +174,26 @@ Pour collecter une liste des URL pour les sites OneDrive entreprise de votre org
 
 > [!IMPORTANT]
 > L’URL du compte OneDrive d’un utilisateur comprend le nom d’utilisateur principal (UPN) (par exemple, `https://alpinehouse-my.sharepoint.com/personal/sarad_alpinehouse_onmicrosoft_com` ). Dans les rares cas où le nom UPN d’une personne est modifié, son URL OneDrive est également modifiée pour intégrer le nouvel UPN. Si le compte OneDrive d’un utilisateur fait partie d’une conservation eDiscovery, l’ancienne et son UPN sont modifiés, vous devez mettre à jour la conservation et vous devrez mettre à jour la conservation et ajouter la nouvelle URL OneDrive de l’utilisateur et supprimer l’ancienne. Pour plus d’informations, voir [Comment les modifications du nom d’utilisateur principal affectent l’URL OneDrive](https://docs.microsoft.com/onedrive/upn-changes).
+
+## <a name="removing-content-locations-from-an-ediscovery-hold"></a>Suppression des emplacements de contenu d’une conservation eDiscovery
+
+Une fois qu’une boîte aux lettres, un site SharePoint ou un compte OneDrive est supprimé d’une conservation de découverte électronique, une attente de *retard* est appliquée. Cela signifie que la suppression effective de la conservation est retardée de 30 jours afin d’empêcher la suppression définitive des données d’un emplacement de contenu. Les administrateurs peuvent ainsi Rechercher ou récupérer du contenu qui sera purgé après la suppression d’une conservation de découverte électronique. Les détails du fonctionnement de la conservation du retard pour les boîtes aux lettres et les sites sont différents.
+
+- **Boîtes aux lettres :** Un retard de conservation est placé sur une boîte aux lettres la prochaine fois que l’Assistant dossier géré traite la boîte aux lettres et détecte qu’une conservation de découverte électronique a été supprimée. Plus précisément, un délai d’attente est appliqué à une boîte aux lettres lorsque l’Assistant dossier géré définit l’une des propriétés de boîte aux lettres suivantes sur **true**: 
+
+   - **DelayHoldApplied :** Cette propriété s’applique au contenu lié au courrier électronique (généré par des personnes utilisant Outlook et Outlook sur le Web) stocké dans la boîte aux lettres d’un utilisateur.
+
+   - **DelayReleaseHoldApplied :** Cette propriété s’applique au contenu basé sur le Cloud (généré par des applications autres qu’Outlook telles que Microsoft Teams, Microsoft Forms et Microsoft Yammer) stocké dans la boîte aux lettres d’un utilisateur. Les données Cloud générées par une application Microsoft sont généralement stockées dans un dossier masqué de la boîte aux lettres d’un utilisateur.
+
+   Lorsqu’une boîte aux lettres est placée en attente de retard (lorsque l’une des propriétés précédentes est définie sur **true**), la boîte aux lettres est toujours considérée comme suspendue pendant une durée de conservation illimitée, comme si la boîte aux lettres était en conservation pour litige. Au bout de 30 jours, le délai d’attente expire et Microsoft 365 tente automatiquement de supprimer le blocage de délai (en définissant la propriété DelayHoldApplied ou DelayReleaseHoldApplied sur **false**) de sorte que la conservation soit supprimée. Une fois que l’une de ces propriétés est définie sur **false**, les éléments correspondants marqués pour suppression sont purgés lors du prochain traitement de la boîte aux lettres par l’Assistant dossier géré.
+
+   Pour des informations supplémentaires, consultez [Gestion des boîtes aux lettres avec période de grâce](identify-a-hold-on-an-exchange-online-mailbox.md#managing-mailboxes-on-delay-hold).
+
+- **Sites SharePoint et OneDrive :** Tout contenu SharePoint ou OneDrive conservé dans la bibliothèque de conservation n’est pas supprimé pendant la période de retard de 30 jours après la suppression d’un site d’une conservation eDiscovery. Ceci est semblable à ce qui se produit lorsqu’un site est publié à partir d’une stratégie de rétention. En outre, vous ne pouvez pas supprimer manuellement ce contenu dans la bibliothèque de conservation pendant la période de retard de 30 jours. 
+
+   Pour plus d’informations, consultez [la rubrique libération d’une stratégie de rétention](retention-policies.md#releasing-a-retention-policy).
+
+Une suspension de délai est également appliquée aux emplacements de contenu lorsque vous fermez un cas de découverte électronique de base, car les conservations sont désactivées lors de la fermeture du cas. Pour plus d’informations sur la fermeture d’un cas, voir [Close, Reopen et Delete a Core eDiscovery case](close-reopen-delete-core-ediscovery-cases.md).
 
 ## <a name="ediscovery-hold-limits"></a>limites de conservation pour la découverte électronique
 

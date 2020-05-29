@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 5b9a067b-9d2e-4aa5-bb33-99d8c0d0b5d7
 description: Affecter les autorisations requises pour effectuer des tâches liées à la découverte électronique à l’aide du centre de sécurité & conformité.
-ms.openlocfilehash: 4c39dc3cd0d3c5d13d33330eca930e07227c38d3
-ms.sourcegitcommit: 17a45261926dde1a7cd24e0ac516cfc49e453806
+ms.openlocfilehash: 76ec07909fab35dfbead806befe2565f4e2054ae
+ms.sourcegitcommit: 21977f5cb6b01aee5cae54979717530b2a31a46a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44374403"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "44411031"
 ---
 # <a name="assign-ediscovery-permissions-in-the-security--compliance-center"></a>Attribuer des autorisations eDiscovery dans le centre de sécurité & conformité
 
@@ -43,7 +43,7 @@ Le groupe de rôles de découverte électronique principal dans le centre de sé
   Consultez la section [plus d’informations](#more-information) pour connaître les raisons pour lesquelles vous pouvez souhaiter des administrateurs de découverte électronique dans votre organisation.
 
 > [!NOTE]
-> Pour analyser les données d’un utilisateur à l’aide de Advanced eDiscovery, l’utilisateur (le dépositaire des données) doit disposer d’une licence Office 365 E5 ou Microsoft E5. Par ailleurs, les utilisateurs disposant d’une licence E1 ou E3 peuvent se voir attribuer une licence de complément E5. Les administrateurs, les responsables de la mise en conformité ou le personnel juridique qui sont affectés à des cas en tant que membres et utilisent Advanced eDiscovery pour collecter, afficher et analyser des données n’ont pas besoin d’une licence E5. Pour plus d’informations sur les licences, consultez [la rubrique Microsoft 365 Licensing Guidance for security & Compliance](https://aka.ms/complianceSD).
+> Pour analyser les données d’un utilisateur à l’aide de Advanced eDiscovery, l’utilisateur (le dépositaire des données) doit disposer d’une licence Office 365 E5 ou Microsoft 365 E5. Par ailleurs, les utilisateurs disposant d’une licence Office 365 E1 ou Office 365 ou Microsoft 365 E3 peuvent se voir attribuer une conformité Microsoft 365 E5 ou une licence de module complémentaire de découverte électronique et d’audit Microsoft 365. Les administrateurs, les responsables de la mise en conformité ou le personnel juridique qui sont affectés à des cas en tant que membres et utilisent Advanced eDiscovery pour collecter, afficher et analyser des données n’ont pas besoin d’une licence E5. Pour plus d’informations sur la gestion des licences eDiscovery avancée, consultez la rubrique [prise en main de Advanced eDiscovery](get-started-with-advanced-ediscovery.md).
   
 ## <a name="before-you-begin"></a>Avant de commencer
 

@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: 0b6fac2d-8627-4b05-9df0-03609db6248b
 description: Découvrez comment préparer les résultats d’une recherche de contenu dans le centre de sécurité & Compliance pour une analyse plus poussée avec l’outil eDiscovery avancé.
-ms.openlocfilehash: 4d1b406503ff758fb9287cc40d8a323ae23bc3f1
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.openlocfilehash: 14bc98dc9cca656e23fc76f00c6adc975bb61c5e
+ms.sourcegitcommit: 5c96d06496d40d2523edbea336f7355c3c77cc80
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43943293"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "44412843"
 ---
 # <a name="prepare-search-results-for-advanced-ediscovery-classic"></a>Préparation des résultats de recherche pour Advanced eDiscovery (classique)
 
@@ -61,7 +61,7 @@ Une fois qu’une recherche associée à un cas eDiscovery dans le centre de sé
 
 Vous pouvez préparer les résultats d’une recherche associée à un cas de découverte électronique. Lorsque vous préparez des résultats de recherche pour Advanced eDiscovery, les données sont téléchargées et stockées temporairement dans une zone de stockage Windows Azure unique dans le Cloud Microsoft. À ce stade, la fonctionnalité OCR extrait le texte des images dans les résultats de la recherche. À l' [étape 2](#step-2-add-the-search-results-data-to-the-case-in-advanced-ediscovery), ce texte et les autres données de résultats de recherche sont chargés dans le cas de Advanced eDiscovery.
   
-1. Dans le \> **Centre de sécurité** & conformité, **cliquez sur eDiscovery eDiscovery pour** afficher la liste des cas dans votre organisation. 
+1. Dans le centre de sécurité & conformité, **cliquez sur eDiscovery eDiscovery** \> **eDiscovery** pour afficher la liste des cas dans votre organisation. 
     
 2. Cliquez sur **ouvrir** en regard du cas pour lequel vous souhaitez préparer les résultats de recherche pour l’analyse dans Advanced eDiscovery. 
     
@@ -94,11 +94,11 @@ Une fois la préparation terminée, l’étape suivante consiste à accéder à 
 > [!NOTE]
 > Le temps nécessaire pour que les données du centre de sécurité & conformité soient disponibles pour être ajoutées à un cas dans Advanced eDiscovery varie, en fonction de la taille des résultats de la recherche de découverte électronique. 
   
-1. Dans le \> **Centre de sécurité** & conformité, **cliquez sur eDiscovery eDiscovery pour** afficher la liste des cas dans votre organisation. 
+1. Dans le centre de sécurité & conformité, **cliquez sur eDiscovery eDiscovery** \> **eDiscovery** pour afficher la liste des cas dans votre organisation. 
     
 2. Cliquez sur **ouvrir** en regard du cas dans lequel vous souhaitez charger les données dans Advanced eDiscovery. 
     
-3. Sur la page **Accueil** du cas, cliquez sur **Advanced eDiscovery**. 
+3. Sur la page d' **Accueil** du cas, cliquez sur **basculer vers Advanced eDiscovery**. 
     
     ![Cliquez sur basculer vers Advanced eDiscovery pour ouvrir le cas dans Advanced eDiscovery](../media/8e34ba23-62e3-4e68-a530-b6ece39b54be.png)
   

@@ -19,13 +19,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 7257cb50-0d5c-4f7a-ac2e-9fe5d13bb5cb
-description: 'Découvrez comment utiliser Cortana, lorsqu’elle est intégrée à Office 365. Vous pouvez désactiver Cortana dans le centre d’administration pour limiter son accès aux données de votre organisation. '
-ms.openlocfilehash: 80c4425814e6015d5a8116a1e8df7f7b528dbd66
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+description: Lorsque vous êtes connecté avec des comptes professionnels ou scolaires valides, les utilisateurs peuvent obtenir des services d’assistance en nuage avec Cortana dans les expériences Microsoft 365 qui répondent aux engagements de confidentialité, de sécurité et de conformité au niveau de l’entreprise d’Office 365.
+ms.openlocfilehash: 6c1eb42ad54c0cfb25f84b9f584171eb7d198bb9
+ms.sourcegitcommit: 21977f5cb6b01aee5cae54979717530b2a31a46a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399409"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "44411000"
 ---
 # <a name="cortana-in-microsoft-365"></a>Cortana dans Microsoft 365
 

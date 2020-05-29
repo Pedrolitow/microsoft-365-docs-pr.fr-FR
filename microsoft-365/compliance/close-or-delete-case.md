@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Découvrez ce qui se passe lorsqu’une enquête ou une casse légale prise en charge par un cas avancé eDiscovery est fermée ou supprimée.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: e64f5cc0483129396a28cbf657778001e5d372a7
-ms.sourcegitcommit: 261d51b90a9ad53a6a42348c414b1b1e1230c37f
+ms.openlocfilehash: be8d133a8215fc40c6d33025f9f4d1dee0f3b609
+ms.sourcegitcommit: 5c96d06496d40d2523edbea336f7355c3c77cc80
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44292410"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "44412783"
 ---
 # <a name="close-or-delete-an-advanced-ediscovery-case"></a>Fermer ou supprimer un cas avancé eDiscovery
 
@@ -32,7 +32,7 @@ Lorsque le cas juridique ou l’enquête pris en charge par un cas avancé eDisc
 
 Voici ce qui se passe lorsque vous fermez un cas avancé de découverte électronique :
 
-- Si le cas contient des emplacements de contenu en conservation, ceux-ci sont désactivés. Cela peut entraîner la suppression ou le vidage définitifs du contenu, soit par l’utilisateur, soit par un processus automatisé, tel qu’une stratégie de suppression.
+- Si le cas contient des emplacements de contenu en conservation, ceux-ci sont désactivés. Une fois la conservation désactivée, une période de grâce de 30 jours (appelée *conservation différée*) est appliquée aux emplacements de contenu en attente. Cela permet d’empêcher la suppression immédiate du contenu et donne aux administrateurs la possibilité de rechercher ou de récupérer du contenu qui sera définitivement supprimé après l’expiration de la période de blocage. Pour plus d’informations, consultez la rubrique [suppression des emplacements de contenu d’une conservation eDiscovery](create-ediscovery-holds.md#removing-content-locations-from-an-ediscovery-hold).
 
 - La fermeture d’un incident ne désactive que les blocages associés à ce cas. Si d’autres suspensions sont placées sur un emplacement de contenu (comme une conservation pour litige, la conservation de découverte électronique principale ou une suspension d’un autre cas de découverte électronique avancée), ces conservations seront toujours conservées.
 
