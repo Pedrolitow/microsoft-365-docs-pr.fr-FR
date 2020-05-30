@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Les étapes de déploiement de l’infrastructure d’identité pour Microsoft 365 Entreprise.
-ms.openlocfilehash: 0189da0814d1d526d9e07ad35dbbabcbfe82a4cd
-ms.sourcegitcommit: 6adfcf042e64b21f09f2b8e072e8eba6d3479e31
+ms.openlocfilehash: 6f237f779df16f2a2a03eab29af78a89c5f7a5ae
+ms.sourcegitcommit: 87eff6e8a08cec3cb0464a3b765434717584a4a9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "42952029"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "44371417"
 ---
 # <a name="phase-2-identity"></a>Phase 2 : Identité
 
@@ -70,7 +70,11 @@ Microsoft fournit un ensemble de recommandations en matière d’[identité et d
 
 ## <a name="how-microsoft-does-microsoft-365-enterprise"></a>Comment Microsoft gère-t-il Microsoft 365 Entreprise
 
-Découvrez comment les experts informatiques de [Microsoft gèrent les identités et la sécurisation des accès](https://www.microsoft.com/itshowcase/deploying-and-managing-microsoft-365#primaryR5).
+Découvrez comment les experts informatiques de [Microsoft gèrent les identités et la sécurisation des accès](https://www.microsoft.com/fr-FR/itshowcase/managing-user-identities-and-secure-access-at-microsoft).
+
+>[!Note]
+>Cette ressource de présentation informatique est disponible uniquement en anglais.
+>
 
 ## <a name="how-contoso-did-microsoft-365-enterprise"></a>Comment Contoso est-elle passée à Microsoft 365 Entreprise ?
 
