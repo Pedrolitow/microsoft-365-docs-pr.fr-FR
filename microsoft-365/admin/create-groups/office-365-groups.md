@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez les groupes Microsoft 365.
-ms.openlocfilehash: 5260d811f23dd07e096e02214eafcf7f0a757ffd
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: e677a5206a17f22900007fc4eeffc6e665186f8e
+ms.sourcegitcommit: 6746fae2f68400fd985711b1945b66766d2a59a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400712"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "44419135"
 ---
 # <a name="overview-of-microsoft-365-groups-for-administrators"></a>Présentation des Groupes Microsoft 365 pour les administrateurs
 
@@ -84,12 +84,27 @@ Le nombre maximal par défaut de groupes Microsoft 365 qu’une organisation peu
 
 La gestion de vos groupes Microsoft 365 est plus efficace lorsque vous disposez d’informations sur l’utilisation des groupes. Le centre d’administration Microsoft 365 dispose d’un outil de création de rapports qui vous permet de voir des éléments tels que l’utilisation du stockage, le nombre de groupes actifs dont vous disposez et même le mode d’utilisation des groupes par vos utilisateurs. Pour plus d’informations, reportez-vous à [la rubrique rapports Microsoft 365 dans le centre d’administration](../activity-reports/office-365-groups.md) .
 
+## <a name="sensitivity-labels"></a>Étiquettes de confidentialité
+
+Vous pouvez créer des étiquettes de confidentialité que les utilisateurs de votre organisation peuvent définir lors de la création d’un groupe Microsoft 365. Avec les étiquettes de confidentialité, vous pouvez configurer les éléments suivants : 
+
+- Confidentialité (publique ou privée)
+- Accès des utilisateurs externes
+- Accès aux appareils non gérés
+
+Par exemple, vous pouvez créer une étiquette appelée *hautement confidentiel* et spécifier que tout groupe créé avec cette étiquette sera privé et non autoriser les utilisateurs externes. Lorsque les utilisateurs de votre organisation sélectionnent cette étiquette lors de la création d’un groupe, le groupe est défini sur privé et les membres du groupe ne sont pas autorisés à ajouter des utilisateurs externes au groupe.
+
+> [!IMPORTANT]
+> Si vous utilisez actuellement des étiquettes de classification, ces derniers ne seront plus disponibles pour les utilisateurs qui créent des groupes une fois que les étiquettes de sensibilité seront activées. 
+
+Pour plus d’informations sur la création, la gestion et l’utilisation des étiquettes de confidentialité, voir [use sensitive labels to Protect content in Microsoft Teams, microsoft 365 Groups et SharePoint sites](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites).
+
 ## <a name="which-microsoft-365-plans-include-groups"></a>Quels sont les plans Microsoft 365 qui incluent des groupes ?
 
 Tout abonnement Microsoft 365 avec Exchange Online et SharePoint Online prend en charge les groupes. Cela inclut les plans Business Essentials et Business Premium, ainsi que les plans entreprise E1, E3 et E5. Le groupe prend en la gestion des licences de la personne qui crée le groupe (également appelée « organisateur » du groupe). Tant que l’organisateur dispose de la licence appropriée pour toutes les fonctionnalités que vous souhaitez affecter au groupe, cette licence sera acheminée vers le groupe.
 
 > [!NOTE]
-> Pour plus d’informations sur les familles et plans de service Microsoft 365, voir [microsoft 365 plan options](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-plan-options) .
+> Pour plus d’informations sur les familles et plans de service Microsoft 365, consultez les [options de plan de microsoft 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-plan-options).
 
 Si vous avez un plan Exchange uniquement, vous pouvez toujours obtenir la boîte de réception partagée et les fonctionnalités de calendrier partagé des groupes dans Outlook, mais vous n’obtiendrez pas la bibliothèque de documents, le planificateur ou l’une des autres fonctionnalités.
 

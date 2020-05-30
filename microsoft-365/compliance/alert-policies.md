@@ -19,21 +19,21 @@ ms.assetid: 8927b8b9-c5bc-45a8-a9f9-96c732e58264
 ms.custom:
 - seo-marvel-apr2020
 description: Créez des stratégies d’alerte dans le centre de sécurité et conformité dans Office 365 et Microsoft 365 pour surveiller les menaces potentielles, les pertes de données et les problèmes d’autorisations.
-ms.openlocfilehash: 8720d4811377365ad00ced4d950d89cf459f653e
-ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
+ms.openlocfilehash: 92f7146c40bbcbd93eb36e43a4dff9c8a807c403
+ms.sourcegitcommit: 436841236dc41390a3be9f8936d19d3d017fa35c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "44165165"
+ms.lasthandoff: 05/30/2020
+ms.locfileid: "44429213"
 ---
 # <a name="alert-policies-in-the-security-and-compliance-center"></a>Stratégies d’alerte dans le Centre de sécurité et de conformité
 
-Vous pouvez utiliser les nouveaux outils de tableau de bord des stratégies d’alerte et des alertes dans les centres de sécurité et de conformité pour créer des stratégies d’alerte, puis afficher les alertes générées lorsque les utilisateurs effectuent des activités qui répondent aux conditions d’une stratégie d’alerte.
+Vous pouvez utiliser les outils de tableau de bord des stratégies et des alertes d’alerte dans les centres de sécurité et de conformité Microsoft 365 pour créer des stratégies d’alerte, puis afficher les alertes générées lorsque les utilisateurs effectuent des activités qui répondent aux conditions d’une stratégie d’alerte.
 
 Les stratégies d’alerte s’appuient sur et développent les fonctionnalités des alertes d’activité en vous permettant de catégoriser la stratégie d’alerte, d’appliquer la stratégie à tous les utilisateurs de votre organisation, de définir un niveau de seuil pour le déclenchement d’une alerte et de décider s’il faut recevoir des notifications par courrier électronique. Il existe également une page **afficher les alertes** dans le centre de sécurité et conformité où vous pouvez afficher et filtrer des alertes, définir un statut d’alerte pour vous aider à gérer les alertes, puis ignorer les alertes après avoir résolu ou résolu l’incident sous-jacent. Nous avons également développé le type d’événements pour lesquels vous pouvez créer des alertes. Par exemple, vous pouvez créer des stratégies d’alerte pour suivre les activités de programmes malveillants et les incidents de perte de données. Nous avons également inclus plusieurs stratégies d’alerte par défaut qui vous permettent de surveiller les activités telles que l’attribution de privilèges d’administrateur dans Exchange Online, les attaques de programmes malveillants, les campagnes de hameçonnage et les niveaux inhabituels de suppression de fichiers et de partage externe.
 
 > [!NOTE]
-> Les stratégies d’alerte sont disponibles pour les organisations disposant d’un abonnement Microsoft 365, Office 365 Enterprise ou Office 365 gouvernement E1/F1/G1, E3/G3 ou E5/G5. Les fonctionnalités avancées sont disponibles uniquement pour les organisations disposant d’un abonnement E5/G5 ou pour les organisations disposant d’un abonnement E1/F1/G1 ou E3/G3 et d’un abonnement Office 365 Advanced Threat Protection (ATP) ou Microsoft 365 E5 Compliance ou un abonnement Microsoft 365 E5 eDiscovery et audit. La fonctionnalité nécessitant un abonnement E5/G5 ou complément est mise en surbrillance dans cette rubrique. Notez également que les stratégies d’alerte sont disponibles dans les environnements Office 365 GCC, GCC High et DoD US Government.
+> Les stratégies d’alerte sont disponibles pour les organisations disposant d’un abonnement Microsoft 365 Enterprise, Office 365 Enterprise ou Office 365 gouvernement E1/F1/G1, E3/G3 ou E5/G5. Les fonctionnalités avancées sont disponibles uniquement pour les organisations disposant d’un abonnement E5/G5 ou pour les organisations disposant d’un abonnement E1/F1/G1 ou E3/G3 et d’un abonnement Office 365 Advanced Threat Protection (ATP) ou Microsoft 365 E5 Compliance ou un abonnement Microsoft 365 E5 eDiscovery et audit. La fonctionnalité nécessitant un abonnement E5/G5 ou complément est mise en surbrillance dans cette rubrique. Notez également que les stratégies d’alerte sont disponibles dans les environnements Office 365 GCC, GCC High et DoD US Government.
 
 ## <a name="how-alert-policies-work"></a>Fonctionnement des stratégies d’alerte
 
@@ -53,7 +53,7 @@ Voici un aperçu rapide du fonctionnement des stratégies d’alerte et des aler
 
 Une stratégie d’alerte est constituée d’un ensemble de règles et de conditions qui définissent l’activité de l’utilisateur ou de l’administrateur qui génère une alerte, la liste des utilisateurs qui déclenchent l’alerte si elles effectuent l’activité, ainsi qu’un seuil qui définit le nombre de fois que l’activité doit avoir lieu avant le déclenchement d’une alerte. Vous pouvez également catégoriser la stratégie et lui attribuer un niveau de gravité. Ces deux paramètres vous aident à gérer les stratégies d’alerte (et les alertes déclenchées lorsque les conditions de la stratégie sont respectées), car vous pouvez filtrer ces paramètres lors de la gestion des stratégies et de l’affichage des alertes dans le centre de sécurité et de conformité. Par exemple, vous pouvez afficher les alertes qui répondent aux conditions de la même catégorie ou afficher les alertes ayant le même niveau de gravité.
 
-Pour afficher et créer des stratégies d’alerte, [https://protection.office.com](https://protection.office.com) accédez à, puis sélectionnez alertes d' **alerte**des **alertes** \> .
+Pour afficher et créer des stratégies d’alerte, accédez à, [https://protection.office.com](https://protection.office.com) puis sélectionnez alertes d’alerte des **alertes** \> **Alert policies**.
 
 ![Dans le centre de sécurité et de conformité, sélectionnez alertes, puis sélectionnez stratégies d’alerte pour afficher et créer des stratégies d’alerte.](../media/09ebd451-8e84-44e1-aefc-63e70bba4d97.png)
 
@@ -141,7 +141,7 @@ L’activité inhabituelle surveillée par certaines stratégies intégrées est
 
 Lorsqu’une activité effectuée par les utilisateurs de votre organisation correspond aux paramètres d’une stratégie d’alerte, une alerte est générée et affichée sur la page **afficher les alertes** dans le centre de sécurité et de conformité. En fonction des paramètres d’une stratégie d’alerte, une notification par courrier électronique est également envoyée à une liste d’utilisateurs spécifiés lorsqu’une alerte est déclenchée. Pour chaque alerte, le tableau de bord sur la page **afficher les alertes** affiche le nom de la stratégie d’alerte correspondante, la gravité et la catégorie de l’alerte (définies dans la stratégie d’alerte), ainsi que le nombre de fois qu’une activité a eu lieu et a entraîné la génération de l’alerte. Cette valeur est basée sur le paramètre seuil de la stratégie d’alerte. Le tableau de bord affiche également l’état de chaque alerte. Pour plus d’informations sur l’utilisation de la propriété Status pour gérer les alertes, consultez la section [gestion des alertes](#managing-alerts) .
 
-Pour afficher les alertes, accédez [https://protection.office.com](https://protection.office.com) à, puis **Sélectionnez** \> alertes **Afficher**les alertes.
+Pour afficher les alertes, accédez à, [https://protection.office.com](https://protection.office.com) puis sélectionnez **alertes** \> **Afficher**les alertes.
 
 ![Dans sécurité et conformité, sélectionnez alertes, puis afficher les alertes pour afficher les alertes.](../media/ec5ea59b-bf61-459f-8b65-970ab4bb8bcc.png)
 
@@ -158,6 +158,27 @@ Vous pouvez utiliser les filtres suivants pour afficher un sous-ensemble de tout
 - **Catégories.** Utilisez ce filtre pour afficher les alertes d’une ou de plusieurs catégories d’alerte.
 
 - **Journal.** Utilisez ce filtre pour afficher les alertes déclenchées par les stratégies d’alerte dans le centre de sécurité et de conformité ou les alertes déclenchées par les stratégies de sécurité d’application Cloud d’Office 365, ou les deux. Pour plus d’informations sur les alertes de sécurité d’application Cloud Office 365, consultez la section [affichage des alertes de sécurité des applications Cloud](#viewing-cloud-app-security-alerts) .
+
+## <a name="alert-aggregation"></a>Agrégation d’alertes
+
+Lorsque plusieurs événements répondant aux conditions d’une stratégie d’alerte se produisent avec une courte période de temps, ils sont ajoutés à une alerte existante par un processus appelé *agrégation d’alertes*. Lorsqu’un événement déclenche une alerte, l’alerte est générée et affichée sur la page **afficher les alertes** et une notification est envoyée. Si le même événement se produit dans l’intervalle d’agrégation, Microsoft 365 ajoute des détails sur le nouvel événement à l’alerte existante au lieu de déclencher une nouvelle alerte. L’objectif de l’agrégation d’alertes est de réduire la « fatigue » de l’alerte et de vous laisser le focus et d’agir sur des alertes moins nombreuses pour le même événement.
+
+La longueur de l’intervalle d’agrégation dépend de votre abonnement Office 365 ou Microsoft 365.
+
+|Abonnement|Intervalle d’agrégation|
+|:---------|:---------:|
+|Office 365 ou Microsoft 365 E5/G5|1 minute|
+|Office 365 – Protection avancée contre les menaces (Plan 2) |1 minute|
+|E5 complément de conformité ou complément de découverte et d’audit E5|1 minute|
+|Office 365 ou Microsoft 365 E1/F1/G1 ou E3/F3/G3|15 minutes|
+|Office 365 DAV plan 1 ou Exchange Online Protection|15 minutes|
+|||
+
+Lorsque des événements correspondant à la même stratégie d’alerte se produisent dans l’intervalle d’agrégation, les détails de l’événement suivant sont ajoutés à l’alerte d’origine. Pour tous les événements, les informations relatives aux événements agrégés s’affichent dans le champ détails et le nombre de fois qu’un événement a eu lieu avec l’intervalle d’agrégation est affiché dans le champ activité/nombre d’accès. Vous pouvez afficher des informations supplémentaires sur toutes les instances d’événements agrégés en affichant la liste des activités.
+
+La capture d’écran suivante montre une alerte avec quatre événements d’agrégation. La liste activité contient des informations sur les quatre messages électroniques pertinents pour l’alerte.
+
+![Exemple d’agrégation d’alertes](../media/AggregatedAlertExample.png)
 
 ## <a name="rbac-permissions-required-to-view-alerts"></a>Autorisations RBAC requises pour afficher les alertes
 

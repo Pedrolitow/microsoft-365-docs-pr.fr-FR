@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Découvrez ce qui se passe lorsqu’une enquête ou une casse légale prise en charge par un cas avancé eDiscovery est fermée ou supprimée.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: be8d133a8215fc40c6d33025f9f4d1dee0f3b609
-ms.sourcegitcommit: 5c96d06496d40d2523edbea336f7355c3c77cc80
+ms.openlocfilehash: ffdd93351325be0c4b5d6d8cdfb78e55b710c0be
+ms.sourcegitcommit: 6746fae2f68400fd985711b1945b66766d2a59a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 05/29/2020
-ms.locfileid: "44412783"
+ms.locfileid: "44419060"
 ---
 # <a name="close-or-delete-an-advanced-ediscovery-case"></a>Fermer ou supprimer un cas avancé eDiscovery
 
@@ -56,7 +56,7 @@ Lorsque vous rouvrez un cas avancé eDiscovery, les conservations qui étaient e
 
 Pour rouvrir un cas fermé :
 
-1. Sur la page **Advanced eDiscovery** , sélectionnez le cas que vous souhaitez supprimer.
+1. Sur la page **Advanced eDiscovery** , sélectionnez le cas que vous souhaitez rouvrir.
 
 2. Dans l’onglet **paramètres** , sous **informations**sur le cas, cliquez sur **Sélectionner**.
 

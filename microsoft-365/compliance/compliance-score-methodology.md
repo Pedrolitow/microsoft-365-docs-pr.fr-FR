@@ -14,17 +14,17 @@ search.appverid:
 - MOE150
 - MET150
 description: Comprendre comment le score de conformité Microsoft calcule un score personnalisé en fonction des actions entreprises pour traiter les risques et améliorer la position de votre conformité.
-ms.openlocfilehash: 10e75be9541c4bd2b5a62d8bea46c45d213655e2
-ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
+ms.openlocfilehash: e1a13cee8086e158f3869a00384166366c0a63dc
+ms.sourcegitcommit: 436841236dc41390a3be9f8936d19d3d017fa35c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43141582"
+ms.lasthandoff: 05/30/2020
+ms.locfileid: "44429189"
 ---
 # <a name="microsoft-compliance-score-preview-calculation"></a>Calcul du score de conformité Microsoft (aperçu)
 
 > [!IMPORTANT]
-> Le score de conformité n’exprime pas une mesure absolue de la conformité de l’organisation avec une norme ou réglementation particulière. Elle exprime la mesure dans laquelle vous avez adopté des contrôles qui peuvent réduire les risques pour les données personnelles et la confidentialité individuelle. Les recommandations du score de conformité et du gestionnaire de conformité ne doivent pas être interprétées comme garantie de conformité. Ce service est actuellement en version préliminaire et est soumis aux conditions des [services en ligne](https://go.microsoft.com/fwlink/?linkid=2108910).
+> Les recommandations du Gestionnaire de conformité ne doivent pas être interprétées comme une garantie de conformité. Il vous revient d’évaluer et de valider l’efficacité des contrôles client selon votre environnement réglementaire. Ces services sont actuellement en version préliminaire et soumis aux conditions des [services en ligne](https://go.microsoft.com/fwlink/?linkid=2108910). Consultez également [les conseils Microsoft 365 sur les licences pour la sécurité et la conformité](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
 
 ## <a name="overview"></a>Vue d’ensemble
 
@@ -37,7 +37,7 @@ Les valeurs de score de conformité affichées pour le contrôle sont appliquée
 - Le statut de l' **implémentation** est égal à **implémenté** ou **autre implémentation** et,
 - Le **résultat des tests** est égal à **passé**.
 
-La somme des points gagnés en prenant en charge les actions d’amélioration est le score de contrôle. La somme de vos scores de contrôle est le score d’évaluation. La somme de vos scores d’évaluation est le score de conformité global
+La somme des points gagnés en prenant en charge les actions d’amélioration est le score de contrôle. La somme de vos scores de contrôle est le score d’évaluation. La somme de vos scores d’évaluation est votre score de conformité global.
 
 ## <a name="initial-score-based-on-microsoft-365-data-protection-baseline"></a>Score initial basé sur la base de données de protection des données Microsoft 365
   
@@ -83,8 +83,8 @@ Chaque contrôle a une valeur affectée dans le score de conformité en fonction
 | Préventif obligatoire | vingt |
 | Discrétionnaire préventif | 9  |
 | Détective obligatoire | 3 |
-| Discrétion de détective | 0,1 |
+| Discrétion de détective | 1  |
 | Correction obligatoire | 3 |
-| Correction discrétionnaire corrective | 0,1 |
+| Correction discrétionnaire corrective | 1  |
   
 ![Valeurs de point de contrôle de score de conformité](../media/compliance-score-controls-scoring.png "Valeurs de point de contrôle de score de conformité")

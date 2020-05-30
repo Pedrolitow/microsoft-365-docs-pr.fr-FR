@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Découvrez les propositions pour vous aider à acheter des produits et services Microsoft.
 ROBOTS: NOINDEX
-ms.openlocfilehash: ded29a4eab3dd19d7ce3a1f60dff968e34b434a0
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 6de3f116b9266ad8f2d4d245cc0ac4b7422bbf4d
+ms.sourcegitcommit: 6746fae2f68400fd985711b1945b66766d2a59a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44403125"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "44419111"
 ---
 # <a name="understand-the-proposal-workflow"></a>Comprendre le flux de travail de proposition
 
@@ -31,7 +31,7 @@ Un représentant Microsoft élabore une proposition qui contient les éléments 
 
 Une fois que vous avez reçu le message de notification, suivez le lien vers le site de proposition. Une fois que vous vous êtes connecté au site, vous pouvez démarrer le processus de révision de la proposition.
 
-## <a name="what-are-the-organization-prerequisites-to-buy-items-with-a-proposal"></a>Quelles sont les conditions préalables de l’Organisation pour acheter des éléments avec une proposition ?
+## <a name="prerequisites-for-buying-items-with-a-proposal"></a>Conditions préalables à l’achat d’éléments à l’aide d’une proposition
 
 Avant de pouvoir acheter des objets pour une proposition, vous devez disposer d’un compte de facturation et d’un accord avec Microsoft.
 
@@ -49,7 +49,7 @@ Pour plus d’informations sur les comptes de facturation, consultez la rubrique
 
 Microsoft client Agreement (MCA) permet à une organisation d’acheter des produits et des services Microsoft. Pour plus d’informations, consultez la rubrique [Microsoft Customer Agreement](https://www.microsoft.com/en-us/Licensing/how-to-buy/microsoft-customer-agreement).
 
-## <a name="what-permissions-do-i-need-to-sign-an-agreement-or-pay-for-items"></a>Quelles sont les autorisations nécessaires pour signer un accord ou payer des éléments ?
+## <a name="permissions-needed-to-sign-an-agreement-or-pay-for-items"></a>Autorisations nécessaires pour signer un accord ou payer des éléments
 
 Si vous n’avez pas de rôle affecté dans le compte de facturation, lorsque vous affichez la proposition, le rôle lecteur de base vous est attribué. Ce rôle vous permet d’afficher, sans effectuer d’action, la proposition. Vous devez disposer du rôle de collaborateur du compte de facturation ou du collaborateur du compte de facturation avant de pouvoir signer un contrat ou acheter des produits et des services. Le propriétaire de votre compte de facturation peut vous attribuer ce rôle.
 
@@ -59,7 +59,7 @@ S’il s’agit d’un nouveau compte de facturation et que personne n’a accep
 
 - Sont les personnes nommées dans la proposition \
     OR
-- Est déjà un administrateur global Azure Active Directory pour votre organisation
+- Est déjà un [administrateur global Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles) pour votre organisation
 
 ## <a name="what-is-the-overall-workflow"></a>Qu’est-ce que le flux de travail global ?
 
@@ -86,7 +86,6 @@ Le tableau suivant contient des termes et des définitions qui apparaissent dans
 |------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Compte de facturation | Compte utilisé pour gérer les paramètres de votre compte, les factures, les modes de paiement et les produits. |
 | Profil de facturation | Informations sur votre organisation qui vous permettent de personnaliser les éléments inclus dans votre facture et le mode de paiement de vos factures. Le profil de facturation inclut le nom du compte de facturation, les modes de paiement utilisés pour le profil de facturation spécifique, les informations de contact, les paramètres de facturation et les autorisations qui vous permettent de modifier le profil de facturation, de payer les factures et d’acheter des produits et services. |
-| Conditions d’achat des affiliés client (CAPT) | Un ensemble de termes supplémentaire qui permet à une filiale de votre organisation d’acheter des produits et des services sans signer une MCA distincte. |
 | Accords existants | Tout accord que votre organisation a déjà en place avec Microsoft. Cela peut inclure, sans s’y limiter, un contrat entreprise, un contrat de service & Microsoft Product ou un contrat de client Microsoft. |
 | Microsoft client Agreement (MCA) | Accord décrivant les termes et conditions du compte détenu par votre organisation auprès de Microsoft. |
 | Représentant Microsoft | Un représentant Microsoft agréé qui prépare une proposition pour vous et votre organisation. |

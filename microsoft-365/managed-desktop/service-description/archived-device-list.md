@@ -1,19 +1,19 @@
 ---
 title: Appareils archivés Microsoft Managed Desktop
 description: Appareils proches de la préversion que vous pouvez toujours inscrire, mais dont la durée de vie de support est raccourcie
-keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
+keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
 f1.keywords:
 - NOCSH
 ms.author: jaimeo
 ms.localizationpriority: normal
-ms.openlocfilehash: 788021d9bcd531cbd9210299cb90f1cce49db1c7
-ms.sourcegitcommit: 213b33cbf14e35e6dc563e0b700a4eed5e42e91d
+ms.openlocfilehash: e49c2271bd7005c674447cd59d5ccf7439cf4710
+ms.sourcegitcommit: 6746fae2f68400fd985711b1945b66766d2a59a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "42284365"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "44418877"
 ---
 # <a name="microsoft-managed-desktop-archived-devices"></a>Appareils archivés Microsoft Managed Desktop
 
@@ -42,6 +42,7 @@ Pour être inscrit dans Microsoft Managed Desktop, un appareil doit être l’un
 |HP EliteBook x360 1030 G3| 256 Go/Intel i5/8 Go de RAM | SKU avec 5VS01AV, appareil infrarouge obligatoire |**14 mai 2023** |
 |HP EliteBook x360 1040 G5| 256 Go/Intel i5/8 Go de RAM | SKU avec 5VS01AV, appareil infrarouge obligatoire | **23 octobre 2023** |
 |Surface Book 2| 256 Go/Intel i5/8 Go de RAM | Aucun | **16 novembre 2022** |
+|Surface Go| 128 Go/Intel 4415Y/8 Go de RAM | Aucun | **2 août 2023** |
 |Ordinateur portable de surface| 256 Go/Intel i5/8 Go de RAM | Aucun | **20 mai 2022** |
 |Surface Pro| 256 Go/Intel i5/8 Go de RAM | Aucun | **15 juin 2022** |
 
