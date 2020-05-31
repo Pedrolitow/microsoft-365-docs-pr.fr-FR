@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Avec les étiquettes de rétention, vous pouvez baser une période de rétention sur la survenue d’un type d’événement spécifique. L’événement déclenche le début de la période de rétention, et tout le contenu portant une étiquette définie pour ce type d’événement se voit appliquer les actions de rétention de l’étiquette. La rétention basée sur un événement est généralement utilisée dans le cadre d’un processus de gestion des enregistrements.
-ms.openlocfilehash: 00bc5b44a23dfd08eb56fd7b1f6577bf8411003d
-ms.sourcegitcommit: 83f980927728bc080f97a3e6dc70dc305f3df841
+ms.openlocfilehash: 100381d87c51a8ef403a88f19159235081c2a8df
+ms.sourcegitcommit: 330e9baf02b5bc220d61f777c2338814459626ec
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44053882"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44385016"
 ---
 # <a name="overview-of-event-driven-retention"></a>Vue d’ensemble des rétentions basées sur des événements
 
@@ -108,13 +108,16 @@ Notez qu’une fois que vous sélectionnez un type d’événement et créez l�
   
 ![Options permettant de créer ou de sélectionner un type d’événement](../media/8b7afe79-72cb-462e-81d4-b5ddbe899dbc.png)
   
-### <a name="step-3-publish-the-event-based-retention-labels"></a>Étape 3 : publier les étiquettes de rétention basées sur les événements
+### <a name="step-3-publish-or-auto-apply-the-event-based-retention-labels"></a>Étape 3 : publier ou appliquer automatiquement les étiquettes de rétention basées sur les événements
 
-Publiez vos étiquettes de rétention basées sur les événements afin de pouvoir les appliquer manuellement au contenu. Vous ne pouvez pas sélectionner une étiquette de rétention basée sur l’événement pour une stratégie d’application automatique. 
+Comme pour n’importe quelle étiquette de rétention, vous devez [publier ou appliquer automatiquement](create-retention-labels.md) une étiquette basée sur un événement, de sorte qu’elle soit appliquée au contenu de façon manuelle ou automatique.
 
-Pour publier vos étiquettes de rétention basées sur les événements, allez à la page **Classification** > **Étiquettes de rétention**.
-  
-![Options permettant de publier ou d’appliquer automatiquement une étiquette de rétention](../media/options-to-publish-auto-apply-retention-label.png)
+> [!NOTE]
+> Si vous sélectionnez une étiquette de rétention basée sur un événement à partir d’un onglet **Gestion des enregistrements** > **Plan de gestion des fichiers** ou **Gouvernance des données** > **Étiquettes**, le bouton **Appliquer automatiquement une étiquette** n’est pas disponible.
+> 
+> Au lieu de ce bouton, utilisez l’option **Appliquer automatiquement une étiquette** au-dessus de la liste des étiquettes ou des stratégies à partir de l’un des emplacements suivants :
+> - Onglet **Gestion des enregistrements** > **Stratégies des étiquettes**
+> - Onglet **Gouvernance des données** > **Étiquettes** ou **Stratégies des étiquettes**
 
 ### <a name="step-4-enter-an-asset-id"></a>Étape 4 : saisissez un ID d’élément
 
@@ -144,7 +147,7 @@ Lorsque vous créez l’événement, choisissez le type d’événement utilisé
 
 Réduisez désormais l’étendue du contenu en spécifiant les ID d’élément pour le contenu SharePoint et OneDrive ou des mots clés pour le contenu Exchange. Pour les ID d’élément, la rétention est appliquée uniquement pour le contenu portant la paire propriété:valeur spécifiée. Si un ID d’élément n’est pas saisi, **tout le contenu** portant des étiquettes de ce type d’événement obtient la même date de rétention qui leur est appliquée. 
   
-Il faut comprendre que l’ID d’élément est simplement une autre propriété du document dans SharePoint et OneDrive Entreprise. Si vous utilisez la propriété AssetID, vous devez saisir ComplianceAssetID:\<valeur\> dans la zone des ID d’élément illustrée ci-dessous.
+L’ID d’élément constitue simplement une autre propriété de document dans SharePoint et OneDrive Entreprise. Si vous utilisez la propriété ID d’élément, vous entrez ComplianceAssetID:\<value\> dans la zone réservée aux ID d’élément illustrée ci-dessous.
   
 Votre organisation a peut-être appliqué d’autres propriétés et ID aux documents liés à ce type d’événement. Par exemple, si vous avez besoin de détecter les enregistrements d’un produit spécifique, l’ID peut être une combinaison de votre propriété personnalisée ProductID et de la valeur « XYZ ». Dans ce cas, vous devez saisir ProductID:XYZ dans la zone pour des ID d’élément illustrée ci-dessous.
   
@@ -162,9 +165,9 @@ Lorsque vous créez une recherche de contenu, procédez comme suit :
   
 - Pour trouver tout le contenu portant une étiquette de rétention spécifique, sélectionnez la condition **Balise de conformité**, puis saisissez le nom d’étiquette en partie ou en intégralité et utilisez un caractère générique. 
     
-- Pour trouver tout le contenu portant un ID d’élément spécifique, saisissez la propriété **ComplianceAssetID** et une valeur, telle que ComplianceAssetID:\<valeur\>. 
+- Pour trouver tout le contenu portant un ID d’élément spécifique, saisissez la propriété **ComplianceAssetID** et une valeur, telle que ComplianceAssetID:\<value\>. 
     
-Pour obtenir plus d’informations, reportez-vous à la rubrique [Requêtes par mots-clés et conditions de recherche pour la recherche de contenu](keyword-queries-and-search-conditions.md).
+Si vous souhaitez en savoir plus, consultez la page [Requêtes par mots-clés et conditions de recherche pour la recherche de contenu](keyword-queries-and-search-conditions.md).
   
 ## <a name="permissions"></a>Autorisations
 
