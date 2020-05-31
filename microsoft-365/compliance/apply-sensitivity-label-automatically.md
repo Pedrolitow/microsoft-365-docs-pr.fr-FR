@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Lorsque vous créez une étiquette de critère de diffusion, vous pouvez affecter automatiquement une étiquette à un document ou message électronique ou vous pouvez inviter les utilisateurs pour sélectionner l’étiquette que vous recommandez.
-ms.openlocfilehash: 752a394b2e1c3d2219093f2342f597bdac38aee1
-ms.sourcegitcommit: 6ea9a910a8106a5f1aa589c55d166bfa67fd12a8
+ms.openlocfilehash: 318ecd19d7dcfb4b80e1bdcec743057462c44b1b
+ms.sourcegitcommit: 3cd487476efe4138d1b42499fbffbbe4bacfe5b8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/18/2020
-ms.locfileid: "44280554"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "44408476"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Appliquer automatiquement une étiquette sensibilité au contenu
 
@@ -45,10 +45,7 @@ Deux méthodes s’offrent à vous pour appliquer automatiquement une étiquette
     
     Pour des instructions de configuration, consultez l’article [Comment configurer l’étiquetage automatique pour les applications Office](#how-to-configure-auto-labeling-for-office-apps) sur cette page.
 
-- **Étiquetage côté service lorsque le contenu est déjà enregistré (dans SharePoint Online ou dans OneDrive Entreprise) ou est envoyé par e-mail (traité par Exchange Online)**  : utilisez une stratégie d’étiquetage automatique, actuellement en préversion. 
-    
-    > [!NOTE]
-    > Consultez l’aperçu de l’annonce, [Annonçant une préversion publique de la classification automatique avec les étiquettes de confidentialité dans les services Microsoft 365](https://techcommunity.microsoft.com/t5/security-privacy-and-compliance/announcing-public-preview-of-auto-classification-with/ba-p/1279961) et la conférence Web [Présentation de SharePoint & l’étiquetage automatique de OneDrive avec des étiquettes de confidentialité](https://aka.ms/SPOAutoLabelWebinar-Recording).
+- **Étiquetage côté service lorsque le contenu est déjà enregistré (dans SharePoint ou dans OneDrive) ou est envoyé par e-mail (traité par Exchange Online)**  : utilisez une stratégie d’étiquetage automatique. 
     
     Cette méthode est appelée classification automatique avec des étiquettes de confidentialité. Elle est également appelée étiquetage automatique des données au repos (documents dans SharePoint et dans OneDrive) et de données en transit (courriers envoyés ou reçus par Exchange). Dans le cas d’Exchange, cela n’inclut pas les e-mails au repos (boîtes aux lettres). 
     
@@ -60,6 +57,7 @@ Deux méthodes s’offrent à vous pour appliquer automatiquement une étiquette
     - Jusqu’à 25 000 fichiers automatiquement étiquetés (Word, PowerPoint ou Excel) dans votre client par jour
     - Jusqu’à 10 collections de sites pour l’ensemble des stratégies
     - Jusqu’à 10 stratégies au sein de votre client
+    - La date modifiée n’est pas changée du fait des stratégies d’étiquetage automatique pour le mode de simulation et lors de l’application des étiquettes
 
     Spécifique à l’étiquetage automatique pour Exchange :
     - Contrairement à l’étiquetage manuel ou à l’étiquetage automatique avec les applications Office, les pièces jointes Office sont également analysées pour les conditions que vous spécifiez dans votre stratégie d’étiquetage automatique. Lorsqu’une correspondance est trouvée, l’e-mail est étiqueté, mais pas la pièce jointe.
@@ -186,12 +184,14 @@ Spécifique au client d’étiquetage unifié Azure Information Protection :
 - Les informations sensibles peuvent être détectées dans le corps de texte dans les documents et les courriers électroniques, ainsi que dans les en-têtes et pieds de page, mais pas dans la ligne d’objet ni dans les pièces jointes du courrier électronique.
 
 ## <a name="how-to-configure-auto-labeling-policies-for-sharepoint-onedrive-and-exchange"></a>Configurer les stratégies d’étiquetage automatique pour SharePoint, OneDrive et Exchange
-> [!NOTE]
-> Les stratégies d’étiquetage automatique sont progressivement déployées pour les clients en préversion publique et sont sujettes à modification.
+
+N’oubliez pas de connaître les conditions préalables avant de configurer les stratégies d’attribution automatique d’étiquette. 
 
 ### <a name="prerequisites-for-auto-labeling-policies"></a>Conditions préalables pour les stratégies d’étiquetage automatique
 
-- L’audit pour Microsoft 365 doit être activé pour le mode simulation. Si vous devez activer l’audit ou si vous ne savez pas celui-ci est déjà activé, consultez l’article [Activer ou désactiver la recherche dans un journal d’audit](turn-audit-log-search-on-or-off.md).
+- Mode de simulation :
+    - L’audit pour Microsoft 365 doit être activé. Si vous devez activer l’audit ou si vous ne savez pas celui-ci est déjà activé, consultez l’article [Activer ou désactiver la recherche dans un journal d’audit](turn-audit-log-search-on-or-off.md).
+    - Pour afficher le contenu d’un fichier dans la vue source (non pris en charge pour les courriers électroniques), vous devez avoir le rôle de **Visionneuse de contenu de l’Explorateur de contenu** si vous n’êtes pas un administrateur général. Si vous ne disposez pas cette autorisation, le volet générateur d’aperçu ne s’affiche pas lorsque vous sélectionnez un élément dans l’onglet **Élément correspondant**.
 
 - Pour étiqueter automatiquement des fichiers dans SharePoint et OneDrive :
     - Vous avez [activé les étiquettes de confidentialité pour les fichiers Office dans SharePoint et OneDrive (préversion publique)](sensitivity-labels-sharepoint-onedrive-files.md)
@@ -236,9 +236,9 @@ Enfin, vous pouvez utiliser le mode simulation pour fournir une approximation du
     
     Si vous ne voyez pas immédiatement cette option, sélectionnez tout d’abord **Tout afficher**.
 
-2. Sélectionnez l’onglet **Étiquetage automatique (préversion)**  :
+2. Sélectionnez l’onglet **Étiquetage automatique** :
     
-    ![Onglet Étiquetage automatique (préversion)](../media/auto-labeling-tab.png)
+    ![Onglet étiquetage automatique](../media/auto-labeling-tab.png)
     
 
 3. Sélectionnez **+ Créer une stratégie**.
@@ -248,6 +248,12 @@ Enfin, vous pouvez utiliser le mode simulation pour fournir une approximation du
 5. Pour la page **Nommer votre stratégie d’étiquetage automatique** : donnez un nom unique et éventuellement une description pour vous aider à identifier l’étiquette, les emplacements et les conditions appliqués automatiquement qui identifient le contenu à étiqueter.
 
 6. Pour la page **Choisir les emplacements dans lesquels vous souhaitez appliquer l’étiquette** : sélectionner et spécifier les emplacements pour Exchange, les sites SharePoint et OneDrive. Ensuite, sélectionnez **Suivant**.
+    
+    Vous devez spécifier des comptes individuels pour OneDrive. L’URL de l’utilisateur OneDrive est au format suivant : `https://<tenant name>-my.sharepoint.com/personal/<user_name>_<tenant name>_com`
+    
+    Par exemple, pour un utilisateur du client contoso dont le nom d’utilisateur est « rsimone » : `https://contoso-my.sharepoint.com/personal/rsimone_contoso_onmicrosoft_com`
+    
+    Pour vérifier la syntaxe de votre client et identifier les URL des utilisateurs, voir [Obtenir la liste de toutes les URL OneDrive utilisateur de votre organisation](https://docs.microsoft.com/onedrive/list-onedrive-urls).
 
 7. Pour la page **Définir les paramètres de stratégie** : conservez la valeur par défaut de **Rechercher du contenu contenant** pour définir des règles qui identifient le contenu à étiqueter dans tous les emplacements sélectionnés. Si vous avez besoin de règles différentes pour chaque emplacement, sélectionnez **Paramètres avancés**. Ensuite, sélectionnez **Suivant**.
     
@@ -280,7 +286,7 @@ Enfin, vous pouvez utiliser le mode simulation pour fournir une approximation du
     
     Contrairement à l’étiquetage automatique pour les applications Office, il n’y a pas d’option de publication distincte. Cependant, comme pour la publication d’étiquettes, prévoyez jusqu’à 24 heures pour que la stratégie d’étiquetage automatique soit reproduite dans toute votre organisation.
 
-Désormais, sur la page **Protection des informations**, onglet **Etiquetage automatique (aperçu)**, vous pouvez voir votre stratégie d’attribution automatique dans les sections **Simulation** ou **Désactivée**, selon que vous avez choisi de l’exécuter en mode de simulation ou non. Sélectionnez votre stratégie pour afficher les détails de la configuration et de son état (par exemple, **La simulation de stratégie est en cours d’exécution**). Pour les stratégies en mode simulation, sélectionnez l’onglet **éléments correspondants** pour afficher les messages électroniques ou les documents correspondants aux règles que vous avez spécifiées.
+Désormais, sur la page **Protection des informations**, onglet **Etiquetage automatique**, vous pouvez voir votre stratégie d’attribution automatique dans les sections **Simulation** ou **Désactivée**, selon que vous avez choisi de l’exécuter en mode de simulation ou non. Sélectionnez votre stratégie pour afficher les détails de la configuration et de son état (par exemple, **La simulation de stratégie est en cours d’exécution**). Pour les stratégies en mode simulation, sélectionnez l’onglet **éléments correspondants** pour afficher les messages électroniques ou les documents correspondants aux règles que vous avez spécifiées.
 
 Vous pouvez modifier votre stratégie directement à partir de cette interface :
 
