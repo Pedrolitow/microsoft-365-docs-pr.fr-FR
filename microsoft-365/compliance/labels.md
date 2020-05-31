@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Découvrez comment les étiquettes de rétention classent les données au sein de votre organisation à des fins de gouvernance, et comment appliquer des règles de rétention basées sur cette classification. Vous pouvez également utiliser des étiquettes de rétention pour appliquer une solution de gestion des enregistrements pour Microsoft 365.
-ms.openlocfilehash: 54691f996f1b2e0759c4d8758df0044a32b9ffa9
-ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
+ms.openlocfilehash: fa24bacedf0e8bd3707fa9a6fd87fff81041e2e8
+ms.sourcegitcommit: 21977f5cb6b01aee5cae54979717530b2a31a46a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "44327902"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "44411041"
 ---
 # <a name="learn-about-retention-labels"></a>Découvrir les étiquettes de rétention
 
@@ -107,10 +107,6 @@ Pour comprendre comment et pourquoi une étiquette de rétention est appliquée 
 
 Une étiquette de rétention attribuée de manière explicite prévaut sur une étiquette de rétention attribuée de manière implicite. Si vous souhaitez en savoir plus, consultez la section de cette page nommée [Principes de rétention et priorité](#the-principles-of-retention-or-what-takes-precedence).
 
-Dans les résultats, la propriété `ELCLastSuccessTimeStamp` (UTC) indique quand le système a traité votre boîte aux lettres pour la dernière fois. Si cela ne s’est pas produit depuis la création de la stratégie, les étiquettes ne s’affichent pas. Pour forcer le traitement, exécutez la commande `Start-ManagedFolderAssistant -Identity <user>`.
-    
-Si les étiquettes n’apparaissent pas dans Outlook sur le web comme prévu, veillez à vider le cache dans votre navigateur (CTRL + F5).
-    
 ## <a name="retention-label-policies-and-locations"></a>Stratégies d’étiquette de rétention et emplacements
 
 Différents types d’étiquettes de rétention peuvent être publiés dans différents emplacements, en fonction du descriptif de l’étiquette de rétention.
@@ -123,12 +119,12 @@ Différents types d’étiquettes de rétention peuvent être publiés dans diff
    
 Dans Exchange, les étiquettes de rétention d’application automatique (pour les requêtes et les types d’informations sensibles) sont appliquées uniquement aux nouveaux messages envoyés (données en transit) et pas à tous les éléments présents dans la boîte aux lettres (données au repos). Par ailleurs, les étiquettes de rétention d’application automatique pour les types d’informations sensibles ne peuvent s’appliquer qu’à toutes les boîtes aux lettres. Vous ne pouvez pas sélectionner les boîtes aux lettres spécifiques.
   
-Les dossiers publics Exchange et Skype ne prennent pas en charge les étiquettes de rétention.
+Les dossiers publics Exchange, Skype et les messages et conversations de canal Teams ne prennent pas en charge les étiquettes de rétention.
 
 ## <a name="how-retention-labels-enforce-retention"></a>Comment les étiquettes appliquent la rétention
 
-Les étiquettes de rétention peuvent appliquer les mêmes actions de rétention qu’une stratégie de rétention, c’est-à-dire conserver puis supprimer le contenu, le conserver uniquement ou le supprimer uniquement. Vous pouvez utiliser des étiquettes de rétention pour mettre en place un plan de gestion de contenu (ou plan de gestion de fichiers) sophistiqué. Si vous souhaitez en savoir plus sur le fonctionnement des stratégies de rétention, consultez la page [Découvrir les stratégies de rétention](retention-policies.md).
-  
+Les étiquettes de rétention peuvent appliquer les mêmes actions de rétention qu’une stratégie de rétention, c’est-à-dire conserver puis supprimer le contenu, le conserver uniquement ou le supprimer uniquement. Vous pouvez utiliser des étiquettes de rétention pour implémenter un plan de fichiers sophistiqué qui identifie des fichiers spécifiques pour différents paramètres de rétention. Si vous souhaitez en savoir plus sur le fonctionnement des stratégies de rétention, consultez la page [Découvrir les stratégies de rétention](retention-policies.md).
+
 En outre, une étiquette de rétention dispose de deux options de rétention qui sont disponibles uniquement dans une étiquette de rétention et non dans une stratégie de rétention. Avec une étiquette de rétention, vous pouvez effectuer les actions suivantes :
   
 - Déclenchez une révision avant destruction à la fin d’une période de rétention afin que les documents SharePoint et OneDrive soient analysés avant de pouvoir être supprimés. Si vous souhaitez en savoir plus, consultez la page [Révisions avant destruction](disposition.md#disposition-reviews).
@@ -136,6 +132,8 @@ En outre, une étiquette de rétention dispose de deux options de rétention qui
 - Démarrer la période de rétention à compter de la date d’étiquetage du contenu, au lieu de l’ancienneté du contenu ou de la date de sa dernière modification. Cette option s'applique uniquement au contenu des sites SharePoint et des comptes OneDrive. Pour la messagerie Exchange, la période de rétention est toujours basée sur la date à laquelle le message a été envoyé ou reçu, quelle que soit l’option choisie.
     
 ![Paramètres de rétention avec les options spécifiques des étiquettes](../media/c49118c9-6279-4661-94db-deffa76e27ac.png)
+
+Une autre différence majeure réside dans le fait que, lorsque vous appliquez une étiquette de rétention au lieu d’une stratégie de rétention aux fichiers dans SharePoint, et que l’étiquette est configurée de manière à conserver le contenu, les utilisateurs ne peuvent pas supprimer le fichier pendant la période de rétention. Les utilisateurs peuvent supprimer du contenu lorsque la même étiquette est appliquée aux fichiers dans OneDrive et aux courriers électroniques, sauf si l’étiquette marque le contenu en tant qu’enregistrement.
 
 ## <a name="where-published-retention-labels-can-appear-to-end-users"></a>Emplacements des étiquettes de rétention publiées visibles pour les utilisateurs finals
 
@@ -197,7 +195,7 @@ Après avoir appliqué une étiquette de rétention à un élément, vous pouvez
 ![Étiquette appliquée apparaissant dans le volet d’informations](../media/d06e585e-29f7-4c8c-afef-629c97268b8e.png)
   
 Pour SharePoint, vous pouvez créer un affichage de la bibliothèque qui contient la colonne **Étiquettes** ou la colonne **L’élément est un enregistrement**. Cela n’est pas possible pour OneDrive. Cet affichage vous permet de voir rapidement les étiquettes de rétention attribuées à tous les éléments et les éléments qui sont des enregistrements. Notez cependant que vous ne pouvez pas filtrer l’affichage en utilisant la colonne **L’élément est un enregistrement**. Si vous souhaitez savoir comment ajouter des colonnes, consultez la page [Afficher ou masquer des colonnes dans une liste ou une bibliothèque](https://support.microsoft.com/fr-FR/office/show-or-hide-columns-in-a-list-or-library-b820db0d-9e3e-4ff9-8b8b-0b2dbefa87e2).
-  
+
 
 ### <a name="microsoft-365-groups"></a>Groupes Microsoft 365
 
@@ -276,11 +274,12 @@ Lorsque vous créez une étiquette de rétention, vous pouvez le faire sans acti
   
 Par exemple, vous pouvez créer une étiquette de rétention nommée « Réviser plus tard » sans action, puis appliquer automatiquement cette étiquette de rétention au contenu avec des types d’informations sensibles ou au contenu recherché.
   
-![Page Paramètres d’étiquette avec rétention désactivée](../media/17ce863b-a823-426e-aaad-83718465f762.png)
+![Page Paramètres d’étiquette avec rétention désactivée](../media/retention-label-retentionoff.png)
+
   
 ## <a name="using-retention-labels-for-records-management"></a>Utilisation d’étiquettes de rétention pour la gestion des enregistrements
     
-Vous pouvez utiliser des étiquettes de rétention pour déclarer du contenu sous la forme d’un enregistrement. Cela vous permet de mettre en place une stratégie de gestion des enregistrements unique et cohérente au sein de Microsoft 365. Pour plus d’informations, voir [Présentation des enregistrements](records.md).
+Vous pouvez utiliser des étiquettes de rétention pour déclarer du contenu sous la forme d’un enregistrement. Cela vous permet de mettre en place une stratégie de gestion des enregistrements unique et cohérente au sein de Microsoft 365. Pour plus d’informations, voir [En savoir plus sur les enregistrements](records.md).
   
 ## <a name="using-a-retention-label-as-a-condition-in-a-dlp-policy"></a>Utilisation d’une étiquette de rétention comme condition dans une stratégie DLP
 
