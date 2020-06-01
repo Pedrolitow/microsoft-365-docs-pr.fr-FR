@@ -22,12 +22,12 @@ search.appverid:
 - GEA150
 ms.assetid: 9b497c85-d0a4-4735-80fa-d3565bc05bd1
 description: Découvrez comment supprimer des licences de comptes d’utilisateur.
-ms.openlocfilehash: 7207509c8e20710abae53cb095f7cbedfdc3bd6b
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 18fd23ab2eeb471f29be28cd03daae808c9eccf1
+ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399679"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44432230"
 ---
 # <a name="unassign-licenses-from-users"></a>Annuler l'assignation des licences aux utilisateurs
 
@@ -45,9 +45,6 @@ Vous pouvez supprimer ou annuler l’affectation des licences des utilisateurs s
 
 Lorsque vous utilisez la page **licences** pour annuler l’affectation des licences, vous désaffectez les licences d’un produit spécifique pour un maximum de 20 utilisateurs. 
 
-> [!NOTE]
-> Si le nouveau Centre d’administration Microsoft 365 n’est pas celui que vous utilisez, vous pouvez l’activer en sélectionnant le bouton bascule **Essayer le nouveau Centre d’administration** situé en haut de la page d’accueil.
-
 1. Dans le Centre d’administration, choisissez la page **Facturation** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Licences</a>.
 2. Sélectionnez le produit pour lequel vous souhaitez annuler l’affectation des licences.
 3. Sélectionnez les utilisateurs pour lesquels vous souhaitez annuler l’affectation des licences.
@@ -59,11 +56,8 @@ Lorsque vous utilisez la page **licences** pour annuler l’affectation des lice
 ## <a name="unassign-licenses-from-one-user-on-the-active-users-page"></a>Annuler l’affectation des licences d’un utilisateur sur la page utilisateurs actifs
 
 ::: moniker range="o365-worldwide"
-
-> [!NOTE]
-> Si le nouveau Centre d’administration Microsoft 365 n’est pas celui que vous utilisez, vous pouvez l’activer en sélectionnant le bouton bascule **Essayer le nouveau Centre d’administration** situé en haut de la page d’accueil.
   
-1. Dans le Centre d’administration, accédez à la page **Utilisateurs >** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utilisateurs actifs</a>.
+1. Dans le Centre d’administration, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utilisateurs actifs</a>.
 
 2. Sur la page **utilisateurs actifs** , sélectionnez la ligne de l’utilisateur pour lequel vous souhaitez annuler l’affectation d’une licence.
 
@@ -105,10 +99,7 @@ Lorsque vous utilisez la page **licences** pour annuler l’affectation des lice
 
 ::: moniker range="o365-worldwide"
 
-> [!NOTE]
-> Si le nouveau Centre d’administration Microsoft 365 n’est pas celui que vous utilisez, vous pouvez l’activer en sélectionnant le bouton bascule **Essayer le nouveau Centre d’administration** situé en haut de la page d’accueil.
-
-1. Dans le Centre d’administration, accédez à la page **Utilisateurs >** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utilisateurs actifs</a>.
+1. Dans le Centre d’administration, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utilisateurs actifs</a>.
 
 2. Sélectionnez les cercles en regard des noms des utilisateurs pour lesquels vous souhaitez annuler l’affectation de licences.
 

@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Découvrez comment les utilisateurs utilisent les étiquettes de confidentialité dans les applications Office pour le bureau, les applications Office pour mobile et les applications Office pour le Web. Découvrez les applications qui prennent en charge les étiquettes de sensibilité.
-ms.openlocfilehash: 2cff14f2de60136b35399225da7cb04bbf9e880c
-ms.sourcegitcommit: 98782ee4497d72232462c51a3071fae313282980
+ms.openlocfilehash: e8cb869e6883df99babfb8d20bf8130678e0f9da
+ms.sourcegitcommit: 1b560ee45f3b0253fa5c410a4499373c1f92da9c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44222503"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44432593"
 ---
 # <a name="use-sensitivity-labels-in-office-apps"></a>Utiliser les étiquettes de confidentialité dans les applications Office
 
@@ -168,6 +168,34 @@ Sinon :
 ## <a name="support-for-sharepoint-and-onedrive-files-protected-by-sensitivity-labels"></a>Prise en charge des fichiers SharePoint et OneDrive protégés par les étiquettes de confidentialité
 
 Pour utiliser le client d’étiquetage Office intégré avec Office sur le Web pour des documents dans SharePoint ou OneDrive, vérifiez que vous avez [activé les étiquettes de sensibilité pour les fichiers Office dans SharePoint et onedrive](sensitivity-labels-sharepoint-onedrive-files.md).
+
+## <a name="support-for-external-users-and-labeled-content"></a>Prise en charge des utilisateurs externes et du contenu étiqueté
+
+Lorsque vous étiquetez un document ou un message électronique, l’étiquette est stockée sous la forme de métadonnées incluant votre client et un GUID d’étiquette. Lorsqu’un document étiqueté ou un courrier électronique est ouvert par une application Office qui prend en charge les étiquettes de confidentialité, ces métadonnées sont lues et seulement si l’utilisateur appartient au même client, l’étiquette s’affiche dans son application. Par exemple, pour les étiquettes prédéfinies pour Word, PowerPoint et Excel, le nom de l’étiquette s’affiche dans la barre d’État. 
+
+Cela signifie que si vous partagez des documents avec une autre organisation qui utilise des noms d’étiquettes différents, chaque organisation peut s’appliquer et afficher sa propre étiquette appliquée au document. Toutefois, les éléments suivants d’une étiquette appliquée sont visibles par les utilisateurs externes à votre organisation :
+
+- Marquages de contenu. Lorsqu’une étiquette applique un en-tête, un pied de page ou un filigrane, elle est ajoutée directement au contenu et reste visible jusqu’à ce qu’une personne la modifie ou la supprime.
+
+- Le nom et la description du modèle de protection sous-jacent à partir d’une étiquette qui a appliqué le chiffrement. Ces informations s’affichent dans une barre des messages en haut du document, afin de fournir des informations sur les personnes autorisées à ouvrir le document et leurs droits d’utilisation pour ce document.
+
+### <a name="sharing-encrypted-documents-with-external-users"></a>Partage de documents chiffrés avec des utilisateurs externes
+
+En plus de restreindre l’accès aux utilisateurs de votre organisation, vous pouvez étendre l’accès à tous les utilisateurs disposant d’un compte dans Azure Active Directory. Toutes les applications Office et d’autres [applications RMS](https://docs.microsoft.com/azure/information-protection/requirements-applications#rms-enlightened-applications) peuvent ouvrir des documents chiffrés une fois que l’utilisateur a été authentifié. 
+
+Si les utilisateurs externes n’ont pas de compte dans Azure Active Directory, vous pouvez créer un compte invité pour ceux-ci dans votre client. Pour leur adresse de messagerie, vous pouvez spécifier n’importe quelle adresse de messagerie déjà utilisée. Par exemple, son adresse Gmail. Ce compte d’invité peut également être utilisé pour accéder à un document partagé dans SharePoint ou OneDrive lorsque vous avez [activé les étiquettes de sensibilité pour les fichiers Office dans SharePoint et onedrive](sensitivity-labels-sharepoint-onedrive-files.md).
+
+Les utilisateurs externes peuvent également utiliser et créer un compte Microsoft pour les documents chiffrés lorsqu’ils utilisent les applications Microsoft 365 sur Windows. Cette fonctionnalité n’est pas encore prise en charge pour MacOS, Android ou iOS. Par exemple, une personne partage un document chiffré avec elle, et les paramètres de chiffrement spécifient leur adresse de messagerie Gmail. Cet utilisateur peut créer son propre compte Microsoft qui utilise son adresse de messagerie Gmail. Ensuite, une fois connecté avec ce compte, il peut ouvrir le document et le modifier, en fonction des restrictions d’utilisation spécifiées pour cet utilisateur. Pour un exemple de procédure pas à pas de ce scénario, voir [ouverture et modification du document protégé](https://docs.microsoft.com/azure/information-protection/secure-collaboration-documents#opening-and-editing-the-protected-document).
+
+> [!NOTE]
+> L’adresse de messagerie du compte Microsoft doit correspondre à l’adresse de messagerie spécifiée pour limiter l’accès aux paramètres de chiffrement.
+
+Lorsqu’un utilisateur disposant d’un compte Microsoft ouvre un document chiffré de cette façon, il crée automatiquement un compte invité pour le client s’il n’existe pas déjà un compte invité portant le même nom. Lorsque le compte invité existe, il peut être utilisé pour ouvrir des documents dans SharePoint et OneDrive à l’aide d’un navigateur (Office sur le Web), en plus d’ouvrir des documents chiffrés à partir de l’application de bureau Windows. 
+
+Toutefois, le compte invité automatique n’est pas créé immédiatement en raison de la latence de réplication. Si vous spécifiez des adresses de messagerie personnelles dans le cadre de vos paramètres de chiffrement d’étiquette, nous vous recommandons de créer des comptes invités correspondants dans Azure Active Directory. Indiquez ensuite à ces utilisateurs qu’ils doivent utiliser ce compte pour ouvrir un document chiffré à partir de votre organisation.
+
+> [!TIP]
+> Étant donné que vous ne pouvez pas vous assurer que les utilisateurs externes utiliseront une application cliente Office prise en charge, le partage de liens à partir de SharePoint et de OneDrive après la création de comptes invités est une méthode plus fiable pour prendre en charge la collaboration sécurisée avec des utilisateurs externes.
 
 ## <a name="when-office-apps-apply-content-marking-and-encryption"></a>Lorsque les applications Office appliquent le marquage de contenu et le chiffrement
 

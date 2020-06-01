@@ -20,19 +20,19 @@ search.appverid:
 - MOE150
 ms.assetid: 38fb3333-bfcc-4340-a37b-deda509c2093
 description: Obtenez une vue d’ensemble du centre de messages Microsoft 365 et de son rôle dans la gestion des modifications.
-ms.openlocfilehash: 509c379beffaa4be8bb9cfcd7277ef6beb147bf3
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: c0d23280f5657d656e778c358dfe6349e16db9c3
+ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399703"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44432252"
 ---
 # <a name="message-center"></a>Centre de messages
 
 
 Pour effectuer le suivi des modifications à venir, y compris les fonctionnalités nouvelles et modifiées, la maintenance planifiée ou d’autres annonces importantes, accédez au <a href="https://go.microsoft.com/fwlink/p/?linkid=2070717" target="_blank">Centre de messages</a>. C’est ici que nous publiez des annonces officielles qui vous permettent d’adopter une approche proactive de la gestion des modifications. Chaque billet vous offre une vue d’ensemble de haut niveau d’un changement planifié et de son impact sur vos utilisateurs, ainsi que des liens vers des informations plus détaillées pour vous aider à vous préparer.
   
-Pour ouvrir le centre de messages, vérifiez tout d’abord que vous avez sélectionné le bouton **essayer le nouveau centre d’administration** sur la page d’accueil du centre d’administration, puis procédez comme suit :
+Pour ouvrir le centre de messages :
 
 ::: moniker range="o365-worldwide"
 
@@ -62,7 +62,7 @@ Vous pouvez également utiliser l' [application d’administration 365 de Micros
 |Qui peut afficher les publications dans le centre de messages ?  <br/> |La plupart des utilisateurs auxquels un rôle d’administrateur a été attribué dans Microsoft 365 peuvent afficher les publications du centre de messages. [Voici une liste](#admin-roles-that-dont-have-access-to-the-message-center) des rôles d’administrateur qui n’ont pas accès au centre de messages. Vous pouvez également attribuer le rôle de lecteur du centre de messages aux utilisateurs qui doivent être en mesure de lire et de partager des publications du centre de messages sans disposer d’autres privilèges d’administrateur.<br/><br/> En outre, vous pouvez attribuer le rôle de lecteur de confidentialité du centre de messages aux personnes qui doivent voir les notifications relatives à la sécurité et aux informations de confidentialité pertinentes pour votre organisation. Consultez la rubrique [à propos des rôles d’administrateur](../add-users/about-admin-roles.md) pour en savoir plus sur ce que peut faire chaque rôle d’administrateur. <br/><br/>La plupart des publications du centre de messages peuvent être partagées par courrier électronique avec des utilisateurs non administrateurs qui devront peut-être agir. Cette option n’est pas disponible pour les publications de confidentialité de données affichées par le lecteur de confidentialité du centre de messages. <br/> |
 |Est-ce la seule façon pour Microsoft de communiquer les modifications concernant Microsoft 365 ?  <br/> |Non, il existe de nombreuses façons de communiquer les modifications dans Microsoft 365. Le centre de messages est le principal moyen de communiquer le calendrier des modifications individuelles. Consultez la rubrique [Restez informé des modifications apportées à Microsoft 365](stay-on-top-of-updates.md) pour plus d’informations sur les ressources supplémentaires.  <br/> |
 |Comment puis-je voir des billets dans ma langue ?  <br/> |Les publications du centre de messages sont écrites en anglais uniquement en raison de la durée de publication des informations que nous publions, mais vous pouvez contrôler si, par défaut, les publications sont affichées en anglais ou si elles sont automatiquement traduites dans la langue de votre choix. Et, quelle que soit la vue par défaut choisie, vous pouvez choisir d’effectuer une traduction automatique des publications dans n’importe quelle langue que nous prenons en charge. Pour plus d’informations, voir [traduction de la langue pour les publications du centre de messages](language-translation-for-message-center-posts.md) .  <br/> |
-|Puis-je afficher un aperçu des modifications ou des fonctionnalités avant qu’elles ne soient déployées dans mon organisation ?  <br/> |Amorti. Il est possible d’afficher un aperçu de certaines modifications et de nouvelles fonctionnalités en les optant pour le programme de publication ciblée. Pour choisir, dans le centre d’administration, accédez à **paramètres de configuration**de  >  **profil d’organisation**  >  **Préférences**. (Dans le nouveau centre d’administration, vous devrez peut-être sélectionner **Afficher tout** en bas du volet de navigation de gauche pour afficher les **paramètres**.) Vous pouvez choisir version ciblée pour l’ensemble de votre organisation ou uniquement pour les utilisateurs sélectionnés. Pour plus d’informations sur le programme, voir [options de publication standard ou ciblées dans Microsoft 365](release-options-in-office-365.md) .  <br/> |
+|Puis-je afficher un aperçu des modifications ou des fonctionnalités avant qu’elles ne soient déployées dans mon organisation ?  <br/> |Amorti. Il est possible d’afficher un aperçu de certaines modifications et de nouvelles fonctionnalités en les optant pour le programme de publication ciblée. Pour choisir, dans le centre d’administration, accédez à **paramètres de configuration**de  >  **profil d’organisation**  >  **Préférences**. (Dans le centre d’administration, vous devrez peut-être sélectionner **Afficher tout** en bas du volet de navigation de gauche pour afficher les **paramètres**.) Vous pouvez choisir version ciblée pour l’ensemble de votre organisation ou uniquement pour les utilisateurs sélectionnés. Pour plus d’informations sur le programme, voir [options de publication standard ou ciblées dans Microsoft 365](release-options-in-office-365.md) .  <br/> |
 |Puis-je déterminer la date exacte à laquelle une modification sera disponible pour mon organisation ?  <br/> |Malheureusement, nous ne pouvons pas vous indiquer la date exacte à laquelle une modification sera apportée à votre organisation. Dans notre billet de centre de messages, nous fournirons autant d’informations que possible sur le calendrier de la publication, en fonction de notre niveau de confiance. Nous comprenons que nous souhaitons que nous puissions être plus précis en ce qui concerne le calendrier des versions et nous travaillons sur les améliorations pour mieux comprendre ce niveau de détail.  <br/> |
 |Ces messages sont-ils propres à mon organisation ?  <br/> |Nous faisons de notre mieux pour s’assurer que vous ne voyez que les publications du centre de messages qui affectent votre organisation. La feuille de route Microsoft 365 inclut toutes les fonctionnalités actuellement utilisées et de déploiement, mais toutes ces fonctionnalités ne s’appliquent pas à toutes les organisations. Par exemple, si une fonctionnalité est déployée uniquement vers des établissements scolaires, nous allons cibler la publication du centre de messages uniquement pour ces organisations.  <br/> |
 |Puis-je obtenir des messages du centre de messages envoyés à la place ?  <br/> |OK! Vous pouvez choisir de faire en sorte qu’un résumé hebdomadaire vous soit envoyé par e-mail et jusqu’à deux adresses de messagerie. Si vous avez besoin que le Digest accède à plus de deux personnes, vous pouvez envoyer des informations à un groupe ou une liste de distribution Microsoft 365. Le résumé hebdomadaire envoyé par courrier électronique est activé par défaut. Si vous n’obtenez pas vos résumés hebdomadaires, vérifiez votre dossier de courrier indésirable. Pour plus d’informations sur la configuration du Résumé hebdomadaire, reportez-vous à la section [Préférences](#preferences) de cet article.  <br/> |
@@ -128,9 +128,6 @@ Si l’administration est distribuée au sein de votre organisation, vous ne sou
 - Définissez les préférences de courrier électronique pour recevoir un résumé hebdomadaire de tous les messages, des courriers électroniques pour les mises à jour majeures uniquement et des e-mails pour les messages de confidentialité des données.  
 
 ::: moniker range="o365-worldwide"
-
-> [!NOTE]
-> Si le nouveau Centre d’administration Microsoft 365 n’est pas celui que vous utilisez, vous pouvez l’activer en sélectionnant le bouton bascule **Essayer le nouveau Centre d’administration** situé en haut de la page d’accueil.
 
 1. Sélectionnez **modifier les préférences** dans la partie supérieure du centre de messages.
 

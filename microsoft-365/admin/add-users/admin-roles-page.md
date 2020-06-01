@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Les rôles d’administrateur correspondent à des fonctions professionnelles et accordent l'autorisation d'effectuer des tâches spécifiques dans le centre d’administration. Par exemple, l’administrateur du service ouvre les tickets de support avec Microsoft.
-ms.openlocfilehash: 1dde487ef9dc99b45263a21ce62d556249ada927
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: f557d00e21659880a96e4cd1936ab40d4b5a2dec
+ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44387272"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44432110"
 ---
 # <a name="get-started-with-the-roles-page"></a>Prise en main de la page rôles
 
@@ -99,3 +99,9 @@ Dans le centre d’administration :
 :::image type="content" source="../../media/compare-roles-list.png" alt-text="Figure illustrant une comparaison des rôles d’administrateur":::
 
 ::: moniker-end
+
+## <a name="related-topics"></a>Rubriques connexes
+
+[À propos des rôles d’administrateur Microsoft 365](about-admin-roles.md)
+
+[Attribuer des rôles d'administrateur](assign-admin-roles.md)

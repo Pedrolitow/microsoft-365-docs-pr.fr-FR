@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: d7941332-8aec-4e5e-87e8-92073ce73dc5
 ROBOTS: NOINDEX
 description: Découvrez Power BI et comment les utilisateurs de votre organisation peuvent utiliser ce service Business Analytics.
-ms.openlocfilehash: cabe489915061a773c0faeb8687695f2672fe478
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 5a5e7516800b2010f79296d758aeaeef80194bfd
+ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399301"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44432170"
 ---
 # <a name="power-bi-in-your-organization"></a>Power BI dans votre organisation
 
@@ -171,11 +171,8 @@ Pour autoriser les utilisateurs existants à s'inscrire à Power BI, exécutez l
 Si un utilisateur s'est inscrit à Power BI mais que vous ne souhaitez plus qu'il accède à Power BI, vous pouvez supprimer la licence Power BI pour cet utilisateur.
 
 ::: moniker range="o365-worldwide"
-
-> [!NOTE]
-> Si le nouveau Centre d’administration Microsoft 365 n’est pas celui que vous utilisez, vous pouvez l’activer en sélectionnant le bouton bascule **Essayer le nouveau Centre d’administration** situé en haut de la page d’accueil.
   
-1. Dans le Centre d’administration, accédez à la page **Utilisateurs >** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utilisateurs actifs</a>.
+1. Dans le Centre d’administration, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utilisateurs actifs</a>.
     
 2. Recherchez l’utilisateur dont vous souhaitez supprimer la licence, puis sélectionnez son nom.
     
@@ -210,7 +207,7 @@ Si un utilisateur s'est inscrit à Power BI mais que vous ne souhaitez plus qu'i
     
 4. Désactivez l’option **Microsoft Power bi** .
     
-5. Sélectionnez **Enregistrer**.
+5. Cliquez sur **Enregistrer**.
 
 ::: moniker-end 
 

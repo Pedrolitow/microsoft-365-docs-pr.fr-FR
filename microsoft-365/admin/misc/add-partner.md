@@ -21,12 +21,12 @@ search.appverid:
 - GEA150
 ms.assetid: f86e8177-936e-491e-9024-44dea2b296ff
 description: Découvrez comment ajouter un partenaire de Conseil d’abonnement en tant que partenaire d’enregistrement au moment de l’achat de Microsoft 365, changer de partenaire ou supprimer un partenaire d’un abonnement.
-ms.openlocfilehash: fa9cd549c0af616776722f6d2be4ecb9ecac1bc7
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 4ab02e95c2a2330e95f8a54f717e38025d04714c
+ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399469"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44432194"
 ---
 # <a name="add-change-or-delete-a-subscription-advisor-partner"></a>Ajouter, modifier ou supprimer un partenaire conseiller en abonnement
 
@@ -70,9 +70,6 @@ En tant qu’administrateur pour Office 365, vous pouvez créer ou modifier des 
 
 ## <a name="add-a-partner-at-the-time-of-purchase"></a>Ajouter un partenaire au moment de l'achat
 
-> [!NOTE]
-> Si le nouveau Centre d’administration Microsoft 365 n’est pas celui que vous utilisez, vous pouvez l’activer en sélectionnant le bouton bascule **Essayer le nouveau Centre d’administration** situé en haut de la page d’accueil.
-
 1. Dans le centre d’administration, accédez à la page **facturation ** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">Acheter des services</a>.
     
 2. Sélectionnez le produit que vous souhaitez acheter, puis sélectionnez **acheter**.
@@ -111,9 +108,6 @@ Suivez les étapes de la page fournisseurs pour rechercher ou pour obtenir une c
 ## <a name="add-a-partner-to-an-existing-subscription"></a>Ajouter un partenaire à un abonnement existant
 
 ::: moniker range="o365-worldwide"
-
-> [!NOTE]
-> Si le nouveau Centre d’administration Microsoft 365 n’est pas celui que vous utilisez, vous pouvez l’activer en sélectionnant le bouton bascule **Essayer le nouveau Centre d’administration** situé en haut de la page d’accueil.
 
 1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produits</a>.
     
@@ -159,9 +153,6 @@ Pour accepter cette offre
 
 ::: moniker range="o365-worldwide"
 
-> [!NOTE]
-> Si le nouveau Centre d’administration Microsoft 365 n’est pas celui que vous utilisez, vous pouvez l’activer en sélectionnant le bouton bascule **Essayer le nouveau Centre d’administration** situé en haut de la page d’accueil.
-
 1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produits</a>.
     
 2. Si vous avez plusieurs abonnements, sélectionnez le nom de l'abonnement que vous voulez modifier.
@@ -206,9 +197,6 @@ Pour accepter cette offre
 ## <a name="delete-a-partner-from-a-subscription"></a>Supprimer un partenaire d'un abonnement
 
 ::: moniker range="o365-worldwide"
-
-> [!NOTE]
-> Si le nouveau Centre d’administration Microsoft 365 n’est pas celui que vous utilisez, vous pouvez l’activer en sélectionnant le bouton bascule **Essayer le nouveau Centre d’administration** situé en haut de la page d’accueil.
 
 1.  Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produits</a>.
     

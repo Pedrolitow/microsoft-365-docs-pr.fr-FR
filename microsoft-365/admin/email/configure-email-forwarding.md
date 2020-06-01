@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: ab5eb117-0f22-4fa7-a662-3a6bdb0add74
 description: Configurez le transfert du courrier vers un ou plusieurs comptes de messagerie à l’aide d’Office 365.
-ms.openlocfilehash: 72eca099f0c7e60efe8f616dfe23201cd46975cf
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 3ce82d514e1342ac6110ca74106477e3cf7820cb
+ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400123"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44432300"
 ---
 # <a name="configure-email-forwarding"></a>Configurer le transfert des e-mails
 
@@ -53,10 +53,7 @@ Pour effectuer ces étapes, vous devez être administrateur Exchange ou administ
 
 ::: moniker range="o365-worldwide"
 
-> [!NOTE]
-> Si le nouveau Centre d’administration Microsoft 365 n’est pas celui que vous utilisez, vous pouvez l’activer en sélectionnant le bouton bascule **Essayer le nouveau Centre d’administration** situé en haut de la page d’accueil.
-
-1. Dans le Centre d’administration, accédez à la page **Utilisateurs >** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utilisateurs actifs</a>.
+1. Dans le Centre d’administration, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utilisateurs actifs</a>.
     
 2. Sélectionnez le nom de l’utilisateur dont vous souhaitez transférer le courrier électronique pour ouvrir la page des propriétés. 
  
@@ -80,7 +77,7 @@ Pour effectuer ces étapes, vous devez être administrateur Exchange ou administ
 
 3. Développez **paramètres de messagerie**, puis, dans la section **transfert de courrier** , sélectionnez **modifier**.
 
-4. Sur la page transfert du courrier, définissez le bouton bascule sur **activé**, entrez l’adresse de transfert et indiquez si vous souhaitez conserver une copie des messages envoyés. Si cette option n’est pas visible, vérifiez qu’une licence est attribuée au compte d’utilisateur. Sélectionnez **Enregistrer**.
+4. Sur la page transfert du courrier, définissez le bouton bascule sur **activé**, entrez l’adresse de transfert et indiquez si vous souhaitez conserver une copie des messages envoyés. Si cette option n’est pas visible, vérifiez qu’une licence est attribuée au compte d’utilisateur. Cliquez sur **Enregistrer**.
     
     **Pour transférer des adresses de messagerie à plusieurs**, vous pouvez demander à l’utilisateur de configurer une règle dans Outlook pour transférer les adresses. Pour en savoir plus, consultez la rubrique [utiliser des règles pour transférer automatiquement des messages](https://support.office.com/article/use-rules-to-automatically-forward-messages-45aa9664-4911-4f96-9663-ece42816d746). 
     
@@ -98,7 +95,7 @@ Pour effectuer ces étapes, vous devez être administrateur Exchange ou administ
 
 3. Développez **paramètres de messagerie**, puis, dans la section **transfert de courrier** , sélectionnez **modifier**.
 
-4. Sur la page transfert du courrier, définissez le bouton bascule sur **activé**, entrez l’adresse de transfert et indiquez si vous souhaitez conserver une copie des messages envoyés. Si cette option n’est pas visible, vérifiez qu’une licence est attribuée au compte d’utilisateur. Sélectionnez **Enregistrer**.
+4. Sur la page transfert du courrier, définissez le bouton bascule sur **activé**, entrez l’adresse de transfert et indiquez si vous souhaitez conserver une copie des messages envoyés. Si cette option n’est pas visible, vérifiez qu’une licence est attribuée au compte d’utilisateur. Cliquez sur **Enregistrer**.
     
     **Pour transférer des adresses de messagerie à plusieurs**, vous pouvez demander à l’utilisateur de configurer une règle dans Outlook pour transférer les adresses. Pour en savoir plus, consultez la rubrique [utiliser des règles pour transférer automatiquement des messages](https://support.office.com/article/use-rules-to-automatically-forward-messages-45aa9664-4911-4f96-9663-ece42816d746). 
     

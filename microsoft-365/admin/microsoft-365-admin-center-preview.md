@@ -1,5 +1,5 @@
 ---
-title: À propos du nouveau centre d’administration Microsoft 365
+title: À propos du Centre d’administration Microsoft 365
 f1.keywords:
 - CSH
 ms.author: pebaum
@@ -17,19 +17,19 @@ search.appverid:
 - MET150
 - MOE150
 - FRP150
-description: Découvrez le nouveau centre d’administration Microsoft 365.
-ms.openlocfilehash: 0eeebcd0c96b5f3741c01a2776391ceaa698a40e
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+description: Découvrez le centre d’administration Microsoft 365.
+ms.openlocfilehash: 267a7fe56cbd71734664f085846c8b5a1356cccd
+ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399481"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44432206"
 ---
-# <a name="about-the-new-microsoft-365-admin-center"></a>À propos du nouveau centre d’administration Microsoft 365
+# <a name="about-the-microsoft-365-admin-center"></a>À propos du Centre d’administration Microsoft 365
 
 ::: moniker range="o365-worldwide"
 
-Le nouveau centre d’administration Microsoft 365 est conçu pour les équipes informatiques comme un moyen simple de gérer vos services Microsoft 365. Le centre d’administration offre une expérience personnalisée basée sur les besoins uniques de votre rôle ou organisation, améliore l’efficacité des tâches quotidiennes et fournit des informations utiles pour vous aider à prendre des décisions basées sur les données afin de fournir une meilleure expérience à vos utilisateurs.
+Le centre d’administration Microsoft 365 est conçu pour les équipes informatiques comme un moyen simple de gérer vos services Microsoft 365. Le centre d’administration offre une expérience personnalisée basée sur les besoins uniques de votre rôle ou organisation, améliore l’efficacité des tâches quotidiennes et fournit des informations utiles pour vous aider à prendre des décisions basées sur les données afin de fournir une meilleure expérience à vos utilisateurs.
 
 Le centre d’administration Microsoft 365 est le point d’entrée commun pour tous les administrateurs de Microsoft 365 et est accessible à l’adresse [https://admin.microsoft.com](https://go.microsoft.com/fwlink/?linkid=2024339) . Les espaces de travail spécialisés, tels que la gestion de la sécurité ou des périphériques, permettent un contrôle plus granulaire. Pour plus d’informations sur le fonctionnement des centres d’administration, voir [Quels sont les types spécifiques de rôles informatiques et d’autres espaces de travail, tels que la sécurité, la gestion des appareils ou Exchange ?,](#what-about-the-specific-types-of-it-roles-and-other-workspaces-like-security-device-management-or-exchange) plus loin dans cet article.
 
@@ -37,7 +37,7 @@ Le centre d’administration Microsoft 365 est le point d’entrée commun pour 
 
 ::: moniker range="o365-21vianet"
 
-Le nouveau centre d’administration Microsoft 365, qui est actuellement en version d’évaluation, est conçu pour les équipes informatiques comme un moyen simple de gérer vos services Microsoft 365. Le centre d’administration offre une expérience personnalisée basée sur les besoins uniques de votre rôle ou organisation, améliore l’efficacité des tâches quotidiennes et fournit des informations utiles pour vous aider à prendre des décisions basées sur les données afin de fournir une meilleure expérience à vos utilisateurs.
+Le centre d’administration Microsoft 365 est conçu pour les équipes informatiques comme un moyen simple de gérer vos services Microsoft 365. Le centre d’administration offre une expérience personnalisée basée sur les besoins uniques de votre rôle ou organisation, améliore l’efficacité des tâches quotidiennes et fournit des informations utiles pour vous aider à prendre des décisions basées sur les données afin de fournir une meilleure expérience à vos utilisateurs.
 
 Le centre d’administration Microsoft 365 est le point d’entrée commun pour tous les administrateurs de Microsoft 365 et est accessible en se connectant à [https://portal.partner.microsoftonline.cn/AdminPortal/Home#/homepage](https://go.microsoft.com/fwlink/p/?linkid=850627) . En outre, les espaces de travail spécialisés, comme Azure Active Directory et Exchange, permettent un contrôle plus granulaire. Vous pouvez accéder aux espaces de travail spécialisés à partir du volet de navigation dans le centre d’administration Microsoft 365.
 
@@ -45,14 +45,11 @@ Le centre d’administration Microsoft 365 est le point d’entrée commun pour 
 
 ::: moniker range="o365-worldwide"
 
-À mesure que de nouvelles fonctionnalités sont disponibles dans le centre d’administration 365 de Microsoft, vous serez en mesure de vous abonner au nouveau centre d’administration et de partager vos commentaires avec Microsoft afin que nous puissions continuer à améliorer l’expérience de l’administrateur. Si vous optez pour l’option, il n’y aura aucun impact sur vos utilisateurs et vous pourrez revenir à l’ancien centre d’administration à tout moment.
-[Nouveautés du nouveau centre d’administration Microsoft 365](whats-new-in-preview.md).
+À mesure que de nouvelles fonctionnalités sont disponibles dans le centre d’administration 365 de Microsoft, vous serez en mesure de vous abonner au centre d’administration et de partager vos commentaires avec Microsoft afin que nous puissions continuer à améliorer l’expérience de l’administrateur. Si vous optez pour l’option, il n’y aura aucun impact sur vos utilisateurs et vous pourrez revenir à l’ancien centre d’administration à tout moment.
+[Nouveautés du centre d’administration 365 de Microsoft](whats-new-in-preview.md).
   
 > [!NOTE]
-> Les administrateurs de la version ciblée pourront tout d’abord accéder aux nouvelles fonctionnalités. Les nouvelles fonctionnalités seront ensuite déployées sur tous les administrateurs. Cela signifie que vous pouvez ne pas voir le nouveau centre d’administration ou avoir un aspect différent de celui décrit dans les articles d’aide. Pour voir les nouvelles fonctionnalités, consultez la rubrique participer au nouveau centre d’administration, ci-dessous. 
-    
-## <a name="participate-in-the-new-admin-center"></a>Participer au nouveau centre d’administration
-Nous serions ravis de participer au nouveau centre d’administration Microsoft 365 pour vous préparer à la modification et nous faire part de vos commentaires.
+> Les administrateurs de la version ciblée pourront tout d’abord accéder aux nouvelles fonctionnalités. Les nouvelles fonctionnalités seront ensuite déployées sur tous les administrateurs. Cela signifie que vous pouvez ne pas voir le centre d’administration ou avoir un aspect différent de celui décrit dans les articles d’aide. Pour voir les nouvelles fonctionnalités, consultez la rubrique participer au centre d’administration, ci-dessous. 
 
 ### <a name="turn-on-targeted-release"></a>Activer la publication ciblée
 
@@ -64,18 +61,9 @@ Nous serions ravis de participer au nouveau centre d’administration Microsoft 
     
 3. Sélectionnez **publication ciblée pour tout le monde** ou **publication ciblée pour les utilisateurs sélectionnés**. Si vous choisissez publication ciblée pour les utilisateurs sélectionnés, veillez à ajouter votre compte d’administrateur (et tous les autres administrateurs de votre organisation qui souhaitent participer) à la liste des utilisateurs sélectionnés.
     
-### <a name="switch-to-the-new-admin-center-and-back-again"></a>Basculer vers le nouveau centre d’administration et inverser
+### <a name="admin-center-feedback"></a>Commentaires du centre d’administration
 
-- Lorsque le nouveau centre d’administration Microsoft 365 est disponible, vous pouvez l’utiliser en sélectionnant le bouton **essayer le nouveau centre d’administration** situé en haut de la page d’accueil. Si vous vous déconnectez du centre d’administration, nous vous soumettrons votre sélection et vous vous reconnectez au nouveau centre d’administration. <br/><br/>![Le nouveau centre d’administration bascule de l’ancien centre d’administration](../media/admin-center-toggle-off.png) 
-  
-- Revenez à l’ancien centre d’administration à partir de la page d’accueil en **désactivant le bouton bascule.** <br/><br/>![Le nouveau centre d’administration bascule activé](../media/admin-center-toggle-on.png)
-
-Lorsque vous êtes dans le nouveau centre d’administration, vous pouvez fournir des commentaires Microsoft sur votre expérience en sélectionnant **fournir des commentaires** directement en regard du bouton **besoin d’aide ?** en bas de chaque page. Dites-nous ce que vous aimez et ce que nous pouvons faire mieux. De plus, vous pouvez obtenir des enquêtes de fenêtres instantanées pour vous poser des questions sur vos impressions globales ou sur une expérience particulière qui vient d’être publiée. Vous pouvez également nous faire part de vos commentaires à la fin de cet article en sélectionnant **ces informations vous ont-elles été utiles ?**
-  
-Si vous souhaitez être un préversion dans le nouveau centre d’administration, vous devez activer la publication ciblée, puis, lorsque le nouveau centre d’administration est disponible, vous pouvez y accéder pour l’extraire et fournir des commentaires.
-  
-> [!NOTE]
-> L’accès au nouveau centre d’administration est transféré vers tous les administrateurs 365 de Microsoft. Les administrateurs qui se trouvent dans le groupe de publication ciblée dans leur organisation obtiendront tout d’abord le nouveau centre d’administration. La publication ciblée ne garantit pas que le bouton bascule s’affichera immédiatement, mais vous obtiendrez un délai plus tôt que ceux de la version standard. 
+Lorsque vous êtes dans le centre d’administration, vous pouvez fournir des commentaires Microsoft sur votre expérience en sélectionnant **fournir des commentaires** directement en regard du bouton **besoin d’aide ?** en bas de chaque page. Dites-nous ce que vous aimez et ce que nous pouvons faire mieux. De plus, vous pouvez obtenir des enquêtes de fenêtres instantanées pour vous poser des questions sur vos impressions globales ou sur une expérience particulière qui vient d’être publiée. Vous pouvez également nous faire part de vos commentaires à la fin de cet article en sélectionnant **ces informations vous ont-elles été utiles ?**
   
 ::: moniker-end
 

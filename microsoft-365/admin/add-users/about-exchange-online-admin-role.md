@@ -21,12 +21,12 @@ search.appverid:
 - GEA150
 ms.assetid: 097ae285-c4af-4319-9770-e2559d66e4c8
 description: 'Les administrateurs Exchange Online gèrent les courriers électroniques et les boîtes aux lettres de votre organisation. Par exemple, ils récupèrent les éléments supprimés dans la boîte aux lettres d’un utilisateur. '
-ms.openlocfilehash: cf7bd2a7856017ccf4f17f71ad1845b56b004a10
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 6d5596bd572d6fa5d43c79c34f174528fbfb3f1d
+ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44387421"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44432134"
 ---
 # <a name="about-the-exchange-online-admin-role"></a>À propos du rôle d’administrateur Exchange Online
 
@@ -56,9 +56,10 @@ Si vous avez une organisation de grande taille, l’administrateur Exchange peut
   
  Par exemple, l’administrateur Exchange peut affecter quelqu’un au groupe de rôles gestion de la découverte afin qu’il puisse effectuer des recherches de boîtes aux lettres pour des données répondant à certains critères. Pour plus d’informations, consultez la rubrique [autorisations dans Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo) et [gérer les groupes de rôles](https://docs.microsoft.com/exchange/manage-role-groups-exchange-2013-help).
   
-## <a name="learn-about-other-admin-roles"></a>En savoir plus sur les autres rôles d’administrateur
-    
+## <a name="learn-about-other-admin-role"></a>En savoir plus sur les autres rôles d’administrateur
+
+- [À propos des rôles d’administrateur Microsoft 365](about-admin-roles.md)
+
 - [À propos du rôle d'administrateur SharePoint Online](https://docs.microsoft.com/sharepoint/sharepoint-admin-role)
-    
+
 - [À propos du rôle d’administrateur Skype entreprise](https://docs.microsoft.com/skypeforbusiness/skype-for-business-online)
-    

@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 55c96b32-e086-4c9e-948b-a018b44510cb
 description: Apprenez à créer, modifier ou supprimer un groupe de sécurité.
-ms.openlocfilehash: 283f1eca7500bfb1d8172657639bbc7cff76906f
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 49fe9b941564f26268045f6e57af329900476b90
+ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400087"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44432276"
 ---
 # <a name="create-edit-or-delete-a-security-group-in-the-microsoft-365-admin-center"></a>Créer, modifier ou supprimer un groupe de sécurité dans le centre d’administration Microsoft 365
 
@@ -58,9 +58,6 @@ En outre, vous pouvez utiliser des [Groupes dans Exchange Online et SharePoint O
 ### <a name="add-members-to-a-security-group"></a>Ajouter des membres à un groupe de sécurité
 
 ::: moniker range="o365-worldwide"
-
-> [!NOTE]
-> Si le nouveau Centre d’administration Microsoft 365 n’est pas celui que vous utilisez, vous pouvez l’activer en sélectionnant le bouton bascule **Essayer le nouveau Centre d’administration** situé en haut de la page d’accueil.
     
 1. Sélectionnez le nom du groupe de sécurité sur la page **groupes** , puis sous l’onglet **membres** , sélectionnez **Afficher tout et gérer les membres**. 
     
@@ -95,9 +92,6 @@ En outre, vous pouvez utiliser des [Groupes dans Exchange Online et SharePoint O
 
 ::: moniker range="o365-worldwide"
 
-> [!NOTE]
-> Si le nouveau Centre d’administration Microsoft 365 n’est pas celui que vous utilisez, vous pouvez l’activer en sélectionnant le bouton bascule **Essayer le nouveau Centre d’administration** situé en haut de la page d’accueil.
-
 1. Dans le centre d’administration, accédez à **la page groupes de** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">groupes</a> .
   
 2. Dans la page **groupes** , sélectionnez le nom du groupe. 
@@ -108,7 +102,7 @@ En outre, vous pouvez utiliser des [Groupes dans Exchange Online et SharePoint O
 
 ::: moniker range="o365-germany"
 
-1. Dans le centre d’administration, accédez à **la page groupes de** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">groupes</a> .
+1. Dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">Centre d’administration</a>, accédez à **la page groupes de** \> **groupes** .  
   
 2. Dans la page **groupes** , sélectionnez le nom du groupe. 
     
@@ -120,7 +114,7 @@ En outre, vous pouvez utiliser des [Groupes dans Exchange Online et SharePoint O
 
 ::: moniker range="o365-21vianet"
 
-1. Dans le centre d’administration, accédez à **la page groupes de** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">groupes</a> .
+1. Dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">Centre d’administration</a>, accédez à **la page groupes de** \> **groupes** .
   
 2. Dans la page **groupes** , sélectionnez le nom du groupe. 
     

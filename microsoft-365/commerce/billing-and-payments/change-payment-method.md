@@ -27,12 +27,12 @@ search.appverid:
 - GEA150
 ms.assetid: 8652f539-3123-4a8f-b9bd-6aa2f0e0372d
 description: Découvrez comment modifier le mode de paiement pour votre abonnement professionnel.
-ms.openlocfilehash: 7350546da14ebd68182e158c0d15cdfb727f5718
-ms.sourcegitcommit: b95e958df130b5fbbe5d8a8882d1bbf20b27a285
+ms.openlocfilehash: 41cf16397c4b3d2341721e741c6b293005971909
+ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "44407967"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44432414"
 ---
 # <a name="change-your-payment-method"></a>Changer votre mode de paiement
 
@@ -202,12 +202,6 @@ Procédez comme suit pour vérifier le mode de paiement associé à un abonnemen
 1. Dans le centre d’administration, accédez à la page **facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">de vos produits</a> .
 
 2. Recherchez l’abonnement que vous souhaitez vérifier. Le mode de paiement configuré pour l’abonnement apparaît dans la section **facturation** .
-
-### <a name="use-the-old-admin-center-to-verify-which-payment-method-is-configured"></a>Utiliser l’ancien centre d’administration pour vérifier la configuration du mode de paiement
-
-1. Dans le centre d’administration, accédez à **Billing** la \> page <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">abonnements</a> de facturation.
-
-2. Recherchez l’abonnement que vous souhaitez vérifier. Le mode de paiement configuré pour l’abonnement s’affiche sous **mode de paiement**.
 
 ::: moniker-end
 

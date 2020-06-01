@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 97af2932-0868-4ccf-8f6b-21a94946c58a
 description: Apprenez à gérer les messages du centre de messages pour faciliter la gestion des modifications.
-ms.openlocfilehash: 63c46b10913b3388c833470041da3695f0988327
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 95d1e4eb7bdf411ea1fed7ccfb58224860f889e5
+ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399715"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44432264"
 ---
 # <a name="manage-messages-in-message-center"></a>Gérer les messages dans le centre de messages
 
@@ -36,13 +36,6 @@ Les publications du centre de messages sont des annonces importantes sur les fon
 Pour accéder au centre de messages, accédez au [Centre d’administration](https://go.microsoft.com/fwlink/p/?linkid=2024339), puis sélectionnez **Health**  >  **Centre de messages**d’intégrité. 
 
 Sélectionnez le titre d’un message pour l’ouvrir dans le volet de lecture. Chaque message contient un résumé de la modification, une indication de la façon dont la modification peut vous affecter, des informations sur la façon dont vous pouvez préparer votre organisation pour la modification, et (dans la plupart des cas) d’un lien d’informations supplémentaire dans lequel vous pouvez en savoir plus. Les informations supplémentaires continuent d’être disponibles, même après l’expiration d’un message.
-
-::: moniker range="o365-worldwide"
- 
-> [!NOTE]
-> Si le nouveau Centre d’administration Microsoft 365 n’est pas celui que vous utilisez, vous pouvez l’activer en sélectionnant le bouton bascule **Essayer le nouveau Centre d’administration** situé en haut de la page d’accueil.
-
-::: moniker-end
 
 ## <a name="filter-and-sort"></a>Filtrage et tri
 

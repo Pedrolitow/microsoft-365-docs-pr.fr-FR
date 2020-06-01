@@ -27,12 +27,12 @@ search.appverid:
 - GEA150
 ms.assetid: eac4d046-1afd-4f1a-85fc-8219c79e1504
 description: Découvrez comment attribuer des rôles d’administrateur à un ou plusieurs utilisateurs de votre entreprise afin qu’ils puissent effectuer des tâches spécifiques dans le centre d’administration.
-ms.openlocfilehash: 86759a07221e93e211107dcbd41a6bee5e6ca9a4
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 3dce88f8ea2aecc094eda7e88f2f6c03537e1fa5
+ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44387236"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44432098"
 ---
 # <a name="assign-admin-roles"></a>Attribuer des rôles d’administrateur
 
@@ -47,13 +47,6 @@ Regardez une courte vidéo sur l’ajout d’un administrateur.<br><br>
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOfO] 
 
 Si vous avez trouvé cette vidéo utile, consultez les [séries de formations complètes pour les petites entreprises et les nouveaux utilisateurs de Microsoft 365](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
-
-::: moniker range="o365-worldwide"
-
-> [!NOTE]
-> Si le nouveau Centre d’administration Microsoft 365 n’est pas celui que vous utilisez, vous pouvez l’activer en sélectionnant le bouton bascule **Essayer le nouveau Centre d’administration** situé en haut de la page d’accueil.
-
-::: moniker-end
 
 ## <a name="assign-admin-roles"></a>Attribuer des rôles d’administrateur 
 
@@ -99,7 +92,7 @@ Vous pouvez attribuer des utilisateurs à un rôle de deux manières différente
 
 1. Dans le Centre d’administration, accédez à la page **Utilisateurs** > <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Utilisateurs actifs</a>.
 
-2. Sur la page **utilisateurs actifs** , sélectionnez l’utilisateur dont vous souhaitez modifier le rôle d’administrateur. Dans le volet flyout, en regard de **rôles**, sélectionnez **modifier**. 
+2. Sur la page **utilisateurs actifs** , sélectionnez l’utilisateur dont vous souhaitez modifier le rôle d’administrateur. Dans le volet flyout, en regard de **rôles**, sélectionnez **modifier**.
 
     Si vous ne voyez pas l’option **modifier** , cela signifie que vous n’êtes pas autorisé à modifier et que vous ne pouvez pas attribuer de rôles d’administrateur à d’autres personnes. Demandez à un administrateur général de votre entreprise d’attribuer des rôles pour vous. Dans une petite entreprise, le propriétaire de l’entreprise (la personne qui a acheté votre abonnement) est un administrateur général. Dans une grande entreprise, les personnes clés du service informatique sont des administrateurs globaux.
 
@@ -125,9 +118,10 @@ Il se peut que vous n’ayez pas les autorisations correctes et que vous n’aye
 
 ## <a name="related-articles"></a>Articles connexes
 
+[À propos des rôles d’administrateur Microsoft 365](about-admin-roles.md)
+
 [Attribuer des rôles à des comptes d’utilisateur avec PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/assign-roles-to-user-accounts-with-office-365-powershell)
 
 [Autoriser ou supprimer des relations avec les partenaires](../misc/add-partner.md)
 
 [Ajouter une adresse de messagerie de remplacement à l’aide du centre d’administration Exchange](https://docs.microsoft.com/Exchange/recipients/user-mailboxes/email-addresses?view=exchserver-2019#add-an-email-address-to-a-user-mailbox)
-

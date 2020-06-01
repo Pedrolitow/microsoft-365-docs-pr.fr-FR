@@ -25,12 +25,12 @@ search.appverid:
 - MOE150
 ms.assetid: 44d96212-4d90-4027-9aa9-a95eddb367d1
 description: 'Suivez cette liste de vérification pour supprimer un employé de Microsoft 365 et sécuriser les données. '
-ms.openlocfilehash: 293ad26645aa3b190c25271273b29ac6c4ec8ed0
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 1b691d948576a3949d637d2de05b6f931844037c
+ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44387044"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44431652"
 ---
 # <a name="remove-a-former-employee"></a>Supprimer un ancien employé
 
@@ -44,9 +44,6 @@ ms.locfileid: "44387044"
 ## <a name="sign-out-now"></a>Déconnectez maintenant !
 
 ::: moniker range="o365-worldwide"
-
-> [!NOTE]
-> Si le nouveau Centre d’administration Microsoft 365 n’est pas celui que vous utilisez, vous pouvez l’activer en sélectionnant le bouton bascule **Essayer le nouveau Centre d’administration** situé en haut de la page d’accueil.
 
 Regardez une brève vidéo sur la suppression d’un employé. <br><br>
 
@@ -156,10 +153,7 @@ Au cours de cette étape, vous allez affecter l'adresse de courrier de l'ancien 
 
 ::: moniker range="o365-worldwide"  
 
-> [!NOTE]
-> Si le nouveau Centre d’administration Microsoft 365 n’est pas celui que vous utilisez, vous pouvez l’activer en sélectionnant le bouton bascule **Essayer le nouveau Centre d’administration** situé en haut de la page d’accueil.
-
-1. Dans le Centre d’administration, accédez à la page **Utilisateurs >** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utilisateurs actifs</a>.
+1. Dans le Centre d’administration, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utilisateurs actifs</a>.
 
 2. Sélectionnez le nom de l’employé que vous voulez bloquer, puis sélectionnez l’onglet **courrier** .
 
@@ -167,7 +161,7 @@ Au cours de cette étape, vous allez affecter l'adresse de courrier de l'ancien 
 
 4. Activez l'option **Transférer tous les messages envoyés à cette boîte aux lettres**. Dans le champ **dresse de transfert**, tapez l'adresse de courrier de l'employé actuel (ou de la boîte aux lettres partagée) qui va recevoir le courrier. 
   
-5. Sélectionnez **Enregistrer**. 
+5. Cliquez sur **Enregistrer**. 
     
 6. Souvenez-vous que vous ne devez pas supprimer le compte de l'ancien employé.
  
@@ -183,7 +177,7 @@ Au cours de cette étape, vous allez affecter l'adresse de courrier de l'ancien 
 
 4. Activez l'option **Transférer tous les messages envoyés à cette boîte aux lettres**. Dans le champ **dresse de transfert**, tapez l'adresse de courrier de l'employé actuel (ou de la boîte aux lettres partagée) qui va recevoir le courrier. 
   
-5. Sélectionnez **Enregistrer**. 
+5. Cliquez sur **Enregistrer**. 
     
 6. Souvenez-vous que vous ne devez pas supprimer le compte de l'ancien employé.
 
@@ -199,7 +193,7 @@ Au cours de cette étape, vous allez affecter l'adresse de courrier de l'ancien 
 
 4. Activez l'option **Transférer tous les messages envoyés à cette boîte aux lettres**. Dans le champ **dresse de transfert**, tapez l'adresse de courrier de l'employé actuel (ou de la boîte aux lettres partagée) qui va recevoir le courrier. 
   
-5. Sélectionnez **Enregistrer**. 
+5. Cliquez sur **Enregistrer**. 
     
 6. Souvenez-vous que vous ne devez pas supprimer le compte de l'ancien employé.
 
@@ -221,7 +215,7 @@ Si votre ancien employé disposait d'un téléphone fourni par l'organisation, v
     
 5. Sur la page Détails de l' **appareil mobile** , sous **appareils mobiles**, sélectionnez l’appareil mobile, sélectionnez Réinitialiser l’effacement de **données** ![ ](../../media/1c113a36-53cb-4974-884f-3ecd9535506e.png) , puis **bloquer**. 
     
-6. Sélectionnez **Enregistrer**. 
+6. Cliquez sur **Enregistrer**. 
     
     **Conseil**: veillez à supprimer l'utilisateur du service Blackberry Enterprise Service local, ou à le désactiver. Vous devez également désactiver les appareils Blackberry de l'utilisateur. Reportez-vous au guide d'administration des services Blackberry Business Cloud Services pour consulter les étapes spécifiques relatives à la désactivation de l'utilisateur. 
     
@@ -234,10 +228,7 @@ Si votre ancien employé disposait d'un téléphone fourni par l'organisation, v
 
 ::: moniker range="o365-worldwide"
 
-> [!NOTE]
-> Si le nouveau Centre d’administration Microsoft 365 n’est pas celui que vous utilisez, vous pouvez l’activer en sélectionnant le bouton bascule **Essayer le nouveau Centre d’administration** situé en haut de la page d’accueil.
-
-1. Dans le Centre d’administration, accédez à la page **Utilisateurs >** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utilisateurs actifs</a>.
+1. Dans le Centre d’administration, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utilisateurs actifs</a>.
 
 2. Sélectionnez le nom de l’employé que vous voulez bloquer, puis sous le nom de l’utilisateur, sélectionnez le symbole de **bloquer cet utilisateur**.
 
@@ -288,10 +279,7 @@ Lorsque vous effectuez cette opération, toutes les données de cet utilisateur 
 
 ::: moniker range="o365-worldwide"
 
-> [!NOTE]
-> Si le nouveau Centre d’administration Microsoft 365 n’est pas celui que vous utilisez, vous pouvez l’activer en sélectionnant le bouton bascule **Essayer le nouveau Centre d’administration** situé en haut de la page d’accueil.
-
-1. Dans le Centre d’administration, accédez à la page **Utilisateurs >** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utilisateurs actifs</a>.
+1. Dans le Centre d’administration, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utilisateurs actifs</a>.
 
 2. Sélectionnez le nom de l’employé que vous voulez bloquer, puis sélectionnez l’onglet **licences et applications** .
 
@@ -365,10 +353,7 @@ Ne supprimez pas le compte si vous avez configuré le transfert de courrier ou s
 
 ::: moniker range="o365-worldwide"
 
-> [!NOTE]
-> Si le nouveau Centre d’administration Microsoft 365 n’est pas celui que vous utilisez, vous pouvez l’activer en sélectionnant le bouton bascule **Essayer le nouveau Centre d’administration** situé en haut de la page d’accueil.
-
-1. Dans le Centre d’administration, accédez à la page **Utilisateurs >** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utilisateurs actifs</a>.
+1. Dans le Centre d’administration, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utilisateurs actifs</a>.
 
 2. Sélectionnez le nom de l’employé que vous souhaitez supprimer.
 
