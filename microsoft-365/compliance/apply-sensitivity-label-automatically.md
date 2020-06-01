@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Lorsque vous créez une étiquette de critère de diffusion, vous pouvez affecter automatiquement une étiquette à un document ou message électronique ou vous pouvez inviter les utilisateurs pour sélectionner l’étiquette que vous recommandez.
-ms.openlocfilehash: 318ecd19d7dcfb4b80e1bdcec743057462c44b1b
-ms.sourcegitcommit: 3cd487476efe4138d1b42499fbffbbe4bacfe5b8
+ms.openlocfilehash: 795803b79a60c7fb8ce6154c61730d10baabdce1
+ms.sourcegitcommit: 6746fae2f68400fd985711b1945b66766d2a59a4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "44408476"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "44419080"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Appliquer automatiquement une étiquette sensibilité au contenu
 
@@ -105,9 +105,6 @@ L’étiquetage automatique dans les applications Office pour Windows est pris e
 Les paramètres d’étiquetage automatique des applications Office sont disponibles lorsque vous [créer ou modifier une étiquette de confidentialité](create-sensitivity-labels.md). Vous pouvez choisir d’appliquer automatiquement des étiquettes de confidentialité au contenu lorsque des informations sensibles sont détectées. Choisissez parmi une liste de types d’information sensibles ou de classificateurs pouvant être formés :
 
 ![Conditions de l’étiquetage automatique dans les applications Office](../media/sensitivity-labels-conditions.png)
-
-> [!NOTE]
-> L’option pour **classifieurs pouvant être formés** est actuellement déployée sur les clients en version publique. Si cette option n’apparaît pas, réessayez dans quelques jours.
 
 Lorsqu’une étiquette de confidentialité est appliquée automatiquement, les utilisateurs voit une notification dans leur application Office. Par exemple :
 
