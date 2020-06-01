@@ -23,23 +23,16 @@ search.appverid:
 - MOE150
 ms.assetid: fb5ac074-e203-4e1f-9843-b9d1a3e03297
 description: 'Découvrez comment un administrateur général peut modifier l’adresse de messagerie et le nom complet d’un utilisateur. '
-ms.openlocfilehash: 4325892a51c9d7a562b628a2bb89e6e1ff966e29
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: b672476048354a8b086781d6d9c89a7aa42ccdd3
+ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44387248"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44432086"
 ---
 # <a name="change-a-user-name-and-email-address"></a>Modifier un nom d’utilisateur et une adresse de messagerie
 
 Vous devrez peut-être modifier l’adresse de messagerie et le nom complet d’une personne si, par exemple, elle se marie et change son nom.
-
-::: moniker range="o365-worldwide"
-
-> [!NOTE]
-> Si le nouveau Centre d’administration Microsoft 365 n’est pas celui que vous utilisez, vous pouvez l’activer en sélectionnant le bouton bascule **Essayer le nouveau Centre d’administration** situé en haut de la page d’accueil.
-
-::: moniker-end
 
 Regardez une courte vidéo sur la modification de l’adresse de courrier d’un utilisateur. <br><br>
 

@@ -22,21 +22,14 @@ search.appverid:
 - MOE150
 ms.assetid: 1dbcf12f-a9de-4d1d-b0b3-a227f8a736d8
 description: "Découvrez comment accorder le droit à un utilisateur d'accéder à la boîte aux lettres d'un autre utilisateur. Cela permet à l’utilisateur de lire et d’envoyer des messages électroniques à partir de la boîte aux lettres d'un autre utilisateur. "
-ms.openlocfilehash: 51de5f4e2b134a503ec935b1f1d0ec6519d2c229
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 3fb920fb6f15a2ca48c5676e9b25afd1aa5263f1
+ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44387176"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44431664"
 ---
 # <a name="give-mailbox-permissions-to-another-user---admin-help"></a>Accorder des autorisations de boîte aux lettres à un autre utilisateur – Aide de l’administrateur
-
-::: moniker range="o365-worldwide"
-
-> [!NOTE]
-> Si le nouveau Centre d’administration Microsoft 365 n’est pas celui que vous utilisez, vous pouvez l’activer en sélectionnant le bouton bascule **Essayer le nouveau Centre d’administration** situé en haut de la page d’accueil.
-
-::: moniker-end
 
 En tant qu’administrateur, certaines exigences de votre entreprise vous entraînent à autoriser certains utilisateurs à accéder à la boîte aux lettres d’un autre utilisateur. Par exemple, vous souhaitez peut-être autoriser un assistant à envoyer ou à lire du courrier dans la boîte aux lettres de son responsable ou donner la possibilité à un de vos utilisateurs d’envoyer du courrier de la part d’un autre utilisateur. Cette rubrique vous explique comment procéder pour y parvenir.
   
