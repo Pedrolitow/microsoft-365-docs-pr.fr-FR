@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: ''
 description: Découvrez comment placer des suspensions sur des dépositaires et leurs sources de données afin de conserver le contenu pertinent pour votre cas de découverte électronique avancée.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 8789889a243bad15f1c29c0bd392d7273574b62c
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 9f540877626d01652912038d69a83598af55ba1d
+ms.sourcegitcommit: ff1af42b036bfdf75729db8c78f10cf4642616ac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034123"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "44477160"
 ---
 # <a name="manage-holds-in-advanced-ediscovery"></a>Gérer les suspensions dans Advanced eDiscovery
 
@@ -40,7 +40,7 @@ Pour afficher la stratégie de blocage des dépositaires :
    
 2. Accédez à l’onglet **dépositaires** pour ajouter des dépositaires dans votre cas. Pour savoir comment ajouter et placer des dépositaires en attente dans un cas avancé eDiscovery, voir [Add dépositaires to a Advanced eDiscovery case](add-custodians-to-case.md). Si vous avez déjà ajouté des dépositaires et les avez placés en conservation, passez à l’étape 3.
    
-3. Accédez à l’onglet **suspensions** , puis cliquez sur **\<CustodianHold HoldId>**.
+3. Accédez à l’onglet **suspensions** , puis cliquez sur **CustodianHold \<HoldId> **.
    
 4. Dans la page de menu volant, vous pouvez voir les statistiques de conservation pour la stratégie. Vous pouvez également effectuer des actions comme appliquer une requête à votre conservation basée sur un dépositaire. Pour plus d’informations sur la création d’une requête de suspension et l’utilisation de conditions, consultez la rubrique [requêtes de mots clés et conditions de recherche pour la recherche de contenu](keyword-queries-and-search-conditions.md).
  
@@ -80,7 +80,7 @@ Pour créer un blocage non privative de direction pour un cas avancé de découv
      Consultez la section **Forum aux questions** pour obtenir des conseils sur la mise en attente des groupes Microsoft 365 et de Microsoft Teams.
 
     > [!NOTE]
-    > L’URL du compte OneDrive d’un utilisateur comprend le nom d’utilisateur principal (UPN) (par exemple `https://alpinehouse-my.sharepoint.com/personal/sarad_alpinehouse_onmicrosoft_com`,). Dans les rares cas où le nom UPN d’une personne est modifié, son URL OneDrive est également modifiée pour intégrer le nouvel UPN. Si le compte OneDrive d’un utilisateur fait partie d’une conservation non privative de personnes et que son UPN est modifié, vous devez mettre à jour la conservation et pointer vers la nouvelle URL OneDrive. Pour plus d’informations, voir [Comment les modifications du nom d’utilisateur principal affectent l’URL OneDrive](https://docs.microsoft.com/onedrive/upn-changes).
+    > L’URL du compte OneDrive d’un utilisateur inclut son nom d’utilisateur principal (UPN) (par exemple, `https://alpinehouse-my.sharepoint.com/personal/sarad_alpinehouse_onmicrosoft_com` ). Dans les rares cas où le nom UPN d’une personne est modifié, son URL OneDrive est également modifiée pour intégrer le nouvel UPN. Si le compte OneDrive d’un utilisateur fait partie d’une conservation non privative de personnes et que son UPN est modifié, vous devez mettre à jour la conservation et pointer vers la nouvelle URL OneDrive. Pour plus d’informations, voir [Comment les modifications du nom d’utilisateur principal affectent l’URL OneDrive](https://docs.microsoft.com/onedrive/upn-changes).
 
      c. **Dossiers publics Exchange** : déplacez le bouton bascule vers la position tout pour mettre en attente tous les dossiers publics de votre organisation Exchange Online. Notez que vous ne pouvez pas choisir des dossiers publics spécifiques à mettre en attente. Laissez le commutateur Toggle défini sur **None** si vous ne souhaitez pas mettre de conservation sur les dossiers publics.
 

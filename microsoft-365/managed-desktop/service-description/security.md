@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.date: 09/24/2018
-ms.openlocfilehash: 1f86c904d3168eef84b4d48d8d578dd7a935267c
-ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
+ms.openlocfilehash: 8bfd71c4a143dee54ae006c8c54d711a8785480f
+ms.sourcegitcommit: 2d664a95b9875f0775f0da44aca73b16a816e1c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "44327725"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "44470488"
 ---
 # <a name="security-in-microsoft-managed-desktop"></a>Sécurité dans le bureau géré Microsoft
 
@@ -27,7 +27,6 @@ Microsoft Managed Desktop utilise plusieurs technologies Microsoft pour sécuris
 
 Pour plus d’informations sur le stockage de données, l’utilisation et les pratiques de sécurité utilisées par le bureau géré Microsoft, téléchargez notre livre blanc sur la page [https://aka.ms/mmd-data](https://aka.ms/mmd-data) .
 
-Pour en savoir plus sur l’équipe des opérations de sécurité de Microsoft Managed Desktop et sur la façon dont elles fonctionnent pour assurer la sécurité de vos appareils, consultez la vidéo sur les [opérations de sécurité de bureau géré Microsoft](https://www.microsoft.com/videoplayer/embed/RE4q6nP). 
 
 ## <a name="device-security"></a>Sécurité de l’appareil
 

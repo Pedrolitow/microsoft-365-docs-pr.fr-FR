@@ -25,14 +25,16 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment configurer des stratégies d’accès conditionnel pour les campagnes Microsoft 365 afin d’ajouter une sécurité supplémentaire substantielle.
-ms.openlocfilehash: d7c9cfee2ef00e4ebe231a28ccca185c10f53c6b
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 58ee760877ee2fd7e53ef9463242657ab66a2b6e
+ms.sourcegitcommit: 2d664a95b9875f0775f0da44aca73b16a816e1c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44403015"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "44470644"
 ---
 # <a name="set-up-conditional-access-policies"></a>Configurer les stratégies d’accès conditionnel
+
+Cet article s’applique à Microsoft 365 Business Premium.
 
 Les stratégies d' [accès conditionnel](https://docs.microsoft.com/azure/active-directory/conditional-access/overview) ajoutent une sécurité supplémentaire importante. Microsoft fournit un ensemble de stratégies d’accès conditionnel de base qui sont recommandées pour tous les clients. Les stratégies de référence sont un ensemble de stratégies prédéfinies qui permettent de protéger les organisations contre de nombreuses attaques courantes. Ces attaques courantes peuvent inclure le pulvérisation de mot de passe, la relecture et le hameçonnage.
 

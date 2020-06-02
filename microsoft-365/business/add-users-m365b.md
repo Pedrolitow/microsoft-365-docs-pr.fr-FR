@@ -27,14 +27,16 @@ search.appverid:
 - MET150
 ms.assetid: 96153102-1db1-4df8-bca5-38cea80b65ce
 description: Découvrez les étapes nécessaires à l’ajout de nouveaux utilisateurs, à la sécurisation de leurs appareils et à l’attribution de rôles dans Microsoft 365 Business Premium.
-ms.openlocfilehash: 9d2efe62ed1c48df5c10a765b8d3499934e6aebd
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: bb5c3ffe29448437b6c369fc770281aca3355ee7
+ms.sourcegitcommit: 2d664a95b9875f0775f0da44aca73b16a816e1c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44401071"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "44471216"
 ---
 # <a name="add-more-users"></a>Ajouter d’autres utilisateurs
+
+Cet article s’applique à Microsoft 365 Business Premium.
 
 ## <a name="add-new-users"></a>Ajouter de nouveaux utilisateurs
 

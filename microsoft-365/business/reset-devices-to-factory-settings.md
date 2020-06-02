@@ -24,16 +24,16 @@ search.appverid:
 - MET150
 ms.assetid: c4db6caf-74df-4734-b1dd-53e371c7a3c3
 description: Découvrez comment utiliser Microsoft 365 pour les entreprises pour réinitialiser en usine les appareils Windows 10 que vous gérez, ce qui revient aux paramètres d’origine à l’achat.
-ms.openlocfilehash: 62585828274652e48b6c6d3654faa8c20fb4caba
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 6b82f502f8fdcbbd2338b2a0e2ad69d230a693cb
+ms.sourcegitcommit: 2d664a95b9875f0775f0da44aca73b16a816e1c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44402763"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "44470804"
 ---
 # <a name="reset-windows-10-devices-to-their-factory-settings"></a>Rétablir les paramètres par défaut des appareils Windows 10
 
-[![Étiquette vous informant le centre d’administration est en train de changer et vous pouvez trouver plus de détails à ce sujet à l’adresse aka.ms/aboutM365preview.](../media/m365admincenterchanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview)
+Cet article s’applique à Microsoft 365 Business Premium.
 
 [] La réinitialisation aux paramètres d'usine rétablit les paramètres d'origine d'un appareil (ceux qu'il avait lorsque vous l'avez acheté). Toutes les applications et données qui ont été installées ou enregistrées sur l'appareil après l'achat sont supprimées. Vous pouvez utiliser Microsoft 365 pour les entreprises pour réinitialiser en usine les appareils Windows 10 que vous gérez.
   

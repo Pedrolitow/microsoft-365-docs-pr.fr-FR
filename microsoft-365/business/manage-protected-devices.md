@@ -28,14 +28,14 @@ search.appverid:
 - MOE150
 ms.assetid: 018a2a96-3811-4b5d-b751-3b6330b34256
 description: Découvrez comment supprimer les données d’entreprise des appareils gérés via des stratégies de protection, ainsi que réinitialiser les appareils Windows 10 à leurs paramètres d’usine.
-ms.openlocfilehash: 2d725224631901054480d705ab2adc0f8f4f9353
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 5e6ba7352a6a82811e1c79fe29bff35e3da5639e
+ms.sourcegitcommit: 2d664a95b9875f0775f0da44aca73b16a816e1c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44403095"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "44471136"
 ---
-# <a name="manage-protected-devices-with-microsoft-365-for-business"></a>Gérer les appareils protégés avec Microsoft 365 pour les entreprises
+# <a name="manage-protected-devices-with-microsoft-365-business-premium"></a>Gérer les appareils protégés avec Microsoft 365 Business Premium
 
 Une fois que l’utilisateur a connecté son appareil à votre organisation en vous connectant avec son compte professionnel à l’appareil ou aux applications Office sur l’appareil, vous pouvez protéger l’appareil à l’aide des stratégies que vous avez configurées. Les appareils connectés sont répertoriés sur la page **appareils** . Si un appareil est perdu ou volé, vous pouvez le gérer à partir de cette page pour supprimer les données d'entreprise. Vous pouvez également réinitialiser les paramètres par défaut des appareils Windows 10 pour effacer tous les paramètres personnalisés. 
 
