@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: Découvrez comment créer des types d’informations sensibles personnalisés à l’aide d’une classification Exact Data Match.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 681fb02e504c590610a0ed040756fd418f4221fd
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: bf4abfd6f5ab19c3bc89673b0cc2255e026d1f7a
+ms.sourcegitcommit: 9d7a14bf4c26bda18561fa45885225d95855fb5c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44352261"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "44474535"
 ---
 # <a name="create-custom-sensitive-information-types-with-exact-data-match-based-classification"></a>Créez des types d’informations sensibles personnalisés à l’aide d’une classification Exact Data Match.
 
@@ -47,7 +47,7 @@ La classification EDM vous permet de créer des types d’informations sensibles
 
 Pour effectuer les tâches décrites dans cet article, vous devez être un administrateur général, un administrateur de conformité ou un administrateur Exchange Online. Pour en avoir plus sur les autorisations DLP, voir  [Autorisations](data-loss-prevention-policies.md#permissions).
 
-Dès qu’elle généralement disponible, la classification EDM sera incluse dans les abonnements suivants
+La classification EDM est incluse dans ces abonnements
 
 - Office 365 E5
 - Microsoft 365 E5
@@ -447,11 +447,16 @@ Register-ScheduledTask -TaskName $taskName -InputObject $scheduledTask -User $us
 
 ### <a name="part-3-use-edm-based-classification-with-your-microsoft-cloud-services"></a>Partie 3 : utiliser la classification EDM avec vos services de cloud computing Microsoft
 
-Les stratégies DLP pour Exchange Online (e-mail), OneDrive Entreprise (fichiers), Microsoft Teams (conversations) et Microsoft Cloud App Security prendront en charge les types d’informations sensibles EDM.
+Ces emplacements prennent en charge les types d’informations sensibles EDM :
+
+- DLP pour Exchange Online (e-mail)
+- OneDrive Entreprise (fichiers)
+- Microsoft Teams (conversations)
+- DLP pour SharePoint (fichiers)
+- Stratégies DLP de la sécurité de l’application Microsoft Cloud
 
 Les types d’informations sensibles EDM pour les scénarios suivants sont en cours de développement, mais pas encore disponibles :
 
-- DLP pour SharePoint (fichiers)
 - Classification automatique des étiquettes de confidentialité et étiquettes de rétention
 
 #### <a name="to-create-a-dlp-policy-with-edm"></a>Pour créer une stratégie DLP avec EDM
