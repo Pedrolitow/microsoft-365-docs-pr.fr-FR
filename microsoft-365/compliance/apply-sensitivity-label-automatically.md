@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Lorsque vous créez une étiquette de critère de diffusion, vous pouvez affecter automatiquement une étiquette à un document ou message électronique ou vous pouvez inviter les utilisateurs pour sélectionner l’étiquette que vous recommandez.
-ms.openlocfilehash: 795803b79a60c7fb8ce6154c61730d10baabdce1
-ms.sourcegitcommit: 6746fae2f68400fd985711b1945b66766d2a59a4
+ms.openlocfilehash: bfbebf78664cdce34d224c5cc4b24ed6a9ad0646
+ms.sourcegitcommit: 2d664a95b9875f0775f0da44aca73b16a816e1c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "44419080"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "44470661"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Appliquer automatiquement une étiquette sensibilité au contenu
 
@@ -191,7 +191,7 @@ N’oubliez pas de connaître les conditions préalables avant de configurer les
     - Pour afficher le contenu d’un fichier dans la vue source (non pris en charge pour les courriers électroniques), vous devez avoir le rôle de **Visionneuse de contenu de l’Explorateur de contenu** si vous n’êtes pas un administrateur général. Si vous ne disposez pas cette autorisation, le volet générateur d’aperçu ne s’affiche pas lorsque vous sélectionnez un élément dans l’onglet **Élément correspondant**.
 
 - Pour étiqueter automatiquement des fichiers dans SharePoint et OneDrive :
-    - Vous avez [activé les étiquettes de confidentialité pour les fichiers Office dans SharePoint et OneDrive (préversion publique)](sensitivity-labels-sharepoint-onedrive-files.md)
+    - Vous avez [activé les étiquettes de confidentialité pour les fichiers Office dans SharePoint et OneDrive](sensitivity-labels-sharepoint-onedrive-files.md).
     - Lors de l’exécution de la stratégie d’étiquetage automatique, le fichier ne doit pas être ouvert par un autre processus ni un autre utilisateur.
 
 - Si vous envisagez d’utiliser des [types d’informations sensibles personnalisés](custom-sensitive-info-types.md) plutôt que les types de sensibilité prédéfinis : 

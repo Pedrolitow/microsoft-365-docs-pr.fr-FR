@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Vous êtes prêt à instaurer la mise en place d'étiquettes de confidentialité pour protéger les données de votre organisation, mais vous ne savez pas par où commencer ? Consultez quelques conseils pratiques permettant de vous familiariser lors de votre parcours dans l'univers de l'étiquetage.
-ms.openlocfilehash: a69b71ec364eae4258960c3b33876f0df9530611
-ms.sourcegitcommit: 21977f5cb6b01aee5cae54979717530b2a31a46a
+ms.openlocfilehash: 88b9ad0ea97ff035491f6e2d2ec2ec57b2b8d796
+ms.sourcegitcommit: 1b560ee45f3b0253fa5c410a4499373c1f92da9c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "44411021"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44432613"
 ---
 # <a name="get-started-with-sensitivity-labels"></a>Prise en main des étiquettes de confidentialité
 
@@ -78,7 +78,7 @@ Utilisez la section de documentation suivante qui vous vient en aide lors du dé
 |Utiliser des étiquettes de confidentialité pour protéger du contenu dans Teams et SharePoint |[Utiliser des étiquettes de confidentialité avec Microsoft Teams, les Groupes Microsoft 365 et les sites SharePoint (préversion publique)](sensitivity-labels-teams-groups-sites.md)|
 |Découvrir, étiqueter et protéger des fichiers stockés dans des banques de données situées dans les locaux |[Déploiement du scanner Azure Information Protection pour classifier et protéger automatiquement des fichiers](https://docs.microsoft.com/azure/information-protection/deploy-aip-scanner)|
 |Découvrir, étiqueter et protéger des fichiers stockés sur le cloud|[Découvrir, classifier, étiqueter et protéger les données réglementées et sensibles stockées dans le cloud](https://docs.microsoft.com/cloud-app-security/best-practices#discover-classify-label-and-protect-regulated-and-sensitive-data-stored-in-the-cloud)|
-|Appliquer et afficher les étiquettes de confidentialité dans Power BI et protéger les rapports téléchargés|[Protection des données dans Power BI (version d’évaluation)](https://docs.microsoft.com/power-bi/admin/service-security-data-protection-overview)|
+|Appliquer et afficher les étiquettes de confidentialité dans Power BI et protéger les rapports téléchargés|[Protection des données dans Power BI](https://docs.microsoft.com/power-bi/admin/service-security-data-protection-overview)|
 |Surveiller et comprendre la manière dont les étiquettes de confidentialité sont utilisées dans mon organisation|[Connaissez vos données : vue d’ensemble de la classification des données](data-classification-overview.md) <br /><br /> [Afficher l’utilisation d’étiquettes à l'aide des analyses d’étiquettes](label-analytics.md)|
 
 

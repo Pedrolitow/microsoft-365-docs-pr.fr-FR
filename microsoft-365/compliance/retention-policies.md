@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Utiliser une stratégie de rétention vous permet de décider de façon proactive de conserver du contenu, de le supprimer (ou les deux), de conserver du contenu, puis de le supprimer ; d’appliquer une stratégie unique à l’ensemble de l’organisation ou à quelques emplacements ou utilisateurs ; et d’appliquer une stratégie à tout le contenu ou au contenu remplissant des conditions particulières.
-ms.openlocfilehash: b91b4be724c3d664cdd237fc01596372a2a6bdcc
-ms.sourcegitcommit: 5c96d06496d40d2523edbea336f7355c3c77cc80
+ms.openlocfilehash: cf38eecaeaf23371c370ad07e723177e3770c7ba
+ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "44412813"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44432335"
 ---
 # <a name="learn-about-retention-policies"></a>Découvrir les stratégies de rétention
 
@@ -178,8 +178,12 @@ Vous trouverez des stratégies de conservation configurées sur la page **Strat�
 
 ## <a name="related-information"></a>Informations connexes
 
-- [Créer et configurer des stratégies de rétention](create-retention-policies.md)
 - [Découvrir les étiquettes de rétention](labels.md)
 - [Limites de SharePoint Online](https://docs.microsoft.com/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits)
 - [Limites et spécifications de Microsoft Teams](https://docs.microsoft.com/microsoftteams/limits-specifications-teams) 
 - [Se conformer à la réglementation SEC Rule 17 a-4](use-exchange-online-to-comply-with-sec-rule-17a-4.md)
+
+## <a name="next-steps"></a>Étapes suivantes
+
+Si vous êtes prêt à créer des stratégies de rétention, voir [Créer et configurer des stratégies de rétention](create-retention-policies.md).
+

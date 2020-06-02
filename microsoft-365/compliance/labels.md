@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Découvrez comment les étiquettes de rétention classent les données au sein de votre organisation à des fins de gouvernance, et comment appliquer des règles de rétention basées sur cette classification. Vous pouvez également utiliser des étiquettes de rétention pour appliquer une solution de gestion des enregistrements pour Microsoft 365.
-ms.openlocfilehash: fa24bacedf0e8bd3707fa9a6fd87fff81041e2e8
-ms.sourcegitcommit: 21977f5cb6b01aee5cae54979717530b2a31a46a
+ms.openlocfilehash: 4291e32760a585be7610612b81cc54ecfcf0863e
+ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "44411041"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44432241"
 ---
 # <a name="learn-about-retention-labels"></a>Découvrir les étiquettes de rétention
 
@@ -362,4 +362,6 @@ Plusieurs autres fonctionnalités étaient auparavant utilisées pour conserver 
     
 - [Stratégies de gestion des informations](intro-to-info-mgmt-policies.md) (suppression uniquement) 
     
+## <a name="next-steps"></a>Étapes suivantes
 
+Si vous êtes prêt à créer et publier des étiquettes de rétention, voir [Créer, publier et appliquer automatiquement des étiquettes de rétention](create-retention-labels.md).
