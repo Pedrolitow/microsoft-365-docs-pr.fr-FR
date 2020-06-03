@@ -16,12 +16,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Les administrateurs peuvent apprendre à configurer les paramètres de courrier indésirable dans les boîtes aux lettres Exchange Online. Un grand nombre de ces paramètres sont disponibles pour les utilisateurs dans Outlook ou Outlook sur le Web.
-ms.openlocfilehash: 72b2680cb16e9d8d0f33ee3ec8a080206c68bf97
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: 40364db9d4af9e093d8f2f74ee3c0f0373b1671a
+ms.sourcegitcommit: 7bb3d8a93a85246172e2499d6c58c390e46f5bb9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44352509"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "44498662"
 ---
 # <a name="configure-junk-email-settings-on-exchange-online-mailboxes"></a>Configurer les paramètres de courrier indésirable dans les boîtes aux lettres Exchange Online
 
@@ -42,7 +42,7 @@ Lorsque la règle de courrier indésirable est activée dans la boîte aux lettr
 Les administrateurs peuvent utiliser Exchange Online PowerShell pour désactiver, activer et afficher l’état de la règle de courrier indésirable sur les boîtes aux lettres. Les administrateurs peuvent également utiliser Exchange Online PowerShell pour configurer les entrées de la collection de listes fiables sur les boîtes aux lettres (la liste des expéditeurs approuvés, la liste des destinataires approuvés et la liste des expéditeurs bloqués).
 
 > [!NOTE]
-> Les messages provenant d’expéditeurs que les utilisateurs ont ajoutés à leurs propres listes d’expéditeurs approuvés ignorent le filtrage EOP (le SCL est-1). Pour empêcher les utilisateurs d’ajouter des entrées à leur liste des expéditeurs approuvés dans Outlook, utilisez la stratégie de groupe comme mentionné dans la section [à propos des paramètres du courrier indésirable dans Outlook](#about-junk-email-settings-in-outlook) plus loin dans cette rubrique.
+> Les messages provenant d’expéditeurs que les utilisateurs ont ajoutés à leurs propres listes d’expéditeurs approuvés ignorent le filtrage des connexions dans le cadre d’EOP (le SCL est-1). Pour empêcher les utilisateurs d’ajouter des entrées à leur liste des expéditeurs approuvés dans Outlook, utilisez la stratégie de groupe comme mentionné dans la section [à propos des paramètres du courrier indésirable dans Outlook](#about-junk-email-settings-in-outlook) plus loin dans cette rubrique. Le filtrage des stratégies, le filtrage du contenu et les vérifications de protection avancée contre les menaces seront toujours appliqués aux messages.
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu'il faut savoir avant de commencer
 
@@ -89,7 +89,7 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, co
 
 Pour savoir si vous avez réussi à activer ou désactiver la règle de courrier indésirable sur une boîte aux lettres, suivez l’une des procédures suivantes :
 
-- Remplacez _ \< MailboxIdentity \> _ par le nom, l’alias ou l’adresse de messagerie de la boîte aux lettres, puis exécutez la commande suivante pour vérifier la valeur de la propriété **Enabled** :
+- Remplacez _\<MailboxIdentity\>_ par le nom, l’alias ou l’adresse de messagerie de la boîte aux lettres, puis exécutez la commande suivante pour vérifier la valeur de la propriété **Enabled** :
 
   ```PowerShell
   Get-MailboxJunkEmailConfiguration -Identity "<MailboxIdentity>" | Format-List Enabled
@@ -154,7 +154,7 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, co
 
 Pour vérifier que vous avez bien configuré la collection de listes fiables d’une boîte aux lettres, suivez l’une des procédures suivantes :
 
-- Remplacez _ \< MailboxIdentity \> _ par le nom, l’alias ou l’adresse de messagerie de la boîte aux lettres, puis exécutez la commande suivante pour vérifier les valeurs de la propriété :
+- Remplacez _\<MailboxIdentity\>_ par le nom, l’alias ou l’adresse de messagerie de la boîte aux lettres, puis exécutez la commande suivante pour vérifier les valeurs de la propriété :
 
   ```PowerShell
   Get-MailboxJunkEmailConfiguration -Identity "<MailboxIdentity>" | Format-List trusted*,contacts*,blocked*

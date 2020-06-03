@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Découvrez comment déplacer votre entreprise vers Microsoft 365 Business Premium à partir d’Office 365 E3.
-ms.openlocfilehash: 23d024ed7f18fe6a5f5dc9b59e3ad20069dc3e6a
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 6571fb3ba53620fbb8b97d8f5fd76832f95b82c3
+ms.sourcegitcommit: eee4f651bd51d5aedd64e42d02bfed8ccb9be4cd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44402237"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "44515898"
 ---
 # <a name="migrating-from-office-365-e3-to-microsoft-365-business-premium"></a>Migration à partir d’Office 365 E3 vers Microsoft 365 Business Premium 
 
@@ -42,7 +42,7 @@ Ce tableau présente les différences entre Microsoft 365 Business Premium et Of
 | Fonctionnalité    | Prise en charge dans Microsoft 365 Business Premium    | Prise en charge dans Office 365 E3 | 
 |:-------|:-----|:-----|
 | **Sur site**        | | | 
-| Applications Office<sup>1</sup>    | Applications Microsoft 365 pour les entreprises    | Microsoft 365 Apps for enterprise | 
+| Applications Office<sup>1</sup>    | Applications Microsoft 365 pour les entreprises    | Applications Microsoft 365 pour les grandes entreprises | 
 | **Applications de productivité sur le Cloud**        | | | 
 | Exchange Online et Outlook    | limite de stockage de 50 Go par boîte aux lettres et archivage Exchange Online illimité    | limite de stockage de 100 Go par boîte aux lettres et archivage Exchange Online illimité | 
 | Équipes    | ![Inclus avec Microsoft 365 Business Premium](../media/check-mark.png)    | ![Inclus dans Office 365 E3](../media/check-mark.png) | 
@@ -78,6 +78,7 @@ Vous n’avez pas besoin d’effectuer des modifications dans votre abonnement o
 - Configuration des abonnements, tels que les enregistrements DNS et les noms de domaine.
 - Les comptes d’utilisateur et de groupe et les paramètres d’authentification, tels que l’authentification multifacteur ou les stratégies d’accès conditionnel.
 - Les configurations de service de productivité et leurs données, telles que les équipes, les boîtes aux lettres Exchange Online, les sites SharePoint Online, les dossiers OneDrive entreprise et les blocs-notes OneNote.
+- Les applications Office sont mises à l’horizontale automatiquement. La gestion des licences Office 365 moderne vérifie l’attribution de licence de l’utilisateur toutes les 72 heures et convertit les applications Office en version correspondant à l’abonnement de l’utilisateur.
 
 ### <a name="windows-10"></a>Windows 10
 

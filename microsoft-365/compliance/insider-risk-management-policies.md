@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: be7b417f9127197bea96e79eab94c69b5c6e3fcb
-ms.sourcegitcommit: 261d51b90a9ad53a6a42348c414b1b1e1230c37f
+ms.openlocfilehash: eff935eb39884d9003b64b5be952c8e8e73b286a
+ms.sourcegitcommit: eee4f651bd51d5aedd64e42d02bfed8ccb9be4cd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44292500"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "44515879"
 ---
 # <a name="insider-risk-management-policies"></a>Stratégies de gestion des risques internes
 
@@ -49,12 +49,27 @@ Lorsque les employés quittent votre organisation, il existe des indicateurs de 
 
 ### <a name="data-leaks"></a>Fuites de données
 
-La protection des données et la prévention des fuites de données sont des défis constants pour la plupart des organisations, en particulier en ce qui concerne la croissance rapide des nouvelles données créées par les employés, les appareils et les services. Les employés sont habilités à créer, stocker et partager des informations entre les services et les appareils qui rendent la gestion des fuites de données de plus en plus complexe et difficile. Les fuites de données peuvent inclure un partage accidentel d’informations en dehors de votre organisation ou du vol de données à des fins malveillantes. Ce modèle permet de hiérarchiser la détection en temps réel des téléchargements de données SharePoint Online suspects, de partager des fichiers et des dossiers, de copier des fichiers sur des appareils portables tels que des lecteurs USB, d’imprimer des fichiers et de copier des données dans des services de stockage et de messagerie Cloud personnels.
+La protection des données et la prévention des fuites de données sont des défis constants pour la plupart des organisations, en particulier en ce qui concerne la croissance rapide des nouvelles données créées par les employés, les appareils et les services. Les employés sont habilités à créer, stocker et partager des informations entre les services et les appareils qui rendent la gestion des fuites de données de plus en plus complexe et difficile. Les fuites de données peuvent inclure un partage accidentel d’informations en dehors de votre organisation ou du vol de données à des fins malveillantes. En association avec une stratégie de protection contre la perte de données (DLP) affectée, ce modèle hiérarchise la détection en temps réel des téléchargements de données SharePoint Online suspects, du partage de fichiers et de dossiers, de la copie de fichiers vers des appareils portables tels que des lecteurs USB, l’impression de fichiers et la copie de données dans des services de stockage et de messagerie Cloud personnels.
 
->[!IMPORTANT]
->Lorsque vous utilisez ce modèle, vous devez configurer au moins une stratégie de protection contre la perte de données (DLP) pour définir des informations sensibles dans votre organisation. Assurez-vous que le paramètre **rapports d’incident** de la stratégie DLP pour la gestion des risques initiés utilisé avec ce modèle est configuré pour des alertes de niveau de gravité *élevé* . Les alertes de gestion des risques internes ne seront pas générées à partir des stratégies DLP avec le champ **rapports d’incident** défini sur *faible* ou *moyen*.
->
->Consultez la rubrique [créer, tester et régler une stratégie DLP](create-test-tune-dlp-policy.md) pour obtenir des instructions détaillées sur la configuration des stratégies DLP pour votre organisation.
+Lors de l’utilisation du modèle de **fuites de données** , vous devez affecter une stratégie DLP pour déclencher des indicateurs dans la stratégie des risques internes pour les alertes de gravité élevée au sein de votre organisation. Chaque fois qu’une alerte de gravité élevée est générée par une règle de stratégie DLP est ajoutée au Journal d’audit Office 365, les stratégies de risque internes créées à l’aide de ce modèle examinent automatiquement l’alerte DLP de gravité élevée. Si l’alerte contient un utilisateur dans l’étendue défini dans la stratégie d’Insider Risk, l’alerte sera traitée par la stratégie des risques des initiés en tant que nouvelle alerte et assignée à un score de risque et de gravité des risques initiés. Cette alerte peut être évaluée dans le cadre du flux de travail de gestion des risques Insiders et ajoutée à un cas d’Insider de gestion des risques si nécessaire.
+
+Lors de la création ou de la modification de stratégies DLP à utiliser avec des stratégies de gestion des risques initiées, tenez compte des instructions suivantes :
+
+- Hiérarchiser les événements d’exfiltration des données et être sélectif lors de l’affectation des paramètres des **rapports d’incidents** à *haut* lors de la configuration des règles dans vos stratégies DLP. Par exemple, l’envoi de documents sensibles à un concurrent connu doit être un événement exfiltration de niveau d’alerte *élevé* . Le fait d’affecter le niveau *élevé* dans les paramètres des **rapports d’incident** dans d’autres règles de stratégie DLP peut augmenter le bruit dans le flux de travail d’alerte de gestion des risques inSided et compliquer la tâche des analystes et analystes de données pour évaluer correctement ces alertes. Par exemple, l’affectation de niveaux d’alerte *élevés* aux activités de blocage dans les stratégies DLP complique l’évaluation du comportement et des activités utilisateur réellement risqués.
+- Assurez-vous que vous comprenez et configurez correctement les utilisateurs dans le cadre des stratégies de gestion des risques DLP et Insider. Seuls les utilisateurs définis comme dans l’étendue pour les stratégies de gestion des risques internes utilisant le modèle **fuites de données** seront traités comme des alertes de stratégie DLP de gravité élevée. De plus, seuls les utilisateurs définis comme étant inclus dans une règle pour une alerte DLP de gravité élevée seront examinés par la stratégie de gestion des risques Insiders. Il est important de ne pas configurer les utilisateurs dans l’étendue à la fois dans vos stratégies de risque de DLP et d’initié de manière contradictoire.
+
+     Par exemple, si vos règles de stratégie DLP ne concernent que les utilisateurs de l’équipe de vente et que la stratégie de risque d’initié créée à partir du modèle **fuites de données** a défini tous les utilisateurs comme étant dans l’étendue, la stratégie de risque d’initié ne traitera que les alertes DLP de gravité élevée pour les utilisateurs de l’équipe commerciale. La stratégie de risque initié ne reçoit pas d’alertes de haute priorité pour les utilisateurs à traiter qui ne sont pas définies dans les règles DLP de cet exemple. À l’inverse, si la stratégie de gestion des risques inSided créée à partir du modèle **fuites de données** n’est étendue qu’aux utilisateurs de l’équipe de vente et que la stratégie DLP attribuée est étendue à tous les utilisateurs, la stratégie de risque d’initié ne traite que les alertes DLP de gravité élevée pour les membres de l’équipe des ventes. La stratégie de gestion des risques Insider ignore les alertes de gravité élevée pour tous les utilisateurs qui ne se trouvent pas dans l’équipe des ventes.
+
+- Assurez-vous que le paramètre de règle **rapports d’incident** de la stratégie DLP utilisée pour ce modèle de gestion des risques initiaux est configuré pour des alertes de niveau de gravité *élevé* . Le niveau de gravité *élevé* est l’indicateur de déclenchement et les alertes de gestion des risques internes ne seront pas générés à partir des règles des stratégies DLP dont le champ **rapports d’incident** est défini sur *faible* ou *moyen*.
+
+    ![Paramètre d’alerte de stratégie DLP](../media/insider-risk-DLP-policy-high-severity.png)
+
+     >[!NOTE]
+     >Lors de la création d’une stratégie DLP à l’aide des modèles prédéfinis, vous devez sélectionner l’option **créer ou personnaliser des règles DLP avancées** pour configurer le paramètre **rapports d’incident** pour le niveau de gravité *élevé* .
+
+Chaque stratégie de gestion des risques inSided créée à partir du modèle **fuites de données** ne peut avoir qu’une seule stratégie DLP affectée. Si vous avez plusieurs stratégies DLP pour lesquelles vous souhaitez que des alertes de gravité élevée soient traitées par une stratégie de gestion des risques Insiders, vous devez créer une stratégie de gestion des risques Insiders distincte par stratégie DLP.
+
+Consultez la rubrique [créer, tester et régler une stratégie DLP](create-test-tune-dlp-policy.md) pour obtenir des instructions détaillées sur la configuration des stratégies DLP pour votre organisation.
 
 ### <a name="offensive-language-in-email"></a>Langage choquant dans le courrier électronique
 
@@ -66,7 +81,7 @@ Les paramètres des risques internes s’appliquent à toutes les stratégies de
 
 ### <a name="privacy"></a>Confidentialité
 
-La protection de la confidentialité des utilisateurs qui ont des correspondances de stratégie est importante et peut contribuer à promouvoir l’objection en matière d’analyse des données et d’analyse des alertes relatives aux risques internes. Pour les utilisateurs disposant d’une stratégie de risque Insider, vous pouvez choisir l’un des paramètres suivants :
+La protection de la confidentialité des utilisateurs qui ont des correspondances de stratégie est importante et peut contribuer à promouvoir l’objection en matière d’analyse des données et d’analyse des alertes relatives aux risques internes. Pour les utilisateurs avec une stratégie de risque Insider, vous pouvez choisir l’un des paramètres suivants :
 
 - **Afficher les versions anonymes des**noms d’utilisateur : les noms d’utilisateur sont rendus anonymes pour empêcher les administrateurs, les investigateurs de données et les relecteurs de voir qui est associé à des alertes de stratégie. Par exemple, un utilisateur « gracieuses Taylor » apparaît avec un pseudonyme aléatoire tel que « AnonIS8-988 » dans tous les domaines de l’expérience de gestion des risques inSided. Le choix de ce paramètre anonymizes tous les utilisateurs avec des correspondances de stratégie actuelle et passée et s’applique à toutes les stratégies. Les informations de profil utilisateur dans les détails des alertes de risque et des cas d’Insider ne seront pas disponibles lorsque cette option est sélectionnée. Toutefois, les noms d’utilisateur sont affichés lors de l’ajout de nouveaux utilisateurs à des stratégies existantes ou lors de l’affectation d’utilisateurs à de nouvelles stratégies. Si vous choisissez de désactiver ce paramètre, les noms d’utilisateur s’affichent pour tous les utilisateurs qui ont des correspondances de stratégie actuelle ou passée.
 - **Ne pas afficher les versions anonymes des noms d’utilisateur**: les noms d’utilisateur sont affichés pour toutes les correspondances de stratégie actuelle et passée pour les alertes et les incidents. Les informations de profil utilisateur (nom, titre, alias, organisation ou service) s’affichent pour l’utilisateur pour toutes les alertes et les incidents liés à la gestion des risques Insiders.
@@ -110,9 +125,9 @@ Pour ajuster la sensibilité du classificateur de langue offensant aux stratégi
 
 Les activités de l’utilisateur détectées par les stratégies de risque d’initié se voient attribuer une note de risque spécifique, qui détermine à son tour la gravité de l’alerte (faible, moyenne, haute). Par défaut, nous allons générer une certaine quantité d’alertes de gravité faible, moyenne et élevée, mais vous pouvez augmenter ou diminuer le volume en fonction de vos besoins. Pour ajuster le volume des alertes pour toutes les stratégies de gestion des risques Insider, choisissez l’un des paramètres suivants :
 
-- **Alertes moins nombreuses**: vous verrez toutes les alertes de gravité élevée, moins les alertes de gravité moyenne et aucune gravité faible. Cela signifie que vous risquez de manquer des vrais positifs.
+- **Alertes moins nombreuses**: vous verrez toutes les alertes de gravité élevée, moins les alertes de gravité moyenne et aucune gravité faible. Ce paramètre signifie que vous risquez de manquer des véritables positifs.
 - **Volume par défaut**: vous verrez toutes les alertes de gravité élevée et une quantité équilibrée d’alertes de gravité moyenne et faible.
-- **Plus d’alertes**: vous verrez toutes les alertes de gravité moyenne et élevée, ainsi que les alertes de gravité faible. Cela peut entraîner des faux positifs supplémentaires.
+- **Plus d’alertes**: vous verrez toutes les alertes de gravité moyenne et élevée, ainsi que les alertes de gravité faible. Ce paramètre peut entraîner des faux positifs supplémentaires.
 
 ## <a name="create-a-new-policy"></a>Créer une stratégie
 

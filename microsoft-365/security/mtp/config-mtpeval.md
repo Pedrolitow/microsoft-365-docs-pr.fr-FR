@@ -15,12 +15,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: a41510deb8bad39e2f871babfbcb91a2e43f6dd8
-ms.sourcegitcommit: 56772bed89516cebc5eb370e292ccfbb4889cb38
+ms.openlocfilehash: be92bfe8fc4f544f0554f99d147bfc90bf569d57
+ms.sourcegitcommit: 7bb3d8a93a85246172e2499d6c58c390e46f5bb9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "44330854"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "44498458"
 ---
 # <a name="configure-microsoft-threat-protection-pillars-for-your-trial-lab-environment"></a>Configurer les piliers de protection contre les menaces Microsoft pour votre environnement de laboratoire d’évaluation
 
@@ -68,7 +68,7 @@ Cette section vous guidera dans la configuration des éléments suivants :
 -   Office 365-Protection avancée contre les menaces
 -   Azure Advanced Threat Protection 
 -   Microsoft Cloud App Security
--   Microsoft Defender – Protection avancée contre les menaces
+-   Microsoft Defender – Protection avancée contre les menaces
 
 
 ## <a name="configure-office-365-advanced-threat-protection"></a>Configurer la protection avancée contre les menaces Office 365
@@ -238,6 +238,9 @@ Cliquez sur **Suivant**.
 <br>![Image of_Save bouton préférences que vous devez cliquer](../../media/mtp-eval-72.png) <br>
 
 ## <a name="turn-on-microsoft-threat-protection"></a>Activer la Protection Microsoft contre les menaces
+>[!NOTE]
+>À partir du 1er juin 2020, Microsoft active automatiquement les fonctionnalités de protection contre les menaces Microsoft pour tous les clients éligibles. Pour plus d’informations, consultez cet [article de la communauté Microsoft Tech sur l’éligibilité des licences](https://techcommunity.microsoft.com/t5/security-privacy-and-compliance/microsoft-threat-protection-will-automatically-turn-on-for/ba-p/1345426) . 
+<br>
 1. Accédez au [Centre de sécurité Microsoft 365](https://security.microsoft.com/homepage). Accédez à **paramètres** , puis sélectionnez **Microsoft Threat Protection**.
 <br>![Capture d’écran des options d’image of_Microsoft protection contre les menaces à partir de la page Paramètres du centre de sécurité Microsoft 365](../../media/mtp-eval-72b.png) <br>
 

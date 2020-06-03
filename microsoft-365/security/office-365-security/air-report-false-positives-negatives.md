@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.custom: autoir
-ms.openlocfilehash: 2dd67af62a400f3e217f146e6d0ee213d74ad99a
-ms.sourcegitcommit: 22e9f54d0d3ead2be91a38d49325308c70f43f90
+ms.openlocfilehash: 837232550ca392a364b9842f64a1c3f0d790a502
+ms.sourcegitcommit: 33be6075fcc89d4c0a48fa7e59f3b3ebc605d9f3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "44262409"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44520157"
 ---
 # <a name="how-to-report-false-positivesnegatives-in-automated-investigation-and-response-capabilities"></a>Comment signaler les faux positifs/négatifs dans les fonctionnalités d’analyse et de réponse automatisées
 
@@ -34,7 +34,7 @@ ms.locfileid: "44262409"
 [Les fonctionnalités d’analyse et de réponse automatisées (air) d’Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/automated-investigation-response-office) manquent ou détectent-elles mal ? Il existe des étapes que vous pouvez suivre pour résoudre ce problème. Vous pouvez :
 - [Signaler un faux positif/négatif à Microsoft](#report-a-false-positivenegative-to-microsoft-for-analysis);
 - [Ajustez vos alertes (le](#adjust-an-alert-to-prevent-false-positives-from-recurring) cas échéant); les 
-- [Annuler les actions correctives qui ont été effectuées sur les appareils](#undo-a-remediation-action). 
+- [Annuler les actions correctives qui ont été entreprises](#undo-a-remediation-action). 
 
 Utilisez cet article comme guide. 
 
@@ -71,7 +71,7 @@ Avec l’Explorateur de menaces, votre équipe des opérations de sécurité peu
 
 Dans le centre de notifications, vous pouvez voir les actions de correction qui ont été prises et éventuellement annuler l’action.
 
-1. Accédez à [https://protection.office.com](https://protection.office.com) et connectez-vous. Cette opération vous permet d’accéder au centre de sécurité & conformité.
+1. Accédez à [https://protection.office.com](https://protection.office.com) et connectez-vous. Vous accédez au centre de sécurité & conformité.
 
 2. Accédez aux enquêtes de **gestion des menaces**  >  **Investigations**.
 

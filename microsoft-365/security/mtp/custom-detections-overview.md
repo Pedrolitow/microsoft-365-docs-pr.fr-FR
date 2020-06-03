@@ -17,19 +17,17 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: a9ba61650b69e3c42506735c90ae05b917a53209
-ms.sourcegitcommit: 3b2fdf159d7dd962493a3838e3cf0cf429ee2bf2
+ms.openlocfilehash: cdbaf9cfd2172656ed75cb3c0a1a9e361070f25b
+ms.sourcegitcommit: 7bb3d8a93a85246172e2499d6c58c390e46f5bb9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "42931731"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "44498350"
 ---
 # <a name="custom-detections-overview"></a>Vue d’ensemble des détections personnalisées
 
 **S’applique à :**
 - Protection Microsoft contre les menaces
-
-[!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
 Avec des détections personnalisées, vous pouvez surveiller et répondre de manière proactive aux divers événements et États du système, y compris l’activité de violation présumée et les points de terminaison mal configurés. Cela est possible grâce à des règles de détection personnalisables qui déclenchent automatiquement des alertes et des actions de réponse.
 

@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Vous pouvez créer une conservation associée à un cas de découverte électronique de base pour conserver le contenu qui peut être pertinent pour une enquête.
-ms.openlocfilehash: 8993a3e88ab7513713086499a316c92fdb7509cb
-ms.sourcegitcommit: ff1af42b036bfdf75729db8c78f10cf4642616ac
+ms.openlocfilehash: 4ec9ff37a49f783afc25835ca91208608ab4733a
+ms.sourcegitcommit: 7bb3d8a93a85246172e2499d6c58c390e46f5bb9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/01/2020
-ms.locfileid: "44477194"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "44498327"
 ---
 # <a name="create-an-ediscovery-hold"></a>Créer une suspension de cas eDiscovery
 
@@ -32,12 +32,9 @@ Une fois que vous avez créé une conservation eDiscovery, la conservation peut 
 
 Lorsque vous créez une suspension, vous disposez des options suivantes pour définir l’étendue du contenu qui est conservé dans les emplacements de contenu spécifiés :
   
-- Vous créez un blocage infini où tout le contenu est placé en conservation. Vous pouvez également créer une conservation basée sur une requête où seul le contenu qui correspond à une requête de recherche est mis en attente.
+- Vous créez un blocage infini où tout le contenu des emplacements spécifiés est placé en conservation. Vous pouvez également créer une conservation basée sur une requête où seul le contenu des emplacements spécifiés correspondant à une requête de recherche est mis en attente.
 
-- Vous pouvez spécifier une plage de dates pour conserver uniquement le contenu qui a été envoyé, reçu ou créé au sein de cette plage de dates. Vous pouvez également conserver tout le contenu, quel que soit son moment d’envoi, de réception ou de création.
-
-> [!NOTE]
-> Vous pouvez avoir un maximum de 10 000 eDiscovery dans tous les cas eDiscovery principaux de votre organisation.
+- Vous pouvez spécifier une plage de dates pour conserver uniquement le contenu qui a été envoyé, reçu ou créé au sein de cette plage de dates. En guise d’alternative, vous pouvez conserver tout le contenu des emplacements spécifiés, quel que soit le moment d’envoi, de réception ou de création.
   
 ## <a name="how-to-create-an-ediscovery-hold"></a>Procédure de création d’une conservation eDiscovery
 
@@ -64,6 +61,9 @@ Pour créer une conservation de découverte électronique qui est associée à u
    b. **Emplacements de site** : cliquez sur **choisir des sites** , puis cliquez à nouveau sur **choisir les sites** pour spécifier les comptes SharePoint et OneDrive à mettre en attente. Saisissez l’URL de chaque site à placer en conservation. Vous pouvez également ajouter l’URL du site SharePoint pour une équipe Microsoft, un groupe Office 365 ou un groupe Yammer. Cliquez sur **choisir**, puis sur **Terminer**.
   
    c. **Dossiers publics Exchange.** Déplacez le contrôle bascule bascule ![ ](../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png) vers la position **tout** pour mettre en attente tous les dossiers publics de votre organisation Exchange Online. Vous ne pouvez pas choisir des dossiers publics spécifiques à mettre en attente. Laissez le commutateur Toggle défini sur **None** si vous ne souhaitez pas mettre de conservation sur les dossiers publics.
+
+   > [!NOTE]
+   > Vous devez ajouter au moins un emplacement de contenu à la suspension. Dans le cas contraire, les éléments statiques de conservation eDiscovery indiqueront qu’aucun élément n’est en attente.
 
 8. Lorsque vous avez terminé d’ajouter des emplacements de contenu au blocage, cliquez sur **suivant**.
 

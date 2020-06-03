@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7e453a40-66df-44ab-92a1-96786cb7fb34
 description: Découvrez le consentement de l’utilisateur pour les applications et comment l’activer pour permettre aux applications tierces d’accéder aux informations Microsoft 365.
-ms.openlocfilehash: df81d2cf3e1d796e462d2b9240b8288273ed5372
-ms.sourcegitcommit: ff1af42b036bfdf75729db8c78f10cf4642616ac
+ms.openlocfilehash: 955ae9e58c14dbb8012a440ef6c336f44b0760a4
+ms.sourcegitcommit: 7bb3d8a93a85246172e2499d6c58c390e46f5bb9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/01/2020
-ms.locfileid: "44477171"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "44498316"
 ---
 # <a name="managing-user-consent-to-apps-in-microsoft-365"></a>Gestion du consentement de l’utilisateur pour les applications dans Microsoft 365
 
@@ -42,7 +42,7 @@ Voici comment activer ou désactiver le consentement de l’utilisateur pour les
 
 1. Dans le centre d’administration, accédez à la page **paramètres** d’organisation des paramètres, puis \> **Org settings**  >  [Services](https://go.microsoft.com/fwlink/p/?linkid=2053743) sélectionnez **consentement de l’utilisateur pour les applications**.
 
-2. Sur la page de **consentement de l’utilisateur pour les applications** , sélectionnez l’option permettant d’activer ou de désactiver les applications intégrées.
+2. Sur la page de **consentement de l’utilisateur pour les applications** , sélectionnez l’option permettant d’activer ou de désactiver le consentement de l’utilisateur.
 
 ## <a name="more-info"></a>Plus d’informations
 <a name="__toc379982114"> </a>

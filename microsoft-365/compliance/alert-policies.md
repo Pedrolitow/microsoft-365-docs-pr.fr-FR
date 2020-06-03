@@ -19,12 +19,12 @@ ms.assetid: 8927b8b9-c5bc-45a8-a9f9-96c732e58264
 ms.custom:
 - seo-marvel-apr2020
 description: Créez des stratégies d’alerte dans le centre de sécurité et conformité dans Office 365 et Microsoft 365 pour surveiller les menaces potentielles, les pertes de données et les problèmes d’autorisations.
-ms.openlocfilehash: 92f7146c40bbcbd93eb36e43a4dff9c8a807c403
-ms.sourcegitcommit: 436841236dc41390a3be9f8936d19d3d017fa35c
+ms.openlocfilehash: 48c187d7456f4b0a8e1da7558b7813fc2a8dc9f7
+ms.sourcegitcommit: 33be6075fcc89d4c0a48fa7e59f3b3ebc605d9f3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/30/2020
-ms.locfileid: "44429213"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44520168"
 ---
 # <a name="alert-policies-in-the-security-and-compliance-center"></a>Stratégies d’alerte dans le Centre de sécurité et de conformité
 
@@ -42,6 +42,9 @@ Voici un aperçu rapide du fonctionnement des stratégies d’alerte et des aler
 ![Vue d’ensemble du fonctionnement des stratégies d’alerte](../media/e02a622d-b429-448b-8107-dd1a4770b4e0.png)
 
 1. Un administrateur de votre organisation crée, configure et active une stratégie d’alerte à l’aide de la page **stratégies d’alerte** du centre de sécurité et de conformité. Vous pouvez également créer des stratégies d’alerte à l’aide de la cmdlet **New-protectionalert vous permet** dans la sécurité & PowerShell du centre de conformité. Pour créer des stratégies d’alerte, vous devez disposer du rôle gérer les alertes ou configuration de l’organisation dans le centre de sécurité et de conformité.
+
+   > [!NOTE]
+   > La création ou la mise à jour d’une stratégie d’alerte prend jusqu’à 24 heures après le déclenchement des alertes par la stratégie. Cela est dû au fait que la stratégie doit être synchronisée avec le moteur de détection d’alerte.
 
 2. Un utilisateur effectue une activité qui correspond aux conditions d’une stratégie d’alerte. Dans le cas d’une attaque par programme malveillant, les messages électroniques infectés envoyés aux utilisateurs de votre organisation déclenchent une alerte.
 
@@ -179,6 +182,12 @@ Lorsque des événements correspondant à la même stratégie d’alerte se prod
 La capture d’écran suivante montre une alerte avec quatre événements d’agrégation. La liste activité contient des informations sur les quatre messages électroniques pertinents pour l’alerte.
 
 ![Exemple d’agrégation d’alertes](../media/AggregatedAlertExample.png)
+
+Gardez les points suivants à l’esprit concernant l’agrégation d’alertes :
+
+- Alertes déclenchées par **une URL potentiellement malveillante cliquez sur was detected** [default Alert Policy](#default-alert-policies) n’est pas regroupé. Cela est dû au fait que les alertes déclenchées par cette stratégie sont uniques pour chaque utilisateur et chaque message électronique.
+
+- Pour l’instant, la propriété d’alerte **nombre d’accès** n’indique pas le nombre d’événements agrégés pour toutes les stratégies d’alerte. Pour les alertes déclenchées par ces stratégies d’alerte, vous pouvez afficher les événements agrégés en cliquant sur **afficher la liste des messages** ou afficher l' **activité** sur l’alerte. Nous travaillons sur le fait que le nombre d’événements agrégés figurant dans la propriété alerte de **nombre d’accès** soit disponible pour toutes les stratégies d’alerte.
 
 ## <a name="rbac-permissions-required-to-view-alerts"></a>Autorisations RBAC requises pour afficher les alertes
 

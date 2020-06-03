@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 68e8f432008a6322921ef440878a1cca1354e196
-ms.sourcegitcommit: 261d51b90a9ad53a6a42348c414b1b1e1230c37f
+ms.openlocfilehash: e8c8783a570fe1b747ba8d2cf07f7d7f6f2fe39f
+ms.sourcegitcommit: eee4f651bd51d5aedd64e42d02bfed8ccb9be4cd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44292472"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "44515761"
 ---
 # <a name="get-started-with-insider-risk-management"></a>Prise en main de la gestion des risques internes
 
@@ -95,14 +95,17 @@ Consultez la rubrique [configurer un connecteur pour importer des données RH](i
 
 ### <a name="configure-data-loss-prevention-dlp-policies"></a>Configurer les stratégies de protection contre la perte de données (DLP)
 
-La gestion des risques internes prend en charge l’utilisation des stratégies DLP pour identifier l’exposition intentionnelle ou accidentelle d’informations sensibles aux parties indésirables. Lors de la configuration d’une stratégie de gestion des risques inSided avec le modèle *fuites de données* , vous devez affecter une stratégie DLP spécifique à la stratégie.
+La gestion des risques initiés prend en charge l’utilisation des stratégies DLP pour identifier l’exposition intentionnelle ou accidentelle d’informations sensibles aux parties indésirables pour les alertes DLP à niveau de gravité élevé. Lors de la configuration d’une stratégie de gestion des risques inSided avec le modèle **fuites de données** , vous devez affecter une stratégie DLP spécifique à la stratégie.
 
-Cette stratégie permet de piloter les indicateurs de gestion des risques initiaux pour les alertes DLP de gravité élevée pour les informations sensibles et constitue une partie importante de la configuration de la couverture de la gestion des risques. Si vous configurez plusieurs stratégies DLP pour votre organisation, vous devez attribuer une stratégie de gestion des risques inSided par stratégie DLP.
-
-Consultez la rubrique [créer, tester et régler une stratégie DLP](create-test-tune-dlp-policy.md) pour obtenir des instructions détaillées sur la configuration des stratégies DLP pour votre organisation. Une fois que vous avez configuré une stratégie DLP, revenez à ces étapes de configuration.
+Cette stratégie permet de piloter les indicateurs de gestion des risques initiaux pour les alertes DLP de gravité élevée pour les informations sensibles et constitue une partie importante de la configuration de la couverture de la gestion des risques. Pour plus d’informations sur la gestion des risques internes et les considérations relatives à l’intégration et à la planification des stratégies DLP, consultez la rubrique [stratégies de gestion des risques internes](insider-risk-management-policies.md#data-leaks).
 
 >[!IMPORTANT]
->Assurez-vous que le paramètre **rapports d’incident** de la stratégie DLP pour la gestion des risques initiés utilisé avec ce modèle est configuré pour des alertes de niveau de gravité *élevé* . Les alertes de gestion des risques internes ne seront pas générées à partir des stratégies DLP avec le champ **rapports d’incident** défini sur *faible* ou *moyen*.
+>Assurez-vous que vous avez effectué les opérations suivantes :
+>
+>- Vous comprenez et configurez correctement les utilisateurs dans l’étendue dans les stratégies de gestion des risques DLP et Insider pour produire la couverture de stratégie que vous attendez.
+>- Assurez-vous que le paramètre **rapports d’incident** de la stratégie DLP pour la gestion des risques initiés utilisé avec ce modèle est configuré pour des alertes de niveau de gravité *élevé* . Les alertes de gestion des risques internes ne seront pas générées à partir des stratégies DLP avec le champ **rapports d’incident** défini sur *faible* ou *moyen*.
+
+Consultez la rubrique [créer, tester et régler une stratégie DLP](create-test-tune-dlp-policy.md) pour obtenir des instructions détaillées sur la configuration des stratégies DLP pour votre organisation. Une fois que vous avez configuré une stratégie DLP, revenez à ces étapes de configuration.
 
 ## <a name="step-4-required-configure-insider-risk-settings"></a>Étape 4 (obligatoire) : configure Insider Risk Settings
 
