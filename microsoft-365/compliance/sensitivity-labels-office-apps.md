@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Découvrez comment les utilisateurs utilisent les étiquettes de confidentialité dans les applications Office pour le bureau, les applications Office pour mobile et les applications Office pour le Web. Découvrez les applications qui prennent en charge les étiquettes de sensibilité.
-ms.openlocfilehash: e8cb869e6883df99babfb8d20bf8130678e0f9da
-ms.sourcegitcommit: 1b560ee45f3b0253fa5c410a4499373c1f92da9c
+ms.openlocfilehash: 9fca3af2c53c57bbc010c5e95976cbde9ddcbbdc
+ms.sourcegitcommit: c696852da06d057dba4f5147bbf46521910de3ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/31/2020
-ms.locfileid: "44432593"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44545911"
 ---
 # <a name="use-sensitivity-labels-in-office-apps"></a>Utiliser les étiquettes de confidentialité dans les applications Office
 
@@ -185,7 +185,7 @@ En plus de restreindre l’accès aux utilisateurs de votre organisation, vous p
 
 Si les utilisateurs externes n’ont pas de compte dans Azure Active Directory, vous pouvez créer un compte invité pour ceux-ci dans votre client. Pour leur adresse de messagerie, vous pouvez spécifier n’importe quelle adresse de messagerie déjà utilisée. Par exemple, son adresse Gmail. Ce compte d’invité peut également être utilisé pour accéder à un document partagé dans SharePoint ou OneDrive lorsque vous avez [activé les étiquettes de sensibilité pour les fichiers Office dans SharePoint et onedrive](sensitivity-labels-sharepoint-onedrive-files.md).
 
-Les utilisateurs externes peuvent également utiliser et créer un compte Microsoft pour les documents chiffrés lorsqu’ils utilisent les applications Microsoft 365 sur Windows. Cette fonctionnalité n’est pas encore prise en charge pour MacOS, Android ou iOS. Par exemple, une personne partage un document chiffré avec elle, et les paramètres de chiffrement spécifient leur adresse de messagerie Gmail. Cet utilisateur peut créer son propre compte Microsoft qui utilise son adresse de messagerie Gmail. Ensuite, une fois connecté avec ce compte, il peut ouvrir le document et le modifier, en fonction des restrictions d’utilisation spécifiées pour cet utilisateur. Pour un exemple de procédure pas à pas de ce scénario, voir [ouverture et modification du document protégé](https://docs.microsoft.com/azure/information-protection/secure-collaboration-documents#opening-and-editing-the-protected-document).
+Les utilisateurs externes peuvent également utiliser et créer un compte Microsoft pour les documents chiffrés lorsqu’ils utilisent des applications Microsoft 365 ([applications Office 365](https://docs.microsoft.com/deployoffice/name-change)) sur Windows. Cette fonctionnalité n’est pas encore prise en charge pour MacOS, Android ou iOS. Par exemple, une personne partage un document chiffré avec elle, et les paramètres de chiffrement spécifient leur adresse de messagerie Gmail. Cet utilisateur peut créer son propre compte Microsoft qui utilise son adresse de messagerie Gmail. Ensuite, une fois connecté avec ce compte, il peut ouvrir le document et le modifier, en fonction des restrictions d’utilisation spécifiées pour cet utilisateur. Pour un exemple de procédure pas à pas de ce scénario, voir [ouverture et modification du document protégé](https://docs.microsoft.com/azure/information-protection/secure-collaboration-documents#opening-and-editing-the-protected-document).
 
 > [!NOTE]
 > L’adresse de messagerie du compte Microsoft doit correspondre à l’adresse de messagerie spécifiée pour limiter l’accès aux paramètres de chiffrement.

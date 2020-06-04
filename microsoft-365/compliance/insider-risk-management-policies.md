@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: eff935eb39884d9003b64b5be952c8e8e73b286a
-ms.sourcegitcommit: eee4f651bd51d5aedd64e42d02bfed8ccb9be4cd
+ms.openlocfilehash: 827cffde0ff719d133830e10e958f04fe70fc9d6
+ms.sourcegitcommit: 416a4b87bfd7e5aff80194b59b2776f054aa8eb5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44515879"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44534926"
 ---
 # <a name="insider-risk-management-policies"></a>Stratégies de gestion des risques internes
 
@@ -67,7 +67,7 @@ Lors de la création ou de la modification de stratégies DLP à utiliser avec d
      >[!NOTE]
      >Lors de la création d’une stratégie DLP à l’aide des modèles prédéfinis, vous devez sélectionner l’option **créer ou personnaliser des règles DLP avancées** pour configurer le paramètre **rapports d’incident** pour le niveau de gravité *élevé* .
 
-Chaque stratégie de gestion des risques inSided créée à partir du modèle **fuites de données** ne peut avoir qu’une seule stratégie DLP affectée. Si vous avez plusieurs stratégies DLP pour lesquelles vous souhaitez que des alertes de gravité élevée soient traitées par une stratégie de gestion des risques Insiders, vous devez créer une stratégie de gestion des risques Insiders distincte par stratégie DLP.
+Chaque stratégie de gestion des risques inSided créée à partir du modèle **fuites de données** ne peut avoir qu’une seule stratégie DLP affectée. Envisagez de créer une stratégie DLP dédiée qui combine les différentes activités que vous souhaitez détecter et agir en tant qu’indicateurs de déclenchement pour les stratégies de risque initiaux qui utilisent le modèle **fuites de données** .
 
 Consultez la rubrique [créer, tester et régler une stratégie DLP](create-test-tune-dlp-policy.md) pour obtenir des instructions détaillées sur la configuration des stratégies DLP pour votre organisation.
 

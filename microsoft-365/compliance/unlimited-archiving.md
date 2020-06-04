@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 37cdbb02-a24a-4093-8bdb-2a7f0b3a19ee
 description: En savoir plus sur l’archivage à extension automatique, qui offre un stockage d’archive illimité pour les boîtes aux lettres Exchange Online.
-ms.openlocfilehash: 584502092e04822a91bf6d04c77daa277ed70547
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: f2d9e645badd98ea9a1d14dec22e291c8ad7de63
+ms.sourcegitcommit: 416a4b87bfd7e5aff80194b59b2776f054aa8eb5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43633399"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44534916"
 ---
 # <a name="overview-of-unlimited-archiving"></a>Vue d’ensemble de l’archivage illimité
 
@@ -57,7 +57,7 @@ Voici une présentation rapide du processus.
 
 ## <a name="what-gets-moved-to-the-additional-archive-storage-space"></a>Qu’est-ce qui est déplacé vers l’espace de stockage d’archive supplémentaire ?
 
-Pour utiliser efficacement le stockage d’archives à extension automatique, les dossiers peuvent être déplacés. Microsoft 365 détermine quels dossiers sont déplacés lorsque du stockage supplémentaire est ajouté à l’archive. Parfois, lorsqu’un dossier est déplacé, un ou plusieurs sous-dossiers sont automatiquement créés et les éléments du dossier d’origine sont distribués vers ces dossiers pour faciliter le processus de déplacement. Lors de l’affichage de la partie Archive de la liste des dossiers dans Outlook, ces sous-dossiers sont affichés sous le dossier d’origine.  La Convention d’affectation de noms que Microsoft 365 utilise pour nommer ces sous-dossiers est ** \<le nom\>de dossier _yyyy (créé sur MMM DD, yyyy h_mm)**, où :
+Pour utiliser efficacement le stockage d’archives à extension automatique, les dossiers peuvent être déplacés. Microsoft 365 détermine quels dossiers sont déplacés lorsque du stockage supplémentaire est ajouté à l’archive. Parfois, lorsqu’un dossier est déplacé, un ou plusieurs sous-dossiers sont automatiquement créés et les éléments du dossier d’origine sont distribués vers ces dossiers pour faciliter le processus de déplacement. Lors de l’affichage de la partie Archive de la liste des dossiers dans Outlook, ces sous-dossiers sont affichés sous le dossier d’origine.  La Convention d’affectation de noms que Microsoft 365 utilise pour nommer ces sous-dossiers est ** \<folder name\> _Yyyy (créé sur MMM DD, yyyy h_mm)**, où :
 
 - **yyyy** est l’année de réception des messages dans le dossier.
 
@@ -90,7 +90,7 @@ Voici quelques éléments à prendre en compte lors de l’utilisation d’Outlo
 
 - Vous pouvez accéder à n’importe quel dossier de votre boîte aux lettres d’archivage, y compris ceux qui ont été déplacés vers la zone de stockage étendu automatiquement.
 
-- Vous pouvez rechercher des éléments qui ont été déplacés vers une zone de stockage supplémentaire uniquement en effectuant une recherche dans le dossier proprement dit. Cela signifie que vous devez sélectionner le dossier d’archivage dans la liste des dossiers pour sélectionner l’option **dossier actif** comme étendue de recherche. De même, si un dossier d’une zone de stockage à extension automatique contient des sous-dossiers, vous devez effectuer une recherche dans chaque sous-dossier séparément.
+- La recherche pour l’archivage développé automatiquement est disponible uniquement dans le bureau Outlook en tant qu’Insiders Build 16.0.12716.10000. La recherche est disponible dans Outlook pour le Web. De la même manière que pour l’archive en ligne, vous pouvez rechercher des éléments qui ont été déplacés vers une zone de stockage supplémentaire uniquement en effectuant une recherche dans le dossier proprement dit. Cela signifie que vous devez sélectionner le dossier d’archivage dans la liste des dossiers pour sélectionner l’option **dossier actif** comme étendue de recherche. De même, si un dossier d’une zone de stockage à extension automatique contient des sous-dossiers, vous devez effectuer une recherche dans chaque sous-dossier séparément.
 
 - Le nombre d’éléments dans Outlook et le nombre de lectures/non de lectures (dans Outlook et Outlook sur le Web) dans une archive étendue automatiquement peuvent ne pas être précis.
 

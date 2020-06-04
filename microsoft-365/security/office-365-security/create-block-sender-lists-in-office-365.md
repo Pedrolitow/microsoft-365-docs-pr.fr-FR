@@ -13,12 +13,12 @@ localization_priority: Normal
 search.appverid:
 - MET150s
 description: Les administrateurs peuvent en savoir plus sur les options disponibles et préférées pour bloquer les messages entrants dans Exchange Online Protection (EOP).
-ms.openlocfilehash: d9db3d4ac123998e6ab4f108199b3aee852f95d6
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 2862fa4a33a31eac9c61f94aa929133d2dc69fc8
+ms.sourcegitcommit: c696852da06d057dba4f5147bbf46521910de3ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44209546"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44545899"
 ---
 # <a name="create-blocked-sender-lists-in-eop"></a>Créer des listes d’expéditeurs bloqués dans EOP
 
@@ -38,6 +38,18 @@ La meilleure méthode pour bloquer les expéditeurs varie en fonction de l’ét
 > Bien que vous puissiez utiliser les paramètres de blocage à l’échelle de l’Organisation pour résoudre les faux négatifs (courrier indésirable manqué), vous devez également envoyer ces messages à Microsoft pour analyse. La gestion des faux négatifs à l’aide de listes rouges augmente considérablement votre charge administrative. Si vous utilisez des listes rouges pour déviation du courrier indésirable manqué, vous devez conserver la rubrique [signaler les messages et les fichiers à Microsoft](report-junk-email-messages-to-microsoft.md) à l’adresse.
 
 En revanche, vous disposez également de plusieurs options pour toujours autoriser les messages provenant de sources spécifiques en utilisant des _listes d’expéditeurs approuvés_. Si vous souhaitez en savoir plus, consultez la page [Créer des listes d’expéditeurs approuvés](create-safe-sender-lists-in-office-365.md).
+
+## <a name="email-message-basics"></a>Notions de base sur les messages électroniques
+
+Un message électronique SMTP standard est constitué d’une *enveloppe de message* et d’un contenu de message. L’enveloppe de message contient les informations requises pour la transmission et la remise du message entre les serveurs SMTP. Le contenu du message comporte les champs d’en-tête de message (collectivement appelés l’*en-tête de message*) et le corps du message. L’enveloppe de message est décrite dans la norme RFC 5321 et l’en-tête de message est décrit dans la spécification RFC 5322. Les destinataires ne voient jamais l’enveloppe de message réelle, car elle est générée par le processus de transmission des messages, et elle ne fait pas partie du message.
+
+- L' `5321.MailFrom` adresse (également appelée adresse **de messagerie de** l’expéditeur, expéditeur P1 ou expéditeur de l’enveloppe) est l’adresse de messagerie utilisée dans la transmission SMTP du message. Cette adresse de messagerie est généralement enregistrée dans le champ d’en-tête de **retour** de l’en-tête du message (bien que l’expéditeur ait la possibilité de désigner une autre adresse de messagerie de **chemin d’accès** ). Si le message ne peut pas être remis, il s’agit du destinataire de la notification d’échec de remise (également appelée notification de non-remise).
+
+- Le `5322.From` (également appelé l’adresse **de** l’expéditeur ou l’expéditeur P2) est l’adresse de messagerie dans le champ de l’en-tête **de** , et est l’adresse de messagerie de l’expéditeur affichée dans les clients de messagerie.
+
+Fréquemment, les `5321.MailFrom` `5322.From` adresses et sont identiques (communication de personne à personne). Toutefois, lorsque le courrier électronique est envoyé de la part d’une autre personne, les adresses peuvent être différentes.
+
+Listes des expéditeurs bloqués et listes de domaines bloqués dans les stratégies de blocage du courrier indésirable dans EOP, inspectez les `5321.MailFrom` `5322.From` adresses et. Les expéditeurs bloqués d’Outlook utilisent uniquement l' `5322.From` adresse.
 
 ## <a name="use-outlook-blocked-senders"></a>Utiliser les expéditeurs bloqués d’Outlook
 

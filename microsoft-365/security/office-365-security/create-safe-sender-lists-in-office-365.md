@@ -16,12 +16,12 @@ ms.assetid: 9721b46d-cbea-4121-be51-542395e6fd21
 ms.custom:
 - seo-marvel-apr2020
 description: Les administrateurs peuvent en savoir plus sur les options disponibles et préférées pour autoriser les messages entrants dans Exchange Online Protection (EOP).
-ms.openlocfilehash: 3ef05c919a86bc3458cceb2a2bc73522e16e4bb1
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: c9f444483afea82db1fbbe3b5be98751d42c2f5e
+ms.sourcegitcommit: c696852da06d057dba4f5147bbf46521910de3ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44209534"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44545945"
 ---
 # <a name="create-safe-sender-lists-in-eop"></a>Créer des listes d’expéditeurs approuvés dans EOP
 
@@ -39,7 +39,7 @@ Les règles de flux de messagerie offrent une flexibilité maximale pour garanti
 > [!IMPORTANT]
 > • Veillez à contrôler attentivement *les* exceptions de filtrage du courrier indésirable à l’aide des listes d’expéditeurs autorisés. <br/><br/> • Si vous pouvez utiliser des listes d’expéditeurs autorisés pour obtenir des faux positifs (courrier marqué comme courrier indésirable), vous devez envisager d’utiliser des listes d’expéditeurs approuvés comme solution temporaire qui doit être évitée dans la mesure du possible. Nous vous déconseillons de gérer les faux positifs à l’aide de listes d’expéditeurs approuvés, car les exceptions au filtrage du courrier indésirable peuvent ouvrir votre organisation à l’usurpation d’identité et à d’autres attaques. Si vous insistez sur l’utilisation de listes d’expéditeurs approuvés pour gérer les faux positifs, vous devez être vigilant et conserver la rubrique [signaler les messages et les fichiers à Microsoft](report-junk-email-messages-to-microsoft.md) à l’adresse. <br/><br/> • Pour autoriser un domaine à envoyer des courriers électroniques non authentifiés (ignorer la protection contre l’usurpation d’identité) mais ne pas contourner les vérifications contre le courrier indésirable et les programmes malveillants, vous pouvez l’ajouter à la [liste des expéditeurs approuvés AllowedToSpoof](walkthrough-spoof-intelligence-insight.md) <br/><br/> • EOP et Outlook inspecter différentes propriétés de message pour déterminer l’expéditeur du message. Pour plus d’informations, consultez la section [considérations relatives à l’envoi en nombre de messages électroniques](#considerations-for-bulk-email) plus loin dans cette rubrique.
 
-En revanche, vous disposez également de plusieurs options pour bloquer les messages provenant de sources spécifiques en utilisant des _listes d’expéditeurs bloqués_. Pour plus d’informations, consultez la rubrique [créer des listes d’expéditeurs bloqués dans EOP](create-block-sender-lists-in-office-365.md).
+En revanche, vous disposez également de plusieurs options pour bloquer les messages provenant de sources spécifiques en utilisant des _listes d’expéditeurs bloqués_. Pour plus d’informations, voir [Créer des listes d’expéditeurs bloqués dans Exchange Online PowerShell](create-block-sender-lists-in-office-365.md).
 
 ## <a name="recommended-use-mail-flow-rules"></a>Recommandation Utiliser des règles de flux de messagerie
 
@@ -66,13 +66,13 @@ L’exemple suivant suppose que vous avez besoin d’un courrier électronique d
 
    - **L’expéditeur** \> **est interne/externe** \> À **l’extérieur de l’organisation**: cette condition est implicite, mais il est possible de l’utiliser pour prendre en compte les serveurs de messagerie locaux qui ne sont peut-être pas correctement configurés.
 
-   - **L’objet ou le corps** \> **l’objet ou le corps inclut l’un de ces mots** \> \<Mots-clés \> : Si vous pouvez restreindre davantage les messages en fonction de mots clés ou d’expressions dans la ligne d’objet ou le corps du message, vous pouvez utiliser ces mots comme condition.
+   - **L’objet ou le corps** \> **l’objet ou le corps inclut l’un de ces mots** \> \<keywords\>: Si vous pouvez restreindre davantage les messages en fonction de mots clés ou d’expressions dans la ligne d’objet ou le corps du message, vous pouvez utiliser ces mots comme condition.
 
 4. **Action**: configurez ces deux actions dans la règle :
 
    a. **Modifier les propriétés** \> du message **définir le seuil de probabilité de courrier indésirable (SCL)** \> **Contourner le filtrage du courrier indésirable**.
 
-   b. **Un en-tête** \> de message **inclut l’un de ces mots** \> **Nom**de l’en-tête : \< CustomHeaderName d' \> **en-tête**: \< CustomHeaderValue \> .
+   b. **Un en-tête** \> de message **inclut l’un de ces mots** \> **Nom de l’en-** tête : \<CustomHeaderName\> **valeur d’en-tête**: \<CustomHeaderValue\> .
 
       Par exemple, `X-ETR: Bypass spam filtering for authenticated sender 'contoso.com'`. Si vous avez plusieurs domaines dans la règle, vous pouvez personnaliser le texte d’en-tête en fonction de vos besoins.
 
@@ -103,7 +103,7 @@ Si vous ne pouvez pas utiliser les règles de flux de messagerie comme décrit p
 
 ## <a name="use-allowed-sender-lists-or-allowed-domain-lists"></a>Utiliser des listes d’expéditeurs autorisés ou des listes de domaines autorisés
 
-L’option la moins intéressante consiste à utiliser la liste des expéditeurs autorisés ou la liste des domaines autorisés dans les stratégies de blocage du courrier indésirable. Vous devez éviter cette option *si possible* , car les expéditeurs contournent tout le courrier indésirable, l’usurpation d’identité et la protection contre le hameçonnage, et l’authentification des expéditeurs (SPF, DKIM, DMARC). Cette méthode est recommandée pour le test temporaire uniquement. La procédure détaillée est décrite dans la rubrique [configurer des stratégies anti-courrier indésirable dans EOP](configure-your-spam-filter-policies.md) .
+L’option la moins intéressante consiste à utiliser la liste des expéditeurs autorisés ou la liste des domaines autorisés dans les stratégies de blocage du courrier indésirable. Vous devez éviter cette option *si possible* , car les expéditeurs contournent tout le courrier indésirable, l’usurpation d’identité et la protection contre le hameçonnage, et l’authentification des expéditeurs (SPF, DKIM, DMARC). Cette méthode est idéale pour les tests temporaires uniquement. La procédure détaillée est décrite dans la rubrique [configurer des stratégies anti-courrier indésirable dans EOP](configure-your-spam-filter-policies.md) .
 
 La limite maximale de ces listes est d’environ 1000 entrées ; Bien que vous ne puissiez entrer que 30 entrées dans le portail. Vous devez utiliser PowerShell pour ajouter plus de 30 entrées.
 
@@ -118,7 +118,7 @@ Un message électronique SMTP standard est constitué d’une *enveloppe de mes
 
 - Le `5322.From` (également appelé l’adresse **de** l’expéditeur ou l’expéditeur P2) est l’adresse de messagerie dans le champ de l’en-tête **de** , et est l’adresse de messagerie de l’expéditeur affichée dans les clients de messagerie.
 
-Fréquemment, les `5321.MailFrom` `5322.From` adresses et sont identiques (communication de personne à personne). Toutefois, lorsqu'un courrier électronique est envoyé à la place d'une autre personne, les adresses sont souvent différentes. Cela se produit généralement avec les messages de courrier indésirable.
+Fréquemment, les `5321.MailFrom` `5322.From` adresses et sont identiques (communication de personne à personne). Toutefois, lorsque le courrier électronique est envoyé de la part d’une autre personne, les adresses peuvent être différentes. Cela se produit le plus souvent pour les messages électroniques en nombre.
 
 Par exemple, supposons que Blue Yonder Airlines a embauché Margie’s Travel pour envoyer sa publicité par courrier électronique. Le message que vous recevez dans votre boîte de réception comporte les propriétés suivantes :
 
