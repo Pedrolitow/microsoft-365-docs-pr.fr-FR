@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Découvrez comment les étiquettes de rétention classent les données au sein de votre organisation à des fins de gouvernance, et comment appliquer des règles de rétention basées sur cette classification. Vous pouvez également utiliser des étiquettes de rétention pour appliquer une solution de gestion des enregistrements pour Microsoft 365.
-ms.openlocfilehash: 4291e32760a585be7610612b81cc54ecfcf0863e
-ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
+ms.openlocfilehash: ab2e1baf553a386009d55e43efdf75b796cc1ffd
+ms.sourcegitcommit: c696852da06d057dba4f5147bbf46521910de3ab
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/31/2020
-ms.locfileid: "44432241"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44545966"
 ---
 # <a name="learn-about-retention-labels"></a>Découvrir les étiquettes de rétention
 
@@ -129,7 +129,9 @@ En outre, une étiquette de rétention dispose de deux options de rétention qui
   
 - Déclenchez une révision avant destruction à la fin d’une période de rétention afin que les documents SharePoint et OneDrive soient analysés avant de pouvoir être supprimés. Si vous souhaitez en savoir plus, consultez la page [Révisions avant destruction](disposition.md#disposition-reviews).
     
-- Démarrer la période de rétention à compter de la date d’étiquetage du contenu, au lieu de l’ancienneté du contenu ou de la date de sa dernière modification. Cette option s'applique uniquement au contenu des sites SharePoint et des comptes OneDrive. Pour la messagerie Exchange, la période de rétention est toujours basée sur la date à laquelle le message a été envoyé ou reçu, quelle que soit l’option choisie.
+- Démarrer la période de rétention à compter de la date d’étiquetage du contenu, au lieu de l’ancienneté du contenu ou de la date de sa dernière modification. Lorsque vous utilisez cette option :
+    - Cela s'applique uniquement au contenu des sites SharePoint et des comptes OneDrive. Pour la messagerie Exchange, la période de rétention est toujours basée sur la date à laquelle le message a été envoyé ou reçu.
+    - Vous ne pouvez pas modifier la période de rétention une fois l’étiquette enregistrée.
     
 ![Paramètres de rétention avec les options spécifiques des étiquettes](../media/c49118c9-6279-4661-94db-deffa76e27ac.png)
 
