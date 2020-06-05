@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Les administrateurs peuvent découvrir le fonctionnement de l’aide à la décision, notamment comment déterminer rapidement les expéditeurs qui envoient légitimement des messages électroniques non authentifiés.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 4a71b885926d742f86a5a0c86443a5f5ba23b8a6
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 1b97d36c3434e7410f4cb3d19ef8eaee6f37e601
+ms.sourcegitcommit: 86705d15231c987be2fcf5a295b9b6239fc46077
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208463"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44566703"
 ---
 # <a name="walkthrough---atp-spoof-intelligence-insight-in-microsoft-365"></a>Procédure pas à pas-aide à la décision d’usurpation d’identité dans Microsoft 365
 
@@ -99,12 +99,6 @@ Cela modifie la combinaison de paires de domaines unique du domaine usurpé et d
 
 Par exemple, si vous ajoutez la paire de domaines suivante à la liste verte de l’expéditeur « AllowedToSpoof » : *domaine usurpé* « gmail.com » et l' *infrastructure d’envoi* « TMS *. mx.com »,* seul le courrier de cette paire de domaines sera autorisé à usurper. Les autres expéditeurs qui tentent d’usurper « gmail.com » et d’autres domaines que « tms.mx.com » tentent d’usurper continueront à être protégés par l’intelligence des usurpations d’identité.
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Rubriques connexes
 
 [Protection contre l’usurpation d’identité dans Microsoft 365](anti-spoofing-protection.md)
-
-[Procédure pas à pas. D’un tableau de bord à un aperçu](from-a-dashboard-to-an-insight.md)
-
-[Procédure pas à pas. D’un rapport détaillé à un aperçu](from-a-detailed-report-to-an-insight.md)
-
-[Procédure pas à pas. D’un aperçu à un rapport détaillé](from-an-insight-to-a-detailed-report.md)
