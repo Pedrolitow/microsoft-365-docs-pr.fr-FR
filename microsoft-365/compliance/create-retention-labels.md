@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Instructions pour créer, publier et appliquer automatiquement des étiquettes de rétention pour conserver les informations nécessaires, supprimer l’inutile et déclarer un élément en tant qu’enregistrement dans votre environnement Office 365.
-ms.openlocfilehash: 65319baa0fd238ebdc403307fb8bb91a59d87cd6
-ms.sourcegitcommit: 3cd487476efe4138d1b42499fbffbbe4bacfe5b8
+ms.openlocfilehash: a3ba321c9eae91bf701646a45271d3edcbc8dccc
+ms.sourcegitcommit: c696852da06d057dba4f5147bbf46521910de3ab
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "44408466"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44545956"
 ---
 # <a name="create-publish-and-auto-apply-retention-labels"></a>Créer, publier ou appliquer automatiquement des étiquettes de rétention
 
@@ -56,13 +56,13 @@ Ces autorisations sont requises uniquement pour créer et appliquer des étiquet
 
 2. Suivez les invites de l’Assistant. Si vous utilisez la gestion des enregistrements :
     
-    - Pour plus d’informations sur les descripteurs de plan de fichiers, voir [Présentation du gestionnaire de plans de fichiers](file-plan-manager.md)
+    - Pour plus d’informations sur les descripteurs de plan de fichier, consultez [Utiliser le plan de gestion des fichiers pour gérer les étiquettes de rétention](file-plan-manager.md)
     
     - Pour utiliser l’étiquette de rétention pour déclarer du contenu en tant qu’enregistrement, activez la case à cocher **Utiliser une étiquette pour classifier du contenu en tant qu’« enregistrement »**.
 
 3. Répétez ces étapes pour créer d’autres étiquettes.
 
-Pour modifier une étiquette existante, sélectionnez-la, puis choisissez **Modifier l'étiquette**. Cette opération démarre le même Assistant, ce qui vous permet de modifier les descriptions et paramètres d’étiquette à l’étape 2.
+Pour modifier une étiquette existante, sélectionnez-la, puis sélectionnez **Modifier l’étiquette** pour démarrer le même Assistant qui vous permet de modifier les descriptions d’étiquette et les [Paramètres éligibles](#updating-retention-labels-and-their-policies) à l’étape 2. Vous pouvez également sélectionner une option disponible **Modifier** pour accéder directement à la page correspondante afin de mettre à jour.
 
 ## <a name="publish-retention-labels-by-creating-a-retention-label-policy"></a>Publier des étiquettes de rétention en créant une stratégie de rétention d’étiquette
 
@@ -81,6 +81,8 @@ Publiez vos étiquettes de rétention pour que les utilisateurs puissent les app
 2. Suivez les invites de l’Assistant.
     
     Pour plus d’informations sur la prise en charge des emplacements par des étiquettes de rétention, voir la section [Étiquettes de rétention et emplacements](labels.md#retention-label-policies-and-locations). 
+
+Pour modifier une stratégie d’étiquette de rétention existante, sélectionnez-la, puis sélectionnez **Modifier la stratégie** pour démarrer le même Assistant qui vous permet de modifier les descriptions de la stratégie et les [Paramètres éligibles](#updating-retention-labels-and-their-policies) à l’étape 2. Vous pouvez également sélectionner une option disponible **Modifier** pour accéder directement à la page correspondante afin de mettre à jour.
 
 ## <a name="auto-apply-a-retention-label"></a>Étiquettes de rétention appliquées automatiquement
 
@@ -101,6 +103,8 @@ Appliquez automatiquement une étiquette de rétention, en fonction des conditio
     Pour plus d’informations sur la configuration des conditions qui appliquent automatiquement l’étiquette de rétention, voir la section [Configuration des conditions d’application automatique des étiquettes de rétention](#configuring-conditions-for-auto-apply-retention-labels) sur cette page.
     
     Pour plus d’informations sur la prise en charge des emplacements par des étiquettes de rétention, voir la section [Étiquettes de rétention et emplacements](labels.md#retention-label-policies-and-locations).
+
+Pour modifier une stratégie d’étiquette d’application existante, sélectionnez-la, puis sélectionnez **Modifier la stratégie** pour démarrer le même Assistant qui vous permet de modifier les descriptions de la stratégie et les [Paramètres éligibles](#updating-retention-labels-and-their-policies) à l’étape 2. Vous pouvez également sélectionner une option disponible **Modifier** pour accéder directement à la page correspondante afin de mettre à jour.
 
 
 ## <a name="configuring-conditions-for-auto-apply-retention-labels"></a>Configuration des conditions d’application automatique des étiquettes de rétention
@@ -217,7 +221,11 @@ Si les étiquettes n’apparaissent pas dans Outlook sur le web comme prévu, ve
 
 ## <a name="updating-retention-labels-and-their-policies"></a>Mise à jour des étiquettes de rétention et de leurs stratégies
 
-Si vous modifiez une étiquette de rétention, une stratégie d’étiquette de rétention ou une stratégie d’application automatique et que l’étiquette de rétention est déjà appliquée au contenu, vos paramètres mis à jour sont automatiquement appliqués à ce contenu, en plus du contenu nouvellement étiqueté.
+Lorsque vous modifiez une étiquette de rétention, une stratégie d’étiquette de rétention ou une stratégie d’application automatique et que l’étiquette ou stratégie de rétention est déjà appliquée au contenu, vos paramètres mis à jour sont automatiquement appliqués à ce contenu, en plus du contenu nouvellement identifié.
+
+Certains paramètres ne peuvent pas être modifiés une fois l’étiquette ou la stratégie créée et enregistrée, notamment :
+- Paramètres de rétention à l’exception de la période de rétention, sauf si vous avez configuré l’étiquette pour conserver ou supprimer le contenu en fonction de sa date de création.
+- Possibilité de classifier en tant qu’enregistrement.
 
 ## <a name="find-the-powershell-cmdlets-for-retention-labels"></a>Rechercher les cmdlets PowerShell pour les étiquettes de rétention
 
