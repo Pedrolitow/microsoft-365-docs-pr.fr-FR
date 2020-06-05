@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - FRP150
 description: Découvrez le centre d’administration Microsoft 365.
-ms.openlocfilehash: 267a7fe56cbd71734664f085846c8b5a1356cccd
-ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
+ms.openlocfilehash: 720130f01000e1f8845d2fa28dbc2d278a258ebf
+ms.sourcegitcommit: 9195c83c725a7e6ed395ce0253304da54e2195f0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/31/2020
-ms.locfileid: "44432206"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "44560422"
 ---
 # <a name="about-the-microsoft-365-admin-center"></a>À propos du Centre d’administration Microsoft 365
 
@@ -55,8 +55,6 @@ Le centre d’administration Microsoft 365 est le point d’entrée commun pour 
 
 1. Connectez-vous à [admin.Microsoft.com](https://admin.microsoft.com), accédez au volet de navigation et sélectionnez profil d’organisation des **paramètres** \> **Organization profile**.
 
-1. Connectez-vous à [Portal.Partner.microsoftonline.CN](https://go.microsoft.com/fwlink/p/?linkid=513813), accédez au volet de navigation et sélectionnez profil d’organisation des **paramètres** \> **Organization profile**.
-
 2. Accédez à la fiche des **Préférences de publication** , puis sélectionnez **modifier**. 
     
 3. Sélectionnez **publication ciblée pour tout le monde** ou **publication ciblée pour les utilisateurs sélectionnés**. Si vous choisissez publication ciblée pour les utilisateurs sélectionnés, veillez à ajouter votre compte d’administrateur (et tous les autres administrateurs de votre organisation qui souhaitent participer) à la liste des utilisateurs sélectionnés.
@@ -81,7 +79,7 @@ Pour revenir à l’utilisation de l’ancien centre d’administration, désact
 
 ::: moniker range="o365-worldwide"
 
-## <a name="frequently-asked-questions"></a>Foire aux questions
+## <a name="frequently-asked-questions"></a>Questions fréquemment posées
 
 Vos questions ne s’affichent pas ici ? Accédez à la section **Commentaires** au bas de cette page et posez votre question. 
   

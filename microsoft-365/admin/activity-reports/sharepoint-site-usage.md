@@ -21,19 +21,20 @@ search.appverid:
 - BSA160
 ms.assetid: 4ecfb843-e5d5-464d-8bf6-7ed512a9b213
 description: 'Obtenez le rapport sur l’utilisation du site SharePoint pour savoir combien de fichiers stockent les utilisateurs dans les sites SharePoint, combien sont utilisés activement et le stockage total consommé. '
-ms.openlocfilehash: 45614557710e05c600a3603d85462c4987022881
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 3a7fece8868ceb34cbcf356e23fd13006defa439
+ms.sourcegitcommit: 9195c83c725a7e6ed395ce0253304da54e2195f0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44387512"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "44560398"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---sharepoint-site-usage"></a>Rapports Microsoft 365 dans le centre d’administration-utilisation du site SharePoint
 
 En tant qu’administrateur Microsoft 365, le tableau de bord **rapports** vous montre l’activité vue d’ensemble des différents produits de votre organisation. Il vous permet d'explorer pour obtenir des informations plus précises sur les activités spécifiques de chaque produit. Par exemple, vous pouvez obtenir une vue d'ensemble de la valeur que vous apporte SharePoint, en termes de nombre total de fichiers que les utilisateurs stockent sur les sites SharePoint, de nombre de fichiers activement utilisés, et de stockage utilisé sur ces sites. Ensuite, vous pouvez explorer le rapport de l'utilisation du site SharePoint pour comprendre les tendances et les détails par niveau de site pour tous les sites. 
   
 > [!NOTE]
-> Vous devez être un administrateur général, un lecteur global ou un lecteur de rapports dans Microsoft 365 ou un administrateur Exchange, SharePoint, teams, Team communications ou Skype entreprise pour afficher des rapports. 
+> Vous devez être un administrateur général, un lecteur global ou un lecteur de rapports dans Microsoft 365 ou un administrateur Exchange, SharePoint, teams, Team communications ou Skype entreprise pour afficher des rapports.
+Les rapports Microsoft 365 dans le centre d’administration ne sont pas pris en charge pour les locataires GCC High et DoD.
  
 ## <a name="how-to-get-to-the-sharepoint-site-usage-report"></a>Comment accéder au Rapport Utilisation du site SharePoint
 

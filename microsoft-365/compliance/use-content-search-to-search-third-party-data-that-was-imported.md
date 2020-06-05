@@ -16,22 +16,25 @@ search.appverid:
 - MET150
 ms.assetid: ec2677ff-c4d7-4363-a9e7-22c80e015688
 description: Utiliser l’outil eDiscovery de recherche de contenu pour rechercher des éléments importés dans des boîtes aux lettres dans Microsoft 365 à partir d’une source de données tierce. Vous pouvez créer une requête pour rechercher tous les éléments importés ou créer une requête pour rechercher des types de données tiers spécifiques. Cet article répertorie les valeurs que vous pouvez utiliser dans une requête de mot clé pour rechercher les types de données tiers que vous pouvez importer vers Microsoft 365.
-ms.openlocfilehash: e7e48f5231bccc988ad853202603defd17fd58f4
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.openlocfilehash: ab693ff8e2283e201b9d573e68f4bdfb9f859749
+ms.sourcegitcommit: e6e704cbd9a50fc7db1e6a0cf5d3f8c6cbb94363
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43942967"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "44564967"
 ---
-# <a name="use-content-search-to-search-third-party-imported-data"></a>Utiliser la recherche de contenu pour rechercher des données importées tierces
+# <a name="use-content-search-to-search-third-party-data-imported-by-a-custom-partner-connector"></a>Utiliser la recherche de contenu pour rechercher des données tierces importées par un connecteur de partenaire personnalisé
 
-Vous pouvez utiliser l' [outil eDiscovery](content-search.md) de la recherche de contenu dans le centre de sécurité & conformité pour rechercher des éléments importés dans des boîtes aux lettres dans Microsoft 365 à partir d’une source de données tierce. Vous pouvez créer une requête pour rechercher tous les éléments de données tiers importés ou créer une requête pour rechercher des éléments de données tiers spécifiques. Par ailleurs, vous pouvez également créer une stratégie de rétention basée sur une requête ou une conservation eDiscovery basée sur une requête pour conserver les données tierces. 
+Vous pouvez utiliser l' [outil eDiscovery](content-search.md) de la recherche de contenu dans le centre de sécurité & conformité pour rechercher des éléments importés dans des boîtes aux lettres dans Microsoft 365 à partir d’une source de données tierce. Vous pouvez créer une requête pour rechercher tous les éléments de données tiers importés ou créer une requête pour rechercher des éléments de données tiers spécifiques. Par ailleurs, vous pouvez également créer une stratégie de rétention basée sur une requête ou une conservation eDiscovery basée sur une requête pour conserver les données tierces.
   
-Pour plus d’informations sur l’importation de données tierces et sur la liste des types de données tierces que vous pouvez importer vers Microsoft 365, consultez l' [ouvrage utiliser un partenaire pour archiver des données tierces dans Office 365](work-with-partner-to-archive-third-party-data.md). 
+Pour plus d’informations sur l’utilisation d’un partenaire pour importer des données tierces et la liste des types de données tierces que vous pouvez importer vers Microsoft 365, consultez [collaborer avec un partenaire pour archiver des données tierces dans Office 365](work-with-partner-to-archive-third-party-data.md).
+
+> [!IMPORTANT]
+> Les instructions de cet article s’appliquent uniquement aux données tierces qui ont été importées par un connecteur de partenaire personnalisé. Cet article ne s’applique pas aux données tierces importées à l’aide des [connecteurs de données tiers](archiving-third-party-data.md#third-party-data-connectors) dans le centre de conformité Microsoft.
   
 ## <a name="creating-a-query-to-search-all-third-party-data"></a>Création d’une requête pour rechercher toutes les données tierces
 
-Pour rechercher (ou mettre en attente) tout type de données tierces que vous avez importées dans Office 365, vous pouvez utiliser `kind:externaldata` la paire message-valeur de la zone de mot clé pour une recherche de contenu ou lors de la création d’une conservation basée sur une requête. Par exemple, pour rechercher des éléments importés à partir d’une source de données tierce et qui contiennent le mot « Contoso » dans la propriété Subject de l’élément importé, utilisez la requête suivante : 
+Pour rechercher (ou mettre en attente) tout type de données tierces que vous avez importées dans Office 365, vous pouvez utiliser la `kind:externaldata` paire message-valeur de la zone de mot clé pour une recherche de contenu ou lors de la création d’une conservation basée sur une requête. Par exemple, pour rechercher des éléments importés à partir d’une source de données tierce et qui contiennent le mot « Contoso » dans la propriété Subject de l’élément importé, utilisez la requête suivante : 
   
 ```powershell
 kind:externaldata AND subject:contoso
@@ -57,7 +60,7 @@ itemclass:ipm.externaldata.Facebook* AND subject:contoso
 
 Le tableau suivant répertorie les types de données tiers que vous pouvez rechercher et la valeur à utiliser pour la `itemclass:` propriété message afin de Rechercher spécifiquement ce type de données tierces. La syntaxe de la requête ne respecte pas la casse. 
   
-|**Type de données tiers**|**Valeur de `itemclass:` la propriété**|
+|**Type de données tiers**|**Valeur de la `itemclass:` propriété**|
 |:-----|:-----|
 |VISERA  <br/> | `ipm.externaldata.AIM*` <br/> |
 |American Idol  <br/> | `ipm.externaldata.AmericanIdol*` <br/> |
@@ -81,7 +84,7 @@ Le tableau suivant répertorie les types de données tiers que vous pouvez reche
 |Bloomberg Mail  <br/> | `ipm.externaldata.BloombergMail*` <br/> |
 |Messages Bloomberg  <br/> | `ipm.externaldata.BloombergMessaging*` <br/> |
 |Box  <br/> | `ipm.externaldata.Box*` <br/> |
-|Serveur de &amp; présence de messagerie instantanée Cisco  <br/> | `ipm.externaldata.Jabber.IM` <br/> |
+|Serveur de présence de messagerie instantanée Cisco &amp;  <br/> | `ipm.externaldata.Jabber.IM` <br/> |
 |Cisco Jabber  <br/> | `ipm.externaldata.Jabber*` <br/> |
 |CipherCloud for Salesforce Chatter  <br/> | `ipm.externaldata.Chatter.Post` <br/>  `ipm.externaldata.Chatter.Comment` <br/> |
 |Direct Connect  <br/> | `ipm.externaldata.DirectConnect*` <br/> |
