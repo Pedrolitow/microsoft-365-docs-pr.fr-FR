@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Découvrez les rapports intelligents et les informations disponibles dans le centre de sécurité et de conformité, et comment les utiliser pour afficher et explorer les données et prendre des mesures rapides.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 4a033231b808964829ced0b9520515c426f5b81f
-ms.sourcegitcommit: 86705d15231c987be2fcf5a295b9b6239fc46077
+ms.openlocfilehash: 3646c38f56852d18fe7f2a79c82c059f6d0bca21
+ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 06/05/2020
-ms.locfileid: "44566691"
+ms.locfileid: "44588155"
 ---
 # <a name="smart-reports-and-insights-in-the-security-amp-compliance-center"></a>Rapports intelligents et Insights dans le centre de sécurité &amp; conformité
 
@@ -50,7 +50,7 @@ Un grand nombre de rapports sont disponibles dans le centre de sécurité et de 
 |**Explorateur de menaces** (également appelé Explorateur) ou **détections en temps réel** <br/> Programmes malveillants suspects détectés dans les messages électroniques et les fichiers dans Microsoft 365  <br/> |Dans le centre de sécurité &amp; conformité, accédez à l’Explorateur de **gestion des menaces** \> **Explorer** ou aux **détections en temps réel** .<br/> |[Threat Explorer (et détections en temps réel)](threat-explorer.md) <br/> |
 |**Rapports de sécurité avancée contre les menaces et de messagerie** <br/> Rapports sur la sécurité et la protection contre les menaces (y compris les programmes malveillants, le courrier indésirable, le hameçonnage et l’usurpation d’identité)  <br/> |Dans le centre de sécurité &amp; conformité, accédez à **rapports** de \> **tableau de bord** <br/> |[Afficher les rapports pour Office 365 protection avancée contre les menaces](view-reports-for-atp.md) <br/><br/> [Afficher les rapports de sécurité de messagerie dans le centre de sécurité &amp; conformité](view-email-security-reports.md) <br/> |
 |**Flux de messagerie** <br/> Informations sur les messages électroniques envoyés et reçus, les alertes récentes, les expéditeurs et destinataires les plus fréquents, les rapports de transfert de courrier et plus encore  <br/> |Dans le centre de sécurité &amp; conformité, accédez à tableau de bord de **flux de messagerie** \> **Dashboard** . <br/> |[Informations sur le flux de messagerie dans le centre de sécurité et conformité](mail-flow-insights-v2.md)<br/> |
-|**Mise en conformité GDPR** <br/> Informations sur la conformité RGPD, y compris les liens vers les personnes concernées, les tendances des étiquettes et les &amp; dossiers fermés actifs  <br/> |Dans le centre de sécurité &amp; conformité, accédez au tableau de bord de **confidentialité des données** \> **RGPD** <br/> |[Protection des informations Office 365 pour le RGPD](https://docs.microsoft.com/office365/enterprise/office-365-information-protection-for-gdpr) <br/> |
+|**Mise en conformité GDPR** <br/> Informations sur la conformité RGPD, y compris les liens vers les personnes concernées, les tendances des étiquettes et les &amp; dossiers fermés actifs  <br/> |Dans le centre de sécurité &amp; conformité, accédez au tableau de bord de **confidentialité des données** \> **RGPD** <br/> |[Protection des informations Office 365 pour le RGPD](https://docs.microsoft.com/microsoft-365/compliance/office-365-information-protection-for-gdpr) <br/> |
 |**Journal d’audit** <br/> Informations sur les activités Microsoft 365, les utilisateurs, les fichiers ou les dossiers, etc.  <br/> |Dans le centre de sécurité &amp; conformité, accédez ** &amp; ** à recherche dans le \> **Journal d’audit** de recherche <br/> |[Rechercher dans le journal d’audit dans le centre de sécurité &amp; conformité](../../compliance/search-the-audit-log-in-security-and-compliance.md) <br/> |
 |**Rapports de conformité** <br/> Rapports FedRAMP, rapports sur la gouvernance, sur les risques et sur la conformité, rapports de gestion de la sécurité de l'information ISO et rapports d'audit et d'évaluation des contrôles de la société de services.  <br/> |Dans le centre de sécurité &amp; conformité, accédez à rapports de conformité de la **garantie de service** \> **Compliance reports** . <br/> |[Planifier &amp; la conformité de la sécurité dans Office 365](../../compliance/plan-for-security-and-compliance.md) <br/> |
   

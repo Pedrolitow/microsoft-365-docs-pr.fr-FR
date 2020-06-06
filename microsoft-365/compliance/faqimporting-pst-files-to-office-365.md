@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 2fe71b05-f5a2-4182-ade7-4dc5cabdfd51
 description: 'Forum aux questions pour les administrateurs sur l’utilisation du service d’importation Office 365 pour importer les fichiers PST de votre organisation dans des boîtes aux lettres Microsoft 365. '
-ms.openlocfilehash: e2ddd464f2cfd421766fb9c4d1043533f5561b25
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 0d3245c962c2d22f0d500aafe22703bd3e57d504
+ms.sourcegitcommit: a418195dc11e6251ae37e788c102bbaa7087e44e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208128"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44579199"
 ---
 # <a name="faq-about-importing-pst-files"></a>FAQ sur l’importation de fichiers PST
 
@@ -50,7 +50,7 @@ En outre, pour créer des tâches d’importation dans le Centre de sécurité e
   
  **Où le chargement réseau est-il disponible ?**
   
-Le chargement réseau est actuellement disponible dans les régions suivantes : États-Unis, Canada, Brésil, Royaume-Uni, France, Europe, Inde, Asie de l’est, sud-est, Japon, République de Corée et Australie. Network upload will be available in more regions soon.
+Le chargement réseau est actuellement disponible dans les régions suivantes : États-Unis, Canada, Brésil, Royaume-Uni, France, Europe, Inde, Asie de l’est, Asie du sud-est, Japon, République de Corée, Australie et Émirats Arabes Unis (Émirats Arabes Unis). Network upload will be available in more regions soon.
 
 > [!NOTE]
 > À l'heure actuelle, le chargement réseau des fichiers PST n’est pas disponible en Allemagne et en Suisse. Ce Forum aux questions sera mis à jour lorsque le téléchargement réseau sera disponible dans ces pays.

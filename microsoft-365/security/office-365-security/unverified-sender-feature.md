@@ -17,12 +17,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Cet article vous guidera, comment empêcher les messages de hameçonnage d’atteindre votre boîte aux lettres, Outlook.com et Outlook sur le Web.
-ms.openlocfilehash: 9583161c9e64d6a24312565d68ae516a2be8606e
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: b49cc27685f62f5fb5d123a8a7aa4e51e0065e64
+ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44352453"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44588335"
 ---
 # <a name="unverified-sender"></a>Expéditeur non vérifié
 
@@ -66,7 +66,7 @@ De plus, nous n’appliquons pas le traitement de l’expéditeur non vérifié 
 
 Si vous êtes un client Office 365, vous pouvez gérer cette fonctionnalité via le centre de sécurité & conformité d’Office 365, de la même manière que vous gérez le traitement des expéditeurs non vérifiés. Si vous ajoutez l’expéditeur à la liste d’usurpation d’identité usurpée, le traitement « via » ne sera pas appliqué.
 
-## <a name="frequently-asked-questions"></a>Questions fréquentes (FAQ)
+## <a name="frequently-asked-questions"></a>Questions fréquemment posées
 
 ### <a name="what-criteria-does-outlookcom-and-outlook-win32-desktop-use-to-add-the--and-the-via-properties"></a>Quels sont les critères utilisés par Outlook.com et le bureau Win32 Outlook pour ajouter les propriétés «  ? » et « via » ?
 
@@ -84,10 +84,10 @@ Pour la balise via : en tant qu’expéditeur, vous devez vous assurer que le d
 
 Pas nécessairement. Office 365 peut avoir d’autres propriétés dans le message pour authentifier l’expéditeur.
 
-## <a name="related-topics"></a>Sujets associés
+## <a name="related-topics"></a>Rubriques connexes
 
-[Protéger votre compte de messagerie Outlook.com](https://support.microsoft.com/en-us/office/help-protect-your-outlook-com-email-account-a4f20fc5-4307-4ece-8231-6d4d4bd8a9ba)
+[Protéger votre compte de messagerie Outlook.com](https://support.microsoft.com/office/a4f20fc5-4307-4ece-8231-6d4d4bd8a9ba)
 
 [Gérer le hameçonnage ou l’usurpation d’identité dans Outlook.com](https://support.office.com/article/0d882ea5-eedc-4bed-aebc-079ffa1105a3)
 
-[Filtrage du courrier indésirable et du courrier indésirable dans Outlook sur le Web](https://support.office.com/article/db786e79-54e2-40cc-904f-d89d57b7f41d)
+[Filtrage du courrier indésirable et du courrier indésirable dans Outlook sur le Web](https://support.microsoft.com/office/db786e79-54e2-40cc-904f-d89d57b7f41d)

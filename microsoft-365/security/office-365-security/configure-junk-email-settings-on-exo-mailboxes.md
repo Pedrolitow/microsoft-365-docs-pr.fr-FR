@@ -16,12 +16,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Les administrateurs peuvent apprendre à configurer les paramètres de courrier indésirable dans les boîtes aux lettres Exchange Online. Un grand nombre de ces paramètres sont disponibles pour les utilisateurs dans Outlook ou Outlook sur le Web.
-ms.openlocfilehash: 40364db9d4af9e093d8f2f74ee3c0f0373b1671a
-ms.sourcegitcommit: 7bb3d8a93a85246172e2499d6c58c390e46f5bb9
+ms.openlocfilehash: a0b2bce985c642a2069d51cbd3103b6fd044ff17
+ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44498662"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44588451"
 ---
 # <a name="configure-junk-email-settings-on-exchange-online-mailboxes"></a>Configurer les paramètres de courrier indésirable dans les boîtes aux lettres Exchange Online
 
@@ -32,7 +32,7 @@ Toutefois, il existe également des paramètres de blocage du courrier indésira
 - **Activer ou désactiver la règle de courrier indésirable**: la règle de courrier indésirable est une règle de boîte de réception masquée nommée « règle de courrier indésirable » activée par défaut dans toutes les boîtes aux lettres. La règle de courrier indésirable contrôle les fonctionnalités suivantes :
 
   - **Déplacer des messages vers le dossier courrier indésirable en fonction des stratégies de blocage**du courrier indésirable : lorsqu’une stratégie de blocage du courrier indésirable est configurée avec l’action **déplacer le message vers le dossier courrier indésirable** pour le filtrage du courrier indésirable, la règle de filtrage du courrier indésirable déplace le message vers le dossier courrier indésirable une fois que le Pour plus d’informations sur le filtrage du courrier indésirable dans les stratégies de blocage du courrier indésirable, consultez la rubrique [configurer des stratégies anti-courrier indésirable dans EOP](configure-your-spam-filter-policies.md). De même, si la purge automatique (ZAP) zéro heure détermine un message remis est courrier indésirable ou hameçon, la règle de filtrage du courrier indésirable déplace le message vers le dossier courrier indésirable pour **déplacer le message vers le dossier courrier indésirable** actions de filtrage du courrier indésirable. Pour plus d’informations sur ZAP, reportez-vous à la rubrique [vidage automatique des heures (ZAP) dans Exchange Online](zero-hour-auto-purge.md).
-  
+
   - **Paramètres de courrier indésirable que les utilisateurs configurent pour eux-mêmes dans Outlook ou Outlook sur le Web**: la _collection_ de listes fiables est la liste des expéditeurs approuvés, la liste des destinataires approuvés et la liste des expéditeurs bloqués de chaque boîte aux lettres. Les entrées de ces listes déterminent si la règle de courrier indésirable déplace le message vers la boîte de réception ou le dossier courrier indésirable. Les utilisateurs peuvent configurer la collection de listes fiables pour leur propre boîte aux lettres dans Outlook ou Outlook sur le Web (anciennement Outlook Web App). Les administrateurs peuvent configurer la collection de listes fiables sur la boîte aux lettres de l’utilisateur.
 
 Lorsque la règle de courrier indésirable est activée dans la boîte aux lettres, EOP peut déplacer les messages vers le dossier courrier indésirable en fonction de l’action de filtrage du courrier indésirable **déplacer le message vers le dossier courrier indésirable** ou la liste des expéditeurs bloqués dans la boîte aux lettres, et empêcher la remise des messages dans le dossier courrier indésirable
@@ -148,7 +148,7 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, co
 > 
 > - Même si la règle de courrier indésirable est désactivée sur la boîte aux lettres, vous pouvez toujours configurer la collection de listes fiables et le filtre de courrier indésirable Outlook est capable de déplacer des messages vers la boîte de réception ou le dossier courrier indésirable. Pour plus d'informations, consultez la section [À propos des paramètres de courrier indésirable dans Outlook](#about-junk-email-settings-in-outlook) dans cette rubrique.
 > 
-> - Le filtre de courrier indésirable d’Outlook comporte des paramètres de collection de listes fiables supplémentaires (par exemple, **Ajouter automatiquement les personnes auxquelles j’envoie un message électronique à la liste des expéditeurs approuvés**). Pour plus d'informations, voir [Utiliser les filtres de courrier indésirable pour contrôler les messages affichés](https://support.office.com/article/274ae301-5db2-4aad-be21-25413cede077).
+> - Le filtre de courrier indésirable d’Outlook comporte des paramètres de collection de listes fiables supplémentaires (par exemple, **Ajouter automatiquement les personnes auxquelles j’envoie un message électronique à la liste des expéditeurs approuvés**). Pour plus d'informations, voir [Utiliser les filtres de courrier indésirable pour contrôler les messages affichés](https://support.microsoft.com/office/274ae301-5db2-4aad-be21-25413cede077).
 
 ### <a name="how-do-you-know-this-worked"></a>Comment savoir si cela a fonctionné ?
 
@@ -197,7 +197,7 @@ La collection de listes fiables (la liste des expéditeurs approuvés, la liste 
   - 500 Total des entrées de la liste des expéditeurs bloqués et de la liste des domaines bloqués.
 
   Lorsque la limite d’entrée 1024 est atteinte, les événements suivants se produisent :
-  
+
   - La liste cesse d’accepter les entrées dans PowerShell et Outlook sur le Web, mais aucune erreur n’est affichée.
 
     Les utilisateurs d’Outlook peuvent continuer à ajouter plus de 1024 entrées jusqu’à ce qu’ils atteignent la limite de 510 Ko pour Outlook. Outlook peut utiliser ces entrées supplémentaires, tant qu’un filtre EOP ne bloque pas le message avant la remise à la boîte aux lettres (règles de flux de messagerie, protection contre l’usurpation, etc.).
@@ -208,7 +208,7 @@ La collection de listes fiables (la liste des expéditeurs approuvés, la liste 
   2. La liste des expéditeurs approuvés et la liste des destinataires fiables sont combinées, dédupliquées et triées par ordre alphabétique chaque fois qu’une modification est apportée aux 1024 premières entrées.
 
   Les premières entrées 1024 sont utilisées et les informations pertinentes sont marquées dans les en-têtes de message.
-  
+
   Les entrées supérieures à 1024 et qui n’ont pas été synchronisées avec Azure AD sont traitées par Outlook (pas Outlook sur le Web), et aucune information n’est indiquée dans les en-têtes des messages.
 
 Comme vous pouvez le constater, l’activation du paramètre **approuver le courrier électronique à partir de mes contacts** réduit le nombre d’expéditeurs approuvés et de destinataires approuvés pouvant être synchronisés. S’il s’agit d’un problème, nous vous recommandons d’utiliser la stratégie de groupe pour désactiver cette fonctionnalité :

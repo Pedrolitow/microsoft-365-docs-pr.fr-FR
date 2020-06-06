@@ -2,8 +2,8 @@
 title: Nouveautés du centre d’administration 365 de Microsoft
 f1.keywords:
 - CSH
-ms.author: pebaum
-author: pebaum
+ms.author: anfowler
+author: adefowler
 manager: shohara
 audience: Admin
 ms.topic: overview
@@ -21,12 +21,12 @@ description: Centre d’administration Microsoft 365-Découvrez les fonctionnali
 ms.custom:
 - MACDashWhatsNew
 - AdminSurgePortfolio
-ms.openlocfilehash: 460eba757d9fa35e6031ca3382630a6bcd38c392
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 4e4d47b054b5c6371bb62a3fe0f52c08b0997498
+ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44401141"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44587579"
 ---
 # <a name="whats-new-in-the-microsoft-365-admin-center"></a>Nouveautés du centre d’administration Microsoft 365
 
@@ -43,18 +43,62 @@ Nous ajoutons constamment de nouvelles fonctionnalités au [Centre d’administr
 > **«La retraite du centre d’administration classique commence en mars**<br><br>
 Lorsque vous vous connectez au centre d’administration Microsoft 365, vous accédez à chaque fois au nouveau centre d’administration. En mars, nous avons commencé à désactiver la fonctionnalité de basculement vers le centre d’administration classique. Pour le moment, vous pouvez toujours revenir en arrière, mais en tant que nouveau centre d’administration, vous êtes en mesure de désactiver le commutateur pour toutes les organisations. <br><br> *Dernière mise à jour : 11 mai 2020*
 
-Et si vous êtes intéressé par les nouveautés d’autres services Cloud de Microsoft :
+Et si vous souhaitez connaître les nouveautés d’autres services Cloud de Microsoft :
 
-- [Nouveautés dans Exchange Online](https://go.microsoft.com/fwlink/?linkid=2119714)
-- [Nouveautés de Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/whats-new)
-- [Nouveautés du centre de conformité Microsoft 365](https://docs.microsoft.com/microsoft-365/compliance/whats-new)
-- [Nouveautés du centre d’administration SharePoint](https://docs.microsoft.com/sharepoint/what-s-new-in-admin-center)
+- [Nouveautés d’Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/whats-new)
 - [Nouveautés du centre d’administration Exchange](https://docs.microsoft.com/Exchange/whats-new)
+- [Nouveautés de Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/whats-new)
+- [Nouveautés du centre de conformité Microsoft 365](https://docs.microsoft.com/Office365/SecurityCompliance/whats-new)
+- [Nouveautés de la protection Microsoft contre les menaces](https://docs.microsoft.com/microsoft-365/security/mtp/whats-new)
+- [Nouveautés du centre d’administration SharePoint](https://docs.microsoft.com/sharepoint/what-s-new-in-admin-center)
 - [Mises à jour Office](https://docs.microsoft.com/OfficeUpdates/)
+
+## <a name="may-2020"></a>Mai 2020
+
+### <a name="new-update-channel-for-office"></a>Nouveau canal de mise à jour pour Office
+
+Le 12 mai, nous avons annoncé la disponibilité d’un nouveau canal de mise à jour pour Office : canal d’entreprise mensuel. Ce canal de mise à jour fournit aux utilisateurs les nouvelles fonctionnalités Office une fois par mois, le deuxième mardi du mois.
+
+Si vous autorisez vos utilisateurs à installer Office à partir du portail, vous pouvez sélectionner mensuel Enterprise Channel pour ceux-ci. Pour ce faire, connectez-vous au centre d’administration Microsoft 365 et accédez à la section **Afficher tous les**  > **paramètres**  >  **Org settings**  >  **services**de  >  **téléchargement de logiciels Office**des services Office. Si vous sélectionnez une **fois par mois (canal d’entreprise mensuel)**, toutes les nouvelles installations automatiques d’Office seront configurées pour utiliser le canal d’entreprise mensuel.
+
+En association avec la version mensuelle de Channel Enterprise, nous recherchons également les noms des canaux de mise à jour existants. Par exemple, le canal mensuel est renommé en canal actuel. Les nouveaux noms prennent effet le 9 juin 2020.
+
+Pour plus d’informations, consultez la rubrique [modifications apportées aux canaux de mise à jour pour les applications Microsoft 365](https://docs.microsoft.com/DeployOffice/update-channels-changes).
+
+### <a name="new-admin-roles"></a>Nouveaux rôles d’administrateur
+
+Nous avons ajouté de nouveaux rôles d’administrateur Azure Active Directory au centre d’administration Microsoft 365.
+
+- Le rôle d’administrateur d’identité hybride donne aux utilisateurs l’autorisation de gérer les services de mise en service et d’authentification dans le Cloud.
+- Le rôle d’administrateur réseau permet aux utilisateurs de gérer les emplacements réseau et de passer en revue les informations réseau pour le logiciel Microsoft 365 en tant qu’applications de service.
+- Le rôle d’administrateur d’imprimantes accorde l’autorisation de gérer tous les aspects des imprimantes et des connexions aux imprimantes.
+- Le technicien de l’imprimante est un sous-ensemble du rôle d’administrateur d’imprimantes où ces utilisateurs peuvent enregistrer et annuler l’inscription des imprimantes, ainsi que mettre à jour l’état de l’imprimante.
+Pour en savoir plus sur ces rôles, consultez la rubrique [à propos des rôles d’administrateur](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
+
+### <a name="export-groups-list"></a>Liste exporter les groupes
+
+De nombreux administrateurs ont besoin de partager des informations sur les groupes et leur utilisation pour les personnes qui n’ont pas accès aux centres d’administration. Vous pouvez désormais exporter la liste de groupes vers un fichier CSV à des fins d’audit, ce qui signifie que vous pouvez générer un ancien script PowerShell. Pour essayer, **accédez à groupes groupes**  >  **Groups**, puis sélectionnez **Exporter les groupes** dans la barre de commandes.
+
+### <a name="microsoft-365-solution-and-architecture-center"></a>Centre d’architecture et solution Microsoft 365
+
+Ce mois-ci, nous avons publié un nouveau site [https://docs.microsoft.com](https://docs.microsoft.com) nommé [Microsoft 365 solution and architecture Center](https://docs.microsoft.com/microsoft-365/solutions/solution-architecture-center), qui rassemble les conseils techniques dont vous avez besoin pour comprendre, planifier et implémenter des solutions Microsoft 365 intégrées pour une collaboration sécurisée et conforme. Dans ce centre, vous trouverez les éléments suivants :
+
+- Guide de la solution de base
+- Solutions de charge de travail et conseils de scénario
+- Illustrations de la solution et de l’architecture (affiches !!!)
+- Conseils spécifiques de l’industrie
+- Principaux de conception de l’architecture d’entreprise
+
+### <a name="docs-training-and-videos"></a>Documents, formation et vidéos
+
+- **Nouveautés de la série de vidéos Microsoft 365**: ce mois-ci, nous allons aborder la nouvelle expérience de support dans les centres d’administration et de sécurité et de conformité de teams, l’intégration de planificateur avec le centre de messages et la nouvelle disposition vidéo 3x3 dans Microsoft Teams. [Nouveautés de Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=2118096)
+- La page Hub [d’aide du centre d’administration 365 de Microsoft](https://docs.microsoft.com/microsoft-365/admin/) a été mise à jour pour vous aider à trouver plus rapidement ce dont vous avez besoin. Et si vous accédez à cette page pour le moment, nous avons ajouté une carte pour vous informer des mises à jour et des modifications importantes.
 
 ## <a name="april-2020"></a>Avril 2020
 
 ### <a name="intune-roles-management"></a>Gestion des rôles Intune
+
+[Avril 2020](#april-2020)
 
 Eh bien, nous l’avons fait ! Nous avons adopté la deuxième étape vers une expérience de rôles unifiée et vous pouvez désormais gérer les rôles Intune dans le centre d’administration 365 de Microsoft. Vous pouvez également utiliser des fonctionnalités telles que la possibilité de rechercher des rôles et d’afficher des autorisations de rôle. Cela signifie que vous n’avez pas besoin de disposer de deux outils distincts pour gérer les rôles pour Microsoft 365 et Intune. Lorsque vous vous connectez au centre d’administration Microsoft 365, vous verrez qu’il y a deux tableaux croisés dynamiques sur la page rôles, un pour Azure AD et un pour Intune.
 
@@ -103,7 +147,7 @@ Ce mois-ci, nous avons deux mises à jour pour les groupes :
 - Vous pouvez désormais modifier des adresses de messagerie pour les groupes Office 365 (également appelés groupes dans Outlook et bientôt appelés groupes Microsoft 365).
 - Nous avons fait part de vos commentaires et nous avons ajouté des messages d’erreur plus clairs pour expliquer pourquoi vous ne pouvez pas convertir un groupe en équipe Microsoft.
 
-### <a name="docs-videos-and-training"></a>Documents, vidéos et formation
+### <a name="docs-videos-and-training-april"></a>Documents, vidéos et formation (avril)
 
 **Nouveautés de la série de vidéos Microsoft 365**: ce mois-ci, nous fournissons des conseils et des ressources pour aider les petites entreprises à passer au travail à distance, y compris comment déployer Microsoft Teams, les ressources de formation à distance pour rester connecté à des clients et des partenaires, et le nouveau plan de voix entreprise Microsoft 365. [Nouveautés de Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=2118096)
 
@@ -118,7 +162,7 @@ Ce mois-ci, nous avons deux mises à jour pour les groupes :
 
 #### <a name="for-admins-and-business-owners"></a>Pour les administrateurs et les propriétaires d’entreprise
 
-- [Permettre à votre petite entreprise de travailler à distance](https://support.office.com/article/empower-your-small-business-with-remote-work-9b91a85a-39b4-40a6-a590-0f9bea0ba8e6) 
+- [Permettre à votre petite entreprise de travailler à distance](https://support.office.com/article/empower-your-small-business-with-remote-work-9b91a85a-39b4-40a6-a590-0f9bea0ba8e6)
 - [Exécution d’une petite entreprise à distance](https://support.office.com/article/sign-up-for-a-microsoft-subscription-9ac1a0f1-789b-4143-b954-5821d5d89298)
 - [S’inscrire à Microsoft Business Basic](https://support.office.com/article/sign-up-for-a-microsoft-subscription-9ac1a0f1-789b-4143-b954-5821d5d89298)
 - [Configuration de la connexion à deux facteurs](https://support.office.com/article/sign-up-for-a-microsoft-subscription-9ac1a0f1-789b-4143-b954-5821d5d89298)
@@ -143,8 +187,6 @@ Avec la mise à niveau de l’utilisation de teams, certaines développées obti
 
 :::image type="content" source="../media/MAC-WN-CustThemeSP.png" alt-text="Diagramme mappant les paramètres du centre d’administration vers l’application mobile.":::
 
-:::image-end:::
-
 ### <a name="improvements-to-the-add-a-group-wizard"></a>Améliorations apportées à l’Assistant Ajout d’un groupe
 
 Lorsque les administrateurs ont créé un nouveau groupe et lui ont fait une équipe en même temps, ils peuvent affecter des propriétaires qui n’ont pas de licence incluant Teams. Et cela a créé quelques maux de casse. Nous avons mis à jour le flux de l’Assistant pour vérifier que les propriétaires disposent d’une licence teams et qu’ils n’ont pas la possibilité de transformer le groupe en équipe est désactivé.
@@ -162,7 +204,7 @@ Les nouveaux noms de produits entrent en vigueur le 21 avril 2020. Il s’agit d
 |Office 365 Business Essentials     |   Microsoft 365 Business Basic      |
 |Office 365 Business Premium     |    Microsoft 365 Business Standard     |
 |Microsoft 365 Business     |    Microsoft 365 Business Premium     |
-|Applications Microsoft 365 pour les PME     |    Applications Microsoft 365 pour les entreprises       | 
+|Applications Microsoft 365 pour les PME     |    Applications Microsoft 365 pour les entreprises       |
 |Office 365 ProPlus    |   Applications Microsoft 365 pour les entreprises      |
 
 ### <a name="videos-training-and-docs"></a>Vidéos, formation et documents
@@ -185,14 +227,14 @@ Nous avons reçu beaucoup de commentaires de la part des partenaires et des admi
 
 C’est littéralement !!!
 
-### <a name="groups"></a>Groupes
+### <a name="groups"></a>Groups
 
 Voici quelques-unes des modifications apportées à la zone groupes du mois :
 
 - **Trier par nom de groupe**: vous pouvez trier la liste de groupes par ordre alphabétique en sélectionnant la colonne **nom du groupe** .
 - **Restaurer les groupes microsoft 365 supprimés**: vous n’avez plus besoin d’accéder au centre d’administration Exchange pour restaurer les groupes Microsoft 365 supprimés. Accédez à groupes du **Centre d’administration Microsoft 365** \> **Groups** \> les **groupes supprimés** \> (sélectionnez un groupe dans la liste) \> **groupe de restauration**. Il restaure le groupe dans la liste **groupes** et restaure le courrier électronique, les conversations, le bloc-notes, les fichiers et le calendrier du groupe.
 
-### <a name="videos-training-and-docs"></a>Vidéos, formation et documents
+### <a name="videos-training-and-docs-february"></a>Vidéos, formation et documents (février)
 
 - **Nouveautés de la série de vidéos Microsoft 365**: ce mois-ci, nous nous concentrerons sur les fonctionnalités de recherche personnalisées pour SharePoint Online, la fonctionnalité de gestion Office « what’s New » qui vous permet d’afficher ou de masquer des fonctionnalités spécifiques des utilisateurs finaux via le volet d’aide dans l’application, les dernières mises à jour de sécurité et de conformité dans Yammer, et bien plus. Voici le dernier épisode : [Nouveautés de Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=2118096)
 
@@ -361,7 +403,7 @@ Une mise à jour a été mise à jour vers l’un des assistants d’installatio
 Nous disposons de mises à jour pour la facturation et les abonnements ce mois-ci :
 
 - Abonnements basés sur des appareils : vous pouvez attribuer ou annuler l’affectation de licences **Microsoft 365 Apps for Education (Device)** à des appareils dans le centre d’administration Microsoft 365. **Microsoft 365 Apps for Education (Device)** est une licence de module complémentaire qui vous permet d’attribuer une licence à un appareil. Accédez à **facturation**de  >  **vos produits** pour trouver et acheter la licence.
-- Gestion des licences basées sur les utilisateurs : nous avons mis à jour la manière dont vous attribuez des licences aux utilisateurs actifs des **utilisateurs dans**  >  **Active users** le nouveau style. Pour plus d’informations, voir :
+- Gestion des licences basées sur les utilisateurs : nous avons mis à jour la manière dont vous attribuez des licences aux utilisateurs actifs des **utilisateurs dans**  >  **Active users** le nouveau style. Si vous souhaitez en savoir plus, consultez les articles :
   - [Attribuer des licences aux utilisateurs](manage/assign-licenses-to-users.md)
   - [Annuler l'assignation des licences aux utilisateurs](manage/remove-licenses-from-users.md)
 

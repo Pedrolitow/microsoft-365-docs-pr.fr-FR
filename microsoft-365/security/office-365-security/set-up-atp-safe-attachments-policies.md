@@ -18,17 +18,17 @@ ms.collection:
 - M365-security-compliance
 description: Découvrez comment définir des stratégies de pièces jointes fiables afin de protéger votre organisation contre les fichiers malveillants par courrier électronique.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ab67b66b8773f45e819abef34e1d77ce5de4cc62
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: d826cb6e0dd4370a1e02722901d083d4f021e2b4
+ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035319"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44588119"
 ---
 # <a name="set-up-office-365-atp-safe-attachments-policies"></a>Configuration des stratégies de pièces jointes approuvées ATP Office 365
 
 > [!IMPORTANT]
-> Cet article est destiné aux entreprises qui ont [Office 365 – Protection avancée contre les menaces](office-365-atp.md). Si vous êtes un utilisateur à domicile et que vous recherchez des informations sur les pièces jointes fiables dans Outlook, consultez la rubrique [Advanced Outlook.com Security](https://support.office.com/article/882d2243-eab9-4545-a58a-b36fee4a46e2).
+> Cet article est destiné aux entreprises qui ont [Office 365 – Protection avancée contre les menaces](office-365-atp.md). Si vous êtes un utilisateur à domicile et que vous recherchez des informations sur les pièces jointes fiables dans Outlook, consultez la rubrique [Advanced Outlook.com Security](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2).
 
 Les personnes envoient, reçoivent et partagent régulièrement des pièces jointes, telles que des documents, des présentations, des feuilles de calcul, etc. Il n’est pas toujours facile de déterminer si une pièce jointe est fiable ou malveillante en regardant un message électronique. Et la dernière chose que vous souhaitez, c’est une pièce jointe malveillante à utiliser pour votre organisation. Heureusement, [Office 365 Advanced Threat Protection](office-365-atp.md) (ATP) peut vous aider. Vous pouvez configurer des stratégies de [pièces jointes approuvées ATP](atp-safe-attachments.md) pour vous assurer que votre organisation est protégée contre les attaques par des pièces jointes non sûres.
 
@@ -48,12 +48,12 @@ Les personnes envoient, reçoivent et partagent régulièrement des pièces join
 
   |Role|WHERE/How Assigned|
   |---------|---------|
-  |administrateur général |La personne qui s’inscrit pour acheter Microsoft 365 est un administrateur global par défaut. (Pour en savoir plus, consultez la rubrique [à propos des rôles d’administrateur Microsoft 365](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles) .)|
-  |Administrateur de sécurité |Centre d’administration Azure Active Directory[https://aad.portal.azure.com](https://aad.portal.azure.com)()|
-  |Gestion de l’organisation Exchange Online, gestion de l’hygiène Exchange Online |Centre d’administration Exchange[https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)() <br>ou <br>  Applets de commande PowerShell (consultez la rubrique [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell))|
+  |administrateur général |La personne qui s’inscrit pour acheter Microsoft 365 est un administrateur global par défaut. (Pour en savoir plus, consultez la rubrique [à propos des rôles d’administrateur Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles) .)|
+  |Administrateur de sécurité |Centre d’administration Azure Active Directory ( [https://aad.portal.azure.com](https://aad.portal.azure.com) )|
+  |Gestion de l’organisation Exchange Online, gestion de l’hygiène Exchange Online |Centre d’administration Exchange ( [https://outlook.office365.com/ecp](https://outlook.office365.com/ecp) ) <br>ou <br>  Applets de commande PowerShell (consultez la rubrique [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell))|
   |
 
-  Pour en savoir plus sur les rôles et les autorisations, consultez [la &amp; rubrique autorisations dans le centre de sécurité conformité](permissions-in-the-security-and-compliance-center.md).
+  Pour en savoir plus sur les rôles et les autorisations, consultez [la rubrique autorisations dans le &amp; Centre de sécurité conformité](permissions-in-the-security-and-compliance-center.md).
 
 - [Découvrez les options de stratégie de pièces jointes approuvées ATP](#step-3-learn-about-atp-safe-attachments-policy-options) (dans cet article). Certaines options, telles que le moniteur ou les options de remplacement, peuvent entraîner un retard mineur du courrier électronique lors de l’analyse des pièces jointes. Pour éviter les retards de message, envisagez d’utiliser la [remise et l’aperçu dynamiques](dynamic-delivery-and-previewing.md).
 
@@ -63,11 +63,11 @@ Les personnes envoient, reçoivent et partagent régulièrement des pièces join
 
 1. Accédez à [https://protection.office.com](https://protection.office.com) et connectez-vous avec votre compte professionnel ou scolaire.
 
-2. Dans le centre &amp; de navigation de gauche du centre de sécurité **conformité, sélectionnez** **stratégie** \> de **pièces jointes fiables**.
+2. Dans le centre de navigation de gauche du centre de sécurité &amp; conformité, **Threat management**sélectionnez **stratégie** de \> **pièces jointes fiables**.
 
 3. Si vous voyez activer la protection avancée contre **les menaces pour SharePoint, OneDrive et Microsoft teams**, nous vous recommandons de sélectionner cette option. Cette opération active [Office 365 protection avancée contre les menaces pour SharePoint, OneDrive et Microsoft teams](atp-for-spo-odb-and-teams.md) pour votre environnement Microsoft 365.
 
-4. Sélectionnez **nouveau** (le nouveau bouton ressemble à un signe plus ( **+**)) pour commencer à créer votre stratégie.
+4. Sélectionnez **nouveau** (le nouveau bouton ressemble à un signe plus ( **+** )) pour commencer à créer votre stratégie.
 
 5. Spécifiez le nom, la description et les paramètres de la stratégie.<br/><br/>**Exemple :** Pour configurer une stratégie appelée « pas de retard » qui remet immédiatement les messages de tout le monde, puis relie les pièces jointes après leur analyse, vous pouvez spécifier les paramètres suivants :
 

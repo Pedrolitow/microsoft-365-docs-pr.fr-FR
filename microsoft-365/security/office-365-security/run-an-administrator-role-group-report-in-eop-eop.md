@@ -14,12 +14,12 @@ ms.assetid: 23b47b57-0eec-46a3-a03b-366ea014ab31
 ms.custom:
 - seo-marvel-apr2020
 description: Les administrateurs peuvent apprendre à exécuter un rapport de groupe de rôles d’administrateur dans Exchange Online Protection (EOP). Ce rapport enregistre les journaux lorsqu’un administrateur ajoute ou supprime des membres de groupes de rôles d’administrateur, EOP journalise chaque occurrence.
-ms.openlocfilehash: 39022892075b295a26645157941195b97897c690
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: 0c504460657a153aad7d3dd065c81007a68ba916
+ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44350938"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44587363"
 ---
 # <a name="run-an-administrator-role-group-report-in-standalone-eop"></a>Exécuter un rapport de groupe de rôles d’administrateur dans EOP autonome
 
@@ -74,7 +74,7 @@ Dans cet exemple, le compte d'utilisateur Administrateur a apporté les modifica
 
 ## <a name="use-standalone-exchange-online-powershell-to-search-for-audit-log-entries"></a>Utiliser Exchange Online PowerShell autonome pour rechercher des entrées du journal d’audit
 
-Vous pouvez utiliser Exchange Online PowerShell pour rechercher des entrées du journal d’audit qui correspondent aux critères que vous spécifiez. Pour obtenir une liste des critères de recherche, consultez la rubrique [Connexion au service d'audit administrateur](https://technet.microsoft.com/library/22b17eb8-d8ee-4599-b202-d6a7928c20d9.aspx). Cette procédure utilise la cmdlet **Search-AdminAuditLog** et affiche les résultats de la recherche dans Exchange Online PowerShell. Vous pouvez utiliser cette cmdlet si vous devez renvoyer un ensemble de résultats au-delà des limites définies dans la cmdlet **New-AdminAuditLogSearch** ou dans les rapports d'audit du Centre d'administration Exchange.
+Vous pouvez utiliser Exchange Online PowerShell pour rechercher des entrées du journal d’audit qui correspondent aux critères que vous spécifiez. Pour obtenir la liste des critères de recherche, voir [Search-AdminAuditLog Search Criteria](https://docs.microsoft.com/Exchange/policy-and-compliance/admin-audit-logging/admin-audit-logging#search-adminauditlog-cmdlet). Cette procédure utilise la cmdlet **Search-AdminAuditLog** et affiche les résultats de la recherche dans Exchange Online PowerShell. Vous pouvez utiliser cette cmdlet si vous devez renvoyer un ensemble de résultats au-delà des limites définies dans la cmdlet **New-AdminAuditLogSearch** ou dans les rapports d'audit du Centre d'administration Exchange.
 
 Pour effectuer une recherche dans le journal d'audit d'après les critères que vous avez définis, utilisez la syntaxe suivante.
 
@@ -119,7 +119,7 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, co
 
 ### <a name="view-details-of-audit-log-entries"></a>Afficher le détail des entrées du journal d’audit
 
-La cmdlet **Search-AdminAuditLog** renvoie les champs décrits dans la section « Contenu des journaux d'audit » de la rubrique [Connexion au service d'audit administrateur](https://technet.microsoft.com/library/22b17eb8-d8ee-4599-b202-d6a7928c20d9.aspx). Parmi les champs renvoyés par la cmdlet, deux champs ( **CmdletParameters** et **ModifiedProperties** ) comportent des données supplémentaires qu'il est impossible de visualiser par défaut.
+L’applet de commande **Search-AdminAuditLog** renvoie les champs décrits dans le [contenu du journal d’audit](https://docs.microsoft.com/Exchange/policy-and-compliance/admin-audit-logging/admin-audit-logging#audit-log-contents). Parmi les champs renvoyés par la cmdlet, deux champs ( **CmdletParameters** et **ModifiedProperties** ) comportent des données supplémentaires qu'il est impossible de visualiser par défaut.
 
 Pour afficher le contenu des champs **CmdletParameters** et **ModifiedProperties**, suivez la procédure ci-après. Vous pouvez utiliser la procédure décrite dans **utiliser Exchange Online PowerShell pour rechercher des entrées du journal d’audit et envoyer les résultats à un destinataire** plus loin dans cette rubrique pour créer un fichier XML.
 

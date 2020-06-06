@@ -16,17 +16,17 @@ ms.assetid: fc4e6ebb-5acc-4bc5-bad8-4f3407d1d3f4
 ms.collection:
 - M365-security-compliance
 description: Obtenez une vue d’ensemble des pages d’avertissement qui peuvent s’afficher lorsque la protection avancée contre les menaces d’Office 365 est au travail.
-ms.openlocfilehash: f061d4a35b1c77721464fe2cc5ac4a85ca4bd16e
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 00052c7212f9f469ca94d83ed53851b65904fd8e
+ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635985"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44588287"
 ---
 # <a name="atp-safe-links-warning-pages"></a>Pages d’avertissement de liens fiables ATP
 
 > [!IMPORTANT]
-> Cet article est destiné aux entreprises qui ont [Office 365 – Protection avancée contre les menaces](office-365-atp.md). Si vous utilisez Outlook.com, la famille Microsoft 365 ou Microsoft 365 personnel, et que vous recherchez des informations sur les liens fiables dans Outlook, consultez la rubrique [Advanced Outlook.com Security](https://support.office.com/article/882d2243-eab9-4545-a58a-b36fee4a46e2).
+> Cet article est destiné aux entreprises qui ont [Office 365 – Protection avancée contre les menaces](office-365-atp.md). Si vous utilisez Outlook.com, la famille Microsoft 365 ou Microsoft 365 personnel, et que vous recherchez des informations sur les liens fiables dans Outlook, consultez la rubrique [Advanced Outlook.com Security](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2).
 
 [Office 365 Advanced Threat Protection](office-365-atp.md) (ATP) vous aide à protéger votre organisation contre les tentatives de hameçonnage et les programmes malveillants par le biais de fonctionnalités, telles que les [liens approuvés ATP](atp-safe-links.md), [les pièces jointes sûres ATP](atp-safe-attachments.md)et la [protection anti-hameçonnage](anti-phishing-protection.md). Lorsque la protection est en place, les liens (URL) dans les messages électroniques et les documents Office sont vérifiés. Si une URL est identifiée comme suspecte ou malveillante, il se peut que vous ne soyez pas en mesure d’ouvrir l’URL lorsque vous cliquez dessus. Au lieu d’accéder directement au site, il se peut qu’une page d’avertissement s’affiche à la place.
 

@@ -14,12 +14,12 @@ ms.custom:
 localization_priority: Normal
 ms.assetid: d74c6ddf-11b0-43ee-b298-8bb0340895f0
 description: Les administrateurs peuvent apprendre à configurer Exchange Online Protection (EOP) autonome pour protéger les environnements de messagerie locaux.
-ms.openlocfilehash: bf762eabcfebf34ca8cb8d37935ffac011228df0
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: b50ec7e2bca3765bb81e165b74596155da1f7940
+ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44209798"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44588063"
 ---
 # <a name="set-up-your-standalone-eop-service"></a>Configurer votre service EOP autonome
 
@@ -43,12 +43,12 @@ Cette rubrique explique comment configurer Exchange Online Protection (EOP) en m
 
 ## <a name="step-1-use-the-microsoft-365-admin-center-to-add-and-verify-your-domain"></a>Étape 1 : utiliser le centre d’administration Microsoft 365 pour ajouter et vérifier votre domaine
 
-1. Dans le [Centre d’administration Microsoft 365](https://docs.microsoft.com/office365/admin/admin-overview/about-the-admin-center), accédez à **configuration** pour ajouter votre domaine au service.
+1. Dans le [Centre d’administration Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/admin-overview/about-the-admin-center), accédez à **configuration** pour ajouter votre domaine au service.
 
 2. Suivez les étapes pour ajouter les enregistrements DNS applicables à votre fournisseur d'hébergement DNS afin de vérifier l'appartenance du domaine.
 
 > [!TIP]
-> L' [Ajout d’un domaine à office 365 et la](https://docs.microsoft.com/office365/admin/setup/add-domain) création d' [enregistrements DNS auprès d’un fournisseur d’hébergement dns pour Office 365](https://docs.microsoft.com/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider) sont des ressources utiles à référencer lorsque vous ajoutez votre domaine au service et configurez le DNS.
+> L' [Ajout d’un domaine à office 365 et la](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain) création d' [enregistrements DNS auprès d’un fournisseur d’hébergement dns pour Office 365](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider) sont des ressources utiles à référencer lorsque vous ajoutez votre domaine au service et configurez le DNS.
 
 ## <a name="step-2-add-recipients-and-optionally-enable-dbeb"></a>Étape 2 : Ajouter des destinataires et éventuellement activer DBEB
 
@@ -77,7 +77,7 @@ Si vous ne souhaitez pas déplacer les messages vers le dossier de courrier ind�
 
 ## <a name="step-6-use-the-microsoft-365-admin-center-to-point-your-mx-record-to-eop"></a>Étape 6 : utiliser le centre d’administration Microsoft 365 pour faire pointer votre enregistrement MX vers EOP
 
-Suivez les étapes de configuration du domaine pour mettre à jour votre enregistrement MX pour votre domaine, de sorte que votre courrier entrant passe par EOP. Veillez à pointer directement votre enregistrement MX vers EOP plutôt que de faire relayer votre courrier électronique vers EOP par un service de filtrage tiers. Pour plus d'informations, vous pouvez de nouveau vous reporter à la rubrique [Créer des enregistrements DNS pour Office 365 lorsque vous gérez vos enregistrements DNS](https://docs.microsoft.com/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider).
+Suivez les étapes de configuration du domaine pour mettre à jour votre enregistrement MX pour votre domaine, de sorte que votre courrier entrant passe par EOP. Veillez à pointer directement votre enregistrement MX vers EOP plutôt que de faire relayer votre courrier électronique vers EOP par un service de filtrage tiers. Pour plus d'informations, vous pouvez de nouveau vous reporter à la rubrique [Créer des enregistrements DNS pour Office 365 lorsque vous gérez vos enregistrements DNS](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider).
 
 > [!NOTE]
 > Si vous devez faire pointer votre enregistrement MX vers un autre serveur ou service qui se trouve devant EOP, reportez-vous à la rubrique [filtrage amélioré pour les connecteurs dans Exchange Online](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).

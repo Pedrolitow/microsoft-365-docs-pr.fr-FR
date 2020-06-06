@@ -12,12 +12,12 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: Les administrateurs peuvent apprendre à identifier les raisons et le mode de réception d’un message de hameçonnage dans Microsoft 365, ainsi que la marche à suivre pour éviter d’autres messages de hameçonnage.
-ms.openlocfilehash: a9b7a58f32fd14c157d72e8f91a1f1b8bfe3aedc
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: b7a68eb3ab3cf7dbb7156059416cca04d80bb3a8
+ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208584"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44588439"
 ---
 # <a name="tune-anti-phishing-protection"></a>Protection anti-hameçonnage
 
@@ -75,4 +75,4 @@ Plus précisément, vous devez vérifier le champ d’en-tête **X-Forefront-ant
 
 - L’authentification multifacteur (MFA) est un moyen efficace pour empêcher les comptes compromis. Vous devez sérieusement envisager d’activer l’authentification multifacteur pour tous vos utilisateurs. Pour une approche progressive, commencez par activer l’authentification multifacteur pour vos utilisateurs les plus sensibles (administrateurs, cadres, etc.) avant d’activer l’authentification multifacteur pour tout le monde. Pour consulter des instructions, voir [Configurer Multi-factor Authentification (MFA)](../../admin/security-and-compliance/set-up-multi-factor-authentication.md).
 
-- Les règles de transfert vers des destinataires externes sont souvent utilisées par des agresseurs pour extraire des données. Utilisez les **règles de transfert des boîtes aux lettres** dans le [score de sécurité Microsoft](../mtp/microsoft-secure-score.md) pour rechercher et même empêcher le transfert des règles vers des destinataires externes. Pour plus d’informations, consultez la rubrique [minimisation des règles de transfert externe des clients avec le score sécurisé](https://blogs.technet.microsoft.com/office365security/mitigating-client-external-forwarding-rules-with-secure-score/).
+- Les règles de transfert vers des destinataires externes sont souvent utilisées par des agresseurs pour extraire des données. Utilisez les **règles de transfert des boîtes aux lettres** dans le [score de sécurité Microsoft](../mtp/microsoft-secure-score.md) pour rechercher et même empêcher le transfert des règles vers des destinataires externes. Pour plus d’informations, consultez la rubrique [minimisation des règles de transfert externe des clients avec le score sécurisé](https://docs.microsoft.com/archive/blogs/office365security/mitigating-client-external-forwarding-rules-with-secure-score).

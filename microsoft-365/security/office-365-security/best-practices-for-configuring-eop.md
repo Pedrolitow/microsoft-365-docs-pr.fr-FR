@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: faf1efd1-3b0c-411a-804d-17f37292eac0
 description: Suivez ces recommandations sur les meilleures pratiques pour la protection autonome d’Exchange Online Protection (EOP) afin de vous configurer pour réussir et éviter les erreurs de configuration courantes.
-ms.openlocfilehash: ade41b5343e19f75658f01e6c395c470e230b315
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: 69b0789612d6490305ff31d89954bc1d9258ac01
+ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44351926"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44587531"
 ---
 # <a name="best-practices-for-configuring-standalone-eop"></a>Meilleures pratiques pour la configuration d’EOP autonome
 
@@ -56,7 +56,7 @@ Ces paramètres couvrent un éventail de fonctionnalités en dehors des stratég
 |[Connectivité PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/disable-access-to-exchange-online-powershell)|Désactivé|Désactivé|Disponible pour les utilisateurs de boîte aux lettres ou les utilisateurs de messagerie (objets utilisateur retournés par la cmdlet [Get-User](https://docs.microsoft.com/powershell/module/exchange/get-user) ).|
 |Utiliser l' [intelligence d’usurpation d’identité](learn-about-spoof-intelligence.md) pour les expéditeurs de liste d’autorisation dès que possible|Oui|Oui||
 |[Blocage du périmètre basé sur l’annuaire (DBEB)](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-directory-based-edge-blocking)|Activé|Activé|Type de domaine = faisant autorité|
-|[Configurer l’authentification multifacteur pour tous les comptes d’administrateur](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication)|Activé|Activé||
+|[Configurer l’authentification multifacteur pour tous les comptes d’administrateur](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/set-up-multi-factor-authentication)|Activé|Activé||
 |
 
 ## <a name="troubleshooting"></a>Résolution des problèmes

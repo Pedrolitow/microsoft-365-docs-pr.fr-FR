@@ -1,5 +1,5 @@
 ---
-title: Protéger les boîtes aux lettres locales en Chine avec EOP autonome
+title: Protégez les boîtes aux lettres locales en Chine avec EOP autonome
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -21,19 +21,19 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Les administrateurs de la Chine utilisant Office 365 géré par 21Vianet peuvent apprendre à utiliser Exchange Online Protection (EOP) autonome pour protéger leurs boîtes aux lettres locales.
-ms.openlocfilehash: 6ce85e626f9bf4c960de57ad5cd15ac3148954cb
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 3e9ba8400ce9c545dd26f2dadce70595f5c5695e
+ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208293"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44587979"
 ---
-# <a name="protect-on-premises-mailboxes-in-china-with-standalone-eop"></a>Protéger les boîtes aux lettres locales en Chine avec EOP autonome
+# <a name="protect-on-premises-mailboxes-in-china-with-standalone-eop"></a>Protégez les boîtes aux lettres locales en Chine avec EOP autonome
 
 > [!NOTE]
 > Cet article s’applique uniquement à Office 365 géré par 21Vianet en Chine.
 
-Même si vous envisagez d’héberger une partie ou l’ensemble de vos boîtes aux lettres en local, vous pouvez toujours protéger les boîtes aux lettres à l’aide d’Exchange Online Protection (EOP). Pour configurer des connecteurs, votre compte doit être un administrateur général ou un administrateur d’entreprise Exchange (le groupe de rôles gestion de l’organisation). Pour plus d’informations sur la relation entre les autorisations Office 365 et les autorisations Exchange, consultez la rubrique [attribution de rôles d’administrateur dans Office 365 géré par 21ViaNet](https://docs.microsoft.com/office365/admin/add-users/assign-admin-roles?&view=o365-21vianet). Si toutes vos boîtes aux lettres Exchange sont en local, procédez comme suit pour configurer votre service EOP.
+Même si vous envisagez d’héberger une partie ou l’ensemble de vos boîtes aux lettres en local, vous pouvez toujours protéger les boîtes aux lettres à l’aide d’Exchange Online Protection (EOP). Pour configurer des connecteurs, votre compte doit être un administrateur général ou un administrateur d’entreprise Exchange (le groupe de rôles gestion de l’organisation). Pour plus d’informations sur la relation entre les autorisations Office 365 et les autorisations Exchange, consultez la rubrique [attribution de rôles d’administrateur dans Office 365 géré par 21ViaNet](https://docs.microsoft.com/microsoft-365/admin/add-users/assign-admin-roles?view=o365-21vianet). Si toutes vos boîtes aux lettres Exchange sont en local, procédez comme suit pour configurer votre service EOP.
 
 ## <a name="step-1-use-the-microsoft-365-admin-center-to-add-and-verify-your-domain"></a>Étape 1 : utiliser le centre d’administration Microsoft 365 pour ajouter et vérifier votre domaine
 
@@ -42,7 +42,7 @@ Même si vous envisagez d’héberger une partie ou l’ensemble de vos boîtes 
 2. Suivez les étapes indiquées dans le portail pour ajouter les enregistrements DNS applicables à votre fournisseur d’hébergement DNS afin de vérifier la propriété du domaine.
 
 > [!TIP]
-> [Ajoutez votre domaine et vos utilisateurs à office 365 géré par 21ViaNet](https://docs.microsoft.com/office365/admin/setup/add-domain?&view=o365-21vianet) et [créez des enregistrements dns pour Office 365 lorsque vous gérez vos enregistrements DNS](https://docs.microsoft.com/office365/admin/services-in-china/create-dns-records-when-you-manage-your-dns-records?&view=o365-21vianet) sont des ressources utiles à référencer lorsque vous ajoutez votre domaine au service et configurez le DNS.
+> [Ajoutez votre domaine et vos utilisateurs à office 365 géré par 21ViaNet](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain?view=o365-21vianet) et [créez des enregistrements dns pour Office 365 lorsque vous gérez vos enregistrements DNS](https://docs.microsoft.com/microsoft-365/admin/services-in-china/create-dns-records-when-you-manage-your-dns-records?view=o365-21vianet) sont des ressources utiles à référencer lorsque vous ajoutez votre domaine au service et configurez le DNS.
 
 ### <a name="step-2-add-recipients-and-configure-the-domain-type"></a>Étape 2 : ajouter des destinataires et configurer le type de domaine
 
@@ -69,7 +69,7 @@ Pour vous assurer que le courrier indésirable est correctement routé vers le d
 
 ## <a name="step-6-use-the-microsoft-365-admin-center-to-point-your-mx-record-to-eop"></a>Étape 6 : utiliser le centre d’administration Microsoft 365 pour faire pointer votre enregistrement MX vers EOP
 
-Suivez les étapes de configuration de domaine Office 365 pour mettre à jour votre enregistrement MX pour votre domaine, de sorte que votre courrier entrant circule dans EOP. Pour plus d’informations, vous pouvez à nouveau référencer [créer des enregistrements DNS pour Office 365 lorsque vous gérez vos enregistrements DNS](https://docs.microsoft.com/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider).
+Suivez les étapes de configuration de domaine Office 365 pour mettre à jour votre enregistrement MX pour votre domaine, de sorte que votre courrier entrant circule dans EOP. Pour plus d’informations, vous pouvez à nouveau référencer [créer des enregistrements DNS pour Office 365 lorsque vous gérez vos enregistrements DNS](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider).
 
 Comment savoir si cette tâche a fonctionné ?
 

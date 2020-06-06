@@ -14,12 +14,12 @@ ms.assetid: f40253f2-50a1-426e-9979-be74ba74cb61
 ms.custom:
 - seo-marvel-apr2020
 description: Dans cet article, vous découvrirez les rapports et les outils de dépannage disponibles pour les administrateurs de Microsoft Exchange Online Protection (EOP).
-ms.openlocfilehash: af41f1d3b6ccc7632b392f58c36344239200f915
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: b33d343d9b7f02e32619031d3ecf72ad12f891fd
+ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44206441"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44588167"
 ---
 # <a name="reporting-and-message-trace-in-eop"></a>Création de rapports et suivi des messages dans EOP
 
@@ -37,13 +37,13 @@ Dans les organisations Microsoft 365 avec des boîtes aux lettres dans Exchange 
 
 Pour plus d'informations, consultez les ressources suivantes :
 
-- [Rapports Microsoft 365 dans le centre d’administration-groupes Microsoft 365](https://docs.microsoft.com/office365/admin/activity-reports/office-365-groups)
+- [Rapports Microsoft 365 dans le centre d’administration-groupes Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/activity-reports/office-365-groups)
 
-- [Rapports Microsoft 365 dans le centre d’administration-activité de courrier électronique](https://docs.microsoft.com/office365/admin/activity-reports/email-activity)
+- [Rapports Microsoft 365 dans le centre d’administration-activité de courrier électronique](https://docs.microsoft.com/microsoft-365/admin/activity-reports/email-activity)
 
-- [Rapports Microsoft 365 dans le centre d’administration-utilisation des applications de messagerie](https://docs.microsoft.com/office365/admin/activity-reports/email-apps-usage)
+- [Rapports Microsoft 365 dans le centre d’administration-utilisation des applications de messagerie](https://docs.microsoft.com/microsoft-365/admin/activity-reports/email-apps-usage)
 
-- [Rapports Microsoft 365 dans le centre d’administration-utilisation des boîtes aux lettres](https://docs.microsoft.com/office365/admin/activity-reports/mailbox-usage)
+- [Rapports Microsoft 365 dans le centre d’administration-utilisation des boîtes aux lettres](https://docs.microsoft.com/microsoft-365/admin/activity-reports/mailbox-usage)
 
 ## <a name="security--compliance-reports-in-the-microsoft-365-admin-center"></a>Sécurité & des rapports de conformité dans le centre d’administration Microsoft 365
 

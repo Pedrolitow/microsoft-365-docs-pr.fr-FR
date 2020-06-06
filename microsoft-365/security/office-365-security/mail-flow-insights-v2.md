@@ -12,12 +12,12 @@ localization_priority: Normal
 ms.assetid: beb6acaa-6016-4d54-ba7e-3d6d035e2b46
 description: Les administrateurs peuvent en savoir plus sur le tableau de bord de flux de messagerie dans le centre de sécurité & conformité, notamment les informations, les rapports et les widgets.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6bd3638f9f7cc2c6c8a7c1abe31b2e7655d110af
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 61a3df3016541b170f736d23b9e4b4854964046e
+ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034145"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44588015"
 ---
 # <a name="mail-flow-insights-in-the-security--compliance-center"></a>Informations sur le flux de messagerie dans le centre de sécurité et conformité
 
@@ -57,19 +57,19 @@ Le tableau de bord de flux de messagerie est disponible pour :
 
 - Membres du **rôle administrateur de flux de messagerie** dans le centre de sécurité & conformité. Si ce rôle est attribué de manière explicite à un utilisateur qui n’est pas membre des rôles administrateur général ou administrateur Exchange :
 
-  - L’utilisateur doit se connecter au centre de sécurité & conformité directement à [https://protection.office.com](https://protection.office.com)l’adresse.
+  - L’utilisateur doit se connecter au centre de sécurité & conformité directement à l’adresse [https://protection.office.com](https://protection.office.com) .
 
   - L’utilisateur disposera uniquement de l’autorisation lecture seule sur le tableau de bord du flux de messagerie.
 
   - L’utilisateur n’a pas accès au centre d’administration Microsoft 365.
 
-Pour plus d’informations sur le rôle d’administrateur général, voir [à propos des rôles d’administrateur Microsoft 365](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles).
+Pour plus d’informations sur le rôle d’administrateur général, voir [à propos des rôles d’administrateur Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
 
 Pour plus d’informations sur l’attribution de rôles de centre de sécurité & de conformité aux utilisateurs, consultez [la rubrique accorder aux utilisateurs l’accès au centre de sécurité & conformité](grant-access-to-the-security-and-compliance-center.md).
 
 ## <a name="where-to-find-the-mail-flow-dashboard"></a>Où trouver le tableau de bord de flux de messagerie ?
 
-1. Accédez au centre de sécurité & conformité à [https://protection.office.com](https://protection.office.com)l’adresse.
+1. Accédez au centre de sécurité & conformité à l’adresse [https://protection.office.com](https://protection.office.com) .
 
 2. Développez **flux de messagerie** , puis sélectionnez **tableau de bord**.
 

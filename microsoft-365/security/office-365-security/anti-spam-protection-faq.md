@@ -17,12 +17,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Les administrateurs peuvent consulter les questions fréquemment posées et les réponses à propos de la protection contre le courrier indésirable dans Exchange Online Protection (EOP).
-ms.openlocfilehash: 69d9e72e3be53f0ddd5bc5771493564f364bef54
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 11c80a4cb93cf0c37ffbdf917e238960dd8fea80
+ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44209642"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44588039"
 ---
 # <a name="anti-spam-protection-faq"></a>Forum Aux Questions sur la protection anti-courrier indésirable
 
@@ -59,7 +59,7 @@ Pour plus d’informations, voir les rubriques suivantes :
 
 [Configurer le filtrage des connexions dans EOP](configure-the-connection-filter-policy.md)
 
-[Configurer des stratégies de blocage du courrier indésirable dans EOP](configure-your-spam-filter-policies.md)
+[Configuration de stratégies de blocage du courrier indésirable dans Exchange Online Protection](configure-your-spam-filter-policies.md)
 
 [Configurer la stratégie anti-courrier indésirable sortant](configure-the-outbound-spam-policy.md)
 
@@ -137,7 +137,7 @@ Les instructions ci-dessous constituent les meilleures pratiques pour l'envoi de
 
   [Configurer SPF pour empêcher l’usurpation](set-up-spf-in-office-365-to-help-prevent-spoofing.md)
 
-  [Foire aux questions domaines](https://docs.microsoft.com/office365/admin/setup/domains-faq#how-can-i-validate-spf-records-for-my-domain)
+  [Foire aux questions domaines](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq#how-can-i-validate-spf-records-for-my-domain)
 
 - **Signature de courrier électronique avec DKIM, canonisation assouplie.**
 

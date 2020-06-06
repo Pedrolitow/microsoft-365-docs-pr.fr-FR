@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: Découvrez comment reconnaître et résoudre les attaques de consentement illicite dans Microsoft Office 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: c7ba6c521c814e4ea44c2dc29ccdad8143d166d4
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 0e775112809fc25e562686761c69471dad6cac1d
+ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034827"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44587495"
 ---
 # <a name="detect-and-remediate-illicit-consent-grants"></a>Détecter et résoudre les accords de consentement illicite
 
@@ -90,7 +90,7 @@ Cela vous indiquera les applications qui sont affectées à l’utilisateur et l
 
 ### <a name="steps-for-having-your-users-enumerate-their-application-access"></a>Étapes à suivre pour faire en sorte que vos utilisateurs énumèrent leur accès aux applications
 
-Demandez à vos utilisateurs d' https://myapps.microsoft.com accéder à leur propre application. Ils doivent être en mesure de voir toutes les applications avec Access, d’afficher des détails les concernant (y compris l’étendue d’Access) et de pouvoir révoquer des privilèges aux applications suspectes ou illicites.
+Demandez à vos utilisateurs d’accéder à https://myapps.microsoft.com leur propre application. Ils doivent être en mesure de voir toutes les applications avec Access, d’afficher des détails les concernant (y compris l’étendue d’Access) et de pouvoir révoquer des privilèges aux applications suspectes ou illicites.
 
 ### <a name="steps-for-doing-this-with-powershell"></a>Étapes à suivre avec PowerShell
 
@@ -158,7 +158,7 @@ Une fois que vous avez identifié une application avec des autorisations illéga
 
 - Vous pouvez également désactiver la connexion pour le compte affecté, ce qui désactive l’accès de l’application aux données de ce compte. Ceci n’est bien évidemment pas idéal pour la productivité de l’utilisateur final, mais si vous travaillez pour limiter l’impact rapidement, il peut s’agir d’une correction à court terme viable.
 
-- Vous pouvez désactiver les applications intégrées pour votre client. Il s’agit d’une étape importante qui empêche les utilisateurs finaux d’accorder leur consentement à l’échelle du client. Cela empêche vos utilisateurs d’accorder par inadvertance l’accès à une application malveillante. Cette opération n’est pas fortement recommandée car elle affaiblit gravement la capacité de vos utilisateurs à être productifs avec des applications tierces. Pour ce faire, procédez comme suit : [activation ou](https://docs.microsoft.com/office365/admin/misc/integrated-apps)désactivation des applications intégrées.
+- Vous pouvez désactiver les applications intégrées pour votre client. Il s’agit d’une étape importante qui empêche les utilisateurs finaux d’accorder leur consentement à l’échelle du client. Cela empêche vos utilisateurs d’accorder par inadvertance l’accès à une application malveillante. Cette opération n’est pas fortement recommandée car elle affaiblit gravement la capacité de vos utilisateurs à être productifs avec des applications tierces. Pour ce faire, procédez comme suit : [activation ou](https://docs.microsoft.com/microsoft-365/admin/misc/integrated-apps)désactivation des applications intégrées.
 
 ## <a name="secure-microsoft-365-like-a-cybersecurity-pro"></a>Sécuriser Microsoft 365 comme un pro de la cyber-sécurité
 

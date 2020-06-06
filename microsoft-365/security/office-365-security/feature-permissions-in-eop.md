@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 34674847-a6b7-4a7e-9eaa-b64f22bc150d
 description: En savoir plus sur les autorisations requises pour les tâches dans Exchange Online protection autonome
-ms.openlocfilehash: 0138bd4716d831a33fa4b5a0fbdce0f154d62776
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 0c3074789e439c3923667d37446733665fa79d88
+ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208871"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44588251"
 ---
 # <a name="permissions-in-standalone-eop"></a>Autorisations dans EOP autonome
 
@@ -134,7 +134,7 @@ Le tableau suivant répertorie les rôles Microsoft 365 et les groupes de rôles
 |Lecteur Sécurité|SecurityReader|
 |
 
-Les autres rôles Microsoft 365 n’ont pas de groupe de rôles EOP correspondant et n’accordent pas d’autorisations d’administration dans EOP. Pour plus d’informations sur l’affectation d’un rôle Microsoft 365 à un utilisateur, reportez-vous à la rubrique [assigner des rôles d’administrateur](https://docs.microsoft.com/office365/admin/add-users/assign-admin-roles).
+Les autres rôles Microsoft 365 n’ont pas de groupe de rôles EOP correspondant et n’accordent pas d’autorisations d’administration dans EOP. Pour plus d’informations sur l’affectation d’un rôle Microsoft 365 à un utilisateur, reportez-vous à la rubrique [assigner des rôles d’administrateur](https://docs.microsoft.com/microsoft-365/admin/add-users/assign-admin-roles).
 
 Les utilisateurs peuvent bénéficier de droits d’administration dans EOP sans les ajouter aux rôles Microsoft 365. Pour ce faire, ajoutez l’utilisateur en tant que membre d’un groupe de rôles EOP. L’utilisateur obtiendra les autorisations dans EOP, mais il n’obtiendra pas les autorisations dans les autres charges de travail Microsoft 365.
 
@@ -144,7 +144,7 @@ Pour vérifier que vous avez bien copié un groupe de rôles, effectuez l’une 
 
 - Dans le centre d’administration Exchange, accédez à rôles d’administrateur des **autorisations** \> **Admin Roles**et vérifiez que le groupe de rôles est affiché (ou non). Sélectionnez le groupe de rôles et vérifiez les paramètres dans le volet d’informations ou cliquez sur **modifier** ![ l’icône modifier ](../../media/ITPro-EAC-EditIcon.png) pour vérifier les paramètres.
 
-- Dans Exchange Online PowerShell, remplacez \< nom du groupe \> de rôles par le nom du groupe de rôles, puis exécutez la commande suivante pour vérifier que le groupe de rôles existe (ou n’existe pas) et vérifiez les paramètres :
+- Dans Exchange Online PowerShell, remplacez \<Role Group Name\> par le nom du groupe de rôles et exécutez la commande suivante pour vérifier que le groupe de rôles existe (ou n’existe pas) et vérifiez les paramètres :
 
     ```PowerShell
     Get-RoleGroup -Identity "<Role Group Name>" | Format-List

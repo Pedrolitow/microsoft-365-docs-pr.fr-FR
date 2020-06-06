@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: Découvrez comment reconnaître et corriger les attaques d’injections de formulaires personnalisés et de règles Outlook dans Office 365
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b892a72c2016222d34df8c58fcda20d2d2b9ba74
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: bc71a358170cdda86d16096c56b9d9660bf6a5be
+ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44351974"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44588263"
 ---
 # <a name="detect-and-remediate-outlook-rules-and-custom-forms-injections-attacks"></a>Détecter et résoudre les attaques d’injections de formulaires personnalisés et de règles Outlook
 
@@ -165,7 +165,7 @@ Si vous trouvez des preuves de l’une de ces attaques, la correction est simple
 
 4. Installez les versions les plus à jour d’Outlook. N’oubliez pas que la version actuelle d’Outlook bloque les deux types de cette attaque par défaut.
 
-5. Une fois que toutes les copies hors connexion de la boîte aux lettres ont été supprimées, réinitialisez le mot de passe de l’utilisateur (utilisez une qualité élevée) et suivez les étapes de l’option [d’authentification multifacteur pour les utilisateurs](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication) si MFA n’a pas encore été activé. Cela permet de s’assurer que les informations d’identification de l’utilisateur ne sont pas exposées par d’autres moyens (par exemple, le hameçonnage ou la réutilisation du mot de passe).
+5. Une fois que toutes les copies hors connexion de la boîte aux lettres ont été supprimées, réinitialisez le mot de passe de l’utilisateur (utilisez une qualité élevée) et suivez les étapes de l’option [d’authentification multifacteur pour les utilisateurs](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/set-up-multi-factor-authentication) si MFA n’a pas encore été activé. Cela permet de s’assurer que les informations d’identification de l’utilisateur ne sont pas exposées par d’autres moyens (par exemple, le hameçonnage ou la réutilisation du mot de passe).
 
 ### <a name="using-powershell"></a>Utiliser PowerShell
 
@@ -193,7 +193,7 @@ Il existe deux cmdlets PowerShell à distance que vous pouvez utiliser pour supp
 
 Les attaques de formulaires et de règles sont utilisées uniquement par un agresseur après avoir volé ou enfreint un des comptes de vos utilisateurs. Par conséquent, la première étape pour empêcher l’utilisation de ces exploits auprès de votre organisation consiste à protéger activement vos comptes d’utilisateur. Les attaques par hameçonnage ou par [pulvérisation de mot de passe](https://www.dabcc.com/microsoft-defending-against-password-spray-attacks/) constituent certaines des méthodes de violation des comptes les plus courantes.
 
-La meilleure façon de protéger vos comptes d’utilisateur, et en particulier vos comptes administrateur, est de [configurer l’authentification multifacteur pour les utilisateurs](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication). Vous devez également :
+La meilleure façon de protéger vos comptes d’utilisateur, et en particulier vos comptes administrateur, est de [configurer l’authentification multifacteur pour les utilisateurs](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/set-up-multi-factor-authentication). Vous devez également :
 
 - Surveillez le mode d' [accès et d’utilisation](https://docs.microsoft.com/azure/active-directory/active-directory-view-access-usage-reports)de vos comptes d’utilisateur. Vous n’êtes pas autorisé à empêcher la violation initiale, mais vous réduisez la durée et l’impact de la violation en la détectant plus tôt. Vous pouvez utiliser ces [stratégies Office 365 Cloud App Security](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security) pour surveiller les comptes et alerter les activités inhabituelles :
 

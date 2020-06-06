@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Découvrez comment utiliser un simulateur d’attaque pour exécuter des attaques de hameçonnage et de mot de passe simulées dans votre organisation Microsoft 365 E5 ou ATP (plan 2).
-ms.openlocfilehash: e2c6859291e4a25e56dd8dd20a8ecc5962310680
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 166a8ab9f6ef08ca089bc8924b686e392e870526
+ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035857"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44587567"
 ---
 # <a name="attack-simulator-in-atp"></a>Simulateur d’attaques dans ATP
 
@@ -39,7 +39,7 @@ ms.locfileid: "44035857"
 
 - Vous devez être membre des groupes de rôles **Management de l’organisation** ou **Administrateur de sécurité**. Pour des informations supplémentaires sur les groupes de rôles dans le Centre de sécurité et conformité, voir [Autorisations dans le Centre de sécurité et conformité](permissions-in-the-security-and-compliance-center.md).
 
-- Votre compte doit être configuré pour l’authentification multifacteur (MFA) afin que vous puissiez créer et gérer des campagnes dans le Simulateur d’attaques. Pour consulter des instructions, voir [Configurer Multi-factor Authentification (MFA)](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication).
+- Votre compte doit être configuré pour l’authentification multifacteur (MFA) afin que vous puissiez créer et gérer des campagnes dans le Simulateur d’attaques. Pour consulter des instructions, voir [Configurer Multi-factor Authentification (MFA)](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/set-up-multi-factor-authentication).
 
 Pour qu’une attaque soit lancée avec succès, assurez-vous que le compte que vous utilisez pour exécuter des simulations d’attaques utilise l’authentification multifacteur. De plus, vous devez être administrateur général ou administrateur de sécurité. (Pour en savoir plus sur les rôles et les autorisations, voir [Autorisations dans le Centre de sécurité et conformité](permissions-in-the-security-and-compliance-center.md).)
 
@@ -55,7 +55,7 @@ Le *Hameçonnage* est un terme générique qui décrit les attaques par courrier
 
 Dans le Simulateur d’attaques, deux types différents de campagnes de harponnage sont disponibles :
 
-- [L’authentification multifacteur/accès conditionnel](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication) est activée, au minimum pour le compte d’administrateur général et pour les administrateurs de sécurité qui utiliseront le simulateur d’attaques. (Idéalement, l’authentification multifacteur/accès conditionnel est activée pour tous les utilisateurs de votre organisation.)
+- [L’authentification multifacteur/accès conditionnel](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/set-up-multi-factor-authentication) est activée, au minimum pour le compte d’administrateur général et pour les administrateurs de sécurité qui utiliseront le simulateur d’attaques. (Idéalement, l’authentification multifacteur/accès conditionnel est activée pour tous les utilisateurs de votre organisation.)
 
   - Une page par défaut expliquant qu’il s’agit d’un test et donnant des conseils pour reconnaître les messages d’hameçonnage.
 
@@ -63,7 +63,7 @@ Dans le Simulateur d’attaques, deux types différents de campagnes de harponna
 
   - Une page personnalisée (URL) que vous spécifiez.
 
-- **Harponnage (pièce jointe)**  : l’attaque tente de convaincre le destinataire d’ouvrir une pièce jointe .docx ou .pdf contenue dans le message. La pièce jointe contient le même contenu que celui du lien d’hameçonnage par défaut, mais la première phrase commence par « \<Nom d’affichage\>, vous voyez ce message sous la forme d’un récent message électronique que vous avez ouvert... ».
+- **Harponnage (pièce jointe)**  : l’attaque tente de convaincre le destinataire d’ouvrir une pièce jointe .docx ou .pdf contenue dans le message. La pièce jointe contient le même contenu que le lien de hameçonnage par défaut, mais la première phrase commence par " \<Display Name\> , vous voyez ce message en tant que message récent que vous avez ouvert...".
 
 > [!NOTE]
 > Les campagnes de harponnage dans le Simulateur d’attaques n’arrivent pas à expiration pour le moment.

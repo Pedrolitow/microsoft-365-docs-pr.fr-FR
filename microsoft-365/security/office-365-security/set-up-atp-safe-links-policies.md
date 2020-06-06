@@ -17,19 +17,19 @@ ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
 ms.collection:
 - M365-security-compliance
 description: Configurez des stratégies de liens fiables pour protéger votre organisation contre les liens malveillants dans les fichiers Word, Excel, PowerPoint et Visio, ainsi que dans les messages électroniques.
-ms.openlocfilehash: 946b4bd9eee9b19b2b88eaca8f0ff80e173bb139
-ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
+ms.openlocfilehash: 928f13ec8f04506540d02177acd82b2403a74683
+ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44045235"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44588087"
 ---
 # <a name="set-up-office-365-atp-safe-links-policies"></a>Configuration des stratégies de liens approuvés Office 365 ATP
 
 > [!IMPORTANT]
-> Cet article est destiné aux entreprises qui ont [Office 365 – Protection avancée contre les menaces](office-365-atp.md). Si vous êtes un utilisateur à domicile et que vous recherchez des informations sur les liens fiables dans Outlook, consultez la rubrique [Advanced Outlook.com Security](https://support.office.com/article/882d2243-eab9-4545-a58a-b36fee4a46e2).
+> Cet article est destiné aux entreprises qui ont [Office 365 – Protection avancée contre les menaces](office-365-atp.md). Si vous êtes un utilisateur à domicile et que vous recherchez des informations sur les liens fiables dans Outlook, consultez la rubrique [Advanced Outlook.com Security](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2).
 
-Les [liens fiables ATP](atp-safe-links.md), une fonctionnalité d' [Office 365 Advanced Threat Protection](office-365-atp.md) (ATP), peuvent vous aider à protéger votre organisation contre les liens malveillants utilisés dans le hameçonnage et les autres attaques. Si vous disposez des [autorisations nécessaires pour le centre &amp; de sécurité conformité](permissions-in-the-security-and-compliance-center.md), vous pouvez configurer des stratégies de liens fiables ATP pour vous assurer que lorsque des utilisateurs cliquent sur des adresses Web (URL), votre organisation est protégée. Vos stratégies de liens fiables ATP peuvent être configurées pour analyser les URL dans les messages électroniques et les URL des documents Office.
+Les [liens fiables ATP](atp-safe-links.md), une fonctionnalité d' [Office 365 Advanced Threat Protection](office-365-atp.md) (ATP), peuvent vous aider à protéger votre organisation contre les liens malveillants utilisés dans le hameçonnage et les autres attaques. Si vous disposez des [autorisations nécessaires pour le centre de sécurité &amp; conformité](permissions-in-the-security-and-compliance-center.md), vous pouvez configurer des stratégies de liens fiables ATP pour vous assurer que lorsque des utilisateurs cliquent sur des adresses Web (URL), votre organisation est protégée. Vos stratégies de liens fiables ATP peuvent être configurées pour analyser les URL dans les messages électroniques et les URL des documents Office.
 
 Lorsque la fonctionnalité liens fiables ATP est activée, si un utilisateur clique sur un lien dans un message électronique et que l’URL a été bloquée par la liste des URL bloquées personnalisées de votre organisation ou si l’URL est considérée comme malveillante, une page d’avertissement s’ouvre.
   
@@ -53,11 +53,11 @@ De [nouvelles fonctionnalités sont continuellement ajoutées à](office-365-atp
 
     |Role  |WHERE/How Assigned  |
     |---------|---------|
-    |administrateur général |La personne qui s’inscrit pour acheter Microsoft 365 est un administrateur global par défaut. (Pour en savoir plus, consultez la rubrique [à propos des rôles d’administrateur Microsoft 365](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles) .)         |
-    |Administrateur de sécurité |Centre d’administration Azure Active Directory[https://aad.portal.azure.com](https://aad.portal.azure.com)()|
-    |Gestion d’Organisation Exchange Online |Centre d’administration Exchange[https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)() <br>ou <br>  Applets de commande PowerShell (consultez la rubrique [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell)) |
+    |administrateur général |La personne qui s’inscrit pour acheter Microsoft 365 est un administrateur global par défaut. (Pour en savoir plus, consultez la rubrique [à propos des rôles d’administrateur Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles) .)         |
+    |Administrateur de sécurité |Centre d’administration Azure Active Directory ( [https://aad.portal.azure.com](https://aad.portal.azure.com) )|
+    |Gestion d’Organisation Exchange Online |Centre d’administration Exchange ( [https://outlook.office365.com/ecp](https://outlook.office365.com/ecp) ) <br>ou <br>  Applets de commande PowerShell (consultez la rubrique [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell)) |
 
-    Pour en savoir plus sur les rôles et les autorisations, consultez [la &amp; rubrique autorisations dans le centre de sécurité conformité](permissions-in-the-security-and-compliance-center.md).
+    Pour en savoir plus sur les rôles et les autorisations, consultez [la rubrique autorisations dans le &amp; Centre de sécurité conformité](permissions-in-the-security-and-compliance-center.md).
 
 - Assurez-vous que les clients Office sont configurés pour utiliser [l’authentification moderne](https://docs.microsoft.com/office365/enterprise/modern-auth-for-office-2013-and-2016) (il s’agit de la protection des liens fiables ATP dans les documents Office).
     
@@ -91,7 +91,7 @@ Une fois que vous avez révisé (ou modifié) la stratégie de liens approuvés 
     
 3. Choisissez **liens fiables**.
     
-4. Dans la section **stratégies qui s’appliquent à des destinataires spécifiques** , sélectionnez **nouveau** (le nouveau bouton ressemble à **+** un signe plus ()).<br/>![Sélectionnez nouveau pour ajouter une stratégie de liens fiables à des destinataires de messagerie spécifiques.](../../media/01073f42-3cec-4ddb-8c10-4d33ec434676.png)
+4. Dans la section **stratégies qui s’appliquent à des destinataires spécifiques** , sélectionnez **nouveau** (le nouveau bouton ressemble à un signe plus ( **+** )).<br/>![Sélectionnez nouveau pour ajouter une stratégie de liens fiables à des destinataires de messagerie spécifiques.](../../media/01073f42-3cec-4ddb-8c10-4d33ec434676.png)
   
 5. Indiquez un nom, une description et des paramètres pour votre stratégie.<br/>**Exemple :** Pour configurer une stratégie appelée « pas de clics directs » qui n’autorise pas les personnes appartenant à un certain groupe dans votre organisation à cliquer sur un site Web spécifique sans protection contre les liaisons fiables ATP, vous pouvez spécifier les paramètres recommandés suivants : 
     
@@ -144,7 +144,7 @@ Les options de stratégie par défaut s’appliquent à tous les membres de votr
 |**Appliquer des liens fiables aux messages envoyés au sein de l’Organisation** <br/> | Lorsque cette option est disponible et sélectionnée, la protection des liens fiables ATP est appliquée aux messages électroniques envoyés entre les personnes de votre organisation, à condition que les comptes de messagerie soient hébergés dans Office 365.  <br/> |
 |**Ne pas suivre les clics des utilisateurs** <br/> |Lorsque cette option est sélectionnée, les données des URL des expéditeurs externes ne sont pas stockées. URL le suivi des liens dans les messages électroniques envoyés au sein de l’organisation n’est pas pris en charge actuellement.  <br/> |
 |**Ne pas autoriser les utilisateurs à cliquer vers l’URL d’origine** <br/> |Lorsque cette option est sélectionnée, les utilisateurs ne peuvent pas passer une [page d’avertissement](atp-safe-links-warning-pages.md) à une URL qui est considérée comme malveillante.  <br/> |
-|**Ne pas réécrire les URL suivantes** <br/> |Laisse les URL telles quelles. Conserve une liste personnalisée d’URL sûres qui n’ont pas besoin d’être analysées pour un groupe spécifique de destinataires de messagerie dans votre organisation.  Pour plus d’informations, reportez-vous à [la rubrique Configurer une liste d’URL « ne pas réécrire » personnalisée à l’aide de liens fiables ATP](set-up-a-custom-do-not-rewrite-urls-list-with-atp.md) , y compris les modifications récentes de la prise en charge des astérisques génériques (\*).  <br/> |
+|**Ne pas réécrire les URL suivantes** <br/> |Laisse les URL telles quelles. Conserve une liste personnalisée d’URL sûres qui n’ont pas besoin d’être analysées pour un groupe spécifique de destinataires de messagerie dans votre organisation.  Pour plus d’informations, reportez-vous à [la rubrique Configurer une liste d’URL « ne pas réécrire » personnalisée à l’aide de liens fiables ATP](set-up-a-custom-do-not-rewrite-urls-list-with-atp.md) , y compris les modifications récentes de la prise en charge des astérisques génériques ( \* ).  <br/> |
    
 ## <a name="next-steps"></a>Étapes suivantes
 
