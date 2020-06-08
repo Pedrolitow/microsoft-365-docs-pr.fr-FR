@@ -25,14 +25,15 @@ ms.custom:
 - BEA160
 - TRN_M365B
 - OKR_SMB_Videos
+- AdminSurgePortfolio
 ms.assetid: 2ae3ea58-4fce-4592-91d6-46e9ae3ec218
 description: Recherchez votre facture ou relevé de facturation dans le Centre d’administration Microsoft 365. Vous pouvez également enregistrer et imprimer une copie de votre facture.
-ms.openlocfilehash: 7425c0b49ff65fa0d5c777e3c7fdb7af99488a9d
-ms.sourcegitcommit: cf7c410268175e2633e9f0d65dc859c5034658e5
+ms.openlocfilehash: d034e59e80af6396867282f3e7c23179c332c251
+ms.sourcegitcommit: b95e958df130b5fbbe5d8a8882d1bbf20b27a285
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "44232780"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "44407943"
 ---
 # <a name="view-your-bill-or-invoice"></a>Consulter votre facture
 
@@ -89,6 +90,6 @@ Si vous avez trouvé cette vidéo utile, consultez les [séries de formations co
 
 [Payer sur facture, par carte de crédit ou par compte bancaire](pay-for-your-subscription.md)
   
-[Ajouter, mettre à jour ou supprimer une carte bancaire ou un compte bancaire](add-update-or-remove-credit-card-or-bank-account.md)
+[Gérer les modes de paiement](manage-payment-methods.md)
 
 [ Options de paiement de Minecraft: Education Edition ](https://go.microsoft.com/fwlink/p/?linkid=838761)
