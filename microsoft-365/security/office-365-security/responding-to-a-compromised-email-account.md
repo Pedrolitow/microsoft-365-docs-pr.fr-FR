@@ -18,12 +18,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: Découvrez comment reconnaître un compte de messagerie compromis et y répondre à l’aide des outils disponibles dans Microsoft 365.
-ms.openlocfilehash: f53d38c6e34e555542e0c655d7e7d24ca3c9c978
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: adf1ded6fb88cc26e96840dc2a8bfe20300205dc
+ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44033829"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44588215"
 ---
 # <a name="responding-to-a-compromised-email-account"></a>Réponse à un compte de messagerie compromis
 
@@ -87,7 +87,7 @@ Vous devez effectuer au plus vite toutes les étapes suivantes pour récupérer 
 > [!WARNING]
 > Ne pas envoyer de nouveau mot de passe à l’utilisateur initial par courrier électronique, car l’utilisateur malveillant a toujours accès à la boîte aux lettres à ce stade.
 
-1. Suivez les procédures de réinitialisation du mot de passe Microsoft 365 Apps pour entreprise pour quelqu’un d’autre décrites dans [Réinitialiser les mots de passe Microsoft 365 Apps pour entreprise](https://docs.microsoft.com/office365/admin/add-users/reset-passwords)
+1. Suivez les procédures de réinitialisation du mot de passe Microsoft 365 Apps pour entreprise pour quelqu’un d’autre décrites dans [Réinitialiser les mots de passe Microsoft 365 Apps pour entreprise](https://docs.microsoft.com/microsoft-365/admin/add-users/reset-passwords)
 
 **Remarques** :
 
@@ -98,7 +98,7 @@ Vous devez effectuer au plus vite toutes les étapes suivantes pour récupérer 
 - Si votre identité locale est fédérée avec Microsoft 365, vous devez modifier votre mot de passe local, puis vous devez informer votre administrateur de l’attaque.
 
 > [!TIP]
-> Nous vous recommandons vivement d’activer l’authentification multifacteur (MFA) pour éviter les compromissions, en particulier pour les comptes avec des privilèges d’administration.  Vous pouvez en apprendre plus sur MFA [ici](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication).
+> Nous vous recommandons vivement d’activer l’authentification multifacteur (MFA) pour éviter les compromissions, en particulier pour les comptes avec des privilèges d’administration.  Vous pouvez en apprendre plus sur MFA [ici](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/set-up-multi-factor-authentication).
 
 ### <a name="step-2-remove-suspicious-email-forwarding-addresses"></a>Étape 2 : Supprimer des adresses de transfert de courrier suspectes
 
@@ -202,4 +202,4 @@ Votre abonnement Microsoft 365 inclut un ensemble puissant de fonctionnalités d
 
 - [Securities and Exchange Commission (SEC) : fraude à « l’hameçonnage » (phishing)](https://www.sec.gov/investor/pubs/phishing.htm)
 
-- Pour signaler un courrier électronique indésirable directement à Microsoft et à votre administrateur [Utiliser le complément Message de Rapport](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)
+- Pour signaler un courrier électronique indésirable directement à Microsoft et à votre administrateur [Utiliser le complément Message de Rapport](https://support.microsoft.com/office/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)
