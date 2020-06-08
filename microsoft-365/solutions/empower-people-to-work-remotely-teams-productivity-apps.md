@@ -5,7 +5,7 @@ f1.keywords:
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 05/01/2020
+ms.date: 06/03/2020
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -17,12 +17,12 @@ ms.collection:
 - M365solutions
 ms.custom: ''
 description: Permettez à vos utilisateurs d’être productifs grâce à Teams, Exchange, SharePoint et les autres services Microsoft 365.
-ms.openlocfilehash: 2fc55ff9f991c75e8124c710e60fe2ba34ed7f17
-ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
+ms.openlocfilehash: 1c621ae797f32cd5b98af4c1eb7a341d0f976938
+ms.sourcegitcommit: 9195c83c725a7e6ed395ce0253304da54e2195f0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44160737"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "44560446"
 ---
 # <a name="step-4-deploy-remote-worker-productivity-apps-and-services"></a>Étape 4. Déployer les applications et les services de productivité des travailleurs à distance
 
@@ -39,7 +39,9 @@ Pour être productifs, les employés doivent communiquer et collaborer les uns a
 
 Teams vous permet de discuter, d’appeler, de rencontrer et de collaborer avec vos collègues, au sein d’un seul emplacement. Des millions de personnes effectuent leur travail dans Teams tous les jours, car cela leur permet de réunir tous les éléments dont ils ont besoin pour travailler à distance au sein d’une plateforme dédiée au travail d’équipe. 
 
-Vous pouvez utiliser [cet article](https://docs.microsoft.com/microsoftteams/support-remote-work-with-teams) pour obtenir des instructions sur la prise en charge des travailleurs à distance avec Teams. 
+Utilisez [cet article](https://docs.microsoft.com/microsoftteams/support-remote-work-with-teams) pour obtenir des instructions sur la prise en charge des travailleurs à distance avec Teams. 
+
+Regardez la [Partie 1 de la vidéo](https://resources.techcommunity.microsoft.com/enabling-remote-work/#productivity) pour obtenir des conseils et des démonstrations sur l’utilisation de Teams pour le travail à distance.
 
 ### <a name="chat-and-conversations"></a>Chat et conversations
 
@@ -63,25 +65,34 @@ Les applications et les flux de travail permettent aux travailleurs à distance 
 
 Avec Outlook, les travailleurs à distance peuvent rester connectés et organisés avec le courrier électronique, les calendriers, les contacts, les tâches et bien plus encore, le tout, dans un seul et même endroit. Outlook vous permet de rester informé et de hiérarchiser votre journée en fonction de ce qui est important pour vous. Outlook vous permet de partager des pièces jointes directement à partir de OneDrive, de planifier et de participer à des réunions Teams, d’afficher et de partager des calendriers, et de fournir des autorisations de délégué. Le fait de connaître les évènements à venir, aussi bien pour leurs engagements professionnels que personnels, et ce qui nécessite leur attention, permet aux travailleurs à distance de se concentrer sur les aspects les plus importants. Outlook permet aux travailleurs à distance de gérer leur temps et de trouver facilement ce dont ils ont besoin, notamment les fichiers, les autres membres de l’organisation et bien plus encore. 
 
+Consultez [cet article](../enterprise/secure-email-recommended-policies.md) sur les stratégies recommandées d’identité et d’accès aux appareils pour vous aider à sécuriser les e-mails d’une organisation, ainsi que les clients d’e-mail qui prennent en charge l’authentification moderne et l’accès conditionnel.
+
 ## <a name="store-and-collaborate-on-files-with-sharepoint-online-and-onedrive"></a>Stockez et collaborez sur des fichiers avec SharePoint Online et OneDrive
 
 Pour la collaboration de contenu, les travailleurs à distance peuvent utiliser les dossiers SharePoint Online et OneDrive comme emplacement central dans le cloud pour stocker et partager des fichiers, co-créer, communiquer et collaborer. Les employés à distance peuvent travailler en toute sécurité, de n’importe quel endroit, à partir d’un navigateur web, de Teams et des applications Office.
+
+Consultez [cet article](../enterprise/sharepoint-file-access-policies.md) sur les stratégies recommandées d’identité et d’accès aux appareils pour vous aider à sécuriser SharePoint Online SharePoint Online et OneDrive Entreprise.
 
 ## <a name="create-and-collaborate-on-content-with-microsoft-365-apps"></a>Créez et collaborez sur du contenu avec les applications Microsoft 365
 
 Les applications Microsoft 365 constituent l’expérience Office la plus productive et la plus sécurisée pour les entreprises, ce qui permet aux utilisateurs de collaborer en toute transparence, en tout lieu et à tout moment. Les employés à distance peuvent collaborer sur un document avec plusieurs personnes en même temps, voir les modifications en temps réel, et co-créer des documents avec d’autres personnes en utilisant un ordinateur portable, un PC ou un appareil mobile.
 
+Consultez [cet article](https://docs.microsoft.com/deployoffice/deployment-guide-microsoft-365-apps) pour vous aider à planifier, déployer et gérer les applications Microsoft 365 dans votre environnement d’entreprise.
+
 ## <a name="admin-technical-resources-for-productivity-apps-and-services"></a>Ressources techniques dédiées aux administrateurs pour les applications et les services de productivité
 
 - [Prise en charge des travailleurs à distance avec Microsoft Teams](https://docs.microsoft.com/microsoftteams/support-remote-work-with-teams)
+- [Partie 1 : vidéo sur Teams pour les employés à distance](https://resources.techcommunity.microsoft.com/enabling-remote-work/#productivity)
 - [Kit de réussite des clients de Microsoft Teams](https://www.microsoft.com/download/details.aspx?id=54244)
 - [Outils pour favoriser l’adoption de Teams](https://docs.microsoft.com/microsoftteams/adopt-tools-and-downloads) 
 - [Créer une stratégie de gestion des modifications pour Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/change-management-strategy)
 - [Teams avec trois niveaux de protection](configure-teams-three-tiers-protection.md)
+
+## <a name="user-training-resources-for-productivity-apps-and-services"></a>Ressources de formation dédiées aux utilisateurs pour les applications et les services de productivité
 
 - [Former les utilisateurs sur Office et Office 365](https://support.office.com/article/train-your-users-on-office-and-microsoft-365-7cba3c97-7f19-46ed-a1c6-763971a26c2)
 - [Utiliser Office pour le web](https://support.microsoft.com/office/get-started-with-office-for-the-web-in-microsoft-365-5622c7c9-721d-4b3d-8cb9-a7276c2470e5)
 
 ## <a name="next-step"></a>Étape suivante
 
-Passez à l’[étape 5](empower-people-to-work-remotely-communication-venues.md) pour créer d’autres lieux de communication, qui répondent aux exigences uniques de la crise du COVID-19.
+Passez à l’[étape 5](empower-people-to-work-remotely-communication-venues.md) pour créer d’autres lieux de communication au service de votre employés à distance.

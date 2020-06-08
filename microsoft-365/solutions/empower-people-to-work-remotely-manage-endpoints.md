@@ -5,7 +5,7 @@ f1.keywords:
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 05/01/2020
+ms.date: 06/03/2020
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -17,16 +17,16 @@ ms.collection:
 - M365solutions
 ms.custom: ''
 description: Utilisez Microsoft Endpoint Manager pour gérer vos appareils de gestion, PC et autres points de terminaison.
-ms.openlocfilehash: 388ac2b7f9f4a31d33c1f4551e215b2b32c8f85f
-ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
+ms.openlocfilehash: c7149295c24e5339e87db55998ec48fe9f0e9a93
+ms.sourcegitcommit: 9195c83c725a7e6ed395ce0253304da54e2195f0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44160797"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "44560492"
 ---
 # <a name="step-3-deploy-endpoint-management-for-your-devices-pcs-and-other-endpoints"></a>Étape 3. Déployer la gestion des points de terminaison pour vos appareils, PC et autres points de terminaison
 
-Avec les travailleurs à distance, vous devez prendre en charge un nombre croissant d’appareils personnels. La gestion des points de terminaison est une approche de sécurité, basée sur des stratégies, qui exige que les appareils respectent des critères spécifiques avant de pouvoir accéder aux ressources. Microsoft Endpoint Manager offre un lieu de travail et des capacités de gestion modernes pour sécuriser vos données dans le cloud et en local. 
+Avec les travailleurs à distance, vous devez prendre en charge un nombre croissant d’appareils personnels. La gestion des points de terminaison est une approche de sécurité, basée sur des stratégies, qui exige que les appareils respectent des critères spécifiques avant de pouvoir accéder aux ressources. Microsoft Endpoint Manager offre des capacités de gestion modernes pour sécuriser vos données dans le cloud et en local. 
 
 Endpoint Manager fournit des services et des outils pour gérer les appareils mobiles, les ordinateurs de bureau, les machines virtuelles, les appareils intégrés et les serveurs, en combinant les services suivants, que vous connaissez peut-être déjà et que vous utilisez.
 
@@ -34,7 +34,7 @@ Endpoint Manager fournit des services et des outils pour gérer les appareils m
 
 ## <a name="microsoft-intune"></a>Microsoft Intune
 
-Intune est conçu pour vous aider à protéger vos données lorsque vous ne gérez pas les appareils utilisés pour accéder aux données de l’organisation. Les stratégies de protection des applications Intune, combinées à l’accès conditionnel Azure AD, offrent un contrôle granulaire des données sur les appareils mobiles. Intune vous permet également de définir des stratégies complètes, qui permettent uniquement aux personnes autorisées, et dans les bonnes conditions, d’accéder aux données de votre entreprise et de garantir que ces données restent protégées, en contrôlant la façon dont elles sont utilisées dans Office, Outlook et d’autres applications mobiles.
+Intune est conçu pour vous aider à protéger vos données lorsque vous ne gérez pas les appareils utilisés pour accéder aux données de l’organisation. Les stratégies de protection des applications Intune, combinées à l’accès conditionnel Azure Active Directory (Azure AD), offrent un contrôle granulaire des données sur les appareils mobiles. Intune vous permet également de définir des stratégies complètes, qui permettent uniquement aux personnes autorisées, et dans les bonnes conditions, d’accéder aux données de votre entreprise et de garantir que ces données restent protégées, en contrôlant la façon dont elles sont utilisées dans Office, Outlook et d’autres applications mobiles.
 
 Si vous souhaitez en savoir plus, consultez la page [Présentation de Microsoft Intune](https://docs.microsoft.com/intune/fundamentals/what-is-intune).
 
@@ -66,7 +66,9 @@ Si vous souhaitez en savoir plus, consultez la page [Présentation de Windows A
 
 ## <a name="admin-technical-resources-for-endpoint-management"></a>Ressources techniques dédiées aux administrateurs pour la gestion des points de terminaison
 
-- [Inscrire les appareils gérés pour la sécurité, utiliser les paramètres de l’application pour les appareils non gérés et utiliser les stratégies d’appareil et d’application](https://docs.microsoft.com/microsoft-365/enterprise/mobility-infrastructure)
+- [La Partie 3 de la vidéo sur la gestion des appareils Windows 10 pour les employés à distance](https://resources.techcommunity.microsoft.com/enabling-remote-work/#security)
+- [La Partie 5 de la vidéo sur la gestion des navigateurs et des ordinateurs de bureau des utilisateurs pour les employés à distance](https://resources.techcommunity.microsoft.com/enabling-remote-work/#security)
+- [Déployer une infrastructure de mobilité pour Microsoft 365](https://docs.microsoft.com/microsoft-365/enterprise/mobility-infrastructure)
 - [Comment inscrire différents types d’appareils pour la gestion des périphériques mobiles](https://docs.microsoft.com/mem/intune/enrollment/device-enrollment)
 - [Comment former vos utilisateurs finaux à Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/end-user-educate)
  
