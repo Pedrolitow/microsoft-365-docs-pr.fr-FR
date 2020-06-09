@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.assetid: 4bfaf2ab-e633-4227-8bde-effefb41a3db
 description: Découvrez comment gérer les utilisateurs de messagerie dans Exchange Online Protection (EOP), notamment à l’aide de la synchronisation d’annuaires, du centre d’administration Exchange et de PowerShell pour gérer les utilisateurs.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 0e8a4585a16b579c28de719181eed65b65ec6f4f
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: d82170499bcfa6465164ca2644eea43c2558ad18
+ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44352431"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44616833"
 ---
 # <a name="manage-mail-users-in-standalone-eop"></a>Gérer les utilisateurs de courrier dans une version autonome de EOP
 
@@ -35,7 +35,7 @@ Pour les organisations EOP autonomes avec un petit nombre d’utilisateurs, vous
 
 - Pour ouvrir le centre d’administration Exchange, consultez la rubrique [Exchange Admin Center in standalone EOP](exchange-admin-center-in-exchange-online-protection-eop.md).
 
-- Pour vous connecter à un service Exchange Online Protection PowerShell autonome, voir [Se connecter à Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell).
+- Pour vous connecter à un service Exchange Online Protection PowerShell autonome, voir [Se connecter à Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
 - Lorsque vous créez des utilisateurs de messagerie dans EOP PowerShell, il se peut que vous rencontriez une limitation. En outre, les cmdlets PowerShell d’EOP utilisent une méthode de traitement par lots qui entraîne un délai de propagation de quelques minutes avant que les résultats des commandes soient visibles.
 
@@ -113,7 +113,7 @@ L’onglet **informations** sur le contact permet d’afficher ou de modifier le
   - **Bureau**
   - **Téléphone personnel **
   - **Page Web**
-  - **Notes**
+  - **Remarques**
 
 #### <a name="organization"></a>Organisation
 
@@ -139,7 +139,7 @@ Pour renvoyer une liste récapitulative de tous les utilisateurs de messagerie d
 Get-Recipient -RecipientType MailUser -ResultSize unlimited
 ```
 
-Pour afficher des informations détaillées sur un utilisateur de messagerie spécifique, remplacez \< MailUserIdentity \> par le nom, l’alias ou le nom de compte de l’utilisateur de messagerie, puis exécutez les commandes suivantes :
+Pour afficher des informations détaillées sur un utilisateur de messagerie spécifique, remplacez \<MailUserIdentity\> par le nom, l’alias ou le nom de compte de l’utilisateur de messagerie, puis exécutez les commandes suivantes :
 
 ```powershell
 Get-Recipient -Identity <MailUserIdentity> | Format-List
@@ -209,7 +209,7 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, co
 
 ### <a name="use-standalone-eop-powershell-to-remove-mail-users"></a>Utilisation d’EOP PowerShell autonome pour supprimer des utilisateurs de messagerie
 
-Pour supprimer des utilisateurs de messagerie en mode autonome EOP PowerShell, remplacez \< MailUserIdentity \> par le nom, l’alias ou le nom de compte de l’utilisateur de messagerie, puis exécutez la commande suivante :
+Pour supprimer des utilisateurs de messagerie dans une version autonome d’EOP PowerShell, remplacez \<MailUserIdentity\> par le nom, l’alias ou le nom de compte de l’utilisateur de messagerie, puis exécutez la commande suivante :
 
 ```PowerShell
 Remove-EOPMailUser -Identity <MailUserIdentity\>
@@ -235,7 +235,7 @@ Pour vérifier que vous avez bien créé, modifié ou supprimé des utilisateurs
   Get-Recipient -RecipientType MailUser -ResultSize unlimited
   ```
 
-- Remplacez \< MailUserIdentity \> par le nom, l’alias ou le nom de compte de l’utilisateur de messagerie, puis exécutez les commandes suivantes pour vérifier les paramètres :
+- Remplacez \<MailUserIdentity\> par le nom, l’alias ou le nom de compte de l’utilisateur de messagerie, puis exécutez les commandes suivantes pour vérifier les paramètres :
 
   ```powershell
   Get-Recipient -Identity <MailUserIdentity> | Format-List

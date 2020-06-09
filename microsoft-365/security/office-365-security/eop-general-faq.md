@@ -14,12 +14,12 @@ ms.assetid: 9dbff00a-474e-4452-aeb5-5be9a6b8c6d5
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenez des réponses aux questions générales les plus fréquentes sur le service de filtrage du courrier électronique hébergé dans le Cloud Exchange Online Protection (EOP).
-ms.openlocfilehash: 02aa7175e95cf706ed13268035953400af2485a7
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 0908fd5cf3a799f5a253122efac2b4d56d80ee76
+ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44206661"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44617029"
 ---
 # <a name="eop-general-faq"></a>Forum Aux Questions d’ordre général concernant Exchange Online Protection (EOP)
 
@@ -89,4 +89,4 @@ Oui. Pour plus d'informations sur les limites dans EOP, voir [Limites d'Exchange
 
 ## <a name="does-eop-support-powershell"></a>EOP prend-il en charge PowerShell ?
 
-Oui, la fonctionnalité EOP complète est disponible via PowerShell : Exchange Online PowerShell pour les organisations avec des boîtes aux lettres Exchange Online ; PowerShell EOP autonome pour les organisations EOP autonomes. Pour plus d’informations, consultez la rubrique [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell) and [Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/exchange-online-protection-powershell).
+Oui, la fonctionnalité EOP complète est disponible via PowerShell : Exchange Online PowerShell pour les organisations avec des boîtes aux lettres Exchange Online ; PowerShell EOP autonome pour les organisations EOP autonomes. Pour plus d’informations, consultez la rubrique [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell) and [Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-protection-powershell).

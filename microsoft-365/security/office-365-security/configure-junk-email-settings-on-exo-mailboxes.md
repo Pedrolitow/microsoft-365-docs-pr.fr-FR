@@ -16,12 +16,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Les administrateurs peuvent apprendre à configurer les paramètres de courrier indésirable dans les boîtes aux lettres Exchange Online. Un grand nombre de ces paramètres sont disponibles pour les utilisateurs dans Outlook ou Outlook sur le Web.
-ms.openlocfilehash: a0b2bce985c642a2069d51cbd3103b6fd044ff17
-ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
+ms.openlocfilehash: d5eaadc6d177acf91ea4d9d149c92a4de6cc8dd3
+ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "44588451"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44616633"
 ---
 # <a name="configure-junk-email-settings-on-exchange-online-mailboxes"></a>Configurer les paramètres de courrier indésirable dans les boîtes aux lettres Exchange Online
 
@@ -46,9 +46,9 @@ Les administrateurs peuvent utiliser Exchange Online PowerShell pour désactiver
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu'il faut savoir avant de commencer
 
-- Vous pouvez utiliser Exchange Online PowerShell uniquement pour effectuer ces procédures. Pour vous connecter à Exchange Online PowerShell, voir [Connexion à Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).
+- Vous pouvez utiliser Exchange Online PowerShell uniquement pour effectuer ces procédures. Pour vous connecter à Exchange Online PowerShell, voir [Connexion à Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
 
-- Des autorisations doivent vous être attribuées avant de pouvoir effectuer ces procédures. Plus précisément, vous avez besoin du rôle **destinataires de messagerie** (qui est affecté par défaut aux groupes de rôles gestion de l' **organisation**, **gestion des destinataires**et **destinataires de messages personnalisés** ) ou aux **options utilisateur** (qui sont affectées par défaut aux groupes de rôles gestion de l' **organisation** et **support technique** ). Pour ajouter des utilisateurs à des groupes de rôles dans Exchange Online, consultez la rubrique [modifier des groupes de rôles dans Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups). Notez qu’un utilisateur disposant des autorisations par défaut peut effectuer ces mêmes procédures sur sa propre boîte aux lettres, à condition qu’il ait [accès à Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/disable-access-to-exchange-online-powershell).
+- Des autorisations doivent vous être attribuées avant de pouvoir effectuer ces procédures. Plus précisément, vous avez besoin du rôle **destinataires de messagerie** (qui est affecté par défaut aux groupes de rôles gestion de l' **organisation**, **gestion des destinataires**et **destinataires de messages personnalisés** ) ou aux **options utilisateur** (qui sont affectées par défaut aux groupes de rôles gestion de l' **organisation** et **support technique** ). Pour ajouter des utilisateurs à des groupes de rôles dans Exchange Online, consultez la rubrique [modifier des groupes de rôles dans Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups). Notez qu’un utilisateur disposant des autorisations par défaut peut effectuer ces mêmes procédures sur sa propre boîte aux lettres, à condition qu’il ait [accès à Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/disable-access-to-exchange-online-powershell).
 
 - Dans les environnements de EOP autonomes où EOP protège les boîtes aux lettres Exchange locales, vous devez configurer des règles de flux de courrier (également appelées règles de transport) dans Exchange local pour traduire le verdict de filtrage de courrier indésirable EOP de sorte que la règle de courrier indésirable puisse déplacer le message vers le dossier Courrier indésirable. Pour les détails, voir [Configurer une protection Exchange Online (EOP) autonome pour envoyer des courriers indésirables dans le dossier Courrier indésirable dans les environnements hybrides](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md).
 

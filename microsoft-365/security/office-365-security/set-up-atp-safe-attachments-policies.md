@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Découvrez comment définir des stratégies de pièces jointes fiables afin de protéger votre organisation contre les fichiers malveillants par courrier électronique.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d826cb6e0dd4370a1e02722901d083d4f021e2b4
-ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
+ms.openlocfilehash: 581c45c9c5b606b3b4b0ba91bd96740bc838629d
+ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "44588119"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44617229"
 ---
 # <a name="set-up-office-365-atp-safe-attachments-policies"></a>Configuration des stratégies de pièces jointes approuvées ATP Office 365
 
@@ -50,7 +50,7 @@ Les personnes envoient, reçoivent et partagent régulièrement des pièces join
   |---------|---------|
   |administrateur général |La personne qui s’inscrit pour acheter Microsoft 365 est un administrateur global par défaut. (Pour en savoir plus, consultez la rubrique [à propos des rôles d’administrateur Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles) .)|
   |Administrateur de sécurité |Centre d’administration Azure Active Directory ( [https://aad.portal.azure.com](https://aad.portal.azure.com) )|
-  |Gestion de l’organisation Exchange Online, gestion de l’hygiène Exchange Online |Centre d’administration Exchange ( [https://outlook.office365.com/ecp](https://outlook.office365.com/ecp) ) <br>ou <br>  Applets de commande PowerShell (consultez la rubrique [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell))|
+  |Gestion de l’organisation Exchange Online, gestion de l’hygiène Exchange Online |Centre d’administration Exchange ( [https://outlook.office365.com/ecp](https://outlook.office365.com/ecp) ) <br>ou <br>  Applets de commande PowerShell (consultez la rubrique [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell))|
   |
 
   Pour en savoir plus sur les rôles et les autorisations, consultez [la rubrique autorisations dans le &amp; Centre de sécurité conformité](permissions-in-the-security-and-compliance-center.md).

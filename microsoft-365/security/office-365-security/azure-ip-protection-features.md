@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Cet article explique les modifications apportées aux fonctionnalités de protection dans Azure information protection
-ms.openlocfilehash: 0f08163602ae34689c8e68bbc0c02e072ce89696
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: c2f386e17d3c0da74f360a7b1262a2f32dbf92cc
+ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035603"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44616733"
 ---
 # <a name="protection-features-in-azure-information-protection-rolling-out-to-existing-tenants"></a>Fonctionnalités de protection dans Azure information protection pour le déploiement vers des clients existants
 
@@ -75,7 +75,7 @@ Pour plus d’informations sur ces configurations de Registre, reportez-vous à 
 
 Pour désactiver la modification à venir, procédez comme suit :
 
-1. À l’aide d’un compte professionnel ou scolaire disposant d’autorisations d’administrateur globales dans votre organisation, démarrez une session Windows PowerShell et connectez-vous à Exchange Online. Pour obtenir des instructions, voir [Connexion à Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).
+1. À l’aide d’un compte professionnel ou scolaire disposant d’autorisations d’administrateur globales dans votre organisation, démarrez une session Windows PowerShell et connectez-vous à Exchange Online. Pour obtenir des instructions, voir [Connexion à Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
 
 2. Exécutez la cmdlet Set-IRMConfiguration à l’aide de la syntaxe suivante :
 

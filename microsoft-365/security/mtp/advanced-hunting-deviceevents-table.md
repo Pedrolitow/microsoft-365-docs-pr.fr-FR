@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: f99420b978f77f8b4a4660394d4a6f335c5aad66
-ms.sourcegitcommit: 74bf600424d0cb7b9d16b4f391aeda7875058be1
+ms.openlocfilehash: f340a34b3c88f1caba83861c4d36ce140846d495
+ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42235043"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44617173"
 ---
 # <a name="deviceevents"></a>DeviceEvents
 
@@ -31,7 +31,7 @@ ms.locfileid: "42235043"
 
 
 
-La table ou `DeviceEvents` les événements de périphérique divers dans le schéma de [chasse avancé](advanced-hunting-overview.md) contient des informations sur les différents types d’événements, notamment les événements déclenchés par les contrôles de sécurité, tels que l’antivirus Windows Defender et la protection contre les attaques. Utilisez cette référence pour créer des requêtes qui renvoient des informations de cette table.
+La table ou les événements `DeviceEvents` de périphérique divers dans le schéma de [chasse avancé](advanced-hunting-overview.md) contient des informations sur les différents types d’événements, notamment les événements déclenchés par les contrôles de sécurité, tels que l’antivirus Windows Defender et la protection contre les attaques. Utilisez cette référence pour créer des requêtes qui renvoient des informations de cette table.
 
 Pour plus d’informations sur les autres tables du schéma de repérage avancé, [consultez la référence de repérage avancé](advanced-hunting-schema-tables.md).
 
@@ -45,7 +45,7 @@ Pour plus d’informations sur les autres tables du schéma de repérage avancé
 | `FileName` | string | Nom du fichier auquel l’action enregistrée a été appliquée |
 | `FolderPath` | string | Dossier contenant le fichier auquel l’action enregistrée a été appliquée |
 | `SHA1` | string | SHA-1 du fichier auquel l’action enregistrée a été appliquée |
-| `SHA256` | string | SHA-256 du fichier auquel l’action enregistrée a été appliquée. Ce champ n’est généralement pas rempli : utilisez la colonne SHA1 quand elle est disponible. |
+| `SHA256` | string | SHA-256 du fichier auquel l’action enregistrée a été appliquée. Ce champ n’est généralement pas rempli. Utilisez la colonne SHA1 lorsque celle-ci est disponible. |
 | `MD5` | string | Hachage MD5 du fichier auquel l’action enregistrée a été appliquée |
 | `AccountDomain` | string | Domaine du compte |
 | `AccountName` | string | Nom d’utilisateur du compte |
@@ -68,7 +68,7 @@ Pour plus d’informations sur les autres tables du schéma de repérage avancé
 | `FileOriginIP` | string | Adresse IP à partir de laquelle le fichier a été téléchargé |
 | `AdditionalFields` | string | Informations supplémentaires sur l’événement au format de tableau JSON |
 | `InitiatingProcessSHA1` | string | SHA-1 du processus (fichier image) à l’origine de l’événement |
-| `InitiatingProcessSHA256` | string | SHA-256 du processus (fichier image) à l’origine de l’événement. Ce champ n’est généralement pas rempli : utilisez la colonne SHA1 quand elle est disponible. |
+| `InitiatingProcessSHA256` | string | SHA-256 du processus (fichier image) à l’origine de l’événement. Ce champ n’est généralement pas rempli. Utilisez la colonne SHA1 lorsque celle-ci est disponible. |
 | `InitiatingProcessFileName` | string | Nom du processus à l’origine de l’événement |
 | `InitiatingProcessFolderPath` | string | Dossier contenant le processus (fichier image) à l’origine de l’événement |
 | `InitiatingProcessId` | int | ID de processus (PID) du processus à l’origine de l’événement |

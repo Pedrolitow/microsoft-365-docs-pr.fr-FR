@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Les administrateurs peuvent activer la prise en charge de l’étiquette de sensibilité pour les fichiers Word, Excel et PowerPoint dans SharePoint et OneDrive.
-ms.openlocfilehash: c364c55888165b10de603fd4709e4f82b06f83cc
-ms.sourcegitcommit: 1b560ee45f3b0253fa5c410a4499373c1f92da9c
+ms.openlocfilehash: 0ad4381d4a4004d89dd35aa59098f26d8f12dd56
+ms.sourcegitcommit: bc17d4b2197dd60cdff7c9349bbe19eeaac85ac2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/31/2020
-ms.locfileid: "44432603"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "44604309"
 ---
 # <a name="enable-sensitivity-labels-for-office-files-in-sharepoint-and-onedrive"></a>Activer les étiquettes de confidentialité pour les fichiers Office dans SharePoint et OneDrive
 
@@ -195,6 +195,35 @@ Toutefois, vous pouvez utiliser les deux solutions de protection conjointement e
 - Si vous avez activé les paramètres supplémentaires de la bibliothèque IRM, ce qui implique d’empêcher les utilisateurs de télécharger des documents qui ne prennent pas en charge la gestion des droits relatifs à l’information (IRM), ces paramètres sont appliqués.
 
 Dans ce cas, vous pouvez être sûr que tous les fichiers Office et PDF sont protégés contre tout accès non autorisé s’ils sont téléchargés, même s’ils ne sont pas étiquetés. Toutefois, les fichiers étiquetés téléchargés ne bénéficieront pas des nouvelles fonctionnalités.
+
+## <a name="search-for-documents-by-sensitivity-label"></a>Rechercher des documents par étiquette de sensibilité
+
+Utilisez la propriété gérée **InformationProtectionLabelId** pour rechercher tous les documents dans SharePoint ou OneDrive dont l’étiquette de confidentialité est spécifique. Utilisez la syntaxe suivante :`InformationProtectionLabelId:<GUID>`
+
+Par exemple, pour rechercher tous les documents qui ont été étiquetés comme « confidentiel » et cette étiquette a le GUID « 8faca7b8-8d20-48A3-8ea2-0f96310a848e », dans la zone de recherche, tapez :
+
+`InformationProtectionLabelId: 8faca7b8-8d20-48a3-8ea2-0f96310a848e`
+
+Pour obtenir les GUID pour vos étiquettes de sensibilité, utilisez la cmdlet [Get-label](https://docs.microsoft.com/powershell/module/exchange/get-label?view=exchange-ps) :
+    
+1. Tout d’abord,[connectez-vous au Centre de sécurité et conformité Office 365 PowerShell](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell). 
+    
+    Par exemple, dans une session PowerShell exécutée en tant qu’administrateur, connectez-vous à l’aide d’un compte d’administrateur général :
+    
+    ```powershell
+    Set-ExecutionPolicy RemoteSigned
+    $UserCredential = Get-Credential
+    $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.compliance.protection.outlook.com/powershell-liveid/ -Credential $UserCredential -Authentication Basic -AllowRedirection
+    Import-PSSession $Session -DisableNameChecking
+    ```
+
+2. Exécutez ensuite la commande suivante :
+    
+    ```powershell
+    Get-Label |ft Name, Guid
+    ```
+
+Pour plus d’informations sur l’utilisation des propriétés gérées, voir [gérer le schéma de recherche dans SharePoint](https://docs.microsoft.com/sharepoint/manage-search-schema).
 
 ## <a name="how-to-disable-sensitivity-labels-for-sharepoint-and-onedrive-opt-out"></a>Procédure de désactivation des étiquettes de confidentialité pour SharePoint et OneDrive (exclusion)
 

@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 2cfce2c8-20c5-47f9-afc4-24b059c1bd76
 description: Les utilisateurs doivent disposer d’autorisations dans le centre de conformité Microsoft 365 Security & pour pouvoir gérer les fonctionnalités de sécurité ou de conformité.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 19358e3cca0c4d47338fe5fc72b671e36477ce7e
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: bfded9d3f75f57eca1097fec6f18dc55410b65fb
+ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44351950"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44616973"
 ---
 # <a name="give-users-access-to-the-security--compliance-center"></a>Octroi de l’accès au Centre de conformité et sécurité aux utilisateurs
 
@@ -68,7 +68,7 @@ Pour plus d’informations sur les différentes autorisations que vous pouvez ac
 
 ## <a name="use-powershell-to-give-another-user-access-to-the-security--compliance-center"></a>Utiliser PowerShell pour donner à un autre utilisateur l’accès au centre de sécurité & conformité
 
-1. [Connectez-vous au Centre de conformité et sécurité PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
+1. [Connectez-vous au Centre de conformité et sécurité PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell).
 
 2. Utilisez la commande **Add-RoleGroupMember** pour ajouter un utilisateur au rôle Gestion de l’organisation, comme illustré dans l’exemple suivant.
 

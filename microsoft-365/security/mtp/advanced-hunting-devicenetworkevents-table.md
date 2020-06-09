@@ -1,7 +1,7 @@
 ---
 title: Table DeviceNetworkEvents dans le schéma de chasse avancé
 description: En savoir plus sur les événements de connexion réseau que vous pouvez interroger à partir de la table DeviceNetworkEvents du schéma de chasse avancé
-keywords: chasse de menace, recherche de menace, recherche de menace informatique, protection contre les menaces Microsoft, Microsoft 365, MTP, M365, recherche, requête, télémétrie, référence de schéma, Kusto, table, colonne, type de données, devicenetworkevents, NetworkCommunicationEvents, réseau connexion, IP distante, IP locale
+keywords: chasse de menace, recherche de menace, recherche de menace informatique, protection contre les menaces Microsoft, Microsoft 365, MTP, M365, recherche, requête, télémétrie, référence de schéma, Kusto, table, colonne, type de données, devicenetworkevents, NetworkCommunicationEvents, connexion réseau, IP distante, IP locale
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: d5e3327f4b4e066b3e4c14f646ad8db78ff3804a
-ms.sourcegitcommit: 3b2fdf159d7dd962493a3838e3cf0cf429ee2bf2
+ms.openlocfilehash: 3be6523372edcda520e05545c87385c0e1a42044
+ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "42929039"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44617117"
 ---
 # <a name="devicenetworkevents"></a>DeviceNetworkEvents
 
@@ -50,6 +50,7 @@ Pour plus d’informations sur les autres tables du schéma de repérage avancé
 | `LocalIPType` | string | Type d’adresse IP, par exemple public, Private, reserved, Loopback, Teredo, FourToSixMapping et Broadcast |
 | `RemoteIPType` | string | Type d’adresse IP, par exemple public, Private, reserved, Loopback, Teredo, FourToSixMapping et Broadcast |
 | `InitiatingProcessSHA1` | string | SHA-1 du processus (fichier image) à l’origine de l’événement |
+| `InitiatingProcessSHA256` | string | SHA-256 du processus (fichier image) à l’origine de l’événement. Ce champ n’est généralement pas rempli. Utilisez la colonne SHA1 lorsque celle-ci est disponible. |
 | `InitiatingProcessMD5` | string | Hachage MD5 du processus (fichier image) à l’origine de l’événement |
 | `InitiatingProcessFileName` | string | Nom du processus à l’origine de l’événement |
 | `InitiatingProcessId` | int | ID de processus (PID) du processus à l’origine de l’événement |

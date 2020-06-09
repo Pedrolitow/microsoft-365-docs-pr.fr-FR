@@ -15,14 +15,14 @@ search.appverid:
 ms.assetid: 82ac9922-939c-41be-9c8a-7c75b0a4e27d
 ms.collection:
 - M365-security-compliance
-description: Découvrez comment utiliser l’Explorateur et les détections en temps réel dans &amp; le centre de sécurité conformité pour examiner et répondre efficacement aux menaces.
+description: Découvrez comment utiliser l’Explorateur et les détections en temps réel dans le centre de sécurité &amp; conformité pour examiner et répondre efficacement aux menaces.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 7d540b52a403e43be06fc731590d183d5edfa7f9
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 1aaff0662e549de3ea27db01df02ff34d192a96d
+ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44036751"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44613443"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>Explorateur de menaces et détections en temps réel
 
@@ -36,7 +36,7 @@ Si votre organisation dispose d' [office 365 Advanced Threat Protection](office-
 
 Avec l’Explorateur (ou les détections en temps réel), vous disposez d’un puissant rapport qui permet à votre équipe des opérations de sécurité d’examiner et de répondre efficacement aux menaces. L’État ressemble à l’image suivante :
 
-![Accéder à l’Explorateur \> de gestion des menaces](../../media/cab32fa2-66f1-4ad5-bc1d-2bac4dbeb48c.png)
+![Accéder à l’Explorateur de gestion des menaces \>](../../media/cab32fa2-66f1-4ad5-bc1d-2bac4dbeb48c.png)
 
 Ce rapport vous permet d’utiliser les actions suivantes :
 
@@ -103,13 +103,13 @@ Pour plus d’informations sur la recherche de messages électroniques malveilla
 
 En outre, vous pouvez exporter des rapports pour les clics d’URL vers Microsoft Excel afin d’afficher à la fois leur ID de message réseau et leur verdict de clic, ce qui vous permet de comprendre où votre URL est à l’origine du trafic. Voici comment cela fonctionne. À partir de la gestion des menaces sur le lancement rapide Office 365, cliquez sur cette chaîne :
 
-\> **Affichage** \> **Explorer** de l’hameçon \> **cliquer sur** les **URL principales ou sur URL en haut clics** \> **cliquez sur un enregistrement pour ouvrir le menu volant d’URL**
+**Explorateur** \> **Afficher le hameçonnage** \> **Clique sur** \> URL **principales ou en haut** \> -parleurs **Cliquez sur un enregistrement quelconque pour ouvrir le menu volant URL**
 
 Lorsque vous cliquez sur une URL de la liste, vous verrez un nouveau bouton Exporter dans le panneau de débordement. Utilisez ce bouton pour déplacer des données vers une feuille de calcul Excel pour faciliter la création de rapports.
 
 Vous pouvez accéder au même emplacement dans le rapport des détections en temps réel comme suit :
 
-**Explorer** \> **Détections** \> **URLs** \> **View Phish** \> \> **Top URLs or Top Clicks** **Click on any record to open URL flyout** **Navigate to the Clicks Tab.** en temps réel de l’Explorateur afficher les URL de hameçonnage principales ou les clics en haut cliquez sur un enregistrement pour ouvrir le menu volant de l’URL accédez à l’onglet clics. \>
+**Explorateur** \> Détections en temps **réel** \> **Afficher le hameçonnage** \> **URL** \> **URL principales ou clics principaux** \> **Cliquez sur un enregistrement quelconque pour ouvrir le menu volant URL** \> **Accédez à l’onglet clics.**
 
 > [!TIP]
 > L’ID de message réseau mappe le clic retour à des messages spécifiques lorsque vous recherchez dans l’Explorateur ou des outils tiers associés via l’ID de message réseau. La recherche par le biais de l’ID de message réseau donnera aux administrateurs le message électronique spécifique associé à un résultat de clic. Lors de l’exportation, l’identification de la corrélation de l’ID de message réseau permet une analyse plus rapide et plus puissante.
@@ -120,13 +120,13 @@ Vous pouvez accéder au même emplacement dans le rapport des détections en tem
 
 Supposons que vous souhaitez voir les programmes malveillants détectés par les messages électroniques, par la technologie Microsoft 365. Pour ce faire, utilisez l’affichage [courrier > programmes malveillants](threat-explorer-views.md#email--malware) de l’Explorateur (ou des détections en temps réel).
 
-1. Dans le centre de sécurité & conformité[https://protection.office.com](https://protection.office.com)(), sélectionnez**Explorateur** de **gestion** > des menaces (ou **détections en temps réel**). (Cet exemple utilise Explorer.)
+1. Dans le centre de sécurité & conformité ( [https://protection.office.com](https://protection.office.com) ), sélectionnez Explorateur de **gestion des menaces**  >  **Explorer** (ou **détections en temps réel**). (Cet exemple utilise Explorer.)
 
-2. Dans le menu **affichage** , choisissez **Email** > **programmes malveillants**de messagerie.
+2. Dans le menu **affichage** , choisissez **Email**  >  **programmes malveillants**de messagerie.
 
    ![Menu Affichage de l’Explorateur](../../media/ExplorerViewEmailMalwareMenu.png)
 
-3. Cliquez sur **expéditeur**, puis choisissez**technologie de détection**de **base** > .
+3. Cliquez sur **expéditeur**, puis choisissez technologie de détection de **base**  >  **Detection technology**.
 
    Vos technologies de détection sont désormais disponibles en tant que filtres pour le rapport.
 
@@ -144,13 +144,13 @@ Supposons que vous vouliez voir les tentatives de hameçonnage via des URL dans 
 
 Pour consulter les URL de hameçonnage dans les messages et les clics sur les URL dans les messages hameçons, utilisez la vue [courrier > hameçonnage](threat-explorer-views.md#email--phish) de l’Explorateur (ou des détections en temps réel).
 
-1. Dans le centre de sécurité & conformité[https://protection.office.com](https://protection.office.com)(), sélectionnez**Explorateur** de **gestion** > des menaces (ou **détections en temps réel**). (Cet exemple utilise Explorer.)
+1. Dans le centre de sécurité & conformité ( [https://protection.office.com](https://protection.office.com) ), sélectionnez Explorateur de **gestion des menaces**  >  **Explorer** (ou **détections en temps réel**). (Cet exemple utilise Explorer.)
 
-2. Dans le menu **affichage** , choisissez **courrier** > **hameçon**.
+2. Dans le menu **affichage** , choisissez **courrier**  >  **hameçon**.
 
    ![Menu Affichage de l’Explorateur](../../media/ExplorerViewEmailPhishMenu.png)
 
-3. Cliquez sur **expéditeur**, puis sur **URL** > , puis**cliquez sur verdict**.
+3. Cliquez sur **expéditeur**, puis sur **URL**, puis  >  **cliquez sur verdict**.
 
 4. Sélectionnez une ou plusieurs options, telles que **bloquées** et **bloquer le remplacement**, puis cliquez sur le bouton **Actualiser** qui se trouve sur la même ligne que les options pour appliquer le filtre. (Ne pas actualiser la fenêtre de votre navigateur.)
 
@@ -175,13 +175,13 @@ Pour consulter les URL de hameçonnage dans les messages et les clics sur les UR
 
 Supposons que vous voulez afficher les messages électroniques que les utilisateurs de votre organisation ont signalés comme courriers indésirables, non légitimes ou le hameçonnage à l’aide du [complément de message de rapport pour Outlook et Outlook sur le Web](enable-the-report-message-add-in.md). Pour ce faire, utilisez l’affichage [courrier > les soumissions](threat-explorer-views.md#email--submissions) de l’Explorateur (ou des détections en temps réel).
 
-1. Dans le centre de sécurité & conformité[https://protection.office.com](https://protection.office.com)(), sélectionnez**Explorateur** de **gestion** > des menaces (ou **détections en temps réel**). (Cet exemple utilise Explorer.)
+1. Dans le centre de sécurité & conformité ( [https://protection.office.com](https://protection.office.com) ), sélectionnez Explorateur de **gestion des menaces**  >  **Explorer** (ou **détections en temps réel**). (Cet exemple utilise Explorer.)
 
-2. Dans le **menu Affichage** , choisissez**envois**de **courrier électronique** > .
+2. Dans le menu **affichage** , choisissez **Email**  >  **envois**de courrier électronique.
 
    ![Menu Affichage de l’Explorateur](../../media/explorer-view-menu-email-user-reported.png)
 
-3. Cliquez sur **expéditeur**, puis sur**type de rapport**de **base** > .
+3. Cliquez sur **expéditeur**, puis sur type de rapport de **base**  >  **Report type**.
 
 4. Sélectionnez une option, par exemple **hameçonnage**, puis cliquez sur le bouton **Actualiser** .
 
@@ -216,13 +216,13 @@ Vous devez disposer de la protection avancée contre les menaces [Office 365](of
 
 Pour afficher et utiliser l’Explorateur ou les détections en temps réel, vous devez disposer des autorisations appropriées, telles que celles accordées à un administrateur de sécurité ou à un lecteur de sécurité.
 
-- Pour le centre &amp; de sécurité conformité, vous devez disposer de l’un des rôles suivants :
+- Pour le centre de sécurité &amp; conformité, vous devez disposer de l’un des rôles suivants :
 
   - Gestion de l’organisation
-  - Administrateur de la sécurité (qui peut être affecté dans le centre d’administration Azure[https://aad.portal.azure.com](https://aad.portal.azure.com)Active Directory ())
+  - Administrateur de la sécurité (qui peut être affecté dans le centre d’administration Azure Active Directory ( [https://aad.portal.azure.com](https://aad.portal.azure.com) ))
   - Lecteur de sécurité
 
-- Pour Exchange Online, vous devez disposer de l’un des rôles suivants, qui est affecté dans le centre[https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)d’administration Exchange () ou avec des applets de commande PowerShell (consultez la rubrique [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell)) :
+- Pour Exchange Online, vous devez disposer de l’un des rôles suivants, qui est affecté dans le centre d’administration Exchange ( [https://outlook.office365.com/ecp](https://outlook.office365.com/ecp) ) ou avec des applets de commande PowerShell (consultez la rubrique [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell)) :
 
   - Gestion de l’organisation
   - Gestion de l’organisation en affichage seul
@@ -231,7 +231,7 @@ Pour afficher et utiliser l’Explorateur ou les détections en temps réel, vou
 
 Pour en savoir plus sur les rôles et les autorisations, consultez les ressources suivantes :
 
-- [Autorisations dans le centre &amp; de sécurité conformité](permissions-in-the-security-and-compliance-center.md)
+- [Autorisations dans le centre de sécurité &amp; conformité](permissions-in-the-security-and-compliance-center.md)
 - [Autorisations des fonctionnalités dans Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/feature-permissions)
 
 ## <a name="some-differences-between-threat-explorer-and-real-time-detections"></a>Différences entre l’Explorateur de menaces et les détections en temps réel

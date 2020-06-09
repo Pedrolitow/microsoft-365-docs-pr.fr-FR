@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: faf1efd1-3b0c-411a-804d-17f37292eac0
 description: Suivez ces recommandations sur les meilleures pratiques pour la protection autonome d’Exchange Online Protection (EOP) afin de vous configurer pour réussir et éviter les erreurs de configuration courantes.
-ms.openlocfilehash: 69b0789612d6490305ff31d89954bc1d9258ac01
-ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
+ms.openlocfilehash: a2ef5d20a79a15e4b1965d352ed0603ac0783121
+ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "44587531"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44616721"
 ---
 # <a name="best-practices-for-configuring-standalone-eop"></a>Meilleures pratiques pour la configuration d’EOP autonome
 
@@ -53,7 +53,7 @@ Ces paramètres couvrent un éventail de fonctionnalités en dehors des stratég
 |[Connectivité POP à la boîte aux lettres](https://docs.microsoft.com/Exchange/clients-and-mobile-in-exchange-online/pop3-and-imap4/enable-or-disable-pop3-or-imap4-access)|Désactivé|Désactivé||
 |Envoi SMTP authentifié|Désactivé|Désactivé|L’envoi SMTP de client authentifié (également appelé envoi SMTP client ou authentification SMTP) est requis pour les clients POP3 et IMAP4 pour envoyer des courriers électroniques.|
 |Connectivité EWS à la boîte aux lettres|Désactivé|Désactivé||
-|[Connectivité PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/disable-access-to-exchange-online-powershell)|Désactivé|Désactivé|Disponible pour les utilisateurs de boîte aux lettres ou les utilisateurs de messagerie (objets utilisateur retournés par la cmdlet [Get-User](https://docs.microsoft.com/powershell/module/exchange/get-user) ).|
+|[Connectivité PowerShell](https://docs.microsoft.com/powershell/exchange/disable-access-to-exchange-online-powershell)|Désactivé|Désactivé|Disponible pour les utilisateurs de boîte aux lettres ou les utilisateurs de messagerie (objets utilisateur retournés par la cmdlet [Get-User](https://docs.microsoft.com/powershell/module/exchange/get-user) ).|
 |Utiliser l' [intelligence d’usurpation d’identité](learn-about-spoof-intelligence.md) pour les expéditeurs de liste d’autorisation dès que possible|Oui|Oui||
 |[Blocage du périmètre basé sur l’annuaire (DBEB)](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-directory-based-edge-blocking)|Activé|Activé|Type de domaine = faisant autorité|
 |[Configurer l’authentification multifacteur pour tous les comptes d’administrateur](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/set-up-multi-factor-authentication)|Activé|Activé||

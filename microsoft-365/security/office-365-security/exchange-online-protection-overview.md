@@ -14,14 +14,14 @@ ms.assetid: 1270a65f-ddc3-4430-b500-4d3a481efb1e
 ms.custom:
 - seo-marvel-apr2020
 description: Découvrez comment Exchange Online Protection (EOP) peut vous aider à protéger votre organisation de messagerie locale dans des environnements autonomes et hybrides.
-ms.openlocfilehash: 7a019b2651eda114bab8dcf9df6d9a6201558704
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: a3f71ea5366224465cdaf3922c6c467fcb49f3cc
+ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44206682"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44616985"
 ---
-# <a name="exchange-online-protection-overview"></a>Vue d'ensemble d'Exchange Online Protection
+# <a name="exchange-online-protection-overview"></a>Vue d’ensemble d’Exchange Online Protection
 
 Exchange Online Protection (EOP) est le service de filtrage basé sur le Cloud qui permet de protéger votre organisation contre le courrier indésirable et les programmes malveillants. EOP est inclus dans toutes les organisations Microsoft 365 avec des boîtes aux lettres Exchange Online.
 
@@ -109,6 +109,6 @@ Le contenu de l’aide pour les administrateurs d’EOP se compose des catégori
 
 - [Centre d’administration Exchange en mode autonome EOP](exchange-admin-center-in-exchange-online-protection-eop.md): explique comment accéder à l’interface de gestion du centre d’administration Exchange afin de gérer votre service EOP, et comment naviguer dans celle-ci.
 
-- [Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/exchange-online-protection-powershell): fournit des informations sur PowerShell à distance, qui vous permet de gérer votre service EOP à partir de la ligne de commande.
+- [Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-protection-powershell): fournit des informations sur PowerShell à distance, qui vous permet de gérer votre service EOP à partir de la ligne de commande.
 
 - [Aide et support pour EOP](help-and-support-for-eop.md) Fournit des informations sur la manière d'obtenir de l'aide et un support technique.

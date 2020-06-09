@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Découvrez les rapports intelligents et les informations disponibles dans le centre de sécurité et de conformité, et comment les utiliser pour afficher et explorer les données et prendre des mesures rapides.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 3646c38f56852d18fe7f2a79c82c059f6d0bca21
-ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
+ms.openlocfilehash: fc969dd9bbcbe049f4fcd065ef9caed51c52fac6
+ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "44588155"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44617307"
 ---
 # <a name="smart-reports-and-insights-in-the-security-amp-compliance-center"></a>Rapports intelligents et Insights dans le centre de sécurité &amp; conformité
 
@@ -54,11 +54,6 @@ Un grand nombre de rapports sont disponibles dans le centre de sécurité et de 
 |**Journal d’audit** <br/> Informations sur les activités Microsoft 365, les utilisateurs, les fichiers ou les dossiers, etc.  <br/> |Dans le centre de sécurité &amp; conformité, accédez ** &amp; ** à recherche dans le \> **Journal d’audit** de recherche <br/> |[Rechercher dans le journal d’audit dans le centre de sécurité &amp; conformité](../../compliance/search-the-audit-log-in-security-and-compliance.md) <br/> |
 |**Rapports de conformité** <br/> Rapports FedRAMP, rapports sur la gouvernance, sur les risques et sur la conformité, rapports de gestion de la sécurité de l'information ISO et rapports d'audit et d'évaluation des contrôles de la société de services.  <br/> |Dans le centre de sécurité &amp; conformité, accédez à rapports de conformité de la **garantie de service** \> **Compliance reports** . <br/> |[Planifier &amp; la conformité de la sécurité dans Office 365](../../compliance/plan-for-security-and-compliance.md) <br/> |
   
-## <a name="next-steps"></a>Étapes suivantes
-
-À présent que vous disposez d’une vue d’ensemble des rapports et des informations, l’étape suivante consiste à apprendre à personnaliser, gérer et télécharger des rapports. Consultez les articles suivants :
-  
-
     
 ## <a name="related-topics"></a>Rubriques connexes
 

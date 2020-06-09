@@ -14,12 +14,12 @@ ms.assetid: 212e68ac-6330-47e9-a169-6cf5e2f21e13
 ms.custom:
 - seo-marvel-apr2020
 description: Les administrateurs dans les organisations Exchange Online Protection (EOP) autonomes peuvent apprendre à créer, modifier et supprimer des groupes de distribution et des groupes de sécurité à extension messagerie dans le centre d’administration Exchange et dans Exchange Online Protection (EOP) autonome.
-ms.openlocfilehash: 4f1dbdb503f8baf02b7dd763dbf7fc6acdf5771a
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: 42086b67e22df4725bf07bf227853c070f936f24
+ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44352190"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44616501"
 ---
 # <a name="manage-groups-in-eop"></a>Gestion des groupes dans Exchange Online Protection (EOP)
 
@@ -38,7 +38,7 @@ Vous pouvez gérer les groupes dans le centre d’administration Exchange (Centr
 
 - Pour ouvrir le centre d’administration Exchange, consultez la rubrique [Exchange Admin Center in standalone EOP](exchange-admin-center-in-exchange-online-protection-eop.md).
 
-- Pour vous connecter à un service Exchange Online Protection PowerShell autonome, voir [Se connecter à Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell).
+- Pour vous connecter à un service Exchange Online Protection PowerShell autonome, voir [Se connecter à Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
 - Lorsque vous gérez des groupes dans une version autonome d’EOP PowerShell, il se peut que vous rencontriez une limitation. Les procédures PowerShell de cette rubrique utilisent une méthode de traitement par lots qui entraîne un délai de propagation de quelques minutes avant que les résultats des commandes soient visibles.
 
@@ -141,7 +141,7 @@ Pour renvoyer une liste récapitulative de tous les groupes de distribution et d
 Get-Recipient -RecipientType MailUniversalDistributionGroup,MailUniversalSecurityGroup -ResultSize unlimited
 ```
 
-Pour renvoyer la liste des membres du groupe, remplacez \< groupIdentity \> par le nom, l’alias ou l’adresse de messagerie du groupe, puis exécutez la commande suivante :
+Pour renvoyer la liste des membres du groupe, remplacez \<GroupIdentity\> par le nom, l’alias ou l’adresse de messagerie du groupe, puis exécutez la commande suivante :
 
 ```powershell
 Get-DistributionGroupMember -Identity <GroupIdentity>
@@ -231,13 +231,13 @@ Pour vérifier que vous avez bien créé, modifié ou supprimé un groupe de dis
   Get-Recipient -RecipientType MailUniversalDistributionGroup,MailUniversalSecurityGroup -ResultSize unlimited
   ```
 
-- Remplacez \< groupIdentity \> par le nom, l’alias ou l’adresse de messagerie du groupe, puis exécutez la commande suivante pour vérifier les paramètres :
+- Remplacez \<GroupIdentity\> par le nom, l’alias ou l’adresse de messagerie du groupe, puis exécutez la commande suivante pour vérifier les paramètres :
 
   ```PowerShell
   Get-Recipient -Identity <GroupIdentity> | Format-List
   ```
 
-- Pour afficher les membres du groupe, remplacez \< groupIdentity \> par le nom, l’alias ou l’adresse de messagerie du groupe, puis exécutez la commande suivante :
+- Pour afficher les membres du groupe, remplacez \<GroupIdentity\> par le nom, l’alias ou l’adresse de messagerie du groupe, puis exécutez la commande suivante :
 
   ```PowerShell
   Get-DistributionGroupMember -Identity "<GroupIdentity>"

@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Les administrateurs peuvent apprendre à créer, modifier et supprimer les stratégies anti-hameçonnage disponibles dans les organisations Exchange Online Protection (EOP) avec ou sans boîte aux lettres Exchange Online.
-ms.openlocfilehash: b5ec72365c9b7446f4b6a4c32d96a89ca57efbe4
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: bd7686c55e05d4197d43799008596db82375222e
+ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44352056"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44616697"
 ---
 # <a name="configure-anti-phishing-policies-in-eop"></a>Configurer des stratégies anti-hameçonnage dans EOP
 
@@ -67,9 +67,9 @@ Pour accroître l’efficacité de la protection anti-hameçonnage, vous pouvez 
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu'il faut savoir avant de commencer
 
-- Vous ouvrez le Centre de conformité et sécurité sur <https://protection.office.com/>. Pour accéder directement à la page **anti-hameçonnage** , utilisez <https://protection.office.com/antiphishing> .
+- Vous ouvrez le Centre de sécurité et conformité sur <https://protection.office.com/>. Pour accéder directement à la page **anti-hameçonnage** , utilisez <https://protection.office.com/antiphishing> .
 
-- Pour vous connecter à Exchange Online PowerShell, voir [Connexion à Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).
+- Pour vous connecter à Exchange Online PowerShell, voir [Connexion à Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
 
   Vous ne pouvez pas gérer les stratégies de détection d’hameçonnage dans une version autonome d’EOP PowerShell.
 
@@ -103,7 +103,7 @@ Lorsque vous créez une stratégie anti-hameçonnage, vous pouvez uniquement sp�
 
 4. Sur la page **appliqué à** qui s’affiche, identifiez les destinataires internes auxquels s’applique la stratégie.
 
-   Vous pouvez uniquement utiliser une condition ou une exception une seule fois, mais vous pouvez spécifier plusieurs valeurs pour la condition ou l’exception. Plusieurs valeurs de la même condition ou exception utilisent la logique OU (par exemple, _\<destinataire1\>_ ou _\<destinataire2\>_). Des conditions ou des exceptions différentes utilisent la logique ET (par exemple, _\<destinataire1\>_ et _\<membre du groupe 1\>_).
+   Vous pouvez uniquement utiliser une condition ou une exception une seule fois, mais vous pouvez spécifier plusieurs valeurs pour la condition ou l’exception. Plusieurs valeurs de la même condition ou de l’utilisation ou de la logique d’exception (par exemple, _\<recipient1\>_ ou _\<recipient2\>_ ). Différentes conditions ou exceptions utilisent et logique (par exemple, _\<recipient1\>_ and _\<member of group 1\>_ ).
 
    Cliquez sur **Ajouter une condition**. Dans la liste déroulante qui apparaît, sélectionnez une condition sous **appliqué si**:
 
@@ -141,11 +141,11 @@ Utilisez les procédures suivantes pour modifier les stratégies de détection d
 
 2. Sélectionnez la stratégie anti-hameçonnage personnalisée que vous souhaitez modifier. Si elle est déjà sélectionnée, désactivez-la et sélectionnez-la à nouveau.
 
-3. Le menu de **modification de votre \< nom \> de stratégie** s’affiche. Si vous cliquez sur **modifier** dans une section, vous pouvez accéder aux paramètres de cette section.
+3. Le menu volant **modifier \<name\> votre stratégie** apparaît. Si vous cliquez sur **modifier** dans une section, vous pouvez accéder aux paramètres de cette section.
 
    - Les étapes suivantes sont présentées dans l’ordre dans lequel les sections apparaissent, mais elles ne sont pas séquentielles (vous pouvez sélectionner et modifier les sections dans n’importe quel ordre).
 
-   - Une fois que vous avez cliqué sur **modifier** dans une section, les paramètres disponibles sont présentés dans un format d’Assistant, mais vous pouvez sauter les pages dans n’importe quel ordre, et vous pouvez cliquer sur **Enregistrer** sur n’importe quelle page (ou sur **Annuler** ou **Fermer** l' ![ icône ](../../media/scc-remove-icon.png) pour revenir à la page **modifier le \< nom \> ** de la stratégie (vous n’avez pas besoin d’accéder à la dernière page de l’Assistant
+   - Une fois que vous avez cliqué sur **modifier** dans une section, les paramètres disponibles sont présentés dans un format d’Assistant, mais vous pouvez sauter les pages dans n’importe quel ordre, et vous pouvez cliquer sur **Enregistrer** sur n’importe quelle page (ou sur **Annuler** ou **Fermer** l' ![ icône ](../../media/scc-remove-icon.png) pour revenir à la page **modifier votre stratégie \<name\> ** (vous n’avez pas besoin de consulter la dernière page de l’Assistant pour enregistrer ou quitter
 
 4. **Paramètre de stratégie**: cliquez sur **modifier** pour modifier les mêmes paramètres que ceux qui étaient disponibles lorsque vous avez [créé la stratégie](#use-the-security--compliance-center-to-create-anti-phishing-policies) dans la section précédente :
 
@@ -184,7 +184,7 @@ Utilisez les procédures suivantes pour modifier les stratégies de détection d
 
    Lorsque vous avez terminé, cliquez sur **Enregistrer** sur une page.
 
-6. Sur la page **modifier votre \< nom \> de stratégie** , vérifiez vos paramètres, puis cliquez sur **Fermer**.
+6. Sur la page **modifier votre stratégie \<Name\> ** , vérifiez vos paramètres, puis cliquez sur **Fermer**.
 
 ### <a name="use-the-security--compliance-center-to-modify-the-default-anti-phishing-policy"></a>Utiliser le centre de sécurité & conformité pour modifier la stratégie anti-hameçonnage par défaut
 
@@ -234,7 +234,7 @@ Pour modifier la priorité d’une stratégie, cliquez sur **augmenter la priori
 
 2. Sélectionnez la stratégie que vous souhaitez modifier. Si elle est déjà sélectionnée, désactivez-la et sélectionnez-la à nouveau.
 
-3. Le menu de **modification de votre \< nom \> de stratégie** s’affiche.
+3. Le menu volant **modifier \<name\> votre stratégie** apparaît.
 
    - La stratégie anti-hameçonnage personnalisée avec la valeur **Priority** de priorité **0** a uniquement le bouton **diminuer la priorité** disponible.
 
@@ -256,7 +256,7 @@ Pour modifier la priorité d’une stratégie, cliquez sur **augmenter la priori
 
    - Cliquez sur **stratégie par défaut** pour afficher la stratégie anti-hameçonnage par défaut.
 
-3. Le menu contextuel **modifier votre \< \> nom de stratégie** s’affiche, dans lequel vous pouvez afficher les paramètres et les valeurs.
+3. Le menu volant **modifier \<name\> votre stratégie** apparaît, dans lequel vous pouvez afficher les paramètres et les valeurs.
 
 ## <a name="use-the-security--compliance-center-to-remove-anti-phishing-policies"></a>Utiliser le centre de sécurité & conformité pour supprimer les stratégies de protection contre le hameçonnage
 
@@ -264,7 +264,7 @@ Pour modifier la priorité d’une stratégie, cliquez sur **augmenter la priori
 
 2. Sélectionnez la stratégie que vous souhaitez supprimer. Si elle est déjà sélectionnée, désactivez-la et sélectionnez-la à nouveau.
 
-3. Dans la fenêtre mobile **modifier \< le \> nom de la stratégie** qui s’affiche, cliquez sur **Supprimer la stratégie**, puis cliquez sur **Oui** dans la boîte de dialogue d’avertissement qui s’affiche.
+3. Dans le menu volant **modifier \<name\> votre stratégie** qui s’affiche, cliquez sur **Supprimer la stratégie**, puis cliquez sur **Oui** dans la boîte de dialogue d’avertissement qui s’affiche.
 
 Vous ne pouvez pas supprimer la stratégie par défaut.
 
@@ -288,7 +288,7 @@ La création d’une stratégie anti-hameçonnage dans PowerShell est un process
 
   - Créez la nouvelle stratégie comme désactivé (_activé_ `$false` sur la cmdlet **New-antiphishrule permet** ).
 
-  - Définir la priorité de la stratégie lors de la création ( _ \< numéro \> _de_priorité_ ) sur la cmdlet **New-antiphishrule permet** ).
+  - Définir la priorité de la stratégie lors de la création (_priorité_ _\<Number\>_ ) sur la cmdlet **New-antiphishrule permet** ).
 
 - Une nouvelle stratégie anti-hameçonnage que vous créez dans PowerShell n’est pas visible dans le centre de sécurité & de conformité tant que vous n’avez pas affecté la stratégie à une règle anti-hameçonnage.
 
@@ -507,7 +507,7 @@ Pour vérifier que vous avez bien configuré les stratégies anti-hameçonnage A
   - Sélectionnez la stratégie dans la liste, puis affichez les détails dans le menu volant.
   - Cliquez sur **stratégie par défaut** et affichez les détails dans le menu volant.
 
-- Dans Exchange Online PowerShell, remplacez \< name \> par le nom de la stratégie ou de la règle, puis exécutez la commande suivante et vérifiez les paramètres :
+- Dans Exchange Online PowerShell, remplacez \<Name\> par le nom de la stratégie ou de la règle, puis exécutez la commande suivante et vérifiez les paramètres :
 
   ```PowerShell
   Get-AntiPhishPolicy -Identity "<Name>"

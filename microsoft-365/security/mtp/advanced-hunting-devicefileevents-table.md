@@ -1,7 +1,7 @@
 ---
 title: Table DeviceFileEvents dans le schéma de chasse avancé
 description: En savoir plus sur les événements liés aux fichiers dans le tableau DeviceFileEvents du schéma de chasse avancé
-keywords: recherche avancée, recherche de menace, recherche sur les menaces de la cybercriminalité, protection contre les menaces Microsoft, Microsoft 365, MTP, M365, recherche, requête, télémétrie, référence de schéma, Kusto, table, colonne, type de données, description, filecreationevents, DeviceFileEvents, fichiers, chemin d’accès, hachage, SHA1, SHA256, MD5
+keywords: chasse de menace, recherche de menace, recherche de menace informatique, protection contre les menaces Microsoft, Microsoft 365, MTP, M365, recherche, requête, télémétrie, référence de schéma, Kusto, table, colonne, type de données, description, filecreationevents, DeviceFileEvents, fichiers, chemin, hachage, SHA1, SHA256, MD5
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
@@ -17,19 +17,17 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 07569b93244bd420fe5961e20e6951ea84ae47d7
-ms.sourcegitcommit: 74bf600424d0cb7b9d16b4f391aeda7875058be1
+ms.openlocfilehash: 4b815afbe8e3ca1f7967d13f6482b90f7c64e362
+ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42235033"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44617161"
 ---
 # <a name="devicefileevents"></a>DeviceFileEvents
 
 **S’applique à :**
 - Protection Microsoft contre les menaces
-
-
 
 Le `DeviceFileEvents` tableau du schéma de [chasse avancé](advanced-hunting-overview.md) contient des informations sur la création de fichiers, la modification et d’autres événements de système de fichiers. Utilisez cette référence pour créer des requêtes qui renvoient des informations de cette table.
 
@@ -44,7 +42,7 @@ Pour plus d’informations sur les autres tables du schéma de repérage avancé
 | `FileName` | string | Nom du fichier auquel l’action enregistrée a été appliquée |
 | `FolderPath` | string | Dossier contenant le fichier auquel l’action enregistrée a été appliquée |
 | `SHA1` | string | SHA-1 du fichier auquel l’action enregistrée a été appliquée |
-| `SHA256` | string | SHA-256 du fichier auquel l’action enregistrée a été appliquée. Ce champ n’est généralement pas rempli : utilisez la colonne SHA1 quand elle est disponible. |
+| `SHA256` | string | SHA-256 du fichier auquel l’action enregistrée a été appliquée. Ce champ n’est généralement pas rempli. Utilisez la colonne SHA1 lorsque celle-ci est disponible. |
 | `MD5` | string | Hachage MD5 du fichier auquel l’action enregistrée a été appliquée |
 | `FileOriginUrl` | string | URL à partir de laquelle le fichier a été téléchargé |
 | `FileOriginReferrerUrl` | string | URL de la page Web liée au fichier téléchargé |
@@ -54,6 +52,7 @@ Pour plus d’informations sur les autres tables du schéma de repérage avancé
 | `InitiatingProcessAccountSid` | string | Identificateur de sécurité (SID) du compte qui a exécuté le processus responsable de l’événement |
 | `InitiatingProcessMD5` | string | Hachage MD5 du processus (fichier image) à l’origine de l’événement |
 | `InitiatingProcessSHA1` | string | SHA-1 du processus (fichier image) à l’origine de l’événement |
+| `InitiatingProcessSHA256` | string | SHA-256 du processus (fichier image) à l’origine de l’événement. Ce champ n’est généralement pas rempli. Utilisez la colonne SHA1 lorsque celle-ci est disponible. |
 | `InitiatingProcessFolderPath` | string | Dossier contenant le processus (fichier image) à l’origine de l’événement |
 | `InitiatingProcessFileName` | string | Nom du processus à l’origine de l’événement |
 | `InitiatingProcessId` | int | ID de processus (PID) du processus à l’origine de l’événement |
@@ -64,6 +63,13 @@ Pour plus d’informations sur les autres tables du schéma de repérage avancé
 | `InitiatingProcessParentId` | int | ID de processus (PID) du processus parent qui a généré le processus responsable de l’événement |
 | `InitiatingProcessParentFileName` | string | Nom du processus parent qui a généré le processus responsable de l’événement |
 | `InitiatingProcessParentCreationTime` | DateHeure | Date et heure de démarrage du parent du processus responsable de l’événement |
+| `RequestProtocol` | string | Protocole réseau, le cas échéant, utilisé pour lancer l’activité : inconnu, local, SMB ou NFS |
+| `ShareName` | string | Nom du dossier partagé contenant le fichier |
+| `RequestSourceIP` | string | Adresse IPv4 ou IPv6 du périphérique distant qui a initié l’activité |
+| `RequestSourcePort` | string | Port source sur l’appareil distant qui a initié l’activité |
+| `RequestAccountName` | string | Nom d’utilisateur du compte utilisé pour lancer à distance l’activité |
+| `RequestAccountDomain` | string | Domaine du compte utilisé pour lancer à distance l’activité |
+| `RequestAccountSid` | string | Identificateur de sécurité (SID) du compte utilisé pour lancer à distance l’activité. |
 | `ReportId` | long | Identificateur d’événement basé sur un compteur extensible. Pour identifier les événements uniques, cette colonne doit être utilisée conjointement avec les colonnes DeviceName et timestamp |
 | `AppGuardContainerId` | string | Identificateur du conteneur virtualisé utilisé par application Guard pour isoler l’activité du navigateur |
 | `SensitivityLabel` | string | Étiquette appliquée à un message électronique, à un fichier ou à un autre contenu afin de le classer pour la protection des informations |

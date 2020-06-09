@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 description: Les administrateurs peuvent apprendre à acheminer le courrier indésirable vers les dossiers de courrier indésirable de l’utilisateur dans un environnement hybride Exchange Online Protection.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 1d5d83f8cfb994499be98eccf77b36d83e1f3d7c
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: dcfee309e532256a71511c3f6de019b22f5db093
+ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44351962"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44617053"
 ---
 # <a name="configure-standalone-eop-to-deliver-spam-to-the-junk-email-folder-in-hybrid-environments"></a>Configurer EOP autonome pour envoyer du courrier indésirable dans le dossier courrier indésirable dans des environnements hybrides
 
@@ -60,7 +60,7 @@ Cette rubrique décrit comment créer ces règles de flux de messagerie le centr
 
   - Si la règle de courrier indésirable est activée sur la boîte aux lettres (la valeur du paramètre _Enabled_ est $true sur la cmdlet [Set-MailboxJunkEmailConfiguration](https://docs.microsoft.com/powershell/module/exchange/set-mailboxjunkemailconfiguration) dans l’environnement de commande Exchange Management Shell). Il s’agit de la règle de courrier indésirable qui déplace le message vers le dossier courrier indésirable après la remise. Par défaut, la règle de courrier indésirable est activée sur les boîtes aux lettres. Pour plus d’informations, consultez la rubrique [Configure Exchange antispam settings on mailboxes](https://docs.microsoft.com/Exchange/antispam-and-antimalware/antispam-protection/configure-antispam-settings).
   
-- Pour ouvrir le centre d’administration Exchange sur un serveur Exchange, consultez la rubrique [Exchange Admin Center in Exchange Server](https://docs.microsoft.com/Exchange/architecture/client-access/exchange-admin-center). Pour ouvrir l’environnement de commande Exchange Management Shell, reportez-vous à [https://docs.microsoft.com/powershell/exchange/exchange-server/open-the-exchange-management-shell](https://docs.microsoft.com/powershell/exchange/exchange-server/open-the-exchange-management-shell) .
+- Pour ouvrir le centre d’administration Exchange sur un serveur Exchange, consultez la rubrique [Exchange Admin Center in Exchange Server](https://docs.microsoft.com/Exchange/architecture/client-access/exchange-admin-center). Pour ouvrir l’environnement de commande Exchange Management Shell, reportez-vous à [https://docs.microsoft.com/powershell/exchange/open-the-exchange-management-shell](https://docs.microsoft.com/powershell/exchange/open-the-exchange-management-shell) .
 
 - Pour plus d’informations sur les règles de flux de messagerie dans Exchange sur site, consultez les rubriques suivantes :
 
@@ -134,7 +134,7 @@ Pour vérifier que vous avez bien configuré EOP autonome pour envoyer du courri
 
 - Dans le centre d’administration Exchange, accédez à règles de **flux de messagerie** \> **Rules**, sélectionnez la règle, puis cliquez sur **modifier** ![ l’icône modifier ](../../media/ITPro-EAC-EditIcon.png) pour vérifier les paramètres.
 
-- Dans l’environnement de commande Exchange Management Shell, remplacez \< RuleName \> par le nom de la règle de flux de messagerie et RUL la commande suivante pour vérifier les paramètres :
+- Dans l’environnement de commande Exchange Management Shell, remplacez \<RuleName\> par le nom de la règle de flux de messagerie et RUL la commande suivante pour vérifier les paramètres :
 
   ```powershell
   Get-TransportRule -Identity "<RuleName>" | Format-List

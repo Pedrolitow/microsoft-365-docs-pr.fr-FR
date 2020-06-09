@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 003d7a74-3e16-4453-ae0c-9dbae51f66d1
 description: Les administrateurs peuvent apprendre à afficher et effectuer des recherches dans le journal d’audit de l’administrateur dans Exchange Online Protection (EOP) autonome.
-ms.openlocfilehash: b3f2f2601be1ce6e2120b60d23f617ae4e174e08
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: e8c12f622c4dc382b11d03424e45c33e3afe3cbf
+ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44351860"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44613323"
 ---
 # <a name="view-the-admin-audit-log-in-standalone-eop"></a>Afficher le journal d’audit de l’administrateur dans EOP autonome
 
@@ -32,7 +32,7 @@ Le journal d’audit de l’administrateur enregistre des actions spécifiques, 
 
 - Pour ouvrir le centre d’administration Exchange, consultez la rubrique [Exchange Admin Center in standalone EOP](exchange-admin-center-in-exchange-online-protection-eop.md).
 
-- Pour vous connecter à un service Exchange Online Protection PowerShell autonome, voir [Se connecter à Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell).
+- Pour vous connecter à un service Exchange Online Protection PowerShell autonome, voir [Se connecter à Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
 - Des autorisations doivent vous être attribuées avant de pouvoir exécuter ces procédures. Plus précisément, vous avez besoin du rôle journaux d’audit ou journaux d’audit en affichage seul, qui sont attribués aux groupes de rôles ComplianceManagement, OrganizationManagement (administrateurs globaux) et SecurityAdministrator par défaut. Pour plus d’informations, consultez la rubrique [autorisations dans EOP autonome](feature-permissions-in-eop.md) et utiliser le centre d’administration Exchange pour [modifier la liste des membres dans les groupes de rôles](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups).
 
@@ -86,7 +86,7 @@ Search-AdminAuditLog [-Cmdlets <Cmdlet1,Cmdlet2,...CmdletN>] [-Parameters <Param
 
   - Spécifier la valeur de date/heure au format UTC : par exemple, "06/05/2016 14:30:00z".
 
-  - Spécifiez la valeur date/heure sous la forme d’une formule qui convertit la date/l’heure de votre fuseau horaire local en heure UTC : par exemple, `(Get-Date "5/6/2016 9:30 AM").ToUniversalTime()` . Pour plus d’informations, consultez [Get-Date](https://go.microsoft.com/fwlink/p/?LinkID=113313).
+  - Spécifiez la valeur date/heure sous la forme d’une formule qui convertit la date/l’heure de votre fuseau horaire local en heure UTC : par exemple, `(Get-Date "5/6/2016 9:30 AM").ToUniversalTime()` . Pour plus d’informations, consultez [Get-Date](https://docs.microsoft.com/powershell/module/microsoft.powershell.utility/get-date).
 
 - L’applet de commande renvoie un maximum de 1 000 entrées de journal par défaut. Utilisez le paramètre _result_ pour spécifier jusqu’à 250 000 entrées de journal. Vous pouvez utiliser la valeur `Unlimited` pour renvoyer toutes les entrées.
 
