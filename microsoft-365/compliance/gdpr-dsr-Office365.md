@@ -1,5 +1,5 @@
 ---
-title: Demandes des personnes concernées en vertu du RGPD et du CCPA
+title: Demandes des personnes concernées pour Office 365 en vertu du RGPD et du CCPA
 description: Comprendre les droits d’utilisateur en vertu du RGPD et du CCPA et comment Office 365 permet aux entreprises de rechercher et de traiter des données en réponse à des DPC.
 keywords: Office 365, DPC, Microsoft 365, Microsoft 365 Éducation, documentation Microsoft 365, RGPD, CCPA
 localization_priority: Priority
@@ -15,14 +15,14 @@ ms.collection:
 - GDPR
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: 7e6f821cdc8712b11638cbb905b01b82af68e5ad
-ms.sourcegitcommit: ad789f1e7bf9c9dc0d45c731373e667a26ed30b1
+ms.openlocfilehash: bedce9c71e18749d6a394af17788e07ce79c2820
+ms.sourcegitcommit: a418195dc11e6251ae37e788c102bbaa7087e44e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44221428"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44579269"
 ---
-# <a name="data-subject-requests-for-the-gdpr-and-ccpa"></a>Demandes des personnes concernées pour le RGPD et le CCPA
+# <a name="office-365-data-subject-requests-for-the-gdpr-and-ccpa"></a>Demandes des personnes concernées pour Office 365 concernant le RGPD et le CCPA
 
 ## <a name="introduction-to-dsrs"></a>Présentation des DPC
 
@@ -1130,7 +1130,7 @@ Les sections suivantes expliquent comment utiliser les fonctionnalités intégr�
 Vous pouvez utiliser la recherche de contenu pour rechercher dans le site SharePoint Online associé à un Projet (lors de la création d’un projet, une option de création d’un site SharePoint Online associé est disponible). La recherche de contenu ne recherche pas dans les données d’un projet réel dans Microsoft Project Online, uniquement le site associé. Bien que la recherche de contenu recherche des métadonnées relatives aux projets, telles que les personnes mentionnées dans l’objet, ceci peut toutefois vous aider à trouver (et accéder) au projet qui contient les données relatives au DSR.
 
 >[!TIP]
->L’URL de la collection de sites de votre organisation où se trouvent les sites associés aux projets est **https://\<votre organisation\>.sharepoint.com/sites/pwa** ; par exemple, **https://contoso.sharepoint.com/pwa**. Vous pouvez utiliser cette collection de sites spécifique comme emplacement de votre recherche de contenu, puis utiliser le nom du projet dans la requête de recherche. En outre, un administrateur informatique peut utiliser la page Collections de sites dans le Centre d’administration SharePoint pour obtenir la liste des collections de sites Project Web App dans l’organisation.
+>L’URL de la collection de sites de votre organisation où se trouvent les sites associés aux projets est **https://\<your org\> ; sharepoint.com/sites/pwa** ; par exemple, **https://contoso.sharepoint.com/pwa**. Vous pouvez utiliser cette collection de sites spécifique comme emplacement de votre recherche de contenu, puis utiliser le nom du projet dans la requête de recherche. En outre, un administrateur informatique peut utiliser la page Collections de sites dans le Centre d’administration SharePoint pour obtenir la liste des collections de sites Project Web App dans l’organisation.
 
 #### <a name="delete"></a>Supprimer
 
@@ -1382,7 +1382,7 @@ Après avoir apporté ces modifications, vous pouvez exploiter les fonctionnalit
 
 Pour les messages, un utilisateur peut modifier un message donné pour corriger toutes les imprécisions. Il peut demander une liste de tous ses messages à un administrateur vérifié Yammer, puis cliquer sur un lien dans le fichier pour examiner chaque message.
 
-En ce qui concerne les fichiers, un utilisateur peut modifier un fichier donné pour corriger toutes les imprécisions. Il peut demander une liste de tous les fichiers qu’il a publiés à un administrateur vérifié de Yammer, puis accéder aux fichiers dans Yammer. Les fichiers sont exportés vers le dossier Fichiers et peuvent être affichés en recherchant le numéro du fichier. Par exemple, pour un fichier nommé 12345678.ppx dans l’exportation, utilisez la zone de recherche dans Yammer pour rechercher 1235678.ppx, ou consultez la page <strong>https://www.yammer.com/\<network\_name\>/\#/files/\<file\_number\></strong> ; par exemple, <strong>https://www.yammer.com/contosomkt.onmicrosoft.com/\#/files/12345678</strong>.
+En ce qui concerne les fichiers, un utilisateur peut modifier un fichier donné pour corriger toutes les imprécisions. Il peut demander une liste de tous les fichiers qu’il a publiés à un administrateur vérifié de Yammer, puis accéder aux fichiers dans Yammer. Les fichiers sont exportés vers le dossier Fichiers et peuvent être affichés en recherchant le numéro du fichier. Par exemple, pour un fichier nommé 12345678.ppx dans l’exportation, utilisez la zone de recherche dans Yammer pour rechercher 1235678.ppx, ou consultez <strong>https://www.yammer.com/\<network\_name\>/\#/files/\<file\_number\></strong> ; par exemple, <strong>https://www.yammer.com/contosomkt.onmicrosoft.com/\#/files/12345678</strong>.
 
 En ce qui concerne les données auxquelles l’utilisateur peut accéder via son profil et ses paramètres, l’utilisateur peut y apporter les modifications nécessaires.
 
@@ -1581,24 +1581,62 @@ La possibilité de restreindre ou de rectifier des données dans des journaux g�
 
 ### <a name="accessing-and-exporting-system-generated-logs"></a>Consultation et exportation des journaux générés par le système
 
-Le « Droit à la portabilité des données » permet à une personne concernée de demander une copie de ses données à caractère personnel dans un format électronique (c’est-à-dire un « format structuré, fréquemment utilisé, lisible par une machine et interopérable ») qui peut être transmis à un autre responsable du traitement des données. Azure prend cela en charge en permettant à votre organisation d’exporter les données au format JSON natif vers votre conteneur de stockage Azure spécifié.
+L’administrateur du client est la seule personne au sein de votre organisation qui peut accéder aux journaux générés par le système associé à l’utilisation des services et applications Office 365 par un utilisateur particulier. Les données récupérées pour une demande d’exportation seront fournies dans un format lisible par l’ordinateur et seront fournies dans des fichiers qui permettront à l’utilisateur de savoir à quels services les données sont associées. Comme indiqué ci-dessus, les données récupérées n’incluent pas de données susceptibles de compromettre la sécurité ou la stabilité du service.
+
+Pour accéder aux journaux générés par le système et les exporter :
+
+1. Connectez-vous au portail Azure et sélectionnez **Tous les services**.
+2. Tapez stratégie dans le filtre, puis sélectionnez **Stratégie**.
+3. Dans le volet **Stratégie**, sélectionnez **Confidentialité de l’utilisateur**, **Gérer les demandes utilisateur**, puis **Ajouter une demande d’exportation**.
+4. Terminez la **demande d’exportation des données** :
+
+    - **Utilisateur**. Tapez l’adresse e-mail de l’utilisateur Azure Active Directory qui a demandé l’exportation.
+    - **Abonnement**. Sélectionnez le compte que vous utilisez pour créer des rapports sur l’utilisation des ressources et facturer les services. Il s’agit également de l’emplacement de votre compte de stockage Azure.
+    - **Compte de stockage**. Sélectionnez l’emplacement de votre espace de stockage Azure (BLOB). Pour plus d’informations, voir l’article présentation de Stockage Microsoft Azure, stockage BLOB.
+    - **Conteneur**. Créez un conteneur (ou sélectionnez un conteneur existant) comme emplacement de stockage pour les données confidentielles exportées de l’utilisateur.
+
+5. Sélectionnez **Créer**.
+
+La demande d’exportation passe**en attente**. Vous pouvez afficher l’état du rapport dans la **rubrique confidentialité de l’utilisateur** > **Aperçu**.
 
 >[!IMPORTANT]
->Pour exporter des données utilisateur à partir du client, vous devez être un administrateur client.
+>Étant donné que les données personnelles peuvent provenir de plusieurs systèmes, il est possible que le processus d’exportation dure un mois.
 
-#### <a name="azure-active-directory"></a>Azure Active Directory
+### <a name="notify-about-exporting-or-deleting-issues"></a>Notification des problèmes d’exportation ou de suppression
 
-Pour des données client, Microsoft offre un portail et des expériences intégrées au produit permettant à l’administrateur client de l’entreprise cliente de gérer les demandes d’exportation d’informations identifiables sur un utilisateur final.
+Si vous rencontrez des problèmes lorsque vous exportez ou supprimez des données sur le portail Azure, accédez au panneau **Aide + Support** du portail Azure et envoyez un nouveau ticket sous **Gestion des abonnements** > **Autre demande de conformité et de sécurité** > **Confidentialité et demandes dans le cadre du RGPD**.
 
-#### <a name="service-specific-interfaces"></a>Interfaces propres au service
+>[!NOTE]
+ >Lorsque vous exportez des données à partir du portail Azure, les données générées par le système pour certaines applications ne sont pas exportées. Pour exporter des données pour ces applications, consultez[Étapes supplémentaires pour exporter les données des journaux générés par le système](https://docs.microsoft.com/microsoft-365/compliance/gdpr-system-generated-log-data).
 
-Microsoft permet de découvrir des données client directement via des interfaces de programmation d’applications (API) ou des interfaces utilisateur (UI) pré-existantes pour des services spécifiques. Vous trouverez des détails dans la documentation de référence des services respectifs, décrivant les opérations CRUD (créer, lire, mettre à jour, supprimer) applicables.
+Les éléments suivants récapitulent la consultation et l’exportation des journaux générés par le système :
+
+- **Combien de temps une demande d’exportation à l’aide du portail Azure prend-elle pour effectuer une demande ?**: cela peut dépendre de plusieurs facteurs. Dans la plupart des cas, l’exécution dure entre un et deux jours, mais elle peut prendre jusqu’à 30 jours.
+- **Quel format la sortie aura-t-elle ?** La sortie sera structurée sous forme de fichiers lisibles par machine, comme XML, CSV ou JSON.
+- **Qui a accès au portail Azure pour envoyer des demandes d’accès aux données générées par le système ?**  : les administrateurs généraux d’Office 365 ont accès au portail Azure.
+- **Quelles données sont renvoyées par les résultats d’exportation ?**: les résultats contiennent des journaux générés par le système que Microsoft stocke. Les données exportées englobent différents services Microsoft, dont Office 365, Azure et Dynamics. Les résultats ne contiennent pas de données susceptibles de compromettre la sécurité ou la stabilité du service.
+- **Comment les données sont-elles renvoyées à l’utilisateur ?**  : Les données sont exportées vers l’emplacement de stockage Azure de votre organisation ; les administrateurs de votre organisation doivent ensuite déterminer la façon dont ils souhaitent afficher/renvoyer ces données aux utilisateurs.
+- **De quoi ressembleront les données de journal générées par le système ?**  : vous trouverez ci-dessous des exemples de données au format JSON :
+
+    ```JSON
+    [{
+    "DateTime": "2017-04-28T12:09:29-07:00",
+    "AppName": "SharePoint",
+    "Action": "OpenFile",
+    "IP": "154.192.13.131",
+    "DevicePlatform": "Windows 1.0.1607"
+    }]
+    ```
+
+Il est également possible de récupérer des données d’utilisation des produits et services pour certains des services Microsoft les plus fréquemment utilisés, tels qu’Exchange Online, SharePoint Online, Skype Entreprise, Yammer et les groupes Office 365, en recherchant dans le journal d’audit Office 365 dans le Centre de conformité et sécurité. Pour plus d’informations, voir[utiliser l’outil de recherche dans le journal d’audit d’Office 365 dans les investigations DSR](#use-the-audit-log-search-tool-in-dsr-investigations) de l’annexe A. Le journal d’audit peut vous intéresser parce qu’il est possible d’attribuer des autorisations à d’autres membres de votre organisation (par exemple, comme officier de conformité) pour effectuer des recherches dans le journal d’audit afin d’accéder à ces données.
 
 ### <a name="deleting-system-generated-logs"></a>Suppression des journaux générés par le système
 
 Pour supprimer des journaux générés par le système et récupérés via une demande d’accès, vous devez supprimer l’utilisateur du service et supprimer définitivement son compte Azure Active Directory. Pour obtenir des instructions expliquant comment supprimer définitivement un utilisateur, consultez la section [Suppression d’un utilisateur](#deleting-a-user) de ce guide. Il est important de noter que la suppression définitive d’un compte d’utilisateur est irréversible une fois amorcée.
 
-La suppression définitive d’un compte d’utilisateur supprimera les données de l’utilisateur des journaux générés par le système, à l’exception des données qui peuvent compromettre la sécurité ou la stabilité du service, pour pratiquement tous les services Office 365 dans un délai de 30 jours. Une exception à cette constante est que la suppression définitive du compte d’utilisateur prend plus de 30 jours dans Exchange Online. Étant donné la nature critique du contenu Exchange Online et éviter la perte de données accidentelle. Le système a été conçu pour placer intentionnellement des données dans un état de conservation pendant 60 jours après la suppression définitive d’un compte d’utilisateur. Pour supprimer définitivement les données Exchange Online d’un utilisateur dans un délai de 30 jours, supprimez définitivement le compte d’utilisateur dans Azure Active Directory, puis contactez le [Support Microsoft](https://support.microsoft.com/) et demandez de faire en sorte que les données Exchange Online de l’utilisateur soient manuellement supprimées en dehors du processus de suppression planifiée. Pour plus d’informations, voir [Suppression de données Exchange Online](#removing-exchange-online-data), décrite précédemment dans ce guide.
+La suppression définitive d’un compte d’utilisateur supprimera les données de l’utilisateur des journaux générés par le système, à l’exception des données qui peuvent compromettre la sécurité ou la stabilité du service, pour pratiquement tous les services Office 365 dans un délai de 30 jours. 
+
+Une exception à cette période de 30 jours est que la suppression définitive du compte d’utilisateur dans Exchange Online prend plus de 30 jours. Cela est dû à la nature critique du contenu Exchange Online et à la protection contre la perte de données accidentelle. Exchange Online a été conçu pour placer intentionnellement des données dans un état de conservation pendant 60 jours après la suppression définitive d’un compte d’utilisateur. Pour supprimer définitivement les données Exchange Online d’un utilisateur dans un délai de 30 jours, supprimez définitivement le compte d’utilisateur dans Azure Active Directory, puis contactez le [Support Microsoft](https://support.microsoft.com/) et demandez de faire en sorte que les données Exchange Online de l’utilisateur soient manuellement supprimées en dehors du processus de suppression planifiée. Pour plus d’informations, voir [Suppression de données Exchange Online](#removing-exchange-online-data), décrite précédemment dans ce guide.
 
 La suppression d’un compte d’utilisateur ne supprime pas les journaux générées par le système pour Yammer et Kaizala. Pour supprimer les données de ces applications, voir une des opérations suivantes :
 
@@ -1607,11 +1645,11 @@ La suppression d’un compte d’utilisateur ne supprime pas les journaux géné
 
 #### <a name="national-clouds"></a>Clouds nationaux
 
-Un administrateur informatique général doit procéder comme suit pour supprimer les journaux générés par le système dans les clouds nationaux suivants :
+Un administrateur informatique général doit procéder comme suit pour exporter les données de journaux générés par le système dans les clouds nationaux suivants :
 
-- Office 365 Allemagne : lorsque le compte d’utilisateur est supprimé définitivement, les journaux générés par le système sont également supprimés. 
-- Office 365 Secteur Public : envoyez une demande au support Microsoft par le biais du [portail d’administration Office 365](https://portal.office365.us).
-- Office 365 géré par 21Vianet (Chine) : envoyez une demande au support Microsoft par le biais du portail d’administration Office 365 à cette [URL](https://portal.partner.microsoftonline.cn/AdminPortal/Home#/homepage). Accédez à **Commerce**, puis sélectionnez **Abonnement** -> **Confidentialité** -> **RGPD** et saisissez les informations requises.
+- **Office 365 Allemagne** : suivez les étapes ci-dessus.
+- **Office 365 Secteur Public** : [accédez au portail d’administration Office 365](https://portal.office365.us) et envoyez une demande au support Microsoft.
+- **Office 365 géré par 21Vianet (Chine)**  : [accédez au portail d’administration d’Office 365 géré par 21Vianet](https://portal.partner.microsoftonline.cn/AdminPortal/Home#/homepage) puis accédez à **Commerce** > **Abonnement** > **Confidentialité** > **RGPD** et saisissez les informations requises.
 
 ## <a name="part-4-additional-resources-to-assist-you-with-dsrs"></a>Partie 4 : Ressources supplémentaires pour vous aider avec les DSR
 

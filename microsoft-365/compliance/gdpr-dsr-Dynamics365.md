@@ -18,12 +18,12 @@ hideEdit: true
 ms.custom:
 - seo-marvel-mar2020
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: ec598816158068445f3f662bbdd6ea7c7edafd82
-ms.sourcegitcommit: e55e4747d3b838baacab8985aefc24aac245c431
+ms.openlocfilehash: e8a13821aaec16f66546f78be69394222ad5d41c
+ms.sourcegitcommit: a418195dc11e6251ae37e788c102bbaa7087e44e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44043326"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44579189"
 ---
 # <a name="dynamics-365-data-subject-requests-for-the-gdpr-and-ccpa"></a>Demandes des personnes concernées par le traitement des données pour Dynamics 365 concernant le RGPD et le CCPA
 
@@ -242,12 +242,9 @@ Le tableau suivant récapitule la consultation et l’exportation des journaux g
 |**Comment les données sont-elles renvoyées à l’utilisateur ?**| Les données sont exportées vers l’emplacement de stockage Azure de votre organisation. Les administrateurs de votre organisation doivent ensuite déterminer comment ils souhaitent afficher/renvoyer ces données aux utilisateurs. |
 |**À quoi ressemblent les données dans les journaux générés par le système ?**| Exemple d’enregistrement de journal généré par le système au format JSON : <br><br> "DateTime": "2017-04-28T12:09:29-07:00", <br> "AppName": "SharePoint", <br> "Action": "OpenFile", <br> "IP": "154.192.13.131", <br> "DevicePlatform": "Windows 1.0.1607" |
 
-> [!NOTE]
-> Certaines fonctionnalités empêchent d’exporter ou de supprimer des journaux générés par le système contenant des informations personnelles afin de préserver l’intégrité de ces informations pour des raisons de sécurité et d’audit.
-
 ### <a name="deleting-system-generated-logs"></a>Suppression des journaux générés par le système
 
-Pour supprimer les journaux générés par le système récupérés via une demande d’accès, vous devez supprimer l’utilisateur du service et supprimer définitivement son compte Azure Active Directory. Il est important de noter que la suppression définitive d’un compte d’utilisateur est irréversible une fois lancée. La suppression définitive d’un compte d’utilisateur supprime les données de l’utilisateur des journaux générés par le système pour pratiquement tous les services Dynamics 365 dans un délai de 30 jours.
+Pour supprimer les journaux générés par le système récupérés via une demande d’accès, vous devez supprimer l’utilisateur du service et supprimer définitivement son compte Azure Active Directory. Pour obtenir des instructions sur la suppression définitive d’un utilisateur, consultez la section [Étape 5 : supprimer](gdpr-dsr-azure.md#step-5-delete) dans la rubrique demandes d’objet Azure Data. Il est important de noter que la suppression définitive d’un compte d’utilisateur est irréversible une fois lancée. La suppression définitive d’un compte d’utilisateur supprimera les données de l’utilisateur des journaux générés par le système, à l’exception des données qui peuvent compromettre la sécurité ou la stabilité du service, pour pratiquement tous les services Dynamics 365 dans un délai de 30 jours.
 
 ## <a name="learn-more"></a>En savoir plus
 
