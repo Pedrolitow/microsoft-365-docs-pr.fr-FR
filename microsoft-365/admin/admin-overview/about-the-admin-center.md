@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: 758befc4-0888-4009-9f14-0d147402fd23
 description: Le centre d'administration vous permet de configurer votre organisation dans le cloud et gérer les utilisateurs et les abonnements. Tout d’abord, connectez-vous au compte avec des autorisations d’administrateur.
-ms.openlocfilehash: c5f061e8ffd8f545965483d8d318debea708bf2c
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 77799599dfd93525efe101f7dea02c5fc8408bbf
+ms.sourcegitcommit: 584e2e9db8c541fe32624acdca5e12ee327fdb63
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44386960"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44678647"
 ---
 # <a name="about-the-microsoft-365-admin-center"></a>À propos du Centre d’administration Microsoft 365
 
@@ -75,7 +75,7 @@ Les fonctionnalités et paramètres suivants sont disponibles dans la barre de n
   
 |**Menu**|**Objet**|
 |-----|-----|
-|**Accueil** <br/> |Il s’agit de la page d’accueil de la nouvelle version du centre d’administration. Vous allez découvrir comment gérer les utilisateurs, la facturation, l'état d'intégrité des services et les rapports.  <br/> |
+|**Accueil** <br/> |Il s’agit de la page d’accueil dans le centre d’administration. Vous allez découvrir comment gérer les utilisateurs, la facturation, l'état d'intégrité des services et les rapports.  <br/> |
 |**Utilisateurs** <br/> |Créer et gérer des utilisateurs dans votre organisation, tels que des employés ou des étudiants. Vous pouvez également définir leur niveau d’autorisation ou réinitialiser leur mot de passe.  <br/> |
 |**Groupes** <br/> |Créer et gérer des groupes dans votre organisation, tels qu’un groupe Microsoft 365, un groupe de distribution, un groupe de sécurité ou une boîte aux lettres partagée. Découvrez la [création](../create-groups/create-groups.md) et la [gestion](../create-groups/manage-groups.md) de groupes.  <br/> |
 |**Resources** <br/> |Créer et gérer des ressources (par exemple, collection de sites SharePoint). Découvrez comment [créer des collections de sites](https://docs.microsoft.com/sharepoint/create-site-collection).  <br/> |

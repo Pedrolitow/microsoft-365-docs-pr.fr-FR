@@ -19,16 +19,16 @@ search.appverid:
 - MET150
 - MOE150
 description: Déterminez les fonctionnalités et le contenu des nouveautés affichées ou masqués pour les utilisateurs finaux dans Office nouveautés de la gestion des applications de bureau Office.
-ms.openlocfilehash: 0723823e76be2baf15273d23ad343d91bcec8d60
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: d4d4ff24896555a4af0ae4a936840c9935d73813
+ms.sourcegitcommit: 584e2e9db8c541fe32624acdca5e12ee327fdb63
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399541"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44678601"
 ---
 # <a name="show-or-hide-new-features-using-whats-new-management"></a>Afficher ou masquer les nouvelles fonctionnalités à l’aide de nouveautés gestion
 
-Office What’s New Management for Win 32 permet à votre organisation de décider des fonctionnalités affichées ou masquées par les utilisateurs finaux dans l’application de bureau Office. Chaque version d’Office inclut des fonctionnalités nouvelles et améliorées, et l’aperçu du contenu vous permet d’afficher le nouveau contenu pour chaque version et canal de publication, et de choisir de masquer ou d’afficher le nouveau contenu pour chaque fonctionnalité pour les utilisateurs finaux. 
+Office What’s New Management for Windows permet à votre organisation de décider des fonctionnalités affichées ou masquées par les utilisateurs finaux dans l’application de bureau Office. Chaque version d’Office inclut des fonctionnalités nouvelles et améliorées, et l’aperçu du contenu vous permet d’afficher le nouveau contenu pour chaque version et canal de publication, et de choisir de masquer ou d’afficher le nouveau contenu pour chaque fonctionnalité pour les utilisateurs finaux. 
 
 Le contenu What’s New in the Office Desktop Apps met en évidence une liste organisée de nouvelles fonctionnalités publiées pour cette application, avec une brève description, et souvent une image ou une vidéo créée par l’équipe qui publie la fonctionnalité pour aider les clients à comprendre comment utiliser la fonctionnalité. 
 
@@ -41,7 +41,7 @@ Office What’s New Management est disponible dans le centre d’administration 
 
 Les administrateurs peuvent prévisualiser le contenu de What’s New pour un canal et gérer la version du contenu à l’aide d’Office What’s New Management.
 
-1. Dans le centre d’administration Microsoft 365, sous **paramètres**, sélectionnez **paramètres**.
+1. Dans le centre d’administration Microsoft 365, sous **paramètres**, sélectionnez **paramètres d’organisation**.
 
 2. Dans l’onglet **services** , sélectionnez **Office what’s New Management**.
 
@@ -59,11 +59,11 @@ Les nouvelles fonctionnalités apparaissent dans Office nouveautés en fonction 
 ||||
 |:-----|:-----|:-----|
 |**Canal** <br/> |**Dans l’aperçu de la gestion** <br/> |**Effectuer une action** <br/> |
-|**Tous les mois** <br/> |15 du mois  <br/> |1-3 semaines avant la publication mensuelle <br/> |
-|**Semi-annuel (ciblé)** <br/> |1er septembre et 1er mars <br/> | 2 semaines avant la version majeure qui offre de nouvelles fonctionnalités
-|**Semi-annuel** <br/> |1er janvier et 1er juillet <br/> | 2 semaines avant la version majeure qui offre de nouvelles fonctionnalités<br/> |
+|**Current** <br/> |15 du mois  <br/> |1-3 semaines avant la publication mensuelle <br/> |
+|**Entreprise semi-annuelle (préversion)** <br/> |1er septembre et 1er mars <br/> | 2 semaines avant la version majeure qui offre de nouvelles fonctionnalités
+|**Entreprise semi-annuelle** <br/> |1er janvier et 1er juillet <br/> | 2 semaines avant la version majeure qui offre de nouvelles fonctionnalités<br/> |
 
-Pour plus d’informations sur les planifications de mise à jour des canaux, consultez [l’historique des mises à jour pour les applications Microsoft 365 (classées par date)](https://docs.microsoft.com/officeupdates/update-history-office365-proplus-by-date).
+Pour plus d’informations sur les planifications de mise à jour des canaux, consultez [l’historique des mises à jour pour les applications Microsoft 365 (classées par date)](https://docs.microsoft.com/officeupdates/update-history-microsoft365-apps-by-date).
 
 ## <a name="related-articles"></a>Articles connexes
 

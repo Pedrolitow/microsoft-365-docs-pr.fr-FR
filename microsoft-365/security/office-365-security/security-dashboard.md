@@ -16,12 +16,12 @@ ms.assetid: fe0b9b8f-faa9-44ff-8095-4d1b2f507b74
 ms.collection:
 - M365-security-compliance
 description: Utilisez le nouveau tableau de bord de sécurité pour consulter l’état de protection contre les menaces d’Office 365, et afficher et agir sur les alertes de sécurité.
-ms.openlocfilehash: c18c25fcb35661ae8703a98ca0e83cdddc0a9f2e
-ms.sourcegitcommit: 86705d15231c987be2fcf5a295b9b6239fc46077
+ms.openlocfilehash: 6aedc0e499a489d7526737700ecc76deab9e6e32
+ms.sourcegitcommit: 584e2e9db8c541fe32624acdca5e12ee327fdb63
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "44566715"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44679131"
 ---
 # <a name="security-dashboard"></a>Tableau de bord de sécurité
 
@@ -48,13 +48,11 @@ Le widget gestion des menaces explique en un clin d’œil comment votre organis
 
 Les informations que vous verrez dans le résumé de gestion des menaces dépendent de ce que comprend l’abonnement. Le tableau suivant décrit les informations incluses pour Office 365 E3 et Office 365 E5.
 
-
-|Office 365 E3 |Office 365 E5 |
+|Office 365 E3|Office 365 E5|
 |---|---|
 |Messages malveillants bloqués<br/>Messages d’hameçonnage bloqués<br>Messages signalés par les utilisateurs<br><br><br><br>|Messages malveillants bloqués<br>Messages d’hameçonnage bloqués<br>Messages signalés par les utilisateurs<br>Blocage des programmes malveillants de jour zéro<br>Messages d’hameçonnage avancés détectés<br>URL malveillantes bloquées|
 
-
-Pour afficher ou accéder au widget Résumé de la gestion des menaces, vous devez disposer des autorisations permettant d’afficher les rapports de protection avancée contre les menaces. Pour en savoir plus, consultez [la rubrique Quelles autorisations sont requises pour afficher les rapports ATP ?](view-reports-for-atp.md#what-permissions-are-needed-to-view-the-atp-reports).
+Pour afficher ou accéder au widget Résumé de la gestion des menaces, vous devez disposer des autorisations permettant d’afficher les rapports de protection avancée contre les menaces. Pour en savoir plus, consultez [la rubrique Quelles autorisations sont requises pour afficher les rapports ATP ?](view-reports-for-atp.md#what-permissions-are-needed-to-view-the-atp-reports)
 
 ## <a name="threat-protection-status"></a>Statut de protection contre les menaces
 
@@ -69,7 +67,7 @@ Les détails varient selon que votre abonnement Microsoft 365 inclut ou non [Exc
 |EOP mais pas Office 365 ATP|Courrier électronique malveillant détecté et bloqué par EOP.<br><br> Consultez la rubrique [Threat Protection Status Report (EoP)](view-email-security-reports.md#threat-protection-status-report).|
 |Office 365 – Protection avancée contre les menaces|Contenu malveillant et courrier involontaire détecté et bloqué par EOP et Office 365 ATP<br><br>Nombre agrégé de messages électroniques uniques dont le contenu malveillant est bloqué par le moteur anti-programme malveillant, la [purge automatique avec suppression automatique des heures d’heure](zero-hour-auto-purge.md)et les fonctionnalités ATP (y compris les [liens fiables](atp-safe-links.md), [les pièces jointes fiables](atp-safe-attachments.md)et l' [anti-hameçonnage ATP](set-up-anti-phishing-policies.md#exclusive-settings-in-atp-anti-phishing-policies)).<br><br>Consultez la rubrique [Threat Protection Status Report (ATP)](view-reports-for-atp.md#threat-protection-status-report).|
 
-Pour afficher ou accéder au widget d’État protection contre les menaces, vous devez disposer des autorisations permettant d’afficher les rapports de protection avancée contre les menaces. Pour en savoir plus, consultez [la rubrique Quelles autorisations sont requises pour afficher les rapports ATP ?](view-reports-for-atp.md#what-permissions-are-needed-to-view-the-atp-reports).
+Pour afficher ou accéder au widget d’État protection contre les menaces, vous devez disposer des autorisations permettant d’afficher les rapports de protection avancée contre les menaces. Pour en savoir plus, consultez [la rubrique Quelles autorisations sont requises pour afficher les rapports ATP ?](view-reports-for-atp.md#what-permissions-are-needed-to-view-the-atp-reports)
 
 ## <a name="global-weekly-threat-detections"></a>Détections de menaces hebdomadaires globales
 
@@ -79,13 +77,12 @@ Le widget détections de menaces globales hebdomadaires indique le nombre de men
 
 Les mesures sont calculées de la manière décrite dans le tableau suivant :
 
-|Métrique|Mode de calcul |
+|Métrique|Mode de calcul|
 |---|---|
 |Messages analysés|Nombre de messages électroniques analysés multiplié par le nombre de destinataires|
 |Menaces arrêtées|Nombre de messages électroniques identifiés comme contenant des programmes malveillants multiplié par le nombre de destinataires|
 |Bloqué par [la](office-365-atp.md) protection avancée contre les menaces|Nombre de messages électroniques bloqués par la protection avancée contre les menaces multiplié par le nombre de destinataires|
 |Supprimés après la remise|Nombre de messages supprimés par [purge automatique 0 heure](zero-hour-auto-purge.md) multiplié par le nombre de destinataires|
-
 
 ## <a name="malware"></a>Programme malveillant
 

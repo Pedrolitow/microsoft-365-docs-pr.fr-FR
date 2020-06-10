@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Découvrez comment les utilisateurs utilisent les étiquettes de confidentialité dans les applications Office pour le bureau, les applications Office pour mobile et les applications Office pour le Web. Découvrez les applications qui prennent en charge les étiquettes de sensibilité.
-ms.openlocfilehash: 7d37eae65775a79ef49db6c7d13d2ce0d2965acb
-ms.sourcegitcommit: e9cb10d0d617742a5040d7c09d1d36fd1ee25e5d
+ms.openlocfilehash: 8feb8fc70277e502c5bbb321c864e4cd022ad725
+ms.sourcegitcommit: 03da5464943ef4b9a51644601a229897955dcbb2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 06/09/2020
-ms.locfileid: "44649383"
+ms.locfileid: "44658347"
 ---
 # <a name="use-sensitivity-labels-in-office-apps"></a>Utiliser les étiquettes de confidentialité dans les applications Office
 
@@ -42,6 +42,9 @@ Pour chaque fonctionnalité, les tableaux suivants répertorient la version mini
 
 De nouvelles versions des applications sont disponibles à différents moments pour différents canaux de mise à jour. Pour plus d’informations, notamment sur la configuration de votre canal de mise à jour afin de pouvoir tester une nouvelle fonctionnalité d’étiquetage qui vous intéresse, reportez-vous à la rubrique [vue d’ensemble des canaux de mise à jour pour les applications Microsoft 365](https://docs.microsoft.com/DeployOffice/overview-update-channels). Les nouvelles fonctionnalités de la préversion privée ne sont pas incluses dans le tableau, mais vous pouvez participer à ces aperçus en décrivant votre organisation pour le [programme d’évaluation privée de la protection des informations Microsoft](https://aka.ms/mip-preview).
 
+> [!NOTE]
+> Les noms des canaux de mise à jour pour les applications Office ont récemment changé. Par exemple, le canal mensuel est désormais le canal actuel et Office Insider est désormais un canal bêta. Pour plus d’informations, consultez la rubrique [modifications apportées aux canaux de mise à jour pour les applications Microsoft 365](https://docs.microsoft.com/deployoffice/update-channels-changes).
+
 Des fonctionnalités supplémentaires sont disponibles lorsque vous installez le client d’étiquetage unifié Azure information protection, qui s’exécute sur des ordinateurs Windows uniquement. Pour plus d’informations, reportez-vous à [la rubrique comparer les clients d’étiquetage pour les ordinateurs Windows](https://docs.microsoft.com/azure/information-protection/rms-client/use-client#compare-the-labeling-clients-for-windows-computers).
 
 ### <a name="sensitivity-label-capabilities-in-word-excel-and-powerpoint"></a>Fonctionnalités d’étiquette de sensibilité dans Word, Excel et PowerPoint
@@ -56,10 +59,10 @@ Pour iOS et Android : lorsqu’une version minimale est indiquée, la fonctionn
 |[Fournir un lien aide vers une page d’aide personnalisée](sensitivity-labels.md#what-label-policies-can-do)                       | 1910+          | 16.21 +     | 2.21+ | 16.0.11231+ | [Oui-opt-in](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[Marquer le contenu](sensitivity-labels.md#what-sensitivity-labels-can-do)                                              | 1910+          | 16.21 +     | 2.21+ | 16.0.11231+ | [Oui-opt-in](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[Attribuer des autorisations maintenant](encryption-sensitivity-labels.md#assign-permissions-now)                                 | 1910+          | 16.21 +     | 2.21+ | 16.0.11231+ | [Oui-opt-in](sensitivity-labels-sharepoint-onedrive-files.md) |
-|[Permettre aux utilisateurs d’attribuer des autorisations](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | [Canal mensuel](https://docs.microsoft.com/DeployOffice/overview-update-channels#monthly-channel-for-microsoft-365-apps) (2003 +) | [Canal mensuel](https://docs.microsoft.com/DeployOffice/overview-update-channels#monthly-channel-for-microsoft-365-apps) (16.35 +)   | En cours de révision   | En cours de révision         | En cours de révision                                                        |
+|[Permettre aux utilisateurs d’attribuer des autorisations](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | [Canal actuel](https://docs.microsoft.com/deployoffice/overview-update-channels#current-channel-overview) (2003 +) | 16.35 +   | En cours de révision   | En cours de révision         | En cours de révision                                                        |
 |[Afficher l’utilisation des étiquettes avec l’analyse d’étiquette et l'](label-analytics.md) envoi de données pour les administrateurs                      | En cours de révision            | En cours de révision        | En cours de révision   | En cours de révision         | En cours de révision                                                        |
 |[Demander aux utilisateurs d’appliquer une étiquette à leurs courriers électroniques et documents](sensitivity-labels.md#what-label-policies-can-do)   | En cours de révision            | En cours de révision        | En cours de révision   | En cours de révision         | En cours de révision                                                        |
-|[Appliquer automatiquement une étiquette de confidentialité à du contenu](apply-sensitivity-label-automatically.md)                    | Aperçu : dans [Office Insider](https://office.com/insider)                                  | En cours de révision | En cours de révision | En cours de révision | [Oui-opt-in](sensitivity-labels-sharepoint-onedrive-files.md) |
+|[Appliquer automatiquement une étiquette de confidentialité à du contenu](apply-sensitivity-label-automatically.md)                    | Aperçu : dans le [canal bêta](https://office.com/insider)                                  | En cours de révision | En cours de révision | En cours de révision | [Oui-opt-in](sensitivity-labels-sharepoint-onedrive-files.md) |
 |Prise en charge de l' [enregistrement automatique](https://support.office.com/article/6d6bd723-ebfd-4e40-b5f6-ae6e8088f7a5) et de la [co-création](https://support.office.com/article/ee1509b4-1f6e-401e-b04a-782d26f564a4) sur des documents étiquetés et protégés | En cours de révision | En cours de révision | En cours de révision | En cours de révision | [Oui-opt-in](sensitivity-labels-sharepoint-onedrive-files.md) |
 |
 
@@ -76,7 +79,7 @@ Pour iOS et Android : lorsqu’une version minimale est indiquée, la fonctionn
 |[Permettre aux utilisateurs d’attribuer des autorisations](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | 1910+                     | 16.21 +                 | 4.7.1 +         | 4.0.39 +           | Oui               |
 |[Afficher l’utilisation des étiquettes avec l’analyse d’étiquette et l'](label-analytics.md) envoi de données pour les administrateurs                      | En cours de révision                       | En cours de révision                    | En cours de révision           | En cours de révision               | En cours de révision               |
 |[Demander aux utilisateurs d’appliquer une étiquette à leurs courriers électroniques et documents](sensitivity-labels.md#what-label-policies-can-do)   | En cours de révision                       | En cours de révision                    | En cours de révision           | En cours de révision               | En cours de révision               |
-|[Appliquer automatiquement une étiquette de confidentialité à du contenu](apply-sensitivity-label-automatically.md)                    | Aperçu : déploiement vers [Office Insider](https://office.com/insider)                       | En cours de révision                    | En cours de révision           | En cours de révision               | Oui |
+|[Appliquer automatiquement une étiquette de confidentialité à du contenu](apply-sensitivity-label-automatically.md)                    | Aperçu : déploiement vers le [canal bêta](https://office.com/insider)                       | En cours de révision                    | En cours de révision           | En cours de révision               | Oui |
 |
 
 ## <a name="office-built-in-labeling-client-and-other-labeling-solutions"></a>Client d’étiquetage Office intégré et autres solutions d’étiquetage
@@ -185,7 +188,7 @@ En plus de restreindre l’accès aux utilisateurs de votre organisation, vous p
 
 Si les utilisateurs externes n’ont pas de compte dans Azure Active Directory, vous pouvez créer un compte invité pour ceux-ci dans votre client. Pour leur adresse de messagerie, vous pouvez spécifier n’importe quelle adresse de messagerie déjà utilisée. Par exemple, son adresse Gmail. Ce compte d’invité peut également être utilisé pour accéder à un document partagé dans SharePoint ou OneDrive lorsque vous avez [activé les étiquettes de sensibilité pour les fichiers Office dans SharePoint et onedrive](sensitivity-labels-sharepoint-onedrive-files.md).
 
-Les utilisateurs externes peuvent également utiliser et créer un compte Microsoft pour les documents chiffrés lorsqu’ils utilisent des applications Microsoft 365 ([applications Office 365](https://docs.microsoft.com/deployoffice/name-change)) sur Windows. Cette fonctionnalité n’est pas encore prise en charge pour MacOS, Android ou iOS. Par exemple, une personne partage un document chiffré avec elle, et les paramètres de chiffrement spécifient leur adresse de messagerie Gmail. Cet utilisateur peut créer son propre compte Microsoft qui utilise son adresse de messagerie Gmail. Ensuite, une fois connecté avec ce compte, il peut ouvrir le document et le modifier, en fonction des restrictions d’utilisation spécifiées pour cet utilisateur. Pour un exemple de procédure pas à pas de ce scénario, voir [ouverture et modification du document protégé](https://docs.microsoft.com/azure/information-protection/secure-collaboration-documents#opening-and-editing-the-protected-document).
+Les utilisateurs externes peuvent également utiliser et créer un compte Microsoft pour les documents chiffrés lorsqu’ils utilisent les applications Microsoft 365 ([anciennement applications Office 365](https://docs.microsoft.com/deployoffice/name-change)) sur Windows. Cette fonctionnalité n’est pas encore prise en charge pour MacOS, Android ou iOS. Par exemple, une personne partage un document chiffré avec elle, et les paramètres de chiffrement spécifient leur adresse de messagerie Gmail. Cet utilisateur peut créer son propre compte Microsoft qui utilise son adresse de messagerie Gmail. Ensuite, une fois connecté avec ce compte, il peut ouvrir le document et le modifier, en fonction des restrictions d’utilisation spécifiées pour cet utilisateur. Pour un exemple de procédure pas à pas de ce scénario, voir [ouverture et modification du document protégé](https://docs.microsoft.com/azure/information-protection/secure-collaboration-documents#opening-and-editing-the-protected-document).
 
 > [!NOTE]
 > L’adresse de messagerie du compte Microsoft doit correspondre à l’adresse de messagerie spécifiée pour limiter l’accès aux paramètres de chiffrement.

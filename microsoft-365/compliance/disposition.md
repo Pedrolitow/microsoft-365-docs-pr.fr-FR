@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Surveiller et gérer la suppression du contenu, que vous utilisiez une révision de disposition ou que le contenu soit automatiquement supprimé en fonction des paramètres que vous avez configurés.
-ms.openlocfilehash: 07790175d56db9b82610b4882070a54ddce3d0c2
-ms.sourcegitcommit: 8a15038a6ac16f41f6b90af52e367f888104cec9
+ms.openlocfilehash: 8936289ccf42fa50b78b611c46742710cd035727
+ms.sourcegitcommit: 584e2e9db8c541fe32624acdca5e12ee327fdb63
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44156889"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44678990"
 ---
 # <a name="disposition-of-content"></a>Disposition de contenu
 
@@ -35,7 +35,7 @@ Pour gérer les révisions de disposition et vérifier que les enregistrements o
 
 ### <a name="permissions-for-disposition"></a>Autorisations pour la disposition
 
-Pour accéder à l’onglet **disposition** dans le centre de conformité Microsoft 365, vous devez être membre du rôle **gestion** de la disposition et du rôle **journaux d’audit en affichage seul** . Nous vous recommandons de créer un nouveau groupe de rôles appelé **Relecteurs de disposition**et d’ajouter ces deux rôles à ce groupe de rôles. 
+Pour accéder à l’onglet **disposition** dans le centre de conformité Microsoft 365, vous devez être membre du rôle **gestion** de la disposition et du rôle **journaux d’audit en affichage seul** . Nous vous recommandons de créer un nouveau groupe de rôles appelé **Relecteurs de disposition**et d’ajouter ces deux rôles à ce groupe de rôles. Même si vous êtes un utilisateur d' **administrateur global** , vous devez faire partie du rôle de **gestion de disposition** pour que vous pouvez accéder à l’onglet disposition.
 
 Spécifique au rôle **journaux d’audit en affichage seul** :
 
@@ -43,11 +43,11 @@ Spécifique au rôle **journaux d’audit en affichage seul** :
 
 - Les groupes Microsoft 365 ([anciennement groupes Office 365](https://techcommunity.microsoft.com/t5/microsoft-365-blog/office-365-groups-will-become-microsoft-365-groups/ba-p/1303601)) ne sont pas pris en charge pour ce rôle. Attribuez plutôt des boîtes aux lettres utilisateur, des utilisateurs de messagerie ou des groupes de sécurité à extension messagerie.
 
-Pour obtenir des instructions permettant d’accorder aux utilisateurs le rôle de **gestion de disposition** et de créer votre rôle de **réviseur de disposition** , consultez la rubrique accorder aux utilisateurs l' [accès au centre de sécurité &amp; conformité Office 365](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
+Pour obtenir des instructions permettant d’accorder aux utilisateurs le rôle de **gestion de disposition** et de créer votre rôle de **réviseur de disposition** , consultez la rubrique accorder aux utilisateurs l' [accès au &amp; Centre de sécurité conformité Office 365](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
 
 ### <a name="enable-auditing"></a>Activer l’audit
 
-Assurez-vous que l’audit est activé au moins un jour avant la première action de disposition. Pour plus d’informations, consultez la rubrique relative [à la recherche dans le &amp; journal d’audit dans le centre de sécurité conformité Office 365](search-the-audit-log-in-security-and-compliance.md). 
+Assurez-vous que l’audit est activé au moins un jour avant la première action de disposition. Pour plus d’informations, consultez la rubrique relative [à la recherche dans le journal d’audit dans le centre de sécurité &amp; conformité Office 365](search-the-audit-log-in-security-and-compliance.md). 
 
 ## <a name="disposition-reviews"></a>Révisions avant destruction
 

@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 296a02bd-ebde-4022-900e-547acf38ddd7
 description: Vous pouvez créer une boîte aux lettres inactive dans Microsoft 365 en appliquant une stratégie de conservation ou de rétention à la boîte aux lettres, puis en supprimant le compte d’utilisateur correspondant. Les éléments d’une boîte aux lettres inactive sont conservés pendant la durée de la conservation ou de la stratégie de rétention qui lui a été appliquée avant qu’elle ne soit devenue inactive. Pour supprimer définitivement une boîte aux lettres inactive, supprimez simplement la stratégie de conservation ou de rétention.
-ms.openlocfilehash: bf8539ad8cfdd0170d17b490e7cfeaee8e0bd789
-ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
+ms.openlocfilehash: 76205e0f0504d647f4968afcf9ae2f75b2664a01
+ms.sourcegitcommit: 584e2e9db8c541fe32624acdca5e12ee327fdb63
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "44166085"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44679098"
 ---
 # <a name="create-and-manage-inactive-mailboxes"></a>Créer et gérer des boîtes aux lettres inactives
 
@@ -34,7 +34,7 @@ Microsoft 365 vous permet de conserver le contenu des boîtes aux lettres suppri
   
 ## <a name="before-you-begin"></a>Avant de commencer
 
-- Pour désactiver une boîte aux lettres, une licence Exchange Online plan 2 doit lui être attribuée afin qu’une conservation pour litige ou une stratégie de rétention puissent être appliquées à la boîte aux lettres avant sa suppression. Les licences Exchange Online plan 2 font partie d’un abonnement Office 365 entreprise E3 et E5. Si une boîte aux lettres est affectée à une licence Exchange Online plan 1 ou Exchange Online Kiosk (qui fait respectivement partie d’un abonnement Office 365 E1 et F1), vous devez lui attribuer une licence d’archivage Exchange Online distincte de sorte qu’une conservation puisse être appliquée à la boîte aux lettres avant d’être supprimée. Pour plus d'informations, consultez la page [Archivage Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=286153).
+- Pour désactiver une boîte aux lettres, vous devez lui avoir affecté une licence Exchange Online plan 2 de sorte qu’une conservation pour litige ou une stratégie de rétention puissent être appliquées à la boîte aux lettres avant sa suppression. Les licences Exchange Online plan 2 font partie d’un abonnement Office 365 entreprise E3 et E5. Si une boîte aux lettres est affectée à une licence Exchange Online plan 1 ou Exchange Online Kiosk (qui fait respectivement partie d’un abonnement Office 365 E1 et F1), vous devez lui attribuer une licence d’archivage Exchange Online distincte de sorte qu’une conservation puisse être appliquée à la boîte aux lettres avant d’être supprimée. Pour plus d'informations, consultez la page [Archivage Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=286153).
 
 - Les licences associées à la boîte aux lettres Exchange Online supprimée seront disponibles une fois que vous aurez supprimé le compte d’utilisateur correspondant. Vous pouvez ensuite [attribuer ces licences à un autre utilisateur](https://docs.microsoft.com/microsoft-365/admin/add-users/add-users). 
 
@@ -75,9 +75,9 @@ Pour afficher la liste des boîtes aux lettres inactives dans votre organisation
   
 1. Accédez à [https://protection.office.com](https://protection.office.com) et connectez-vous à l'aide des informations d'identification d'un compte administrateur dans votre organisation. 
     
-2. Cliquez sur**rétention**de **gouvernance** > des informations.
+2. Cliquez **Information governance**sur  >  **rétention**de gouvernance des informations.
     
-3. Sur la page **rétention** , cliquez sur **autres**![barres](../media/9723029d-e5cd-4740-b5b1-2806e4f28208.gif)d’ellipse de la barre de navigation, puis cliquez sur **boîtes aux lettres inactives**.
+3. Sur la page **rétention** , cliquez sur **autres** ![ barres d’ellipse de la barre de navigation, puis ](../media/9723029d-e5cd-4740-b5b1-2806e4f28208.gif) cliquez sur **boîtes aux lettres inactives**.
     
     ![Sur la page rétention, cliquez sur autres, puis cliquez sur boîtes aux lettres inactives pour afficher la liste des boîtes aux lettres inactives.](../media/761bd90c-3e37-48f9-b1b9-479e90fea267.png)
   
@@ -91,7 +91,7 @@ Vous pouvez également exécuter la commande suivante dans Exchange Online Power
  Get-Mailbox -InactiveMailboxOnly | FT DisplayName,PrimarySMTPAddress,WhenSoftDeleted
 ```
 
-Vous pouvez cliquer ![sur Exporter les résultats](../media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) de la recherche **Exporter** pour afficher ou télécharger un fichier csv contenant des informations supplémentaires sur les boîtes aux lettres inactives dans votre organisation. 
+Vous pouvez cliquer sur Exporter ![ les résultats de la recherche ](../media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) **Exporter** pour afficher ou télécharger un fichier csv contenant des informations supplémentaires sur les boîtes aux lettres inactives dans votre organisation. 
   
 Vous pouvez également exécuter la commande suivante pour exporter la liste des boîtes aux lettres inactives et d’autres informations dans un fichier CSV. Dans cet exemple, le fichier CSV est créé dans le répertoire actif.
 
@@ -112,7 +112,7 @@ Vous pouvez accéder au contenu de la boîte aux lettres inactive à l’aide de
     
 Voici quelques éléments à prendre en considération lors de la recherche de boîtes aux lettres inactives.
   
-- Si une recherche de contenu inclut une boîte aux lettres utilisateur et que celle-ci est devenue inactive, la recherche de contenu continue à rechercher dans la boîte aux lettres inactive lorsque vous relancez la recherche après qu’elle a été inactive.
+- Si une recherche de contenu inclut une boîte aux lettres utilisateur et que cette boîte aux lettres est devenue inactive, la recherche de contenu continue de rechercher la boîte aux lettres inactive lorsque vous réexécutez la recherche après qu’elle devient inactive.
     
 - Dans certains cas, un utilisateur peut avoir une boîte aux lettres active et une boîte aux lettres inactive possédant la même adresse SMTP. Dans ce cas, seule la boîte aux lettres spécifique que vous sélectionnez comme emplacement pour une recherche de contenu fera l’objet d’une recherche. En d’autres termes, si vous ajoutez la boîte aux lettres d’un utilisateur à une recherche, vous ne pouvez pas supposer que leurs boîtes aux lettres actives et inactives seront recherchées ; seule la boîte aux lettres que vous ajoutez explicitement à la recherche sera recherchée.
     

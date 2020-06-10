@@ -15,12 +15,12 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Découvrez les documents sûrs dans Office 365 dav.
-ms.openlocfilehash: 40554365cf41ac37b9f9b8399b10dc8f6ab81f42
-ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
+ms.openlocfilehash: e9b1fadd3e9e6dab337a0c3ded380c5c49f53bab
+ms.sourcegitcommit: 584e2e9db8c541fe32624acdca5e12ee327fdb63
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44617285"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44678669"
 ---
 # <a name="safe-documents-in-office-365-advanced-threat-protection"></a>Documents fiables dans Office 365 - Protection avancée contre les menaces
 
@@ -30,7 +30,7 @@ La fonctionnalité documents approuvés est une fonctionnalité d’Office 365 p
 
 - Cette fonctionnalité est disponible uniquement pour les utilisateurs disposant de la licence de sécurité Microsoft 365 E5 ou Microsoft 365 E5.
 
-- Les documents approuvés sont actuellement disponibles pour la préversion publique, disponibles pour les utilisateurs qui font partie du [programme Office Insider](https://insider.office.com/en-us/join) sur le canal mensuel (ciblé) avec Office version 2002 (12527,20092) ou supérieur. Cette fonctionnalité est désactivée par défaut et doit être activée par l’administrateur de la sécurité.
+- Les documents approuvés sont actuellement disponibles pour la préversion publique, disponibles pour les utilisateurs qui font partie du [programme Office Insider](https://insider.office.com/en-us/join) sur le canal actuel (aperçu) avec Office version 2002 (12527,20092) ou supérieur. Cette fonctionnalité est désactivée par défaut et doit être activée par l’administrateur de la sécurité.
 
 - Pour vous connecter à Exchange Online PowerShell, voir [Connexion à Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell). Pour vous connecter à un service Exchange Online Protection PowerShell autonome, voir [Se connecter à Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
 

@@ -14,12 +14,12 @@ ms.collection: M365-identity-device-management
 ms.custom: Ent_TLGs
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
 description: Utilisez ce guide de laboratoire de test pour ajouter des stratégies de conformité d’appareil Intune à votre environnement de test Microsoft 365 Enterprise.
-ms.openlocfilehash: 4324ccca761e504812edc210ee6b6abdc484b670
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 5ef39310ff74e5d5a38e8a5dd8c7ca24a126af58
+ms.sourcegitcommit: 584e2e9db8c541fe32624acdca5e12ee327fdb63
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631584"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44679025"
 ---
 # <a name="device-compliance-policies-for-your-microsoft-365-enterprise-test-environment"></a>Stratégies de conformité des appareils pour votre environnement de test Microsoft 365 Enterprise
 
@@ -46,9 +46,9 @@ Si vous souhaitez configurer des stratégies MAM dans une entreprise simulée, s
 
 Au cours de cette phase, vous allez créer une stratégie de conformité des appareils pour les appareils Windows 10.
   
-1. Accédez au portail Office 365 à l’adresse[https://portal.office.com](https://portal.office.com)() et connectez-vous à votre abonnement de laboratoire de test Office 365 avec votre compte d’administrateur général.
+1. Accédez au portail Office 365 à l’adresse ( [https://portal.office.com](https://portal.office.com) ) et connectez-vous à votre abonnement de laboratoire de test office 365 avec votre compte d’administrateur général.
     
-2. Dans un nouvel onglet de votre navigateur, ouvrez le portail Azure à [https://portal.azure.com](https://portal.azure.com)l’adresse.
+2. Dans un nouvel onglet de votre navigateur, ouvrez le portail Azure à l’adresse [https://portal.azure.com](https://portal.azure.com) .
 
 3. Dans l’onglet portail Azure de votre navigateur, saisissez **Intune** dans la zone de recherche, puis cliquez sur **Intune**.
     
@@ -87,7 +87,7 @@ Cliquez sur OK.
 
 20. Dans le volet **Ajouter une application** , sélectionnez Paramètres de la suite d' **applications**.
 
-21. Pour **canal de mise à jour**, sélectionnez **semi-annuel**, puis cliquez sur **OK**.
+21. Pour **canal de mise à jour**, sélectionnez **entreprise semi-annuelle**, puis cliquez sur **OK**.
 
 22. Dans le volet **Ajouter une application** , cliquez sur **Ajouter**.
 
@@ -97,7 +97,7 @@ Vous disposez maintenant d’une stratégie de conformité de l’appareil pour 
 
 Explorez les fonctionnalités supplémentaires de [gestion des appareils mobiles](m365-enterprise-test-lab-guides.md#mobile-device-management) dans votre environnement de test.
 
-## <a name="see-also"></a>Voir également
+## <a name="see-also"></a>Voir aussi
 
 [Guides de laboratoire de test Microsoft 365 Enterprise](m365-enterprise-test-lab-guides.md).
   

@@ -24,12 +24,12 @@ search.appverid:
 - MOE150
 ms.assetid: 5bc3f460-13cc-48c0-abd6-b80bae72d04a
 description: Découvrez comment réinitialiser vos mots de passe à l’aide de l’outil de réinitialisation du mot de passe libre-service.
-ms.openlocfilehash: 21bcbbbd5ef2167b04b8da6db437c528b5fab0c5
-ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
+ms.openlocfilehash: 40f094489a1981302e97043b019e8c90a52ffc55
+ms.sourcegitcommit: 584e2e9db8c541fe32624acdca5e12ee327fdb63
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/31/2020
-ms.locfileid: "44431700"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44678681"
 ---
 # <a name="let-users-reset-their-own-passwords"></a>Autoriser les utilisateurs à réinitialiser leur mot de passe
 
@@ -54,7 +54,8 @@ Si vous avez trouvé cette vidéo utile, consultez les [séries de formations co
 Ces étapes activent la réinitialisation du mot de passe libre-service pour tout le monde dans votre entreprise.
   
 ::: moniker range="o365-worldwide"
-1. Dans le centre d’administration, accédez à **Settings** la \> page <a href="https://go.microsoft.com/fwlink/p/?linkid=2072756" target="_blank">paramètres</a> des paramètres.
+
+1. Dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centre d’administration</a>, accédez à **Settings** la > page Paramètres d' **organisation** des paramètres.
 
 ::: moniker-end
 
@@ -70,13 +71,17 @@ Ces étapes activent la réinitialisation du mot de passe libre-service pour tou
 
 ::: moniker-end
 
-2. En haut de la page Paramètres, sélectionnez **sécurité & confidentialité**.
+2. En haut de la page **paramètres** de l’organisation, sélectionnez l’onglet **sécurité & confidentialité** .
   
-3. Sélectionnez **réinitialisation du mot de passe libre-service**.
+3. Sélectionnez **réinitialisation du mot de passe en libre-service**.
+
+4. Sous **réinitialisation du mot de passe libre-service**, sélectionnez **accéder au portail Azure pour activer la réinitialisation du mot de passe libre-service**.
+
+5. Dans le volet de navigation de gauche, sélectionnez **utilisateurs**, puis, dans le volet **utilisateurs | Page tous les utilisateurs** , sélectionnez **Réinitialiser le mot de passe**.
   
-4. Sur la page Propriétés, sélectionnez **tous** pour l’activer pour tous les membres de votre entreprise, puis sélectionnez **Enregistrer**.
+6. Sur la page **Propriétés** , sélectionnez **tous** pour l’activer pour tous les membres de votre entreprise, puis sélectionnez **Enregistrer**.
   
-5. Lorsque les utilisateurs se connectent, ils sont invités à entrer des informations de contact supplémentaires qui les aideront à réinitialiser leur mot de passe à l’avenir.
+7. Lorsque les utilisateurs se connectent, ils sont invités à entrer des informations de contact supplémentaires qui les aideront à réinitialiser leur mot de passe à l’avenir.
 
 ## <a name="related-articles"></a>Articles connexes
 

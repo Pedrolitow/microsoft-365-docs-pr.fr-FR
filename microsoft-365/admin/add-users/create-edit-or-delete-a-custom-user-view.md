@@ -20,16 +20,16 @@ search.appverid:
 - MOE150
 ms.assetid: 4fe7f6ac-be8e-4b57-9e13-24ff889a4b28
 description: Apprenez à utiliser des filtres pour créer, modifier ou supprimer des affichages utilisateur personnalisés dans Microsoft 365.
-ms.openlocfilehash: 265aa1a7c22475710a12a93c2bfee0b7749f438b
-ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
+ms.openlocfilehash: 598a167b9845f763ddab57d3c5ba36e431aa751c
+ms.sourcegitcommit: a3ec91423c352cd5fbf79b46ccd9c169455a03ba
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/31/2020
-ms.locfileid: "44431640"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44664573"
 ---
-# <a name="create-edit-or-delete-a-custom-user-view-in-office-365"></a>Créer, modifier ou supprimer une vue utilisateur personnalisée dans Office 365
+# <a name="create-edit-or-delete-a-custom-user-view"></a>Créer, modifier ou supprimer une vue utilisateur personnalisée
 
-Si vous êtes un administrateur général ou un administrateur de gestion des utilisateurs d’Office 365, vous pouvez créer des affichages utilisateur personnalisés pour afficher un sous-ensemble spécifique d’utilisateurs. Ces affichages s’ajoutent à l’ensemble standard de vues fournies avec Office 365. Vous pouvez créer, modifier ou supprimer des affichages utilisateur personnalisés, et les vues personnalisées que vous créez sont disponibles pour tous les administrateurs.
+Si vous êtes un administrateur général ou un administrateur de gestion des utilisateurs d’un abonnement Microsoft 365 pour les entreprises, vous pouvez créer des affichages utilisateur personnalisés pour afficher un sous-ensemble spécifique d’utilisateurs. Ces affichages s’ajoutent à l’ensemble standard d’affichages. Vous pouvez créer, modifier ou supprimer des affichages utilisateur personnalisés, et les vues personnalisées que vous créez sont disponibles pour tous les administrateurs.
   
 ## <a name="custom-user-views-in-the-admin-center"></a>Vues utilisateur personnalisées dans le centre d’administration
 
@@ -98,7 +98,7 @@ Vous pouvez également filtrer par des détails de profil utilisateur supplémen
 
 ::: moniker range="o365-worldwide"
 
-1. Dans le Centre d’administration, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utilisateurs actifs</a>.
+1. Dans le **Centre d’administration, accédez à utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">actifs</a>.
     
 2. Sur la page **utilisateurs actifs** , sélectionnez **filtres** , puis **nouveau filtre**.
   
@@ -108,7 +108,7 @@ Vous pouvez également filtrer par des détails de profil utilisateur supplémen
 
 ::: moniker range="o365-germany"
 
-1. Dans le Centre d’administration, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Utilisateurs actifs</a>.  
+1. Dans le **Centre d’administration, accédez à utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">actifs</a>.  
 
 2. Sur la page **utilisateurs actifs** , sélectionnez **affichages** et sélectionnez **Ajouter un affichage personnalisé**.
   
@@ -119,7 +119,7 @@ Vous pouvez également filtrer par des détails de profil utilisateur supplémen
 
 ::: moniker range="o365-21vianet"
 
-1. Dans le Centre d’administration, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Utilisateurs actifs</a>. 
+1. Dans le **Centre d’administration, accédez à utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">actifs</a>. 
 
 2. Sur la page **utilisateurs actifs** , sélectionnez **affichages** et sélectionnez **Ajouter un affichage personnalisé**.
   
@@ -132,7 +132,7 @@ Vous pouvez également filtrer par des détails de profil utilisateur supplémen
 
 ::: moniker range="o365-worldwide"
 
-1. Dans le Centre d’administration, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utilisateurs actifs</a>.
+1. Dans le **Centre d’administration, accédez à utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">actifs</a>.
     
 2. Sur la page **utilisateurs actifs** , sélectionnez **filtre**, sélectionnez le filtre à modifier, puis sélectionnez **modifier le filtre**. 
     
@@ -145,7 +145,7 @@ Vous pouvez également filtrer par des détails de profil utilisateur supplémen
 
 ::: moniker range="o365-germany"
 
-1. Dans le Centre d’administration, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Utilisateurs actifs</a>.  
+1. Dans le **Centre d’administration, accédez à utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">actifs</a>.  
 
 2. Sur la page **utilisateurs actifs** , sélectionnez **affichages**, sélectionnez le filtre à modifier, puis cliquez sur **modifier cet affichage**. 
     
@@ -158,7 +158,7 @@ Vous pouvez également filtrer par des détails de profil utilisateur supplémen
 
 ::: moniker range="o365-21vianet"
 
-1. Dans le Centre d’administration, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Utilisateurs actifs</a>. 
+1. Dans le **Centre d’administration, accédez à utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">actifs</a>. 
 
 2. Sur la page **utilisateurs actifs** , sélectionnez **affichages**, sélectionnez le filtre à modifier, puis cliquez sur **modifier cet affichage**. 
     
