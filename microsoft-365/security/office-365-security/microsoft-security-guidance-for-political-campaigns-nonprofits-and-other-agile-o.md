@@ -21,48 +21,45 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 10d1004b-42b6-4e2b-aaa2-18ddd9118f64
 description: 'Résumé : Conseils de planification et d’implémentation pour les organisations à développement rapide présentant un profil susceptible d’attirer les menaces.'
-ms.openlocfilehash: bfec47bb3af59fe193d058830340f15564f63868
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: d20d9f28f987b64f349510806c0d5b672998a9ab
+ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44036691"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44587519"
 ---
 # <a name="microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-organizations"></a>Conseils de sécurité Microsoft pour les campagnes électorales, les organisations à but non lucratif et d’autres organisations flexibles
 
  **Résumé :** Conseils de planification et d’implémentation pour les organisations à développement rapide présentant un profil susceptible d’attirer les menaces.
-  
+
 Si votre organisation est flexible, que votre équipe informatique est de taille réduite et que vous êtes plus susceptible de faire l’objet de menaces que la moyenne, ces conseils s’adressent à vous. Cette solution montre comment créer rapidement un environnement avec des services cloud essentiels, notamment des contrôles sécurisés dès le début. Vous trouverez dans cet article des recommandations normatives en matière de sécurité pour assurer la protection des données, des identités, des courriers électroniques et de l’accès à partir d’appareils mobiles.
-  
+
 ## <a name="security-solution-guidance"></a>Guide des solutions de sécurité
 
-Ce guide décrit comment implémenter un environnement cloud sécurisé. Ce guide des solutions peut être utilisé par n’importe quelle organisation. Il inclut une aide supplémentaire pour les organisations agiles avec des accès et des comptes d’invité BYOD. Vous pouvez utiliser ce guide comme point de départ pour concevoir votre propre environnement. Vos commentaires sont bienvenus ; vous pouvez les envoyer à [CloudAdopt@microsoft.com](mailto:CloudAdopt@microsoft.com). 
-  
+Ce guide décrit comment implémenter un environnement cloud sécurisé. Ce guide des solutions peut être utilisé par n’importe quelle organisation. Il inclut une aide supplémentaire pour les organisations agiles avec des accès et des comptes d’invité BYOD. Vous pouvez utiliser ce guide comme point de départ pour concevoir votre propre environnement. Vos commentaires sont bienvenus ; vous pouvez les envoyer à [CloudAdopt@microsoft.com](mailto:CloudAdopt@microsoft.com).
+
 |||
 |:-----|:-----|
-|**Élément** <br/> |**Description** <br/> |
-|**Conseils de sécurité Microsoft pour les campagnes politiques** <br/> [![Miniature pour ensemble de mini affiches.](../../media/d370ce28-ca40-4930-9a2c-907312aa06c8.png)          ](https://download.microsoft.com/download/B/4/D/B4D520C3-4D0C-4B4D-BFB9-09F0651C2775/MSFT_Cloud_architecture_security%20for%20political%20campaigns.pdf) <br/> [PDF](https://download.microsoft.com/download/B/4/D/B4D520C3-4D0C-4B4D-BFB9-09F0651C2775/MSFT_Cloud_architecture_security%20for%20political%20campaigns.pdf)  \| [Visio](https://download.microsoft.com/download/B/4/D/B4D520C3-4D0C-4B4D-BFB9-09F0651C2775/MSFT_Cloud_architecture_security%20for%20political%20campaigns.vsdx) <br/> |Ce guide utilise un exemple d’organisation de campagne politique. Utilisez-le comme point de départ pour n’importe quel environnement.  <br/> |
-|**Conseils de sécurité Microsoft pour les organisations à but non lucratif** <br/> [![Image miniature pour le fichier téléchargeable](../../media/e4784889-1c69-4067-9a8f-31d31d1eceea.png)          ](https://download.microsoft.com/download/9/4/3/94389612-C679-4061-8DF2-D9A15D72B65F/Microsoft_Cloud%20Architecture_Security%20for%20Nonprofits.pdf) <br/> [PDF](https://download.microsoft.com/download/9/4/3/94389612-C679-4061-8DF2-D9A15D72B65F/Microsoft_Cloud%20Architecture_Security%20for%20Nonprofits.pdf)  \| [Visio](https://download.microsoft.com/download/9/4/3/94389612-C679-4061-8DF2-D9A15D72B65F/Microsoft_Cloud%20Architecture_Security%20for%20Nonprofits.vsdx) <br/> |Ce guide a été légèrement révisé pour les organisations à but non lucratif. Par exemple, il répertorie les plans Office 365 pour les associations. Les consignes technique fournies sont les mêmes que dans le guide de solution de campagne politique.  <br/> |
-   
+|**Élément**|**Description**|
+|**Conseils de sécurité Microsoft pour les campagnes politiques** <br/> [![Miniature pour mini poster](../../media/d370ce28-ca40-4930-9a2c-907312aa06c8.png)](https://download.microsoft.com/download/B/4/D/B4D520C3-4D0C-4B4D-BFB9-09F0651C2775/MSFT_Cloud_architecture_security%20for%20political%20campaigns.pdf) <br/> [PDF](https://download.microsoft.com/download/B/4/D/B4D520C3-4D0C-4B4D-BFB9-09F0651C2775/MSFT_Cloud_architecture_security%20for%20political%20campaigns.pdf)  \| [Visio](https://download.microsoft.com/download/B/4/D/B4D520C3-4D0C-4B4D-BFB9-09F0651C2775/MSFT_Cloud_architecture_security%20for%20political%20campaigns.vsdx)|Ce guide utilise un exemple d’organisation de campagne politique. Utilisez-le comme point de départ pour n’importe quel environnement.|
+|**Conseils de sécurité Microsoft pour les organisations à but non lucratif** <br/> [![Image miniature pour le fichier téléchargeable](../../media/e4784889-1c69-4067-9a8f-31d31d1eceea.png)](https://download.microsoft.com/download/9/4/3/94389612-C679-4061-8DF2-D9A15D72B65F/Microsoft_Cloud%20Architecture_Security%20for%20Nonprofits.pdf) <br/> [PDF](https://download.microsoft.com/download/9/4/3/94389612-C679-4061-8DF2-D9A15D72B65F/Microsoft_Cloud%20Architecture_Security%20for%20Nonprofits.pdf)  \| [Visio](https://download.microsoft.com/download/9/4/3/94389612-C679-4061-8DF2-D9A15D72B65F/Microsoft_Cloud%20Architecture_Security%20for%20Nonprofits.vsdx)|Ce guide a été légèrement révisé pour les organisations à but non lucratif. Par exemple, il répertorie les plans Office 365 pour les associations. Les consignes technique fournies sont les mêmes que dans le guide de solution de campagne politique.|
+
 ## <a name="test-lab-guides"></a>Guides pour les laboratoires de tests
 
-Pour créer un environnement de développement/test pour cette solution, utilisez les guides de laboratoire de test suivants : 
-  
-- [Configuration de groupes et d’utilisateurs pour un environnement de développement/test pour une campagne électorale](https://docs.microsoft.com/office365/enterprise/configure-groups-and-users-for-a-political-campaign-dev-test-environment)
-    
-     Créez des abonnements à la version d’évaluation pour Office 365 et EMS, puis créez des groupes et des utilisateurs pour une campagne électorale représentative.
-    
-- [Création de sites d’équipe dans un environnement de développement/test dans le cadre d’une campagne électorale](https://docs.microsoft.com/office365/enterprise/create-team-sites-in-a-political-campaign-dev-test-environment)
-    
-    Créez quatre sites d’équipe SharePoint Online ayant respectivement le niveau de sécurité Interne, Privé, Sensible et Hautement confidentiel.
-    
+Pour créer un environnement de développement/test pour cette solution, utilisez les guides de laboratoire de test suivants :
+
+- [Configuration de groupes et d’utilisateurs pour un environnement de développement/test pour une campagne électorale](configure-groups-and-users-for-a-political-campaign-dev-test-environment.md)
+
+  Créez des abonnements à la version d’évaluation pour Office 365 et EMS, puis créez des groupes et des utilisateurs pour une campagne électorale représentative.
+
+- [Création de sites d’équipe dans un environnement de développement/test dans le cadre d’une campagne électorale](create-team-sites-in-a-political-campaign-dev-test-environment.md)
+
+  Créez quatre sites d’équipe SharePoint Online ayant respectivement le niveau de sécurité Interne, Privé, Sensible et Hautement confidentiel.
+
 Pour des fonctionnalités de sécurité supplémentaires pour la démonstration de validation de concept, consultez les [Guides de laboratoire de test pour Office 365](https://aka.ms/o365tlgs).
-  
+
 ## <a name="see-also"></a>Voir aussi
 
 [Guides de laboratoire de test d’adoption cloud](https://docs.microsoft.com/office365/enterprise/cloud-adoption-test-lab-guides-tlgs)
-  
+
 [Ressources relatives à l’architecture informatique du cloud Microsoft](https://docs.microsoft.com/office365/enterprise/microsoft-cloud-it-architecture-resources)
-
-
-
