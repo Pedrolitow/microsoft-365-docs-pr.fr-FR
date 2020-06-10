@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: "Une exigence pour l'ensemble des solutions Microsoft Information Protection : créer, configurer et publier des étiquettes de confidentialité afin de classer et protéger les documents et messages électroniques de votre organisation."
-ms.openlocfilehash: 50411e04ac04dc0bf00e7b743f3f30d25b9fa12e
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: 96784edb6cf31d024d94e12a76c96b2f61340f04
+ms.sourcegitcommit: 584e2e9db8c541fe32624acdca5e12ee327fdb63
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44352211"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44679078"
 ---
 # <a name="create-and-configure-sensitivity-labels-and-their-policies"></a>Créer et configurer des étiquettes de confidentialité et leurs stratégies.
 
@@ -131,7 +131,8 @@ Set-Label -Identity $Label -LocaleSettings (ConvertTo-Json $DisplayNameLocaleSet
 
 4. Sélectionnez **Choisir des étiquettes de confidentialité à publier**. Sélectionnez les étiquettes que vous souhaitez rendre disponibles dans les applications et les services, puis choisissez **Ajouter**.
     
-    Si vous sélectionnez une sous-étiquette, assurez-vous de sélectionner également son étiquette parente.
+    > [!NOTE]
+    > Si vous sélectionnez une sous-étiquette, assurez-vous de sélectionner également son étiquette parente.
     
 5. Vérifiez les étiquettes sélectionnées et, pour apporter toute modification, sélectionnez **Modifier**. Autrement, sélectionnez **Suivant**.
 

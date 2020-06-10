@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Découvrez comment utiliser DKIM (DomainKeys Identified Mail) avec Microsoft 365 pour vous assurer que les systèmes de messagerie de destination approuvent les messages envoyés à partir de votre domaine personnalisé.
-ms.openlocfilehash: 2db8af2c0651388998967db239ceed92a8be1018
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 9a2cda171de2b81acdabc2180fe53d8ed4e0f900
+ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44036607"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44616477"
 ---
 # <a name="use-dkim-to-validate-outbound-email-sent-from-your-custom-domain"></a>Utilisation de DKIM pour valider les messages sortants envoyés à partir de votre domaine personnalisé
 
@@ -33,7 +33,7 @@ Vous devez utiliser DKIM en plus de SPF et DMARC pour empêcher les usurpateurs 
 
 En bref, vous utilisez une clé privée pour chiffrer l’en-tête du message électronique sortant de votre domaine. Vous publiez une clé publique sur les enregistrements DNS de votre domaine que les serveurs de réception peuvent utiliser pour décoder la signature. Ils utilisent la clé publique pour vérifier que les messages sont réellement envoyés par vous et pas par une personne qui tente d'*usurper* votre domaine.
 
-Microsoft 365 configure automatiquement DKIM pour les domaines initiaux 'onmicrosoft.com'. Cela signifie que vous n’avez rien à faire pour configurer DKIM pour les noms de domaine initial (par exemple, litware.onmicrosoft.com). Pour plus d'informations sur les domaines, consultez l'article [Forum aux questions sur les domaines](https://docs.microsoft.com/office365/admin/setup/domains-faq#why-do-i-have-an-onmicrosoftcom-domain).
+Microsoft 365 configure automatiquement DKIM pour les domaines initiaux 'onmicrosoft.com'. Cela signifie que vous n’avez rien à faire pour configurer DKIM pour les noms de domaine initial (par exemple, litware.onmicrosoft.com). Pour plus d'informations sur les domaines, consultez l'article [Forum aux questions sur les domaines](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq#why-do-i-have-an-onmicrosoftcom-domain).
 
 Vous pouvez également choisir de n'effectuer aucun réglage DKIM pour votre domaine personnalisé. Si vous ne configurez pas DKIM, Microsoft 365 crée une paire de clés privée et publique, active la signature DKIM et configure la stratégie par défaut de Microsoft 365 pour votre domaine personnalisé. Bien que cela soit suffisant pour la plupart des clients, vous devez configurer manuellement DKIM pour votre domaine personnalisé dans les circonstances suivantes :
 
@@ -133,7 +133,7 @@ New-DkimSigningConfig -DomainName <domain> -Enabled $false
 Get-DkimSigningConfig -Identity <domain> | Format-List Selector1CNAME, Selector2CNAME
 ```
 
-Microsoft 365 effectue une rotation automatique des clés à l’aide des deux enregistrements que vous établissez. Si vous avez configuré des domaines personnalisés en plus du domaine initial dans Microsoft 365, vous devez publier deux enregistrements CNAME pour chaque domaine supplémentaire. Par conséquent, si vous avez deux domaines, vous devez publier deux enregistrements CNAMe supplémentaires, et ainsi de suite.
+Si vous avez configuré des domaines personnalisés en plus du domaine initial dans Microsoft 365, vous devez publier deux enregistrements CNAME pour chaque domaine supplémentaire. Par conséquent, si vous avez deux domaines, vous devez publier deux enregistrements CNAMe supplémentaires, et ainsi de suite.
 
 Utilisez le format suivant pour les enregistrements CNAME.
 
@@ -158,7 +158,7 @@ Où :
 
   > contoso.com.  3600  IN  MX   5 contoso-com.mail.protection.outlook.com
 
-- _initialDomain_ est le domaine que vous avez utilisé lorsque vous vous êtes inscrit à Microsoft 365. Les domaines initiaux se terminent toujours par onmicrosoft.com. Pour plus d’informations sur la détermination de votre [domaine initial](https://docs.microsoft.com/office365/admin/setup/domains-faq#why-do-i-have-an-onmicrosoftcom-domain), voir Forum aux questions sur les domaines.
+- _initialDomain_ est le domaine que vous avez utilisé lorsque vous vous êtes inscrit à Microsoft 365. Les domaines initiaux se terminent toujours par onmicrosoft.com. Pour plus d’informations sur la détermination de votre [domaine initial](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq#why-do-i-have-an-onmicrosoftcom-domain), voir Forum aux questions sur les domaines.
 
 Par exemple, si vous avez un domaine initial cohovineyardandwinery.onmicrosoft.com, ainsi que deux domaines personnalisés cohovineyard.com et cohowinery.com, vous devez configurer deux enregistrements CNAME pour chaque domaine supplémentaire, soit un total de quatre enregistrements CNAME.
 
@@ -181,7 +181,10 @@ TTL:                3600
 ```
 
 > [!NOTE]
-> Il est important de créer le deuxième enregistrement, mais il est possible qu’un seul sélecteur soit disponible au moment de la création. Par essence, le deuxième sélecteur peut pointer vers une adresse qui n’a pas encore été créée. Nous vous recommandons de créer le deuxième enregistrement CNAME, car la rotation de votre clé sera transparente et vous n’aurez pas besoin d’effectuer les étapes manuelles vous-même.
+> Il est important de créer le deuxième enregistrement, mais il est possible qu’un seul sélecteur soit disponible au moment de la création. Par essence, le deuxième sélecteur peut pointer vers une adresse qui n’a pas encore été créée. Nous vous recommandons de créer le deuxième enregistrement CNAME, car la rotation de votre clé sera transparente.
+
+> [!CAUTION]
+> La rotation automatique des clés a été temporairement désactivée, car nous implémentons des modifications de conception dans la manière dont nous créons les clés. Il est recommandé d’avoir plusieurs clés afin de pouvoir les faire roter régulièrement. Bien qu’il soit difficile à déchiffrer, il s’agit d’une stratégie d’atténuation pratique qui vous permet de vous protéger contre d’autres aspects comme l’usurpation d’identité. Vous pouvez suivre le document [Rotate-DkimSigningConfig](https://docs.microsoft.com/powershell/module/exchange/rotate-dkimsigningconfig) pour vous aider à effectuer cette opération pour votre organisation. Nous pensons que la rotation automatique sera activée à nouveau le 2020 août.
 
 ### <a name="enable-dkim-signing-for-your-custom-domain"></a>Activation de la signature DKIM pour votre domaine personnalisé
 <a name="EnableDKIMinO365"> </a>
@@ -202,7 +205,7 @@ Une fois que vous avez publié les enregistrements CNAME dans le système DNS, 
 
 #### <a name="to-enable-dkim-signing-for-your-custom-domain-by-using-powershell"></a>Activation de la signature DKIM pour votre domaine personnalisé à l’aide de PowerShell
 
-1. [Connectez-vous à Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).
+1. [Connectez-vous à Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
 
 2. Exécutez la commande suivante :
 
@@ -253,7 +256,7 @@ La désactivation de la stratégie de signature ne désactive pas complètement 
 
 ### <a name="to-disable-the-dkim-signing-policy-by-using-windows-powershell"></a>Pour désactiver la stratégie de signature DKIM à l’aide de Windows PowerShell
 
-1. [Connectez-vous à Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).
+1. [Connectez-vous à Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
 
 2. Exécutez l’une des commandes suivantes pour chaque domaine pour lequel vous souhaitez désactiver la signature DKIM.
 
@@ -299,7 +302,7 @@ DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
     b=<signed field>;
 ```
 
-Dans cet exemple, le domaine et le nom d'hôte contiennent les valeurs vers lesquelles l'enregistrement CNAME pointerait si la signature DKIM pour fabrikam.com avait été activée par l'administrateur du domaine. Finalement, chaque message envoyé à partir de Microsoft 365 sera signé avec DKIM. Si vous activez DKIM vous-même, le domaine est identique à celui de l’adresse de l’expéditeur, ici fabrikam.com. Dans le cas contraire, DKIM ne s'aligne pas et utilise le domaine initial de votre organisation. Pour plus d’informations sur la détermination de votre [domaine initial](https://docs.microsoft.com/office365/admin/setup/domains-faq#why-do-i-have-an-onmicrosoftcom-domain), voir Forum aux questions sur les domaines.
+Dans cet exemple, le domaine et le nom d'hôte contiennent les valeurs vers lesquelles l'enregistrement CNAME pointerait si la signature DKIM pour fabrikam.com avait été activée par l'administrateur du domaine. Finalement, chaque message envoyé à partir de Microsoft 365 sera signé avec DKIM. Si vous activez DKIM vous-même, le domaine est identique à celui de l’adresse de l’expéditeur, ici fabrikam.com. Dans le cas contraire, DKIM ne s'aligne pas et utilise le domaine initial de votre organisation. Pour plus d’informations sur la détermination de votre [domaine initial](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq#why-do-i-have-an-onmicrosoftcom-domain), voir Forum aux questions sur les domaines.
 
 ## <a name="set-up-dkim-so-that-a-third-party-service-can-send-or-spoof-email-on-behalf-of-your-custom-domain"></a>Configurer DKIM de sorte qu’un service tiers puisse envoyer du courrier au nom de votre domaine personnalisé
 <a name="SetUp3rdPartyspoof"> </a>
@@ -323,7 +326,7 @@ Dans cet exemple, pour obtenir ce résultat :
 
 3. Lorsque de l’envoi de courrier électronique, le fournisseur de messagerie en masse signe la clé avec la clé privée correspondante. Ainsi, le fournisseur de messagerie en masse joint la signature DKIM à l’en-tête du message.
 
-4. Les systèmes de messagerie de réception effectuent une vérification DKIM en authentifiant la valeur d=<domaine> de l’option DKIM-Signature, en la comparant au domaine indiqué dans l’adresse From: (5322.From) du message. Dans cet exemple, les valeurs sont les mêmes :
+4. Les systèmes de messagerie de réception effectuent une vérification DKIM en authentifiant la valeur d=\<domain\>de l'option DKIM-Signature, en la comparant au domaine indiqué dans l'adresse From: (5322.From) du message. Dans cet exemple, les valeurs sont les mêmes :
 
    > sender@**contoso.com**
 
