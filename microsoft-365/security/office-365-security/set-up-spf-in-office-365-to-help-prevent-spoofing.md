@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Découvrez comment mettre à jour un enregistrement DNS (service de nom de domaine) afin que vous puissiez utiliser SPF (Sender Policy Framework) avec votre domaine personnalisé dans Office 365.
-ms.openlocfilehash: 9d5d300b7397d719d9ab85139cd27d912627a3ff
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 6061cd9ea52f4ed4073f510dcba60fba9b4fd23c
+ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035307"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44588075"
 ---
 # <a name="set-up-spf-to-help-prevent-spoofing"></a>Configurer SPF pour empêcher l’usurpation
 
@@ -49,7 +49,7 @@ Avant de mettre à jour l’enregistrement TXT dans le système DNS, vous deve
 
 Collectez les informations ci-dessous :
 
-- L'enregistrement TXT SPF actuel pour votre domaine personnalisé. Pour obtenir des instructions, consultez [Recueillez les informations nécessaires pour créer des enregistrements DNS Office 365](https://docs.microsoft.com/office365/admin/get-help-with-domains/information-for-dns-records).
+- L'enregistrement TXT SPF actuel pour votre domaine personnalisé. Pour obtenir des instructions, consultez [Recueillez les informations nécessaires pour créer des enregistrements DNS Office 365](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/information-for-dns-records).
 
 - Les adresses IP externes de tous les serveurs de messagerie locaux. Par exemple, **131.107.2.200**.
 
@@ -67,8 +67,8 @@ Collectez les informations ci-dessous :
    |2|Exchange Online|Courant|include:spf.protection.outlook.com|
    |3|Exchange Online dédié uniquement|Non courant|ip4:23.103.224.0/19 ip4:206.191.224.0/19 ip4:40.103.0.0/16 include:spf.protection.outlook.com|
    |4|Office 365 Germany, Microsoft Cloud Germany uniquement|Non courant|include:spf.protection.outlook.de|
-   |5|Système de messagerie tiers|Non courant|include:\<nom du domaine\>  <br/> Où <nom du domaine> est le nom de domaine du système de messagerie tiers.|
-   |6|Système de messagerie en local. Par exemple, Exchange Online Protection et un autre système de messagerie|Non courant| Utilisez l’un des éléments suivants pour chaque système de messagerie supplémentaire : <br> ip4:\<_IP address_\>  <br/>  ip6:\<_IP address_\>  <br/>  include: \<_nom du domaine_\>  <br/>  Où la valeur de l'élément \<_IP address_\> est l'adresse IP de l'autre système de messagerie et \<_domain name_\> correspond au nom de domaine de l'autre système de messagerie qui envoie un message au nom de votre domaine.|
+   |5|Système de messagerie tiers|Non courant|Incluez : \<domain name\>  <br/> Où <nom du domaine> est le nom de domaine du système de messagerie tiers.|
+   |6|Système de messagerie en local. Par exemple, Exchange Online Protection et un autre système de messagerie|Non courant| Utilisez l’un des éléments suivants pour chaque système de messagerie supplémentaire : <br> IP4 : \<_IP address_\>  <br/>  ip6 : \<_IP address_\>  <br/>  Incluez : \<_domain name_\>  <br/>  Où la valeur de l’élément \<_IP address_\> est l’adresse IP de l’autre système de messagerie et \<_domain name_\> correspond au nom de domaine de l’autre système de messagerie qui envoie un message au nom de votre domaine.|
    |7|Un système de messagerie (obligatoire)|Courant. Tous les enregistrements TXT SPF se terminent par cette valeur|\<_enforcement rule_\>  <br/> Il peut s’agir de plusieurs valeurs. Il est recommandé d’utiliser **-all**.|
 
 2. Si vous ne l’avez pas encore fait, créez votre enregistrement TXT SPF à l’aide de la syntaxe du tableau :
@@ -85,7 +85,7 @@ Collectez les informations ci-dessous :
 
    Si vous avez déjà effectué un déploiement dans Office 365, que vous avez configuré les enregistrements TXT SPF de votre domaine personnalisé et que vous effectuez une migration vers Office 365 Germany, vous devez mettre à jour votre enregistrement TXT SPF. Pour ce faire, remplacez **include:spf.protection.outlook.com** par **include.spf.protection.outlook.de**.
 
-3. Une fois que vous avez formulé votre enregistrement TXT SPF, vous devez mettre à jour l'enregistrement dans le système DNS. Vous ne pouvez avoir qu'un seul enregistrement TXT SPF pour un domaine. Si un enregistrement TXT SPF existe, au lieu d'ajouter un nouvel enregistrement, vous devez mettre à jour l'enregistrement existant. Accédez à [Créer des enregistrements DNS pour Office 365](https://docs.microsoft.com/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider), puis cliquez sur le lien correspondant à votre hôte DNS.
+3. Une fois que vous avez formulé votre enregistrement TXT SPF, vous devez mettre à jour l'enregistrement dans le système DNS. Vous ne pouvez avoir qu'un seul enregistrement TXT SPF pour un domaine. Si un enregistrement TXT SPF existe, au lieu d'ajouter un nouvel enregistrement, vous devez mettre à jour l'enregistrement existant. Accédez à [Créer des enregistrements DNS pour Office 365](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider), puis cliquez sur le lien correspondant à votre hôte DNS.
 
 4. Testez votre enregistrement TXT SPF.
 
