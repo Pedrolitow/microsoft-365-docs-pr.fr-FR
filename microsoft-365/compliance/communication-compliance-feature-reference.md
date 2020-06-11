@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: b524001f848a106ec2832c698b474cfce8ceb24b
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: bd9162316bd5c180210040f0820eb8d1cc46dc6c
+ms.sourcegitcommit: efd4dd29af0ea2b71b674534de3b2dcbfd7482db
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44352083"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44689242"
 ---
 # <a name="communication-compliance-feature-reference"></a>Référence de la fonctionnalité de conformité des communications
 
@@ -62,7 +62,9 @@ Lorsque vous créez une stratégie de conformité de communication, vous devez d
 
 Pour simplifier votre configuration, créez des groupes pour les personnes qui ont besoin de leurs communications et des groupes pour les personnes qui examinent ces communications. Si vous utilisez des groupes, vous aurez peut-être besoin de plusieurs. Par exemple, si vous souhaitez analyser les communications entre deux groupes distincts de personnes, ou si vous souhaitez spécifier un groupe qui n’est pas supervisé.
 
-Lorsque vous sélectionnez un groupe Microsoft 365 pour les utilisateurs supervisés, la stratégie analyse le contenu de la boîte aux lettres partagée et des canaux Microsoft teams associés au groupe. Lorsque vous sélectionnez une liste de distribution, la stratégie analyse les boîtes aux lettres des utilisateurs individuels. L’ajout de groupes et de listes de distribution aux stratégies de conformité des communications fait partie des conditions générales et de l’ensemble de règles, de sorte que le nombre maximal de groupes et de listes de distribution pris en charge par une stratégie varie en fonction du nombre de conditions également ajoutées à la stratégie. Chaque stratégie doit prendre en charge environ 20 groupes ou listes de distribution, en fonction du nombre de conditions supplémentaires présentes dans la stratégie.
+Lorsque vous affectez un groupe de distribution dans la stratégie, la stratégie surveille tous les messages électroniques provenant de chaque utilisateur dans le groupe de distribution. Lorsque vous affectez un groupe Microsoft 365 dans la stratégie, la stratégie surveille tous les messages électroniques envoyés à ce groupe, et non les messages électroniques individuels reçus par chaque membre du groupe.
+
+L’ajout de groupes et de listes de distribution aux stratégies de conformité des communications fait partie des conditions générales et de l’ensemble de règles, de sorte que le nombre maximal de groupes et de listes de distribution pris en charge par une stratégie varie en fonction du nombre de conditions également ajoutées à la stratégie. Chaque stratégie doit prendre en charge environ 20 groupes ou listes de distribution, en fonction du nombre de conditions supplémentaires présentes dans la stratégie.
 
 ## <a name="supported-communication-types"></a>Types de communication pris en charge
 
@@ -103,7 +105,7 @@ Pour plus d’informations sur la retraite de la surveillance dans Office 365, c
 
 ## <a name="policy-settings"></a>Paramètres de stratégie
 
-### <a name="users"></a>Users
+### <a name="users"></a>Utilisateurs
 
 Vous avez la possibilité de sélectionner **tous les utilisateurs** ou de définir des utilisateurs spécifiques dans une stratégie de conformité de communication. La sélection de **tous les utilisateurs** applique la stratégie à tous les utilisateurs et tous les groupes auxquels n’importe quel utilisateur est inclus en tant que membre. La définition d’utilisateurs spécifiques applique la stratégie aux utilisateurs définis et à tous les groupes auxquels les utilisateurs définis sont inclus.
 
@@ -232,7 +234,7 @@ Les filtres de conformité de la communication vous permettent de filtrer et de 
 | **Date** | Date à laquelle le message a été envoyé ou reçu par un utilisateur au sein de votre organisation. |
 | **Classe file** | Classe du message en fonction du type de message, qu’il *s’agisse d’un message ou* d’une *pièce jointe*. |
 | **Avec pièce jointe** | Présence d’une pièce jointe dans le message. |
-| **Classe d’élément** | Source du message en fonction du type de message, de la messagerie électronique, de la conversation Microsoft Team, de Bloonmberg, etc. |
+| **Classe d’élément** | Source du message en fonction du type de message, de la messagerie électronique, de la conversation Microsoft Team, de Bloonmberg, etc. Pour plus d’informations sur les types d’éléments communs et les classes de message, voir [Item Types and message classes](https://docs.microsoft.com/office/vba/outlook/concepts/forms/item-types-and-message-classes). |
 | **Domaines de destinataires** | Domaine auquel le message a été envoyé. Ce domaine est normalement votre domaine d’abonnement Microsoft 365 par défaut. |
 | **Destinataire** | Utilisateur auquel le message a été envoyé. |
 | **Sender** | La personne qui a envoyé le message. |
