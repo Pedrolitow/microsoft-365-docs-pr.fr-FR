@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: b0703aa14bee3d14d1c3ff4fe46ea9d72de73ce2
-ms.sourcegitcommit: eee4f651bd51d5aedd64e42d02bfed8ccb9be4cd
+ms.openlocfilehash: 8a3e4b8979a346266336e2729d18465d391c28f9
+ms.sourcegitcommit: efd4dd29af0ea2b71b674534de3b2dcbfd7482db
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44515866"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44689265"
 ---
 # <a name="microsoft-threat-protection-preview-features"></a>Fonctionnalités d’aperçu de la protection contre les menaces Microsoft
 
@@ -58,6 +58,8 @@ Vous saurez que les fonctionnalités d’aperçu sont activées lorsque vous voy
 Les fonctionnalités et améliorations suivantes sont actuellement disponibles lors de l’aperçu :
 
 - **[Tables d’identité et d’application](advanced-hunting-schema-tables.md)** : obtenez une visibilité sur les événements d’authentification, les requêtes Active Directory et l’activité liée aux applications avec les tables [IdentityLogonEvents](advanced-hunting-identitylogonevents-table.md), [IdentityQueryEvents](advanced-hunting-identityqueryevents-table.md)et [AppFileEvents](advanced-hunting-appfileevents-table.md) dans le schéma de chasse avancé.
+
+- **[Aller-retour : parcourir](advanced-hunting-go-hunt.md)** rapidement un tableau croisé dynamique à partir de l’examen d’un événement spécifique, d’un utilisateur, d’un appareil ou d’autres types d’entité à l’aide des fonctionnalités de recherche [avancée](advanced-hunting-overview.md) basées sur les requêtes.
 
 - **[Table EmailPostDeliveryEvents](advanced-hunting-emailpostdeliveryevents-table.md)** : utilisez ce tableau pour créer des requêtes de [chasse avancées](advanced-hunting-overview.md) qui vérifient les actions effectuées sur les messages électroniques une fois qu’ils ont été remis aux boîtes aux lettres des destinataires.
 

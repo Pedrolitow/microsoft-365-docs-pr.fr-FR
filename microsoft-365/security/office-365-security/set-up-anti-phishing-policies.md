@@ -16,12 +16,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Les administrateurs peuvent en savoir plus sur les stratégies anti-hameçonnage disponibles dans Exchange Online Protection (EOP) et Office 365 Advanced Threat Protection (Office 365 ATP).
-ms.openlocfilehash: 0b1342d61ab4ab1fedde63271082c577211f6595
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 4cf727cd7d232baac13f44e008a509934f55d895
+ms.sourcegitcommit: efd4dd29af0ea2b71b674534de3b2dcbfd7482db
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44209810"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44689277"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Stratégies anti-hameçonnage dans Microsoft 365
 
@@ -114,7 +114,7 @@ Les paramètres de stratégie suivants sont disponibles uniquement dans les stra
 
 - **Appliqué à**: identifie les destinataires internes auxquels s’applique la stratégie anti-hameçonnage ATP. Cette valeur est requise dans les stratégies personnalisées et n’est pas disponible dans la stratégie par défaut (la stratégie par défaut s’applique à tous les destinataires).
 
-    Vous pouvez uniquement utiliser une condition ou une exception une seule fois, mais vous pouvez spécifier plusieurs valeurs pour la condition ou l’exception. Plusieurs valeurs de la même condition ou exception utilisent la logique OU (par exemple, _\<destinataire1\>_ ou _\<destinataire2\>_). Des conditions ou des exceptions différentes utilisent la logique ET (par exemple, _\<destinataire1\>_ et _\<membre du groupe 1\>_).
+    Vous pouvez uniquement utiliser une condition ou une exception une seule fois, mais vous pouvez spécifier plusieurs valeurs pour la condition ou l’exception. Plusieurs valeurs de la même condition ou exception utilisent la logique OU (par exemple, _\<recipient1\>_ ou _\<recipient2\>_). Des conditions ou des exceptions différentes utilisent la logique ET (par exemple, _\<recipient1\>_ et _\<member of group 1\>_).
 
   - **Destinataire**: une ou plusieurs boîtes aux lettres, utilisateurs de messagerie ou contacts de messagerie dans votre organisation.
   - Le **destinataire est membre de**: un ou plusieurs groupes de votre organisation.
@@ -128,7 +128,7 @@ Les paramètres de stratégie suivants sont disponibles uniquement dans les stra
 
 ### <a name="impersonation-settings-in-atp-anti-phishing-policies"></a>Paramètres d’emprunt d’identité dans les stratégies anti-hameçonnage ATP
 
-L’emprunt d’identité est l’endroit où l’expéditeur ou le domaine de messagerie de l’expéditeur d’un message ressemble très à un véritable expéditeur ou domaine :
+L’emprunt d’identité est l’endroit où l’expéditeur ou le domaine de messagerie de l’expéditeur d’un message doit ressembler à un expéditeur ou un domaine réel :
 
 - Un exemple d’emprunt d’identité du domaine contoso.com est ćóntoso.com.
 
@@ -140,11 +140,11 @@ Les paramètres d’emprunt d’identité suivants sont disponibles uniquement d
 
 - **Utilisateurs à protéger**: empêche les utilisateurs internes ou externes spécifiés d’être empruntés. Par exemple, les cadres (internes) et les membres du Conseil d’administration (externes). Vous pouvez ajouter jusqu’à 60 adresses internes et externes. Cette liste d’utilisateurs protégés est différente de la liste des destinataires auxquels la stratégie s’applique dans le paramètre **appliqué à** .
 
-  Par exemple, vous spécifiez Felipe Apodaca (felipea@contoso.com) en tant qu’utilisateur protégé dans une stratégie qui s’applique au groupe nommé dirigeants. Les messages entrants envoyés aux membres du groupe cadres où l’identité de Felipe Apodaca est empruntée seront traités par la stratégie (l’action que vous configurez pour les utilisateurs empruntés).
+  Par exemple, vous spécifiez Felipe Apodaca (felipea@contoso.com) en tant qu’utilisateur protégé dans une stratégie qui s’applique au groupe nommé dirigeants. Les messages entrants envoyés aux membres du groupe cadres où Felipe Apodaca est emprunté seront traités par la stratégie (l’action que vous configurez pour les utilisateurs empruntés).
 
 - **Domaines à protéger**: empêcher l’emprunt d’identité des domaines spécifiés. Par exemple, tous les domaines que vous possédez ([domaines acceptés](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)) ou des domaines spécifiques (domaines que vous possédez ou domaines partenaires). Cette liste de domaines protégés est différente de la liste des domaines auxquels la stratégie s’applique dans le paramètre **appliqué à** .
 
-  Par exemple, vous spécifiez tailspintoys.com en tant que domaine protégé dans une stratégie qui s’applique aux membres du groupe nommé cadres. Messages entrants envoyés aux membres du groupe cadres où le tailspintoys.com où se fait l’emprunt d’identité est traité par la stratégie (l’action que vous configurez pour les domaines empruntés).
+  Par exemple, vous spécifiez tailspintoys.com en tant que domaine protégé dans une stratégie qui s’applique aux membres du groupe nommé cadres. Les messages entrants envoyés aux membres du groupe cadres où tailspintoys.com est emprunté seront traités par la stratégie (l’action que vous configurez pour les domaines empruntés).
 
 - **Actions pour les utilisateurs ou domaines protégés**: choisissez l’action à effectuer sur les messages entrants qui contiennent des tentatives d’emprunt d’identité pour les utilisateurs protégés et les domaines protégés de la stratégie. Vous pouvez spécifier différentes actions pour l’emprunt d’identité des utilisateurs protégés et l’emprunt d’identité des domaines protégés :
 
