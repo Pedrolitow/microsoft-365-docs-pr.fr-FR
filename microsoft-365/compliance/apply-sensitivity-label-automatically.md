@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Lorsque vous créez une étiquette de critère de diffusion, vous pouvez affecter automatiquement une étiquette à un document ou message électronique ou vous pouvez inviter les utilisateurs pour sélectionner l’étiquette que vous recommandez.
-ms.openlocfilehash: bfbebf78664cdce34d224c5cc4b24ed6a9ad0646
-ms.sourcegitcommit: 2d664a95b9875f0775f0da44aca73b16a816e1c3
+ms.openlocfilehash: 6521bd9c23d8596adb8c86b73a82c3e8aecb85fb
+ms.sourcegitcommit: 03da5464943ef4b9a51644601a229897955dcbb2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/01/2020
-ms.locfileid: "44470661"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44658353"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Appliquer automatiquement une étiquette sensibilité au contenu
 
@@ -135,7 +135,7 @@ Pour plus d’informations sur ces classifieurs, voir [Prise en main des classif
 
 Pendant la période d’évaluation, les applications suivantes prennent en charge les classifieurs pouvant être formés pour les étiquettes de confidentialité :
 
-- Microsoft 365 applications pour les entreprises (anciennement Office 365 ProPlus) pour Windows, [Office Insider](https://office.com/insider):
+- Applications Microsoft 365 pour les entreprises ([anciennement Office 365 ProPlus](https://docs.microsoft.com/deployoffice/name-change)) pour Windows, à partir du [Canal Bêta](https://office.com/insider) ([anciennement Office Insider](https://docs.microsoft.com/deployoffice/update-channels-changes)) :
     - Word
     - Excel
     - PowerPoint

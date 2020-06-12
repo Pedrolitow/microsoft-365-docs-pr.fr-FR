@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Surveiller et gérer la suppression du contenu, que vous utilisiez une révision de disposition ou que le contenu soit automatiquement supprimé en fonction des paramètres que vous avez configurés.
-ms.openlocfilehash: 8936289ccf42fa50b78b611c46742710cd035727
-ms.sourcegitcommit: 584e2e9db8c541fe32624acdca5e12ee327fdb63
+ms.openlocfilehash: 56eed956e4488932b7bf0f29eb3810964b8cb425
+ms.sourcegitcommit: 3274b65a3932288721541d2b3fa5ecbf4c51e1ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44678990"
+ms.lasthandoff: 06/11/2020
+ms.locfileid: "44702558"
 ---
 # <a name="disposition-of-content"></a>Disposition de contenu
 
@@ -35,7 +35,10 @@ Pour gérer les révisions de disposition et vérifier que les enregistrements o
 
 ### <a name="permissions-for-disposition"></a>Autorisations pour la disposition
 
-Pour accéder à l’onglet **disposition** dans le centre de conformité Microsoft 365, vous devez être membre du rôle **gestion** de la disposition et du rôle **journaux d’audit en affichage seul** . Nous vous recommandons de créer un nouveau groupe de rôles appelé **Relecteurs de disposition**et d’ajouter ces deux rôles à ce groupe de rôles. Même si vous êtes un utilisateur d' **administrateur global** , vous devez faire partie du rôle de **gestion de disposition** pour que vous pouvez accéder à l’onglet disposition.
+Pour accéder à l’onglet **disposition** dans le centre de conformité Microsoft 365, les utilisateurs doivent disposer du rôle gestion de la **disposition** et du rôle **journaux d’audit en affichage seul** . Bien que le Conseil standard consiste à ajouter des utilisateurs aux groupes de rôles par défaut, dans ce cas, nous vous recommandons de créer un nouveau groupe de rôles appelé **Relecteurs de disposition** qui a ces deux rôles et d’ajouter des utilisateurs à ce groupe en fonction de vos besoins. Un groupe de rôles unique pour la disposition réduit les frais généraux d’administration et permet aux utilisateurs d’obtenir plus facilement les autorisations combinées dont ils ont besoin.
+
+> [!NOTE]
+> Même un administrateur global doit disposer du rôle de **gestion** de la disposition. Par conséquent, si les administrateurs globaux ont besoin d’accéder à l’onglet disposition, ils sont en tant que membres du groupe de rôles **Relecteurs de disposition** . 
 
 Spécifique au rôle **journaux d’audit en affichage seul** :
 

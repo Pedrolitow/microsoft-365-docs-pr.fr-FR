@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Configurez des étiquettes de confidentialité pour le chiffrement qui protège vos données en limitant l’accès et l’utilisation.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 78e3fcecd1253229ea9b5ab88147bafe16b85727
-ms.sourcegitcommit: 2d664a95b9875f0775f0da44aca73b16a816e1c3
+ms.openlocfilehash: 35dfc642aee2e4d602aeb4bc1ea689dbc2589735
+ms.sourcegitcommit: 584e2e9db8c541fe32624acdca5e12ee327fdb63
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/01/2020
-ms.locfileid: "44470671"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44678980"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>Restreindre l'accès au contenu grâce à la mise en place d'un chiffrement par les étiquettes de confidentialité 
 
@@ -349,7 +349,7 @@ Utilisez seulement cette configuration lorsque vous n’avez pas besoin de restr
 
 5. Sélectionnez **Choisir des autorisations à partir des autorisations existantes ou personnalisées**.
 
-6. Dans le volet **Sélectionner des autorisations à partir des autorisations présentes ou personnalisées**, sélectionnez la zone déroulante, puis sélectionnez **Visionneuse** des autorisations souhaitées, et **Enregistrer**.
+6. Dans le volet **Sélectionner des autorisations à partir des autorisations présentes ou personnalisées**, sélectionnez la zone déroulante, puis sélectionnez les autorisations souhaitées, et **Enregistrer**.
 
 7. De nouveau dans le volet **Attribuer des autorisations**, sélectionnez **Enregistrer**.
 

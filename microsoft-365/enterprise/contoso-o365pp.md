@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Comprendre la façon dont Contoso utilise Microsoft Endpoint Configuration Manager pour déployer de Microsoft 365 Apps for enterprise.
-ms.openlocfilehash: 2ff05a079d83389ed94445fc011b9f7902c6de56
-ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
+ms.openlocfilehash: 4a36e33a6f2ef6df880864dd852f0f63056946e6
+ms.sourcegitcommit: 584e2e9db8c541fe32624acdca5e12ee327fdb63
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "44011886"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44679037"
 ---
 # <a name="microsoft-365-apps-for-enterprise-deployment-for-contoso"></a>Déploiement de Microsoft 365 Apps for enterprise pour Consoto.
 
@@ -53,10 +53,10 @@ Au lieu de gérer les mises à jour Office avec le gestionnaire de configuration
 
 Contoso a suivi la même approche en deux étapes pour la fonctionnalité de mises à jour updates+ que la société a utilisée pour le déploiement d’Office : les périphériques du groupe pilote ont reçu les mises à jour des fonctionnalités quatre mois avant les périphériques du reste de l’organisation (groupe large). Pour activer cette option pour Office, Contoso a utilisé deux [canaux de mise à jour](https://docs.microsoft.com/DeployOffice/overview-update-channels) recommandés : 
 
-- Canal semi-annuel (ciblé) pour les mises à jour au groupe pilote 
-- Canal semi-annuel pour les mises à jour au groupe pilote 
+- Canal d’entreprise semi-annuel (préversion) pour les mises à jour du groupe pilote 
+- Canal d’entreprise semi-annuel pour les mises à jour du groupe élargi. 
 
-Étant donné que le canal semi-annuel (ciblé) a publié une version de Microsoft 365 Apps for enterprise quatre mois plus tôt que le canal semi-annuel, Contoso a le temps de valider les mises à jour sans avoir à les gérer. 
+Étant donné que le canal d’entreprise semi-annuel (préversion) a publié une version des applications Microsoft 365 pour les grandes entreprises quatre mois plus tôt que le canal d’entreprise semi-annuel, Contoso a le temps de valider les mises à jour sans avoir à les gérer. 
 
 ## <a name="deployment-process"></a>Processus de déploiement
 
@@ -65,7 +65,7 @@ Pour effectuer le déploiement d’Office, Contoso a implémenté le processus s
 1. Avant d’effectuer le déploiement, ils ont utilisé le kit de ressources de préparation pour tester ses applications et compléments Office afin d’en évaluer la compatibilité avec Microsoft 365 Apps for enterprise.
 2. Dans le gestionnaire de configuration, Contoso a activé un cache d’homologue sur ses périphériques clients qui a aidé avec la capacité réseau limitée lors du déploiement aux périphériques clients dans les emplacements à distance. 
 3. La société a défini deux groupes de déploiements comme collections de périphériques dans le gestionnaire de configuration : un groupe pilote et un groupe large. Le groupe pilote, qui inclut un petit groupe d’appareils représentatifs au sein de l’organisation, a été utilisé pour effectuer des tests supplémentaires sur les applications, les compléments et le matériel avec Windows 10 Entreprise et Microsoft 365 Apps for enterprise. 
-4. Elle a créé des packages de déploiement pour Office à l’aide du tableau de bord de gestion des clients Office et de l’Assistant du programme d’installation d’Office 365, faisant tous les deux partie de la console du gestionnaire de configuration. Elle a créé deux packages Microsoft 365 Apps for enterprise, un pour le groupe pilote sur le canal semi-annuel (ciblé) et un pour le groupe large sur le canal semi-annuel. 
+4. Elle a créé des packages de déploiement pour Office à l’aide du tableau de bord de gestion des clients Office et de l’Assistant du programme d’installation d’Office 365, faisant tous les deux partie de la console du gestionnaire de configuration. Elle a créé deux packages applications Microsoft 365 pour les grandes entreprises, un pour le groupe pilote sur le canal d’entreprise semi-annuel (préversion) et un pour le groupe élargi sur le canal d’entreprise semi-annuel. 
 5. Dans le cadre de chaque package Office, les modules linguistiques anglais, français et allemand ont été inclus. Si un périphérique nécessitait une langue non incluse dans le package Office, celle-ci était automatiquement téléchargée à partir du réseau de distribution de contenu (CDN) Office.
 6. La société a utilisé la fonctionnalité intégrée dans le package Office afin de supprimer automatiquement toutes les versions MSI d’Office existantes avant d’installer Microsoft 365 Apps for enterprise.
 7. Dans le gestionnaire de configuration, Contoso a déployé les packages Windows et Office aux points de distribution au sein de son réseau, et a exécuté les séquences de tâches de déploiement du gestionnaire de configuration pour déployer le package Microsoft 365 Apps for enterprise pilote pour le groupe pilote.

@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Utiliser une stratégie de rétention vous permet de décider de façon proactive de conserver du contenu, de le supprimer (ou les deux), de conserver du contenu, puis de le supprimer ; d’appliquer une stratégie unique à l’ensemble de l’organisation ou à quelques emplacements ou utilisateurs ; et d’appliquer une stratégie à tout le contenu ou au contenu remplissant des conditions particulières.
-ms.openlocfilehash: cf38eecaeaf23371c370ad07e723177e3770c7ba
-ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
+ms.openlocfilehash: 377c5e1f21938204123de298e620a3d0d2bb9755
+ms.sourcegitcommit: b03a7ad0a80f8b839f40b8d396ab3a049491a12f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/31/2020
-ms.locfileid: "44432335"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44695137"
 ---
 # <a name="learn-about-retention-policies"></a>Découvrir les stratégies de rétention
 
@@ -141,18 +141,17 @@ Les fonctionnalités plus anciennes que vous avez peut-être utilisées sont les
   
 **Anciennes fonctionnalités dans Exchange Online :**
 
-- [Gestion des cas eDiscovery dans le Centre de sécurité &amp; conformité Office 365](https://docs.microsoft.com/microsoft-365/compliance/get-started-core-ediscovery) (conservation eDiscovery) 
-    
 - [Conservation inaltérable et conservation pour litige](https://go.microsoft.com/fwlink/?linkid=846124) (conservation eDiscovery) 
 
 - [Comment identifier le type de conservation placé sur une boîte aux lettres Exchange Online](identify-a-hold-on-an-exchange-online-mailbox.md)
     
 - [Balises de rétention et stratégies de rétention](https://go.microsoft.com/fwlink/?linkid=846125), aussi appelées [gestion des enregistrements de messagerie (MRM)](https://go.microsoft.com/fwlink/?linkid=846126) (suppression uniquement)
     
+Consultez également [Retrait des outils eDiscovery hérités](legacy-ediscovery-retirement.md).
+
+
 **Anciennes fonctionnalités dans SharePoint et OneDrive :**
 
-- [Gestion des cas eDiscovery dans le Centre de sécurité &amp; conformité Office 365](https://docs.microsoft.com/microsoft-365/compliance/get-started-core-ediscovery) (conservation eDiscovery) 
-    
 - [Ajout du contenu à un incident et placement des sources en conservation dans le centre eDiscovery](https://docs.microsoft.com/SharePoint/governance/add-content-to-a-case-and-place-sources-on-hold-in-the-ediscovery-center) (conservation eDiscovery) 
     
 - [Stratégies de suppression des documents](https://support.office.com/article/Create-a-document-deletion-policy-in-SharePoint-Server-2016-4fe26e19-4849-4eb9-a044-840ab47458ff) (suppression uniquement)
