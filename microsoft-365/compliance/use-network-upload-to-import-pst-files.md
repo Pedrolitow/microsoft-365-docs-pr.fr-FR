@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 103f940c-0468-4e1a-b527-cc8ad13a5ea6
 description: 'Pour les administrateurs : apprenez comment utiliser le chargement réseau pour importer en bloc plusieurs fichiers PST dans les boîtes aux lettres d’utilisateur de Microsoft 365.'
-ms.openlocfilehash: 9aeee6040b3b5a8505a09ffc696a14f515af0e43
-ms.sourcegitcommit: 6007dbe2cf758c683de399f94023122c678bcada
+ms.openlocfilehash: 330195cd9362722fccd5a8f7445abaee8a725857
+ms.sourcegitcommit: 584e2e9db8c541fe32624acdca5e12ee327fdb63
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "44224505"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44678748"
 ---
 # <a name="use-network-upload-to-import-your-organizations-pst-files-to-microsoft-365"></a>Utilisez le chargement réseau pour importer les fichiers PST de votre organisation dans Microsoft 365
 
@@ -95,7 +95,7 @@ La première étape consiste à télécharger et installer l'outil AzCopy, qui e
 > [!IMPORTANT]
 > Pour importer des fichiers PST à l’aide de la méthode de chargement réseau et de la syntaxe de commande signalées dans cet article, vous devez utiliser la version d'AzCopy qui peut être téléchargée à l’étape 6b de la procédure suivante. Vous pouvez également télécharger la même version de AzCopy [ici](https://aka.ms/downloadazcopy). L’utilisation d’une version différente de AzCopy n’est pas prise en charge.
   
-1. Accédez à [https://protection.office.com](https://protection.office.com) et connectez-vous à l'aide des informations d'identification d'un compte administrateur dans votre organisation. 
+1. Accédez à [https://protection.office.com](https://protection.office.com) et connectez-vous à l'aide des informations d'identification d'un compte administrateur dans votre organisation.
     
 2. Dans le volet gauche du Centre de sécurité et de conformité, cliquez sur **Gouvernance de l'information ** \> **Importer** \> **Importer des fichiers PST**.
     
@@ -204,7 +204,7 @@ Pour installer l’Explorateur Stockage Microsoft Azure et vous connecter à vo
 Une fois les fichiers PST téléchargés sur l’emplacement de stockage Azure de votre organisation, vous devez créer un fichier (CSV) de valeurs séparées par une virgule qui indique les boîtes aux lettres d’utilisateur dans lesquelles les fichiers PST seront importés. Envoyez ce fichier CSV à l'étape suivante lorsque vous créez une tâche d'importation PST.
   
 1. [Téléchargez une copie du fichier de mappage d’importation PST](https://go.microsoft.com/fwlink/p/?LinkId=544717).
-    
+
 2. Ouvrez ou enregistrez le fichier CSV sur votre ordinateur local. L’exemple suivant montre le contenu d’un fichier de mappage d’importation PST (ouvert dans le Bloc-notes). Utilisez plutôt Microsoft Excel pour modifier le fichier CSV.
 
     ```text
@@ -220,13 +220,13 @@ Une fois les fichiers PST téléchargés sur l’emplacement de stockage Azure d
     Exchange,PSTFiles,zrinkam.pst,zrinkam@contoso.onmicrosoft.com,FALSE,,,,,
     Exchange,PSTFiles,zrinkam_archive.pst,zrinkam@contoso.onmicrosoft.com,TRUE,/ImportedPst,,,,
     ```
-    
-    La première ligne ou ligne d’en-tête du fichier CSV répertorie les paramètres qui seront utilisés par le service d’importation pour importer les fichiers PST dans les boîtes aux lettres d’utilisateur. Les noms des paramètres sont séparés par des virgules. Chaque ligne sous la ligne d’en-tête représente les valeurs des paramètres pour l’importation d’un fichier PST dans une boîte aux lettres spécifique. Vous avez besoin d’une ligne pour chaque fichier PST que vous souhaitez importer dans une boîte aux lettres d’utilisateur. N’oubliez pas de remplacer les données d’espace réservé dans le fichier de mappage par les données réelles.
 
-   **Remarque :** Ne modifiez en aucun cas la ligne d’en-tête, ni les paramètres SharePoint ; ils seront ignorés pendant le processus d’importation des fichiers PST. 
+    La première ligne ou ligne d’en-tête du fichier CSV répertorie les paramètres qui seront utilisés par le service d’importation pour importer les fichiers PST dans les boîtes aux lettres d’utilisateur. Les noms des paramètres sont séparés par des virgules. Chaque ligne sous la ligne d’en-tête représente les valeurs des paramètres pour l’importation d’un fichier PST dans une boîte aux lettres spécifique. Vous avez besoin d’une ligne pour chaque fichier PST que vous souhaitez importer dans une boîte aux lettres d’utilisateur. Le fichier de mappage CSV peut contenir un maximum de 500 lignes. Pour importer plus de 500 fichiers PST, vous devez créer plusieurs fichiers de mappage et créer plusieurs tâches d’importation à l’étape 5.
+
+    > [!NOTE]
+    > Ne modifiez en aucun cas la ligne d’en-tête, ni les paramètres SharePoint ; ils seront ignorés pendant le processus d’importation des fichiers PST. De plus, n’oubliez pas de remplacer les données d’espace réservé dans le fichier de mappage par les données réelles.
 
  3. Utilisez les informations du tableau suivant pour remplir le fichier CSV avec les informations requises.
-
 
     |**Parameter**|**Description**|**Exemple**|
     |:-----|:-----|:-----|
@@ -235,7 +235,7 @@ Une fois les fichiers PST téléchargés sur l’emplacement de stockage Azure d
     | `Name` <br/> |Indique le nom du fichier PST qui sera importé dans la boîte aux lettres d’utilisateur. La valeur de ce paramètre est sensible à la casse.  <br/> <br/>**Important :** La casse du nom du fichier PST dans le fichier CSV doit être identique à celle du fichier PST chargé dans l’emplacement de stockage Azure à l’étape 2. Par exemple, si vous utilisez  `annb.pst` dans le paramètre `Name` du fichier CSV, mais que le nom du fichier PST réel est  `AnnB.pst`, l’importation de ce fichier PST échouera. Assurez-vous que le nom du fichier PST dans le fichier CSV utilise la même casse que le fichier PST réel.  <br/> | `annb.pst` <br/> |
     | `Mailbox` <br/> |Indique l’adresse électronique de la boîte aux lettres dans laquelle le fichier PST est importé. Vous ne pouvez pas spécifier un dossier public, car le service d’importation PST ne prend pas en charge l’importation de fichiers PST dans les dossiers publics.  <br/> Pour importer un fichier PST dans une boîte aux lettres inactive, vous devez indiquer le GUID de la boîte aux lettres pour ce paramètre. Pour obtenir ce GUID, exécutez la commande PowerShell suivante dans Exchange Online :  `Get-Mailbox <identity of inactive mailbox> -InactiveMailboxOnly | FL Guid` <br/> <br/>**Remarque :** Parfois, vous pouvez avoir plusieurs boîtes aux lettres avec la même adresse électronique, où une boîte aux lettres est une boîte aux lettres active et l’autre boîte aux lettres est dans un état supprimé (ou inactif). Dans ce cas, vous devez spécifier le GUID de boîte aux lettres pour identifier de façon unique la boîte aux lettres dans laquelle importer le fichier PST. Pour obtenir ce GUID des boîtes aux lettres actives, exécutez la commande PowerShell suivante :  `Get-Mailbox <identity of active mailbox> | FL Guid` Pour obtenir le GUID des boîtes aux lettres supprimées (ou inactives), exécutez cette commande  `Get-Mailbox <identity of soft-deleted or inactive mailbox> -SoftDeletedMailbox | FL Guid`.  <br/> | `annb@contoso.onmicrosoft.com` <br/> Ou  <br/>  `2d7a87fe-d6a2-40cc-8aff-1ebea80d4ae7` <br/> |
     | `IsArchive` <br/> | Indique si le fichier PST doit être importé dans la boîte aux lettres d’archivage de l’utilisateur. Il existe deux options :  <br/><br/>**FALSE :**  importe le fichier PST dans la boîte aux lettres principale de l’utilisateur.  <br/> **TRUE :**  importe le fichier PST dans la boîte aux lettres d’archivage de l’utilisateur. Cela implique l’[activation de la boîte aux lettres d’archivage de l’utilisateur](enable-archive-mailboxes.md). <br/><br/>Si vous définissez ce paramètre sur `TRUE` et que la boîte aux lettres d’archivage de l’utilisateur n’est pas activée, l’importation échouera pour cet utilisateur. Si une importation échoue pour un utilisateur (car son archive n’est pas activée et que cette propriété est définie sur `TRUE`), les autres utilisateurs dans la tâche d’importation ne seront pas affectés.  <br/>  Si vous ne renseignez pas ce paramètre, le fichier PST est importé dans la boîte aux lettres principale de l’utilisateur.  <br/> <br/>**Remarque :** Pour importer un fichier PST dans une boîte aux lettres d’archivage dans le cloud pour un utilisateur dont la boîte aux lettres principale est accessible localement, indiquez `TRUE` pour ce paramètre et indiquez l’adresse de courrier de la boîte aux lettres locale de l’utilisateur pour le paramètre `Mailbox`.  <br/> | `FALSE` <br/> Ou  <br/>  `TRUE` <br/> |
-    | `TargetRootFolder` <br/> | Indique le dossier de la boîte aux lettres dans lequel le fichier PST est importé.  <br/> <br/> Si vous ne renseignez pas ce paramètre, le fichier PST est importé dans un nouveau dossier nommé **Importé** situé au niveau racine de la boîte aux lettres (le même niveau que le dossier Boîte de réception et les autres dossiers de boîte aux lettres par défaut).  <br/> <br/> Si vous spécifiez  `/`, les dossiers et les éléments du fichier PST sont importés en haut de la structure des dossiers dans la boîte aux lettres ou l'archive cible. Si un dossier est présent dans la boîte aux lettres cible (par exemple, des dossiers par défaut tels que Boîte de réception, Éléments envoyés et Éléments supprimés), les éléments de ce dossier du fichier PST sont fusionnés dans le dossier existant dans la boîte aux lettres cible. Par exemple, si le fichier PST contient un dossier Boîte de réception, les éléments de ce dossier sont importés dans le dossier Boîte de réception de la boîte aux lettres cible. Les nouveaux dossiers sont créés s’ils n’existent pas dans la structure des dossiers de la boîte aux lettres cible.  <br/><br/>  Si vous spécifiez `/<foldername>`, les éléments et dossiers du fichier PST sont importés directement dans le dossier nommé  * \<nom de dossier\>*. Par exemple, si vous utilisez  `/ImportedPst`, les éléments sont importés dans un dossier nommé **ImportedPst**. Ce dossier se trouve dans la boîte aux lettres de l’utilisateur au même niveau que le dossier boîte de réception.  <br/><br/> **Astuce : ** Pensez à réaliser quelques tests pour appréhender ce paramètre afin de déterminer le meilleur emplacement pour le dossier d’importation des fichiers PST.  <br/> |(Laisser vide)  <br/> Ou  <br/>  `/` <br/> Ou  <br/>  `/ImportedPst` <br/> |
+    | `TargetRootFolder` <br/> | Indique le dossier de la boîte aux lettres dans lequel le fichier PST est importé.  <br/> <br/> Si vous ne renseignez pas ce paramètre, le fichier PST est importé dans un nouveau dossier nommé **Importé** situé au niveau racine de la boîte aux lettres (le même niveau que le dossier Boîte de réception et les autres dossiers de boîte aux lettres par défaut).  <br/> <br/> Si vous spécifiez  `/`, les dossiers et les éléments du fichier PST sont importés en haut de la structure des dossiers dans la boîte aux lettres ou l'archive cible. Si un dossier est présent dans la boîte aux lettres cible (par exemple, des dossiers par défaut tels que Boîte de réception, Éléments envoyés et Éléments supprimés), les éléments de ce dossier du fichier PST sont fusionnés dans le dossier existant dans la boîte aux lettres cible. Par exemple, si le fichier PST contient un dossier Boîte de réception, les éléments de ce dossier sont importés dans le dossier Boîte de réception de la boîte aux lettres cible. Les nouveaux dossiers sont créés s’ils n’existent pas dans la structure des dossiers de la boîte aux lettres cible.  <br/><br/>  Si vous spécifiez `/<foldername>`, les éléments et dossiers du fichier PST sont importés directement dans le dossier nommé  *\<foldername\>*. Par exemple, si vous utilisez  `/ImportedPst`, les éléments sont importés dans un dossier nommé **ImportedPst**. Ce dossier se trouve dans la boîte aux lettres de l’utilisateur au même niveau que le dossier boîte de réception.  <br/><br/> **Astuce : ** Pensez à réaliser quelques tests pour appréhender ce paramètre afin de déterminer le meilleur emplacement pour le dossier d’importation des fichiers PST.  <br/> |(Laisser vide)  <br/> Ou  <br/>  `/` <br/> Ou  <br/>  `/ImportedPst` <br/> |
     | `ContentCodePage` <br/> |Ce paramètre facultatif indique une valeur numérique que la page de codes doit utiliser pour importer des fichiers PST au format de fichier ANSI. Ce paramètre permet d’importer des fichiers PST à partir d’organisations chinoises, japonaises et coréennes, car ces langues utilisent généralement un jeux de caractères à deux octets (DBCS) pour le codage de caractères. Si ce paramètre n’est pas utilisé pour importer des fichiers PST pour les langues qui utilisent des caractères DBCS pour les noms des dossiers de boîte aux lettres, les noms des dossiers sont souvent déformés une fois qu’ils sont importés.  <br/><br/> Pour obtenir la liste des valeurs prises en charge à utiliser pour ce paramètre, consultez [Identificateurs de page de codes](https://go.microsoft.com/fwlink/p/?LinkId=328514).  <br/> <br/>**Remarque :** Comme indiqué précédemment, il s’agit d’un paramètre facultatif et vous n’avez pas besoin de l’inclure dans le fichier CSV. Ou vous pouvez également l’inclure et conserver la valeur vide pour une ou plusieurs lignes.  <br/> |(Laisser vide)  <br/> Ou  <br/>  `932` (il s’agit de l’identificateur de page de codes pour le japonais ANSI/OEM)  <br/> |
     | `SPFileContainer` <br/> |Pour l’importation PST, laissez ce paramètre vide.  <br/> |Non applicable  <br/> |
     | `SPManifestContainer` <br/> |Pour l’importation PST, laissez ce paramètre vide.  <br/> |Non applicable  <br/> |
@@ -246,41 +246,45 @@ Une fois les fichiers PST téléchargés sur l’emplacement de stockage Azure d
 L'étape suivante consiste à créer la tâche d'importation PST dans le service d'importation dans Microsoft 365. Comme indiqué précédemment, vous envoyez le fichier de mappage d’importation PST créé à l’étape 4. Une fois la nouvelle tâche créée, Microsoft 365 analyse les données des fichiers PST et vous donne la possibilité de filtrer les données qui sont effectivement importées dans les boîtes aux lettres indiquées dans le fichier de mappage des importations PST (consulter [Étape 6](#step-6-filter-data-and-start-the-pst-import-job)).
   
 1. Accédez à [https://protection.office.com](https://protection.office.com) et connectez-vous à l'aide des informations d'identification d'un compte administrateur dans votre organisation. 
-    
+
 2. Dans le volet gauche du Centre de sécurité et de conformité, cliquez sur **Gouvernance de l'information > Importer > Importer des fichiers PST**.
-    
+
 3. Dans la page **Importer des fichiers PST**, cliquez sur ![Ajouter une icône](../media/ITPro-EAC-AddIcon.gif) **Nouvelle tâche d’importation**.
-    
-    **Remarque :** Vous devez disposer des autorisations appropriées pour accéder à la page **Importer** dans le Centre de sécurité et de conformité. Consultez la section **Avant de commencer** pour plus d’informations. 
-    
+
+   > [!NOTE]
+   > Vous devez disposer des autorisations appropriées pour accéder à la page **Importer** dans le Centre de sécurité et de conformité. Consultez la section **Avant de commencer** pour plus d’informations. 
+
 4. Entrez le nom de la tâche d’importation PST, puis cliquez sur **Suivant**. Utilisez des lettres minuscules, des nombres, des traits d’union et des traits bas. Vous ne pouvez pas utiliser de lettres majuscules ou inclure des espaces dans le nom.
-    
+
 5. Dans la page **Souhaitez-vous charger ou expédier les données ?**, cliquez sur **Charger vos données**, puis cliquez sur **Suivant**.
-    
+
     ![Cliquez sur Charger vos données pour créer une tâche d’importation de chargement réseau](../media/e59f9dc3-ccde-44ff-ac38-c4e39d76ae85.png)
   
 6. À l’étape 4, sur la page **Importer les données**, cliquez sur les cases à cocher **J’ai terminé le téléchargement de mes fichiers** et **J’ai accès au fichier de mappage**, puis cliquez sur **Suivant**.
-    
+
     ![Cliquez sur les deux cases à cocher à l’étape 4](../media/9f2427e8-3af2-4e27-95e6-a9f08430d3d8.png)
   
-7. Sur la page**Sélectionner le fichier de mappage**, cliquez sur **Sélectionner le fichier de mappage** pour envoyer le fichier de mappage d’importation PST que vous avez créé à l’étape 4. 
-    
+7. Sur la page**Sélectionner le fichier de mappage**, cliquez sur **Sélectionner le fichier de mappage** pour envoyer le fichier de mappage CSV que vous avez créé à l’étape 4. 
+
     ![Cliquez sur Sélectionner le fichier de mappage pour envoyer le fichier CSV que vous avez créé pour la tâche d’importation.](../media/d30b1d73-80bb-491e-a642-a21673d06889.png)
   
 8. Lorsque le nom du fichier CSV apparaît dans la liste, **Nom de fichier de mappage**, cliquez sur **Valider** pour vérifier que votre fichier CSV ne contient pas d’erreurs. 
-    
+
     ![Cliquez sur Valider pour rechercher les erreurs dans le fichier CSV.](../media/4680999d-5538-4059-b878-2736a5445037.png)
   
     Le fichier CSV doit être validé avec succès pour créer une tâche d'importation PST. Le nom du fichier passe à la couleur verte une fois qu'il a été validé avec succès. Si la validation échoue, cliquez sur le lien **Afficher le journal**. Un rapport d'erreur de validation est ouvert, avec un message d'erreur pour chaque ligne du fichier qui a échoué.
-    
-9. Une fois le fichier de mappage PST validé avec succès, lisez le document sur les conditions générales, puis cochez la case.
-    
+
+   > [!NOTE]
+   > Comme indiqué précédemment, un fichier de mappage peut comporter un maximum de 500 lignes. La validation échoue si le fichier de mappage contient plus de 500 lignes. Pour importer plus de 500 fichiers PST, vous devez créer plusieurs fichiers de mappage et plusieurs tâches d’importation.
+
+9. Une fois le fichier de mappage validé avec succès, lisez le document sur les conditions générales, puis cochez la case.
+
 10. Cliquez sur **Enregistrer** pour envoyer la tâche, puis cliquez sur **Fermer** une fois la tâche créée avec succès. 
-    
+
     Une page de menu volant d’état s’affiche avec l'état d’**Analyse en cours** et la nouvelle tâche d’importation s’affiche dans la liste de la page **Importer des fichiers PST**. 
-    
+
 11. Cliquez sur **Actualiser**![ Actualiser l’icône](../media/O365-MDM-Policy-RefreshIcon.gif) pour mettre à jour les informations d’état affichées dans la colonne **État**. Une fois l’analyse terminée et les données prêtes à être importées, l’état est modifié en **Analyse terminée**.
-    
+
     Vous pouvez cliquer sur la tâche d’importation pour afficher la page de menu volant d’état qui contient les informations plus détaillées sur la tâche d’importation, telles que l’état de chaque fichier PST répertorié dans le fichier de mappage.
  
 ## <a name="step-6-filter-data-and-start-the-pst-import-job"></a>Étape 6 : Filtrer les données et démarrer la tâche d’importation PST

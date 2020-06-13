@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Les stratégies de protection contre la perte de données (DLP) disponibles dans le Centre de sécurité &amp; conformité vous permettent d’identifier, de surveiller et de protéger automatiquement des informations sensibles dans Office 365.
-ms.openlocfilehash: 4328855a4a7332c452d7e2832e1b924c16652f8b
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: 3f4cabab120f418e4c410a1e1f052868ad453f67
+ms.sourcegitcommit: 584e2e9db8c541fe32624acdca5e12ee327fdb63
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44351849"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44679068"
 ---
 # <a name="overview-of-data-loss-prevention"></a>Vue d’ensemble de la protection contre la perte de données
 <!-- this topic needs to be split into smaller, more coherent ones. It is confusing as it is. -->
@@ -116,8 +116,8 @@ Les conditions actuellement disponibles peuvent déterminer si :
     
 - Le contenu est partagé avec des personnes extérieures ou internes à votre organisation.
 
-> [!NOTE]
-> Les utilisateurs qui ont des comptes non invités dans le client Active Directory ou Azure Active Directory d’une organisation hôte sont considérés comme des personnes internes à l’organisation.
+  > [!NOTE]
+  > Les utilisateurs qui ont des comptes non invités dans le client Active Directory ou Azure Active Directory d’une organisation hôte sont considérés comme des personnes internes à l’organisation.
     
 #### <a name="types-of-sensitive-information"></a>Types d’informations sensibles
 
@@ -127,13 +127,13 @@ Une stratégie DLP peut contribuer à protéger les informations sensibles, déf
   
 Lorsqu’une stratégie DLP recherche un type d’informations sensibles tel qu’un numéro de carte de crédit, il ne recherche pas simplement un nombre à 16 chiffres. Chaque type d’information sensible est défini et détecté en utilisant une combinaison de :
   
-- Mots clés
+- Mots clés.
     
-- Fonctions internes pour valider les sommes de contrôle ou la composition
+- Fonctions internes pour valider les sommes de contrôle ou la composition.
     
-- Évaluation des expressions régulières pour trouver des correspondances au modèle
+- Évaluation des expressions régulières pour trouver des correspondances au modèle.
     
-- Autres analyses de contenu
+- Autres analyses de contenu.
     
 La détection DLP peut ainsi atteindre un haut niveau de précision tout en réduisant le nombre de faux positifs susceptibles d’interrompre le travail.
   
@@ -145,13 +145,19 @@ Lorsque le contenu remplit une condition stipulée dans une règle, vous pouvez 
   
 Avec les actions désormais disponibles, vous pouvez :
   
-- **Restreindre l’accès au contenu** Pour le contenu d’un site, cela signifie que les autorisations pour le document sont limitées pour tout le monde, sauf pour l’administrateur principal de la collection de sites, le propriétaire du document et la personne qui a modifié le document pour la dernière fois. Ces personnes peuvent supprimer les informations sensibles du document ou prendre des mesures correctives. Lorsque le document est conforme, les autorisations d’origine sont automatiquement restaurées. Lorsque l’accès à un document est bloqué, le document s’affiche avec une icône de conseil de stratégie spéciale dans la bibliothèque sur le site. 
+- **Restreindre l’accès au contenu** Selon vos besoins, vous pouvez restreindre l’accès au contenu de trois façons :
+
+  1. Restreindre l’accès au contenu pour tout le monde.
+  2. Restreindre l’accès au contenu pour les personnes extérieures à l’organisation.
+  3. Restreindre l’accès à « toute personne disposant du lien ».
+
+  Pour le contenu d’un site, cela signifie que les autorisations pour le document sont limitées pour tout le monde, sauf pour l’administrateur principal de la collection de sites, le propriétaire du document et la personne qui a modifié le document pour la dernière fois. Ces personnes peuvent supprimer les informations sensibles du document ou prendre des mesures correctives. Lorsque le document est conforme, les autorisations d’origine sont automatiquement restaurées. Lorsque l’accès à un document est bloqué, le document s’affiche avec une icône de conseil de stratégie spéciale dans la bibliothèque sur le site. 
     
-    ![Conseil de stratégie montrant que l’accès au document est bloqué](../media/b6cefed3-d212-43d7-8534-4b92b26ebd50.png)
+  ![Conseil de stratégie montrant que l’accès au document est bloqué](../media/b6cefed3-d212-43d7-8534-4b92b26ebd50.png)
   
-    Pour le contenu des messages électroniques, cette action bloque l’envoi du message. Selon la configuration de la règle DLP, l’expéditeur voit une notification d’échec de remise ou (si la règle utilise une notification) un conseil de stratégie et/ou une notification de messagerie.
+  Pour le contenu des messages électroniques, cette action bloque l’envoi du message. Selon la configuration de la règle DLP, l’expéditeur voit une notification d’échec de remise ou (si la règle utilise une notification) un conseil de stratégie et/ou une notification de messagerie.
     
-    ![Avertissement indiquant que les destinataires non autorisés doivent être supprimés du message](../media/302f9994-912d-41e7-861f-8a4539b3c285.png)
+  ![Avertissement indiquant que les destinataires non autorisés doivent être supprimés du message](../media/302f9994-912d-41e7-861f-8a4539b3c285.png)
   
 #### <a name="user-notifications-and-user-overrides"></a>Notifications de l’utilisateur et remplacements de l’utilisateur
 
@@ -335,15 +341,14 @@ Lorsque vous utilisez une [étiquette de rétention](labels.md) précédemment c
 - La synchronisation d’étiquettes de rétention peut prendre jusqu’à une journée et il faut compter jusqu’à sept jours pour qu’elles s’appliquent automatiquement après leur création et leur publication. Voir le [Délai d’activation des étiquettes de rétention](create-retention-labels.md#how-long-it-takes-for-retention-labels-to-take-effect) pour plus d’informations.
 - L’utilisation d’une étiquette de rétention dans une stratégie ***est prise en charge uniquement pour des éléments SharePoint Online et OneDrive Entreprise***.
 
+  ![Étiquettes comme condition](../media/5b1752b4-a129-4a88-b010-8dcf8a38bb09.png)
 
-![Étiquettes comme condition](../media/5b1752b4-a129-4a88-b010-8dcf8a38bb09.png)
+  Vous souhaitez peut-être utiliser une étiquette de rétention dans une stratégie DLP si vous avez des éléments sous rétention et suppression auxquels vous voulez appliquer des contrôles supplémentaires, par exemple :
 
-Vous souhaitez peut-être utiliser une étiquette de rétention dans une stratégie DLP si vous avez des éléments sous rétention et suppression auxquels vous voulez appliquer des contrôles supplémentaires, par exemple :
+  - Vous avez publié une étiquette de rétention nommée **année fiscale 2018** qui, lorsqu’elle est appliquée à des documents fiscaux de 2018 stockés dans SharePoint, les conserve pendant 10 ans, puis les supprime. Vous ne souhaitez pas non plus que ces éléments soient partagés à l’extérieur de votre organisation, ce que vous pouvez faire grâce à une stratégie DLP.
 
-- Vous avez publié une étiquette de rétention nommée **année fiscale 2018** qui, lorsqu’elle est appliquée à des documents fiscaux de 2018 stockés dans SharePoint, les conserve pendant 10 ans, puis les supprime. Vous ne souhaitez pas non plus que ces éléments soient partagés à l’extérieur de votre organisation, ce que vous pouvez faire grâce à une stratégie DLP.
-
-> [!IMPORTANT]
-> L’erreur ci-après s’affiche si vous spécifiez une étiquette de rétention comme condition dans une stratégie DLP et que vous incluez également Exchange et/ou Teams comme emplacement : **« La protection du contenu étiqueté dans les messages électroniques et d’équipe n’est pas prise en charge. Supprimez l’étiquette ci-dessous ou désactivez Exchange ou Teams en tant qu’emplacement. »** Cela est dû au fait qu’Exchange transport n’évalue pas les métadonnées d’étiquette lors de l’envoi et de la distribution des messages. 
+  > [!IMPORTANT]
+  > L’erreur ci-après s’affiche si vous spécifiez une étiquette de rétention comme condition dans une stratégie DLP et que vous incluez également Exchange et/ou Teams comme emplacement : **« La protection du contenu étiqueté dans les messages électroniques et d’équipe n’est pas prise en charge. Supprimez l’étiquette ci-dessous ou désactivez Exchange ou Teams en tant qu’emplacement. »** Cela est dû au fait qu’Exchange transport n’évalue pas les métadonnées d’étiquette lors de l’envoi et de la distribution des messages. 
 
 ### <a name="support-for-sensitivity-labels-is-coming"></a>La prise en charge des étiquettes de confidentialité est pour bientôt
 
@@ -449,15 +454,15 @@ DLP détecte les informations sensibles à l’aide d’une analyse approfondie 
 
 Une fois qu’une stratégie DLP est créée dans le centre de conformité et de sécurité, elle est stockée dans un magasin central de stratégies, puis synchronisée avec différentes sources de contenu, notamment les suivantes :
   
-- Depuis Exchange Online vers Outlook sur le web et Outlook
+- Depuis Exchange Online vers Outlook sur le web et Outlook.
     
-- Sites OneDrive Entreprise
+- Sites OneDrive Entreprise.
     
-- Sites SharePoint Online
+- Sites SharePoint Online.
     
-- Programmes de bureau Office (Excel, PowerPoint et Word)
+- Programmes de bureau Office (Excel, PowerPoint et Word).
 
-- Canaux et messages de conversations Microsoft Teams
+- Canaux et messages de conversations Microsoft Teams.
     
 Une fois la stratégie synchronisée avec les emplacements adéquats, elle commence à évaluer le contenu et à mettre en place des actions.
 <!-- what is the time delay for first deployment of a policy and what is the sync schedule? -->
@@ -519,13 +524,13 @@ Ces autorisations sont requises uniquement pour créer et appliquer une stratég
 
 Pour utiliser la plupart des applets de commande du Centre de conformité et de sécurité, vous devez :
   
-1. [Vous connecter au Centre de sécurité &amp; conformité Office 365 à l’aide de PowerShell à distance](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps)
+1. [Vous connecter au Centre de sécurité &amp; conformité Office 365 à l’aide de PowerShell à distance](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps).
     
-2. Utiliser l’une de ces [applets de commande de stratégie et de conformité DLP](https://docs.microsoft.com/powershell/module/exchange/export-dlppolicycollection?view=exchange-ps)
+2. Utiliser l’une de ces [applets de commande de stratégie et de conformité DLP](https://docs.microsoft.com/powershell/module/exchange/export-dlppolicycollection?view=exchange-ps).
     
 Toutefois, les rapports DLP doivent extraire des données de Microsoft 365, y compris Exchange Online. Pour cette raison, les **applets de commande des rapports DLP sont disponibles dans Exchange Online Powershell (et non dans le centre de conformité &amp; sécurité Powershell)**. Par conséquent, pour utiliser les applets de commande pour les rapports DLP, vous devez :
   
-1. [Vous connecter à Exchange Online à l'aide de Remote PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps)
+1. [Vous connecter à Exchange Online à l'aide de Remote PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps).
     
 2. Utilisez l’une de ces applets de commande pour les rapports DLP :
     
