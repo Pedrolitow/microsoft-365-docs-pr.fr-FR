@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 0432dce9-d9b6-4e73-8a13-4a932eb0081e
 description: Vous avez une question sur la façon dont les nouvelles fonctionnalités de protection des messages fonctionnent ? Recherchez une réponse ici.
-ms.openlocfilehash: f7c6de7eba9cb5e0f165b345b5c97e98cb96b870
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: d3dcc91f1e1e93293218e18109cebae2190d337b
+ms.sourcegitcommit: f80c6c52e5b08290f74baec1d64c4070046c32e4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44352079"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "44717153"
 ---
 # <a name="message-encryption-faq"></a>FAQ sur le chiffrement de messages
 
@@ -120,6 +120,11 @@ Pour activer le chiffrement des pièces jointes au format PDF, exécutez la comm
 ```powershell
 Set-IRMConfiguration -EnablePdfEncryption $true
 ```
+
+Le chiffrement PDF vous permet de protéger des documents PDF sensibles via une communication sécurisée ou une collaboration sécurisée. Pour tous les clients Outlook, les messages et les pièces jointes au format PDF non protégés héritent de la protection OME de la stratégie de protection contre la perte de données (DLP) ou de la règle de flux de messagerie dans Exchange Online. En outre, si un utilisateur d’Outlook sur le Web joint un document PDF non protégé et applique la protection au message, le message hérite de la protection du message. Les utilisateurs peuvent uniquement ouvrir les pièces jointes chiffrées dans les applications qui prennent en charge les fichiers PDF protégés (par exemple, le portail OME et le visionneur Azure information protection).
+
+> [!IMPORTANT]
+> Le client de bureau Outlook ne prend pas en charge le chiffrement PDF.
 
 ## <a name="are-onedrive-for-business-attachments-supported"></a>Les pièces jointes OneDrive entreprise sont-elles prises en charge ?
 

@@ -13,12 +13,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Découvrez comment configurer la clé client pour les fichiers Microsoft 365 pour Exchange Online, Skype entreprise, SharePoint Online, OneDrive entreprise et Teams.
-ms.openlocfilehash: d9438b1578b5708e9b7740f001da3870c3616c39
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: 4d9a6292482a06a4629d394c5ff422ba02bec55e
+ms.sourcegitcommit: f80c6c52e5b08290f74baec1d64c4070046c32e4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44352271"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "44717261"
 ---
 # <a name="set-up-customer-key"></a>Configurer la clé client
 
@@ -108,15 +108,15 @@ Pour soumettre une offre d’activation de la clé client, procédez comme suit�
 
 2. Une fois que vous êtes connecté, accédez au **tableau de bord**.
 
-3. Choisissez **offres**, puis passez en revue la liste des offres actuelles.
+3. Choisissez **Deploy** dans la barre de navigation **ou** sélectionnez **afficher toutes les ressources de déploiement** sur la carte de **déploiement** des informations, puis passez en revue la liste des offres actuelles.
 
-4. Choisissez **en savoir plus** pour l’offre qui vous concerne :
+4. Choisissez la carte d’informations de l’offre qui vous concerne :
 
-   - **Exchange Online et Skype entreprise :** Sélectionnez **en savoir plus** sur la **clé client pour** l’offre Exchange.
+   - **Exchange Online et Skype entreprise :** Choisissez l' **aide de la clé de chiffrement de demande pour l’offre Exchange Online** .
 
-   - **SharePoint Online, OneDrive entreprise et fichiers teams :** Choisissez **en savoir plus** sur la **clé client pour SharePoint et l’offre OneDrive entreprise** .
+   - **Fichiers SharePoint Online, OneDrive et teams :** Choisissez l' **aide de la clé de chiffrement de demande pour SharePoint et OneDrive** offre.
 
-5. Sur la page Détails de l' **offre** , sélectionnez **créer une demande**.
+5. Une fois que vous avez consulté les détails de l’offre, choisissez **passer à l’étape 2**.
 
 6. Renseignez toutes les informations pertinentes et les informations demandées dans le formulaire d’offre. Prêtez particulièrement attention à vos choix pour les responsables de votre organisation autorisés à approuver la destruction permanente et irréversible des clés et des données de chiffrement. Une fois que vous avez terminé le formulaire, sélectionnez **Envoyer**.
 
@@ -137,7 +137,7 @@ Avant de contacter l’équipe Microsoft 365, vous devez effectuer les étapes s
 
 3. Contactez Microsoft pour finaliser le processus. Pour l’équipe SharePoint et OneDrive entreprise, contactez [Spock@microsoft.com](mailto:spock@microsoft.com). Pour Exchange Online et Skype entreprise, contactez [exock@microsoft.com](mailto:exock@microsoft.com). Incluez les éléments suivants dans votre courrier :
 
-   **Subject**: clé client pour \< *le nom de domaine complet de votre client*\>
+   **Objet**: clé client pour\<*Your tenant's fully-qualified domain name*\>
 
    **Body**: ID d’abonnement pour lesquels vous souhaitez que la période de rétention obligatoire soit finalisée.
    La sortie de Get-AzProviderFeature pour chaque abonnement.

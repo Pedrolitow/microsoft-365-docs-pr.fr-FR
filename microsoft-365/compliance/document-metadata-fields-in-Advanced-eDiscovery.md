@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Cet article définit les champs de métadonnées pour les documents dans un ensemble de révision dans un cas dans Advanced eDiscovery dans Microsoft 365.
-ms.openlocfilehash: f53a754fce482ddc0944d84059b1e346e93f5067
-ms.sourcegitcommit: 053d42480d8aa3792ecb0027ddd53d383a029474
+ms.openlocfilehash: 19a8b4968ea4b1d82cd6a9e9278530e6c155ef3f
+ms.sourcegitcommit: df6cc8c2eb2a65c7668f2953b0f7ec783a596d15
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "42941236"
+ms.lasthandoff: 06/13/2020
+ms.locfileid: "44726447"
 ---
 # <a name="document-metadata-fields-in-advanced-ediscovery"></a>Champs de métadonnées de document dans Advanced eDiscovery
 
@@ -44,8 +44,8 @@ Le tableau suivant répertorie les champs de métadonnées pour les documents da
 |Noms des pièces jointes|AttachmentNames|Attachment_Names|Liste des noms des pièces jointes.|
 |Score de privilège client pour les avocats|AttorneyClientPrivilegeScore||Avocat-score de contenu du modèle de privilège client.|
 |Auteur|Auteur|Doc_authors|Auteur à partir des métadonnées du document.|
-|Cci|Cci|Email_bcc|Champ CCI pour les types de message. Le format **est \<DisplayName SMTPAddress>**.|
-|Cc|Cc|Email_cc|Champ CC pour les types de message. Le format **est \<DisplayName SMTPAddress>**.|
+|Cci|Cci|Email_bcc|Champ CCI pour les types de message. Le format **est \<SMTPAddress> DisplayName **.|
+|Cc|Cc|Email_cc|Champ CC pour les types de message. Le format **est \<SMTPAddress> DisplayName **.|
 |Étiquettes de conformité|ComplianceLabels|Compliance_labels|[Étiquettes de rétention](labels.md) appliquées au contenu dans Office 365.|
 |Tracé transparent|CompoundPath|Compound_path|Chemin lisible par l’utilisateur qui décrit la source de l’élément.|
 |Texte|Contenu||Texte extrait de l’élément.|
@@ -103,17 +103,18 @@ Le tableau suivant répertorie les champs de métadonnées pour les documents da
 |Classe de l’élément|ItemClass|Item_class|Classe d’élément fournie par Exchange Server ; par exemple, **IPM. Note**|
 |Dernière modification|LastModifiedDate|Doc_date_modified|Date de dernière modification à partir des métadonnées de document.|
 |ID de chargement|LoadId|Load_ID|ID du jeu de charges dans lequel l’élément a été ajouté à un jeu de révision.|
-|Emplacement|Emplacement|Emplacement|Chaîne qui indique le type d’emplacement à partir duquel les documents ont été issus.<br /><br />Données **importées** -données non Office 365<br />**Teams** -Microsoft teams<br />**Exchange** -boîtes aux lettres Exchange<br />**SharePoint** -sites SharePoint<br />**Onedrive** -comptes onedrive|
+|Location|Location|Location|Chaîne qui indique le type d’emplacement à partir duquel les documents ont été issus.<br /><br />Données **importées** -données non Office 365<br />**Teams** -Microsoft teams<br />**Exchange** -boîtes aux lettres Exchange<br />**SharePoint** -sites SharePoint<br />**Onedrive** -comptes onedrive|
 |Nom de l’emplacement|LocationName|Location_name|Chaîne qui identifie la source de l’élément. Pour Exchange, il s’agit de l’adresse SMTP de la boîte aux lettres ; pour SharePoint et OneDrive, l’URL de la collection de sites.|
 |Marqué comme représentant|MarkAsRepresentative||Un document de chaque ensemble de doublons exact est marqué comme représentant.|
 |Marqué comme problème pré-balisé 1 *||Marked_as_pre_tagged_Case_issue_1|Marqué comme prébalisage du problème 1 de la pertinence.|
 |Marqué comme problème de cas de semence 1 *||Marked_as_seed_Case_issue_1|Marqué comme générateur de cas de générateur 1 de pertinence.|
 |Date de fin de la réunion|MeetingEndDate|Meeting_end_date|Date de fin de la réunion pour les réunions.|
 |Date de début de la réunion|MeetingStartDate|Meeting_start_date|Date de début de réunion pour les réunions.|
-|Type de message|MessageKind|Message_kind|Type de message à rechercher. Valeurs possibles : ** <br /> <br />documents <br /> <br />de contacts <br />courrier <br />électronique <br />ExternalData <br />télécopies messagerie instantanée journaux <br />des réunions <br />microsoftteams** (renvoie des éléments de conversation, de réunions et d’appels dans Microsoft Teams) ** <br />notes <br />publie <br />RSSFeeds <br />tâches <br />de messagerie vocale**| 
+|Type de message|MessageKind|Message_kind|Type de message à rechercher. Valeurs possibles : ** <br /> <br /> documents de contacts <br /> <br /> courrier électronique <br /> ExternalData <br /> télécopies <br /> messagerie instantanée <br /> journaux des <br /> réunions <br /> microsoftteams** (renvoie des éléments de conversation, de réunions et d’appels dans Microsoft Teams) ** <br /> Notes <br /> publie <br /> RSSFeeds <br /> tâches de <br /> messagerie vocale**| 
 |Extension Native|NativeExtension|Native_extension|Extension native de l’élément.|
 |Nom de fichier natif|NativeFileName|Native_file_name|Nom de fichier natif de l’élément.|
-|NativeMD5||Native_MD5|Hachage MD5 du flux de fichier.|
+|NativeMD5||Native_MD5|Hachage MD5 (valeur de hachage 128 bits) du flux de fichier.|
+|NativeSHA256||Native_SHA_256|Hachage SHA256 (valeur de hachage 256 bits) du flux de fichier.|
 |ND/ET tri : exclusion des pièces jointes|NdEtSortExclAttach|ND_ET_sort_excl_attach|Concaténation du thread de courrier (ET) défini et du jeu de quasi-doublon (ND). Ce champ est utilisé pour un tri efficace lors de la révision. Un **D** est préfixé à des jeux ND et un **E** est préfixé sur et définit.|
 |Tri ND/ET : pièces jointes incluses|NdEtSortInclAttach|ND_ET_sort_incl_attach|Concaténation d’une série de threads de messagerie (ET) définie et d’un jeu de quasi-doublon (ND). Ce champ est utilisé pour un tri efficace lors de la révision. Un **D** est préfixé à des jeux ND et un **E** est préfixé sur et définit. Chaque élément de messagerie dans un ET un ensemble est suivi des pièces jointes appropriées.|
 |Problème 1 de cas de score de pertinence normalisé||Normalized_relevance_score_case_issue_1|Note de pertinence normalisée problème 1 par rapport à la pertinence.|
@@ -142,20 +143,20 @@ Le tableau suivant répertorie les champs de métadonnées pour les documents da
 |Score de pertinence|RelevanceScore||Score de pertinence d’un document basé sur la pertinence.|
 |Balise de pertinence|RelevanceTag||Score de pertinence d’un document basé sur la pertinence.|
 |ID représentatif|RepresentativeId||Identificateur numérique de chaque ensemble de doublons exacts.|
-|Expéditeur|Expéditeur|Email_sender|Champ sender (from) pour les types de message. Le format **est \<DisplayName SmtpAddress>**.|
+|Sender|Sender|Email_sender|Champ sender (from) pour les types de message. Le format **est \<SmtpAddress> DisplayName **.|
 |Expéditeur/auteur|SenderAuthor||Champ calculé composé de l’expéditeur ou de l’auteur de l’élément.|
 |Domaine de l’expéditeur|SenderDomain|Email_sender_domain|Domaine de l’expéditeur.|
 |Sent|Sent|Email_date_sent|Date d’envoi du message.|
 |Ordre défini : en premier|SetOrderInclusivesFirst|Set_order_inclusives_first|Champ de tri-courrier électronique et pièces jointes : compteur-chronologique ; documents : tableau croisé dynamique, puis par décroissant de score de similarité.|
 |SimilarityPercent||Similarity_percent|Indique le degré de similarité d’un document par tableau croisé dynamique du jeu presque dupliqué.|
-|Taille de fichier Native|Taille|Native_size|Nombre d’octets de l’élément natif.|
+|Taille de fichier Native|Size|Native_size|Nombre d’octets de l’élément natif.|
 |Subject|Subject|Email_subject|Objet du message.|
 |Subject/title|SubjectTitle||Champ calculé constitué de l’objet ou du titre de l’élément.|
 |Marqué par le problème 1||Tagged_by_Case_issue_1|Utilisateur qui a balisé ce document pour le problème 1 en pertinence.|
 |Balises|Balises|Balises|Balises appliquées dans un jeu de révision.|
 |Liste des thèmes|ThemesList|Themes_list|Liste des thèmes telle qu’elle est calculée pour l’analyse.|
 |Titre|Titre|Doc_title|Titre des métadonnées du document.|
-|À|À|Email_to|Champ à pour les types de message. Le format **est\<DisplayName SmtpAddress>**|
+|To|To|Email_to|Champ à pour les types de message. Le format **est \<SmtpAddress> DisplayName**|
 |Unique dans le groupe de courriers|UniqueInEmailSet||**False** s’il existe un doublon de la pièce jointe dans son jeu de courriers.|
 |A été résolu|WasRemediated|Was_Remediated|**True** si l’élément a été résolu, sinon **false**.|
 |Statistiques|WordCount|Word_count|Nombre de mots dans l’élément.|

@@ -13,12 +13,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Après avoir configuré la clé client, Découvrez comment la gérer en restaurant les clés AKV et en gérant les autorisations et vos stratégies de chiffrement de données.
-ms.openlocfilehash: dbdbd61b4d06e183d8cc5461122e316b2b6b1797
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: 21c1fedce1ebc09e6c33b74a1b2c035c90988e12
+ms.sourcegitcommit: f80c6c52e5b08290f74baec1d64c4070046c32e4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44352201"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "44717305"
 ---
 # <a name="manage-customer-key"></a>Gérer la clé client
 
@@ -142,13 +142,7 @@ Get-MailboxStatistics -Identity <GeneralMailboxOrMailUserIdParameter> | fl IsEnc
 
 La propriété IsEncrypted renvoie la valeur **true** si la boîte aux lettres est chiffrée et la valeur **false** si la boîte aux lettres n’est pas chiffrée.
 
-Le temps nécessaire pour effectuer des déplacements de boîtes aux lettres dépend de la taille de la boîte aux lettres. Si la clé client n’a pas entièrement chiffré la boîte aux lettres après 72 heures après l’heure où vous affectez une nouvelle DEP, lancez un déplacement de boîte aux lettres. Pour ce faire, utilisez la cmdlet New-MoveRequest et fournissez l’alias de la boîte aux lettres. Par exemple :
-  
-```powershell
-New-MoveRequest <alias>
-```
-
-Pour plus d’informations sur cette cmdlet, consultez la rubrique [Get-MailboxStatistics](https://docs.microsoft.com/powershell/module/exchange/new-moverequest?view=exchange-ps).
+Le temps nécessaire pour effectuer des déplacements de boîtes aux lettres dépend de la taille de la boîte aux lettres. Si la clé client n’a pas entièrement chiffré la boîte aux lettres après 72 heures après l’heure à laquelle vous affectez une nouvelle DEP, contactez le support Microsoft pour obtenir de l’aide. La cmdlet New-MoveRequest n’est plus disponible pour les déplacements de boîtes aux lettres locales. Pour plus d’informations, reportez-vous à [cette annonce](https://techcommunity.microsoft.com/t5/exchange-team-blog/disabling-new-moverequest-for-local-mailbox-moves/bc-p/1332141) .
 
 ### <a name="verify-encryption-completes-for-sharepointonlineonedriveforbusinessandteamsfiles"></a>Vérifier que le chiffrement est terminé pour SharePoint Online, OneDrive entreprise et les fichiers teams
 

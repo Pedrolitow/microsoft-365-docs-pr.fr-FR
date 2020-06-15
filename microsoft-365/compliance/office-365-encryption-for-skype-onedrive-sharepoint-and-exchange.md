@@ -16,16 +16,15 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
 - SPO_Content
-description: Dans cet article, vous trouverez une description du chiffrement Office 365 pour Skype, OneDrive, SharePoint et Exchange Online.
-ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 9e250f3fe63875f2f1d65f2765e114f212e72f35
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+description: 'Résumé : description du chiffrement pour Skype, OneDrive, SharePoint, Microsoft teams et Exchange Online.'
+ms.openlocfilehash: fc369d167d5aa35507f9509fc1b92294e16f75d9
+ms.sourcegitcommit: f80c6c52e5b08290f74baec1d64c4070046c32e4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44031394"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "44717335"
 ---
-# <a name="encryption-for-skype-for-business-onedrive-for-business-sharepoint-online-and-exchange-online"></a>Chiffrement pour Skype Entreprise, OneDrive Entreprise, SharePoint Online et Exchange Online
+# <a name="encryption-for-skype-for-business-onedrive-for-business-sharepoint-online-microsoft-teams-and-exchange-online"></a>Chiffrement pour Skype entreprise, OneDrive entreprise, SharePoint Online, Microsoft teams et Exchange Online
 
 Microsoft 365 est un environnement hautement sécurisé qui offre une protection étendue dans plusieurs couches : sécurité du centre de données physique, sécurité du réseau, sécurité des accès, sécurité des applications et sécurité des données.
 
@@ -80,10 +79,39 @@ Dans OneDrive Entreprise et SharePoint Online, il existe deux scénarios dans le
 - **Communication client avec le serveur-la** communication vers SharePoint Online et OneDrive entreprise sur Internet utilise des connexions TLS.
 - **Déplacement de données entre centres de données** : la principale raison de déplacer des données entre centres de données est la réplication géo pour activer la récupération d’urgence. Par exemple, les deltas de stockage d'objets blob et les journaux de transaction SQL Server transitent par ce canal. Alors que ces données sont déjà transmises par le biais d'un réseau privé, elles sont encore mieux protégées à l'aide du meilleur chiffrement de sa catégorie.
 
-## <a name="exchange-online"></a>Exchange Online
+## <a name="exchange-online"></a>Exchange Online
 
 Exchange Online utilise BitLocker pour toutes les données de boîte aux lettres, et la configuration BitLocker est décrite dans [BitLocker pour le chiffrement](office-365-bitlocker-and-distributed-key-manager-for-encryption.md). Le chiffrement au niveau du service chiffre toutes les données de boîte aux lettres au niveau de la boîte aux lettres. 
 
 En plus du chiffrement de service, Microsoft 365 prend en charge la clé client, qui est basée sur le chiffrement de service. La clé client est une option de clé gérée par Microsoft pour le chiffrement de service Exchange Online, qui se trouve également dans la feuille de route de Microsoft. Cette méthode de chiffrement offre une protection accrue non offerte par BitLocker car elle permet de séparer les administrateurs de serveur et les clés de chiffrement nécessaires au déchiffrement des données, car le chiffrement est appliqué directement aux données (en comparaison avec BitLocker, qui applique le chiffrement sur le volume de disque logique) toute donnée client copiée à partir d’un serveur Exchange reste chiffrée.
 
 L’étendue du chiffrement du service Exchange Online est les données client qui sont stockées au repos dans Exchange Online. (Skype entreprise stocke presque tout le contenu généré par l’utilisateur au sein de la boîte aux lettres Exchange Online de l’utilisateur, ce qui hérite de la fonctionnalité de chiffrement de service d’Exchange Online.)
+
+
+## <a name="microsoft-teams"></a>Microsoft Teams
+
+Teams utilise TLS et MTLS pour chiffrer les messages instantanés. Tout le trafic de serveur à serveur nécessite MTLS, que le trafic soit limité au réseau interne ou qu’il croise le périmètre réseau interne.
+
+Ce tableau récapitule les protocoles utilisés par Teams.
+
+***Chiffrement du trafic***
+
+|||
+|:-----|:-----|
+|**Type de trafic**|**Chiffré par**|
+|Serveur à serveur|MTLS|
+|Client à serveur (par exemple, messagerie instantanée et présence)|TLS|
+|Flux de médias (par exemple, partage audio et vidéo de médias)|TLS|
+|Partage audio et vidéo de médias|SRTP/TLS|
+|Signalisation|TLS|
+|||
+
+#### <a name="media-encryption"></a>Chiffrement des données multimédias
+
+Le trafic multimédia est chiffré à l’aide du protocole SRTP (Secure RTP), un profil du protocole RTP (Real-Time Transport Protocol). SRTP utilise une clé de session générée à l’aide d’un générateur de nombres aléatoires sécurisé et est échangée à l’aide du canal TLS de signalisation. Le trafic multimédia client à client est négocié via une signalisation de connexion client à serveur, mais est chiffré à l’aide de SRTP lors du passage direct de client à client.
+
+Teams utilise un jeton basé sur les informations d’identification pour sécuriser l’accès aux relais multimédias via TURN. Les relais de média échangent le jeton sur un canal sécurisé TLS.
+
+#### <a name="fips"></a>AGRÉÉ
+
+Teams utilise des algorithmes conformes à la norme FIPS (Federal Information Processing Standard) pour les échanges de clés de chiffrement. Pour plus d’informations sur l’implémentation de la norme FIPS, consultez la [Publication 140-2 de la norme FIPS (Federal Information Processing Standard)](https://docs.microsoft.com/microsoft-365/compliance/offering-fips-140-2?view=o365-worldwide).

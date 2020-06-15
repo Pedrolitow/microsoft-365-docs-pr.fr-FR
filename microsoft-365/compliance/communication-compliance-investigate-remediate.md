@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 3cef513d6b89634e16e0a0b4516f403cf1a794af
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 5bda1556b5726c6e94a6860c7c57f3f7082f2f5e
+ms.sourcegitcommit: f80c6c52e5b08290f74baec1d64c4070046c32e4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208396"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "44717315"
 ---
 # <a name="investigate-and-remediate-communication-compliance-alerts"></a>Examiner et corriger les alertes de conformité des communications
 
@@ -70,7 +70,7 @@ Pour obtenir la liste complète des filtres et des détails sur les champs, voir
 
 ### <a name="using-near-and-exact-duplicate-analysis"></a>Utilisation de l’analyse near et de la copie exacte
 
-Les stratégies de conformité des communications analysent et regroupent automatiquement les doublons de messages proches et exactes sans aucune étape de configuration supplémentaire. Cet affichage vous permet de corriger rapidement les messages similaires, un par un ou en tant que groupe, réduisant ainsi la charge d’enquête de message pour les relecteurs. Lorsque des doublons sont détectés, les contrôles **des doublons et/** ou des doublons **exactes** s’affichent dans la barre d’outils action de correction.
+Les stratégies de conformité des communications analysent et regroupent automatiquement les doublons de messages proches et exactes sans aucune étape de configuration supplémentaire. Cet affichage vous permet de corriger rapidement les messages similaires, un par un ou en tant que groupe, réduisant ainsi la charge d’enquête de message pour les relecteurs. Lorsque des doublons sont détectés, les contrôles **des doublons et/** ou des doublons **exactes** s’affichent dans la barre d’outils action de correction. Cet affichage n’est pas disponible si les doublons proches ou exacts sont introuvables.
 
 #### <a name="to-remediate-duplicates"></a>Pour corriger les doublons
 
