@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: La découverte électronique inaltérable et la conservation inaltérable (et les cmdlets PowerShell correspondantes) dans Exchange Online seront supprimées au cours de la première moitié de 2020. La cmdlet Search-Mailbox et Advanced eDiscovery v 1.0 est également en cours de retrait dans la même période.
-ms.openlocfilehash: 547b58bebf4ade04bc9c1992ed7f0f518924341f
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: 8b428b0d90442c937e08d4dc9ca23fb345553178
+ms.sourcegitcommit: 589f78fc0f39aff9109959ded48d146cc32fc3c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44351915"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "44761684"
 ---
 # <a name="retirement-of-legacy-ediscovery-tools"></a>Retrait des outils eDiscovery hérités
 
@@ -222,7 +222,7 @@ Le tableau suivant décrit les autres outils que vous pouvez utiliser pour rempl
 </tr>
 <tr class="odd">
 <td>Copier les résultats de la recherche dans une boîte aux lettres de découverte</td>
-<td>Aucun</td>
+<td>Aucune</td>
 <td>Il n’existe pas de remplacement direct de cette fonctionnalité, car elle ne fournit pas d’accès à tous les services Microsoft 365. Consultez le Forum aux questions ci-dessous pour obtenir d’autres solutions.</td>
 </tr>
   <tr class=even>
@@ -289,14 +289,6 @@ Le tableau suivant décrit les autres outils que vous pouvez utiliser pour rempl
 </td>
 </tr>
 <tr class="even">
-<td>Purger les messages d’une boîte aux lettres</td>
-<td><p><a href="https://docs.microsoft.com/powershell/module/exchange/get-compliancesearch?view=exchange-ps"><span class="underline">*-ComplianceSearch</span></a></p>
-<p><a href="https://docs.microsoft.com/powershell/module/exchange/get-compliancesearchaction?view=exchange-ps"><span class="underline">*-ComplianceSearchAction</span></a></p>
-<p></p></td>
-<td><p>Les cmdlets ComplianceSearch et ComplianceSearchAction fonctionnent ensemble pour vous aider à rechercher et à purger le contenu. Vous pouvez créer et exécuter une recherche à l’aide des cmdlets <strong>New-ComplianceSearch</strong> et <strong>New-ComplianceSearch</strong> , puis purger le contenu à l’aide de la commande <strong>New-ComplianceSearchAction-purge-PurgeType permet</strong> . Pour plus d’informations, consultez la rubrique <a href="https://docs.microsoft.com/microsoft-365/compliance/search-for-and-delete-messages-in-your-organization"><span class="underline">Rechercher et supprimer des messages</span></a>.</p>
-</td>
-</tr>
-<tr class="odd">
 <td>Supprimer les messages électroniques en masse d’une boîte aux lettres</td>
 <td><p><a href="https://docs.microsoft.com/microsoft-365/compliance/set-up-an-archive-and-deletion-policy-for-mailboxes?view=o365-worldwide"><span class="underline">Configurer une stratégie d’archivage et de suppression de boîtes aux lettres</span></a></p>
 <p></p></td>
@@ -307,6 +299,24 @@ Le tableau suivant décrit les autres outils que vous pouvez utiliser pour rempl
 <td>Copier les résultats de la recherche dans une boîte aux lettres de découverte</td>
 <td> </td>
 <td>Il n’existe pas de remplacement direct de cette fonctionnalité, car elle ne fournit pas d’accès à tous les services Microsoft 365. Consultez la FAQ dans la section <strong>*-MailboxSearch cmdlets</strong> pour obtenir d’autres solutions. </td>
+</tr>
+<tr class=odd>
+  <td>Copier des messages à partir d’une boîte aux lettres vers une autre boîte aux lettres</td>
+  <td><a href="https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-permissions-for-recipients">Attribuer des autorisations à une boîte aux lettres</a></td>
+  <td>Pour accorder à une personne l’accès à la messagerie d’un autre utilisateur (par exemple, lorsqu’un employé quitte votre organisation et que vous devez lui donner accès à l’e-mail de l’ancien employé), nous vous recommandons de lui attribuer des autorisations d’accès à la boîte aux lettres de l’ancien employé. Par conséquent, au lieu de copier des éléments de boîte aux lettres vers une autre boîte aux lettres d’utilisateur ou une boîte aux lettres partagée, affectez simplement des autorisations utilisateur pour accéder à la boîte aux lettres source.</td>
+</tr>
+<tr class=even>
+  <td>Purger les messages d’une boîte aux lettres</td>
+<td><p><a href="https://docs.microsoft.com/powershell/module/exchange/get-compliancesearch?view=exchange-ps"><span class="underline">*-ComplianceSearch</span></a></p>
+<p><a href="https://docs.microsoft.com/powershell/module/exchange/get-compliancesearchaction?view=exchange-ps"><span class="underline">*-ComplianceSearchAction</span></a></p>
+<p></p></td>
+<td><p>Les cmdlets ComplianceSearch et ComplianceSearchAction fonctionnent ensemble pour vous aider à rechercher et à purger le contenu. Vous pouvez créer et exécuter une recherche à l’aide des cmdlets <strong>New-ComplianceSearch</strong> et <strong>New-ComplianceSearch</strong> , puis purger le contenu à l’aide de la commande <strong>New-ComplianceSearchAction-purge-PurgeType permet</strong> . Pour plus d’informations, consultez la rubrique <a href="https://docs.microsoft.com/microsoft-365/compliance/search-for-and-delete-messages-in-your-organization"><span class="underline">Rechercher et supprimer des messages</span></a>.</p>
+</td>
+</tr>
+<tr class="odd"> 
+<td>Purger les messages d’une boîte aux lettres</td>
+<td><a href="https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-permissions-for-recipients">Attribuer des autorisations à une boîte aux lettres</a></td>
+<td>Pour purger les messages d’une boîte aux lettres, attribuez aux administrateurs des autorisations d’accès à la boîte aux lettres de l’employé. Les messages peuvent être supprimés et recyclés selon les besoins en tirant parti des fonctionnalités de recherche et d’affichage intégrées dans Outlook.</td>
 </tr>
 </tbody>
 </table>

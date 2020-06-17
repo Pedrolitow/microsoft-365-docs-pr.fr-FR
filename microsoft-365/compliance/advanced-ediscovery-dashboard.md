@@ -15,15 +15,15 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: ''
-ms.openlocfilehash: 65a0e6dc2857a51b10d1fa3b6674ccf24dbc4799
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: Utilisez le tableau de bord eDiscovery avancé pour les ensembles de vérification pour analyser rapidement votre corpus afin d’identifier des tendances ou des statistiques clés qui vous aideront à développer votre stratégie de révision.
+ms.openlocfilehash: 36f30689047eec7ff2c2c49c6b0d54f1a60470e4
+ms.sourcegitcommit: 956dd3f87adb4e6173517550a662c3bacc2d2d79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42080082"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "44741698"
 ---
-# <a name="advanced-ediscovery-dashboard-for-review-sets-preview"></a>Tableau de bord eDiscovery avancé pour les jeux de révision (aperçu)
+# <a name="advanced-ediscovery-dashboard-for-review-sets"></a>Tableau de bord eDiscovery avancé pour les ensembles de révision
 
 Dans certains cas de Advanced eDiscovery, il se peut que vous ayez un grand volume de documents et de messages électroniques qui doivent être vérifiés. Avant de commencer le processus de révision, vous souhaiterez peut-être analyser rapidement votre corpus pour identifier des tendances ou des statistiques clés qui vous aideront à développer votre stratégie de révision. Pour ce faire, vous pouvez utiliser le tableau de bord eDiscovery avancé pour les ensembles de vérification pour analyser rapidement votre corpus.
 

@@ -15,15 +15,15 @@ search.appverid:
 - MOE150
 - MET150
 ROBOTS: NOINDEX, NOFOLLOW
-description: ''
-ms.openlocfilehash: 9331e45619f549ea31adcfdd9316eea20e43efef
-ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
+description: Utilisez l’outil Bulk-Add pour ajouter rapidement plusieurs dépositaires et leurs sources de données associées à un cas dans Advanced eDiscovery.
+ms.openlocfilehash: 921d4a1616d97f2adde7e40baa5c73f607c849b6
+ms.sourcegitcommit: 956dd3f87adb4e6173517550a662c3bacc2d2d79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/31/2020
-ms.locfileid: "44432437"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "44741644"
 ---
-# <a name="bulk-add-custodians-to-an-advanced-ediscovery-case-preview"></a>Ajouter des dépositaires en bloc à un cas avancé eDiscovery (aperçu)
+# <a name="bulk-add-custodians-to-an-advanced-ediscovery-case"></a>Ajouter des dépositaires en bloc à un cas avancé de découverte électronique
 
 Pour les cas avancés de découverte électronique qui impliquent un grand nombre de dépositaires, vous pouvez importer plusieurs dépositaires à la fois par un fichier CSV qui contient toutes les informations nécessaires pour les ajouter à un cas.
 
