@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Vous êtes prêt à instaurer la mise en place d'étiquettes de confidentialité pour protéger les données de votre organisation, mais vous ne savez pas par où commencer ? Consultez quelques conseils pratiques permettant de vous familiariser lors de votre parcours dans l'univers de l'étiquetage.
-ms.openlocfilehash: db937347dd397628e0cfaae67b8c923f9433ca13
-ms.sourcegitcommit: e9cb10d0d617742a5040d7c09d1d36fd1ee25e5d
+ms.openlocfilehash: 2fbb54cadaa1681ace4e04dade4fd5a0784360eb
+ms.sourcegitcommit: 9ea67fd2e02af760d4fb62e3d09c93b446173f9d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44649393"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "44739051"
 ---
 # <a name="get-started-with-sensitivity-labels"></a>Prise en main des étiquettes de confidentialité
 
@@ -64,17 +64,24 @@ Par défaut, les administrateurs généraux de votre client ont accès à ces ce
 
 Ces autorisations sont seulement nécessaires pour créer et configurer des étiquettes de confidentialité et leurs stratégies d’étiquette. Elles ne sont pas requises pour l'application d'étiquettes dans des applications ou des services. Si d’autres autorisations sont nécessaires pour des configurations spécifiques liées aux étiquettes de confidentialité, celles-ci sont répertoriées dans les instructions de documentation qui leur sont propres.
 
+## <a name="deployment-strategy-for-sensitivity-labels"></a>Stratégie de déploiement des étiquettes de confidentialité
+
+Une stratégie réussie pour le déploiement d’étiquettes de confidentialité d’une organisation consiste à créer une équipe opérationnelle virtuelle qui identifie et gère les exigences professionnelles et techniques, les épreuves de vérification technique, les points de contrôle internes et les approbations, ainsi que les déploiements finaux pour l’environnement de production.
+
+En utilisant le tableau de la section suivante, nous vous recommandons d’identifier un ou deux de vos principaux scénarios correspondant aux besoins d’entreprise qui ont le plus d’impact. Une fois ces scénarios déployés, revenez à la liste pour identifier une ou deux prochaines priorités pour le déploiement.
+
+Vous trouverez d’autres conseils généraux sur le déploiement dans le Guide d’accélération du déploiement de Microsoft 365 Information Protection et de la conformité. Si vous souhaitez obtenir plus d’informations, voir le billet de blog, [Guide d’accélération du déploiement de Microsoft Information Protection et de la conformité](https://techcommunity.microsoft.com/t5/microsoft-security-and/microsoft-information-protection-and-compliance-deployment/ba-p/1403493).
+
 ## <a name="common-scenarios-for-sensitivity-labels"></a>Scénarios courants relatifs aux étiquettes de confidentialité
 
-Utilisez la section de documentation suivante qui vous vient en aide lors du déploiement d’étiquette de confidentialité :
+Dans tous les scénarios, vous devez [Créer et configurer des étiquettes de confidentialité et leurs stratégies](create-sensitivity-labels.md).
 
 |Je veux...|Documentation|
 |----------------|---------------|
-|Créer et publier des étiquettes de confidentialité qui me permettent de protéger les données de mon organisation|[Créer et configurer des étiquettes de confidentialité ainsi que leurs stratégies](create-sensitivity-labels.md)|
+|Gérer les étiquettes de confidentialité des applications Office pour que le contenu soit étiqueté lors de sa création |[Utiliser les étiquettes de confidentialité dans les applications Office](sensitivity-labels-office-apps.md)|
 |Permettre aux utilisateurs d’étiqueter et de protéger des fichiers à partir d’ordinateurs Windows à l’aide des applications Office, de l’Explorateur de fichiers et de PowerShell|[Client d’étiquetage unifié Azure Information Protection pour Windows](https://docs.microsoft.com/azure/information-protection/rms-client/aip-clientv2)|
 |Chiffrer des documents et messages électroniques à l’aide d’étiquettes de confidentialité et limiter l’accès à ces contenus ainsi que leur utilisation |[Restreindre l'accès au contenu grâce à la mise en place d'un chiffrement par les étiquettes de confidentialité](encryption-sensitivity-labels.md)|
-|Activer les étiquettes de confidentialité pour Office sur le Web, avec la prise en charge de la co-création, de la découverte électronique, de la protection contre la perte de données, la recherche, même lorsque les documents sont chiffrés. | [Activer les étiquettes de confidentialité pour les fichiers Office dans SharePoint et OneDrive](sensitivity-labels-sharepoint-onedrive-files.md)
-|Gérer les étiquettes de confidentialité des applications Office pour que le contenu soit étiqueté lors de sa création |[Utiliser les étiquettes de confidentialité dans les applications Office](sensitivity-labels-office-apps.md)|
+|Activer les étiquettes de confidentialité pour Office sur le web, avec la prise en charge de la co-création, de la découverte électronique, de la protection contre la perte de données, la recherche, même lorsque les documents sont chiffrés. | [Activer les étiquettes de confidentialité pour les fichiers Office dans SharePoint et OneDrive](sensitivity-labels-sharepoint-onedrive-files.md)
 |Appliquer automatiquement des étiquettes de confidentialité aux documents et messages électroniques | [Appliquer automatiquement une étiquette de confidentialité à du contenu](apply-sensitivity-label-automatically.md)|
 |Utiliser des étiquettes de confidentialité pour protéger du contenu dans Teams et SharePoint |[Utiliser des étiquettes de confidentialité avec Microsoft Teams, les Groupes Microsoft 365 et les sites SharePoint (préversion publique)](sensitivity-labels-teams-groups-sites.md)|
 |Découvrir, étiqueter et protéger des fichiers stockés dans des banques de données situées dans les locaux |[Déploiement du scanner Azure Information Protection pour classifier et protéger automatiquement des fichiers](https://docs.microsoft.com/azure/information-protection/deploy-aip-scanner)|
