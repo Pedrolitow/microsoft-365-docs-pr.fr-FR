@@ -17,14 +17,14 @@ ms.collection:
 - M365-security-compliance
 - SPO_Content
 ms.assetid: ce9eb942-3589-42cb-88fd-1576ecb09c5c
-description: Le RGPD donne aux citoyens de l’Union européenne (appelés « personnes des données ») des droits spécifiques sur leurs données personnelles ; ces droits incluent l’obtention de copies de celle-ci, la demande de modifications, la limitation du traitement de celle-ci, sa suppression ou sa réception dans un format électronique. Une demande officielle d’un objet de données qui doit agir sur ses données personnelles est appelée demande de l’objet de données ou DSR. Vous pouvez utiliser les dossiers DSR dans le centre de conformité dans Office 365 et Microsoft 365 pour gérer les investigations DSR de votre organisation.
+description: Découvrez comment gérer les demandes des personnes concernées par les données du règlement général sur la protection des données (RGPD) de l’UE avec l’outil de cas DSR.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f3be609ae1245b20b39d26fe60444e6e54f171d3
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 79d4ff2fb7a83f5c094b4d4f74e68918c2bd5fff
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035868"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44815451"
 ---
 # <a name="manage-gdpr-data-subject-requests-with-the-dsr-case-tool-in-the-security--compliance-center"></a>Gérer les demandes des personnes associées aux données RGPD avec l’outil de cas DSR dans le centre de sécurité & conformité
 
@@ -90,7 +90,7 @@ L’étape suivante consiste à créer un boîtier DSR. Lorsque vous créez un c
   
 1. Accédez à [https://protection.office.com](https://protection.office.com) et connectez-vous à l’aide de votre compte professionnel ou scolaire. 
     
-2. Dans le centre de sécurité & conformité, cliquez sur **demandes**des personnes concernées par la **confidentialité** \> des données, puis cliquez sur ![ajouter une icône](../media/ITPro-EAC-AddIcon.gif) **nouveau DSR case**.
+2. Dans le centre de sécurité & conformité, cliquez sur demandes des personnes concernées par la **confidentialité des données** \> **Data subject requests**, puis cliquez sur ![ Ajouter une icône ](../media/ITPro-EAC-AddIcon.gif) **nouveau DSR case**.
     
 3. Sur la page de la nouvelle boîte flyout du **boîtier DSR** , attribuez un nom à la demande, tapez une description facultative, puis cliquez sur **suivant**. Le nom du cas doit être unique dans toute votre organisation.
     
@@ -149,7 +149,7 @@ participants:"ina@contoso.com" OR author:"Ina Leonte" OR createdby:"Ina Leonte"
 
  **Pour exécuter la recherche intégrée pour un cas de DSR :**
   
-1. Dans le centre de sécurité & conformité, cliquez sur demandes des personnes **concernées**par la **confidentialité** \> des données, puis cliquez sur **ouvrir** en regard du cas DSR que vous avez créé à l’étape 2. 
+1. Dans le centre de sécurité & conformité, cliquez sur demandes des personnes concernées par la **confidentialité des données** \> **Data subject requests**, puis cliquez sur **ouvrir** en regard du cas DSR que vous avez créé à l’étape 2. 
     
     Cliquez sur l’onglet **Rechercher** en haut de la page, puis cliquez sur la case à cocher en regard de la recherche intégrée créée lors de la création du boîtier DSR. La recherche porte le même nom que le boîtier DSR. 
     
@@ -192,11 +192,11 @@ L’ordinateur que vous utilisez pour exporter des données doit répondre aux e
   
  **Pour exporter les données de la recherche intégrée dans un cas de DSR :**
   
-1. Dans le centre de sécurité & conformité, cliquez sur demandes des personnes **concernées**par la **confidentialité** \> des données, puis cliquez sur **ouvrir** en regard du cas DSR à partir duquel vous souhaitez exporter les données. 
+1. Dans le centre de sécurité & conformité, cliquez sur demandes des personnes concernées par la **confidentialité des données** \> **Data subject requests**, puis cliquez sur **ouvrir** en regard du cas DSR à partir duquel vous souhaitez exporter les données. 
     
 2. Cliquez sur l’onglet **Rechercher** en haut de la page, puis cliquez sur la case à cocher en regard de la recherche intégrée créée lors de la création du boîtier DSR. Ou cliquez sur une autre recherche pour exporter les données de cette recherche. 
     
-3. Sur la page flyout de recherche, ![cliquez sur Exporter les](../media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) résultats de recherche **plus en plus**, puis sélectionnez **Exporter les résultats** dans la liste déroulante. 
+3. Sur la page flyout de recherche, cliquez sur ![ Exporter les résultats de recherche ](../media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) **plus en plus**, puis sélectionnez **Exporter les résultats** dans la liste déroulante. 
     
 4. Sur la page **Exporter les résultats** , sélectionnez les options recommandées suivantes pour les demandes d’exportation DSR. 
     
@@ -206,7 +206,7 @@ L’ordinateur que vous utilisez pour exporter des données doit répondre aux e
     
     b. Sous **Exporter le contenu Exchange en tant que**, sélectionnez la troisième option, **un fichier PST contenant tous les messages dans un dossier unique**. Étant donné que certains résultats peuvent concerner des éléments provenant de la boîte aux lettres d’un autre utilisateur, cette option répertorie l’élément dans un seul dossier sans indiquer la boîte aux lettres réelle et est la meilleure option à utiliser lorsque vous Dédupliquez les résultats comme recommandé dans l’élément suivant. Cette option permet également à la personne concernée de consulter les éléments dans l’ordre chronologique (les éléments sont triés par date d’envoi) sans avoir à naviguer dans la structure de dossiers d’origine de chaque élément.
     
-    c. Sélectionnez **activer la déduplication** pour exclure les messages électroniques en double. Cette option est recommandée, car la recherche intégrée effectue une recherche dans toutes les boîtes aux lettres de votre organisation. Par conséquent, si plusieurs copies du même message sont trouvées dans les boîtes aux lettres qui ont été recherchées, cette option signifie qu’une seule copie d’un message sera exportée. Cette option permet d’exporter des messages dans un fichier PST d’un même dossier, ce qui permet aux utilisateurs les plus sollicités pour les demandes d’exportation DSR. Le rapport d’exportation results. csv répertorie tous les emplacements où des messages en double ont été trouvés.
+    c. Sélectionnez **activer la déduplication** pour exclure les messages électroniques en double. Cette option est recommandée, car la recherche intégrée effectue une recherche dans toutes les boîtes aux lettres de votre organisation. Par conséquent, si plusieurs copies du même message sont trouvées dans les boîtes aux lettres qui ont été recherchées, cette option signifie qu’une seule copie d’un message sera exportée. Cette option permet d’exporter des messages dans un fichier PST d’un même dossier, ce qui permet aux utilisateurs les plus sollicités pour les demandes d’exportation DSR. Le Results.csv rapport d’exportation répertorie tous les emplacements où des messages en double ont été trouvés.
     
     Vous pouvez également sélectionner l’option **inclure des versions pour les documents SharePoint** pour exporter toutes les versions des documents SharePoint et OneDrive. Cette opération exige que le contrôle de version soit activé pour les bibliothèques de documents. Cette option permet de s’assurer que toutes les données pertinentes sont exportées.
     
@@ -220,7 +220,7 @@ L’ordinateur que vous utilisez pour exporter des données doit répondre aux e
     
 8. Sous **Clé d’exportation**, cliquez sur **Copier dans le Presse-papiers**. Cette clé est utilisée à l’étape 11 pour télécharger les résultats de la recherche.
     
-9. Cliquez ![sur Exporter les résultats](../media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) de la recherche **Télécharger les résultats** en haut de la page de menu volant d’exportation. 
+9. Cliquez sur ![ Exporter les résultats ](../media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) de la recherche **Télécharger les résultats** en haut de la page de menu volant d’exportation. 
     
 10. Dans la fenêtre contextuelle en bas de la page, cliquez sur **ouvrir** pour ouvrir l’outil d' **exportation de découverte électronique**. L' **outil d’exportation de découverte électronique** sera installé lors du premier téléchargement des résultats de recherche. 
     
@@ -243,11 +243,11 @@ Après avoir exécuté la recherche intégrée, vous pouvez la modifier pour aff
   
 Voici quelques exemples des conditions que vous pouvez ajouter à la requête de recherche intégrée d’un boîtier DSR. Le nom de la propriété réelle utilisée dans une requête de recherche est indiqué entre parenthèses.
   
-- **Type de fichier `filetype`()** – spécifie l’extension d’un document ou d’un fichier. Utilisez cette condition pour rechercher des documents et des fichiers créés par des applications Office spécifiques, telles que Word, Excel et OneNote. 
+- **Type de fichier ( `filetype` )** – spécifie l’extension d’un document ou d’un fichier. Utilisez cette condition pour rechercher des documents et des fichiers créés par des applications Office spécifiques, telles que Word, Excel et OneNote. 
     
-- **Type de message `kind`()** – spécifie le type d’élément de courrier électronique à rechercher. Par exemple, vous pouvez utiliser la syntaxe `kind:email OR kind:im` pour renvoyer uniquement les messages électroniques et les conversations Skype entreprise ou les conversations un-à-un dans Microsoft Teams. 
+- **Type de message ( `kind` )** – spécifie le type d’élément de courrier électronique à rechercher. Par exemple, vous pouvez utiliser la syntaxe `kind:email OR kind:im` pour renvoyer uniquement les messages électroniques et les conversations Skype entreprise ou les conversations un-à-un dans Microsoft Teams. 
     
-- **Balise de`compliancetag`conformité ()** : spécifie une étiquette affectée à un message électronique ou à un document. Cette condition renvoie les éléments classés avec une étiquette spécifique. Les étiquettes sont utilisées pour classer le courrier électronique et les documents à des fins de gouvernance des données et appliquer des règles de rétention basées sur la classification définie par l’étiquette. Il s’agit d’une condition utile pour les investigations du DSR car votre organisation peut utiliser des étiquettes pour classer le contenu lié à la confidentialité des données ou contenant des données personnelles ou des informations sensibles. Pour la valeur de cette condition, utilisez le nom complet de l’étiquette ou la première partie du nom de l’étiquette avec un caractère générique. Pour plus d’informations, consultez la rubrique [vue d’ensemble des étiquettes dans Office 365](labels.md).
+- **Balise de conformité ( `compliancetag` )** : spécifie une étiquette affectée à un message électronique ou à un document. Cette condition renvoie les éléments classés avec une étiquette spécifique. Les étiquettes sont utilisées pour classer le courrier électronique et les documents à des fins de gouvernance des données et appliquer des règles de rétention basées sur la classification définie par l’étiquette. Il s’agit d’une condition utile pour les investigations du DSR car votre organisation peut utiliser des étiquettes pour classer le contenu lié à la confidentialité des données ou contenant des données personnelles ou des informations sensibles. Pour la valeur de cette condition, utilisez le nom complet de l’étiquette ou la première partie du nom de l’étiquette avec un caractère générique. Pour plus d’informations, consultez la rubrique [vue d’ensemble des étiquettes dans Office 365](labels.md).
     
 Pour obtenir la liste et la description de toutes les conditions disponibles dans l’outil de cas DSR, consultez la rubrique [conditions de recherche](keyword-queries-and-search-conditions.md#search-conditions) dans l’article « requêtes de mot-clé et conditions de recherche pour la recherche de contenu ». 
   
@@ -303,9 +303,9 @@ Lorsque vous exportez des données à partir du service d’itinérance Office, 
    
  **Pour rechercher et exporter les données du service d’itinérance Office :**
   
-1. Dans le centre de sécurité & conformité, cliquez sur demandes des personnes **concernées**par la **confidentialité** \> des données, puis cliquez sur **ouvrir** en regard du cas du DSR pour la personne concernée dont vous souhaitez exporter les données d’utilisation. 
+1. Dans le centre de sécurité & conformité, **Data privacy** cliquez sur demandes des personnes \> **concernées**par la confidentialité des données, puis cliquez sur **ouvrir** en regard du cas du DSR pour la personne concernée dont vous souhaitez exporter les données d’utilisation. 
     
-2. Cliquez sur l’onglet **Rechercher** en haut de la page, puis cliquez sur ![ajouter une](../media/ITPro-EAC-AddIcon.gif) **recherche guidée**par icône.
+2. Cliquez sur l’onglet **Rechercher** en haut de la page, puis cliquez sur ![ Ajouter une ](../media/ITPro-EAC-AddIcon.gif) **recherche guidée**par icône.
     
 3. Cliquez sur **Annuler** dans la page **nom de votre recherche** . 
     
@@ -327,9 +327,9 @@ Lorsque vous exportez des données à partir du service d’itinérance Office, 
     
  **Pour exporter les données du service d’itinérance Office :**
   
-1. Lorsque la recherche que vous avez créée à l’étape précédente est terminée, cliquez sur l’onglet **recherche** en haut de la page, puis cliquez sur la case à cocher en regard de la recherche. Vous devrez peut-être ![cliquer](../media/165fb3ad-38a8-4dd9-9e76-296aefd96334.png) sur Actualiser l' **actualisation** pour afficher la recherche. 
+1. Lorsque la recherche que vous avez créée à l’étape précédente est terminée, cliquez sur l’onglet **recherche** en haut de la page, puis cliquez sur la case à cocher en regard de la recherche. Vous devrez peut-être cliquer sur ![ Actualiser ](../media/165fb3ad-38a8-4dd9-9e76-296aefd96334.png) l' **actualisation** pour afficher la recherche. 
     
-2. Sur la page flyout de recherche, ![cliquez sur Exporter les](../media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) résultats de recherche **plus en plus**, puis sélectionnez **Exporter les résultats** dans la liste déroulante. 
+2. Sur la page flyout de recherche, cliquez sur ![ Exporter les résultats de recherche ](../media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) **plus en plus**, puis sélectionnez **Exporter les résultats** dans la liste déroulante. 
     
 3. Sur la page **Exporter les résultats** , sélectionnez les options recommandées pour exporter les données d’utilisation. 
     
@@ -351,7 +351,7 @@ Lorsque vous exportez des données à partir du service d’itinérance Office, 
     
 7. Sous **Clé d’exportation**, cliquez sur **Copier dans le Presse-papiers**. Cette clé est utilisée à l’étape 10 pour télécharger les résultats de la recherche.
     
-8. Cliquez ![sur Exporter les résultats](../media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) de la recherche **Télécharger les résultats** en haut de la page de menu volant d’exportation. 
+8. Cliquez sur ![ Exporter les résultats ](../media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) de la recherche **Télécharger les résultats** en haut de la page de menu volant d’exportation. 
     
 9. Dans la fenêtre contextuelle en bas de la page, cliquez sur **ouvrir** pour ouvrir l’outil d' **exportation de découverte électronique**. L' **outil d’exportation de découverte électronique** sera installé lors du premier téléchargement des résultats de recherche. 
     

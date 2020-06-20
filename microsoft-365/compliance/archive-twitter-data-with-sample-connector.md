@@ -13,15 +13,14 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.collection: M365-security-compliance
-ms.custom:
-- seo-marvel-apr2020
-description: Configurez un connecteur pour importer des données Twitter dans Microsoft 365 afin de pouvoir utiliser les fonctionnalités de conformité telles que la conservation légale, la recherche de contenu et les stratégies de rétention.
-ms.openlocfilehash: efc02dcf7b9c40fafedf230e4786f6f6494c27d6
-ms.sourcegitcommit: ab0a944159d9349fbc7adc2f51c7f881254d7782
+ms.custom: seo-marvel-apr2020
+description: Découvrez comment les administrateurs peuvent configurer et utiliser un connecteur natif pour importer des données Twitter dans Microsoft 365.
+ms.openlocfilehash: ba6c0786c0861776bad00dc1ed8f859da378a355
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44210580"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818423"
 ---
 # <a name="set-up-a-connector-to-archive-twitter-data-preview"></a>Configuration d’un connecteur pour l’archivage des données Twitter (aperçu)
 

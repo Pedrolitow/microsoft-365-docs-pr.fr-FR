@@ -12,19 +12,19 @@ ms.service: O365-seccomp
 ms.collection:
 - M365-security-compliance
 localization_priority: Normal
-search.appverid:
-- MET150
-description: Cette recommandation orientée analyse permet à votre organisation de maintenir le contenu sensible sécurisé lorsqu’il est stocké et partagé dans Microsoft 365 en vous informant que la couverture de votre stratégie DLP est possible. Cette recommandation s’affiche sur la page d’accueil du centre de &amp; sécurité conformité, si vos documents contiennent l’un des cinq types d’informations sensibles les plus courants, mais ne sont pas protégés par une stratégie DLP.
-ms.openlocfilehash: 504a85b07f348c45c9925cc2e6ee24b1d8a48656
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.custom:
+- seo-marvel-apr2020
+description: Découvrez comment créer et modifier la stratégie de protection contre la perte de données (DLP) recommandée pour votre organisation.
+ms.openlocfilehash: 9588eabe5dbe2b1e60eaeb6a45eb95cc327383aa
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43943373"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44817633"
 ---
 # <a name="get-started-with-dlp-policy-recommendations"></a>Prise en main des recommandations en matière de stratégie DLP
 
-Cette recommandation orientée analyse permet à votre organisation de maintenir le contenu sensible sécurisé lorsqu’il est stocké et partagé dans Microsoft 365 en vous informant que la couverture de votre stratégie DLP est possible. Cette recommandation s’affiche sur la page d' **Accueil** du centre de &amp; sécurité conformité, si vos documents contiennent l’un des cinq types d’informations sensibles les plus courants, mais ne sont pas protégés par une stratégie de protection contre la perte de données (DLP). 
+Cette recommandation orientée analyse permet à votre organisation de maintenir le contenu sensible sécurisé lorsqu’il est stocké et partagé dans Microsoft 365 en vous informant que la couverture de votre stratégie DLP est possible. Cette recommandation s’affiche sur la page d' **Accueil** du centre de sécurité &amp; conformité, si vos documents contiennent l’un des cinq types d’informations sensibles les plus courants, mais ne sont pas protégés par une stratégie de protection contre la perte de données (DLP). 
   
 Vous pouvez utiliser ce widget pour créer rapidement une stratégie DLP personnalisée en un clic ou deux, et après avoir créé cette stratégie DLP, elle est entièrement personnalisable. Notez que si vous ne voyez pas la recommandation, essayez de cliquer sur **+ autres** en bas de la section **recommandé pour vous** . 
   
@@ -38,7 +38,7 @@ Pour protéger les informations sensibles, cette stratégie DLP :
   
 - Détecte quand le contenu dans Exchange, SharePoint et OneDrive qui contient l’un des types d’informations sensibles non protégés est partagé avec des personnes extérieures à votre organisation.
     
-- Génère des rapports d’activité détaillés pour vous permettre d’effectuer le suivi des éléments tels que le partage du contenu avec des personnes extérieures à votre organisation et à quel moment. Vous pouvez utiliser les [données du journal d’audit](search-the-audit-log-in-security-and-compliance.md) et des [rapports DLP](view-the-dlp-reports.md) **(Where** = **DLP**) pour afficher ces informations.
+- Génère des rapports d’activité détaillés pour vous permettre d’effectuer le suivi des éléments tels que le partage du contenu avec des personnes extérieures à votre organisation et à quel moment. Vous pouvez utiliser les [données du journal d’audit](search-the-audit-log-in-security-and-compliance.md) et des [rapports DLP](view-the-dlp-reports.md) **(Where**  =  **DLP**) pour afficher ces informations.
     
 Vous pouvez également choisir d’utiliser la stratégie DLP :
   
@@ -54,7 +54,7 @@ Si vous souhaitez modifier ces options ultérieurement, vous pouvez modifier la 
   
 ## <a name="edit-the-recommended-dlp-policy"></a>Modifier la stratégie DLP recommandée
 
-Une fois que vous avez utilisé le widget pour créer une stratégie DLP, la stratégie apparaît sous **protection contre la perte de données** dans &amp; la page **stratégie** du centre de sécurité et de conformité. 
+Une fois que vous avez utilisé le widget pour créer une stratégie DLP, la stratégie apparaît sous **protection contre la perte de données** dans la page **stratégie** du centre de sécurité et de &amp; conformité. 
   
 Par défaut, la stratégie est nommée **stratégie système recommandée pour le partage d’informations sensibles**. Cette stratégie est entièrement personnalisable, comme n’importe quelle stratégie DLP que vous créez vous-même de toutes pièces. Par exemple, si vous avez décidé de ne pas activer les rapports d’incident et les conseils de stratégie lorsque vous avez utilisé le widget, vous pouvez toujours modifier la stratégie et activer ces options à tout moment.
   
@@ -62,7 +62,7 @@ Par défaut, la stratégie est nommée **stratégie système recommandée pour l
   
 ## <a name="when-the-widget-does-and-does-not-appear"></a>Lorsque le widget n’apparaît pas
 
-Le widget nommé **informations sensibles non protégées** apparaît dans la section **recommandé pour vous** de la page d' **Accueil** du centre de &amp; sécurité et de conformité. 
+Le widget nommé **informations sensibles non protégées** apparaît dans la section **recommandé pour vous** de la page d' **Accueil** du centre de sécurité et de &amp; conformité. 
   
 Ce widget apparaît uniquement dans les cas suivants :
   

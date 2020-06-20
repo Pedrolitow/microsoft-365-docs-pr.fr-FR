@@ -13,12 +13,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Découvrez comment configurer la clé client pour les fichiers Microsoft 365 pour Exchange Online, Skype entreprise, SharePoint Online, OneDrive entreprise et Teams.
-ms.openlocfilehash: 4d9a6292482a06a4629d394c5ff422ba02bec55e
-ms.sourcegitcommit: f80c6c52e5b08290f74baec1d64c4070046c32e4
+ms.openlocfilehash: 158096216974691bf0caff93a1c95db54b92f6b1
+ms.sourcegitcommit: 7a59d83a8660c2344ebdb92e0ea0171c9c2d9498
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "44717261"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44810990"
 ---
 # <a name="set-up-customer-key"></a>Configurer la clé client
 
@@ -448,7 +448,15 @@ Affecter la DEP à une boîte aux lettres à l’aide de la cmdlet Set-Mailbox. 
 Set-Mailbox -Identity <MailboxIdParameter> -DataEncryptionPolicy <PolicyName>
 ```
 
-Où *MailboxIdParameter* spécifie une boîte aux lettres. Pour plus d’informations sur la cmdlet Set-Mailbox, consultez la rubrique [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/set-mailbox?view=exchange-ps).
+Où *MailboxIdParameter* spécifie une boîte aux lettres. Pour plus d’informations sur la cmdlet Set-Mailbox, consultez la rubrique [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/set-mailbox).
+
+Pour les [boîtes aux lettres locales utilisant Outlook pour iOS et Android avec l’authentification moderne hybride](https://docs.microsoft.com/exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth), les données de la boîte aux lettres locale qui est synchronisée dans votre client Exchange Online peuvent avoir une DEP affectée à l’aide de la cmdlet Set-MailUser. 
+
+```powershell
+Set-MailUser -Identity <MailUserIdParameter> -DataEncryptionPolicy <PolicyName>
+```
+
+Où *MailUserIdParameter* spécifie un utilisateur de messagerie (également appelé utilisateur à extension messagerie). Pour plus d’informations sur la cmdlet Set-MailUser, voir [Set-MailUser](https://docs.microsoft.com/powershell/module/exchange/set-mailuser).
   
 ### <a name="validate-mailbox-encryption"></a>Valider le chiffrement de boîtes aux lettres
 

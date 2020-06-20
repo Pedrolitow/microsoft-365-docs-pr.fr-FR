@@ -16,17 +16,19 @@ search.appverid:
 ms.assetid: e0ada764-6422-4b44-9472-513bed04837b
 ms.collection:
 - M365-security-compliance
-description: Avant de créer votre première stratégie de protection contre la perte de données (DLP), DLP contribue à protéger vos informations sensibles à l’aide d’une stratégie par défaut. Cette stratégie par défaut et ses recommandations (illustrées ci-dessous) vous permettent de sécuriser votre contenu sensible en vous avertissant que des messages ou des documents contenant un numéro de carte de crédit ont été partagés avec une personne extérieure à votre organisation.
-ms.openlocfilehash: d24848e5956a6e8927307d3102f4ce31f1187bfd
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom:
+- seo-marvel-apr2020
+description: Découvrez comment utiliser le rapport pour affiner la stratégie de protection contre la perte de données (DLP) par défaut de votre organisation.
+ms.openlocfilehash: 7c8f0460f9cd02ee3d26197965f5ea74737ac833
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637828"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44817613"
 ---
 # <a name="get-started-with-the-default-dlp-policy"></a>Prise en main de la stratégie DLP par défaut
 
-Avant de créer votre première stratégie de protection contre la perte de données (DLP), DLP contribue à protéger vos informations sensibles à l’aide d’une stratégie par défaut. Cette stratégie par défaut et ses recommandations (illustrées ci-dessous) vous permettent de sécuriser votre contenu sensible en vous avertissant que des messages ou des documents contenant un numéro de carte de crédit ont été partagés avec une personne extérieure à votre organisation. Cette recommandation s’affiche sur la page d' **Accueil** du centre de &amp; sécurité et de conformité. 
+Avant de créer votre première stratégie de protection contre la perte de données (DLP), DLP contribue à protéger vos informations sensibles à l’aide d’une stratégie par défaut. Cette stratégie par défaut et ses recommandations (illustrées ci-dessous) vous permettent de sécuriser votre contenu sensible en vous avertissant que des messages ou des documents contenant un numéro de carte de crédit ont été partagés avec une personne extérieure à votre organisation. Cette recommandation s’affiche sur la page d' **Accueil** du centre de sécurité et de &amp; conformité. 
   
 Vous pouvez utiliser ce widget pour afficher rapidement quand et comment les informations sensibles ont été partagées, puis affiner la stratégie DLP par défaut dans un ou deux. Vous pouvez également modifier la stratégie DLP par défaut à tout moment, car elle est entièrement personnalisable. Notez que si vous ne voyez pas la recommandation, essayez de cliquer sur **+ autres** en bas de la section **recommandé pour vous** . 
   
@@ -44,7 +46,7 @@ Pour protéger les informations sensibles, la stratégie DLP par défaut :
     
 - Affiche un Conseil de stratégie et envoie une notification par courrier électronique aux utilisateurs lorsqu’ils essaient de partager ces informations sensibles avec des personnes extérieures à votre organisation. Pour plus d’informations sur ces options, consultez la rubrique [Envoyer des notifications par courrier électronique et afficher les conseils de stratégie pour les stratégies DLP](use-notifications-and-policy-tips.md).
     
-- Génère des rapports d’activité détaillés pour vous permettre d’effectuer le suivi des éléments tels que le partage du contenu avec des personnes extérieures à votre organisation et à quel moment. Vous pouvez utiliser les [données du journal d’audit](search-the-audit-log-in-security-and-compliance.md) et des [rapports DLP](view-the-dlp-reports.md) **(Where** = **DLP**) pour afficher ces informations.
+- Génère des rapports d’activité détaillés pour vous permettre d’effectuer le suivi des éléments tels que le partage du contenu avec des personnes extérieures à votre organisation et à quel moment. Vous pouvez utiliser les [données du journal d’audit](search-the-audit-log-in-security-and-compliance.md) et des [rapports DLP](view-the-dlp-reports.md) **(Where**  =  **DLP**) pour afficher ces informations.
     
 Pour affiner rapidement la stratégie DLP par défaut, vous pouvez choisir de la faire :
   
@@ -62,7 +64,7 @@ Si vous souhaitez modifier ces options ultérieurement, vous pouvez modifier la 
   
 ## <a name="edit-the-default-dlp-policy"></a>Modifier la stratégie DLP par défaut
 
-Cette stratégie est nommée **stratégie DLP par défaut** et apparaît sous **protection contre la perte de données** dans la page &amp; **stratégie** du centre de sécurité et de conformité. 
+Cette stratégie est nommée **stratégie DLP par défaut** et apparaît sous **protection contre la perte de données** dans la page **stratégie** du centre de sécurité et de &amp; conformité. 
   
 Cette stratégie est entièrement personnalisable, comme n’importe quelle stratégie DLP que vous créez vous-même de toutes pièces. Vous pouvez également désactiver ou supprimer la stratégie, afin que vos utilisateurs ne reçoivent plus de conseils de stratégie ou de notifications par courrier électronique.
   
@@ -70,11 +72,11 @@ Cette stratégie est entièrement personnalisable, comme n’importe quelle stra
   
 ## <a name="when-the-widget-does-and-does-not-appear"></a>Lorsque le widget n’apparaît pas
 
-Le widget nommé **protection supplémentaire protéger le contenu partagé** apparaît dans la section **recommandé pour vous** de la page d' **Accueil** du centre de sécurité &amp; et de conformité. 
+Le widget nommé **protection supplémentaire protéger le contenu partagé** apparaît dans la section **recommandé pour vous** de la page d' **Accueil** du centre de sécurité et de &amp; conformité. 
   
 Ce widget apparaît uniquement dans les cas suivants :
   
-- Il n’existe aucune stratégie de protection contre la perte &amp; de données dans le centre d’administration et de sécurité. Ce widget est conçu pour vous aider à commencer à utiliser DLP, il n’apparaît donc pas si vous avez déjà des stratégies DLP.
+- Il n’existe aucune stratégie de protection contre la perte de données dans le &amp; Centre d’administration et de sécurité. Ce widget est conçu pour vous aider à commencer à utiliser DLP, il n’apparaît donc pas si vous avez déjà des stratégies DLP.
     
 - Le contenu contenant moins une carte de crédit a été partagé avec une personne extérieure à votre organisation au cours des 30 derniers jours.
     

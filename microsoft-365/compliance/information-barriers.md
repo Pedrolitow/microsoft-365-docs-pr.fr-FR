@@ -13,16 +13,15 @@ ms.collection:
 - M365-security-compliance
 localization_priority: None
 description: Utilisez les barrières relatives aux informations pour garantir la conformité de la communication à l’aide de Microsoft teams au sein de votre organisation.
-ms.openlocfilehash: 341c4f54ac48cbebd17b8d9ded267091f098dcbd
-ms.sourcegitcommit: 252b1d1d8ae735b99bf46e27c08353afc330aef3
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 5bd922bee0808262b297245340a2dd641f44018f
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "44232007"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44817533"
 ---
 # <a name="information-barriers"></a>Obstacles aux informations
-
-## <a name="overview"></a>Vue d’ensemble
 
 Les services de Cloud Computing Microsoft incluent de puissantes fonctionnalités de communication et de collaboration. Mais supposons que vous souhaitiez restreindre les communications entre deux groupes afin d’éviter un conflit d’intérêts au sein de votre organisation. Vous pouvez aussi souhaiter restreindre les communications entre certaines personnes au sein de votre organisation afin de protéger les informations internes. Microsoft 365 permet la communication et la collaboration entre les groupes et les organisations, de sorte qu’y a-t-il un moyen de restreindre les communications entre des groupes d’utilisateurs spécifiques lorsque cela est nécessaire ? Avec des barrières d’informations, vous pouvez le faire ! 
 
@@ -43,18 +42,18 @@ Pour tous ces exemples de scénarios (et plus), des stratégies de barrière des
 
 ## <a name="what-happens-with-information-barriers"></a>Qu’en est-il des barrières de l’information ?
 
-Lorsque des stratégies de barrière des informations sont en place, les personnes qui ne doivent pas communiquer avec d’autres utilisateurs spécifiques ne peuvent pas trouver, sélectionner, converser ou appeler ces utilisateurs. Avec des barrières d’informations, des vérifications sont en place pour empêcher toute communication non autorisée.
+Lorsque des stratégies d’obstacles aux informations sont en place, les personnes qui ne doivent pas communiquer avec d’autres utilisateurs spécifiques ne pourront pas trouver, sélectionner, discuter ou appeler ces utilisateurs. Grâce aux obstacles aux informations, des vérifications sont en place pour empêcher toute communication non autorisée.
 
-Initialement, les barrières relatives aux informations s’appliquent aux conversations et canaux Microsoft teams uniquement. Dans Microsoft Teams, les stratégies de barrière des informations déterminent et bloquent les types de communications non autorisés suivants :
+Initialement, les barrières relatives aux informations s’appliquent aux conversations et canaux Microsoft teams uniquement. Dans Microsoft Teams, les stratégies de cloisonnement de l’information déterminent et bloquent les types suivants de communications non autorisées :
 - Recherche d’un utilisateur
 - Ajout d’un membre à une équipe
 - Démarrage d’une session de conversation avec une personne
 - Démarrage d’une conversation de groupe
-- Invitation d’une personne à participer à une réunion
+- Inviter une personne à participer à une réunion
 - Partage d’un écran
 - Passer un appel 
 
-Si les personnes impliquées sont incluses dans une stratégie de barrière des informations pour empêcher l’activité, elles ne pourront pas continuer. En outre, il est possible que tout le monde inclus dans une stratégie de barrière des informations ne puisse pas communiquer avec d’autres personnes dans Microsoft Teams. Lorsque les personnes affectées par les stratégies de barrière des informations font partie de la même conversation de groupe ou d’équipe, elles peuvent être supprimées de ces sessions de conversation et il se peut que la communication avec le groupe ne soit pas autorisée.
+Si les personnes impliquées sont incluses dans une stratégie de cloisonnement de l’information pour empêcher l’activité, elles ne pourront pas continuer. De plus, il est possible que les personnes incluses dans une stratégie de barrière des informations ne puissent pas communiquer avec d’autres personnes dans Microsoft Teams. Lorsque des personnes concernées par une stratégie de cloisonnement de l’information font partie de la même conversation de groupe ou d’équipe, il est possible qu’elles soient supprimées de ces sessions de conversation et que la communication avec le groupe ne soit pas autorisée.
 
 Pour en savoir plus sur l’expérience utilisateur avec des barrières d’informations, consultez la rubrique [barrières relatives aux informations dans Microsoft teams](https://docs.microsoft.com/MicrosoftTeams/information-barriers-in-teams).
 
@@ -71,8 +70,8 @@ Pour plus d’informations, consultez [la rubrique solutions de conformité](htt
 
 Pour [définir ou modifier des stratégies de barrière des informations](information-barriers-policies.md), vous devez disposer de l’un des rôles suivants :
 
-- Administrateur général Microsoft 365
-- Administrateur général Office 365
+- Administrateur général Microsoft 365
+- Administrateur général Office 365
 - Administrateur de conformité
 - IB gestion de la conformité (il s’agit d’un nouveau rôle !)
 
@@ -88,4 +87,4 @@ Vous devez être familiarisé avec les applets de commande PowerShell pour défi
 
 - [Définir des stratégies pour les barrières des informations](information-barriers-policies.md)
 
-- [Modifier (ou supprimer) des stratégies de barrière des informations](information-barriers-edit-segments-policies.md) 
+- [Modifier (ou supprimer) des stratégies de cloisonnement de l’information](information-barriers-edit-segments-policies.md) 

@@ -17,18 +17,16 @@ ms.collection:
 - Strat_O365_Enterprise
 description: En savoir plus sur le chiffrement disponible dans Azure, tel que le chiffrement de disque Azure
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d5d334c56228a372d7e389bd5d0eff9859184d5b
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 57581f7ca1f4cb605aa2617f73dd1e4b04bd129c
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44033632"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818853"
 ---
 # <a name="encryption-in-azure"></a>Chiffrement dans Azure
 
 Les protections technologiques d’Azure, telles que les communications chiffrées et les processus opérationnels, vous aident à sécuriser vos données. Vous avez également la possibilité d’implémenter des fonctionnalités de chiffrement supplémentaires et de gérer vos propres clés de chiffrement. Quelle que soit la configuration du client, Microsoft applique le chiffrement pour protéger les données client dans Azure. Microsoft vous permet également de contrôler vos données hébergées dans Azure via un éventail de technologies avancées pour chiffrer, contrôler et gérer les clés de chiffrement, et contrôler et auditer l’accès aux données. De plus, le stockage Azure fournit un ensemble complet de fonctionnalités de sécurité qui, ensemble, permettent aux développeurs de créer des applications sécurisées.
-
-## <a name="introduction"></a>Introduction
 
 Azure offre de nombreux mécanismes de protection des données lors de leur déplacement d’un emplacement à un autre. Microsoft utilise le protocole TLS pour protéger les données lorsqu’il est en déplacement entre les services Cloud et les clients. Les centres de données de Microsoft négocient une connexion TLS avec les systèmes clients qui se connectent à Azure services. PFS (Perfect Forward Secrecy) protège les connexions entre les systèmes clients des clients et les services Cloud de Microsoft par des clés uniques. Les connexions utilisent également des longueurs de clés de chiffrement 2 048 bits basées sur RSA. Cette combinaison complique l’interception et l’accès aux données en transit.
 

@@ -14,13 +14,14 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-description: Découvrez comment les utilisateurs utilisent les étiquettes de confidentialité dans les applications Office pour le bureau, les applications Office pour mobile et les applications Office pour le Web. Découvrez les applications qui prennent en charge les étiquettes de sensibilité.
-ms.openlocfilehash: 8feb8fc70277e502c5bbb321c864e4cd022ad725
-ms.sourcegitcommit: 03da5464943ef4b9a51644601a229897955dcbb2
+description: Découvrez comment les utilisateurs utilisent les étiquettes de confidentialité dans les applications Office pour ordinateur de bureau, mobile et le Web, et quelles applications prennent en charge les étiquettes de sensibilité.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: d2d1486aaed7ee3be308a847d9fd3ae19585f52d
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44658347"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44819254"
 ---
 # <a name="use-sensitivity-labels-in-office-apps"></a>Utiliser les étiquettes de confidentialité dans les applications Office
 

@@ -16,13 +16,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: aaca8987-5b62-458b-9882-c28476a66918
-description: La journalisation d’audit des boîtes aux lettres est activée par défaut (également appelée audit des boîtes aux lettres par défaut ou audit des boîtes aux lettres par défaut). En d’autres termes, certaines actions effectuées par les propriétaires de boîtes aux lettres, les délégués et les administrateurs sont automatiquement enregistrées dans un journal d’audit de boîte aux lettres, dans lequel vous pouvez rechercher des activités effectuées sur la boîte aux lettres.
-ms.openlocfilehash: 03e32a11176530d26f33076331f8f6a2093e7200
-ms.sourcegitcommit: 87eff6e8a08cec3cb0464a3b765434717584a4a9
+ms.custom: seo-marvel-apr2020
+description: La journalisation d’audit de boîte aux lettres est activée par défaut dans Microsoft 365 (également appelée audit de boîte aux lettres par défaut ou audit de boîte aux lettres par défaut). En d’autres termes, certaines actions effectuées par les propriétaires de boîtes aux lettres, les délégués et les administrateurs sont automatiquement enregistrées dans un journal d’audit de boîte aux lettres, dans lequel vous pouvez rechercher des activités effectuées sur la boîte aux lettres.
+ms.openlocfilehash: 5b1aaab6db56d989c36cd977122d4e5843587aac
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/26/2020
-ms.locfileid: "44371428"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44817833"
 ---
 # <a name="manage-mailbox-auditing"></a>Gérer l’audit de boîte aux lettres
 
@@ -110,7 +111,7 @@ Le tableau suivant décrit les actions de boîte aux lettres disponibles dans l�
 |**Copier**|Un message a été copié dans un autre dossier.|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|||
 |**Create**|Un élément a été créé dans le dossier calendrier, contacts, notes ou tâches dans la boîte aux lettres (par exemple, une nouvelle demande de réunion est créée). Notez que la création, l’envoi ou la réception d’un message ne sont pas audités. De même, la création d’un dossier de boîte aux lettres n’est pas auditée.|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
 |**Par défaut**||![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|**FolderBind**|Un utilisateur a accédé au dossier de boîte aux lettres. Cette action est également enregistrée lorsque l’administrateur ou un délégué ouvre la boîte aux lettres.<br/><br/> **Remarque**: les enregistrements d’audit pour les actions de liaison de dossiers effectuées par des délégués sont consolidés. Un enregistrement d’audit est généré pour un accès individuel aux dossiers au cours d’une période de 24 heures.|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+|**FolderBind**|A mailbox folder was accessed. This action is also logged when the admin or delegate opens the mailbox. <br/><br/> **Remarque**: les enregistrements d’audit pour les actions de liaison de dossiers effectuées par des délégués sont consolidés. Un enregistrement d’audit est généré pour un accès individuel aux dossiers au cours d’une période de 24 heures.|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
 |**HardDelete**|Un message a été purgé du dossier Éléments récupérables.|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
 |**MailItemsAccessed**|Les données de messagerie sont accessibles par les clients et les protocoles de messagerie. Cette valeur est disponible uniquement pour les utilisateurs d’abonnement de complément de conformité E5 ou E5. Pour plus d’informations, consultez la rubrique [accès aux événements cruciaux pour les enquêtes](advanced-audit.md#access-to-crucial-events-for-investigations).|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
 |**MailboxLogin**|L’utilisateur est connecté à sa boîte aux lettres. |||![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
@@ -120,9 +121,9 @@ Le tableau suivant décrit les actions de boîte aux lettres disponibles dans l�
 |**MoveToDeletedItems**|Un message a été supprimé et déplacé vers le dossier Éléments supprimés.|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
 |**RecordDelete**|Un élément étiqueté comme enregistrement a été supprimé de manière récupérable (déplacé vers le dossier éléments récupérables). Les éléments étiquetés comme enregistrements ne peuvent pas être supprimés définitivement (purgés du dossier éléments récupérables).|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
 |**RemoveFolderPermissions**|**Remarque**: bien que cette valeur soit acceptée en tant qu’action de boîte aux lettres, elle est déjà incluse dans l’action **UpdateFolderPermissions** et n’est pas auditée séparément. En d’autres termes, n’utilisez pas cette valeur.||||
-|**SendAs**|Un message a été envoyé à l’aide de l’autorisation SendAs. Cela signifie qu’un autre utilisateur a envoyé le message comme s’il provenait du propriétaire de la boîte aux lettres.|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>||
-|**SendOnBehalf**|Un message a été envoyé à l’aide de l’autorisation SendOnBehalf. Cela signifie qu’un autre utilisateur a envoyé le message de la part du propriétaire de la boîte aux lettres. Le message indique au destinataire de la part de qui le message a été envoyé et qui a envoyé réellement le message.|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>||
-|**SoftDelete**|Un message a été définitivement supprimé ou supprimé (récupérable) du dossier Éléments supprimés. Les éléments supprimés récupérables sont déplacés vers le dossier Éléments récupérables.|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
+|**SendAs**|A message was sent using the SendAs permission. This means another user sent the message as though it came from the mailbox owner.|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>||
+|**SendOnBehalf**|A message was sent using the SendOnBehalf permission. This means another user sent the message on behalf of the mailbox owner. The message indicates to the recipient who the message was sent on behalf of and who actually sent the message.|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>||
+|**SoftDelete**|A message was permanently deleted or deleted from the Deleted Items folder. Soft-deleted items are moved to the Recoverable Items folder.|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
 |**Mettre à jour**|Un message ou ses propriétés ont été modifiés.|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
 |**UpdateCalendarDelegation**|Une délégation de calendrier a été affectée à une boîte aux lettres. La délégation de calendrier donne à une autre personne les mêmes autorisations d’organisation pour gérer le calendrier du propriétaire de la boîte aux lettres.|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>||![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
 |**UpdateComplianceTag**|Une étiquette de rétention différente est appliquée à un élément de courrier (un élément ne peut avoir qu’une seule étiquette de rétention affectée).|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
@@ -147,20 +148,20 @@ N’oubliez pas qu’un administrateur disposant d’une autorisation d’accès
 |**MoveToDeletedItems**|Un message a été supprimé et déplacé vers le dossier Éléments supprimés.|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
 |**SendAs**|Un message a été envoyé à l’aide de l’autorisation Envoyer en tant que.|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>||
 |**SendOnBehalf**|Un message a été envoyé à l’aide de l’autorisation Envoyer de la part de. |![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>||
-|**SoftDelete**|Un message a été définitivement supprimé ou supprimé (récupérable) du dossier Éléments supprimés. Les éléments supprimés récupérables sont déplacés vers le dossier Éléments récupérables.|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
+|**SoftDelete**|A message was permanently deleted or deleted from the Deleted Items folder. Soft-deleted items are moved to the Recoverable Items folder.|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
 |**Mettre à jour**|Un message ou ses propriétés ont été modifiés.|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
 
 ### <a name="verify-that-default-mailbox-actions-are-being-logged-for-each-logon-type"></a>Vérifier que les actions de boîte aux lettres par défaut sont journalisées pour chaque type d’ouverture de session
 
 L’audit de boîte aux lettres activé par défaut ajoute une nouvelle propriété *DefaultAuditSet* à toutes les boîtes aux lettres. La valeur de cette propriété indique si les actions de boîte aux lettres par défaut (gérées par Microsoft) sont auditées sur la boîte aux lettres.
 
-Pour afficher la valeur sur les boîtes aux lettres utilisateur ou les boîtes aux lettres partagées, remplacez \< MailboxIdentity \> par le nom, l’alias, l’adresse de messagerie ou le nom d’utilisateur principal (username) de la boîte aux lettres, puis exécutez la commande suivante dans Exchange Online PowerShell :
+Pour afficher la valeur dans les boîtes aux lettres utilisateur ou les boîtes aux lettres partagées, remplacez \<MailboxIdentity\> par le nom, l’alias, l’adresse de messagerie ou le nom d’utilisateur principal (username) de la boîte aux lettres, puis exécutez la commande suivante dans Exchange Online PowerShell :
 
 ```PowerShell
 Get-Mailbox -Identity <MailboxIdentity> | Format-List DefaultAuditSet
 ```
 
-Pour afficher la valeur sur les boîtes aux lettres de groupe Microsoft 365, remplacez \< MailboxIdentity \> par le nom, l’alias ou l’adresse de messagerie de la boîte aux lettres partagée, puis exécutez la commande suivante dans Exchange Online PowerShell :
+Pour afficher la valeur sur les boîtes aux lettres de groupe Microsoft 365, remplacez \<MailboxIdentity\> par le nom, l’alias ou l’adresse e-mail de la boîte aux lettres partagée, puis exécutez la commande suivante dans Exchange Online PowerShell :
 
 ```PowerShell
 Get-Mailbox -Identity <MailboxIdentity> -GroupMailbox | Format-List DefaultAuditSet
@@ -186,7 +187,7 @@ Pour plus d’informations, consultez la section [modifier ou restaurer les acti
 
 ### <a name="display-the-mailbox-actions-that-are-being-logged-on-mailboxes"></a>Afficher les actions de boîte aux lettres qui sont consignées sur des boîtes aux lettres
 
-Pour afficher les actions de boîte aux lettres actuellement enregistrées dans des boîtes aux lettres utilisateur ou des boîtes aux lettres partagées, remplacez \< MailboxIdentity \> par le nom, l’alias, l’adresse de messagerie ou le nom d’utilisateur principal (username) de la boîte aux lettres, puis exécutez une ou plusieurs des commandes suivantes dans Exchange Online PowerShell.
+Pour afficher les actions de boîte aux lettres actuellement enregistrées dans des boîtes aux lettres utilisateur ou des boîtes aux lettres partagées, remplacez \<MailboxIdentity\> par le nom, l’alias, l’adresse de messagerie ou le nom d’utilisateur principal (username) de la boîte aux lettres, puis exécutez une ou plusieurs des commandes suivantes dans Exchange Online PowerShell.
 
 > [!NOTE]
 > Bien que vous puissiez ajouter le `-GroupMailbox` commutateur aux commandes **Get-Mailbox** suivantes pour les boîtes aux lettres de groupe Microsoft 365, ne croyez pas les valeurs renvoyées. Les actions de boîte aux lettres par défaut et statiques qui sont auditées pour les boîtes aux lettres de groupe Microsoft 365 sont décrites dans la section [actions de boîte aux lettres pour les boîtes aux lettres de groupe microsoft 365](#mailbox-actions-for-microsoft-365-group-mailboxes) , plus haut dans cette rubrique.
@@ -324,7 +325,7 @@ Toutefois, vous pouvez toujours utiliser la cmdlet **Set-MailboxAuditBypassAssoc
 
 - Les actions d’administration effectuées par les utilisateurs ignorés ne sont pas enregistrées.
 
-Pour contourner la journalisation d’audit de boîte aux lettres pour un utilisateur spécifique, remplacez \< MailboxIdentity \> par le nom, l’adresse de messagerie, l’alias ou le nom d’utilisateur principal (username) de l’utilisateur, puis exécutez la commande suivante :
+Pour contourner la journalisation d’audit de boîte aux lettres pour un utilisateur spécifique, remplacez \<MailboxIdentity\> par le nom, l’adresse de messagerie, l’alias ou le nom d’utilisateur principal (username) de l’utilisateur et exécutez la commande suivante :
 
 ```PowerShell
 Set-MailboxAuditBypassAssociation -Identity <MailboxIdentity> -AuditByPassEnabled $true
@@ -359,7 +360,7 @@ La valeur **true** indique que l’enregistrement d’audit de boîte aux lettre
 
     - [Exporter les journaux d’audit de boîte aux lettres](https://docs.microsoft.com/Exchange/security-and-compliance/exchange-auditing-reports/export-mailbox-audit-logs)
 
-    - [Exécuter un rapport d'accès aux boîtes aux lettres par des non-propriétaires](https://docs.microsoft.com/Exchange/security-and-compliance/exchange-auditing-reports/non-owner-mailbox-access-report)
+    - [Exécuter un rapport d’accès aux boîtes aux lettres par des non-propriétaires](https://docs.microsoft.com/Exchange/security-and-compliance/exchange-auditing-reports/non-owner-mailbox-access-report)
 
 - Par défaut, les enregistrements du journal d’audit de boîte aux lettres sont conservés pendant 90 jours avant d’être supprimés. Vous pouvez modifier la limite d’âge pour les enregistrements du journal d’audit à l’aide du paramètre *AuditLogAgeLimit* sur la cmdlet **Set-Mailbox** dans Exchange Online PowerShell. Toutefois, l’augmentation de cette valeur ne vous permet pas de rechercher des événements datant de plus de 90 jours dans le journal d’audit.
 

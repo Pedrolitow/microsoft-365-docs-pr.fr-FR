@@ -16,21 +16,22 @@ search.appverid:
 - MET150
 ms.assetid: a797682f-ad85-4c08-a354-3850ba2237ee
 description: 'Découvrez comment configurer les paramètres avancés, notamment les doublons, les threads de messagerie et les thèmes, pour le processus d’analyse dans Advanced eDiscovery. '
-ms.openlocfilehash: 91faf9e39fe7b8a7fada7b05ccd88351d813b148
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: b596ffa4061909ccb5c149553ac8fac169b7fd77
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631271"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44819234"
 ---
 # <a name="set-analyze-advanced-settings-in-advanced-ediscovery"></a>Définir l’analyse des paramètres avancés dans Advanced eDiscovery
 
 > [!NOTE]
-> Pour utiliser Advanced eDiscovery, votre organisation doit souscrire un abonnement Office 365 E3 avec le module complémentaire Conformité avancée ou un abonnement E5. Si vous ne disposez pas d’un abonnement et que vous souhaitez essayer Advanced eDiscovery, vous pouvez vous [inscrire pour utiliser une version d’évaluation d’Office 365 Entreprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
+> Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
 Advanced eDiscovery fournit des paramètres avancés par défaut pour les paramètres d’analyse de module. La procédure suivante décrit les paramètres qui peuvent être spécifiés.
   
-1. Dans l' **onglet \> préparer \> l’analyse** , cliquez sur **Paramètres avancés** (au bas de la page). Le panneau suivant s’affiche. 
+1. Dans l’onglet **préparer l' \> analyse \> ** , cliquez sur **Paramètres avancés** (au bas de la page). Le panneau suivant s’affiche. 
     
     ![Paramètres avancés Définir l’analyse](../media/c9ea3017-e19a-456b-a742-c3d07121a3f6.png)
   
@@ -46,9 +47,9 @@ Advanced eDiscovery fournit des paramètres avancés par défaut pour les param�
     
 4. Cliquez sur **Enregistrer**. 
     
-## <a name="see-also"></a>Voir aussi
+## <a name="related-topics"></a>Voir aussi
 
-[Advanced eDiscovery (classique)](office-365-advanced-ediscovery.md)
+[Advanced eDiscovery (classique)](office-365-advanced-ediscovery.md)
   
 [Présentation de la similarité des documents](understand-document-similarity-in-advanced-ediscovery.md)
   

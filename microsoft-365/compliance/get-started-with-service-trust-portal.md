@@ -11,15 +11,17 @@ ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid: MET150
 mscollection: M365-security-compliance
-ms.custom: Adm_O365
+ms.custom:
+- Adm_O365
+- seo-marvel-apr2020
 ms.assetid: f30e2353-0bd6-41ed-8347-eea1fb8d2662
-description: Pour les rapports de conformité réglementaire de Microsoft 365, Azure et Dynamics 365 Online, pour consulter les audits tiers, Découvrez comment Microsoft conserve les données client sûres et comment vous pouvez vous conformer aux normes ISO, HIPAA, NIST, FINRA, RGPD et FedRAMP lorsque vous utilisez ces services en ligne.
-ms.openlocfilehash: 837ab06a0b4cf058586cff31c462884833da5871
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: Découvrez comment accéder au portail d’approbation de services Microsoft et l’utiliser pour vous aider à respecter les pratiques de sécurité, de confidentialité et de conformité.
+ms.openlocfilehash: 0866a32087e61bb8af3ea9d7d4c61ea463864067
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632445"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44817623"
 ---
 # <a name="get-started-with-the-microsoft-service-trust-portal"></a>Prise en main du portail d’approbation de service Microsoft
 
@@ -29,7 +31,7 @@ Le portail d’approbation de services Microsoft propose un large éventail de c
 
 Le portail d’approbation de services contient des détails sur l’implémentation de Microsoft des contrôles et des processus qui protègent nos services Cloud et les données client qu’ils contiennent. Pour accéder à certaines des ressources sur le portail d’approbation de services, vous devez vous connecter en tant qu’utilisateur authentifié avec votre compte de services de Cloud Computing Microsoft (soit un compte d’organisation Azure Active Directory ou un compte Microsoft), puis consulter et accepter le contrat de non-divulgation Microsoft pour les documents de conformité.
   
-Les **clients existants peuvent accéder au portail d’approbation de service** à [https://aka.ms/STP](https://aka.ms/STP) l’aide de l’un des abonnements en ligne suivants (version d’évaluation ou payante) : 
+Les **clients existants peuvent accéder au portail d’approbation de service** à l' [https://aka.ms/STP](https://aka.ms/STP) aide de l’un des abonnements en ligne suivants (version d’évaluation ou payante) : 
   
 - Microsoft 365
 
@@ -112,7 +114,7 @@ Cette nouvelle fonctionnalité vous permet d’enregistrer (ou d' *épingler*) d
 
 Accédez à **plus de > administrateur** pour accéder aux fonctions d’administration qui sont uniquement disponibles pour le compte d’administrateur général. Cette option est visible uniquement lorsque vous êtes connecté en tant qu’administrateur général. Il existe deux options dans le menu déroulant **administrateur** :
   
-- **Paramètres :** Cette page vous permet d’attribuer un accès basé sur les rôles (appelé *rôles d’utilisateur*) au gestionnaire de conformité.  Si vous souhaitez en savoir plus, consultez les articles : 
+- **Paramètres :** Cette page vous permet d’attribuer un accès basé sur les rôles (appelé *rôles d’utilisateur*) au gestionnaire de conformité.  Pour plus d’informations, reportez-vous aux rubriques suivantes :
    
   - [Autorisations dans le gestionnaire de conformité (classique)](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md#permissions-and-role-based-access-control)
    
@@ -122,7 +124,7 @@ Accédez à **plus de > administrateur** pour accéder aux fonctions d’adminis
 
 - **Paramètres de confidentialité de l’utilisateur :** Cette page vous permet d’exporter un rapport qui contient des affectations d’éléments d’action dans le gestionnaire de conformité pour un utilisateur spécifique. Vous pouvez également réaffecter tous les éléments d’action à un autre utilisateur et supprimer les éléments d’action attribués de l’utilisateur spécifié. Pour plus d’informations, consultez la rubrique [paramètres de confidentialité](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md#user-privacy-settings)de l’utilisateur.
 
-### <a name="search"></a>Recherche
+### <a name="search"></a>Rechercher
 
 Cliquez sur la loupe dans le coin supérieur droit de la page du portail d’approbation de service pour développer la zone, entrez vos termes de recherche, puis appuyez sur **entrée**. La page de **recherche** s’affiche, avec le terme de recherche affiché dans la zone de recherche et les résultats de la recherche répertoriés ci-dessous.
   

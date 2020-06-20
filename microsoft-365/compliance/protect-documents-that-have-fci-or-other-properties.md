@@ -16,13 +16,15 @@ search.appverid:
 - MET150
 ms.collection:
 - M365-security-compliance
-description: De nombreuses organisations appliquent déjà un processus permettant d’identifier et de classer les informations sensibles à l’aide des propriétés de classification dans l’infrastructure de classification des fichiers (ICF) Windows Server, des propriétés de document dans SharePoint ou des propriétés de document appliquées par un système tiers. Si cela décrit votre organisation, vous pouvez créer une stratégie DLP qui reconnaît les propriétés qui ont été appliquées aux documents par Windows Server ICF ou un autre système, afin que la stratégie DLP puisse être appliquée aux documents Office avec des valeurs de propriété ICF ou autres.
-ms.openlocfilehash: 3fa28492ef4d19903797741795091561de3fa257
-ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
+ms.custom:
+- seo-marvel-apr2020
+description: Découvrez comment utiliser une stratégie de protection contre la perte de données (DLP) pour protéger les documents possédant des propriétés d’un système tiers.
+ms.openlocfilehash: 4db6844c6f00856de5893631058c774210344454
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "44327100"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818719"
 ---
 # <a name="create-a-dlp-policy-to-protect-documents-with-fci-or-other-properties"></a>Création d’une stratégie DLP pour protéger les documents avec l’ICF ou d’autres propriétés
 
@@ -32,7 +34,7 @@ Dans Microsoft 365, vous pouvez utiliser une stratégie de protection contre la 
   
 Par exemple, votre organisation peut utiliser l’ICF Windows Server pour identifier les documents avec des informations d’identification personnelle (PII) telles que des numéros de sécurité sociale, puis classer le document en définissant la propriété **Informations d’identification personnelle** sur **Haut**, **Modéré**, **Faible**, **Public** ou **Non PII** selon le type et le nombre d’occurrences de PII trouvées dans le document. Dans Microsoft 365, vous pouvez créer une stratégie DLP qui identifie les documents dont la propriété est définie sur des valeurs spécifiques, telles que **High** et **Medium**, puis effectue une action telle que le blocage de l’accès à ces fichiers. La même stratégie peut disposer d’une autre règle qui exécute une action différente si la propriété est définie sur **Faible**, telle que l’envoi d’une notification par courrier électronique. De cette manière, DLP s’intègre à Windows Server ICF et peut aider à protéger les documents Office chargés ou partagés avec Microsoft 365 à partir de serveurs de fichiers Windows Server.
   
-Une stratégie DLP recherche simplement une paire nom/valeur de propriété spécifique. N’importe quelle propriété de document peut être utilisée, tant que la propriété possède une propriété gérée correspondante pour la recherche SharePoint. Par exemple, une collection de sites SharePoint peut utiliser un type de contenu nommé **Relevé de voyage** avec un champ obligatoire nommé **Client**. Lorsqu’une personne crée un relevé de voyage, elle doit entrer le nom du client. Cette paire nom/valeur de propriété peut également être utilisée dans une stratégie DLP, par exemple, si vous voulez une règle qui bloque l’accès au document pour les utilisateurs externes lorsque le champ **Client** contient **Contoso**.
+A DLP policy simply looks for a specific property name/value pair. Any document property can be used, as long as the property has a corresponding managed property for SharePoint search. For example, a SharePoint site collection might use a content type named **Trip Report** with a required field named **Customer**. Whenever a person creates a trip report, they must enter the customer name. This property name/value pair can also be used in a DLP policy — for example, if you want a rule that blocks access to the document for external users when the **Customer** field contains **Contoso**.
   
 Notez que si vous souhaitez appliquer votre stratégie DLP au contenu avec des étiquettes Microsoft 365 spécifiques, vous ne devez pas suivre les étapes ci-dessous. Au lieu de cela, Découvrez comment [utiliser une étiquette de rétention comme condition dans une stratégie DLP](data-loss-prevention-policies.md#using-a-retention-label-as-a-condition-in-a-dlp-policy).
   
@@ -40,7 +42,7 @@ Notez que si vous souhaitez appliquer votre stratégie DLP au contenu avec des �
 
 Avant de pouvoir utiliser une propriété ICF Windows Server ou une autre propriété dans une stratégie DLP, vous devez créer une propriété gérée dans le Centre d’administration SharePoint. Voici pourquoi.
   
-Exemples
+In SharePoint Online and OneDrive for Business, the search index is built up by crawling the content on your sites. The crawler picks up content and metadata from the documents in the form of crawled properties. The search schema helps the crawler decide what content and metadata to pick up. Examples of metadata are the author and the title of a document. However, to get the content and metadata from the documents into the search index, the crawled properties must be mapped to managed properties. Only managed properties are kept in the index. For example, a crawled property related to author is mapped to a managed property related to author.
   
 Ceci est important, car DLP utilise le robot de recherche pour identifier et classer les informations sensibles sur vos sites, puis stocker ces informations sensibles dans une partie sécurisée de l’index de recherche. Lorsque vous chargez un document vers Office 365, SharePoint crée automatiquement les propriétés analysées basées sur les propriétés du document. En revanche, pour utiliser une ICF ou une autre propriété dans une stratégie DLP, la propriété analysée doit être mappée sur une propriété gérée afin que le contenu avec cette propriété soit conservé dans l’index.
   
@@ -52,7 +54,7 @@ Vous devez d’abord charger un document avec la propriété que vous souhaitez 
   
 ### <a name="step-2-create-a-managed-property"></a>Étape 2 : création d’une propriété gérée
 
-1. Connectez-vous au Centre d’administration Microsoft 365.
+1. Connectez-vous au centre d’administration Microsoft 365.
     
 2. Dans le volet de navigation de gauche, sélectionnez **centres d’administration** \> **SharePoint**. Vous vous trouvez maintenant dans le Centre d’administration SharePoint.
     
@@ -64,7 +66,7 @@ Vous devez d’abord charger un document avec la propriété que vous souhaitez 
     
     ![Page Propriétés gérées avec le bouton Nouvelle propriété gérée mis en surbrillance](../media/b161c764-414c-4037-83ed-503a49fb4410.png)
   
-5. Entrez un nom et une description pour la propriété. Ce nom apparaîtra dans vos stratégies DLP.
+5. Enter a name and description for the property. This name is what will appear in your DLP policies.
     
 6. Pour **Type**, sélectionnez **Texte**. 
     
@@ -126,7 +128,7 @@ Une règle bloque l’accès au contenu pour lequel la propriété **Information
 
 La réalisation des étapes décrites dans les sections précédentes crée une stratégie DLP qui détecte rapidement le contenu avec cette propriété, mais seulement si ce contenu est téléchargé (de sorte que le contenu est indexé) ou si ce contenu est ancien mais modifié (de sorte que le contenu soit à nouveau indexé).
   
-Pour détecter tout le contenu avec cette propriété, vous voudrez peut-être demander manuellement la réindexation de votre bibliothèque, site ou collection de sites, afin que la stratégie DLP connaisse tout le contenu avec cette propriété. Dans SharePoint Online, le contenu est automatiquement analysé selon une planification d’analyse définie. Le robot récupère le contenu qui a été modifié depuis la dernière analyse et met à jour l’index. Si vous avez besoin que votre stratégie DLP protège le contenu avant la prochaine analyse planifiée, vous pouvez suivre cette procédure.
+To detect content with that property everywhere, you may want to manually request that your library, site, or site collection be re-indexed, so that the DLP policy is aware of all the content with that property. In SharePoint Online, content is automatically crawled based on a defined crawl schedule. The crawler picks up content that has changed since the last crawl and updates the index. If you need your DLP policy to protect content before the next scheduled crawl, you can take these steps.
   
 > [!CAUTION]
 > La réindexation d’un site peut entraîner une charge importante sur le système de recherche. Ne réindexez pas votre site, sauf si votre scénario l’exige. 
@@ -149,4 +151,4 @@ Pour plus d’informations, voir [Demander manuellement l’analyse et la réind
     
 - [Contenu des modèles de stratégie DLP](what-the-dlp-policy-templates-include.md)
     
-- [Définitions d’entités de type d’informations sensibles](sensitive-information-type-entity-definitions.md)
+- [Définitions d’entités des types d’informations sensibles](sensitive-information-type-entity-definitions.md)

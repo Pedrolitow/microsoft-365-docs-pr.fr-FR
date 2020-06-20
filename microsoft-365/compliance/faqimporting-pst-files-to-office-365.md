@@ -15,13 +15,14 @@ search.appverid:
 - MED150
 - MET150
 ms.assetid: 2fe71b05-f5a2-4182-ade7-4dc5cabdfd51
-description: 'Forum aux questions pour les administrateurs sur l’utilisation du service d’importation Office 365 pour importer les fichiers PST de votre organisation dans des boîtes aux lettres Microsoft 365. '
-ms.openlocfilehash: 0d3245c962c2d22f0d500aafe22703bd3e57d504
-ms.sourcegitcommit: a418195dc11e6251ae37e788c102bbaa7087e44e
+ms.custom: seo-marvel-apr2020
+description: Cet article contient des réponses à certaines questions fréquemment posées aux administrateurs concernant l’importation de fichiers PST vers Microsoft 365 à l’aide du service d’importation Office 365.
+ms.openlocfilehash: 0f490b7bae3f462bb07725bf14453a6b9a4d7b9e
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "44579199"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44817733"
 ---
 # <a name="faq-about-importing-pst-files"></a>FAQ sur l’importation de fichiers PST
 
@@ -93,7 +94,7 @@ Oui. Les métadonnées du message d’origine sont inchangées pendant l’impor
   
  **Une limite est-elle appliquée au nombre de niveaux d’une hiérarchie de dossiers pour un fichier PST que je souhaite importer dans une boîte aux lettres ?**
   
-Oui. Vous ne pouvez pas importer un fichier PST comportant 300 niveaux de dossiers imbriqués ou plus.
+Yes. You can't import a PST file that has 300 or more levels of nested folders.
   
  **Est-il possible d’utiliser le chargement réseau pour importer des fichiers PST dans une boîte aux lettres inactive Office 365 ?**
   
@@ -154,7 +155,7 @@ Vous pouvez expédier au maximum 10 disques durs pour une même tâche d’impo
   
  **Quel délai faut-il compter entre le moment où j’expédie mon disque dur et le moment où les données sont sur le centre de données Microsoft ?**
   
-Cela dépend de plusieurs facteurs, comme votre proximité par rapport au centre de données Microsoft et le type d’expédition choisi pour l’envoi de votre disque dur (livraison le jour suivant, livraison à deux jours ou envoi économique). La plupart des expéditeurs vous communiquent un numéro de suivi pour suivre le statut de votre livraison.
+That depends on a few things, such as your proximity to the Microsoft data center and what kind of shipping option you used to ship your hard drive (such as, next-day delivery, two-day delivery, or ground-delivery). With most shippers, you can use the tracking number to track the status of your delivery.
   
  **Une fois mon disque dur arrivé au centre de données de Microsoft, combien de temps faut-il pour charger mon fichiers PST dans Azure ?**
   
@@ -192,7 +193,7 @@ Oui. Les métadonnées du message d’origine sont inchangées pendant l’impor
   
  **Une limite est-elle appliquée au nombre de niveaux d’une hiérarchie de dossiers pour un fichier PST que je souhaite importer dans une boîte aux lettres ?**
   
-Oui. Vous ne pouvez pas importer un fichier PST comportant 300 niveaux de dossiers imbriqués ou plus.
+Yes. You can't import a PST file that has 300 or more levels of nested folders.
   
  **Est-il possible d’expédier un disque en vue de l’importation de fichiers PST dans une boîte aux lettres inactive Microsoft 365 ?**
   
@@ -208,19 +209,19 @@ Non, vous ne pouvez pas importer des fichiers PST dans des dossiers publics.
   
  **Est-il possible de demander à Microsoft de réinitialiser mon disque dur avant de me le retourner ?**
   
-Non, Microsoft ne peut pas réinitialiser les disques durs avant leur renvoi aux clients. Les disques durs vous sont renvoyés en l’état, tels que Microsoft les a reçus.
+No, Microsoft can't wipe hard drives before shipping them back to customers. Hard drives are returned to you in the same state they were in when they were received by Microsoft.
   
  **Est-il possible de demander à Microsoft de broyer mon disque dur au lieu de me le réexpédier ?**
   
-Non, Microsoft ne peut pas détruire votre disque dur. Les disques durs vous sont renvoyés en l’état, tels que Microsoft les a reçus.
+No, Microsoft can't destroy your hard drive. Hard drives are returned to you in the same state they were in when they were received by Microsoft.
   
  **Par quels services de courrier l’expédition de retour est-elle assurée ?**
   
-Si vous êtes un client résidant aux États-Unis ou en Europe, Microsoft fera appel à FedEx pour vous retourner le disque dur. Pour toutes les autres régions, Microsoft fait appel à DHL.
+If you're a customer in the United States or Europe, Microsoft uses FedEx to return your hard drive. For all other regions, Microsoft uses DHL.
   
  **Quel est le coût de l’expédition de retour ?**
   
-Les frais d’expédition de retour varient en fonction de votre proximité par rapport au centre de données Microsoft auquel vous avez expédié votre disque dur. Microsoft imputera les frais de retour de votre disque dur sur votre compte FedEx ou DHL. Les frais d’expédition de retour sont à votre charge.
+Return shipping costs vary, depending on your proximity to the Microsoft data center that you shipped your hard drive to. Microsoft will bill your FedEx or DHL account to return your hard drive. The cost of return shipping is your responsibility.
   
  **Est-il possible d’expédier un disque dur à Microsoft en utilisant un service d’expédition de courrier spécial, comme une expédition personnalisée FedEx ?**
   
@@ -228,4 +229,4 @@ Oui.
   
  **Y a-t-il des formalités particulières à effectuer pour expédier un disque dur à l’étranger ?**
   
-Le disque dur que vous expédiez à Microsoft va peut-être devoir franchir des frontières internationales. Si c’est le cas, il vous appartient de vérifier que le disque dur et les données qu’il contient sont importés et/ou exportés conformément à la législation en vigueur. Avant d’expédier un disque dur, vérifiez auprès de vos conseillers si, du point de vue légal, le disque et les données peuvent être expédiés au centre de données Microsoft spécifié. Vous aurez ainsi la garantie qu’il parviendra à Microsoft dans un délai raisonnable.
+The hard drive that you ship to Microsoft might have to cross international borders. If this is the case, you're responsible for ensuring that the hard drive and the data it contains are imported and/or exported in accordance with the applicable laws. Before shipping a hard drive, check with your advisors to verify that your drive and data can legally be shipped to the specified Microsoft data center. This will help to ensure that it reaches Microsoft in a timely manner.

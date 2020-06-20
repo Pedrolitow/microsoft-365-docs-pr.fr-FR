@@ -17,13 +17,15 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 5af334b6-a15d-4f73-97f8-1423457d9f6b
-description: Vous avez la possibilité de dédupliquer les résultats de recherche de découverte électronique exportés de sorte qu’une seule copie d’un message électronique soit exportée même si plusieurs instances du même message ont pu être trouvées dans des boîtes aux lettres différentes.
-ms.openlocfilehash: 6a63783efd76d6e598d3f00dd8a683317c261d2d
-ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
+ms.custom:
+- seo-marvel-apr2020
+description: Découvrez comment éliminer les résultats de recherche de découverte électronique en double afin qu’une seule copie d’un message électronique soit exportée.
+ms.openlocfilehash: 046ef1e40e293e511672d5a95c6f5248b49d13a2
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "44166045"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44817913"
 ---
 # <a name="de-duplication-in-ediscovery-search-results"></a>Déduplication dans les résultats de recherche eDiscovery
 
@@ -41,17 +43,17 @@ les outils eDiscovery utilisent une combinaison des propriétés de messagerie s
 
 - **BodyTagInfo** -il s’agit d’une propriété de la banque Exchange interne. La valeur de cette propriété est calculée en vérifiant différents attributs dans le corps du message. Cette propriété est utilisée pour identifier les différences dans le corps des messages. 
 
-Lors du processus d’exportation de la découverte électronique, ces trois propriétés sont comparées pour chaque message correspondant aux critères de recherche. Si ces propriétés sont identiques pour deux (ou plus) messages, ces messages sont considérés comme des doublons et le résultat est qu’une seule copie du message sera exportée si la déduplication est activée. Le message exporté est appelé « élément source ». Les informations sur les messages en double sont incluses dans les rapports **results. csv** et **Manifest. xml** qui sont inclus dans les résultats de recherche exportés. Dans le fichier **results. csv** , un message en double est identifié par une valeur dans la colonne **dupliquer vers l’élément** . La valeur dans cette colonne correspond à la valeur dans la colonne identité de l' **élément** pour le message qui a été exporté. 
+Lors du processus d’exportation de la découverte électronique, ces trois propriétés sont comparées pour chaque message correspondant aux critères de recherche. Si ces propriétés sont identiques pour deux (ou plus) messages, ces messages sont considérés comme des doublons et le résultat est qu’une seule copie du message sera exportée si la déduplication est activée. Le message exporté est appelé « élément source ». Les informations sur les messages en double sont incluses dans les rapports **Results.csv** et **Manifest.xml** inclus dans les résultats de recherche exportés. Dans le fichier **Results.csv** , un message en double est identifié par une valeur dans la colonne **dupliquer vers l’élément** . La valeur dans cette colonne correspond à la valeur dans la colonne identité de l' **élément** pour le message qui a été exporté. 
   
-Les graphiques suivants montrent comment les messages dupliqués sont affichés dans les rapports **results. csv** et **Manifest. xml** qui sont exportés avec les résultats de la recherche. Ces rapports n’incluent pas les propriétés de messagerie précédemment décrites, qui sont utilisées dans l’algorithme de déduplication. Au lieu de cela, les rapports incluent la propriété d’identité de l' **élément** qui est assignée aux éléments par la Banque d’aide Exchange. 
+Les graphiques suivants montrent comment les messages dupliqués sont affichés dans le **Results.csv** et **Manifest.xml** des rapports qui sont exportés avec les résultats de la recherche. Ces rapports n’incluent pas les propriétés de messagerie précédemment décrites, qui sont utilisées dans l’algorithme de déduplication. Au lieu de cela, les rapports incluent la propriété d’identité de l' **élément** qui est assignée aux éléments par la Banque d’aide Exchange. 
   
- ### <a name="resultscsv-report-viewed-in-excel"></a>Rapport results. csv (affiché dans Excel)
+ ### <a name="resultscsv-report-viewed-in-excel"></a>Rapport de Results.csv (affiché dans Excel)
   
-![Affichage des informations sur les éléments en double dans le rapport results. csv](../media/e3d64004-3b91-4cba-b6f3-934b46cbdcdb.png)
+![Affichage des informations sur les éléments en double dans le rapport de Results.csv](../media/e3d64004-3b91-4cba-b6f3-934b46cbdcdb.png)
   
- ### <a name="manifestxml-report-viewed-in-excel"></a>Rapport manifest. XML (affiché dans Excel)
+ ### <a name="manifestxml-report-viewed-in-excel"></a>Rapport de Manifest.xml (affiché dans Excel)
   
-![Affichage des informations sur les éléments en double dans le rapport manifest. Xml](../media/69aa4786-9883-46ff-bcae-b35e0daf4a6d.png)
+![Affichage des informations sur les éléments en double dans le rapport de Manifest.xml](../media/69aa4786-9883-46ff-bcae-b35e0daf4a6d.png)
   
 En outre, les autres propriétés des messages en double sont incluses dans les rapports d’exportation. Cela inclut la boîte aux lettres dans laquelle se trouve le doublon du message, si le message a été envoyé à un groupe de distribution et si le message a été envoyé à un autre utilisateur (CC) ou CCI.
   

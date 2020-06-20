@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 08f912492d1874b940156e3a6165f9476add7711
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: 4615b20fbd90af6e2ee7acad31f87d0021edb485
+ms.sourcegitcommit: 51e47ca4b355436a2ad3deb154060eb1927428e6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44065849"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44773745"
 ---
 # <a name="commodity-futures-trading-commission-cftc-rule-131c-d-united-states"></a>1.31 (c-d) de la règle de négociation des perspectives de marchandises (CFTC) pour les États-Unis
 
@@ -41,11 +41,11 @@ Pour évaluer la conformité Azure à l’aide de la règle CFTC 1.31 (c-d), Mic
 
 ### <a name="microsoft-office-365"></a>Microsoft Office 365
 
-Pour évaluer la conformité d’Office 365 avec la règle CFTC 1.31 (c-d), Microsoft a engagé un cabinet d’avocats indépendant spécialisé dans la réglementation, Covington & Burling, LLP. Dans le rapport obtenu, l' [archivage dans Microsoft Office 365, la rétention des données et la réglementation 17A -4](https://go.microsoft.com/fwlink/?linkid=830440), Covington validée que [Office 365 avec verrouillage de conservation](https://docs.microsoft.com/office365/securitycompliance/retention-policies#locking-a-retention-policy) inclut des fonctionnalités d’archivage permettant aux clients réglementés de stocker les données d’une manière qui les aide à respecter les exigences CFTC pour la rétention des enregistrements.
+Pour évaluer la conformité d’Office 365 avec la règle CFTC 1.31 (c-d), Microsoft a engagé un cabinet d’avocats indépendant spécialisé dans la réglementation, Covington & Burling, LLP. Dans le rapport obtenu, l' [archivage dans Microsoft Office 365, la rétention des données et la réglementation 17A -4](https://go.microsoft.com/fwlink/?linkid=830440), Covington validée que [Office 365 avec verrouillage de conservation](retention-policies.md) inclut des fonctionnalités d’archivage permettant aux clients réglementés de stocker les données d’une manière qui les aide à respecter les exigences CFTC pour la rétention des enregistrements.
 
 L’archivage dans Office 365 permet de conserver une large gamme de données, notamment la messagerie électronique, la messagerie vocale, les documents partagés, les messages instantanés et les données tierces. En particulier, l’archivage dans Office 365 permet aux clients de définir des stratégies de rétention de messagerie globales ou granulaires pour stocker des données pendant une période définie et au-delà dans un format non réinscriptible et non effaçable.
 
-## <a name="microsoft-in-scope-cloud-services"></a>Services Cloud Microsoft dans le périmètre
+## <a name="microsoft-in-scope-cloud-services"></a>Services Cloud Microsoft concernés
 
 - [Azure](https://aka.ms/AzureCompliance)
 - [Office 365](https://aka.ms/o365-compliance-framework)

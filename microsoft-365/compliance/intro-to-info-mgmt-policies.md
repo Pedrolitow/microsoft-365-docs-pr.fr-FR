@@ -18,19 +18,21 @@ search.appverid:
 ms.assetid: 63a0b501-ba59-44b7-a35c-999f3be057b2
 ms.collection:
 - M365-security-compliance
-description: Une stratégie de gestion des informations constitue un ensemble de règles pour un type de contenu. Les stratégies de gestion des informations permettent aux organisations de contrôler et de suivre des événements tels que la durée de rétention des contenus ou les actions que les utilisateurs sont autorisés à effectuer sur ces contenus. Les stratégies de gestion des informations peuvent aider les organisations à se conformer aux réglementations légales ou administratives, ou elles peuvent simplement appliquer les processus d’entreprise internes.
-ms.openlocfilehash: 7f977090b147eca427fcd2e4b536821890493950
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.custom:
+- seo-marvel-apr2020
+description: Découvrez comment utiliser les stratégies de gestion des informations pour contrôler et suivre des éléments tels que la durée de conservation du contenu ou les actions que les utilisateurs peuvent effectuer avec ce contenu.
+ms.openlocfilehash: dfb1aeb3dbd3a2b17f18bbd03d5f4d3e198e4c47
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42072681"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44815511"
 ---
 # <a name="introduction-to-information-management-policies"></a>Introduction aux stratégies de gestion des informations
 
 Une stratégie de gestion des informations constitue un ensemble de règles pour un type de contenu. Les stratégies de gestion des informations permettent aux organisations de contrôler et de suivre des événements tels que la durée de rétention des contenus ou les actions que les utilisateurs sont autorisés à effectuer sur ces contenus. Les stratégies de gestion des informations peuvent aider les organisations à se conformer aux réglementations légales ou administratives, ou elles peuvent simplement appliquer les processus d’entreprise internes. 
   
-Par exemple, une organisation qui doit suivre des réglementations gouvernementales exigeant qu’elle démontre les « contrôles adéquats » de ses États financiers pourrait créer une ou plusieurs stratégies de gestion des informations qui auditent des actions spécifiques dans la création et processus d’approbation de tous les documents liés aux profils financiers.
+Par exemple, une organisation qui doit suivre des réglementations gouvernementales exigeant qu’elle démontre les « contrôles adéquats » de ses États financiers pourrait créer une ou plusieurs stratégies de gestion des informations qui auditent des actions spécifiques dans le processus de création et d’approbation de tous les documents liés à des profils financiers.
   
 Pour obtenir des informations sur les procédures, consultez la rubrique [créer et appliquer des stratégies de gestion des informations](create-info-mgmt-policies.md).
   
@@ -76,6 +78,6 @@ Vous pouvez créer une stratégie de gestion des informations pour une liste ou 
   
 Pour contrôler les stratégies utilisées dans une collection de sites, les administrateurs de collections de sites peuvent désactiver la possibilité de définir des fonctionnalités de stratégie directement sur une liste ou une bibliothèque. Lorsque cette restriction est appliquée, les utilisateurs qui gèrent des listes ou des bibliothèques se limitent à sélectionner des stratégies dans la liste stratégies de collection de sites.
   
-[Une stratégie de gestion des informations est un ensemble de règles pour un type de contenu. Les stratégies de gestion des informations permettent aux organisations de contrôler et de suivre des éléments tels que la durée de conservation du contenu ou les actions que les utilisateurs peuvent effectuer avec ce contenu. Les stratégies de gestion des informations peuvent aider les organisations à se conformer aux réglementations juridiques ou gouvernementales, ou elles peuvent simplement appliquer les processus d’entreprise internes. Par exemple, une organisation qui doit suivre des réglementations gouvernementales exigeant qu’elle démontre les « contrôles adéquats » de ses États financiers pourrait créer une ou plusieurs stratégies de gestion des informations qui auditent des actions spécifiques dans la création et processus d’approbation de tous les documents liés aux profils financiers. Pour obtenir des informations sur les procédures, consultez la rubrique créer et appliquer des stratégies de gestion des informations.](intro-to-info-mgmt-policies.md#__top)
+[Une stratégie de gestion des informations est un ensemble de règles pour un type de contenu. Les stratégies de gestion des informations permettent aux organisations de contrôler et de suivre des éléments tels que la durée de conservation du contenu ou les actions que les utilisateurs peuvent effectuer avec ce contenu. Les stratégies de gestion des informations peuvent aider les organisations à se conformer aux réglementations juridiques ou gouvernementales, ou elles peuvent simplement appliquer les processus d’entreprise internes. Par exemple, une organisation qui doit suivre des réglementations gouvernementales exigeant qu’elle démontre les « contrôles adéquats » de ses États financiers pourrait créer une ou plusieurs stratégies de gestion des informations qui auditent des actions spécifiques dans le processus de création et d’approbation de tous les documents liés à des profils financiers. Pour obtenir des informations sur les procédures, consultez la rubrique créer et appliquer des stratégies de gestion des informations.](intro-to-info-mgmt-policies.md#__top)
   
 

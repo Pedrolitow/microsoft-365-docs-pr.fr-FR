@@ -19,18 +19,18 @@ search.appverid:
 ms.assetid: 5f4f8206-2d6a-4cb2-bbc6-7a0698703cc0
 description: Utilisez la recherche de contenu et le script dans cet article pour effectuer des recherches dans les boîtes aux lettres et les sites OneDrive entreprise pour un groupe d’utilisateurs.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e9269fca59d13dfb715153c4211339e0d9cfb7e0
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 714574739256f98353f01478fb9216432f3dcb47
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035826"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818974"
 ---
 # <a name="use-content-search-to-search-the-mailbox-and-onedrive-for-business-site-for-a-list-of-users"></a>Utiliser la recherche de contenu pour rechercher une liste d’utilisateurs dans la boîte aux lettres et OneDrive Entreprise
 
-Le centre de sécurité & conformité fournit un certain nombre d’applets de commande Windows PowerShell qui vous permettent d’automatiser des tâches de découverte électronique gourmandes en temps. Actuellement, la création d’une recherche de contenu dans le centre de sécurité & conformité afin de rechercher un grand nombre d’emplacements de contenu dépositaire nécessite du temps et une préparation. Avant de créer une recherche, vous devez collecter l’URL de chaque site OneDrive entreprise, puis ajouter chaque boîte aux lettres et le site OneDrive entreprise à la recherche. Dans les prochaines versions, cette opération sera plus facile à effectuer dans le centre de sécurité & conformité. En attendant, vous pouvez utiliser le script de cet article pour automatiser ce processus. Ce script vous invite à indiquer le nom du domaine mon site de votre organisation (par exemple, **contoso** dans l' https://contoso-my.sharepoint.com)URL, une liste des adresses de messagerie des utilisateurs, le nom de la nouvelle recherche de contenu et la requête de recherche à utiliser. Le script obtient l’URL de OneDrive entreprise pour chaque utilisateur dans la liste, puis il crée et démarre une recherche de contenu qui recherche dans la boîte aux lettres et le site OneDrive entreprise pour chaque utilisateur de la liste, à l’aide de la requête de recherche que vous fournissez. 
+Le centre de sécurité & conformité fournit un certain nombre d’applets de commande Windows PowerShell qui vous permettent d’automatiser des tâches de découverte électronique gourmandes en temps. Actuellement, la création d’une recherche de contenu dans le centre de sécurité & conformité afin de rechercher un grand nombre d’emplacements de contenu dépositaire nécessite du temps et une préparation. Avant de créer une recherche, vous devez collecter l’URL de chaque site OneDrive entreprise, puis ajouter chaque boîte aux lettres et le site OneDrive entreprise à la recherche. Dans les prochaines versions, cette opération sera plus facile à effectuer dans le centre de sécurité & conformité. En attendant, vous pouvez utiliser le script de cet article pour automatiser ce processus. Ce script vous invite à indiquer le nom du domaine mon site de votre organisation (par exemple, **contoso** dans l’URL https://contoso-my.sharepoint.com) , une liste des adresses de messagerie des utilisateurs, le nom de la nouvelle recherche de contenu et la requête de recherche à utiliser. Le script obtient l’URL de OneDrive entreprise pour chaque utilisateur dans la liste, puis il crée et démarre une recherche de contenu qui recherche dans la boîte aux lettres et le site OneDrive entreprise pour chaque utilisateur de la liste, à l’aide de la requête de recherche que vous fournissez. 
   
-## <a name="before-you-begin"></a>Avant de commencer
+## <a name="permissions-and-script-information"></a>Autorisations et informations de script
 
 - Vous devez être membre du groupe de rôles gestionnaire de découverte électronique dans le centre de sécurité & conformité et d’un administrateur global SharePoint Online pour exécuter le script à l’étape 3.
     
@@ -38,7 +38,7 @@ Le centre de sécurité & conformité fournit un certain nombre d’applets de c
     
 - Le script inclut une gestion des erreurs minimale. Son objectif principal est de rechercher rapidement et facilement la boîte aux lettres et le site OneDrive entreprise de chaque utilisateur.
     
-- Les exemples de scripts fournis dans cette rubrique ne sont pas pris en charge dans n’importe quel programme ou service de support standard Microsoft. Les exemples de scripts sont fournis en l'état, sans garantie d'aucune sorte. Microsoft exclut encore toutes les garanties[https://go.microsoft.com/fwlink/p/?LinkId=517283](https://go.microsoft.com/fwlink/p/?LinkId=517283)mplied, y compris, sans limitation, toute garantie implicite de qualité marchande ou d’adéquation à un usage particulier. Vous assumez tous les risques liés à l'utilisation ou à l'exécution des exemples de scripts et de la documentation. En aucun cas, Microsoft, ses auteurs ou toute personne impliquée dans la création, la production ou la livraison des scripts ne sont responsables de dommages quelconques (y compris, sans limitation, pertes de bénéfices, interruption d'activité, perte d'informations commerciales ou toute autre perte pécuniaire) découlant de l'utilisation ou de l'impossibilité d'utiliser les exemples de scripts ou la documentation, même si Microsoft a été informé de la possibilité de tels dommages.
+- Les exemples de scripts fournis dans cette rubrique ne sont pas pris en charge dans n’importe quel programme ou service de support standard Microsoft. Les exemples de scripts sont fournis en l'état, sans garantie d'aucune sorte. Microsoft exclut encore toutes les [https://go.microsoft.com/fwlink/p/?LinkId=517283](https://go.microsoft.com/fwlink/p/?LinkId=517283) garanties mplied, y compris, sans limitation, toute garantie implicite de qualité marchande ou d’adéquation à un usage particulier. Vous assumez tous les risques liés à l'utilisation ou à l'exécution des exemples de scripts et de la documentation. En aucun cas, Microsoft, ses auteurs ou toute personne impliquée dans la création, la production ou la livraison des scripts ne sont responsables de dommages quelconques (y compris, sans limitation, pertes de bénéfices, interruption d'activité, perte d'informations commerciales ou toute autre perte pécuniaire) découlant de l'utilisation ou de l'impossibilité d'utiliser les exemples de scripts ou la documentation, même si Microsoft a été informé de la possibilité de tels dommages.
     
 ## <a name="step-1-install-the-sharepoint-online-management-shell"></a>Étape 1 : installer SharePoint Online Management Shell
 
@@ -50,13 +50,13 @@ Accédez à [la configuration de l’environnement Windows PowerShell de SharePo
 
 Le script de l’étape 3 crée une recherche de contenu pour rechercher dans les boîtes aux lettres et les comptes OneDrive une liste d’utilisateurs. Vous pouvez simplement taper les adresses de messagerie dans un fichier texte ou exécuter une commande dans Windows PowerShell pour obtenir la liste des adresses de messagerie et les enregistrer dans un fichier (situé dans le même dossier dans lequel vous enregistrerez le script à l’étape 3).
   
-Voici une commande [Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=517283) que vous pouvez Runt pour obtenir une liste d’adresses de messagerie pour tous les utilisateurs de votre organisation et l’enregistrer dans un fichier texte `Users.txt`nommé. 
+Voici une commande [Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=517283) que vous pouvez Runt pour obtenir une liste d’adresses de messagerie pour tous les utilisateurs de votre organisation et l’enregistrer dans un fichier texte nommé `Users.txt` . 
   
 ```powershell
 Get-Mailbox -ResultSize unlimited -Filter { RecipientTypeDetails -eq 'UserMailbox'} | Select-Object PrimarySmtpAddress > Users.txt
 ```
 
-Après avoir exécuté cette commande, veillez à ouvrir le fichier et à supprimer l’en-tête qui contient le `PrimarySmtpAddress`nom de la propriété,. Le fichier texte doit contenir uniquement une liste d’adresses de messagerie et rien d’autre. Assurez-vous qu’il n’y a pas de ligne vide avant ou après la liste des adresses de messagerie.
+Après avoir exécuté cette commande, veillez à ouvrir le fichier et à supprimer l’en-tête qui contient le nom de la propriété, `PrimarySmtpAddress` . Le fichier texte doit contenir uniquement une liste d’adresses de messagerie et rien d’autre. Assurez-vous qu’il n’y a pas de ligne vide avant ou après la liste des adresses de messagerie.
   
 ## <a name="step-3-run-the-script-to-create-and-start-the-search"></a>Étape 3 : exécuter le script pour créer et démarrer la recherche
 
@@ -64,7 +64,7 @@ Lorsque vous exécutez le script dans cette étape, il vous invite à fournir le
   
 - **Vos informations d’identification utilisateur** : le script utilisera vos informations d’identification pour accéder à SharePoint Online afin d’obtenir les URL de OneDrive entreprise et se connecter au centre de sécurité & de conformité avec PowerShell à distance. 
     
-- **Nom de votre domaine mon** site : le domaine mon site est celui qui contient tous les sites OneDrive entreprise de votre organisation. Par exemple, si l’URL de votre domaine mon site **https://contoso-my.sharepoint.com**mon site est, entrez `contoso` alors lorsque le script vous invite à indiquer le nom de votre domaine mon site. 
+- **Nom de votre domaine mon** site : le domaine mon site est celui qui contient tous les sites OneDrive entreprise de votre organisation. Par exemple, si l’URL de votre domaine mon site mon site est **https://contoso-my.sharepoint.com** , entrez alors `contoso` lorsque le script vous invite à indiquer le nom de votre domaine mon site. 
     
 - **Chemin d’accès du fichier texte à partir de l’étape 2** : le nom de chemin du fichier texte que vous avez créé à l’étape 2. Si le fichier texte et le script se trouvent dans le même dossier, entrez le nom du fichier texte. Dans le cas contraire, entrez le chemin d’accès complet au fichier texte. 
     
@@ -75,7 +75,7 @@ Lorsque vous exécutez le script dans cette étape, il vous invite à fournir le
 
 **Pour exécuter le script :**
     
-1. Enregistrez le texte suivant dans un fichier de script Windows PowerShell à l’aide d’un suffixe de nom de fichier. ps1 ; par exemple, `SearchEXOOD4B.ps1`. Enregistrez le fichier dans le dossier où vous avez enregistré la liste des utilisateurs à l’étape 2.
+1. Enregistrez le texte suivant dans un fichier de script Windows PowerShell à l’aide d’un suffixe de nom de fichier. ps1 ; par exemple, `SearchEXOOD4B.ps1` . Enregistrez le fichier dans le dossier où vous avez enregistré la liste des utilisateurs à l’étape 2.
     
   ```powershell
   # This PowerShell script will prompt you for the following information:

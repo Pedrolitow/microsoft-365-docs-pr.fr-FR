@@ -1,5 +1,5 @@
 ---
-title: Supprimer des éléments dans le dossier éléments récupérables de la boîte aux lettres Cloud, aide de l’administrateur
+title: Supprimer des éléments dans le dossier éléments récupérables de la boîte aux lettres Cloud
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -16,14 +16,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: a85e1c87-a48e-4715-bfa9-d5275cde67b0
-description: 'Pour les administrateurs : supprimez les éléments du dossier éléments récupérables d’un utilisateur pour une boîte aux lettres Exchange Online, même si cette boîte aux lettres est placée en conservation légale. Il s’agit d’un moyen efficace de supprimer des données involontairement propagées dans Microsoft 365.'
+description: Découvrez comment supprimer des éléments du dossier éléments récupérables d’un utilisateur pour une boîte aux lettres Exchange Online, même si cette boîte aux lettres est placée en conservation légale.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ce363d558e5ce1de600ccf34863cc6524841e78b
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: 2d7babf231efba31a6f4cb1638d98669a9b938f9
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44352179"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44817873"
 ---
 # <a name="delete-items-in-the-recoverable-items-folder-of-cloud-based-mailboxes-on-hold---admin-help"></a>Supprimer des éléments dans le dossier éléments récupérables des boîtes aux lettres en nuage en attente-aide de l’administrateur
 
@@ -46,7 +46,7 @@ Le dossier éléments récupérables d’une boîte aux lettres Exchange Online 
 > [!CAUTION]
 > Les procédures décrites dans cet article entraînent la suppression définitive des données (purgées) d’une boîte aux lettres Exchange Online. Cela signifie que les messages que vous supprimez du dossier éléments récupérables ne peuvent pas être récupérés et ne sont pas disponibles pour la découverte légale ou d’autres objectifs de conformité. Si vous souhaitez supprimer les messages d’une boîte aux lettres bloquée dans le cadre d’une conservation pour litige, d’une conservation inaltérable, d’une conservation eDiscovery ou d’une stratégie de rétention créée dans le centre de sécurité et de conformité, vérifiez auprès de votre gestion des enregistrements ou des services juridiques avant de supprimer la conservation. Votre organisation peut avoir une stratégie qui détermine si une boîte aux lettres en attente ou un incident de débordement de données est prioritaire. 
   
-## <a name="before-you-begin"></a>Avant de commencer
+## <a name="before-you-delete-items"></a>Avant de supprimer des éléments
 
 - Pour créer et exécuter une recherche de contenu, vous devez être membre du groupe de rôles de gestionnaire de découverte électronique ou disposer du rôle de gestion de recherche de contenu. Pour supprimer des messages, vous devez être membre du groupe de rôles de gestion de l’organisation ou disposer du rôle de gestion de recherche et de purge. Pour plus d’informations sur l’ajout d’utilisateurs à un groupe de rôles, consultez la rubrique [Attribuer des autorisations eDiscovery dans le Centre de sécurité et conformité](https://docs.microsoft.com/microsoft-365/compliance/assign-ediscovery-permissions).
 

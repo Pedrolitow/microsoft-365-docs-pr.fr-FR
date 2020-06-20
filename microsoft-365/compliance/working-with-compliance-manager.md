@@ -13,13 +13,15 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-description: Le gestionnaire de conformité Microsoft est un outil d’évaluation des risques gratuit basé sur un flux de travail. Utilisez-le pour suivre, affecter et vérifier les activités de conformité réglementaire relatives aux produits Microsoft.
-ms.openlocfilehash: 2e67114c4b59fbb676c45995c08b9e4faa05e55b
-ms.sourcegitcommit: f70f75b9dd163c00a3c6bc4b9f9b055e90c50367
+ms.custom:
+- seo-marvel-apr2020
+description: Découvrez comment utiliser le gestionnaire de conformité pour suivre, affecter et vérifier les activités de conformité aux réglementations relatives aux produits Microsoft.
+ms.openlocfilehash: fe7b04fe7687bc91e6f96fb2c3994a6536cec314
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2020
-ms.locfileid: "43790661"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44817081"
 ---
 # <a name="working-with-microsoft-compliance-manager-preview"></a>Utilisation du gestionnaire de conformité Microsoft (aperçu)
 
@@ -121,7 +123,7 @@ Suivez les étapes ci-dessous pour créer un groupe :
 2. Dans le volet flyout d' **évaluation** , entrez un titre pour votre évaluation et sélectionnez un modèle dans le menu déroulant.
 3. Sur **Sélectionnez un groupe ou ajouter un nouveau groupe**, sélectionnez **Ajouter un nouveau groupe** , puis entrez le nom de votre groupe dans le champ ci-dessous.
 4. Pour copier des informations à partir d’un groupe existant, faites basculer la **copie des données d’un groupe existant** vers **.** Sélectionnez le groupe à copier dans le menu déroulant, puis activez les cases à cocher de tous les champs que vous souhaitez reporter dans la nouvelle évaluation de votre nouveau groupe.
-5. Cliquez sur **Enregistrer**. Une fois l’opération terminée, le volet flyout se ferme et vous verrez votre nouveau groupe sur votre tableau de bord.
+5. Sélectionnez **Enregistrer**. Une fois l’opération terminée, le volet flyout se ferme et vous verrez votre nouveau groupe sur votre tableau de bord.
 
 Éléments à connaître lors de l’utilisation de groupes :
   
@@ -149,7 +151,7 @@ Sélectionnez **gestion des clients** dans le coin supérieur droit de l’écra
 
 Les dimensions sont des ensembles de métadonnées qui fournissent des informations sur un modèle, une évaluation ou un élément d’action. Les dimensions utilisent le concept de clés et de valeurs, où la clé de dimension représente une propriété et la valeur de dimension représente des valeurs valides pour la propriété. Par exemple, dans le gestionnaire de conformité, il existe trois types d’actions. Elles sont définies par une clé de dimension de l' **objectif d’action** et des valeurs de dimension de **préventive**, de **détective**et de **Correction**.
 
-### <a name="owners"></a>Propriétaires
+### <a name="owners"></a>Owners
 
 Les propriétaires sont utilisés pour identifier la personne responsable de chaque contrôle. Tous les contrôles intégrés appartiennent à Microsoft, aux clients ou aux deux. Vous pouvez créer des valeurs personnalisées pour les propriétaires qui peuvent être utilisées pour spécifier des responsabilités plus granulaires au sein de votre organisation. Par exemple, vous pouvez créer des propriétaires qui représentent des groupes, des équipes ou des divisions spécifiques au sein de votre organisation.
 
@@ -185,7 +187,7 @@ En un clin d’œil, vous pouvez voir le titre, le propriétaire, la catégorie,
 
 1. Sélectionnez les points de suspension (...) de l’action que vous souhaitez modifier, puis sélectionnez **modifier**.
 2. Basculez le commutateur de la mise à jour continue du score de sécurité sur activé ou désactivé pour activer ou désactiver la surveillance continue via le score de sécurité.
-3. Cliquez sur **Enregistrer**.
+3. Sélectionnez **Enregistrer**.
 
 Lorsque les organisations déploient d’abord Microsoft 365 ou Office 365, il faut environ sept jours pour que l’évaluation complète des données et les intégrer dans votre score. Pendant ce temps, la définition du commutateur de mise à jour continue de score de sécurité sur **désactivé** et la définition manuelle d’une action sur **implémenté** compteront cette action vers votre score. Une fois les sept jours initiaux, l’activation de la mise à jour continue du score sécurisé active la surveillance continue à partir de ce moment-là.
 

@@ -16,13 +16,15 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Découvrez comment utiliser la correction des erreurs pour corriger les problèmes de données dans les enquêtes de données (aperçu) susceptibles d’empêcher le traitement approprié du contenu.
-ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: c833ce9ae93f5395e06ee3dbde54ff4a8d5d4a00
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.custom:
+- seo-marvel-mar2020
+- seo-marvel-apr2020
+ms.openlocfilehash: fe77f918a7471bf36df7727f890ea043976e44db
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035116"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44817813"
 ---
 # <a name="error-remediation-when-processing-data-for-an-investigation"></a>Erreur de correction lors du traitement des données pour une enquête
 
@@ -57,7 +59,7 @@ Utilisez le flux de travail suivant pour corriger les fichiers avec des erreurs 
     >Nous vous recommandons d’utiliser un chemin d’accès local au lieu d’un chemin d’accès réseau distant pour des performances optimales.
 
     > [!NOTE]
-    > Si vous n’avez pas installé AzCopy, vous pouvez l’installer à partir de cet emplacement :https://docs.microsoft.com/azure/storage/common/storage-use-azcopy
+    > Si vous n’avez pas installé AzCopy, accédez à la [prise en main de AzCopy](https://docs.microsoft.com/azure/storage/common/storage-use-azcopy) pour l’installer.
 
 6. Copiez la commande prédéfinie en cliquant sur **copier dans le presse-papiers**. Démarrez une invite de commandes Windows, collez la commande, puis appuyez sur **entrée**.  
 
@@ -71,7 +73,7 @@ Utilisez le flux de travail suivant pour corriger les fichiers avec des erreurs 
 7. Après avoir téléchargé les fichiers, vous pouvez les corriger à l’aide d’un outil approprié. Pour les fichiers protégés par mot de passe, il existe plusieurs outils de craquage de mot de passe que vous pouvez utiliser. Si vous connaissiez les mots de passe des fichiers, vous pouvez les ouvrir et supprimer la protection par mot de passe.
     
    > [!NOTE]
-    > Il est important de conserver la structure de répertoire et les noms de fichier des fichiers corrigés. Les noms de chemin d’accès des fichiers et dossiers téléchargés permettent d’associer les fichiers corrigés aux fichiers d’origine.  Si la structure du répertoire ou les noms de fichier sont modifiés, vous recevez l’erreur `Cannot apply Error Remediation to the current Evidenceset`suivante :.
+    > Il est important de conserver la structure de répertoire et les noms de fichier des fichiers corrigés. Les noms de chemin d’accès des fichiers et dossiers téléchargés permettent d’associer les fichiers corrigés aux fichiers d’origine.  Si la structure du répertoire ou les noms de fichier sont modifiés, vous recevez l’erreur suivante : `Cannot apply Error Remediation to the current Evidenceset` .
 
 8. À présent, revenez aux enquêtes de données (aperçu) et cliquez sur **suivant : charger les fichiers**.  Cette opération passe à l’étape suivante, dans laquelle vous pouvez à présent télécharger les fichiers.
 
@@ -81,7 +83,7 @@ Utilisez le flux de travail suivant pour corriger les fichiers avec des erreurs 
 
 10. Collez la commande dans une invite de commande Windows et appuyez sur **entrée** pour charger les fichiers.
 
-    ![ff2ff691-629f-4065-9b37-5333f937daf6. png](../media/ff2ff691-629f-4065-9b37-5333f937daf6.png)
+    ![ff2ff691-629f-4065-9b37-5333f937daf6.png](../media/ff2ff691-629f-4065-9b37-5333f937daf6.png)
 
 11. Enfin, revenez aux enquêtes de données (aperçu) et cliquez sur **suivant : traiter les fichiers**.
 

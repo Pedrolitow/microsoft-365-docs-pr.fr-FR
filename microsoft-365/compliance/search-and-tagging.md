@@ -14,19 +14,20 @@ search.appverid:
 - MET150
 ms.assetid: 22f5adad-1bc0-460d-94a9-8732929f5b99
 description: Dans Advanced eDiscovery, le module de recherche et de marquage vous permet de rechercher, de prévisualiser et d’organiser les documents dans votre cas. Actuellement, ce module est en version bêta.
-ms.openlocfilehash: 012154e117e0d2b800f0e1077d43f2e1c1d10b0e
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: eba95f4832e674bae0a26d3fa8466b0118a9715d
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42557804"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818893"
 ---
 # <a name="search-and-tagging"></a>Recherche et balisage
 
 Dans Advanced eDiscovery, le module de recherche et de marquage vous permet de rechercher, de prévisualiser et d’organiser les documents dans votre cas. Actuellement, ce module est en version bêta. Pour une brève démonstration de la recherche et du balisage, voir la vidéo [gérer vos données à l’aide de la vidéo Advanced eDiscovery](https://www.youtube.com/watch?v=VaPYL3DHP6I) .
 
 > [!NOTE]
-> Pour utiliser Advanced eDiscovery, votre organisation doit souscrire un abonnement Office 365 E3 avec le module complémentaire Conformité avancée ou un abonnement E5. Si vous ne disposez pas d’un abonnement et que vous souhaitez essayer Advanced eDiscovery, vous pouvez vous [inscrire pour utiliser une version d’évaluation d’Office 365 Entreprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
+> Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
 ## <a name="search-the-documents-in-your-case"></a>Rechercher les documents dans votre cas
 
@@ -73,9 +74,9 @@ Vous pouvez également utiliser une carte de condition dans l’outil de recherc
 
 Pour plus d’informations sur les propriétés pouvant faire l’objet d’une recherche, consultez la rubrique [requêtes de mots clés et conditions de recherche](keyword-queries-and-search-conditions.md).
   
-## <a name="see-also"></a>Voir aussi
+## <a name="related-topics"></a>Voir aussi
 
-[Découverte électronique avancée (classique)](office-365-advanced-ediscovery.md)
+[Advanced eDiscovery (classique)](office-365-advanced-ediscovery.md)
   
 [Présentation de l’évaluation en matière de pertinence](assessment-in-relevance-in-advanced-ediscovery.md)
   

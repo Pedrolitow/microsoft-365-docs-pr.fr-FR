@@ -14,16 +14,14 @@ ms.collection:
 localization_priority: None
 description: Découvrez comment définir des stratégies pour les barrières d’informations dans Microsoft Teams.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 41d56927f3f9c22782b10640330ca9d0167402d2
-ms.sourcegitcommit: 252b1d1d8ae735b99bf46e27c08353afc330aef3
+ms.openlocfilehash: 88ff728f00709707233b97586d1220ead76eca8c
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "44232050"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44817543"
 ---
 # <a name="define-information-barrier-policies"></a>Définir des stratégies d’obstacle aux informations
-
-## <a name="overview"></a>Vue d’ensemble
 
 Avec les barrières d’informations, vous pouvez définir des stratégies conçues pour empêcher certains segments d’utilisateurs de communiquer les uns avec les autres ou d’autoriser des segments spécifiques à communiquer uniquement avec certains autres segments. Les stratégies de barrière des informations peuvent aider votre organisation à respecter les normes et réglementations pertinentes de l’industrie et éviter les conflits d’intérêt potentiels. Pour en savoir plus, consultez la rubrique [barrières relatives aux informations](information-barriers.md). 
 
@@ -32,19 +30,19 @@ Cet article explique comment planifier, définir, implémenter et gérer les str
 > [!TIP]
 > Cet article inclut un [exemple de scénario](#example-contosos-departments-segments-and-policies) et un [classeur Excel téléchargeable](https://github.com/MicrosoftDocs/OfficeDocs-O365SecComp/raw/public/SecurityCompliance/media/InfoBarriers-PowerShellGenerator.xlsx) pour vous aider à planifier et à définir vos stratégies de barrière des informations.
 
-## <a name="concepts-of-information-barrier-policies"></a>Concepts des stratégies de barrière des informations
+## <a name="concepts-of-information-barrier-policies"></a>Concepts des stratégies de cloisonnement de l’information
 
 Lorsque vous définissez des stratégies pour les barrières d’informations, vous utiliserez les attributs de compte d’utilisateur, les segments, les stratégies de blocage et/ou d’autorisation, ainsi que l’application de stratégie.
 
-- Les attributs de compte d’utilisateur sont définis dans Azure Active Directory (ou Exchange Online). Ces attributs peuvent inclure le service, la fonction, l’emplacement, le nom de l’équipe et d’autres détails du profil de travail. 
+- Les attributs du compte utilisateur sont définis dans Azure Active Directory (ou Exchange Online). Ces attributs peuvent inclure le service, la fonction, l’emplacement, le nom d’équipe et d’autres détails du profil du poste. 
 
-- Les segments sont des ensembles d’utilisateurs définis dans le centre de sécurité & conformité à l’aide d’un **attribut de compte d’utilisateur**sélectionné. (Reportez-vous à la [liste des attributs pris en charge](information-barriers-attributes.md).) 
+- Les segments sont des ensembles d’utilisateurs définis dans le centre de sécurité & conformité à l’aide d’un **attribut de compte d’utilisateur**sélectionné. (consultez la [liste des attributs pris en charge](information-barriers-attributes.md)). 
 
-- Les stratégies de barrière des informations déterminent les limites ou restrictions de communication. Lorsque vous définissez des stratégies de barrière des informations, vous avez le choix entre deux types de stratégies :
+- Les stratégies de cloisonnement de l’information déterminent les limites ou les restrictions de communication. Lorsque vous définissez des stratégies de cloisonnement de l’information, vous avez le choix entre deux types de stratégie :
     - Les stratégies « bloquer » empêchent un segment de communiquer avec un autre segment.
     - Les stratégies « autoriser » permettent à un segment de communiquer avec certains autres segments seulement.
 
-- Une application de stratégie est exécutée une fois toutes les stratégies de barrière des informations définies et vous êtes prêt à les appliquer dans votre organisation.
+- L’application de la stratégie est effectuée une fois toutes les stratégies de cloisonnement de l’information sont définies et que vous êtes prêt à les appliquer au sein de votre organisation.
 
 ## <a name="the-work-flow-at-a-glance"></a>Flux de travail en un clin d’œil
 
@@ -70,7 +68,7 @@ En plus des [licences et des autorisations requises](information-barriers.md#req
 
 - Journalisation d’audit : pour Rechercher l’état d’une application de stratégie, la journalisation d’audit doit être activée. Nous vous recommandons d’effectuer cette opération avant de commencer à définir des segments ou des stratégies. Pour en savoir plus, consultez [la rubrique activer ou désactiver la recherche dans le journal d’audit](turn-audit-log-search-on-or-off.md).
 
-- Aucune stratégie de carnet d’adresses-avant de définir et d’appliquer des stratégies de barrière des informations, assurez-vous qu’aucune stratégie de carnet d’adresses Exchange n’est mise en place. Les barrières d’informations sont basées sur les stratégies de carnet d’adresses, mais les deux types de stratégies ne sont pas compatibles. Si vous disposez de ces stratégies, veillez à [Supprimer les stratégies de carnet d’adresses](https://docs.microsoft.com/exchange/address-books/address-book-policies/remove-an-address-book-policy) en premier. Une fois que les stratégies de barrière des informations sont activées et que le carnet d’adresses hiérarchique est activé, tous les utilisateurs ***qui ne sont pas inclus*** dans un segment de barrière des informations voient le [carnet d’adresses hiérarchique](https://docs.microsoft.com/exchange/address-books/hierarchical-address-books/hierarchical-address-books) dans Exchange Online.
+- Aucune stratégie de carnet d’adresses-avant de définir et d’appliquer des stratégies de barrière des informations, assurez-vous qu’aucune stratégie de carnet d’adresses Exchange n’est mise en place. Les obstacles aux informations sont basés sur les stratégies de carnet d’adresses, mais les deux types de stratégies ne sont pas compatibles. Si vous disposez de ces stratégies, veillez à [Supprimer les stratégies de carnet d’adresses](https://docs.microsoft.com/exchange/address-books/address-book-policies/remove-an-address-book-policy) en premier. Une fois que les stratégies de barrière des informations sont activées et que le carnet d’adresses hiérarchique est activé, tous les utilisateurs ***qui ne sont pas inclus*** dans un segment de barrière des informations voient le [carnet d’adresses hiérarchique](https://docs.microsoft.com/exchange/address-books/hierarchical-address-books/hierarchical-address-books) dans Exchange Online.
 
 - PowerShell-actuellement, les stratégies de barrière des informations sont définies et gérées dans le centre de conformité Office 365 Security & à l’aide des cmdlets PowerShell. Bien que plusieurs exemples soient fournis dans cet article, vous devez être familiarisé avec les cmdlets et les paramètres PowerShell. Vous aurez également besoin du module Azure PowerShell.
     - [Se connecter à l’interface PowerShell du Centre de sécurité et conformité](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps)
@@ -176,15 +174,15 @@ Déterminez si vous devez empêcher les communications entre certains segments o
 
 Avec votre liste de segments d’utilisateurs et les stratégies de barrière des informations que vous souhaitez définir, sélectionnez un scénario, puis suivez les étapes. 
 
-- [Scénario 1 : bloquer les communications entre les segments](#scenario-1-block-communications-between-segments)
-- [Scénario 2 : autoriser un segment à communiquer avec un seul autre segment](#scenario-2-allow-a-segment-to-communicate-only-with-one-other-segment)
+- [Scénario 1 : bloquer les communications entre les segments](#scenario-1-block-communications-between-segments)
+- [Scénario 2 : Autoriser un segment à communiquer avec un seul autre segment](#scenario-2-allow-a-segment-to-communicate-only-with-one-other-segment)
 
 > [!IMPORTANT]
 > Assurez **-vous que lorsque vous définissez des stratégies, vous n’affectez pas plusieurs stratégies à un segment**. Par exemple, si vous définissez une stratégie pour un segment appelé *ventes*, ne définissez pas de stratégie supplémentaire pour les *ventes*.<p>De plus, lorsque vous définissez des stratégies de barrière des informations, veillez à définir ces stratégies sur état inactif jusqu’à ce que vous soyez prêt à les appliquer. La définition (ou modification) de stratégies n’affecte pas les utilisateurs tant que ces stratégies n’ont pas le statut actif, puis appliquées.
 
 (Voir l' [exemple : stratégies de barrière des informations de contoso](#contosos-information-barrier-policies) dans cet article.)
 
-### <a name="scenario-1-block-communications-between-segments"></a>Scénario 1 : bloquer les communications entre les segments
+### <a name="scenario-1-block-communications-between-segments"></a>Scénario 1 : bloquer les communications entre les segments
 
 Lorsque vous souhaitez empêcher les segments de communiquer les uns avec les autres, définissez deux stratégies : une pour chaque direction. Chaque stratégie bloque la communication de manière unidirectionnelle.
 
@@ -207,7 +205,7 @@ Par exemple, supposons que vous souhaitez bloquer les communications entre le se
    - (Si nécessaire) [Définir une stratégie pour permettre à un segment de communiquer avec un seul autre segment](#scenario-2-allow-a-segment-to-communicate-only-with-one-other-segment) 
    - (Après avoir défini toutes vos stratégies) [Appliquer des stratégies de barrière des informations](#part-3-apply-information-barrier-policies)
 
-### <a name="scenario-2-allow-a-segment-to-communicate-only-with-one-other-segment"></a>Scénario 2 : autoriser un segment à communiquer avec un seul autre segment
+### <a name="scenario-2-allow-a-segment-to-communicate-only-with-one-other-segment"></a>Scénario 2 : Autoriser un segment à communiquer avec un seul autre segment
 
 1. Pour permettre à un segment de communiquer avec un seul autre segment, utilisez la cmdlet **New-InformationBarrierPolicy** avec le paramètre **SegmentsAllowed** . 
 
@@ -278,50 +276,50 @@ Des ressources sont disponibles pour vous aider à gérer vos stratégies de bar
 
 ## <a name="example-contosos-departments-segments-and-policies"></a>Exemple : services, segments et stratégies de contoso
 
-Pour voir comment une organisation peut aborder la définition des segments et des stratégies, prenez en compte l’exemple suivant.
+Voici un exemple qui montre comment une organisation peut aborder la définition des segments et des stratégies.
 
-### <a name="contosos-departments-and-plan"></a>Services et plan de contoso
+### <a name="contosos-departments-and-plan"></a>Départements et plan de Contoso
 
-Contoso dispose de cinq services : RH, ventes, marketing, recherche et fabrication. Pour rester conformes aux réglementations industrielles, les personnes de certains services ne sont pas censées communiquer avec d’autres services, comme indiqué dans le tableau suivant :
+Contoso compte cinq départements : Ressources Humaines, Ventes, Marketing, Recherche et Production. Pour rester conformes aux réglementations industrielles, les personnes de certains services ne sont pas censées communiquer avec d’autres services, comme indiqué dans le tableau suivant :
 
-|Segment  |Peut parler à  |Ne peut pas communiquer avec  |
+|Segment  |Peut communiquer avec  |Ne peut pas communiquer avec  |
 |---------|---------|---------|
-|HR     |Tout le monde         |(aucune restriction)         |
+|RH     |Tout le monde         |(aucune restriction)         |
 |Ventes     |RH, marketing, fabrication         |Recherche         |
 |Marketing     |Tout le monde         |(aucune restriction)         |
 |Recherche     |RH, marketing, fabrication        |Ventes     |
 |Fabrication |RH, marketing |Toute personne autre que RH ou marketing |
 
-Dans ce souci, le plan de contoso comprend trois stratégies de barrière des informations :
+Dans cette optique, le plan de Contoso comprend trois stratégies de cloisonnement de l’information :
 
-1. Stratégie conçue pour empêcher les ventes de communiquer avec la recherche (et une autre stratégie pour empêcher les recherches de communiquer avec les ventes)
-2. Une stratégie conçue pour permettre à la production de communiquer avec les ressources humaines et marketing uniquement 
+1. Une stratégie conçue pour empêcher le département des Ventes de communiquer avec la Recherche (et une autre stratégie pour empêcher la Recherche de communiquer avec le département des Ventes)
+2. Une stratégie conçue pour permettre à la Production de communiquer uniquement avec les Ressources Humaines et le Marketing 
 
 Il n’est pas nécessaire de définir des stratégies pour RH ou marketing.
 
-### <a name="contosos-defined-segments"></a>Segments définis par contoso
+### <a name="contosos-defined-segments"></a>Segments définis par Contoso
 
 Contoso utilise l’attribut de service dans Azure Active Directory pour définir des segments, comme suit :
 
-|Service  |Définition de segment  |
+|Département  |Définition de segment  |
 |---------|---------|
-|HR     | `New-OrganizationSegment -Name "HR" -UserGroupFilter "Department -eq 'HR'"`        |
+|RH     | `New-OrganizationSegment -Name "HR" -UserGroupFilter "Department -eq 'HR'"`        |
 |Ventes     | `New-OrganizationSegment -Name "Sales" -UserGroupFilter "Department -eq 'Sales'"`        |
 |Marketing     | `New-OrganizationSegment -Name "Marketing" -UserGroupFilter "Department -eq 'Marketing'"`        |
 |Recherche     | `New-OrganizationSegment -Name "Research" -UserGroupFilter "Department -eq 'Research'"`        |
-|Fabrication     | `New-OrganizationSegment -Name "Manufacturing" -UserGroupFilter "Department -eq 'Manufacturing'"`        |
+|Production     | `New-OrganizationSegment -Name "Manufacturing" -UserGroupFilter "Department -eq 'Manufacturing'"`        |
 
-Une fois les segments définis, contoso passe à définir des stratégies. 
+Une fois les segments définis, Contoso procède à la définition des stratégies. 
 
-### <a name="contosos-information-barrier-policies"></a>Stratégies de barrière des informations de contoso
+### <a name="contosos-information-barrier-policies"></a>Stratégies de cloisonnement de l’information de Contoso
 
 Contoso définit trois stratégies, comme décrit dans le tableau suivant :
 
 |Stratégie  |Définition de la stratégie  |
 |---------|---------|
-|Stratégie 1 : empêcher les ventes de communiquer avec la recherche     | `New-InformationBarrierPolicy -Name "Sales-Research" -AssignedSegment "Sales" -SegmentsBlocked "Research" -State Inactive` <p> Dans cet exemple, la stratégie de barrière des informations est appelée *Sales-Research*. Lorsque cette stratégie est active et appliquée, cela permet d’empêcher les utilisateurs qui se trouvent dans le segment des ventes de communiquer avec les utilisateurs du segment de recherche. Il s’agit d’une stratégie à sens unique ; Il n’empêchera pas la recherche de communiquer avec les ventes. Pour cela, la stratégie 2 est requise.      |
-|Policy 2 : empêcher les recherches de communiquer avec les ventes     | `New-InformationBarrierPolicy -Name "Research-Sales" -AssignedSegment "Research" -SegmentsBlocked "Sales" -State Inactive` <p> Dans cet exemple, la stratégie de barrière des informations est appelée *Research-Sales*. Lorsque cette stratégie est active et appliquée, cela permet d’empêcher les utilisateurs qui se trouvent dans le segment de recherche de communiquer avec les utilisateurs du segment de ventes.       |
-|Stratégie 3 : autoriser la fabrication à communiquer avec RH et marketing uniquement     | `New-InformationBarrierPolicy -Name "Manufacturing-HRMarketing" -AssignedSegment "Manufacturing" -SegmentsAllowed "HR","Marketing","Manufacturing" -State Inactive` <p>Dans ce cas, la stratégie de barrière des informations est appelée *Manufacturing-HRMarketing*. Lorsque cette stratégie est active et appliquée, la fabrication ne peut communiquer qu’avec RH et marketing. Notez que les ressources RH et marketing ne sont pas limitées à la communication avec d’autres segments. |
+|Stratégie 1 : empêcher le département des Ventes de communiquer avec la Recherche     | `New-InformationBarrierPolicy -Name "Sales-Research" -AssignedSegment "Sales" -SegmentsBlocked "Research" -State Inactive` <p> Dans cet exemple, la stratégie de cloisonnement de l’information est nommée *Sales-Research*. Lorsque cette stratégie est active et appliquée, elle empêche les utilisateurs du segment Ventes de communiquer avec les utilisateurs du segment Recherche. Il s’agit d’une stratégie à sens unique car cela n’empêchera pas la Recherche de communiquer avec le département des Ventes. Pour cela, la stratégie 2 est nécessaire.      |
+|Stratégie 2 : empêcher la Recherche de communiquer avec le département des Ventes     | `New-InformationBarrierPolicy -Name "Research-Sales" -AssignedSegment "Research" -SegmentsBlocked "Sales" -State Inactive` <p> Dans cet exemple, la stratégie de cloisonnement de l’information est nommée *Research-Sales*. Lorsque cette stratégie est active et appliquée, elle empêche les utilisateurs du segment Recherche de communiquer avec les utilisateurs du segment Ventes.       |
+|Stratégie 3 : autoriser la fabrication à communiquer avec RH et marketing uniquement     | `New-InformationBarrierPolicy -Name "Manufacturing-HRMarketing" -AssignedSegment "Manufacturing" -SegmentsAllowed "HR","Marketing","Manufacturing" -State Inactive` <p>Dans ce cas, la stratégie de cloisonnement de l’information est nommée *Manufacturing-HRMarketing*. Lorsque cette stratégie est active et appliquée, la Production ne peut communiquer qu’avec les Ressources Humaines et le Marketing. Notez que les Ressources Humaines et le Marketing ne sont pas restreints et peuvent communiquer avec les autres segments. |
 
 Une fois les segments et les stratégies définis, contoso applique les stratégies en exécutant l’applet de commande **Start-InformationBarrierPoliciesApplication** . 
 

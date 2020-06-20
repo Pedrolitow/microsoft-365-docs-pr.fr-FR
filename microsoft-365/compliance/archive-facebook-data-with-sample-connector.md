@@ -13,15 +13,14 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.collection: M365-security-compliance
-ms.custom:
-- seo-marvel-apr2020
-description: Configurez un connecteur pour importer des données Facebook vers Microsoft 365 afin de pouvoir utiliser les fonctionnalités de conformité telles que la conservation légale, la recherche de contenu et les stratégies de rétention.
-ms.openlocfilehash: e35e4cb8e0f16d3cc95b3f21ce6648bbe087733d
-ms.sourcegitcommit: ab0a944159d9349fbc7adc2f51c7f881254d7782
+ms.custom: seo-marvel-apr2020
+description: Découvrez comment configurer & utiliser un connecteur dans le centre de conformité Microsoft 365 pour importer des données d’archivage & à partir de pages Facebook Business vers Microsoft 365.
+ms.openlocfilehash: 79f3c3914476a20c07a1c3ab4418b918c8f22c3e
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44210529"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818463"
 ---
 # <a name="set-up-a-connector-to-archive-facebook-data-preview"></a>Configuration d’un connecteur pour l’archivage des données Facebook (aperçu)
 

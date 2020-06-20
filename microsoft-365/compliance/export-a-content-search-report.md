@@ -21,12 +21,13 @@ search.appverid:
 - MET150
 ms.assetid: 5c8c1db6-d8ac-4dbb-8a7a-f65d452169b9
 description: Au lieu d’exporter les résultats réels d’une recherche de contenu dans le centre de sécurité & conformité dans Office 365, vous pouvez exporter un rapport des résultats de la recherche. Le rapport contient un résumé des résultats de la recherche et un document avec des informations détaillées sur chaque élément à exporter.
-ms.openlocfilehash: 63acc8701973519f959ced9822333e893e6fd863
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 25525a0670f31a7e962fb72f6d1559381e8b33cd
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43615928"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44817773"
 ---
 # <a name="export-a-content-search-report"></a>Exporter un rapport de recherche de contenu
 
@@ -34,11 +35,11 @@ Au lieu d’exporter l’ensemble complet des résultats de recherche à partir 
   
 Lorsque vous exportez un État, il est téléchargé dans un dossier portant le même nom que la recherche de contenu, mais avec *_ReportsOnly*. Par exemple, si la recherche de contenu est nommée *ContosoCase0815*, le rapport est téléchargé dans un dossier nommé *ContosoCase0815_ReportsOnly*. Pour obtenir la liste des documents inclus dans le rapport, voir [ce qui est inclus dans le rapport](#whats-included-in-the-report).
 
-## <a name="before-you-begin"></a>Avant de commencer
+## <a name="assign-roles-and-check-system-requirements"></a>Affecter des rôles et vérifier la configuration système requise
 
-- Pour exporter un rapport de recherche de contenu, vous devez disposer du rôle de gestion de la recherche de conformité dans le centre de sécurité & Compliance Center. Ce rôle est affecté aux groupes de rôles du gestionnaire eDiscovery intégré et de la gestion de l’organisation. Ce rôle n’est pas affecté par défaut au groupe de rôles Gestion de l’organisation. Pour plus d'informations, voir [Attribution d'autorisations eDiscovery](assign-ediscovery-permissions.md).
-    
-- Lorsque vous exportez un État, les données sont stockées temporairement dans une zone de stockage Azure unique dans le Cloud Microsoft avant d’être téléchargée sur votre ordinateur local. Assurez-vous que votre organisation peut se connecter au point de terminaison dans Azure, c’est-à-dire ** \*. blob.Core.Windows.net** (le caractère générique représente un identificateur unique pour votre exportation). Les données de résultats de recherche sont supprimées de la zone de stockage Azure deux semaines après sa création. 
+- Pour exporter un rapport de recherche de contenu, vous devez disposer du rôle de gestion de la recherche de conformité dans le centre de sécurité & Compliance Center. Ce rôle est affecté par défaut aux groupes de rôles du gestionnaire eDiscovery intégré et de la gestion de l’organisation. Pour plus d'informations, voir [Attribution d'autorisations eDiscovery](assign-ediscovery-permissions.md).
+
+- Lorsque vous exportez un État, les données sont stockées temporairement dans une zone de stockage Azure unique dans le Cloud Microsoft avant d’être téléchargée sur votre ordinateur local. Assurez-vous que votre organisation peut se connecter au point de terminaison dans Azure, c’est-à-dire ** \* . blob.Core.Windows.net** (le caractère générique représente un identificateur unique pour votre exportation). Les données de résultats de recherche sont supprimées de la zone de stockage Azure deux semaines après sa création. 
     
 - L’ordinateur que vous utilisez pour exporter les résultats de recherche doit répondre aux exigences système suivantes :
     
@@ -72,9 +73,9 @@ La première étape consiste à préparer le rapport en vue de son téléchargem
   
 1. Accédez à [https://protection.office.com](https://protection.office.com).
     
-2. Connectez-vous à l’aide de votre compte professionnel ou scolaire.
+2. Connectez-vous à l’aide de votre compte scolaire ou professionnel.
     
-3. Dans le volet gauche du centre de sécurité & conformité, cliquez sur recherche de **contenu**de **recherche** \> .
+3. Dans le volet gauche du centre de sécurité & conformité, cliquez sur recherche de contenu de **recherche** \> **Content search**.
     
 4. Sur la page **recherche de contenu** , sélectionnez une recherche. 
     
@@ -100,7 +101,7 @@ La première étape consiste à préparer le rapport en vue de son téléchargem
     Le rapport de résultats de recherche est préparé pour le téléchargement, ce qui signifie que les documents de rapport seront téléchargés vers la zone de stockage Azure du Cloud Microsoft. Lorsque le rapport est prêt à être téléchargé, le lien **Télécharger le rapport** est affiché sous **Exporter le rapport vers un ordinateur** dans le volet d’informations. 
     
 > [!NOTE]
-> Vous pouvez également exporter un rapport pour une recherche de contenu associée à un cas de découverte électronique. Pour ce faire, **accédez à** \> eDiscovery **eDiscovery**, sélectionnez un cas, puis cliquez sur **modifier** ![l'](../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif)icône modifier. Sur la page **recherches** , sélectionnez une recherche, **puis cliquez sur** ![exporter les résultats](../media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) \> de la recherche d’exportation **exporter un rapport**. 
+> Vous pouvez également exporter un rapport pour une recherche de contenu associée à un cas de découverte électronique. Pour ce faire, **accédez à eDiscovery** \> **eDiscovery**, sélectionnez un cas, puis cliquez sur **modifier** l' ![ icône modifier ](../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif) . Sur la page **recherches** , sélectionnez une recherche, **puis cliquez sur Exporter les** résultats de la recherche d’exportation ![ ](../media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) \> **exporter un rapport**. 
   
 ## <a name="step-2-download-the-report"></a>Étape 2 : Télécharger le rapport
 
@@ -138,7 +139,7 @@ L’étape suivante consiste à télécharger le rapport à partir de la zone de
     L’**outil d’exportation de découverte électronique** affiche l’état du processus d’exportation, ainsi qu’une estimation du nombre (et de la taille) d’éléments qui doivent encore être téléchargés. Une fois le processus d’exportation terminé, vous pouvez accéder aux fichiers à l’emplacement où ils ont été téléchargés. 
     
 > [!NOTE]
-> Vous pouvez télécharger le rapport pour une recherche de contenu associée à un cas de découverte électronique. Pour ce faire, **accédez à** \> eDiscovery **eDiscovery**, sélectionnez un cas, puis cliquez sur **modifier** ![l'](../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif)icône modifier. Dans la page **exportations** , sélectionnez une exportation de rapport, puis cliquez sur **Télécharger le rapport** dans le volet d’informations. 
+> Vous pouvez télécharger le rapport pour une recherche de contenu associée à un cas de découverte électronique. Pour ce faire, **accédez à eDiscovery** \> **eDiscovery**, sélectionnez un cas, puis cliquez sur **modifier** l' ![ icône modifier ](../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif) . Dans la page **exportations** , sélectionnez une exportation de rapport, puis cliquez sur **Télécharger le rapport** dans le volet d’informations. 
   
 ## <a name="whats-included-in-the-report"></a>Éléments inclus dans le rapport
 

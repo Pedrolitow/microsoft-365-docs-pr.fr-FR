@@ -14,12 +14,13 @@ search.appverid:
 - MET150
 ms.assetid: 0432dce9-d9b6-4e73-8a13-4a932eb0081e
 description: Vous avez une question sur la façon dont les nouvelles fonctionnalités de protection des messages fonctionnent ? Recherchez une réponse ici.
-ms.openlocfilehash: d3dcc91f1e1e93293218e18109cebae2190d337b
-ms.sourcegitcommit: f80c6c52e5b08290f74baec1d64c4070046c32e4
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 5368133877921d8f5fdfa2e3de2e610c545f57ff
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "44717153"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818677"
 ---
 # <a name="message-encryption-faq"></a>FAQ sur le chiffrement de messages
 
@@ -103,7 +104,7 @@ Les utilisateurs de Microsoft 365 peuvent lire et répondre à Outlook pour Wind
   
 ## <a name="what-file-types-are-supported-as-attachments-in-protected-emails-do-attachments-inherit-the-protection-policies-associated-with-protected-emails"></a>Quels types de fichiers sont pris en charge en tant que pièces jointes dans les courriels protégés ? Les pièces jointes héritent-elles des stratégies de protection associées aux courriers électroniques protégés ?
 
-Vous pouvez attacher n’importe quel type de fichier à un message protégé, mais les stratégies de protection ne sont appliquées qu’aux formats de fichier mentionnés [ici](https://docs.microsoft.com/information-protection/rms-client/client-admin-guide-file-types).
+Vous pouvez attacher n’importe quel type de fichier à un message protégé, mais les stratégies de protection ne sont appliquées qu’aux formats de fichiers mentionnés dans [types de fichiers pris en charge par le client Azure information protection](https://docs.microsoft.com/information-protection/rms-client/client-admin-guide-file-types).
   
 Si un format de fichier est pris en charge, par exemple un fichier Word, Excel ou PowerPoint, le fichier est toujours protégé, même après le téléchargement de la pièce jointe par le destinataire. Par exemple, si une pièce jointe est protégée par ne pas transférer, et que le destinataire d’origine télécharge et transfère la pièce jointe à un nouveau destinataire, le nouveau destinataire ne pourra pas ouvrir le fichier protégé.
   

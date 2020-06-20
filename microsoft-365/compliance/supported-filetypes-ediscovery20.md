@@ -15,13 +15,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: Une liste des types de fichiers pris en charge dans Microsoft 365 Advanced eDiscovery. Cela inclut une liste des types de fichiers image pris en charge par la fonctionnalité OCR dans Advanced eDiscovery.
-ms.openlocfilehash: 562b39664dd29ff3cf738e0d3ded7cc2f0cbb21c
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+description: Une liste des types de fichiers pris en charge dans Microsoft 365 Advanced eDiscovery, y compris les types de fichiers image pris en charge par la fonctionnalité OCR dans Advanced eDiscovery.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: e7c1840642dcc572da8e23bcdde3b7759746b209
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42634632"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44819154"
 ---
 # <a name="supported-file-types-in-advanced-ediscovery"></a>Types de fichiers pris en charge dans Advanced eDiscovery
 
@@ -49,7 +50,7 @@ Advanced eDiscovery prend en charge de nombreux types de fichiers à différents
 | vidéo/x-M4V | Oui | Oui | Non | Oui | Non | .m4v |
 ||||||||
 
-## <a name="database"></a>Base de données
+## <a name="database"></a>Database
 
 | Type MIME | Identification de fichier | Extraction de métadonnées | Extraction de texte | Visionneuse Native | Visionneuse d’annotations | Extensions possibles |
 | :- |  :- |  :- |  :- |  :- |  :- |  :- |
@@ -113,7 +114,7 @@ Advanced eDiscovery prend en charge de nombreux types de fichiers à différents
 
 | Type MIME | Identification de fichier | Extraction de métadonnées | Extraction de texte | Visionneuse Native | Visionneuse d’annotations | Extensions possibles |
 | :- |  :- |  :- |  :- |  :- |  :- |  :- |
-| application/OneNote | Oui | Oui | Oui | Oui | Non | . One |
+| application/OneNote | Oui | Oui | Oui | Oui | Non | .one |
 ||||||||
 
 ## <a name="microsoft-powerpoint"></a>Microsoft PowerPoint
@@ -154,7 +155,7 @@ Advanced eDiscovery prend en charge de nombreux types de fichiers à différents
 | :- |  :- |  :- |  :- |  :- |  :- |  :- |
 | application/msword | Oui | Oui | Oui | Oui | Oui | . dat ;. doc |
 | application/format RTF | Oui | Oui | Oui | Oui | Oui | . doc ;. rtf |
-| application/vnd. MS-Word. document. macroenabled. 12 | Oui | Oui | Oui | Oui | Oui | .docm |
+| application/vnd.ms-word.document. macroenabled. 12 | Oui | Oui | Oui | Oui | Oui | .docm |
 | application/vnd. MS-Word. template. macroenabled. 12 | Oui | Oui | Oui | Oui | Oui | . dotm |
 | application/vnd.openxmlformats-officedocument.wordprocessingml.document | Oui | Oui | Oui | Oui | Oui | . docx |
 | application/vnd. openxmlformats-officedocument. WordprocessingML. Template | Oui | Oui | Oui | Oui | Oui | . dotx |

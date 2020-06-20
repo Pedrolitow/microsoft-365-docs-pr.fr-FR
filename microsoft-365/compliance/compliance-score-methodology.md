@@ -14,19 +14,20 @@ search.appverid:
 - MOE150
 - MET150
 description: Comprendre comment le score de conformité Microsoft calcule un score personnalisé en fonction des actions entreprises pour traiter les risques et améliorer la position de votre conformité.
-ms.openlocfilehash: e1a13cee8086e158f3869a00384166366c0a63dc
-ms.sourcegitcommit: 436841236dc41390a3be9f8936d19d3d017fa35c
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: cf8a691b558614896cc17207e761035e1f360280
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/30/2020
-ms.locfileid: "44429189"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818073"
 ---
 # <a name="microsoft-compliance-score-preview-calculation"></a>Calcul du score de conformité Microsoft (aperçu)
 
 > [!IMPORTANT]
 > Les recommandations du Gestionnaire de conformité ne doivent pas être interprétées comme une garantie de conformité. Il vous revient d’évaluer et de valider l’efficacité des contrôles client selon votre environnement réglementaire. Ces services sont actuellement en version préliminaire et soumis aux conditions des [services en ligne](https://go.microsoft.com/fwlink/?linkid=2108910). Consultez également [les conseils Microsoft 365 sur les licences pour la sécurité et la conformité](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
 
-## <a name="overview"></a>Vue d’ensemble
+## <a name="how-compliance-score-works"></a>Fonctionnement du score de conformité
 
 Le tableau de bord de score de conformité affiche un score qui mesure votre progression dans la réalisation d’actions d’amélioration dans les contrôles. Vos points s’accumulent lorsque vous effectuez des actions.
 

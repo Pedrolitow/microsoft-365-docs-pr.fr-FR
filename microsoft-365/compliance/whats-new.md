@@ -16,14 +16,14 @@ search.appverid:
 ms.assetid: e3c6df61-8513-499d-ad8e-8a91770bff63
 ms.collection:
 - M365-security-compliance
-description: Nous ajoutons constamment de nouvelles fonctionnalités au centre de conformité Microsoft 365, à la résolution des problèmes que nous apprendons et en apportant des modifications en fonction de vos commentaires. Découvrez ce que nous avons fait dans ce mois-ci.
+description: Nous ajoutons constamment de nouvelles fonctionnalités au centre de conformité Microsoft 365. Découvrez ce que nous avons fait dans ce mois-ci.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 314c118673375abcf1e774a8d96d8a17edb505ff
-ms.sourcegitcommit: 6746fae2f68400fd985711b1945b66766d2a59a4
+ms.openlocfilehash: 5dc55fe38b588cd2a9b6c67d3f651e7c52df0664
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "44418898"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44817059"
 ---
 # <a name="whats-new-in-the-microsoft-365-compliance-center"></a>Nouveautés du centre de conformité Microsoft 365
 
@@ -171,7 +171,7 @@ Si vous avez utilisé le centre de sécurité & conformité d’Office 365 pour 
 |Protection contre la perte de données|Protection contre la perte de données <br/> https://protection.office.com/datalossprevention |Protection contre la perte de données <br/> https://compliance.microsoft.com/datalossprevention |[Vue d’ensemble de la protection contre la perte de données](data-loss-prevention-policies.md)|
 |Demandes des personnes concernées |Confidentialité des données > demandes des personnes concernées <br/> https://protection.office.com/dsrcases |Demandes des personnes concernées <br/> https://compliance.microsoft.com/datasubjectrequest |[Gérer les demandes des personnes associées aux données RGPD avec l’outil de cas DSR](manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md)|
 |eDiscovery|découverte électronique > eDiscovery <br/> https://protection.office.com/ediscoveryv1 |> de découverte électronique <br/> https://compliance.microsoft.com/classicediscovery |[Gérer des cas eDiscovery](ediscovery-cases.md) |
-|Événements|Événements de > de la gestion des enregistrements <br/> https://protection.office.com/events |Onglet > des événements de gestion des enregistrements <br/> https://compliance.microsoft.com/recordsmanagement?viewid=events |[Vue d’ensemble des rétentions basées sur des événements](event-driven-retention.md)|
+|Évènements|Événements de > de la gestion des enregistrements <br/> https://protection.office.com/events |Onglet > des événements de gestion des enregistrements <br/> https://compliance.microsoft.com/recordsmanagement?viewid=events |[Vue d’ensemble des rétentions basées sur des événements](event-driven-retention.md)|
 |Plan de gestion de fichiers|Gestion des enregistrements > plan de gestion des fichiers <br/> https://protection.office.com/fileplan |Onglet gestion des enregistrements > plan de fichiers <br/> https://compliance.microsoft.com/recordsmanagement?viewid=fileplan |[Utiliser le plan de gestion de fichiers pour gérer les étiquettes de rétention](file-plan-manager.md)|
 |Importer des fichiers PST|Gouvernance des informations > importer des fichiers PST <br/> https://protection.office.com/importV2 |Onglet > d’importation de la gouvernance des informations <br/> https://compliance.microsoft.com/informationgovernance?viewid=import |[Vue d’ensemble de l’importation des fichiers PST de votre organisation](importing-pst-files-to-office-365.md)|
 |Explorateur d’activité des étiquettes|Explorateur d’informations > d’activité des étiquettes <br/> https://protection.office.com/labelexplorer |Onglet Explorateur d’activités > classification des données <br/> https://compliance.microsoft.com/dataclassification?viewid=activitiesexplorer |[Afficher l’activité sur votre contenu étiqueté (aperçu)](data-classification-activity-explorer.md)|
@@ -192,13 +192,13 @@ Lors de la configuration du chiffrement pour une étiquette de sensibilité, vou
 - Lors de l’application de l’étiquette à la **messagerie Outlook**, les utilisateurs peuvent appliquer des restrictions équivalentes à celles de l’option ne pas transférer. Les destinataires seront en mesure de lire le message, mais pas de transférer, imprimer ou copier le contenu.
 - Lors de l’application de l’étiquette à des **fichiers Word, PowerPoint et Excel**, les utilisateurs sont invités à attribuer des autorisations d’accès à des utilisateurs et des groupes spécifiques.
 
-[En savoir plus](encryption-sensitivity-labels.md#let-users-assign-permissions)
+Accédez à [restreindre l’accès au contenu à l’aide des étiquettes de confidentialité pour appliquer le chiffrement](encryption-sensitivity-labels.md#let-users-assign-permissions) pour en savoir plus.
 
 ## <a name="august-2019"></a>Août 2019
 
 ### <a name="update-to-data-investigations"></a>Mise à jour des enquêtes de données
 
-Lors de l’exécution d’une enquête sur les données, vous pouvez maintenant supprimer des éléments de leur emplacement d’origine. Cela signifie que vous pouvez supprimer des éléments de boîtes aux lettres Exchange, de sites SharePoint et de comptes OneDrive au sein de votre organisation. Étant donné que vous avez collecté les éléments en tant que preuve, vous pouvez effectuer des copies de ces éléments dans l’ensemble de preuves pour vous faire une étude plus approfondie ou conserver une référence. [En savoir plus](manage-data-spillage-incidents.md#step-4-delete-the-spilled-data) 
+Lors de l’exécution d’une enquête sur les données, vous pouvez maintenant supprimer des éléments de leur emplacement d’origine. Cela signifie que vous pouvez supprimer des éléments de boîtes aux lettres Exchange, de sites SharePoint et de comptes OneDrive au sein de votre organisation. Étant donné que vous avez collecté les éléments en tant que preuve, vous pouvez effectuer des copies de ces éléments dans l’ensemble de preuves pour vous faire une étude plus approfondie ou conserver une référence. Pour plus d’informations, consultez [la gestion d’un incident de fuite de données dans Microsoft 365](manage-data-spillage-incidents.md#step-4-delete-the-spilled-data) . 
 
 ## <a name="july-2019"></a>Juillet 2019
 

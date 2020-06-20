@@ -17,12 +17,13 @@ search.appverid:
 - MET150
 ms.assetid: 5b9a067b-9d2e-4aa5-bb33-99d8c0d0b5d7
 description: Affecter les autorisations requises pour effectuer des tâches liées à la découverte électronique à l’aide du centre de sécurité & conformité.
-ms.openlocfilehash: 76ec07909fab35dfbead806befe2565f4e2054ae
-ms.sourcegitcommit: 21977f5cb6b01aee5cae54979717530b2a31a46a
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: b5c2cf20d3f417429c6e3793c23c299b860b28fa
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "44411031"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818433"
 ---
 # <a name="assign-ediscovery-permissions-in-the-security--compliance-center"></a>Attribuer des autorisations eDiscovery dans le centre de sécurité & conformité
 
@@ -45,7 +46,7 @@ Le groupe de rôles de découverte électronique principal dans le centre de sé
 > [!NOTE]
 > Pour analyser les données d’un utilisateur à l’aide de Advanced eDiscovery, l’utilisateur (le dépositaire des données) doit disposer d’une licence Office 365 E5 ou Microsoft 365 E5. Par ailleurs, les utilisateurs disposant d’une licence Office 365 E1 ou Office 365 ou Microsoft 365 E3 peuvent se voir attribuer une conformité Microsoft 365 E5 ou une licence de module complémentaire de découverte électronique et d’audit Microsoft 365. Les administrateurs, les responsables de la mise en conformité ou le personnel juridique qui sont affectés à des cas en tant que membres et utilisent Advanced eDiscovery pour collecter, afficher et analyser des données n’ont pas besoin d’une licence E5. Pour plus d’informations sur la gestion des licences eDiscovery avancée, consultez la rubrique [prise en main de Advanced eDiscovery](get-started-with-advanced-ediscovery.md).
   
-## <a name="before-you-begin"></a>Avant de commencer
+## <a name="confirm-your-roles"></a>Vérifier vos rôles
 
 - Vous devez être membre du groupe de rôles gestion de l’organisation ou disposer du rôle de gestion des rôles pour attribuer des autorisations eDiscovery dans le centre de sécurité & conformité.
     
@@ -82,7 +83,7 @@ Le tableau suivant répertorie les rôles RBAC liés à la découverte électron
 |Custodian <br/> | <br/> |![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> | <br/> |
 |Exporter <br/> | <br/> |![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> | <br/> |
 |Suspension <br/>  |![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> |
-|Aperçu <br/>  | <br/> |![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> | <br/> |
+|Preview <br/>  | <br/> |![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> | <br/> |
 |Révision <br/>  | <br/> |![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> |![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |
 |Déchiffrement RMS <br/>  ||![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |||
 |Recherche et purge <br/> | <br/> | <br/> |![Coche](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> | <br/> | 
@@ -94,7 +95,7 @@ Les sections suivantes décrivent chacun des rôles RBAC liés à la découverte
 
 Ce rôle permet aux utilisateurs de créer, de modifier, de supprimer et de contrôler l’accès à des cas de découverte électronique de base et de découverte électronique avancée dans le centre de conformité & Compliance Center. Comme expliqué précédemment, un utilisateur doit se voir attribuer le rôle de gestion des cas avant de pouvoir utiliser l’applet de commande **Add-eDiscoveryCaseAdmin** pour en faire un administrateur eDiscovery.
 
-Pour plus d’informations, voir :
+Pour plus d’informations, reportez-vous aux rubriques suivantes :
 
 - [Prise en main de la découverte électronique de base](get-started-core-ediscovery.md)
 
@@ -138,7 +139,7 @@ Pour plus d’informations sur les suspensions, voir :
 
 - [Création d’une conservation dans Advanced eDiscovery](add-custodians-to-case.md#step-4-place-custodians-on-hold)
 
-### <a name="preview"></a>Aperçu
+### <a name="preview"></a>Preview
 
 Ce rôle permet aux utilisateurs d’afficher la liste des éléments renvoyés à partir d’une recherche de contenu. Ils peuvent également ouvrir et afficher chaque élément de la liste pour en afficher le contenu.
 

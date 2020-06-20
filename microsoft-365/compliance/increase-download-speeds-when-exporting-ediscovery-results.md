@@ -15,13 +15,15 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: c4c8f689-9d52-4e80-ae4b-1411ee9efc43
-description: Découvrez comment configurer le Registre Windows pour augmenter le débit des données lors du téléchargement des résultats de recherche et des données de recherche à partir du centre de conformité & de sécurité et de la fonctionnalité eDiscovery avancée.
-ms.openlocfilehash: a5e08f2fe7d8840cfe8f176080c90b8b40d16af6
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.custom:
+- seo-marvel-apr2020
+description: Découvrez comment configurer le Registre Windows pour augmenter le débit des données lors du téléchargement des résultats de recherche et des données.
+ms.openlocfilehash: a68a616d2dced4a3dd70580e1b258c95a0b5e39e
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43943353"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44817673"
 ---
 # <a name="increase-the-download-speed-when-exporting-ediscovery-search-results"></a>Augmentation de la vitesse de téléchargement lors de l’exportation des résultats de recherche eDiscovery
 
@@ -56,17 +58,17 @@ Effectuez la procédure suivante sur l’ordinateur que vous allez utiliser pour
 6. Vous pouvez répéter les étapes 2-5 pour modifier la valeur du `DownloadConcurrency` paramètre de registre. 
     
     > [!IMPORTANT]
-    > Une fois que vous avez créé `DownloadConcurrency` ou modifié le paramètre de Registre, veillez à créer une nouvelle tâche d’exportation ou à redémarrer une tâche d’exportation existante pour les résultats de recherche ou les données que vous souhaitez télécharger. Pour plus d’informations, reportez-vous à la section [more information](#more-information) . 
+    > Une fois que vous avez créé ou modifié le `DownloadConcurrency` paramètre de Registre, veillez à créer une nouvelle tâche d’exportation ou à redémarrer une tâche d’exportation existante pour les résultats de recherche ou les données que vous souhaitez télécharger. Pour plus d’informations, reportez-vous à la section [more information](#more-information) . 
   
 ## <a name="more-information"></a>Plus d’informations
 
 - Une nouvelle clé de Registre est créée lors de la première exécution du fichier. reg que vous avez créé au cours de cette procédure. Le `DownloadConcurrency` paramètre de Registre est ensuite modifié chaque fois que vous modifiez et réexécutez le fichier de modification. reg. 
     
-- L’outil d’exportation de découverte électronique utilise l' [utilitaire Azure AzCopy](https://go.microsoft.com/fwlink/?linkid=849949) pour télécharger des données de recherche à partir du centre de sécurité & conformité ou d’Advanced eDiscovery. La configuration du `DownloadConcurrency` paramètre de Registre est similaire à l’utilisation du paramètre **/NC** lors de l’exécution de l’utilitaire AzCopy. Par conséquent, le paramètre `"DownloadConcurrency=24"` de Registre aurait le même effet que l’utilisation de la `/NC:24` valeur de paramètre avec l’utilitaire AzCopy. 
+- L’outil d’exportation de découverte électronique utilise l' [utilitaire Azure AzCopy](https://go.microsoft.com/fwlink/?linkid=849949) pour télécharger des données de recherche à partir du centre de sécurité & conformité ou d’Advanced eDiscovery. La configuration du `DownloadConcurrency` paramètre de Registre est similaire à l’utilisation du paramètre **/NC** lors de l’exécution de l’utilitaire AzCopy. Par conséquent, le paramètre de Registre `"DownloadConcurrency=24"` aurait le même effet que l’utilisation de la valeur de paramètre `/NC:24` avec l’utilitaire AzCopy. 
     
-- Si vous arrêtez le téléchargement d’exportation en cours, puis le redémarrez (en essayant de nouveau de télécharger les résultats de la recherche), l’outil d’exportation de découverte électronique essaiera de reprendre le même téléchargement. Par conséquent, si vous démarrez un téléchargement, que vous l’arrêtez, puis `DownloadConcurrency` que vous modifiez le paramètre de Registre, le téléchargement échouera probablement si vous le redémarrez (en cliquant sur **Télécharger les résultats exportés**). Cela est dû au fait que l’outil d’exportation tente de reprendre le téléchargement précédent en utilisant des paramètres qui ne sont pas valides, car vous avez modifié le paramètre de registre.
+- Si vous arrêtez le téléchargement d’exportation en cours, puis le redémarrez (en essayant de nouveau de télécharger les résultats de la recherche), l’outil d’exportation de découverte électronique essaiera de reprendre le même téléchargement. Par conséquent, si vous démarrez un téléchargement, que vous l’arrêtez, puis que vous modifiez le `DownloadConcurrency` paramètre de Registre, le téléchargement échouera probablement si vous le redémarrez (en cliquant sur **Télécharger les résultats exportés**). Cela est dû au fait que l’outil d’exportation tente de reprendre le téléchargement précédent en utilisant des paramètres qui ne sont pas valides, car vous avez modifié le paramètre de registre.
     
-    Par conséquent, une fois que `DownloadConcurrency` vous avez modifié le paramètre de Registre, veillez à redémarrer le travail d’exportation (en cliquant sur **redémarrer l’exportation**) dans le centre de sécurité & conformité. Vous pouvez ensuite télécharger les résultats exportés. Pour plus d’informations sur l’exportation des données et des résultats de recherche, voir :
+    Par conséquent, une fois que vous avez modifié le `DownloadConcurrency` paramètre de Registre, veillez à redémarrer le travail d’exportation (en cliquant sur **redémarrer l’exportation**) dans le centre de sécurité & conformité. Vous pouvez ensuite télécharger les résultats exportés. Pour plus d’informations sur l’exportation des données et des résultats de recherche, voir :
     
   - [Exporter les résultats de la recherche de contenu](export-search-results.md)
     

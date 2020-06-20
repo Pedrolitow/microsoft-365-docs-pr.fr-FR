@@ -15,17 +15,18 @@ search.appverid:
 - MET150
 ms.assetid: c3198d1c-51b4-4280-87c5-269b47246d33
 description: 'Comprendre les instructions relatives à l’exportation des données de cas eDiscovery et des résultats à consulter à l’aide du processus d’exportation dans Advanced eDiscovery.  '
-ms.openlocfilehash: 8a46a0c3d04cb89d50486d032a7958ccb779b5e1
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 88be4a96720aee2392b6e0972919997f8634054b
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43615938"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44817763"
 ---
 # <a name="export-case-data-in-advanced-ediscovery-classic"></a>Exporter des données de cas dans Advanced eDiscovery (classique)
 
 > [!NOTE]
-> Pour utiliser Advanced eDiscovery, votre organisation doit souscrire un abonnement Office 365 E3 avec le module complémentaire Conformité avancée ou un abonnement E5. Si vous ne disposez pas d’un abonnement et que vous souhaitez essayer Advanced eDiscovery, vous pouvez vous [inscrire pour utiliser une version d’évaluation d’Office 365 Entreprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
+> Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
 Le processus d’exportation dans Advanced eDiscovery permet l’exportation de contenu et de résultats eDiscovery avancés pour une révision externe. 
   
@@ -37,9 +38,9 @@ Le processus d’exportation dans Advanced eDiscovery permet l’exportation de 
     
 - L’exportation d’une grande quantité de données vers une base de données peut avoir un impact significatif sur la taille de base de données requise et sur la configuration requise de la base de données eDiscovery avancée.
     
-## <a name="see-also"></a>Voir aussi
+## <a name="related-topics"></a>Voir aussi
 
-[Advanced eDiscovery (classique)](office-365-advanced-ediscovery.md)
+[Advanced eDiscovery (classique)](office-365-advanced-ediscovery.md)
   
 [Exportation des résultats](export-results-in-advanced-ediscovery.md)
   

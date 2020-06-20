@@ -15,18 +15,19 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: c87bb0e5-301c-4d1d-958e-aabeb7990f44
-description: 'Découvrez comment utiliser le centre de &amp; sécurité conformité pour accéder à Advanced eDiscovery et exécuter le module de processus pour un cas.  '
-ms.openlocfilehash: efab765a7ed17b1118efe7296fbabe08d51dd1ba
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: 'Découvrez comment utiliser le centre de sécurité &amp; conformité pour accéder à Advanced eDiscovery et exécuter le module de processus pour un cas.  '
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 47614e8bc25a376f9b51068c151a71e025e2f264
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43626470"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818903"
 ---
 # <a name="run-the-process-module-and-load-data-in-advanced-ediscovery-classic"></a>Exécuter le module de processus et charger des données dans Advanced eDiscovery (classique)
 
 > [!NOTE]
-> Pour utiliser Advanced eDiscovery, votre organisation doit souscrire un abonnement Office 365 E3 avec le module complémentaire Conformité avancée ou un abonnement E5. Si vous ne disposez pas d’un abonnement et que vous souhaitez essayer Advanced eDiscovery, vous pouvez vous [inscrire pour utiliser une version d’évaluation d’Office 365 Entreprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
+> Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
 Cette section décrit les fonctionnalités du module Advanced eDiscovery Process. 
   
@@ -41,13 +42,13 @@ Advanced eDiscovery fournit des valeurs de métadonnées système, telles que de
   
 Procédez comme suit pour exécuter le processus.
   
-1. [Ouvrez le centre &amp; de sécurité et de conformité](go-to-the-securitycompliance-center.md) . 
+1. [Ouvrir la sécurité &amp; Centre de conformité](go-to-the-securitycompliance-center.md) . 
     
-2. Accédez à la **découverte électronique** de l' ** &amp; enquête** \> , puis cliquez sur **accéder à Advanced eDiscovery**.
+2. Accédez à la découverte électronique de l' ** &amp; enquête** \> **eDiscovery** , puis cliquez sur **accéder à Advanced eDiscovery**.
     
 3. Dans Advanced eDiscovery, sélectionnez la casse appropriée dans la page **incidents** affichés et cliquez sur **atteindre la casse**.
     
-4. Dans **préparer** \> **Process** \> **le**processus de préparation, sélectionnez un conteneur dans la liste des conteneurs disponibles.
+4. Dans **préparer** \> **le processus** de préparation \> **Setup**, sélectionnez un conteneur dans la liste des conteneurs disponibles.
     
     ![Cliquez sur traiter pour ajouter les résultats de la recherche à la demande de devis](../media/50bdc55c-d378-4881-b302-31ef785fa359.png)
   
@@ -77,13 +78,13 @@ Procédez comme suit pour exécuter le processus.
     
 6. Pour commencer, cliquez sur **traiter**. Une fois terminé, les résultats du processus sont affichés.
     
-7. Module Si vous devez attribuer des sources de données à un dépositaire spécifique, vous pouvez ajouter et modifier les noms des dépositaires dans les **dépositaires** \> **gérer** et **attribuer des** \> dépositaires à **attribuer**. 
+7. Module Si vous devez attribuer des sources de données à un dépositaire spécifique, vous pouvez ajouter et modifier les noms des dépositaires dans les **dépositaires** pour \> **gérer** et attribuer des dépositaires **à** \> **attribuer**. 
     
 Si vous ajoutez au cas, vous pouvez de nouveau traiter.
   
-## <a name="see-also"></a>Voir aussi
+## <a name="related-topics"></a>Voir aussi
 
-[Advanced eDiscovery (classique)](office-365-advanced-ediscovery.md)
+[Advanced eDiscovery (classique)](office-365-advanced-ediscovery.md)
   
 [Affichage des résultats de module de processus](view-process-module-results-in-advanced-ediscovery.md)
 

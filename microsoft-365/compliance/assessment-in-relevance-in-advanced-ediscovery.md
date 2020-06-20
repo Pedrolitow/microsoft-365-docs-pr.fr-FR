@@ -15,18 +15,19 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 1d33d4fb-91ed-41c0-b72e-5a26eca3a2a7
-description: Obtenez une vue d’ensemble de la phase d’évaluation et de son rôle dans la détermination de la richesse des problèmes lors de la formation à la pertinence dans Advanced eDiscovery.
-ms.openlocfilehash: e1e090a9b3aceecad8451657d7a8e5d26e92ed6f
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: Obtenez une vue d’ensemble de la phase d’évaluation et de son rôle dans la détermination de la richesse des problèmes lors de la formation à la pertinence dans Microsoft 365 Advanced eDiscovery.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: afd4f1f549d52652ac02cfa410efc507ece58910
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636152"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818413"
 ---
 # <a name="understand-assessment-in-relevance-in-advanced-ediscovery-classic"></a>Comprendre l’évaluation en matière de pertinence dans Advanced eDiscovery (classique)
 
 > [!NOTE]
-> Pour utiliser Advanced eDiscovery, votre organisation doit souscrire un abonnement Office 365 E3 avec le module complémentaire Conformité avancée ou un abonnement E5. Si vous ne disposez pas d’un abonnement et que vous souhaitez essayer Advanced eDiscovery, vous pouvez vous [inscrire pour utiliser une version d’évaluation d’Office 365 Entreprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
+> Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
 Advanced eDiscovery permet une évaluation anticipée, par exemple, pour les problèmes définis et les données importées pour un cas. Advanced eDiscovery permet à l’expert de prendre des décisions sur une approche adoptée et d’appliquer ces décisions au projet de révision de document.
   
@@ -51,11 +52,11 @@ Chaque problème a sa propre richesse, sa marge d’erreur actuelle et, par cons
 Vous pouvez accepter les recommandations de pertinence ou ajuster la marge actuelle d’erreur en fonction de vos besoins. La marge d’erreur actuelle par défaut est déterminée pour rappel à une valeur égale ou supérieure à 75%.
   
 > [!NOTE]
-> La phase d’évaluation peut être ignorée, sous l’onglet de **suivi de pertinence \> ** de l’affichage développé d’un problème, en désactivant la case à cocher **évaluation** par problème, puis « tous les problèmes ». Toutefois, il n’y aura pas de statistiques pour ce problème. > la désactivation de la case à cocher **évaluation** ne peut être effectuée qu’avant l’évaluation. Dans le cas où plusieurs problèmes existent, l’évaluation est ignorée uniquement si la case à cocher est désactivée pour chaque problème. 
+> La phase d’évaluation peut être ignorée, sous l’onglet de ** \> suivi de pertinence** de l’affichage développé d’un problème, en désactivant la case à cocher **évaluation** par problème, puis « tous les problèmes ». Toutefois, il n’y aura pas de statistiques pour ce problème. > la désactivation de la case à cocher **évaluation** ne peut être effectuée qu’avant l’évaluation. Dans le cas où plusieurs problèmes existent, l’évaluation est ignorée uniquement si la case à cocher est désactivée pour chaque problème. 
   
-## <a name="see-also"></a>Voir aussi
+## <a name="related-topics"></a>Voir aussi
 
-[Advanced eDiscovery (classique)](office-365-advanced-ediscovery.md)
+[Advanced eDiscovery (classique)](office-365-advanced-ediscovery.md)
   
 [Balisage et évaluation](tagging-and-assessment-in-advanced-ediscovery.md)
   

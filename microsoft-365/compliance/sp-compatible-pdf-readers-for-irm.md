@@ -15,13 +15,14 @@ search.appverid:
 - OSU150
 - MET150
 ms.assetid: dd197d58-5bf6-4d18-b9f8-d16db603fae2
-description: Microsoft SharePoint 2013 prend en charge la protection de la gestion des droits relatifs à l’information (IRM) des documents PDF. Grâce à cette prise en charge, les utilisateurs peuvent télécharger des documents PDF vers des bibliothèques protégées par IRM et les fichiers seront protégés à l’aide de Microsoft Office IRM.
-ms.openlocfilehash: 52089e44d41d9fd2562780deb0848a3a1a5705cd
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+description: Découvrez comment la gestion des droits relatifs à l’information (IRM) protège les documents PDF téléchargés et téléchargés à partir de bibliothèques protégées par IRM dans Microsoft SharePoint 2013.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: d39b59788425eec267adba057f9361599a2b06cc
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601441"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44819164"
 ---
 # <a name="sharepoint-compatible-pdf-readers-that-support-microsoft-information-rights-management-services"></a>Lecteurs PDF compatibles avec SharePoint qui prennent en charge les services de gestion des droits relatifs à l’information Microsoft
 

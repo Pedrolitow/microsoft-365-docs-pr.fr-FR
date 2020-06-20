@@ -17,18 +17,18 @@ search.appverid:
 ms.assetid: ''
 description: Utilisez l’outil de gestion des dépositaires eDiscovery avancés pour accéder facilement à l’activité des dépositaires et les Rechercher dans votre cas.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 84da57c8f2115c18543d4f38fd84f2c4eccb46d5
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 29aee2498b21cc4535ffa82f91fdba05125c4d18
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034296"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44819044"
 ---
 # <a name="view-custodian-audit-activity"></a>Afficher l’activité d’audit du dépositaire
 
 Vous avez besoin de déterminer si un utilisateur a consulté un document spécifique ou supprimé définitivement un élément de sa boîte aux lettres ? Advanced eDiscovery est désormais intégré à l’outil de recherche de journal d’audit existant dans le centre de sécurité & Compliance Center. À l’aide de cette expérience intégrée, vous pouvez utiliser l’outil de gestion des dépositaires eDiscovery avancés pour faciliter votre enquête en accédant facilement à l’activité des dépositaires et en les recherchant dans votre cas.
 
-## <a name="before-you-begin"></a>Avant de commencer
+## <a name="get-permissions"></a>Obtenir des autorisations
 
 Vous devez avoir le rôle Journaux d’audit en affichage seul ou Journaux d’audit dans Exchange Online pour pouvoir effectuer des recherches dans le journal d’audit. Par défaut, ces rôles sont affectés aux groupes de rôles Gestion de la conformité et Gestion de l’organisation sur la page Autorisations dans le Centre d’administration Exchange. Pour permettre à un utilisateur d’effectuer des recherches dans le journal d’audit avancé eDiscovery avec le niveau minimal de privilèges, vous pouvez créer un groupe de rôles personnalisé dans Exchange Online, ajouter les journaux d’audit en affichage seul ou les journaux d’audit, puis ajouter l’utilisateur en tant que membre du nouveau groupe de rôles. Pour plus d’informations, voir Gérer les groupes de rôles dans Exchange Online.
 

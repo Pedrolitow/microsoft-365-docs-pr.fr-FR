@@ -16,13 +16,15 @@ ms.assetid: 09f6737e-f03f-4bc8-8281-e46d24ee2a74
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
-description: Une fois que vous avez terminé la configuration d’Office 365 message Encryption (OME), vous pouvez personnaliser la configuration de votre déploiement de plusieurs façons. Par exemple, vous pouvez configurer s’il faut activer des codes de passe unique, afficher le bouton protéger dans Outlook sur le Web, et bien plus encore. Les tâches décrites dans cet article expliquent comment procéder.
-ms.openlocfilehash: 25cb5cebda48432afdc670a6dab0a5229167df15
-ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
+ms.custom:
+- seo-marvel-apr2020
+description: Une fois que vous avez terminé la configuration d’Office 365 message Encryption (OME), Découvrez comment personnaliser votre déploiement de plusieurs façons.
+ms.openlocfilehash: 83fa620852ea9b2e0cd50d50b6715742658b7239
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "44165975"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44815431"
 ---
 # <a name="manage-office-365-message-encryption"></a>Gérer le chiffrement de messages Office 365
 
@@ -191,9 +193,9 @@ Vous pouvez utiliser des modèles personnalisés pour obliger les destinataires 
 
    - `mail flow rule name`est le nom que vous souhaitez utiliser pour la nouvelle règle de flux de messagerie.
 
-   - `option name`est soit `Encrypt` ou `Do Not Forward`.
+   - `option name`est soit `Encrypt` ou `Do Not Forward` .
 
-   - `template name`est le nom que vous avez attribué au modèle personnalisé, par exemple `OME Configuration`.
+   - `template name`est le nom que vous avez attribué au modèle personnalisé, par exemple `OME Configuration` .
 
    Pour chiffrer tous les messages électroniques externes avec le modèle « configuration de OME » et appliquer l’option de chiffrement uniquement :
 

@@ -12,13 +12,14 @@ search.appverid:
 - MET150
 ms.collection:
 - M365-security-compliance
-description: Avec la clé client, vous contrôlez les clés de chiffrement de votre organisation, puis vous configurez Microsoft 365 afin de les utiliser pour chiffrer vos données au repos dans les centres de données de Microsoft.
-ms.openlocfilehash: 701dc306a81e12db7dd1062d2a840621b710abd3
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom: seo-marvel-apr2020
+description: Dans cet article, vous allez découvrir le fonctionnement du chiffrement de service avec la clé client dans Microsoft 365.
+ms.openlocfilehash: 217e23eff89427e5bd30a1da4dd36729110ed563
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635590"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44817953"
 ---
 # <a name="service-encryption-with-customer-key"></a>Chiffrement de service avec clé client
 

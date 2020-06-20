@@ -13,13 +13,15 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-description: Découvrez les limites en vigueur pour la solution eDiscovery avancée dans Microsoft 365. Cela inclut les limites de cas, les limites d’indexation et les limites de recherche lors de l’utilisation de l’outil de recherche pour collecter les données de cas.
-ms.openlocfilehash: babc05cc5c74f435f0be6fbc8eafd80f09a77b75
-ms.sourcegitcommit: 33be6075fcc89d4c0a48fa7e59f3b3ebc605d9f3
+ms.custom:
+- seo-marvel-apr2020
+description: Découvrez les limites de cas, les limites d’indexation et les limites de recherche en vigueur pour la solution eDiscovery avancée dans Microsoft 365.
+ms.openlocfilehash: 67e53a484878b0ea4ddde29d77297a3d9b2fd7cd
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44520146"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44817091"
 ---
 # <a name="limits-in-advanced-ediscovery"></a>Limites définies dans Advanced eDiscovery
 

@@ -17,18 +17,18 @@ search.appverid:
 ms.assetid: ''
 description: Découvrez comment importer des données non-Microsoft 365 vers un jeu de réexamen pour analyse dans un cas avancé de découverte électronique.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ed4a26ea1dd68b9198cce67ce0f97580ed4b2a99
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: f9b506edc55da1916ae908eaa7ca619ba7300f87
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034422"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44815461"
 ---
 # <a name="load-non-microsoft-365-data-into-a-review-set"></a>Charger des données non-Microsoft 365 dans un jeu de révision
 
 Tous les documents que vous devez analyser dans Advanced eDiscovery sont situés dans Microsoft 365. Avec la fonctionnalité d’importation de données non-Microsoft 365 dans Advanced eDiscovery, vous pouvez télécharger des documents qui ne se trouvent pas dans le groupe de Microsoft 365 vers un jeu de révision. Cet article vous explique comment mettre vos documents non-Microsoft 365 dans Advanced eDiscovery pour analyse.
 
-## <a name="before-you-begin"></a>Avant de commencer
+## <a name="requirements-to-upload-non-office-365-content"></a>Conditions requises pour télécharger du contenu non-Office 365
 
 Pour utiliser la fonctionnalité Télécharger non-Microsoft 365 décrite dans cet article, vous devez disposer des éléments suivants :
 

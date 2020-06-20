@@ -15,13 +15,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 35d0ecdb-7cb0-44be-ad5c-69df2f8f8b25
-description: 'Si un ancien employé revient à votre organisation, ou si un nouvel employé est embauché pour prendre en charge les responsabilités d’un employé à l’origine de la demande, vous pouvez récupérer le contenu de la boîte aux lettres inactive dans Office 365. Lorsque vous récupérez une boîte aux lettres inactive, elle est convertie en une nouvelle boîte aux lettres qui contient le contenu de la boîte aux lettres inactive. '
-ms.openlocfilehash: 63d71d2f6e23af55d94f006e772f35747c83d59c
-ms.sourcegitcommit: 584e2e9db8c541fe32624acdca5e12ee327fdb63
+ms.custom: seo-marvel-apr2020
+description: Découvrez comment récupérer le contenu d’une boîte aux lettres inactive dans Office 365 en le convertissant en une nouvelle boîte aux lettres qui contient le contenu de la boîte aux lettres inactive.
+ms.openlocfilehash: e5ac5a5e5e9e73d118ea1872bf36476ee1e1965a
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44678970"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818944"
 ---
 # <a name="recover-an-inactive-mailbox"></a>Récupérer une boîte aux lettres inactive
 
@@ -33,7 +34,7 @@ Une boîte aux lettres inactive (c'est-à-dire un type de boîte aux lettres sup
 
 Consultez la section [Plus d'informations](#more-information) pour obtenir d'autres détails concernant les différences entre la restauration et la récupération d'une boîte aux lettres inactive et une description de la récupération d'une boîte aux lettres inactive.
   
-## <a name="before-you-begin"></a>Avant de commencer
+## <a name="requirements-to-recover-an-inactive-mailbox"></a>Conditions requises pour la récupération d’une boîte aux lettres inactive
 
 - Vous devez utiliser Exchange Online PowerShell pour récupérer une boîte aux lettres inactive. Vous ne pouvez pas utiliser le Centre d'administration Exchange (CAE). Pour obtenir des instructions détaillées, consultez la rubrique [connexion à Exchange Online PowerShell](https://go.microsoft.com/fwlink/?linkid=396554).
     
@@ -56,7 +57,7 @@ Utilisez la cmdlet **New-Mailbox** avec le paramètre *InactiveMailbox* pour ré
     ```
 
     > [!IMPORTANT]
-    > Dans la commande précédente, utilisez la valeur de la propriété **DistinguishedName** ou **ExchangeGUID** pour identifier la boîte aux lettres inactive. Ces propriétés sont uniques pour chaque boîte aux lettres de votre organisation, alors qu'une boîte aux lettres active et une boîte aux lettres inactive peuvent avoir la même adresse SMTP principale. 
+    > In the previous command, use the value of the **DistinguishedName** or **ExchangeGUID** property to identify the inactive mailbox. These properties are unique for each mailbox in your organization, whereas it's possible that an active and an inactive mailbox might have the same primary SMTP address. 
   
 2. Cet exemple utilise les propriétés obtenues grâce à la commande précédente et récupère la boîte aux lettres inactive dans une boîte aux lettres active pour l'utilisateur Ann Beebe. Assurez-vous que les valeurs spécifiées pour les paramètres *Name* et *MicrosoftOnlineServicesID* sont uniques au sein de votre organisation. 
 
@@ -84,7 +85,7 @@ Une fois que vous avez récupéré une boîte aux lettres inactive, un nouveau c
   
      - **Stratégie de rétention Microsoft 365 sans verrou de conservation.** La boîte aux lettres inactive est supprimée de toutes les stratégies de rétention Microsoft 365 déverrouillées qui lui ont été appliquées. Toutefois, la conservation pour litige est activée sur la boîte aux lettres Récupérée afin d’empêcher la suppression du contenu d’une boîte aux lettres basée sur des stratégies de rétention à l’échelle de l’organisation qui suppriment le contenu antérieur à un âge donné. Vous pouvez conserver la conservation pour litige ou la supprimer. Pour plus d’informations, consultez [la rubrique créer une conservation pour litige](create-a-litigation-hold.md).
 
-  - La période de récupération d'élément unique (définie par la propriété de boîte aux lettres **RetainDeletedItemsFor** ) est paramétrée sur 30 jours. En général, lorsqu'une boîte aux lettres est créée dans Exchange Online, cette période de rétention est définie sur 14 jours. En définissant ce paramètre sur la valeur maximale de 30 jours, vous gagnez du temps pour récupérer toutes les données définitivement supprimées (ou purgées) de la boîte aux lettres inactive. Vous pouvez également désactiver la récupération d'élément unique ou redéfinir la période de récupération d'élément unique sur la valeur par défaut de 14 jours. Pour plus d'informations, consultez la rubrique [Enable or disable single item recovery for a mailbox](https://go.microsoft.com/fwlink/?linkid=856769).
+  - The single item recovery period (which is defined by the **RetainDeletedItemsFor** mailbox property) is set to 30 days. Typically, when a new mailbox is created in Exchange Online, this retention period is set to 14 days. Setting this to the maximum value of 30 days gives you more time to recover any data that's been permanently deleted (or purged) from the inactive mailbox. You can also disable single item recovery or set the single item recovery period back to the default of 14 days. For more information, see [Enable or disable single item recovery for a mailbox](https://go.microsoft.com/fwlink/?linkid=856769).
   
   - Le blocage de rétention est activé et la durée du blocage de rétention est définie sur 30 jours. Cela signifie que la stratégie de rétention Exchange par défaut, ainsi que toutes les stratégies de rétention Microsoft 365 à l’échelle de l’organisation ou à l’échelle de l’organisation qui sont affectées à la nouvelle boîte aux lettres ne seront pas traitées pendant 30 jours. L'employé de retour ou le nouveau propriétaire de la boîte aux lettres inactive récupérée a ainsi le temps de gérer les anciens messages. Dans le cas contraire, la stratégie de rétention Exchange ou Microsoft 365 peut supprimer les anciens éléments de boîte aux lettres (ou déplacer les éléments vers la boîte aux lettres d’archivage si elle est activée) qui ont expiré en fonction des paramètres configurés pour les stratégies de rétention Exchange ou Microsoft 365. Après 30 jours, le blocage de rétention expire, la propriété de boîte aux lettres **RetentionHoldEnabled** est définie sur **false**et l’Assistant dossier géré commence à traiter les stratégies attribuées à la boîte aux lettres. Si vous n'avez pas besoin de ce temps supplémentaire, il vous suffit de supprimer le blocage de rétention. Vous pouvez également augmenter la durée du blocage de rétention à l'aide de la commande **Set-Mailbox -EndDateForRetentionHold**. Pour plus d'informations, consultez la rubrique [Place a mailbox on retention hold](https://go.microsoft.com/fwlink/?linkid=856300).
 

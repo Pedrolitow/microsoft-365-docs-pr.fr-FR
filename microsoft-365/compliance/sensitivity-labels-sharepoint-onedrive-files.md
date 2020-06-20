@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Les administrateurs peuvent activer la prise en charge de l’étiquette de sensibilité pour les fichiers Word, Excel et PowerPoint dans SharePoint et OneDrive.
-ms.openlocfilehash: d12cb6d83ef343b0dc192d2515da7670cd159be2
-ms.sourcegitcommit: 92f641cad63379bf16417854a43b16b48a71a30a
+ms.openlocfilehash: ee6f89db7758140ac8e4c2752d8a2883cc0990db
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "44724795"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780717"
 ---
 # <a name="enable-sensitivity-labels-for-office-files-in-sharepoint-and-onedrive"></a>Activer les étiquettes de confidentialité pour les fichiers Office dans SharePoint et OneDrive
 
@@ -184,7 +184,7 @@ En comparaison, les étiquettes de sensibilité fournissent les paramètres de p
 
 Toutefois, vous pouvez utiliser les deux solutions de protection conjointement et le comportement est le suivant : 
 
-- Si vous téléchargez un fichier avec une étiquette de sensibilité qui applique le chiffrement, le chiffrement n’est pas supprimé pour ces fichiers, la co-création, la découverte électronique, DLP et la recherche ne sont pas pris en charge.
+- Si vous téléchargez un fichier avec une étiquette de sensibilité qui applique le chiffrement, SharePoint ne peut pas traiter ce fichier de sorte que la co-création, eDiscovery, DLP et la recherche ne fonctionnent pas pour ce fichier.
 
 - Si vous étiquetez un fichier à l’aide d’Office sur le Web, tous les paramètres de chiffrement de l’étiquette sont appliqués. Pour ces fichiers, la co-création, la découverte électronique, DLP et la recherche sont prises en charge.
 

@@ -16,17 +16,18 @@ search.appverid:
 - MET150
 ms.assetid: 35d52b41-75ab-4144-9edf-31e11453bd5d
 description: 'Découvrez comment afficher des informations détaillées pour les sessions de lots d’exportation sélectionnées et comment annuler la dernière session d’exportation dans Advanced eDiscovery.  '
-ms.openlocfilehash: 356b0b61288b466da38bc640f9aad636ee654da2
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 498cd5d0fbeea4902a0992e8210666884a308f72
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43626350"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44819054"
 ---
 # <a name="view-batch-history-and-export-past-results-in-advanced-ediscovery-classic"></a>Affichage de l’historique des lots et exportation des résultats passés dans Advanced eDiscovery (classique)
 
 > [!NOTE]
-> Pour utiliser Advanced eDiscovery, votre organisation doit souscrire un abonnement Office 365 E3 avec le module complémentaire Conformité avancée ou un abonnement E5. Si vous ne disposez pas d’un abonnement et que vous souhaitez essayer Advanced eDiscovery, vous pouvez vous [inscrire pour utiliser une version d’évaluation d’Office 365 Entreprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
+> Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
 La section suivante décrit les options supplémentaires pour l’affichage et l’exportation de données par lots dans Advanced eDiscovery. 
   
@@ -34,7 +35,7 @@ La section suivante décrit les options supplémentaires pour l’affichage et l
 
 La boîte de dialogue Exporter l’historique fournit des informations détaillées sur les sessions de lots d’exportation sélectionnées et permet également d’annuler la dernière session.
   
-1. Dans l’option **Exporter \> le programme d’installation**, sélectionnez le nom du lot dans la liste déroulante **Exporter le lot** . 
+1. Dans l’option **Exporter le \> programme d’installation**, sélectionnez le nom du lot dans la liste déroulante **Exporter le lot** . 
     
 2. À droite du nom du lot d’exportation, sélectionnez l’icône **historique du lot** : 
     
@@ -46,9 +47,9 @@ La boîte de dialogue Exporter l’historique fournit des informations détaill�
   
 3. S’il est nécessaire de restaurer une session précédente, cliquez sur **Annuler dernière session**. La restauration peut être effectuée plusieurs fois, ce qui annule la dernière session.
     
-4. Si vous souhaitez télécharger des données à tout moment à partir d’une session d’exportation exécutée précédemment **Download** , cliquez ![sur l’icône de téléchargement](../media/de69b920-a6ac-4ddb-b93e-e1cc5888e6c4.gif) exporter l’icône téléchargement de l’historique par lots en regard du lot d’export à exporter. 
+4. Si vous souhaitez télécharger des données à tout moment à partir d’une session d’exportation exécutée précédemment, cliquez sur l’icône de **Téléchargement** ![ exporter l’icône téléchargement de l’historique par lots en ](../media/de69b920-a6ac-4ddb-b93e-e1cc5888e6c4.gif) regard du lot d’export à exporter. 
     
-5. Lorsque la boîte de dialogue **signature d’accès partagé** s’affiche, cliquez sur **copier dans le presse-papiers** pour copier les données de session d’exportation vers l’ordinateur local, puis cliquez sur **Fermer**. La boîte &amp; de dialogue de l' **outil d’exportation eDiscovery** du centre de sécurité et de sécurité s’affiche. 
+5. Lorsque la boîte de dialogue **signature d’accès partagé** s’affiche, cliquez sur **copier dans le presse-papiers** pour copier les données de session d’exportation vers l’ordinateur local, puis cliquez sur **Fermer**. La boîte de dialogue de l’outil d’exportation EDiscovery du centre de sécurité et de sécurité &amp; s’affiche. **eDiscovery Export Tool** 
     
     ![Boîte de dialogue Exporter la découverte électronique](../media/01f79d2d-6da0-45e6-9c6f-ab12347572cb.gif)
   
@@ -60,9 +61,9 @@ La boîte de dialogue Exporter l’historique fournit des informations détaill�
     
 3. Cliquez sur **Démarrer**. Les fichiers d’exportation sont téléchargés sur l’ordinateur local. 
     
-## <a name="see-also"></a>Voir aussi
+## <a name="related-topics"></a>Voir aussi
 
-[Advanced eDiscovery (classique)](office-365-advanced-ediscovery.md)
+[Advanced eDiscovery (classique)](office-365-advanced-ediscovery.md)
   
 [Exportation des résultats](export-results-in-advanced-ediscovery.md)
 

@@ -15,20 +15,22 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-ms.custom: seo-marvel-mar2020
+ms.custom:
+- seo-marvel-mar2020
+- seo-marvel-apr2020
 description: Utilisez l’outil d’analyse des données (préversion) personnes d’un outil de gestion des intérêts dans votre enquête en accédant à l’activité et en la recherchant pour les personnes concernées.
-ms.openlocfilehash: 552d7727761052a28c2a58b51bf9b937bf953ad5
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 37a8d6bae02f1e18bdd5599d7c5472b8d42e145f
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034276"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44819014"
 ---
 # <a name="view-the-audit-activity-of-people-of-interest"></a>Afficher l’activité d’audit des personnes concernées
 
 Vous avez besoin de déterminer si un utilisateur a consulté un document spécifique ou supprimé définitivement un élément de sa boîte aux lettres ? Les enquêtes de données (préversion) sont désormais intégrées à l’outil de recherche de journal d’audit existant dans le centre de sécurité & conformité. À l’aide de cette expérience intégrée, vous pouvez utiliser l’outil de gestion des données (préversion) personnes d’un outil de gestion des intérêts pour faciliter votre enquête en accédant facilement à l’activité des personnes intéressantes et en les recherchant dans votre enquête.
 
-## <a name="before-you-begin"></a>Avant de commencer
+## <a name="get-permissions"></a>Obtenir des autorisations
 
 Vous devez avoir le rôle Journaux d’audit en affichage seul ou Journaux d’audit dans Exchange Online pour pouvoir effectuer des recherches dans le journal d’audit. Par défaut, ces rôles sont affectés aux groupes de rôles Gestion de la conformité et Gestion de l’organisation sur la page Autorisations dans le Centre d’administration Exchange. Pour permettre à un utilisateur d’effectuer des recherches dans le journal d’audit des enquêtes de données (aperçu) avec le niveau minimal de privilèges, vous pouvez créer un groupe de rôles personnalisé dans Exchange Online, ajouter les journaux d’audit en affichage seul ou les journaux d’audit, puis ajouter l’utilisateur en tant que membre du nouveau groupe de rôles. Pour plus d’informations, voir Gérer les groupes de rôles dans Exchange Online.
 

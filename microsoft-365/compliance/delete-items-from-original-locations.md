@@ -18,12 +18,13 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Cet article explique comment utiliser l’outil nouvelles enquêtes de données (aperçu) dans le centre de sécurité & conformité pour supprimer des éléments de leur emplacement d’origine.
-ms.openlocfilehash: 4ad450fbbfac838ba536b19ec54eb83a4fb5d597
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 0787944791fea65dfc940b1067abe1bad8097dcd
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43630521"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44817883"
 ---
 # <a name="delete-items-from-their-original-location-preview"></a>Supprimer des éléments de leur emplacement d’origine (aperçu)
 
@@ -31,7 +32,7 @@ La fonctionnalité permettant de supprimer des éléments de leur emplacement d�
 
 À l’aide des analyses de données, vous pouvez supprimer des éléments de leur emplacement d’origine. Cela signifie que vous pouvez supprimer des éléments de boîtes aux lettres Exchange, de sites SharePoint et de comptes OneDrive au sein de votre organisation. Étant donné que vous avez collecté des éléments en tant que preuves, vous disposez de copies des éléments conservés dans l’ensemble de preuves pour une meilleure étude ou conserver une référence.
 
-## <a name="before-you-begin"></a>Avant de commencer
+## <a name="before-you-delete-items"></a>Avant de supprimer des éléments
 
 - Pour supprimer des éléments, vous devez disposer du rôle de **recherche et de purge** dans le centre de sécurité & conformité. Ce rôle est affecté par défaut au groupe de rôles intégré de l’expérimentation de données.
 

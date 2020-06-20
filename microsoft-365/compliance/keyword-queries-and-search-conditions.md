@@ -19,13 +19,15 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: c4639c2e-7223-4302-8e0d-b6e10f1c3be3
-description: 'Découvrez les propriétés de messagerie et de fichier que vous pouvez rechercher dans les boîtes aux lettres Exchange Online et dans SharePoint ou OneDrive entreprise à l’aide de l’outil de recherche de contenu dans le centre de conformité & Compliance Center.  '
-ms.openlocfilehash: eb733d17b4d14d56bec3fc475735921d72e8ce27
-ms.sourcegitcommit: 6007dbe2cf758c683de399f94023122c678bcada
+ms.custom:
+- seo-marvel-apr2020
+description: Découvrez les propriétés de messagerie et de fichier que vous pouvez rechercher dans le centre de conformité Office 365 Security &.
+ms.openlocfilehash: 9fa68257519860311ffe330eed23bd95468856c4
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "44224495"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44817513"
 ---
 # <a name="keyword-queries-and-search-conditions-for-content-search"></a>Requêtes par mots clés et conditions de recherche pour la recherche de contenu
 
@@ -52,20 +54,20 @@ Le tableau suivant répertorie les propriétés de message électronique pouvant
   
 |**Propriété**|**Description de la propriété**|**Exemples**|**Résultats de recherche renvoyés par les exemples**|
 |:-----|:-----|:-----|:-----|
-|AttachmentNames|Nom des fichiers joints à un message électronique.|`attachmentnames:annualreport.ppt`  <br/> `attachmentnames:annual*` <br/> AttachmentNames :. pptx|Messages comportant un fichier joint nommé annualreport.ppt. Dans le deuxième exemple, l'utilisation du caractère générique permet de renvoyer les messages dont le nom d'une pièce jointe contient le mot « annual ». Le troisième exemple renvoie toutes les pièces jointes avec l’extension de fichier pptx.|
+|AttachmentNames|Nom des fichiers joints à un message électronique.|`attachmentnames:annualreport.ppt`  <br/> `attachmentnames:annual*` <br/> attachmentnames:.pptx|Messages comportant un fichier joint nommé annualreport.ppt. Dans le deuxième exemple, l'utilisation du caractère générique permet de renvoyer les messages dont le nom d'une pièce jointe contient le mot « annual ». Le troisième exemple renvoie toutes les pièces jointes avec l’extension de fichier pptx.|
 |Cci|Champ CCI d’un message électronique. <sup>1</sup>|`bcc:pilarp@contoso.com`  <br/> `bcc:pilarp`  <br/> `bcc:"Pilar Pinilla"`|Tous les exemples renvoient des messages dont « Pilar Pinilla » est en copie carbone invisible.|
 |Category| Catégories à rechercher. Les catégories peuvent être définies par les utilisateurs à l’aide d’Outlook ou d’Outlook sur le Web (anciennement Outlook Web App). Les valeurs possibles sont les suivantes :  <br/><br/>  blue  <br/>  green  <br/>  orange  <br/>  purple  <br/>  red  <br/>  yellow|`category:"Red Category"`|Messages auxquels a été attribuée la catégorie « red » dans les boîtes aux lettres source.|
 |Cc|Champ CC d’un message électronique. <sup>1</sup>|`cc:pilarp@contoso.com`  <br/> `cc:"Pilar Pinilla"`|Dans les deux exemples, les messages avec Pilar Pinilla spécifiés dans le champ CC.|
 |Folderid|ID de dossier (GUID) d’un dossier de boîte aux lettres spécifique. Si vous utilisez cette propriété, assurez-vous d’effectuer une recherche dans la boîte aux lettres dans laquelle se trouve le dossier spécifié. Seul le dossier spécifié fera l’objet d’une recherche. Les sous-dossiers du dossier ne feront pas l’objet d’une recherche. Pour rechercher des sous-dossiers, vous devez utiliser la propriété FolderId pour le sous-dossier dans lequel vous souhaitez effectuer la recherche.  <br/> Pour plus d’informations sur la recherche de la propriété FolderId et l’utilisation d’un script pour obtenir les ID de dossier pour une boîte aux lettres spécifique, voir [use content Search for Target collections](use-content-search-for-targeted-collections.md).|`folderid:4D6DD7F943C29041A65787E30F02AD1F00000000013A0000`  <br/> `folderid:2370FB455F82FC44BE31397F47B632A70000000001160000 AND participants:garthf@contoso.com`|Le premier exemple renvoie tous les éléments dans le dossier de boîte aux lettres spécifié. Le deuxième exemple renvoie tous les éléments dans le dossier de boîte aux lettres spécifié qui ont été envoyés ou reçus par garthf@contoso.com.|
 |From|Expéditeur d'un message électronique.<sup>1</sup>|`from:pilarp@contoso.com`  <br/> `from:contoso.com`|Messages envoyés par l'utilisateur indiqué ou à partir d'un domaine spécifié.|
 |HasAttachment|Indique si un message comporte une pièce jointe. Utilisez les valeurs **true** ou **false**.|`from:pilar@contoso.com AND hasattachment:true`|Messages envoyés par l’utilisateur spécifié qui ont des pièces jointes.|
-|Importance|Importance d'un message électronique, que l'expéditeur peut préciser lors de l'envoi. Par défaut, les messages sont envoyés avec une importance normale, à moins que l'expéditeur préfère une importance **haute** ou **faible**.  |`importance:high`  <br/> `importance:medium`  <br/> `importance:low`|Messages marqués comme ayant une importance haute, normale ou faible.|
+|Importance|The importance of an email message, which a sender can specify when sending a message. By default, messages are sent with normal importance, unless the sender sets the importance as **high** or **low**.|`importance:high`  <br/> `importance:medium`  <br/> `importance:low`|Messages marqués comme ayant une importance haute, normale ou faible.|
 |IsRead|Indique si les messages ont été lus. Utilisez les valeurs **true** ou **false**.|`isread:true`  <br/> `isread:false`|Le premier exemple renvoie des messages dont la propriété IsRead a la valeur **true**. Le deuxième exemple renvoie les messages dont la propriété IsRead a la valeur **false**.|
 |ItemClass|Utilisez cette propriété pour rechercher des types de données tiers spécifiques importés par votre organisation dans Office 365. Utilisez la syntaxe suivante pour cette propriété :`itemclass:ipm.externaldata.<third-party data type>*`|`itemclass:ipm.externaldata.Facebook* AND subject:contoso`  <br/> `itemclass:ipm.externaldata.Twitter* AND from:"Ann Beebe" AND "Northwind Traders"`|Le premier exemple renvoie les éléments Facebook qui contiennent le mot « Contoso » dans la propriété Subject. Le deuxième exemple renvoie les éléments Twitter publiés par Ann Beebe et qui contiennent l’expression de mot-clé « Northwind Traders ».  <br/> Pour obtenir la liste complète des valeurs à utiliser pour les types de données tiers pour la propriété ItemClass, consultez la rubrique [use content Search to Search tierce-Party Data imported to Office 365](use-content-search-to-search-third-party-data-that-was-imported.md).|
 |Kind| Type de message électronique à rechercher. Valeurs possibles :  <br/>  contacts  <br/>  docs  <br/>  email  <br/>  externaldata  <br/>  faxes  <br/>  im  <br/>  journals  <br/>  meetings  <br/>  microsoftteams (renvoie les éléments des conversations, réunions et appels dans Microsoft Teams)  <br/>  notes  <br/>  posts  <br/>  rssfeeds  <br/>  tasks  <br/>  voicemail|`kind:email`  <br/> `kind:email OR kind:im OR kind:voicemail`  <br/> `kind:externaldata`|Le premier exemple renvoie des messages électroniques qui répondent aux critères de recherche. Le deuxième exemple renvoie les messages électroniques, les conversations de messagerie instantanée (y compris les conversations et conversations Skype entreprise dans Microsoft Teams) et les messages vocaux correspondant aux critères de recherche. Le troisième exemple renvoie les éléments qui ont été importés dans des boîtes aux lettres de Microsoft 365 à partir de sources de données tierces, telles que Twitter, Facebook et Cisco Jabber, qui répondent aux critères de recherche. Pour plus d’informations, consultez la rubrique [archivage de données tierces dans Office 365](https://www.microsoft.com/?ref=go).|
-|Participants|Tous les champs de personnes dans un message électronique. Les champs de, à, CC et CCI.<sup>1</sup>|`participants:garthf@contoso.com`  <br/> `participants:contoso.com`|Messages envoyés par ou envoyés à garthf@contoso.com. Le deuxième exemple renvoie tous les messages envoyés par ou envoyés à un utilisateur dans le domaine contoso.com.|
+|Participants|Tous les champs de personnes dans un message électronique. Les champs de, à, CC et CCI.<sup>1</sup>|`participants:garthf@contoso.com`  <br/> `participants:contoso.com`|Messages sent by or sent to garthf@contoso.com. The second example returns all messages sent by or sent to a user in the contoso.com domain.|
 |Received|Date à laquelle un message électronique a été reçu par un destinataire.|`received:04/15/2016`  <br/> `received>=01/01/2016 AND received<=03/31/2016`|Messages reçus le 15 avril 2016. Le deuxième exemple renvoie tous les messages reçus entre le 1er janvier 2016 et le 31 mars 2016.|
-|Recipients|Tous les champs de destinataire dans un message électronique. Ces champs sont à, CC et CCI.<sup>1</sup>|`recipients:garthf@contoso.com`  <br/> `recipients:contoso.com`|Messages envoyés à garthf@contoso.com. Le deuxième exemple renvoie les messages envoyés à tous les destinataires dans le domaine contoso.com.|
+|Destinataires|Tous les champs de destinataire dans un message électronique. Ces champs sont à, CC et CCI.<sup>1</sup>|`recipients:garthf@contoso.com`  <br/> `recipients:contoso.com`|Messages sent to garthf@contoso.com. The second example returns messages sent to any recipient in the contoso.com domain.|
 |Sent|Date à laquelle un message électronique a été envoyé par l'expéditeur.|`sent:07/01/2016`  <br/> `sent>=06/01/2016 AND sent<=07/01/2016`|Messages envoyés à la date indiquée ou entre les dates spécifiées.|
 |Size|Taille d'un élément, en octets.|`size>26214400`  <br/> `size:1..1048567`|Messages supérieurs à 25 ? Mbit. Le deuxième exemple renvoie les messages dont la taille est comprise entre 1 et 1 048 567 octets (1 Mo).|
 |Subject|Texte de la ligne d'objet d'un message électronique.  <br/> **Remarque :** Lorsque vous utilisez la propriété Subject dans une requête, la recherche renvoie tous les messages dans lesquels la ligne d’objet contient le texte que vous recherchez. En d’autres termes, la requête ne renvoie que les messages qui ont une correspondance exacte. Par exemple, si vous recherchez `subject:"Quarterly Financials"` , vos résultats incluent les messages dont l’objet est « trimestriel financials 2018 ».|`subject:"Quarterly Financials"`  <br/> `subject:northwind`|Messages contenant l’expression « trimestriel Financials » n’importe où dans le texte de la ligne d’objet. Le deuxième exemple renvoie tous les messages contenant le mot « northwind » dans la ligne d'objet.|
@@ -90,14 +92,14 @@ Pour obtenir la liste complète des propriétés SharePoint pouvant faire l’ob
 |DetectedLanguage|Langue d’un élément.|`detectedlanguage:english`|Tous les éléments en anglais.|
 |DocumentLink|Chemin d’accès (URL) d’un dossier spécifique sur un site SharePoint ou OneDrive entreprise. Si vous utilisez cette propriété, assurez-vous de rechercher le site dans lequel se trouve le dossier spécifié.  <br/> Pour renvoyer les éléments situés dans les sous-dossiers du dossier que vous spécifiez pour la propriété documentlink, vous devez ajouter/ \* à l’URL du dossier spécifié, par exemple,`documentlink: "https://contoso.sharepoint.com/Shared Documents/*"`  <br/> <br/>Pour plus d’informations sur la recherche de la propriété documentlink et l’utilisation d’un script pour obtenir les URL documentlink pour les dossiers d’un site spécifique, voir [use content Search for Targeted collections](use-content-search-for-targeted-collections.md).|`documentlink:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/Documents/Private"`  <br/> `documentlink:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/Documents/Shared with Everyone/*" AND filename:confidential`|Le premier exemple renvoie tous les éléments dans le dossier OneDrive entreprise spécifié. Le deuxième exemple renvoie des documents dans le dossier de site spécifié (et tous les sous-dossiers) qui contiennent le mot « Confidential » dans le nom de fichier.|
 |FileExtension|Extension d’un fichier ; par exemple, docx, One, pptx ou xlsx.|`fileextension:xlsx`|Tous les fichiers Excel (Excel 2007 et versions ultérieures)|
-|FileName|Nom d’un fichier.|`filename:"marketing plan"`  <br/> `filename:estimate`|Le premier exemple renvoie les fichiers contenant l’expression « marketing plan » (plan marketing) dans le titre. Le second exemple renvoie les fichiers contenant le mot « estimate » (devis) dans le nom du fichier.|
+|FileName|Nom d’un fichier.|`filename:"marketing plan"`  <br/> `filename:estimate`|The first example returns files with the exact phrase "marketing plan" in the title. The second example returns files with the word "estimate" in the file name.|
 |LastModifiedTime|Date à laquelle un élément a été modifié pour la dernière fois.|`lastmodifiedtime>=05/01/2016`  <br/> `lastmodifiedtime>=05/10/2016 AND lastmodifiedtime<=06/1/2016`|Le premier exemple renvoie les éléments qui ont été modifiés à ou après le 1er mai 2016. Le deuxième exemple renvoie les éléments modifiés entre le 1er mai 2016 et le 1er juin 2016.|
 |ModifiedBy|Personne qui a apporté les dernières modifications. Veillez à utiliser le nom complet de l’utilisateur pour cette propriété.|`modifiedby:"Garth Fort"`|Tous les éléments qui ont été modifiés en dernier par Garth Fort.|
 |Path|Chemin d’accès (URL) d’un site spécifique dans un site SharePoint ou OneDrive entreprise.  <br/> Pour renvoyer des éléments situés dans des dossiers du site que vous spécifiez pour la propriété Path, vous devez ajouter/ \* à l’URL du site spécifié ; par exemple,`path: "https://contoso.sharepoint.com/Shared Documents/*"`  <br/> <br/> **Remarque :** L’utilisation `Path` de la propriété pour rechercher des emplacements OneDrive ne renverra pas les fichiers multimédias, tels que les fichiers. png,. TIFF ou. wav, dans les résultats de la recherche. Utilisez une autre propriété de site dans votre requête de recherche pour rechercher des fichiers multimédias dans les dossiers OneDrive. <br/>|`path:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/"`  <br/> `path:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/*" AND filename:confidential`|Le premier exemple renvoie tous les éléments du site OneDrive entreprise spécifié. Le deuxième exemple renvoie des documents dans le site spécifié (et les dossiers du site) qui contiennent le mot « Confidential » dans le nom de fichier.|
 |SharedWithUsersOWSUser|Documents qui ont été partagés avec l’utilisateur spécifié et qui s’affichent dans la page **partagé avec moi** du site OneDrive entreprise de l’utilisateur. Il s’agit de documents qui ont été explicitement partagés avec l’utilisateur spécifié par d’autres personnes de votre organisation. Lorsque vous exportez des documents qui correspondent à une requête de recherche qui utilise la propriété SharedWithUsersOWSUser, les documents sont exportés à partir de l’emplacement de contenu d’origine de la personne qui a partagé le document avec l’utilisateur spécifié. Pour plus d’informations, consultez [la rubrique recherche de contenu de site partagé au sein de votre organisation](#searching-for-site-content-shared-within-your-organization).|`sharedwithusersowsuser:garthf`  <br/> `sharedwithusersowsuser:"garthf@contoso.com"`|Ces deux exemples renvoient tous les documents internes qui ont été explicitement partagés avec Garth fort et qui apparaissent sur la page **partagé avec moi** du compte OneDrive entreprise de Garth.|
 |Site|URL d’un site ou d’un groupe de sites de votre organisation.|`site:"https://contoso-my.sharepoint.com"`  <br/> `site:"https://contoso.sharepoint.com/sites/teams"`|Le premier exemple renvoie des éléments à partir des sites OneDrive entreprise pour tous les utilisateurs de l’organisation. Le second exemple renvoie les éléments de tous les sites d’équipe.|
-|Size|Taille d'un élément, en octets.|`size>=1`  <br/> `size:1..10000`|Le premier exemple renvoie les éléments dont la taille est supérieure à 1 octet. Le deuxième exemple renvoie les éléments dont la taille est comprise entre 1 et 10 000 octets.|
-|Titre|Titre du document. La propriété Title est une métadonnée qui est spécifiée dans des documents Microsoft Office. Il est différent du nom de fichier du document.|`title:"communication plan"`|Tout document qui contient l’expression « communication plan » (plan de communication) dans la propriété de métadonnées du titre d’un document Office.|
+|Size|Taille d'un élément, en octets.|`size>=1`  <br/> `size:1..10000`|The first example returns items larger than 1 byte. The second example returns items from 1 through 10,000 bytes in size.|
+|Title|Titre du document. La propriété Title est une métadonnée qui est spécifiée dans des documents Microsoft Office. Il est différent du nom de fichier du document.|`title:"communication plan"`|Tout document qui contient l’expression « communication plan » (plan de communication) dans la propriété de métadonnées du titre d’un document Office.|
 |||||
    
 ## <a name="searchable-contact-properties"></a>Propriétés de contact pouvant faire l’objet d’une recherche
@@ -112,7 +114,7 @@ Le tableau suivant répertorie les propriétés de contact qui sont indexées et
 |BusinessAddress|L’adresse dans la propriété de l’adresse de l' **entreprise** . La propriété est également appelée adresse **professionnelle** sur la page des propriétés du contact.|
 |BusinessPhone|Le numéro de téléphone dans l’une des propriétés de numéro de **téléphone professionnel** .|
 |CompanyName|Nom dans la propriété **Company** .|
-|Service|Nom dans la propriété **Department** .|
+|Département|Nom dans la propriété **Department** .|
 |DisplayName|Nom d’affichage du contact. Il s’agit du nom dans la propriété **nom complet** du contact.|
 |EmailAddress|Adresse de n’importe quelle propriété d’adresse de messagerie pour le contact. Les utilisateurs peuvent ajouter plusieurs adresses de messagerie pour un contact. L’utilisation de cette propriété renvoie les contacts qui correspondent à l’une des adresses de messagerie du contact.|
 |FileAs|Le **fichier en tant que** propriété. Cette propriété est utilisée pour spécifier la manière dont le contact est répertorié dans la liste des contacts de l’utilisateur. Par exemple, un contact peut être mentionné en tant que *prénom, nom* ou *nom, prénom*.|
@@ -126,7 +128,7 @@ Le tableau suivant répertorie les propriétés de contact qui sont indexées et
 |OfficeLocation|Valeur dans la propriété emplacement **Office** ou **Office** .|
 |OtherAddress|Valeur de l' **autre** propriété Address.|
 |Surname|Nom dans la propriété **Last** Name.|
-|Titre|Titre de la propriété de **fonction** .|
+|Title|Titre de la propriété de **fonction** .|
 |||||
 
 ## <a name="searchable-sensitive-data-types"></a>Types de données sensibles utilisables dans une requête
@@ -147,21 +149,21 @@ Les opérateurs de recherche booléens, tels que **and**, **or**et **not**, perm
 |**Opérateur**|**Utilisation**|**Description**|
 |:-----|:-----|:-----|
 |AND|keyword1 AND keyword2|Renvoie les éléments qui incluent tous les mots clés ou `property:value` expressions spécifiés. Par exemple, `from:"Ann Beebe" AND subject:northwind` renvoie tous les messages envoyés par Ann Beebe qui contiennent le mot « Northwind » dans la ligne d’objet. <sup>n°2</sup>|
-|+|keyword1 + keyword2 + keyword3|Renvoie les éléments qui contiennent  *soit*  `keyword2` soit  `keyword3` *, et*  qui contiennent également  `keyword1`. Par conséquent, cet exemple équivaut à la requête  `(keyword2 OR keyword3) AND keyword1`.  <br/> La requête `keyword1 + keyword2` (avec un espace après le **+** symbole) n’équivaut pas à utiliser l’opérateur **and** . Cette requête est équivalente à  `"keyword1 + keyword2"` et renvoie des éléments contenant l'expression exacte  `"keyword1 + keyword2"`.|
+|+|keyword1 + keyword2 + keyword3|Returns items that contain  *either*  `keyword2` or  `keyword3` *and*  that also contain  `keyword1`. Therefore, this example is equivalent to the query  `(keyword2 OR keyword3) AND keyword1`.  <br/> La requête `keyword1 + keyword2` (avec un espace après le **+** symbole) n’équivaut pas à utiliser l’opérateur **and** . Cette requête est équivalente à  `"keyword1 + keyword2"` et renvoie des éléments contenant l'expression exacte  `"keyword1 + keyword2"`.|
 |OR|keyword1 OR keyword2|Renvoie les éléments qui incluent un ou plusieurs mots clés ou expressions spécifiés `property:value` . <sup>n°2</sup>|
 |NOT|keyword1 NOT keyword2  <br/> NOT from:"Ann Beebe"  <br/> NON Kind : messagerie instantanée|Exclut les éléments spécifiés par un mot clé ou une `property:value` expression. Dans le deuxième exemple, les messages envoyés par Ann Beebe. Le troisième exemple exclut les conversations de messagerie instantanée, telles que les conversations Skype entreprise qui sont enregistrées dans le dossier de boîte aux lettres historique des conversations. <sup>n°2</sup>|
 |-|keyword1 -keyword2|Identique à l'opérateur **NOT**. Cette requête renvoie donc des éléments qui contiennent `keyword1` et excluent les éléments qui contiennent `keyword2` .|
 |NEAR|keyword1 NEAR(n) keyword2|Renvoie les éléments qui incluent des mots proches les uns des autres, n étant égal au nombre de mots. Par exemple, `best NEAR(5) worst` renvoie tout élément dont le mot « pire » se trouve à moins de cinq mots de « meilleur ». Si aucun nombre n'est spécifié, la distance par défaut est de huit mots. <sup>n°2</sup>|
 |:|property:value|Le signe deux-points ( :) dans la `property:value` syntaxe, indique que la valeur de la propriété recherchée contient la valeur spécifiée. Par exemple,  `recipients:garthf@contoso.com` renvoie les messages envoyés à garthf@contoso.com.|
 |=|property=value|Identique à l’opérateur **:** .|
-|\<|property\<value|Indique que la propriété recherchée est inférieure à la valeur spécifiée.<sup>1</sup>|
+|\<|property\<value|Denotes that the property being searched is less than the specified value. <sup>1</sup>|
 |\>|property\>value|Indique que la propriété recherchée est supérieure à la valeur spécifiée.<sup>1</sup>|
 |\<=|property\<=value|Indique que la propriété recherchée est inférieure ou égale à la valeur spécifiée.<sup>1</sup>|
 |\>=|property\>=value|Indique que la propriété recherchée est supérieure ou égale à la valeur spécifiée.<sup>1</sup>|
 |..|propriété : valeur1.. valeur2|Indique que la propriété recherchée est supérieure ou égale à value1 et inférieure ou égale à value2.<sup>1</sup>|
 |"  "|"fair value"  <br/> subject:"Quarterly Financials"|Utilisez des guillemets doubles ("") pour rechercher une expression ou un terme exact dans les requêtes de mot clé et de `property:value` recherche.|
 |\*|cat\*  <br/> subject:set\*|Les recherches par caractères génériques préfixées (où l'astérisque est placée à la fin d'un mot) correspondent à zéro ou plusieurs caractères dans les mots-clés ou les requêtes  `property:value`. Par exemple, `title:set*` renvoie les documents qui contiennent le mot set, Setup et Setting (et les autres mots commençant par « set ») dans le titre du document.  <br/><br/> **Remarque :** Vous pouvez utiliser uniquement des recherches par caractères génériques avec préfixe ; par exemple, **Cat \* ** ou **Set \* **. Les recherches de suffixe (** \* Cat** ), les recherches d’infixe (**c \* t**) et les recherches de sous-chaînes (** \* Cat \* **) ne sont pas prises en charge.|
-|(  )| (fair OR free) AND from:contoso.com  <br/> (IPO OR initial) AND (stock OR shares)  <br/> (quarterly financials)|Les parenthèses regroupent des expressions booléennes, des éléments  `property:value` et des mots-clés. Par exemple,  `(quarterly financials)` renvoie les éléments contenant les mots « quarterly » et « financials ».  |
+|(  )| (fair OR free) AND from:contoso.com  <br/> (IPO OR initial) AND (stock OR shares)  <br/> (quarterly financials)|Parentheses group together Boolean phrases,  `property:value` items, and keywords. For example,  `(quarterly financials)` returns items that contain the words quarterly and financials.|
 |||||
    
 > [!NOTE]
@@ -206,11 +208,11 @@ Créer une condition à l’aide des propriétés de messagerie lors de la reche
 |Participants|Tous les champs de personnes dans un message électronique. Ces champs sont from, to, CC et BCC.|
 |Type|Propriété de classe de message pour un élément de courrier électronique. Il s’agit de la même propriété que la propriété de messagerie ItemClass. Il s’agit également d’une condition à valeurs multiples. Pour sélectionner plusieurs classes de message, maintenez la touche **CTRL** enfoncée, puis cliquez sur au moins deux classes de messages dans la liste déroulante que vous souhaitez ajouter à la condition. Chaque classe de message que vous sélectionnez dans la liste est logiquement connectée par l’opérateur **or** dans la requête de recherche correspondante.  <br/> Pour obtenir la liste des classes de message (et de leur ID de classe de message correspondant) utilisées par Exchange et que vous pouvez sélectionner dans la liste de **classes de message** , voir [types d’éléments et classes de messages](https://go.microsoft.com/fwlink/?linkid=848143).|
 |Received|Date à laquelle un message électronique a été reçu par un destinataire. Il s’agit de la même propriété que la propriété de messagerie Received.|
-|Recipients|Tous les champs de destinataire dans un message électronique. Ces champs sont à, CC et CCI.|
-|Expéditeur|Expéditeur d’un message électronique.|
+|Destinataires|Tous les champs de destinataire dans un message électronique. Ces champs sont à, CC et CCI.|
+|Sender|Expéditeur d’un message électronique.|
 |Sent|Date à laquelle un message électronique a été envoyé par l’expéditeur. Il s’agit de la même propriété que la propriété de messagerie Sent.|
 |Subject|Texte de la ligne d'objet d'un message électronique.|
-|À|Destinataire d’un message électronique dans le champ à.|
+|To|Destinataire d’un message électronique dans le champ à.|
 |||
   
 ### <a name="conditions-for-document-properties"></a>Conditions des propriétés de document
@@ -220,7 +222,7 @@ Créer une condition à l’aide des propriétés de document lors de la recherc
 |**Condition**|**Description**|
 |:-----|:-----|
 |Auteur|Champ Auteur des documents Office (subsiste si un document est copié). Par exemple, si un utilisateur crée un document et l’envoie par courrier électronique à une personne qui le charge ensuite sur SharePoint, le document conserve toujours l’auteur d’origine.|
-|Titre|Titre du document. Cette propriété correspond aux métadonnées spécifiées dans les documents Office. Il est différent du nom de fichier du document.|
+|Title|Titre du document. Cette propriété correspond aux métadonnées spécifiées dans les documents Office. Il est différent du nom de fichier du document.|
 |Créé|Date de création d’un document.|
 |Dernière modification|Date de la dernière modification apportée à un document.|
 |Type de fichier|Extension d’un fichier ; par exemple, docx, One, pptx ou xlsx. Il s’agit de la même propriété que la propriété de site FileExtension.|
@@ -228,18 +230,18 @@ Créer une condition à l’aide des propriétés de document lors de la recherc
   
 ### <a name="operators-used-with-conditions"></a>Opérateurs utilisés avec des conditions
 
-Lorsque vous ajoutez une condition, vous pouvez sélectionner un opérateur pertinent par rapport au type de propriété pour la condition. Le tableau suivant décrit les opérateurs qui sont utilisés avec les conditions et répertorie l’équivalent utilisé dans la requête de recherche.
+When you add a condition, you can select an operator that is relevant to type of property for the condition. The following table describes the operators that are used with conditions and lists the equivalent that is used in the search query.
   
 |**Opérateur**|**Équivalent dans la requête**|**Description**|
 |:-----|:-----|:-----|
-|Après|`property>date`|Utilisé avec les conditions de date. Renvoie les éléments qui ont été envoyés, reçus ou modifiés après la date spécifiée. |
-|Avant|`property<date`|Utilisé avec les conditions de date. Renvoie les éléments qui ont été envoyés, reçus ou modifiés avant la date spécifiée.|
+|Après|`property>date`|Used with date conditions. Returns items that were sent, received, or modified after the specified date.|
+|Avant|`property<date`|Used with date conditions. Returns items that were sent, received, or modified before the specified date.|
 |Existant|`date..date`|Utilisé avec les conditions de date et de taille. Lorsqu’il est utilisé avec une condition de date, renvoie les éléments qui ont été envoyés, reçus ou modifiés dans la plage de dates spécifiée. Lorsqu’il est utilisé avec une condition de taille, renvoie les éléments dont la taille est comprise dans la plage spécifiée.|
 |Contient l’un des éléments|`(property:value) OR (property:value)`|Utilisé avec les conditions des propriétés qui spécifient une valeur de chaîne. Renvoie les éléments qui contiennent une partie d’une ou plusieurs valeurs de chaîne spécifiées.|
 |Ne contient pas|`-property:value`  <br/> `NOT property:value`|Utilisé avec les conditions des propriétés qui spécifient une valeur de chaîne. Renvoie les éléments qui ne contiennent aucune partie de la valeur de chaîne spécifiée.|
-|N’est pas égal à|`-property=value`  <br/> `NOT property=value`|Utilisé avec les conditions des propriétés qui spécifient une valeur de chaîne. Renvoie les éléments qui ne contiennent pas la chaîne spécifique.|
+|N’est pas égal à|`-property=value`  <br/> `NOT property=value`|Used with conditions for properties that specify a string value. Returns items that don't contain the specific string.|
 |Égal à|`size=value`|Renvoie les éléments qui sont égaux à la taille spécifiée. <sup>1</sup>|
-|Est égal à l’un des éléments|`(property=value) OR (property=value)`|Utilisé avec les conditions des propriétés qui spécifient une valeur de chaîne. Renvoie les éléments qui correspondent exactement à une ou plusieurs valeurs de chaîne spécifiées.|
+|Est égal à l’un des éléments|`(property=value) OR (property=value)`|Used with conditions for properties that specify a string value. Returns items that are an exact match of one or more specified string values.|
 |Dépasse|`size>value`|Renvoie les éléments pour lesquels la propriété spécifiée est supérieure à la valeur spécifiée. <sup>1</sup>|
 |Supérieur ou égal|`size>=value`|Renvoie les éléments pour lesquels la propriété spécifiée est supérieure ou égale à la valeur spécifiée. <sup>1</sup>|
 |Supérieur|`size<value`|Renvoie les éléments qui sont supérieurs ou égaux à la valeur spécifique. <sup>1</sup>|
@@ -275,7 +277,7 @@ Gardez les points suivants à l’esprit lorsque vous utilisez des critères de 
     ![Plusieurs conditions de recherche pour la même propriété](../media/1e63d37d-6d8d-4c9b-a509-a7e1c3a05193.gif)
   
 > [!TIP]
-> Si une condition accepte plusieurs valeurs, nous vous recommandons d’utiliser une condition unique et de spécifier plusieurs valeurs (séparées par des virgules ou des points-virgules). Cela permet de vous assurer que la logique de requête appliquée est celle que vous souhaitez. 
+> If a condition accepts multiple values, we recommend that you use a single condition and specify multiple values (separated by commas or semi-colons). This helps ensure the query logic that's applied is what you intend. 
   
 ### <a name="examples-of-using-conditions-in-search-queries"></a>Exemples
 
@@ -299,7 +301,7 @@ Cet exemple renvoie des documents sur des sites SharePoint et OneDrive entrepris
   
 #### <a name="example-2"></a>Exemple 2
 
-Cet exemple renvoie les éléments de messagerie ou les documents qui contiennent le mot clé « report », ont été envoyés ou créés avant le 1er avril 2105, et contiennent le mot « northwind » dans le champ Objet des messages électroniques ou dans la propriété Title des documents. La requête exclut les pages Web qui répondent à d’autres critères de recherche. 
+This example returns email items or documents that contain the keyword "report", that were sent or created before April 1, 2105, and that contain the word "northwind" in the subject field of email messages or in the title property of documents. The query excludes Web pages that meet the other search criteria.
   
  **Interface utilisateur graphique**
   
@@ -414,7 +416,7 @@ kind:im AND subject:conversation AND (received=startdate..enddate)
 
 - Utilisez une syntaxe qui correspond au `property:value` format. Les valeurs ne respectent pas la casse et doivent être collées à l'opérateur. S’il y a un espace, la valeur attendue sera une recherche en texte intégral. Par exemple `to: pilarp` , recherche « pilarp » comme mot clé, plutôt que pour les messages qui ont été envoyés à pilarp. 
 
-- Lorsque vous lancez une recherche sur une propriété de destinataire, telle que To, From, Cc ou Recipients, vous pouvez utiliser une adresse SMTP, un alias ou un nom d'affichage pour désigner un destinataire. Par exemple, vous pouvez saisir pilarp@contoso.com, pilarp ou « Pilar Pinilla ».
+- When searching a recipient property, such as To, From, Cc, or Recipients, you can use an SMTP address, alias, or display name to denote a recipient. For example, you can use pilarp@contoso.com, pilarp, or "Pilar Pinilla".
 
 - Vous pouvez utiliser uniquement des recherches par caractères génériques avec préfixe ; par exemple, **Cat \* ** ou **Set \* **. Les recherches de suffixe (** \* Cat**), les recherches d’infixe (**c \* t**) et les recherches de sous-chaînes (** \* Cat \* **) ne sont pas prises en charge.
 

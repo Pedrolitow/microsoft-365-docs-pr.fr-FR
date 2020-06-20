@@ -15,17 +15,18 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 9701a024-c52e-43f0-b545-9a53478aec04
-description: Utilisez la fonctionnalité statistiques de recherche pour afficher et comparer les statistiques de plusieurs recherches de contenu dans le centre de sécurité & conformité. Vous pouvez également configurer la liste de mots clés lors de la création ou de la modification d’une requête de recherche pour obtenir des statistiques améliorées qui indiquent le nombre d’éléments correspondant à chaque expression de mot clé ou mot clé.
-ms.openlocfilehash: 07a13ab2f183cfa9349f827cf410e417c0944869
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+description: Découvrez comment utiliser la fonctionnalité statistiques de recherche pour afficher et comparer les statistiques de plusieurs recherches de contenu dans le centre de sécurité & conformité.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 30cc893d041819ac1fa2e24c6ecf6178677686b2
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42634122"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44819034"
 ---
 # <a name="view-keyword-statistics-for-content-search-results"></a>Afficher les statistiques de mot clé pour les résultats de recherche de contenu
 
-Une fois que vous avez créé et exécuté une recherche de contenu, vous pouvez afficher des statistiques sur les résultats de recherche estimés. Cela inclut un résumé des résultats de la recherche (semblable au résumé des résultats de recherche estimés affichés dans le volet d’informations), les statistiques de la requête telles que le nombre d’emplacements de contenu avec des éléments qui correspondent à la requête de recherche et le nom des emplacements de contenu qui ont le plus de correspondances. Vous pouvez afficher les statistiques d’une ou plusieurs recherches de contenu. Cela vous permet de comparer rapidement les résultats de plusieurs recherches et de prendre des décisions sur l’efficacité de vos requêtes de recherche.
+Une fois que vous avez créé et exécuté une recherche de contenu, vous pouvez afficher des statistiques sur les résultats de recherche estimés. Cela inclut un résumé des résultats de la recherche (semblable au résumé des résultats de recherche estimés affichés dans le volet d’informations), les statistiques de requête telles que le nombre d’emplacements de contenu avec des éléments qui correspondent à la requête de recherche et le nom des emplacements de contenu qui ont le plus de correspondances. Vous pouvez afficher les statistiques d’une ou plusieurs recherches de contenu. Cela vous permet de comparer rapidement les résultats de plusieurs recherches et de prendre des décisions sur l’efficacité de vos requêtes de recherche.
   
 En outre, vous pouvez configurer des recherches nouvelles et existantes pour renvoyer des statistiques pour chaque mot clé dans une requête de recherche. Cela vous permet de comparer le nombre de résultats pour chaque mot clé dans une requête et de comparer les statistiques de mots clés de plusieurs recherches.
   
@@ -35,15 +36,15 @@ Vous pouvez également télécharger les statistiques de recherche et les statis
 
 Pour afficher les statistiques des recherches de contenu :
   
-1. Dans le centre de sécurité & conformité, accédez à recherche de **contenu**de **recherche** \> .
+1. Dans le centre de sécurité & conformité, accédez à recherche de contenu de **recherche** \> **Content search**.
     
-2. Dans la liste des recherches, sélectionnez une ou plusieurs recherches, puis cliquez sur **Search statistics**![le bouton](../media/9bf56d43-25bf-4f53-a4be-f4d55102310c.png)statistiques de recherche de statistiques de recherche.
+2. Dans la liste des recherches, sélectionnez une ou plusieurs recherches, puis cliquez sur le bouton statistiques de recherche de **statistiques de recherche** ![ ](../media/9bf56d43-25bf-4f53-a4be-f4d55102310c.png) .
     
     ![Sélectionnez plusieurs recherches, puis cliquez sur statistiques de recherche.](../media/1195c6c3-2e00-469d-8c29-85c1c7ebe6c7.png)
   
 3. Sur la page **statistiques de recherche** , cliquez sur l’un des liens suivants pour afficher les statistiques sur les recherches sélectionnées. 
     
-    **Summary**
+    **Résumé**
     
     Cette page affiche des statistiques similaires à celles affichées dans le volet d’informations sur la page **recherche de contenu** . Les statistiques de toutes les recherches sélectionnées sont affichées. Notez que vous pouvez également réexécuter les recherches sélectionnées à partir de cette page pour mettre à jour les statistiques. 
     
@@ -73,7 +74,7 @@ Pour afficher les statistiques des recherches de contenu :
     
     d. Cette colonne contient la requête de recherche en cours qui est exécutée par l’outil de recherche de contenu. Notez que l’outil ajoute automatiquement quelques composants supplémentaires à la requête que vous créez. 
 
-    - Lorsque vous recherchez tout le contenu dans des boîtes aux lettres (en ne spécifiant pas de mots clés), la `size>=0` requête mot clé réelle est de sorte que tous les éléments soient renvoyés. 
+    - Lorsque vous recherchez tout le contenu dans des boîtes aux lettres (en ne spécifiant pas de mots clés), la requête mot clé réelle est de `size>=0` sorte que tous les éléments soient renvoyés. 
     
      - Lorsque vous effectuez des recherches dans des sites SharePoint Online et OneDrive entreprise, les deux composants suivants sont ajoutés :
     
@@ -107,9 +108,9 @@ Comme expliqué précédemment, la page **requêtes** affiche la requête de rec
 
 Pour créer une liste de mots clés et afficher les statistiques de mots clés pour une recherche de contenu :
   
-1. Dans le centre de sécurité & conformité, accédez à recherche de **contenu**de **recherche** \> .
+1. Dans le centre de sécurité & conformité, accédez à recherche de contenu de **recherche** \> **Content search**.
     
-2. Dans la liste des recherches de contenu, cliquez sur et sur une recherche, **Edit** ![puis sur modifier](../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif)l’icône modifier.
+2. Dans la liste des recherches de contenu, cliquez sur et sur une recherche, puis sur **modifier** l' ![ icône modifier ](../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif) .
     
 3. Cliquez sur **requête** , puis effectuez les opérations suivantes : 
     
@@ -121,7 +122,7 @@ Pour créer une liste de mots clés et afficher les statistiques de mots clés p
     
 4. Après avoir ajouté les mots clés pour lesquels vous souhaitez effectuer une recherche et obtenir des statistiques, cliquez sur **Rechercher** pour exécuter la recherche révisée. 
     
-5. Une fois la recherche terminée, sélectionnez-la dans la liste des recherches, puis cliquez **Search statistics** ![sur le bouton](../media/9bf56d43-25bf-4f53-a4be-f4d55102310c.png)statistiques de recherche de statistiques de recherche. Vous pouvez également afficher et comparer des statistiques de mots clés pour plusieurs recherches.
+5. Une fois la recherche terminée, sélectionnez-la dans la liste des recherches, puis cliquez sur le bouton statistiques de recherche de **statistiques de recherche** ![ ](../media/9bf56d43-25bf-4f53-a4be-f4d55102310c.png) . Vous pouvez également afficher et comparer des statistiques de mots clés pour plusieurs recherches.
     
 6. Sur la page **statistiques de recherche** , cliquez sur **requête** pour afficher les statistiques des mots-clés des recherches sélectionnées. 
     

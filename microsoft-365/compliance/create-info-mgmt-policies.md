@@ -19,13 +19,15 @@ ms.assetid: 8ccac9e4-3a50-49fa-a95b-d186032a6ee3
 ms.collection:
 - M365-security-compliance
 - SPO_Content
-description: Les stratégies de gestion des informations permettent à votre organisation de contrôler la durée de conservation du contenu, d’auditer les opérations effectuées par les utilisateurs et d’ajouter des codes-barres ou des étiquettes aux documents. Une stratégie peut contribuer à renforcer la conformité aux réglementations juridiques et gouvernementales ou aux processus d’entreprise internes. En tant qu’administrateur, vous pouvez configurer une stratégie pour contrôler le suivi des documents et la durée de conservation des documents.
-ms.openlocfilehash: eabbd2d6292de621b4c8e14d6d491f27b8fb24f1
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.custom:
+- seo-marvel-apr2020
+description: Découvrez comment configurer une stratégie de gestion des informations pour contrôler la durée de conservation des informations et effectuer le suivi des personnes qui utilisent ces informations.
+ms.openlocfilehash: 2519f039e7495d01a828aee564ce1a6caf41342d
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42077509"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44817993"
 ---
 # <a name="create-and-apply-information-management-policies"></a>Créer et appliquer des stratégies de gestion des informations
 
@@ -46,15 +48,15 @@ Pour plus d’informations, consultez la rubrique [Présentation des stratégies
 
 Pour vous assurer qu’une stratégie d’informations est appliquée à tous les documents d’un certain type au sein d’une collection de sites, envisagez de créer la stratégie au niveau de la collection de sites, puis appliquez la stratégie aux types de contenu. Il s’agit des stratégies de collection de sites. 
   
-1. Dans le \> **bouton Paramètres de la page d'**![Accueil de la collection de sites SharePoint 2016 paramètres de la barre de titre.](../media/1c22d2d8-39e0-4930-82c6-c3eee44211d3.png) \>**Paramètres de site**.
+1. Dans le bouton Paramètres de la page d’accueil de la collection de sites \> **Settings** ![ SharePoint 2016 paramètres de la barre de titre.](../media/1c22d2d8-39e0-4930-82c6-c3eee44211d3.png) \>**Paramètres de site**.
     
     Dans un site connecté à un groupe SharePoint, cliquez sur **paramètres**, sur **contenu du site**, puis sur **paramètres du site**. 
     
-2. Sur la page Paramètres du site, sous **modèles de stratégies de type de contenu**administration \> de la collection de **sites** . 
+2. Sur la page Paramètres du site, sous modèles de stratégies de type de contenu administration de la collection de **sites** \> **Content Type Policy Templates**. 
   
 ![Lien de modèle de stratégie de type de contenu sur la page Paramètres du site](../media/26d3466a-23ec-443f-88f0-2aaff38e992b.png)
   
-3. Sur la page \> stratégies, **créez**. 
+3. Sur la page stratégies \> , **créez**. 
     
 4. Entrez un nom et une description pour la stratégie, puis rédigez une brève déclaration de stratégie qui explique aux utilisateurs ce à quoi la stratégie est destinée.
     
@@ -69,17 +71,17 @@ L’ajout d’une stratégie de gestion des informations à un type de contenu f
   
  Vous pouvez également ajouter une stratégie de gestion des informations à un type de contenu spécifique à des listes. Cela a pour effet d’appliquer la stratégie uniquement aux éléments de cette liste qui utilisent le type de contenu. 
   
-1. Dans le \> **bouton Paramètres de la page d'**![Accueil de la collection de sites SharePoint 2016 paramètres de la barre de titre.](../media/1c22d2d8-39e0-4930-82c6-c3eee44211d3.png) \>**Paramètres de site**.
+1. Dans le bouton Paramètres de la page d’accueil de la collection de sites \> **Settings** ![ SharePoint 2016 paramètres de la barre de titre.](../media/1c22d2d8-39e0-4930-82c6-c3eee44211d3.png) \>**Paramètres de site**.
     
     Dans un site connecté à un groupe SharePoint, cliquez sur **paramètres**, sur **contenu du site**, puis sur **paramètres du site**. 
     
-2. Sur la page Paramètres du site, sous **types de contenu de site**des galeries \> du **Concepteur Web** .
+2. Sur la page Paramètres du site, sous types de contenu de site des **galeries du concepteur Web** \> **Site content types**.
   
 ![Lien de types de contenu de site sur la page Paramètres du site](../media/6f6fa51f-15d7-4782-b06f-a7b36e874cd3.png)
   
 3. Sur la page Paramètres de type de contenu de site, sélectionnez le type de contenu auquel vous souhaitez ajouter une stratégie.
     
-4. Sur la page type de contenu de site **, sous** \> paramètres de la **stratégie de gestion des informations**.
+4. Sur la page type de contenu de site **, sous paramètres** de la \> **stratégie de gestion des informations**.
     
 5. Sur la page modifier la stratégie, entrez un nom et une description pour la stratégie, puis rédigez une brève description expliquant aux utilisateurs ce à quoi la stratégie est destinée.
     
@@ -114,7 +116,7 @@ L’ajout d’une stratégie de gestion des informations à un type de contenu f
     
     Pour activer les codes-barres
     
-||||||1. * * * *|**Sur la page modifier la stratégie, sous **codes-barres** \> , **activez les codes-barres**.**|
+||||||1. * * * *|**Sur la page modifier la stratégie, sous **codes-barres** , activez les codes- \> **barres**.**|
 |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
 ||||||**2.** <br/> |Pour inviter les utilisateurs à insérer ces codes-barres dans les documents, choisissez **inviter les utilisateurs à insérer un code-barres avant l’enregistrement ou l’impression**.  <br/> |
 ||||||**3.** <br/> |Choisissez **OK** pour appliquer la fonctionnalité de code-barres à la stratégie.  <br/> |
@@ -128,7 +130,7 @@ L’ajout d’une stratégie de gestion des informations à un type de contenu f
 ||||||**1.**|* * Pour obliger les utilisateurs à ajouter une étiquette à un document, choisissez **inviter les utilisateurs à insérer une étiquette avant l’enregistrement ou l’impression**.  <br/> > [!NOTE]> si vous souhaitez que les étiquettes soient facultatives, n’activez pas cette case à cocher.        **|
 |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
 ||||||2.  <br/> |Pour verrouiller une étiquette de sorte qu’elle ne puisse pas être modifiée une fois qu’elle a été insérée, choisissez **empêcher les modifications apportées aux étiquettes une fois qu’elles**ont été ajoutées.  <br/>  Ce paramètre empêche la mise à jour du texte de l’étiquette une fois que l’étiquette a été insérée dans un élément au sein d’une application cliente telle que Word, Excel ou PowerPoint. Si vous souhaitez que l’étiquette soit mise à jour lorsque les propriétés de ce document ou de cet élément sont mises à jour, n’activez pas cette case à cocher.  <br/> |
-||||||3.  <br/> |Dans la zone format d’étiquette, entrez le texte de l’étiquette tel qu’il doit s’afficher. Les étiquettes peuvent contenir jusqu’à 10 références de colonnes, chacune pouvant comporter jusqu’à 255 caractères. Pour créer le format de votre étiquette, procédez comme suit :  <br/> Tapez les noms des colonnes que vous souhaitez inclure dans l’étiquette dans l’ordre dans lequel vous souhaitez les voir apparaître. Placez les noms de colonne entre accolades ({}), comme indiqué dans l’exemple de la page modifier la stratégie.  <br/> Tapez des mots pour identifier les colonnes en dehors des crochets, comme indiqué dans l’exemple de la page modifier la stratégie.  <br/> |
+||||||3.  <br/> |Dans la zone format d’étiquette, entrez le texte de l’étiquette tel qu’il doit s’afficher. Les étiquettes peuvent contenir jusqu’à 10 références de colonnes, chacune pouvant comporter jusqu’à 255 caractères. Pour créer le format de votre étiquette, procédez comme suit :  <br/> Tapez les noms des colonnes que vous souhaitez inclure dans l’étiquette dans l’ordre dans lequel vous souhaitez les voir apparaître. Placez les noms de colonne entre accolades ( {} ), comme indiqué dans l’exemple de la page modifier la stratégie.  <br/> Tapez des mots pour identifier les colonnes en dehors des crochets, comme indiqué dans l’exemple de la page modifier la stratégie.  <br/> |
 ||||||4.  <br/> |Pour ajouter un saut de ligne, entrez **\n** à l’endroit où vous souhaitez que le saut de ligne apparaisse.  <br/> |
 ||||||5.  <br/> |Sélectionnez la taille et le style de police de votre choix, puis indiquez si vous souhaitez que l’étiquette se trouve à gauche, au centre ou à droite dans le document.  <br/>  Sélectionnez une police et un style qui sont disponibles sur les ordinateurs des utilisateurs. La taille de la police influe sur l’affichage du texte sur l’étiquette.  <br/> |
 ||||||6.  <br/> |Entrez la hauteur et la largeur de l’étiquette. La hauteur de l’étiquette peut être comprise entre 0,25 pouce et 20 pouces, et la largeur de l’étiquette peut être comprise entre 0,25 pouce et 20 pouces. Le texte de l’étiquette est toujours centré verticalement dans l’image de l’étiquette.  <br/> |
@@ -155,11 +157,11 @@ Vous avez besoin au minimum de l’autorisation gérer les listes pour modifier 
   
 1. Accédez à la liste ou à la bibliothèque pour laquelle vous souhaitez spécifier une stratégie de gestion des informations. 
     
-2. Dans le ruban, sélectionnez les paramètres de **bibliothèque** ou \> de **liste**de l’onglet **bibliothèque** ou **liste** .
+2. Dans le ruban, sélectionnez les paramètres de bibliothèque ou de liste de l’onglet **bibliothèque** ou **liste** \> **Library Settings** . **List Settings**
     
     Dans SharePoint Online, cliquez sur **paramètres** , puis sur paramètres de la **liste** ou paramètres de la **bibliothèque**. 
     
-3. Sous **autorisations et paramètres de stratégie de gestion des informations de gestion** \> ****.
+3. Sous **autorisations et** \> **paramètres de stratégie de gestion des informations**de gestion.
   
 ![Lien stratégies de gestion des informations sur la page Paramètres de la bibliothèque de documents](../media/9fa6d366-6aab-49e1-a05c-898ac6f536e6.png)
   
@@ -202,11 +204,11 @@ Si des stratégies de gestion des informations ont déjà été créées pour vo
   
 1. Accédez à la liste ou à la bibliothèque qui contient le type de contenu auquel vous souhaitez appliquer une stratégie.
     
-2. Dans le ruban, sélectionnez les paramètres de **bibliothèque** ou \> de **liste**de l’onglet **bibliothèque** ou **liste** .
+2. Dans le ruban, sélectionnez les paramètres de bibliothèque ou de liste de l’onglet **bibliothèque** ou **liste** \> **Library Settings** . **List Settings**
     
     Dans SharePoint Online, cliquez sur **paramètres** , puis sur paramètres de la **liste** ou paramètres de la **bibliothèque**. 
     
-3. Sous **autorisations et paramètres de stratégie de gestion des informations de gestion** \> ****.
+3. Sous **autorisations et** \> **paramètres de stratégie de gestion des informations**de gestion.
   
 ![Lien stratégies de gestion des informations sur la page Paramètres de la bibliothèque de documents](../media/9fa6d366-6aab-49e1-a05c-898ac6f536e6.png)
   
@@ -237,15 +239,15 @@ Vous pouvez définir une stratégie de gestion des informations, puis créer un 
 ### <a name="export-a-policy"></a>Exporter une stratégie
 <a name="__toc260646790"> </a>
 
-1. Sur la page d’accueil de la collection de sites, sélectionnez **paramètres**![des paramètres de petite taille qui ont pris la place des paramètres de site. ](../media/a47a06c3-83fb-46b2-9c52-d1bad63e3e60.png) **site.** \>
+1. Sur la page d’accueil de la collection de sites, sélectionnez **paramètres** ![ des paramètres de petite taille qui ont pris la place des paramètres de site. ](../media/a47a06c3-83fb-46b2-9c52-d1bad63e3e60.png) \> **paramètres du site**.
     
     Dans un site connecté à un groupe SharePoint, cliquez sur **paramètres**, sur **contenu du site**, puis sur **paramètres du site**. 
     
-2. Sur la page Paramètres du site, sous **modèles de stratégies de type de contenu**administration \> de la collection de **sites** . 
+2. Sur la page Paramètres du site, sous modèles de stratégies de type de contenu administration de la collection de **sites** \> **Content Type Policy Templates**. 
   
 ![Lien de modèle de stratégie de type de contenu sur la page Paramètres du site](../media/26d3466a-23ec-443f-88f0-2aaff38e992b.png)
   
-3. Sélectionnez la stratégie que vous souhaitez exporter \> vers l' \> **exportation**la plus basse.
+3. Sélectionnez la stratégie que vous souhaitez exporter \> vers l’exportation la plus basse \> **Export**.
     
 4. Lorsque vous êtes invité à enregistrer ou ouvrir le fichier, sélectionnez **Enregistrer**, puis sélectionnez l’emplacement auquel vous souhaitez enregistrer le fichier. Veillez à sélectionner un emplacement disponible pour les collections de sites qui importent la stratégie.
     
@@ -256,17 +258,17 @@ Vous pouvez définir une stratégie de gestion des informations, puis créer un 
 
 L’importation d’une stratégie de gestion des informations vous permet de l’appliquer à plusieurs types de contenu au niveau du site ou de la liste dans une collection de sites donnée. Les avantages de cette opération sont les suivants : vous n’avez pas besoin de redéfinir et d’appliquer la stratégie sur chaque type de contenu, et vous pouvez plus facilement gérer les modifications de stratégie en apportant des modifications à la stratégie dans un seul emplacement.
   
-1. Sur la page d’accueil de la collection de sites à laquelle vous souhaitez appliquer la stratégie, sélectionnez **paramètres**![des paramètres de petite taille qui ont pris la place des paramètres de site. ](../media/a47a06c3-83fb-46b2-9c52-d1bad63e3e60.png) **site.** \>
+1. Sur la page d’accueil de la collection de sites à laquelle vous souhaitez appliquer la stratégie, sélectionnez **paramètres** ![ des paramètres de petite taille qui ont pris la place des paramètres du site. ](../media/a47a06c3-83fb-46b2-9c52-d1bad63e3e60.png) \> **paramètres du site**.
     
     Dans un site connecté à un groupe SharePoint, cliquez sur **paramètres**, sur **contenu du site**, puis sur **paramètres du site**. 
     
-2. Sur la page Paramètres du site, sous **modèles de stratégies de type de contenu**administration \> de la collection de **sites** .
+2. Sur la page Paramètres du site, sous modèles de stratégies de type de contenu administration de la collection de **sites** \> **Content Type Policy Templates**.
     
-3. Sur la page \> stratégies, **importez** \> le fichier **XML pour la** stratégie. 
+3. Sur la page stratégies \> , **importez** \> **Browse** le fichier XML pour la stratégie. 
     
-4. Sélectionnez le fichier XML dans lequel la stratégie a \> **été enregistrée.** 
+4. Sélectionnez le fichier XML dans lequel la stratégie a été enregistrée \> **Open**. 
     
-5. Dans la page \> importer une stratégie de collection de sites, **importez** -la pour ajouter la stratégie à la collection de sites. 
+5. Dans la page importer une stratégie de collection de sites \> , **importez** -la pour ajouter la stratégie à la collection de sites. 
     
 Votre stratégie importée peut désormais être appliquée à un ou plusieurs types de contenu au niveau du site ou de la liste. 
   

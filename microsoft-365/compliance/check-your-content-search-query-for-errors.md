@@ -14,15 +14,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 88898874-e262-4c5c-b6d2-4e697497fc74
-ms.custom:
-- seo-marvel-apr2020
-description: Découvrez comment vérifier votre requête par mot clé pour rechercher des erreurs et des fautes de frappe, telles que des caractères non pris en charge et des opérateurs booléens en minuscules.
-ms.openlocfilehash: 489afd8b2fe19742b63232d323197afecc257ccc
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.custom: seo-marvel-apr2020
+description: Découvrez comment détecter les erreurs et les fautes de frappe dans votre requête par mot clé pour la recherche de contenu, avant d’exécuter la recherche.
+ms.openlocfilehash: 250db272014d5801bfb3927d14072eea94bd635f
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035626"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818093"
 ---
 # <a name="check-your-content-search-query-for-errors"></a>Vérifier la présence d’erreurs dans vos requêtes de recherche de contenu
 
@@ -38,7 +37,7 @@ Voici une liste des caractères non pris en charge que nous vérifions. Les cara
     
 - **Repères de gauche à droite et de droite à gauche** : ces marques sont utilisées pour indiquer l’orientation du texte pour les langues se lisant de gauche à droite (telles que l’anglais et l’espagnol) et les langues se lisant de droite à gauche (comme l’arabe et l’hébreu).
     
-- **Opérateurs booléens en minuscules** : Si vous utilisez un opérateur booléen, comme **and**, **or**et **not** dans une requête de recherche, il doit être en majuscules. Lorsque nous vérifions une requête pour rechercher des fautes de frappe, la syntaxe de requête indique souvent qu’un opérateur booléen est utilisé même si des opérateurs en minuscules peuvent être utilisés ; par exemple, `(WordA or WordB) and (WordC or WordD)`.
+- **Opérateurs booléens en minuscules** : Si vous utilisez un opérateur booléen, comme **and**, **or**et **not** dans une requête de recherche, il doit être en majuscules. Lorsque nous vérifions une requête pour rechercher des fautes de frappe, la syntaxe de requête indique souvent qu’un opérateur booléen est utilisé même si des opérateurs en minuscules peuvent être utilisés ; par exemple, `(WordA or WordB) and (WordC or WordD)` .
     
 ## <a name="what-happens-if-a-query-has-an-unsupported-character"></a>Que se passe-t-il si une requête contient un caractère non pris en charge ?
 

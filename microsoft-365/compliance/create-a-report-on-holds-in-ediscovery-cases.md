@@ -17,13 +17,15 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: cca08d26-6fbf-4b2c-b102-b226e4cd7381
-description: Utilisez le script de cet article pour générer un rapport qui contient des informations sur toutes les conservations associées à des cas eDiscovery dans le centre de conformité dans Office 365 ou Microsoft 365.
-ms.openlocfilehash: 4a4d9c4195a201482228226ddd781260bb19499c
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.custom:
+- seo-marvel-apr2020
+description: Découvrez comment générer un rapport qui contient des informations sur toutes les conservations associées à des cas eDiscovery.
+ms.openlocfilehash: b4387434d57373f9569b6472786e8ad40de85b21
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208376"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818033"
 ---
 # <a name="create-a-report-on-holds-in-ediscovery-cases"></a>Créer un rapport sur les conservations définies dans les cas eDiscovery 
   
@@ -31,13 +33,13 @@ Le script de cet article permet aux administrateurs eDiscovery et aux gestionnai
 
 Consultez la section [plus d’informations](#more-information) pour obtenir une description détaillée des informations incluses dans le rapport.
   
-## <a name="before-you-begin"></a>Avant de commencer
+## <a name="admin-requirements-and-script-information"></a>Exigences en matière d’administration et informations sur les scripts
 
 - Pour générer un rapport sur tous les cas de découverte électronique dans votre organisation, vous devez être un administrateur de découverte électronique dans votre organisation. Si vous êtes un gestionnaire eDiscovery, le rapport n’inclut que les informations sur les cas accessibles. Pour plus d’informations sur les autorisations de découverte électronique, consultez la rubrique [attribution d’autorisations eDiscovery](assign-ediscovery-permissions.md).
     
 - Le script de cet article a une gestion des erreurs minimale. L’objectif principal est de créer rapidement un rapport sur les conservations associées aux cas eDiscovery dans votre organisation.
     
-- Les exemples de script fournis dans cette rubrique ne sont pris en charge dans aucun programme de support ou service standard de Microsoft. Les exemples de scripts sont fournis en l’état, sans garantie d’aucune sorte. Microsoft exclut toute garantie implicite, y compris, sans limitation, les garanties implicites de qualité marchande ou d’adéquation à un usage particulier. Vous assumez tous les risques liés à l’utilisation ou à l’exécution des exemples de scripts et de la documentation. En aucun cas, Microsoft, ses auteurs ou toute personne impliquée dans la création, la production ou la livraison des scripts ne sont responsables de dommages quelconques (y compris, sans limitation, pertes de bénéfices, interruption d’activité, perte d’informations commerciales ou toute autre perte pécuniaire) découlant de l’utilisation ou de l’impossibilité d’utiliser les exemples de scripts ou la documentation, même si Microsoft a été informé de la possibilité de tels dommages.
+- The sample scripts provided in this topic aren't supported under any Microsoft standard support program or service. The sample scripts are provided AS IS without warranty of any kind. Microsoft further disclaims all implied warranties including, without limitation, any implied warranties of merchantability or of fitness for a particular purpose. The entire risk arising out of the use or performance of the sample scripts and documentation remains with you. In no event shall Microsoft, its authors, or anyone else involved in the creation, production, or delivery of the scripts be liable for any damages whatsoever (including, without limitation, damages for loss of business profits, business interruption, loss of business information, or other pecuniary loss) arising out of the use of or inability to use the sample scripts or documentation, even if Microsoft has been advised of the possibility of such damages.
     
 ## <a name="step-1-connect-to-the-security--compliance-center-powershell"></a>Étape 1 : Connectez-vous au centre de sécurité & conformité PowerShell
 
@@ -49,7 +51,7 @@ Si votre compte Microsoft 365 utilise l’authentification multi-facteur (MFA) 
 
 Une fois que vous êtes connecté à la sécurité & Centre de conformité PowerShell, l’étape suivante consiste à créer et exécuter le script qui collecte des informations sur les cas eDiscovery dans votre organisation. 
   
-1. Enregistrez le texte suivant dans un fichier de script Windows PowerShell à l’aide d’un suffixe de nom de fichier. ps1 ; par exemple, CaseHoldsReport. ps1. 
+1. Enregistrez le texte suivant dans un fichier de script Windows PowerShell à l’aide d’un suffixe de nom de fichier. ps1 ; par exemple, CaseHoldsReport.ps1. 
     
   ```powershell
 #script begin
@@ -158,9 +160,9 @@ Write-host "Script complete! Report files saved to this folder: '$Path'"
 
     Plus, le script crée également un rapport avec une liste de cas qui n’ont aucune conservation. Le nom de fichier de ce rapport est `CaseswithNoHolds<DateTimeStamp>.csv` .
     
-    Voici un exemple d’exécution du script CaseHoldsReport. ps1. 
+    Voici un exemple d’exécution du script CaseHoldsReport.ps1. 
     
-    ![Sortie après l’exécution du script CaseHoldsReport. ps1](../media/7d312ed5-505e-4ec5-8f06-3571e3524a1a.png)
+    ![Sortie après l’exécution du script CaseHoldsReport.ps1](../media/7d312ed5-505e-4ec5-8f06-3571e3524a1a.png)
   
 ## <a name="more-information"></a>Plus d’informations
 

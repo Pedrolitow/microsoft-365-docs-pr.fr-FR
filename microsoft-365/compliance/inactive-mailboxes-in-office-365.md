@@ -17,13 +17,15 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 1fbd74e8-7a60-4157-afe8-fe79f05d2038
-description: Découvrez comment conserver le contenu des boîtes aux lettres des anciens employés en transformant la boîte aux lettres en boîte aux lettres inactive. Pour ce faire, vous pouvez placer la boîte aux lettres en conservation pour litige ou appliquer une stratégie de rétention Microsoft 365 à la boîte aux lettres, puis supprimer le compte Microsoft 365 correspondant.
-ms.openlocfilehash: ab89f8a7262dcd4197c52275558d95f8053d2c9b
-ms.sourcegitcommit: 584e2e9db8c541fe32624acdca5e12ee327fdb63
+ms.custom:
+- seo-marvel-apr2020
+description: Découvrez comment conserver le contenu des boîtes aux lettres des anciens employés en transformant la boîte aux lettres en boîte aux lettres inactive.
+ms.openlocfilehash: d7805ad24adcad61841866e11cd25942aef6e70b
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44679048"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44817573"
 ---
 # <a name="overview-of-inactive-mailboxes"></a>Vue d’ensemble des boîtes aux lettres inactives
 

@@ -19,13 +19,14 @@ ms.collection:
 - M365-security-compliance
 - SPO_Content
 ms.assetid: 50bbf89f-7870-4c2a-ae14-42635e0cfc01
-description: 'Le partage est une activité essentielle dans SharePoint Online et OneDrive entreprise. Les administrateurs peuvent désormais utiliser l’audit de partage dans le journal d’audit pour identifier les ressources partagées avec des utilisateurs en dehors de leur organisation. '
-ms.openlocfilehash: 63b56831dc5409cc92a0c4a2f4bf002cd268a878
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: L’administrateur peut apprendre à utiliser l’audit de partage dans le journal d’audit de Microsoft 365 pour identifier les ressources partagées avec des utilisateurs en dehors de leur organisation.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: d26a8022f8d59aeb56a03c50ae546777c882ef7a
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43626380"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44819294"
 ---
 # <a name="use-sharing-auditing-in-the-audit-log"></a>Utiliser le partage d’audit dans le journal d’audit
 
@@ -97,7 +98,7 @@ La première étape consiste à rechercher des événements de partage dans le j
   
 1. Accédez à [https://protection.office.com](https://protection.office.com).
     
-2. Connectez-vous à l’aide de votre compte professionnel ou scolaire.
+2. Connectez-vous à l’aide de votre compte scolaire ou professionnel.
     
 3. Dans le volet gauche du Centre de sécurité et de conformité, cliquez sur **Recherche**  > **Recherche dans le journal d’audit**.
     
@@ -111,7 +112,7 @@ La première étape consiste à rechercher des événements de partage dans le j
     
 6. Cliquez sur **Rechercher** pour exécuter la recherche. 
     
-7. Lorsque l’exécution de la recherche est terminée et que les résultats sont affichés, cliquez sur **Exporter les résultats** \> pour **Télécharger tous les résultats**.
+7. Lorsque l’exécution de la recherche est terminée et que les résultats sont affichés, cliquez sur **Exporter les résultats** pour \> **Télécharger tous les résultats**.
     
     Une fois que vous avez sélectionné l’option Exporter, un message en bas de la fenêtre vous invite à ouvrir ou à enregistrer le fichier CSV.
     
@@ -152,4 +153,4 @@ Une fois que vous avez suivi les instructions de l’étape précédente pour pr
     À présent, Excel affiche les lignes pour les événements de partage et l’endroit où l’utilisateur cible se trouve à l’extérieur de votre organisation, car les utilisateurs externes sont identifiés par la valeur **TargetUserOrGroupType : Guest**. 
   
 > [!TIP]
-> Pour les enregistrements d’audit affichés, la colonne **ObjectID** identifie la ressource qui a été partagée avec l’utilisateur cible ; par exemple `ObjectId:https:\/\/contoso-my.sharepoint.com\/personal\/sarad_contoso_com\/Documents\/Southwater Proposal.docx`.
+> Pour les enregistrements d’audit affichés, la colonne **ObjectID** identifie la ressource qui a été partagée avec l’utilisateur cible ; par exemple `ObjectId:https:\/\/contoso-my.sharepoint.com\/personal\/sarad_contoso_com\/Documents\/Southwater Proposal.docx` .

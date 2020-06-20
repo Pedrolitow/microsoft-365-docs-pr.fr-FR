@@ -16,13 +16,15 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Découvrez comment sélectionner des documents dans un ensemble de validation et les utiliser individuellement dans un autre ensemble dans un cas avancé eDiscovery.
-ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 636e76b1740cfa07254e4c56165cfafa8f1fad5a
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.custom:
+- seo-marvel-mar2020
+- seo-marvel-apr2020
+ms.openlocfilehash: 433e59629ec40dbdf66b8daf6437ce84e41a3a33
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034678"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818601"
 ---
 # <a name="add-data-to-a-review-set-from-another-review-set"></a>Ajouter des données à un jeu de révision à partir d’un autre ensemble de révision
 
@@ -30,9 +32,9 @@ Dans certains cas, il peut s’avérer nécessaire de sélectionner des document
 
 Suivez le flux de travail de cet article pour ajouter du contenu d’un jeu de révision à un autre.
 
-## <a name="before-you-begin"></a>Avant de commencer
+## <a name="create-a-review-set"></a>Créer un jeu de révision
 
-Avant de commencer, vous devez créer un nouveau jeu de révision auquel ajouter les données.  Un nouvel ensemble de révision peut être ajouté sous l’onglet **ensembles de révision** de la case. Pour plus d’informations, consultez [la rubrique Create a Review Set](managing-review-sets.md#create-a-review-set).
+Avant de commencer, vous devez créer un jeu de révision pour y ajouter les données.  Un nouvel ensemble de révision peut être ajouté sous l’onglet **ensembles de révision** de la case. Pour plus d’informations, consultez [la rubrique Create a Review Set](managing-review-sets.md#create-a-review-set).
 
 ## <a name="step-1-identify-content-to-add-to-another-review-set"></a>Étape 1 : identifier le contenu à ajouter à un autre ensemble de validation
 

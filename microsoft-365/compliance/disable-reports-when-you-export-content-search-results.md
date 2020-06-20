@@ -14,17 +14,19 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: c9b0ff0c-282b-4a44-b43f-cfc5b96557f9
-description: Modifiez le Registre Windows sur votre ordinateur local pour désactiver les rapports lorsque vous exportez les résultats d’une recherche de contenu à partir du centre de sécurité & conformité dans Office 365. La désactivation de ces rapports permet d’accélérer le temps de téléchargement et d’économiser de l’espace disque.
-ms.openlocfilehash: 89ea5e073a2c33d5f04fe3eef74b5b26510eef2f
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.custom:
+- seo-marvel-apr2020
+description: Modifiez le Registre Windows sur votre ordinateur local pour désactiver les rapports lorsque vous exportez les résultats d’une recherche de contenu à partir du centre de sécurité & conformité.
+ms.openlocfilehash: 0eaf9c9d1f70e03481b00d38d2e487709329c4cd
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43943007"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44817853"
 ---
 # <a name="disable-reports-when-you-export-content-search-results"></a>Désactiver les rapports lorsque vous exportez les résultats de recherche de contenu
 
-Lorsque vous utilisez l’outil d’exportation de découverte électronique pour exporter les résultats d’une recherche de contenu dans le centre de sécurité & conformité, l’outil crée et exporte automatiquement deux rapports contenant des informations supplémentaires sur le contenu exporté. Ces rapports sont les fichiers Results. csv et manifest. XML (voir la section Forum [aux questions sur la désactivation des rapports d’exportation](#frequently-asked-questions-about-disabling-export-reports) de cette rubrique pour obtenir des descriptions détaillées de ces rapports). Étant donné que ces fichiers peuvent être très volumineux, vous pouvez accélérer le temps de téléchargement et économiser de l’espace disque en empêchant l’exportation de ces fichiers. Pour ce faire, vous pouvez modifier le Registre Windows sur l’ordinateur que vous utilisez pour exporter les résultats de la recherche. Si vous souhaitez inclure les rapports ultérieurement, vous pouvez modifier le paramètre de registre. 
+Lorsque vous utilisez l’outil d’exportation de découverte électronique pour exporter les résultats d’une recherche de contenu dans le centre de sécurité & conformité, l’outil crée et exporte automatiquement deux rapports contenant des informations supplémentaires sur le contenu exporté. Ces rapports sont le fichier de Results.csv et le fichier de Manifest.xml (voir la section Forum [aux questions sur la désactivation des rapports d’exportation](#frequently-asked-questions-about-disabling-export-reports) de cette rubrique pour obtenir des descriptions détaillées de ces rapports). Étant donné que ces fichiers peuvent être très volumineux, vous pouvez accélérer le temps de téléchargement et économiser de l’espace disque en empêchant l’exportation de ces fichiers. Pour ce faire, vous pouvez modifier le Registre Windows sur l’ordinateur que vous utilisez pour exporter les résultats de la recherche. Si vous souhaitez inclure les rapports ultérieurement, vous pouvez modifier le paramètre de registre. 
   
 ## <a name="create-registry-settings-to-disable-the-export-reports"></a>Créer des paramètres de Registre pour désactiver les rapports d’exportation
 
@@ -34,7 +36,7 @@ Effectuez la procédure suivante sur l’ordinateur que vous allez utiliser pour
     
 2. Effectuez l’une des étapes suivantes, ou les deux, en fonction de l’état d’exportation que vous souhaitez désactiver.
     
-    - **Results. csv**
+    - **Results.csv**
     
       Enregistrez le texte suivant dans un fichier de Registre Windows à l’aide d’un suffixe de nom de fichier. reg ; par exemple, DisableResultsCsv. reg.
     
@@ -43,7 +45,7 @@ Effectuez la procédure suivante sur l’ordinateur que vous allez utiliser pour
       reg add HKLM\SOFTWARE\Microsoft\Exchange\Client\eDiscovery\ExportTool /v ResultCsvEnabled /t REG_SZ /d False 
       ```
 
-    - **Manifest. Xml**
+    - **Manifest.xml**
     
       Enregistrez le texte suivant dans un fichier de Registre Windows à l’aide d’un suffixe de nom de fichier. reg ; par exemple, DisableManifestXml. reg.
     
@@ -62,24 +64,24 @@ Effectuez la procédure suivante sur l’ordinateur que vous allez utiliser pour
   
 ## <a name="edit-registry-settings-to-re-enable-the-export-reports"></a>Modifier les paramètres du Registre pour réactiver les rapports d’exportation
 
-Si vous avez désactivé les rapports results. csv et manifest. XML en créant les fichiers. reg dans la procédure précédente, vous pouvez modifier ces fichiers pour réactiver un rapport afin qu’il soit exporté avec les résultats de la recherche. À nouveau, effectuez la procédure suivante sur l’ordinateur que vous allez utiliser pour exporter les résultats d’une recherche de contenu.
+Si vous avez désactivé les rapports Results.csv et Manifest.xml en créant les fichiers. reg dans la procédure précédente, vous pouvez modifier ces fichiers pour réactiver un rapport afin de l’exporter avec les résultats de la recherche. À nouveau, effectuez la procédure suivante sur l’ordinateur que vous allez utiliser pour exporter les résultats d’une recherche de contenu.
   
 1. Fermez l’outil d’exportation de découverte électronique s’il est ouvert.
     
 2. Modifiez l’un des fichiers d’édition. reg que vous avez créés dans la procédure précédente ou les deux.
     
-    - **Results. csv**
+    - **Results.csv**
     
-        Ouvrez le fichier DisableResultsCsv. reg dans le bloc-notes, `False` remplacez `True`la valeur par, puis enregistrez le fichier. Par exemple, après avoir modifié le fichier, il se présente comme suit :
+        Ouvrez le fichier DisableResultsCsv. reg dans le bloc-notes, remplacez la valeur `False` par `True` , puis enregistrez le fichier. Par exemple, après avoir modifié le fichier, il se présente comme suit :
     
         ```text
         Windows Registry Editor Version 5.00
       reg add HKLM\SOFTWARE\Microsoft\Exchange\Client\eDiscovery\ExportTool /v ResultCsvEnabled /t REG_SZ /d True
         ```
 
-    - **Manifest. Xml**
+    - **Manifest.xml**
     
-        Ouvrez le fichier DisableManifestXml. reg dans le bloc-notes, `False` remplacez `True`la valeur par, puis enregistrez le fichier. Par exemple, après avoir modifié le fichier, il se présente comme suit :
+        Ouvrez le fichier DisableManifestXml. reg dans le bloc-notes, remplacez la valeur `False` par `True` , puis enregistrez le fichier. Par exemple, après avoir modifié le fichier, il se présente comme suit :
     
       ```text
       Windows Registry Editor Version 5.00
@@ -96,11 +98,11 @@ Si vous avez désactivé les rapports results. csv et manifest. XML en créant l
   
 ## <a name="frequently-asked-questions-about-disabling-export-reports"></a>Forum aux questions sur la désactivation des rapports d’exportation
 
- **Quels sont les rapports results. csv et manifest. Xml ?**
+ **Quels sont les rapports Results.csv et Manifest.xml ?**
   
-Les fichiers Results. csv et manifest. XML contiennent des informations supplémentaires sur le contenu qui a été exporté.
+Les fichiers Results.csv et Manifest.xml contiennent des informations supplémentaires sur le contenu qui a été exporté.
   
-- **Results. csv** document Excel qui contient des informations sur chaque élément téléchargé en tant que résultat de la recherche. Pour le courrier électronique, le journal des résultats contient des informations sur chaque message, y compris : 
+- **Results.csv** Document Excel qui contient des informations sur chaque élément téléchargé en tant que résultat de la recherche. Pour le courrier électronique, le journal des résultats contient des informations sur chaque message, y compris : 
     
   - l’emplacement du message dans la boîte aux lettres source (notamment si le message est dans la boîte aux lettres principale ou d’archivage) ;
     
@@ -122,7 +124,7 @@ Les fichiers Results. csv et manifest. XML contiennent des informations supplém
     
   - le nom du document (qui se trouve dans la colonne Objet du journal des résultats).
     
-- **Manifest. xml** fichier manifeste (au format XML) qui contient des informations sur chaque élément inclus dans les résultats de la recherche. Les informations contenues dans ce rapport sont identiques à celles du rapport results. csv, mais elles sont au format spécifié par le modèle de référence de découverte électronique (EDRM). Pour plus d’informations sur EDRM, consultez [https://www.edrm.net](https://www.edrm.net)la rubrique.
+- **Manifest.xml** Fichier manifeste (au format XML) qui contient des informations sur chaque élément inclus dans les résultats de la recherche. Les informations contenues dans ce rapport sont identiques à celles du rapport de Results.csv, mais elles sont au format spécifié par le modèle de référence de découverte électronique (EDRM). Pour plus d’informations sur EDRM, consultez la rubrique [https://www.edrm.net](https://www.edrm.net) .
     
  **Quand dois-je désactiver l’exportation de ces rapports ?**
   

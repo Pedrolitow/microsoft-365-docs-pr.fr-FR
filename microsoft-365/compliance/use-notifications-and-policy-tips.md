@@ -18,13 +18,14 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: 'Un Conseil de stratégie est une notification ou un avertissement qui s’affiche lorsqu’un utilisateur travaille avec du contenu qui entre en conflit avec une stratégie DLP. Vous pouvez utiliser des notifications par courrier électronique et des conseils de stratégie pour sensibiliser les utilisateurs aux stratégies de votre organisation. Vous pouvez également donner aux utilisateurs la possibilité de remplacer la stratégie, afin qu’ils ne soient pas bloqués s’ils ont un besoin opérationnel valide ou si la stratégie détecte un faux positif. '
-ms.openlocfilehash: 6c9175045f7a93cab03acff891454536c8b5b7a0
-ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
+ms.custom: seo-marvel-apr2020
+description: Découvrez comment ajouter un Conseil de stratégie à une stratégie de protection contre la perte de données (DLP) pour informer un utilisateur qu’il travaille avec du contenu qui entre en conflit avec une stratégie DLP.
+ms.openlocfilehash: a36d1de9a24136943b41f12fe7f12a44d9df59f1
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "44327262"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44819304"
 ---
 # <a name="send-email-notifications-and-show-policy-tips-for-dlp-policies"></a>Envoi des notifications et affichage des conseils de stratégie pour les stratégies DLP
 
@@ -287,4 +288,4 @@ Vous pouvez personnaliser le texte pour les conseils de stratégie indépendamme
     
 - [Contenu des modèles de stratégie DLP](what-the-dlp-policy-templates-include.md)
     
-- [Définitions d’entités de type d’informations sensibles](sensitive-information-type-entity-definitions.md)
+- [Définitions d’entités des types d’informations sensibles](sensitive-information-type-entity-definitions.md)

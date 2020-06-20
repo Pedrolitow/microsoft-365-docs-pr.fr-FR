@@ -18,18 +18,19 @@ search.appverid:
 - MET150
 ms.assetid: 1d463dda-a3b5-4675-95d4-83db19c9c4a3
 description: Découvrez comment automatiser des tâches de recherche de contenu, telles que la création de recherches et l’exécution de rapports via des scripts PowerShell dans le centre de sécurité & conformité dans Office 365.
-ms.openlocfilehash: 2832b533c6350cdc2ab2852b6dd0d592603af46e
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 389cc9e15bc661e967f7af769ac48c4ae6e27228
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208138"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44817983"
 ---
 # <a name="create-report-on-and-delete-multiple-content-searches"></a>Créer, générer des rapports et supprimer plusieurs recherches de contenu
 
  La création et la création rapide de rapports de recherches de découverte est souvent une étape importante dans eDiscovery et des investigations lorsque vous essayez d’en savoir plus sur les données sous-jacentes, ainsi que la richesse et la qualité de vos recherches. Pour vous aider, le centre de sécurité & conformité PowerShell offre un ensemble d’applets de commande permettant d’automatiser les tâches de recherche de contenu gourmandes en temps. Ces scripts offrent un moyen rapide et simple de créer plusieurs recherches, puis d’exécuter des rapports sur les résultats de recherche estimés qui peuvent vous aider à déterminer la quantité de données en question. Vous pouvez également utiliser les scripts pour créer différentes versions des recherches afin de comparer les résultats générés par chacun d’entre eux. Ces scripts peuvent vous aider à identifier et à rechercher rapidement vos données. 
   
-## <a name="before-you-begin"></a>Avant de commencer
+## <a name="before-you-create-a-content-search"></a>Avant de créer une recherche de contenu
 
 - Pour exécuter les scripts décrits dans cette rubrique, vous devez être membre du groupe de rôles gestionnaire eDiscovery dans le centre de sécurité & conformité. 
     
@@ -39,7 +40,7 @@ ms.locfileid: "44208138"
     
 - Les scripts incluent une gestion des erreurs minimale. Leur objectif principal est de créer, de générer des rapports et de supprimer rapidement plusieurs recherches de contenu.
     
-- Les exemples de script fournis dans cette rubrique ne sont pris en charge dans aucun programme de support ou service standard de Microsoft. Les exemples de scripts sont fournis en l’état, sans garantie d’aucune sorte. Microsoft exclut toute garantie implicite, y compris, sans limitation, les garanties implicites de qualité marchande ou d’adéquation à un usage particulier. Vous assumez tous les risques liés à l’utilisation ou à l’exécution des exemples de scripts et de la documentation. En aucun cas, Microsoft, ses auteurs ou toute personne impliquée dans la création, la production ou la livraison des scripts ne sont responsables de dommages quelconques (y compris, sans limitation, pertes de bénéfices, interruption d’activité, perte d’informations commerciales ou toute autre perte pécuniaire) découlant de l’utilisation ou de l’impossibilité d’utiliser les exemples de scripts ou la documentation, même si Microsoft a été informé de la possibilité de tels dommages.
+- The sample scripts provided in this topic aren't supported under any Microsoft standard support program or service. The sample scripts are provided AS IS without warranty of any kind. Microsoft further disclaims all implied warranties including, without limitation, any implied warranties of merchantability or of fitness for a particular purpose. The entire risk arising out of the use or performance of the sample scripts and documentation remains with you. In no event shall Microsoft, its authors, or anyone else involved in the creation, production, or delivery of the scripts be liable for any damages whatsoever (including, without limitation, damages for loss of business profits, business interruption, loss of business information, or other pecuniary loss) arising out of the use of or inability to use the sample scripts or documentation, even if Microsoft has been advised of the possibility of such damages.
     
 ## <a name="step-1-create-a-csv-file-that-contains-information-about-the-searches-you-want-to-run"></a>Étape 1 : créer un fichier CSV contenant des informations sur les recherches à exécuter
 

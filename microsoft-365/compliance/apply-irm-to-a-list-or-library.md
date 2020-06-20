@@ -20,18 +20,19 @@ ms.collection:
 - M365-security-compliance
 - SPO_Content
 description: Vous pouvez utiliser la gestion des droits relatifs à l’information (IRM) pour contrôler et protéger les fichiers téléchargés à partir de listes ou de bibliothèques.
-ms.openlocfilehash: 4366a9fa5c42a8f4505163e0987da1decf727564
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 11d12eda6f2cb8de5c94b6952a8a194b06471473
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42079897"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818473"
 ---
 # <a name="apply-information-rights-management-irm-to-a-list-or-library"></a>Appliquer la gestion des droits relatifs à l’information (IRM) à une liste ou une bibliothèque
 
 Vous pouvez utiliser la gestion des droits relatifs à l’information (IRM) pour contrôler et protéger les fichiers téléchargés à partir de listes ou de bibliothèques.
   
-## <a name="before-you-begin"></a>Avant de commencer
+## <a name="administrator-preparations-before-applying-irm"></a>Préparation de l’administrateur avant l’application d’IRM
 
 - Le service Azure Rights Management (Azure RMS) d’Azure information protection et l’équivalent local, AD RMS (Active Directory Rights Management Services), prennent en charge la gestion des droits relatifs à l’information pour les sites. Aucune installation séparée ou supplémentaire n’est requise.
     

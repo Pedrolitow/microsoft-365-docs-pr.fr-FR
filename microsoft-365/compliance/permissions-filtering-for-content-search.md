@@ -19,12 +19,13 @@ search.appverid:
 - MET150
 ms.assetid: 1adffc35-38e5-4f7d-8495-8e0e8721f377
 description: Utilisez le filtrage des autorisations de recherche de contenu pour permettre à un gestionnaire eDiscovery de rechercher uniquement un sous-ensemble de boîtes aux lettres et de sites dans votre organisation.
-ms.openlocfilehash: 9628548b3cb2f6af5bedf7895a8714822731361f
-ms.sourcegitcommit: 8d9509e617ede7cc5ba933c54fb9300d2d1c6344
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 06fabfd1132166e2439c9790b50b0dbcb5bdca2c
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/22/2020
-ms.locfileid: "44347783"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818773"
 ---
 # <a name="configure-permissions-filtering-for-content-search"></a>Configuration du filtrage des autorisations pour la recherche de contenu
 
@@ -42,7 +43,7 @@ Le filtrage des autorisations de recherche est pris en charge par la fonctionnal
 
 [Remove-ComplianceSecurityFilter](#remove-compliancesecurityfilter)
 
-## <a name="before-you-begin"></a>Avant de commencer
+## <a name="requirements-to-configure-permissions-filtering"></a>Conditions requises pour configurer le filtrage des autorisations
 
 - Pour exécuter les cmdlets du filtre de sécurité de conformité, vous devez être membre du groupe de rôles gestion de l’organisation dans le centre de sécurité & conformité. Pour en savoir plus, consultez [Autorisations dans le Centre de sécurité et de conformité](../security/office-365-security/permissions-in-the-security-and-compliance-center.md).
     
@@ -58,7 +59,7 @@ Le filtrage des autorisations de recherche est pris en charge par la fonctionnal
     
 ## <a name="connect-to-the-security--compliance-center-and-exchange-online-in-a-single-remote-powershell-session"></a>Se connecter au centre de sécurité & conformité et à Exchange Online en une seule session PowerShell distante
 
-1. Enregistrez le texte suivant dans un fichier de script Windows PowerShell à l’aide d’un suffixe de nom de fichier **. ps1**. Par exemple, vous pouvez l’enregistrer dans un fichier nommé **ConnectEXO-CC. ps1**.
+1. Enregistrez le texte suivant dans un fichier de script Windows PowerShell à l’aide d’un suffixe de nom de fichier **. ps1**. Par exemple, vous pouvez l’enregistrer dans un fichier nommé **ConnectEXO-CC.ps1**.
     
     ```powershell
     $UserCredential = Get-Credential
@@ -79,7 +80,7 @@ Comment savoir si cela a fonctionné ? Après avoir exécuté le script, les cm
   
 Si vous recevez des erreurs, vérifiez les conditions requises suivantes :
   
-- Un mot de passe incorrect est un problème courant. Exécutez à nouveau les deux étapes et portez une attention particulière au nom d’utilisateur et au mot de passe que vous entrez à l’étape 1.
+- A common problem is an incorrect password. Run the two steps again and pay close attention to the user name and password you enter in Step 1.
     
 - Vérifiez que votre compte dispose de l’autorisation d’accès au centre de sécurité & conformité. Pour plus d’informations, consultez [la rubrique accorder aux utilisateurs l’accès au centre de sécurité & conformité](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
     
@@ -149,7 +150,7 @@ Cet exemple permet aux utilisateurs donh et suzanf de rechercher uniquement les 
 New-ComplianceSecurityFilter -FilterName MarketingFilter  -Users donh,suzanf -Filters "Mailbox_CustomAttribute1  -eq 'Marketing'" -Action Search
 ```
 
-Cet exemple permet aux membres du groupe de rôles « US Discovery Managers » d’effectuer toutes les actions de recherche de contenu uniquement sur les boîtes aux lettres aux États-Unis. Ce filtre contient le code pays numérique à trois chiffres pour les États-Unis selon la norme ISO 3166-1.
+This example allows members of the "US Discovery Managers" role group to perform all Content Search actions only on mailboxes in the United States. This filter contains the three-digit numeric country code for the United States from ISO 3166-1.
   
 ```powershell
 New-ComplianceSecurityFilter -FilterName USDiscoveryManagers  -Users "US Discovery Managers" -Filters "Mailbox_CountryCode  -eq '840'" -Action All

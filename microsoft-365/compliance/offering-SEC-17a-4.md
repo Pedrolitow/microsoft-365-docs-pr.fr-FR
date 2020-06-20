@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 3169a1e9e7cb8b269e74463adaee017b8f48e4ad
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: 89456de1ec4ef170d85d7bd9c6b210d8bdb39f28
+ms.sourcegitcommit: 51e47ca4b355436a2ad3deb154060eb1927428e6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44065939"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44773725"
 ---
 # <a name="securities-and-exchange-commission-sec-rule-17a-4f-united-states"></a>Règles de Securities and Exchange Commission (SEC) 17A -4 (f)
 
@@ -40,9 +40,9 @@ Le stockage d’objets BLOB Microsoft Azure inaltérables avec verrou de straté
 Pour évaluer la conformité Azure et Office 365 avec la règle SEC 17A -4 (f), Microsoft a conservé un cabinet d’évaluation indépendant spécialisé dans la gestion des enregistrements et la gouvernance des informations, Cohasset Associates. Dans le rapport obtenu pour :
 
 - **Azure**: [sec 17A -4 (f) évaluation de la conformité : Microsoft Azure Storage](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=19b08fd4-d276-43e8-9461-715981d0ea20&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_GRC_Assessment_Reports), Cohasset validée que le [stockage d’objets BLOB Azure inaltérables](https://docs.microsoft.com/azure/storage/blobs/storage-blob-immutable-storage) avec l’option de verrouillage de stratégie, lorsqu’il est utilisé pour conserver les objets BLOB basés sur l’heure dans un format non effaçable et non réinscriptible (Worm), répond aux exigences de stockage non modifiables de la règle sec. La modification, l’écrasement ou la suppression de chaque objet BLOB (enregistrement) est protégée jusqu’à ce que la période de rétention requise ait expiré et que toutes les suspensions juridiques associées aient été publiées. Les fournisseurs de logiciels et les partenaires avec des charges de travail sensibles peuvent désormais compter sur le stockage d’objets BLOB Azure inaltérables en tant que solution cloud OneStop Shop pour les enregistrements de rétention et de stockage non modifiable. Les établissements financiers peuvent désormais créer leurs propres applications en tirant parti de ces fonctionnalités tout en restant conformes.
-- **Office 365**: [utiliser Exchange Online pour se conformer à la norme sec 17A -4](https://docs.microsoft.com/office365/securitycompliance/use-exchange-online-to-comply-with-sec-rule-17a-4), Cohasset validée [que Office 365 avec verrouillage de conservation](https://docs.microsoft.com/office365/securitycompliance/retention-policies#locking-a-retention-policy) inclut des fonctionnalités d’archivage permettant aux clients réglementés, y compris le service des concessionnaires, de stocker les données d’une manière qui les aide à se conformer aux exigences de la rétention des enregistrements. Les stratégies de rétention dans Office 365 aident à conserver un large éventail de données, notamment la messagerie électronique, la messagerie vocale, les documents partagés, les messages instantanés et les données tierces. En particulier, l’archivage dans Office 365 permet aux clients de définir des stratégies de rétention de messagerie globales ou granulaires pour stocker des données pour une période définie et au-delà dans un format non réinscriptible et non effaçable.
+- **Office 365**: [utiliser Exchange Online pour se conformer à la norme sec 17A -4](https://docs.microsoft.com/office365/securitycompliance/use-exchange-online-to-comply-with-sec-rule-17a-4), Cohasset validée [que Office 365 avec verrouillage de conservation](retention-policies.md) inclut des fonctionnalités d’archivage permettant aux clients réglementés, y compris le service des concessionnaires, de stocker les données d’une manière qui les aide à se conformer aux exigences de la rétention des enregistrements. Les stratégies de rétention dans Office 365 aident à conserver un large éventail de données, notamment la messagerie électronique, la messagerie vocale, les documents partagés, les messages instantanés et les données tierces. En particulier, l’archivage dans Office 365 permet aux clients de définir des stratégies de rétention de messagerie globales ou granulaires pour stocker des données pour une période définie et au-delà dans un format non réinscriptible et non effaçable.
 
-## <a name="microsoft-in-scope-cloud-services"></a>Services Cloud Microsoft dans le périmètre
+## <a name="microsoft-in-scope-cloud-services"></a>Services Cloud Microsoft concernés
 
 - [Azure](https://gallery.technet.microsoft.com/Overview-of-Azure-c1be3942)
 - [Office 365](https://aka.ms/Office365ComplianceOfferings)

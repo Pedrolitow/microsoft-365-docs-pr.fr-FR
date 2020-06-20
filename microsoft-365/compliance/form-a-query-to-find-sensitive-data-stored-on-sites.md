@@ -16,13 +16,13 @@ localization_priority: Normal
 search.appverid:
 - MOE150
 - MET150
-description: Avec la protection contre la perte de données (DLP) dans SharePoint Online, vous pouvez découvrir des documents qui contiennent des données sensibles sur l’ensemble de votre client. Après avoir découvert les documents, vous pouvez travailler avec leurs propriétaires pour protéger les données. Cette rubrique peut vous aider à créer une requête pour rechercher des données sensibles.
-ms.openlocfilehash: 78f7f07bf6b2fbb0781f4bda8716b84399eef561
-ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
+description: Utilisez la protection contre la perte de données (DLP) dans SharePoint Online pour découvrir des documents qui contiennent des données sensibles sur l’ensemble de votre client.
+ms.openlocfilehash: b6a0943aa4e71b61c5f430034d9e445462eebde7
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "44327912"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44817703"
 ---
 # <a name="form-a-query-to-find-sensitive-data-stored-on-sites"></a>Créer une requête pour trouver des données sensibles stockées sur des sites
 
@@ -33,7 +33,7 @@ Les utilisateurs stockent souvent des données sensibles, comme les numéros de 
   
 ## <a name="forming-a-basic-dlp-query"></a>Création d'une requête DLP de base
 
-Trois parties composent une requête DLP de base : SensitiveType,  plage de nombre et plage de confiance. Comme illustré dans le graphique suivant, **SensitiveType : « \< type \> »** est obligatoire, et la** | \< plage \> de nombre** et la plage de** | \< confiance \> ** sont facultatives. 
+Trois parties composent une requête DLP de base : SensitiveType,  plage de nombre et plage de confiance. Comme illustré dans le graphique suivant, **SensitiveType : " \<type\> "** est requis, et les deux **|\<count range\>** et **|\<confidence range\>** sont facultatifs. 
   
 ![Exemple de requête divisée en obligatoire et facultative](../media/DLP-query-example-text.png)
   
@@ -88,7 +88,7 @@ Toutes les requêtes ne sont pas égales. Le tableau suivant donne des exemples 
    
 ## <a name="for-more-information"></a>Pour plus d'informations
 
-- [Définitions d’entités de type d’informations sensibles](sensitive-information-type-entity-definitions.md)
+- [Définitions d’entités des types d’informations sensibles](sensitive-information-type-entity-definitions.md)
 - [Exécuter une Recherche de Contenu](content-search.md)
 - [Requêtes par mots clés et conditions de recherche pour la recherche de contenu](keyword-queries-and-search-conditions.md)
   

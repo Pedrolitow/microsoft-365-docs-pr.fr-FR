@@ -16,17 +16,18 @@ search.appverid:
 - MET150
 ms.assetid: f6cd6588-f6b6-424a-a9ab-3782b842faee
 description: 'Passez en revue les étapes de configuration des options pour le processus d’analyse dans Advanced eDiscovery, y compris les thèmes de quasi-duplication, les threads de messagerie et les thèmes.  '
-ms.openlocfilehash: 5f50e2863398679d1381c66009ff1daec40623f9
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 091eb75bea0312e5a06cc60ca915612efc820e6e
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631261"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44819224"
 ---
 # <a name="set-analyze-options-in-advanced-ediscovery-classic"></a>Définir les options d’analyse dans Advanced eDiscovery (classique)
 
 > [!NOTE]
-> Pour utiliser Advanced eDiscovery, votre organisation doit souscrire un abonnement Office 365 E3 avec le module complémentaire Conformité avancée ou un abonnement E5. Si vous ne disposez pas d’un abonnement et que vous souhaitez essayer Advanced eDiscovery, vous pouvez vous [inscrire pour utiliser une version d’évaluation d’Office 365 Entreprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
+> Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
 Dans Advanced eDiscovery, définissez les options d’analyse avant d’exécuter Analyze.
   
@@ -55,7 +56,7 @@ Ouvrez **Prepare prepare prepare \> ** \> **Setup**. La fenêtre suivante s’af
   
 1. Pour afficher, ajouter ou modifier des thèmes suggérés, cliquez sur **modifier**.
     
-2. Dans le **panneau thèmes suggérés** , cliquez sur l’icône](../media/c2dd8b3a-5a22-412c-a7fa-143f5b2b5612.png) **Ajouter** ![une icône Ajouter pour ajouter un thème. Dans le panneau **Ajouter un thème suggéré** , ajoutez les mots, séparés par des virgules. 
+2. Dans le panneau **thèmes suggérés** , cliquez sur l’icône **Ajouter** ![ une icône Ajouter ](../media/c2dd8b3a-5a22-412c-a7fa-143f5b2b5612.png) pour ajouter un thème. Dans le panneau **Ajouter un thème suggéré** , ajoutez les mots, séparés par des virgules. 
     
 3. Dans **nombre de thèmes**, sélectionnez une valeur pour déterminer le nombre de thèmes que la fonctionnalité eDiscovery avancée essaiera de générer pour ces mots (la valeur par défaut est 1 thème).
     
@@ -76,9 +77,9 @@ Vous pouvez également [définir ignorer le texte](set-ignore-text-in-advanced-e
   
 Après avoir défini ces options, cliquez sur **analyser** pour exécuter. [Afficher les résultats](view-analyze-results-in-advanced-ediscovery.md) de l’analyse sont affichés. 
   
-## <a name="see-also"></a>Voir aussi
+## <a name="related-topics"></a>Voir aussi
 
-[Advanced eDiscovery (classique)](office-365-advanced-ediscovery.md)
+[Advanced eDiscovery (classique)](office-365-advanced-ediscovery.md)
   
 [Présentation de la similarité des documents](understand-document-similarity-in-advanced-ediscovery.md)
   

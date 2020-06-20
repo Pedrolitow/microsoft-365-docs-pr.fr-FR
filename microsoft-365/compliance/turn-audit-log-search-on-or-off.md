@@ -18,13 +18,14 @@ search.appverid:
 - MED150
 - MET150
 ms.assetid: e893b19a-660c-41f2-9074-d3631c95a014
-description: Vous pouvez activer la fonctionnalité de recherche de journal d’audit dans le centre de sécurité & conformité. Si vous changez d’avis, vous pouvez le désactiver à tout moment. Lorsque le paramètre de recherche du journal d’audit est désactivé, les administrateurs ne peuvent pas rechercher dans le journal d’audit Microsoft 365 l’activité de l’utilisateur et de l’administrateur dans votre organisation.
-ms.openlocfilehash: f3d88f62f466d9c868dfc6addb5865e144f5223b
-ms.sourcegitcommit: 56772bed89516cebc5eb370e292ccfbb4889cb38
+ms.custom: seo-marvel-apr2020
+description: Comment activer ou désactiver la fonctionnalité de recherche de journal d’audit dans le centre de sécurité & conformité afin d’activer ou de désactiver la capacité des administrateurs à rechercher dans le journal d’audit.
+ms.openlocfilehash: 4571c90c4fa680acd8925e83e32ffcf07de7d626
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "44330788"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44819134"
 ---
 # <a name="turn-audit-log-search-on-or-off"></a>Activer ou désactiver la recherche dans le journal d’audit
 
@@ -33,7 +34,7 @@ Vous (ou un autre administrateur) devez activer la journalisation d’audit pour
 > [!IMPORTANT]
 > Si vous désactivez la recherche de journal d’audit dans Microsoft 365, vous ne pouvez pas utiliser l’API activité de gestion d’Office 365 ou Azure sentinelle pour accéder aux données d’audit de votre organisation. La désactivation de la recherche du journal d’audit en suivant les étapes décrites dans cet article signifie qu’aucun résultat n’est renvoyé lorsque vous effectuez une recherche dans le journal d’audit à l’aide du centre de sécurité & conformité ou lorsque vous exécutez la cmdlet **Search-UnifiedAuditLog** dans Exchange Online PowerShell. Cela signifie également que les journaux d’audit ne seront pas disponibles via l’API activité de gestion d’Office 365 ou Azure sentinelle.
   
-## <a name="before-you-begin"></a>Avant de commencer
+## <a name="before-you-turn-audit-log-search-on-or-off"></a>Avant d’activer ou de désactiver la recherche dans le journal d’audit
 
 - Vous devez disposer du rôle journaux d’audit dans Exchange Online pour activer ou désactiver la recherche dans le journal d’audit dans votre organisation Microsoft 365. Par défaut, ce rôle est affecté aux groupes de rôles gestion de la conformité et gestion de l’organisation dans la page **autorisations** du centre d’administration Exchange. Les administrateurs globaux de Microsoft 365 sont membres du groupe de rôles gestion de l’organisation dans Exchange Online. 
     

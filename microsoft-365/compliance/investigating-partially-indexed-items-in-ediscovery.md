@@ -15,13 +15,15 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 4e8ff113-6361-41e2-915a-6338a7e2a1ed
-description: Les éléments partiellement indexés (également appelés éléments non indexés) sont des éléments de boîte aux lettres Exchange et des documents sur les sites SharePoint et OneDrive qui n’ont pas été complètement indexés pour la recherche de contenu. Dans cet article, vous pouvez découvrir pourquoi les éléments ne peuvent pas être indexés pour la recherche et sont renvoyés en tant qu’éléments partiellement indexés, identifier les erreurs de recherche pour les éléments partiellement indexés et utiliser un script PowerShell pour déterminer l’exposition de votre organisation à des éléments de courrier électronique partiellement indexés.
-ms.openlocfilehash: 0053ec5b03f5d32af1a39be94474c05f74ec3234
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.custom:
+- seo-marvel-apr2020
+description: Découvrez comment gérer des éléments partiellement indexés (ou non indexés) à partir d’Exchange, SharePoint et OneDrive au sein de votre organisation.
+ms.openlocfilehash: ed85a9351aad340c5840b6b9b9ea6e55833ed527
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43942127"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44817523"
 ---
 # <a name="investigating-partially-indexed-items-in-ediscovery"></a>Étude des éléments partiellement indexés dans eDiscovery
 
@@ -80,9 +82,9 @@ Dans les cas où vous devez examiner partiellement des éléments pour vérifier
   
 ![Choisir la deuxième ou troisième option pour exporter des éléments partiellement indexés](../media/624a62b4-78f7-4329-ab5d-e62e3b369885.png)
   
-Lorsque vous exportez des résultats de recherche de contenu ou un rapport de recherche de contenu à l’aide de l’une de ces options, l’exportation inclut un rapport nommé éléments non indexés. csv. Ce rapport inclut la plupart des mêmes informations que le fichier ResultsLog. csv ; Toutefois, le fichier éléments non indexés. csv inclut également deux champs liés à des éléments partiellement indexés : les **balises d’erreur** et les **propriétés d’erreur**. Ces champs contiennent des informations sur l’erreur d’indexation pour chaque élément partiellement indexé. L’utilisation des informations de ces deux champs peut vous aider à déterminer si l’erreur d’indexation pour un impact particulier a une incidence sur votre enquête. Si c’est le cas, vous pouvez effectuer une recherche de contenu ciblé et extraire et exporter des messages électroniques spécifiques et des documents SharePoint ou OneDrive pour les examiner afin de déterminer s’ils sont pertinents pour votre enquête. Pour obtenir des instructions pas à pas, voir [Prepare a CSV file for a targeted content Search in Office 365](csv-file-for-an-id-list-content-search.md).
+Lorsque vous exportez des résultats de recherche de contenu ou un rapport de recherche de contenu à l’aide de l’une de ces options, l’exportation inclut un rapport nommé unindexed Items.csv. Ce rapport inclut la plupart des mêmes informations que le fichier ResultsLog.csv ; Toutefois, le fichier Items.csv non indexé inclut également deux champs liés à des éléments partiellement indexés : les **balises d’erreur** et les propriétés de l' **erreur**. Ces champs contiennent des informations sur l’erreur d’indexation pour chaque élément partiellement indexé. L’utilisation des informations de ces deux champs peut vous aider à déterminer si l’erreur d’indexation pour un impact particulier a une incidence sur votre enquête. Si c’est le cas, vous pouvez effectuer une recherche de contenu ciblé et extraire et exporter des messages électroniques spécifiques et des documents SharePoint ou OneDrive pour les examiner afin de déterminer s’ils sont pertinents pour votre enquête. Pour obtenir des instructions pas à pas, voir [Prepare a CSV file for a targeted content Search in Office 365](csv-file-for-an-id-list-content-search.md).
   
- **Remarque :** Le fichier éléments non indexés. csv contient également des champs nommés **type d’erreur** et message d' **erreur**. Il s’agit de champs hérités qui contiennent des informations similaires aux informations des champs **balises d’erreur** et **propriétés d’erreur** , mais avec des informations moins détaillées. Vous pouvez ignorer ces champs hérités en toute sécurité. 
+ **Remarque :** Le fichier Items.csv unindex contient également des champs nommés **Error type** et **Error message**. Il s’agit de champs hérités qui contiennent des informations similaires aux informations des champs **balises d’erreur** et **propriétés d’erreur** , mais avec des informations moins détaillées. Vous pouvez ignorer ces champs hérités en toute sécurité. 
   
 ## <a name="errors-related-to-partially-indexed-items"></a>Erreurs liées à des éléments partiellement indexés
 
@@ -93,7 +95,7 @@ Les balises d’erreur sont constituées de deux informations, l’erreur et le 
 ```
 
    
- `parseroutputsize`est l’erreur et `xls` est le type de fichier du fichier dans lequel l’erreur s’est produite. Dans les cas où le type de fichier n’a pas été reconnu ou que le type de fichier n’est pas applicable à `noformat` l’erreur, vous verrez la valeur à la place du type de fichier. 
+ `parseroutputsize`est l’erreur et `xls` est le type de fichier du fichier dans lequel l’erreur s’est produite. Dans les cas où le type de fichier n’a pas été reconnu ou que le type de fichier n’est pas applicable à l’erreur, vous verrez la valeur `noformat` à la place du type de fichier. 
   
 Voici une liste des erreurs d’indexation et une description de la cause possible de l’erreur.
   
@@ -116,13 +118,13 @@ Voici une liste des erreurs d’indexation et une description de la cause possib
 | `retrieverrms` <br/> |Le extracteur de contenu n’a pas pu décoder un message protégé par RMS.  <br/> |
 | `wordbreakertruncated` <br/> |Trop de mots ont été identifiés dans le document lors de l’indexation. Le traitement de la propriété s’est arrêté lorsque la limite est atteinte, et la propriété est tronquée.  <br/> |
    
-Les champs d’erreur décrivent les champs qui sont affectés par l’erreur de traitement répertoriée dans le champ balises d’erreur. Si vous recherchez une propriété telle que `subject` ou `participants`, les erreurs contenues dans le corps du message n’ont pas d’impact sur les résultats de votre recherche. Cela peut être utile lorsque vous déterminez exactement quels éléments partiellement indexés vous pouvez être amené à approfondir votre enquête.
+Les champs d’erreur décrivent les champs qui sont affectés par l’erreur de traitement répertoriée dans le champ balises d’erreur. Si vous recherchez une propriété telle que `subject` ou `participants` , les erreurs contenues dans le corps du message n’ont pas d’impact sur les résultats de votre recherche. Cela peut être utile lorsque vous déterminez exactement quels éléments partiellement indexés vous pouvez être amené à approfondir votre enquête.
   
 ## <a name="using-a-powershell-script-to-determine-your-organizations-exposure-to-partially-indexed-email-items"></a>Utilisation d’un script PowerShell pour déterminer l’exposition de votre organisation à des éléments de courrier électronique partiellement indexés
 
 Les étapes suivantes montrent comment exécuter un script PowerShell qui recherche tous les éléments dans toutes les boîtes aux lettres Exchange, puis génère un rapport sur le ratio d’éléments de messagerie partiellement indexés de votre organisation (par nombre et taille) et affiche le nombre d’éléments (et leur type de fichier) pour chaque erreur d’indexation qui se produit. Utilisez les descriptions de balise Error de la section précédente pour identifier l’erreur d’indexation.
   
-1. Enregistrez le texte suivant dans un fichier de script Windows PowerShell à l’aide d’un suffixe de nom de fichier. ps1 ; par exemple, `PartiallyIndexedItems.ps1`.
+1. Enregistrez le texte suivant dans un fichier de script Windows PowerShell à l’aide d’un suffixe de nom de fichier. ps1 ; par exemple, `PartiallyIndexedItems.ps1` .
 
 ```powershell
   write-host "**************************************************"
@@ -168,7 +170,7 @@ Les étapes suivantes montrent comment exécuter un script PowerShell qui recher
   
 ```
 
-2. [Se connecter à l’interface PowerShell du Centre de sécurité et conformité](https://go.microsoft.com/fwlink/p/?linkid=627084).
+2. [Connectez-vous au Centre de conformité et sécurité PowerShell](https://go.microsoft.com/fwlink/p/?linkid=627084).
     
 3. Dans la sécurité & Centre de conformité PowerShell, accédez au dossier dans lequel vous avez enregistré le script à l’étape 1, puis exécutez le script. par exemple :
 
@@ -180,7 +182,7 @@ Voici un exemple de la sortie renvoyée par le script.
   
 ![Exemple de sortie d’un script qui génère un rapport sur l’exposition de votre organisation à des éléments de courrier électronique partiellement indexés](../media/aeab5943-c15d-431a-bdb2-82f135abc2f3.png)
   
-Notez également les points suivants :
+Veuillez prendre en compte les éléments suivants:
   
 1. Le nombre total et la taille des éléments de courrier électronique, et le ratio de votre organisation pour les éléments de courrier électronique partiellement indexés (par nombre et par taille)
     

@@ -17,16 +17,15 @@ search.appverid:
 - MET150
 ms.assetid: 239ce6eb-4e81-42db-bf86-a01362fed65c
 description: Découvrez comment utiliser la gestion des droits relatifs à l’information (IRM) de SharePoint Online via Microsoft Azure Active Directory Rights Management Services (RMS) pour protéger les listes et les bibliothèques de documents SharePoint.
-ms.openlocfilehash: ab045c2319897a98bffd14f898dd254b06890bee
-ms.sourcegitcommit: 98782ee4497d72232462c51a3071fae313282980
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 33e5a72ea1d0733656379bc4efdca7dd14f78cb1
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44222371"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44819194"
 ---
 # <a name="set-up-information-rights-management-irm-in-sharepoint-admin-center"></a>Set up Information Rights Management (IRM) in SharePoint admin center
-
-## <a name="introduction"></a>Introduction
 
 Dans SharePoint Online, la protection IRM est appliquée aux fichiers au niveau de la liste et de la bibliothèque. Pour que votre organisation puisse utiliser la protection IRM, vous devez d’abord configurer la gestion des droits. IRM s’appuie sur le service Azure Rights Management d’Azure information protection pour chiffrer et affecter des restrictions d’utilisation. Certains plans Microsoft 365 incluent Azure Rights Management, mais pas tous. Pour en savoir plus, consultez [la prise en charge d’Azure Rights Management par les services et les applications Office](https://docs.microsoft.com/azure/information-protection/understand-explore/office-apps-services-support).
   
@@ -79,4 +78,4 @@ Une fois que vous avez activé la gestion des droits relatifs à l’information
   
 Le nouveau client de synchronisation OneDrive pour Windows prend désormais en charge la synchronisation des bibliothèques de documents SharePoint et des emplacements OneDrive protégés par IRM (tant que le paramètre IRM de la bibliothèque n’est pas défini pour faire expirer les droits d’accès au document). Pour plus d’informations ou pour commencer à déployer le nouveau client de synchronisation, voir [Deploy The New OneDrive Sync client for Windows](https://docs.microsoft.com/onedrive/deploy-on-windows).
   
-[Haut de la page](#introduction)  
+[Haut de la page](set-up-irm-in-sp-admin-center.md)

@@ -17,13 +17,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 1b45c82f-26c8-44fb-9f3b-b45436fe2271
-description: Utilisez les limites de conformité pour créer des limites logiques au sein d’une organisation qui contrôlent les emplacements de contenu utilisateur qu’un gestionnaire eDiscovery peut rechercher. Les limites de conformité utilisent le filtrage des autorisations de recherche (également appelé filtres de sécurité de conformité) pour contrôler les boîtes aux lettres, les sites SharePoint et les comptes OneDrive pouvant être recherchés par des utilisateurs spécifiques.
-ms.openlocfilehash: da03f60be55b0ac6438adcc1648231e5b9798e56
-ms.sourcegitcommit: 22e9f54d0d3ead2be91a38d49325308c70f43f90
+description: Découvrez comment utiliser les limites de conformité pour créer des limites logiques qui contrôlent les emplacements de contenu utilisateur qu’un gestionnaire eDiscovery peut rechercher dans Microsoft 365.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 5d0c1741d46882c3ad623aa1d0529939ede3687f
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "44262567"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44819204"
 ---
 # <a name="set-up-compliance-boundaries-for-ediscovery-investigations"></a>Configuration des limites de conformité pour les enquêtes eDiscovery
 
@@ -252,7 +253,7 @@ Gardez les points suivants à l’esprit lors de la recherche et de l’exportat
     Set-ComplianceSecurityFilter -FilterName <Filter name>  -Region <Region>
     ```
 
-## <a name="frequently-asked-questions"></a>Foire aux questions
+## <a name="frequently-asked-questions"></a>Questions fréquemment posées
 
  **Qui peut créer et gérer des filtres d’autorisations de recherche (à l’aide des cmdlets New-ComplianceSecurityFilter et Set-ComplianceSecurityFilter) ?**
   
@@ -264,11 +265,11 @@ Le gestionnaire eDiscovery peut ajouter des paramètres à leur requête de rech
   
  **Que se passe-t-il si la valeur de l’attribut utilisé comme attribut de conformité dans un filtre d’autorisations de recherche est modifiée ?**
   
-Il faut trois jours pour qu’un filtre d’autorisations de recherche applique la limite de conformité si la valeur de l’attribut utilisé dans le filtre est modifiée. Par exemple, dans le scénario contoso, imaginons qu’un utilisateur de la quatrième Agence café est transféré à l’Agence Coho Winery. Par conséquent, la valeur de l’attribut **Department** de l’objet User est modifiée de *fourthcoffee* à *cohowinery*. Dans ce cas, la découverte électronique et les investisseurs de quatrième café obtiendront des résultats de recherche pour cet utilisateur pendant trois jours après la modification de l’attribut. De même, il faut trois jours avant que les gestionnaires eDiscovery et les investigations de Coho Winery obtiennent des résultats de recherche pour l’utilisateur. 
+Il faut trois jours pour qu’un filtre d’autorisations de recherche applique la limite de conformité si la valeur de l’attribut utilisé dans le filtre est modifiée. Par exemple, dans le scénario contoso, imaginons qu’un utilisateur de la quatrième Agence café est transféré à l’Agence Coho Winery. Par conséquent, la valeur de l’attribut **Department** de l’objet User est modifiée de *fourthcoffee* à *cohowinery*. Dans ce cas, la découverte électronique et les investisseurs de quatrième café obtiendront des résultats de recherche pour cet utilisateur pendant trois jours après la modification de l’attribut. De même, il faut trois jours avant que les gestionnaires eDiscovery et les investigations de Coho Winery obtiennent des résultats de recherche pour l’utilisateur.
   
  **Un gestionnaire eDiscovery peut-il voir le contenu de deux limites de conformité distinctes ?**
   
-Oui. Pour ce faire, vous pouvez ajouter l’utilisateur à des groupes de rôles disposant d’une visibilité aux deux agences.
+Oui, cette opération peut être effectuée lors de la recherche de boîtes aux lettres Exchange en ajoutant le gestionnaire eDiscovery à des groupes de rôles disposant d’une visibilité aux deux agences. Toutefois, lors de la recherche de sites SharePoint et de comptes OneDrive, un gestionnaire eDiscovery peut rechercher du contenu dans des limites de conformité différentes uniquement si les agences se trouvent dans la même région ou emplacement géographique. **Remarque :** Cette limitation pour les sites ne s’applique pas à Advanced eDiscovery car la recherche de contenu dans SharePoint et OneDrive n’est pas liée par un emplacement géographique.
   
  **Les filtres d’autorisations de recherche fonctionnent-ils pour les conservations de cas eDiscovery, les stratégies de rétention de Microsoft 365 ou DLP ?**
   

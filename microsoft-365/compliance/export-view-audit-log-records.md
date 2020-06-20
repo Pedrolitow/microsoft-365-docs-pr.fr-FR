@@ -16,13 +16,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
-description: Après avoir exporté et téléchargé les résultats d’une recherche de journal d’audit dans un fichier CSV, vous pouvez utiliser la fonctionnalité transformation JSON de l’éditeur de la requête Power dans Excel pour fractionner chaque propriété de l’objet JSON dans la colonne AuditData en sa propre colonne. Cela peut vous aider à localiser rapidement les données d’audit spécifiques que vous recherchez. Vous pouvez également utiliser PowerShell pour rechercher et exporter des enregistrements de journal d’audit.
-ms.openlocfilehash: 763a20a7da09007e54c0714b82b86ffe3586e501
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.custom: seo-marvel-apr2020
+description: Dans cet article, vous allez apprendre à exporter, configurer et afficher les enregistrements du journal d’audit de Microsoft 365.
+ms.openlocfilehash: 833d42ee37722092bddf14d0ef3418fac1ab03bb
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44352384"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44817743"
 ---
 # <a name="export-configure-and-view-audit-log-records"></a>Exporter, configurer et afficher des enregistrements du journal d’audit
 
@@ -116,7 +117,7 @@ Les résultats de la recherche sont exportés dans un fichier CSV nommé *PowerS
 
 Vous pouvez également utiliser le nom ou la valeur d’énumération du type d’enregistrement comme valeur du paramètre *RecordType* . Pour obtenir la liste des noms de types d’enregistrements et leurs valeurs enum correspondantes, consultez la table *AuditLogRecordType* dans le schéma de l' [API activité de gestion d’Office 365](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema#enum-auditlogrecordtype---type-edmint32).
 
-Vous ne pouvez inclure qu’une seule valeur pour le paramètre *RecordType* . Pour rechercher des enregistrements d’audit pour d’autres types d’enregistrements, vous devez réexécuter les deux commandes précédentes pour spécifier un autre type d’enregistrement et ajouter ces résultats au fichier CSV d’origine. Par exemple, vous pouvez exécuter les deux commandes suivantes pour ajouter des activités de fichiers SharePoint à partir de la même plage de dates dans le fichier PowerShellAuditlog. csv.
+Vous ne pouvez inclure qu’une seule valeur pour le paramètre *RecordType* . Pour rechercher des enregistrements d’audit pour d’autres types d’enregistrements, vous devez réexécuter les deux commandes précédentes pour spécifier un autre type d’enregistrement et ajouter ces résultats au fichier CSV d’origine. Par exemple, vous pouvez exécuter les deux commandes suivantes pour ajouter des activités de fichiers SharePoint à partir de la même plage de dates dans le fichier PowerShellAuditlog.csv.
 
 ```powershell
 $auditlog = Search-UnifiedAuditLog -StartDate 06/01/2019 -EndDate 06/30/2019 -RecordType SharePointFileOperation

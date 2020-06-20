@@ -15,13 +15,15 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: L’outil de gestion des dépositaires dans Advanced eDiscovery vous permet de gérer le flux de travail concernant l’identification, la préservation et la collecte des données associées aux personnes concernées dans un cas juridique.
-ms.openlocfilehash: fbd348c842cb3c4bb7284c14ae2504b83fd0b117
-ms.sourcegitcommit: bd51f626f0c7788c2a3cf89deee25264659aebd5
+ms.custom:
+- seo-marvel-apr2020
+description: Découvrez comment utiliser l’outil de gestion des dépositaires dans Advanced eDiscovery pour gérer les données d’un cas juridique.
+ms.openlocfilehash: 400793a6779cef5b1e823f40fa08cc1e05f93f15
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "43551239"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44815491"
 ---
 # <a name="work-with-custodians-in-advanced-ediscovery"></a>Utiliser des dépositaires dans Advanced eDiscovery
 

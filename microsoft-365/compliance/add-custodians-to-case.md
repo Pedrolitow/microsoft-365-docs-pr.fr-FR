@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Découvrez comment utiliser l’outil de gestion des dépositaires intégré dans Advanced eDiscovery pour coordonner vos flux de travail et identifier les sources de données pertinentes dans un cas.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b0c85fb080faeeafd5909c033bc95ef14efc2c45
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: adf5df3bba1956ab1bb658590c1fcf9d4f5a814d
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034688"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818611"
 ---
 # <a name="add-custodians-to-an-advanced-ediscovery-case"></a>Ajouter des dépositaires à un cas avancé eDiscovery
 
@@ -32,7 +32,7 @@ Utilisez le flux de travail suivant pour ajouter et gérer des dépositaires dan
 
 ![Onglet gestion des dépositaires](../media/CustodianMgtPage.png)
 
-## <a name="before-you-begin"></a>Avant de commencer
+## <a name="make-sure-you-have-the-necessary-permissions"></a>Vérifiez que vous disposez des autorisations nécessaires
 
 Pour ajouter des dépositaires à un cas, vous devez être membre du groupe de rôles gestionnaire de découverte électronique. Vous bénéficierez ainsi des autorisations nécessaires pour ajouter des dépositaires à un cas et mettre en place une conservation sur les sources de données privatives de Troie.
 

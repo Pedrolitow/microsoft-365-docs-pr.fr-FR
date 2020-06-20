@@ -16,19 +16,21 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Découvrez comment utiliser la fonctionnalité d’importation de contenu autre qu’Office 365 pour télécharger des documents non Office 365 dans des preuves dans une enquête de données.
-ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 499b1074b9a1e2026804eab2ac958fe7392e98ea
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.custom:
+- seo-marvel-mar2020
+- seo-marvel-apr2020
+ms.openlocfilehash: 9bfebc6aad9bc37d7d78ec4a0d50e6de967ac7d1
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034412"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44815481"
 ---
 # <a name="load-non-microsoft-365-data-into-evidence"></a>Charger des données non-Microsoft 365 dans la preuve
 
 Tous les documents que vous devrez peut-être analyser dans une enquête sur les données se trouvent dans Microsoft 365. Avec la fonctionnalité d’importation de contenu non-Microsoft 365, vous pouvez télécharger des documents qui ne résident pas dans Microsoft 365 dans des preuves afin qu’ils puissent être analysés lors d’une enquête de données.
 
-## <a name="before-you-begin"></a>Avant de commencer
+## <a name="requirements-to-upload-non-office-365-content"></a>Conditions requises pour télécharger du contenu non-Office 365
 
 L’utilisation de la fonctionnalité Télécharger non-Microsoft 365, comme décrit dans cette procédure, nécessite que vous disposiez des éléments suivants :
 
@@ -42,7 +44,7 @@ L’utilisation de la fonctionnalité Télécharger non-Microsoft 365, comme dé
 
 - Un compte qui est un gestionnaire eDiscovery ou un administrateur eDiscovery outils de stockage Microsoft Azure installé sur un ordinateur ayant accès à la structure de dossiers de contenu non-Microsoft 365.
 
-- Installez AzCopy en procédant comme suit :https://docs.microsoft.com/azure/storage/common/storage-use-azcopy
+- Installez AzCopy, que vous pouvez faire à partir de la [prise en main de AzCopy](https://docs.microsoft.com/azure/storage/common/storage-use-azcopy).
 
 ## <a name="upload-non-microsoft-365-content-in-to-a-data-investigation"></a>Télécharger du contenu non-Microsoft 365 dans une enquête de données
 

@@ -1,7 +1,7 @@
 ---
 title: Gouvernement britannique-Cloud (G-Cloud)
 description: Le service commercial de la Couronne a renouvelé la classification des services de Cloud Computing Microsoft sur le cloud public v. 6.
-keywords: Microsoft 365, conformité, offres
+keywords: Offres pour la conformité Microsoft 365
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 5a8d0b95a0abb93eef352a442ff6c8203eda6e0e
-ms.sourcegitcommit: daad5f2f1994a812c2b9c78e7dd148d10c51f61d
+ms.openlocfilehash: 814b04583724b9ab8e6bcb570d51d24467755064
+ms.sourcegitcommit: 51e47ca4b355436a2ad3deb154060eb1927428e6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "44254177"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44773765"
 ---
 # <a name="united-kingdom-government-cloud-g-cloud"></a>Gouvernement britannique-Cloud (G-Cloud)
 
@@ -37,19 +37,17 @@ Chaque année, Microsoft prépare la documentation et envoie des preuves pour at
 
 Le rendez-vous des services Microsoft sur le marché numérique signifie que les agences gouvernementales britanniques et les partenaires peuvent utiliser des services dans l’étendue pour stocker et traiter les données gouvernementales officielles britanniques, la plupart des données gouvernementales. En outre, il existe désormais plus de 450 partenaires Microsoft inclus dans G-Cloud qui sont des revendeurs de services Cloud Microsoft. Ils peuvent affirmer directement la conformité des services dans l’étendue avec les 14 principes dans leurs propres applications. Les clients et les partenaires doivent toutefois être en conformité avec leurs propres composants qui ne sont pas inclus dans l’attestation et la détermination de la conformité des services Cloud de Microsoft.
 
-Pour en savoir plus sur les avantages du Royaume-Uni G-Cloud V6 sur le Cloud Microsoft : [Télécharger le document d’arrière-plan United Kingdom g-Cloud V6](https://aka.ms/uk-g-cloud_backgrounder)
-
 Découvrez comment accélérer votre déploiement du Royaume-Uni G-Cloud V6 à l’aide de notre plan de sécurité et de conformité Azure : [Télécharger les conseils de mise en œuvre des principes généraux de l’implémentation de principe de Cloud pour Azure](https://servicetrust.microsoft.com/ViewPage/Blueprint?command=Download&downloadType=Document&downloadId=c3804aba-03a7-4d21-88ad-d9bbe5314a00&docTab=fc060920-cdb8-11e7-bacf-0bf52b09d912_UK_G-Cloud_Blueprint)
 
-## <a name="microsoft-in-scope-cloud-services"></a>Services Cloud Microsoft dans le périmètre
+## <a name="microsoft-in-scope-cloud-services"></a>Services Cloud Microsoft concernés
 
 - [Azure](https://aka.ms/AzureCompliance)
 - Microsoft Cloud App Security
 - [Dynamics 365](https://aka.ms/d365-compliance-list)
 - Intune
-- Service Cloud Automated (anciennement Microsoft Flow) en tant que service autonome ou inclus dans un plan ou une suite Office 365 ou Dynamics 365
+- Service Cloud Power Automate (anciennement Microsoft Flow), soit en service autonome, soit inclus dans un plan ou une suite Office 365 ou Dynamics 365
 - Office 365 : Exchange Online, SharePoint Online et Skype entreprise Online
-- Service Cloud PowerApps, soit en service autonome, soit inclus dans un plan ou une suite Office 365 ou Dynamics 365
+- Service Cloud Microsoft PowerApps, soit en service autonome, soit inclus dans un plan ou une suite Office 365 ou Dynamics 365
 - Service Cloud Power BI soit en service autonome, soit inclus dans un plan ou une suite Office 365
 
 ## <a name="audits-reports-and-certificates"></a>Audits, rapports et certificats
@@ -82,7 +80,7 @@ Le transfert de vos services gouvernementaux vers le nuage est désormais plus f
 
 [Commencer à utiliser le modèle Azure UK G-Cloud](https://aka.ms/ukofficialblueprint)
 
-## <a name="frequently-asked-questions"></a>Foire aux questions
+## <a name="frequently-asked-questions"></a>Questions fréquemment posées
 
 **Qui est éligible pour utiliser le marché numérique ?**
 

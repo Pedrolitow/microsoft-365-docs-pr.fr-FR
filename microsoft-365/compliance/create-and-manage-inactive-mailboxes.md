@@ -17,13 +17,15 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 296a02bd-ebde-4022-900e-547acf38ddd7
-description: Vous pouvez créer une boîte aux lettres inactive dans Microsoft 365 en appliquant une stratégie de conservation ou de rétention à la boîte aux lettres, puis en supprimant le compte d’utilisateur correspondant. Les éléments d’une boîte aux lettres inactive sont conservés pendant la durée de la conservation ou de la stratégie de rétention qui lui a été appliquée avant qu’elle ne soit devenue inactive. Pour supprimer définitivement une boîte aux lettres inactive, supprimez simplement la stratégie de conservation ou de rétention.
-ms.openlocfilehash: 76205e0f0504d647f4968afcf9ae2f75b2664a01
-ms.sourcegitcommit: 584e2e9db8c541fe32624acdca5e12ee327fdb63
+ms.custom:
+- seo-marvel-apr2020
+description: Découvrez comment conserver le contenu des boîtes aux lettres supprimées à l’aide de la fonctionnalité de boîtes aux lettres inactives dans Office 365.
+ms.openlocfilehash: d479f6661c4d6e87263488ac75682683b4779380
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44679098"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818013"
 ---
 # <a name="create-and-manage-inactive-mailboxes"></a>Créer et gérer des boîtes aux lettres inactives
 
@@ -32,7 +34,7 @@ Microsoft 365 vous permet de conserver le contenu des boîtes aux lettres suppri
 > [!IMPORTANT]
 > À mesure que nous continuons à investir de différentes manières pour conserver le contenu de la boîte aux lettres, nous annonçaons le retrait des conservations inaltérables dans le centre d’administration Exchange. Cela signifie que vous devez utiliser des conservations pour litige et des stratégies de rétention pour créer une boîte aux lettres inactive. À partir du 1er juillet 2020 vous ne pourrez pas créer de nouvelles conservations inaltérables dans Exchange Online. Toutefois, vous pourrez toujours modifier la durée de conservation d’un blocage sur place placé sur une boîte aux lettres inactive. Toutefois, à partir du 1er octobre 2020, vous ne pourrez pas modifier la durée de la conservation. Vous ne pourrez supprimer une boîte aux lettres inactive qu’en supprimant la conservation inaltérable. Les boîtes aux lettres inactives existantes qui sont en conservation inaltérable resteront conservées jusqu’à ce que la conservation soit supprimée. Pour plus d’informations sur le retrait des conservations inaltérables, consultez la rubrique [déclassement des outils eDiscovery hérités](legacy-ediscovery-retirement.md).
   
-## <a name="before-you-begin"></a>Avant de commencer
+## <a name="preparations-before-creating-an-inactive-mailbox"></a>Préparations avant la création d’une boîte aux lettres inactive
 
 - Pour désactiver une boîte aux lettres, vous devez lui avoir affecté une licence Exchange Online plan 2 de sorte qu’une conservation pour litige ou une stratégie de rétention puissent être appliquées à la boîte aux lettres avant sa suppression. Les licences Exchange Online plan 2 font partie d’un abonnement Office 365 entreprise E3 et E5. Si une boîte aux lettres est affectée à une licence Exchange Online plan 1 ou Exchange Online Kiosk (qui fait respectivement partie d’un abonnement Office 365 E1 et F1), vous devez lui attribuer une licence d’archivage Exchange Online distincte de sorte qu’une conservation puisse être appliquée à la boîte aux lettres avant d’être supprimée. Pour plus d'informations, consultez la page [Archivage Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=286153).
 
