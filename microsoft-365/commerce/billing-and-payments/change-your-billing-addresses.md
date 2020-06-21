@@ -25,12 +25,12 @@ search.appverid:
 - GEA150
 ms.assetid: a25c10d6-c1e9-4299-9185-25178df9eba6
 description: Découvrez comment mettre à jour vos adresses de facturation pour Microsoft 365 pour les entreprises. Vous pouvez également mettre à jour l’adresse de messagerie utilisée pour recevoir des notifications de facturation.
-ms.openlocfilehash: 1985299d1ed4388ea8ffa0255935f1ee7c8ac3b7
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 6b2da1e947362db432bf036d9799ddef89526030
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44401797"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44817028"
 ---
 # <a name="change-your-billing-addresses"></a>Modifier vos adresses de facturation
 
@@ -47,9 +47,9 @@ Votre facture contient trois adresses :
 
 - **Adresse de facturation** Ceci est l'adresse de votre service de facturation et est généralement la même que l'adresse de **vente**.
 
-- **Adresse d'utilisation du service** L'adresse de l'endroit où le service est utilisé, généralement le même que l'adresse de **vente**. Si votre organisation compte des utilisateurs distants ou plusieurs sites, nous vous conseillons d'utiliser l'adresse où sont regroupés la plupart de vos utilisateurs.
+- **Service Usage Address** The address where the service is being used, usually the same as the **Sold-To** address. If your organization has remote users or multiple offices, use the address where the majority of your users are located.
 
-Dans la plupart des cas, ces adresses sont identiques. Si vous le souhaitez, vous pouvez modifier une ou plusieurs de ces adresses. Vous pouvez également fournir une adresse e-mail de secours à laquelle vous recevrez des notifications de facturation et modifier l'adresse e-mail de secours pour les autres administrateurs.
+In most cases, these addresses are the same. If you need to change one or more of the addresses, you can do that. You can also provide an alternate email address to receive billing notifications, and change the alternate email address for other admins.
   
 ::: moniker range="o365-worldwide"
 
@@ -166,7 +166,7 @@ Si vous utilisez Office 365 géré par 21Vianet en Chine, reportez-vous à [la r
 
 Par défaut, les notifications de facturation de votre organisation sont envoyées à l’adresse de messagerie de Microsoft et à l’adresse de messagerie de secours de tous les administrateurs globaux et de facturation de votre organisation. Les administrateurs peuvent modifier leur adresse de courrier de secours en mettant à jour leurs informations de profil.
   
-1. Connectez-vous à Microsoft 365 avec votre compte professionnel ou scolaire en tant qu’administrateur général. [Découvrez comment vous connecter](https://support.office.com/article/e9eb7d51-5430-4929-91ab-6157c5a050b4).
+1. Connectez-vous à Microsoft 365 avec votre compte professionnel ou scolaire en tant qu’administrateur général. [Découvrez comment vous connecter](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4).
 
 2. Sélectionnez l' **icône**de l’utilisateur, puis sélectionnez **mon compte**.
   

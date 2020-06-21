@@ -10,13 +10,15 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
+ms.custom:
+- seo-marvel-apr2020
 description: Les administrateurs peuvent en savoir plus sur le rapport de non-remise dans le tableau de bord de flux de messagerie dans le centre de sécurité & conformité.
-ms.openlocfilehash: 2ea15237900abd3d73634a9aa744b59ef7bce5ee
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: eddecd1de5675797837aed84a892c43ba36c4c56
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42082675"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44819508"
 ---
 # <a name="non-delivery-report"></a>Rapport de non-remise
 
@@ -32,6 +34,6 @@ Lorsque vous sélectionnez une ligne dans le tableau pour afficher les détails 
 
 ![Sélectionner une ligne dans le tableau des détails dans le rapport de non-remise](../../media/non-delivery-report-details-table-select-row.png)
 
-## <a name="see-also"></a>Voir aussi
+## <a name="related-topics"></a>Voir aussi
 
 Pour plus d’informations sur les autres flux de messagerie dans le tableau de bord de flux de messagerie, voir [mail Flow Insights in the Security & Compliance Center](mail-flow-insights-v2.md).

@@ -19,12 +19,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Découvrez comment configurer des URL bloquées personnalisées pour des utilisateurs et une liste d’URL de non-réécriture pour un groupe d’utilisateurs dans les stratégies de liens fiables ATP d’Office 365.
-ms.openlocfilehash: f4e7067c9edc9bbe2965311a7c203cb16f242f49
-ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
+ms.openlocfilehash: 183291ef5b43248c5ff3d4e63b03a170416119bf
+ms.sourcegitcommit: 3274b65a3932288721541d2b3fa5ecbf4c51e1ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44617241"
+ms.lasthandoff: 06/11/2020
+ms.locfileid: "44702535"
 ---
 # <a name="set-up-a-custom-do-not-rewrite-urls-list-using-atp-safe-links"></a>Configurer une liste d’URL do-not-Rewrite personnalisée à l’aide de liens fiables ATP
 
@@ -73,13 +73,15 @@ Pour modifier (ou définir) des stratégies ATP, vous devez disposer d’un rôl
 
 - Toutes les URL que vous spécifiez dans la liste « ne pas réécrire » sont exclues de la recherche de liens fiables ATP pour les destinataires que vous spécifiez.
 
+- Envisagez d’ajouter des URL internes couramment utilisées à la liste « ne pas réécrire » pour améliorer l’expérience utilisateur. Par exemple, si vous disposez de services locaux, tels que Skype entreprise ou SharePoint, vous pouvez ajouter leurs URL à la liste pour les exclure de l’analyse.
+
 - Si vous disposez déjà d’une liste d’URL dans la liste « ne pas réécrire », veillez à la consulter et à ajouter des caractères génériques, le cas échéant. Par exemple, si votre liste existante a une entrée like `https://contoso.com/a` et que vous souhaitez inclure des sous-chemins comme `https://contoso.com/a/b` dans votre stratégie, ajoutez un caractère générique à votre entrée afin qu’elle se présente de la manière souhaitée `https://contoso.com/a/*` .
 
-- Lorsque vous spécifiez la liste « ne pas réécrire » pour une stratégie de liens approuvés ATP, vous pouvez inclure jusqu’à trois astérisques génériques ( \* ). Les caractères génériques ( \* ) sont utilisés pour inclure explicitement des préfixes ou des sous-domaines. L’entrée `contoso.com` n’est pas la même que `*.contoso.com/*` , car `*.contoso.com/*` autoriser les peuples à visiter des sous-domaines et des chemins d’accès dans le domaine spécifié.
+- Lorsque vous spécifiez une liste « ne pas réécrire » pour une stratégie de liens approuvés ATP, vous pouvez inclure jusqu’à trois caractères génériques ( \* ). Les caractères génériques incluent explicitement des préfixes ou des sous-domaines. Par exemple, l’entrée `contoso.com` n’est pas la même que celle `*.contoso.com/*` de, car elle `*.contoso.com/*` permet aux utilisateurs de visiter des sous-domaines et des chemins d’accès dans le domaine spécifié.
 
 Le tableau suivant répertorie des exemples de ce que vous pouvez entrer et de l’effet de ces entrées.
 
-|**Exemple d’entrée**|**Ce qu’il fait**|
+|Exemple d’entrée|Ce qu’il fait|
 |:-----|:-----|
 |`contoso.com`|Permet aux destinataires de visiter un site `https://contoso.com` , mais pas des sous-domaines ou des chemins d’accès.|
 |`*.contoso.com/*`|Permet aux destinataires de visiter un domaine, des sous-domaines et des chemins d’accès, par exemple `https://www.contoso.com` ,, `https://www.contoso.com` `https://maps.contoso.com` ou `https://www.contoso.com/a` . <br/><br/> Cette entrée est par essence préférable `*contoso.com*` , car elle n’inclut pas les sites potentiellement frauduleux, comme `https://www.falsecontoso.com` ou`https://www.false.contoso.completelyfalse.com`|
