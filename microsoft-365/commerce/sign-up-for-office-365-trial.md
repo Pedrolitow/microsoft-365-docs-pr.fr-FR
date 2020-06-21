@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 - BEA160
 description: Découvrez comment vous inscrire pour obtenir un abonnement à la version d’évaluation de Microsoft 365 pour les entreprises.
-ms.openlocfilehash: 968ab3c8bf7b377eba1aafb3fbc710eb4d36dad7
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: b14cf3ede622d54a95eb5cec3b67eec230ea8793
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44402833"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818542"
 ---
 # <a name="sign-up-for-a-trial-subscription"></a>Inscription à un abonnement d’évaluation
 
@@ -53,4 +53,4 @@ Si vous décidez d’annuler votre version d’évaluation avant la fin de la p�
 
 ## <a name="see-also"></a>Voir aussi
 
-[Vidéos de formation Microsoft 365 Entreprise](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[Vidéos de formation Microsoft 365 Entreprise](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

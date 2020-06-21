@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: Découvrez comment reconnaître et corriger les attaques d’injections de formulaires personnalisés et de règles Outlook dans Office 365
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 5d8c4495715ef29e1d9b70b993d1216e80461cf7
-ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
+ms.openlocfilehash: f9b5551b8cbda85ac3940bc8f43ec2d7b7eccdb1
+ms.sourcegitcommit: 7a59d83a8660c2344ebdb92e0ea0171c9c2d9498
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44613383"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44811049"
 ---
 # <a name="detect-and-remediate-outlook-rules-and-custom-forms-injections-attacks"></a>Détecter et résoudre les attaques d’injections de formulaires personnalisés et de règles Outlook
 
@@ -95,13 +95,13 @@ Vous pouvez utiliser l’une ou l’autre de ces deux méthodes pour confirmer l
 
 - Examinez manuellement les règles et les formulaires de chaque boîte aux lettres à l’aide du client Outlook. Cette méthode est exhaustive, mais vous pouvez vérifier uniquement l’utilisateur de boîte aux lettres à la fois, ce qui peut prendre beaucoup de temps si vous avez un grand nombre d’utilisateurs à vérifier. Cela peut également entraîner une violation de l’ordinateur à partir duquel vous exécutez la vérification.
 
-- Utilisez le script PowerShell [Get-AllTenantRulesAndForms. ps1](https://github.com/OfficeDev/O365-InvestigationTooling/blob/master/Get-AllTenantRulesAndForms.ps1) pour vider automatiquement toutes les règles de transfert de courrier et les formulaires personnalisés pour tous les utilisateurs de votre client. Il s’agit de la méthode la plus rapide et la plus sécurisée avec la charge minimale.
+- Utilisez le script [Get-AllTenantRulesAndForms.ps1](https://github.com/OfficeDev/O365-InvestigationTooling/blob/master/Get-AllTenantRulesAndForms.ps1) PowerShell pour vider automatiquement toutes les règles de transfert de courrier et les formulaires personnalisés pour tous les utilisateurs de votre client. Il s’agit de la méthode la plus rapide et la plus sécurisée avec la charge minimale.
 
 ### <a name="confirm-the-rules-attack-using-the-outlook-client"></a>Confirmer l’attaque des règles à l’aide du client Outlook
 
 1. Ouvrez le client Outlook utilisateurs en tant qu’utilisateur. L’utilisateur peut avoir besoin de votre aide pour examiner les règles de sa boîte aux lettres.
 
-2. Reportez-vous à l’article [gérer les messages électroniques à l’aide des règles](https://support.office.com/article/c24f5dea-9465-4df4-ad17-a50704d66c59) pour les procédures relatives à l’ouverture de l’interface des règles dans Outlook.
+2. Reportez-vous à l’article [gérer les messages électroniques à l’aide des règles](https://support.microsoft.com/office/c24f5dea-9465-4df4-ad17-a50704d66c59) pour les procédures relatives à l’ouverture de l’interface des règles dans Outlook.
 
 3. Recherchez les règles que l’utilisateur n’a pas créées, ou toute règle ou règle inattendue avec des noms suspects.
 
@@ -113,7 +113,7 @@ Vous pouvez utiliser l’une ou l’autre de ces deux méthodes pour confirmer l
 
 1. Ouvrez le client Outlook utilisateur en tant qu’utilisateur.
 
-2. Suivez les étapes décrites dans, [afficher l’onglet Développeur](https://support.office.com/article/e1192344-5e56-4d45-931b-e5fd9bea2d45) pour la version des utilisateurs d’Outlook.
+2. Suivez les étapes décrites dans, [afficher l’onglet Développeur](https://support.microsoft.com/office/e1192344-5e56-4d45-931b-e5fd9bea2d45) pour la version des utilisateurs d’Outlook.
 
 3. Ouvrez l’onglet Développeur maintenant visible dans Outlook, puis cliquez sur **créer un formulaire**.
 
@@ -125,7 +125,7 @@ Vous pouvez utiliser l’une ou l’autre de ces deux méthodes pour confirmer l
 
 ### <a name="steps-to-confirm-the-rules-and-forms-attack-using-powershell"></a>Étapes à suivre pour vérifier les règles et les attaques de formulaires à l’aide de PowerShell
 
-Le moyen le plus simple de vérifier une attaque de règles ou de formulaires personnalisés consiste à exécuter le script PowerShell [Get-AllTenantRulesAndForms. ps1](https://github.com/OfficeDev/O365-InvestigationTooling/blob/master/Get-AllTenantRulesAndForms.ps1) . Ce script se connecte à chaque boîte aux lettres de votre client et transfère toutes les règles et les formulaires dans deux fichiers. csv.
+Le moyen le plus simple de vérifier une attaque de règles ou de formulaires personnalisés consiste à exécuter le script PowerShell [Get-AllTenantRulesAndForms.ps1](https://github.com/OfficeDev/O365-InvestigationTooling/blob/master/Get-AllTenantRulesAndForms.ps1) . Ce script se connecte à chaque boîte aux lettres de votre client et transfère toutes les règles et les formulaires dans deux fichiers. csv.
 
 #### <a name="pre-requisites"></a>Conditions préalables
 
@@ -133,11 +133,11 @@ Vous devez disposer des droits d’administrateur général pour exécuter le sc
 
 1. Connectez-vous à l’ordinateur à partir duquel vous allez exécuter le script avec des droits d’administrateur local.
 
-2. Téléchargez ou copiez le script Get-AllTenantRulesAndForms. ps1 depuis GitHub vers un dossier à partir duquel vous allez l’exécuter. Le script crée deux fichiers de date marqués dans ce dossier, MailboxFormsExport-yyyy-mm-dd. csv et MailboxRulesExport-yyyy-mm-dd. csv.
+2. Téléchargez ou copiez le script Get-AllTenantRulesAndForms.ps1 de GitHub dans un dossier à partir duquel vous allez l’exécuter. Le script crée deux fichiers de date marqués dans ce dossier, MailboxFormsExport-yyyy-mm-dd.csv et MailboxRulesExport-yyyy-mm-dd.csv.
 
 3. Ouvrez une instance PowerShell en tant qu’administrateur et ouvrez le dossier dans lequel vous avez enregistré le script.
 
-4. Exécutez cette ligne de commande PowerShell comme suit `.\Get-AllTenantRulesAndForms.ps1` .\Get-AllTenantRulesAndForms.ps1
+4. Exécutez cette ligne de commande PowerShell comme suit `.\Get-AllTenantRulesAndForms.ps1`.\Get-AllTenantRulesAndForms.ps1
 
 #### <a name="interpreting-the-output"></a>Interprétation de la sortie
 
@@ -159,7 +159,7 @@ Si vous trouvez des preuves de l’une de ces attaques, la correction est simple
 
 1. Identifier tous les appareils utilisés par l’utilisateur avec Outlook. Ils devront tous être nettoyés du programme malveillant potentiel. Ne pas autoriser l’utilisateur à se connecter et à utiliser le courrier électronique jusqu’à ce que tous les appareils soient nettoyés.
 
-2. Suivez les étapes de la procédure [supprimer une règle](https://support.microsoft.com/en-us/office/delete-a-rule-2f0e7139-f696-4422-8498-44846db9067f) pour chaque appareil.
+2. Suivez les étapes de la procédure [supprimer une règle](https://support.microsoft.com/office/2f0e7139-f696-4422-8498-44846db9067f) pour chaque appareil.
 
 3. Si vous n’êtes pas sûr de la présence d’autres programmes malveillants, vous pouvez formater et réinstaller tous les logiciels sur l’appareil. Pour les appareils mobiles, vous pouvez suivre les étapes des constructeurs pour réinitialiser l’appareil à l’image installée en usine.
 
@@ -177,7 +177,7 @@ Il existe deux cmdlets PowerShell à distance que vous pouvez utiliser pour supp
 
 2. Si vous souhaitez supprimer complètement une seule règle, plusieurs règles ou toutes les règles d’une boîte aux lettres utilisent l’applet de commande [Remove-InboxRule](https://docs.microsoft.com/powershell/module/exchange/Remove-InboxRule) .
 
-3. Si vous souhaitez conserver la règle et son contenu à des fins d’aide, utilisez la cmdlet [Disable-InboxRule](https:https://docs.microsoft.com/powershell/module/exchange/disable-inboxrule/library/dd298120(v=exchg.160).aspx) .
+3. Si vous souhaitez conserver la règle et son contenu à des fins d’aide, utilisez la cmdlet [Disable-InboxRule](https://docs.microsoft.com/powershell/module/exchange/disable-inboxrule) .
 
 #### <a name="steps-for-mailboxes-in-exchange-online"></a>Étapes pour les boîtes aux lettres dans Exchange Online
 
@@ -185,7 +185,7 @@ Il existe deux cmdlets PowerShell à distance que vous pouvez utiliser pour supp
 
 2. Si vous souhaitez supprimer entièrement une seule règle, plusieurs règles ou toutes les règles d’une boîte aux lettres, utilisez la cmdlet [Remove-Inbox Rule](https://docs.microsoft.com/powershell/module/exchange/Remove-InboxRule) .
 
-3. Si vous souhaitez conserver la règle et son contenu à des fins d’aide, utilisez la cmdlet [Disable-InboxRule](https:https://docs.microsoft.com/powershell/module/exchange/disable-inboxrule/library/dd298120(v=exchg.160).aspx) .
+3. Si vous souhaitez conserver la règle et son contenu à des fins d’aide, utilisez la cmdlet [Disable-InboxRule](https://docs.microsoft.com/powershell/module/exchange/disable-inboxrule) .
 
 ## <a name="how-to-minimize-future-attacks"></a>Comment limiter les attaques futures
 
@@ -207,7 +207,7 @@ La meilleure façon de protéger vos comptes d’utilisateur, et en particulier 
 
 ### <a name="second-keep-your-outlook-clients-current"></a>Seconde : conserver vos clients Outlook à jour
 
-Les versions entièrement mises à jour et corrigées d’Outlook 2013 et 2016 désactivent par défaut l’action « démarrer l’application ». Ainsi, même si un agresseur enfreint le compte, les actions de la règle et du formulaire sont bloquées. Vous pouvez installer les mises à jour les plus récentes et les correctifs de sécurité en suivant les étapes décrites dans [install Office updates](https://support.office.com/article/2ab296f3-7f03-43a2-8e50-46de917611c5).
+Les versions entièrement mises à jour et corrigées d’Outlook 2013 et 2016 désactivent par défaut l’action « démarrer l’application ». Ainsi, même si un agresseur enfreint le compte, les actions de la règle et du formulaire sont bloquées. Vous pouvez installer les mises à jour les plus récentes et les correctifs de sécurité en suivant les étapes décrites dans [install Office updates](https://support.microsoft.com/office/2ab296f3-7f03-43a2-8e50-46de917611c5).
 
 Voici les versions de correctifs pour vos clients Outlook 2013 et 2016 :
 
@@ -225,7 +225,7 @@ Pour plus d’informations sur les correctifs de sécurité individuels, voir :
 
 Notez que même avec les correctifs et mises à jour installés, il est possible pour un agresseur de modifier la configuration de l’ordinateur local pour réactiver le comportement « démarrer l’application ». Vous pouvez utiliser la [gestion de stratégie de groupe avancée](https://docs.microsoft.com/microsoft-desktop-optimization-pack/agpm/) pour surveiller et appliquer des stratégies d’ordinateur local sur vos clients.
 
-Vous pouvez voir si « démarrer l’application » a été réactivé via une substitution dans le registre à l’aide des informations de la rubrique [How to View the System Registry by using 64-bit versions of Windows](https://support.microsoft.com/help/305097/how-to-view-the-system-registry-by-using-64-bit-versions-of-windows). Vérifiez les sous-clés suivantes :
+Vous pouvez voir si « démarrer l’application » a été réactivé via une substitution dans le registre à l’aide des informations de la rubrique [How to View the System Registry by using 64-bit versions of Windows](https://support.microsoft.com/help/305097). Vérifiez les sous-clés suivantes :
 
 - **Outlook 2016**:`HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Outlook\Security\`
 

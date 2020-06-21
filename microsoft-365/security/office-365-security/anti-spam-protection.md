@@ -19,17 +19,17 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Les administrateurs peuvent en savoir plus sur les paramètres et les filtres anti-courrier indésirable qui permettent d’éviter le courrier indésirable dans Exchange Online Protection (EOP).
-ms.openlocfilehash: d7c58fd4751bc7d92d5dfa3cadcfb7b24a3fc465
-ms.sourcegitcommit: 4cfb8a9c3675d0aefcabd690273e2af85f2e38b0
+ms.openlocfilehash: ce673a4bee64dfbc84f870f9cf4871e9ac32a71c
+ms.sourcegitcommit: 89636f35b0194986f156302fc1bb96af25d4805b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44211415"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44800106"
 ---
 # <a name="anti-spam-protection-in-eop"></a>Protection contre le courrier indésirable dans EOP
 
 > [!NOTE]
-> Cette rubrique est destinée aux administrateurs. Pour les rubriques destinées aux utilisateurs finaux, consultez [la rubrique vue d’ensemble du filtre courrier indésirable](https://support.Microsoft.com/article/5ae3ea8e-cf41-4fa0-b02a-3b96e21de089) et [en savoir plus sur le courrier indésirable et le hameçonnage](https://support.Microsoft.com/article/86c1d76f-4d5a-4967-9647-35665dc17c31).
+> Cette rubrique est destinée aux administrateurs. Pour les rubriques destinées aux utilisateurs finaux, consultez [la rubrique vue d’ensemble du filtre courrier indésirable](https://support.microsoft.com/office/5ae3ea8e-cf41-4fa0-b02a-3b96e21de089) et [en savoir plus sur le courrier indésirable et le hameçonnage](https://support.microsoft.com/office/86c1d76f-4d5a-4967-9647-35665dc17c31).
 
 Dans les organisations Microsoft 365 avec des boîtes aux lettres dans Exchange Online ou des organisations Exchange Online Protection (EOP) autonomes sans boîte aux lettres Exchange Online, les messages électroniques sont automatiquement protégés contre le courrier indésirable par EOP.
 
@@ -83,7 +83,7 @@ Voici quelques-unes des meilleures pratiques qui s’appliquent à l’un ou l�
 
 ### <a name="prevent-the-delivery-of-spam-to-the-inbox"></a>Empêcher la remise du courrier indésirable dans la boîte de réception
 
-- **Vérifiez les paramètres de votre organisation**: Méfiez-vous des paramètres permettant aux messages d’ignorer le filtrage du courrier indésirable (par exemple, si vous ajoutez votre propre domaine à la liste des domaines autorisés dans les stratégies de blocage du courrier indésirable). Pour connaître les paramètres recommandés, reportez-vous aux [paramètres recommandés pour EOP et Microsoft 365 Security ATP](recommended-settings-for-eop-and-office365-atp.md) and [Create Safe sender lists](create-safe-sender-lists-in-office-365.md).
+- **Vérifiez les paramètres de votre organisation**: Méfiez-vous des paramètres permettant aux messages d’ignorer le filtrage du courrier indésirable (par exemple, si vous ajoutez votre propre domaine à la liste des domaines autorisés dans les stratégies de blocage du courrier indésirable). Pour connaître les paramètres recommandés, reportez-vous à la rubrique [paramètres recommandés pour la sécurité de l’ATP et d’Office 365](recommended-settings-for-eop-and-office365-atp.md) et [créer des listes d’expéditeurs approuvés](create-safe-sender-lists-in-office-365.md).
 
 - **Vérifier que la règle de courrier indésirable est activée dans la boîte aux lettres de l’utilisateur**: elle est activée par défaut, mais si elle est désactivée, les messages marqués comme courrier indésirable ne peuvent pas être déplacés dans le dossier courrier indésirable. Pour plus d’informations, consultez la rubrique [configurer les paramètres du courrier indésirable sur les boîtes aux lettres Exchange Online dans Microsoft 365](configure-junk-email-settings-on-exo-mailboxes.md).
 

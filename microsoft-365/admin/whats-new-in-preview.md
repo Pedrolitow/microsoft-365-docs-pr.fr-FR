@@ -21,12 +21,12 @@ description: Centre d’administration Microsoft 365-Découvrez les fonctionnali
 ms.custom:
 - MACDashWhatsNew
 - AdminSurgePortfolio
-ms.openlocfilehash: 4e4d47b054b5c6371bb62a3fe0f52c08b0997498
-ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
+ms.openlocfilehash: d0c32c7f7ac3b2824cd48c0e10085e3d59a16c69
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "44587579"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780706"
 ---
 # <a name="whats-new-in-the-microsoft-365-admin-center"></a>Nouveautés du centre d’administration Microsoft 365
 
@@ -79,7 +79,7 @@ Pour en savoir plus sur ces rôles, consultez la rubrique [à propos des rôles 
 
 De nombreux administrateurs ont besoin de partager des informations sur les groupes et leur utilisation pour les personnes qui n’ont pas accès aux centres d’administration. Vous pouvez désormais exporter la liste de groupes vers un fichier CSV à des fins d’audit, ce qui signifie que vous pouvez générer un ancien script PowerShell. Pour essayer, **accédez à groupes groupes**  >  **Groups**, puis sélectionnez **Exporter les groupes** dans la barre de commandes.
 
-### <a name="microsoft-365-solution-and-architecture-center"></a>Centre d’architecture et solution Microsoft 365
+### <a name="microsoft-365-solution-and-architecture-center"></a>Centre de solutions et d'architecture Microsoft 365
 
 Ce mois-ci, nous avons publié un nouveau site [https://docs.microsoft.com](https://docs.microsoft.com) nommé [Microsoft 365 solution and architecture Center](https://docs.microsoft.com/microsoft-365/solutions/solution-architecture-center), qui rassemble les conseils techniques dont vous avez besoin pour comprendre, planifier et implémenter des solutions Microsoft 365 intégrées pour une collaboration sécurisée et conforme. Dans ce centre, vous trouverez les éléments suivants :
 
@@ -153,19 +153,19 @@ Ce mois-ci, nous avons deux mises à jour pour les groupes :
 
 #### <a name="for-your-users"></a>Pour vos utilisateurs
 
-- [Planifier une réunion](https://support.office.com/article/c61b4f61-ee62-4a06-8bf7-0a1cd302700a)
-- [Participer à une réunion teams](https://support.office.com/article/join-a-teams-meeting-078e9868-f1aa-4414-8bb9-ee88e9236ee4)
-- [Créer une équipe à l’échelle de l’Organisation](https://support.office.com/article/create-a-company-wide-team-037bb27a-bcc9-48fe-8d72-44d9482420a3)
-- [Créer une équipe avec des invités](https://support.office.com/article/create-a-team-with-guests-11fbb083-52ee-434d-8c6e-63711fdafac7)
-- [Rejoindre une équipe en tant qu’invité](https://support.office.com/article/join-a-team-as-a-guest-928d1eef-61e2-49ec-b754-c2fe86b34824)
-- [Créer une adresse de messagerie de groupe](https://support.office.com/article/create-a-company-email-address-ded875f9-a9de-437f-b559-2ae4f235bb2b)
+- [Planifier une réunion](https://support.microsoft.com/office/c61b4f61-ee62-4a06-8bf7-0a1cd302700a)
+- [Participer à une réunion teams](https://support.microsoft.com/office/078e9868-f1aa-4414-8bb9-ee88e9236ee4)
+- [Créer une équipe à l’échelle de l’Organisation](https://support.microsoft.com/office/037bb27a-bcc9-48fe-8d72-44d9482420a3)
+- [Créer une équipe avec des invités](https://support.microsoft.com/office/11fbb083-52ee-434d-8c6e-63711fdafac7)
+- [Rejoindre une équipe en tant qu’invité](https://support.microsoft.com/office/928d1eef-61e2-49ec-b754-c2fe86b34824)
+- [Créer une adresse de messagerie de groupe](https://support.microsoft.com/office/ded875f9-a9de-437f-b559-2ae4f235bb2b)
 
 #### <a name="for-admins-and-business-owners"></a>Pour les administrateurs et les propriétaires d’entreprise
 
-- [Permettre à votre petite entreprise de travailler à distance](https://support.office.com/article/empower-your-small-business-with-remote-work-9b91a85a-39b4-40a6-a590-0f9bea0ba8e6)
-- [Exécution d’une petite entreprise à distance](https://support.office.com/article/sign-up-for-a-microsoft-subscription-9ac1a0f1-789b-4143-b954-5821d5d89298)
-- [S’inscrire à Microsoft Business Basic](https://support.office.com/article/sign-up-for-a-microsoft-subscription-9ac1a0f1-789b-4143-b954-5821d5d89298)
-- [Configuration de la connexion à deux facteurs](https://support.office.com/article/sign-up-for-a-microsoft-subscription-9ac1a0f1-789b-4143-b954-5821d5d89298)
+- [Permettre à votre petite entreprise de travailler à distance](https://support.microsoft.com/office/9b91a85a-39b4-40a6-a590-0f9bea0ba8e6)
+- [Exécution d’une petite entreprise à distance](https://support.microsoft.com/office/9ac1a0f1-789b-4143-b954-5821d5d89298)
+- [S’inscrire à Microsoft Business Basic](https://support.microsoft.com/office/9ac1a0f1-789b-4143-b954-5821d5d89298)
+- [Configuration de la connexion à deux facteurs](https://support.microsoft.com/office/9ac1a0f1-789b-4143-b954-5821d5d89298)
 
 ## <a name="march-2020"></a>Mars 2020
 
@@ -227,7 +227,7 @@ Nous avons reçu beaucoup de commentaires de la part des partenaires et des admi
 
 C’est littéralement !!!
 
-### <a name="groups"></a>Groups
+### <a name="groups"></a>Groupes
 
 Voici quelques-unes des modifications apportées à la zone groupes du mois :
 
@@ -276,12 +276,12 @@ La liste des boîtes aux lettres de ressources a été mise à jour avec le nouv
 
 Consultez la formation pour les administrateurs de petite entreprise publiée en janvier :
 
-- [Créer votre site Web professionnel](https://support.office.com/article/3325d50e-d131-403c-a278-7f3296fe33a9)
-- [Trouver des réponses et de l’aide](https://support.office.com/article/7f681212-c649-4a3e-a43b-32b1d1e58988)
-- [Obtenir de l’aide ou de l’assistance](https://support.office.com/article/18948a4c-3eb1-4b30-b1bc-a4cc29eb7655)
-- [Supprimer un utilisateur](https://support.office.com/article/6bcdad7b-732a-4260-997a-8c176bc3d9d6)
-- [Choisir un abonnement Microsoft](https://support.office.com/article/b9f7c78e-430f-4117-89ec-2eeb1dced2ca)
-- [Vue d’ensemble de Microsoft 365 pour la sécurité des entreprises](https://support.office.com/article/3274b159-a825-46d7-9421-7d6e209389d1)
+- [Créer votre site Web professionnel](https://support.microsoft.com/office/3325d50e-d131-403c-a278-7f3296fe33a9)
+- [Trouver des réponses et de l’aide](https://support.microsoft.com/office/7f681212-c649-4a3e-a43b-32b1d1e58988)
+- [Obtenir de l’aide ou de l’assistance](https://support.microsoft.com/office/18948a4c-3eb1-4b30-b1bc-a4cc29eb7655)
+- [Supprimer un utilisateur](https://support.microsoft.com/office/6bcdad7b-732a-4260-997a-8c176bc3d9d6)
+- [Choisir un abonnement Microsoft](https://support.microsoft.com/office/b9f7c78e-430f-4117-89ec-2eeb1dced2ca)
+- [Vue d’ensemble de Microsoft 365 pour la sécurité des entreprises](https://support.microsoft.com/office/3274b159-a825-46d7-9421-7d6e209389d1)
 
 ## <a name="november-and-december-2019"></a>Novembre et décembre 2019
 
@@ -403,7 +403,7 @@ Une mise à jour a été mise à jour vers l’un des assistants d’installatio
 Nous disposons de mises à jour pour la facturation et les abonnements ce mois-ci :
 
 - Abonnements basés sur des appareils : vous pouvez attribuer ou annuler l’affectation de licences **Microsoft 365 Apps for Education (Device)** à des appareils dans le centre d’administration Microsoft 365. **Microsoft 365 Apps for Education (Device)** est une licence de module complémentaire qui vous permet d’attribuer une licence à un appareil. Accédez à **facturation**de  >  **vos produits** pour trouver et acheter la licence.
-- Gestion des licences basées sur les utilisateurs : nous avons mis à jour la manière dont vous attribuez des licences aux utilisateurs actifs des **utilisateurs dans**  >  **Active users** le nouveau style. Si vous souhaitez en savoir plus, consultez les articles :
+- Gestion des licences basées sur les utilisateurs : nous avons mis à jour la manière dont vous attribuez des licences aux utilisateurs actifs des **utilisateurs dans**  >  **Active users** le nouveau style. Pour plus d’informations, reportez-vous aux rubriques suivantes :
   - [Attribuer des licences aux utilisateurs](manage/assign-licenses-to-users.md)
   - [Annuler l'assignation des licences aux utilisateurs](manage/remove-licenses-from-users.md)
 

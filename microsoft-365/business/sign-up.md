@@ -26,12 +26,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Découvrez ce que comprend Microsoft 365 Business Premium et obtenez des conseils détaillés pour vous inscrire à Microsoft 365 Business Premium.
-ms.openlocfilehash: 50662149ae2faa99c567080d5e914c3300ac3494
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 5cee380998b188e7d5845becacfa46383905737f
+ms.sourcegitcommit: e5bc49f0a25954d008b6cc09c2b98bb7bfe1aa2f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44401555"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44785669"
 ---
 # <a name="sign-up-for-microsoft-365-business-premium"></a>S’inscrire à Microsoft 365 Business Premium
 
@@ -54,7 +54,7 @@ Regardez cette vidéo pour une présentation rapide du processus d’inscription
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3znhX] 
 
-Si vous avez trouvé cette vidéo utile, consultez les [séries de formations complètes pour les petites entreprises et les nouveaux utilisateurs de Microsoft 365](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
+Si vous avez trouvé cette vidéo utile, consultez les [séries de formations complètes pour les petites entreprises et les nouveaux utilisateurs de Microsoft 365](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
 
 Pour vous inscrire et acheter Microsoft 365 pour votre entreprise, procédez comme suit :
 
@@ -97,4 +97,4 @@ Pour obtenir de l’aide sur le programme d’installation, consultez la rubriqu
 
 ## <a name="see-also"></a>Voir aussi
 
-[Vidéos de formation Microsoft 365 Entreprise](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[Vidéos de formation Microsoft 365 Entreprise](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

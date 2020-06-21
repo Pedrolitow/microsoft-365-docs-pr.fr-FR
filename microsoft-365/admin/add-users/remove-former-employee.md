@@ -25,12 +25,12 @@ search.appverid:
 - MOE150
 ms.assetid: 44d96212-4d90-4027-9aa9-a95eddb367d1
 description: 'Suivez cette liste de vérification pour supprimer un employé de Microsoft 365 et sécuriser les données. '
-ms.openlocfilehash: 1b691d948576a3949d637d2de05b6f931844037c
-ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
+ms.openlocfilehash: adf5c683828b30a978199145fa2c54f17d1b6b37
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/31/2020
-ms.locfileid: "44431652"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780576"
 ---
 # <a name="remove-a-former-employee"></a>Supprimer un ancien employé
 
@@ -49,11 +49,11 @@ Regardez une brève vidéo sur la suppression d’un employé. <br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOfR] 
 
-Si vous avez trouvé cette vidéo utile, consultez les [séries de formations complètes pour les petites entreprises et les nouveaux utilisateurs de Microsoft 365](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
+Si vous avez trouvé cette vidéo utile, consultez les [séries de formations complètes pour les petites entreprises et les nouveaux utilisateurs de Microsoft 365](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
 
 Pour supprimer un employé :
 
-1. Dans le Centre d’administration, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utilisateurs actifs</a>.
+1. Dans le Centre d’administration, accédez à la page **Utilisateurs >** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utilisateurs actifs</a>.
 
 2. Activez la case à cocher en regard du nom de l’utilisateur, puis sélectionnez **Réinitialiser le mot de passe**.
 
@@ -65,7 +65,7 @@ Pour supprimer un employé :
 
 ::: moniker range="o365-germany"
 
-1. Dans le Centre d’administration, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Utilisateurs actifs</a>.
+1. Dans le Centre d’administration, accédez à la page **Utilisateurs >** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Utilisateurs actifs</a>.
 
 2. Sélectionnez l’utilisateur, puis réinitialiser le **mot de passe**.
 
@@ -77,7 +77,7 @@ Pour supprimer un employé :
 
 ::: moniker range="o365-21vianet"
 
-1. Dans le Centre d’administration, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Utilisateurs actifs</a>.
+1. Dans le Centre d’administration, accédez à la page **Utilisateurs >** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Utilisateurs actifs</a>.
 
 2. Sélectionnez l’utilisateur, puis réinitialiser le **mot de passe**.
 
@@ -104,18 +104,18 @@ Voici une question : « que dois-je faire pour protéger les données lorsqu�
 > [!NOTE]
 > Si vous êtes un administrateur global, vous pouvez supprimer l’employé, transférer son courrier électronique, choisir quoi faire avec son contenu OneDrive à l’aide de la nouvelle expérience guidée. Pour plus d’informations, consultez [la rubrique global admin : Delete a User](remove-former-employee.md). Toutefois, nous vous recommandons d’effectuer toutes les étapes supplémentaires répertoriées ici afin de vous assurer que l’employé n’a pas accès aux données de votre entreprise. 
   
-En voici un résumé. Chaque étape est expliquée en détail dans cet article.
+Here's a quick overview. Each step is explained in detail in this article.
   
 |||
 |:-----|:-----|
 |**Étape** <br/> |**Raison** <br/> |
 |1. [Enregistrer le contenu de la boîte aux lettres d'un ancien employé](#save-the-contents-of-a-former-employees-mailbox) <br/> |Cette étape est utile pour la personne qui reprendra le travail de l'employé, ou en cas de litige.  <br/> |
-|2. [Transférer l'adresse e-mail d'un ancien employé à un autre employé ou la convertir en boîte aux lettres partagée](#forward-a-former-employees-email-to-another-employee-or-convert-to-a-shared-mailbox) <br/> |Cette étape vous permet de conserver l'adresse e-mail de l'ancien employé. Si certains de vos clients ou partenaires continuent d'envoyer du courrier à l'adresse de l'ancien employé, celui-ci est reçu par son remplaçant.  <br/> |
+|2. [Transférer l'adresse e-mail d'un ancien employé à un autre employé ou la convertir en boîte aux lettres partagée](#forward-a-former-employees-email-to-another-employee-or-convert-to-a-shared-mailbox) <br/> |This lets you keep the former employee's email address active. If you have customers or partners still sending email to the former employee's address, this gets them to the person taking over the work.  <br/> |
 |3. [Réinitialiser et bloquer l'appareil mobile d'un ancien employé](#wipe-and-block-a-former-employees-mobile-device) <br/> |Cette étape supprime vos données professionnelles du téléphone ou de la tablette.  <br/> |
 |4. [bloquer l’accès d’un ancien employé aux données Microsoft 365](#block-a-former-employees-access-to-microsoft-365-data)<br/> |Elle empêche la personne d’accéder à son ancienne boîte aux lettres et aux données Microsoft 365.  <br/><br/> **Conseil**: lorsque vous bloquez l’accès d’un utilisateur, vous payez toujours pour sa licence. Vous devez supprimer la licence de votre abonnement pour cesser de payer pour celle-ci (étape 5°.           |
-|5. [Déplacer le contenu OneDrive de l'employé](get-access-to-and-back-up-a-former-user-s-data.md) <br/> |Si vous supprimez uniquement la licence d'un utilisateur, mais pas le compte, vous pouvez toujours accéder au contenu enregistré dans l'espace OneDrive de l'utilisateur même après 30 jours.  <br/><br/> Avant de supprimer le compte, vous devez déplacer le contenu de son espace OneDrive à un autre emplacement qui vous est aisément accessible. Après avoir supprimé le compte d'un employé, le contenu de son espace OneDrive est conservé pendant **30** jours. Pendant ce temps, vous pouvez toutefois restaurer le compte de l'utilisateur et accéder à son contenu OneDrive. Si vous restaurez le compte de l'utilisateur, vous pouvez toujours accéder au contenu dans OneDrive même après 30 jours.  <br/> |
-|5a. Que se passe si quelqu'un utilise son ordinateur personnel pour accéder à OneDrive et SharePoint ?  <br/> |Si quelqu'un utilise son ordinateur personnel au lieu d'un ordinateur fourni par la société pour télécharger des fichiers à partir de OneDrive et SharePoint, il n'y a aucun moyen pour vous d'effacer les fichiers que cette personne a stockés.  <br/><br/> Ils auront toujours accès aux fichiers qui ont été synchronisés avec leur ordinateur.  <br/> |
-|6. [suppression et suppression de la licence Microsoft 365 d’un ancien employé](#remove-and-delete-the-microsoft-365-license-from-a-former-employee)<br/> |Si vous retirez une licence, vous pouvez l'affecter à quelqu'un d'autre. Vous pouvez également supprimer la licence pour ne plus payer pour celle-ci jusqu'à ce que vous embauchiez une autre personne.  <br/><br/> Lorsque vous retirez ou supprimez une licence, les anciens courriers, les contacts et le calendrier de l'utilisateur sont conservés pendant **30 jours** avant d'être supprimés définitivement. Si vous retirez ou supprimez une licence, mais pas le compte, vous pouvez toujours accéder au contenu enregistré dans l'espace OneDrive de l'utilisateur même après 30 jours.  <br/> |
+|5. [Déplacer le contenu OneDrive de l'employé](get-access-to-and-back-up-a-former-user-s-data.md) <br/> |Si vous supprimez uniquement la licence d'un utilisateur, mais pas le compte, vous pouvez toujours accéder au contenu enregistré dans l'espace OneDrive de l'utilisateur même après 30 jours.  <br/><br/> Before you delete the account, you should move the content of their OneDrive to another location that's easy for you to access. After you delete an employee's account, the content in their OneDrive is retained for **30** days. During that 30 days, however, you can restore the user's account, and gain access to their OneDrive content. If you restore the user's account, the OneDrive content will remain accessible to you even after 30 days.  <br/> |
+|5a. What if the person used their personal computer to access OneDrive and SharePoint?  <br/> |Si quelqu'un utilise son ordinateur personnel au lieu d'un ordinateur fourni par la société pour télécharger des fichiers à partir de OneDrive et SharePoint, il n'y a aucun moyen pour vous d'effacer les fichiers que cette personne a stockés.  <br/><br/> Ils auront toujours accès aux fichiers qui ont été synchronisés avec leur ordinateur.  <br/> |
+|6. [suppression et suppression de la licence Microsoft 365 d’un ancien employé](#remove-and-delete-the-microsoft-365-license-from-a-former-employee)<br/> |When you remove a license, you can assign it to someone else. Or, you can delete the license so you don't pay for it until you hire another person.  <br/><br/> When you remove or delete a license, the user's old email, contacts, and calendar are retained for **30 days**, then permanently deleted. If you remove or delete a license but don't delete the account, the content in the user's OneDrive will remain accessible to you even after 30 days.  <br/> |
 |7. [Supprimer le compte d'utilisateur d'un ancien employé](#delete-a-former-employees-user-account)<br/> |Cette opération supprime le compte de votre centre d’administration. Ainsi, les choses restent claires et bien organisées.  <br/> |
    
 ## <a name="save-the-contents-of-a-former-employees-mailbox"></a>Enregistrer le contenu de la boîte aux lettres d'un ancien employé
@@ -123,11 +123,11 @@ En voici un résumé. Chaque étape est expliquée en détail dans cet article.
 
 Il existe deux façons d'enregistrer le contenu de la boîte aux lettres de l'ancien employé :
   
-1. Ajoutez les adresses de courrier de l'ancien employé à votre version d'Outlook 2013 ou 2016, puis exportez les données vers un fichier .pst. Si nécessaire, vous pouvez importer les données dans un autre compte de courrier. Pour savoir comment procéder, voir [Accéder aux données d'un ancien utilisateur et les sauvegarder](get-access-to-and-back-up-a-former-user-s-data.md).
+1. Add the former employee's email address to your version of Outlook 2013 or 2016, and then export the data to a .pst file. You can import the data to another email account as needed. To learn how to do this, see [Get access to and back up a former user's data](get-access-to-and-back-up-a-former-user-s-data.md).
     
     OU
     
-2. Placez une conservation pour litige ou une conservation inaltérable sur la boîte aux lettres avant de supprimer le compte d'utilisateur. La mise en place de cette option est beaucoup plus compliquée que la mise en place de la première option, mais elle peut s'avérer très utile si : votre offre Entreprise inclut les fonctionnalités d'archivage et de conservation légale, la mise en place de la conservation pour litige est envisageable et si vous disposez d'un service informatique compétent au niveau technique.
+2. Place a Litigation Hold or In-Place Hold on the mailbox before the deleting the user account. This is much more complicated than the first option but worth doing if: your Enterprise plan includes archiving and legal hold, litigation is a possibility, and you have a technically strong IT department.
     
     Après avoir converti la boîte aux lettres en « boîte aux lettres inactive », les administrateurs, responsables de la conformité ou responsables des enregistrements peuvent se servir des outils de découverte électronique inaltérable d'Exchange Online pour accéder au contenu et y effectuer des recherches.
     
@@ -140,9 +140,9 @@ Il existe deux façons d'enregistrer le contenu de la boîte aux lettres de l'an
 
 Au cours de cette étape, vous allez affecter l'adresse de courrier de l'ancien employé à un autre employé, ou [convertir la boîte aux lettres de l'utilisateur en boîte aux lettres partagée](../email/convert-user-mailbox-to-shared-mailbox.md) que vous avez créée. 
   
-- La création d'une boîte aux lettres partagée est la solution la plus économique car aucune licence payante n'est requise **tant que la boîte aux lettres ne dépasse pas les 50 Go**. Au-delà de 50 Go, vous devrez acheter une licence. 
+- Creating a shared mailbox is the less expensive way to go because you won't have to pay for a license **as long as the mailbox is smaller than 50GB**. Over 50GB and you'll need to assign a license to it. 
     
-- Si vous convertissez la boîte aux lettres en boîte aux lettres partagée, les anciens courriers seront également disponibles. Ceux-ci peuvent occuper beaucoup d'espace.
+- If you convert the mailbox to a shared mailbox, all the old email will be available, too. This can take up a lot of space.
     
 - Si vous transférez le courrier, seuls les  *nouveaux*  messages adressés à l'ancien employé seront envoyés à l'employé actuel. 
     
@@ -153,15 +153,15 @@ Au cours de cette étape, vous allez affecter l'adresse de courrier de l'ancien 
 
 ::: moniker range="o365-worldwide"  
 
-1. Dans le Centre d’administration, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utilisateurs actifs</a>.
+1. Dans le Centre d’administration, accédez à la page **Utilisateurs >** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utilisateurs actifs</a>.
 
 2. Sélectionnez le nom de l’employé que vous voulez bloquer, puis sélectionnez l’onglet **courrier** .
 
 3. Sous **transfert du courrier**, sélectionnez **gérer le transfert du courrier**.
 
-4. Activez l'option **Transférer tous les messages envoyés à cette boîte aux lettres**. Dans le champ **dresse de transfert**, tapez l'adresse de courrier de l'employé actuel (ou de la boîte aux lettres partagée) qui va recevoir le courrier. 
+4. Turn on **Forward all email sent to this mailbox**. In the **Forwarding address** box, type the email address of the current employee (or shared mailbox) who's going to get the email. 
   
-5. Cliquez sur **Enregistrer**. 
+5. Sélectionnez **Enregistrer**. 
     
 6. Souvenez-vous que vous ne devez pas supprimer le compte de l'ancien employé.
  
@@ -169,15 +169,15 @@ Au cours de cette étape, vous allez affecter l'adresse de courrier de l'ancien 
 
 ::: moniker range="o365-germany"
 
-1. Dans le Centre d’administration, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Utilisateurs actifs</a>.
+1. Dans le Centre d’administration, accédez à la page **Utilisateurs >** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Utilisateurs actifs</a>.
 
 2. Sélectionnez l’employé que vous voulez bloquer et développez **paramètres de messagerie**.
 
 3. En regard de **transfert du courrier**, sélectionnez **modifier**.
 
-4. Activez l'option **Transférer tous les messages envoyés à cette boîte aux lettres**. Dans le champ **dresse de transfert**, tapez l'adresse de courrier de l'employé actuel (ou de la boîte aux lettres partagée) qui va recevoir le courrier. 
+4. Turn on **Forward all email sent to this mailbox**. In the **Forwarding address** box, type the email address of the current employee (or shared mailbox) who's going to get the email. 
   
-5. Cliquez sur **Enregistrer**. 
+5. Sélectionnez **Enregistrer**. 
     
 6. Souvenez-vous que vous ne devez pas supprimer le compte de l'ancien employé.
 
@@ -185,15 +185,15 @@ Au cours de cette étape, vous allez affecter l'adresse de courrier de l'ancien 
 
 ::: moniker range="o365-21vianet"
 
-1. Dans le Centre d’administration, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Utilisateurs actifs</a>.
+1. Dans le Centre d’administration, accédez à la page **Utilisateurs >** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Utilisateurs actifs</a>.
 
 2. Sélectionnez l’employé que vous voulez bloquer et développez **paramètres de messagerie**.
 
 3. En regard de **transfert du courrier**, sélectionnez **modifier**.
 
-4. Activez l'option **Transférer tous les messages envoyés à cette boîte aux lettres**. Dans le champ **dresse de transfert**, tapez l'adresse de courrier de l'employé actuel (ou de la boîte aux lettres partagée) qui va recevoir le courrier. 
+4. Turn on **Forward all email sent to this mailbox**. In the **Forwarding address** box, type the email address of the current employee (or shared mailbox) who's going to get the email. 
   
-5. Cliquez sur **Enregistrer**. 
+5. Sélectionnez **Enregistrer**. 
     
 6. Souvenez-vous que vous ne devez pas supprimer le compte de l'ancien employé.
 
@@ -215,9 +215,9 @@ Si votre ancien employé disposait d'un téléphone fourni par l'organisation, v
     
 5. Sur la page Détails de l' **appareil mobile** , sous **appareils mobiles**, sélectionnez l’appareil mobile, sélectionnez Réinitialiser l’effacement de **données** ![ ](../../media/1c113a36-53cb-4974-884f-3ecd9535506e.png) , puis **bloquer**. 
     
-6. Cliquez sur **Enregistrer**. 
+6. Sélectionnez **Enregistrer**. 
     
-    **Conseil**: veillez à supprimer l'utilisateur du service Blackberry Enterprise Service local, ou à le désactiver. Vous devez également désactiver les appareils Blackberry de l'utilisateur. Reportez-vous au guide d'administration des services Blackberry Business Cloud Services pour consulter les étapes spécifiques relatives à la désactivation de l'utilisateur. 
+    **Tip**: Be sure you remove or disable the user from your on-premises Blackberry Enterprise Service. You should also disable any Blackberry devices for the user. Refer to the Blackberry Business Cloud Services Administration Guide if you need specific steps on how to disable the user. 
     
 ## <a name="block-a-former-employees-access-to-microsoft-365-data"></a>Bloquer l’accès d’un ancien employé aux données Microsoft 365
 <a name="bkmk_block"> </a>
@@ -228,7 +228,7 @@ Si votre ancien employé disposait d'un téléphone fourni par l'organisation, v
 
 ::: moniker range="o365-worldwide"
 
-1. Dans le Centre d’administration, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utilisateurs actifs</a>.
+1. Dans le Centre d’administration, accédez à la page **Utilisateurs >** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utilisateurs actifs</a>.
 
 2. Sélectionnez le nom de l’employé que vous voulez bloquer, puis sous le nom de l’utilisateur, sélectionnez le symbole de **bloquer cet utilisateur**.
 
@@ -238,7 +238,7 @@ Si votre ancien employé disposait d'un téléphone fourni par l'organisation, v
 
 ::: moniker range="o365-germany"
 
-1. Dans le Centre d’administration, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Utilisateurs actifs</a>.
+1. Dans le Centre d’administration, accédez à la page **Utilisateurs >** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Utilisateurs actifs</a>.
 
 2. Sélectionnez l’employé que vous voulez bloquer, puis sélectionnez bloquer la **connexion**.
 
@@ -248,7 +248,7 @@ Si votre ancien employé disposait d'un téléphone fourni par l'organisation, v
 
 ::: moniker range="o365-21vianet"
 
-1. Dans le Centre d’administration, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Utilisateurs actifs</a>.
+1. Dans le Centre d’administration, accédez à la page **Utilisateurs >** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Utilisateurs actifs</a>.
 
 2. Sélectionnez l’employé que vous voulez bloquer, puis sélectionnez bloquer la **connexion**.
 
@@ -279,7 +279,7 @@ Lorsque vous effectuez cette opération, toutes les données de cet utilisateur 
 
 ::: moniker range="o365-worldwide"
 
-1. Dans le Centre d’administration, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utilisateurs actifs</a>.
+1. Dans le Centre d’administration, accédez à la page **Utilisateurs >** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utilisateurs actifs</a>.
 
 2. Sélectionnez le nom de l’employé que vous voulez bloquer, puis sélectionnez l’onglet **licences et applications** .
 
@@ -289,7 +289,7 @@ Lorsque vous effectuez cette opération, toutes les données de cet utilisateur 
 
 ::: moniker range="o365-germany"
 
-1. Dans le Centre d’administration, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Utilisateurs actifs</a>.
+1. Dans le Centre d’administration, accédez à la page **Utilisateurs >** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Utilisateurs actifs</a>.
 
 2. Sélectionnez l’employé que vous voulez bloquer, puis en regard de **licences de produit**, sélectionnez **modifier**.
 
@@ -299,7 +299,7 @@ Lorsque vous effectuez cette opération, toutes les données de cet utilisateur 
 
 ::: moniker range="o365-21vianet"
 
-1. Dans le Centre d’administration, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Utilisateurs actifs</a>.
+1. Dans le Centre d’administration, accédez à la page **Utilisateurs >** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Utilisateurs actifs</a>.
 
 2. Sélectionnez l’employé que vous voulez bloquer, puis en regard de **licences de produit**, sélectionnez **modifier**.
 
@@ -340,20 +340,20 @@ Pour plus d’informations sur la gestion des licences utilisateur pour Microsof
 ## <a name="how-the-deleted-employee-account-affects-skype-for-business"></a>Comment le compte supprimé d'un employé affecte Skype Entreprise
 <a name="bkmk_remove"> </a>
 
-Lorsque vous supprimez une licence d'utilisateur d'Office 365, le numéro d'appel PSTN associé à l'utilisateur est libéré. Vous pouvez l'assigner à un autre utilisateur.
+When you remove a user's license from Office 365, the PSTN calling number associated with the user will be released. You can assign it to another user.
   
-Si l'utilisateur appartient à un groupe de files d'attente, il ne sera plus une cible viable des agents de la file d'attente d'appels. Nous recommandons donc de supprimer également l'utilisateur des groupes associés à la file d'attente d'appels. 
+If the user belongs to a queue group, they will no longer be a viable target of the call queue agents. So, we recommend also removing the user from the groups associated with the call queue. 
   
 ## <a name="delete-a-former-employees-user-account"></a>Supprimer le compte d'utilisateur d'un ancien employé
 <a name="bkmk_delete"> </a>
 
 Une fois que vous avez enregistré et consulté les données utilisateur de l'ancien employé, vous pouvez supprimer le compte de l'ancien employé.
   
-Ne supprimez pas le compte si vous avez configuré le transfert de courrier ou si vous l'avez converti en boîte aux lettres partagée. Les deux ont besoin du compte pour ancrer le transfert ou la boîte aux lettres partagée.
+Don't delete the account if you've set up email forwarding or converted it to a shared mailbox. Both need the account to anchor the forwarding or shared mailbox.
 
 ::: moniker range="o365-worldwide"
 
-1. Dans le Centre d’administration, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utilisateurs actifs</a>.
+1. Dans le Centre d’administration, accédez à la page **Utilisateurs >** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utilisateurs actifs</a>.
 
 2. Sélectionnez le nom de l’employé que vous souhaitez supprimer.
 
@@ -363,7 +363,7 @@ Ne supprimez pas le compte si vous avez configuré le transfert de courrier ou s
 
 ::: moniker range="o365-germany"
 
-1. Dans le Centre d’administration, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Utilisateurs actifs</a>.
+1. Dans le Centre d’administration, accédez à la page **Utilisateurs >** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Utilisateurs actifs</a>.
 
 2. Sélectionnez le nom de l’employé que vous souhaitez supprimer.
 
@@ -373,7 +373,7 @@ Ne supprimez pas le compte si vous avez configuré le transfert de courrier ou s
 
 ::: moniker range="o365-21vianet"
 
-1. Dans le Centre d’administration, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Utilisateurs actifs</a>.
+1. Dans le Centre d’administration, accédez à la page **Utilisateurs >** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Utilisateurs actifs</a>.
 
 2. Sélectionnez le nom de l’employé que vous souhaitez supprimer.
 
@@ -381,7 +381,7 @@ Ne supprimez pas le compte si vous avez configuré le transfert de courrier ou s
 
 ::: moniker-end
 
-Lorsque vous supprimez un utilisateur, le compte devient inactif pendant 30 jours environ. Vous disposez de cette durée pour restaurer le compte avant sa suppression définitive.
+When you delete a user, the account becomes inactive for approximately 30 days. You have until then to restore the account before it is permanently deleted.
   
 ### <a name="does-your-organization-use-active-directory"></a>Votre organisation utilise Active Directory ?
 
@@ -400,8 +400,8 @@ Voici les informations sur la suppression de l'accès d'un employé au courrier 
 |:-----|:-----|
 |**Ce que vous pouvez faire** <br/> |**Procédure à suivre** <br/> |
 |Clôturer une session (par exemple, Outlook sur le web, Outlook, Exchange Active Sync, etc.) et forcer à ouvrir une nouvelle session  <br/> |Réinitialiser le mot de passe  <br/> |
-|Clôturer une session et bloquer les sessions suivantes (pour tous les protocoles)  <br/> |Désactivez le compte. Par exemple (dans le centre d'administration Exchange ou à l'aide de PowerShell) :  <br/>  `Set-Mailbox user@contoso.com -AccountDisabled:$true` <br/> |
-|Clôturer la session pour un protocole particulier (par exemple, ActiveSync)  <br/> |Désactivez le protocole. Par exemple (dans le centre d'administration Exchange ou à l'aide de PowerShell) :  <br/>  `Set-CASMailbox user@contoso.com -ActiveSyncEnabled:$false` <br/> |
+|Clôturer une session et bloquer les sessions suivantes (pour tous les protocoles)  <br/> |Disable the account. For example (in the Exchange admin center or using PowerShell):  <br/>  `Set-Mailbox user@contoso.com -AccountDisabled:$true` <br/> |
+|Clôturer la session pour un protocole particulier (par exemple, ActiveSync)  <br/> |Disable the protocol. For example (in the Exchange admin center or using PowerShell):  <br/>  `Set-CASMailbox user@contoso.com -ActiveSyncEnabled:$false` <br/> |
    
 Les opérations qui précèdent peuvent être effectuées à 3 endroits :
   
@@ -414,9 +414,9 @@ Les opérations qui précèdent peuvent être effectuées à 3 endroits :
    
 ### <a name="how-to-get-fastest-response-for-account-termination"></a>Comment obtenir une réponse plus rapide à une demande de clôture de compte
 
- **Plus rapide**: utilisez le centre d'administration Exchange (avec PowerShell) ou le centre d'administration Azure Active Directory. Dans un environnement local, la synchronisation de la modification via DirSync peut prendre plusieurs heures. 
+ **Fastest**: Use the Exchange admin center (use PowerShell) or Azure Active Directory admin center. In an on-premises environment, it can take several hours to sync the change through DirSync. 
   
- **Plus rapide pour un utilisateur ayant une présence locale et dans le centre de données Exchange**: clôturez la session via le centre d'administration Azure Active Directory/Exchange ET apportez la modification aussi dans l'environnement local. À défaut, la modification dans le centre d'administration Azure Active Directory/Exchange est remplacée par DirSync. 
+ **Fastest for a user with presence on-premises and in the Exchange Datacenter**: Terminate the session using Azure Active Directory admin center/Exchange admin center AND make the change in the on-premises environment as well. Otherwise, the change in Azure Active Directory admin center/Exchange admin center will be overwritten by DirSync. 
   
 ## <a name="related-articles"></a>Articles connexes
 

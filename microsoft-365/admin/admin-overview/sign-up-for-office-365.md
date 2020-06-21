@@ -27,12 +27,12 @@ search.appverid:
 ms.assetid: 9b23c065-eef9-4bf7-acf5-127eb46d5e67
 ROBOTS: NOINDEX
 description: 'Découvrez ce que vous devez savoir avant de passer par le processus d’inscription pour Office 365. '
-ms.openlocfilehash: 3b3212eeb5e95d4be24029a78f9af4d1b02931ce
-ms.sourcegitcommit: a418195dc11e6251ae37e788c102bbaa7087e44e
+ms.openlocfilehash: dd374cd12f4e3a041869d17157e7198445f99e69
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "44579168"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780516"
 ---
 # <a name="how-to-sign-up---admin-help"></a>Comment s’inscrire à l’aide de l’administrateur
 
@@ -70,7 +70,7 @@ Visionnez une courte vidéo sur le choix d’un plan Microsoft 365 pour les entr
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/906be77d-ded6-48fb-a25f-da110f787282]
 
-Si vous avez trouvé cette vidéo utile, consultez les [séries de formations complètes pour les petites entreprises et les nouveaux utilisateurs de Microsoft 365](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
+Si vous avez trouvé cette vidéo utile, consultez les [séries de formations complètes pour les petites entreprises et les nouveaux utilisateurs de Microsoft 365](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
 
 Vous avez besoin d'aide pour faire votre choix ? Des conseillers techniques sont disponibles pour répondre à vos questions. Nous allons simplement [comparer tous les produits](https://products.office.com/compare-all-microsoft-office-products?tab=2) et choisir l’une des options de support de contact dans la partie gauche de la page.
   
@@ -115,9 +115,9 @@ Vous n’avez pas besoin d’annuler votre version d’évaluation. Si vous n’
 
 - **Adresse et informations de contact pour votre abonnement :**
 
-  - **Pays/région** dans lequel les services seront utilisés. Vous ne **pourrez pas** modifier ces informations par la suite, même dans le cadre du processus d'inscription. Vous devrez réexécuter l'Assistant d'inscription.
+  - **Country** where the services will be used. You **won't** be able to change this later, even during the sign up process; you'll have to re-start the sign up wizard.
 
-  - **Adresse de courrier** et **numéro de téléphone** pour nous permettre de vous contacter le cas échéant en relation avec votre abonnement. Par exemple, si vous oubliez votre mot de passe, ces informations nous permettent de vous envoyer un mot de passe temporaire. Les informations de facturation sont également envoyées à l'adresse de courrier que vous spécifiez.
+  - **Email** and **phone number** so we can contact you if needed about your subscription. For example, if you forget your password, we would use this information to send you a temporary one. We also send your billing information to the email address you specify.
 
     > [!NOTE]
     > L’adresse de messagerie que vous entrez ici est différente de votre adresse de messagerie Microsoft 365 (votre nom de connexion, ci-dessous). Comme nous envoyons également les informations de facturation à cette adresse, nous vous recommandons d'utiliser une adresse de courrier pouvant recevoir les courriers professionnels.
@@ -137,4 +137,4 @@ Vous n’avez pas besoin d’annuler votre version d’évaluation. Si vous n’
 
 ## <a name="see-also"></a>Voir aussi
 
-[Vidéos de formation Microsoft 365 Entreprise](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[Vidéos de formation Microsoft 365 Entreprise](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

@@ -10,13 +10,15 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
+ms.custom:
+- seo-marvel-apr2020
 description: Les administrateurs peuvent en savoir plus sur la rubrique Fix sender Domain Insight dans le tableau de bord du flux de messagerie dans le centre de sécurité & Compliance Center.
-ms.openlocfilehash: a416b4d15ff52a611f00a88de8440c749ff08ad3
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: c4cf4a87ad770325ca6ad2f0b87ac8ce52c345c2
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635171"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818830"
 ---
 # <a name="fix-sender-domain-insight"></a>Informations sur la correction du domaine de l’expéditeur
 
@@ -28,7 +30,7 @@ Microsoft 365 nécessite des messages envoyés à partir d’environnements de m
 
 - Dans votre configuration, l’une des affirmations suivantes est vraie :
 
-  - Le domaine de messagerie de l’expéditeur est enregistré dans votre organisation. Pour plus d’informations, consultez la rubrique ajouter des domaines dans Office 365.
+  - Le domaine de messagerie de l’expéditeur est enregistré dans votre organisation. Pour plus d’informations, consultez l’article Ajouter un domaine à Office 365.
 
   - Votre serveur de messagerie local est configuré pour utiliser un certificat pour envoyer un message électronique à Microsoft 365, le certificat contient ou correspond exactement à un nom de domaine que vous avez enregistré dans Microsoft 365, et vous avez créé un connecteur basé sur un certificat dans Microsoft 365 avec ce domaine. 
 
@@ -46,6 +48,6 @@ Vous verrez le connecteur entrant qui a été utilisé pour livrer les messages 
 
 ![Afficher des exemples d’ID de message dans la fenêtre Fix sender Domain Insight](../../media/sender-domain-view-sample-message-ids.png)
 
-## <a name="see-also"></a>Voir également
+## <a name="related-topics"></a>Voir aussi
 
 Pour plus d’informations sur les autres flux de messagerie dans le tableau de bord de flux de messagerie, voir [mail Flow Insights in the Security & Compliance Center](mail-flow-insights-v2.md).

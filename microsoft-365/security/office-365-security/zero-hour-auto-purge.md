@@ -21,16 +21,16 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Les administrateurs peuvent découvrir comment la suppression automatique des heures zéro peut déplacer rétroactivement les messages remis dans une boîte aux lettres Exchange Online vers le dossier de courrier indésirable ou la mise en quarantaine qui se trouve rétroactivement comme courrier indésirable ou hameçonnage.
-ms.openlocfilehash: 643063139f5d65b0271fd14ee5a2d1ca1f42ad1a
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 612ef45194fbf70ef89eee0f455b2d4d8781247f
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208439"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44819423"
 ---
 # <a name="zero-hour-auto-purge-zap-in-exchange-online"></a>Purge automatique avec zéro heure (ZAP) dans Exchange Online
 
-## <a name="overview"></a>Vue d'ensemble
+## <a name="basic-features-of-zap"></a>Fonctionnalités de base de ZAP
 
 Dans les organisations Microsoft 365 avec des boîtes aux lettres dans Exchange Online, la fonction de purge automatique (ZAP) zéro heure est une fonctionnalité de protection de la messagerie qui détecte rétroactivement et neutralise les messages malveillants, de courrier indésirable ou de programmes malveillants qui ont déjà été remis aux boîtes aux lettres Exchange Online.
 
@@ -80,7 +80,7 @@ Pour plus d’informations sur la configuration des règles de filtrage du courr
 
 ### <a name="zap-considerations-for-office-365-advanced-threat-protection-office-365-atp"></a>Considérations relatives à l’ZAP pour Office 365 protection avancée contre les menaces (Office 365 ATP)
 
-ZAP ne met pas en quarantaine les messages qui se trouvent dans le processus d’analyse de [remise dynamique](dynamic-delivery-and-previewing.md) , ou où le filtrage des programmes malveillants a déjà remplacé la pièce jointe par le fichier **texte. txt de l’alerte anti-programme malveillant** . Si un signal de courrier indésirable ou de courrier indésirable est reçu pour ces types de messages et que le verdict de filtrage dans la stratégie de blocage du courrier indésirable est défini de façon à effectuer une action sur le message (déplacer vers le courrier indésirable, rediriger, supprimer, mettre en quarantaine), ZAP utilise l’action « déplacer vers courrier indésirable »
+ZAP ne met pas en quarantaine les messages qui se trouvent dans le processus d’analyse de [remise dynamique](dynamic-delivery-and-previewing.md) , ou où le filtrage des programmes malveillants a déjà remplacé la pièce jointe par le fichier d' **alerte de programme malveillant Text.txt** . Si un signal de courrier indésirable ou de courrier indésirable est reçu pour ces types de messages et que le verdict de filtrage dans la stratégie de blocage du courrier indésirable est défini de façon à effectuer une action sur le message (déplacer vers le courrier indésirable, rediriger, supprimer, mettre en quarantaine), ZAP utilise l’action « déplacer vers courrier indésirable »
 
 ## <a name="how-to-see-if-zap-moved-your-message"></a>Comment savoir si la méthode ZAP a déplacé votre message
 
@@ -103,10 +103,6 @@ Les expéditeurs approuvés, les règles de flux de messagerie ou le blocage et 
 ### <a name="what-if-a-message-is-moved-to-another-folder-eg-inbox-rules"></a>Que se passe-t-il si un message est déplacé vers un autre dossier (par exemple, des règles de boîte de réception) ?
 
 L’application ZAP fonctionne toujours tant que le message n’a pas été supprimé ou que l’action même ou renforcée n’a pas encore été appliquée. Par exemple, si la stratégie de hameçonnage est définie sur quarantaine et que l’utilisateur ou l’administrateur a déjà un courrier indésirable du courrier, la mise en quarantaine exécute l’action de mise en quarantaine du fichier.
-
-### <a name="does-zap-change-the-message-header"></a>L’en-tête de message est-il modifié par ZAP ?
-
-Une action ZAP n’effectue aucune modification dans l’en-tête du message.
 
 ### <a name="how-does-zap-affect-mailboxes-on-hold"></a>Comment ZAP affecte-t-il les boîtes aux lettres en conservation ?
 

@@ -15,17 +15,19 @@ search.appverid:
 ms.assetid: fe0b9b8f-faa9-44ff-8095-4d1b2f507b74
 ms.collection:
 - M365-security-compliance
+ms.custom:
+- seo-marvel-apr2020
 description: Utilisez le nouveau tableau de bord de sécurité pour consulter l’état de protection contre les menaces d’Office 365, et afficher et agir sur les alertes de sécurité.
-ms.openlocfilehash: 6aedc0e499a489d7526737700ecc76deab9e6e32
-ms.sourcegitcommit: 584e2e9db8c541fe32624acdca5e12ee327fdb63
+ms.openlocfilehash: 3df48685e8068fd80baa4952753a1925fb237422
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44679131"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44819447"
 ---
 # <a name="security-dashboard"></a>Tableau de bord de sécurité
 
-## <a name="overview"></a>Vue d’ensemble
+## <a name="basic-functions-and-how-to-open-security-dashboard"></a>Fonctions de base et comment ouvrir le tableau de bord de sécurité
 
 Le [Centre de sécurité & conformité](../../compliance/go-to-the-securitycompliance-center.md) permet à votre organisation de gérer la protection et la conformité des données. En supposant que vous disposez des autorisations nécessaires, le tableau de bord de sécurité vous permet d’examiner votre statut de protection contre les menaces, ainsi que d’afficher et d’agir sur les alertes de sécurité.
 
@@ -116,7 +118,7 @@ Pour afficher ou accéder au widget courrier électronique envoyé et reçu, vou
 
 Pour afficher ou accéder au widget alertes de gestion des menaces récentes, vous devez disposer des autorisations pour afficher les alertes. Pour en savoir plus, consultez la rubrique [autorisations RBAC requises pour afficher les alertes](../../compliance/alert-policies.md#rbac-permissions-required-to-view-alerts).
 
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Voir aussi
 
 [Afficher les rapports de sécurité de courrier dans le centre de sécurité et conformité](view-email-security-reports.md)
 

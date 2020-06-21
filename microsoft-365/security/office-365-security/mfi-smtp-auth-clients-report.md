@@ -10,13 +10,15 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
+ms.custom:
+- seo-marvel-apr2020
 description: Les administrateurs peuvent en savoir plus sur le rapport clients d’authentification SMTP dans le tableau de bord de flux de messagerie dans le centre de sécurité & conformité.
-ms.openlocfilehash: e80ee36fd7e94cc4dc2791f71ae594f0182b4269
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 90d008bf775c692431fb5b832652ceb97f9fd760
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42082612"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818818"
 ---
 # <a name="smtp-auth-clients-report"></a>Rapport de clients d’authentification SMTP
 
@@ -50,6 +52,6 @@ Vous pouvez également télécharger une version plus détaillée du rapport en 
 
 ![Table des détails pour l’utilisation de TLS dans le rapport clients SMTP AUTH](../../media/smtp-auth-clients-report-details-tls-usage.png)
 
-## <a name="see-also"></a>Voir aussi
+## <a name="related-topics"></a>Voir aussi
 
 Pour plus d’informations sur les autres flux de messagerie dans le tableau de bord de flux de messagerie, voir [mail Flow Insights in the Security & Compliance Center](mail-flow-insights-v2.md).

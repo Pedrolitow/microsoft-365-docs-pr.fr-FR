@@ -1,5 +1,5 @@
 ---
-title: Afficher les rapports de sécurité de messagerie dans le centre de sécurité & conformité, les utilisateurs compromis, le chiffrement, l’état de protection contre les menaces, les détections de programmes malveillants, les programmes malveillants principaux, la détection du courrier indésirable, les messages électroniques envoyés et reçus, les messages signalés par l’utilisateur
+title: Afficher les rapports de sécurité de courrier dans le centre de sécurité et conformité
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -17,12 +17,13 @@ ms.assetid: 3a137e28-1174-42d5-99af-f18868b43e86
 ms.collection:
 - M365-security-compliance
 description: Découvrez comment rechercher et utiliser des rapports de sécurité de messagerie pour votre organisation. Les rapports de sécurité de messagerie sont disponibles dans le centre de sécurité & conformité.
-ms.openlocfilehash: 6fc77696625fb11d4ebfc6f339939c751c7a45f2
-ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: dfee1fa2c6e515bfc10ed7a633584c54763fdec4
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44613455"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44819460"
 ---
 # <a name="view-email-security-reports-in-the-security--compliance-center"></a>Afficher les rapports de sécurité de courrier dans le centre de sécurité et conformité
 
@@ -251,7 +252,7 @@ Pour en savoir plus, consultez les ressources suivantes :
 
 Si vous ne voyez pas de données dans vos rapports, vérifiez que vos stratégies sont correctement configurées. Pour en savoir plus, consultez la rubrique [Protégez-vous contre les menaces dans Microsoft 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats).
 
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Voir aussi
 
 [Protection contre le courrier indésirable de Microsoft 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/anti-spam-and-anti-malware-protection)
 

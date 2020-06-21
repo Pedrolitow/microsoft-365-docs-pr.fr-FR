@@ -15,19 +15,21 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: d95879816193eb00881835b63f2aae3e232ddfb7
-ms.sourcegitcommit: cc3b64a91e16ccdaa9c338b9a9056dbe3963ba9e
+ms.openlocfilehash: 4fc56caa9be59d1a29032ee6e4f32e50918294fe
+ms.sourcegitcommit: 3119b2246001ba06af8264508785352dfb894166
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "42569068"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44820547"
 ---
 # <a name="whats-new-in-microsoft-threat-protection"></a>Nouveautés de la protection Microsoft contre les menaces
 
 Les fonctionnalités suivantes sont généralement disponibles (GA) dans la dernière version de Microsoft Threat Protection.
 
-Flux RSS : recevez une notification lorsque cette page est mise à jour en copiant et en collant l’URL suivante dans votre lecteur de flux :`https://docs.microsoft.com/api/search/rss?search=%22Lists+the+new+features+and+functionality+in+Microsoft+Threat+Protection%22&locale=en-us`
-
+Flux RSS : recevez une notification lorsque cette page est mise à jour en copiant et en collant l’URL suivante dans votre lecteur de flux :
+```http
+https://docs.microsoft.com/api/search/rss?search=%22Lists+the+new+features+and+functionality+in+Microsoft+Threat+Protection%22&locale=en-us
+```
 ## <a name="february-2020"></a>Février 2020
 - [Incidents](incidents-overview.md) <br> Savoir exactement où une attaque a commencé et d’autres informations pour vous aider à déterminer l’étendue de l’attaque.
 - [Examen et réponse automatisés](mtp-autoir.md) <br> AIR permet à l’équipe en charge des opérations de sécurité d’augmenter considérablement la capacité de votre organisation à gérer les alertes et incidents de sécurité.

@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 ms.assetid: eb8244aa-a302-481a-b2b5-d34e88b18ec7
 description: Découvrez comment déplacer vos fichiers professionnels personnels et vos fichiers d’entreprise sensibles vers OneDrive entreprise en quelques étapes simples.
-ms.openlocfilehash: ec225eb43d79bebaa7035178d4d1751c58149e7a
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 561c9dee1080a50dea695f136df10be8e5d52959
+ms.sourcegitcommit: e5bc49f0a25954d008b6cc09c2b98bb7bfe1aa2f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44401359"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44785909"
 ---
 # <a name="move-files-to-onedrive-for-business"></a>Déplacer des fichiers vers OneDrive Entreprise
 
@@ -37,7 +37,7 @@ Regardez une brève vidéo sur le transfert de fichiers vers OneDrive entreprise
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/d74b083c-1f44-43ea-8a14-2e1fc600b341] 
 
-Si vous avez trouvé cette vidéo utile, consultez les [séries de formations complètes pour les petites entreprises et les nouveaux utilisateurs de Microsoft 365](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
+Si vous avez trouvé cette vidéo utile, consultez les [séries de formations complètes pour les petites entreprises et les nouveaux utilisateurs de Microsoft 365](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
 
 
 ## <a name="move-files-to-onedrive-for-business"></a>Déplacer des fichiers vers OneDrive Entreprise
@@ -50,8 +50,8 @@ Si un utilisateur possède un ordinateur sur lequel sont enregistrés de nombreu
     
 3. Sélectionnez **Charger**![Upload](../media/d9b963b8-10af-42e2-953d-360301b83d3c.png) dans la barre de menus et accédez aux fichiers que vous voulez enregistrer. 
     
-Pour transférer le profil utilisateur et les fichiers importants, vous pouvez également utiliser un outil tiers, tels que ForensiT. Vous devez également charger les fichiers obtenus dans OneDrive Entreprise.
+To transfer the user profile and important files, you can also use a third-party tool, such as ForensiT. You should upload the resulting files in OneDrive for Business also.
   
 ## <a name="for-more-on-setting-up-and-using-microsoft-365-for-business"></a>Pour en savoir plus sur la configuration et l’utilisation de Microsoft 365 pour les entreprises
 
-[Vidéos de formation Microsoft 365 Entreprise](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[Vidéos de formation Microsoft 365 Entreprise](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

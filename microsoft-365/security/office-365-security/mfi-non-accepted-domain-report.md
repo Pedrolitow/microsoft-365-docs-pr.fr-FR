@@ -10,13 +10,15 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
+ms.custom:
+- seo-marvel-apr2020
 description: Les administrateurs peuvent en savoir plus sur le rapport de domaine non accepté dans le tableau de bord de flux de messagerie dans le centre de sécurité & conformité.
-ms.openlocfilehash: 64bf572db90b44512ca72aec5733a99373d8f53f
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: a630d5b9674dbb136ecc54b23acd4408534d6fbc
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635279"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44819520"
 ---
 # <a name="non-accepted-domain-report"></a>Rapport de domaine non accepté
 
@@ -34,6 +36,6 @@ Lorsque vous sélectionnez une ligne dans le tableau, un menu volant vous indiqu
 
 ![Sélectionner une ligne dans le tableau des détails dans le rapport de domaine non accepté](../../media/non-accepted-domain-report-select-row-in-table.png)
 
-## <a name="see-also"></a>Voir également
+## <a name="related-topics"></a>Voir aussi
 
 Pour plus d’informations sur les autres flux de messagerie dans le tableau de bord de flux de messagerie, voir [mail Flow Insights in the Security & Compliance Center](mail-flow-insights-v2.md).

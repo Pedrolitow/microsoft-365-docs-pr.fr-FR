@@ -15,12 +15,12 @@ search.appverid:
 ms.assetid: 887c710b-0ec6-4ff0-8065-5f05f74afef3
 description: Les administrateurs peuvent en savoir plus sur l’utilisation de S/MIME (Secure/Multipurpose Internet Mail Extensions) dans Exchange Online pour chiffrer les messages électroniques et les signer numériquement.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: cf9859240914e078eb62b0e914f8de79cf647f2d
-ms.sourcegitcommit: 6007dbe2cf758c683de399f94023122c678bcada
+ms.openlocfilehash: 95bbab5161f9e4133223a247f8937c68f29c0590
+ms.sourcegitcommit: 7a59d83a8660c2344ebdb92e0ea0171c9c2d9498
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "44224672"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44811013"
 ---
 # <a name="smime-for-message-signing-and-encryption-in-exchange-online"></a>S/MIME pour la signature et le chiffrement des messages dans Exchange Online
 
@@ -46,12 +46,12 @@ Les étapes à suivre pour configurer S/MIME avec chacun de ces points de termin
 
 3. Pour les organisations Exchange Online, synchronisez les certificats utilisateur entre AD DS et Azure Active Directory à l’aide d’une version appropriée d’Azure AD Connect. Ces certificats seront ensuite synchronisés à partir d’Azure Active Directory vers l’annuaire Exchange Online et seront utilisés lors du chiffrement d’un message à un destinataire.
 
-4. Configurer une collection de certificats virtuelle afin de valider S/MIME. Ces informations sont utilisées par Outlook sur le web lorsqu'il valide la signature d'un courrier électronique et vérifie qu'il a été signé par un certificat approuvé.
+4. Set up a virtual certificate collection in order to validate S/MIME. This information is used by Outlook on the web when validating the signature of an email and ensuring that it was signed by a trusted certificate.
 
 5. Configurer le point de terminaison Outlook ou EAS de sorte qu'il utilise S/MIME.
 
 > [!NOTE]
-> Vous ne pouvez pas installer le contrôle S/MIME dans Outlook sur le Web sur Mac, iOS, Android ou d’autres appareils non-Windows. Pour plus d’informations, consultez [la rubrique chiffrer les messages à l’aide de S/MIME dans Outlook sur le Web](https://support.microsoft.com/en-us/office/encrypt-messages-by-using-s-mime-in-outlook-on-the-web-878c79fc-7088-4b39-966f-14512658f480).
+> Vous ne pouvez pas installer le contrôle S/MIME dans Outlook sur le Web sur Mac, iOS, Android ou d’autres appareils non-Windows. Pour plus d’informations, consultez [la rubrique chiffrer les messages à l’aide de S/MIME dans Outlook sur le Web](https://support.microsoft.com/office/878c79fc-7088-4b39-966f-14512658f480).
 
 ## <a name="setup-smime-with-outlook-on-the-web"></a>Configuration de S/MIME avec Outlook sur le Web
 

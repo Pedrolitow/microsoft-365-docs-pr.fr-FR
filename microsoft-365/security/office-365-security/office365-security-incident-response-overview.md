@@ -16,18 +16,20 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: Cette solution vous indique les attaques Cybersecurity les plus courantes pouvant ressembler à Microsoft 365 et comment y répondre.
-ms.openlocfilehash: 4c5713a0689dae07fe5300c04754d77912f53976
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom:
+- seo-marvel-apr2020
+ms.openlocfilehash: c6f5087799a0e3a06d0849f99e9911cf77260e1b
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634507"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818794"
 ---
 # <a name="security-incident-response"></a>Réponse aux incidents de sécurité
 
  **Résumé :** Cette solution vous indique les indicateurs pour les attaques Cybersecurity les plus courantes dans Office 365, la confirmation positive d’une attaque donnée et la façon de y répondre.
 
-## <a name="overview"></a>Vue d’ensemble
+## <a name="learn-how-to-respond-to-cyberattacks"></a>Découvrez comment répondre aux cyberattaques
 
 Tous les cyberattaques ne peuvent pas être déconsidérés. Les agresseurs cherchent constamment de nouvelles faiblesses dans votre stratégie défensive ou ils exploitent les anciens. Savoir comment reconnaître une attaque vous permet de y répondre plus rapidement, ce qui réduit la durée de l’incident de sécurité.
 
@@ -55,9 +57,9 @@ Consultez cet article tous les mois à mesure que d’autres articles seront ajo
 
 - [Réponse à un compte de messagerie compromis dans Office 365](responding-to-a-compromised-email-account.md)
 
-## <a name="secure-microsoft-365-like-a-cybersecurity-pro"></a>Sécurisation de Microsoft 365 comme un Cybersecurity Pro
+## <a name="secure-microsoft-365-like-a-cybersecurity-pro"></a>Sécuriser Microsoft 365 comme un pro de la cyber-sécurité
 
-Votre abonnement Microsoft 365 est fourni avec un ensemble de fonctionnalités de sécurité puissantes que vous pouvez utiliser pour protéger vos données et vos utilisateurs.  Utilisez la feuille de [route de sécurité microsoft 365-priorités principales pour les 30 jours, 90 jours et au-delà](security-roadmap.md) pour implémenter les meilleures pratiques recommandées par Microsoft pour la sécurisation de votre organisation Microsoft 365.
+Votre abonnement Microsoft 365 inclut un ensemble puissant de fonctionnalités de sécurité que vous pouvez utiliser pour protéger vos données et vos utilisateurs.  Utilisez la feuille de [route de sécurité microsoft 365-priorités principales pour les 30 jours, 90 jours et au-delà](security-roadmap.md) pour implémenter les meilleures pratiques recommandées par Microsoft pour la sécurisation de votre organisation Microsoft 365.
 
 - Tâches à effectuer lors des 30 premiers jours.  Elle ont un effet immédiat et n’ont qu’un faible impact négatif sur vos utilisateurs.
 

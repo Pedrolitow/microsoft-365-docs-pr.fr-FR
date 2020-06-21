@@ -10,13 +10,15 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
+ms.custom:
+- seo-marvel-apr2020
 description: Les administrateurs peuvent en savoir plus sur le rapport de carte de flux de messagerie dans le tableau de bord de flux de messagerie dans le centre de sécurité & conformité.
-ms.openlocfilehash: f5441a5c775cb9cadb6e9c631adc988f807d8592
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: b0850ee50573583f1a971d1a5dfd69f47fb70b99
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635291"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818842"
 ---
 # <a name="mail-flow-map-report"></a>Rapport carte de flux de courrier
 
@@ -30,7 +32,7 @@ Par défaut, la carte de flux de messagerie indique le modèle de flux de messag
 
 ![Flèches gauche et droite dans le widget carte de flux de messagerie](../../media/mail-flow-map-widget.png)
 
-## <a name="overview"></a>Vue d’ensemble
+## <a name="mail-flow-map-basics"></a>Notions de base des cartes de flux de messagerie
 
 Cliquez sur le widget **carte de flux de messagerie** pour accéder au rapport de carte de flux de **messagerie** . Vous trouverez ici un niveau plus granulaire du rapport, vous pouvez cliquer sur Afficher les détails de la table pour afficher des données détaillées. Vous pouvez également télécharger le rapport détaillé en cliquant sur rapport de demande.
 
@@ -50,6 +52,6 @@ Les principaux domaines expéditeur et destinataire sont répertoriés et les au
 
 Les informations connexes apparaissent sous la carte de flux de messagerie si elles sont disponibles (par exemple, l’analyse de domaine de l’expéditeur ou l’analyseur de la boucle de messagerie).
 
-## <a name="see-also"></a>Voir également
+## <a name="see-also"></a>Voir aussi
 
 Pour plus d’informations sur les autres flux de messagerie dans le tableau de bord de flux de messagerie, voir [mail Flow Insights in the Security & Compliance Center](mail-flow-insights-v2.md).

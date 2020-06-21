@@ -1,5 +1,5 @@
 ---
-title: Quelle est la différence entre courrier indésirable et message électronique en masse ?
+title: Quelle est &apos; la différence entre le courrier indésirable et le courrier électronique en masse ?
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Les administrateurs peuvent en savoir plus sur les différences entre le courrier indésirable (courrier indésirable) et le courrier électronique en masse (courrier gris) dans Exchange Online Protection (EOP).
-ms.openlocfilehash: 6936028aa7bda538f0e49429d22f28c7a78cdb36
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: c1f5ca724f7a41d9fc11ed0c93f52a79a6ecc8e5
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208451"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44819435"
 ---
 # <a name="whats-the-difference-between-junk-email-and-bulk-email-in-eop"></a>Quelle est la différence entre courrier indésirable et courrier électronique en masse dans EOP ?
 

@@ -19,13 +19,14 @@ ms.collection:
 - SPO_Content
 ms.custom:
 - seo-marvel-apr2020
+- seo-marvel-jun2020
 description: Découvrez la protection avancée contre les menaces Office 365 pour les fichiers dans SharePoint Online, OneDrive entreprise et Microsoft Teams.
-ms.openlocfilehash: 90e84f0a4393e5097fb59b93693862a21d6d9f2f
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: e4a711d6554ffcb8e291d5b2154120d078995e94
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44031447"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44815408"
 ---
 # <a name="atp-for-sharepoint-onedrive-and-microsoft-teams"></a>PACM pour SharePoint, OneDrive et Microsoft Teams
 
@@ -33,7 +34,7 @@ ms.locfileid: "44031447"
 
 Les personnes partagent régulièrement des fichiers et collaborent à l’aide de SharePoint, de OneDrive et de Microsoft Teams. Avec [Office 365 Advanced Threat Protection](office-365-atp.md) (ATP), votre organisation peut collaborer de manière plus sûre. La protection avancée contre les menaces permet de détecter et de bloquer les fichiers identifiés comme étant malveillants dans les sites d’équipe et les bibliothèques de documents.
 
-## <a name="how-it-works"></a>Fonctionnement
+## <a name="how-office-365-atp-operates"></a>Fonctionnement de la protection avancée contre les menaces Office 365
 
 Lorsqu’un fichier dans SharePoint Online, OneDrive entreprise et Microsoft teams a été identifié comme malveillant, la protection avancée contre les menaces s’intègre directement aux magasins de fichiers pour verrouiller ce fichier. L’image suivante montre un exemple de fichier malveillant détecté dans une bibliothèque.
 
@@ -63,9 +64,9 @@ Pour obtenir plus d’informations, consultez l’article [Activer Office 365 
 
 ## <a name="quarantine-in-atp-for-sharepoint-online-onedrive-for-business-and-microsoft-teams"></a>Mise en quarantaine dans la protection avancée contre les menaces pour SharePoint Online, OneDrive entreprise et Microsoft teams
 
- À compter du 2018 mai, les fonctionnalités de [mise](quarantine-email-messages.md) en quarantaine &amp; dans le centre de sécurité conformité sont étendues à la protection avancée contre les menaces pour SharePoint Online, OneDrive entreprise et Microsoft Teams.
+ À compter du 2018 mai, les fonctionnalités de [mise en quarantaine](quarantine-email-messages.md) dans le centre de sécurité &amp; conformité sont étendues à la protection avancée contre les menaces pour SharePoint Online, OneDrive entreprise et Microsoft Teams.
 
-Lorsqu’un fichier dans SharePoint Online, OneDrive entreprise ou Microsoft teams est identifié comme malveillant, outre l’ATP empêche le fichier d’être ouvert ou partagé, ce fichier est inclus dans la liste des éléments mis en quarantaine. (Dans le centre &amp; de sécurité conformité, accédez à la **Review** \> **mise en quarantaine** et au filtre **des fichiers**de la **gestion** \> des menaces.)
+Lorsqu’un fichier dans SharePoint Online, OneDrive entreprise ou Microsoft teams est identifié comme malveillant, outre l’ATP empêche le fichier d’être ouvert ou partagé, ce fichier est inclus dans la liste des éléments mis en quarantaine. (Dans la sécurité &amp; Centre de conformité, accédez **Threat management** à la mise en \> **Review** \> **quarantaine** de la vérification des menaces et filtrez les **fichiers**.)
 
 Si vous faites partie de l’équipe de sécurité Microsoft 365 de votre organisation et que vous disposez des [autorisations nécessaires dans le &amp; Centre de sécurité conformité](permissions-in-the-security-and-compliance-center.md), vous pouvez télécharger, publier, signaler et supprimer des fichiers détectés comme malveillants par la protection avancée contre les menaces à partir de la mise en quarantaine.
 

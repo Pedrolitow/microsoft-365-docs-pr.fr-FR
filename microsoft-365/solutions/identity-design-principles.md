@@ -14,12 +14,12 @@ ms.collection:
 - M365solutions
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 8b991fb6cf8f03f2ff686c89251f53f53f87a5e1
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: 99112b70715770b24c1454fbd9442d2b5b6f08ea
+ms.sourcegitcommit: 89636f35b0194986f156302fc1bb96af25d4805b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44352545"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44800130"
 ---
 # <a name="to-identity-and-beyond--one-architects-viewpoint"></a>Pour identifier et au-delà : point de vue d’un architecte
 
@@ -134,7 +134,7 @@ Si vous acceptez cette définition d’autorisation étendue, vous devez implém
 - [Azure AD Identity Protection](https://docs.microsoft.com/azure/active-directory/identity-protection/) 
 - [Azure protection avancée contre les menaces](https://docs.microsoft.com/azure-advanced-threat-protection/) (Azure ATP)
 - [Microsoft Defender-protection avancée contre les menaces](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) (Microsoft Defender ATP)
-- [Microsoft 365 protection avancée contre les menaces](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp?view=o365-worldwide) (Microsoft 365 ATP)
+- [Office 365 Advanced Threat Protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp?view=o365-worldwide) (Office 365 ATP)
 - [Sécurité des applications Cloud Microsoft](https://docs.microsoft.com/cloud-app-security/) (MCAS)
 - [Protection Microsoft contre les menaces](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-threat-protection?view=o365-worldwide) (MTP)
 - [Microsoft Intune](https://docs.microsoft.com/mem/intune/)
@@ -310,7 +310,7 @@ Le contrôle d’accès basé sur un rôle (RBAC) Azure permet une gestion des a
 
 :::image type="content" source="../media/solutions-architecture-center/identity-beyond-illustration-5.png" alt-text="vue de niveau supérieur des composants Azure pour l’administration déléguée":::
 
-Comme vous pouvez le voir dans l’image ci-dessus, de nombreux autres services doivent être considérés comme faisant partie de la conception (par exemple : [stratégies Azure](https://docs.microsoft.com/azure/governance/policy/overview), [plans ASURE](https://docs.microsoft.com/azure/governance/blueprints/overview), [groupes de gestion](https://docs.microsoft.com/azure/governance/management-groups/), etc.).
+Comme vous pouvez le voir dans l’image ci-dessus, de nombreux autres services doivent être considérés comme faisant partie de la conception (par exemple : [stratégies Azure](https://docs.microsoft.com/azure/governance/policy/overview), [projets Azure](https://docs.microsoft.com/azure/governance/blueprints/overview), [groupes de gestion](https://docs.microsoft.com/azure/governance/management-groups/), etc.).
 
 ## <a name="conclusion"></a>Conclusion
 Démarré sous forme de résumé court, terminée plus longtemps que prévu.  J’espère que vous êtes maintenant prêt à faire partie de la création d’un modèle de délégation pour votre organisation.  Cette conversation est très courante pour les clients. Il n’existe pas de modèle qui fonctionne pour tout le monde. En attendant les améliorations planifiées de l’ingénierie Microsoft avant de documenter des modèles communs, nous voyons tous les clients. En attendant, vous pouvez collaborer avec votre équipe de compte Microsoft pour organiser une visite vers le [Centre technologique Microsoft](https://www.microsoft.com/mtc)le plus proche.  Voyez-le !

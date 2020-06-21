@@ -16,14 +16,14 @@ search.appverid:
 ms.assetid: e3e95f68-36e9-4256-bcca-78fe7fe5ea5d
 ms.collection:
 - M365-security-compliance
-description: Découvrez les rapports intelligents et les informations disponibles dans le centre de sécurité et de conformité, et comment les utiliser pour afficher et explorer les données et prendre des mesures rapides.
+description: Découvrez les rapports intelligents et les informations disponibles dans le centre de sécurité &amp; conformité, et comment les utiliser pour afficher et explorer les données et prendre des mesures rapides.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: fc969dd9bbcbe049f4fcd065ef9caed51c52fac6
-ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
+ms.openlocfilehash: c5d159371ba7cd2f43cf0782ba66e71b51ca2ad1
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44617307"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44819496"
 ---
 # <a name="smart-reports-and-insights-in-the-security-amp-compliance-center"></a>Rapports intelligents et Insights dans le centre de sécurité &amp; conformité
 
@@ -55,7 +55,7 @@ Un grand nombre de rapports sont disponibles dans le centre de sécurité et de 
 |**Rapports de conformité** <br/> Rapports FedRAMP, rapports sur la gouvernance, sur les risques et sur la conformité, rapports de gestion de la sécurité de l'information ISO et rapports d'audit et d'évaluation des contrôles de la société de services.  <br/> |Dans le centre de sécurité &amp; conformité, accédez à rapports de conformité de la **garantie de service** \> **Compliance reports** . <br/> |[Planifier &amp; la conformité de la sécurité dans Office 365](../../compliance/plan-for-security-and-compliance.md) <br/> |
   
     
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Voir aussi
 
 [Surveillance et affichage des rapports dans le centre de sécurité Microsoft 365](../mtp/monitoring-and-reporting.md)
   

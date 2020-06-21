@@ -10,17 +10,19 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 3e64f99d-ac33-4aba-91c5-9cb4ca476803
+ms.custom:
+- seo-marvel-apr2020
 description: Les administrateurs peuvent utiliser le suivi des messages dans le centre de sécurité & conformité afin de déterminer ce qui s’est passé aux messages.
-ms.openlocfilehash: 816f81b2339c8edb1317dcf517c10d5b8325941d
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: cb24b9a5f5540f1858ac17b5b4ec3de0c77b47d1
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44352497"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44819339"
 ---
 # <a name="message-trace-in-the-security--compliance-center"></a>Suivi des messages dans le centre de conformité et de sécurité
 
-## <a name="overview"></a>Vue d’ensemble
+## <a name="message-trace-features"></a>Fonctionnalités de suivi des messages
 
 Le suivi des messages dans le centre de sécurité & conformité suit les messages électroniques échangés via votre organisation Exchange Online. Vous pouvez déterminer si un message a été reçu, rejeté, différé ou remis par le service. Cela indique également les actions entamées par rapport au message avant qu'il atteigne son statut final.
 
@@ -230,7 +232,7 @@ Les rapports de synthèse (terminé) disponibles sont disponibles dans la sectio
 
 - **sender_address**: adresse de messagerie de l’expéditeur (*alias*de @ *domaine*).
 
-- **Recipient_status**: état de la remise du message au destinataire. Si le message a été envoyé à plusieurs destinataires, il affiche tous les destinataires et l’état correspondant pour chacun, au format : état de l' \< *adresse de messagerie* \> ## \< *status* \> . Par exemple :
+- **Recipient_status**: état de la remise du message au destinataire. Si le message a été envoyé à plusieurs destinataires, il affiche tous les destinataires et l’état correspondant pour chacun, au format : \<*email address*\> ## \<*status*\> . Par exemple :
 
   - **# #Receive, envoyer** signifie que le message a été reçu par le service et qu’il a été envoyé à la destination prévue.
 
@@ -337,7 +339,7 @@ Une valeur de **custom_data** commençant par provient `S:SFA` de l’agent de f
 |`SFV=BLK`|Le filtrage a été ignoré et le message a été bloqué, car il provient d'un expéditeur bloqué.|
 |`SFV=SKS`|Le message a été marqué comme courrier indésirable avant d’être traité par le filtrage du courrier indésirable. Cela inclut les messages qui ont été marqués automatiquement comme étant des courriers indésirables par une règle de flux de courrier (également appelée règle de transport) et pour lesquels toutes les étapes de filtrage supplémentaires ont été contournées.|
 |`SCL=<number>`|Pour plus d'informations sur les différentes valeurs de SCL et leur signification, voir [Seuils de probabilité de courrier indésirable](spam-confidence-levels.md).|
-|`PCL=<number>`|Valeur du seuil de probabilité de courrier d'hameçonnage (PCL) du message. Ces valeurs peuvent être interprétées de la même façon que les valeurs SCL répertoriées dans [Seuils de probabilité de courrier indésirable](spam-confidence-levels.md).  |
+|`PCL=<number>`|The Phishing Confidence Level (PCL) value of the message. These can be interpreted the same way as the SCL values documented in [Spam confidence levels](spam-confidence-levels.md).|
 |`DI=SB`|L'expéditeur du message a été bloqué.|
 |`DI=SQ`|Le message a été mis en quarantaine.|
 |`DI=SD`|Le message a été supprimé.|

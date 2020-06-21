@@ -18,16 +18,16 @@ ms.collection:
 - M365-security-compliance
 description: Lorsque vous configurez vos stratégies de pièces jointes approuvées ATP, vous choisissez la remise dynamique pour éviter les retards de message et permettre aux utilisateurs de prévisualiser les pièces jointes en cours d’analyse.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 7c30803efd2dafedd6d988de5374f08bd61f7d2a
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: b22112617ecba191c7ee8d7daab0de3cde1bf8c3
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034791"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44819351"
 ---
 # <a name="dynamic-delivery-and-previewing-with-atp-safe-attachments"></a>Remise et aperçu dynamiques à l’aide de pièces jointes fiables ATP
 
-## <a name="overview"></a>Vue d'ensemble
+## <a name="basic-features-of-dynamic-delivery"></a>Fonctionnalités de base de la remise dynamique
 
 La remise dynamique est une option qui peut être sélectionnée pour [les pièces jointes sûres ATP](atp-safe-attachments.md). Lisez cet article pour en savoir plus sur la remise dynamique et les fonctionnalités d’aperçu des pièces jointes dans [les pièces jointes approuvées ATP dans Office 365](atp-safe-attachments.md).
 
@@ -80,7 +80,7 @@ Il existe certains scénarios dans lesquels la remise dynamique n’est pas pris
 
 - Dossier de recherche de boîte aux lettres d’un utilisateur en état d’erreur
 
-- Environnements dans lesquels un administrateur Exchange Online a activé Exclaimer. Pour résoudre ce message, consultez la rubrique [les messages avec des pièces jointes ne sont pas remis lorsque la remise et l’exclaimement dynamiques ATP sont utilisés](https://support.microsoft.com/help/4014438/messages-with-attachments-are-not-delivered-when-atp-dynamic-delivery)
+- Environnements dans lesquels un administrateur Exchange Online a activé Exclaimer. Pour résoudre ce message, consultez la rubrique [les messages avec des pièces jointes ne sont pas remis lorsque la remise et l’exclaimement dynamiques ATP sont utilisés](https://support.microsoft.com/help/4014438)
 
 - Messages chiffrés à l’aide de [S/MIME (Secure/Multipurpose Internet Mail Extensions)](s-mime-for-message-signing-and-encryption.md))
 
