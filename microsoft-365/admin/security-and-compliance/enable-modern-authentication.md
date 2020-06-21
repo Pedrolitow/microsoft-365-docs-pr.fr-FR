@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7dc1c01a-090f-4971-9677-f1b192d6c910
 description: Apprenez à définir des clés de Registre pour activer l’authentification moderne pour les appareils sur lesquels Microsoft Office 2013 est installé.
-ms.openlocfilehash: 8bf6f50068f1a1435897c49656823302df40235e
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 8edcedefc04d5018b8b61022c26cbe027f7c24a9
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399169"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44779964"
 ---
 # <a name="enable-modern-authentication-for-office-2013-on-windows-devices"></a>Activer l'authentification moderne pour Office 2013 sur les appareils Windows
 
@@ -36,7 +36,7 @@ ms.locfileid: "44399169"
 > [!NOTE]
 > L'authentification moderne est déjà activée pour les clients Office 2016. Vous n'avez pas besoin de définir de clés de Registre pour Office 2016. 
   
-Pour activer l'authentification moderne pour les appareils exécutant Windows (par exemple les ordinateurs portables et tablettes) et sur lesquels Microsoft Office 2013 est installé, vous devez définir les clés de Registre suivantes. Les clés doivent être définies sur chaque appareil pour lequel vous voulez activer l'authentification moderne :
+To enable modern authentication for any devices running Windows (for example on laptops and tablets), that have Microsoft Office 2013 installed, you need to set the following registry keys. The keys have to be set on each device that you want to enable for modern authentication:
   
 |**Clé de Registre**|**Type**|**Valeur** |
 |:-------|:------:|--------:|
@@ -45,7 +45,7 @@ Pour activer l'authentification moderne pour les appareils exécutant Windows (p
    
 Une fois que vous avez défini les clés de Registre, vous pouvez définir les applications de périphériques Office 2013 pour utiliser [l’authentification multifacteur (MFA)](set-up-multi-factor-authentication.md) avec Microsoft 365. 
   
-Si vous êtes actuellement connecté avec une application client, vous devez vous déconnecter et vous reconnecter pour que la modification prenne effet. Autrement, les paramètres MRU et d'itinérance ne seront pas disponibles tant que l'identité ADAL n'est pas établie.
+If you're currently signed-in with any of the client apps, you need to sign out and sign back in for the change to take effect. Otherwise, the MRU and roaming settings will be unavailable until the ADAL identity is established.
   
 ## <a name="disable-modern-authentication-on-devices"></a>Désactiver l'authentification moderne sur les appareils
 
@@ -56,7 +56,7 @@ Pour désactiver l'authentification moderne sur un appareil, définissez les cl�
 |Hkcu\software\microsoft\office\15.0\common\identity\enableadal sur |REG_DWORD|0|
    
 ## <a name="related-articles"></a>Articles connexes
-[Se connecter à Office 2013 avec une deuxième méthode de vérification](https://support.office.com/article/2b856342-170a-438e-9a4f-3c092394d3cb.aspx)
+[Se connecter à Office 2013 avec une deuxième méthode de vérification](https://support.microsoft.com/office/2b856342-170a-438e-9a4f-3c092394d3cb)
 
   
 

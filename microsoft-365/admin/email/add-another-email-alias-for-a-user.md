@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: 0b0bd900-68b1-4bf5-808b-5d240a7739f4
 description: 'Découvrez comment vous pouvez avoir plusieurs adresses de messagerie, appelées alias de messagerie, associées à votre compte Microsoft 365 pour les entreprises. '
-ms.openlocfilehash: bab4ace6d497bac8892a29c76b6f2d05c4fa018f
-ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
+ms.openlocfilehash: c0e71ef150ccf592ea4f808a5e6609e1675767a4
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/31/2020
-ms.locfileid: "44432324"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780288"
 ---
 # <a name="add-another-email-alias-for-a-user"></a>Ajouter un autre alias de courrier pour un utilisateur
 
@@ -59,7 +59,7 @@ Pour ce faire, vous devez disposer des [autorisations d’administrateur](../add
   
 ::: moniker range="o365-worldwide"
 
-1. Dans le Centre d’administration, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utilisateurs actifs</a>.
+1. Dans le Centre d’administration, accédez à la page **Utilisateurs >** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utilisateurs actifs</a>.
 
 2. Sur la page **utilisateurs actifs** , sélectionnez l’utilisateur > **gérer les alias de messagerie**. Cette option ne s’affiche pas si la personne ne dispose pas d’une licence. 
     
@@ -89,7 +89,7 @@ Pour ce faire, vous devez disposer des [autorisations d’administrateur](../add
 
 ::: moniker range="o365-germany"
     
-1. Dans le Centre d’administration, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Utilisateurs actifs</a>. 
+1. Dans le Centre d’administration, accédez à la page **Utilisateurs >** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Utilisateurs actifs</a>. 
     
     
 2. Dans la page **Utilisateurs actifs**, sélectionnez le nom de la personne à modifier.
@@ -120,7 +120,7 @@ Pour ce faire, vous devez disposer des [autorisations d’administrateur](../add
 
 ::: moniker range="o365-21vianet"
 
-1. Dans le Centre d’administration, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Utilisateurs actifs</a>. 
+1. Dans le Centre d’administration, accédez à la page **Utilisateurs >** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Utilisateurs actifs</a>. 
 
     
 2. Dans la page **Utilisateurs actifs**, sélectionnez le nom de la personne à modifier.
@@ -162,7 +162,7 @@ Si vous achetez votre abonnement auprès de GoDaddy ou d'un autre partenaire, vo
   
 ## <a name="related-articles"></a>Articles connexes
 
-[Envoyer des courriers à partir d'une adresse différente](https://support.office.com/article/ccba89cb-141c-4a36-8c56-6d16a8556d2e.aspx)
+[Envoyer des courriers à partir d'une adresse différente](https://support.microsoft.com/office/ccba89cb-141c-4a36-8c56-6d16a8556d2e)
 
 [Modifier un nom d'utilisateur et une adresse de courrier](../add-users/change-a-user-name-and-email-address.md)
   

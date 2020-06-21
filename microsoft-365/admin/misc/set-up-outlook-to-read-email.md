@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 2e155154-bc66-48cc-8476-ab558c97115a
 description: Découvrez comment configurer un compte de messagerie dans Outlook pour Windows et Mac, et pour savoir comment installer les applications Office et accéder aux courriers électroniques en ligne.
-ms.openlocfilehash: 04d14c314fbcda4f8d0edff57a141a89688bec28
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: e17e532afca0a552b7e0e2565cd34e9dda256421
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399277"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44779988"
 ---
 # <a name="set-up-outlook-to-read-email"></a>Configurer Outlook pour lire le courrier électronique
 
@@ -39,7 +39,7 @@ La première fois que vous ouvrez Outlook, un Assistant compte automatique s’o
     
 2. Sur la page **configuration de compte automatique** , entrez votre nom, votre adresse de messagerie et votre mot de passe, puis cliquez sur terminer la **prochaine** \> **Finish**.
     
-Lire [l’article complet](https://support.office.com/article/6e27792a-9267-4aa4-8bb6-c84ef146101b.aspx).
+Lire [l’article complet](https://support.microsoft.com/office/6e27792a-9267-4aa4-8bb6-c84ef146101b).
   
 ## <a name="how-do-i-install-the-office-apps-including-outlook"></a>Comment puis-je installer les applications Office, y compris Outlook ?
 
@@ -59,7 +59,7 @@ La première fois que vous ouvrez l’application Outlook, l’Assistant Configu
     
 3. Sur la page **Entrez les informations de votre compte Exchange** , entrez votre nom, votre adresse de messagerie et votre mot de passe, puis sélectionnez **Ajouter un compte**.
     
-Lire [l’article complet](https://support.office.com/article/6e27792a-9267-4aa4-8bb6-c84ef146101b.aspx#PickTab=Outlook_for_Mac). 
+Lire [l’article complet](https://support.microsoft.com/office/6e27792a-9267-4aa4-8bb6-c84ef146101b#PickTab=Outlook_for_Mac). 
   
 ## <a name="how-do-i-access-my-mail-online"></a>Comment puis-je accéder à mon messagerie en ligne ?
 

@@ -16,12 +16,12 @@ ms.assetid: 6f64f2de-d626-48ed-8084-03cc72301aa4
 ms.collection:
 - M365-security-compliance
 description: Quelles sont les meilleures pratiques pour les paramètres de sécurité Exchange Online Protection (EOP) et Advanced Threat Protection (ATP) ? Quelles sont les recommandations actuelles pour la protection standard ? Qu’est-ce qui doit être utilisé si vous voulez être plus strict ? Quels sont les autres éléments que vous obtenez si vous utilisez également la protection avancée contre les menaces ?
-ms.openlocfilehash: 922457d231681bc4643ea1805fc6060de3abcb65
-ms.sourcegitcommit: b18949de721c6eef3521d5f8286d9b926ad4aabe
+ms.openlocfilehash: 15bd63a35b4279efc634115bbdb5248cdd5038db
+ms.sourcegitcommit: 589f78fc0f39aff9109959ded48d146cc32fc3c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "44342531"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "44761705"
 ---
 # <a name="recommended-settings-for-eop-and-office-365-atp-security"></a>Paramètres recommandés pour la sécurité ATP d’Office 365
 
@@ -95,6 +95,8 @@ Nous vous **recommandons de désactiver ces paramètres ASF** pour les niveaux *
 
 Pour créer et configurer des stratégies de courrier indésirable sortant, consultez la rubrique [configuration du filtrage du courrier indésirable sortant dans Office 365](configure-the-outbound-spam-policy.md).
 
+Pour plus d’informations sur les limites d’envoi par défaut dans le service, consultez la rubrique [limites d’envoi](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-1)
+
 |||||
 |---|---|---|---|
 |**Nom de la fonctionnalité de sécurité**|**Standard**|**Empêcher**|**Comment**|
@@ -152,9 +154,9 @@ Pour plus d’informations sur ces paramètres, consultez la rubrique [emprunt d
 |||||
 |---|---|---|---|
 |**Nom de la fonctionnalité de sécurité**|**Standard**|**Empêcher**|**Comment**|
-|Utilisateurs protégés : **Ajouter des utilisateurs à protéger** <br/><br/> _EnableTargetedUserProtection_ <br/><br/> _TargetedUsersToProtect_|Activé <br/><br/> `$true` <br/><br/> \<Liste des utilisateurs\>|Activé <br/><br/> `$true` <br/><br/> \<Liste des utilisateurs\>|Dépend de votre organisation, mais nous vous recommandons d’ajouter des utilisateurs dans les rôles clés. En interne, il peut s’agir de votre PDG, directeur financier et autres dirigeants. En externe, il peut s’agir des membres du Conseil ou de votre Conseil d’administration.|
+|Utilisateurs protégés : **Ajouter des utilisateurs à protéger** <br/><br/> _EnableTargetedUserProtection_ <br/><br/> _TargetedUsersToProtect_|Activé <br/><br/> `$true` <br/><br/> \<list of users\>|Activé <br/><br/> `$true` <br/><br/> \<list of users\>|Dépend de votre organisation, mais nous vous recommandons d’ajouter des utilisateurs dans les rôles clés. En interne, il peut s’agir de votre PDG, directeur financier et autres dirigeants. En externe, il peut s’agir des membres du Conseil ou de votre Conseil d’administration.|
 |Domaines protégés : **inclure automatiquement les domaines dont je suis propriétaire** <br/><br/> _EnableOrganizationDomainsProtection_|Activé <br/><br/> `$true`|Activé <br/><br/> `$true`||
-|Domaines protégés : **inclure des domaines personnalisés** <br/><br/> _EnableTargetedDomainsProtection_ <br/><br/> _TargetedDomainsToProtect_|Activé <br/><br/> `$true` <br/><br/> \<Liste des domaines\>|Activé <br/><br/> `$true` <br/><br/> \<Liste des domaines\>|Dépend de votre organisation, mais nous vous recommandons d’ajouter des domaines avec lesquels vous interagissez fréquemment.|
+|Domaines protégés : **inclure des domaines personnalisés** <br/><br/> _EnableTargetedDomainsProtection_ <br/><br/> _TargetedDomainsToProtect_|Activé <br/><br/> `$true` <br/><br/> \<list of domains\>|Activé <br/><br/> `$true` <br/><br/> \<list of domains\>|Dépend de votre organisation, mais nous vous recommandons d’ajouter des domaines avec lesquels vous interagissez fréquemment.|
 |Utilisateurs protégés : **si un message électronique est envoyé par un utilisateur représenté** <br/><br/> _TargetedUserProtectionAction_|**Mettre en quarantaine le message** <br/><br/> `Quarantine`|**Mettre en quarantaine le message** <br/><br/> `Quarantine`||
 |Domaines protégés : **si un message électronique est envoyé par un domaine emprunté** <br/><br/> _TargetedUserProtectionAction_|**Mettre en quarantaine le message** <br/><br/> `Quarantine`|**Mettre en quarantaine le message** <br/><br/> `Quarantine`||
 |**Afficher le Conseil pour les utilisateurs empruntés** <br/><br/> _EnableSimilarUsersSafetyTips_|Activé <br/><br/> `$true`|Activé <br/><br/> `$true`||
@@ -247,7 +249,7 @@ Pour configurer ces paramètres, reportez-vous à la rubrique [set up Office 365
 |**Appliquer la sélection ci-dessus si l’analyse anti-programme malveillant pour les pièces jointes expire ou si une erreur se produit.** <br/><br/> _ActionOnError_|Activé <br/><br/> `$true`|Activé <br/><br/> `$true`||
 |
 
-## <a name="related-topics"></a>Sujets associés
+## <a name="related-topics"></a>Voir aussi
 
 - Vous recherchez les meilleures pratiques avec des **règles de transport Exchange mail Flow/Exchange**? Pour plus d’informations, consultez [cet article](https://docs.microsoft.com/microsoft-365/security/office-365-security/best-practices-for-configuring-eop) .
 

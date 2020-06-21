@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: Découvrez comment reconnaître et résoudre les attaques de consentement illicite dans Microsoft Office 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 0e775112809fc25e562686761c69471dad6cac1d
-ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
+ms.openlocfilehash: a324c4427046480fe81f58fc810f020c87247032
+ms.sourcegitcommit: df6cc8c2eb2a65c7668f2953b0f7ec783a596d15
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "44587495"
+ms.lasthandoff: 06/13/2020
+ms.locfileid: "44726808"
 ---
 # <a name="detect-and-remediate-illicit-consent-grants"></a>Détecter et résoudre les accords de consentement illicite
 
@@ -30,7 +30,7 @@ ms.locfileid: "44587495"
 
 ## <a name="what-is-the-illicit-consent-grant-attack-in-office-365"></a>Qu’est-ce que l’attaque d’octroi de consentement illicite dans Office 365 ?
 
-Dans le cadre d’une attaque d’octroi de consentement illicite, l’agresseur crée une application inscrite à Azure qui demande l’accès à des données, telles que des informations de contact, des courriers électroniques ou des documents. L’agresseur examine ensuite un utilisateur final pour lui accorder l’autorisation d’accéder à ses données par le biais d’une attaque par hameçonnage ou en injectant du code illicite dans un site Web de confiance. Une fois que l’application illicite a reçu l’autorisation, elle dispose d’un accès aux données au niveau du compte sans avoir besoin d’un compte organisationnel. Les étapes de correction normales, comme la réinitialisation des mots de passe pour les comptes violés ou la nécessité d’une authentification multifacteur (MFA) sur les comptes, ne sont pas efficaces contre ce type d’attaque, car il s’agit d’applications tierces qui sont externes à l’organisation. 
+Dans le cadre d’une attaque d’octroi de consentement illicite, l’agresseur crée une application inscrite à Azure qui demande l’accès à des données, telles que des informations de contact, des courriers électroniques ou des documents. L’agresseur examine ensuite un utilisateur final pour lui accorder l’autorisation d’accéder à ses données par le biais d’une attaque par hameçonnage ou en injectant du code illicite dans un site Web de confiance. Une fois que l’application illicite a reçu l’autorisation, elle dispose d’un accès aux données au niveau du compte sans avoir besoin d’un compte organisationnel. Les étapes de correction normales, comme la réinitialisation des mots de passe pour les comptes violés ou la nécessité d’une authentification multifacteur (MFA) sur les comptes, ne sont pas efficaces contre ce type d’attaque, car il s’agit d’applications tierces qui sont externes à l’organisation.
 
 Ces attaques exploitent un modèle d’interaction qui suppose que l’entité qui appelle les informations est Automation et non humain.
 
@@ -43,18 +43,21 @@ Vous devez rechercher le **Journal d’audit** pour trouver des signes, égaleme
 
 ### <a name="steps-for-finding-signs-of-this-attack"></a>Étapes à suivre pour trouver des signes de cette attaque
 
-1. Ouvrez le **Centre de sécurité & conformité** dans votre client.
+1. Ouvrez le **Centre de sécurité & conformité** à l’adresse <https://protection.office.com> .
 
 2. Naviguez jusqu’à **recherche** et sélectionnez **recherche du journal d’audit**.
 
-3. Recherche (toutes les activités et tous les utilisateurs), entrez la date de début et la date de fin, si nécessaire, puis cliquez sur **Rechercher**. 
+3. Recherche (toutes les activités et tous les utilisateurs), entrez la date de début et la date de fin, si nécessaire, puis cliquez sur **Rechercher**.
 
 4. Cliquez sur **Filtrer les résultats** et entrez le consentement à l’application dans le champ **activité** .
 
 5. Cliquez sur le résultat pour afficher les détails de l’activité. Cliquez sur **informations supplémentaires** pour obtenir les détails de l’activité. Vérifiez si IsAdminContent est défini sur true.
 
 > [!NOTE]
-> L’affichage de l’entrée du journal d’audit correspondante dans les résultats de la recherche après un événement peut prendre entre 30 minutes et 24 heures. <br/><br/> La durée de conservation et de recherche d’un enregistrement d’audit dans le journal d’audit dépend de votre abonnement Microsoft 365 et, en particulier, du type de licence affecté à un utilisateur spécifique. Pour plus d’informations, consultez la rubrique [Journal d’audit](../../compliance/search-the-audit-log-in-security-and-compliance.md).
+> 
+> L’affichage de l’entrée du journal d’audit correspondante dans les résultats de la recherche après un événement peut prendre entre 30 minutes et 24 heures.
+> 
+> La durée de conservation et de recherche d’un enregistrement d’audit dans le journal d’audit dépend de votre abonnement Microsoft 365 et, en particulier, du type de licence affecté à un utilisateur spécifique. Pour plus d’informations, consultez la rubrique [Journal d’audit](../../compliance/search-the-audit-log-in-security-and-compliance.md).
 > 
 > Si cette valeur est true, cela signifie qu’une personne disposant d’un accès administrateur général peut avoir accordé un accès étendu aux données. Si cette opération est inattendue, prenez les mesures nécessaires pour [confirmer une attaque](#how-to-confirm-an-attack).
 
@@ -94,7 +97,7 @@ Demandez à vos utilisateurs d’accéder à https://myapps.microsoft.com leur p
 
 ### <a name="steps-for-doing-this-with-powershell"></a>Étapes à suivre avec PowerShell
 
-Le moyen le plus simple de vérifier l’attaque d’octroi de consentement illicite consiste à exécuter [Get-AzureADPSPermissions. ps1](https://gist.github.com/psignoret/41793f8c6211d2df5051d77ca3728c09), qui videra toutes les autorisations OAuth et les applications OAuth pour tous les utilisateurs de votre location dans un fichier. csv.
+Le moyen le plus simple de vérifier l’attaque d’octroi de consentement illicite consiste à exécuter [Get-AzureADPSPermissions.ps1](https://gist.github.com/psignoret/41793f8c6211d2df5051d77ca3728c09), qui vide toutes les attributions de consentement OAuth et les applications OAuth pour tous les utilisateurs de votre location dans un fichier. csv.
 
 #### <a name="pre-requisites"></a>Conditions préalables
 
@@ -109,7 +112,7 @@ Le moyen le plus simple de vérifier l’attaque d’octroi de consentement illi
 
 1. Connectez-vous à l’ordinateur à partir duquel vous allez exécuter le script avec des droits d’administrateur local.
 
-2. Téléchargez ou copiez le script [Get-AzureADPSPermissions. ps1](https://gist.github.com/psignoret/41793f8c6211d2df5051d77ca3728c09) depuis Github vers un dossier à partir duquel vous allez exécuter le script. Il s’agit du dossier dans lequel le fichier de sortie « Permissions. csv » sera écrit.
+2. Téléchargez ou copiez le script [Get-AzureADPSPermissions.ps1](https://gist.github.com/psignoret/41793f8c6211d2df5051d77ca3728c09) de GitHub dans un dossier à partir duquel vous allez exécuter le script. Il s’agit du dossier dans lequel le fichier de sortie « permissions.csv » sera écrit.
 
 3. Ouvrez une instance PowerShell en tant qu’administrateur et ouvrez le dossier dans lequel vous avez enregistré le script.
 
@@ -121,7 +124,7 @@ Le moyen le plus simple de vérifier l’attaque d’octroi de consentement illi
    Get-AzureADPSPermissions.ps1 | Export-csv -Path "Permissions.csv" -NoTypeInformation
    ```
 
-Le script génère un fichier nommé Permissions. csv. Procédez comme suit pour rechercher les octrois d’autorisations d’application illicites :
+Le script génère un fichier nommé Permissions.csv. Procédez comme suit pour rechercher les octrois d’autorisations d’application illicites :
 
 1. Dans la colonne ConsentType (colonne G), recherchez la valeur « AllPrinciples ». L’autorisation AllPrincipals permet à l’application cliente d’accéder au contenu de tout le monde dans la location. Les applications Microsoft 365 natives ont besoin de cette autorisation pour fonctionner correctement. Toutes les applications non-Microsoft disposant de cette autorisation doivent être revues attentivement.
 

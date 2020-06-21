@@ -19,33 +19,24 @@ search.appverid:
 - MOE150
 ms.assetid: 9de497a9-2f5c-43d6-ae18-767f2e6fe6e0
 description: Découvrez comment ajouter des invités à un groupe Microsoft 365, afficher des utilisateurs invités et utiliser PowerShell pour contrôler l’accès invité.
-ms.openlocfilehash: 99288521f29d67f3146cafe1f194662750cc8a5d
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: fe72f5e831215730a1ac79bcce2296d53b969c9c
+ms.sourcegitcommit: 589f78fc0f39aff9109959ded48d146cc32fc3c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44386780"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "44761661"
 ---
 # <a name="manage-guest-access-in-microsoft-365-groups"></a>Gérer l’accès invité dans les groupes Microsoft 365
-
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> Le centre d’administration change. Si votre expérience ne correspond pas aux informations présentées ici, voir [À propos du nouveau centre d’administration Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
-
-::: moniker-end
 
 Par défaut, l’accès invité pour les groupes Microsoft 365 est activé pour votre organisation. Les administrateurs peuvent contrôler s’il faut autoriser l’accès invité à des groupes pour l’ensemble de l’organisation ou pour des groupes individuels.
 
 Lorsqu’elle est activée, les membres du groupe peuvent inviter des utilisateurs invités à un groupe Microsoft 365 via Outlook sur le Web. Les invitations sont envoyées au propriétaire du groupe pour approbation.
 
+Une fois approuvé, l’utilisateur invité est ajouté au répertoire et au groupe.
+
 > [!Note]
 > Les réseaux d’entreprise yammer en mode natif ou dans l' [Union européenne](https://go.microsoft.com/fwlink/?linkid=2107357) ne prennent pas en charge les invités réseau.
 > Les groupes Yammer connectés à Microsoft 365 ne prennent actuellement pas en charge l’accès invité, mais vous pouvez créer des groupes externes non connectés dans votre réseau Yammer. Consultez la rubrique [créer et gérer des groupes externes dans Yammer](https://docs.microsoft.com/yammer/work-with-external-users/create-and-manage-external-groups) pour obtenir des instructions.
-
-### <a name="edit-guest-information"></a>Modifier les informations invité
-
-Une fois approuvé, l’utilisateur invité est ajouté au répertoire et au groupe.
 
 L’accès invité dans des groupes est souvent utilisé dans le cadre d’un scénario plus large qui inclut SharePoint ou Teams. Ces services ont leurs propres paramètres de partage d’invités. Pour obtenir des instructions complètes sur la configuration du partage d’invités entre les groupes, SharePoint et Teams, voir :
 
@@ -56,7 +47,7 @@ L’accès invité dans des groupes est souvent utilisé dans le cadre d’un sc
 
 Si vous souhaitez activer ou désactiver l’accès invité dans des groupes, vous pouvez le faire dans le centre d’administration 365 de Microsoft.
 
-1. Dans le centre d’administration, accédez aux **Settings** \> **paramètres** paramètres et sélectionnez **groupes Microsoft 365**.
+1. Dans le centre d’administration, accédez aux paramètres Organisation des **paramètres** \> **Org settings** et, sous l’onglet **services** , sélectionnez **groupes Microsoft 365**.
   
 2. Sur la page **groupes Microsoft 365** , indiquez si vous souhaitez autoriser les personnes extérieures à votre organisation à accéder aux ressources de groupe ou les propriétaires de groupes à ajouter des personnes en dehors de votre organisation à des groupes.
 

@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ROBOTS: NOINDEX, NOFOLLOW
 description: Vue d’ensemble du score de productivité Microsoft.
-ms.openlocfilehash: 52a520e36c6b121984aef650ffba1867f4d3e8c9
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: cf8747f38442c0dbef6178dc2cbd4ce32d59c5c6
+ms.sourcegitcommit: 2acd9ec5e9d150389975e854c7883efc186a9432
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399181"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "44754795"
 ---
 # <a name="microsoft-productivity-score-preview"></a>Score de productivité Microsoft (aperçu)
 
@@ -134,6 +134,22 @@ Le premier aperçu de la communication est la fréquence à laquelle les personn
 Le principal aperçu de la mobilité est le nombre de personnes qui accèdent aux fichiers et utilisent la messagerie et la conversation sur plusieurs plateformes. La possibilité de travailler à partir de n’importe quel appareil qu’ils choisissent est importante pour les personnes ayant des rôles commerciaux, les cadres dirigeants, les consultants et les autres personnes qui ont besoin de travailler à distance du Bureau pour être productifs. Les améliorations apportées à ces travailleurs ont un impact important. 
 
 Nous mesurons le pourcentage et le nombre absolu de personnes qui ont utilisé au moins une application de productivité Microsoft 365 sur deux ou plusieurs plateformes, y compris les ordinateurs de bureau, les appareils mobiles et les sites Web. Les applications de productivité que nous évaluons sont Outlook, teams, Word, Excel, PowerPoint, OneNote, Yammer et Skype. Les utilisateurs doivent disposer des applications Microsoft 365 pour les licences Enterprise, Exchange, Yammer, Skype ou Teams. 
+
+## <a name="business-continuity-special-report"></a>Rapport spécial de continuité d’activité
+
+Le rapport de continuité des opérations est un rapport d’intelligence de Workplace limité accessible à tous les clients de Microsoft 365 afin de les aider à orienter leur organisation pendant ce temps.  
+
+Ce rapport aide les chefs d’entreprise à comprendre les éléments suivants : 
+
+- Impact de la collaboration et de la communication sur le travail à distance. 
+
+- Impact sur l’équilibre de la vie du travail au fur et à mesure que les personnes s’ajustent à la maison. 
+
+- Si les personnes utilisent les réunions efficacement, et comment elles sont 
+
+[En savoir plus sur le rapport de continuité d’activité](https://aka.ms/bcrps)
+
+[En savoir plus sur Microsoft Graph](https://docs.microsoft.com/graph/)
 
 ## <a name="we-want-to-hear-from-you"></a>Nous souhaitons être informés
 

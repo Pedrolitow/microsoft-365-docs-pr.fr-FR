@@ -26,12 +26,12 @@ search.appverid:
 - GEA150
 ms.assetid: 5480fc33-dd47-41e7-bcfb-b2533efdb92a
 description: 'Trouvez des réponses à vos questions de facturation principales pour un abonnement Microsoft 365 pour les entreprises. '
-ms.openlocfilehash: 04e2a24ced149e67899608237bdde67eac3f8bad
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: a2c25c82587752493dea6e3110e69f7075ed7b09
+ms.sourcegitcommit: 956dd3f87adb4e6173517550a662c3bacc2d2d79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400760"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "44741693"
 ---
 # <a name="top-billing-questions-for-microsoft-365-for-business"></a>Principales questions de facturation pour Microsoft 365 pour les entreprises
 
@@ -121,7 +121,7 @@ Oui, mais vous devez appeler le [support technique](../../admin/contact-support-
 
 Oui. Pour obtenir votre relevé de facturation en tant que pièce jointe à un message électronique, procédez comme suit :
   
-1. Dans le centre d’administration Microsoft 365, accédez à la page <a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">notifications</a> de facturation **ou sélectionnez** \> **notifications**de facturation de la facturation.
+1. Dans le centre d’administration Microsoft 365, accédez à **Billing** la \> page <a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">notifications de facturation</a> de la facturation.
 
 2. Sous **Voulez-vous recevoir le relevé de facturation par courrier électronique ?**, positionnez le bouton bascule sur **Activer**.
 
@@ -200,9 +200,10 @@ Vous pouvez [appliquer le statut exonéré de taxe](tax-information.md#apply-for
 
 ::: moniker range="o365-worldwide"
 
-1. Sur la page <a href="https://go.microsoft.com/fwlink/p/?linkid=848039" target="_blank">factures</a> , sélectionnez une plage de dates de facture.
-  
-2. Pour imprimer ou enregistrer une copie PDF de la facture, sélectionnez **Télécharger le fichier PDF**de la facture, puis imprimez le PDF.
+1. Dans le centre d’administration, accédez à la page de page **facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">& paiements</a> .
+2. Sous l’onglet **factures** , choisissez une plage de dates de facture.
+3. Sélectionnez la facture que vous souhaitez afficher.
+4. Pour imprimer ou enregistrer une copie PDF de l’échéance, sélectionnez **Télécharger le PDF**, puis imprimez le PDF.
 
 Pour en savoir plus, consultez [la rubrique consulter votre](view-your-bill-or-invoice.md)facture.
 

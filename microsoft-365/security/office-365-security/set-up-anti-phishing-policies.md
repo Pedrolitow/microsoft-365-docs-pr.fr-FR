@@ -16,12 +16,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Les administrateurs peuvent en savoir plus sur les stratégies anti-hameçonnage disponibles dans Exchange Online Protection (EOP) et Office 365 Advanced Threat Protection (Office 365 ATP).
-ms.openlocfilehash: 4cf727cd7d232baac13f44e008a509934f55d895
-ms.sourcegitcommit: efd4dd29af0ea2b71b674534de3b2dcbfd7482db
+ms.openlocfilehash: a61123e3d90a4125bf5a8303654973e1b478fc4c
+ms.sourcegitcommit: 2acd9ec5e9d150389975e854c7883efc186a9432
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44689277"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "44754663"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Stratégies anti-hameçonnage dans Microsoft 365
 
@@ -95,7 +95,7 @@ Les paramètres d’usurpation suivants sont disponibles dans les stratégies an
     - Pour le point d’interrogation de la photo de l’expéditeur, SPF ou DKIM sont les plus importants.
     - Pour la balise via, vérifiez le domaine dans la signature DKIM ou l’adresse **Mail from** correspond (ou est un sous-domaine du) au domaine dans l’adresse de l’expéditeur.
 
-  Pour plus d’informations, consultez [la rubrique identifier les messages suspects dans Outlook.com et Outlook sur le Web](https://support.office.com/article/3d44102b-6ce3-4f7c-a359-b623bec82206) .
+  Pour plus d’informations, consultez [la rubrique identifier les messages suspects dans Outlook.com et Outlook sur le Web](https://support.microsoft.com/office/3d44102b-6ce3-4f7c-a359-b623bec82206) .
 
 ## <a name="exclusive-settings-in-atp-anti-phishing-policies"></a>Paramètres exclusifs dans les stratégies anti-hameçonnage ATP
 

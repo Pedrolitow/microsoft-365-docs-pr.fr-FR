@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Dans cet article, vous allez apprendre à utiliser le portail supprimer de la liste pour vous supprimer de la liste des expéditeurs bloqués de Microsoft 365.
-ms.openlocfilehash: 239d30fec4d904af353731974435d377801be6c7
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 2d9dbba12740e62305e1bcfd193175659be34026
+ms.sourcegitcommit: 9ea67fd2e02af760d4fb62e3d09c93b446173f9d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208536"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "44739242"
 ---
 # <a name="use-the-delist-portal-to-remove-yourself-from-the-blocked-senders-list"></a>Utilisation du portail Supprimer de la liste pour vous supprimer de la liste des expéditeurs bloqués
 
@@ -43,7 +43,7 @@ où  _IP address_ est l'adresse IP de l'ordinateur sur lequel s'exécute le serv
 
 1. Dans un navigateur web, accédez à [https://sender.office.com](https://sender.office.com).
 
-2. Suivez les instructions de la page. Assurez-vous que vous utilisez l'adresse de messagerie à laquelle le message d'erreur a été envoyé et l'adresse IP qui est spécifiée dans le message d'erreur. Vous ne pouvez entrer qu'une adresse de messagerie et une adresse IP par visite.
+2. Follow the instructions on the page. Ensure that you use the email address to which the error message was sent, and the IP address that is specified in the error message. You can only enter one email address and one IP address per visit.
 
 3. Cliquez sur **Envoyer**.
 
@@ -60,4 +60,4 @@ où  _IP address_ est l'adresse IP de l'ordinateur sur lequel s'exécute le serv
     > [!NOTE]
     > Cette opération peut prendre jusqu’à 24 heures ou les résultats peuvent varier considérablement avant la suppression des restrictions.
 
-Consultez la rubrique [créer des listes d’expéditeurs approuvés dans EOP](create-safe-sender-lists-in-office-365.md) et la protection contre le [courrier indésirable sortant dans EOP](outbound-spam-controls.md) pour empêcher IP d’être en liste de blocage.
+Consultez la rubrique [créer des listes d’expéditeurs approuvés dans EOP](create-safe-sender-lists-in-office-365.md) et la protection contre le [courrier indésirable sortant dans EOP](outbound-spam-controls.md) pour empêcher le blocage d’une adresse IP.

@@ -20,19 +20,19 @@ search.appverid:
 - MOE150
 ms.assetid: 832276bd-d024-47b6-a80a-a6b884907a5b
 description: 'Découvrez comment activer ou désactiver la fonctionnalité de courrier non trié pour tous les utilisateurs de votre organisation ou des utilisateurs spécifiques de votre organisation à l’aide d’Exchange PowerShell. '
-ms.openlocfilehash: 069cf7569ebb3654e979100291f6754693b24def
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 67267b0865dfcfd6c0ba66d59ce1d0d111d59325
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400135"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780276"
 ---
 # <a name="configure-clutter-for-your-organization"></a>Configurer le courrier non trié pour votre organisation
 
 > [!TIP]
 > La [boîte de réception prioritaire](../setup/configure-focused-inbox.md) va remplacer le courrier non trié. En savoir plus : [mise à jour sur la boîte de réception prioritaire et nos offres d’encombrement](https://techcommunity.microsoft.com/t5/Outlook-Blog/Update-on-Focused-Inbox-and-our-plans-for-Clutter/ba-p/136448)
   
-En tant qu’administrateur, vous pouvez être amené à gérer la fonctionnalité courrier non trié dans Microsoft 365. Pour activer/désactiver la fonctionnalité courrier non trié pour les utilisateurs de votre organisation, vous devez utiliser Exchange PowerShell. (Les utilisateurs peuvent activer/désactiver ces instructions en procédant comme suit : désactivez [/par courrier non trié dans Outlook](https://support.office.com/article/a9c72a77-1bc4-40e6-ba6d-103c1d1aba4c.aspx).) 
+En tant qu’administrateur, vous pouvez être amené à gérer la fonctionnalité courrier non trié dans Microsoft 365. Pour activer/désactiver la fonctionnalité courrier non trié pour les utilisateurs de votre organisation, vous devez utiliser Exchange PowerShell. (Les utilisateurs peuvent activer/désactiver ces instructions en procédant comme suit : désactivez [/par courrier non trié dans Outlook](https://support.microsoft.com/office/a9c72a77-1bc4-40e6-ba6d-103c1d1aba4c).
   
 Pour plus d’informations sur l’utilisation d’Exchange PowerShell, consultez [l’aide de PowerShell avec Exchange Online](https://go.microsoft.com/fwlink/?LinkID=402831) et [Connectez-vous à Exchange Online PowerShell](https://go.microsoft.com/fwlink/?LinkID=722415) . Vous devez disposer d’un compte qui dispose au moins du rôle d’administrateur de services Exchange et de la possibilité de se connecter à Exchange Online avec PowerShell. 
   
@@ -99,10 +99,10 @@ En tant qu’administrateur, vous pouvez réactiver le courrier non trié à l�
 ## <a name="related-articles"></a>Articles connexes
 <a name="bkmk_onoff"> </a>
 
-[Utiliser le courrier non trié pour trier les messages à priorité basse dans Outlook](https://support.office.com/article/use-clutter-to-sort-low-priority-messages-in-outlook-7b50c5db-7704-4e55-8a1b-dfc7bf1eafa0)
+[Utiliser le courrier non trié pour trier les messages à priorité basse dans Outlook](https://support.microsoft.com/office/7b50c5db-7704-4e55-8a1b-dfc7bf1eafa0)
     
-[Utiliser le courrier non trié pour trier les messages à priorité basse dans Outlook Web App](https://support.office.com/article/fe4d64ca-bf73-48f1-91b4-9a659e008bce.aspx)
+[Utiliser le courrier non trié pour trier les messages à priorité basse dans Outlook Web App](https://support.microsoft.com/office/fe4d64ca-bf73-48f1-91b4-9a659e008bce)
     
-[Désactiver la fonctionnalité courrier non trié dans Outlook](https://support.office.com/article/a9c72a77-1bc4-40e6-ba6d-103c1d1aba4c.aspx)
+[Désactiver la fonctionnalité courrier non trié dans Outlook](https://support.microsoft.com/office/a9c72a77-1bc4-40e6-ba6d-103c1d1aba4c)
     
 

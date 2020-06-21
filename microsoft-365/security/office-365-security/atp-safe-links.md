@@ -25,12 +25,12 @@ search.appverid:
 - ZWD160
 ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: Dans cet article, vous découvrirez comment utiliser les liens fiables pour protéger votre organisation contre le hameçonnage et les autres attaques.
-ms.openlocfilehash: 5cd5e1331bb16b27cd036d20458355448ee32ae2
-ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
+ms.openlocfilehash: 07ec9611a2dca7dff7daf3726b94b0aec638b17c
+ms.sourcegitcommit: 2acd9ec5e9d150389975e854c7883efc186a9432
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44616765"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "44754747"
 ---
 # <a name="atp-safe-links"></a>Liens fiables ATP
 
@@ -47,7 +47,7 @@ Une fois vos stratégies de liens fiables ATP en place, les administrateurs gén
 
 ## <a name="how-to-get-atp-safe-links-protection"></a>Comment obtenir la protection des liens fiables ATP
 
-Tout d’abord, assurez-vous **que votre abonnement inclut [Office 365 protection avancée contre les menaces](office-365-atp.md) ** Plan 1 ou plan 2. La protection avancée contre les menaces Office 365 est incluse dans les abonnements, tels que [microsoft 365 entreprise](https://www.microsoft.com/microsoft-365/enterprise/home), [Microsoft 365 Business Premium](https://www.microsoft.com/microsoft-365/business), Office 365 entreprise E5, Office 365 éducation a5, etc. Si votre organisation dispose d’un abonnement Microsoft 365 qui n’inclut pas Office 365 ATP, vous pouvez acheter l’ATP en tant que module complémentaire. Pour plus d’informations, reportez-vous aux ressources suivantes :
+Tout d’abord, assurez-vous **que votre abonnement inclut [Office 365 protection avancée contre les menaces](office-365-atp.md) ** Plan 1 ou plan 2. La protection avancée contre les menaces Office 365 est incluse dans les abonnements, tels que [microsoft 365 entreprise E5](https://www.microsoft.com/microsoft-365/enterprise/home), [Microsoft 365 Business Premium](https://www.microsoft.com/microsoft-365/business), Office 365 entreprise E5, Office 365 éducation a5, etc. Si votre organisation dispose d’un abonnement Microsoft 365 qui n’inclut pas Office 365 ATP, vous pouvez acheter l’ATP en tant que module complémentaire. Pour plus d’informations, reportez-vous aux ressources suivantes : 
 
 - [Offres et tarifs de protection avancée contre les menaces Office 365](https://products.office.com/exchange/advance-threat-protection)
 
@@ -59,7 +59,7 @@ Ensuite, assurez-vous **que vos stratégies de liens fiables ATP sont définies*
 
 - Les applications clientes Microsoft 365 sont configurées pour utiliser l’authentification moderne (il s’agit de la protection des liens fiables ATP dans les documents Office). (Consultez la rubrique [authentification moderne pour Office 2016](https://docs.microsoft.com/office365/enterprise/modern-auth-for-office-2013-and-2016).)
 
-- Les utilisateurs se sont connectés à l’aide de leur compte professionnel ou scolaire. (Voir [connexion à Office ou office 365](https://support.office.com/article/b9582171-fd1f-4284-9846-bdd72bb28426).)
+- Les utilisateurs se sont connectés à l’aide de leur compte professionnel ou scolaire. (Consultez la rubrique [connexion à Office](https://support.microsoft.com/office/b9582171-fd1f-4284-9846-bdd72bb28426).)
 
 - La messagerie de votre organisation passe par Exchange Online Protection.
 
@@ -81,7 +81,7 @@ Une fois les stratégies de liens fiables ATP en place, l’équipe de sécurit�
 
 Le tableau suivant décrit certains exemples de scénarios dans lesquels la protection des liens fiables ATP peut ou non être mise en place. (Dans tous ces cas, nous partons du principe que l’organisation dispose d’Office 365 entreprise E5).
 
-|**Exemple de scénario**|**Est-ce que la protection des liens fiables DAV s’applique dans ce cas ?**|
+|Exemple de scénario|Est-ce que la protection des liens fiables DAV s’applique dans ce cas ?|
 |:-----|:-----|
 |Jean est membre d’un groupe qui a des stratégies de liens fiables ATP couvrant les URL des documents de messagerie et Office. Jean ouvre une présentation PowerPoint qu’une personne a envoyée, puis clique sur une URL dans la présentation.|Oui. Les stratégies de liens fiables ATP définies s’appliquent au groupe de Jean, à la messagerie de Jean, ainsi qu’aux documents Word, Excel, PowerPoint ou Visio que Jean ouvre, tant que Jean est connecté et utilise les applications Microsoft 365 pour les appareils Windows, iOS ou Android.|
 |Dans l’organisation de Chris, aucun administrateur général ou de sécurité n’a défini de stratégie de liens fiables ATP. Chris reçoit un courrier électronique contenant une URL vers un site Web malveillant. Chris ignore que l’URL est malveillante et clique sur le lien.|Non. La stratégie par défaut qui couvre les URL de tous les membres de l’organisation doit être définie de manière à ce que la protection soit mise en place.|

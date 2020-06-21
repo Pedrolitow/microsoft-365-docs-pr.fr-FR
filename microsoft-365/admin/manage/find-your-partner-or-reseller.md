@@ -23,12 +23,12 @@ search.appverid:
 - BEA160
 ms.assetid: b6c18a9b-2aed-4c84-9d75-af709160258c
 description: 'Découvrez comment trouver un nouveau partenaire Microsoft 365 ou obtenir des informations de contact pour un partenaire avec lequel vous avez travaillé dans le passé. '
-ms.openlocfilehash: b116fc77f41efa2e73bfa50bb187897d167d9998
-ms.sourcegitcommit: eee4f651bd51d5aedd64e42d02bfed8ccb9be4cd
+ms.openlocfilehash: fad16990df7783908f59a6e3dd59cb0a1a13572e
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44515794"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780108"
 ---
 # <a name="find-your-partner-or-reseller"></a>Trouver votre partenaire ou revendeur
 
@@ -61,6 +61,6 @@ Si vous êtes prêt à acheter ou renouveler Microsoft 365 via Open Volume Licen
   
  **Pour les partenaires Microsoft**
   
-[Aide pour les partenaires](https://support.office.com/article/ae811622-b838-4f62-b7e9-659627374963.aspx)
+[Aide pour les partenaires](https://support.microsoft.com/office/ae811622-b838-4f62-b7e9-659627374963)
   
 

@@ -24,23 +24,20 @@ search.appverid:
 - BEA160
 ms.assetid: 092252f8-08df-4cdb-a8d2-b8653caa29a1
 description: Découvrez comment vérifier les abonnements de votre organisation en accédant à la page abonnements.
-ms.openlocfilehash: 438d9932b2e0dcce0e75e0d979908cdab5979f13
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: fff76f1a9ac127d061460767a41941f4daf2ea32
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44386744"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780504"
 ---
 # <a name="what-subscription-do-i-have"></a>Quel abonnement ai-je ?
 
 Si vous êtes administrateur, vous pouvez vérifier les abonnements de votre organisation en accédant au centre d’administration.
   
- **Vous n’êtes pas administrateur ?** Consultez la rubrique [relative à la licence ou au produit Microsoft 365 pour les entreprises](https://support.office.com/article/f8ab5e25-bf3f-4a47-b264-174b1ee925fd.aspx) .
+ **Vous n’êtes pas administrateur ?** Consultez la rubrique [relative à la licence ou au produit Microsoft 365 pour les entreprises](https://support.microsoft.com/office/f8ab5e25-bf3f-4a47-b264-174b1ee925fd) .
 
 ::: moniker range="o365-worldwide"
-
-> [!NOTE]
-> Si le nouveau Centre d’administration Microsoft 365 n’est pas celui que vous utilisez, vous pouvez l’activer en sélectionnant le bouton bascule **Essayer le nouveau Centre d’administration** situé en haut de la page d’accueil.
 
 1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produits</a>.
 
@@ -56,7 +53,7 @@ Si vous êtes administrateur, vous pouvez vérifier les abonnements de votre org
 
     ![The Subscriptions page that shows which subscription you have as well as its status.](../../media/4d51dfcc-e9f3-4414-964a-6ef182f49eba.png)
   
-3. En revanche, si vous avez souscrit plusieurs abonnements, une colonne s'affiche en regard des informations détaillées sur l'abonnement. Elle répertorie les abonnements que vous avez achetés ainsi que les abonnements en version d'évaluation. Par défaut, l'abonnement qui se trouve en tête de liste est automatiquement sélectionné et les informations détaillées sur cet abonnement sont affichées.
+3. If you have multiple subscriptions, you'll see a column next to the detailed subscription information that lists the subscriptions that have been purchased, as well as any trial subscriptions. By default, the subscription at the top of the list is automatically selected, and the detailed information for that subscription is shown.
 
     Si vous avez plusieurs abonnements, choisissez celui pour lequel vous souhaitez afficher des informations détaillées. La carte d'abonnement est mise à jour avec les informations concernant cet abonnement.
 
@@ -75,7 +72,7 @@ Si vous êtes administrateur, vous pouvez vérifier les abonnements de votre org
 
     ![The Subscriptions page that shows which subscription you have as well as its status.](../../media/4d51dfcc-e9f3-4414-964a-6ef182f49eba.png)
   
-3. En revanche, si vous avez souscrit plusieurs abonnements, une colonne s'affiche en regard des informations détaillées sur l'abonnement. Elle répertorie les abonnements que vous avez achetés ainsi que les abonnements en version d'évaluation. Par défaut, l'abonnement qui se trouve en tête de liste est automatiquement sélectionné et les informations détaillées sur cet abonnement sont affichées.
+3. If you have multiple subscriptions, you'll see a column next to the detailed subscription information that lists the subscriptions that have been purchased, as well as any trial subscriptions. By default, the subscription at the top of the list is automatically selected, and the detailed information for that subscription is shown.
 
     Si vous avez plusieurs abonnements, choisissez celui pour lequel vous souhaitez afficher des informations détaillées. La carte d'abonnement est mise à jour avec les informations concernant cet abonnement.
 

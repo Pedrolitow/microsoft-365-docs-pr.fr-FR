@@ -15,12 +15,12 @@ ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 description: Les utilisateurs peuvent apprendre à gérer leurs achats en libre-service.
-ms.openlocfilehash: e8cb319b482ef49090544916b5e76a02083ebf06
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 7513fc67ab80bcffe6e6159bb13db207be16d0e9
+ms.sourcegitcommit: 956dd3f87adb4e6173517550a662c3bacc2d2d79
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44403257"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "44741659"
 ---
 # <a name="manage-self-service-purchases-users"></a>Gérer les achats libre-service (utilisateurs)
 
@@ -105,9 +105,9 @@ Par exemple, si vous avez 100 licences et que vous devez en ajouter 5, entrez 10
 
 ### <a name="update-an-existing-payment-method"></a>Mise à jour d’un mode de paiement existant
 
-1. Dans le centre d’administration, accédez à **la**  >  page<a href="https://go.microsoft.com/fwlink/p/?linkid=848039" target="_blank">factures & paiement</a> .
+1. Dans le centre d’administration, accédez à **la**  >  page<a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">factures & paiement</a> .
 
-2. Pour modifier un mode de paiement existant, sélectionnez-le dans la liste.
+2. Dans l’onglet **modes de paiement** , sélectionnez un mode de paiement existant dans la liste.
 
 3. Dans le volet droit, choisissez **modifier**. Vous pouvez modifier le code de sécurité, la date d’expiration, le nom de la carte et l’adresse.
 
@@ -115,20 +115,20 @@ Par exemple, si vous avez 100 licences et que vous devez en ajouter 5, entrez 10
 
 ### <a name="add-a-new-payment-method"></a>Ajouter un nouveau mode de paiement
 
-1. Dans le centre d’administration, accédez à **la**  >  page<a href="https://go.microsoft.com/fwlink/p/?linkid=848039" target="_blank">factures & paiement</a> .
+1. Dans le centre d’administration, accédez à **la**  >  page<a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">factures & paiement</a> .
 
-2. Sélectionnez **Ajouter un mode de paiement**.
+2. Dans l’onglet **modes de paiement** , choisissez **Ajouter un mode de paiement**.
 
 3. Dans le volet **Ajouter un mode de paiement** , entrez les informations relatives au nouveau mode de paiement, puis choisissez **Ajouter**.
 
 ## <a name="view-your-invoices"></a>Afficher vos factures
 
-1. Dans le centre d’administration, accédez à la page **facturation**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=848039" target="_blank">& paiement</a> .
+1. Dans le centre d’administration, accédez à la page **facturation**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">& paiement</a> .
 
-2. Sous **factures** , sélectionnez la facture que vous souhaitez afficher.
+2. Sous l’onglet **factures** , sélectionnez la facture que vous souhaitez afficher. Si aucune facture n’est visible, modifiez les **3 derniers mois** au **cours des 6 derniers mois** ou **Spécifiez une plage de dates**.
 
 ## <a name="need-help-contact-us"></a>Besoin d’aide ? Contactez-nous.
 
 Pour les questions courantes sur les achats en libre-service, voir [FAQ sur les achats en libre-service](self-service-purchase-faq.md).
 
-Si vous avez des questions ou si vous avez besoin d’aide pour des achats en libre-service, [Contactez le support technique](https://docs.microsoft.com/office365/admin/contact-support-for-business-products).
+Si vous avez des questions ou si vous avez besoin d’aide pour des achats en libre-service, [Contactez le support technique](https://docs.microsoft.com/microsoft-365/admin/contact-support-for-business-products).

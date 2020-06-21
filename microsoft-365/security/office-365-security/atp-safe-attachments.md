@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - seo-marvel-apr2020
 description: Dans cet article, vous découvrirez la fonctionnalité de pièces jointes approuvées ATP pour Office 365 et comment obtenir la fonctionnalité pour votre abonnement.
-ms.openlocfilehash: 36993454a128d23ba388c24321a249f3be40d3d6
-ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
+ms.openlocfilehash: 77842596b460e2d96ccde79e9c8c6ef3d1f8985a
+ms.sourcegitcommit: 2acd9ec5e9d150389975e854c7883efc186a9432
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44616777"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "44754759"
 ---
 # <a name="atp-safe-attachments"></a>Pièces jointes fiables ATP
 
@@ -41,7 +41,7 @@ Ensuite, assurez-vous que vos stratégies de pièces jointes approuvées ATP son
 
 - Les stratégies de pièces jointes approuvées ATP sont configurées. (Voir [configurer des stratégies de pièces jointes approuvées ATP dans Office 365](set-up-atp-safe-attachments-policies.md).)
 
-- Les utilisateurs se sont connectés à l’aide de leur compte professionnel ou scolaire. (Voir [connexion à Office ou office 365](https://support.office.com/article/b9582171-fd1f-4284-9846-bdd72bb28426).)
+- Les utilisateurs se sont connectés à l’aide de leur compte professionnel ou scolaire. (Consultez la rubrique [connexion à Office](https://support.microsoft.com/office/b9582171-fd1f-4284-9846-bdd72bb28426).)
 
 Pour définir (ou modifier) des stratégies ATP, vous devez disposer d’un rôle approprié. Certains exemples sont décrits dans le tableau suivant :
 

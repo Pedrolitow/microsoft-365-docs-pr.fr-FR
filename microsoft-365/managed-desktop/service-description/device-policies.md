@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 35c24153bdacbdc0d07d65b508e66878bd0045e4
-ms.sourcegitcommit: ce6121a8e3ca7438071d73b0c76e2b6f33ac1cf7
+ms.openlocfilehash: e0e5c003ed78b78c5f259eae7e08478d523b5b12
+ms.sourcegitcommit: 51e47ca4b355436a2ad3deb154060eb1927428e6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "43029827"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44773786"
 ---
 # <a name="device-configuration"></a>Configuration des appareils
 
@@ -31,9 +31,9 @@ Les appareils arrivent avec une image de signature, puis rejoignent le domaine A
 
 Ce tableau met en évidence les stratégies par défaut appliquées à tous les appareils de bureau gérés par Microsoft lors de la mise en service des appareils. Toutes les modifications détectées qui ne sont pas approuvées par l’équipe des opérations de bureau géré Microsoft sur les objets gérés par Microsoft Managed Desktop seront rétablies.
 
-Politique | Description
+Stratégie | Description
 --- | ---
-Base de sécurité | [Microsoft Security Baseline](https://docs.microsoft.com/windows/device-security/windows-security-baselines) pour MDM est configuré pour tous les appareils de bureau gérés par Microsoft. Il s’agit de la configuration standard. Elle est publiée, bien testée, et a été examinée par des experts en sécurité Microsoft afin de maintenir la sécurité des applications et des appareils de bureau gérés Microsoft dans l’espace de travail moderne. <br><br>Pour atténuer les menaces dans le contexte de sécurité en perpétuelle évolution, la base de sécurité Microsoft est mise à jour et déployée sur les appareils de bureau gérés Microsoft avec chaque mise à jour de la fonctionnalité Windows 10.<br><br>Pour plus d’informations, consultez la rubrique [Security Baseline for Windows 10](https://blogs.technet.microsoft.com/secguide/2017/10/18/security-baseline-for-windows-10-fall-creators-update-v1709-final/).
+Base de sécurité | [Microsoft Security Baseline](https://docs.microsoft.com/windows/device-security/windows-security-baselines) pour MDM est configuré pour tous les appareils de bureau gérés par Microsoft. Il s’agit de la configuration standard. Elle est publiée, bien testée, et a été examinée par des experts en sécurité Microsoft afin de maintenir la sécurité des applications et des appareils de bureau gérés Microsoft dans l’espace de travail moderne. <br><br>Pour atténuer les menaces dans le contexte de sécurité en perpétuelle évolution, la base de sécurité Microsoft est mise à jour et déployée sur les appareils de bureau gérés Microsoft avec chaque mise à jour de la fonctionnalité Windows 10.<br><br>Pour plus d’informations, consultez la rubrique [Windows Security baselines](https://docs.microsoft.com/windows/security/threat-protection/windows-security-baselines).
 Modèle de sécurité Microsoft Managed Desktop recommandé | Un ensemble de modifications recommandées à la base de sécurité qui optimisent l’expérience utilisateur.  Ces modifications sont documentées dans [l’Addendum sur la sécurité](#security-addendum). Les mises à jour apportées à l’addenda de la stratégie ont lieu le cas échéant.  
 Mettre à jour le déploiement | Utilisez Windows Update pour effectuer un déploiement graduel des mises à jour logicielles. Les administrateurs informatiques ne peuvent pas modifier les paramètres des stratégies de groupe de déploiement. Pour plus d’informations sur le déploiement basé sur un groupe, voir [How updates is Handled in Microsoft Managed Desktop](updates.md).
 Connexions limitées | Par défaut, les mises à jour sur les connexions limitées (telles que les réseaux LTE) sont désactivées, bien que chaque utilisateur puisse activer cette fonctionnalité de manière indépendante dans **paramètres > mises à jour > options avancées**. Si vous souhaitez autoriser tous les utilisateurs à activer les mises à jour sur les connexions limitées, [envoyez une demande de modification](../working-with-managed-desktop/admin-support.md), qui activera ce paramètre pour tous les appareils.

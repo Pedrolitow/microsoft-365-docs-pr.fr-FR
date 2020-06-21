@@ -16,12 +16,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Les administrateurs peuvent apprendre à configurer les paramètres de courrier indésirable dans les boîtes aux lettres Exchange Online. Un grand nombre de ces paramètres sont disponibles pour les utilisateurs dans Outlook ou Outlook sur le Web.
-ms.openlocfilehash: d5eaadc6d177acf91ea4d9d149c92a4de6cc8dd3
-ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
+ms.openlocfilehash: 4e40e3fa2186022a64c8ccdf66f62db24b9f9794
+ms.sourcegitcommit: 2acd9ec5e9d150389975e854c7883efc186a9432
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44616633"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "44755259"
 ---
 # <a name="configure-junk-email-settings-on-exchange-online-mailboxes"></a>Configurer les paramètres de courrier indésirable dans les boîtes aux lettres Exchange Online
 
@@ -110,7 +110,7 @@ La collection de listes fiables d'une boîte aux lettres comprend la liste des e
 
 <sup>\*</sup>**Remarques**:
 
-- Dans Exchange Online, les **entrées de domaine** de la liste des expéditeurs approuvés ou du paramètre _TrustedSendersAndDomains_ ne sont pas reconnues, donc Utilisez uniquement des adresses de messagerie. Dans EOP autonome avec synchronisation d’annuaires, les entrées de domaine ne sont pas synchronisées par défaut, mais vous pouvez activer la synchronisation pour les domaines. Pour plus d’informations, consultez la rubrique [KB3019657](https://support.microsoft.com/help/3019657/domains-on-the-outlook-safe-senders-list-aren-t-recognized-by-exchange).
+- Dans Exchange Online, les **entrées de domaine** de la liste des expéditeurs approuvés ou du paramètre _TrustedSendersAndDomains_ ne sont pas reconnues, donc Utilisez uniquement des adresses de messagerie. Dans EOP autonome avec synchronisation d’annuaires, les entrées de domaine ne sont pas synchronisées par défaut, mais vous pouvez activer la synchronisation pour les domaines. Pour plus d’informations, consultez la rubrique [KB3019657](https://support.microsoft.com/help/3019657).
 
 - Vous ne pouvez pas modifier directement la liste des destinataires approuvés à l’aide de la cmdlet **Set-MailboxJunkEmailConfiguration** (le paramètre _TrustedRecipientsAndDomains_ ne fonctionne pas). Vous devez modifier la liste des expéditeurs approuvés qui est ensuite synchronisée avec la liste des destinataires approuvés.
 
@@ -168,11 +168,11 @@ Pour vérifier que vous avez bien configuré la collection de listes fiables d�
 
 ## <a name="about-junk-email-settings-in-outlook"></a>À propos des paramètres de courrier indésirable dans Outlook
 
-Pour activer, désactiver et configurer les paramètres de filtrage du courrier indésirable côté client disponibles dans Outlook, utilisez la stratégie de groupe. Pour plus d’informations, reportez-vous à la rubrique [Administrative Template Files (ADMX/adml) and Office Customization Tool for Microsoft 365 Apps for Enterprise, office 2019, and office 2016](https://www.microsoft.com/download/details.aspx?id=49030) et [comment déployer les paramètres de courrier indésirable, tels que la liste des expéditeurs approuvés, à l’aide de la stratégie de groupe](https://support.microsoft.com/help/2252421/how-to-deploy-junk-email-settings-such-as-the-safe-senders-list-by-usi).
+Pour activer, désactiver et configurer les paramètres de filtrage du courrier indésirable côté client disponibles dans Outlook, utilisez la stratégie de groupe. Pour plus d’informations, reportez-vous à la rubrique [Administrative Template Files (ADMX/adml) and Office Customization Tool for Microsoft 365 Apps for Enterprise, office 2019, and office 2016](https://www.microsoft.com/download/details.aspx?id=49030) et [comment déployer les paramètres de courrier indésirable, tels que la liste des expéditeurs approuvés, à l’aide de la stratégie de groupe](https://support.microsoft.com/help/2252421).
 
-Lorsque le filtre de courrier indésirable Outlook est défini sur la valeur par défaut **aucun filtrage automatique** dans les options options de courrier indésirable du **domicile** \> **Junk** \> **Junk E-Mail Options** \> **Options**, Outlook ne tente pas de classer les massage comme courrier indésirable, mais il utilise toujours l’ensemble de listes fiables (la liste des expéditeurs approuvés, la liste des destinataires fiables et la liste des expéditeurs bloqués) pour déplacer les Pour plus d’informations sur ces paramètres, consultez [la rubrique vue d’ensemble du filtre de courrier indésirable](https://support.office.com/article/5ae3ea8e-cf41-4fa0-b02a-3b96e21de089).
+Lorsque le filtre de courrier indésirable Outlook est défini sur la valeur par défaut **aucun filtrage automatique** dans les options options de courrier indésirable du **domicile** \> **Junk** \> **Junk E-Mail Options** \> **Options**, Outlook ne tente pas de classer les massage comme courrier indésirable, mais il utilise toujours l’ensemble de listes fiables (la liste des expéditeurs approuvés, la liste des destinataires fiables et la liste des expéditeurs bloqués) pour déplacer les Pour plus d’informations sur ces paramètres, consultez [la rubrique vue d’ensemble du filtre de courrier indésirable](https://support.microsoft.com/office/5ae3ea8e-cf41-4fa0-b02a-3b96e21de089).
 
-Lorsque le filtre de courrier indésirable Outlook est défini sur **Faible** ou **Élevé**, le filtre de courrier indésirable Outlook utilise sa propre technologie de filtrage SmartScreen pour identifier et déplacer le courrier indésirable vers le dossier Courrier indésirable. Cette classification de courrier indésirable est distincte du seuil de probabilité de courrier indésirable (SCL) déterminé par EOP. En fait, Outlook ignore la valeur SCL d’EOP (sauf si EOP a marqué le message pour ignorer le filtrage du courrier indésirable) et utilise ses propres critères pour déterminer si le message est un courrier indésirable. Bien entendu, il est possible que le verdict de courrier indésirable de EOP et Outlook soit le même. Pour plus d’informations sur ces paramètres, consultez [la rubrique modifier le niveau de protection dans le filtre de courrier indésirable](https://support.office.com/article/e89c12d8-9d61-4320-8c57-d982c8d52f6b).
+Lorsque le filtre de courrier indésirable Outlook est défini sur **Faible** ou **Élevé**, le filtre de courrier indésirable Outlook utilise sa propre technologie de filtrage SmartScreen pour identifier et déplacer le courrier indésirable vers le dossier Courrier indésirable. Cette classification de courrier indésirable est distincte du seuil de probabilité de courrier indésirable (SCL) déterminé par EOP. En fait, Outlook ignore la valeur SCL d’EOP (sauf si EOP a marqué le message pour ignorer le filtrage du courrier indésirable) et utilise ses propres critères pour déterminer si le message est un courrier indésirable. Bien entendu, il est possible que le verdict de courrier indésirable de EOP et Outlook soit le même. Pour plus d’informations sur ces paramètres, consultez [la rubrique modifier le niveau de protection dans le filtre de courrier indésirable](https://support.microsoft.com/office/e89c12d8-9d61-4320-8c57-d982c8d52f6b).
 
 > [!NOTE]
 > En novembre 2016, Microsoft a cessé de produire des mises à jour de définition de courrier indésirable pour les filtres SmartScreen dans Exchange et Outlook. Les définitions de courrier indésirable SmartScreen existantes étaient conservées, mais leur efficacité sera vraisemblablement dégradée au fil du temps. Pour plus d’informations, voir l’[Arrêt de la prise en charge de SmartScreen dans Outlook et Exchange](https://techcommunity.microsoft.com/t5/exchange-team-blog/deprecating-support-for-smartscreen-in-outlook-and-exchange/ba-p/605332).
@@ -189,7 +189,7 @@ La collection de listes fiables (la liste des expéditeurs approuvés, la liste 
 
   > Impossible/impossible d’ajouter des listes de courrier indésirable au serveur. Vous avez dépassé la taille autorisée sur le serveur. Le filtre de courrier indésirable sur le serveur est désactivé jusqu’à ce que vos listes de courrier indésirable aient été réduites à la taille autorisée par le serveur.
 
-  Pour plus d’informations sur cette limite et sur la façon de la modifier, voir [KB2669081](https://support.microsoft.com/help/2669081/outlook-error-indicates-that-you-are-over-the-junk-e-mail-list-limit).
+  Pour plus d’informations sur cette limite et sur la façon de la modifier, voir [KB2669081](https://support.microsoft.com/help/2669081).
 
 - La collection de listes fiables synchronisées dans EOP a les limites de synchronisation suivantes :
 

@@ -21,12 +21,12 @@ search.appverid:
 ms.assetid: e64ceac2-ae62-4d29-a9ee-6aab9870ae2b
 ROBOTS: NOINDEX
 description: Découvrez comment créer des contacts dans le centre d’administration et gérer votre liste d’adresses globale.
-ms.openlocfilehash: 8abf16fd3332e4ba5789545d54d2a7a99232032d
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: ecbeb508519fa20e70e9768874d7be57aa2be481
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399421"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780012"
 ---
 # <a name="quick-help-contacts"></a>Aide rapide : contacts
 
@@ -42,7 +42,7 @@ Si vous avez besoin de contacts partagés auxquels tous les membres de votre org
   
 ## <a name="how-are-these-contacts-different-from-my-contacts"></a>En quoi ces contacts sont-ils différents de mes contacts ?
 
-Mes contacts sont des contacts que vous créez pour vous-même et que vos utilisateurs créent pour eux-mêmes, mais d’autres non. Les contacts que vous créez dans le centre d’administration sont des contacts de l’organisation et tout le monde peut les afficher en plus de leur propre. Pour en savoir plus, consultez la rubrique [vue d’ensemble des personnes-Outlook Web App](https://support.microsoft.com/en-us/office/people-overview-outlook-web-app-5fe173cf-e620-4f62-9bf6-da5041f651bf).
+Mes contacts sont des contacts que vous créez pour vous-même et que vos utilisateurs créent pour eux-mêmes, mais d’autres non. Les contacts que vous créez dans le centre d’administration sont des contacts de l’organisation et tout le monde peut les afficher en plus de leur propre. Pour en savoir plus, consultez la rubrique [vue d’ensemble des personnes-Outlook Web App](https://support.microsoft.com/office/5fe173cf-e620-4f62-9bf6-da5041f651bf).
   
 ## <a name="how-does-everyone-get-to-the-contacts-i-created-in-the-admin-center"></a>Comment les membres de l'organisation peuvent-ils accéder aux contacts que j'ai créés dans le centre d'administration ?
 

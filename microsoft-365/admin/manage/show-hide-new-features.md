@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Déterminez les fonctionnalités et le contenu des nouveautés affichées ou masqués pour les utilisateurs finaux dans Office nouveautés de la gestion des applications de bureau Office.
-ms.openlocfilehash: d4d4ff24896555a4af0ae4a936840c9935d73813
-ms.sourcegitcommit: 584e2e9db8c541fe32624acdca5e12ee327fdb63
+ms.openlocfilehash: 7b9522a901078d6e235e295c184fec65c251338b
+ms.sourcegitcommit: f80c6c52e5b08290f74baec1d64c4070046c32e4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44678601"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "44717174"
 ---
 # <a name="show-or-hide-new-features-using-whats-new-management"></a>Afficher ou masquer les nouvelles fonctionnalités à l’aide de nouveautés gestion
 
@@ -60,7 +60,8 @@ Les nouvelles fonctionnalités apparaissent dans Office nouveautés en fonction 
 |:-----|:-----|:-----|
 |**Canal** <br/> |**Dans l’aperçu de la gestion** <br/> |**Effectuer une action** <br/> |
 |**Current** <br/> |15 du mois  <br/> |1-3 semaines avant la publication mensuelle <br/> |
-|**Entreprise semi-annuelle (préversion)** <br/> |1er septembre et 1er mars <br/> | 2 semaines avant la version majeure qui offre de nouvelles fonctionnalités
+|**Entreprise mensuelle** <br/> |1er du mois  <br/> |2 semaines avant la version majeure qui offre de nouvelles fonctionnalités |
+|**Entreprise semi-annuelle (préversion)** <br/> |1er septembre et 1er mars <br/> | 2 semaines avant la version majeure qui offre de nouvelles fonctionnalités|
 |**Entreprise semi-annuelle** <br/> |1er janvier et 1er juillet <br/> | 2 semaines avant la version majeure qui offre de nouvelles fonctionnalités<br/> |
 
 Pour plus d’informations sur les planifications de mise à jour des canaux, consultez [l’historique des mises à jour pour les applications Microsoft 365 (classées par date)](https://docs.microsoft.com/officeupdates/update-history-microsoft365-apps-by-date).

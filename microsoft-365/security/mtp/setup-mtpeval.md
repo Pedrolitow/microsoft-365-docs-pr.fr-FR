@@ -15,12 +15,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 117681bd4722615e870594e46d6896e9128d0d0c
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 6cba773d0c4bea259db151d5a8f1d8e03954a045
+ms.sourcegitcommit: f80c6c52e5b08290f74baec1d64c4070046c32e4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44209222"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "44717294"
 ---
 # <a name="set-up-your-microsoft-threat-protection-trial-lab-environment"></a>Configurer votre environnement de laboratoire d’évaluation de la protection contre les menaces Microsoft 
 
@@ -110,7 +110,7 @@ Dans cette phase, vous serez guidé pour :
 <br>![Image of_Office 365 E5 où vous pouvez choisir de migrer les messages électroniques ou non](../../media/mtp-eval-20.png) <br>
  
 13. Sélectionnez services en ligne. Sélectionnez **Exchange** , puis cliquez sur **suivant**. 
-<br>![Image of_Office 365 E5 où vous pouvez choisir vos services en ligne tels que Microsoft Skype entreprise ou la gestion des appareils Mibile pour Office 365](../../media/mtp-eval-21.png) <br>
+<br>![Image of_Office 365 E5 où vous pouvez choisir vos services en ligne](../../media/mtp-eval-21.png) <br>
 
 14. Ajoutez des enregistrements MX, CNAMe et TXT à votre domaine. Lorsque vous avez terminé, sélectionnez **vérifier**.
 <br>![Image of_Office 365 E5 ici, vous pouvez ajouter vos enregistrements DNS](../../media/mtp-eval-22.png) <br>
@@ -149,4 +149,6 @@ Dans cette phase, vous serez guidé pour :
 
 
 ## <a name="next-step"></a>Étape suivante
-||| | :-------| :-----| config-Onboard. png) <br>[Phase 3 : configurer & Onboard](config-mtpeval.md) | Configurez chaque pilier de protection contre les menaces Microsoft pour votre environnement de laboratoire de test Microsoft Threat Protection et intégrez vos points de terminaison.
+|||
+|:-------|:-----|
+|![Phase 3 : configurer & Onboard](../../media/config-onboard.png) <br>[Phase 3 : configurer & Onboard](config-mtpeval.md) | Configurez chaque pilier de protection contre les menaces Microsoft pour votre laboratoire d’évaluation de la protection contre les menaces Microsoft et embarquez vos points de terminaison.

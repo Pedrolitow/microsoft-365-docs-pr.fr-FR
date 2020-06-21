@@ -1,5 +1,5 @@
 ---
-title: Configurer une boîte aux lettres partagée
+title: Configurer les paramètres de boîte aux lettres partagée
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -21,14 +21,14 @@ search.appverid:
 - MET150
 - MOE150
 description: Une fois que vous avez créé une boîte aux lettres partagée, vous pouvez configurer certains paramètres pour ses utilisateurs, tels que le transfert de courrier électronique et les réponses automatiques. Par la suite, vous pouvez modifier d’autres paramètres, tels que le nom de la boîte aux lettres ou les membres.
-ms.openlocfilehash: 7c88ffa3276f40ea983f9060658f4e4091e36280
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 3bde856f4db80192f5ed058a18c7942aa6a724b2
+ms.sourcegitcommit: 9ea67fd2e02af760d4fb62e3d09c93b446173f9d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400147"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "44739205"
 ---
-# <a name="configure-a-shared-mailbox"></a>Configurer une boîte aux lettres partagée
+# <a name="configure-shared-mailbox-settings"></a>Configurer les paramètres de boîte aux lettres partagée
 
 Une fois que vous avez [créé une boîte aux lettres partagée](create-a-shared-mailbox.md), vous pouvez configurer certains paramètres pour les utilisateurs de boîtes aux lettres, tels que le transfert de courrier électronique et les réponses automatiques. Par la suite, vous souhaiterez peut-être modifier d’autres paramètres, tels que le nom de la boîte aux lettres, les membres ou les autorisations des membres. 
 
@@ -118,7 +118,7 @@ Il n’est pas nécessaire d’attribuer une licence à la boîte aux lettres pa
 
 ## <a name="allow-everyone-to-see-the-sent-email-the-replies"></a>Autoriser tout le monde à voir le courrier envoyé (les réponses)
 
-Par défaut, les courriers envoyés à partir de la boîte aux lettres partagée ne sont pas enregistrés dans le dossier Éléments envoyés de la boîte aux lettres partagée. En revanche, ils sont enregistrés dans le dossier Éléments envoyés de la personne qui a envoyé le courrier.
+By default, messages sent from the shared mailbox aren't saved to the Sent Items folder of the shared mailbox. Instead, they are saved to the Sent Items folder of the person who sent the message.
 
 Si vous souhaitez autoriser tout le monde à voir le courrier envoyé, dans le centre d’administration, modifiez les paramètres de boîte aux lettres partagée, puis sélectionnez **éléments envoyés** \> **Edit**.
 

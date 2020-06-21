@@ -1,5 +1,5 @@
 ---
-title: Configurer la collaboration sécurisée avec Microsoft 365
+title: Configurer la collaboration sécurisée avec Microsoft 365
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
@@ -13,14 +13,14 @@ ms.collection:
 ms.custom: ''
 f1.keywords: NOCSH
 description: Découvrez comment configurer teams pour protéger vos données en fonction de leur sensibilité.
-ms.openlocfilehash: 8704c3a0a271c247652d611e963ff1d26308dcdb
-ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
+ms.openlocfilehash: 8978c8602a00dd9c7caecc30ea4746a01680a236
+ms.sourcegitcommit: 92f641cad63379bf16417854a43b16b48a71a30a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44159466"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "44724807"
 ---
-# <a name="set-up-secure-collaboration-with-microsoft-365"></a>Configurer la collaboration sécurisée avec Microsoft 365
+# <a name="set-up-secure-collaboration-with-microsoft-365"></a>Configurer la collaboration sécurisée avec Microsoft 365
 
 La possibilité de partager facilement des informations avec les personnes appropriées tout en empêchant le surPartage est essentielle au succès d’une organisation. Cela inclut la possibilité de partager des données sensibles en toute sécurité avec uniquement les personnes qui doivent y accéder. En fonction du projet, il peut s’agir de partager des données sensibles avec des personnes extérieures à votre organisation.
 
@@ -57,7 +57,16 @@ Des informations essentielles au succès de votre organisation ou ayant des exig
 
 Pour tous les scénarios mentionnés ci-dessus, vous pouvez utiliser teams dans Microsoft teams pour stocker, partager et collaborer sur les informations. 
 
-## <a name="using-teams-for-all-kinds-of-data"></a>Utilisation de teams pour tous les types de données
+Pour configurer Secure collabration, vous utilisez les fonctionnalités et fonctionnalités de Microsoft 365.
+
+| Produit ou composant | Fonctionnalité | Licence |
+|:-------|:-----|:-------|
+| Office 365 – Protection avancée contre les menaces | Pièces jointes approuvées ATP pour SPO, OneDrive et Teams ; Documents sécurisés ATP ; Liens fiables ATP pour teams    | Microsoft 365 E1, E3 et E5 |
+| SharePoint    | Stratégies de partage de sites et de fichiers, autorisations de partage de site, liens de partage, demandes d’accès, paramètres de partage du site invité | Microsoft 365 E1, E3 et E5 |
+| Microsoft Teams   | Accès invité, teams Private, Private Channels | Microsoft 365 E1, E3 et E5 |
+| Conformité Microsoft 365  | Étiquettes de confidentialité    | Microsoft 365 E3 et E5 |
+
+### <a name="using-teams-for-all-kinds-of-data"></a>Utilisation de teams pour tous les types de données
 
 Pour gérer l’accès aux informations avec différentes sensibilités, nous avons développé [trois niveaux différents de protection pour teams](configure-teams-three-tiers-protection.md). Vous pouvez personnaliser l’un de ces niveaux pour mieux répondre aux besoins ou à votre entreprise. 
 
@@ -68,7 +77,7 @@ Ces niveaux de *ligne de base*, *sensibles*et *hautement sensibles* , augmentent
 
 ||**Niveau de référence**|**Niveau sensible**|**Niveau hautement sensible**|
 |:--|:-----------|:------------|:-------------------|
-|Équipe publique ou privée|Les deux|Privé|Privé|
+|Équipe publique ou privée|Les deux|Private|Private|
 |Partage non authentifié|Blocked|Blocked|Blocked|
 |Partage de fichiers|Autorisé|Autorisé|Seuls les propriétaires d’équipe peuvent partager.|
 |Membres de l’équipe|Tout le monde peut rejoindre des équipes publiques.<br>Approbation du propriétaire de l’équipe requise pour rejoindre des équipes privées.|Approbation du propriétaire de l’équipe requise pour rejoindre le groupe.|Approbation du propriétaire de l’équipe requise pour rejoindre le groupe.|
@@ -91,7 +100,7 @@ Commencez par le niveau de ligne de base, puis ajoutez des équipes qui utilisen
 
 Si vous disposez d’un projet hautement sensible qui nécessite une protection supplémentaire contre le partage même au sein de votre organisation, vous pouvez configurer une équipe qui utilise sa propre étiquette de confidentialité pour chiffrer les fichiers afin que seuls les membres de l’équipe puissent les lire. Pour plus d’informations, consultez [la rubrique Configure a Team with Security isolation](secure-teams-security-isolation.md) .
 
-## <a name="sharing-with-people-outside-your-organization"></a>Partage avec des personnes extérieures à votre organisation
+### <a name="sharing-with-people-outside-your-organization"></a>Partage avec des personnes extérieures à votre organisation
 
 Il se peut que vous deviez [partager des informations de confidentialité avec des personnes extérieures à votre organisation](collaborate-with-people-outside-your-organization.md). Cela peut aller du partage d’un seul document avec une seule personne à la collaboration sur un projet principal avec une grande organisation partenaire ou des traducteurs indépendants dans le monde entier. Dans Microsoft 365, cette plage de partage externe peut être réalisée facilement et grâce aux protections appropriées pour protéger vos informations sensibles.
 
@@ -108,6 +117,12 @@ En fonction de la sensibilité des informations partagées, vous pouvez ajouter 
 - [Créer un environnement de partage sécurisé avec des invités](create-secure-guest-sharing-environment.md)
 
 Si vous disposez d’un projet important avec une organisation partenaire, vous pouvez utiliser Azure habilitations Management pour gérer les invités de cette organisation dans une équipe que vous configurez pour le projet. Pour plus d’informations, voir [créer un extranet B2B avec des invités gérés](b2b-extranet.md) .
+
+## <a name="deploy-the-secure-collaboration-solution"></a>Déployer la solution de collaboration sécurisée
+
+Lorsque vous êtes prêt à déployer cette solution, suivez ces étapes :
+1. Configurez les [trois différents niveaux de protection pour teams](configure-teams-three-tiers-protection.md).
+2. Configurez les paramètres permettant de [partager des informations de confidentialité avec des personnes extérieures à votre organisation](collaborate-with-people-outside-your-organization.md).
 
 ## <a name="see-also"></a>Voir aussi
 

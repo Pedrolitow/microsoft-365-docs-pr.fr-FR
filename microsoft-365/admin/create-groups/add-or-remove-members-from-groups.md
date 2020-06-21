@@ -21,12 +21,12 @@ search.appverid:
 - BSA160
 ms.assetid: e186d224-a324-4afa-8300-0e4fc0c3000a
 description: Découvrez comment ajouter un membre à un groupe, supprimer un membre du groupe et gérer l’état du propriétaire du groupe dans le centre d’administration 365 de Microsoft.
-ms.openlocfilehash: 7a223d6387ca7d261d959c6803a484bc29cdd4b1
-ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
+ms.openlocfilehash: f873d4f4a20804ada3222178b59c4e1cc8ddb6fb
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/31/2020
-ms.locfileid: "44431592"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780480"
 ---
 # <a name="add-or-remove-members-from-microsoft-365-groups-using-the-admin-center"></a>Ajouter ou supprimer des membres des groupes Microsoft 365 à l’aide du centre d’administration
 
@@ -37,10 +37,10 @@ ms.locfileid: "44431592"
 
 ::: moniker-end
 
-Dans Microsoft 365, les membres du groupe créent généralement leurs propres groupes, s’ajoutent à des groupes auxquels ils veulent participer ou sont invités par les propriétaires du groupe. Si la propriété de groupe est modifiée, ou si vous déterminez qu’un membre doit être ajouté ou supprimé, en tant qu’administrateur, vous pouvez également procéder à cette modification. Seul un administrateur général, un administrateur Exchange, un administrateur de groupes ou un administrateur d’utilisateur peut procéder à ces modifications. [Qu’est-ce qu’un groupe Microsoft 365 ?](https://support.office.com/article/b565caa1-5c40-40ef-9915-60fdb2d97fa2.aspx)
+Dans Microsoft 365, les membres du groupe créent généralement leurs propres groupes, s’ajoutent à des groupes auxquels ils veulent participer ou sont invités par les propriétaires du groupe. Si la propriété de groupe est modifiée, ou si vous déterminez qu’un membre doit être ajouté ou supprimé, en tant qu’administrateur, vous pouvez également procéder à cette modification. Seul un administrateur général, un administrateur Exchange, un administrateur de groupes ou un administrateur d’utilisateur peut procéder à ces modifications. [Qu’est-ce qu’un groupe Microsoft 365 ?](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2)
 
 > [!TIP]
-> Si vous n’êtes pas administrateur, vous pouvez [Ajouter ou supprimer des membres à l’aide d’Outlook](https://support.office.com/article/3b650f4a-5c9b-4f94-a1bb-0cca4b1091de.aspx).
+> Si vous n’êtes pas administrateur, vous pouvez [Ajouter ou supprimer des membres à l’aide d’Outlook](https://support.microsoft.com/office/3b650f4a-5c9b-4f94-a1bb-0cca4b1091de).
   
 ## <a name="add-a-member-to-a-group-in-the-admin-center"></a>Ajouter un membre à un groupe dans le centre d’administration
 
@@ -54,7 +54,7 @@ Dans Microsoft 365, les membres du groupe créent généralement leurs propres g
 
 4. Recherchez ou sélectionnez le nom du membre que vous voulez ajouter.
 
-5. Cliquez sur **Enregistrer**.
+5. Sélectionnez **Enregistrer**.
 
 ::: moniker-end
 
@@ -68,7 +68,7 @@ Dans Microsoft 365, les membres du groupe créent généralement leurs propres g
 
 4. Recherchez ou sélectionnez le nom du membre que vous voulez ajouter.
 
-5. Cliquez sur **Enregistrer**.
+5. Sélectionnez **Enregistrer**.
 
 ::: moniker-end
 
@@ -82,7 +82,7 @@ Dans Microsoft 365, les membres du groupe créent généralement leurs propres g
 
 4. Recherchez ou sélectionnez le nom du membre que vous voulez ajouter.
 
-5. Cliquez sur **Enregistrer**.
+5. Sélectionnez **Enregistrer**.
 
 ::: moniker-end
 
@@ -90,7 +90,7 @@ Dans Microsoft 365, les membres du groupe créent généralement leurs propres g
 
 ::: moniker range="o365-worldwide"
 
-1. Dans le Centre d’administration, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utilisateurs actifs</a>.  
+1. Dans le Centre d’administration, accédez à la page **Utilisateurs >** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utilisateurs actifs</a>.  
 
 2. Sélectionnez un utilisateur.
 
@@ -126,7 +126,7 @@ Dans Microsoft 365, les membres du groupe créent généralement leurs propres g
 
 4. Recherchez ou sélectionnez le nom du groupe que vous souhaitez ajouter.
 
-5. Cliquez sur **Enregistrer**.
+5. Sélectionnez **Enregistrer**.
 
 ::: moniker-end
 
@@ -179,7 +179,7 @@ Dans Microsoft 365, les membres du groupe créent généralement leurs propres g
 
 ## <a name="manage-group-owner-status"></a>Gérer l’état du propriétaire du groupe
 
-Par défaut, la personne qui a créé le groupe en est le propriétaire. Un groupe possède souvent plusieurs propriétaires pour le support ou d'autres raisons. Les membres peuvent être promus au statut de propriétaire et les propriétaires peuvent être rétrogradés au statut de membre.
+By default, the person who created the group is the group owner. Often a group will have multiple owners for backup support or other reasons. Members can be promoted to owner status and owners can be demoted to member status.
   
 ### <a name="promote-a-member-to-owner-status-in-the-admin-center"></a>Promouvoir un membre au statut de propriétaire dans le centre d’administration
 
@@ -243,7 +243,7 @@ Par défaut, la personne qui a créé le groupe en est le propriétaire. Un grou
 
 4. Sélectionnez le X en regard du nom du propriétaire.
 
-5. Cliquez sur **Enregistrer**.
+5. Sélectionnez **Enregistrer**.
 
 ::: moniker-end
 
@@ -257,7 +257,7 @@ Par défaut, la personne qui a créé le groupe en est le propriétaire. Un grou
 
 4. Sélectionnez le X en regard du nom du propriétaire.
 
-5. Cliquez sur **Enregistrer**.
+5. Sélectionnez **Enregistrer**.
 
 ::: moniker-end
 
@@ -271,7 +271,7 @@ Par défaut, la personne qui a créé le groupe en est le propriétaire. Un grou
 
 4. Sélectionnez le X en regard du nom du propriétaire.
 
-5. Cliquez sur **Enregistrer**.
+5. Sélectionnez **Enregistrer**.
 
 ::: moniker-end
 
@@ -281,13 +281,13 @@ Par défaut, la personne qui a créé le groupe en est le propriétaire. Un grou
 
 - Pour ajouter des centaines ou des milliers d’utilisateurs à des groupes, utilisez la [UnifiedGroupLinks](https://go.microsoft.com/fwlink/p/?LinkId=616191).
 
-- [Attribuer un nouveau propriétaire à un groupe orphelin](https://support.microsoft.com/en-us/office/assign-a-new-owner-to-an-orphaned-group-86bb3db6-8857-45d1-95c8-f6d540e45732)
+- [Attribuer un nouveau propriétaire à un groupe orphelin](https://support.microsoft.com/office/86bb3db6-8857-45d1-95c8-f6d540e45732)
 
 ## <a name="articles-about-managing-groups"></a>Articles sur la gestion de groupes
 
 - [Mettre à niveau les listes de distribution vers des groupes Microsoft 365 dans Outlook](../manage/upgrade-distribution-lists.md)
 
-- [Pourquoi devriez-vous mettre à niveau vos listes de distribution vers des groupes dans Outlook ?](https://support.microsoft.com/en-us/office/why-you-should-upgrade-your-distribution-lists-to-groups-in-outlook-7fb3d880-593b-4909-aafa-950dd50ce188)
+- [Pourquoi devriez-vous mettre à niveau vos listes de distribution vers des groupes dans Outlook ?](https://support.microsoft.com/office/7fb3d880-593b-4909-aafa-950dd50ce188)
 
 - [Gérer l’accès invité dans les groupes Microsoft 365](manage-guest-access-in-groups.md)
 

@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Les boîtes aux lettres partagées sont utilisées lorsque plusieurs personnes ont besoin d’accéder à la même boîte aux lettres. Découvrez ce que vous devez savoir avant de créer une boîte aux lettres partagée.
-ms.openlocfilehash: 6d9b7f59840b8eb4ce38822945066e14d9a86a4d
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 8ca942d35d54fc8cc635e401c250ce409b9af0dd
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400207"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780312"
 ---
 # <a name="about-shared-mailboxes"></a>À propos des boîtes aux lettres partagées
 
@@ -42,7 +42,7 @@ Avant [de créer une boîte aux lettres partagée](create-a-shared-mailbox.md), 
 
 - **Utilisateurs externes :** Vous ne pouvez pas autoriser les personnes extérieures à votre entreprise (comme les personnes disposant d’un compte Gmail) à accéder à votre boîte aux lettres partagée. Si vous voulez effectuer cette action, envisagez plutôt de créer un groupe pour Outlook. Pour en savoir plus, consultez [la rubrique créer un groupe Microsoft 365 dans le centre d’administration](../create-groups/create-groups.md).
 
--  **Utiliser avec Outlook :** En plus de l’utilisation d’Outlook sur le Web à partir de votre navigateur pour accéder aux boîtes aux lettres partagées, vous pouvez également utiliser l’application Outlook pour iOS ou Outlook pour Android. Pour en savoir plus, consultez <a href="https://support.office.com/article/f866242c-81b2-472e-8776-6c49c5473c9f" target="_blank">la rubrique ajouter une boîte aux lettres partagée à Outlook Mobile</a>. Une autre solution consiste à créer un groupe pour votre boîte aux lettres partagée. Pour plus d'informations, voir [Comparer les groupes](../create-groups/compare-groups.md).  
+-  **Utiliser avec Outlook :** En plus de l’utilisation d’Outlook sur le Web à partir de votre navigateur pour accéder aux boîtes aux lettres partagées, vous pouvez également utiliser l’application Outlook pour iOS ou Outlook pour Android. Pour en savoir plus, consultez <a href="https://support.microsoft.com/office/f866242c-81b2-472e-8776-6c49c5473c9f" target="_blank">la rubrique ajouter une boîte aux lettres partagée à Outlook Mobile</a>. Une autre solution consiste à créer un groupe pour votre boîte aux lettres partagée. Pour plus d'informations, voir [Comparer les groupes](../create-groups/compare-groups.md).  
 
 - **Chiffrement :** Vous ne pouvez pas chiffrer le courrier électronique envoyé à partir d’une boîte aux lettres partagée. Cela est dû au fait qu’une boîte aux lettres partagée ne dispose pas de son propre contexte de sécurité (nom d’utilisateur/mot de passe) et qu’elle ne peut pas recevoir de clé. Si plusieurs personnes sont membres et qu’elles envoient ou reçoivent des courriers électroniques chiffrés avec leurs propres clés, d’autres membres peuvent lire le courrier électronique et d’autres non, en fonction de la clé publique avec laquelle l’e-mail a été chiffré.
 
@@ -56,7 +56,7 @@ Avant [de créer une boîte aux lettres partagée](create-a-shared-mailbox.md), 
 
 - **Nombre d’utilisateurs trop important :** Lorsqu’il y a trop d’utilisateurs désignés qui accèdent simultanément à une boîte aux lettres partagée, ils peuvent ne pas se connecter par intermittence à cette boîte aux lettres. Dans ce cas, vous pouvez réduire le nombre d’utilisateurs ou utiliser une charge de travail différente, un groupe ou un dossier public Microsoft 365.
 
-- **Suppression de message :** Malheureusement, vous ne pouvez pas empêcher les utilisateurs de supprimer des messages dans une boîte aux lettres partagée. La seule façon de le contourner est de créer un groupe Microsoft 365 au lieu d’une boîte aux lettres partagée. Un groupe dans Outlook est semblable à une boîte aux lettres partagée. Pour obtenir une comparaison des deux, consultez la rubrique [compare Groups](../create-groups/compare-groups.md). Pour en savoir plus sur les groupes, consultez la rubrique [en savoir plus sur les groupes](https://support.office.com/article/b565caa1-5c40-40ef-9915-60fdb2d97fa2.aspx).
+- **Suppression de message :** Malheureusement, vous ne pouvez pas empêcher les utilisateurs de supprimer des messages dans une boîte aux lettres partagée. La seule façon de le contourner est de créer un groupe Microsoft 365 au lieu d’une boîte aux lettres partagée. Un groupe dans Outlook est semblable à une boîte aux lettres partagée. Pour obtenir une comparaison des deux, consultez la rubrique [compare Groups](../create-groups/compare-groups.md). Pour en savoir plus sur les groupes, consultez la rubrique [en savoir plus sur les groupes](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2).
 
 ## <a name="related-articles"></a>Articles connexes
 

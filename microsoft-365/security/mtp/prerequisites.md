@@ -19,62 +19,48 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 71e7b532e046015dd64e51fd422d276433d65b3a
-ms.sourcegitcommit: 6ea9a910a8106a5f1aa589c55d166bfa67fd12a8
+ms.openlocfilehash: f63c59403e84e79d1a4a5cf2b8a5544f5646781c
+ms.sourcegitcommit: 51e47ca4b355436a2ad3deb154060eb1927428e6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/18/2020
-ms.locfileid: "44280533"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44773850"
 ---
 # <a name="microsoft-threat-protection-prerequisites"></a>Conditions préalables pour la Protection Microsoft contre les menaces
 
 **S’applique à :**
 - Protection Microsoft contre les menaces
 
-Découvrez la gestion des licences, la configuration matérielle et logicielle requise, ainsi que d’autres paramètres de configuration pour mettre en service et utiliser la protection contre les menaces Microsoft.
+Découvrez les licences et autres conditions requises pour la mise en service et l’utilisation de la [protection contre les menaces Microsoft](microsoft-threat-protection.md).
 
 ## <a name="licensing-requirements"></a>Critères de licence
-
->[!IMPORTANT]
->À partir du 12 mai 2020, Microsoft mettra progressivement en place de nouvelles expériences optimisées concernant les licences requises et l' [activation de la protection contre les menaces Microsoft](mtp-enable.md). Pendant plusieurs semaines pendant cette période, certains clients commencent à voir les modifications apportées à leurs expériences de portail. Les informations sur les nouvelles expériences sont marquées **nouvelle expérience** dans cet article.
-
-Pour utiliser la protection contre les menaces Microsoft, vous avez besoin d’une licence unique ou d’une combinaison de licences. Ces licences ou combinaisons de licences vous donnent accès aux fonctionnalités de protection contre les menaces de Microsoft sans frais supplémentaires.
-
-### <a name="single-license"></a>Licence unique
-Vous pouvez utiliser l' *une* des licences suivantes :
-
-- Microsoft 365 E5 ou a5
-- Microsoft 365 E5 sécurité ou a5 sécurité
-
-### <a name="combination-of-licenses"></a>Combinaison de licences
-Vous pouvez également utiliser une combinaison de licences pour les abonnements E5 ou a5 à Office 365, *Enterprise Mobility + Security (EMS)* et Windows. La combinaison de licences doit inclure *toutes* ces licences :
-
-- Office 365 E5 ou a5
-- *Enterprise Mobility + Security (EMS)* E5 ou a5
-- Windows 10 entreprise E5 ou a5
-
-Pour plus d’informations, [consultez les plans de services d’entreprise Microsoft 365](https://www.microsoft.com/licensing/product-licensing/microsoft-365-enterprise).
-
-> Vous n’avez pas encore de licence ? [Essayez ou achetez un abonnement Microsoft 365](https://docs.microsoft.com/microsoft-365/commerce/try-or-buy-microsoft-365?view=o365-worldwide)
-
-
-**Nouvelle expérience :** À partir du 2020 12 mai, les clients recevront progressivement les modifications apportées à cette expérience. Pour les personnes ayant la nouvelle expérience, l’option d’activation de Microsoft Threat Protection sera disponible pour *tous* les clients disposant des licences suivantes :
+L’une de ces licences vous donne accès aux fonctionnalités de protection contre les menaces Microsoft dans le centre de sécurité Microsoft 365 sans frais supplémentaires :
 
 - Microsoft 365 E5 ou a5
 - Microsoft 365 E5 sécurité ou a5 sécurité
 - Windows 10 entreprise E5 ou a5
 - Enterprise Mobility + Security (EMS) E5 ou a5 
 - Office 365 E5 ou a5
-- Microsoft Defender – Protection avancée contre les menaces 
+- Microsoft Defender – Protection avancée contre les menaces
 - Azure Advanced Threat Protection 
-- Microsoft Cloud App Security 
-- Office 365 – Protection avancée contre les menaces (plan 2) 
+- Microsoft Cloud App Security
+- Office 365 – Protection avancée contre les menaces (plan 2)
+
+> [!NOTE]
+> Les licences d’évaluation pour Office 365 ne fournissent actuellement pas d’accès à Microsoft Threat Protection.
+
+Pour plus d’informations, [consultez les plans de services d’entreprise Microsoft 365](https://www.microsoft.com/licensing/product-licensing/microsoft-365-enterprise).
+
+> Vous n’avez pas encore de licence ? [Essayez ou achetez un abonnement Microsoft 365](https://docs.microsoft.com/microsoft-365/commerce/try-or-buy-microsoft-365?view=o365-worldwide)
 
 ### <a name="check-your-existing--licenses"></a>Vérifiez vos licences existantes
 Accédez au centre d’administration Microsoft 365 ([admin.Microsoft.com](https://admin.microsoft.com/)) pour afficher vos licences existantes. Dans le Centre d'administration, accédez à **Facturation** > **Licences**.
 
 >[!NOTE]
 > Vous devez disposer du rôle d' **administrateur de facturation** ou de **lecteur global** [dans Azure ad](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles) pour être en mesure d’afficher les informations de licence. Si vous rencontrez des problèmes d’accès, veuillez contacter un administrateur général.
+
+## <a name="required-permissions"></a>Autorisations requises
+Pour obtenir la liste des rôles requis et la façon dont l’accès aux données est réglementé, consultez la rubrique [Managing Access to the Microsoft Threat Protection](mtp-permissions.md).
 
 ## <a name="browser-requirements"></a>Configuration requise pour le navigateur
 Accédez à la protection contre les menaces Microsoft dans le centre de sécurité Microsoft 365 à l’aide de Microsoft Edge, d’Internet Explorer 11 ou de n’importe quel navigateur Web compatible HTML 5.
@@ -89,3 +75,4 @@ Actuellement, la protection de Microsoft contre les menaces n’est *pas* dispon
 ## <a name="related-topics"></a>Sujets associés
 - [Vue d’ensemble de la Protection Microsoft contre les menaces](microsoft-threat-protection.md)
 - [Activer la Protection Microsoft contre les menaces](mtp-enable.md)
+- [Gérer l’accès et les autorisations](mtp-permissions.md)

@@ -22,12 +22,12 @@ search.appverid:
 - GEA150
 ms.assetid: 9b497c85-d0a4-4735-80fa-d3565bc05bd1
 description: Découvrez comment supprimer des licences de comptes d’utilisateur.
-ms.openlocfilehash: 18fd23ab2eeb471f29be28cd03daae808c9eccf1
-ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
+ms.openlocfilehash: 2918d8263318e9b6ce14076fb121e898249b5c48
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/31/2020
-ms.locfileid: "44432230"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780072"
 ---
 # <a name="unassign-licenses-from-users"></a>Annuler l'assignation des licences aux utilisateurs
 
@@ -57,7 +57,7 @@ Lorsque vous utilisez la page **licences** pour annuler l’affectation des lice
 
 ::: moniker range="o365-worldwide"
   
-1. Dans le Centre d’administration, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utilisateurs actifs</a>.
+1. Dans le Centre d’administration, accédez à la page **Utilisateurs >** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utilisateurs actifs</a>.
 
 2. Sur la page **utilisateurs actifs** , sélectionnez la ligne de l’utilisateur pour lequel vous souhaitez annuler l’affectation d’une licence.
 
@@ -69,7 +69,7 @@ Lorsque vous utilisez la page **licences** pour annuler l’affectation des lice
 
 ::: moniker range="o365-germany"
 
-1. Dans le Centre d’administration, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Utilisateurs actifs</a>.
+1. Dans le Centre d’administration, accédez à la page **Utilisateurs >** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Utilisateurs actifs</a>.
 
 2. Sélectionnez l’utilisateur pour lequel vous souhaitez annuler l’affectation de la licence.
 
@@ -99,7 +99,7 @@ Lorsque vous utilisez la page **licences** pour annuler l’affectation des lice
 
 ::: moniker range="o365-worldwide"
 
-1. Dans le Centre d’administration, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utilisateurs actifs</a>.
+1. Dans le Centre d’administration, accédez à la page **Utilisateurs >** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utilisateurs actifs</a>.
 
 2. Sélectionnez les cercles en regard des noms des utilisateurs pour lesquels vous souhaitez annuler l’affectation de licences.
 
@@ -113,7 +113,7 @@ Lorsque vous utilisez la page **licences** pour annuler l’affectation des lice
 
 ::: moniker range="o365-germany"
   
-1. Dans le Centre d’administration, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Utilisateurs actifs</a>.
+1. Dans le Centre d’administration, accédez à la page **Utilisateurs >** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Utilisateurs actifs</a>.
 
 2. Activez les cases à cocher en regard des noms des utilisateurs pour lesquels vous souhaitez annuler l’affectation de toutes les licences.
 
@@ -127,7 +127,7 @@ Lorsque vous utilisez la page **licences** pour annuler l’affectation des lice
 
 ::: moniker range="o365-21vianet"
   
-1. Dans le Centre d’administration, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Utilisateurs actifs</a>.
+1. Dans le Centre d’administration, accédez à la page **Utilisateurs >** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Utilisateurs actifs</a>.
 
 2. Activez les cases à cocher en regard des noms des utilisateurs pour lesquels vous souhaitez annuler l’affectation de toutes les licences.
 
@@ -145,7 +145,7 @@ Lorsque vous utilisez la page **licences** pour annuler l’affectation des lice
 
 - Vous pouvez [supprimer des licences de comptes d'utilisateurs à l'aide d'Office 365 PowerShell](https://go.microsoft.com/fwlink/p/?linkid=848428).
 
-- Vous pouvez également [supprimer des comptes d'utilisateurs](../add-users/delete-a-user.md) auxquels une licence a été attribuée afin de pouvoir réattribuer leur licence à d'autres utilisateurs. Lorsque vous supprimez un compte d'utilisateur, sa licence peut immédiatement être attribuée à un autre utilisateur.
+- You can also [delete user accounts](../add-users/delete-a-user.md) that have been assigned a license to make their license available to other users. When you delete a user account, their license is immediately available to be assigned to someone else.
 
 - Lorsqu’une licence est supprimée d’un utilisateur, les données associées à ce compte sont conservées pendant 30 jours. Après la période de grâce de 30 jours, les données sont supprimées et ne peuvent pas être récupérées.
 
@@ -157,7 +157,7 @@ Lorsque vous utilisez la page **licences** pour annuler l’affectation des lice
 
 - Pour plus d’informations sur la façon de bloquer l’accès d’un utilisateur aux données Microsoft 365 après la suppression de leur licence et l’accès aux données par la suite, consultez la rubrique [supprimer un ancien employé](../add-users/remove-former-employee.md).
 
-- Si vous supprimez la licence d’un utilisateur et qu’Office est toujours installé, les [notifications de produit sans licence](https://support.office.com/article/0d23d3c0-c19c-4b2f-9845-5344fedc4380.aspx) s’affichent lorsqu’elles utilisent Office.
+- Si vous supprimez la licence d’un utilisateur et qu’Office est toujours installé, les [notifications de produit sans licence](https://support.microsoft.com/office/0d23d3c0-c19c-4b2f-9845-5344fedc4380) s’affichent lorsqu’elles utilisent Office.
 
 ## <a name="related-articles"></a>Articles connexes
 

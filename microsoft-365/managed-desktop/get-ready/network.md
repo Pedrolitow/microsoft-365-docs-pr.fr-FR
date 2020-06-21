@@ -9,12 +9,12 @@ f1.keywords:
 ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: f70f997b1f3b2ef47cfc647178c1836893bc3e66
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: a1cf21fdd53ca90218370fb9c87547c64e867cd8
+ms.sourcegitcommit: bad47f9c69025d76d1e161519640cf7e238bd3b2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632838"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "44735513"
 ---
 #  <a name="network-configuration-for-microsoft-managed-desktop"></a>Configuration du réseau pour Bureau géré Microsoft
 
@@ -53,7 +53,7 @@ Il existe des URL de plusieurs produits Microsoft qui doivent figurer dans la li
 
 Service Microsoft | Source de documentation-URL requises sur la liste verte
 --- | ---
-Windows 10 entreprise, y compris Windows Update pour les entreprises | [Gérer les points de terminaison de connexion pour Windows 10, version 1803](https://docs.microsoft.com/windows/privacy/manage-windows-1803-endpoints)<br><br>[Gérer les points de terminaison de connexion pour Windows 10, version 1809](https://docs.microsoft.com/windows/privacy/manage-windows-1809-endpoints)<br><br>[Gérer les points de terminaison de connexion pour Windows 10, version 1903](https://docs.microsoft.com/windows/privacy/manage-windows-1903-endpoints)<br><br>time.windows.com
+Windows 10 entreprise, y compris Windows Update pour les entreprises | [Gérer les points de terminaison de connexion pour Windows 10, version 1803](https://docs.microsoft.com/windows/privacy/manage-windows-1803-endpoints)<br><br>[Gérer les points de terminaison de connexion pour Windows 10, version 1809](https://docs.microsoft.com/windows/privacy/manage-windows-1809-endpoints)<br><br>[Gérer les points de terminaison de connexion pour Windows 10, version 1903](https://docs.microsoft.com/windows/privacy/manage-windows-1903-endpoints)<br><br>[Gérer les points de terminaison de connexion pour Windows 10, version 2004](https://docs.microsoft.com/windows/privacy/manage-windows-2004-endpoints)<br><br>time.windows.com
 Optimisation de la remise | [Configurer l’optimisation de la remise pour les mises à jour de Windows 10](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization)
 Microsoft 365 | [URL et plages d’adresses IP Microsoft 365](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges)
 Azure Active Directory | [Ports et protocoles d’identité hybrides](https://docs.microsoft.com/azure/active-directory/hybrid/reference-connect-ports) , ainsi que les [exigences de port Active Directory et des services de domaine Active Directory](https://aka.ms/AA26ygm) 

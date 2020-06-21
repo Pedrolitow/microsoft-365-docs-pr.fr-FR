@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Les administrateurs peuvent découvrir le fonctionnement de l’aide à la décision, notamment comment déterminer rapidement les expéditeurs qui envoient légitimement des messages électroniques non authentifiés.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 1b97d36c3434e7410f4cb3d19ef8eaee6f37e601
-ms.sourcegitcommit: 86705d15231c987be2fcf5a295b9b6239fc46077
+ms.openlocfilehash: 1f04baca3761e44acfd26c09cdc0d5283db13697
+ms.sourcegitcommit: df6cc8c2eb2a65c7668f2953b0f7ec783a596d15
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "44566703"
+ms.lasthandoff: 06/13/2020
+ms.locfileid: "44726503"
 ---
 # <a name="walkthrough---atp-spoof-intelligence-insight-in-microsoft-365"></a>Procédure pas à pas-aide à la décision d’usurpation d’identité dans Microsoft 365
 
@@ -35,11 +35,16 @@ Cette procédure pas à pas est l’une des suivantes pour le centre de conformi
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu'il faut savoir avant de commencer
 
-- Vous ouvrez le Centre de sécurité et conformité sur <https://protection.office.com/>. Pour accéder directement à la page du **tableau de bord de sécurité** , utilisez <https://protection.office.com/searchandinvestigation/dashboard> .
+- Vous ouvrez le Centre de conformité et sécurité sur <https://protection.office.com/>. Pour accéder directement à la page du **tableau de bord de sécurité** , utilisez <https://protection.office.com/searchandinvestigation/dashboard> .
 
   Vous pouvez afficher le centre d’aide à la décision à partir de plusieurs tableaux de bord dans le centre de conformité & Compliance Center. Quel que soit le tableau de bord que vous examinez, le détail fournit les mêmes détails et vous permet d’effectuer rapidement les mêmes tâches.
 
-- Des autorisations doivent vous être attribuées avant de pouvoir exécuter ces procédures. Pour utiliser la fonction d’aide à la décision, vous devez être membre des groupes de rôles gestion de l' **organisation**, administrateur de la **sécurité**ou **lecteur de sécurité** . Pour des informations supplémentaires sur les groupes de rôles dans le Centre de sécurité et conformité, voir [Autorisations dans le Centre de sécurité et conformité](permissions-in-the-security-and-compliance-center.md).
+- Des autorisations doivent vous être attribuées avant de pouvoir effectuer les procédures décrites dans cette rubrique. Pour utiliser la fonction d’aide à la décision, vous devez être membre de l’un des groupes de rôles suivants :
+
+  - **Gestion** de l’organisation ou **administrateur de sécurité** dans le [Centre de sécurité & conformité](permissions-in-the-security-and-compliance-center.md).
+  - Gestion de l' **organisation** ou gestion de l' **hygiène** dans [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
+  - **Lecteur de sécurité** dans le [centre de sécurité & conformité](permissions-in-the-security-and-compliance-center.md).
+  - **Gestion de l’organisation en affichage seul** dans [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
 
 - Vous activez et désactivez l’intelligence usurpée dans les stratégies anti-hameçonnage ATP. Pour plus d’informations, reportez-vous à la rubrique [configure ATP anti-phishing Policies in Microsoft 365](configure-atp-anti-phishing-policies.md).
 
@@ -99,6 +104,6 @@ Cela modifie la combinaison de paires de domaines unique du domaine usurpé et d
 
 Par exemple, si vous ajoutez la paire de domaines suivante à la liste verte de l’expéditeur « AllowedToSpoof » : *domaine usurpé* « gmail.com » et l' *infrastructure d’envoi* « TMS *. mx.com »,* seul le courrier de cette paire de domaines sera autorisé à usurper. Les autres expéditeurs qui tentent d’usurper « gmail.com » et d’autres domaines que « tms.mx.com » tentent d’usurper continueront à être protégés par l’intelligence des usurpations d’identité.
 
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Voir aussi
 
 [Protection contre l’usurpation d’identité dans Microsoft 365](anti-spoofing-protection.md)

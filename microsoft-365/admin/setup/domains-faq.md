@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: 1272bad0-4bd4-4796-8005-67d6fb3afc5a
 description: Pour plus d’informations sur les domaines, recherchez les réponses à vos questions dans FAQ.
-ms.openlocfilehash: c82d5d01d64ad01f68d0c1ba73860511aa1718aa
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: a52513130f9bbbf7c4cd25d4c4827e833700d992
+ms.sourcegitcommit: 9ea67fd2e02af760d4fb62e3d09c93b446173f9d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44398905"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "44739157"
 ---
 # <a name="domains-faq"></a>Forum aux questions sur les domaines
 
@@ -439,7 +439,7 @@ Vous pouvez, mais il existe des limitations :
     
 4. Si vous le souhaitez, débloquez le serveur de messagerie existant.
     
-    1. Office 365 utilise Exchange Online Protection (EOP) pour la protection contre le courrier indésirable. Si EOP détecte un volume élevé de courrier indésirable transféré par votre serveur de messagerie actuel, il peut le bloquer, ce qui empêche le transfert de fonctionner. Si vous êtes sûr de la protection anti-courrier indésirable que votre autre fournisseur de messagerie utilise, vous pouvez autoriser son serveur dans Office 365. Toutefois, cela permettra également aux courriers indésirables qui transitent par votre serveur d’origine d’être transmis aux boîtes aux lettres Office 365 et vous ne pourrez pas évaluer la manière dont Office 365 empêche le courrier indésirable.
+    1. Office 365 utilise Exchange Online Protection (EOP) pour la protection contre le courrier indésirable. Si EOP détecte un volume élevé de courrier indésirable transféré par votre serveur de messagerie actuel, il peut le bloquer, ce qui empêche le transfert de fonctionner. Si vous êtes sûr de la protection anti-courrier indésirable que votre autre fournisseur de messagerie utilise, vous pouvez ajouter son serveur à une liste verte dans Office 365. Toutefois, cela permettra également aux courriers indésirables qui transitent par votre serveur d’origine d’être transmis aux boîtes aux lettres Office 365 et vous ne pourrez pas évaluer la manière dont Office 365 empêche le courrier indésirable.
     
     2. Accédez au centre d’administration Exchange.
         

@@ -12,12 +12,12 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: Les administrateurs peuvent apprendre à identifier les raisons et le mode de réception d’un message de hameçonnage dans Microsoft 365, ainsi que la marche à suivre pour éviter d’autres messages de hameçonnage.
-ms.openlocfilehash: b7a68eb3ab3cf7dbb7156059416cca04d80bb3a8
-ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
+ms.openlocfilehash: ac416da714e30491f679e22909010a8c02fac843
+ms.sourcegitcommit: 2acd9ec5e9d150389975e854c7883efc186a9432
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "44588439"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "44755051"
 ---
 # <a name="tune-anti-phishing-protection"></a>Protection anti-hameçonnage
 
@@ -51,17 +51,21 @@ Plus précisément, vous devez vérifier le champ d’en-tête **X-Forefront-ant
 
 - Sur une base mensuelle, exécutez le [score sécurisé](../mtp/microsoft-secure-score.md) pour évaluer les paramètres de sécurité de votre organisation.
 
-- Examinez régulièrement le rapport d’aide à la [décision](learn-about-spoof-intelligence.md) et [configurez](set-up-anti-phishing-policies.md#spoof-settings) l’aide à la **mise en quarantaine** des messages suspects au lieu de les transmettre au dossier courrier indésirable de l’utilisateur.
+- Pour les messages qui sont mis en quarantaine par erreur ou pour les messages autorisés, nous vous recommandons de rechercher ces messages dans l' [Explorateur de menaces et les détections en temps réel](threat-explorer.md). Vous pouvez effectuer une recherche par expéditeur, destinataire ou ID de message. Une fois que vous avez trouvé le message, accédez à détails en cliquant sur l’objet. Pour un message en quarantaine, consultez la rubrique « technologie de détection » afin de pouvoir utiliser la méthode appropriée pour le remplacement. Pour obtenir un message autorisé, vérifiez quelle stratégie a autorisé le message. 
+
+- Le courrier usurpé est marqué comme hameçonnage dans la protection avancée contre les menaces. Parfois, l’usurpation d’identité est inoffensive et les utilisateurs ne doivent pas être mis en quarantaine. Pour réduire l’impact sur les utilisateurs, consultez régulièrement le rapport d’aide à la [décision](learn-about-spoof-intelligence.md). Une fois que vous avez vérifié et effectué les remplacements nécessaires, vous pouvez être sûr de [configurer](set-up-anti-phishing-policies.md#spoof-settings) l’aide à la **mise en quarantaine** des messages suspects au lieu de les transmettre au dossier de courrier indésirable de l’utilisateur.
+
+- Vous pouvez répéter l’étape ci-dessus pour l’emprunt d’identité (domaine ou utilisateur). Le rapport d’emprunt d’identité se trouve sous informations sur le tableau de bord **gestion des menaces** \> **Dashboard** \> **Insights**.
 
 - Examinez régulièrement le [rapport d’état de protection contre les menaces](view-reports-for-atp.md#threat-protection-status-report).
 
-- Certains clients peuvent accidentellement autoriser les messages d’hameçonnage en plaçant leurs propres domaines dans la liste autoriser l’expéditeur ou autoriser le domaine dans les stratégies de blocage du courrier indésirable. Si vous choisissez de le faire, vous devez utiliser une extrême prudence. Bien que cette configuration autorise certains messages légitimes, elle autorise également les messages malveillants qui seraient normalement bloqués par le courrier indésirable et/ou les filtres de hameçonnage.
+- Certains clients peuvent accidentellement autoriser les messages d’hameçonnage en plaçant leurs propres domaines dans la liste autoriser l’expéditeur ou autoriser le domaine dans les stratégies de blocage du courrier indésirable. Bien que cette configuration autorise certains messages légitimes, elle autorise également les messages malveillants qui seraient normalement bloqués par le courrier indésirable et/ou les filtres de hameçonnage. Au lieu d’autoriser le domaine, vous devez corriger le problème sous-jacent.
 
   La meilleure façon de traiter les messages légitimes bloqués par Microsoft 365 (faux positifs) qui impliquent des expéditeurs dans votre domaine est de configurer entièrement et complètement les enregistrements SPF, DKIM et DMARC dans le système DNS pour _tous_ vos domaines de messagerie :
 
   - Vérifiez que votre enregistrement SPF identifie _toutes les_ sources de courrier pour les expéditeurs de votre domaine (n’oubliez pas les services tiers).
 
-  - Utilisez la défaillance matérielle ( \- ) pour vous assurer que les expéditeurs non autorisés sont rejetés par les systèmes de messagerie qui sont configurés pour le faire. Vous pouvez utiliser l’Assistant d’aide à la [décision](learn-about-spoof-intelligence.md) pour identifier les expéditeurs qui utilisent votre domaine afin que vous puissiez inclure des expéditeurs tiers autorisés dans votre enregistrement SPF.
+  - Utilisez la défaillance matérielle ( \- tout) pour vous assurer que les expéditeurs non autorisés sont rejetés par les systèmes de messagerie qui sont configurés pour le faire. Vous pouvez utiliser l’Assistant d’aide à la [décision](learn-about-spoof-intelligence.md) pour identifier les expéditeurs qui utilisent votre domaine afin que vous puissiez inclure des expéditeurs tiers autorisés dans votre enregistrement SPF.
 
   Pour obtenir des instructions de configuration, voir :
   
@@ -72,6 +76,8 @@ Plus précisément, vous devez vérifier le champ d’en-tête **X-Forefront-ant
   - [Utiliser DMARC pour valider les messages électroniques](use-dmarc-to-validate-email.md)
 
 - Dans la mesure du possible, nous vous recommandons de livrer le courrier électronique pour votre domaine directement à Microsoft 365. En d’autres termes, pointez l’enregistrement MX de votre domaine Microsoft 365 vers Microsoft 365. Exchange Online Protection (EOP) est capable de fournir la meilleure protection aux utilisateurs de votre nuage lorsque leur courrier est remis directement à Microsoft 365. Si vous devez utiliser un système d’hygiène de messagerie tiers devant l’interface EOP, utilisez un filtrage amélioré pour les connecteurs. Pour obtenir des instructions, voir [Enhanced Filtering for Connectors in Exchange Online](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).
+
+- Les utilisateurs doivent [signaler les messages](enable-the-report-message-add-in.md) à Microsoft, qui peuvent former notre système. Les administrateurs doivent également tirer parti des fonctionnalités de soumission de l' [administrateur](admin-submission.md) .
 
 - L’authentification multifacteur (MFA) est un moyen efficace pour empêcher les comptes compromis. Vous devez sérieusement envisager d’activer l’authentification multifacteur pour tous vos utilisateurs. Pour une approche progressive, commencez par activer l’authentification multifacteur pour vos utilisateurs les plus sensibles (administrateurs, cadres, etc.) avant d’activer l’authentification multifacteur pour tout le monde. Pour consulter des instructions, voir [Configurer Multi-factor Authentification (MFA)](../../admin/security-and-compliance/set-up-multi-factor-authentication.md).
 

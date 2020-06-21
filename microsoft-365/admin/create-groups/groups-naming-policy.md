@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 6ceca4d3-cad1-4532-9f0f-d469dfbbb552
 description: Découvrez comment créer une stratégie d’attribution de noms pour les groupes Microsoft 365.
-ms.openlocfilehash: 38b5bbed0c6e4c12af2f529568a53df329d9a933
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: ae216d0d8f3319e9633d300d785b4a8c31702798
+ms.sourcegitcommit: 3274b65a3932288721541d2b3fa5ecbf4c51e1ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44388004"
+ms.lasthandoff: 06/11/2020
+ms.locfileid: "44702547"
 ---
 # <a name="groups-naming-policy"></a>Stratégie de noms de groupes
 
@@ -80,6 +80,9 @@ Il est recommandé d’utiliser des attributs dont les valeurs sont renseignées
 - Pendant la création de la stratégie, la longueur de la chaîne des préfixes et des suffixes est limitée à 53 caractères.
 
 - Les préfixes et les suffixes peuvent contenir des caractères spéciaux pris en charge dans le nom du groupe et l’alias de groupe. Lorsque les préfixes et les suffixes contiennent des caractères spéciaux qui ne sont pas autorisés dans l’alias de groupe, ils ne sont appliqués qu’au nom du groupe. Dans ce cas, les préfixes et les suffixes appliqués au nom de groupe diffèrent de ceux appliqués à l’alias de groupe.
+
+  > [!NOTE]
+  > Un point (.) ou un tiret (-) est autorisé n’importe où dans le nom du groupe, sauf au début ou à la fin du nom. Un trait de soulignement (_) est autorisé n’importe où dans le nom du groupe, y compris au début ou à la fin du nom.
 
 - Si vous utilisez des groupes Microsoft 365 connectés à Yammer, évitez d’utiliser les caractères suivants dans votre stratégie de noms : @, \# , \[ , \] , \<, and \> . Si ces caractères sont dans la stratégie de noms, les utilisateurs de Yammer ordinaires ne pourront pas créer de groupes.
 

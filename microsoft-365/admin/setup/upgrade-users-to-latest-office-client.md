@@ -20,12 +20,12 @@ ms.custom:
 - AdminSurgePortfolio
 ms.assetid: f6b00895-b5fd-4af6-a656-b7788ea20cbb
 description: Découvrez comment mettre à niveau vos utilisateurs vers le client Office le plus récent.
-ms.openlocfilehash: 22fe8e12e4aff4f9afe52e913ad57d37866dbb95
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: fb2513b2112dd8427222d43d14184895df3b594b
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44398809"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44778876"
 ---
 # <a name="upgrade-your-microsoft-365-for-business-users-to-the-latest-office-client"></a>Mettre à niveau vos utilisateurs Microsoft 365 vers le dernier client Office
 
@@ -45,7 +45,7 @@ Pour plus d’informations, voir la feuille [de route de fin d’assistance pour
   
  Si vous êtes l’administrateur responsable de l’abonnement Microsoft 365 pour les entreprises au sein de votre organisation, vous êtes au bon endroit. Les administrateurs sont généralement responsables des tâches telles que la gestion des utilisateurs, la réinitialisation des mots de passe, la gestion des installations d’Office et l’ajout ou la suppression de licences.
 
- Si vous n’êtes pas un administrateur et que vous disposez d’un produit de la [famille Microsoft 365](https://support.office.com/article/28cbc8cf-1332-4f04-9123-9b660abb629e.aspx#BKMK_OfficePlans) , consultez [la rubrique Comment mettre à niveau Office](https://support.office.com/article/ee68f6cf-422f-464a-82ec-385f65391350.aspx) pour obtenir des informations sur la mise à niveau de votre ancienne version d’Office.
+ Si vous n’êtes pas un administrateur et que vous disposez d’un produit de la [famille Microsoft 365](https://support.microsoft.com/office/28cbc8cf-1332-4f04-9123-9b660abb629e#BKMK_OfficePlans) , consultez [la rubrique Comment mettre à niveau Office](https://support.microsoft.com/office/ee68f6cf-422f-464a-82ec-385f65391350) pour obtenir des informations sur la mise à niveau de votre ancienne version d’Office.
 
 ## <a name="get-ready-to-upgrade"></a>Préparer la mise à niveau
 
@@ -102,9 +102,9 @@ Nous vous recommandons d’utiliser des compléments tiers, de contacter le fabr
 
 ### <a name="select-the-version-of-office-you-want-to-uninstall"></a>Sélectionnez la version d’Office que vous souhaitez désinstaller
 
-- [À partir d’un PC](https://support.office.com/article/9dd49b83-264a-477a-8fcc-2fdf5dbf61d8.aspx)
+- [À partir d’un PC](https://support.microsoft.com/office/9dd49b83-264a-477a-8fcc-2fdf5dbf61d8)
 
-- [À partir d’un Mac](https://support.office.com/article/eefa1199-5b58-43af-8a3d-b73dc1a8cae3.aspx)
+- [À partir d’un Mac](https://support.microsoft.com/office/eefa1199-5b58-43af-8a3d-b73dc1a8cae3)
   
 ### <a name="known-issues-trying-to-reinstall-older-versions-of-office-after-an-uninstall"></a>Problèmes connus lors de la tentative de réinstallation d’anciennes versions d’Office après une désinstallation
 
@@ -114,7 +114,7 @@ Nous vous recommandons d’utiliser des compléments tiers, de contacter le fabr
 
  **Abonnements non pris en charge** Si votre copie d’Office a été obtenue via des abonnements abandonnés, tels qu’Office 365 Small Business Premium ou Office 365 Mid-Size Business, vous ne pourrez pas installer une version antérieure d’Office, sauf si vous disposez de la clé de produit fournie avec votre abonnement.
 
-Si vous préférez installer votre ancienne version d’Office avec la dernière version, vous pouvez consulter la liste des versions dans lesquelles cette version est prise en charge dans, [installer et utiliser différentes versions d’Office sur le même PC](https://support.office.com/article/6ebb44ce-18a3-43f9-a187-b78c513788bf.aspx). Une installation côte à côte peut être le bon choix pour vous, si, par exemple, vous avez installé des compléments tiers que vous utilisez avec votre ancienne version d’Office et que vous n’êtes pas encore sûr qu’ils sont compatibles avec la dernière version.
+Si vous préférez installer votre ancienne version d’Office avec la dernière version, vous pouvez consulter la liste des versions dans lesquelles cette version est prise en charge dans, [installer et utiliser différentes versions d’Office sur le même PC](https://support.microsoft.com/office/6ebb44ce-18a3-43f9-a187-b78c513788bf). Une installation côte à côte peut être le bon choix pour vous, si, par exemple, vous avez installé des compléments tiers que vous utilisez avec votre ancienne version d’Office et que vous n’êtes pas encore sûr qu’ils sont compatibles avec la dernière version.
 
 ## <a name="step-4---assign-office-licenses-to-users"></a>Étape 4 : attribuer des licences Office à des utilisateurs
 
@@ -122,7 +122,7 @@ Si vous ne l’avez pas encore fait, attribuez des licences aux utilisateurs de 
   
 ## <a name="step-5---install-office"></a>Étape 5 : installer Office
 
-Une fois que vous avez vérifié les utilisateurs que vous souhaitez mettre à niveau, la dernière étape consiste à installer Office, voir [Télécharger et installer ou réinstaller Office sur votre PC ou Mac](https://support.office.com/article/4414eaaf-0478-48be-9c42-23adc4716658.aspx).
+Une fois que vous avez vérifié les utilisateurs que vous souhaitez mettre à niveau, la dernière étape consiste à installer Office, voir [Télécharger et installer ou réinstaller Office sur votre PC ou Mac](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658).
   
 > [!TIP]
 > Si vous ne souhaitez pas que vos utilisateurs installent Office eux-mêmes, consultez la rubrique [gérer les paramètres de téléchargement de logiciels dans office 365](https://docs.microsoft.com/DeployOffice/manage-software-download-settings-office-365). Vous pouvez utiliser l' [outil déploiement d’Office](https://docs.microsoft.com/DeployOffice/overview-office-deployment-tool) pour télécharger le logiciel Office sur votre réseau local, puis déployer Office à l’aide de la méthode de déploiement de logiciels que vous utilisez généralement.

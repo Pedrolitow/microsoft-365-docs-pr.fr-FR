@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: b1ffe755-59e5-4369-826d-825f145a8400
 description: Envoyez un message électronique à un groupe de personnes sans avoir à taper le nom de chaque destinataire individuel en créant une distribution (liste).
-ms.openlocfilehash: cf06d408363a71e43f1a850bf108d667a141af3a
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: eaa1051c83f64a6a20d3f27eb17f2a0fef5f2b12
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44398965"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44779892"
 ---
 # <a name="create-distribution-groups-in-the-microsoft-365-admin-center"></a>Créer des groupes de distribution dans le centre d’administration Microsoft 365
   
@@ -69,7 +69,7 @@ Accédez au Centre d’administration à l’adresse <a href="https://go.microso
     
 6. Pour ajouter des utilisateurs à votre groupe de distribution, consultez la rubrique [Ajouter un utilisateur ou un contact à un groupe de distribution](../email/add-user-or-contact-to-distribution-list.md).
     
-Découvrez comment utiliser le groupe dans Outlook 2016 et Outlook sur le Web dans la rubrique [utiliser des groupes de contacts (anciennement listes de distribution) dans Outlook](https://support.office.com/article/1c97fcb2-0ed4-41e6-b401-58f9d7d40e39.aspx) . 
+Découvrez comment utiliser le groupe dans Outlook 2016 et Outlook sur le Web dans la rubrique [utiliser des groupes de contacts (anciennement listes de distribution) dans Outlook](https://support.microsoft.com/office/1c97fcb2-0ed4-41e6-b401-58f9d7d40e39) . 
   
 Consultez les [problèmes liés aux groupes de distribution](https://docs.microsoft.com/office365/troubleshoot/groups/distribution-list-issues) pour obtenir de l’aide sur les problèmes liés aux groupes de distribution. 
   

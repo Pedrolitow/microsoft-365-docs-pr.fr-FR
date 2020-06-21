@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 4c46c8cb-17d0-44b5-9776-005fced8e618
 description: Découvrez comment contrôler quels utilisateurs peuvent créer des groupes Microsoft 365.
-ms.openlocfilehash: f3de4ac0856f1281151e6d1c686d90559a5e8544
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: b64e7ac96c5a0e38583d00f8a61bd47c5304cf45
+ms.sourcegitcommit: 589f78fc0f39aff9109959ded48d146cc32fc3c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44387992"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "44761673"
 ---
 # <a name="manage-who-can-create-groups"></a>Gérer les personnes autorisées à créer des groupes
 
@@ -45,14 +45,12 @@ Cet article explique comment désactiver la possibilité de créer des groupes d
 - Microsoft Teams
 
 - Microsoft Stream
-    
-- StaffHub
-    
+
 - Planificateur
     
 - PowerBI
 
-- Feuille de route
+- Projet pour le Web et feuille de route
     
 Vous pouvez restreindre la création de groupes Microsoft 365 aux membres d’un groupe de sécurité particulier. Pour configurer ce, utilisez Windows PowerShell. Cet article vous guide tout au long des étapes nécessaires.
   
@@ -125,7 +123,7 @@ Remplacez *\<SecurityGroupName\>* par le nom du groupe de sécurité que vous av
 
 `$GroupName = "Group Creators"`
 
-Enregistrez le fichier sous le GroupCreators. ps1. 
+Enregistrez le fichier en tant que GroupCreators.ps1. 
 
 Dans la fenêtre PowerShell, accédez à l’emplacement où vous avez enregistré le fichier (tapez « CD <FileLocation> »).
 
@@ -173,7 +171,7 @@ Si, à l’avenir, vous souhaitez modifier le groupe de sécurité utilisé, vou
 
 Si vous souhaitez désactiver la restriction de création de groupe et permettre à tous les utilisateurs de créer des groupes, définissez $GroupName sur "" et $AllowGroupCreation sur "true", puis réexécutez le script.
     
-## <a name="step-4-verify-that-it-works"></a>Étape 4 : vérifier qu’elle fonctionne
+## <a name="step-3-verify-that-it-works"></a>Étape 3 : vérifier le bon fonctionnement
 
 Les modifications peuvent durer au moins 30 minutes. Vous pouvez vérifier les nouveaux paramètres en procédant comme suit :
 

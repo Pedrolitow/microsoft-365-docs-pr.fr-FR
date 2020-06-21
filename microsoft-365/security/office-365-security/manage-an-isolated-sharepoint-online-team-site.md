@@ -16,12 +16,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 79a61003-4905-4ba8-9e8a-16def7add37c
 description: Gérez un site d’équipe SharePoint Online isolé, ajoutez de nouveaux utilisateurs et groupes, supprimez des utilisateurs et des groupes et créez un sous-dossier de documents avec des autorisations personnalisées.
-ms.openlocfilehash: 05e3cf742482d34c158e14253eed9d1b99c82995
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 43329aa72b3729200007441ce73838a7d6a60f55
+ms.sourcegitcommit: 2acd9ec5e9d150389975e854c7883efc186a9432
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44036631"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "44755377"
 ---
 # <a name="manage-an-isolated-sharepoint-online-team-site"></a>Gestion d’un site d’équipe SharePoint Online isolé
 
@@ -146,11 +146,11 @@ Remove-AzureADGroupMember -MemberId (Get-AzureADGroup | Where { $_.DisplayName -
 
 ## <a name="create-a-documents-subfolder-with-custom-permissions"></a>Création d’un sous-dossier de documents avec des autorisations personnalisées
 
-Il arrive que des utilisateurs travaillant dans un site isolé aient besoin d'un espace privé pour travailler en équipe. Pour les sites SharePoint Online, vous pouvez créer un sous-dossier dans le dossier Documents du site et affecter des autorisations personnalisées. Les personnes non autorisées ne verront pas ce sous-dossier.
+In some cases, a subset of the people working within the isolated site need a more private place to collaborate. For SharePoint Online sites, you can create a subfolder in the Documents folder of the site and assign custom permissions. Those without permissions will not see the subfolder.
   
 Pour créer un sous-dossier de documents avec des autorisations personnalisées, procédez comme suit :
   
-1. Connectez-vous à un compte membre du groupe d’accès administrateurs du site. Pour obtenir de l’aide, consultez [Où se connecter à Microsoft 365](https://support.office.com/article/e9eb7d51-5430-4929-91ab-6157c5a050b4).
+1. Connectez-vous à un compte membre du groupe d’accès administrateurs du site. Pour obtenir de l’aide, consultez [Où se connecter à Microsoft 365](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4).
     
 2. Accédez au site d'équipe isolé, puis cliquez sur **Documents**.
     
@@ -166,21 +166,21 @@ Pour créer un sous-dossier de documents avec des autorisations personnalisées,
     
 8. Cliquez sur **Partagé avec > Avancé**.
     
-9. Cliquez sur **Accorder des autorisations > Partagé avec > Avancé**.
+9. Cliquez sur **Accorder des autorisations > Partagé avec > Avancé**.
     
-10. Sur la page Autorisations, cliquez sur Membres de **\<nom du site> dans la liste**.
+10. Sur la page Autorisations, cliquez sur **Membres de \<site name>** dans la liste.
     
-11. Sur la page Membres de **\<nom du site>**, cochez la case en regard du groupe d’accès Membres du site, cliquez sur **Actions**, sur **Supprimer des utilisateurs du groupe**, puis sur **OK**.
+11. Sur la page **Membres de \<site name>**, cochez la case en regard du groupe d'accès Membres du site, cliquez sur **Actions**, sur **Supprimer des utilisateurs du groupe**, puis sur **OK**.
     
-12. Pour ajouter des membres à ce sous-dossier, cliquez sur **Nouveau > Ajouter des utilisateurs**.
+12. Pour ajouter des membres à ce sous-dossier, cliquez sur **Nouveau > Ajouter des utilisateurs**.
     
 13. Dans la boîte de dialogue **Partager**, saisissez les noms des comptes d'utilisateur qui peuvent collaborer sur des fichiers du sous-dossier, puis cliquez sur **Partager**.
     
 14. Actualisez la page web pour afficher les nouveaux résultats.
     
-15. Sous **Groupes** dans le volet de navigation de gauche, cliquez sur le groupe Visiteurs de **\<nom du site>** et suivez les étapes 11 à 14 pour indiquer les comptes d’utilisateur qui peuvent afficher les fichiers du sous-dossier (selon vos besoins).
+15. Sous **Groupes** dans le volet de navigation de gauche, cliquez sur le groupe **Visiteurs de \<site name>** et suivez les étapes 11 à 14 pour indiquer les comptes d'utilisateur qui peuvent afficher les fichiers du sous-dossier (selon vos besoins).
     
-16. Sous **Groupes** dans le volet de navigation de gauche, cliquez sur le groupe Propriétaires de **\<nom du site>** et suivez les étapes 11 à 14 pour indiquer les comptes d’utilisateur qui peuvent gérer les autorisations du sous-dossier (selon vos besoins).
+16. Sous **Groupes** dans le volet de navigation de gauche, cliquez sur le groupe **Propriétaires de \<site name>** et suivez les étapes 11 à 14 pour indiquer les comptes d'utilisateur qui peuvent gérer les autorisations du sous-dossier (selon vos besoins).
     
 17. Fermez l’onglet **Utilisateurs et groupes** dans votre navigateur.
     

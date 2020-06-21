@@ -17,18 +17,18 @@ search.appverid: MET150
 ms.assetid: ba780859-0297-4114-a258-2b2809bab9e6
 ROBOTS: NOINDEX, NOFOLLOW
 description: Découvrez comment accéder à la messagerie électronique à partir de votre appareil mobile.
-ms.openlocfilehash: 594091776025adcb7bbd92e2fa982cda36d50053
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: dc75f0e873d6ab1ea2d734188e5e050f898c493c
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400195"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780300"
 ---
 # <a name="options-for-accessing-email-from-your-mobile-device"></a>Options d’accès à la messagerie électronique à partir de votre appareil mobile
 
 Votre organisation a configuré des paramètres qui contrôlent les applications mobiles que vous pouvez utiliser pour accéder à votre compte professionnel pour la messagerie, le calendrier et les contacts.
   
-Les applications mobiles Outlook pour Android et Outlook pour iOS sont conçues pour votre messagerie professionnelle ou scolaire, et sont les seules applications qui fournissent des fonctionnalités telles que la [boîte de réception ciblée](https://support.office.com/article/f445ad7f-02f4-4294-a82e-71d8964e3978.aspx), qui conserve des e-mails importants à l’avant et au centre, et [Assistant Planification](https://www.microsoft.com/?ref=go), qui vous aide à trouver les heures de réunion qui travaillent avec des collègues et trouve simplement les salles de conférence disponibles.
+Les applications mobiles Outlook pour Android et Outlook pour iOS sont conçues pour votre messagerie professionnelle ou scolaire, et sont les seules applications qui fournissent des fonctionnalités telles que la [boîte de réception ciblée](https://support.microsoft.com/office/f445ad7f-02f4-4294-a82e-71d8964e3978), qui conserve des e-mails importants à l’avant et au centre, et [Assistant Planification](https://www.microsoft.com/?ref=go), qui vous aide à trouver les heures de réunion qui travaillent avec des collègues et trouve simplement les salles de conférence disponibles.
   
 ## <a name="end-user-experience"></a>Expérience de l’utilisateur final
 
@@ -38,7 +38,7 @@ Votre organisation exige que vous utilisiez les applications mobiles Outlook pou
   
 ![Exemple de courrier électronique pour utiliser Outlook pour synchroniser le courrier électronique](../../media/798d942a-4181-4dcb-8039-cd9f2edd9723.png)
   
-Consultez [optimiser l’application mobile Outlook pour votre téléphone iOS ou Android](https://support.office.com/article/de075b19-b73c-4d8a-841b-459982c7e890.aspx) pour plus de fonctionnalités Outlook. Accédez au [Centre d’aide d’Outlook pour iOS et Android](https://support.office.com/article/cd84214e-a5ac-4e95-9ea3-e07f78d0cde6.aspx) si vous rencontrez des problèmes. 
+Consultez [optimiser l’application mobile Outlook pour votre téléphone iOS ou Android](https://support.microsoft.com/office/de075b19-b73c-4d8a-841b-459982c7e890) pour plus de fonctionnalités Outlook. Accédez au [Centre d’aide d’Outlook pour iOS et Android](https://support.microsoft.com/office/cd84214e-a5ac-4e95-9ea3-e07f78d0cde6) si vous rencontrez des problèmes. 
   
  **Toute application de messagerie**
   

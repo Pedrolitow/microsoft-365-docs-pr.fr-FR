@@ -1,5 +1,5 @@
 ---
-title: Partager des sites et des fichiers en externe
+title: Partager des sites et des fichiers avec des utilisateurs invités
 f1.keywords: NOCSH
 ms.author: twerner
 author: twernermsft
@@ -21,14 +21,14 @@ search.appverid:
 ms.assetid: 89502322-bfbb-43d6-9207-4030f8ce26e0
 ROBOTS: NOINDEX
 description: 'Découvrez comment partager des sites et des fichiers avec des personnes extérieures à l’organisation. '
-ms.openlocfilehash: 6990b4ffe45af1a591c72e36c1348d1e804e829b
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 79760f662ec68d2ac9089586fd9cbf38b0bd9897
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399553"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780048"
 ---
-# <a name="share-sites-and-files-externally"></a>Partager des sites et des fichiers en externe
+# <a name="share-sites-and-files-with-guest-users"></a>Partager des sites et des fichiers avec des utilisateurs invités
 
 ::: moniker range="o365-21vianet"
 
@@ -62,7 +62,7 @@ Les réponses à ces questions vous aideront à planifier votre stratégie de pa
 |Partager un document, mais ne pas exiger d’authentification.  <br/> |Partager un lien vers un document qui n'est pas sensible ni confidentiel avec des personnes extérieures à votre organisation afin qu'elles puissent soit l'afficher, soit le mettre à jour en y ajoutant leurs commentaires. Ces personnes n’ont pas besoin d’accéder au contenu sur le site.  <br/> |
    
 > [!IMPORTANT]
-> Lorsque vous désactivez le partage externe, les personnes extérieures à l’organisation qui a actuellement accès n’ont plus accès. Si vous réactivez le partage externe, l’accès sera restauré pour ces personnes. Pour empêcher un utilisateur d’accéder à un contenu partagé, [supprimez-le du groupe Microsoft 365](/office365/admin/create-groups/add-or-remove-members-from-groups), supprimez ses autorisations du site ou [Arrêtez de partager le fichier ou le dossier avec ceux-ci](https://support.office.com/article/0a36470f-d7fe-40a0-bd74-0ac6c1e13323). 
+> Lorsque vous désactivez le partage externe, les personnes extérieures à l’organisation qui a actuellement accès n’ont plus accès. Si vous réactivez le partage externe, l’accès sera restauré pour ces personnes. Pour empêcher un utilisateur d’accéder à un contenu partagé, [supprimez-le du groupe Microsoft 365](/office365/admin/create-groups/add-or-remove-members-from-groups), supprimez ses autorisations du site ou [Arrêtez de partager le fichier ou le dossier avec ceux-ci](https://support.microsoft.com/office/0a36470f-d7fe-40a0-bd74-0ac6c1e13323). 
   
 ## <a name="enable-external-sharing-at-the-organization-level"></a>Activer le partage externe au niveau de l’Organisation
 

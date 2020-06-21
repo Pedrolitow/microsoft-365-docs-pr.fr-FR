@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 38fb3333-bfcc-4340-a37b-deda509c2093
 description: Obtenez une vue d’ensemble du centre de messages Microsoft 365 et de son rôle dans la gestion des modifications.
-ms.openlocfilehash: c243bb551d98cb0ea3c177cf098cccd035243a06
-ms.sourcegitcommit: b03a7ad0a80f8b839f40b8d396ab3a049491a12f
+ms.openlocfilehash: f4d99bedaab6efb4dfeccf7610e54bb5f8effeb7
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44694958"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780084"
 ---
 # <a name="message-center"></a>Centre de messages
 
@@ -164,7 +164,7 @@ Si l’administration est distribuée au sein de votre organisation, vous ne sou
 Nous utilisons la traduction automatique pour afficher automatiquement les messages dans votre langue. Pour plus d’informations sur la définition de votre langue, consultez la [traduction linguistique pour les publications du centre de messages](language-translation-for-message-center-posts.md) .
   
 > [!NOTE]
-> Le résumé hebdomadaire et tous les billets envoyés sont envoyés en anglais uniquement. Les destinataires peuvent utiliser le [convertisseur pour Outlook](https://support.office.com/article/3d7e12ed-99d6-406e-a453-b9db0d9653fa.aspx) pour lire le message dans leur langue préférée. 
+> Le résumé hebdomadaire et tous les billets envoyés sont envoyés en anglais uniquement. Les destinataires peuvent utiliser le [convertisseur pour Outlook](https://support.microsoft.com/office/3d7e12ed-99d6-406e-a453-b9db0d9653fa) pour lire le message dans leur langue préférée. 
   
 ### <a name="admin-roles-that-dont-have-access-to-the-message-center"></a>Rôles d’administrateur qui n’ont pas accès au centre de messages
 

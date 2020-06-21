@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: eb926624-018b-4486-bf11-5fba6ee4d645
 description: Découvrez ce que vous devez faire pour configurer votre Microsoft 365 pour les entreprises.
-ms.openlocfilehash: 7c329e8f4df5076a9f4826d18e8a82bcc7cd6dd8
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 7509e2c4801adbca492e5f5446c5b97eae31dccf
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44398845"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44778948"
 ---
 # <a name="plan-your-setup-of-microsoft-365-for-business"></a>Planifier la configuration de Microsoft 365 pour les entreprises
 
@@ -72,7 +72,7 @@ Il existe deux scénarios qui incluent la migration de données ou d’utilisate
 
     1. [Ajoutez vos employés à Microsoft 365](../add-users/add-users.md) afin qu’ils puissent télécharger et installer les applications Office.
 
-    2. [Téléchargez et installez les applications Office](https://support.office.com/article/4414eaaf-0478-48be-9c42-23adc4716658.aspx) afin d'utiliser Word, Excel et PowerPoint sur votre ordinateur et vos appareils.
+    2. [Téléchargez et installez les applications Office](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658) afin d'utiliser Word, Excel et PowerPoint sur votre ordinateur et vos appareils.
 
     3. [Configurez Microsoft teams](#plan-for-teams) à utiliser pour vos réunions.
 
@@ -111,9 +111,9 @@ Si vous envisagez d’utiliser Microsoft 365 pour votre compte de courrier, vous
 
 ## <a name="plan-for-file-storage-and-migration"></a>Planifier le stockage et la migration de fichiers
 
-Microsoft 365 fournit un stockage cloud pour les particuliers, les petites organisations et les entreprises. Pour plus d’informations sur les éléments à stocker [dans, voir où stocker des documents dans Microsoft 365](https://support.office.com/article/c7c20284-bc94-47f4-9728-d28e9daf0790.aspx).
+Microsoft 365 fournit un stockage cloud pour les particuliers, les petites organisations et les entreprises. Pour plus d’informations sur les éléments à stocker [dans, voir où stocker des documents dans Microsoft 365](https://support.microsoft.com/office/c7c20284-bc94-47f4-9728-d28e9daf0790).
   
-- **Vous pouvez déplacer des centaines de fichiers** vers [OneDrive](https://support.office.com/article/45114744-6D42-45CD-8975-F9617819BDEB.aspx) ou vers un [site d’équipe SharePoint](https://support.office.com/article/da549fb1-1fcb-4167-87d0-4693e93cb7a0.aspx#__toc384119242). Vous pouvez charger jusqu'à 100 fichiers à la fois. Évitez de charger des fichiers d'une taille supérieure à 2 Go, soit la taille de fichier maximale par défaut.
+- **Vous pouvez déplacer des centaines de fichiers** vers [OneDrive](https://support.microsoft.com/office/45114744-6D42-45CD-8975-F9617819BDEB) ou vers un [site d’équipe SharePoint](https://support.microsoft.com/office/da549fb1-1fcb-4167-87d0-4693e93cb7a0#__toc384119242). Vous pouvez charger jusqu'à 100 fichiers à la fois. Évitez de charger des fichiers d'une taille supérieure à 2 Go, soit la taille de fichier maximale par défaut.
   
 - **Si vous souhaitez déplacer plusieurs milliers de fichiers** vers le stockage Microsoft 365, consultez les [limites de SharePoint Online](https://go.microsoft.com/fwlink/p/?LinkID=856113). Nous vous recommandons de recourir à un outil de migration ou de faire appel à un [partenaire](https://go.microsoft.com/fwlink/?linkid=391089) pour vous aider à effectuer la migration. Pour plus d'informations sur la migration d'un grand nombre de fichiers, voir le [Guide de l'utilisateur pour la migration SharePoint Online et OneDrive](https://go.microsoft.com/fwlink/?LinkId=723574).
   
