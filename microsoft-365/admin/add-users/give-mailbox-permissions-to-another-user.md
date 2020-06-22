@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 1dbcf12f-a9de-4d1d-b0b3-a227f8a736d8
 description: "Découvrez comment accorder le droit à un utilisateur d'accéder à la boîte aux lettres d'un autre utilisateur. Cela permet à l’utilisateur de lire et d’envoyer des messages électroniques à partir de la boîte aux lettres d'un autre utilisateur. "
-ms.openlocfilehash: 3fb920fb6f15a2ca48c5676e9b25afd1aa5263f1
-ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
+ms.openlocfilehash: dafe0f8c8f7d65b2721b70f6c132d179c461a89b
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/31/2020
-ms.locfileid: "44431664"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780600"
 ---
 # <a name="give-mailbox-permissions-to-another-user---admin-help"></a>Accorder des autorisations de boîte aux lettres à un autre utilisateur – Aide de l’administrateur
 
@@ -37,7 +37,7 @@ Si vous cherchez des informations concernant la création et la gestion de boît
     
 ## <a name="looking-to-set-up-mailbox-permissions"></a>Vous cherchez à configurer des autorisations de boîte aux lettres ?
 
-Les autorisations de boîte aux lettres vous permettent d’accorder un accès en lecture/écriture à une boîte aux lettres à un utilisateur autre que son propriétaire. L’article qui suit vous fournira les informations dont vous avez besoin pour configurer et utiliser cette fonctionnalité :
+Mailbox permissions allow you to give read/write access to a mailbox to another user. The articles below might give you the help you need to set up and use this feature:
   
  **Configuration des autorisations :**
   
@@ -55,7 +55,7 @@ lorsque vous avez défini les autorisations, la propagation des modifications da
   
  **Comment utiliser une boîte aux lettres une fois les autorisations configurées :**
   
-Lorsque vous avez reçu l’accès à une boîte aux lettres, plusieurs méthodes s’offrent à vous pour y accéder. Pour obtenir de l’aide sur cette fonction, consultez cet article : [Accéder à la boîte aux lettres d’une autre personne](https://support.office.com/article/Access-another-person-s-mailbox-A909AD30-E413-40B5-A487-0EA70B763081.aspx)
+Lorsque vous avez reçu l’accès à une boîte aux lettres, plusieurs méthodes s’offrent à vous pour y accéder. Pour obtenir de l’aide sur cette fonction, consultez cet article : [Accéder à la boîte aux lettres d’une autre personne](https://support.microsoft.com/office/A909AD30-E413-40B5-A487-0EA70B763081)
   
 ## <a name="send-email-from-another-users-mailbox"></a>Envoyer du courrier à partir de la boîte aux lettres d’un autre utilisateur
 
@@ -202,6 +202,6 @@ Lorsque vous avez reçu l’accès à une boîte aux lettres, plusieurs méthode
 
 Vous voulez savoir comment envoyer du courrier à partir de la boîte aux lettres d’un autre utilisateur ? Consultez les rubriques suivantes :
   
-- [Gérer les éléments de courrier et de calendrier d’une autre personne](https://support.office.com/article/afb79d6b-2967-43b9-a944-a6b953190af5.aspx)
+- [Gérer les éléments de courrier et de calendrier d’une autre personne](https://support.microsoft.com/office/afb79d6b-2967-43b9-a944-a6b953190af5)
     
-- [Envoyer du courrier pour le compte d’une autre personne ou d’un groupe](https://support.office.com/article/0f4964af-aec6-484b-a65c-0434df8cdb6b.aspx)
+- [Envoyer du courrier pour le compte d’une autre personne ou d’un groupe](https://support.microsoft.com/office/0f4964af-aec6-484b-a65c-0434df8cdb6b)

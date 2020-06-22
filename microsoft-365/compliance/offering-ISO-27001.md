@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: c02e27ccf6b4c1a1c03849d1f599acef43385668
-ms.sourcegitcommit: dbc9ff159ed41160d8883c8a9787eba50b45f50b
+ms.openlocfilehash: da379da565f853561141888c4f275852f0044103
+ms.sourcegitcommit: 89636f35b0194986f156302fc1bb96af25d4805b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/18/2020
-ms.locfileid: "44278457"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44799999"
 ---
 # <a name="isoiec-270012013-information-security-management-standards"></a>Normes de gestion de la sécurité des informations ISO/IEC 27001:2013
 
@@ -48,7 +48,7 @@ Découvrez les avantages de la norme ISO/IEC 27001 sur le cloud Microsoft : [t
 - Microsoft Healthcare Bot
 - Intune
 - Bureau géré Microsoft
-- Le service cloud de Power Automate (anciennement Microsoft Flow), soit en service autonome, soit inclus dans un plan ou une suite Office 365 ou Dynamics 365
+- Service Cloud Power Automate (anciennement Microsoft Flow), soit en service autonome, soit inclus dans un plan ou une suite Office 365 ou Dynamics 365
 - [Office 365, Office 365 U.S. Government, Office 365 U.S. Government Defense](https://go.microsoft.com/fwlink/p/?linkid=2077751)
 - Office 365 Allemagne
 - OMS Service Map
@@ -59,6 +59,7 @@ Découvrez les avantages de la norme ISO/IEC 27001 sur le cloud Microsoft : [t
 - [Services professionnels Microsoft](https://go.microsoft.com/fwlink/p/?linkid=2100022)
 - Microsoft Stream
 - Spécialistes des menaces Microsoft
+- Microsoft Translator
 
 ## <a name="audits-reports-and-certificates"></a>Audits, rapports et certificats
 

@@ -20,18 +20,18 @@ search.appverid:
 - MOE150
 ms.assetid: 613a845c-4b71-41de-b331-acdcf5b6625d
 description: "Découvrez la configuration d'une boîte de réception prioritaire pour tout ou partie des utilisateurs de votre organisation. "
-ms.openlocfilehash: 3d719208caf233ebcc4825ef04647bf06c68d93e
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: f56e85e79fcf17cde89ec3d6094ca757ccf0cc68
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44398977"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44779928"
 ---
 # <a name="configure-focused-inbox-for-everyone-in-your-organization"></a>Configurez la boîte de réception Prioritaire pour tous les membres de votre organisation
 
-  Si vous êtes responsable de la configuration de messagerie pour TOUS LES UTILISATEURS de votre entreprise, cet article s’adresse à vous ! Il explique comment la personnaliser ou la désactiver pour votre entreprise et apporte des réponses aux [questions fréquemment posées](#faq-for-focused-inbox).  <br/> Si vous voulez désactiver la boîte de réception Prioritaire uniquement pour vous, consultez l’article [Désactiver la boîte de réception Prioritaire](https://support.office.com/article/f714d94d-9e63-4217-9ccb-6cb2986aa1b2.aspx).  
+  Si vous êtes responsable de la configuration de messagerie pour TOUS LES UTILISATEURS de votre entreprise, cet article s’adresse à vous ! Il explique comment la personnaliser ou la désactiver pour votre entreprise et apporte des réponses aux [questions fréquemment posées](#faq-for-focused-inbox).  <br/> Si vous voulez désactiver la boîte de réception Prioritaire uniquement pour vous, consultez l’article [Désactiver la boîte de réception Prioritaire](https://support.microsoft.com/office/f714d94d-9e63-4217-9ccb-6cb2986aa1b2).  
    
-Si vous souhaitez que vos utilisateurs reçoivent les e-mails spécifiques à l’entreprise, comme les e-mails des services Ressources humaines et Paie, vous pouvez configurer la boîte de réception Prioritaire pour que ceux-ci apparaissent dans l’affichage Prioritaire. Vous pouvez également faire apparaître la boîte de réception Prioritaire dans les boîtes aux lettres des utilisateurs de votre organisation.
+If you want to be sure that your users receive business-specific email messages, for example, from HR or payroll, you can configure Focused Inbox so these messages reach the Focused view. You can also control whether users in your organization see the Focused Inbox in their mailbox.
   
 ## <a name="turn-focused-inbox-on-or-off-in-your-organization"></a>Activez ou désactivez la boîte de réception Prioritaire dans votre organisation
 
@@ -39,11 +39,11 @@ Pour activer ou désactiver la boîte de réception Prioritaire pour tous les ut
   
  **Pour désactiver la boîte de réception Prioritaire :**
   
-L’exemple PowerShell suivant **désactive** la boîte de réception Prioritaire au sein de votre organisation. Mais cela n’empêche pas vos utilisateurs d’y accéder. S’ils le souhaitent, ils peuvent toujours réactiver la boîte de réception Prioritaire sur chacun de leurs clients.  
+The following PowerShell example turns Focused Inbox **Off** in your organization. However, it doesn't block the availability of the feature for your users. If they want, they can still re-enable Focused Inbox again on each of their clients. 
   
 1. [Vous connecter à Exchange Online à l'aide de Remote PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=396554).
     
-2. Pour effectuer ces procédures, vous devez disposer des autorisations appropriées. Pour connaître les autorisations requises, reportez-vous à l'entrée « Règles de transport » de [Autorisations relatives à la conformité et à la stratégie de messagerie](https://go.microsoft.com/fwlink/p/?LinkId=829796).
+2. You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Transport rules" entry in [Messaging policy and compliance permissions](https://go.microsoft.com/fwlink/p/?LinkId=829796).
     
 3. Exécutez l’applet de commande **Get-OrganizationConfig**. 
     
@@ -73,23 +73,23 @@ Get-OrganizationConfig
 
 ## <a name="what-do-users-see-after-i-turn-on-focused-inbox"></a>Que voient les utilisateurs une fois la boîte de réception Prioritaire activée ? 
 
-Vos utilisateurs ne verront l’affichage Prioritaire qu’après avoir fermé et redémarré Outlook. Un conseil leur donnant la possibilité d’utiliser la nouvelle boîte de réception Prioritaire apparaît alors dans l’interface utilisateur d’Outlook.
+Your users will see the Focused view only after they close and restart Outlook. When they restart Outlook, they'll see a Tip in the Outlook user interface giving them to the option to use the new Focused Inbox.
   
 ![Image de la boîte de réception Prioritaire lorsqu’un utilisateur ouvre Outlook sur le web pour la première fois.](../../media/f6ef79e7-0f4c-4a23-b6f0-7c15d927b5f0.png)
   
-Si vous passez du Courrier pêle-mêle à la boîte de réception Prioritaire, ils peuvent décider d'activer (« Essayer ») ou d'ignorer la fonctionnalité. Si l'utilisateur dispose de plusieurs clients (pris en charge), ils peuvent activer/désactiver la boîte de réception Prioritaire individuellement dans chacun d'eux. Le conseil se présente ainsi :
+If you're switching from Clutter to Focused Inbox, they can decide to enable it ("Try it") or dismiss the feature. If the user has multiple (supported) clients, they can enable/disable Focused Inbox individually on each one. The tip looks like this:
   
 ![Une image illustrant l’apparence de la boîte de réception Prioritaire lorsqu’elle est déployée pour vos utilisateurs et qu’Outlook est rouvert.](../../media/c034f969-d650-4333-88f1-dd10ade0a94c.png)
   
-Lorsqu’un utilisateur décide d’utiliser la boîte de réception Prioritaire, Courrier pêle-mêle est désactivé automatiquement. Le dossier Courrier pêle-mêle est converti en un dossier standard que l’utilisateur peut renommer ou supprimer.
+When a user decides to start using Focused Inbox, Clutter gets disabled automatically. The Clutter folder gets converted into a standard folder, that allows the user to rename or delete it.
   
 ## <a name="turn-focused-inbox-on-or-off-for-specific-users"></a>Activer ou désactiver la boîte de réception Prioritaire pour des utilisateurs spécifiques
 
-Cet exemple **désactive** la boîte de réception Prioritaire pour Tim Matthews, de l’organisation Contoso. Mais cela ne l’empêche pas d’y accéder. S’il le souhaite, il peut toujours réactiver la boîte de réception Prioritaire sur chacun de ses clients. 
+This example turns Focused Inbox **Off** for Tim Matthews in the Contoso organization. However, it doesn't block the availability of the feature to him. If his wants, he can still re-enable Focused Inbox again on each of his clients. 
   
 1. [Vous connecter à Exchange Online à l'aide de Remote PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=396554).
     
-2. Pour effectuer ces procédures, vous devez disposer des autorisations appropriées. Pour connaître les autorisations requises, reportez-vous à l’entrée « Règles de transport » de la rubrique Autorisations relatives à la conformité et à la stratégie de messagerie.
+2. You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Transport rules" entry in the Messaging policy and compliance permissions topic.
     
 3. Exécutez l’applet de commande **Get-FocusedInbox**, par exemple : 
     
@@ -129,7 +129,7 @@ Cet exemple **désactive** la boîte de réception Prioritaire pour Tim Matthews
 
 1. [Vous connecter à Exchange Online à l'aide de Remote PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=396554).
     
-2. Pour effectuer ces procédures, vous devez disposer des autorisations appropriées. Pour connaître les autorisations requises, reportez-vous à l'entrée « Règles de transport » de [Autorisations relatives à la conformité et à la stratégie de messagerie](https://go.microsoft.com/fwlink/p/?LinkId=829796).
+2. You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Transport rules" entry in [Messaging policy and compliance permissions](https://go.microsoft.com/fwlink/p/?LinkId=829796).
 
 3. Exécutez la commande suivante pour remettre tous les messages du « Service Paie », par exemple, à la boîte de réception Prioritaire.
     
@@ -147,7 +147,7 @@ Vérifiez les en-têtes des messages e-mail pour déterminer si les messages son
  
 ## <a name="turn-onoff-clutter"></a>Activer/désactiver la fonctionnalité Courrier pêle-mêle
  
-Nous avons reçu des indications selon lesquelles le Courrier pêle-mêle a soudainement cessé de fonctionner pour certains utilisateurs. Dans ce cas, vous pouvez le réactiver pour des utilisateurs spécifiques. Voir [Configurer le Courrier pêle-mêle pour votre organisation](../email/configure-clutter.md).
+We've received reports that Clutter suddenly stopped working for some users. If this happens, you can enable it again for specific users. See [Configure Clutter for your organization](../email/configure-clutter.md).
  
 ## <a name="faq-for-focused-inbox"></a>FAQ sur la boîte de réception Prioritaire
 
@@ -155,7 +155,7 @@ Voici des réponses aux questions fréquemment posées sur la boîte de récepti
 
 ### <a name="can-i-control-how-i-roll-out-focused-inbox-in-my-organization"></a>Puis-je contrôler le déploiement de la boîte de réception Prioritaire au sein de mon organisation ?
 
-Oui. Vous pouvez activer ou désactiver la boîte de réception Prioritaire pour l’ensemble de votre organisation ou pour des utilisateurs spécifiques. Voir ci-dessus.
+Yes. You can turn Focused Inbox on or off for your entire organization, or you can turn it on or off for specified users. See above.
   
 ### <a name="is-the-focused-inbox-feature-only-available-for-office-2016-clients"></a>La fonctionnalité boîte de réception Prioritaire est-elle disponible pour les clients Office 2016 ?
 
@@ -167,17 +167,17 @@ Lorsque vous activez ou désactivez la boîte de réception Prioritaire, les par
   
 ### <a name="what-happens-to-clutter-once-i-turn-on-focused-inbox"></a>Que devient le courrier pêle-mêle lorsque j’active la boîte de réception Prioritaire ?
 
-Après avoir effectué la transition, vous ne recevrez plus d’e-mails moins actionables dans le dossier Courrier pêle-mêle. Au lieu de cela, les e-mails seront répartis entre les onglets Prioritaire et Autres dans votre boîte de réception. Le même algorithme qui déplaçait les éléments vers le dossier Courrier pêle-mêle est utilisé pour la fonctionnalité Boîte de réception Prioritaire. Cela signifie que les e-mails qui étaient auparavant paramétrés pour être déplacés dans le dossier Courrier pêle-mêle seront déplacés dans la boîte de réception Autres. Tous les e-mails déjà présents dans votre dossier Courrier pêle-mêle y resteront tant que vous n’aurez pas décidé de les supprimer ou de les déplacer.
+After switching, you'll no longer receive less actionable email in the Clutter folder. Instead, email will be split between the Focused and Other tabs in your inbox. The same algorithm that moved items to the Clutter folder now powers Focused Inbox, meaning that any emails that were set to move to Clutter will now be moved to Other. Any messages already in your Clutter folder will remain there until you decide to delete or move them.
   
 Consultez ce billet rédigé par [Tony Redmond](https://www.petri.com/author/tony-redmond), Microsoft MVP : [De quelle façon la boîte de réception Prioritaire remplace-t-elle le courrier pêle-mêle dans Office 365 ?](https://www.petri.com/focused-inbox-office-365)
   
 ### <a name="can-i-keep-users-on-clutter-what-is-microsofts-recommendation-when-it-comes-to-using-clutter-vs-focused-inbox"></a>Puis-je maintenir des utilisateurs sur le courrier pêle-mêle ? Microsoft recommande-t-il d'utiliser le courrier pêle-mêle ou la boîte de réception Prioritaire ?
 
-Oui, vous pouvez maintenir des utilisateurs sur le courrier pêle-mêle et désactiver la boîte de réception Prioritaire. Toutefois, à terme, le courrier pêle-mêle finira par être remplacé par la boîte de réception Prioritaire, par conséquent Microsoft vous recommande de migrer vers la boîte de réception Prioritaire dès maintenant. Pour en savoir plus sur quand utiliser la fonctionnalité Courrier pêle-mêle avec Exchange Online, consultez ce billet de blog : [Mise à jour sur la boîte de réception Prioritaire et nos projets pour le courrier pêle-mêle](https://techcommunity.microsoft.com/t5/Outlook-Blog/Update-on-Focused-Inbox-and-our-plans-for-Clutter/ba-p/136448).
+Yes, you can keep users on Clutter and disable Focused Inbox, however, eventually Clutter will be fully replaced with Focused Inbox so Microsoft's recommends moving to Focused Inbox now. To learn more about when you use Clutter with Exchange Online, see this blog post: [Update on Focused Inbox and our plans for Clutter](https://techcommunity.microsoft.com/t5/Outlook-Blog/Update-on-Focused-Inbox-and-our-plans-for-Clutter/ba-p/136448).
   
 ### <a name="should-i-disable-clutter-for-my-end-users-if-we-are-going-to-move-everyone-to-focused-inbox"></a>Dois-je désactiver le courrier pêle-mêle pour mes utilisateurs finaux si nous migrons tout le monde vers la boîte de réception Prioritaire ?
 
-Non. Il est possible de désactiver le courrier pêle-mêle sur une boîte aux lettres explicite en exécutant l'applet de commande Set-Clutter. En revanche, dans ce cas, les messages précédemment redirigés vers le dossier Courrier pêle-mêle resteront dans la boîte de réception et le propriétaire de la boîte aux lettres devra les traiter en attendant que son client soit mis à niveau vers une version prenant en charge la fonctionnalité Boîte de réception Prioritaire. Il est donc préférable de ne pas désactiver le courrier pêle-mêle avant que les clients mis à niveau soient disponibles.
+No. It's possible to disable Clutter for a mailbox explicitly by running the Set-Clutter cmdlet. However, if you do this, the mailbox owner will see messages that were previously redirected to the Clutter folder remain in the Inbox and they'll have to process those messages until their client is upgraded to a version that supports the Focused Inbox. It's therefore best not to disable Clutter until the upgraded clients are available.
   
 ### <a name="why-are-there-two-different-cmdlets-for-managing-focused-inbox"></a>Pourquoi existe-t-il deux applets de commande distinctes pour gérer de la boîte de réception Prioritaire ?
 
@@ -189,12 +189,12 @@ Deux états sont associés à la boîte de réception Prioritaire.
     
 ### <a name="how-does-outlook-decide-to-show-the-focused-inbox-experience-with-these-two-states"></a>Comment Outlook détermine-t-il l’expérience de boîte de réception Prioritaire affichée avec ces deux états ?
 
-Outlook choisit l’applet de commande dont l’horodatage est le plus récent. Par défaut, les deux horodatages sont « null », auquel cas la fonctionnalité est activée.
+Outlook decides to show the experience by choosing which cmdlet has the latest time stamp. By default, both time stamps are "null" and in this case, the feature is enabled.
   
 ### <a name="why-does-the-get-focusedinbox-cmdlet-return-true-when-ive-turned-focused-inbox-off-in-my-organization"></a>Pourquoi l’applet de commande Get-FocusedInbox renvoie « true » alors que j’ai désactivé la boîte de réception Prioritaire au sein de mon organisation ?
 
-Deux applets de commande permettent de contrôler la boîte de réception Prioritaire. Lorsque vous exécutez Get-FocusedInbox pour une boîte aux lettres, l’état Niveau boîte aux lettres de la fonctionnalité est renvoyé. L’expérience Outlook choisie dépend du dernier état d’applet de commande qui a été modifié.
+There are two cmdlets for controlling Focused Inbox. When you run Get-FocusedInbox for a mailbox, it returns the mailbox level state of the feature. The experience in Outlook is chosen based on which cmdlet state was last modified.
   
 ### <a name="can-i-run-a-script-to-see-who-has-turned-on-focused-inbox"></a>Puis-je exécuter un script pour voir qui a activé la boîte de réception Prioritaire ?
 
-Non et c’est tout à fait normal. L’activation de la boîte de réception Prioritaire est en effet un paramètre côté client. De ce fait, tout ce que l’applet de commande peut faire, c’est vous indiquer si la boîte aux lettres de l’utilisateur est éligible pour l’expérience client. Il est possible qu’elle soit simultanément activée dans certains clients et désactivée dans d’autres, par exemple, activée dans les applications Outlook et Outlook Mobile, mais désactivée dans Outlook sur le web.
+No, and this is by design. Focused Inbox enablement is a client side setting, so all the cmdlet can do is tell you if the user's mailbox is eligible for the client experience. It is possible for it to be simultaneously enabled in some clients and disabled in others, for example, enabled in Outlook app and Outlook Mobile but disabled in Outlook on the web.

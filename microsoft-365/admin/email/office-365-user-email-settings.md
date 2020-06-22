@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 03083fdf-bc52-409a-b2ac-2a5f5c308fa0
 description: Cet article vous offre des informations sur la gestion des paramètres pour vos utilisateurs.
-ms.openlocfilehash: 65396339f099628911da1dbaaef83bc18181e680
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 5fa8674b8e188605ba3f6339fd6384c37630c917
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400039"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780204"
 ---
 # <a name="user-email-settings"></a>Paramètres de messagerie de l'utilisateur
 
@@ -40,7 +40,7 @@ Le tableau suivant présente les différents paramètres de messagerie que vous 
 |Afficher dans une liste d’adresses globale| Afficher dans une liste d’adresses globale vous permet d’activer ou de désactiver la visibilité de la boîte aux lettres de l’utilisateur dans la liste d’adresses de l’organisation. |
 |Transfert de messages électroniques|Le transfert de courrier électronique vous permet de transférer une adresse de messagerie vers un utilisateur. Vous pouvez procéder de la sorte si la personne a plusieurs adresses de courrier et qu’elle souhaite recevoir les e-mails de toutes ses adresses de courrier. Si vous souhaitez en savoir plus, consultez la page [Configurer le transfert de courrier dans Microsoft 365](configure-email-forwarding.md).|
 |Réponses automatiques|Réponses automatiques vous permet de définir une réponse automatique lorsqu’une personne envoie un e-mail vers l’adresse de courrier d'une personne. Vous pouvez procéder de la sorte si un employé quitte votre entreprise et que vous voulez informer l’expéditeur du courrier.|
-|Autres actions| **Conversion en boîte aux lettres partagée** vous permet de convertir la boîte aux lettres d'un utilisateur en boîte aux lettres partagée. Vous pouvez procéder de la sorte si la personne quitte votre organisation et que vous voulez conserver les données de sa boîte aux lettres pendant une certaine période. Consultez [Convertir une boîte aux lettres d’utilisateur en boîte aux lettres partagée](convert-user-mailbox-to-shared-mailbox.md) et [Ouvrir et utiliser une boîte aux lettres partagée](https://support.office.com/article/open-and-use-a-shared-mailbox-in-outlook-d94a8e9e-21f1-4240-808b-de9c9c088afd).</br>**Modifier les propriétés Exchange** vous permet de gérer d’autres tâches Exchange Online en utilisant le Centre d’administration Exchange. Voir la [Gestion de boîtes aux lettres utilisateur dans Exchange Online](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-user-mailboxes/manage-user-mailboxes).|
+|Autres actions| **Conversion en boîte aux lettres partagée** vous permet de convertir la boîte aux lettres d'un utilisateur en boîte aux lettres partagée. Vous pouvez procéder de la sorte si la personne quitte votre organisation et que vous voulez conserver les données de sa boîte aux lettres pendant une certaine période. Consultez [Convertir une boîte aux lettres d’utilisateur en boîte aux lettres partagée](convert-user-mailbox-to-shared-mailbox.md) et [Ouvrir et utiliser une boîte aux lettres partagée](https://support.microsoft.com/office/d94a8e9e-21f1-4240-808b-de9c9c088afd).</br>**Modifier les propriétés Exchange** vous permet de gérer d’autres tâches Exchange Online en utilisant le Centre d’administration Exchange. Voir la [Gestion de boîtes aux lettres utilisateur dans Exchange Online](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-user-mailboxes/manage-user-mailboxes).|
 
 > [!NOTE]
 >

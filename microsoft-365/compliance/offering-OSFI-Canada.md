@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 7a43011a1d81c014526b1dd9178d051162e96acd
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: 16502ba54268e708d7c420a1329b1f2683726198
+ms.sourcegitcommit: 51e47ca4b355436a2ad3deb154060eb1927428e6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44065959"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44773735"
 ---
 # <a name="office-of-the-superintendent-of-financial-institutions-osfi-canada"></a>Le Bureau du surintendant des institutions financières (BSIF) Canada
 
@@ -69,7 +69,6 @@ Oui, mais seulement si l'entente d'externalisation est une externalisation maté
 
 ## <a name="resources"></a>Ressources
 
-- [Lois canadiennes et Microsoft sur la protection de la vie privée](https://aka.ms/CanadianPrivacyLaws-Compliance)
 - [Programme de mise en conformité destiné au secteur des services financiers Microsoft](https://aka.ms/FSCP-Print)
 - [Services commerciaux cloud computing et services financiers Microsoft](https://www.microsoft.com/trustcenter/cloudservices/financialservices)
 - [Conformité des services financiers dans Azure](https://azure.microsoft.com/resources/videos/azurecon-2015-financial-services-compliance-in-azure/)

@@ -18,20 +18,20 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 71250a04-fd2d-4c3c-a32b-b8a838b19a54
 description: Découvrez les sites d’équipe SharePoint Online isolés, y compris les utilisations, les exigences et les fonctionnalités compatibles.
-ms.openlocfilehash: 91d8394c40597dfc66c4df39f49223e472e7c663
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 0646ffc37256702844b550fd1beb841944b2d509
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44209042"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44819532"
 ---
 # <a name="isolated-sharepoint-online-team-sites"></a>Sites d’équipe SharePoint Online isolés
 
  **Résumé :** Découvrez les utilisations pour les sites d'équipe SharePoint Online isolés.
   
-Les sites d'équipe SharePoint Online vous permettent de créer facilement et rapidement un espace dédié à la collaboration et au partage des notes, des documents, des articles, d’un calendrier et d'autres ressources dans Microsoft Office 365. Les sites d'équipe SharePoint Online sont créés à partir d'un groupe Microsoft 365. Ils comportent un modèle d'administration simplifié pour favoriser une collaboration ouverte entre les membres d'un groupe privé ou de l'organisation tout entière. Un site d'équipe SharePoint Online par défaut permet aux membres du groupe Microsoft 365 d'inviter d'autres utilisateurs et de contrôler les paramètres d'autorisations.
+SharePoint Online team sites are an easy way to quickly create a space for collaboration of notes, documents, articles, a calendar, and other resources in Microsoft Office 365. SharePoint Online team sites are based on a Microsoft 365 group and have a simplified administration model to allow open collaboration with a private set of group members or the entire organization. A default SharePoint Online team site allows members of the Microsoft 365 group to invite other users and control permissions settings.
   
-Toutefois, dans certains cas, vous souhaitez créer un site d'équipe SharePoint Online pour une collaboration où les autorisations de ce site sont plus étroitement contrôlées via l'appartenance au groupe et les niveaux d'autorisation SharePoint Online, qui sont gérés uniquement par les administrateurs SharePoint. C'est ce que nous appelons un site isolé, car il est réservé aux utilisateurs qui collaborent sur le site, consultent son contenu ou gèrent le site. Vous aurez besoin d'un site isolé pour :
+However, in some cases, you want to create a SharePoint Online team site for collaboration where the permissions of that site are more tightly controlled through group membership and SharePoint Online permission levels, which are only managed by SharePoint administrators. We call this an isolated site, which is isolated to the set of users that are either collaborating, viewing its contents, or administering the site. You might need an isolated site for the following:
   
 - travailler sur un projet secret au sein de votre organisation ;
     
@@ -47,9 +47,9 @@ Voici les exigences d’un site isolé :
     
 - Les membres du site ne peuvent pas inviter d’autres membres à accéder au site d’équipe.
     
-- Les utilisateurs qui ne sont pas membres du site isolé ne peuvent pas demander l'accès au site. Lorsqu'ils essaieront d'accéder à une URL associée au site, ils seront redirigés vers une page web leur indiquant que l'accès a été refusé.
+- Users who are not members of the isolated site cannot request access to the site. They will receive an access denied web page when they attempt to access any URL associated with the site.
     
-Grâce à une gestion centralisée des accès et aux autorisations personnalisées, le site reste isolé en tout temps. Par exemple, les membres du groupe ne peuvent pas, volontairement ou accidentellement, configurer des autorisations personnalisées pour d'autres utilisateurs de l'abonnement Microsoft 365 qui ne devraient pas être membres du site ou les inviter.
+The tradeoff of requiring centralized access control and custom permissions by SharePoint Online administrators is that the site remains isolated over time. For example, current members cannot, either intentionally or accidentally, invite or configure custom permissions for other users within the Microsoft 365 subscription who should not be members of the site.
   
 Un site isolé peut être utilisé avec d’autres fonctionnalités, telles que :
   
@@ -63,7 +63,7 @@ Pour tester un site d'équipe SharePoint Online isolé faisant partie d'un abonn
   
 Lorsque vous souhaitez déployer un site d'équipe SharePoint Online isolé en production, lisez la procédure détaillée dans la rubrique [Conception d'un site d'équipe SharePoint Online isolé](design-an-isolated-sharepoint-online-team-site.md).
   
-## <a name="see-also"></a>Voir aussi
+## <a name="related-topics"></a>Voir aussi
 
 [Conception d'un site d'équipe SharePoint Online isolé](design-an-isolated-sharepoint-online-team-site.md)
   

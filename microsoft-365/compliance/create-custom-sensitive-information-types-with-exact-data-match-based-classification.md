@@ -17,16 +17,14 @@ search.appverid:
 - MET150
 description: Découvrez comment créer des types d’informations sensibles personnalisés à l’aide d’une classification Exact Data Match.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: bf4abfd6f5ab19c3bc89673b0cc2255e026d1f7a
-ms.sourcegitcommit: 9d7a14bf4c26bda18561fa45885225d95855fb5c
+ms.openlocfilehash: e6574d59fef98e026da31a21dab9189d2af4581e
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/01/2020
-ms.locfileid: "44474535"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818003"
 ---
 # <a name="create-custom-sensitive-information-types-with-exact-data-match-based-classification"></a>Créez des types d’informations sensibles personnalisés à l’aide d’une classification Exact Data Match.
-
-## <a name="overview"></a>Vue d’ensemble
 
 Les [types d’informations sensibles personnalisés](custom-sensitive-info-types.md)  vous aident à empêcher le partage involontaire ou inapproprié d’informations sensibles. En tant qu’administrateur, vous pouvez utiliser le  [Centre de sécurité et conformité](create-a-custom-sensitive-information-type.md)  ou  [PowerShell](create-a-custom-sensitive-information-type-in-scc-powershell.md)  pour définir un type d’informations sensibles personnalisé basé sur des modèles, des preuves (mots clés tels que  *employé*,  *badge*,  *ID*, etc.), la proximité de caractère (dans un modèle particulier) et des niveaux de confiance. De tels types d’informations sensibles personnalisés répondent aux besoins métier de nombreuses organisations.
 

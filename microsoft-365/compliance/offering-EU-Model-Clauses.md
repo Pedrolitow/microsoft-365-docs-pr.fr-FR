@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 6a66a5b6f6ad2480dfc3af212e7663ad3f869d10
-ms.sourcegitcommit: daad5f2f1994a812c2b9c78e7dd148d10c51f61d
+ms.openlocfilehash: 9d678ca5ee9b8a8ebf4feadfb27826caa533967e
+ms.sourcegitcommit: 51e47ca4b355436a2ad3deb154060eb1927428e6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "44254317"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44773861"
 ---
 # <a name="european-union-model-clauses"></a>Clauses contractuelles types de l’Union européenne
 
@@ -86,7 +86,7 @@ Vous pouvez vous Lier à un contrat tel que les [Conditions d'Online Services](
 - [Directive de l'UE sur la protection des données](https://aka.ms/EU-DPD)
 - [Comité européen de la protection des données](https://edpb.europa.eu/)
 - [Forum aux questions sur les clauses contractuelles types de l’UE pour Dynamics 365 et Office 365](https://products.office.com/business/office-365-trust-center-eu-model-clauses-faq)
-- [Microsoft et le Bouclier de protection des données UE-ÉTATS-UNIS](https://go.microsoft.com/fwlink/p/?linkid=2099701)
+- [Microsoft et le Bouclier de protection des données UE-ÉTATS-UNIS](offering-eu-us-privacy-shield.md)
 - [Infrastructure de conformité Microsoft Common Controls Hub](https://www.microsoft.com/trustcenter/common-controls-hub)
 - [Conditions de Microsoft Online Services](https://aka.ms/Online-Services-Terms)
 - [Conformité sur le site Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)

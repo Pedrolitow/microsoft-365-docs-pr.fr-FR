@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 85c629c12ec1a9fccd8c8a3bd6b1e9e8b63ded39
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: 572e41368c7046f0ad9fd8c68c7f26e4aaad93ce
+ms.sourcegitcommit: 89636f35b0194986f156302fc1bb96af25d4805b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44066051"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44800049"
 ---
 # <a name="nen-7510"></a>NEN 7510
 
@@ -29,7 +29,7 @@ Les entreprises situées aux Pays-Bas qui traitent des informations sur la sant�
 
 ## <a name="microsoft-and-nen-75102011"></a>Microsoft et la norme NEN 7510:2011
 
-Microsoft a analysé ses certifications et déclarations d’assurance actuelles et a créé un [rapport de couverture de la norme NEN 7510](https://protection.office.com/DownloadFile/ServiceAssurance/Document/compliance/Azure%20and%20Office%20365%20NEN7510-2011%20Standard%20Coverage/pdf) (disponible sur la plateforme d’approbation de services). Ce rapport établit la correspondance entre ces certifications et déclarations d’assurance d’une part et les contrôles de la norme NEN 7510 d’autre part, pour lesquels Microsoft est responsable en tant que fournisseur de services Cloud. Ce document peut aider les clients à déterminer les contrôles supplémentaires à mettre en place afin de s’assurer que leur utilisation des services de cloud computing Microsoft pour le stockage et au traitement des informations de santé des patients est conforme à la norme NEN 7510.
+Microsoft a analysé ses certifications et déclarations d’assurance actuelles et a créé un [rapport de couverture de la norme NEN 7510](https://servicetrust.microsoft.com/ViewPage/TrustDocumentsV3?command=Download&downloadType=Document&downloadId=3285c45c-921c-49ad-b881-be43e0b70490&tab=7f51cb60-3d6c-11e9-b2af-7bb9f5d2d913&docTab=7f51cb60-3d6c-11e9-b2af-7bb9f5d2d913_Compliance_Guides) (disponible sur la plateforme d’approbation de services). Ce rapport établit la correspondance entre ces certifications et déclarations d’assurance d’une part et les contrôles de la norme NEN 7510 d’autre part, pour lesquels Microsoft est responsable en tant que fournisseur de services Cloud. Ce document peut aider les clients à déterminer les contrôles supplémentaires à mettre en place afin de s’assurer que leur utilisation des services de cloud computing Microsoft pour le stockage et au traitement des informations de santé des patients est conforme à la norme NEN 7510.
 
 Découvrez comment accélérer votre déploiement du NEN 7510 grâce à nos plans de sécurité et de conformité Azure : [Téléchargez le Guide de l'utilisateur de la couverture norme Microsoft Cloud (NEN7510-2011Azure et Office 365) ](https://aka.ms/Azure-NEN7510-2011)
 
