@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: fb89a24e48dbdadd9a1af863cb8c44ded46435b1
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 5d1e6730d215fcef6bd0cad6244c82b960ed39ce
+ms.sourcegitcommit: 89636f35b0194986f156302fc1bb96af25d4805b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44036207"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44800019"
 ---
 # <a name="general-data-protection-regulation-summary"></a>Sythèse du règlement général sur la protection des données
 
@@ -293,8 +293,7 @@ Les données à caractère personnel englobent toutes les informations relatives
 - Numéro de dossier fiscal
 - Adresse de travail
 - Numéro de carte de crédit/débit
-- Publications sur les réseaux sociaux
-- Publications sur les réseaux sociaux
+- Billets de réseaux sociaux
 - Adresse IP (région UE)
 - Données de localisation/GPS
 - Cookies

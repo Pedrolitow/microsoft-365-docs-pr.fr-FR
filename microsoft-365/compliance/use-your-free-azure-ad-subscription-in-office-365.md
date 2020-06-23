@@ -16,20 +16,21 @@ search.appverid:
 - MET150
 ms.assetid: d104fb44-1c42-4541-89a6-1f67be22e4ad
 description: Découvrir comment accéder à Azure Active Directory, qui est inclus dans l’abonnement payant de votre organisation.
-ms.openlocfilehash: be8edecd348d0019916f4f1b974a2bd0f8cabbc9
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 43c9c03af74d4edc1fb6c762c9ca89594a907920
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43626370"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44819284"
 ---
 # <a name="use-your-free-azure-active-directory-subscription"></a>Utiliser votre abonnement Azure Active Directory gratuit
 
-Si votre organisation a un abonnement payant à Microsoft 365, Microsoft Dynamics CRM Online, Enterprise Mobility Suite ou d’autres services Microsoft, vous disposez d’un abonnement gratuit à Microsoft Azure Active Directory. Vous et les autres administrateurs pouvez utiliser Azure AD pour créer et gérer les comptes d’utilisateur et de groupe. Pour utiliser Azure AD, ouvrez le Portail Azure et connectez-vous à votre compte.
+If your organization has a paid subscription to Microsoft 365, Microsoft Dynamics CRM Online, Enterprise Mobility Suite, or other Microsoft services, you have a free subscription to Microsoft Azure Active Directory. You and other admins can use Azure AD to create and manage user and group accounts. To use Azure AD, just go to the Azure portal and sign in to your account.
 
-## <a name="before-you-begin"></a>Avant de commencer
+## <a name="open-a-private-browsing-session"></a>Ouvrir une session de navigation privée
 
-Pour accéder au Portail Microsoft Azure, utilisez une session de navigation privée (dans l'étape 1 ci-dessous), car cela permet d’éviter de transmettre à Azure les informations d’identification à l’aide desquelles vous êtes actuellement connecté. Pour ouvrir une session de navigation privée :
+Use a private browsing session (not a regular session) to access the Azure portal (in step 1 below) because this prevents the credentials that you're currently logged on with from being passed to Azure. To open an private browsing session:
 
 - Dans Microsoft Edge (version héritée), Internet Explorer ou Mozilla FireFox, appuyez sur `CTRL+SHIFT+P`.
 

@@ -18,16 +18,15 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: 'Utilisez le Centre de sécurité et conformité pour rechercher dans le journal d’audit unifié les activités des utilisateurs et des administrateurs de votre organisation. '
-ms.openlocfilehash: dfc4c3c72748084ae5e9ebaadfd7616e8e081460
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 83eb4c453b3a11cb037e62e43525199fa247c3f5
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44401188"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818984"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>Effectuer des recherches dans le journal d’audit depuis le Centre de sécurité et conformité 
-
-## <a name="introduction"></a>Introduction
 
 Vous avez besoin de déterminer si un utilisateur a consulté un document spécifique ou supprimé définitivement un élément de sa boîte aux lettres ? Vous pouvez utiliser le Centre de sécurité et conformité pour rechercher dans le journal d’audit unifié les activités des utilisateurs et des administrateurs de votre organisation. Qu’est-ce qu’un journal d’audit unifié ? Un tel journal permet de rechercher les types suivants d’[activité des utilisateurs et administrateurs](#audited-activities) dans Office 365 :
 
@@ -65,7 +64,7 @@ Vous avez besoin de déterminer si un utilisateur a consulté un document spéci
 
 - Activité des utilisateurs et des administrateurs relative aux étiquettes de confidentialité pour les sites qui utilisent SharePoint Online ou Microsoft Teams
 
-## <a name="before-you-begin"></a>Avant de commencer
+## <a name="requirements-to-search-the-audit-log"></a>Configuration requise pour effectuer une recherche dans le journal d’audit
 
 Avant de commencer à effectuer une recherche dans le journal d’audit, veillez à lire ce qui suit.
 
@@ -312,10 +311,10 @@ Pour accéder à un tableau spécifique, cliquez sur l’un des liens suivants.
 |[Activités d’administration des utilisateurs](#user-administration-activities)|[Activités d’administration des groupes Azure AD](#azure-ad-group-administration-activities)|[Activités d’administration des applications](#application-administration-activities)|
 |[Activités d’administration des rôles](#role-administration-activities)|[Activités d’administration de l’annuaire](#directory-administration-activities)|[Activités de découverte électronique](#ediscovery-activities)|
 |[Activités avancées eDiscovery](#advanced-ediscovery-activities)|[Activités dans Power BI](#power-bi-activities)|[Microsoft Workplace Analytics](#microsoft-workplace-analytics-activities)|
-|[Activités dans Microsoft Teams](#microsoft-teams-activities)|[Activités Santé Microsoft Teams](#microsoft-teams-healthcare-activities)|[Activités dans Yammer](#yammer-activities)|
-|[Activités Microsoft Power Automate](#microsoft-power-automate-activities)|[Activités Microsoft Power Apps](#microsoft-power-apps-activities)|[Activités de Microsoft Stream](#microsoft-stream-activities)|
-|[Activités de l’Explorateur de contenu](#content-explorer-activities)|[Activités de mise en quarantaine](#quarantine-activities)|[Activités Microsoft Forms](#microsoft-forms-activities)
-|[Activités des étiquettes de confidentialité](#sensitivity-label-activities)|[Activités administrateur Exchange](#exchange-admin-audit-log)|||
+|[Activités dans Microsoft Teams](#microsoft-teams-activities)|[Activités Santé Microsoft Teams](#microsoft-teams-healthcare-activities)|[Activités Shifts dans Microsoft Teams](#microsoft-teams-shifts-activities)|
+|[Activités dans Yammer](#yammer-activities)|[Activités Microsoft Power Automate](#microsoft-power-automate-activities)|[Activités Microsoft Power Apps](#microsoft-power-apps-activities)|
+|[Activités de Microsoft Stream](#microsoft-stream-activities)|[Activités de l’Explorateur de contenu](#content-explorer-activities)|[Activités de mise en quarantaine](#quarantine-activities)|
+|[Activités Microsoft Forms](#microsoft-forms-activities)|[Activités des étiquettes de confidentialité](#sensitivity-label-activities)|[Activités administrateur Exchange](#exchange-admin-audit-log)|
 ||||
 
 ### <a name="file-and-page-activities"></a>Activités des fichiers et pages
@@ -338,7 +337,7 @@ Le tableau suivant décrit les activités des fichiers et pages dans SharePoint 
 |Supprimer l’enregistrement de l’étiquette stratégie de conformité|ComplianceRecordDelete|Un document classifié en tant qu’enregistrement a été supprimé. Un document est considéré comme un enregistrement lorsqu’une étiquette de rétention qui classifie le contenu en tant qu’enregistrement est appliqué au document.|
 |Détection de correspondance incorrecte des documents|DocumentSensitivityMismatchDetected|Un utilisateur télécharge un document sur un site protégé par une étiquette de confidentialité et le document comporte une étiquette de confidentialité plus élevée que celle du site. Par exemple, un document marqué Confidentiel est chargé sur un site intitulé Général. <br/><br/> Cet événement ne se déclenche pas si le document comprend une étiquette de confidentialité de priorité inférieure à celle appliquée sur le site. Par exemple, un document marqué Général est téléchargé sur un site intitulé Confidentiel. Pour plus d’informations sur la priorité d'étiquettes de confidentialité, consultez la [Priorité d’étiquette (importance de l'ordre)](sensitivity-labels.md#label-priority-order-matters).|
 |Détection d’un programme malveillant dans le fichier|FileMalwareDetected|Le moteur antivirus de SharePoint détecte un programme malveillant dans un fichier.|
-|Extraction de fichier ignorée|FileCheckOutDiscarded|Un utilisateur ignore (ou annule) un fichier extrait. Les modifications qu’il a apportées au fichier le temps de son extraction sont ignorées et ne sont pas enregistrées dans la version du document dans la bibliothèque de documents.|
+|Extraction de fichier ignorée|FileCheckOutDiscarded|User discards (or undos) a checked out file. That means any changes they made to the file when it was checked out are discarded, and not saved to the version of the document in the document library.|
 |Fichier téléchargé|FileDownloaded|Un utilisateur télécharge un document à partir d’un site.|
 |Fichier modifié|FileModified|Le compte d’utilisateur ou système modifie le contenu ou les propriétés d’un document sur un site.|
 |(aucun)|FileModifiedExtended|Cet événement est lié à l’activité « Fichier modifié » (FileModified). Un événement FileModifiedExtended est consigné lorsque la même personne modifie un fichier pendant une période prolongée (jusqu'à 3 heures). <br/><br/> L’objectif de la journalisation des événements FileModifiedExtended consiste à réduire le nombre d’événements FileModified enregistrés lorsqu’un fichier est modifié de manière continue. Cela permet de réduire le bruit généré par l’enregistrement de plusieurs événements FileModified pour ce qui est en fait l’activité d’un seul et même utilisateur et vous permettre de vous concentrer sur l’événement FileModified initial (plus important).|
@@ -675,38 +674,11 @@ Les activités liées à la recherche de contenu et la découverte électronique
 Pour consulter la liste et une description détaillée des activités de découverte électronique enregistrées, voir [Rechercher les activités de découverte électronique dans le journal d’audit](search-for-ediscovery-activities-in-the-audit-log.md).
 
 > [!NOTE]
-> Une trentaine de minutes peut être nécessaire avant que les événements résultant des activités répertoriées sous l’élément **Activités de découverte électronique** de la liste déroulante **Activités** s’affichent dans les résultats de la recherche. Inversement, 24 heures peuvent être nécessaires avant que les événements correspondant aux activités de l’applet de commande eDiscovery s’affichent dans les résultats de la recherche.
+> Une trentaine de minutes peut être nécessaire avant que les événements résultant des activités répertoriées sous l’élément **Activités de découverte électronique** et **activités Advanced eDiscovery** de la liste déroulante **Activités** s’affichent dans les résultats de la recherche. Inversement, 24 heures peuvent être nécessaires avant que les événements correspondant aux activités de l’applet de commande eDiscovery s’affichent dans les résultats de la recherche.
 
 ### <a name="advanced-ediscovery-activities"></a>Activités avancées eDiscovery
 
-Le tableau suivant répertorie les activités qui résultent des professionnels de l’informatique et du service juridique qui effectuent des tâches dans Advanced eDiscovery dans Microsoft 365. Pour plus d’informations, voir [vue d’ensemble de la solution avancée d'eDiscovery dans Microsoft 365](overview-ediscovery-20.md).
-
-|**Nom convivial**|**Opération**|**Description**|
-|:-----|:-----|:-----|
-|Ajouter des données dans un autre ensemble à réviser|AddWorkingSetQueryToWorkingSet|L’utilisateur a ajouté des documents d’un ensemble à réviser à un autre.|
-|Données ajoutées au groupe à réviser|AddQueryToWorkingSet|Un utilisateur a ajouté les résultats de la recherche à partir d’une recherche de contenu associée à un cas avancé d’eDiscovery dans un groupe de révision.|
-|Ajout de données ne relevant pas de Microsoft 365 à un jeu à réviser|AddNonOffice365DataToWorkingSet|L’utilisateur a ajouté des données ne relevant pas de Microsoft 365 à un jeu à réviser.|
-|Ajout de documents corrigés au groupe révision|AddRemediatedData|L’utilisateur charge les documents qui comportent des erreurs d’indexation qui ont été corrigées dans un groupe de révision.|
-|Données analysées dans le groupe révision|RunAlgo|L’utilisateur a exécuté Analytics sur les documents d’un groupe de révision.|
-|Document annoté dans le groupe révision|AnnotateDocument|L’utilisateur a annoté un document dans un groupe de révision. L’annotation inclut rédiger du contenu dans un document.|
-|Ensembles chargés comparés|LoadComparisonJob|Un utilisateur a comparé deux ensembles chargés différents dans un groupe de révision. Un ensemble chargé est activé lorsque les données d’une recherche de contenu associées au cas sont ajoutées à un groupe de révision.|
-|Documents rédigés convertis au format PDF|BurnJob|L’utilisateur a converti tous les documents rédigés dans un ensemble de révision en fichiers PDF.|
-|Ensemble de révision créée|CreateWorkingSet|L’utilisateur a créé un groupe de révision.|
-|Configuration de la recherche de révision créée|CreateWorkingSetSearch|L’utilisateur a créé une requête de recherche qui effectue une recherche dans les documents d’un groupe de révision.|
-|Balise créée|CreateTag|Un utilisateur a créé un groupe de balises dans un ensemble de révision. Un groupe de balises peut contenir une ou plusieurs balises enfant. Ces balises sont ensuite utilisées pour baliser des documents dans le groupe révision.|
-|Recherche de la révision supprimée|DeleteWorkingSetSearch|Un utilisateur a supprimé une requête de recherche dans un groupe de révision.|
-|Balise supprimée|DeleteTag|Un utilisateur a supprimé une balise ou une balise de groupe dans un groupe de révision.|
-|Document téléchargé|DownloadDocument|Un utilisateur a téléchargé un document à partir d’un groupe de révision.|
-|Balise modifiée|UpdateTag|Un utilisateur a modifié une balise dans un groupe de révision.|
-|Exporter des documents d’un groupe de révision|ExportJob|L’utilisateur a exporté les documents à partir d’un groupe de révision.|
-|Paramètre de casse modifié|UpdateCaseSettings|L’utilisateur a modifié les paramètres de casse. Les paramètres de casse incluent les informations de casse, les autorisations d’accès et les paramètres qui contrôlent le comportement des recherches et analyses.|
-|Configuration de la recherche de révision modifiée|UpdateWorkingSetSearch|Un utilisateur a modifié une requête de recherche dans un groupe de révision.|
-|Aperçu de configuration de la recherche de révision|PreviewWorkingSetSearch|Un utilisateur a visualisé les résultats d’une requête de recherche dans un ensemble de révision.|
-|Documents d’erreur rectifiés|ErrorRemediationJob|L’utilisateur corrige les fichiers qui contiennent des erreurs d’indexation.|
-|Document balisé|TagFiles|L’utilisateur a balisé un document dans un groupe de révision.|
-|Résultats avec indicateur d’une requête|TagJob|L’utilisateur balise tous les documents qui correspondent aux critères de la requête de recherche dans un ensemble de révision.|
-|Document visualisé dans le groupe révision|ViewDocument|Un utilisateur a consulté un document dans un groupe de révision.|
-|||
+Vous pouvez également effectuer une recherche dans le journal d’audit des activités dans Advanced eDiscovery. Pour obtenir une description de ces activités, consultez la section « activités Advanced eDiscovery » dans [Rechercher des activités eDiscovery dans le journal d’audit](search-for-ediscovery-activities-in-the-audit-log.md#advanced-ediscovery-activities).
 
 ### <a name="power-bi-activities"></a>Activités dans Power BI
 
@@ -747,10 +719,10 @@ Le tableau suivant répertorie les activités des utilisateurs et des administra
 |Connecteur ajouté|ConnectorAdded|Un utilisateur ajoute un connecteur à un canal.|
 |Membres ajoutés|MemberAdded|Un propriétaire d'une équipe ajoute des membres à une équipe, un canal ou une conversation de groupe.|
 |Onglet ajouté|TabAdded|Un utilisateur ajoute un onglet à un canal.|
-|Paramètre de canal modifié|ChannelSettingChanged|L’opération ChannelSettingChanged est consignée lorsque les activités suivantes sont effectuées par un membre de l’équipe. Pour chacune de ces activités, une description du paramètre modifié (entre parenthèses ci-dessous) s’affiche dans la colonne **Élément (Item)** des résultats de la recherche dans le journal d’audit. <br/><br/>* Modifie le nom d’un canal d’équipe (**Nom de canal**). <br/><br/>* Modifie la description d’un canal d’équipe (**Description de canal**).|
-|Paramètre d’organisation modifié|TeamsTenantSettingChanged|L’opération TeamsTenantSettingChanged est consignée lorsque les activités suivantes sont effectuées par un administrateur général (à l’aide du centre d’administration Microsoft 365). Notez que ces activités affectent les paramètres de Microsoft Teams à l’échelle de l’organisation. Pour plus d’informations, voir [Paramètres de l’administrateur de Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/enable-features-office-365). <br/> Pour chacune de ces activités, une description du paramètre modifié (entre parenthèses ci-dessous) s’affiche dans la colonne **Élément (Item)** des résultats de la recherche dans le journal d’audit. <br/><br/>* Active ou désactive Microsoft Teams pour l’organisation (**Microsoft Teams**). <br/><br/>* Active ou désactive l’interopérabilité entre Microsoft Teams et Skype Entreprise pour l’organisation (**interopérabilité de Skype Entreprise**). <br/><br/>* Active ou désactive l’affichage de l'organigramme dans les clients Microsoft Teams (affichage de l’organigramme**). <br/><br/>* Active ou désactive la possibilité pour les membres de l'équipe de planifier des réunions privées (**Planification de réunions privées**). <br/><br/>* Active ou désactive la possibilité pour les membres de l'équipe de planifier des réunions de canal (Planification de réunion de canal**). <br/><br/>* Active ou désactive les appels vidéo dans les réunions Teams (Vidéo pour les réunions Skype**). <br/><br/>* Active ou désactive le partage d'écran dans les Meetups Microsoft Teams pour l'organisation (**Partage d'écran pour les réunions Skype**). <br/><br/>* Active ou désactive la possibilité d’ajouter des images animées (appelées Giphys) aux conversations Teams (Images animées**). <br/><br/>* Modifie le paramètre d’évaluation du contenu pour l’organisation (**Evaluation du contenu**). L’évaluation du contenu limite le type d’image animée pouvant être affichée dans les conversations. <br/><br/>* Active ou désactive la possibilité pour les membres de l’équipe d’ajouter des images personnalisables (appelées memes personnalisés) provenant d’Internet aux conversations d’équipe (Images personnalisables provenant d’Internet**). <br/><br/>* Active ou désactive la possibilité pour les membres de l’équipe d’ajouter des images modifiables (appelées autocollants) aux conversations d’équipe (**Images modifiables**).<br/><br/>* Active ou désactive la possibilité pour les membres de l’équipe d’utiliser des robots dans les conversations et canaux Microsoft Teams (Robots de l'organisation**). <br/><br/>* Active les robots spécifiques pour Microsoft Teams. Ceci n’inclut pas le T-Bot, qui est le robot d’aide de Teams, disponible lorsque les robots sont activés pour l’organisation (**Robots individuels**). <br/><br/>* Active ou désactive la possibilité pour les membres de l’équipe d’ajouter des extensions ou des onglets (**Extensions ou onglets**). <br/><br/>* Active ou désactive le chargement latéral des robots propriétaires pour Microsoft Teams (**Chargement latéral des robots**). <br/><br/>* Active ou désactive la possibilité pour les utilisateurs d’envoyer des messages électronique à un canal Microsoft Teams (**E-mail du canal**).|
+|Paramètre de canal modifié|ChannelSettingChanged|L’opération ChannelSettingChanged est consignée lorsque les activités suivantes sont effectuées par un membre de l’équipe. Pour chacune de ces activités, une description du paramètre modifié (entre parenthèses ci-dessous) s’affiche dans la colonne **Élément (Item)** des résultats de la recherche dans le journal d’audit. <br/><br/>• Modifie le nom d’un canal d’équipe (**Nom de canal**). <br/><br/>• Modifie la description d’un canal d’équipe (**Description de canal**).|
+|Paramètre d’organisation modifié|TeamsTenantSettingChanged|L’opération TeamsTenantSettingChanged est consignée lorsque les activités suivantes sont effectuées par un administrateur général (à l’aide du centre d’administration Microsoft 365). Notez que ces activités affectent les paramètres de Microsoft Teams à l’échelle de l’organisation. Pour plus d’informations, voir [Paramètres de l’administrateur de Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/enable-features-office-365). <br/> Pour chacune de ces activités, une description du paramètre modifié (entre parenthèses ci-dessous) s’affiche dans la colonne **Élément (Item)** des résultats de la recherche dans le journal d’audit. <br/><br/>• Active ou désactive Microsoft Teams pour l’organisation (**Microsoft Teams**). <br/><br/>• Active ou désactive l’interopérabilité entre Microsoft Teams et Skype Entreprise pour l’organisation (**interopérabilité de Skype Entreprise**). <br/><br/>• Active ou désactive l’affichage de l’organigramme dans les clients Microsoft Teams (**organigramme hiérarchique). <br/> <br/>• Active ou désactive la possibilité pour les membres de l’équipe de planifier des réunions privées (** planification privée des réunions **). <br/><br/>• Active ou désactive la possibilité pour les membres de l’équipe de planifier des réunions de canal (planification des réunions de canal**). <br/><br/>• Active ou désactive les appels vidéo pendant les réunions Teams (Vidéo pour réunions Skype **). <br/><br/>• Active ou désactive le partage d’écran dans les rencontres Microsoft Teams pour l’organisation (** partage d’écran pour les réunions Skype **). <br/> <br/>• Active ou désactive la possibilité d’ajouter des images animées (appelées Giphys) aux conversations Teams (images animées**). <br/><br/>• Modifie le paramètre d’évaluation du contenu pour l’organisation (**Évaluation du contenu**). L’évaluation du contenu restreint les types d’images animées qui peuvent être affichées dans les conversations. <br/><br/>• Active ou désactive la possibilité pour les membres de l’équipe d’ajouter des images personnalisables (appelées mèmess personnalisés) à partir d’Internet aux conversations d’équipe (les images personnalisables à partir d’Internet **). <br/><br/>• Active ou désactive la possibilité pour les membres de l’équipe d’ajouter des images modifiables (appelées autocollants) aux conversations d’équipe (** Images modifiables **).<br/><br/>• Active ou désactive la possibilité pour les membres de l’équipe d’utiliser des bots dans les conversations et canaux Microsoft Teams (bots à l’échelle de l’organisation). <br/><br/>• Active les bots spécifiques pour Microsoft Teams. Ceci n’inclut pas le T-bot, qui est le bot d’aide de Teams, disponible lorsque les bots sont activés pour l’organisation (** bots individuels **). <br/><br/>• Active ou désactive la possibilité pour les membres de l’équipe d’ajouter des extensions ou des onglets (** Extensions ou onglets **). <br/><br/>• Active ou désactive le chargement latéral de bots propriétaires pour Microsoft Teams (** chargement latéral des bots **). <br/><br/>• Active ou désactive la possibilité pour les utilisateurs d’envoyer des messages électroniques à un canal Microsoft Teams (** E-mail de canal**).|
 |Rôle modifié des membres de l’équipe|MemberRoleChanged|Un propriétaire d’équipe modifie le rôle de membres d’une équipe. Les valeurs suivantes indiquent le type de rôles attribué à l’utilisateur. <br/><br/> **1** indique le rôle Propriétaire.<br/>**2** indique le rôle Membre. <br/>**3** indique le rôle Invité. <br/><br/> La propriété Members comprend également le nom de votre organisation et l’adresse e-mail du membre.|
-|Paramètre d’équipe modifié|TeamSettingChanged|L’opération TeamSettingChanged est consignée lorsque les activités suivantes sont effectuées par un membre de l’équipe. Pour chacune de ces activités, une description du paramètre modifié (entre parenthèses ci-dessous) s’affiche dans la colonne **Élément (Item)** des résultats de la recherche dans le journal d’audit. <br/><br/>* Modifie le type d’accès d’une équipe. Teams peut être défini comme public ou privé (**Type d’accès à Team**). Quand une équipe est privée (paramètre par défaut), les utilisateurs ne peuvent ne peuvent y accéder que sur invitation. Quand une équipe est publique, n’importe qui peut la trouver. <br/><br/>* Modifie la classification des informations d’une équipe (**Classification d’une équipe**). <br/> Par exemple, les données d’une équipe peuvent être classées comme ayant un impact élevé, moyen ou faible sur l’activité.<br/><br/>* Modifie le nom d’une équipe (**Nom de l’équipe**). <br/><br/>* Modifie la description de l’équipe (Description de l’équipe**). <br/><br/>* Les modifications apportées à l’un des paramètres d’équipe. Un propriétaire de l’équipe peut accéder à ces paramètres dans un client Microsoft Teams en cliquant avec le bouton droit sur une équipe, en cliquant sur **Gérer l’équipe**, puis sur l’onglet **Paramètres**. Pour ces activités, le nom du paramètre modifié s’affiche dans la colonne **Élément (Item)** des résultats de la recherche dans le journal d’audit.|
+|Paramètre d’équipe modifié|TeamSettingChanged|L’opération TeamSettingChanged est consignée lorsque les activités suivantes sont effectuées par un membre de l’équipe. Pour chacune de ces activités, une description du paramètre modifié (entre parenthèses ci-dessous) s’affiche dans la colonne **Élément (Item)** des résultats de la recherche dans le journal d’audit. <br/><br/>• Modifie le type d’accès d’une équipe. Teams peut être défini comme public ou privé (**Type d’accès à Team**). Quand une équipe est privée (paramètre par défaut), les utilisateurs ne peuvent ne peuvent y accéder que sur invitation. Quand une équipe est publique, n’importe qui peut la trouver. <br/><br/>• Modifie la classification des informations d’une équipe (**Classification d’une équipe **). <br/> Par exemple, les données d’une équipe peuvent être classifiées comme ayant un impact élevé, moyen ou faible sur l’activité.<br/><br/>• Modifie le nom d’une équipe (**Nom de l’équipe**). <br/><br/>• Modifie la description de l’équipe (Description de l’équipe**). <br/><br/>• Modifications apportées aux paramètres de l’équipe. Un propriétaire de l’équipe peut accéder à ces paramètres dans un client Microsoft Teams en cliquant avec le bouton droit sur une équipe, en cliquant sur **Gérer l’équipe**, puis sur l’onglet **Paramètres**. Pour ces activités, le nom du paramètre modifié s’affiche dans la colonne **Élément (Item)** des résultats de la recherche dans le journal d’audit.|
 |Équipe créée|TeamCreated|L’utilisateur crée une équipe.|
 |Canal supprimé|ChannelDeleted|Un utilisateur supprime un canal d’une équipe.|
 |Équipe supprimée|TeamDeleted|Un propriétaire d’équipe supprime une équipe.|
@@ -770,6 +742,12 @@ Si votre organisation utilise l’application [Patients](https://docs.microsoft.
 ![Microsoft Teams Santé dans la liste du sélecteur Activités](../media/TeamsHealthcareAuditActivities.png)
 
 Pour obtenir une description des activités de l’application Patients, voir les [journaux d’audit pour l’application Patients](https://docs.microsoft.com/MicrosoftTeams/expand-teams-across-your-org/healthcare/patients-audit).
+
+### <a name="microsoft-teams-shifts-activities"></a>Activités Shifts dans Microsoft Teams
+
+Si votre organisation utilise l’application Shifts dans Microsoft Teams, vous pouvez effectuer une recherche dans le journal d’audit pour consulter les activités liées à l’application Shifts. Si votre environnement est configuré pour prendre en charge l’application Shifts, un groupe d’activités supplémentaire pour ces activités est disponible dans la liste du sélecteur **Activités**.
+
+Pour obtenir une description des activités de l’application Shifts, consultez [Rechercher dans le journal d’audit des événements dans Microsoft Teams](https://docs.microsoft.com/microsoftteams/audit-log-events#shifts-in-teams-activities).
 
 ### <a name="yammer-activities"></a>Activités dans Yammer
 
@@ -939,7 +917,7 @@ Consultez la section [Activités auditées](#audited-activities) dans cet articl
 
 **Combien de temps faut-il pour que l’enregistrement d’audit soit disponible une fois qu’un événement s’est produit ?**
 
-Après la survenue d’un événement, l’apparition de l’entrée de journal d’audit correspondante dans les résultats de la recherche peut prendre entre 30 minutes et 24 heures. Consultez le tableau de la section [Avant de commencer](#before-you-begin) de cet article qui indique le temps nécessaire pour que les événements dans les différents services soient disponibles.
+Après la survenue d’un événement, l’apparition de l’entrée de journal d’audit correspondante dans les résultats de la recherche peut prendre entre 30 minutes et 24 heures. Pour plus d’informations sur la disponibilité des événements dans les différents services, consultez le tableau dans la section [Configuration requise pour la recherche dans le journal d’audit](#requirements-to-search-the-audit-log) de cet article.
 
 **Pendant combien de temps les enregistrements d’audit sont-ils conservés ?**
 
@@ -955,7 +933,7 @@ Non. Il s’agit des deux méthodes permettant d’obtenir des données à parti
 
 **Est-ce que je dois activer l’audit de chaque service pour lequel je souhaite capturer les journaux d’audit ?**
 
-Dans la plupart des services, l’audit est activé par défaut une fois que vous avez activé l’audit pour votre organisation, comme décrit dans la section [Avant de commencer](#before-you-begin) dans cet article.
+Dans la plupart des services, l’audit est activé par défaut une fois que vous avez activé l’audit pour votre organisation, comme décrit dans la section [Configuration requise pour la recherche dans le journal d’audit](#requirements-to-search-the-audit-log) dans cet article.
 
 **Le service d’audit prend-il en charge la suppression des doublons d’enregistrements ?**
 

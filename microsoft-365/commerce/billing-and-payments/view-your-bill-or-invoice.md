@@ -28,16 +28,16 @@ ms.custom:
 - AdminSurgePortfolio
 ms.assetid: 2ae3ea58-4fce-4592-91d6-46e9ae3ec218
 description: Recherchez votre facture ou relevé de facturation dans le Centre d’administration Microsoft 365. Vous pouvez également enregistrer et imprimer une copie de votre facture.
-ms.openlocfilehash: d034e59e80af6396867282f3e7c23179c332c251
-ms.sourcegitcommit: b95e958df130b5fbbe5d8a8882d1bbf20b27a285
+ms.openlocfilehash: 7360f2bb73f78450143d5f1428ae90aa5bc0e0a1
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "44407943"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44816996"
 ---
 # <a name="view-your-bill-or-invoice"></a>Consulter votre facture
 
-Cet article s’adresse aux personnes dotées d’un abonnement à Microsoft 365 pour les entreprises. Pour suivre les étapes décrites dans cet article, vous devez être administrateur général ou administrateur de facturation.
+This article is for people who have a Microsoft 365 for business subscription. You must be a global admin or billing admin to do the steps described in this article.
   
 Si vous avez besoin d’aide pour identifier les frais qui apparaissent sur votre facture, voir [Comprendre votre facture](understand-your-invoice2.md) pour bénéficier d’informations détaillées.
   
@@ -49,13 +49,13 @@ Si vous avez besoin d’aide pour identifier les frais qui apparaissent sur votr
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FGmo] 
 
-Si vous avez trouvé cette vidéo utile, consultez les [séries de formations complètes pour les petites entreprises et les nouveaux utilisateurs de Microsoft 365](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
+Si vous avez trouvé cette vidéo utile, consultez les [séries de formations complètes pour les petites entreprises et les nouveaux utilisateurs de Microsoft 365](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
   
 ## <a name="view-a-bill-or-invoice"></a>Consulter une facture
 
 ::: moniker range="o365-worldwide"
 
-1. Dans le Centre d’administration, accédez à la page **Factures** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=848039" target="_blank">Factures & paiements</a>.
+1. Dans le Centre d’administration, accédez à la page **Factures** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Factures & paiements</a>.
 
 ::: moniker-end
 
@@ -71,21 +71,20 @@ Si vous avez trouvé cette vidéo utile, consultez les [séries de formations co
 
 ::: moniker-end
 
-2. Sélectionnez une plage de dates dans la liste déroulante, puis choisissez la commande que vous voulez afficher.
+2. Sous l’onglet **Factures**, sélectionnez une plage de dates dans la liste déroulante, puis sélectionnez l’ordre à afficher.
 
 3. La page récapitulative.vous pouvez consulter les informations suivantes :
 
-  - solde total, montant dû actuel, date d’échéance du paiement, montant du dernier paiement et date de sa réception ;
+    - solde total, montant dû actuel, date d’échéance du paiement, montant du dernier paiement et date de sa réception ;
 
-  - instructions de paiement ;
+    - instructions de paiement ;
 
-  - historique des dernières dates de paiement et montants payés ;
+    - historique des dernières dates de paiement et montants payés ;
 
-  - date de création de la commande et numéro de commande.
+    - date de création de la commande et numéro de commande.
 
 4. Pour imprimer ou enregistrer une copie PDF de la facture, sélectionnez **Télécharger un fichier PDF**.
 
-  
 ## <a name="related-articles"></a>Articles connexes
 
 [Payer sur facture, par carte de crédit ou par compte bancaire](pay-for-your-subscription.md)

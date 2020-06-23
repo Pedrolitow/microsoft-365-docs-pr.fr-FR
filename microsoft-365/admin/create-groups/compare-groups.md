@@ -20,18 +20,18 @@ search.appverid:
 - MOE150
 ms.assetid: 758759ad-63ee-4ea9-90a3-39f941897b7d
 description: Découvrez les types de groupes que vous pouvez utiliser.
-ms.openlocfilehash: b81bb09efedc503b49d2ed4aa10b1e7153116f14
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 333d929e72647421951eefa50508c23dddc196ac
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44388028"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780456"
 ---
 # <a name="compare-groups"></a>Comparer des groupes
 
 Dans la section **Groupes** du Centre d’administration Microsoft 365, vous pouvez créer et gérer les types de groupes suivants : 
 
-- Les **Groupes Microsoft 365** sont utilisés pour la collaboration entre utilisateurs, aussi bien à l’intérieur qu’à l’extérieur de votre entreprise.
+- **Microsoft 365 Groups** (anciennement groupes Office 365) est utilisé pour la collaboration entre les utilisateurs, à l’intérieur et à l’extérieur de votre entreprise.
 - Les **Groupes de distribution** sont utilisés pour envoyer des notifications à un groupe de personnes.
 - Les **Groupes de sécurité** sont utilisés pour accorder l’accès aux ressources telles que les sites SharePoint.
 - Les **Groupes de sécurité à extension courrier** sont utilisés pour accorder l’accès aux ressources telles que SharePoint et envoyer par e-mail des notifications à ces utilisateurs.
@@ -81,4 +81,4 @@ Pour le moment, il n'est pas possible de migrer une boîte aux lettres partagée
 
 ## <a name="related-articles"></a>Articles connexes
 
-[En savoir plus sur les groupes Microsoft 365](https://support.office.com/article/b565caa1-5c40-40ef-9915-60fdb2d97fa2)
+[En savoir plus sur les groupes Microsoft 365](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2)

@@ -14,19 +14,20 @@ localization_priority: Priority
 search.appverid:
 - MOE150
 - MET150
-description: Dans les rapports de gouvernance des données du Centre de sécurité &amp; conformité, vous pouvez rapidement vérifier si vos étiquettes sont appliquées au contenu comme vous le souhaitiez.
-ms.openlocfilehash: dbfa8b698a4f09a8307f3bbec38555193237a48c
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: Dans les rapports de gouvernance des données du Centre de sécurité et de conformité, vous pouvez rapidement vérifier si vos étiquettes sont appliquées au contenu comme vous le souhaitiez.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: a4d0fb70774dfb03dc0bc674edf09c092d8b498f
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43626300"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44819004"
 ---
 # <a name="view-the-data-governance-reports"></a>Afficher les rapports de gouvernance des données
 
-Après avoir créé vos étiquettes, vous pouvez vérifier si elles sont appliquées au contenu comme vous le souhaitiez. Dans les rapports de gouvernance des données du Centre de sécurité &amp; conformité, vous pouvez consulter rapidement les informations suivantes :
+After you create your labels, you'll want to verify that they're being applied to content as you intended. With the data governance reports in the Security &amp; Compliance Center, you can quickly view:
   
-- **5 premières étiquettes** Ce rapport indique les 5 premières étiquettes qui ont été appliquées au contenu. Cliquez sur ce rapport pour afficher la liste de toutes les étiquettes récemment appliquées au contenu. Vous pouvez connaître leur valeur, leur emplacement, la façon dont elles ont été appliquées, leurs actions de rétention, si ce sont des enregistrements et leur mode de destruction. 
+- **Top 5 labels** This report shows the count of the top 5 labels that have been applied to content. Click this report to view a list of all labels that have been recently applied to content. You can see each label's count, location, how it was applied, its retention actions, whether it's a record, and its disposition type. 
     
 - **Application manuelle et automatique** Ce rapport indique la valeur de tout le contenu étiqueté manuellement ou automatiquement et le pourcentage de contenu étiqueté manuellement et automatiquement. 
     
@@ -40,7 +41,7 @@ Vous trouverez ces rapports dans le Centre de sécurité &amp; conformité \> **
   
 ![Graphique illustrant les tendances des étiquettes au cours des 90 derniers jours](../media/0cc06c18-d3b1-4984-8374-47655fb38dd2.png)
   
-Vous pouvez filtrer les rapports de gouvernance des données par date (90 jours maximum) et par emplacement (Exchange, SharePoint et OneDrive Entreprise). Les données les plus récentes sont affichées dans les rapports dans un délai de 24 heures.
+You can filter the data governance reports by date (up to 90 days) and location (Exchange, SharePoint, and OneDrive for Business). The most recent data can take up to 24 hours to appear in the reports.
   
 ![Filtres applicables aux rapports de gouvernance des données](../media/77e60284-edf3-42d7-aee7-f72b2568f722.png)
   
