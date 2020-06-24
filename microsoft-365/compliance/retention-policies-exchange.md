@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Découvrez le comportement de rétention qui s’applique spécifiquement à la messagerie électronique et aux dossiers publics Exchange.
-ms.openlocfilehash: db39ab0f1eca1cc03dd0bbb5ffb500658695247a
-ms.sourcegitcommit: 261d51b90a9ad53a6a42348c414b1b1e1230c37f
+ms.openlocfilehash: 1455071bb8e7739b5d809af7d806d11e5c0e4a71
+ms.sourcegitcommit: 89636f35b0194986f156302fc1bb96af25d4805b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44292532"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44800009"
 ---
 # <a name="learn-about-retention-policies-for-exchange"></a>Découvrir les stratégies de rétention pour Exchange
 
@@ -77,7 +77,7 @@ Pour exclure les types sélectionnés pour les éléments Exchange dans une stra
 
 ### <a name="when-a-user-leaves-the-organization"></a>Lorsqu’un utilisateur quitte l’organisation 
 
-Si un utilisateur quitte votre organisation et que sa boîte aux lettres est incluse dans une stratégie de rétention, celle-ci devient inactive lorsque le compte Office 365 de l’utilisateur est supprimé. Le contenu d’une boîte aux lettres inactive reste soumis à toute stratégie de rétention qui a été appliquée à la boîte aux lettres avant sa désactivation, et le contenu est accessible aux recherches eDiscovery. Pour plus d’informations, consultez [Boîtes aux lettres inactives dans Exchange Online](inactive-mailboxes-in-office-365.md). 
+Si un utilisateur quitte votre organisation et que sa boîte aux lettres est incluse dans une stratégie de rétention, celle-ci devient inactive lorsque le compte Microsoft 365 de l’utilisateur est supprimé. Le contenu d’une boîte aux lettres inactive reste soumis à toute stratégie de rétention qui a été appliquée à la boîte aux lettres avant sa désactivation, et le contenu est accessible aux recherches eDiscovery. Pour plus d’informations, consultez [Boîtes aux lettres inactives dans Exchange Online](inactive-mailboxes-in-office-365.md). 
 
 ## <a name="how-to-configure-a-retention-policy-for-exchange"></a>Comment configurer une stratégie de rétention pour Exchange
 
@@ -87,5 +87,6 @@ Pour la page de l’Assistant **Choisir les emplacements**, sélectionnez l’un
 
 - **Appliquer la stratégie uniquement au contenu dans les courriers électroniques Exchange, les dossiers publics, les groupes Office 365, les documents OneDrive et SharePoint**
 
-- **Choisir des emplacements spécifiques** > **Messagerie Exchange** et **Dossiers publics Exchange**
+- **Choisir des emplacements spécifiques** > **Messagerie Exchange**, **Dossiers publics Exchange** et **groupes Office 365**.
 
+Même si un groupe Microsoft 365 possède une boîte aux lettres Exchange, une stratégie de rétention qui inclut l’ensemble de l’emplacement de la **messagerie Exchange** n’inclut pas le contenu des boîtes aux lettres du groupe Microsoft 365. Pour conserver le contenu de ces boîtes aux lettres, sélectionnez l’emplacement **groupes Office 365**.

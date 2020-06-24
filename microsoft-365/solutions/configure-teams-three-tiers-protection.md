@@ -19,12 +19,12 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: 1d51bd87-17bf-457c-b698-61821de3afa0
 description: Recommandations de configuration pour la protection des fichiers dans Microsoft Teams.
-ms.openlocfilehash: 129baed3286e445b9e0e440d4ec7f7a3402d3305
-ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
+ms.openlocfilehash: 643ca5d5c340dc72cb375c114c2c7edaecf3dd46
+ms.sourcegitcommit: 3274b65a3932288721541d2b3fa5ecbf4c51e1ab
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44159430"
+ms.lasthandoff: 06/11/2020
+ms.locfileid: "44702511"
 ---
 # <a name="configure-teams-with-three-tiers-of-protection"></a>Configurer Teams avec trois niveaux de protection
 
@@ -50,7 +50,7 @@ Pour plus d’informations sur ces niveaux et les fonctionnalités recommandées
 
 Le tableau suivant récapitule les configurations pour chaque niveau. Utilisez ces recommandations comme point de départ et ajustez les configurations pour répondre aux besoins de votre organisation. Il est possible que vous n’ayez pas besoin de chaque niveau.
 
-||**Base de référence (public)**|**Base de référence (privé)**|**Sensible**|**Hautement sensible**|
+||Base de référence (public)|Base de référence (privé)|Sensible|Hautement sensible|
 |:-----|:-----|:-----|:-----|:-----|
 |Équipe privé ou publique|Public|Private|Private|Private|
 |Qui a accès ?|Tous les membres de l’organisation, y compris les utilisateurs B2B.|Uniquement les membres de l’équipe. D’autres personnes peuvent demander l’accès au site associé.|Uniquement les membres de l’équipe.|Uniquement les membres de l’équipe.|
