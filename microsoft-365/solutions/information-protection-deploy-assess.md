@@ -16,12 +16,12 @@ ms.collection:
 - M365solutions
 ms.custom: ''
 description: Déterminez la réglementation relative à la confidentialité des données, les scénarios pertinents, votre disponibilité et les types d’informations sensibles qui se trouvent dans votre environnement Microsoft 365.
-ms.openlocfilehash: 532a6764cd1d21eb5eb0402c3451e320d306dc03
-ms.sourcegitcommit: b03a7ad0a80f8b839f40b8d396ab3a049491a12f
+ms.openlocfilehash: f8d8fd0b5e6d8876dead566a50408cb2e7419386
+ms.sourcegitcommit: 4512f54ba80d869d4c04e8f9bd897d1878280852
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44695184"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "44854351"
 ---
 # <a name="assess-data-privacy-risks-and-identify-sensitive-items-with-microsoft-365"></a>Évaluer les risques de confidentialité des données et identifier les éléments sensibles avec Microsoft 365
 
@@ -59,7 +59,7 @@ Pour référence ultérieure dans les Articles de cette solution globale, ce tab
 
 | Réglementations | Article/section | Quiz | Catégories de contrôle technique applicables |
 |:-------|:-----|:-------|:-------|
-| RGPD | Article 5 (1) (f) | Les données personnelles doivent être traitées de manière à garantir une sécurité appropriée des données personnelles, y compris la protection contre le traitement non autorisé ou illégal et contre la perte accidentelle, la destruction ou les dégâts, à l’aide de mesures techniques ou organisationnelles appropriées (« intégrité et confidentialité ».  |  Tous les <br> Identity <br> Device <br> Protection contre les menaces <br> Protéger les informations <br> Gestion des informations <br> Découvrir et répondre |
+| RGPD | Article 5 (1) (f) | Les données personnelles doivent être traitées de manière à garantir une sécurité appropriée des données personnelles, y compris la protection contre le traitement non autorisé ou illégal et contre la perte accidentelle, la destruction ou les dégâts, à l’aide de mesures techniques ou organisationnelles appropriées (« intégrité et confidentialité ».  |  Tous les <br> Identité <br> Device <br> Protection contre les menaces <br> Protéger les informations <br> Gestion des informations <br> Découvrir et répondre |
 |  | Article (32) (1) (a) | Tenant compte de l’état de la technique, des coûts de mise en œuvre et de la nature, de l’étendue, du contexte et des objectifs du traitement, ainsi que des risques de probabilité et de gravité variables pour les droits et les libertés des personnes physiques, le responsable du traitement et le transformateur mettent en œuvre les mesures techniques et organisationnelles appropriées pour garantir un niveau de sécurité approprié pour le risque. , y compris, entre autres, selon les besoins : (a) l’pseudonymage et le chiffrement des données personnelles. | Protéger les informations |
 |  | Article (13) (2) (a) | "... le contrôleur doit, au moment de l’obtention des données personnelles, fournir aux personnes concernées les informations supplémentaires suivantes nécessaires pour assurer un traitement équitable et transparent : (a) la période pendant laquelle les données personnelles seront stockées ou, si cela n’est pas possible, les critères utilisés pour déterminer cette période. | Gestion des informations |
 |  | Article (15) (1) (e) | La personne concernée a le droit d’obtenir de la part du responsable de la confirmation du contrôleur si les données personnelles le concernant sont traitées, et, si c’est le cas, l’accès aux données personnelles et les informations suivantes : (e) l’existence du droit de demander la rectification ou l’effacement des données personnelles ou la limitation du traitement des données personnelles concernant la personne concernée ou l’objet de ce traitement. | Découvrir et répondre |
@@ -133,7 +133,7 @@ Il est également important de réfléchir aux défis courants suivants en mati�
 
 ### <a name="employee-data-required-to-carry-out-day-to-day-business-functions"></a>Données sur les employés requises pour effectuer les fonctions professionnelles quotidiennes
 
-Les organisations par nature doivent collecter des données sur les employés à des fins d’identité électronique et de RH, sous réserve de leurs accords avec les employés. Tant qu’une personne travaille pour une société, il ne s’agit généralement pas d’un problème. L’organisation peut souhaiter mettre en place des mécanismes pour empêcher les intervenants malveillants de exfiltrating ou de fuir des données personnelles des employés. 
+Les organisations par nature doivent collecter des données sur les employés à des fins d’identité électronique et de RH, sous réserve de leurs accords avec les employés. Tant qu’une personne travaille pour une société, il ne s’agit généralement pas d’un problème. L’organisation peut souhaiter mettre en place des mécanismes pour empêcher les acteurs malveillants d’exposer ou de fuir des données personnelles d’un employé. 
 
 Si une personne quitte une entreprise, les organisations ont généralement des processus, des procédures, ainsi que des calendriers de rétention et de suppression permettant de supprimer des comptes d’utilisateur, de désactiver des boîtes aux lettres et des lecteurs personnels, et de modifier l’état des employés comme les systèmes de ressources humaines. Pour les situations dans lesquelles un litige est impliqué, un employé ou une autre partie à une enquête juridique peut avoir des raisons valables pour obtenir des informations sur les données personnelles stockées dans les systèmes de l’organisation. Dans certains cas, cette partie peut demander que ces données soient supprimées ou anonymes. 
 
@@ -151,7 +151,7 @@ En règle générale, les contrats avec les clients externes, les partenaires et
 
 ### <a name="data-the-organization-has-about-consumers-who-provide-information-to-online-services-that-the-organization-manages-in-the-b2c-scenario"></a>Données de l’Organisation concernant les consommateurs qui fournissent des informations aux services en ligne gérés par l’organisation dans le scénario B2C
 
-Cette catégorie s’intéresse à la confidentialité des données, grâce à de nombreuses instances publiques de fuite de données client. Cela peut être intentionnel, comme un tiers sous contrat pour le fournisseur, ou involontaire, comme un exemple d’un acteur malveillant. La protection des données grand public est l’une des principales raisons pour lesquelles l’UE et d’autres ont agi à ces réglementations. Les réglementations de confidentialité telles que RGPD et CCPA nécessitent que vous planifiiez les opérations suivantes :
+Cette catégorie s’intéresse à la confidentialité des données, grâce à de nombreuses instances publiques de fuite de données client. Cela peut être intentionnel, comme un tiers sous contrat pour le fournisseur, ou involontaire, tel qu’un exfiltration par un acteur malveillant. La protection des données grand public est l’une des principales raisons pour lesquelles l’UE et d’autres ont agi à ces réglementations. Les réglementations de confidentialité telles que RGPD et CCPA nécessitent que vous planifiiez les opérations suivantes :
 
 - Listes de vérification des [plans d’action](../compliance/gdpr-action-plan.md) et de préparation de la [responsabilité](../compliance/gdpr-arc-office365.md)
 - [Analyses d’impact sur la protection des données](../compliance/gdpr-data-protection-impact-assessments.md)
@@ -181,7 +181,7 @@ L’évaluation de RGPD comprend les sections suivantes :
 | | |
 |:-------|:-----|
 | Gouvernance | <ol><li>Votre politique de confidentialité indique-t-elle explicitement les informations de données traitées ? </li><li>Exécutez-vous régulièrement des analyses d’impact sur la confidentialité (PIA) ? </li><li> Utilisez-vous un outil pour gérer les informations personnelles (PI) ? </li><li> Disposez-vous d’une autorité légale pour mener des activités commerciales à l’aide de données PI sur un individu donné ? Effectuez-vous le suivi de l’autorisation pour les données ? </li><li> Effectuez-vous le suivi, l’implémentation et la gestion des contrôles d’audit ? Surveillez-vous les fuites de données ? </li></ol>|
-| Suppression & notification | <ol><li>Donnez-vous des instructions explicites sur la façon dont les données des utilisateurs sont accessibles ? </li><li> Disposez-vous de processus documentés en place pour gérer le consentement d’exclusion ? </li><li>   Disposez-vous d’un processus de suppression automatisé pour les données ? </li><li>   Avez-vous un processus de validation de l’identité lors de l’implication d’un client ? </li></ol>|
+| Suppression et notification | <ol><li>Donnez-vous des instructions explicites sur la façon dont les données des utilisateurs sont accessibles ? </li><li> Disposez-vous de processus documentés en place pour gérer le consentement d’exclusion ? </li><li> Disposez-vous d’un processus de suppression automatisé pour les données ? </li><li>   Avez-vous un processus de validation de l’identité lors de l’implication d’un client ? </li></ol>|
 | Limitation des risques et sécurité des informations | <ol><li>Utilisez-vous des outils pour analyser les données non structurées ? </li><li>Tous les serveurs sont-ils à jour et utilisez-vous des pare-feu pour les protéger ? </li><li>Exécutez-vous des sauvegardes régulières de vos serveurs ? </li><li>Surveillez-vous activement les fuites de données ? </li><li>Chiffrez-vous vos données au repos et en transmission ? </li></ol>|
 | Gestion des stratégies | <ol><li>Comment gérer vos règles d’entreprise de liaison (BCRs) ? </li><li>Effectuez-vous le suivi de l’autorisation pour les données ? </li><li> Sur une balance de 1 à 5, 5 entièrement couverte, vos contrats couvrent-ils les classifications de données et les exigences en matière de gestion ? </li><li>Avez-vous testé régulièrement un plan de réponse aux incidents ? </li><li>Quelle stratégie utilisez-vous pour gérer Access ? </li></ol>|
 |||
@@ -190,7 +190,7 @@ L’évaluation de RGPD comprend les sections suivantes :
 
 Cette étape implique l’identification de types d’informations sensibles particuliers soumis à des contrôles réglementaires spécifiques, ainsi que de l’occurrence de ces types d’informations sensibles dans votre environnement Microsoft 365. 
 
-La recherche de contenu dans votre environnement contenant des personnes personnelles peut être une tâche colossale, auparavant impliquant une utilisation de la recherche de conformité, eDiscovery, Advanced eDiscovery DLP et Auditing. 
+La recherche de contenu dans votre environnement contenant des personnes personnelles peut être une tâche colossale, qui impliquait auparavant une combinaison de la recherche de conformité, de la découverte électronique, de la découverte électronique avancée, de la fonctionnalité DLP et de l’audit. 
 
 Avec la nouvelle solution de **classification des données** dans le centre d’administration de la conformité Microsoft, il est devenu beaucoup plus facile avec la fonctionnalité [Explorateur de contenu](../compliance/data-classification-content-explorer.md) , qui fonctionne avec des types d’informations sensibles intégrés ou personnalisés, y compris ceux liés aux données personnelles.
  
@@ -212,7 +212,7 @@ Pour plus d’informations, consultez les articles suivants :
 - [Types d’informations sensibles personnalisés](../compliance/custom-sensitive-info-types.md)
 - [Créer un type d’informations sensibles personnalisé dans le Centre de Conformité et Sécurité](../compliance/create-a-custom-sensitive-information-type.md)
 - [Créer un type d’informations sensibles personnalisé dans l’interface PowerShell du Centre de sécurité et conformité](../compliance/create-a-custom-sensitive-information-type-in-scc-powershell.md)
-- [Créer des types d’informations sensibles personnalisés avec une classification des données exacte](../compliance/create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)
+- [Créez des types d’informations sensibles personnalisés à l’aide d’une classification Exact Data Match.](../compliance/create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)
 
 ### <a name="content-explorer"></a>Explorateur de contenu
 

@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 0ad41414-0cc6-4b97-90fb-06bec7bcf590
 description: Découvrez comment autoriser les membres à envoyer des messages électroniques en tant que groupe Microsoft 365 ou envoyer des courriers électroniques de la part d’un groupe Microsoft 365.
-ms.openlocfilehash: 3a93dda83b10d7c38c8c6e7d8fd484b37df565d0
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+ms.openlocfilehash: 090a5e177ed843c035155cd735e0b7b9560e5631
+ms.sourcegitcommit: bd5a08785b5ec320b04b02f8776e28bce5fb448f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44780468"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "44844667"
 ---
 # <a name="allow-members-to-send-as-or-send-on-behalf-of-a-group"></a>Autoriser les membres à envoyer en tant que ou envoyer de la part d’un groupe
 
@@ -76,6 +76,9 @@ Cette section explique comment autoriser les utilisateurs à envoyer des courrie
 5. Tapez pour rechercher ou choisir un utilisateur dans la liste. Sélectionnez **OK** et **Enregistrer**.
     
     ![Type de recherche ou de sélection d’un utilisateur dans la liste](../../media/522919cf-664c-4a25-8076-c51c8c9fbe43.png)
+    
+> [!NOTE]
+> L’application des modifications peut prendre jusqu’à deux heures.
 
 ## <a name="related-articles"></a>Articles connexes
 

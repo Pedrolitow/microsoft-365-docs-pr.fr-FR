@@ -15,12 +15,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: 4fc56caa9be59d1a29032ee6e4f32e50918294fe
-ms.sourcegitcommit: 3119b2246001ba06af8264508785352dfb894166
+ms.openlocfilehash: f4e733cf7196668fb1c3d1830ead15c6262a635e
+ms.sourcegitcommit: 4512f54ba80d869d4c04e8f9bd897d1878280852
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44820547"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "44854293"
 ---
 # <a name="whats-new-in-microsoft-threat-protection"></a>Nouveautés de la protection Microsoft contre les menaces
 
@@ -30,6 +30,9 @@ Flux RSS : recevez une notification lorsque cette page est mise à jour en copi
 ```http
 https://docs.microsoft.com/api/search/rss?search=%22Lists+the+new+features+and+functionality+in+Microsoft+Threat+Protection%22&locale=en-us
 ```
+## <a name="june-2020"></a>Juin 2020
+- Flux Twitter <br> Bénéficiez de la dernière enquête sur la sécurité, de l’intelligence des menaces, des informations sur les produits et plus-directement à l’intérieur du tableau de bord.
+
 ## <a name="february-2020"></a>Février 2020
 - [Incidents](incidents-overview.md) <br> Savoir exactement où une attaque a commencé et d’autres informations pour vous aider à déterminer l’étendue de l’attaque.
 - [Examen et réponse automatisés](mtp-autoir.md) <br> AIR permet à l’équipe en charge des opérations de sécurité d’augmenter considérablement la capacité de votre organisation à gérer les alertes et incidents de sécurité.

@@ -15,12 +15,12 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Découvrez les documents sûrs dans Microsoft 365 E5 ou Microsoft 365 E5 sécurité.
-ms.openlocfilehash: 1861671df5cfa9dab4b57d5fb53af8712a2a64ce
-ms.sourcegitcommit: 7a59d83a8660c2344ebdb92e0ea0171c9c2d9498
+ms.openlocfilehash: c574e28a01dc961d898638184afe9ece90e31133
+ms.sourcegitcommit: aa7f7350d1342ff9713bb840b2cc96d1a4234ef4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44811061"
+ms.lasthandoff: 06/22/2020
+ms.locfileid: "44835349"
 ---
 # <a name="safe-documents-in-microsoft-365-e5"></a>Documents approuvés dans Microsoft 365 E5
 
@@ -28,9 +28,9 @@ Documents approuvés est une fonctionnalité de Microsoft 365 E5 ou Microsoft 36
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu'il faut savoir avant de commencer
 
-- Cette fonctionnalité est disponible uniquement pour les utilisateurs disposant de la licence de sécurité Microsoft 365 E5 ou Microsoft 365 E5.
+- Les documents approuvés sont désormais généralement disponibles pour les utilisateurs de la version 2004 de Office (12730. x) ou une version ultérieure. Cette fonctionnalité est désactivée par défaut et doit être activée par l’administrateur de la sécurité.
 
-- Les documents approuvés sont actuellement disponibles pour la préversion publique, disponibles pour les utilisateurs qui font partie du [programme Office Insider](https://insider.office.com/join) sur le canal actuel (aperçu) avec Office version 2002 (12527,20092) ou supérieur. Cette fonctionnalité est désactivée par défaut et doit être activée par l’administrateur de la sécurité.
+- Cette fonctionnalité est disponible uniquement pour les utilisateurs disposant de la licence de sécurité *microsoft 365 E5* ou *Microsoft 365 E5* (non incluse dans les plans Office 365 ATP).
 
 - Pour vous connecter à Exchange Online PowerShell, voir [Connexion à Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell). Pour vous connecter à un service Exchange Online Protection PowerShell autonome, voir [Se connecter à Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
@@ -40,7 +40,7 @@ Documents approuvés est une fonctionnalité de Microsoft 365 E5 ou Microsoft 36
 
 Pour rester protégé, les documents fiables envoient des fichiers au Cloud de [protection avancée contre les menaces Microsoft Defender](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) pour analyse.
 
-- Vous trouverez [ici](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy) des informations détaillées sur la façon dont Microsoft Defender Advanced thread protection gère vos données.
+- Vous [trouverez des](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy) informations détaillées sur la façon dont Microsoft Defender Advanced Threat Protection gère vos données.
 - Outre les instructions ci-dessus, les fichiers envoyés par des documents approuvés ne sont pas conservés dans Defender au-delà du temps nécessaire à l’analyse, ce qui correspond généralement à moins de 24 heures.
 
 ## <a name="use-the-security--compliance-center-to-configure-safe-documents"></a>Utiliser le centre de sécurité & conformité pour configurer des documents approuvés
@@ -51,7 +51,7 @@ Pour rester protégé, les documents fiables envoient des fichiers au Cloud de [
 
 3. Dans la section **aider les utilisateurs à rester sûrs lors de l’approbation d’un fichier à ouvrir en dehors du mode protégé dans les applications Office** , configurez l’un des paramètres suivants :
 
-   - **Activer les documents approuvés pour les clients Office (les fichiers seront également envoyés vers Microsoft Cloud pour les analyses en profondeur)**
+   - **Activer des documents approuvés pour les clients Office**
 
    - **Autoriser les utilisateurs à cliquer en mode protégé même si les documents approuvés identifient le fichier comme malveillant**: nous vous recommandons de ne pas activer cette option.
 
@@ -64,7 +64,7 @@ Pour rester protégé, les documents fiables envoient des fichiers au Cloud de [
 Utilisez la syntaxe suivante :
 
 ```powershell
-Set-AtpPolicyForO365 -EnableSafeDocs <$true|$false> -AllowSafeDocsOpen <$true|$false>
+Set-AtpPolicyForO365 -EnableSafeDocs <$true | $false> -AllowSafeDocsOpen <$true | $false>
 ```
 
 - Le paramètre _EnableSafeDocs_ active ou désactive les documents approuvés pour l’ensemble de l’organisation.

@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Déterminez les fonctionnalités et le contenu des nouveautés affichées ou masqués pour les utilisateurs finaux dans Office nouveautés de la gestion des applications de bureau Office.
-ms.openlocfilehash: 7b9522a901078d6e235e295c184fec65c251338b
-ms.sourcegitcommit: f80c6c52e5b08290f74baec1d64c4070046c32e4
+ms.openlocfilehash: 9f63da1870253c9023fa1e2e169bae22435807e4
+ms.sourcegitcommit: bd5a08785b5ec320b04b02f8776e28bce5fb448f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "44717174"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "44844727"
 ---
 # <a name="show-or-hide-new-features-using-whats-new-management"></a>Afficher ou masquer les nouvelles fonctionnalités à l’aide de nouveautés gestion
 
@@ -42,13 +42,9 @@ Office What’s New Management est disponible dans le centre d’administration 
 Les administrateurs peuvent prévisualiser le contenu de What’s New pour un canal et gérer la version du contenu à l’aide d’Office What’s New Management.
 
 1. Dans le centre d’administration Microsoft 365, sous **paramètres**, sélectionnez **paramètres d’organisation**.
-
 2. Dans l’onglet **services** , sélectionnez **Office what’s New Management**.
-
 3. Sélectionnez une ou plusieurs fonctionnalités pour afficher le nom de la fonctionnalité, une brève description, l’application et la version commerciale de chaque fonctionnalité dans le panneau flyout.
-
 4. Sélectionnez **Masquer aux utilisateurs** ou **afficher aux utilisateurs**.  
-
     L’état **affiché par défaut** indique que les informations sur les fonctionnalités sont affichées par défaut aux utilisateurs jusqu’à ce que l’administrateur définisse l’état d’une fonctionnalité sur **masqué** ou **affiché**.  
 
     > [!NOTE]
@@ -65,6 +61,13 @@ Les nouvelles fonctionnalités apparaissent dans Office nouveautés en fonction 
 |**Entreprise semi-annuelle** <br/> |1er janvier et 1er juillet <br/> | 2 semaines avant la version majeure qui offre de nouvelles fonctionnalités<br/> |
 
 Pour plus d’informations sur les planifications de mise à jour des canaux, consultez [l’historique des mises à jour pour les applications Microsoft 365 (classées par date)](https://docs.microsoft.com/officeupdates/update-history-microsoft365-apps-by-date).
+
+## <a name="add-office-whats-new-management-card-to-the-admin-center-home-page"></a>Ajouter la nouvelle carte de gestion Office nouveautés à la page d’accueil du centre d’administration
+
+1. Sur la page d’administration de Microsoft 365, sélectionnez Ajouter une carte en haut de la page.
+2. Recherchez **What’s New in Office Apps** dans la liste, puis sélectionnez-le.
+3. Une fois que la carte est sur notre page d’accueil, vous pouvez choisir **gérer** pour [afficher ou masquer les fonctionnalités de l'](#show-or-hide-new-features) organisation yor. 
+
 
 ## <a name="related-articles"></a>Articles connexes
 

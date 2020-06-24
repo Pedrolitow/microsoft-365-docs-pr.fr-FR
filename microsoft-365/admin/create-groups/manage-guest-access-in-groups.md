@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9de497a9-2f5c-43d6-ae18-767f2e6fe6e0
 description: Découvrez comment ajouter des invités à un groupe Microsoft 365, afficher des utilisateurs invités et utiliser PowerShell pour contrôler l’accès invité.
-ms.openlocfilehash: fe72f5e831215730a1ac79bcce2296d53b969c9c
-ms.sourcegitcommit: 589f78fc0f39aff9109959ded48d146cc32fc3c5
+ms.openlocfilehash: 0322bd269f1c5637627461d136b40f6af4fc9540
+ms.sourcegitcommit: 4512f54ba80d869d4c04e8f9bd897d1878280852
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "44761661"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "44854245"
 ---
 # <a name="manage-guest-access-in-microsoft-365-groups"></a>Gérer l’accès invité dans les groupes Microsoft 365
 
@@ -47,7 +47,7 @@ L’accès invité dans des groupes est souvent utilisé dans le cadre d’un sc
 
 Si vous souhaitez activer ou désactiver l’accès invité dans des groupes, vous pouvez le faire dans le centre d’administration 365 de Microsoft.
 
-1. Dans le centre d’administration, accédez aux paramètres Organisation des **paramètres** \> **Org settings** et, sous l’onglet **services** , sélectionnez **groupes Microsoft 365**.
+1. Dans le centre d’administration, accédez à la section **Afficher tous les** \> **paramètres** de \> l' **organisation** , puis, sous l’onglet **services** , sélectionnez **groupes Microsoft 365**.
   
 2. Sur la page **groupes Microsoft 365** , indiquez si vous souhaitez autoriser les personnes extérieures à votre organisation à accéder aux ressources de groupe ou les propriétaires de groupes à ajouter des personnes en dehors de votre organisation à des groupes.
 
@@ -61,7 +61,7 @@ Si l’invité existe déjà dans votre répertoire, vous pouvez l’ajouter à 
   
 4. Sélectionnez **Ajouter des membres**, puis choisissez le nom de l’invité que vous souhaitez ajouter.
     
-5. Sélectionnez **Enregistrer**.
+5. Cliquez sur **Enregistrer**.
 
 Si vous souhaitez ajouter un invité directement à l’annuaire, vous pouvez [Ajouter des utilisateurs de collaboration B2B Azure Active Directory dans le portail Azure](https://docs.microsoft.com/azure/active-directory/b2b/add-users-administrator).
 

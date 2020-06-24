@@ -15,12 +15,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: ba603f3703a7d4b6df567f8299af9f1804e42b96
-ms.sourcegitcommit: 3274b65a3932288721541d2b3fa5ecbf4c51e1ab
+ms.openlocfilehash: 60d0383f3acae73c36383b65daaac405a4e20bd3
+ms.sourcegitcommit: 4512f54ba80d869d4c04e8f9bd897d1878280852
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/11/2020
-ms.locfileid: "44702569"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "44854363"
 ---
 # <a name="configure-microsoft-threat-protection-pillars-for-your-trial-lab-environment"></a>Configurer les piliers de protection contre les menaces Microsoft pour votre environnement de laboratoire d’évaluation
 
@@ -65,7 +65,7 @@ La protection contre les menaces Microsoft se compose de quatre piliers. Bien qu
 ![Solution d’image of_Microsoft de protection contre les menaces pour les utilisateurs, Azure Advanced Threat Protection, pour les points de terminaison Microsoft Defender Advanced Threat Protection, pour les applications Cloud, Microsoft Cloud App Security et for Data, Office 365 Advanced Threat Protection  ](../../media/mtp-eval-31.png) <br>
 
 Cette section vous guidera dans la configuration des éléments suivants :
--   Office 365 – Protection avancée contre les menaces
+-   Office 365 – Protection avancée contre les menaces
 -   Azure Advanced Threat Protection 
 -   Microsoft Cloud App Security
 -   Microsoft Defender – Protection avancée contre les menaces
@@ -237,7 +237,7 @@ Cliquez sur **Suivant**.
 16. Faites défiler la liste vers le bas et cliquez sur **enregistrer les préférences** pour confirmer les nouvelles intégrations.
 <br>![Image of_Save bouton préférences que vous devez cliquer](../../media/mtp-eval-72.png) <br>
 
-## <a name="turn-on-microsoft-threat-protection"></a>Activer la Protection Microsoft contre les menaces
+## <a name="start-the-microsoft-threat-protection-service"></a>Démarrer le service de protection contre les menaces Microsoft
 >[!NOTE]
 >À partir du 1er juin 2020, Microsoft active automatiquement les fonctionnalités de protection contre les menaces Microsoft pour tous les clients éligibles. Pour plus d’informations, consultez cet [article de la communauté Microsoft Tech sur l’éligibilité des licences](https://techcommunity.microsoft.com/t5/security-privacy-and-compliance/microsoft-threat-protection-will-automatically-turn-on-for/ba-p/1345426) . 
 <br>
@@ -245,7 +245,10 @@ Cliquez sur **Suivant**.
 Accédez au [Centre de sécurité Microsoft 365](https://security.microsoft.com/homepage). Accédez à **paramètres** , puis sélectionnez **Microsoft Threat Protection**.
 <br>![Capture d’écran des options d’image of_Microsoft protection contre les menaces à partir de la page Paramètres du centre de sécurité Microsoft 365](../../media/mtp-eval-72b.png) <br>
 
+Pour obtenir des instructions plus détaillées, consultez la rubrique [activer la protection contre les menaces Microsoft](mtp-enable.md). 
+
 Félicitations ! Vous venez de créer votre environnement de laboratoire d’évaluation de la protection contre les menaces Microsoft ! Vous pouvez désormais simuler une attaque et voir comment les fonctionnalités du produit peuvent détecter, créer des alertes et répondre automatiquement à une attaque sans fichier sur un point de terminaison.
+
 
 ## <a name="next-steps"></a>Étapes suivantes
 [Générer une alerte de test](generate-test-alert.md).

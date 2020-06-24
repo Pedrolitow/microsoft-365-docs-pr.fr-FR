@@ -17,20 +17,20 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: f9bca47c6a47468d0a5a37b77e4f587745bf619d
-ms.sourcegitcommit: c696852da06d057dba4f5147bbf46521910de3ab
+ms.openlocfilehash: 48ff6d6f5cac0991895c40cae90ca31657cfedff
+ms.sourcegitcommit: bd5a08785b5ec320b04b02f8776e28bce5fb448f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44545933"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "44844881"
 ---
 # <a name="whats-coming-in-microsoft-secure-score"></a>Qu’est-ce qui arrive dans le score de sécurité Microsoft ?
 
-Pour faire en sorte que [Microsoft Secure score](microsoft-secure-score-new.md) un meilleur représentant de votre position de sécurité et améliore la convivialité, nous apportons des modifications dans le futur proche. Votre score et le score maximal possible seront modifiés. Toutefois, cela n’implique pas de modification de votre position de sécurité.
+Pour faire en sorte que [Microsoft Secure score](microsoft-secure-score.md) un meilleur représentant de votre position de sécurité et améliore la convivialité, nous apportons des modifications dans le futur proche. Votre score et le score maximal possible seront modifiés. Toutefois, cela n’implique pas de modification de votre position de sécurité.
 
-Pour en savoir plus sur les modifications récentes, consultez [la rubrique what’s New in Microsoft Secure score ?](microsoft-secure-score-new.md#whats-new)
+Pour en savoir plus sur les modifications récentes, consultez [la rubrique what’s New in Microsoft Secure score ?](microsoft-secure-score.md#whats-new)
 
-## <a name="june-2020"></a>2020 juin
+## <a name="june-2020"></a>Juin 2020
 
 ### <a name="remove-improvement-action-for-microsoft-defender-advanced-threat-protection"></a>Supprimer l’action d’amélioration pour la protection avancée contre les menaces Microsoft Defender
 
@@ -51,5 +51,5 @@ Pour en savoir plus sur les modifications récentes, consultez [la rubrique what
 * Bloquer l’injection de code dans d’autres processus par les applications Office
 * Bloquer l’exécution des fichiers exécutables sauf s’ils répondent à un critère de récurrence, d’âge ou de liste approuvée
 * Création de processus de bloc provenant de commandes PSExec et WMI
-* Bloquer le vol d’informations d’identification à partir du sous-système Windows local Security Authority (lsass. exe)
+* Bloquer le vol d’informations d’identification à partir du sous-système Windows local Security Authority (lsass.exe)
 * Bloquer les appels d’API Win32 à partir de macros Office

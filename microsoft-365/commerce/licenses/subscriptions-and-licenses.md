@@ -24,18 +24,20 @@ description: 'Découvrez les abonnements et les licences dans Microsoft 365 pour
 ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
-ms.openlocfilehash: 5ed1925fd51dd1798d4c6ab275494fde01535177
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: f83b2069bd1b4c86e2198252a54ed2e8e5c55a04
+ms.sourcegitcommit: bd5a08785b5ec320b04b02f8776e28bce5fb448f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44402401"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "44844679"
 ---
 # <a name="understand-subscriptions-and-licenses-in-microsoft-365-for-business"></a>Comprendre les abonnements et les licences dans Microsoft 365 pour les entreprises
 
 Cet article explique la relation entre les abonnements et les licences, et fournit des informations supplémentaires sur les [personnes autorisées à attribuer des licences](#find-out-who-can-assign-licenses), la [compréhension de ce qui se produit lorsque vous attribuez une licence à un utilisateur](#understand-what-happens-when-you-assign-a-license-to-someone), et [sur le nombre d’appareils pouvant installer Office sur](#how-many-devices-can-people-install-office-on). Elle inclut également des liens vers des [licences de présentation des licences pour les boîtes aux lettres non utilisateur](#understand-licenses-for-non-user-mailboxes)et [des articles sur la gestion des licences](#articles-about-managing-licenses).
   
 Lorsque vous achetez un abonnement à Microsoft 365 pour les entreprises, vous vous inscrivez à un ensemble d’applications et de services que vous payez mensuellement ou annuellement. Les applications et les services que vous recevez dans le cadre de votre abonnement dépendent du produit que vous avez acheté, tel que Microsoft 365 Apps for Business ou Microsoft 365 Business standard. Vous pouvez consulter les informations fournies avec chaque produit sur la [page acheter Microsoft 365](https://products.office.com/compare-all-microsoft-office-products?&activetab=tab:primaryr1). 
+
+Vous pouvez consulter différentes options de licence disponibles dans [Microsoft 365 pour les petites et moyennes entreprises](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/licensing-microsoft-365-in-smb)
 
 Lorsque vous achetez un abonnement, vous spécifiez le nombre de licences dont vous avez besoin, en fonction du nombre de personnes de votre organisation. Une fois l'achat terminé, vous créez des comptes pour les utilisateurs, puis attribuez une licence à chacun. À mesure que les besoins de votre organisation évoluent, vous pouvez acheter des licences supplémentaires pour accueillir de nouvelles personnes ou réattribuer des licences à d’autres utilisateurs lorsqu’un utilisateur quitte votre organisation. 
 
@@ -44,7 +46,7 @@ Si vous disposez de plusieurs abonnements, vous pouvez attribuer des licences à
   
 ## <a name="find-out-who-can-assign-licenses"></a>Identifier qui peut attribuer des licences
 
-Plusieurs types d'administrateurs peuvent utiliser des licences de différentes façons, en fonction de leur rôle. Le tableau ci-dessous recense les options les plus courantes. Pour consulter la liste complète des rôles et des privilèges d'administrateur, voir [À propos des rôles d'administrateur](../../admin/add-users/about-admin-roles.md).
+Different types of admins can work with licenses in different ways, depending on their roles. The following table lists the most common options. For a complete list of admin roles and privileges, see [About admin roles](../../admin/add-users/about-admin-roles.md).
   
 |**Rôle d'administrateur**|**Attribuer une licence**|**Supprimer une licence**|**Acheter des licences supplémentaires**|**Supprimer un compte**|
 |:-----|:-----|:-----|:-----|:-----|
@@ -63,7 +65,7 @@ Le tableau suivant indique ce qui se produit automatiquement lorsque vous attrib
 |Exchange Online  <br/> |Une boîte aux lettres est créée pour cette personne.  <br/> Pour plus d’informations sur le contrat SLA pour cette tâche, voir [«Configuration... messages dans le centre d’administration Microsoft 365](https://support.microsoft.com/help/2635238/setting-up-messages-in-the-office-365-admin-center). |
 |SharePoint Online  <br/> |Les autorisations de modification du site d'équipe SharePoint Online par défaut sont attribuées à cette personne.  <br/> |
 |Skype Entreprise Online  <br/> |La personne aura accès aux fonctionnalités associées à la licence.  <br/> |
-|Microsoft 365 Apps for enterprise  <br/> |La personne pourra télécharger Microsoft Office sur un maximum de 5 Mac ou PC, 5 tablettes et 5 smartphones.  <br/> |
+|Applications Microsoft 365 pour les grandes entreprises  <br/> |La personne pourra télécharger Microsoft Office sur un maximum de 5 Mac ou PC, 5 tablettes et 5 smartphones.  <br/> |
    
 ## <a name="how-many-devices-can-people-install-office-on"></a>Sur combien d'appareils les utilisateurs peuvent-ils installer Office ?
 
@@ -81,7 +83,7 @@ Si votre abonnement comprend un des produits suivants, chaque personne peut inst
     
 ## <a name="understand-licenses-for-non-user-mailboxes"></a>Comprendre les licences pour les boîtes aux lettres non-utilisateur
 
-Vous n'êtes pas obligé d'attribuer des licences aux boîtes aux lettres de ressources, de salle, et partagées, sauf si elles dépassent leur quota de stockage de 50 gigaoctets (Go). Pour plus d'informations sur les boîtes aux lettres non-utilisateur, voir les articles suivants :
+You don't need to assign licenses to resource mailboxes, room mailboxes, and shared mailboxes, except when they are over their storage quota of 50 gigabytes (GB). For more about non-user mailboxes, see the following articles:
   
 - [Créer une boîte aux lettres partagée](../../admin/email/create-a-shared-mailbox.md)
     

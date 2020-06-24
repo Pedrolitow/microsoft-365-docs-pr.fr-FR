@@ -1,5 +1,5 @@
 ---
-title: Microsoft Secure score (itération précédente)
+title: Degré de sécurisation Microsoft
 description: Décrit Microsoft Secure score dans le centre de sécurité Microsoft 365, comment améliorer votre position de sécurité et ce que les administrateurs de sécurité peuvent vous attendre.
 keywords: sécurité, programmes malveillants, Microsoft 365, M365, Secure score, centre de sécurité, actions d’amélioration
 ms.prod: microsoft-365-enterprise
@@ -20,23 +20,20 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: a7097bfc9fb4c15408672171b27d577ddfaa9bd5
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 44ba7a1c877580f31ca858f7fefcc502e0bb8beb
+ms.sourcegitcommit: bd5a08785b5ec320b04b02f8776e28bce5fb448f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44818566"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "44844623"
 ---
-# <a name="microsoft-secure-score-previous-iteration"></a>Microsoft Secure score (itération précédente)
+# <a name="microsoft-secure-score"></a>Degré de sécurisation Microsoft
 
->[!IMPORTANT]
->Cette itération du score de sécurité Microsoft est remplacée par de nouveaux éléments et fonctionnalités de conception au cours des prochains mois. Si vous n’avez pas encore affiché l’itération la plus récente, vous allez bientôt.
->
->Si vous voyez un onglet **mesures & des tendances** en regard de l’historique, c’est que vous êtes dans la nouvelle itération. [Accédez à Microsoft Secure score (nouveau)](microsoft-secure-score-new.md)
+Microsoft Secure score est une mesure de la position de sécurité d’une organisation, avec un nombre supérieur indiquant d’autres actions d’amélioration. Vous pouvez https://security.microsoft.com/securescore le trouver dans le [Centre de sécurité Microsoft 365](overview-security-center.md).
 
-Microsoft Secure score est une mesure de la position de sécurité d’une organisation, avec un nombre supérieur indiquant d’autres actions d’amélioration. Le suivi des recommandations de score de sécurité peut protéger votre organisation contre les menaces. À partir d’un tableau de bord centralisé dans le centre de sécurité Microsoft 365, les organisations peuvent surveiller et gérer la sécurité des identités, des données, des applications, des périphériques et de l’infrastructure de Microsoft 365.
+Le suivi des recommandations de score de sécurité peut protéger votre organisation contre les menaces. À partir d’un tableau de bord centralisé dans le centre de sécurité Microsoft 365, les organisations peuvent surveiller et gérer la sécurité des identités, des données, des applications, des périphériques et de l’infrastructure de Microsoft 365.
 
-Le score de sécurité aide les organisations :
+Le score de sécurité aide les organisations :  
 
 * Rapport sur l’état actuel de l’état de sécurité de l’organisation.
 * Améliorez la position de la sécurité en fournissant des possibilités de détectabilité, de visibilité, de conseils et de contrôle.  
@@ -44,11 +41,9 @@ Le score de sécurité aide les organisations :
 
 Les organisations ont accès à des visualisations robustes de mesures et tendances, à une intégration à d’autres produits Microsoft, à une comparaison de scores avec des organisations similaires, et bien plus encore. Le score peut également indiquer quand les solutions tierces ont résolu les actions recommandées.
 
-En outre, vous pouvez accéder à vos recommandations et à votre score via l' [API Microsoft Graph](https://www.microsoft.com/security/partnerships/graph-security-api). En savoir plus sur le [type de ressource de score sécurisé](https://go.microsoft.com/fwlink/?linkid=2092996).
+## <a name="how-it-works"></a>Mode de fonctionnement
 
-## <a name="how-your-secure-score-is-calculated"></a>Mode de calcul du score de sécurité
-
-Vous disposez de points pour configurer les fonctionnalités de sécurité recommandées, effectuer des tâches liées à la sécurité (telles que l’affichage des rapports) ou traiter l’action d’amélioration avec une application ou un logiciel tiers. Certaines actions d’amélioration donnent uniquement des points lorsqu’ils sont complètement terminés, et d’autres les déposent si elles sont terminées pour certains périphériques ou utilisateurs.
+Vous disposez de points pour la configuration des fonctionnalités de sécurité recommandées, l’exécution de tâches liées à la sécurité ou la gestion de l’action d’amélioration avec une application ou un logiciel tiers, ou une autre limitation. Certaines actions d’amélioration donnent uniquement des points lorsqu’ils sont complètement terminés, et d’autres les déposent si elles sont terminées pour certains périphériques ou utilisateurs. Si vous ne pouvez pas ou ne souhaitez pas arrêter une des actions d’amélioration, vous pouvez choisir d’accepter le risque ou le risque restant.
 
 Nous vous montrons l’ensemble complet des améliorations possibles, quelle que soit la licence, afin que vous puissiez comprendre les meilleures pratiques en matière de sécurité et améliorer votre score. Votre posture de sécurité absolue est représentée par la fonction de chiffrement sécurisé, qui reste la même quelle que soit la licence de produit que possède votre organisation. N’oubliez pas que la sécurité doit être équilibrée avec la convivialité et que toutes les recommandations ne peuvent pas fonctionner pour votre environnement.
 
@@ -56,11 +51,11 @@ Votre score est mis à jour en temps réel afin de refléter les informations pr
 
 ### <a name="how-improvement-actions-are-scored"></a>Comment les actions d’amélioration sont évaluées
 
-La plupart sont évaluées de manière binaire : Si vous implémentez l’action d’amélioration, par exemple créer une nouvelle stratégie ou activer un paramètre spécifique, vous obtenez 100% des points. Pour les autres actions d’amélioration, les points sont fournis sous la forme d’un pourcentage de la configuration totale. Par exemple, si l’action d’amélioration indique que vous obtenez 30 points en protégeant tous vos utilisateurs à l’aide de l’authentification multifacteur et que vous ne disposez que de 5 de 100 total d’utilisateurs protégés, vous disposez d’un score partiel d’environ 2 points (5 protected/100 Total * 30 max pts = 2 pts de score partiel).
+Chaque action d’amélioration vaut 10 points maximum. La plupart sont évaluées de manière binaire : Si vous implémentez l’action d’amélioration, par exemple créer une nouvelle stratégie ou activer un paramètre spécifique, vous obtenez 100% des points. Pour les autres actions d’amélioration, les points sont fournis sous la forme d’un pourcentage de la configuration totale. Par exemple, si l’action d’amélioration indique 10 points en protégeant tous vos utilisateurs à l’aide de l’authentification multifacteur et que vous n’avez que 50 de 100 Total utilisateurs protégés, vous recevrez un score partiel de 5 points (50 protégé/100 total * 10 pts max = 5 pts le score partiel).
 
 ### <a name="products-included-in-secure-score"></a>Produits inclus dans le score de sécurité
 
-Il existe actuellement des recommandations pour Microsoft 365 (y compris Exchange Online), Azure AD, Microsoft Defender ATP, Azure ATP et la sécurité des applications Cloud. Des recommandations pour d’autres produits de sécurité seront bientôt disponibles. Les recommandations ne couvrent pas toutes les surfaces d’attaque associées à chaque produit, mais il s’agit d’une base de référence correcte. Vous pouvez également marquer les actions d’amélioration telles qu’elles sont couvertes par un tiers.
+Il existe actuellement des recommandations pour Microsoft 365 (y compris Exchange Online), Azure AD, Microsoft Defender ATP, Azure ATP et la sécurité des applications Cloud. Des recommandations pour d’autres produits de sécurité seront bientôt disponibles. Les recommandations ne couvrent pas toutes les surfaces d’attaque associées à chaque produit, mais il s’agit d’une base de référence correcte. Vous pouvez également marquer les actions d’amélioration telles qu’elles sont couvertes par une atténuation tierce ou alternative.
 
 ## <a name="required-permissions"></a>Autorisations requises
 
@@ -74,6 +69,7 @@ Avec l’accès en lecture et en écriture, vous pouvez effectuer des modificati
 * Administrateur de sécurité
 * Administrateur Exchange
 * Administrateur SharePoint
+* Administrateur de compte
 
 ### <a name="read-only-roles"></a>Rôles en lecture seule
 
@@ -86,169 +82,116 @@ Avec un accès en lecture seule, vous n’êtes pas en mesure de modifier l’É
 * Opérateur de sécurité
 * Lecteur général
 
-### <a name="graph-api"></a>API Graph
-
-Pour accéder à l’API Graph, vous devez disposer de l’une des étendues suivantes en plus d’un rôle :
-
-* Étendue securityevents. Read. All (pour le rôle en lecture seule)
-* Étendue securityevents. ReadWrite. All (pour le rôle de lecture et d’écriture)
-
 ## <a name="gain-visibility-into-your-security-posture"></a>Obtenir une visibilité sur la position de la sécurité
 
 Pour vous aider à trouver plus rapidement les informations dont vous avez besoin, les actions d’amélioration de Microsoft sont organisées en groupes :
 
 * Identity (comptes Azure AD & rôles)
 * Data (protection des informations Microsoft)
-* Appareil (aucune action d’amélioration pour l’instant)
+* Appareil (Microsoft Defender ATP, appelé score de [configuration](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configuration-score))
 * Application (applications de messagerie et de Cloud, y compris Office 365 et Microsoft Cloud App Security)
 * Infrastructure (aucune action d’amélioration pour l’instant)
 
+>[!NOTE]
+>Dans la version récente de Microsoft Secure score, un modèle de notation amélioré a été publié, ce qui rendait le score de sécurité Microsoft temporairement incompatible avec le score de sécurité d’identité et l’API Graph. [Afficher les détails](microsoft-secure-score.md#incompatibility-with-identity-secure-score-and-graph-api)
+
 Dans la page de présentation de Microsoft Secure score, vous pouvez voir la répartition des points entre ces groupes et les points disponibles. La page de vue d’ensemble est également l’endroit où vous pouvez obtenir une vue d’ensemble du score total, de la tendance historique de votre score de sécurité avec comparaisons de référence et des actions d’amélioration hiérarchisée qui peuvent être prises pour améliorer votre score.
 
-![](../../media/secure-score/homepage-original.png)
-*Page d’accueil du score sécurisé figure 1 : page de présentation de Microsoft Secure score*
+![Page d’accueil du score sécurisé](../../media/secure-score/secure-score-homepage-new.png)
 
 ## <a name="take-action-to-improve-your-score"></a>Prendre des mesures pour améliorer votre score
 
-L’onglet actions d’amélioration répertorie les recommandations de sécurité qui concernent les surfaces d’attaque possibles, ainsi que leur état (terminé, non terminé, résolu par un tiers et ignoré). Vous pouvez rechercher, filtrer et regrouper toutes les actions d’amélioration.
+L’onglet **actions d’amélioration** répertorie les recommandations de sécurité qui concernent les surfaces d’attaque possibles, ainsi que leur état (à des adresses, planifiées, des risques acceptés, résolus par des tiers, résolus par une atténuation de substitution et terminées). Vous pouvez rechercher, filtrer et regrouper toutes les actions d’amélioration.  
 
 ### <a name="ranking"></a>Placé
 
 Le classement repose sur le nombre de points restants à atteindre, les difficultés d’implémentation, l’impact de l’utilisateur et la complexité. Les actions d’amélioration les plus élevées ont un grand nombre de points restants, avec une faible Difficulté, un impact sur l’utilisateur et une complexité.
 
-### <a name="actions"></a>Actions
+### <a name="view-improvement-action-details"></a>Afficher les détails de l’action d’amélioration
 
-Lorsque vous sélectionnez une action d’amélioration spécifique, un survol s’affiche. Pour terminer l’action, vous disposez de plusieurs options :
+Lorsque vous sélectionnez une action d’amélioration spécifique, un menu volant de page entière s’affiche.  
 
-1. Sélectionnez **afficher les paramètres** pour accéder à l’écran de configuration et effectuer les modifications. Vous pouvez ensuite obtenir les points que l’action est utile, visible en haut du volant. La mise à jour des points peut prendre jusqu’à 24 heures.
+![Exemple de menu contextuel d’action d’amélioration ](../../media/secure-score/secure-score-improvement-action-details.png)
+ *figure 2 : exemple de menu contextuel d’action d’amélioration*
 
-2. Sélectionnez **résoudre via un tiers** , car l’action d’amélioration a déjà été traitée par une application ou un logiciel tiers. Vous obtenez les points que l’action vaut, afin que votre score sécurisé reflète mieux votre position de sécurité globale. Si un tiers ne couvre plus le contrôle, vous pouvez marquer l’action d’amélioration comme non terminée. N’oubliez pas que Microsoft n’a aucune visibilité sur le respect des exigences de score si l’action d’amélioration est marquée comme résolue via un tiers.
+Pour terminer l’action, vous disposez de plusieurs options :
 
-3. Sélectionnez **Ignorer** , car vous avez décidé d’accepter le risque et de ne pas appliquer l’action d’amélioration. Une fois que vous ignorez une action d’amélioration, le nombre total de points de score sécurisé que vous pouvez atteindre est réduit. Vous pouvez afficher cette action dans l’historique ou l’annuler à tout moment.
+* Sélectionnez **gérer** pour accéder à l’écran de configuration et effectuer la modification. Vous obtiendrez ensuite les points que l’action vaut, visible dans le survol. Les points prennent généralement environ 24 heures à mettre à jour.
 
-![Exemple d’action d’amélioration du score sécurisé](../../media/secure-score/secure-score1x450.png)
+* Sélectionnez **partager** pour copier le lien direct vers l’action d’amélioration ou choisissez la plateforme pour partager le lien, comme courrier électronique, Microsoft Teams, planificateur Microsoft ou ServiceNow. La sélection de ServiceNow vous permettra de créer un ticket de modification qui sera visible dans ServiceNow et le centre de sécurité Microsoft 365. Pour en savoir plus, consultez la rubrique [Microsoft 365 Security Center and ServiceNow Integration](tickets.md).
 
-*Figures 2 : menu démenu d’action d’amélioration*
+### <a name="choose-an-improvement-action-status"></a>Choisir un état d’action d’amélioration
 
-## <a name="monitor-improvements-over-time"></a>Surveiller les améliorations au fil du temps
+Choisissez les États et les notes d’enregistrement spécifiques à l’action d’amélioration. Les statues que vous pouvez sélectionner sont les suivants :
+
+* **À résoudre** : vous reconnaissez que l’action d’amélioration est nécessaire et que vous envisagez d’y remédier à un moment donné. Cet État s’applique également aux actions détectées comme partielles, mais pas complètement terminées.
+* **Planifié** : des plans concrets sont en place pour effectuer l’action d’amélioration.
+* **Risque accepté** : la sécurité doit toujours être équilibrée avec la convivialité et toutes les recommandations ne fonctionnent pas pour votre environnement. Lorsque c’est le cas, vous pouvez choisir d’accepter le risque ou le risque restant et de ne pas appliquer l’action d’amélioration. Vous n’aurez pas de points, mais l’action ne sera plus visible dans la liste des actions d’amélioration. Vous pouvez afficher cette action dans l’historique ou l’annuler à tout moment.
+* **Résolu via** un tiers et **résolu par une autre atténuation** : l’action d’amélioration a déjà été traitée par une application ou un logiciel tiers, ou par un outil interne. Vous obtiendrez les points que l’action vaut, afin que votre score reflète mieux votre position de sécurité globale. Si un outil tiers ou interne ne couvre plus le contrôle, vous pouvez choisir un autre État. N’oubliez pas que Microsoft n’aura aucune visibilité sur l’intégralité de la mise en œuvre si l’action d’amélioration est marquée comme l’un de ces statuts.
+
+#### <a name="threat--vulnerability-management-improvement-actions"></a>Actions d’amélioration de la gestion des vulnérabilités & des menaces
+
+Pour les actions d’amélioration dans la catégorie « périphérique », vous ne pouvez pas choisir les statuts. Au lieu de cela, vous serez redirigé vers la [& menace de gestion des vulnérabilités (TVM)](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/tvm-security-recommendation) dans le [Centre de sécurité Microsoft Defender](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/use) afin de prendre des mesures. L’exception que vous choisissez et la justification que vous écrivez seront spécifiques à ce portail et ne seront pas présentes dans le portail de score de sécurité Microsoft.
+
+#### <a name="completed-improvement-actions"></a>Actions d’amélioration terminées
+
+Les actions d’amélioration ont un état « terminé » une fois que tous les points possibles pour l’action d’amélioration ont été atteints. Les actions d’amélioration terminées sont confirmées via les données Microsoft et vous ne pouvez pas modifier l’État.
+
+### <a name="assess-information-and-review-user-impact"></a>Évaluation des informations et examen de l’impact des utilisateurs
+
+La section **d’un coup d’œil** vous indiquera la catégorie, les attaques contre lesquelles elle peut protéger et le produit.
+
+L' **impact** de l’utilisateur indique ce que les utilisateurs peuvent faire si l’action d’amélioration est effectuée et que les **utilisateurs concernés** affichent les personnes qui l’exécuteront.
+
+### <a name="implement-the-improvement-action"></a>Implémenter l’action d’amélioration
+
+La section **implémentation** présente les conditions préalables, étape par étape pour effectuer l’action d’amélioration, l’état actuel de l’implémentation de l’action d’amélioration, ainsi que d’autres liens en savoir plus.
+
+Les conditions préalables seront les licences à obtenir ou les actions qui doivent être effectuées avant l’exécution de l’action d’amélioration. Assurez-vous que votre licence comporte suffisamment de sièges pour effectuer l’action d’amélioration et que ces licences sont appliquées aux utilisateurs nécessaires.  
+
+## <a name="track-your-score-history-and-meet-goals"></a>Suivre l’historique des résultats et atteindre les objectifs
 
 Vous pouvez afficher un graphique du score de votre organisation au fil du temps sous l’onglet **historique** . sous le graphique se trouve une liste de toutes les actions effectuées dans la plage de temps sélectionnée et leurs attributs, tels que les points et la catégorie obtenus. Vous pouvez personnaliser une plage de dates et filtrer par catégorie.
+
+Dans l’onglet **mesures & tendances** , il existe plusieurs graphiques et graphiques qui vous permettent de mieux comprendre les tendances et de définir les objectifs. Vous pouvez définir la plage de dates pour la page entière des visualisations. Les visualisations sont les suivantes :
+
+* **Votre zone de score sécurisée** , personnalisée en fonction des objectifs de votre organisation et des définitions des plages de scores correctes, correctes et incorrectes.
+* **Tendance de régression** : chronologie de points qui ont régressé en raison de modifications apportées à la configuration, à l’utilisateur ou au périphérique.  
+* **Tendance de comparaison** — le score de sécurité de votre organisation est comparé à d’autres utilisateurs. Cet affichage peut inclure des lignes représentant le score moyen des organisations avec un nombre de sièges similaires et un affichage de comparaison personnalisé que vous pouvez définir.
+* **Tendance d’acceptation des risques** — chronologie des actions d’amélioration marquées comme « risque accepté ».
+* Modifier le **score** — nombre de points obtenus, points régressés, ainsi que la modification de score suivante, dans la plage de dates spécifiée.
 
 ## <a name="risk-awareness"></a>Sensibilisation aux risques
 
 Microsoft Secure score est un résumé numérique de votre position de sécurité basée sur les configurations système, le comportement de l’utilisateur et d’autres mesures liées à la sécurité ; il ne s’agit pas d’une mesure absolue de la probabilité de violation de votre système ou de vos données. Il représente plutôt la mesure dans laquelle vous avez adopté des contrôles de sécurité dans votre environnement Microsoft, ce qui peut vous aider à compenser le risque d’être compromis. Aucun service en ligne n’est totalement immunisé contre les violations de sécurité et le score sécurisé ne doit pas être interprété comme une garantie d’une violation de sécurité.
 
-## <a name="whats-new"></a>Quelles sont les nouveautés ?
+## <a name="whats-new"></a>Quelles sont les nouveautés ? 
 
-Pour faire en sorte que Microsoft Secure score un meilleur représentant de votre position de sécurité, nous avons apporté des modifications. Pour en savoir plus sur les modifications planifiées, consultez [la rubrique what’s from Microsoft Secure score ?](microsoft-secure-score-whats-coming.md)
+Pour faire en sorte que Microsoft Secure score un meilleur représentant de votre position de sécurité, nous avons apporté des modifications. Pour en savoir plus sur les modifications planifiées, consultez [la rubrique what’s from Microsoft Secure score ?](microsoft-secure-score-whats-coming.md).
 
-### <a name="april-21st-2020"></a>21 avril 2020
+### <a name="incompatibility-with-identity-secure-score-and-graph-api"></a>Incompatibilité avec le score de sécurité d’identité et l’API Graph
 
-#### <a name="removing-improvement-actions-that-dont-meet-expectations-for-reliable-measurement-or-dont-provide-a-useful-representation-of-security-posture"></a>Suppression des actions d’amélioration qui ne répondent pas aux attentes en matière de mesure fiable ou ne fournissent pas une représentation utile de la position de la sécurité
+Dans la version récente de Microsoft Secure score, un modèle de notation amélioré a été publié. Ces modifications permettent d’obtenir une vue plus flexible et précise de votre position de sécurité. Toutefois, ces mises à jour ont rendu le score de sécurité Microsoft incompatible temporairement avec le score de sécurité d’identité et l’API Graph.
 
-Pour vous assurer que le score de sécurité de Microsoft est significatif et que chaque action d’amélioration est mesurable et fiable, nous supprimons les actions d’amélioration suivantes.
+Dans le temps, le score de sécurité d’identité et l’API Graph adopteront le nouveau modèle de notation. Jusqu’à ce moment, les clients verront les différences entre les scores communiqués par Microsoft Secure score, Identity Secure score et l’API Graph. Nous nous excusons des désagréments que cela peut entraîner et nous travaillons pour garantir que ces expériences sont plus compatibles à l’avenir.
 
-- Appliquer des protections IRM aux documents
-- Appliquer des stratégies de protection contre la perte de données
+### <a name="updated-improvement-actions"></a>Actions d’amélioration mises à jour
 
-### <a name="january---march-2020"></a>Janvier-mars 2020
+- Ajout d’actions d’amélioration Azure Active Directory
+- Ajout d’actions d’amélioration de la protection avancée contre les menaces
+- Prise en charge des recommandations de sécurité de la [& de gestion des vulnérabilités](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt) de Microsoft Defender ATP
+    - Toutes les recommandations de sécurité fournies par TVM sont désormais disponibles
 
-#### <a name="supporting-security-defaults-for-azure-ad-improvement-actions"></a>Prise en charge des paramètres de sécurité par défaut pour les actions d’amélioration Azure AD
-
-Le score de sécurité Microsoft mettra à jour les actions d’amélioration afin de prendre en charge les paramètres de [sécurité par défaut dans Azure ad](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults), ce qui facilite la protection de votre organisation à l’aide de paramètres de sécurité préconfigurés pour les attaques courantes.
-
-Cela aura une incidence sur les actions d’amélioration suivantes :
-
-- S’assurer que tous les utilisateurs peuvent effectuer l’authentification multifacteur pour un accès sécurisé
-- Exiger MFA pour les rôles d’administration
-- Activer la stratégie pour bloquer l’authentification héritée
-
-#### <a name="removed-improvement-actions-that-dont-meet-expectations-for-reliable-measurement-or-dont-provide-a-useful-representation-of-security-posture"></a>Suppression des actions d’amélioration qui ne répondent pas aux attentes en matière de mesure fiable ou ne fournissent pas une représentation utile de la position de la sécurité
-
-Pour vous assurer que le score de sécurité de Microsoft est significatif et que chaque action d’amélioration est mesurable et fiable, nous supprimons les actions d’amélioration suivantes.
-
-- Stocker des documents utilisateur dans OneDrive entreprise
-- Configurer des stratégies de pièces jointes approuvées ATP Office 365
-- Configurer les liens fiables Office 365 pour vérifier les URL
-- Ne pas autoriser la délégation de boîte aux lettres
-- Autoriser les liens de partage d’invités anonymes pour les sites et les documents
-- Activer la console de sécurité des applications Cloud
-- Configurer le délai d’expiration pour les liens de partage externe
-- Activer l’enregistrement des données d’audit
-- Découverte des applications informatiques de clichés instantanés risquées et non conformes
-- Passer en revue les autorisations & bloquer les applications OAuth à risque connectées à votre environnement
-- Configurer le contrôle de version sur les bibliothèques de documents SharePoint Online
-- Supprimer/bloquer les comptes non utilisés au cours des 30 derniers jours
-- Désigner moins de 5 administrateurs globaux
-
-#### <a name="removed-not-scored-improvement-actions"></a>Suppression des actions d’amélioration « non notées »
-
-L’un des principes du score de sécurité est que le score doit être standardisé et facile à mettre en relation. Les actions d’amélioration qui ne sont pas mesurables ou exploitables provoquent des confusions. Le score de sécurité Microsoft n’a de sens que si chaque recommandation peut avoir un effet clair sur le score. Les actions d’amélioration ne sont pas évaluées.  
-
-Pour ces raisons, toutes les actions d’amélioration qui n’ont pas été évaluées ont été supprimées. Aucune action n’est nécessaire de votre part.
-
-#### <a name="removed-device-improvement-actions"></a>Suppression des actions d’amélioration d’appareil
-
-Après une évaluation de la catégorie d’actions d’amélioration Microsoft Secure scores, il a été déterminé que ces actions évaluent actuellement l’état de la stratégie et non l’état de configuration des appareils. Étant donné que la configuration est directement liée à la sécurité, les actions de l’appareil existant ont été déterminées de manière à ne pas être entièrement représentative de l’organisation.  Nous supprimons les actions actuelles dans la catégorie d’appareil lorsque nous travaillons pour fournir un ensemble de recommandations qui utilisent directement les données de diagnostic pour mieux représenter la position de sécurité des appareils.
-
-Les actions d’amélioration suivantes ont été supprimées :
-
-- Activer la gestion des appareils mobiles Microsoft Intune
-- Créer une stratégie de conformité Microsoft Intune pour Android
-- Créer une stratégie de conformité Microsoft Intune pour Android pour le travail
-- Créer une stratégie de protection des applications Microsoft Intune pour Android
-- Créer une stratégie de protection des applications Microsoft Intune pour iOS
-- Marquer les appareils sans aucune stratégie de conformité Microsoft Intune attribuée comme non conforme
-- Créer une stratégie de conformité Microsoft Intune pour iOS
-- Créer une stratégie de conformité Microsoft Intune pour macOS
-- Créer une stratégie de conformité Microsoft Intune pour Windows
-- Créer un profil de configuration Microsoft Intune pour Android
-- Créer un profil de configuration Microsoft Intune pour Android pour le travail
-- Créer un profil de configuration Microsoft Intune pour macOS
-- Créer un profil de configuration Microsoft Intune pour iOS
-- Créer un profil de configuration Microsoft Intune pour Windows
-- Activer la détection jailbreak améliorée dans Microsoft Intune
-- Exiger l’application des correctifs sur tous les appareils, les antivirus et les pare-feu activés
-- Activer l’intégration de Windows Defender ATP dans Microsoft Intune
-- Créer une stratégie de protection des informations Windows Microsoft Intune
-- Exiger que tous les appareils disposent de configurations de sécurité avancées
-- Vérifier toutes les semaines les périphériques bloqués
-
-#### <a name="mfa-improvement-action-updates"></a>Mises à jour de l’action d’amélioration MFA
-
-Pour refléter la nécessité pour les entreprises de garantir la sécurité maximale lors de l’application des stratégies qui fonctionnent avec leur entreprise, le score de sécurité Microsoft a supprimé trois actions d’amélioration axées sur l’authentification multifacteur et en ajout de deux.
-
-Suppression des actions d’amélioration :
-
-- Inscrire tous les utilisateurs pour l’authentification multifacteur
-- Exiger l’authentification multifacteur pour tous les utilisateurs
-- Exiger l’authentification multifacteur pour les rôles privilège Azure AD
-
-Ajout d’actions d’amélioration :
-
-- S’assurer que tous les utilisateurs peuvent effectuer l’authentification multifacteur pour un accès sécurisé
-- Exiger MFA pour les rôles d’administration
-
- Ces nouvelles actions d’amélioration requièrent l’enregistrement de vos utilisateurs ou administrateurs pour l’authentification multifacteur (MFA) dans votre répertoire et l’établissement du bon ensemble de stratégies adaptés aux besoins de votre organisation. L’objectif principal est de la flexibilité tout en s’assurant que tous vos utilisateurs et administrateurs peuvent s’authentifier avec plusieurs facteurs ou des invites de vérification d’identité basées sur les risques. Cela peut prendre la forme d’avoir plusieurs stratégies qui appliquent des décisions délimitées ou de définir des paramètres de sécurité par défaut (à venir le 16 mars) qui permettent à Microsoft de décider du défi des utilisateurs pour l’authentification multifacteur.
-
-#### <a name="removed-review-improvement-actions"></a>Suppression des actions d’amélioration « révision »
-
-L’un des principes du score de sécurité est que le score doit être standardisé et facile à mettre en relation. Les actions d’amélioration qui ne sont pas mesurables ou exploitables provoquent des confusions. Un score de sécurité Microsoft n’a de sens que si chaque recommandation peut avoir un effet clair sur le score. Examiner les actions d’amélioration ne sont pas mesurées de la même façon que les autres actions d’amélioration.  
-
-Pour ces raisons, toutes les actions d’amélioration nécessitant une cadence de révision ont été temporairement supprimées. Aucune action n’est nécessaire de votre part.
-
-### <a name="preview-features"></a>Fonctionnalités de préversion
-
-Les fonctionnalités suivantes seront incluses dans la [version d’évaluation](microsoft-secure-score-preview.md):
+### <a name="updated-interface-and-functionality"></a>Interface et fonctionnalité mises à jour
 
 * Toutes les nouvelles mesures et tendances pour les CISO et les discussions au niveau des prospects
 * Nouvelles façons de suivre et d’évaluer votre score
-* Suivi et surveillance améliorés des régressions de score
+* Meilleure approche et compréhension pour les régressions de score
 * Filtrage, balisage, recherche et regroupement de vos actions d’amélioration
 * Gérer vos objectifs à venir à l’aide de projections de score et des actions planifiées
-* Simplification du système de points
 * Et bien plus encore !
 
 ## <a name="we-want-to-hear-from-you"></a>Nous souhaitons être informés
 
 Si vous rencontrez des problèmes, indiquez-nous en publiant dans la communauté [Security, Privacy & Compliance](https://techcommunity.microsoft.com/t5/Security-Privacy-Compliance/bd-p/security_privacy) . Nous Surveillez la communauté et vous fournirons de l’aide.
+

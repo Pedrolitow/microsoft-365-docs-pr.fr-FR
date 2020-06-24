@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: bbc7d5d434765b94b0b2707605be2edfbbc8e423
-ms.sourcegitcommit: 2913fd74ad5086c7cac6388447285be9aa5a8e44
+ms.openlocfilehash: e19e5758f4d42799c96ecec51fd6295e3da19f9b
+ms.sourcegitcommit: bd5a08785b5ec320b04b02f8776e28bce5fb448f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "41661980"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "44844917"
 ---
 # <a name="troubleshoot-microsoft-threat-protection-service-issues"></a>Détecter les problèmes liés au service de Protection Microsoft contre les menaces
 
@@ -44,12 +44,7 @@ Si Azure ATP est déployé dans votre environnement, mais que vous ne voyez pas 
 
 Pour plus d’informations, consultez [Intégration Azure ATP](https://docs.microsoft.com/cloud-app-security/aatp-integration).
 
-## <a name="is-microsoft-threat-protection-available-for-us-government-community-cloud-gcc-or-gcc-high"></a>La Protection Microsoft contre les menaces est-elle disponible pour cloud de la communauté pour le service public des États-Unis (GCC) ou GCC High ?
-Il n’est pas disponible pour le moment.
-
 ## <a name="where-is-the-settings-page-for-turning-the-service-on"></a>Où se trouve la page Paramètres pour activer le service ?
 Pour activer Microsoft Threat Protection, accédez aux **paramètres** à partir du volet de navigation dans le centre de sécurité Microsoft 365. Cet élément de navigation n’est visible que si vous disposez des [autorisations et des licences prérequises](mtp-enable.md#check-license-eligibility-and-required-permissions).
-
-## <a name="can-i-use-an-add-on-instead-of-the-required-e5-licenses"></a>Puis-je utiliser un module complémentaire au lieu des licences E5 requises ?
-Il n’existe actuellement aucun module complémentaire pour la protection contre les menaces Microsoft. [Consulter les conditions requises en matière de licences](prerequisites.md) 
+ 
 

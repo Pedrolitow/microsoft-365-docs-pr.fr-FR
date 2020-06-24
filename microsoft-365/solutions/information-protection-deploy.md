@@ -5,7 +5,7 @@ author: brendacarter
 f1.keywords:
 - NOCSH
 manager: laurawi
-ms.date: 06/09/2020
+ms.date: 06/22/2020
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -16,20 +16,37 @@ ms.collection:
 - M365solutions
 ms.custom: ''
 description: Configurez l’infrastructure de sécurité et de service afin de protéger vos informations et de respecter les réglementations en matière de confidentialité des données.
-ms.openlocfilehash: 35ccfb21accd969c2a2cbdddde9a4ec1c7eeed64
-ms.sourcegitcommit: b03a7ad0a80f8b839f40b8d396ab3a049491a12f
+ms.openlocfilehash: ea0f5ead93dc631a28577a61f33bca3b601406f4
+ms.sourcegitcommit: 4512f54ba80d869d4c04e8f9bd897d1878280852
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44695106"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "44854330"
 ---
 # <a name="deploy-information-protection-for-data-privacy-regulations-with-microsoft-365"></a>Déployer la protection des informations pour les réglementations sur la confidentialité des données avec Microsoft 365
 
-Cette solution fournit des instructions sur la planification et la protection des données personnelles stockées dans les services Microsoft 365 et susceptibles d’être soumises à des réglementations sur la confidentialité des données, telles que le règlement général sur la protection des données de l’Union européenne (RGPD). Cette solution est axée sur les fonctionnalités de conformité et de protection des informations Microsoft applicables, le score de conformité Microsoft et les outils d’évaluation pour vous aider à savoir vos données. 
- 
-Des informations supplémentaires sont également fournies sur l’utilisation des contrôles Microsoft Identity, Device et protection contre les menaces pour répondre à vos besoins en matière de confidentialité des données, ainsi qu’aux outils de détection et de réponse aux incidents de données. 
+Votre organisation peut faire l’objet de réglementations régionales en matière de confidentialité des données qui nécessitent que vous protégez, gérez et fournissez des droits et un contrôle sur les informations personnelles stockées dans votre infrastructure informatique, y compris sur site et dans le Cloud. Le meilleur exemple de règlement de confidentialité des données est le règlement général sur la protection des données de l’Union européenne (RGPD). Le non-respect de la réglementation en matière de confidentialité des données peut entraîner des amendes importantes.
 
-## <a name="organization-of-this-guidance-material"></a>Organisation de ce guide
+Des exemples de types de données dans Microsoft 365 incluent des sessions de conversation dans Microsoft Teams, des courriers électroniques dans Exchange et des fichiers dans SharePoint et OneDrive. Cette solution fournit des instructions sur la manière d’identifier, de localiser, de protéger, de régir et de répondre aux incidents de confidentialité des données pour les données personnelles stockées dans les services Microsoft 365, soumis à la réglementation en matière de confidentialité des données.
+
+![Déployer la protection des informations pour la confidentialité des données](../media/information-protection-deploy/information-protection-deploy-big-picture.png)
+
+Des informations supplémentaires sont également fournies sur l’utilisation des contrôles Microsoft 365 Identity, Device et protection contre les menaces pour vos besoins en matière de confidentialité des données. 
+
+Pour répondre aux critères de protection des informations en matière de conformité à la réglementation en matière de confidentialité des données, utilisez les fonctionnalités et fonctionnalités de Microsoft 365.
+
+| Fonctionnalité | Description | Licence |
+|:-------|:-----|:-------|
+| Gestionnaire de conformité | Gérez les activités de conformité réglementaire liées aux services de Cloud Computing Microsoft avec cet outil d’évaluation des risques basé sur un flux de travail dans le portail d’approbation de service Microsoft. | Microsoft 365 E3 et E5 |
+| Score de conformité (préversion) | Consultez le score global de votre configuration de conformité actuelle et les recommandations pour l’améliorer dans le centre de conformité Microsoft 365. | Microsoft 365 E3 et E5 |
+| Office Advanced Threat Protection (ATP) | Protégez vos applications et vos données Microsoft 365 (telles que les messages électroniques, les documents Office et les outils de collaboration) contre les attaques. | Microsoft 365 E3 et E5 | 
+| Étiquettes de confidentialité | Classifiez et protégez les données de votre organisation sans entraver la productivité des utilisateurs et leur capacité à collaborer en plaçant des étiquettes avec différents niveaux de protection sur le courrier, les fichiers ou les sites. | Microsoft 365 E3 et E5 |
+| Protection contre la perte de données (DLP) | Détecter, avertir et bloquer le partage risqué, involontaire ou inapproprié, comme le partage de données contenant des informations personnelles, à la fois en interne et en externe. | Microsoft 365 E3 et E5 | 
+| Étiquettes et stratégies de rétention des données | Mettre en œuvre des contrôles de gouvernance des informations, tels que la durée de conservation des données et des exigences sur le stockage des données personnelles sur les clients, afin de se conformer aux stratégies ou aux réglementations de votre organisation. | Microsoft 365 E3 et E5 |
+| Chiffrement du courrier électronique | Envoyer et recevoir des messages électroniques chiffrés entre des personnes à l’intérieur et à l’extérieur de votre organisation qui contiennent des données réglementées, telles que des données personnelles sur les clients. | Microsoft 365 E3 et E5 |
+||||
+
+## <a name="organization-of-the-guidance-in-this-solution"></a>Organisation des instructions de cette solution
 
 Pour vous aider à comprendre les outils Microsoft 365 disponibles pour identifier, gérer, contrôler et surveiller les données personnelles soumises à une ou plusieurs réglementations liées à la confidentialité, ces instructions sont organisées en sections.
  
