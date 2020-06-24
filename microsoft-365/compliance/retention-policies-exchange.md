@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Découvrez le comportement de rétention qui s’applique spécifiquement à la messagerie électronique et aux dossiers publics Exchange.
-ms.openlocfilehash: 1455071bb8e7739b5d809af7d806d11e5c0e4a71
-ms.sourcegitcommit: 89636f35b0194986f156302fc1bb96af25d4805b
+ms.openlocfilehash: 0357e647883fe681010425d7dd8599101ab559c7
+ms.sourcegitcommit: e3900c818877c2cdcd227917ec975c03e828c7ea
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44800009"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "44861171"
 ---
 # <a name="learn-about-retention-policies-for-exchange"></a>Découvrir les stratégies de rétention pour Exchange
 
@@ -72,8 +72,9 @@ Lorsque les paramètres de la stratégie de rétention sont définis sur conserv
 
 PowerShell vous permet d’exclure des types spécifiques d’éléments Exchange d’une stratégie de rétention. Par exemple, vous pouvez exclure les messages vocaux, les conversations par messagerie instantanée et d’autres contenus Skype Entreprise Online dans les boîtes aux lettres. Vous pouvez également exclure les éléments de calendrier, de note et de tâche. Cette fonctionnalité n’est disponible qu’en utilisant PowerShell. Elle n’est pas disponible lorsque vous créez une stratégie de rétention à l’aide de l’Assistant dans le Centre de conformité Microsoft 365.
   
-Pour exclure les types sélectionnés pour les éléments Exchange dans une stratégie de rétention, utilisez le paramètre  `ExcludedItemClasses` avec les cmdlets  `New-RetentionComplianceRule` et  `Set-RetentionComplianceRule`.
+Pour exclure les types sélectionnés pour les éléments Exchange dans une stratégie de rétention, utilisez le paramètre  `ExcludedItemClasses` avec les cmdlets [New-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/new-retentioncompliancerule) et [Set-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/set-retentioncompliancerule).
 
+Pour utiliser les cmdlets des stratégies de rétention, vous devez tout d’abord vous [connecter au Centre de sécurité et conformité PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell?view=exchange-ps).
 
 ### <a name="when-a-user-leaves-the-organization"></a>Lorsqu’un utilisateur quitte l’organisation 
 
@@ -81,9 +82,7 @@ Si un utilisateur quitte votre organisation et que sa boîte aux lettres est inc
 
 ## <a name="how-to-configure-a-retention-policy-for-exchange"></a>Comment configurer une stratégie de rétention pour Exchange
 
-Consultez la page [Créer et configurer des stratégies de rétention](create-retention-policies.md).
-
-Pour la page de l’Assistant **Choisir les emplacements**, sélectionnez l’une des options suivantes :
+Suivez les instructions pour [créer et configurer des stratégies de rétention](create-retention-policies.md) et pour la page **Choisir les emplacements** de l’assistant, sélectionnez l’une des options suivantes :
 
 - **Appliquer la stratégie uniquement au contenu dans les courriers électroniques Exchange, les dossiers publics, les groupes Office 365, les documents OneDrive et SharePoint**
 
