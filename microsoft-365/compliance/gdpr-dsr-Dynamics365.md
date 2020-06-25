@@ -1,6 +1,6 @@
 ---
 title: Demandes des personnes concernées par le traitement des données pour Dynamics 365 concernant le RGPD et le CCPA
-description: Ce guide vous permet de comprendre comment trouver des données personnelles et agir sur celles-ci, et de répondre aux demandes DSR et CCPA des clients Dynamics 365.
+description: Découvrez comment trouver des données personnelles et agir sur celles-ci, et de répondre aux demandes DSR et CCPA des clients Dynamics 365.
 keywords: Microsoft 365, Microsoft 365 Éducation, documentation Microsoft 365, RGPD, CCPA
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
@@ -18,16 +18,16 @@ hideEdit: true
 ms.custom:
 - seo-marvel-mar2020
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: e8a13821aaec16f66546f78be69394222ad5d41c
-ms.sourcegitcommit: a418195dc11e6251ae37e788c102bbaa7087e44e
+ms.openlocfilehash: 04ecbd6e52a56ea83f3b2e2eaebd02de20cfbe52
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "44579189"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44817663"
 ---
 # <a name="dynamics-365-data-subject-requests-for-the-gdpr-and-ccpa"></a>Demandes des personnes concernées par le traitement des données pour Dynamics 365 concernant le RGPD et le CCPA
 
-Le [Règlement général sur la protection des données (RGPD)](https://ec.europa.eu/justice/data-protection/reform/index_en.htm) de l’UE permet aux utilisateurs (désignés dans le règlement comme *personnes concernées*) de gérer les données à caractère personnel collectées par un employeur ou tout autre type d’organisme ou d’organisation (*responsable du traitement des données* ou *responsable du traitement*). Les données à caractère personnel sont définies de manière générale dans le cadre du RGPD comme correspondant aux données associées à une personne physique identifiée ou identifiable. Le RGPD octroie aux personnes concernées des droits spécifiques sur leurs données à caractère personnel. Ces droits incluent l’obtention de copies des données à caractère personnel, les demandes de changements de ces dernières, la restriction de leur traitement, leur suppression ou leur réception dans un format électronique afin de les transférer à un autre responsable du traitement. Toute demande formelle effectuée par une personne concernée à un responsable du traitement au sujet de la prise de mesure sur ses données à caractère personnel est appelée dans ce document *demande de droits de personne concernée* ou DPC.
+The European Union [General Data Protection Regulation (GDPR)](https://ec.europa.eu/justice/data-protection/reform/index_en.htm) gives rights to people (known in the regulation as *data subjects*) to manage the personal data that has been collected by an employer or other type of agency or organization (known as the *data controller* or just *controller*). Personal data is defined broadly under the GDPR as any data that relates to an identified or identifiable natural person. The GDPR gives data subjects specific rights to their personal data; these rights include obtaining copies of it, requesting changes to it, restricting the processing of it, deleting it, or receiving it in an electronic format so it can be moved to another controller. A formal request by a data subject to a controller to take an action on their personal data is called in this document a *Data Subject Rights Request* or DSR request.
 
 De même, le CCPA (California Consumer Privacy Act), prévoit des droits de confidentialité et des obligations pour les consommateurs de la Californie, y compris des droits similaires aux droits des personnes concernées du RGPD, tels que le droit de supprimer, d’accéder et de recevoir (portabilité) leurs informations personnelles.  Le CCPA prévoit également des publications d’informations, des protections contre la discrimination des personnes faisant usage de leurs droits et la possibilité d’opter pour ou contre certains transferts de données classés en tant que « ventes ». Les ventes sont largement définies pour inclure le partage de données à des fins importantes. Pour plus d’informations sur le CCPA, voir le [California Consumer Privacy Act](offering-ccpa.md) et le [Forum aux questions California Consumer Privacy Act](ccpa-faq.md).
 
@@ -49,7 +49,7 @@ Vous trouverez ci-dessous des définitions de termes utilisés dans ce guide :
 - **Responsable du traitement des données :** la personne physique ou morale, l’autorité publique, le service ou tout autre organisme qui, seul ou conjointement avec d’autres, détermine les finalités et les moyens du traitement des données à caractère personnel ; lorsque les finalités et les moyens du traitement sont déterminés par la législation de l’Union ou des États membres, le responsable du traitement peut être désigné, ou les critères spécifiques relatifs à sa nomination être définis, par la législation de l’Union ou des États membres.
 - **Données personnelles et personne concernée par le traitement des données :** informations relatives à une personne physique identifiée ou identifiable (« la personne concernée par le traitement des données ») ; une personne physique identifiable est une personne qui peut être identifiée, directement ou indirectement, notamment par référence à un identificateur par exemple, un nom, un numéro d’identification, des données de localisation, un identificateur en ligne, ou un ou plusieurs facteurs spécifiques de l’identité physique, physiologique, génétique, mentale, économique, culturelle ou sociale de cette personne physique.
 - **Sous-traitant de données :** la personne physique ou morale, l’autorité publique, le service ou tout autre organisme qui traite des données à caractère personnel pour le compte du responsable du traitement.
-- **Données client :** toutes les données, y compris tous les fichiers texte, son, vidéo ou image et les logiciels qui ont été fournis à Microsoft par le client ou pour son compte dans le cadre du service d’entreprise. Les données client incluent à la fois les (1) informations d’identification personnelle des utilisateurs finaux (par exemple, les noms d’utilisateur et les informations de contact dans Azure Active Directory) et le contenu client chargé ou créé par un client dans des services spécifiques (par exemple, le contenu client dans un compte de stockage Azure, le contenu client d’une base de données Azure SQL ou l’image de la machine virtuelle d’un client dans des machines virtuelles Azure).
+- **Données client :** toutes les données, y compris tous les fichiers texte, son, vidéo ou image et les logiciels qui ont été fournis à Microsoft par le client ou pour son compte dans le cadre du service d’entreprise. Les données client incluent à la fois les (1) informations d’identification personnelle des utilisateurs finaux (par exemple, les noms d’utilisateur et les informations de contact dans Azure Active Directory) et le Contenu Client chargé ou créé par un client dans des services spécifiques (par exemple, le contenu client dans un compte de stockage Azure, le contenu client d’une base de données Azure SQL ou l’image de la machine virtuelle d’un client dans des machines virtuelles Azure).
 - **Journaux générés par le système :** journaux et données associées générés par Microsoft qui permettent à Microsoft de fournir des services d’entreprise aux utilisateurs. Les journaux générés par le système contiennent essentiellement des données pseudonymes, généralement un numéro généré par le système qui ne permet pas, en soi, d’identifier une personne individuelle, mais qui est utilisé pour fournir les services d’entreprise aux utilisateurs. Les journaux générés par le système peuvent également contenir des informations d’identification personnelle sur les utilisateurs finaux, telles qu’un nom d’utilisateur.
 
 ### <a name="how-this-guide-can-help-you-meet-your-controller-responsibilities"></a>Assumer vos responsabilités de contrôleur grâce à ce guide
@@ -64,15 +64,15 @@ Le guide, divisé en deux parties, explique comment utiliser les produits, servi
 Lorsque des personnes associées aux données exercent leurs droits et effectuent des demandes, tenez compte des points suivants :
 
 - Identifiez correctement la personne et le rôle (par exemple, employé, client, fournisseur) à l’aide des informations fournies par la personne concernée par le traitement des données dans le cadre de sa demande. Ces informations peuvent être un nom, un ID d’employé ou un numéro de client, ou un autre identificateur.
-- Enregistrez la date et l’heure de la demande. (Vous avez 30 jours pour effectuer la demande.)
-- Vérifiez que la demande répond aux exigences de votre organisation pour honorer ou refuser la demande d’une personne concernée. Par exemple, vous devez vous assurer que l’exécution de la demande n’entre pas en conflit avec d’autres obligations réglementaires, juridiques ou financières que vous avez ou qu’elle n’enfreint pas les droits et les libertés d’autres individus.
+- Record the data and time of the request. (You have 30 days to complete the request.)
+- Affirm that the request meets your organization's requirements for honoring or declining a data subject's request. For example, you must make sure that executing the request doesn't conflict with any other legal, financial, or regulatory obligations that you have, or infringe on the rights and freedoms of others.
 - Vérifiez que vous disposez des informations liées à la demande.
 
 ## <a name="part-1-responding-to-data-subject-rights-requests-for-personal-data-included-in-customer-data"></a>Partie 1 : Répondre aux demandes de droits des personnes concernées relatives aux données à caractère personnel dans les données client
 
-Dans les articles ci-dessous, vous trouverez des informations qui vous aideront à préparer des DPC et à y répondre pour des données personnelles incluses dans des données client traitées dans Dynamics 365. Il est important de noter que des données personnelles peuvent être présentes dans d’autres catégories de données traitées par Microsoft au cours du service d’un abonnement à des services en ligne (comme, par exemple, des données administrateur ou des données de support définies dans la déclaration de confidentialité de Microsoft). Ce document n’a pour but que de vous aider dans la découverte et la gestion des DPC qui concernent les données personnelles présentes dans les données client que vous avez fournies à Dynamics 365.
+In the articles below, you'll find information to help you prepare for and respond to DSR requests for personal data included in customer data processed in Dynamics 365. It is important to note that personal data could be present in other categories of data processed by Microsoft during the course of the service of an online services subscription, such as administrator data or support data defined in the Microsoft Privacy Statement. This document is limited to assist you in the process of discovery and management of DSR requests affecting personal data present in the customer data that you have provided to Dynamics 365.
 
-Dynamics 365 est un service en ligne qui propose plusieurs fonctionnalités de traitement des données comme un service SaaS. Ainsi, Dynamics 365 offre un large éventail de fonctionnalités conçues pour traiter une collection diversifiée de données, pouvant varier par nature, objectif ou autres attributs spécifiques (données de ventes, transactions, données financières, informations de RH, etc.). Compte tenu de cette diversité, Dynamics 365 propose plusieurs formulaires, champs, schémas, points de terminaison et logiques pour traiter les données client, et ceci se reflète aussi dans les différentes façons qui permettent de traiter des demandes DSR dans chaque application. Lorsque des applications Dynamics 365 proposent plusieurs méthodes pour traiter des demandes DSR spécifiques, nous les noterons dans ce guide en pointant vers les descriptions techniques offertes par chaque application.
+Dynamics 365 is an online service that offers multiple data processing capabilities as a software-as-a-service (SaaS). As such, Dynamics 365 offers a broad array of functionality intended to process a diverse collection of data, which could vary by nature, purpose or other specific attributes, such as sales data, transactions, financials, HR information, etc. In light of this diversity, Dynamics 365 offers multiple forms, fields, schemas, end points, and logic to process customer data, which is also reflected in the multiple ways in which DSR requests could be addressed in each application. When Dynamics 365 applications offer several ways to address specific DSR requests, we will note those in this guide by pointing to the technical descriptions offered by each application.
 
 ### <a name="dynamics-365"></a>Dynamics 365
 
@@ -80,9 +80,9 @@ Dynamics 365 est un service en ligne qui propose plusieurs fonctionnalités de 
 
 La première étape pour répondre à une demande de droits de la personne concernée consiste à rechercher et identifier les données client faisant l’objet de la demande.
 
-La classification appropriée des données client est à la base de la gestion des données personnelles dans les applications métier Dynamics 365 Customer Engagement. Dynamics 365 for Customer Engagement permet de créer une extension d’application autour de la classification des données avec une grande souplesse. La classification vous permet d’identifier les informations comme données personnelles, et ainsi de les localiser et les récupérer lorsque vous répondez aux demandes d’une personne concernée. Elle permet également d’assurer la conformité avec les exigences réglementaires et législatives pour la collecte et la gestion des données personnelles.
+Classifying customer data appropriately is the cornerstone of working with personal data in Dynamics 365 Customer Engagement business applications. Dynamics 365 for Customer Engagement offers flexibility to build out an application extension around data classification. Proper classification enables you to identify information as personal data, thereby making it possible to locate and retrieve it when responding to requests from a data subject. It can also help enable compliance with legislative and regulatory requirements for collecting and managing personal data.
 
-Microsoft offre des fonctionnalités qui vous aident à répondre aux demandes de droits de la personne concernée par le traitement des données, et par conséquent d’accéder aux données client. Toutefois, il est de votre responsabilité de vérifier que les données personnelles sont localisées et classées de façon appropriée.
+Microsoft provides capabilities that assist you in responding to data subject rights requests, and thereby accessing customer data. However, it is your responsibility to ensure that personal data is located and classified appropriately.
 
 L’offre ***Dynamics 365 for Customer Engagement*** fournit plusieurs méthodes qui vous permettent de rechercher des données personnelles dans des enregistrements, telles que : la recherche avancée et la recherche d’enregistrements. Toutes ces fonctions vous permettent d’identifier (rechercher) des données personnelles.
 
@@ -116,7 +116,7 @@ L’offre ***Dynamics 365 for Finance and Operations*** permet de rechercher de
 
 Les données client contenues dans ***Dynamics 365 for Customer Engagement*** peuvent être exportées à l’aide des fonctionnalités d’exportation d’entités complètes. Les données client peuvent être exportées dans un fichier Excel statique pour faciliter une demande de portabilité des données. En utilisant Excel, vous pouvez alors modifier les données personnelles à inclure dans la demande de portabilité et les enregistrer ensuite dans un format courant lisible par un ordinateur comme .csv ou .xml. Dynamics 365 for Customer Engagement peut également être exporté via [l’API Web Common Data Service](https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview).
 
-En outre, pour Dynamics 365 for Marketing, une [API dédiée](https://docs.microsoft.com/dynamics365/customer-engagement/marketing/developer/retrieve-interactions-contact) est fournie pour permettre au client de générer des extensions qui récupèrent des enregistrements supplémentaires des interactions client capturées pouvant contenir des données personnelles. L’API charge toutes les informations pertinentes à partir du système principal et les assemble dans un document unique portable.
+Additionally, for Dynamics 365 for Marketing a [dedicated API](https://docs.microsoft.com/dynamics365/customer-engagement/marketing/developer/retrieve-interactions-contact) is provided that allows customer to build extensions that retrieve additional records of captured customer interactions that may contain personal data. The API loads all the relevant information from the back-end system and assembles it into a single, portable document.
 
 ***Dynamics 365 Customer Service Insights*** vous permet de [fournir une copie des données client](https://docs.microsoft.com/dynamics365/ai/customer-service-insights/gdpr-export) via l’exportation de données.
 
@@ -138,7 +138,7 @@ L’offre ***Dynamics 365 for Customer Engagement*** propose les méthodes suiv
 En outre, pour Dynamics 365 for Marketing, vous pouvez aussi :
 
 - Mettre à jour la page d’accueil de vos données en modifiant une ou plusieurs lignes directement
-- Préparez une page de [centres d’abonnement](https://docs.microsoft.com/dynamics365/customer-engagement/marketing/set-up-subscription-center) comportant autant de champs de contact modifiables que possible. Ceci permet à un utilisateur final de mettre à jour ses informations autant que possible.
+- Prepare a [subscription centers](https://docs.microsoft.com/dynamics365/customer-engagement/marketing/set-up-subscription-center) page that has as many editable contact fields that can be included. This enables an end user to update their own information as much as possible.
 
 ***Dynamics 365 Customer Service Insights*** offre également des fonctionnalités qui permettent aux organisations de [rectifier ou d’apporter des modifications aux données client](https://docs.microsoft.com/dynamics365/ai/customer-service-insights/gdpr-summary).
 
@@ -146,15 +146,15 @@ Dans ***Dynamics 365 for Finance and Operations***, vous pouvez aussi utiliser 
 
 L’offre ***Dynamics 365 Business Central*** propose deux façons de corriger des données client inexactes ou incomplètes.
 
-Pour modifier en bloc plusieurs enregistrements Business Central, vous pouvez exporter des listes vers Excel à l’aide du [complément Excel de Business Central](https://docs.microsoft.com/dynamics365/business-central/finance-analyze-excel#the--excel-add-in) afin de corriger plusieurs enregistrements, puis publier les données modifiées dans Excel dans Business Central. Pour plus d’informations, consultez la section [Exportation de vos données métiers dans Excel](https://docs.microsoft.com/dynamics365/business-central/about-export-data).
+To quickly bulk-edit multiple Business Central records, you can export lists to Excel using the [Business Central Excel Add-in](https://docs.microsoft.com/dynamics365/business-central/finance-analyze-excel#the--excel-add-in) to correct multiple records, and then publish the modified data from Excel in Business Central. For details, see [Exporting your Business Data to Excel](https://docs.microsoft.com/dynamics365/business-central/about-export-data).
 
 Vous pouvez modifier les données client stockées dans un champ (par exemple, les informations sur un client dans sa fiche) en changeant manuellement l’élément de données contenant les données à caractère personnel cibles. Pour plus d’informations, consultez [Entrée de données](https://docs.microsoft.com/dynamics365/business-central/ui-enter-data).
 
 #### <a name="brief-note-about-modifying-entries-in-business-transactions"></a>Remarque sur la modification des entrées dans les transactions commerciales
 
-Les enregistrements de transaction tels que les entrées de comptabilité grand livre, client et générale sont essentiels pour l’intégrité du système de planification des ressources d’une entreprise. Les données personnelles faisant partie d’une transaction financière ou autre sont conservées « telles quelles » à des fins de conformité avec les lois financières (législation fiscale, par exemple), prévention contre les fraudes (piste d’audit de sécurité) ou conformité avec les certifications de l’industrie. Par conséquent, Dynamics 365 for Finance and Operations et Dynamics 365 Business Central limitent la modification des données dans les enregistrements de ce type.
+Transactional records, such as general, customer, and tax ledger entries, are essential to the integrity of an enterprise resource planning system. Personal data that is part of a financial or other transaction is kept "as is" for compliance with financial laws (for example, tax laws), prevention of fraud (such as security audit trail), or compliance with industry certifications. Therefore, Dynamics 365 for Finance and Operations and Dynamics 365 Business Central restrict modifying data in such records.
 
-Si vous stockez des données personnelles dans des enregistrements de transaction commerciale, la seule façon de corriger, supprimer ou limiter le traitement des données personnelles pour honorer la demande d’une personne concernée est d’utiliser les [fonctionnalités de personnalisation](https://docs.microsoft.com/dynamics365/business-central/dev-itpro/index) de Dynamics 365 Business Central. L[](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/gdpr/gdpr-guide#reasons-why-certain-personal-data-may-not-be-modified-or-deleted)a décision d’honorer la demande de modification et d’implémentation d’une personne concernée relève de votre responsabilité.
+If you store personal data in business transaction records, the only way to correct, delete, or restrict processing of personal data to honor a data subject's request is to use the Dynamics 365 Business Central [customization capabilities](https://docs.microsoft.com/dynamics365/business-central/dev-itpro/index). Th[](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/gdpr/gdpr-guide#reasons-why-certain-personal-data-may-not-be-modified-or-deleted)e decision to honor a modification data subject request and implementation thereof is your responsibility.
 
 ### <a name="restricting-the-processing-of-customer-data"></a>Restriction du traitement des données client
 
@@ -177,18 +177,18 @@ Vous pouvez aussi utiliser ***Dynamics 365 for Finance and Operations*** et ses
 
 Dans ***Dynamics 365 Business Central***, quand une personne concernée vous demande de supprimer ses données personnelles qui se trouvent dans vos données client, vous pouvez satisfaire cette demande de différentes façons :
 
-- Pour modifier en bloc plusieurs enregistrements Business Central, vous pouvez exporter des données vers Excel à l’aide du [complément Excel de Business Central](https://docs.microsoft.com/dynamics365/business-central/finance-analyze-excel#the--excel-add-in) afin de supprimer plusieurs enregistrements, puis publier ces changements d’Excel dans Business Central. Pour plus d’informations, consultez la section [Exportation de vos données métiers dans Excel](https://docs.microsoft.com/dynamics365/business-central/about-export-data).
+- To quickly bulk-edit multiple Business Central records, you can export data to Excel using the [Business Central Excel Add-in](https://docs.microsoft.com/dynamics365/business-central/finance-analyze-excel#the--excel-add-in) to delete multiple records, and then publish these changes from Excel back in Business Central. For details, see [Exporting your Business Data to Excel](https://docs.microsoft.com/dynamics365/business-central/about-export-data).
 - Vous pouvez supprimer les données client stockées dans un champ en supprimant manuellement l’élément de données contenant les données client cibles. Pour plus d’informations, consultez [Entrée de données](https://docs.microsoft.com/dynamics365/business-central/ui-enter-data).
 - Vous pouvez supprimer des données client directement, par exemple en supprimant un contact et en exécutant ensuite le traitement par lot Supprimer les écritures journal d’interaction annulées pour supprimer les interactions pour ce contact.
 - Vous pouvez [supprimer des documents](https://docs.microsoft.com/dynamics365/business-central/admin-manage-documents) contenant des données client (par exemple, des mémos, des ventes enregistrées et des factures d’achat).
 
-Outre la suppression en bloc ou individuelle d’enregistrements distincts, veuillez noter que seuls les travailleurs licenciés peuvent être totalement supprimés de ***Dynamics 365 for Talent***. [Suivez ces étapes pour supprimer des travailleurs licenciés](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/gdpr/respond-dsr-request-talent#additional-notes-that-apply-to-requests-for-personal-data).
+Besides bulk or individual deletion of discrete records, please note that only terminated workers can be fully deleted from ***Dynamics 365 for Talent***. [Follow these steps to delete terminated workers](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/gdpr/respond-dsr-request-talent#additional-notes-that-apply-to-requests-for-personal-data).
 
 ### <a name="exporting-customer-data"></a>Exportation des données client
 
 Pour répondre à une demande de portabilité des données, les données client contenues dans ***Dynamics 365 for Customer Engagement*** peuvent être exportées à l’aide des fonctionnalités d’exportation d’entités complètes. Les données client peuvent être exportées dans un fichier Excel statique pour faciliter une demande de portabilité des données. En utilisant Excel, vous pouvez alors modifier les données personnelles à inclure dans la demande de portabilité et les enregistrer ensuite dans un format courant lisible par un ordinateur comme .csv ou .xml.
 
-En outre, pour Dynamics 365 for Marketing, une [API dédiée](https://docs.microsoft.com/dynamics365/customer-engagement/marketing/developer/retrieve-interactions-contact) est fournie pour permettre au client de générer des extensions qui récupèrent des enregistrements supplémentaires des interactions client capturées pouvant contenir des données personnelles. L’API charge toutes les informations pertinentes à partir du système principal et les assemble dans un document unique portable.
+Additionally, for Dynamics 365 for Marketing a [dedicated API](https://docs.microsoft.com/dynamics365/customer-engagement/marketing/developer/retrieve-interactions-contact) is provided that allows customer to build extensions that retrieve additional records of captured customer interactions that may contain personal data. The API loads all the relevant information from the back-end system and assembles it into a single, portable document.
 
 Pour ***Dynamics 365 Customer Service Insights***, vous devez [exporter les données clients](https://docs.microsoft.com/dynamics365/ai/customer-service-insights/gdpr-export) via le portail de gestion Azure.
 
@@ -204,26 +204,26 @@ L’offre ***Dynamics 365 Business Central*** propose les fonctionnalités suiv
 
 ## <a name="part-2-responding-to-dsrs-for-system-generated-logs"></a>Partie 2 : Répondre à des DSR pour les journaux générés par le système
 
-Microsoft permet également de consulter, d’exporter et de supprimer les journaux générés par le système qui peuvent être considérés comme personnels en vertu de la définition large des « données personnelles » du RGPD. Voici des exemples de journaux générés par le système qui peuvent être considérés comme personnels en vertu du RGPD :
+Microsoft also provides you with the ability to access, export, and delete system-generated logs that may be deemed personal under the GDPR's broad definition of "personal data." Examples of system-generated logs that may be deemed personal under GDPR include:
 
 - Données relatives à l’utilisation de produits et de services tels que les journaux d’activité des utilisateurs
 - Requêtes de recherche et données de requête des utilisateurs
 - Données générées par les produits et services comme étant un produit des fonctionnalités du système et de l’interaction par les utilisateurs ou d’autres systèmes
 
-Notez qu’il n’est pas possible de limiter ni de rectifier les données contenues dans des journaux générés par le système. Les données contenues dans des journaux générés par le système forment des actions factuelles effectuées dans le cloud Microsoft et les données de diagnostic, et des modifications apportées à ces données compromettraient l’enregistrement historique des actions, augmentant ainsi les risques de fraude et de sécurité.
+Note that the ability to restrict or rectify data in system-generated logs is not supported. Data in system-generated logs constitutes factual actions conducted within the Microsoft cloud and diagnostic data, and modifications to such data would compromise the historical record of actions and increase fraud and security risks.
 
 ### <a name="accessing-and-exporting-system-generated-logs"></a>Consultation et exportation des journaux générés par le système
 
-Les administrateurs peuvent accéder aux journaux générés par le système associés à une utilisation particulière d’un utilisateur des applications et des services Dynamics 365. Pour accéder aux journaux générés par le système et les exporter, procédez comme suit :
+Admins can access system-generated logs associated with a particular user's use of Dynamics 365 services and applications. To access and export system-generated logs:
 
 1. Accédez au [portail d’approbation de service Microsoft](https://servicetrust.microsoft.com/) et connectez-vous en utilisant les identifiants d’un administrateur général Dynamics 365.
 2. Dans la liste déroulante **Confidentialité** en haut de la page, cliquez sur **Demande des personnes concernées**.
 3. Dans la page **Demande des personnes concernées**, sous **Journaux générés par le système**, cliquez sur **Exportation des journaux de données**.
     > [!NOTE]
-    > L’**Exportation des journaux de données** s’affiche. Notez que la liste des demandes de données d’exportation transmises par votre organisation s’affiche.
+    > The **Data Log Export** is displayed. Note that a list of export data requests submitted by your organization is displayed.
 4. Pour créer une demande pour un utilisateur, cliquez sur **Créer une demande de données d’exportation**.
 
-Une fois la demande créée, elle apparaît sur la page **Exportation des journaux de données** où vous pouvez suivre son statut. Lorsqu’une demande est terminée, vous pouvez cliquer sur un lien pour accéder aux journaux générés par le système qui sont exportés vers l’emplacement de stockage Azure de votre organisation dans les 30 jours suivant la création de la demande. Les données sont enregistrées dans un format de fichier courant lisible par une machine tel que JSON ou XML. Si vous n’avez pas de compte Azure ni d’emplacement de stockage Azure, vous devez créer un compte Azure ou un emplacement de stockage Azure pour votre organisation de sorte que l’outil Exportation des journaux de données puisse exporter les journaux générés par le système. 
+After you create a new request, it will be listed on the **Data Log Export** page where you can track its status. After a request is complete, you can click a link to access the system-generated logs, which will be exported to your organization's Azure storage location within 30 days of creating the request. The data will be saved in common, machine-readable file formats such as JSON or XML. If you don't have an Azure account and Azure storage location, you'll need to create an Azure account and/or Azure storage location for your organization so that the Data Log Export tool can export the system-generated logs.
 
 Azure prend cela en charge en permettant à votre organisation d’exporter les données au format JSON natif vers votre conteneur de stockage Azure spécifié[. Article de présentation du Stockage Microsoft Azure – Stockage Blob](https://docs.microsoft.com/azure/storage/common/storage-introduction#blob-storage). Les données récupérées n’incluent pas de données susceptibles de compromettre la sécurité et la stabilité du service.
 
@@ -235,7 +235,7 @@ Le tableau suivant récapitule la consultation et l’exportation des journaux g
 | | |
 |:----|:---|
 | | |
-|**Combien de temps faut-il à l’outil Exportation des journaux de données de Microsoft pour exécuter une demande ?**| Cela peut dépendre de plusieurs facteurs. Dans la plupart des cas, il nécessite un ou deux jours, mais cela peut prendre jusqu’à 30 jours. |
+|**Combien de temps faut-il à l’outil Exportation des journaux de données de Microsoft pour exécuter une demande ?**| This can depend on several factors. In most cases it should complete in one or two days, but it can take up to 30 days. |
 |**Quel est le format de sortie ?**| La sortie sera structurée sous forme de fichiers lisibles par une machine, comme XML, CSV ou JSON. |
 |**Quelles données l’outil d’exportation des journaux de données renvoie-t-il ?**| L’outil Exportation des journaux de données renvoie les journaux générés par le système que Microsoft stocke. Les données exportées englobent différents services Microsoft, dont Office 365, Azure et Dynamics. |
 |***Qui a accès à l’outil Exportation des journaux de données pour demander l’accès à des journaux générés par le système ?**| Les administrateurs généraux Dynamics 365 auront accès à l’utilitaire du gestionnaire des journaux du RGPD. |

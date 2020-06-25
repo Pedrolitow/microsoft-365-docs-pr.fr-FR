@@ -15,12 +15,12 @@ ms.custom:
 localization_priority: Priority
 f1.keywords: NOCSH
 description: Dans cet article, vous allez découvrir les options à votre disposition pour créer un environnement de partage d’invités sécurisé dans Microsoft 365.
-ms.openlocfilehash: b567be8df8d0b9dc96400627c6607560fefd9c39
-ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
+ms.openlocfilehash: 9997fee5c12b54642304270e379cd09ca75b5033
+ms.sourcegitcommit: 5e8901e7e571f20ede04f460bd3e7077dda004ca
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44159478"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "44874893"
 ---
 # <a name="create-a-secure-guest-sharing-environment"></a>Créer un environnement de partage d’invités sécurisé
 
@@ -40,7 +40,7 @@ Ce scénario comprend les points suivants :
 
 Certaines des options décrites dans cet article exigent que les invités disposent d’un compte dans Azure Active Directory. Pour vous assurer que les invités sont bien inclus dans le répertoire lorsque vous partagez des fichiers et des dossiers avec eux, utilisez l’[intégration de SharePoint et OneDrive avec Azure AD B2B Préversion](https://docs.microsoft.com/sharepoint/sharepoint-azureb2b-integration-preview).
 
-Notez que nous n'aborderons pas l'activation des paramètres de partage des invités dans cet article. Consultez la rubrique [Collaborer avec des personnes extérieures à votre organisation](https://docs.microsoft.com/Office365/Enterprise/collaborate-with-people-outside-your-organization) pour plus d’informations sur l'activation du partage des invités pour différents scénarios.
+Notez que nous n'aborderons pas l'activation des paramètres de partage des invités dans cet article. Consultez la rubrique [Collaborer avec des personnes extérieures à votre organisation](collaborate-with-people-outside-your-organization.md) pour plus d’informations sur l'activation du partage des invités pour différents scénarios.
 
 ## <a name="set-up-multi-factor-authentication-for-guests"></a>Configurer l'authentification multifacteur pour les invités.
 

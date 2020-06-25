@@ -15,13 +15,15 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Après avoir créé vos étiquettes de rétention et vos étiquettes de sensibilité, vous souhaiterez voir comment ils sont utilisés au sein de votre client. Les portails Centre de conformité Microsoft 365 et Centre de sécurité Microsoft 365 sont dotés d’une page intitulée Analyse des étiquettes. Elle indique les étiquettes les plus utilisées et leurs types d’applications.
-ms.openlocfilehash: 3905b868ec3815fd9bf63ca131a20ceb1034f2c7
-ms.sourcegitcommit: 252b1d1d8ae735b99bf46e27c08353afc330aef3
+ms.custom:
+- seo-marvel-apr2020
+description: Découvrez comment identifier rapidement les étiquettes de rétention et les étiquettes de confidentialité utilisées le plus souvent et l’endroit où elles sont appliquées.
+ms.openlocfilehash: 89ccdce54b0d7e6146260037b8dcb085631b408e
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "44231987"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44817503"
 ---
 # <a name="view-label-usage-with-label-analytics"></a>Afficher l’utilisation d’étiquette grâce à la page Analyse des étiquettes
 

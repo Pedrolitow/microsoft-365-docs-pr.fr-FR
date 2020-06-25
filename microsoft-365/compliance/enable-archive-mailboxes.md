@@ -18,13 +18,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 268a109e-7843-405b-bb3d-b9393b2342ce
-description: Utilisez le Centre de sécurité et conformité dans Office 365 pour activer des boîtes aux lettres d’archivage afin de vous conformer aux exigences de votre organisation en matière de rétention, d’eDiscovery et de conservation des messages.
-ms.openlocfilehash: f544e739bc28b2383492baec5465be1502a08d0d
-ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
+ms.custom: seo-marvel-apr2020
+description: Découvrez comment utiliser le Centre de sécurité et conformité dans Office 365 pour activer des boîtes aux lettres d’archivage afin de vous conformer aux exigences de votre organisation en matière de rétention, d’eDiscovery et de conservation des messages.
+ms.openlocfilehash: d3f8cc292419cce258b750b77c1f1802accd5f21
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "44166015"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44817843"
 ---
 # <a name="enable-archive-mailboxes-in-the-security--compliance-center"></a>Activer des boîtes aux lettres d’archivage dans le Centre de sécurité et conformité
   
@@ -33,7 +34,7 @@ L’archivage dans Office 365 (également appelé archivage inaltérable) fourni
 > [!NOTE]
 > La fonctionnalité d’archivage à extension automatique fournit, dans Office 365, un espace de stockage complémentaire dans les boîtes aux lettres d’archivage. Lorsque l’archivage à développement automatique est activé et que le quota de stockage initial de la boîte aux lettres d’archivage d’un utilisateur est atteint, Office 365 ajoute automatiquement un espace de stockage supplémentaire. Cela signifie que les utilisateurs ne tombent pas à cours d’espace de stockage de boîte aux lettres et que vous n’avez plus besoin de gérer quoi que ce soit après l’activation initiale de la boîte aux lettres d’archivage et de l’archivage à développement automatique pour votre organisation. Pour plus d’informations, voir [Vue d’ensemble d’un archivage illimité dans Office 365](unlimited-archiving.md). 
   
-## <a name="before-you-begin"></a>Avant de commencer
+## <a name="get-the-necessary-permissions"></a>Obtenir les autorisations nécessaires
 
 Pour activer ou désactiver les boîtes aux lettres d’archivage, vous devez être affecté au rôle Destinataires du courrier dans Exchange Online. Par défaut, ce rôle est attribué aux groupes de rôles Gestion des destinataires et Gestion de l’organisation sur la page **Autorisations** du Centre d’administration Exchange. Si la page **Archive** n’apparaît pas dans le Centre de sécurité et conformité, demandez à votre administrateur de vous attribuer les autorisations nécessaires. 
   
@@ -45,7 +46,7 @@ Pour activer ou désactiver les boîtes aux lettres d’archivage, vous devez ê
     
 3. Dans le volet gauche du Centre de sécurité et conformité, cliquez sur **Gouvernance des données** \> **Archive**.
     
-    La page **Archive** s’affiche. La colonne **Boîte aux lettres d’archivage** indique si une boîte aux lettres d’archivage est activée ou désactivée pour chaque utilisateur. 
+    The **Archive** page is displayed. The **Archive mailbox** column indicates whether an archive mailbox is enabled or disabled for each user. 
     
 4. Dans la liste des boîtes aux lettres, sélectionnez l’utilisateur pour lequel vous voulez activer la boîte aux lettres d’archivage.
     
@@ -60,7 +61,7 @@ Pour activer ou désactiver les boîtes aux lettres d’archivage, vous devez ê
     La création de la boîte aux lettres d’archivage peut prendre un certain temps. Une fois la boîte aux lettres d’archivage créée, l’indication **Boîte aux lettres d’archivage : Activée** s’affiche dans le volet d’informations pour l’utilisateur sélectionné. Il sera peut-être nécessaire de cliquer sur **Actualiser** ![icône Actualiser](../media/O365-MDM-Policy-RefreshIcon.gif) pour mettre à jour les informations dans le volet d’informations. 
     
 > [!TIP]
-> Vous pouvez également activer des boîtes aux lettres d’archivage en bloc en sélectionnant plusieurs utilisateurs dont les boîtes aux lettres sont désactivées (à l’aide de la touche Maj ou Ctrl). Une fois les boîtes aux lettres sélectionnées, cliquez sur **Activer** dans le volet des détails. 
+> You can also bulk-enable archive mailboxes by selecting multiple users with disabled archive mailboxes (use the Shift or Ctrl keys). After selecting multiple mailboxes, click **Enable** in the details pane. 
   
 ## <a name="disable-an-archive-mailbox"></a>Désactiver une boîte aux lettres d’archivage
   
@@ -76,7 +77,7 @@ Pour désactiver une boîte aux lettres d’archivage :
     
 3. Dans le volet gauche du Centre de sécurité et conformité, cliquez sur **Gouvernance des données** \> **Archive**.
     
-    La page **Archive** s’affiche. La colonne **Boîte aux lettres d’archivage** indique si une boîte aux lettres d’archivage est activée ou désactivée pour chaque utilisateur. 
+    The **Archive** page is displayed. The **Archive mailbox** column indicates whether an archive mailbox is enabled or disabled for each user. 
     
 4. Dans la liste des boîtes aux lettres, sélectionnez l’utilisateur pour lequel vous voulez désactiver la boîte aux lettres d’archivage.
     
@@ -89,7 +90,7 @@ Pour désactiver une boîte aux lettres d’archivage :
     La désactivation de la boîte aux lettres d’archivage peut prendre un certain temps. Une fois la boîte aux lettres d’archivage désactivée, l’indication **Boîte aux lettres d’archivage : Désactivée** s’affiche dans le volet d’informations pour l’utilisateur sélectionné. Il sera peut-être nécessaire de cliquer sur **Actualiser** ![icône Actualiser](../media/O365-MDM-Policy-RefreshIcon.gif) pour mettre à jour les informations dans le volet d’informations. 
     
 > [!TIP]
-> Vous pouvez également désactiver des boîtes aux lettres d’archivage en bloc en sélectionnant plusieurs utilisateurs dont les boîtes aux lettres sont activées (à l’aide de la touche Maj ou Ctrl). Une fois les boîtes aux lettres sélectionnées, cliquez sur **Désactiver** dans le volet des détails. 
+> You can also bulk-disable archive mailboxes by selecting multiple users with enabled archive mailboxes (use the Shift or Ctrl keys). After selecting multiple mailboxes, click **Disable** in the details pane. 
   
 ## <a name="use-exchange-online-powershell-to-enable-or-disable-archive-mailboxes"></a>Utiliser Exchange Online PowerShell pour activer ou désactiver les boîtes aux lettres d’archivage
 

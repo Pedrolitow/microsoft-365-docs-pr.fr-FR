@@ -16,19 +16,20 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Utiliser une stratégie de rétention vous permet de décider de façon proactive de conserver du contenu, de le supprimer (ou les deux), de conserver du contenu, puis de le supprimer ; d’appliquer une stratégie unique à l’ensemble de l’organisation ou à quelques emplacements ou utilisateurs ; et d’appliquer une stratégie à tout le contenu ou au contenu remplissant des conditions particulières.
-ms.openlocfilehash: 377c5e1f21938204123de298e620a3d0d2bb9755
-ms.sourcegitcommit: b03a7ad0a80f8b839f40b8d396ab3a049491a12f
+description: Découvrez comment utiliser une stratégie de rétention pour conserver ou supprimer du contenu, et comment appliquer une stratégie unique à l’ensemble de l’organisation ou à des emplacements ou utilisateurs spécifiques.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: ffd7b644f33e7f432c62c182e2d69e07c8bce730
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44695137"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818924"
 ---
 # <a name="learn-about-retention-policies"></a>Découvrir les stratégies de rétention
 
 >*[Guide de sécurité et conformité pour les licences Microsoft 365](https://aka.ms/ComplianceSD).*
 
-Le volume et la complexité des données e-mails, documents, messages instantanés et autres de la majorité des organisations augmentent quotidiennement. Il est important de gérer et de gouverner efficacement ces informations, car vous devez :
+For most organizations, the volume and complexity of their data is increasing daily—email, documents, instant messages, and more. Effectively managing or governing this information is important because you need to:
   
 - **respecter de façon proactive les réglementations du secteur et les stratégies internes** qui vous obligent à conserver du contenu pendant une période minimale. Par exemple, la loi Sarbanes-Oxley vous oblige à conserver certains types de contenu pendant sept ans. 
     
@@ -36,7 +37,7 @@ Le volume et la complexité des données e-mails, documents, messages instantan�
     
 - **aider votre organisation à partager efficacement les connaissances et à être plus agile** en vérifiant que vos utilisateurs traitent uniquement le contenu actuel et pertinent pour eux. 
     
-Une stratégie de rétention peut vous aider à atteindre ces objectifs. La gestion du contenu nécessite généralement les deux actions suivantes :
+A retention policy can help you achieve all of these goals. Managing content commonly requires two actions:
   
 - **Conservation** du contenu afin que celui-ci ne puisse pas être supprimé définitivement avant la fin de la période de rétention. 
     
@@ -50,7 +51,7 @@ Une stratégie de rétention vous permet d’effectuer les actions suivantes :
     
 - Appliquer une stratégie à tout le contenu ou à du contenu qui remplit des conditions spécifiques, comme le contenu comportant des mots clés particuliers ou [des types d’informations sensibles](what-the-sensitive-information-types-look-for.md).
     
-Lorsque le contenu est soumis à une stratégie de rétention, les utilisateurs peuvent continuer à le modifier et à l’utiliser comme si rien n’avait changé. Le contenu est conservé sur place, à son emplacement d’origine. Mais si quelqu’un modifie ou supprime le contenu qui est soumis à la stratégie de rétention, une copie du contenu d’origine est enregistrée dans un emplacement sécurisé où elle est conservée tant que la stratégie de rétention pour ce contenu est en vigueur. Pour obtenir plus d’informations, consultez la section [Fonctionnement d’une stratégie de rétention avec du contenu sur place](#how-a-retention-policy-works-with-content-in-place) sur cette page.
+When content is subject to a retention policy, people can continue to edit and work with the content as if nothing's changed. The content is retained in place, in its original location. But if someone edits or deletes content that's subject to the retention policy, a copy of the original content is saved to a secure location where it's retained while the retention policy for that content is in effect. For more information, see the [How a retention policy works with content in place](#how-a-retention-policy-works-with-content-in-place) section on this page
   
 De plus, certaines organisations doivent se conformer à des réglementations telles que celles de l’organisme fédéral américain de réglementation et de contrôle des marchés financiers (SEC), règlement 17A -4. Le présent règlement exige que lorsqu’une stratégie de rétention est activée, elle ne peut pas être désactivée ou rendue moins restrictive. Pour remplir cette obligation, vous pouvez utiliser le **Verrouillage de conservation**. Une fois la stratégie de rétention verrouillée, personne (pas même l'administrateur) ne peut la désactiver ni la rendre moins restrictive. Pour plus d’informations, voir la section [Utiliser le verrouillage de conservation pour se conformer aux exigences réglementaires](#use-preservation-lock-to-comply-with-regulatory-requirements) sur cette page.
 
