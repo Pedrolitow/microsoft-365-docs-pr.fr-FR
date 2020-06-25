@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: seo-marvel-apr2020
 description: Découvrez les diverses ressources que vous pouvez utiliser pour déployer Microsoft 365 pour entreprise dans votre organisation.
-ms.openlocfilehash: 42b193683a2e0c5efce73b62b00747b20baec05a
-ms.sourcegitcommit: 47c45bd81afdc4867ff2980ced3df31dbad92b84
+ms.openlocfilehash: c076a3f96c7943d9e37c2d5bd7d6ce17d27ca3d6
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/16/2020
-ms.locfileid: "44268330"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44819327"
 ---
 # <a name="deploy-microsoft-365-for-enterprise"></a>Déployer Microsoft 365 pour entreprise
 
@@ -59,7 +59,7 @@ Pour déployer Microsoft 365 pour entreprise vous-même, vous pouvez :
 
   **Si vous êtes une entreprise de petite taille ou jeune**, suivez les phases selon vos besoins pour assembler votre infrastructure méthodiquement.
 
-  Toutefois, vous pouvez déployer les phases ou portions de différentes phases de cette infrastructure dans n’importe quel ordre selon vos besoins, [l’une après l’autre ou en parallèle](deployment-strategies-microsoft-365-enterprise.md), pour s’intégrer avec votre infrastructure actuelle, s’adapter à vos ressources et plans informatique et répondre à votre besoins professionnels. Pour un déploiement simplifié pour structures autres que les entreprises, cliquez [ici](deploy-foundation-infrastructure-non-enterprises.md).
+  Toutefois, vous pouvez déployer les phases ou portions de différentes phases de cette infrastructure dans n’importe quel ordre selon vos besoins, [l’une après l’autre ou en parallèle](deployment-strategies-microsoft-365-enterprise.md), pour s’intégrer avec votre infrastructure actuelle, s’adapter à vos ressources et plans informatique et répondre à votre besoins professionnels. Pour un déploiement simplifié pour les non-entreprises, accédez à [Déploiement pour des structures différentes des entreprises](deploy-foundation-infrastructure-non-enterprises.md).
 
   **Si vous êtes une organisation d’entreprise**, envisagez les phases comme des couches de l’infrastructure informatique, plutôt qu’une trajectoire définie et déterminez comment mieux travailler pour une adhérence finale à la configuration requise pour chaque couche au sein de votre organisation.
 
@@ -71,7 +71,7 @@ Voici la relation entre l’infrastructure de base et les charges de travail.
 
 Les charges de travail fonctionnent sur la partie supérieure de l’infrastructure de base. Toutefois, pas besoin que toutes les phases de l’infrastructure de base soient prédéfinies pour commencer à utiliser des charges de travail pour la productivité et la collaboration.
 
-Commencer votre route de déploiement de bout à bout [ici](deploy-foundation-infrastructure.md).
+Accédez automatiquement au déploiement de bout en bout dans [Infrastructure de base de Microsoft 365 pour les entreprises](deploy-foundation-infrastructure.md).
 
 ## <a name="take-a-test-drive"></a>Faites un test
 
