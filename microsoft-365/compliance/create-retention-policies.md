@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Utiliser une stratégie de rétention vous permet de décider de façon proactive de conserver du contenu, de le supprimer (ou les deux), de conserver du contenu, puis de le supprimer ; d’appliquer une stratégie unique à l’ensemble de l’organisation ou à des emplacements ou utilisateurs spécifiques. Cela vous permet également d’appliquer une stratégie à tout le contenu ou au contenu répondant à certaines conditions.
-ms.openlocfilehash: 35c93ed6ee942f9553e196d3f15634e53c0bf25d
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: 12b0c15186a27a1583403214a657367c1dd3b1a9
+ms.sourcegitcommit: bd5a08785b5ec320b04b02f8776e28bce5fb448f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44352231"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "44844750"
 ---
 # <a name="create-and-configure-retention-policies"></a>Créer et configurer des stratégies de rétention
 
@@ -34,7 +34,7 @@ Si vous souhaitez en savoir plus sur le fonctionnement des stratégies de réten
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
-Les membres de votre équipe de conformité, appelés à créer et gérer des stratégies de rétention, ont besoin d’autorisations pour accéder au [Centre de conformité Microsoft 365](https://compliance.microsoft.com/). Par défaut, votre administrateur client a accès à cet emplacement et peut accorder aux responsables de la conformité et à d’autres personnes un accès sans leur donner toutes les autorisations d’un administrateur client. Pour ce faire, il est recommandé d’accéder à la page **Autorisations** du [Centre de conformité Microsoft 365](https://compliance.microsoft.com/), de modifier le rôle de l’administrateur dans **Administrateur de conformité** et d’ajouter des membres à ce groupe de rôles. 
+Les membres de votre équipe de conformité, appelés à créer et gérer des stratégies de rétention, ont besoin d’autorisations pour accéder au [Centre de conformité Microsoft 365](https://compliance.microsoft.com/). Par défaut, votre administrateur client (administrateur général) a accès à cet emplacement et peut accorder aux responsables de la conformité et à d’autres personnes un accès sans leur donner toutes les autorisations d’un administrateur client. Pour accorder des autorisations à cette administration limitée, nous vous recommandons d'ajouter des utilisateurs au groupe de rôles d’administrateur **Administrateur de la conformité**. Pour obtenir des instructions, veuillez consulter la page [Octroi de l’accès au Centre de sécurité et conformité aux utilisateurs](https://docs.microsoft.com/microsoft-365/security/office-365-security/grant-access-to-the-security-and-compliance-center).
 
 Ces autorisations sont nécessaires uniquement pour créer et appliquer une stratégie de rétention. La personne qui configure la stratégie de rétention n’a pas besoin d’accéder au contenu.
 
@@ -78,7 +78,7 @@ Après avoir sélectionné **Choisir des utilisateurs**, vous pouvez inclure rap
   
 ![Page Sélection des utilisateurs Skype](../media/f1742493-741a-4142-a564-d7d41ab0236a.png)
   
-Notez que **Historique des conversations**, un dossier dans Outlook, est une fonctionnalité qui n’a rien à voir avec l’archivage Skype. La fonctionnalité **Historique des conversations** peut être désactivée par l’utilisateur final, mais l’archivage pour Skype s’effectue en stockant une copie des conversations Skype dans un dossier masqué inaccessible à l’utilisateur, mais disponible pour eDiscovery.
+Note that **Conversation History**, a folder in Outlook, is a feature that has nothing to do with Skype archiving. **Conversation History** can be turned off by the end user, but archiving for Skype is done by storing a copy of Skype conversations in a hidden folder that is inaccessible to the user but available to eDiscovery.
 
 
 ## <a name="settings-for-retaining-and-deleting-content"></a>Paramètres pour la conservation et la suppression de contenu
@@ -113,7 +113,7 @@ Si votre stratégie de rétention supprime du contenu, il est important de compr
   
 Par exemple, supposons que vous créez une stratégie de rétention qui supprime le contenu au bout de trois ans, puis que vous affectez cette stratégie à tous les comptes OneDrive, qui contiennent un grand volume de contenu qui a été créé il y a quatre ou cinq ans. Dans ce cas, une grande partie du contenu est supprimée peu après l’attribution de la stratégie de rétention pour la première fois. Pour cette raison, il est important de comprendre qu’une stratégie de rétention qui supprime le contenu peut avoir un impact considérable sur votre contenu. 
   
-Par conséquent, avant d’affecter une stratégie de rétention à un site pour la première fois, vous devez d’abord tenir compte de l’ancienneté du contenu existant et de la façon dont la stratégie peut avoir une incidence sur ce contenu. Vous pouvez également communiquer la nouvelle stratégie à vos utilisateurs avant de l’affecter, pour leur donner le temps d’évaluer les incidences éventuelles. Remarquez cet avertissement qui apparaît lorsque vous examinez les paramètres pour votre stratégie de rétention juste avant de la créer.
+Therefore, before you assign a retention policy to a site collection for the first time, you should first consider the age of the existing content and how the policy may impact that content. You may also want to communicate the new policy to your users before assigning it, to give them time to assess the possible impact. Note this warning that appears when you review the settings for your retention policy just before creating it.
   
 ![Avertissement sur la suppression du contenu](../media/59c26b19-3628-4cc1-9a73-a05127a8e81b.png)
   
@@ -135,7 +135,7 @@ La rétention basée sur une requête utilise l’index de recherche pour identi
   
 ### <a name="identify-content-that-contains-sensitive-information"></a>Identifier le contenu qui contient des informations sensibles
 
-Vous pouvez également appliquer une stratégie de rétention uniquement au contenu qui contient [des types spécifiques d’informations sensibles](what-the-sensitive-information-types-look-for.md). Par exemple, vous pouvez choisir d’appliquer des exigences de rétention uniques seulement au contenu qui contient des informations d’identification personnelle (PII) telles que les identifiants fiscaux, les numéros de sécurité sociale ou les numéros de passeport.
+You can also apply a retention policy only to content that contains [specific types of sensitive information](what-the-sensitive-information-types-look-for.md). For example, you can choose to apply unique retention requirements only to content that contains personally identifiable information (PII) such as taxpayer identification numbers, social security numbers, or passport numbers.
   
 ![Page Types d’informations sensibles](../media/8b104819-d185-4d58-b6b3-d06e82686a05.png)
   
@@ -143,7 +143,7 @@ Remarques :
   
 - La rétention avancée des informations sensibles ne s’applique pas aux dossiers publics Exchange ou Skype Entreprise, car ces emplacements ne prennent pas en charge les types d’informations sensibles.
     
-- Exchange Online utilise les règles de transport (également appelées règles de transport) pour identifier les informations sensibles. Par conséquent, cela fonctionne uniquement sur les messages en transit, et non sur tous les éléments déjà stockés dans une boîte aux lettres. Pour Exchange Online, cela signifie qu’une stratégie de rétention peut identifier les informations sensibles et mener des actions de rétention uniquement sur les messages qui arrivent **après** l’application de la stratégie à la boîte aux lettres. La rétention basée sur les requêtes décrite dans la section précédente n’a pas cette limitation, car elle utilise l’index de recherche pour identifier le contenu. 
+- Exchange Online utilise les règles de flux de courrier (également appelées règles de transport) pour identifier les informations sensibles. Par conséquent, cela fonctionne uniquement sur les messages en transit, et non sur tous les éléments déjà stockés dans une boîte aux lettres. Pour Exchange Online, cela signifie qu’une stratégie de rétention peut identifier les informations sensibles et mener des actions de rétention uniquement sur les messages qui arrivent **après** l’application de la stratégie à la boîte aux lettres. La rétention basée sur les requêtes décrite dans la section précédente n’a pas cette limitation, car elle utilise l’index de recherche pour identifier le contenu. 
     
 ## <a name="applying-a-retention-policy-to-an-entire-organization-or-specific-locations"></a>Application d’une stratégie de rétention à l’ensemble d’une organisation ou des emplacements spécifiques
 
@@ -229,7 +229,7 @@ Pour utiliser les cmdlets des stratégies de conservation :
 
 ## <a name="lock-a-retention-policy-by-using-powershell"></a>Verrouiller une stratégie de rétention à l’aide de PowerShell
 
-Vous devez utiliser PowerShell Si vous avez besoin d’utiliser le [Verrouillage de conservation](retention-policies.md#use-preservation-lock-to-comply-with-regulatory-requirements) pour vous conformer aux exigences réglementaires.
+Vous devez utiliser PowerShell si vous avez besoin d’utiliser le [Verrouillage de Conservation](retention-policies.md#use-preservation-lock-to-comply-with-regulatory-requirements) pour vous conformer aux exigences réglementaires.
 
 1. [Connectez-vous au Centre de sécurité et conformité Office 365 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps).
 
