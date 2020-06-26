@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: f340a34b3c88f1caba83861c4d36ce140846d495
-ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
+ms.openlocfilehash: 0f565e7584a961fcbc48e6a421419cd48a20a963
+ms.sourcegitcommit: ab10c042e5e9c6a7b2afef930ab0d247a6aa275d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44617173"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44899326"
 ---
 # <a name="deviceevents"></a>DeviceEvents
 
@@ -85,8 +85,8 @@ Pour plus d’informations sur les autres tables du schéma de repérage avancé
 | `ReportId` | long | Identificateur d’événement basé sur un compteur extensible. Pour identifier les événements uniques, cette colonne doit être utilisée conjointement avec les colonnes DeviceName et timestamp |
 | `AppGuardContainerId` | string | Identificateur du conteneur virtualisé utilisé par application Guard pour isoler l’activité du navigateur |
 
-## <a name="related-topics"></a>Sujets associés
-- [Repérage proactif des menaces](advanced-hunting-overview.md)
+## <a name="related-topics"></a>Voir aussi
+- [Vue d’ensemble du repérage avancé](advanced-hunting-overview.md)
 - [Apprendre le langage de requête](advanced-hunting-query-language.md)
 - [Utiliser des requêtes partagées](advanced-hunting-shared-queries.md)
 - [Repérer les menaces sur divers appareils et e-mails](advanced-hunting-query-emails-devices.md)

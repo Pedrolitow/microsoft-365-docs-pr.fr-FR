@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 12f8d0995d00daffe8a1ca1c2c8d9dfe25a11581
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: b384e76439ae706520725e7193fa64224b724be0
+ms.sourcegitcommit: ab10c042e5e9c6a7b2afef930ab0d247a6aa275d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44209774"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44898956"
 ---
 # <a name="identityinfo"></a>IdentityInfo
 
@@ -55,8 +55,8 @@ Pour plus d’informations sur les autres tables du schéma de repérage avancé
 | `Country` | string | Pays/région où se trouve l’utilisateur du compte |
 | `IsAccountEnabled` | booléen | Indique si le compte est activé ou non. |
 
-## <a name="related-topics"></a>Sujets associés
-- [Repérage proactif des menaces](advanced-hunting-overview.md)
+## <a name="related-topics"></a>Voir aussi
+- [Vue d’ensemble du repérage avancé](advanced-hunting-overview.md)
 - [Apprendre le langage de requête](advanced-hunting-query-language.md)
 - [Utiliser des requêtes partagées](advanced-hunting-shared-queries.md)
 - [Repérer les menaces sur divers appareils et e-mails](advanced-hunting-query-emails-devices.md)

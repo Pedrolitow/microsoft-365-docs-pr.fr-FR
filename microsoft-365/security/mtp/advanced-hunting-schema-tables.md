@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 2ed89a676525b91f6b0923cf39be5b014638e93e
-ms.sourcegitcommit: eee4f651bd51d5aedd64e42d02bfed8ccb9be4cd
+ms.openlocfilehash: 032368e35cdfc991df4c01643e49cee538549f39
+ms.sourcegitcommit: ab10c042e5e9c6a7b2afef930ab0d247a6aa275d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44515842"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44899362"
 ---
 # <a name="understand-the-advanced-hunting-schema"></a>Comprendre le schéma de repérage avancé
 
@@ -64,10 +64,7 @@ La référence suivante répertorie les tableaux du schéma. Chaque nom de table
 | **[IdentityLogonEvents](advanced-hunting-identitylogonevents-table.md)** | Événements d’authentification enregistrés par Active Directory et d’autres services Microsoft Online |
 | **[IdentityQueryEvents](advanced-hunting-identityqueryevents-table.md)** | Activités de requête exécutées sur des objets Active Directory, tels que des utilisateurs, des groupes, des appareils et des domaines |
 
-
-
-
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Voir aussi
 - [Vue d’ensemble du repérage avancé](advanced-hunting-overview.md)
 - [Apprendre le langage de requête](advanced-hunting-query-language.md)
 - [Travailler avec les résultats de la requête](advanced-hunting-query-results.md)

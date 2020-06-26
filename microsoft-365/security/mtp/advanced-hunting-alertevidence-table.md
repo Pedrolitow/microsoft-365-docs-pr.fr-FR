@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: da6e84725aa391e4cb6056fadd327fdba2436214
-ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
+ms.openlocfilehash: a0f2ae36752a4415da7c1bc39ce35bd7f744a764
+ms.sourcegitcommit: ab10c042e5e9c6a7b2afef930ab0d247a6aa275d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44617085"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44899350"
 ---
 # <a name="alertevidence"></a>AlertEvidence
 
@@ -52,8 +52,8 @@ Pour plus d’informations sur les autres tables du schéma de repérage avancé
 | `EvidenceDirection` | string | Indique si l’entité est la source ou la destination d’une connexion réseau. |
 | `AdditionalFields` | string | Informations supplémentaires sur l’événement au format de tableau JSON |
 
-## <a name="related-topics"></a>Sujets associés
-- [Repérage proactif des menaces](advanced-hunting-overview.md)
+## <a name="related-topics"></a>Voir aussi
+- [Vue d’ensemble du repérage avancé](advanced-hunting-overview.md)
 - [Apprendre le langage de requête](advanced-hunting-query-language.md)
 - [Utiliser des requêtes partagées](advanced-hunting-shared-queries.md)
 - [Repérer les menaces sur divers appareils et e-mails](advanced-hunting-query-emails-devices.md)

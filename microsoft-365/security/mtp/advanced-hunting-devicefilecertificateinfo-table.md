@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: fcbd487aeed633176c86fd22bfcd156be02fea22
-ms.sourcegitcommit: b6c4b514b2cb6739af949780d7e2a5a5c8dcc161
+ms.openlocfilehash: cba27b5b43141c8c90f9a8bc7f70c55aabc1979d
+ms.sourcegitcommit: ab10c042e5e9c6a7b2afef930ab0d247a6aa275d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "43900788"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44899314"
 ---
 # <a name="devicefilecertificateinfo"></a>DeviceFileCertificateInfo
 
@@ -37,16 +37,16 @@ Pour plus d’informations sur les autres tables du schéma de repérage avancé
 |-------------|-----------|-------------|
 | `Timestamp` | DateHeure | Date et heure d’enregistrement de l’événement |
 | `DeviceId` | chaîne | Identificateur unique de la machine dans le service |
-| `DeviceName` | chaîne | Nom de domaine complet (FQDN) de la machine |
+| `DeviceName` | string | Nom de domaine complet (FQDN) de la machine |
 | `SHA1` | string | SHA-1 du fichier auquel l’action enregistrée a été appliquée |
 | `IsSigned` | booléen | Indique si le fichier est signé |
-| `SignatureType` | chaîne | Indique si les informations de signature ont été lues dans le fichier ou lues à partir d’un fichier de catalogue externe. |
-| `Signer` | chaîne | Informations sur le signataire du fichier |
-| `SignerHash` | chaîne | Valeur de hachage unique identifiant le signataire |
-| `Issuer` | chaîne | Informations sur l’autorité de certification émettrice |
-| `IssuerHash` | chaîne | Valeur de hachage unique permettant l’identification de l’autorité de certification émettrice |
-| `CertificateSerialNumber` | chaîne | Identificateur du certificat propre à l’autorité de certification émettrice. |
-| `CrlDistributionPointUrls` | chaîne |  Tableau JSON répertoriant les URL des partages réseau qui contiennent des certificats et des listes de révocation de certificats (CRL) |
+| `SignatureType` | string | Indique si les informations de signature ont été lues dans le fichier ou lues à partir d’un fichier de catalogue externe. |
+| `Signer` | string | Informations sur le signataire du fichier |
+| `SignerHash` | string | Valeur de hachage unique identifiant le signataire |
+| `Issuer` | string | Informations sur l’autorité de certification émettrice |
+| `IssuerHash` | string | Valeur de hachage unique permettant l’identification de l’autorité de certification émettrice |
+| `CertificateSerialNumber` | string | Identificateur du certificat propre à l’autorité de certification émettrice. |
+| `CrlDistributionPointUrls` | string |  Tableau JSON répertoriant les URL des partages réseau qui contiennent des certificats et des listes de révocation de certificats (CRL) |
 | `CertificateCreationTime` | DateHeure | Date et heure de création du certificat |
 | `CertificateExpirationTime` | DateHeure | Date et heure auxquelles le certificat est configuré pour expirer |
 | `CertificateCountersignatureTime` | DateHeure | Date et heure auxquelles le certificat a été contresigné |
@@ -54,8 +54,8 @@ Pour plus d’informations sur les autres tables du schéma de repérage avancé
 | `IsRootSignerMicrosoft` | booléen | Indique si le signataire du certificat racine est Microsoft |
 | `ReportId` | long | Identificateur d’événement basé sur un compteur extensible. Pour identifier les événements uniques, cette colonne doit être utilisée conjointement avec les colonnes DeviceName et timestamp. | 
 
-## <a name="related-topics"></a>Sujets associés
-- [Repérage proactif des menaces](advanced-hunting-overview.md)
+## <a name="related-topics"></a>Voir aussi
+- [Vue d’ensemble du repérage avancé](advanced-hunting-overview.md)
 - [Apprendre le langage de requête](advanced-hunting-query-language.md)
 - [Utiliser des requêtes partagées](advanced-hunting-shared-queries.md)
 - [Repérer les menaces sur divers appareils et e-mails](advanced-hunting-query-emails-devices.md)

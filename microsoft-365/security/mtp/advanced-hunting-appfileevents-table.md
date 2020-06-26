@@ -1,7 +1,7 @@
 ---
-title: Table IdentityQueryEvents dans le schéma de chasse avancé
-description: En savoir plus sur les événements de requête Active Directory dans la table IdentityQueryEvents du schéma de chasse avancé
-keywords: chasse de menace, recherche de menace, recherche de menace informatique, protection contre les menaces Microsoft, Microsoft 365, MTP, M365, recherche, requête, télémétrie, référence de schéma, Kusto, table, colonne, type de données, description, IdentityQueryEvents, Azure AD, Active Directory, Azure ATP, identités, requêtes LDAP
+title: Table AppFileEvents dans le schéma de chasse avancé
+description: En savoir plus sur les événements liés aux fichiers associés aux applications et services Cloud dans le tableau AppFileEvents du schéma de chasse avancé
+keywords: chasse de menace, recherche de menace, recherche de menace informatique, protection contre les menaces Microsoft, Microsoft 365, MTP, M365, recherche, requête, télémétrie, référence de schéma, Kusto, table, colonne, type de données, description, AppFileEvents, sécurité des applications Cloud, MCAS
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
@@ -17,37 +17,35 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: bec7f13d49e2ccf4e3a9121d5e5a2fecd1b10aa2
+ms.openlocfilehash: da3b331d4f607aa0961e275db9444aadbec4fcf2
 ms.sourcegitcommit: ab10c042e5e9c6a7b2afef930ab0d247a6aa275d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 06/26/2020
-ms.locfileid: "44899112"
+ms.locfileid: "44899338"
 ---
-# <a name="identityqueryevents"></a>IdentityQueryEvents
+# <a name="appfileevents"></a>AppFileEvents
 
 **S’applique à :**
 - Protection Microsoft contre les menaces
 
-Le `IdentityQueryEvents` tableau du schéma de [chasse avancé](advanced-hunting-overview.md) contient des informations sur les requêtes exécutées sur des objets Active Directory, tels que les utilisateurs, les groupes, les appareils et les domaines. Utilisez cette référence pour créer des requêtes qui renvoient des informations de cette table.
+Le `AppFileEvents` tableau du schéma de [chasse avancé](advanced-hunting-overview.md) contient des informations sur les activités liées aux fichiers dans les applications et les services Cloud surveillés par la sécurité des applications Cloud de Microsoft. Utilisez cette référence pour créer des requêtes qui renvoient des informations de cette table.
 
 Pour plus d’informations sur les autres tables du schéma de repérage avancé, [consultez la référence de repérage avancé](advanced-hunting-schema-tables.md).
 
 | Nom de colonne | Type de données | Description |
 |-------------|-----------|-------------|
 | `Timestamp` | DateHeure | Date et heure d’enregistrement de l’événement |
-| `ActionType` | string | Type d’activité qui a déclenché l’événement |
+| `ActionType` | chaîne | Type d’activité qui a déclenché l’événement |
 | `Application` | string | Application qui a effectué l’action enregistrée |
-| `Query` | string | Type de requête : QueryGroup, QueryUser ou EnumerateUsers |
-| `QueryObject` | string | Nom de l’utilisateur, du groupe, de l’appareil, du domaine ou de tout autre type d’entité interrogé. |
-| `Protocol` | string | Protocole utilisé pendant la communication |
+| `FileName` | string | Nom du fichier auquel l’action enregistrée a été appliquée |
+| `FolderPath` | string | Dossier contenant le fichier auquel l’action enregistrée a été appliquée |
+| `PreviousFileName` | string | Nom d’origine du fichier qui a été renommé suite à l’action |
 | `AccountName` | string | Nom d’utilisateur du compte |
 | `AccountDomain` | string | Domaine du compte |
 | `AccountUpn` | string | Nom d’utilisateur principal (UPN) du compte |
-| `AccountSid` | string | Identificateur de sécurité (SID) du compte |
 | `AccountObjectId` | string | Identificateur unique du compte dans Azure AD |
 | `AccountDisplayName` | string | Nom de l’utilisateur du compte affiché dans le carnet d’adresses. Il s’agit généralement d’une combinaison d’un nom donné, d’une initiation au milieu et d’un nom de famille ou nom. |
-| `DeviceName` | string | Nom de domaine complet (FQDN) du point de terminaison |
 | `IPAddress` | string | Adresse IP affectée au point de terminaison et utilisée pendant les communications réseau associées |
 | `Location` | string | Ville, pays ou autre emplacement géographique associé à l’événement |
 

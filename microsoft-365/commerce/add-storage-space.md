@@ -29,12 +29,12 @@ search.appverid:
 - GSP150
 ms.assetid: 96ea3533-de64-4b01-839a-c560875a662c
 description: Découvrez comment ajouter et réduire le stockage de fichiers dans votre abonnement Microsoft 365. Avec le stockage de fichiers supplémentaire, vous pouvez stocker davantage de contenu dans SharePoint Online et OneDrive.
-ms.openlocfilehash: f31495127feb345cccdc792c60333f5fc0c7cc6f
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: f3720580c44b68f5b34d5e11f5af1a919ec07dea
+ms.sourcegitcommit: ab10c042e5e9c6a7b2afef930ab0d247a6aa275d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44402677"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44899124"
 ---
 # <a name="add-storage-space-for-your-subscription"></a>Ajouter de l’espace de stockage pour votre abonnement
 
@@ -46,6 +46,9 @@ ms.locfileid: "44402677"
 ::: moniker-end
 
 Si vous commencez à manquer d’espace de stockage pour vos collections de sites SharePoint Online et si votre plan est éligible, vous pouvez en ajouter à votre abonnement.  Si le **stockage de fichiers supplémentaire Office 365** n’apparaît pas dans la liste des modules complémentaires disponibles, cela signifie que votre plan n’est pas éligible. Pour plus d’informations, consultez la rubrique [mon plan est-il éligible ?](#is-my-plan-eligible-for-office-365-extra-file-storage)
+
+> [!NOTE]
+> Si vous avez acheté votre abonnement via le gestionnaire de licences en volume ou un fournisseur de services cryptographiques, vous ne pouvez pas acheter le **stockage de fichiers supplémentaire Office 365** pour votre organisation. Contactez votre représentant ou votre partenaire pour obtenir de l’aide.
 
 ## <a name="view-available-storage"></a>Afficher le stockage disponible
 

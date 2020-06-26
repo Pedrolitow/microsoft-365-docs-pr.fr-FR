@@ -1,7 +1,7 @@
 ---
 title: Utiliser les résultats de la recherche avancée dans Microsoft Threat Protection
 description: Tirer le meilleur parti des résultats de la requête renvoyés par la recherche avancée dans Microsoft Threat Protection
-keywords: chasse aux menaces, recherche de menace, recherche sur les menaces informatiques, protection contre les menaces Microsoft, Microsoft 365, MTP, M365, recherche, requête, télémétrie, détections personnalisées, schéma, Kusto, Microsoft 365, protection contre les menaces Microsoft, visualisation, graphique, filtres, exploration
+keywords: chasse de menace, recherche de menace, recherche de menace informatique, protection contre les menaces Microsoft, Microsoft 365, MTP, M365, recherche, requête, télémétrie, détections personnalisées, schéma, Kusto, Microsoft 365, protection contre les menaces Microsoft, visualisation, graphique, filtres, exploration
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: f9838908ca0dbfb498601c3509b920b064a2eb22
-ms.sourcegitcommit: 3b2fdf159d7dd962493a3838e3cf0cf429ee2bf2
+ms.openlocfilehash: 14afd3c098c99a6e1e6ccfc7e9f6accbf8bf0e7d
+ms.sourcegitcommit: ab10c042e5e9c6a7b2afef930ab0d247a6aa275d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "42929150"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44899080"
 ---
 # <a name="work-with-advanced-hunting-query-results"></a>Utiliser les résultats de la recherche avancée de la chasse
 
@@ -56,7 +56,7 @@ Par défaut, la chasse avancée affiche les résultats de la requête sous forme
 Lors du rendu des graphiques, la chasse avancée identifie automatiquement les colonnes d’intérêt et les valeurs numériques à agréger. Pour obtenir des graphiques significatifs, construisez vos requêtes pour renvoyer les valeurs spécifiques que vous souhaitez voir visibles. Voici quelques exemples de requêtes et les graphiques qui en résultent.
 
 #### <a name="alerts-by-severity"></a>Alertes par gravité
-Utilisez l' `summarize` opérateur pour obtenir le nombre de chiffres des valeurs que vous souhaitez graphiquer. La requête ci-dessous `summarize` utilise l’opérateur pour obtenir le nombre d’alertes par gravité.
+Utilisez l' `summarize` opérateur pour obtenir le nombre de chiffres des valeurs que vous souhaitez graphiquer. La requête ci-dessous utilise l' `summarize` opérateur pour obtenir le nombre d’alertes par gravité.
 
 ```kusto
 AlertInfo
@@ -64,13 +64,13 @@ AlertInfo
 ```
 Lors du rendu des résultats, un histogramme affiche chaque valeur de gravité sous la forme d’une colonne distincte :
 
-![Image des résultats de la recherche avancée de la chasse affichés](../../media/advanced-hunting-column-chart.jpg)
-sous la forme d’un graphique en histogramme*résultats de la requête pour les alertes par gravité affichée sous forme de graphique en histogrammes*
+![Image des résultats de la recherche avancée de la chasse affichés sous la forme d’un graphique en histogramme ](../../media/advanced-hunting-column-chart.jpg)
+ *résultats de la requête pour les alertes par gravité affichée sous forme de graphique en histogrammes*
 
 #### <a name="alert-severity-by-operating-system"></a>Gravité des alertes par système d’exploitation
 Vous pouvez également utiliser l' `summarize` opérateur pour préparer les résultats pour les valeurs de graphique de plusieurs champs. Par exemple, vous souhaiterez peut-être comprendre comment les niveaux d’alerte sont distribués entre les systèmes d’exploitation (OS). 
 
-La requête ci-dessous `join` utilise un opérateur pour extraire les informations du `DeviceInfo` système d’exploitation à partir `summarize` de la table, puis utilise `OSPlatform` pour `Severity` compter les valeurs dans les colonnes et :
+La requête ci-dessous utilise un `join` opérateur pour extraire les informations du système d’exploitation à partir de la `DeviceInfo` table, puis utilise `summarize` pour compter les valeurs dans les `OSPlatform` `Severity` colonnes et :
 
 ```kusto
 AlertInfo
@@ -80,11 +80,11 @@ AlertInfo
 ```
 Ces résultats sont optimisés à l’aide d’un histogramme empilé :
 
-![Image des résultats de la recherche avancée de la chasse affichés sous](../../media/advanced-hunting-stacked-chart.jpg)
-la forme d’un graphique empilé*de résultats de requête pour les alertes par système d’exploitation et gravité affichées sous la forme d’un graphique empilé*
+![Image des résultats de la recherche avancée de la chasse affichés sous la forme d’un graphique empilé ](../../media/advanced-hunting-stacked-chart.jpg)
+ *de résultats de requête pour les alertes par système d’exploitation et gravité affichées sous la forme d’un graphique empilé*
 
 #### <a name="phishing-emails-across-top-ten-sender-domains"></a>Courriers électroniques de hameçonnage sur les dix principaux domaines d’expéditeur
-Si vous avez affaire à une liste de valeurs qui n’est pas finie, vous pouvez `Top` utiliser l’opérateur pour graphiquer uniquement les valeurs avec le plus d’instances. Par exemple, pour obtenir les dix principaux domaines d’expéditeur avec le plus de courriers électroniques de hameçonnage, utilisez la requête ci-dessous :
+Si vous avez affaire à une liste de valeurs qui n’est pas finie, vous pouvez utiliser l' `Top` opérateur pour graphiquer uniquement les valeurs avec le plus d’instances. Par exemple, pour obtenir les dix principaux domaines d’expéditeur avec le plus de courriers électroniques de hameçonnage, utilisez la requête ci-dessous :
 
 ```kusto
 EmailEvents
@@ -94,11 +94,11 @@ EmailEvents
 ```
 Utilisez la vue de graphique à secteurs pour afficher efficacement la distribution dans les domaines principaux :
 
-![Image des résultats de la recherche avancée de la chasse affichée](../../media/advanced-hunting-pie-chart.jpg)
-sous la forme d’un graphique en secteurs*illustrant la répartition des courriers électroniques de hameçonnage sur les domaines d’expéditeurs les plus fréquents*
+![Image des résultats de la recherche avancée de la chasse affichée sous la forme d’un graphique en secteurs ](../../media/advanced-hunting-pie-chart.jpg)
+ *illustrant la répartition des courriers électroniques de hameçonnage sur les domaines d’expéditeurs les plus fréquents*
 
 #### <a name="file-activities-over-time"></a>Activités des fichiers dans le temps
-À l' `summarize` aide de l' `bin()` opérateur avec la fonction, vous pouvez rechercher des événements impliquant un indicateur particulier dans le temps. La requête ci-dessous compte les événements `invoice.doc` impliquant le fichier à des intervalles de 30 minutes pour afficher les pics d’activité liés à ce fichier :
+À l’aide de l' `summarize` opérateur avec la `bin()` fonction, vous pouvez rechercher des événements impliquant un indicateur particulier dans le temps. La requête ci-dessous compte les événements impliquant le fichier `invoice.doc` à des intervalles de 30 minutes pour afficher les pics d’activité liés à ce fichier :
 
 ```kusto
 AppFileEvents
@@ -106,10 +106,10 @@ AppFileEvents
 | where FileName == "invoice.doc"
 | summarize FileCount = count() by bin(Timestamp, 30m)
 ```
-Le graphique en courbes ci-dessous met clairement en évidence les `invoice.doc`périodes d’activité impliquant : 
+Le graphique en courbes ci-dessous met clairement en évidence les périodes d’activité impliquant `invoice.doc` : 
 
-![Image des résultats de la recherche avancée de la chasse affichée](../../media/advanced-hunting-line-chart.jpg)
-sous la forme d’un graphique en courbes*illustrant le nombre d’événements impliquant un fichier dans le temps*
+![Image des résultats de la recherche avancée de la chasse affichée sous la forme d’un graphique en courbes ](../../media/advanced-hunting-line-chart.jpg)
+ *illustrant le nombre d’événements impliquant un fichier dans le temps*
 
 
 ## <a name="export-tables-and-charts"></a>Exporter des tableaux et des graphiques
@@ -119,7 +119,15 @@ Après avoir exécuté une requête, sélectionnez **Exporter** pour enregistrer
 - **N’importe quel graphique** : les résultats de la requête sont exportés sous la forme d’une image JPEG du graphique affiché
 
 ## <a name="drill-down-from-query-results"></a>Explorer les résultats de la requête
-Pour afficher plus d’informations sur les entités, telles que des ordinateurs, fichiers, utilisateurs, adresses IP et URL, dans les résultats de votre requête, cliquez simplement sur l’identificateur d’entité. Une page de profil détaillée s’ouvre pour l’entité sélectionnée dans le Centre de sécurité Microsoft Defender.
+Pour inspecter rapidement un enregistrement dans les résultats de votre requête, sélectionnez la ligne correspondante pour ouvrir le panneau **inspecter les enregistrements** . Le panneau fournit les informations suivantes en fonction de l’enregistrement sélectionné :
+
+- **Ressources** : vue résumée des ressources principales (boîtes aux lettres, appareils et utilisateurs) figurant dans l’enregistrement, enrichie d’informations disponibles, telles que les niveaux de risque et d’exposition.
+- **Arborescence de processus** : générée pour des enregistrements avec des informations de processus et enrichie à l’aide des informations contextuelles disponibles ; en règle générale, les requêtes qui renvoient plus de colonnes peuvent entraîner des arborescences de processus plus riches.
+- **Tous les détails** : toutes les valeurs des colonnes de l’enregistrement  
+
+![Image de l’enregistrement sélectionné avec le panneau pour inspecter l’enregistrement](../../media/mtp-ah/inspect-record.png)
+
+Pour afficher plus d’informations sur une entité spécifique dans vos résultats de requête, comme une machine, un fichier, un utilisateur, une adresse IP ou une URL, sélectionnez l’identificateur d’entité pour ouvrir une page de profil détaillée pour cette entité.
 
 ## <a name="tweak-your-queries-from-the-results"></a>Adaptez vos requêtes à partir des résultats
 Cliquez avec le bouton droit de la souris sur une valeur du jeu de résultats pour améliorer rapidement votre requête. Vous pouvez utiliser les options suivantes pour :

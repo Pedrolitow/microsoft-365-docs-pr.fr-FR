@@ -1,7 +1,7 @@
 ---
 title: Table DeviceLogonEvents dans le schéma de chasse avancé
 description: En savoir plus sur l’authentification ou les événements de connexion dans la table DeviceLogonEvents du schéma de chasse avancé
-keywords: chasse aux menaces, recherche de menace, recherche sur les menaces de la cybercriminalité, protection contre les menaces Microsoft, Microsoft 365, MTP, M365, recherche, requête, télémétrie, référence de schéma, Kusto, table, colonne, type de données, description, logonevents, DeviceLogonEvents, authentification connexion, connectez-vous
+keywords: chasse de menace, recherche de menace, recherche de menace informatique, protection contre les menaces Microsoft, Microsoft 365, MTP, M365, recherche, requête, télémétrie, référence de schéma, Kusto, table, colonne, type de données, description, logonevents, DeviceLogonEvents, authentification, ouverture de session
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 7c7f1bba23379b25ccecc427b2aa866a1105396d
-ms.sourcegitcommit: 74bf600424d0cb7b9d16b4f391aeda7875058be1
+ms.openlocfilehash: 07b2c2301784f378075e3c9803cebc5bcabf9cb0
+ms.sourcegitcommit: ab10c042e5e9c6a7b2afef930ab0d247a6aa275d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42235013"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44899266"
 ---
 # <a name="devicelogonevents"></a>DeviceLogonEvents
 
@@ -71,8 +71,8 @@ Pour plus d’informations sur les autres tables du schéma de repérage avancé
 | `AppGuardContainerId` | string | Identificateur du conteneur virtualisé utilisé par application Guard pour isoler l’activité du navigateur |
 | `IsLocalAdmin` | booléen | Indicateur booléen indiquant si l’utilisateur est un administrateur local sur l’ordinateur |
 
-## <a name="related-topics"></a>Sujets associés
-- [Repérage proactif des menaces](advanced-hunting-overview.md)
+## <a name="related-topics"></a>Voir aussi
+- [Vue d’ensemble du repérage avancé](advanced-hunting-overview.md)
 - [Apprendre le langage de requête](advanced-hunting-query-language.md)
 - [Utiliser des requêtes partagées](advanced-hunting-shared-queries.md)
 - [Repérer les menaces sur divers appareils et e-mails](advanced-hunting-query-emails-devices.md)
