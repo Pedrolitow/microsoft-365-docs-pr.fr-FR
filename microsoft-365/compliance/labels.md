@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 description: En savoir plus sur les étiquettes de rétention qui gouvernent vos données en gardant les informations souhaitées, en supprimant ce que vous ne voulez pas et en marquant le contenu en tant qu’enregistrement.
-ms.openlocfilehash: b7797c55c95845b35fc3d67275bf64920fa59574
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: dc6048fed07f6312d192cde5260b180605e3d4f2
+ms.sourcegitcommit: 92a6595b482396f44675c22221500703a5649dab
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44817439"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "44879301"
 ---
 # <a name="learn-about-retention-labels"></a>Découvrir les étiquettes de rétention
 
@@ -347,9 +347,9 @@ Après avoir publié ou appliqué automatiquement vos étiquettes de rétention,
 
 Lorsque les étiquettes de rétention sont affectées au contenu par les utilisateurs ou automatiquement, vous pouvez utiliser la recherche de contenu pour rechercher les contenus classés et dotés d’étiquettes de rétention spécifiques.
   
-Lorsque vous créez une recherche de contenu, sélectionnez la condition **Balise de conformité**, puis entrez le nom complet ou une partie du nom de l’étiquette de rétention et utilisez un caractère générique. Si vous souhaitez en savoir plus, consultez la page [Requêtes par mots-clés et conditions de recherche pour la recherche de contenu](keyword-queries-and-search-conditions.md).
+Lorsque vous créez une recherche de contenu, sélectionnez la condition **Étiquette de conformité**, puis entrez le nom complet ou une partie du nom de l’étiquette de rétention et utilisez un caractère générique. Si vous souhaitez en savoir plus, consultez la page [Requêtes par mots-clés et conditions de recherche pour la recherche de contenu](keyword-queries-and-search-conditions.md).
   
-![Condition Balise de conformité](../media/82d6af16-59f8-462f-babb-c894b2917018.png)
+![Condition de l’étiquette de conformité](../media/compliance-label-condition.png)
   
 ## <a name="use-retention-labels-instead-of-older-features"></a>Utilisez des étiquettes de rétention plutôt que les anciennes fonctionnalités
 
