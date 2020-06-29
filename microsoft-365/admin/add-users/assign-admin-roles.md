@@ -27,12 +27,12 @@ search.appverid:
 - GEA150
 ms.assetid: eac4d046-1afd-4f1a-85fc-8219c79e1504
 description: Découvrez comment attribuer des rôles d’administrateur à un ou plusieurs utilisateurs de votre entreprise afin qu’ils puissent effectuer des tâches spécifiques dans le centre d’administration.
-ms.openlocfilehash: 59fc2211051aa4f122462186753e7f626715722f
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+ms.openlocfilehash: cd50faf5db5e674e865e0913cae14a68a202bd1f
+ms.sourcegitcommit: 2e9e309ec09e5275ac6b3b425fba48a9ffce8eb2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44780636"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44900775"
 ---
 # <a name="assign-admin-roles"></a>Attribuer des rôles d’administrateur
 
@@ -78,7 +78,7 @@ Vous pouvez attribuer des utilisateurs à un rôle de deux manières différente
 
 ::: moniker range="o365-germany"
 
-1. Dans le Centre d’administration, accédez à la page **Utilisateurs >** > <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Utilisateurs actifs</a>.
+1. Dans le Centre d’administration, accédez à la page **Utilisateurs** > <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Utilisateurs actifs</a>.
 
 2. Sur la page **utilisateurs actifs** , sélectionnez l’utilisateur dont vous souhaitez modifier le rôle d’administrateur. Dans le volet flyout, en regard de **rôles**, sélectionnez **modifier**. 
 
@@ -90,7 +90,7 @@ Vous pouvez attribuer des utilisateurs à un rôle de deux manières différente
 
 ::: moniker range="o365-21vianet"
 
-1. Dans le Centre d’administration, accédez à la page **Utilisateurs >** > <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Utilisateurs actifs</a>.
+1. Dans le Centre d’administration, accédez à la page **Utilisateurs** > <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Utilisateurs actifs</a>.
 
 2. Sur la page **utilisateurs actifs** , sélectionnez l’utilisateur dont vous souhaitez modifier le rôle d’administrateur. Dans le volet flyout, en regard de **rôles**, sélectionnez **modifier**.
 
@@ -110,9 +110,9 @@ Utilisez les instructions suivantes pour attribuer des rôles à des dizaines d'
 ::: moniker range="o365-worldwide"
 
 
-## <a name="didnt-work-for-you"></a>Cela n'a pas fonctionné pour vous ?
+## <a name="check-your-permissions"></a>Vérifier vos autorisations
 
-Il se peut que vous n’ayez pas les autorisations correctes et que vous n’ayez pas accès pour attribuer des rôles d’administrateur à d’autres utilisateurs. Demandez à un autre administrateur d'attribuer des rôles à votre place.
+Vous ne disposez peut-être pas des autorisations appropriées pour attribuer des rôles d’administrateur à d’autres utilisateurs. Vérifiez que vous disposez des autorisations appropriées ou demandez à un autre administrateur d’attribuer des rôles pour vous.
 
 ::: moniker-end
 
@@ -120,8 +120,8 @@ Il se peut que vous n’ayez pas les autorisations correctes et que vous n’aye
 
 [À propos des rôles d’administrateur Microsoft 365](about-admin-roles.md)
 
+[Autorisations des rôles d’administrateur dans Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
+
 [Attribuer des rôles à des comptes d’utilisateur avec PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/assign-roles-to-user-accounts-with-office-365-powershell)
 
 [Autoriser ou supprimer des relations avec les partenaires](../misc/add-partner.md)
-
-[Ajouter une adresse de messagerie de remplacement à l’aide du centre d’administration Exchange](https://docs.microsoft.com/Exchange/recipients/user-mailboxes/email-addresses?view=exchserver-2019#add-an-email-address-to-a-user-mailbox)
