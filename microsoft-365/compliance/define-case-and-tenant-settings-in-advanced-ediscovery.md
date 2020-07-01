@@ -14,18 +14,18 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 383809de-7f5e-4a1d-9098-c525f67b7a9a
-description: 'Découvrez les étiquettes, les modules croisés et les paramètres de locataire que vous pouvez définir au niveau du cas dans Advanced eDiscovery.  '
-ms.openlocfilehash: b4092c7fd60b9ae82e4f97edcfa7f4aaf60ac622
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: Découvrez les étiquettes, les modules croisés et les paramètres de locataire que vous pouvez définir au niveau du cas dans Advanced eDiscovery.
+ms.openlocfilehash: 6b0030e30e5e3a4f4c77fbcb5fcbd75bf63c1ea8
+ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43630561"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "44936421"
 ---
 # <a name="define-case-and-tenant-settings-in-advanced-ediscovery-classic"></a>Définir les paramètres de cas et de client dans Advanced eDiscovery (classique)
 
 > [!NOTE]
-> Pour utiliser Advanced eDiscovery, votre organisation doit souscrire un abonnement Office 365 E3 avec le module complémentaire Conformité avancée ou un abonnement E5. Si vous ne disposez pas d’un abonnement et que vous souhaitez essayer Advanced eDiscovery, vous pouvez vous [inscrire pour utiliser une version d’évaluation d’Office 365 Entreprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
+> Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
 Les paramètres avancés de cas eDiscovery et de client sont décrits dans cette rubrique.
   
@@ -44,7 +44,7 @@ Les paramètres entre modules suivants sont des options de casse qui s’appliqu
     
 - Nom d’affichage du fichier : identificateur de fichier qui sera affiché tout au long de Advanced eDiscovery pour identifier le fichier, à la place du nom complet de la découverte électronique avancée du titre/chemin d’accès ou de l’objet du message électronique.
     
-1. Ouvrez **paramètres et utilitaires** en cliquant sur l’icône **cogwheel** . Ouvrez le \> **module croisé** **des paramètres de \> cas de paramètres et d’utilitaires** . 
+1. Ouvrez **paramètres et utilitaires** en cliquant sur l’icône **cogwheel** . Ouvrez le module croisé **des paramètres de \> cas de paramètres et d’utilitaires** \> **Cross module**. 
     
 2. Sélectionnez à partir de la **page par défaut après** les options de connexion : 
     
@@ -68,7 +68,7 @@ Le journal des événements fournit des métadonnées relatives au traitement eD
   
 1. Ouvrez **paramètres et utilitaires** en cliquant sur l’icône **cogwheel** . 
     
-2. Dans l’onglet Paramètres du **client des paramètres et des \> utilitaires** , sélectionnez journal des **événements**. Les données du journal des événements sont affichées.
+2. Dans l’onglet Paramètres du ** \> client des paramètres et des utilitaires** , sélectionnez **Journal des événements**. Les données du journal des événements sont affichées.
     
   - Pour filtrer les résultats du journal par un cas, sélectionnez le cas dans la liste **incidents** . 
     
@@ -76,7 +76,7 @@ Le journal des événements fournit des métadonnées relatives au traitement eD
     
   - Pour modifier l’ordre des colonnes, cliquez sur l’en-tête de colonne, puis faites-le glisser.
     
-  - Pour vous déplacer entre les pages de **\>** journal **\<** , cliquez sur et sur les icônes. 
+  - Pour vous déplacer entre les pages de journal, cliquez sur **\>** et sur les **\<** icônes. 
     
 ### <a name="system-information"></a>Informations système
 
@@ -84,13 +84,13 @@ Les informations système avancées de la version eDiscovery et les tâches acti
   
 1. Ouvrez **paramètres et utilitaires** en cliquant sur l’icône **cogwheel** . 
     
-2. Dans l’onglet Paramètres du **client des paramètres et des \> utilitaires** , sélectionnez **informations système**. Les informations de version sont affichées.
+2. Dans l’onglet Paramètres du ** \> client des paramètres et des utilitaires** , sélectionnez **informations système**. Les informations de version sont affichées.
     
 L’affichage peut être mis à jour en cliquant sur l’icône d' **actualisation** située sous les informations client. 
   
 ## <a name="see-also"></a>Voir aussi
 
-[Advanced eDiscovery (classique)](office-365-advanced-ediscovery.md)
+[Advanced eDiscovery (classique)](office-365-advanced-ediscovery.md)
   
 [Utilisation des utilitaires](use-advanced-ediscovery-utilities.md)
 

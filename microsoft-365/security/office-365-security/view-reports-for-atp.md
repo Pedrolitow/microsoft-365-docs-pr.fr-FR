@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Recherchez et utilisez des rapports pour Office 365 protection avancée contre les menaces dans le centre de sécurité &amp; conformité.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 3e6f6e3f2fd5820f280ab47f3ffdde11bd9da72e
-ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
+ms.openlocfilehash: c71bef11e574593d821b992f3a5037dbf127d5d2
+ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44613359"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "44936994"
 ---
 # <a name="view-reports-for-office-365-advanced-threat-protection"></a>Afficher les rapports pour Office 365 protection avancée contre les menaces
 
@@ -51,9 +51,9 @@ Les filtres et les répartitions des informations permettent des catégorisation
 
 |||
 |---|---|
-|Par type de détection|Quelle stratégie a aidé à détecter ces menaces ?|
+|Par type de stratégie|Quelle stratégie a aidé à détecter ces menaces ?|
 |Par la technologie de détection|Quelle technologie Microsoft sous-jacente a intercepté la menace ?|
-|Par État de remise|Qu’est-il advenu des messages électroniques détectés comme des menaces ?|
+|Par État de remise|Quel était le statut de remise finale des messages électroniques détectés comme des menaces ?|
 |
 
 > [!TIP]
@@ -65,7 +65,8 @@ Ces affichages vous permettent d’exporter, via un clic sur un bouton (dans le 
 
 ![Ce graphique indique exporter en tant qu’option dans le menu de l’affichage de programmes malveillants, directement entre créer une planification et rapport de requête.](../../media/tp-threatProtectStatRpt-BreakDownByExport.png)
 
-**Remarque**: le nombre maximal d’entrées pouvant être exportées pour le **hameçonnage** et les **programmes malveillants** se trouve juste en dessous de 10000. Si vous exportez une vue, seules les entrées 10000 les plus récentes sont exportées.
+> [!NOTE]
+> Le nombre maximal d’entrées pouvant être exportées pour le **hameçonnage** et les **programmes malveillants** se trouve juste en dessous de 10000. Si vous exportez une vue, seules les entrées 10000 les plus récentes sont exportées. Sur les données exportées, la colonne _nombre de messages_ indique le nombre de messages détectés par la technologie de détection et le type de stratégie.    
 
 Les affichages vue d’ensemble et courriels affichent des informations dans les heures de traitement et non dans les 24 heures (à la demande). une augmentation des vitesses a été un signal clair) !
 
@@ -80,7 +81,7 @@ Pour obtenir l’état détaillé d’une journée, pointez sur le graphique.
 
 ![Données d’état de protection contre les menaces ATP pendant une journée](../../media/d5c2c6ad-c002-4985-a032-c866e46fdea8.png)
 
-Par défaut, le rapport d’état de protection contre les menaces affiche les données des sept derniers jours. Toutefois, vous pouvez choisir **filtres** et modifier la plage de dates pour afficher les données pour 90 jours maximum. (Si vous utilisez un abonnement d’évaluation, vous pouvez être limité à 30 jours de données.)
+Par défaut, le rapport d’état de protection contre les menaces affiche les données des sept derniers jours. Toutefois, vous pouvez choisir **filtres** et modifier la plage de dates pour afficher les données pour un maximum de 90 jours pour l’affichage de regroupement et 30 jours pour l’affichage détaillé. (Si vous utilisez un abonnement d’évaluation, vous pouvez être limité à 30 jours de données.)
 
 ![Filtres d’état de protection contre les menaces ATP](../../media/4f703369-642b-402b-9758-b9c828283410.png)
 
@@ -111,7 +112,7 @@ Pour afficher ce rapport, dans le [Centre de sécurité &amp; conformité](https
 
 ![Rapport sur les types de fichiers ATP](../../media/6e3f5d33-79aa-4b2d-938c-6ef135d9e54c.png)
   
-Lorsque vous placez le curseur de la souris sur un jour particulier, vous pouvez voir la répartition des types de fichiers malveillants détectés par la protection contre les [ &amp; programmes malveillants](anti-spam-and-anti-malware-protection.md)et anti-programme malveillant [ATP](atp-safe-attachments.md) .
+Lorsque vous placez le curseur de la souris sur un jour particulier, vous pouvez voir la répartition des types de fichiers malveillants détectés par la protection contre les [ &amp; programmes malveillants](anti-spam-and-anti-malware-protection.md)et anti-programme malveillant [ATP](atp-safe-attachments.md) . La vue agrégée du rapport autorise 90 jours de filtrage, tandis que l’affichage détaillé autorise uniquement les 10 jours de filtrage. 
   
 ![Données de rapport sur les types de fichiers ATP pendant une journée](../../media/10d18428-699a-41d2-a73e-be3a8214ada1.png)
 
@@ -169,7 +170,7 @@ Pour en savoir plus, consultez les ressources suivantes :
 
 Si vous ne voyez pas de données dans vos rapports ATP, vérifiez que vos stratégies sont correctement configurées. Votre organisation doit avoir des [stratégies de liens fiables ATP](set-up-atp-safe-links-policies.md) et des [stratégies de pièces jointes approuvées ATP](set-up-atp-safe-attachments-policies.md) définies afin que la protection ATP soit mise en place. Consultez également la rubrique protection contre le [courrier indésirable et les programmes malveillants dans Office 365](anti-spam-and-anti-malware-protection.md).
 
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Voir aussi
 
 [Rapports et Insights dans le centre de sécurité &amp; conformité](reports-and-insights-in-security-and-compliance.md)
   

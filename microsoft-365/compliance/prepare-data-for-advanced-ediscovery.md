@@ -15,13 +15,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 2fb94c23-1846-4a0e-994d-da6d02445f15
-description: 'Découvrez comment utiliser le centre de sécurité &amp; conformité pour préparer les données à analyser avec Advanced eDiscovery. '
-ms.openlocfilehash: cf6ace4f88aa18790495b79ed3aa22ebeda75545
-ms.sourcegitcommit: 5c96d06496d40d2523edbea336f7355c3c77cc80
+description: Découvrez comment utiliser le centre de sécurité &amp; conformité pour préparer les données à analyser avec Advanced eDiscovery.
+ms.openlocfilehash: 3c9d237a3a9c04a443730143998324a7831f2998
+ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "44412823"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "44936329"
 ---
 # <a name="prepare-data-for-advanced-ediscovery-classic"></a>Préparation des données pour Advanced eDiscovery (classique)
 
@@ -51,7 +51,7 @@ Une fois que vous avez préparé les résultats de la recherche dans le &amp; Ce
     
 4. Cliquez sur **ouvrir** en regard du cas dans lequel vous souhaitez charger les données dans Advanced eDiscovery. 
     
-5. Sur la page d' **Accueil** du cas, cliquez sur **basculer vers Advanced eDiscovery**. 
+5. Sur la page **Accueil** du cas, cliquez sur **Basculer vers Advanced eDiscovery**. 
     
     ![Cliquez sur basculer vers Advanced eDiscovery pour ouvrir le cas dans Advanced eDiscovery](../media/8e34ba23-62e3-4e68-a530-b6ece39b54be.png)
   
@@ -67,7 +67,7 @@ Une fois que les résultats de la recherche du centre de sécurité &amp; confor
   
 ## <a name="see-also"></a>Voir aussi
 
-[Advanced eDiscovery (classique)](office-365-advanced-ediscovery.md)
+[Advanced eDiscovery (classique)](office-365-advanced-ediscovery.md)
   
 [Configurer des utilisateurs et des cas](set-up-users-and-cases-in-advanced-ediscovery.md)
   

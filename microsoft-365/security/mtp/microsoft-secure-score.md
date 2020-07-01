@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 44ba7a1c877580f31ca858f7fefcc502e0bb8beb
-ms.sourcegitcommit: bd5a08785b5ec320b04b02f8776e28bce5fb448f
+ms.openlocfilehash: 23938dc78c498af76267233c8ad38dd909d56400
+ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "44844623"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "44936628"
 ---
 # <a name="microsoft-secure-score"></a>Degré de sécurisation Microsoft
 
@@ -56,6 +56,19 @@ Chaque action d’amélioration vaut 10 points maximum. La plupart sont évalué
 ### <a name="products-included-in-secure-score"></a>Produits inclus dans le score de sécurité
 
 Il existe actuellement des recommandations pour Microsoft 365 (y compris Exchange Online), Azure AD, Microsoft Defender ATP, Azure ATP et la sécurité des applications Cloud. Des recommandations pour d’autres produits de sécurité seront bientôt disponibles. Les recommandations ne couvrent pas toutes les surfaces d’attaque associées à chaque produit, mais il s’agit d’une base de référence correcte. Vous pouvez également marquer les actions d’amélioration telles qu’elles sont couvertes par une atténuation tierce ou alternative.
+
+### <a name="security-defaults"></a>Paramètres de sécurité par défaut
+
+Microsoft Secure score a mis à jour les actions d’amélioration afin de prendre en charge les paramètres de [sécurité par défaut dans Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults), ce qui facilite la protection de votre organisation avec des paramètres de sécurité préconfigurés pour les attaques courantes.
+
+Si vous activez les paramètres de sécurité par défaut, vous recevrez des points complets pour les actions d’amélioration suivantes :
+
+- Assurez-vous que tous les utilisateurs peuvent effectuer l’authentification multifacteur pour un accès sécurisé (9 points).
+- Exiger MFA pour les rôles d’administration (10 points)
+- Activer la stratégie pour bloquer l’authentification héritée (7 points)
+
+>[!IMPORTANT]
+>Les paramètres de sécurité par défaut incluent des fonctionnalités de sécurité qui fournissent une sécurité similaire aux actions d’amélioration « stratégie de risque de connexion » et « stratégie de risque utilisateur ». Au lieu de configurer ces stratégies en plus des paramètres de sécurité par défaut, nous vous recommandons de mettre à jour leurs statuts sur « résolu par une autre atténuation ».
 
 ## <a name="required-permissions"></a>Autorisations requises
 

@@ -14,20 +14,20 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 03cc4387-2c7d-4058-8a44-0deefb58f011
-description: 'Découvrez comment ajouter des mots clés définis par l’utilisateur à la pertinence pour identifier les fichiers appropriés lors du balisage dans Advanced eDiscovery et spécifier les paramètres de coût.  '
-ms.openlocfilehash: b36032c148e5819440bc31cbf4692db51abf1add
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: Découvrez comment ajouter des mots clés définis par l’utilisateur à la pertinence pour identifier les fichiers appropriés lors du balisage dans Advanced eDiscovery et spécifier les paramètres de coût.
+ms.openlocfilehash: 61ec74109f13d8056047e0aaf14aaa87c846e17f
+ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43630551"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "44936453"
 ---
 # <a name="define-highlighted-keywords-and-advanced-options-in-advanced-ediscovery-classic"></a>Définir les mots clés et les options avancées en surbrillance dans Advanced eDiscovery (classique)
 
 > [!NOTE]
-> Pour utiliser Advanced eDiscovery, votre organisation doit souscrire un abonnement Office 365 E3 avec le module complémentaire Conformité avancée ou un abonnement E5. Si vous ne disposez pas d’un abonnement et que vous souhaitez essayer Advanced eDiscovery, vous pouvez vous [inscrire pour utiliser une version d’évaluation d’Office 365 Entreprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
+> Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
-Dans Advanced eDiscovery, il est possible d’ajouter des mots clés définis par l’utilisateur à des fins de pertinence afin de vous aider à identifier les fichiers appropriés lors du marquage. Les mots clés seront affichés dans les couleurs spécifiées dans la **balise de pertinence \> **. 
+Dans Advanced eDiscovery, il est possible d’ajouter des mots clés définis par l’utilisateur à des fins de pertinence afin de vous aider à identifier les fichiers appropriés lors du marquage. Les mots clés seront affichés dans les couleurs spécifiées dans la ** \> balise de pertinence**. 
   
 Comme décrit ci-dessous, les listes de mots clés peuvent être ajoutées, ainsi que les couleurs affectées à la liste de mots-clés et les problèmes connexes. Une info-bulle affiche la description du mot-clé, le cas échéant, comme indiqué par un double trait de soulignement.
   
@@ -36,9 +36,9 @@ Comme décrit ci-dessous, les listes de mots clés peuvent être ajoutées, ains
   
 ## <a name="adding-highlighted-keywords"></a>Ajout de mots clés en surbrillance
 
-1. Dans l' ** \> onglet Configuration** de pertinence de pertinence, sélectionnez **Mots clés en surbrillance**.
+1. Dans l' **onglet \> configuration** de pertinence de pertinence, sélectionnez **Mots clés en surbrillance**.
     
-2. Cliquez sur **+** l’icône pour ajouter des mots clés. La boîte de dialogue **ajouter de nouveaux mots clés** s’affiche. 
+2. Cliquez sur l' **+** icône pour ajouter des mots clés. La boîte de dialogue **ajouter de nouveaux mots clés** s’affiche. 
     
 3. Dans **Mots clés**, tapez la liste des mots clés, en séparant les mots clés par des virgules. 
     
@@ -54,13 +54,13 @@ Comme décrit ci-dessous, les listes de mots clés peuvent être ajoutées, ains
     
     ![Liste des mots clés de configuration de pertinence](../media/a05d5ec0-8bde-470d-97e2-456b169281d6.png)
   
-Les mots clés définis par l’utilisateur s’affichent dans la balise des \> couleurs spécifiées dans la pertinence. 
+Les mots clés définis par l’utilisateur s’affichent dans la balise des couleurs spécifiées dans la pertinence \> . 
   
 ## <a name="specifying-relevance-setup-advanced-settings"></a>Spécification des paramètres avancés de configuration de pertinence
 
 Ces paramètres affectent les graphiques de suivi et de décision en matière de pertinence.
   
-1. Dans l' ** \> onglet Configuration** de pertinence de pertinence, sélectionnez **Paramètres avancés**.
+1. Dans l' **onglet \> configuration** de pertinence de pertinence, sélectionnez **Paramètres avancés**.
     
 2. Dans la boîte de dialogue **paramètres de coût** , effectuez les sélections suivantes : 
     

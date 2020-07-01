@@ -15,18 +15,18 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 66ca9993-75f4-4724-aea2-5a0719b660c1
-description: 'Découvrez les utilitaires de Advanced eDiscovery, notamment le journal des cas, les données claires, les erreurs de processus, la pertinence et l’analyse de la transparence.  '
-ms.openlocfilehash: d4495920110916fdd5b07201d50080605ba177b1
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: Découvrez les utilitaires de Advanced eDiscovery, notamment le journal des cas, les données claires, les erreurs de processus, la pertinence et l’analyse de la transparence.
+ms.openlocfilehash: 4283bc7bea509c8a01fb45c433964230a5256f8a
+ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43633389"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "44936617"
 ---
 # <a name="use-advanced-ediscovery-classic-utilities"></a>Utilisation des utilitaires Advanced eDiscovery (classique)
 
 > [!NOTE]
-> Pour utiliser Advanced eDiscovery, votre organisation doit souscrire un abonnement Office 365 E3 avec le module complémentaire Conformité avancée ou un abonnement E5. Si vous ne disposez pas d’un abonnement et que vous souhaitez essayer Advanced eDiscovery, vous pouvez vous [inscrire pour utiliser une version d’évaluation d’Office 365 Entreprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
+> Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
 Les utilitaires affichés et disponibles dans Advanced eDiscovery dépendent des rôles de contexte et d’utilisateur.
   
@@ -38,7 +38,7 @@ Le fichier journal peut également être téléchargé sur l’ordinateur du cli
   
 1. Dans la barre de menus, cliquez sur l’icône **cogwheel** . 
     
-2. Dans l’onglet **paramètres et \> ** utilitaires, sélectionnez **configuration du journal \> des incidents**.
+2. Dans l’onglet **paramètres et \> ** utilitaires, sélectionnez ** \> configuration du journal des incidents**.
     
 3. Sélectionnez le **niveau de journalisation** comme suit : 
     
@@ -57,7 +57,7 @@ S’il est nécessaire de supprimer ou de réinitialiser les données de cas, l�
   
 1. Dans la barre de menus, cliquez sur l’icône **cogwheel** . 
     
-2. Dans l’onglet **paramètres et \> ** utilitaires, sélectionnez **effacer la configuration \> des données**.
+2. Dans l’onglet **paramètres et \> ** utilitaires, sélectionnez Effacer la ** \> Configuration des données**.
     
 3. Sélectionnez une option pour l’initialisation des informations :
     
@@ -99,7 +99,7 @@ Dans un scénario de cas à plusieurs problèmes, un rapport d’analyse de tran
   
 1. Dans la barre de menus, cliquez sur l’icône **cogwheel** . 
     
-2. Dans l’onglet **paramètres et \> ** utilitaires, sélectionnez Configuration de l' **analyse \> de transparence**.
+2. Dans l’onglet **paramètres et \> ** utilitaires, sélectionnez Configuration de l' **analyse de transparence \> **.
     
 3. Dans * * ID de fichier * *, entrez l’ID de fichier du fichier à traiter.
     
@@ -109,7 +109,7 @@ Dans un scénario de cas à plusieurs problèmes, un rapport d’analyse de tran
     
 ## <a name="see-also"></a>Voir aussi
 
-[Advanced eDiscovery (classique)](office-365-advanced-ediscovery.md)
+[Advanced eDiscovery (classique)](office-365-advanced-ediscovery.md)
   
 [Définition des paramètres de cas et de client](define-case-and-tenant-settings-in-advanced-ediscovery.md)
 

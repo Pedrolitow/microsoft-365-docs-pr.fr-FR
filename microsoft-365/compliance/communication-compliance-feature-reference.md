@@ -18,21 +18,21 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: bd9162316bd5c180210040f0820eb8d1cc46dc6c
-ms.sourcegitcommit: efd4dd29af0ea2b71b674534de3b2dcbfd7482db
+ms.openlocfilehash: 844ae00b1881851dc50c68329a999263c09bdbed
+ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44689242"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "44936783"
 ---
 # <a name="communication-compliance-feature-reference"></a>Référence de la fonctionnalité de conformité des communications
 
 ## <a name="policies"></a>Stratégies
 
 >[!Important]
->L’utilisation de PowerShell pour créer et gérer des stratégies de conformité des communications n’est pas prise en charge. Pour créer et gérer ces stratégies, vous devez utiliser les contrôles de gestion des stratégies dans la [solution de conformité de communication Microsoft 365](https://compliance.microsoft.com/supervisoryreview).
+>L’utilisation de PowerShell pour créer et gérer les stratégies de conformité des communications n’est pas prise en charge. Pour créer et gérer ces stratégies, vous devez utiliser les contrôles de gestion des stratégies dans la [solution de conformité de communication Microsoft 365](https://compliance.microsoft.com/supervisoryreview).
 
-Vous créez des stratégies de conformité des communications pour les organisations Microsoft 365 dans le centre de conformité Microsoft 365. Les stratégies de conformité des communications définissent les communications et les utilisateurs qui font l’objet d’un examen au sein de votre organisation, définissent les conditions personnalisées auxquelles doivent répondre les communications et indiquent qui doit effectuer des révisions. Les utilisateurs inclus dans le groupe de rôles d' **administrateur de vérification de surveillance** peuvent configurer des stratégies, et toute personne à laquelle ce rôle est attribué peut accéder à la page conformité de la **communication** dans le centre de conformité Microsoft 365. Si nécessaire, vous pouvez exporter l’historique des modifications apportées à une stratégie dans un fichier. csv qui inclut également l’état des alertes en attente de révision, des éléments escaladés et des éléments résolus. Les stratégies ne peuvent pas être renommées et peuvent être supprimées lorsqu’elles ne sont plus nécessaires.
+Vous créez des stratégies de conformité des communications pour les organisations Microsoft 365 dans le Centre de conformité Microsoft 365. Les stratégies de conformité des communications définissent les communications et les utilisateurs qui font l’objet d’un examen au sein de votre organisation, définissent les conditions personnalisées auxquelles doivent répondre les communications et indiquent qui doit effectuer des révisions. Les utilisateurs inclus dans le groupe de rôle d’**Administrateur de la vérification de la surveillance** peuvent définir des stratégies, tandis que les personnes auxquelles ce rôle est affecté peuvent accéder à la page **Conformité des communications** dans le Centre de conformité Microsoft 365. Si nécessaire, vous pouvez exporter l’historique des modifications apportées à une stratégie dans un fichier. csv qui inclut également l’état des alertes en attente de révision, des éléments escaladés et des éléments résolus. Les stratégies ne peuvent pas être renommées et peuvent être supprimées lorsqu’elles ne sont plus nécessaires.
 
 >[!NOTE]
 >Les stratégies de surveillance créées dans le centre de sécurité & conformité pour les abonnements Office 365 ne peuvent pas migrer vers Microsoft 365. Si vous effectuez une migration à partir d’un abonnement Office 365 vers un abonnement Microsoft 365, vous devrez créer de nouvelles stratégies de conformité de communication pour remplacer les stratégies de surveillance existantes.
@@ -49,41 +49,47 @@ Les modèles de stratégie sont des paramètres de stratégie prédéfinis que v
 
 ## <a name="supervised-users"></a>Utilisateurs supervisés
 
-Avant de commencer à utiliser la conformité de la communication, vous devez déterminer qui a besoin de ses communications. Dans la stratégie, les adresses de messagerie des utilisateurs identifient des individus ou des groupes de personnes à superviser. Les groupes Microsoft 365, les listes de distribution Exchange, les communautés Yammer et les canaux Microsoft teams sont des exemples de ces groupes. Vous pouvez également exclure des utilisateurs ou des groupes spécifiques de l’analyse à l’aide d’un groupe d’exclusion spécifique ou d’une liste de groupes.
+Avant de commencer à utiliser la conformité des communications, vous devez déterminer qui a besoin de ses communications. Dans la stratégie, les adresses de messagerie des utilisateurs identifient les individus ou groupes de personnes à superviser. Les groupes Microsoft 365, les listes de distribution Exchange, les communautés Yammer et les canaux Microsoft teams sont des exemples de ces groupes. Vous pouvez également exclure des utilisateurs ou des groupes spécifiques de l’analyse d’un groupe d’exclusion spécifique ou d’une liste de groupes.
 
 >[!IMPORTANT]
 >Les utilisateurs couverts par les stratégies de conformité des communications doivent disposer d’une licence de conformité Microsoft 365 E5, d’une licence Office 365 entreprise E3 avec le complément de conformité avancé ou être inclus dans un abonnement Office 365 entreprise E5. Si vous ne disposez pas d’un plan entreprise E5 existant et que vous souhaitez essayer la conformité de la communication, vous pouvez vous [inscrire pour obtenir une version d’évaluation d’Office 365 entreprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279).
 
 ## <a name="reviewers"></a>Relecteurs
 
-Lorsque vous créez une stratégie de conformité de communication, vous devez déterminer qui révise les messages des utilisateurs supervisés. Dans la stratégie, les adresses de messagerie des utilisateurs identifient des personnes ou des groupes de personnes pour examiner les communications surveillées. Tous les relecteurs doivent avoir des boîtes aux lettres hébergées sur Exchange Online et doivent disposer des rôles de **gestion des dossiers** et de **révision** . Lorsque les relecteurs sont ajoutés à une stratégie, ils reçoivent automatiquement un message électronique les avertissant de l’affectation à la stratégie et fournissent des liens vers des informations sur le processus de révision.
+Lorsque vous créez une stratégie de conformité de communication, vous devez déterminer qui révise les messages des utilisateurs supervisés. Dans la stratégie, les adresses de messagerie des utilisateurs identifient les individus ou les groupes de personnes qui doivent réviser les communications contrôlées. Tous les réviseurs doivent disposer de boîtes aux lettres hébergées sur Exchange Online et se voir affecter les rôles **Gestion des cas** et **Réviser**. Lorsque les relecteurs sont ajoutés à une stratégie, ils reçoivent automatiquement un message électronique les avertissant de l’affectation à la stratégie et fournissent des liens vers des informations sur le processus de révision.
 
 ## <a name="groups-for-supervised-users-and-reviewers"></a>Groupes pour les utilisateurs et les relecteurs surveillés
 
-Pour simplifier votre configuration, créez des groupes pour les personnes qui ont besoin de leurs communications et des groupes pour les personnes qui examinent ces communications. Si vous utilisez des groupes, vous aurez peut-être besoin de plusieurs. Par exemple, si vous souhaitez analyser les communications entre deux groupes distincts de personnes, ou si vous souhaitez spécifier un groupe qui n’est pas supervisé.
+Pour simplifier votre configuration, créez des groupes pour les personnes qui ont besoin de leurs communications et des groupes pour les personnes qui examinent ces communications. Si vous utilisez des groupes, vous aurez peut-être besoin de plusieurs. Par exemple, si vous voulez analyser des communications entre deux groupes distincts de personnes, ou si vous voulez spécifier un groupe qui n’est pas supervisé.
 
 Lorsque vous affectez un groupe de distribution dans la stratégie, la stratégie surveille tous les messages électroniques provenant de chaque utilisateur dans le groupe de distribution. Lorsque vous affectez un groupe Microsoft 365 dans la stratégie, la stratégie surveille tous les messages électroniques envoyés à ce groupe, et non les messages électroniques individuels reçus par chaque membre du groupe.
 
 L’ajout de groupes et de listes de distribution aux stratégies de conformité des communications fait partie des conditions générales et de l’ensemble de règles, de sorte que le nombre maximal de groupes et de listes de distribution pris en charge par une stratégie varie en fonction du nombre de conditions également ajoutées à la stratégie. Chaque stratégie doit prendre en charge environ 20 groupes ou listes de distribution, en fonction du nombre de conditions supplémentaires présentes dans la stratégie.
 
-## <a name="supported-communication-types"></a>Types de communication pris en charge
+## <a name="supported-communication-types"></a>Types de communications pris en charge
 
 Avec les stratégies de conformité de communication, vous pouvez choisir d’analyser les messages d’une ou plusieurs des plateformes de communication suivantes en tant que groupe ou en tant que sources autonomes. Les communications capturées sur ces plateformes sont conservées pendant sept ans pour chaque stratégie par défaut, même si les utilisateurs quittent votre organisation et que leurs boîtes aux lettres sont supprimées.
 
-- **Microsoft teams**: les communications de conversation et les pièces jointes associées dans les canaux Microsoft teams publics et privés et dans des conversations individuelles peuvent être analysées. Les conversations et les pièces jointes de teams correspondant à des conditions de stratégie de conformité de communication peuvent prendre jusqu’à 24 heures pour être traitées. Utilisez les configurations de gestion de groupe suivantes pour superviser les conversations des utilisateurs individuels et les communications de canal dans teams :
+- **Microsoft teams**: les communications de conversation dans les canaux Microsoft teams publics et privés, ainsi que dans les conversations individuelles, peuvent être analysées. Lorsque des utilisateurs sont affectés à une stratégie de conformité de communication lorsque la couverture Microsoft teams est sélectionnée, les communications de conversation pour les utilisateurs sont automatiquement analysées sur toutes les équipes Microsoft teams dont les utilisateurs sont membres. La couverture Microsoft teams est automatiquement incluse pour les modèles de stratégie prédéfinis et est sélectionnée par défaut dans le modèle de stratégie personnalisé. Les conversations de teams correspondant à des conditions de stratégie de conformité de communication peuvent prendre jusqu’à 24 heures pour être traitées. Utilisez les configurations de gestion de groupe suivantes pour superviser les conversations des utilisateurs individuels et les communications de canal dans teams :
 
-    - **Pour les communications de conversation de teams :** Affectez des utilisateurs individuels ou affectez un [groupe de distribution](https://support.office.com/article/Distribution-groups-E8BA58A8-FAB2-4AAF-8AA1-2A304052D2DE) à la stratégie de conformité des communications. Ce paramètre est destiné aux relations utilisateur/conversation un-à-un ou un-à-plusieurs.
-    - **Pour les communications de canal teams :** Affectez à chaque canal Microsoft teams ou groupe Microsoft 365 que vous souhaitez analyser, qui contient un utilisateur spécifique à la stratégie de conformité de communication. Si vous ajoutez le même utilisateur à d’autres canaux Microsoft teams ou à des groupes Microsoft 365, veillez à ajouter ces nouveaux canaux et groupes à la stratégie de conformité des communications.
+    - **Pour les communications de conversation de teams :** Affectez des utilisateurs individuels ou affectez un [groupe de distribution](https://support.office.com/article/Distribution-groups-E8BA58A8-FAB2-4AAF-8AA1-2A304052D2DE) à la stratégie de conformité des communications. Ce paramètre s'applique aux relations d'utilisateur/chat en tête à tête ou à plusieurs.
+    - **Pour les communications de canal teams :** Affectez à chaque canal Microsoft teams ou groupe Microsoft 365 que vous souhaitez analyser, qui contient un utilisateur spécifique à la stratégie de conformité de communication. Si vous ajoutez le même utilisateur à d’autres canaux Microsoft Teams ou à des groupes Microsoft 365, veillez à ajouter ces nouveaux canaux et groupes à la stratégie de conformité des communications.
+    - **Pour les communications de conversation avec des environnements de messagerie hybrides**: la conformité des communications permet de surveiller les messages de conversation pour les utilisateurs des organisations disposant d’un déploiement local Exchange ou d’un fournisseur de messagerie externe ayant activé Microsoft Teams. Vous devez créer un groupe de distribution pour les utilisateurs disposant de boîtes aux lettres locales ou externes à surveiller. Lors de la création d’une stratégie de conformité de communication, vous affectez ce groupe de distribution à la sélection **utilisateurs et groupes surveillés** dans l’Assistant stratégie.
 
-- **Messagerie Exchange**: les boîtes aux lettres hébergées sur Exchange Online dans le cadre de votre abonnement Microsoft 365 ou Office 365 sont toutes éligibles pour l’analyse des messages. Les messages électroniques et les pièces jointes Exchange correspondant à des conditions de stratégie de conformité de communication peuvent mettre jusqu’à 24 heures pour être traités. Les types de pièces jointes prises en charge pour la conformité de la communication sont les mêmes que ceux [pris en charge pour les inspections de contenu de règle de flux de messagerie Exchange](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments#supported-file-types-for-mail-flow-rule-content-inspection).
+    >[!IMPORTANT]
+    >Vous devez classer une demande auprès du support Microsoft pour permettre à votre organisation d’utiliser l’interface utilisateur graphique dans le centre de sécurité & conformité afin de rechercher des données de conversation teams pour les utilisateurs locaux. Pour plus d’informations, reportez-vous à la rubrique [recherche de boîtes aux lettres en nuage pour les utilisateurs locaux](search-cloud-based-mailboxes-for-on-premises-users.md).
+
+Vous devez effectuer une demande auprès du Support Microsoft pour autoriser votre organisation à utiliser l’interface utilisateur graphique dans le centre de conformité et sécurité pour rechercher des équipes dans les boîtes aux lettres en ligne des utilisateurs locaux.
+
+- **Messagerie Exchange**: les boîtes aux lettres hébergées sur Exchange Online dans le cadre de votre abonnement Microsoft 365 ou Office 365 sont toutes éligibles pour l’analyse des messages. Les messages électroniques et les pièces jointes Exchange correspondant à des conditions de stratégie de conformité de communication peuvent mettre jusqu’à 24 heures pour être traités. Les types de pièces jointes prises en charge pour la conformité des communications sont les mêmes que les [types de fichiers pris en charge pour les inspections du contenu des règles de flux de messagerie Exchange](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments#supported-file-types-for-mail-flow-rule-content-inspection).
 
 - **Yammer**: les messages privés, les conversations publiques et les pièces jointes associées dans les communautés Yammer peuvent être analysés. Lorsqu’un utilisateur est ajouté à la stratégie de conformité de communication qui inclut Yammer comme canal défini, les communications entre toutes les communautés Yammer dont l’utilisateur est membre sont incluses dans le processus d’analyse. Les conversations et les pièces jointes Yammer correspondant à des conditions de stratégie de conformité de communication peuvent prendre jusqu’à 24 heures pour être traitées. Yammer doit être en [mode natif](https://docs.microsoft.com/yammer/configure-your-yammer-network/overview-native-mode) pour les stratégies de conformité de communication afin de surveiller les communications et les pièces jointes Yammer. En mode natif, tous les utilisateurs de Yammer se trouvent dans Azure Active Directory (AAD), tous les groupes sont des Groupes Office 365 et tous les fichiers sont stockés dans SharePoint Online.
 
-- **Skype entreprise Online**: les communications de conversation et les pièces jointes associées dans Skype entreprise Online peuvent être surveillées. Les conversations Skype entreprise Online qui correspondent à des conditions de stratégie de conformité des communications peuvent prendre jusqu’à 24 heures pour être traitées. Les conversations de conversation surveillées proviennent de [conversations précédentes enregistrées dans Skype entreprise Online](https://support.office.com/article/Find-a-previous-Skype-for-Business-conversation-18892eba-5f18-4281-8c87-fd48bd72e6a2).  Utilisez la configuration de gestion de groupe suivante pour superviser les communications de conversation des utilisateurs dans Skype entreprise Online :
+- **Skype Entreprise Online** :Les communications de conversation et les pièces jointes associées dans Skype Entreprise Online peuvent être supervisées. Les conversations Skype Entreprise Online correspondant aux conditions de la stratégie de conformité des communications peuvent prendre jusqu’à 24 heures. Les conversations de conversation surveillées proviennent de [conversations précédentes enregistrées dans Skype entreprise Online](https://support.office.com/article/Find-a-previous-Skype-for-Business-conversation-18892eba-5f18-4281-8c87-fd48bd72e6a2).  Utilisez la configuration de gestion de groupe suivante pour superviser les communications de conversation des utilisateurs dans Skype entreprise Online :
 
-    - **Pour les communications de conversation de Skype entreprise Online**: affectez des utilisateurs individuels ou affectez un [groupe de distribution](https://support.office.com/article/Distribution-groups-E8BA58A8-FAB2-4AAF-8AA1-2A304052D2DE) à la stratégie de conformité des communications. Ce paramètre est destiné aux relations utilisateur/conversation un-à-un ou un-à-plusieurs.
+    - **Pour les communications de conversation de Skype entreprise Online**: affectez des utilisateurs individuels ou affectez un [groupe de distribution](https://support.office.com/article/Distribution-groups-E8BA58A8-FAB2-4AAF-8AA1-2A304052D2DE) à la stratégie de conformité des communications. Ce paramètre s'applique aux relations d'utilisateur/chat en tête à tête ou à plusieurs.
 
-- **Sources**tierces : vous pouvez analyser les communications à partir de sources tierces pour les données importées dans des boîtes aux lettres dans votre organisation Microsoft 365. Les connecteurs prennent en charge les ressources tierces suivantes :
+- **Sources tierces** : vous pouvez analyser les communications provenant de sources tierces pour les données importées dans les boîtes aux lettres de votre organisation Microsoft 365. Les connecteurs prennent en charge les ressources tierces suivantes :
 
     - [Instant Bloomberg](archive-instant-bloomberg-data.md)
     - [Facebook](archive-facebook-data-with-sample-connector.md)
@@ -97,9 +103,9 @@ Vous devez configurer un connecteur tiers pour votre organisation Microsoft 365 
 
 Les organisations qui utilisent des stratégies de surveillance dans Office 365 et qui envisagent de passer aux stratégies de conformité des communications dans Microsoft 365 doivent comprendre les points importants suivants :
 
-- Les deux solutions peuvent être utilisées côte à côte dans votre organisation, mais les stratégies utilisées dans chaque solution doivent avoir des noms de stratégie uniques. Les groupes et les dictionnaires de mots clés personnalisés peuvent être partagés entre les solutions pendant une période de transition.
+- Les deux solutions peuvent être utilisées côte à côte au sein de votre organisation, mais les stratégies utilisées dans chaque solution doivent avoir des noms de stratégie uniques. Les groupes et les dictionnaires de mots clés personnalisés peuvent être partagés entre les solutions pendant une période de transition.
 - Les messages enregistrés en supervision dans Office 365 les correspondances de stratégie ne peuvent pas être déplacés ou partagés dans la conformité de communication dans Microsoft 365.
-- La solution de supervision dans Office 365 sera entièrement remplacée par la solution de conformité de la communication dans Microsoft 365. Nous vous recommandons de créer de nouvelles stratégies dans la conformité de la communication avec les mêmes paramètres que les stratégies de surveillance existantes pour utiliser les améliorations apportées à l’enquête et aux corrections correctives. Lors de la transition vers la conformité de la communication dans Microsoft 365, vous devez planifier l’exportation des données de création de rapports à partir de la surveillance dans Office 365 si vous avez des exigences de stratégie de rétention de conformité internes.
+- La solution de supervision dans Office 365 sera entièrement remplacée par la solution de conformité de la communication dans Microsoft 365. Nous vous recommandons de créer de nouvelles stratégies dans la conformité de la communication avec les mêmes paramètres que les stratégies de surveillance existantes pour utiliser les améliorations apportées à l’enquête et aux corrections correctives. Lors de la transition vers la conformité des communications dans Microsoft 365, vous devez planifier l’exportation de données de rapport de supervision dans Office 365 si vous avez des exigences de stratégie de rétention de conformité internes.
 
 Pour plus d’informations sur la retraite de la surveillance dans Office 365, consultez la feuille de [route de Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap) pour plus de détails.
 
@@ -107,7 +113,7 @@ Pour plus d’informations sur la retraite de la surveillance dans Office 365, c
 
 ### <a name="users"></a>Utilisateurs
 
-Vous avez la possibilité de sélectionner **tous les utilisateurs** ou de définir des utilisateurs spécifiques dans une stratégie de conformité de communication. La sélection de **tous les utilisateurs** applique la stratégie à tous les utilisateurs et tous les groupes auxquels n’importe quel utilisateur est inclus en tant que membre. La définition d’utilisateurs spécifiques applique la stratégie aux utilisateurs définis et à tous les groupes auxquels les utilisateurs définis sont inclus.
+Vous avez la possibilité de sélectionner **tous les utilisateurs** ou de définir des utilisateurs spécifiques dans une stratégie de conformité de communication. La sélection de **Tous les utilisateurs** applique la stratégie à tous les utilisateurs et les groupes auxquels n’importe quel utilisateur est inclus en tant que membre. La définition d’utilisateurs spécifiques applique la stratégie aux utilisateurs définis et aux groupes auxquels les utilisateurs définis sont inclus.
 
 ### <a name="direction"></a>Direction
 
@@ -119,7 +125,7 @@ Par défaut, la **direction est** la condition est affichée et ne peut pas êtr
 
 ### <a name="sensitive-information-types"></a>Types d’informations sensibles
 
-Vous pouvez inclure des types d’informations sensibles dans le cadre de votre stratégie de conformité de communication. Les types d’informations sensibles sont des types de données prédéfinis ou personnalisés qui peuvent vous aider à identifier et à protéger les numéros de carte de crédit, les numéros de compte bancaire, les numéros de passeport, et bien plus encore. Dans le cadre de la [protection contre la perte de données (DLP)](data-loss-prevention-policies.md), la configuration des informations sensibles peut utiliser des modèles, la proximité des caractères, les niveaux de confiance et même les types de données personnalisés pour identifier et marquer le contenu susceptible d’être sensible. Les types d’informations sensibles par défaut sont les suivants :
+Vous pouvez inclure des types d’informations sensibles dans le cadre de votre stratégie de conformité de communication. Les types d’informations sensibles sont des types de données prédéfinis ou personnalisés qui peuvent vous aider à identifier et à protéger les numéros de carte de crédit, les numéros de compte bancaire, les numéros de passeport, et bien plus encore. Dans le cadre de [protection contre la perte de données (DLP)](data-loss-prevention-policies.md), la configuration des informations sensibles peut utiliser les modèles, la proximité des caractères, les niveaux de confiance, et même les types de données personnalisés pour vous aider à identifier et signaler le contenu sensible. Les types d’informations sensibles par défaut sont les suivants :
 
 - Financier
 - Médecine et santé
@@ -134,9 +140,9 @@ Configurez des dictionnaires de mots clés personnalisés (ou des lexiques) pour
 
 ### <a name="classifiers"></a>Classifieurs requêtes
 
-Les classifieurs intégrés analysent les messages envoyés ou reçus sur tous les canaux de communication de votre organisation en fonction de différents types de problèmes de conformité. Les classifieurs utilisent une combinaison d’intelligence artificielle et de mots clés pour identifier la langue dans les messages susceptibles de violer les stratégies anti-harcèlement. Les classifieurs intégrés prennent actuellement en charge uniquement les mots clés anglais dans les messages.
+Les classifieurs intégrés analysent les messages envoyés ou reçus sur tous les canaux de communication au sein de votre organisation afin de détecter différents types de problèmes de conformité. Les classifieurs utilisent une combinaison d'intelligence artificielle et de mots clés pour identifier le langage dans les messages susceptibles d'enfreindre les stratégies anti-harcèlement. Les classifieurs intégrés prennent actuellement en charge uniquement les mots clés anglais dans les messages.
 
-Conformité de la communication analysez les communications pour les termes et les sentiments pour les types de langages suivants :
+Les classificateurs intégrés de conformité des communications analysent les communications à la recherche de conditions et de sentiments pour les types de langue suivants :
 
 - **Menace**: analyse les menaces pour valider la violence ou nuire physiquement à une personne ou à une propriété.
 - **Harcèlement**: analyse les comportements offensants ciblant les personnes en matière de race, couleur, religion, origine nationale.
@@ -144,12 +150,12 @@ Conformité de la communication analysez les communications pour les termes et l
 
 Les classifieurs intégrés ne fournissent pas une liste exhaustive des termes dans ces domaines. De plus, les normes linguistiques et culturelles changent en permanence, et à la lumière de ces réalités, Microsoft se réserve le droit de mettre à jour les classifieurs à sa discrétion. Tandis que les classifieurs peuvent aider votre organisation à surveiller ces domaines, les classifieurs ne sont pas destinés à fournir les moyens uniques de surveillance ou d’adressage de cette langue pour votre organisation. Votre organisation, et non Microsoft, reste responsable de toutes les décisions liées à l’analyse et au blocage de la langue dans ces domaines.
 
-Pour plus d’informations sur les classifieurs dans Microsoft 365, reportez-vous à [Classifiers](classifier-getting-started-with.md).
+Pour plus d’informations sur les classifieurs dans Microsoft 365, consultez [Classifieurs](classifier-getting-started-with.md).
 
 ### <a name="conditional-settings"></a>Paramètres conditionnels
 <a name="ConditionalSettings"> </a>
 
-Les conditions que vous choisissez pour la stratégie s’appliquent aux communications à partir de la messagerie et des sources tierces de votre organisation (par exemple, Facebook ou DropBox).
+Les conditions que vous choisissez pour la stratégie s’appliquent aux communications provenant de la messagerie et des sources tierces de votre organisation (par rapport à Facebook ou DropBox).
 
 Le tableau suivant décrit plus en plus de chaque condition.
   
@@ -189,7 +195,7 @@ Si vous entrez plusieurs conditions, Microsoft 365 utilise toutes les conditions
 
 ### <a name="review-percentage"></a>Vérifier le pourcentage
 
-Si vous souhaitez réduire la quantité de contenu à réviser, vous pouvez spécifier un pourcentage de toutes les communications régies par une stratégie de conformité de communication. Un échantillon aléatoire de contenu en temps réel est sélectionné à partir du pourcentage total de contenu qui correspond aux conditions de stratégie choisies. Si vous souhaitez que les relecteurs examinent tous les éléments, vous pouvez configurer **100%** dans une stratégie de conformité de communication.
+Si vous souhaitez réduire la quantité de contenu à réviser, vous pouvez spécifier un pourcentage de toutes les communications régies par une stratégie de conformité de communication. Un échantillon aléatoire de contenu est sélectionné à partir du pourcentage total de contenu qui correspond aux conditions de stratégie choisies. Si vous souhaitez que les réviseurs examinent tous les éléments, vous pouvez configurer **100 %** dans une stratégie de conformité des communications.
 
 ## <a name="notices"></a>Constaté
 
@@ -293,7 +299,7 @@ Pour afficher les activités de stratégie de conformité de communication, sél
 |:-----|:-----|
 | **CreationDate** | Date à laquelle l’activité a été effectuée dans une stratégie. |
 | **UserIds** | Utilisateur qui a exécuté l’activité dans une stratégie. |
-| **Operations** | Les opérations effectuées sur la stratégie. |
+| **Opérations** | Les opérations effectuées sur la stratégie. |
 | **AuditData** | Ce champ est la source de données principale pour toutes les activités de stratégie. Toutes les activités sont enregistrées et séparées par des virgules. |
 
 Vous pouvez également afficher les activités d’audit dans le journal d’audit unifié ou avec l’applet de commande PowerShell [Search-UnifiedAuditLog](https://docs.microsoft.com/powershell/module/exchange/search-unifiedauditlog) .

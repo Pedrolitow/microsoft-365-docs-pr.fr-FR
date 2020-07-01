@@ -15,24 +15,24 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 5974f3c2-89fe-4c5f-ac7b-57f214437f7e
-description: 'Comprendre où afficher les résultats du processus d’analyse dans Advanced eDiscovery, y compris les définitions des options de tâche affichées.  '
-ms.openlocfilehash: 09bb682e753730a4c01581e71f05b5b8ef3d4779
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: Comprendre où afficher les résultats du processus d’analyse dans Advanced eDiscovery, y compris les définitions des options de tâche affichées.
+ms.openlocfilehash: 24a4b0685ec5dc82aff0b1f0de81080a62e49776
+ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43626360"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "44936947"
 ---
 # <a name="view-analyze-results-in-advanced-ediscovery-classic"></a>Afficher les résultats de l’analyse dans Advanced eDiscovery (classique)
 
 > [!NOTE]
-> Pour utiliser Advanced eDiscovery, votre organisation doit souscrire un abonnement Office 365 E3 avec le module complémentaire Conformité avancée ou un abonnement E5. Si vous ne disposez pas d’un abonnement et que vous souhaitez essayer Advanced eDiscovery, vous pouvez vous [inscrire pour utiliser une version d’évaluation d’Office 365 Entreprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
+> Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
 Dans Advanced eDiscovery, la progression et les résultats du processus d’analyse peuvent être affichés dans un grand nombre d’écrans, comme décrit ci-dessous.
   
 ## <a name="view-analyze-task-status"></a>Afficher l’état de la tâche d’analyse
 
-Dans **préparer \> l' \> analyse \> des résultats**de la tâche, l’État est affiché pendant et après l’exécution de l’analyse. 
+Dans **préparer l’analyse des résultats de la \> \> \> tâche**, l’État est affiché pendant et après l’exécution de l’analyse. 
   
 ![Analyser l’état des tâches](../media/d0372978-ce08-4f4e-a1fc-aa918ae44364.png)
   
@@ -77,7 +77,7 @@ Les résultats des **pièces jointes** affichent le nombre de pièces jointes, e
   
 ## <a name="see-also"></a>Voir aussi
 
-[Advanced eDiscovery (classique)](office-365-advanced-ediscovery.md)
+[Advanced eDiscovery (classique)](office-365-advanced-ediscovery.md)
   
 [Présentation de la similarité des documents](understand-document-similarity-in-advanced-ediscovery.md)
   

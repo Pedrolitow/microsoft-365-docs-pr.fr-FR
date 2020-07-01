@@ -15,18 +15,18 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 8576cc86-d51b-4285-b54b-67184714cc62
-description: 'Découvrez les étapes à suivre pour marquer, puis utiliser un exemple de formation de 40 fichiers pendant la phase de formation pertinente de la découverte électronique avancée.  '
-ms.openlocfilehash: 8d03061401cab2014d33e9e3238af42a4d01738a
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: Découvrez les étapes à suivre pour marquer, puis utiliser un exemple de formation de 40 fichiers pendant la phase de formation pertinente de la découverte électronique avancée.
+ms.openlocfilehash: 56ce30754e04d4a2adcf854093e603f93be5ae36
+ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636262"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "44936670"
 ---
 # <a name="tagging-and-relevance-training-in-advanced-ediscovery-classic"></a>Étiquetage et formation à la pertinence dans Advanced eDiscovery (classique)
 
 > [!NOTE]
-> Pour utiliser Advanced eDiscovery, votre organisation doit souscrire un abonnement Office 365 E3 avec le module complémentaire Conformité avancée ou un abonnement E5. Si vous ne disposez pas d’un abonnement et que vous souhaitez essayer Advanced eDiscovery, vous pouvez vous [inscrire pour utiliser une version d’évaluation d’Office 365 Entreprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
+> Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
 Cette rubrique décrit la procédure à suivre pour utiliser le module de formation avancé de la pertinence eDiscovery. 
   
@@ -76,7 +76,7 @@ Une fois l’évaluation terminée dans Advanced eDiscovery et que vous entrez l
     
 ## <a name="working-with-the-sample-files-list"></a>Utilisation de la liste des exemples de fichiers
 
-La liste exemple de fichiers vous permet d’afficher la liste des fichiers dans un exemple de formation et d’effectuer diverses actions sur un ou plusieurs fichiers. Dans l’onglet de la **balise** de **pertinence** \> , le volet de gauche **fichiers d’exemple** affiche une liste d’exemples de fichiers à traiter avec les processus d’évaluation, de formation, de rattrapage et d’incohérence. 
+La liste exemple de fichiers vous permet d’afficher la liste des fichiers dans un exemple de formation et d’effectuer diverses actions sur un ou plusieurs fichiers. Dans l' **Relevance** onglet de la \> **balise** de pertinence, le volet de gauche **fichiers d’exemple** affiche une liste d’exemples de fichiers à traiter avec les processus d’évaluation, de formation, de rattrapage et d’incohérence. 
   
 1. Dans l' **onglet \> balise de pertinence** , sélectionnez les fichiers de l’exemple dans la liste déroulante du volet de gauche. Les fichiers de l’exemple sont répertoriés dans le volet de gauche. 
     
@@ -100,7 +100,7 @@ La liste exemple de fichiers vous permet d’afficher la liste des fichiers dans
     
 ## <a name="see-also"></a>Voir aussi
 
-[Advanced eDiscovery (classique)](office-365-advanced-ediscovery.md)
+[Advanced eDiscovery (classique)](office-365-advanced-ediscovery.md)
   
 [Présentation de l’évaluation en matière de pertinence](assessment-in-relevance-in-advanced-ediscovery.md)
   

@@ -15,18 +15,18 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 3ab1e2c3-28cf-4bf5-b0a8-c0222f32bdf5
-description: 'Découvrez comment afficher et interpréter la pertinence de l’état de formation et les résultats des problèmes de cas dans Advanced eDiscovery.  '
-ms.openlocfilehash: 7cf75607743ce752f8b23e286afc4681a1798a1f
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: Découvrez comment afficher et interpréter la pertinence de l’état de formation et les résultats des problèmes de cas dans Advanced eDiscovery.
+ms.openlocfilehash: bf1fe2fc6c0f3ff80fd7e53d55149a61009e2b32
+ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636617"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "44936217"
 ---
 # <a name="track-relevance-analysis-in-advanced-ediscovery-classic"></a>Suivi de l’analyse de pertinence dans Advanced eDiscovery (classique)
 
 > [!NOTE]
-> Pour utiliser Advanced eDiscovery, votre organisation doit souscrire un abonnement Office 365 E3 avec le module complémentaire Conformité avancée ou un abonnement E5. Si vous ne disposez pas d’un abonnement et que vous souhaitez essayer Advanced eDiscovery, vous pouvez vous [inscrire pour utiliser une version d’évaluation d’Office 365 Entreprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
+> Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
 Dans Advanced eDiscovery, l’onglet suivi de pertinence affiche la validité calculée de la formation à la pertinence effectuée dans l’onglet balise et indique l’étape suivante à effectuer dans le processus de formation itérative en matière de pertinence. 
   
@@ -53,7 +53,7 @@ Dans Advanced eDiscovery, l’onglet suivi de pertinence affiche la validité ca
   
     Lorsque l’évaluation n’est pas effectuée avec le premier ensemble de fichiers, l’évaluation peut être la prochaine étape de marquage de fichiers supplémentaires. 
     
-    Dans le **suivi**de **pertinence** \> , l’indicateur de progression de formation et le Conseil d’outils indiquent le nombre estimé d’échantillons supplémentaires nécessaires pour atteindre la stabilité. Cette estimation fournit une indication pour la formation supplémentaire requise.
+    Dans **Relevance** \> le **suivi**de pertinence, l’indicateur de progression de formation et le Conseil d’outils indiquent le nombre estimé d’échantillons supplémentaires nécessaires pour atteindre la stabilité. Cette estimation fournit une indication pour la formation supplémentaire requise.
     
     ![Formation de suivi de pertinence](../media/98dbc3f5-5238-4d73-9f88-1aa4d77ea729.png)
   
@@ -84,9 +84,9 @@ Si vous souhaitez importer de nouveaux fichiers après le calcul par lot, l’ad
 S’il existe des incohérences dans le balisage de fichier, cela peut avoir une incidence sur l’analyse. Le processus avancé de cohérence des balises eDiscovery peut être utilisé lorsque les résultats ne sont pas optimaux ou si la cohérence est incertaine. Une liste de fichiers susceptibles d’être balisés de manière incohérente est renvoyée et peuvent être révisées et ré-balisage, si nécessaire.
   
 > [!NOTE]
-> Après **l’évaluation** \> de sept ou plusieurs arrondis de formation, la cohérence du marquage peut être affichée **Issue** \> dans la **formation**sur **le suivi** \> des \> **résultats détaillés** . Cette révision est réalisée pour un problème à la fois. 
+> Après **l’évaluation** de sept ou plusieurs arrondis de formation, la cohérence du marquage peut être affichée dans la formation sur \> **le suivi** des \> **Issue** \> **résultats détaillés** \> **Training progress**. Cette révision est réalisée pour un problème à la fois. 
   
-1. Dans **le \> suivi de pertinence**, développez la ligne d’un problème.
+1. Dans ** \> le suivi de pertinence**, développez la ligne d’un problème.
     
 2. À droite de l' **étape suivante**, cliquez sur **modifier**.
     
@@ -108,7 +108,7 @@ Dans l' **onglet \> suivi de pertinence** , développez la ligne d’un problèm
   
 ![Résumé du marquage du suivi de pertinence](../media/0ec906fc-bc84-4245-a964-fb3ca37891db.png)
   
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 Un mot clé est une chaîne, un mot, une phrase ou une séquence de mots unique identifiée par Advanced eDiscovery comme un indicateur significatif de la pertinence d’un fichier. Le mot clé de liste de colonnes « include » et les pondérations dans les fichiers marqués comme pertinents et les colonnes « Exclude » répertorient les mots clés et les pondérations dans les fichiers marqués comme non pertinents.
   
@@ -172,7 +172,7 @@ Cet affichage montre les éléments suivants :
     
 ## <a name="see-also"></a>Voir aussi
 
-[Advanced eDiscovery (classique)](office-365-advanced-ediscovery.md)
+[Advanced eDiscovery (classique)](office-365-advanced-ediscovery.md)
   
 [Présentation de l’évaluation en matière de pertinence](assessment-in-relevance-in-advanced-ediscovery.md)
   

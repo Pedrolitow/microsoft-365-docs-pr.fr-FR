@@ -15,18 +15,18 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: b5c82de7-ed2f-4cc6-becd-db403faf4d18
-description: 'Examinez les étapes pour effectuer une formation à l’évaluation, notamment des fichiers de marquage, et en examinant les résultats de l’évaluation dans Advanced eDiscovery. '
-ms.openlocfilehash: ef09268da8f76a4775fa6209a11d9c670abe0f94
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: Examinez les étapes pour effectuer une formation à l’évaluation, notamment des fichiers de marquage, et en examinant les résultats de l’évaluation dans Advanced eDiscovery.
+ms.openlocfilehash: 57e4e8da0dbeec5e1dba384ae0e62ffb6b3bb03a
+ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43630691"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "44936691"
 ---
 # <a name="tagging-and-assessment-in-advanced-ediscovery-classic"></a>Balisage et évaluation dans Advanced eDiscovery (classique)
 
 > [!NOTE]
-> Pour utiliser Advanced eDiscovery, votre organisation doit souscrire un abonnement Office 365 E3 avec le module complémentaire Conformité avancée ou un abonnement E5. Si vous ne disposez pas d’un abonnement et que vous souhaitez essayer Advanced eDiscovery, vous pouvez vous [inscrire pour utiliser une version d’évaluation d’Office 365 Entreprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
+> Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
 Cette section décrit la procédure pour le module d’évaluation de la pertinence eDiscovery avancée. 
   
@@ -125,7 +125,7 @@ En l’absence de stabilisation statistiquement basée statistiquement, les rés
   
 ## <a name="see-also"></a>Voir aussi
 
-[Advanced eDiscovery (classique)](office-365-advanced-ediscovery.md)
+[Advanced eDiscovery (classique)](office-365-advanced-ediscovery.md)
   
 [Présentation de l’évaluation en matière de pertinence](assessment-in-relevance-in-advanced-ediscovery.md)
   

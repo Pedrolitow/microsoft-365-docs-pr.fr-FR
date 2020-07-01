@@ -15,24 +15,24 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: c6f016cb-409f-4ae9-911c-1395cf0c86ea
-description: 'Découvrez comment trouver les résultats d’un module de processus exécuté dans Advanced eDiscovery, y compris l’état de la tâche et le résumé des processus.  '
-ms.openlocfilehash: b7b88ed291236330c87c96d24fa6f1c22fb3d773
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: Découvrez comment trouver les résultats d’un module de processus exécuté dans Advanced eDiscovery, y compris l’état de la tâche et le résumé des processus.
+ms.openlocfilehash: 26ef87c762fc5c77f2374978bf4a425940dd5f37
+ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43626310"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "44936167"
 ---
 # <a name="view-process-module-results-in-advanced-ediscovery-classic"></a>Afficher les résultats du module de processus dans Advanced eDiscovery (classique)
 
-Une fois le **processus** de **préparation** \> initié, vous pouvez afficher l’avancement et les résultats. 
+Une **Prepare** fois le \> **processus** de préparation initié, vous pouvez afficher l’avancement et les résultats. 
   
 > [!NOTE]
-> Pour utiliser Advanced eDiscovery, votre organisation doit souscrire un abonnement Office 365 E3 avec le module complémentaire Conformité avancée ou un abonnement E5. Si vous ne disposez pas d’un abonnement et que vous souhaitez essayer Advanced eDiscovery, vous pouvez vous [inscrire pour utiliser une version d’évaluation d’Office 365 Entreprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
+> Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
 ## <a name="process-task-status"></a>État de tâche de processus
 
-Dans **préparer** \> les **résultats**du **processus** \> , la page affiche l’état actuel (si le processus est en cours d’exécution) ou l’état de la dernière tâche d’État du processus, comme illustré dans l’exemple suivant.
+Dans **préparer** les \> **Process** \> **résultats**du processus, la page affiche l’état actuel (si le processus est en cours d’exécution) ou l’état de la dernière tâche d’État du processus, comme illustré dans l’exemple suivant.
   
 ![État de tâche du module de processus](../media/9430f9e7-a4dd-47c7-ac2e-2c6a60fc948b.png)
   
@@ -64,7 +64,7 @@ Les tâches affichées peuvent varier en fonction des options de processus séle
   
 ## <a name="process-summary"></a>Résumé du processus
 
-Dans la \> synthèse \> du \> processus de préparation des résultats du processus, une répartition des résultats des fichiers chargés est affichée en fonction du traitement réussi des fichiers et des résultats de l’erreur.
+Dans \> \> \> la synthèse du processus de préparation des résultats du processus, une répartition des résultats des fichiers chargés est affichée en fonction du traitement réussi des fichiers et des résultats de l’erreur.
   
 Les volets présentent un affichage graphique des statistiques sur les fichiers importés, comme suit :
   
@@ -104,13 +104,13 @@ La barre de droite, traitée, inclut les éléments suivants :
     
 ## <a name="last-process-errors"></a>Erreurs du dernier processus
 
-Dans \> prepare \> process \> Results Last process Errors, les détails des erreurs de la dernière session ou action effectuée sont affichés.
+Dans prepare \> process \> results \> Last process Errors, les détails des erreurs de la dernière session ou action effectuée sont affichés.
   
 ![Erreurs de module de processus](../media/4771d0f4-4217-445a-9ba4-8b6541c5ad09.png)
   
 ## <a name="see-also"></a>Voir aussi
 
-[Advanced eDiscovery (classique)](office-365-advanced-ediscovery.md)
+[Advanced eDiscovery (classique)](office-365-advanced-ediscovery.md)
   
 [Exécution du module de processus et chargement des données](run-the-process-module-and-load-data-in-advanced-ediscovery.md)
 

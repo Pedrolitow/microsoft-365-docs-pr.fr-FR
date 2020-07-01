@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 description: Tout comme les fonctionnalités du centre de conformité Microsoft 365, notre contenu d’aide est toujours évolutif. Découvrez les nouveautés et mises à jour ce mois-ci.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 3bba8d0bbd68c6d28d72bcf32abdc798d7125250
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: b3305a2d6fe2d25730b6d39891723675e7243f50
+ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44818964"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "44936147"
 ---
 # <a name="recent-updates-to-microsoft-365-compliance-content"></a>Mises à jour récentes du contenu de conformité Microsoft 365
 
@@ -112,7 +112,7 @@ Toutes les rubriques sur le [score de conformité](compliance-score.md) et le [G
 [Utiliser des étiquettes de confidentialité pour protéger le contenu de Microsoft Teams, des groupes microsoft 365 et des sites SharePoint](sensitivity-labels-teams-groups-sites.md) (préversion publique) (mise à jour)<br>Les modifications sont les suivantes :
 
 - Suppression des instructions Azure AD et liaison avec les [informations de référence Azure ad](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-assign-sensitivity-labels).
-- Mise à jour de la section [procédure de configuration des paramètres de site et de groupe lors de la création ou de la modification des étiquettes](sensitivity-labels-teams-groups-sites.md#how-to-configure-site-and-group-settings-when-you-create-or-edit-sensitivity-labels) de confidentialité avec des informations sur la **confidentialité du paramètre sites teams connectés à un groupe Office 365** , qui inclut l’option **aucun** .
+- Mise à jour de la section [procédure de configuration des paramètres de site et de groupe](sensitivity-labels-teams-groups-sites.md#how-to-configure-site-and-group-settings) avec des informations sur la **confidentialité du paramètre sites teams connectés à un groupe Office 365** , qui inclut l’option **aucun** .
 - Ajout d’une note décrivant la façon dont seules les étiquettes avec des paramètres de site et de groupe seront disponibles pour sélection lorsque les utilisateurs créent des équipes, des groupes et des sites. Cette fonctionnalité est progressivement déployée dans les organisations.
 
 [Restreindre l’accès au contenu à l’aide des étiquettes de confidentialité pour appliquer le chiffrement](encryption-sensitivity-labels.md) (mis à jour)<br>[Nouvelle section](encryption-sensitivity-labels.md#example-configurations-for-the-encryption-settings) avec des exemples de paramètres de chiffrement pour certaines des configurations les plus couramment utilisées pour protéger des documents et des courriers électroniques.
@@ -133,7 +133,7 @@ Toutes les rubriques sur le [score de conformité](compliance-score.md) et le [G
 - [Nouvelle section](sensitivity-labels-office-apps.md#office-built-in-labeling-client-and-other-labeling-solutions) expliquant comment vous pouvez utiliser le paramètre de stratégie de groupe pour désactiver les étiquettes prédéfinies si vous utilisez actuellement d’autres solutions d’étiquetage que vous souhaitez continuer à utiliser pour vos ordinateurs Windows. 
 - Mise à jour de la section Options de gestion des droits relatifs à l' [information (IRM) et des étiquettes de confidentialité](sensitivity-labels-office-apps.md#information-rights-management-irm-options-and-sensitivity-labels) avec la recommandation pour utiliser des étiquettes qui appliquent le chiffrement plutôt que les options IRM, avec une explication des conséquences potentielles lorsque les deux solutions de protection sont mélangées.
 
-### <a name="trainable-classifiers"></a>Classifieurs de formation
+### <a name="trainable-classifiers"></a>Classifieurs entraînables
 
 [Prise en main des classifieurs de formation (](classifier-getting-started-with.md) préversion) (mise à jour)<br>Ajout d’informations sur la façon dont le modèle de langage offensant est déconseillé. Ajout d’un tableau répertoriant les 25 premiers langages de code utilisés dans le classificateur intégré de code source.
 

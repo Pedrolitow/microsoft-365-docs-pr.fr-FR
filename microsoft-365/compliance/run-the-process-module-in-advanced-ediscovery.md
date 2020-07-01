@@ -15,20 +15,20 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: dbc1e251-0596-443b-ac9b-f398ba955b73
-description: 'Découvrez les instructions relatives à la préparation de fichiers de cas de données pour analyse avec Advanced eDiscovery.  '
-ms.openlocfilehash: c0c0b8c3477f8c3fdbe0437659a88f14fbcad1cd
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: Découvrez les instructions relatives à la préparation de fichiers de cas de données pour analyse avec Advanced eDiscovery.
+ms.openlocfilehash: 5130bea7da8922fd7e98d07696ffde3930d2ce41
+ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43626460"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "44936197"
 ---
 # <a name="run-the-process-module-in-advanced-ediscovery-classic"></a>Exécuter le module de processus dans Advanced eDiscovery (classique)
 
-Les fichiers case sont chargés dans la découverte électronique avancée lors de la **préparation** \> **.** 
+Les fichiers case sont chargés dans la découverte électronique avancée lors de la **préparation** \> **Process**. 
   
 > [!NOTE]
-> Pour utiliser Advanced eDiscovery, votre organisation doit souscrire un abonnement Office 365 E3 avec le module complémentaire Conformité avancée ou un abonnement E5. Si vous ne disposez pas d’un abonnement et que vous souhaitez essayer Advanced eDiscovery, vous pouvez vous [inscrire pour utiliser une version d’évaluation d’Office 365 Entreprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
+> Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
 ## <a name="guidelines-preparing-data-for-advanced-ediscovery"></a>Recommandations : préparation des données pour Advanced eDiscovery
 
@@ -42,7 +42,7 @@ Les fichiers case sont chargés dans la découverte électronique avancée lors 
     
 - **Nom et type de fichier**:
     
-  - Advanced eDiscovery peut traiter des fichiers de différents formats et extraire les fichiers natifs chargés dans un format standard \*, comme. TXT, HTML ou. Langage. Le traitement des fichiers texte est plus rapide que les fichiers natifs. Les fichiers texte extraits sont stockés dans le dossier case.
+  - Advanced eDiscovery peut traiter des fichiers de différents formats et extraire les fichiers natifs chargés dans un format standard, comme \* . TXT, HTML ou. Langage. Le traitement des fichiers texte est plus rapide que les fichiers natifs. Les fichiers texte extraits sont stockés dans le dossier case.
     
   - Ne chargez pas les fichiers qui ne peuvent pas être extraits, tels que les fichiers système ou les images graphiques. Ces fichiers peuvent retarder le traitement.
     
@@ -74,7 +74,7 @@ Une étiquette définie par l’utilisateur peut être associée à un ensemble 
   
 ## <a name="see-also"></a>Voir aussi
 
-[Advanced eDiscovery (classique)](office-365-advanced-ediscovery.md)
+[Advanced eDiscovery (classique)](office-365-advanced-ediscovery.md)
   
 [Exécution du module de processus et chargement des données](run-the-process-module-and-load-data-in-advanced-ediscovery.md)
   

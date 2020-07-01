@@ -14,14 +14,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 60ffd80b-4376-419d-b6e4-a72029b9907c
-description: 'Découvrez comment configurer des rôles d’utilisateur, créer des cas et affecter des utilisateurs à des cas dans Advanced eDiscovery.  '
+description: Découvrez comment configurer des rôles d’utilisateur, créer des cas et affecter des utilisateurs à des cas dans Advanced eDiscovery.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6cfc8e313816c0c01512dd0d4b71f1dbbd6e6505
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 8e24354960b517815bef3cf498822d6ce9fd9dbe
+ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44819174"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "44936741"
 ---
 # <a name="set-up-users-and-cases-in-advanced-ediscovery-classic"></a>Configurer des utilisateurs et des cas dans Advanced eDiscovery (classique)
 
@@ -36,7 +36,7 @@ Avant de configurer des cas et des utilisateurs dans Advanced eDiscovery, les é
   
 - Pour analyser les données d’un utilisateur à l’aide de Advanced eDiscovery, l’utilisateur (le dépositaire des données) doit disposer d’une licence Office 365 E5. Par ailleurs, les utilisateurs disposant d’une licence Office 365 E1 ou E3 peuvent se voir attribuer une licence avancée eDiscovery autonome. Les administrateurs et les responsables de la mise en conformité qui sont affectés à des cas et utilisent Advanced eDiscovery pour analyser les données n’ont pas besoin d’une licence E5. 
     
-- Vous devez être membre du groupe de rôles gestionnaire eDiscovery dans le centre de sécurité &amp; conformité pour créer un cas eDiscovery et y ajouter des membres. Pour vous ajouter au groupe de rôles gestionnaire de découverte électronique dans le centre de sécurité &amp; conformité, vous devez être un administrateur général de votre organisation. Si vous n’êtes pas un administrateur général, vous devrez demander à un administrateur général de vous ajouter au groupe de rôles gestionnaire de découverte électronique. Pour plus d’informations, reportez-vous aux rubriques suivantes :
+- Vous devez être membre du groupe de rôles gestionnaire eDiscovery dans le centre de sécurité &amp; conformité pour créer un cas eDiscovery et y ajouter des membres. Pour vous ajouter au groupe de rôles gestionnaire de découverte électronique dans le centre de sécurité &amp; conformité, vous devez être un administrateur général de votre organisation. Si vous n’êtes pas un administrateur général, vous devrez demander à un administrateur général de vous ajouter au groupe de rôles gestionnaire de découverte électronique. Pour plus d’informations, voir :
     
   - [Autorisations dans le centre de sécurité &amp; conformité Microsoft 365](~/security/office-365-security/protect-against-threats.md)
     

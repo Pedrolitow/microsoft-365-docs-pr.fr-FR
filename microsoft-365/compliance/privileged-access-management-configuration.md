@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: ''
 description: Utilisez cet article pour en savoir plus sur l’activation et la configuration de la gestion des accès privilégiés dans Office 365.
-ms.openlocfilehash: cbb38c2edff0c85e24855e3f6a1613ad8a92043e
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 4bae6d311b3447534165ee803d7094e5797a9b1c
+ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44036419"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "44936319"
 ---
 # <a name="get-started-with-privileged-access-management"></a>Prise en main de la gestion des accès privilégiés
 
@@ -56,21 +56,21 @@ Procédez comme suit pour configurer et utiliser l’accès privilégié dans vo
 
 - [Étape 1 : créer un groupe d’approbateurs](privileged-access-management-configuration.md#step1)
 
-    Avant de commencer à utiliser l’accès par privilège, déterminez qui a besoin de l’autorité d’approbation pour les demandes entrantes d’accès à des tâches élevées et privilégiées. Tout utilisateur qui fait partie du groupe approbateurs est en mesure d’approuver les demandes d’accès. Ce groupe est activé par la création d’un groupe de sécurité à extension messagerie dans Office 365.
+    Avant de commencer à utiliser l’accès privilégié, déterminez qui a besoin de l’autorité d’approbation pour les demandes entrantes permettant d’accéder à des tâches avec élévation de privilèges. Tout utilisateur faisant partie du groupe d’approbateurs peut approuver les demandes d’accès. Ce groupe est activé par la création d’un groupe de sécurité à extension messagerie dans Office 365.
 
 - [Étape 2 : activer l’accès privilégié](privileged-access-management-configuration.md#step2)
 
-    L’accès privilégié doit être explicitement activé dans Office 365 avec le groupe d’approbateurs par défaut, y compris un ensemble de comptes système que vous souhaitez exclure du contrôle d’accès gestion des accès privilégiés.
+    Les accès privilégiés doivent être activés de manière explicite dans Office 365 avec le groupe d’approbateurs par défaut, y compris un ensemble de comptes système que vous souhaitez exclure du contrôle d’accès par gestion des accès privilégiés.
 
 - [Étape 3 : créer une stratégie d’accès](privileged-access-management-configuration.md#step3)
 
-    La création d’une stratégie d’approbation vous permet de définir les exigences d’approbation spécifiques au niveau des tâches individuelles. Les options type d’approbation sont **automatique** ou **Manuel**.
+    La création d’une stratégie d’approbation vous permet de définir les exigences d’approbation spécifiques d’une tâche spécifique. Les options type d’approbation sont **Automatiques** ou **Manuelles**.
 
 - [Étape 4 : soumettre/approuver des demandes d’accès privilégié](privileged-access-management-configuration.md#step4)
 
-    Une fois activé, l’accès privilégié nécessite des approbations pour toutes les tâches auxquelles une stratégie d’approbation associée est définie. Pour les tâches comprises dans une stratégie d’approbation, les utilisateurs doivent demander une approbation d’accès et leur accorder les autorisations nécessaires pour exécuter la tâche.
+    Une fois activé, l’accès privilégié nécessite des approbations pour toutes les tâches auxquelles une stratégie d’approbation associée est définie. Pour les tâches incluses dans une stratégie d’approbation, les utilisateurs doivent demander et se voir autoriser d’accès afin d’obtenir les autorisations nécessaires pour exécuter la tâche.
 
-Une fois que l’approbation est accordée, l’utilisateur qui a effectué la demande peut exécuter la tâche prévue et l’accès privilégié autorise et exécute la tâche au nom de l’utilisateur. L’approbation reste valide pour la durée demandée (la durée par défaut est de 4 heures), pendant laquelle le demandeur peut exécuter la tâche prévue plusieurs fois. Toutes les exécutions de ce type sont enregistrées et mises à disposition pour l’audit de sécurité et de conformité. 
+Une fois l’approbation accordée, l’utilisateur demandeur peut exécuter la tâche prévue et l’accès privilégié autorise et exécute la tâche au nom de l’utilisateur. L’approbation reste valide pendant la durée demandée (la durée par défaut est de 4 heures), période durant laquelle le demandeur peut effectuer la tâche prévue plusieurs fois. Toutes ces réalisations sont enregistrées et mises à disposition pour l’audit sur la sécurité et la conformité. 
 
 >[!NOTE]
 >Si vous souhaitez utiliser Exchange Management PowerShell pour activer et configurer l’accès privilégié, suivez les étapes de la [page connexion à Exchange Online PowerShell à l’aide de l’authentification multifacteur](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/mfa-connect-to-exchange-online-powershell?view=exchange-ps) pour vous connecter à Exchange Online PowerShell avec vos informations d’identification Office 365. Vous n’avez pas besoin d’activer l’authentification multifacteur pour votre organisation afin d’utiliser les étapes d’activation de l’accès privilégié lors de la connexion à Exchange Online PowerShell. La connexion avec l’authentification multifacteur crée un jeton OAuth qui est utilisé par un accès privilégié pour signer vos demandes.
@@ -81,11 +81,11 @@ Une fois que l’approbation est accordée, l’utilisateur qui a effectué la d
 
 1. Connectez-vous au [Centre d’administration Microsoft 365](https://admin.microsoft.com) à l’aide des informations d’identification d’un compte d’administrateur de votre organisation.
 
-2. Dans le centre d’administration, accédez à **groupes** > **Ajouter un groupe**.
+2. Dans le centre d’administration, accédez à **groupes**  >  **Ajouter un groupe**.
 
 3. Sélectionnez **groupe de sécurité à extension messagerie** , puis renseignez les champs **nom**, **adresse de messagerie du groupe**et **Description** pour le nouveau groupe.
 
-4. Enregistrez le groupe. La configuration complète du groupe peut prendre quelques minutes et s’afficher dans le centre d’administration Microsoft 365.
+4. Enregistrez le groupe.  La configuration totale du groupe peut prendre quelques minutes et s’affiche dans le Centre d’administration Microsoft 365.
 
 5. Sélectionnez le nouveau groupe approbateur et sélectionnez **modifier** pour ajouter des utilisateurs au groupe.
 
@@ -99,7 +99,7 @@ Une fois que l’approbation est accordée, l’utilisateur qui a effectué la d
 
 1. Connectez-vous au [Centre d’administration Microsoft 365](https://admin.microsoft.com) à l’aide des informations d’identification d’un compte d’administrateur de votre organisation.
 
-2. Dans le centre d’administration, accédez à **paramètres > paramètres > sécurité & confidentialité** > des**accès privilégiés**.
+2. Dans le centre d’administration, accédez à **paramètres**  >  **Organisation des paramètres d’organisation**  >  **sécurité & confidentialité**des  >  **accès privilégiés**.
 
 3. Activez le contrôle **exiger des approbations pour les tâches privilégiées** .
 
@@ -134,7 +134,7 @@ Vous pouvez créer et configurer jusqu’à 30 stratégies d’accès privilégi
 
 1. Connectez-vous au [Centre d’administration Microsoft 365](https://admin.microsoft.com) à l’aide des informations d’identification d’un compte d’administrateur de votre organisation.
 
-2. Dans le centre d’administration, accédez à **paramètres** > **Security & Privacy** > **Privileged Access**.
+2. Dans le centre d’administration, accédez à **paramètres**  >  **Organisation des paramètres d’organisation**  >  **sécurité & confidentialité**des  >  **accès privilégiés**.
 
 3. Sélectionnez **gérer les stratégies d’accès et les demandes**.
 
@@ -142,15 +142,15 @@ Vous pouvez créer et configurer jusqu’à 30 stratégies d’accès privilégi
 
 5. Dans les champs de liste déroulante, sélectionnez les valeurs appropriées pour votre organisation :
     
-    **Type de stratégie**: tâche, rôle ou groupe de rôles
+    **Type de stratégie** : tâche, rôle ou groupe de rôles
 
-    **Étendue de stratégie**: Exchange
+    **Étendue de la stratégie** : Exchange
 
-    **Nom**de la stratégie : sélectionnez parmi les stratégies disponibles.
+    **Nom de la stratégie** : sélection parmi les stratégies disponibles
 
-    **Type d’approbation**: manuelle ou automatique
+    **Type d’approbation** : manuel ou automatique
 
-    **Groupe d’approbation**: sélectionnez le groupe approbateurs créé à l’étape 1
+    **Groupe d’approbation** : sélection du groupe d’approbateurs créé à l’Étape 1.
 
 6. Sélectionnez **créer** , puis **Fermer**. La configuration et l’activation de la stratégie peuvent prendre quelques minutes.
 
@@ -172,27 +172,27 @@ New-ElevatedAccessApprovalPolicy -Task 'Exchange\New-MoveRequest' -ApprovalType 
 
 ## <a name="step-4-submitapprove-privileged-access-requests"></a>Étape 4 : soumettre/approuver des demandes d’accès privilégié
 
-### <a name="requesting-elevation-authorization-to-execute-privileged-tasks"></a>Demande d’une autorisation d’élévation pour exécuter des tâches privilégiées
+### <a name="requesting-elevation-authorization-to-execute-privileged-tasks"></a>Demander une autorisation d’élévation pour l’exécution de tâches privilégiées
 
-Les demandes d’accès privilégié sont valides jusqu’à 24 heures après l’envoi de la demande. Si elles ne sont pas approuvées ou refusées, les demandes expirent et l’accès n’est pas approuvé.
+Les demandes d’accès privilégié sont valables pendant 24 heures après l’envoi de la demande. En cas de rejet ou de refus, les demandes expirent et l’accès n’est pas approuvé.
 
 #### <a name="in-the-microsoft-365-admin-center"></a>Dans le centre d’administration Microsoft 365
 
 1. Connectez-vous au [Centre d’administration Microsoft 365](https://admin.microsoft.com) à l’aide de vos informations d’identification.
 
-2. Dans le centre d’administration, accédez à **paramètres** > **Security & Privacy** > **Privileged Access**.
+2. Dans le centre d’administration, accédez à **paramètres**  >  **Organisation des paramètres d’organisation**  >  **sécurité & confidentialité**des  >  **accès privilégiés**.
 
 3. Sélectionnez **gérer les stratégies d’accès et les demandes**.
 
 4. Sélectionnez **nouvelle demande**. Dans les champs de liste déroulante, sélectionnez les valeurs appropriées pour votre organisation :
 
-    **Type de demande**: tâche, rôle ou groupe de rôles
+    **Type de demande** : tâche, rôle ou groupe de rôles
 
-    **Étendue**de la demande : Exchange
+    **Étendue de la demande** : Exchange
 
-    **Demande**: sélectionnez parmi les stratégies disponibles.
+    **Demande pour** : sélection parmi les stratégies disponibles
 
-    **Durée (heures)**: nombre d’heures d’accès demandé. Il n’y a pas de limite sur le nombre d’heures qui peuvent être demandées.
+    **Durée (heures)**  : nombre d’heures d’accès demandé. Il n’y a pas de limite sur le nombre d’heures qui peuvent être demandées.
 
     **Commentaires**: champ de texte pour les commentaires liés à votre demande d’accès
 
@@ -212,15 +212,15 @@ Exemple :
 New-ElevatedAccessRequest -Task 'Exchange\New-MoveRequest' -Reason 'Attempting to fix the user mailbox error' -DurationHours 4
 ```
 
-### <a name="view-status-of-elevation-requests"></a>Afficher l’état des demandes d’élévation
+### <a name="view-status-of-elevation-requests"></a>Afficher le statut des demandes d’élévation
 
 Après la création d’une demande d’approbation, l’état de la demande d’élévation peut être révisé dans le centre d’administration ou dans Exchange Management PowerShell à l’aide de l’ID de demande associé.
 
-#### <a name="in-the-microsoft-365-admin-center"></a>Dans le centre d’administration Microsoft 365
+#### <a name="in-the-microsoft-365-admin-center"></a>Dans le Centre d’administration Microsoft 365
 
 1. Connectez-vous au [Centre d’administration Microsoft 365](https://admin.microsoft.com) avec vos informations d’identification.
 
-2. Dans le centre d’administration, accédez à **paramètres** > **Security & Privacy** > **Privileged Access**.
+2. Dans le centre d’administration, accédez à **paramètres**  >  **Organisation des paramètres d’organisation**  >  **sécurité & confidentialité**des  >  **accès privilégiés**.
 
 3. Sélectionnez **gérer les stratégies d’accès et les demandes**.
 
@@ -242,13 +242,13 @@ Get-ElevatedAccessRequest -Identity 28560ed0-419d-4cc3-8f5b-603911cbd450 | selec
 
 ### <a name="approving-an-elevation-authorization-request"></a>Approbation d’une demande d’autorisation d’élévation
 
-Lorsqu’une demande d’approbation est créée, les membres du groupe d’approbateur approprié reçoivent une notification par courrier électronique et peuvent approuver la demande associée à l’ID de demande. Le demandeur est informé de la demande d’approbation ou de refus via un message électronique.
+Lorsqu’une demande d’approbation est créée, les membres du groupe d’approbateur approprié reçoivent une notification par courrier électronique et peuvent approuver la demande associée à l’ID de demande. Le demandeur est informé de l’approbation ou du refus par message électronique.
 
-#### <a name="in-the-microsoft-365-admin-center"></a>Dans le centre d’administration Microsoft 365
+#### <a name="in-the-microsoft-365-admin-center"></a>Dans le Centre d’administration Microsoft 365
 
 1. Connectez-vous au [Centre d’administration Microsoft 365](https://admin.microsoft.com) avec vos informations d’identification.
 
-2. Dans le centre d’administration, accédez à **paramètres** > **Security & Privacy** > **Privileged Access**.
+2. Dans le centre d’administration, accédez à **paramètres**  >  **Organisation des paramètres d’organisation**  >  **sécurité & confidentialité**des  >  **accès privilégiés**.
 
 3. Sélectionnez **gérer les stratégies d’accès et les demandes**.
 
@@ -286,11 +286,11 @@ Deny-ElevatedAccessRequest -RequestId a4bc1bdf-00a1-42b4-be65-b6c63d6be279 -Comm
 
 Si elle n’est plus nécessaire dans votre organisation, vous pouvez supprimer une stratégie d’accès privilégié.
 
-### <a name="in-the-microsoft-365-admin-center"></a>Dans le centre d’administration Microsoft 365
+### <a name="in-the-microsoft-365-admin-center"></a>Dans le Centre d’administration Microsoft 365
 
 1. Connectez-vous au [Centre d’administration Microsoft 365](https://admin.microsoft.com) à l’aide des informations d’identification d’un compte d’administrateur de votre organisation.
 
-2. Dans le centre d’administration, accédez à **paramètres** > **Security & Privacy** > **Privileged Access**.
+2. Dans le centre d’administration, accédez à **paramètres**  >  **Organisation des paramètres d’organisation**  >  **sécurité & confidentialité**des  >  **accès privilégiés**.
 
 3. Sélectionnez **gérer les stratégies d’accès et les demandes**.
 
@@ -312,11 +312,11 @@ Remove-ElevatedAccessApprovalPolicy -Identity <identity GUID of the policy you w
 
 Si nécessaire, vous pouvez désactiver la gestion des accès privilégiés pour votre organisation. La désactivation de l’accès privilégié ne supprime pas les stratégies d’approbation ou les groupes d’approbateurs associés.
 
-### <a name="in-the-microsoft-365-admin-center"></a>Dans le centre d’administration Microsoft 365
+### <a name="in-the-microsoft-365-admin-center"></a>Dans le Centre d’administration Microsoft 365
 
 1. Connectez-vous au [Centre d’administration Microsoft 365](https://admin.microsoft.com) avec des informations d’identification pour un compte d’administrateur de votre organisation.
 
-2. Dans le centre d’administration, accédez à **paramètres** > **Security & Privacy** > **Privileged Access**.
+2. Dans le centre d’administration, accédez à **paramètres**  >  **Organisation des paramètres d’organisation**  >  **sécurité & confidentialité**des  >  **accès privilégiés**.
 
 3. Activez l' **autorisation exiger des approbations pour le contrôle d’accès privilégié** .
 

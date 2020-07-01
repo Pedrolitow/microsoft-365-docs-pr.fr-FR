@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: b4527d49-4073-4b43-8274-31b7a3166f92
 description: Déterminez si votre client et vos utilisateurs satisfont à la configuration requise, afin que vous puissiez utiliser un déploiement centralisé pour déployer des compléments Office.
-ms.openlocfilehash: 4b9ca7213f36440114d39ef491fe934f13ca96ea
-ms.sourcegitcommit: f80c6c52e5b08290f74baec1d64c4070046c32e4
+ms.openlocfilehash: 4ad2f504c26fcc1f01c958bebf448718500a95b7
+ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "44717272"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "44936442"
 ---
 # <a name="determine-if-centralized-deployment-of-add-ins-works-for-your-organization"></a>Déterminer si le déploiement centralisé des compléments fonctionne pour votre organisation
 
@@ -40,16 +40,12 @@ Vous pouvez afficher les conditions requises spécifiques pour Office et Exchang
 
 La fonctionnalité Déploiement centralisé ne prend pas en charge ce qui suit :
   
-- des compléments ciblant Word, Excel ou PowerPoint dans Office 2013 ;
-    
+- des compléments ciblant Word, Excel ou PowerPoint dans Office 2013 ; 
 - un service d'annuaire local ;
-    
+- Déploiement de compléments vers une boîte aux lettres Exchange sur local
 - le déploiement de compléments vers SharePoint ;  
-
 - Applications teams
-   
 - le déploiement de compléments COM (Component Object Model) ou Visual Studio Tools pour Office (VSTO).
-    
 - Déploiements de Microsoft 365 qui n’incluent pas Exchange, comme Microsoft 365 apps pour les entreprises
 
 ### <a name="office-requirements"></a>Configuration requise pour Office

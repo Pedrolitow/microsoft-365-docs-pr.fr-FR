@@ -15,18 +15,18 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 0e0a9d04-294f-4f54-8bf1-b32d81345126
-description: 'Passez en revue les étapes nécessaires pour ajouter des fichiers importés à la dernière charge ou un lot de fichiers défini avant de procéder à la formation pertinente dans Advanced eDiscovery.  '
-ms.openlocfilehash: 7914013d21cfd7bba0e474a0e8d831bcfad0239d
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: Passez en revue les étapes nécessaires pour ajouter des fichiers importés à la dernière charge ou un lot de fichiers défini avant de procéder à la formation pertinente dans Advanced eDiscovery.
+ms.openlocfilehash: fc05111d9193a935158b4b00a14717877ae148a7
+ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636292"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "44936815"
 ---
 # <a name="set-up-loads-to-add-imported-files-in-advanced-ediscovery-classic"></a>Configurer les charges pour ajouter des fichiers importés dans Advanced eDiscovery (classique)
 
 > [!NOTE]
-> Pour utiliser Advanced eDiscovery, votre organisation doit souscrire un abonnement Office 365 E3 avec le module complémentaire Conformité avancée ou un abonnement E5. Si vous ne disposez pas d’un abonnement et que vous souhaitez essayer Advanced eDiscovery, vous pouvez vous [inscrire pour utiliser une version d’évaluation d’Office 365 Entreprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
+> Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
 Dans Advanced eDiscovery, une charge est un nouveau lot de fichiers ajouté à un cas. Par défaut, une charge est définie et tous les fichiers importés sont ajoutés à celle-ci. Avant d’effectuer une formation pertinente, les fichiers importés doivent être ajoutés au chargement. 
   
@@ -40,7 +40,7 @@ Plusieurs scénarios sont envisageables :
 
 Tous les fichiers importés doivent être ajoutés à une charge pour être traités dans Advanced eDiscovery. Les fichiers importés sont ajoutés au dernier chargement défini. Si vous importez des fichiers supplémentaires ultérieurement, ceux-ci doivent également être ajoutés au chargement.
   
-1. Dans l' ** \> onglet Configuration** de pertinence de pertinence, sélectionnez **charges**.
+1. Dans l' **onglet \> configuration** de pertinence de pertinence, sélectionnez **charges**.
     
     ![Onglet Charges de configuration de pertinence](../media/278aac7f-655f-462f-852a-6baa5d818768.png)
   
@@ -61,7 +61,7 @@ Les fichiers peuvent désormais être traités dans l’intérêt de la découve
 
 Si vous modifiez le nom de la charge, il est recommandé d’utiliser un nom qui est significatif pour le cas.
   
-1. Dans l' ** \> onglet Configuration** de pertinence de pertinence, sélectionnez **charges**.
+1. Dans l' **onglet \> configuration** de pertinence de pertinence, sélectionnez **charges**.
     
 2. Dans la liste **charges de gestion** , sélectionnez une charge, puis cliquez sur l’icône **modifier** . La fenêtre Modifier la charge s’affiche. 
     
@@ -95,9 +95,9 @@ Les charges de roulement et les fonctionnalités de rattrapage varient comme sui
   
 ## <a name="adding-a-new-file-load-using-catch-up-and-rolling-loads"></a>Ajout d’une nouvelle charge de fichier à l’aide de charges de rattrapage et de laminage
 
-1. Dans l' ** \> onglet Configuration** de pertinence de pertinence, sélectionnez **charges**.
+1. Dans l' **onglet \> configuration** de pertinence de pertinence, sélectionnez **charges**.
     
-2. Sous **chargez la gestion**, **+** cliquez sur l’icône pour ajouter une charge. Un message de confirmation s’affiche. 
+2. Sous **chargez la gestion**, cliquez sur l' **+** icône pour ajouter une charge. Un message de confirmation s’affiche. 
     
 3. Cliquez sur **Oui** pour continuer. La boîte de dialogue **Ajouter un nouveau chargement** s’affiche. 
     
@@ -116,7 +116,7 @@ Les charges de roulement et les fonctionnalités de rattrapage varient comme sui
     
     Vous pouvez ensuite baliser les fichiers et exécuter une opération Calculate. Le balisage permet de déterminer si les charges sont similaires ou distinctes et vous permet de continuer à travailler sur le nouveau jeu de fichiers.
     
-7. Une fois le jeu de rattrapage révisé, affichez le **suivi de pertinence \> ** pour les résultats de rattrapage. 
+7. Une fois le jeu de rattrapage révisé, affichez le ** \> suivi de pertinence** pour les résultats de rattrapage. 
     
 1. Si le nouveau chargement de fichier a été ajouté au cours de la formation à la pertinence (ce qui signifie que le problème n’a pas encore été effectué par le calcul par lot), **poursuivez la formation** à l’étape suivante, quels que soient les résultats de rattrapage. 
     

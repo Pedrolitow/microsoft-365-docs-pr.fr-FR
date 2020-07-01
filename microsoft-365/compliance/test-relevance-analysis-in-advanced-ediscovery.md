@@ -15,18 +15,18 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 1b092f7c-ea55-44f5-b419-63f3458fd7e0
-description: 'Découvrez comment utiliser l’onglet test après le calcul par lot dans Advanced eDiscovery pour tester, comparer et valider la qualité globale du traitement.  '
-ms.openlocfilehash: 67b480ea340dace4cab0b038d678b6d005bf545b
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: Découvrez comment utiliser l’onglet test après le calcul par lot dans Advanced eDiscovery pour tester, comparer et valider la qualité globale du traitement.
+ms.openlocfilehash: c5a885b3483b9ce319fffefa55037c0c2c8f3c85
+ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637198"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "44936207"
 ---
 # <a name="test-relevance-analysis-in-advanced-ediscovery-classic"></a>Tester l’analyse de pertinence dans Advanced eDiscovery (classique)
 
 > [!NOTE]
-> Pour utiliser Advanced eDiscovery, votre organisation doit souscrire un abonnement Office 365 E3 avec le module complémentaire Conformité avancée ou un abonnement E5. Si vous ne disposez pas d’un abonnement et que vous souhaitez essayer Advanced eDiscovery, vous pouvez vous [inscrire pour utiliser une version d’évaluation d’Office 365 Entreprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
+> Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
 L’onglet test dans Advanced eDiscovery vous permet de tester, de comparer et de valider la qualité globale du traitement. Ces tests sont effectués après le calcul par lots. En marquant les fichiers dans la collection, un expert détermine si chaque fichier balisé est pertinent pour le cas. 
   
@@ -62,7 +62,7 @@ Ce test fournit des statistiques et une comparaison entre l’ensemble de révis
     
 9. Cliquez sur **Démarrer le balisage**. Un échantillon de test est généré.
     
-10. Examinez et marquez chacun des fichiers dans l’onglet de la **balise de pertinence \> ** et, lorsque vous avez fini, cliquez sur **calculer**.
+10. Examinez et marquez chacun des fichiers dans l’onglet de la ** \> balise de pertinence** et, lorsque vous avez fini, cliquez sur **calculer**.
     
 11. Sous l’onglet test, vous pouvez cliquer sur **afficher les résultats** pour afficher les résultats des tests. Un exemple est illustré dans la figure suivante. 
     
@@ -106,13 +106,13 @@ Le test « test the Slice » effectue un test semblable au test « test the R
     
 9. Cliquez sur **Démarrer le balisage**. Un échantillon de test est généré.
     
-10. Examinez et marquez chacun des fichiers dans l’onglet de la **balise de pertinence \> ** et, lorsque vous avez fini, cliquez sur **calculer**. 
+10. Examinez et marquez chacun des fichiers dans l’onglet de la ** \> balise de pertinence** et, lorsque vous avez fini, cliquez sur **calculer**. 
     
 11. Sous l’onglet test, vous pouvez cliquer sur **afficher les résultats** pour afficher les résultats des tests. 
     
 ## <a name="see-also"></a>Voir aussi
 
-[Advanced eDiscovery (classique)](office-365-advanced-ediscovery.md)
+[Advanced eDiscovery (classique)](office-365-advanced-ediscovery.md)
   
 [Présentation de l’évaluation en matière de pertinence](assessment-in-relevance-in-advanced-ediscovery.md)
   

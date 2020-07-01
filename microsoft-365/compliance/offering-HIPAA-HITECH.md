@@ -1,7 +1,7 @@
 ---
 title: Loi HIPAA (Health Insurance Portability and Accountability Act) & Hi-Tech
 description: Microsoft propose des accords de portabilité de l’assurance maladie & la Loi d’entreprise Associate Act (HIPAA).
-keywords: Offres pour la conformité Microsoft 365
+keywords: Microsoft 365, conformité, offres
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 47343d3e4ae3224556cc22874687da4bea864e8a
-ms.sourcegitcommit: 51e47ca4b355436a2ad3deb154060eb1927428e6
+ms.openlocfilehash: 825d8bac0d20534310864801b1d8eaef32c9b417
+ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44773715"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "44936349"
 ---
 # <a name="health-insurance-portability-and-accountability-hipaa--hitech-acts"></a>Loi HIPAA (Health Insurance Portability and Accountability Act) & Hi-Tech
 
@@ -72,7 +72,7 @@ Commencez à tirer parti des avantages du Cloud pour les solutions de données d
 
 [Commencer à utiliser le modèle Azure HIPAA/HITRUST](https://docs.microsoft.com/azure/governance/blueprints/samples/hipaa-hitrust/)
 
-## <a name="frequently-asked-questions"></a>Questions fréquemment posées
+## <a name="frequently-asked-questions"></a>Foire aux questions
 
 **Mon organisation peut-elle entrer dans un contrat avec Microsoft ?**
 
@@ -98,7 +98,7 @@ Le [portail d’approbation de services](https://www.microsoft.com/trustcenter/S
 
 Pour aider les clients avec cette tâche, Microsoft a publié ces guides :
 
-- *Aide à la mise en œuvre de loi HIPAA/Hi* pour [Azure](https://aka.ms/azurehipaaguidance) et pour [Dynamics 365 et Office 365](https://go.microsoft.com/fwlink/?LinkID=257510). Rédigé pour les responsables de la confidentialité, de la sécurité et de la mise en conformité, ainsi que d’autres responsables de l’implémentation Act HIPAA et Hi-Tech, ils décrivent les étapes concrètes que votre organisation peut prendre pour assurer la conformité.
+- *Aide à la mise en œuvre de loi HIPAA/Hi* pour [Azure](https://docs.microsoft.com/azure/governance/blueprints/samples/hipaa-hitrust/) et pour [Dynamics 365 et Office 365](https://go.microsoft.com/fwlink/?LinkID=257510). Rédigé pour les responsables de la confidentialité, de la sécurité et de la mise en conformité, ainsi que d’autres responsables de l’implémentation Act HIPAA et Hi-Tech, ils décrivent les étapes concrètes que votre organisation peut prendre pour assurer la conformité.
 - Le [Guide pratique de la conception de solutions d’intégrité sécurisée à l’aide de Microsoft Azure](https://aka.ms/azureindustrysecurity) vous permet de mieux comprendre ce qu’il faut faire pour adopter correctement un service Cloud de manière sécurisée.
 - [La gestion des exigences de sécurité et de confidentialité HIPAA dans le Cloud Microsoft](https://smb.blob.core.windows.net/smbproduction/Content/Microsoft_Cloud_Healthcare_HIPAA_Security_Privacy.pdf) offre une brève présentation des exigences en matière de réglementation. Elle fournit également une analyse détaillée de la façon dont les services Cloud de Microsoft ont été créés avec des méthodologies qui correspondent à ces exigences, ainsi que des instructions sur la création de solutions prêtes à la conformité.
 

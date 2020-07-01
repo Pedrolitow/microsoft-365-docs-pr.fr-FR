@@ -15,18 +15,18 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 44055727-56e8-42d7-9dc3-fb942f3901cc
-description: 'Découvrez comment définir la règle pour ignorer le texte spécifique lors de l’utilisation des modules Analyze et process dans Advanced eDiscovery.  '
-ms.openlocfilehash: cd425c71c06074b5d12851dd126692c914b95489
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: Découvrez comment définir la règle pour ignorer le texte spécifique lors de l’utilisation des modules Analyze et process dans Advanced eDiscovery.
+ms.openlocfilehash: fd7b1f3236c88faf792a97146bbed35802f6c695
+ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631251"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "44936891"
 ---
 # <a name="set-ignore-text-option-for-analyze-in-advanced-ediscovery-classic"></a>Définir l’option ignorer le texte pour l’analyse dans Advanced eDiscovery (classique)
 
 > [!NOTE]
-> Pour utiliser Advanced eDiscovery, votre organisation doit souscrire un abonnement Office 365 E3 avec le module complémentaire Conformité avancée ou un abonnement E5. Si vous ne disposez pas d’un abonnement et que vous souhaitez essayer Advanced eDiscovery, vous pouvez vous [inscrire pour utiliser une version d’évaluation d’Office 365 Entreprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
+> Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
 La fonctionnalité ignorer le texte peut être appliquée à tout ou partie des modules avancés eDiscovery suivants : Analyze (Near-Duplicates, threads de messagerie, thèmes) et pertinence. Le texte ignoré n’apparaît pas dans les fichiers affichés par pertinence, et l’analyse/les calculs ignorent le texte ignoré.
   
@@ -62,7 +62,7 @@ Les expressions régulières sont prises en charge pour une utilisation lors de 
     
     **Il s’agit de la deuxième phrase et de la deuxième ligne»**
     
-    première expression régulière (.\*) $ entraînera :
+    première expression régulière (. \* ) $ entraînera :
     
     **"Ceci est**
     
@@ -76,7 +76,7 @@ Les expressions régulières sont prises en charge pour une utilisation lors de 
     
     Par exemple, l’expression régulière suivante supprime les clauses d’exclusion de responsabilité et les instructions légales qui se trouvaient dans le fil de messagerie entre les chaînes de début et de fin :
     
-    **Ce message contient des informations confidentielles (. | \s)\*si la vérification est requise, demandez une version de copie papier.**
+    **Ce message contient des informations confidentielles (. | \s) \* si la vérification est requise, demandez une version de copie papier.**
     
 - Pour supprimer une clause d’exclusion de responsabilité (y compris des caractères spéciaux) : 
     
@@ -90,11 +90,11 @@ Les expressions régulières sont prises en charge pour une utilisation lors de 
     
     l’expression régulière permettant de supprimer la clause d’exclusion de responsabilité ci-dessus doit être : 
     
-    **\/\\*\\Ce message contient des informations\.confidentielles (. | \s)\* si la vérification est requise, demandez une version\. de copie papier.\/\\*\\**
+    **\/\\*\\Ce message contient des informations confidentielles \. (. | \s) \* si la vérification est requise, demandez une version \. de copie papier.\/\\*\\**
     
 - Règles d’expression régulière :
     
-  - Tous les caractères qui ne font pas partie de l’alphabet, à l’exception de l’espace (s), « _ » et « - »\", doivent être précédés de «.
+  - Tous les caractères qui ne font pas partie de l’alphabet, à l’exception de l’espace (s), « _ » et « - », doivent être précédés de « \" .
     
   - Le champ eExpression normal peut avoir une longueur illimitée.
     
@@ -103,7 +103,7 @@ Les expressions régulières sont prises en charge pour une utilisation lors de 
   
 ## <a name="define-ignore-text-rule"></a>Définir la règle de texte ignorer
 
-1. Dans l' **onglet \> gérer \> ** l’analyse et les options, dans la section **Ignorer** le texte **+** , cliquez sur l’icône pour ajouter une règle. 
+1. Dans l’onglet gérer l’analyse et les ** \> \> options** , dans la section **ignorer le texte** , cliquez sur l' **+** icône pour ajouter une règle. 
     
 2. Dans la boîte de dialogue **Ajouter le texte ignorer** , dans le champ **nom** , tapez un nom pour la règle ignorer le texte. 
     
@@ -126,7 +126,7 @@ Les expressions régulières sont prises en charge pour une utilisation lors de 
   
 ## <a name="see-also"></a>Voir aussi
 
-[Advanced eDiscovery (classique)](office-365-advanced-ediscovery.md)
+[Advanced eDiscovery (classique)](office-365-advanced-ediscovery.md)
   
 [Présentation de la similarité des documents](understand-document-similarity-in-advanced-ediscovery.md)
   
