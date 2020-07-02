@@ -19,18 +19,20 @@ search.appverid:
 - MOE150
 ms.assetid: 9fa2539a-2211-41fd-85a0-bc37b9619ca4
 description: Découvrez comment renforcer la sécurité de votre organisation contre les attaques par mot de passe et la raison pour laquelle vous devez interdire les mots de passe courants et activer l’authentification multifacteur basée sur le risque.
-ms.openlocfilehash: b4437f2af409fa3040894a1b0f802140df169635
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 1d6e399acb83751ec6a45eb0c811dedec394127e
+ms.sourcegitcommit: 0650da0e54a2b484a3156b3aabe44397fbb38e00
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399313"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "45015922"
 ---
 # <a name="password-policy-recommendations"></a>Recommandations en matière de stratégie de mot de passe
  
 En tant qu’administrateur d’une organisation, vous êtes chargé de la configuration d'une stratégie de mot de passe pour les utilisateurs au sein de votre organisation. La configuration d'une stratégie de mot de passe peut être complexe et déconcertante. Cet article vous fournit des recommandations pour renforcer la sécurité de votre organisation contre les attaques par mot de passe.
   
 Pour déterminer la fréquence d’expiration des mots de passe Microsoft 365 dans votre organisation, consultez la page [Définir une stratégie d’expiration de mot de passe pour Microsoft 365](../manage/set-password-expiration-policy.md).
+
+Pour obtenir plus d’informations sur les mots de passe Microsoft 365, consultez ces [articles connexes](#related-articles).
   
 ## <a name="understanding-password-recommendations"></a>Présentation des recommandations concernant les mots de passe
 
@@ -131,3 +133,13 @@ L’authentification multifacteur basée sur le risque s'assure que, lorsque not
 - [Plus mauvais mots de passe en 2015](https://go.microsoft.com/fwlink/p/?linkid=861020)
 
 - [Télécharger des fichiers sur le web](https://go.microsoft.com/fwlink/p/?linkid=861029)
+
+## <a name="related-articles"></a>Articles connexes
+
+[Réinitialiser les mots de passe](https://docs.microsoft.com/microsoft-365/admin/add-users/reset-passwords)
+
+[Définir le mot de passe d’un utilisateur de façon à ce qu’il n’expire jamais](https://docs.microsoft.com/microsoft-365/admin/add-users/set-password-to-never-expire)
+
+[Autoriser les utilisateurs à réinitialiser leur mot de passe](https://docs.microsoft.com/microsoft-365/admin/add-users/let-users-reset-passwords)
+
+[Renvoyer le mot de passe d’un utilisateur – Aide de l’administrateur](https://docs.microsoft.com/microsoft-365/admin/add-users/resend-user-password)

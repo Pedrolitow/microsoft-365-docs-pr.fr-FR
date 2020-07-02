@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Découvrez le comportement de rétention qui s’applique spécifiquement à la messagerie électronique et aux dossiers publics Exchange.
-ms.openlocfilehash: e19e790c23c5e61748f38fb22f96d2347acb144e
-ms.sourcegitcommit: 5e8901e7e571f20ede04f460bd3e7077dda004ca
+ms.openlocfilehash: 2ecf709c8b2bdd166cd64024ef332a2e0b26b7be
+ms.sourcegitcommit: 0650da0e54a2b484a3156b3aabe44397fbb38e00
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "44874882"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "45016277"
 ---
 # <a name="learn-about-retention-policies-for-exchange"></a>Découvrir les stratégies de rétention pour Exchange
 
@@ -70,13 +70,13 @@ Lorsque les paramètres de la stratégie de rétention sont définis sur conserv
 
 ## <a name="excluding-specific-types-of-exchange-items-from-a-retention-policy"></a>Exclusion de types spécifiques d’éléments Exchange d’une stratégie de rétention
 
-PowerShell vous permet d’exclure des types spécifiques d’éléments Exchange d’une stratégie de rétention. Par exemple, vous pouvez exclure les messages vocaux, les conversations par messagerie instantanée et d’autres contenus Skype Entreprise Online dans les boîtes aux lettres. Vous pouvez également exclure les éléments de calendrier, de note et de tâche. Cette fonctionnalité n’est disponible qu’en utilisant PowerShell. Elle n’est pas disponible lorsque vous créez une stratégie de rétention à l’aide de l’Assistant dans le Centre de conformité Microsoft 365.
+PowerShell vous permet d’exclure des types spécifiques d’éléments Exchange d’une stratégie de rétention lorsque les paramètres de rétention sont définis pour la conservation uniquement. Par exemple, vous pouvez exclure les messages vocaux, les conversations par messagerie instantanée et d’autres contenus Skype Entreprise Online dans les boîtes aux lettres. Vous pouvez également exclure les éléments de calendrier, de note et de tâche. Cette fonctionnalité n’est disponible qu’en utilisant PowerShell. Elle n’est pas disponible lorsque vous créez une stratégie de rétention à l’aide de l’Assistant dans le Centre de conformité Microsoft 365.
   
 Pour exclure les types sélectionnés pour les éléments Exchange dans une stratégie de rétention, utilisez le paramètre  `ExcludedItemClasses` avec les cmdlets [New-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/new-retentioncompliancerule) et [Set-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/set-retentioncompliancerule).
 
 Pour utiliser les cmdlets des stratégies de rétention, vous devez tout d’abord vous [connecter au Centre de sécurité et conformité PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell?view=exchange-ps).
 
-### <a name="when-a-user-leaves-the-organization"></a>Lorsqu’un utilisateur quitte l’organisation 
+## <a name="when-a-user-leaves-the-organization"></a>Lorsqu’un utilisateur quitte l’organisation 
 
 Si un utilisateur quitte votre organisation et que sa boîte aux lettres est incluse dans une stratégie de rétention, celle-ci devient inactive lorsque le compte Microsoft 365 de l’utilisateur est supprimé. Le contenu d’une boîte aux lettres inactive reste soumis à toute stratégie de rétention qui a été appliquée à la boîte aux lettres avant sa désactivation, et le contenu est accessible aux recherches eDiscovery. Pour plus d’informations, consultez [Boîtes aux lettres inactives dans Exchange Online](inactive-mailboxes-in-office-365.md). 
 
