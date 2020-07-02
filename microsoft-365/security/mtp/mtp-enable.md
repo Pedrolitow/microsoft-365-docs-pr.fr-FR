@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 0badae0d81b52b89c47f950b889109d4b9d35dda
-ms.sourcegitcommit: bd5a08785b5ec320b04b02f8776e28bce5fb448f
+ms.openlocfilehash: b6ac30f7e32bbec80952ad4f2104032886b11503
+ms.sourcegitcommit: 0650da0e54a2b484a3156b3aabe44397fbb38e00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "44844591"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "45016342"
 ---
 # <a name="turn-on-microsoft-threat-protection"></a>Activer la Protection Microsoft contre les menaces
 
@@ -61,10 +61,12 @@ Pour activer Microsoft Threat Protection, sélectionnez simplement **activer la 
 >Si vous ne voyez pas les **paramètres** dans le volet de navigation ou que vous n’avez pas accès à la page, vérifiez vos autorisations et licences.
 
 ### <a name="data-center-location"></a>Emplacement du centre de données
-Microsoft Threat Protection stocke et traite les données au [même emplacement que celui utilisé par Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy). Si vous ne disposez pas de Microsoft Defender ATP, un nouvel emplacement de centre de données est automatiquement sélectionné en fonction de l’emplacement des services de sécurité Microsoft 365 actifs. L’emplacement du centre de données sélectionné est affiché à l’écran.
+Microsoft Threat Protection stocke et traite les données au [même emplacement que celui utilisé par Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy). Si vous ne disposez pas de Microsoft Defender ATP, un nouvel emplacement de centre de données est automatiquement sélectionné en fonction de l’emplacement des services de sécurité Microsoft 365 actifs. L’emplacement du centre de données sélectionné est affiché à l’écran. 
+
+Sélectionnez **besoin d’aide ?** dans le centre de sécurité Microsoft 365 pour contacter le support Microsoft sur la mise en service de la protection contre les menaces Microsoft dans un autre emplacement de centre de données. 
 
 >[!NOTE]
->Sélectionnez **besoin d’aide ?** dans le centre de sécurité Microsoft 365 pour contacter le support Microsoft concernant la mise en service de la protection contre les menaces Microsoft dans un autre emplacement de centre de données. 
+>Microsoft Defender s’approvisionne automatiquement dans les centres de données de l’Union européenne (UE) lors de l’activation via le centre de sécurité Azure. La protection Microsoft contre les menaces est automatiquement mise en service dans le centre de données de l’UE pour les clients qui ont configuré Microsoft Defender ATP de cette manière. 
 
 ### <a name="confirm-that-the-service-is-on"></a>Vérifiez que le service est activé
 Une fois le service configuré, il ajoute :

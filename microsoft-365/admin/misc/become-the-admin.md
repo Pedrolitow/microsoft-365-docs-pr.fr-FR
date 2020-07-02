@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: b9707ec8-2247-4e25-9bad-f11ddbc686e4
 description: Découvrez comment vérifier la propriété de votre messagerie et de votre domaine pour prendre le relais d’un locataire non géré dans Microsoft 365
-ms.openlocfilehash: 4c2dcdb0f6c4f6b795d9579c8796e9668ed2ed05
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 1eb54a6c34c9700bda09a660c71d2b1222fcdb8c
+ms.sourcegitcommit: 3ddcf08e8deec087df1fe524147313f1cb12a26d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399445"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "45022156"
 ---
 # <a name="perform-an-internal-admin-takeover"></a>Effectuer un rachat administratif interne
 
@@ -64,7 +64,7 @@ Si vous êtes un administrateur et que vous souhaitez prendre le relais d’un c
 4. Une fois que vous avez ajouté l’enregistrement TXT à votre site de serveur d’inscriptions, revenez à l’Assistant et sélectionnez **OK, j’ai ajouté l’enregistrement**.
     
 > [!NOTE]
-> La prise en charge du client de cliché instantané n’a aucun impact sur les informations ou services existants. Toutefois, si un utilisateur du domaine s’est inscrit à des services nécessitant une licence, vous serez invité à acheter des licences pour ceux-ci dans le cadre de la prise en charge du rôle d’administrateur. Vous pouvez ajouter ou supprimer des licences une fois que le processus d’installation de l’administrateur est terminé. 
+> La prise en charge du client de cliché instantané n’a aucun impact sur les informations ou services existants. Toutefois, si un utilisateur du domaine s’est inscrit à des services nécessitant une licence, vous serez invité à acheter des licences pour ceux-ci dans le cadre de la prise en charge du rôle d’administrateur. Vous pouvez acheter ou supprimer des licences une fois le processus d’installation administratif terminé.
   
 ## <a name="related-articles"></a>Articles connexes
 

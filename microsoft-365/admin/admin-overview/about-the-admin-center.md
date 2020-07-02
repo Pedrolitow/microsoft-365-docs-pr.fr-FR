@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: 758befc4-0888-4009-9f14-0d147402fd23
 description: Le centre d'administration vous permet de configurer votre organisation dans le cloud et gérer les utilisateurs et les abonnements. Tout d’abord, connectez-vous au compte avec des autorisations d’administrateur.
-ms.openlocfilehash: 9295d16f19ebaabdd9960331f1d875f436156b79
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+ms.openlocfilehash: e4b1570afd8572df31af970fb168b6d22deee979
+ms.sourcegitcommit: 3ddcf08e8deec087df1fe524147313f1cb12a26d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44780552"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "45022180"
 ---
 # <a name="about-the-microsoft-365-admin-center"></a>À propos du Centre d’administration Microsoft 365
 
@@ -89,7 +89,7 @@ Les fonctionnalités et paramètres suivants sont disponibles dans la barre de n
    
 ## <a name="common-tasks-in-the-admin-center"></a>Tâches courantes dans le Centre d’administration
 
-- Gérer les utilisateurs : [ajouter des utilisateurs individuellement](../add-users/add-users.md), [supprimer ou restaurer des utilisateurs](../add-users/delete-a-user.md), ou [réinitialiser le mot de passe d'un utilisateur](../add-users/reset-passwords.md).
+- Gérer les utilisateurs : [Ajouter des utilisateurs et attribuer des licences en même temps](../add-users/add-users.md), [supprimer ou restaurer des utilisateurs](../add-users/delete-a-user.md), ou [Réinitialiser le mot de passe d’un utilisateur](../add-users/reset-passwords.md).
 
 - Accéder à l’aide concernant la facturation : [Facturation](../../commerce/index.yml)
 

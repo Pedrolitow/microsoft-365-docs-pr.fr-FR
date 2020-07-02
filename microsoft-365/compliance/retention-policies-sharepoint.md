@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Découvrir les stratégies de rétention qui s’appliquent à SharePoint et OneDrive.
-ms.openlocfilehash: f3c7d805309a86f05cdea8769693ec6de9c1bf51
-ms.sourcegitcommit: 261d51b90a9ad53a6a42348c414b1b1e1230c37f
+ms.openlocfilehash: cae0016f705757341934d1ad7e6eec331e81642c
+ms.sourcegitcommit: aab8b94ea8a9d4f7c6b911d6dc5cde70722e00e5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44292493"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "44869866"
 ---
 # <a name="learn-about-retention-policies-for-sharepoint-and-onedrive"></a>Découvrir les stratégies de rétention pour SharePoint et OneDrive
 
@@ -75,9 +75,9 @@ Le contrôle de version est une fonctionnalité présente dans toutes les biblio
   
 Une stratégie de conservation uniquement conserve toutes les versions d’un document dans une collection de sites SharePoint ou un compte OneDrive. Lorsqu’un document soumis à une stratégie de rétention ou de conservation uniquement est modifié pour la première fois, une version du document d’origine est copiée dans la bibliothèque de conservation et de préservation des documents. Lorsqu’un document soumis à une stratégie de rétention ou de conservation uniquement est supprimé, toutes les versions sont copiées dans la bibliothèque de conservation et de préservation des documents si le contrôle de version est activé. Chaque version d’un document dans la bibliothèque Preservation Hold est présente sous la forme d’un élément distinct avec sa propre période de rétention :
   
-- Si la stratégie de rétention est basée sur la date de création du contenu, chaque version comporte la même date d’expiration que le document d’origine. Le document d’origine et toutes ses versions expirent en même temps.
+- If the retention policy is based on when the content was created, each version has the same expiration date as the original document. The original document and its versions all expire at the same time.
     
-- Si la stratégie de rétention est basée sur la date de la dernière modification du contenu, chaque version possède sa propre date d’expiration basée sur la date à laquelle le document d’origine a été modifié pour créer cette version. Les documents d’origine et ses versions expirent séparément l’un de l’autre.
+- If the retention policy is based on when the content was last modified, each version has its own expiration date based on when the original document was modified to create that version. The original documents and its versions expire independently of each other.
 
 > [!NOTE]
 > Les versions conservées des documents SharePoint et OneDrive ne sont pas consultables par les outils eDiscovery.
@@ -94,19 +94,13 @@ Si un utilisateur quitte votre organisation, tous les fichiers soumis à une str
 
 ## <a name="how-to-configure-a-retention-policy-for-sharepoint-and-onedrive"></a>Comment configurer une stratégie de rétention pour SharePoint et OneDrive
 
-Consultez la page [Créer et configurer des stratégies de rétention](create-retention-policies.md).
-
-Pour la page de l’Assistant **Choisir les emplacements**, sélectionnez l’une des options suivantes :
+Suivez les instructions pour [créer et configurer des stratégies de rétention](create-retention-policies.md) et pour la page **Choisir les emplacements** de l’assistant, sélectionnez l’une des options suivantes :
 
 - **Appliquer la stratégie uniquement au contenu dans les courriers électroniques Exchange, les dossiers publics, les groupes Office 365, les documents OneDrive et SharePoint**
 
-- **Choisir des emplacements spécifiques** > **Site SharePoint** ou **Comptes OneDrive**
+- **Choisir des emplacements spécifiques** > **Sites SharePoint**, **Comptes OneDrive** et **Groupes Office 365**.
 
-### <a name="sharepoint-locations"></a>Emplacements SharePoint 
-
-Votre stratégie de rétention peut conserver le contenu des sites de communication SharePoint, des sites d’équipe qui ne sont pas connectés par des groupes Office 365 et des sites classiques. Cette option ne prend pas en charge les sites d’équipe connectés par des groupes Office 365. Utilisez plutôt des emplacements de **groupes Office 365**. 
-
-Si vous spécifiez des sites non pris en charge, ils sont ignorés par la stratégie de rétention. 
+Lorsque vous choisissez les emplacement des **sites SharePoint**, votre stratégie de rétention peut conserver le contenu des sites de communication SharePoint, des sites d’équipe qui ne sont pas connectés par des groupes Office 365 et des sites classiques. Cette option ne prend pas en charge les sites d’équipe connectés par des groupes Office 365. Utilisez plutôt des emplacements de **groupes Office 365** qui s’appliquent au contenu de la boîte aux lettres, du site et des fichiers du groupe. 
 
 Lorsque vous spécifiez vos emplacements pour les sites SharePoint, aucune autorisation n’est nécessaire pour accéder au site, et aucune validation n’intervient au moment où vous spécifiez l’URL sur la page **Modifier les emplacements**. Toutefois, les sites doivent être indexés, et l’existence des sites que vous spécifiez est vérifiée à la fin de l’Assistant. 
 

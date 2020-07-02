@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 8a3e4b8979a346266336e2729d18465d391c28f9
-ms.sourcegitcommit: efd4dd29af0ea2b71b674534de3b2dcbfd7482db
+ms.openlocfilehash: 6287e7c56f79b09a79c75d7e8b8273dbd5569057
+ms.sourcegitcommit: 634abe8a237e27dfe82376e6ef32280aab5d4a27
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44689265"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "45005889"
 ---
 # <a name="microsoft-threat-protection-preview-features"></a>Fonctionnalités d’aperçu de la protection contre les menaces Microsoft
 
@@ -50,7 +50,7 @@ Activez le paramètre aperçu de l’expérience pour commencer à utiliser les 
 
 3. Sélectionnez **Aperçu**  >  **des fonctionnalités activer les fonctionnalités d’aperçu**. 
 
-3. Cliquez sur **Enregistrer**.
+3. Sélectionnez **Enregistrer**.
 
 Vous saurez que les fonctionnalités d’aperçu sont activées lorsque vous voyez que la case à cocher **activer l’aperçu des fonctionnalités** est activée. 
 
@@ -60,7 +60,5 @@ Les fonctionnalités et améliorations suivantes sont actuellement disponibles l
 - **[Tables d’identité et d’application](advanced-hunting-schema-tables.md)** : obtenez une visibilité sur les événements d’authentification, les requêtes Active Directory et l’activité liée aux applications avec les tables [IdentityLogonEvents](advanced-hunting-identitylogonevents-table.md), [IdentityQueryEvents](advanced-hunting-identityqueryevents-table.md)et [AppFileEvents](advanced-hunting-appfileevents-table.md) dans le schéma de chasse avancé.
 
 - **[Aller-retour : parcourir](advanced-hunting-go-hunt.md)** rapidement un tableau croisé dynamique à partir de l’examen d’un événement spécifique, d’un utilisateur, d’un appareil ou d’autres types d’entité à l’aide des fonctionnalités de recherche [avancée](advanced-hunting-overview.md) basées sur les requêtes.
-
-- **[Table EmailPostDeliveryEvents](advanced-hunting-emailpostdeliveryevents-table.md)** : utilisez ce tableau pour créer des requêtes de [chasse avancées](advanced-hunting-overview.md) qui vérifient les actions effectuées sur les messages électroniques une fois qu’ils ont été remis aux boîtes aux lettres des destinataires.
 
 - **[Fonction FileProfile ()](advanced-hunting-fileprofile-function.md)** : utilisez dans vos requêtes de [chasse avancée](advanced-hunting-overview.md) pour incorporer des informations complètes sur les fichiers.

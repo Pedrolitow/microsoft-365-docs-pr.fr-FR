@@ -22,12 +22,12 @@ search.appverid:
 - BEA160
 ms.assetid: b1bc0bef-4608-4601-813a-cdd9f746709a
 description: Découvrez comment annuler votre abonnement d’évaluation ou payant Microsoft 365 pour les entreprises.
-ms.openlocfilehash: 3f60792446b468aaa5c85d03ab761fd75e607b8b
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: da9a86973c271fce8a9552cfc0ce1b287f7debc8
+ms.sourcegitcommit: 3ddcf08e8deec087df1fe524147313f1cb12a26d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44818518"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "45023368"
 ---
 # <a name="cancel-your-subscription"></a>Annuler votre abonnement
 
@@ -144,10 +144,12 @@ Lorsque l’annulation devient effective, vos utilisateurs perdent l’accès à
 
 ### <a name="uninstall-office-optional"></a>Désinstaller Office (facultatif)
 
-Si vous avez annulé votre abonnement, et que vous n’avez pas déplacé les utilisateurs vers un autre abonnement qui inclut Microsoft 365, Microsoft 365 s’exécute en mode de fonctionnalités réduites. Lorsque cela se produit, les utilisateurs peuvent uniquement lire et imprimer des documents, et les applications Microsoft 365 afficher [des notifications de produit sans licence](https://support.microsoft.com/office/0d23d3c0-c19c-4b2f-9845-5344fedc4380.aspx). Pour éviter toute confusion, demandez à vos utilisateurs de [désinstaller Office](https://support.microsoft.com/office/9dd49b83-264a-477a-8fcc-2fdf5dbf61d8.aspx) de leurs ordinateurs.
+Si vous avez annulé votre abonnement, et que vous n’avez pas [déplacé les utilisateurs vers un autre abonnement](move-users-different-subscription.md) qui inclut Microsoft 365, Microsoft 365 s’exécute en mode de fonctionnalités réduites. Lorsque cela se produit, les utilisateurs peuvent uniquement lire et imprimer des documents, et les applications Microsoft 365 afficher [des notifications de produit sans licence](https://support.microsoft.com/office/0d23d3c0-c19c-4b2f-9845-5344fedc4380.aspx). Pour éviter toute confusion, demandez à vos utilisateurs de [désinstaller Office](https://support.microsoft.com/office/9dd49b83-264a-477a-8fcc-2fdf5dbf61d8.aspx) de leurs ordinateurs.
 
 ## <a name="related-articles"></a>Articles connexes
 
 [Renouveler votre abonnement](renew-your-subscription.md)
 
 [Réactiver votre abonnement](reactivate-your-subscription.md)
+
+[Transférer des utilisateurs vers un autre abonnement](move-users-different-subscription.md)

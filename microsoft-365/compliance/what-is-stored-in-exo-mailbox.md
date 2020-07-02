@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 ROBOTS: NOINDEX, NOFOLLOW
 description: Les données générées par les applications basées sur le nuage dans Microsoft 365 sont stockées ou associées à la boîte aux lettres Exchange Online d’un utilisateur.
-ms.openlocfilehash: 946ad069a57e411c20d9b0a723d28dc03a4b094f
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: dc8588008194b5ea9e414efd1354d835e6bb7a63
+ms.sourcegitcommit: 0650da0e54a2b484a3156b3aabe44397fbb38e00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43626280"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "45016297"
 ---
 # <a name="content-stored-in-exchange-online-mailboxes"></a>Contenu stocké dans les boîtes aux lettres Exchange Online
 
@@ -32,10 +32,10 @@ Le tableau suivant répertorie les applications qui stockent ou associent des do
 
 |Application Microsoft 365|Description|
 |:---------|:---------|
-|Formulaires|Les formulaires (stockés sous forme de fichier PDF) et les réponses à un formulaire (stocké dans un fichier CSV) sont joints aux messages électroniques et stockés dans un dossier masqué dans la boîte aux lettres de l’utilisateur qui a créé le formulaire. Lorsque vous exportez du contenu à partir de formulaires dans un fichier PST, ces données se trouvent dans le dossier **ApplicationDataRoot** d’un sous-dossier nommé avec le GUID suivant : **c9a559d2-7aab-4F13-A6ED-e7e9c52aec87**.|
-|Groupes Microsoft 365|Les messages électroniques, les éléments de calendrier, les contacts (personnes), les notes et les tâches sont stockés dans la boîte aux lettres associée à un groupe Microsoft 365.|
+|Formulaires|Les formulaires et les réponses à un formulaire sont stockés dans des fichiers joints aux messages électroniques et stockés dans un dossier masqué dans la boîte aux lettres de l’utilisateur qui a créé le formulaire. Les formulaires créés avant le 2020 avril sont stockés sous forme de fichier PDF. Les formulaires créés après 2020 sont stockés en tant que fichiers JSON.  Les réponses à un formulaire sont stockées dans un fichier CSV. Lorsque vous exportez du contenu à partir de formulaires dans un fichier PST, ces données se trouvent dans le dossier **ApplicationDataRoot** d’un sous-dossier nommé avec le GUID suivant : **c9a559d2-7aab-4F13-A6ED-e7e9c52aec87**.|
+|Groupes Microsoft 365|Les messages électroniques, les éléments de calendrier, les contacts (personnes), les notes et les tâches sont stockés dans la boîte aux lettres associée à un groupe Microsoft 365.|
 |Outlook/Exchange Online|Les messages électroniques, les éléments de calendrier, les contacts (personnes), les notes et les tâches sont stockés dans la boîte aux lettres d’un utilisateur.|
-|Contacts|Les contacts dans l’application contacts (qui sont les mêmes contacts que ceux accessibles dans Outlook) sont stockés dans la boîte aux lettres d’un utilisateur.|
+|Personnes|Les contacts dans l’application contacts (qui sont les mêmes contacts que ceux accessibles dans Outlook) sont stockés dans la boîte aux lettres d’un utilisateur.|
 |Planification de la classe|Les plans créés au cours de la planification de classe sont stockés dans la boîte aux lettres du groupe Microsoft 365 correspondant qui est mis en service lors de la création d’un plan. L’alias de la boîte aux lettres de groupe est le nom du plan.|
 |Skype Entreprise|Les conversations dans Skype entreprise sont stockées dans le dossier historique des conversations dans la boîte aux lettres d’un utilisateur. Si la boîte aux lettres d’un participant à une réunion Skype est placée en conservation pour litige ou affectée à une stratégie de rétention, les fichiers joints à une réunion sont conservés dans la boîte aux lettres des participants.|
 |Sway|Les Sways sont stockés sous forme de fichier HTML joint à un message électronique et stockés dans un dossier masqué dans la boîte aux lettres de l’utilisateur qui a créé le Sway. Lorsque vous exportez du contenu à partir de Sway dans un fichier PST, ces données se trouvent dans le dossier **ApplicationDataRoot** dans un sous-dossier nommé avec le GUID suivant) **905fcf26-4EB7-48A0-9ff0-8dcc7194b5ba**.|

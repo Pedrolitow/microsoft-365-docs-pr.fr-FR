@@ -21,12 +21,12 @@ description: Centre d’administration Microsoft 365-Découvrez les fonctionnali
 ms.custom:
 - MACDashWhatsNew
 - AdminSurgePortfolio
-ms.openlocfilehash: d0c32c7f7ac3b2824cd48c0e10085e3d59a16c69
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+ms.openlocfilehash: 0bb0955e08c187ae7b425228f435566bcd8e01d7
+ms.sourcegitcommit: 0650da0e54a2b484a3156b3aabe44397fbb38e00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44780706"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "45015992"
 ---
 # <a name="whats-new-in-the-microsoft-365-admin-center"></a>Nouveautés du centre d’administration Microsoft 365
 
@@ -349,7 +349,7 @@ De nombreuses modifications ont été apportées aux rôles dans le centre d’a
 
 - **Favoris** : vous pouvez ajouter une étoile à vos rôles préférés ou les plus utilisés, afin de pouvoir les trouver facilement en triant la colonne ou en créant un filtre.
 - **Utilisateurs actifs**  >  **Manage Roles** -il a été mis à jour pour s’aligner sur les modifications apportées aux rôles. Comme avec la liste de rôles, nous avons défini l’étendue de la liste de rôles par défaut sur le plus utile, mais vous pouvez voir tous les rôles en développant **Afficher tout par catégorie**.
-- **Rôle de lecteur global** : vous avez demandé à le faire ! Compris! Le rôle de [lecteur global](add-users/about-admin-roles.md#azure-ad-roles-available-in-the-microsoft-365-admin-center) !
+- **Rôle de lecteur global** : vous avez demandé à le faire ! Compris! Le rôle de [lecteur global](add-users/about-admin-roles.md) !
 
 ### <a name="report-an-issue"></a>Signaler un problème
 
@@ -403,7 +403,7 @@ Une mise à jour a été mise à jour vers l’un des assistants d’installatio
 Nous disposons de mises à jour pour la facturation et les abonnements ce mois-ci :
 
 - Abonnements basés sur des appareils : vous pouvez attribuer ou annuler l’affectation de licences **Microsoft 365 Apps for Education (Device)** à des appareils dans le centre d’administration Microsoft 365. **Microsoft 365 Apps for Education (Device)** est une licence de module complémentaire qui vous permet d’attribuer une licence à un appareil. Accédez à **facturation**de  >  **vos produits** pour trouver et acheter la licence.
-- Gestion des licences basées sur les utilisateurs : nous avons mis à jour la manière dont vous attribuez des licences aux utilisateurs actifs des **utilisateurs dans**  >  **Active users** le nouveau style. Pour plus d’informations, reportez-vous aux rubriques suivantes :
+- Gestion des licences basées sur les utilisateurs : nous avons mis à jour la manière dont vous attribuez des licences aux utilisateurs actifs des **utilisateurs dans**  >  **Active users** le nouveau style. Pour plus d’informations, voir :
   - [Attribuer des licences aux utilisateurs](manage/assign-licenses-to-users.md)
   - [Annuler l'assignation des licences aux utilisateurs](manage/remove-licenses-from-users.md)
 

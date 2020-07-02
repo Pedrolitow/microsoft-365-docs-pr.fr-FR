@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: de2da300-dbb6-4725-bb12-b85a9d296e75
 description: 'Protégez votre courrier électronique et vos données professionnelles contre les menaces informatiques, notamment les ransomware, le hameçonnage et les pièces jointes malveillantes. '
-ms.openlocfilehash: 79ff8642170a5e45f67d95d7993632fd66252208
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+ms.openlocfilehash: 12a8d036a043cfdd162b5aa47e1d6d5023a42c81
+ms.sourcegitcommit: 634abe8a237e27dfe82376e6ef32280aab5d4a27
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44779952"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "45005629"
 ---
 # <a name="top-10-ways-to-secure-microsoft-365-for-business-plans"></a>10 façons de sécuriser les offres Microsoft 365 pour les entreprises
 
@@ -43,16 +43,16 @@ Microsoft vous recommande d’effectuer les tâches indiquées dans le tableau s
   
 ||**Tâche**|**Microsoft 365 Business Standard**|**Microsoft 365 Business Premium**|
 |:-----|:-----|:-----|:-----|
-|1   <br/> |[Configurer l’authentification multifacteur](secure-your-business-data.md#setup) <br/> |![Inclus](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |![Inclus](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
-|n°2  <br/> |[Former vos utilisateurs](secure-your-business-data.md#train) <br/> |![Inclus](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |![Inclus](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
-|3  <br/> |[Utiliser des comptes d’administration dédiés](secure-your-business-data.md#admin) <br/> |![Inclus](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |![Inclus](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
+|1   <br/> |[Configurer l’authentification multifacteur](secure-your-business-data.md#setup) <br/> |![Inclus](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |![Inclus](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
+|2   <br/> |[Former vos utilisateurs](secure-your-business-data.md#train) <br/> |![Inclus](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |![Inclus](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
+|3   <br/> |[Utiliser des comptes d’administration dédiés](secure-your-business-data.md#admin) <br/> |![Inclus](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |![Inclus](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
 |4   <br/> |[Augmenter le niveau de protection contre les programmes malveillants dans les messages](secure-your-business-data.md#malware) <br/> |![Inclus](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |![Inclus](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
-|5   <br/> |[Se protéger contre les rançongiciels](secure-your-business-data.md#ransomware) <br/> |![Inclus](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |![Inclus](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
-|6   <br/> |[Arrêter le transfert automatique pour le courrier électronique](secure-your-business-data.md#forwarding) <br/> |![Inclus](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |![Inclus](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
-|7   <br/> |[Utiliser le chiffrement de messages Office](secure-your-business-data.md#encryption) <br/> ||![Inclus](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
-|8   <br/> |[Protéger votre courrier électronique contre les attaques par hameçonnage](secure-your-business-data.md#phishing) <br/> ||![Inclus](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
-|9   <br/> |[Protection contre les pièces jointes et les fichiers malveillants avec des pièces jointes fiables ATP](secure-your-business-data.md#atp) <br/> ||![Inclus](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
-|10   <br/> |[Protection contre les attaques de hameçonnage à l’aide de liens fiables ATP](secure-your-business-data.md#phishingatp) <br/> ||![Inclus](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
+|5   <br/> |[Se protéger contre les rançongiciels](secure-your-business-data.md#ransomware) <br/> |![Inclus](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |![Inclus](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
+|6   <br/> |[Arrêter le transfert automatique pour le courrier électronique](secure-your-business-data.md#forwarding) <br/> |![Inclus](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |![Inclus](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
+|7   <br/> |[Utiliser le chiffrement de messages Office](secure-your-business-data.md#encryption) <br/> ||![Inclus](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
+|8   <br/> |[Protéger votre courrier électronique contre les attaques par hameçonnage](secure-your-business-data.md#phishing) <br/> ||![Inclus](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
+|9   <br/> |[Protection contre les pièces jointes et les fichiers malveillants avec des pièces jointes fiables ATP](secure-your-business-data.md#atp) <br/> ||![Inclus](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
+|10   <br/> |[Protection contre les attaques de hameçonnage à l’aide de liens fiables ATP](secure-your-business-data.md#phishingatp) <br/> ||![Inclus](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
    
 Avant de commencer, vérifiez votre [score de sécurité microsoft 365](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-secure-score) dans le centre de sécurité Microsoft 365. À partir d’un tableau de bord centralisé, vous pouvez surveiller et améliorer la sécurité de vos identités, données, applications, périphériques et infrastructure Microsoft 365. Vous disposez de points pour la configuration des fonctionnalités de sécurité recommandées, l’exécution de tâches liées à la sécurité (telles que l’affichage de rapports) ou l’adressage de recommandations avec une application ou un logiciel tiers. Avec des informations supplémentaires et une meilleure visibilité sur un ensemble plus large de produits et services Microsoft, vous pouvez vous sentir confiant des rapports sur l’état de la sécurité de votre organisation.
   
@@ -168,7 +168,7 @@ Pour créer une règle de transport de messagerie, affichez une [vidéo de forma
 > [!TIP]
 > Vous pouvez également ajouter les fichiers que vous souhaitez bloquer à la liste anti-programmes malveillants à l' [étape 4](#4-raise-the-level-of-protection-against-malware-in-mail).
 
-Pour plus d’informations, reportez-vous aux rubriques suivantes :
+Pour plus d’informations, voir :
   
 - [Comment traiter les ransomware](https://go.microsoft.com/fwlink/?linkid=2016501&amp;clcid=0x409)
     
@@ -325,15 +325,17 @@ Pour accéder aux liens fiables ATP, affichez une [vidéo de formation courte](h
     
 Pour modifier la stratégie par défaut :
   
-1. Sur la page Liens approuvés, sous **stratégies qui s’appliquent à l’ensemble de l’organisation**, sélectionnez la stratégie **par défaut** . 
+1. Sur la page Liens approuvés, sous **stratégies qui s’appliquent à l’ensemble de l’organisation**, double-cliquez sur la stratégie **par défaut** . 
     
-2. Sous **paramètres qui s’appliquent au contenu à l’exception du courrier électronique**, sélectionnez **Microsoft 365 apps pour entreprise, Office pour iOS et Android**.
+2. Sous **paramètres qui s’appliquent au contenu dans Office 365**, entrez une URL à bloquer, telle que _example.com_, puis sélectionnez **+** .
+
+3. Sous **paramètres qui s’appliquent au contenu à l’exception du courrier électronique**, sélectionnez **applications Office 365**, **ne pas suivre lorsque les utilisateurs cliquent sur les liens fiables**et **ne permettent pas aux utilisateurs de cliquer sur les liens fiables vers l’URL d’origine**.
     
-3. Sélectionnez **Enregistrer**. 
+4. Sélectionnez **Enregistrer**. 
     
 Pour créer une stratégie ciblée pour tous les destinataires de votre domaine, procédez comme suit :
   
-1. Sur la page Liens approuvés, sous **stratégies qui s’appliquent à l’ensemble de l’organisation**, sélectionnez cette option **+** pour créer une nouvelle stratégie. 
+1. Sur la page Liens approuvés, sous **stratégies qui s’appliquent à des destinataires spécifiques**, sélectionnez **+** pour créer une nouvelle stratégie. 
     
 2. Appliquez les paramètres présentés dans le tableau suivant.
     
@@ -343,7 +345,7 @@ Pour créer une stratégie ciblée pour tous les destinataires de votre domaine,
 |:-----|:-----|
 |Nom  <br/> |Stratégie de liens fiables pour tous les destinataires dans le domaine  <br/> |
 |Sélectionner l’action pour les URL potentiellement malveillantes dans les messages  <br/> |Sélectionnez **les URL activées seront réécrites et vérifiées par rapport à une liste de liens malveillants connus lorsque l’utilisateur clique sur le lien**.  <br/> |
-|Utiliser les pièces jointes fiables pour analyser le contenu téléchargeable  <br/> |Activez cette case à cocher.  <br/> |
+|Application de l’analyse des URL en temps réel pour les liens suspects et les liens pointant vers des fichiers  <br/> |Activez cette case à cocher.  <br/> |
 |Appliqué à  <br/> |Le domaine du destinataire est. . . Sélectionnez votre domaine.  <br/> |
 |
    

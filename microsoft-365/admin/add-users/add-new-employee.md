@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9cdfa29d-7681-4af2-a79d-3e72e7ab9778
 description: Ajoutez de nouveaux employés à Microsoft 365 pour les applications de messagerie, Skype et Office.
-ms.openlocfilehash: bd0ed77954c7b7baa60e50473818577ec9ae7f76
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+ms.openlocfilehash: de647b926a3e1a82aaed4928b96101bd59df07ff
+ms.sourcegitcommit: 3ddcf08e8deec087df1fe524147313f1cb12a26d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44780672"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "45022132"
 ---
 # <a name="add-a-new-employee-to-microsoft-365"></a>Ajouter un nouvel employé à Microsoft 365
 
@@ -50,7 +50,7 @@ Voici une présentation rapide :
 ## <a name="step-1-create-a-microsoft-365-account-for-the-employee"></a>Étape 1 : créer un compte Microsoft 365 pour l’employé
 
 
-Pour obtenir des instructions, consultez la rubrique [Ajouter des utilisateurs individuellement ou en bloc à l’aide de Microsoft 365-admin](add-users.md). Lorsque vous configurez votre nouvel employé, vous pouvez choisir d’envoyer les informations de connexion au compte personnel de l’employé. De cette façon, ils recevront un courrier électronique de l’équipe du service Microsoft Online qui leur indique comment se connecter à Microsoft 365.
+Pour obtenir des instructions, consultez [la rubrique ajouter des utilisateurs et attribuer des licences en même temps](add-users.md). Lorsque vous configurez votre nouvel employé, vous pouvez choisir d’envoyer les informations de connexion au compte personnel de l’employé. De cette façon, ils recevront un courrier électronique de l’équipe du service Microsoft Online qui leur indique comment se connecter à Microsoft 365.
   
 ## <a name="step-2-give-the-employee-their-user-id-and-password"></a>Étape 2 : donnez à l’employé son ID utilisateur et son mot de passe
 
@@ -85,12 +85,8 @@ Et voici un aide-mémoire pour les aider à démarrer :
 |Complétez la formation OneDrive entreprise pour savoir comment stocker et organiser vos documents, présentations et feuilles de calcul dans le Cloud.  <br/> |Conservez vos documents professionnels dans le Cloud à l’aide de OneDrive entreprise. Vous pouvez toujours accéder à votre contenu, même si vous êtes connecté à Microsoft 365 sur un autre ordinateur. [Regarder une vidéo pour découvrir comment utiliser votre OneDrive entreprise](https://support.microsoft.com/office/b30da4eb-ddd2-44b6-943b-e6fbfc6b8dde) <br/><br/> **Formation :** [formation onedrive entreprise](https://support.microsoft.com/office/1f608184-b7e6-43ca-8753-2ff679203132) (sélectionnez onedrive entreprise).  <br/> |
 |Suivez la formation SharePoint Online pour collaborer avec vos collègues et partager du contenu.  <br/> |La meilleure solution pour conserver les documents auxquels les collègues seront également accessibles est de SharePoint Online.  <br/> <br/>**Formation :** [vidéo : collaborer avec du contenu d’équipe à l’aide de SharePoint Online](https://support.microsoft.com/office/c17b6824-cc22-478f-8757-497cc6b57121) <br/><br/> **Découvrez :** Comment votre organisation utilise-elle SharePoint Online et quels types de documents y sont stockés ? De plus, quels documents sont stockés dans OneDrive entreprise.  <br/> |
 
-   
 ## <a name="related-articles"></a>Articles connexes
-
 
 [Supprimer un ancien employé de Microsoft 365](remove-former-employee.md)
   
-[Ajouter des utilisateurs individuellement ou en bloc à Microsoft 365](add-users.md)
-  
-
+[Ajouter des utilisateurs et attribuer des licences au même time65](add-users.md)

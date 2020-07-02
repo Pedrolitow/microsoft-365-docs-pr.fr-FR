@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 14de9d84ef19be3dcf1e630b2814a6060bfe7f27
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 250d19a09d79fc5fd8c69f2ebd24abadc642fafc
+ms.sourcegitcommit: 634abe8a237e27dfe82376e6ef32280aab5d4a27
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44036498"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "45005845"
 ---
 # <a name="learn-the-advanced-hunting-query-language"></a>Découvrir le langage de requête de repérage avancé
 
@@ -66,7 +66,7 @@ Un bref commentaire a été ajouté au début de la requête pour décrire sa fo
 // Finds PowerShell execution events that could involve a download
 ```
 
-La requête elle-même commence généralement par un nom de table suivi d’une série d’éléments commençant par une barre verticale (`|`). Dans cet exemple, nous commençons par créer une Union de deux tables `DeviceProcessEvents` , `DeviceNetworkEvents`et et ajoutons des éléments redirigés selon les besoins.
+La requête elle-même commence généralement par un nom de table suivi d’une série d’éléments commençant par une barre verticale (`|`). Dans cet exemple, nous commençons par créer une Union de deux tables, `DeviceProcessEvents` et `DeviceNetworkEvents` et ajoutons des éléments redirigés selon les besoins.
 
 ```kusto
 union DeviceProcessEvents, DeviceNetworkEvents
@@ -81,7 +81,7 @@ Le premier élément Redirigé est un filtre temporel étendu aux sept jours pr�
 ### <a name="check-specific-processes"></a>Vérifier des processus spécifiques
 La plage horaire est immédiatement suivie d’une recherche de noms de fichiers de processus représentant l’application PowerShell.
 
-```
+```kusto
 // Pivoting on PowerShell processes
 | where FileName in~ ("powershell.exe", "powershell_ise.exe")
 ```

@@ -16,12 +16,12 @@ ms.assetid: 9721b46d-cbea-4121-be51-542395e6fd21
 ms.custom:
 - seo-marvel-apr2020
 description: Les administrateurs peuvent en savoir plus sur les options disponibles et préférées pour autoriser les messages entrants dans Exchange Online Protection (EOP).
-ms.openlocfilehash: c9f444483afea82db1fbbe3b5be98751d42c2f5e
-ms.sourcegitcommit: c696852da06d057dba4f5147bbf46521910de3ab
+ms.openlocfilehash: 9ca1fc3911dd3417304d0d1de6923408373bc33c
+ms.sourcegitcommit: 634abe8a237e27dfe82376e6ef32280aab5d4a27
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44545945"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "45005857"
 ---
 # <a name="create-safe-sender-lists-in-eop"></a>Créer des listes d’expéditeurs approuvés dans EOP
 
@@ -126,7 +126,7 @@ Par exemple, supposons que Blue Yonder Airlines a embauché Margie’s Travel po
 
 - L' `5322.From` adresse est blueyonder@news.blueyonderairlines.com, ce que vous verrez dans Outlook.
 
-Listes des expéditeurs approuvés et listes de domaines fiables dans les stratégies de blocage du courrier indésirable dans EOP, inspectez les `5321.MailFrom` `5322.From` adresses et. Les expéditeurs approuvés Outlook utilisent uniquement l' `5322.From` adresse.
+Listes des expéditeurs approuvés et listes de domaines fiables dans les stratégies de blocage du courrier indésirable dans EOP, inspectez uniquement les `5322.From` adresses, de même que les expéditeurs approuvés Outlook qui utilisent l' `5322.From` adresse.
 
 Pour empêcher le filtrage de ce message, procédez comme suit :
 

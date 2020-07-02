@@ -17,12 +17,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 48ff6d6f5cac0991895c40cae90ca31657cfedff
-ms.sourcegitcommit: bd5a08785b5ec320b04b02f8776e28bce5fb448f
+ms.openlocfilehash: 39fbc934dabcb3b0b24bd0b861be8db14b6e0c35
+ms.sourcegitcommit: 3ddcf08e8deec087df1fe524147313f1cb12a26d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "44844881"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "45023380"
 ---
 # <a name="whats-coming-in-microsoft-secure-score"></a>Qu’est-ce qui arrive dans le score de sécurité Microsoft ?
 
@@ -30,26 +30,11 @@ Pour faire en sorte que [Microsoft Secure score](microsoft-secure-score.md) un m
 
 Pour en savoir plus sur les modifications récentes, consultez [la rubrique what’s New in Microsoft Secure score ?](microsoft-secure-score.md#whats-new)
 
-## <a name="june-2020"></a>Juin 2020
+## <a name="july-2020"></a>Juillet 2020
 
-### <a name="remove-improvement-action-for-microsoft-defender-advanced-threat-protection"></a>Supprimer l’action d’amélioration pour la protection avancée contre les menaces Microsoft Defender
+### <a name="add-improvement-actions-for-azure-advanced-threat-protection"></a>Ajouter des actions d’amélioration pour Azure protection avancée contre les menaces
 
-* Activer les règles de réduction de la surface d’attaque
-
-### <a name="add-improvement-actions-for-microsoft-defender-advanced-threat-protection"></a>Ajouter des actions d’amélioration pour la protection avancée contre les menaces Microsoft Defender
-
-* Empêcher Adobe Reader de créer des processus enfants
-* Utiliser la protection avancée contre les ransomware
-* Empêcher toutes les applications Office de créer des processus enfants
-* Empêcher les applications Office de créer du contenu exécutable
-* Bloquer JavaScript ou VBScript pour lancer le téléchargement de contenu exécutable
-* Bloquer l’exécution des scripts potentiellement brouillés
-* Bloquer le contenu exécutable à partir du client de messagerie et de la messagerie Web
-* Bloquer l’application de communication Office de la création de processus enfants
-* Bloquer les processus non approuvés et non signés qui s’exécutent à partir de ports USB
-* Blocage de la persistance via l’abonnement aux événements WMI
-* Bloquer l’injection de code dans d’autres processus par les applications Office
-* Bloquer l’exécution des fichiers exécutables sauf s’ils répondent à un critère de récurrence, d’âge ou de liste approuvée
-* Création de processus de bloc provenant de commandes PSExec et WMI
-* Bloquer le vol d’informations d’identification à partir du sous-système Windows local Security Authority (lsass.exe)
-* Bloquer les appels d’API Win32 à partir de macros Office
+- Chemins de déplacement latéraux risqués
+- Attributs de compte non sécurisés
+- Activer les fonctionnalités de sécurité sur les approbations Active Directory
+- Supprimer les attributs d’historique SID non sécurisé des entités

@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Découvrez le comportement de rétention qui s’applique spécifiquement à la messagerie électronique et aux dossiers publics Exchange.
-ms.openlocfilehash: 0357e647883fe681010425d7dd8599101ab559c7
-ms.sourcegitcommit: e3900c818877c2cdcd227917ec975c03e828c7ea
+ms.openlocfilehash: e19e790c23c5e61748f38fb22f96d2347acb144e
+ms.sourcegitcommit: 5e8901e7e571f20ede04f460bd3e7077dda004ca
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "44861171"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "44874882"
 ---
 # <a name="learn-about-retention-policies-for-exchange"></a>Découvrir les stratégies de rétention pour Exchange
 
@@ -34,9 +34,9 @@ Pour la messagerie, le calendrier et les autres éléments de l’utilisateur, u
 
 Pour un dossier public, une stratégie de rétention est appliquée au niveau du dossier, et non au niveau de la boîte aux lettres. 
 
-Les boîtes aux lettres et les dossiers publics utilisent le dossier Éléments récupérables pour conserver des éléments. Seules les personnes disposant des autorisations eDiscovery peuvent afficher le dossier Éléments récupérables d’un autre utilisateur.
+Les boîtes aux lettres et les dossiers publics utilisent le même dossier [Éléments récupérables ](https://docs.microsoft.com/exchange/security-and-compliance/recoverable-items-folder/recoverable-items-folder)pour conserver des éléments. Seules les personnes disposant des autorisations eDiscovery peuvent afficher le dossier Éléments récupérables d’un autre utilisateur.
   
-Par défaut, lorsqu’un utilisateur supprime un message dans un dossier autre que le dossier Éléments supprimés, le message est déplacé vers le dossier Éléments supprimés. Lorsqu’un utilisateur supprime un élément dans le dossier Éléments supprimés, le message est déplacé vers le dossier Éléments récupérables. En outre, une personne peut supprimer, de façon réversible, un élément (MAJ +SUPPR) dans n’importe quel dossier, ce qui permet d’ignorer le dossier Éléments supprimés et de placer l’élément directement dans le dossier Éléments récupérables.
+Par défaut, lorsqu’un utilisateur supprime un message dans un dossier autre que le dossier Éléments supprimés, le message est déplacé vers le dossier Éléments supprimés. Lorsqu’un utilisateur supprime un élément dans le dossier Éléments supprimés, le message est déplacé vers le dossier Éléments récupérables. En outre, une personne peut supprimer de façon réversible, un élément (MAJ + SUPPR) dans n’importe quel dossier, ce qui permet de passer outre le dossier Éléments supprimés et de placer l’élément directement dans le dossier Éléments récupérables.
   
 Lorsque vous appliquez une stratégie de rétention à un emplacement Exchange, un travail du minuteur évalue régulièrement les éléments du dossier Éléments récupérables. Si un élément ne correspond pas aux règles d’au moins une stratégie de rétention, l’élément est supprimé définitivement du dossier Éléments récupérables.
 

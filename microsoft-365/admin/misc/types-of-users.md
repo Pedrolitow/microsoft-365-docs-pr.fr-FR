@@ -23,12 +23,12 @@ search.appverid:
 ms.assetid: 0dc55430-98d6-4cbe-ba69-1a4ad29a967d
 ROBOTS: NOINDEX
 description: 'Découvrez les types d’utilisateurs dans le centre d’administration. '
-ms.openlocfilehash: 4e28715674360dbbed7ef398207e39e45b1fec81
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: b0b0638ee9fb258cfd84bafdc1c09ab691a1d060
+ms.sourcegitcommit: 3ddcf08e8deec087df1fe524147313f1cb12a26d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399217"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "45022202"
 ---
 # <a name="quick-help-types-of-users"></a>Aide rapide : Types d'utilisateurs
 
@@ -46,12 +46,12 @@ Sur la page **utilisateurs actifs** dans le centre d’administration 365 de Mic
 |Administrateurs généraux  <br/> |Ces utilisateurs ont accès à toutes les fonctionnalités d’administration. La personne s’abonnant à Microsoft 365 devient un administrateur global, mais vous pouvez en avoir plusieurs si vous le souhaitez. Les administrateurs globaux sont les seuls administrateurs qui peuvent attribuer des rôles d’administrateur à d’autres.  <br/> |
 |Administrateurs de mot de passe  <br/> |Ces utilisateurs peuvent réinitialiser les mots de passe, gérer les demandes de service et surveiller l'état d'intégrité des services à votre place.  <br/> |
 |Administrateurs de services  <br/> |Ces utilisateurs peuvent gérer les demandes de service et surveiller l'état d'intégrité des services à votre place.  <br/> |
-|Administrateurs de gestion des utilisateurs  <br/> |Ces utilisateurs peuvent réinitialiser les mots de passe, surveiller l'état d'intégrité des services et gérer les comptes d'utilisateurs, les groupes d'utilisateurs et les demandes de service. Ils ne peuvent pas supprimer un administrateur général, créer d'autres rôles d'administrateur ou réinitialiser les mots de passe des administrateurs de facturation, généraux et de services.  <br/> |
+|Administrateurs de gestion des utilisateurs  <br/> |These users can reset passwords, monitor service health, manage user accounts, user groups, and service requests. They can't delete a global admin, create other admin roles, or reset passwords for billing, global, and service admins.  <br/> |
 |Ajouter un filtre personnalisé  <br/> |Cette option vous permet de créer un filtre personnalisé pour afficher uniquement certains types d’utilisateurs de votre préférence, tels que les utilisateurs qui se trouvent sur le plan Microsoft 365 Apps for Business. [Aide rapide : filtrer les utilisateurs](https://docs.microsoft.com/microsoft-365/admin/add-users/create-edit-or-delete-a-custom-user-view).  <br/> |
    
 ## <a name="related-articles"></a>Articles connexes
 
-[Ajouter des utilisateurs dans Microsoft 365](../add-users/add-users.md)
+[Ajouter des utilisateurs et attribuer des licences en même temps](../add-users/add-users.md)
     
 [Attribuer des licences aux utilisateurs dans Microsoft 365 pour les entreprises](../manage/assign-licenses-to-users.md)
     

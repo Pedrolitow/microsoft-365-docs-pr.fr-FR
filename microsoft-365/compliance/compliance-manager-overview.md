@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Découvrez le gestionnaire de conformité Microsoft, un outil d’évaluation des risques gratuit basé sur un flux de travail dans le portail d’approbation de service Microsoft.
-ms.openlocfilehash: 79f3145e2512bfb174339ef2cde9a2594b116004
-ms.sourcegitcommit: 56772bed89516cebc5eb370e292ccfbb4889cb38
+ms.openlocfilehash: 514ee0e032e378c407713254d5d11fcd41a8d91c
+ms.sourcegitcommit: 0650da0e54a2b484a3156b3aabe44397fbb38e00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "44330744"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "45016127"
 ---
 # <a name="microsoft-compliance-manager-preview"></a>Gestionnaire de conformité Microsoft (aperçu)
 
@@ -31,7 +31,7 @@ ms.locfileid: "44330744"
 
 **Dans cet article**, lisez cet article pour découvrir le gestionnaire de conformité et comprendre ses principaux composants.
 
-**En savoir plus sur les mises à jour**: nous avons publié plusieurs mises à jour dans la version préliminaire publique d’avril 2020. Consultez les [notes de publication du gestionnaire de conformité](compliance-manager-release-notes.md) pour découvrir les problèmes connus et les nouveautés.
+**En savoir plus sur les mises à jour**: consultez les [notes de publication du gestionnaire de conformité](compliance-manager-release-notes.md) pour découvrir les problèmes connus et les nouveautés.
 
 ## <a name="what-is-compliance-manager"></a>Qu’est-ce que le gestionnaire de conformité
 
@@ -53,7 +53,7 @@ Avec le gestionnaire de conformité, votre organisation peut :
 
 [Microsoft Compliance score (Preview)](compliance-score.md) est une fonctionnalité du centre de conformité Microsoft 365 qui fournit une vue de niveau supérieur à la position de conformité de votre organisation. Il calcule un score basé sur les risques mesurant votre progression dans la réalisation d’actions qui contribuent à réduire les risques liés à la protection des données et aux normes réglementaires. Connaître votre score de conformité global permet à votre organisation de comprendre et de gérer la conformité. Comprendre [Comment le score de conformité est calculé](compliance-score-methodology.md).
 
-Le gestionnaire de conformité partage le même serveur principal avec le score de conformité. Lors de la phase d’aperçu public pour les deux outils, le gestionnaire de conformité est l’endroit où vous allez gérer vos évaluations et les implémentations de contrôles personnalisés. En savoir plus sur la [relation entre le score de conformité et le gestionnaire de conformité](compliance-score-release-notes.md#compliance-score-relationship-to-compliance-manager).
+Le gestionnaire de conformité partage le même serveur principal avec le score de conformité. Lors de la phase d’aperçu public pour les deux outils, le gestionnaire de conformité est l’endroit où vous allez gérer vos implémentations de contrôles personnalisés. En savoir plus sur la [relation entre le score de conformité et le gestionnaire de conformité](compliance-score-release-notes.md#compliance-score-relationship-to-compliance-manager).
 
 ## <a name="compliance-manager-components"></a>Composants du gestionnaire de conformité
 

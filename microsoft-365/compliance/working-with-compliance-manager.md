@@ -16,12 +16,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Découvrez comment utiliser le gestionnaire de conformité pour suivre, affecter et vérifier les activités de conformité aux réglementations relatives aux produits Microsoft.
-ms.openlocfilehash: fe7b04fe7687bc91e6f96fb2c3994a6536cec314
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: e12250c6f78759b2298bfb5ebba6ae79918a0fd9
+ms.sourcegitcommit: 3ddcf08e8deec087df1fe524147313f1cb12a26d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44817081"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "45023391"
 ---
 # <a name="working-with-microsoft-compliance-manager-preview"></a>Utilisation du gestionnaire de conformité Microsoft (aperçu)
 
@@ -41,7 +41,10 @@ Le gestionnaire de conformité est accessible à partir du portail d’approbati
 
 ## <a name="administration"></a>Administration
 
-Il existe des fonctions d’administration spécifiques qui sont uniquement disponibles pour l’administrateur général et ne sont visibles que lorsque vous êtes connecté avec un compte d’administrateur général. L’administrateur général peut attribuer des autorisations utilisateur et activer les mises à jour automatiques du score de sécurité.
+Il existe des fonctions d’administration spécifiques qui sont uniquement disponibles pour l’administrateur général et ne sont visibles que lorsque vous êtes connecté avec un compte d’administrateur général. L’administrateur général peut :
+- [Attribuer des rôles d’utilisateur](#assigning-compliance-manager-roles-to-users)
+- [Activer et désactiver les mises à jour du score de sécurité automatique](#controlling-automatic-secure-score-updates)
+- [Configurer les paramètres de confidentialité de l’utilisateur](#configuring-user-privacy-settings)
   
 ### <a name="assigning-compliance-manager-roles-to-users"></a>Affectation des rôles du Gestionnaire de conformité aux utilisateurs
 
@@ -94,6 +97,92 @@ Si vous choisissez **définir par action,** suivez ces étapes supplémentaires 
 8. Sélectionnez **Enregistrer.** Score de sécurité la surveillance continue est maintenant activée pour cette action.
 
 **Remarque :** Seul l’administrateur général peut activer ou désactiver les mises à jour automatiques pour toutes les actions. L’administrateur du gestionnaire de conformité peut activer les mises à jour automatiques pour des actions individuelles, mais pas pour toutes les actions de manière globale.
+
+### <a name="configuring-user-privacy-settings"></a>Configuration des paramètres de confidentialité de l’utilisateur
+
+Certaines réglementations imposent à une organisation de pouvoir supprimer les données d’historique de l’utilisateur. Pour ce faire, les fonctions des **paramètres de confidentialité** de l’utilisateur permettent aux administrateurs de :
+  
+- [Rechercher un utilisateur](#search-for-a-user)
+
+- [Exporter le rapport de l’historique des données d’un compte](#export-a-report-of-account-data-history)
+
+- [Réaffecter des éléments d’action](#reassign-action-items)
+
+- [Supprimer l’historique des données d’un utilisateur](#delete-user-data-history)
+    
+![Administrateur du Gestionnaire de conformité – Fonctions des Paramètres de confidentialité de l’utilisateur](../media/067d6c6a-712a-4dc2-9b99-de2fa4417dc3.png)
+  
+#### <a name="search-for-a-user"></a>Rechercher un utilisateur
+
+Pour rechercher un compte d’utilisateur :
+  
+1. Entrez l’adresse e-mail de l’utilisateur en saisissant l’alias (informations situées à gauche du symbole @), puis choisissez le nom de domaine en cliquant sur la liste des suffixes de domaine à droite. Si votre organisation dispose de plusieurs domaines inscrits, vous pouvez vérifier que le suffixe du nom de domaine de l’adresse de messagerie est correct.
+    
+2. Une fois le nom d’utilisateur correctement entré, sélectionnez **recherche**.
+    
+3. Si le compte d’utilisateur est introuvable, le message d’erreur « utilisateur introuvable » s’affichera sur la page. Vérifiez les informations de l’adresse de messagerie de l’utilisateur, effectuez les corrections nécessaires et sélectionnez **recherche** pour réessayer.
+    
+4. Si le compte d’utilisateur est trouvé, le texte du bouton n’affichera plus **Rechercher** mais **Effacer**, ce qui indique que le compte d’utilisateur renvoyé peut utiliser les autres fonctions qui seront affichées ci-dessous, et que l’exécution de ces fonctions sera rattachée à ce compte d’utilisateur.
+    
+5. Pour effacer les résultats de la recherche et Rechercher un autre utilisateur, sélectionnez **Effacer**.
+    
+#### <a name="export-a-report-of-account-data-history"></a>Exporter le rapport de l’historique des données d’un compte
+
+Une fois le compte d’utilisateur identifié, vous pouvez générer un rapport sur les dépendances liées à ce compte. Cette information vous permettra de réattribuer des éléments d’action ouverts ou de garantir l’accès aux preuves précédemment chargées.
+  
+ Pour générer et exporter un rapport :
+  
+1. Sélectionnez **Exporter** pour générer et télécharger un rapport des éléments d’action de contrôle du gestionnaire de conformité actuellement attribués au compte d’utilisateur renvoyé et la liste des documents téléchargés par cet utilisateur. S’il n’y a pas d’actions affectées ou de documents téléchargés, un message d’erreur affiche « aucune donnée pour cet utilisateur ».
+
+2. Le rapport est téléchargé en arrière-plan de la fenêtre du navigateur actif. Si vous ne voyez pas de menu contextuel Télécharger, vérifiez l’historique de téléchargement de votre navigateur.
+
+3. Ouvrez le document pour consulter les données du rapport.
+
+> [!NOTE]
+> This is not a historical report that retains and displays state changes to action item assignment history. The generated report is a snapshot of the control action items assigned at the time that the report is run (date and time stamp written into the report). For instance, any subsequent reassignment of action items will result in different snapshot report data if this report is generated again for the same user.
+  
+#### <a name="reassign-action-items"></a>Réaffecter des éléments d’action
+
+This function enables an organization to remove any active or outstanding dependencies on the user account by reassigning all action item ownership (which includes both active and completed action items) from the returned user account to a new user selected below. This action does not change document upload history for the returned user account.
+  
+ Pour réaffecter des éléments d’action à un autre utilisateur :
+  
+1. Cliquez sur la zone d’entrée à rechercher et sélectionner un autre utilisateur de l’organisation auquel les éléments d’action de l’utilisateur renvoyé doivent être affectés.
+    
+2. Sélectionnez **Remplacer** pour réaffecter au nouvel utilisateur sélectionné tous les éléments d’action du contrôle de l’utilisateur renvoyé.
+    
+3. Une boîte de dialogue de confirmation apparaît, indiquant que cette opération réaffecte tous les éléments d’action de contrôle de l’utilisateur actuel à l’utilisateur sélectionné. Cette action ne peut pas être annulée. Voulez-vous vraiment continuer ? »
+    
+4. Pour continuer, sélectionnez **OK**, sinon cliquez sur **Annuler**.
+    
+> [!NOTE]
+> All action items (both active and completed) will be assigned to the newly selected user. However, this action does not affect the document upload history; any documents uploaded by the previously assigned user will still show the date/time and name of the previously assigned user. 
+  
+Changing the document upload history to remove the previously assigned user will have to be done as a manual process. In that case, the administrator will need to:
+  
+1. Ouvrir le rapport d’exportation précédemment téléchargé.
+  
+2. Identifier l’élément d’action du contrôle souhaité et y accéder.
+  
+3. Sélectionnez **gérer les documents** pour accéder au référentiel de preuves pour ce contrôle.
+  
+4. Télécharger le document.
+  
+5. Supprimer le document dans le référentiel de preuves.
+  
+6. Téléchargez de nouveau le document. Le document dispose désormais d’une nouvelle date de chargement, de l’heure et du nom d’utilisateur.
+  
+#### <a name="delete-user-data-history"></a>Supprimer l’historique des données d’un utilisateur
+
+This sets control action items to 'unassigned' for all action items assigned to the returned user. This also sets uploaded by value to 'user removed' for any documents uploaded by the returned user
+  
+ Pour supprimer un élément d’action du compte d’utilisateur et l’historique de chargement des documents :
+  
+1. Sélectionnez **Supprimer**.
+
+2. Une boîte de dialogue de confirmation affiche : "cette opération supprime toutes les affectations d’éléments d’action de contrôle et l’historique de téléchargement de documents de l’utilisateur sélectionné. Cette action ne peut pas être annulée. Voulez-vous vraiment continuer ? »
+    
+3. Pour continuer, sélectionnez **OK**, sinon cliquez sur **Annuler**.
 
 ## <a name="groups"></a>Groupes
 
@@ -196,6 +285,9 @@ Toutes les actions qui ne sont pas prises en charge par l’intégration de la n
 ## <a name="assessments"></a>Évaluations
 
 Cette section explique comment afficher et utiliser vos évaluations, notamment comment en ajouter de nouvelles, les exporter, copier des informations à partir d’évaluations existantes et les conserver mises à jour via le contrôle de version.
+
+> [!NOTE]
+> Vous pouvez désormais créer des évaluations dans le score de conformité. [Afficher l’aide et les instructions](compliance-score-assessments.md).
 
 ### <a name="view-an-assessment-and-action-details"></a>Afficher les détails de l’évaluation et de l’action
   
@@ -408,13 +500,16 @@ Le tableau de bord affiche chaque modèle, ainsi que la certification et le prod
 
 Il existe trois façons de travailler avec des modèles pour créer des évaluations :
 
-1. Utilisez l’un des modèles préconfigurés fournis par Microsoft.
-2. Personnaliser un modèle préconfiguré avec vos propres actions et contrôles via le processus d’extension.
+1. Utilisez l’un des modèles prêts à l’emploi fournis par Microsoft.
+2. Personnalisez un modèle prêt à l’emploi avec vos propres actions et contrôles via le processus d’extension.
 3. Créez votre propre modèle et importez-le dans le gestionnaire de conformité.
 
-#### <a name="use-a-microsoft-pre-configured-template"></a>Utiliser un modèle préconfiguré Microsoft
+> [!NOTE]
+> Lorsque vous chargez un modèle dans le gestionnaire de conformité, il doit être approuvé par deux utilisateurs qui disposent d’un rôle d’administrateur avant qu’il ne soit publié et disponible.
 
-Les modèles préconfigurés sont disponibles dans le tableau de bord **modèles** . Afficher la [liste actuelle des modèles](compliance-manager-overview.md#templates), qui est mise à jour chaque fois qu’un nouveau modèle est disponible.
+#### <a name="use-a-ready-to-use-template"></a>Utiliser un modèle prêt à utiliser
+
+Les modèles prêts à l’emploi sont disponibles dans le tableau de bord **modèles** . Afficher la [liste actuelle des modèles](compliance-score-templates.md), qui est mise à jour chaque fois qu’un nouveau modèle est disponible.
 
 #### <a name="customize-a-template-through-the-extension-process"></a>Personnaliser un modèle via le processus d’extension
 
@@ -423,21 +518,23 @@ Les modèles préconfigurés sont disponibles dans le tableau de bord **modèles
 3. Dans le menu déroulant, sélectionnez le modèle que vous souhaitez étendre.
 4. Si vous n’avez pas déjà mis en forme les données de votre modèle dans Excel, sélectionnez le lien dans le volet flyout pour télécharger un fichier Excel. Remplissez la feuille de calcul en fonction des instructions d' [importation de données de modèle avec Excel](#import-template-data-with-excel) ci-dessous et enregistrez-la sur votre lecteur local.
 5. Importez les données de votre modèle personnalisé en sélectionnant **Parcourir** pour charger votre fichier Excel.
-6. Sélectionnez **Ajouter au tableau de bord**. Votre nouveau modèle est ensuite ajouté à votre tableau de bord **modèles** .
+6. Sélectionnez **Ajouter au tableau de bord**.
+7. Les modifications apportées au modèle nécessitent l’approbation de deux utilisateurs qui détiennent un rôle d’administrateur. Ces utilisateurs reçoivent une notification des mises à jour du modèle. Une fois que les modifications sont approuvées par deux administrateurs, vous verrez votre modèle mis à jour sur le tableau de bord **modèles** .
 
 #### <a name="create-your-own-template-and-import-it-into-compliance-manager"></a>Créez votre propre modèle et importez-le dans le gestionnaire de conformité
 
 1. Ouvrez le tableau de bord **modèles** et sélectionnez **+ Ajouter un modèle**.
 2. Dans le volet flyout de modèle, sélectionnez **créer un nouveau modèle**.
 3. Importez les données de votre modèle en sélectionnant **Parcourir** pour charger votre fichier Excel contenant les données (voir [Import template Data with Excel](#import-template-data-with-excel) ci-dessous).
-4. Sélectionnez **Ajouter au tableau de bord**. Votre nouveau modèle est ensuite ajouté à votre tableau de bord **modèles** .
+4. Sélectionnez **Ajouter au tableau de bord**.
+5. Le nouveau modèle nécessite l’approbation de deux utilisateurs qui détiennent un rôle d’administrateur. Ces utilisateurs reçoivent une notification indiquant qu’un nouveau modèle est prêt pour approbation. Une fois le modèle approuvé par deux administrateurs, vous verrez votre nouveau modèle dans le tableau de bord **modèles** .
 
 #### <a name="import-template-data-with-excel"></a>Importer des données de modèle avec Excel
 
 Pour modifier un modèle ou créer votre propre modèle, vous allez utiliser une [feuille de calcul Excel](https://go.microsoft.com/fwlink/?linkid=2124865) pour capturer les données nécessaires et les charger dans le gestionnaire de conformité. Ce modèle de feuille de calcul a un format et un schéma spécifiques qui doivent être utilisés ou qui ne seront pas importés dans le gestionnaire de conformité.
 
 > [!IMPORTANT]
-> Si vous avez déjà créé ou personnalisé des modèles dans le gestionnaire de conformité, **ce processus a été mis à jour** dans le cadre de la version du gestionnaire de conformité d’avril 2020 (aperçu). **Veuillez consulter attentivement cette section.**
+> Si vous avez déjà créé ou personnalisé des modèles dans le gestionnaire de conformité, **ce processus a été récemment mis à jour. Veuillez consulter attentivement cette section.**
 
 La feuille de calcul contient quatre onglets, trois étant obligatoires :
 
@@ -496,7 +593,7 @@ L’onglet **actions** est obligatoire.  Il désigne les actions de votre organi
 
 - **actionDescription**: fournissez une description de l’action. Vous pouvez appliquer une mise en forme telle que le texte gras et les liens hypertexte. Champ obligatoire.
 
-- **dimension-action d’action**: il s’agit d’un champ facultatif. Si vous l’incluez, l’en-tête doit inclure le préfixe « dimension- ». Toutes les dimensions que vous incluez ici seront utilisées en tant que [filtres dans le score de conformité](compliance-score-setup.md#filtering-your-dashboard-view) et apparaissent sur la [page des détails des actions d’amélioration dans le score de conformité](working-with-compliance-score.md#view-your-improvement-actions).
+- **dimension-action d’action**: il s’agit d’un champ facultatif. Si vous l’incluez, l’en-tête doit inclure le préfixe « dimension- ». Toutes les dimensions que vous incluez ici seront utilisées en tant que [filtres dans le score de conformité](compliance-score-setup.md#filtering-your-dashboard-view) et apparaissent sur la page des détails des actions d’amélioration dans le score de conformité.
 
 ##### <a name="dimensions-tab"></a>Onglet dimensions
 

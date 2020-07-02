@@ -16,12 +16,12 @@ ms.collection:
 - M365solutions
 ms.custom: ''
 description: Découvrez comment utiliser le score Complance et le gestionnaire de conformité pour améliorer votre niveau de protection des données personnelles.
-ms.openlocfilehash: 0d95c663030cf63fb83dfd40c7f3605c1c0b6f8f
-ms.sourcegitcommit: b03a7ad0a80f8b839f40b8d396ab3a049491a12f
+ms.openlocfilehash: 4a45f24d66d08c2c0f17d75d897f523ef074936c
+ms.sourcegitcommit: 0650da0e54a2b484a3156b3aabe44397fbb38e00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44695172"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "45016366"
 ---
 # <a name="use-compliance-score-and-compliance-manager-to-manage-improvement-actions"></a>Utiliser le score de conformité et le gestionnaire de conformité pour gérer les actions d’amélioration
 
@@ -109,7 +109,7 @@ Vous pouvez également ajouter un nouveau modèle personnalisé pour votre organ
 
 ## <a name="compliance-score"></a>Score de conformité
 
-Une fois que les évaluations et les spécifications de révision sont effectuées dans le gestionnaire de conformité, vous pouvez accéder à l’outil de [score de conformité](../compliance/working-with-compliance-score.md) et passer en revue le score et le secteur, ainsi que la zone de contrôle.
+Une fois que les évaluations et les spécifications de révision sont effectuées dans le gestionnaire de conformité, vous pouvez accéder à l’outil de [score de conformité](../compliance/compliance-score.md) et passer en revue le score et le secteur, ainsi que la zone de contrôle.
 
 L’outil de score de conformité dans le centre d’administration de conformité Microsoft 365 fournit plusieurs approches pour examiner et filtrer les données de conformité obtenues à partir du gestionnaire de conformité et de différents services Microsoft 365. Cet outil est automatiquement mis à jour lorsque plusieurs paramètres de configuration sont mis en œuvre et partage les signaux avec le score de sécurité Microsoft afin que de nombreuses actions d’amélioration apparaissent dans les deux résultats. 
  
@@ -141,7 +141,7 @@ Voici quelques conseils importants pour l’utilisation du score de conformité 
 
 - Chaque règlement sur la confidentialité des données comporte une combinaison de contrôles techniques, de spécifications de documentation et d’exigences opérationnelles, de processus et de création de rapports. Tous ces éléments s’affichent dans les actions d’amélioration. 
 
-- Cet article se concentre sur un sous-ensemble des contrôles techniques spécifiés pour la confidentialité des données dans le gestionnaire de conformité et le score de conformité. Pour plus d’informations sur les contrôles d’administration non techniques, reportez-vous à l’outil et à la [documentation](../compliance/working-with-compliance-score.md) du gestionnaire de conformité.
+- Cet article se concentre sur un sous-ensemble des contrôles techniques spécifiés pour la confidentialité des données dans le gestionnaire de conformité et le score de conformité. Pour plus d’informations sur les contrôles d’administration non techniques, reportez-vous à l’outil et à la [documentation](../compliance/compliance-score.md) du gestionnaire de conformité.
 
 - Pour attirer l’attention sur l’affichage des actions d’amélioration dans votre domaine, vous pouvez filtrer par type d’action dans l’onglet **solutions** de l’administrateur du score de conformité.
 

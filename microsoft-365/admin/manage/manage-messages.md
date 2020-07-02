@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 97af2932-0868-4ccf-8f6b-21a94946c58a
 description: Apprenez à gérer les messages du centre de messages pour faciliter la gestion des modifications.
-ms.openlocfilehash: 95d1e4eb7bdf411ea1fed7ccfb58224860f889e5
-ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
+ms.openlocfilehash: c415120a86b0c095df8ba9cbb4130abda1f6596b
+ms.sourcegitcommit: 634abe8a237e27dfe82376e6ef32280aab5d4a27
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/31/2020
-ms.locfileid: "44432264"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "45005821"
 ---
 # <a name="manage-messages-in-message-center"></a>Gérer les messages dans le centre de messages
 
@@ -157,19 +157,19 @@ Tout message du centre de messages non lu s’affiche en gras. L’ouverture d�
 
 ::: moniker-end
 
-## <a name="dismiss-and-restore"></a>Faire disparaître et restaurer
+## <a name="archive-and-restore"></a>Archivage et restauration
 
-Si vous voyez un message qui ne vous concerne pas, ou si vous avez déjà agi dessus, vous pouvez le faire disparaître pour le supprimer de l’affichage du centre de messages. L’affichage que vous voyez dans le centre de messages est spécifique à votre compte d’utilisateur, ce qui vous permet de le faire disparaître de votre affichage sans affecter les autres administrateurs.
+Si vous voyez un message qui ne vous concerne pas, ou si vous avez déjà agi dessus, vous pouvez archiver le message pour le supprimer de l’affichage du centre de messages. L’affichage que vous voyez dans le centre de messages est spécifique à votre compte d’utilisateur, de sorte que son archivage à partir de votre affichage n’affecte pas les autres administrateurs.
 
 ::: moniker range="o365-worldwide"
 
-- Sur la page principale du centre de messages, sélectionnez un message, puis faites-le **disparaître** au-dessus de la liste des messages.
+- Sur la page principale du centre de messages, sélectionnez un message, puis **Archive** au-dessus de la liste des messages.
 
-- Ouvrez le message, puis sélectionnez **faire disparaître** en bas du message.
+- Ouvrez le message, puis sélectionnez **Archive** en bas du message.
 
-Vous avez besoin de récupérer un message fermé ? Pas de problème.
+Vous avez besoin de récupérer un message archivé ? Pas de problème.
   
-1. Sélectionnez l’onglet **messages ignorés** en haut du centre de messages. La liste des messages ignorés s’affiche. 
+1. Sélectionnez l’onglet **messages archivés** en haut du centre de messages. La liste des messages archivés s’affiche. 
 
 2. Sélectionnez le message, sélectionnez **restaurer**et le message est restauré aux messages actifs.
 
@@ -177,15 +177,15 @@ Vous avez besoin de récupérer un message fermé ? Pas de problème.
 
 ::: moniker range="o365-germany"
 
-Il existe deux façons de faire disparaître un message.
+Il existe deux façons d’archiver un message.
   
 - Sélectionnez le X qui apparaît à droite de l’ID du message. Le message est supprimé de votre liste. Or,
 
-- Ouvrez le message, puis sélectionnez **faire disparaître** en haut du message.
+- Ouvrez le message, puis sélectionnez **Archive** en haut du message.
 
 Vous avez besoin de récupérer un message fermé ? Pas de problème.
   
-1. Sélectionnez le filtre **messages ignorés** dans le menu déroulant **affichages** . La liste des messages ignorés s’affiche.
+1. Sélectionnez le filtre **messages archivés** dans le menu déroulant **affichages** . La liste des messages archivés s’affiche.
 
 2. Sélectionnez **restaurer** à droite de l’ID du message, et le message est restauré aux messages actifs.
 
@@ -193,15 +193,15 @@ Vous avez besoin de récupérer un message fermé ? Pas de problème.
 
 ::: moniker range="o365-21vianet"
 
-Il existe deux façons de faire disparaître un message.
+Il existe deux façons d’archiver un message.
   
 - Sélectionnez le X qui apparaît à droite de l’ID du message. Le message est supprimé de votre liste. Or,
 
-- Ouvrez le message, puis sélectionnez **faire disparaître** en haut du message.
+- Ouvrez le message, puis sélectionnez **Archive** en haut du message.
 
-Vous avez besoin de récupérer un message fermé ? Pas de problème.
+Vous avez besoin de récupérer un message archivé ? Pas de problème.
   
-1. Sélectionnez le filtre **messages ignorés** dans le menu déroulant **affichages** . La liste des messages ignorés s’affiche.
+1. Sélectionnez le filtre **messages archivés** dans le menu déroulant **affichages** . La liste des messages archivés s’affiche.
 
 2. Sélectionnez **restaurer** à droite de l’ID du message, et le message est restauré aux messages actifs.
 

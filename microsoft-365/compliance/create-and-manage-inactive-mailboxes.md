@@ -20,12 +20,12 @@ ms.assetid: 296a02bd-ebde-4022-900e-547acf38ddd7
 ms.custom:
 - seo-marvel-apr2020
 description: Découvrez comment conserver le contenu des boîtes aux lettres supprimées à l’aide de la fonctionnalité de boîtes aux lettres inactives dans Office 365.
-ms.openlocfilehash: d479f6661c4d6e87263488ac75682683b4779380
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: c2a17a4ce4bf8fb175382fb236bbad6c1bbf2336
+ms.sourcegitcommit: 3ddcf08e8deec087df1fe524147313f1cb12a26d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44818013"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "45023357"
 ---
 # <a name="create-and-manage-inactive-mailboxes"></a>Créer et gérer des boîtes aux lettres inactives
 
@@ -38,7 +38,7 @@ Microsoft 365 vous permet de conserver le contenu des boîtes aux lettres suppri
 
 - Pour désactiver une boîte aux lettres, vous devez lui avoir affecté une licence Exchange Online plan 2 de sorte qu’une conservation pour litige ou une stratégie de rétention puissent être appliquées à la boîte aux lettres avant sa suppression. Les licences Exchange Online plan 2 font partie d’un abonnement Office 365 entreprise E3 et E5. Si une boîte aux lettres est affectée à une licence Exchange Online plan 1 ou Exchange Online Kiosk (qui fait respectivement partie d’un abonnement Office 365 E1 et F1), vous devez lui attribuer une licence d’archivage Exchange Online distincte de sorte qu’une conservation puisse être appliquée à la boîte aux lettres avant d’être supprimée. Pour plus d'informations, consultez la page [Archivage Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=286153).
 
-- Les licences associées à la boîte aux lettres Exchange Online supprimée seront disponibles une fois que vous aurez supprimé le compte d’utilisateur correspondant. Vous pouvez ensuite [attribuer ces licences à un autre utilisateur](https://docs.microsoft.com/microsoft-365/admin/add-users/add-users). 
+- Les licences associées à la boîte aux lettres Exchange Online supprimée seront disponibles une fois que vous aurez supprimé le compte d’utilisateur correspondant. Vous pouvez ensuite [attribuer ces licences à un autre utilisateur](../admin/manage/assign-licenses-to-users.md).
 
 - Si une conservation pour litige ou une stratégie de rétention (configurée pour conserver ou conserver et supprimer du contenu) n’est pas appliquée à une boîte aux lettres avant sa suppression, le contenu de la boîte aux lettres n’est pas conservé ni découvrable. Cependant, la boîte aux lettres peut être récupérée dans les 30 jours suivant sa suppression, mais, à défaut de récupération, elle est définitivement supprimée avec son contenu à l'issue de cette période.
 

@@ -24,12 +24,12 @@ search.appverid:
 - MOE150
 ms.assetid: 70a62f09-45ea-4968-8482-43cddfb8cc01
 description: Dans cet article, vous allez apprendre à personnaliser, à organiser et à gérer votre site d’équipe pour le stockage et le partage de fichiers.
-ms.openlocfilehash: 5eb95ffc1ec687920b4499a9876ce3186e678062
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+ms.openlocfilehash: e7c3364332a127b5a398d3b08843ea7dd04679b5
+ms.sourcegitcommit: 3ddcf08e8deec087df1fe524147313f1cb12a26d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44779868"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "45022168"
 ---
 # <a name="customize-your-team-site-for-file-storage-and-sharing"></a>Personnaliser votre site d’équipe pour le stockage et le partage de fichiers
 
@@ -104,7 +104,7 @@ Lors de la gestion de votre site d’équipe, vous devrez peut-être ajouter ou 
   
 Visionnez une vidéo sur des groupes avec les [groupes de connaissance et de gestion](https://support.microsoft.com/office/9c1037b7-de0b-41cd-b8f0-79a95aac854d). 
   
-Pour ajouter des utilisateurs à un groupe Microsoft 365, consultez la rubrique [Ajouter des utilisateurs individuellement ou en bloc à microsoft 365-aide de l’administrateur](../add-users/add-users.md).
+Pour ajouter des utilisateurs à un groupe Microsoft 365, reportez-vous à [la rubrique ajouter des utilisateurs et attribuer des licences en même temps](../add-users/add-users.md).
   
 Découvrez comment gérer les demandes d’accès à l’aide de la [configuration et](https://support.microsoft.com/office/94B26E0B-2822-49D4-929A-8455698654B3)de la gestion des demandes d’accès.
   

@@ -28,12 +28,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Découvrez Microsoft 365 for Business, comment le configurer et comment préparer les appareils et les ordinateurs de vos utilisateurs pour vous assurer qu’ils sont protégés par Microsoft 365 pour les entreprises.
-ms.openlocfilehash: 48a103333e101d545d562e7f2e9dd7329686f107
-ms.sourcegitcommit: e5bc49f0a25954d008b6cc09c2b98bb7bfe1aa2f
+ms.openlocfilehash: 08a956cc7e68bbba74d29bafaab77065be1321ce
+ms.sourcegitcommit: 3ddcf08e8deec087df1fe524147313f1cb12a26d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44786151"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "45022114"
 ---
 # <a name="get-started-with-microsoft-365-for-business"></a>Prise en main de Microsoft 365 pour les entreprises
 
@@ -84,7 +84,7 @@ Connectez-vous au [Centre d’administration microsoft 365](https://portal.offic
     
     - Utilisez l’Assistant synchronisation d’annuaires pour synchroniser vos utilisateurs avec le Cloud. Suivez les étapes de la procédure de configuration de la [synchronisation d’annuaires pour Microsoft 365](https://docs.microsoft.com/office365/enterprise/set-up-directory-synchronization) pour effectuer ce processus. Après avoir synchronisé vos utilisateurs sur le Cloud, vous devez désactiver la [synchronisation d’annuaires pour Office 365](https://docs.microsoft.com/office365/enterprise/turn-off-directory-synchronization).
     
-    Vous devrez également donner à chaque utilisateur qui a été ajouté de cette manière une licence Microsoft 365 pour les entreprises. Vous pouvez effectuer cette opération dans l' [Assistant Installation](set-up.md) ou vous pouvez [attribuer des licences aux utilisateurs dans Microsoft 365 pour les entreprises](https://docs.microsoft.com/microsoft-365/admin/add-users/add-users).
+    Vous devrez également donner à chaque utilisateur qui a été ajouté de cette manière une licence Microsoft 365 pour les entreprises. Vous pouvez effectuer cette opération dans l' [Assistant Installation](set-up.md) ou vous pouvez [attribuer des licences aux utilisateurs](../admin/manage/assign-licenses-to-users.md).
     
 ### <a name="2-prepare-mobile-devices"></a>2 : préparer les appareils mobiles
 
