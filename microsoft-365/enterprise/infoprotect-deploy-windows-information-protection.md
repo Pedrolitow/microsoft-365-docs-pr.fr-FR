@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Comprenez et déployez la protection des informations Windows dans Microsoft 365.
-ms.openlocfilehash: 66c9e10772edb0782096ba120858e895684255b2
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: c7b76ef28d41810d6e9e45e98adb7a94cf8ae2f4
+ms.sourcegitcommit: 634abe8a237e27dfe82376e6ef32280aab5d4a27
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631644"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "45005721"
 ---
 # <a name="step-4-configure-windows-information-protection"></a>Étape 4 : Configurer la protection des informations Windows
 
@@ -37,11 +37,14 @@ Dans Microsoft 365 Entreprise, la Protection des informations Windows est une c
 Pour déployer la Protection des informations Windows dans votre organisation avec Microsoft 365 Entreprise :
 
 1. Inscrivez vos appareils Windows dans Intune. Vous devez avoir effectué cette opération à l’[Étape 5 : Gestion des appareils mobiles](mobility-infrastructure.md).
-2. Créez une [stratégie Intune pour la Protection des informations Windows](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/create-wip-policy-using-intune-azure).
-  - Vérifiez que vous avez rempli votre liste d’applications protégées.
-  - Choisissez votre niveau de Protection des informations Windows.
 
-Vous pouvez aussi utiliser Travaux en cours avec [Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/overview-create-wip-policy-sccm). 
+2. Créez une [stratégie Intune pour la Protection des informations Windows](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/create-wip-policy-using-intune-azure).
+
+   -    Vérifiez que vous avez rempli votre liste d’applications protégées.
+  
+   - Choisissez votre niveau de Protection des informations Windows.
+
+Vous pouvez aussi utiliser Travaux en cours avec [Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/create-wip-policy-using-configmgr). 
 
 Pour plus d’informations, voir [Meilleures pratiques de Protection des informations Windows]( https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/guidance-and-best-practices-wip).
 
