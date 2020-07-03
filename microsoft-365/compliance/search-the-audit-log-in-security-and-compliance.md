@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: 'Utilisez le Centre de sécurité et conformité pour rechercher dans le journal d’audit unifié les activités des utilisateurs et des administrateurs de votre organisation. '
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 83eb4c453b3a11cb037e62e43525199fa247c3f5
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: bf008ed20e1dd56061004f63a24124488487af17
+ms.sourcegitcommit: 8595cb9ffe0ca5556080f24224182381e1d880de
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44818984"
+ms.lasthandoff: 07/03/2020
+ms.locfileid: "45035659"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>Effectuer des recherches dans le journal d’audit depuis le Centre de sécurité et conformité 
 
@@ -337,7 +337,7 @@ Le tableau suivant décrit les activités des fichiers et pages dans SharePoint 
 |Supprimer l’enregistrement de l’étiquette stratégie de conformité|ComplianceRecordDelete|Un document classifié en tant qu’enregistrement a été supprimé. Un document est considéré comme un enregistrement lorsqu’une étiquette de rétention qui classifie le contenu en tant qu’enregistrement est appliqué au document.|
 |Détection de correspondance incorrecte des documents|DocumentSensitivityMismatchDetected|Un utilisateur télécharge un document sur un site protégé par une étiquette de confidentialité et le document comporte une étiquette de confidentialité plus élevée que celle du site. Par exemple, un document marqué Confidentiel est chargé sur un site intitulé Général. <br/><br/> Cet événement ne se déclenche pas si le document comprend une étiquette de confidentialité de priorité inférieure à celle appliquée sur le site. Par exemple, un document marqué Général est téléchargé sur un site intitulé Confidentiel. Pour plus d’informations sur la priorité d'étiquettes de confidentialité, consultez la [Priorité d’étiquette (importance de l'ordre)](sensitivity-labels.md#label-priority-order-matters).|
 |Détection d’un programme malveillant dans le fichier|FileMalwareDetected|Le moteur antivirus de SharePoint détecte un programme malveillant dans un fichier.|
-|Extraction de fichier ignorée|FileCheckOutDiscarded|User discards (or undos) a checked out file. That means any changes they made to the file when it was checked out are discarded, and not saved to the version of the document in the document library.|
+|Extraction de fichier ignorée|FileCheckOutDiscarded|User discards (or undoes) a checked out file. That means any changes they made to the file when it was checked out are discarded, and not saved to the version of the document in the document library.|
 |Fichier téléchargé|FileDownloaded|Un utilisateur télécharge un document à partir d’un site.|
 |Fichier modifié|FileModified|Le compte d’utilisateur ou système modifie le contenu ou les propriétés d’un document sur un site.|
 |(aucun)|FileModifiedExtended|Cet événement est lié à l’activité « Fichier modifié » (FileModified). Un événement FileModifiedExtended est consigné lorsque la même personne modifie un fichier pendant une période prolongée (jusqu'à 3 heures). <br/><br/> L’objectif de la journalisation des événements FileModifiedExtended consiste à réduire le nombre d’événements FileModified enregistrés lorsqu’un fichier est modifié de manière continue. Cela permet de réduire le bruit généré par l’enregistrement de plusieurs événements FileModified pour ce qui est en fait l’activité d’un seul et même utilisateur et vous permettre de vous concentrer sur l’événement FileModified initial (plus important).|
@@ -370,7 +370,7 @@ Voici d'autres scénarios dans lesquels app@sharepoint peut être identifié, da
 
 - Fonctionnalités de conformité. Lorsqu’un administrateur implémente des fonctionnalités de conformité, telles que les stratégies de rétention, les conservations eDiscovery et l’application automatique d'étiquettes de confidentialité.
 
-Dans ces scénarios et ainsi que d’autres, vous remarquerez également que plusieurs enregistrements d’audit avec app@sharepoint comme utilisateur spécifié ont été créés dans un laps de temps très court, souvent à quelques secondes les uns des autres. Cela indique également qu’ils ont probablement été déclenchés par un tâche initiée par le même utilisateur. En outre, les champs ApplicationDisplayName et EventData de l’enregistrement d’audit peuvent vous aider à identifier le scénario ou l'application ayant déclenché l'événement.
+Dans ces scénarios ainsi que d’autres, vous remarquerez également que plusieurs enregistrements d’audit avec app@sharepoint comme utilisateur spécifié ont été créés dans un bref laps de temps, souvent à quelques secondes les uns des autres. Cela indique également qu’ils ont probablement été déclenchés par un tâche initiée par le même utilisateur. En outre, les champs ApplicationDisplayName et EventData de l’enregistrement d’audit peuvent vous aider à identifier le scénario ou l'application ayant déclenché l'événement.
 
 ### <a name="folder-activities"></a>Activités des dossiers
 
@@ -481,7 +481,7 @@ Le tableau suivant répertorie les événements liés à l’attribution d’aut
 |Groupe supprimé|GroupRemoved|Un utilisateur supprime un groupe d’un site.|
 |Paramètre de demande d’accès modifié|WebRequestAccessModified|Les paramètres de demande d’accès ont été modifiés sur un site.|
 |Paramètre «les membres peuvent partagés» modifié|WebMembersCanShareModified|Le paramètre **les membres peuvent partager** a été modifié sur un site.|
-|Modification du niveau d’autorisation sur la collection de sites|PermissionLevelModified|Un niveau d’autorisation a été modifié sur une collection de sites.|
+|Modification du niveau d’autorisation sur une collection de sites|PermissionLevelModified|Un niveau d’autorisation a été modifié sur une collection de sites.|
 |Autorisations de site modifiées|SitePermissionsModified|L’administrateur ou le propriétaire du site (ou compte système) modifie le niveau d’autorisation affecté à un groupe sur un site. Cette activité est également enregistrée si toutes les autorisations sont supprimées d’un groupe. <br/><br/> **Remarque**: cette opération est déconseillée dans SharePoint Online. Pour rechercher des événements connexes, vous pouvez rechercher d’autres activités liées à une autorisation, telles que **Administrateur de collection de sites ajoutée**, **Utilisateur ou groupe ajouté à un groupe SharePoint**, **Utilisateur autorisé à créer des groupes**, **Groupe créé** et **Groupe supprimé**.|
 |Suppression d’un niveau d’autorisation dans une collection de sites|PermissionLevelRemoved|Un niveau d’autorisation a été supprimé d’une collection de sites.|
 |Administrateur de collection de site supprimé|SiteCollectionAdminRemoved|L’administrateur de collection de sites ou le propriétaire supprime une personne en tant qu’administrateur de collection de sites pour un site. Cette activité est également enregistrée lorsqu’un administrateur se supprime de la liste des administrateurs de collections de sites pour le compte OneDrive d’un utilisateur (en modifiant le profil utilisateur dans le centre d’administration SharePoint).  Pour renvoyer cette activité dans les résultats de la recherche dans le journal d’audit, vous devez rechercher toutes les activités.|
@@ -706,34 +706,7 @@ Analyse du temps de travail explique comment les groupes collaborent au sein de 
 
 ### <a name="microsoft-teams-activities"></a>Activités dans Microsoft Teams 
 
-Le tableau suivant répertorie les activités des utilisateurs et des administrateurs dans Microsoft Teams qui sont enregistrées dans le journal d’audit. Microsoft Teams est un espace de travail centré sur la conversation dans Office 365. Il rassemble les conversations, réunions, fichiers et notes d’une équipe dans un emplacement unique. Pour plus d’informations et des liens vers des rubriques d’aide, voir :
-
-- [Forum aux questions sur Microsoft Teams – Aide de l’administrateur](https://docs.microsoft.com/MicrosoftTeams/teams-overview)
-
-- [Aide de Microsoft Teams](https://support.office.com/teams)
-
-|**Nom convivial**|**Opération**|**Description**|
-|:-----|:-----|:-----|
-|Robot ajouté à une équipe|BotAddedToTeam|Un utilisateur ajoute un robot à une équipe.|
-|Canal ajouté|ChannelAdded|Un utilisateur ajoute un canal à une équipe.|
-|Connecteur ajouté|ConnectorAdded|Un utilisateur ajoute un connecteur à un canal.|
-|Membres ajoutés|MemberAdded|Un propriétaire d'une équipe ajoute des membres à une équipe, un canal ou une conversation de groupe.|
-|Onglet ajouté|TabAdded|Un utilisateur ajoute un onglet à un canal.|
-|Paramètre de canal modifié|ChannelSettingChanged|L’opération ChannelSettingChanged est consignée lorsque les activités suivantes sont effectuées par un membre de l’équipe. Pour chacune de ces activités, une description du paramètre modifié (entre parenthèses ci-dessous) s’affiche dans la colonne **Élément (Item)** des résultats de la recherche dans le journal d’audit. <br/><br/>• Modifie le nom d’un canal d’équipe (**Nom de canal**). <br/><br/>• Modifie la description d’un canal d’équipe (**Description de canal**).|
-|Paramètre d’organisation modifié|TeamsTenantSettingChanged|L’opération TeamsTenantSettingChanged est consignée lorsque les activités suivantes sont effectuées par un administrateur général (à l’aide du centre d’administration Microsoft 365). Notez que ces activités affectent les paramètres de Microsoft Teams à l’échelle de l’organisation. Pour plus d’informations, voir [Paramètres de l’administrateur de Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/enable-features-office-365). <br/> Pour chacune de ces activités, une description du paramètre modifié (entre parenthèses ci-dessous) s’affiche dans la colonne **Élément (Item)** des résultats de la recherche dans le journal d’audit. <br/><br/>• Active ou désactive Microsoft Teams pour l’organisation (**Microsoft Teams**). <br/><br/>• Active ou désactive l’interopérabilité entre Microsoft Teams et Skype Entreprise pour l’organisation (**interopérabilité de Skype Entreprise**). <br/><br/>• Active ou désactive l’affichage de l’organigramme dans les clients Microsoft Teams (**organigramme hiérarchique). <br/> <br/>• Active ou désactive la possibilité pour les membres de l’équipe de planifier des réunions privées (** planification privée des réunions **). <br/><br/>• Active ou désactive la possibilité pour les membres de l’équipe de planifier des réunions de canal (planification des réunions de canal**). <br/><br/>• Active ou désactive les appels vidéo pendant les réunions Teams (Vidéo pour réunions Skype **). <br/><br/>• Active ou désactive le partage d’écran dans les rencontres Microsoft Teams pour l’organisation (** partage d’écran pour les réunions Skype **). <br/> <br/>• Active ou désactive la possibilité d’ajouter des images animées (appelées Giphys) aux conversations Teams (images animées**). <br/><br/>• Modifie le paramètre d’évaluation du contenu pour l’organisation (**Évaluation du contenu**). L’évaluation du contenu restreint les types d’images animées qui peuvent être affichées dans les conversations. <br/><br/>• Active ou désactive la possibilité pour les membres de l’équipe d’ajouter des images personnalisables (appelées mèmess personnalisés) à partir d’Internet aux conversations d’équipe (les images personnalisables à partir d’Internet **). <br/><br/>• Active ou désactive la possibilité pour les membres de l’équipe d’ajouter des images modifiables (appelées autocollants) aux conversations d’équipe (** Images modifiables **).<br/><br/>• Active ou désactive la possibilité pour les membres de l’équipe d’utiliser des bots dans les conversations et canaux Microsoft Teams (bots à l’échelle de l’organisation). <br/><br/>• Active les bots spécifiques pour Microsoft Teams. Ceci n’inclut pas le T-bot, qui est le bot d’aide de Teams, disponible lorsque les bots sont activés pour l’organisation (** bots individuels **). <br/><br/>• Active ou désactive la possibilité pour les membres de l’équipe d’ajouter des extensions ou des onglets (** Extensions ou onglets **). <br/><br/>• Active ou désactive le chargement latéral de bots propriétaires pour Microsoft Teams (** chargement latéral des bots **). <br/><br/>• Active ou désactive la possibilité pour les utilisateurs d’envoyer des messages électroniques à un canal Microsoft Teams (** E-mail de canal**).|
-|Rôle modifié des membres de l’équipe|MemberRoleChanged|Un propriétaire d’équipe modifie le rôle de membres d’une équipe. Les valeurs suivantes indiquent le type de rôles attribué à l’utilisateur. <br/><br/> **1** indique le rôle Propriétaire.<br/>**2** indique le rôle Membre. <br/>**3** indique le rôle Invité. <br/><br/> La propriété Members comprend également le nom de votre organisation et l’adresse e-mail du membre.|
-|Paramètre d’équipe modifié|TeamSettingChanged|L’opération TeamSettingChanged est consignée lorsque les activités suivantes sont effectuées par un membre de l’équipe. Pour chacune de ces activités, une description du paramètre modifié (entre parenthèses ci-dessous) s’affiche dans la colonne **Élément (Item)** des résultats de la recherche dans le journal d’audit. <br/><br/>• Modifie le type d’accès d’une équipe. Teams peut être défini comme public ou privé (**Type d’accès à Team**). Quand une équipe est privée (paramètre par défaut), les utilisateurs ne peuvent ne peuvent y accéder que sur invitation. Quand une équipe est publique, n’importe qui peut la trouver. <br/><br/>• Modifie la classification des informations d’une équipe (**Classification d’une équipe **). <br/> Par exemple, les données d’une équipe peuvent être classifiées comme ayant un impact élevé, moyen ou faible sur l’activité.<br/><br/>• Modifie le nom d’une équipe (**Nom de l’équipe**). <br/><br/>• Modifie la description de l’équipe (Description de l’équipe**). <br/><br/>• Modifications apportées aux paramètres de l’équipe. Un propriétaire de l’équipe peut accéder à ces paramètres dans un client Microsoft Teams en cliquant avec le bouton droit sur une équipe, en cliquant sur **Gérer l’équipe**, puis sur l’onglet **Paramètres**. Pour ces activités, le nom du paramètre modifié s’affiche dans la colonne **Élément (Item)** des résultats de la recherche dans le journal d’audit.|
-|Équipe créée|TeamCreated|L’utilisateur crée une équipe.|
-|Canal supprimé|ChannelDeleted|Un utilisateur supprime un canal d’une équipe.|
-|Équipe supprimée|TeamDeleted|Un propriétaire d’équipe supprime une équipe.|
-|Robot supprimé l’équipe|BotRemovedFromTeam|Un utilisateur supprime un robot d’une d’une équipe.|
-|Connecteur supprimé|ConnectorRemoved|Un utilisateur supprime un connecteur d’un canal.|
-|Membres supprimés|MemberRemoved|Un propriétaire d’équipe supprime des membres d’une équipe, d'un canal ou d'une conversation de groupe.|
-|Onglet supprimé|TabRemoved|Un utilisateur supprime un onglet d’un canal.|
-|Connecteur mis à jour|ConnectorUpdated|Un utilisateur a modifié un connecteur dans un canal.|
-|Onglet mis à jour|TabUpdated|Un utilisateur a modifié un onglet dans un canal.|
-|Utilisateur connecté à Teams|TeamsSessionStarted|Un utilisateur se connecte à un client Microsoft Teams. Cet événement ne capture pas les activités d’actualisation des jetons.|
-||||
+Vous pouvez effectuer une recherche dans le journal d’audit des activités des utilisateurs et des administrateurs dans Microsoft Teams. Teams est un espace de travail centré sur la conversation dans Office 365. Il rassemble les conversations, réunions, fichiers et notes d’une équipe dans un emplacement unique. Pour obtenir une description des activités Teams qui font l’objet d’un audit, consultez [Rechercher dans le journal d’audit des événements dans Microsoft Teams](https://docs.microsoft.com/microsoftteams/audit-log-events#teams-activities).
 
 ### <a name="microsoft-teams-healthcare-activities"></a>Activités Santé Microsoft Teams
 
@@ -745,7 +718,7 @@ Pour obtenir une description des activités de l’application Patients, voir le
 
 ### <a name="microsoft-teams-shifts-activities"></a>Activités Shifts dans Microsoft Teams
 
-Si votre organisation utilise l’application Shifts dans Microsoft Teams, vous pouvez effectuer une recherche dans le journal d’audit pour consulter les activités liées à l’application Shifts. Si votre environnement est configuré pour prendre en charge l’application Shifts, un groupe d’activités supplémentaire pour ces activités est disponible dans la liste du sélecteur **Activités**.
+Si votre organisation utilise l’application Shifts dans Microsoft Teams, vous pouvez effectuer une recherche dans le journal d’audit pour consulter les activités liées à cette application. Si votre environnement est configuré pour prendre en charge l’application Shifts, un groupe d’activités supplémentaire pour ces activités est disponible dans la liste du sélecteur **Activités**.
 
 Pour obtenir une description des activités de l’application Shifts, consultez [Rechercher dans le journal d’audit des événements dans Microsoft Teams](https://docs.microsoft.com/microsoftteams/audit-log-events#shifts-in-teams-activities).
 
@@ -815,7 +788,7 @@ Le tableau suivant répertorie les activités des utilisateurs et des administra
 Dans les descriptions ci-dessous, certaines opérations contiennent d’autres paramètres d’activité.
 
 > [!NOTE]
-> Si une activité Forms est réalisée par un co-auteur ou un répondant anonyme, elle est enregistrée de façon légèrement différente. Pour plus d’informations, voir la section [Activités Forms réalisées par des co-auteurs ou des répondants anonymes](#forms-activities-performed-by-co-authors-and-anonymous-responders).
+> Si une activité Forms est réalisée par un co-auteur ou un répondant anonyme, elle est enregistrée de façon légèrement différente. Pour plus d’informations, voir la section [Activités Forms réalisées par des co-auteurs ou des répondants anonymes](#forms-activities-performed-by-coauthors-and-anonymous-responders).
 
 |**Nom convivial**|**Opération**|**Description**|
 |:-----|:-----|:-----|
@@ -830,7 +803,7 @@ Dans les descriptions ci-dessous, certaines opérations contiennent d’autres p
 |Formulaire de partage autorisé pour la copie|AllowShareFormForCopy|Le propriétaire du formulaire crée un lien modèle pour partager le formulaire avec d'autres utilisateurs. Cet événement est consigné lorsque le propriétaire du formulaire clique sur pour générer l’URL du modèle.|
 |Formulaire de partage non autorisé pour copie|DisallowShareFormForCopy|Le propriétaire du formulaire supprime le lien modèle.|
 |Co-auteur du formulaire ajouté|AddFormCoauthor|Un utilisateur utilise un lien de collaboration pour vous aider à concevoir et afficher les réponses. Cet événement est consigné lorsqu’un utilisateur utilise une URL espace collaboration (pas lorsque espace collaboration URL est générée pour la première fois).|
-|Co-auteur de formulaire supprimée|RemoveFormCoauthor|Le propriétaire du formulaire supprime un lien de collaboration.|
+|Co-auteur du formulaire supprimé|RemoveFormCoauthor|Le propriétaire du formulaire supprime un lien de collaboration.|
 |Page de réponse consultée|ViewRuntimeForm|Un utilisateur a ouvert une page de réponse à afficher. Cet événement est consigné, que l’utilisateur envoie ou non une réponse.|
 |Réponse créée|CreateResponse|Similaire à la réception d'une nouvelle réponse.  Un utilisateur a soumis une réponse à un formulaire. <br><br>La propriété ResponseId:string et la propriété ResponderId:string indiquent quel résultat est affiché. <br><br>Pour un répondant anonyme, la propriété ResponderId sera null.|
 |Réponse mise à jour|UpdateResponse|Le propriétaire du formulaire a mis à jour un commentaire ou une note sur un questionnaire. <br><br>La propriété ResponseId:string et la propriété ResponderId:string indiquent quel résultat est affiché. <br><br>Pour un répondant anonyme, la propriété ResponderId sera null.|
@@ -848,17 +821,17 @@ Dans les descriptions ci-dessous, certaines opérations contiennent d’autres p
 |Réponse envoyée|SubmitResponse|Un utilisateur envoie une réponse à un formulaire. <br><br>La propriété IsInternalForm:boolean indique si le répondant fait partie de la même organisation que le propriétaire du formulaire.|
 ||||
 
-#### <a name="forms-activities-performed-by-co-authors-and-anonymous-responders"></a>Activités Forms réalisées par des co-auteurs ou des répondants anonymes
+#### <a name="forms-activities-performed-by-coauthors-and-anonymous-responders"></a>Activités Forms réalisées par des co-auteurs et des répondants anonymes
 
 Forms prend en charge la collaboration pendant la conception des formulaires et l’analyse des réponses. Un collaborateur de formulaire est appelé *co-auteur*. Les co-auteurs peuvent effectuer les mêmes actions que le propriétaire d’un formulaire, excepté supprimer ou déplacer un formulaire. Forms vous permet également de créer un formulaire dans lequel les répondants restent anonymes.  Ce qui signifie qu’un répondant n’a pas besoin d’être connecté à votre organisation pour répondre à un formulaire. 
 
-Le tableau suivant décrit les activités d’audit et les informations dans l’enregistrement d’audit pour les activités réalisées par les co-auteurs et les répondants anonymes.
+Le tableau suivant décrit les activités d’audit et les informations figurant dans l’enregistrement d’audit pour les activités réalisées par les co-auteurs et les répondants anonymes.
 
 |**Type d’activité**|**Utilisateur interne ou externe**|**ID d’utilisateur connecté**|**Organisation connectée à**|**Type d’utilisateur Forms**|
 |:-----|:-----|:-----|:-----|:-----|
-|Activités de co-édition|Interne|UPN|Organisation du propriétaire du formulaire|Co-auteur|
-|Activités de co-édition|Externe|UPN<br>|Organisation du co-auteur<br>|Co-auteur|
-|Activités de co-édition|Externe|`urn:forms:coauthor#a0b1c2d3@forms.office.com`<br>(La deuxième partie de l’ID est hachée de façon différente selon les utilisateurs).|Organisation du propriétaire du formulaire<br>|Co-auteur|
+|Activités de co-création|Interne|UPN|Organisation du propriétaire du formulaire|Co-auteur|
+|Activités de co-création|Externe|UPN<br>|Organisation du co-auteur<br>|Co-auteur|
+|Activités de co-création|Externe|`urn:forms:coauthor#a0b1c2d3@forms.office.com`<br>(La deuxième partie de l’ID est hachée de façon différente selon les utilisateurs).|Organisation du propriétaire du formulaire<br>|Co-auteur|
 |Activités de réponse|Externe|UPN<br>|Organisation du répondant<br>|Répondant|
 |Activités de réponse|Externe|`urn:forms:external#a0b1c2d3@forms.office.com`<br>(La deuxième partie de l’ID d’utilisateur est hachée de façon différente selon les utilisateurs).|Organisation du propriétaire du formulaire|Répondant|
 |Activités de réponse|Anonyme|`urn:forms:anonymous#a0b1c2d3@forms.office.com`<br>(La deuxième partie de l’ID d’utilisateur est hachée de façon différente selon les utilisateurs).|Organisation du propriétaire du formulaire|Répondant|
