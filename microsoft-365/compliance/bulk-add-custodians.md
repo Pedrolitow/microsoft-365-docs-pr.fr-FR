@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ROBOTS: NOINDEX, NOFOLLOW
 description: Utilisez l’outil Bulk-Add pour ajouter rapidement plusieurs dépositaires et leurs sources de données associées à un cas dans Advanced eDiscovery.
-ms.openlocfilehash: 921d4a1616d97f2adde7e40baa5c73f607c849b6
-ms.sourcegitcommit: 956dd3f87adb4e6173517550a662c3bacc2d2d79
+ms.openlocfilehash: ab9626be01814fa95a959141433b431df9bf7724
+ms.sourcegitcommit: 51a9f34796535309b8ca8b52da92da0a3621327b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "44741644"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "45024664"
 ---
 # <a name="bulk-add-custodians-to-an-advanced-ediscovery-case"></a>Ajouter des dépositaires en bloc à un cas avancé de découverte électronique
 
@@ -37,7 +37,8 @@ Pour les cas avancés de découverte électronique qui impliquent un grand nombr
 
 4. Ajoutez les informations privatives de Troie au fichier CSV et enregistrez-le sur votre ordinateur local. Pour plus d’informations sur les propriétés du fichier CSV, consultez la section suivante.
 
-5. Sous l’onglet **sources** , cliquez de nouveau sur **importer des dépositaires** . 
+5. Sous l’onglet **sources** , cliquez de nouveau sur **importer des dépositaires** .
+
 6. Sur la page de menu volant, cliquez sur **Parcourir** et téléchargez votre fichier CSV.
 
    Une fois le fichier CSV téléchargé, un travail BulkAddCustodian est créé et affiché sous l’onglet **travaux** . Le travail valide les dépositaires et leurs sources de données correspondantes, puis les ajoute à l’onglet **dépositaires** de la page **sources** du cas.

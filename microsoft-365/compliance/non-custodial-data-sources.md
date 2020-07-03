@@ -14,14 +14,13 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-ROBOTS: NOINDEX, NOFOLLOW
 description: Vous pouvez ajouter des sources de données non privatives de Troie à un cas avancé eDiscovery et mettre en attente la source de données. Les sources de données non privatives de cœur sont réindexées, de sorte que tout contenu considéré comme partiellement indexé est retraité afin de pouvoir faire l’objet d’une recherche complète et rapide.
-ms.openlocfilehash: 618d39bfb7be6cd260c88cdf4c57501747f440f1
-ms.sourcegitcommit: b03a7ad0a80f8b839f40b8d396ab3a049491a12f
+ms.openlocfilehash: 2009a8cc82dc9407e9871409e85cdcd321ea9bb0
+ms.sourcegitcommit: 51a9f34796535309b8ca8b52da92da0a3621327b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44695499"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "45024744"
 ---
 # <a name="add-non-custodial-data-sources-to-an-advanced-ediscovery-case"></a>Ajout de sources de données non privatives de Troie à un cas avancé eDiscovery
 
@@ -47,7 +46,7 @@ Procédez comme suit pour ajouter et gérer des sources de données non privativ
 
    Chaque source de données qui n’est pas une source de données non privatives ajoutée est indiquée dans la page **sources de données** .
 
-   De plus, un travail appelé *ré-indexation des données non privatives* est créé et affiché sous l’onglet **travaux** de l’incident. Une fois le travail créé, le processus d’indexation avancé dans initié et les sources de données sont réindexés.
+   De plus, un travail d' *indexation des données non privatives* de responsabilité est créé et affiché sous l’onglet **travaux** de l’incident. Une fois le travail créé, le processus d’indexation avancé dans initié et les sources de données sont réindexés.
 
 ## <a name="managing-the-hold-on-non-custodial-data-sources"></a>Gestion de la conservation sur des sources de données non-privatives de cœur
 

@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Cet article fournit une vue d’ensemble de Advanced eDiscovery dans Microsoft 365, un outil destiné aux investigations internes et externes.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 84fbf3bbdc4a4ee08901001f7898355e4c8b2705
-ms.sourcegitcommit: 5c43e89ed94ad9fd1db049446383c65e548189b7
+ms.openlocfilehash: 5adf2a62aad5e7da476c2713fa18f9e8b6ab9329
+ms.sourcegitcommit: 51a9f34796535309b8ca8b52da92da0a3621327b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44322039"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "45024786"
 ---
 # <a name="overview-of-the-advanced-ediscovery-solution-in-microsoft-365"></a>Vue d’ensemble de la solution avancée eDiscovery dans Microsoft 365
 
@@ -59,13 +59,13 @@ Le flux de travail intégré de Advanced eDiscovery s’aligne sur le processus 
 
 Les sections suivantes décrivent chaque étape du flux de travail intégré dans Advanced eDiscovery. La capture d’écran suivante montre l’onglet **Accueil** d’un cas nommé *responsabilité du produit 2019002*. Remarque les onglets de flux de travail en haut de la page sont séquencés pour s’aligner avec le processus EDRM. 
 
-Pour plus d’informations sur le flux de travail de bout en bout dans Advanced eDiscovery, reportez-vous à cette [vidéo de mécanique Microsoft](https://go.microsoft.com/fwlink/?linkid=2066133). 
+Pour plus d’informations sur le flux de travail de bout en bout dans Advanced eDiscovery, reportez-vous à cette [vidéo de mécanique Microsoft](https://go.microsoft.com/fwlink/?linkid=2066133).
 
 ![Les onglets dans Advanced eDiscovery suivent le flux de travail EDRM](../media/aedisco-homepage-1.png)
 
-## <a name="managing-custodians"></a>Gestion des dépositaires
+## <a name="managing-custodians-and-non-custodial-data-sources"></a>Gestion des dépositaires et des sources de données non privatives de cœur
 
-Utilisez l’onglet **dépositaires** pour ajouter et gérer les personnes que vous avez identifiées comme des personnes intéressantes dans le cas. Lorsque vous ajoutez des dépositaires, vous pouvez effectuer rapidement des opérations liées aux dépositaires, telles que le placement d’une conservation légale sur les sources de données des dépositaires, la communication avec des dépositaires et la recherche de sources de données de dépositaire pour collecter du contenu pertinent pour le cas. À mesure que le cas progresse, il est facile d’ajouter de nouveaux dépositaires ou de libérer des dépositaires à partir du cas. Pour plus d’informations, consultez la rubrique [utiliser des dépositaires dans Advanced eDiscovery](managing-custodians.md).
+Utilisez l’onglet **sources** pour ajouter et gérer les personnes que vous avez identifiées comme des personnes intéressantes dans le cas et d’autres sources de données qui ne peuvent pas être associées à un dépositaire. Lorsque vous ajoutez des dépositaires ou des sources de données non privatives de temps, vous pouvez effectuer rapidement des actions telles que le placement d’une conservation légale sur des dépositaires et des sources de données non-privatives, la communication avec des dépositaires et la recherche de dépositaires et de sources de données non privatives pour collecter du contenu pertinent pour le cas. Au fur et à mesure de la progression, il est facile d’ajouter de nouveaux dépositaires ou des sources de dates non privatives de ressources ou de les diffuser à partir du cas. Pour plus d’informations, consultez la rubrique [utiliser des dépositaires dans Advanced eDiscovery](managing-custodians.md).
 
 ## <a name="managing-legal-hold-notifications"></a>Gestion des notifications de conservation légale
 

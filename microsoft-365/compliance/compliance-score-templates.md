@@ -14,18 +14,18 @@ search.appverid:
 - MOE150
 - MET150
 description: Passez en revue tous les modèles prêts à être utilisés pour la configuration des évaluations dans le score de conformité Microsoft (aperçu).
-ms.openlocfilehash: 4bb4bd95bb9df98f081b2e7a60ae21a86dfdc048
-ms.sourcegitcommit: 0650da0e54a2b484a3156b3aabe44397fbb38e00
+ms.openlocfilehash: 9e40527b44bc5b9a7a926a32f6e5d107c257b7b7
+ms.sourcegitcommit: 8595cb9ffe0ca5556080f24224182381e1d880de
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "45016574"
+ms.lasthandoff: 07/03/2020
+ms.locfileid: "45035619"
 ---
 # <a name="compliance-score-preview-templates"></a>Modèles de score de conformité (aperçu)
 
 ## <a name="templates-overview"></a>Vue d’ensemble des modèles
 
-Le score de conformité fournit un ensemble complet de **modèles permettant de créer des évaluations**. Ces modèles peuvent aider votre organisation à se conformer aux exigences nationales, régionales et sectorielles régissant la collecte et l’utilisation des données. De nouveaux modèles sont ajoutés au fur et à mesure que des réglementations sont mises en vigueur et mises à jour.
+Le [score de conformité](compliance-score.md) fournit un ensemble complet de **modèles permettant de créer des évaluations**. Ces modèles peuvent aider votre organisation à se conformer aux exigences nationales, régionales et sectorielles régissant la collecte et l’utilisation des données. De nouveaux modèles sont ajoutés au fur et à mesure que des réglementations sont mises en vigueur et mises à jour.
 
 Vous pouvez modifier les modèles ci-dessous en fonction des besoins de votre organisation. Vous pouvez également créer une évaluation personnalisée en créant votre propre modèle. 
 

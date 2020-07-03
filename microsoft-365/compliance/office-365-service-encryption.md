@@ -14,21 +14,21 @@ search.appverid:
 - MET150
 ms.collection: Strat_O365_Enterprise
 description: 'Résumé : comprendre la résilience des données dans Microsoft Office 365.'
-ms.openlocfilehash: e69d35f08070e1fe092ca8a9b4aef6d179711121
-ms.sourcegitcommit: f80c6c52e5b08290f74baec1d64c4070046c32e4
+ms.openlocfilehash: 4759cfda13ab5044ddf5980d7e61004e9e7626fa
+ms.sourcegitcommit: 51a9f34796535309b8ca8b52da92da0a3621327b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "44717345"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "45024774"
 ---
 # <a name="service-encryption"></a>Chiffrement de service
 
 En plus de l’utilisation du chiffrement au niveau du volume, Exchange Online, Skype entreprise, SharePoint Online et OneDrive entreprise utilisent également le chiffrement de service pour chiffrer les données client. Le chiffrement de service autorise deux options de gestion clés :
 
-## <a name="microsoft-managed-keys"></a>Clés gérées Microsoft : 
-Microsoft gère toutes les clés de chiffrement, y compris les clés racines pour le chiffrement de service. Cette option est actuellement disponible dans SharePoint Online et OneDrive entreprise. Cette option est actuellement déployée pour Exchange Online. Les clés gérées Microsoft fournissent le chiffrement de service par défaut, sauf si vous décidez d’utiliser la clé client. Si, par la suite, vous décidez de cesser d’utiliser la clé client sans suivre le chemin de purge des données, vos données resteront chiffrées à l’aide des clés gérées Microsoft. Vos données sont toujours chiffrées à ce niveau par défaut au minimum. 
+## <a name="microsoft-managed-keys"></a>Clés gérées Microsoft
+Microsoft gère toutes les clés de chiffrement, y compris les clés racines pour le chiffrement de service. Cette option est actuellement disponible dans SharePoint Online et OneDrive Entreprise. Cette option est actuellement déployée pour Exchange Online. Les clés gérées Microsoft fournissent le chiffrement de service par défaut, sauf si vous décidez d’utiliser la clé client. Si, par la suite, vous décidez de cesser d’utiliser la clé client sans suivre le chemin de purge des données, vos données resteront chiffrées à l’aide des clés gérées Microsoft. Vos données sont toujours chiffrées à ce niveau par défaut au minimum. 
 
-## <a name="customer-key"></a>Clé client : 
+## <a name="customer-key"></a>Clé client
 Vous fournissez des clés racines utilisées avec le chiffrement de service et vous gérez ces clés à l’aide du coffre de clés Azure. Microsoft gère toutes les autres clés. Cette option est appelée clé client et elle est actuellement disponible pour Exchange Online, SharePoint Online et OneDrive entreprise. (Précédemment appelé chiffrement avancé avec BYOK. Consultez la rubrique amélioration de la [transparence et du contrôle pour les clients Office 365](https://blogs.office.com/2015/04/21/enhancing-transparency-and-control-for-office-365-customers/) pour l’annonce d’origine.)
 
 Le chiffrement de service offre plusieurs avantages. Par exemple, clé client :

@@ -17,55 +17,54 @@ search.appverid:
 ms.assetid: ''
 description: Découvrez comment utiliser l’outil de gestion des dépositaires intégré dans Advanced eDiscovery pour coordonner vos flux de travail et identifier les sources de données pertinentes dans un cas.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: adf5df3bba1956ab1bb658590c1fcf9d4f5a814d
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 5b64bb288e94c345cc373b0d800bc0349895f7d3
+ms.sourcegitcommit: 51a9f34796535309b8ca8b52da92da0a3621327b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44818611"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "45024706"
 ---
 # <a name="add-custodians-to-an-advanced-ediscovery-case"></a>Ajouter des dépositaires à un cas avancé eDiscovery
 
 Utilisez l’outil de gestion des dépositaires intégré dans Advanced eDiscovery pour coordonner vos flux de travail concernant la gestion des dépositaires et l’identification des sources de données appropriées et privatives de ressources associées à un cas. Lorsque vous ajoutez un dépositaire, le système peut automatiquement identifier et placer un blocage sur sa boîte aux lettres Exchange et sur son compte OneDrive entreprise. Lors du processus de découverte de votre enquête, vous pouvez également identifier des sources de données supplémentaires (telles que des boîtes aux lettres, des sites ou des équipes) auxquelles un dépositaire a accédé ou auquel il a contribué. Dans ce cas, vous pouvez utiliser l’outil de gestion des dépositaires pour associer ces sources de données à un dépositaire spécifique. Après avoir ajouté des dépositaires à un cas et associé à d’autres sources de données, vous pouvez conserver rapidement les données et rechercher les données privatives de temps.
 
-Utilisez le flux de travail suivant pour ajouter et gérer des dépositaires dans des cas avancés de découverte électronique. 
+Utilisez le flux de travail suivant pour ajouter et gérer des dépositaires dans des cas avancés de découverte électronique.
 
-![Onglet gestion des dépositaires](../media/CustodianMgtPage.png)
+![Onglet sources dans le cas de eDiscovery avancé](../media/AeD-Sources-Tab.png)
 
 ## <a name="make-sure-you-have-the-necessary-permissions"></a>Vérifiez que vous disposez des autorisations nécessaires
 
 Pour ajouter des dépositaires à un cas, vous devez être membre du groupe de rôles gestionnaire de découverte électronique. Vous bénéficierez ainsi des autorisations nécessaires pour ajouter des dépositaires à un cas et mettre en place une conservation sur les sources de données privatives de Troie.
-
 
 ## <a name="step-1-add-potential-custodians"></a>Étape 1 : ajouter des dépositaires potentiels
 
 La première étape consiste à identifier et à ajouter des dépositaires à la demande de devis.
 
 1. Sur la page d’accueil de la **découverte électronique avancée** , cliquez sur le cas auquel vous souhaitez ajouter des dépositaires. 
- 
-2. Cliquez sur l’onglet **dépositaires** , puis cliquez sur **+ Ajouter des dépositaires**.
+
+2. Cliquez sur l’onglet **sources** , puis sur **Ajouter des dépositaires**.
 
 3. Recherchez les dépositaires à ajouter au cas. Tapez la première partie du nom d’une personne pour afficher les utilisateurs de l’Azure Active Directory de votre organisation. Lorsque vous trouvez la personne appropriée, cliquez sur son nom pour l’ajouter à la liste.
 
    ![Identifier les dépositaires potentiels](../media/AddCustodianStep1.png)
- 
+
 4. Après avoir ajouté tous les dépositaires pertinents, cliquez sur **suivant** pour sélectionner les sources de données principales des dépositaires.
   
 ## <a name="step-2-select-custodian-data-sources"></a>Étape 2 : sélection des sources de données du dépositaire
 
 Après avoir ajouté des dépositaires, l’outil dépositaire vous aidera à identifier les principales sources de données appartenant à chaque dépositaire. Ces emplacements de données sont la boîte aux lettres Exchange et le compte OneDrive du dépositaire. 
 
-Pour identifier les sources de données des dépositaires : 
+Pour identifier les sources de données des dépositaires :
 
 1. Pour sélectionner la boîte aux lettres Exchange pour tous les dépositaires, activez la case à cocher **Exchange** située en haut de la colonne. Vous pouvez alors désactiver la case à cocher de tout dépositaire spécifique pour supprimer une boîte aux lettres en tant qu’emplacement privative. Vous pouvez également laisser la case à cocher **Exchange** en haut de la colonne désélectionnée, puis activer la case à cocher pour les dépositaires individuels. 
- 
+
    ![Sélectionner des sources de données privatives de Troie](../media/AddCustodianStep2.png)
- 
+
 2. Répétez la même opération pour les comptes OneDrive des dépositaires. 
 
     Une fois que vous avez sélectionné les sources de données du dépositaire, le système tente automatiquement d’identifier et de vérifier ces sources de données, puis les ajoute à la casse en tant que sources de données associées aux dépositaires.
- 
-4. Cliquez sur **suivant** pour commencer à associer des sources de données supplémentaires aux dépositaires dans le cas.
+
+3. Cliquez sur **suivant** pour commencer à associer des sources de données supplémentaires aux dépositaires dans le cas.
 
 ## <a name="step-3-associate-additional-data-sources-to-a-custodian"></a>Étape 3 : associer des sources de données supplémentaires à un dépositaire
 
@@ -101,8 +100,8 @@ Une fois que vous avez finalisé les dépositaires et les sources de données à
 
 Pour placer les dépositaires et les sources de données en conservation :
 
-1. Sur la page **bloquer les dépositaires sélectionnés** , activez la case à cocher **conservation** en haut de la colonne pour placer tous les dépositaires en attente. Vous pouvez alors désactiver la case à cocher de tout dépositaire spécifique à retirer de la suspension. Vous pouvez également laisser la case à cocher **suspendre** en haut de la colonne désélectionnée, puis activer la case à cocher pour les dépositaires individuels. 
- 
+1. Sur la page **bloquer les dépositaires sélectionnés** , activez la case à cocher **conservation** en haut de la colonne pour placer tous les dépositaires en attente. Vous pouvez alors désactiver la case à cocher de tout dépositaire spécifique à retirer de la suspension. Vous pouvez également laisser la case à cocher **suspendre** en haut de la colonne désélectionnée, puis activer la case à cocher pour les dépositaires individuels.
+
    ![Placer des suspensions](../media/AddCustodianStep5.PNG)
 
 2. Vérifiez que le dépositaire contient des sélections, puis cliquez sur **Terminer**.
@@ -114,4 +113,3 @@ Une fois qu’un dépositaire est mis en attente, une stratégie de blocage des 
 1. Sur la page d' **Accueil** de l’incident, cliquez sur l’onglet **suspensions** , puis cliquez sur **CustodianHold-GUID**,  
 
 2. Sur la page de la fenêtre volante, cliquez sur **modifier la suspension** pour afficher toutes les sources de données de dépositaire mises en attente.
-

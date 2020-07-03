@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: 862cbe93-4268-4ef9-ba79-277545ecf221
 description: Découvrez les différents certificats, technologies et suites de chiffrement TLS utilisés pour le chiffrement dans Office 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 298d73551b5eb3d7ad7121075b086ee4630562f4
-ms.sourcegitcommit: 9ea67fd2e02af760d4fb62e3d09c93b446173f9d
+ms.openlocfilehash: 91fa21fff12c429032af6468ff3024acfc6ca2ab
+ms.sourcegitcommit: 51a9f34796535309b8ca8b52da92da0a3621327b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "44739108"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "45024540"
 ---
 # <a name="technical-reference-details-about-encryption"></a>Informations de référence technique sur le chiffrement
 
@@ -56,10 +56,9 @@ Depuis le 31 octobre 2018, Office 365 ne prend plus en charge TLS 1,0 et 1,1. D�
 
 Cela ne signifie pas que Office 365 bloquera les connexions TLS 1,0 et 1,1.
 
-TLS 1,0 et TLS 1,1 étaient officiellement obsolètes à ces dates.
+Bien que nous ayons défini à l’origine une date du 1er juin 2020 pour TLS 1,0 et TLS 1,1 la désapprobation pour les environnements internationaux et GCC, cette date n’est plus valide. Ceci est dû à COVID-19. Lorsque nous avons une nouvelle date pour cette dépréciation, nous la publierons ici. 
 
-- Le 1er juin 2020 dans les environnements mondiaux et GCC.
-- 15 janvier 2020 dans les environnements GCC High et DoD.
+Pour les environnements GCC High et DoD, une dépréciion officielle a eu lieu le 15 janvier 2020.
 
 Vous devez vous assurer que toutes les combinaisons client-serveur et navigateur-serveur utilisent TLS 1,2 et des suites de chiffrement modernes pour maintenir une connexion sécurisée avec Office 365 et les services Microsoft 365. Il se peut que vous deviez procéder à la mise à jour de certaines combinaisons client-serveur et navigateur-serveur. Pour plus d’informations sur la façon dont cela vous affecte, consultez [la rubrique préparation de l’utilisation obligatoire de TLS 1,2 dans Office 365](https://support.microsoft.com/help/4057306/preparing-for-tls-1-2-in-office-365).
   

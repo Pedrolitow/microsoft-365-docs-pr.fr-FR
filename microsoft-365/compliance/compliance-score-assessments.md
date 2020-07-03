@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Concevez la personnalisation du score de conformité Microsoft en créant des évaluations pour vous aider à gérer la conformité de votre organisation.
-ms.openlocfilehash: 45a5e76aa4f6581146ded510f75d772c202751ee
-ms.sourcegitcommit: 3ddcf08e8deec087df1fe524147313f1cb12a26d
+ms.openlocfilehash: 8b27267461e226a6db2173158d2d35238c0d5a5e
+ms.sourcegitcommit: 8595cb9ffe0ca5556080f24224182381e1d880de
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "45023307"
+ms.lasthandoff: 07/03/2020
+ms.locfileid: "45035629"
 ---
 # <a name="customize-compliance-score-preview-with-assessments"></a>Personnaliser le score de conformité (aperçu) avec les évaluations
 
@@ -35,7 +35,7 @@ Toutes vos évaluations sont répertoriées sur la page évaluations. [En savoir
 
 ## <a name="data-protection-baseline-default-assessment"></a>Évaluation par défaut de la base de données de protection des données
 
-Pour vous aider, Microsoft fournit une évaluation **par défaut** dans le score de conformité, qui contient la base de données de protection des données Microsoft 365. Cette configuration de référence est un ensemble de contrôles qui inclut des normes et des réglementations clés pour la protection des données et la gouvernance générale des données. Cette ligne de base présente principalement des éléments d’Institut CSF (Institut national de normes et technologie Cybersecurity Framework) et ISO (Organisation internationale de normalisation), ainsi que de FedRAMP (Federal Risk and Authorization Management Program) et RGPD (règlement général sur la protection des données de l’Union européenne).
+Pour vous aider, Microsoft fournit une évaluation **par défaut** dans le score de conformité qui contient la base de données de protection des données Microsoft 365. Cette configuration de référence est un ensemble de contrôles qui inclut des normes et des réglementations clés pour la protection des données et la gouvernance générale des données. Cette ligne de base présente principalement des éléments d’Institut CSF (Institut national de normes et technologie Cybersecurity Framework) et ISO (Organisation internationale de normalisation), ainsi que de FedRAMP (Federal Risk and Authorization Management Program) et RGPD (règlement général sur la protection des données de l’Union européenne).
 
 Cette évaluation est utilisée pour calculer votre score initial la première fois que vous êtes le score de conformité, avant de configurer d’autres évaluations. Le score de conformité collecte les signaux initiaux de vos solutions Microsoft 365. Vous verrez en un clin d’œil comment votre organisation est en fonction des normes et des réglementations clés en matière de protection des données, et découvrez les actions d’amélioration suggérées à entreprendre.
 
@@ -46,7 +46,7 @@ Cette évaluation est utilisée pour calculer votre score initial la première f
 Vous pouvez configurer les évaluations de trois façons :
 
 1. Choisissez une évaluation prête à utiliser.
-2. Modifier le modèle d’une évaluation en fonction de vos besoins.
+2. Modifier le [modèle d’une évaluation](compliance-score-templates.md) en fonction de vos besoins.
 3. Créez votre propre évaluation personnalisée.
 
 Les utilisateurs doivent être titulaires d’un rôle d’administrateur général, d’administrateur de conformité, d’administrateur de données de conformité ou d’administrateur de sécurité afin de créer ou de modifier des évaluations. En savoir plus sur [les rôles et les autorisations](compliance-score-setup.md#set-user-permissions-and-assign-roles).

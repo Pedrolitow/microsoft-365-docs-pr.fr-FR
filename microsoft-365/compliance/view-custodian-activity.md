@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Utilisez l’outil de gestion des dépositaires eDiscovery avancés pour accéder facilement à l’activité des dépositaires et les Rechercher dans votre cas.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 29aee2498b21cc4535ffa82f91fdba05125c4d18
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: f9e96d0b5dd3bf42dbba56a6e1be91014485ce98
+ms.sourcegitcommit: 51a9f34796535309b8ca8b52da92da0a3621327b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44819044"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "45024764"
 ---
 # <a name="view-custodian-audit-activity"></a>Afficher l’activité d’audit du dépositaire
 
@@ -39,9 +39,9 @@ Vous devez avoir le rôle Journaux d’audit en affichage seul ou Journaux d’a
 
 1. Accédez à **ediscovery > Advanced eDiscovery** et ouvrez le cas.
   
-2. Cliquez sur l’onglet **dépositaires** .
+2. Cliquez sur l’onglet **sources** .
   
-3. Sélectionnez un dépositaire dans la liste, puis cliquez sur **afficher l’activité du dépositaire** sur la page du menu volant.
+3. Sur la page **dépositaires** , sélectionnez un dépositaire dans la liste, puis cliquez sur **afficher l’activité du dépositaire** sur la page de menu volant.
 
     La page de recherche activités du dépositaire s’affiche. Remarque le dépositaire que vous avez sélectionné à l’étape précédente est affiché dans la zone de liste déroulante **dépositaire** . Vous pouvez sélectionner plusieurs dépositaires dans la zone de liste déroulante, mais vous ne pouvez rechercher des activités que pour un seul dépositaire à la fois.
 
@@ -49,15 +49,15 @@ Vous devez avoir le rôle Journaux d’audit en affichage seul ou Journaux d’a
    
 4. Configurez les critères de recherche suivants : 
       
-   a. **Activités** : cliquez sur la liste déroulante pour afficher les activités que vous pouvez rechercher. Après l’exécution de la recherche, seuls les enregistrements d’audit des activités sélectionnées sont affichés. La sélection de l’option **afficher les résultats pour toutes les activités** permet d’afficher les résultats de toutes les activités effectuées par le dépositaire qui correspondent aux autres critères de recherche.
+   1. **Activités** : cliquez sur la liste déroulante pour afficher les activités que vous pouvez rechercher. Après l’exécution de la recherche, seuls les enregistrements d’audit des activités sélectionnées sont affichés. La sélection de l’option **afficher les résultats pour toutes les activités** permet d’afficher les résultats de toutes les activités effectuées par le dépositaire qui correspondent aux autres critères de recherche.
 
       ![Liste des activités](../media/CustodianActivityAudit.PNG)
       
-      b. **Date de début et date de fin** : sélectionnez une date et une plage horaire pour afficher les événements qui se sont produits au cours de cette période. Les sept derniers jours sont sélectionnés par défaut. Les date et heure sont présentées au format UTC (temps universel coordonné). La plage de dates maximale que vous pouvez spécifier est d’un an.
+   1. **Date de début et date de fin** : sélectionnez une date et une plage horaire pour afficher les événements qui se sont produits au cours de cette période. Les sept derniers jours sont sélectionnés par défaut. Les date et heure sont présentées au format UTC (temps universel coordonné). La plage de dates maximale que vous pouvez spécifier est d’un an.
       
-      c. **Dépositaires** : cliquez dans cette zone, puis sélectionnez un dépositaire spécifique pour lequel afficher les résultats de la recherche. Les enregistrements d’audit de l’activité sélectionnée effectuée par les utilisateurs que vous sélectionnez dans cette zone sont affichés dans la liste des résultats.
+   1. **Dépositaires** : cliquez dans cette zone, puis sélectionnez un dépositaire spécifique pour lequel afficher les résultats de la recherche. Les enregistrements d’audit de l’activité sélectionnée effectuée par les utilisateurs que vous sélectionnez dans cette zone sont affichés dans la liste des résultats.
       
-   5. Clic    ![Bouton Rechercher](../media/SearchButton.PNG)  pour exécuter la recherche à l’aide de vos critères de recherche. Les résultats de la recherche sont chargés et, après quelques instants, s’affichent sous résultats dans la page recherche des activités du dépositaire. 
+5. Clic  ![Bouton Rechercher](../media/SearchButton.PNG)  pour exécuter la recherche à l’aide de vos critères de recherche. Les résultats de la recherche sont chargés et, après quelques instants, s’affichent sous résultats dans la page recherche des activités du dépositaire. 
 
 ## <a name="step-2-view-the-audit-log-search-results"></a>Étape 2 : afficher les résultats de la recherche du journal d’audit
 

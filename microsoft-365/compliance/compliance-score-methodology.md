@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 description: Comprendre comment le score de conformité Microsoft calcule un score personnalisé en fonction des actions entreprises pour traiter les risques et améliorer la position de votre conformité.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 552f2f85c4659ec24bc717d41c71733764d898ed
-ms.sourcegitcommit: 3ddcf08e8deec087df1fe524147313f1cb12a26d
+ms.openlocfilehash: 69b631dc355ff497d0f6042e0cce6aff3d70e557
+ms.sourcegitcommit: 51a9f34796535309b8ca8b52da92da0a3621327b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 07/02/2020
-ms.locfileid: "45023245"
+ms.locfileid: "45024674"
 ---
 # <a name="compliance-score-preview-calculation"></a>Calcul du score de conformité (aperçu)
 
@@ -74,7 +74,7 @@ Les actions se voient attribuer une valeur de score selon qu’elles sont obliga
 
  - Les **actions obligatoires** ne peuvent pas être contournées, intentionnellement ou accidentellement. Par exemple, une stratégie de mot de passe gérée de manière centralisée définit les exigences de longueur, de complexité et d’expiration des mots de passe. Les utilisateurs doivent respecter ces exigences pour accéder au système.
   
- - Les **actions discrétionnaires** reposent sur les utilisateurs pour comprendre la stratégie et agir en conséquence. Par exemple, une stratégie imposant aux utilisateurs de verrouiller leur ordinateur lorsqu’ils le quittent est un contrôle discrétionnaire, car il s’appuie sur l’utilisateur.
+ - Les **actions discrétionnaires** reposent sur les utilisateurs pour comprendre la stratégie et agir en conséquence. Par exemple, une stratégie imposant aux utilisateurs de verrouiller leur ordinateur lorsqu’ils le quittent est une action discrétionnaire car elle s’appuie sur l’utilisateur.
   
 ### <a name="preventative-detective-and-corrective-actions"></a>Actions préventives, de détection et de correction
   

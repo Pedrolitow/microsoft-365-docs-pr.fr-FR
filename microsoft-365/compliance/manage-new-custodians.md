@@ -17,16 +17,16 @@ search.appverid:
 ms.assetid: ''
 description: Découvrez comment afficher les détails, modifier et modifier en bloc la liste des dépositaires dans un cas avancé de découverte électronique.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 895383f72259fa5e46a46df35925bcc73f62e3a5
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 95b7a7dbec5656a1ac0692ed465eb5a99d7ca11a
+ms.sourcegitcommit: 51a9f34796535309b8ca8b52da92da0a3621327b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034176"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "45024804"
 ---
 # <a name="manage-custodians-in-an-advanced-ediscovery-case"></a>Gestion des dépositaires dans un cas avancé eDiscovery
 
-L’onglet dépositaires dans Advanced eDiscovery contient la liste de tous les dépositaires qui ont été ajoutés à l’incident. Une fois que vous avez ajouté des dépositaires à un cas, les détails de chaque dépositaire sont automatiquement collectés à partir d’Azure Active Directory et peuvent être consultés dans Advanced eDiscovery.
+La page dépositaires de l’onglet **sources** dans un cas avancé eDiscovery contient la liste de tous les dépositaires qui ont été ajoutés à l’incident. Une fois que vous avez ajouté des dépositaires à un cas, les détails de chaque dépositaire sont automatiquement collectés à partir d’Azure Active Directory et peuvent être consultés dans Advanced eDiscovery.
 
 ![Gestion des dépositaires](../media/CustodianDetails.PNG)
 
@@ -79,9 +79,9 @@ Pour mettre à jour les sources de données associées à un dépositaire, proc�
 
 1. Accédez à **ediscovery > Advanced eDiscovery** et ouvrez le cas.
   
-2. Cliquez sur l’onglet **dépositaires** .
+2. Cliquez sur l’onglet **sources** .
   
-3. Sélectionnez un dépositaire dans la liste, puis cliquez sur **modifier** sur la page de menu volant.
+3. Sur la page **dépositaires** , sélectionnez un dépositaire dans la liste, puis cliquez sur **modifier** sur la page de menu volant.
 
     ![Modifier des sources de données](../media/EditCustodianDataSource.PNG)
   
@@ -103,15 +103,17 @@ Pour déclencher le processus de réindexation afin d’adresser des éléments 
 
 1. Accédez à **ediscovery > Advanced eDiscovery** et ouvrez le cas.
 
-2. Cliquez sur l' **onglet dépositaires**, puis sélectionnez un dépositaire dont les données doivent être réindexées. 
+2. Cliquez sur l’onglet **sources** .
 
-3. Sur la page de la fenêtre volante, cliquez sur **mettre à jour l’index**.
+3. Sur la page **dépositaires** , sélectionnez un dépositaire dont les données doivent être réindexées.
+
+4. Sur la page de la fenêtre volante, cliquez sur **mettre à jour l’index**.
 
    Une boîte de dialogue s’affiche, indiquant que le travail d’index a été créé.
 
 La réindexation des données du dépositaire est un processus long ; le travail correspondant créé est nommé **réindexation des données des dépositaires**. Vous pouvez suivre l’avancement sous l’onglet **travaux** ou sous l’onglet **dépositaires** en surveillant le statut dans la colonne **État du travail d’indexation** .
 
-Pour plus d’informations, reportez-vous aux rubriques suivantes :
+Pour plus d’informations, voir :
 
 - [Utiliser les erreurs de traitement](processing-data-for-case.md)
 
@@ -127,9 +129,9 @@ Pour libérer un dépositaire :
 
 1. Accédez à **ediscovery > Advanced eDiscovery** et ouvrez le cas.
 
-2.    Accédez à l’onglet **dépositaires** .
+2. Cliquez sur l’onglet **sources** .
 
-3.    Cliquez sur l' **onglet dépositaires**, puis sélectionnez le dépositaire qui est lancé à partir du cas.
+3. Sur la page **dépositaires** , puis sélectionnez le dépositaire qui est lancé à partir de l’incident.
 
 4. Sur la page flyout, cliquez sur **libérer le dépositaire**.
 
