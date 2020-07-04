@@ -13,24 +13,25 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 - MOE150
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
 description: Obtenez un rapport régulier sur la façon dont les membres de votre organisation utilisent les services Microsoft 365. Le tableau de bord Vue d’ensemble de l’utilisation vous permet d’explorer chaque graphique pour obtenir d'autres informations.
-ms.openlocfilehash: 665512e322eadd2f590fb5109fd6f1a9e7706e61
-ms.sourcegitcommit: b458277f0a9937555bc6c5b3fb2a41613f7cc9a9
+ms.openlocfilehash: f1902c71b167d6293530eae61fa6c57d63c5f06c
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2020
-ms.locfileid: "43794016"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44387800"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center"></a>Rapports Microsoft 365 dans le centre d'administration
 
-Vous pouvez facilement identifier la manière dont les membres de votre entreprise utilisent les services Microsoft 365. Par exemple, vous pouvez identifier les personnes qui utilisent souvent un service et pour lesquelles les quotas sont atteints, ou celles qui n’ont pas véritablement besoin d’une licence Microsoft 365.
+You can easily see how people in your business are using Microsoft 365 services. For example, you can identify who is using a service a lot and reaching quotas, or who may not need an Microsoft 365 license at all.
   
-Des rapports sont disponibles pour les 7, 30, 90 et 180 derniers jours. Les données ne sont pas tout de suite disponibles pour toutes les périodes couvertes par les rapports. Les rapports sont disponibles au bout de 48 heures.
+Reports are available for the last 7 days, 30 days, 90 days, and 180 days. Data won't exist for all reporting periods right away. The reports become available within 48 hours.
   
 Visionnez cette vidéo pour une vue d’ensemble : sur la façon d'utiliser les rapports :
   
@@ -96,7 +97,9 @@ En fonction de votre abonnement, les rapports suivants sont disponibles.
   
 - [Utilisation des applications de messagerie](email-apps-usage.md)
 
-- [Activité des formulaires](forms-activity.md)
+- [Utilisation des formulaires](forms-activity.md)
+
+- [Utilisation de Forms Pro](forms-pro-activity.md)
   
 - [Groupes Microsoft 365](office-365-groups.md)
   
@@ -156,7 +159,7 @@ En fonction de votre abonnement, les rapports suivants sont disponibles.
   
 ## <a name="how-to-view-usage-information-for-a-specific-user"></a>Afficher les informations d’utilisation pour un utilisateur spécifique
 
-Utilisez les rapports de service pour déterminer le niveau d’utilisation du service par un utilisateur spécifique. Par exemple, pour déterminer la quantité de stockage de boîte aux lettres consommée par un utilisateur spécifique, ouvrez le rapport Utilisation des boîtes aux lettres et triez les utilisateurs par nom. Si vous avez des milliers d’utilisateurs, exportez le rapport vers Excel pour filtrer la liste rapidement.
+Use the service reports to research how much a specific user is using the service. For example, to find out how much mailbox storage a specific user has consumed, open the Mailbox usage report, and sort the users by name. If you have thousands of users, export the report to Excel so you filter through the list quickly.
   
 Vous ne pouvez pas générer de rapport pour un compte d’utilisateur afin d’obtenir la liste des services associés et le niveau d’utilisation.
   
@@ -174,7 +177,7 @@ Votre liste d’utilisateurs se présente comme suit :
   
 ![Rapports : liste d’utilisateurs rendus anonymes](../../media/2ed99bce-4978-4ee3-9ea2-4a8db26eef02.png)
   
-Quelques minutes sont nécessaires pour répercuter ces modifications dans les rapports du tableau de bord Rapports. Ce paramètre s’applique également à l’API Rapports.
+It'll take a few minutes for these changes to take effect on the reports in the reports dashboard. This setting also applies to the reports API.
   
 ## <a name="what-happens-to-usage-data-when-a-user-account-is-closed"></a>Qu’advient-il des données d’utilisation lors de la fermeture d’un compte utilisateur ?
 

@@ -13,12 +13,12 @@ ms.custom: ''
 localization_priority: Priority
 description: Découvrez comment Microsoft 365 aide les services financiers à passer à une plateforme de collaboration moderne, tout en assurant la sécurité et la conformité des données et des systèmes avec les réglementations.
 f1.keywords: NOCSH
-ms.openlocfilehash: 24177c6e878116b8d60d8f38be77d0b52141699a
-ms.sourcegitcommit: 1c90bcc5c56f24895f01c3e0423c3f6b73715c13
+ms.openlocfilehash: 6c6b1c6bbd62e632b79629638aa78630974823df
+ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44214695"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44432426"
 ---
 # <a name="key-compliance-and-security-considerations-for-us-banking-and-capital-markets"></a>Principales considérations en matière de conformité et de sécurité pour les marchés bancaires et des capitaux américains
 
@@ -99,7 +99,7 @@ Les pratiques recommandées par FINRA sont les suivantes :
 * Définir et contrôler clairement les canaux numériques approuvés. Définir les canaux numériques approuvés et interdits. Bloquer ou restreindre l'utilisation de canaux numériques interdits, ou de fonctions interdites dans les canaux numériques, qui limitent la capacité de l'organisme à se conformer aux exigences de gestion des documents et de supervision.
 * Fournir une formation aux communications numériques. Implémenter des programmes de formation obligatoire avant d’octroyer aux délégués enregistrés l’accès à des canaux numériques approuvés. Une formation permet de clarifier les attentes d’une organisation en matière de communications numériques professionnelles et personnelles, et guide l’utilisateur à l’aide des fonctionnalités autorisées de chaque canal de façon conforme.
 
-Les résultats et observations de FINRA pour les communications numériques concernent directement la capacité d’une organisation à se conformer à la [règle SEC 17A -4](https://www.law.cornell.edu/cfr/text/17/240.17a-4) pour conserver toutes les communications professionnelles, FINRA règles [3110](https://www.finra.org/rules-guidance/rulebooks/finra-rules/3110) et [3120](https://www.finra.org/rules-guidance/rulebooks/finra-rules/3120) pour la supervision et la révision des communications, ainsi que les séries de règles [4510](https://www.finra.org/rules-guidance/rulebooks/finra-rules/4510) pour la conservation des enregistrements. La Commodity Futures Trading Commission (FTC) promulgue des exigences similaires dans le cadre du 17 CFR 131. Ces réglementations sont étudiées en détail plus loin dans cet article.
+Les résultats et observations de FINRA pour les communications numériques concernent directement la capacité d’une organisation à se conformer à la [règle SEC 17A -4](https://www.law.cornell.edu/cfr/text/17/240.17a-4) pour conserver toutes les communications professionnelles, FINRA règles [3110](https://www.finra.org/rules-guidance/rulebooks/finra-rules/3110) et [3120](https://www.finra.org/rules-guidance/rulebooks/finra-rules/3120) pour la supervision et la révision des communications, ainsi que les séries de règles [4510](https://www.finra.org/rules-guidance/rulebooks/finra-rules/4510) pour la conservation des enregistrements. La Commodity Futures Trading Commission (CFTC) promulgue des exigences similaires dans le cadre du 17 CFR 131. Ces réglementations sont étudiées en détail plus loin dans cet article.
 
 ***Teams, ainsi que la suite complète d'offres de sécurité et de conformité Microsoft 365, fournit un canal de communication numérique d'entreprise pour les institutions de services financiers afin de mener efficacement leurs activités et de se conformer aux réglementations.*** Le reste de cet article décrit comment les fonctionnalités intégrées de Microsoft 365 pour la gestion des dossiers, la protection des informations, les barrières à l'information et le contrôle de la supervision donnent à Teams un solide ensemble d'outils pour aider à respecter les obligations réglementaires.
 

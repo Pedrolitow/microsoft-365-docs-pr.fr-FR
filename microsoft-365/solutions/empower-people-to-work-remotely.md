@@ -5,7 +5,7 @@ f1.keywords:
 - NOCSH
 ms.author: josephd
 manager: laurawi
-ms.date: 06/03/2020
+ms.date: 06/08/2020
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -17,51 +17,39 @@ ms.collection:
 - M365solutions
 ms.custom: ''
 description: Configurez l’infrastructure de service et de sécurité qui permet à vos employés de travailler à distance de n’importe où et à tout moment.
-ms.openlocfilehash: 763c8e745eb54897c1df88ecb5a9064987ed5a13
-ms.sourcegitcommit: 9195c83c725a7e6ed395ce0253304da54e2195f0
+ms.openlocfilehash: d4dded6c08e665a2756c45659f179e8252fcacc1
+ms.sourcegitcommit: bd5a08785b5ec320b04b02f8776e28bce5fb448f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "44560461"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "44844869"
 ---
 # <a name="empower-remote-workers-with-microsoft-365"></a>Confier des responsabilités aux travailleurs à distance avec Microsoft 365
 
-Votre entreprise devra sans doute autoriser vos employés à bénéficier d’un accès sécurisé aux informations, outils et ressources en local et sur le cloud de votre organisation depuis leur domicile. Permettre aux employés de travailler en toute simplicité et en toute sécurité est important pour de nombreuses organisations :
+Votre entreprise devra sans doute autoriser vos employés à bénéficier d’un accès sécurisé aux informations, outils et ressources en local et sur le cloud de votre organisation depuis leur domicile. Permettre aux employés de travailler à distance est important pour de nombreuses organisations :
 
 - Économisez sur l’espace de bureau.
 - Embaucher et retenir les travailleurs qui ne sont pas disposés à se déplacer.
 - Réduire les déplacements des travailleurs, en leur laissant plus de temps pour être productifs et pour des activités de réduction du stress en dehors du travail.
 
-Le travail à distance, également appelé télétravail, peut couvrir un spectre qui inclut les éléments suivants :
+Microsoft 365 offre les fonctionnalités qui permettent à vos employés de travailler à distance.
 
-- Les employés qui s'absentent occasionnellement du bureau pour assister à des conférences ou à des réunions avec les clients.
-- Certains employés qui travaillent à temps plein.
-- Une organisation totalement à distance dans laquelle il n’y a pas de bureau et dans laquelle tous les employés travaillent à distance.
+![Confier des responsabilités aux travailleurs à distance avec Microsoft 365](../media/empower-people-to-work-remotely/2-m365-remoteworker-solution-businessoverview.png)
 
-Où que vous soyez et à tout moment, les travailleurs distants doivent pouvoir accéder aux éléments suivants :
 
-- Ressources d’organisation, telles celles proposées par les centres de données d’application locaux.
-- Services et données dans le cloud de votre abonnement Microsoft 365, tels que Teams, Exchange Online, SharePoint et OneDrive.
+| | |
+|:-------|:-----|
+| Connecté | Où que vous soyez et à tout moment, les travailleurs distants peuvent accéder aux éléments suivants : <ul><li>Services et données dans le cloud de votre abonnement Microsoft 365. </li><li>Ressources d’organisation, telles celles proposées par les centres de données d’application locaux.</li></ul> |
+| Sécurisé | Les connexions sont sécurisées par une authentification multifacteur (MFA) et les fonctionnalités de sécurité intégrées de Microsoft 365 et Windows 10 protègent contre les logiciels malveillants, les attaques malveillantes et la perte de données. |
+| Géré | Les appareils de votre employé distant peuvent être gérés à partir du cloud avec les paramètres de sécurité, les applications autorisées et la conformité avec l’état d’intégrité du système. |
+| Collaboration et productivité | Vos employés distants peuvent être productifs en local de façon très collaborative avec : <ul><li>Réunions en ligne et sessions de conversation avec Teams. </li><li>Les espaces de travail partagés pour le stockage de fichiers dans le Cloud avec une accessibilité globale et une collaboration en temps réel avec SharePoint et OneDrive. </li><li>Les tâches partagées et flux de travail pour répartir le travail et accomplir les tâches. </li></ul> |
+|||
 
-Pour une expérience de connexion transparente, vos comptes d’utilisateur Services de domaine Active Directory (AD DS) doivent être synchronisés avec Azure Active Directory (Azure AD). Pour protéger vos appareils Windows 10, ils doivent être inscrits dans Intune. Voici un aperçu général de l’infrastructure.
+Pour une expérience de connexion transparente, vos comptes d’utilisateur Services de domaine Active Directory (AD DS) locaux doivent être synchronisés avec Azure Active Directory (Azure AD). Pour protéger vos appareils Windows 10, ils doivent être inscrits dans Intune. Voici un aperçu général de l’infrastructure.
 
 ![Infrastructure de base pour les employés à distance avec Microsoft 365](../media/empower-people-to-work-remotely/remote-workers-basic-infrastructure.png)
 
-
-Pour prendre en charge les travailleurs à distance, par exemple, en réponse à la crise d’COVID-19, une combinaison de fonctionnalités de Microsoft 365 permet à vos employés à distance de travailler de façon très collaborative, par exemple dans les cas suivants :
-
-- Les réunions en ligne et les sessions de conversation.
-- Les espaces de travail partagés pour le stockage de fichiers dans le Cloud avec une accessibilité globale et une collaboration en temps réel.
-- Les tâches partagées et flux de travail pour répartir le travail et accomplir les tâches.
-
-Pour renforcer la sécurité, Microsoft 365 inclut les éléments suivants :
-
-- Application des conditions requises pour l’authentification, détection des connexions à risque élevé et réponse à celles-ci et blocage de certaines applications et d’appareils non conformes.
-- Connexions cryptées et biens numériques dans le Cloud.
-- Autorisations pour définir qui peut faire quoi avec les fichiers.
-- Fonctionnalités de sécurité complètes pour protéger les appareils Windows 10.
-
-Pour répondre à ces critères pour les travailleurs à distance, utilisez les fonctionnalités suivantes de Microsoft 365.
+Pour répondre aux critères pour les travailleurs à distance, utilisez les fonctionnalités suivantes de Microsoft 365.
 
 | Fonctionnalité | Description | Licence |
 |:-------|:-----|:-------|
@@ -85,9 +73,9 @@ Procédez comme suit pour sécuriser et optimiser l’accès aux serveurs, aux d
 
 1. [Augmenter la sécurité de connexion avec l’authentification multifacteur](empower-people-to-work-remotely-secure-sign-in.md)
 2. [Fournir l’accès à distance aux applications et services locaux](empower-people-to-work-remotely-remote-access.md)
-3. [Déployer la gestion des points de terminaison pour vos appareils, PC et autres points de terminaison](empower-people-to-work-remotely-manage-endpoints.md)
-4. [Déployer les applications et les services de productivité des travailleurs à distance](empower-people-to-work-remotely-teams-productivity-apps.md)
-5. [Créer des lieux de communication](empower-people-to-work-remotely-communication-venues.md)
+3. [Déployer les services de sécurité et de conformité](empower-people-to-work-remotely-security-compliance.md)
+4. [Déployer la gestion des points de terminaison pour vos appareils, PC et autres points de terminaison](empower-people-to-work-remotely-manage-endpoints.md)
+5. [Déployer les applications et les services de productivité des travailleurs à distance](empower-people-to-work-remotely-teams-productivity-apps.md)
 6. [Former des télétravailleurs et répondre aux commentaires sur l’utilisation](empower-people-to-work-remotely-train-monitor-usage.md)
 
 ![Mesures pour confier des responsabilités aux travailleurs à distance avec Microsoft 365](../media/empower-people-to-work-remotely/remote-workers-step-grid.png)

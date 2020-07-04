@@ -5,7 +5,7 @@ f1.keywords:
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 05/20/2020
+ms.date: 06/22/2020
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -17,12 +17,12 @@ ms.collection:
 - M365solutions
 ms.custom: ''
 description: Demander à vos employés à distance de se connecter à l’aide de l’authentification multifacteur (MFA).
-ms.openlocfilehash: 142f4d42715ae53e411f045f4df09471b7ba63da
-ms.sourcegitcommit: 9195c83c725a7e6ed395ce0253304da54e2195f0
+ms.openlocfilehash: 57febcb68b09ffcbbb1694100b31d7d75158d872
+ms.sourcegitcommit: bd5a08785b5ec320b04b02f8776e28bce5fb448f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "44560410"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "44844953"
 ---
 # <a name="step-1-increase-sign-in-security-for-remote-workers-with-mfa"></a>Étape 1. Augmenter la sécurité de connexion pour les travailleurs à distance à l’aide d’une authentification multifacteur (MFA)
 
@@ -95,6 +95,10 @@ Ce tableau présente les résultats de l’activation de l’authentification mu
 ## <a name="let-your-users-reset-their-own-passwords"></a>Autoriser vos utilisateurs à réinitialiser leur mot de passe
 
 La Réinitialisation des mots de passe libre-service (SSPR) permet aux utilisateurs de réinitialiser leur mot de passe sans avoir de conséquence pour le personnel informatique. Les utilisateurs peuvent rapidement réinitialiser leur mot de passe à tout moment et n’importe où. Regardez [cette vidéo](https://go.microsoft.com/fwlink/?linkid=2128524) pour configurer la Réinitialisation des mots de passe libre-service.
+
+## <a name="sign-in-to-saas-apps-with-azure-ad"></a>Se connecter aux applications SaaS avec Azure AD
+
+Outre la possibilité d’utiliser l’authentification cloud pour les utilisateurs, Azure AD permet également de sécuriser toutes vos applications, qu’elles soient locales, dans le cloud de Microsoft ou dans un autre cloud. En [intégrant vos applications dans Azure AD](https://docs.microsoft.com/azure/active-directory/manage-apps/plan-an-application-integration), les travailleurs à distance peuvent facilement découvrir les applications dont ils ont besoin et s’y connecter de façon sécurisée.
 
 ## <a name="admin-technical-resources-for-mfa-and-identity"></a>Ressources techniques pour l’administrateur pour l’authentification multifacteur et l’identité
 

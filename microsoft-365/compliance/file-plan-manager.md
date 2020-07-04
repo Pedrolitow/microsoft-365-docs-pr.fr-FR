@@ -1,5 +1,5 @@
 ---
-title: Vue d’ensemble du gestionnaire de plan de gestion de fichiers
+title: Utiliser le plan de gestion de fichiers pour gérer les étiquettes de rétention dans le cycle de vie du contenu
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -15,115 +15,126 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
-description: Le gestionnaire de plan de gestion de fichiers offre des fonctionnalités de gestion avancées pour les étiquettes et les stratégies de conservation, et fournit un moyen intégré de parcourir l’activité d’étiquette et d’étiquette vers le contenu pour l’intégralité du cycle de vie de votre contenu, de la création à la destruction finale, en passant par la collaboration, la déclaration d’enregistrement et la conservation.
-ms.openlocfilehash: d47e0df05ec7dacbb2d0eaa9a7593183d5d0c557
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+description: Le plan de gestion de fichiers offre des fonctionnalités de gestion avancées pour les étiquettes de rétention.
+ms.custom: seo-marvel-may2020
+ms.openlocfilehash: 85160a859469a5c2dcb1aec8100eed6e25bd7597
+ms.sourcegitcommit: 5e8901e7e571f20ede04f460bd3e7077dda004ca
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44352137"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "44874904"
 ---
-# <a name="overview-of-file-plan-manager"></a>Vue d’ensemble du gestionnaire de plan de gestion de fichiers
+# <a name="use-file-plan-to-manage-retention-labels"></a>Utiliser le plan de gestion de fichiers pour gérer les étiquettes de rétention
 
 >*[Guide de sécurité et conformité pour les licences Microsoft 365](https://aka.ms/ComplianceSD).*
 
-Le gestionnaire de plan de gestion de fichiers offre des fonctionnalités de gestion avancées pour les étiquettes et les stratégies de conservation, et fournit un moyen intégré de parcourir l’activité d’étiquette et d’étiquette vers le contenu pour l’intégralité du cycle de vie de votre contenu, de la création à la destruction finale, en passant par la collaboration, la déclaration d’enregistrement et la conservation. 
+Bien que vous puissiez créer et gérer les étiquettes de rétention à partir de **Gouvernance des informations** dans le centre de conformité Microsoft 365, le plan de gestion de fichiers de **Gestion des enregistrements** dispose de fonctionnalités de gestion supplémentaires :
 
-Pour accéder au gestionnaire du plan de gestion des fichiers dans le centre de sécurité et conformité, allez sur **Gestion des enregistrements** > **plan de gestion des fichiers**.
+- Vous pouvez créer des étiquettes de rétention en bloc en important les informations pertinentes à partir d’une feuille de calcul.
 
-![Page de plan de gestion de fichiers](../media/file-plan-page.png)
+- Vous pouvez exporter les informations à partir d’étiquettes de rétention existantes pour l’analyse et la collaboration hors connexion, ou pour la modification en bloc.
 
-## <a name="accessing-file-plan-manager"></a>Accès au gestionnaire de plan de fichiers
+- Des informations supplémentaires sur les étiquettes de rétention s’affichent pour vous permettre de voir plus facilement les paramètres de toutes les étiquettes de rétention à partir d’une même vue.
 
-Pour accéder au gestionnaire de plan de fichiers, vous devez posséder l’un des rôles d’administrateur suivants :
+- Les descripteurs de plan de gestion de fichiers prennent en charge des informations supplémentaires et facultatives pour chaque étiquette.
+
+Le plan de gestion de fichiers peut être utilisé pour toutes les étiquettes de rétention, même s’ils ne marquent pas le contenu comme un enregistrement.
+
+![Page de plan de gestion de fichiers](../media/compliance-file-plan.png)
+
+Pour plus d’informations sur les étiquettes de rétention et leur utilisation, voir [Découvrir les étiquettes de rétention](labels.md).
+
+## <a name="accessing-file-plan"></a>Accès au plan de gestion de fichiers
+
+Pour accéder au plan de gestion de fichiers, vous devez posséder l’un des rôles d’administrateur suivants :
     
 - Gestionnaire de conservation
 
 - Gestionnaire de conservation en lecture seule
 
-## <a name="default-retention-labels-and-label-policy"></a>Étiquettes de rétention par défaut et stratégie d’étiquette
+Dans le centre de conformité Microsoft 365, accédez à **Solutions** > **Gestion des enregistrements** > **Plan de gestion de fichiers**. 
 
-S’il n’existe aucune des étiquettes de rétention dans le centre de sécurité et conformité, la première fois que vous sélectionnez **Offre Fichier** dans le volet de navigation gauche, cela crée une stratégie d’étiquette appelée **Stratégie de Publication de Gouvernance des Données par défaut**. 
+Si **Gouvernance des informations** ne s’affiche pas dans le volet de navigation, faites défiler la liste vers le bas, puis sélectionnez **Tout afficher**.
 
-Cette stratégie d’étiquette contient trois étiquettes de rétention :
-
-- **Processus opérationnels**
-- **Entreprise générale**
-- **Accord Contrat**
-
-Ces étiquettes de rétention sont uniquement configurées pour conserver le contenu, et non supprimer le contenu. Cette stratégie d’étiquette peut être publiée dans l’ensemble de votre organisation et peut être désactivée ou supprimée. 
-
-Vous pouvez déterminer qui a ouvert le Gestionnaire d’Offre de fichiers et désactivé l’expérience de première exécution en passant en revue le journal d’audit pour les activités **Créé la stratégie de rétention** et **Créé la configuration de rétention pour une stratégie de rétention**.
-
-> [!NOTE]
-> En raison des commentaires des clients, nous avons supprimé cette fonctionnalité qui crée les étiquettes de rétention par défaut et la stratégie d’étiquette de rétention mentionnées ci-dessus. Vous ne verrez que ces étiquettes de rétention et la stratégie d’étiquette de rétention si vous avez ouvert le gestionnaire de plan de gestion des fichiers avant le 11 avril 2019.
+![Page de plan de gestion de fichiers](../media/compliance-file-plan.png)
 
 ## <a name="navigating-your-file-plan"></a>Navigation dans votre plan de gestion de fichiers
 
-Le gestionnaire de plan de gestion de fichiers permet d’afficher tous les paramètres de vos étiquettes et stratégies de conservation sur un même écran, en toute simplicité.
+Si vous avez déjà créé des étiquettes de rétention à partir de **Gouvernance des informations** dans le centre de conformité Microsoft 365, celles-ci s’affichent automatiquement dans votre plan de gestion de fichiers. 
 
-Notez que les étiquettes de conservation créées en dehors du plan de gestion de fichiers seront disponibles dans le plan de gestion de fichiers, et inversement.
+De même, si vous créez des étiquettes de rétention dans le plan de gestion de fichiers, celles-ci sont également disponibles dans **Gouvernance des informations** si elles ne sont pas configurées pour marquer le contenu comme un enregistrement.
 
-Sur l’onglet **Etiquettes** du plan de gestion de fichiers, les informations et fonctionnalités supplémentaires suivantes sont disponibles :
+Sur la page **Plan de gestion de fichiers**, vous pouvez voir toutes vos étiquettes avec leur état et leurs paramètres, les descripteurs de plan de gestion de fichiers facultatifs, une option d’exportation pour analyser ou activer les révisions de vos étiquettes en mode hors connexion, ainsi qu’une option d’importation pour créer des étiquettes de rétention. 
 
 ### <a name="label-settings-columns"></a>Colonnes de paramètres des étiquettes
 
-- **Basé sur** identifie le type de déclencheur qui marque le début de la période de conservation. Les valeurs valides sont :
+Toutes les colonnes à l’exception du **Nom** de l’étiquette peuvent être affichées ou masquées en sélectionnant l’option **Personnaliser les colonnes**. Par défaut, les premières colonnes affichent des informations sur l’état de l’étiquette et ses paramètres : 
+
+- **État** indique si l’étiquette est incluse dans une stratégie d’étiquette ou une stratégie d’application automatique (**Active**) ou non (**Inactive**).
+
+- **Basée sur** identifie la date de début de la période de rétention ou la façon dont la période de rétention débute. Valeurs valides :
     - Événement
     - Date de création
     - Dernière modification
     - Date d’étiquetage
-- **Enregistrement** identifie si l’élément devient un enregistrement déclaré lorsque l’étiquette est appliquée. Les valeurs valides sont les suivantes :
+
+- **Est un enregistrement** identifie si l’élément est marqué comme enregistrement lorsque l’étiquette est appliquée. Valeurs valides :
     - Non
     - Oui
-    - Oui (réglementaire)
-- **Conservation** identifie le type de conservation. Les valeurs valides sont les suivantes :
-    - Conserver
-    - Conserver et supprimer
-    - Supprimer
-- **Destination** détermine ce qu’il advient du contenu à la fin de la période de conservation. Les valeurs valides sont les suivantes :
-    - null
+
+- **Durée de rétention** identifie la période de rétention. Valeurs valides :
+    - Jours
+    - Mois
+    - Années
+    - Pour toujours
+    - Aucune
+
+- **Type de destruction** détermine ce qu’il advient du contenu à la fin de la période de rétention. Valeurs valides :
     - Aucune action
     - Suppression automatique
-    - Examen requis (également appelé Examen de destination)
+    - Révision requise
 
-![Paramètres des étiquettes dans le plan de gestion de fichiers](../media/file-plan-label-columns.png)
+### <a name="file-plan-descriptors-columns"></a>Colonnes des descripteurs de plan de gestion de fichiers
 
-### <a name="retention-label-file-plan-descriptors-columns"></a>Colonnes des descripteurs de plan de gestion de fichiers pour les étiquettes
+Le plan de gestion de fichiers vous permet d’inclure davantage d’informations dans le cadre de vos étiquettes de rétention. Ces descripteurs de plan de gestion de fichiers fournissent davantage d’options pour améliorer la gestion et l’organisation du contenu que vous devez étiqueter.
 
-Vous pouvez désormais inclure plus d’informations dans la configuration de vos étiquettes de rétention. L’insertion de descripteurs de plan de gestion de fichiers dans les étiquettes de rétention améliore la facilité de gestion et l’organisation de votre plan de gestion des fichiers.
+Par défaut, à partir d’**ID de référence**, les quelques colonnes suivantes affichent ces descripteurs de plan de gestion de fichiers que vous pouvez spécifier lorsque vous créez une étiquette de rétention ou modifiez une étiquette existante. 
 
-Pour vous aider à démarrer, le gestionnaire de plan de gestion de fichiers fournit des valeurs prédéfinies prêtes à être utilisées pour : Fonction/service, Catégorie, Type d’autorité et Mise en service/citation. Vous pouvez ajouter de nouvelles valeurs de descripteur de plan de gestion des fichiers lors de la création ou de la modification d’une étiquette de conservation. Vous pouvez également spécifier des descripteurs de plan de gestion de fichiers lorsque vous importez des étiquettes de rétention dans votre plan de fichiers. 
+Pour commencer, il existe des valeurs prêtes à l’emploi pour les descripteurs de plan de gestion de fichiers suivants : 
+- Fonction/Service
+- Catégorie
+- Type d’autorité
+- Clause/citation 
 
-Voici une vue de l’étape des descripteurs de plan de gestion des fichiers lors de la création ou de la modification d’une étiquette de conservation.
+Exemple de descripteurs de plan de gestion de fichiers lorsque vous créez ou modifiez une étiquette de rétention :
 
 ![Descripteurs de plan de gestion de fichiers](../media/file-plan-descriptors.png)
 
-Voici une vue des colonnes de descripteurs du plan de gestion de fichiers dans l’onglet **Etiquettes** du gestionnaire de plan gestion de fichiers.
+Exemple de vue des colonnes des descripteurs de plan de gestion de fichiers :
 
 ![file-plan-descriptors-on-labels-tab.png](../media/file-plan-descriptors-on-labels-tab.png)
 
-## <a name="export-all-existing-retention-labels-to-analyze-andor-perform-offline-reviews"></a>Exporter toutes les étiquettes de rétention existantes pour analyser et/ou effectuer des révisions en mode hors connexion
+## <a name="export-all-retention-labels-to-analyze-or-enable-offline-reviews"></a>Exporter toutes les étiquettes de rétention pour analyse ou activer les révisions en mode hors connexion
 
-Depuis le gestionnaire de plan de gestion de fichiers, vous pouvez exporter les détails de toutes les étiquettes de conservation dans un fichier .csv pour vous aider à fournir des évaluations périodiques de conformité aux responsables de la gouvernance des données de votre organisation.
+Depuis le plan de gestion de fichiers, vous pouvez exporter les détails de toutes les étiquettes de conservation dans un fichier .csv pour vous aider à fournir des évaluations périodiques de conformité aux responsables de la gouvernance des données de votre organisation.
 
-Pour exporter toutes les étiquettes de conservation : page **gestionnaire de plan de gestion de fichiers**, **Actions de plan de gestion de fichiers** \> **Exporter les étiquettes**.
+Pour exporter toutes les étiquettes de rétention : sur la page **Plan de gestion de fichiers**, cliquez sur **Exporter** :
 
-![Option d’export de plan de gestion de fichiers](../media/file-plan-export-labels-option.png)
+![Option d’exportation de plan de gestion de fichiers](../media/compliance-file-plan-export-labels.png)
 
-Un fichier *.csv contenant toutes les étiquettes de conservation existantes s’ouvre.
+Un fichier *.csv contenant toutes les étiquettes de rétention existantes s’ouvre. Par exemple :
 
 ![Fichier CSV affichant toutes les étiquettes de conservation](../media/file-plan-csv-file.png)
 
 ## <a name="import-retention-labels-into-your-file-plan"></a>Import d’étiquettes de rétention dans votre plan de gestion de fichiers
 
-Dans le gestionnaire de plan de gestion de fichiers, vous pouvez importer de nouvelles étiquettes de rétention en bloc et modifier des étiquettes de rétention existantes.
+Dans le plan de gestion de fichiers, vous pouvez importer en bloc de nouvelles étiquettes de rétention et utiliser la même méthode pour modifier en bloc les étiquettes de rétention existantes.
 
 Pour importer de nouvelles étiquettes de rétention et modifier des étiquettes de rétention existantes : 
 
-1. Dans la page **Plan de gestion de fichiers**, accédez à **Actions du plan de gestion de fichiers** > **Importer des étiquettes**.
+1. Sur la page **Plan de gestion de fichiers**, cliquez sur **Importer** pour utiliser la page **Remplir et importer votre plan de gestion de fichiers** :
 
-   ![Option d’import de plan de gestion de fichiers](../media/file-plan-import-labels-option.png)
+   ![Option d’import de plan de gestion de fichiers](../media/compliance-file-plan-import-labels.png)
 
    ![Option de téléchargement d’un modèle de plan de gestion de fichiers vide](../media/file-plan-blank-template-option.png)
 
@@ -131,42 +142,44 @@ Pour importer de nouvelles étiquettes de rétention et modifier des étiquettes
 
    ![Modèle de plan de gestion de fichiers vierge ouvert dans Excel](../media/file-plan-blank-template.png)
 
-3. Complétez le modèle. Les éléments suivants décrivent les propriétés et les valeurs valides pour chaque propriété du modèle de plan de gestion de fichiers. Pour l’importation, chaque valeur a une longueur maximale de 64 caractères. <br/>
+3. Renseignez le modèle à l’aide des informations suivantes qui décrivent les propriétés et les valeurs valides pour chaque d’entre elles. Pour l’importation, chaque valeur a une longueur maximale de 64 caractères. <br/>
 
-   |**Property**|**Type**|**Valeurs admises**|
+   |Propriété|Type|Valeurs admises|
    |:-----|:-----|:-----|
    |LabelName|Chaîne|Cette propriété spécifie le nom de l’étiquette de rétention.|
-   |Commentaire|Chaîne|Utilisez cette propriété pour ajouter une description de l’étiquette de rétention pour les administrateurs. Cette description s’affiche uniquement pour les administrateurs qui gèrent l’étiquette dans le centre de sécurité et conformité.|
+   |Commentaire|Chaîne|Utilisez cette propriété pour ajouter une description de l’étiquette de rétention pour les administrateurs. Cette description s’affiche uniquement pour les administrateurs qui gèrent l’étiquette de rétention dans le centre de conformité.|
    |Notes|Chaîne|Utilisez cette propriété pour ajouter une description de l’étiquette de rétention pour les utilisateurs. Cette description s’affiche lorsque les utilisateurs pointent sur l’étiquette dans les applications telles que Outlook, SharePoint et OneDrive. Si vous laissez cette propriété vide, une description est affichée par défaut, qui décrit les paramètres de rétention de l’étiquette. |
-   |IsRecordLabel|Chaîne|Cette propriété indique si l’étiquette est une étiquette d’enregistrement. Les éléments marqués avec une étiquette d’enregistrement sont déclarés comme enregistrements. Les valeurs valides sont les suivantes :</br>**TRUE** : l’étiquette est une étiquette d’enregistrement. Notez que les éléments déclarés comme enregistrements ne peuvent pas être supprimés. </br>**FALSE** : l’intitulé n’est pas un intitulé d’enregistrement. Il s’agit de la valeur par défaut.|
-   |RetentionAction|Chaîne|Cette propriété spécifie l’action à effectuer une fois que la valeur spécifiée par la propriété RetentionDuration expire. Les valeurs valides sont les suivantes :</br>**Delete** : les éléments antérieurs à la valeur spécifiée par la propriété RetentionDuration sont supprimés.</br>**Keep** : conserver les éléments pour la durée spécifiée par la propriété RetentionDuration et ne rien faire à l’expiration de la période. </br>**KeepAndDelete** : conserver les éléments pour la durée spécifiée par la propriété RetentionDuration et les supprimer à l’expiration de la période.   |
-   |RetentionDuration|Chaîne|Cette propriété spécifie la durée de rétention du contenu en nombre de jours. Les valeurs valides sont les suivantes :</br>**Unlimited** : les éléments sont conservés indéfiniment. </br>***n*** : un entier positif ; par exemple, **365**. 
-   |RetentionType|Chaîne|Cette propriété indique si la durée de rétention est calculée à partir de la date de création de contenu, de la date de l’événement, de la date étiquetée (marquée) ou de la date de la dernière modification. Les valeurs valides sont les suivantes :</br>**CreationAgeInDays**</br>**EventAgeInDays**</br>**TaggedAgeInDays**</br>**ModificationAgeInDays** |
-   |ReviewerEmail|SmtpAddress|Lorsque cette propriété est remplie, une révision avant destruction est déclenchée à l’expiration de la durée de la rétention. Cette propriété spécifie l’adresse électronique d’un réviseur pour l’action de rétention **KeepAndDelete**. Vous pouvez inclure l’adresse de courrier des utilisateurs individuels, des groupes de distribution ou de sécurité. Vous pouvez spécifier plusieurs adresses e-mail séparées par des points-virgules.|
-   |ReferenceId|Chaîne|Cette propriété spécifie la valeur affichée dans **l’ID de référence** du descripteur du plan de gestion de fichiers.| 
+   |IsRecordLabel|Chaîne|Cette propriété indique si l’étiquette marque le contenu comme un enregistrement. Les valeurs valides sont les suivantes : </br>**VRAI** : l’étiquette marque l’élément comme un enregistrement qui ne peut donc pas être supprimé. </br>**FAUX** : l’étiquette ne marque pas le contenu comme un enregistrement. Il s’agit de la valeur par défaut.|
+   |RetentionAction|Chaîne|Cette propriété spécifie l’action à effectuer une fois que la valeur spécifiée par la propriété RetentionDuration expire. Les valeurs valides sont les suivantes : </br>**Delete** : les éléments antérieurs à la valeur spécifiée par la propriété RetentionDuration sont supprimés.</br>**Keep** : conserver les éléments pour la durée spécifiée par la propriété RetentionDuration et ne rien faire à l’expiration de la période. </br>**KeepAndDelete** : conserver les éléments pour la durée spécifiée par la propriété RetentionDuration et les supprimer à l’expiration de la période.   |
+   |RetentionDuration|Chaîne|Cette propriété spécifie la durée de rétention du contenu en nombre de jours. Les valeurs valides sont les suivantes : </br>**Unlimited** : les éléments sont conservés indéfiniment. </br>***n*** : un entier positif ; par exemple, **365**. 
+   |RetentionType|Chaîne|Cette propriété indique si la durée de rétention est calculée à partir de la date de création de contenu, de la date de l’événement, de la date d’étiquetage ou de la date de la dernière modification. Les valeurs valides sont les suivantes : </br>**CreationAgeInDays**</br>**EventAgeInDays**</br>**TaggedAgeInDays**</br>**ModificationAgeInDays** |
+   |ReviewerEmail|SmtpAddress|Lorsque cette propriété est remplie, une révision avant destruction est déclenchée à l’expiration de la durée de la rétention. Cette propriété spécifie l’adresse électronique d’un réviseur pour l’action de rétention **KeepAndDelete**. Vous pouvez inclure l’adresse de courrier des utilisateurs individuels, ainsi que celle des groupes de distribution ou de sécurité. Vous pouvez spécifier plusieurs adresses e-mail séparées par des points-virgules.|
+   |ReferenceId|Chaîne|Cette propriété spécifie la valeur affichée dans l’**ID de référence** du descripteur du plan de gestion de fichiers que vous pouvez utiliser comme valeur unique pour votre organisation.| 
    |Departmentname|Chaîne|Cette propriété spécifie la valeur affichée dans les **Fonction/service** du descripteur du plan de gestion de fichiers.|
    |Catégorie|String|Cette propriété spécifie la valeur affichée dans la **Catégorie** du descripteur du plan de gestion de fichiers.|
    |Sous-catégorie|Chaîne|Cette propriété spécifie la valeur affichée dans la **Sous-catégorie** du descripteur du plan de gestion de fichiers.|
    |AuthorityType|Chaîne|Cette propriété spécifie la valeur affichée dans le **Type d’autorité** du descripteur du plan de gestion de fichiers.|
-   |CitationName|Chaîne|Cette propriété spécifie le nom de la citation affichée dans la **Clause/citation** du descripteur du plan de fichiers ; par exemple, « Sarbanes-Oxley Act ou 2002 ». |
+   |CitationName|Chaîne|Cette propriété spécifie le nom de la citation affiché dans le descripteur de plan de gestion de fichiers **Clause/citation**. Par exemple, « Loi Sarbanes-Oxley de 2002 ». |
    |CitationUrl|Chaîne|Cette propriété spécifie l’URL affichée dans la **Clause/citation** du descripteur du plan de gestion de fichiers.|
-   |CitationJurisdiction|Chaîne|Cette propriété spécifie la juridiction ou l’agence qui apparaît dans la **Clause/citation** du descripteur du plan de fichiers ; par exemple, « U.S. Securities and Exchange Commission (SEC) ».|
+   |CitationJurisdiction|Chaîne|Cette propriété spécifie la juridiction ou l’agence affichée dans le descripteur de plan de gestion de fichiers **Clause/citation**. Par exemple, « Securities and Exchange Commission (SEC) ».|
    |Réglementaire|Chaîne|Laisser la zone vierge. Cette propriété n’est pas utilisée pour le moment.|
-   |EventType|Chaîne|Cette propriété spécifie la règle de rétention associée à l’étiquette. Vous pouvez utiliser une valeur quelconque qui identifie distinctement la règle. Par exemple :</br>**Name**</br>**Nom unique (DN)**</br>**GUID** </br>Vous pouvez utiliser l'applet de commande [Get-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/get-retentioncompliancerule?view=exchange-ps) pour afficher les règles de rétention disponibles. Notez que si vous exportez des étiquettes d’une seule organisation Microsoft 365, vous ne pouvez pas utiliser les valeurs de la propriété EventType de cette organisation lorsque vous importez des étiquettes vers une autre organisation. Car les valeurs EventType sont uniques à chaque organisation. |
+   |EventType|Chaîne|Cette propriété spécifie la règle de rétention associée à l’étiquette. Vous pouvez utiliser une valeur quelconque qui identifie distinctement la règle. Par exemple :</br>**Name**</br>**Nom unique (DN)**</br>**GUID** </br>Vous pouvez utiliser l'applet de commande [Get-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/get-retentioncompliancerule?view=exchange-ps) pour afficher les règles de rétention disponibles. Notez que, les valeurs EventType étant uniques pour chaque organisation, si vous exportez des étiquettes d’une seule organisation, vous ne pouvez pas utiliser les valeurs de la propriété EventType de cette organisation lorsque vous importez des étiquettes vers une autre organisation.|
    |||
 
-   Voici un exemple de modèle contenant les informations sur les étiquettes de rétention.
+   Voici un exemple du modèle contenant les informations sur les étiquettes de rétention.
 
    ![Modèle de plan de gestion de fichiers complété](../media/file-plan-filled-out-template.png)
 
-4. Sous l’étape 3, sur la page de l’assistant d’importation du plan de gestion de fichiers, cliquer sur **Rechercher des fichiers** pour charger le modèle rempli. 
+4. Sous l’étape 3 sur la page **Remplir et importer votre plan de gestion de fichiers**, cliquer sur **Rechercher des fichiers** pour charger le modèle rempli. 
 
-   Le gestionnaire de plan de gestion de fichiers validera les entrées et affichera les statistiques d’importation.
+   Le plan de gestion de fichiers valide les entrées et affiche les statistiques d’importation.
 
    ![Statistiques d’importation de plan de gestion de fichiers](../media/file-plan-import-statistics.png)
 
-   En cas d’erreur de validation, l’importation de plan de fichiers continuera à valider chaque entrée dans le fichier d’importation et affichera toutes les erreurs faisant référence aux numéros de ligne/ligne dans le fichier d’importation, copiera les résultats d’erreur affichés afin de pouvoir facilement revenir au fichier d’importation et corriger les erreurs.
+   En cas d’erreur de validation, l’importation de plan de gestion de fichiers continue de valider chaque entrée du fichier d’importation et affiche toutes les erreurs en faisant référence aux numéros de ligne et de colonne dans le fichier d’importation. Copiez les résultats d’erreur affichés afin de pouvoir les corriger lorsque vous revenez au fichier d’importation.
 
-5. Une fois l’importation terminée, accédez à nouveau au gestionnaire de plan de gestion de fichiers pour attribuer de nouvelles étiquettes de rétention aux stratégies de rétention nouvelles ou existantes.
+Une fois l’importation terminée, vous pouvez désormais ajouter les étiquettes de rétention à une nouvelle stratégie d’étiquette de rétention ou les appliquer automatiquement. Vous pouvez faire cela directement à partir de la page **Plan de gestion de fichiers** en sélectionnant la liste déroulante dans **+ Créer une étiquette**, puis **Stratégie de publication des étiquettes** ou **Stratégie d’application automatique d’une étiquette**.
 
-   ![Option de publication d’étiquettes](../media/file-plan-publish-labels-option.png)
+## <a name="next-steps"></a>Étapes suivantes
+
+Pour plus d’informations sur la création et la modification des étiquettes de rétention et sur leurs stratégies, voir [Créer, publier ou appliquer automatiquement des étiquettes de rétention](create-retention-labels.md).

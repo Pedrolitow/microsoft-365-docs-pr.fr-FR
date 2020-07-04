@@ -20,12 +20,12 @@ description: Utilisez les étiquettes de confidentialité de Microsoft informati
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 1e1a9d1144381ecc9c6b46d34f71c7a7741c6832
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: d15152257f9be222420d63ed53a5921c74dc184f
+ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44819244"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "44936793"
 ---
 # <a name="learn-about-sensitivity-labels"></a>En savoir plus sur les étiquettes de niveau de confidentialité
 
@@ -79,9 +79,6 @@ Each item of content can have a single sensitivity label applied to it. An item 
 
 ## <a name="what-sensitivity-labels-can-do"></a>Fonction des étiquettes de niveau de confidentialité
 
-> [!NOTE]
-> Outre l’application d’étiquettes de confidentialité aux courriers et aux documents actuellement disponible en préversion, vous pouvez également [utiliser des étiquettes de confidentialité avec Microsoft Teams, les groupes Microsoft 365 et les sites SharePoint](sensitivity-labels-teams-groups-sites.md).
-
 Une fois qu’une étiquette de confidentialité est appliquée à un e-mail ou un document, tout paramètre de protection relatif à cette étiquette sont appliqués au contenu. Vous pouvez utiliser une étiquette de confidentialité aux fins suivantes :
 
 - **Chiffrer** les e-mails uniquement ou les e-mails et les documents. Vous pouvez choisir les utilisateurs ou le groupe autorisés à effectuer telle ou telle action et la durée de l’autorisation. Par exemple, vous pouvez choisir d’autoriser les utilisateurs d’un groupe spécifique d'une autre organisation à vérifier le contenu pendant sept jours seulement après l’étiquetage du contenu. Par ailleurs, au lieu d’autorisations définies par l'administrateur, vous pouvez autoriser vos utilisateurs à attribuer des autorisations au contenu lorsqu’ils appliquent l’étiquette. 
@@ -97,9 +94,9 @@ Une fois qu’une étiquette de confidentialité est appliquée à un e-mail ou 
     Longueurs de chaînes : les filigranes sont limités à 255 caractères. Les en-têtes et les pieds de page sont limités à 1 024 caractères, sauf dans Excel. Excel présente une limite totale de 255 caractères pour les en-têtes et les pieds de page, mais cette limite inclut des caractères qui ne sont pas visibles, tels que des codes de mise en forme. Si cette limite est atteinte, la chaîne entrée n’apparaît pas dans Excel.
 
 
-- **Protégez du contenu dans des conteneurs tels que des sites et des groupes** lorsque vous choisissez la préversion pour [utiliser des étiquettes de confidentialité avec Microsoft Teams, les Groupes Microsoft 365 et les sites SharePoint (version d'évaluation publique)](sensitivity-labels-teams-groups-sites.md).
+- **Protégez du contenu dans des conteneurs tels que des sites et des groupes** lorsque vous activez la fonctionnalité à[utiliser des étiquettes de confidentialité avec Microsoft Teams, les Groupes Microsoft 365 et les sites SharePoint](sensitivity-labels-teams-groups-sites.md).
     
-    Les options de configuration pour les **paramètres de sites et de groupes** n’apparaissent pas si vous n'optez pas pour la préversion. N’oubliez pas que cette configuration d’étiquettes ne permet pas aux documents d’être automatiquement étiquetés. En lieu et place, les paramètres d’étiquette protègent le contenu en contrôlant l’accès au conteneur dans lequel les documents sont stockés. Ces paramètres incluent le niveau de confidentialité qui indique si un propriétaire de groupe Microsoft 365 peut ajouter des invités au groupe et le niveau d’accès accordé à un appareil non géré.
+    Les options de configuration pour les **paramètres de sites et de groupes** n’apparaissent pas si vous n'activez pas cette fonctionnalité. N’oubliez pas que cette configuration d’étiquettes ne permet pas aux documents d’être automatiquement étiquetés. En lieu et place, les paramètres d’étiquette protègent le contenu en contrôlant l’accès au conteneur dans lequel les documents sont stockés. Ces paramètres incluent le niveau de confidentialité qui indique si un propriétaire de groupe Microsoft 365 peut ajouter des invités au groupe et le niveau d’accès accordé à un appareil non géré.
 
 - **Appliquez automatiquement l’étiquette dans des applications Office ou recommandez une étiquette.** Vous pouvez choisir le type d’informations sensibles que vous voulez étiqueter. L'étiquette peut être appliquée automatiquement, ou vous pouvez inviter les utilisateurs à appliquer l’étiquette que vous recommandez. Si vous recommandez une étiquette, l’invite affiche le texte de votre choix. Par exemple :
     
