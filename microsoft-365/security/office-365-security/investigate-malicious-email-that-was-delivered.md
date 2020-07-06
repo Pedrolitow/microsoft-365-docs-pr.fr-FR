@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Découvrez comment utiliser les fonctionnalités d’analyse et de réponse aux menaces pour rechercher et examiner des courriers électroniques malveillants.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 917534670485327de73f62852af3d8010fd49e40
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 0ac44ab06aaff1618df2dfc1485d15a68458f385
+ms.sourcegitcommit: 9ee1261c405f82b49c62390a25dfdea23340d644
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034255"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "45039411"
 ---
 # <a name="investigate-and-remediate-malicious-email-that-was-delivered-in-office-365"></a>Examiner et résoudre les courriers électroniques malveillants remis dans Office 365
 
@@ -39,7 +39,7 @@ Assurez-vous que les conditions suivantes sont remplies :
     
 - Votre organisation a défini des stratégies pour le blocage du courrier indésirable, anti-programme malveillant, anti-hameçonnage, etc. Consultez la rubrique [Protégez-vous contre les menaces dans Office 365](protect-against-threats.md).
     
-- Vous êtes un administrateur général, ou vous avez l’administrateur de sécurité ou le rôle de recherche et de purge affecté dans le &amp; Centre de sécurité et de conformité. Consultez [la rubrique autorisations dans &amp; le centre de sécurité et de conformité](permissions-in-the-security-and-compliance-center.md). Pour certaines actions, vous devez également avoir un nouveau rôle aperçu affecté. 
+- Vous êtes un administrateur général, ou vous avez l’administrateur de sécurité ou le rôle de recherche et de purge affecté dans le centre de sécurité et de &amp; conformité. Consultez [la rubrique autorisations dans le &amp; Centre de sécurité et de conformité](permissions-in-the-security-and-compliance-center.md). Pour certaines actions, vous devez également avoir un nouveau rôle aperçu affecté. 
 
 #### <a name="preview-role-permissions"></a>Aperçu des autorisations de rôle
 
@@ -49,10 +49,10 @@ Pour effectuer certaines actions, telles que l’affichage des en-têtes de mess
 |---------|---------|---------|
 |Utilisation de l’Explorateur de menaces (et des détections en temps réel) pour analyser les menaces     |Administrateur général <br> Administrateur de sécurité <br> Lecteur de sécurité     | Non   |
 |Utiliser l’Explorateur de menaces (et les détections en temps réel) pour afficher les en-têtes des messages électroniques, ainsi que pour afficher un aperçu et télécharger des messages électroniques mis en quarantaine    |Administrateur général <br> Administrateur de sécurité <br>Lecteur de sécurité   |       Non  |
-|Utiliser l’Explorateur de menaces pour afficher les en-têtes et télécharger les messages électroniques remis aux boîtes aux lettres     |Administrateur général <br>Administrateur de sécurité <br> Lecteur de sécurité <br> Aperçu   |   Oui      |
+|Utiliser l’Explorateur de menaces pour afficher les en-têtes et télécharger les messages électroniques remis aux boîtes aux lettres     |Administrateur général <br>Administrateur de sécurité <br> Lecteur de sécurité <br> Preview   |   Oui      |
 
 > [!NOTE]
-> L' *Aperçu* est un rôle et non un groupe de rôles ; le rôle aperçu doit être ajouté à un groupe de rôles existant pour Office 365. Le rôle administrateur général est affecté au centre d’administration Microsoft 365[https://admin.microsoft.com](https://admin.microsoft.com)(), et les rôles Administrateur de sécurité et lecteur de sécurité sont affectés dans le centre de[https://protection.office.com](https://protection.office.com)sécurité & conformité (). Pour en savoir plus sur les rôles et les autorisations, consultez [la rubrique autorisations dans le centre de sécurité & conformité](permissions-in-the-security-and-compliance-center.md).
+> L' *Aperçu* est un rôle et non un groupe de rôles ; le rôle aperçu doit être ajouté à un groupe de rôles existant pour Office 365. Le rôle administrateur général est affecté au centre d’administration Microsoft 365 ( [https://admin.microsoft.com](https://admin.microsoft.com) ), et les rôles Administrateur de sécurité et lecteur de sécurité sont affectés dans le centre de sécurité & conformité ( [https://protection.office.com](https://protection.office.com) ). Pour en savoir plus sur les rôles et les autorisations, consultez [la rubrique autorisations dans le centre de sécurité & conformité](permissions-in-the-security-and-compliance-center.md).
 
 ## <a name="find-and-delete-suspicious-email-that-was-delivered"></a>Rechercher et supprimer les e-mails suspects qui ont été remis
 
@@ -61,9 +61,9 @@ L’Explorateur de menaces est un rapport puissant qui peut servir plusieurs obj
 > [!NOTE]
 > Les recherches par défaut dans l’explorateur n’incluent actuellement pas les éléments zapped.  Cela s’applique à tous les affichages, par exemple les affichages de programmes malveillants ou de hameçonnage. Pour inclure les éléments zapped, vous devez ajouter une « action de remise » définie sur inclure « supprimé par ZAP ». Si vous incluez toutes les options, vous verrez tous les résultats d’action de remise, y compris les éléments zapped.
 
-1. **Accédez à l’Explorateur de menaces**: [https://protection.office.com](https://protection.office.com) accédez à et connectez-vous à l’aide de votre compte professionnel ou scolaire pour Office 365. Vous accédez au centre de sécurité &amp; conformité.
+1. **Accédez à l’Explorateur de menaces**: accédez à [https://protection.office.com](https://protection.office.com) et connectez-vous à l’aide de votre compte professionnel ou scolaire pour Office 365. Vous accédez au centre de sécurité &amp; conformité.
 
-2. Dans le lancement rapide de navigation de gauche, choisissez **Explorateur**de **gestion** \> des menaces.
+2. Dans le lancement rapide de navigation de gauche, choisissez Explorateur de **gestion des menaces** \> **Explorer**.
 
     ![Explorateur avec les champs d’action de remise et d’emplacement de remise.](../../media/ThreatExFields.PNG)
 
@@ -79,7 +79,7 @@ L’Explorateur de menaces est un rapport puissant qui peut servir plusieurs obj
 
     L’affichage des *envois* affiche tous les messages envoyés par l’administrateur ou l’utilisateur qui ont été signalés à Microsoft.
 
-4. **Recherche et filtrage dans l’Explorateur de menaces**: les filtres apparaissent en haut de la page dans la barre de recherche pour aider les administrateurs à effectuer leurs recherches. Vous pouvez remarquer que plusieurs filtres peuvent être appliqués simultanément et que plusieurs valeurs séparées par des virgules ont été ajoutées à un filtre pour limiter la recherche. Rappels :
+4. **Recherche et filtrage dans l’Explorateur de menaces**: les filtres apparaissent en haut de la page dans la barre de recherche pour aider les administrateurs à effectuer leurs recherches. Vous pouvez remarquer que plusieurs filtres peuvent être appliqués simultanément et que plusieurs valeurs séparées par des virgules ont été ajoutées à un filtre pour limiter la recherche. N’oubliez pas :
     - Les filtres correspondent exactement à la plupart des conditions de filtrage.
     - Le filtre de l’objet utilise une requête CONTAINs.
     - Les filtres d’URL fonctionnent avec ou sans protocoles (par exemple, https).
@@ -88,7 +88,7 @@ L’Explorateur de menaces est un rapport puissant qui peut servir plusieurs obj
 
 5. **Filtres avancés**: grâce à ces filtres, vous pouvez créer des requêtes complexes et filtrer votre jeu de données. Si vous cliquez sur *filtres avancés* , un menu volant s’ouvre avec des options.
 
-   Le filtrage avancé est un excellent complément des fonctionnalités de recherche. Un filtre **non** booléen a été introduit sur le *destinataire*, l' *expéditeur* et le domaine de l' *expéditeur* pour permettre aux administrateurs d’effectuer des recherches en excluant les valeurs. Cette option apparaît sous le paramètre *de sélection contient aucun de*. **Ne laisser pas** les administrateurs exclure les boîtes aux lettres d’alerte, les boîtes aux lettres de réponse par défaut de leurs investigations et est utile pour les cas où les administrateurs recherchent un sujet spécifique (Subject = "attention") où le destinataire peut être défini sur *none of defaultMail@contoso.com*. Il s’agit d’une recherche de valeur exacte.
+   Le filtrage avancé est un excellent complément des fonctionnalités de recherche. Un filtre **non** booléen a été introduit sur le *destinataire*, l' *expéditeur* et le domaine de l' *expéditeur* pour permettre aux administrateurs d’effectuer des recherches en excluant les valeurs. Cette option apparaît sous le paramètre *de sélection contient aucun de*. **Ne laisser pas** les administrateurs exclure les boîtes aux lettres d’alerte, les boîtes aux lettres de réponse par défaut de leurs investigations et est utile pour les cas où les administrateurs recherchent un sujet spécifique (Subject = "attention") où le destinataire peut être défini sur *none of defaultMail \@ contoso.com*. Il s’agit d’une recherche de valeur exacte.
 
    ![Le paramètre Recipients-'ne contient aucun des’filtre avancé.](../../media/tp-InvestigateMalEmail-AdvancedFilter.png)
 

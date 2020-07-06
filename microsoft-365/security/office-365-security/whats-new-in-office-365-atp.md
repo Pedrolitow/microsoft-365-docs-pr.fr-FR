@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 05/15/2020
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 83ae99a75e3c3aa8d109766418abcf0888b8cbf4
-ms.sourcegitcommit: 76edb413cbd7436252075ea7e314f5e1d07d8d55
+ms.openlocfilehash: 09e2f69eb5999ea104c62c807d348ca26b9236cf
+ms.sourcegitcommit: 9ee1261c405f82b49c62390a25dfdea23340d644
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "44267166"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "45039399"
 ---
 # <a name="whats-new-in-office-365-atp"></a>Nouveautés d’Office 365 - Protection avancée contre les menaces
 
@@ -60,6 +60,11 @@ Cet article répertorie les nouvelles fonctionnalités de la dernière version d
 
 - [Utiliser les vues de campagne dans Office 365 ATP (**Aperçu**)](campaigns.md)
 
+## <a name="july-2020"></a>Juillet 2020 
+ 
+- [Améliorations de l’expérience de la chasse](threat-explorer.md#experience-improvements-to-threat-explorer-and-real-time-detections)
+
+
 ## <a name="november-2019"></a>Novembre 2019
 
 - Découvrez [les nouvelles fonctionnalités de détection et de réponse utilisateur compromis](address-compromised-users-quickly.md) (préversion **) (** Plan 2 d’Office 365 ATP)
@@ -94,4 +99,4 @@ Saviez-vous qu’Office 365 ATP est disponible dans deux plans ? [En savoir plu
 
 [Description du service ATP Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)
 
-[Examen et réponses automatisés dans Protection Microsoft contre les menaces](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-autoir)
+
