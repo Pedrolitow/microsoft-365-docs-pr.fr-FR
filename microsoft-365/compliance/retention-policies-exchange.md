@@ -17,12 +17,11 @@ search.appverid:
 - MOE150
 - MET150
 description: Découvrez le comportement de rétention qui s’applique spécifiquement à la messagerie électronique et aux dossiers publics Exchange.
-ms.openlocfilehash: 2ecf709c8b2bdd166cd64024ef332a2e0b26b7be
-ms.sourcegitcommit: 0650da0e54a2b484a3156b3aabe44397fbb38e00
-ms.translationtype: HT
+ms.openlocfilehash: aa4142db2114b2b58cc391429f1389c6b9fad52d
+ms.sourcegitcommit: 7c1b34205746ff0690ffc774a74bdfd434256cf5
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "45016277"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "45049892"
 ---
 # <a name="learn-about-retention-policies-for-exchange"></a>Découvrir les stratégies de rétention pour Exchange
 
@@ -51,7 +50,7 @@ Lorsque les paramètres de la stratégie de rétention sont définis sur conserv
 ![Diagramme du flux de rétention dans la messagerie et les dossiers publics](../media/88f174cc-bbf4-4305-93d7-0515f496c8f9.png)
 
 1. **Si l’élément est modifié ou supprimé définitivement** par l’utilisateur (avec MAJ + SUPPR ou supprimé dans le dossier Éléments supprimés) pendant la période de rétention : l’élément est déplacé (ou copié, dans le cas d’une modification) dans le dossier Éléments récupérables. Ici, un travail de minuteur s’exécute régulièrement et identifie les éléments dont la période de rétention a expiré. Ces éléments sont ensuite supprimés définitivement dans un délai de 14 jours après la fin de la période de rétention. Notez que le paramètre par défaut est de 14 jours, mais qu’il peut être configuré jusqu’à 30 jours.
-    
+
 2. **Si l’élément n’est ni modifié ni supprimé** pendant la période de rétention : le même processus s’exécute régulièrement sur tous les dossiers de la boîte aux lettres et identifie les éléments dont la période de rétention a expiré. Ceux-ci sont alors supprimés définitivement dans les 14 jours suivant la fin de la période de rétention. Notez que le paramètre par défaut est de 14 jours, mais qu’il peut être configuré jusqu’à 30 jours. 
 
 Lorsque les paramètres de la stratégie de rétention sont définis sur conserver uniquement ou supprimer uniquement, les chemins d’accès du contenu sont des variantes de l’option conserver et supprimer :

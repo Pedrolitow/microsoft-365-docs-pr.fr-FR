@@ -15,12 +15,11 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 60d0383f3acae73c36383b65daaac405a4e20bd3
-ms.sourcegitcommit: 4512f54ba80d869d4c04e8f9bd897d1878280852
-ms.translationtype: MT
+ms.openlocfilehash: 8a435b220343bd0353f2e0ef85ddf856ebf3e8aa
+ms.sourcegitcommit: 7c1b34205746ff0690ffc774a74bdfd434256cf5
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "44854363"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "45049939"
 ---
 # <a name="configure-microsoft-threat-protection-pillars-for-your-trial-lab-environment"></a>Configurer les piliers de protection contre les menaces Microsoft pour votre environnement de laboratoire d’évaluation
 
@@ -247,8 +246,9 @@ Accédez au [Centre de sécurité Microsoft 365](https://security.microsoft.com/
 
 Pour obtenir des instructions plus détaillées, consultez la rubrique [activer la protection contre les menaces Microsoft](mtp-enable.md). 
 
-Félicitations ! Vous venez de créer votre environnement de laboratoire d’évaluation de la protection contre les menaces Microsoft ! Vous pouvez désormais simuler une attaque et voir comment les fonctionnalités du produit peuvent détecter, créer des alertes et répondre automatiquement à une attaque sans fichier sur un point de terminaison.
+Félicitations ! Vous venez de créer votre environnement de laboratoire d’évaluation de la protection contre les menaces Microsoft ! Vous pouvez désormais vous familiariser avec l’interface utilisateur de la protection contre les menaces Microsoft ! Découvrez ce que vous pouvez apprendre et savoir comment utiliser chaque tableau de bord pour vos tâches de sécurité quotidiennes : Guide interactif de la [protection contre les menaces Microsoft](https://aka.ms/MTP-Interactive-Guide).
 
+Ensuite, vous pouvez simuler une attaque et voir comment les fonctionnalités du produit croisé détectent, créer des alertes et répondre automatiquement à une attaque en mode fichier sur un point de terminaison.
 
 ## <a name="next-steps"></a>Étapes suivantes
 [Générer une alerte de test](generate-test-alert.md).

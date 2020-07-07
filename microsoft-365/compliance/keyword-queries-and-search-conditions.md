@@ -22,12 +22,11 @@ ms.assetid: c4639c2e-7223-4302-8e0d-b6e10f1c3be3
 ms.custom:
 - seo-marvel-apr2020
 description: Découvrez les propriétés de messagerie et de fichier que vous pouvez rechercher dans le centre de conformité Office 365 Security &.
-ms.openlocfilehash: 9fa68257519860311ffe330eed23bd95468856c4
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
-ms.translationtype: MT
+ms.openlocfilehash: 89d3f0c25694f8f3c89fbc27ee857c58cc5937fd
+ms.sourcegitcommit: 7c1b34205746ff0690ffc774a74bdfd434256cf5
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44817513"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "45049802"
 ---
 # <a name="keyword-queries-and-search-conditions-for-content-search"></a>Requêtes par mots clés et conditions de recherche pour la recherche de contenu
 
@@ -87,7 +86,7 @@ Pour obtenir la liste complète des propriétés SharePoint pouvant faire l’ob
 |:-----|:-----|:-----|:-----|
 |Auteur|Champ Auteur des documents Office (subsiste si un document est copié). Par exemple, si un utilisateur crée un document et l’envoie par courrier électronique à une personne qui le charge ensuite sur SharePoint, le document conserve toujours l’auteur d’origine. Veillez à utiliser le nom complet de l’utilisateur pour cette propriété.|`author:"Garth Fort"`|Tous les documents créés par Garth Fort.|
 |ContentType|Type de contenu SharePoint d’un élément, tel qu’un élément, un document ou une vidéo.|`contenttype:document`|Tous les documents sont renvoyés.|
-|Créé|Date de création d’un élément.|`created\>=06/01/2016`|Tous les éléments créés le 1er juin 2016 ou après cette fin.|
+|Créé|Date de création d’un élément.|`created>=06/01/2016`|Tous les éléments créés le 1er juin 2016 ou après cette fin.|
 |CreatedBy|Personne qui a créé ou chargé un élément. Veillez à utiliser le nom complet de l’utilisateur pour cette propriété.|`createdby:"Garth Fort"`|Tous les éléments créés ou chargés par Garth Fort.|
 |DetectedLanguage|Langue d’un élément.|`detectedlanguage:english`|Tous les éléments en anglais.|
 |DocumentLink|Chemin d’accès (URL) d’un dossier spécifique sur un site SharePoint ou OneDrive entreprise. Si vous utilisez cette propriété, assurez-vous de rechercher le site dans lequel se trouve le dossier spécifié.  <br/> Pour renvoyer les éléments situés dans les sous-dossiers du dossier que vous spécifiez pour la propriété documentlink, vous devez ajouter/ \* à l’URL du dossier spécifié, par exemple,`documentlink: "https://contoso.sharepoint.com/Shared Documents/*"`  <br/> <br/>Pour plus d’informations sur la recherche de la propriété documentlink et l’utilisation d’un script pour obtenir les URL documentlink pour les dossiers d’un site spécifique, voir [use content Search for Targeted collections](use-content-search-for-targeted-collections.md).|`documentlink:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/Documents/Private"`  <br/> `documentlink:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/Documents/Shared with Everyone/*" AND filename:confidential`|Le premier exemple renvoie tous les éléments dans le dossier OneDrive entreprise spécifié. Le deuxième exemple renvoie des documents dans le dossier de site spécifié (et tous les sous-dossiers) qui contiennent le mot « Confidential » dans le nom de fichier.|

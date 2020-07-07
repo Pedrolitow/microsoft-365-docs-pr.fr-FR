@@ -17,12 +17,11 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 032368e35cdfc991df4c01643e49cee538549f39
-ms.sourcegitcommit: ab10c042e5e9c6a7b2afef930ab0d247a6aa275d
-ms.translationtype: MT
+ms.openlocfilehash: 0cb275584acfc2ea0d2a2969694ee189f48a875d
+ms.sourcegitcommit: 11218af1d792af297b4280ca5975d139d2bbe350
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44899362"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "45046043"
 ---
 # <a name="understand-the-advanced-hunting-schema"></a>Comprendre le schéma de repérage avancé
 
@@ -31,10 +30,22 @@ ms.locfileid: "44899362"
 
 [!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
-Le schéma [repérage avancé](advanced-hunting-overview.md) est constitué de plusieurs tableaux qui fournissent des informations sur les événements ou des informations sur les ordinateurs et entités. Pour créer des requêtes qui couvrent efficacement sur plusieurs tableaux, vous devez comprendre les tableaux et les colonnes du schéma de repérage avancé.
+Le schéma de [chasse avancé](advanced-hunting-overview.md) est composé de plusieurs tables qui fournissent des informations sur les événements ou des informations sur les appareils, les alertes, les identités et d’autres types d’entité. Pour créer des requêtes qui couvrent efficacement sur plusieurs tableaux, vous devez comprendre les tableaux et les colonnes du schéma de repérage avancé.
+
+## <a name="get-schema-information-in-the-security-center"></a>Obtenir des informations de schéma dans le centre de sécurité
+Lors de la création de requêtes, utilisez la référence de schéma intégrée pour obtenir rapidement les informations suivantes sur chaque table du schéma :
+
+- **Description des tableaux** : type de données contenues dans la table et la source de ces données.
+- **Columns** : toutes les colonnes du tableau.
+- **Types d’actions** : valeurs possibles dans la `ActionType` colonne représentant les types d’événement pris en charge par le tableau. Cela est uniquement fourni pour les tables qui contiennent des informations d’événement.
+- Exemple de **requête** — exemples de requêtes qui démontrent comment la table peut être utilisée.
+
+### <a name="access-the-schema-reference"></a>Accéder à la référence de schéma
+Pour accéder rapidement à la référence de schéma, sélectionnez l’action **afficher la référence** en regard du nom de la table dans la représentation du schéma. Vous pouvez également sélectionner **référence de schéma** pour rechercher un tableau.   
+
+![Image illustrant l’accès à la référence de schéma dans le portail ](../../media/mtp-ah/ah-reference.png) 
 
 ## <a name="schema-tables"></a>Tableaux de schéma
-
 La référence suivante répertorie les tableaux du schéma. Chaque nom de tableau renvoie à une page décrivant les noms des colonnes de ce tableau. Les noms des tables et des colonnes apparaissent également dans le centre de sécurité dans cadre de la représentation du schéma sur l’écran de repérage avancé.
 
 | Nom du tableau | Description |
@@ -47,7 +58,7 @@ La référence suivante répertorie les tableaux du schéma. Chaque nom de table
 | **[DeviceFileEvents](advanced-hunting-devicefileevents-table.md)** | Création de fichier, modification et autres événements de système de fichiers |
 | **[DeviceImageLoadEvents](advanced-hunting-deviceimageloadevents-table.md)** | Événements de chargement de DLL |
 | **[DeviceInfo](advanced-hunting-deviceinfo-table.md)** | Informations sur l’ordinateur, y compris les informations de système d’exploitation |
-| **[DeviceLogonEvents](advanced-hunting-devicelogonevents-table.md)** | Connexions et autres événements d’authentification |
+| **[DeviceLogonEvents](advanced-hunting-devicelogonevents-table.md)** | Connexions et autres événements d’authentification sur les appareils |
 | **[DeviceNetworkEvents](advanced-hunting-devicenetworkevents-table.md)** | Connexion réseau et événements connexes |
 | **[DeviceNetworkInfo](advanced-hunting-devicenetworkinfo-table.md)** | Propriétés réseau des ordinateurs, y compris les adaptateurs, les adresses IP et MAC, ainsi que les réseaux et domaines connectés |
 | **[DeviceProcessEvents](advanced-hunting-deviceprocessevents-table.md)** | Création de processus et événements associés |
@@ -61,7 +72,7 @@ La référence suivante répertorie les tableaux du schéma. Chaque nom de table
 | **[EmailPostDeliveryEvents](advanced-hunting-emailpostdeliveryevents-table.md)** | Événements de sécurité qui se produisent après la livraison, après que Microsoft 365 a remis les courriers électroniques à la boîte aux lettres du destinataire |
 | **[EmailUrlInfo](advanced-hunting-emailurlinfo-table.md)** | Informations sur les URL des courriers électroniques |
 | **[IdentityInfo](advanced-hunting-identityinfo-table.md)** | Informations de compte provenant de différentes sources, notamment Azure Active Directory |
-| **[IdentityLogonEvents](advanced-hunting-identitylogonevents-table.md)** | Événements d’authentification enregistrés par Active Directory et d’autres services Microsoft Online |
+| **[IdentityLogonEvents](advanced-hunting-identitylogonevents-table.md)** | Événements d’authentification sur Active Directory et Microsoft Online Services |
 | **[IdentityQueryEvents](advanced-hunting-identityqueryevents-table.md)** | Activités de requête exécutées sur des objets Active Directory, tels que des utilisateurs, des groupes, des appareils et des domaines |
 
 ## <a name="related-topics"></a>Voir aussi

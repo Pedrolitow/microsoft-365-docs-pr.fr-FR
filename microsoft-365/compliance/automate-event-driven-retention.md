@@ -15,36 +15,35 @@ search.appverid:
 - MOE150
 - MET150
 description: Cette rubrique explique comment configurer votre flux de processus métier pour automatiser la rétention via des événements à l’aide de l’API REST de Microsoft 365.
-ms.openlocfilehash: 75816512878bc6e42b5330309b99e72095d5546f
-ms.sourcegitcommit: 56772bed89516cebc5eb370e292ccfbb4889cb38
-ms.translationtype: HT
+ms.openlocfilehash: e3e58aab9bdcb5debcfe805b1ebdfd637c1d3851
+ms.sourcegitcommit: 8595cb9ffe0ca5556080f24224182381e1d880de
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "44330820"
+ms.lasthandoff: 07/03/2020
+ms.locfileid: "45035649"
 ---
 # <a name="automate-event-based-retention"></a>Rétention basée sur des événements
 
 >*[Guide de sécurité et conformité pour les licences Microsoft 365](https://aka.ms/ComplianceSD).*
 
-L’explosion de contenu dans les organisations et comment il peut devenir assistées (redondantes, obsolètes, triviale) est une affaire sérieuse. Pour continuer à répondre aux exigences légales, commerciales et défis liés à la conformité des réglementations, les organisation doivent pouvoir conserver et protéger les informations importantes et trouver rapidement ce qui est pertinent. Conservant uniquement ce qui est important, les informations pertinentes sont la clé du succès d’une organisation.
+The explosion of content in organizations and how it can become ROT (redundant, obsolete, trivial) is serious business. To continue to meet legal, business, and regulatory compliance challenges, organizations must be able to keep and protect important information and quickly find what’s relevant. Retaining only important, pertinent information is key to an organization's success.
 
-Pour répondre à ce besoin, les organisations peuvent donc tirer parti des solutions de rétention dans le centre de conformité et sécurité Office 365. La rétention peut être déclenchée en utilisant les[étiquettes de rétention](labels.md). Une étiquette de rétention a la possibilité de [baser la période de rétention sur un événement spécifique](event-driven-retention.md). En règle générale, la période de rétention est basée sur une date connue, comme la date ou date de dernière modification pour le contenu création. Toutefois, les organisations ont également des exigences à dispose de contenu en fonction des occurrences d’un événement, par exemple 7 ans après qu’un employé quitte une organisation.
+To help meet this need, organizations can take advantage of retention solutions in the Office 365 Security & Compliance Center. Retention can be triggered by using [retention labels](labels.md). A retention label has the option to [base the retention period on a specific event](event-driven-retention.md). Typically, the retention period is based on a known date, such as the creation date or last modified date for the content. However, organizations also have requirements to dispose of content based on the occurrence of an event, such as seven years after an employee leaves an organization.
 
-Pour s’assurer de la conformité de la destruction de contenu, il est impératif de savoir quand un événement a lieu. Le volume du contenu en augmentant rapidement, il devient difficile à conserver et dispose du contenu d’une manière opportune et la conformité.
+To ensure compliant disposal of content, it's imperative to know when an event takes place. With the volume of content increasing rapidly, it's becoming challenging to retain and dispose content in a timely and compliant manner.
 
-La rétention basée sur un événement résoud ce problème. Cette rubrique explique comment configurer votre flux de processus métier pour automatiser la rétention via des événements à l’aide de l’API REST de Microsoft 365.
+Event-based retention solves this problem. This topic explains how to set up your business process flows to automate retention through events by using the Microsoft 365 REST API.
 
 ## <a name="about-event-based-retention"></a>Rétentions basées sur des événements
 
-Une organisation peut être grande petite ou moyenne. Le nombre de documents professionnels, documents juridiques, fichiers employé, contrats et documents produit qui sont créés et gérés sur une base quotidienne augmentent considérablement.
+An organization can be small, medium, or large. The number of business documents, legal documents, employee files, contracts, and product documents that get created and managed on a day-to-day basis is increasing dramatically.
 
-Par exemple, chaque jour, dizaines et des centaines d’employés rejoignent et quittent organisations. Le service ressources humaines continue de créer, mettre à jour ou supprimer des documents liés à l’employé en respectant les exigences professionnelles. Ce processus est susceptible d’être les stratégies de rétention différentes décrites pour l’entreprise :
+For example, each day, tens and hundreds of employees are joining and leaving organizations. The HR department continues to create, update, or delete employee-related documents as per business requirements. This process is subject to the different retention policies outlined for the business:
 
-- **La période de rétention du contenu peut être une date connue** telles que la date que le contenu a été créé, la dernière modification ou étiqueté. Par exemple, vous pouvez conserver les documents pendant sept ans après que qu’ils aient été créés, puis les supprimer.
+- **The period of retention for content can be a known date** such as the date the content was created, last modified, or labeled. For example, you might retain documents for seven years after they're created and then delete them.
 
-- **La période de rétention du contenu peut également être une date inconnue**. Par exemple, avec des étiquettes de rétention, vous pouvez également baser une période de rétention sur lorsqu’un type spécifique d’événement se produit, par exemple un employé quittant l’organisation.
+- **The period of retention of content can also be an unknown date**. For example, with retention labels, you can also base a retention period on when a specific type of event occurs, such as an employee leaving the organization.
 
-Le début de la période de rétention déclenche l’événement, et tout le contenu portant une étiquette pour ce type d’événement obtenez actions de rétention l’étiquette est appliquées dessus. Il s’agit rétention basée sur l’événement.-Pour plus d’informations, voir [vue d’ensemble de rétention basées sur les événements](event-driven-retention.md).
+The event triggers the start of the retention period, and all content with a label applied for that type of event get the label's retention actions enforced on them. This is called event-based retention. To learn more, see [Overview of event-driven retention](event-driven-retention.md).
 
 ## <a name="set-up-event-based-retention"></a>Définir la rétentions basées sur des événements
 
@@ -54,7 +53,7 @@ Cette section décrit les activités devant être effectuées avant la conservat
 
 Identifier les différents rôles d’une organisation qui effectuent des tâches de gestion d’enregistrement et seraient responsables de la rétention efficace et de documents professionnels.
 
-  | **Persona**| **Role**|
+  | Persona | Role |
   | - | - |
   | Administrateur | Crée des types d’Événement de Rétention, Étiquettes de Rétention et Référentiels d’Enregistrement dans SharePoint |
   | Gestionnaire d’enregistrements                                  | Fournit des détails de recommandations et de conformité stratégies de rétention et des plannings de rétention   |
@@ -87,9 +86,9 @@ Pour créer un référentiel des enregistrements, l’administrateur de conformi
 
 2. Effectue les opérations suivantes :
         
-    - Crée une bibliothèque SharePoint : définir l’étiquette en fonction des événement au niveau de la bibliothèque. Pour plus d’informations, voir [application d’une étiquette de rétention par défaut à tout le contenu dans une bibliothèque SharePoint, un dossier ou un ensemble de documents](labels.md#applying-a-default-retention-label-to-all-content-in-a-sharepoint-library-folder-or-document-set).
+   - Creates a SharePoint library: Set event-based label at the library level. For more information, see [Applying a default retention label to all content in a SharePoint library, folder, or document set](labels.md#applying-a-default-retention-label-to-all-content-in-a-sharepoint-library-folder-or-document-set).
           
-    - Configure un ensemble de documents dans SharePoint. Pour plus d'informations, voir [Présentation des ensembles de documents](https://support.microsoft.com/fr-FR/office/introduction-to-document-sets-3dbcd93e-0bed-46b7-b1ba-b31de2bcd234).
+   - Configure un ensemble de documents dans SharePoint. Pour plus d'informations, voir [Présentation des ensembles de documents](https://support.microsoft.com/fr-FR/office/introduction-to-document-sets-3dbcd93e-0bed-46b7-b1ba-b31de2bcd234).
       
 3. Affecte un ID d'élément à chaque ensemble de documents de l'employé. Un ID d’élément est un nom de produit ou un code utilisé par l’organisation, par exemple, le numéro d’employé peut être un ID d’élément. En attribuant l’ID d’élément au dossier, tous les éléments de ce dossier héritent automatiquement du même ID d’élément. Cela signifie que la période de rétention de tous les éléments peut être déclenchée par le même événement.
 
@@ -99,7 +98,7 @@ Il existe deux façons avec lesquelles la rétention basée sur l’événement 
 
 - **Utilisation de l’interface utilisateur du centre d’administration** il s’agit d’un processus qui peut être utilisé pour conserver moins de contenu à la fois, ou la fréquence à laquelle le déclenchement de la rétention n’est pas fréquente (par exemple, mensuelle ou annuelle). Pour plus d'informations sur cette méthode, voir[Vue d’ensemble de la rétention basée sur un événement](event-driven-retention.md). Toutefois, cette méthode de déclenchement de la rétention peut prendre du temps et être sujette à des erreurs, ce qui freine l'évolutivité. Par conséquent, une solution automatisée et transparente de déclenchement de la rétention peut améliorer la sécurité et la conformité des données.
 
-- **À l’aide d’une API REST M365** Ce processus peut être utilisé lorsque les grandes quantités de contenu sont conservées à un moment et/ou la fréquence de rétention déclencheur est récurrente telle que de manière quotidienne ou hebdomadaire. Le flux détecte quand un événement se produit dans votre système métier de, puis crée automatiquement un événement connexe dans le centre de sécurité et conformité. Vous n’avez pas besoin de créer manuellement un événement dans l’interface utilisateur chaque fois que ce qui se passer.
+- **Using a M365 REST API** This process can be used when large amounts of content are to be retained at a time and/or the frequency to trigger retention is often such as daily or weekly. The flow detects when an event occurs in your line-of-business system, and then automatically creates a related event in the Security & Compliance Center. You don't need to manually create an event in the UI each time one occurs.
 
 Il existe deux options d’utilisation de l’API REST :
 
@@ -161,100 +160,61 @@ Un processus automatisé associé au déclenchement de ces différentes horloges
 
 Utilisation du code d’exemple pour appeler des API REST
 
-<table>
-<thead>
-<tr class="header">
-<th>Méthode</th>
-<th>POST</th>
-<th></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>URL</td>
-<td>https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent</td>
-<td></td>
-</tr>
-<tr class="even">
-<td>En-têtes</td>
-<td>Content-Type</td>
-<td>application/atom+xml</td>
-</tr>
-<tr class="odd">
-<td>Corps</td>
-<td><p>&lt;?xml version='1.0' encoding='utf-8' standalone='yes'?&gt;</p>
-<p>&lt;entry xmlns:d='http://schemas.microsoft.com/ado/2007/08/dataservices'</p>
-<p>xmlns:m='http://schemas.microsoft.com/ado/2007/08/dataservices/metadata'</p>
-<p>xmlns='http://www.w3.org/2005/Atom'&gt;</p>
-<p>&lt;category scheme='http://schemas.microsoft.com/ado/2007/08/dataservices/scheme' term='Exchange.ComplianceRetentionEvent' /&gt;</p>
-<p>&lt;mise à jour&gt;9/9/2017 22:50:00&lt;/ mis à jour&gt;</p>
-<p>&lt;content type='application/xml'&gt;</p>
-<p>&lt;m:properties&gt;</p>
-<p>&lt;d:Name&gt;Licenciement employé&lt;/d:Name&gt;</p>
-<p>&lt;d:EventType&gt;99e0ae64-a4b8-40bb-82ed-645895610f56&lt;/d:EventType&gt;</p>
-<p>&lt;d:SharePointAssetIdQuery&gt;1234&lt;/d:SharePointAssetIdQuery&gt;</p>
-<p>&lt;d:EventDateTime&gt;2018-12-01T00:00:00Z &lt;/d:EventDateTime&gt;</p>
-<p>&lt;/m:properties&gt;</p>
-<p>&lt;/contenu&gt;</p>
-<p>&lt;/entrée&gt;</p></td>
-<td></td>
-</tr>
-<tr class="even">
-<td>Authentification</td>
-<td>De base</td>
-<td></td>
-</tr>
-<tr class="odd">
-<td>Nom d’utilisateur</td>
-<td>« Complianceuser »</td>
-<td></td>
-</tr>
-<tr class="even">
-<td>Mot de passe</td>
-<td>« Compliancepassword »</td>
-<td></td>
-</tr>
-</tbody>
-</table>
+- **Method** : PUBLIER
+- **URL** :https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent
+- **Headers** : Clé = Type de contenu, Valeur = application/atom+xml
+- **Body** :
+    
+    ```xml
+    <?xml version='1.0' encoding='utf-8' standalone='yes'?>
+    
+    <entry xmlns:d='http://schemas.microsoft.com/ado/2007/08/dataservices'
+    
+    xmlns:m='http://schemas.microsoft.com/ado/2007/08/dataservices/metadata'
+    
+    xmlns='http://www.w3.org/2005/Atom'>
+    
+    <category scheme='http://schemas.microsoft.com/ado/2007/08/dataservices/scheme' term='Exchange.ComplianceRetentionEvent' />
+    
+    <updated>9/9/2017 10:50:00 PM</updated>
+    
+    <content type='application/xml'>
+    
+    <m:properties>
+    
+    <d:Name>Employee Termination </d:Name>
+    
+    <d:EventType>99e0ae64-a4b8-40bb-82ed-645895610f56</d:EventType>
+    
+    <d:SharePointAssetIdQuery>1234</d:SharePointAssetIdQuery>
+    
+    <d:EventDateTime>2018-12-01T00:00:00Z </d:EventDateTime>
+    
+    </m:properties>
+    
+    </content>
+    
+    </entry>
+    ```
+- **Authentification** : de base
+- **Nom d’utilisateur** : « Complianceuser »
+- **Password** : « Compliancepassword »
+
 
 ##### <a name="available-parameters"></a>Paramètres disponibles
 
-<table>
-<thead>
-<tr class="header">
-<th><strong>Paramètres</strong></th>
-<th><strong>Description</strong></th>
-<th><strong>Notes</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>&lt;d:Name&gt;&lt;/d:Name&gt;</td>
-<td>Entrez un nom unique pour la base de données,</td>
-<td>Un nom ne peut pas contenir les espaces et les caractères suivants : % * \ &amp; &lt; &gt; | # ? , : ;</td>
-</tr>
-<tr class="even">
-<td>&lt;d:EventType&gt;&lt;/d:EventType&gt;</td>
-<td>Entrez le nom de l’événement (ou Guid),</td>
-<td>Exemple : « employé licenciement anticipé ». Le type d’événement doit être associé à une étiquette de rétention.</td>
-</tr>
-<tr class="odd">
-<td>&lt;d:SharePointAssetIdQuery&gt;&lt;/d:SharePointAssetIdQuery&gt;</td>
-<td>Entrez « ComplianceAssetId : « + Id d’employé</td>
-<td>Exemple :&quot;ComplianceAssetId:12345&quot;</td>
-</tr>
-<tr class="even">
-<td>&lt;d:EventDateTime&gt;&lt;/d:EventDateTime&gt;</td>
-<td>Date et heure de l’événement.</td>
-<td><p>Format : AAAA-MM-JJThh, exemple :</p>
-<p>2018-12-01T00:00:00Z</p></td>
-</tr>
-</tbody>
-</table>
+
+|Paramètres|Description|Notes|
+|--- |--- |--- |
+|<d:Name></d:Name>|Entrez un nom unique pour la base de données,|Un nom ne peut pas contenir les espaces et les caractères suivants : % * \ & < > | # ? , : ;|
+|<d:EventType></d:EventType>|Entrez le nom de l’événement (ou Guid),|Example: “Employee termination”. Event type has to be associated with a retention label.|
+|<d:SharePointAssetIdQuery></d:SharePointAssetIdQuery>|Entrez « ComplianceAssetId : « + Id d’employé|Example: "ComplianceAssetId:12345"|
+|<d:EventDateTime></d:EventDateTime>|Date et heure de l’événement.|Format : AAAA-MM-jjTHH : mm : ssZ ; exemple : 2018-12-01T00:00:00Z
+|
 
 ##### <a name="response-codes"></a>Codes de réponse
 
-| **Code de réponse** | **Description**       |
+| Code de réponse | Description       |
 | ----------------- | --------------------- |
 | 302               | Rediriger              |
 | 201               | Créé               |
@@ -263,53 +223,20 @@ Utilisation du code d’exemple pour appeler des API REST
 
 ##### <a name="get-events-based-on-time-range"></a>Obtenir des événements en fonction de l’intervalle de temps
 
-<table>
-<thead>
-<tr class="header">
-<th>Méthode</th>
-<th>GET</th>
-<th></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>URL</td>
-<td><ol start="4" type="1">
-<li><p>https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent?BeginDateTime=2019-01-11&amp;EndDateTime=2019-01-16</p></li>
-</ol></td>
-<td></td>
-</tr>
-<tr class="even">
-<td>En-têtes</td>
-<td>Content-Type</td>
-<td>application/atom+xml</td>
-</tr>
-<tr class="odd">
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td>Authentification</td>
-<td>De base</td>
-<td></td>
-</tr>
-<tr class="odd">
-<td>Nom d’utilisateur</td>
-<td>« Complianceuser »</td>
-<td></td>
-</tr>
-<tr class="even">
-<td>Mot de passe</td>
-<td>« Compliancepassword »</td>
-<td></td>
-</tr>
-</tbody>
-</table>
+
+
+|Méthode|GET||
+|--- |--- |--- |
+|URL|https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent?BeginDateTime=2019-01-11&EndDateTime=2019-01-16||
+|En-têtes|Content-Type|application/atom+xml|
+||||
+|Authentification|De base||
+|Nom d’utilisateur|« Complianceuser »||
+|Mot de passe|« Compliancepassword »||
 
 ##### <a name="response-codes"></a>Codes de réponse
 
-| **Code de réponse** | **Description**                   |
+| Code de réponse | Description                   |
 | ----------------- | --------------------------------- |
 | 200               | OK, une liste d’événements dans atome + xml |
 | 404               | Introuvable                         |
@@ -329,7 +256,7 @@ Utilisation du code d’exemple pour appeler des API REST
 
 ##### <a name="response-codes"></a>Codes de réponse
 
-| **Code de réponse** | **Description**                                      |
+| Code de réponse | Description                                      |
 | ----------------- | ---------------------------------------------------- |
 | 200               | OK, le corps du message de réponse contient l’événement dans atome + xml |
 | 404               | Introuvable                                            |
@@ -349,7 +276,7 @@ Utilisation du code d’exemple pour appeler des API REST
 
 ##### <a name="response-codes"></a>Codes de réponse
 
-| **Code de réponse** | **Description**                                      |
+| Code de réponse | Description                                      |
 | ----------------- | ---------------------------------------------------- |
 | 200               | OK, le corps du message de réponse contient l’événement dans atome + xml |
 | 404               | Introuvable                                            |
@@ -363,49 +290,83 @@ Utilisation du code d’exemple pour appeler des API REST
 
 Étape 2: Exécutez le script suivant.
 
-<table>
-<tbody>
-<tr class="odd">
-<td><p>param([string]$baseUri)</p>
-<p>$userName = &quot;Nomd’utilisateur&quot;</p>
-<p>$password = &quot;Motdepasse&quot;</p>
-<p>$securePassword = ConvertTo-SecureString $password -AsPlainText -Force</p>
-<p>$credentials = New-Object System.Management.Automation.PSCredential($userName, $securePassword)</p>
-<p>$EventName=&quot;EventByRESTPost-$(([Guid]::NewGuid()).ToString('N'))&quot;</p>
-<p>Écriture hôte &quot;Commencez à créer un événement avec nom : $EventName&quot;</p>
-<p>$body = &quot;&lt;?xml version='1.0' encoding='utf-8' standalone='yes'?&gt;</p>
-<p>&lt;entry xmlns:d='http://schemas.microsoft.com/ado/2007/08/dataservices'</p>
-<p>xmlns:m='http://schemas.microsoft.com/ado/2007/08/dataservices/metadata'</p>
-<p>xmlns='http://www.w3.org/2005/Atom'&gt;</p>
-<p>&lt;category scheme='http://schemas.microsoft.com/ado/2007/08/dataservices/scheme' term='Exchange.ComplianceRetentionEvent' /&gt;</p>
-<p>&lt;mise à jour&gt;14/7/2017 14:03:36&lt;/ mis à jour&gt;</p>
-<p>&lt;content type='application/xml'&gt;</p>
-<p>&lt;m:properties&gt;</p>
-<p>&lt;d:Name&gt;$EventName&lt;/d:Name&gt;</p>
-<p>&lt;d:EventType&gt;e823b782-9a07-4e30-8091-034fc01f9347&lt;/d:EventType&gt;</p>
-<p>&lt;d:SharePointAssetIdQuery&gt;'ComplianceAssetId:123'&lt;/d:SharePointAssetIdQuery&gt;</p>
-<p>&lt;/m:properties&gt;</p>
-<p>&lt;/contenu&gt;</p>
-<p>&lt;/entrée&gt;&quot;</p>
-<p>$event = $null</p>
-<p>Essayez</p>
-<p>{</p>
-<p>$event = RestMethod Invoke-corps de texte $body-méthode 'POST'-Uri &quot;$baseUri/ComplianceRetentionEvent&quot;- ContentType &quot;application/atom + xml&quot;-l’authentification de base-Credential $credentials -MaximumRedirection 0</p>
-<p>}</p>
-<p>catch</p>
-<p>{</p>
-<p>$response = $_.Exception.Response</p>
-<p>if($response.StatusCode -eq &quot;Redirect&quot;)</p>
-<p>{</p>
-<p>$url = $response.Headers.Location</p>
-<p>Écriture hôte &quot;redirigés vers $url&quot;</p>
-<p>$event = RestMethod Invoke-corps de texte $body-méthode 'POST'-Url -ContentType &quot;application/atom + xml&quot; -l’Authentification de base-Credential $credentials -MaximumRedirection 0</p>
-<p>}</p>
-<p>}</p>
-<p>$event | fl *</p></td>
-</tr>
-</tbody>
-</table>
+```powershell
+param([string]$baseUri)
+
+$userName = "UserName"
+
+$password = "Password"
+
+$securePassword = ConvertTo-SecureString $password -AsPlainText -Force
+
+$credentials = New-Object System.Management.Automation.PSCredential($userName, $securePassword)
+
+$EventName="EventByRESTPost-$(([Guid]::NewGuid()).ToString('N'))"
+
+Write-Host "Start to create an event with name: $EventName"
+
+$body = "<?xml version='1.0' encoding='utf-8' standalone='yes'?>
+
+<entry xmlns:d='http://schemas.microsoft.com/ado/2007/08/dataservices'
+
+xmlns:m='http://schemas.microsoft.com/ado/2007/08/dataservices/metadata'
+
+xmlns='http://www.w3.org/2005/Atom'>
+
+<category scheme='http://schemas.microsoft.com/ado/2007/08/dataservices/scheme' term='Exchange.ComplianceRetentionEvent' />
+
+<updated>7/14/2017 2:03:36 PM</updated>
+
+<content type='application/xml'>
+
+<m:properties>
+
+<d:Name>$EventName</d:Name>
+
+<d:EventType>e823b782-9a07-4e30-8091-034fc01f9347</d:EventType>
+
+<d:SharePointAssetIdQuery>'ComplianceAssetId:123'</d:SharePointAssetIdQuery>
+
+</m:properties>
+
+</content>
+
+</entry>"
+
+$event = $null
+
+try
+
+{
+
+$event = Invoke-RestMethod -Body $body -Method 'POST' -Uri "$baseUri/ComplianceRetentionEvent" -ContentType "application/atom+xml" -Authentication Basic -Credential $credentials -MaximumRedirection 0
+
+}
+
+catch
+
+{
+
+$response = $_.Exception.Response
+
+if($response.StatusCode -eq "Redirect")
+
+{
+
+$url = $response.Headers.Location
+
+Write-Host "redirected to $url"
+
+$event = Invoke-RestMethod -Body $body -Method 'POST' -Uri $url -ContentType "application/atom+xml" -Authentication Basic -Credential $credentials -MaximumRedirection 0
+
+}
+
+}
+
+$event | fl *
+
+```
+
 
 #### <a name="verify-the-outcome-in-both-options"></a>Vérifier le résultat dans les deux options
 
@@ -421,7 +382,7 @@ De même, les options ci-dessus pour automatiser la rétention basée sur des é
 
 Une organisation peut avoir plusieurs enregistrements pour un seul contrat avec des clients, des fournisseurs et des partenaires. Ces documents peuvent résider dans une bibliothèque de documents telle que SharePoint. La fin d’un contrat détermine le début de la période de rétention des documents associés au contrat. Par exemple, tous les documents relatifs aux contrats doivent être conservés pendant cinq ans après l'expiration du contrat. L’événement qui déclenche la période de rétention de cinq ans est l’expiration du contrat.
 
-Un système de gestion de relation client (CRM) pouvez travailler avec Microsoft 365 et la rétention de déclencheur de documents de contrat
+Un système de gestion de relation client (CRM) pouvez travailler avec Microsoft 365 et la rétention de déclencheur de documents de contrat.
 
 **Configuration Automatisée de Rétention Basée sur des événements pour ce scénario:**
 
@@ -447,7 +408,7 @@ Un système de gestion de relation client (CRM) pouvez travailler avec Microsoft
 
 ### <a name="scenario-3-end-of-product-manufacturing"></a>Scénario 3 : Fin de la fabrication de produit
 
-Une entreprise de fabrication produisant différentes lignes de produits crée plusieurs caractéristiques de fabrication et les prix de documents. Lorsque le produit n’est plus fabriqué, toutes les spécifications et documents liée à ce besoin produit sont conservés pendant une période spécifique suivant la fin de la durée de vie du produit.
+A manufacturing company that produces different lines of products creates many manufacturing specifications and pricing documents. When the product is no longer manufactured, all specifications and documents linked to this product need to be retained for a specific period after the end of the lifetime of the product.
 
 Un système de planification (ERP) peut fonctionner avec Microsoft 365 et Microsoft Flow pour la rétention de déclencheur.
 
@@ -477,9 +438,9 @@ Un système de planification (ERP) peut fonctionner avec Microsoft 365 et Micros
 
 ### <a name="using-redirect-302-response-results-to-call-the-rest-api"></a>Utiliser les résultats de réponses 302 de redirection pour appeler des API REST
 
-1. Appeler un appel d’événement de rétention POST à l’aide de l’URL API REST <https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent> (les autorisations d’administrateur général sont obligatoires)
+1. Appeler un appel d’événement de rétention POST à l’aide de l’URL API REST <https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent> (les autorisations d’administrateur général sont obligatoires).
 
-2. Vérifiez le code de réponse. S’il s’agit 302, puis obtenez l’URL redirigé de propriété de l’emplacement de l’en-tête de réponse
+2. Vérifiez le code de réponse. S’il s’agit 302, puis obtenez l’URL redirigé de propriété de l’emplacement de l’en-tête de réponse.
 
 3. Appeler l’appel d’événement rétention POST à l’aide d’URL redirigé.
 

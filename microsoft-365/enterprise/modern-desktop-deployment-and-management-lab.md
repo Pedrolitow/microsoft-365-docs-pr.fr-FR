@@ -15,12 +15,11 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: En savoir plus sur le point et où pour accéder au Kit laboratoire de déploiement Windows et Office.
-ms.openlocfilehash: 633e54dc2b3c83d0d6778176318512b03bd073a8
-ms.sourcegitcommit: aab8b94ea8a9d4f7c6b911d6dc5cde70722e00e5
-ms.translationtype: HT
+ms.openlocfilehash: 7090a9fcc279f9bedc5f86b43952a12e988069e1
+ms.sourcegitcommit: 7c1b34205746ff0690ffc774a74bdfd434256cf5
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "44869855"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "45049915"
 ---
 # <a name="windows-and-office-deployment-lab-kit"></a>Kit laboratoire de déploiement Windows et Office
 
@@ -52,12 +51,13 @@ ET le laboratoire est conçu pour être connecté aux versions d’évaluation p
 
 ## <a name="step-by-step-labs"></a>Laboratoires détaillés
 
-Des guides de laboratoire détaillés vous guident dans plusieurs scénarios de déploiement et de gestion. Les laboratoires ont été mis à jour pour les dernières versions d’Intune et de Configuration Manager (version 1910). 
+Des guides de laboratoire détaillés vous guident dans plusieurs scénarios de déploiement et de gestion. Les laboratoires ont été mis à jour pour les dernières versions d’Intune et de Configuration Manager. 
 
 ### <a name="device-and-app-readiness"></a>Préparation des applications et des appareils
 
   - Analyses du bureau
   - NOUVEAUTÉ ! Déployer et mettre à jour le nouveau Microsoft Edge 
+  - NOUVEAUTÉ ! Installer et configurer la passerelle de gestion Cloud (CMG) 
   - Mode Internet Explorer 
   - Application Guard 
 
@@ -91,7 +91,8 @@ Des guides de laboratoire détaillés vous guident dans plusieurs scénarios de 
   - Windows Defender Application Guard
   - Windows Defender Exploit Guard
   - Windows Defender Application Control
-  - Windows Defender Advanced Threat Protection
+  - Windows Defender Protection avancée contre les menaces
+  - NOUVEAUTÉ ! Sécurité de point de terminaison 
 
 ### <a name="os-deployment-and-feature-updates"></a>Déploiement du système d’exploitation et mises à jour des fonctionnalités
 
@@ -105,6 +106,8 @@ Des guides de laboratoire détaillés vous guident dans plusieurs scénarios de 
   - Gérer les mises à jour Windows à l’aide d’une stratégie de groupe
   - Maintenance de Windows 10 à l’aide de Configuration Manager et Intune
   - Maintenance des Applications Microsoft 365 pour les grandes entreprises avec Configuration Manager
+  - NOUVEAUTÉ ! Mises à jour Office avec le Gestionnaire de configuration et Intune
+  - NOUVEAUTÉ ! Installer Microsoft Teams 
 
 ### <a name="new-windows-virtual-desktop"></a>NOUVEAUTÉ ! Windows Virtual Desktop
   - Windows Virtual Desktop : préparer, déployer et optimiser 

@@ -22,12 +22,11 @@ search.appverid:
 ms.assetid: 854b6b2b-0255-4089-8019-b765cff70377
 ROBOTS: NOINDEX
 description: En savoir davantage sur les domaines et les enregistrements DNS associés pour vous aider à gérer vos domaines.
-ms.openlocfilehash: c9fee3488f7de3c0cc4b93be15ff49bd01469495
-ms.sourcegitcommit: 8595cb9ffe0ca5556080f24224182381e1d880de
-ms.translationtype: HT
+ms.openlocfilehash: 2fc581968a4cec3c6e9b5c51f717a8cfa78cd6a3
+ms.sourcegitcommit: 7c1b34205746ff0690ffc774a74bdfd434256cf5
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/03/2020
-ms.locfileid: "45035608"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "45049653"
 ---
 # <a name="dns-basics"></a>Principes de base
 
@@ -143,10 +142,6 @@ Why might your domain's zone file be somewhere besides at your domain registrar?
 Pourquoi le fichier de zone de votre domaine peut-il se trouver autre part que sur votre bureau d’enregistrement de domaines ? Vous pouvez enregistrer votre nom de domaine auprès d’un bureau d’enregistrement de domaines tel que HiChina, mais il est possible que vos enregistrements DNS soient gérés ailleurs, auprès d’une société d’hébergement DNS distincte ou d’une société d’hébergement web. Les enregistrements DNS pour votre domaine stockent ces informations pour que tous les serveurs DNS sachent où rechercher.
 
 ::: moniker-end
-
-> [!NOTE]
-> Si vous avez configuré votre domaine dans Microsoft 365 de telle sorte que [Microsoft configure et gère vos enregistrements DNS](../setup/domains-faq.md#how-does-office-365-manage-my-dns-records) automatiquement dans le cadre de l’installation, vous devez [modifier la gestion des enregistrements DNS vers Microsoft 365](../setup/domains-faq.md#change-dns-management-to-office-365). 
- 
 
 ::: moniker range="o365-worldwide"
 ## <a name="why-add-a-domain-in-office-365"></a>Pourquoi ajouter un domaine dans Office 365 ?

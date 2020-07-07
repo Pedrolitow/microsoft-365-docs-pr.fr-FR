@@ -17,12 +17,11 @@ ms.collection:
 - M365solutions
 ms.custom: ''
 description: Utilisez les services de sécurité et de conformité Microsoft 365 pour protéger vos applications, données et appareils destinés aux travailleurs à distance.
-ms.openlocfilehash: f1c6f509477b4f4523951a64e6b4298753a1519d
-ms.sourcegitcommit: 634abe8a237e27dfe82376e6ef32280aab5d4a27
-ms.translationtype: HT
+ms.openlocfilehash: d8419c00bc4d8b99d9456abafbd5869ca26f4556
+ms.sourcegitcommit: 7c1b34205746ff0690ffc774a74bdfd434256cf5
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "45005995"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "45049863"
 ---
 # <a name="step-3-deploy-security-and-compliance-for-remote-workers"></a>Étape 3 : déployer la sécurité et la conformité pour les travailleurs distants
 
@@ -47,7 +46,7 @@ Protégez vos applications et données grâce aux fonctionnalités de sécurité
 
 | Fonctionnalité | Description | Licence |
 |:-------|:-----|:-------|
-| Office – Protection avancée contre les menaces | Protégez vos applications et données Microsoft 365 (par exemple, messages électroniques, documents Office et outils de collaboration) contre les attaques. <br><br> Office – Protection avancée contre les menaces recueille et analyse les signaux de vos applications afin de détecter, examiner et corriger les risques de sécurité. Elle protège également votre organisation contre les menaces malveillantes posées par les messages électroniques, les liens (URL) et les outils de collaboration. | Microsoft 365 E3 et E5 | 
+| Office 365 – Protection avancée contre les menaces (ATP) | Protégez vos applications et données Microsoft 365 (par exemple, messages électroniques, documents Office et outils de collaboration) contre les attaques. <br><br> Office – Protection avancée contre les menaces recueille et analyse les signaux de vos applications afin de détecter, examiner et corriger les risques de sécurité. Elle protège également votre organisation contre les menaces malveillantes posées par les messages électroniques, les liens (URL) et les outils de collaboration. | Microsoft 365 E3 et E5 | 
 | Protection contre les programmes malveillants | ‎L’antivirus Windows Defender et Device Guard fournissent une protection contre les programmes malveillants basée sur l’appareil. <br><br> SharePoint‎ Online analyse automatiquement les chargements de fichiers pour détecter les programmes malveillants connus. ‎<br><br> Exchange Online Protection‎ (‎EOP‎) sécurise les boîtes aux lettres cloud. | Microsoft 365 E3 et E5 |
 | Microsoft Defender – Protection avancée contre les menaces | Protégez les appareils de votre organisation contre les cyber-menaces et les brèches de données, et détectez, examinez et répondez aux menaces avancées. | Microsoft 365 E5 |
 | Cloud App Security | Protégez vos services cloud (Microsoft 365 et autres applications SaaS) contre les attaques. | Microsoft 365 E5 ou licences de sécurité d’application cloud individuelles |

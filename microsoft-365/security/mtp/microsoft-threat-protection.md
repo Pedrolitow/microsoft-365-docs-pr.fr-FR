@@ -17,12 +17,11 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: 0e51e52db4e569716954aada1c5cea35ddc6dd0a
-ms.sourcegitcommit: 9ed3283dd6dd959faeca5c22613f9126261b9590
-ms.translationtype: MT
+ms.openlocfilehash: b11daf1cc6921e4be87b1bd3965adc2d76d0a0dd
+ms.sourcegitcommit: 7c1b34205746ff0690ffc774a74bdfd434256cf5
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43528368"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "45049927"
 ---
 # <a name="microsoft-threat-protection"></a>Protection Microsoft contre les menaces
 
@@ -45,6 +44,9 @@ Avec la solution de protection Microsoft contre les menaces intégrée, les prof
 </table>
 <br>
 
+
+>[!TIP]
+>Consultez ce [Guide interactif sur la protection contre les menaces Microsoft](https://aka.ms/MTP-Interactive-Guide).
 
 
 La suite Microsoft Threat Protection protège les éléments suivants : 

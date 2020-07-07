@@ -19,12 +19,11 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 6287e7c56f79b09a79c75d7e8b8273dbd5569057
-ms.sourcegitcommit: 634abe8a237e27dfe82376e6ef32280aab5d4a27
-ms.translationtype: MT
+ms.openlocfilehash: 45bc42e825c55ca228b13e8d308f9a1384301d07
+ms.sourcegitcommit: 11218af1d792af297b4280ca5975d139d2bbe350
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "45005889"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "45048266"
 ---
 # <a name="microsoft-threat-protection-preview-features"></a>Fonctionnalités d’aperçu de la protection contre les menaces Microsoft
 
@@ -56,6 +55,8 @@ Vous saurez que les fonctionnalités d’aperçu sont activées lorsque vous voy
 
 ## <a name="preview-features"></a>Fonctionnalités de préversion
 Les fonctionnalités et améliorations suivantes sont actuellement disponibles lors de l’aperçu :
+
+- **[Guide de référence de schéma dans le portail](advanced-hunting-schema-tables.md#get-schema-information-in-the-security-center)** : informations sur les tables de schéma disponibles directement dans le centre de sécurité. Outre les descriptions de table et de colonne, cette référence fournit des informations sur les types d’événement pris en charge ( `ActionType` valeurs) et les exemples de requêtes.  
 
 - **[Tables d’identité et d’application](advanced-hunting-schema-tables.md)** : obtenez une visibilité sur les événements d’authentification, les requêtes Active Directory et l’activité liée aux applications avec les tables [IdentityLogonEvents](advanced-hunting-identitylogonevents-table.md), [IdentityQueryEvents](advanced-hunting-identityqueryevents-table.md)et [AppFileEvents](advanced-hunting-appfileevents-table.md) dans le schéma de chasse avancé.
 

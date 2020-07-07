@@ -17,19 +17,18 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 17e12e9095219b7ad7923f7b5664946fff6ce724
-ms.sourcegitcommit: ab10c042e5e9c6a7b2afef930ab0d247a6aa275d
-ms.translationtype: MT
+ms.openlocfilehash: 2116d8f6f1006f5acf9d468006fa07a04e13087b
+ms.sourcegitcommit: 11218af1d792af297b4280ca5975d139d2bbe350
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44899374"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "45046027"
 ---
 # <a name="identitylogonevents"></a>IdentityLogonEvents
 
 **S’applique à :**
 - Protection Microsoft contre les menaces
 
-Le `IdentityLogonEvents` tableau du schéma de [chasse avancé](advanced-hunting-overview.md) contient des informations sur les activités d’authentification enregistrées par Azure Active Directory et d’autres services et applications Cloud Microsoft. Utilisez cette référence pour créer des requêtes qui renvoient des informations de cette table.
+Le `IdentityLogonEvents` tableau du schéma de [chasse avancé](advanced-hunting-overview.md) contient des informations sur les activités d’authentification effectuées via votre environnement Active Directory local capturées par Azure ATP et les activités d’authentification liées à Microsoft Online Services capturées par Microsoft Cloud App Security. Utilisez cette référence pour créer des requêtes qui renvoient des informations de cette table.
 
 Pour plus d’informations sur les autres tables du schéma de repérage avancé, [consultez la référence de repérage avancé](advanced-hunting-schema-tables.md).
 
@@ -37,21 +36,21 @@ Pour plus d’informations sur les autres tables du schéma de repérage avancé
 |-------------|-----------|-------------|
 | `Timestamp` | DateHeure | Date et heure d’enregistrement de l’événement |
 | `ActionType` | chaîne | Type d’activité qui a déclenché l’événement |
-| `LogonType` | string | Type de session de connexion, notamment :<br><br> - **Interactif** : l’utilisateur interagit physiquement avec l’ordinateur à l’aide du clavier et de l’écran locaux<br><br> - **Ouvertures de session interactives (RDP)** : l’utilisateur interagit avec l’ordinateur à distance à l’aide du Bureau à distance, des services Terminal Server, de l’assistance à distance ou d’autres clients RDP<br><br> - Session **réseau** initiée lorsque l’accès à l’ordinateur est effectué à l’aide de PsExec ou lorsque des ressources partagées sur l’ordinateur, telles que des imprimantes et des dossiers partagés, sont accessibles<br><br> - Session de **traitement par lots** initiée par les tâches planifiées<br><br> - **Service** -session initialisée par les services au démarrage |
-| `Application` | string | Application qui a effectué l’action enregistrée |
-| `Protocol` | string | Protocole utilisé pendant la communication |
-| `AccountName` | string | Nom d’utilisateur du compte |
-| `AccountDomain` | string | Domaine du compte |
-| `AccountUpn` | string | Nom d’utilisateur principal (UPN) du compte |
-| `AccountSid` | string | Identificateur de sécurité (SID) du compte |
-| `AccountObjectId` | string | Identificateur unique du compte dans Azure AD |
-| `AccountDisplayName` | string | Nom de l’utilisateur du compte affiché dans le carnet d’adresses. Il s’agit généralement d’une combinaison d’un nom donné, d’une initiation au milieu et d’un nom de famille ou nom. |
-| `DeviceName` | string | Nom de domaine complet (FQDN) de la machine |
-| `DeviceType` | string | Type de périphérique |
+| `LogonType` | chaîne | Type de session de connexion, notamment :<br><br> - **Interactif** : l’utilisateur interagit physiquement avec l’ordinateur à l’aide du clavier et de l’écran locaux<br><br> - **Ouvertures de session interactives (RDP)** : l’utilisateur interagit avec l’ordinateur à distance à l’aide du Bureau à distance, des services Terminal Server, de l’assistance à distance ou d’autres clients RDP<br><br> - Session **réseau** initiée lorsque l’accès à l’ordinateur est effectué à l’aide de PsExec ou lorsque des ressources partagées sur l’ordinateur, telles que des imprimantes et des dossiers partagés, sont accessibles<br><br> - Session de **traitement par lots** initiée par les tâches planifiées<br><br> - **Service** -session initialisée par les services au démarrage |
+| `Application` | chaîne | Application qui a effectué l’action enregistrée |
+| `Protocol` | chaîne | Protocole utilisé pendant la communication |
+| `AccountName` | chaîne | Nom d’utilisateur du compte |
+| `AccountDomain` | chaîne | Domaine du compte |
+| `AccountUpn` | chaîne | Nom d’utilisateur principal (UPN) du compte |
+| `AccountSid` | chaîne | Identificateur de sécurité (SID) du compte |
+| `AccountObjectId` | chaîne | Identificateur unique du compte dans Azure AD |
+| `AccountDisplayName` | chaîne | Nom de l’utilisateur du compte affiché dans le carnet d’adresses. Il s’agit généralement d’une combinaison d’un nom donné, d’une initiation au milieu et d’un nom de famille ou nom. |
+| `DeviceName` | chaîne | Nom de domaine complet (FQDN) de la machine |
+| `DeviceType` | chaîne | Type de périphérique |
 | `OSPlatform` | string | Plateforme du système d’exploitation client s’exécutant sur la machine. Cela indique des systèmes d’exploitation spécifiques, y compris des variantes au sein d’une même famille, telles que Windows 10 et Windows 7. |
 | `IPAddress` | string | Adresse IP affectée au point de terminaison et utilisée pendant les communications réseau associées |
-| `Location` | string | Ville, pays ou autre emplacement géographique associé à l’événement |
-| `Isp` | string | Fournisseur de services Internet associé à l’adresse IP du point de terminaison |
+| `Location` | chaîne | Ville, pays ou autre emplacement géographique associé à l’événement |
+| `Isp` | chaîne | Fournisseur de services Internet associé à l’adresse IP du point de terminaison |
 
 ## <a name="related-topics"></a>Voir aussi
 - [Vue d’ensemble du repérage avancé](advanced-hunting-overview.md)

@@ -15,12 +15,11 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Découvrez comment préparer la maintenance de Windows et d’Office au sein de votre environnement.
-ms.openlocfilehash: f30581408be1c69d7aec7e31e9b5d6461266adb1
-ms.sourcegitcommit: 98782ee4497d72232462c51a3071fae313282980
-ms.translationtype: HT
+ms.openlocfilehash: e9de339c6bc66e5cd3c02af5f6a53c32b7573b1f
+ms.sourcegitcommit: 584e2e9db8c541fe32624acdca5e12ee327fdb63
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44222672"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44679001"
 ---
 # <a name="step-7-windows-and-office-servicing"></a>Étape 7 : maintenance de Windows et d’Office
 
@@ -30,7 +29,7 @@ ms.locfileid: "44222672"
 <thead>
 <td><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-10.png" alt="Step 7" height="144" width="144" /></td>
 <td><p><strong>Étape 7 : maintenance de Windows et d’Office</strong></p>
-<p>Windows 10 et Microsoft 365 Apps pour entreprise étoffent continuellement leurs fonctionnalités en proposant de nouvelles expériences utilisateur, de nouvelles options de sécurité et les toutes dernières innovations. Découvrez comment rester informé des mises à jour semestrielles et mensuelles, explorez le fonctionnement du nouveau modèle de maintenance, et comparez les outils et les options de votre environnement.</p></td>
+<p>Both Windows 10 and Microsoft 365 Apps for enterprise continually add new capabilities to keep bringing user experiences and security forward with the latest innovations. Learn how to stay current with semi-annual and monthly updates, how the new servicing model works and the tools and options you have.</p></td>
 <td><a href="https://aka.ms/ddev7" target="_blank"><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-20.png" alt="Step 7" height="130" width="231" /></a></td>
 </thead>
 </table>
@@ -45,7 +44,7 @@ Windows 10 et Microsoft 365 Apps pour entreprise introduisent de nouveaux modè
 
 ## <a name="update-types"></a>Types de mise à jour
 
-Les mises à jour se répartissent en deux grandes catégories : les mises à jour de fonctionnalités, et les mises à jour de qualité et de sécurité contenant des correctifs cumulatifs de sécurité, de fiabilité et de bogues. En termes de fréquence, Windows et Office proposent un canal semi-annuel qui fournit de nouvelles fonctionnalités deux fois par an, aux alentours de mars et de septembre, tandis que les mises à jour de qualité et de sécurité sont publiées mensuellement. De plus, pour les applications Office 365, nous proposons un canal mensuel entièrement pris en charge fournissant des mises à jour de fonctionnalités et de qualité.
+Les mises à jour se répartissent en deux grandes catégories : les mises à jour de fonctionnalités, et les mises à jour de qualité et de sécurité contenant des correctifs cumulatifs de sécurité, de fiabilité et de bogues. En termes de fréquence, Windows et Office proposent un canal semi-annuel qui fournit de nouvelles fonctionnalités deux fois par an, aux alentours de mars et de septembre, tandis que les mises à jour de qualité et de sécurité sont publiées mensuellement. De plus, pour les applications Office 365, nous proposons un canal actuel entièrement pris en charge fournissant des mises à jour de fonctionnalités et de qualité.
 
 Si vous avez l’habitude d’un cycle lent entre le système d’exploitation du bureau et les mises à jour de l’application, vous vous posez sûrement des questions :
 
@@ -59,7 +58,7 @@ Pour répondre à ces questions et vous expliquer pourquoi nous avons décidé d
 
 ### <a name="feature-update-benefits"></a>Avantages des mises à jour de fonctionnalité
 
-Premièrement, nous avons abandonné l’ancien modèle qui consistait à envoyer des modifications importantes par vague tous les trois ans. Dorénavant, nous vous proposons des modifications plus petites et des mises à jour de fonctionnalité deux fois par an. Pourquoi ? Face à l’évolution rapide des technologies et des menaces à la sécurité, ce nouveau modèle vous permet de profiter d’expériences et de protections à jour. Certaines des mises à jour de sécurité, par exemple, ne peuvent pas simplement être distribuées via des mises à jour de sécurité mensuelles ou des fichiers de signature antivirus. Elles peuvent se trouver sur une plateforme de modifications faibles, comme la sécurité basée sur la virtualisation.
+First, we’ve moved away from the model of the past that would introduce huge waves of change around every three years to now incremental smaller changes with feature updates twice per year. Why? With technology trends moving so fast in addition to rapidly evolving security threats, this keeps experiences and protections current. Some of the security related updates for example can’t just be delivered by monthly security updates or antivirus signature files; they may be low-level changes platform, like virtualization-based security.
 
 [Guide rapide sur Windows as a Service](https://docs.microsoft.com/windows/deployment/update/waas-quick-start)
 
@@ -67,19 +66,19 @@ Premièrement, nous avons abandonné l’ancien modèle qui consistait à envoye
 
 ### <a name="cumulative-update-model-benefits"></a>Avantages du modèle des mises à jour cumulatives
 
-Deuxièmement, la distribution des mises à jour de qualité et de sécurité sous forme de package de mises à jour cumulatives corrige bon nombre des problèmes rencontrés par le passé. Avant, vous pouviez choisir tous les mois parmi une dizaine de mises à jour pour Windows et Office. Comme vous pouvez l’imaginer, cela génère des ensembles de matrices de test quasi impossibles à prendre en charge. Par ailleurs, si vous installez une version de Windows ou d’Office qui date d’un an ou plus, cela peut prendre des heures voire des jours pour appliquer toutes les mises à jour distribuées depuis la publication de cette version.
+Second delivering quality and security updates as a cumulative update package corrects many of the issues of the past. It used to be that you might pick and choose sometimes from a dozen updates or more each month for both Windows and Office. As you can imagine, this creates a nearly impossible set of test matrices for support. Also, if you install a version of Windows or Office that is a year or more old, it might take hours or sometimes days to apply all updates delivered since that version was released.
 
-Avec le modèle cumulatif, vous utilisez toujours la dernière expérience, à une mise à jour près. Ainsi, le nombre de mises à jour mensuelles à déployer est moins important. Chaque mise à jour s’appuie sur les mises à jour des mois précédents et contient tous les correctifs nécessaires pour être à jour. Les mises à jour cumulatives sont particulièrement utiles quand des PC ont été entreposés pendant plusieurs mois avant d’être réaffectés à un autre utilisateur.
+With the cumulative model, you’re always one update away from being current and in doing so the number of monthly updates that you need to deploy is reduced. Each update builds upon updates from previous months and contains all of the fixes that you need to get current. Cumulative updates are especially helpful when PCs has been turned off for several months because they are in storage waiting to be reassigned to a different user.
 
 ### <a name="expanded-validation-of-updates"></a>Validation étendue des mises à jour
 
 Un autre avantage est qu’avant de déployer des mises à jour pour un déploiement de grande ampleur, nous publions des builds via les programmes Insider pour [Office](https://products.office.com/office-insider?tab=Windows-Desktop) et [Windows](https://insider.windows.com/) de façon à recueillir des données de diagnostic et des commentaires avant de publier les mises à jour à grande échelle. Les programmes Insider étant désormais ouverts à tous les utilisateurs, vous pouvez prendre une longueur d’avance dans la compréhension des mises à jour. Avant de publier les mises à jour, nous récoltons des données de diagnostic de millions de configurations de sorte que, lors du déploiement, la qualité est plus prévisible.
 
-De plus, dans la mesure où les builds Insider de Microsoft 365 Apps pour entreprise reflètent les mises à jour du canal mensuel, si vous utilisez le canal semestriel d’Office pour distribuer deux fois par an des mises à jour de fonctionnalité compatibles avec Windows, vous pouvez rapidement valider les builds à l’aide des versions ciblées du canal semestriel.
+De plus, dans la mesure où les builds Insider de Microsoft 365 Apps pour entreprise reflètent les mises à jour du canal mensuel, si vous utilisez le canal semestriel d’Office pour distribuer deux fois par an des mises à jour de fonctionnalité compatibles avec Windows, vous pouvez rapidement valider les builds à l’aide des versions du canal entreprise semestriel (préversion).
 
 ### <a name="supporting-management-tools"></a>Prise en charge des outils de gestion
 
-Nous avons également réfléchi à une méthode pour simplifier le déploiement des mises à jour. Le gestionnaire de configuration (Current Branch) est régulièrement mis à jour pour prendre en charge le déploiement de ces mises à jour pour Windows et Office et de nouvelles fonctionnalités.
+We've also thought through how to make the deployment of updates seamless to you. Configuration Manager (Current Branch) is updated frequently to support the roll-out of these updates to Windows and Office and any new capabilities.
 
 [Déployer les mises à jour de Windows 10 avec le gestionnaire de configuration](https://docs.microsoft.com/windows/deployment/update/waas-manage-updates-configuration-manager)
 
@@ -96,9 +95,9 @@ Windows 10 offre trois canaux de maintenance :
 Microsoft 365 propose quatre canaux de maintenance :
 
 - [**Programme Office Insider** ](https://products.office.com/office-insider) permettant aux organisations de tester et commenter les nouvelles fonctions et fonctionnalités d’Office en cours de développement
-- **Canal mensuel** fournissant aux utilisateurs les fonctionnalités Office les plus récentes dès qu’elles sont disponibles
-- **Canal semi-annuel** fournissant de nouvelles fonctionnalités deux fois par an
-- **Canal semi-annuel (ciblé)** version d’Office bénéficiant d’un support intégral, qui permet à des utilisateurs pilotes ainsi qu’à des testeurs de compatibilité de tester et valider le canal semi-annuel suivant
+- **Canal actuel** fournissant aux utilisateurs les fonctionnalités Office les plus récentes dès qu’elles sont disponibles
+- **Canal entreprise semi-annuel** fournissant de nouvelles fonctionnalités deux fois par an
+- **Canal entreprise semi-annuel (préversion)** version d’Office bénéficiant d’un support intégral, qui permet à des utilisateurs pilotes ainsi qu’à des testeurs de compatibilité de tester et valider le canal entreprise semi-annuel suivant
 
 Pour plus d’informations sur les canaux de maintenance de Windows et d’Office, voir la documentation ci-dessous :
 
@@ -107,15 +106,15 @@ Pour plus d’informations sur les canaux de maintenance de Windows et d’Offic
 
 ## <a name="phased-deployment-of-updates"></a>Déploiement progressif des mises à jour
 
-Penchons-nous maintenant sur la méthode à adopter pour déployer ces mises à jour. Pour toutes les versions, nous vous recommandons de réaliser au moins trois phases de déploiement : la validation, le pilotage et le déploiement de production à grande échelle. Dès que vous êtes opérationnel sur Windows 10 et Microsoft 365 Apps pour entreprise, utilisez la maintenance mensuelle pour recevoir les mises à jour de qualité et de sécurité, puis passez à la maintenance semestrielle pour les nouvelles fonctionnalités.
+Now let’s shift gears to how you will roll out these updates. For any release, we recommend at least three deployment phases for IT – validation, piloting and broad production deployment. Once you’re up and running on Windows 10 and Microsoft 365 Apps for enterprise, you'll use monthly servicing to stay current with critical security and quality updates, then you’ll move to semi-annual servicing for new features.
 
 ### <a name="monthly-updating"></a>Mise à jour mensuelle
 
-Le modèle de service vous permet de limiter, si vous le souhaitez, le déploiement des nouvelles fonctionnalités à deux fois par an, et le cas échéant, vous pouvez même ignorer une mise à jour semi-annuelle tout en continuant de recevoir des mises à jour de sécurité et de qualité. Le fait que les mises à jour mensuelles soient cumulatives signifie que leur taille augmente mois après mois.
+The service model is designed so you can choose to limit the roll-out of new features to twice per year, and if needed you can even skip a semi-annual update and continue receiving quality and security updates. As mentioned, the cumulative nature of monthly updates means each will increase in size per month.
 
 #### <a name="express-updates"></a>Mises à jour rapides
 
-Grâce à la technologie « Mises à jour rapides » de Windows (appelée Compression Delta binaire dans Office), nous pouvons considérablement réduire la taille du téléchargement. Dans les deux approches, les moteurs de mise à jour comparent les fonctionnalités trouvées sur le PC et recherchent uniquement les éléments manquants nécessaires pour mettre à jour le contenu existant.
+Using a technology called "Express Updates" in Windows and Binary Delta Compression in Office, we can reduce the download size significantly. In both approaches, the update engines compare what’s on the PC and finds only the differentials needed to update what’s there.
 
 [Explication des mises à jour de qualité Windows 10 et fin des mises à jour delta](https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/Windows-10-quality-updates-explained-amp-the-end-of-delta/ba-p/214426)
 
@@ -127,7 +126,7 @@ Windows Update pour Entreprise et Windows Server Update Services ont pris en 
 
 Dans Office, la Compression Delta binaire est utilisée seulement si vous mettez à jour la version la plus récente de Microsoft 365 Apps pour entreprise. Ainsi, pour utiliser cette approche, mettez à jour le build précédent et installez toutes les mises à jour sans exception.
 
-Les canaux de mise à jour de Windows et d’Office peuvent être gérés via System Center Configuration Manager à l’aide du processus standard d’approbation et de ciblage. Par ailleurs, vous pouvez utiliser des paramètres de stratégie dans Office et Windows pour appliquer les canaux de mise à jour utilisés et les paramètres associés.
+Windows and Office update channels can be managed via Configuration Manager using the standard approval and targeting process. Additionally, you can use policy settings in Office and Windows to enforce update channels used, as well as related settings.
 
 ### <a name="semi-annual-updates"></a>Mises à jour semi-annuelles
 
@@ -135,13 +134,13 @@ Vous savez tout sur les mises à jour mensuelles. Maintenant, nous allons nous p
 
 Comme nous l’avons abordé dans l’article sur la préparation des applications et des appareils, nous vous recommandons de commencer à préparer le déploiement de ces mises à jour volumineuses en utilisant les mêmes outils de préparation configurés à l’étape 1 du processus de déploiement.
 
-Concernant les outils, vous pouvez utiliser les paramètres de stratégie avec Windows Update pour Entreprise, la gestion des mises à jour logicielles via le gestionnaire de configuration Microsoft Endpoint (Current Branch), Windows Server Update Services (WSUS), ou les stratégies de mise à jour définies par Microsoft Intune. Si l’utilisation de la bande passante réseau vous préoccupe, reportez-vous à l’étape 2 sur la préparation des répertoires et du réseau pour savoir comment vous pouvez réduire le trafic réseau via l’Optimisation de la distribution et d’autres technologies de mise en cache pair à pair.
+As for tooling, you can use policy settings with Windows Update for Business, software update management via Microsoft Endpoint Configuration Manager (Current Branch), Windows Server Update Services (WSUS), or update policies set by Microsoft Intune. If you are concerned about network bandwidth, see Step 2: Directory and Network Readiness, to learn about your options to reduce network traffic via Delivery Optimization and other peer to peer caching technologies.
 
 ![](../media/step-7-windows-and-office-as-a-service-media/step-7-windows-and-office-as-a-service-media-4.png)
 
 [Canal semi-annuel Windows](https://docs.microsoft.com/windows/deployment/update/waas-overview#semi-annual-channel)
 
-[Canal semi-annuel pour les Applications Microsoft 365](https://docs.microsoft.com/DeployOffice/overview-update-channels#BKMK_SAC)
+[Canal entreprise semi-annuel pour Microsoft 365 Apps](https://docs.microsoft.com/DeployOffice/overview-update-channels#BKMK_SAC)
 
 #### <a name="upgrade-task-sequences"></a>Séquences de tâches de mise à niveau
 
@@ -151,7 +150,7 @@ Une séquence de tâches vous permet de créer des vérifications ou des tâches
 
 ![](../media/step-7-windows-and-office-as-a-service-media/step-7-windows-and-office-as-a-service-media-5.png)
 
-Si vous utilisez déjà des séquences de tâches pour migrer vos ordinateurs Windows 7 vers Windows 10 et que vous connaissez déjà ces outils, il s’agit d’un excellent point de départ pour maîtriser votre mise à niveau. Même si vous pouvez utiliser une séquence de tâches unique pour l’ensemble de la mise à niveau, il est assez courant que les organisations utilisent deux séquences de tâches : une séquence pour vérifier que les ordinateurs sont prêts pour la mise à niveau (elle pré-configure silencieusement tous les fichiers d’installation requis sur les ordinateurs cibles) et une autre séquence pour exécuter la mise à niveau. En utilisant cette approche, la productivité des utilisateurs est moins affectée.
+If you’re already using task sequences to migrate your Windows 7 machines to Windows 10 and are well-versed with those tools, this is a great place to start and provides ultimate control. While you can use a single task sequence for the entire upgrade, it is quite common that organizations use two task sequences. One task sequence for making sure the machines are ready for the upgrade, that silently pre-stages all the required setup files on target computers, and one to do the actual upgrade. This approach ensures that your user productivity is less impacted.
 
 [Créer une séquence de tâches pour mettre à niveau un système d’exploitation dans le gestionnaire de configuration](https://docs.microsoft.com/mem/configmgr/osd/deploy-use/create-a-task-sequence-to-upgrade-an-operating-system)
 
