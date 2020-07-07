@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Lorsque vous créez une étiquette de critère de diffusion, vous pouvez affecter automatiquement une étiquette à un document ou message électronique ou vous pouvez inviter les utilisateurs pour sélectionner l’étiquette que vous recommandez.
-ms.openlocfilehash: 6521bd9c23d8596adb8c86b73a82c3e8aecb85fb
-ms.sourcegitcommit: 03da5464943ef4b9a51644601a229897955dcbb2
+ms.openlocfilehash: c9b7782c39582deec3d42eb0c9dd1083519c805e
+ms.sourcegitcommit: 5e8901e7e571f20ede04f460bd3e7077dda004ca
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44658353"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "44874914"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Appliquer automatiquement une étiquette sensibilité au contenu
 
@@ -54,16 +54,19 @@ Deux méthodes s’offrent à vous pour appliquer automatiquement une étiquette
     Pour des instructions de configuration, consultez l’article [Configurer les stratégies d’étiquetage automatique pour SharePoint, OneDrive et Exchange](#how-to-configure-auto-labeling-policies-for-sharepoint-onedrive-and-exchange) sur cette page.
     
     Spécifique à l’étiquetage automatique pour SharePoint et OneDrive :
-    - Jusqu’à 25 000 fichiers automatiquement étiquetés (Word, PowerPoint ou Excel) dans votre client par jour
-    - Jusqu’à 10 collections de sites pour l’ensemble des stratégies
-    - Jusqu’à 10 stratégies au sein de votre client
-    - La date modifiée n’est pas changée du fait des stratégies d’étiquetage automatique pour le mode de simulation et lors de l’application des étiquettes
+    - Les fichiers Office sont pris en charge dans Word, PowerPoint et Excel.
+    - Jusqu’à 25 000 fichiers automatiquement étiquetés dans votre client par jour.
+    - Jusqu’à 10 collections de sites pour l’ensemble des stratégies.
+    - Jusqu’à 10 stratégies au sein de votre client.
+    - Les valeurs existantes pour modifié, modifié par et la date ne sont pas changées du fait des stratégies d’étiquetage automatique pour le mode de simulation et lors de l’application des étiquettes.
+    - Lorsque l’étiquette applique le chiffrement, [l’émetteur des droits de gestion et le propriétaire de la gestion des droits](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner) correspond à la personne qui a créé l’étiquette de confidentialité.
 
     Spécifique à l’étiquetage automatique pour Exchange :
-    - Contrairement à l’étiquetage manuel ou à l’étiquetage automatique avec les applications Office, les pièces jointes Office sont également analysées pour les conditions que vous spécifiez dans votre stratégie d’étiquetage automatique. Lorsqu’une correspondance est trouvée, l’e-mail est étiqueté, mais pas la pièce jointe.
+    - Contrairement à l’étiquetage manuel ou à l’étiquetage automatique avec les applications Office, les pièces jointes Office (fichiers Word, Excel et PowerPoint) et les pièces jointes au format PDF sont également analysées pour les conditions que vous spécifiez dans votre stratégie d’étiquetage automatique. Lorsqu’une correspondance est trouvée, l’e-mail est étiqueté, mais pas la pièce jointe.
     - Si vous disposez de règles de flux de messagerie Exchange ou de stratégies de protection contre la perte de données (DLP) qui appliquent le chiffrement IRM : l’étiquette est appliquée lorsque le contenu est identifié par ces règles ou ces stratégies et par une stratégie d’étiquetage automatique. Si cette étiquette applique le chiffrement, les paramètres IRM des règles de flux de messagerie Exchange ou des stratégies de protection contre la perte de données sont ignorés. Toutefois, si cette étiquette n’applique pas le chiffrement, les paramètres IRM des règles de flux de messagerie ou des stratégies de protection contre la perte de données sont appliqués en plus de l’étiquette.
     - Les e-mails dont le chiffrement IRM n’inclut aucune étiquette sont remplacés par une étiquette avec des paramètres de chiffrement lorsqu’il existe une correspondance à l’aide de l’étiquetage automatique.
     - Les e-mails entrant sont étiquetés lorsqu’il existe une correspondance avec vos conditions d’étiquetage automatique. Toutefois, si l’étiquette est configurée pour le chiffrement, celui-ci n’est pas appliqué.
+    - Lorsque l’étiquette applique le chiffrement, [l’émetteur des droits de gestion et le propriétaire de la gestion des droits](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner) correspond à la personne qui envoie le courrier électronique.
     
 
 ## <a name="compare-auto-labeling-for-office-apps-with-auto-labeling-policies"></a>Comparer l’étiquetage automatique pour les applications Office et les stratégies d’étiquetage automatique
@@ -88,7 +91,7 @@ Utilisez le tableau suivant pour vous aider à déterminer les différences de c
 
 ## <a name="how-multiple-conditions-are-evaluated-when-they-apply-to-more-than-one-label"></a>Comment plusieurs conditions sont évaluées lorsqu’elles s’appliquent à plus d’une étiquette
 
-Les étiquettes sont classées pour évaluation en fonction de leur position que vous spécifiez dans la stratégie: l’étiquette positionné a tout d’abord la position la plus basse (au moins sensible) et l’étiquette positionnée a dernière position plus élevée (plus sensible). Pour plus d’informations sur la priorité, voir [Priorité étiquettes (ordre aspects importants)](sensitivity-labels.md#label-priority-order-matters).
+The labels are ordered for evaluation according to their position that you specify in the policy: The label positioned first has the lowest position (least sensitive) and the label positioned last has the highest position (most sensitive). For more information on priority, see [Label priority (order matters)](sensitivity-labels.md#label-priority-order-matters).
 
 ## <a name="dont-configure-a-parent-label-to-be-applied-automatically-or-recommended"></a>Ne configurez pas une étiquette parent pour l’appliquer automatiquement ou la recommander.
 
@@ -100,7 +103,7 @@ Pour en savoir plus sur les étiquettes parents et les sous-étiquettes, consult
 
 ## <a name="how-to-configure-auto-labeling-for-office-apps"></a>Comment configurer l’étiquetage automatique pour les applications Office
 
-L’étiquetage automatique dans les applications Office pour Windows est pris en charge par le client d’étiquetage unifié Azure Information Protection. Pour l’étiquetage intégré dans les applications Office, cette fonctionnalité est [en mode Aperçu pour certaines applications](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps).
+L’étiquetage automatique dans les applications Office pour Windows est pris en charge par le client d’étiquetage unifié Azure Information Protection. Pour l’étiquetage intégré dans les applications Office, cette fonctionnalité est disponible dans [Différentes étapes de disponibilité pour différentes applications](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps).
 
 Les paramètres d’étiquetage automatique des applications Office sont disponibles lorsque vous [créer ou modifier une étiquette de confidentialité](create-sensitivity-labels.md). Vous pouvez choisir d’appliquer automatiquement des étiquettes de confidentialité au contenu lorsque des informations sensibles sont détectées. Choisissez parmi une liste de types d’information sensibles ou de classificateurs pouvant être formés :
 
@@ -188,20 +191,20 @@ N’oubliez pas de connaître les conditions préalables avant de configurer les
 
 - Mode de simulation :
     - L’audit pour Microsoft 365 doit être activé. Si vous devez activer l’audit ou si vous ne savez pas celui-ci est déjà activé, consultez l’article [Activer ou désactiver la recherche dans un journal d’audit](turn-audit-log-search-on-or-off.md).
-    - Pour afficher le contenu d’un fichier dans la vue source (non pris en charge pour les courriers électroniques), vous devez avoir le rôle de **Visionneuse de contenu de l’Explorateur de contenu** si vous n’êtes pas un administrateur général. Si vous ne disposez pas cette autorisation, le volet générateur d’aperçu ne s’affiche pas lorsque vous sélectionnez un élément dans l’onglet **Élément correspondant**.
+    - Pour afficher le contenu d’un fichier dans la vue source, vous devez avoir le rôle de **Visionneuse de contenu de l’Explorateur de contenu** si vous n’êtes pas un administrateur général. Si vous ne disposez pas cette autorisation, le volet générateur d’aperçu ne s’affiche pas lorsque vous sélectionnez un élément dans l’onglet **Élément correspondant**.
 
 - Pour étiqueter automatiquement des fichiers dans SharePoint et OneDrive :
     - Vous avez [activé les étiquettes de confidentialité pour les fichiers Office dans SharePoint et OneDrive](sensitivity-labels-sharepoint-onedrive-files.md).
-    - Lors de l’exécution de la stratégie d’étiquetage automatique, le fichier ne doit pas être ouvert par un autre processus ni un autre utilisateur.
+    - Lors de l’exécution de la stratégie d’étiquetage automatique, le fichier ne doit pas être ouvert par un autre processus ni un autre utilisateur. Un fichier examiné pour la modification est inclus dans cette catégorie.
 
 - Si vous envisagez d’utiliser des [types d’informations sensibles personnalisés](custom-sensitive-info-types.md) plutôt que les types de sensibilité prédéfinis : 
     - Les types d’informations de confidentialité personnalisés sont évalués pour le contenu créé après l’enregistrement des types d’informations de confidentialité personnalisés. 
     - Pour tester de nouveaux types d’informations sensibles personnalisés, créez-les avant de créer votre stratégie d’étiquetage automatique, puis créez de nouveaux documents avec des exemples de données pour pouvoir les tester.
 
 - Une ou plusieurs étiquettes de confidentialité [créées et publiées](create-sensitivity-labels.md) (à au moins un utilisateur) que vous pouvez sélectionner pour vos stratégies d’étiquetage automatique. Pour ces étiquettes :
-    - Cela n’a pas d’importance si le paramètre d’étiquetage automatique dans les applications Office est activé ou désactivé, car ce paramètre d’étiquette complète les stratégies d’étiquetage automatique, comme expliqué dans l’introduction. 
+    - Cela n’a pas d’importance si le paramètre d’étiquetage automatique dans les applications Office est activé ou désactivé, car ce paramètre d’étiquette complète les stratégies d’étiquetage automatique, comme expliqué dans l’introduction.
     - Si les étiquettes que vous souhaitez utiliser pour l’étiquetage automatique sont configurées pour utiliser les marquages visuels (en-têtes, pieds de page, filigranes), notez que ceux-ci ne sont pas appliqués aux documents.
-    - Si les étiquettes appliquent le chiffrement, celles-ci doivent être configurées pour le paramètre **Attribuer des autorisations maintenant**.
+    - Si les étiquettes appliquent le [chiffrement](encryption-sensitivity-labels.md), celles-ci doivent être configurées pour le paramètre **Attribuer des autorisations maintenant**.
 
 ### <a name="learn-about-simulation-mode"></a>En savoir plus sur le mode simulation
 
@@ -294,6 +297,8 @@ Vous pouvez modifier votre stratégie directement à partir de cette interface 
     ![Modifier les options d’une stratégie d’étiquetage automatique](../media/auto-labeling-edit.png)
     
     Lorsque vous êtes prêt à exécuter la stratégie sans simulation, sélectionnez l’option **Activer la stratégie**.
+
+Vos stratégies automatiques fonctionnent en continu jusqu’à leur suppression. Par exemple, les documents nouveaux et modifiés sont inclus dans les paramètres de la stratégie actuelle.
 
 Vous pouvez également afficher les résultats de votre stratégie d’étiquetage automatique à l’aide de l’[explorateur de contenu](data-classification-content-explorer.md) lorsque vous disposez des [autorisations](data-classification-content-explorer.md#permissions) appropriées :
 - La **visionneuse de liste de l’Explorateur de contenu** vous permet de voir l’étiquette d’un fichier, mais pas le contenu du fichier.

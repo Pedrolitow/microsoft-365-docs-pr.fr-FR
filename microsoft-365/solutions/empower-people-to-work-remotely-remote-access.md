@@ -5,7 +5,7 @@ f1.keywords:
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 05/01/2020
+ms.date: 05/27/2020
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -17,12 +17,12 @@ ms.collection:
 - M365solutions
 ms.custom: ''
 description: Assurez-vous que vos employés à distance peuvent accéder aux ressources locales tout en optimisant l’accès aux services cloud de Microsoft 365.
-ms.openlocfilehash: 363f2a5edb43d294be5a8ecfe0fd02964dd8b945
-ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
+ms.openlocfilehash: 199dc6aa33134cfa0f9ac311d037a934c12ba3b9
+ms.sourcegitcommit: bd5a08785b5ec320b04b02f8776e28bce5fb448f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44160749"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "44844977"
 ---
 # <a name="step-2-provide-remote-access-to-on-premises-apps-and-services"></a>Étape 2. Fournir l’accès à distance aux applications et services locaux
 
@@ -70,7 +70,11 @@ Voici les composants du proxy d’application Azure AD.
 
 ![Composants du proxy d’application Azure AD](../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-application-proxy.png)
 
-Si vous souhaitez en savoir plus, consultez la page [Présentation du proxy d’application Azure AD](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy).
+Si vous souhaitez obtenir plus d’informations, consultez cette [vue d’ensemble des proxy d’application Azure AD](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy) et la [Partie 3 de la vidéo sur l’utilisation des proxy d’Azure AD](https://resources.techcommunity.microsoft.com/enabling-remote-work/#security).
+
+>[!Note]
+>Le proxy d’application Azure AD ne fait pas partie de l’abonnement Microsoft 365. Vous devez payer pour son utilisation avec un abonnement Azure distinct.
+>
 
 ## <a name="deploy-remote-access-when-not-all-your-apps-are-web-apps"></a>Déployer l’accès à distance lorsque l’ensemble de vos applications ne sont pas des applications web
 
@@ -82,13 +86,32 @@ Une connexion VPN P2S crée une connexion sécurisée entre un appareil de trava
 
 Si vous souhaitez en savoir plus, consultez la page [Présentation de P2S VPN](https://docs.microsoft.com/azure/vpn-gateway/point-to-site-about).
 
+>[!Note]
+>Azure P2S VPN n’est pas inclus dans l’abonnement Microsoft 365. Vous devez payer pour son utilisation avec un abonnement Azure distinct.
+>
+
 ## <a name="deploy-windows-virtual-desktop-to-provide-remote-access-for-remote-workers-using-personal-devices"></a>Déployer l’application de Windows Virtual Desktop pour fournir l’accès distant aux travailleurs à distance en utilisant des appareils personnels 
 
-Pour prendre en charge les travailleurs distants qui peuvent uniquement utiliser leurs appareils personnels et non gérés, utilisez l’application de Windows Virtual Desktop dans Azure pour créer et attribuer des bureaux virtuels à vos utilisateurs pour qu’ils les utilisent à partir de leur domicile.
+Pour prendre en charge les travailleurs distants qui peuvent uniquement utiliser leurs appareils personnels et non gérés, utilisez l’application de Windows Virtual Desktop dans Azure pour créer et attribuer des bureaux virtuels à vos utilisateurs pour qu’ils les utilisent à partir de leur domicile. Les PC virtualisés peuvent agir comme des PC connectés au réseau de votre organisation.
 
-Les PC virtualisés peuvent agir comme des PC connectés au réseau de votre organisation.
+![Composants d’Azure Windows Virtual Desktop](../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-windows-virtual-desktop.png)
 
-Si vous souhaitez en savoir plus, consultez la page [Présentation de Windows Virtual Desktop](https://docs.microsoft.com/azure/virtual-desktop/overview).
+Si vous souhaitez plus d’informations, reportez-vous aux rubriques suivantes : 
+
+- [Cette vue d’ensemble de Windows Virtual Desktop](https://docs.microsoft.com/azure/virtual-desktop/overview).
+- [La partie 2 de la vidéo sur l’utilisation de l’application de Windows Virtual Desktop pour les travailleurs à distance](https://resources.techcommunity.microsoft.com/enabling-remote-work/#productivity).
+
+>[!Note]
+>Windows Virtual Desktop n’est pas inclus dans l’abonnement Microsoft 365. Vous devez payer pour son utilisation avec un abonnement Azure distinct.
+>
+
+## <a name="protect-your-remote-desktop-services-connections-with-the-remote-desktop-services-gateway"></a>Protéger vos connexions aux Services Bureau à distance avec la Passerelle des services Bureau à distance
+
+Si vous utilisez les Services Bureau à distance (RDS) pour permettre aux employés de se connecter à des ordinateurs Windows sur votre réseau local, vous devez utiliser une Passerelle des services Bureau à distance Microsoft dans votre réseau de périmètre. La passerelle utilise le protocole SSL (Secure Sockets Layer) pour chiffrer les communications et empêche le système hébergeant les services Bureau à distance d’être directement exposé à Internet.
+
+![Les Services Bureau à distance avec la Passerelle des services Bureau à distance](../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-remote-desktop.png)
+
+Si vous souhaitez plus d’informations, consultez [cet article](https://www.microsoft.com/security/blog/2020/04/16/security-guidance-remote-desktop-adoption/).
 
 ## <a name="admin-technical-resources-for-remote-access"></a>Ressources techniques dédiées aux administrateurs pour l’accès à distance
 
@@ -105,8 +128,9 @@ Après le déploiement d’une solution d’accès à distance pour vos employé
 | Aucune solution VPN d’accès à distance et vous avez besoin d’un accès à distance uniquement pour les applications web locales | Vous avez configuré l’application proxy Azure. |
 | Aucune solution VPN d’accès à distance et vous avez besoin d’accéder à des applications locales, dont certaines ne sont pas basées sur le web | Vous avez configuré Azure P2S VPN. |
 | Les employés à distance utilisent leurs appareils personnels chez eux | Vous avez configuré Windows Virtual Desktop. |
+| Les employés distants utilisent les connexions aux services Bureau à distance vers des systèmes locaux | Vous avez déployé une passerelle des services Bureau à distance sur votre réseau de périmètre. |
 |||
 
 ## <a name="next-step"></a>Étape suivante
 
-Poursuivez avec l’[étape 3](empower-people-to-work-remotely-manage-endpoints.md) pour gérer vos appareils, PC et autres points de terminaison.
+Continuez avec l’[Étape 3](empower-people-to-work-remotely-security-compliance.md) pour déployer les services de sécurité et de conformité Microsoft 365 pour protéger vos applications, données et appareils.
