@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 03083fdf-bc52-409a-b2ac-2a5f5c308fa0
 description: Cet article vous offre des informations sur la gestion des paramètres pour vos utilisateurs.
-ms.openlocfilehash: 5fa8674b8e188605ba3f6339fd6384c37630c917
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+ms.openlocfilehash: ca57d536794ffde4865ec86f34c8dc644ff3c1f1
+ms.sourcegitcommit: 5b769f74bcc76ac8d38aad815d1728824783cd9f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44780204"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "45080002"
 ---
 # <a name="user-email-settings"></a>Paramètres de messagerie de l'utilisateur
 
@@ -44,4 +44,4 @@ Le tableau suivant présente les différents paramètres de messagerie que vous 
 
 > [!NOTE]
 >
-> <sup>1</sup> Vous pouvez uniquement gérer les applications d’e-mail pour les boîtes aux lettres hébergées entièrement dans Office 365. Vous ne pouvez pas utiliser cette fonctionnalité afin de gérer les applications d’e-mail pour les boîtes aux lettres hébergées en local.
+> <sup>1</sup> Vous pouvez uniquement gérer les applications d’e-mail pour les boîtes aux lettres hébergées entièrement dans Microsoft 365. Vous ne pouvez pas utiliser cette fonctionnalité afin de gérer les applications d’e-mail pour les boîtes aux lettres hébergées en local.

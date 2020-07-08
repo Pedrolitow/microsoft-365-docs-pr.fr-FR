@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: d4ba60f3-4e1c-4180-99bd-250b8955be2a
 description: 'Apprenez à configurer votre domaine personnalisé Microsoft avec des solutions réseau si vous souhaitez que Microsoft gère vos enregistrements DNS. '
-ms.openlocfilehash: 69e63a6e5dac6e75e66cb816538d356fdd922581
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+ms.openlocfilehash: 502699cf3760460a13ee067b07737037f31fa4ee
+ms.sourcegitcommit: 5b769f74bcc76ac8d38aad815d1728824783cd9f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44780384"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "45079876"
 ---
 # <a name="change-nameservers-to-set-up-microsoft-with-network-solutions"></a>Modifier les serveurs de noms pour configurer Microsoft avec les solutions réseau
 
@@ -189,8 +189,7 @@ Vous êtes prêt à modifier vos enregistrements NS de sorte que Microsoft puiss
     
     ![NetworkSolutionsBP-redelegate-1-2-1](../../media/57e22ef1-ac88-4d4a-bc8e-058023255dfd.png)
   
-3. Sur la page **Domain Names (Noms de domaines)**, tapez ou copiez-collez les valeurs de serveur de noms du tableau suivant.
- 
+3. Sur la page **Domain Names (Noms de domaines)**, tapez ou copiez-collez les valeurs de serveur de noms du tableau suivant. 
     
 |||
 |:-----|:-----|

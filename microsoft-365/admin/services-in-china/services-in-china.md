@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: a8ab5061-3346-4da0-bb7c-5260822b53ae
 description: En savoir plus sur Office 365 géré par 21Vianet qui est conçu pour répondre aux besoins des services Cloud sécurisés, fiables et évolutifs en Chine.
 monikerRange: o365-21vianet
-ms.openlocfilehash: 7c8459c8c3da67ac4cc80ac2912e368f23cd8e10
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+ms.openlocfilehash: 133df44635927d185e72c7981953e07162d458a9
+ms.sourcegitcommit: 5b769f74bcc76ac8d38aad815d1728824783cd9f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44779916"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "45079736"
 ---
 # <a name="office-365-operated-by-21vianet"></a>Office 365 géré par 21Vianet
 
@@ -57,7 +57,7 @@ Pour en savoir plus sur la prise en main des services généraux Office 365, con
 |:-----|:-----|
 |Domaines personnalisés  <br/> |Les administrateurs peuvent créer et/ou utiliser des domaines personnalisés inscrits via des fournisseurs de domaine spécifiques au chinois. Si vous n’avez pas de domaine personnalisé, vous pouvez [acheter un nom de domaine](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/buy-a-domain-name) à partir d’un serveur d’inscriptions de noms de domaine. Si vous en avez déjà un, [recherchez votre bureau d’enregistrement de domaines ou votre fournisseur d’hébergement DNS](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/find-your-domain-registrar).  <br/> En outre, si vous créez un site Web public à l’aide du service SharePoint Online Office 365, la stratégie de conformité Internet de la Chine exige que vous obteniez un numéro de fournisseur de contenu Internet (ICP).  **Remarque :** La validation automatique des mots non autorisés dans les noms de domaine personnalisés n’est pas disponible.           |
 |Support technique, sur les abonnements et la facturation  <br/> |Fourni par 21Vianet. Pour plus d’informations sur la façon de contacter le support technique, consultez la rubrique [contacter le support technique Office 365](../contact-support-for-business-products.md).  <br/> |
-|Réinitialisation du mot de passe en libre-service  <br/> |Disponible uniquement pour les administrateurs. Pour plus d’informations, consultez [la rubrique modifier ou réinitialiser votre mot de passe dans Microsoft 365 géré par 21ViaNet](https://support.microsoft.com/office/d8eb5b62-9d0e-4267-a9bf-2aa491ee6d0b).  <br/> |
+|Réinitialisation du mot de passe en libre-service  <br/> |Disponible uniquement pour les administrateurs. Pour plus d’informations, consultez [la rubrique modifier ou réinitialiser votre mot de passe dans Office 365 géré par 21ViaNet](https://support.microsoft.com/office/d8eb5b62-9d0e-4267-a9bf-2aa491ee6d0b).  <br/> |
 |Sécurité, confidentialité, conformité et détails sur les niveaux de prise en charge  <br/> |Fourni par 21Vianet.  <br/> |
 |Programme d’installation d’Office Desktop  <br/> |Le programme d’installation de bureau Office n’est pas disponible pour Office 2010 et Office 2007. Toutefois, les administrateurs peuvent [configurer les applications de bureau Office actuelles pour qu’elles fonctionnent avec Office 365](https://support.microsoft.com/office/85646aba-7e6c-4e24-a047-8fd9ce4f9d2e).  <br/> |
 |Prise en charge des appareils mobiles et périphériques\*  <br/> | Les fonctionnalités mobiles suivantes seront bientôt disponibles :  <br/>  Gestion des appareils mobiles (MDM)  <br/>  BlackBerry Business cloud services (BBCS) n’est pas disponible, mais vous pouvez utiliser les appareils Exchange ActiveSync ou une offre de Research in Motion (RIM, la solution de messagerie sans fil BlackBerry) pour exécuter BlackBerry Enterprise Server (BES).  <br/>  Pour plus d’informations sur la prise en charge des appareils mobiles, consultez [la rubrique Configurer et gérer l’accès mobile pour vos utilisateurs](https://support.microsoft.com/office/01fff219-4492-40f2-82d3-fd2ffc0ad802).  <br/> |
@@ -129,11 +129,11 @@ Pour les organisations qui exécutent des versions anciennes ou mixtes d’Excha
 | 2013 SP1  <br/> | 2013 SP1  <br/> | Oui  <br/> | Tous  <br/> |
 | Mixte 2013 SP1/2010 SP3  <br/> | 2013 CU5  <br/> | Oui  <br/> | Tout, à l’exception de la fonctionnalité eDiscovery/archivage inaltérable, accès OWA (voir le tableau ci-dessous)  <br/> |
 | Mixte 2013 SP1/2010 SP3  <br/> | 2013 SP1  <br/> | Oui  <br/> | Configuration manuelle uniquement des informations de disponibilité  <br/> |
-| 2010 SP3  <br/> | 2010 SP3  <br/> | Non  <br/> | Aucun  <br/> |
+| 2010 SP3  <br/> | 2010 SP3  <br/> | Non  <br/> | Aucune  <br/> |
 | 2007  <br/> | 2013 CU5  <br/> | Oui  <br/> | Disponibilité uniquement  <br/> |
 | 2007  <br/> | 2013 SP1 ou 2010 SP3No  <br/> | N/A  <br/> | Non prise en charge  <br/> |
 | 2003  <br/> | 2013 SP1/CU5  <br/> | N/A  <br/> | Non prise en charge  <br/> |
-| 2003  <br/> | 2010 SP3  <br/> | Non  <br/> | Aucun  <br/> |
+| 2003  <br/> | 2010 SP3  <br/> | Non  <br/> | Aucune  <br/> |
 
    
 > [!IMPORTANT]

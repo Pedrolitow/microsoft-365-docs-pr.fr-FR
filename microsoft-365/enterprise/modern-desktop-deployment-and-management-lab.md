@@ -15,17 +15,18 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: En savoir plus sur le point et où pour accéder au Kit laboratoire de déploiement Windows et Office.
-ms.openlocfilehash: 7090a9fcc279f9bedc5f86b43952a12e988069e1
-ms.sourcegitcommit: 7c1b34205746ff0690ffc774a74bdfd434256cf5
+ms.openlocfilehash: a52d2ef1570509150aa1b44c7d7d767287e308f1
+ms.sourcegitcommit: 020b89b0d558a866ea68d35b5170db76f6d8d74d
+ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 07/07/2020
-ms.locfileid: "45049915"
+ms.locfileid: "45052724"
 ---
 # <a name="windows-and-office-deployment-lab-kit"></a>Kit laboratoire de déploiement Windows et Office
 
 Ces ateliers sont conçus pour vous aider à planifier, tester et valider votre déploiement et votre gestion de postes de travail exécutant Windows 10 Entreprise et Microsoft 365 Apps for enterprise. Les ateliers abordent les étapes et les outils décrits dans la roue Déploiement du bureau, couvrant Microsoft Endpoint Configuration Manager, Analyses du bureau, Outil de personnalisation Office, OneDrive, Windows Autopilot et autres.
 
-Cette formation est fortement recommandée pour les organisations qui se préparent à la fin de vie de Windows 7, et s'applique également si vous utilisez actuellement Windows 10 et Office 365 Plus ou Office 2019. De plus, en tant qu'environnement isolé, le laboratoire est idéal pour explorer les mises à jour des outils de déploiement et tester l'automatisation liée au déploiement.
+Cette formation est fortement recommandée pour les organisations qui se préparent à la fin de vie de Windows 7, et s'applique également si vous utilisez actuellement Windows 10 et Microsoft 365 Apps for enterprise (anciennement Office 365 ProPlus) ou Office 2019. De plus, en tant qu'environnement isolé, le laboratoire est idéal pour explorer les mises à jour des outils de déploiement et tester l'automatisation liée au déploiement.
 
 [Télécharger le Kit laboratoire de déploiement Windows et Office](https://www.microsoft.com/evalcenter/evaluate-lab-kit).
 
@@ -73,6 +74,7 @@ Des guides de laboratoire détaillés vous guident dans plusieurs scénarios de 
   - Déploiement géré en entreprise à l’aide de Configuration Manager et de Microsoft Intune
   - Gestion et déploiement de l’application à l’aide de Microsoft Intune
   - Déploiement de l’application et installation en libre-service à l’aide de Microsoft Store pour Entreprises
+  - NOUVEAUTÉ ! Installer Microsoft Teams 
 
 ### <a name="user-file-and-settings-migration"></a>Migration des paramètres et du fichier utilisateur
 
@@ -107,8 +109,7 @@ Des guides de laboratoire détaillés vous guident dans plusieurs scénarios de 
   - Maintenance de Windows 10 à l’aide de Configuration Manager et Intune
   - Maintenance des Applications Microsoft 365 pour les grandes entreprises avec Configuration Manager
   - NOUVEAUTÉ ! Mises à jour Office avec le Gestionnaire de configuration et Intune
-  - NOUVEAUTÉ ! Installer Microsoft Teams 
-
+  
 ### <a name="new-windows-virtual-desktop"></a>NOUVEAUTÉ ! Windows Virtual Desktop
   - Windows Virtual Desktop : préparer, déployer et optimiser 
 

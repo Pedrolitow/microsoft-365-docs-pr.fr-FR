@@ -1,5 +1,5 @@
 ---
-title: Ajouter un domaine à Office 365
+title: Ajouter un domaine à Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -25,15 +25,15 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 6383f56d-3d09-4dcb-9b41-b5f5a5efd611
-description: Ajoutez votre domaine à Office 365 dans le centre d’administration Microsoft 365 en ajoutant un enregistrement DNS au niveau de votre hôte DNS. L’Assistant installation vous guide tout au long du processus.
-ms.openlocfilehash: b5ad21174c0a2ebb3466072ef43fb1ba284d3b59
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+description: Ajoutez votre domaine à Microsoft 365 dans le centre d’administration Microsoft 365 en ajoutant un enregistrement DNS au niveau de votre hôte DNS. L’Assistant installation vous guide tout au long du processus.
+ms.openlocfilehash: ccebd7dd5e78663b7fd1d5318b17dfbc09bd8fb0
+ms.sourcegitcommit: 5b769f74bcc76ac8d38aad815d1728824783cd9f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44398989"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "45079724"
 ---
-# <a name="add-a-domain-to-microsoft-365"></a>Ajouter un domaine à Microsoft 365
+# <a name="add-a-domain-to-microsoft-365"></a>Ajouter un domaine à Microsoft 365
 
 ::: moniker range="o365-21vianet"
 
@@ -94,7 +94,7 @@ ms.locfileid: "44398989"
     1. Sélectionnez **Ajouter les enregistrements DNS pour moi** si vous souhaitez qu’Office configure votre DNS automatiquement. 
     
   
-    2. Sélectionnez **j’aurai ajouté les enregistrements DNS moi-même** si vous voulez joindre uniquement des services Office 365 spécifiques à votre domaine ou si vous souhaitez ignorer cette opération pour le moment et effectuer cette opération plus tard. **Choisissez cette option si vous savez exactement ce que vous faites.**
+    2. Sélectionnez **j’aurai ajouté les enregistrements DNS moi-même** si vous souhaitez joindre uniquement des services Microsoft 365 spécifiques à votre domaine ou si vous souhaitez ignorer cette opération pour le moment et effectuer cette opération plus tard. **Choisissez cette option si vous savez exactement ce que vous faites.**
     
 7. Si vous décidez d' *Ajouter des enregistrements DNS vous-même* , sélectionnez **suivant** et vous verrez une page contenant tous les enregistrements que vous devez ajouter à votre site Web des registres pour configurer votre domaine. 
     
@@ -149,7 +149,7 @@ Dans l’Assistant, nous confirmons que vous êtes propriétaire du domaine, pui
 
 ### <a name="what-happens-to-my-email-and-website"></a>Qu’arrive-t-il à mon courrier électronique et à mon site Web ?
 
-Une fois que vous avez terminé l’installation, l’enregistrement MX de votre domaine est mis à jour pour pointer vers Microsoft 365 et tous les messages électroniques pour votre domaine vont débuter vers Microsoft 365. Vérifiez que vous avez ajouté les utilisateurs et configuré les boîtes aux lettres dans Office 365 de toutes les personnes qui reçoivent du courrier électronique sur votre domaine.
+Une fois que vous avez terminé l’installation, l’enregistrement MX de votre domaine est mis à jour pour pointer vers Microsoft 365 et tous les messages électroniques pour votre domaine vont débuter vers Microsoft 365. Assurez-vous que vous avez ajouté des utilisateurs et configuré des boîtes aux lettres dans Microsoft 365 pour toutes les personnes qui récupèrent du courrier électronique sur votre domaine !
   
 Si vous avez un site web que vous utilisez dans le cadre de votre activité, il continuera à fonctionner là où il se trouve. Les étapes de configuration de la connexion au domaine n’affectent pas votre site Web.
 
@@ -159,7 +159,7 @@ Si vous avez un site web que vous utilisez dans le cadre de votre activité, il 
 
 [Qu’est-ce qu’un domaine ?](../get-help-with-domains/what-is-a-domain.md)
 
-[Acheter un nom de domaine dans Office 365](../get-help-with-domains/buy-a-domain-name.md)
+[Acheter un nom de domaine dans Microsoft 365](../get-help-with-domains/buy-a-domain-name.md)
 
 [Configurer votre domaine (instructions spécifiques de l’hôte)](../get-help-with-domains/set-up-your-domain-host-specific-instructions.md)
 

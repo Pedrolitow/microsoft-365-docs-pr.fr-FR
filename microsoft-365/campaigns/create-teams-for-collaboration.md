@@ -1,5 +1,5 @@
 ---
-title: Création de teams pour la collaboration
+title: Créer Teams pour la collaboration
 f1.keywords:
 - NOCSH
 ms.author: stevhord
@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Créez un espace de collaboration pour votre équipe avec Microsoft Teams.
-ms.openlocfilehash: a89d7a87a18431dfef72c6f7ca4d6c7fbce21f7c
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: c5c484b2787bf3e819a723a3b5648106dcf75602
+ms.sourcegitcommit: 5b769f74bcc76ac8d38aad815d1728824783cd9f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635647"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "45079784"
 ---
 # <a name="create-teams-for-collaboration-in-microsoft-teams"></a>Création de teams pour la collaboration dans Microsoft teams
 
@@ -85,5 +85,5 @@ En savoir plus sur Microsoft teams dans [la documentation technique Microsoft te
 
 ## <a name="admin-settings"></a>Paramètres d’administration
 
-Vous devez être administrateur pour créer une équipe à l’échelle de l’organisation. Pour plus d’informations, voir [qu’est-ce qu’un administrateur dans Office 365 ?](https://support.office.com/article/what-is-an-admin-e123627e-4892-4461-b9aa-1b6d57a5cfa4?ui=en-US&rs=en-US&ad=US).
+Vous devez être administrateur pour créer une équipe à l’échelle de l’organisation. Pour plus d’informations, voir [qu’est-ce qu’un administrateur dans Microsoft 365 ?](https://support.office.com/article/what-is-an-admin-e123627e-4892-4461-b9aa-1b6d57a5cfa4?ui=en-US&rs=en-US&ad=US).
   

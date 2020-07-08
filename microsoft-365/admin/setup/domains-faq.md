@@ -24,11 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: 1272bad0-4bd4-4796-8005-67d6fb3afc5a
 description: Pour en savoir plus sur les domaines, trouvez des réponses à vos questions fréquemment posées.
-ms.openlocfilehash: 093125d1652355fbd9b624e1f15b5858fd586301
-ms.sourcegitcommit: 7c1b34205746ff0690ffc774a74bdfd434256cf5
+ms.openlocfilehash: c588586ddd3d57fdbe78d7751131f61e6aa53eba
+ms.sourcegitcommit: dc5de2064706137256307f100b8dc61e9797bd1c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 07/07/2020
-ms.locfileid: "45049735"
+ms.locfileid: "45068102"
 ---
 # <a name="domains-faq"></a>Forum aux questions sur les domaines
 
@@ -45,15 +46,15 @@ Si vous ne trouvez pas la réponse à votre question, laissez-nous un commentair
 
 Contenu de cet article
 
-[Qu’est-ce que la priorité MX ?](#what-is-mx-priority) 
- [Comment puis-je valider des enregistrements SPF pour mon domaine ?](#how-can-i-validate-spf-records-for-my-domain) 
- [Qu’est-ce qu’un nom de domaine ?](#what-is-a-domain-name) 
- [Que se passe-t-il si mon fournisseur DNS ne prend pas en charge certains types d’enregistrements ?](#what-happens-if-my-dns-provider-doesnt-support-certain-record-types) 
- [Comment définir ou modifier le domaine par défaut dans Microsoft 365 ?](#how-do-i-set-or-change-the-default-domain-in-microsoft-365) 
- [Puis-je ajouter des sous-domaines personnalisés ou plusieurs domaines à Microsoft 365 ?](#can-i-add-custom-subdomains-or-multiple-domains-to-microsoft-365) 
- [Pourquoi ai-je un domaine « onmicrosoft.com » ?](#why-do-i-have-an-onmicrosoftcom-domain) 
- [Pourquoi ai-je un domaine « onmicrosoft.de » ?](#why-do-i-have-an-onmicrosoftde-domain) 
- [Comment puis-je vérifier mon statut de l’organisme ou de l’éducation ?](#how-do-i-verify-my-nonprofit-or-education-status)
+- [Quelle est la priorité MX ?](#what-is-mx-priority)
+- [Comment puis-je valider des enregistrements SPF pour mon domaine ?](#how-can-i-validate-spf-records-for-my-domain)
+- [Qu’est-ce qu’un nom de domaine ?](#what-is-a-domain-name)
+- [Que se passe-t-il si mon fournisseur DNS ne prend pas en charge certains types d’enregistrements ?](#what-happens-if-my-dns-provider-doesnt-support-certain-record-types)
+- [Comment définir ou modifier le domaine par défaut dans Microsoft 365 ?](#how-do-i-set-or-change-the-default-domain-in-microsoft-365)
+- [Puis-je ajouter des sous-domaines personnalisés ou plusieurs domaines à Microsoft 365 ?](#can-i-add-custom-subdomains-or-multiple-domains-to-microsoft-365)
+- [Pourquoi ai-je un domaine « onmicrosoft.com » ?](#why-do-i-have-an-onmicrosoftcom-domain)
+- [Pourquoi ai-je un domaine « onmicrosoft.de » ?](#why-do-i-have-an-onmicrosoftde-domain)
+- [Comment puis-je vérifier mon statut de l’organisme ou de l’éducation ?](#how-do-i-verify-my-nonprofit-or-education-status)
     
 ## <a name="what-is-mx-priority"></a>Quelle est la priorité MX ?
 

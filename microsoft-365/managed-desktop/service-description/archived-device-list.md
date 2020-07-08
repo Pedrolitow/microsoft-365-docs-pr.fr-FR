@@ -8,12 +8,12 @@ f1.keywords:
 - NOCSH
 ms.author: jaimeo
 ms.localizationpriority: normal
-ms.openlocfilehash: e49c2271bd7005c674447cd59d5ccf7439cf4710
-ms.sourcegitcommit: 6746fae2f68400fd985711b1945b66766d2a59a4
+ms.openlocfilehash: ca6bc91ebf300afe47326985cc923d929b2cd412
+ms.sourcegitcommit: 5b769f74bcc76ac8d38aad815d1728824783cd9f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "44418877"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "45080080"
 ---
 # <a name="microsoft-managed-desktop-archived-devices"></a>Appareils archivés Microsoft Managed Desktop
 
@@ -35,16 +35,18 @@ Pour être inscrit dans Microsoft Managed Desktop, un appareil doit être l’un
 
 | Modèle  | Caractéristiques minimales  | Autres conditions requises   | Date de déclassement |
 |---------|---------|---------|---------|
+| Dell Precision 3530| 256 Go/Intel i5/8 Go de RAM | Appareil infrarouge requis | **22 mai 2023** |
 | Dell Latitude 5490| 256 Go/Intel i5/8 Go de RAM | Appareil infrarouge requis | **9 janvier 2023** |
 | Dell Latitude 7390 7390 2-en-1/7490 | 256 Go/Intel i5/8 Go de RAM   | Appareil infrarouge requis | **9 janvier 2023** |
 |HP EliteBook 830/840/850 G5| 128 Go/Intel i5/8 Go de RAM | SKU avec 5VS01AV, appareil photo infrarouge ou capteur d’empreintes digitales requis  | **15 février 2023** |
 |HP Elite x2 1013 G3| 256 Go/Intel i5/8 Go de RAM | SKU avec 5VS03AV, appareil infrarouge obligatoire |**14 mai 2023** |
 |HP EliteBook x360 1030 G3| 256 Go/Intel i5/8 Go de RAM | SKU avec 5VS01AV, appareil infrarouge obligatoire |**14 mai 2023** |
 |HP EliteBook x360 1040 G5| 256 Go/Intel i5/8 Go de RAM | SKU avec 5VS01AV, appareil infrarouge obligatoire | **23 octobre 2023** |
-|Surface Book 2| 256 Go/Intel i5/8 Go de RAM | Aucun | **16 novembre 2022** |
-|Surface Go| 128 Go/Intel 4415Y/8 Go de RAM | Aucun | **2 août 2023** |
-|Ordinateur portable de surface| 256 Go/Intel i5/8 Go de RAM | Aucun | **20 mai 2022** |
-|Surface Pro| 256 Go/Intel i5/8 Go de RAM | Aucun | **15 juin 2022** |
+|HP ProBook x360 440 G1| 128 Go/Intel i3/8 Go de RAM | SKU avec 5VS04AV, appareil photo infrarouge ou lecteur d’empreintes digitales requis | **6 juin 2023** |
+|Surface Book 2| 256 Go/Intel i5/8 Go de RAM | Aucune | **16 novembre 2022** |
+|Surface Go| 128 Go/Intel 4415Y/8 Go de RAM | Aucune | **2 août 2023** |
+|Ordinateur portable de surface| 256 Go/Intel i5/8 Go de RAM | Aucune | **20 mai 2022** |
+|Surface Pro| 256 Go/Intel i5/8 Go de RAM | Aucune | **15 juin 2022** |
 
 
 En outre, l’appareil doit également :

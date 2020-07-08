@@ -28,12 +28,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Découvrez Microsoft 365 for Business, comment le configurer et comment préparer les appareils et les ordinateurs de vos utilisateurs pour vous assurer qu’ils sont protégés par Microsoft 365 pour les entreprises.
-ms.openlocfilehash: 08a956cc7e68bbba74d29bafaab77065be1321ce
-ms.sourcegitcommit: 3ddcf08e8deec087df1fe524147313f1cb12a26d
+ms.openlocfilehash: aedcf78f10707dbe6a1d1527effea7d56283dce0
+ms.sourcegitcommit: 5b769f74bcc76ac8d38aad815d1728824783cd9f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "45022114"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "45080040"
 ---
 # <a name="get-started-with-microsoft-365-for-business"></a>Prise en main de Microsoft 365 pour les entreprises
 
@@ -80,9 +80,9 @@ Connectez-vous au [Centre d’administration microsoft 365](https://portal.offic
     
     Si vous êtes en **déplacement permanent d’un annuaire Active Directory local vers le Cloud**, vous pouvez accéder au centre d’administration Microsoft 365 et utiliser l’Assistant Installation pour ajouter vos utilisateurs manuellement ou effectuer une synchronisation unique avec Azure ad Connect. Vous pouvez procéder de deux manières : 
     
-    - Si vous disposez également d’un serveur Exchange 2010, Exchange 2013 ou Exchange 2016, vous pouvez [utiliser un environnement hybride minimal pour migrer rapidement des boîtes aux lettres Exchange vers Office 365](https://docs.microsoft.com/Exchange/mailbox-migration/use-minimal-hybrid-to-quickly-migrate). Les étapes hybrides minimales incluent une synchronisation unique des utilisateurs vers Azure AD et la migration de la messagerie électronique sur site vers le Cloud. Une fois la migration de la messagerie terminée, la synchronisation d’annuaires est automatiquement désactivée lorsque vous utilisez cette méthode.
+    - Si vous disposez également d’un serveur Exchange 2010, Exchange 2013 ou Exchange 2016, vous pouvez [utiliser un environnement hybride minimal pour migrer rapidement des boîtes aux lettres Exchange vers Microsoft 365](https://docs.microsoft.com/Exchange/mailbox-migration/use-minimal-hybrid-to-quickly-migrate). Les étapes hybrides minimales incluent une synchronisation unique des utilisateurs vers Azure AD et la migration de la messagerie électronique sur site vers le Cloud. Une fois la migration de la messagerie terminée, la synchronisation d’annuaires est automatiquement désactivée lorsque vous utilisez cette méthode.
     
-    - Utilisez l’Assistant synchronisation d’annuaires pour synchroniser vos utilisateurs avec le Cloud. Suivez les étapes de la procédure de configuration de la [synchronisation d’annuaires pour Microsoft 365](https://docs.microsoft.com/office365/enterprise/set-up-directory-synchronization) pour effectuer ce processus. Après avoir synchronisé vos utilisateurs sur le Cloud, vous devez désactiver la [synchronisation d’annuaires pour Office 365](https://docs.microsoft.com/office365/enterprise/turn-off-directory-synchronization).
+    - Utilisez l’Assistant synchronisation d’annuaires pour synchroniser vos utilisateurs avec le Cloud. Suivez les étapes de la procédure de configuration de la [synchronisation d’annuaires pour Microsoft 365](https://docs.microsoft.com/office365/enterprise/set-up-directory-synchronization) pour effectuer ce processus. Après avoir synchronisé vos utilisateurs sur le Cloud, vous devez désactiver la [synchronisation d’annuaires pour Microsoft 365](https://docs.microsoft.com/office365/enterprise/turn-off-directory-synchronization).
     
     Vous devrez également donner à chaque utilisateur qui a été ajouté de cette manière une licence Microsoft 365 pour les entreprises. Vous pouvez effectuer cette opération dans l' [Assistant Installation](set-up.md) ou vous pouvez [attribuer des licences aux utilisateurs](../admin/manage/assign-licenses-to-users.md).
     

@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: 0b0bd900-68b1-4bf5-808b-5d240a7739f4
 description: 'Découvrez comment vous pouvez avoir plusieurs adresses de messagerie, appelées alias de messagerie, associées à votre compte Microsoft 365 pour les entreprises. '
-ms.openlocfilehash: c0e71ef150ccf592ea4f808a5e6609e1675767a4
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+ms.openlocfilehash: 030d8022a8503f6b383d03b0dd97720f66d8f2f6
+ms.sourcegitcommit: 5b769f74bcc76ac8d38aad815d1728824783cd9f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44780288"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "45080014"
 ---
 # <a name="add-another-email-alias-for-a-user"></a>Ajouter un autre alias de courrier pour un utilisateur
 
@@ -59,7 +59,7 @@ Pour ce faire, vous devez disposer des [autorisations d’administrateur](../add
   
 ::: moniker range="o365-worldwide"
 
-1. Dans le Centre d’administration, accédez à la page **Utilisateurs >** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utilisateurs actifs</a>.
+1. Dans le Centre d’administration, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utilisateurs actifs</a>.
 
 2. Sur la page **utilisateurs actifs** , sélectionnez l’utilisateur > **gérer les alias de messagerie**. Cette option ne s’affiche pas si la personne ne dispose pas d’une licence. 
     
@@ -73,12 +73,12 @@ Pour ce faire, vous devez disposer des [autorisations d’administrateur](../add
     > Si vous achetez votre abonnement auprès de GoDaddy ou d'un autre partenaire, vous devez accéder à la console de gestion de GoDaddy ou du partenaire pour définir le nouvel alias comme alias principal. 
   
     > [!TIP]
-    > L'alias de courrier doit se terminer par un domaine figurant dans la liste déroulante. Pour ajouter un autre nom de domaine à la liste, reportez-vous à la rubrique [Ajouter un domaine à Office 365](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain). 
+    > L'alias de courrier doit se terminer par un domaine figurant dans la liste déroulante. Pour ajouter un autre nom de domaine à la liste, reportez-vous à la rubrique [Ajouter un domaine à Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain). 
   
      
 5. Lorsque vous avez fini, choisissez **enregistrer les modifications**.
     
-6. Patientez 24 heures pour que les nouveaux alias soient renseignés dans Office 365.
+6. Patientez 24 heures pour que les nouveaux alias soient renseignés dans Microsoft 365.
     
     L’utilisateur dispose désormais d’une adresse principale et d’un alias. Par exemple, tous les messages envoyés à l’adresse principale de Eliza Hoffman, Eliza@NodPublishers.com, et son alias, Sales@NodPublishers.com, sont redirigés vers la boîte de réception de Eliza.
     
@@ -89,7 +89,7 @@ Pour ce faire, vous devez disposer des [autorisations d’administrateur](../add
 
 ::: moniker range="o365-germany"
     
-1. Dans le Centre d’administration, accédez à la page **Utilisateurs >** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Utilisateurs actifs</a>. 
+1. Dans le Centre d’administration, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Utilisateurs actifs</a>. 
     
     
 2. Dans la page **Utilisateurs actifs**, sélectionnez le nom de la personne à modifier.
@@ -99,17 +99,17 @@ Pour ce faire, vous devez disposer des [autorisations d’administrateur](../add
     > [!Important] 
     > Si vous obtenez le message d’erreur «**Impossible de trouver un paramètre correspondant au nom de paramètre «EmailAddresses**», cela signifie qu’il prend un peu plus de temps pour terminer la configuration de votre client ou votre domaine personnalisé si vous en avez récemment ajouté un. Le processus de configuration peut prendre jusqu'à 4 heures. Patientez le temps que le processus de configuration ait le temps de terminer, puis réessayez. Si le problème persiste, appelez le support technique qui se chargera d'effectuer une synchronisation complète pour vous.
 
-4. Dans la zone de texte sous **alias**, tapez la première partie du nouvel alias de messagerie. Si vous avez ajouté votre domaine à Office 365, vous pouvez choisir le domaine du nouvel alias d'e-mail dans la liste déroulante. Puis sélectionnez **Ajouter**.
+4. Dans la zone de texte sous **alias**, tapez la première partie du nouvel alias de messagerie. Si vous avez ajouté votre propre domaine à Microsoft 365, vous pouvez choisir le domaine du nouvel alias de messagerie dans la liste déroulante. Puis sélectionnez **Ajouter**.
 
     > [!IMPORTANT]
     > Si vous achetez votre abonnement auprès de GoDaddy ou d'un autre partenaire, vous devez accéder à la console de gestion de GoDaddy ou du partenaire pour définir le nouvel alias comme alias principal. 
   
     > [!TIP]
-    > L'alias de courrier doit se terminer par un domaine figurant dans la liste déroulante. Pour ajouter un autre nom de domaine à la liste, reportez-vous à la rubrique [Ajouter un domaine à Office 365](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain). 
+    > L'alias de courrier doit se terminer par un domaine figurant dans la liste déroulante. Pour ajouter un autre nom de domaine à la liste, reportez-vous à la rubrique [Ajouter un domaine à Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain). 
 
-5. Lorsque vous avez fini, sélectionnez **Enregistrer**.
+5. Lorsque vous avez terminé, sélectionnez **Enregistrer**.
 
-6. Patientez 24 heures pour que les nouveaux alias soient renseignés dans Office 365. 
+6. Patientez 24 heures pour que les nouveaux alias soient renseignés dans Microsoft 365. 
     
     L’utilisateur dispose désormais d’une adresse principale et d’un alias. Par exemple, tous les messages envoyés à l’adresse principale de Eliza Hoffman, Eliza@NodPublishers.com, et son alias, Sales@NodPublishers.com, sont redirigés vers la boîte de réception de Eliza.
     
@@ -120,7 +120,7 @@ Pour ce faire, vous devez disposer des [autorisations d’administrateur](../add
 
 ::: moniker range="o365-21vianet"
 
-1. Dans le Centre d’administration, accédez à la page **Utilisateurs >** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Utilisateurs actifs</a>. 
+1. Dans le Centre d’administration, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Utilisateurs actifs</a>. 
 
     
 2. Dans la page **Utilisateurs actifs**, sélectionnez le nom de la personne à modifier.
@@ -130,17 +130,17 @@ Pour ce faire, vous devez disposer des [autorisations d’administrateur](../add
     > [!Important] 
     > Si vous obtenez le message d’erreur «**Impossible de trouver un paramètre correspondant au nom de paramètre «EmailAddresses**», cela signifie qu’il prend un peu plus de temps pour terminer la configuration de votre client ou votre domaine personnalisé si vous en avez récemment ajouté un. Le processus de configuration peut prendre jusqu'à 4 heures. Patientez le temps que le processus de configuration ait le temps de terminer, puis réessayez. Si le problème persiste, appelez le support technique qui se chargera d'effectuer une synchronisation complète pour vous.
 
-4. Dans la zone de texte sous **alias**, tapez la première partie du nouvel alias de messagerie. Si vous avez ajouté votre domaine à Office 365, vous pouvez choisir le domaine du nouvel alias d'e-mail dans la liste déroulante. Puis sélectionnez **Ajouter**.
+4. Dans la zone de texte sous **alias**, tapez la première partie du nouvel alias de messagerie. Si vous avez ajouté votre propre domaine à Microsoft 365, vous pouvez choisir le domaine du nouvel alias de messagerie dans la liste déroulante. Puis sélectionnez **Ajouter**.
 
     > [!IMPORTANT]
     > Si vous achetez votre abonnement auprès de GoDaddy ou d'un autre partenaire, vous devez accéder à la console de gestion de GoDaddy ou du partenaire pour définir le nouvel alias comme alias principal. 
   
     > [!TIP]
-    > L'alias de courrier doit se terminer par un domaine figurant dans la liste déroulante. Pour ajouter un autre nom de domaine à la liste, reportez-vous à la rubrique [Ajouter un domaine à Office 365](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain). 
+    > L'alias de courrier doit se terminer par un domaine figurant dans la liste déroulante. Pour ajouter un autre nom de domaine à la liste, reportez-vous à la rubrique [Ajouter un domaine à Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain). 
 
-5. Lorsque vous avez fini, sélectionnez **Enregistrer**.
+5. Lorsque vous avez terminé, sélectionnez **Enregistrer**.
 
-6. Patientez 24 heures pour que les nouveaux alias soient renseignés dans Office 365. 
+6. Patientez 24 heures pour que les nouveaux alias soient renseignés dans Microsoft 365. 
     
     L’utilisateur dispose désormais d’une adresse principale et d’un alias. Par exemple, tous les messages envoyés à l’adresse principale de Eliza Hoffman, Eliza@NodPublishers.com, et son alias, Sales@NodPublishers.com, sont redirigés vers la boîte de réception de Eliza.
     

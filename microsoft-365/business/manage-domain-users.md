@@ -23,18 +23,18 @@ search.appverid:
 - MET150
 - MOE150
 description: Synchroniser les utilisateurs contrôlés par le domaine avec Microsoft 365 pour les entreprises.
-ms.openlocfilehash: a22e567fa99456b35742fcf40c07193c96c83cf0
-ms.sourcegitcommit: e6e704cbd9a50fc7db1e6a0cf5d3f8c6cbb94363
+ms.openlocfilehash: af9cb7c9b2b639edc2375679a73ab41c4cf6de71
+ms.sourcegitcommit: 5b769f74bcc76ac8d38aad815d1728824783cd9f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "44565686"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "45080058"
 ---
 # <a name="synchronize-domain-users-to-microsoft-365"></a>Synchroniser les utilisateurs de domaine avec Microsoft 365
 
 ## <a name="1-prepare-for-directory-synchronization"></a>1. préparer la synchronisation d’annuaires 
 
-Avant de synchroniser vos utilisateurs et ordinateurs à partir du domaine Active Directory local, consultez la [préparation de la synchronisation d’annuaires vers Office 365](https://docs.microsoft.com/office365/enterprise/prepare-for-directory-synchronization). En particulier :
+Avant de synchroniser vos utilisateurs et ordinateurs à partir du domaine Active Directory local, consultez la [préparation de la synchronisation d’annuaires avec Microsoft 365](https://docs.microsoft.com/office365/enterprise/prepare-for-directory-synchronization). En particulier :
 
    - Assurez-vous qu’il n’existe pas de doublons dans votre répertoire pour les attributs suivants : **mail**, **proxyAddresses**et **userPrincipalName**. Ces valeurs doivent être uniques et les doublons doivent être supprimés.
    
@@ -59,7 +59,7 @@ Pour synchroniser vos utilisateurs, groupes et contacts à partir de l’Active 
  5. Suivez les étapes de l’Assistant pour télécharger Azure AD Connect et utilisez-le pour synchroniser vos utilisateurs sous contrôle de domaine avec Microsoft 365.
 
 
-Pour plus d’informations, consultez la rubrique [configurer la synchronisation d’annuaires pour Office 365](https://docs.microsoft.com/office365/enterprise/set-up-directory-synchronization) .
+Pour plus d’informations, reportez-vous à la rubrique [configurer la synchronisation d’annuaires pour Microsoft 365](https://docs.microsoft.com/office365/enterprise/set-up-directory-synchronization) .
 
 Lorsque vous configurez vos options pour Azure AD Connect, nous vous recommandons d’activer la **synchronisation de mot de passe**, l' **authentification unique transparente**et la fonctionnalité d' **écriture différée de mot de passe** , qui est également prise en charge dans Microsoft 365 pour les entreprises.
 
