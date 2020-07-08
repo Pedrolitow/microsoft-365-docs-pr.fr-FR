@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Cette rubrique explique comment configurer votre flux de processus métier pour automatiser la rétention via des événements à l’aide de l’API REST de Microsoft 365.
-ms.openlocfilehash: 15d2dd8417cf0a22b8db63f64c0bbb288e74880c
-ms.sourcegitcommit: 11218af1d792af297b4280ca5975d139d2bbe350
+ms.openlocfilehash: c97106597733460caeab8d1d398ff81e23dd2727
+ms.sourcegitcommit: dc5de2064706137256307f100b8dc61e9797bd1c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2020
-ms.locfileid: "45046062"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "45068113"
 ---
 # <a name="automate-event-based-retention"></a>Rétention basée sur des événements
 
@@ -159,10 +159,10 @@ Un processus automatisé associé au déclenchement de ces différentes horloges
 
 ##### <a name="create-an-event"></a>Créer un événement
 
-Utilisation du code d’exemple pour appeler des API REST
+Utilisation du code d’exemple pour appeler des API REST :
 
 - **Method** : PUBLIER
-- **URL** :https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent
+- **URL** :`https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent`
 - **Headers** : Clé = Type de contenu, Valeur = application/atom+xml
 - **Body** :
     
@@ -298,7 +298,7 @@ Utilisation du code d’exemple pour appeler des API REST
 | 401               | Autorisation échouée                                 |
 | 403               | Message d’échec d’authentification                                |
 
-#### <a name="using-powershell-ver6-or-higher-or-any-http-client"></a>L’aide de PowerShell (ver.6 ou une version ultérieure) ou n’importe quel client HTTP
+#### <a name="using-powershell-version-6-or-later-or-any-http-client"></a>Utilisation de PowerShell (version 6 ou une version ultérieure) ou n’importe quel client HTTP
 
 Étape 1: Connectez-vous à PowerShell.
 
@@ -452,7 +452,9 @@ Un système de planification (ERP) peut fonctionner avec Microsoft 365 et Micros
 
 ### <a name="using-redirect-302-response-results-to-call-the-rest-api"></a>Utiliser les résultats de réponses 302 de redirection pour appeler des API REST
 
-1. Appeler un appel d’événement de rétention POST à l’aide de l’URL API REST <https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent> (les autorisations d’administrateur général sont obligatoires).
+1. Appeler un appel d’événement de rétention POST à l’aide de l’URL API REST : `https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent`
+    
+    Les autorisations d'administrateur global sont requises.
 
 2. Vérifiez le code de réponse. S’il s’agit 302, puis obtenez l’URL redirigé de propriété de l’emplacement de l’en-tête de réponse.
 
