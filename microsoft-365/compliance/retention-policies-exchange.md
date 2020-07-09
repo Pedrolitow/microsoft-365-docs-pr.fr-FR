@@ -17,21 +17,24 @@ search.appverid:
 - MOE150
 - MET150
 description: Découvrez le comportement de rétention qui s’applique spécifiquement à la messagerie électronique et aux dossiers publics Exchange.
-ms.openlocfilehash: aa4142db2114b2b58cc391429f1389c6b9fad52d
-ms.sourcegitcommit: 7c1b34205746ff0690ffc774a74bdfd434256cf5
+ms.openlocfilehash: 57f0bf7737522b0435b076fee46edd1736efd856
+ms.sourcegitcommit: 5b769f74bcc76ac8d38aad815d1728824783cd9f
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "45049892"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "45080091"
 ---
 # <a name="learn-about-retention-policies-for-exchange"></a>Découvrir les stratégies de rétention pour Exchange
 
 Les informations contenues dans cet article complètent l’article [Découvrir les stratégies de rétention](retention-policies.md) car elles contiennent des informations spécifiques à Exchange.
 
-## <a name="how-a-retention-policy-works-with-exchange-locations"></a>Fonctionnement d’une stratégie de rétention avec les emplacements Exchange
+## <a name="how-a-retention-policy-works-with-exchange"></a>Fonctionnement d’une stratégie de rétention avec Exchange
 
-Pour la messagerie, le calendrier et les autres éléments de l’utilisateur, une stratégie de rétention est appliquée au niveau de la boîte aux lettres.
+Pour le courrier, le calendrier et d’autres éléments de boîte aux lettres d’un utilisateur, une stratégie de rétention est appliquée au niveau d’une boîte aux lettres.
 
-Pour un dossier public, une stratégie de rétention est appliquée au niveau du dossier, et non au niveau de la boîte aux lettres. 
+Pour les dossiers publics, une stratégie de rétention est appliquée à tous les dossiers publics et non au niveau du dossier ou de la boîte aux lettres.
+
+Lorsque vous configurez une stratégie de rétention pour ces emplacements, les éléments de courrier suivants sont inclus : les messages (y compris les brouillons) avec des pièces jointes, des tâches et des éléments de calendrier lorsqu’ils ont une date de fin et des notes. Les contacts et les tâches et les éléments de calendrier qui n’ont pas de date de fin ne sont pas inclus. Les autres éléments stockés dans une boîte aux lettres, tels que Skype et Teams, ont été inclus dans leur propre stratégie de rétention.
 
 Les boîtes aux lettres et les dossiers publics utilisent le même dossier [Éléments récupérables ](https://docs.microsoft.com/exchange/security-and-compliance/recoverable-items-folder/recoverable-items-folder)pour conserver des éléments. Seules les personnes disposant des autorisations eDiscovery peuvent afficher le dossier Éléments récupérables d’un autre utilisateur.
   
