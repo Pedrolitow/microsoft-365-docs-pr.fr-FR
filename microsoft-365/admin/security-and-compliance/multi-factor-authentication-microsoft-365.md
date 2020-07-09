@@ -21,12 +21,12 @@ search.appverid:
 ms.assetid: 043807b2-21db-4d5c-b430-c8a6dee0e6ba
 ROBOTS: NOINDEX, NOFOLLOW
 description: Découvrez l’authentification multifacteur dans Microsoft 365.
-ms.openlocfilehash: e8ba304d145ca7227eea074556ff6efccd751ecf
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 71a61c51d2813880cad782d132679fa413ada987
+ms.sourcegitcommit: 3951147f74510e2ead6c11ceab92854f0937426b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399145"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "45083585"
 ---
 # <a name="multi-factor-authentication-for-microsoft-365"></a>Multi-Factor Authentication pour Microsoft 365
 
@@ -75,7 +75,7 @@ Les paramètres de sécurité par défaut garantissent que toutes les organisati
 
 Vous activez ou désactivez les paramètres de sécurité par défaut dans le volet des **Propriétés** pour Azure ad dans le portail Azure.
 
-![](../../media/multi-factor-authentication-microsoft-365/security-defaults-mfa.png)
+![Image de la page de propriétés du répertoire.](../../media/multi-factor-authentication-microsoft-365/security-defaults-mfa.png)
 
 Vous pouvez utiliser les paramètres de sécurité par défaut avec n’importe quel plan Microsoft 365.
 
@@ -93,12 +93,12 @@ Vous pouvez également utiliser des stratégies d’accès conditionnel pour des
 
 Vous configurez les stratégies d’accès conditionnel à partir du volet de **sécurité** pour Azure ad dans le portail Azure.
 
-![](../../media/multi-factor-authentication-microsoft-365/conditional-access-mfa.png)
+![Picure de l’option de menu pour l’accès conditionnel](../../media/multi-factor-authentication-microsoft-365/conditional-access-mfa.png)
 
 Vous pouvez utiliser des stratégies d’accès conditionnel avec :
 
 - Microsoft 365 Business Premium
-- Microsoft 365 E3 et E5
+- Microsoft 365 E3 et E5
 - Licences Azure AD Premium P1 et Azure AD Premium P2 
 
 Pour les petites entreprises avec Microsoft 365 Business Premium, vous pouvez facilement utiliser des stratégies d’accès conditionnel en procédant comme suit :
@@ -140,7 +140,7 @@ Vous devez utiliser des paramètres de sécurité par défaut ou des stratégies
 
 Vous activez l’authentification multifacteur pour des comptes d’utilisateur individuels à partir du volet **utilisateur actif** du centre d’administration 365 de Microsoft.
 
-![](../../media/multi-factor-authentication-microsoft-365/per-user-mfa.png)
+![Image de l’option d’authentification multifacteur sur la page utilisateurs actifs](../../media/multi-factor-authentication-microsoft-365/per-user-mfa.png)
 
 Après avoir été activé, la prochaine fois que l’utilisateur se connecte, il est invité à s’inscrire pour l’authentification multifacteur (MFA) et à choisir et tester la méthode de vérification supplémentaire.
 

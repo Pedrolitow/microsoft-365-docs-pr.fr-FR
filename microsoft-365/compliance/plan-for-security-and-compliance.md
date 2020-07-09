@@ -1,5 +1,5 @@
 ---
-title: Planifier la conformité &amp; de la sécurité
+title: Planifier &amp; la conformité de la sécurité
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -17,14 +17,14 @@ ms.assetid: dc4f704c-6fcc-4cab-9a02-95a824e4fb57
 description: Cette page d’accueil fournit des liens et des informations de planification pour la sécurité et la conformité dans Office 365.
 ms.collection: M365-security-compliance
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b0f3bb6499de2ddd6fb613834b98e46d453d739a
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: e4eae4dddb90983b811e0856a09dae79af83d226
+ms.sourcegitcommit: 41bc923bb31598cea8f02923792c1cd786e39616
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034894"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "45086655"
 ---
-# <a name="plan-for-security-amp-compliance"></a>Planifier la conformité &amp; de la sécurité
+# <a name="plan-for-security-amp-compliance"></a>Planifier &amp; la conformité de la sécurité
 
 La gestion de la sécurité et de la conformité est un partenariat. Vous êtes responsable de la protection de vos données, des identités et des appareils, tandis que Microsoft protège les services Microsoft 365. Vous pouvez utiliser Microsoft 365 et Enterprise Mobility + Security (EMS) ensemble pour vous aider à atteindre le niveau de protection approprié pour votre organisation.
   
@@ -32,7 +32,7 @@ La gestion de la sécurité et de la conformité est un partenariat. Vous êtes 
 
 Familiarisez-vous avec les fonctionnalités de protection des informations de l’affiche sur la protection des informations pour Office 365. 
   
-[PDF](https://download.microsoft.com/download/2/3/D/23D91386-8349-4F7A-9470-FD5AED861F16/MSFT_cloud_architecture_informationprotection.pdf) | [Visio](https://download.microsoft.com/download/2/3/D/23D91386-8349-4F7A-9470-FD5AED861F16/MSFT_cloud_architecture_informationprotection.vsd)
+[Déployer la protection des informations pour les réglementations sur la confidentialité des données avec Microsoft 365](https://docs.microsoft.com/microsoft-365/solutions/information-protection-deploy?view=o365-worldwide)
   
 ## <a name="step-2-check-your-secure-score"></a>Étape 2 : vérifier votre score de sécurité
 
@@ -58,11 +58,11 @@ Passez en revue et planifiez les fonctionnalités de protection des fichiers org
   
 ## <a name="step-5-leverage-the-microsoft-365-security-amp-compliance-center"></a>Étape 5 : tirer parti du centre de sécurité &amp; conformité Microsoft 365
 
-Le centre &amp; de sécurité conformité offre une vue unique des contrôles que vous allez utiliser pour gérer le spectre de la sécurité Microsoft 365, notamment la gestion des menaces, la gouvernance des données et la recherche et l’enquête. 
+Le &amp; Centre de sécurité conformité offre une vue unique des contrôles que vous allez utiliser pour gérer le spectre de la sécurité Microsoft 365, notamment la gestion des menaces, la gouvernance des données et la recherche et l’enquête. 
   
-- [Accédez au centre de &amp; sécurité conformité](go-to-the-securitycompliance-center.md)
+- [Accédez au centre de sécurité &amp; conformité](go-to-the-securitycompliance-center.md)
     
-- [Autorisations dans le centre &amp; de sécurité conformité](~/security/office-365-security/protect-against-threats.md)
+- [Autorisations dans le centre de sécurité &amp; conformité](~/security/office-365-security/protect-against-threats.md)
     
 - [Donner aux utilisateurs l’accès au &amp; Centre de sécurité conformité](~/security/office-365-security/grant-access-to-the-security-and-compliance-center.md)
     

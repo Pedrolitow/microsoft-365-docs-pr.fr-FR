@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
-ms.date: 04/13/2020
+ms.date: 07/08/2020
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -18,28 +18,33 @@ ms.collection:
 - M365-security-compliance
 description: Intégrer Office 365 Advanced Threat Protection avec Microsoft Defender Advanced Threat Protection pour consulter des informations plus détaillées sur la gestion des menaces.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 1574def6959bf63f061ff35bae71aed9657de436
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: bfb87edd24a22033b3771ba0fd3c4f1afbbc988e
+ms.sourcegitcommit: 41bc923bb31598cea8f02923792c1cd786e39616
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44036364"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "45086707"
 ---
 # <a name="integrate-office-365-advanced-threat-protection-with-microsoft-defender-advanced-threat-protection"></a>Intégrer Office 365 Advanced Threat Protection avec Microsoft Defender Advanced Threat Protection
 
-Si vous êtes membre de l’équipe de sécurité de votre organisation, vous pouvez intégrer [Office 365 Advanced Threat Protection](office-365-atp.md) et les fonctionnalités d’enquête et de réponse associées avec [Microsoft Defender Advanced Threat Protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection). Cela peut vous aider à comprendre rapidement si les ordinateurs des utilisateurs sont exposés lorsque vous étudiez les menaces dans Office 365. Par exemple, une fois l’intégration activée, vous pouvez voir la liste des ordinateurs utilisés par les destinataires d’un message électronique détecté, ainsi que le nombre d’alertes récentes de la protection avancée contre les menaces de Microsoft Defender.
-  
-L’image suivante montre l’onglet **appareils** qui apparaît lorsque l’intégration de Microsoft Defender ATP est activée :
+[Office 365 Advanced Threat Protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp?view=o365-worldwide) (Office 365 ATP) peut être configuré pour fonctionner avec [Microsoft Defender Advanced Threat Protection](https://docs.microsoft.com/windows/security/threat-protection) (Microsoft Defender ATP).
+
+L’intégration de la fonctionnalité ATP Office 365 à Microsoft Defender ATP peut aider votre surveillance d’équipe en matière de sécurité et prendre des mesures rapidement si les appareils des utilisateurs sont menacés. Par exemple, une fois l’intégration activée, votre équipe d’opérations de sécurité pourra voir les appareils potentiellement affectés par un message électronique détecté, ainsi que le nombre d’alertes récentes que ces appareils ont dans Microsoft Defender ATP. 
+
+L’image suivante montre l’apparence de l’onglet **appareils** comme l’activation de l’intégration de Microsoft Defender ATP :
   
 ![Lorsque l’ATP Microsoft Defender est activé, vous pouvez voir une liste des périphériques avec des alertes.](../../media/fec928ea-8f0c-44d7-80b9-a2e0a8cd4e89.PNG)
   
-Dans cet exemple, vous pouvez voir que les destinataires du message électronique ont quatre appareils et que l’un d’entre eux comporte une alerte. Si vous cliquez sur le lien d’un appareil, celui-ci s’ouvre dans le centre de sécurité Microsoft Defender.
+Dans cet exemple, vous pouvez voir que les destinataires du message électronique détecté ont quatre appareils et que l’un d’entre eux comporte une alerte. Si vous cliquez sur le lien d’un appareil, celui-ci s’ouvre dans le centre de sécurité Microsoft Defender ( [https://securitycenter.windows.com](https://securitycenter.windows.com) ).
+
+> [!TIP]
+> **[En savoir plus sur le centre de sécurité Microsoft Defender](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/use)** (également appelé portail Microsoft Defender ATP).
   
 ## <a name="requirements"></a>Configuration requise
 
 - Votre organisation doit disposer d’Office 365 ATP plan 2 (ou Office 365 E5) et de Microsoft Defender ATP.
     
-- Vous devez être un administrateur général ou disposer d’un rôle d’administrateur de sécurité (tel que administrateur de sécurité) affecté dans le [Centre de sécurité &amp; ](https://protection.office.com)et de conformité. (Voir [Permissions in &amp; the Security Compliance Center](permissions-in-the-security-and-compliance-center.md))
+- Vous devez être un administrateur général ou disposer d’un rôle d’administrateur de sécurité (tel que administrateur de sécurité) affecté dans le [ &amp; Centre de sécurité](https://protection.office.com)et de conformité. (Voir [Permissions in the Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md))
     
 - Vous devez avoir accès à l' [Explorateur (ou aux détections en temps réel)](threat-explorer.md) dans le centre de sécurité & conformité et au centre de sécurité Microsoft Defender.
     
@@ -47,20 +52,24 @@ Dans cet exemple, vous pouvez voir que les destinataires du message électroniqu
 
 L’intégration de la fonctionnalité ATP Office 365 à Microsoft Defender ATP est configurée à l’aide du centre de sécurité & de la sécurité et du centre de sécurité Microsoft Defender.
   
-1. En tant qu’administrateur général ou administrateur de la sécurité, [https://protection.office.com](https://protection.office.com) accédez à et connectez-vous avec votre compte professionnel ou scolaire.
+1. En tant qu’administrateur général ou administrateur de sécurité, accédez à [https://protection.office.com](https://protection.office.com) et connectez-vous. (Vous accédez au centre de sécurité & conformité d’Office 365.)
     
-2. Choisissez **Threat management** \> **Explorateur**de gestion des menaces.<br>![Explorateur dans le menu gestion des menaces](../../media/ThreatMgmt-Explorer-nav.png)<br>
+2. Dans le volet de navigation, sélectionnez Explorateur de **gestion des menaces**  >  **Explorer**.<br>![Explorateur dans le menu gestion des menaces](../../media/ThreatMgmt-Explorer-nav.png)<br>
     
 3. Dans le coin supérieur droit de l’écran, sélectionnez **paramètres WDATP**.
     
 4. Dans la boîte de dialogue connexion Microsoft Defender ATP, activez **connexion à Windows ATP**.<br>![Connexion ATP Microsoft Defender](../../media/Explorer-WDATPConnection-dialog.png)<br>
     
-5. Activez la connexion dans le centre de sécurité Microsoft Defender ([https://securitycenter.windows.com](https://securitycenter.windows.com)).
+5. Accédez au centre de sécurité Microsoft Defender ( [https://securitycenter.windows.com](https://securitycenter.windows.com) ).
 
-## <a name="related-topics"></a>Voir aussi
+6. Dans la barre de navigation, sélectionnez **paramètres**. Ensuite, sous **général**, choisissez **fonctionnalités avancées**.
+
+7. Faites défiler vers le bas jusqu’à **Office 365 Threat Intelligence Connection**et activez la connexion.<br/>![Connexion d’aide à la décision Office 365](../../media/mdatp-oatptoggle.png)<br>
+
+## <a name="related-articles"></a>Articles connexes
 
 [Fonctionnalités d’enquête et de réponse aux menaces dans Office 365](office-365-ti.md)
   
 [Protection avancée contre les menaces dans Office 365](office-365-atp.md)
   
-
+[Microsoft Defender - PACM](https://docs.microsoft.com/windows/security/threat-protection)

@@ -14,12 +14,12 @@ search.appverid: MET150
 description: Correction des menaces
 appliesto:
 - Microsoft Threat Protection
-ms.openlocfilehash: 6c05eac80c6de546a30f9abe29360178bcbcfcf8
-ms.sourcegitcommit: dc5de2064706137256307f100b8dc61e9797bd1c
+ms.openlocfilehash: eb86c0b8e5368a42daa1002de5ac361613037090
+ms.sourcegitcommit: 41bc923bb31598cea8f02923792c1cd786e39616
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "45068185"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "45086690"
 ---
 # <a name="remediate-malicious-email-that-was-delivered-in-office-365"></a>Correction du courrier électronique malveillant remis dans Office 365
 
@@ -77,8 +77,6 @@ Le centre de maintenance affiche toutes les actions de correction au cours des 3
 Chaque élément de correction peut être ouvert pour en afficher les détails. Lorsqu’un élément de correction est ouvert, il affiche les détails de la correction de base, le nom de la correction, la date de création, la description, la gravité des menaces et l’État. Il présente également deux onglets. 
 
 1. **Onglet envoi de courrier**: Voici le nombre de messages électroniques envoyés par le biais de l’Explorateur de menaces ou des investigations automatiques à résoudre. Ces messages électroniques peuvent être les suivants :
-
-:::image type="content" source="../../../media/tp-RemediationArticle5.png" alt-text="Le centre de notifications avec des menaces actionnables et non exploitables.":::
 
 Fonction **exploitable**: les courriers électroniques dans les emplacements de boîtes aux lettres Cloud suivants peuvent être traités et déplacés par exemple : tout courrier électronique appartenant à la catégorie pouvant être résolue peut être déplacé d’un emplacement à un autre :
   - Boîte de réception 

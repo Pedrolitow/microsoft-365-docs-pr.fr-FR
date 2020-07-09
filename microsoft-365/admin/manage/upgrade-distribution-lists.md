@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 787d7a75-e201-46f3-a242-f698162ff09f
 description: Découvrez comment mettre à niveau une ou plusieurs listes de distribution vers des groupes Microsoft 365 dans Outlook, et comment utiliser PowerShell pour mettre à niveau plusieurs listes de distribution simultanément.
-ms.openlocfilehash: f5748c293d18943c94c3610c0e3c5c33848eb521
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+ms.openlocfilehash: a1fb974be4838ebe98c2c55fe8694e89e27d636e
+ms.sourcegitcommit: 3951147f74510e2ead6c11ceab92854f0937426b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44780024"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "45083573"
 ---
 # <a name="upgrade-distribution-lists-to-microsoft-365-groups-in-outlook"></a>Mettre à niveau les listes de distribution vers des groupes Microsoft 365 dans Outlook
 
@@ -71,11 +71,15 @@ Si vous avez recours à PowerShell, il se peut que vous souhaitiez utiliser cet 
 
 Pour mettre à niveau une seule DL, exécutez la commande suivante :
 
-`Upgrade-DistributionGroup -DlIdentities \<Dl SMTP address\>`
+```PowerShell
+Upgrade-DistributionGroup -DlIdentities \<Dl SMTP address\>`
+```
 
 Par exemple, si vous souhaitez mettre à niveau une distribution de listes de distribution avec l’adresse SMTP dl1@contoso.com, exécutez la commande suivante :
 
-`Upgrade-DistributionGroup -DlIdentities dl1@contoso.com`
+```PowerShell
+Upgrade-DistributionGroup -DlIdentities dl1@contoso.com`
+```
 
 > [!NOTE]
 > Vous pouvez également mettre à niveau une seule liste de distribution vers un groupe Microsoft 365 à l’aide de l’applet de commande PowerShell [New-UnifiedGroup](https://go.microsoft.com/fwlink/?LinkID=786379)
@@ -84,9 +88,8 @@ Par exemple, si vous souhaitez mettre à niveau une distribution de listes de di
 
 Vous pouvez également transmettre plusieurs listes de distribution par lots et les mettre à niveau ensemble :
 
-```
+```PowerShell
 Upgrade-DistributionGroup -DlIdentities \<DL SMTP address1\>, \< DL SMTP address2\>,
-
 \< DL SMTP address3\>, \< DL SMTP address 4\>
 ```
 
@@ -103,7 +106,7 @@ Il existe deux façons de mettre à niveau toutes les listes de distribution él
 
 1. Obtenez les listes de distribution éligibles dans le client et mettez-les à niveau à l’aide de la commande de mise à niveau :
 
-```
+```PowerShell
 Get-EligibleDistributionGroupForMigration | Foreach-Object{
     Upgrade-DistributionGroup -DlIdentities $_.PrimarySMTPAddress
 }
@@ -111,7 +114,7 @@ Get-EligibleDistributionGroupForMigration | Foreach-Object{
 
 2. Obtenir la liste de toutes les listes de distribution et mettre à niveau uniquement les listes de distribution éligibles :
 
-```
+```PowerShell
 Get-DistributionGroup| Foreach-Object{
     Upgrade-DistributionGroup -DlIdentities $_.PrimarySMTPAddress
 }

@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 57e18d68f6f33482fec3880b56ccad52c719a6d9
-ms.sourcegitcommit: 3ddcf08e8deec087df1fe524147313f1cb12a26d
+ms.openlocfilehash: 44c9992be3fe0e6919a498fea0ee1b480a30a2bb
+ms.sourcegitcommit: 41bc923bb31598cea8f02923792c1cd786e39616
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "45023402"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "45086678"
 ---
 # <a name="microsoft-secure-score"></a>Degré de sécurisation Microsoft
 
@@ -131,7 +131,7 @@ Pour terminer l’action, vous disposez de plusieurs options :
 
 * Sélectionnez **gérer** pour accéder à l’écran de configuration et effectuer la modification. Vous obtiendrez ensuite les points que l’action vaut, visible dans le survol. Les points prennent généralement environ 24 heures à mettre à jour.
 
-* Sélectionnez **partager** pour copier le lien direct vers l’action d’amélioration ou choisissez la plateforme pour partager le lien, comme courrier électronique, Microsoft Teams, planificateur Microsoft ou ServiceNow. La sélection de ServiceNow vous permettra de créer un ticket de modification qui sera visible dans ServiceNow et le centre de sécurité Microsoft 365. Pour en savoir plus, consultez la rubrique [Microsoft 365 Security Center and ServiceNow Integration](tickets.md).
+* Sélectionnez **partager** pour copier le lien direct vers l’action d’amélioration ou choisissez la plateforme pour partager le lien, comme courrier électronique, Microsoft Teams, planificateur Microsoft ou ServiceNow. La sélection de ServiceNow vous permettra de créer un ticket de modification qui sera visible dans ServiceNow et le centre de sécurité Microsoft 365. Pour en savoir plus, consultez la rubrique [Microsoft 365 Security Center and ServiceNow Integration](tickets-security-center.md).
 
 ### <a name="choose-an-improvement-action-status"></a>Choisir un état d’action d’amélioration
 
