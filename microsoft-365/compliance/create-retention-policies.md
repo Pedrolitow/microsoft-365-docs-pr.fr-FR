@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Utiliser une stratégie de rétention vous permet de décider de façon proactive de conserver du contenu, de le supprimer (ou les deux), de conserver du contenu, puis de le supprimer ; d’appliquer une stratégie unique à l’ensemble de l’organisation ou à des emplacements ou utilisateurs spécifiques. Cela vous permet également d’appliquer une stratégie à tout le contenu ou au contenu répondant à certaines conditions.
-ms.openlocfilehash: 12b0c15186a27a1583403214a657367c1dd3b1a9
-ms.sourcegitcommit: bd5a08785b5ec320b04b02f8776e28bce5fb448f
+ms.openlocfilehash: ab6a61e0cedfd91d642823f0c459a5a1699df000
+ms.sourcegitcommit: 3951147f74510e2ead6c11ceab92854f0937426b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "44844750"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "45083616"
 ---
 # <a name="create-and-configure-retention-policies"></a>Créer et configurer des stratégies de rétention
 
@@ -52,7 +52,7 @@ Ces autorisations sont nécessaires uniquement pour créer et appliquer une stra
     
     Pour Microsoft Teams : 
     - Vous devez sélectionner l’option pour choisir des emplacements spécifiques si vous souhaitez supprimer ou conserver les messages du canal Teams ou les conversations d’équipe. Lorsque vous sélectionnez l’une de ces options comme emplacements, les autres emplacements sont automatiquement exclus car une stratégie de rétention qui inclut ces données Teams ne peut pas inclure d’autres emplacements. 
-    - Notez que pour les **messages du canal Teams**, les messages provenant des canaux standard sont inclus contrairement aux [canaux privés](https://docs.microsoft.com/microsoftteams/private-channels). Les messages provenant de canaux privés sont inclus pour les utilisateurs en tant que conversations de groupe lorsque vous sélectionnez l’emplacement **conversations Teams**.
+    - Notez que pour les **messages du canal Teams**, les messages provenant des canaux standard sont inclus contrairement aux [canaux privés](https://docs.microsoft.com/microsoftteams/private-channels). Les canaux privés ne sont actuellement pas pris en charge par les stratégies de rétention.
     
     Si vous souhaitez en savoir plus sur le choix entre une stratégie de rétention pour l’organisation ou pour des emplacements spécifiques, consultez la rubrique [Application d’une stratégie de rétention à toute une organisation ou à des emplacements spécifiques](#applying-a-retention-policy-to-an-entire-organization-or-specific-locations) sur cette page.
     
@@ -238,9 +238,11 @@ Vous devez utiliser PowerShell si vous avez besoin d’utiliser le [Verrouillage
     ![Liste des stratégies de rétention dans PowerShell](../media/retention-policy-preservation-lock-get-retentioncompliancepolicy.PNG)
     
 3. Enfin, pour placer un Verrouillage de Conservation sur la stratégie de rétention, exécutez `Set-RetentionCompliancePolicy` avec le paramètre `RestrictiveRetention` défini sur true. Par exemple :
-    
-        Set-RetentionCompliancePolicy -Identity "<Name of Policy>" – RestrictiveRetention $true
-    
+
+   ```powershell
+   Set-RetentionCompliancePolicy -Identity "<Name of Policy>" – RestrictiveRetention $true
+   ```
+   
     ![Paramètre RestrictiveRetention dans PowerShell](../media/retention-policy-preservation-lock-restrictiveretention.PNG)
     
     Une fois ce cmdlet exécuté, sélectionnez **Oui pour tout** :

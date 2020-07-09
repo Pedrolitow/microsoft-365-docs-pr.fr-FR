@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Découvrir les stratégies de rétention qui s’appliquent à Microsoft Teams.
-ms.openlocfilehash: cf689ec8a0c41528ab97e1ff588a4a50944b8f4e
-ms.sourcegitcommit: 5b769f74bcc76ac8d38aad815d1728824783cd9f
+ms.openlocfilehash: 8e163aa9f5072e0b2685521fcae37f130d132473
+ms.sourcegitcommit: 3951147f74510e2ead6c11ceab92854f0937426b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 07/08/2020
-ms.locfileid: "45080069"
+ms.locfileid: "45083492"
 ---
 # <a name="learn-about-retention-policies-for-microsoft-teams"></a>Découvrir les stratégies de rétention pour Microsoft Teams
 
@@ -121,7 +121,7 @@ Nous travaillons sans cesse afin d’optimiser les fonctionnalités de rétentio
 
 - **Teams ne prend pas en charge les rétentions avancées**. Lorsque vous créez une stratégie de rétention, si vous choisissez les [Paramètres avancés permettant d’identifier du contenu qui répond à certaines conditions](create-retention-policies.md#advanced-settings-to-identify-content-that-meets-specific-conditions), les emplacements Teams ne sont pas disponibles. Pour le moment, la rétention dans Teams s’applique à l’ensemble du contenu des conversations et des messages de canal lorsque vous sélectionnez ces emplacements.
 
-- **Les messages Teams dans les canaux privés ne sont pas inclus lorsque vous configurez une stratégie de rétention pour les messages de canal Teams**. En effet, les messages provenant des canaux privés sont inclus pour les utilisateurs en tant que conversations de groupe avec l’option **conversations Teams**. 
+- **Les messages Teams dans les canaux privés ne sont pas inclus lorsque vous configurez une stratégie de rétention pour les messages de canal Teams**. Les canaux privés ne sont actuellement pas pris en charge par les stratégies de rétention. 
 
 - **Un délai de sept jours peut être nécessaire pour nettoyer les messages arrivés à expiration**. Une stratégie de rétention appliquée à Teams supprimera les conversations et les messages de canal à l’expiration de la période de rétention. Toutefois, la suppression de ces messages et la suppression définitive de ces messages peuvent prendre entre trois et sept jours. De plus, les conversations et les messages de canal pourront faire l’objet d’une recherche avec les outils eDiscovery entre le moment qui suit l’expiration de la période de rétention et celui où les messages sont supprimés définitivement.
     

@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Éléments à prendre en compte lors du développement de votre plan de continuité d’activité de l’entreprise dans le Cloud.
-ms.openlocfilehash: f8518a96461d33093b9d736f890f6166dc6b3c97
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 35aa5fb74b8281a089ef0b58998cd297507cc46f
+ms.sourcegitcommit: 3951147f74510e2ead6c11ceab92854f0937426b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601091"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "45083519"
 ---
 # <a name="developing-your-continuity-plan"></a>Développement de votre plan de continuité
 
@@ -80,6 +80,8 @@ Voici un exemple d’analyse de dépendances (DA) à partir duquel vous pouvez c
 
 Une fois que vous avez répertorié vos processus d’entreprise et établi des relations avec d’autres processus et technologies, vous devez élaborer des scénarios de validation pour tous les processus. Pour résumer, vous devez déterminer comment vous devez valider vos plans de continuité des processus d’entreprise. Vous constaterez probablement que certains sont plus importants que d’autres et vous voudrez établir des priorités.
 N’oubliez pas que la formation régulière des employés sur les mesures d’intervention en cas d’incident et sur les mesures de continuité est importante une fois que le plan est établi. Les révisions post-incidents devraient être effectuées pour améliorer vos stratégies de résilience en incorporant ce que vous avez appris de chaque validation ou test.
+
+![visio de validation de la fonctionnalité](../media/ebcm/capability-validation-visio.png)
 
 ## <a name="incident-coordination-and-communication"></a>Coordination et communication des incidents
 
