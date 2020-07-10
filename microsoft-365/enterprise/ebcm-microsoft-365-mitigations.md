@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Voici quelques exemples d’atténuation pour les scénarios d’incident de service Microsoft 365.
-ms.openlocfilehash: ea9804d4f22a11ea9ffcda9d9939d70574c2e87e
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: e5313464a45be679eaee6c4d06ca000e63c1010c
+ms.sourcegitcommit: 41bc923bb31598cea8f02923792c1cd786e39616
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601061"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "45086632"
 ---
 # <a name="service-incident-mitigation-strategies"></a>Stratégies d’atténuation des incidents de service
 
@@ -36,6 +36,7 @@ Voici quelques stratégies et scénarios qui présentent la façon atténuer l�
 |Les téléphones VoIP sont utilisés comme mode de communication secondaire.|Implémentez des téléphones non-VoIP capables d’effectuer des appels PSTN, notamment pour les centres d’opérations de réseau et de service pendant les incidents. Ajoutez les numéros de téléphone mobile des employés à l’annuaire de l’entreprise pour permettre au personnel en détresse d’être contacté via le réseau cellulaire.|
 |OneDrive Entreprise est utilisé pour le stockage de fichiers et la productivité des utilisateurs. [Les fichiers à la demande](https://techcommunity.microsoft.com/t5/Microsoft-OneDrive-Blog/OneDrive-Files-On-Demand-For-The-Enterprise/ba-p/117234) sont configurés pour libérer de l’espace sur les lecteurs d’utilisateurs locaux.|La synchronisation avec OneDrive fournit des stratégies de groupe qui permettent aux administrateurs de faire en sorte que le contenu spécifique soit synchronisé en local ou de libérer de l’espace lorsque c’est nécessaire. Pour réduire le risque d’inaccessibilité des documents, configurez cette stratégie de manière à synchroniser localement les documents importants. Formez les utilisateurs à appliquer manuellement le paramètre « Toujours conserver sur cet appareil » pour les documents importants.|
 |Exchange Online permet de communiquer les perturbations de productivité aux clients et aux fournisseurs.|Les réseaux sociaux tiers publics peuvent être utilisés comme autres moyens de communication de masse.
+|L’utilisation d’une architecture locale hybride, telle que l’ADFS ou l’authentification directe, provoque une perturbation de la possibilité pour l’utilisateur de s’authentifier auprès des services cloud.|Configurer la[synchronisation de hachage de mot de passe](https://docs.microsoft.com/azure/active-directory/authentication/concept-resilient-controls#deploy-password-hash-sync-even-if-you-are-federated-or-use-pass-through-authentication), conjointement avec vos services d’authentification hybrides, comme mécanisme secondaire d’authentification basée sur le cloud afin d’éviter toute perturbation de la connexion pendant la panne. Pour plus d’informations sur la création d’architectures d’authentification et de contrôle d’accès résilients, voir [Créer une stratégie de gestion de contrôle d’accès résiliente avec Azure Active Directory](https://docs.microsoft.com/azure/active-directory/authentication/concept-resilient-controls).|  
 
 ## <a name="leveraging-mobile-app-access"></a>Profiter de l'accès aux applications mobiles
 
