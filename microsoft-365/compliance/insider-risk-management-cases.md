@@ -12,32 +12,32 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 9959d41cf112c1ebcc88a8dd0335cae5a5537059
-ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
+ms.openlocfilehash: d4c2ed423743bb0f7a9c4550421c5266cc5d08b0
+ms.sourcegitcommit: a4926e98b6594bbee68bfca90438c9c764499255
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "44327860"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "45091951"
 ---
 # <a name="insider-risk-management-cases"></a>Dossiers de gestion des risques initiés
 
-Les cas sont le cœur de la gestion des risques initiés et vous permettent d’approfondir et de prendre des mesures sur les problèmes générés par les indicateurs de risque définis dans vos stratégies. Les incidents sont créés manuellement à partir d’alertes dans les situations où une autre action est nécessaire pour résoudre un problème lié à la conformité pour un employé. Chaque cas est limité à un seul employé et plusieurs alertes peuvent être ajoutées à un incident existant ou à un autre cas. Après avoir examiné les détails d’un cas, vous pouvez prendre une mesure en envoyant un avis à l’employé, en le résolvant comme inoffensif ou en effectuant une enquête sur les données ou les employés.
+Les cas sont le cœur de la gestion des risques initiés et vous permettent d’approfondir et de prendre des mesures sur les problèmes générés par les indicateurs de risque définis dans vos stratégies. Les incidents sont créés manuellement à partir d’alertes dans les situations où une autre action est nécessaire pour résoudre un problème lié à la conformité pour un employé. Chaque cas est limité à un seul employé et plusieurs alertes peuvent être ajoutées à un incident existant ou à un autre cas. Une fois que vous avez examiné les détails d’un cas, vous pouvez prendre des mesures en envoyant un avis à l'employé, en résolvant le cas comme étant bénin ou en passant à un examen des données ou de l'employé.
 
 ## <a name="case-dashboard"></a>Tableau de bord de cas
 
-Le **tableau de bord des cas** de gestion des risques Insiders vous permet d’afficher et de prendre des mesures dans les cas. Chaque widget de rapport du tableau de bord affiche des informations pour les 30 derniers jours.
+Le **Tableau de bord des cas** de gestion des risques internes vous permet de consulter les cas et de prendre des mesures. Chaque widget de rapport du tableau de bord affiche des informations pour les 30 derniers jours.
 
 - **Cas actifs**: nombre total de cas actifs en cours d’enquête.
 - **Cas au cours des 30 derniers jours**: nombre total de cas créés, triés par état *actif* et *fermé* .
 - **Statistics**: durée moyenne des cas actifs, indiquée en heures, jours ou mois.
 
-La file d’attente de cas répertorie tous les dossiers actifs et fermés de votre organisation, en plus de l’état actuel des attributs case suivants :
+La file d’attente de cas répertorie tous les cas actifs et fermés pour votre organisation, en plus de l’état actuel des attributs de cas suivants :
 
 - **Nom**de la casse : nom de l’incident, défini lorsqu’une alerte est confirmée et que le cas est créé.  
 - **Status**: état *actif* ou *fermé*.
 - **User**: employé pour le cas.
 - **Date/heure d’ouverture**: temps écoulé depuis l’ouverture du cas.
-- **Total des alertes de stratégie**: nombre de correspondances de stratégie incluses dans le cas. Ce nombre peut augmenter si de nouvelles alertes sont ajoutées à l’incident.
+- **Total des alertes de stratégie**: nombre de correspondances de stratégie incluses dans le cas. Ce nombre peut augmenter si de nouvelles alertes sont ajoutées au cas.
 - **Dernière mise à jour**: le temps écoulé depuis qu’il y a eu une remarque de cas ajoutée ou modifié dans l’état du cas.
 - **Dernière mise à jour par**: le nom de l’analyste ou de l’investigateur de gestion des risques Insiders qui a mis à jour le cas.
 
@@ -46,18 +46,18 @@ La file d’attente de cas répertorie tous les dossiers actifs et fermés de vo
 Utilisez le contrôle de **recherche** pour rechercher des noms de cas spécifiques et utilisez le filtre de cas pour trier les cas par les attributs suivants :
 
 - Statut
-- Cas d’ouverture, date de début et date de fin de l’heure
-- Date de dernière mise à jour, date de début et date de fin
+- Heure d'ouverture du cas, date de début et la date de fin
+- Dernière mise à jour, date de début et la date de fin
 
 ## <a name="investigate-a-case"></a>Examiner un cas
 
 Une enquête approfondie sur les alertes de gestion des risques initiés est essentielle pour prendre des mesures correctives appropriées. Les cas d’Insider de gestion des risques constituent l’outil de gestion centralisée pour approfondir l’historique des activités relatives aux risques des employés et les détails des alertes, et pour explorer le contenu et les messages exposés aux risques. Les analystes et les enquêteurs de risques utilisent également des cas pour centraliser les commentaires et les notes et traiter la résolution des incidents. 
 
-La sélection d’un cas ouvre les outils de gestion de cas et permet aux analystes et aux enquêteurs d’approfondir les détails des cas.
+La sélection d’un cas ouvre les outils de gestion des cas et permet aux analystes et aux enquêteurs d’approfondir les détails des cas.
 
-### <a name="case-overview"></a>Présentation de l’incident
+### <a name="case-overview"></a>Présentation du cas
 
-L’onglet de **Présentation du cas** résume l’activité d’alerte et l’historique des niveaux de risque pour le cas. Le widget **alertes** affiche la correspondance de stratégie pour le cas, y compris l’état de l’alerte, la gravité du risque d’alerte et le moment où l’alerte a été détectée. Le graphique de l' **historique des niveaux de risques** affiche le niveau de risque de l’utilisateur au cours des 30 derniers jours. Le graphique en courbes permet aux analystes et aux investigateurs de voir rapidement la tendance du risque global de l’utilisateur au fil du temps. Le widget **contenu d’activité des risques** résume les types de données et le contenu des alertes ajoutées au cas. Ce widget offre une vue complète de l’ensemble des données et du contenu en risque dans le cas.
+L’onglet **Vue d’ensemble de cas** résume l'activité d'alerte et l'historique du niveau de risque pour le cas. Le widget **alertes** affiche la correspondance de stratégie pour le cas, y compris l’état de l’alerte, la gravité du risque d’alerte et le moment où l’alerte a été détectée. Le graphique **Historique du niveau de risque** affiche le niveau de risque de l'utilisateur au cours des 30 derniers jours. Le graphique en courbes permet aux analystes et aux enquêteurs de voir rapidement la tendance des risques globaux des utilisateurs au fil du temps. Le widget **Contenu de l’activité de risque** synthétise les types de données et le contenu des alertes ajoutées au cas. Cet exemple offre une vue d’ensemble de la totalité des données et contenus exposés en cas de risque.
 
 Le volet de **Détails des cas** est disponible sur tous les onglets de gestion des dossiers et récapitule les détails de l’incident pour les analystes et les investigateurs de risque. Elle comprend les éléments suivants :
 
@@ -65,7 +65,7 @@ Le volet de **Détails des cas** est disponible sur tous les onglets de gestion 
 - **État**de la demande de devis : état *actif* ou *fermé*.
 - **Note de risque de l’utilisateur**: niveau de risque calculé actuel de l’utilisateur pour le cas. Ce score est calculé toutes les 24 heures et utilise les scores de risque d’alerte de toutes les alertes actives associées à l’utilisateur.
 - **Alertes confirmées**: liste des alertes pour l’utilisateur confirmée pour le cas.
-- **Contenu à risque**: liste de contenu, triée par sources et types de contenu. Par exemple, pour le contenu d’alerte case dans SharePoint Online, vous pouvez voir des noms de dossier ou de fichier répertoriés qui sont associés à l’activité risque pour les alertes dans le cas.
+- **Contenu à risque**: liste de contenu, triée par sources et types de contenu. Par exemple, pour le contenu d’une alerte de cas dans SharePoint Online, il est possible de voir la liste des noms de dossiers ou de fichiers qui sont associés à l'activité à risque pour les alertes dans le cas.
 
 ![Détails des cas d’Insider gestion des risques](../media/insider-risk-case-details.png)
 
@@ -83,11 +83,11 @@ Utilisez le contrôle de recherche pour rechercher des noms d’alerte pour un t
 
 - Statut
 - Severity
-- Heure de détection, date de début et date de fin
+- Heure détectée, la date de début et la date de fin
 
 ### <a name="user-activity"></a>Activité utilisateur
 
-L’onglet activité de l' **utilisateur** est l’un des outils les plus puissants pour l’analyse et l’enquête sur les risques internes pour les cas de la solution de gestion des risques Insiders. Cet onglet est conçu pour permettre un examen rapide d’un incident, notamment une chronologie historique de toutes les alertes, les détails de toutes les alertes, le score de risque actuel de l’utilisateur dans le cas et des contrôles permettant d’appliquer les risques dans le cas.
+L’onglet **Activité des utilisateurs** est l’un des outils les plus performants pour l’analyse des risques internes et l’examen pour les cas de la solution de gestion des risques internes. Cet onglet est conçu pour permettre un examen rapide d’un incident, notamment une chronologie historique de toutes les alertes, les détails de toutes les alertes, le score de risque actuel de l’utilisateur dans le cas et des contrôles permettant d’appliquer les risques dans le cas.
 
 ![Activité des utilisateurs de gestion des risques Insiders](../media/insider-risk-user-activities.png)
 
@@ -95,15 +95,15 @@ L’onglet activité de l' **utilisateur** est l’un des outils les plus puissa
 2. **Activité et détails de l’alerte de risque**: les activités de risque s’affichent visuellement sous forme de bulles colorées dans le graphique d’activité de l’utilisateur. Les bulles sont créées pour différentes catégories de risques et la taille des bulles est proportionnelle au nombre d’activités à risque pour la catégorie. Sélectionnez une bulle pour afficher les détails de chaque activité de risque. Les détails sont les suivants :
     - **Date** de l’activité de risque.
     - Catégorie de l' **activité de risque**. Par exemple, des *courriers électroniques avec des pièces jointes envoyées à l’extérieur de l’organisation* ou des *fichiers téléchargés à partir de SharePoint Online*.
-    - **Score de risque** de l’alerte. Ce score est le score numérique du niveau de gravité des risques d’alerte.
-    - Nombre d’événements associés à l’alerte. Des liens vers chaque fichier ou courrier électronique associé à l’activité de risque sont également disponibles.
+    - **Score de risque** pour l’alerte. Ce score correspond au score numérique du niveau de gravité des risques d’alerte.
+    - Nombre d’événements associés à l’alerte. Des liens vers chaque fichier ou message électronique associé à l’activité de risque sont également disponibles.
 3. **Légende**de l’activité des risques : dans la partie inférieure du graphique d’activité de l’utilisateur, une légende de couleur vous permet de déterminer rapidement la catégorie de risque pour chaque alerte.
 4. **Chronologie**de l’activité des risques : la chronologie complète de toutes les alertes de risque associées à l’incident est répertoriée, y compris tous les détails disponibles dans la bulle d’alerte correspondante.
-5. **Actions de cas**: les options de résolution de l’incident figurent dans la barre d’outils action de l’incident. Vous pouvez résoudre un incident, envoyer une notification par courrier électronique à l’employé ou escalader le cas à une enquête sur les données ou les employés.
+5. **Actions de cas**: les options de résolution de l’incident figurent dans la barre d’outils action de l’incident. Vous pouvez résoudre un litige, envoyer une notification par courrier électronique à l’employé, ou remonter le cas d’un examen de données ou d’un employé.
 
 ### <a name="content-explorer"></a>Explorateur de contenu
 
-L’onglet **Explorateur de contenu** permet aux analystes et aux enquêteurs de vérifier les copies de tous les fichiers et messages électroniques associés à des alertes de risque. Par exemple, si une alerte est créée lorsqu’un employé télécharge des centaines de fichiers à partir de SharePoint Online vers un périphérique USB et que l’activité déclenche une alerte de stratégie, tous les fichiers téléchargés pour l’alerte sont capturés et copiés dans le cas de la gestion des risques initiaux à partir des sources de stockage d’origine.
+L’onglet **Explorateur de contenu** permet aux analystes et aux enquêteurs de vérifier les copies de tous les fichiers et messages électroniques associés à des alertes de risque. Par exemple, si une alerte est créée lorsqu’un employé télécharge des centaines de fichiers à partir de SharePoint Online et que l’activité déclenche une alerte de stratégie, tous les fichiers téléchargés pour l’alerte sont capturés et copiés dans le cas de la gestion des risques initiaux à partir des sources de stockage d’origine.
 
 L’Explorateur de contenu est un outil puissant doté de fonctionnalités de recherche et de filtrage de base et avancées. Pour en savoir plus sur l’utilisation de l’Explorateur de contenu, reportez-vous à l' [Insider Risk Management content Explorer](insider-risk-management-content-explorer.md).
 
@@ -111,7 +111,7 @@ L’Explorateur de contenu est un outil puissant doté de fonctionnalités de re
 
 ### <a name="case-notes"></a>Notes de cas
 
-L’onglet **Remarques** dans le cas correspond à l’endroit où les analystes et les investigateurs des risques partagent des commentaires, des commentaires et des informations sur leur travail pour le cas. Les notes sont des ajouts permanents à un cas et ne peuvent pas être modifiées ou supprimées après l’enregistrement de la note. Lorsqu’un cas est créé à partir d’une alerte, les commentaires entrés dans la boîte de dialogue **confirmer l’alerte et créer un cas de risque Insider** sont automatiquement ajoutés en tant que note de cas.
+L’onglet **Remarques** dans le cas correspond à l’endroit où les analystes et les investigateurs des risques partagent des commentaires, des commentaires et des informations sur leur travail pour le cas. Les notes sont des ajouts permanents à un cas et ne peuvent pas être modifiées ou supprimées une fois la note enregistrée. Lors de la création d’un cas à partir d’une alerte, les commentaires entrés dans la boîte de dialogue **Confirmer l’alerte et créer un cas de risque internes** sont automatiquement ajoutés comme note de cas.
 
 Le tableau de bord des notes de cas affiche des notes par l’utilisateur qui a créé la note et le temps écoulé depuis l’enregistrement de la note. Pour rechercher un mot clé spécifique dans le champ de texte note de cas, utilisez le bouton **Rechercher** du tableau de bord de cas et entrez un mot clé spécifique.
 
@@ -122,17 +122,17 @@ Pour ajouter une note à un cas :
 3. Sélectionnez **Ajouter une note de cas**.
 4. Dans la boîte de dialogue **Ajouter une note de cas** , tapez votre remarque pour le cas. Sélectionnez **Enregistrer** pour ajouter la note au cas ou sélectionnez **Annuler** fermer sans enregistrer la note dans le cas.
 
-### <a name="contributors"></a>Collaborateurs
+### <a name="contributors"></a>Contributeurs
 
-L’onglet **collaborateurs** dans le cas est l’endroit où les analystes et les enquêteurs peuvent ajouter d’autres réviseurs au cas. Par défaut, tous les utilisateurs auxquels sont affectés les rôles **analystes de gestion des risques Insider** et **inSided Management investigations** sont répertoriés en tant que contributeurs pour chaque cas actif et fermé.
+L’onglet **Contributeurs** dans le cas est l’endroit où les analystes et les enquêteurs peuvent ajouter d’autres réviseurs au cas. Par défaut, tous les utilisateurs auxquels sont affectés les rôles **analystes de gestion des risques Insider** et **inSided Management investigations** sont répertoriés en tant que contributeurs pour chaque cas actif et fermé.
 
-Tous les cas de gestion des risques initiaux doivent être gérés avec les contrôles d’accès appropriés en place afin de préserver la confidentialité et l’intégrité de l’enquête. Pour faciliter le contrôle d’accès des cas, les utilisateurs sont affectés à l’un des deux types d’accès aux cas suivants :
+Toutes les situations de gestion des risques internes doivent être gérées avec des contrôles d’accès appropriés en place pour assurer la confidentialité et l’intégrité de l’examen. Pour assurer le contrôle d’accès des cas, l’un des deux types d’accès est attribué aux utilisateurs :
 
-- **Accès permanent**: l’accès permanent est automatiquement accordé aux utilisateurs avec les rôles des **analystes de gestion des risques internes** et des **investigateurs de gestion des risques Insiders** lorsque le cas est créé à partir d’une alerte. L’accès permanent accorde le contrôle total de l’incident pendant la durée de vie du cas et permet d’ajouter d’autres contributeurs de cas.
-- **Accès temporaire**: l’accès temporaire est accordé uniquement aux utilisateurs par des collaborateurs qui disposent d’un accès permanent pour le cas. En règle générale, ce niveau d’accès est accordé à l’utilisateur qui doit ajouter des notes à un cas. Les contributeurs disposant d’un accès temporaire disposent du contrôle de gestion des dossiers sauf :
+- **Accès permanent**: l’accès permanent est automatiquement accordé aux utilisateurs avec les rôles des **analystes de gestion des risques internes** et des **investigateurs de gestion des risques Insiders** lorsque le cas est créé à partir d’une alerte. L'accès permanent permet un contrôle total du cas pendant toute sa durée de vie et donne la possibilité d'ajouter d'autres contributeurs au cas.
+- **Accès temporaire**: l’accès temporaire est accordé uniquement aux utilisateurs par des collaborateurs qui disposent d’un accès permanent pour le cas. En règle générale, ce niveau d’accès est accordé à l’utilisateur qui doit ajouter des notes à un cas. Les collaborateurs disposant d’un accès temporaire ont accès à tous les contrôles de gestion des cas, sauf :
     - Autorisation de confirmer ou d’ignorer les alertes
-    - Autorisation de modifier les collaborateurs pour les cas
-    - Autorisation d’afficher les fichiers et les messages dans l’Explorateur de contenu
+    - Autorisation de modifier les contributeurs pour les cas
+    - Autorisation d’afficher les fichiers et messages dans l’Explorateur de contenu
 
 Pour ajouter un collaborateur à un cas :
 
@@ -145,13 +145,13 @@ Pour ajouter un collaborateur à un cas :
 
 ## <a name="case-actions"></a>Actions de cas
 
-Les analystes et les enquêteurs de risques peuvent agir sur un cas selon l’une des différentes méthodes, selon la gravité du cas, l’historique des risques et les recommandations de votre organisation. Dans certains cas, il se peut que vous deviez transmettre un cas à un employé ou à une enquête de données pour collaborer avec d’autres domaines de votre organisation et approfondir les activités à risque. La gestion des risques initiés est étroitement intégrée aux autres fonctionnalités de conformité de Microsoft 365 pour vous aider à gérer la résolution de bout en bout.
+Les analystes et enquêteurs de risque peuvent agir sur un cas de plusieurs manières, selon la gravité du cas, l’historique des risques de l’employé et les instructions relatives aux risques de votre organisation. Dans certains cas, il se peut que vous deviez réaffecter un cas à un employé ou à un examen de données afin de collaborer avec d’autres parties de votre organisation et d’approfondir les activités liées aux risques. La gestion des risques initiés est étroitement intégrée aux autres fonctionnalités de conformité de Microsoft 365 pour vous aider à gérer la résolution de bout en bout.
 
 ### <a name="send-a-notice"></a>Envoyer une notification
 
-Dans la plupart des cas, les actions de l’employé qui créent des alertes de correspondance de stratégie sont involontaires ou accidentelles. L’envoi d’un avis de rappel à l’employé par courrier électronique est une méthode efficace pour documenter l’examen et l’action des cas, ainsi qu’une méthode pour rappeler les employés des stratégies d’entreprise ou pour les diriger vers la formation de réactualisation. Les notifications sont générées à partir de [modèles de notification que vous créez](insider-risk-management-notices.md) pour votre infrastructure de gestion des risques Insiders.
+Dans la plupart des cas, les actions des employés qui créent des alertes de correspondance de stratégie sont involontaires ou accidentelles. L’envoi d’une notification de rappel à l’employé par courrier électronique est une méthode efficace pour documenter l’examen et l’action des cas, ainsi qu’une méthode pour rappeler les employés des stratégies d’entreprise ou pour les diriger vers une formation de réactualisation. Les notifications sont générées à partir de [modèles de notification que vous créez](insider-risk-management-notices.md) pour votre infrastructure de gestion des risques Insiders.
 
-N’oubliez pas que l’envoi d’une notification à un employé ***ne*** résout pas le cas comme étant *fermé*. Dans certains cas, vous souhaiterez peut-être laisser un cas ouvert après l’envoi d’une notification à un employé afin de rechercher des activités à risque supplémentaires sans ouvrir de nouveau cas. Si vous souhaitez résoudre un incident après avoir envoyé un avis, vous devez sélectionner l’option **résoudre l’incident** comme une étape de suivi après l’envoi d’une notification.
+Il est important de ne pas oublier que l’envoi d’une notification à un employé ***ne*** résout pas le cas comme *Fermé*. Dans certains cas, vous souhaiterez peut-être laisser un cas ouvert après l’envoi d’une notification à un employé pour rechercher d’autres activités liées au risque sans ouvrir de nouveau cas. Si vous voulez résoudre un cas après l’envoi d’une notification, vous devez sélectionner le **Résoudre un cas** sous la forme d’une étape de suivi après l’envoi d’une notification.
 
 Pour envoyer une notification à l’employé affecté à un cas :
 
@@ -161,9 +161,9 @@ Pour envoyer une notification à l’employé affecté à un cas :
 4. Examinez les champs notice et mettez à jour le cas échéant. Les valeurs entrées ici remplaceront les valeurs du modèle.
 5. Sélectionnez **Envoyer** pour envoyer l’avis à l’employé ou sélectionnez **Annuler** pour fermer la boîte de dialogue sans envoyer l’avis à l’employé. Toutes les notifications envoyées sont ajoutées à la file d’attente de notes dans le tableau de bord **Notes** de cas.
 
-### <a name="escalate-for-investigation"></a>Escalade de l’enquête
+### <a name="escalate-for-investigation"></a>Faire remonter le dossier pour enquête
 
-Escaladez le cas à l’enquête d’un employé dans des situations où un examen juridique supplémentaire est nécessaire pour l’activité des risques de l’employé. Cette escalade ouvre un nouveau cas eDiscovery avancé dans votre organisation Microsoft 365. Advanced eDiscovery fournit un flux de travail de bout en bout pour conserver, collecter, examiner, analyser et exporter du contenu réactif aux enquêtes juridiques internes et externes de votre organisation. Il permet également à votre équipe juridique de gérer l’ensemble du flux de travail de notification de suspension légale pour communiquer avec les dépositaires impliqués dans un cas. L’affectation d’un relecteur en tant que dépositaire dans un cas avancé eDiscovery créé à partir d’un cas de gestion des risques Insiders permet à votre équipe juridique de prendre les mesures appropriées et de gérer la conservation du contenu. Pour en savoir plus sur les cas avancés de découverte électronique, consultez la rubrique [Overview of Advanced eDiscovery in Microsoft 365](overview-ediscovery-20.md).
+Faites remonter le dossier d’enquête des employés dans les situations où un examen juridique supplémentaire est nécessaire concernant l’activité à risque de l’employé. Cette remontée ouvre un nouveau dossier Advanced eDiscovery dans votre organisation Microsoft 365. Advanced eDiscovery offre un flux de travail de bout en bout pour conserver, collecter, réviser, analyser et exporter du contenu réactif aux examens juridiques internes et externes de votre organisation. Il permet également à votre équipe juridique de gérer l’ensemble du flux de travail de notification de conservation légale pour communiquer avec les conservateurs impliqués dans un cas. L’affectation d’un réviseur en tant que consignataire dans un cas Advanced eDiscovery créé à partir d’un cas de gestion des risques internes permet à votre équipe juridique de prendre les mesures appropriées et de gérer la conservation du contenu. Pour en savoir plus sur les cas Advanced eDiscovery, consultez [Présentation de Advanced eDiscovery dans Microsoft 365](overview-ediscovery-20.md).
 
 Pour escalader un cas à une enquête d’un employé :
 
@@ -176,7 +176,7 @@ Une fois que le cas de gestion des risques initiés a été remonté vers un nou
 
 ### <a name="resolve-the-case"></a>Résoudre le cas
 
-Une fois que les analystes et les enquêteurs ont terminé leur examen et leur enquête, un cas peut être résolu afin de prendre des mesures sur toutes les alertes actuellement incluses dans le cas. La résolution d’un cas ajoute une classification de résolution, le statut de la case à *fermeture*et les motifs d’action de résolution sont automatiquement ajoutés à la file d’attente de notes dans le tableau de bord **Notes** de cas. Les cas sont résolus comme suit :
+Une fois que les analystes et enquêteurs des risques ont terminé leur révision et leur examen, un cas peut être résolu afin d’agir sur toutes les alertes actuellement incluses dans le cas. La résolution d’un cas ajoute une classification de résolution, le statut de la case à *fermeture*et les motifs d’action de résolution sont automatiquement ajoutés à la file d’attente de notes dans le tableau de bord **Notes** de cas. Les cas sont résolus comme suit :
 
 - **Bénigne**: la classification pour les cas où les alertes de correspondance de stratégie sont évaluées comme faible risque, non sérieux ou faux positif.
 - **Violation de stratégie confirmée**: classification pour les cas où les alertes de correspondance de stratégie sont évaluées comme risquées, graves ou le résultat d’un but malveillant.

@@ -19,16 +19,16 @@ ms.custom:
 - seo-marvel-mar2020
 ms.assetid: 59414438-99f5-488b-975c-5023f2254369
 description: Dans cet article, vous apprendrez à créer, tester et régler une stratégie DLP en fonction des besoins de votre organisation.
-ms.openlocfilehash: 9f5f1b1f84ba44dbf52366d30b0e26bbf310e9fe
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: 3405fc99f4d12715972b1fd18a9c20dd9334382b
+ms.sourcegitcommit: a4926e98b6594bbee68bfca90438c9c764499255
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44352221"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "45092004"
 ---
 # <a name="create-test-and-tune-a-dlp-policy"></a>Création, test et réglage d’une stratégie DLP
 
-La protection contre la perte de données (DLP) est une fonctionnalité de conformité conçue pour aider votre organisation à empêcher l’exposition intentionnelle ou accidentelle d’informations sensibles à des parties indésirables. DLP a ses racines dans Exchange Server et Exchange Online, et est également applicable dans SharePoint Online et OneDrive entreprise.
+La protection contre la perte de données (DLP) est une fonctionnalité de conformité conçue pour aider votre organisation à empêcher toute exposition involontaire ou accidentelle d’informations sensibles à des parties indésirables. DLP a ses racines dans Exchange Server et Exchange Online, et est également applicable dans SharePoint Online et OneDrive entreprise.
 
 DLP utilise un moteur d’analyse de contenu pour examiner le contenu des messages électroniques et des fichiers, en recherchant des informations sensibles telles que des numéros de carte de crédit et des informations d’identification personnelle. Les informations sensibles ne doivent généralement pas être envoyées par courrier électronique, ni être incluses dans des documents, sans effectuer d’étapes supplémentaires, telles que le chiffrement des messages électroniques ou des fichiers. À l’aide de DLP, vous pouvez détecter des informations sensibles et effectuer les actions suivantes :
 
@@ -214,6 +214,6 @@ Les stratégies qui restreignent le contenu présentent l’avertissement à l�
 
 ![Conseil de stratégie indiquant que le contenu est restreint](../media/DLP-create-test-tune-restrict-warning.png)
 
-## <a name="summary"></a>Synthèse
+## <a name="summary"></a>Résumé
 
 Les stratégies de protection contre la perte de données sont utiles pour les organisations de tous types. Le test de certaines stratégies DLP est un exercice à risque faible en raison du contrôle dont vous disposez sur les éléments tels que les conseils de stratégie, les remplacements des utilisateurs finaux et les rapports d’incident. Vous pouvez tester silencieusement certaines stratégies DLP afin de déterminer le type de violations qui se produisent dans votre organisation, puis de concevoir des stratégies avec des taux de faux positifs faibles, informer vos utilisateurs de ce qui est autorisé et non autorisé, puis déployer vos stratégies DLP dans l’organisation.

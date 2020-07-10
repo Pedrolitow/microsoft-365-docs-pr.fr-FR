@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: a69c90580db9b33196fd1eb3797a42b8db056fcd
-ms.sourcegitcommit: 2e9e309ec09e5275ac6b3b425fba48a9ffce8eb2
+ms.openlocfilehash: 79f6273f747d518dd9c44f4a57fa0a48daed81d2
+ms.sourcegitcommit: a4926e98b6594bbee68bfca90438c9c764499255
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44900818"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "45091930"
 ---
 # <a name="insider-risk-management-policies"></a>Stratégies de gestion des risques internes
 
@@ -42,14 +42,14 @@ Les modèles de gestion des risques internes sont des conditions de stratégie p
 
 ### <a name="departing-employee-data-theft"></a>Vol de données des employés en partance
 
-Lorsque les employés quittent votre organisation, il existe des indicateurs de risque spécifiques généralement associés au vol de données par le fait de sortir des employés. Ce modèle de stratégie donne la priorité à ces indicateurs et concentre la détection et les alertes sur ce domaine à risque. Le vol de données pour le retrait des employés peut inclure le téléchargement de fichiers à partir de SharePoint Online, la copie de fichiers sur des appareils portables tels que des lecteurs USB, l’impression de fichiers et la copie de données vers des services de stockage et de messagerie Cloud personnels à proximité de leurs dates de démission et de fin d’emploi. Ce modèle établit la priorité des indicateurs de risque liés à ces activités et la façon dont ils correspondent à l’état d’emploi de l’employé.
+Lorsque les employés quittent votre organisation, il existe des indicateurs de risque spécifiques généralement associés au vol de données par le fait de sortir des employés. Ce modèle de stratégie donne la priorité à ces indicateurs et concentre la détection et les alertes sur ce domaine à risque. Le vol de données pour le retrait des employés peut inclure le téléchargement de fichiers à partir de SharePoint Online, l’impression de fichiers et la copie de données vers des services de messagerie et de stockage cloud personnels à proximité de leurs dates de démission et de fin d’emploi. Ce modèle établit la priorité des indicateurs de risque liés à ces activités et la façon dont ils correspondent à l’état d’emploi de l’employé.
 
 >[!IMPORTANT]
 >Lors de l’utilisation de ce modèle, vous devez configurer un connecteur RH Microsoft 365 pour importer régulièrement les informations de date de démission et de cessation d’emploi pour les employés de votre organisation. Pour obtenir des conseils détaillés sur la configuration du connecteur RH Microsoft 365 pour votre organisation, voir la rubrique [importer des données avec le connecteur RH](import-hr-data.md) .
 
 ### <a name="data-leaks"></a>Fuites de données
 
-La protection des données et la prévention des fuites de données sont des défis constants pour la plupart des organisations, en particulier en ce qui concerne la croissance rapide des nouvelles données créées par les employés, les appareils et les services. Les employés sont habilités à créer, stocker et partager des informations entre les services et les appareils qui rendent la gestion des fuites de données de plus en plus complexe et difficile. Les fuites de données peuvent inclure un partage accidentel d’informations en dehors de votre organisation ou du vol de données à des fins malveillantes. En association avec une stratégie de protection contre la perte de données (DLP) affectée, ce modèle hiérarchise la détection en temps réel des téléchargements de données SharePoint Online suspects, du partage de fichiers et de dossiers, de la copie de fichiers vers des appareils portables tels que des lecteurs USB, l’impression de fichiers et la copie de données dans des services de stockage et de messagerie Cloud personnels.
+La protection des données et la prévention des fuites de données sont des défis constants pour la plupart des organisations, en particulier en ce qui concerne la croissance rapide des nouvelles données créées par les employés, les appareils et les services. Les employés sont habilités à créer, stocker et partager des informations entre les services et les appareils qui rendent la gestion des fuites de données de plus en plus complexe et difficile. Les fuites de données peuvent inclure un partage accidentel d’informations en dehors de votre organisation ou du vol de données à des fins malveillantes. En association avec une stratégie de protection contre la perte de données (DLP) assignée, ce modèle hiérarchise la détection en temps réel des téléchargements de données SharePoint Online suspects, du partage de fichiers et de dossiers, de l’impression de fichiers et de la copie de données dans des services de stockage et de messagerie Cloud personnels.
 
 Lors de l’utilisation du modèle de **fuites de données** , vous devez affecter une stratégie DLP pour déclencher des indicateurs dans la stratégie des risques internes pour les alertes de gravité élevée au sein de votre organisation. Chaque fois qu’une alerte de gravité élevée est générée par une règle de stratégie DLP est ajoutée au Journal d’audit Office 365, les stratégies de risque internes créées à l’aide de ce modèle examinent automatiquement l’alerte DLP de gravité élevée. Si l’alerte contient un utilisateur dans l’étendue défini dans la stratégie d’Insider Risk, l’alerte sera traitée par la stratégie des risques des initiés en tant que nouvelle alerte et assignée à un score de risque et de gravité des risques initiés. Cette alerte peut être évaluée dans le cadre du flux de travail de gestion des risques Insiders et ajoutée à un cas d’Insider de gestion des risques si nécessaire.
 

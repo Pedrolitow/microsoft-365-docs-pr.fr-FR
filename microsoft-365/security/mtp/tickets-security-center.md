@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.custom:
 - seo-marvel-apr2020
-ms.openlocfilehash: 48512cf2fff802509ebaa14ca69d3ca02908902e
-ms.sourcegitcommit: 41bc923bb31598cea8f02923792c1cd786e39616
+ms.openlocfilehash: 16ee37b1c7bf33c902db35af2d29744f42830ea7
+ms.sourcegitcommit: 09a500a44d8723f8f2be87d9ad4ce7e453c5192b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "45087920"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "45094833"
 ---
 # <a name="create-and-track-servicenow-tickets-in-the-microsoft-365-security-center"></a>Créer et suivre des tickets ServiceNow dans le centre de sécurité Microsoft 365
 
@@ -54,9 +54,7 @@ Découvrez les erreurs courantes que vous pouvez rencontrer dans le processus de
 
 ## <a name="create-a-task-and-share-it-to-servicenow"></a>Créer une tâche et la partager avec ServiceNow
 
-Une fois l’intégration configurée, créez des tâches ServiceNow basées sur des actions d’amélioration spécifiques de Microsoft Secure score. Accédez à une action d’amélioration dans le score de sécurité dans le portail du centre de sécurité Microsoft 365, puis sélectionnez l’icône « partager ». L’une des options de liste déroulante est ServiceNow.
-
-![Partage ServiceNow dans le score de sécurité](../../media/servicenow-share.png)
+Une fois l’intégration configurée, créez des tâches ServiceNow basées sur des actions d’amélioration spécifiques de [Microsoft Secure score](microsoft-secure-score.md) . Accédez à une action d’amélioration dans la note de sécurité dans le portail du centre de sécurité Microsoft 365, puis sélectionnez **partager**. L’une des options de liste déroulante est ServiceNow.
 
 Une tâche est générée, dans laquelle vous pouvez définir la priorité et modifier le nom, la description ou la date d’échéance. Une fois que tous les champs obligatoires sont renseignés, envoyez la tâche à ServiceNow.
 
