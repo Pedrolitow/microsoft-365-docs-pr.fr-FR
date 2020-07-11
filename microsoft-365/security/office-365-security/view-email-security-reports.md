@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Découvrez comment rechercher et utiliser des rapports de sécurité de messagerie pour votre organisation. Les rapports de sécurité de messagerie sont disponibles dans le centre de sécurité & conformité.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6fbaa0b57c888f5eaf90a2a30d1850a145c33a80
-ms.sourcegitcommit: 8595cb9ffe0ca5556080f24224182381e1d880de
+ms.openlocfilehash: 26dfa8ec046122dce28582fb3d7b395843572a88
+ms.sourcegitcommit: 222fc3f8841de82b1b558f47db8a79aa5054d0ed
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/03/2020
-ms.locfileid: "45035726"
+ms.lasthandoff: 07/11/2020
+ms.locfileid: "45102920"
 ---
 # <a name="view-email-security-reports-in-the-security--compliance-center"></a>Afficher les rapports de sécurité de courrier dans le centre de sécurité et conformité
 
@@ -38,6 +38,8 @@ Un grand nombre de rapports sont disponibles dans le [Centre de conformité secu
 
 Le rapport **utilisateurs compromis** indique le nombre de comptes d’utilisateur marqués comme **suspects** ou **restreints** au cours des 7 derniers jours. Les comptes dans l’un de ces États sont problématiques ou même compromis. Avec une utilisation fréquente, vous pouvez utiliser le rapport pour repérer les pics, voire les tendances, dans les comptes suspects ou restreints. Pour plus d’informations sur les utilisateurs compromis, consultez [la rubrique relative à la réponse à un compte de courrier compromis](responding-to-a-compromised-email-account.md).
 
+![Widget utilisateurs compromis dans le tableau de bord rapports](../../media/compromised-users-report-widget.png)
+
 L’affichage d’agrégat affiche les données des 90 derniers jours et affiche les données des 30 derniers jours.
 
 Pour afficher le rapport, ouvrez le [Centre de sécurité & conformité](https://protection.office.com), accédez **Reports** au \> **tableau de bord** rapports et sélectionnez **utilisateurs compromis**. Pour accéder directement au rapport, ouvrez <https://protection.office.com/reportv2?id=CompromisedUsers> .
@@ -50,7 +52,7 @@ Vous pouvez filtrer le graphique et le tableau détails en cliquant sur **filtre
 
 - **Restricted**: le compte d’utilisateur ne peut pas envoyer de courrier électronique en raison de modèles très suspects.
 
-![Rapport sur les utilisateurs compromis tel qu’il apparaît dans Microsoft 365](../../media/tp-threatProtectStatRpt-CompromisedUserRpt.png)
+![Affichage de rapport dans le rapport utilisateurs compromis](../../media/compromised-users-report-activity-view.png)
 
 Si vous cliquez sur **afficher les détails table**, vous pouvez voir les détails suivants :
 

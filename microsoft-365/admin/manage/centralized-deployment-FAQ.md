@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Passez en revue les réponses aux questions fréquemment posées sur le déploiement centralisé à partir du centre d’administration Microsoft 365.
-ms.openlocfilehash: 2d9a3c6f2cfe9418cc83cbd0f29537e5533c4257
-ms.sourcegitcommit: 3951147f74510e2ead6c11ceab92854f0937426b
+ms.openlocfilehash: b1b5ccbb5373bf5d536208efdfe487bc0c872f25
+ms.sourcegitcommit: 222fc3f8841de82b1b558f47db8a79aa5054d0ed
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "45083561"
+ms.lasthandoff: 07/11/2020
+ms.locfileid: "45102883"
 ---
 # <a name="centralized-deployment-faq"></a>Forum aux questions sur le déploiement centralisé
 
@@ -35,7 +35,7 @@ Le déploiement centralisé est la méthode recommandée pour un administrateur 
 Le déploiement centralisé des compléments nécessite que les utilisateurs utilisent les applications Microsoft 365 pour Enterprise (et sont connectés à Office à l’aide de leurs informations d’identification de connexion de l’organisation) et disposent de boîtes aux lettres Exchange Online. Le répertoire de votre abonnement doit être dans Azure Active Directory ou être fédéré.  
  
 Le déploiement centralisé est uniquement pris en charge pour les boîtes aux lettres en ligne. Il ne prend pas en charge le déploiement vers des boîtes aux lettres Exchange locales.
- 
+
 Vous pouvez utiliser le [Vérificateur de compatibilité du déploiement centralisé](centralized-deployment-of-add-ins.md#centralized-deployment-compatibility-checker)   pour déterminer si votre abonnement est éligible. 
   
 ## <a name="how-do-you-target-add-in-user-assignments-with-centralized-deployment"></a>Comment ciblez-vous les affectations d’utilisateurs de compléments avec un déploiement centralisé ?  
@@ -54,7 +54,9 @@ Un complément peut prendre jusqu’à 24 heures pour s’afficher pour tous les
 
 Pour faciliter le déploiement des compléments pour les utilisateurs, les groupes ou l’ensemble de votre organisation, nous recommandons aux administrateurs d’utiliser un déploiement centralisé.
 
-Pour plus d’informations sur la gestion de l’accès utilisateur, voir </br>[Empêcher les téléchargements de compléments en désactivant l’Office Store sur tous les clients (sauf Outlook)](https://docs.microsoft.com/microsoft-365/admin/manage/manage-deployment-of-add-ins?view=o365-worldwide#prevent-add-in-downloads-by-turning-off-the-office-store-across-all-clients-except-outlook) et </br>[Spécifiez les administrateurs et les utilisateurs qui peuvent installer et gérer les compléments pour Outlook](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/add-ins-for-outlook/specify-who-can-install-and-manage-add-ins?redirectedfrom=MSDN).
+Pour plus d’informations sur la gestion de l’accès des utilisateurs, voir :
+ - [Empêcher les téléchargements de compléments en désactivant l’Office Store sur tous les clients (sauf Outlook)](https://docs.microsoft.com/microsoft-365/admin/manage/manage-addins-in-the-admin-center#prevent-add-in-downloads-by-turning-off-the-office-store-across-all-clients-except-outlook)
+ - [Désignation des administrateurs et utilisateurs qui peuvent installer et gérer des compléments pour Outlook](https://docs.microsoft.com/Exchange/specify-who-can-install-and-manage-add-ins-2013-help)
 
 ## <a name="will-centralized-deployment-provide-admins-the-flexibility-to-choose-the-deployment-method-for-outlook-add-ins"></a>Le déploiement centralisé offrira-t-il la souplesse nécessaire pour choisir la méthode de déploiement des compléments Outlook ?  
 
@@ -62,7 +64,7 @@ Oui. Le déploiement centralisé offre aux administrateurs la souplesse nécessa
 
 **Fixed (valeur par défaut)**   Le complément est déployé automatiquement sur les utilisateurs affectés, et ils ne peuvent pas le supprimer.  
  
-**Disponible** Les utilisateurs peuvent installer le complément dans Outlook en choisissant Accueil > obtenir d’autres compléments > gérés par l’administrateur.   
+**Disponible** Les utilisateurs peuvent installer le complément dans Outlook en choisissant **accueil > obtenir d’autres compléments > gérés**par l’administrateur.
  
 **Facultatif** Le complément est déployé automatiquement sur les utilisateurs attribués, mais ils peuvent choisir de le supprimer.  
     
@@ -70,19 +72,19 @@ Oui. Le déploiement centralisé offre aux administrateurs la souplesse nécessa
 
 Oui. Les administrateurs peuvent télécharger un nouveau fichier manifeste afin de prendre en charge les modifications de métadonnées pour les compléments métier déployés par l’administrateur. Le complément est mis à jour lors du prochain démarrage des applications Office. L'application web peut changer à tout moment.  
  
-Pour plus d’informations, reportez-vous à la rubrique [line-of-Business Add-in](https://docs.microsoft.com/microsoft-365/admin/manage/manage-deployment-of-add-ins?view=o365-worldwide#security-of-office-add-ins).  
+Pour plus d’informations, reportez-vous à la rubrique [line-of-Business Add-in](https://docs.microsoft.com/microsoft-365/admin/manage/manage-addins-in-the-admin-center#more-about-office-add-ins-security).  
 
 ## <a name="can-admins-turn-off-add-ins"></a>Les administrateurs peuvent-ils désactiver les compléments ?  
 
 Oui. Les administrateurs peuvent activer ou désactiver les compléments qu’ils déploient pour tous les utilisateurs à partir du centre d’administration Microsoft.
 
-Pour plus d’informations, consultez la rubrique [États des compléments](https://docs.microsoft.com/microsoft-365/admin/manage/manage-deployment-of-add-ins?view=o365-worldwide#add-in-states).  
+Pour plus d’informations, consultez la rubrique [États des compléments](https://docs.microsoft.com/microsoft-365/admin/manage/manage-addins-in-the-admin-center#add-in-states).  
 
 ##  <a name="can-admins-delete-or-remove-add-ins"></a>Les administrateurs peuvent-ils supprimer ou supprimer des compléments ?
 
 Oui. Les administrateurs peuvent supprimer des compléments qu’ils ont déployés pour tous les utilisateurs à partir du centre d’administration Microsoft.
 
-Pour plus d’informations, consultez [la rubrique delete the Add-in](https://docs.microsoft.com/microsoft-365/admin/manage/manage-deployment-of-add-ins?view=o365-worldwide#delete-the-add-in). 
+Pour plus d’informations, consultez la rubrique [Delete an Add-in](https://docs.microsoft.com/microsoft-365/admin/manage/manage-addins-in-the-admin-center#delete-an-add-in). 
   
 ## <a name="can-admins-deploy-paid-add-ins-from-the-office-store-using-centralized-deployment"></a>Les administrateurs peuvent-ils déployer des compléments payants à partir de l’Office Store à l’aide d’un déploiement centralisé ? 
 

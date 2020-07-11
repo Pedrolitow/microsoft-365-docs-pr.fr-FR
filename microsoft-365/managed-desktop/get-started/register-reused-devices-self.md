@@ -7,12 +7,12 @@ f1.keywords:
 - NOCSH
 ms.author: jaimeo
 ms.localizationpriority: medium
-ms.openlocfilehash: a971d8dc413e7794aa48c0b39cc0f42e511739ed
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: abe9e63eb4fcd31993bd26822dc445ff0e48e369
+ms.sourcegitcommit: a5ed189fa789975f8c3ed39db1d52f2ef7d671aa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42250444"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "45101484"
 ---
 # <a name="register-existing-devices-yourself"></a>Inscrivez vous-même les appareils existant
 
@@ -21,7 +21,7 @@ ms.locfileid: "42250444"
 
 Le processus pour les partenaires est documenté dans la [procédure permettant aux partenaires d’inscrire des appareils](register-devices-partner.md).
 
-Microsoft Managed Desktop peut fonctionner avec les nouveaux appareils ou vous pouvez réutiliser des appareils que vous avez peut-être déjà (ce qui vous obligera à les réimager). Vous pouvez enregistrer des appareils à l’aide de Microsoft Managed Desktop sur le portail Azure.
+Microsoft Managed Desktop peut fonctionner avec les nouveaux appareils ou vous pouvez réutiliser des appareils que vous avez peut-être déjà (ce qui vous obligera à les réimager). Vous pouvez enregistrer des appareils à l’aide du portail d’administration de bureau géré Microsoft.
 
 ## <a name="prepare-to-register-existing-devices"></a>Préparation à l’enregistrement des appareils existants
 
@@ -124,7 +124,7 @@ FROM   Fn_rbac_gs_computer_system(@UserSIDs) comp
 > [!IMPORTANT]
 > La requête dans le gestionnaire de configuration n’autorise pas les espaces dans les noms de colonne exportés ; C’est pourquoi les étapes ont été entrées « Serial_Number » et « HardwareHash ». Maintenant que vous avez le fichier CSV exporté, vous devez modifier les en-têtes du rapport pour lire le *numéro de série* et le *hachage matériel* , comme indiqué ici avant de procéder à l’inscription de l’appareil.
 
-Vous pouvez maintenant [enregistrer des appareils à l’aide du portail Azure](#register-devices-by-using-the-azure-portal).
+Vous pouvez maintenant [enregistrer des périphériques à l’aide du portail d’administration](#register-devices-by-using-the-admin-portal).
 
 
 #### <a name="active-directory-powershell-script-method"></a>Méthode de script PowerShell Active Directory
@@ -168,7 +168,7 @@ Set-ExecutionPolicy powershell -ExecutionPolicy Unrestricted Get-MMDRegistration
 3. Générer`Save-Script -Name Get-MMDRegistrationInfo -Path <pathToUsb>`
 4. Activez l’appareil que vous enregistrez, mais *ne démarrez pas l’installation*. Si vous démarrez accidentellement le programme d’installation, vous devrez réinitialiser ou recréer l’image de l’appareil.
 5. Insérez le lecteur USB, puis appuyez sur MAJ + F10.
-6. Ouvrez une invite PowerShell avec des droits d’administration, puis `cd <pathToUsb>`exécutez.
+6. Ouvrez une invite PowerShell avec des droits d’administration, puis exécutez `cd <pathToUsb>` .
 7. Générer`Set-ExecutionPolicy -ExecutionPolicy Unrestricted`
 8. Générer`.\Get-MMDRegistrationInfo -OutputFile <path>\hardwarehash.csv`
 9. Supprimez le lecteur USB, puis arrêtez l’appareil en exécutant`shutdown -s -t 0`
@@ -206,9 +206,9 @@ Votre fichier doit inclure exactement les **mêmes en-têtes de colonne** que l�
 >[!NOTE]
 >Si vous oubliez de modifier l’un des exemples de données, l’inscription échouera.
 
-#### <a name="register-devices-by-using-the-azure-portal"></a>Inscrire des appareils à l’aide du portail Azure
+#### <a name="register-devices-by-using-the-admin-portal"></a>Inscrire des appareils à l’aide du portail d’administration
 
-Dans le portail Microsoft Managed Desktop [Azure](https://aka.ms/mmdportal), sélectionnez **périphériques** dans le volet de navigation de gauche. Sélectionnez **+ inscrire les appareils**; le survol s’ouvre :
+À partir du portail d' [administration](https://aka.ms/mmdportal)de bureau géré Microsoft, sélectionnez **périphériques** dans le volet de navigation de gauche. Sélectionnez **+ inscrire les appareils**; le survol s’ouvre :
 
 [![Entrée brusque après la sélection d’appareils de caisse, liste des appareils avec des colonnes pour les utilisateurs affectés, numéro de série, État, date de dernière vue et âge](../../media/register-devices-flyin-sterile.png)](../../media/register-devices-flyin-sterile.png)
 
@@ -227,7 +227,7 @@ Procédez comme suit :
 
 Vous pouvez surveiller la progression de l’inscription de l’appareil sur la page principale **des périphériques de bureau gérés par Microsoft** . Les États possibles sont les suivants :
 
-| État | Description |
+| State | Description |
 |---------------|-------------|
 | Inscription en attente | L’inscription n’est pas encore terminée. Réactivez-vous plus tard. |
 | Échec de l’inscription | L’inscription n’a pas pu aboutir. Pour plus d’informations, consultez la rubrique [Troubleshooting Device Registration](#troubleshooting-device-registration) . |

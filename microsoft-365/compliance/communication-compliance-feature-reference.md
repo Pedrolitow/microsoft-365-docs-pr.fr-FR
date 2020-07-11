@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 844ae00b1881851dc50c68329a999263c09bdbed
-ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
+ms.openlocfilehash: 017946c08bb1c44f31bbcb87b3ce46571ab8b480
+ms.sourcegitcommit: a5ed189fa789975f8c3ed39db1d52f2ef7d671aa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "44936783"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "45101605"
 ---
 # <a name="communication-compliance-feature-reference"></a>Référence de la fonctionnalité de conformité des communications
 
@@ -92,10 +92,8 @@ Vous devez effectuer une demande auprès du Support Microsoft pour autoriser vot
 - **Sources tierces** : vous pouvez analyser les communications provenant de sources tierces pour les données importées dans les boîtes aux lettres de votre organisation Microsoft 365. Les connecteurs prennent en charge les ressources tierces suivantes :
 
     - [Instant Bloomberg](archive-instant-bloomberg-data.md)
-    - [Facebook](archive-facebook-data-with-sample-connector.md)
-    - [LinkedIn](archive-linkedin-data.md)
-    - [Twitter](archive-twitter-data-with-sample-connector.md)
-    - [Connecteur de données personnalisé](archiving-third-party-data.md)
+    - [Message Bloomberg](archive-bloomberg-message-data.md)
+    - [Conversation ICE](archive-icechat-data.md)
 
 Vous devez configurer un connecteur tiers pour votre organisation Microsoft 365 avant de pouvoir attribuer le connecteur à une stratégie de conformité de communication. La section **sources tierces** de l’Assistant stratégie de conformité des communications affiche uniquement les connecteurs tiers actuellement configurés.
 
@@ -155,7 +153,7 @@ Pour plus d’informations sur les classifieurs dans Microsoft 365, consultez [
 ### <a name="conditional-settings"></a>Paramètres conditionnels
 <a name="ConditionalSettings"> </a>
 
-Les conditions que vous choisissez pour la stratégie s’appliquent aux communications provenant de la messagerie et des sources tierces de votre organisation (par rapport à Facebook ou DropBox).
+Les conditions que vous choisissez pour la stratégie s’appliquent aux communications à partir de la messagerie et des sources tierces de votre organisation (par exemple, la notification instantanée ou la messagerie instantanée).
 
 Le tableau suivant décrit plus en plus de chaque condition.
   

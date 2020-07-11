@@ -20,17 +20,27 @@ search.appverid:
 - MOE150
 ms.assetid: b4527d49-4073-4b43-8274-31b7a3166f92
 description: Déterminez si votre client et vos utilisateurs satisfont à la configuration requise, afin que vous puissiez utiliser un déploiement centralisé pour déployer des compléments Office.
-ms.openlocfilehash: 4ad2f504c26fcc1f01c958bebf448718500a95b7
-ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
+ms.openlocfilehash: fbf6ce702cfe0fa3c85b634996a38cc4857190b6
+ms.sourcegitcommit: 222fc3f8841de82b1b558f47db8a79aa5054d0ed
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "44936442"
+ms.lasthandoff: 07/11/2020
+ms.locfileid: "45102871"
 ---
 # <a name="determine-if-centralized-deployment-of-add-ins-works-for-your-organization"></a>Déterminer si le déploiement centralisé des compléments fonctionne pour votre organisation
 
-Le déploiement centralisé est la méthode recommandée et la plus riche en fonctionnalités pour la plupart des clients qui déploient des compléments Office pour les utilisateurs et les groupes au sein de votre organisation. Si vous êtes administrateur, utilisez ce guide pour déterminer si votre client et vos utilisateurs satisfont à la configuration requise afin que vous puissiez utiliser un déploiement centralisé.
+Le déploiement centralisé est la méthode recommandée et la plus riche en fonctionnalités pour la plupart des clients qui déploient des compléments Office pour les utilisateurs et les groupes au sein de votre organisation. Si vous êtes administrateur, utilisez ce guide pour déterminer si votre organisation et vos utilisateurs satisfont à la configuration requise afin que vous puissiez utiliser un déploiement centralisé.
+
+Une déploiement centralisé offre les avantages suivants :
+  
+- Un administrateur général peut attribuer un complément directement à un utilisateur, à plusieurs utilisateurs via un groupe ou à tout le monde au sein de l’organisation.
+    
+- Lorsque l’application Office appropriée démarre, le complément est automatiquement téléchargé. Si le complément prend en charge les commandes de complément, le complément s’affiche automatiquement dans le ruban au sein de l’application Office.
+    
+- Les compléments ne s’affichent plus pour les utilisateurs si l’administrateur désactive ou supprime le complément, ou si l’utilisateur est supprimé d’Azure Active Directory ou d’un groupe auquel le complément est affecté.
+
 Le déploiement centralisé prend en charge trois plateformes de bureau Windows, Mac et les applications Office en ligne. Le déploiement centralisé prend également en charge iOS et Android (compléments Outlook Mobile uniquement).
+
 Un complément peut prendre jusqu’à 24 heures pour s’afficher pour le client pour tous les utilisateurs.
   
 ## <a name="requirements"></a>Configuration requise
@@ -96,19 +106,19 @@ Check with your organization's Exchange admin to find out which configuration is
     
 2. Exécutez la commande suivante :
 
-```powershell
-Import-Module O365CompatibilityChecker
-```
+   ```powershell
+   Import-Module O365CompatibilityChecker
+   ```
     
 3. Exécutez la commande **Invoke-CompatabilityCheck** :
 
-```powershell
-Invoke-CompatibilityCheck
-```
-   qui vous demande *_TenantDomain_* (par exemple, *TailspinToysIncorporated. onmicrosoft. </span> com*) et *_TENANTADMIN_* (utilisez vos informations d’identification d’administrateur général), puis demande le consentement.
+   ```powershell
+   Invoke-CompatibilityCheck
+   ```
+   Cette commande vous invite à indiquer *_TenantDomain_* (par exemple, *TailspinToysIncorporated. onmicrosoft. </span> com*) et *_TENANTADMIN_* (utilisez vos informations d’identification d’administrateur général), puis demande le consentement.
     
-> [!NOTE]
-> Selon le nombre d'utilisateurs dans votre client, l'exécution du vérificateur peut prendre quelques minutes ou plusieurs heures. 
+   > [!NOTE]
+   > Selon le nombre d'utilisateurs dans votre client, l'exécution du vérificateur peut prendre quelques minutes ou plusieurs heures. 
   
 Une fois l'exécution de l'outil terminée, celui-ci génère un fichier de sortie dans un format séparé par des virgules (.csv). Par défaut, le fichier est enregistré dans **C:\Windows\System32** . Le fichier de sortie contient les informations suivantes :
   

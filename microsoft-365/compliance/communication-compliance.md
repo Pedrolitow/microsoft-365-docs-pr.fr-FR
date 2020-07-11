@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 0200ec0491104222545becb6c42d51b935fd2df1
-ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
+ms.openlocfilehash: 71e0a631afa596e9cedf939cf3dcb13eec599d5d
+ms.sourcegitcommit: a5ed189fa789975f8c3ed39db1d52f2ef7d671aa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "44936537"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "45101669"
 ---
 # <a name="communication-compliance-in-microsoft-365"></a>Conformité de la communication dans Microsoft 365
 
@@ -101,7 +101,7 @@ Stratégies de conformité des communications analysez et capturez les messages 
 - **Exchange Online**: toutes les boîtes aux lettres hébergées sur [Exchange Online](https://docs.microsoft.com/Exchange/exchange-online) dans votre organisation Microsoft 365 sont éligibles pour l’analyse. Les e-mails et les pièces jointes correspondant aux conditions de stratégie de conformité de communication sont immédiatement disponibles pour la surveillance et dans les rapports de conformité. Exchange Online est maintenant un canal source facultatif et n’est plus requis dans les stratégies de conformité des communications.
 - **Yammer** : les messages privés et les conversations de la communauté publique dans [Yammer](https://docs.microsoft.com/yammer/yammer-landing-page) sont pris en charge dans les stratégies de conformité des communications. Yammer est un canal facultatif qui doit être en [mode natif](https://docs.microsoft.com/yammer/configure-your-yammer-network/overview-native-mode) pour prendre en charge l’analyse de messages et de pièces jointes.
 - **Skype entreprise Online**: les stratégies de conformité des communications prennent en charge l’analyse des communications de conversation et des pièces jointes associées dans [Skype entreprise Online](https://docs.microsoft.com/SkypeForBusiness/skype-for-business-online).
-- **Sources**tierces : vous pouvez analyser les messages provenant de [sources](archiving-third-party-data.md) tierces pour les données importées dans des boîtes aux lettres dans votre organisation Microsoft 365. La conformité de la communication prend en charge les connexions à plusieurs plateformes populaires, notamment la connexion instant Bloomberg, Facebook, Twitter et d’autres.
+- **Sources**tierces : vous pouvez analyser les messages provenant de [sources](archiving-third-party-data.md) tierces pour les données importées dans des boîtes aux lettres dans votre organisation Microsoft 365. La conformité de la communication prend en charge les connexions à plusieurs plateformes populaires, y compris la connexion instant Bloomberg et d’autres.
 
 Pour en savoir plus sur la prise en charge du canal de messagerie dans les stratégies de conformité de communication, voir [types de communication pris en charge](communication-compliance-feature-reference.md#supported-communication-types).
 
