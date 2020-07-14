@@ -10,25 +10,51 @@ f1.keywords:
 ms.author: jaimeo
 ms.article: article
 ms.localizationpriority: normal
-ms.openlocfilehash: 9d7d33d3936d6fef21deb67c6b23f95c2f4bf24a
-ms.sourcegitcommit: 8edad75338cf74712ca1ab5d6631b9b52ff54410
+ms.openlocfilehash: 1402cd8c03baa233ece1051a0ab9d7dc3b96b965
+ms.sourcegitcommit: ada2f1c6ca79177cae975d887107ff8884358e8a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43116001"
+ms.lasthandoff: 07/13/2020
+ms.locfileid: "45107598"
 ---
 # <a name="change-history-for-microsoft-managed-desktop-documentation"></a>Historique des modifications de la documentation relative au Bureau géré Microsoft
 
 Cet article répertorie les articles nouveaux et mis à jour dans la [documentation du bureau géré Microsoft](index.yml). Les articles « mis à jour » sont ceux qui ont eu des ajouts ou corrections de matériel (correctifs mineurs, tels que la correction des fautes de frappe, de style ou de mise en forme). Vous pouvez toujours afficher l’historique des validations spécifiques (y compris les détails de toutes les modifications) en visitant le [référentiel sur GitHub](https://github.com/MicrosoftDocs/microsoft-365-docs/tree/public/microsoft-365/managed-desktop).
+
+## <a name="june-2020"></a>Juin 2020
+Article nouveau ou modifié | Description
+--- | ---
+[Nouvelle application Microsoft Edge](get-started/edge-browser-app.md) | Nouvel article
+[Configuration des appareils](service-description/device-policies.md) | Article mis à jour
+
+
+
+## <a name="may-2020"></a>Mai 2020
+Article nouveau ou modifié | Description
+--- | ---
+[Obtenir de l’aide pour les utilisateurs finaux](working-with-managed-desktop/end-user-support.md) | Article mis à jour
+[Procédure permettant aux partenaires d’inscrire des appareils](get-started/register-devices-partner.md) | Article mis à jour
+[Appareils de bureau gérés Microsoft](service-description/device-list.md) | Article mis à jour
+[Inscrivez vous-même les nouveaux appareils](get-started/register-devices-self.md) | Article mis à jour
+
+
+
+
+
+## <a name="april-2020"></a>Avril 2020
+Article nouveau ou modifié | Description
+--- | ---
+[Conformité](intro/compliance.md) | Nouvel article
+[Régions et langues prises en charge par Microsoft Managed Desktop](service-description/regions-languages.md) | Article mis à jour
+
+
 
 ## <a name="march-2020"></a>Mars 2020
 Article nouveau ou modifié | Description
 --- | ---
 [Procédure permettant aux partenaires d’inscrire des appareils](get-started/register-devices-partner.md)| Article mis à jour
 [Inscrivez vous-même les nouveaux appareils](get-started/register-devices-self.md) | Article mis à jour
-[Préparer les ressources d’impression pour le bureau géré Microsoft](get-ready/printing.md) | Nouvel article
-
-
+[Préparer des ressources d’impression pour le Bureau géré Microsoft](get-ready/printing.md) | Nouvel article
 
 
 ## <a name="february-2020"></a>Février 2020
@@ -53,7 +79,7 @@ Article nouveau ou modifié | Description
 ## <a name="december-2019"></a>Décembre 2019
 Article nouveau ou modifié | Description
 --- | ---
-[Aide administrateur pour le Bureau géré Microsoft](working-with-managed-desktop/admin-support.md) | Article mis à jour
+[Aide administrateur pour Bureau géré Microsoft](working-with-managed-desktop/admin-support.md) | Article mis à jour
 [Appareils de bureau gérés Microsoft](service-description/device-list.md) | Article mis à jour
 [Appareils archivés Microsoft Managed Desktop](service-description/archived-device-list.md) | Article mis à jour
 
@@ -77,7 +103,7 @@ Article nouveau ou modifié | Description
 --- | ---
 [Exceptions au plan de service](service-description/customizing.md) | Nouvel article
 [Obtenir de l’aide pour les utilisateurs finaux](working-with-managed-desktop/end-user-support.md) | Article mis à jour
-[Aide administrateur pour le Bureau géré Microsoft](working-with-managed-desktop/admin-support.md) | Article mis à jour
+[Aide administrateur pour Bureau géré Microsoft](working-with-managed-desktop/admin-support.md) | Article mis à jour
 [Modifications de service et communication](service-description/servicechanges.md) | Nouvel article
 [Inscrivez vous-même les nouveaux appareils](get-started/register-devices-self.md) | Article mis à jour
 [Inscrivez vous-même les appareils existant](get-started/register-reused-devices-self.md) | Article mis à jour
@@ -93,7 +119,7 @@ Article nouveau ou modifié | Description
 [Obtenir de l’aide pour les utilisateurs finaux](working-with-managed-desktop/end-user-support.md) | Article mis à jour
 [Appareils de bureau gérés Microsoft](service-description/device-list.md) | Article mis à jour
 [Déployer et suivre les paramètres configurables-bureau géré Microsoft](working-with-managed-desktop/config-setting-deploy.md) | Article mis à jour
-[Aide administrateur pour le Bureau géré Microsoft](working-with-managed-desktop/admin-support.md) | Article mis à jour
+[Aide administrateur pour Bureau géré Microsoft](working-with-managed-desktop/admin-support.md) | Article mis à jour
 [Configuration requise pour le Bureau géré Microsoft](get-ready/prerequisites.md) | Article mis à jour
 [Configurer les appareils Bureau géré Microsoft](get-started/set-up-devices.md) | Nouvel article
 [Inscrivez vous-même les nouveaux appareils](get-started/register-devices-self.md) | Article mis à jour
@@ -104,7 +130,7 @@ Article nouveau ou modifié | Description
 Article nouveau ou modifié | Description
 --- | ---
 [Utilisation de Microsoft Consulting Services](get-ready/apps-mcs.md) | Article mis à jour
-[Aide administrateur pour le Bureau géré Microsoft](working-with-managed-desktop/admin-support.md) | Article mis à jour
+[Aide administrateur pour Bureau géré Microsoft](working-with-managed-desktop/admin-support.md) | Article mis à jour
 [Obtenir de l’aide pour les utilisateurs finaux](working-with-managed-desktop/end-user-support.md) | Article mis à jour
 [Configuration requise pour le Bureau géré Microsoft](get-ready/prerequisites.md) | Article mis à jour
 [Technologies associées de Bureau géré Microsoft](intro/technologies.md) | Article mis à jour
@@ -122,7 +148,7 @@ Article nouveau ou modifié | Description
 ## <a name="june-2019"></a>Juin 2019
 Article nouveau ou modifié | Description
 --- | ---
-[Applications dans Bureau géré Microsoft](get-ready/apps.md) | Article mis à jour
+[Applications dans le Bureau géré Microsoft](get-ready/apps.md) | Article mis à jour
 [Utilisation de Microsoft Consulting Services](get-ready/apps-mcs.md) | Nouvel article
 [Rôles et responsabilités de Bureau géré Microsoft](intro/roles-and-responsibilities.md) | Article mis à jour
 [Cycle de vie des produits bureau géré Microsoft](service-description/device-lifecycle.md) | Nouvel article
@@ -138,7 +164,7 @@ Article nouveau ou modifié | Description
 [Préparer les lecteurs mappés pour le Bureau géré Microsoft](get-ready/mapped-drives.md) | Nouvel article
 [Préparer les certificats et les profils réseau pour le Bureau géré Microsoft](get-ready/certs-wifi-lan.md) | Nouvel article
 [Commander des appareils de bureau gérés Microsoft](get-started/devices.md) | Article mis à jour
-[Obtenir de l’aide pour les utilisateurs finaux](working-with-managed-desktop/end-user-support.md)
+[Obtenir de l’aide pour les utilisateurs finaux](working-with-managed-desktop/end-user-support.md) | Nouvel article
 
 ## <a name="april-2019"></a>Avril 2019
 Article nouveau ou modifié | Description
@@ -169,13 +195,13 @@ Article nouveau ou modifié | Description
 Article nouveau ou modifié | Description
 --- | ---
 [Déployer des applications pour les appareils de bureau gérés Microsoft](get-started/deploy-apps.md) | Nouvel article.
-[Gérer les applications pour le bureau géré Microsoft](working-with-managed-desktop/manage-apps.md) | Mise à jour avec des informations sur la procédure de mise à jour ou de restauration d’une version previoius d’applications métiers. 
+[Gérer les applications pour le bureau géré Microsoft](working-with-managed-desktop/manage-apps.md) | Mise à jour avec des informations sur la procédure de mise à jour ou de restauration d’une version précédente d’applications métiers. 
 
 ## <a name="december-2018"></a>Décembre 2018
 Article nouveau ou modifié | Description
 --- | ---
 [Opérations et surveillance pour le bureau géré Microsoft](service-description/operations-and-monitoring.md) | Ajout de la table de gestion des responsabilités et mise à jour des autres tables.
-[Aide administrateur pour le Bureau géré Microsoft](working-with-managed-desktop/admin-support.md) | Mise à jour des types de prise en charge, des explications de gravité et des détails supplémentaires.
+[Aide administrateur pour Bureau géré Microsoft](working-with-managed-desktop/admin-support.md) | Mise à jour des types de prise en charge, des explications de gravité et des détails supplémentaires.
 
 ## <a name="november-2018"></a>Novembre 2018
 
