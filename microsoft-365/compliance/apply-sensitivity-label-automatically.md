@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Lorsque vous créez une étiquette de critère de diffusion, vous pouvez affecter automatiquement une étiquette à un document ou message électronique ou vous pouvez inviter les utilisateurs pour sélectionner l’étiquette que vous recommandez.
-ms.openlocfilehash: c9b7782c39582deec3d42eb0c9dd1083519c805e
-ms.sourcegitcommit: 5e8901e7e571f20ede04f460bd3e7077dda004ca
+ms.openlocfilehash: 9e02df52c6b95fef087b8056501ffda7c3ddad14
+ms.sourcegitcommit: 09a500a44d8723f8f2be87d9ad4ce7e453c5192b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "44874914"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "45094844"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Appliquer automatiquement une étiquette sensibilité au contenu
 
@@ -191,7 +191,7 @@ N’oubliez pas de connaître les conditions préalables avant de configurer les
 
 - Mode de simulation :
     - L’audit pour Microsoft 365 doit être activé. Si vous devez activer l’audit ou si vous ne savez pas celui-ci est déjà activé, consultez l’article [Activer ou désactiver la recherche dans un journal d’audit](turn-audit-log-search-on-or-off.md).
-    - Pour afficher le contenu d’un fichier dans la vue source, vous devez avoir le rôle de **Visionneuse de contenu de l’Explorateur de contenu** si vous n’êtes pas un administrateur général. Si vous ne disposez pas cette autorisation, le volet générateur d’aperçu ne s’affiche pas lorsque vous sélectionnez un élément dans l’onglet **Élément correspondant**.
+    - Pour afficher le contenu d’un fichier en mode Source, vous devez disposer du rôle de **visionneur de contenu** de . Par défaut, les administrateurs généraux n’ont pas ce rôle. Si vous n’avez pas cette autorisation, le volet générateur ne s’affiche pas lorsque vous sélectionnez un élément dans l’onglet **éléments correspondants**.
 
 - Pour étiqueter automatiquement des fichiers dans SharePoint et OneDrive :
     - Vous avez [activé les étiquettes de confidentialité pour les fichiers Office dans SharePoint et OneDrive](sensitivity-labels-sharepoint-onedrive-files.md).
@@ -241,7 +241,9 @@ Enfin, vous pouvez utiliser le mode simulation pour fournir une approximation du
     ![Onglet étiquetage automatique](../media/auto-labeling-tab.png)
     
 
-3. Sélectionnez **+ Créer une stratégie**.
+3. Sélectionnez **+ créer une stratégie d’étiquetage automatique**. Cette opération démarre l’Assistant Nouvelle stratégie :
+    
+    ![Assistant Nouvelle stratégie pour l’étiquetage automatique ](../media/auto-labeling-wizard.png)
 
 4. Pour la page **Choisir les informations auxquelles vous souhaitez appliquer cette étiquette** : sélectionnez un modèle, par exemple, **Financier** or **Confidentialité**. Vous pouvez affiner votre recherche à l’aide du menu déroulant **Afficher les options pour**. Vous pouvez également sélectionner **Stratégie personnalisée** si les modèles ne répondent pas à vos besoins. Sélectionnez **Suivant**.
 
@@ -249,13 +251,15 @@ Enfin, vous pouvez utiliser le mode simulation pour fournir une approximation du
 
 6. Pour la page **Choisir les emplacements dans lesquels vous souhaitez appliquer l’étiquette** : sélectionner et spécifier les emplacements pour Exchange, les sites SharePoint et OneDrive. Ensuite, sélectionnez **Suivant**.
     
+    ![Choisir la page emplacements auto-labelingwizard ](../media/locations-auto-labeling-wizard.png)
+    
     Vous devez spécifier des comptes individuels pour OneDrive. L’URL de l’utilisateur OneDrive est au format suivant : `https://<tenant name>-my.sharepoint.com/personal/<user_name>_<tenant name>_com`
     
     Par exemple, pour un utilisateur du client contoso dont le nom d’utilisateur est « rsimone » : `https://contoso-my.sharepoint.com/personal/rsimone_contoso_onmicrosoft_com`
     
     Pour vérifier la syntaxe de votre client et identifier les URL des utilisateurs, voir [Obtenir la liste de toutes les URL OneDrive utilisateur de votre organisation](https://docs.microsoft.com/onedrive/list-onedrive-urls).
 
-7. Pour la page **Définir les paramètres de stratégie** : conservez la valeur par défaut de **Rechercher du contenu contenant** pour définir des règles qui identifient le contenu à étiqueter dans tous les emplacements sélectionnés. Si vous avez besoin de règles différentes pour chaque emplacement, sélectionnez **Paramètres avancés**. Ensuite, sélectionnez **Suivant**.
+7. Pour la **configurer les règles courantes ou avancées** page : conservez la valeur par défaut de **règles courantes** pour définir des règles qui identifient le contenu à étiqueter dans tous les emplacements sélectionnés. Si vous avez besoin de règles différentes pour chaque emplacement, sélectionnez **Paramètres avancés**. Ensuite, sélectionnez **Suivant**.
     
     Les règles utilisent des conditions qui incluent des types d’informations sensibles et des options de partage :
     - Vous pouvez sélectionner des types d’informations sensibles intégrés et personnalisés.
@@ -270,29 +274,29 @@ Enfin, vous pouvez utiliser le mode simulation pour fournir une approximation du
     - Le contenu de la pièce jointe n’a pas pu être analysé
     - L’analyse du contenu de la pièce jointe n’a pas été terminée
 
-8. Pour la page **Configurer les règles pour définir quel contenu est étiqueté** : sélectionnez **+ Créer une règle** puis **Suivant**.
-
-9. Dans la page **Créer une règle**, nommez et définissez votre règle en utilisant les types d’informations sensibles ou l’option de partage, puis sélectionnez **Enregistrer**.
+8. Selon vos choix précédents, vous aurez maintenant la possibilité de créer des règles à l’aide de conditions et d’exceptions.
     
     Les options de configuration pour les types d’informations sensibles sont identiques à celles que vous sélectionnez pour l’étiquetage automatique pour les applications Office. Si vous souhaitez en savoir plus, consultez l’article [Configuration des types d’informations sensibles pour une étiquette](#configuring-sensitive-info-types-for-a-label).
-
-10. De retour dans la page **Configurer les règles pour définir quel contenu est étiqueté** : sélectionnez de nouveau **+ Créer une règle** si vous avez besoin d’une autre règle pour identifier le contenu à étiqueter et répétez l’étape précédente. Lorsque vous avez défini toutes les règles dont vous avez besoin et confirmé leur activation, sélectionnez **Suivant**.
+    
+    Lorsque vous avez défini toutes les règles dont vous avez besoin et confirmé que leur état est activé, sélectionnez **suivant** pour passer à la sélection automatique d’une étiquette.
 
 11. Pour la page **Choisir une étiquette à appliquer automatiquement** : sélectionnez **+ Choisir une étiquette**, puis, sélectionnez une étiquette dans le volet **Choisir une étiquette de confidentialité**, et enfin, sélectionnez **Suivant**.
 
-12. Pour la page : **Choisir si vous voulez exécuter la simulation de stratégie maintenant ou plus tard** : sélectionnez **Exécuter la stratégie en mode simulation** si vous êtes prêt à exécuter la stratégie d’attribution automatique d’étiquette maintenant, en mode simulation. Dans le cas contraire, sélectionnez **Stratégie désactivée**. Sélectionnez **Suivant**. 
+12. Pour les **décidez si vous voulez tester la stratégie maintenant ou plus tard** page : sélectionnez **exécuter la stratégie en mode de simulation** si vous êtes prêt à exécuter la stratégie d’attribution automatique d’étiquette maintenant, en mode de simulation. Dans le cas contraire, sélectionnez **Stratégie désactivée**. Sélectionnez **suivant ** : 
+    
+    ![Tester l’Assistant attribution automatique d’étiquette de stratégie](../media/simulation-mode-auto-labeling-wizard.png)
 
 13. Pour la page **Résumé** : consultez la configuration de votre stratégie d’étiquetage automatique et apportez les modifications nécessaires, puis terminez l’Assistant.
     
     Contrairement à l’étiquetage automatique pour les applications Office, il n’y a pas d’option de publication distincte. Cependant, comme pour la publication d’étiquettes, prévoyez jusqu’à 24 heures pour que la stratégie d’étiquetage automatique soit reproduite dans toute votre organisation.
 
-Désormais, sur la page **Protection des informations**, onglet **Etiquetage automatique**, vous pouvez voir votre stratégie d’attribution automatique dans les sections **Simulation** ou **Désactivée**, selon que vous avez choisi de l’exécuter en mode de simulation ou non. Sélectionnez votre stratégie pour afficher les détails de la configuration et de son état (par exemple, **La simulation de stratégie est en cours d’exécution**). Pour les stratégies en mode simulation, sélectionnez l’onglet **éléments correspondants** pour afficher les messages électroniques ou les documents correspondants aux règles que vous avez spécifiées.
+Désormais, sur la page **Protection des informations**  >  onglet **Etiquetage automatique**, vous pouvez voir votre stratégie d’attribution automatique dans les sections **Simulation **ou **Désactivée**, selon que vous avez choisi de l’exécuter en mode de simulation ou non. Sélectionnez votre stratégie pour afficher les détails de la configuration et de son état (par exemple, **La simulation de stratégie est en cours d’exécution**). Pour les stratégies en mode simulation, sélectionnez l’onglet **éléments correspondants** pour afficher les messages électroniques ou les documents correspondants aux règles que vous avez spécifiées.
 
 Vous pouvez modifier votre stratégie directement à partir de cette interface :
 
 - Pour une stratégie dans la section **Désactivé**, sélectionnez le bouton **Modifier la stratégie**.
 
-- Pour une stratégie dans la section **Simulation**, sélectionnez l’option **Modifier** en haut de la page, sous l’un des onglets suivants :
+- Pour la stratégie dans la section de la **simulation** de, sélectionnez l’option **modifier la stratégie** en haut de la page, sous l’un des onglets suivants :
     
     ![Modifier les options d’une stratégie d’étiquetage automatique](../media/auto-labeling-edit.png)
     

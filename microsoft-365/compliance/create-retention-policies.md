@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Utiliser une stratégie de rétention vous permet de décider de façon proactive de conserver du contenu, de le supprimer (ou les deux), de conserver du contenu, puis de le supprimer ; d’appliquer une stratégie unique à l’ensemble de l’organisation ou à des emplacements ou utilisateurs spécifiques. Cela vous permet également d’appliquer une stratégie à tout le contenu ou au contenu répondant à certaines conditions.
-ms.openlocfilehash: ab6a61e0cedfd91d642823f0c459a5a1699df000
-ms.sourcegitcommit: 3951147f74510e2ead6c11ceab92854f0937426b
+ms.openlocfilehash: b509c1581f3b4120e9cf70e7603e56da86126539
+ms.sourcegitcommit: a4926e98b6594bbee68bfca90438c9c764499255
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "45083616"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "45091994"
 ---
 # <a name="create-and-configure-retention-policies"></a>Créer et configurer des stratégies de rétention
 
@@ -135,7 +135,7 @@ La rétention basée sur une requête utilise l’index de recherche pour identi
   
 ### <a name="identify-content-that-contains-sensitive-information"></a>Identifier le contenu qui contient des informations sensibles
 
-You can also apply a retention policy only to content that contains [specific types of sensitive information](what-the-sensitive-information-types-look-for.md). For example, you can choose to apply unique retention requirements only to content that contains personally identifiable information (PII) such as taxpayer identification numbers, social security numbers, or passport numbers.
+You can also apply a retention policy only to content that contains [specific types of sensitive information](what-the-sensitive-information-types-look-for.md). For example, you can choose to apply unique retention requirements only to content that contains personal information, such as taxpayer identification numbers, social security numbers, or passport numbers.
   
 ![Page Types d’informations sensibles](../media/8b104819-d185-4d58-b6b3-d06e82686a05.png)
   
@@ -235,7 +235,7 @@ Vous devez utiliser PowerShell si vous avez besoin d’utiliser le [Verrouillage
 
 2. Répertoriez vos stratégies de rétention et rechercher le nom de la stratégie que vous souhaitez verrouiller en exécutant `Get-RetentionCompliancePolicy`.
     
-    ![Liste des stratégies de rétention dans PowerShell](../media/retention-policy-preservation-lock-get-retentioncompliancepolicy.PNG)
+   ![Liste des stratégies de rétention dans PowerShell](../media/retention-policy-preservation-lock-get-retentioncompliancepolicy.PNG)
     
 3. Enfin, pour placer un Verrouillage de Conservation sur la stratégie de rétention, exécutez `Set-RetentionCompliancePolicy` avec le paramètre `RestrictiveRetention` défini sur true. Par exemple :
 
@@ -243,15 +243,17 @@ Vous devez utiliser PowerShell si vous avez besoin d’utiliser le [Verrouillage
    Set-RetentionCompliancePolicy -Identity "<Name of Policy>" – RestrictiveRetention $true
    ```
    
-    ![Paramètre RestrictiveRetention dans PowerShell](../media/retention-policy-preservation-lock-restrictiveretention.PNG)
+   ![Paramètre RestrictiveRetention dans PowerShell](../media/retention-policy-preservation-lock-restrictiveretention.PNG)
     
-    Une fois ce cmdlet exécuté, sélectionnez **Oui pour tout** :
+   Une fois ce cmdlet exécuté, sélectionnez **Oui pour tout** :
     
-    ![Invite à confirmer que vous souhaitez verrouiller une stratégie de rétention dans PowerShell](../media/retention-policy-preservation-lock-confirmation-prompt.PNG)
+   ![Invite à confirmer que vous souhaitez verrouiller une stratégie de rétention dans PowerShell](../media/retention-policy-preservation-lock-confirmation-prompt.PNG)
 
 Un verrouillage de conservation est désormais placé sur la stratégie de rétention. Si vous exécutez `Get-RetentionCompliancePolicy`, le paramètre `RestrictiveRetention` est défini sur true. Par exemple :
 
-`Get-RetentionCompliancePolicy -Identity "<Name of Policy>" |Fl`
+```powershell
+Get-RetentionCompliancePolicy -Identity "<Name of Policy>" |Fl
+```
 
 ![Stratégie verrouillée avec tous les paramètres affichés dans PowerShell](../media/retention-policy-preservation-lock-locked-policy.PNG)
   

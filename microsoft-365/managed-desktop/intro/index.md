@@ -7,7 +7,7 @@ author: jaimeo
 ms.localizationpriority: normal
 ms.openlocfilehash: 0df3f6d2636a277bdca12e7d76279c4c58c9f1d4
 ms.sourcegitcommit: 7bb3d8a93a85246172e2499d6c58c390e46f5bb9
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 06/02/2020
 ms.locfileid: "44011910"
@@ -28,7 +28,7 @@ Bureau géré Microsoft offre une solution à plusieurs des défis auxquels les 
 - De nombreux processus actuels de gestion et de sécurité informatiques sont obsolètes, chronophages et coûteux.
 - Les entreprises souhaitent se concentrer sur ce qui les rend plus performantes plutôt que de maintenir une infrastructure numérique.
 
-Vos utilisateurs finaux bénéficieront des dernières versions des applications Windows 10 et Microsoft 365 pour les applications d’entreprise (et plus encore), à l’aide de périphériques et de logiciels qui sont organisée et rigoureusement testés pour optimiser les performances et la fiabilité. De plus, vous n'avez pas à vous soucier de la mise à jour de ces logiciels car cela se fait automatiquement, selon une séquence de déploiement minutieuse qui est contrôlée à chaque étape. Les appareils enregistrés sont surveillés 24 heures sur 24 et 7 jours sur 7 pour des questions techniques et de sécurité, de sorte que si un problème survient, de l'aide est immédiatement disponible.
+Vos utilisateurs finaux apprécieront les versions les plus récentes des applications Windows 10 et Microsoft 365 Apps for enterprise (et bien plus encore), en utilisant des appareils et des logiciels organisés et soumis à des tests rigoureux des performances et une fiabilité optimales. De plus, vous n'avez pas à vous soucier de la mise à jour de ces logiciels car cela se fait automatiquement, selon une séquence de déploiement minutieuse qui est contrôlée à chaque étape. Les appareils enregistrés sont surveillés 24 heures sur 24 et 7 jours sur 7 pour des questions techniques et de sécurité, de sorte que si un problème survient, de l'aide est immédiatement disponible.
 
 
 ## <a name="unique-to-microsoft-managed-desktop"></a>Caractéristiques uniques au Bureau géré Microsoft
@@ -53,7 +53,7 @@ Les administrateurs informatiques bénéficient des fonctionnalités suivantes 
 Bureau géré Microsoft prend en charge la gestion des appareils enregistrés et des logiciels Microsoft utilisés.
 
 - **Matériel :** au lieu de faire rechercher et tester les appareils (et leurs pilotes) par votre service informatique, des appareils spécifiques sont soigneusement testés par Bureau géré Microsoft, ce qui permet d'établir une [liste d'appareils](../service-description/device-list.md) organisée répondant aux exigences de performance à l'échelle de l'entreprise et garantissant leur fonctionnement avec le service. Vous pouvez soit vous procurer les appareils vous-même (ou travailler avec un partenaire), soit réutiliser les appareils que vous avez déjà, à condition qu'ils figurent sur la liste approuvée. L'inscription des appareils est simple et facile, et avant leur déploiement, vous pouvez également [personnaliser](../working-with-managed-desktop/config-setting-overview.md) certains aspects de l'expérience des appareils pour vos utilisateurs finaux.
-- **Mises à jour :** Microsoft Managed Desktop définit et gère tous les aspects des [groupes de déploiement](../service-description/updates.md) pour les mises à jour de qualité et de fonctionnalité de Windows 10, les pilotes, le microprogramme, les définitions de virus et les applications Microsoft 365 pour les mises à jour d’entreprise. Cela comprend des tests et des vérifications approfondies de toutes les mises à jour, afin de s'assurer que les appareils enregistrés sont toujours à jour et de minimiser les perturbations, libérant ainsi votre département informatique de cette tâche permanente.
+- **Mises à jour :** Bureau géré Microsoft configure et gère tous les aspects des [groupes de déploiement](../service-description/updates.md) pour les mises à jour de qualité et de fonctionnalités de Windows 10, les pilotes, les micrologiciels, les définitions des anti-virus et les mises à jour de Microsoft 365 Apps for enterprise. Cela comprend des tests et des vérifications approfondies de toutes les mises à jour, afin de s'assurer que les appareils enregistrés sont toujours à jour et de minimiser les perturbations, libérant ainsi votre département informatique de cette tâche permanente.
 - **Applications :** dans le cadre de Microsoft 365 Entreprise, Microsoft fournit (et gère) plusieurs applications Microsoft clés pour vous. Vous avez probablement aussi d'autres applications dont vous avez besoin pour votre entreprise. Au lieu de faire tester, conditionner et déployer ces applications par votre département informatique, Microsoft vous aide à les déployer et peut vous assister avec [Desktop App Assure](https://docs.microsoft.com/fasttrack/win-10-desktop-app-assure) si nécessaire. Pour en savoir plus, consultez la rubrique [Applications dans Bureau géré Microsoft](../get-ready/apps.md).
 
 
@@ -65,7 +65,7 @@ Nous surveillons également l'intégrité des appareils et vous fournissons des 
 
 
 ## <a name="need-more-details"></a>Vous avez besoin d’informations complémentaires ?
-Pour en savoir plus sur la valeur de Bureau géré Microsoft, y compris les témoignages de clients, consultez la rubrique [Bureau géré Microsoft](https://aka.ms/mmd). La feuille de [route](https://aka.ms/AA6jiam), une [étude de cas d’impact économique total de Forrester](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/intro/downloads/forrester-tei-study.pdf)et un résumé téléchargeable sur une seule [page](https://aka.ms/AA6ob3h)sont des emplacements très intéressants. Vous pouvez trouver les dernières informations sur le [blog](https://aka.ms/AA6l2dd) Bureau géré Microsoft.
+Pour en savoir plus sur la valeur de Bureau géré Microsoft, y compris les témoignages de clients, consultez la rubrique [Bureau géré Microsoft](https://aka.ms/mmd). La [feuille de route](https://aka.ms/AA6jiam) est une [enquête de cas d’impact économique Total](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/intro/downloads/forrester-tei-study.pdf)et une [synthèse d’une seule page](https://aka.ms/AA6ob3h), et téléchargeable un résumé de la page. Vous pouvez trouver les dernières informations sur le [blog](https://aka.ms/AA6l2dd) Bureau géré Microsoft.
 
 Si Bureau géré Microsoft semble convenir à votre organisation, vous pouvez consulter des documents supplémentaires qui expliquent plus en détail le service, la manière de préparer votre organisation à l'adhésion, la manière de démarrer le service et les opérations en cours par la suite, y compris la manière dont vous et vos utilisateurs finaux pouvez facilement obtenir de l'aide si nécessaire. Dès que vous êtes prêt à embarquer, commencez par contacter votre [équipe de compte locale](https://pages.email.office.com/contactmmd/).
 
