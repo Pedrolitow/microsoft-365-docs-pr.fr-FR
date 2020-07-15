@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 05/15/2020
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 09e2f69eb5999ea104c62c807d348ca26b9236cf
-ms.sourcegitcommit: 9ee1261c405f82b49c62390a25dfdea23340d644
+ms.openlocfilehash: 1d8bd316b847502f9e4b1c94afbf67a0472015a6
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2020
-ms.locfileid: "45039399"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45126408"
 ---
 # <a name="whats-new-in-office-365-atp"></a>Nouveautés d’Office 365 - Protection avancée contre les menaces
 
@@ -34,6 +34,10 @@ Cet article répertorie les nouvelles fonctionnalités de la dernière version d
 
 > [!TIP]
 > Vous n’avez pas encore Office 365 ATP ? [Contactez le service commercial pour commencer une version d’évaluation](https://go.microsoft.com/fwlink/p/?LinkId=518644).
+
+## <a name="julyaugust-2020"></a>Juillet/août 2020 
+
+- [Améliorations de l’expérience de la chasse](threat-explorer.md#experience-improvements-to-threat-explorer-and-real-time-detections)
 
 ## <a name="marchapril-2020"></a>Mars/avril 2020
 
@@ -60,7 +64,7 @@ Cet article répertorie les nouvelles fonctionnalités de la dernière version d
 
 - [Utiliser les vues de campagne dans Office 365 ATP (**Aperçu**)](campaigns.md)
 
-## <a name="july-2020"></a>Juillet 2020 
+## <a name="july-2020"></a>Juillet 2020 
  
 - [Améliorations de l’expérience de la chasse](threat-explorer.md#experience-improvements-to-threat-explorer-and-real-time-detections)
 
@@ -77,7 +81,7 @@ Cet article répertorie les nouvelles fonctionnalités de la dernière version d
 
 - [Afficher les en-têtes des messages électroniques et télécharger le corps du courrier](investigate-malicious-email-that-was-delivered.md) (plan 1 de l’ATP Office 365 ou plan 2)
 
-## <a name="august-2019"></a>Août 2019
+## <a name="august-2019"></a>Août 2019
 
 - [Affichage de la chronologie de l’e-mail](investigate-malicious-email-that-was-delivered.md#view-the-timeline-of-your-email) (plan 1 Office 365 DAV ou plan 2)
 

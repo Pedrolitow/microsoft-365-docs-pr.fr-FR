@@ -18,11 +18,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 48850c76176d79e4f90581bfbab804f4649998cc
-ms.sourcegitcommit: 7c1b34205746ff0690ffc774a74bdfd434256cf5
+ms.openlocfilehash: b7bda309dbb1b601c77b6fb34ff9b8be14d5638d
+ms.sourcegitcommit: f7566dd6010744c72684efdc37f4471672330b61
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "45049631"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "45138277"
 ---
 # <a name="proactively-hunt-for-threats-with-advanced-hunting-in-microsoft-threat-protection"></a>Repérage proactive de menaces avec repérage avancé dans la Protection Microsoft contre les menaces
 
@@ -43,7 +44,7 @@ Nous vous recommandons de suivre plusieurs étapes pour devenir rapidement opér
 
 | Objectif d’apprentissage | Description | Ressource |
 |--|--|--|
-| **Prise en main du langage** | La fonction de repérage avancé est basée sur le [langage de requête Kusto](https://docs.microsoft.com/azure/kusto/query/), prenant en charge les mêmes syntaxe et opérateurs. Commencez à découvrir le langage de requête en exécutant votre première requête. | [Vue d'ensemble du language de requête](advanced-hunting-query-language.md) |
+| **Prise en main du langage** | La chasse avancée est basée sur le [langage de requête Kusto](https://docs.microsoft.com/azure/kusto/query/), qui prend en charge les mêmes syntaxe et opérateurs. Commencez à découvrir le langage de requête en exécutant votre première requête. | [Vue d'ensemble du language de requête](advanced-hunting-query-language.md) |
 | **En savoir plus sur l’utilisation des résultats de la requête** | Découvrez les graphiques et les différentes façons d’afficher ou d’exporter les résultats. Découvrez comment affiner rapidement les requêtes et approfondir pour obtenir des informations plus détaillées. | [Travailler avec les résultats de la requête](advanced-hunting-query-results.md) |
 | **Comprendre le schéma** | Obtenez une compréhension optimale des tableaux du schéma et de leurs colonnes. Cela vous permet de déterminer où rechercher des données et comment construire vos requêtes. | [Référence de schéma](advanced-hunting-schema-tables.md) |
 | **Utiliser les requêtes prédéfinies** | Explorez les collections de requêtes prédéfinies couvrant différents scénarios de repérage de menaces. | - [Utiliser des requêtes partagées](advanced-hunting-shared-queries.md)<br>- [Aller-retour](advanced-hunting-go-hunt.md) |
@@ -53,6 +54,11 @@ Nous vous recommandons de suivre plusieurs étapes pour devenir rapidement opér
 ## <a name="get-access"></a>Obtenir l’accès
 Pour utiliser la chasse avancée ou d’autres fonctionnalités de [protection contre les menaces Microsoft](microsoft-threat-protection.md) , vous devez disposer d’un rôle approprié dans Azure ad. Notez que votre accès aux données de point de terminaison est influencé par les paramètres de contrôle d’accès basé sur un rôle dans Microsoft Defender ATP. [En savoir plus sur la gestion de l’accès à Microsoft Threat Protection](mtp-permissions.md)
 
+## <a name="data-freshness-and-update-frequency"></a>Actualisation et fréquence de mise à jour des données
+Les données de chasse avancées peuvent être classées en deux types distincts, chacune étant consolidée différemment.
+
+- **Données d’événement ou d’activité** : renseigne des tableaux sur les alertes, les événements de sécurité, les événements système et les évaluations de routine. La chasse avancée reçoit ces données presque immédiatement après que les capteurs qui les recueillent les transmettent aux services Cloud correspondants. Par exemple, vous pouvez commencer à interroger des données d’événement à partir de capteurs sains sur des stations de travail ou des contrôleurs de domaine presque immédiatement après qu’ils sont disponibles sur Microsoft Defender ATP et Azure ATP.
+- **Données d’entité** : remplit des tables avec des informations consolidées sur les utilisateurs et les appareils. Ces données proviennent de sources de données relativement statiques, telles que des entrées Active Directory, et de sources dynamiques, telles que des journaux des événements. Pour fournir des données actualisées, les tableaux sont mis à jour toutes les 15 minutes avec les nouvelles informations, ajoutant des lignes qui ne sont peut-être pas entièrement renseignées. Toutes les 24 heures, les données sont consolidées pour insérer un enregistrement qui contient le jeu de données le plus complet et le plus complet sur chaque entité.
 
 ## <a name="related-topics"></a>Sujets associés
 - [Apprendre le langage de requête](advanced-hunting-query-language.md)

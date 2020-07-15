@@ -5,7 +5,7 @@ author: brendacarter
 f1.keywords:
 - NOCSH
 manager: laurawi
-ms.date: 06/09/2020
+ms.date: 07/13/2020
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -16,12 +16,12 @@ ms.collection:
 - M365solutions
 ms.custom: ''
 description: Déterminez la réglementation relative à la confidentialité des données, les scénarios pertinents, votre disponibilité et les types d’informations sensibles qui se trouvent dans votre environnement Microsoft 365.
-ms.openlocfilehash: f8d8fd0b5e6d8876dead566a50408cb2e7419386
-ms.sourcegitcommit: 4512f54ba80d869d4c04e8f9bd897d1878280852
+ms.openlocfilehash: 0cfa9f8a22810027e1a31ce2ace8b42f26ef9eb2
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "44854351"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45126601"
 ---
 # <a name="assess-data-privacy-risks-and-identify-sensitive-items-with-microsoft-365"></a>Évaluer les risques de confidentialité des données et identifier les éléments sensibles avec Microsoft 365
 
@@ -59,7 +59,7 @@ Pour référence ultérieure dans les Articles de cette solution globale, ce tab
 
 | Réglementations | Article/section | Quiz | Catégories de contrôle technique applicables |
 |:-------|:-----|:-------|:-------|
-| RGPD | Article 5 (1) (f) | Les données personnelles doivent être traitées de manière à garantir une sécurité appropriée des données personnelles, y compris la protection contre le traitement non autorisé ou illégal et contre la perte accidentelle, la destruction ou les dégâts, à l’aide de mesures techniques ou organisationnelles appropriées (« intégrité et confidentialité ».  |  Tous les <br> Identité <br> Device <br> Protection contre les menaces <br> Protéger les informations <br> Gestion des informations <br> Découvrir et répondre |
+| RGPD | Article 5 (1) (f) | Les données personnelles doivent être traitées de manière à garantir une sécurité appropriée des données personnelles, y compris la protection contre le traitement non autorisé ou illégal et contre la perte accidentelle, la destruction ou les dégâts, à l’aide de mesures techniques ou organisationnelles appropriées (« intégrité et confidentialité ».  |  Tous les <br> Identité <br> Appareil <br> Protection contre les menaces <br> Protéger les informations <br> Gestion des informations <br> Découvrir et répondre |
 |  | Article (32) (1) (a) | Tenant compte de l’état de la technique, des coûts de mise en œuvre et de la nature, de l’étendue, du contexte et des objectifs du traitement, ainsi que des risques de probabilité et de gravité variables pour les droits et les libertés des personnes physiques, le responsable du traitement et le transformateur mettent en œuvre les mesures techniques et organisationnelles appropriées pour garantir un niveau de sécurité approprié pour le risque. , y compris, entre autres, selon les besoins : (a) l’pseudonymage et le chiffrement des données personnelles. | Protéger les informations |
 |  | Article (13) (2) (a) | "... le contrôleur doit, au moment de l’obtention des données personnelles, fournir aux personnes concernées les informations supplémentaires suivantes nécessaires pour assurer un traitement équitable et transparent : (a) la période pendant laquelle les données personnelles seront stockées ou, si cela n’est pas possible, les critères utilisés pour déterminer cette période. | Gestion des informations |
 |  | Article (15) (1) (e) | La personne concernée a le droit d’obtenir de la part du responsable de la confirmation du contrôleur si les données personnelles le concernant sont traitées, et, si c’est le cas, l’accès aux données personnelles et les informations suivantes : (e) l’existence du droit de demander la rectification ou l’effacement des données personnelles ou la limitation du traitement des données personnelles concernant la personne concernée ou l’objet de ce traitement. | Découvrir et répondre |
@@ -98,6 +98,8 @@ Les données se déplacent également à mesure qu’elles sont traitées, affin
 Pour répondre aux réglementations en matière de confidentialité des données, vous ne pouvez pas compter sur les notions générales de l’endroit où vous pensez que des données personnelles peuvent exister, maintenant ou ultérieurement. Les réglementations sur la confidentialité des données exigent que les organisations prouvent qu’elles connaissent l’évolution continue des données personnelles. Il est donc important de prendre une capture instantanée initiale de toutes vos sources de données afin de stocker éventuellement des informations personnelles, notamment votre environnement Microsoft 365, et d’établir des mécanismes de surveillance et de détection en cours.
 
 Si vous n’avez pas encore évalué votre disponibilité et tous les risques globaux associés à la réglementation en matière de confidentialité des données, utilisez l’infrastructure en trois étapes suivante pour commencer. 
+
+![Étapes permettant d’évaluer la disponibilité et les risques globaux associés aux réglementations en matière de confidentialité des données](../media/information-protection-deploy-assess/information-protection-deploy-assess-grid.png)
 
 >[!Note]
 >Cet article et son contenu ne sont pas destinés à remplacer des services de Conseil juridiques. Il fournit simplement des conseils de base et des liens vers des outils qui peuvent vous aider lors des premières étapes de votre évaluation.
@@ -178,7 +180,7 @@ Les organisations soumises à d’autres réglementations sur la confidentialit�
 
 L’évaluation de RGPD comprend les sections suivantes :
 
-| | |
+| Section | Description |
 |:-------|:-----|
 | Gouvernance | <ol><li>Votre politique de confidentialité indique-t-elle explicitement les informations de données traitées ? </li><li>Exécutez-vous régulièrement des analyses d’impact sur la confidentialité (PIA) ? </li><li> Utilisez-vous un outil pour gérer les informations personnelles (PI) ? </li><li> Disposez-vous d’une autorité légale pour mener des activités commerciales à l’aide de données PI sur un individu donné ? Effectuez-vous le suivi de l’autorisation pour les données ? </li><li> Effectuez-vous le suivi, l’implémentation et la gestion des contrôles d’audit ? Surveillez-vous les fuites de données ? </li></ol>|
 | Suppression et notification | <ol><li>Donnez-vous des instructions explicites sur la façon dont les données des utilisateurs sont accessibles ? </li><li> Disposez-vous de processus documentés en place pour gérer le consentement d’exclusion ? </li><li> Disposez-vous d’un processus de suppression automatisé pour les données ? </li><li>   Avez-vous un processus de validation de l’identité lors de l’implication d’un client ? </li></ol>|
@@ -212,7 +214,7 @@ Pour plus d’informations, consultez les articles suivants :
 - [Types d’informations sensibles personnalisés](../compliance/custom-sensitive-info-types.md)
 - [Créer un type d’informations sensibles personnalisé dans le Centre de Conformité et Sécurité](../compliance/create-a-custom-sensitive-information-type.md)
 - [Créer un type d’informations sensibles personnalisé dans l’interface PowerShell du Centre de sécurité et conformité](../compliance/create-a-custom-sensitive-information-type-in-scc-powershell.md)
-- [Créez des types d’informations sensibles personnalisés à l’aide d’une classification Exact Data Match.](../compliance/create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)
+- [Créer des types d’informations sensibles personnalisés avec une classification des données exacte](../compliance/create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)
 
 ### <a name="content-explorer"></a>Explorateur de contenu
 

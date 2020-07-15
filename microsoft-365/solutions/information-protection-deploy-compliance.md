@@ -5,7 +5,7 @@ author: brendacarter
 f1.keywords:
 - NOCSH
 manager: laurawi
-ms.date: 06/09/2020
+ms.date: 07/13/2020
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -15,19 +15,21 @@ ms.collection:
 - Strat_O365_Enterprise
 - M365solutions
 ms.custom: ''
-description: Découvrez comment utiliser le score Complance et le gestionnaire de conformité pour améliorer votre niveau de protection des données personnelles.
-ms.openlocfilehash: 4a45f24d66d08c2c0f17d75d897f523ef074936c
-ms.sourcegitcommit: 0650da0e54a2b484a3156b3aabe44397fbb38e00
+description: Découvrez comment utiliser le score de conformité et le gestionnaire de conformité pour améliorer votre niveau de protection des données personnelles.
+ms.openlocfilehash: d3730f7a91876befc05f749497540fbe9abe9641
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "45016366"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45126547"
 ---
 # <a name="use-compliance-score-and-compliance-manager-to-manage-improvement-actions"></a>Utiliser le score de conformité et le gestionnaire de conformité pour gérer les actions d’amélioration
 
 Le score de conformité de Microsoft et le gestionnaire de conformité peuvent être utilisés conjointement pour gérer les améliorations liées aux réglementations de confidentialité des données, telles que le règlement général sur la protection des [données (RGPD)](../compliance/gdpr.md), la [protection des consommateurs California CCPA)](../compliance/ccpa-faq.md), le HIPAA-Hi (USA Health Care Privacy Act) et le Brésil Data Protection Act (LGPD). 
 
 Cet article fournit des instructions sur l’utilisation de ces outils à des fins de confidentialité des données.
+
+![Score de conformité et gestionnaire de conformité pour gérer les actions d’amélioration](../media/information-protection-deploy-compliance/information-protection-deploy-compliance-grid.png)
 
 >[!Note]
 >Les actions client fournies dans le gestionnaire de conformité sont des recommandations. Il vous revient d’évaluer l’efficacité de ces recommandations dans vos environnements réglementaires avant de l’implémenter. Les recommandations du gestionnaire de conformité ne doivent pas être interprétées comme une garantie de conformité.
