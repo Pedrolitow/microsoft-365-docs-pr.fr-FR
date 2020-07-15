@@ -17,11 +17,12 @@ ms.collection:
 - M365solutions
 ms.custom: ''
 description: Utilisez les services de sécurité et de conformité Microsoft 365 pour protéger vos applications, données et appareils destinés aux travailleurs à distance.
-ms.openlocfilehash: d8419c00bc4d8b99d9456abafbd5869ca26f4556
-ms.sourcegitcommit: 7c1b34205746ff0690ffc774a74bdfd434256cf5
+ms.openlocfilehash: 5ba60a04cf6717f8f9261ed72336445c8d7876bc
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "45049863"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45127073"
 ---
 # <a name="step-3-deploy-security-and-compliance-for-remote-workers"></a>Étape 3 : déployer la sécurité et la conformité pour les travailleurs distants
 
@@ -53,6 +54,8 @@ Protégez vos applications et données grâce aux fonctionnalités de sécurité
 | Azure AD Identity Protection  | Automatisez la détection et la correction des risques basés sur l’identité. <br><br>Créez des stratégies d’accès conditionnel basées sur le risque qui requièrent l’authentification multifacteur (MFA) pour les connexions à risque. | Microsoft 365 E5 ou E3 avec les licences Azure AD Premium P2 |
 ||||
 
+Consultez [Tâches rapides pour démarrer avec la conformité Microsoft 365](../compliance/compliance-quick-tasks.md) pour plus d’informations.
+
 ## <a name="compliance"></a>Conformité
 
 Respectez les stratégies internes ou les exigences réglementaires avec ces fonctionnalités de conformité de Microsoft 365.
@@ -63,10 +66,12 @@ Respectez les stratégies internes ou les exigences réglementaires avec ces fon
 | Protection contre la perte de données (DLP) | Détectez, signalez et bloquez le partage risqué, accidentel ou inapproprié, tel que le partage de données contenant des informations personnelles, à la fois en interne et en externe. | Microsoft 365 E3 et E5 | 
 | Contrôle d’application d’accès conditionnel | Empêchez le téléchargement de données sensibles sur les appareils personnels des utilisateurs. | Microsoft 365 E3 et E5 |
 | Étiquettes et stratégies de rétention des données | Mettez en place des contrôles de gouvernance des informations, tels que la durée de conservation des données ainsi que des exigences sur le stockage de données personnelles sur les clients, pour vous conformer aux stratégies de votre organisation ou aux réglementations relatives aux données. | Microsoft 365 E3 et E5 |
-| Chiffrement du courrier électronique | Envoyez et recevez entre des personnes à l’intérieur et à l’extérieur de votre organisation des messages électroniques chiffrés qui contiennent des données réglementées, telles que des données personnelles relatives aux clients. | Microsoft 365 E3 et E5 |
+| Chiffrement des messages Office (OME) | Envoyez et recevez entre des personnes à l’intérieur et à l’extérieur de votre organisation des messages électroniques chiffrés qui contiennent des données réglementées, telles que des données personnelles relatives aux clients. | Microsoft 365 E3 et E5 |
 | Gestionnaire de conformité | Gérez les activités de conformité réglementaire liées aux services cloud Microsoft avec cet outil d’évaluation des risques basé sur les flux de travail dans le portail d’approbation de services Microsoft. | Microsoft 365 E3 et E5 |
 | Score de conformité (préversion) | Obtenez un score global concernant votre configuration de conformité actuelle avec des recommandations pour l’améliorer dans le centre de conformité Microsoft 365. | Microsoft 365 E3 et E5 |
 ||||
+
+Consultez [12 premières tâches pour les équipes de sécurité qui prennent en charge le travail à domicile](../security/top-security-tasks-for-remote-work.md) pour plus d’informations.
 
 ## <a name="results-of-step-3"></a>Résultats de l’étape 3
 
