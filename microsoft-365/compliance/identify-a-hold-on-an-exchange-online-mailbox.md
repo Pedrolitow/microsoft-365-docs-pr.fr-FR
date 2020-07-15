@@ -17,12 +17,12 @@ ms.assetid: 6057daa8-6372-4e77-a636-7ea599a76128
 ms.custom:
 - seo-marvel-apr2020
 description: Découvrez comment identifier les différents types de conservation pouvant être placés sur une boîte aux lettres Exchange Online dans Microsoft 365.
-ms.openlocfilehash: a1629e96352a8b98d1122e9b31b968cdce9efa33
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: ea7beb34107fb5eaf61c56ece7bde8070e6467a6
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44817603"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45126805"
 ---
 # <a name="how-to-identify-the-type-of-hold-placed-on-an-exchange-online-mailbox"></a>Comment identifier le type de conservation placé sur une boîte aux lettres Exchange Online
 
@@ -36,7 +36,7 @@ Microsoft 365 offre plusieurs méthodes permettant à votre organisation d’emp
 
 - ** [Conservation](https://docs.microsoft.com/Exchange/security-and-compliance/create-or-remove-in-place-holds)inaltérable :** Conservations appliquées aux boîtes aux lettres des utilisateurs à l’aide de l’outil de conservation des & de découverte électronique inaltérable dans le centre d’administration Exchange dans Exchange Online.
 
-- ** [Stratégies de rétention Microsoft 365](retention-policies.md):** Peut être configuré pour conserver (ou conserver, puis supprimer) le contenu des boîtes aux lettres utilisateur dans Exchange Online et dans la boîte aux lettres correspondante pour les groupes Microsoft 365 et Microsoft Teams. Vous pouvez également créer une stratégie de rétention pour conserver les conversations Skype entreprise, qui sont stockées dans des boîtes aux lettres utilisateur.
+- ** [Stratégies de rétention Microsoft 365](retention.md):** Peut être configuré pour conserver (ou conserver, puis supprimer) le contenu des boîtes aux lettres utilisateur dans Exchange Online et dans la boîte aux lettres correspondante pour les groupes Microsoft 365 et Microsoft Teams. Vous pouvez également créer une stratégie de rétention pour conserver les conversations Skype entreprise, qui sont stockées dans des boîtes aux lettres utilisateur.
 
   Il existe deux types de stratégies de rétention Microsoft 365 pouvant être attribuées à des boîtes aux lettres.
 
@@ -46,7 +46,7 @@ Microsoft 365 offre plusieurs méthodes permettant à votre organisation d’emp
     
   Pour plus d’informations, reportez-vous [à la section application d’une stratégie de rétention à une organisation entière ou à des emplacements spécifiques](create-retention-policies.md#applying-a-retention-policy-to-an-entire-organization-or-specific-locations) .
 
-- **[Étiquettes de rétention microsoft 365](labels.md):** si un utilisateur applique une étiquette de rétention Microsoft 365 (une étiquette configurée pour conserver le contenu ou conserver et supprimer du contenu) pour *un* dossier ou un élément de sa boîte aux lettres, une conservation est placée sur la boîte aux lettres comme si elle était placée en conservation pour litige ou affectée à une stratégie de rétention Microsoft 365. Pour plus d’informations, consultez la section [identification des boîtes aux lettres en attente, car une étiquette de rétention a été appliquée à un dossier ou à une](#identifying-mailboxes-on-hold-because-a-retention-label-has-been-applied-to-a-folder-or-item) section d’élément de cet article.
+- **[Étiquettes de rétention microsoft 365](retention.md):** si un utilisateur applique une étiquette de rétention Microsoft 365 (une étiquette configurée pour conserver le contenu ou conserver et supprimer du contenu) pour *un* dossier ou un élément de sa boîte aux lettres, une conservation est placée sur la boîte aux lettres comme si elle était placée en conservation pour litige ou affectée à une stratégie de rétention Microsoft 365. Pour plus d’informations, consultez la section [identification des boîtes aux lettres en attente, car une étiquette de rétention a été appliquée à un dossier ou à une](#identifying-mailboxes-on-hold-because-a-retention-label-has-been-applied-to-a-folder-or-item) section d’élément de cet article.
 
 Pour gérer les boîtes aux lettres en conservation, il se peut que vous deviez identifier le type de blocage placé sur une boîte aux lettres afin de pouvoir effectuer des tâches telles que la modification de la durée de la conservation, la suppression temporaire ou définitive de la conservation ou l’exclusion d’une boîte aux lettres d’une stratégie de rétention Microsoft 365. Dans ce cas, la première étape consiste à identifier le type de conservation placé sur la boîte aux lettres. Étant donné que plusieurs suspensions (et différents types de suspensions) peuvent être placées sur une seule boîte aux lettres, vous devez identifier toutes les suspensions placées sur une boîte aux lettres si vous voulez supprimer ou modifier une conservation.
 
@@ -100,7 +100,7 @@ Le tableau suivant décrit les différents types de conservations à l’échell
 |Stratégies de rétention Microsoft 365 appliquées aux boîtes aux lettres Exchange, aux dossiers publics Exchange et aux conversations teams    |      `mbx7cfb30345d454ac0a989ab3041051209:2`   |   Les stratégies de rétention à l’échelle de l’organisation appliquées aux boîtes aux lettres Exchange, aux dossiers publics Exchange et aux conversations 1xN dans Microsoft teams sont identifiées par des GUID qui commencent par le `mbx` préfixe. Remarque les conversations 1xN sont stockées dans la boîte aux lettres des participants individuels de la conversation.      |
 |Stratégie de rétention Microsoft 365 appliquée aux groupes Microsoft 365 les messages de canal et Teams     |   `grp1a0a132ee8944501a4bb6a452ec31171:3`      |    Les stratégies de rétention à l’échelle de l’organisation appliquées aux groupes et messages de canal Microsoft 365 dans Microsoft teams sont identifiées par des GUID qui commencent par le `grp` préfixe. Remarque les messages de canal sont stockés dans la boîte aux lettres de groupe qui est associée à une équipe Microsoft.     |
 
-Pour plus d’informations sur les stratégies de rétention appliquées à Microsoft Teams, consultez la section « emplacement des équipes » [vue d’ensemble des stratégies de rétention](create-retention-policies.md#applying-a-retention-policy-to-an-entire-organization-or-specific-locations).
+Pour plus d’informations sur les stratégies de rétention appliquées à Microsoft Teams, voir [en savoir plus sur les stratégies de rétention pour Microsoft teams](retention-policies-teams.md).
 
 ### <a name="understanding-the-format-of-the-inplaceholds-value-for-retention-policies"></a>Présentation du format de la valeur InPlaceHolds pour les stratégies de rétention
 
@@ -120,7 +120,7 @@ Le tableau suivant définit les trois actions de rétention possibles :
 |**n°2**    |    Indique que la stratégie de rétention est configurée pour conserver les éléments. La stratégie ne supprime pas les éléments après l’expiration de la période de rétention.     |
 |**3**     |   Indique que la stratégie de rétention est configurée pour conserver les éléments, puis les supprimer une fois la période de rétention expirée.      |
 
-Pour plus d’informations sur les actions de rétention, voir la section « conservation du contenu pendant une période de temps spécifique » dans [vue d’ensemble des stratégies de rétention](create-retention-policies.md#retaining-content-for-a-specific-period-of-time).
+Pour plus d’informations sur les actions de rétention, consultez la section [conservation du contenu pendant une période de temps spécifique](create-retention-policies.md#retaining-content-for-a-specific-period-of-time) .
    
 ## <a name="step-2-use-the-guid-to-identify-the-hold"></a>Étape 2 : utiliser le GUID pour identifier la conservation
 
@@ -179,7 +179,7 @@ Pour afficher la valeur de la propriété *ComplianceTagHoldApplied* , exécutez
 Get-Mailbox <username> |FL ComplianceTagHoldApplied
 ```
 
-Pour plus d’informations sur les étiquettes de rétention, consultez la rubrique [vue d’ensemble des étiquettes de rétention Microsoft 365](labels.md).
+Pour plus d’informations sur les étiquettes de rétention, consultez la rubrique [étiquettes de rétention](retention.md#retention-labels).
 
 ## <a name="managing-mailboxes-on-delay-hold"></a>Gestion des boîtes aux lettres en attente de retard
 

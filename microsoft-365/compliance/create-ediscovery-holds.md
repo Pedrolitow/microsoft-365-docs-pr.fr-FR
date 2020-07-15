@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Vous pouvez créer une conservation associée à un cas de découverte électronique de base pour conserver le contenu qui peut être pertinent pour une enquête.
-ms.openlocfilehash: 4ec9ff37a49f783afc25835ca91208608ab4733a
-ms.sourcegitcommit: 7bb3d8a93a85246172e2499d6c58c390e46f5bb9
+ms.openlocfilehash: b3a213e499a71356999367deff930ea9a04945df
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44498327"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45127521"
 ---
 # <a name="create-an-ediscovery-hold"></a>Créer une suspension de cas eDiscovery
 
@@ -67,7 +67,7 @@ Pour créer une conservation de découverte électronique qui est associée à u
 
 8. Lorsque vous avez terminé d’ajouter des emplacements de contenu au blocage, cliquez sur **suivant**.
 
-9. Pour créer une conservation basée sur une requête avec des conditions, procédez comme suit. Dans le cas contraire, pour conserver tout le contenu des emplacements de contenu spécifiés, cliquez sur **suivant** .
+9. Pour créer une conservation basée sur une requête avec des conditions, procédez comme suit. Dans le cas contraire, pour conserver tout le contenu des emplacements de contenu spécifiés, cliquez sur **suivant**.
 
     ![Créer une conservation basée sur une requête avec des conditions](../media/d587b58e-d05c-4ac0-b0fe-09019e4f1063.png)
   
@@ -80,6 +80,14 @@ Pour créer une conservation de découverte électronique qui est associée à u
 10. Après avoir configuré une conservation basée sur une requête, cliquez sur **suivant**.
 
 11. Vérifiez vos paramètres (et modifiez-les si nécessaire), puis cliquez sur **créer cette suspension**.
+
+## <a name="query-based-holds-placed-on-site-documents"></a>Conservations basées sur une requête placées sur des documents de site
+
+Gardez les points suivants à l’esprit lorsque vous placez une conservation eDiscovery basée sur une requête sur des documents se trouvant dans des sites SharePoint :
+
+- Une conservation basée sur une requête conserve initialement tous les documents d’un site pendant une courte période après leur suppression. En d’autres termes, lorsqu’un document est supprimé, il est déplacé vers la bibliothèque de conservation même s’il ne correspond pas aux critères de la conservation basée sur une requête. Toutefois, les documents supprimés qui ne correspondent pas à une conservation basée sur une requête sont supprimés par un travail du minuteur qui traite la bibliothèque de conservation de conservation. Le travail du minuteur s’exécute régulièrement et compare tous les documents de la bibliothèque de conservation de conservation à vos conservations eDiscovery basées sur une requête (et à d’autres types de suspension et de stratégie de rétention). Le travail du minuteur supprime les documents qui ne correspondent pas à une conservation basée sur une requête et conserve les documents qui le font.
+
+- Les conservations basées sur une requête ne doivent pas être utilisées pour effectuer une conservation ciblée, comme la conservation de documents dans un dossier ou un site spécifique ou à l’aide d’autres critères de conservation basés sur l’emplacement. Cela peut entraîner des résultats inattendus. Nous vous recommandons d’utiliser des critères de conservation non orientés tels que des mots clés, des plages de dates ou d’autres propriétés de document pour conserver les documents de site.
 
 ## <a name="ediscovery-hold-statistics"></a>statistiques de conservation eDiscovery
 
@@ -114,7 +122,7 @@ Voici quelques autres éléments à garder à l’esprit lors de la recherche d�
 - Si une recherche est configurée pour rechercher des emplacements de recherche, puis modifier une conservation de découverte électronique dans le cas (en ajoutant ou en supprimant un emplacement ou en modifiant une requête de suspension), la configuration de la recherche est mise à jour avec ces modifications. Toutefois, vous devez réexécuter la recherche après la modification de la conservation pour mettre à jour les résultats de la recherche.
 
 - Si plusieurs conservations eDiscovery sont placées à un seul emplacement dans un cas de découverte électronique et que vous choisissez de rechercher des emplacements en conservation, le nombre maximal de mots clés pour cette requête de recherche est de 500. Cela est dû au fait que la recherche combine toutes les conservations basées sur une requête à l’aide de l’opérateur **or** . S’il y a plus de 500 mots clés dans les requêtes de suspension combinées et la requête de recherche, tout le contenu de la boîte aux lettres est recherché, et pas seulement celui qui correspond à la casse basée sur une requête.
-    
+
 - Si une conservation de découverte électronique a l’état **activer**, vous pouvez toujours effectuer des recherches dans les emplacements pendant que la conservation est activée.
 
 ## <a name="preserve-content-in-microsoft-teams"></a>Conserver du contenu dans Microsoft teams
@@ -131,7 +139,7 @@ Pour plus d’informations sur la conservation du contenu de teams, consultez [l
 > Dans une organisation en nuage, les utilisateurs qui participent à des conversations faisant partie de la liste des conversations dans teams doivent disposer d’une boîte aux lettres Exchange Online afin de conserver les conversations de conversation lorsque la boîte aux lettres est placée sur une conservation eDiscovery. Cela est dû au fait que les conversations faisant partie de la liste des conversations sont stockées dans les boîtes aux lettres en nuage des participants à la conversation. Si un participant à une conversation ne dispose pas d’une boîte aux lettres Exchange Online, vous ne pourrez pas conserver ces conversations de conversation. Par exemple, dans un déploiement hybride Exchange, les utilisateurs disposant d’une boîte aux lettres locale peuvent être autorisés à participer à des conversations qui font partie de la liste des conversations dans Teams. Toutefois, dans ce cas, le contenu de ces conversations ne peut pas être préservé car ces utilisateurs ne disposent pas de boîtes aux lettres en nuage pouvant être placées en conservation.
   
 Chaque canal d’équipe ou d’équipe contient également un wiki pour la prise de notes et la collaboration. Le contenu wiki est automatiquement enregistré dans un fichier au format .mht. Ce fichier est stocké dans la bibliothèque de documents wiki Teams sur le site SharePoint de l’équipe. Vous pouvez conserver le contenu wiki en ajoutant le site SharePoint de l’équipe à une conservation eDiscovery.
-    
+
 > [!NOTE]
 > La possibilité de conserver le contenu wiki d’une équipe ou d’un canal d’équipe (lorsque vous placez le blocage du site SharePoint de l’équipe) a été publiée le 22 juin 2017. Si un site d’équipe est en conservation, le contenu wiki est conservé à partir de cette date. Toutefois, si un site d’équipe est en conservation et que le contenu wiki a été supprimé avant le 22 juin 2017, le contenu wiki n’a pas été préservé.
 
@@ -159,8 +167,8 @@ Gardez les points suivants à l’esprit lorsque vous placez les groupes teams e
   
 - Lors de la recherche dans la boîte aux lettres d’un utilisateur, les équipes ou le groupe Office 365 dont l’utilisateur est membre ne feront pas l’objet d’une recherche. De même, lorsque vous placez une équipe ou un groupe Office 365 sur une conservation eDiscovery, seule la boîte aux lettres de groupe et le site de groupe sont placés en conservation. Les boîtes aux lettres et les sites OneDrive entreprise des membres du groupe ne sont pas mis en attente, sauf si vous les ajoutez explicitement au blocage eDiscovery. Par conséquent, si vous devez placer une équipe ou un groupe Office 365 en conservation pour une raison juridique, envisagez d’ajouter les boîtes aux lettres et les comptes OneDrive des membres de l’équipe ou du groupe sur le même blocage.
 
-- Pour obtenir la liste des membres d’une équipe ou d’un groupe Office 365, vous pouvez afficher les propriétés dans la page **groupes** du centre d’administration Microsoft 365. Vous pouvez également exécuter la commande suivante dans Exchange Online PowerShell : 
-    
+- Pour obtenir la liste des membres d’une équipe ou d’un groupe Office 365, vous pouvez afficher les propriétés dans la page **groupes** du centre d’administration Microsoft 365. Vous pouvez également exécuter la commande suivante dans Exchange Online PowerShell :
+
     ```powershell
     Get-UnifiedGroupLinks <group or team name> -LinkType Members | FL DisplayName,PrimarySmtpAddress
     ```
@@ -179,7 +187,7 @@ Pour collecter une liste des URL pour les sites OneDrive entreprise de votre org
 
 Une fois qu’une boîte aux lettres, un site SharePoint ou un compte OneDrive est supprimé d’une conservation de découverte électronique, une attente de *retard* est appliquée. Cela signifie que la suppression effective de la conservation est retardée de 30 jours afin d’empêcher la suppression définitive des données d’un emplacement de contenu. Les administrateurs peuvent ainsi Rechercher ou récupérer du contenu qui sera purgé après la suppression d’une conservation de découverte électronique. Les détails du fonctionnement de la conservation du retard pour les boîtes aux lettres et les sites sont différents.
 
-- **Boîtes aux lettres :** Un retard de conservation est placé sur une boîte aux lettres la prochaine fois que l’Assistant dossier géré traite la boîte aux lettres et détecte qu’une conservation de découverte électronique a été supprimée. Plus précisément, un délai d’attente est appliqué à une boîte aux lettres lorsque l’Assistant dossier géré définit l’une des propriétés de boîte aux lettres suivantes sur **true**: 
+- **Boîtes aux lettres :** Un retard de conservation est placé sur une boîte aux lettres la prochaine fois que l’Assistant dossier géré traite la boîte aux lettres et détecte qu’une conservation de découverte électronique a été supprimée. Plus précisément, un délai d’attente est appliqué à une boîte aux lettres lorsque l’Assistant dossier géré définit l’une des propriétés de boîte aux lettres suivantes sur **true**:
 
    - **DelayHoldApplied :** Cette propriété s’applique au contenu lié au courrier électronique (généré par des personnes utilisant Outlook et Outlook sur le Web) stocké dans la boîte aux lettres d’un utilisateur.
 
@@ -191,14 +199,14 @@ Une fois qu’une boîte aux lettres, un site SharePoint ou un compte OneDrive e
 
 - **Sites SharePoint et OneDrive :** Tout contenu SharePoint ou OneDrive conservé dans la bibliothèque de conservation n’est pas supprimé pendant la période de retard de 30 jours après la suppression d’un site d’une conservation eDiscovery. Ceci est semblable à ce qui se produit lorsqu’un site est publié à partir d’une stratégie de rétention. En outre, vous ne pouvez pas supprimer manuellement ce contenu dans la bibliothèque de conservation pendant la période de retard de 30 jours. 
 
-   Pour plus d’informations, consultez [la rubrique libération d’une stratégie de rétention](retention-policies.md#releasing-a-retention-policy).
+   Pour plus d’informations, consultez [la rubrique libération d’une stratégie de rétention](retention.md#releasing-a-retention-policy).
 
 Une suspension de délai est également appliquée aux emplacements de contenu lorsque vous fermez un cas de découverte électronique de base, car les conservations sont désactivées lors de la fermeture du cas. Pour plus d’informations sur la fermeture d’un cas, voir [Close, Reopen et Delete a Core eDiscovery case](close-reopen-delete-core-ediscovery-cases.md).
 
 ## <a name="ediscovery-hold-limits"></a>limites de conservation pour la découverte électronique
 
 Le tableau suivant répertorie les limites pour les cas de découverte électronique et les conservations de casse.
-    
+
   |**Description de la limite**|**Limite**|
   |:-----|:-----|
   |Nombre maximal de cas pour une organisation  <br/> |Sans limite  <br/> |

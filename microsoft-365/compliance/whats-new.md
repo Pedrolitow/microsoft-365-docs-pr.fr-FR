@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Nous ajoutons constamment de nouvelles fonctionnalités au centre de conformité Microsoft 365. Découvrez ce que nous avons fait dans ce mois-ci.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 5dc55fe38b588cd2a9b6c67d3f651e7c52df0664
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 2a48a47c631b0fd3c7e785d98b7221a0c3550c79
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44817059"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45126907"
 ---
 # <a name="whats-new-in-the-microsoft-365-compliance-center"></a>Nouveautés du centre de conformité Microsoft 365
 
@@ -92,7 +92,7 @@ Nous serions ravis d’entendre ce que vous pensez. Lors de l’utilisation de l
 
 ### <a name="just-launched"></a>Venez de lancer
 
-**Conformité des communications**
+**Conformité de la communication**
 
 Le diplôme de la phase d’évaluation à la disponibilité complète, la conformité de la communication est un élément clé de notre nouvelle solution Insider Risk. Cette solution robuste permet de réduire les risques de communication à l’aide de flux de travail pour détecter, examiner et prendre des mesures correctives pour les messages qui ne répondent pas aux normes de votre organisation.
 
@@ -165,21 +165,21 @@ Si vous avez utilisé le centre de sécurité & conformité d’Office 365 pour 
 |Stratégies d’alerte|Alertes > les stratégies d’alerte <br/> https://protection.office.com/alertpolicies |Pour l’instant, les stratégies d’alerte sont gérées uniquement dans le centre de conformité & Office 365 Security. |[Stratégies d’alerte dans le Centre de sécurité et de conformité](alert-policies.md) |
 |Alertes|Alertes > afficher les alertes <br/> https://protection.office.com/viewalerts |Alertes <br/> https://compliance.microsoft.com/compliancealerts |[Affichage des alertes](alert-policies.md#viewing-alerts)|
 |Archiver|Archive de > de gouvernance des informations <br/> https://protection.office.com/archiving |Onglet Archive de > de gouvernance des informations <br/> https://compliance.microsoft.com/informationgovernance?viewid=archive |[Activer des boîtes aux lettres d’archivage](enable-archive-mailboxes.md)|
-|Recherche de journal d’audit|Recherche dans le journal d’audit > <br/> https://protection.office.com/unifiedauditlog |Audit <br/> https://compliance.microsoft.com/auditlogsearch | [Rechercher dans le journal d’audit dans le centre de sécurité & conformité](search-the-audit-log-in-security-and-compliance.md)|
+|Recherche de journal d’audit|Recherche dans le journal d’audit > <br/> https://protection.office.com/unifiedauditlog |Audit <br/> https://compliance.microsoft.com/auditlogsearch | [Effectuer des recherches dans le journal d’audit depuis le Centre de sécurité et conformité](search-the-audit-log-in-security-and-compliance.md)|
 |Recherche de contenu|Recherche > recherche de contenu <br/> https://protection.office.com/contentsearchbeta?ContentOnly=1 | Recherche de contenu <br/> https://compliance.microsoft.com/contentsearch |[Rechercher du contenu dans Office 365](search-for-content.md) |
 |Connecteurs de données|Gestion des informations > archivage des données tierces <br/> https://protection.office.com/nativeconnector | Connecteurs de données <br/> https://compliance.microsoft.com/connectorlanding |[Archiver des données tierces](archiving-third-party-data.md)|
 |Protection contre la perte de données|Protection contre la perte de données <br/> https://protection.office.com/datalossprevention |Protection contre la perte de données <br/> https://compliance.microsoft.com/datalossprevention |[Vue d’ensemble de la protection contre la perte de données](data-loss-prevention-policies.md)|
 |Demandes des personnes concernées |Confidentialité des données > demandes des personnes concernées <br/> https://protection.office.com/dsrcases |Demandes des personnes concernées <br/> https://compliance.microsoft.com/datasubjectrequest |[Gérer les demandes des personnes associées aux données RGPD avec l’outil de cas DSR](manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md)|
 |eDiscovery|découverte électronique > eDiscovery <br/> https://protection.office.com/ediscoveryv1 |> de découverte électronique <br/> https://compliance.microsoft.com/classicediscovery |[Gérer des cas eDiscovery](ediscovery-cases.md) |
-|Évènements|Événements de > de la gestion des enregistrements <br/> https://protection.office.com/events |Onglet > des événements de gestion des enregistrements <br/> https://compliance.microsoft.com/recordsmanagement?viewid=events |[Vue d’ensemble des rétentions basées sur des événements](event-driven-retention.md)|
+|Évènements|Événements de > de la gestion des enregistrements <br/> https://protection.office.com/events |Onglet > des événements de gestion des enregistrements <br/> https://compliance.microsoft.com/recordsmanagement?viewid=events |[Démarrer la rétention lorsqu’un événement se produit](event-driven-retention.md)|
 |Plan de gestion de fichiers|Gestion des enregistrements > plan de gestion des fichiers <br/> https://protection.office.com/fileplan |Onglet gestion des enregistrements > plan de fichiers <br/> https://compliance.microsoft.com/recordsmanagement?viewid=fileplan |[Utiliser le plan de gestion de fichiers pour gérer les étiquettes de rétention](file-plan-manager.md)|
 |Importer des fichiers PST|Gouvernance des informations > importer des fichiers PST <br/> https://protection.office.com/importV2 |Onglet > d’importation de la gouvernance des informations <br/> https://compliance.microsoft.com/informationgovernance?viewid=import |[Vue d’ensemble de l’importation des fichiers PST de votre organisation](importing-pst-files-to-office-365.md)|
 |Explorateur d’activité des étiquettes|Explorateur d’informations > d’activité des étiquettes <br/> https://protection.office.com/labelexplorer |Onglet Explorateur d’activités > classification des données <br/> https://compliance.microsoft.com/dataclassification?viewid=activitiesexplorer |[Afficher l’activité sur votre contenu étiqueté (aperçu)](data-classification-activity-explorer.md)|
-|Étiquettes de rétention et stratégies d’étiquette |Étiquettes de rétention > étiquettes de rétention > des étiquettes et des stratégies d’étiquette <br/> https://protection.office.com/retentionlabels |Onglets de gouvernance des informations > des étiquettes et des stratégies d’étiquette <br/> https://compliance.microsoft.com/informationgovernance?viewid=labels <br/> https://compliance.microsoft.com/informationgovernance?viewid=labelpolicies | [Vue d’ensemble des étiquettes de rétention](labels.md)|
-|Stratégies de rétention|Conservation des > de gouvernance des informations <br/> https://protection.office.com/retention |Onglet rétention > de gouvernance des informations <br/> https://compliance.microsoft.com/informationgovernance?viewid=retention |[Vue d’ensemble des stratégies de rétention](retention-policies.md)|
+|Étiquettes de rétention et stratégies d’étiquette |Étiquettes de rétention > étiquettes de rétention > des étiquettes et des stratégies d’étiquette <br/> https://protection.office.com/retentionlabels |Onglets de gouvernance des informations > des étiquettes et des stratégies d’étiquette <br/> https://compliance.microsoft.com/informationgovernance?viewid=labels <br/> https://compliance.microsoft.com/informationgovernance?viewid=labelpolicies | [Vue d’ensemble des étiquettes de rétention](retention.md)|
+|Stratégies de rétention|Conservation des > de gouvernance des informations <br/> https://protection.office.com/retention |Onglet rétention > de gouvernance des informations <br/> https://compliance.microsoft.com/informationgovernance?viewid=retention |[En savoir plus sur les stratégies de rétention et les étiquettes de conservation](retention.md)|
 |Types d’informations sensibles|Classification > types d’informations sensibles <br/> https://protection.office.com/sensitivetypes |Classification des données > onglet types d’informations sensibles <br/> https://compliance.microsoft.com/dataclassification?viewid=sensitiveinfotypes |[Définitions d’entités des types d’informations sensibles](sensitive-information-type-entity-definitions.md)|
 |Étiquettes de confidentialité et stratégies d’étiquette|Étiquettes de sensibilité > de classification > les étiquettes et les onglets stratégies d’étiquette <br/> https://protection.office.com/sensitivity |Onglets de protection des informations > des étiquettes et des stratégies d’étiquette <br/> https://compliance.microsoft.com/informationprotection?viewid=sensitivitylabels <br/> https://compliance.microsoft.com/informationprotection?viewid=sensitivitylabelpolicies |[En savoir plus sur les étiquettes de niveau de confidentialité](sensitivity-labels.md) |
-|Certification de service|Certification de service <br/> https://protection.office.com/serviceassurance/dashboard |Pour l’instant, les ressources de service assurance ne sont accessibles que dans le centre de conformité & Office 365 Security. |[Garantie de service dans le centre de sécurité & conformité](service-assurance.md)|
+|Certification de service|Certification de service <br/> https://protection.office.com/serviceassurance/dashboard |Pour l’instant, les ressources de service assurance ne sont accessibles que dans le centre de conformité & Office 365 Security. |[Certification de service dans le Centre de sécurité et conformité](service-assurance.md)|
 |Surveillance|Surveillance <br/> https://protection.office.com/supervisoryreviewv2 |Conformité des communications <br/> https://compliance.microsoft.com/supervisoryreview |[Conformité de la communication dans Microsoft 365 (version d’évaluation)](communication-compliance.md) |
 
 ## <a name="september-2019"></a>Septembre 2019
@@ -194,7 +194,7 @@ Lors de la configuration du chiffrement pour une étiquette de sensibilité, vou
 
 Accédez à [restreindre l’accès au contenu à l’aide des étiquettes de confidentialité pour appliquer le chiffrement](encryption-sensitivity-labels.md#let-users-assign-permissions) pour en savoir plus.
 
-## <a name="august-2019"></a>Août 2019
+## <a name="august-2019"></a>Août 2019
 
 ### <a name="update-to-data-investigations"></a>Mise à jour des enquêtes de données
 

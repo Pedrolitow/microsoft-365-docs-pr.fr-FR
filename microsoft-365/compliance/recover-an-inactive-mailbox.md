@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: 35d0ecdb-7cb0-44be-ad5c-69df2f8f8b25
 ms.custom: seo-marvel-apr2020
 description: Découvrez comment récupérer le contenu d’une boîte aux lettres inactive dans Office 365 en le convertissant en une nouvelle boîte aux lettres qui contient le contenu de la boîte aux lettres inactive.
-ms.openlocfilehash: e5ac5a5e5e9e73d118ea1872bf36476ee1e1965a
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 077355d31c3159b4970b00ee9c461d6a77cd3cf7
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44818944"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45127461"
 ---
 # <a name="recover-an-inactive-mailbox"></a>Récupérer une boîte aux lettres inactive
 
@@ -81,7 +81,7 @@ Une fois que vous avez récupéré une boîte aux lettres inactive, un nouveau c
   
      - **Conservation** inaltérable Les conservations inaltérables sont supprimées de la boîte aux lettres récupérée. Cela signifie que la boîte aux lettres Récupérée est supprimée en tant que boîte aux lettres source d’une conservation inaltérable ou d’une recherche de découverte électronique inaltérable.
      
-     - **Stratégie de rétention Microsoft 365 avec verrouillage de conservation.** Si la boîte aux lettres inactive a été affectée à une stratégie de rétention avec un verrou de conservation (appelé *stratégie de rétention verrouillée*), la boîte aux lettres Récupérée est affectée à la même stratégie de rétention verrouillée. Pour plus d’informations sur les stratégies de rétention verrouillées, voir [en savoir plus sur les stratégies de rétention](retention-policies.md#use-preservation-lock-to-comply-with-regulatory-requirements).
+     - **Stratégie de rétention Microsoft 365 avec verrouillage de conservation.** Si la boîte aux lettres inactive a été affectée à une stratégie de rétention avec un verrou de conservation (appelé *stratégie de rétention verrouillée*), la boîte aux lettres Récupérée est affectée à la même stratégie de rétention verrouillée. Pour plus d’informations sur les stratégies de rétention verrouillées, voir [utiliser le verrouillage de conservation pour respecter les exigences réglementaires](retention.md#use-preservation-lock-to-comply-with-regulatory-requirements).
   
      - **Stratégie de rétention Microsoft 365 sans verrou de conservation.** La boîte aux lettres inactive est supprimée de toutes les stratégies de rétention Microsoft 365 déverrouillées qui lui ont été appliquées. Toutefois, la conservation pour litige est activée sur la boîte aux lettres Récupérée afin d’empêcher la suppression du contenu d’une boîte aux lettres basée sur des stratégies de rétention à l’échelle de l’organisation qui suppriment le contenu antérieur à un âge donné. Vous pouvez conserver la conservation pour litige ou la supprimer. Pour plus d’informations, consultez [la rubrique créer une conservation pour litige](create-a-litigation-hold.md).
 

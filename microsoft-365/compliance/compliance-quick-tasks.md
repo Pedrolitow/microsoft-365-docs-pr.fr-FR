@@ -12,12 +12,12 @@ ms.collection:
 - M365-security-compliance
 localization_priority: Normal
 description: Découvrez les tâches qui vous aideront à commencer rapidement à prendre en main la conformité dans Microsoft 365.
-ms.openlocfilehash: 87dfa73c52473b0695c496826572ab9b5180dfca
-ms.sourcegitcommit: 92bd1631a2bb6df8683aa6da45a116090b338bb1
+ms.openlocfilehash: a946d4711111089ba6074b2c264b8edd36a01315
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "44732482"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45126613"
 ---
 # <a name="quick-tasks-for-getting-started-with-microsoft-365-compliance"></a>Tâches rapides pour la mise en route de la conformité Microsoft 365
 
@@ -83,7 +83,7 @@ Pour obtenir des conseils détaillés sur la configuration et l’utilisation de
 
 ## <a name="task-7-configure-a-retention-policy"></a>Tâche 7 : configurer une stratégie de rétention
 
-Une [stratégie de rétention](retention-policies.md) vous permet de décider de manière proactive de conserver le contenu, de supprimer du contenu, ou les deux, de conserver, puis de supprimer le contenu à la fin d’une période de rétention spécifiée. Ces actions peuvent être nécessaires pour se conformer aux réglementations sectorielles et aux politiques internes, ainsi que réduire le risque en cas de litige ou de violation de la sécurité.
+Une [stratégie de rétention](retention.md) vous permet de décider de manière proactive de conserver le contenu, de supprimer du contenu, ou les deux, de conserver, puis de supprimer le contenu à la fin d’une période de rétention spécifiée. Ces actions peuvent être nécessaires pour se conformer aux réglementations sectorielles et aux politiques internes, ainsi que réduire le risque en cas de litige ou de violation de la sécurité.
 
 Lorsque le contenu est soumis à une stratégie de rétention, les utilisateurs peuvent continuer à modifier et à travailler avec le contenu comme s’ils ne l’ont pas changé. Le contenu est conservé en place, à son emplacement d’origine. Toutefois, si un utilisateur modifie ou supprime le contenu qui est soumis à la stratégie de rétention, une copie du contenu d’origine est enregistrée à un emplacement sécurisé où il est conservé, tandis que la stratégie de rétention pour ce contenu est en vigueur.
 
@@ -107,11 +107,15 @@ Pour obtenir des conseils détaillés sur la planification et la configuration d
 
 ### <a name="configure-retention-labels"></a>Configurer des étiquettes de rétention
 
-Tandis que les stratégies de rétention s’appliquent au niveau du conteneur aux emplacements comme les sites SharePoint et les boîtes aux lettres Exchange, les [étiquettes de rétention](labels.md) permettent un ciblage plus spécifique pour vos stratégies de rétention et de suppression. Par exemple, au niveau du document ou du message électronique que les utilisateurs finaux peuvent appliquer manuellement en plus de l’application automatique par les administrateurs. Vous pouvez également appliquer une étiquette de rétention à une bibliothèque de documents, un dossier ou un ensemble de documents dans SharePoint, afin que tous les documents stockés à cet emplacement héritent de l’étiquette de rétention par défaut.
+Tandis que les stratégies de rétention s’appliquent au niveau du conteneur aux emplacements comme les sites SharePoint et les boîtes aux lettres Exchange, les [étiquettes de rétention](retention.md#retention-labels) permettent un ciblage plus spécifique pour vos stratégies de rétention et de suppression. Par exemple, au niveau du document ou du message électronique que les utilisateurs finaux peuvent appliquer manuellement en plus de l’application automatique par les administrateurs. Vous pouvez également appliquer une étiquette de rétention à une bibliothèque de documents, un dossier ou un ensemble de documents dans SharePoint, afin que tous les documents stockés à cet emplacement héritent de l’étiquette de rétention par défaut.
 
 En outre, les étiquettes de rétention prennent en charge la [gestion des enregistrements](records-management.md) pour marquer le contenu comme un enregistrement. Dans ce cas, l’étiquette ne peut pas être modifiée ou retirée, et le contenu ne peut pas être modifié ou supprimé. Ces restrictions peuvent être nécessaires pour aider votre organisation à respecter les exigences réglementaires.
 
-Pour obtenir des conseils détaillés sur la création et la publication des étiquettes de rétention, consultez la rubrique [créer, publier et appliquer automatiquement des étiquettes de rétention](create-retention-labels.md). Pour plus d’informations sur les licences de gestion des enregistrements, consultez [la rubrique Microsoft 365 Licensing Guidance for security & Compliance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#records-management).
+Pour obtenir des conseils détaillés sur la création et la publication des étiquettes de rétention, consultez les conseils suivants :
+- [Créer des étiquettes de rétention et les appliquer dans les applications](create-apply-retention-labels.md)
+- [Application automatique d’une étiquette de rétention au contenu](apply-retention-labels-automatically.md)
+
+Pour plus d’informations sur les licences de gestion des enregistrements, consultez [la rubrique Microsoft 365 Licensing Guidance for security & Compliance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#records-management).
 
 ### <a name="identify-and-define-sensitive-information-types"></a>Identifier et définir des types d’informations sensibles
 

@@ -20,12 +20,12 @@ ms.assetid: 296a02bd-ebde-4022-900e-547acf38ddd7
 ms.custom:
 - seo-marvel-apr2020
 description: Découvrez comment conserver le contenu des boîtes aux lettres supprimées à l’aide de la fonctionnalité de boîtes aux lettres inactives dans Office 365.
-ms.openlocfilehash: c2a17a4ce4bf8fb175382fb236bbad6c1bbf2336
-ms.sourcegitcommit: 3ddcf08e8deec087df1fe524147313f1cb12a26d
+ms.openlocfilehash: 286c1b363f7ceae42d7eaef13635ccf037bb4b21
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "45023357"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45127541"
 ---
 # <a name="create-and-manage-inactive-mailboxes"></a>Créer et gérer des boîtes aux lettres inactives
 
@@ -42,7 +42,7 @@ Microsoft 365 vous permet de conserver le contenu des boîtes aux lettres suppri
 
 - Si une conservation pour litige ou une stratégie de rétention (configurée pour conserver ou conserver et supprimer du contenu) n’est pas appliquée à une boîte aux lettres avant sa suppression, le contenu de la boîte aux lettres n’est pas conservé ni découvrable. Cependant, la boîte aux lettres peut être récupérée dans les 30 jours suivant sa suppression, mais, à défaut de récupération, elle est définitivement supprimée avec son contenu à l'issue de cette période.
 
-- For more information about Litigation Hold, see [In-Place Hold and Litigation Hold](https://go.microsoft.com/fwlink/p/?LinkId=846124). Pour plus d’informations sur les stratégies de rétention, voir [vue d’ensemble des stratégies de rétention dans Microsoft 365](retention-policies.md).
+- For more information about Litigation Hold, see [In-Place Hold and Litigation Hold](https://go.microsoft.com/fwlink/p/?LinkId=846124). Pour plus d’informations sur les stratégies de rétention, voir [en savoir plus sur les stratégies de rétention et les étiquettes de conservation](retention.md).
   
 ## <a name="create-an-inactive-mailbox"></a>Créer une boîte aux lettres inactive
 
@@ -56,9 +56,9 @@ Si une boîte aux lettres est déjà placée sur une boîte aux lettres ou si un
   
 Pour obtenir des procédures pas à pas pour le placement d’une boîte aux lettres en conservation pour litige ou l’application d’une stratégie de rétention, voir :
   
-- [Place a mailbox on Litigation Hold](https://go.microsoft.com/fwlink/?linkid=856286)
+- [Placer une boîte aux lettres en conservation pour litige](https://go.microsoft.com/fwlink/?linkid=856286)
     
-- [Vue d'ensemble des stratégies de rétention](retention-policies.md)
+- [En savoir plus sur les stratégies de rétention et les étiquettes de rétention dans Office 365](retention.md)
     
 > [!NOTE]
 > Pour les conservations pour litige et les stratégies de rétention, vous pouvez créer une conservation indéfinie ou sur une conservation basée sur le temps. En cas de conservation indéfinie, le contenu de la boîte aux lettres inactive est conservé pour une durée illimitée, ou jusqu'à la suppression de la conservation ou jusqu'à la modification de la durée de conservation. Une fois la conservation ou la stratégie de rétention supprimée (en supposant que la boîte aux lettres a été supprimée depuis plus de 30 jours), la boîte aux lettres inactive est définitivement supprimée et son contenu n'est plus conservé ni détectable. Dans une stratégie de rétention ou une conservation basée sur le temps, vous spécifiez la durée de la conservation. Cette durée s'applique à un élément et est calculée à partir de la date de réception ou de création de ce dernier. Après l'expiration de la conservation d'un élément de boîte aux lettres, si cet élément est déplacé vers, ou se trouve dans le dossier Éléments récupérables de la boîte aux lettres inactive, l'élément est supprimé définitivement (purgé) de la boîte aux lettres inactive après l'expiration de la période de rétention de l'élément supprimé. 

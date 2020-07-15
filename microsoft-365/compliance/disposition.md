@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Surveiller et gérer la suppression du contenu, que vous utilisiez une révision de disposition ou que le contenu soit automatiquement supprimé en fonction des paramètres que vous avez configurés.
-ms.openlocfilehash: 56eed956e4488932b7bf0f29eb3810964b8cb425
-ms.sourcegitcommit: 3274b65a3932288721541d2b3fa5ecbf4c51e1ab
+ms.openlocfilehash: 5c8c8c4e99edbc32bbca4b3efbe79325f53a3380
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/11/2020
-ms.locfileid: "44702558"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45127011"
 ---
 # <a name="disposition-of-content"></a>Disposition de contenu
 
@@ -86,11 +86,11 @@ Lorsque vous sélectionnez l’option **afficher toutes les mises en attente**, 
 
 ### <a name="workflow-for-a-disposition-review"></a>Flux de travail pour une révision de disposition
 
-Il s’agit du flux de travail de base pour une révision de la disposition lorsqu’une étiquette de rétention est publiée, puis appliquée manuellement par un utilisateur. Par ailleurs, une étiquette de rétention configurée pour une révision de disposition peut être appliquée automatiquement au contenu.
+Le diagramme suivant illustre le flux de travail de base pour une révision de la disposition lorsqu’une étiquette de rétention est publiée, puis appliquée manuellement par un utilisateur. Par ailleurs, une étiquette de rétention configurée pour une révision de disposition peut être appliquée automatiquement au contenu.
   
 ![Graphique illustrant le flux de fonctionnement de la disposition](../media/5fb3f33a-cb53-468c-becc-6dda0ec52778.png)
   
-Le déclenchement d’une révision de disposition à la fin de la période de rétention est une option de configuration qui n’est disponible qu’avec une [étiquette de rétention](labels.md). Cette option n’est pas disponible dans une stratégie de rétention.
+Le déclenchement d’une révision de disposition à la fin de la période de rétention est une option de configuration qui n’est disponible qu’avec une étiquette de rétention. Cette option n’est pas disponible pour une stratégie de rétention. Pour plus d’informations sur ces deux solutions de rétention, voir [en savoir plus sur les stratégies de rétention et les étiquettes de conservation](retention.md).
   
 ![Paramètres de rétention d’une étiquette](../media/a16dd202-8862-40ac-80ff-6fee974de5da.png)
  
@@ -119,7 +119,7 @@ Toutes les actions de disposition peuvent être auditées et le texte de justifi
   
 ### <a name="how-long-until-disposed-content-is-permanently-deleted"></a>Durée jusqu’à la suppression définitive du contenu supprimé
 
-Le contenu en attente d’une révision de disposition est supprimé uniquement lorsqu’un relecteur choisit de supprimer définitivement le contenu. Lorsque le réviseur choisit cette option, le contenu du site SharePoint ou du compte OneDrive devient éligible pour le processus de nettoyage standard décrit dans la [manière dont une stratégie de rétention fonctionne avec le contenu en place](retention-policies.md#how-a-retention-policy-works-with-content-in-place).
+Le contenu en attente d’une révision de disposition est supprimé uniquement lorsqu’un relecteur choisit de supprimer définitivement le contenu. Lorsque le réviseur choisit cette option, le contenu du site SharePoint ou du compte OneDrive est éligible pour le processus de nettoyage standard décrit dans la rubrique [fonctionnement des paramètres de rétention avec du contenu sur place](retention.md#how-retention-settings-work-with-content-in-place).
 
 ## <a name="disposition-of-records"></a>Destruction des enregistrements
 

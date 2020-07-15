@@ -1,7 +1,7 @@
 ---
 title: 1.31 (c-d) de la règle de négociation des perspectives de marchandises (CFTC) pour les États-Unis
 description: Une entreprise d’évaluation indépendante a validé que Azure et Office 365 peuvent aider les entreprises financières à respecter la règle CFTC 1,31 enregistrer les besoins en matière de conservation et de stockage non modifiable.
-keywords: Offres pour la conformité Microsoft 365
+keywords: Microsoft 365, conformité, offres
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 4615b20fbd90af6e2ee7acad31f87d0021edb485
-ms.sourcegitcommit: 51e47ca4b355436a2ad3deb154060eb1927428e6
+ms.openlocfilehash: 4c327ff759f6a0515f5bb454897f01f831c60653
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44773745"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45127055"
 ---
 # <a name="commodity-futures-trading-commission-cftc-rule-131c-d-united-states"></a>1.31 (c-d) de la règle de négociation des perspectives de marchandises (CFTC) pour les États-Unis
 
@@ -41,7 +41,7 @@ Pour évaluer la conformité Azure à l’aide de la règle CFTC 1.31 (c-d), Mic
 
 ### <a name="microsoft-office-365"></a>Microsoft Office 365
 
-Pour évaluer la conformité d’Office 365 avec la règle CFTC 1.31 (c-d), Microsoft a engagé un cabinet d’avocats indépendant spécialisé dans la réglementation, Covington & Burling, LLP. Dans le rapport obtenu, l' [archivage dans Microsoft Office 365, la rétention des données et la réglementation 17A -4](https://go.microsoft.com/fwlink/?linkid=830440), Covington validée que [Office 365 avec verrouillage de conservation](retention-policies.md) inclut des fonctionnalités d’archivage permettant aux clients réglementés de stocker les données d’une manière qui les aide à respecter les exigences CFTC pour la rétention des enregistrements.
+Pour évaluer la conformité d’Office 365 avec la règle CFTC 1.31 (c-d), Microsoft a engagé un cabinet d’avocats indépendant spécialisé dans la réglementation, Covington & Burling, LLP. Dans le rapport obtenu, l' [archivage dans Microsoft Office 365, la rétention des données et la réglementation 17A -4](https://go.microsoft.com/fwlink/?linkid=830440), Covington validée que [Office 365 avec verrouillage de conservation](retention.md#use-preservation-lock-to-comply-with-regulatory-requirements) inclut des fonctionnalités d’archivage permettant aux clients réglementés de stocker les données d’une manière qui les aide à respecter les exigences CFTC pour la rétention des enregistrements.
 
 L’archivage dans Office 365 permet de conserver une large gamme de données, notamment la messagerie électronique, la messagerie vocale, les documents partagés, les messages instantanés et les données tierces. En particulier, l’archivage dans Office 365 permet aux clients de définir des stratégies de rétention de messagerie globales ou granulaires pour stocker des données pendant une période définie et au-delà dans un format non réinscriptible et non effaçable.
 
@@ -59,7 +59,7 @@ L’archivage dans Office 365 permet de conserver une large gamme de données, n
 ## <a name="how-to-implement"></a>Modalités de mise en œuvre
 
 - [Réglementation des services financiers](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=5b483567-00b0-4d86-96ae-ee887dadb61c&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_Compliance_Guides): plan de conformité des principes de réglementation des clés américaines pour le Cloud Computing et Microsoft Online Services.
-- [Guide d'évaluation des risques et de la conformité](https://aka.ms/RiskGovernanceGuide): créez un modèle de gouvernance pour l'évaluation des risques des services de cloud computing Microsoft et la notification aux autorités de régulation.
+- [Guide d'évaluation des risques et de conformité](https://aka.ms/RiskGovernanceGuide): créez un modèle de gouvernance pour l'évaluation des risques des services de cloud computing Microsoft et la notification aux autorités de réglementation.
 - [Cas d'utilisation financière](https://docs.microsoft.com/azure/industry/financial/) : utilisez des aperçus de cas, des didacticiels et d'autres ressources pour créer des solutions Azure pour services financiers.
 
 ## <a name="resources"></a>Ressources

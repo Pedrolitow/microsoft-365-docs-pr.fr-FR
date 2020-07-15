@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Un classificateur Microsoft 365 pouvant être formé est un outil que vous pouvez former afin de reconnaître différents types de contenu en lui donnant des échantillons positifs et négatifs. Une fois que le classifieur est formé, vous confirmez que ses résultats sont précis. Vous l’utilisez ensuite pour effectuer une recherche dans le contenu de votre organisation et le classifier pour appliquer des étiquettes de rétention ou de sensibilité ou l’inclure dans la protection contre la perte de données (DLP) ou les stratégies de rétention.
-ms.openlocfilehash: de52c8c7f96d2d3c0383f27b17bcc5162bb662c5
-ms.sourcegitcommit: 87eff6e8a08cec3cb0464a3b765434717584a4a9
+ms.openlocfilehash: 10475420c729efc6a1ff59b6620fed08a1bdefca
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/26/2020
-ms.locfileid: "44371462"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45126333"
 ---
 # <a name="getting-started-with-trainable-classifiers-preview"></a>Prise en main des classificateurs pouvant être formés (préversion)
 
@@ -38,16 +38,16 @@ Cette catégorie de mécanismes de classification inclut la recherche de contenu
 - Reconnaissance d’un élément, car il s’agit d’une variante d’un modèle [(impression des doigts de document)](document-fingerprinting.md).
 - À l’aide de la présence de chaînes exactes [(correspondance de données exacte)](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md).
 
-Les étiquettes de sensibilité et de rétention peuvent ensuite être appliquées automatiquement pour que le contenu soit disponible dans la [protection contre la perte de données (DLP)](data-loss-prevention-policies.md) et les [stratégies de rétention](retention-policies.md).
+Les étiquettes de sensibilité et de rétention peuvent ensuite être appliquées automatiquement pour que le contenu puisse être utilisé dans les stratégies de [protection contre la perte de données](data-loss-prevention-policies.md) et [d’application automatique pour les étiquettes de rétention](apply-retention-labels-automatically.md).
 
-## <a name="trainable-classifiers"></a>Classifieurs de formation
+## <a name="trainable-classifiers"></a>Classifieurs entraînables
 
-Cette méthode de classification est particulièrement adaptée au contenu qui n’est pas facilement identifiable par les méthodes de correspondance manuelle ou automatisée. Cette méthode de classification est plus relative à la formation d’un classifieur permettant d’identifier un élément en fonction de ce que est l’élément, pas par les éléments qui se trouvent dans l’élément (critères spéciaux). Un classifieur apprend à identifier un type de contenu en examinant des centaines d’exemples du contenu que vous souhaitez classer. Commencez par alimenter des exemples qui sont tous dans la catégorie. Une fois qu’il les traite, vous les testez en leur donnant une combinaison des exemples de correspondance et de non-correspondance. Le classifieur effectue ensuite des prévisions quant à l’existence d’un élément donné dans la catégorie que vous créez. Ensuite, vérifiez ses résultats, en triant les positifs, les négatifs, les faux positifs et les faux négatifs pour améliorer la précision de ses prévisions. Lorsque vous publiez le classifieur formé, il trie les éléments dans des emplacements comme SharePoint Online, Exchange et OneDrive, et classifie le contenu.
+Cette méthode de classification est particulièrement adaptée au contenu qui n’est pas facilement identifiable par les méthodes de correspondance manuelle ou automatisée. Cette méthode de classification consiste davantage à former un classifieur à identifier un élément en fonction de ce qu’il est, et non par les éléments qui se trouvent dans l’élément (critères spéciaux). Un classifieur apprend à identifier un type de contenu en examinant des centaines d’exemples du contenu que vous souhaitez classer. Commencez par alimenter des exemples qui sont tous dans la catégorie. Une fois qu’il les traite, vous les testez en leur donnant une combinaison des exemples de correspondance et de non-correspondance. Le classifieur effectue ensuite des prévisions quant à l’existence d’un élément donné dans la catégorie que vous créez. Ensuite, vérifiez ses résultats, en triant les positifs, les négatifs, les faux positifs et les faux négatifs pour améliorer la précision de ses prévisions. Lorsque vous publiez le classifieur formé, il trie les éléments dans des emplacements comme SharePoint Online, Exchange et OneDrive, et classifie le contenu.
 
 ### <a name="where-you-can-use-trainable-classifiers"></a>Où vous pouvez utiliser des classifieurs de formation
-Les classifieurs intégrés et les classifieurs de formation sont disponibles en tant que condition pour la [stratégie d’étiquette de rétention automatique basée sur une condition et une](labels.md#applying-a-retention-label-automatically-based-on-conditions) conformité de [communication](communication-compliance-configure.md). 
+Les classifieurs intégrés et les classifieurs de formation sont disponibles en tant que condition pour la [stratégie d’étiquette de rétention automatique basée sur une condition et une](apply-retention-labels-automatically.md#configuring-conditions-for-auto-apply-retention-labels) conformité de [communication](communication-compliance-configure.md). 
 
-Les étiquettes de sensibilité peuvent utiliser des classifieurs intégrés et personnalisés comme conditions, voir [appliquer une étiquette de sensibilité au contenu automatiquement](apply-sensitivity-label-automatically.md)et l' [étiquetage automatique pour les applications Office](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-for-office-apps).
+Les étiquettes de sensibilité peuvent utiliser des classifieurs intégrés et personnalisés comme conditions, voir [appliquer automatiquement une étiquette de sensibilité au contenu](apply-sensitivity-label-automatically.md).
 
 > [!IMPORTANT]
 > Les classifieurs pouvant être formés ne fonctionnent qu’avec des éléments qui ne sont pas chiffrés et qui sont en anglais.
@@ -87,7 +87,7 @@ Microsoft 365 est fourni avec cinq classifieurs intégrés recommandés :
 
   |nom de la langue|||||
   |---------|---------|---------|---------|---------|
-  |3.0|C        |C #       |C++     |Clojure  |
+  |3.0|C        |C#       |C++     |Clojure  |
   |CoffeeScript|CSS     |Activer       |Haskell |HTML     |
   |Java     |JavaScript|Privilège      |MATLAB   |Objective-C|
   |Langage     |PHP      |Python   |R        |Ruby     |
@@ -129,8 +129,7 @@ La création et la publication d’un classificateur pour l’utilisation dans l
 ## <a name="see-also"></a>Voir aussi
 
 
-- [Étiquettes de rétention](labels.md)
-- [Stratégies de rétention](retention-policies.md)
+- [Étiquettes de rétention](retention.md)
 - [Protection contre la perte de données (DLP)](data-loss-prevention-policies.md)
 - [Étiquettes de confidentialité](sensitivity-labels.md)
 - [Définitions d’entités des types d’informations sensibles](sensitive-information-type-entity-definitions.md)

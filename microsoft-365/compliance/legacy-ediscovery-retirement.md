@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: La découverte électronique inaltérable et la conservation inaltérable (et les cmdlets PowerShell correspondantes) dans Exchange Online seront supprimées au cours de la première moitié de 2020. La cmdlet Search-Mailbox et Advanced eDiscovery v 1.0 est également en cours de retrait dans la même période.
-ms.openlocfilehash: 8b428b0d90442c937e08d4dc9ca23fb345553178
-ms.sourcegitcommit: 589f78fc0f39aff9109959ded48d146cc32fc3c5
+ms.openlocfilehash: 12de88fe3c9de7806b12bd610e0dbeeb404524ca
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "44761684"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45126941"
 ---
 # <a name="retirement-of-legacy-ediscovery-tools"></a>Retrait des outils eDiscovery hérités
 
@@ -124,7 +124,7 @@ Le tableau suivant décrit les autres outils que vous pouvez utiliser pour rempl
 <p>Application de stratégies à des emplacements de contenu spécifiques, tels que les groupes Exchange Online, SharePoint Online, OneDrive entreprise, Skype entreprise, Microsoft teams et Office 365</p></li>
 <li>
 <p>Application de stratégies à des utilisateurs spécifiques</p></li></ul>
-<p>Pour plus d’informations, consultez la rubrique <a href="https://docs.microsoft.com/microsoft-365/compliance/retention-policies">vue d’ensemble des stratégies de rétention</a>.</td>
+<p>Pour plus d’informations, voir <a href="https://docs.microsoft.com/microsoft-365/compliance/retention-policies">en savoir plus sur les stratégies de rétention et les étiquettes de rétention</a>.</td>
 </tr>
 <tr class="odd">
 <td>Copier les résultats de la recherche de messagerie vers une boîte aux lettres de découverte pour révision</td><td>Examiner les ensembles dans Advanced eDiscovery v 2.0</td>

@@ -1,7 +1,7 @@
 ---
 title: Règle de l’autorité réglementaire du secteur financier (FINRA) 4511 (c) États-Unis
 description: Une entreprise d’évaluation indépendante a validé que Azure et Office 365 peuvent aider les entreprises financières à respecter la règle FINRA 4511 enregistrer les besoins en matière de conservation et de stockage non modifiable.
-keywords: Offres pour la conformité Microsoft 365
+keywords: Microsoft 365, conformité, offres
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: af2e5986530ae6b1eb558ed3389f0927d5f912e9
-ms.sourcegitcommit: 51e47ca4b355436a2ad3deb154060eb1927428e6
+ms.openlocfilehash: 328aa52473fbb8b51ad580379c103e3759c2bff6
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44773755"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45126695"
 ---
 # <a name="financial-industry-regulatory-authority-finra-rule-4511c-united-states"></a>Règle de l’autorité réglementaire du secteur financier (FINRA) 4511 (c) États-Unis
 
@@ -47,7 +47,7 @@ Les fournisseurs de logiciels et les partenaires avec des charges de travail sen
 
 ## <a name="microsoft-office-365"></a>Microsoft Office 365
 
-Pour évaluer la conformité d’Office 365 avec la règle FINRA 4511 (c), Microsoft a conservé un cabinet juridique indépendant de leader spécialisé dans la réglementation, Covington & Burling, LLP. Dans le rapport obtenu, l’archivage dans Microsoft Office 365, la rétention des données et la réglementation 17A -4, Covington validée que [Office 365 avec verrouillage de conservation](retention-policies.md) inclut des fonctionnalités d’archivage permettant aux clients réglementés, y compris les concessionnaires, de stocker les données d’une manière qui les aide à se conformer aux exigences FINRA pour la rétention des enregistrements.
+Pour évaluer la conformité d’Office 365 avec la règle FINRA 4511 (c), Microsoft a conservé un cabinet juridique indépendant de leader spécialisé dans la réglementation, Covington & Burling, LLP. Dans le rapport obtenu, l’archivage dans Microsoft Office 365, la rétention des données et la réglementation 17A -4, Covington validée que [Office 365 avec verrouillage de conservation](retention.md#use-preservation-lock-to-comply-with-regulatory-requirements) inclut des fonctionnalités d’archivage permettant aux clients réglementés, y compris les concessionnaires, de stocker les données d’une manière qui les aide à se conformer aux exigences FINRA pour la rétention des enregistrements.
 
 L’archivage dans Office 365 permet de conserver un large éventail de données, notamment la messagerie électronique, la messagerie vocale, les documents partagés, les messages instantanés et les données tierces. En particulier, l’archivage dans Office 365 permet aux clients de définir des stratégies de rétention de messagerie globales ou granulaires pour stocker des données pendant une période définie et au-delà dans un format non réinscriptible et non effaçable.
 
@@ -69,7 +69,7 @@ L’archivage dans Office 365 permet de conserver un large éventail de données
 ## <a name="how-to-implement"></a>Modalités de mise en œuvre
 
 - **Réglementation des services financiers**: plan de conformité des principes de réglementation des clés américaines pour le Cloud Computing et Microsoft Online Services. [En savoir plus](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=5b483567-00b0-4d86-96ae-ee887dadb61c&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_Compliance_Guides)
-- **Guide d'évaluation des risques et de conformité** : créer un modèle de gouvernance pour l'évaluation des risques des services de cloud computing de Microsoft et la notification réglementaire. [En savoir plus](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=edee9b14-3661-4a16-ba83-c35caf672bd7&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers)
+- **Guide d'évaluation des risques et de conformité**: créez un modèle de gouvernance pour l'évaluation des risques des services de cloud computing Microsoft et la notification aux autorités de réglementation. [En savoir plus](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=edee9b14-3661-4a16-ba83-c35caf672bd7&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers)
 - **Cas d'utilisation financière** : utilisez des aperçus de cas, des didacticiels et d'autres ressources pour créer des solutions Azure pour services financiers. [En savoir plus](https://docs.microsoft.com/azure/industry/financial/)
 
 ## <a name="resources"></a>Ressources

@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Utilisez des classifieurs pilotables lorsque l’un des classifieurs intégrés ne répond pas à vos besoins. Un classificateur Microsoft 365 est un outil que vous pouvez former afin de reconnaître différents types de contenu en leur donnant des exemples à consulter. Cette rubrique vous montre comment créer un classifieur personnalisé.
-ms.openlocfilehash: 6358f333b274c4a1ce618d87598e7ea5340b77c9
-ms.sourcegitcommit: 614666afb104fc97acb4a2ee5577ef63c0de153a
+ms.openlocfilehash: 05ec9992fb4ec072403e193df3d7dbbbb8b1a96b
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44173506"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45126355"
 ---
 # <a name="creating-a-trainable-classifier-preview"></a>Création d’un classifieur de formation (aperçu)
 
@@ -63,19 +63,19 @@ Une fois que le classifieur peut traiter suffisamment d’échantillons positifs
 > [!TIP]
 > Si vous créez un nouveau site et dossier pour vos données de départ, autorisez au moins une heure pour cet emplacement à indexer avant de créer le classifieur qui utilisera ces données de départ.
 
-3. Connectez-vous au centre de conformité Microsoft 365 avec l’administrateur de conformité ou l’accès au rôle d’administrateur de sécurité et ouvrez le **Centre de conformité Microsoft 365 ou la** classification des**données** du centre > de **sécurité Microsoft 365**
+3. Connectez-vous au centre de conformité Microsoft 365 avec l’administrateur de conformité ou l’accès au rôle d’administrateur de sécurité et ouvrez le **Centre de conformité Microsoft 365 ou la** classification des données du centre de **sécurité Microsoft 365**  >  **Data classification**
 
 4. Sélectionnez l’onglet **classeurs de formation** .
 
 5. Sélectionnez **Create Training classificateur**.
 
-6. Renseignez les valeurs appropriées pour `Name`les `Description` champs de la catégorie d’éléments que vous souhaitez que le classifieur pouvant identifier.
+6. Renseignez les valeurs appropriées pour les `Name` `Description` champs de la catégorie d’éléments que vous souhaitez que le classifieur pouvant identifier.
 
-7. Entrez l’URL du site, de la bibliothèque et du dossier SharePoint Online exactes pour le site de contenu Seed à partir de l’étape 2. Choisissez `Add`.
+7. Entrez l’URL du site, de la bibliothèque et du dossier SharePoint Online exactes pour le site de contenu Seed à partir de l’étape 2. Choisissez `Add` .
 
-8. Passez en revue les paramètres `Create trainable classifier`, puis choisissez.
+8. Passez en revue les paramètres, puis choisissez `Create trainable classifier` .
 
-9. Dans les 24 heures, le classificateur peut traiter les données de départ et créer un modèle de prévision. L’état du classifieur est `In progress` en cours de traitement des données de l’amorçage. Lorsque le classificateur a terminé le traitement des données de départ, l’état `Need test items`devient.
+9. Dans les 24 heures, le classificateur peut traiter les données de départ et créer un modèle de prévision. L’état du classifieur est `In progress` en cours de traitement des données de l’amorçage. Lorsque le classificateur a terminé le traitement des données de départ, l’État devient `Need test items` .
 
 10. Vous pouvez désormais afficher la page de détails en choisissant le classifieur.
 
@@ -92,19 +92,19 @@ Une fois que le classifieur peut traiter suffisamment d’échantillons positifs
 > [!TIP]
 > Si vous créez un nouveau site et dossier pour vos données de test, autorisez au moins une heure pour cet emplacement à indexer avant de créer le classifieur qui utilisera ces données de départ.
 
-13. Choisissez `Add items to test`.
+13. Choisissez `Add items to test` .
 
-14. Entrez l’URL du site, de la bibliothèque et du dossier SharePoint Online exactes pour le site de contenu de test à partir de l’étape 12. Choisissez `Add`.
+14. Entrez l’URL du site, de la bibliothèque et du dossier SharePoint Online exactes pour le site de contenu de test à partir de l’étape 12. Choisissez `Add` .
 
-15. Terminez l’Assistant en `Done`sélectionnant. Votre classificateur peut prendre jusqu’à une heure pour traiter les fichiers de test.
+15. Terminez l’Assistant en sélectionnant `Done` . Votre classificateur peut prendre jusqu’à une heure pour traiter les fichiers de test.
 
-16. Lorsque le classificateur de formation est fini de `Ready to review`traiter vos fichiers de test, l’État sur la page des détails prend la forme. Si vous devez augmenter la taille de l’échantillon de test `Add items to test` , choisissez et autorisez le classificateur en train de traiter les éléments supplémentaires.
+16. Lorsque le classificateur de formation est fini de traiter vos fichiers de test, l’État sur la page des détails prend la forme `Ready to review` . Si vous devez augmenter la taille de l’échantillon de test, choisissez `Add items to test` et autorisez le classificateur en train de traiter les éléments supplémentaires.
 
 ![capture d’écran prêt à examiner](../media/classifier-trainable-ready-to-review-detail.png)
 
 17. Choisissez `Tested items to review` Tab pour passer en revue les éléments.
 
-18. Microsoft 365 présente 30 éléments à la fois. Vérifiez-les et, `We predict this item is "Relevant". Do you agree?` dans la zone `Yes` , `No` choisissez `Not sure, skip to next item`ou ou. La précision du modèle est automatiquement mise à jour après 30 éléments.
+18. Microsoft 365 présente 30 éléments à la fois. Vérifiez-les et, dans la `We predict this item is "Relevant". Do you agree?` zone, choisissez `Yes` ou `No` ou `Not sure, skip to next item` . La précision du modèle est automatiquement mise à jour après 30 éléments.
 
 ![zone passer en revue les éléments](../media/classifier-trainable-review-detail.png)
 
@@ -112,18 +112,18 @@ Une fois que le classifieur peut traiter suffisamment d’échantillons positifs
 
 <!-- insert Analyze steps here-->
 
-20. Continuez à passer en revue jusqu’à ce que la précision atteigne `Publish the classifier` au moins `Ready to use`70% et que l’État est.
+20. Continuez à passer en revue jusqu’à ce que la précision atteigne au moins 70% et que l' `Publish the classifier` État est `Ready to use` .
 
 ![précision et prêt à publier](../media/classifier-trainable-review-ready-to-publish.png)
 
 21. Publiez le classifieur.
 
-22. Une fois publié, votre classifieur sera disponible sous forme de condition dans [Office autolabeling avec des étiquettes de confidentialité](apply-sensitivity-label-automatically.md), [appliquant automatiquement une stratégie d’étiquette de rétention basée sur une condition](labels.md#applying-a-retention-label-automatically-based-on-conditions) et [la conformité de la communication](communication-compliance.md).
+22. Une fois publié, votre classifieur sera disponible sous forme de condition dans [Office autolabeling avec des étiquettes de confidentialité](apply-sensitivity-label-automatically.md), [appliquant automatiquement une stratégie d’étiquette de rétention basée sur une condition](apply-retention-labels-automatically.md#configuring-conditions-for-auto-apply-retention-labels) et [la conformité de la communication](communication-compliance.md).
 
 > [!CAUTION]
 > Une fois qu’un classifieur est publié, il ne peut pas passer par une formation supplémentaire, nous vous recommandons donc de tester et de réviser autant d’éléments que possible afin de vous assurer que la précision est la plus élevée possible.
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Prise en main des classificateurs de formation (préversion)](classifier-getting-started-with.md)
+- [Prise en main des classificateurs pouvant être formés (préversion)](classifier-getting-started-with.md)
 - [Extensions de nom de fichier et types de fichier analysés par défaut dans SharePoint Server](https://docs.microsoft.com/sharepoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types)

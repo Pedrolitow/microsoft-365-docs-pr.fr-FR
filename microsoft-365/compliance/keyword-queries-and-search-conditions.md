@@ -22,11 +22,12 @@ ms.assetid: c4639c2e-7223-4302-8e0d-b6e10f1c3be3
 ms.custom:
 - seo-marvel-apr2020
 description: Découvrez les propriétés de messagerie et de fichier que vous pouvez rechercher dans le centre de conformité Office 365 Security &.
-ms.openlocfilehash: 89d3f0c25694f8f3c89fbc27ee857c58cc5937fd
-ms.sourcegitcommit: 7c1b34205746ff0690ffc774a74bdfd434256cf5
+ms.openlocfilehash: 90365889ed60a5250514fa50b8034d5cfcb904bd
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "45049802"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45127179"
 ---
 # <a name="keyword-queries-and-search-conditions-for-content-search"></a>Requêtes par mots clés et conditions de recherche pour la recherche de contenu
 
@@ -194,7 +195,7 @@ Créez une condition avec des propriétés communes lorsque vous recherchez des 
 |Expéditeur/auteur|Pour la messagerie électronique, personne ayant envoyé le message. Pour les documents, personne mentionnée dans le champ Auteur des documents Office. Vous pouvez saisir plusieurs noms, séparés par des virgules. Deux ou plusieurs valeurs sont connectées logiquement par l’opérateur **OR**.|
 |Taille (en octets)|Pour la messagerie électronique et les documents, taille de l’élément (en octets).|
 |Subject/title|Pour la messagerie électronique, texte de la ligne d’objet d’un message. Pour les documents, titre du document. Comme expliqué précédemment, la propriété Title est des métadonnées spécifiées dans les documents Microsoft Office. Vous pouvez taper le nom de plus d’un objet/titre, séparé par des virgules. Deux ou plusieurs valeurs sont connectées logiquement par l’opérateur **OR**.|
-|Étiquette de conformité|Pour les courriers électroniques et les documents, les étiquettes de rétention qui ont été affectées à des messages et des documents automatiquement par étiquette stratégies ou étiquettes de rétention qui ont été affectées manuellement par les utilisateurs. Les étiquettes de rétention sont utilisées pour classer les e-mails et les documents pour la gouvernance des informations et appliquer les règles de rétention en fonction des paramètres définis par l’étiquette. Vous pouvez taper une partie du nom de l’étiquette de rétention et utiliser un caractère générique ou taper le nom complet de l’étiquette. Pour plus d’informations, consultez la rubrique [vue d’ensemble des étiquettes de rétention](labels.md).|
+|Étiquette de conformité|Pour les courriers électroniques et les documents, des étiquettes de rétention qui ont été attribuées automatiquement à des messages et des documents par des stratégies d’étiquetage automatique ou des étiquettes de rétention qui ont été affectées manuellement par les utilisateurs. Les étiquettes de rétention sont utilisées pour classer les e-mails et les documents pour la gouvernance des informations et appliquer les règles de rétention en fonction des paramètres définis par l’étiquette. Vous pouvez taper une partie du nom de l’étiquette de rétention et utiliser un caractère générique ou taper le nom complet de l’étiquette. Pour plus d’informations sur les étiquettes de rétention, voir [en savoir plus sur les stratégies de rétention et les étiquettes de conservation](retention.md).|
 |||
   
 ### <a name="conditions-for-mail-properties"></a>Conditions pour les propriétés de messagerie

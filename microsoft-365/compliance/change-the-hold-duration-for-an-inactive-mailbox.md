@@ -20,12 +20,12 @@ ms.assetid: bdee24ed-b8cf-4dd0-92ae-b86ec4661e6b
 ms.custom:
 - seo-marvel-apr2020
 description: Une fois qu’une boîte aux lettres Office 365 est rendue inactive, modifiez la durée de la conservation ou de la stratégie de rétention d’Office 365 affectée à la boîte aux lettres inactive.
-ms.openlocfilehash: 113a3af38d83eabef2e3022f47952c2db70f47a9
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 675e6eb36f762a50c3caafce07d09fda9ba9d98e
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44818403"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45126375"
 ---
 # <a name="change-the-hold-duration-for-an-inactive-mailbox"></a>Modifier la durée de la conservation pour une boîte aux lettres inactive
 
@@ -60,9 +60,6 @@ Get-Mailbox -InactiveMailboxOnly | FL DisplayName,Name,IsInactiveMailbox,Litigat
 
 La valeur de **True** pour la propriété **LitigationHoldEnabled** indique que la boîte aux lettres inactive est en conservation pour litige. Si une conservation inaltérable, un blocage eDiscovery ou une stratégie de rétention Microsoft 365 est placée sur une boîte aux lettres inactive, un GUID pour la stratégie de conservation ou de rétention est affiché comme valeur de la propriété **InPlaceHolds** . Par exemple, le code suivant montre les résultats de cinq boîtes aux lettres inactives. 
   
-||
-|:-----|
-|
 ```text
 DisplayName           : Ann Beebe
 Name                  : annb
@@ -110,7 +107,7 @@ Le tableau suivant indique les cinq différents types de conservations qui ont �
 |Carol Olson  <br/> |Stratégie de rétention de Microsoft 365 dans le centre de sécurité & conformité appliquée à des boîtes aux lettres spécifiques  <br/> |La propriété *InPlaceHolds* contient le GUID de la stratégie de rétention Microsoft 365 qui est appliquée à la boîte aux lettres inactive. Vous pouvez déterminer qu'il s'agit d'une stratégie de rétention qui est appliquée à des boîtes aux lettres spécifiques, car le GUID commence par le préfixe  `mbx`. Si le GUID de la stratégie de rétention appliquée à la boîte aux lettres inactive a démarré avec le `skp` préfixe, cela signifie que la stratégie de rétention est appliquée aux conversations Skype entreprise.  <br/><br/> Pour identifier la stratégie de rétention de Microsoft 365 qui est appliquée à la boîte aux lettres inactive, exécutez la commande suivante dans sécurité & Centre de conformité PowerShell.<br/><br/> `Get-RetentionCompliancePolicy <retention policy GUID without prefix> | FL Name` <br/><br/>N'oubliez pas de supprimer le préfixe  `mbx` ou  `skp` lorsque vous exécutez cette commande.  <br/> |
 |Abraham McMahon  <br/> |conservation des cas eDiscovery dans le centre de sécurité & conformité  <br/> |The  *InPlaceHolds*  property contains the GUID of the eDiscovery case hold that's placed on the inactive mailbox. You can tell this is an eDiscovery case hold because the GUID starts with the  `UniH` prefix.  <br/> Vous pouvez utiliser l' `Get-CaseHoldPolicy` applet de commande dans Security & Compliance Center PowerShell pour obtenir des informations sur le cas eDiscovery auquel est associée la conservation de la boîte aux lettres inactive. For example, you can run the command  `Get-CaseHoldPolicy <hold GUID without prefix> | FL Name` to display the name of the case hold that's on the inactive mailbox. Be sure to remove the  `UniH` lorsque vous exécutez cette commande.  <br/><br/> Pour identifier le cas eDiscovery associé à la conservation dans la boîte aux lettres inactive, exécutez les commandes suivantes.  <br/><br/> `$CaseHold = Get-CaseHoldPolicy <hold GUID without prefix>`<br/><br/> `Get-ComplianceCase $CaseHold.CaseId | FL Name`<br/><br/><br/> **Remarque :** Il n’est pas recommandé d’utiliser des suspensions eDiscovery pour les boîtes aux lettres inactives. En effet, les cas eDiscovery sont destinés à cas spécifiques, limités dans le temps et liés à un problème juridique. À un moment ou un autre, un dossier juridique se terminera probablement, et les conservations associées au cas seront supprimées et le cas eDiscovery sera fermé (ou supprimé). En fait, si une conservation figurant dans une boîte aux lettres inactive est associée à un cas eDiscovery et que la conservation est libérée, ou le cas eDiscovery est fermé ou supprimé, la boîte aux lettres inactive est définitivement supprimée. 
 
-Pour plus d’informations sur les stratégies de rétention de Microsoft 365, voir [Overview of retention Policies](retention-policies.md).
+Pour plus d’informations sur les stratégies de rétention de Microsoft 365, voir [en savoir plus sur les stratégies de rétention et les étiquettes de conservation](retention.md)
   
 ## <a name="step-2-change-the-hold-duration-for-an-inactive-mailbox"></a>Étape 2 : Modifier la durée de la conservation pour une boîte aux lettres inactive
 

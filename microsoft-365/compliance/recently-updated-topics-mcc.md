@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 description: Tout comme les fonctionnalités du centre de conformité Microsoft 365, notre contenu d’aide est toujours évolutif. Découvrez les nouveautés et mises à jour ce mois-ci.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: fca455540ed3b01af3b9b4d2a6cd1053535f75b7
-ms.sourcegitcommit: 8595cb9ffe0ca5556080f24224182381e1d880de
+ms.openlocfilehash: 3060cadb5752d8420667105113e23e235ab6f306
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/03/2020
-ms.locfileid: "45035639"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45127511"
 ---
 # <a name="recent-updates-to-microsoft-365-compliance-content"></a>Mises à jour récentes du contenu de conformité Microsoft 365
 
@@ -101,7 +101,7 @@ Toutes les rubriques sur le [score de conformité](compliance-score.md) et le [G
 
 [FAQ sur l’importation de fichiers PST](faqimporting-pst-files-to-office-365.md) (mise à jour)<br>Ajout d’un Forum aux questions sur la façon dont le processus d’importation PST gère les éléments de messagerie en double.
 
-### <a name="sensitivity-labels"></a>Étiquettes de niveau de confidentialité
+### <a name="sensitivity-labels"></a>Étiquettes de confidentialité
 
 [En savoir plus sur les étiquettes de sensibilité](sensitivity-labels.md) (mises à jour)<br>Ajout des détails de la gestion des étiquettes dans le portail Azure, y compris un lien vers [l’avis officiel](https://techcommunity.microsoft.com/t5/azure-information-protection/announcing-timelines-for-sunsetting-label-management-in-the/ba-p/1226179).
 
@@ -202,9 +202,9 @@ Mise à jour des articles suivants pour prendre en charge la version officielle 
 
 ### <a name="records-management"></a>Gestion des enregistrements
 
-[Vue d’ensemble des étiquettes de rétention](labels.md) (mises à jour)<br>La section relative à l’application d’une étiquette de rétention basée sur des conditions inclut désormais l’option permettant d’utiliser des classifieurs avec apprentissage.
+[Vue d’ensemble des étiquettes de rétention](retention.md) (mises à jour)<br>La section relative à l’application d’une étiquette de rétention basée sur des conditions inclut désormais l’option permettant d’utiliser des classifieurs avec apprentissage.
 
-### <a name="sensitivity-labels"></a>Étiquettes de niveau de confidentialité
+### <a name="sensitivity-labels"></a>Étiquettes de confidentialité
 
 [Prise en main des étiquettes de confidentialité](get-started-with-sensitivity-labels.md) (nouveauté)<br>Inclut des conseils pour les clients Azure information protection, une vue d’ensemble du processus et les étapes du déploiement des étiquettes de confidentialité, des autorisations de création et de gestion des étiquettes, une liste de scénarios courants qui prennent en charge les étiquettes et une liste de la documentation destinée aux utilisateurs finaux.
 

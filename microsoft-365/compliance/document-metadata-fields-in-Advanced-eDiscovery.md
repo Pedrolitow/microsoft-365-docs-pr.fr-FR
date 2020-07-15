@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Cet article définit les champs de métadonnées pour les documents dans un ensemble de révision dans un cas dans Advanced eDiscovery dans Microsoft 365.
-ms.openlocfilehash: 19a8b4968ea4b1d82cd6a9e9278530e6c155ef3f
-ms.sourcegitcommit: df6cc8c2eb2a65c7668f2953b0f7ec783a596d15
+ms.openlocfilehash: e419cb14d1b0adbebd6d45aaa5120933b060bdf9
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/13/2020
-ms.locfileid: "44726447"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45126951"
 ---
 # <a name="document-metadata-fields-in-advanced-ediscovery"></a>Champs de métadonnées de document dans Advanced eDiscovery
 
@@ -46,7 +46,7 @@ Le tableau suivant répertorie les champs de métadonnées pour les documents da
 |Auteur|Auteur|Doc_authors|Auteur à partir des métadonnées du document.|
 |Cci|Cci|Email_bcc|Champ CCI pour les types de message. Le format **est \<SMTPAddress> DisplayName **.|
 |Cc|Cc|Email_cc|Champ CC pour les types de message. Le format **est \<SMTPAddress> DisplayName **.|
-|Étiquettes de conformité|ComplianceLabels|Compliance_labels|[Étiquettes de rétention](labels.md) appliquées au contenu dans Office 365.|
+|Étiquettes de conformité|ComplianceLabels|Compliance_labels|[Étiquettes de rétention](retention.md) appliquées au contenu dans Office 365.|
 |Tracé transparent|CompoundPath|Compound_path|Chemin lisible par l’utilisateur qui décrit la source de l’élément.|
 |Texte|Contenu||Texte extrait de l’élément.|
 |Corps de la conversation|Corps de la conversation||Corps de la conversation de l’élément.|
@@ -103,7 +103,7 @@ Le tableau suivant répertorie les champs de métadonnées pour les documents da
 |Classe de l’élément|ItemClass|Item_class|Classe d’élément fournie par Exchange Server ; par exemple, **IPM. Note**|
 |Dernière modification|LastModifiedDate|Doc_date_modified|Date de dernière modification à partir des métadonnées de document.|
 |ID de chargement|LoadId|Load_ID|ID du jeu de charges dans lequel l’élément a été ajouté à un jeu de révision.|
-|Location|Location|Location|Chaîne qui indique le type d’emplacement à partir duquel les documents ont été issus.<br /><br />Données **importées** -données non Office 365<br />**Teams** -Microsoft teams<br />**Exchange** -boîtes aux lettres Exchange<br />**SharePoint** -sites SharePoint<br />**Onedrive** -comptes onedrive|
+|Emplacement|Emplacement|Emplacement|Chaîne qui indique le type d’emplacement à partir duquel les documents ont été issus.<br /><br />Données **importées** -données non Office 365<br />**Teams** -Microsoft teams<br />**Exchange** -boîtes aux lettres Exchange<br />**SharePoint** -sites SharePoint<br />**Onedrive** -comptes onedrive|
 |Nom de l’emplacement|LocationName|Location_name|Chaîne qui identifie la source de l’élément. Pour Exchange, il s’agit de l’adresse SMTP de la boîte aux lettres ; pour SharePoint et OneDrive, l’URL de la collection de sites.|
 |Marqué comme représentant|MarkAsRepresentative||Un document de chaque ensemble de doublons exact est marqué comme représentant.|
 |Marqué comme problème pré-balisé 1 *||Marked_as_pre_tagged_Case_issue_1|Marqué comme prébalisage du problème 1 de la pertinence.|

@@ -19,12 +19,12 @@ ms.collection:
 ms.assetid: ce9eb942-3589-42cb-88fd-1576ecb09c5c
 description: Découvrez comment gérer les demandes des personnes concernées par les données du règlement général sur la protection des données (RGPD) de l’UE avec l’outil de cas DSR.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 79d4ff2fb7a83f5c094b4d4f74e68918c2bd5fff
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 3327618a1a297bb6d4afbbe45baa709f0638ee39
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44815451"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45126775"
 ---
 # <a name="manage-gdpr-data-subject-requests-with-the-dsr-case-tool-in-the-security--compliance-center"></a>Gérer les demandes des personnes associées aux données RGPD avec l’outil de cas DSR dans le centre de sécurité & conformité
 
@@ -247,7 +247,7 @@ Voici quelques exemples des conditions que vous pouvez ajouter à la requête de
     
 - **Type de message ( `kind` )** – spécifie le type d’élément de courrier électronique à rechercher. Par exemple, vous pouvez utiliser la syntaxe `kind:email OR kind:im` pour renvoyer uniquement les messages électroniques et les conversations Skype entreprise ou les conversations un-à-un dans Microsoft Teams. 
     
-- **Balise de conformité ( `compliancetag` )** : spécifie une étiquette affectée à un message électronique ou à un document. Cette condition renvoie les éléments classés avec une étiquette spécifique. Les étiquettes sont utilisées pour classer le courrier électronique et les documents à des fins de gouvernance des données et appliquer des règles de rétention basées sur la classification définie par l’étiquette. Il s’agit d’une condition utile pour les investigations du DSR car votre organisation peut utiliser des étiquettes pour classer le contenu lié à la confidentialité des données ou contenant des données personnelles ou des informations sensibles. Pour la valeur de cette condition, utilisez le nom complet de l’étiquette ou la première partie du nom de l’étiquette avec un caractère générique. Pour plus d’informations, consultez la rubrique [vue d’ensemble des étiquettes dans Office 365](labels.md).
+- **Balise de conformité ( `compliancetag` )** : spécifie une étiquette affectée à un message électronique ou à un document. Cette condition renvoie les éléments classés avec une étiquette spécifique. Les étiquettes sont utilisées pour classer le courrier électronique et les documents à des fins de gouvernance des données et appliquer des règles de rétention basées sur la classification définie par l’étiquette. Il s’agit d’une condition utile pour les investigations du DSR car votre organisation peut utiliser des étiquettes pour classer le contenu lié à la confidentialité des données ou contenant des données personnelles ou des informations sensibles. Pour la valeur de cette condition, utilisez le nom complet de l’étiquette ou la première partie du nom de l’étiquette avec un caractère générique. Pour plus d’informations, consultez la rubrique [en savoir plus sur les stratégies de rétention et les étiquettes de rétention dans Office 365](retention.md).
     
 Pour obtenir la liste et la description de toutes les conditions disponibles dans l’outil de cas DSR, consultez la rubrique [conditions de recherche](keyword-queries-and-search-conditions.md#search-conditions) dans l’article « requêtes de mot-clé et conditions de recherche pour la recherche de contenu ». 
   

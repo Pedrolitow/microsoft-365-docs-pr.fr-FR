@@ -20,12 +20,12 @@ ms.assetid: 0ce338d5-3666-4a18-86ab-c6910ff408cc
 ms.custom:
 - seo-marvel-apr2020
 description: Découvrez comment importer des données tierces à partir de plateformes de médias sociaux, de plateformes de messagerie instantanée et de plateformes de collaboration sur des documents vers des boîtes aux lettres Microsoft 365.
-ms.openlocfilehash: a8dc69e7e4c7061e048fe49d1e51fd8867654454
-ms.sourcegitcommit: a5ed189fa789975f8c3ed39db1d52f2ef7d671aa
+ms.openlocfilehash: da6b412796bbfc4d5c0d5ed177335e6f3fba9f87
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "45101635"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45126633"
 ---
 # <a name="archive-third-party-data"></a>Archiver des données tierces
 
@@ -73,7 +73,7 @@ Les trois principaux outils eDiscovery de Microsoft 365 sont la recherche de con
 
 ### <a name="retention-policies"></a>Stratégies de rétention
 
-Vous pouvez appliquer une [stratégie de rétention](retention-policies.md) aux boîtes aux lettres utilisateur pour conserver, puis supprimer les données tierces (et tout autre contenu de boîte aux lettres) après l’expiration de la période de rétention. Vous pouvez également utiliser des stratégies de rétention pour supprimer des données tierces d’un certain âge ou déclencher un examen de destruction à l’expiration de la période de rétention.
+Vous pouvez appliquer une [stratégie de rétention](retention.md) aux boîtes aux lettres utilisateur pour conserver, puis supprimer les données tierces (et tout autre contenu de boîte aux lettres) après l’expiration de la période de rétention. Vous pouvez également utiliser des stratégies de rétention pour supprimer des données tierces d’un certain âge ou déclencher un examen de destruction à l’expiration de la période de rétention.
 
 ### <a name="records-management"></a>Gestion des enregistrements
 

@@ -16,12 +16,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Découvrez les limites de cas, les limites d’indexation et les limites de recherche en vigueur pour la solution eDiscovery avancée dans Microsoft 365.
-ms.openlocfilehash: 67e53a484878b0ea4ddde29d77297a3d9b2fd7cd
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 4f8222abaea0e8920e48f2f7b506d9477e93bc84
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44817091"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45126867"
 ---
 # <a name="limits-in-advanced-ediscovery"></a>Limites définies dans Advanced eDiscovery
 
@@ -33,10 +33,10 @@ Le tableau suivant répertorie les limites pour les cas et les ensembles de rév
 
 |**Description de la limite**|**Limite**|
 |:-----|:-----|
-|Nombre total de documents pouvant être ajoutés à un cas (pour tous les jeux de révision dans un cas).  <br/> |1 million  <br/> |
-|Taille totale des fichiers par jeu de charges. Cela inclut le chargement de non-Office 365 dans un jeu de révision.  <br/> |100 Go  <br/> |
+|Nombre total de documents pouvant être ajoutés à un cas (pour tous les jeux de révision dans un cas).  <br/> |3 millions <br/> |
+|Taille totale des fichiers par jeu de charges. Cela inclut le chargement de non-Office 365 dans un jeu de révision.  <br/> |300 Go <br/> |
 |Quantité totale de données chargées dans tous les jeux de révision de l’organisation par jour.<br/> |2 TO <br/> |
-|Nombre maximal de charges par cas.  <br/> |0,15 <br/> |
+|Nombre maximal de charges par cas.  <br/> |15  <br/> |
 |Nombre maximal de jeux de révision par cas.  <br/> |vingtaine <br/> |
 |||
 
@@ -60,9 +60,9 @@ Les limites décrites dans cette section concernent l’utilisation de l’outil
 |:-----|:-----|
 |Nombre maximal de boîtes aux lettres ou de sites pouvant faire l’objet d’une recherche dans une seule recherche.  <br/> |Sans limite  <br/> |
 |Nombre maximal de recherches pouvant être exécutées en même temps.  <br/> |Sans limite  <br/> | 
-|Nombre maximal de recherches qu’un utilisateur peut démarrer en même temps.  <br/> |10   <br/> | 
+|Nombre maximal de recherches qu’un utilisateur peut démarrer en même temps.  <br/> |10   <br/> | 
 |Nombre maximal de caractères pour une requête de recherche (y compris les opérateurs et les conditions).  <br/> |**Boîtes aux lettres**: 10 000<br/>**Sites**: 4 000 lors de la recherche sur tous les sites ou 2 000 lors de la recherche sur 20 sites <sup>2</sup> <br/> |
-|Nombre minimal de caractères alpha pour les caractères génériques de préfixe ; par exemple **, \* un ou un** **défini \* **. <br/> |3  <br/> |  
+|Nombre minimal de caractères alpha pour les caractères génériques de préfixe ; par exemple **, \* un ou un** **défini \* **. <br/> |3   <br/> |  
 |Nombre maximal de variantes renvoyées lors de l’utilisation d’un caractère générique de préfixe pour rechercher une expression exacte ou avec un caractère générique de préfixe et l’opérateur de type booléen **near** .  <br/> |10 000 <sup>3</sup> <br/> |
 |Nombre maximal d’éléments par boîte aux lettres utilisateur qui s’affichent sur la page d’aperçu pour les recherches. Les éléments les plus récents sont affichés.   <br/> |100  <br/> |
 |Nombre maximal d’éléments de toutes les boîtes aux lettres affichés sur la page d’aperçu pour les recherches.  <br/> |1 000  <br/> |

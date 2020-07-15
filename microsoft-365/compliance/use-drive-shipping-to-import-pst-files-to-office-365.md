@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 40829b57-793c-4d41-b171-e9270129173d
 ms.custom: seo-marvel-apr2020
 description: L’administrateur peut apprendre à importer des fichiers PST dans des boîtes aux lettres Microsoft 365 en copiant des fichiers PST sur un disque dur, puis en les expédiant à Microsoft.
-ms.openlocfilehash: dd97b4734fafbd6126d58997f4fd70eff43d082a
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: e94a59b19271af275f74a08355a017533f8ef45d
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44819084"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45127341"
 ---
 # <a name="use-drive-shipping-to-import-your-organizations-pst-files"></a>Utiliser l’expédition de disque pour importer les fichiers PST de votre organisation
 
@@ -172,7 +172,7 @@ Pour réaliser cette étape, vous devez utiliser l’outil WAImportExport.exe po
 
     Le tableau suivant décrit les paramètres et leurs valeurs requises. 
     
-    |**Parameter**|**Description**|**Exemple**|
+    |**Paramètre**|**Description**|**Exemple**|
     |:-----|:-----|:-----|
     | `/j:` <br/> |Indique le nom du fichier journal. Ce fichier est enregistré dans le dossier où se trouve l’outil WAImportExport.exe. Un fichier journal doit être créé sur chaque disque dur envoyé à Microsoft. Chaque fois que vous exécutez l’outil WAImportTool.exe pour copier des fichiers PST sur un disque dur, des informations sont ajoutées au fichier journal de ce disque.  <br/> Personnel du centre de données Microsoft utilisez les informations contenues dans le fichier journal pour associer le disque dur au travail d’importation que vous créez à l’étape 4, et pour télécharger les fichiers PST dans la zone de stockage Azure de Microsoft Cloud.  <br/> | `/j:PSTHDD1.jrn` <br/> |
     | `/t:` <br/> |Indique la lettre de lecteur du disque dur quand celui-ci est connecté à votre ordinateur local.  <br/> | `/t:h` <br/> |
@@ -460,7 +460,7 @@ Pour installer l’Explorateur Stockage Microsoft Azure et vous connecter à vo
     
   - Utiliser les [Outils eDiscovery](search-for-content.md) de Microsoft pour effectuer des recherches dans les données. 
     
-  - Appliquez les [stratégies de rétention de Microsoft 365](retention-policies.md) pour contrôler la durée de conservation des données, ainsi que les mesures à prendre après l’expiration de la période de rétention. 
+  - Appliquez les [stratégies de rétention de Microsoft 365](retention.md) pour contrôler la durée de conservation des données, ainsi que les mesures à prendre après l’expiration de la période de rétention. 
     
   - Recherchez dans le [Journal d’audit](search-the-audit-log-in-security-and-compliance.md) les événements liés à ces données. 
     

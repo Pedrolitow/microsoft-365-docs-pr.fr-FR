@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
 description: Découvrez comment configurer un connecteur personnalisé pour importer des données tierces à partir de sources de données telles que Salesforce chatter, Yahoo Messenger ou Yammer.
-ms.openlocfilehash: f76ceda12bf48d26454a47e4b0b5d6ad42fbe55d
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: c3b824909ae1243e2dd1f12b799e53d00d9615ca
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44817039"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45126653"
 ---
 # <a name="work-with-a-partner-to-archive-third-party-data"></a>Collaborer avec un partenaire pour archiver des données tierces
 
@@ -199,7 +199,7 @@ Les sections suivantes répertorient les partenaires Microsoft (et les sources d
     
 - Salesforce Chatter
 
-- Skype Entreprise Online
+- Skype Entreprise Online
     
 - Skype Entreprise, versions 2007 R2-2016 (sur site)
     
@@ -499,7 +499,7 @@ Voici les étapes à suivre pour créer et configurer une boîte aux lettres de 
     
       - [Placer une boîte aux lettres en conservation pour litige](https://go.microsoft.com/fwlink/p/?LinkId=404420)
     
-      - [Vue d’ensemble des stratégies de rétention](retention-policies.md)
+      - [En savoir plus sur les stratégies de rétention et les étiquettes de conservation](retention.md)
     
     - Activez l’enregistrement d’audit des boîtes aux lettres pour l’accès des propriétaires, des délégués et des administrateurs à la boîte aux lettres de données tierce. Voir [activer l’audit de boîte aux lettres](enable-mailbox-auditing.md). Cela vous permet d’auditer toutes les activités effectuées par les utilisateurs ayant accès à la boîte aux lettres de données tierce.
 
@@ -513,7 +513,7 @@ L’étape suivante consiste à configurer les boîtes aux lettres des utilisate
     
     - [Placer une boîte aux lettres en conservation pour litige](https://go.microsoft.com/fwlink/p/?LinkId=404420)
     
-    - [Vue d’ensemble des stratégies de rétention](retention-policies.md)
+    - [En savoir plus sur les stratégies de rétention et les étiquettes de conservation](retention.md)
     
     Comme indiqué précédemment, lorsque vous placez des boîtes aux lettres en conservation, vous pouvez définir la durée de conservation des éléments de la source de données tierces ou vous pouvez choisir de les conserver indéfiniment.
 

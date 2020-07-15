@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.custom: seo-marvel-apr2020
 titleSuffix: Microsoft 365 Compliance
-ms.openlocfilehash: 0729530537e1d01f2e58633bf67a968a6ae2717b
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: 5ba6f86ca44fbddf5fb603c5312c9fedebfad225
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44352291"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45127311"
 ---
 # <a name="supervision-policies"></a>Stratégies de surveillance
 
@@ -86,14 +86,14 @@ Vous créez des stratégies de surveillance dans le centre de conformité. Ces s
 
 ### <a name="supervised-users"></a>Utilisateurs supervisés
 
-Avant de commencer à utiliser la surveillance, vous devez déterminer qui a besoin de ses communications. Dans la stratégie, les adresses de messagerie des utilisateurs identifient des individus ou des groupes de personnes à superviser. Les groupes Microsoft 365, les listes de distribution basées sur Exchange et les canaux Microsoft teams sont des exemples de ces groupes. Vous pouvez également exclure des utilisateurs ou des groupes spécifiques de la surveillance avec un groupe supervisé ou une liste de groupes.
+Avant de commencer à utiliser la surveillance, vous devez déterminer qui a besoin de ses communications. Dans la stratégie, les adresses de messagerie des utilisateurs identifient les individus ou groupes de personnes à superviser. Les groupes Microsoft 365, les listes de distribution basées sur Exchange et les canaux Microsoft Teams sont quelques exemples. Vous pouvez également exclure des utilisateurs ou des groupes spécifiques de la surveillance avec un groupe supervisé ou une liste de groupes.
 
 >[!IMPORTANT]
 >Les utilisateurs analysés par les stratégies de surveillance doivent disposer d’une licence de conformité Microsoft 365 E5, d’une licence Office 365 entreprise E3 avec le complément de conformité avancé ou être inclus dans un abonnement Office 365 entreprise E5, ou être inclus dans un abonnement Microsoft 365 E5. Si vous ne disposez pas d’un plan entreprise E5 existant et que vous souhaitez essayer de contrôler, vous pouvez vous [inscrire pour obtenir une version d’évaluation d’Office 365 entreprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279).
 
 ### <a name="reviewers"></a>Relecteurs
 
-Lorsque vous créez une stratégie de surveillance, vous devez déterminer qui effectuera les révisions des messages des utilisateurs supervisés. Dans la stratégie, les adresses de messagerie des utilisateurs identifient des personnes ou des groupes de personnes pour examiner les communications surveillées. Tous les relecteurs doivent avoir des boîtes aux lettres hébergées sur Exchange Online.
+Lorsque vous créez une stratégie de surveillance, vous devez déterminer qui effectuera les révisions des messages des utilisateurs supervisés. Dans la stratégie, les adresses de messagerie des utilisateurs identifient les individus ou les groupes de personnes qui doivent réviser les communications contrôlées. Tous les relecteurs doivent avoir des boîtes aux lettres hébergées sur Exchange Online.
 
 ### <a name="groups-for-supervised-users-and-reviewers"></a>Groupes pour les utilisateurs et les relecteurs surveillés
 
@@ -101,7 +101,7 @@ Pour simplifier votre configuration, créez des groupes pour les personnes qui o
 
 Lorsque vous sélectionnez un groupe Microsoft 365 pour les utilisateurs supervisés, la stratégie surveille le contenu de la boîte aux lettres partagée et des canaux Microsoft teams associés au groupe. Lorsque vous sélectionnez une liste de distribution, la stratégie analyse les boîtes aux lettres des utilisateurs individuels.
 
-### <a name="supported-communication-types"></a>Types de communication pris en charge
+### <a name="supported-communication-types"></a>Types de communications pris en charge
 
 Avec les stratégies de surveillance, vous pouvez choisir de surveiller les messages dans une ou plusieurs des plateformes de communication suivantes :
 
@@ -177,7 +177,7 @@ Le tableau suivant décrit plus en plus de chaque condition.
 |:-----|:-----|
 | **Un message est reçu à partir de l’un de ces domaines** <br><br> **Le message n’est reçu à partir d’aucun de ces domaines** | Appliquez la stratégie pour inclure ou exclure des domaines ou des adresses de messagerie spécifiques dans les messages reçus. Entrez chaque domaine ou adresse de messagerie et séparez les domaines ou adresses de messagerie par une virgule. Chaque domaine ou adresse de messagerie entré est appliqué séparément, un seul domaine ou une seule adresse de messagerie doit s’appliquer pour la stratégie à appliquer au message. <br><br> Si vous souhaitez surveiller tous les messages électroniques à partir d’un domaine spécifique tout en excluant les messages qui n’ont pas besoin d’être réexaminés (bulletins d’information, annonces, etc.), vous devez configurer la condition qu’un **message n’est pas reçu de l’un de ces domaines** , qui exclut l’adresse de messagerie (par exemple « Newsletter@contoso.com »). |
 | **Un message est envoyé à l’un de ces domaines** <br><br> **Le message n’est pas envoyé à l’un de ces domaines** | Appliquez la stratégie pour inclure ou exclure des domaines ou des adresses de messagerie spécifiques dans les messages envoyés. Entrez chaque domaine ou adresse de messagerie et séparez les domaines ou adresses de messagerie par une virgule. Chaque domaine ou adresse de messagerie est appliqué séparément, un seul domaine ou une seule adresse de messagerie doit s’appliquer pour la stratégie à appliquer au message. <br><br> Si vous souhaitez surveiller tous les messages électroniques envoyés à un domaine spécifique mais exclure les messages envoyés qui n’ont pas besoin d’être réexaminés, vous devez configurer deux conditions : <br> -Un **message est envoyé à l’un de ces domaines** qui définit le domaine (« contoso.com »), et <br> -Un **message n’est pas envoyé à l’un de ces domaines** , qui exclut l’adresse de messagerie (« Subscriptions@contoso.com »). |
-| **Le message est classé avec l’une de ces étiquettes** <br><br> **Le message n’est classé avec aucune de ces étiquettes** | Pour appliquer la stratégie lorsque certaines étiquettes de rétention sont incluses ou exclues dans un message. Les étiquettes de rétention doivent être configurées séparément et les étiquettes configurées dans le cadre de cette condition. Chaque étiquette que vous choisissez est appliquée séparément (une seule de ces étiquettes doit s’appliquer pour la stratégie à appliquer au message). Pour plus d’informations sur la configuration des étiquettes de rétention, consultez la rubrique [vue d’ensemble des étiquettes de rétention](labels.md).|
+| **Le message est classé avec l’une de ces étiquettes** <br><br> **Le message n’est classé avec aucune de ces étiquettes** | Pour appliquer la stratégie lorsque certaines étiquettes de rétention sont incluses ou exclues dans un message. Les étiquettes de rétention doivent être configurées séparément et les étiquettes configurées dans le cadre de cette condition. Chaque étiquette que vous choisissez est appliquée séparément (une seule de ces étiquettes doit s’appliquer pour la stratégie à appliquer au message). Pour plus d’informations sur les étiquettes de rétention, voir [en savoir plus sur les stratégies de rétention et les étiquettes de conservation](retention.md).|
 | **Le message contient l’un de ces mots** <br><br> **Le message ne contient aucun de ces mots** | Pour appliquer la stratégie lorsque certains mots ou expressions sont inclus ou exclus dans un message, entrez chaque mot ou expression et séparez-les par une virgule. Chaque mot que vous entrez est appliqué séparément (un seul mot doit obligatoirement s’appliquer à la stratégie à appliquer au message). Pour plus d’informations sur la saisie des mots ou des expressions, voir la section suivante [Matching words and phrases to emails or attachments](supervision-policies.md#Matchwords).|
 | **La pièce jointe contient l’un de ces mots** <br><br> **La pièce jointe ne contient aucun de ces mots** | Pour appliquer la stratégie lorsque certains mots ou expressions sont inclus ou exclus dans une pièce jointe (par exemple, un document Word), entrez chaque mot ou expression et séparez-les par une virgule. Chaque mot que vous entrez est appliqué séparément (un seul mot doit obligatoirement s’appliquer à la stratégie à appliquer à la pièce jointe). Pour plus d’informations sur la saisie des mots ou des expressions, voir la section suivante [Matching words and phrases to emails or attachments](supervision-policies.md#Matchwords).|
 | **La pièce jointe est l’un de ces types de fichiers** <br><br> **Aucune de ces types de fichiers n’est associée à la pièce jointe** | Pour superviser les communications qui incluent ou excluent des types spécifiques de pièces jointes, entrez les extensions de fichiers (par exemple,. exe ou. pdf). Si vous souhaitez inclure ou exclure plusieurs extensions de fichiers, entrez-les sur des lignes distinctes. Une seule extension de pièce jointe doit correspondre pour que la stratégie s’applique.|
@@ -201,7 +201,7 @@ Si vous entrez plusieurs conditions, Microsoft 365 utilise toutes les conditions
 
 #### <a name="review-percentage"></a>Vérifier le pourcentage
 
-Si vous souhaitez réduire la quantité de contenu à réviser, vous pouvez spécifier un pourcentage de toutes les communications régies par une stratégie de surveillance. Un échantillon aléatoire de contenu en temps réel est sélectionné à partir du pourcentage total de contenu qui correspond aux conditions de stratégie choisies. Si vous souhaitez que les relecteurs examinent tous les éléments, vous pouvez entrer **100%** dans une stratégie de surveillance.
+Si vous voulez réduire la quantité de contenu à réviser, vous pouvez spécifier un pourcentage de toutes les communications régies par une stratégie de supervision. Un échantillon aléatoire de contenu est sélectionné à partir du pourcentage total de contenu qui correspond aux conditions de stratégie choisies. Si vous souhaitez que les relecteurs examinent tous les éléments, vous pouvez entrer **100%** dans une stratégie de surveillance.
 
 ## <a name="monitor--manage"></a>Surveiller & gérer
 

@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365 est fourni avec un certain nombre de classifieurs intégrés que vous pouvez utiliser pour identifier et étiqueter le contenu au sein de votre organisation. Cette rubrique vous explique comment vous préparer à l’utilisation de ces classifieurs.
-ms.openlocfilehash: 2652df8d79b06d6614e2478843195e67de0a8ebb
-ms.sourcegitcommit: 87eff6e8a08cec3cb0464a3b765434717584a4a9
+ms.openlocfilehash: 82155b1dee9ab04dad593ce9ec2da97d3e796e99
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/26/2020
-ms.locfileid: "44371406"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45126313"
 ---
 # <a name="testing-built-in-classifiers-using-retention-labels-preview"></a>Test des classifieurs intégrés à l’aide d’étiquettes de rétention (aperçu)
 
@@ -40,7 +40,7 @@ Microsoft 365 est fourni avec cinq classifieurs intégrés recommandés :
 
   |nom de la langue|||||
   |---------|---------|---------|---------|---------|
-  |3.0|C        |C #       |C++     |Clojure  |
+  |3.0|C        |C#       |C++     |Clojure  |
   |CoffeeScript|CSS     |Activer       |Haskell |HTML     |
   |Java     |JavaScript|Privilège      |MATLAB   |Objective-C|
   |Langage     |PHP      |Python   |R        |Ruby     |
@@ -71,9 +71,9 @@ Microsoft 365 est fourni avec cinq classifieurs intégrés recommandés :
 
 5. Choisissez `Choose a label to auto-apply` .
 
-6. Choisissez `Create new labels` et créez une étiquette à utiliser uniquement avec ce test. Dans ce cas, conservez la `Retention` valeur `off` . Vous ne souhaitez pas activer une rétention ou d’autres actions. Dans ce cas, vous utiliserez l’étiquette de rétention simplement comme étiquette de texte, sans appliquer les actions. Par exemple, vous pouvez créer une étiquette de rétention nommée « SourceCode classificateur test » sans action, puis appliquer automatiquement cette étiquette de rétention au contenu dont le code source est classifieur comme condition. Pour en savoir plus sur la création d’étiquettes de rétention, consultez la rubrique [Overview of retention labels](labels.md).
+6. Choisissez `Create new labels` et créez une étiquette à utiliser uniquement avec ce test. Dans ce cas, conservez la `Retention` valeur `off` . Vous ne souhaitez pas activer une rétention ou d’autres actions. Dans ce cas, vous utiliserez l’étiquette de rétention simplement comme étiquette de texte, sans appliquer les actions. Par exemple, vous pouvez créer une étiquette de rétention nommée « SourceCode classificateur test » sans action, puis appliquer automatiquement cette étiquette de rétention au contenu dont le code source est classifieur comme condition. Pour en savoir plus sur les étiquettes de rétention, voir [en savoir plus sur les stratégies de rétention et les étiquettes de conservation](retention.md).
   
-7. Choisissez `Auto-apply a label` , puis `Choose a label to auto-apply` . Pour en savoir plus sur l’utilisation de la condition basée sur une étiquette, consultez la rubrique [appliquer automatiquement une stratégie d’étiquette de rétention basée sur une condition](labels.md#applying-a-retention-label-automatically-based-on-conditions).
+7. Choisissez `Auto-apply a label` , puis `Choose a label to auto-apply` . Pour en savoir plus sur l’utilisation d’une étiquette basée sur une condition, consultez la rubrique [Configuration des conditions d’application automatique des étiquettes de rétention](apply-retention-labels-automatically.md#configuring-conditions-for-auto-apply-retention-labels).
 
 8. Choisissez votre étiquette de test dans la liste, puis choisissez `Next` .
 
@@ -106,5 +106,5 @@ Microsoft 365 est fourni avec cinq classifieurs intégrés recommandés :
 Voir aussi :
 
 - [Prise en main des classificateurs pouvant être formés (préversion)](classifier-getting-started-with.md)
-- [Vue d’ensemble des étiquettes de rétention](labels.md)
-- [Application automatique d’une stratégie d’étiquette de rétention basée sur une condition](labels.md#applying-a-retention-label-automatically-based-on-conditions)
+- [En savoir plus sur les stratégies de rétention et les étiquettes de conservation](retention.md)
+- [Application automatique d’une étiquette de rétention pour conserver ou supprimer du contenu](apply-retention-labels-automatically.md)
