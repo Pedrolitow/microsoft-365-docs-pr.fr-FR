@@ -67,7 +67,7 @@ Suivez ces étapes pour un nouvel appareil exécutant Windows 10 Professionnel C
     
 3. Terminez la configuration de l'appareil Windows 10.
     
-   Once you're done, the user will be connected to your organization's Azure AD. See [Verify the device is connected to Azure AD](#verify-the-device-is-connected-to-azure-ad) to make sure. 
+   Une fois cette opération terminée, l'utilisateur est connecté au domaine Azure AD de votre organisation. Pour vous en assurer, voir [Vérifier qu'un appareil est connecté à Azure AD](#verify-the-device-is-connected-to-azure-ad). 
   
 ### <a name="for-a-device-already-set-up-and-running-windows-10-pro"></a>Pour un appareil qui a déjà été configuré et qui exécute Windows 10 Professionnel
 
@@ -97,7 +97,7 @@ Suivez ces étapes pour un nouvel appareil exécutant Windows 10 Professionnel C
   
 6. Sur la page vérifier qu' **il s’agit de votre organisation** , vérifiez que les informations sont correctes, puis cliquez sur **rejoindre**.
   
-   On the **You're all set!** page, click **Done**.
+   À la page **Vous avez terminé.**, cliquez sur **Terminé**.
   
    ![On the Make sure this is your organization screen, click Join](../media/c749c0a2-5191-4347-a451-c062682aa1fb.png)
   

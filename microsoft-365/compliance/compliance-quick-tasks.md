@@ -75,7 +75,7 @@ Pour obtenir des conseils détaillés sur la configuration de la gestion des acc
 
 ## <a name="task-6-classify-and-protect-sensitive-data"></a>Tâche 6 : classer et protéger les données sensibles
 
-To get their work done, people in your organization collaborate with others both inside and outside the organization. This means that content no longer stays behind a firewall—it can roam everywhere, across devices, apps, and services. And when it roams, you want it to do so in a secure, protected way that meets your organization's business and compliance policies.
+Pour mener à bien leur travail, les membres de votre organisation collaborent avec d’autres personnes au sein de l’organisation et en dehors de celle-ci. Cela signifie que le contenu n’est plus protégé par un pare-feu : il peut se déplacer partout, sur les appareils, applications et services. Dans ce cas, vous devez sécuriser et protéger l’itinérance, tout en respectant les stratégies métier et de conformité de votre organisation.
 
 Les [étiquettes de sensibilité](sensitivity-labels.md) vous permettent de classer et de protéger les données de votre organisation, tout en veillant à ce que la productivité des utilisateurs et leur capacité à collaborer ne soient pas entravées. Utiliser les étiquettes de sensibilité pour appliquer le chiffrement et les restrictions d’utilisation appliquer des marquages visuels et protéger les informations sur les plateformes et les appareils, sur site et dans le Cloud.
 

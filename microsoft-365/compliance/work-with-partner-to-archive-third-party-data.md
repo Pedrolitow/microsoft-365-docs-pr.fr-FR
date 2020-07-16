@@ -51,7 +51,7 @@ L’illustration et la description suivantes expliquent le fonctionnement du pro
     
 3. Le connecteur partenaire se connecte au service Azure dans Microsoft 365 à l’aide du service Web Exchange (EWS) via un point de terminaison connu.
     
-4. Items are imported into the mailbox of a specific user or into a "catch-all" third-party data mailbox. Whether an item is imported into a specific user mailbox or to the third-party data mailbox is based on the following criteria:
+4. Les éléments sont importés dans la boîte aux lettres d’un utilisateur spécifique ou dans une boîte aux lettres « fourre-tout » destinée aux données tierces. L’importation d’un élément dans la boîte aux lettres d’un utilisateur spécifique ou dans la boîte aux lettres de données tierces repose sur les critères suivants :
     
    1. **Éléments dont l’ID d’utilisateur correspond à un compte d’utilisateur :** Si le connecteur partenaire peut mapper l’ID utilisateur de l’élément dans la source de données tierce à un ID d’utilisateur spécifique dans Office 365, l’élément est copié dans le dossier **purges** du dossier éléments récupérables de l’utilisateur. Les utilisateurs ne peuvent pas accéder aux éléments du dossier Purges. Toutefois, vous pouvez utiliser les outils de découverte électronique pour rechercher des éléments dans le dossier purges.
     

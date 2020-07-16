@@ -50,7 +50,7 @@ Si un utilisateur possède un ordinateur sur lequel sont enregistrés de nombreu
     
 3. Sélectionnez **Charger**![Upload](../media/d9b963b8-10af-42e2-953d-360301b83d3c.png) dans la barre de menus et accédez aux fichiers que vous voulez enregistrer. 
     
-To transfer the user profile and important files, you can also use a third-party tool, such as ForensiT. You should upload the resulting files in OneDrive for Business also.
+Pour transférer le profil utilisateur et les fichiers importants, vous pouvez également utiliser un outil tiers, tels que ForensiT. Vous devez également charger les fichiers obtenus dans OneDrive Entreprise.
   
 ## <a name="for-more-on-setting-up-and-using-microsoft-365-for-business"></a>Pour en savoir plus sur la configuration et l’utilisation de Microsoft 365 pour les entreprises
 

@@ -82,9 +82,9 @@ La première étape consiste à créer une balise de rétention personnalisée (
   
 ## <a name="step-2-create-a-new-exchange-retention-policy-for-mailboxes-on-hold"></a>Étape 2 : créer une nouvelle stratégie de rétention Exchange pour les boîtes aux lettres en conservation
 
-The next step is to create a new retention policy and add retention tags to it, including the Recoverable Items RPT that you created in Step 1. This new policy will be applied to mailboxes on hold in the next step. 
+L’étape suivante consiste à créer une stratégie de rétention et à lui ajouter des balises de rétention, y compris la balise de stratégie de rétention des éléments récupérables que vous avez créée à l’étape 1. Cette nouvelle stratégie sera appliquée aux boîtes aux lettres placées en conservation dans l’étape suivante.  
   
-Before you create the new retention policy, determine the additional retention tags that you want to add. For a list of the retention tags that are added to the Default MRM Policy and for information about creating new retention tags, see the following:
+Avant de créer la stratégie de rétention, déterminez les balises de rétention supplémentaires que vous souhaitez ajouter. Pour obtenir une liste des balises de rétention qui sont ajoutées à la stratégie MRM par défaut et pour plus d’informations sur la création des balises de rétention, voir les rubriques suivantes :
   
 - [Stratégie de rétention par défaut dans Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=746954)
     
@@ -106,7 +106,7 @@ Vous pouvez utiliser le centre d’administration Exchange ou Exchange Online Po
     
     ![Sélectionnez la balise de rétention Éléments récupérables personnalisée](../media/eb49866b-bdef-4fcd-a6d9-01607c01249b.png)
   
-5. Select additional retention tags to add to the retention policy. For example, you might want to add the same tags that are included in the Default MRM Policy.
+5. Sélectionnez des balises de rétention supplémentaires à ajouter à la stratégie de rétention. Par exemple, vous pouvez ajouter les mêmes balises qui sont incluses dans la stratégie MRM par défaut.
     
 6. Lorsque vous avez fini d’ajouter les balises de rétention, cliquez sur **OK**.
     
