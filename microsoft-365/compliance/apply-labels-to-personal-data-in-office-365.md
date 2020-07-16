@@ -18,18 +18,18 @@ search.appverid:
 - MET150
 description: Découvrez comment utiliser des étiquettes Office dans le cadre de votre plan de protection Règlement général sur la protection des données (RGPD).
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 42cfc73433a7087f0f5dd62f2da9b27b5a3cf48d
-ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
+ms.openlocfilehash: a7bea2abeaec7a858b3cfc693603c46c0f2a416a
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "44165257"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45126815"
 ---
 # <a name="apply-labels-to-personal-data"></a>Appliquer des étiquettes aux données personnelles
 
  Utilisez cette rubrique si vous utilisez des étiquettes de classification dans le cadre de votre plan de protection RGPD. 
 
-Si vous utilisez des étiquettes pour la protection des données personnelles dans Microsoft 365, Microsoft recommande que vous commenciez avec des[étiquettes de rétention](labels.md). Avec les étiquettes de rétention, vous pouvez effectuer les actions suivantes :
+Si vous utilisez des étiquettes pour la protection des données personnelles dans Microsoft 365, Microsoft recommande que vous commenciez avec des[étiquettes de rétention](retention.md#retention-labels). Avec les étiquettes de rétention, vous pouvez effectuer les actions suivantes :
 - La gouvernance des données avancée permet d’appliquer automatiquement des étiquettes basées sur les types d’informations sensibles ou d’autres critères.
 - Utilisez des étiquettes de rétention avec la protection contre la perte de données pour appliquer la protection. 
 - Utilisez des étiquettes avec eDiscovery et Recherche de contenu. 

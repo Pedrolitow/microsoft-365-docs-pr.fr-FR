@@ -20,12 +20,12 @@ ms.assetid: ba688e0a-0fcb-4bd7-8e57-2b669564ea84
 ms.custom:
 - seo-marvel-apr2020
 description: Découvrez comment utiliser le Service d’importation dans le Centre de sécurité et de conformité pour importer en bloc des données de courrier (fichiers PST) vers des boîtes aux lettres d’utilisateurs.
-ms.openlocfilehash: e0d0c8c0a963e8660cac09abe68e6824dd7e1d3c
-ms.sourcegitcommit: a4926e98b6594bbee68bfca90438c9c764499255
+ms.openlocfilehash: fd369a8cde1284c19f9eb3cb38cf8bfe39dbc4ee
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "45091940"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45127159"
 ---
 # <a name="overview-of-importing-your-organizations-pst-files"></a>Vue d’ensemble de l’importation des fichiers PST de votre organisation
 
@@ -99,7 +99,7 @@ Voici une illustration et une description du processus d’importation de fichie
     
   - Utiliser [les Cas de découverte électronique](ediscovery-cases.md) pour gérer les enquêtes juridiques de votre organisation 
     
-  - Utilisez les [stratégies de rétention](retention-policies.md) dans le Centre de sécurité et de conformité pour contrôler la durée de conservation du contenu des boîtes aux lettres, puis supprimez le contenu à la fin de la période de rétention. 
+  - Utilisez les [stratégies de rétention](retention.md) dans le Centre de sécurité et de conformité pour contrôler la durée de conservation du contenu des boîtes aux lettres, puis supprimez le contenu à la fin de la période de rétention. 
 
   - Utilisez [les stratégies de conformité communication](communication-compliance.md) pour examiner les messages afin de vous assurer qu’ils sont conformes aux normes des messages et ajoutez un type de classification.
     
@@ -146,7 +146,7 @@ En outre, pour créer des tâches d’importation dans le Centre de sécurité e
   
  **Où le chargement réseau est-il disponible ?**
   
-Network upload is currently available in these regions: United States, Canada, Brazil, the United Kingdom, France, Germany, Europe, India, East Asia, Southeast Asia, Japan, Republic of Korea, Australia, and United Arab Emirates (UAE). Network upload will be available in more regions soon.
+Le chargement réseau est actuellement disponible dans ces régions : États-Unis, au Canada, au Brésil, au Royaume-Uni, en France, en Allemagne, en Europe, en Inde, en Asie de l’Est, en Asie du Sud-Est, au Japon, en République de Corée, en Australie et Émirats arabes unis. Ce service sera prochainement disponible dans d’autres régions.
   
  **À combien revient l’importation de fichiers PST via le chargement du réseau ?**
   
@@ -186,7 +186,7 @@ Oui. Les métadonnées du message d’origine sont inchangées pendant l’impor
   
  **Une limite est-elle appliquée au nombre de niveaux d’une hiérarchie de dossiers pour un fichier PST que je souhaite importer dans une boîte aux lettres ?**
   
-Yes. You can't import a PST file that has 300 or more levels of nested folders.
+Oui. Vous ne pouvez pas importer un fichier PST comportant 300 niveaux de dossiers imbriqués ou plus.
   
  **Est-il possible d’utiliser le chargement réseau pour importer des fichiers PST dans une boîte aux lettres inactive Office 365 ?**
   
@@ -245,7 +245,7 @@ Vous pouvez expédier au maximum 10 disques durs pour une même tâche d’impo
   
  **Quel délai faut-il compter entre le moment où j’expédie mon disque dur et le moment où les données sont sur le centre de données Microsoft ?**
   
-That depends on a few things, such as your proximity to the Microsoft data center and what kind of shipping option you used to ship your hard drive (such as, next-day delivery, two-day delivery, or ground-delivery). With most shippers, you can use the tracking number to track the status of your delivery.
+Cela dépend de plusieurs facteurs, comme votre proximité par rapport au centre de données Microsoft et le type d’expédition choisi pour l’envoi de votre disque dur (livraison le jour suivant, livraison à deux jours ou envoi économique). La plupart des expéditeurs vous communiquent un numéro de suivi pour suivre le statut de votre livraison.
   
  **Une fois mon disque dur arrivé au centre de données de Microsoft, combien de temps faut-il pour charger mes fichiers PST dans Azure ?**
   
@@ -283,7 +283,7 @@ Oui. Les métadonnées du message d’origine sont inchangées pendant l’impor
   
  **Une limite est-elle appliquée au nombre de niveaux d’une hiérarchie de dossiers pour un fichier PST que je souhaite importer dans une boîte aux lettres ?**
   
-Yes. You can't import a PST file that has 300 or more levels of nested folders.
+Oui. Vous ne pouvez pas importer un fichier PST comportant 300 niveaux de dossiers imbriqués ou plus.
   
  **Est-il possible d’expédier un disque en vue de l’importation de fichiers PST dans une boîte aux lettres inactive Microsoft 365 ?**
   
@@ -299,19 +299,19 @@ Non, vous ne pouvez pas importer des fichiers PST dans des dossiers publics.
   
  **Est-il possible de demander à Microsoft de réinitialiser mon disque dur avant de me le retourner ?**
   
-No, Microsoft can't wipe hard drives before shipping them back to customers. Hard drives are returned to you in the same state they were in when they were received by Microsoft.
+Non, Microsoft ne peut pas réinitialiser les disques durs avant leur renvoi aux clients. Les disques durs vous sont renvoyés en l’état, tels que Microsoft les a reçus.
   
  **Est-il possible de demander à Microsoft de broyer mon disque dur au lieu de me le réexpédier ?**
   
-No, Microsoft can't destroy your hard drive. Hard drives are returned to you in the same state they were in when they were received by Microsoft.
+Non, Microsoft ne peut pas détruire votre disque dur. Les disques durs vous sont renvoyés en l’état, tels que Microsoft les a reçus.
   
  **Par quels services de courrier l’expédition de retour est-elle assurée ?**
   
-If you're a customer in the United States or Europe, Microsoft uses FedEx to return your hard drive. For all other regions, Microsoft uses DHL.
+Si vous êtes un client résidant aux États-Unis ou en Europe, Microsoft fera appel à FedEx pour vous retourner le disque dur. Pour toutes les autres régions, Microsoft fait appel à DHL.
   
  **Quel est le coût de l’expédition de retour ?**
   
-Return shipping costs vary, depending on your proximity to the Microsoft data center that you shipped your hard drive to. Microsoft will bill your FedEx or DHL account to return your hard drive. The cost of return shipping is your responsibility.
+Les frais d’expédition de retour varient en fonction de votre proximité par rapport au centre de données Microsoft auquel vous avez expédié votre disque dur. Microsoft imputera les frais de retour de votre disque dur sur votre compte FedEx ou DHL. Les frais d’expédition de retour sont à votre charge.
   
  **Est-il possible d’expédier un disque dur à Microsoft en utilisant un service d’expédition de courrier spécial, comme une expédition personnalisée FedEx ?**
   
@@ -319,4 +319,4 @@ Oui.
   
  **Y a-t-il des formalités particulières à effectuer pour expédier un disque dur à l’étranger ?**
   
-The hard drive that you ship to Microsoft might have to cross international borders. If this is the case, you're responsible for ensuring that the hard drive and the data it contains are imported and/or exported in accordance with the applicable laws. Before shipping a hard drive, check with your advisors to verify that your drive and data can legally be shipped to the specified Microsoft data center. This will help to ensure that it reaches Microsoft in a timely manner.
+Le disque dur que vous expédiez à Microsoft va peut-être devoir franchir des frontières internationales. Si c’est le cas, il vous appartient de vérifier que le disque dur et les données qu’il contient sont importés et/ou exportés conformément à la législation en vigueur. Avant d’expédier un disque dur, vérifiez auprès de vos conseillers si, du point de vue légal, le disque et les données peuvent être expédiés au centre de données Microsoft spécifié. Vous aurez ainsi la garantie qu’il parviendra à Microsoft dans un délai raisonnable.
