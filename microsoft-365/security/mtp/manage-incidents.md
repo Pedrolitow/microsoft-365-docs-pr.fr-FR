@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: b8f7e3bbb6d2348c3f19e8df251d700d8adf8e33
-ms.sourcegitcommit: 74bf600424d0cb7b9d16b4f391aeda7875058be1
+ms.openlocfilehash: f711cc2ff38f15dfd22097e37a1dec42719eb5aa
+ms.sourcegitcommit: 94f2f8e3e6bc3946d8b3cf798b3eb77a49ffd12a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42235083"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "45148113"
 ---
 # <a name="manage-incidents-in-microsoft-threat-protection"></a>Gérer les incidents dans la Protection Microsoft contre les menaces
 
@@ -44,7 +44,16 @@ Si, lors d’une investigation, vous devez déplacer des alertes d’un incident
 
 ## <a name="edit-incident-name"></a>Modifier le nom de l’incident
 Par défaut, un numéro est attribué à un incident. Vous pouvez modifier le nom de l’incident afin de mieux l’aligner avec votre convention d’affectation de noms préférée.
- 
+
+> [!TIP]
+> Pour une visibilité plus complète en un clin d’œil, l’appellation automatique des incidents, actuellement en préversion publique, génère des noms d’incidents en fonction des attributs d’alerte, tels que le nombre de points de terminaison affectés, les utilisateurs affectés, les sources de détection ou les catégories. Cela vous permet de comprendre rapidement l’étendue de l’incident.
+>
+> Par exemple : plusieurs *étapes incident sur plusieurs points de terminaison signalés par plusieurs sources.*
+>
+> Les incidents qui existaient avant le déploiement de la dénomination automatique des incidents ne verront pas leur nom modifié.
+>
+> En savoir plus sur l' [activation des fonctionnalités d’aperçu](preview.md#turn-on-preview-features).
+
 ## <a name="assign-incidents"></a>Attribuer des incidents
 Si aucun incident n’a encore été affecté, vous pouvez sélectionner **À moi-même** pour vous l’attribuer. Cette action suppose l’appropriation non seulement de l’incident, mais aussi de toutes les alertes associées.
 
@@ -68,4 +77,3 @@ Les commentaires ajoutés apparaissent instantanément dans le volet.
 
 ## <a name="add-incident-tags"></a>Ajouter des balises d’incident
 Vous pouvez ajouter des balises personnalisées à un incident, par exemple, pour marquer un groupe d’incidents présentant des caractéristiques communes. Vous pouvez filtrer ultérieurement la file d’attente des incidents pour afficher tous ceux qui contiennent une balise spécifique.
-

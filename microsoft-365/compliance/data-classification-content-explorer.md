@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: L’Explorateur de contenu vous permet d’afficher des éléments étiquetés en mode natif.
-ms.openlocfilehash: 731ae51a02e4a6fbd35b5be7c0bf083c814ddfd3
-ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
+ms.openlocfilehash: e5041f82d22b62e8b343c62136251e2c69ca9e47
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "44327850"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45127041"
 ---
 # <a name="get-started-with-content-explorer"></a>Prise en main de l’explorateur de contenu
 
@@ -92,7 +92,7 @@ Les étiquettes de confidentialité doivent être activées pour les fichiers st
 
 ### <a name="retention-labels"></a>Étiquettes de rétention
 
-Les [étiquettes de rétention](labels.md) vous permettent de définir la durée de conservation d’un élément étiqueté et les étapes à suivre avant de le supprimer. Elles peuvent être appliquées manuellement ou automatiquement. Elles peuvent jouer un rôle en aidant votre organisation à respecter les exigences légales et réglementaires.
+Les [étiquettes de rétention](retention.md) vous permettent de définir la durée de conservation d’un élément étiqueté et les étapes à suivre avant de le supprimer. Elles peuvent être appliquées manuellement ou automatiquement. Elles peuvent jouer un rôle en aidant votre organisation à respecter les exigences légales et réglementaires.
 
 ### <a name="how-to-use-content-explorer"></a>Utilisation de l’Explorateur de contenu
 
@@ -139,8 +139,7 @@ Vous pouvez effectuer une recherche sur les éléments suivants :
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Étiquettes de confidentialité](sensitivity-labels.md)
-- [Étiquettes de rétention](labels.md)
+- [En savoir plus sur les étiquettes de niveau de confidentialité](sensitivity-labels.md)
+- [En savoir plus sur les stratégies et les balises de rétention](retention.md)
 - [Définitions d’entités des types d’informations sensibles.md](sensitive-information-type-entity-definitions.md)
-- [Vue d’ensemble des stratégies de rétention](retention-policies.md)
 - [Vue d’ensemble de la protection contre la perte de données](data-loss-prevention-policies.md)

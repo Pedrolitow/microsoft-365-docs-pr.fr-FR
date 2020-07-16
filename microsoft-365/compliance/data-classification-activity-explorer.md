@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: L’explorateur d’activité complète les fonctionnalités de classification des données en vous permettant de voir et de filtrer les actions que les utilisateurs effectuent sur votre contenu étiqueté.
-ms.openlocfilehash: 5cb6a8dbfa570b3b0e0d1ce39648d12050d2af81
-ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
+ms.openlocfilehash: 63ecb84c0ae658b0fd3463dba10d56059352910b
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "44327840"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45126643"
 ---
 # <a name="get-started-with-activity-explorer"></a>Prise en main de l’explorateur d’activité
 
@@ -43,7 +43,7 @@ Plus de 30 filtres différents sont à votre disposition. Parmi ceux-ci, figure
 
 ## <a name="prerequisites"></a>Conditions préalables
 
-Chaque compte accédant et utilisant la classification de données doit posséder une licence pour l’un de abonnements suivants :
+Chaque compte qui accède et utilise la classification de données doit posséder une licence pour l’un des abonnements suivants :
 
 - Microsoft 365 (E5)
 - Office 365 (E5)
@@ -75,7 +75,7 @@ L’intérêt de comprendre quelles actions sont accomplies avec votre contenu m
 > L’explorateur d’activité ne suit pas actuellement les activités de rétention pour Exchange Online.
 
 ## <a name="see-also"></a>Voir aussi
-- [Étiquettes de confidentialité](sensitivity-labels.md)
-- [Étiquettes de rétention](labels.md)
+- [En savoir plus sur les étiquettes de niveau de confidentialité](sensitivity-labels.md)
+- [En savoir plus sur les stratégies et les balises de rétention](retention.md)
 - [Définitions d’entités des types d’informations sensibles](sensitive-information-type-entity-definitions.md)
-- [Vue d’ensemble des stratégies de rétention](retention-policies.md)
+

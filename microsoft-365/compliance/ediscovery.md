@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 143b3ab8-8cb0-4036-a5fc-6536d837bfce
 description: Microsoft 365 offre un certain nombre d’outils eDiscovery que vous pouvez utiliser pour rechercher et conserver du contenu se trouvant dans différents emplacements, comme des boîtes aux lettres Exchange, des sites SharePoint et OneDrive entreprise, des groupes Microsoft 365 et des conversations Skype entreprise.
-ms.openlocfilehash: 4d373f2d5e6c0c64fcce6e0ef097e28f0950cb39
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.openlocfilehash: 2f18d3a9559293e071b7060f0e4a01a7352097c1
+ms.sourcegitcommit: 94f2f8e3e6bc3946d8b3cf798b3eb77a49ffd12a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43943429"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "45148124"
 ---
 # <a name="ediscovery-in-microsoft-365"></a>eDiscovery dans Microsoft 365
 
@@ -88,3 +88,7 @@ La solution eDiscovery avancée de Microsoft 365 (également appelée *Advanced 
 |[Analyser les données d’un ensemble de révision](analyzing-data-in-review-set.md)|En savoir plus sur l’exécution de l’analyse sur les documents dans un jeu de révision. Les résultats de l’analyse exécutée incluent la détection des doublons, le thread électronique et l’identification des thèmes.|
 |[Exporter les données de cas](exporting-data-ediscover20.md)|Découvrez comment exporter des données à partir d’un cas à des fins de révision externe.|
 |||
+
+## <a name="roadmap"></a>Feuille de route
+
+Pour voir les fonctionnalités de découverte électronique qui ont été lancées, qui sont déployées ou en cours de développement, consultez la feuille de [route Microsoft 365](https://aka.ms/eDiscoRoadMap).

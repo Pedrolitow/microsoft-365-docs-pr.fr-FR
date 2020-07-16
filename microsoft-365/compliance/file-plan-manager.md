@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: Le plan de gestion de fichiers offre des fonctionnalités de gestion avancées pour les étiquettes de rétention.
 ms.custom: seo-marvel-may2020
-ms.openlocfilehash: 85160a859469a5c2dcb1aec8100eed6e25bd7597
-ms.sourcegitcommit: 5e8901e7e571f20ede04f460bd3e7077dda004ca
+ms.openlocfilehash: 96150005421f6c2e28183c6e4417edd64b80a814
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "44874904"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45126877"
 ---
 # <a name="use-file-plan-to-manage-retention-labels"></a>Utiliser le plan de gestion de fichiers pour gérer les étiquettes de rétention
 
@@ -42,7 +42,7 @@ Le plan de gestion de fichiers peut être utilisé pour toutes les étiquettes d
 
 ![Page de plan de gestion de fichiers](../media/compliance-file-plan.png)
 
-Pour plus d’informations sur les étiquettes de rétention et leur utilisation, voir [Découvrir les étiquettes de rétention](labels.md).
+Pour plus d’informations sur les étiquettes de rétention et leur utilisation, voir [Découvrir les stratégies et les étiquettes de rétention](retention.md).
 
 ## <a name="accessing-file-plan"></a>Accès au plan de gestion de fichiers
 
@@ -182,4 +182,6 @@ Une fois l’importation terminée, vous pouvez désormais ajouter les étiquett
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-Pour plus d’informations sur la création et la modification des étiquettes de rétention et sur leurs stratégies, voir [Créer, publier ou appliquer automatiquement des étiquettes de rétention](create-retention-labels.md).
+Pour plus d’informations sur la création et la modification des étiquettes de rétention et sur leurs stratégies, voir les documents suivants :
+- [Créer des étiquettes de rétention et les appliquer dans les applications](create-apply-retention-labels.md)
+- [Appliquer automatiquement une étiquette de rétention au contenu](apply-retention-labels-automatically.md)

@@ -16,12 +16,12 @@ ms.assetid: 6f64f2de-d626-48ed-8084-03cc72301aa4
 ms.collection:
 - M365-security-compliance
 description: Quelles sont les meilleures pratiques pour les paramètres de sécurité Exchange Online Protection (EOP) et Advanced Threat Protection (ATP) ? Quelles sont les recommandations actuelles pour la protection standard ? Qu’est-ce qui doit être utilisé si vous voulez être plus strict ? Quels sont les autres éléments que vous obtenez si vous utilisez également la protection avancée contre les menaces ?
-ms.openlocfilehash: 15bd63a35b4279efc634115bbdb5248cdd5038db
-ms.sourcegitcommit: 589f78fc0f39aff9109959ded48d146cc32fc3c5
+ms.openlocfilehash: e6ed4e204ef3cdf66fb065af4621f176bb33cad9
+ms.sourcegitcommit: 9af890ef1b1c95bfc7cc52f7f4e395b62dc5263f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "44761705"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "45146241"
 ---
 # <a name="recommended-settings-for-eop-and-office-365-atp-security"></a>Paramètres recommandés pour la sécurité ATP d’Office 365
 
@@ -45,15 +45,14 @@ Le blocage du courrier indésirable, anti-programme malveillant et anti-hameçon
 
 Pour créer et configurer des stratégies de blocage du courrier indésirable, consultez la rubrique [configure anti-spam Policies in Office 365](configure-your-spam-filter-policies.md).
 
-|||||
+| Nom de la fonctionnalité de sécurité | Standard | Empêcher | Commentaire |
 |---|---|---|---|
-|**Nom de la fonctionnalité de sécurité**|**Standard**|**Empêcher**|**Comment**|
 |Action de détection du **courrier indésirable** <br/><br/> _SpamAction_|**Déplacer le message dans le dossier Courrier indésirable** <br/><br/> `MoveToJmf`|**Mettre en quarantaine le message** <br/><br/> `Quarantine`||
 |Action de détection de **courrier indésirable à fiabilité élevée** <br/><br/> _HighConfidenceSpamAction_|**Mettre en quarantaine le message** <br/><br/> `Quarantine`|**Mettre en quarantaine le message** <br/><br/> `Quarantine`||
 |Action de détection de **courrier d’hameçonnage** <br/><br/> _PhishSpamAction_|**Mettre en quarantaine le message** <br/><br/> `Quarantine`|**Mettre en quarantaine le message** <br/><br/> `Quarantine`||
 |Action de détection de **courrier d’hameçonnage à haut niveau de fiabilité** <br/><br/> _HighConfidencePhishAction_|**Mettre en quarantaine le message** <br/><br/> `Quarantine`|**Mettre en quarantaine le message** <br/><br/> `Quarantine`||
 |Action de détection de **courrier en nombre** <br/><br/> _BulkSpamAction_|**Déplacer le message dans le dossier Courrier indésirable** <br/><br/> `MoveToJmf`|**Mettre en quarantaine le message** <br/><br/> `Quarantine`||
-|Seuil de courrier électronique en masse <br/><br/> _BulkThreshold_|6 |4 |La valeur par défaut est actuellement 7, mais nous vous recommandons de la remplacer par 6. Pour plus d’informations, reportez-vous à [Bulk Complaint Level (BCL) in Office 365](bulk-complaint-level-values.md).|
+|Seuil de courrier électronique en masse <br/><br/> _BulkThreshold_|6 |4 |La valeur par défaut est actuellement 7, mais nous vous recommandons de la remplacer par 6. Pour plus d’informations, reportez-vous à [Bulk Complaint Level (BCL) in Office 365](bulk-complaint-level-values.md).|
 |Période de rétention de quarantaine <br/><br/> _QuarantineRetentionPeriod_|30 jours|30 jours||
 |**Conseils de sécurité** <br/><br/> _InlineSafetyTipsEnabled_|Activé <br/><br/> `$true`|Activé <br/><br/> `$true`||
 |Expéditeurs autorisés <br/><br/> _AllowedSenders_|Aucun|Aucun||
@@ -71,9 +70,8 @@ Il existe plusieurs autres paramètres de filtre de courrier indésirable (ASF) 
 
 Nous vous **recommandons de désactiver ces paramètres ASF** pour les niveaux **standard** et **strict** . Pour plus d’informations sur les paramètres ASF, voir [paramètres de filtre de courrier indésirable avancés (ASF) dans Office 365](advanced-spam-filtering-asf-options.md).
 
-|||
+| Nom de la fonctionnalité de sécurité | Commentaire |
 |---|---|
-|**Nom de la fonctionnalité de sécurité**|**Comment**|
 |**Liens d’image vers des sites distants** (_IncreaseScoreWithImageLinks_)||
 |**Adresse IP numérique dans l’URL** (_IncreaseScoreWithNumericIps_)||
 |**Redirection UL vers un autre port** (_IncreaseScoreWithRedirectToOtherPort_)||
@@ -97,9 +95,8 @@ Pour créer et configurer des stratégies de courrier indésirable sortant, cons
 
 Pour plus d’informations sur les limites d’envoi par défaut dans le service, consultez la rubrique [limites d’envoi](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-1)
 
-|||||
+| Nom de la fonctionnalité de sécurité | Standard | Empêcher | Commentaire |
 |---|---|---|---|
-|**Nom de la fonctionnalité de sécurité**|**Standard**|**Empêcher**|**Comment**|
 |**Nombre maximal de destinataires par utilisateur : limite horaire externe** <br/><br/> _RecipientLimitExternalPerHour_|500|400||
 |**Nombre maximal de destinataires par utilisateur : limite horaire interne** <br/><br/> _RecipientLimitInternalPerHour_|1000|800||
 |**Nombre maximal de destinataires par utilisateur : limite quotidienne** <br/><br/> _RecipientLimitPerDay_|1000|800||
@@ -110,9 +107,8 @@ Pour plus d’informations sur les limites d’envoi par défaut dans le service
 
 Pour créer et configurer des stratégies de protection contre les programmes malveillants, consultez la rubrique [configure anti-malware Policies in Office 365](configure-anti-malware-policies.md).
 
-|||||
+| Nom de la fonctionnalité de sécurité | Standard | Empêcher | Commentaire |
 |---|---|---|---|
-|**Nom de la fonctionnalité de sécurité**|**Standard**|**Empêcher**|**Comment**|
 |**Voulez-vous avertir les destinataires si leurs messages sont mis en quarantaine ?** <br/><br/> _Action_|Non <br/><br/> _DeleteMessage_|Non <br/><br/> _DeleteMessage_|Si un programme malveillant est détecté dans une pièce jointe, le message est mis en quarantaine et ne peut être libéré que par un administrateur.|
 |**Filtre de types de pièces jointes courantes** <br/><br/> _EnableFileFilter_|Activé <br/><br/> `$true`|Activé <br/><br/> `$true`|Ce paramètre met en quarantaine les messages qui contiennent des pièces jointes exécutables en fonction du type de fichier, quel que soit le contenu des pièces jointes.|
 |**Purge automatique contre les programmes malveillants à zéro heure** <br/><br/> _ZapEnabled_|Activé <br/><br/> `$true`|Activé <br/><br/> `$true`||
@@ -124,9 +120,8 @@ Pour créer et configurer des stratégies de protection contre les programmes ma
 
 Pour plus d’informations sur ces paramètres, reportez-vous à la rubrique [usurpation Settings](set-up-anti-phishing-policies.md#spoof-settings). Pour configurer ces paramètres, consultez la rubrique [configure anti-phishing Policies in EOP](configure-anti-phishing-policies-eop.md).
 
-|||||
+| Nom de la fonctionnalité de sécurité | Standard | Empêcher | Commentaire |
 |---|---|---|---|
-|**Nom de la fonctionnalité de sécurité**|**Standard**|**Empêcher**|**Comment**|
 |**Activer la protection contre l’usurpation d’identité** <br/><br/> _EnableAntispoofEnforcement_|Activé <br/><br/> `$true`|Activé <br/><br/> `$true`||
 |**Activer l’expéditeur non authentifié** <br/><br/> _EnableUnauthenticatedSender_|Activé <br/><br/> `$true`|Activé <br/><br/> `$true`|Ajoute un point d’interrogation ( ?) à la photo de l’expéditeur dans Outlook pour les expéditeurs usurpés non identifiés. Pour plus d’informations, reportez-vous à la rubrique [usurpation des paramètres dans les stratégies anti-hameçonnage](set-up-anti-phishing-policies.md).|
 |**Si un message électronique est envoyé par une personne qui n’est pas autorisé à usurper votre domaine** <br/><br/> _AuthenticationFailAction_|**Déplacer le message vers les dossiers de courrier indésirable des destinataires** <br/><br/> `MoveToJmf`|**Mettre en quarantaine le message** <br/><br/> `Quarantine`|Cela s’applique aux expéditeurs bloqués dans l' [intelligence d’usurpation d’identité](learn-about-spoof-intelligence.md).|
@@ -151,14 +146,13 @@ Les clients EOP bénéficient d’une protection antiphishing de base comme déc
 
 Pour plus d’informations sur ces paramètres, consultez la rubrique [emprunt d’identité dans les stratégies anti-hameçonnage ATP](set-up-anti-phishing-policies.md#impersonation-settings-in-atp-anti-phishing-policies). Pour configurer ces paramètres, consultez la rubrique [configure ATP anti-phishing Policies](configure-atp-anti-phishing-policies.md).
 
-|||||
+| Nom de la fonctionnalité de sécurité | Standard | Empêcher | Commentaire |
 |---|---|---|---|
-|**Nom de la fonctionnalité de sécurité**|**Standard**|**Empêcher**|**Comment**|
 |Utilisateurs protégés : **Ajouter des utilisateurs à protéger** <br/><br/> _EnableTargetedUserProtection_ <br/><br/> _TargetedUsersToProtect_|Activé <br/><br/> `$true` <br/><br/> \<list of users\>|Activé <br/><br/> `$true` <br/><br/> \<list of users\>|Dépend de votre organisation, mais nous vous recommandons d’ajouter des utilisateurs dans les rôles clés. En interne, il peut s’agir de votre PDG, directeur financier et autres dirigeants. En externe, il peut s’agir des membres du Conseil ou de votre Conseil d’administration.|
 |Domaines protégés : **inclure automatiquement les domaines dont je suis propriétaire** <br/><br/> _EnableOrganizationDomainsProtection_|Activé <br/><br/> `$true`|Activé <br/><br/> `$true`||
 |Domaines protégés : **inclure des domaines personnalisés** <br/><br/> _EnableTargetedDomainsProtection_ <br/><br/> _TargetedDomainsToProtect_|Activé <br/><br/> `$true` <br/><br/> \<list of domains\>|Activé <br/><br/> `$true` <br/><br/> \<list of domains\>|Dépend de votre organisation, mais nous vous recommandons d’ajouter des domaines avec lesquels vous interagissez fréquemment.|
 |Utilisateurs protégés : **si un message électronique est envoyé par un utilisateur représenté** <br/><br/> _TargetedUserProtectionAction_|**Mettre en quarantaine le message** <br/><br/> `Quarantine`|**Mettre en quarantaine le message** <br/><br/> `Quarantine`||
-|Domaines protégés : **si un message électronique est envoyé par un domaine emprunté** <br/><br/> _TargetedUserProtectionAction_|**Mettre en quarantaine le message** <br/><br/> `Quarantine`|**Mettre en quarantaine le message** <br/><br/> `Quarantine`||
+|Domaines protégés : **si un message électronique est envoyé par un domaine emprunté** <br/><br/> _TargetedDomainProtectionAction_|**Mettre en quarantaine le message** <br/><br/> `Quarantine`|**Mettre en quarantaine le message** <br/><br/> `Quarantine`||
 |**Afficher le Conseil pour les utilisateurs empruntés** <br/><br/> _EnableSimilarUsersSafetyTips_|Activé <br/><br/> `$true`|Activé <br/><br/> `$true`||
 |**Afficher le Conseil pour les domaines empruntés** <br/><br/> _EnableSimilarDomainsSafetyTips_|Activé <br/><br/> `$true`|Activé <br/><br/> `$true`||
 |**Afficher le Conseil pour les caractères inhabituels** <br/><br/> _EnableUnusualCharactersSafetyTips_|Activé <br/><br/> `$true`|Activé <br/><br/> `$true`||
@@ -173,9 +167,8 @@ Pour plus d’informations sur ces paramètres, consultez la rubrique [emprunt d
 
 Notez qu’il s’agit des mêmes paramètres que ceux disponibles dans les [paramètres de stratégie anti-courrier indésirable dans EOP](#eop-anti-spam-policy-settings).
 
-|||||
+| Nom de la fonctionnalité de sécurité | Standard | Empêcher | Commentaire |
 |---|---|---|---|
-|**Nom de la fonctionnalité de sécurité**|**Standard**|**Empêcher**|**Comment**|
 |**Activer la protection contre l’usurpation d’identité** <br/><br/> _EnableAntispoofEnforcement_|Activé <br/><br/> `$true`|Activé <br/><br/> `$true`||
 |**Activer l’expéditeur non authentifié** <br/><br/> _EnableUnauthenticatedSender_|Activé <br/><br/> `$true`|Activé <br/><br/> `$true`|Ajoute un point d’interrogation ( ?) à la photo de l’expéditeur dans Outlook pour les expéditeurs usurpés non identifiés. Pour plus d’informations, reportez-vous à la rubrique [usurpation des paramètres dans les stratégies anti-hameçonnage](set-up-anti-phishing-policies.md).|
 |**Si un message électronique est envoyé par une personne qui n’est pas autorisé à usurper votre domaine** <br/><br/> _AuthenticationFailAction_|**Déplacer le message vers les dossiers de courrier indésirable des destinataires** <br/><br/> `MoveToJmf`|**Mettre en quarantaine le message** <br/><br/> `Quarantine`|Cela s’applique aux expéditeurs bloqués dans l' [intelligence d’usurpation d’identité](learn-about-spoof-intelligence.md).|
@@ -185,7 +178,7 @@ Notez qu’il s’agit des mêmes paramètres que ceux disponibles dans les [par
 
 Pour plus d’informations sur ce paramètre, consultez la rubrique [seuils d’hameçonnage avancés dans les stratégies anti-hameçonnage ATP](set-up-anti-phishing-policies.md#advanced-phishing-thresholds-in-atp-anti-phishing-policies). Pour configurer ce paramètre, consultez la rubrique [configure ATP anti-phishing Policies](configure-atp-anti-phishing-policies.md).
 
-|**Nom de la fonctionnalité de sécurité**|**Standard**|**Empêcher**|**Comment**|
+| Nom de la fonctionnalité de sécurité | Standard | Empêcher | Commentaire |
 |---|---|---|---|
 |**Seuils de hameçonnage avancés** <br/><br/> _PhishThresholdLevel_|**2-agressif** <br/><br/> `2`|**3-plus agressif** <br/><br/> `3`||
 
@@ -197,9 +190,8 @@ Pour configurer ces paramètres, reportez-vous à la rubrique [set up Office 365
 
 **Remarque**: dans PowerShell, vous utilisez la cmdlet [Set-AtpPolicyForO365](https://docs.microsoft.com/powershell/module/exchange/set-atppolicyforo365) pour ces paramètres.
 
-|||||
+| Nom de la fonctionnalité de sécurité | Standard | Empêcher | Commentaire |
 |---|---|---|---|
-|**Nom de la fonctionnalité de sécurité**|**Standard**|**Empêcher**|**Comment**|
 |**Utiliser les liens fiables dans : applications Office 365** <br/><br/> _EnableSafeLinksForO365Clients_|Activé <br/><br/> `$true`|Activé <br/><br/> `$true`|Utiliser des liens fiables ATP dans les applications Office 365, Office pour iOS et Android.|
 |**Ne pas suivre lorsque les utilisateurs cliquent sur les liens fiables** <br/><br/> _TrackClicks_|Désactivé <br/><br/> `$true`|Désactivé <br/><br/> `$true`||
 |**Ne pas autoriser les utilisateurs à cliquer sur les liens fiables vers l’URL d’origine** <br/><br/> _AllowClickThrough_|Activé <br/><br/> `$false`|Activé <br/><br/> `$false`||
@@ -209,9 +201,8 @@ Pour configurer ces paramètres, reportez-vous à la rubrique [set up Office 365
 
 **Remarque**: dans PowerShell, vous utilisez les cmdlets [New-Safelinkspolicy permet](https://docs.microsoft.com/powershell/module/exchange/new-safelinkspolicy) et [Set-safelinkspolicy permet] ( https://docs.microsoft.com/powershell/module/exchange/set-safelinkspolicycmdlet cmdlets pour ces paramètres.
 
-|||||
+| Nom de la fonctionnalité de sécurité | Standard | Empêcher | Commentaire |
 |---|---|---|---|
-|**Nom de la fonctionnalité de sécurité**|**Standard**|**Empêcher**|**Comment**|
 |**Sélectionner l’action pour les URL potentiellement malveillantes dans les messages** <br/><br/> _IsEnabled_|Activé <br/><br/> `$true`|Activé <br/><br/> `$true`||
 |**Sélectionnez l’action pour les URL inconnues ou potentiellement malveillantes dans Microsoft teams** <br/><br/> _EnableSafeLinksForTeams_|Activé <br/><br/> `$true`|Activé <br/><br/> `$true`||
 |**Application de l’analyse des URL en temps réel pour les liens suspects et les liens pointant vers des fichiers** <br/><br/> _ScanUrls_|Activé <br/><br/> `$true`|Activé <br/><br/> `$true`||
@@ -229,9 +220,8 @@ Pour configurer ces paramètres, reportez-vous à la rubrique [set up Office 365
 
 **Remarque**: dans PowerShell, vous utilisez la cmdlet [Set-AtpPolicyForO365](https://docs.microsoft.com/powershell/module/exchange/set-atppolicyforo365) pour ces paramètres.
 
-|||||
+| Nom de la fonctionnalité de sécurité | Standard | Empêcher | Commentaire |
 |---|---|---|---|
-|**Nom de la fonctionnalité de sécurité**|**Standard**|**Empêcher**|**Comment**|
 |**Activer la protection avancée contre les menaces pour SharePoint, OneDrive et Microsoft Teams** <br/><br/> _EnableATPForSPOTeamsODB_|Activé <br/><br/> `$true`|Activé <br/><br/> `$true`||
 |**Activer des documents approuvés pour les clients Office**<bt/><br/> _EnableSafeDocs_|Activé <br/><br/> `$true`|Activé <br/><br/> `$true`||Ce paramètre est disponible uniquement avec les licences de sécurité Microsoft 365 E5 ou Microsoft 365 E5. Pour plus d’informations, consultez la rubrique [documents approuvés dans Office 365 protection avancée contre les menaces](safe-docs.md).|
 |**Autoriser les utilisateurs à cliquer en mode protégé même si les documents fiables identifient le fichier comme étant malveillant**<bt/><br/> _AllowSafeDocsOpen_|Désactivé <br/><br/> `$false`|Désactivé <br/><br/> `$false`||
@@ -241,15 +231,14 @@ Pour configurer ces paramètres, reportez-vous à la rubrique [set up Office 365
 
 **Remarque**: dans PowerShell, vous utilisez les applets de commande [New-safeattachmentpolicy permet](https://docs.microsoft.com/powershell/module/exchange/new-safeattachmentpolicy) et [Set-safeattachmentpolicy permet](https://docs.microsoft.com/powershell/module/exchange/set-safelinkspolicy) pour ces paramètres.
 
-|||||
+| Nom de la fonctionnalité de sécurité | Standard | Empêcher | Commentaire |
 |---|---|---|---|
-|**Nom de la fonctionnalité de sécurité**|**Standard**|**Empêcher**|**Comment**|
 |**Pièces jointes fiables réponse aux programmes malveillants inconnus** <br/><br/> _Action_|Bloc <br/><br/> `Block`|Bloc <br/><br/> `Block`||
 |**Redirection de la pièce jointe sur la détection** : **activer la redirection** <br/><br/> _Redirect_ <br/><br/> _RedirectAddress_|Sur et spécifiez une adresse de messagerie. <br/><br/> `$true` <br/><br/> une adresse de messagerie|Sur et spécifiez une adresse de messagerie. <br/><br/> `$true` <br/><br/> une adresse de messagerie|Rediriger les messages vers un administrateur de sécurité pour révision.|
 |**Appliquer la sélection ci-dessus si l’analyse anti-programme malveillant pour les pièces jointes expire ou si une erreur se produit.** <br/><br/> _ActionOnError_|Activé <br/><br/> `$true`|Activé <br/><br/> `$true`||
 |
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Sujets associés
 
 - Vous recherchez les meilleures pratiques avec des **règles de transport Exchange mail Flow/Exchange**? Pour plus d’informations, consultez [cet article](https://docs.microsoft.com/microsoft-365/security/office-365-security/best-practices-for-configuring-eop) .
 

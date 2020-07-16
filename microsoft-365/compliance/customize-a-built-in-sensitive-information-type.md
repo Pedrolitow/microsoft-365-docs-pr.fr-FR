@@ -27,44 +27,44 @@ ms.locfileid: "45086611"
 ---
 # <a name="customize-a-built-in-sensitive-information-type"></a>Personnaliser un type d’informations sensibles intégré
 
-When looking for sensitive information in content, you need to describe that information in what's called a  *rule*  . Data loss prevention (DLP) includes rules for the most-common sensitive information types that you can use right away. To use these rules, you have to include them in a policy. You might find that you want to adjust these built-in rules to meet your organization's specific needs, and you can do that by creating a custom sensitive information type. This topic shows you how to customize the XML file that contains the existing rule collection to detect a wider range of potential credit-card information. 
+Lorsque vous recherchez des informations sensibles dans du contenu, vous devez décrire ces informations dans ce que l’on appelle une *règle*. La protection contre la perte de données (DLP) comprend des règles pour les types d’informations sensibles les plus courants que vous pouvez utiliser immédiatement. Pour utiliser ces règles, vous devez les inclure dans une stratégie. Vous voudrez peut-être ajuster ces règles intégrées pour répondre aux besoins spécifiques de votre organisation, et vous pouvez le faire en créant un type d’informations sensibles personnalisé. Cette rubrique vous montre comment personnaliser le fichier XML qui contient la collection de règles existante pour détecter un plus large éventail d’informations potentielles relatives aux cartes de crédit. 
   
-You can take this example and apply it to other built-in sensitive information types. For a list of default sensitive information types and XML definitions, see [Sensitive information type entity definitions](sensitive-information-type-entity-definitions.md). 
+Vous pouvez prendre cet exemple et l’appliquer à d’autres types d’informations sensibles intégrés. Pour obtenir la liste des types d’informations sensibles par défaut et des définitions XML, voir [Définitions des entités de type information sensible](sensitive-information-type-entity-definitions.md). 
   
 ## <a name="export-the-xml-file-of-the-current-rules"></a>Exporter le fichier XML des règles actuelles
 
 Pour exporter le fichier XML, vous devez vous [connecter au Centre de sécurité et conformité à l’aide de PowerShell à distance](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps).
   
-1. In the PowerShell, type the following to display your organization's rules on screen. If you haven't created your own, you'll only see the default, built-in rules, labeled "Microsoft Rule Package."
+1. Dans PowerShell, saisissez la commande suivante pour afficher les règles de votre organisation à l’écran. Si vous n’avez pas créé votre propre règle, vous ne verrez que les règles intégrées par défaut, sous le libellé « Package de règles Microsoft ».
 
    ```powershell
    Get-DlpSensitiveInformationTypeRulePackage
    ```
 
-2. Store your organization's rules in a variable by typing the following. Storing something in a variable makes it easily available later in a format that works for remote PowerShell commands.
+2. Stockez les règles de votre organisation dans une variable en saisissant ce qui suit. Le stockage d’un élément dans une variable le rend facilement disponible ultérieurement dans un format adapté aux commandes PowerShell distantes.
 
    ```powershell    
    $ruleCollections = Get-DlpSensitiveInformationTypeRulePackage
    ```
     
-3. Make a formatted XML file with all that data by typing the following. ( `Set-content` is the part of the cmdlet that writes the XML to the file.) 
+3. Saisissez ce qui suit pour créer un fichier XML mis en forme avec toutes ces données (`Set-content` est la partie de la cmdlet qui écrit le code XML dans le fichier). 
 
    ```powershell
    Set-Content -path C:\custompath\exportedRules.xml -Encoding Byte -Value $ruleCollections.SerializedClassificationRuleCollection
    ```
 
    > [!IMPORTANT]
-   > Make sure that you use the file location where your rule pack is actually stored.  `C:\custompath\` is a placeholder. 
+   > Assurez-vous que vous utilisez l’emplacement de fichier dans lequel votre pack de règles est effectivement stocké. `C:\custompath\` est un espace réservé. 
   
 ## <a name="find-the-rule-that-you-want-to-modify-in-the-xml"></a>Rechercher la règle à modifier dans le fichier XML
 
-The cmdlets above exported the entire *rule collection*, which includes the default rules we provide. Next you'll need to look specifically for the Credit Card Number rule that you want to modify. 
+Les cmdlets ci-dessus ont exporté l’ensemble de la *collection de règles* qui inclut les règles par défaut que nous fournissons. Ensuite, vous devez rechercher la règle de numéro de carte de crédit spécifique à modifier. 
   
 1. Utilisez un éditeur de texte pour ouvrir le fichier XML que vous avez exporté dans la section précédente.
     
-2. Scroll down to the  `<Rules>` tag, which is the start of the section that contains the DLP rules. Because this XML file contains the information for the entire rule collection, it contains other information at the top that you need to scroll past to get to the rules.
+2. Faites défiler l’écran jusqu’à la balise `<Rules>`, qui constitue le début de la section contenant les règles DLP. En effet, ce fichier XML contenant les informations de toute la collection de règles, il contient d’autres informations dans la partie supérieure que vous devez faire défiler pour accéder aux règles.
     
-3. Look for *Func_credit_card* to find the Credit Card Number rule definition. In the XML, rule names can't contain spaces, so the spaces are usually replaced with underscores, and rule names are sometimes abbreviated. An example of this is the U.S. Social Security number rule, which is abbreviated _SSN_. The Credit Card Number rule XML should look like the following code sample.
+3. Recherchez *Func_credit_card* pour trouver la définition de règle de numéro de carte de crédit. En code XML, les noms des règles ne peuvent pas contenir d’espaces. Ces derniers sont donc généralement remplacés par le tiret du bas et les noms des règles sont parfois abrégés. Par exemple, la règle du Social Security number (numéro de sécurité sociale aux États-Unis) est abrégée en _SSN_. Le code XML de la règle de numéro de carte de crédit doit ressembler à l’exemple de code suivant.
     
    ```xml
    <Entity id="50842eb7-edc8-4019-85dd-5a5c1f2bb085"
@@ -80,13 +80,13 @@ The cmdlets above exported the entire *rule collection*, which includes the defa
        </Entity>
    ```
 
-Now that you have located the Credit Card Number rule definition in the XML, you can customize the rule's XML to meet your needs. For a refresher on the XML definitions, see the [Term glossary](#term-glossary) at the end of this topic.
+Maintenant que vous avez localisé la définition de règle de numéro de carte de crédit dans le XML, vous pouvez personnaliser le code XML de la règle en fonction de vos besoins. Pour un rappel des définitions XML, voir [Glossaire terminologique](#term-glossary) à la fin de cette rubrique.
   
 ## <a name="modify-the-xml-and-create-a-new-sensitive-information-type"></a>Modifier le XML et créer un type d’informations sensibles
 
-First, you need to create a new sensitive information type because you can't directly modify the default rules. You can do a wide variety of things with custom sensitive information types, which are outlined in [Create a custom sensitive information type in Security & Compliance Center PowerShell](create-a-custom-sensitive-information-type-in-scc-powershell.md). For this example, we'll keep it simple and only remove corroborative evidence and add keywords to the Credit Card Number rule.
+Tout d’abord, vous devez créer un type d’informations sensibles, car vous ne pouvez pas modifier directement les règles par défaut. Vous pouvez effectuer de nombreuses actions avec les types d’informations sensibles personnalisés, comme l’illustre la section [Créer un type d’informations sensibles personnalisé dans l’interface PowerShell du Centre de sécurité et conformité](create-a-custom-sensitive-information-type-in-scc-powershell.md). Pour cet exemple, nous allons faire simple en nous contentant de supprimer les preuves corroborantes et d’ajouter des mots clés à la règle de numéro de carte de crédit.
   
-All XML rule definitions are built on the following general template. You need to copy and paste the Credit Card Number definition XML in the template, modify some values (notice the ". . ." placeholders in the following example), and then upload the modified XML as a new rule that can be used in policies.
+Toutes les définitions de règle XML sont construites sur le modèle général suivant. Vous devez copier et coller le XML de définition de numéro de carte de crédit dans le modèle, modifier certaines valeurs (remarquez les espaces réservés « . . ." dans l'exemple suivant), puis télécharger le XML modifié en tant que nouvelle règle pouvant être utilisée dans des stratégies.
   
 ```xml
 <?xml version="1.0" encoding="utf-16"?>
@@ -115,7 +115,7 @@ All XML rule definitions are built on the following general template. You need t
 </RulePackage>
 ```
 
-Now, you have something that looks similar to the following XML. Because rule packages and rules are identified by their unique GUIDs, you need to generate two GUIDs: one for the rule package and one to replace the GUID for the Credit Card Number rule. The GUID for the entity ID in the following code sample is the one for our built-in rule definition, which you need to replace with a new one. There are several ways to generate GUIDs, but you can do it easily in PowerShell by typing **[guid]::NewGuid()**. 
+Vous obtenez maintenant quelque chose qui ressemble au XML suivant. Étant donné que les packages de règles et les règles sont identifiés par leur GUID unique, vous devez générer deux GUID : un pour le package de règles et un pour remplacer le GUID de la règle de numéro de carte de crédit. Le GUID pour l’ID d’entité dans l’exemple de code suivant est celui de la définition de notre règle intégrée, que vous devez remplacer. Il existe plusieurs façons de générer des GUID, mais vous pouvez le faire facilement dans PowerShell en saisissant **[guid]::NewGuid()**. 
   
 ```xml
 <?xml version="1.0" encoding="utf-16"?>
@@ -169,7 +169,7 @@ Now, you have something that looks similar to the following XML. Because rule pa
 
 ## <a name="look-for-keywords-that-are-specific-to-your-organization"></a>Rechercher des mots clés propres à votre organisation
 
-You might want to require corroborative evidence but want different or additional keywords, and perhaps you want to change where to look for that evidence. You can adjust the  `patternsProximity` to expand or shrink the window for corroborative evidence around the 16-digit number. To add your own keywords, you need to define a keyword list and reference it within your rule. The following XML adds the keywords "company card" and "Contoso card" so that any message that contains those phrases within 150 characters of a credit card number will be identified as a credit card number.
+Vous voulez peut-être exiger des preuves crédibles, mais aussi des mots clés différents ou supplémentaires, et vous voulez aussi peut-être modifier l’endroit où rechercher ces preuves. Vous pouvez ajuster le paramètre `patternsProximity` afin de développer ou réduire la fenêtre pour la preuve probante autour du numéro à 16 chiffres. Pour ajouter vos propres mots clés, vous devez définir une liste de mots clés et la référencer dans votre règle. Le XML suivant ajoute les mots clés « company card » et « Contoso card » de sorte que tous les messages qui contiennent ces expressions au sein des 150 caractères d’un numéro de carte de crédit soient identifiés comme des numéros de carte de crédit.
   
 ```xml
 <Rules>
@@ -199,7 +199,7 @@ You might want to require corroborative evidence but want different or additiona
 
 Pour télécharger votre règle, vous devez procéder comme suit.
   
-1. Save it as an .xml file with Unicode encoding. This is important because the rule won't work if the file is saved with a different encoding.
+1. Enregistrez-la en tant que fichier .xml avec le codage Unicode. Ceci est important car la règle ne fonctionne pas si le fichier est enregistré dans un codage différent.
     
 2. [Se connecter au Centre de sécurité et conformité à l’aide de PowerShell à distance.](https://go.microsoft.com/fwlink/?linkid=799771)
     
@@ -210,7 +210,7 @@ Pour télécharger votre règle, vous devez procéder comme suit.
    ```
    
    > [!IMPORTANT]
-   > Make sure that you use the file location where your rule pack is actually stored.  `C:\custompath\` is a placeholder. 
+   > Assurez-vous que vous utilisez l’emplacement de fichier dans lequel votre pack de règles est effectivement stocké. `C:\custompath\` est un espace réservé. 
   
 4. Pour confirmer, saisissez Y, puis appuyez sur **Entrée**.
 
@@ -220,7 +220,7 @@ Pour télécharger votre règle, vous devez procéder comme suit.
    Get-DlpSensitiveInformationType
    ```
 
-To start using the new rule to detect sensitive information, you need to add the rule to a DLP policy. To learn how to add the rule to a policy, see [Create a DLP policy from a template](create-a-dlp-policy-from-a-template.md).
+Pour commencer à utiliser la nouvelle règle afin de détecter des informations sensibles, vous devez l’ajouter à une stratégie DLP. Pour découvrir comment ajouter la règle à une stratégie, consultez l’article [Création d’une stratégie DLP à partir d’un modèle](create-a-dlp-policy-from-a-template.md).
   
 ## <a name="term-glossary"></a>Glossaire terminologique
 
@@ -228,14 +228,14 @@ Voici les définitions des termes que vous avez rencontrés au cours de cette pr
   
 |**Terme**|**Définition**|
 |:-----|:-----|
-|Entité|Entities are what we call sensitive information types, such as credit card numbers. Each entity has a unique GUID as its ID. If you copy a GUID and search for it in the XML, you'll find the XML rule definition and all the localized translations of that XML rule. You can also find this definition by locating the GUID for the translation and then searching for that GUID.|
-|Fonctions|The XML file references  `Func_credit_card`, which is a function in compiled code. Functions are used to run complex regexes and verify that checksums match for our built-in rules.) Because this happens in the code, some of the variables don't appear in the XML file.|
+|Entité|Les entités sont ce que nous appelons des types d'informations sensibles, comme les numéros de carte de crédit. Chaque entité possède un GUID unique qui constitue son ID. Si vous copiez un GUID et que vous le recherchez dans le XML, vous trouvez la définition de règle XML, ainsi que toutes les traductions localisées de cette règle XML. Vous pouvez également trouver cette définition en localisant le GUID de la traduction, puis en recherchant ce GUID.|
+|Fonctions|Le fichier XML fait référence à `Func_credit_card`, qui est une fonction dans le code compilé. Les fonctions sont utilisées pour exécuter des expressions régulières complexes et vérifier que les sommes de contrôle correspondent pour nos règles intégrées. Étant donné que tout ceci se passe dans le code, certaines variables ne figurent pas dans le fichier XML.|
 |IdMatch|Il s’agit de l’identificateur auquel le modèle tente de correspondre, par exemple un numéro de carte de crédit.|
-|Listes de mots clés|The XML file also references  `keyword_cc_verification` and  `keyword_cc_name`, which are lists of keywords from which we are looking for matches within the  `patternsProximity` for the entity. These aren't currently displayed in the XML.|
+|Listes de mots clés|Le fichier XML fait également référence à `keyword_cc_verification` et à `keyword_cc_name`, qui sont des listes de mots clés dans lesquelles nous recherchons des correspondances à l’intérieur du paramètre `patternsProximity` pour l’entité. Ces éléments ne sont actuellement pas affichés dans le fichier XML.|
 |Modèle|Le modèle contient la liste de ce que le type sensible recherche. Celle-ci inclut des mots clés, des expressions régulières et des fonctions internes qui effectuent des tâches telles que la vérification des sommes de contrôle. Ces types d’informations sensibles peuvent avoir plusieurs modèles avec des niveaux de confiance uniques. Ceci est utile lors de la création d’un type d’informations sensibles qui renvoie un niveau de confiance élevé si des preuves crédibles sont trouvées et un niveau de confiance faible dans le cas contraire.|
-|confidenceLevel|This is the level of confidence that the DLP engine found a match. This level of confidence is associated with a match for the pattern if the pattern's requirements are met. This is the confidence measure you should consider when using Exchange mail flow rules (also known as transport rules).|
+|confidenceLevel|Il s’agit du niveau de confiance appliqué lorsque le moteur DLP trouve une correspondance. Ce niveau de confiance est associé à une correspondance pour le modèle si les exigences du modèle sont remplies. C’est la mesure de confiance à prendre en considération lorsque vous utilisez des règles de flux de messagerie Exchange (également appelées règles de transport).|
 |patternsProximity|Lorsque nous trouvons ce qui ressemble à un modèle de numéro de carte de crédit, `patternsProximity` correspond à la proximité de recherche de preuves crédibles autour de ce numéro.|
-|recommendedConfidence|This is the confidence level we recommend for this rule. The recommended confidence applies to entities and affinities. For entities, this number is never evaluated against the  `confidenceLevel` for the pattern. It's merely a suggestion to help you choose a confidence level if you want to apply one. For affinities, the  `confidenceLevel` of the pattern must be higher than the  `recommendedConfidence` number for a mail flow rule action to be invoked. The  `recommendedConfidence` is the default confidence level used in mail flow rules that invokes an action. If you want, you can manually change the mail flow rule to be invoked based off the pattern's confidence level, instead.|
+|recommendedConfidence|Il s’agit du niveau de confiance recommandé pour cette règle. La confiance recommandée s’applique aux entités et aux affinités. Pour les entités, ce nombre n’est jamais évalué par rapport au paramètre `confidenceLevel` pour le modèle. Il s’agit d’une simple suggestion pour vous aider à choisir un niveau de confiance, si vous voulez en appliquer un. Pour les affinités, le paramètre `confidenceLevel` du modèle doit être supérieur au nombre `recommendedConfidence` pour une action de règle de flux de messagerie à appeler. Le paramètre `recommendedConfidence` correspond au niveau de confiance par défaut utilisé dans les règles de flux de messagerie qui appelle une action. Si vous le souhaitez, vous pouvez modifier manuellement la règle de flux de messagerie à appeler pour le faire à partir du niveau de confiance du modèle.|
    
 ## <a name="for-more-information"></a>Pour plus d'informations
 

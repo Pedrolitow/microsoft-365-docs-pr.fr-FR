@@ -1,31 +1,34 @@
 ---
-title: TLS 1,0 et 1,1 désapprobation pour Office 365
+title: Dépréciation TLS 1.0 et 1.1 pour Office 365
 description: Décrit les protocoles TLS 1,0 et 1,1 obsolètes pour Office 365.
-author: simonxjx
-manager: dcscontentpm
+author: workshay
+manager: laurawi
 localization_priority: Normal
 search.appverid:
 - MET150
 audience: ITPro
 ms.service: O365-seccomp
 ms.topic: article
-ms.author: v-six
+ms.author: shmehta
+ms.reviewer: krowley
 appliesto:
 - Microsoft 365 Apps for enterprise
 - Office 365 Business
 - Office 365 Personal
 - Office Online Server
 - Office Web Apps
-ms.openlocfilehash: 611b6970c3ecb95f4cdf046b96a5e3aa9155391d
-ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
+ms.openlocfilehash: 270d04974cec9c36fa31a77bda401375fdac0471
+ms.sourcegitcommit: 94f2f8e3e6bc3946d8b3cf798b3eb77a49ffd12a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "44937329"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "45148146"
 ---
-# <a name="tls-10-and-11-deprecation-for-office-365"></a>TLS 1,0 et 1,1 désapprobation pour Office 365
+# <a name="tls-10-and-11-deprecation-for-office-365"></a>Dépréciation TLS 1.0 et 1.1 pour Office 365
+> [!IMPORTANT]
+> Nous avons interrompu temporairement l’application de la désapprobation de TLS 1,0 et 1,1 pour les clients commerciaux en raison du COVID-19, mais, en raison de l’ajustement et de la réinitialisation de certains pays, nous redéfinissons l’application TLS pour qu’elle démarre le 15 octobre 2020. 
 
-À partir du 31 octobre 2018, les protocoles TLS (Transport Layer Security) 1,0 et 1,1 sont déconseillés pour le service Office 365. L’effet pour les utilisateurs finaux est supposé minimal. Cette modification a été publique depuis près de deux ans, avec la première annonce publique effectuée en décembre 2017. Cet article est destiné uniquement à traiter le client local Office 365 en relation avec le service Office 365, mais peut également s’appliquer aux problèmes TLS sur site avec Office et Office Online Server/Office Web Apps.
+À partir du 31 octobre 2018, les protocoles TLS (Transport Layer Security) 1,0 et 1,1 sont déconseillés pour le service Office 365. L’effet pour les utilisateurs finaux est supposé minimal. Cette modification a été publique depuis plus de deux ans, avec la première annonce publique effectuée en décembre 2017. Cet article est destiné uniquement à traiter le client local Office 365 en relation avec le service Office 365, mais peut également s’appliquer aux problèmes TLS sur site avec Office et Office Online Server/Office Web Apps.
 
 ## <a name="office-and-tls-overview"></a>Vue d’ensemble d’Office et de TLS
 
@@ -46,7 +49,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings\W
 > [!NOTE]
 > Les utilisateurs de Windows 7 qui n’ont pas cette mise à jour sont affectés le 31 octobre 2018. [KB 3140245](https://support.microsoft.com/help/3140245) explique comment modifier les paramètres WinHTTP pour activer les protocoles TLS.
 
-#### <a name="more-information"></a>Informations supplémentaires
+#### <a name="more-information"></a>Plus d’informations
 
 La valeur de la clé de Registre **DefaultSecureProtocols** décrite dans l’article de la base de connaissances détermine les protocoles réseau qui peuvent être utilisés :
 

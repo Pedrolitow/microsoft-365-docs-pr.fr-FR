@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365 est fourni avec un certain nombre de classifieurs intégrés que vous pouvez utiliser pour identifier et étiqueter le contenu au sein de votre organisation. Cette rubrique vous explique comment vous préparer à l’utilisation de ces classifieurs.
-ms.openlocfilehash: 82155b1dee9ab04dad593ce9ec2da97d3e796e99
-ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
+ms.openlocfilehash: 1d645cc79075c41ce94b0f9b4fc347450a8df8c6
+ms.sourcegitcommit: 9af890ef1b1c95bfc7cc52f7f4e395b62dc5263f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45126313"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "45146218"
 ---
 # <a name="testing-built-in-classifiers-using-retention-labels-preview"></a>Test des classifieurs intégrés à l’aide d’étiquettes de rétention (aperçu)
 
@@ -38,7 +38,7 @@ Microsoft 365 est fourni avec cinq classifieurs intégrés recommandés :
 - **CV**: détecte les éléments qui sont des comptes textuels des qualifications personnelles, éducatives, qualifications professionnelles, expérience professionnelle et autres informations d’identification personnelle d’un demandeur.
 - **Code source**: détecte les éléments qui contiennent un ensemble d’instructions et d’instructions écrites dans les 25 principaux langages de programmation informatique utilisés sur GitHub
 
-  |nom de la langue|||||
+  |**Nom de la langue**|||||
   |---------|---------|---------|---------|---------|
   |3.0|C        |C#       |C++     |Clojure  |
   |CoffeeScript|CSS     |Activer       |Haskell |HTML     |
@@ -106,5 +106,5 @@ Microsoft 365 est fourni avec cinq classifieurs intégrés recommandés :
 Voir aussi :
 
 - [Prise en main des classificateurs pouvant être formés (préversion)](classifier-getting-started-with.md)
-- [En savoir plus sur les stratégies de rétention et les étiquettes de conservation](retention.md)
+- [En savoir plus sur les stratégies et les balises de rétention](retention.md)
 - [Application automatique d’une étiquette de rétention pour conserver ou supprimer du contenu](apply-retention-labels-automatically.md)

@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Ce scénario de solution illustre comment gérer le cycle de vie de documents relatifs aux produits stockés dans SharePoint Online à l’aide d’étiquettes de rétention. Pour ce faire, vous pouvez utiliser les métadonnées de document pour classifier le contenu, et spécifiquement en appliquant automatiquement des étiquettes de rétention et en configurant la rétention basée sur les événements.
-ms.openlocfilehash: 9c8a7044dccdb60f8e579d6dcad64310d1dda0d5
-ms.sourcegitcommit: 6746fae2f68400fd985711b1945b66766d2a59a4
+ms.openlocfilehash: 8edd7ea1b64a5f7bf499892dcd32b945307c9668
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "44419100"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45126475"
 ---
 # <a name="manage-the-lifecycle-of-sharepoint-documents-with-retention-labels"></a>Gérer le cycle de vie des documents SharePoint avec étiquettes de rétention
 
@@ -108,11 +108,11 @@ Voici le [plan de gestion de fichiers](file-plan-manager.md) l’étiquette de r
 
 - **Durée de rétention :** cinq ans (1825 jours)
 
-- **Étiquette d’enregistrement** : configurez l’étiquette de rétention pour classifier le contenu en tant qu’[enregistrement](labels.md#using-retention-labels-for-records-management) (les documents classés en tant qu’enregistrement ne peuvent pas être modifiés ou supprimés par les utilisateurs).
+- **Étiquette d’enregistrement** : configurez l’étiquette de rétention pour classifier le contenu en tant qu’[enregistrement](records.md) (les documents classés en tant qu’enregistrement ne peuvent pas être modifiés ou supprimés par les utilisateurs).
 
 - **Descripteurs de plan de gestion de fichiers :** (pour simplifier le scénario, aucun descripteur de fichier n’est fourni)
 
-La capture d’écran suivante montre les paramètres lorsque vous créez l’[étiquette de rétention](labels.md) de la spécification de produit dans le centre de sécurité et conformité. Vous pouvez créer le type d’événement de **Cessation de produit** lorsque vous créez l’étiquette de rétention. Consultez les étapes suivantes.
+La capture d’écran suivante montre les paramètres lorsque vous créez l’[étiquette de rétention](retention.md#retention-labels) de la spécification de produit dans le centre de sécurité et conformité. Vous pouvez créer le type d’événement de **Cessation de produit** lorsque vous créez l’étiquette de rétention. Consultez les étapes suivantes.
 
 ![Paramètres de rétention de l’étiquette de la spécification de produit](../media/SPRetention5.png)
 
@@ -144,7 +144,7 @@ Voici à quoi ressemblent les paramètres de l’étiquette de rétention de sp�
 
 ## <a name="classifying-content-by-auto-applying-retention-labels"></a>Classification de contenu en appliquant automatiquement des étiquettes de rétention
 
-Nous allons [appliquer automatiquement](labels.md#applying-a-retention-label-automatically-based-on-conditions) les étiquettes de rétention que nous avons créées pour ce scénario à l’aide de KQL (Keyword Query Language). KQL est le langage utilisé pour créer des requêtes de recherche. Dans KQL, vous pouvez effectuer une recherche à l’aide de mots clés ou de propriétés gérées. Pour plus d’informations sur le KQL, voir <https://docs.microsoft.com/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference>
+Nous allons [appliquer automatiquement](apply-retention-labels-automatically.md) les étiquettes de rétention que nous avons créées pour ce scénario à l’aide de KQL (Keyword Query Language). KQL est le langage utilisé pour créer des requêtes de recherche. Dans KQL, vous pouvez effectuer une recherche à l’aide de mots clés ou de propriétés gérées. Pour plus d’informations sur le KQL, voir <https://docs.microsoft.com/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference>
 
 À un niveau élevé, nous voulons indiquer à Microsoft 365 d’appliquer l’étiquette de rétention de la **spécification de produit** à tous les documents qui ont un **État** de spécification**Final** et un **Type de document** de **Spécification de produit**. Rappelez-vous que **État** et **Type de document** correspondent aux colonnes de site précédemment définies pour le type de contenu documentation produit dans la section [Architecture d’informations](#information-architecture). Pour y parvenir, vous devez configurer le schéma de recherche.
 
@@ -268,7 +268,7 @@ Une autre étape de la vérification consiste à consulter les propriétés du d
 
 À présent que les étiquettes de rétention ont été appliquées automatiquement, nous allons nous concentrer sur l’événement indiquant la fin de la production pour un produit spécifique. Lorsque cet événement se produit, il déclenche le début de la période de rétention définie dans les étiquettes de rétention appliquées automatiquement aux documents. Par exemple, pour les documents de spécification de produit, la période de rétention de 5 ans commence lorsque l’événement « fin de production » est déclenché.
 
-Vous pouvez créer manuellement l’événement dans le centre de sécurité et conformité en accédant à **Gestion des enregistrements** > **Événements**, puis en choisissant le type d’événement, en définissant les ID d’actif appropriés et en entrant une date pour l’événement. Pour plus d’informations, voir[Vue d’ensemble de la rétention basée sur un événement](event-driven-retention.md).
+Vous pouvez créer manuellement l’événement dans le centre de sécurité et conformité en accédant à **Gestion des enregistrements** > **Événements**, puis en choisissant le type d’événement, en définissant les ID d’actif appropriés et en entrant une date pour l’événement. Pour plus d’informations, consultez [Débuter la rétention lorsqu’un événement se produit](event-driven-retention.md).
 
 Pour ce scénario, nous allons créer automatiquement l’événement en le générant à partir d’un système de production externe. Dans ce cas, le système qui génère l’événement est une simple liste SharePoint qui indique si un produit est en production et un [Microsoft Flow](https://docs.microsoft.com/flow/getting-started) associé à la liste et qui déclenche l’événement. Dans un scénario concret, il peut s’agit d’un système qui génère l’événement, tel qu’un système RH ou CRM. Flow contient un grand nombre d’interactions et de blocs de construction prêts à l’emploi pour les charges de travail Microsoft 365 telles qu’Exchange, SharePoint, Teams et Dynamics 365, ainsi que des applications tierces telles que Twitter, Box, Salesforce et Workdays. Vous pouvez ainsi intégrer facilement Flow à ces systèmes. Pour plus d’informations, voir[Automatiser la rétention basée sur un événement](automate-event-driven-retention.md).
 
@@ -333,7 +333,7 @@ Cela signifie que la période de rétention de l’étiquette appliquée au docu
 
 ### <a name="more-about-asset-ids"></a>En savoir plus sur les ID d’élément
 
-Comme expliqué dans l’[aperçu de la rétention basée sur les événements](event-driven-retention.md), il est important de comprendre la relation entre les types d’événement, les étiquettes, les événements et les ID d’élément. L’ID d’élément constitue simplement une autre propriété de document dans SharePoint et OneDrive. Il vous aide à identifier plus précisément les documents dont la période de rétention sera déclenchée par l’événement. Par défaut, SharePoint possède une propriété ID d’élément que vous pouvez utiliser pour la rétention basée sur les événements :
+Comme expliqué dans l’article [Débuter la rétention lorsqu’un événement se produit](event-driven-retention.md), il est important de comprendre la relation entre les types d’événement, les étiquettes de rétention, les événements et les ID d’élément. L’ID d’élément constitue simplement une autre propriété de document dans SharePoint et OneDrive. Il vous aide à identifier plus précisément les documents dont la période de rétention sera déclenchée par l’événement. Par défaut, SharePoint possède une propriété ID d’élément que vous pouvez utiliser pour la rétention basée sur les événements :
 
 ![Propriété ID d’élément affichée dans la page de détails des propriétés du document](../media/SPRetention26.png)
 

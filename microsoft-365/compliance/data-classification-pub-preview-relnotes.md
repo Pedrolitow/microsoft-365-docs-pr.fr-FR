@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Notes de publication pour la classification des données.
-ms.openlocfilehash: bbef6729680db2c9a6aec4caa9036ec23fad6949
-ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
+ms.openlocfilehash: 71d8e8e4fffddc4c9373a2bdd37d4509337ec231
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "44327603"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45127139"
 ---
 # <a name="data-classification-release-notes"></a>Notes de publication pour la classification des données
 
@@ -48,6 +48,6 @@ Nous avons écouté vos commentaires intéressants sur l’intégration de OneDr
 - [Prise en main de la classification des données (préversion)](data-classification-overview.md)
 - [Afficher l’activité des étiquettes (aperçu)](data-classification-activity-explorer.md)
 - [Afficher le contenu étiqueté (aperçu)](data-classification-content-explorer.md)
-- [Étiquettes de confidentialité](sensitivity-labels.md)
-- [Étiquettes de rétention](labels.md)
+- [En savoir plus sur les étiquettes de niveau de confidentialité](sensitivity-labels.md)
+- [En savoir plus sur les stratégies et les balises de rétention](retention.md)
 - [Définitions d’entités des types d’informations sensibles](sensitive-information-type-entity-definitions.md)
