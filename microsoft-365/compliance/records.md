@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Découvrir les enregistrements pour vous aider à implémenter une solution de gestion des enregistrements dans Microsoft 365.
-ms.openlocfilehash: 35d1becad78cdb01402ba50ba44b277f8c511567
-ms.sourcegitcommit: 5b769f74bcc76ac8d38aad815d1728824783cd9f
+ms.openlocfilehash: aa5952b26549f9ba9b1c584eb55e203fd53c50e5
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "45080101"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45127501"
 ---
 # <a name="learn-about-records"></a>Découvrir les enregistrements
 
@@ -38,7 +38,7 @@ Lorsque le contenu est marqué comme enregistrement :
 
 - Vous avez une preuve de destruction lorsqu’elles sont supprimées à la fin de la période de rétention.
 
-Vous utilisez les [étiquettes de rétention](labels.md) pour marquer du contenu sous la forme d’un enregistrement. Une fois que vous avez créé des étiquettes de rétention qui déclarent des enregistrements, vous pouvez soit publier ces étiquettes pour permettre aux utilisateurs et aux administrateurs de les appliquer manuellement au contenu, soit appliquer automatiquement ces étiquettes au contenu que vous voulez marquer comme enregistrement. Pour consulter des instructions, voir [Créer, publier ou appliquer automatiquement des étiquettes de rétention](create-retention-labels.md).
+Vous utilisez les [étiquettes de rétention](retention.md#retention-labels) pour marquer du contenu sous la forme d’un enregistrement. Une fois que vous avez créé des étiquettes de rétention qui déclarent des enregistrements, vous pouvez soit publier ces étiquettes pour permettre aux utilisateurs et aux administrateurs de les appliquer manuellement au contenu, soit appliquer automatiquement ces étiquettes au contenu que vous voulez marquer comme enregistrement.
 
 En utilisant des étiquettes de rétention pour déclarer des enregistrements, vous pouvez implémenter une stratégie de gestion des enregistrements unique et cohérente dans votre environnement Microsoft 365.
 
@@ -60,15 +60,15 @@ Quelques rappels à propos des enregistrements :
 
     En outre, si vous changez l'étiquette qui est appliquée à un dossier (dans SharePoint et OneDrive) pour une étiquette de rétention qui ne déclare pas le contenu sous la forme d'un enregistrement, les éléments contenus dans le dossier conservent leur étiquette d'enregistrement existante.
 
-    Pour plus d'informations sur l'application des étiquettes de rétention aux dossiers SharePoint et OneDrive, voir [Application d’une étiquette de rétention par défaut à tout le contenu dans une bibliothèque SharePoint, un dossier ou un ensemble de documents](labels.md#applying-a-default-retention-label-to-all-content-in-a-sharepoint-library-folder-or-document-set).
+    Pour plus d'informations sur l'application des étiquettes de rétention aux dossiers SharePoint et OneDrive, voir [Application d’une étiquette de rétention par défaut à tout le contenu dans une bibliothèque SharePoint, un dossier ou un ensemble de documents](create-apply-retention-labels.md#applying-a-default-retention-label-to-all-content-in-a-sharepoint-library-folder-or-document-set).
 
-  - **Impossible de supprimer les enregistrements**. Si un utilisateur essaie de supprimer un enregistrement dans Exchange, l’élément est déplacé vers le dossier Éléments récupérables, comme décrit dans la rubrique [Fonctionnement d’une stratégie de rétention avec Exchange](retention-policies-exchange.md#how-a-retention-policy-works-with-exchange).
+  - **Impossible de supprimer les enregistrements**. Si un utilisateur essaie de supprimer un enregistrement dans Exchange, l’élément est déplacé vers le dossier Éléments récupérables, comme décrit dans la rubrique [Fonctionnement de la rétention avec Exchange](retention-policies-exchange.md#how-retention-works-for-exchange).
 
     Si un utilisateur essaie de supprimer un enregistrement dans SharePoint, une erreur annonce que l’élément n’a pas été supprimé, et l’élément reste dans la bibliothèque.
 
     ![Message indiquant que l’élément n’a pas été supprimé de SharePoint](../media/d0020726-1593-4a96-b07c-89b275e75c49.png)
 
-    Si un utilisateur essaie de supprimer un enregistrement dans OneDrive, l’élément est déplacé vers la bibliothèque de conservation et de préservation des documents, comme décrit dans la rubrique [Fonctionnement d’une stratégie de rétention avec SharePoint et OneDrive](retention-policies-sharepoint.md#how-a-retention-policy-works-with-sharepoint-and-onedrive).
+    Si un utilisateur essaie de supprimer un enregistrement dans OneDrive, l’élément est déplacé vers la bibliothèque de conservation et de préservation des documents, comme décrit dans la rubrique [Fonctionnement de la rétention avec SharePoint et OneDrive](retention-policies-sharepoint.md#how-retention-works-for-sharepoint-and-onedrive).
 
   - **Les étiquettes d’enregistrement ne peuvent pas être supprimées.** Une fois qu’une étiquette d’enregistrement a été appliquée à un élément, seul l’administrateur de cet emplacement (par exemple, un administrateur de collection de sites d’un site SharePoint) peut supprimer cette étiquette d’enregistrement.
 
@@ -82,7 +82,11 @@ Lorsque vous créez une étiquette de rétention, vous pouvez l’utiliser pour 
     
    ![Cliquez sur la case à cocher Utiliser une étiquette pour classer du contenu en tant qu’Enregistrement](../media/recordversioning6.png)
 
-3. [Publier](labels.md#how-retention-labels-work-with-retention-label-policies) ou [appliquer automatiquement](labels.md#applying-a-retention-label-automatically-based-on-conditions) l’étiquette de rétention aux sites SharePoint et/ou aux comptes OneDrive.
+3. Appliquer l’étiquette de rétention aux sites SharePoint et aux comptes OneDrive :
+    
+    - [Créer des étiquettes de rétention et les appliquer dans les applications](create-apply-retention-labels.md)
+    
+    - [Appliquer automatiquement une étiquette de rétention au contenu](apply-retention-labels-automatically.md)
 
 
 ### <a name="applying-a-retention-label-to-content"></a>Application d’une étiquette de rétention au contenu
@@ -167,4 +171,6 @@ Pour plus d’informations sur la recherche de ces événements, voir la section
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-Pour obtenir des instructions sur la création et la publication des étiquettes de rétention qui contiennent le paramètre de marquage du contenu en tant qu’enregistrement, consultez[Créer, publier et appliquer automatiquement des étiquettes de rétention](create-retention-labels.md).
+Si vous n’avez pas encore d’étiquettes de rétention à utiliser pour la gestion des enregistrements, consultez [Prise en main des stratégies de rétention et des étiquettes de rétention](get-started-with-retention.md).
+
+Pour regarder des vidéos relatives à la configuration et à l’utilisation de la gestion des enregistrements, voir les [sélections de gouvernance des données sur YouTube](https://go.microsoft.com/fwlink/?linkid=867039).
