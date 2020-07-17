@@ -20,12 +20,12 @@ description: Apprenez à vérifier votre domaine et à créer des enregistrement
 ms.custom:
 - okr_smb
 - AdminSurgePortfolio
-ms.openlocfilehash: d3a9e3787afc30b33122edf91c1cf9e3dd84b847
-ms.sourcegitcommit: 7c1b34205746ff0690ffc774a74bdfd434256cf5
+ms.openlocfilehash: 01bcffe37d9c38d91eff25d9df58f848f4ee1a82
+ms.sourcegitcommit: f7566dd6010744c72684efdc37f4471672330b61
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "45049665"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "45138255"
 ---
 # <a name="add-dns-records-to-connect-your-domain"></a>Ajouter des enregistrements DNS pour connecter votre domaine
 
@@ -37,7 +37,9 @@ Si vous n’ajoutez pas de domaine, les membres de votre organisation utiliseron
 
 [Consultez la FAQ dédiée aux domaines](../setup/domains-faq.md) si vous ne trouvez pas ci-dessous ce que vous recherchez .
 
-## <a name="step-1-add-a-txt-record-to-verify-you-own-the-domain"></a>Étape 1 : Ajouter un enregistrement TXT pour vérifier que vous êtes propriétaire du domaine
+## <a name="step-1-add-a-txt-or-mx-record-to-verify-you-own-the-domain"></a>Étape 1 : Ajouter un enregistrement TXT ou MX pour vérifier que vous êtes propriétaire du domaine
+
+### <a name="recommended-verify-with-a-txt-record"></a>Recommandé : vérifier avec un enregistrement TXT
 
 Vous devez tout d’abord prouver que vous êtes le propriétaire du domaine que vous voulez ajouter à Microsoft 365.
 
@@ -56,6 +58,25 @@ Exemple :
 
 Lorsque Microsoft trouve l’enregistrement TXT approprié, votre domaine est vérifié.
 
+### <a name="verify-with-an-mx-record"></a>Vérifier avec un enregistrement MX
+
+Si votre bureau d’enregistrement ne prend pas en charge l’ajout d'enregistrements TXT, vous pouvez procéder à la vérification en ajoutant un enregistrement MX.
+
+1. Connectez-vous au [Centre d’administration Microsoft 365](https://admin.microsoft.com/), puis sélectionnez **Afficher tout** > **Paramètres** > **Domaines**.
+2. Dans un nouvel onglet ou une nouvelle fenêtre de navigateur, connectez-vous à votre fournisseur d’hébergement DNS, puis recherchez l’emplacement où vous gérez vos paramètres DNS (par exemple, Paramètres de fichier de zone, Gérer les domaines, Gestionnaire de domaine, Gestionnaire DNS).
+3. Accédez à la page Gestionnaire DNS de votre fournisseur et ajoutez à votre domaine l’enregistrement MX indiqué dans le centre d’administration.
+
+La **Priorité** de cet enregistrement MX doit être la plus élevée de tous les enregistrements MX existants pour le domaine. Sinon, il peut interférer avec l'envoi et la réception d'e-mails. Vous devez supprimer ces enregistrements dès que la vérification du domaine est terminée.
+
+Vérifiez que les champs sont définis par les valeurs suivantes :
+
+- Type d’enregistrement : `MX`
+- Priorité : sélectionnez la valeur la plus élevée disponible, généralement `0`.
+- Nom de l’hôte : `@`
+- Adresse de pointage : copiez la valeur à partir du centre d’administration et collez-la ici.
+- TTL : `3600‎` (ou votre fournisseur par défaut)
+
+Lorsque Microsoft trouve l’enregistrement MX approprié, votre domaine est vérifié.
 
 ## <a name="step-2-add-dns-records-to-connect-microsoft-services"></a>Étape 2 : ajouter des enregistrements DNS pour connecter les services Microsoft
 

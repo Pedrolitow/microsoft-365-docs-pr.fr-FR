@@ -1,7 +1,7 @@
 ---
-title: Score le plus élevé dans les tests d’industrie (AV-TEST, AV Comparatives, SE Labs, MITRE ATT&CK)
+title: Principaux scores dans les tests d’industrie-protection contre les menaces Microsoft
 ms.reviewer: ''
-description: Microsoft Defender ATP atteint de façon cohérente les scores élevés dans les tests indépendants. Affichez les derniers scores et analyse.
+description: Affichez les derniers scores et l’analyse de la protection contre les menaces Microsoft, qui atteint régulièrement les meilleurs scores dans les tests indépendants (AV-TEST, AV Comparatives, SE Labs, MITRE ATT&CK). Affichez les derniers scores et analyse.
 keywords: Antivirus Microsoft Defender, antivirus Windows Defender, analyses antivirus, test antivirus, test antivirus, derniers scores AV, notes de détection, tests de produits de sécurité, tests du secteur de la sécurité, tests antivirus de l’industrie, meilleur antivirus, AV-Test, AV-Comparatives, SE Labs, MITRE ATT&CK, Endpoint Protection Platform, EPP, détection et réponse des points de terminaison, EDR, Windows 10, antivirus Microsoft Defender, WDAV, MDATP, protection contre les menaces de Microsoft, sécurité, programmes malveillants, av
 ms.prod: w10
 ms.mktglfcycl: secure
@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: 6a3263154794ef8638c5c3c96709b61e67b9ec5a
-ms.sourcegitcommit: 7f765670cb6970fdf7ddbad464ed3f8fe704bfaf
+ms.openlocfilehash: 279376288f28e99d5881e5e482470407111c4add
+ms.sourcegitcommit: 42b618231e9f608f3ae7226a313b0366601d0ea2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "44909275"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "45158868"
 ---
 # <a name="top-scoring-in-industry-tests"></a>Score le plus élevé dans les tests d’industrie
 
@@ -39,7 +39,7 @@ L’approche de test de cœur vers MITRE consiste à émuler les attaques réell
 
     La protection de Microsoft contre les menaces a fourni une couverture de presque 100% sur les étapes de la chaîne d’attaque. Elle a fourni une visibilité de premier plan aux activités des agresseurs, ce qui réduit considérablement les tâches manuelles pour le centre d’opérations de sécurité et les solutions de fournisseur qui s’appuyaient sur des modifications de configuration spécifiques. Il présente également les moins de lacunes en matière de visibilité, réduisant ainsi la possibilité d’utiliser des pirates non détectés.
 
-## <a name="next-generation-protection"></a>Protection nouvelle génération
+## <a name="next-generation-protection"></a>Protection de nouvelle génération
 
 L' [antivirus Microsoft Defender](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10) effectue une forte cohérence dans les tests indépendants, ce qui explique comment il s’agit d’un choix de premier plan sur le marché des antivirus. N’oubliez pas que ces tests fournissent uniquement des résultats pour les antivirus et ne testent pas les protections de sécurité supplémentaires.
 

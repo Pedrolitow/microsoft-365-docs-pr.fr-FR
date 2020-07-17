@@ -5,7 +5,7 @@ f1.keywords:
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 06/03/2020
+ms.date: 07/13/2020
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -17,12 +17,12 @@ ms.collection:
 - M365solutions
 ms.custom: ''
 description: Permettez à vos utilisateurs d’être productifs grâce à Teams, Exchange, SharePoint et les autres services Microsoft 365.
-ms.openlocfilehash: 274780d2b9ea4310eb2cd8c9114bb61c326d33fe
-ms.sourcegitcommit: 634abe8a237e27dfe82376e6ef32280aab5d4a27
+ms.openlocfilehash: a5c1d27afdb7afd8b4ee3052f745c4c986299a2e
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "45005961"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45127096"
 ---
 # <a name="step-5-deploy-remote-worker-productivity-apps-and-services"></a>Étape 5. Déployer les applications et les services de productivité des travailleurs à distance
 
@@ -67,11 +67,18 @@ Avec Outlook, les travailleurs à distance peuvent rester connectés et organis�
 
 Consultez [cet article](../enterprise/secure-email-recommended-policies.md) sur les stratégies recommandées d’identité et d’accès aux appareils pour vous aider à sécuriser les e-mails d’une organisation, ainsi que les clients d’e-mail qui prennent en charge l’authentification moderne et l’accès conditionnel.
 
-## <a name="store-and-collaborate-on-files-with-sharepoint-online-and-onedrive"></a>Stockez et collaborez sur des fichiers avec SharePoint Online et OneDrive
+## <a name="store-and-collaborate-on-files-with-sharepoint-and-onedrive"></a>Stockez et collaborez sur des fichiers avec SharePoint et OneDrive
 
-Pour la collaboration de contenu, les travailleurs à distance peuvent utiliser les dossiers SharePoint Online et OneDrive comme emplacement central dans le cloud pour stocker et partager des fichiers, co-créer, communiquer et collaborer. Les employés à distance peuvent travailler en toute sécurité, de n’importe quel endroit, à partir d’un navigateur web, de Teams et des applications Office.
+Pour la collaboration de contenu, les travailleurs à distance peuvent utiliser les dossiers SharePoint et OneDrive comme emplacement central dans le cloud pour stocker et partager des fichiers, co-créer, communiquer et collaborer. Les employés à distance peuvent travailler en toute sécurité, de n’importe quel endroit, à partir d’un navigateur web, de Teams et des applications Office.
 
-Consultez [cet article](../enterprise/sharepoint-file-access-policies.md) sur les stratégies recommandées d’identité et d’accès aux appareils pour vous aider à sécuriser SharePoint Online SharePoint Online et OneDrive Entreprise.
+Vous devrez peut-être migrer vos documents vers SharePoint ou OneDrive à partir de :
+
+- [Sites d’équipes SharePoint Server](https://docs.microsoft.com/sharepointmigration/sp-teams-sites-migration-guide)
+- [MySites](https://docs.microsoft.com/sharepointmigration/mysites-to-onedrive-migration-guide)
+- [Partages de fichiers](https://docs.microsoft.com/sharepointmigration/fileshare-to-odsp-migration-guide)
+- [Box](https://docs.microsoft.com/sharepointmigration/box-to-onedrive-and-sharepoint-migration-guide)
+
+Pour protéger SharePoint et OneDrive, consultez [cet article](../enterprise/sharepoint-file-access-policies.md). Vous y trouverez les stratégies d’accès aux identités et aux appareils recommandées.
 
 ## <a name="create-and-collaborate-on-content-with-microsoft-365-apps"></a>Créez et collaborez sur du contenu avec les applications Microsoft 365
 
