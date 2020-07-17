@@ -12,12 +12,12 @@ ms.collection:
 - M365-security-compliance
 localization_priority: Normal
 description: Découvrez les tâches qui vous aideront à commencer rapidement à prendre en main la conformité dans Microsoft 365.
-ms.openlocfilehash: a946d4711111089ba6074b2c264b8edd36a01315
-ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
+ms.openlocfilehash: 26d10840382d044e8126745daec32948571a1be9
+ms.sourcegitcommit: e891c7c25f351f10f250af3f483f68594976ddc9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45126613"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "45153687"
 ---
 # <a name="quick-tasks-for-getting-started-with-microsoft-365-compliance"></a>Tâches rapides pour la mise en route de la conformité Microsoft 365
 
@@ -101,6 +101,34 @@ Le modèle de stratégie d' *informations sensibles* prédéfini vous permet de 
 
 Pour obtenir des conseils détaillés sur la planification et la configuration de la conformité des communications, voir [plan for communication Compliance](communication-compliance-plan.md) et [Get Started with communication Compliance](communication-compliance-configure.md). Pour plus d’informations sur les licences de conformité des communications, consultez [la rubrique Microsoft 365 Licensing Guidance for security & Compliance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#communication-compliance).
 
+## <a name="task-9-see-whats-happening-with-your-sensitive-items"></a>Tâche 9 : voir ce qu’il se passe avec vos éléments sensibles
+
+Les étiquettes de sensibilité, les types d’informations sensibles, les étiquettes et les stratégies de rétention et les classifieurs pouvant être formés peuvent être utilisés pour classer et étiqueter les éléments sensibles dans Exchange, SharePoint et OneDrive, comme indiqué dans les tâches précédentes. La dernière étape de votre tâche rapide consiste à déterminer les éléments qui ont été étiquetés et les actions que vos utilisateurs encourent à ces éléments sensibles. l' [Explorateur de contenu](data-classification-content-explorer.md) et l’Explorateur d' [activités](data-classification-activity-explorer.md) fournissent cette visibilité.
+
+### <a name="content-explorer"></a>Explorateur de contenu
+ L’Explorateur de contenu vous permet d’afficher, dans leur format d’origine, tous les éléments qui ont été classés comme un type d’informations sensibles ou qui appartiennent à une certaine classification par un classifieur en formation, ainsi que tous les éléments auxquels l’étiquette de sensibilité ou de rétention est appliquée.
+
+Pour obtenir des conseils détaillés sur l’utilisation de l’Explorateur de contenu, voir [connaître votre vue d’ensemble de la classification des données de données](data-classification-overview.md)et commencer à utiliser l' [Explorateur de contenu](data-classification-content-explorer.md).
+
+### <a name="activity-explorer"></a>Activité du contenu
+Activity Explorer vous aide à contrôler les opérations effectuées avec vos éléments sensibles et classés dans les domaines suivants :
+- SharePoint
+- Exchange
+- OneDrive
+
+Plus de 30 filtres différents sont à votre disposition. Parmi ceux-ci, figurent :
+
+- plage de dates
+- type d’activité
+- emplacement
+- utilisateur
+- étiquette de confidentialité
+- étiquette de rétention
+- chemin d’accès du fichier
+- Stratégie DLP
+
+Pour obtenir des instructions détaillées sur l’utilisation de l’Explorateur d’activités, consultez la rubrique [prise en main de l’Explorateur d’activités](data-classification-activity-explorer.md).
+
 ## <a name="next-steps"></a>Étapes suivantes
 
 À présent que vous avez configuré les bases de la gestion de la conformité pour votre organisation, envisagez les solutions de conformité suivantes dans Microsoft 365 pour vous aider à protéger les informations sensibles et à détecter et agir sur des risques Insiders supplémentaires.
@@ -113,7 +141,7 @@ En outre, les étiquettes de rétention prennent en charge la [gestion des enreg
 
 Pour obtenir des conseils détaillés sur la création et la publication des étiquettes de rétention, consultez les conseils suivants :
 - [Créer des étiquettes de rétention et les appliquer dans les applications](create-apply-retention-labels.md)
-- [Application automatique d’une étiquette de rétention au contenu](apply-retention-labels-automatically.md)
+- [Appliquer automatiquement une étiquette de rétention au contenu](apply-retention-labels-automatically.md)
 
 Pour plus d’informations sur les licences de gestion des enregistrements, consultez [la rubrique Microsoft 365 Licensing Guidance for security & Compliance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#records-management).
 
@@ -125,7 +153,7 @@ Pour obtenir des conseils détaillés sur la définition des types d’informati
 
 ### <a name="prevent-data-loss"></a>Éviter les pertes de données
 
-Les [stratégies de protection contre la perte de données (DLP)](data-loss-prevention-policies.md) vous permettent d’identifier, de surveiller et de protéger automatiquement les informations sensibles dans votre organisation Microsoft 365. Utiliser des stratégies DLP pour identifier des informations sensibles dans les services Microsoft, empêcher le partage accidentel d’informations sensibles et aider les utilisateurs à se conformer à la conformité sans interrompre leur flux de travail.
+Les [stratégies de protection contre la perte de données (DLP)](data-loss-prevention-policies.md) vous permettent d’identifier, de surveiller et de protéger automatiquement les informations sensibles dans votre organisation Microsoft 365. Utiliser des stratégies DLP pour identifier des éléments sensibles dans les services Microsoft, empêcher le partage accidentel d’éléments sensibles et aider les utilisateurs à se tenir en conformité sans interrompre leur flux de travail.
 
 Pour obtenir des conseils détaillés sur la configuration des stratégies DLP, consultez la rubrique [prise en main des recommandations de stratégie DLP](get-started-with-dlp-policy-recommendations.md) et [prise en main de la stratégie DLP par défaut](get-started-with-the-default-dlp-policy.md). Pour plus d’informations sur les licences de gestion des pertes de données, consultez [la rubrique Microsoft 365 Licensing Guidance for security & Compliance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#office-365-data-loss-prevention-for-exchange-online-sharepoint-online-and-onedrive-for-business).
 
