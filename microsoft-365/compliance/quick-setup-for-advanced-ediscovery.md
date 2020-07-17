@@ -32,7 +32,7 @@ Cette section explique aux gestionnaires eDiscovery du Centre de sécurité &amp
   
 ## <a name="accessing-a-case-in-advanced-ediscovery"></a>Accès à un cas dans Advanced eDiscovery
 
-You access Advanced eDiscovery from the Security &amp; Compliance Center. You have to be a member of an eDiscovery case in the Security &amp; Compliance Center to access the case in Advanced eDiscovery. For instructions about assigning eDiscovery case permissions and adding users to an eDiscovery case, see [Manage eDiscovery cases in Office 365](ediscovery-cases.md). 
+Advanced eDiscovery est accessible depuis le Centre de sécurité &amp; conformité. Vous devez être membre d’un cas eDiscovery dans le Centre de sécurité &amp; conformité pour accéder au cas dans Advanced eDiscovery. Pour savoir comment affecter des autorisations à un cas eDiscovery et ajouter des utilisateurs à un cas eDiscovery, consultez l’article relatif à la [gestion des cas eDiscovery dans Office 365](ediscovery-cases.md). 
   
 Pour accéder à un cas dans Advanced eDiscovery : 
   
@@ -44,7 +44,7 @@ Pour accéder à un cas dans Advanced eDiscovery :
     
 4. Sur la page **Accueil** du cas, cliquez sur **Basculer vers Advanced eDiscovery**.
     
-    The **Connecting to Advanced eDiscovery** progress bar is displayed. When you're connected, the case is opened in Advanced eDiscovery. 
+    La barre de progression **Connexion à Advanced eDiscovery** s’affiche. Quand vous êtes connecté, le cas est ouvert dans Advanced eDiscovery. 
     
 ## <a name="workflow"></a>Flux de travail
 
@@ -52,15 +52,15 @@ Le diagramme suivant illustre le flux de travail courant pour gérer et utiliser
   
 ![Ce diagramme présente le flux de travail en quatre phases de configuration d’Advanced eDiscovery, à savoir la configuration des utilisateurs et des cas, l’identification des données des cas, l’exportation et le traitement, puis les phases d’analyse et d’exportation vers l’ordinateur local.](../media/76589ccc-789d-4581-b3a8-98d339b05979.png)
   
-This setup section describes the first four steps in the workflow. For a description of the other steps in the workflow, see the following.
+Cette section de configuration décrit les quatre premières étapes du flux de travail. Pour en savoir plus sur les autres étapes du flux de travail, consultez les sections suivantes.
   
 ## <a name="analyze"></a>Analyse
 
-[Analyzing case data](analyze-case-data-with-advanced-ediscovery.md) Identifies and organizes the files by various parameters, enables the use of Themes, and displays the results. Analyze functionality can be customized by the user in order to achieve enhanced results. 
+[Analyse des données des cas](analyze-case-data-with-advanced-ediscovery.md) Identifie et organise les fichiers selon divers paramètres, permet d’utiliser les thèmes et affiche les résultats. La fonctionnalité d’analyse peut être personnalisée par l’utilisateur pour affiner les résultats. 
   
 ## <a name="relevance-setup-and-relevance"></a>Configuration de Pertinence et Pertinence
 
-[Relevance Setup](manage-relevance-setup-in-advanced-ediscovery.md) and [Using the Relevance module](use-relevance-in-advanced-ediscovery.md) Enables assessment and relevance training based on a random sample of files and uses them to apply decisions to the predictive coding process. Calculates and displays interim results while monitoring statistical validity of the process. Displays the results to facilitate in making review decisions. 
+[Configuration de Pertinence](manage-relevance-setup-in-advanced-ediscovery.md) et [Utilisation du module Pertinence](use-relevance-in-advanced-ediscovery.md) Permet d’évaluer et d’entraîner la pertinence à partir d’un échantillon aléatoire de fichiers et les utilise pour appliquer des décisions au processus de codage prédictif. Calcule et affiche les résultats temporaires tout en contrôlant la validité statistique du processus. Affiche les résultats pour faciliter la prise de décisions pendant la révision. 
   
 ## <a name="export"></a>Exporter
 

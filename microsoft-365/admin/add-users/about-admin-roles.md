@@ -24,6 +24,7 @@ ms.assetid: da585eea-f576-4f55-a1e0-87090b6aaa9d
 description: Les rôles d’administrateur correspondent à des fonctions professionnelles et accordent l'autorisation d'effectuer des tâches spécifiques dans le centre d’administration. Par exemple, l’administrateur du service ouvre les tickets de support avec Microsoft.
 ms.openlocfilehash: e76024f1d13e9210b74e2f6c4fc63c9992615099
 ms.sourcegitcommit: 0650da0e54a2b484a3156b3aabe44397fbb38e00
+ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 07/01/2020
 ms.locfileid: "45015910"

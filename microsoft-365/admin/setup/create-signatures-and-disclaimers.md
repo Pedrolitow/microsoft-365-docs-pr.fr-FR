@@ -32,7 +32,7 @@ ms.locfileid: "44779880"
 ---
 # <a name="create-organization-wide-signatures-and-disclaimers"></a>Créer des signatures à l’échelle de l’organisation et des clauses d’exclusion de responsabilité
 
- You can add an email signature, legal disclaimer, or disclosure statement to the email messages that enter or leave your organization. You can set it up to apply to all incoming and outgoing messages as shown below. Or you can apply it to certain messages like those containing specific words or text patterns.
+ [] Vous pouvez ajouter une signature électronique, une clause d'exclusion de responsabilité ou une déclaration de divulgation aux messages e-mail qui entrent dans votre organisation ou qui en sortent. Vous pouvez configurer celle-ci pour qu'elle s'applique à tous les messages entrants et sortants, comme illustré ci-dessous. Ou vous pouvez l'appliquer à certains messages, comme ceux contenant des mots ou des modèles de texte spécifiques.
 
  Regardez une courte vidéo sur la création d’une signature électronique à l’échelle de l’entreprise. <br><br>
   
@@ -89,7 +89,7 @@ Accédez au Centre d’administration à l’adresse <a href="https://go.microso
 
 9. Sélectionnez **Sélectionner un** et sélectionnez **renvoyer** en tant qu’option de secours. Sélectionnez **OK**. Ainsi, si l'exclusion de responsabilité ne peut pas être ajoutée parce que le chiffrement ou un autre paramètre de courrier est activé, elle sera encapsulée dans une enveloppe du message.
     
-10. Leave **Audit this rule with severity level** selected. Then choose **Low**, **Medium**, or **High** to be used in the message log. 
+10. Laissez **Auditer cette règle avec un niveau de gravité** sélectionné. Puis sélectionnez le niveau à utiliser dans le journal des messages : **Faible**, **Moyen** ou **Élevé**. 
     
 11. Sélectionnez **Appliquer** pour activer immédiatement l'exclusion de responsabilité, sauf si vous souhaitez la tester au préalable. 
     

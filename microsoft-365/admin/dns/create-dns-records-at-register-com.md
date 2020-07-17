@@ -56,10 +56,10 @@ Une fois ces enregistrements ajoutés sur Register.com, votre domaine est config
 ## <a name="add-a-txt-record-at-registercom-to-verify-that-you-own-the-domain"></a>Ajouter un enregistrement TXT auprès de Register.com pour vérifier que vous êtes propriétaire du domaine
 <a name="BKMK_verify"> </a>
 
-Before you use your domain with Microsoft, we have to make sure that you own it. Your ability to log in to your account at your domain registrar and create the DNS record proves to Microsoft that you own the domain.
+Avant que vous puissiez utiliser votre domaine avec Microsoft, nous devons vérifier qu’il vous appartient. Votre capacité à vous connecter à votre compte auprès de votre bureau d’enregistrement de domaines et à créer l’enregistrement DNS prouve à Microsoft que le domaine vous appartient.
   
 > [!NOTE]
-> This record is used only to verify that you own your domain; it doesn't affect anything else. You can delete it later, if you like. 
+> Cet enregistrement sert uniquement à vérifier que vous êtes propriétaire du domaine. Vous pouvez éventuellement le supprimer ultérieurement. 
   
 Suivez les étapes décrites ci-dessous ou [regardez la vidéo (commencez la lecture à 0:44)](https://support.microsoft.com/office/7448dd9e-c0e7-4d5e-a7e9-f0e4715433c4).
   
@@ -224,7 +224,7 @@ Suivez les étapes décrites ci-dessous ou [regardez la vidéo (commencez la lec
 
 Suivez les étapes décrites ci-dessous ou [regardez la vidéo (commencez la lecture à 5:55)](https://support.microsoft.com/office/7448dd9e-c0e7-4d5e-a7e9-f0e4715433c4).
   
-1. To get started, go to your domains page at Register.com by using [this link](https://www.register.com/myaccount/). You'll be prompted to sign in.
+1. Pour commencer, accédez à la page de vos domaines sur le site Register.com en utilisant [ce lien](https://www.register.com/myaccount/). Vous serez invité à vous connecter.
     
 2. Sélectionnez **Domaines**.
     

@@ -28,7 +28,7 @@ ms.locfileid: "45127451"
 
 Une boîte aux lettres inactive (qui est un type de boîte aux lettres supprimée (récupérable)) est utilisée pour conserver le courrier électronique d’un ancien employé une fois qu’il quitte votre organisation. Si un autre employé assume les responsabilités de l'employé qui est parti ou si ce dernier réintègre votre organisation, deux méthodes vous permettent de mettre à disposition le contenu de la boîte aux lettres inactive :
   
-- **Restore an inactive mailbox** If another employee takes on the job responsibilities of the departed employee, or if another user needs access to the contents of the inactive mailbox, you can restore (or merge) the contents of the inactive mailbox to an existing mailbox. You can also restore the archive from an inactive mailbox. After it's restored, the inactive mailbox is preserved and is retained as an inactive mailbox. This topic describes the procedures for restoring an inactive mailbox.
+- **Restaurer une boîte aux lettres inactive** Si un autre employé assume les responsabilités de l'employé qui est parti, ou si un autre utilisateur doit accéder au contenu de la boîte aux lettres inactive, vous pouvez restaurer (ou fusionner) le contenu de la boîte aux lettres inactive vers une boîte aux lettres existante. Vous pouvez également restaurer l'archive d'une boîte aux lettres inactive. Une fois restaurée, la boîte aux lettres inactive est conservée sous la forme d'une boîte aux lettres inactive. Cette rubrique décrit les procédures de restauration d'une boîte aux lettres inactive.
 
 - **Récupérer une boîte aux lettres inactive** Si l'employé qui est parti réintègre votre organisation, ou si un nouvel employé est embauché pour assumer les responsabilités de l'employé parti, vous pouvez récupérer le contenu de la boîte aux lettres inactive. Cette méthode convertit la boîte aux lettres inactive en une nouvelle boîte aux lettres qui renferme le contenu de la boîte aux lettres inactive. Une fois récupérée, la boîte aux lettres inactive n'existe plus. Pour connaître les procédures pas à pas, reportez-vous à la rubrique [récupérer une boîte aux lettres inactive dans Office 365](recover-an-inactive-mailbox.md).
 
@@ -50,7 +50,7 @@ Pour plus d’informations sur les différences entre la restauration et la réc
 
 ## <a name="restore-an-inactive-mailbox"></a>Restaurer une boîte aux lettres inactive
 
-Use the **New-MailboxRestoreRequest** cmdlet with the  _SourceMailbox_ and  _TargetMailbox_ parameters to restore the contents of an inactive mailbox to an existing mailbox. For more information about using this cmdlet, see [New-MailboxRestoreRequest](https://go.microsoft.com/fwlink/?linkid=856298).
+Utilisez la cmdlet **New-MailboxRestoreRequest** avec les paramètres  _SourceMailbox_ et  _TargetMailbox_ pour restaurer le contenu d'une boîte aux lettres inactive vers une boîte aux lettres existante. Pour plus d'informations sur l'utilisation de cette cmdlet, consultez la rubrique [New-MailboxRestoreRequest](https://go.microsoft.com/fwlink/?linkid=856298).
   
 1. Créez une variable contenant les propriétés de la boîte aux lettres inactive.
 
@@ -59,15 +59,15 @@ Use the **New-MailboxRestoreRequest** cmdlet with the  _SourceMailbox_ and  _Tar
     ```
 
     > [!IMPORTANT]
-    > In the previous command, use the value of the **DistinguishedName** or **ExchangeGUID** property to identify the inactive mailbox. These properties are unique for each mailbox in your organization, whereas it's possible that an active and an inactive mailbox might have the same primary SMTP address.
+    > Dans la commande précédente, utilisez la valeur de la propriété **DistinguishedName** ou **ExchangeGUID** pour identifier la boîte aux lettres inactive. Ces propriétés sont uniques pour chaque boîte aux lettres de votre organisation, alors qu'une boîte aux lettres active et une boîte aux lettres inactive peuvent avoir la même adresse SMTP principale.
   
-2. Restore the contents of the inactive mailbox to an existing mailbox. The contents of the inactive mailbox (source mailbox) will be merged into the corresponding folders in the existing mailbox (target mailbox).
+2. Restaurez le contenu de la boîte aux lettres inactive vers une boîte aux lettres existante. Le contenu de la boîte aux lettres inactive (boîte aux lettres source) sera fusionné dans les dossiers correspondants de la boîte aux lettres existante (boîte aux lettres cible).
 
     ```powershell
     New-MailboxRestoreRequest -SourceMailbox $InactiveMailbox.DistinguishedName -TargetMailbox newemployee@contoso.com -AllowLegacyDNMismatch
     ```
 
-   Alternatively, you can specify a top-level folder in the target mailbox in which to restore the contents from the inactive mailbox. If the specified target folder or target folder structure doesn't already exist in the target mailbox, it is created during the restore process. 
+   Vous pouvez également indiquer un dossier de premier niveau dans la boîte aux lettres cible, dans lequel restaurer le contenu de la boîte aux lettres inactive. Si le dossier cible spécifié ou la structure de dossiers cible n'existe pas encore dans la boîte aux lettres cible, il/elle est créé(e) pendant le processus de restauration. 
 
     Cet exemple copie les éléments et sous-dossiers depuis une boîte aux lettres inactive vers un dossier intitulé « Boîte aux lettres inactive » dans la structure de dossiers de premier niveau de la boîte aux lettres cible.
 
@@ -77,7 +77,7 @@ Use the **New-MailboxRestoreRequest** cmdlet with the  _SourceMailbox_ and  _Tar
 
 ## <a name="restore-the-archive-from-an-inactive-mailbox"></a>Restaurer l'archive d'une boîte aux lettres inactive
 
-If an inactive mailbox has an archive mailbox, you can also restore it to the archive mailbox of an existing mailbox. To restore the archive from an inactive mailbox, you have to add the  _SourceIsArchive_ and  _TargetIsAchive_ switches to the command used to restore an inactive mailbox.
+Si une boîte aux lettres inactive possède une boîte aux lettres d'archivage, vous pouvez également la restaurer vers la boîte aux lettres d'archivage d'une boîte aux lettres existante. Pour restaurer l'archive d'une boîte aux lettres inactive, vous devez ajouter les commutateurs  _SourceIsArchive_ et  _TargetIsAchive_ à la commande utilisée pour restaurer une boîte aux lettres inactive.
   
 1. Créez une variable contenant les propriétés de la boîte aux lettres inactive.
 
@@ -86,9 +86,9 @@ If an inactive mailbox has an archive mailbox, you can also restore it to the ar
     ```
 
     > [!NOTE]
-    > In the previous command, use the value of the **DistinguishedName** or **ExchangeGUID** property to identify the inactive mailbox. These properties are unique for each mailbox in your organization, whereas it's possible that an active and an inactive mailbox might have the same primary SMTP address. 
+    > Dans la commande précédente, utilisez la valeur de la propriété **DistinguishedName** ou **ExchangeGUID** pour identifier la boîte aux lettres inactive. Ces propriétés sont uniques pour chaque boîte aux lettres de votre organisation, alors qu'une boîte aux lettres active et une boîte aux lettres inactive peuvent avoir la même adresse SMTP principale. 
   
-2. Restore the contents of the archive from the inactive mailbox (source archive) to the archive of an existing mailbox (target archive). In this example, the contents from the source archive are copied to a folder named "Inactive Mailbox Archive" in the archive of the target mailbox.
+2. Restaurez le contenu de l'archive de la boîte aux lettres inactive (archive source) vers l'archive d'une boîte aux lettres existante (archive cible). Dans cet exemple, le contenu de l'archive source est copié dans un dossier intitulé « Archive de boîte aux lettres inactive » dans l'archive de la boîte aux lettres cible.
 
     ```powershell
     New-MailboxRestoreRequest -SourceMailbox $InactiveMailbox.DistinguishedName -SourceIsArchive -TargetMailbox newemployee@contoso.com -TargetIsArchive -TargetRootFolder "Inactive Mailbox Archive" -AllowLegacyDNMismatch
@@ -98,7 +98,7 @@ If an inactive mailbox has an archive mailbox, you can also restore it to the ar
 
 - **Quelle est la principale différence entre la récupération et la restauration d'une boîte aux lettres inactive ?** Lorsque vous récupérez une boîte aux lettres inactive, la boîte aux lettres est généralement convertie en une nouvelle boîte aux lettres, le contenu et la structure de dossiers de la boîte aux lettres inactive sont conservés et la boîte aux lettres est liée à un nouveau compte d'utilisateur. Une fois récupérée, la boîte aux lettres inactive n'existe plus et les modifications apportées au contenu dans la nouvelle boîte aux lettres affectent le contenu placé en attente dans la boîte aux lettres inactive. À l'inverse, lorsque vous restaurez une boîte aux lettres inactive, le contenu est simplement copié vers une autre boîte aux lettres. La boîte aux lettres inactive est conservée et reste une boîte aux lettres inactive. Toute modification apportée au contenu de la boîte aux lettres cible n'affecte pas le contenu d'origine conservé dans la boîte aux lettres inactive. La boîte aux lettres inactive peut toujours faire l’objet d’une recherche à l’aide de l' [outil de recherche de contenu](content-search.md), son contenu peut être restauré vers une autre boîte aux lettres ou il peut être récupéré ou supprimé ultérieurement.
 
-- **How do you find inactive mailboxes?** To get a list of the inactive mailboxes in your organization and display information that is useful for restoring an inactive mailbox, you can run this command.
+- **Comment rechercher des boîtes aux lettres inactives ?** Pour obtenir la liste des boîtes aux lettres inactives au sein de votre organisation et afficher les informations utiles à la restauration d'une boîte aux lettres inactive, vous pouvez exécuter cette commande.
 
   ```powershell
   Get-Mailbox -InactiveMailboxOnly | FL Name,PrimarySMTPAddress,DistinguishedName,ExchangeGUID,LegacyExchangeDN,ArchiveStatus
@@ -110,7 +110,7 @@ If an inactive mailbox has an archive mailbox, you can also restore it to the ar
 
 - **Que fait le commutateur AllowLegacyDNMismatch ?** Dans les précédents exemples pour restaurer une boîte aux lettres inactive, le commutateur **AllowLegacyDNMismatch** sert à autoriser la restauration de la boîte aux lettres inactive vers une boîte aux lettres cible différente. Dans un scénario de restauration classique, l'objectif consiste à restaurer du contenu pour lequel les boîtes aux lettres source et cible sont la même boîte aux lettres. Par défaut, l’applet **de commande New-MailboxRestoreRequest** vérifie que la valeur de la propriété **legacyExchangeDN** des boîtes aux lettres source et cible est identique. Cette vérification vous empêche de restaurer accidentellement une boîte aux lettres source vers la mauvaise boîte aux lettres cible. Si vous essayez de restaurer une boîte aux lettres inactive sans utiliser le commutateur **AllowLegacyDNMismatch**, la commande peut échouer si les boîtes aux lettres source et cible ont des valeurs différentes pour la propriété **LegacyExchangeDN**.
 
-- **You can use other parameters with the New-MailboxRestoreRequest cmdlet to implement different restore scenarios for inactive mailboxes.** For example, you can run this command to restore the archive from the inactive mailbox into the primary mailbox of the target mailbox. 
+- **Vous pouvez utiliser d'autres paramètres avec la cmdlet New-MailboxRestoreRequest pour implémenter différents scénarios de restauration pour les boîtes aux lettres inactives.** Par exemple, vous pouvez exécuter cette commande pour restaurer l'archive à partir de la boîte aux lettres inactive vers la boîte aux lettres principale de la boîte aux lettres cible. 
 
   ```powershell
   New-MailboxRestoreRequest -SourceMailbox <inactive mailbox> -SourceIsArchive -TargetMailbox <target mailbox> -TargetRootFolder "Inactive Mailbox Archive" -AllowLegacyDNMismatch
@@ -122,7 +122,7 @@ If an inactive mailbox has an archive mailbox, you can also restore it to the ar
   New-MailboxRestoreRequest -SourceMailbox <inactive mailbox> -TargetMailbox <target mailbox> -TargetIsArchive -TargetRootFolder "Inactive Mailbox" -AllowLegacyDNMismatch
   ```
 
-- **What does the TargetRootFolder parameter do?** As previously explained, you can use the **TargetRootFolder** parameter to specify a folder in the top of the folder structure (also called the root) in the target mailbox in which to restore the contents of the inactive mailbox. If you don't use this parameter, mailbox items from the inactive mailbox are merged into the corresponding default folders of the target mailbox, and custom folders are re-created in the root of the target mailbox. The following illustrations highlight these differences between not using and using the **TargetRootFolder** parameter.
+- **Que fait le paramètre TargetRootFolder ?** Comme indiqué précédemment, vous pouvez utiliser le paramètre **TargetRootFolder** pour spécifier un dossier dans la partie supérieure de la structure de dossiers (également appelée racine) de la boîte aux lettres cible vers laquelle restaurer le contenu de la boîte aux lettres inactive. Si vous n'utilisez pas ce paramètre, les éléments de la boîte aux lettres inactive sont fusionnés dans les dossiers par défaut correspondants de la boîte aux lettres cible et les dossiers personnalisés sont recréés à la racine de la boîte aux lettres cible. Les illustrations suivantes soulignent ces différences entre la non-utilisation et l'utilisation du paramètre **TargetRootFolder**.
 
     **Hiérarchie des dossiers dans la boîte aux lettres cible lorsque le paramètre TargetRootFolder n'est pas utilisé**
 

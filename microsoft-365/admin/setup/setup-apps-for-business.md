@@ -66,7 +66,7 @@ Vous pouvez ajouter des utilisateurs dans l’Assistant, mais vous pouvez égale
 
 ## <a name="install-office"></a>Installer Office
 
-Once you've created accounts for other people in your business, you and your team members will be able to install the full desktop version of Office (Word, Excel, Outlook, etc.). Each person can install Office on up to 5 PCs or Macs.
+Après avoir créé des comptes pour d’autres utilisateurs au sein de votre entreprise, vous et les membres de votre équipe pouvez installer la version de bureau complète d’Office (Word, Excel, Outlook, etc.). Chaque membre peut installer Office sur un maximum de 5 PC ou Mac.
   
 ::: moniker range="o365-worldwide"
 
@@ -100,9 +100,9 @@ Découvrez les étapes à suivre en fonction de votre appareil : [Android](https
   
 ## <a name="store-files-online"></a>Stocker des fichiers en ligne
 
-Microsoft makes online file storage easy. To learn which storage locations are best for your business, see [Where you can store files in Office 365](https://support.microsoft.com/office/c7c20284-bc94-47f4-9728-d28e9daf0790).
+Microsoft facilite le stockage de fichiers en ligne. Pour découvrir quels emplacements de stockage sont les plus adaptés à votre entreprise, voir [Où stocker des fichiers dans Office 365 ?](https://support.microsoft.com/office/c7c20284-bc94-47f4-9728-d28e9daf0790).
   
-Everyone gets a **OneDrive** cloud storage location automatically when you create Microsoft accounts for them. With OneDrive, you can access files across your computers, phones, and tablets.
+Toutes les personnes reçoivent automatiquement un emplacement de stockage en ligne **OneDrive** lorsque vous créez des comptes Microsoft pour chacune d’entre elles. Avec OneDrive, vous pouvez accéder aux fichiers sur vos ordinateurs, téléphones et tablettes.  
   
 1. Sur votre ordinateur, utilisez l’Explorateur de fichiers pour ouvrir OneDrive. Ou bien, dans [Office 365](https://www.office.com), ouvrez **OneDrive** à partir du lanceur d’applications.
 

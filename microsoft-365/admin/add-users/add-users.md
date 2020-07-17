@@ -78,7 +78,7 @@ Vous devez être un administrateur général, une licence ou un administrateur d
     - **Informations de contact** Développez pour renseigner un numéro de téléphone mobile, une adresse, etc.
     - **Mot de passe** Utilisez le mot de passe généré automatiquement ou développez pour spécifier un mot de passe fort pour l’utilisateur. Ils doivent changer leur mot de passe après 90 jours. Vous pouvez aussi choisir de **Demander à cet utilisateur de modifier son mot de passe lors de sa première connexion**.
     - **Rôles** Développez si vous devez faire de cet utilisateur un administrateur.
-    - **Product licenses** Expand this section and select the appropriate license. If you don't have any licenses available, you can still add a user and buy additional licenses.
+    - **Licences de produits** Développez cette section, puis sélectionnez la licence appropriée. Si vous n'avez pas de licences disponibles, vous pouvez toujours ajouter un utilisateur et acheter des licences supplémentaires.
 
 ::: moniker-end
 
@@ -92,7 +92,7 @@ Vous devez être un administrateur général, une licence ou un administrateur d
     - **Informations de contact** Développez pour renseigner un numéro de téléphone mobile, une adresse, etc.
     - **Mot de passe** Utilisez le mot de passe généré automatiquement ou développez pour spécifier un mot de passe fort pour l’utilisateur. Ils doivent changer leur mot de passe après 90 jours. Vous pouvez aussi choisir de **Demander à cet utilisateur de modifier son mot de passe lors de sa première connexion**.
     - **Rôles** Développez si vous devez faire de cet utilisateur un administrateur.
-    - **Product licenses** Expand this section and select the appropriate license. If you don't have any licenses available, you can still add a user and buy additional licenses.
+    - **Licences de produits** Développez cette section, puis sélectionnez la licence appropriée. Si vous n'avez pas de licences disponibles, vous pouvez toujours ajouter un utilisateur et acheter des licences supplémentaires.
 
 ::: moniker-end
 

@@ -139,11 +139,11 @@ Une fois le compte d’utilisateur identifié, vous pouvez générer un rapport 
 3. Ouvrez le document pour consulter les données du rapport.
 
 > [!NOTE]
-> This is not a historical report that retains and displays state changes to action item assignment history. The generated report is a snapshot of the control action items assigned at the time that the report is run (date and time stamp written into the report). For instance, any subsequent reassignment of action items will result in different snapshot report data if this report is generated again for the same user.
+> Il ne s’agit pas d’un rapport historique qui consigne et présente les changements d’état de l’historique d’affectation des éléments d’action. Le rapport généré est une capture instantanée des éléments d’action du contrôle affectés pendant l’exécution du rapport (horodateur indiqué dans le rapport). Par exemple, toute réaffectation des éléments d’action générera une autre capture instantanée des données du rapport si ce rapport est généré une nouvelle fois pour le même utilisateur.
   
 #### <a name="reassign-action-items"></a>Réaffecter des éléments d’action
 
-This function enables an organization to remove any active or outstanding dependencies on the user account by reassigning all action item ownership (which includes both active and completed action items) from the returned user account to a new user selected below. This action does not change document upload history for the returned user account.
+Cette fonction permet aux organisations de supprimer des dépendances actives ou en attente du compte d’utilisateur en réaffectant à un nouvel utilisateur sélectionné les éléments d’action (actifs et terminés) du compte d’utilisateur renvoyé. Cette action ne modifie pas l’historique de chargement des documents pour le compte d’utilisateur renvoyé.
   
  Pour réaffecter des éléments d’action à un autre utilisateur :
   
@@ -156,9 +156,9 @@ This function enables an organization to remove any active or outstanding depend
 4. Pour continuer, sélectionnez **OK**, sinon cliquez sur **Annuler**.
     
 > [!NOTE]
-> All action items (both active and completed) will be assigned to the newly selected user. However, this action does not affect the document upload history; any documents uploaded by the previously assigned user will still show the date/time and name of the previously assigned user. 
+> Tous les éléments d’action (actifs et terminés) sont affectés au nouvel utilisateur sélectionné. Toutefois, cette action n’affecte pas l’historique de chargement des documents ; tous les documents chargés par l’utilisateur précédemment affecté continuent d’afficher la date/l’heure et le nom de l’utilisateur précédemment affecté. 
   
-Changing the document upload history to remove the previously assigned user will have to be done as a manual process. In that case, the administrator will need to:
+Pour supprimer l’utilisateur précédemment affecté, il faut modifier l’historique de chargement des documents manuellement. Dans ce cas, l’administrateur doit :
   
 1. Ouvrir le rapport d’exportation précédemment téléchargé.
   
@@ -174,7 +174,7 @@ Changing the document upload history to remove the previously assigned user will
   
 #### <a name="delete-user-data-history"></a>Supprimer l’historique des données d’un utilisateur
 
-This sets control action items to 'unassigned' for all action items assigned to the returned user. This also sets uploaded by value to 'user removed' for any documents uploaded by the returned user
+Cette fonction définit tous les éléments d’action du contrôle affectés à l’utilisateur renvoyé sur « Non affecté ». Elle définit également la valeur « Chargé par » sur « Utilisateur supprimé » pour tous les documents chargés par l’utilisateur renvoyé.
   
  Pour supprimer un élément d’action du compte d’utilisateur et l’historique de chargement des documents :
   

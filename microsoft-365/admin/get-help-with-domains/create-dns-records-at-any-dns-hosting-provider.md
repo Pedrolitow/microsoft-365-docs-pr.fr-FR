@@ -22,6 +22,7 @@ ms.custom:
 - AdminSurgePortfolio
 ms.openlocfilehash: d3a9e3787afc30b33122edf91c1cf9e3dd84b847
 ms.sourcegitcommit: 7c1b34205746ff0690ffc774a74bdfd434256cf5
+ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 07/07/2020
 ms.locfileid: "45049665"

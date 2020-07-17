@@ -36,7 +36,7 @@ ms.locfileid: "44780060"
 Le partage de calendrier est un paramètre global, ce qui signifie que vous pouvez l’activer pour tous les utilisateurs du client. Une fois le partage activé, les utilisateurs peuvent utiliser Outlook Web App pour partager leurs calendriers avec quiconque se trouve à l’intérieur ou à l’extérieur de l’organisation. Les utilisateurs au sein de l’organisation peuvent afficher le calendrier partagé côte à côte avec leur propre calendrier. Les personnes en dehors de l’organisation recevront une URL qu’elles peuvent utiliser pour afficher le calendrier. Les utilisateurs décident quand ils doivent partager, combien de partager et quand les calendriers doivent rester privés.
   
 > [!NOTE]
-> If you want to share calendars with an organization that uses Exchange Server 2013 (an on-premises solution), the Exchange administrator will need to set up an authentication relationship with the cloud. This is known as "federation" and must meet minimum software requirements. See [Sharing](https://technet.microsoft.com/library/dd638083%28v=exchg.150%29.aspx) for more information. 
+> Si vous voulez partager des calendriers avec une organisation qui utilise Exchange Server 2013 (solution locale), l'administrateur Exchange devra configurer une relation d'authentification avec le cloud. Il s'agit de la « fédération ». Celle-ci doit satisfaire une configuration logicielle minimale. Pour plus d'informations, voir [Partage](https://technet.microsoft.com/library/dd638083%28v=exchg.150%29.aspx). 
   
 ## <a name="enable-calendar-sharing-using-the-microsoft-365-admin-center"></a>Activer le partage de calendrier à l’aide du centre d’administration Microsoft 365
 
@@ -53,5 +53,5 @@ Le partage de calendrier est un paramètre global, ce qui signifie que vous pouv
     
 ## <a name="invite-people-to-access-calendars"></a>Inviter des personnes à accéder à des calendriers
 
-Once sharing is enabled for the tenant, calendar owners can extend invitations to specific users. See [Sharing your calendar in Outlook Web App](https://support.microsoft.com/office/7ecef8ae-139c-40d9-bae2-a23977ee58d5) for instructions. 
+Une fois le partage activé pour le client, les propriétaires de calendrier peuvent envoyer des invitations à des utilisateurs spécifiques. Pour plus d'informations, voir [Partage de votre calendrier dans Outlook Web App](https://support.microsoft.com/office/7ecef8ae-139c-40d9-bae2-a23977ee58d5). 
   

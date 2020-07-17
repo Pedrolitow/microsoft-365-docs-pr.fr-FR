@@ -35,7 +35,7 @@ ms.locfileid: "45079990"
   
 ::: moniker range="o365-worldwide"
 
-Domain names, like contoso.com, are managed by using a worldwide system of domain registrars and databases. The Domain Name System (DNS) provides a mapping between human-readable computer hostnames and the IP addresses used by networking equipment. An understanding of DNS and domain registrar basics can help you manage domains.
+Les noms de domaine, tels que contoso.com, sont gérés à l’aide d’un système mondial de bureaux d’enregistrement de domaines et de bases de données. Le système DNS (Domain Name System) fournit un mappage entre les noms d’hôtes d’ordinateurs lisibles et les adresses IP utilisées par l’équipement réseau. Comprendre les concepts de base de DNS et des bureaux d’enregistrement de domaines peut vous aider à gérer les domaines.
   
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/c005f2a4-90ad-46fe-b1ab-90f41f2a9d53?autoplay=false]
   
@@ -43,7 +43,7 @@ Domain names, like contoso.com, are managed by using a worldwide system of domai
 
 ::: moniker range="o365-germany"
 
-Domain names, like contoso.com, are managed by using a worldwide system of domain registrars and databases. The Domain Name System (DNS) provides a mapping between human-readable computer hostnames and the IP addresses used by networking equipment. An understanding of DNS and domain registrar basics can help you manage domains.
+Les noms de domaine, tels que contoso.com, sont gérés à l’aide d’un système mondial de bureaux d’enregistrement de domaines et de bases de données. Le système DNS (Domain Name System) fournit un mappage entre les noms d’hôtes d’ordinateurs lisibles et les adresses IP utilisées par l’équipement réseau. Comprendre les concepts de base de DNS et des bureaux d’enregistrement de domaines peut vous aider à gérer les domaines.
   
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/c005f2a4-90ad-46fe-b1ab-90f41f2a9d53?autoplay=false]
   
@@ -57,7 +57,7 @@ Les noms de domaine, tels que contoso.com, sont gérés à l'aide d'un système 
 
 ## <a name="what-are-domain-names"></a>Que sont les noms de domaine ?
 
-Domain names are used in URLs and email addresses, and they have different levels. For example, mail.contoso.com is a domain name with the following three levels:
+Les noms de domaine sont utilisés dans les URL et adresses de messagerie. Ils présentent différents niveaux. Par exemple, le nom de domaine mail.contoso.com comporte les trois niveaux suivants :
   
 - **.com** est le domaine de premier niveau. 
     
@@ -65,56 +65,56 @@ Domain names are used in URLs and email addresses, and they have different level
     
 - **mail** est le domaine de troisième niveau. 
     
-Why use a third-level domain? You might want to have different domain names for marketing or a blog. For example, blog.contoso.com. You typically add a second-level domain, like contoso.com, to use with Microsoft but you can also use third-level domains if you like.
+Pourquoi utiliser un domaine de troisième niveau ? Vous pouvez utiliser différents noms de domaine pour un blog ou dans une démarche marketing (par exemple, blog.contoso.com). Vous ajoutez généralement un domaine de second niveau tel que contoso.com, pour l'utiliser avec Microsoft, mais vous pouvez également utiliser des domaines de troisième niveau si vous le souhaitez.
   
 Découvrez ce que vous pouvez faire avec les domaines pour chaque type d'offre dans la [description du service des plateforme Microsoft 365 et Office 365](https://go.microsoft.com/fwlink/?LinkId=402693).
   
 ## <a name="understand-dns-record-types"></a>Comprendre les types d’enregistrements DNS
 
-DNS records stored at a DNS host for your domain are used to direct traffic for your domain. The following table describes frequently used DNS records and how they're used.
+Les enregistrements DNS stockés auprès d’un hôte DNS pour votre domaine permettent de guider le trafic pour votre domaine. Le tableau suivant décrit les enregistrements DNS fréquemment utilisés et comment les utiliser.
   
 |**Enregistrement de serveur de noms**|**Identifie quels serveurs de noms sont les serveurs de noms de référence pour un domaine. Lorsque vous modifiez ces serveurs pour votre domaine, vous modifiez l'endroit où vos enregistrements DNS sont gérés et l'endroit où le système DNS recherche des informations sur les serveurs de courrier, etc. Microsoft a ses propres serveurs de noms. Vous pouvez également décider de continuer à utiliser les serveurs de noms déjà configurés avec votre domaine.**|
 |:-----|:-----|
 |Enregistrement A (enregistrement d’adresse)  <br/> |Associe un nom de domaine à une adresse IP.  <br/> |
-|Enregistrement CNAME (alias ou canonique)  <br/> |Redirects one domain to another in the DNS system. When a name server looks up a domain and finds that it has a CNAME record, the server replaces the first domain name with the CNAME, and then looks up the new name.  <br/> |
-|Enregistrement MX (serveur de courrier)  <br/> |Points to where your email should be sent. It also has a priority field so that you can send mail to different servers in a priority order.  <br/> |
+|Enregistrement CNAME (alias ou canonique)  <br/> |Redirige un domaine vers un autre dans le système DNS. Quand un serveur de noms recherche un domaine et trouve un enregistrement CNAME, il remplace le premier nom de domaine par le CNAME, puis recherche le nouveau nom.  <br/> |
+|Enregistrement MX (serveur de courrier)  <br/> |Pointe vers l’endroit où vos courriers électroniques doivent être envoyés. Comporte également un champ de priorité pour vous permettre d’envoyer le courrier vers différents serveurs dans un ordre de priorité.  <br/> |
 |Enregistrement SPF (Sender Policy Framework)  <br/> |Enregistrement TXT qui empêche l’usurpation d’adresse de courrier et le hameçonnage.  <br/> |
-|Enregistrement SRV (enregistrement de service)  <br/> |Used by Skype for Business Online and Exchange Online to coordinate the flow of information between Microsoft services. For example, the SRV records are required to see presence in Outlook Web App, and to use Skype for Business Online, Skype, or other instant messaging tools with people in other companies.  <br/> |
+|Enregistrement SRV (enregistrement de service)  <br/> |Utilisé par Skype Entreprise Online et Exchange Online pour coordonner le flux des informations circulant entre les services Microsoft. Par exemple, les enregistrements SRV sont requis pour voir les informations de présence dans Outlook Web App et pour utiliser Skype Entreprise Online, Skype ou d'autres outils de messagerie instantanée avec des utilisateurs dans d'autres sociétés.  <br/> |
 |TTL (durée de vie)  <br/> |Durée pendant laquelle un serveur de noms conserve un enregistrement DNS avant que le serveur ne recherche une version mise à jour.  <br/> |
    
 ## <a name="how-does-dns-work"></a>Fonctionnement du système DNS
 
-Part of setting up your domain with a cloud service like Microsoft 365 includes changing or adding [DNS records](dns-basics.md) for the domain. These changes are required because of how the Internet works with the DNS, Domain Name System, and domain names, to know where to send or find things, like email and websites. 
+La modification ou l’ajout d’[enregistrements DNS](dns-basics.md) pour votre domaine fait partie du processus de configuration de votre domaine avec un service cloud tel que Microsoft 365. Ces modifications sont requises en raison du fonctionnement d’Internet avec DNS (Domain Name System) et les noms de domaine, pour déterminer l’emplacement auquel vous voulez envoyer ou rechercher des éléments, tels que des messages électroniques et des sites web. 
   
-The Internet is set up to use DNS, or Domain Name System, which lets us use familiar names, like contoso.com, to locate specific Internet locations that are actually, under the covers, labeled with hard-to-remember numbers called IP (Internet Protocol) addresses. IP addresses look something like 70.42.241.42, so you can see it's much easier to use a domain name to identify locations like email hosts and websites.
+Internet est configuré pour utiliser DNS (Domain Name System). Celui-ci permet d'utiliser des noms familiers (par exemple, contoso.com) pour localiser des emplacements spécifiques sur Internet désignés en réalité par des nombres difficiles à mémoriser appelés adresses IP (Internet Protocol). 70.42.241.42 est un exemple d'adresse IP. Vous constatez donc qu'il est plus facile d'utiliser un nom de domaine pour identifier les emplacements tels que les hôtes de courrier et les sites web.
   
-So that's the short answer: DNS records tell the Internet where to send email (like joe@contoso.com) or find websites (like www.contoso.com) that use your domain name. When you put the right information into the right DNS records for your domain, the DNS system routes everything correctly so your email, for example, arrives in Microsoft 365 instead of somewhere else.
+En bref, les enregistrements DNS indiquent à Internet l’emplacement auquel envoyer un message électronique (par exemple, joe@contoso.com) ou trouver des sites web (par exemple, www.contoso.com) qui utilisent votre nom de domaine. Lorsque vous placez les informations appropriées dans les enregistrements DNS correspondants pour votre domaine, le système DNS achemine tout le contenu correctement et votre courrier électronique, par exemple, est réceptionné dans Microsoft 365 plutôt qu’ailleurs.
   
-A domain's DNS records can be helpful in other ways, too. For example, Exchange checks a DNS record that lets Outlook automatically set up a connection to the right Exchange server.
+Les enregistrements DNS d’un domaine peuvent être utiles de d’autres façons. Par exemple, Exchange vérifie un enregistrement DNS qui permet à Outlook de configurer automatiquement une connexion au serveur Exchange correct.
   
 ### <a name="dns-records-help-the-internet-send-email-to-the-right-place"></a>Les enregistrements DNS aident Internet à envoyer les courriers électroniques à l’emplacement approprié
 
-As you read above, DNS essentially directs traffic around the Internet, mapping friendly domain names to those hard-to-remember IP addresses. One DNS record, called the MX record, is specifically for sending email to the right host.
+Comme indiqué plus haut, DNS dirige principalement le trafic sur Internet, en mappant des noms de domaine conviviaux avec des adresses IP difficiles à mémoriser. Un enregistrement DNS appelé enregistrement MX est spécifiquement conçu pour envoyer des courriers électroniques à l’hôte approprié. 
   
-DNS records are like a database of information about your domain. The records and their values are kept in something called a zone file, which includes a list of each record for your domain and what its value is. Domain registrars and other DNS hosting companies provide a UI on their websites so you can edit the records in your domain's zone file. And that's where you update the MX record for your domain, to send email messages to Microsoft 365.
+Les enregistrements DNS sont semblables à une base de données des informations sur votre domaine. Les enregistrements et leurs valeurs sont conservés dans un fichier de zone. Celui-ci inclut une liste des enregistrements pour votre domaine et de leurs valeurs. Les bureaux d'enregistrement de domaines et les autres entreprises d'hébergement DNS fournissent une interface utilisateur sur leurs sites web pour vous permettre de modifier les enregistrements dans le fichier de zone de votre domaine. Il s'agit de l'emplacement dans lequel vous mettez à jour l'enregistrement MX de votre domaine pour envoyer des messages électroniques à Microsoft 365.
   
- *When you change your email to Microsoft 365, by updating your domain's MX record in the next step, ALL email sent to that domain will start coming to Microsoft 365.*  If other people use your domain for email, you must set up Microsoft 365 mailboxes for each of those people. 
+ *Lorsque vous transférez votre courrier vers Microsoft 365, en mettant à jour l'enregistrement MX de votre domaine à l'étape suivante, les messages envoyés à ce domaine commenceront à arriver dans Microsoft 365.*  Si d'autres personnes utilisent votre domaine pour le courrier électronique, vous devez configurer des boîtes aux lettres Microsoft 365 pour chacune de ces personnes. 
   
-Sound complicated? Well, it can be, but we walk you through each step in the Microsoft domain setup.
+Cela vous semble compliqué ? Même si cela peut l’être, nous vous accompagnons dans les différentes étapes de la configuration d’un domaine Microsoft.
   
 ### <a name="dns-tells-the-internet-where-to-look-for-websites-too"></a>Le DNS indique également à Internet où trouver les sites web
 
-When you type in a website address, for example, www.contoso.com, the Internet first checks with one of the DNS servers for something called a name server (NS) record for (in this case) contoso.com. The NS record tells the Internet where it should look for the zone file that has all the other DNS record values for that domain. There are lots of DNS servers, all connected to each other. The servers work together to keep track of all registered domain names, which have to be unique, and where the domain's zone files are.
+Lorsque vous tapez une adresse de site web (par exemple, www.contoso.com), Internet commence par rechercher auprès de l'un des serveurs DNS l'enregistrement de serveur de noms pour contoso.com (dans le cas présent). L'enregistrement de serveur de noms indique à Internet où rechercher le fichier de zone qui contient toutes les autres valeurs d'enregistrement DNS pour ce domaine. Il y a de nombreux serveurs DNS, tous connectés les uns aux autres. Les serveurs fonctionnent conjointement pour suivre tous les noms de domaine enregistrés, lesquels doivent être uniques et se trouver au même emplacement que les fichiers de zone du domaine.
   
 ::: moniker range="o365-worldwide"
 
-Let's say that the NS record for contoso.com says "godaddy.com." Now the Internet knows that GoDaddy.com is where to look for the zone file listing all the other DNS records for contoso.com. Those DNS records include the MX record that says where to send emails for contoso.com and other records. If the MX record has a value that says (but in technical terms) "send email to Microsoft 365," that's where all the email messages sent to a contoso.com email address (like joe@contoso.com) will be sent. Then, as long as there's a mailbox called "joe" at that location, the email will be delivered.
+Admettons que l'enregistrement de serveur de nom pour contoso.com indique « godaddy.com ». Internet saura désormais qu'il faut rechercher dans GoDaddy.com pour trouver le fichier de zone recensant les autres enregistrements DNS pour contoso.com. Ces enregistrements DNS comprennent un enregistrement MX qui indique où envoyer les courriers électroniques pour contoso.com ainsi que d'autres enregistrements. Si l'enregistrement MX comprend une valeur qui indique (en termes techniques) « envoyer un courrier électronique à Microsoft 365 », les courriers électroniques envoyés vers une adresse contoso.com (comme joe@contoso.com) y seront tous redirigés. Ensuite, dès lors qu'une boîte aux lettres nommée « Joe » se trouve à cet emplacement, le message sera remis.
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-Let's say that the NS record for contoso.com says "godaddy.com." Now the Internet knows that GoDaddy.com is where to look for the zone file listing all the other DNS records for contoso.com. Those DNS records include the MX record that says where to send emails for contoso.com and other records. If the MX record has a value that says (but in technical terms) "send email to Microsoft 365," that's where all the email messages sent to a contoso.com email address (like joe@contoso.com) will be sent. Then, as long as there's a mailbox called "joe" at that location, the email will be delivered.
+Admettons que l'enregistrement de serveur de nom pour contoso.com indique « godaddy.com ». Internet saura désormais qu'il faut rechercher dans GoDaddy.com pour trouver le fichier de zone recensant les autres enregistrements DNS pour contoso.com. Ces enregistrements DNS comprennent un enregistrement MX qui indique où envoyer les courriers électroniques pour contoso.com ainsi que d'autres enregistrements. Si l'enregistrement MX comprend une valeur qui indique (en termes techniques) « envoyer un courrier électronique à Microsoft 365 », les courriers électroniques envoyés vers une adresse contoso.com (comme joe@contoso.com) y seront tous redirigés. Ensuite, dès lors qu'une boîte aux lettres nommée « Joe » se trouve à cet emplacement, le message sera remis.
 
 ::: moniker-end
 
@@ -124,17 +124,17 @@ Supposons que l’enregistrement NS pour contoso.com mentionne « hichina.com 
 
 ::: moniker-end
 
-The actual values that you must enter for all of this to work with Microsoft 365 are listed for you when you're setting up your domain, in the domain setup steps. If you're doing the set up manually, you copy and paste the values into the correct DNS records (MX record, CNAME records, and so on) at your DNS host, which might be your domain registrar but doesn't have to be.
+Les valeurs réelles que vous devez entrer pour que tout cela fonctionne avec Microsoft 365 sont répertoriées automatiquement lorsque vous définissez votre domaine, dans le cadre de la configuration des domaines. Si vous effectuez les étapes de configuration manuellement, vous copiez et collez les valeurs dans les enregistrements DNS corrects (enregistrement MX, enregistrements CNAME, etc.) au niveau de votre hôte DNS, lequel peut éventuellement être votre bureau d’enregistrement de domaines.
   
 ::: moniker range="o365-worldwide"
 
-Why might your domain's zone file be somewhere besides at your domain registrar? Well, you might register your domain name at a domain registrar like GoDaddy, but your DNS records might be managed somewhere else, at a separate DNS hosting company or a web hosting company. The NS records for your domain store that information so all the DNS servers know where to look.
+Pour quelle raison le fichier de zone de votre domaine peut-il être stocké ailleurs qu'au niveau de votre bureau d'enregistrement de domaines ? Vous pouvez enregistrer votre nom de domaine auprès d'un bureau d'enregistrement de domaines tel que GoDaddy, mais vos enregistrements DNS peuvent être gérés par un autre fournisseur d'hébergement DNS ou d'hébergement web. Les enregistrements de serveur de noms pour votre domaine stockent ces informations afin que tous les serveurs DNS identifient l'emplacement dans lequel rechercher.
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-Why might your domain's zone file be somewhere besides at your domain registrar? Well, you might register your domain name at a domain registrar like GoDaddy, but your DNS records might be managed somewhere else, at a separate DNS hosting company or a web hosting company. The NS records for your domain store that information so all the DNS servers know where to look.
+Pour quelle raison le fichier de zone de votre domaine peut-il être stocké ailleurs qu'au niveau de votre bureau d'enregistrement de domaines ? Vous pouvez enregistrer votre nom de domaine auprès d'un bureau d'enregistrement de domaines tel que GoDaddy, mais vos enregistrements DNS peuvent être gérés par un autre fournisseur d'hébergement DNS ou d'hébergement web. Les enregistrements de serveur de noms pour votre domaine stockent ces informations afin que tous les serveurs DNS identifient l'emplacement dans lequel rechercher.
 
 ::: moniker-end
 
@@ -148,14 +148,14 @@ Pourquoi le fichier de zone de votre domaine peut-il se trouver autre part que s
 ## <a name="why-add-a-domain-in-microsoft-365"></a>Pourquoi ajouter un domaine dans Microsoft 365 ?
 
 
-Adding a custom domain, like fourthcoffee.com, to Microsoft 365 lets you use a shorter, more familiar email address and userID with the service. You're [given a domain to use](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) when you sign up for a Microsoft 365 account, but it includes "onmicrosoft.com." Many people prefer to add their organization or business domain if they plan to use Microsoft 365 for email. 
+L'ajout d'un domaine personnalisé, tel que fourthcoffee.com, à Microsoft 365 vous permet d'utiliser une adresse de courrier plus courte et plus conviviale, et un identifiant d'utilisateur avec le service. [Un domaine vous est octroyé](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) lorsque vous vous inscrivez pour bénéficier d'un compte Microsoft 365. Celui-ci inclut toutefois « onmicrosoft.com ». Les entreprises ou organisations préfèrent souvent ajouter leur domaine dans le cadre de l'utilisation de Microsoft 365 pour le courrier électronique. 
   
 > [!NOTE]
 > Si vous souhaitez simplement télécharger et utiliser les applications Microsoft, tels que Word ou Outlook, vous n’avez pas besoin d’ajouter un domaine :[installez Office sur votre PC ou Mac](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658). 
   
 Vous pouvez utiliser votre nom de domaine dans Microsoft 365 avec votre courrier, votre site web public et votre adresse de messagerie instantanée.
   
-- **Email:** Your domain name lets you customize your email, so you can use a shorter, easier-to-remember address than [the initial onmicrosoft.com email address](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) that comes with your account. So instead of joe@contoso.onmicrosoft.com, the email address (which is also the work account that you use to sign in to Microsoft 365) could be joe@contoso.com. 
+- **Courrier électronique :** votre nom de domaine vous permet de personnaliser vos adresses de courrier électronique. Vous pouvez ainsi utiliser une adresse plus courte et plus facile à retenir que [l'adresse onmicrosoft.com initiale](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) fournie avec votre compte. Par exemple, au lieu de maurice@contoso.onmicrosoft.com, vous pouvez utiliser l'adresse de courrier (qui est aussi l'compte professionnel à utiliser pour se connecter à Microsoft 365) maurice@contoso.com. 
     
 - **Site web :** si vous avez un abonnement Microsoft 365 incluant un site web public SharePoint Online (désormais indisponible à l'achat), une adresse initiale telle que contoso-public.sharepoint.com est fournie avec votre site web public. Si vous configurez votre site web pour votre entreprise, vous pouvez utiliser un nom de domaine personnalisé pour renommer l'adresse du site web (par exemple, www.contoso.com). 
     
@@ -167,14 +167,14 @@ Vous pouvez utiliser votre nom de domaine dans Microsoft 365 avec votre courrie
 ## <a name="why-add-a-domain-in-microsoft-365"></a>Pourquoi ajouter un domaine dans Microsoft 365 ?
 
 
-Adding a custom domain, like fourthcoffee.com, to Microsoft 365 lets you use a shorter, more familiar email address and userID with the service. You're [given a domain to use](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) when you sign up for a Microsoft 365 account, but it includes "onmicrosoft.com." Many people prefer to add their organization or business domain if they plan to use Microsoft 365 for email. 
+L'ajout d'un domaine personnalisé, tel que fourthcoffee.com, à Microsoft 365 vous permet d'utiliser une adresse de courrier plus courte et plus conviviale, et un identifiant d'utilisateur avec le service. [Un domaine vous est octroyé](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) lorsque vous vous inscrivez pour bénéficier d'un compte Microsoft 365. Celui-ci inclut toutefois « onmicrosoft.com ». Les entreprises ou organisations préfèrent souvent ajouter leur domaine dans le cadre de l'utilisation de Microsoft 365 pour le courrier électronique. 
   
 > [!NOTE]
 > Si vous souhaitez simplement télécharger et utiliser les applications Microsoft 365, telles que Word ou Outlook, vous n’avez pas besoin d’ajouter un domaine :[installez Office sur votre PC ou Mac](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658). 
   
 Vous pouvez utiliser votre nom de domaine dans Microsoft 365 avec votre courrier, votre site web public et votre adresse de messagerie instantanée.
   
-- **Email:** Your domain name lets you customize your email, so you can use a shorter, easier-to-remember address than [the initial onmicrosoft.com email address](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) that comes with your account. So instead of joe@contoso.onmicrosoft.com, the email address (which is also the work account that you use to sign in to Microsoft 365) could be joe@contoso.com. 
+- **Courrier électronique :** votre nom de domaine vous permet de personnaliser vos adresses de courrier électronique. Vous pouvez ainsi utiliser une adresse plus courte et plus facile à retenir que [l'adresse onmicrosoft.com initiale](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) fournie avec votre compte. Par exemple, au lieu de maurice@contoso.onmicrosoft.com, vous pouvez utiliser l'adresse de courrier (qui est aussi l'compte professionnel à utiliser pour se connecter à Microsoft 365) maurice@contoso.com. 
     
 - **Site web :** si vous avez un abonnement incluant un site web public SharePoint Online (désormais indisponible à l'achat), une adresse initiale telle que contoso-public.sharepoint.com est fournie avec votre site web public. Si vous configurez votre site web pour votre entreprise, vous pouvez utiliser un nom de domaine personnalisé pour renommer l'adresse du site web (par exemple, www.contoso.com). 
     
@@ -184,9 +184,9 @@ Vous pouvez utiliser votre nom de domaine dans Microsoft 365 avec votre courrie
 
 ## <a name="the-dns-records-required-for-microsoft-365"></a>Les enregistrements DNS sont obligatoires pour Microsoft 365
 
-There are a number of DNS records required for Microsoft 365 to work with your domain. In addition to setting up your domain's MX record so email will be sent to Microsoft 365, there are records to help with tasks like making sure Outlook can automatically connect to the right Exchange server, setting up instant messaging, and helping to prevent spam email.
+Plusieurs enregistrements DNS sont requis pour permettre à Microsoft 365 de fonctionner avec votre domaine. En plus de configurer l'enregistrement MX de votre domaine de sorte que le courrier électronique soit envoyé à Microsoft 365, des enregistrements permettent de s'assurer qu'Outlook peut se connecter automatiquement au serveur Exchange approprié, de configurer la messagerie instantanée et d'éviter le courrier indésirable.
   
-You can [find a list of values](information-for-dns-records.md) to set up your domain. They're included right in the Microsoft 365 admin center. 
+Vous pouvez [consulter une liste de valeurs](information-for-dns-records.md) pour configurer votre domaine. Celles-ci sont incluses directement dans le Centre d’administration Microsoft 365. 
   
 Ou, si vous envisagez de procéder à un déploiement, vous pouvez consulter la liste des enregistrements DNS requis pour Microsoft 365 avec leur fonction et des valeurs d'exemple. Consultez les [Enregistrements DNS externes pour Microsoft 365](https://docs.microsoft.com/office365/enterprise/external-domain-name-system-records).
   

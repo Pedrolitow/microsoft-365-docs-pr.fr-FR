@@ -90,7 +90,7 @@ Cette situation peut se produire pour les deux raisons suivantes :
 
 ## <a name="i-dont-see-the-plan-i-want"></a>L'offre à laquelle je veux souscrire n'apparaît pas
 
-When you use the **Switch plans** button, the plans that you can switch to are displayed based on the services in your current plan. You can only use the **Switch plans** button to switch to a plan that has the same data-related services, or to a higher version. This ensures that users don't lose data related to those services during the switch.
+Lorsque vous utilisez le bouton **Changer de plan**, les offres vers lesquelles vous pouvez basculer vous sont présentées en fonction des services inclus dans votre offre actuelle. Vous ne pouvez utiliser le bouton **Changer de plan** que pour passer à une offre contenant les mêmes services de données, ou une version plus récente. Cela garantit que les utilisateurs ne perdent pas leurs données liées à ces services pendant le changement.
   
 Pour comparer les plans avant de basculer, consultez la page [comparaison des produits Microsoft 365 pour les entreprises](https://go.microsoft.com/fwlink/p/?linkid=842056) . Pour connaître les spécifications techniques, consultez les [descriptions de service Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=842275).
   

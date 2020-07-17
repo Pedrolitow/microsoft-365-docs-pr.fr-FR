@@ -26,7 +26,7 @@ ms.locfileid: "44854257"
 
 Microsoft 365 Entreprise est la première offre cloud de Microsoft qui allie les applications et services de productivité locaux et basés sur le cloud à Windows 10 Entreprise et aux fonctionnalités de sécurité avancées dans une solution complète et intelligente, qui permet à chacun d’être créatif et de collaborer en toute sécurité. 
 
-The Contoso Corporation is a fictional but representative global manufacturing conglomerate with its headquarters in Paris, France. Contoso has deployed Microsoft 365 Enterprise and addressed major design decisions and implementation details for networking, identity, Windows 10 Enterprise, Microsoft 365 Apps for enterprise, mobile device management, information protection, and security. 
+Contoso Corporation est un conglomérat de fabricants international fictif mais représentatif ayant son siège à Paris, en France. Contoso a déployé Microsoft 365 Entreprise et adressé des décisions de conception majeures et les détails d’implémentation pour la mise en réseau, l’identité, Windows 10 Entreprise, Applications Microsoft 365 pour les entreprises, la gestion des appareils mobiles, la protection des informations et la sécurité. 
 
 L’objectif global de Contoso pour Microsoft 365 Entreprise est d’accélérer leur transformation numérique à l’aide de services cloud pour réunir ses employés, partenaires, données, crée une valeur client et maintenir son avantage concurrentiel dans un monde avant tout digital.
 

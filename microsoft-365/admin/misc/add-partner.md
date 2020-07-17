@@ -56,7 +56,7 @@ Le partenaire que vous choisissez dépend des services Microsoft que vous utilis
 
 ::: moniker range="o365-germany"
 
-The partner you choose depends on the Office 365 services you use and the country or region where you'll use those services. If you are adding a partner, or changing the partner for your subscription, first you need to get the partner's Microsoft Partner ID by asking the partner for it.
+Le partenaire que vous choisissez dépend des services Office 365 que vous utilisez et du pays ou de la région dans lesquels vous utilisez ces services. Si vous ajoutez un partenaire, ou modifiez le partenaire pour votre abonnement, vous devez tout d'abord obtenir l'ID partenaire Microsoft de ce partenaire en lui demandant.
 
 ::: moniker-end
 
@@ -79,7 +79,7 @@ Suivez les étapes de la page fournisseurs pour rechercher ou pour obtenir une c
     
 4. Si vous disposez déjà d’un partenaire, dans la deuxième étape de l’Assistant d’extraction, dans le volet droit, sous informations sur le partenaire, sélectionnez **Ajouter**.
 
-5. Type the Microsoft Partner ID for the partner you're adding. You can get the partner's Microsoft Partner ID by asking the partner for it.
+5. Tapez l'ID partenaire Microsoft pour le partenaire que vous ajoutez. Vous pouvez l'obtenir en le demandant au partenaire.
 
 6. Suivez les autres instructions de l'Assistant pour finaliser l'achat de vos abonnements. 
     
@@ -98,7 +98,7 @@ Suivez les étapes de la page fournisseurs pour rechercher ou pour obtenir une c
     
 4. Si vous disposez déjà d’un partenaire, dans la deuxième étape de l’Assistant d’extraction, dans le volet droit, sous informations sur le partenaire, sélectionnez **Ajouter**.
 
-5. Type the Microsoft Partner ID for the partner you're adding. You can get the partner's Microsoft Partner ID by asking the partner for it.
+5. Tapez l'ID partenaire Microsoft pour le partenaire que vous ajoutez. Vous pouvez l'obtenir en le demandant au partenaire.
 
 6. Suivez les autres instructions de l'Assistant pour finaliser l'achat de vos abonnements. 
     
@@ -127,7 +127,7 @@ Suivez les étapes de la page fournisseurs pour rechercher ou pour obtenir une c
   
 3. À droite, sous le coût de l’abonnement, sélectionnez **autres actions** > **Ajouter un partenaire de l’enregistrement**.
 
-4. Type the Microsoft Partner ID for the partner you're adding, select **Check ID**, and then **Submit**. You can get the partner's Microsoft Partner ID by asking the partner for it.
+4. Tapez l'ID partenaire Microsoft du partenaire que vous ajoutez, puis sélectionnez **Vérifier l'ID** et **Envoyer**. Vous pouvez obtenir cet ID auprès du partenaire.
 
 5. L'ID de partenaire apparaît sur la page **Abonnements**.
     
@@ -159,7 +159,7 @@ Pour accepter cette offre
     
 3. Sous **ID partenaire**, sélectionnez **Modifier le partenaire d'enregistrement**.
   
-4. Type the new Microsoft Partner ID for the partner you're adding, select **Check ID**, and then **Submit**. You can get the partner's Microsoft Partner ID by asking the partner for it.
+4. Tapez le nouvel ID partenaire Microsoft du partenaire que vous ajoutez, puis sélectionnez **Vérifier l'ID** et **Envoyer**. Vous pouvez obtenir cet ID auprès du partenaire.
   
 ::: moniker-end
 
@@ -171,7 +171,7 @@ Pour accepter cette offre
     
 3. Sous **ID partenaire**, sélectionnez **Modifier le partenaire d'enregistrement**.
   
-4. Type the new Microsoft Partner ID for the partner you're adding, select **Check ID**, and then **Submit**. You can get the partner's Microsoft Partner ID by asking the partner for it.   
+4. Tapez le nouvel ID partenaire Microsoft du partenaire que vous ajoutez, puis sélectionnez **Vérifier l'ID** et **Envoyer**. Vous pouvez obtenir cet ID auprès du partenaire.   
 
 ::: moniker-end
 
@@ -183,7 +183,7 @@ Pour accepter cette offre
     
 3. Sous **ID partenaire**, sélectionnez **Modifier le partenaire d'enregistrement**.
   
-4. Type the new Microsoft Partner ID for the partner you're adding, select **Check ID**, and then **Submit**. You can get the partner's Microsoft Partner ID by asking the partner for it.   
+4. Tapez le nouvel ID partenaire Microsoft du partenaire que vous ajoutez, puis sélectionnez **Vérifier l'ID** et **Envoyer**. Vous pouvez obtenir cet ID auprès du partenaire.   
 
 ::: moniker-end
 

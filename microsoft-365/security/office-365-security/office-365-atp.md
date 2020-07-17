@@ -21,6 +21,7 @@ ms.custom:
 description: Office 365 – Protection avancée contre les menaces inclut des pièces jointes sécurisées, des liens sûrs, des outils anti-hameçonnage avancés, des outils de création de rapports et des fonctionnalités d’intelligence contre les menaces.
 ms.openlocfilehash: ffde9288338f14ea23fa39990ccd9363c7fd2a84
 ms.sourcegitcommit: 9ee1261c405f82b49c62390a25dfdea23340d644
+ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 07/06/2020
 ms.locfileid: "45039377"

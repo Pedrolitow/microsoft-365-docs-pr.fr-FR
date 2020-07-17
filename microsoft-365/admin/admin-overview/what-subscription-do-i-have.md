@@ -53,7 +53,7 @@ Si vous êtes administrateur, vous pouvez vérifier les abonnements de votre org
 
     ![The Subscriptions page that shows which subscription you have as well as its status.](../../media/4d51dfcc-e9f3-4414-964a-6ef182f49eba.png)
   
-3. If you have multiple subscriptions, you'll see a column next to the detailed subscription information that lists the subscriptions that have been purchased, as well as any trial subscriptions. By default, the subscription at the top of the list is automatically selected, and the detailed information for that subscription is shown.
+3. En revanche, si vous avez souscrit plusieurs abonnements, une colonne s'affiche en regard des informations détaillées sur l'abonnement. Elle répertorie les abonnements que vous avez achetés ainsi que les abonnements en version d'évaluation. Par défaut, l'abonnement qui se trouve en tête de liste est automatiquement sélectionné et les informations détaillées sur cet abonnement sont affichées.
 
     Si vous avez plusieurs abonnements, choisissez celui pour lequel vous souhaitez afficher des informations détaillées. La carte d'abonnement est mise à jour avec les informations concernant cet abonnement.
 
@@ -72,7 +72,7 @@ Si vous êtes administrateur, vous pouvez vérifier les abonnements de votre org
 
     ![The Subscriptions page that shows which subscription you have as well as its status.](../../media/4d51dfcc-e9f3-4414-964a-6ef182f49eba.png)
   
-3. If you have multiple subscriptions, you'll see a column next to the detailed subscription information that lists the subscriptions that have been purchased, as well as any trial subscriptions. By default, the subscription at the top of the list is automatically selected, and the detailed information for that subscription is shown.
+3. En revanche, si vous avez souscrit plusieurs abonnements, une colonne s'affiche en regard des informations détaillées sur l'abonnement. Elle répertorie les abonnements que vous avez achetés ainsi que les abonnements en version d'évaluation. Par défaut, l'abonnement qui se trouve en tête de liste est automatiquement sélectionné et les informations détaillées sur cet abonnement sont affichées.
 
     Si vous avez plusieurs abonnements, choisissez celui pour lequel vous souhaitez afficher des informations détaillées. La carte d'abonnement est mise à jour avec les informations concernant cet abonnement.
 

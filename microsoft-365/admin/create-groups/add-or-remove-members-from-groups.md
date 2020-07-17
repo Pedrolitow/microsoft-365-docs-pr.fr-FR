@@ -179,7 +179,7 @@ Dans Microsoft 365, les membres du groupe créent généralement leurs propres g
 
 ## <a name="manage-group-owner-status"></a>Gérer l’état du propriétaire du groupe
 
-By default, the person who created the group is the group owner. Often a group will have multiple owners for backup support or other reasons. Members can be promoted to owner status and owners can be demoted to member status.
+Par défaut, la personne qui a créé le groupe en est le propriétaire. Un groupe possède souvent plusieurs propriétaires pour le support ou d'autres raisons. Les membres peuvent être promus au statut de propriétaire et les propriétaires peuvent être rétrogradés au statut de membre.
   
 ### <a name="promote-a-member-to-owner-status-in-the-admin-center"></a>Promouvoir un membre au statut de propriétaire dans le centre d’administration
 

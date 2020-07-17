@@ -46,7 +46,7 @@ Les étapes à suivre pour configurer S/MIME avec chacun de ces points de termin
 
 3. Pour les organisations Exchange Online, synchronisez les certificats utilisateur entre AD DS et Azure Active Directory à l’aide d’une version appropriée d’Azure AD Connect. Ces certificats seront ensuite synchronisés à partir d’Azure Active Directory vers l’annuaire Exchange Online et seront utilisés lors du chiffrement d’un message à un destinataire.
 
-4. Set up a virtual certificate collection in order to validate S/MIME. This information is used by Outlook on the web when validating the signature of an email and ensuring that it was signed by a trusted certificate.
+4. Configurer une collection de certificats virtuelle afin de valider S/MIME. Ces informations sont utilisées par Outlook sur le web lorsqu'il valide la signature d'un courrier électronique et vérifie qu'il a été signé par un certificat approuvé.
 
 5. Configurer le point de terminaison Outlook ou EAS de sorte qu'il utilise S/MIME.
 

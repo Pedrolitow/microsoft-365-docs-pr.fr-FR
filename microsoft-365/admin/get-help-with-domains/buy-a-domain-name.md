@@ -88,9 +88,9 @@ Si vous souhaitez acheter un domaine à partir d’un bureau d’enregistrement 
    
 ### <a name="transfer-your-domain-to-a-different-domain-registrar"></a>Transférer votre domaine vers un autre bureau d'enregistrement de noms de domaine
 
-If your domain is managed by a provider that doesn't support all the necessary DNS records, you can transfer it to a different registrar. When you transfer the domain, you change who you send payments to in order to renew and keep your domain name.
+Si votre domaine est géré par un fournisseur qui ne prend pas en charge tous les enregistrements DNS nécessaires, vous pouvez le transférer vers un autre bureau d'enregistrement. Lorsque vous transférez le domaine, vous modifiez le bénéficiaire des paiements en vue du renouvellement et de la conservation de votre nom de domaine.
   
-Request the transfer at the registrar that you want to move your domain to. Look on their website for an option such as **Transfer DNS**. Be aware that after they make the changes, it can take a few days update across the Internet.
+Demandez le transfert auprès du bureau d'enregistrement vers lequel vous voulez déplacer votre domaine. Recherchez une option telle que **Transfert DNS** sur son site web. N'oubliez pas qu'une fois les modifications effectuées, la mise à jour sur Internet peut prendre quelques jours.
  
 
 
@@ -100,7 +100,7 @@ Request the transfer at the registrar that you want to move your domain to. Look
 
 
 
-If you don't already have your own domain, you can easily buy one online at a domain name registrar, domain reseller, or even at your current Internet provider. You get a domain name when you sign up for Office 365 operated by 21Vianet, for example, contoso.partner.onmschina.cn. But you may want to use a custom domain name, like fourthcoffee.com.
+Si vous ne possédez pas encore votre propre domaine, vous pouvez facilement en acquérir un en ligne, auprès d'un bureau d'enregistrement de noms de domaine, d'un revendeur de domaines ou même de votre fournisseur Internet actuel. Vous obtenez un nom de domaine lorsque vous vous inscrivez à Office 365 géré par 21Vianet (par exemple, contoso.partner.onmschina.cn). Mais vous souhaiterez peut-être utiliser un nom de domaine personnalisé, comme fourthcoffee.com.
   
 Pour configurer un domaine dans Microsoft 365, vous devez posséder un domaine et modifier certains des enregistrements DNS pour votre domaine.
   

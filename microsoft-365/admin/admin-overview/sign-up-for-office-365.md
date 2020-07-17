@@ -115,9 +115,9 @@ Vous n’avez pas besoin d’annuler votre version d’évaluation. Si vous n’
 
 - **Adresse et informations de contact pour votre abonnement :**
 
-  - **Country** where the services will be used. You **won't** be able to change this later, even during the sign up process; you'll have to re-start the sign up wizard.
+  - **Pays/région** dans lequel les services seront utilisés. Vous ne **pourrez pas** modifier ces informations par la suite, même dans le cadre du processus d'inscription. Vous devrez réexécuter l'Assistant d'inscription.
 
-  - **Email** and **phone number** so we can contact you if needed about your subscription. For example, if you forget your password, we would use this information to send you a temporary one. We also send your billing information to the email address you specify.
+  - **Adresse de courrier** et **numéro de téléphone** pour nous permettre de vous contacter le cas échéant en relation avec votre abonnement. Par exemple, si vous oubliez votre mot de passe, ces informations nous permettent de vous envoyer un mot de passe temporaire. Les informations de facturation sont également envoyées à l'adresse de courrier que vous spécifiez.
 
     > [!NOTE]
     > L’adresse de messagerie que vous entrez ici est différente de votre adresse de messagerie Microsoft 365 (votre nom de connexion, ci-dessous). Comme nous envoyons également les informations de facturation à cette adresse, nous vous recommandons d'utiliser une adresse de courrier pouvant recevoir les courriers professionnels.

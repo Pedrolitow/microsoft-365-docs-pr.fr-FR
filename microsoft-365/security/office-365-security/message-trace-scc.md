@@ -339,7 +339,7 @@ Une valeur de **custom_data** commençant par provient `S:SFA` de l’agent de f
 |`SFV=BLK`|Le filtrage a été ignoré et le message a été bloqué, car il provient d'un expéditeur bloqué.|
 |`SFV=SKS`|Le message a été marqué comme courrier indésirable avant d’être traité par le filtrage du courrier indésirable. Cela inclut les messages qui ont été marqués automatiquement comme étant des courriers indésirables par une règle de flux de courrier (également appelée règle de transport) et pour lesquels toutes les étapes de filtrage supplémentaires ont été contournées.|
 |`SCL=<number>`|Pour plus d'informations sur les différentes valeurs de SCL et leur signification, voir [Seuils de probabilité de courrier indésirable](spam-confidence-levels.md).|
-|`PCL=<number>`|The Phishing Confidence Level (PCL) value of the message. These can be interpreted the same way as the SCL values documented in [Spam confidence levels](spam-confidence-levels.md).|
+|`PCL=<number>`|Valeur du seuil de probabilité de courrier d'hameçonnage (PCL) du message. Ces valeurs peuvent être interprétées de la même façon que les valeurs SCL répertoriées dans [Seuils de probabilité de courrier indésirable](spam-confidence-levels.md).  |
 |`DI=SB`|L'expéditeur du message a été bloqué.|
 |`DI=SQ`|Le message a été mis en quarantaine.|
 |`DI=SD`|Le message a été supprimé.|

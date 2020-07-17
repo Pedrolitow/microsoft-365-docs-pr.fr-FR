@@ -19,6 +19,7 @@ search.appverid:
 description: Découvrir les stratégies de rétention qui s’appliquent à SharePoint et OneDrive.
 ms.openlocfilehash: db0dfdbddc620bfc7449397bad02463b02c270bd
 ms.sourcegitcommit: 7c1b34205746ff0690ffc774a74bdfd434256cf5
+ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 07/07/2020
 ms.locfileid: "45049882"
@@ -74,9 +75,9 @@ Le contrôle de version est une fonctionnalité présente dans toutes les biblio
   
 Une stratégie de conservation uniquement conserve toutes les versions d’un document dans une collection de sites SharePoint ou un compte OneDrive. Lorsqu’un document soumis à une stratégie de rétention ou de conservation uniquement est modifié pour la première fois, une version du document d’origine est copiée dans la bibliothèque de conservation et de préservation des documents. Lorsqu’un document soumis à une stratégie de rétention ou de conservation uniquement est supprimé, toutes les versions sont copiées dans la bibliothèque de conservation et de préservation des documents si le contrôle de version est activé. Chaque version d’un document dans la bibliothèque Preservation Hold est présente sous la forme d’un élément distinct avec sa propre période de rétention :
   
-- If the retention policy is based on when the content was created, each version has the same expiration date as the original document. The original document and its versions all expire at the same time.
+- Si la stratégie de rétention est basée sur la date de création du contenu, chaque version comporte la même date d’expiration que le document d’origine. Le document d’origine et toutes ses versions expirent en même temps.
 
-- If the retention policy is based on when the content was last modified, each version has its own expiration date based on when the original document was modified to create that version. The original documents and its versions expire independently of each other.
+- Si la stratégie de rétention est basée sur la date de la dernière modification du contenu, chaque version possède sa propre date d’expiration basée sur la date à laquelle le document d’origine a été modifié pour créer cette version. Les documents d’origine et ses versions expirent séparément l’un de l’autre.
 
 > [!NOTE]
 > Les versions conservées des documents SharePoint et OneDrive ne sont pas consultables par les outils eDiscovery.

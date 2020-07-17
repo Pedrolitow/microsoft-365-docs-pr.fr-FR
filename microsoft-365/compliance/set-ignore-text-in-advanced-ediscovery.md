@@ -26,7 +26,7 @@ ms.locfileid: "44936891"
 # <a name="set-ignore-text-option-for-analyze-in-advanced-ediscovery-classic"></a>Définir l’option ignorer le texte pour l’analyse dans Advanced eDiscovery (classique)
 
 > [!NOTE]
-> Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
+> Pour utiliser Advanced eDiscovery, votre organisation doit souscrire un abonnement Office 365 E3 avec le module complémentaire Conformité avancée ou un abonnement E5. Si vous ne disposez pas d’un abonnement et que vous souhaitez essayer Advanced eDiscovery, vous pouvez vous [inscrire pour utiliser une version d’évaluation d’Office 365 Entreprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
 La fonctionnalité ignorer le texte peut être appliquée à tout ou partie des modules avancés eDiscovery suivants : Analyze (Near-Duplicates, threads de messagerie, thèmes) et pertinence. Le texte ignoré n’apparaît pas dans les fichiers affichés par pertinence, et l’analyse/les calculs ignorent le texte ignoré.
   

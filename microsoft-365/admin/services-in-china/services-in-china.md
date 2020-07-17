@@ -108,12 +108,12 @@ Pour en savoir plus sur la prise en main des services généraux Office 365, con
  Nouveauté de la mise à jour cumulative 5 (CU5) d’Exchange 2013, les déploiements hybrides complets entre les organisations Exchange 2013 locales et les services Office 365 sont désormais pris en charge. En tirant parti des nouvelles améliorations apportées à l’Assistant Configuration hybride, Exchange 2013 CU5 prend en charge les fonctionnalités hybrides suivantes entre votre organisation locale et l’organisation Exchange Online :  
 
 - Sécurisation du routage des messages entre l'organisation locale et l'organisation Exchange Online. 
-- Mail routing with a shared domain namespace. For example, both on-premises and Exchange Online organizations use the @contoso.com SMTP domain. 
+- Routage des messages avec espace de noms de domaine partagé. Par exemple, l'organisation locale et l'organisation Exchange Online utilisent le domaine SMTP @contoso.com. 
 - Liste d'adresses globale (LAG) unifiée, également appelée « carnet d'adresses partagé »  
 - Partage de calendrier et de disponibilité entre l'organisation locale et l'organisation Exchange Online.  
-- Centralized control of inbound and outbound mail flow. You can configure all inbound and outbound Exchange Online messages to be routed through the on-premises Exchange organization. 
+- Contrôle centralisé du flux des messages entrants et sortants. Vous pouvez configurer tous les messages Exchange Online entrants et sortants pour qu'ils soient acheminés via l'organisation Exchange locale. 
 - Une URL Office Outlook Web App unique pour l’organisation locale et l’organisation Exchange Online.  
-- The ability to move existing on-premises mailboxes to the Exchange Online organization. Exchange Online mailboxes can also be moved back to the on-premises organization if needed.  
+- Possibilité de déplacer des boîtes aux lettres locales existantes vers l'organisation Exchange Online. Les boîtes aux lettres Exchange Online peuvent être redéplacées vers l'organisation locale si nécessaire.  
 - Gestion centralisée des boîtes aux lettres à l'aide du Centre d'administration Exchange (CAE) local.  
 - Infos-courrier, prise en charge de la photo HD pour les contacts Outlook et recherche dans plusieurs boîtes aux lettres entre des organisations locales et Exchange Online. 
 - Archivage dans le cloud des messages pour les boîtes aux lettres Exchange locales. 

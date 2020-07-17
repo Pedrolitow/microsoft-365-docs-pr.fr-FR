@@ -152,7 +152,7 @@ Si vous avez supprimé un groupe Microsoft 365, par défaut, il est conservé pe
 |![Description de l’image](../../media/next_steps.png)|Étapes suivantes|<ul><li>Communiquer et publier les stratégies de suppression et de restauration pour informer les utilisateurs du comportement attendu </li><li> Consignez les besoins de votre organisation en matière de surveillance des groupes supprimés.</li><li>Prévoyez d’implémenter ces exigences dans le cadre de votre déploiement de groupes.</li></ul>|
 
 > [!Important]
->During the "soft-delete" period if a user tries to access the site they will get a 403 forbidden message. After this period if the user tries to access the site they will get a 404 not found message.
+>Si un utilisateur tente d'accéder au site pendant la période de « suppression réversible », il verra un message d'erreur 403 Interdit. Après cette période, si l'utilisateur tente d'accéder au site, il obtiendra un message 404 Introuvable.
 
 #### <a name="resources"></a>*Resources*
 - [Restaurer un groupe Microsoft 365 supprimé](https://docs.microsoft.com/microsoft-365/admin/create-groups/restore-deleted-group?ui=en-US&rs=en-001&ad=US)

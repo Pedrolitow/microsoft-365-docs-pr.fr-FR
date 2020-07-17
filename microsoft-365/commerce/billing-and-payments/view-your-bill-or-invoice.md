@@ -37,7 +37,7 @@ ms.locfileid: "44816996"
 ---
 # <a name="view-your-bill-or-invoice"></a>Consulter votre facture
 
-This article is for people who have a Microsoft 365 for business subscription. You must be a global admin or billing admin to do the steps described in this article.
+Cet article s’adresse aux personnes dotées d’un abonnement à Microsoft 365 pour les entreprises. Pour suivre les étapes décrites dans cet article, vous devez être administrateur général ou administrateur de facturation.
   
 Si vous avez besoin d’aide pour identifier les frais qui apparaissent sur votre facture, voir [Comprendre votre facture](understand-your-invoice2.md) pour bénéficier d’informations détaillées.
   

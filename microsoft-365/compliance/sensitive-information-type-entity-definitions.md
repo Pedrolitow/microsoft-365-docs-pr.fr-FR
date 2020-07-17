@@ -6776,7 +6776,7 @@ Le modèle doit inclure tous les éléments suivants :
 - 1 à 7 groupes de quatre lettres ou chiffres (séparés par des espaces facultatifs)
 - 1 à 3 lettres ou chiffres
 
-The format for each country is slightly different. The IBAN sensitive information type covers these 60 countries:
+Le format pour chaque pays est légèrement différent. Le type d’informations sensibles IBAN recouvre ces 60 pays :
 
 ad, ae, al, at, az, ba, be, bg, bh, ch, cr, cy, cz, de, dk, do, ee, es, fi, fo, fr, gb, ge, gi, gl, gr, hr, hu, ie, il, is, it, kw, kz, lb, li, lt, lu, lv, mc, md, me, mk, mr, mt, mu, nl, no, pl, pt, ro, rs, sa, se, si, sk, sm, tn, tr, vg
 

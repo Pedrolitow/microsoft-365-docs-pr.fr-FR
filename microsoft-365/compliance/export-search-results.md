@@ -97,7 +97,7 @@ Vous devez préparer les résultats de recherche pour l’exportation. Lorsque v
 5. Dans le volet Détails, sous **Exporter les résultats vers un ordinateur**, cliquez sur **Démarrer l’exportation**.
     
     > [!NOTE]
-    > If the results for a search are older than 7 days, you are prompted to update the search results. If this happens, cancel the export, click **Update search results** in the details pane for the selected search, and then start the export again after the results are updated. 
+    > Si les résultats d’une recherche datent d’il y a plus de 7 jours, vous êtes invité à mettre à jour les résultats. Dans ce cas, annulez l’exportation, cliquez sur **Mettre à jour les résultats de recherche** dans le volet Détails de la recherche sélectionnée, puis redémarrez l’exportation lorsque les résultats sont mis à jour.  
   
 6. Sur la page **Exporter les résultats de la recherche** , sous **options de sortie**, choisissez l’une des options suivantes :
     

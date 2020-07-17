@@ -47,9 +47,9 @@ Votre facture contient trois adresses :
 
 - **Adresse de facturation** Ceci est l'adresse de votre service de facturation et est généralement la même que l'adresse de **vente**.
 
-- **Service Usage Address** The address where the service is being used, usually the same as the **Sold-To** address. If your organization has remote users or multiple offices, use the address where the majority of your users are located.
+- **Adresse d'utilisation du service** L'adresse de l'endroit où le service est utilisé, généralement le même que l'adresse de **vente**. Si votre organisation compte des utilisateurs distants ou plusieurs sites, nous vous conseillons d'utiliser l'adresse où sont regroupés la plupart de vos utilisateurs.
 
-In most cases, these addresses are the same. If you need to change one or more of the addresses, you can do that. You can also provide an alternate email address to receive billing notifications, and change the alternate email address for other admins.
+Dans la plupart des cas, ces adresses sont identiques. Si vous le souhaitez, vous pouvez modifier une ou plusieurs de ces adresses. Vous pouvez également fournir une adresse e-mail de secours à laquelle vous recevrez des notifications de facturation et modifier l'adresse e-mail de secours pour les autres administrateurs.
   
 ::: moniker range="o365-worldwide"
 

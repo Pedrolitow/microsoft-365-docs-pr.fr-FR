@@ -144,13 +144,13 @@ Voici ce que vous pouvez attendre lorsque votre abonnement atteint les différen
   
 ::: moniker range="o365-worldwide"
 
- **What to expect:** The expired state lasts for 30 days for most subscriptions, including subscriptions purchased through [Microsoft Open](https://go.microsoft.com/fwlink/p/?LinkID=613298), in most countries and regions. For Volume Licensing products, except for Microsoft Open, the expired state lasts 90 days.
+ **Ce à quoi vous devez vous attendre :** L'état Expiré dure 30 jours pour la plupart des abonnements, y compris les abonnements achetés via un contrat [Microsoft Open](https://go.microsoft.com/fwlink/p/?LinkID=613298), et dans la plupart des pays et régions. Pour les produits avec licence en volume, à l'exception du contrat Microsoft Open, l'état Expiré dure 90 jours.
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
- **What to expect:** The expired state lasts for 30 days for most subscriptions, including subscriptions purchased through [Microsoft Open](https://go.microsoft.com/fwlink/p/?LinkID=613298), in most countries and regions. For Volume Licensing products, except for Microsoft Open, the expired state lasts 90 days.
+ **Ce à quoi vous devez vous attendre :** L'état Expiré dure 30 jours pour la plupart des abonnements, y compris les abonnements achetés via un contrat [Microsoft Open](https://go.microsoft.com/fwlink/p/?LinkID=613298), et dans la plupart des pays et régions. Pour les produits avec licence en volume, à l'exception du contrat Microsoft Open, l'état Expiré dure 90 jours.
 
 ::: moniker-end
 
@@ -168,13 +168,13 @@ En tant qu’administrateur, vous avez toujours accès au centre d’administrat
   
 ::: moniker range="o365-worldwide"
 
- **What to expect:** If you don't reactivate your subscription while it is in the expired state, it moves into a disabled state, which lasts for 90 days for most subscriptions, in most countries and regions. For Volume Licensing products, the disabled state lasts 30 days.
+ **Ce à quoi vous devez vous attendre :** si vous ne réactivez pas votre abonnement tant que son état est Expiré, il passe à l'état Désactivé (90 jours pour la plupart des abonnements et dans la plupart des pays et régions). Pour les produits avec licence en volume, l'état Désactivé dure 30 jours.
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
- **What to expect:** If you don't reactivate your subscription while it is in the expired state, it moves into a disabled state, which lasts for 90 days for most subscriptions, in most countries and regions. For Volume Licensing products, the disabled state lasts 30 days.
+ **Ce à quoi vous devez vous attendre :** si vous ne réactivez pas votre abonnement tant que son état est Expiré, il passe à l'état Désactivé (90 jours pour la plupart des abonnements et dans la plupart des pays et régions). Pour les produits avec licence en volume, l'état Désactivé dure 30 jours.
 
 ::: moniker-end
 

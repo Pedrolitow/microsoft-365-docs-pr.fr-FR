@@ -44,7 +44,7 @@ Si vous avez trouvé cette vidéo utile, consultez les [séries de formations co
   
 ## <a name="let-users-reset-their-own-passwords"></a>Autoriser les utilisateurs à réinitialiser leur mot de passe
 
-We strongly recommend that you set up self-service password reset. This way you don't have to manually reset passwords for your users. To learn how, see [Let users reset their own passwords in Office 365](let-users-reset-passwords.md).
+Nous vous recommandons vivement de configurer la réinitialisation du mot de passe libre-service. Ainsi, vous n'êtes pas tenu de réinitialiser manuellement les mots de passe de vos utilisateurs. Pour savoir comment procéder, voir [Autoriser les utilisateurs à réinitialiser leur mot de passe dans Office 365](let-users-reset-passwords.md).
   
 ## <a name="reset-a-business-password-for-someone-else"></a>Réinitialiser un mot de passe d’entreprise pour une autre personne
 
@@ -118,7 +118,7 @@ Ces étapes s'appliquent à une entreprise comptant des dizaines d'utilisateurs.
 ## <a name="reset-business-passwords-in-bulk"></a>Réinitialiser les mots de passe professionnels en bloc
 <a name="bkmk_forgot"> </a>
 
-Use PowerShell! Check out this post by Eyal Doron: [Managing passwords with PowerShell](https://go.microsoft.com/fwlink/?linkid=853696).
+Utilisez PowerShell. Lisez ce billet rédigé par Eyal Doron : [Gestion des mots de passe avec PowerShell](https://go.microsoft.com/fwlink/?linkid=853696).
   
 Voici un article connexe : [Définir les mots de passe de plusieurs comptes d'utilisateurs](https://docs.microsoft.com/office365/enterprise/powershell/manage-office-365-with-office-365-powershell).
   
