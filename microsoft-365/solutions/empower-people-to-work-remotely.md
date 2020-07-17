@@ -5,7 +5,7 @@ f1.keywords:
 - NOCSH
 ms.author: josephd
 manager: laurawi
-ms.date: 06/08/2020
+ms.date: 07/14/2020
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -17,12 +17,12 @@ ms.collection:
 - M365solutions
 ms.custom: ''
 description: Configurez l’infrastructure de service et de sécurité qui permet à vos employés de travailler à distance de n’importe où et à tout moment.
-ms.openlocfilehash: d4dded6c08e665a2756c45659f179e8252fcacc1
-ms.sourcegitcommit: bd5a08785b5ec320b04b02f8776e28bce5fb448f
+ms.openlocfilehash: 58915d80d9eb81009632971bbfc84a7b681e125e
+ms.sourcegitcommit: 42b618231e9f608f3ae7226a313b0366601d0ea2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "44844869"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "45158894"
 ---
 # <a name="empower-remote-workers-with-microsoft-365"></a>Confier des responsabilités aux travailleurs à distance avec Microsoft 365
 
@@ -68,6 +68,12 @@ Pour répondre aux critères pour les travailleurs à distance, utilisez les fon
 | Windows Autopilot | Installer et configurer de nouveaux appareils Windows 10 à des fins productives.   | Microsoft 365 E3 et E5 |
 | Microsoft Teams, Exchange Online, SharePoint Online et OneDrive, Microsoft 365 Apps, Microsoft Power Platform, Yammer, applications Power | Créer, communiquer et collaborer. | Microsoft 365 E3 et E5 |
 ||||
+
+<a name="poster"></a> Pour un résumé de deux pages de ce scénario, voir l’affiche [Confier des responsabilités aux télétravailleurs](../downloads/empower-remote-workers.pdf).
+
+[![Affiche Confier des responsabilités aux télétravailleurs](../media/empower-people-to-work-remotely/empower-remote-workers-poster.png)](../downloads/empower-remote-workers.pdf)
+
+Vous pouvez également télécharger cette affiche au format [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/empower-remote-workers.pdf) ou [PowerPoint](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/empower-remote-workers.pptx) et l’imprimer sur du papier au format lettre, légal ou tabloïd (11 x 17).
 
 Procédez comme suit pour sécuriser et optimiser l’accès aux serveurs, aux données et aux services cloud de votre organisation et activer la productivité maximale des employés.
 
