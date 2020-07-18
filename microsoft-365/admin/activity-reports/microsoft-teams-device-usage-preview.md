@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenez des informations sur les applications Microsoft teams utilisées dans votre organisation en obtenant le rapport d’utilisation des applications Microsoft teams à partir des rapports Microsoft 365.
-ms.openlocfilehash: 3599ba24e8df9406b5e0bc93d934604880ca4c39
-ms.sourcegitcommit: 42b618231e9f608f3ae7226a313b0366601d0ea2
+ms.openlocfilehash: 4945e74d91e12c1e846de3e4bd8393220349d608
+ms.sourcegitcommit: a50260b7c5be7374e8e2bea19cc08406ef51ac47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 07/17/2020
-ms.locfileid: "45158856"
+ms.locfileid: "45167352"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-teams-device-usage---preview"></a>Rapports Microsoft 365 dans le centre d’administration-utilisation de l’appareil Microsoft teams-aperçu
 
@@ -57,5 +57,4 @@ Vous pouvez afficher l’utilisation de l’appareil dans le rapport aperçu des
 |Web  <br/> |Sélectionné si l’utilisateur était actif dans le client Web teams sur les appareils.|
 |Date de la dernière activité (UTC)  <br/> |Date (UTC) de la dernière date à laquelle l’utilisateur a participé à une activité de teams.  <br/> |
 |Est sous licence|Sélectionné si l’utilisateur est titulaire d’une licence pour utiliser Teams.|
-|Activité totale de teams|Nombre total d’activités teams sur la période sélectionnée. |
 |||

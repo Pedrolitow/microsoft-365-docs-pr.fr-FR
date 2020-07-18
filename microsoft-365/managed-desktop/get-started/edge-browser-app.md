@@ -4,14 +4,18 @@ description: ''
 keywords: navigateur, bureau géré Microsoft, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
+ms.author: jaimeo
+manager: laurawi
+audience: ITpro
+ms.topic: article
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: f4bc5f85b21148c5a923ca1fc18879a193191c4b
-ms.sourcegitcommit: 09a500a44d8723f8f2be87d9ad4ce7e453c5192b
+ms.openlocfilehash: 916ddaea2bc91c56944d4561771c1e807447d604
+ms.sourcegitcommit: 63887d742c59cc660fc85537b335e98a9dc66fbe
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "45094785"
+ms.lasthandoff: 07/18/2020
+ms.locfileid: "45170670"
 ---
 # <a name="new-microsoft-edge-app"></a>Nouvelle application Microsoft Edge
 
@@ -38,7 +42,7 @@ La sécurité Baseline de Microsoft Edge sur les périphériques de bureau gér�
 #### <a name="extension-installation-blocklist"></a>Blocage de l’installation des extensions
 **Valeur par défaut :** Tous les
 
-Microsoft Managed Desktop définit cette stratégie pour empêcher les extensions chrome d’être installées sur les points de terminaison gérés. Il existe des risksassociated connus avec le modèle d’extension chrome, notamment la protection contre la perte de données, la confidentialité et d’autres risques qui peuvent compromettre les appareils. 
+Microsoft Managed Desktop définit cette stratégie pour empêcher les extensions chrome d’être installées sur les points de terminaison gérés. Il existe des risques sassociated avec le modèle d’extension chrome, y compris la protection contre la perte de données, la confidentialité et d’autres risques qui peuvent compromettre les appareils. 
 
 #### <a name="allow-user-level-native-messaging-hosts-installed-without-admin-permissions"></a>Autoriser les hôtes de messagerie natifs au niveau utilisateur (installés sans autorisations d’administrateur)
 
@@ -119,7 +123,7 @@ Une fois cette stratégie appliquée, l’expérience de première exécution ig
 
 ## <a name="settings-you-manage"></a>Paramètres que vous gérez
 
-Vous pouvez déployer n’importe quel paramètre de serveur de pointe non décrit précédemment à l’aide du profil des modèles d’administration dans Microsoft Intune. Pour plus d’informations, reportez-vous à la rubrique [configure Microsoft Edge Policy Settings with Microsoft Intune](https://docs.microsoft.com/deployedge/configure-edge-with-intune). Si vous souhaitez évaluer une stratégie qui n’est pas actuellement incluse dans les modèles d’administration Microsoft Edge dans Intune, vous pouvez utiliser des paramètres personnalisés pour les appareils Windows 10 dans Intune.
+Vous pouvez déployer n’importe quel paramètre Microsoft Edge qui n’est pas décrit précédemment à l’aide du profil des modèles d’administration dans Microsoft Intune. Pour plus d’informations, reportez-vous à la rubrique [configure Microsoft Edge Policy Settings with Microsoft Intune](https://docs.microsoft.com/deployedge/configure-edge-with-intune). Si vous souhaitez évaluer une stratégie qui n’est pas actuellement incluse dans les modèles d’administration Microsoft Edge dans Intune, vous pouvez utiliser des paramètres personnalisés pour les appareils Windows 10 dans Intune.
 
 ### <a name="enabling-specific-chrome-extensions"></a>Activation d’extensions de chrome spécifiques
 

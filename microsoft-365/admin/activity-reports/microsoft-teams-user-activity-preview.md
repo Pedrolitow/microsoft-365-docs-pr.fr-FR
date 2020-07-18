@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment obtenir le rapport d’activité de l’utilisateur de Microsoft teams et obtenir des informations sur l’activité de teams dans votre organisation.
-ms.openlocfilehash: 6c4f8a2ae9e6e88a17b65e61547e03583d116fbd
-ms.sourcegitcommit: 42b618231e9f608f3ae7226a313b0366601d0ea2
+ms.openlocfilehash: 734a4dfd62160c2f4d29b8faffb3268a1962fe4f
+ms.sourcegitcommit: a50260b7c5be7374e8e2bea19cc08406ef51ac47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 07/17/2020
-ms.locfileid: "45158844"
+ms.locfileid: "45167340"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-teams-user-activity--preview"></a>Rapports Microsoft 365 dans le centre d’administration-activité de l’utilisateur Microsoft teams-aperçu
 
@@ -51,9 +51,9 @@ Vous pouvez afficher l’activité de l’utilisateur dans le rapport aperçu de
 |Nombre total de réunions   <br/> |Nombre de réunions en ligne auxquelles l’utilisateur a participé pendant la période spécifiée.  <br/> |
 |1:1 appels   <br/> | Nombre d’appels de 1:1 auxquels l’utilisateur a participé pendant la période spécifiée.  <br/> |
 |Date de la dernière activité (UTC)  <br/> |Dernière date à laquelle l’utilisateur a participé à une activité Microsoft Teams.<br/> |
-|Les réunions ont participé à la adhoc   <br/> | Nombre de réunions adhoc auxquelles l’utilisateur a participé pendant la période spécifiée.  <br/> |
-|Réunions organisées ad hoc <br/> |Nombre de réunions adhoc que l’utilisateur a organisées pendant la période spécifiée. <br/>|
+|Les réunions ont participé à la adhoc   <br/> | Nombre de réunions non planifiées sur le calendrier auquel l’utilisateur a participé pendant la période spécifiée.  <br/> |
+|Réunions organisées ad hoc <br/> |Nombre de réunions non planifiées dans le calendrier que l’utilisateur a organisées pendant la période spécifiée. <br/>|
 |Réunions organisées planifiées  <br/> |Nombre de réunions planifiées qu’un utilisateur a organisé pendant la période spécifiée.  <br/> |
 |Est sous licence |Sélectionné si l’utilisateur est titulaire d’une licence pour utiliser Teams.|
-|Autres activités|Nombre d’autres activités d’équipe effectuées par l’utilisateur. |
+|Autres activités|L’utilisateur est considéré comme actif mais a une valeur zéro pour les messages de conversation, les appels 1:1, les messages de canal, le nombre total de réunions et les réunions organisées. Exemples d’actions lorsque le client Microsoft teams est activé au premier plan, les actions ont été effectuées dans la zone de message composer, des toasts apparaissent dans le client Microsoft Teams, les bannières apparaissent dans le client Microsoft Teams, etc. |
 |||
