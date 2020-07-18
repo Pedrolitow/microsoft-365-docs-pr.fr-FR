@@ -1,5 +1,5 @@
 ---
-title: Découvrir les stratégies de rétention pour Teams
+title: Découvrir la rétention pour Teams
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -17,24 +17,24 @@ search.appverid:
 - MOE150
 - MET150
 description: Découvrir les stratégies de rétention qui s’appliquent à Microsoft Teams.
-ms.openlocfilehash: 8e163aa9f5072e0b2685521fcae37f130d132473
-ms.sourcegitcommit: 3951147f74510e2ead6c11ceab92854f0937426b
+ms.openlocfilehash: 11e374dac4e1e0a13d3bdbc642922dca1b8954f4
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "45083492"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45127381"
 ---
-# <a name="learn-about-retention-policies-for-microsoft-teams"></a>Découvrir les stratégies de rétention pour Microsoft Teams
+# <a name="learn-about-retention-for-microsoft-teams"></a>En savoir plus sur la rétention dans Microsoft Teams
 
->*[Guide pour la sécurité et la conformité des licences Microsoft 365](https://aka.ms/ComplianceSD).*
+>*[Guide de sécurité et conformité pour les licences Microsoft 365](https://aka.ms/ComplianceSD).*
 
-Les informations contenues dans cet article complètent l’article [Découvrir les stratégies de rétention](retention-policies.md) car elles contiennent des informations spécifiques à Microsoft Teams.
+Les informations contenues dans cet article complètent l’article [Découvrir la rétention](retention.md) car elles contiennent des informations spécifiques à Microsoft Teams.
 
-## <a name="how-a-retention-policy-works-with-microsoft-teams"></a>Fonctionnement d’une stratégie de rétention avec Microsoft Teams
+## <a name="how-retention-works-with-microsoft-teams"></a>Fonctionnement de la rétention avec Microsoft Teams
 
 Vous pouvez utiliser une stratégie de rétention pour conserver des conversations et des messages de canal dans Teams. Les conversations Teams sont stockées dans un dossier masqué de la boîte aux lettres de chaque utilisateur participant à la conversation. Les messages de canal Teams sont stockés dans un dossier masqué similaire dans la boîte aux lettres de groupe de l’équipe. 
 
-Il est important de comprendre que Teams utilise un service de conversation Azure qui stocke également ces données. Par défaut, ce service stocke les données sans limite de durée. C’est pour cette raison qu’il est vivement recommandé d’utiliser les emplacements Teams pour conserver et supprimer ces données Teams. Le fait d’utiliser les emplacements Teams supprime les données de manière définitive dans les boîtes aux lettres Exchange et le service de conversation Azure sous-jacent. Si vous souhaitez en savoir plus, consultez la page [ Sécurité et conformité dans Microsoft Teams](https://go.microsoft.com/fwlink/?linkid=871258) et plus précisément, la section [Architecture de protection des informations](https://docs.microsoft.com/MicrosoftTeams/security-compliance-overview#information-protection-architecture).
+Il est important de comprendre que Teams utilise un service de conversation Azure qui stocke également ces données. Par défaut, ce service stocke les données sans limite de durée. C’est pour cette raison qu’il est recommandé de créer une stratégie de rétention qui utilise les emplacements Teams pour conserver et supprimer ces données Teams. Cette stratégie de rétention peut supprimer les données de manière définitive dans les boîtes aux lettres Exchange et le service de conversation Azure sous-jacent. Si vous souhaitez en savoir plus, consultez la page [ Sécurité et conformité dans Microsoft Teams](https://go.microsoft.com/fwlink/?linkid=871258) et plus précisément, la section [Architecture de protection des informations](https://docs.microsoft.com/MicrosoftTeams/security-compliance-overview#information-protection-architecture).
 
 Les conversations et les messages de canal Teams ne sont pas affectés par les stratégies de rétention configurées pour les boîtes aux lettres des utilisateurs et des groupes. Même si les conversations et les messages de canal Teams sont stockés dans Exchange, ces données Teams sont incluses uniquement par une stratégie de rétention configurée pour les **messages de canal Teams** et les emplacements des **conversations Teams**.
 
@@ -71,27 +71,9 @@ Lorsque la stratégie de rétention consiste à conserver uniquement ou à suppr
 
 ## <a name="skype-for-business-and-teams-interop-chats"></a>Interopérabilité des conversations Skype Entreprise et Teams
 
-Le même flux fonctionne pour les conversations interopérables Skype Entreprise et Teams. Lorsqu’une conversation Skype Entreprise intervient dans Teams, celle-ci devient un message de la conversation Teams et est stockée dans la boîte aux lettres appropriée. Les stratégies de conservation Teams appliqueront ces messages du fil de conversation Teams. 
+Lorsqu’une conversation Skype Entreprise intervient dans Teams, celle-ci devient un message de la conversation Teams et est stockée dans la boîte aux lettres appropriée. Les stratégies de conservation Teams appliqueront ces messages du fil de conversation Teams. 
 
 Cependant, si l’historique des conversations est activé pour Skype Entreprise et par le côté client Skype Entreprise, celui-ci est enregistré dans une boîte aux lettres. Ces données de conversation ne sont pas gérées par une stratégie de rétention Teams. Pour ce contenu, utilisez une stratégie de rétention configurée pour Skype entreprise.
-
-## <a name="additional-retention-policies-needed-to-support-teams"></a>Stratégies de rétention supplémentaires requises pour la prise en charge de Teams
-
-Teams n’est pas seulement des conversations et des messages de canaux. Si vous avez des équipes créées à partir d’un groupe Microsoft 365 (anciennement groupe Office 365), vous devez également configurer une stratégie de rétention qui inclut ce groupe Microsoft 365 à l’aide des **Groupes Office 365** emplacement. Cette stratégie de rétention s’applique au contenu de la boîte aux lettres, du site et des fichiers du groupe.
-
-Si le site d’équipe n’est pas connecté à un groupe Microsoft 365, vous avez besoin d’une stratégie de rétention qui inclut les **sites SharePoint** ou **comptes OneDrive** emplacements pour conserver et supprimer des fichiers dans teams :
-
-- Les fichiers partagés dans une conversation sont stockés sur le compte OneDrive de l’utilisateur qui a partagé le fichier. 
-
-- Les fichiers chargés dans les canaux sont stockés sur le site SharePoint associé à l’équipe.
-
-> [!TIP]
-> Vous pouvez appliquer une stratégie de rétention aux fichiers d’une équipe spécifique uniquement lorsque celle-ci n’est pas connectée à un groupe Microsoft 365 en sélectionnant le site SharePoint pour l’équipe, ainsi que les comptes OneDrive des utilisateurs au sein de Teams.
-
-Il est possible qu’une stratégie de conservation appliquée aux groupes Microsoft 365, sites SharePoint ou comptes OneDrive supprime un fichier référencé dans une conversation ou un message de canal Teams avant la suppression de ces messages. Dans ce scénario, le fichier s’affiche encore dans le message Teams, mais lorsque les utilisateurs sélectionnent le fichier, un message d’erreur « fichier introuvable » s’affiche. Ce comportement n’est pas spécifique aux stratégies de rétention et peut également se produire si un utilisateur supprime manuellement un fichier à partir de SharePoint ou de OneDrive.
-
-> [!NOTE]
-> Une stratégie de rétention qui inclut les messages de canal ou les conversations Teams peut uniquement inclure des emplacements Teams. Pour conserver ou supprimer d’autres contenus pris en charge par les équipes, vous devez créer une stratégie de rétention distincte.
 
 ## <a name="meetings-and-external-users"></a>Réunions et utilisateurs externes
 
@@ -113,11 +95,11 @@ Si l’utilisateur a stocké des fichiers dans Teams, consultez la [section équ
 
 ## <a name="limitations"></a>Limites
 
-Nous travaillons sans cesse afin d’optimiser les fonctionnalités de rétention dans Teams. En attendant, voici quelques limitations importantes dont vous devez tenir compte :
+Nous travaillons sans cesse afin d’optimiser les fonctionnalités de rétention dans Teams. En attendant, voici quelques limitations à prendre en compte lors de l’utilisation de la rétention pour les messages et conversations de canal Teams :
   
 - **Teams nécessite une stratégie de rétention distincte**. Lorsque vous créez une stratégie de rétention et activez les emplacements Teams, tous les autres emplacements sont désactivés. Une stratégie de rétention qui inclut Teams ne peut inclure que Teams et aucun autre emplacement.
 
-- **Teams n’est pas inclus dans une stratégie à l’échelle de l’organisation**. Si vous créez une stratégie à l’échelle de l’organisation, Teams n’est pas inclus, car il nécessite une stratégie de rétention distincte.
+- **Teams n’est pas inclus dans une stratégie à l’échelle de l’organisation**. Si vous créez une stratégie à l’échelle de l’organisation, les messages de canal et les conversations Teams ne sont pas inclus, car ils nécessitent une stratégie de rétention distincte.
 
 - **Teams ne prend pas en charge les rétentions avancées**. Lorsque vous créez une stratégie de rétention, si vous choisissez les [Paramètres avancés permettant d’identifier du contenu qui répond à certaines conditions](create-retention-policies.md#advanced-settings-to-identify-content-that-meets-specific-conditions), les emplacements Teams ne sont pas disponibles. Pour le moment, la rétention dans Teams s’applique à l’ensemble du contenu des conversations et des messages de canal lorsque vous sélectionnez ces emplacements.
 
@@ -135,14 +117,6 @@ Nous travaillons sans cesse afin d’optimiser les fonctionnalités de rétentio
     
     - Lorsque vous sélectionnez **Choisir les utilisateurs** pour l’emplacement des **conversations Teams**, les invités et les utilisateurs qui n’utilisent pas de boîte aux lettres peuvent être s’afficher. Les stratégies de rétention ne sont pas conçues pour ces utilisateurs. Ne les sélectionnez pas.
 
-## <a name="how-to-configure-a-retention-policy-for-microsoft-teams"></a>Comment configurer une stratégie de rétention pour Microsoft Teams
+## <a name="configuration-guidance"></a>Instructions de configuration
 
-Suivez les instructions pour [Créer et configurer des stratégies de rétention](create-retention-policies.md) et pour la page **Choisir les emplacements** de l’assistant, sélectionnez l’une des options suivantes :
-
-- **Choisir des emplacements spécifiques** > **Messages du canal Teams** et **Conversations Teams**
-
-Une stratégie de rétention qui s’applique à Teams peut utiliser un [Verrouillage de conservation](retention-policies.md#use-preservation-lock-to-comply-with-regulatory-requirements), ce qui peut être nécessaire pour des raisons réglementaires.
-
-## <a name="related-information"></a>Informations connexes
-
-[Stratégies de rétention dans Microsoft Teams](https://docs.microsoft.com/microsoftteams/retention-policies)
+Si vous êtes prêt à configurer la rétention dans Microsoft 365, voir [Prise en main des stratégies de rétention et des étiquettes de rétention](get-started-with-retention.md).

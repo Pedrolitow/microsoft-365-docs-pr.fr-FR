@@ -16,37 +16,31 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Découvrez le comportement de rétention qui s’applique spécifiquement à la messagerie électronique et aux dossiers publics Exchange.
-ms.openlocfilehash: 57f0bf7737522b0435b076fee46edd1736efd856
-ms.sourcegitcommit: 5b769f74bcc76ac8d38aad815d1728824783cd9f
+description: Découvrir le fonctionnement de la rétention pour Exchange.
+ms.openlocfilehash: e1860b9ff9c521a5a6a61c58d822a2a893570e99
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "45080091"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45127441"
 ---
-# <a name="learn-about-retention-policies-for-exchange"></a>Découvrir les stratégies de rétention pour Exchange
+# <a name="learn-about-retention-for-exchange"></a>Découvrir la rétention pour Exchange
 
-Les informations contenues dans cet article complètent l’article [Découvrir les stratégies de rétention](retention-policies.md) car elles contiennent des informations spécifiques à Exchange.
+Les informations contenues dans cet article complètent l’article [Découvrir la rétention](retention.md) car elles contiennent des informations spécifiques à Exchange.
 
-## <a name="how-a-retention-policy-works-with-exchange"></a>Fonctionnement d’une stratégie de rétention avec Exchange
-
-Pour le courrier, le calendrier et d’autres éléments de boîte aux lettres d’un utilisateur, une stratégie de rétention est appliquée au niveau d’une boîte aux lettres.
-
-Pour les dossiers publics, une stratégie de rétention est appliquée à tous les dossiers publics et non au niveau du dossier ou de la boîte aux lettres.
-
-Lorsque vous configurez une stratégie de rétention pour ces emplacements, les éléments de courrier suivants sont inclus : les messages (y compris les brouillons) avec des pièces jointes, des tâches et des éléments de calendrier lorsqu’ils ont une date de fin et des notes. Les contacts et les tâches et les éléments de calendrier qui n’ont pas de date de fin ne sont pas inclus. Les autres éléments stockés dans une boîte aux lettres, tels que Skype et Teams, ont été inclus dans leur propre stratégie de rétention.
+## <a name="how-retention-works-for-exchange"></a>Fonctionnement de la rétention pour Exchange
 
 Les boîtes aux lettres et les dossiers publics utilisent le même dossier [Éléments récupérables ](https://docs.microsoft.com/exchange/security-and-compliance/recoverable-items-folder/recoverable-items-folder)pour conserver des éléments. Seules les personnes disposant des autorisations eDiscovery peuvent afficher le dossier Éléments récupérables d’un autre utilisateur.
   
 Par défaut, lorsqu’un utilisateur supprime un message dans un dossier autre que le dossier Éléments supprimés, le message est déplacé vers le dossier Éléments supprimés. Lorsqu’un utilisateur supprime un élément dans le dossier Éléments supprimés, le message est déplacé vers le dossier Éléments récupérables. En outre, une personne peut supprimer de façon réversible, un élément (MAJ + SUPPR) dans n’importe quel dossier, ce qui permet de passer outre le dossier Éléments supprimés et de placer l’élément directement dans le dossier Éléments récupérables.
   
-Lorsque vous appliquez une stratégie de rétention à un emplacement Exchange, un travail du minuteur évalue régulièrement les éléments du dossier Éléments récupérables. Si un élément ne correspond pas aux règles d’au moins une stratégie de rétention, l’élément est supprimé définitivement du dossier Éléments récupérables.
+Lorsque vous appliquez des paramètres de rétention à des données Exchange, un travail du minuteur évalue régulièrement les éléments du dossier Éléments récupérables. Si un élément ne correspond pas aux règles d’au moins une stratégie de rétention ou une étiquette de rétention, l’élément est supprimé définitivement du dossier Éléments récupérables.
 
 L’exécution du travail du minuteur peut prendre jusqu’à sept jours, et l’emplacement Exchange doit contenir au moins 10 Mo.
   
 Lorsqu’un utilisateur tente de modifier les propriétés d’un élément de la boîte aux lettres (l’objet, le corps, les pièces jointes, les expéditeurs et destinataires ou la date d’envoi ou de réception d’un message), une copie de l’élément d’origine est enregistré dans le dossier Éléments récupérables avant la validation de la modification. Cette action se produit à chaque modification ultérieure. À la fin de la période de rétention, les copies dans le dossier Éléments récupérables sont supprimées définitivement.
 
-Une fois qu’une stratégie de rétention est attribuée à une boîte aux lettres ou à un dossier public, les chemins d’accès du contenu dépendent de la stratégie de rétention qui soit conserve et supprime le contenu, soit le conserve uniquement soit le supprime uniquement.
+Une fois que les paramètres de rétention sont appliqués à du contenu Exchange, les chemins d’accès au contenu sont fonction des paramètres de rétention qui consistent à conserver et à supprimer, à conserver uniquement ou à supprimer uniquement.
 
 Lorsque les paramètres de la stratégie de rétention sont définis sur conserver et supprimer :
 
@@ -70,24 +64,10 @@ Lorsque les paramètres de la stratégie de rétention sont définis sur conserv
 
 2. **Si l’élément est supprimé** pendant la période de rétention : l’élément est placé immédiatement dans le dossier Éléments récupérables. Si un utilisateur supprime l’élément à partir de là ou vide le dossier Éléments récupérables, l’élément est définitivement supprimé. Dans le cas contraire, l’élément est définitivement supprimé après avoir été placé dans le dossier Éléments récupérables pendant 14 jours. 
 
-## <a name="excluding-specific-types-of-exchange-items-from-a-retention-policy"></a>Exclusion de types spécifiques d’éléments Exchange d’une stratégie de rétention
-
-PowerShell vous permet d’exclure des types spécifiques d’éléments Exchange d’une stratégie de rétention lorsque les paramètres de rétention sont définis pour la conservation uniquement. Par exemple, vous pouvez exclure les messages vocaux, les conversations par messagerie instantanée et d’autres contenus Skype Entreprise Online dans les boîtes aux lettres. Vous pouvez également exclure les éléments de calendrier, de note et de tâche. Cette fonctionnalité n’est disponible qu’en utilisant PowerShell. Elle n’est pas disponible lorsque vous créez une stratégie de rétention à l’aide de l’Assistant dans le Centre de conformité Microsoft 365.
-  
-Pour exclure les types sélectionnés pour les éléments Exchange dans une stratégie de rétention, utilisez le paramètre  `ExcludedItemClasses` avec les cmdlets [New-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/new-retentioncompliancerule) et [Set-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/set-retentioncompliancerule).
-
-Pour utiliser les cmdlets des stratégies de rétention, vous devez tout d’abord vous [connecter au Centre de sécurité et conformité PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell?view=exchange-ps).
-
 ## <a name="when-a-user-leaves-the-organization"></a>Lorsqu’un utilisateur quitte l’organisation 
 
-Si un utilisateur quitte votre organisation et que sa boîte aux lettres est incluse dans une stratégie de rétention, celle-ci devient inactive lorsque le compte Microsoft 365 de l’utilisateur est supprimé. Le contenu d’une boîte aux lettres inactive reste soumis à toute stratégie de rétention qui a été appliquée à la boîte aux lettres avant sa désactivation, et le contenu est accessible aux recherches eDiscovery. Pour plus d’informations, consultez [Boîtes aux lettres inactives dans Exchange Online](inactive-mailboxes-in-office-365.md). 
+Si un utilisateur quitte votre organisation et que sa boîte aux lettres est incluse dans une stratégie de rétention, celle-ci devient inactive lorsque le compte Microsoft 365 de l’utilisateur est supprimé. Le contenu d’une boîte aux lettres inactive reste soumis à toute stratégie de rétention qui a été appliquée à la boîte aux lettres avant sa désactivation, et le contenu est accessible aux recherches eDiscovery. Pour plus d’informations, consultez [Boîtes aux lettres inactives dans Exchange Online](inactive-mailboxes-in-office-365.md).
 
-## <a name="how-to-configure-a-retention-policy-for-exchange"></a>Comment configurer une stratégie de rétention pour Exchange
+## <a name="configuration-guidance"></a>Instructions de configuration
 
-Suivez les instructions pour [créer et configurer des stratégies de rétention](create-retention-policies.md) et pour la page **Choisir les emplacements** de l’assistant, sélectionnez l’une des options suivantes :
-
-- **Appliquer la stratégie uniquement au contenu dans les courriers électroniques Exchange, les dossiers publics, les groupes Office 365, les documents OneDrive et SharePoint**
-
-- **Choisir des emplacements spécifiques** > **Messagerie Exchange**, **Dossiers publics Exchange** et **groupes Office 365**.
-
-Même si un groupe Microsoft 365 possède une boîte aux lettres Exchange, une stratégie de rétention qui inclut l’ensemble de l’emplacement de la **messagerie Exchange** n’inclut pas le contenu des boîtes aux lettres du groupe Microsoft 365. Pour conserver le contenu de ces boîtes aux lettres, sélectionnez l’emplacement **groupes Office 365**.
+Si vous êtes prêt à configurer la rétention dans Microsoft 365, voir [Prise en main des stratégies de rétention et des étiquettes de rétention](get-started-with-retention.md).

@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Découvrez comment identifier, surveiller et protéger automatiquement les informations sensibles de votre organisation dans Office 365.
-ms.openlocfilehash: 93d0eaf882569b6645c98699f83ad19a25af4864
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 8d507a32a6f36555eabfa0216febdb167ad4241c
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44817943"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45127531"
 ---
 # <a name="overview-of-data-loss-prevention"></a>Vue d’ensemble de la protection contre la perte de données
 <!-- this topic needs to be split into smaller, more coherent ones. It is confusing as it is. -->
@@ -337,11 +337,11 @@ Pour ces raisons, les conseils pour la création de règles avec des précisions
     
 ## <a name="using-a-retention-label-as-a-condition-in-a-dlp-policy"></a>Utilisation d’une étiquette de rétention comme condition dans une stratégie DLP
 
-Lorsque vous utilisez une [étiquette de rétention](labels.md) précédemment créée et publiée comme condition dans une stratégie DLP, vous devez tenir compte des éléments suivants :
+Lorsque vous utilisez une [étiquette de rétention](retention.md#retention-labels) précédemment créée et publiée comme condition dans une stratégie DLP, vous devez tenir compte des éléments suivants :
 
-- Vous devez avoir déjà créé, publié et appliqué l’étiquette de rétention avant de tenter de l’utiliser en tant que condition dans une stratégie DLP.
-- La synchronisation d’étiquettes de rétention peut prendre jusqu’à une journée et il faut compter jusqu’à sept jours pour qu’elles s’appliquent automatiquement après leur création et leur publication. Voir le [Délai d’activation des étiquettes de rétention](create-retention-labels.md#how-long-it-takes-for-retention-labels-to-take-effect) pour plus d’informations.
-- L’utilisation d’une étiquette de rétention dans une stratégie ***est prise en charge uniquement pour des éléments SharePoint Online et OneDrive Entreprise***.
+- L’étiquette de rétention doit être déjà créée et publiée avant de tenter de l’utiliser en tant que condition dans une stratégie DLP.
+- La synchronisation des étiquettes de rétention publiées peut prendre de un à sept jours. Pour plus d’informations, voir [Lorsque les étiquettes de rétention sont disponibles à l’application](create-apply-retention-labels.md#when-retention-labels-become-available-to-apply) pour les étiquettes de rétention publiées dans une stratégie de rétention, et [Temps nécessaire pour la prise d’effet des étiquettes de rétention](apply-retention-labels-automatically.md#how-long-it-takes-for-retention-labels-to-take-effect) pour les étiquettes de rétention publiées automatiquement.
+- L’utilisation d’une étiquette de rétention dans une stratégie **est prise en charge uniquement pour des éléments SharePoint et OneDrive**.
 
   ![Étiquettes comme condition](../media/5b1752b4-a129-4a88-b010-8dcf8a38bb09.png)
 
@@ -360,7 +360,7 @@ Vous pouvez actuellement utiliser uniquement une étiquette de rétention comme 
 
 Plusieurs fonctionnalités peuvent être appliquées à du contenu comportant des informations sensibles :
   
-- Une [étiquette de rétention](labels.md#applying-a-retention-label-automatically-based-on-conditions) et une [stratégie de rétention](retention-policies.md) peuvent toutes deux permettre d’appliquer des mesures de **rétention** à ce type de contenu. 
+- Une [étiquette de rétention et une stratégie de rétention](retention.md) peuvent toutes deux permettre d’appliquer des mesures de **rétention** à ce type de contenu. 
     
 - Et une stratégie DLP peut permettre d’y appliquer des mesures de **protection**. Avant l’application de ces mesures, une stratégie DLP peut exiger que d’autres conditions soient remplies en plus du contenu comportant une étiquette. 
     
