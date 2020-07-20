@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Configurez des étiquettes de confidentialité pour le chiffrement qui protège vos données en limitant l’accès et l’utilisation.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 35dfc642aee2e4d602aeb4bc1ea689dbc2589735
-ms.sourcegitcommit: 584e2e9db8c541fe32624acdca5e12ee327fdb63
+ms.openlocfilehash: 5bf859cd5abe0dcb36c02c8355cbfa58418b3138
+ms.sourcegitcommit: e891c7c25f351f10f250af3f483f68594976ddc9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44678980"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "45153697"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>Restreindre l'accès au contenu grâce à la mise en place d'un chiffrement par les étiquettes de confidentialité 
 
@@ -166,7 +166,7 @@ Lorsque vous attribuez des autorisations, vous pouvez choisir :
     > [!NOTE]
     > Si vous indiquez le domaine d’une organisation qui utilise Azure Active Directory, vous ne pouvez pas limiter l’accès à ce domaine spécifique. Au lieu de cela, tous les domaines vérifiés dans Azure Active Directory sont automatiquement inclus pour le client possédant le nom de domaine indiqué.
 
-Lorsque vous choisissez tous les membres de client ou parcourez l’annuaire, les utilisateurs ou les groupes doivent avoir une adresse e-mail.
+Lorsque vous choisissez tous les utilisateurs et groupes dans votre organisation ou parcourez l’annuaire, les utilisateurs ou les groupes doivent avoir une adresse e-mail.
 
 Nous vous recommandons d’utiliser des groupes plutôt que des utilisateurs. En effet, avec cette stratégie, votre configuration reste plus simple.
 
@@ -216,9 +216,9 @@ Vous pouvez utiliser ces options pour permettre aux utilisateurs d’attribuer d
 
 - Dans Word, PowerPoint et Excel, l’utilisateur est invité à sélectionner ses propres niveaux d’autorisation pour des utilisateurs, des groupes ou des organisations spécifiques. 
     > [!NOTE]
-    > Cette option pour Word, PowerPoint et Excel est prise en charge par le client de l’étiquetage unifié d’Azure Information Protection. Pour les applications utilisant l’étiquetage intégré, la prise en charge est actuellement disponible dans la [Version d'évaluation pour Windows et Mac](sensitivity-labels-office-apps.md#sensitivity-label-capabilities-in-word-excel-and-powerpoint). 
+    > Cette option pour Word, PowerPoint et Excel est prise en charge par le client de l’étiquetage unifié d’Azure Information Protection. Pour les applications qui utilisent l’étiquetage intégré, [vérifiez quelles sont celles qui le prennent en charge](sensitivity-labels-office-apps.md#sensitivity-label-capabilities-in-word-excel-and-powerpoint).
     > 
-    > Si cette option est sélectionnée, mais n’est pas prise en charge pour l’application d’un utilisateur, celle-ci ne s’affiche pas pour l’utilisateur, ou (actuellement disponible dans la version d’évaluation pour iOS et Android) l’étiquette s’affiche pour assurer la cohérence, mais elle ne peut pas être appliquée avec un message d’explication aux utilisateurs.
+    > Si cette option est sélectionnée, mais n’est pas prise en charge pour l’application d’un utilisateur, celle-ci ne s’affiche pas pour l’utilisateur, ou l’étiquette s’affiche pour assurer la cohérence, mais elle ne peut pas être appliquée avec un message d’explication aux utilisateurs.
 
 Lorsque les options sont prises en charge, utilisez le tableau suivant pour déterminer le moment où les utilisateurs voient l’étiquette de confidentialité :
 
@@ -297,13 +297,13 @@ Cette étiquette ne peut pas être utilisée pour des courriers électroniques.
 
 4. Sélectionnez **Attribuer des autorisations**.
 
-3. Dans le volet **Attribuer des autorisations**, sélectionnez **Ajouter ces adresses e-mail ou domaines**.
+3. Dans le volet **Attribuer des autorisations**, sélectionnez **Ajouter des adresses de courrier ou des domaines spécifiques**.
 
 4. Dans la zone de texte, entrez le nom de domaine de l’autre organisation, par exemple, **fabrikam.com**. Puis sélectionnez **Ajouter**.
 
-5. Sélectionnez **Choisir des autorisations à partir des autorisations existantes ou personnalisées**.
+5. Sélectionnez **Choisir les autorisations**.
 
-6. Dans le volet **Sélectionner des autorisations à partir des autorisations existantes ou personnalisées**, sélectionnez la zone déroulante, puis sélectionnez **Visionneuse**, et **Enregistrer**.
+6. Dans le volet **Choisir les autorisations**, sélectionnez la zone déroulante, puis sélectionnez **Visionneuse** et **Enregistrer**.
 
 6. De nouveau dans le volet **Attribuer des autorisations**, sélectionnez **Enregistrer**.
 
@@ -318,13 +318,13 @@ Les nouveaux utilisateurs que vous ajoutez pourront ouvrir des documents et des 
 
 2. Sélectionnez **Attribuer des autorisations**.
 
-3. Dans le volet **Attribuer des autorisations**, sélectionnez **Ajouter ces adresses e-mail ou domaines**.
+3. Dans le volet **Attribuer des autorisations**, sélectionnez **Ajouter des adresses de courrier ou des domaines spécifiques**.
 
 4. Dans la zone de texte, entrez l’adresse de courrier du premier utilisateur (ou groupe) à ajouter, puis sélectionnez **Ajouter**.
 
-5. Sélectionnez **Choisir des autorisations à partir des autorisations existantes ou personnalisées**.
+5. Sélectionnez **Choisir les autorisations**.
 
-6. Dans le volet **Sélectionner des autorisations à partir des autorisations présentes ou personnalisées**, sélectionnez les autorisations pour cet utilisateur (ou ce groupe), puis sélectionnez **Enregistrer**.
+6. Dans le volet **Choisir les autorisations**, sélectionnez les autorisations pour cet utilisateur (ou ce groupe), puis sélectionnez **Enregistrer**.
 
 7. De nouveau dans le volet **Attribuer des autorisations**, répétez les étapes 3 à 6 pour chaque utilisateur (ou groupe) que vous souhaitez ajouter à cette étiquette. Puis cliquez sur **Enregistrer**.
 
@@ -345,11 +345,11 @@ Utilisez seulement cette configuration lorsque vous n’avez pas besoin de restr
 
 4. Dans le volet **Attribuer des autorisations**, sélectionnez **Ajouter des utilisateurs authentifiés**. 
     
-    Dans le cas des **Utilisateurs et groupes**, vous remarquez que **AuthenticatedUsers** est automatiquement ajouté. Cette valeur ne peut pas être modifiée, mais vous pouvez la supprimer, ce qui annule la sélection **Ajouter des utilisateurs authentifiés**.
+    Dans le cas des **Utilisateurs et groupes**, vous remarquez que **Utilisateurs authentifiés** est automatiquement ajouté. Cette valeur ne peut pas être modifiée, mais vous pouvez la supprimer, ce qui annule la sélection **Ajouter des utilisateurs authentifiés**.
 
-5. Sélectionnez **Choisir des autorisations à partir des autorisations existantes ou personnalisées**.
+5. Sélectionnez **Choisir les autorisations**.
 
-6. Dans le volet **Sélectionner des autorisations à partir des autorisations présentes ou personnalisées**, sélectionnez la zone déroulante, puis sélectionnez les autorisations souhaitées, et **Enregistrer**.
+6. Dans le volet **Choisir les autorisations**, sélectionnez la zone déroulante, puis sélectionnez les autorisations souhaitées et **Enregistrer**.
 
 7. De nouveau dans le volet **Attribuer des autorisations**, sélectionnez **Enregistrer**.
 
