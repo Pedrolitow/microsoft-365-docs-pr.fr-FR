@@ -15,12 +15,12 @@ ms.custom:
 localization_priority: Priority
 f1.keywords: NOCSH
 description: Dans cet article, vous allez découvrir les options à votre disposition pour créer un environnement de partage d’invités sécurisé dans Microsoft 365.
-ms.openlocfilehash: 9997fee5c12b54642304270e379cd09ca75b5033
-ms.sourcegitcommit: 5e8901e7e571f20ede04f460bd3e7077dda004ca
+ms.openlocfilehash: 4d7c036cccade88bfcd013fe4b31bf4cd02b7b34
+ms.sourcegitcommit: a50260b7c5be7374e8e2bea19cc08406ef51ac47
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "44874893"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "45167364"
 ---
 # <a name="create-a-secure-guest-sharing-environment"></a>Créer un environnement de partage d’invités sécurisé
 
@@ -53,10 +53,12 @@ Pour configurer l'authentification multifacteur pour les invités, procédez com
 2. Dans le panneau **Accès conditionnel – Stratégies**, cliquez sur **Nouvelle stratégie**.
 3. Dans le champ **Nom**, tapez *Invité MFA*.
 4. Sous **Affectations**, cliquez sur **Utilisateurs et groupes**.
-5. Dans le panneau **Utilisateurs et groupes**, sélectionnez **Sélectionner Utilisateurs et groupes**, activez la case à cocher **Tous les invités et utilisateurs externes**, puis cliquez sur **Terminé**.
-4. Sous **Contrôles d’accès**, cliquez sur **Accorder**.
-5. Dans le panneau **Accorder**, activez la case à cocher **Exiger une authentification multifacteur**, puis cliquez sur **Sélectionner**.
-6. Dans le panneau **Nouveau**, sous **Activer la stratégie**, cliquez sur **Activer**, puis sur **Créer**.
+5. Dans le panneau **Utilisateurs et groupes**, sélectionnez **Sélectionner Utilisateurs et groupes**, activez la case à cocher **Tous les invités et utilisateurs externes**.
+6. Sous **Affectations**, cliquez sur **Actions ou applications Cloud**.
+7. Dans le panneau **Actions ou applications Cloud**, sélectionnez **Toutes les applications Cloud** sous l’onglet **Inclure**.
+8. Sous **Contrôles d’accès**, cliquez sur **Accorder**.
+9. Dans le panneau **Accorder**, activez la case à cocher **Exiger une authentification multifacteur**, puis cliquez sur **Sélectionner**.
+10. Dans le panneau **Nouveau**, sous **Activer la stratégie**, cliquez sur **Activer**, puis sur **Créer**.
 
 Les invités doivent maintenant s'inscrire à l'authentification multifacteur avant de pouvoir accéder au contenu, aux sites ou aux équipes partagés.
 
