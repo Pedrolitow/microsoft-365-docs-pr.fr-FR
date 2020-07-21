@@ -12,18 +12,18 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: c2b1a229bad5bc82f61227bd5a273af1aefb3481
-ms.sourcegitcommit: 2e9e309ec09e5275ac6b3b425fba48a9ffce8eb2
+ms.openlocfilehash: 0997ecc83ad7f97d1fb7273bcac8b026f6432091
+ms.sourcegitcommit: a08103bc120bdec7cfeaf67c1be4e221241e69ad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44900808"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "45199507"
 ---
 # <a name="insider-risk-management-users-dashboard"></a>Tableau de bord des utilisateurs de gestion des risques Insiders
 
 Le **tableau de bord utilisateurs** est un outil important dans le flux de travail de gestion des risques inSided et permet aux enquêteurs et analystes de mieux comprendre les activités liées aux risques. Ce tableau de bord offre des vues et des fonctionnalités de gestion pour répondre aux besoins administratifs entre la création de stratégies de gestion des risques internes et la gestion des cas d’Insider.
 
-Une fois que les utilisateurs sont ajoutés aux stratégies de gestion des risques internes, les processus d’arrière-plan évaluent automatiquement les activités des utilisateurs pour [déclencher des indicateurs](insider-risk-management-policies.md#indicators). Une fois les indicateurs déclenchés, les résultats sont affectés aux activités de l’utilisateur. Certaines de ces activités peuvent entraîner une alerte d’Insider, mais certaines activités ne peuvent pas atteindre un niveau de risque minimal et une alerte de risque Insider n’est pas créée. Le **tableau de bord utilisateurs** vous permet d’afficher les utilisateurs avec ces types d’indicateurs et de scores de risques, ainsi que les utilisateurs qui ont des alertes de risque active Insider.
+Une fois que les utilisateurs sont ajoutés aux stratégies de gestion des risques internes, les processus d’arrière-plan évaluent automatiquement les activités des utilisateurs pour [déclencher des indicateurs](insider-risk-management-settings.md#indicators). Une fois les indicateurs déclenchés, les résultats sont affectés aux activités de l’utilisateur. Certaines de ces activités peuvent entraîner une alerte d’Insider, mais certaines activités ne peuvent pas atteindre un niveau de risque minimal et une alerte de risque Insider n’est pas créée. Le **tableau de bord utilisateurs** vous permet d’afficher les utilisateurs avec ces types d’indicateurs et de scores de risques, ainsi que les utilisateurs qui ont des alertes de risque active Insider.
 
 En outre, il peut y avoir des scénarios où vous devez ajouter temporairement des utilisateurs à des stratégies de risque internes après qu’un événement inhabituel est signalé en dehors du flux de travail de gestion des risques inSided. Le **tableau de bord utilisateurs** vous permet d’ajouter manuellement un utilisateur à une stratégie de risque d’initié pendant une période de temps spécifique et de contourner la nécessité pour qu’un utilisateur ait un indicateur déclencheur. Ces utilisateurs sont toujours affichés dans le tableau de bord utilisateurs lorsqu’ils sont affectés activement à une stratégie.
 
@@ -39,7 +39,7 @@ Le **tableau de bord utilisateurs** affiche automatiquement tous les utilisateur
 
 ## <a name="dashboard-users-with-triggering-indicators"></a>Utilisateurs de tableau de bord avec indicateurs de déclenchement
 
-Le **tableau de bord utilisateurs** affiche automatiquement tous les utilisateurs qui déclenchent des indicateurs, mais qui n’ont pas de score de risque d’activité qui créerait une activité de risque d’initié. Par exemple, un utilisateur avec une date de départ signalée est affiché car cet événement est un indicateur déclencheur, mais n’est pas une activité présentant un score de risque. Les activités de ces utilisateurs sont affichées en sélectionnant l’utilisateur dans le **tableau de bord utilisateurs** et en accédant à l’onglet **activité utilisateur** .
+Le **tableau de bord utilisateurs** affiche automatiquement tous les utilisateurs qui déclenchent des indicateurs, mais qui n’ont pas de score de risque d’activité qui crée une alerte de risque d’initié. Par exemple, un utilisateur avec une date de départ signalée est affiché car cet événement est un indicateur déclencheur, mais n’est pas une activité présentant un score de risque. Les activités de ces utilisateurs sont affichées en sélectionnant l’utilisateur dans le **tableau de bord utilisateurs** et en accédant à l’onglet **activité utilisateur** .
 
 ## <a name="dashboard-users-added-temporarily-to-policies"></a>Utilisateurs de tableau de bord ajoutés temporairement à des stratégies
 

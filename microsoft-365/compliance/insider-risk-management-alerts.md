@@ -12,34 +12,34 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 0618eb6b68f5753ea6af2469e3487eabfe566450
-ms.sourcegitcommit: 261d51b90a9ad53a6a42348c414b1b1e1230c37f
+ms.openlocfilehash: 7b7b6e15528d91a59575e2cfda5808106df7d61b
+ms.sourcegitcommit: a08103bc120bdec7cfeaf67c1be4e221241e69ad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44292482"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "45199698"
 ---
 # <a name="insider-risk-management-alerts"></a>Alertes de gestion des risques internes
 
-Les alertes de gestion des risques initiés sont automatiquement générées par les indicateurs de risque définis dans les stratégies de gestion des risques internes. Ces alertes donnent aux analystes de conformité un aperçu de l’état actuel des risques et permettent à votre organisation de trier et de prendre des mesures pour les risques découverts. Par défaut, les stratégies génèrent une certaine quantité d’alertes de gravité faible, moyenne et élevée, mais vous pouvez [augmenter ou diminuer le volume des alertes](insider-risk-management-policies.md#alert-volume) en fonction de vos besoins.
+Les alertes de gestion des risques internes sont automatiquement générées par les indicateurs de risque définis dans les stratégies de gestion des risques internes. Ces alertes donnent aux analystes et aux enquêteurs de conformité une vue d’ensemble de l’état de risque actuel et permettent à votre organisation de trier et de prendre des mesures pour les risques détectés. Par défaut, les stratégies génèrent une certaine quantité d’alertes de gravité faible, moyenne et élevée, mais vous pouvez [augmenter ou diminuer le volume des alertes](insider-risk-management-settings.md#alert-volume) en fonction de vos besoins. En outre, vous pouvez configurer le [seuil d’alerte pour les indicateurs de stratégie](insider-risk-management-settings.md#indicator-level-settings-preview) lors de la création d’une stratégie à l’aide de l’Assistant stratégie.
 
 ## <a name="alert-dashboard"></a>Tableau de bord d’alerte
 
-Le tableau de **bord des alertes** sur les risques Insiders vous permet d’afficher et d’effectuer des actions sur les alertes générées par des stratégies de risque initiées. Chaque widget de rapport affiche les informations des 30 derniers jours.
+Le tableau de **bord des alertes** sur les risques Insiders vous permet d’afficher et d’agir sur les alertes générées par des stratégies de risque initiées. Chaque widget de rapport affiche les informations des 30 derniers jours.
 
 - **Alertes à réviser**: le nombre total d’alertes nécessitant une révision et un triage sont répertoriés, y compris une ventilation par gravité d’alerte.
 - **Alertes ouvertes au cours des 30 derniers jours**: nombre total d’alertes créées par des correspondances de stratégie au cours des 30 derniers jours, triées par niveau de gravité d’alerte élevé, moyen et faible.
 - **Temps moyen de résolution des alertes**: Résumé des statistiques d’alerte utiles :
-    - Durée moyenne de résolution des alertes à gravité élevée, indiquées en heures, jours ou mois.
-    - Durée moyenne de résolution des alertes de gravité moyenne, en heures, jours ou mois.
-    - Durée moyenne de résolution des alertes à faible gravité, indiquées en heures, jours ou mois.
+    - Délai moyen de résolution des alertes de gravité élevée, indiqué en heures, jours ou mois.
+    - Délai moyen de résolution des alertes de gravité moyenne, indiqué en heures, jours ou mois.
+    - Délai moyen de résolution des alertes de faible gravité, indiqué en heures, jours ou mois.
 
 ![Tableau de bord d’alerte de gestion des risques Insiders](../media/insider-risk-alerts-dashboard.png)
 
 >[!NOTE]
->La gestion des risques internes utilise la limitation des alertes intégrée pour protéger et optimiser votre expérience d’examen et de révision des risques. Cette limitation protège contre les problèmes susceptibles d’entraîner une surcharge des alertes de stratégie, telles que des connecteurs de données mal configurés ou des stratégies DLP. Par conséquent, l’affichage des nouvelles alertes pour un utilisateur peut prendre un certain temps.
+>La gestion des risques internes utilise la limitation d’alertes intégrée pour vous aider à protéger et optimiser vos examens de risque et réviser l’expérience. Cette limitation empêche les problèmes qui peuvent entraîner une surcharge d’alertes de stratégie, telles que la configuration incorrecte des connecteurs de données ou des stratégies DLP. Par conséquent, il peut y avoir un retard dans l'affichage de nouvelles alertes pour un utilisateur.
 
-## <a name="alert-status-and-severity"></a>État et gravité de l’alerte
+## <a name="alert-status-and-severity"></a>État de l’alerte et gravité
 
 Vous pouvez trier les alertes dans l’un des États suivants :
 
@@ -48,26 +48,26 @@ Vous pouvez trier les alertes dans l’un des États suivants :
 - **Révision requise**: une nouvelle alerte dans laquelle les actions de triage n’ont pas encore été effectuées.
 - **Résolu**: alerte faisant partie d’un cas fermé et résolu.
 
-Les scores de risque d’alerte sont automatiquement calculés à partir de plusieurs attributs d’activité de risque. Ces attributs incluent le type d’activité de risque, le nombre et la fréquence de l’occurrence d’activité, l’historique de l’activité des risques de l’utilisateur et l’ajout de risques d’activité susceptibles d’aggraver la gravité de l’activité. Le score de risque d’alerte dirige l’affectation programmatique d’un niveau de gravité de risque pour chaque alerte et ne peut pas être personnalisée. Si les alertes ne sont pas triées et que les activités de risque continuent de s’accumuler sur l’alerte, le niveau de gravité des risques peut augmenter. Les analystes et les enquêteurs de risques peuvent utiliser la gravité des risques d’alerte pour faciliter le tri des alertes conformément aux normes et stratégies de risque de votre organisation.
+Les scores de risque d’alerte sont calculés automatiquement à partir de plusieurs indicateurs d’activité de risque. Ces indicateurs incluent le type d’activité de risque, le nombre et la fréquence de l’occurrence d’activité, l’historique de l’activité des risques de l’utilisateur et l’ajout de risques d’activité susceptibles d’aggraver la gravité de l’activité. Le score de risque d'alerte détermine l'affectation programmatique d'un niveau de gravité du risque pour chaque alerte et ne peut être personnalisé. Si les alertes ne sont pas triées et que les activités de risque continuent de s’accumuler sur l’alerte, le niveau de gravité des risques peut augmenter. Les analystes et les enquêteurs de risques peuvent utiliser la gravité des risques d’alerte pour faciliter le tri des alertes conformément aux normes et stratégies de risque de votre organisation.
 
 Les niveaux de gravité des risques d’alerte sont les suivants :
 
-- **Gravité élevée**: l’activité et les indicateurs de l’alerte posent des risques significatifs. Les activités de risque associées sont graves, répétitives et se rattachent fortement à d’autres facteurs de risque significatifs.
-- **Gravité moyenne**: l’activité et les indicateurs de l’alerte posent un risque modéré. Les activités de risque associées sont modérées, fréquentes et ont une corrélation avec d’autres facteurs de risque.
-- **Faible gravité**: l’activité et les indicateurs de l’alerte constituent un risque mineur. Les activités de risque associées sont mineures, plus rares et ne sont pas liées à d’autres facteurs de risque significatifs.
+- **Gravité élevée**: les activités et indicateurs de l’alerte posent des risques significatifs. Les activités de risque associées sont graves, répétitives et se rattachent fortement à d’autres facteurs de risque significatifs.
+- **Gravité moyenne**: les activités et indicateurs de l’alerte posent un risque modéré. Les activités de risque associées sont modérées, fréquentes et présentent une corrélation avec d’autres facteurs de risque.
+- **Faible gravité**: les activités et indicateurs de l’alerte posent un risque mineur. Les activités de risque associées sont mineures, plus rares et ne sont pas liées à d’autres facteurs de risque significatifs.
 
 ## <a name="filter-alerts"></a>Alertes de filtre
 
-Selon le nombre et le type de stratégies de gestion des risques Insider actives au sein de votre organisation, il peut s’avérer difficile de vérifier une file d’attente volumineuse. L’utilisation de filtres d’alerte permet aux analystes et aux enquêteurs de trier les alertes en fonction de plusieurs attributs. Pour filtrer les alertes dans le tableau de bord alertes, sélectionnez le contrôle de **filtre** . Vous pouvez filtrer les alertes par un ou plusieurs attributs :
+Selon le nombre et le type de stratégies de gestion des risques internes actif au sein de votre organisation, il peut être difficile de réviser une grande file d’alertes. L’utilisation de filtres d’alerte permet aux analystes et aux enquêteurs de trier les alertes en fonction de plusieurs attributs. Pour filtrer les alertes dans le **tableau de bord alertes**, sélectionnez le contrôle de **filtre** . Vous pouvez filtrer les alertes par un ou plusieurs attributs :
 
-- **État**: sélectionnez une ou plusieurs valeurs d’État pour filtrer la liste des alertes. Les options sont *confirmées*, *ignorées*, *révision requise*et *résolues*.
-- **Gravité**: sélectionnez un ou plusieurs niveaux de gravité des risques d’alerte pour filtrer la liste des alertes. Les options sont *élevé*, *moyen*et *faible*.
+- **État**: sélectionnez une ou plusieurs valeurs d’État pour filtrer la liste des alertes. Les options sont *Confirmé*, *Fermé*, *Révision requise*et *Résolu*.
+- **Gravité**: sélectionnez un ou plusieurs niveaux de gravité des risques d’alerte pour filtrer la liste des alertes. Les options disponibles sont *Élevée*, *Moyenne*et *Faible*.
 - **Heure détectée**: sélectionnez les dates de début et de fin de la date de création de l’alerte.
 - **Stratégie**: sélectionnez une ou plusieurs stratégies pour filtrer les alertes générées par les stratégies sélectionnées.
 
 ## <a name="search-alerts"></a>Alertes de recherche
 
-Pour rechercher le nom d’une alerte pour un mot spécifique, sélectionnez le contrôle de **recherche** et tapez le mot à rechercher. Les résultats de la recherche affichent toute alerte de stratégie contenant le mot défini dans la recherche.
+Pour rechercher le nom d’une alerte pour un mot spécifique, sélectionnez la commande**Recherche** et tapez le mot à rechercher. Les résultats de la recherche affichent une alerte de stratégie contenant le mot défini dans la recherche.
 
 ## <a name="triage-alerts"></a>Alertes de triage
 
@@ -76,20 +76,20 @@ Pour trier une alerte de risque d’initié, procédez comme suit :
 1. Dans le [Centre de conformité Microsoft 365](https://compliance.microsoft.com), accédez à **gestion des risques internes** et sélectionnez l’onglet **alertes** .
 2. Dans le **tableau de bord alertes**, sélectionnez l’alerte à trier.
 3. Dans le **volet Détails des alertes**, vous pouvez passer en revue les onglets suivants et trier l’alerte :
-    - **Vue d’ensemble**: cet onglet contient des informations générales sur l’alerte et vous permet de la confirmer et de créer une nouvelle demande de devis, ou de la faire disparaître.
+    - **Vue d’ensemble**: cet onglet contient des informations générales sur l’alerte et vous permet de confirmer l’alerte et de créer un nouvel incident ou de faire disparaître l’alerte.
         - **État**: état de l’alerte.
         - **Heure de détection**: durée écoulée depuis la génération de l’alerte.
         - **Correspondances de stratégie**: les stratégies qui ont généré l’alerte sont répertoriées. Chaque stratégie est indiquée sous la forme d’un lien vers les détails de la stratégie.
         - **Gravité**: niveau de gravité des risques d’alerte actuel, *élevé*, *moyen*ou *faible*. Le niveau de gravité peut augmenter ou diminuer au fil du temps si l’alerte n’est pas en cours de triage.
-        - **Cas**: si confirmé, la casse générée à partir de l’alerte est indiquée. Pour les nouvelles alertes, le champ case a une valeur *None* .
-    - **Activité**de l’utilisateur : cet onglet affiche l’historique des activités de l’utilisateur associé à l’alerte. Cet historique inclut d’autres alertes et activités d’événements liées aux indicateurs de risque définis dans le modèle affecté à la stratégie pour cette alerte. Cet historique permet aux analystes et aux investigateurs de risque de factoriser tout comportement à risque passé pour l’employé dans le cadre du processus de triage.
-    - **Profil utilisateur**: cet onglet affiche les informations générales sur l’employé affecté à l’alerte.
-    - **Confirmer et créer un cas**: visible sur tous les onglets, utilisez ce bouton pour confirmer et créer un nouveau cas. Cela change automatiquement le statut de l’alerte en *confirmé*.
-    - **Faire disparaître**: visible sur tous les onglets, utilisez ce bouton pour faire disparaître l’alerte. L’état de l’alerte devient *résolu*.
+        - **Cas**: si confirmé, la casse générée à partir de l’alerte est indiquée. Pour les nouvelles alertes, le champ **case** affiche *aucun*.
+    - **Activité**de l’utilisateur : cet onglet affiche l’historique des activités de l’utilisateur associé à l’alerte. Cet historique inclut d’autres alertes et activités liées aux indicateurs de risque définis dans le modèle affecté à la stratégie pour cette alerte. Cet historique permet aux analystes et aux investigateurs de risque de factoriser tout comportement à risque passé pour l’employé dans le cadre du processus de triage.
+    - **Profil utilisateur**: cet onglet affiche les informations générales sur l’employé affecté à l’alerte. Si l’anonymisation est activée, les champs nom d’utilisateur, adresse de messagerie, alias et organisation sont anonymes.
+    - **Confirmer et créer un cas**: visible sur tous les onglets, utilisez ce bouton pour confirmer et créer un nouveau cas. Cette action modifie automatiquement le statut de l’alerte sur *confirmé*.
+    - **Faire disparaître l’alerte**: visible sur tous les onglets, utilisez ce bouton pour faire disparaître l’alerte. Cette action modifie l’état de l’alerte en *résolu*.
 
 ## <a name="create-a-case-for-an-alert"></a>Créer un cas pour une alerte
 
-Une fois qu’une alerte a été vérifiée et triée, vous pouvez créer un nouveau cas afin d’examiner l’activité de risque. Pour créer un cas pour une alerte, procédez comme suit :
+Lorsque l’alerte est vérifiée et triée, vous pouvez créer un nouveau cas afin d’examiner l’activité de risque. Pour créer un cas pour une alerte, procédez comme suit :
 
 1. Dans le [Centre de conformité Microsoft 365](https://compliance.microsoft.com), accédez à **gestion des risques internes** et sélectionnez l’onglet **alertes** .
 2. Dans le **tableau de bord alertes**, sélectionnez l’alerte à vérifier et créez une nouvelle demande de devis.

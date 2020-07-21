@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Les administrateurs peuvent activer la prise en charge de l’étiquette de sensibilité pour les fichiers Word, Excel et PowerPoint dans SharePoint et OneDrive.
-ms.openlocfilehash: ee6f89db7758140ac8e4c2752d8a2883cc0990db
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+ms.openlocfilehash: 8530e3d82fd670eedde9a874b0a87a0bad523fe5
+ms.sourcegitcommit: a08103bc120bdec7cfeaf67c1be4e221241e69ad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44780717"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "45199524"
 ---
 # <a name="enable-sensitivity-labels-for-office-files-in-sharepoint-and-onedrive"></a>Activer les étiquettes de confidentialité pour les fichiers Office dans SharePoint et OneDrive
 
@@ -164,17 +164,18 @@ Pour activer les nouvelles fonctionnalités, utilisez la cmdlet [Set-SPOTenant](
     ```
 3. Pour Microsoft 365 multi-géo : Répétez les étapes 1 et 2 pour chacun de vos emplacements géographiques restants.
 
-## <a name="schedule-roll-out-after-you-create-or-change-a-sensitivity-label"></a>Planifier le déploiement après la création ou la modification d’une étiquette de sensibilité
+## <a name="publishing-and-changing-sensitivity-labels"></a>Publication et modification des étiquettes de sensibilité
 
-Une fois que vous avez créé ou modifié une étiquette de sensibilité dans le centre de conformité Microsoft 365, publiez-le par étapes. Si vous publiez des étiquettes qui n’ont pas été entièrement synchronisées, lorsque les utilisateurs appliquent les étiquettes aux fichiers et les chargent sur SharePoint, les fichiers ne peuvent pas être ouverts dans les versions Web des applications Office. La recherche et eDiscovery ne fonctionnent pas non plus pour les fichiers.
+Lorsque vous utilisez des étiquettes de confidentialité avec SharePoint et OneDrive, gardez à l’esprit que vous devez autoriser la réplication lorsque vous publiez de nouvelles étiquettes de sensibilité ou que vous mettez à jour les étiquettes de sensibilité existantes. Ceci est particulièrement important pour les nouvelles étiquettes qui appliquent le chiffrement.
 
-Nous vous recommandons de suivre les étapes suivantes :
+Par exemple : vous créez et publiez une nouvelle étiquette de sensibilité qui applique le chiffrement et elle apparaît très rapidement dans l’application de bureau d’un utilisateur. L’utilisateur applique cette étiquette à un document, puis le télécharge sur SharePoint ou OneDrive. Si la réplication d’étiquette n’est pas terminée pour le service, les nouvelles fonctionnalités ne seront pas appliquées à ce document au chargement. Par conséquent, le document n’est pas renvoyé dans la recherche ou eDiscovery et le document ne peut pas être ouvert dans Office pour le Web.
 
-1. Publiez l’étiquette de confidentialité nouvelle ou modifiée uniquement sur une ou deux personnes.
+- Les modifications suivantes sont répliquées en une heure : les étiquettes de confidentialité nouvelles et supprimées, ainsi que les paramètres de stratégie d’étiquette de sensibilité qui incluent les étiquettes figurant dans la stratégie.
 
-2. Patientez pendant au moins 24 heures après la publication initiale. Vérifiez que l’étiquette est entièrement synchronisée.
+- Les modifications suivantes sont répliquées dans les 24 heures : modifications apportées aux paramètres d’étiquette de sensibilité pour les étiquettes existantes.
 
-3. Publiez l’étiquette plus largement.
+Étant donné que le retard de réplication n’est que d’une heure pour les nouvelles étiquettes de sensibilité, il est peu probable que vous exécutiez le scénario dans l’exemple. Toutefois, nous vous recommandons de publier de nouvelles étiquettes sur seulement quelques utilisateurs test, d’attendre une heure, puis de vérifier le comportement de l’étiquette sur SharePoint et OneDrive. Lors de la dernière étape, rendez l’étiquette accessible à d’autres utilisateurs en ajoutant des utilisateurs à la stratégie d’étiquette existante ou ajoutez l’étiquette à une stratégie d’étiquette existante pour vos utilisateurs standard. Au moment où les utilisateurs standard voient l’étiquette, celle-ci est déjà synchronisée avec SharePoint et OneDrive.
+
 
 ## <a name="sharepoint-information-rights-management-irm-and-sensitivity-labels"></a>Étiquettes de confidentialité et de gestion des droits relatifs à l’information (IRM) SharePoint
 

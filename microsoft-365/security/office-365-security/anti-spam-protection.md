@@ -19,12 +19,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Les administrateurs peuvent en savoir plus sur les paramètres et les filtres anti-courrier indésirable qui permettent d’éviter le courrier indésirable dans Exchange Online Protection (EOP).
-ms.openlocfilehash: ce673a4bee64dfbc84f870f9cf4871e9ac32a71c
-ms.sourcegitcommit: 89636f35b0194986f156302fc1bb96af25d4805b
+ms.openlocfilehash: 74ffe22ffea07350245f6fed18d09b52f96c8351
+ms.sourcegitcommit: e6bf1af2d5cf54c3fcc3fa916abe268fc96bdd4e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44800106"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "45189560"
 ---
 # <a name="anti-spam-protection-in-eop"></a>Protection contre le courrier indésirable dans EOP
 
@@ -36,6 +36,9 @@ Dans les organisations Microsoft 365 avec des boîtes aux lettres dans Exchange 
 La feuille de route sécurité de messagerie de Microsoft implique une approche inter-produits sans correspondance. La technologie de blocage du courrier indésirable et anti-hameçonnage EOP est appliquée sur nos plates-formes de messagerie pour fournir aux utilisateurs les derniers outils de blocage du courrier indésirable et anti-hameçonnage, ainsi que leurs innovations sur le réseau. L'objectif d'EOP est de proposer un service de messagerie complet et utilisable qui vous aide à détecter le courrier indésirable, les menaces d'e-mails frauduleux (hameçonnage) et les logiciels malveillants, et de protéger les utilisateurs.
 
 Au fur et à mesure que la messagerie électronique prend de l'importance, la mauvaise utilisation qui en est faite aussi. Le courrier indésirable non surveillé peut surcharger les boîtes de réception et les réseaux, affecter la satisfaction des utilisateurs et entraver l'efficacité des communications d'e-mails légitimes. C'est pourquoi Microsoft continue à investir dans les technologies anti-spam. En bref, cela commence par la détection et le filtrage du courrier indésirable.
+
+> [!TIP]
+> Les technologies de blocage du courrier indésirable suivantes sont utiles lorsque vous souhaitez autoriser ou bloquer des messages en fonction de l’enveloppe de message (par exemple, le domaine de l’expéditeur ou l’adresse IP source du message). Pour autoriser ou bloquer les messages en fonction de la charge utile (par exemple, les URL dans le message ou les fichiers joints), vous devez utiliser le [portail de liste d’autorisation/d’interdiction client](tenant-allow-block-list.md).
 
 ## <a name="anti-spam-technologies-in-eop"></a>Technologies de blocage du courrier indésirable dans EOP
 
