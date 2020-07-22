@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Les administrateurs peuvent apprendre à afficher, créer, modifier et supprimer des stratégies de courrier indésirable sortant dans Exchange Online Protection (EOP).
-ms.openlocfilehash: 7102f858e0293f2a55fe68a55d4dc2cf3ab38a33
-ms.sourcegitcommit: 51a9f34796535309b8ca8b52da92da0a3621327b
+ms.openlocfilehash: 9f70deeb371278fa397e5186b4c770f776abff32
+ms.sourcegitcommit: b4119682bd3c036289e851fff56fde869c816479
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "45024581"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45204850"
 ---
 # <a name="configure-outbound-spam-filtering-in-eop"></a>Configurer le filtrage du courrier indésirable sortant dans EOP
 
@@ -136,26 +136,10 @@ La création d’une stratégie de courrier indésirable sortant personnalisé d
 
    - **Informer des personnes spécifiques si un expéditeur est bloqué en raison de l’envoi de courrier indésirable sortant**:
 
-     > [!NOTE]
-     > La [stratégie d’alerte](../../compliance/alert-policies.md) par défaut nommée **User Restricted from sending email** envoie déjà des notifications par courrier électronique aux membres du groupe **TenantAdmins** (**administrateurs globaux**) lorsque les utilisateurs sont bloqués en raison du dépassement des limites de la section **limites des destinataires** . Nous vous recommandons d’utiliser la stratégie d’alerte au lieu de ce paramètre dans la stratégie anti-courrier indésirable sortant pour avertir les administrateurs et les autres utilisateurs. Pour obtenir des instructions, consultez [la rubrique vérifier les paramètres d’alerte pour les utilisateurs restreints](removing-user-from-restricted-users-portal-after-spam.md#verify-the-alert-settings-for-restricted-users). <br/><br/> Ce paramètre ne fonctionne que dans le cadre de la stratégie de courrier indésirable sortant par défaut. Il ne fonctionne pas dans les stratégies de courrier indésirable sortant personnalisées que vous créez.
-
-     Pour activer ce paramètre :
-
-     a. Activez la case à cocher pour activer le paramètre.
-
-     b. Cliquez sur **Ajouter des personnes**. Dans la fenêtre mobile **Ajouter ou supprimer des destinataires** qui s’affiche :
-
-     c. Entrez l’adresse de courrier de l’expéditeur. Vous pouvez spécifier plusieurs adresses de messagerie séparées par des points-virgules (;) ou un destinataire par ligne.
-
-     d. Clic  ![Icône Ajouter](../../media/c2dd8b3a-5a22-412c-a7fa-143f5b2b5612.png) pour ajouter les destinataires.
-
-        Répétez ces étapes autant de fois que nécessaire.
-
-        Les destinataires que vous avez ajoutés apparaissent dans la section **liste des destinataires** du menu volant. Pour supprimer un destinataire, cliquez sur le ![ bouton supprimer ](../../media/scc-remove-icon.png) .
-
-     e. Lorsque vous avez terminé, cliquez sur **Enregistrer**.
-
-     Pour désactiver ce paramètre, désactivez la case à cocher.
+     > [!IMPORTANT]
+     > Ce paramètre est en cours d’arrêt des stratégies de courrier indésirable sortant.
+     > 
+     > La [stratégie d’alerte](../../compliance/alert-policies.md) par défaut nommée **User Restricted from sending email** envoie déjà des notifications par courrier électronique aux membres du groupe **TenantAdmins** (**administrateurs globaux**) lorsque les utilisateurs sont bloqués en raison du dépassement des limites de la section **limites des destinataires** . **Nous vous recommandons vivement d’utiliser la stratégie d’alerte au lieu de ce paramètre dans la stratégie anti-courrier indésirable sortant pour avertir les administrateurs et les autres utilisateurs**. Pour obtenir des instructions, consultez [la rubrique vérifier les paramètres d’alerte pour les utilisateurs restreints](removing-user-from-restricted-users-portal-after-spam.md#verify-the-alert-settings-for-restricted-users).
 
 5. Module Développez la section **limites des destinataires** pour configurer les limites et les actions pour les messages électroniques sortants suspects :
 
@@ -188,12 +172,12 @@ La création d’une stratégie de courrier indésirable sortant personnalisé d
 6. Module Développez la section **transfert automatique** pour configurer les contrôles sur la façon dont le transfert automatique par les utilisateurs est contrôlé.
 
    > [!NOTE]
-   > Ces paramètres ne s’appliquent qu’aux boîtes aux lettres en nuage.
-   
+   > Ces paramètres s’appliquent uniquement aux boîtes aux lettres en nuage.
+
    - **Transfert automatique**
   
       Sélectionnez l’une des options pour contrôler la façon dont le transfert automatique est géré.
-    
+
       - **Automatique**: paramètre par défaut qui permet au système de contrôler le transfert automatique avec le transfert automatique désactivé par défaut.
       - **Activé**: le transfert externe est activé dans la stratégie sans restriction.
       - **Off**: le transfert externe est désactivé et sera bloqué.

@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: da3b331d4f607aa0961e275db9444aadbec4fcf2
-ms.sourcegitcommit: ab10c042e5e9c6a7b2afef930ab0d247a6aa275d
+ms.openlocfilehash: 663dc2a3de676fa2daeab3d9621254e956d42fc4
+ms.sourcegitcommit: b4119682bd3c036289e851fff56fde869c816479
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44899338"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45204754"
 ---
 # <a name="appfileevents"></a>AppFileEvents
 
@@ -41,13 +41,23 @@ Pour plus d’informations sur les autres tables du schéma de repérage avancé
 | `FileName` | string | Nom du fichier auquel l’action enregistrée a été appliquée |
 | `FolderPath` | string | Dossier contenant le fichier auquel l’action enregistrée a été appliquée |
 | `PreviousFileName` | string | Nom d’origine du fichier qui a été renommé suite à l’action |
+| `PreviousFolderPath` | string | Dossier d’origine contenant le fichier avant l’application de l’action enregistrer |
+| `Protocol` | string | Protocole réseau utilisé |
 | `AccountName` | string | Nom d’utilisateur du compte |
 | `AccountDomain` | string | Domaine du compte |
 | `AccountUpn` | string | Nom d’utilisateur principal (UPN) du compte |
 | `AccountObjectId` | string | Identificateur unique du compte dans Azure AD |
 | `AccountDisplayName` | string | Nom de l’utilisateur du compte affiché dans le carnet d’adresses. Il s’agit généralement d’une combinaison d’un nom donné, d’une initiation au milieu et d’un nom de famille ou nom. |
+| `DeviceName` | string | Nom de domaine complet (FQDN) du périphérique |
+| `DeviceType` | string | Type de périphérique | 
+| `OSPlatform` | string | Plateforme du système d’exploitation s’exécutant sur l’appareil. Cela indique des systèmes d’exploitation spécifiques, y compris des variantes au sein d’une même famille, telles que Windows 10 et Windows 7. |
 | `IPAddress` | string | Adresse IP affectée au point de terminaison et utilisée pendant les communications réseau associées |
+| `DestinationDeviceName` | string | Nom de l’appareil exécutant l’application serveur qui a traité l’action enregistrée. |
+| `DestinationIPAddress` | string | Adresse IP de l’appareil exécutant l’application serveur qui a traité l’action enregistrée |
 | `Location` | string | Ville, pays ou autre emplacement géographique associé à l’événement |
+| `Isp` | string | Fournisseur de services Internet associé à l’adresse IP du point de terminaison |
+| `ReportId` | long | Identificateur unique de l’événement |
+| `AdditionalFields` | string | Informations supplémentaires sur l’entité ou l’événement |
 
 ## <a name="related-topics"></a>Voir aussi
 - [Vue d’ensemble du repérage avancé](advanced-hunting-overview.md)

@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 2116d8f6f1006f5acf9d468006fa07a04e13087b
-ms.sourcegitcommit: 11218af1d792af297b4280ca5975d139d2bbe350
+ms.openlocfilehash: 19437caf4f3b0dcb6eb6ccad81d1ed3917df7996
+ms.sourcegitcommit: b4119682bd3c036289e851fff56fde869c816479
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2020
-ms.locfileid: "45046027"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45204910"
 ---
 # <a name="identitylogonevents"></a>IdentityLogonEvents
 
@@ -31,27 +31,37 @@ ms.locfileid: "45046027"
 
 Le `IdentityLogonEvents` tableau du schéma de [chasse avancé](advanced-hunting-overview.md) contient des informations sur les activités d’authentification effectuées via votre environnement Active Directory local capturées par Azure ATP et les activités d’authentification liées à Microsoft Online Services capturées par Microsoft Cloud App Security. Utilisez cette référence pour créer des requêtes qui renvoient des informations de cette table.
 
+>[!NOTE]
+>Ce tableau couvre les activités d’ouverture de session Azure Active Directory (AD) suivies par la sécurité des applications Cloud, en particulier les ouvertures de session interactives et les activités d’authentification à l’aide d’ActiveSync et d’autres protocoles hérités. Les ouvertures de sessions non interactives qui ne sont pas disponibles dans ce tableau peuvent être affichées dans le journal d’audit Azure AD. [En savoir plus sur la connexion de la sécurité des applications Cloud à Microsoft 365](https://docs.microsoft.com/cloud-app-security/connect-office-365-to-microsoft-cloud-app-security)
+
 Pour plus d’informations sur les autres tables du schéma de repérage avancé, [consultez la référence de repérage avancé](advanced-hunting-schema-tables.md).
 
 | Nom de colonne | Type de données | Description |
 |-------------|-----------|-------------|
 | `Timestamp` | DateHeure | Date et heure d’enregistrement de l’événement |
 | `ActionType` | chaîne | Type d’activité qui a déclenché l’événement |
-| `LogonType` | chaîne | Type de session de connexion, notamment :<br><br> - **Interactif** : l’utilisateur interagit physiquement avec l’ordinateur à l’aide du clavier et de l’écran locaux<br><br> - **Ouvertures de session interactives (RDP)** : l’utilisateur interagit avec l’ordinateur à distance à l’aide du Bureau à distance, des services Terminal Server, de l’assistance à distance ou d’autres clients RDP<br><br> - Session **réseau** initiée lorsque l’accès à l’ordinateur est effectué à l’aide de PsExec ou lorsque des ressources partagées sur l’ordinateur, telles que des imprimantes et des dossiers partagés, sont accessibles<br><br> - Session de **traitement par lots** initiée par les tâches planifiées<br><br> - **Service** -session initialisée par les services au démarrage |
-| `Application` | chaîne | Application qui a effectué l’action enregistrée |
-| `Protocol` | chaîne | Protocole utilisé pendant la communication |
-| `AccountName` | chaîne | Nom d’utilisateur du compte |
-| `AccountDomain` | chaîne | Domaine du compte |
-| `AccountUpn` | chaîne | Nom d’utilisateur principal (UPN) du compte |
-| `AccountSid` | chaîne | Identificateur de sécurité (SID) du compte |
-| `AccountObjectId` | chaîne | Identificateur unique du compte dans Azure AD |
-| `AccountDisplayName` | chaîne | Nom de l’utilisateur du compte affiché dans le carnet d’adresses. Il s’agit généralement d’une combinaison d’un nom donné, d’une initiation au milieu et d’un nom de famille ou nom. |
-| `DeviceName` | chaîne | Nom de domaine complet (FQDN) de la machine |
-| `DeviceType` | chaîne | Type de périphérique |
+| `LogonType` | string | Type de session de connexion, notamment :<br><br> - **Interactif** : l’utilisateur interagit physiquement avec l’ordinateur à l’aide du clavier et de l’écran locaux<br><br> - **Ouvertures de session interactives (RDP)** : l’utilisateur interagit avec l’ordinateur à distance à l’aide du Bureau à distance, des services Terminal Server, de l’assistance à distance ou d’autres clients RDP<br><br> - Session **réseau** initiée lorsque l’accès à l’ordinateur est effectué à l’aide de PsExec ou lorsque des ressources partagées sur l’ordinateur, telles que des imprimantes et des dossiers partagés, sont accessibles<br><br> - Session de **traitement par lots** initiée par les tâches planifiées<br><br> - **Service** -session initialisée par les services au démarrage |
+| `Application` | string | Application qui a effectué l’action enregistrée |
+| `Protocol` | string | Protocole réseau utilisé |
+| `FailureReason` | string | Informations expliquant pourquoi l’action enregistrée a échoué |
+| `AccountName` | string | Nom d’utilisateur du compte |
+| `AccountDomain` | string | Domaine du compte |
+| `AccountUpn` | string | Nom d’utilisateur principal (UPN) du compte |
+| `AccountSid` | string | Identificateur de sécurité (SID) du compte |
+| `AccountObjectId` | string | Identificateur unique du compte dans Azure AD |
+| `AccountDisplayName` | string | Nom de l’utilisateur du compte affiché dans le carnet d’adresses. Il s’agit généralement d’une combinaison d’un nom donné, d’une initiation au milieu et d’un nom de famille ou nom. |
+| `DeviceName` | string | Nom de domaine complet (FQDN) du périphérique |
+| `DeviceType` | string | Type de périphérique |
 | `OSPlatform` | string | Plateforme du système d’exploitation client s’exécutant sur la machine. Cela indique des systèmes d’exploitation spécifiques, y compris des variantes au sein d’une même famille, telles que Windows 10 et Windows 7. |
 | `IPAddress` | string | Adresse IP affectée au point de terminaison et utilisée pendant les communications réseau associées |
-| `Location` | chaîne | Ville, pays ou autre emplacement géographique associé à l’événement |
-| `Isp` | chaîne | Fournisseur de services Internet associé à l’adresse IP du point de terminaison |
+| `DestinationDeviceName` | string | Nom de l’appareil exécutant l’application serveur qui a traité l’action enregistrée. |
+| `DestinationIPAddress` | string | Adresse IP de l’appareil exécutant l’application serveur qui a traité l’action enregistrée |
+| `TargetDeviceName` | string | Nom de domaine complet (FQDN) de l’appareil sur lequel l’action enregistrée a été appliquée. |
+| `TargetAccountDisplayName` | string | Nom d’affichage du compte auquel l’action enregistrée a été appliquée |
+| `Location` | string | Ville, pays ou autre emplacement géographique associé à l’événement |
+| `Isp` | string | Fournisseur de services Internet associé à l’adresse IP du point de terminaison |
+| `ReportId` | long | Identificateur unique de l’événement |
+| `AdditionalFields` | string | Informations supplémentaires sur l’entité ou l’événement |
 
 ## <a name="related-topics"></a>Voir aussi
 - [Vue d’ensemble du repérage avancé](advanced-hunting-overview.md)

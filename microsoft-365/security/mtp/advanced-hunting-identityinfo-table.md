@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: b384e76439ae706520725e7193fa64224b724be0
-ms.sourcegitcommit: ab10c042e5e9c6a7b2afef930ab0d247a6aa275d
+ms.openlocfilehash: e922fc7930d645a7024a0ffc73359277c4b637e4
+ms.sourcegitcommit: b4119682bd3c036289e851fff56fde869c816479
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44898956"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45204922"
 ---
 # <a name="identityinfo"></a>IdentityInfo
 
@@ -50,7 +50,7 @@ Pour plus d’informations sur les autres tables du schéma de repérage avancé
 | `AccountName` | string | Nom d’utilisateur du compte |
 | `AccountDomain` | string | Domaine du compte |
 | `EmailAddress` | string | Adresse SMTP du compte |
-| `SipProxyAddress` | string | Adresse SIP (Session Initiation Protocol) voix sur IP (VOIP) du compte |
+| `SipProxyAddress` | string | Adresse SIP (Session Initiation Protocol) VOIP (Voice over IP) du compte |
 | `City` | string | Ville où se trouve l’utilisateur du compte |
 | `Country` | string | Pays/région où se trouve l’utilisateur du compte |
 | `IsAccountEnabled` | booléen | Indique si le compte est activé ou non. |

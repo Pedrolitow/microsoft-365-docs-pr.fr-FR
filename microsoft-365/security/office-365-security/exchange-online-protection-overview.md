@@ -14,12 +14,12 @@ ms.assetid: 1270a65f-ddc3-4430-b500-4d3a481efb1e
 ms.custom:
 - seo-marvel-apr2020
 description: Découvrez comment Exchange Online Protection (EOP) peut vous aider à protéger votre organisation de messagerie locale dans des environnements autonomes et hybrides.
-ms.openlocfilehash: a3f71ea5366224465cdaf3922c6c467fcb49f3cc
-ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
+ms.openlocfilehash: 37b38df9e94bee93202be02c01a220afa9470b8a
+ms.sourcegitcommit: b4119682bd3c036289e851fff56fde869c816479
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44616985"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45204802"
 ---
 # <a name="exchange-online-protection-overview"></a>Vue d’ensemble d’Exchange Online Protection
 
@@ -61,7 +61,13 @@ EOP effectue l'équilibrage de charge entre les centres de données, mais unique
 
 - Dans la région Asie Pacifique (APAC), toutes les boîtes aux lettres Exchange Online sont situées dans des centres de contenu APAC, et les messages sont actuellement routés via des centres de contenu APAC pour le filtrage EOP.
 
-- Dans l’Amérique, toutes les boîtes aux lettres Exchange Online sont situées dans les centres de l’Europe, à l’exception de l’Amérique du Sud où sont utilisées les centres de contenu au Brésil et au Chili et au Canada, où sont utilisées les centres de contenu au Canada. Tous les messages électroniques, y compris les messages destinés aux clients en Amérique du Sud et au Canada, sont acheminés via des centres de centres locaux pour le filtrage EOP ; le courrier électronique mis en quarantaine est stocké dans le centre de contenu où se trouve le client.
+- En Amérique, les services sont distribués aux emplacements suivants :
+
+  - Amérique du Sud : les boîtes aux lettres Exchange Online sont situées dans des centres de contenu au Brésil et au Chili. Tous les messages sont routés via des centres de défilements locaux pour le filtrage EOP. Les messages mis en quarantaine sont stockés dans le centre de contenu où se trouve le client.
+
+  - Canada : les boîtes aux lettres Exchange Online sont situées dans des centres de contenu au Canada. Tous les messages sont routés via des centres de défilements locaux pour le filtrage EOP. Les messages mis en quarantaine sont stockés dans le centre de contenu où se trouve le client.
+
+  - États-Unis : les boîtes aux lettres Exchange Online sont situées dans des centres de connaissances américains. Tous les messages sont routés via des centres de défilements locaux pour le filtrage EOP. Les messages mis en quarantaine sont stockés dans le centre de contenu où se trouve le client.
 
 - En ce qui concerne le nuage communautaire propre aux gouvernements (CCG), toutes les boîtes aux lettres Exchange Online sont situées dans des centres de données américains et tous les messages sont routés via ces centres de données pour le filtrage EOP.
 

@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 7ab2b0ddaa7bc1c8ed4109affb2ef5ff11a7420b
-ms.sourcegitcommit: a08103bc120bdec7cfeaf67c1be4e221241e69ad
+ms.openlocfilehash: a31ee6de305cf9226a8b605f75bb71406f78fd70
+ms.sourcegitcommit: fe20f5ed07f38786c63df0f73659ca472e69e478
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 07/21/2020
-ms.locfileid: "45200230"
+ms.locfileid: "45201420"
 ---
 # <a name="get-started-with-insider-risk-management-settings"></a>Prise en main des paramètres de gestion des risques initiés
 
@@ -74,7 +74,7 @@ Par exemple, vous décidez d’activer les indicateurs SharePoint dans les param
 
 ![Paramètres des indicateurs personnalisés de gestion des risques initiés](../media/insider-risk-custom-indicators.png)
 
-- Pour le premier niveau d’événement quotidien, vous définissez le seuil à *10 événements ou plus par jour* pour un impact faible sur le score de risque pour les événements, au *moins 20 événements par jour* pour un impact moyen sur le score de risque pour*les événements, et au* *moins 30 événements* par jour ayant un impact plus élevé sur le score de risque pour les événements. Ces paramètres signifient effectivement :
+Pour le premier niveau d’événement quotidien, vous définissez le seuil à *10 événements ou plus par jour* pour un impact faible sur le score de risque pour les événements, au *moins 20 événements par jour* pour un impact moyen sur le score de risque pour les événements, et au *moins 30 événements* par jour ayant un impact plus élevé sur le score de risque pour les événements. Ces paramètres signifient effectivement :
 
 - S’il y a 1-9 événements SharePoint qui ont lieu après le déclenchement de l’événement, les scores de risque ont un impact minimal sur la probabilité de ne pas générer d’alerte.
 - S’il y a 10-19 événements SharePoint qui ont lieu après un événement déclencheur, le score de risque est fondamentalement inférieur et les niveaux de gravité d’alerte ont tendance à être bas.

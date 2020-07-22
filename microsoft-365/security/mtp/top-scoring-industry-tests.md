@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: 64197133386748695fbef5a33c09022ae41f75d3
-ms.sourcegitcommit: 5f980a9eb5aca61cf3662ef0bc65dec215e21656
+ms.openlocfilehash: 0ee31ef55c78457ee2b9d3db7b702ada2f55a639
+ms.sourcegitcommit: b4119682bd3c036289e851fff56fde869c816479
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "45185991"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45204958"
 ---
 # <a name="top-scoring-in-industry-tests"></a>Score le plus élevé dans les tests d’industrie
 
@@ -100,6 +100,8 @@ Les laboratoires de SE testent une gamme de solutions utilisées par les produit
 ## <a name="endpoint-detection--response"></a>Réponse de & de détection de point de terminaison
 
 Les fonctionnalités [de détection et de réponse du point de terminaison](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/overview-endpoint-detection-response) ATP de Microsoft Defender fournissent des détections d’attaques avancées qui sont quasiment en temps réel et exploitables. Les analystes de la sécurité peuvent hiérarchiser efficacement les alertes, avoir une meilleure visibilité de l’ampleur d’une faille et prendre des mesures correctives pour remédier aux menaces.
+
+Les fonctionnalités de protection des points de terminaison (EDR) de Microsoft Defender ATP et du point de terminaison ont reçu des résultats positifs des tests et des publications du secteur. [SC Labs a évalué les outils de sécurité du point de terminaison](https://www.scmagazine.com/home/reviews/sc-product-reviews-endpoint-security/) en juin 2020 et a donné à Microsoft defender ATP [5/5 étoiles](https://www.scmagazine.com/review/microsoft-defender-advanced-threat-protection/). Ils ont également appelé la capacité de Microsoft Defender ATP à protéger les organisations contre le paysage des menaces modernes à l’aide d’un ensemble complet de fonctionnalités de sécurité et ont identifié la solution de sécurité de point de terminaison comme holistique et unifiée. Ils ont également reconnu la convergence de la protection des points de terminaison avec la fonctionnalité de détection et de réponse du point de terminaison, car la chaîne d’attaque est désormais entièrement couverte par les solutions.
 
 ### <a name="mitre-industry-leading-optics-and-detection-capabilities"></a>MITRE : capacités de détection optique et de détection de premier plan
 

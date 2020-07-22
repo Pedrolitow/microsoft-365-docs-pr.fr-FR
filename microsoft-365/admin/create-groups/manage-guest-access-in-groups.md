@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9de497a9-2f5c-43d6-ae18-767f2e6fe6e0
 description: Découvrez comment ajouter des invités à un groupe Microsoft 365, afficher des utilisateurs invités et utiliser PowerShell pour contrôler l’accès invité.
-ms.openlocfilehash: 0322bd269f1c5637627461d136b40f6af4fc9540
-ms.sourcegitcommit: 4512f54ba80d869d4c04e8f9bd897d1878280852
+ms.openlocfilehash: a56d9599824ac1436c6f875661bcd573c1f6b1ca
+ms.sourcegitcommit: b4119682bd3c036289e851fff56fde869c816479
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "44854245"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45204742"
 ---
 # <a name="manage-guest-access-in-microsoft-365-groups"></a>Gérer l’accès invité dans les groupes Microsoft 365
 
@@ -61,7 +61,7 @@ Si l’invité existe déjà dans votre répertoire, vous pouvez l’ajouter à 
   
 4. Sélectionnez **Ajouter des membres**, puis choisissez le nom de l’invité que vous souhaitez ajouter.
     
-5. Cliquez sur **Enregistrer**.
+5. Sélectionnez **Enregistrer**.
 
 Si vous souhaitez ajouter un invité directement à l’annuaire, vous pouvez [Ajouter des utilisateurs de collaboration B2B Azure Active Directory dans le portail Azure](https://docs.microsoft.com/azure/active-directory/b2b/add-users-administrator).
 
@@ -114,7 +114,7 @@ Pour plus d’informations, reportez-vous à la rubrique [autoriser ou bloquer d
 
 ## <a name="add-guests-to-the-global-address-list"></a>Ajouter des invités à la liste d’adresses globale
 
-Par défaut, les invités ne sont pas visibles dans la liste d’adresses globale d’Exchange. Utilisez les étapes répertoriées ci-dessous pour faire en sorte qu’un invité soit visible dans la liste d’adresses globale.
+Par défaut, les invités ne sont pas visibles dans la liste d’adresses globale d’Exchange. Utilisez les étapes répertoriées ci-dessous pour faire en sorte qu’un invité soit visible dans la liste d’adresses globale. Assurez-vous que l’invité est visible dans le centre d’administration Exchange Online. Les nouveaux invités peuvent prendre un peu de temps pour apparaître après leur ajout.
 
 Recherchez l’ObjectID de l’utilisateur invité en exécutant :
 

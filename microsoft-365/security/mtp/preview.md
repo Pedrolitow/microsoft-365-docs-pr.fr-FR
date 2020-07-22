@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 45bc42e825c55ca228b13e8d308f9a1384301d07
-ms.sourcegitcommit: 11218af1d792af297b4280ca5975d139d2bbe350
+ms.openlocfilehash: 4dde4d1b30fe5bcbe4d3bc63c4d998c804b0ce69
+ms.sourcegitcommit: b4119682bd3c036289e851fff56fde869c816479
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2020
-ms.locfileid: "45048266"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45204826"
 ---
 # <a name="microsoft-threat-protection-preview-features"></a>Fonctionnalités d’aperçu de la protection contre les menaces Microsoft
 
@@ -59,8 +59,4 @@ Les fonctionnalités et améliorations suivantes sont actuellement disponibles l
 
 - **[Guide de référence de schéma dans le portail](advanced-hunting-schema-tables.md#get-schema-information-in-the-security-center)** : informations sur les tables de schéma disponibles directement dans le centre de sécurité. Outre les descriptions de table et de colonne, cette référence fournit des informations sur les types d’événement pris en charge ( `ActionType` valeurs) et les exemples de requêtes.  
 
-- **[Tables d’identité et d’application](advanced-hunting-schema-tables.md)** : obtenez une visibilité sur les événements d’authentification, les requêtes Active Directory et l’activité liée aux applications avec les tables [IdentityLogonEvents](advanced-hunting-identitylogonevents-table.md), [IdentityQueryEvents](advanced-hunting-identityqueryevents-table.md)et [AppFileEvents](advanced-hunting-appfileevents-table.md) dans le schéma de chasse avancé.
-
 - **[Aller-retour : parcourir](advanced-hunting-go-hunt.md)** rapidement un tableau croisé dynamique à partir de l’examen d’un événement spécifique, d’un utilisateur, d’un appareil ou d’autres types d’entité à l’aide des fonctionnalités de recherche [avancée](advanced-hunting-overview.md) basées sur les requêtes.
-
-- **[Fonction FileProfile ()](advanced-hunting-fileprofile-function.md)** : utilisez dans vos requêtes de [chasse avancée](advanced-hunting-overview.md) pour incorporer des informations complètes sur les fichiers.
