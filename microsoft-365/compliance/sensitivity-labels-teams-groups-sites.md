@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Utilisez les étiquettes de confidentialité pour protéger le contenu des sites SharePoint et Microsoft Teams, ainsi que des Groupes Microsoft 365.
-ms.openlocfilehash: 7e4b12310d05ecbceb9df2eac5fe4d48e9275bb8
-ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
+ms.openlocfilehash: b9168320b5764a3d7ed4e1570c32f0f35ccbc44d
+ms.sourcegitcommit: a08103bc120bdec7cfeaf67c1be4e221241e69ad
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "44936925"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "45199624"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>Utiliser les étiquettes de confidentialité pour protéger le contenu dans Microsoft Teams, les Groupes Microsoft 365 et les sites SharePoint
 
@@ -109,11 +109,13 @@ Utilisez les instructions suivantes pour créer, modifier ou supprimer des étiq
 
 ### <a name="creating-and-publishing-labels-that-are-configured-for-sites-and-groups"></a>Créer et publier des étiquettes configurées pour les sites et les groupes
 
-Une fois que vous avez créé et publié une étiquette de confidentialité, il peut s’écouler jusqu’à 24 heures pour que l’étiquette devienne visible pour les utilisateurs d’équipes, de groupes et de sites. Utilisez les instructions suivantes pour publier une étiquette pour vos utilisateurs lorsque cette étiquette est configurée pour les paramètres de site et de groupe :
+Lorsqu’une étiquette de confidentialité est créée et publiée, elle devient visible pour les utilisateurs d’équipes, de groupes et de sites en moins d’une heure. Toutefois, si vous modifiez une étiquette existante, veuillez prévoir un délai de 24 heures. Utilisez les instructions suivantes pour publier une étiquette pour vos utilisateurs lorsque cette étiquette est configurée pour les paramètres de site et de groupe :
 
 1. Une fois que vous avez créé et configuré l’étiquette de confidentialité, ajoutez cette étiquette à une stratégie d’étiquette qui s’applique uniquement à quelques utilisateurs de test.
 
-2. Patientez 24 heures.
+2. Patientez pendant la réplication de la modification :
+    - Nouvelle étiquette : patientez pendant une heure.
+    - Étiquette existante : patientez pendant 24 heures.
 
 3. Au terme de ce délai d’attente, utilisez l’un des comptes d’utilisateur de test pour créer une équipe, un groupe Microsoft 365 ou un site SharePoint avec l’étiquette que vous avez créée à l’étape 1.
 
@@ -121,7 +123,7 @@ Une fois que vous avez créé et publié une étiquette de confidentialité, il 
 
 ### <a name="modifying-published-labels-that-are-configured-for-sites-and-groups"></a>Modification des étiquettes publiées configurées pour les sites et les groupes
 
-Nous vous recommandons de ne pas modifier les paramètres du site et du groupe pour une étiquette de confidentialité une fois l’étiquette appliquée aux équipes, aux groupes ou aux sites. Si vous le faites, autorisez jusqu’à 3 jours avant la réplication des modifications dans tous les conteneurs auxquels l’étiquette est appliquée. 
+Nous vous recommandons de ne pas modifier les paramètres du site et du groupe pour une étiquette de confidentialité une fois l’étiquette appliquée aux équipes, aux groupes ou aux sites. Si vous le faites, n’oubliez pas de patienter pendant 24 heures pour que les modifications se répliquent dans tous les conteneurs auxquels l’étiquette est appliquée. 
 
 De plus, si vos modifications incluent les **l’accès des utilisateurs externes** paramètre :
 
@@ -136,7 +138,7 @@ Si vous supprimez une étiquette de confidentialité dont les paramètres de sit
 
 1. Supprimez l’étiquette de confidentialité de toutes les stratégies d’étiquette qui incluent l’étiquette.
 
-2. Patientez 48 heures.
+2. Patientez pendant une heure.
 
 3. Après cette période d’attente, essayez de créer une équipe, un groupe ou un site et confirmez que l’étiquette n’est plus visible.
 
