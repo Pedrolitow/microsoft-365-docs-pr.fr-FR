@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Ce scénario de solution illustre comment gérer le cycle de vie de documents relatifs aux produits stockés dans SharePoint Online à l’aide d’étiquettes de rétention. Pour ce faire, vous pouvez utiliser les métadonnées de document pour classifier le contenu, et spécifiquement en appliquant automatiquement des étiquettes de rétention et en configurant la rétention basée sur les événements.
-ms.openlocfilehash: 8edd7ea1b64a5f7bf499892dcd32b945307c9668
-ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
+ms.openlocfilehash: a2e7a3887f9402cecb70ec60d4ff4e47f6a55ee9
+ms.sourcegitcommit: a08103bc120bdec7cfeaf67c1be4e221241e69ad
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45126475"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "45199851"
 ---
 # <a name="manage-the-lifecycle-of-sharepoint-documents-with-retention-labels"></a>Gérer le cycle de vie des documents SharePoint avec étiquettes de rétention
 
@@ -112,7 +112,7 @@ Voici le [plan de gestion de fichiers](file-plan-manager.md) l’étiquette de r
 
 - **Descripteurs de plan de gestion de fichiers :** (pour simplifier le scénario, aucun descripteur de fichier n’est fourni)
 
-La capture d’écran suivante montre les paramètres lorsque vous créez l’[étiquette de rétention](retention.md#retention-labels) de la spécification de produit dans le centre de sécurité et conformité. Vous pouvez créer le type d’événement de **Cessation de produit** lorsque vous créez l’étiquette de rétention. Consultez les étapes suivantes.
+La capture d’écran suivante montre les paramètres lorsque vous créez l’[étiquette de rétention](retention.md#retention-labels) de la spécification du produit dans le centre de conformité de Microsoft 365. Vous pouvez créer le type d’événement de **Cessation de produit** lorsque vous créez l’étiquette de rétention. Consultez les étapes suivantes.
 
 ![Paramètres de rétention de l’étiquette de la spécification de produit](../media/SPRetention5.png)
 
@@ -181,7 +181,7 @@ Pour plus d’informations sur les propriétés gérées et analysées, voir [A 
 
 KQL ne peut pas utiliser les propriétés analysées dans les requêtes de recherche. Elle doit utiliser une propriété gérée. Dans un scénario de recherche normal, vous créez une propriété gérée et la mappez à la propriété analysée dont vous avez besoin. Toutefois, pour appliquer automatiquement des étiquettes de rétention, vous pouvez uniquement spécifier dans propriétés gérées prédéfinies de KQL et non les propriétés gérées personnalisées. Un ensemble de propriétés gérées prédéfinies déjà créé dans le système pour la chaîne RefinableString00 à RefinableString199 peut être utilisé. Pour obtenir la liste complète, voir [Propriétés gérées non utilisées par défaut](https://docs.microsoft.com/sharepoint/manage-search-schema#default-unused-managed-properties). Ces propriétés gérées par défaut sont généralement utilisées pour définir des affinements de recherche.
 
-Pour que la requête KQL fonctionne et applique automatiquement l’étiquette de rétention correcte au contenu du document de produit, nous mappez les propriétés analysées **ows\_doc\_x0020\_Type** et **os\_\_État** à deux propriété gérée utilisable dans une recherche approfondie. Dans notre environnement de test pour ce scénario, **RefinableString00** et **RefinableString01** ne sont pas utilisées. Nous avons déterminé ceci en examinant **Propriétés gérées** dans **Gérer le schéma de recherche** dans le centre d’administration SharePont.
+Pour que la requête KQL fonctionne et applique automatiquement l’étiquette de rétention correcte au contenu du document de produit, nous mappez les propriétés analysées **ows\_doc\_x0020\_Type** et **os\_\_État** à deux propriété gérée utilisable dans une recherche approfondie. Dans notre environnement de test pour ce scénario, **RefinableString00** et **RefinableString01** ne sont pas utilisées. Nous avons déterminé ceci en examinant les **Propriétés gérées** dans **Gérer le schéma de recherche** dans le centre d’administration SharePoint.
 
 ![Propriétés gérées dans schéma de recherche](../media/SPRetention12.png)
 
@@ -217,7 +217,7 @@ Dans la zone de recherche, tapez **RefinableString00 : « spécification de pr
 
 Maintenant que nous avons vérifié que la requête KQL fonctionne correctement, créons la stratégie d’étiquette qui utilise une requête KQL pour appliquer automatiquement l’étiquette de rétention de la spécification de produit aux documents appropriés.
 
-1. Dans le [centre de sécurité et conformité](https://protection.office.com), accédez à **Classification** > **Étiquettes de rétention**, puis sélectionnez **Appliquer automatiquement une étiquette**. 
+1. Dans le [centre de conformité](https://compliance.microsoft.com/homepage), accédez à **Gestion des enregistrements** > **Stratégies d’étiquette**, puis sélectionnez **Appliquer automatiquement une étiquette**. 
 
    ![Sélectionnez appliquer automatiquement une étiquette sur la page d’étiquettes](../media/SPRetention16.png)
 
@@ -252,9 +252,7 @@ Maintenant que nous avons vérifié que la requête KQL fonctionne correctement,
 
 ### <a name="verifying-the-retention-label-was-automatically-applied"></a>La vérification de l’étiquette de rétention a été appliquée automatiquement
 
-Après sept jours, utilisez l’[explorateur d’activité de d’étiquettes](view-label-activity-for-documents.md) dans le centre de sécurité et conformité pour voir que la stratégie d’étiquette que nous avons créée a appliqué automatiquement les étiquettes de rétention dans ce scénario aux documents de produit. Les étiquettes de rétention ont également été mises en évidence dans la capture d’écran suivante aux accords de produit et les manuels de l’utilisateur, même si nous n’avons pas créé ces étiquettes de rétention et ces stratégies d’étiquette dans cet article.
-
-![Utilisez l’Explorateur des activités d’étiquettes pour vérifier que l’étiquette a été appliquée automatiquement](../media/SPRetention20.png)
+Après sept jours, utilisez l’[Explorateur des activités d’étiquette](view-label-activity-for-documents.md) dans le centre de conformité pour voir que la stratégie d’étiquette que nous avons créée a appliqué automatiquement les étiquettes de rétention dans ce scénario aux documents de produit. 
 
 Une autre étape de la vérification consiste à consulter les propriétés du document dans la bibliothèque de documents. Dans le panneau d’informations, vous pouvez voir que l’étiquette de rétention est appliquée à un document sélectionné.
 

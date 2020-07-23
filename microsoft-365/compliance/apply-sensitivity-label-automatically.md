@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Lorsque vous créez une étiquette de critère de diffusion, vous pouvez affecter automatiquement une étiquette à un document ou message électronique ou vous pouvez inviter les utilisateurs pour sélectionner l’étiquette que vous recommandez.
-ms.openlocfilehash: 9e02df52c6b95fef087b8056501ffda7c3ddad14
-ms.sourcegitcommit: 09a500a44d8723f8f2be87d9ad4ce7e453c5192b
+ms.openlocfilehash: 92811aff70e48992088abf221536684dcff794b8
+ms.sourcegitcommit: e6bf1af2d5cf54c3fcc3fa916abe268fc96bdd4e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "45094844"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "45189509"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Appliquer automatiquement une étiquette sensibilité au contenu
 
@@ -47,7 +47,7 @@ Deux méthodes s’offrent à vous pour appliquer automatiquement une étiquette
 
 - **Étiquetage côté service lorsque le contenu est déjà enregistré (dans SharePoint ou dans OneDrive) ou est envoyé par e-mail (traité par Exchange Online)**  : utilisez une stratégie d’étiquetage automatique. 
     
-    Cette méthode est appelée classification automatique avec des étiquettes de confidentialité. Elle est également appelée étiquetage automatique des données au repos (documents dans SharePoint et dans OneDrive) et de données en transit (courriers envoyés ou reçus par Exchange). Dans le cas d’Exchange, cela n’inclut pas les e-mails au repos (boîtes aux lettres). 
+    Cette méthode est également appelée étiquetage automatique des données au repos (documents dans SharePoint et dans OneDrive) et de données en transit (courriers envoyés ou reçus par Exchange). Dans le cas d’Exchange, cela n’inclut pas les e-mails au repos (boîtes aux lettres). 
     
     Comme cet étiquetage est appliqué par les services plutôt que par les applications, vous n’avez pas à vous soucier des applications des utilisateurs et de leur version. Par conséquent, cette fonctionnalité est immédiatement disponible dans toute l’organisation et est appropriée pour l’étiquetage à grande échelle. Les stratégies d’étiquetage automatique ne prennent pas en charge l’étiquetage recommandé, car l’utilisateur n’interagit pas avec le processus d’étiquetage. En effet, l’administrateur exécute les stratégies en mode simulation pour s’assurer que le contenu est correctement étiqueté avant d’appliquer réellement l’étiquette.
     
@@ -127,6 +127,8 @@ De plus, vous pouvez choisir si une condition doit détecter tous les types d’
 
 ### <a name="configuring-trainable-classifiers-for-a-label"></a>Configuration des classifieurs pouvant être formés pour une étiquette
 
+Cette option est actuellement en préversion.
+
 Lorsque vous sélectionnez l’option **Classifieurs pouvant être formés**, sélectionnez un ou plusieurs classifieurs pouvant être formés prédéfinis. Si vous avez créé vos propres classifieurs pouvant être formés personnalisés, vous pouvez également les sélectionner :
 
 ![Options pour les classifieurs pouvant être formés et les étiquettes de confidentialité](../media/sensitivity-labels-classifers.png)
@@ -136,9 +138,9 @@ Lorsque vous sélectionnez l’option **Classifieurs pouvant être formés**, s�
 
 Pour plus d’informations sur ces classifieurs, voir [Prise en main des classifieurs de formation (préversion)](classifier-getting-started-with.md).
 
-Pendant la période d’évaluation, les applications suivantes prennent en charge les classifieurs pouvant être formés pour les étiquettes de confidentialité :
+Pendant la période de préversion pour cette option, les applications suivantes prennent en charge les classifieurs pouvant être formés pour les étiquettes de confidentialité :
 
-- Applications Microsoft 365 pour les entreprises ([anciennement Office 365 ProPlus](https://docs.microsoft.com/deployoffice/name-change)) pour Windows, à partir du [Canal Bêta](https://office.com/insider) ([anciennement Office Insider](https://docs.microsoft.com/deployoffice/update-channels-changes)) :
+- Les applications Microsoft 365 pour les entreprises ([anciennement Office 365 ProPlus](https://docs.microsoft.com/deployoffice/name-change)) pour Windows, actuellement en cours de déploiement sur le [Canal actuel](https://docs.microsoft.com/deployoffice/overview-update-channels#current-channel-overview) dans la version 2006 et les versions ultérieures :
     - Word
     - Excel
     - PowerPoint
