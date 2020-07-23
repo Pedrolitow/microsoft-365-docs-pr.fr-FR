@@ -1,28 +1,26 @@
 ---
 title: Préparation de TLS 1.2 dans Office 365 et Office 365 GCC
 description: Comment préparer l’utilisation de TLS 1.2 pour toutes les combinaisons client-serveur et navigateur-serveur dans Office 365 et Office 365 GCC après la désactivation de la prise en charge de TLS 1.0 et 1.1.
-author: simonxjx
-manager: dcscontentpm
+author: workshay
+manager: laurawi
 localization_priority: Normal
 search.appverid:
 - MET150
 audience: ITPro
 ms.service: O365-seccomp
 ms.topic: article
-ms.author: v-six
+ms.author: shmehta
+ms.reviewer: krowley
 appliesto:
 - Office 365 Business
-ms.openlocfilehash: d3086c85adf76a322775ce53697504b77e672f9a
-ms.sourcegitcommit: 51a9f34796535309b8ca8b52da92da0a3621327b
+ms.openlocfilehash: b76854442fd74dddddcef778ae03a9d76ceb3cc6
+ms.sourcegitcommit: a53af7a228bb1f58cb8128a69a19da49f9e28700
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "45024819"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "45372497"
 ---
 # <a name="preparing-for-tls-12-in-office-365-and-office-365-gcc"></a>Préparation de TLS 1.2 dans Office 365 et Office 365 GCC
-
-> [!IMPORTANT]
-> Le monde est en pleine pandémie et, chez Microsoft, nous sommes conscients de l’impact de cette situation sur nos clients et nos partenaires. Pour alléger le fardeau de nos clients commerciaux, nous avons temporairement suspendu le déclassement de TLS 1.0 et 1.1. Une mise à jour sera envoyée selon un calendrier révisé après la stabilisation de la crise actuelle. (La révision de cet article est destinée à refléter l’évolution des changements.)
 
 ## <a name="summary"></a>Résumé
 
@@ -34,7 +32,7 @@ Pour plus d’informations sur la marche à suivre pour supprimer les dépendanc
 
 ## <a name="more-information"></a>Informations supplémentaires
 
-Nous avons déjà commencé la dépréciation des versions 1.0 et 1.1 de TLS en janvier 2020. Tous les clients, appareils ou services qui se connectent à Office 365 via les protocoles TLS 1.0 ou 1.1 dans nos instances DoD ou GCC High ne seront pas pris en charge. Pour nos clients commerciaux d’Office 365, nous interrompons toute mesure de dépréciation de TLS 1.0 et 1.1 jusqu’à la stabilisation de la situation concernant le COVID-19.
+Nous avons déjà commencé la dépréciation des versions 1.0 et 1.1 de TLS en janvier 2020. Tous les clients, appareils ou services qui se connectent à Office 365 via les protocoles TLS 1.0 ou 1.1 dans nos instances DoD ou GCC High ne seront pas pris en charge. Pour nos clients commerciaux d’Office 365, la dépréciation des protocoles TLS 1,0 et 1,1 débutera le 15 octobre 2020.
 
 Assurez-vous que toutes les combinaisons client-serveur et navigateur-serveur utilisent le protocole TLS 1.2 (ou une version plus récente) pour maintenir la connexion aux services Office 365. Il se peut que vous deviez procéder à la mise à jour de certaines combinaisons client-serveur et navigateur-serveur.
 

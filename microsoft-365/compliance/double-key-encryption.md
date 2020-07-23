@@ -12,44 +12,40 @@ ms.reviewer: esaggese
 localization_priority: Normal
 ms.collection:
 - M365-security-compliance
-ms.openlocfilehash: 47fc4bc47831970ef7a7f2087cf6c86b6fefb8c2
-ms.sourcegitcommit: fe20f5ed07f38786c63df0f73659ca472e69e478
+ms.openlocfilehash: d9ed155576d69889e53e4e4d1ce03e4233fd08ff
+ms.sourcegitcommit: 4789b261eb029d7c965421a1260acc110e6385db
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "45201680"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "45387441"
 ---
 # <a name="double-key-encryption-dke"></a>Chiffrement à double clé (DKE)
 
-> *S’applique à : [conformité Microsoft 365](https://www.microsoft.com/microsoft-365/business/compliance-management), [Azure information protection](https://azure.microsoft.com/pricing/details/information-protection)*
+> *S’applique à : double Key chiffrement pour la version préliminaire publique de Microsoft 365, [conformité microsoft 365](https://www.microsoft.com/microsoft-365/business/compliance-management), [Azure information protection](https://azure.microsoft.com/pricing/details/information-protection)*
 >
 > *Instructions pour : [client d’étiquetage unifié Azure information protection pour Windows](https://docs.microsoft.com/azure/information-protection/faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)*
 >
 > *Description du service : [conformité Microsoft 365](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)*
 
-Cette version préliminaire publique du chiffrement à double clé (DKE) vous permet d’utiliser le client d’étiquetage unifié Azure information protection pour protéger le contenu hautement sensible tout en conservant le contrôle total de votre clé.
-
-Le chiffrement à double clé requiert deux clés, utilisées ensemble, pour accéder au contenu protégé. Vous stockez une clé dans Microsoft Azure et vous la maintenez.
+Le chiffrement à clé double (DKE) utilise deux clés ensemble pour accéder au contenu protégé. Vous stockez une clé dans Microsoft Azure et vous la maintenez. Le client d’étiquetage unifié Azure information Protection protège le contenu hautement sensible tout en conservant le contrôle total de l’une de vos clés.
 
 Le chiffrement à double clé prend en charge les déploiements sur le Cloud et sur site. Ces déploiements permettent de s’assurer que les données chiffrées restent opaques, où que vous stockez les données protégées.
 
 Pour plus d’informations sur les clés de racine de client par défaut, consultez la rubrique [planification et implémentation de votre clé de client Azure information protection](https://docs.microsoft.com/azure/information-protection/plan-implement-tenant-key).
 
-Le chiffrement à double clé est similaire à un cadre de dépôt de sécurité qui nécessite à la fois une clé bancaire et une clé client pour accéder. Pour déchiffrer le contenu protégé, vous devez utiliser à la fois la clé gérée Microsoft et la clé détenue par le client.
-
 La vidéo suivante montre comment le chiffrement à clé double fonctionne pour sécuriser votre contenu.
+
+> [!VIDEO https://msit.microsoftstream.com/embed/video/f466a1ff-0400-a936-221c-f1eab45dc756]
 
 Si votre organisation dispose de l’une des conditions suivantes, vous pouvez utiliser DKE pour sécuriser votre contenu :
 
 - Vous souhaitez vous assurer que *vous* êtes le seul à pouvoir déchiffrer le contenu protégé, dans toutes les circonstances.
 - Vous ne souhaitez pas que Microsoft ait accès aux données protégées de façon autonome.
-- Vous avez des exigences réglementaires à maintenir des clés dans une limite géographique. Toutes les clés détenues par le client pour le chiffrement et le déchiffrement des données sont conservées dans votre centre de données.
-
-> [!VIDEO https://msit.microsoftstream.com/embed/video/f466a1ff-0400-a936-221c-f1eab45dc756]
+- Vous avez des exigences réglementaires à maintenir des clés dans une limite géographique. Toutes les clés que vous mettez en attente pour le chiffrement et le déchiffrement des données sont conservées dans votre centre de données.
 
 ## <a name="system-and-licensing-requirements-for-dke"></a>Exigences en matière de système et de licence pour DKE
 
-Cette version préliminaire publique du chiffrement à deux clés pour Microsoft 365 est disponible dans le cadre de Microsoft 365 E5 et Office 365 E5. Si vous n’avez pas de licence Microsoft 365 E5, vous pouvez vous inscrire pour obtenir une [version d’évaluation](https://aka.ms/M365E5ComplianceTrial). Pour plus d’informations sur ces licences, consultez [la rubrique Microsoft 365 Licensing Guidance for security & Compliance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
+Chiffrement à double clé pour Microsoft 365 partie de Microsoft 365 E5 et Office 365 E5. Si vous n’avez pas de licence Microsoft 365 E5, vous pouvez vous inscrire pour obtenir une [version d’évaluation](https://aka.ms/M365E5ComplianceTrial). Pour plus d’informations sur ces licences, consultez [la rubrique Microsoft 365 Licensing Guidance for security & Compliance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
 
 **Office Insider** Pour utiliser la préversion publique, vous devez être membre du programme Office Insider. Pour rejoindre Office Insider, accédez à [https://insider.office.com](https://insider.office.com) . Une fois que vous êtes membre, préparez votre environnement pour déployer les builds Office Insider en choisissant la méthode de déploiement appropriée pour votre organisation. Pour obtenir des instructions, consultez la rubrique [prise en main du déploiement des builds Office Insider](https://insider.office.com/business/deploy).
 
@@ -63,15 +59,19 @@ Cette version préliminaire publique du chiffrement à deux clés pour Microsoft
 
 ## <a name="about-this-public-preview-article"></a>À propos de cet article d’aperçu public
 
-Il existe plusieurs façons de procéder pour déployer le chiffrement à double clé. Cet article fournit des instructions détaillées afin que les administrateurs moins expérimentés déploient correctement le service. Si vous êtes familiarisé avec les technologies communes, telles que git, partagées par les méthodes de déploiement décrites dans cet article, vous pouvez choisir d’utiliser vos propres méthodes.
+Il existe plusieurs façons de procéder pour déployer le chiffrement à double clé. Cet article fournit des instructions détaillées afin que les administrateurs moins expérimentés déploient correctement le service. Si vous êtes familiarisé, vous pouvez choisir d’utiliser vos propres méthodes.
 
-Pour la préversion publique, nous avons inclus des instructions détaillées sur la façon de déployer le service de chiffrement à double clé sur Azure. Ce scénario n’est pas très probable en production. Pour la préversion publique à l’aide d’Azure, il s’agit d’un moyen rapide de déployer, qui vous permet de commencer à utiliser le chiffrement à clé double immédiatement.
+Cet article contient des instructions détaillées sur la façon de déployer le service de chiffrement à double clé sur Azure. Ce scénario n’est pas très probable en production. Pour la préversion publique, l’utilisation d’Azure est un moyen rapide de déployer DKE. Le déploiement vers Azure vous permet de commencer à utiliser le chiffrement à clé double immédiatement.
 
-Vous pouvez choisir de déployer le service où vous le souhaitez, qu’il soit local sur votre réseau ou auprès d’un autre fournisseur. Vous devrez publier le magasin de clés à l’aide des méthodes appropriées pour cet emplacement.
+Vous pouvez déployer le service localement sur votre réseau ou avec un autre fournisseur. Vous devrez publier le magasin de clés à l’aide de méthodes appropriées pour cet emplacement.
 
 ## <a name="deploy-double-key-encryption"></a>Déployer le chiffrement à double clé
 
-Suivez ces étapes générales pour configurer le chiffrement à double clé pour votre organisation. L’exemple de cet article utilise Azure comme destination de déploiement pour le service DKE. Si vous effectuez le déploiement vers un autre emplacement, vous devez fournir vos propres valeurs.
+Cet article et la vidéo de déploiement utilisent Azure comme destination de déploiement pour le service DKE. Si vous effectuez le déploiement vers un autre emplacement, vous devez fournir vos propres valeurs.
+
+Regardez la [vidéo sur le déploiement de chiffrement à double clé](https://msit.microsoftstream.com/video/cfdda3ff-0400-a521-1579-f1eacc37fc7e) pour voir pas à pas la présentation des concepts de l’article. La vidéo prend environ 18 minutes.
+
+Suivez ces étapes générales pour configurer le chiffrement à double clé pour votre organisation.
 
 1. [Installer les composants logiciels requis](#install-software-prerequisites)
 1. [Cloner le référentiel GitHub de chiffrement à double clé](#clone-the-dke-github-repository)
@@ -146,13 +146,13 @@ Les instructions suivantes sont destinées aux utilisateurs de git ou de code Vi
 
 5. Dans la boîte de dialogue **Sélectionner un dossier** qui s’affiche, accédez à l’emplacement où vous souhaitez stocker le référentiel et sélectionnez-le. À l’invite, sélectionnez **ouvrir**.
 
-    Le référentiel est ouvert dans Visual Studio code et affiche la branche git actuelle en bas à gauche. Votre branche actuelle doit être **Master**.
+    Le référentiel est ouvert dans Visual Studio code et affiche la branche git actuelle en bas à gauche. La branche doit être **Master**.
 
     Par exemple :
 
     :::image type="content" source="../media/dke-vscode-master.png" alt-text="Branche Visual Studio code Master":::
 
-6. Sélectionnez le masque de mots **,** puis sélectionnez **public_preview** dans la liste des branches. 
+6. Sélectionnez le masque de mots **,** puis sélectionnez **public_preview** dans la liste des branches.
 
    > [!IMPORTANT]
    > La sélection de la branche public_preview vous permet de vous assurer que vous disposez des fichiers appropriés pour générer le projet. Si vous ne sélectionnez pas la branche appropriée, votre déploiement échouera.
@@ -178,41 +178,79 @@ Choisissez d’utiliser ou non l’autorisation de messagerie ou de rôle. DKE n
 
 - **Autorisation de rôle**. Permet à votre organisation d’autoriser l’accès aux clés en fonction des groupes Active Directory et exige que le service Web interroge LDAP.
 
-Pour définir les paramètres d’accès à la clé pour DKE :
+**Pour définir les paramètres d’accès clés pour DKE à l’aide de l’autorisation de messagerie**
 
-1. Dans le fichier **appsettings.js** , définissez un seul des paramètres suivants :
+1. Ouvrez le fichier **appsettings.js** et localisez le `AuthorizedEmailAddress` paramètre.
 
-   - Pour l’autorisation de messagerie, recherchez le paramètre **AuthorizedEmailAddresses** . Ajoutez l’adresse de messagerie que vous souhaitez autoriser. Séparez les adresses de messagerie par des guillemets et des virgules. Par exemple : **"'AuthorizedEmailAddresses'" : ["email1@company.com", "Email2@company.com", Email3@company.com]**
+2. Ajoutez l’adresse ou les adresses de messagerie que vous souhaitez autoriser. Séparez les adresses de messagerie par des guillemets et des virgules. Par exemple :
 
-   :::image type="content" source="../media/dke-email-accesssetting.png" alt-text="appsettings.jsdu fichier affichant la méthode d’autorisation de messagerie":::
+   ```json
+   "AuthorizedEmailAddress": ["email1@company.com", "email2@company.com ", "email3@company.com"]
+   ```
 
-   - Pour l’autorisation de rôle, recherchez le paramètre **AuthorizedRoles** . Définissez avec les noms de groupe ActiveDirectory que vous souhaitez autoriser. Par exemple : **"AuthorizedRoles" : ["group1", "group2", "Group3"]**
+3. Recherchez le `LDAPPath` paramètre et supprimez le texte `If role authorization is used then this is the LDAP path` entre guillemets doubles. Laissez les guillemets doubles en place. Lorsque vous avez terminé, le paramètre doit ressembler à ce qui suit.
+
+   ```json
+   "LDAPPath": ""
+   ```
+
+4. Localisez le `AuthorizedRoles` paramètre et supprimez la ligne entière.
+
+Cette image montre le **appsettings.jssur** un fichier correctement mis en forme pour l’autorisation de messagerie.
+
+   :::image type="content" source="../media/dke-email-accesssetting.png" alt-text="appsettings.jssur le fichier affichant la méthode d’autorisation de messagerie":::
+
+**Pour définir les paramètres d’accès clés pour DKE à l’aide de l’autorisation de rôle**
+
+1. Ouvrez le fichier **appsettings.js** et localisez le `AuthorizedRoles` paramètre.
+
+2. Ajoutez les noms de groupe Active Directory que vous souhaitez autoriser. Séparez les noms de plusieurs groupes par des guillemets et des virgules. Par exemple :
+
+   ```json
+   "AuthorizedRoles": ["group1", "group2", "group3"]
+   ```
+
+3. Localisez le `LDAPPath` paramètre et ajoutez le domaine Active Directory. Par exemple :
+
+   ```json
+   "LDAPPath": "contoso.com"
+   ```
+
+4. Localisez le `AuthorizedEmailAddress` paramètre et supprimez la ligne entière.
+
+Cette image montre le **appsettings.jssur** un fichier correctement mis en forme pour l’autorisation de rôle.
 
    :::image type="content" source="../media/dke-role-accesssetting.png" alt-text="appsettings.jssur le fichier affichant la méthode d’autorisation de rôle":::
 
-2. Supprimez le paramètre qui n’est pas pertinent pour la méthode d’autorisation que vous avez choisie.
-
 #### <a name="tenant-and-key-settings"></a>Paramètres de client et de clé
 
-Les paramètres de client et de clé DKE se trouvent dans le fichier **appsettings.js** et le fichier **Startup.cs** .
+Les paramètres de client et de clé DKE se trouvent dans le fichier **appsettings.js** .
 
-Dans le fichier **appsettings.js** , modifiez les valeurs suivantes :
+**Pour configurer les paramètres de client et de clé pour DKE**
 
-- **ValidIssuers**. Remplacez `<tenantid>` par le GUID de votre client.
-- **JwtAudience**. Remplacez `<yourhostname>` par le nom d’hôte de l’ordinateur sur lequel le service DKE s’exécutera.
+1. Ouvrez le fichier **appsettings.js** .
+
+2. Recherchez le `ValidIssuers` paramètre et remplacez-le `<tenantid>` par votre ID de client. Vous pouvez localiser votre ID de locataire en accédant au portail Azure et en affichant les [Propriétés du client](https://aad.portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Properties). Par exemple :
+
+   ```json
+   "ValidIssuers": [
+     "https://sts.windows.net/9c99431e-b513-44be-a7d9-e7b500002d4b/"
+   ]
+   ```
+
+Localisez le `JwtAudience` . Remplacez `<yourhostname>` par le nom d’hôte de l’ordinateur sur lequel le service DKE s’exécutera. Par exemple :
+
+
 
   > [!IMPORTANT]
-  > La valeur de JwtAudience doit correspondre *exactement*au nom de votre hôte. Vous pouvez utiliser **localhost : 5000** lors du débogage. Toutefois, lorsque vous avez fini de déboguer, veillez à mettre à jour cette valeur sur le nom d’hôte du serveur.
+  > La valeur de `JwtAudience` doit correspondre *exactement*au nom de votre hôte. Vous pouvez utiliser **localhost : 5001** lors du débogage. Toutefois, lorsque vous avez fini de déboguer, veillez à mettre à jour cette valeur sur le nom d’hôte du serveur.
 
-- **LDAPPath**. Définissez la valeur comme suit :
+- `TestKeys:Name`. Entrez un nom pour votre clé. Par exemple : `TestKey1`
+- `TestKeys:Id`. Créez un GUID et entrez-le en tant que `TestKeys:ID` valeur. Par exemple, `DCE1CC21-FF9B-4424-8FF4-9914BD19A1BE`. Vous pouvez utiliser un site comme le [Générateur de GUID en ligne](https://guidgenerator.com/) pour générer un GUID de manière aléatoire.
 
-  - Si vous utilisez l’autorisation de rôle, entrez le domaine LDAP.
-  - Si vous utilisez l’autorisation de messagerie, laissez cette valeur vide.
+Cette image indique le format correct pour les paramètres de client et de clé dans **appsettings.jsactivé**. `LDAPPath`est configuré pour l’autorisation de rôle.
 
-   Pour plus d’informations, consultez la rubrique [Key Access Settings](#key-access-settings).
-
-- **TestKeys : nom**. Entrez un nom pour votre clé. Exemple : **TestKey1**
-- **TestKeys : ID**. Créez un GUID et entrez-le en tant que valeur **TestKeys : ID** . Par exemple, **DCE1CC21-FF9B-4424-8FF4-9914BD19A1BE**. Vous pouvez utiliser un site comme le [Générateur de GUID en ligne](https://guidgenerator.com/) pour générer un GUID de manière aléatoire.
+:::image type="content" source="../media/dke-appsettingsjson-tenantkeysettings.png" alt-text="Indique les paramètres client et clé corrects pour DKE dans le fichier appsettings.js.":::
 
 ### <a name="generate-test-keys"></a>Générer des clés de test
 
@@ -242,16 +280,18 @@ Pour générer des clés :
    openssl rsa -in key.pem -pubout > pubkeyonly.pem
    ```
 
-1. Dans un éditeur de texte, ouvrez **pubkeyonly. pem**. Copiez tout le contenu du fichier **pubkeyonly. pem** , à l’exception de la première et de la dernière ligne, dans la section **PublicPem** du fichier **appsettings.js** .
+1. Dans un éditeur de texte, ouvrez **pubkeyonly. pem**. Copiez tout le contenu du fichier **pubkeyonly. pem** , à l’exception de la première et de la dernière ligne, dans la `PublicPem` section du fichier **appsettings.js** .
 
-1. Dans un éditeur de texte, ouvrez **privkeynopass. pem**. Copiez tout le contenu du fichier **privkeynopass. pem** , à l’exception de la première et de la dernière ligne, dans la section **PrivatePem** du fichier **appsettings.js** .
+1. Dans un éditeur de texte, ouvrez **privkeynopass. pem**. Copiez tout le contenu du fichier **privkeynopass. pem** , à l’exception de la première et de la dernière ligne, dans la `PrivatePem` section du fichier **appsettings.js** .
 
-1. Supprimez tous les espaces et lignes de nouvelle ligne dans les sections **PublicPem** et **PrivatePem** .
+1. Supprimez tous les espaces et lignes de nouvelle ligne dans les `PublicPem` `PrivatePem` sections et.
 
     > [!IMPORTANT]
     > Lorsque vous copiez ce contenu, ne supprimez pas les données du PEM.
 
-1. Ouvrez le fichier **Startup.cs** et recherchez les lignes suivantes :
+1. Dans Visual Studio code, accédez au fichier **Startup.cs** . Ce fichier se trouve dans le DoubleKeyEncryptionService référentiel que vous avez cloné localement sous DoubleKeyEncryptionService\src\customer-key-store\.
+
+2. Recherchez les lignes suivantes :
 
    ```c#
         #if USE_TEST_KEYS
@@ -261,13 +301,13 @@ Pour générer des clés :
         #endif
    ```
 
-1. Remplacez ces lignes par le texte suivant :
+3. Remplacez ces lignes par le texte suivant :
 
    ```csharp
    services.AddSingleton<ippw.IKeyStore, ippw.TestKeyStore>();
    ```
 
-   Les résultats finaux doivent ressembler à l’image suivante.
+   Les résultats finaux doivent ressembler à ce qui suit.
 
    :::image type="content" source="../media/dke-startupcs-usetestkeys.png" alt-text="fichier startup.cs pour la préversion publique":::
 
@@ -305,11 +345,13 @@ Suivez les instructions ci-dessous pour générer le projet DKE localement :
 
    S’il y a des erreurs rouges, vérifiez la sortie de la console. Assurez-vous que vous avez effectué toutes les étapes précédentes correctement et que les versions de build correctes sont présentes.
 
-1. **Exécuter** \> **Démarrez le débogage** pour déboguer le processus. Si vous êtes invité à sélectionner un environnement, sélectionnez **.net Core**.
+2. Sélectionnez **exécuter** \> **Démarrer le débogage** pour déboguer le processus. Si vous êtes invité à sélectionner un environnement, sélectionnez **.net Core**.
 
-Le débogueur .NET Core se lance généralement vers **https://localhost:5001** . Pour afficher votre clé de test, accédez à **https://localhost:5001** , puis ajoutez une barre oblique (/) et le nom de votre clé.
+Le débogueur .net Core lance généralement vers' ' ' https://localhost:5001 `. To view your test key, go to ` https://localhost:5001 et ajoute une barre oblique (/) et le nom de votre clé. Par exemple :
 
-Par exemple :**https://localhost:5001/TestKey1**
+```https
+https://localhost:5001/TestKey1
+```
 
 La clé doit s’afficher au format JSON.
 
@@ -317,9 +359,9 @@ Votre installation est maintenant terminée. Avant de publier le keystore, dans 
 
 ### <a name="publish-the-key-store"></a>Publier le magasin de clés
 
-Les étapes suivantes décrivent comment créer une instance Azure App service pour héberger votre déploiement DKE, et comment publier vos clés générées sur Azure.
+Pour publier le magasin de clés, vous allez créer une instance de service d’application Azure pour héberger votre déploiement DKE. Ensuite, vous allez publier vos clés générées dans Azure.
 
-Pour créer une instance Azure Web App afin d’héberger votre déploiement DKE, procédez comme suit :
+**Pour créer une instance Azure Web App afin d’héberger votre déploiement DKE**
 
 1. Dans votre navigateur, connectez-vous au [portail Microsoft Azure](https://ms.portal.azure.com)et accédez à **app services**  >  **Add**.
 
@@ -434,9 +476,9 @@ Pour enregistrer votre magasin de clés :
 
 6. Sélectionnez **Ajouter une plateforme**.
  
-7. Dans le menu **configure plateformes** , sélectionnez **Web**.
+7. Dans la fenêtre contextuelle **configurer les plateformes** , sélectionnez **Web**.
  
-8. Sous **URI de redirection** , entrez l’URI de votre service de chiffrement à double clé. Entrez l’URL du service d’application, y compris le nom d’hôte et le domaine.
+8. Sous **URI de redirection**, entrez l’URI de votre service de chiffrement à double clé. Entrez l’URL du service d’application, y compris le nom d’hôte et le domaine.
 
     Par exemple : https://mycustomerkeystoretest.com
 
@@ -444,7 +486,7 @@ Pour enregistrer votre magasin de clés :
     - Si vous testez localement avec Visual Studio, utilisez **https://localhost:5001** .
     - Dans tous les cas, le modèle doit être **https**.
 
-    Vérifiez que le nom d’hôte correspond exactement au nom de l’hôte de service de l’application. Vous pouvez l’avoir remplacée par localhost pour dépanner la Build. Dans appsettings.jsactivé, il s’agit du nom d’hôte que vous avez identifié comme valeur pour le paramètre JwtAudience.
+    Vérifiez que le nom d’hôte correspond exactement au nom de l’hôte de service de l’application. Vous pouvez l’avoir modifié sur `localhost` pour dépanner la Build. Dans **appsettings.jsactivé**, cette valeur est le nom d’hôte que vous avez défini pour `JwtAudience` .
 
 6. Sous **attribution implicite**, activez la case à cocher **jetons d’ID** .
 
@@ -480,9 +522,7 @@ Votre magasin de clés DKE est maintenant enregistré. Continuez en [créant des
 
 ## <a name="create-labels-using-dke"></a>Créer des étiquettes à l’aide de DKE
 
-Une fois que vous avez enregistré votre magasin de clés, configurez les étiquettes de confidentialité dans le centre de conformité Microsoft 365 et appliquez le chiffrement à double clé à ces étiquettes.
-
-Dans l’interface utilisateur de création d’étiquette, sélectionnez l’option **utiliser le chiffrement à double clé** et entrez l’URL du point de terminaison de votre clé.
+Dans le centre de conformité Microsoft 365, créez une étiquette de sensibilité et appliquez le chiffrement comme vous le feriez autrement. Sélectionnez **utiliser le chiffrement à double clé** et entrez l’URL du point de terminaison de votre clé.
 
 Par exemple :
 
