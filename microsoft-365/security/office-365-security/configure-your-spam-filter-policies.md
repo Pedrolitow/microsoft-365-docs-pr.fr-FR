@@ -16,12 +16,12 @@ ms.assetid: 316544cb-db1d-4c25-a5b9-c73bbcf53047
 ms.collection:
 - M365-security-compliance
 description: Les administrateurs peuvent découvrir comment afficher, créer, modifier et supprimer des stratégies anti-courrier indésirable dans Exchange Online Protection (EOP) autonome.
-ms.openlocfilehash: 191f0492293738a9bce486226ca7d87d947a3f65
-ms.sourcegitcommit: df6cc8c2eb2a65c7668f2953b0f7ec783a596d15
+ms.openlocfilehash: c129ca73da516a5b4c420136abf0b5068e19e195
+ms.sourcegitcommit: b4119682bd3c036289e851fff56fde869c816479
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/13/2020
-ms.locfileid: "44726825"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45204862"
 ---
 # <a name="configure-anti-spam-policies-in-eop"></a>Configuration de stratégies de blocage du courrier indésirable dans Exchange Online Protection
 
@@ -348,16 +348,16 @@ Lorsqu’un verdict de filtre anti-courrier indésirable met un message en quara
 
 4. Dans la boîte de dialogue **\<Policy Name\>** qui s’ouvre, configurez les paramètres suivants :
 
-   - **Activer les notifications de courrier indésirable pour l’utilisateur final**: sélectionnez la case à cocher pour activer les notifications. Décochez la case pour désactiver les notifications.
+   - **Activer les notifications de courrier indésirable pour l’utilisateur final** : sélectionnez la case à cocher pour activer les notifications. Décochez la case pour désactiver les notifications.
 
    - **Envoyez des notifications de courrier indésirable à l’utilisateur final chaque (jours)**: sélectionnez la fréquence d’envoi des notifications. La valeur par défaut est de 3 jours. Vous pouvez entrer 1 à 15 jours.
 
-     Il existe trois cycles de notification de courrier indésirable pour l’utilisateur final sur une période de 24 heures qui commencent aux heures suivantes : 01:00 UTC, 08:00 UTC et 16:00 UTC. 
+     Il existe trois cycles de notification de courrier indésirable pour l’utilisateur final sur une période de 24 heures qui commencent aux heures suivantes : 01:00 UTC, 08:00 UTC et 16:00 UTC.
 
      > [!NOTE]
      > Si une notification du cycle précédent n’a pas été envoyée, un cycle ultérieur enverra la notification. Vous aurez alors l’impression de recevoir plusieurs notifications pour une même journée.
 
-   - **Langue de notification**: cliquez sur la liste déroulante et sélectionnez une langue disponible dans la liste. La valeur par défaut est **Par défaut**, ce qui signifie que les notifications de mise en quarantaine de l’utilisateur final utilisent la langue par défaut de l’organisation EOP.
+   - **Langue de notification**: cliquez sur la liste déroulante et sélectionnez une langue disponible dans la liste. La valeur **Par défaut** est définie par défaut, et correspond à la langue par défaut de l’organisation cloud.
 
    Lorsque vous avez terminé, cliquez sur **Enregistrer**.
 
@@ -643,7 +643,7 @@ XJS*C4JDBQADN1.NSBN3*2IDNEN*GTUBE-STANDARD-ANTI-UBE-TEST-EMAIL*C.34X
 
 ## <a name="allowblock-lists"></a>Listes autorisé/bloqué
 
-Dans certains cas, nos filtres ne recevront pas le message ou l’accès à nos systèmes prend du temps. Dans ce cas, la stratégie anti-courrier indésirable dispose d’une liste Autoriser et d’une liste de blocage disponible pour remplacer le verdict actuel. Cette option doit être utilisée avec modération uniquement dans la mesure où les listes peuvent être ingérables et temporaires dans la mesure où la pile de filtrage doit faire ce qu’elles sont censées faire.
+Dans certains cas, nos filtres ne recevront pas le message ou l’accès à nos systèmes prend du temps. Dans ce cas, la stratégie anti-courrier indésirable inclut une liste verte et une liste rouge qui permettent de remplacer le verdict actuel. Cette option doit être utilisée avec modération uniquement dans la mesure où les listes peuvent être ingérables et temporaires dans la mesure où la pile de filtrage doit faire ce qu’elles sont censées faire.
 
 > [!TIP]
 > Dans certains cas, il est possible que votre organisation n’accepte pas le verdict fourni par le service. Dans ce cas, vous souhaiterez peut-être conserver le contenu permanent de la liste verte ou rouge. Toutefois, si vous comptez placer un domaine sur la liste verte pendant une période prolongée, demandez à l’expéditeur de vérifier que le domaine est authentifié et qu’il est paramétré sur DMARC refuser si ce n’est pas le cas.
