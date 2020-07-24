@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Ce scénario de solution illustre comment gérer le cycle de vie de documents relatifs aux produits stockés dans SharePoint Online à l’aide d’étiquettes de rétention. Pour ce faire, vous pouvez utiliser les métadonnées de document pour classifier le contenu, et spécifiquement en appliquant automatiquement des étiquettes de rétention et en configurant la rétention basée sur les événements.
-ms.openlocfilehash: a2e7a3887f9402cecb70ec60d4ff4e47f6a55ee9
-ms.sourcegitcommit: a08103bc120bdec7cfeaf67c1be4e221241e69ad
+ms.openlocfilehash: 98e8b7fbe7a62af25797f813e2cefe1be2c39840
+ms.sourcegitcommit: 4789b261eb029d7c965421a1260acc110e6385db
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "45199851"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "45387451"
 ---
 # <a name="manage-the-lifecycle-of-sharepoint-documents-with-retention-labels"></a>Gérer le cycle de vie des documents SharePoint avec étiquettes de rétention
 
@@ -124,10 +124,10 @@ La capture d’écran suivante montre les paramètres lorsque vous créez l’[�
 1. Dans **Conserver ou supprimer le contenu basé** dans la liste déroulante, sélectionnez **un d’événement**.
 
 2. Sélectionnez **Choisir un type d’événement**.
+    
+    ![Créer un nouveau type d’événement pour l’étiquette de spécification de produit](../media/SPRetention6.png)
 
-   ![Créer un nouveau type d’événement pour l’étiquette de spécification de produit](../media/SPRetention6.png)
-
-3. Dans la page **Choisir un type d’événement**, sélectionnez **Vous pouvez créer des types d’événements ici**.
+3. Sélectionnez **Choisir un type d’événement**, puis dans la page **Choisir un type d’événement**, sélectionnez **Créer de nouveaux types d’événements**.
 
 4. Créez un type d’événement nommé **Cessation de produit**, donnez une description, puis sélectionnez **Terminer** pour le créer. 
 
@@ -252,7 +252,7 @@ Maintenant que nous avons vérifié que la requête KQL fonctionne correctement,
 
 ### <a name="verifying-the-retention-label-was-automatically-applied"></a>La vérification de l’étiquette de rétention a été appliquée automatiquement
 
-Après sept jours, utilisez l’[Explorateur des activités d’étiquette](view-label-activity-for-documents.md) dans le centre de conformité pour voir que la stratégie d’étiquette que nous avons créée a appliqué automatiquement les étiquettes de rétention dans ce scénario aux documents de produit. 
+Après sept jours, utilisez l’[Explorateur des activités](data-classification-activity-explorer.md) dans le centre de conformité pour voir que la stratégie d’étiquette que nous avons créée a appliqué automatiquement les étiquettes de rétention dans ce scénario aux documents de produit. 
 
 Une autre étape de la vérification consiste à consulter les propriétés du document dans la bibliothèque de documents. Dans le panneau d’informations, vous pouvez voir que l’étiquette de rétention est appliquée à un document sélectionné.
 
