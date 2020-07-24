@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 2e122487-e1f5-4f26-ba41-5689249d93ba
 description: 'Découvrez comment convertir une boîte aux lettres privée en boîte aux lettres partagée accessible par plusieurs utilisateurs. '
-ms.openlocfilehash: c4f71f12b430e239f5ea5791ba5b98a3109452b0
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 7ae00c1d9c901378798f063554a44a3e5b741442
+ms.sourcegitcommit: 41eb898143286755cd36df9f7e769de641263d73
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400111"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "45391529"
 ---
 # <a name="convert-a-user-mailbox-to-a-shared-mailbox"></a>Convertir une boîte aux lettres utilisateur en boîte aux lettres partagée
 
@@ -95,6 +95,9 @@ Si la taille de la boîte aux lettres est inférieure à 50 Go, vous pouvez [Sup
     
 Pour tout ce que vous devez savoir sur les boîtes aux lettres partagées, consultez la rubrique [à propos des boîtes aux lettres partagées](about-shared-mailboxes.md) et [créez une boîte aux lettres partagée](create-a-shared-mailbox.md).
 
+> [!NOTE]
+> Les boîtes aux lettres partagées ne nécessitent pas de licence distincte. Toutefois, si vous souhaitez activer une boîte aux lettres d'archivage ou placer une conservation inaltérable ou une conservation pour litige sur une boîte aux lettres partagée, vous devez affecter une licence Exchange Online Plan 1 avec l'Archivage Exchange Online ou une licence Exchange Online Plan 2 à la boîte aux lettres.
+
 
 ## <a name="convert-the-mailbox-of-a-deleted-user"></a>Convertir la boîte aux lettres d’un utilisateur supprimé
 
@@ -113,6 +116,7 @@ Imaginons que vous ayez supprimé un compte d’utilisateur et que vous vouliez 
 6. Une fois cette opération terminée, vous pouvez supprimer la licence de la boîte aux lettres de l’utilisateur. Ne supprimez pas l’ancienne boîte aux lettres de l’utilisateur. La boîte aux lettres partagée en a besoin en tant qu’ancre.
     
 7. Ajoutez des membres à la boîte aux lettres partagée.
+
 
 ## <a name="convert-a-shared-mailbox-back-to-a-users-private-mailbox"></a>Convertir une boîte aux lettres partagée en boîte aux lettres (privée) d’un utilisateur
 

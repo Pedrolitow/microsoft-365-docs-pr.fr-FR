@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 description: Découvrez comment lire et comprendre votre facture pour les produits Microsoft Business.
 keywords: comptes de facturation, informations sur l’organisation, factures
-ms.openlocfilehash: 17cfba93e8d892081900f6fcefb4504fb553b5bf
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: f0575683cdcaf0ac76de80c93e0d7573e8c63bae
+ms.sourcegitcommit: 41eb898143286755cd36df9f7e769de641263d73
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44402641"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "45391517"
 ---
 # <a name="understand-your-bill-or-invoice"></a>Comprendre votre facture
 
@@ -42,7 +42,7 @@ Si vous avez un abonnement Microsoft 365 uniquement, consultez [la rubrique comp
 
 Le haut de la première page identifie la personne responsable du paiement, le lieu d’envoi de la facture et un résumé des frais.
 
-| Terme | Description |
+| Term | Description |
 | --- | --- |
 | Vendu à |Le compte de facturation qui identifie le nom et l’adresse de l’entité juridique chargée du paiement. Ces informations peuvent être gérées sur la page <a href="https://go.microsoft.com/fwlink/p/?linkid=2084771" target="_blank">comptes de facturation</a> , dans laquelle vous pouvez trouver le contrat de compte et gérer les rôles et les autorisations. |
 | Facturer à |Identifie la personne qui reçoit la facture. Ces informations peuvent être gérées sur la page <a href="https://go.microsoft.com/fwlink/p/?linkid=2103629" target="_blank">profils de facturation</a> . Le profil de facturation est également affiché sur la page facture en ligne, dans la section Résumé de la **facture** . Pour en savoir plus sur les profils de facturation et sur la façon dont vous pouvez les utiliser pour créer des options de facturation plus flexibles pour votre organisation, consultez la rubrique [Manage Billing Profiles](manage-billing-profiles.md). |
@@ -55,7 +55,7 @@ Le haut de la première page identifie la personne responsable du paiement, le l
 
 Le **récapitulatif de facturation** affiche le résumé des frais depuis la période de facturation précédente, les crédits appliqués, les taxes et le montant total dû.
 
-| Terme | Description |
+| Term | Description |
 | --- | --- |
 | Frais|Nombre total de produits achetés pour cette période de facturation, ainsi que leurs frais et taxes connexes. Les achats sont regroupés pour fournir un aperçu concis de votre facture. |
 | Crédits |Crédits reçus à partir de retours |
@@ -67,7 +67,7 @@ Le **récapitulatif de facturation** affiche le résumé des frais depuis la pé
 
 Les pages de frais indiquent le coût réparti par produit. Pour les clients Azure, les frais peuvent être organisés par section facture. Pour plus d’informations sur la façon dont les sections de facturation sont utilisées avec les produits Azure, consultez la rubrique relative aux [factures](https://docs.microsoft.com/azure/billing/billing-mca-overview#invoice-sections) dans la rubrique [prise en main de votre compte de facturation Microsoft Customer Agreement](https://docs.microsoft.com/azure/billing/billing-mca-overview). Dans chaque commande de produit, le coût est réparti par famille de services.
 
-| Terme |Description |
+| Term |Description |
 | --- | --- |
 | Prix unitaire | Prix unitaire effectif du service (en devise de tarification) utilisé pour calculer les frais. Ce prix est unique pour un produit, une famille de services, un compteur et une offre. |
 | Compt | Quantité achetée ou consommée pendant la période de facturation |
@@ -79,11 +79,11 @@ Les pages de frais indiquent le coût réparti par produit. Pour les clients Azu
 
 Les détails des lignes varient en fonction du type de produit facturé. Par exemple, pour les produits Azure, la quantité de crédits Azure appliqués est affichée. Les produits basés sur le siège indiquent un prix unitaire et une quantité. Les détails de la facture indiquent les produits achetés, l’escompte ou les crédits qui ont été appliqués, le taux et le montant de la taxe, ainsi que les totaux des lignes.
 
-    `Total = Charges - Azure Credit + Tax`
+> Total = charges-crédit Azure + taxe
 
 Le montant total dû pour chaque famille de services est calculé en soustrayant les crédits Azure des crédits/frais et en ajoutant la taxe :
 
-    `Total = Charges/Credits - Azure Credit + Tax`
+> Total = charges/crédits-crédit Azure + taxe
 
 S’il existe des frais Azure sur votre facture pour lesquels vous souhaitez plus d’informations, consultez [la rubrique consulter votre facture de contrat de client Microsoft](https://docs.microsoft.com/azure/cost-management-billing/understand/review-customer-agreement-bill).
 

@@ -15,14 +15,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 05/15/2020
+ms.date: 07/23/2020
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 1d8bd316b847502f9e4b1c94afbf67a0472015a6
-ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
+ms.openlocfilehash: 92ad1b644dd0b3cac04657d01f70cfb274b7e517
+ms.sourcegitcommit: 41eb898143286755cd36df9f7e769de641263d73
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45126408"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "45391553"
 ---
 # <a name="whats-new-in-office-365-atp"></a>Nouveautés d’Office 365 - Protection avancée contre les menaces
 
@@ -38,6 +38,7 @@ Cet article répertorie les nouvelles fonctionnalités de la dernière version d
 ## <a name="julyaugust-2020"></a>Juillet/août 2020 
 
 - [Améliorations de l’expérience de la chasse](threat-explorer.md#experience-improvements-to-threat-explorer-and-real-time-detections)
+- [Appliquer facilement les paramètres recommandés à l’aide de stratégies de sécurité prédéfinies](preset-security-policies.md)
 
 ## <a name="marchapril-2020"></a>Mars/avril 2020
 
@@ -63,11 +64,6 @@ Cet article répertorie les nouvelles fonctionnalités de la dernière version d
 - [Exporter l’URL cliquez sur données pour une analyse hors ligne](threat-explorer.md#new-features-in-threat-explorer-and-real-time-detections) (plan 1 Office 365 DAV ou plan 2)
 
 - [Utiliser les vues de campagne dans Office 365 ATP (**Aperçu**)](campaigns.md)
-
-## <a name="july-2020"></a>Juillet 2020 
- 
-- [Améliorations de l’expérience de la chasse](threat-explorer.md#experience-improvements-to-threat-explorer-and-real-time-detections)
-
 
 ## <a name="november-2019"></a>Novembre 2019
 

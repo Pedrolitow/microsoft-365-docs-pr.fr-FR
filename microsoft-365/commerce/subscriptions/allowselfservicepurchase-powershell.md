@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Découvrez comment utiliser l’applet de commande AllowSelfServicePurchase PowerShell pour activer ou désactiver l’achat libre-service.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: ec5ebe814066916de5cafc176cdcd82bfd416a57
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: b35b62a97f8dc269be5db232e163391a8ce50658
+ms.sourcegitcommit: 41eb898143286755cd36df9f7e769de641263d73
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44403689"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "45391541"
 ---
 # <a name="use-allowselfservicepurchase-for-the-mscommerce-powershell-module"></a>Utiliser AllowSelfServicePurchase pour le module MSCommerce PowerShell
 
@@ -132,8 +132,7 @@ Update-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -ProductId $pr
 
 Le message d’erreur suivant s’affiche :
 
-    HandleError : Failed to retrieve policy with PolicyId 'AllowSelfServicePurchase', ErrorMessage - The underlying
-    connection was closed: An unexpected error occurred on a send.
+> HandleError : échec de la récupération de la stratégie avec PolicyId’AllowSelfServicePurchase', ErrorMessage-la connexion sous-jacente a été fermée : une erreur inattendue s’est produite lors de l’envoi.
 
 Cela peut être dû à une version plus ancienne de TLS (Transport Layer Security). Pour connecter ce service, vous devez utiliser TLS 1,2 ou une version ultérieure.
 

@@ -14,16 +14,15 @@ search.appverid:
 - MET150
 ms.collection:
 - M365-security-compliance
-ROBOTS: NOINDEX, NOFOLLOW
 description: Les administrateurs peuvent apprendre à configurer les entrées d’URL et de fichiers dans la liste des clients autorisés/bloqués du centre de sécurité & Compliance Center.
-ms.openlocfilehash: 742a44c7ed63c8a3037e2ada295c94f89afa9c93
-ms.sourcegitcommit: df6cc8c2eb2a65c7668f2953b0f7ec783a596d15
+ms.openlocfilehash: db34abf28b5ead8106eb0b1447052d63072b2da3
+ms.sourcegitcommit: 41eb898143286755cd36df9f7e769de641263d73
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/13/2020
-ms.locfileid: "44726814"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "45391565"
 ---
-# <a name="manage-urls-and-files-in-the-tenant-allowblock-list"></a>Gérer les URL et les fichiers dans la liste d’autorisation/de blocage du client
+# <a name="manage-urls-and-files-in-the-tenant-allowblock-list"></a>Gérer les URL et fichiers dans la liste verte/rouge du client
 
 > [!NOTE]
 > Les fonctionnalités décrites dans cette rubrique sont en mode aperçu, sont sujettes à modification et ne sont pas disponibles dans toutes les organisations.
@@ -58,17 +57,17 @@ Cette rubrique décrit comment configurer les entrées dans la liste des clients
 
 - Pour vous connecter à Exchange Online PowerShell, voir [Connexion à Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell). Pour vous connecter à un service Exchange Online Protection PowerShell autonome, voir [Se connecter à Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
-- Avant de pouvoir effectuer les procédures décrites dans cette rubrique, vous devez disposer des autorisations suivantes :
+- Des autorisations doivent vous être attribuées avant de pouvoir exécuter ces procédures. décrites dans cette rubrique :
 
   - Pour ajouter et supprimer des valeurs dans la liste d’autorisation/de blocage de client, vous devez être membre de l’un des groupes de rôles suivants :
 
-    - **Gestion** de l’organisation ou **administrateur de sécurité** dans le [Centre de sécurité & conformité](permissions-in-the-security-and-compliance-center.md).
-    - Gestion de l' **organisation** ou gestion de l' **hygiène** dans [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
+    - **Gestion de l’organisation** ou **Administrateur de sécurité** dans le [Centre de sécurité et de conformité](permissions-in-the-security-and-compliance-center.md).
+    - **Gestion de l’organisation** ou **Gestion de l’hygiène** dans [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
 
   - Pour un accès en lecture seule à la liste verte/rouge de client, vous devez être membre de l’un des groupes de rôles suivants :
 
-    - **Lecteur de sécurité** dans le [centre de sécurité & conformité](permissions-in-the-security-and-compliance-center.md).
-    - **Gestion de l’organisation en affichage seul** dans [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
+    - **Lecteur de sécurité** dans le [Centre de conformité et sécurité](permissions-in-the-security-and-compliance-center.md).
+    - **Gestion de l’organisation en affichage seul** dans[Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
 
 ## <a name="use-the-security--compliance-center-to-create-url-entries-in-the-tenant-allowblock-list"></a>Utiliser le centre de sécurité & conformité pour créer des entrées d’URL dans la liste verte/rouge de client
 
