@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Configurez des étiquettes de confidentialité pour le chiffrement qui protège vos données en limitant l’accès et l’utilisation.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 4f67ca4f9c57730d2e9b95f6060d6c302728f7dc
-ms.sourcegitcommit: fe20f5ed07f38786c63df0f73659ca472e69e478
+ms.openlocfilehash: ae9131b4cd70cfca4cc32116a651bf4642ed94f1
+ms.sourcegitcommit: c4a7b227f7d9abd666dfb93e3ded78ba8288e649
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "45201440"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45229434"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>Restreindre l'accès au contenu grâce à la mise en place d'un chiffrement par les étiquettes de confidentialité 
 
@@ -210,7 +210,8 @@ Pour plus d’informations, reportez-vous à [Émetteur Rights Management et pro
 
 ### <a name="double-key-encryption"></a>Chiffrement à double clé
 
-Cette fonctionnalité est actuellement disponible en préversion publique.
+> [!NOTE]
+> Cette fonctionnalité est actuellement déployée en préversion publique. Pour plus d’informations, voir [Annonce de la préversion publique du Chiffrement à double clé pour Microsoft 365](https://techcommunity.microsoft.com/t5/microsoft-security-and/announcing-public-preview-of-double-key-encryption-for-microsoft/ba-p/1534451).
 
 Sélectionnez cette option une fois que vous avez configuré le service Chiffrement à double clé et que vous devez l’utiliser pour les documents et courriers auxquels cette étiquette est appliquée.
 
@@ -369,9 +370,9 @@ Le chiffrement de vos documents et messages électroniques les plus confidentiel
 
 - Si votre organisation n'a pas [activé les étiquettes de confidentialité pour les fichiers Office dans SharePoint et OneDrive](sensitivity-labels-sharepoint-onedrive-files.md) :
     
-    - Recherche, eDiscovery et Delve ne seront pas opérationnels avec les fichiers chiffrés. 
+    - Recherche, eDiscovery et Delve ne seront pas opérationnels avec les fichiers chiffrés.
     - Les stratégies de protection contre la perte de données DLP fonctionnent avec les métadonnées de ces fichiers chiffrés (notamment les informations de l'étiquette de rétention), mais pas avec leur contenu (comme des numéros de carte de crédit dans des fichiers).
-    - Les utilisateurs ne peuvent pas ouvrir les fichiers chiffrés à l’aide d’Office sur le web. Lorsque des étiquettes de confidentialité sont activées pour les fichiers Office dans SharePoint et OneDrive, les utilisateurs peuvent se servir d'Office sur le web pour ouvrir des fichiers chiffrés, avec certaines [restrictions](sensitivity-labels-sharepoint-onedrive-files.md#limitations) qui incluent le chiffrement appliqué avec une clé locale (connue sous le nom de « conservez de votre propre clé » ou HYOK) et le chiffrement appliqué indépendamment d’une étiquette de confidentialité.
+    - Les utilisateurs ne peuvent pas ouvrir les fichiers chiffrés à l’aide d’Office sur le web. Lorsque des étiquettes de confidentialité sont activées pour les fichiers Office dans SharePoint et OneDrive, les utilisateurs peuvent se servir d’Office sur le web pour ouvrir des fichiers chiffrés, avec certaines [restrictions](sensitivity-labels-sharepoint-onedrive-files.md#limitations) qui incluent le chiffrement appliqué avec une clé locale (HYOK, Hold Your Own Key), le [chiffrement à double clé](#double-key-encryption) et le chiffrement appliqué indépendamment d’une étiquette de confidentialité.
 
 - Pour permettre à plusieurs utilisateurs de modifier un fichier chiffré au même moment, ils doivent tous utiliser Office pour le web. Si ce n’est pas le cas et que le fichier est déjà ouvert :
     
