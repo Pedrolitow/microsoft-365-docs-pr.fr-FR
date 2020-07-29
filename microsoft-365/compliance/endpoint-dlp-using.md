@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Découvrez comment configurer les stratégies de protection contre la perte de données (DLP) en utilisant les points de terminaison de protection contre la perte de données (EPDLP) de Microsoft 365.
-ms.openlocfilehash: c65b1f7ed97fc0400d88eecadfa2081a940bac41
-ms.sourcegitcommit: a08103bc120bdec7cfeaf67c1be4e221241e69ad
+ms.openlocfilehash: 38300769a4d6d3a4093fe403e79f5b13e71f2c1c
+ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "45199960"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45430242"
 ---
 # <a name="using-endpoint-data-loss-prevention-preview"></a>Utilisation des points de terminaison de protection contre la perte de données (Preview)
 
@@ -108,15 +108,14 @@ Ces scénarios nécessitent que les appareils soient déjà intégrés et report
 3. Dans le cadre de ce scénario, sélectionnez **Confidentialité**, **Données d’informations d’identification personnelles (PII) pour les États-Unis** puis sélectionnez **Suivant**.
 4. Désactivez la case à cocher**État** pour tous les emplacements, sauf pour les **Appareils**. Cliquez sur **Suivant**.
 5. Acceptez la sélection par défaut **Vérifier et personnaliser les paramètres du modèle**, puis sélectionnez **Suivant**.
-6. Acceptez les options par défaut **Détecter lorsque ce contenu est partagé** et **Avec des personnes en dehors de mon organisation**, puis sélectionnez **Suivant**.
-7. Acceptez les valeurs par défaut**Actions de protection** et choisissez **Suivant**.
-8. Sélectionnez **Audit ou restreindre les activités sur les appareils Windows** et laissez **Audit uniquement**. Cliquez sur **Suivant**.
-9. Accepter la valeur par défaut **Je veux tester le contenu tout d’abord** et choisir **Afficher les conseils de stratégie en mode test**. Cliquez sur **Suivant**.
-10. Passez en revue vos paramètres, puis sélectionnez **Envoyer**.
-11. La nouvelle stratégie DLP s’affiche dans la liste de stratégies.
-12. Consultez l’Explorateur d’activités pour les données des points de terminaison monitorés. Configurez le filtre d’emplacement pour les appareils et ajoutez la stratégie, puis filtrez par nom de stratégie pour afficher l’impact de cette stratégie. Pour plus d’informations, voir [Prise en main de l’Explorateur d’activités](data-classification-activity-explorer.md) si nécessaire.
-13. Essayez de partager un test qui contient du contenu qui déclenchera la condition de données d’informations d’identification personnelle (PII) américaine avec une personne extérieure à votre organisation. Cette opération doit déclencher la stratégie.
-14. Consultez l’Explorateur d’activités pour l’événement.
+6. Acceptez les valeurs par défaut**Actions de protection** et choisissez **Suivant**.
+7. Sélectionnez **Audit ou restreindre les activités sur les appareils Windows** et laissez **Audit uniquement**. Cliquez sur **Suivant**.
+8. Accepter la valeur par défaut **Je veux tester le contenu tout d’abord** et choisir **Afficher les conseils de stratégie en mode test**. Cliquez sur **Suivant**.
+9. Passez en revue vos paramètres, puis sélectionnez **Envoyer**.
+10. La nouvelle stratégie DLP s’affiche dans la liste de stratégies.
+11. Consultez l’Explorateur d’activités pour les données des points de terminaison monitorés. Configurez le filtre d’emplacement pour les appareils et ajoutez la stratégie, puis filtrez par nom de stratégie pour afficher l’impact de cette stratégie. Pour plus d’informations, voir [Prise en main de l’Explorateur d’activités](data-classification-activity-explorer.md) si nécessaire.
+12. Essayez de partager un test qui contient du contenu qui déclenchera la condition de données d’informations d’identification personnelle (PII) américaine avec une personne extérieure à votre organisation. Cette opération doit déclencher la stratégie.
+13. Consultez l’Explorateur d’activités pour l’événement.
 
 ### <a name="scenario-2-modify-the-existing-policy-set-an-alert"></a>Scénario 2 : modifier la stratégie existante, créer une alerte
 

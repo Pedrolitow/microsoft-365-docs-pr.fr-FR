@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 767349fa-f646-46d9-9dab-4a65049bdd1f
 description: Mettez à jour votre numéro de téléphone administrateur et votre adresse de messagerie dans le centre d’administration. Vous aurez besoin de ces informations pour réinitialiser votre propre mot de passe d’administrateur.
-ms.openlocfilehash: bd8ee28cbc7982ea5b057fecb34d362557a5d5a9
-ms.sourcegitcommit: b95e958df130b5fbbe5d8a8882d1bbf20b27a285
+ms.openlocfilehash: ed7e8152ffdf05d94068e6bdb81697dee737ea01
+ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "44407919"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45429953"
 ---
 # <a name="update-your-admin-phone-number-and-email-address"></a>Mettre à jour votre numéro de téléphone et votre adresse de messagerie d’administrateur
 
@@ -41,13 +41,13 @@ Si vous cherchez comment modifier les informations de profil de votre société,
   
 ## <a name="to-update-your-name-phone-number-and-email-address"></a>Mettre à jour votre nom, votre numéro de téléphone et votre adresse de courrier
 
-Utilisez la page **informations personnelles** pour modifier votre nom, votre numéro de téléphone mobile et votre adresse de courrier de secours. L’adresse de messagerie de secours est utilisée pour les notifications importantes, telles que la réinitialisation de votre mot de passe d’administrateur (et non le mot de passe d’administrateur de votre ordinateur). 
+Utilisez la page **paramètres et confidentialité** pour modifier votre nom, votre numéro de téléphone mobile et votre adresse de messagerie de secours. L’adresse de messagerie de secours est utilisée pour les notifications importantes, telles que la réinitialisation de votre mot de passe d’administrateur (et non le mot de passe d’administrateur de votre ordinateur). 
   
 1. Accédez au centre d’administration Microsoft 365.
 
-2. Dans l’en-tête, sélectionnez l’icône de votre profil \> **mon compte** \> **informations personnelles**.
+2. Dans l’en-tête, sélectionnez l’icône de votre profil \> **My Account** \> **Settings and Privacy**.
 
-3. Dans la section **Détails du contact** , sélectionnez Modifier. Mettez à jour votre adresse de messagerie mobile, de téléphone et de secours. Assurez-vous que vous utilisez un autre adresse de messagerie Microsoft pour votre adresse de messagerie de secours.
+3. Dans la section **Préférences de contact** , sélectionnez **gérer et développer les préférences de contact**. Mettez à jour votre adresse de messagerie mobile, de téléphone et de secours. Assurez-vous que vous utilisez un autre adresse de messagerie Microsoft pour votre adresse de messagerie de secours.
 
     > [!IMPORTANT]
     > L’adresse de messagerie de secours et le numéro de téléphone mobile sont nécessaires pour réinitialiser votre mot de passe d’administrateur (et non le mot de passe d’administrateur de votre ordinateur).

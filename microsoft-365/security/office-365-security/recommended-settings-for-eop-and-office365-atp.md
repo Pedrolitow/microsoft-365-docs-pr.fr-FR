@@ -16,12 +16,12 @@ ms.assetid: 6f64f2de-d626-48ed-8084-03cc72301aa4
 ms.collection:
 - M365-security-compliance
 description: Quelles sont les meilleures pratiques pour les paramètres de sécurité Exchange Online Protection (EOP) et Advanced Threat Protection (ATP) ? Quelles sont les recommandations actuelles pour la protection standard ? Qu’est-ce qui doit être utilisé si vous voulez être plus strict ? Quels sont les autres éléments que vous obtenez si vous utilisez également la protection avancée contre les menaces ?
-ms.openlocfilehash: 542dce4d2abe9a40fcc5eef57502be5c37a34d57
-ms.sourcegitcommit: 688d62a8c52e4fb0feb721bb92b535effc278f54
+ms.openlocfilehash: f34c4e0aad2413fdeb082c37f980e6e4548db6b3
+ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "45389844"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45430374"
 ---
 # <a name="recommended-settings-for-eop-and-office-365-atp-security"></a>Paramètres recommandés pour la sécurité ATP d’Office 365
 
@@ -194,7 +194,8 @@ Pour configurer ces paramètres, reportez-vous à la rubrique [set up Office 365
 
 |Nom de la fonctionnalité de sécurité|Standard|Empêcher|Commentaire|
 |---|---|---|---|
-|**Utiliser les liens fiables dans : applications Office 365** <br/><br/> _EnableSafeLinksForO365Clients_|Activé <br/><br/> `$true`|Activé <br/><br/> `$true`|Utiliser des liens fiables ATP dans les applications Office 365, Office pour iOS et Android.|
+|**Utiliser les liens fiables dans : applications Office 365** <br/><br/> _EnableSafeLinksForO365Clients_|Activé <br/><br/> `$true`|Activé <br/><br/> `$true`|Utilisez des liens fiables ATP dans les clients Office 365 Desktop et mobile (iOS et Android).|
+|**Utiliser les liens fiables dans : compagnons Office Web Access** <br/><br/> _EnableSafeLinksForWebAccessCompanion_|Activé <br/><br/> `$true`|Activé <br/><br/> `$true`|Utiliser les liens fiables ATP dans Office Web Apps.|
 |**Ne pas suivre lorsque les utilisateurs cliquent sur les liens fiables** <br/><br/> _TrackClicks_|Désactivé <br/><br/> `$true`|Désactivé <br/><br/> `$true`||
 |**Ne pas autoriser les utilisateurs à cliquer sur les liens fiables vers l’URL d’origine** <br/><br/> _AllowClickThrough_|Activé <br/><br/> `$false`|Activé <br/><br/> `$false`||
 |

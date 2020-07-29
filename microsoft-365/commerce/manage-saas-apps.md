@@ -14,14 +14,16 @@ ms.collection:
 ms.custom: AdminSurgePortfolio
 search.appverid: MET150
 description: Découvrez comment activer et gérer des applications tierces dans le centre d’administration Microsoft 365.
-ms.openlocfilehash: ed1a88345ae5cc135a43f4297ce518b444eaabe7
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: c8d2764dfa7795707712cbd9ce212f78c4d43d45
+ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44402581"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45429989"
 ---
 # <a name="manage-third-party-app-subscriptions-for-your-organization"></a>Gérer les abonnements aux applications tierces pour votre organisation
+
+Vous pouvez gérer les licences et la facturation pour les applications tierces dans le nouveau centre d’administration Microsoft 365. Les fonctionnalités mises à jour incluent une gestion améliorée des abonnements, un meilleur accès aux informations de facturation et une flexibilité accrue pour la gestion des factures. La gestion des abonnements repose sur la plateforme commerce mise à jour de Microsoft. Cela s’applique aux applications logicielles en tant que service que les clients achètent directement ou auprès d’un fournisseur tiers.
 
 ::: moniker range="o365-21vianet"
 
@@ -31,6 +33,7 @@ ms.locfileid: "44402581"
 ::: moniker-end
 
 Vous pouvez gérer les licences et la facturation pour les applications tierces dans le centre d’administration Microsoft 365 avec le mode aperçu activé. Les fonctionnalités mises à jour incluent une gestion améliorée des abonnements, un meilleur accès aux informations de facturation et une flexibilité accrue pour la gestion des factures. La gestion des abonnements repose sur la plateforme commerce mise à jour de Microsoft. Cela s’applique aux applications logicielles en tant que service que les clients achètent directement ou à partir d’un fournisseur tiers.
+
 
 ## <a name="how-to-get-software-as-a-service-apps"></a>Procédure d’obtention d’applications logicielles en tant que service
 
@@ -104,7 +107,7 @@ Les administrateurs peuvent modifier le nombre de licences appartenant à leur o
 
 ## <a name="manage-payment-methods"></a>Gestion des modes de paiement
 
-Les applications logicielles en tant que service ont chacune un profil de facturation affecté. Les profils de facturation vous permettent de personnaliser les produits inclus dans votre facture, ainsi que le mode de paiement de vos factures. Ces parties prenantes sont les suivantes :
+Les applications logicielles en tant que service ont chacune un profil de facturation affecté. Les profils de facturation vous permettent de personnaliser les produits inclus dans votre facture, ainsi que le mode de paiement de vos factures. En voici la liste :
 
 - **Modes de paiement** – cartes de crédit ou transfert de chèques/fils
 - **Informations de contact** : adresse de facturation et nom de contact

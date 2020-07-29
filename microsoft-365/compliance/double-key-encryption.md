@@ -12,12 +12,12 @@ ms.reviewer: esaggese
 localization_priority: Normal
 ms.collection:
 - M365-security-compliance
-ms.openlocfilehash: d9ed155576d69889e53e4e4d1ce03e4233fd08ff
-ms.sourcegitcommit: 4789b261eb029d7c965421a1260acc110e6385db
+ms.openlocfilehash: 7f54832001f80418ffb09bc45da8f32c79f3df53
+ms.sourcegitcommit: 1b83b6bcacb997324bc4be355deba6daf319591d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "45387441"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "46503035"
 ---
 # <a name="double-key-encryption-dke"></a>Chiffrement à double clé (DKE)
 
@@ -33,9 +33,11 @@ Le chiffrement à double clé prend en charge les déploiements sur le Cloud et 
 
 Pour plus d’informations sur les clés de racine de client par défaut, consultez la rubrique [planification et implémentation de votre clé de client Azure information protection](https://docs.microsoft.com/azure/information-protection/plan-implement-tenant-key).
 
-La vidéo suivante montre comment le chiffrement à clé double fonctionne pour sécuriser votre contenu.
+<!--
+The following video shows how Double Key Encryption works to secure your content.
 
 > [!VIDEO https://msit.microsoftstream.com/embed/video/f466a1ff-0400-a936-221c-f1eab45dc756]
+-->
 
 Si votre organisation dispose de l’une des conditions suivantes, vous pouvez utiliser DKE pour sécuriser votre contenu :
 
@@ -45,7 +47,7 @@ Si votre organisation dispose de l’une des conditions suivantes, vous pouvez u
 
 ## <a name="system-and-licensing-requirements-for-dke"></a>Exigences en matière de système et de licence pour DKE
 
-Chiffrement à double clé pour Microsoft 365 partie de Microsoft 365 E5 et Office 365 E5. Si vous n’avez pas de licence Microsoft 365 E5, vous pouvez vous inscrire pour obtenir une [version d’évaluation](https://aka.ms/M365E5ComplianceTrial). Pour plus d’informations sur ces licences, consultez [la rubrique Microsoft 365 Licensing Guidance for security & Compliance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
+Le chiffrement à double clé pour Microsoft 365 est fourni avec Microsoft 365 E5 et Office 365 E5. Si vous n’avez pas de licence Microsoft 365 E5, vous pouvez vous inscrire pour obtenir une [version d’évaluation](https://aka.ms/M365E5ComplianceTrial). Pour plus d’informations sur ces licences, consultez [la rubrique Microsoft 365 Licensing Guidance for security & Compliance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
 
 **Office Insider** Pour utiliser la préversion publique, vous devez être membre du programme Office Insider. Pour rejoindre Office Insider, accédez à [https://insider.office.com](https://insider.office.com) . Une fois que vous êtes membre, préparez votre environnement pour déployer les builds Office Insider en choisissant la méthode de déploiement appropriée pour votre organisation. Pour obtenir des instructions, consultez la rubrique [prise en main du déploiement des builds Office Insider](https://insider.office.com/business/deploy).
 
@@ -69,7 +71,7 @@ Vous pouvez déployer le service localement sur votre réseau ou avec un autre f
 
 Cet article et la vidéo de déploiement utilisent Azure comme destination de déploiement pour le service DKE. Si vous effectuez le déploiement vers un autre emplacement, vous devez fournir vos propres valeurs.
 
-Regardez la [vidéo sur le déploiement de chiffrement à double clé](https://msit.microsoftstream.com/video/cfdda3ff-0400-a521-1579-f1eacc37fc7e) pour voir pas à pas la présentation des concepts de l’article. La vidéo prend environ 18 minutes.
+Regardez la [vidéo sur le déploiement de chiffrement à double clé](https://youtu.be/vDWfHN_kygg) pour voir pas à pas la présentation des concepts de l’article. La vidéo prend environ 18 minutes.
 
 Suivez ces étapes générales pour configurer le chiffrement à double clé pour votre organisation.
 
@@ -535,11 +537,9 @@ Toutes les étiquettes DKE que vous ajoutez commencent à apparaître pour les u
 
 ### <a name="enable-dke-in-your-client"></a>Activer DKE dans votre client
 
-Si vos étiquettes DKE n’apparaissent pas sous le ruban de sensibilité dans Microsoft Office, il se peut que DKE ne soit pas activé pour votre client.
-
 Activez DKE pour votre client en ajoutant les clés de Registre suivantes :
 
-```ini
+```properties
     [HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\MSIPC\flighting]
     "DoubleKeyProtection"=dword:00000001
 

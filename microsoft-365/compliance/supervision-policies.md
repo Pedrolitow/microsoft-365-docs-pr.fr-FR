@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.custom: seo-marvel-apr2020
 titleSuffix: Microsoft 365 Compliance
-ms.openlocfilehash: 5ba6f86ca44fbddf5fb603c5312c9fedebfad225
-ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
+ms.openlocfilehash: 009ea920854cfb88082d1c59ba78ac3531d253cf
+ms.sourcegitcommit: 1b83b6bcacb997324bc4be355deba6daf319591d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45127311"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "46502925"
 ---
 # <a name="supervision-policies"></a>Stratégies de surveillance
 
@@ -159,7 +159,7 @@ Le modèle ne fournit pas de liste exhaustive du langage injurieux. De plus, les
 
 Le modèle de langage offensant surveille le courrier électronique en fonction des types de langue suivants :
 
-|**Type**|**Description**|
+|**Type (Type)**|**Description**|
 |:-----|:-----|
 | **Blasphèmes** | Expressions qui dépassent la plupart des gens. |
 | **Slurs** | Expressions qui portent préjudice à des groupes spécifiques (par exemple, race, ethnique, orientation sexuelle, handicap). |
@@ -286,14 +286,6 @@ Voici une répartition des valeurs affichées dans la colonne **type de balise**
 ## <a name="audit"></a>Audit
 
 Dans certains cas, vous devez fournir des informations aux auditeurs de réglementation ou de conformité pour prouver le contrôle des activités et des communications des employés. Ces informations peuvent être un résumé de toutes les activités de surveillance associées à une stratégie définie ou à chaque fois qu’une stratégie de surveillance est modifiée. Les stratégies de surveillance disposent de pistes d’audit intégrées pour une préparation complète des audits internes ou externes. Des historiques d’audit détaillés de toutes les actions surveillées par vos stratégies de surveillance fournissent des preuves de procédures de surveillance.
-
-Les activités de stratégie de surveillance suivantes sont vérifiées et disponibles dans les journaux d’audit unifiés :
-
-|**Activité**|**Commandes associées**|
-|:-----|:-----|
-| **Créer une stratégie** | [New-Supervisoryreviewpolicyv2 permet](https://docs.microsoft.com/powershell/module/exchange/new-supervisoryreviewpolicyv2) <br> [New-SupervisoryReviewRule](https://docs.microsoft.com/powershell/module/exchange/new-supervisoryreviewrule) |
-| **Modifier une stratégie** | [Set-Supervisoryreviewpolicyv2 permet](https://docs.microsoft.com/powershell/module/exchange/set-supervisoryreviewpolicyv2) <br> [Set-SupervisoryReviewRule](https://docs.microsoft.com/powershell/module/exchange/set-supervisoryreviewrule) |
-| **Suppression d’une stratégie** | [Remove-Supervisoryreviewpolicyv2 permet](https://docs.microsoft.com/powershell/module/exchange/remove-supervisoryreviewpolicyv2) |
 
 Afficher les activités d’audit dans le journal d’audit unifié ou avec l’applet de commande PowerShell [Search-UnifiedAuditLog](https://docs.microsoft.com/powershell/module/exchange/search-unifiedauditlog) .
 

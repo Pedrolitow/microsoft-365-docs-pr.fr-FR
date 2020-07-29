@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Les administrateurs peuvent apprendre à appliquer des paramètres de stratégie standard et stricts pour les fonctionnalités de protection d’Exchange Online Protection (EOP) et Office 365 Advanced Threat Protection (ATP).
-ms.openlocfilehash: 34445c617d2dda59a65b197db2f42324d0085ab3
-ms.sourcegitcommit: 688d62a8c52e4fb0feb721bb92b535effc278f54
+ms.openlocfilehash: dd730639aa15709bafd600d4cc2706befb143cd4
+ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "45389871"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45430398"
 ---
 # <a name="preset-security-policies-in-eop-and-office-365-atp"></a>Stratégies de sécurité prédéfinies dans EOP et Office 365 ATP
 
@@ -88,9 +88,10 @@ Lorsque plusieurs stratégies sont appliquées à un utilisateur, l’ordre suiv
 
 1. Stratégie de sécurité prédéfinie de **protection stricte**
 2. Stratégie de sécurité prédéfinie **protection standard**
-3. Toutes les autres stratégies associées.
+3. Stratégies de sécurité personnalisées
+4. Stratégies de sécurité par défaut
 
-En d’autres termes, les paramètres de la stratégie de **protection stricte** remplacent les paramètres de la stratégie de **protection standard** , qui remplace les paramètres des autres stratégies associées.
+En d’autres termes, les paramètres de la stratégie de **protection stricte** remplacent les paramètres de la stratégie de **protection standard** , qui remplace les paramètres d’une stratégie personnalisée, ce qui remplace les paramètres de la stratégie par défaut.
 
 ## <a name="assign-preset-security-policies-to-users"></a>Affecter des stratégies de sécurité prédéfinies aux utilisateurs
 

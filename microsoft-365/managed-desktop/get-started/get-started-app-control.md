@@ -10,12 +10,12 @@ audience: ITpro
 ms.topic: article
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 12df7b074019ea47f2e293b71c6b0b25fe46f66f
-ms.sourcegitcommit: 63887d742c59cc660fc85537b335e98a9dc66fbe
+ms.openlocfilehash: 431e6cb3b8d7ab7e1dd317918fab4821889c7d4e
+ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/18/2020
-ms.locfileid: "45170694"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45430458"
 ---
 # <a name="get-started-with-app-control"></a>Prise en main du contrôle d’application
 
@@ -26,6 +26,19 @@ Microsoft Managed Desktop simplifie le contrôle des applications en prenant en 
 ## <a name="initial-deployment-of-apps"></a>Déploiement initial d’applications
 
 Lorsque vous déployez pour la première fois des applications, le bureau géré Microsoft doit évaluer son comportement actuel. Les étapes exactes d’activation du contrôle d’application varient selon que des appareils ont déjà été déployés dans votre environnement.
+
+### <a name="devices-not-yet-in-use"></a>Appareils qui ne sont pas encore utilisés
+
+Si vous n’avez pas encore de périphériques en cours d’utilisation, ouvrez un ticket de service avec Microsoft Managed Desktop Operations demandant à activer le contrôle des applications. Les opérations déploient progressivement des stratégies vers des groupes de déploiement suivant cette planification :
+
+|Groupe de déploiement  |Type de stratégie  |Calendrier  |
+|---------|---------|---------|
+|Tester     |  Audit       |  Jour 0       |
+|Premier     | Enforced        | Jour 1        |
+|Rapide     | Enforced        |  Jour 2       |
+|Larges     | Enforced        |  Jour 3       |
+
+Vous pouvez toujours ouvrir une autre demande de service pour suspendre ou restaurer une partie de ce déploiement à tout moment pendant le déploiement.
 
 ### <a name="devices-already-in-use"></a>Appareils déjà utilisés
 
@@ -39,21 +52,10 @@ Si au moins un périphérique de bureau géré Microsoft est déjà utilisé, pr
 |---------|---------|---------|
 |Tester     |  Audit       |  Jour 0       |
 |Premier     | Enforced        | Jour 1        |
-|Rapide     | Enforced        |  Jour 3       |
-|Larges     | Enforced        |  Jour 7       |
+|Rapide     | Enforced        |  Suspendu, lancement à la demande       |
+|Larges     | Enforced        |  Suspendu, lancement à la demande       |
 
 Vous pouvez toujours ouvrir une autre demande de service pour suspendre ou restaurer une partie de ce déploiement à tout moment pendant le déploiement.
 
-### <a name="devices-not-yet-in-use"></a>Appareils qui ne sont pas encore utilisés
 
-Si vous n’avez pas encore de périphériques en cours d’utilisation, ouvrez un ticket de service avec Microsoft Managed Desktop Operations demandant à activer le contrôle des applications. Les opérations déploient progressivement des stratégies vers des groupes de déploiement suivant cette planification :
-
-|Groupe de déploiement  |Type de stratégie  |Calendrier  |
-|---------|---------|---------|
-|Tester     |  Audit       |  Jour 0       |
-|Premier     | Enforced        | Jour 1        |
-|Rapide     | Enforced        |  Jour 3       |
-|Larges     | Enforced        |  Jour 7       |
-
-Vous pouvez toujours ouvrir une autre demande de service pour suspendre ou restaurer une partie de ce déploiement à tout moment pendant le déploiement.
 

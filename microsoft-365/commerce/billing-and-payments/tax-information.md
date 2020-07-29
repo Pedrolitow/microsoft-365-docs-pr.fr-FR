@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -15,20 +15,17 @@ ms.collection:
 - Adm_TOC
 - commerce
 search.appverid:
-- BCS160
 - MET150
-- MOE150
-- BEA160
 description: 'Déterminez le montant des taxes à payer pour votre abonnement Microsoft 365 pour les entreprises dans différentes régions. '
 ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
-ms.openlocfilehash: 72939c40ad340e751be30aecc6e102570ea42eb0
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: de5f05b50138606cd60e8c6ab1999a7ed2090dce
+ms.sourcegitcommit: 50526f81ce3f57d58f0a7c0df4fe21685c5a0236
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44401749"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45434060"
 ---
 # <a name="tax-information"></a>Informations fiscales
 
@@ -122,7 +119,7 @@ Vous pouvez prétendre à un taux de TVA de 0 % :
 
 3. Dans la section **paramètres & Actions** , sélectionnez **modifier l’adresse d’utilisation du service**.
 
-4. Sur la page **modifier votre adresse d’utilisation des services** , saisissez votre numéro de TVA dans la zone numéro de **TVA** , puis sélectionnez **Enregistrer**.
+4. Sur la page **modifier votre adresse d’utilisation des services** , dans la zone numéro de **TVA** , saisissez votre numéro de TVA, y compris le préfixe et sans espaces. Sélectionnez **Enregistrer**.
 
 ::: moniker-end
 
@@ -134,7 +131,7 @@ Vous pouvez prétendre à un taux de TVA de 0 % :
 
 2. Sélectionnez le nom de l’abonnement, puis sélectionnez **autres actions** \> **modifier le numéro de TVA**.
   
-3. Sur la page **modifier votre adresse d’utilisation des services** , saisissez votre numéro de TVA dans la zone numéro de **TVA** , puis sélectionnez **Envoyer**.
+3. Sur la page **modifier votre adresse d’utilisation des services** , dans la zone numéro de **TVA** , saisissez votre numéro de TVA, y compris le préfixe et sans espaces. Sélectionnez **Enregistrer**.
 
 ::: moniker-end
 
@@ -184,8 +181,7 @@ Préparez la documentation suivante :
 | Organisations internationales qui détiennent la taxe | Certification/lettre de l’administration fiscale locale |
 | Porto Rico | Certificado de Compras exentas |
   
-## <a name="related-articles"></a>Articles connexes
+## <a name="related-content"></a>Contenu connexe
   
-[Consulter votre facture](view-your-bill-or-invoice.md)
-  
-[Comprendre votre facture](understand-your-invoice.md)
+[Afficher votre](view-your-bill-or-invoice.md) facture (article) \
+[Comprendre votre](understand-your-invoice.md) facture (article)

@@ -9,12 +9,12 @@ f1.keywords:
 ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: a1cf21fdd53ca90218370fb9c87547c64e867cd8
-ms.sourcegitcommit: bad47f9c69025d76d1e161519640cf7e238bd3b2
+ms.openlocfilehash: 61ee024cc483f9be172063a256cedd3827d6807a
+ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "44735513"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45430494"
 ---
 #  <a name="network-configuration-for-microsoft-managed-desktop"></a>Configuration du réseau pour Bureau géré Microsoft
 
@@ -33,32 +33,33 @@ Par ailleurs, pour optimiser les performances des services gérés de bureau gé
 
 Le proxy ou le pare-feu doit prendre en charge TLS 1,2. Dans le cas contraire, vous devrez peut-être désactiver la détection de protocole.
 
-### <a name="endpoints-allowed---specific-for-microsoft-managed-desktop"></a>Points de terminaison autorisés-spécifiques pour le bureau géré Microsoft
+### <a name="endpoints-allowed-that-are-necessary-for-microsoft-managed-desktop"></a>Points de terminaison autorisés pour le bureau géré Microsoft
 
-Microsoft Managed Desktop utilise le portail Azure pour héberger sa console Web. Les URL suivantes dans le tableau ci-dessous doivent figurer dans la liste autorisée de votre proxy et pare-feu afin que les appareils de bureau gérés Microsoft puissent communiquer avec les services Microsoft.  
+Microsoft Managed Desktop utilise le portail Azure pour héberger sa console Web. Les URL suivantes doivent figurer dans la liste autorisée de votre proxy et pare-feu afin que les périphériques de bureau gérés Microsoft puissent communiquer avec les services Microsoft.  
 
-Notez que l’URL du bureau géré Microsoft ci-dessous est utilisée pour tous les services exécutés sur l’API cliente. Vous devez vous assurer que cette URL est toujours accessible sur votre réseau d’entreprise.
+L’URL du bureau géré Microsoft est utilisée pour tous les services exécutés sur l’API cliente. Vous devez vous assurer que cette URL est toujours accessible sur votre réseau d’entreprise.
 
 Service Microsoft  | URL requises sur la liste verte 
---- | --- | ---
+--- | ---
 Bureau géré Microsoft | prod-mwaas-services-customerapi.azurewebsites.net
 Obtenir de l’aide | \*. support.services.microsoft.com  <br>inprod.support.services.microsoft.com  <br>supportchannels.services.microsoft.com  <br>graph.windows.net  <br>login.windows.net  <br>prod-mwaas-services-customerapi.azurewebsites.net
 Assistance rapide | remoteassistance.support.services.microsoft.com <br>relay.support.services.microsoft.com <br>channelwebsdks.azureedge.net  <br>web.vortex.data.microsoft.com  <br>gateway.channelservices.microsoft.com <br>\*. lync.com
 Assistant support et récupération Microsoft | \*. apibasic.diagnostics.office.com  <br>\*. api.diagnostics.office.com
  
 
-### <a name="endpoints-allowed---other-microsoft-products"></a>Points de terminaison autorisés-autres produits Microsoft
+### <a name="endpoints-allowed-used-by-other-microsoft-products"></a>Points de terminaison autorisés utilisés par d’autres produits Microsoft
 
 Il existe des URL de plusieurs produits Microsoft qui doivent figurer dans la liste autorisée afin que les appareils de bureau gérés Microsoft puissent communiquer avec ces services Microsoft. Utilisez les liens pour afficher la liste complète de chaque produit. 
 
-Service Microsoft | Source de documentation-URL requises sur la liste verte
+Service Microsoft | Documentation
 --- | ---
-Windows 10 entreprise, y compris Windows Update pour les entreprises | [Gérer les points de terminaison de connexion pour Windows 10, version 1803](https://docs.microsoft.com/windows/privacy/manage-windows-1803-endpoints)<br><br>[Gérer les points de terminaison de connexion pour Windows 10, version 1809](https://docs.microsoft.com/windows/privacy/manage-windows-1809-endpoints)<br><br>[Gérer les points de terminaison de connexion pour Windows 10, version 1903](https://docs.microsoft.com/windows/privacy/manage-windows-1903-endpoints)<br><br>[Gérer les points de terminaison de connexion pour Windows 10, version 2004](https://docs.microsoft.com/windows/privacy/manage-windows-2004-endpoints)<br><br>time.windows.com
-Optimisation de la remise | [Configurer l’optimisation de la remise pour les mises à jour de Windows 10](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization)
+Windows 10 entreprise, y compris Windows Update pour les entreprises | [Gérer les points de terminaison de connexion pour Windows 10, version 1803](https://docs.microsoft.com/windows/privacy/manage-windows-1803-endpoints)<br><br>[Gérer les points de terminaison de connexion pour Windows 10, version 1809](https://docs.microsoft.com/windows/privacy/manage-windows-1809-endpoints)<br><br>[Gérer les points de terminaison de connexion pour Windows 10, version 1903](https://docs.microsoft.com/windows/privacy/manage-windows-1903-endpoints)<br><br>[Gérer les points de terminaison de connexion pour Windows 10, version 2004](https://docs.microsoft.com/windows/privacy/manage-windows-2004-endpoints)
+Optimisation de la distribution | [Configurer l’optimisation de la remise pour les mises à jour de Windows 10](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization)
 Microsoft 365 | [URL et plages d’adresses IP Microsoft 365](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges)
 Azure Active Directory | [Ports et protocoles d’identité hybrides](https://docs.microsoft.com/azure/active-directory/hybrid/reference-connect-ports) , ainsi que les [exigences de port Active Directory et des services de domaine Active Directory](https://aka.ms/AA26ygm) 
 Microsoft Intune | [Configuration requise pour la configuration réseau Intune](https://docs.microsoft.com/intune/network-bandwidth-use)<br>[Points de terminaison réseau pour Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/intune-endpoints)
 Protection avancée contre les menaces Microsoft Defender (ATP) | [Points de terminaison ATP Microsoft Defender](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-proxy-internet-windows-defender-advanced-threat-protection#enable-access-to-windows-defender-atp-service-urls-in-the-proxy-server)
+Windows Autopilot | [Configuration requise pour le réseau Windows AutoPilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-autopilot-requirements#networking-requirements)
 
 <!---
 Microsoft service  | URLs required on allow list | Documentation source

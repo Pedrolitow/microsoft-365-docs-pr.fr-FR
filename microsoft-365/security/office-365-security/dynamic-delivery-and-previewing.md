@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Lorsque vous configurez vos stratégies de pièces jointes approuvées ATP, vous choisissez la remise dynamique pour éviter les retards de message et permettre aux utilisateurs de prévisualiser les pièces jointes en cours d’analyse.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b22112617ecba191c7ee8d7daab0de3cde1bf8c3
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 7e2da24ebac5863ab7852fdf8f9c7af8d507698b
+ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44819351"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45430350"
 ---
 # <a name="dynamic-delivery-and-previewing-with-atp-safe-attachments"></a>Remise et aperçu dynamiques à l’aide de pièces jointes fiables ATP
 
@@ -68,20 +68,20 @@ Supposons qu’une organisation utilise une remise dynamique pour sa [stratégie
 
 ## <a name="additional-considerations"></a>Considérations supplémentaires
 
-Il existe certains scénarios dans lesquels la remise dynamique n’est pas prise en charge. Elles incluent notamment les éléments suivants :
+Il existe certains scénarios dans lesquels les pièces jointes fiables (y compris la remise dynamique ne sont pas prises en charge). Cela inclut ce qui suit :
 
-- Messages électroniques figurant dans des dossiers publics
+- Messages électroniques figurant dans des dossiers publics.
 
-- Messages électroniques qui sont acheminés vers la boîte aux lettres de l’utilisateur, puis reversez-les à l’aide de règles personnalisées
+- Messages électroniques qui sont acheminés vers la boîte aux lettres de l’utilisateur, puis reviennent à ce dernier à l’aide de règles personnalisées.
 
-- Messages électroniques déplacés (automatiquement ou manuellement) en dehors de la boîte aux lettres hébergée et à d’autres emplacements, y compris les dossiers d’archivage
+- Messages électroniques déplacés (automatiquement ou manuellement) en dehors de la boîte aux lettres hébergée et à d’autres emplacements, y compris les dossiers d’archivage.
 
-- Messages électroniques supprimés
+- Messages électroniques supprimés.
 
-- Dossier de recherche de boîte aux lettres d’un utilisateur en état d’erreur
+- Dossier de recherche de boîte aux lettres d’un utilisateur dans un état d’erreur.
 
-- Environnements dans lesquels un administrateur Exchange Online a activé Exclaimer. Pour résoudre ce message, consultez la rubrique [les messages avec des pièces jointes ne sont pas remis lorsque la remise et l’exclaimement dynamiques ATP sont utilisés](https://support.microsoft.com/help/4014438)
+- Environnements dans lesquels un administrateur Exchange Online a activé Exclaimer. Pour résoudre ce message, consultez la rubrique [les messages avec des pièces jointes ne sont pas remis lorsque la remise et l’exclaimement dynamiques ATP sont utilisés](https://support.microsoft.com/help/4014438).
 
-- Messages chiffrés à l’aide de [S/MIME (Secure/Multipurpose Internet Mail Extensions)](s-mime-for-message-signing-and-encryption.md))
+- Messages chiffrés avec [S/MIME (Secure/Multipurpose Internet Mail Extensions)](s-mime-for-message-signing-and-encryption.md)).
 
-- Dans les cas où la remise dynamique n’est pas prise en charge, les pièces jointes fiables ATP n’analysent pas les messages électroniques. Toutefois, la remise des messages électroniques contenant des pièces jointes contenant des URL est vérifiée, en fonction de la configuration de vos [stratégies de liens fiables ATP](set-up-atp-safe-links-policies.md) . Dans ce cas, les URL dans les messages électroniques et les fichiers Office sont vérifiées.
+- Dans les cas où la remise dynamique n’est pas prise en charge, les pièces jointes fiables n’analysent pas les messages électroniques. Toutefois, la remise des messages électroniques contenant des pièces jointes contenant des URL est vérifiée, en fonction de la configuration de vos [stratégies de liens fiables ATP](set-up-atp-safe-links-policies.md) . Dans ce cas, les URL dans les messages électroniques et les fichiers Office sont vérifiées.

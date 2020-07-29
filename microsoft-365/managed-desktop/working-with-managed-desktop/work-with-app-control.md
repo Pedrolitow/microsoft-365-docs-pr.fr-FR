@@ -10,12 +10,12 @@ audience: ITpro
 ms.topic: article
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 74cd1ec93058ed733e7d79da2d6932f04acfa5da
-ms.sourcegitcommit: 63887d742c59cc660fc85537b335e98a9dc66fbe
+ms.openlocfilehash: 9efe6ba6704b0e1633973d157c38827221316bbd
+ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/18/2020
-ms.locfileid: "45170695"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45430446"
 ---
 # <a name="work-with-app-control"></a>Utiliser le contrôle d’application
 
@@ -54,8 +54,8 @@ Les opérations déploient progressivement des stratégies vers des groupes de d
 |---------|---------|---------|
 |Tester     |  Audit       |  Jour 0       |
 |Premier     | Enforced        | Jour 1        |
-|Rapide     | Enforced        |  Jour 3       |
-|Larges     | Enforced        |  Jour 7       |
+|Rapide     | Enforced        |  Jour 2       |
+|Larges     | Enforced        |  Jour 3       |
 
 
 Vous pouvez suspendre ou restaurer le déploiement à tout moment pendant le déploiement. Pour ce faire, ouvrez une autre demande de service avec des opérations.

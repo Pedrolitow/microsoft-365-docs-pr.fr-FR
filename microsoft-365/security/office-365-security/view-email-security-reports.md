@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Découvrez comment rechercher et utiliser des rapports de sécurité de messagerie pour votre organisation. Les rapports de sécurité de messagerie sont disponibles dans le centre de sécurité & conformité.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 26dfa8ec046122dce28582fb3d7b395843572a88
-ms.sourcegitcommit: 222fc3f8841de82b1b558f47db8a79aa5054d0ed
+ms.openlocfilehash: 762903428245797ecdc0357dc485e8fe25d2203e
+ms.sourcegitcommit: 50526f81ce3f57d58f0a7c0df4fe21685c5a0236
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/11/2020
-ms.locfileid: "45102920"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45434254"
 ---
 # <a name="view-email-security-reports-in-the-security--compliance-center"></a>Afficher les rapports de sécurité de courrier dans le centre de sécurité et conformité
 
@@ -34,7 +34,7 @@ Un grand nombre de rapports sont disponibles dans le [Centre de conformité secu
 ## <a name="compromised-users-report"></a>Rapport sur les utilisateurs compromis
 
 > [!NOTE]
-> Ce rapport est disponible dans les organisations Microsoft 365 avec des boîtes aux lettres Exchange Online. Elle n’est pas disponible dans les organisations Exchange Online Protection (EOP) autonomes sans boîtes aux lettres Exchange Online.
+> Ce rapport est disponible dans les organisations Microsoft 365 avec des boîtes aux lettres Exchange Online. Elle n’est pas disponible dans les organisations Exchange Online Protection (EOP) autonomes.
 
 Le rapport **utilisateurs compromis** indique le nombre de comptes d’utilisateur marqués comme **suspects** ou **restreints** au cours des 7 derniers jours. Les comptes dans l’un de ces États sont problématiques ou même compromis. Avec une utilisation fréquente, vous pouvez utiliser le rapport pour repérer les pics, voire les tendances, dans les comptes suspects ou restreints. Pour plus d’informations sur les utilisateurs compromis, consultez [la rubrique relative à la réponse à un compte de courrier compromis](responding-to-a-compromised-email-account.md).
 
@@ -139,7 +139,7 @@ Pour revenir à l’affichage de rapport, cliquez sur **afficher le rapport**.
 
 Le **rapport d’état de flux** de courrier contient des informations sur les messages malveillants, le courrier indésirable, le hameçonnage et le serveur Edge bloqué. Pour plus d’informations, consultez la rubrique [flux de rapport d’État](view-mail-flow-reports.md#mailflow-status-report).
 
-## <a name="malware-detection-in-email-report"></a>Détection de programmes malveillants dans le rapport de messagerie
+## <a name="malware-detections-in-email-report"></a>Détections de programmes malveillants dans le rapport de messagerie
 
 Le rapport **détections de programmes malveillants dans le courrier électronique** affiche des informations sur les détections de programmes malveillants dans les messages électroniques entrants et sortants (programmes malveillants détectés par Exchange Online protection ou EOP). Pour plus d’informations sur la protection contre les programmes malveillants dans EOP, consultez la rubrique [Anti-Malware Protection in EOP](anti-malware-protection.md).
 
@@ -162,7 +162,7 @@ Si vous cliquez sur **afficher les détails table**, vous pouvez voir les détai
 - **Date**
 - **Adresse de l’expéditeur**
 - **Adresse du destinataire**
-- **ID de message**
+- **ID du message**: disponible dans le champ d’en-tête **message-ID** de l’en-tête du message et doit être unique. Un exemple de valeur est `<08f1e0f6806a47b4ac103961109ae6ef@server.domain>` (Notez les chevrons).
 - **Subject**
 - **Filename**
 - **Nom du programme malveillant**
@@ -267,11 +267,14 @@ Pour revenir à l’affichage de rapport, cliquez sur **afficher le rapport**.
 
 ## <a name="threat-protection-status-report"></a>Rapport d’état de protection contre les menaces
 
-Le rapport d' **État de protection contre les menaces** est disponible à la fois dans EOP et dans Office 365 ATP ; Toutefois, les rapports contiennent des données différentes. Par exemple, les clients EOP peuvent afficher des informations sur les programmes malveillants détectés dans les courriers électroniques, mais pas sur les [fichiers malveillants détectés dans SharePoint Online, OneDrive ou Microsoft teams](atp-for-spo-odb-and-teams.md). Pour plus d’informations sur les rapports ATP Office 365, voir [afficher les rapports pour office 365 Advanced Threat Protection](view-reports-for-atp.md).
+Le rapport d' **État de protection contre les menaces** est disponible à la fois dans EOP et dans Office 365 ATP ; Toutefois, les rapports contiennent des données différentes. Par exemple, les clients EOP peuvent afficher des informations sur les programmes malveillants détectés dans les courriers électroniques, mais pas sur les [fichiers malveillants détectés dans SharePoint Online, OneDrive ou Microsoft teams](atp-for-spo-odb-and-teams.md).
 
-Il s’agit d’un rapport intelligent qui affiche des courriers électroniques malveillants détectés et bloqués, et permet aux administrateurs de sécurité d’identifier les tendances ou de déterminer si les stratégies de l’organisation doivent être ajustées.
+Le rapport fournit un nombre agrégé de messages électroniques uniques avec du contenu malveillant, tels que des fichiers ou des adresses de sites Web (URL) bloqués par le moteur anti-programme malveillant, la [purge automatique avec zéro heure](zero-hour-auto-purge.md)et des fonctionnalités ATP telles que les [liens approuvés ATP](atp-safe-links.md), [les pièces jointes approuvées](atp-safe-attachments.md)pour la protection avancée contre les menaces et l' [anti-hameçonnage ATP](set-up-anti-phishing-policies.md). Vous pouvez utiliser ces informations pour identifier les tendances ou déterminer si les stratégies de l’organisation doivent être ajustées.
 
-Pour afficher le rapport, ouvrez le [Centre de sécurité & conformité](https://protection.office.com), accédez à **rapports** \> **Dashboard** et sélectionnez **Threat Protection Status**. Pour accéder directement au rapport, ouvrez <https://protection.office.com/reportv2?id=ATPV2AggregateReport> .
+Pour afficher le rapport, ouvrez le [Centre de sécurité & conformité](https://protection.office.com), accédez à **rapports** \> **Dashboard** et sélectionnez **Threat Protection Status**. Pour accéder directement au rapport, ouvrez l’une des URL suivantes :
+
+- Office 365 ATP : <https://protection.office.com/reportv2?id=ATPV2AggregateReport> .
+- EOP<https://protection.office.com/reportv2?id=ATPAggregateLightReport>
 
 ![Widget état de la protection contre les menaces dans le tableau de bord rapports](../../media/threat-protection-status-report-widget.png)
 
@@ -411,61 +414,7 @@ Si vous cliquez sur **filtres** dans le mode État ou le tableau détails, vous 
 
 ## <a name="url-threat-protection-report"></a>Rapport d’URL de protection contre les menaces
 
-> [!NOTE]
-> Ce rapport est disponible uniquement dans Office 365 Advanced Threat Protection (ATP). Par exemple, un abonnement Microsoft 365 E5 ou un module complémentaire Plan 1 ou ATP plan 2.
-
-Le **rapport URL protection contre les menaces** fournit des vues récapitulatives et des tendances pour les menaces détectées, ainsi que les actions effectuées sur les clics d’URL dans le cadre de [liens fiables ATP](atp-safe-links.md). Ce rapport n’aura pas de clic sur les données des utilisateurs pour lesquels la stratégie de liens fiables est sélectionnée, l’option **ne pas suivre les clics utilisateur** est activée.
-
-Pour afficher le rapport, ouvrez le [Centre de sécurité & conformité](https://protection.office.com), accédez **Reports** au \> **tableau de bord** rapports et sélectionnez **URL protection**. Pour accéder directement au rapport, ouvrez <https://protection.office.com/reportv2?id=URLProtectionActionReport> .
-
-### <a name="report-view-for-the-url-threat-protection-report"></a>Affichage de rapport pour le rapport d’URL protection contre les menaces
-
-Le rapport **URL protection contre les menaces** comporte deux vues agrégées qui sont actualisées toutes les quatre heures, qui affichent les données des 90 derniers jours :
-
-- **URL cliquez sur protection action**: indique le nombre de clics d’URL par les utilisateurs de l’organisation, ainsi que les résultats du Click :
-
-  - **Blocked**
-  - **Bloqué et clic sur**
-  - **Clic lors de l’analyse**
-
-  Un clic indique que l’utilisateur a cliqué sur la page bloquer pour le site Web malveillant (les administrateurs peuvent désactiver l’option cliquer via dans les stratégies de liens fiables).
-
-  Si vous cliquez sur **filtres**, vous pouvez modifier le rapport avec les filtres suivants :
-
-  - **Date de début** et **Date de fin**
-  - Les actions de protection clic disponibles, ainsi que la valeur **autorisée** pour afficher les informations de tous les clics d’URL (pas simplement les clics bloqués).
-
-  ![URL cliquez sur affichage d’action de protection dans le rapport d’URL protection contre les menaces](../../media/url-threat-protection-report-url-click-protection-action-view.png)
-
-- **URL cliquez par application**: indique le nombre de clics d’URL par applications qui prennent en charge les liens fiables Office 365 ATP :
-
-  - **Client de messagerie**
-  - **PowerPoint**
-  - **Word**
-  - **Excel**
-  - **OneNote**
-  - **Visio**
-  - **Équipes**
-  - **Other**
-
-  Si vous cliquez sur **filtres**, vous pouvez modifier le rapport avec les filtres suivants :
-
-  - **Date de début** et **Date de fin**
-  - Les applications disponibles.
-
-### <a name="details-table-view-for-the-threat-protection-report"></a>Vue de la table Détails pour le rapport de protection contre les menaces
-
-Si vous cliquez sur **afficher les détails**de la table, le rapport fournit une vue quasi en temps réel de tous les clics effectués au sein de l’organisation pendant les 7 derniers jours avec les détails suivants :
-
-- **Cliquez sur heure**
-- **User**
-- **URL**
-- **Action**
-- **App**
-
-Si vous cliquez sur **filtres** dans la vue table des détails, vous pouvez filtrer selon les mêmes critères que dans l’affichage rapport, ainsi que par les **domaines** ou les **destinataires** séparés par des virgules.
-
-Pour revenir à l’affichage rapports, cliquez sur **afficher le rapport**.
+Le **rapport URL protection contre les menaces** est disponible dans Office 365 Advanced Threat Protection (ATP). Pour plus d’informations, consultez la rubrique [URL Threat Protection report](view-reports-for-atp.md#url-threat-protection-report).
 
 ## <a name="user-reported-messages-report"></a>Rapport sur les messages signalés par l’utilisateur
 
@@ -511,3 +460,7 @@ Si vous ne voyez pas de données dans vos rapports, vérifiez que vos stratégie
 [Protection contre le courrier indésirable et les programmes malveillants dans EOP](anti-spam-and-anti-malware-protection.md)
 
 [Rapports intelligents et aperçus dans le Centre de sécurité et conformité](reports-and-insights-in-security-and-compliance.md)
+
+[Afficher les rapports de flux de messagerie dans le centre de sécurité & conformité](view-mail-flow-reports.md)
+
+[Afficher les rapports pour Office 365 protection avancée contre les menaces](view-reports-for-atp.md)

@@ -2,7 +2,7 @@
 title: Collaborer avec des invités au sein d’une équipe
 ms.author: mikeplum
 author: MikePlumleyMSFT
-manager: pamgreen
+manager: serdars
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -15,12 +15,12 @@ ms.custom:
 localization_priority: Normal
 f1.keywords: NOCSH
 description: Découvrez les étapes de configuration de Microsoft 365 nécessaires pour configurer une équipe de collaboration avec des invités dans Teams.
-ms.openlocfilehash: 6742409732e1ef9b466dae6854768c3843f33bd0
-ms.sourcegitcommit: 87eff6e8a08cec3cb0464a3b765434717584a4a9
+ms.openlocfilehash: 2a412502af16ff95bf0f1f912ac57d00eb1d382a
+ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/26/2020
-ms.locfileid: "44371501"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45430386"
 ---
 # <a name="collaborate-with-guests-in-a-team"></a>Collaborer avec des invités au sein d’une équipe
 
@@ -82,7 +82,7 @@ Teams utilise les groupes Microsoft 365 pour les membres de l’équipe. Les par
 Pour définir les paramètres invités des groupes Microsoft 365
 
 1. Dans le centre d’administration Microsoft 365, dans le volet de navigation de gauche, développez **paramètres**.
-2. Cliquez sur **Services & compléments**.
+2. Cliquez sur paramètres de l' **organisation**.
 3. Dans la liste, cliquez sur **groupes Microsoft 365**.
 4. Assurez-vous que les **membres de groupe Let en dehors de votre organisation accèdent au contenu de groupe** et que les **propriétaires de groupes ajoutent des personnes en dehors de votre organisation aux** cases à cocher sont activées.
 5. Si vous avez apporté des modifications, cliquez sur **enregistrer les modifications**.

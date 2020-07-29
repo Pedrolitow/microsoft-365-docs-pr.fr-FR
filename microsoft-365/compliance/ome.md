@@ -19,12 +19,12 @@ ms.assetid: f87cb016-7876-4317-ae3c-9169b311ff8a
 ms.custom:
 - seo-marvel-apr2020
 description: Découvrez comment envoyer et recevoir des messages électroniques chiffrés entre des personnes à l’intérieur et à l’extérieur de votre organisation.
-ms.openlocfilehash: 527d7519ff9f20b4d7cf5a02cec6b0704802f8dc
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 542b540bb06998c1b90ef74485a4096ebc9ee0dc
+ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44818729"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45429930"
 ---
 # <a name="message-encryption"></a>Chiffrement des messages
 
@@ -60,7 +60,7 @@ Pour plus d’informations sur les limites de taille pour les messages et les pi
 
 Le chiffrement de messages avancé Office 365 permet de créer plusieurs modèles de personnalisation afin que vous puissiez affiner le contrôle du courrier des destinataires et créer des expériences personnalisées pour prendre en charge une structure d’organisation diversifiée.
 
-Le chiffrement de messages avancé dans Microsoft 365 vous aide à respecter les obligations de conformité qui nécessitent un contrôle plus flexible de l’accès des destinataires externes aux messages chiffrés. Avec le chiffrement de messages avancé dans Office 365, en tant qu’administrateur, vous pouvez contrôler les messages électroniques sensibles partagés en dehors de l’organisation grâce à des stratégies automatiques qui détectent des types d’informations sensibles (par exemple, des informations personnelles, des ID financiers ou des mots clés) pour améliorer la protection en arrivant à expiration de l’accès via un portail Web sécurisé aux e-mails chiffrés En outre, en tant qu’administrateur, vous pouvez contrôler les e-mails chiffrés accessibles en externe via un portail Web Microsoft 365 en révoquant l’accès à un courrier électronique à tout moment.
+Le chiffrement de messages avancé dans Microsoft 365 vous aide à respecter les obligations de conformité qui nécessitent un contrôle plus flexible de l’accès des destinataires externes aux messages chiffrés. Avec le chiffrement de messages avancé dans Office 365, en tant qu’administrateur, vous pouvez contrôler les messages électroniques sensibles partagés en dehors de l’organisation grâce à des stratégies automatiques qui détectent les types d’informations sensibles (par exemple, les informations personnelles, les ID financiers ou d’assurance maladie) ou Mots clés pour améliorer la protection en arrivant à expiration de l’accès via un portail Web sécurisé. En tant qu’administrateur, vous pouvez contrôler les messages électroniques chiffrés accessibles via un portail Web Microsoft 365 en révoquant l’accès à un e-mail à tout moment.
 
 La révocation et l’expiration des messages fonctionnent uniquement pour les messages envoyés par vos utilisateurs à des destinataires externes à votre organisation. En outre, les destinataires doivent accéder au courrier électronique par le biais du portail Web. Pour vous assurer que le destinataire utilise le portail pour recevoir des courriers électroniques, vous configurez un modèle de personnalisation qui applique le wrapper. Ensuite, vous appliquez le modèle de personnalisation dans une règle de flux de messagerie. Pour plus d’informations sur le chiffrement de messages avancé, consultez la rubrique [Office 365 Advanced message Encryption](ome-advanced-message-encryption.md).
 

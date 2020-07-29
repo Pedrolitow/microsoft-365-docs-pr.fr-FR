@@ -1,5 +1,5 @@
 ---
-title: Afficher les rapports de flux de messagerie dans le centre de sécurité & conformité
+title: Afficher les rapports de flux de messagerie dans le Centre de sécurité et conformité
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -18,14 +18,14 @@ ms.collection:
 - M365-security-compliance
 description: Découvrez comment rechercher et utiliser des rapports de sécurité de flux de messagerie pour votre organisation. Les rapports de flux de messagerie sont disponibles dans le centre de sécurité & conformité.
 ms.custom: ''
-ms.openlocfilehash: 70c96bb4f43edb80f98fdc98aa173fed9e54e7d7
-ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
+ms.openlocfilehash: e891d9373b169dc01cfd89f114e31b23e1bd8480
+ms.sourcegitcommit: 50526f81ce3f57d58f0a7c0df4fe21685c5a0236
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "44937182"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45434178"
 ---
-# <a name="view-mail-flow-reports-in-the-security--compliance-center"></a>Afficher les rapports de flux de messagerie dans le centre de sécurité & conformité
+# <a name="view-mail-flow-reports-in-the-security--compliance-center"></a>Afficher les rapports de flux de messagerie dans le Centre de sécurité et conformité
 
 Outre les informations de [flux de messagerie](mail-flow-insights-v2.md) disponibles dans le centre de sécurité & conformité, différents rapports de flux de messagerie sont également disponibles pour vous aider à surveiller votre organisation Microsoft 365. Si vous disposez des [autorisations nécessaires](#what-permissions-are-needed-to-view-these-reports), vous pouvez afficher ces rapports dans le centre de sécurité & conformité à l' <https://office.protection.com> aide du tableau de **Reports** \> **bord**rapports. Pour accéder directement au tableau de bord rapports, ouvrez <https://office.protection.office.com/insightdashboard> .
 
@@ -237,7 +237,7 @@ Vous pouvez modifier ces filtres en cliquant sur **Filtrer** ou en cliquant sur 
 Le tableau de données contient les informations suivantes :
 
 - **Direction**
-- **Type**
+- **Type (Type)**
 - **24 heures**
 - **3 jours**
 - **7 jours**
@@ -310,7 +310,7 @@ Les graphiques suivants sont disponibles dans l’affichage rapport :
 
   ![Affichage de la direction dans le rapport de courrier électronique envoyé et reçu](../../media/sent-and-received-email-report-direction-view.png)
 
-- **Explorer en détail** \> **Programme malveillant (anti-programme malveillant)**: cette sélection vous permet d’accéder à la [détection de programmes malveillants dans le rapport par courrier électronique](view-email-security-reports.md#malware-detection-in-email-report).
+- **Explorer en détail** \> **Programme malveillant (anti-programme malveillant)**: cette sélection vous permet d’accéder aux [détections de programmes malveillants dans le rapport par courrier électronique](view-email-security-reports.md#malware-detections-in-email-report).
 
 - **Explorer en détail** \> **Détections de courrier indésirable)**: cette sélection vous permet d’accéder au [rapport des détections de courrier indésirable](view-email-security-reports.md#spam-detections-report).
 
@@ -327,7 +327,7 @@ Pour revenir à l’affichage de rapport, cliquez sur **afficher le rapport**.
 Si vous cliquez sur **afficher les détails** de la table dans la fenêtre dépanner **par : direction** ou dépanner **par :** le mode de direction, les informations suivantes sont affichées :
 
 - **Date (UTC)**
-- **Type**
+- **Type (Type)**
 - **Direction**
 - **Nombre de messages**
 

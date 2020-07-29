@@ -1,5 +1,5 @@
 ---
-title: Accéder au portail d’administration
+title: Accès au portail d’administration
 keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
 ms.service: m365-md
 ms.author: jaimeo
@@ -9,16 +9,16 @@ ms.topic: article
 audience: ITPro
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: b6310849f27200adbbcbcb1584903011fbdf6145
-ms.sourcegitcommit: 9af890ef1b1c95bfc7cc52f7f4e395b62dc5263f
+ms.openlocfilehash: 17696b18b4109b568bb1d616813ba40e2a9dccdc
+ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/16/2020
-ms.locfileid: "45146266"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45430470"
 ---
 # <a name="access-the-admin-portal"></a>Accéder au portail d’administration
 
-Votre passerelle vers le service bureau géré Microsoft est le [portail Microsoft Azure](https://portal.azure.com). Pour en savoir plus sur l’utilisation et la personnalisation de votre expérience de portail Azure, consultez la documentation sur le [portail Azure](https://docs.microsoft.com/azure/azure-portal/). 
+Votre passerelle vers le service bureau géré Microsoft est le [portail Microsoft Azure](https://portal.azure.com). Pour en savoir plus sur l’utilisation et la personnalisation de votre expérience de portail Azure, consultez la documentation sur le [portail Azure](https://docs.microsoft.com/azure/azure-portal/). Disponible dans l’aperçu maintenant, vous pouvez également trouver Microsoft Managed Desktop dans le [Gestionnaire de points de terminaison Microsoft](https://endpoint.microsoft.com/). Si vous n’êtes pas familiarisé avec les fonctionnalités de ce portail pour la gestion des périphériques, consultez la [documentation du gestionnaire de points de terminaison Microsoft](https://docs.microsoft.com/mem/).
 
 Votre compte d’administrateur a besoin d’autorisations spécifiques pour accéder au portail d’administration de bureau géré Microsoft. Vous pouvez gérer l’accès administrateur à ces fonctionnalités au sein de votre organisation à l’aide du contrôle d’accès basé sur un rôle (RBAC). Pour plus d’informations sur les rôles Azure Active Directory, reportez-vous à la rubrique [Administrator Role Permissions in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles).
 

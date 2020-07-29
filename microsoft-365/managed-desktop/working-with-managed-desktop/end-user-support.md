@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 3e74f644457057eafe61235c874ca6290bfae6a3
-ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
+ms.openlocfilehash: 6c23d2ffa70cf4931823fafa1918e7fd5eefa0b8
+ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "44327891"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45430434"
 ---
 # <a name="getting-help-for-end-users"></a>Obtenir de l’aide pour les utilisateurs finaux
 
@@ -37,7 +37,7 @@ Pour permettre aux utilisateurs finaux d’obtenir de l’aide par le biais de l
 - L’appareil doit être enregistré avec Microsoft Managed Desktop à l’aide de l’une des méthodes de la [configuration de Microsoft Managed Desktop Devices](../get-started/set-up-devices.md), par exemple, [enregistrer les nouveaux appareils](../get-started/register-devices-self.md).
 - La langue d’affichage du périphérique doit être définie sur l’un des paramètres régionaux anglais suivants : en-US, en-GB, en-au, en-NZ ou en-ca.
 - L’application obtenir de l’aide doit être à jour. Pour confirmer cela, recherchez les mises à jour de l’application dans le Microsoft Store.
-- Certains [points de terminaison](../get-ready/network.md#endpoints-allowed---specific-for-microsoft-managed-desktop) doivent être accessibles à partir de l’appareil.
+- Certains [points de terminaison](../get-ready/network.md#endpoints-allowed-that-are-necessary-for-microsoft-managed-desktop) doivent être accessibles à partir de l’appareil.
 
 > [!NOTE]
 > L’application obtenir de l’aide peut prendre jusqu’à une heure après le déploiement d’un appareil pour qu’il fonctionne entièrement.

@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Découvrez comment définir des stratégies de pièces jointes fiables afin de protéger votre organisation contre les fichiers malveillants par courrier électronique.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 581c45c9c5b606b3b4b0ba91bd96740bc838629d
-ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
+ms.openlocfilehash: 1569e8072f64ce751c44e76f971e98f37540afae
+ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44617229"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45430422"
 ---
 # <a name="set-up-office-365-atp-safe-attachments-policies"></a>Configuration des stratégies de pièces jointes approuvées ATP Office 365
 
@@ -92,7 +92,7 @@ Lorsque vous configurez vos stratégies de pièces jointes approuvées ATP, vous
 ||||
 |---|---|---|
 |**Option**|**Effect**|**À utiliser lorsque vous souhaitez :**|
-|**Désactivé**|N’analyse pas les pièces jointes pour les programmes malveillants  <br/> Ne retarde pas la remise des messages|Désactivation de l’analyse pour les scanneurs, les télécopies ou les hôtes actifs qui envoient uniquement des pièces jointes connues et appropriées  <br/> Éviter les retards inutiles dans le routage du courrier interne.  <br/> **Nous ne recommandons pas cette option pour la plupart des utilisateurs. Cette option ne doit être utilisée que pour désactiver l’analyse des pièces jointes approuvées ATP pour un petit groupe d’expéditeurs approuvés.**|
+|**Désactiver**|N’analyse pas les pièces jointes pour les programmes malveillants  <br/> Ne retarde pas la remise des messages|Désactivez l’analyse pour les destinataires sélectionnés.  <br/> Éviter les retards inutiles dans le routage du courrier interne.  <br/> **Cette option n’est pas recommandée pour la plupart des utilisateurs. Cette option ne doit être utilisée que pour désactiver l’analyse des pièces jointes approuvées ATP pour les destinataires qui reçoivent uniquement des courriers électroniques provenant d’expéditeurs approuvés.**|
 |**Moniteur**|Remet les messages avec des pièces jointes, puis suit ce qui se produit avec des programmes malveillants détectés|Afficher l’emplacement où les programmes malveillants sont détectés dans votre organisation|
 |**Bloc**|Empêche la poursuite des messages contenant des pièces jointes malveillantes détectées  <br/> Envoie des messages avec une mise en quarantaine aux programmes malveillants détectés [dans Office 365](manage-quarantined-messages-and-files.md) où un administrateur ou un analyste de la sécurité peut consulter et publier (ou supprimer) ces messages.  <br/> Bloque automatiquement les messages et pièces jointes futurs|Protection de votre organisation contre les attaques répétées à l’aide des mêmes pièces jointes|
 |**Replace**|Supprime les pièces jointes de programmes malveillants détectées  <br/> Avertir les destinataires que des pièces jointes ont été supprimées  <br/> Envoie des messages avec une mise en quarantaine aux programmes malveillants détectés [dans Office 365](manage-quarantined-messages-and-files.md) où un administrateur ou un analyste de la sécurité peut consulter et publier (ou supprimer) ces messages.|Augmenter la visibilité aux destinataires pour lesquels les pièces jointes ont été supprimées en raison d’un programme malveillant détecté|

@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Utilisez le nouveau tableau de bord de sécurité pour consulter l’état de protection contre les menaces d’Office 365, et afficher et agir sur les alertes de sécurité.
-ms.openlocfilehash: 3df48685e8068fd80baa4952753a1925fb237422
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 7edfcfefc379aa30b7028097b21522d63cd26268
+ms.sourcegitcommit: 50526f81ce3f57d58f0a7c0df4fe21685c5a0236
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44819447"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45434266"
 ---
 # <a name="security-dashboard"></a>Tableau de bord de sécurité
 
@@ -54,7 +54,7 @@ Les informations que vous verrez dans le résumé de gestion des menaces dépend
 |---|---|
 |Messages malveillants bloqués<br/>Messages d’hameçonnage bloqués<br>Messages signalés par les utilisateurs<br><br><br><br>|Messages malveillants bloqués<br>Messages d’hameçonnage bloqués<br>Messages signalés par les utilisateurs<br>Blocage des programmes malveillants de jour zéro<br>Messages d’hameçonnage avancés détectés<br>URL malveillantes bloquées|
 
-Pour afficher ou accéder au widget Résumé de la gestion des menaces, vous devez disposer des autorisations permettant d’afficher les rapports de protection avancée contre les menaces. Pour en savoir plus, consultez [la rubrique Quelles autorisations sont requises pour afficher les rapports ATP ?](view-reports-for-atp.md#what-permissions-are-needed-to-view-the-atp-reports)
+Pour afficher ou accéder au widget Résumé de la gestion des menaces, vous devez disposer des autorisations permettant d’afficher les rapports de protection avancée contre les menaces. Pour en savoir plus, consultez [la rubrique Quelles autorisations sont requises pour afficher les rapports ATP ?](view-reports-for-atp.md#what-permissions-are-needed-to-view-the-atp-reports).
 
 ## <a name="threat-protection-status"></a>Statut de protection contre les menaces
 

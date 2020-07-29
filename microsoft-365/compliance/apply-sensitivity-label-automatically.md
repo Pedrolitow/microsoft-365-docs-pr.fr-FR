@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Lorsque vous créez une étiquette de critère de diffusion, vous pouvez affecter automatiquement une étiquette à un document ou message électronique ou vous pouvez inviter les utilisateurs pour sélectionner l’étiquette que vous recommandez.
-ms.openlocfilehash: 92811aff70e48992088abf221536684dcff794b8
-ms.sourcegitcommit: e6bf1af2d5cf54c3fcc3fa916abe268fc96bdd4e
+ms.openlocfilehash: 4bebf282f9bdd8f6b785c17c944b145814c80572
+ms.sourcegitcommit: 1b83b6bcacb997324bc4be355deba6daf319591d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "45189509"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "46503025"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Appliquer automatiquement une étiquette sensibilité au contenu
 
@@ -74,7 +74,7 @@ Deux méthodes s’offrent à vous pour appliquer automatiquement une étiquette
 Utilisez le tableau suivant pour vous aider à déterminer les différences de comportement de ces deux méthodes d’étiquetage automatiques complémentaires :
 
 |Fonctionnalité ou comportement|Paramètre d’étiquette : étiquetage automatique pour les applications Office |Stratégie : étiquetage automatique|
-|:-----|:-----|:-----|:-----|
+|:-----|:-----|:-----|
 |Dépendance de l’application|[Oui](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps) |Non |
 |Limiter par emplacement|Non |Oui |
 |Conditions : classifieurs formés|Oui |Non |

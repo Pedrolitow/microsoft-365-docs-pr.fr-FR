@@ -16,12 +16,12 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: La protection contre la perte de données (DLP) dans le centre de sécurité &amp; conformité inclut 80 types d’informations sensibles que vous pouvez utiliser dans vos stratégies DLP. Cette rubrique répertorie tous ces types d'informations sensibles et indique ce qu'une stratégie DLP recherche pour chaque type.
-ms.openlocfilehash: 5bccbd73806a261cdbd795f200b6b459b536a97e
-ms.sourcegitcommit: c51dd4c659f763ae46c188d3fae90aab8d1d7e88
+ms.openlocfilehash: 9e1b1261bbb58b1ca65818a5ad304ee186561ae6
+ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "45084133"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45430517"
 ---
 # <a name="sensitive-information-type-entity-definitions"></a>Définitions d’entités des types d’informations sensibles
 
@@ -370,30 +370,19 @@ Oui
 
 ### <a name="definition"></a>Définition
 
-Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 95 % si, dans une proximité de 300 caractères :
+Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
 - La fonction Func_australian_medical_account_number trouve un contenu qui correspond au modèle.
 - Un mot clé figurant dans la liste Keyword_Australia_Medical_Account_Number est trouvé.
 - La somme de contrôle est correcte.
 
-Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
-- La fonction Func_australian_medical_account_number trouve un contenu qui correspond au modèle.
-- La somme de contrôle est correcte.
 
 ```xml
   <!-- Australia Medical Account Number -->
 <Entity id="104a99a0-3d3b-4542-a40d-ab0b9e1efe63" recommendedConfidence="85" patternsProximity="300">
-    <Pattern confidenceLevel="95">
+    <Pattern confidenceLevel="85">
      <IdMatch idRef="Func_australian_medical_account_number"/>
-     <Any minMatches="1">
      <Match idRef="Keyword_Australia_Medical_Account_Number"/>
-     </Any>
-  </Pattern>
-<Pattern confidenceLevel="85">
-     <IdMatch idRef="Func_australian_medical_account_number"/>
-     <Any minMatches="0" maxMatches="0">
-  <Match idRef="Keyword_Australia_Medical_Account_Number"/>
-     </Any>
-  </Pattern>
+    </Pattern>
 </Entity>
 ```
 
@@ -2716,9 +2705,9 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 7 ou 8 chiffres, plus des délimiteurs :
 - 1 ou 2 chiffres  
 - Un point  
-- Trois chiffres  
+- Trois chiffres 
 - Un point  
-- Trois chiffres  
+- Trois chiffres 
 - Un tiret 
 - Un chiffre ou une lettre (ne respectant pas la casse) de contrôle
 
@@ -4288,7 +4277,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ### <a name="keywords"></a>Mots-clés
 
-Aucun
+Néant
 
 ## <a name="estonia-drivers-license-number"></a>Numéro de permis de conduire Estonie
 Cette entité de type d’informations sensibles est uniquement disponible dans le type d’informations sensibles du pilote de l’UE.
@@ -6800,7 +6789,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ### <a name="keywords"></a>Mots-clés
 
-Aucun
+Néant
 
    
 
@@ -6813,7 +6802,7 @@ Dictionary
 
 ### <a name="pattern"></a>Modèle
 
-Keyword
+Mot clé
 
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -6855,7 +6844,7 @@ Dictionary
 
 ### <a name="pattern"></a>Modèle
 
-Keyword
+Mot clé
 
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -11218,7 +11207,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ### <a name="keywords"></a>Mots-clés
 
-Aucun
+Néant
 
 ## <a name="spain-tax-identification-number"></a>Numéro d’identification fiscale Espagne
 Cette entité de type d’informations sensibles est uniquement disponible dans le type d’informations sensibles du numéro d’identification fiscale de l’UE.
@@ -11794,6 +11783,10 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - Un mot clé figurant dans la liste Keyword_taiwanese_national_id est trouvé.
 - La somme de contrôle est correcte.
 
+Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
+- La fonction Func_taiwanese_national_id trouve un contenu qui correspond au modèle.
+- La somme de contrôle est correcte.
+
 ```xml
 <!-- Taiwanese National ID -->
 <Entity id="4C7BFC34-8DD1-421D-8FB7-6C6182C2AF03" patternsProximity="300" recommendedConfidence="85">
@@ -11801,6 +11794,9 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
           <IdMatch idRef="Func_taiwanese_national_id" />
           <Match idRef="Keyword_taiwanese_national_id" />
       </Pattern>
+       <Pattern confidenceLevel="75">
+         <IdMatch idRef="Func_taiwanese_national_id" />
+       </Pattern>
 </Entity>
 ```
 

@@ -17,19 +17,17 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 89d592368d49d767d76865d299ab74a41a052b2f
-ms.sourcegitcommit: efd4dd29af0ea2b71b674534de3b2dcbfd7482db
+ms.openlocfilehash: b9afecb3d0efce93ae5d5725bba71d8d9719d17f
+ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44689412"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45430410"
 ---
 # <a name="quickly-hunt-for-entity-or-event-information-with-go-hunt"></a>Recherche rapide d’informations sur les entités ou les événements avec la recherche de Go
 
 **S’applique à :**
 - Protection Microsoft contre les menaces
-
-[!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
 L’action de *recherche aller-retour* vous permet d’examiner rapidement les événements et différents types d’entité à l’aide de puissantes fonctionnalités de recherche [avancée](advanced-hunting-overview.md) basées sur les requêtes. Cette action exécute automatiquement une requête de chasse avancée pour trouver des informations pertinentes sur l’événement ou l’entité sélectionné.
 
