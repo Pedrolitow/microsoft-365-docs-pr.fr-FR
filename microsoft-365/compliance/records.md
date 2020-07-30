@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Découvrir les enregistrements pour vous aider à implémenter une solution de gestion des enregistrements dans Microsoft 365.
-ms.openlocfilehash: aa5952b26549f9ba9b1c584eb55e203fd53c50e5
-ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
+ms.openlocfilehash: 6cdf29493a3fd95b060c52d9f9587ee34748edde
+ms.sourcegitcommit: a53af7a228bb1f58cb8128a69a19da49f9e28700
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45127501"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "45372519"
 ---
 # <a name="learn-about-records"></a>Découvrir les enregistrements
 
@@ -30,47 +30,51 @@ ms.locfileid: "45127501"
 
 La gestion des enregistrements dans Microsoft 365 permet à votre organisation de respecter les stratégies d’entreprise et les obligations légales ou réglementaires, tout en réduisant les risques et la responsabilité juridique.
 
-Lorsque le contenu est marqué comme enregistrement :
+Lorsque le contenu est marqué comme un enregistrement :
 
-- L’élément devient immuable, ce qui signifie qu’il ne peut pas être modifié ou supprimé.
+- Des restrictions sont appliquées aux éléments en ce qui concerne les [actions autorisées ou bloquées](#compare-restrictions-for-what-actions-are-allowed-or-blocked).
 
 - Des activités supplémentaires sur l’élément sont enregistrées.
 
-- Vous avez une preuve de destruction lorsqu’elles sont supprimées à la fin de la période de rétention.
+- Vous avez une preuve de destruction lorsque les éléments sont supprimés à la fin de la période de rétention.
 
-Vous utilisez les [étiquettes de rétention](retention.md#retention-labels) pour marquer du contenu sous la forme d’un enregistrement. Une fois que vous avez créé des étiquettes de rétention qui déclarent des enregistrements, vous pouvez soit publier ces étiquettes pour permettre aux utilisateurs et aux administrateurs de les appliquer manuellement au contenu, soit appliquer automatiquement ces étiquettes au contenu que vous voulez marquer comme enregistrement.
+Vous utilisez les [étiquettes de rétention](retention.md#retention-labels) pour marquer du contenu sous la forme d’un enregistrement. Vous pouvez soit publier ces étiquettes pour permettre aux utilisateurs et aux administrateurs de les appliquer manuellement au contenu, soit appliquer automatiquement ces étiquettes au contenu que vous voulez marquer comme enregistrement.
 
-En utilisant des étiquettes de rétention pour déclarer des enregistrements, vous pouvez implémenter une stratégie de gestion des enregistrements unique et cohérente dans votre environnement Microsoft 365.
+En utilisant des étiquettes de rétention pour marquer du contenu en tant qu’enregistrement, vous pouvez implémenter une stratégie de gestion des enregistrements unique et cohérente dans votre environnement Microsoft 365.
 
-Quelques rappels à propos des enregistrements :
+## <a name="compare-restrictions-for-what-actions-are-allowed-or-blocked"></a>Comparer des restrictions relatives aux actions autorisées ou bloquées
 
-  - **Les enregistrements sont immuables.** Une étiquette de rétention qui signale du contenu en tant qu’enregistrement peut être appliquée au contenu dans Exchange, en plus de SharePoint et OneDrive. Toutefois, [le contrôle de version d’enregistrement ](#record-versioning) est disponible uniquement dans SharePoint et OneDrive, et pas pour Exchange.
+Utilisez le tableau suivant pour identifier les restrictions placées sur du contenu suite à l’application d’une étiquette de rétention standard, ainsi que les étiquettes de rétention qui marquent du contenu en tant qu’enregistrement. 
 
-    Dans Exchange, le contenu étiqueté en tant qu’enregistrement est immuable jusqu’à sa suppression finale. Lorsqu’un élément Exchange est étiqueté en tant qu’enregistrement, quatre événements se produisent :
+Une étiquette de rétention standard a la configuration de conservation des données sans marquer le contenu comme enregistrement.
 
-    - L’élément ne peut pas être supprimé définitivement.
+>[!NOTE] 
+> Pour couvrir tous les cas de figure, le tableau inclut les colonnes d’un enregistrement verrouillé et déverrouillé, applicable à SharePoint et OneDrive, mais pas à Exchange. La possibilité de verrouiller et de déverrouiller un enregistrement utilise le [contrôle de version](#record-versioning) qui n’est pas pris en charge pour les éléments Exchange. Par conséquent, pour tous les éléments Exchange marqués en tant qu’enregistrement, le comportement mappe vers l’**Enregistrement – colonne verrouillée**, et l’**Enregistrement – colonne déverrouillée** n’est pas pertinent.
 
-    - L’élément ne peut pas être modifié.
 
-    - L’étiquette ne peut pas être modifiée.
+|Action| Étiquette de rétention |Enregistrement – colonne verrouillée| Enregistrement – colonne déverrouillée|
+|:-----|:-----|:-----|:-----|:-----|
+|Modifier les contenus|Autorisé | **Bloqué** | Autorisé|
+|Modifier les propriétés, y compris Renommer|Autorisé |Autorisé | Autorisé|
+|Supprimer|<sup>1</sup> autorisé |**Bloqué** | **Bloqué**|
+|Copier|Autorisé |Autorisé | Autorisé|
+|Se déplacer au sein du conteneur <sup>2</sup>|Autorisé |Autorisé | Autorisé|
+|Se déplacer dans les conteneurs <sup>2</sup>|Autorisé |Autorisé si jamais déverrouillé | Autorisé|
+|Ouvert/lu|Autorisé |Autorisé | Autorisé|
+|Modifier l’étiquette|Autorisé |Autorisé – administrateur de conteneur uniquement | Autorisé – administrateur de conteneur uniquement|
+|Supprimer l’étiquette|Autorisé |Autorisé – administrateur de conteneur uniquement | Autorisé – administrateur de conteneur uniquement|
 
-    - L’étiquette ne peut pas être supprimée.
+Notes de bas de page :
 
-  - **Enregistrements et dossiers.** Vous pouvez appliquer une étiquette de rétention à un dossier dans Exchange, SharePoint et OneDrive. Si un dossier est étiqueté en tant qu’enregistrement et que vous déplacez un élément vers ce dossier, l’élément est étiqueté en tant qu’enregistrement. Lorsque vous déplacez l’élément hors du dossier, l’élément reste étiqueté en tant qu’enregistrement.
+<sup>1</sup> Prise en charge par OneDrive et Exchange en conservant une copie dans un emplacement sécurisé, mais bloqué par SharePoint.
 
-    En outre, si vous changez l'étiquette qui est appliquée à un dossier (dans SharePoint et OneDrive) pour une étiquette de rétention qui ne déclare pas le contenu sous la forme d'un enregistrement, les éléments contenus dans le dossier conservent leur étiquette d'enregistrement existante.
+Message qu’un utilisateur voit s’il essaie de supprimer un document étiqueté dans SharePoint :
 
-    Pour plus d'informations sur l'application des étiquettes de rétention aux dossiers SharePoint et OneDrive, voir [Application d’une étiquette de rétention par défaut à tout le contenu dans une bibliothèque SharePoint, un dossier ou un ensemble de documents](create-apply-retention-labels.md#applying-a-default-retention-label-to-all-content-in-a-sharepoint-library-folder-or-document-set).
+![Message indiquant que l’élément n’a pas été supprimé dans SharePoint](../media/d0020726-1593-4a96-b07c-89b275e75c49.png)
 
-  - **Impossible de supprimer les enregistrements**. Si un utilisateur essaie de supprimer un enregistrement dans Exchange, l’élément est déplacé vers le dossier Éléments récupérables, comme décrit dans la rubrique [Fonctionnement de la rétention avec Exchange](retention-policies-exchange.md#how-retention-works-for-exchange).
 
-    Si un utilisateur essaie de supprimer un enregistrement dans SharePoint, une erreur annonce que l’élément n’a pas été supprimé, et l’élément reste dans la bibliothèque.
+<sup>2</sup> Les conteneurs incluent les bibliothèques de documents SharePoint et les boîtes aux lettres Exchange.
 
-    ![Message indiquant que l’élément n’a pas été supprimé de SharePoint](../media/d0020726-1593-4a96-b07c-89b275e75c49.png)
-
-    Si un utilisateur essaie de supprimer un enregistrement dans OneDrive, l’élément est déplacé vers la bibliothèque de conservation et de préservation des documents, comme décrit dans la rubrique [Fonctionnement de la rétention avec SharePoint et OneDrive](retention-policies-sharepoint.md#how-retention-works-for-sharepoint-and-onedrive).
-
-  - **Les étiquettes d’enregistrement ne peuvent pas être supprimées.** Une fois qu’une étiquette d’enregistrement a été appliquée à un élément, seul l’administrateur de cet emplacement (par exemple, un administrateur de collection de sites d’un site SharePoint) peut supprimer cette étiquette d’enregistrement.
 
 ## <a name="using-retention-labels-to-declare-records"></a>Utilisation d’étiquettes de rétention pour déclarer des enregistrements
 
@@ -78,48 +82,53 @@ Lorsque vous créez une étiquette de rétention, vous pouvez l’utiliser pour 
 
 1. Dans le centre de conformité Microsoft 365, accédez à **Gestion des enregistrements** \> **plan de gestion de fichiers**. Dans la page **plan de fichiers**, cliquez **créer une étiquette**.
 
-2. Sur la page **Paramètres d’étiquette** de l’Assistant, choisissez l’option permettant de définir l’étiquette de rétention pour déclarer du contenu sous la forme d’un enregistrement.
+2. Sur la page **Paramètres d’étiquette** de l’Assistant, choisissez l’option permettant de classifier du contenu sous la forme d’un enregistrement.
     
-   ![Cliquez sur la case à cocher Utiliser une étiquette pour classer du contenu en tant qu’Enregistrement](../media/recordversioning6.png)
+   ![Cliquez sur Utiliser l’étiquette pour classifier du contenu en tant que case à cocher d’Enregistrement](../media/recordversioning6.png)
 
-3. Appliquer l’étiquette de rétention aux sites SharePoint et aux comptes OneDrive :
+3. Appliquez l’étiquette de rétention aux documents SharePoint ou OneDrive et aux messages électroniques Exchange, le cas échéant. Pour obtenir des instructions :
     
     - [Créer des étiquettes de rétention et les appliquer dans les applications](create-apply-retention-labels.md)
     
     - [Appliquer automatiquement une étiquette de rétention au contenu](apply-retention-labels-automatically.md)
 
+### <a name="applying-the-configured-retention-label-to-content"></a>Application de l’étiquette de rétention configurée au contenu
 
-### <a name="applying-a-retention-label-to-content"></a>Application d’une étiquette de rétention au contenu
+Lorsque des étiquettes de rétention qui marquent le contenu en tant qu’enregistrement sont mises à la disposition des utilisateurs pour qu’ils les appliquent dans les applications :
 
-Pour Exchange, tout utilisateur disposant d’un accès en écriture à la boîte aux lettres peut appliquer une étiquette d’enregistrement à un message électronique. Pour le contenu dans SharePoint et OneDrive, tous les utilisateurs du groupe Membres par défaut (niveau d’autorisation Collaboration) peuvent appliquer une étiquette d’enregistrement au contenu. Seul un administrateur de la collection de sites peut supprimer ou modifier cette étiquette d’enregistrement une fois qu’elle a été appliquée. Comme indiqué précédemment, une étiquette de rétention qui classifie le contenu en tant qu’enregistrement peut être appliquée automatiquement au contenu.
+- Pour Exchange, tout utilisateur disposant d’un accès en écriture à la boîte aux lettres peut appliquer ces étiquettes. 
+- Pour SharePoint et OneDrive, tous les utilisateurs du groupe Membres par défaut (niveau d’autorisation Collaboration) peuvent appliquer ces étiquettes.
 
-Voici à quoi cela ressemble lorsque une étiquette d’enregistrement est appliquée à un document sur un site SharePoint ou un compte OneDrive.
-<br/><br/>
+Exemple d’un document marqué en tant qu’enregistrement à l’aide d’une étiquette de rétention :
 
 ![Volet Détails pour le document marqué comme enregistrement](../media/recordversioning7.png)
 
 ## <a name="record-versioning"></a>Contrôle de version d’enregistrement
 
-Une partie essentielle de la gestion des enregistrements est la possibilité de déclarer un document sous la forme d’un enregistrement et de rendre cet enregistrement immuable. Toutefois, l’immuabilité de l’enregistrement empêche la collaboration sur le document si des personnes ont besoin de créer des versions ultérieures. Par exemple, il peut arriver que vous déclariez un contrat de vente sous la forme d’un enregistrement, mais qu’ensuite vous deviez mettre à jour le contrat avec de nouvelles conditions et déclarer la dernière version comme nouvel enregistrement tout en conservant la version précédente de l’enregistrement. Pour ces types de scénarios, SharePoint et OneDrive Entreprise prennent désormais en charge le *contrôle de version d’enregistrement*. Les dossiers de bloc-notes OneNote ne prennent pas en charge le contrôle de version d’enregistrement.
+La possibilité de marquer un document en tant qu’enregistrement et de restreindre les actions pouvant être effectuées sur l’enregistrement constitue un objectif essentiel pour toute solution de gestion d’enregistrements. Cependant, une collaboration peut également être nécessaire pour permettre aux utilisateurs de créer des versions ultérieures.
 
-Pour utiliser le contrôle de version des enregistrements, la première étape consiste à utiliser le centre de conformité Microsoft 365 pour créer des étiquettes de rétention qui déclarent des enregistrements et les publient sur tous les sites SharePoint et comptes OneDrive, ou les publient sur des sites SharePoint ou des comptes OneDrive spécifiques. L’étape suivante consiste à appliquer une étiquette de rétention d’enregistrement publiée à un document. Dans ce cas, une propriété de document appelée *Statut de l’enregistrement* s’affiche en regard de l’étiquette de rétention, et le statut de l’enregistrement initial est **Verrouillé**. À ce stade, vous pouvez :
+Par exemple, il peut arriver que vous marquiez un contrat de vente sous forme d’un enregistrement, mais qu’ensuite vous deviez mettre à jour le contrat avec de nouvelles conditions et marquer la dernière version comme nouvel enregistrement tout en conservant la version précédente de l’enregistrement. Pour ces types de scénarios, SharePoint et OneDrive Entreprise prennent désormais en charge le *contrôle de version d’enregistrement*. Les dossiers de bloc-notes OneNote ne prennent pas en charge le contrôle de version d’enregistrement.
 
-  - **Modifiez sans limites et déclarez les versions individuelles du document en tant qu’enregistrements en déverrouillant et verrouillant la propriété Statut de l’enregistrement.** Seules les versions déclarées en tant qu’enregistrements sont conservées lorsque la propriété **Statut de l’enregistrement** est paramétrée sur **Verrouillé**. Cela permet de réduire le risque de conserver des versions et des copies du document superflues.
+Pour utiliser le contrôle de version d’un enregistrement, commencez par étiqueter le document et marquez-le en tant qu’enregistrement. À ce stade, une propriété de document appelée *Statut de l’enregistrement* s’affiche en regard de l’étiquette de rétention, et le statut de l’enregistrement initial est **Verrouillé**. 
+
+Vous pouvez effectuer les actions suivantes :
+
+  - **Modifier sans limites et conserver les versions individuelles du document en tant qu’enregistrements en déverrouillant et verrouillant la propriété Statut de l’enregistrement.** Une nouvelle version de l’enregistrement est uniquement conservée lorsque la propriété **État de l’enregistrement** est définie sur **Verrouillée**. Ce bouton bascule activé/désactivé permet de réduire le risque de conserver des versions et des copies du document superflues.
 
   - **Stockez automatiquement les enregistrements dans un référentiel d’enregistrements situé localement au sein de la collection de sites.** Chaque collection de sites dans SharePoint et OneDrive conserve le contenu dans la bibliothèque de conservation et de préservation. Les versions des enregistrements sont stockées dans le dossier Enregistrements de cette bibliothèque.
 
   - **Tenez à jour un document évolutif contenant toutes les versions.** Par défaut, un historique des versions est disponible dans le menu élément pour chaque document SharePoint et OneDrive. Dans cet historique des versions, vous pouvez facilement identifier quelles versions sont des enregistrements et afficher ces documents.
 
-Le contrôle de version d’enregistrement est disponible automatiquement pour tout document comportant une étiquette de rétention qui déclare l’élément comme enregistrement. Lorsqu’un utilisateur affiche les propriétés du document dans le volet Détails, il bascule le **Statut de l’enregistrement** de **Verrouillé** vers **Déverrouillé**. D’un seul clic, il crée un enregistrement dans le dossier Enregistrements de la bibliothèque de conservation et de préservation, où il résidera jusqu’à la fin de la période de rétention. 
+Le contrôle de version d’enregistrement est disponible automatiquement pour tout document comportant une étiquette de rétention qui marque l’élément comme enregistrement. Lorsqu’un utilisateur affiche les propriétés du document à l’aide du volet Détails, il peut basculer le **Statut de l’enregistrement** de **Verrouillé** vers **Déverrouillé**. Cette action crée un enregistrement dans le dossier Enregistrements de la bibliothèque de conservation et de préservation, où il résidera jusqu’à la fin de la période de rétention. 
 
-Lorsque le document est déverrouillé, les utilisateurs disposant des autorisations appropriées peuvent modifier le fichier. Toutefois, les utilisateurs ne peuvent pas supprimer le fichier, car il est considéré comme un enregistrement. Une fois que les modifications nécessaires ont été apportées, l’utilisateur peut basculer le **Statut de l’enregistrement** de **Déverrouillé** à **Verrouillé**, si bien que le document est de nouveau déclaré comme un enregistrement et ne peut pas être modifié.
+Lorsque le document est déverrouillé, les utilisateurs disposant des autorisations de modification standard peuvent modifier le fichier. Toutefois, les utilisateurs ne peuvent pas supprimer le fichier, car il est encore considéré comme un enregistrement. Lorsque la modification est terminée, un utilisateur peut basculer vers la bascule de l’**État de l’enregistrement** de **Déverrouillé** vers **Verrouillé**, ce qui empêche les modifications ultérieures dans ce statut.
 <br/><br/>
 
 ![Propriété statut de l’enregistrement sur le document marqué en tant qu’enregistrement](../media/recordversioning8.png)
 
 ### <a name="locking-and-unlocking-a-record"></a>Verrouillage et déverrouillage d'un enregistrement
 
-Lorsqu’une étiquette d’enregistrement est attribuée à un document, tous les utilisateurs ayant des autorisations de collaboration ou un niveau d'autorisation plus réduit peuvent déverrouiller un enregistrement ou verrouiller un enregistrement déverrouillé.
+Lorsqu’une étiquette de rétention qui marque le contenu en tant qu’enregistrement est appliquée à un document, tous les utilisateurs ayant des autorisations de collaboration ou un niveau d'autorisation plus réduit peuvent déverrouiller un enregistrement ou verrouiller un enregistrement déverrouillé.
 <br/><br/>
 
 ![Le statut de l’enregistrement indique que le document enregistré est déverrouillé](../media/recordversioning9.png)
@@ -134,7 +143,7 @@ Lorsqu’un utilisateur déverrouille un enregistrement, il se produit les actio
 
 4. La copie créée dans le dossier Enregistrements est ajoutée à l’historique des versions du document d’origine et cette version affiche le mot **Enregistrement** dans le champ commentaires.
 
-5. Le document d’origine est une nouvelle version qui peut être modifiée (mais pas supprimée). La colonne bibliothèque de documents **L’Élément est un Enregistrement** affiche toujours la valeur **Oui** parce que le document est toujours considéré comme un enregistrement, même s’il peut désormais être modifié.
+5. Le document d’origine est une nouvelle version qui peut être modifiée, mais pas supprimée. La colonne bibliothèque de documents **L’Élément est un Enregistrement** affiche toujours la valeur **Oui** parce que le document est encore considéré comme un enregistrement, même s’il peut désormais être modifié.
 
 Lorsqu’un utilisateur verrouille un enregistrement, le document d’origine ne peut pas être modifié. Mais c’est l’action de déverrouiller un enregistrement qui copie une version dans le dossier Enregistrements de la bibliothèque de conservation et de préservation.
 
@@ -173,4 +182,4 @@ Pour plus d’informations sur la recherche de ces événements, voir la section
 
 Si vous n’avez pas encore d’étiquettes de rétention à utiliser pour la gestion des enregistrements, consultez [Prise en main des stratégies de rétention et des étiquettes de rétention](get-started-with-retention.md).
 
-Pour regarder des vidéos relatives à la configuration et à l’utilisation de la gestion des enregistrements, voir les [sélections de gouvernance des données sur YouTube](https://go.microsoft.com/fwlink/?linkid=867039).
+Si vous souhaitez en savoir plus sur la destruction des enregistrements, voir [Disposition de contenu](disposition.md).
