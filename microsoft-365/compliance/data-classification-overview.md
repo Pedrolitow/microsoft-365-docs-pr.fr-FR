@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Le tableau de bord de classification des données vous permet de consulter les données sensibles qui ont été trouvées et classifiées au sein de votre organisation.
-ms.openlocfilehash: a9c7a275a0f3f2db7d931be5af77b00291cdad83
-ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
+ms.openlocfilehash: ca08f292bae70d121a3ef157a482a09590bd7ba1
+ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45127219"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45430327"
 ---
 # <a name="know-your-data---data-classification-overview"></a>Connaissez vos données : vue d’ensemble de la classification des données
 
@@ -132,8 +132,8 @@ L’objectif de la création de rapports sur la classification des données est 
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Afficher l’activité des étiquettes (aperçu)](data-classification-activity-explorer.md)
-- [Afficher le contenu étiqueté (aperçu)](data-classification-content-explorer.md)
+- [Afficher l’activité des étiquettes](data-classification-activity-explorer.md)
+- [Afficher le contenu étiqueté](data-classification-content-explorer.md)
 - [En savoir plus sur les étiquettes de niveau de confidentialité](sensitivity-labels.md)
 - [En savoir plus sur les stratégies et les balises de rétention](retention.md)
 - [Définitions d’entités des types d’informations sensibles](sensitive-information-type-entity-definitions.md)
