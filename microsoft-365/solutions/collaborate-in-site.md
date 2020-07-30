@@ -9,18 +9,19 @@ ms.prod: microsoft-365-enterprise
 ms.collection:
 - SPO_Content
 - M365-collaboration
-- M365solutions
+- m365solution-3tiersprotection
+- m365solution-securecollab
 ms.custom:
 - seo-marvel-apr2020
 localization_priority: Normal
 f1.keywords: NOCSH
 description: Découvrez les étapes de configuration de Microsoft 365 nécessaires pour configurer un site SharePoint en vue de la collaboration avec des invités.
-ms.openlocfilehash: 1f53fa43b6abdfaf21d938bc69db384d173d660e
-ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
+ms.openlocfilehash: 320fb21f19c9616e78f56e519cb804e3e03b2b45
+ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44160002"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46527905"
 ---
 # <a name="collaborate-with-guests-in-a-site"></a>Collaborer avec des invités sur un site
 
@@ -44,7 +45,7 @@ Vérifiez les paramètres de relations organisationnelles pour vous assurer que 
 
 Pour définir les paramètres de relation organisationnelle
 
-1. Connectez-vous à Microsoft Azure [https://portal.azure.com](https://portal.azure.com)à l’adresse.
+1. Connectez-vous à Microsoft Azure à l’adresse [https://portal.azure.com](https://portal.azure.com) .
 2. Dans le volet de navigation de gauche, cliquez sur **Azure Active Directory**.
 3. Dans le volet de **vue d’ensemble** , cliquez sur **relations organisationnelles**.
 4. Dans le volet **relations organisationnelles** , cliquez sur **paramètres**.

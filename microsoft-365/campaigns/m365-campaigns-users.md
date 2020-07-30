@@ -14,6 +14,7 @@ ms.collection:
 - M365-subscription-management
 - M365-identity-device-management
 - M365-Campaigns
+- m365solution-smb
 ms.custom:
 - Adm_O365
 - MiniMaven
@@ -23,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment Microsoft 365 pour les campagnes affecte vos utilisateurs.
-ms.openlocfilehash: 12d14ceb6a11c246bf8f456b9f8e3bacde2e076d
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: fc10e3521b9e165d0a6efd6d1ed37b53a5abf74f
+ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632766"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46527017"
 ---
 # <a name="how-microsoft-365-for-campaigns-affects-your-users"></a>Impact de Microsoft 365 pour les campagnes sur vos utilisateurs
 
@@ -65,7 +66,7 @@ Pour les [appareils Windows 10 et Mac non gérés](m365-campaigns-protect-pcs-ma
 
 ||||
 |:-----|:-----|:------|
-||**Windows 10**|**Mac**|
+||**Windows 10**|**Mac**|
 |Fonctionnalités de sécurité|Activer la protection des périphériques BitLocker<p><p> Vérifier que Windows Defender reste activé <p>Activer le pare-feu Windows| Utiliser FileVault pour chiffrer le disque Mac <p><p>Utiliser un logiciel antivirus fiable <p>Activer la protection de pare-feu|
 
 Pour en savoir plus sur ces recommandations, consultez [la rubrique protéger votre compte et vos appareils des pirates et programmes malveillants](https://support.office.com/article/Protect-your-account-and-devices-from-hackers-and-malware-066d6216-a56b-4f90-9af3-b3a1e9a327d6#ID0EAABAAA=Windows_10).

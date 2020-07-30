@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9db96e9f-a622-4d5d-b134-09dcace55b6a
 description: Découvrez comment commencer à collecter des données pour votre client à l’aide de l’application de modèle d’analyse de l’utilisation 365 de Microsoft dans Power BI.
-ms.openlocfilehash: 20228b0e2070065834ce203e22af619480311367
-ms.sourcegitcommit: 1b83b6bcacb997324bc4be355deba6daf319591d
+ms.openlocfilehash: b5cb8df7fbe8ce1844d2af3ecaf62c7903d4e98b
+ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "46502948"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46527375"
 ---
 # <a name="enable-microsoft-365-usage-analytics"></a>Activation de l'analyse de l'utilisation de Microsoft 365
 
@@ -86,9 +86,9 @@ Pour lancer l’application de modèle, vous devez être un **administrateur gé
 
 6.  Une fois que vous avez cliqué sur **connexion**, dans l’écran **se connecter à l’utilisation de Microsoft 365** , tapez l’ID du locataire (sans les tirets) que vous avez copié à l’étape (1), puis sélectionnez **suivant**.
     
-7. Dans l’écran suivant, sélectionnez **oAuth2** comme **méthode d’authentification** \> **Sign in**. Si vous choisissez une autre méthode d’authentification, la connexion à l’application de modèle échouera.
+7. Dans l’écran suivant, sélectionnez **compte Microsoft** comme **méthode d’authentification** \> **Sign in**. Si vous choisissez une autre méthode d’authentification, la connexion à l’application de modèle échouera.
     
-    ![Choose oAuth2 as authentication method](../../media/ac85a360-c278-4c60-8aa3-68f4828f1d96.png)
+    ![Choisir un compte Microsoft comme méthode d’authentification](../../media/ab6f0463-c3f7-4088-a605-67c699fa86ad.png)
   
 8. Une fois l’application de modèle instanciée, le tableau de bord d’analyse de l’utilisation de Microsoft 365 sera disponible dans Power BI sur le Web. Le chargement initial du tableau de bord prend entre 2 et 30 minutes.
   

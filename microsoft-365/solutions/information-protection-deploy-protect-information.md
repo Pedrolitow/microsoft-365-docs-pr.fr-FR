@@ -13,15 +13,15 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
-- M365solutions
+- m365solution-infoprotection
 ms.custom: ''
 description: Déployer les fonctionnalités de sécurité et de conformité de Microsoft 365 et protéger vos informations personnelles.
-ms.openlocfilehash: 99ac0f9e29c161ffa26362976f83584c9b168026
-ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
+ms.openlocfilehash: 8e7d037218b4d67e9ba7f450bd1a5235b1ae164f
+ms.sourcegitcommit: 0f71042edc7c3a7f10a7b92e1943abf51532cbf5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45126453"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "46520992"
 ---
 # <a name="protect-information-subject-to-data-privacy-regulation"></a>Protéger les informations soumises au règlement de confidentialité des données
 
@@ -31,7 +31,7 @@ Ces contrôles se situent dans les zones de solution suivantes :
 
 - Étiquettes de confidentialité
 - Protection contre la perte de données (DLP)
-- Chiffrement de messages Office (OME)
+- Chiffrement des messages Office (OME)
 - Contrôles d’accès aux équipes et aux sites
 
 ![Services clés pour protéger les informations personnelles soumises au Règlement sur la confidentialité des données](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-grid.png)

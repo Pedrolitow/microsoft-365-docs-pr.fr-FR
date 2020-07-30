@@ -13,6 +13,7 @@ ms.collection:
 - Adm_O365
 - M365-subscription-management
 - M365-Campaigns
+- m365solution-smb
 ms.custom:
 - Adm_O365
 - Core_O365Admin_Migration
@@ -23,12 +24,12 @@ search.appverid:
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: Vous inscrire pas à pas pour les campagnes Microsoft 365. Protégez votre campagne contre les menaces Cybersecurity pour la messagerie, les données et la communication.
-ms.openlocfilehash: 34d5b3103666b9cead1c2dfc09400a9eca5e3e40
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 0628ac1a2e8bf6d12bd4a196df11775ebcc2d583
+ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632778"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46527113"
 ---
 # <a name="sign-up-for-microsoft-365-for-campaigns"></a>S’inscrire à Microsoft 365 pour les campagnes 
 
@@ -80,7 +81,7 @@ Si vous disposez déjà d’un abonnement à Microsoft 365 pour les entreprises,
 2. Sur la page **Bienvenue, nous allons savoir** , cliquez ou appuyez sur souhaitez-vous l' **Ajouter à un abonnement existant ? Connectez-vous**.
     
     ![Sélectionnez se connecter dans le coin supérieur droit.](../media/addtoexisting.png)
-3. Sur la page se connecter, entrez l’alias administrateur de votre abonnement existant, par exemple *Alice@VoteContoso<span></span>. org*, choisissez **suivant**, entrez votre mot de passe, puis cliquez sur **se connecter**.
+3. Sur la page se connecter, entrez l’alias administrateur de votre abonnement existant, par exemple *Alice@VoteContoso <span></span> . org*, choisissez **suivant**, entrez votre mot de passe, puis cliquez sur **se connecter**.
 4. Dans **quelle apparence ?** entrez le nombre d’utilisateurs dont vous disposez, puis cliquez sur **suivant**. Vous n’êtes pas obligé d’entrer un code promotionnel ici, car il est déjà inclus dans l’URL de l’invitation.
 5. Sur la page **Comment souhaitez-vous payer ?** , entrez votre mode de paiement, puis sélectionnez **passer une commande**.
 

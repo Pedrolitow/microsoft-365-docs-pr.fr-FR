@@ -7,12 +7,12 @@ author: jaimeo
 ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 5889a4e80f44349b4f149ee4f2a631f12b32251e
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 94d51d7b28922a05c892eb4ffc14aee813a9069c
+ms.sourcegitcommit: 0f71042edc7c3a7f10a7b92e1943abf51532cbf5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637851"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "46522024"
 ---
 # <a name="microsoft-managed-desktop-app-requirements"></a>Configuration requise pour les applications de bureau géré Microsoft
 
@@ -20,44 +20,25 @@ ms.locfileid: "43637851"
 
 <!--Application addendum -->
  
-Afin de garantir les performances, la fiabilité et la maintenance des périphériques de bureau géré Microsoft, les applications métier d’un client ne doivent pas sérieusement influer sur l’expérience de l’utilisateur final ou modifier l’attitude de la sécurité. Par conséquent, les applications métier que vous souhaitez déployer sur des appareils de bureau gérés Microsoft doivent répondre aux exigences de cette rubrique.
-
-## <a name="application-condition"></a>Condition de l’application
-
-Il est important que les applications n’aient pas d’impact négatif sur l’environnement de bureau géré Microsoft. Voici les conditions requises qu’une application doit respecter pour qu’une application soit déployée. Pour une application ou un pilote donné, Microsoft peut renoncer aux exigences fournies dans le présent document. Microsoft peut décider de supprimer une application ou un pilote qui a un impact négatif sur les performances et la fiabilité des appareils de bureau gérés par Microsoft.
-
-## <a name="centrally-managed-apps"></a>Applications gérées de manière centralisée
-
-Toutes les applications et tous les pilotes installés sur les appareils gérés par Microsoft doivent être déployés via Microsoft Intune, le Microsoft Store ou Microsoft Store pour les entreprises ; s’ils sont disponibles, les pilotes seront également déployés via le service Windows Update. 
-
-## <a name="prohibited-app-classes"></a>Classes d’application interdites
-
-Certains types d’application ne sont pas autorisés sur les appareils de bureau géré Microsoft :
-- logiciels antivirus, de sécurité ou d’audit tiers
-- Versions de Microsoft Office antérieures à Microsoft 365 apps pour entreprises
-- Applications qui installent ou regroupent d’autres logiciels tiers
-
-## <a name="restricted-app-behaviors"></a>Comportements d’application restreinte
-
-Certains comportements d’application peuvent avoir un impact négatif sur l’expérience utilisateur ou présenter un risque de sécurité aux appareils de bureau gérés par Microsoft. Les applications présentant les comportements suivants ne sont pas autorisées à s’exécuter dans l’environnement de bureau géré Microsoft, sans avoir une spécificité de Microsoft.
-
-Expérience utilisateur :
-- Installer les services d’arrière-plan
-- S’ajouter au chemin de démarrage de Windows
-- Applications dépendant des pilotes
-- navigateurs Web tiers
-
-Sécurité :
-- Élever les privilèges de l’utilisateur final
-- Agir en tant que magasin d’applications ou disposer d’un gestionnaire d’extensions intégré
-- Ont des failles de sécurité connues
-- Chiffrer ou restreindre l’accès aux données de l’utilisateur final
-- Non signé ou signé à l’aide d’un certificat qui ne se cumule pas vers une racine approuvée
+Microsoft Managed Desktop exige que nous administrions les appareils à l’aide d’une approche spécifique pour garantir les performances, la fiabilité et la facilité de service des appareils. Si vous êtes sûr que l’approche adoptée par le bureau géré Microsoft pour les domaines ci-dessous ne fonctionne pas, vous pouvez demander une [exception au plan de service](customizing.md).
 
 
-## <a name="driver-deployment"></a>Déploiement de pilotes
+|Zone de gestion  |Approche de bureau géré Microsoft  |
+|---------|---------|
+|Configuration de l’appareil ou gestion des stratégies     |  Microsoft Intune       |
+|Gestion des applications     | Microsoft Intune et portail d’entreprise        |
+|Déploiement de pilotes     |  Pilotes inclus avec l’appareil, Windows Update ou Intune       |
+|Sécurité de l’appareil     | Voir [sécurité des appareils](security.md#device-security)      |
+|Gestion des identités et des accès     | Voir [gestion des identités et des accès](security.md#identity-and-access-management)        |
+|Sécurité réseau     | Voir [sécurité réseau](security.md#network-security)        |
+|Sécurité des informations     |  Voir [sécurité des informations](security.md#information-security)       |
+|Récupération de données     | OneDrive Entreprise        |
+|Productivité de base     | Applications Microsoft 365 for entreprise    |
+|Navigateur     | Microsoft Edge        |
 
-Microsoft Managed Desktop prend en charge uniquement les pilotes de périphériques disponibles via Windows Update ou la boîte de réception installée avec l’appareil géré Microsoft. 
 
-Si une application requiert un ou plusieurs pilotes pour l’exécuter, elle est considérée comme une application restreinte et nécessite une exception avant d’être déployée sur le bureau géré Microsoft. 
+
+
+Microsoft Managed Desktop peut surveiller d’autres logiciels s’exécutant sur des appareils gérés. Si elle a un impact négatif sur la sécurité, les performances ou la fiabilité du système, vous devrez peut-être demander une exception au plan de service.
+
 

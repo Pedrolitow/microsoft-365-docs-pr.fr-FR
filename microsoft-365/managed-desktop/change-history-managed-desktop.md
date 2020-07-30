@@ -5,21 +5,40 @@ keywords: historique des modifications
 ms.prod: m365-md
 ms.sitesec: library
 author: jaimeo
+ms.topic: article
+audience: ITPro
+manager: laurawi
 f1.keywords:
 - NOCSH
 ms.author: jaimeo
 ms.article: article
 ms.localizationpriority: normal
-ms.openlocfilehash: 1402cd8c03baa233ece1051a0ab9d7dc3b96b965
-ms.sourcegitcommit: ada2f1c6ca79177cae975d887107ff8884358e8a
+ms.openlocfilehash: 809f94e6355b7c0fe9155734fd548c9cb466cbe7
+ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/13/2020
-ms.locfileid: "45107598"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46528035"
 ---
 # <a name="change-history-for-microsoft-managed-desktop-documentation"></a>Historique des modifications de la documentation relative au Bureau géré Microsoft
 
 Cet article répertorie les articles nouveaux et mis à jour dans la [documentation du bureau géré Microsoft](index.yml). Les articles « mis à jour » sont ceux qui ont eu des ajouts ou corrections de matériel (correctifs mineurs, tels que la correction des fautes de frappe, de style ou de mise en forme). Vous pouvez toujours afficher l’historique des validations spécifiques (y compris les détails de toutes les modifications) en visitant le [référentiel sur GitHub](https://github.com/MicrosoftDocs/microsoft-365-docs/tree/public/microsoft-365/managed-desktop).
+
+
+## <a name="july-2020"></a>Juillet 2020
+Article nouveau ou modifié | Description
+--- | ---
+[Configuration requise pour les applications de bureau géré Microsoft](service-description/mmd-app-requirements.md) | Article mis à jour
+[Conformité](intro/compliance.md) | Article mis à jour
+[Prise en main du contrôle d’application](get-started/get-started-app-control.md) | Article mis à jour
+[Utiliser le contrôle d’application](working-with-managed-desktop/work-with-app-control.md) | Article mis à jour
+[Configuration requise pour le Bureau géré Microsoft](get-ready/prerequisites.md) | Article mis à jour
+[Contrôle d’application](service-description/app-control.md) | Article mis à jour
+[Configuration du réseau pour Bureau géré Microsoft](get-ready/network.md) | Article mis à jour
+[Nouvelle application Microsoft Edge](get-started/edge-browser-app.md) | Article mis à jour
+[Accéder au portail d’administration](get-started/access-admin-portal.md) | Nouvel article
+[Contrôle d’application](service-description/app-control.md) | Nouvel article
+[Installer Microsoft Project ou Microsoft Visio sur des appareils de bureau gérés Microsoft](get-started/project-visio.md) | Article mis à jour
 
 ## <a name="june-2020"></a>Juin 2020
 Article nouveau ou modifié | Description
