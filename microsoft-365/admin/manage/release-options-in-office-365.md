@@ -22,12 +22,12 @@ search.appverid:
 - GEA150
 ms.assetid: 3b3adfa4-1777-4ff0-b606-fb8732101f47
 description: Découvrez comment configurer l’option de publication pour les mises à jour de nouveaux produits et fonctionnalités dans le centre d’administration 365 de Microsoft.
-ms.openlocfilehash: 4b26a3e95b11feb5c6a5894702b86e74f82bde03
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 3baec050f33893357b25c832552643cf3a6d10d0
+ms.sourcegitcommit: 1b83b6bcacb997324bc4be355deba6daf319591d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399691"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "46502878"
 ---
 # <a name="set-up-the-standard-or-targeted-release-options"></a>Configurer les options de publication standard ou ciblée
 
@@ -42,6 +42,9 @@ Avec Microsoft 365, vous recevez de nouvelles mises à jour de produits et de no
   
 > [!IMPORTANT]
 > Les mises à jour de Microsoft 365 décrites dans cet article s’appliquent à Microsoft 365, SharePoint Online et Exchange Online. Ces options de publication sont des canaux ciblés et privilégiés pour la publication de modifications apportées à Office 365. Ces options de publication sont ciblées, meilleures moyens de publier les modifications apportées à Microsoft 365, mais elles ne sont pas garanties à tout moment ou pour toutes les mises à jour. 
+
+> [!NOTE]
+> Pour plus d’informations sur les canaux de mise à jour pour les applications, voir [vue d’ensemble des canaux de mise à jour pour les applications Microsoft 365](https://docs.microsoft.com/deployoffice/overview-update-channels). 
   
 ## <a name="how-it-works---release-validation"></a>Mode de fonctionnement - Validation de publication
 

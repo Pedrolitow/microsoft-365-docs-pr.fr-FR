@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Surveiller et gérer la suppression du contenu, que vous utilisiez une révision de disposition ou que le contenu soit automatiquement supprimé en fonction des paramètres que vous avez configurés.
-ms.openlocfilehash: 5c8c8c4e99edbc32bbca4b3efbe79325f53a3380
-ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
+ms.openlocfilehash: 2ce0478602fa6b833e53b0b3a41a89b7a0fad03b
+ms.sourcegitcommit: 6cf29958aff90d8bc1df0fe5fb9238d338db8237
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45127011"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "46506319"
 ---
 # <a name="disposition-of-content"></a>Disposition de contenu
 
@@ -124,13 +124,13 @@ Le contenu en attente d’une révision de disposition est supprimé uniquement 
 ## <a name="disposition-of-records"></a>Destruction des enregistrements
 
 > [!NOTE]
-> La possibilité d’afficher des enregistrements qui ont été supprimés automatiquement sans révision de disposition est progressivement déployée sur les clients en avril et le 2020 mai, de sorte que vous ne verrez peut-être pas cette expérience immédiatement.
+> La possibilité d’afficher des enregistrements qui ont été supprimés automatiquement sans révision de disposition est toujours déployée sur les clients, de sorte que vous pouvez ne pas voir tous les éléments supprimés pendant cette période de déploiement.
 
 Utilisez l’onglet **disposition** de la page **gestion des enregistrements** pour identifier les enregistrements supprimés automatiquement. Ces éléments affichent les **enregistrements supprimés** dans la colonne **type** . Par exemple :
 
 ![Éléments qui ont été supprimés sans révision de disposition](../media/records-disposed2.png)
 
-Les éléments affichés dans l’onglet **éléments supprimés** pour les étiquettes d’enregistrement sont conservés pendant une période maximale de 7 ans après la suppression de l’élément, avec une limite de 1 million éléments par enregistrement pour cette période. Si vous voyez le nombre **total** proche de cette limite de 1 million et que vous avez besoin de preuves d’imposition pour vos enregistrements, contactez le [support Microsoft](https://docs.microsoft.com/office365/admin/contact-support-for-business-products).
+Les éléments affichés sous l’onglet **éléments supprimés** pour les étiquettes d’enregistrement sont conservés pendant une période maximale de sept ans après la suppression de l’élément, avec une limite de 1 million éléments par enregistrement pour cette période. Si vous voyez le nombre **total** proche de cette limite de 1 million et que vous avez besoin de preuves d’imposition pour vos enregistrements, contactez le [support Microsoft](https://docs.microsoft.com/office365/admin/contact-support-for-business-products).
 
 > [!NOTE]
 > Cette fonctionnalité est basée sur les informations du [Journal d’audit unifié](search-the-audit-log-in-security-and-compliance.md) et nécessite donc un audit pour être [activé et](turn-audit-log-search-on-or-off.md) utilisable dans une requête afin que les événements correspondants soient capturés.

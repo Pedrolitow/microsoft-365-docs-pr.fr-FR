@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 description: Brève description des administrateurs Exchange Online à faire pour afficher et configurer les paramètres S/MIME dans Outlook sur le Web dans Exchange Online.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 2c1496025124717688cc812e22e0d8fe3a441112
-ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
+ms.openlocfilehash: b9f4e6c33369640ad66956568959dd02b01c4fb9
+ms.sourcegitcommit: df59c83174d845b8ddec48b9be2659fbfb58bb7f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44616621"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "46517484"
 ---
 # <a name="configure-smime-settings-in-exchange-online-for-outlook-on-the-web"></a>Configurer les paramètres S/MIME dans Exchange Online pour Outlook sur le Web
 
@@ -31,7 +31,7 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, vo
 
 ## <a name="considerations-for-new-microsoft-edge-chromium-based"></a>Considérations relatives à la nouvelle Microsoft Edge (basée sur le chrome)
 
-Pour utiliser S/MIME dans Outlook sur le Web dans le nouveau navigateur Web [Microsoft Edge](https://www.microsoft.com/windows/microsoft-edge) , vous (ou un autre administrateur) devez définir et configurer la stratégie de navigateur Microsoft Edge nommée **ExtensionInstallForcelist** pour installer l’extension S/MIME Microsoft dans le nouveau Microsoft Edge. La valeur de la stratégie est `maafgiompdekodanheihhgilkjchcakm;https://outlook.office.com/owa/SmimeCrxUpdate.ashx` . Et notez que l’application de cette stratégie nécessite des ordinateurs associés à un domaine, de sorte que l’utilisation de S/MIME dans le nouveau navigateur Microsoft Edge nécessite des ordinateurs associés à un domaine.
+Pour utiliser S/MIME dans Outlook sur le Web dans le nouveau navigateur Web [Microsoft Edge](https://www.microsoft.com/windows/microsoft-edge) , vous (ou un autre administrateur) devez définir et configurer la stratégie de navigateur Microsoft Edge nommée **ExtensionInstallForcelist** pour installer l’extension S/MIME Microsoft dans le nouveau Microsoft Edge. La valeur de la stratégie est `maafgiompdekodanheihhgilkjchcakm;https://outlook.office.com/owa/SmimeCrxUpdate.ashx` . Et notez que l’application de cette stratégie nécessite des appareils joints à un domaine ou Azure AD, de sorte que l’utilisation de S/MIME dans le nouveau navigateur Microsoft Edge nécessite de manière efficace des appareils joints à un domaine ou à des appareils joints à Azure AD.
 
 Pour plus d’informations sur la stratégie **ExtensionInstallForcelist** , voir [ExtensionInstallForcelist](https://docs.microsoft.com/DeployEdge/microsoft-edge-policies#extensioninstallforcelist).
 

@@ -19,12 +19,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Découvrez comment configurer des URL bloquées personnalisées pour des utilisateurs et une liste d’URL de non-réécriture pour un groupe d’utilisateurs dans les stratégies de liens fiables ATP d’Office 365.
-ms.openlocfilehash: 183291ef5b43248c5ff3d4e63b03a170416119bf
-ms.sourcegitcommit: 3274b65a3932288721541d2b3fa5ecbf4c51e1ab
+ms.openlocfilehash: 7d7c8ad3f5ae0f6a79bd839151ed09628e7f2dfd
+ms.sourcegitcommit: df59c83174d845b8ddec48b9be2659fbfb58bb7f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/11/2020
-ms.locfileid: "44702535"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "46517472"
 ---
 # <a name="set-up-a-custom-do-not-rewrite-urls-list-using-atp-safe-links"></a>Configurer une liste d’URL do-not-Rewrite personnalisée à l’aide de liens fiables ATP
 
@@ -60,11 +60,13 @@ Pour modifier (ou définir) des stratégies ATP, vous devez disposer d’un rôl
 
 4. Spécifiez un nom et une description pour votre stratégie.
 
-5. Dans la section **ne pas réécrire les URL suivantes** , sélectionnez la zone **Entrez une URL valide** , puis tapez une URL, puis cliquez sur le signe plus (+).
+5. Activer les URL sont réécrites et vérifiées par **rapport à une** liste de liens malveillants connus lorsque l’utilisateur clique sur le lien.
 
-6. Dans la section **appliqué à** , choisissez **le destinataire est membre de**, puis choisissez le ou les groupes que vous souhaitez inclure dans votre stratégie. Choisissez **Ajouter**, puis choisissez **OK**.
+6. Dans la section **ne pas réécrire les URL suivantes** , sélectionnez la zone **Entrez une URL valide** , entrez une URL, puis cliquez sur le signe plus (+).
 
-7. Lorsque vous avez terminé d’ajouter des URL, dans le coin inférieur droit de l’écran, sélectionnez **Enregistrer**.
+7. Dans la section **appliqué à** , choisissez **le destinataire est membre de**, puis choisissez le ou les groupes que vous souhaitez inclure dans votre stratégie. Choisissez **Ajouter**, puis choisissez **OK**.
+
+8. Lorsque vous avez terminé d’ajouter des URL, dans le coin inférieur droit de l’écran, sélectionnez **Enregistrer**.
 
 > [!NOTE]
 > Veillez à consulter la liste personnalisée des URL bloquées de votre organisation. Consultez [la rubrique Configurer une liste d’URL bloquées personnalisées à l’aide de liens fiables ATP](set-up-a-custom-blocked-urls-list-atp.md).

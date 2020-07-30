@@ -5,7 +5,7 @@ f1.keywords:
 - NOCSH
 ms.author: josephd
 manager: laurawi
-ms.date: 07/14/2020
+ms.date: 07/23/2020
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -17,12 +17,12 @@ ms.collection:
 - M365solutions
 ms.custom: ''
 description: Configurez l’infrastructure de service et de sécurité qui permet à vos employés de travailler à distance de n’importe où et à tout moment.
-ms.openlocfilehash: 58915d80d9eb81009632971bbfc84a7b681e125e
-ms.sourcegitcommit: 42b618231e9f608f3ae7226a313b0366601d0ea2
+ms.openlocfilehash: 37306a4e4e820d1a21d83eeabf3712a7f6abc99e
+ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "45158894"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45429883"
 ---
 # <a name="empower-remote-workers-with-microsoft-365"></a>Confier des responsabilités aux travailleurs à distance avec Microsoft 365
 
@@ -36,8 +36,7 @@ Microsoft 365 offre les fonctionnalités qui permettent à vos employés de tra
 
 ![Confier des responsabilités aux travailleurs à distance avec Microsoft 365](../media/empower-people-to-work-remotely/2-m365-remoteworker-solution-businessoverview.png)
 
-
-| | |
+| Fonctionnalité clé | Description |
 |:-------|:-----|
 | Connecté | Où que vous soyez et à tout moment, les travailleurs distants peuvent accéder aux éléments suivants : <ul><li>Services et données dans le cloud de votre abonnement Microsoft 365. </li><li>Ressources d’organisation, telles celles proposées par les centres de données d’application locaux.</li></ul> |
 | Sécurisé | Les connexions sont sécurisées par une authentification multifacteur (MFA) et les fonctionnalités de sécurité intégrées de Microsoft 365 et Windows 10 protègent contre les logiciels malveillants, les attaques malveillantes et la perte de données. |
@@ -53,21 +52,23 @@ Pour répondre aux critères pour les travailleurs à distance, utilisez les fon
 
 | Fonctionnalité | Description | Licence |
 |:-------|:-----|:-------|
-| Authentification multifacteur appliquée avec paramètres de sécurité par défaut   | Protégez-vous contre les identités compromises et les appareils en imposant une deuxième forme d’authentification pour les connexions. La sécurité par défaut nécessite l’authentification multifacteur pour tous les comptes d’utilisateurs.   | Microsoft 365 E3 et E5 |
-| Authentification multifacteur appliquée avec accès conditionnel| Requiert une authentification multifacteur sur la base des propriétés de la connexion avec les stratégies d’accès conditionnel.    | Microsoft 365 E3 et E5 | 
+| Authentification multifacteur appliquée avec paramètres de sécurité par défaut   | Protégez-vous contre les identités compromises et les appareils en imposant une deuxième forme d’authentification pour les connexions. La sécurité par défaut nécessite l’authentification multifacteur pour tous les comptes d’utilisateurs.   | Microsoft 365 E3 ou E5 |
+| Authentification multifacteur appliquée avec accès conditionnel| Requiert une authentification multifacteur sur la base des propriétés de la connexion avec les stratégies d’accès conditionnel.    | Microsoft 365 E3 ou E5 | 
 | Authentification multifacteur appliquée avec accès conditionnel basé sur les risques   | Requiert une authentification multifacteur basée sur le risque de connexion de l’utilisateur avec Azure Advanced Threat Protection. | Microsoft 365 E5 ou E3 avec les licences Azure AD Premium P2 | 
-| Réinitialisation du mot de passe libre-service (SSPR)    | Autoriser vos utilisateurs à réinitialiser ou déverrouiller leur mot de passe ou leur compte.  | Microsoft 365 E3 et E5 |
+| Réinitialisation du mot de passe libre-service (SSPR)    | Autoriser vos utilisateurs à réinitialiser ou déverrouiller leur mot de passe ou leur compte.  | Microsoft 365 E3 ou E5 |
 | Proxy d’application Azure AD    | Fournir un accès à distance sécurisé pour les applications web hébergées sur les serveurs intranet.   | Nécessite un abonnement Azure payé séparément |
 | VPN point à site Azure   | Créer une connexion sécurisée à partir de l’appareil d’un employé distant sur votre intranet via un réseau virtuel Azure.   | Nécessite un abonnement Azure payé séparément |
 | Windows Virtual Desktop   | Prise en charge de travailleurs distants qui peuvent uniquement utiliser leurs appareils personnels et non gérés avec des bureaux virtuels exécutés dans Azure. | Nécessite un abonnement Azure payé séparément |
-| Services Bureau à distance (RDS) | Autoriser les employés à se connecter à des ordinateurs Windows sur votre intranet. | Microsoft 365 E3 et E5 | 
+| Services Bureau à distance (RDS) | Autoriser les employés à se connecter à des ordinateurs Windows sur votre intranet. | Microsoft 365 E3 ou E5 | 
 | Passerelle des services Bureau à distance   | Chiffrer les communications et empêcher les hôtes RDS d’être directement exposés à Internet. | Nécessite des licences Windows Server distinctes |
-| Microsoft Intune | Gérer les appareils et les applications.   | Microsoft 365 E3 et E5 | 
+| Microsoft Intune | Gérer les appareils et les applications.   | Microsoft 365 E3 ou E5 | 
 | Configuration Manager | Gérer les installations, mises à jour et paramètres logiciels de vos appareils | Nécessite des licences de gestionnaire de configuration distinctes |
 | Analyses du bureau | Déterminer la disponibilité des mises à jour de vos clients Windows.   | Nécessite des licences de gestionnaire de configuration distinctes |
-| Windows Autopilot | Installer et configurer de nouveaux appareils Windows 10 à des fins productives.   | Microsoft 365 E3 et E5 |
-| Microsoft Teams, Exchange Online, SharePoint Online et OneDrive, Microsoft 365 Apps, Microsoft Power Platform, Yammer, applications Power | Créer, communiquer et collaborer. | Microsoft 365 E3 et E5 |
+| Windows Autopilot | Installer et configurer de nouveaux appareils Windows 10 à des fins productives.   | Microsoft 365 E3 ou E5 |
+| Microsoft Teams, Exchange Online, SharePoint Online et OneDrive, Microsoft 365 Apps, Microsoft Power Platform, Yammer, applications Power | Créer, communiquer et collaborer. | Microsoft 365 E3 ou E5 |
 ||||
+
+Pour plus d’informations sur la sécurité et la conformité des travailleurs à distance, consultez [Déployer la sécurité et la conformité des travailleurs à distance.](empower-people-to-work-remotely-security-compliance.md)
 
 <a name="poster"></a> Pour un résumé de deux pages de ce scénario, voir l’affiche [Confier des responsabilités aux télétravailleurs](../downloads/empower-remote-workers.pdf).
 

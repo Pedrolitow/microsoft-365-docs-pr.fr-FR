@@ -1,10 +1,10 @@
 ---
-title: Utilisation de l’authentification en libre-service dans votre organisation
+title: Utilisation de l’inscription en libre-service au sein de votre organisation
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -17,20 +17,17 @@ ms.custom:
 - AdminSurgePortfolio
 - okr_SMB
 search.appverid:
-- BCS160
 - MET150
-- MOE150
-- BEA160
 ms.assetid: 4f8712ff-9346-4c6c-bb63-a21ad7a62cbd
-description: Découvrez les programmes libre-service de Microsoft 365 self-service, tels que Microsoft Power Apps, Microsoft Flow et Dynamics 365 pour les finances.
-ms.openlocfilehash: d2d4d23eeb3ddeda0dc5b66acfe072a66f4ce267
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+description: Découvrez les programmes libre-service de Microsoft 365 self-service, tels que Microsoft Power Apps, Microsoft Flow et Dynamics 365 for finance.
+ms.openlocfilehash: 4a95c4b98821100d0a5164b87c1afe02b854608b
+ms.sourcegitcommit: 6cf29958aff90d8bc1df0fe5fb9238d338db8237
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399289"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "46506296"
 ---
-# <a name="using-self-service-sign-up-in-your-organization"></a>Utilisation de l’authentification en libre-service dans votre organisation
+# <a name="using-self-service-sign-up-in-your-organization"></a>Utilisation de l’inscription en libre-service au sein de votre organisation
 
 Nous écoutons vos commentaires et les utilisateurs de votre organisation peuvent plus facilement s’inscrire aux services en ligne de Microsoft. Nous appelons ce nouveau processus d’inscription « connexion en libre-service », car vos utilisateurs peuvent s’inscrire pour utiliser les services payés par votre abonnement ou utiliser des services gratuits, sans vous demander de prendre des mesures pour leur compte.
   
@@ -68,3 +65,4 @@ Vous trouverez ci-dessous les programmes libre-service actuellement disponibles.
 |**Microsoft Stream** <br/> |Téléchargez et partagez des vidéos au sein de votre organisation pour améliorer la communication, la participation et l’apprentissage.  <br/> |[Expérience de la journée de connexion &amp; 0](https://go.microsoft.com/fwlink/p/?linkid=841472) <br/> |[Microsoft Stream](https://go.microsoft.com/fwlink/p/?linkid=841473) <br/> |
 |**Power Automate** <br/> |Power automate est un produit qui vous permet de configurer des flux de travail automatisés entre vos applications et services préférés pour synchroniser des fichiers, obtenir des notifications, collecter des données et bien plus encore.  <br/> |[S’inscrire et se connecter pour une mise à l’arrêt automatique](https://docs.microsoft.com/power-automate/sign-up-sign-in) <br/> |[Power Automate](https://go.microsoft.com/fwlink/p/?linkid=841465) <br/> |
 |**Power Virtual Agents** <br/> |Les agents virtuels de puissance permettent aux équipes de créer facilement des robots puissants à l’aide d’une interface graphique interactive sans code sans avoir besoin de recourir à des scientifiques de données ou à des développeurs. Les agents virtuels de puissance abordent la plupart des problèmes majeurs liés au développement de robots dans le secteur d’aujourd’hui. Elle élimine le fossé entre les experts techniques et les équipes de développement qui créent les robots, ainsi que la latence longue entre les équipes qui reconnaissent un problème et mettent à jour le bot pour l’adresser.  <br/> |[Licences et informations d’accès](https://go.microsoft.com/fwlink/?linkid=2113708) <br/> |[S’inscrire aux agents virtuels de l’alimentation](https://aka.ms/TryPVA) <br/> |
+|**B2B Azure AD** <br/> |Azure Active Directory (Azure AD) collaboration B2B (Business-to-Business) vous permet d’inviter des utilisateurs externes (ou des « utilisateurs invités ») à utiliser vos services Azure AD sponsorisés. Certaines fonctionnalités sont gratuites, mais pour les fonctionnalités Azure AD payantes, vous pouvez inviter jusqu’à cinq utilisateurs invités pour chaque licence Azure AD Edition que vous possédez pour un employé ou un utilisateur non invité de votre client. <br/> |[Libre-service pour l’inscription à la collaboration B2B Azure AD](https://docs.microsoft.com/azure/active-directory/b2b/self-service-portal) <br/> |[Guide des licences pour la collaboration B2B Azure Active Directory](https://docs.microsoft.com/azure/active-directory/b2b/licensing-guidance) <br/> |

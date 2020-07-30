@@ -8,12 +8,12 @@ f1.keywords:
 - NOCSH
 ms.author: jaimeo
 ms.localizationpriority: normal
-ms.openlocfilehash: ca6bc91ebf300afe47326985cc923d929b2cd412
-ms.sourcegitcommit: 5b769f74bcc76ac8d38aad815d1728824783cd9f
+ms.openlocfilehash: 4c7ce4e8fd9c41f9ae9417f546e14e7bf8beda5c
+ms.sourcegitcommit: 1b83b6bcacb997324bc4be355deba6daf319591d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "45080080"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "46503066"
 ---
 # <a name="microsoft-managed-desktop-archived-devices"></a>Appareils archivés Microsoft Managed Desktop
 
@@ -43,10 +43,13 @@ Pour être inscrit dans Microsoft Managed Desktop, un appareil doit être l’un
 |HP EliteBook x360 1030 G3| 256 Go/Intel i5/8 Go de RAM | SKU avec 5VS01AV, appareil infrarouge obligatoire |**14 mai 2023** |
 |HP EliteBook x360 1040 G5| 256 Go/Intel i5/8 Go de RAM | SKU avec 5VS01AV, appareil infrarouge obligatoire | **23 octobre 2023** |
 |HP ProBook x360 440 G1| 128 Go/Intel i3/8 Go de RAM | SKU avec 5VS04AV, appareil photo infrarouge ou lecteur d’empreintes digitales requis | **6 juin 2023** |
-|Surface Book 2| 256 Go/Intel i5/8 Go de RAM | Aucune | **16 novembre 2022** |
-|Surface Go| 128 Go/Intel 4415Y/8 Go de RAM | Aucune | **2 août 2023** |
-|Ordinateur portable de surface| 256 Go/Intel i5/8 Go de RAM | Aucune | **20 mai 2022** |
-|Surface Pro| 256 Go/Intel i5/8 Go de RAM | Aucune | **15 juin 2022** |
+|HP EliteDesk 800 G4 DM | 128 Go/Intel i3/8 Go de RAM | SKU avec 5VS04AV | **18 juillet 2023** |
+|HP EliteDesk 800 G4 SFF | 128 Go/Intel i3/8 Go de RAM | SKU avec 5VS04AV | **18 juillet 2023** |
+|HP EliteOne 800 G4 23.8 dans AIO |128 Go/Intel i3/8 Go de RAM |SKU avec 5VS04AV| **18 juillet 2023** |
+|Surface Book 2| 256 Go/Intel i5/8 Go de RAM | Aucun | **16 novembre 2022** |
+|Surface Go| 128 Go/Intel 4415Y/8 Go de RAM | Aucun | **2 août 2023** |
+|Ordinateur portable de surface| 256 Go/Intel i5/8 Go de RAM | Aucun | **20 mai 2022** |
+|Surface Pro| 256 Go/Intel i5/8 Go de RAM | Aucun | **15 juin 2022** |
 
 
 En outre, l’appareil doit également :
