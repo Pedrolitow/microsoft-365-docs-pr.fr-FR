@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Apprenez à évaluer la disponibilité des applications et des périphériques et dans l’environnement.
-ms.openlocfilehash: 8596d23356fd8eda733938ad3a6fc0fbe81fcce3
-ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
+ms.openlocfilehash: 2389dcfe70108e261208191bd3674eced702b4c6
+ms.sourcegitcommit: 50526f81ce3f57d58f0a7c0df4fe21685c5a0236
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "44011662"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45434156"
 ---
 # <a name="step-1-device-and-app-readiness"></a>Étape 1 : disponibilité des applications et des périphériques
 
@@ -35,9 +35,8 @@ ms.locfileid: "44011662"
 </thead>
 </table>
 
->[!NOTE]
->La disponibilité des applications et des périphériques est la première étape de notre processus de déploiement recommandé en couvrant les aspects holistiques de la compatibilité du matériel et des applications.  Pour voir le processus complet de déploiement du bureau, visitez le [Centre de déploiement du bureau moderne](https://aka.ms/HowToShift).
->
+> [!NOTE]
+> La disponibilité des applications et des périphériques est la première étape de notre processus de déploiement recommandé en couvrant les aspects holistiques de la compatibilité du matériel et des applications.  Pour voir le processus complet de déploiement du bureau, visitez le [Centre de déploiement du bureau moderne](https://aka.ms/HowToShift).
 
 La compatibilité du matériel et des applications était autrefois un obstacle majeur à la mise à niveau des ordinateurs de bureau des utilisateurs. Alors que vous planifiez votre migration vers Windows 10 et les applications Microsoft 365 pour les entreprises, vous devez savoir que la grande majorité des applications créées au cours des 10 dernières années fonctionne sous Windows 10, et les compléments COM et les macros VBA, utilisés par votre organisation sur les versions d’Office remontant jusqu’à Office 2010, continueront de fonctionner avec les dernières versions d’Office, sans modification.
 
@@ -47,11 +46,13 @@ Dans cet article, nous vous présentons cette première phase (disponibilité de
 
 ## <a name="windows-10-compatibility-scan"></a>Analyse de compatibilité Windows 10  
 
-Avant de déployer Windows 10, Microsoft recommande la vérification de la préparation de vos appareils existants exécutant Windows 7 ou 8/8.1. Le média d’installation de Windows 10 prend en charge un commutateur de ligne de commande pour setup.exe pour exécuter la mise à niveau, mais qui vérifie uniquement la compatibilité, et n’effectue pas réellement la mise à niveau. ScanOnly peut être exécuté en tant que fichier de commandes scripté ou intégré dans une séquence de tâches Microsoft Endpoint Configuration Manager, notamment la possibilité d’exécuter ScanOnly directement à partir du réseau afin que le support d’installation de Windows 10 ne soit pas diffusé en continu vers l’appareil local. Lorsque ScanOnly se termine, les résultats sont affichés via les codes de retour dans les fichiers journaux générés par Setup.EXE.   
+Avant de déployer Windows 10, Microsoft recommande la vérification de la préparation de vos appareils existants exécutant Windows 7 ou 8/8.1. Le média d’installation de Windows 10 prend en charge un commutateur de ligne de commande pour setup.exe pour exécuter la mise à niveau, mais qui vérifie uniquement la compatibilité, et n’effectue pas réellement la mise à niveau. ScanOnly peut être exécuté en tant que fichier de commandes scripté ou intégré dans une séquence de tâches Microsoft Endpoint Configuration Manager, notamment la possibilité d’exécuter ScanOnly directement à partir du réseau afin que le support d’installation de Windows 10 ne soit pas diffusé en continu vers l’appareil local. Lorsque ScanOnly se termine, les résultats sont affichés via les codes de retour dans les fichiers journaux générés par Setup.EXE.
 
 Un exemple de ligne de commande ScanOnly qui termine l’analyse de compatibilité en mode silencieux doit ressembler à l’exemple ci-dessous :
 
-    Setup.EXE /Auto Upgrade /Quiet /NoReboot /Compat ScanOnly
+```dos
+Setup.EXE /Auto Upgrade /Quiet /NoReboot /Compat ScanOnly
+```
 
 Pour plus d’informations sur ScanOnly et les autres commutateurs de commande de configuration Windows, voir [Options de ligne de commande de configuration Windows](https://aka.ms/setupswitches).
 
@@ -61,7 +62,7 @@ Desktop Analytics offre plusieurs avantages par rapport aux systèmes de gestion
 
 Pour configurer Desktop Analytics, vous devez tout d’abord configurer un abonnement Azure et inclure un espace de travail Azure Log Analytics à celui-ci. Une fois le service Desktop Analytics en cours d’exécution, vous pouvez inscrire n’importe quel appareil Windows 7 SP1 ou plus récent connecté à Internet via les paramètres de stratégie de groupe ; c’est aussi simple que cela. Il n’y a aucune agent à déployer et le flux de travail visuel de Desktop Analytics vous guide à partir du pilote au déploiement en production. Si vous le souhaitez, vous pouvez exporter des données de Desktop Analytics à des outils de déploiement de logiciels tels que Microsoft Endpoint Configuration Manager (Current Branch), pour cibler des PC directement et créer des collections de sites dès que celles-ci sont prêtes pour le déploiement.
 
-Si Desktop Analytics n’est actuellement pas configuré pour votre environnement ou si vous souhaitez télécharger une version d’évaluation, accédez à la page Desktop Analyticshttps://www.aka.ms/desktopanalytics) et lancez-vous.
+Si Desktop Analytics n’est actuellement pas configuré pour votre environnement ou si vous souhaitez télécharger une version d’évaluation, accédez à la [page Desktop Analytics](https://www.aka.ms/desktopanalytics) et lancez-vous.
 
 ## <a name="device-and-app-readiness-process"></a>Processus de disponibilité des applications et des périphériques
 
@@ -103,10 +104,9 @@ La phase finale de la disponibilité des applications et des périphériques con
 
 ### <a name="configuration-manager-software-inventory-for-application-prioritization"></a>Inventaire logiciel Configuration Manager pour Hiérarchisation d’Application 
 
-Inventaire logiciel Configuration Manager est une alternative à l’utilisation des solutions analytiques basées sur le cloud pour la préparation des applications et des périphériques. Vous pouvez utiliser le nombre d’installations et explorer des ordinateurs spécifiques pour permettre de hiérarchiser des tests de compatibilité et de validation et définir des packages d’application comme compatibles avec Windows 10 via les paramètres de package. Même si cette option ne propose pas la possibilité de comparer des informations de compatibilité connues par les services de Microsoft Analytics, cela peut être une solution efficace pour cibler un ensemble réduit d’applications par ordre de priorité pour les tests manuels. 
+Inventaire logiciel Configuration Manager est une alternative à l’utilisation des solutions analytiques basées sur le cloud pour la préparation des applications et des périphériques. Vous pouvez utiliser le nombre d’installations et explorer des ordinateurs spécifiques pour permettre de hiérarchiser des tests de compatibilité et de validation et définir des packages d’application comme compatibles avec Windows 10 via les paramètres de package. Même si cette option ne propose pas la possibilité de comparer des informations de compatibilité connues par les services de Microsoft Analytics, cela peut être une solution efficace pour cibler un ensemble réduit d’applications par ordre de priorité pour les tests manuels.
 
 Pour plus d’informations, voir [Introduction à l’inventaire de logiciel dans Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/mem/configmgr/core/clients/manage/inventory/introduction-to-software-inventory) et définir les exigences de la plateforme de packages d’application dans [Packages et programmes dans Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/mem/configmgr/apps/deploy-use/packages-and-programs).
-
 
 ## <a name="app-assure"></a>Soutien aux applications
 
@@ -116,6 +116,6 @@ Le programme de [Soutien aux applications](https://aka.ms/appassure), disponible
 
 L’outil Analyses du bureau ne vous permet pas de migrer vers Windows 10 et les applications Microsoft 365 pour les entreprises. Une fois que vos ordinateurs de bureau exécutent Windows 10 et Office 365, vous pouvez l’utiliser pour vous aider à maintenir votre déploiement et à gérer les mises à jour de fonctionnalités semi-annuelles afin de rester à jour.
 
-## <a name="next-step"></a>Étape suivante 
+## <a name="next-step"></a>Étape suivante
 
 ## <a name="step-2-directory-and-network-readiness"></a>[Étape 2 : disponibilité des répertoires et des réseaux](https://aka.ms/mdd2)
