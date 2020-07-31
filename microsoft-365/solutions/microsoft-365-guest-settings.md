@@ -15,12 +15,12 @@ ms.custom:
 - seo-marvel-apr2020
 localization_priority: Priority
 description: Découvrez les paramètres de partage d’invités disponibles dans Microsoft 365 qui peuvent affecter le partage avec les personnes extérieures à votre organisation.
-ms.openlocfilehash: 35a1a20e65eccddcb1117f9def09bd4fdfc7f161
-ms.sourcegitcommit: 584e2e9db8c541fe32624acdca5e12ee327fdb63
+ms.openlocfilehash: 05cd46be7b7dd81d04fa65d89b47f19e6dbb2493
+ms.sourcegitcommit: f3a02584c9354a46c082f8f948b34a177adf65bb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44679143"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "46514788"
 ---
 # <a name="microsoft-365-guest-sharing-settings-reference"></a>Informations de référence sur les paramètres de partage d’invités de Microsoft 365
 
@@ -37,7 +37,7 @@ Azure Active Directory est le service d’annuaire utilisé par Microsoft 365. 
 
 ### <a name="organizational-relationships-settings"></a>Paramètres de relations organisationnelles
 
-**Navigation :** [Centre d’administration Azure Active Directory](https://aad.portal.azure.com) > Azure Active Directory > Relations organisationnelles
+**Navigation :** [Centre d’administration Azure Active Directory](https://aad.portal.azure.com) > Azure Active Directory > Identités externes > Paramètres de collaboration externe
 
 ![Capture d’écran de la page des paramètres de relations organisationnelles d’Azure Active Directory](../media/azure-ad-organizational-relationships-settings.png)
 
@@ -60,7 +60,7 @@ Le Centre d’administration Microsoft 365 comporte des paramètres de niveau o
 
 ### <a name="sharing"></a>Partage
 
-**Navigation :**[Centre d’administration Microsoft 365](https://admin.microsoft.com) > Paramètres > Paramètres > Onglet Sécurité et confidentialité > Partage
+**Navigation :**[Centre d’administration Microsoft 365](https://admin.microsoft.com) > Paramètres de l’organisation > Paramètres > Onglet Sécurité et confidentialité > Partage
 
 ![Capture d’écran des paramètres de sécurité et de confidentialité pour le partage d’invités dans le Centre d’administration Microsoft 365](../media/sharepoint-security-privacy-sharing-setting.png)
 
