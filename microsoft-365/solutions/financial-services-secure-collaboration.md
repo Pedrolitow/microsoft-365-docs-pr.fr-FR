@@ -7,18 +7,17 @@ audience: ITPro
 ms.topic: article
 ms.collection:
 - M365-security-compliance
-- M365solutions
 ms.prod: microsoft-365-enterprise
 ms.custom: ''
 localization_priority: Priority
 description: Découvrez comment Microsoft 365 aide les services financiers à passer à une plateforme de collaboration moderne, tout en assurant la sécurité et la conformité des données et des systèmes avec les réglementations.
 f1.keywords: NOCSH
-ms.openlocfilehash: 6c6b1c6bbd62e632b79629638aa78630974823df
-ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
+ms.openlocfilehash: ccb6243df9030188129c6f2be7b34f467b09781d
+ms.sourcegitcommit: 0f71042edc7c3a7f10a7b92e1943abf51532cbf5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/31/2020
-ms.locfileid: "44432426"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "46521206"
 ---
 # <a name="key-compliance-and-security-considerations-for-us-banking-and-capital-markets"></a>Principales considérations en matière de conformité et de sécurité pour les marchés bancaires et des capitaux américains
 

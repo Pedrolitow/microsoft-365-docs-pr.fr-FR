@@ -13,21 +13,21 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
-- M365solutions
+- m365solution-infoprotection
 ms.custom: ''
 description: Utilisez les stratégies d’audit et d’alerte et les demandes des personnes concernées pour surveiller et répondre aux incidents de données personnelles.
-ms.openlocfilehash: 5760bb40eb26e2ff0636ea9604cc7c45b7d0ca63
-ms.sourcegitcommit: b03a7ad0a80f8b839f40b8d396ab3a049491a12f
+ms.openlocfilehash: 8fdba5799ca9ee97a013c1322e5e79f6bf38764a
+ms.sourcegitcommit: 0f71042edc7c3a7f10a7b92e1943abf51532cbf5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44695066"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "46522072"
 ---
 # <a name="monitor-and-respond-to-data-privacy-incidents-in-your-organization"></a>Surveillance et réponse aux incidents de confidentialité des données au sein de votre organisation
 
 Les fonctionnalités de Microsoft 365 sont disponibles pour vous aider à surveiller, examiner et répondre aux incidents de confidentialité des données au sein de votre organisation lorsque vous avez opérationnel les fonctionnalités connexes. L’existence de processus, de procédures et d’autres documents pour chacun de ces éléments peut également être importante pour démontrer la conformité aux organismes de réglementation.
 
-Ces approches sont les suivantes : 
+Cela inclut ce qui suit : 
 
 - Stratégies d’audit et d’alerte
 - Demandes des personnes concernées (y compris la recherche de contenu et eDiscovery)

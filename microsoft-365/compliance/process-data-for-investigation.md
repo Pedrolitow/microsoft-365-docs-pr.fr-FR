@@ -15,13 +15,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: ''
-ms.openlocfilehash: 8f5ef193a895bce51b733eaa98817d7c119217d0
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: Données de processus pour une enquête sur les données.
+ms.openlocfilehash: 0516c6e41caf33fad457754b613e12b7f23701aa
+ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632229"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46527424"
 ---
 # <a name="process-data-for-an-investigation"></a>Données de processus pour une enquête
 
@@ -34,4 +34,5 @@ L’onglet **traitement** des enquêtes de données (aperçu) fournit la transpa
 Pour plus d’informations, consultez les articles suivants.
 
 - [Indexation avancée des données pour une enquête](index-data-people-of-interest.md)
+
 - [Correction d’erreur lors du traitement des données](error-remediation.md)

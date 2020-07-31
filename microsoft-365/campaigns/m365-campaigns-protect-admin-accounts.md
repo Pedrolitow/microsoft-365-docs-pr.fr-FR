@@ -13,6 +13,7 @@ ms.collection:
 - Adm_O365
 - M365-subscription-management
 - M365-Campaigns
+- m365solution-smb
 ms.custom:
 - Adm_O365
 - MiniMaven
@@ -21,12 +22,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Découvrez comment configurer et protéger vos comptes d’administrateur.
-ms.openlocfilehash: 2104697320308b329f9fde1b6984c15f9814f9ef
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: dc5f72cda0255641d7d2407d266a6ae584560733
+ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43633652"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46527185"
 ---
 # <a name="protect-your-administrator-accounts"></a>Protéger vos comptes d’administrateur
 
@@ -46,7 +47,7 @@ Vous devez configurer au moins un compte d’administrateur global supplémentai
 
 Pour créer des comptes d’administration supplémentaires :
 
- 1. Accédez au <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">Centre d’administration</a> , **puis sélectionnez** \> utilisateurs **actifs** dans le volet de navigation de gauche.
+ 1. Accédez au <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">Centre d’administration</a> , **puis sélectionnez utilisateurs** \> **actifs** dans le volet de navigation de gauche.
 
     ![Sélectionnez utilisateurs, puis utilisateurs actifs dans le volet de navigation de gauche](../media/Activeusers.png)
 
@@ -67,10 +68,10 @@ Vous devez également créer un compte de sauvegarde qui n’est pas configuré 
 
 ## <a name="create-a-user-account-for-yourself"></a>Créer un compte d’utilisateur pour vous-même
 
-Utilisez votre compte d’utilisateur pour participer à la collaboration avec votre organisation, notamment en vérifiant le courrier. Cela signifie que vos informations d’identification d’administrateur peuvent ressembler à *Alice. Chavez<span></span>@Contoso. org* et que votre compte d’utilisateur normal ressemble à *Alice<span></span>@Contoso. com*.
+Utilisez votre compte d’utilisateur pour participer à la collaboration avec votre organisation, notamment en vérifiant le courrier. Cela signifie que vos informations d’identification d’administrateur peuvent ressembler à *Alice. Chavez <span></span> @Contoso. org* et que votre compte d’utilisateur normal ressemble à *Alice <span></span> @Contoso. com*.
 
 Pour créer un compte d’utilisateur :
-1. Accédez au <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">Centre d’administration</a> , **puis sélectionnez** \> utilisateurs **actifs** dans le volet de navigation de gauche.
+1. Accédez au <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">Centre d’administration</a> , **puis sélectionnez utilisateurs** \> **actifs** dans le volet de navigation de gauche.
 2. Sur la page **utilisateurs actifs** , sélectionnez **Ajouter un utilisateur** en haut de la page, puis, dans le panneau **nouvel utilisateur** , entrez le nom et d’autres informations.
 3. Développez la section **rôles** , puis choisissez **utilisateur (pas d’accès administratif)**.
 1. Dans la section **licences de produit** , déplacez le sélecteur de **Microsoft 365 Business** vers **activé**. 

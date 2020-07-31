@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Découvrez comment gérer les personnes intéressantes pour l’étendue de votre recherche ou afficher des informations telles que les journaux de contact, d’emplacement et d’activité.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 7cab1904731f325f1ec45685ddf122e5ee375a2b
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 85f6bdbe7a0602f8ce0038a4aca912896d5c2079
+ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44036067"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46528170"
 ---
 # <a name="manage-people-of-interest-in-data-investigations-preview"></a>Gérer les personnes concernées par les enquêtes de données (aperçu)
 
@@ -31,13 +31,13 @@ Les enquêtes sur les données impliquent souvent des personnes intéressantes. 
 
 ## <a name="add-people-of-interest"></a>Ajouter des personnes intéressantes
 
-Dans l’onglet **personnes** , vous pouvez ajouter des personnes intéressantes et découvrir leurs sources de données telles que les boîtes aux lettres Exchange ou le site OneDrive entreprise que vous pouvez utiliser pour étendre votre recherche. Lorsqu’elles sont délimitées par des personnes intéressantes, les recherches sont plus performantes et précises car l’outil réexécute toutes les données non indexées, telles que les images ou les types de fichiers non pris en charge. Vous pouvez également consulter les informations de contact, les informations d’emplacement et les journaux d’activité que vous pouvez utiliser pour initier des communications ou approfondir leurs activités. 
+Dans l’onglet **personnes** , vous pouvez ajouter des personnes intéressantes et découvrir leurs sources de données telles que les boîtes aux lettres Exchange ou le site OneDrive entreprise que vous pouvez utiliser pour étendre votre recherche. Lorsqu’elles sont délimitées par des personnes intéressantes, les recherches sont plus performantes et précises car l’outil rétraite les données non indexées telles que les images ou les types de fichiers non pris en charge. Vous pouvez également consulter les informations de contact, les informations d’emplacement et les journaux d’activité que vous pouvez utiliser pour initier des communications ou approfondir leurs activités. 
 
 Pour ajouter des personnes intéressantes à une enquête :
 
 1. À partir de la page **enquêtes de données (aperçu)** , accédez à votre enquête.
  
-2. Une fois que vous avez sélectionné une enquête, accédez à l’onglet **personnes d’intérêt** et cliquez sur **+ Ajouter des personnes qui vous intéressent**. 
+2. Une fois que vous avez sélectionné une enquête, accédez à l’onglet **personnes d’intérêt** et cliquez sur **+ Ajouter des personnes intéressantes**. 
  
 3. Choisissez les personnes que vous souhaitez ajouter à l’enquête. Vous pouvez commencer par taper pour rechercher et sélectionner les utilisateurs dans Azure Active Directory de votre organisation.
  
@@ -56,7 +56,7 @@ Pour ajouter des personnes intéressantes à une enquête :
         > [!NOTE]
         > Lorsque vous cliquez sur choisir les utilisateurs, les groupes ou les équipes pour spécifier des boîtes aux lettres, le sélecteur de boîtes aux lettres affiché est vide. Il s’agit d’une conception qui améliore les performances. Pour ajouter des personnes à cette liste, tapez un nom (un minimum de 3 caractères) dans la zone de recherche.
      
-     - **Sites SharePoint** : cliquez sur **choisir des sites** , puis cliquez à nouveau sur choisir les **sites** pour spécifier d’autres sites SharePoint et OneDrive entreprise que vous wwant ajouter à une personne. Vous pouvez également ajouter l’URL du site SharePoint pour un groupe Microsoft 365 ou une équipe Microsoft. Tapez l’URL de chaque site que vous souhaitez attribuer. Cliquez sur **choisir**, puis sur **Terminer**.
+     - **Sites SharePoint** : cliquez sur **choisir des sites** , puis cliquez à nouveau sur choisir les **sites** pour spécifier d’autres sites SharePoint et OneDrive entreprise que vous souhaitez ajouter à une personne. Vous pouvez également ajouter l’URL du site SharePoint pour un groupe Microsoft 365 ou une équipe Microsoft. Tapez l’URL de chaque site que vous souhaitez attribuer. Cliquez sur **choisir**, puis sur **Terminer**.
      - **Microsoft** teams – cliquez sur **choisir teams** , puis cliquez sur **choisir les équipes** pour afficher la liste des groupes d’équipes Microsoft dont la personne est aujourd’hui membre. Sélectionnez les équipes que vous souhaitez ajouter à la personne. Une fois sélectionné, le système identifie automatiquement & sélectionnez le site SharePoint et la boîte aux lettres de groupe associés associés à cette équipe Microsoft. Cliquez sur **choisir**, puis sur **Terminer**.
         
       > [!NOTE]
@@ -66,11 +66,11 @@ Une fois que vous avez terminé le mappage des sources de données aux personnes
 
 ## <a name="view-additional-people-of-interest-information"></a>Afficher des informations supplémentaires sur les personnes concernées
 
-Dans l’onglet **personnes** , cliquez sur une personne que vous ADEED. Dans un menu volant, vous verrez :
+Dans l’onglet **personnes** , cliquez sur une personne que vous avez ajoutée. Dans un menu volant, vous verrez :
 
 - Informations de contact
 
-  - **Nom d’affichage**: nom du Peron affiché dans le carnet d’adresses. Il s’agit généralement de la combinaison du prénom, de l’initiale du deuxième prénom et du nom de famille.
+  - **Nom d’affichage**: nom de la personne affiché dans le carnet d’adresses. Il s’agit généralement de la combinaison du prénom, de l’initiale du deuxième prénom et du nom de famille.
   - **Mail/SMTP**: adresse SMTP de la personne, par exemple, Jeff@contoso.onmicrosoft.com.  
   - **Titre**: fonction.
   - **Department**: nom du service dans lequel la personne travaille.

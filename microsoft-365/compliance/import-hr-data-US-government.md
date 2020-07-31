@@ -15,12 +15,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: Les administrateurs dans le nuage des États-Unis peuvent configurer un connecteur de données pour importer les données des employés à partir du système de ressources humaines (RH) de leur organisation vers Microsoft 365. Cela vous permet d’utiliser des données RH dans des stratégies de gestion des risques initiées pour vous aider à détecter les activités d’utilisateurs spécifiques susceptibles de constituer une menace interne pour votre organisation.
-ms.openlocfilehash: 8023ffda8a9d367736ec8f7fc781bde5d6f1e1f5
-ms.sourcegitcommit: b4119682bd3c036289e851fff56fde869c816479
+ms.openlocfilehash: e14f1a23097cddf3b187d4394d5fa5e3afe06d01
+ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45205024"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46527642"
 ---
 # <a name="set-up-a-connector-to-import-hr-data-in-us-government-preview"></a>Configurer un connecteur pour importer des données RH dans le secteur public américain (aperçu)
 
@@ -87,7 +87,7 @@ L’étape suivante consiste à créer un connecteur RH dans le centre de confor
 
    b. Tapez un nom pour le connecteur RH.
 
-5. Sur la page **mappage de fichiers** , tapez les trois noms d’en-tête de colonne (également appelés *paramètres* à partir du fichier CSV que vous avez créé à l’étape 2 dans chacune des cases appropriées. Les noms ne respectent pas la casse. Comme expliqué précédemment, les noms que vous tapez dans ces zones doivent correspondre aux noms de paramètres dans votre fichier CSV. Par exemple, la capture d’écran suivante montre les noms des paramètres de l’exemple dans le fichier CSV d’exemple illustré à l’étape 2.
+5. Sur la page **mappage de fichiers** , tapez les noms des trois en-têtes de colonne (également appelés *paramètres*) à partir du fichier CSV que vous avez créé à l’étape 2 dans chacune des zones appropriées. Les noms ne respectent pas la casse. Comme expliqué précédemment, les noms que vous tapez dans ces zones doivent correspondre aux noms de paramètres dans votre fichier CSV. Par exemple, la capture d’écran suivante montre les noms des paramètres de l’exemple dans le fichier CSV d’exemple illustré à l’étape 2.
 
    ![Les titres des en-têtes de colonne correspondent à ceux du fichier CSV.](../media/HRConnectorWizard3.png)
 
@@ -137,7 +137,7 @@ La dernière étape de la configuration d’un connecteur RH consiste à exécut
 
    Le tableau suivant décrit les paramètres à utiliser avec ce script et leurs valeurs requises. Les informations que vous avez obtenues dans les étapes précédentes sont utilisées dans les valeurs de ces paramètres.
 
-   |**Parameter**|**Description**
+   |**Paramètre**|**Description**
    |:-----|:-----|:-----|
    |`tenantId`|Il s’agit de l’ID de votre organisation Microsoft 365 que vous avez obtenu à l’étape 1. Vous pouvez également obtenir l’ID de client de votre organisation sur le panneau de présentation dans le centre **d'** administration Azure ad. Il est utilisé pour identifier votre organisation.|
    |`appId` |Il s’agit de l’ID d’application AAD pour l’application que vous avez créée dans Azure AD à l’étape 1. Il est utilisé par Azure AD pour l’authentification lorsque le script tente d’accéder à votre organisation Microsoft 365. | 

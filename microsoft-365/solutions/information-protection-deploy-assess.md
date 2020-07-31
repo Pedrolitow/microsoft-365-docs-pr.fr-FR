@@ -13,15 +13,15 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
-- M365solutions
+- m365solution-infoprotection
 ms.custom: ''
 description: Déterminez la réglementation relative à la confidentialité des données, les scénarios pertinents, votre disponibilité et les types d’informations sensibles qui se trouvent dans votre environnement Microsoft 365.
-ms.openlocfilehash: 0cfa9f8a22810027e1a31ce2ace8b42f26ef9eb2
-ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
+ms.openlocfilehash: ba47a43c7af8d97af852e0a3ef417cdc1dbab46a
+ms.sourcegitcommit: 0f71042edc7c3a7f10a7b92e1943abf51532cbf5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45126601"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "46521372"
 ---
 # <a name="assess-data-privacy-risks-and-identify-sensitive-items-with-microsoft-365"></a>Évaluer les risques de confidentialité des données et identifier les éléments sensibles avec Microsoft 365
 
@@ -59,7 +59,7 @@ Pour référence ultérieure dans les Articles de cette solution globale, ce tab
 
 | Réglementations | Article/section | Quiz | Catégories de contrôle technique applicables |
 |:-------|:-----|:-------|:-------|
-| RGPD | Article 5 (1) (f) | Les données personnelles doivent être traitées de manière à garantir une sécurité appropriée des données personnelles, y compris la protection contre le traitement non autorisé ou illégal et contre la perte accidentelle, la destruction ou les dégâts, à l’aide de mesures techniques ou organisationnelles appropriées (« intégrité et confidentialité ».  |  Tous les <br> Identité <br> Appareil <br> Protection contre les menaces <br> Protéger les informations <br> Gestion des informations <br> Découvrir et répondre |
+| RGPD | Article 5 (1) (f) | Les données personnelles doivent être traitées de manière à garantir une sécurité appropriée des données personnelles, y compris la protection contre le traitement non autorisé ou illégal et contre la perte accidentelle, la destruction ou les dégâts, à l’aide de mesures techniques ou organisationnelles appropriées (« intégrité et confidentialité ».  |  Tous les <br> Identité <br> Device <br> Protection contre les menaces <br> Protéger les informations <br> Gestion des informations <br> Découvrir et répondre |
 |  | Article (32) (1) (a) | Tenant compte de l’état de la technique, des coûts de mise en œuvre et de la nature, de l’étendue, du contexte et des objectifs du traitement, ainsi que des risques de probabilité et de gravité variables pour les droits et les libertés des personnes physiques, le responsable du traitement et le transformateur mettent en œuvre les mesures techniques et organisationnelles appropriées pour garantir un niveau de sécurité approprié pour le risque. , y compris, entre autres, selon les besoins : (a) l’pseudonymage et le chiffrement des données personnelles. | Protéger les informations |
 |  | Article (13) (2) (a) | "... le contrôleur doit, au moment de l’obtention des données personnelles, fournir aux personnes concernées les informations supplémentaires suivantes nécessaires pour assurer un traitement équitable et transparent : (a) la période pendant laquelle les données personnelles seront stockées ou, si cela n’est pas possible, les critères utilisés pour déterminer cette période. | Gestion des informations |
 |  | Article (15) (1) (e) | La personne concernée a le droit d’obtenir de la part du responsable de la confirmation du contrôleur si les données personnelles le concernant sont traitées, et, si c’est le cas, l’accès aux données personnelles et les informations suivantes : (e) l’existence du droit de demander la rectification ou l’effacement des données personnelles ou la limitation du traitement des données personnelles concernant la personne concernée ou l’objet de ce traitement. | Découvrir et répondre |

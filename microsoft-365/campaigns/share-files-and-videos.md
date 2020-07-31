@@ -14,6 +14,7 @@ ms.collection:
 - M365-subscription-management
 - M365-identity-device-management
 - M365-Campaigns
+- m365solution-smb
 ms.custom:
 - Adm_O365
 - Core_O365Admin_Migration
@@ -24,12 +25,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Partagez des fichiers et des vidéos à l’intérieur de votre campagne avec Microsoft teams et SharePoint.
-ms.openlocfilehash: b67b6f834fd9333814f1807567776644dd2826e7
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: b3ca070152a19841ff2c934f04d0d147e3387db0
+ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42080414"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46526899"
 ---
 # <a name="share-files-and-videos"></a>Partager des fichiers et des vidéos
 
@@ -52,7 +53,7 @@ Utilisez ces méthodes pour partager des fichiers et des vidéos en toute sécur
 5. Utilisez Microsoft teams ou SharePoint pour stocker les fichiers vidéo dont votre équipe a besoin pour collaborer ou partager.
 
  
-## <a name="set-up"></a>Configuration
+## <a name="set-up"></a>Configurer
 
 Pour créer une équipe et y ajouter des invités, comme des annonceurs ou des partenaires de financement, procédez comme suit.
 

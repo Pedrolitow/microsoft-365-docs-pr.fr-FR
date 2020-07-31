@@ -14,6 +14,7 @@ ms.collection:
 - M365-subscription-management
 - M365-identity-device-management
 - M365-Campaigns
+- m365solution-smb
 ms.custom:
 - Adm_O365
 - MiniMaven
@@ -23,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Protégez-vous contre le hameçonnage et les autres attaques à l’aide de Microsoft 365 pour les campagnes.
-ms.openlocfilehash: 0cd96cb73ad3d0b38ab1e5ff31c913d97528c2d4
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 3e0c6a52209c56e75c6ff1210f26e6926e4d7d32
+ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632790"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46527137"
 ---
 # <a name="protect-unmanaged-windows-10-pcs-and-macs"></a>Protection des ordinateurs Windows 10 et Mac non gérés
 
@@ -47,7 +48,7 @@ Vous pouvez gérer des PC Windows 10 et des Mac en les inscrivant dans Microsoft
 -->
 Si votre PC ou Mac Windows 10 n’est pas géré par votre organisation, veillez à configurer ces fonctionnalités de sécurité.
 
-## <a name="windows-10"></a>[Windows 10](#tab/Windows10)
+## <a name="windows-10"></a>[Windows 10](#tab/Windows10)
 **Activer le chiffrement de l’appareil**<p>
 
 Le chiffrement d’appareil est disponible sur un large éventail d’appareils Windows et vous aide à protéger vos données en les chiffrant. Si vous activez le chiffrement de l’appareil, seules les personnes autorisées pourront accéder à votre appareil et à vos données. Pour obtenir des instructions, voir [activer le chiffrement](https://support.microsoft.com/help/4028713/windows-10-turn-on-device-encryption) de l’appareil.

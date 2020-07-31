@@ -14,14 +14,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: aed65bcd-0a4f-43e9-b5e5-b98cc376bdf8
-description: 'Découvrez comment l’onglet décider de Microsoft 365 Advanced eDiscovery fournit des données qui peuvent vous aider à déterminer la taille correcte de l’ensemble de révision des fichiers de cas. '
+description: Découvrez comment l’onglet décider dans Advanced eDiscovery fournit des données qui peuvent vous aider à déterminer la taille correcte de l’ensemble de révision des fichiers de cas.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 0139bc0505150a4d27aaca97b9b253f2043d649f
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 04c6f0c8fede315f175e0ed6ae265c7463405a62
+ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44817903"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46528004"
 ---
 # <a name="decision-based-on-the-results-in-advanced-ediscovery-classic"></a>Décision basée sur les résultats dans Advanced eDiscovery (classique)
 
@@ -34,11 +34,11 @@ ms.locfileid: "44817903"
 
 ![Décision de pertinence](../media/f32fed89-f3b5-404a-90c7-ea25d2eb58a9.png)
   
-Cet onglet comprend les éléments suivants :
+Cet onglet comprend les composants suivants :
   
 - **Problème**: à partir de là, vous pouvez sélectionner le problème d’intérêt dans la liste. 
     
-- **Review-ratio de rappel**: Comparaison de la révision eDiscovery avancée en fonction des scores de pertinence. Le point de coupure dans le graphique représente le pourcentage de fichiers à examiner, mappé à un score de pertinence. Il est utilisé dans la phase test de pertinence et en tant que seuil d’exportation pour l’élimination. Le point de démarcation par défaut, pour le nombre de fichiers à réviser, se trouve à l’endroit où l’équilibre entre rappel et précision est optimal. Le point de démarcation réel doit être déterminé par l’utilisateur en fonction des objectifs et du coût compromis (pourcentage de révision) et du risque (pourcentage de rappel). À l’aide du curseur, vous pouvez ajuster le point de coupure et observer l’effet sur le graphique et les paramètres, lors de l’ajustement du pourcentage de fichiers pertinents à extraire, et avant la validation d’une décision.
+- **Review-ratio de rappel**: comparaisons de la révision eDiscovery avancée en fonction des scores de pertinence. Le point de coupure dans le graphique représente le pourcentage de fichiers à examiner, mappé à un score de pertinence. Il est utilisé dans la phase test de pertinence et en tant que seuil d’exportation pour l’élimination. Le point de démarcation par défaut, pour le nombre de fichiers à réviser, se trouve à l’endroit où l’équilibre entre rappel et précision est optimal. Le point de démarcation réel doit être déterminé par l’utilisateur en fonction des objectifs et du coût compromis (pourcentage de révision) et du risque (pourcentage de rappel). À l’aide du curseur, vous pouvez ajuster le point de coupure et observer l’effet sur le graphique et les paramètres, lors de l’ajustement du pourcentage de fichiers pertinents à extraire, et avant la validation d’une décision.
     
 - **Paramètres**: Review, Recall, les paramètres de coût total et pertinents suivants sont des statistiques calculées cumulatives relatives au jeu de révision en relation avec la collection pour l’ensemble du cas. Les définitions de ces paramètres sont les suivantes :
     

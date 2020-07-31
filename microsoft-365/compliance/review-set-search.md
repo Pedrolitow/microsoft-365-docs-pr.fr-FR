@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Découvrez comment créer et exécuter une requête dans un jeu de réexamen afin d’organiser les données pour une révision plus efficace dans un cas avancé de découverte électronique.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 1bf4d86ea4aecb33cbb2e7ad7b617cd58a5c086d
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 871630af4b8b19e5fad1a062129782e36b9706f5
+ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034598"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46527434"
 ---
 # <a name="query-the-data-in-a-review-set"></a>Interroger les données d’un jeu à réviser
 
@@ -30,13 +30,13 @@ Dans la plupart des cas, il est utile de pouvoir approfondir les données dans u
 
 ## <a name="creating-and-running-a-query-in-a-review-set"></a>Création et exécution d’une requête dans un jeu de révision
 
-Pour créer et exécuter une requête sur les documents d’un jeu de révision, cliquez sur **nouvelle requête** dans l’ensemble de révision. Une fois que vous avez nommé votre requête et défini les conditions, cliquez sur **Enregistrer** pour enregistrer et exécuter la requête. Pour exécuter une requête qui a été précédemment enregistrée, cliquez sur une requête enregistrée.
+Pour créer et exécuter une requête sur les documents d’un jeu à réviser, cliquez sur **Nouvelle requête** dans le jeu à réviser. Une fois que vous avez nommé votre requête et défini les conditions, cliquez sur **Enregistrer** pour enregistrer et exécuter la requête. Pour exécuter une requête qui a été précédemment enregistrée, cliquez sur une requête enregistrée.
 
 ![Examiner les requêtes Set](../media/AeDReviewSetQueries.png)
 
 ## <a name="building-a-review-set-query"></a>Création d’une requête d’ensemble de révision
 
-Vous pouvez créer une requête à l’aide d’une combinaison de cartes de condition et de langage de requête dans la carte de condition de mots-clés. Vous pouvez également regrouper les cartes de condition en tant que bloc (appelé *groupe de conditions*) pour créer une requête plus complexe. Pour obtenir la liste et la description des propriétés de métadonnées que vous pouvez rechercher, voir [document Metadata Fields in Advanced eDiscovery](document-metadata-fields-in-Advanced-eDiscovery.md).
+Vous pouvez créer une requête à l’aide d’une combinaison de cartes de condition et de langage de requête dans la carte de condition de mots-clés. Vous pouvez également regrouper les cartes de condition en tant que bloc (appelé *groupe de conditions*) pour créer une requête plus complexe. Pour consulter la liste et la description des propriétés de métadonnées que vous pouvez rechercher, consultez [Champs de métadonnées des documents dans Advanced eDiscovery](document-metadata-fields-in-Advanced-eDiscovery.md).
 
 ### <a name="condition-cards"></a>Cartes de condition
 
@@ -58,7 +58,7 @@ En plus des cartes de condition, vous pouvez utiliser un langage de requête de 
 
 ## <a name="using-filters"></a>Utilisation de filtres
 
-Outre les requêtes que vous pouvez enregistrer, vous pouvez utiliser les filtres Set Set pour appliquer rapidement des conditions supplémentaires à une requête Set Review. Cela vous permet d’affiner les résultats affichés par une requête d’ensemble de révision.
+Outre les requêtes que vous pouvez enregistrer, vous pouvez utiliser les filtres Set Set pour appliquer rapidement des conditions supplémentaires à une requête Set Review. Cela vous permet d’affiner davantage les résultats affichés par une requête de jeu à réviser.
 
 ![Vérifier les filtres Set](../media/AeDReviewSetFilters.png)
 
@@ -66,4 +66,4 @@ Les filtres diffèrent des requêtes de deux façons importantes :
 
 - Les filtres sont transitoires. Elles ne sont pas conservées au-delà de la session existante. En d’autres termes, vous ne pouvez pas enregistrer un filtre. Les requêtes sont enregistrées dans l’ensemble de révision et y accèdent chaque fois que vous ouvrez l’ensemble de révision.
 
-- Les filtres sont toujours additionnés. Les filtres sont appliqués en plus de la requête d’ensemble de révision actuelle. L’application d’une requête différente remplace les résultats renvoyés par la requête actuelle.
+- Les filtres sont toujours additionnés. Les filtres sont appliqués en plus de la requête de jeu à réviser actuelle. L’application d’une autre requête a pour effet de remplacer les résultats renvoyés par la requête actuelle.

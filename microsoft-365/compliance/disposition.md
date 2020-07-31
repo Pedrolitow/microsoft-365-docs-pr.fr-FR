@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Surveiller et gérer la suppression du contenu, que vous utilisiez une révision de disposition ou que le contenu soit automatiquement supprimé en fonction des paramètres que vous avez configurés.
-ms.openlocfilehash: 2ce0478602fa6b833e53b0b3a41a89b7a0fad03b
-ms.sourcegitcommit: 6cf29958aff90d8bc1df0fe5fb9238d338db8237
+ms.openlocfilehash: 938d530447d1a798e5a2d6d4c2f622a04827bf1c
+ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "46506319"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46529599"
 ---
 # <a name="disposition-of-content"></a>Disposition de contenu
 
@@ -124,7 +124,9 @@ Le contenu en attente d’une révision de disposition est supprimé uniquement 
 ## <a name="disposition-of-records"></a>Destruction des enregistrements
 
 > [!NOTE]
-> La possibilité d’afficher des enregistrements qui ont été supprimés automatiquement sans révision de disposition est toujours déployée sur les clients, de sorte que vous pouvez ne pas voir tous les éléments supprimés pendant cette période de déploiement.
+>Le déploiement de la preuve de la suppression des enregistrements dans SharePoint et OneDrive est terminé. Vous verrez la liste des étiquettes de rétention qui ont marqué le contenu comme enregistrements pour SharePoint et OneDrive dans la section disposition de la page de gestion des enregistrements dans le centre de conformité Microsoft 365. Sous ces étiquettes, vous pouvez voir la liste des éléments dans SharePoint et OneDrive qui ont été supprimés automatiquement ou après une révision de destruction.
+
+La preuve de l’élimination des enregistrements dans Exchange n’est pas encore active. À la fin de cette procédure de déploiement, nous mettrons à jour cette note.
 
 Utilisez l’onglet **disposition** de la page **gestion des enregistrements** pour identifier les enregistrements supprimés automatiquement. Ces éléments affichent les **enregistrements supprimés** dans la colonne **type** . Par exemple :
 

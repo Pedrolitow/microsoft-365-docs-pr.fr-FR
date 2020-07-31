@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Découvrez la gouvernance des informations dans Microsoft 365.
-ms.openlocfilehash: e0c4eace6dd714a348f419090de680ba1db00b0d
-ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
+ms.openlocfilehash: d2c2977a4eeaebb28f37c69683a929cb9f64b085
+ms.sourcegitcommit: 0f71042edc7c3a7f10a7b92e1943abf51532cbf5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45127054"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "46521241"
 ---
 # <a name="manage-information-governance"></a>Gérer la gouvernance des informations
 
@@ -27,7 +27,7 @@ ms.locfileid: "45127054"
 
 |**Fonctionnalité**|**Plus d’informations**|
 |:-----|:-----|
-| **Gestion des données** | Utilisez le [service d’importation](importing-pst-files-to-office-365.md) pour importer rapidement des fichiers PST dans des boîtes aux lettres Exchange Online au sein de votre organisation. <br> Configurez un [archivage illimité](unlimited-archiving.md) pour fournir aux utilisateurs un espace de stockage de boîte aux lettres supplémentaire. <br> Utilisez les [stratégies de rétention](retention.md) pour simplifier l’administration de la façon dont votre organisation conserve, supprime ou conserve, puis supprime le contenu. |
-| **Surveiller les données** | [Vérifier que les étiquettes de données](view-label-activity-for-documents.md) sont correctement appliquées au contenu de votre organisation. <br> Utilisez l’analyse d' [étiquettes](label-analytics.md) intégrée pour voir rapidement où les étiquettes sont utilisées le plus souvent et où elles sont appliquées.|
-| **Gestion des boîtes aux lettres inactives** | Votre organisation peut avoir besoin de conserver le courrier électronique des anciens employés après leur départ. En fonction des exigences de rétention de votre organisation, il se peut que vous deviez conserver le contenu de la boîte aux lettres pendant quelques mois ou quelques années après la fin du contrat, ou indéfiniment. Quelle que soit la durée de conservation du courrier électronique, vous pouvez créer des [boîtes aux lettres inactives](inactive-mailboxes-in-office-365.md) pour conserver la boîte aux lettres des anciens employés.  |
-| **Gestion des enregistrements** | Vérifiez que les [enregistrements d’entreprise principaux](records-management.md) sont correctement déclarés et stockés immuablement avec une visibilité complète de l’audit pour répondre aux obligations réglementaires. |
+| **Gestion des données** | Utilisez des [stratégies de rétention et des étiquettes de rétention](retention.md) pour conserver et supprimer les données que vous n’avez pas besoin de conserver ou supprimer pour des raisons réglementaires ou de conformité.<br /><br /> Utilisez le [service d’importation](importing-pst-files-to-office-365.md) pour importer rapidement des fichiers PST dans des boîtes aux lettres Exchange Online au sein de votre organisation et configurer un [archivage illimité](unlimited-archiving.md) pour fournir aux utilisateurs un espace de stockage de boîte aux lettres supplémentaire.|
+| **Surveiller les données** | [Vérifier que les étiquettes de rétention](view-label-activity-for-documents.md) sont correctement appliquées au contenu de votre organisation et utiliser l' [analyse](label-analytics.md) des étiquettes pour voir rapidement où ces étiquettes sont utilisées le plus souvent et où elles sont appliquées.|
+| **Gestion des boîtes aux lettres inactives** | Votre organisation peut avoir besoin de conserver le courrier électronique des anciens employés après leur départ. En fonction des exigences de rétention de votre organisation, il se peut que vous deviez conserver le contenu de la boîte aux lettres pendant quelques mois ou quelques années après la fin du contrat, ou indéfiniment. Quelle que soit la durée de conservation du courrier électronique, vous pouvez créer des [boîtes aux lettres inactives](inactive-mailboxes-in-office-365.md) pour conserver la boîte aux lettres des anciens employés.|
+| **Gestion des enregistrements** | Vérifiez que les [enregistrements d’entreprise principaux](records-management.md) sont correctement déclarés et stockés avec une visibilité complète de l’audit afin de répondre aux exigences réglementaires.|

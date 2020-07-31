@@ -19,27 +19,27 @@ search.appverid:
 ms.assetid: 5f4f8206-2d6a-4cb2-bbc6-7a0698703cc0
 description: Utilisez la recherche de contenu et le script dans cet article pour effectuer des recherches dans les boîtes aux lettres et les sites OneDrive entreprise pour un groupe d’utilisateurs.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 714574739256f98353f01478fb9216432f3dcb47
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 90aab661992ae2f0c19d18939191230dc0469eaa
+ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44818974"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46527360"
 ---
 # <a name="use-content-search-to-search-the-mailbox-and-onedrive-for-business-site-for-a-list-of-users"></a>Utiliser la recherche de contenu pour rechercher une liste d’utilisateurs dans la boîte aux lettres et OneDrive Entreprise
 
-Le centre de sécurité & conformité fournit un certain nombre d’applets de commande Windows PowerShell qui vous permettent d’automatiser des tâches de découverte électronique gourmandes en temps. Actuellement, la création d’une recherche de contenu dans le centre de sécurité & conformité afin de rechercher un grand nombre d’emplacements de contenu dépositaire nécessite du temps et une préparation. Avant de créer une recherche, vous devez collecter l’URL de chaque site OneDrive entreprise, puis ajouter chaque boîte aux lettres et le site OneDrive entreprise à la recherche. Dans les prochaines versions, cette opération sera plus facile à effectuer dans le centre de sécurité & conformité. En attendant, vous pouvez utiliser le script de cet article pour automatiser ce processus. Ce script vous invite à indiquer le nom du domaine mon site de votre organisation (par exemple, **contoso** dans l’URL https://contoso-my.sharepoint.com) , une liste des adresses de messagerie des utilisateurs, le nom de la nouvelle recherche de contenu et la requête de recherche à utiliser. Le script obtient l’URL de OneDrive entreprise pour chaque utilisateur dans la liste, puis il crée et démarre une recherche de contenu qui recherche dans la boîte aux lettres et le site OneDrive entreprise pour chaque utilisateur de la liste, à l’aide de la requête de recherche que vous fournissez. 
+Le centre de sécurité & conformité fournit un certain nombre d’applets de commande Windows PowerShell qui vous permettent d’automatiser des tâches de découverte électronique gourmandes en temps. Actuellement, la création d’une recherche de contenu dans le centre de sécurité & conformité afin de rechercher un grand nombre d’emplacements de contenu dépositaire nécessite du temps et une préparation. Avant de créer une recherche, vous devez collecter l’URL de chaque site OneDrive entreprise, puis ajouter chaque boîte aux lettres et le site OneDrive entreprise à la recherche. Dans les prochaines versions, cette opération sera plus facile à effectuer dans le centre de sécurité & conformité. En attendant, vous pouvez utiliser le script de cet article pour automatiser ce processus. Ce script vous invite à indiquer le nom du domaine de site mon site de votre organisation (par exemple, **contoso** dans l’URL `https://contoso-my.sharepoint.com` ), une liste des adresses de messagerie des utilisateurs, le nom de la nouvelle recherche de contenu et la requête de recherche à utiliser. Le script obtient l’URL de OneDrive entreprise pour chaque utilisateur dans la liste, puis il crée et démarre une recherche de contenu qui recherche dans la boîte aux lettres et le site OneDrive entreprise pour chaque utilisateur de la liste, à l’aide de la requête de recherche que vous fournissez.
   
 ## <a name="permissions-and-script-information"></a>Autorisations et informations de script
 
 - Vous devez être membre du groupe de rôles gestionnaire de découverte électronique dans le centre de sécurité & conformité et d’un administrateur global SharePoint Online pour exécuter le script à l’étape 3.
-    
+
 - Veillez à enregistrer la liste des utilisateurs que vous créez à l’étape 2 et le script de l’étape 3 dans le même dossier. Cela facilitera l’exécution du script.
-    
+
 - Le script inclut une gestion des erreurs minimale. Son objectif principal est de rechercher rapidement et facilement la boîte aux lettres et le site OneDrive entreprise de chaque utilisateur.
-    
-- Les exemples de scripts fournis dans cette rubrique ne sont pas pris en charge dans n’importe quel programme ou service de support standard Microsoft. Les exemples de scripts sont fournis en l'état, sans garantie d'aucune sorte. Microsoft exclut encore toutes les [https://go.microsoft.com/fwlink/p/?LinkId=517283](https://go.microsoft.com/fwlink/p/?LinkId=517283) garanties mplied, y compris, sans limitation, toute garantie implicite de qualité marchande ou d’adéquation à un usage particulier. Vous assumez tous les risques liés à l'utilisation ou à l'exécution des exemples de scripts et de la documentation. En aucun cas, Microsoft, ses auteurs ou toute personne impliquée dans la création, la production ou la livraison des scripts ne sont responsables de dommages quelconques (y compris, sans limitation, pertes de bénéfices, interruption d'activité, perte d'informations commerciales ou toute autre perte pécuniaire) découlant de l'utilisation ou de l'impossibilité d'utiliser les exemples de scripts ou la documentation, même si Microsoft a été informé de la possibilité de tels dommages.
-    
+
+- Les exemples de script fournis dans cette rubrique ne sont pris en charge dans aucun programme de support ou service standard de Microsoft. Les exemples de scripts sont fournis en l’état, sans garantie d’aucune sorte. Microsoft exclut toute garantie implicite, y compris, sans limitation, les garanties implicites de qualité marchande ou d’adéquation à un usage particulier. Vous assumez tous les risques liés à l’utilisation ou à l’exécution des exemples de scripts et de la documentation. En aucun cas, Microsoft, ses auteurs ou toute personne impliquée dans la création, la production ou la livraison des scripts ne sont responsables de dommages quelconques (y compris, sans limitation, pertes de bénéfices, interruption d’activité, perte d’informations commerciales ou toute autre perte pécuniaire) découlant de l’utilisation ou de l’impossibilité d’utiliser les exemples de scripts ou la documentation, même si Microsoft a été informé de la possibilité de tels dommages.
+
 ## <a name="step-1-install-the-sharepoint-online-management-shell"></a>Étape 1 : installer SharePoint Online Management Shell
 
 La première étape consiste à installer SharePoint Online Management Shell. Vous n’avez pas besoin d’utiliser l’environnement de commande Exchange Management Shell dans cette procédure, mais vous devez l’installer car il contient les conditions préalables requises par le script exécuté à l’étape 3. Ces conditions préalables permettent au script de communiquer avec SharePoint Online pour obtenir les URL des sites OneDrive entreprise.

@@ -1,5 +1,5 @@
 ---
-title: Configurer des stratégies d’accès conditionnel
+title: Qu’est-ce que l’accès conditionnel ?
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -14,6 +14,7 @@ ms.collection:
 - M365-subscription-management
 - M365-identity-device-management
 - M365-Campaigns
+- m365solution-smb
 ms.custom:
 - Adm_O365
 - MiniMaven
@@ -23,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment exiger l’authentification MFA et configurer des stratégies d’accès conditionnel pour Microsoft 365 pour les entreprises.
-ms.openlocfilehash: 3caca685d9a96434a0daa2736c322ac1a68b7feb
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 917fb52eb5034c3dda28c277b9e86e04db6cac62
+ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635611"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46527197"
 ---
 # <a name="require-multi-factor-authentication-and-set-up-conditional-access-policies"></a>Exiger l’authentification multifacteur et configurer des stratégies d’accès conditionnel
 
@@ -53,7 +54,7 @@ Pour plus d’informations sur ces stratégies, voir [qu’est-ce qu’une strat
 
 Pour exiger que tous les utilisateurs se connectent avec une deuxième forme d’ID :
 
-1. Accédez au centre d’administration à <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> l’adresse et sélectionnez **configuration**.
+1. Accédez au centre d’administration à l’adresse <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> et sélectionnez **configuration**.
 
 2. Sur la page de configuration, choisissez **Afficher** dans la carte de **connexion plus sécurisée** .
 

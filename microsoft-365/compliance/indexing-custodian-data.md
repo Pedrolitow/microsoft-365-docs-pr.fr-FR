@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Lorsqu’un dépositaire est ajouté à un cas avancé de découverte électronique, tout contenu considéré comme partiellement indexé est retraité afin de le faire entièrement chercher.
-ms.openlocfilehash: 0618af5bcc18622ee8091782f55648f455230b6b
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 95e087884b65628565e596dc8ae9f33aadc4cd9f
+ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637896"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46527554"
 ---
 # <a name="advanced-indexing-of-custodian-data"></a>Indexation avancée des données des consignataires
 
@@ -39,9 +39,9 @@ Pour en savoir plus sur le traitement de la prise en charge et des éléments pa
 
 ## <a name="viewing-advanced-indexing-results"></a>Affichage des résultats de l’indexation avancée
 
-Une fois le processus d’indexation avancé terminé, vous pouvez comprendre l’efficacité du nouveau traitement.  Dans l’affichage des résultats d’indexation avancés, sous l’onglet **traitement** d’un cas, le graphique indique le nombre d’éléments ajoutés à l' *index hybride*.  L’index hybride est l’emplacement où eDiscovery avancée stocke le contenu retraité.
+Une fois le processus d’indexation avancé terminé, vous pouvez comprendre l’efficacité du retraitement.  Dans l’affichage des résultats d’indexation avancés, sous l’onglet **traitement** d’un cas, le graphique indique le nombre d’éléments ajoutés à l' *index hybride*.  L’index hybride est l’emplacement où la découverte électronique avancée stocke le contenu retraité.
 
-Cette vue inclut également le nombre d’éléments nécessitant une correction et un autre graphique d’erreurs par type de fichier. Si vous souhaitez en savoir plus, consultez les articles : 
+Cette vue inclut également le nombre d’éléments nécessitant une correction et un autre graphique d’erreurs par type de fichier. Si vous souhaitez plus d’informations, reportez-vous aux rubriques suivantes :
 
 - [Correction d’erreur lors du traitement des données](error-remediation.md)
 

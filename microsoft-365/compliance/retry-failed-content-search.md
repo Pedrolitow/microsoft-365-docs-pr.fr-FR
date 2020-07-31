@@ -16,12 +16,12 @@ search.appverid:
 ms.assetid: ''
 description: Pendant une enquête, vous pouvez utiliser le bouton nouvelle tentative pour résoudre les recherches de contenu présentant des erreurs d’emplacement de contenu.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6b2d26cd51c30f2c273abb59199cf4a89f5b7a37
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 55ef7ff59bfc58809d0e00ff1f2edf7a8455ba13
+ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034628"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46527632"
 ---
 # <a name="retry-a-content-search-to-resolve-a-content-location-error"></a>Nouvelle tentative de recherche de contenu pour résoudre une erreur d’emplacement de contenu
 
@@ -29,6 +29,7 @@ Lorsque vous utilisez la recherche de contenu dans le centre de sécurité et de
 
 ```text
 Error
+
 
 The search on the following locations failed:
 
@@ -66,6 +67,6 @@ Voici quelques causes supplémentaires des erreurs d’emplacement de contenu et
 
 - Trop de recherches sont effectuées simultanément sur la même boîte aux lettres. Si possible, essayez d’exécuter une recherche à la fois sur une seule boîte aux lettres.
 
-- Recherche d’un trop grand nombre de boîtes aux lettres dans une seule recherche. La probabilité d’erreurs d’emplacement de contenu augmente lors de la recherche d’un très grand nombre de boîtes aux lettres. Si possible, essayez d’exécuter plusieurs recherches de sorte que chaque recherche comprenne un sous-ensemble de boîtes aux lettres dans votre organisation.
+- Recherche d’un trop grand nombre de boîtes aux lettres dans une seule recherche. La probabilité d’erreurs d’emplacement de contenu augmente lors de la recherche d’un grand nombre de boîtes aux lettres. Si possible, essayez d’exécuter plusieurs recherches de sorte que chaque recherche comprenne un sous-ensemble de boîtes aux lettres dans votre organisation.
 
 - La maintenance requise est effectuée sur la boîte aux lettres. Bien que cette cause se produise probablement rarement, patientez quelques instants après avoir reçu l’erreur d’emplacement de contenu, puis recommencez la recherche.

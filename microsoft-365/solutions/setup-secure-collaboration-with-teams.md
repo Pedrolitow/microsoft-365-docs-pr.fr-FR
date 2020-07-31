@@ -9,16 +9,17 @@ ms.prod: microsoft-365-enterprise
 localization_priority: Normal
 ms.collection:
 - M365-collaboration
-- M365solutions
+- m365solution-securecollab
+- m365solution-overview
 ms.custom: ''
 f1.keywords: NOCSH
 description: Découvrez comment configurer teams pour protéger vos données en fonction de leur sensibilité.
-ms.openlocfilehash: 8978c8602a00dd9c7caecc30ea4746a01680a236
-ms.sourcegitcommit: 92f641cad63379bf16417854a43b16b48a71a30a
+ms.openlocfilehash: ef49e788805139bf82fa5b1b43d2a87323640820
+ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "44724807"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46527707"
 ---
 # <a name="set-up-secure-collaboration-with-microsoft-365"></a>Configurer la collaboration sécurisée avec Microsoft 365
 
@@ -61,7 +62,7 @@ Pour configurer Secure collabration, vous utilisez les fonctionnalités et fonct
 
 | Produit ou composant | Fonctionnalité | Licence |
 |:-------|:-----|:-------|
-| Office 365 – Protection avancée contre les menaces | Pièces jointes approuvées ATP pour SPO, OneDrive et Teams ; Documents sécurisés ATP ; Liens fiables ATP pour teams    | Microsoft 365 E1, E3 et E5 |
+| Office 365 – Protection avancée contre les menaces | Pièces jointes approuvées ATP pour SPO, OneDrive et Teams ; Documents sécurisés ATP ; Liens fiables ATP pour teams    | Microsoft 365 E1, E3 et E5 |
 | SharePoint    | Stratégies de partage de sites et de fichiers, autorisations de partage de site, liens de partage, demandes d’accès, paramètres de partage du site invité | Microsoft 365 E1, E3 et E5 |
 | Microsoft Teams   | Accès invité, teams Private, Private Channels | Microsoft 365 E1, E3 et E5 |
 | Conformité Microsoft 365  | Étiquettes de confidentialité    | Microsoft 365 E3 et E5 |
@@ -124,7 +125,7 @@ Lorsque vous êtes prêt à déployer cette solution, suivez ces étapes :
 1. Configurez les [trois différents niveaux de protection pour teams](configure-teams-three-tiers-protection.md).
 2. Configurez les paramètres permettant de [partager des informations de confidentialité avec des personnes extérieures à votre organisation](collaborate-with-people-outside-your-organization.md).
 
-## <a name="see-also"></a>Voir aussi
+## <a name="see-also"></a>Consultez également
 
 [Documentation de sécurité Office 365](https://docs.microsoft.com/microsoft-365/security)
 

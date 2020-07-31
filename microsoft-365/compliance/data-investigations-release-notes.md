@@ -19,16 +19,16 @@ ms.custom:
 - seo-marvel-mar2020
 - seo-marvel-apr2020
 description: Dans cet article, vous trouverez des notes de publication qui contiennent des modifications et de nouvelles fonctionnalités pour l’outil des enquêtes de données (aperçu) dans Microsoft 365.
-ms.openlocfilehash: 9567e9d83c6fc952e61271e665b96fad8fc6b69a
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: 40d441aff8da69b4ead0ab2f49fbe93589aa709c
+ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44352281"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46528024"
 ---
 # <a name="release-notes-for-data-investigations-preview-in-microsoft-365"></a>Notes de publication pour les enquêtes sur les données (aperçu) dans Microsoft 365
 
-Vous pouvez utiliser l’outil nouvelles enquêtes de données (aperçu) dans Microsoft 365 pour trier, examiner et résoudre les problèmes liés aux données, tels qu’un incident de débordement de données ou une enquête interne. La préversion publique des analyses de données vous permet d’accéder en avant-première aux fonctionnalités et mises à jour à venir. Pour accéder en avant-première aux fonctionnalités les plus récentes, créez une nouvelle enquête sur les enquêtes de données (aperçu) dans le centre de conformité & Compliance Center. Pour savoir comment procéder, voir [gérer un incident de fuite de données dans Microsoft 365](manage-data-spillage-incidents.md).
+Vous pouvez utiliser la nouvelle outil d’analyse des données (aperçu) de Microsoft 365 pour trier, examiner et résoudre les problèmes liés aux données, tels qu’un incident de débordement de données ou une enquête interne. La préversion publique des analyses de données vous permet d’accéder en avant-première aux fonctionnalités et mises à jour à venir. Pour accéder en avant-première aux fonctionnalités les plus récentes, créez une nouvelle enquête sur les enquêtes de données (aperçu) dans le centre de conformité & Compliance Center. Pour savoir comment procéder, voir [gérer un incident de fuite de données dans Microsoft 365](manage-data-spillage-incidents.md).
 
 ## <a name="whats-new"></a>Nouveautés 
 
@@ -36,7 +36,7 @@ Vous pouvez utiliser l’outil nouvelles enquêtes de données (aperçu) dans Mi
 
 - **Personnes intéressantes** : lorsque vous ajoutez des utilisateurs à des enquêtes en tant que personnes intéressantes, vous pouvez voir leur boîte aux lettres, le compte OneDrive entreprise et les sites Microsoft Teams. Vous pouvez les utiliser pour étendre vos recherches de contenu d’enquête. Pour approfondir votre attention sur une personne intéressante, vous pouvez également afficher les enregistrements d’audit relatifs à leurs activités dans Microsoft 365 et d’autres services Microsoft.
 
-- **Recherches** : créez une recherche à l’échelle de l’organisation à l’aide de diverses conditions de recherche. Si vous savez des utilisateurs ou des sites à rechercher, vous pouvez le faire en ajoutant ces utilisateurs en tant que personnes intéressantes ou en spécifiant des emplacements de site dans l’Assistant de création de la recherche. 
+- **Recherches** : créez une recherche à l’échelle de l’organisation à l’aide de différentes conditions de recherche. Si vous savez des utilisateurs ou des sites à rechercher, vous pouvez le faire en ajoutant ces utilisateurs en tant que personnes intéressantes ou en spécifiant des emplacements de site dans l’Assistant de création de la recherche. 
 
 - **Evidence** : créez un jeu de preuves et ajoutez des résultats de recherche que vous souhaitez examiner. Vous pouvez passer en revue des documents individuels, les annoter pour laisser des notes d’enquête et exporter les résultats pour les déplacer vers un autre environnement. 
 

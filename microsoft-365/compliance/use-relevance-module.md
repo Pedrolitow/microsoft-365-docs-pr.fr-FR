@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Découvrez comment le module de pertinence analyse les données dans les preuves avec une description du flux de travail de pertinence et les étapes de formation dans les enquêtes de données (aperçu).
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 10b05d4d648bc781a2ec1c7ff8a35d5e82583c55
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 64bd0101fd2a0804da9e513241a97bc9f133880e
+ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034486"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46528160"
 ---
 # <a name="use-the-relevance-module-to-analyze-data-in-evidence"></a>Utiliser le module de pertinence pour analyser les données dans les preuves
 
@@ -31,14 +31,14 @@ Dans les enquêtes de données (préversion), le module de pertinence inclut la 
 ![Flux de travail de pertinence](../media/44c67dd2-7a20-40a9-b0ed-784364845c77.gif)
   
 - **Cycles d’évaluation et de suivi**:
-    
+
   - **Évaluation**: permet une évaluation précoce basée sur un échantillon aléatoire de fichiers et utilise cette évaluation pour appliquer des décisions afin de déterminer les performances du processus de codage prédictif. 
-    
+
   - **Track**: calculer et afficher les résultats intermédiaires de l’évaluation tout en surveillant la validité statistique du processus. 
-    
+
 - **Cycles de formation et de suivi**
-    
-  - **Tag**: enquêtes sur les données (préversion) apprend des critères de pertinence spécifiques à chaque problème en fonction de la révision itérative et du balisage des fichiers individuels d’un expert.
+
+  - **Tag**: enquêtes sur les données (aperçu) apprend les critères de pertinence propres à chaque problème en fonction de la révision itérative et du balisage des fichiers individuels de l’expert.
     
   - **Track**: calculer et afficher les résultats intermédiaires de la formation à la pertinence tout en surveillant la validité statistique du processus. 
     
@@ -66,9 +66,9 @@ Vous trouverez ci-dessous une vue d’ensemble des directives de formation et de
      
   - Ignorer le texte appliqué à la pertinence sera supprimé dans le contenu du fichier affiché dans l’affichage de texte en pertinence. Si les valeurs pour ignorer le texte ont été définies après l’apprentissage de pertinence déjà démarré, le nouveau texte ignoré est appliqué aux fichiers d’exemple créés à partir du point dans lequel ils ont été définis. La fonctionnalité ignorer le texte doit être utilisée avec précaution, car son utilisation peut réduire les performances de l’analyse des fichiers.
     
-  - Utilisez l’option **ignorer le balisage** uniquement lorsque cela est nécessaire. Les enquêtes de données (préversion) ne sont pas basées sur les fichiers ignorés. Dans l’évaluation, s’il est difficile de déterminer si un fichier est pertinent, il est préférable de baliser comme pertinentes (R) ou non pertinente (NR) autant que possible, au lieu de sélectionner **Ignorer**. Lorsque les enquêtes sur les données (aperçu) évaluent la formation, il est possible que ces types de fichiers aient été traités.
+  - Utilisez l’option **ignorer le balisage** uniquement lorsque cela est nécessaire. Les enquêtes de données (aperçu) ne sont pas basées sur des fichiers ignorés. Dans l’évaluation, s’il est difficile de déterminer si un fichier est pertinent, il est préférable de baliser comme pertinentes (R) ou non pertinente (NR) autant que possible, au lieu de sélectionner **Ignorer**. Lorsque les enquêtes sur les données (aperçu) évaluent la formation, il est possible que ces types de fichiers aient été traités.
     
-  - Même les fichiers avec une très petite quantité de texte extrait doivent être balisés en formation sous la forme R/NR, plutôt qu’en tant que « Skip », lorsque cela est possible. 
+  - Même les fichiers avec une petite quantité de texte extrait doivent être balisés en formation sous la forme R/NR, plutôt qu’en tant que « Skip », lorsque cela est possible. 
     
   - Le marquage peut avoir un impact sur le classifieur tant que le fichier est lisible et peut être marqué comme R/NR.
     
@@ -84,7 +84,7 @@ Vous trouverez ci-dessous une vue d’ensemble des directives de formation et de
     
 - **Calcul par lots**: les fichiers marqués comme R/NR par l’expert recevront un score de 0 ou de 100. Cela s’applique au marquage effectué avant le calcul du lot. Si l’expert a activé le problème sur inactif après le calcul par lot et a continué à marquer ce problème, les scores nouvellement marqués ne seront pas 100/0 mais plutôt le score d’origine.
     
-- **Problèmes et mode d’échantillonnage**: les problèmes sont généralement désactivés lorsqu’ils sont terminés (la formation à la pertinence est stabilisée et le calcul par lot a été effectué), lors de l’annulation des problèmes ou lorsqu’un autre utilisateur travaille sur les problèmes.
+- **Problèmes et mode d’échantillonnage**: les problèmes sont désactivés lorsque les tâches sont terminées (la formation de pertinence est stabilisée et le calcul par lot a été effectué), lorsque les problèmes sont annulés ou lorsqu’un autre utilisateur travaille sur les problèmes.
     
 ## <a name="steps-in-relevance-training"></a>Étapes de la formation pertinente
 
@@ -129,7 +129,7 @@ Il est possible d’accepter ou de remplacer les analyses de données par les ch
 > [!NOTE]
 > Certaines options peuvent rester désactivées après un déverrouillage, car elles ne sont pas prises en charge à ce stade du processus. 
   
-## <a name="more-information"></a>Plus d’informations
+## <a name="more-information"></a>Informations supplémentaires
 
 [Présentation de l’évaluation en matière de pertinence](assessment-in-relevance-in-advanced-ediscovery.md)
   

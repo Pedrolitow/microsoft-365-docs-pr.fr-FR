@@ -13,15 +13,16 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
-- M365solutions
+- m365solution-infoprotection
+- m365solution-overview
 ms.custom: ''
 description: Configurez l’infrastructure de sécurité et de service afin de protéger vos informations et de respecter les réglementations en matière de confidentialité des données.
-ms.openlocfilehash: ea0f5ead93dc631a28577a61f33bca3b601406f4
-ms.sourcegitcommit: 4512f54ba80d869d4c04e8f9bd897d1878280852
+ms.openlocfilehash: 640ce075515c687c037cb0e4ab3e03e3beda81dc
+ms.sourcegitcommit: 0f71042edc7c3a7f10a7b92e1943abf51532cbf5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "44854330"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "46522288"
 ---
 # <a name="deploy-information-protection-for-data-privacy-regulations-with-microsoft-365"></a>Déployer la protection des informations pour les réglementations sur la confidentialité des données avec Microsoft 365
 
@@ -37,13 +38,13 @@ Pour répondre aux critères de protection des informations en matière de confo
 
 | Fonctionnalité | Description | Licence |
 |:-------|:-----|:-------|
-| Gestionnaire de conformité | Gérez les activités de conformité réglementaire liées aux services de Cloud Computing Microsoft avec cet outil d’évaluation des risques basé sur un flux de travail dans le portail d’approbation de service Microsoft. | Microsoft 365 E3 et E5 |
-| Score de conformité (préversion) | Consultez le score global de votre configuration de conformité actuelle et les recommandations pour l’améliorer dans le centre de conformité Microsoft 365. | Microsoft 365 E3 et E5 |
-| Office Advanced Threat Protection (ATP) | Protégez vos applications et vos données Microsoft 365 (telles que les messages électroniques, les documents Office et les outils de collaboration) contre les attaques. | Microsoft 365 E3 et E5 | 
-| Étiquettes de confidentialité | Classifiez et protégez les données de votre organisation sans entraver la productivité des utilisateurs et leur capacité à collaborer en plaçant des étiquettes avec différents niveaux de protection sur le courrier, les fichiers ou les sites. | Microsoft 365 E3 et E5 |
-| Protection contre la perte de données (DLP) | Détecter, avertir et bloquer le partage risqué, involontaire ou inapproprié, comme le partage de données contenant des informations personnelles, à la fois en interne et en externe. | Microsoft 365 E3 et E5 | 
-| Étiquettes et stratégies de rétention des données | Mettre en œuvre des contrôles de gouvernance des informations, tels que la durée de conservation des données et des exigences sur le stockage des données personnelles sur les clients, afin de se conformer aux stratégies ou aux réglementations de votre organisation. | Microsoft 365 E3 et E5 |
-| Chiffrement du courrier électronique | Envoyer et recevoir des messages électroniques chiffrés entre des personnes à l’intérieur et à l’extérieur de votre organisation qui contiennent des données réglementées, telles que des données personnelles sur les clients. | Microsoft 365 E3 et E5 |
+| Gestionnaire de conformité | Gérez les activités de conformité réglementaire liées aux services cloud Microsoft avec cet outil d’évaluation des risques basé sur les flux de travail dans le portail d’approbation de services Microsoft. | Microsoft 365 E3 et E5 |
+| Score de conformité (préversion) | Obtenez un score global concernant votre configuration de conformité actuelle avec des recommandations pour l’améliorer dans le centre de conformité Microsoft 365. | Microsoft 365 E3 et E5 |
+| Office – Protection avancée contre les menaces | Protégez vos applications et données Microsoft 365 (par exemple, messages électroniques, documents Office et outils de collaboration) contre les attaques. | Microsoft 365 E3 et E5 | 
+| Étiquettes de confidentialité | Classifiez et protégez les données de votre organisation sans entraver la productivité des utilisateurs ni leur capacité à collaborer en plaçant des étiquettes avec différents niveaux de protection sur les messages électroniques, les fichiers et les sites. | Microsoft 365 E3 et E5 |
+| Protection contre la perte de données (DLP) | Détectez, signalez et bloquez le partage risqué, accidentel ou inapproprié, tel que le partage de données contenant des informations personnelles, à la fois en interne et en externe. | Microsoft 365 E3 et E5 | 
+| Étiquettes et stratégies de rétention des données | Mettez en place des contrôles de gouvernance des informations, tels que la durée de conservation des données ainsi que des exigences sur le stockage de données personnelles sur les clients, pour vous conformer aux stratégies de votre organisation ou aux réglementations relatives aux données. | Microsoft 365 E3 et E5 |
+| Chiffrement du courrier électronique | Envoyez et recevez entre des personnes à l’intérieur et à l’extérieur de votre organisation des messages électroniques chiffrés qui contiennent des données réglementées, telles que des données personnelles relatives aux clients. | Microsoft 365 E3 et E5 |
 ||||
 
 ## <a name="organization-of-the-guidance-in-this-solution"></a>Organisation des instructions de cette solution

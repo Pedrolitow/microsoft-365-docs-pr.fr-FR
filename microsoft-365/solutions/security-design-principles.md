@@ -11,15 +11,14 @@ localization_priority: Normal
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-- M365solutions
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: eb8019efb13a13b27a67d541ae69ca6f30b35ed0
-ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
+ms.openlocfilehash: cdb6b557bf2f46a2338d929547167cf89a048695
+ms.sourcegitcommit: 0f71042edc7c3a7f10a7b92e1943abf51532cbf5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44160050"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "46522276"
 ---
 # <a name="security-hurdles-you-can-sail-over--one-architects-viewpoint"></a>Obstacles de sécurité que vous pouvez parcourir — point de vue d’un architecte
 
@@ -80,7 +79,7 @@ Pour vous aider à résoudre ces obstacles, Microsoft a créé plusieurs ressour
 
 |Resource   |Plus d’informations  |
 |---------|---------|
-|[Principales tâches des équipes de sécurité pour prendre en charge le travail à partir de la maison](../security/top-security-tasks-for-remote-work.md)      | Si vous vous retrouvez soudainement à la mise en place d’un personnel de travail à la maison, cet article vous permet d’effectuer un renforcement de la sécurité rapidement. Elle inclut les principales tâches recommandées en fonction de votre plan de gestion des licences.    |
+|[Principales tâches pour les équipes de sécurité qui prennent en charge le travail à domicile](../security/top-security-tasks-for-remote-work.md)      | Si vous vous retrouvez soudainement à la mise en place d’un personnel de travail à la maison, cet article vous permet d’effectuer un renforcement de la sécurité rapidement. Elle inclut les principales tâches recommandées en fonction de votre plan de gestion des licences.    |
 |[Sécurité Microsoft 365 pour les décideurs d’entreprise](../security/Microsoft-365-security-for-bdm.md)    | Lorsque vous avez le temps d’utiliser un plan plus complet, cet article inclut des recommandations qui s’étendent sur Microsoft 365, classées par surface d’attaque. Il s’agit même d’une feuille de calcul que vous pouvez utiliser pour trier les licences et les domaines (par exemple, l’identité, la protection contre les menaces et la surveillance).  |
 |[Recommandations sur l’architecture de sécurité Microsoft](https://docs.microsoft.com/security/compass/compass)    | Si vous êtes un architecte de sécurité, veillez à consulter les recommandations de sécurité organisées par discipline, notamment l’identité, la mise en réseau et les opérations de sécurité.   |
 |[Recommandations concernant les opérations de sécurité Microsoft](https://docs.microsoft.com/security/compass/security-operations-videos-and-decks)|Découvrez les recommandations de Microsoft concernant la configuration et l’exécution d’un centre d’opérations sécurité (SOC) |

@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7257cb50-0d5c-4f7a-ac2e-9fe5d13bb5cb
 description: Lorsque vous êtes connecté avec des comptes professionnels ou scolaires valides, les utilisateurs peuvent obtenir des services d’assistance en nuage avec Cortana dans les expériences Microsoft 365 qui répondent aux engagements de confidentialité, de sécurité et de conformité au niveau de l’entreprise d’Office 365.
-ms.openlocfilehash: 7b8f60f5138de63234520f18d6de0973b74482ed
-ms.sourcegitcommit: 3951147f74510e2ead6c11ceab92854f0937426b
+ms.openlocfilehash: 5707fb5966e77787b609c20b204602318627d350
+ms.sourcegitcommit: 0f71042edc7c3a7f10a7b92e1943abf51532cbf5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "45083549"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "46521276"
 ---
 # <a name="cortana-in-microsoft-365"></a>Cortana dans Microsoft 365
 
@@ -33,7 +33,7 @@ Cortana, votre Assistant de productivité personnelle, propose des expériences 
 
 En tant qu’assistant de productivité personnelle, Cortana est conçue pour fournir des fonctionnalités qui traitent et sont en toute sécurité les données Office 365, par exemple les e-mails, les fichiers, les conversations, etc., pour gagner du temps, améliorer l’efficacité et améliorer la productivité de vos utilisateurs.
 
-À l’avenir, nous concentrons Cortana sur la productivité de l’entreprise. 
+À l’avenir, nous concentrons Cortana sur la productivité de l’entreprise.
 
 - Conformément aux autres services Office 365, les services d’entreprise de Cortana répondent aux mêmes engagements de confidentialité, de sécurité et de conformité au niveau de l’entreprise, comme indiqué dans les [services en ligne (OST)](https://www.microsoft.com/licensing/product-licensing/products).
 
@@ -159,7 +159,7 @@ Désactiver l’accès Cortana aux données hébergées par Microsoft de votre o
 
 1. Dans le centre d’administration 365 de Microsoft **Settings**, sélectionnez Paramètres d'  >  **organisation** des paramètres et sélectionnez **Cortana**.
 
-2. Désélectionnez la case à cocher **autoriser ces expériences de connexion facultatives Cortana à utiliser les données hébergées par Microsoft de votre organisation** pour désactiver les expériences connectées à Cortana.
+2. Désélectionnez la case à cocher **autoriser Cortana dans Windows 10 (version 1909 et antérieures) et l’application Cortana sur iOS et Android pour accéder aux données hébergées par Microsoft pour les personnes de votre organisation** afin de désactiver les expériences connectées à Cortana.
 
 3. Sélectionnez **Enregistrer les modifications**.
 

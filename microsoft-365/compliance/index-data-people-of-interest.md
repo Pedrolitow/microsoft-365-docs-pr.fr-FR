@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Découvrez comment utiliser l’indexation avancée pour vous assurer que votre recherche capture toutes les données que vous souhaitez analyser.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: dc7d73c233aa48b88e9dce32fad613ccc5e19333
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 6e72ec4a41d5b32ef3837e52f21836207c6f66e1
+ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035060"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46527576"
 ---
 # <a name="advanced-indexing-of-data-for-an-investigation"></a>Indexation avancée des données pour une enquête
 
@@ -40,7 +40,7 @@ Pour en savoir plus sur le traitement de la prise en charge et des éléments pa
 
 ## <a name="viewing-advanced-indexing-results"></a>Affichage des résultats de l’indexation avancée
 
-Une fois le processus d’indexation avancé terminé, vous pouvez comprendre l’efficacité du nouveau traitement.  Dans l’affichage indexation des personnes à intérêt, le graphique répertorie tous les éléments ajoutés à l' *index hybride*.  L’index hybride permet aux enquêtes de données (préversion) de stocker le contenu retraité.
+Une fois le processus d’indexation avancé terminé, vous pouvez comprendre l’efficacité du retraitement.  Dans l’affichage indexation des personnes à intérêt, le graphique répertorie tous les éléments ajoutés à l' *index hybride*.  L’index hybride permet aux enquêtes de données (préversion) de stocker le contenu retraité.
 
 Le graphique inclut également le nombre d’éléments nécessitant une correction et un autre graphique d’erreurs par type de fichier. Pour plus d’informations, consultez la rubrique [erreur de correction lors du traitement des données](error-remediation.md).
 
