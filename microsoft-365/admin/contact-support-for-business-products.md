@@ -1,10 +1,10 @@
 ---
-title: Contacter le support relatif aux produits d’entreprises- Aide de l’administrateur
+title: Comment contacter le support relatif aux produits d’entreprises - Aide de l’administrateur
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -17,44 +17,44 @@ ms.custom:
 - MSStore_Link
 - AdminSurgePortfolio
 search.appverid:
-- BCS160
 - MET150
-- MOE150
-- BEA160
-- GEA150
-ms.assetid: 32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b
-description: Obtenez un support technique et de facturation à l’aide de numéros de téléphone répertoriés pour votre pays ou région, en envoyant une demande de service en ligne ou en accédant à la Boutique Microsoft.
+description: Obtenez un support technique et de facturation à l’aide de numéros de téléphone répertoriés pour votre pays ou région, en envoyant une demande de service en ligne ou en contactant la Boutique Microsoft pour le support client virtuel.
 feedback_system: None
-ms.openlocfilehash: 80fa10e01934e98f16fa36403268229409638d68
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 4ee5a8adc17bb01a58ba79ccb53714c75af7de99
+ms.sourcegitcommit: 6cf29958aff90d8bc1df0fe5fb9238d338db8237
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44388244"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "46506308"
 ---
-# <a name="contact-support-for-business-products---admin-help"></a>Contacter le support relatif aux produits d’entreprises- Aide de l’administrateur
+# <a name="ways-to-contact-support-for-business-products---admin-help"></a>Comment contacter le support relatif aux produits d’entreprises - Aide de l’administrateur
 
 ::: moniker range="o365-worldwide"
 
-## <a name="online-support"></a>[ Support en ligne](#tab/online)
+> [!IMPORTANT]
+> Vous devez être un administrateur d’un abonnement pour les entreprises pour utiliser ces méthodes de support. Si vous n’êtes pas un administrateur professionnel, veuillez utiliser [cette page de support](https://support.microsoft.com/help/contactus).
 
-Gagnez du temps en créant votre demande de service en ligne. Nous vous aiderons à trouver une solution, ou vous connecter avec un spécialiste qui vous contactera par e-mail ou téléphone. [En savoir plus sur les délais de réponse d’assistance initiales](https://go.microsoft.com/fwlink/p/?LinkId=518251).
+Commencez par [vérifier l’état d’intégrité actuel de vos services](https://docs.microsoft.com/office365/enterprise/view-service-health). Vous pouvez consulter des informations détaillées sur les problèmes actuels et passés dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=842900" target="_blank">Tableau de bord d’état d’intégrité du service</a>. Si vous rencontrez un problème qui ne figure pas dans la liste, vous pouvez obtenir une assistance de l’une des façons suivantes :
+
+## <a name="online-support"></a>Support en ligne
+
+Gagnez du temps en créant votre demande de service en ligne. Nous allons vous aider à trouver une solution, ou vous connecter au support technique.
 
 1. Accédez au Centre d’administration à l’adresse <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>. Si un message indiquant que vous n’êtes pas autorisé à accéder à cette page ou à effectuer cette action s’affiche, cela signifie que vous n’êtes pas un administrateur. [Au sein de mon entreprise, qui dispose d’autorisations d’administration ?](admin-overview/admin-overview.md#who-has-admin-permissions-in-my-business)
 
 2. Sélectionnez le bouton **Vous avez besoin d’aide ?**
 
-3. Dans le volet **Vous avez besoin d’aide ?**, indiquez-nous en quoi vous avez besoin d’aide, puis appuyez sur Entrée.
+3. Dans le volet **Vous avez besoin d’aide ?**, indiquez-nous en quoi vous avez besoin d’aide, puis appuyez sur **Entrer**.
 
 4. Si les résultats ne vous satisfont pas, sélectionnez **Contacter le support**.
 
-5. Entrez une description (facultatif), confirmez le numéro auquel vous contacter et votre adresse de courrier, sélectionnez votre méthode de contact préférée, puis sélectionnez **Me contacter**. Le temps d’attente prévu est indiqué dans le volet **Vous avez besoin d’aide ?**
+5. Entrez une description de votre problème, confirmez le numéro auquel vous contacter et votre adresse de courrier, sélectionnez votre méthode de contact préférée, puis sélectionnez **Me contacter**. Le temps d’attente prévu est indiqué dans le volet **Vous avez besoin d’aide ?**.
 
-## <a name="phone-support"></a>[Prise en charge des téléphones](#tab/phone)
+## <a name="phone-support"></a>Support téléphonique
 
 Le support de facturation est proposé en anglais de 9 h à 17 h (9 h à 18 h en Australie), du lundi au vendredi.\
 Le support technique est proposé en anglais 24 heures sur 24, 7 jours sur 7.\
-Vous, en tant qu'administrateur, devez avoir vos informations de compte à disposition lorsque vous appelez le support.\
+Vous, en tant qu'administrateur, devez avoir vos informations de compte à disposition lorsque vous appelez le support.
 
 - **Pour les États-Unis, composez le 1 800 865 9408.**
 
@@ -64,23 +64,17 @@ Vous, en tant qu'administrateur, devez avoir vos informations de compte à dispo
 
 - **Au Royaume-Uni, composez le 0800 032 6417.**
 
-Si le numéro de téléphone du support Microsoft 365 pour les entreprises ne figure pas dans la liste ci-dessus, utilisez le menu déroulant ci-dessous pour choisir votre pays ou votre région.
+### <a name="phone-numbers-for-other-countries"></a>Numéros de téléphone pour d’autres pays
+
+Si le numéro de téléphone du support que vous recherchez ne figure pas dans la liste ci-dessus, utilisez le menu déroulant ci-dessous pour rechercher le numéro de votre pays ou région.
 
 [!INCLUDE [country-region-support-dropdown-list](includes/country-region-support-dropdown-list.md)]
 
-Pour découvrir comment ouvrir une demande de service, sélectionnez l’onglet **Support en ligne**.
+## <a name="virtual-support-from-the-microsoft-store"></a>Support virtuel du Microsoft Store
 
-## <a name="in-store-support"></a>[Prise en charge en boutique](#tab/instore)
+Vous pouvez contacter le support technique et les ventes Microsoft Store pour contacter un expert du support technique pour résoudre votre problème Microsoft 365.
 
-Vous pouvez désormais prendre un rendez-vous dans votre Microsoft Store local avec un expert Answer Desk pour vous aider à résoudre votre problème lié à Microsoft 365.
-
-1. Accédez à la page de [planification des boutiques Microsoft](https://go.microsoft.com/fwlink/?LinkID=2041482), puis sélectionnez **Planifier un rendez-vous**.
-
-2. Saisissez votre emplacement et lancez la recherche pour trouver un Microsoft Store près de chez vous.
-
-3. Sélectionnez votre boutique, puis sélectionnez **Planifier un rendez-vous de service maintenant**.
-
----
+Accédez à la page [Contacter le support Microsoft Store](https://support.microsoft.com/help/28808/microsoft-store-contact-support?icid=bm_support_5292020) pour obtenir des liens d’aide rapide et des numéros de téléphone.
 
 ::: moniker-end
 
@@ -92,15 +86,15 @@ Les administrateurs autorisés peuvent utiliser Office 365 géré par 21Vianet p
 
 La portée de l’assistance de l’équipe de support technique Office 365, géré par 21Vianet se limite aux problèmes liés à Office 365, géré par 21Vianet. Les problèmes liés au réseau du client sont en dehors des limites de l’assistance Office 365. Dans de tels cas, les clients doivent se tourner vers l’équipe en charge de leur réseau ou contacter l’équipe réseau Microsoft pour obtenir de l’aide.
 
-### <a name="community-and-self-service-support-options"></a>Communauté et options d’assistance en libre service
+## <a name="community-and-self-service-support-options"></a>Communauté et options d’assistance en libre service
 
 L’assistance en libre service est disponible pour tout Office 365 exploités par les utilisateurs 21Vianet, et inclut des vidéos et des outils de dépannage, des vidéos et des articles d’aide ainsi que des forums et des wikis dans la[ Communauté d’Office 365](https://go.microsoft.com/fwlink/p/?linkid=842838). Pour plus d’informations sur les ressources d’assistance en libre service, consultez[Plus d’informations sur Office 365 géré par 21Vianet](services-in-china/services-in-china.md).
 
-### <a name="pre-sales-support"></a>Assistance avant-vente
+## <a name="pre-sales-support"></a>Assistance avant-vente
 
 L'assistance avant-vente pour Office 365 géré par 21VIanet  fournit une assistance sur les avantages et les fonctionnalités d'abonnement, la comparaison des offres, les tarifs et les licences, et vous aide à identifier la solution la plus adaptée pour répondre aux besoins spécifiques de votre entreprise. En outre, l'assistance avant-vente peut vous aider à trouver un partenaire, ainsi qu'à acheter un essai et à vous y inscrire. Vous pouvez appeler durant les heures ouvrables de votre pays/région, du lundi au vendredi. L'assistance avant-vente est accessible au même numéro de téléphone que l'assistance technique. Le numéro de téléphone de l'assistance est indiqué sur le portail Office 365 de l'essai gratuit. Pour obtenir des instructions, voir[Contacter l’assistance technique](#contact-support).
 
-### <a name="billing-and-subscription-management-support"></a>Assistance de gestion de facturation et d’abonnement
+## <a name="billing-and-subscription-management-support"></a>Assistance de gestion de facturation et d’abonnement
 
 L'assistance fournie pour des problèmes de gestion de facturation et d'abonnement est disponible en ligne ou par téléphone aux heures ouvrables en Chine, du lundi au vendredi. L'assistance de gestion de facturation et d'abonnement est accessible via le même numéro de téléphone et processus de demande de service en ligne que l'assistance technique. Le numéro de téléphone de l'assistance est indiqué sur le portail Office 365 géré par le portail 21Vianet. Pour obtenir des instructions, voir [Contacter Office 365 en cas de problème technique](#contact-support).
 
@@ -118,7 +112,7 @@ Voici quelques exemples de problèmes de gestion de facturation et d’abonnemen
 
 - Annuler un abonnement payant
 
-### <a name="technical-support"></a>Assistance technique
+## <a name="technical-support"></a>Assistance technique
 
 L'assistance technique pour les abonnements Office 365 géré par 21Vianet fournit une assistance d'installation de base, de configuration et d'utilisation technique générale. Quelques exemples de ces problèmes sont répertoriés dans le tableau suivant.
 
@@ -130,7 +124,7 @@ L'assistance technique pour les abonnements Office 365 géré par 21Vianet fourn
 > [!NOTE]
 > Voici comment contacter l'assistance technique : [Contacter l’assistance technique](#contact-support). L’assistance technique ne comprend pas les compléments ou services de dépannage tiers. Découvrez comment rechercher des réponses données par d'autres clients dans la [Communauté ](https://go.microsoft.com/fwlink/p/?linkid=842838).
 
-### <a name="technical-support-case-handling"></a>Gestion des incidents d’assistance technique
+## <a name="technical-support-case-handling"></a>Gestion des incidents d’assistance technique
 
 21Vianet affecte un niveau de gravité à un incident lorsqu’il est ouvert en fonction d’une évaluation du type de problème et de son impact sur le client. Le tableau suivant contient des exemples de types de problèmes et de niveaux de gravité.
 
@@ -141,7 +135,7 @@ L'assistance technique pour les abonnements Office 365 géré par 21Vianet fourn
 </li></ul> |
 | Niveau de gravité C (Non critique) | La situation a un impact minime sur l’activité. Le problème est important mais n’a pas d’impact considérable sur la productivité ou le service actuel pour le client. Un seul utilisateur connaît une interruption partielle mais il existe une solution acceptable. | <ul><li>Comment définir un mot de passe d’utilisateur qui n’expire jamais.</li> <li>L'utilisateur ne peut pas supprimer les informations de contact dans Exchange Online.</li></ul> |
 
-### <a name="technical-support-initial-response-times"></a>Délais de réponse initiaux d’assistance technique
+## <a name="technical-support-initial-response-times"></a>Délais de réponse initiaux d’assistance technique
 
 Le temps de réponse initial est basé sur les niveaux de gravité décrits ci-dessus. L’équipe du service clientèle 21Vianet mettre en place d’enquête et communication client raisonnable selon les niveaux de gravité. Par conséquent, 21Vianet s’attend également à ce que le client collabore à un niveau raisonnable.
 
@@ -155,22 +149,22 @@ Le temps de réponse initial est basé sur les niveaux de gravité décrits ci-d
 
 <sup>2</sup> La gravité A concerne uniquement les clients qui ont signé un accord de service en ligne avancé avec 21Vianet via un responsable de comptes commerciaux. La Gravité A est disponible uniquement pour le support technique. L’assistance de gestion des facturation et les abonnements, le niveau de gravité le plus élevé est B.
 
-### <a name="technical-support-working-hours"></a>Heures de travail d’assistance technique
+## <a name="technical-support-working-hours"></a>Heures de travail d’assistance technique
 
 Gravité A: 24\*7 service continu
 
 La Gravité B/c : 9:00 ~ 24:00 (heure de Pékin,Beijing) un jour 365 jours.
 
-### <a name="contact-support"></a>Contacter l’assistance
+## <a name="contact-support"></a>Contacter l’assistance
 
 > [!NOTE]
 > Les options d’assistance ne concernent que les administrateurs des organisations ayant souscrit à Office 365. Si vous utilisez Office 365 mais vous n’êtes pas un administrateur, vous pouvez toujours obtenir une assistance dans les forums de la Communauté ou contacter votre administrateur.
 
-#### <a name="open-an-online-request"></a>Ouvrir une demande en ligne
+### <a name="open-an-online-request"></a>Ouvrir une demande en ligne
 
 Gagnez du temps en créant votre demande de service en ligne. Dans le Centre d’Administration Microsoft 365, choisissez**Support** \>**Nouvelle demande de service**.
 
-#### <a name="call-support"></a>Appeler le support technique
+### <a name="call-support"></a>Appeler le support technique
 
 Appelez l’assistance. Si vous rencontrez des problèmes avec la demande en ligne, assistance technique par téléphone accessible au (86)400-089-0365.
 
@@ -178,7 +172,7 @@ Appelez l’assistance. Si vous rencontrez des problèmes avec la demande en lig
 
 21Vianet comprend que bénéficier d’une assistance technique provenant de professionnels qualifiés est un aspect clé des services cloud. Le rôle critique est également important que joue le service informatique du client dans l’assistance de ses utilisateurs.
 
-#### <a name="administrator-roles-and-responsibilities"></a>Rôle et responsabilités de l’administrateur
+### <a name="administrator-roles-and-responsibilities"></a>Rôle et responsabilités de l’administrateur
 
 Les personnes ayant des rôles d’administrateur sont les seules dans l’organisation du client autorisées à accéder à la rubrique Admin du portail Office 365 géré par 21Vianet et à communiquer directement avec 21Vianet concernant des demandes de service Office 365.
 
@@ -204,7 +198,7 @@ Le rôle de l’administrateur consiste à :
 
 L’administrateur est supposé fournir une assistance initiale aux utilisateurs du client. Toutefois, si l’administrateur est incapable de résoudre des problèmes à l’aide des ressources d’assistance en libre service, il ou elle doit contacter [L’Assistance Technique](#contact-support).
 
-#### <a name="21vianet-support-role"></a>Rôle d’assistance 21Vianet
+### <a name="21vianet-support-role"></a>Rôle d’assistance 21Vianet
 
 Le rôle d’assistance de 21Vianet consiste à :
 
@@ -222,11 +216,11 @@ Le rôle d’assistance de 21Vianet consiste à :
 
 - Recueillir en permanence des commentaires de clients sur la façon d’améliorer le service par le biais d’enquêtes.
 
-### <a name="feature-availability"></a>Disponibilité des fonctionnalités
+## <a name="feature-availability"></a>Disponibilité des fonctionnalités
 
 Pour afficher la disponibilité des fonctionnalités entre les plans Office 365, voir [Description du service de plateforme Office 365](https://go.microsoft.com/fwlink/p/?linkid=846911).
 
-### <a name="follow-us-on-wechat"></a>Suivez-nous sur WeChat
+## <a name="follow-us-on-wechat"></a>Suivez-nous sur WeChat
 
 Scannez ce QR code pour suivre les discussions sur WeChat et obtenir les dernières mises à jour pour Office 365 géré par 21Vianet. 
 
@@ -243,7 +237,7 @@ En tant qu'administrateur pour Office 365 Germany pour les entreprises, vous pou
 > [!NOTE]
 > Tous les options d’assistance ci-dessous s’appliquent au cloud Microsoft allemand. Si vous souhaitez en savoir plus sur la manière dont Microsoft utilise les données que vous fournissez lorsque vous contactez le support Microsoft, consultez la [déclaration de confidentialité](https://go.microsoft.com/fwlink/p/?LinkId=512132).
 
-### <a name="get-assisted-support"></a>Obtenir l’assistance
+## <a name="get-assisted-support"></a>Obtenir l’assistance
 
 Les options d’assistance ne concernent que les administrateurs des organisations ayant souscrit à Office 365 Germany. Si vous utilisez Office 365 Germany mais vous n’êtes pas un administrateur, vous pouvez toujours obtenir une assistance dans les forums de la Communauté ou contacter votre administrateur.
 
@@ -253,10 +247,10 @@ Les options d’assistance ne concernent que les administrateurs des organisatio
 
 | Région | Numéro de téléphone | Heures |
 |-----------------------------------------------------|--------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Allemagne | 0800 589 2330 | Assistance facturation : Allemagne : Lun.-Ven., 9-17 h Berlin anglais : Lun.-Ven., 9-17 h Berlin Assistance technique : allemand : 24 heures sur 24, 7 jours sur 7 anglais : 24 heures sur 24, 7 jours sur 7 numéro de téléphone Alternative : 069 380 789 305(les frais d’appel Local s’appliquent) |
-| Tous les autres marchés au sein de l’espace économique européen | +49 69 380 789 305 | Assistance facturation : Allemand : Lun-ven., 9-17h Berlin(UTC+1) anglais : Lun.-ven., 9-17h Berlin (UTC + 1) : Support Technique allemand : 24 heures sur 24, 7 jours sur 7 en anglais : 24 heures sur 24, 7 jours sur 7, l’assistance téléphonique est disponible via un appel téléphonique international vers l’Allemagne. Frais d’appel international applicables. Pour éviter de payer des frais de communication, nous vous conseillons d’envoyer un ticket de support via le Centre d’administration. |
+| Allemagne | 0800&nbsp;589&nbsp;2330 | Support de facturation : <ul><li>Allemand : Lun-Ven 9h-17h Berlin</li><li>Anglais : Lun-Ven 9h-17h Berlin</li></ul>Support technique : <ul><li>Allemand : 24h/24, 7j/7</li><li>Anglais : 24h/24, 7j/7</li></ul>Autre numéro de téléphone : 069 380 789 305 (frais d’appel local applicables) |
+| Tous les autres marchés au sein de l’espace économique européen | +49&nbsp;69&nbsp;380&nbsp;789&nbsp;305 | Support de facturation : <ul><li>Allemand : Lun-Ven 9h-17h Berlin (UTC+1)</li><li>Anglais : Lun-Ven 9h-17h Berlin (UTC+1)</li></ul>Support technique : <ul><li>Allemand : 24h/24, 7j/7</li><li>Anglais : 24h/24, 7j/7</li></ul>Le support téléphonique est disponible via un appel téléphonique international vers l’Allemagne. Frais d’appel international applicables. Pour éviter de payer des frais de communication, nous vous conseillons d’envoyer un ticket de support via le Centre d’administration. |
 
-### <a name="let-our-community-help"></a>Laissez la Communauté vous aider
+## <a name="let-our-community-help"></a>Laissez la Communauté vous aider
 
 Vous pouvez également [rechercher dans les forums de la Communauté Microsoft 365 pour entreprises](https://go.microsoft.com/fwlink/p/?LinkId=518605) pour rechercher des problèmes connus et des sujets populaires, ou pour poser une nouvelle question. Les forums de la communauté sont modérés par des agents d’assistance Microsoft qui peuvent vous aider à résoudre votre problème.
 
