@@ -1,17 +1,20 @@
 ---
 title: Ajouter et vérifier des contacts d’administrateur dans le portail d’administration
 description: Dites-nous qui contacter pour chaque zone de focus.
-keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
+keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 5a980c1e15a6cbc098647139caf48f813b36b040
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.author: jaimeo
+manager: laurawi
+ms.topic: article
+ms.openlocfilehash: d8a5775d90f592aa5f64dd5f379fb37278032d87
+ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42085892"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46529802"
 ---
 # <a name="add-and-verify-admin-contacts-in-the-admin-portal"></a>Ajouter et vérifier des contacts d’administrateur dans le portail d’administration
 
@@ -40,7 +43,7 @@ Empaquetage d’applications | Résolution des problèmes d’empaquetage d’ap
 Appareils | Intégrité de l’appareil, résolution des problèmes avec les appareils de bureau gérés Microsoft
 Sécurité | Résolution des problèmes de sécurité avec les appareils de bureau gérés Microsoft
 Support technique informatique | dans les cas où notre équipe de support technique effectue des tickets d’utilisateur final en dehors des zones de support de bureau géré Microsoft 
-Autres | Pour les problèmes non couverts par d’autres domaines
+Autre | Pour les problèmes non couverts par d’autres domaines
 
 **Les personnes que vous choisissez pour ces contacts doivent disposer des connaissances et des pouvoirs nécessaires pour prendre des décisions concernant votre environnement de bureau géré Microsoft.** Lorsque vous intégrez votre environnement de bureau géré Microsoft, vous êtes invité à ajouter des contacts pour votre service d’assistance et sécurité locaux. 
 
@@ -69,8 +72,8 @@ Les contacts d’administration sont requis lorsque vous [envoyez une demande de
 1. Ajouter et vérifier des contacts d’administration dans le portail d’administration (cette rubrique)
 2. [Ajuster l’accès conditionnel](conditional-access.md)
 3. [Affecter des licences](assign-licenses.md)
-4. [Installer le portail d’entreprise Intune sur sur les appareils](company-portal.md)
+4. [Installer l’application Portail d’entreprise Intune sur les appareils](company-portal.md)
 5. [Activer Enterprise State Roaming](enterprise-state-roaming.md)
-6. [Configurer des appareils de bureau géré Microsoft](set-up-devices.md)
-7. [Préparer vos utilisateurs à l’utilisation des appareils](get-started-devices.md)
-8. [Déployer des applications sur des appareils](deploy-apps.md)
+6. [Configurer les appareils Bureau géré Microsoft](set-up-devices.md)
+7. [Préparer vos utilisateurs à l’utilisation les appareils](get-started-devices.md)
+8. [Déployer les applications sur les appareils](deploy-apps.md)

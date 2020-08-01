@@ -6,12 +6,15 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 6c23d2ffa70cf4931823fafa1918e7fd5eefa0b8
-ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
+ms.author: jaimeo
+manager: laurawi
+ms.topic: article
+ms.openlocfilehash: 5d296c9e690421fdd98fba22b21b44a87157b36f
+ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45430434"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46529754"
 ---
 # <a name="getting-help-for-end-users"></a>Obtenir de l’aide pour les utilisateurs finaux
 
@@ -44,7 +47,7 @@ Pour permettre aux utilisateurs finaux d’obtenir de l’aide par le biais de l
 
 Si vous avez vérifié ces conditions préalables et que l’application Get Help ne fonctionne toujours pas, vous devez, en tant qu’administrateur informatique, classer une [demande de support](admin-support.md).
 
-## <a name="phone-support"></a>Prise en charge des téléphones
+## <a name="phone-support"></a>Support téléphonique
 
 Les utilisateurs finaux disposant d’appareils de bureau gérés par Microsoft ont également accès aux numéros de téléphone gratuits qu’ils peuvent appeler. Cela est destiné à être utilisé lorsque l’aide n’est pas disponible. Par exemple, s’ils ne peuvent pas se connecter à l’appareil, ou si le périphérique est endommagé. Voici les numéros de téléphone pour l’assistance téléphonique :
 

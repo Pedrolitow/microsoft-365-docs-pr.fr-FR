@@ -5,14 +5,16 @@ keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
-ms.date: 09/24/2018
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 02a0b11a1a210367d76e73c75ac5c1fc7a66f94f
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.author: jaimeo
+manager: laurawi
+ms.topic: article
+ms.openlocfilehash: 85e352ec657da435e435311b2ad48beb6a0487ee
+ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636207"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46529994"
 ---
 # <a name="microsoft-managed-desktop-roles-and-responsibilities"></a>Rôles et responsabilités de Bureau géré Microsoft
 
@@ -37,7 +39,7 @@ Groupement d’utilisateurs et d’appareils | Microsoft Managed Desktop Operati
 
 ## <a name="your-roles-and-responsibilities"></a>Vos rôles et responsabilités
 
-Vous trouverez ci-dessous un ensemble supplémentaire de rôles et de responsabilités courants qui ne sont pas fournis par Microsoft, mais qui sont requis pour un déploiement réussi. Il n’est pas exhaustif, mais applicable à la plupart des organisations. Il existe quelques éléments ci-dessous que Microsoft et le client partagent responsibilties. 
+Vous trouverez ci-dessous un ensemble supplémentaire de rôles et de responsabilités courants qui ne sont pas fournis par Microsoft, mais qui sont requis pour un déploiement réussi. Il n’est pas exhaustif, mais applicable à la plupart des organisations. Il existe quelques éléments ci-dessous que Microsoft et le client partagent les responsabilités. 
 
 Rôle ou responsabilité | Description
 --- | ---

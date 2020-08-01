@@ -9,12 +9,14 @@ f1.keywords:
 ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 61ee024cc483f9be172063a256cedd3827d6807a
-ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
+manager: laurawi
+ms.topic: article
+ms.openlocfilehash: fb5a73782650cee36ffdfb95a9bf6efd9464435f
+ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45430494"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46529480"
 ---
 #  <a name="network-configuration-for-microsoft-managed-desktop"></a>Configuration du réseau pour Bureau géré Microsoft
 
@@ -25,7 +27,7 @@ ms.locfileid: "45430494"
 
 Microsoft Managed Desktop est un service géré dans le Cloud. Il existe un ensemble de points de terminaison que les services Microsoft Managed Desktop doivent pouvoir atteindre. Cette section répertorie les points de terminaison qui doivent être autorisés pour les différents aspects du service bureau géré Microsoft. 
 
-Les clients peuvent optimiser leur réseau en envoyant toutes les demandes réseau Microsoft 365 approuvées directement par le biais de leur pare-feu ou de leur proxy, en contournant l’authentification et tout autre contrôle ou traitement de niveau paquet. Cela réduit la latence et les besoins en matière de capacité de périmètre. 
+Les clients peuvent optimiser leur réseau en envoyant toutes les demandes réseau Microsoft 365 approuvées directement par le biais de leur pare-feu ou de leur proxy, en contournant l’authentification et tout autre contrôle ou traitement de niveau paquet. Cela réduit ainsi la latence et les exigences relatives à la capacité du périmètre. 
 
 Par ailleurs, pour optimiser les performances des services gérés de bureau géré Microsoft, ces points de terminaison doivent être gérés de façon spéciale par les navigateurs clients client et les appareils dans leur réseau Edge. Ces appareils incluent des pare-feu, des interruptions de SSL, des dispositifs d’inspection de paquets et des systèmes de protection contre la perte de données.
 

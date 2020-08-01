@@ -1,17 +1,20 @@
 ---
 title: Attribuer des licences
 description: Dans le cadre de l’enregistrement, vous devez attribuer des licences que vous avez déjà acquises à vos utilisateurs.
-keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
+keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 8b12ec5f3b7d33f171790224a22ab55b33382187
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.author: jaimeo
+manager: laurawi
+ms.topic: article
+ms.openlocfilehash: 4bd4dcd522848c91c4c8494504dd4c917a7eb776
+ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42085863"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46529742"
 ---
 # <a name="assign-licenses"></a>Attribuer des licences
 
@@ -30,5 +33,5 @@ Si vous rencontrez des difficultés avec l’attribution de licence, contactez l
 4. [Déployer le portail d’entreprise Intune](company-portal.md)
 5. [Activer Enterprise State Roaming](enterprise-state-roaming.md)
 6. [Configurer les appareils](set-up-devices.md)
-7. [Préparer vos utilisateurs à l’utilisation des appareils](get-started-devices.md)
+7. [Préparer vos utilisateurs à l’utilisation les appareils](get-started-devices.md)
 8. [Déployer des applications](deploy-apps.md)

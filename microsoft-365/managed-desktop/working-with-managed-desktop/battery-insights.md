@@ -1,19 +1,22 @@
 ---
-title: Informations sur la batterie
+title: Aperçu de la batterie
 description: ''
-keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
+keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 434f62d5ddfc8bc75c54de422aafc8c6325c4086
-ms.sourcegitcommit: 1c445d68e54ca4249024ca4bb72460dd6fac0a2d
+ms.author: jaimeo
+manager: laurawi
+ms.topic: article
+ms.openlocfilehash: f339fc98ea94c291c533045e9906f626f4b74e2a
+ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "42170594"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46529838"
 ---
-# <a name="battery-insights"></a>Informations sur la batterie
+# <a name="battery-insights"></a>Aperçu de la batterie
 Cette vue fournit des mesures d’utilisation de l’alimentation, de la batterie et de l’application pour vos appareils de bureau gérés par Microsoft. À cette fin, une application est considérée « en cours d’utilisation » si elle est en cours d’exécution et en focus.
 
 Pour afficher les données d’utilisation, sélectionnez l’onglet **batterie** .
@@ -38,9 +41,9 @@ Dans la zone **Consumer Energy Top** , vous trouverez les applications de votre 
  Pour chaque application, les segments colorés vous montrent la distribution de l’utilisation de l’énergie de l’application dans les catégories suivantes :
 
 - UC
-- Display
+- Afficher
 - Réseau
-- Autres
+- Autre
 
 « Other » peut inclure la consommation d’énergie par diverses sources, telles que l’activité du disque, l’utilisation du haut débit mobile et l’énergie perdue à la résistance interne. 
 

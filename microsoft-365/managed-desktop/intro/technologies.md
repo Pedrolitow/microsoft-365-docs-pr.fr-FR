@@ -6,12 +6,15 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 8a86220e7fcfe4c2e788b28842c77d238d98fda4
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.author: jaimeo
+manager: laurawi
+ms.topic: article
+ms.openlocfilehash: 1f82c339e8cbe4426c87eae045107d26201b0025
+ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636195"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46530018"
 ---
 # <a name="microsoft-managed-desktop-technologies"></a>Technologies associées de Bureau géré Microsoft
 
@@ -39,7 +42,7 @@ Applications Web |  Yammer, Office dans un navigateur, Delve, Flow, StaffHub, P
  |
  --- | ---
 Virtualisation d’application (App-V) |    Les clients peuvent déployer des packages App-V à l’aide du client de gestion des applications Win32 Intune.
-Microsoft Defender – Protection avancée contre les menaces |  Microsoft Managed Desktop utilise cette fonctionnalité pour surveiller la sécurité des appareils. 
+Microsoft Defender – Protection avancée contre les menaces |  Microsoft Managed Desktop utilise cette fonctionnalité pour surveiller la sécurité des appareils. 
 
 ## <a name="enterprise-mobility--security-e5"></a>Enterprise Mobility + Security E5
 

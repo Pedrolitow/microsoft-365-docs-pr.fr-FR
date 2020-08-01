@@ -6,12 +6,15 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 0cb4da85b5548ced757197a3af818e212b065b47
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.author: jaimeo
+manager: laurawi
+ms.topic: article
+ms.openlocfilehash: d2a6c09e1bcb84885e607d133c14e26e08e3c621
+ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42085937"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46530162"
 ---
 # <a name="working-with-microsoft-consulting-services"></a>Utilisation de Microsoft Consulting Services
 
@@ -21,7 +24,7 @@ Vous pouvez vous exercer avec Microsoft Consulting Services (MCS) pour obtenir l
 
 Pour utiliser l’empaquetage d’applications MCS, **vous devez fournir les éléments**suivants :
 
-- Fichiers du programme d’installation source (par exemple, Setup. exe ou. msi).
+- Fichiers du programme d’installation source (par exemple, setup.exe ou. msi).
 - Les instructions d’installation, spécifiant des détails sur la façon dont l’installation finale doit ressembler. Par exemple, un raccourci Bureau doit-il exister vers l’application ? Quelle doit être la visibilité de l’application ? L’application doit-elle se connecter à un serveur et, le cas échéant, laquelle ? Pour plus d’informations, consultez le [modèle de demande d’empaquetage d’application](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-ready/downloads/app-packaging-template.docx).
 - Vous devez effectuer vos propres tests d’acceptation pour vérifier que l’application fonctionne comme vous le souhaitez dans votre environnement.
 

@@ -19,12 +19,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Découvrez comment configurer une liste d’URL bloquées pour votre organisation à l’aide d’Office 365 Advanced Threat Protection.
-ms.openlocfilehash: 5c5253aabf5d5235e31f24624fd9e1b3f4adb184
-ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
+ms.openlocfilehash: 288aea848836a56108872c0e4d36d01f4d59ec42
+ms.sourcegitcommit: fab425ea4580d1924fb421e6db233d135f5b7d19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44617263"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "46533810"
 ---
 # <a name="set-up-a-custom-blocked-urls-list-using-atp-safe-links"></a>Configurer une liste d’URL bloquées personnalisée à l’aide de liens fiables ATP
 
@@ -84,6 +84,10 @@ Lorsque vous ajoutez des URL à votre liste, gardez les points suivants à l’e
 |`https://contoso.com/a`|Bloque un site, mais pas les sous- `https://contoso.com/a` chemins supplémentaires comme`https://contoso.com/a/b`|
 |`https://contoso.com/a*`|Bloque un site `https://contoso.com/a` et des sous-chemins supplémentaires comme`https://contoso.com/a/b`|
 |`https://toys.contoso.com*`|Bloque un sous-domaine (« jouets » dans ce cas) tout en permettant de cliquer sur d’autres URL de domaine (par exemple `https://contoso.com` `https://home.contoso.com` , ou).|
+
+
+> [!NOTE]
+> Par défaut, vous pouvez uniquement ajouter 500 URL à la liste d’URL bloquées dans la stratégie par défaut des liens approuvés Office 365 ATP.
 
 ## <a name="how-to-define-exceptions-for-certain-users-in-an-organization"></a>Procédure de définition des exceptions pour certains utilisateurs d’une organisation
 

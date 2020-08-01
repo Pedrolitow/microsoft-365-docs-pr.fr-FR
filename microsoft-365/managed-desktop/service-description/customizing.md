@@ -6,12 +6,15 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 9dca53ac9e99fd9bc68ee42f78de6a2bc009e42c
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.author: jaimeo
+manager: laurawi
+ms.topic: article
+ms.openlocfilehash: 826710bf59acd88494adf1f154e5657d1e039af7
+ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636183"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46529934"
 ---
 # <a name="exceptions-to-the-service-plan"></a>Exceptions au plan de service
 
@@ -29,7 +32,7 @@ Une exception est l’ajout ou la modification de la configuration de base du bu
 |Pilotes matériels ou logiciels     |   Pilotes de périphériques, restreints par les exigences de l' [application](mmd-app-requirements.md)      |
 |Stratégies     | Applications Windows 10 ou Microsoft 365 pour les paramètres d’entreprise sur un appareil géré        |
 |Appareils     | Appareils qui ne figurent pas dans la [liste](device-list.md) des appareils de bureau géré Microsoft        |
-|Autres     |  Tout ce qui n’est pas couvert par les autres zones       |
+|Autre     |  Tout ce qui n’est pas couvert par les autres zones       |
  
 ## <a name="request-an-exception"></a>Demander une exception
 

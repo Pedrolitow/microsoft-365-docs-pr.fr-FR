@@ -1,19 +1,22 @@
 ---
-title: Applications dans Bureau géré Microsoft
+title: Applications dans le Bureau géré Microsoft
 description: ''
 keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: a24212cf69df50d00a32f17e8daf1939657dd602
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.author: jaimeo
+manager: laurawi
+ms.topic: article
+ms.openlocfilehash: bc7192cf82c825a13780567663695d96a760b3ef
+ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632850"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46530102"
 ---
-# <a name="apps-in-microsoft-managed-desktop"></a>Applications dans Bureau géré Microsoft
+# <a name="apps-in-microsoft-managed-desktop"></a>Applications dans le Bureau géré Microsoft
 
 <!--This topic is the target for 2 "Learn more" links in the Admin Portal (aka.ms/app-overview;app-package); also target for link from Online resources (aka.ms/app-overviewmmd-app-prep) do not delete.-->
 

@@ -1,17 +1,20 @@
 ---
 title: Utiliser les informations
 description: ''
-keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
+keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: dd50e5d7291589d12261396aac62e4d07b06909f
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.author: jaimeo
+manager: laurawi
+ms.topic: article
+ms.openlocfilehash: bcb47a7d5e5dc0880ade6a7e5900d1019e13a8d7
+ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42250424"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46529766"
 ---
 # <a name="work-with-insights"></a>Utiliser les informations
 
@@ -46,12 +49,12 @@ Cet affichage vous fournit un résumé de l’intégrité de vos appareils gér�
 
 En savoir plus sur les informations de [fiabilité](reliability-insights.md).
 
-## <a name="battery-insights"></a>Informations sur la batterie
+## <a name="battery-insights"></a>Aperçu de la batterie
 Cette vue présente des informations sur la consommation d’énergie des applications et la durée de vie de la batterie pour les périphériques de votre environnement. Pour afficher ces informations, sélectionnez l’onglet **batterie** .
 
 En savoir plus sur les informations sur les [batteries](battery-insights.md).
 
-## <a name="windows-security-update-insights"></a>Informations sur les mises à jour de sécurité Windows
+## <a name="windows-security-update-insights"></a>Perspectives sur la mise à jour de sécurité Windows
 
 Cet affichage vous montre des informations sur l’état des mises à jour de sécurité pour vos appareils de bureau gérés par Microsoft. Pour afficher ces informations, sélectionnez l’onglet **Windows Security udates** .
 

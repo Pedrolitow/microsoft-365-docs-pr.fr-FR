@@ -7,12 +7,14 @@ author: jaimeo
 ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 94d51d7b28922a05c892eb4ffc14aee813a9069c
-ms.sourcegitcommit: 0f71042edc7c3a7f10a7b92e1943abf51532cbf5
+manager: laurawi
+ms.topic: article
+ms.openlocfilehash: bd775e201f5fec556941ae0e8e7b025744da0419
+ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "46522024"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46529432"
 ---
 # <a name="microsoft-managed-desktop-app-requirements"></a>Configuration requise pour les applications de bureau géré Microsoft
 
@@ -33,7 +35,7 @@ Microsoft Managed Desktop exige que nous administrions les appareils à l’aide
 |Sécurité réseau     | Voir [sécurité réseau](security.md#network-security)        |
 |Sécurité des informations     |  Voir [sécurité des informations](security.md#information-security)       |
 |Récupération de données     | OneDrive Entreprise        |
-|Productivité de base     | Applications Microsoft 365 for entreprise    |
+|Productivité de base     | Microsoft 365 Apps for enterprise    |
 |Navigateur     | Microsoft Edge        |
 
 

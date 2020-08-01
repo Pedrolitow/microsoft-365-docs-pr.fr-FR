@@ -16,12 +16,13 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: 4ffc6a8771a93e0aea4583dce092109afe57175d
-ms.sourcegitcommit: 98782ee4497d72232462c51a3071fae313282980
+- m365solution-identitydevice
+ms.openlocfilehash: 1a16fa9a26ab20065d213857614b06fdde6c0af1
+ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44222326"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46530270"
 ---
 # <a name="identity-and-device-access-configurations"></a>Configurations des identités et de l’accès aux appareils
 
@@ -33,7 +34,7 @@ Microsoft sait que certaines organisations ont des exigences ou des complexités
 
 ## <a name="intended-audience"></a>Public cible
 
-Ces recommandations sont destinées aux architectes d’entreprise et aux professionnels de l’informatique qui sont familiarisés avec [Office 365](https://technet.microsoft.com/library/dn127064(v=office.14).aspx) et [Microsoft Enterprise Mobility + Security](https://microsoft.com/ems), qui inclut, entre autres, Azure Active Directory (identité), Microsoft Intune (gestion des appareils) et Azure information protection (protection des données).
+Ces recommandations sont destinées aux architectes d’entreprise et aux professionnels de l’informatique qui sont familiarisés avec [Office 365](https://docs.microsoft.com/microsoft-365/admin) et [Microsoft Enterprise Mobility + Security](https://microsoft.com/ems), qui inclut, entre autres, Azure Active Directory (identité), Microsoft Intune (gestion des appareils) et Azure information protection (protection des données).
 
 ### <a name="customer-environment"></a>Environnement du client
 
@@ -45,7 +46,7 @@ Pour les organisations qui ne disposent pas de licences Enterprise Mobility + Se
 
 ### <a name="caveats"></a>Observer lors
 
-Votre organisation peut être soumise à des exigences réglementaires ou autres en matière de conformité, notamment des recommandations spécifiques pouvant nécessiter l’application de stratégies qui divergent de ces configurations recommandées. Ces configurations recommandent des contrôles de l’utilisation qui n’étaient pas disponibles par le passé. Nous recommandons ces contrôles, car nous pensons qu’ils représentent le bon équilibre entre sécurité et productivité.  
+Votre organisation peut être soumise à des exigences réglementaires ou autres en matière de conformité, notamment des recommandations spécifiques pouvant nécessiter l’application de stratégies qui divergent de ces configurations recommandées. Ces configurations recommandent des contrôles de l’utilisation qui n’étaient pas disponibles par le passé. Nous recommandons ces contrôles car nous pensons qu’ils représentent un équilibre entre la sécurité et la productivité.  
 
 Nous avons réalisé notre meilleure solution pour tenir compte de nombreuses exigences de protection de l’organisation, mais nous ne sommes pas en mesure de tenir compte de toutes les exigences possibles ou de tous les aspects spécifiques de votre organisation.
 
@@ -57,7 +58,7 @@ Chaque secteur d’activité possède aussi sa propre réglementation spécialis
 
 - **Baseline protection**: nous vous recommandons de définir une norme minimale pour la protection des données, ainsi que les identités et les appareils qui accèdent à vos données. Vous pouvez suivre ces recommandations de base pour fournir une protection par défaut efficace qui répond aux besoins de nombreuses organisations.
 - **Protection sensible**: certains clients disposent d’un sous-ensemble de données qui doivent être protégées à des niveaux supérieurs, ou nécessitent que toutes les données soient protégées à un niveau supérieur. Vous pouvez renforcer la protection de l’ensemble ou des ensembles de données spécifiques dans votre environnement Microsoft 365. Nous vous recommandons de protéger les identités et les appareils qui accèdent à des données sensibles avec des niveaux de sécurité comparables.  
-- **Hautement réglementé**: certaines organisations peuvent avoir une petite quantité de données qui est hautement classifiée, des secrets commerciaux consititutes ou des données réglementées. Microsoft fournit des fonctionnalités pour aider les organisations à respecter de telles exigences, notamment de protection renforcée des appareils et des identités.
+- **Hautement réglementé**: certaines organisations peuvent avoir une petite quantité de données qui est hautement classée, qui constituent des secrets commerciaux ou des données réglementées. Microsoft fournit des fonctionnalités pour aider les organisations à respecter de telles exigences, notamment de protection renforcée des appareils et des identités.
 
 ![Cône de sécurité : tous les clients > certains clients > des clients spécifiques. Application étendue à une application spécifique](../media/M365-idquality-threetiers.png)
 
@@ -94,7 +95,7 @@ Cette section fournit une vue d’ensemble des services et des fonctionnalités 
 
 Azure AD fournit une suite complète de fonctionnalités de gestion des identités. Pour sécuriser l’accès, nous vous recommandons d’utiliser les fonctionnalités suivantes :
 
-- **[Réinitialisation du mot de passe en libre-service](/azure/active-directory/authentication/concept-sspr-howitworks)**: permet à vos utilisateurs de réinitialiser leur mot de passe en toute sécurité et sans intervention de l’assistance technique, en fournissant la vérification de plusieurs méthodes d’authentification que l’administrateur peut contrôler.
+- **[Réinitialisation du mot de passe en libre-service](/azure/active-directory/authentication/concept-sspr-howitworks)**: permet à vos utilisateurs de réinitialiser leur mot de passe en toute sécurité et sans intervention de l’assistance, en fournissant la vérification de plusieurs méthodes d’authentification que l’administrateur peut contrôler.
 
 - **[Authentification multifacteur (MFA) : l’authentification multifacteur](/azure/active-directory/authentication/concept-mfa-howitworks)** exige que les utilisateurs fournissent deux formes de vérification, telles qu’un mot de passe utilisateur, ainsi qu’une notification de l’application Microsoft Authenticator ou d’un appel téléphonique. MFA réduit considérablement le risque qu’une identité volée puisse être utilisée pour accéder à votre environnement.
 
@@ -124,7 +125,7 @@ Ce guide vous montre comment implémenter un ensemble de stratégies pour proté
 - Feuille [de route de sécurité Microsoft 365 : les principales priorités des 30 premiers jours, 90 jours et au-delà](https://docs.microsoft.com/microsoft-365/security/office-365-security/security-roadmap): ces recommandations incluent la journalisation, la gouvernance des données, l’accès administrateur et la protection contre les menaces.
 
 
-### <a name="windows-10-and-microsoft-365-apps-for-enterprise"></a>Applications Windows 10 et Microsoft 365 pour les entreprises
+### <a name="windows-10-and-microsoft-365-apps-for-enterprise"></a>Windows 10 et Microsoft 365 Apps for enterprise
 
 Les applications Windows 10 et Microsoft 365 pour Enterprise sont l’environnement client recommandé pour les PC. Nous vous recommandons Windows 10, car Azure est conçu pour offrir l’expérience la plus facile possible pour les versions locale et Azure AD. Windows 10 inclut également des fonctionnalités de sécurité avancées qui peuvent être gérées via Intune. Microsoft 365 Apps for Enterprise inclut les versions les plus récentes des applications Office. Ces éléments utilisent l’authentification moderne, qui est plus sécurisée et nécessite un accès conditionnel. Ces applications incluent également des outils de sécurité et de conformité améliorés.
 

@@ -1,16 +1,19 @@
 ---
 title: Cycle de vie des produits bureau géré Microsoft
 description: Cette rubrique répertorie les spécifications de périphérique utilisées dans le bureau géré Microsoft.
-keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
+keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
-ms.openlocfilehash: b65724a1eee35149d473fb69ff646b5ef5751b2c
-ms.sourcegitcommit: 1883a103449d7b03d482228bd9ef39a7caf306cf
+ms.author: jaimeo
+manager: laurawi
+ms.topic: article
+ms.openlocfilehash: 0dee95743e0a504330ebbcc69749e41cdc96da39
+ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "42583171"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46529946"
 ---
 # <a name="microsoft-managed-desktop-product-lifecycle"></a>Cycle de vie des produits bureau géré Microsoft
 

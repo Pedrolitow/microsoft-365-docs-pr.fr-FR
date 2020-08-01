@@ -1,19 +1,22 @@
 ---
-title: Prise en charge des administrateurs pour le bureau géré Microsoft
+title: Aide administrateur pour Bureau géré Microsoft
 description: ''
-keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
+keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: c3137c25de9f8fe941f62e5c53b1006c5009e222
-ms.sourcegitcommit: 59b006f8e82d1772cae2029f278a59ae8a106736
+ms.author: jaimeo
+manager: laurawi
+ms.topic: article
+ms.openlocfilehash: a29fa11e43e9be5c8175118ad5b54817c463e929
+ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "42266090"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46529898"
 ---
-# <a name="admin-support-for-microsoft-managed-desktop"></a>Prise en charge des administrateurs pour le bureau géré Microsoft
+# <a name="admin-support-for-microsoft-managed-desktop"></a>Aide administrateur pour Bureau géré Microsoft
 
 Vous pouvez envoyer des tickets de support ou des demandes de commentaires à Microsoft à l’aide du portail d’administration de bureau géré Microsoft. Les demandes de support sont toujours prioritaires sur les envois de commentaires. Les demandes de support sont triées et gérées en fonction de leur gravité, comme indiqué dans le [tableau définition](#sev)de la gravité. Les commentaires sont vérifiés et une réponse vous est proposée. 
 

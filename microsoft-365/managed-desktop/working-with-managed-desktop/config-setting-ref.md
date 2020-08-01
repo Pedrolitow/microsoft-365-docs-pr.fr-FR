@@ -1,18 +1,20 @@
 ---
 title: Référence des paramètres configurables pour le bureau géré Microsoft
 description: Définition des catégories pour les paramètres configurables dans le bureau géré Microsoft
-keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
+keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
-ms.date: 2/14/2019
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 9a405f96ee7a113197fbc9c237779db3e3e5e5ca
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.author: jaimeo
+manager: laurawi
+ms.topic: article
+ms.openlocfilehash: c3f8aec244b1b0685b8293fda0b048d662c7cef2
+ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42632982"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46529360"
 ---
 # <a name="configurable-settings-reference---microsoft-managed-desktop"></a>Référence des paramètres configurables-bureau géré Microsoft
 
@@ -21,7 +23,7 @@ Cette rubrique répertorie les catégories de paramètres que les clients peuven
 ## <a name="desktop-background-picture"></a>Image d’arrière-plan du Bureau
 Vous pouvez personnaliser l’image d’arrière-plan du Bureau pour les appareils de bureau gérés Microsoft dans votre organisation. Vous pouvez l’utiliser pour appliquer une marque de société ou une documentation marketing. 
 
-### <a name="requirements"></a>Configuration requise
+### <a name="requirements"></a>Conditions préalables
 
 Ces conditions doivent être remplies pour une image d’arrière-plan de bureau :
 - Format de fichier image-. jpg, JPEG ou. png
@@ -40,7 +42,7 @@ Ces conditions doivent être remplies pour une image d’arrière-plan de bureau
 ## <a name="browser-start-pages"></a>Pages de démarrage du navigateur
 Les pages de démarrage de navigateur s’ouvrent dans des onglets individuels lorsque les utilisateurs démarrent Microsoft Edge. Si vous souhaitez que vos utilisateurs puissent facilement ouvrir un ensemble de sites qu’ils utilisent fréquemment, ajoutez une page de démarrage de navigateur pour chaque site. 
 
-### <a name="requirements"></a>Configuration requise
+### <a name="requirements"></a>Conditions préalables
 
 Vous devez indiquer le nom de domaine complet (FQDN) pour les sites intranet ou Internet pour les pages de démarrage de votre navigateur. Si des sites internes sont configurés, indiquez aux utilisateurs que l’accès à ces sites est uniquement autorisé lorsqu’ils sont connectés au réseau interne au bureau ou lorsqu’ils sont connectés à l’aide d’une connexion VPN. 
 
@@ -61,7 +63,7 @@ Si vous avez des sites Web et des applications spécifiques dont vous connaissez
 
 Vous pouvez spécifier un emplacement https://ou l’emplacement d’un partage interne où vous avez hébergé votre liste de sites en mode entreprise. 
 
-### <a name="requirements"></a>Configuration requise
+### <a name="requirements"></a>Conditions préalables
 
 Ces exigences doivent être satisfaites pour le fichier de liste de sites en mode entreprise :
 - Format de fichier : fichier XML qui répond aux [exigences de fichier](https://docs.microsoft.com/internet-explorer/ie11-deploy-guide/what-is-enterprise-mode#site-list-xml-file)
@@ -92,7 +94,7 @@ Les sites de confiance vous permettent de personnaliser les zones de sécurité 
 - Zone 3 – zone Internet
 - Zone 4 – zone sites sensibles
 
-### <a name="requirements"></a>Configuration requise
+### <a name="requirements"></a>Conditions préalables
 
 Fournissez le nom de domaine complet (FQDN) pour les sites intranet ou Internet de chaque site approuvé. 
 
@@ -124,7 +126,7 @@ Les exceptions de site proxy que vous ajoutez dans le portail de bureau géré M
 > [!NOTE]
 > La mise à jour de la liste des exceptions de proxy par défaut est toujours prioritaire sur les déploiements des clients. Cela signifie que votre déploiement intermédiaire sera suspendu s’il existe un déploiement pour la liste des exceptions de proxy par défaut.  
 
-### <a name="requirements"></a>Configuration requise
+### <a name="requirements"></a>Conditions préalables
 
 Ces exigences doivent être satisfaites pour les exceptions de serveur proxy et de site proxy :
 - Doit être une adresse de serveur et un numéro de port valides

@@ -19,19 +19,21 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: eb926624-018b-4486-bf11-5fba6ee4d645
-description: Découvrez ce que vous devez faire pour configurer votre Microsoft 365 pour les entreprises.
-ms.openlocfilehash: 7509e2c4801adbca492e5f5446c5b97eae31dccf
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+description: Découvrez les conditions requises et les considérations à prendre en compte pour effectuer le déplacement vers Microsoft 365 pour les entreprises.
+ms.openlocfilehash: b7d815da012e1c104561d5fccfb9e1704ac5c447
+ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44778948"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46529659"
 ---
 # <a name="plan-your-setup-of-microsoft-365-for-business"></a>Planifier la configuration de Microsoft 365 pour les entreprises
 
 Cet article est destiné aux personnes qui ont souscrit à un plan Microsoft 365 pour les entreprises.
   
-Il existe quelques éléments à prendre en compte et vous devez disposer des informations dont vous avez besoin, avant de transférer votre organisation à Microsoft 365.
+Avant de faire passer votre organisation à Microsoft 365, vous devez respecter certaines conditions, les informations dont vous avez besoin, ainsi que les décisions à prendre.
+
+
   
 ## <a name="info-to-have-on-hand-before-you-run-the-setup-wizard"></a>Informations devant être disponibles avant l’exécution de l’Assistant Installation
 

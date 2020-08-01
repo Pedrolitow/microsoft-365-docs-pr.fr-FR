@@ -1,20 +1,22 @@
 ---
-title: Préparer les ressources d’impression pour le bureau géré Microsoft
+title: Préparer des ressources d’impression pour le Bureau géré Microsoft
 description: Étapes importantes pour garantir le bon fonctionnement de l’impression
-keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
+keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
 ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: a90d104915ecdd31d9ac35a6393fba74a3816ea8
-ms.sourcegitcommit: 2859c82b30ae9cbd3a3e4bcdebd65f18444f1a9e
+manager: laurawi
+ms.topic: article
+ms.openlocfilehash: 1588a2c91bcbe0bd381acb6be4f9bd5562810860
+ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42826436"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46530246"
 ---
-# <a name="prepare-printing-resources-for-microsoft-managed-desktop"></a>Préparer les ressources d’impression pour le bureau géré Microsoft
+# <a name="prepare-printing-resources-for-microsoft-managed-desktop"></a>Préparer des ressources d’impression pour le Bureau géré Microsoft
 
 Lorsque vous êtes prêt à vous inscrire dans le bureau géré Microsoft, vous devez évaluer vos besoins en matière d’impression et déterminer l’approche appropriée pour votre environnement. Trois options s’offrent à vous :
  
