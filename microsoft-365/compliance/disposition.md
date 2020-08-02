@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Surveiller et gérer la suppression du contenu, que vous utilisiez une révision de disposition ou que le contenu soit automatiquement supprimé en fonction des paramètres que vous avez configurés.
-ms.openlocfilehash: 938d530447d1a798e5a2d6d4c2f622a04827bf1c
-ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
+ms.openlocfilehash: 55b57891732f50eba09425fce4d2be34c94740f3
+ms.sourcegitcommit: fab425ea4580d1924fb421e6db233d135f5b7d19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46529599"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "46533821"
 ---
 # <a name="disposition-of-content"></a>Disposition de contenu
 
@@ -124,9 +124,9 @@ Le contenu en attente d’une révision de disposition est supprimé uniquement 
 ## <a name="disposition-of-records"></a>Destruction des enregistrements
 
 > [!NOTE]
->Le déploiement de la preuve de la suppression des enregistrements dans SharePoint et OneDrive est terminé. Vous verrez la liste des étiquettes de rétention qui ont marqué le contenu comme enregistrements pour SharePoint et OneDrive dans la section disposition de la page de gestion des enregistrements dans le centre de conformité Microsoft 365. Sous ces étiquettes, vous pouvez voir la liste des éléments dans SharePoint et OneDrive qui ont été supprimés automatiquement ou après une révision de destruction.
-
-La preuve de l’élimination des enregistrements dans Exchange n’est pas encore active. À la fin de cette procédure de déploiement, nous mettrons à jour cette note.
+> Le déploiement de la preuve de la suppression des enregistrements dans SharePoint et OneDrive est terminé. Vous verrez la liste des étiquettes de rétention qui ont marqué le contenu comme enregistrements pour SharePoint et OneDrive dans la section disposition de la page de gestion des enregistrements dans le centre de conformité Microsoft 365. Sous ces étiquettes, vous pouvez voir la liste des éléments dans SharePoint et OneDrive qui ont été supprimés automatiquement ou après une révision de destruction.
+>
+> La preuve de l’élimination des enregistrements dans Exchange n’est pas encore active. À la fin de cette procédure de déploiement, nous mettrons à jour cette note.
 
 Utilisez l’onglet **disposition** de la page **gestion des enregistrements** pour identifier les enregistrements supprimés automatiquement. Ces éléments affichent les **enregistrements supprimés** dans la colonne **type** . Par exemple :
 

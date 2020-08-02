@@ -5,10 +5,9 @@ f1.keywords:
 ms.author: jogruszc
 author: JGruszczyk
 manager: jemed
-ms.date: 08/14/19
+ms.date: 08/14/2019
 ms.audience: ITPro
-layout: LandingPage
-ms.topic: landing-page
+ms.topic: conceptual
 ms.service: o365-solutions
 localization_priority: Priority
 ms.collection:
@@ -16,80 +15,21 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Présentation du Centre de déploiement du bureau moderne.
-ms.openlocfilehash: 36506864d932665a2da8fd2dfc94ab276e4fa2ec
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 3559a32db71d2cceaf3ab4dc67701d5f5f00e7fe
+ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43638139"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46528107"
 ---
 # <a name="desktop-deployment-center"></a>Centre de déploiement du bureau moderne
 
 <strong>Mise à niveau de Windows 7 vers Windows 10</strong>
 <p>Le support étendu de Windows 7 a pris fin le 14 janvier 2020. La mise à niveau sur place de Windows 7 vers Windows 10 constitue la méthode de déploiement la plus rapide. Microsoft Endpoint Configuration Manager vous permet de <a href="https://docs.microsoft.com/microsoft-365/enterprise/windows-7-to-windows-10-upgrade-manual">mettre à niveau un PC</a> ou <a href="https://docs.microsoft.com/microsoft-365/enterprise/windows-7-to-windows-10-upgrade-automated">des milliers de PC</a>. Avec les mises à niveau sur place, vous n’avez pas à vous occuper de la distribution des applications, de la migration des fichiers, de la création d’images personnalisées ou de l’activation des services cloud. Vous pouvez utiliser les outils dont vous disposez déjà pour mettre à niveau des PC existants et vous concentrer sur les étapes de déploiement suivantes pour les mises à niveau : </p>
 
-<p>
-</p>
-
-<ul class="panelContent cardsM">
-    <li>
-        <a href="https://docs.microsoft.com/microsoft-365/enterprise/step-2-directory-and-network-readiness">
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-5.png" alt="Upgrade ConfigMgr" />
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Mise à niveau de ConfigMgr vers l’option Current Branch</h3>
-            <p>Partie de l’étape de préparation des répertoires et du réseau pour les organisations utilisant Configuration Manager</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </a>
-    </li>
-    <li>
-        <a href="https://docs.microsoft.com/microsoft-365/enterprise/step-1-device-and-app-readiness">
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-3.png" alt="Device and App Readiness" />
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Validation de la préparation des appareils et applications</h3>
-            <p>Partie de l’étape de préparation des appareils et des applications (une aide est disponible via le service Soutien aux applications du bureau)</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </a>
-    </li>
-    <li>
-        <a href="https://docs.microsoft.com/microsoft-365/enterprise/windows-7-to-windows-10-upgrade-automated">
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-9.png" alt="Upgrade Windows 7 PCs" />
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Mise à niveau des PC Windows 7 vers Windows 10</h3>
-            <p>Partie de l’étape de déploiement du système d’exploitation et de mise à jour des fonctionnalités pour les PC conservés par les utilisateurs</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </a>
-    </li>
-</ul>
+|               |               |               |               |               |               |
+| ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
+| <img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-5.png" width="36" height="36" alt="Upgrade ConfigMgr" /> | **[Mise à niveau de ConfigMgr vers l’option Current Branch](https://docs.microsoft.com/microsoft-365/enterprise/step-2-directory-and-network-readiness)** <p>Partie de l’étape de préparation des répertoires et du réseau pour les organisations utilisant Configuration Manager</p> | <img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-3.png" width="36" height="36" alt="Device and App Readiness" /> | **[Validation de la préparation des appareils et applications](/microsoft-365/enterprise/step-1-device-and-app-readiness)** <p>Partie de l’étape de préparation des appareils et des applications (une aide est disponible via le service Soutien aux applications du bureau)</p> | <img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-9.png" width="36" height="36" alt="Upgrade Windows 7 PCs" /> | **[Mise à niveau des PC Windows 7 vers Windows 10](/microsoft-365/enterprise/windows-7-to-windows-10-upgrade-automated)** <p>Partie de l’étape de préparation des appareils et des applications (une aide est disponible via le service Soutien aux applications du bureau)</p> |
 
 <img align="middle" src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-2.png" alt="Desktop Deployment Wheel" height="450" width="802" align="middle" style="background-color: #fff;" />
 

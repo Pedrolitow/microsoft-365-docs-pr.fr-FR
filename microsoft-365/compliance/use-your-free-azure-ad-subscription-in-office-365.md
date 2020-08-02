@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: d104fb44-1c42-4541-89a6-1f67be22e4ad
 description: Découvrir comment accéder à Azure Active Directory, qui est inclus dans l’abonnement payant de votre organisation.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 43c9c03af74d4edc1fb6c762c9ca89594a907920
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: c968d4ae8cc5f0798b6ba7d5bcb52ca6fe7d6116
+ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44819284"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46528150"
 ---
 # <a name="use-your-free-azure-active-directory-subscription"></a>Utiliser votre abonnement Azure Active Directory gratuit
 
@@ -30,7 +30,7 @@ Si votre organisation a un abonnement payant à Microsoft 365, Microsoft Dynam
 
 ## <a name="open-a-private-browsing-session"></a>Ouvrir une session de navigation privée
 
-Pour accéder au Portail Microsoft Azure, utilisez une session de navigation privée (dans l'étape 1 ci-dessous), car cela permet d’éviter de transmettre à Azure les informations d’identification à l’aide desquelles vous êtes actuellement connecté. Pour ouvrir une session de navigation privée :
+Pour accéder au Portail Microsoft Azure (dans l'étape 1 ci-dessous), utilisez une session de navigation privée (session particulière). Cela permet d’éviter de transmettre à Azure les informations d’identification à l’aide desquelles vous êtes actuellement connecté. Pour ouvrir une session de navigation privée :
 
 - Dans Microsoft Edge (version héritée), Internet Explorer ou Mozilla FireFox, appuyez sur `CTRL+SHIFT+P`.
 
@@ -48,7 +48,7 @@ Pour accéder au Portail Microsoft Azure, utilisez une session de navigation pri
 
 ## <a name="more-information"></a>Plus d’informations
 
-- Un abonnement Azure Active Directory gratuit n’inclut pas le rapport d’activité des connexions. Pour enregistrer l’activité de connexion (pouvant être utile en cas de violation de données), vous avez besoin d’un abonnement Azure Active Directory Premium. Pour plus d’informations, consultez [Pendant combien de temps les données sont-elles conservées par Azure AD ?](https://docs.microsoft.com/azure/active-directory/reports-monitoring/reference-reports-data-retention#how-long-does-azure-ad-store-the-data)
+- Un abonnement Azure Active Directory gratuit n’inclut pas le rapport d’activité des connexions. Pour enregistrer l’activité de connexion (pouvant être utile lors d’une violation de données), vous avez besoin d’un abonnement Azure Active Directory Premium. Pour plus d’informations, consultez [Pendant combien de temps les données sont-elles conservées par Azure AD ?](https://docs.microsoft.com/azure/active-directory/reports-monitoring/reference-reports-data-retention#how-long-does-azure-ad-store-the-data)
 
 - Vous pouvez également accéder au Centre d’administration **Azure Active Directory** à partir du Centre d’administration Microsoft 365. Dans le volet de navigation gauche du Centre d’administration Microsoft 365, cliquez sur **Centres d’administration**\>**Azure Active Directory**.
 

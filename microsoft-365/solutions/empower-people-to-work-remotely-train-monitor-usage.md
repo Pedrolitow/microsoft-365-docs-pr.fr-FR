@@ -14,15 +14,16 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
 - remotework
-- M365solutions
+- m365solution-remotework
+- m365solution-overview
 ms.custom: ''
 description: Formez vos utilisateurs et veillez à ce que les problèmes soient traités rapidement.
-ms.openlocfilehash: bb8c6614ed383136ef5724d45637891ee978c9cd
-ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
+ms.openlocfilehash: 1954a3768d2a35c3193aa523d6383b7b8257a6a0
+ms.sourcegitcommit: 0f71042edc7c3a7f10a7b92e1943abf51532cbf5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44160725"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "46521432"
 ---
 # <a name="step-6-train-remote-workers-and-address-usage-feedback"></a>Étape 6 : former des télétravailleurs et répondre aux commentaires sur l’utilisation
 
@@ -30,7 +31,7 @@ Formez vos télétravailleurs aux aspects suivants :
 
 - Procédures de connexion appropriées utilisant l’authentification multifacteur, incluant l’inscription d’une méthode de vérification supplémentaire.
 - Utilisation des appareils et stratégies de gestion des points de terminaison pour bloquer l’accès d’appareils non conformes.
-- Utilisation des applications autorisées et stratégies d’applications de gestion des poins de terminaison pour bloquer l’utilisation de certaines applications.
+- Utilisation des applications autorisées et stratégies d’applications de gestion des points de terminaison pour bloquer l’utilisation de certaines applications.
 - Fonctionnalités de sécurité de Windows 10 Entreprise.
 - Utilisation de [Teams](https://docs.microsoft.com/microsoftteams/training-microsoft-teams-landing-page) pour les conversations, les visioconférences, le partage de documents et les conversations thématiques.
 - Utilisation d’[Outlook](https://support.office.com/article/outlook-training-8a5b816d-9052-4190-a5eb-494512343cca) pour le courrier et la planification.
@@ -43,7 +44,7 @@ Dans les semaines suivant la formation :
 - Traitez rapidement les commentaires des travailleurs distants et affinez les stratégies et les configurations.
 - Analysez l’utilisation des équipes, du courrier, des sites SharePoint et des dossiers OneDrive, et comparez-les à l’utilisation attendue.
 
-Formez à nouveau vos utilisateurs si nécessaire.
+Puis, formez à nouveau vos utilisateurs si nécessaire.
 
 ## <a name="results-of-step-6"></a>Résultats de l’étape 6
 

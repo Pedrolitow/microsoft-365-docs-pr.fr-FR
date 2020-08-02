@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 871a246d-3acd-4bba-948e-5de8be0544c9
 description: Créez une boîte aux lettres partagée pour permettre à plusieurs personnes au sein de votre entreprise de partager la responsabilité de la lecture du courrier électronique envoyé à une adresse et de la réponse à ces courriers.
-ms.openlocfilehash: 3ffe24cc263c6f58899b3c293793aa231132e411
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+ms.openlocfilehash: 47690e1295b67c01f86429d97e0fc8d82ad58d6f
+ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44780264"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46529634"
 ---
 # <a name="create-a-shared-mailbox"></a>Créer une boîte aux lettres partagée 
 
@@ -159,6 +159,9 @@ Vous pouvez accéder à une boîte aux lettres partagée sur un appareil mobile 
 - Ouvrez votre navigateur, connectez-vous, puis accédez à Outlook sur le web. À partir d’Outlook sur le web, vous pouvez accéder à la boîte aux lettres partagée.
 
     Pour les instructions, voir <a href="https://support.microsoft.com/office/98b5a90d-4e38-415d-a030-f09a4cd28207" target="_blank">Ajouter une boîte aux lettres partagée dans Outlook sur le web</a>.
+    
+> [!NOTE]
+> Une boîte aux lettres partagée peut uniquement être ajoutée à l’application Outlook pour iOS ou à l’application mobile Outlook pour Android
 
 ## <a name="use-the-shared-calendar"></a>Utiliser le calendrier partagé
 
