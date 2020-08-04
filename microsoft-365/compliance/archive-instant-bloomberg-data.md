@@ -15,12 +15,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: seo-marvel-apr2020
 description: Découvrez comment les administrateurs peuvent configurer et utiliser un connecteur de données pour importer et archiver des données à partir de l’outil de conversation Bloomberg dans Microsoft 365.
-ms.openlocfilehash: 9be2e431241e13e59c67c33ee3c7246896e97f1e
-ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
+ms.openlocfilehash: dbfb0c167d57b4a541c60eda253e93328c156dfc
+ms.sourcegitcommit: 89178b8f20d59ca88cfca303a13062b91fbeae9d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "44936557"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46552504"
 ---
 # <a name="set-up-a-connector-to-archive-instant-bloomberg-data"></a>Configurer un connecteur pour archiver des données Instant Bloomberg
 
@@ -120,7 +120,7 @@ La dernière étape consiste à créer un connecteur Bloomberg instantané dans 
 5. Sur la page **mappage utilisateur** , activez le mappage utilisateur automatique et fournissez un mappage utilisateur personnalisé, selon les besoins.
 
    > [!NOTE]
-   > Le connecteur importe les éléments de message de conversation vers la boîte aux lettres d’un utilisateur spécifique. Un nouveau dossier nommé **InstantBloomberg** sera créé dans la boîte aux lettres de l’utilisateur spécifique et les éléments y seront importés. Le connecteur utilise la valeur de la propriété *CorporateEmailAddress* . Chaque message de conversation contient cette propriété et la propriété est renseignée avec l’adresse de messagerie de chaque participant du message de conversation. Outre le mappage utilisateur automatique à l’aide de la valeur de la propriété *CorporateEmailAddress* , vous pouvez également définir un mappage personnalisé en chargeant un fichier de mappage CSV. Le fichier de mappage doit contenir l’UUID Bloomberg et l’adresse de boîte aux lettres Microsoft 365 correspondante pour chaque utilisateur. Si vous activez le mappage utilisateur automatique et que vous fournissez un mappage de mappage personnalisé, le connecteur regarde d’abord le fichier de mappage personnalisé pour chaque élément de conversation. S’il ne trouve pas d’utilisateur valide de Microsoft 365 correspondant à l’UUID de l’utilisateur Bloomberg, le connecteur utilise la propriété *CorporateEmailAddress* de l’élément de conversation. Si le connecteur ne trouve pas d’utilisateur Microsoft 365 valide dans le fichier de mappage personnalisé ou dans la propriété *CorporateEmailAddress* de l’élément de conversation, l’élément n’est pas importé.
+   > Le connecteur importe les éléments de message de conversation vers la boîte aux lettres d’un utilisateur spécifique. Un nouveau dossier nommé **InstantBloomberg** sera créé dans la boîte aux lettres de l’utilisateur spécifique et les éléments y seront importés. Le connecteur utilise la valeur de la propriété *CorporateEmailAddress* . Chaque message de conversation contient cette propriété et la propriété est renseignée avec l’adresse de messagerie de chaque participant du message de conversation. Outre le mappage utilisateur automatique à l’aide de la valeur de la propriété *CorporateEmailAddress* , vous pouvez également définir un mappage personnalisé en chargeant un fichier de mappage CSV. Le fichier de mappage doit contenir l’UUID Bloomberg et l’adresse de boîte aux lettres Microsoft 365 correspondante pour chaque utilisateur. Si vous activez le mappage utilisateur automatique et fournissez un mappage personnalisé, pour chaque élément de conversation, le connecteur regarde d’abord le fichier de mappage personnalisé. S’il ne trouve pas d’utilisateur valide de Microsoft 365 correspondant à l’UUID de l’utilisateur Bloomberg, le connecteur utilise la propriété *CorporateEmailAddress* de l’élément de conversation. Si le connecteur ne trouve pas d’utilisateur Microsoft 365 valide dans le fichier de mappage personnalisé ou dans la propriété *CorporateEmailAddress* de l’élément de conversation, l’élément n’est pas importé.
 
 6. Cliquez sur **suivant**, vérifiez vos paramètres, puis cliquez sur **préparer** pour créer le connecteur.
 

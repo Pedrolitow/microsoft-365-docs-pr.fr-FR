@@ -20,12 +20,12 @@ description: Utilisez les étiquettes de confidentialité de Microsoft informati
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: bd8aaab95afd66881b842d902988276b9fde54ff
-ms.sourcegitcommit: a08103bc120bdec7cfeaf67c1be4e221241e69ad
+ms.openlocfilehash: 2943de329bd42aca64d9d3d583b7f6c354780d0d
+ms.sourcegitcommit: 89178b8f20d59ca88cfca303a13062b91fbeae9d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "45199554"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46552696"
 ---
 # <a name="learn-about-sensitivity-labels"></a>En savoir plus sur les étiquettes de niveau de confidentialité
 
@@ -40,9 +40,6 @@ Exemple montrant les étiquettes de confidentialité disponibles dans Excel à p
 ![Étiquette de confidentialité dans le ruban Excel et sur la barre d’état](../media/Sensitivity-label-in-Excel.png)
 
 Les étiquettes de confidentialité sont prises en charge pour les clients du cloud global (public) seulement. Les étiquettes de confidentialité ne sont actuellement pas prises en charge pour les clients des autres clouds, tels que les [clouds nationaux](https://docs.microsoft.com/azure/active-directory/develop/authentication-national-cloud).
-
-> [!NOTE]
-> Les étiquettes de confidentialité ne sont pas encore disponibles au sein des organisations de la communauté du secteur public américain (GCC).
 
 Pour appliquer des étiquettes de confidentialité, les utilisateurs doivent être connectés à Office avec leur compte professionnel ou scolaire.
 
