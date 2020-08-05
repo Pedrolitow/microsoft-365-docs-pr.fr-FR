@@ -18,12 +18,12 @@ ms.collection:
 - m365solution-overview
 ms.custom: ''
 description: Configurez l’infrastructure de service et de sécurité qui permet à vos employés de travailler à distance de n’importe où et à tout moment.
-ms.openlocfilehash: 76ffc861465508486abebfcd13a84acb2b0379c4
-ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
+ms.openlocfilehash: dc1f5a540b261437a0bf94132bd41929ce5d3546
+ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46527445"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46560918"
 ---
 # <a name="empower-remote-workers-with-microsoft-365"></a>Confier des responsabilités aux travailleurs à distance avec Microsoft 365
 
@@ -71,7 +71,7 @@ Pour répondre aux critères pour les travailleurs à distance, utilisez les fon
 
 Pour plus d’informations sur la sécurité et la conformité des travailleurs à distance, consultez [Déployer la sécurité et la conformité des travailleurs à distance.](empower-people-to-work-remotely-security-compliance.md)
 
-<a name="poster"></a> Pour un résumé de deux pages de ce scénario, voir l’affiche [Confier des responsabilités aux télétravailleurs](../downloads/empower-remote-workers.pdf).
+<a name="poster"></a> Pour un résumé de deux pages de cette solution, voir l’affiche [Confier des responsabilités aux télétravailleurs](../downloads/empower-remote-workers.pdf).
 
 [![Affiche Confier des responsabilités aux télétravailleurs](../media/empower-people-to-work-remotely/empower-remote-workers-poster.png)](../downloads/empower-remote-workers.pdf)
 

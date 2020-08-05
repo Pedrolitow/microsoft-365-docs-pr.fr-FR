@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Vous êtes prêt à mettre en place des stratégies et des étiquettes de rétention pour la gouvernance des données de votre organisation, mais vous ne savez pas par où commencer ? Lisez quelques conseils pratiques pour commencer.
-ms.openlocfilehash: 4bf8499cc8f29438da407c6dfcdaa53533fea467
-ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
+ms.openlocfilehash: b390e4594d97e96eadac9541429a838abe006a3f
+ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45430232"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46560761"
 ---
 # <a name="get-started-with-retention-policies-and-retention-labels"></a>Prise en main des stratégies et des étiquettes de rétention
 
@@ -66,7 +66,7 @@ Utilisez le tableau suivant pour vous aider à faire correspondre vos besoins m�
 |Permettez aux utilisateurs d’appliquer automatiquement une étiquette de rétention aux courriers électroniques à l’aide des règles Outlook|[Créer des étiquettes de rétention et les appliquer dans les applications](create-apply-retention-labels.md)|
 |Appliquez automatiquement un groupe d’actions de rétention et de suppression pour les documents et e-mails |[Appliquer automatiquement une étiquette de rétention au contenu](apply-retention-labels-automatically.md)|
 |Démarrez la période de rétention lorsqu’un événement se produit, par exemple :  <br />- Des employés quittent l’organisation <br />- Des contrats expirent <br />- Fin de vie d’un produit| [Débuter la rétention lorsqu’un événement se produit](event-driven-retention.md)|
-|Gérer le cycle de vie de différents types de documents dans SharePoint| [Gérer le cycle de vie des documents SharePoint avec des étiquettes de rétention](auto-apply-retention-labels-scenario.md)|
+|Gérer le cycle de vie de différents types de documents dans SharePoint| [Utiliser les étiquettes de rétention pour gérer le cycle de vie des documents stockés dans SharePoint](auto-apply-retention-labels-scenario.md)|
 |Utilisez une seule solution de gestion des enregistrements pour les documents et les e-mails |[Gestion des enregistrements dans Microsoft 365](records-management.md) |
 |Conformez-vous à la réglementation SEC Rule 17 a-4|[Utiliser Exchange Online et le centre de sécurité et conformité pour se conformer à la réglementation SEC Rule 17 a-4](use-exchange-online-to-comply-with-sec-rule-17a-4.md) |
 |Vérifiez que le contenu est révisé et approuvé avant sa suppression à la fin de sa période de rétention|[Révisions avant destruction](disposition.md#disposition-reviews) |
