@@ -54,7 +54,7 @@ Les étiquettes basées sur un événement possèdent les mêmes fonctionnalité
 
 ## <a name="understanding-the-relationship-between-event-types-labels-events-and-asset-ids"></a>Compréhension de la relation entre les types d’événements, les étiquettes, les événements et les ID d’élément
 
-Pour utiliser avec succès la rétention basée sur les événements, il est important de comprendre la relation entre les types d’événement, les étiquettes de rétention, les événements et les ID d’éléments, comme illustré dans les diagrammes et l’explication qui suit : 
+Pour utiliser avec succès la rétention basée sur un événement, il est important de comprendre la relation entre les types d’événement, les étiquettes de rétention, les événements et les ID d’éléments, comme illustré dans les diagrammes et l’explication qui suit : 
   
 ![Diagramme illustrant le type d’événement, les étiquettes, les événements et les ID d’élément](../media/a5141a6b-61ca-4a60-9ab0-24e6bb45bbdb.png)
   
@@ -64,7 +64,7 @@ Pour utiliser avec succès la rétention basée sur les événements, il est imp
     
 2. Les utilisateurs (en général les gestionnaires des enregistrements) appliquent ces étiquettes de rétention au contenu et (pour les documents SharePoint et OneDrive) entrent un ID d’élément pour chaque élément. Dans cet exemple, l’ID d’actif est un nom de produit ou un code utilisé par l’organisation. Par conséquent, les enregistrements de chaque produit se voient attribuer une étiquette de rétention, et chaque enregistrement possède une propriété contenant un ID d’actif. Le diagramme représente **l’ensemble du contenu** de tous les enregistrements des produits d’une organisation, et chaque élément porte l’ID d’élément du produit auquel appartient l’enregistrement. 
     
-3. Durée de vie des produits est le type d’événement ; un produit spécifique qui arrive en fin de vie est un événement. Lorsqu’un événement de ce type d’événement se produit (dans ce cas, quand un produit arrive en fin de vie), créez un événement qui spécifie les éléments suivants :
+3. La fin de vie d’un produit est un « événement ». La durée de vie de ce produit est un « type d’événement ». Lorsqu’un événement (« fin de vie ») se produit pour un type d’événement (« durée de vie du produit »), vous devez créer un événement qui spécifie :
     
    - Un ID d’élément (pour les documents SharePoint et OneDrive).
     
@@ -72,7 +72,7 @@ Pour utiliser avec succès la rétention basée sur les événements, il est imp
     
    - La date à laquelle l’événement s'est produit. Cette date est utilisée comme point de départ de la période de rétention. Cette date peut être la date actuelle, passée ou une date future.
 
-4. Une fois un événement créé, la date correspondante est synchronisée avec tout le contenu portant l’étiquette de rétention de ce type d’événement et contenant l’ID d’élément ou le mot clé spécifié. Comme pour toute étiquette de rétention, cette synchronisation peut prendre jusqu’à sept jours. Dans le diagramme précédent, la période de rétention de tous les éléments encerclés en rouge est déclenchée par cet événement. En d’autres termes, lorsque ce produit atteint sa fin de vie, cet événement déclenche la période de rétention pour les enregistrements de ce produit.
+4. Lorsque vous avez créé un événement, sa date est synchronisée avec tout le contenu portant l’étiquette de rétention du type d’événement correspondant et contenant l’ID d’élément ou le mot clé spécifié. Comme pour toute étiquette de rétention, cette synchronisation peut prendre jusqu’à 7 jours. Dans le diagramme précédent, la période de rétention de tous les éléments encerclés en rouge est déclenchée par cet événement. En d’autres termes, lorsque ce produit atteint sa fin de vie, cet événement déclenche la période de rétention pour les enregistrements de ce produit.
 
 Il est important de comprendre que si vous ne spécifiez pas d’ID d’élément ou de mot clé pour un événement, **tout le contenu** portant une étiquette de ce type d’événement verra sa période de rétention déclenchée par l’événement. Cela signifie que, dans le diagramme précédent, tout le contenu commencera à être conservé. Ce n’est peut-être pas ce que vous voulez faire. 
 
@@ -80,20 +80,20 @@ Enfin, rappelez-vous que chaque étiquette de rétention possède ses propres pa
   
 ## <a name="how-to-set-up-event-driven-retention"></a>Configuration des rétentions basées sur des événements
 
-Flux de travail général pour la rétention basée sur un événement :
+Flux de travail général pour la rétention basée sur un événement :
   
 ![Diagramme du flux de travail de la configuration des rétentions basées sur des événements](../media/event-based-retention-process.png)
   
 > [!TIP]
-> Consultez [Gérer le cycle de vie des documents SharePoint avec des étiquettes de rétention](auto-apply-retention-labels-scenario.md) pour un scénario détaillé sur l’utilisation de propriétés gérées dans SharePoint afin d'appliquer automatiquement des étiquettes de rétention et implémenter la rétention basée sur les événements.
+> Reportez-vous à la page [Gérer le cycle de vie des documents SharePoint avec des étiquettes de rétention](auto-apply-retention-labels-scenario.md) pour consulter un scénario détaillé sur l’utilisation de propriétés gérées dans SharePoint afin d'appliquer automatiquement des étiquettes de rétention et implémenter la rétention basée sur un événement.
 
 ### <a name="step-1-create-a-label-whose-retention-period-is-based-on-an-event"></a>Étape 1 : créer une étiquette dont la période de rétention est basée sur des événements
 
 Pour créer et configurer votre étiquette de rétention, suivez les instructions de [Créer et configurer des étiquettes de rétention](create-retention-labels.md#create-and-configure-retention-labels) puis, lorsque vous activez la rétention, sélectionnez l’option permettant de conserver ou de supprimer le contenu sur la base d’un événement. Ce paramètre signifie que les paramètres de rétention ne prendront pas effet avant l’étape 5, à laquelle vous créez un événement sur la page **Événements**. 
   
-La rétention basée sur les événements est généralement utilisée pour les contenus classés sous la forme d’un enregistrement, c’est le moment idéal pour vérifier si vous avez également besoin de sélectionner l’option qui marque du contenu comme enregistrement.
+La rétention basée sur un événement est généralement utilisée pour les contenus classés sous la forme d’un enregistrement, c’est le moment idéal pour vérifier si vous avez également besoin de sélectionner l’option qui marque du contenu comme enregistrement.
   
-La rétention basée sur les événements nécessite des paramètres de rétention qui :
+La rétention basée sur un événement nécessite des paramètres de rétention qui :
   
 - Conservent le contenu.
     
@@ -140,7 +140,7 @@ Une fois qu’une étiquette basée sur un événement a été appliquée au con
     
 - ID d’employé à utiliser pour conserver uniquement le contenu d’une personne spécifique.
     
-L’ID d’élément constitue simplement une autre propriété de document qui est disponible dans SharePoint et OneDrive. Votre organisation utilise peut-être déjà d’autres ID et propriétés de document pour classer le contenu. Le cas échéant, vous pouvez également utiliser ces propriétés et valeurs lorsque vous créez un événement (voir l’étape 6 ci-après). L’essentiel est que vous utilisez une combinaison *propriété:valeur* dans les propriétés du document pour associer cet élément à un type d’événement.
+L’ID d’élément constitue simplement une autre propriété de document qui est disponible dans SharePoint et OneDrive. Votre organisation utilise peut-être déjà d’autres ID et propriétés de document pour classer le contenu. Le cas échéant, vous pouvez également utiliser ces propriétés et valeurs lorsque vous créez un événement (voir l’étape 6, plus bas). L’essentiel est que vous utilisez une combinaison *propriété:valeur* dans les propriétés du document pour associer cet élément à un type d’événement.
   
 ![Zone de texte pour saisir un ID d’élément](../media/6d31628e-7162-4370-a8d7-de704aafa350.png)
   
@@ -150,7 +150,7 @@ Lorsqu’une instance précise de ce type d’événement se produit (par exempl
   
 ### <a name="step-6-choose-the-same-event-type-used-by-the-label-in-step-2"></a>Étape 6 : choisir le même type d’événement utilisé par l’étiquette à l’étape 2
 
-Lorsque vous créez l’événement, choisissez le type d’événement utilisé par l’étiquette de rétention à l’étape 2 (par exemple, durée de vie du produit). La période de rétention sera déclenchée uniquement pour le contenu auquel sont appliquées des étiquettes de rétention de ce type d’événement.
+Lorsque vous créez l’événement, choisissez le type d’événement utilisé par l’étiquette de rétention à l’étape 2 (par exemple, « Durée de vie du produit »). La période de rétention sera déclenchée uniquement pour le contenu auquel sont appliquées des étiquettes de rétention de ce type d’événement.
   
 ![Option dans les paramètres d’événement permettant de choisir un type d’événement](../media/11663591-5628-419e-9537-61eb8f5c741f.png)
   
@@ -190,7 +190,7 @@ Pour obtenir plus d’informations, consultez l’article [Octroi de l’accès 
   
 ## <a name="automate-events-by-using-powershell"></a>Automatisation des événements à l’aide de PowerShell
 
-Vous pouvez utiliser un script PowerShell pour automatiser une rétention basée sur l’événement à partir de vos applications métier. Les cmdlets PowerShell disponibles pour les rétentions basées sur des événements :
+Vous pouvez utiliser un script PowerShell pour automatiser une rétention basée sur un événement à partir de vos applications métier. Les cmdlets PowerShell disponibles pour les rétentions basées sur des événements :
   
 - [Get-ComplianceRetentionEventType](https://go.microsoft.com/fwlink/?linkid=873002)
     
@@ -207,29 +207,29 @@ Vous pouvez utiliser un script PowerShell pour automatiser une rétention basée
 
 ## <a name="automate-events-by-using-a-rest-api"></a>Automatisation des événements à l’aide de l’API REST
 
-Vous pouvez utiliser une API REST pour créer automatiquement les événements qui déclenchent le début de la période de rétention.
+Vous pouvez utiliser une API REST pour créer automatiquement les événements qui déclenchent la période de rétention.
 
-Une API REST est un point de terminaison de service qui prend en charge les ensembles d’opérations HTTP (méthodes), qui fournissent l’accès de création, récupération/mise à jour/suppression aux ressources du service. Pour plus d’informations, voir [composants d’une demande/réponse API REST](https://docs.microsoft.com/rest/api/gettingstarted/#components-of-a-rest-api-requestresponse). L’API REST de Microsoft 365 vous permet de créer et d’extraire des événements à l’aide des méthodes publier et récupérer.
+Une API REST est un point de terminaison de service prenant en charge les ensembles d’opérations HTTP (méthodes) qui fournissent les droits d’accès de création/récupération/mise à jour/suppression aux ressources du service. Si vous souhaitez en savoir plus, veuillez consulter la section [Composants d’une demande/réponse d’API REST](https://docs.microsoft.com/rest/api/gettingstarted/#components-of-a-rest-api-requestresponse). L’API REST de Microsoft 365 vous permet de créer et d’extraire des événements à l’aide des méthodes POST et GET.
 
-Il existe deux options d’utilisation de l’API REST :
+Vous pouvez utiliser l’API REST de deux manières :
 
-- **Microsoft Power Automate ou une application similaire** pour déclencher automatiquement l’occurrence d’un événement. Microsoft Power Automate est un orchestrateur permettant de se connecter à d'autres systèmes, vous n'avez donc pas besoin d'écrire une solution personnalisée. Pour plus d’informations, visitez le [site web de Power automate](https://flow.microsoft.com/fr-FR/).
+- Avec **Microsoft Power Automate ou une application similaire** pour déclencher automatiquement l’occurrence d’un événement. Microsoft Power Automate est un orchestrateur permettant de se connecter à d'autres systèmes, vous n'avez donc pas besoin d'écrire une solution personnalisée. Si vous souhaitez en savoir plus, veuillez consulter le [site web de Power automate](https://flow.microsoft.com/fr-fr/).
 
-- **PowerShell ou un client HTTP pour appeler l’API REST** pour créer des événements à l’aide de PowerShell (version 6 ou ultérieure), qui fait partie d’une solution personnalisée.
+- Avec **PowerShell ou un client HTTP pour appeler l’API REST** pour créer des événements à l’aide de PowerShell (version 6 ou ultérieure), dans le cadre d’une solution personnalisée.
 
-Avant d’utiliser l’API REST, en tant qu’administrateur général, confirmez l’URL à utiliser pour l’appel d’événement de rétention. Pour ce faire, exécutez un appel d’événement obtenir la rétention à l’aide de l’URL de l’API REST :
+Avant d’utiliser l’API REST, en tant qu’administrateur général, confirmez l’URL à utiliser pour l’appel d’événement de rétention. Pour ce faire, exécutez un appel d’événement de rétention GET à l’aide de l’URL de l’API REST :
 
 ```console
 https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent
 ```
 
-Vérifiez le code de réponse. S’il est 302, obtenez l’URL redirigée à partir de la propriété Location de l’en-tête de réponse et utilisez cette URL au lieu de `https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent` dans les instructions qui suivent.
+Vérifiez le code de réponse. S’il est 302, récupérez l’URL redirigée à partir de la propriété Location de l’en-tête de réponse, puis utilisez cette URL au lieu de `https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent` dans les instructions qui suivent.
 
-Les événements qui sont créés automatiquement peuvent être confirmés en les consultant dans le Centre de conformité Microsoft 365 > **Gestion des enregistrements** >  **Événements**.
+Les événements qui sont créés automatiquement peuvent être confirmés en les affichant dans le Centre de conformité Microsoft 365 > **Gestion des enregistrements** >  **Événements**.
 
 ### <a name="use-microsoft-power-automate-to-create-the-event"></a>Utiliser Microsoft Power Automate pour créer l’événement
 
-Créer un flux qui crée un événement en utilisant l’API REST Microsoft 365 :
+Créez un flux qui crée un événement en utilisant l’API REST Microsoft 365 :
 
 ![Utilisation le flux pour créer un événement](../media/automate-event-driven-retention-flow-1.png)
 
@@ -286,9 +286,9 @@ Utilisation du code d’exemple pour appeler des API REST :
 
 |Paramètres|Description|Notes|
 |--- |--- |--- |
-|<d:Name></d:Name>|Entrez un nom unique pour la base de données,|Un nom ne peut pas contenir les espaces ou les caractères suivants : % * \ & < \> \| # ? , : ;|
-|<d:EventType></d:EventType>|Entrez le nom de l’événement (ou Guid),|Exemple : « employé licenciement anticipé ». Le type d’événement doit être associé à une étiquette de rétention.|
-|<d:SharePointAssetIdQuery></d:SharePointAssetIdQuery>|Entrez « ComplianceAssetId : » + ID d’employé|Example: "ComplianceAssetId:12345"|
+|<d:Name></d:Name>|Entrez un nom unique pour la base de données,|Ne peut pas contenir les espaces ou les caractères suivants : % * \ & < \> \| # ? , : ;|
+|<d:EventType></d:EventType>|Entrez le nom de l’événement (ou Guid),|Exemple : « Fin de contrat d’un employé ». Le type d’événement doit être associé à une étiquette de rétention.|
+|<d:SharePointAssetIdQuery></d:SharePointAssetIdQuery>|Entrez « ComplianceAssetId : » suivi de l’ID de l’employé|Example: "ComplianceAssetId:12345"|
 |<d:EventDateTime></d:EventDateTime>|Date et heure de l’événement.|Format : AAAA-MM-jjTHH : mm : ssZ ; exemple : 2018-12-01T00:00:00Z
 |
 
@@ -377,7 +377,7 @@ Utilisation du code d’exemple pour appeler des API REST :
 
 ### <a name="use-powershell-or-any-http-client-to-create-the-event"></a>Utiliser PowerShell ou n’importe quel client HTTP pour créer l’événement
 
-PowerShell doit être la version 6 ou ultérieure.
+Vous devez utiliser au moins la version 6 de PowerShell.
 
 Dans une session PowerShell, exécutez le script suivant :
 
