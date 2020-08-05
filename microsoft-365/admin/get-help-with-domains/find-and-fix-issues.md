@@ -22,12 +22,12 @@ search.appverid:
 - GEA150
 ms.assetid: 40398b0b-bdd0-4afd-ab5e-b5ae6b7990bf
 description: Découvrez comment détecter les problèmes que vous rencontrez lors de la configuration d’un domaine personnalisé en vous assurant que les enregistrements DNS sont correctement configurés.
-ms.openlocfilehash: e3c66e10a673d840cfddad81a057739b6dfac721
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 0a315be243395940146479e05de2c7044a5a36ab
+ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399943"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46560250"
 ---
 # <a name="find-and-fix-issues-after-adding-your-domain-or-dns-records"></a>Rechercher et corriger des problèmes après avoir ajouté votre domaine ou des enregistrements DNS
 
@@ -88,7 +88,7 @@ Consultez les conseils fournis dans la partie relative [à la vérification de v
 Nous pouvons vous aider à identifier les problèmes liés à la configuration DNS de votre domaine. L’utilitaire de résolution des problèmes liés aux domaines dans Microsoft 365 affiche tous les enregistrements qui doivent être corrigés, ainsi que les éléments sur lesquels les enregistrements doivent être définis. 
 
 > [!TIP]
-> Votre DNS est correctement configuré, mais le courrier électronique ne fonctionne pas dans Outlook sur votre ordinateur de bureau ? Découvrez les [différents scénarios de flux de messagerie que vous pouvez rencontrer avec Microsoft 365](https://www.microsoft.com/?ref=go) afin de vous assurer que vous avez configuré correctement les éléments pour votre entreprise. Vous pouvez également obtenir de l'aide concernant la résolution des problèmes liés à le courrier dans la page suivante : [Résoudre les problèmes liés à Outlook](https://docs.microsoft.com/exchange/troubleshoot/outlook-connectivity/outlook-connection-issues). 
+> Votre DNS est correctement configuré, mais le courrier électronique ne fonctionne pas dans Outlook sur votre ordinateur de bureau ? Découvrez les [différents scénarios de flux de messagerie que vous pouvez rencontrer avec Microsoft 365](https://docs.microsoft.com/exchange/mail-flow-best-practices/mail-flow-best-practices) afin de vous assurer que vous avez configuré correctement les éléments pour votre entreprise. Vous pouvez également obtenir de l'aide concernant la résolution des problèmes liés à le courrier dans la page suivante : [Résoudre les problèmes liés à Outlook](https://docs.microsoft.com/exchange/troubleshoot/outlook-connectivity/outlook-connection-issues). 
   
 ## <a name="accessing-your-website-isnt-working"></a>Vous ne parvenez pas à accéder à votre site web ?
 <a name="BKMK_Website"> </a>

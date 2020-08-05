@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 08c5307c-4a6b-4761-8410-a6c96725760f
 description: 'Découvrez comment l’analyse de l’utilisation se connecte à une API et fournit une tendance mensuelle de l’utilisation des différents services Microsoft 365.  '
-ms.openlocfilehash: 28dc51f76ac2e6bba00ecea853bc79419500508d
-ms.sourcegitcommit: b03a7ad0a80f8b839f40b8d396ab3a049491a12f
+ms.openlocfilehash: 1fa1cb842b603a920665ec1b59ca18f586b5d181
+ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44695090"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46560858"
 ---
 # <a name="microsoft-365-usage-analytics-data-model"></a>Modèle de données d'analyse de l'utilisation de Microsoft 365
 
@@ -140,6 +140,9 @@ Cette table contient des données sur l'activité effectuée par chaque utilisat
 |SFB_P2PSummary  <br/> |Nombre de sessions P2P auxquelles l'utilisateur a participé.  <br/> |
 |SFB_ConfOrgSummary  <br/> |Nombre de sessions de conférence organisées par l'utilisateur.  <br/> |
 |SFB_ConfPartSummary  <br/> |Nombre de sessions de conférence auxquelles l'utilisateur a participé.  <br/> |
+
+> [!NOTE]
+> Teams_HasOtherAction signifie que l’utilisateur est considéré comme étant actif mais qu’il a une valeur zéro pour les messages de conversation, les appels 1:1, les messages de canal, les réunions totales et les réunions organisées.
    
 ### <a name="data-table---tenant-product-usage"></a>Table de données - Utilisation du produit par les locataires
 

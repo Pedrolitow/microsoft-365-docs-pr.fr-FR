@@ -14,12 +14,12 @@ ms.assetid: 4650fec1-4ee3-4659-abbc-bf091718cb26
 ms.collection:
 - M365-security-compliance
 description: Découvrez comment installer et utiliser le complément Microsoft Junk Email Reporting pour signaler les messages de courrier indésirable, de courrier indésirable et de hameçonnage à Microsoft.
-ms.openlocfilehash: 5c0b802bea89a0f0f62952261bf0d2864842024f
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 54b0fb634333ccb180870ab1fcc6160fd133f81e
+ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208826"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46560520"
 ---
 # <a name="install-and-use-the-junk-email-reporting-add-in-for-microsoft-outlook"></a>Installer et utiliser le complément de création de rapports de courrier indésirable pour Microsoft Outlook
 
@@ -63,7 +63,12 @@ Cette rubrique explique comment installer et utiliser le complément de créatio
 
    ![Boîte de dialogue signaler en tant que hameçonnage](../../media/junk-email-reporting-report-as-phishing-dialog.png)
 
-3. Les messages sélectionnés sont envoyés à Microsoft pour analyse et déplacés dans le dossier Courrier indésirable. Pour confirmer que les messages ont été envoyés, ouvrez le dossier **Éléments envoyés** pour afficher les messages envoyés.
+3. Les messages sélectionnés seront envoyés à Microsoft pour analyse et :
+
+   - Déplacé vers le dossier courrier indésirable s’il a été signalé comme courrier indésirable.
+   - Supprimé s’il a été signalé comme hameçonnage.
+   
+   Pour confirmer que les messages ont été envoyés, ouvrez le dossier **Éléments envoyés** pour afficher les messages envoyés.
 
 ## <a name="use-the-junk-email-reporting-add-in-to-report-non-spam-and-phishing-messages-from-the-junk-email-folder"></a>Utiliser le complément de création de rapports de courrier indésirable pour signaler les messages de courrier indésirable et de hameçonnage dans le dossier courrier indésirable
 
@@ -87,7 +92,12 @@ Cette rubrique explique comment installer et utiliser le complément de créatio
 
    ![Boîte de dialogue signaler en tant que hameçonnage](../../media/junk-email-reporting-report-as-phishing-dialog.png)
 
-3. Les messages sélectionnés sont envoyés à Microsoft pour analyse et déplacés dans le dossier Courrier indésirable. Pour confirmer que les messages ont été envoyés, ouvrez le dossier **Éléments envoyés** pour afficher les messages envoyés.
+3. Les messages sélectionnés seront envoyés à Microsoft pour analyse et :
+
+   - Déplacé vers le dossier courrier indésirable s’il a été signalé comme courrier indésirable.
+   - Supprimé s’il a été signalé comme hameçonnage.
+
+   Pour confirmer que les messages ont été envoyés, ouvrez le dossier **Éléments envoyés** pour afficher les messages envoyés.
 
 ## <a name="install-the-junk-email-reporting-add-in"></a>Installer le complément de création de rapports de courrier indésirable
 
@@ -96,7 +106,6 @@ Cette rubrique explique comment installer et utiliser le complément de créatio
 - Accédez au <https://www.microsoft.com/download/details.aspx?id=18275> fichier. msi approprié pour votre version d’Office et téléchargez-le dans un emplacement facile à trouver :
 
   - **32-bit**:`Junk Reporting Add-in for Office 2007, 2010, 2013, and 2016 (32-bit).msi`
-
   - **64-bit**:`Junk Reporting Add-in for Office 2007, 2010, 2013, and 2016 (64-bit).msi`
 
 - Pour Outlook 2013 ou version ultérieure, la seule condition requise est Microsoft .NET Framework 2,0. Dans Windows 10, vous n’installez pas .NET Framework 2,0 à partir d’un téléchargement.
@@ -209,7 +218,7 @@ Une fois que vous avez fermé Outlook, utilisez l’une des procédures suivante
 
   Dans la boîte de dialogue qui s’affiche, sélectionnez **supprimer le complément Microsoft Junk Email Reporting pour Outlook** , puis cliquez sur **suivant**.
 
-- **Mode silencieux**: recherchez ou téléchargez le fichier. msi approprié. Dans une fenêtre d’invite de commandes, remplacez \< PathToFile \> par l’emplacement du fichier. msi et exécutez l’une des commandes suivantes :
+- **Mode silencieux**: recherchez ou téléchargez le fichier. msi approprié. Dans une fenêtre d’invite de commandes, remplacez \<PathToFile\> par l’emplacement du fichier. msi et exécutez l’une des commandes suivantes :
 
   - **32-bit**:
 
@@ -288,7 +297,7 @@ Pour les autres méthodes que vous pouvez utiliser pour envoyer des messages à 
 
 #### <a name="problem-users-selected-not-to-receive-a-confirmation-prompt-when-they-report-messages-and-now-they-want-the-prompt-back"></a>Problème : les utilisateurs sélectionnés ne reçoivent pas d’invite de confirmation lorsqu’ils signalent des messages, et souhaitent maintenant que l’invite se redirige.
 
-1. Créez la `ConfirmReportJunk` clé de Registre wih la valeur « true » :
+1. Créez la `ConfirmReportJunk` clé de Registre avec la valeur « true » :
 
    ```text
    Windows Registry Editor Version 5.00

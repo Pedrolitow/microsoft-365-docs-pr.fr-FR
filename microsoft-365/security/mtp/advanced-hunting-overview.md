@@ -18,12 +18,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b7bda309dbb1b601c77b6fb34ff9b8be14d5638d
-ms.sourcegitcommit: f7566dd6010744c72684efdc37f4471672330b61
+ms.openlocfilehash: c09047648f1d6bb6d68be78315a876be4998e595
+ms.sourcegitcommit: 89178b8f20d59ca88cfca303a13062b91fbeae9d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "45138277"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46552433"
 ---
 # <a name="proactively-hunt-for-threats-with-advanced-hunting-in-microsoft-threat-protection"></a>Repérage proactive de menaces avec repérage avancé dans la Protection Microsoft contre les menaces
 
@@ -33,8 +33,11 @@ ms.locfileid: "45138277"
 [!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
 Le repérage avancé est un outil de repérage de menaces basé sur des requêtes qui vous permet d’explorer jusqu’à 30 jours de données brutes. Vous pouvez inspecter de manière proactive les événements de votre réseau pour localiser les indicateurs et entités intéressants. L’accès flexible aux données facilite le repérage sans contrainte pour les menaces connues et potentielles.
+<p></p>
 
-Vous pouvez utiliser les mêmes requêtes de recherche de menace pour créer des règles de détection personnalisées. Ces règles s’exécutent automatiquement pour vérifier et répondre à divers événements et États du système, y compris l’activité de violation présumée et les machines mal configurées.
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Bp7O]
+
+Vous pouvez utiliser les mêmes requêtes de repérage de menaces pour créer des règles de détection personnalisées. Ces règles s’exécutent automatiquement pour rechercher et répondre aux différents événements et états système, y compris les activités suspectes de violation et les machines configurées incorrectement.
 
 Dans le centre de sécurité Microsoft 365, la recherche avancée prend en charge les requêtes qui examinent des données provenant de différents espaces de travail, notamment des données sur les appareils, les e-mails, les applications et les identités de Microsoft Defender ATP, Office 365 ATP, sécurité des applications Cloud Microsoft et Azure ATP. Pour utiliser le repérage avancé, [activez Protection Microsoft contre les menaces](mtp-enable.md).
 
@@ -45,7 +48,7 @@ Nous vous recommandons de suivre plusieurs étapes pour devenir rapidement opér
 | Objectif d’apprentissage | Description | Ressource |
 |--|--|--|
 | **Prise en main du langage** | La chasse avancée est basée sur le [langage de requête Kusto](https://docs.microsoft.com/azure/kusto/query/), qui prend en charge les mêmes syntaxe et opérateurs. Commencez à découvrir le langage de requête en exécutant votre première requête. | [Vue d'ensemble du language de requête](advanced-hunting-query-language.md) |
-| **En savoir plus sur l’utilisation des résultats de la requête** | Découvrez les graphiques et les différentes façons d’afficher ou d’exporter les résultats. Découvrez comment affiner rapidement les requêtes et approfondir pour obtenir des informations plus détaillées. | [Travailler avec les résultats de la requête](advanced-hunting-query-results.md) |
+| **En savoir plus sur l’utilisation des résultats de la requête** | Découvrez les graphiques et les différentes façons d’afficher ou d’exporter les résultats. Découvrez comment affiner rapidement les requêtes, extraire des informations plus riches et prendre des mesures de réponse. | - [Utiliser les résultats de la requête](advanced-hunting-query-results.md)<br>- [Effectuer une action sur les résultats de la requête](advanced-hunting-take-action.md) |
 | **Comprendre le schéma** | Obtenez une compréhension optimale des tableaux du schéma et de leurs colonnes. Cela vous permet de déterminer où rechercher des données et comment construire vos requêtes. | [Référence de schéma](advanced-hunting-schema-tables.md) |
 | **Utiliser les requêtes prédéfinies** | Explorez les collections de requêtes prédéfinies couvrant différents scénarios de repérage de menaces. | - [Utiliser des requêtes partagées](advanced-hunting-shared-queries.md)<br>- [Aller-retour](advanced-hunting-go-hunt.md) |
 | **Optimiser les requêtes** | Découvrez comment créer des requêtes et des requêtes efficaces qui combinent des données provenant des e-mails et d’appareils. | - [Meilleures pratiques en matière de requêtes](advanced-hunting-shared-queries.md) <br>- [Recherche sur les appareils et les e-mails](advanced-hunting-best-practices.md) |
@@ -63,6 +66,7 @@ Les données de chasse avancées peuvent être classées en deux types distincts
 ## <a name="related-topics"></a>Sujets associés
 - [Apprendre le langage de requête](advanced-hunting-query-language.md)
 - [Travailler avec les résultats de la requête](advanced-hunting-query-results.md)
+- [Effectuer une action sur les résultats de la requête](advanced-hunting-take-action.md)
 - [Utiliser des requêtes partagées](advanced-hunting-shared-queries.md)
 - [Repérer les menaces sur divers appareils et e-mails](advanced-hunting-query-emails-devices.md)
 - [Comprendre le schéma](advanced-hunting-schema-tables.md)

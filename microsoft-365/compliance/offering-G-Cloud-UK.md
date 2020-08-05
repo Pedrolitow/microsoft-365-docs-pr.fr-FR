@@ -1,7 +1,7 @@
 ---
 title: Gouvernement britannique-Cloud (G-Cloud)
 description: Le service commercial de la Couronne a renouvelé la classification des services de Cloud Computing Microsoft sur le cloud public v. 6.
-keywords: Offres pour la conformité Microsoft 365
+keywords: Microsoft 365, conformité, offres
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 814b04583724b9ab8e6bcb570d51d24467755064
-ms.sourcegitcommit: 51e47ca4b355436a2ad3deb154060eb1927428e6
+ms.openlocfilehash: 6392c591ab5db083f00da97c50e6c388e8656815
+ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44773765"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46560771"
 ---
 # <a name="united-kingdom-government-cloud-g-cloud"></a>Gouvernement britannique-Cloud (G-Cloud)
 
@@ -37,7 +37,7 @@ Chaque année, Microsoft prépare la documentation et envoie des preuves pour at
 
 Le rendez-vous des services Microsoft sur le marché numérique signifie que les agences gouvernementales britanniques et les partenaires peuvent utiliser des services dans l’étendue pour stocker et traiter les données gouvernementales officielles britanniques, la plupart des données gouvernementales. En outre, il existe désormais plus de 450 partenaires Microsoft inclus dans G-Cloud qui sont des revendeurs de services Cloud Microsoft. Ils peuvent affirmer directement la conformité des services dans l’étendue avec les 14 principes dans leurs propres applications. Les clients et les partenaires doivent toutefois être en conformité avec leurs propres composants qui ne sont pas inclus dans l’attestation et la détermination de la conformité des services Cloud de Microsoft.
 
-Découvrez comment accélérer votre déploiement du Royaume-Uni G-Cloud V6 à l’aide de notre plan de sécurité et de conformité Azure : [Télécharger les conseils de mise en œuvre des principes généraux de l’implémentation de principe de Cloud pour Azure](https://servicetrust.microsoft.com/ViewPage/Blueprint?command=Download&downloadType=Document&downloadId=c3804aba-03a7-4d21-88ad-d9bbe5314a00&docTab=fc060920-cdb8-11e7-bacf-0bf52b09d912_UK_G-Cloud_Blueprint)
+ [14 les contrôles de sécurité du Cloud pour le Cloud britannique à l’aide de Microsoft Azure](https://azure.microsoft.com/resources/14-cloud-security-controls-for-uk-cloud-using-microsoft-azure/) fournissent des stratégies client pour déplacer leurs services vers Azure et aider à répondre à leurs obligations britanniques imposées par le CESG/NSCS. Le livre blanc fournit des informations sur l’utilisation d’Azure pour aider à répondre aux 14 contrôles décrits dans les principaux de sécurité du Cloud et explique comment les clients peuvent se déplacer plus rapidement et gagner en argent lorsqu’ils adoptent Microsoft Azure services.
 
 ## <a name="microsoft-in-scope-cloud-services"></a>Services Cloud Microsoft concernés
 
@@ -47,7 +47,7 @@ Découvrez comment accélérer votre déploiement du Royaume-Uni G-Cloud V6 à l
 - Intune
 - Service Cloud Power Automate (anciennement Microsoft Flow), soit en service autonome, soit inclus dans un plan ou une suite Office 365 ou Dynamics 365
 - Office 365 : Exchange Online, SharePoint Online et Skype entreprise Online
-- Service Cloud Microsoft PowerApps, soit en service autonome, soit inclus dans un plan ou une suite Office 365 ou Dynamics 365
+- Service Cloud PowerApps, soit en service autonome, soit inclus dans un plan ou une suite Office 365 ou Dynamics 365
 - Service Cloud Power BI soit en service autonome, soit inclus dans un plan ou une suite Office 365
 
 ## <a name="audits-reports-and-certificates"></a>Audits, rapports et certificats

@@ -20,12 +20,13 @@ search.appverid:
 - MET150
 description: Obtenir un support technique et de facturation à l’aide de numéros de téléphone répertoriés pour votre pays ou région ou en envoyant votre demande de service en ligne.
 feedback_system: None
-ms.openlocfilehash: c63e30aa8db9fc4a3ddb6ea394e01db635a1bc23
-ms.sourcegitcommit: ea5e2f85bd6b609658545b120c7e08789b9686fd
+ms.date: 7/28/2020
+ms.openlocfilehash: 6a7daed145294fa0e1c02ac47144d06cfdf26884
+ms.sourcegitcommit: 89178b8f20d59ca88cfca303a13062b91fbeae9d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/01/2020
-ms.locfileid: "46536859"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46552445"
 ---
 # <a name="ways-to-contact-support-for-business-products---admin-help"></a>Comment contacter le support relatif aux produits d’entreprises - Aide de l’administrateur
 
@@ -64,12 +65,9 @@ Vous, en tant qu'administrateur, devez avoir vos informations de compte à dispo
 
 - **Au Royaume-Uni, composez le 0800 032 6417.**
 
-### <a name="phone-numbers-for-other-countries"></a>Numéros de téléphone pour d’autres pays
-
 Si le numéro de téléphone du support que vous recherchez ne figure pas dans la liste ci-dessus, utilisez le menu déroulant ci-dessous pour rechercher le numéro de votre pays ou région.
 
 [!INCLUDE [country-region-support-dropdown-list](includes/country-region-support-dropdown-list.md)]
-
 
 ::: moniker-end
 

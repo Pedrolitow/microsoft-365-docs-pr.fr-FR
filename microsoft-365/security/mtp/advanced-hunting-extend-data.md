@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 9c1b9c1853d80d818d97084e2668d3b12b6da0e6
-ms.sourcegitcommit: 1b83b6bcacb997324bc4be355deba6daf319591d
+ms.openlocfilehash: 07c010a78d297a4a3c932c0d9a0e32cce0c43bfa
+ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "46503215"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46560906"
 ---
 # <a name="extend-advanced-hunting-coverage-with-the-right-settings"></a>Étendre la couverture de la chasse avancée avec les paramètres corrects
 
@@ -45,8 +45,8 @@ Si vous exécutez Active Directory sur site, vous devez installer le capteur DAV
 
 | Data | Description | Table de schéma | Procédure de configuration |
 | --- | --- | --- | --- |
-| Contrôleur de domaine | Données provenant d’Active Directory en local envoyées à Azure ATP, enrichiant les informations d’identité, telles que les détails du compte, l’activité d’ouverture de session et les requêtes Active Directory | Plusieurs tables, y compris [IdentityInfo](advanced-hunting-identityinfo-table.md), [IdentityLogonEvents](advanced-hunting-identitylogonevents-table.md)et [IdentityQueryEvents](advanced-hunting-identityqueryevents-table.md)  | [Installer le capteur ATP Azure](https://docs.microsoft.com/azure-advanced-threat-protection/install-atp-step4)|
+| Contrôleur de domaine | Données provenant d’Active Directory en local envoyées à Azure ATP, enrichiant les informations d’identité, telles que les détails du compte, l’activité d’ouverture de session et les requêtes Active Directory | Plusieurs tables, y compris [IdentityInfo](advanced-hunting-identityinfo-table.md), [IdentityLogonEvents](advanced-hunting-identitylogonevents-table.md)et [IdentityQueryEvents](advanced-hunting-identityqueryevents-table.md)  | - [Installer le capteur ATP Azure](https://docs.microsoft.com/azure-advanced-threat-protection/install-atp-step4)<br>- [Activer les événements Windows pertinents](https://docs.microsoft.com/azure-advanced-threat-protection/configure-event-collection) |
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Sujets associés
 - [Vue d’ensemble du repérage avancé](advanced-hunting-overview.md)
 - [Comprendre le schéma](advanced-hunting-schema-tables.md)

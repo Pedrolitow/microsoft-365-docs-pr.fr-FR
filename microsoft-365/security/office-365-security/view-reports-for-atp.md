@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Recherchez et utilisez des rapports pour Office 365 protection avancée contre les menaces dans le centre de sécurité &amp; conformité.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 4210ea30457215f9adc2984f24f161dc94985873
-ms.sourcegitcommit: 50526f81ce3f57d58f0a7c0df4fe21685c5a0236
+ms.openlocfilehash: a2225cbbd9233199e0ce1fc0baf0be5fe59bd258
+ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45434079"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46560296"
 ---
 # <a name="view-reports-for-office-365-advanced-threat-protection"></a>Afficher les rapports pour Office 365 protection avancée contre les menaces
 
@@ -31,7 +31,7 @@ Les organisations Office 365 Advanced Threat Protection (ATP) (par exemple, les 
 
 ![Tableau de bord des rapports dans le centre de sécurité & conformité](../../media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
 
-## <a name="advanced-threat-protection-file-types-report"></a>Rapport de types de fichiers de protection avancée contre les menaces
+## <a name="advanced-threat-protection-file-types-report"></a>Rapport sur les types de fichiers de Protection avancée contre les menaces
 
 Le rapport des **types de fichiers de protection avancée contre les menaces** indique le type de fichiers détectés comme malveillants par des [pièces jointes sûres ATP](atp-safe-attachments.md).
 
@@ -115,7 +115,7 @@ Si vous cliquez sur **afficher les détails table**, le rapport fournit une vue 
 
 Pour revenir à l’affichage rapports, cliquez sur **afficher le rapport**.
 
-## <a name="advanced-threat-protection-message-disposition-report"></a>Rapport de disposition de message de protection avancée contre les menaces
+## <a name="advanced-threat-protection-message-disposition-report"></a>Rapport sur la destruction des messages de Protection avancée contre les menaces
 
 Le rapport de **disposition des messages ATP** indique les actions qui ont été effectuées pour les messages électroniques détectés comme présentant du contenu malveillant.
 
@@ -197,7 +197,7 @@ Si vous cliquez sur **afficher les détails table**, le rapport fournit une vue 
 
 Pour revenir à l’affichage rapports, cliquez sur **afficher le rapport**.
 
-## <a name="threat-protection-status-report"></a>Rapport d’état de protection contre les menaces
+## <a name="threat-protection-status-report"></a>Rapport sur l’état de la protection contre les menaces
 
 Le rapport d' **État de protection contre les menaces** est une vue unique qui rassemble des informations sur le contenu malveillant et les e-mails malveillants détectés et bloqués par [Exchange Online Protection](exchange-online-protection-overview.md) (EOP) et Office 365 ATP. Pour plus d’informations, consultez la rubrique [Threat Protection Status Report](view-email-security-reports.md#threat-protection-status-report).
 
@@ -218,7 +218,7 @@ Le rapport **URL protection contre les menaces** comporte deux vues agrégées q
 
 - **URL cliquez sur protection action**: indique le nombre de clics d’URL par les utilisateurs de l’organisation, ainsi que les résultats du Click :
 
-  - **Blocked**
+  - **Bloqué** (l’utilisateur n’a pas pu accéder à l’URL)
   - **Bloqué et clic sur**
   - **Clic lors de l’analyse**
 
@@ -227,7 +227,7 @@ Le rapport **URL protection contre les menaces** comporte deux vues agrégées q
   Si vous cliquez sur **filtres**, vous pouvez modifier le rapport avec les filtres suivants :
 
   - **Date de début** et **Date de fin**
-  - Les actions de protection clic disponibles, ainsi que la valeur **autorisée** pour afficher les informations de tous les clics d’URL (pas simplement les clics bloqués).
+  - Les actions de protection clic disponibles, plus la valeur **autorisée** (l’utilisateur a été autorisé à accéder à l’URL).
 
   ![URL cliquez sur affichage d’action de protection dans le rapport d’URL protection contre les menaces](../../media/url-threat-protection-report-url-click-protection-action-view.png)
 
@@ -239,7 +239,7 @@ Le rapport **URL protection contre les menaces** comporte deux vues agrégées q
   - **Excel**
   - **OneNote**
   - **Visio**
-  - **Équipes**
+  - **Teams**
   - **Other**
 
   Si vous cliquez sur **filtres**, vous pouvez modifier le rapport avec les filtres suivants :
@@ -302,7 +302,7 @@ Pour en savoir plus, consultez les ressources suivantes :
 
 Si vous ne voyez pas de données dans vos rapports ATP, vérifiez que vos stratégies sont correctement configurées. Votre organisation doit avoir des [stratégies de liens fiables ATP](set-up-atp-safe-links-policies.md) et des [stratégies de pièces jointes approuvées ATP](set-up-atp-safe-attachments-policies.md) définies afin que la protection ATP soit mise en place. Consultez également la rubrique protection contre le [courrier indésirable et les programmes malveillants dans Office 365](anti-spam-and-anti-malware-protection.md).
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Sujets associés
 
 [Rapports intelligents et aperçus dans le Centre de sécurité et conformité](reports-and-insights-in-security-and-compliance.md)
   

@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 77f84519c7173aa1f9a4293b222fa5f677ed8159
-ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
+ms.openlocfilehash: 3559bf3391427d6f6ae0cfc6b6f6e8ed343438fa
+ms.sourcegitcommit: 89178b8f20d59ca88cfca303a13062b91fbeae9d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45430362"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46552661"
 ---
 # <a name="microsoft-threat-protection-preview-features"></a>Fonctionnalités d’aperçu de la protection contre les menaces Microsoft
 
@@ -57,5 +57,7 @@ Vous saurez que les fonctionnalités d’aperçu sont activées lorsque vous voy
 ## <a name="preview-features"></a>Fonctionnalités de préversion
 Les fonctionnalités et améliorations suivantes sont actuellement disponibles lors de l’aperçu :
 
-- **[Guide de référence de schéma dans le portail](advanced-hunting-schema-tables.md#get-schema-information-in-the-security-center)** : informations sur les tables de schéma disponibles directement dans le centre de sécurité. Outre les descriptions de table et de colonne, cette référence fournit des informations sur les types d’événement pris en charge ( `ActionType` valeurs) et les exemples de requêtes.
+- **[Effectuer des actions dans la chasse avancée](advanced-hunting-take-action.md)** — il doit rapidement contenir des menaces ou des ressources compromises que vous trouvez dans la [chasse avancée](advanced-hunting-overview.md).
+
+- **[Guide de référence de schéma dans le portail](advanced-hunting-schema-tables.md#get-schema-information-in-the-security-center)** : Obtenez des informations sur les tables de schéma de chasse avancées directement dans le centre de sécurité. En plus des descriptions de table et de colonne, cette référence pratique fournit des informations sur les types d’événement pris en charge ( `ActionType` valeurs) et les exemples de requêtes.
 

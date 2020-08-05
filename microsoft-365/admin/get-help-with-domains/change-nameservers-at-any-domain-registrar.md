@@ -25,12 +25,12 @@ search.appverid:
 - GEA150
 ms.assetid: a8b487a9-2a45-4581-9dc4-5d28a47010a2
 description: Découvrez comment ajouter et configurer votre domaine dans Microsoft 365 afin que vos services de messagerie électronique et Skype entreprise Online utilisent votre propre nom de domaine.
-ms.openlocfilehash: 16e8699c1c8588a4368f04078fea44c165c13e29
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 8f98e054b4fa9fc9c8746f2b3bec8b59eb04e767
+ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399991"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46560340"
 ---
 # <a name="change-nameservers-to-set-up-microsoft-365-with-any-domain-registrar"></a>Modifier les serveurs de noms pour configurer Microsoft 365 avec n’importe quel bureau d’enregistrement de domaines
 
@@ -162,15 +162,14 @@ Voici, par exemple, quelques étapes supplémentaires qui peuvent être nécessa
 
 1. Dans le centre d’administration, accédez à la page **Paramètres** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domaines</a>.
 
-3. Dans la page Domaines, sélectionnez un domaine.
+2. Dans la page **domaines** , sélectionnez le domaine, puis sélectionnez **enregistrements DNS**.
 
-4. Sous **paramètres DNS**, sélectionnez **enregistrements personnalisés**, puis **nouvel enregistrement personnalisé**.
+3. Sous **paramètres DNS**, sélectionnez **enregistrements personnalisés**, puis **nouvel enregistrement personnalisé**.
 
-5. Sélectionnez le type d’enregistrement DNS que vous souhaitez ajouter, puis tapez les informations pour le nouvel enregistrement.
+4. Sélectionnez le type d’enregistrement DNS que vous souhaitez ajouter, puis tapez les informations pour le nouvel enregistrement.
 
-6. Sélectionnez **Enregistrer**.
+5. Sélectionnez **Enregistrer**.
     
 > [!NOTE]
 > Your nameserver record updates may take up to several hours to update across the Internet's DNS system. Votre messagerie Microsoft et les autres services seront tous configurés pour fonctionner avec votre domaine. 
   
-

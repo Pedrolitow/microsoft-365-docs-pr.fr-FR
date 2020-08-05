@@ -12,12 +12,12 @@ localization_priority: Normal
 ms.assetid: beb6acaa-6016-4d54-ba7e-3d6d035e2b46
 description: Les administrateurs peuvent en savoir plus sur le tableau de bord de flux de messagerie dans le centre de sécurité & conformité, notamment les informations, les rapports et les widgets.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 61a3df3016541b170f736d23b9e4b4854964046e
-ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
+ms.openlocfilehash: e3139fa6a139c7fa159c2e5e5daa3879322f4bf0
+ms.sourcegitcommit: 89178b8f20d59ca88cfca303a13062b91fbeae9d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "44588015"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46552673"
 ---
 # <a name="mail-flow-insights-in-the-security--compliance-center"></a>Informations sur le flux de messagerie dans le centre de sécurité et conformité
 
@@ -57,7 +57,7 @@ Le tableau de bord de flux de messagerie est disponible pour :
 
 - Membres du **rôle administrateur de flux de messagerie** dans le centre de sécurité & conformité. Si ce rôle est attribué de manière explicite à un utilisateur qui n’est pas membre des rôles administrateur général ou administrateur Exchange :
 
-  - L’utilisateur doit se connecter au centre de sécurité & conformité directement à l’adresse [https://protection.office.com](https://protection.office.com) .
+  - L’utilisateur doit se connecter au centre de sécurité & conformité directement à l’adresse <https://protection.office.com> .
 
   - L’utilisateur disposera uniquement de l’autorisation lecture seule sur le tableau de bord du flux de messagerie.
 

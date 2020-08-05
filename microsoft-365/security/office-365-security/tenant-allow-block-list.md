@@ -1,5 +1,5 @@
 ---
-title: Gérer les URL et les fichiers autorisés et bloqués dans la liste d’autorisation/de blocage du client
+title: Gérer vos URL autorisées et bloquées dans la liste d’autorisation/de blocage du client
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -14,22 +14,22 @@ search.appverid:
 - MET150
 ms.collection:
 - M365-security-compliance
-description: Les administrateurs peuvent apprendre à configurer les entrées d’URL et de fichiers dans la liste des clients autorisés/bloqués du centre de sécurité & Compliance Center.
-ms.openlocfilehash: db34abf28b5ead8106eb0b1447052d63072b2da3
-ms.sourcegitcommit: 41eb898143286755cd36df9f7e769de641263d73
+description: Les administrateurs peuvent apprendre à configurer les entrées d’URL dans la liste des clients autorisés/bloqués du centre de sécurité & Compliance Center.
+ms.openlocfilehash: 5ff34cca922f18a015bd9da847facc8177cf8790
+ms.sourcegitcommit: 89178b8f20d59ca88cfca303a13062b91fbeae9d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "45391565"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46552549"
 ---
-# <a name="manage-urls-and-files-in-the-tenant-allowblock-list"></a>Gérer les URL et fichiers dans la liste verte/rouge du client
+# <a name="manage-urls-in-the-tenant-allowblock-list"></a>Gérer les URL dans la liste d’autorisation/de blocage de client
 
 > [!NOTE]
 > Les fonctionnalités décrites dans cette rubrique sont en mode aperçu, sont sujettes à modification et ne sont pas disponibles dans toutes les organisations.
 
 Dans les organisations Microsoft 365 avec des boîtes aux lettres dans Exchange Online ou des organisations Exchange Online Protection (EOP) autonomes sans boîte aux lettres Exchange Online, vous pouvez ne pas utiliser le verdict de filtrage EOP. Par exemple, un bon message peut être marqué comme incorrect (faux positif) ou un message incorrect peut être autorisé par (faux négatif).
 
-La liste des clients autorisés/bloqués du centre de sécurité & conformité vous offre un moyen de remplacer manuellement les verdicts de filtrage Microsoft 365. La liste d’autorisation/de blocage de client est utilisée pendant le flux de messagerie et au moment de l’utilisateur clique dessus. Vous pouvez spécifier des URL et des fichiers à autoriser ou à bloquer dans la liste des clients autorisés/bloqués.
+La liste des clients autorisés/bloqués du centre de sécurité & conformité vous offre un moyen de remplacer manuellement les verdicts de filtrage Microsoft 365. La liste d’autorisation/de blocage de client est utilisée pendant le flux de messagerie et au moment de l’utilisateur clique dessus. Vous pouvez spécifier des URL à autoriser ou à bloquer dans la liste des clients autorisés/bloqués.
 
 Cette rubrique décrit comment configurer les entrées dans la liste des clients autorisés/bloqués du centre de sécurité & conformité ou dans PowerShell (Exchange Online PowerShell pour les organisations Microsoft 365 avec des boîtes aux lettres dans Exchange Online ; environnement de ligne de commande autonome EOP PowerShell pour les organisations sans boîtes aux lettres Exchange Online).
 
@@ -37,17 +37,9 @@ Cette rubrique décrit comment configurer les entrées dans la liste des clients
 
 - Vous ouvrez le Centre de conformité et sécurité sur <https://protection.office.com/>. Pour accéder directement à la page d' **autorisation/de blocage de client** , utilisez <https://protection.office.com/tenantAllowBlockList> .
 
-- Vous spécifiez les fichiers à l’aide de la valeur de hachage SHA256 du fichier. Pour rechercher la valeur de hachage SHA256 d’un fichier dans Windows, exécutez la commande suivante dans une invite de commandes :
-
-  ```dos
-  certutil.exe -hashfile "<Path>\<Filename>" SHA256
-  ```
-
-  Par exemple, la valeur est `768a813668695ef2483b2bde7cf5d1b2db0423a0d3e63e498f3ab6f2eb13ea3a` . Les valeurs de hachage de percepteur (pHash) ne sont pas autorisées.
-
 - Les valeurs d’URL disponibles sont décrites dans la [syntaxe URL de la section liste des clients autorisés/bloqués](#url-syntax-for-the-tenant-allowblock-list) plus loin dans cette rubrique.
 
-- La liste d’autorisation/de blocage de client autorise un nombre maximal de 500 entrées pour les URL et 500 entrées pour les hachages de fichiers.
+- La liste d’adresses client autorisées/bloquées autorise un nombre maximal de 500 entrées pour les URL.
 
 - Une entrée doit être active dans les 15 minutes.
 
@@ -95,39 +87,15 @@ Pour plus d’informations sur la syntaxe des entrées d’URL, voir la syntaxe 
 
 4. Lorsque vous avez terminé, cliquez sur **Ajouter**.
 
-## <a name="use-the-security--compliance-center-to-create-file-entries-in-the-tenant-allowblock-list"></a>Utiliser le centre de sécurité & conformité pour créer des entrées de fichier dans la liste des clients autorisés/bloqués
+## <a name="use-the-security--compliance-center-to-view-entries-in-the-tenant-allowblock-list"></a>Utiliser le centre de sécurité & conformité pour afficher les entrées dans la liste des clients autorisés/bloqués
 
 1. Dans le centre de sécurité & conformité, accédez **Threat management** à \> **Policy** \> **liste verte/rouge**de la stratégie de gestion des menaces.
 
-2. Sur la page **liste des clients autorisés/bloqués** , sélectionnez l’onglet **fichiers** , puis cliquez sur **Ajouter**.
-
-3. Dans la fenêtre mobile **ajouter de nouveaux fichiers** qui s’affiche, configurez les paramètres suivants :
-
-   - **Ajouter des hachages de fichier**: saisissez une valeur de hachage SHA256 par ligne, jusqu’à un maximum de 20.
-
-   - **Bloquer/autoriser**: indiquez si vous souhaitez **autoriser** ou **bloquer** les fichiers spécifiés.
-
-   - N' **expire jamais**: effectuez l’une des opérations suivantes :
-
-     - Vérifiez que le paramètre est désactivé (désactivez-le ![ ](../../media/scc-toggle-off.png) ) et utilisez la zone **expire** le, pour spécifier la date d’expiration des entrées.
-
-     ou
-
-     - Déplacez le bouton bascule vers la droite pour configurer les entrées de sorte qu’elles n’expirent jamais : ![Activer](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png).
-
-   - **Facultatif Remarque**: entrez un texte descriptif pour les entrées.
-
-4. Lorsque vous avez terminé, cliquez sur **Ajouter**.
-
-## <a name="use-the-security--compliance-center-to-view-url-and-file-entries-in-the-tenant-allowblock-list"></a>Utiliser le centre de sécurité & conformité pour afficher les entrées d’URL et de fichiers dans la liste d’autorisation/de blocage de client
-
-1. Dans le centre de sécurité & conformité, accédez **Threat management** à \> **Policy** \> **liste verte/rouge**de la stratégie de gestion des menaces.
-
-2. Sélectionnez l’onglet **URL** ou **fichiers** .
+2. Sélectionnez l’onglet **URL** .
 
 Cliquez sur les en-têtes de colonne suivants pour trier dans l’ordre croissant ou décroissant :
 
-- **Valeur**: l’URL ou le hachage du fichier.
+- **Valeur**
 - **Action**: **bloquer** ou **autoriser**.
 - **Date de la dernière mise à jour**
 - **Date d’expiration**
@@ -135,7 +103,7 @@ Cliquez sur les en-têtes de colonne suivants pour trier dans l’ordre croissan
 
 Cliquez sur **groupe** pour regrouper les entrées par **action** (**bloquer** ou **autoriser**) ou **aucune**.
 
-Cliquez sur **Rechercher**, entrez la totalité ou une partie d’une URL ou d’une valeur de fichier, puis appuyez sur entrée pour rechercher une valeur spécifique. Lorsque vous avez terminé, cliquez sur **Effacer** l' ![ icône Rechercher ](../../media/b6512677-5e7b-42b0-a8a3-3be1d7fa23ee.gif) .
+Cliquez sur **Rechercher**, entrez la totalité ou une partie d’une valeur, puis appuyez sur entrée pour rechercher une valeur spécifique. Lorsque vous avez terminé, cliquez sur **Effacer** l' ![ icône Rechercher ](../../media/b6512677-5e7b-42b0-a8a3-3be1d7fa23ee.gif) .
 
 Cliquez sur **filtre**. Dans le menu volant **filtre** qui s’affiche, configurez l’un des paramètres suivants :
 
@@ -151,13 +119,13 @@ Lorsque vous avez terminé, cliquez sur **appliquer**.
 
 Pour effacer les filtres existants, cliquez sur **Filtrer**et, dans le menu volant **filtre** qui s’affiche, cliquez sur **effacer les filtres**.
 
-## <a name="use-the-security--compliance-center-to-modify-url-and-file-entries-in-the-tenant-allowblock-list"></a>Utiliser le centre de sécurité & conformité pour modifier les entrées d’URL et de fichiers dans la liste d’autorisation/de blocage de client
+## <a name="use-the-security--compliance-center-to-modify-entries-in-the-tenant-allowblock-list"></a>Utiliser le centre de sécurité & conformité pour modifier des entrées dans la liste des clients autorisés/bloqués
 
-Vous ne pouvez pas modifier la valeur de l’URL ou du fichier lui-même. Au lieu de cela, vous devez supprimer l’entrée et la recréer.
+Vous ne pouvez pas modifier la valeur de l’URL proprement dite. Au lieu de cela, vous devez supprimer l’entrée et la recréer.
 
 1. Dans le centre de sécurité & conformité, accédez **Threat management** à \> **Policy** \> **liste verte/rouge**de la stratégie de gestion des menaces.
 
-2. Sélectionnez l’onglet **URL** ou **fichiers** .
+2. Sélectionnez l’onglet **URL** .
 
 3. Sélectionnez l’entrée que vous souhaitez modifier, puis cliquez sur **modifier** l' ![ icône modifier ](../../media/0cfcb590-dc51-4b4f-9276-bb2ce300d87e.png) .
 
@@ -177,11 +145,11 @@ Vous ne pouvez pas modifier la valeur de l’URL ou du fichier lui-même. Au lie
 
 5. Lorsque vous avez terminé, cliquez sur **Enregistrer**.
 
-## <a name="use-the-security--compliance-center-to-remove-url-and-file-entries-from-the-tenant-allowblock-list"></a>Utiliser le centre de sécurité & conformité pour supprimer les entrées d’URL et de fichier de la liste des clients autorisés/bloqués
+## <a name="use-the-security--compliance-center-to-remove-entries-from-the-tenant-allowblock-list"></a>Utiliser le centre de sécurité & conformité pour supprimer des entrées de la liste des clients autorisés/bloqués
 
 1. Dans le centre de sécurité & conformité, accédez **Threat management** à \> **Policy** \> **liste verte/rouge**de la stratégie de gestion des menaces.
 
-2. Sélectionnez l’onglet **URL** ou **fichiers** .
+2. Sélectionnez l’onglet **URL** .
 
 3. Sélectionnez l’entrée que vous souhaitez supprimer, puis cliquez sur **supprimer** l' ![ icône Supprimer ](../../media/87565fbb-5147-4f22-9ed7-1c18ce664392.png) .
 
@@ -189,12 +157,12 @@ Vous ne pouvez pas modifier la valeur de l’URL ou du fichier lui-même. Au lie
 
 ## <a name="use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-the-tenant-allowblock-list"></a>Utiliser Exchange Online PowerShell ou le PowerShell autonome EOP pour configurer la liste d’autorisation/de blocage de client
 
-### <a name="use-powershell-to-add-url-and-file-entries-in-the-tenant-allowblock-list"></a>Utiliser PowerShell pour ajouter des entrées d’URL et de fichiers dans la liste d’autorisation/de blocage de client
+### <a name="use-powershell-to-add-entries-in-the-tenant-allowblock-list"></a>Utiliser PowerShell pour ajouter des entrées dans la liste d’autorisation/de blocage de client
 
-Pour ajouter des entrées d’URL et de fichier dans la liste des clients autorisés/bloqués, utilisez la syntaxe suivante :
+Pour ajouter des entrées dans la liste d’autorisation/de blocage de client, utilisez la syntaxe suivante :
 
 ```powershell
-New-TenantAllowBlockListItems -ListType <Url | FileHash> -Action <Allow | Block> -Entries <String[]> [-ExpirationDate <DateTime>] [-NoExpiration] [-Notes <String>]
+New-TenantAllowBlockListItems -ListType Url -Action <Allow | Block> -Entries <String[]> [-ExpirationDate <DateTime>] [-NoExpiration] [-Notes <String>]
 ```
 
 Cet exemple montre comment ajouter une entrée de bloc d’URL pour contoso.com et tous les sous-domaines (par exemple, contoso.com, www.contoso.com et xyz.abc.contoso.com). Étant donné que nous n’utilisons pas les paramètres ExpirationDate ou noexpiration, l’entrée expire au bout de 30 jours.
@@ -203,20 +171,14 @@ Cet exemple montre comment ajouter une entrée de bloc d’URL pour contoso.com 
 New-TenantAllowBlockListItem -ListType Url -Action Block -Entries ~contoso.com
 ```
 
-```powershell
-New-TenantAllowBlockListItem -ListType FileHash -Action Allow -Entries "768a813668695ef2483b2bde7cf5d1b2db0423a0d3e63e498f3ab6f2eb13ea3","2c0a35409ff0873cfa28b70b8224e9aca2362241c1f0ed6f622fef8d4722fd9a" -NoExpiration
-```
-
-Cet exemple ajoute une entrée d’autorisation de fichier pour les fichiers spécifiés qui n’expire jamais.
-
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, consultez la rubrique [New-TenantAllowBlockListItems](https://docs.microsoft.com/powershell/module/exchange/new-tenantallowblocklistitems).
 
-### <a name="use-powershell-to-view-url-and-file-entries-in-the-tenant-allowblock-list"></a>Utiliser PowerShell pour afficher les entrées d’URL et de fichiers dans la liste d’autorisation/de blocage de client
+### <a name="use-powershell-to-view-entries-in-the-tenant-allowblock-list"></a>Utiliser PowerShell pour afficher les entrées dans la liste d’autorisation/de blocage de client
 
-Pour afficher les entrées d’URL et de fichier dans la liste des clients autorisés/bloqués, utilisez la syntaxe suivante :
+Pour afficher les entrées dans la liste d’autorisation/de blocage de client, utilisez la syntaxe suivante :
 
 ```powershell
-Get-TenantAllowBlockListItems -ListType <Url | FileHash> [-Entry <URLValue | FileHashValue>] [-Action <Allow | Block>] [-ExpirationDate <DateTime>] [-NoExpiration]
+Get-TenantAllowBlockListItems -ListType Url [-Entry <URLValue>] [-Action <Allow | Block>] [-ExpirationDate <DateTime>] [-NoExpiration]
 ```
 
 Cet exemple renvoie toutes les URL bloquées.
@@ -225,22 +187,16 @@ Cet exemple renvoie toutes les URL bloquées.
 Get-TenantAllowBlockListItems -ListType Url -Action Block
 ```
 
-Cet exemple renvoie des informations sur la valeur de hachage de fichier spécifiée.
-
-```powershell
-Get-TenantAllowBlockListItems -ListType FileHash -Entry "9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08"
-```
-
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, consultez la rubrique [Get-TenantAllowBlockListItems](https://docs.microsoft.com/powershell/module/exchange/get-tenantallowblocklistitems).
 
-### <a name="use-powershell-to-modify-url-and-file-entries-in-the-tenant-allowblock-list"></a>Utiliser PowerShell pour modifier les entrées d’URL et de fichiers dans la liste d’autorisation/de blocage de client
+### <a name="use-powershell-to-modify-entries-in-the-tenant-allowblock-list"></a>Utiliser PowerShell pour modifier des entrées dans la liste d’autorisation/de blocage de client
 
-Vous ne pouvez pas modifier la valeur de l’URL ou du fichier lui-même. Au lieu de cela, vous devez supprimer l’entrée et la recréer.
+Vous ne pouvez pas modifier la valeur de l’URL proprement dite. Au lieu de cela, vous devez supprimer l’entrée et la recréer.
 
-Pour modifier les entrées d’URL et de fichier dans la liste des clients autorisés/bloqués, utilisez la syntaxe suivante :
+Pour modifier les entrées de la liste des clients autorisés/bloqués, utilisez la syntaxe suivante :
 
 ```powershell
-Set-TenantAllowBlockListItems -ListType <Url | FileHash> -Ids <"Id1","Id2",..."IdN"> [-Action <Allow | Block>] [-ExpirationDate <DateTime>] [-NoExpiration] [-Notes <String>]
+Set-TenantAllowBlockListItems -ListType Url -Ids <"Id1","Id2",..."IdN"> [-Action <Allow | Block>] [-ExpirationDate <DateTime>] [-NoExpiration] [-Notes <String>]
 ```
 
 Cet exemple montre comment modifier la date d’expiration de l’entrée spécifiée.
@@ -251,12 +207,12 @@ Set-TenantAllowBlockListItems -ListType Url -Ids "RgAAAAAI8gSyI_NmQqzeh-HXJBywBw
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, consultez la rubrique [Set-TenantAllowBlockListItems](https://docs.microsoft.com/powershell/module/exchange/set-tenantallowblocklistitems).
 
-### <a name="use-powershell-to-remove-url-and-file-entries-from-the-tenant-allowblock-list"></a>Utiliser PowerShell pour supprimer les entrées d’URL et de fichier de la liste des clients autorisés/bloqués
+### <a name="use-powershell-to-remove-entries-from-the-tenant-allowblock-list"></a>Utiliser PowerShell pour supprimer des entrées de la liste d’autorisation/de blocage de client
 
-Pour supprimer les entrées d’URL et de fichier de la liste des clients autorisés/bloqués, utilisez la syntaxe suivante :
+Pour supprimer des entrées de la liste des clients autorisés/bloqués, utilisez la syntaxe suivante :
 
 ```powershell
-Remove-TenantAllowBlockListItems -ListType <Url | FileHash> -Ids <"Id1","Id2",..."IdN">
+Remove-TenantAllowBlockListItems -ListType Url -Ids <"Id1","Id2",..."IdN">
 ```
 
 Cet exemple supprime l’entrée d’URL spécifiée de la liste des clients bloqués/bloqués.

@@ -20,12 +20,13 @@ ms.custom: ''
 search.appverid: ''
 description: Découvrez comment effectuer une mise à niveau de Microsoft teams gratuitement vers un nouvel abonnement Microsoft 365 pour les entreprises.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 6bd36987fcad4cebb217bdc89388dfae44ca30b9
-ms.sourcegitcommit: 41bc923bb31598cea8f02923792c1cd786e39616
+ms.date: 07/08/2020
+ms.openlocfilehash: fcd06db64f78c80e5b4a015380e672f529feb0ae
+ms.sourcegitcommit: 89178b8f20d59ca88cfca303a13062b91fbeae9d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "45087927"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46552457"
 ---
 # <a name="upgrade-from-microsoft-teams-free-to-microsoft-365-for-business"></a>Mise à niveau de Microsoft teams gratuitement vers Microsoft 365 pour les entreprises
 

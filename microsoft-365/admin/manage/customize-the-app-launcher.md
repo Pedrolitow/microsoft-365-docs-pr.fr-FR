@@ -21,12 +21,12 @@ search.appverid:
 - GEA150
 ms.assetid: 1136115a-75af-4497-b693-640c4ce70bc6
 description: 'Créez des liens rapides vers vos courriers électroniques, vos documents, vos applications, vos sites SharePoint, vos sites externes et d’autres ressources en ajoutant des vignettes personnalisées au lanceur d’applications. '
-ms.openlocfilehash: 7220f0be8ad6605b7ad6d30000fde6411948c996
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+ms.openlocfilehash: cebb4385e40f2cef68d3ee26dca1cb905c8d91c5
+ms.sourcegitcommit: 89178b8f20d59ca88cfca303a13062b91fbeae9d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44780132"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46552493"
 ---
 # <a name="add-custom-tiles-to-the-app-launcher"></a>Ajouter des vignettes personnalisées au lanceur d'applications
 
@@ -45,7 +45,7 @@ Vous pouvez ajouter vos propres vignettes au lanceur d'applications pointant ver
   
 ## <a name="add-a-custom-tile-to-the-app-launcher"></a>Ajouter une vignette personnalisée au lanceur d'applications
 
-1. Dans le centre d’administration, accédez aux **Settings**paramètres  >  **org** paramètres et sélectionnez l’onglet **Profil** de l’organisation.
+1. Connectez-vous au centre d’administration en tant qu’administrateur général, accédez à **paramètres**  >  **organisationnelle**, puis cliquez sur l’onglet **profil d’organisation** .
     
 2. Sous l’onglet Profil de l' **organisation** , choisissez les **vignettes du lanceur d’applications personnalisé**.
   
@@ -91,4 +91,3 @@ Pour supprimer une vignette personnalisée, dans la fenêtre **mosaïques person
 
 En plus d’ajouter des vignettes au lanceur d’applications, vous pouvez ajouter des vignettes du lanceur d’applications dans la barre de navigation ([en savoir plus](https://support.microsoft.com/office/eb34a21b-52fa-4fbf-a8d5-146132242985)). Pour personnaliser l’apparence de Microsoft 365 en fonction de la marque de votre organisation, consultez [la rubrique Customize the microsoft 365 Theme](../setup/customize-your-organization-theme.md).
   
-

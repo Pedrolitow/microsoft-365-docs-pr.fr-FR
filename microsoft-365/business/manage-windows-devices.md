@@ -24,12 +24,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Découvrez comment permettre à Microsoft 365 de protéger les appareils Windows 10 à annuaire Active Directory joints en quelques étapes seulement.
-ms.openlocfilehash: 2eaf5aa76cae1680b93af008af615ae872e4fb20
-ms.sourcegitcommit: fab425ea4580d1924fb421e6db233d135f5b7d19
+ms.openlocfilehash: 6275c6c4be9cd9631ab095f8b0e1b39683022bb2
+ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "46533782"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46560840"
 ---
 # <a name="enable-domain-joined-windows-10-devices-to-be-managed-by-microsoft-365-business-premium"></a>Activer la gestion des appareils Windows 10 associés à un domaine par Microsoft 365 Business Premium
 
@@ -50,8 +50,7 @@ Pour plus d’informations, consultez la rubrique [synchroniser les utilisateurs
 
 ## <a name="1-verify-mdm-authority-in-intune"></a>1. vérifier l’autorité MDM dans Intune
 
-Accédez à portal.azure.com et dans la partie supérieure de la page recherche de Intune.
-Sur la page Microsoft Intune, sélectionnez l’option d’enregistrement de l' **appareil** et, dans la page de **vue d’ensemble** , vérifiez que l' **autorité MDM** est **Intune**.
+Accédez à [Gestionnaire de point de terminaison](https://endpoint.microsoft.com/#blade/Microsoft_Intune_Enrollment/EnrollmentMenu/overview) et sur la page Microsoft Intune, sélectionnez enregistrement de l' **appareil**, puis, dans la page **vue d’ensemble** , vérifiez que l' **autorité MDM** est **Intune**.
 
 - Si l' **autorité MDM** est **None**, cliquez sur l' **autorité MDM** pour la définir sur **Intune**.
 - Si l' **autorité MDM** est **Microsoft Office 365**, accédez **à périphériques**d'  >  **inscription** des appareils et utilisez la boîte de dialogue Ajouter une **autorité** MDM sur la droite pour ajouter l’autorité **MDM MDM** (la boîte de dialogue **Ajouter une autorité** MDM est uniquement disponible si l' **autorité MDM** est définie sur Microsoft Office 365).

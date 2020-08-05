@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: b11daf1cc6921e4be87b1bd3965adc2d76d0a0dd
-ms.sourcegitcommit: 7c1b34205746ff0690ffc774a74bdfd434256cf5
+ms.openlocfilehash: afeef8de09e0ee7a727372041791871712ca4e0d
+ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "45049927"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46560894"
 ---
 # <a name="microsoft-threat-protection"></a>Protection Microsoft contre les menaces
 
@@ -50,11 +50,13 @@ Avec la solution de protection Microsoft contre les menaces intégrée, les prof
 >Consultez ce [Guide interactif sur la protection contre les menaces Microsoft](https://aka.ms/MTP-Interactive-Guide).
 
 
-La suite Microsoft Threat Protection protège les éléments suivants : 
+La suite de la Protection Microsoft contre les menaces protège les éléments suivants : 
 - **Points de terminaison avec Microsoft Defender ATP** -Microsoft Defender ATP est une plateforme de point de terminaison unifiée pour la protection préventive, la détection après effraction, l’enquête automatisée et la réponse. 
 - La **messagerie et la collaboration avec office 365 ATP** -Office 365 ATP protège votre organisation contre les menaces malveillantes posées par les messages électroniques, les liens (URL) et les outils de collaboration. 
 - Les **identités avec Azure ATP et Azure ad Identity Protection** -Azure ATP utilisent des signaux Active Directory pour identifier, détecter et examiner les menaces avancées, les identités compromises et les actions malveillantes dirigées vers votre organisation. 
 - **Applications avec Microsoft Cloud App Security** -la sécurité de l’application Cloud Microsoft est une solution complète de la visibilité complète, des contrôles de données renforcés et une protection améliorée contre les menaces pour vos applications Cloud. 
+
+>[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4Bzww] 
 
 La couche de produit unique de protection contre les menaces Microsoft renforce les composants individuels de la suite :
 - Aider à se protéger contre les attaques et coordonner les réponses de la suite via le partage de signaux et les actions automatisées

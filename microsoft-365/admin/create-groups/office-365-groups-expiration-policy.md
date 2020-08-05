@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez les stratégies d’expiration des groupes Microsoft 365.
-ms.openlocfilehash: 8def757241dec28f5a54c76dc81614fd52fe85e5
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+ms.openlocfilehash: 84b7048e414fe37c89a59dd9f282a4b35e0f26c8
+ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44780420"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46560362"
 ---
 # <a name="microsoft-365-group-expiration-policy"></a>Stratégie d’expiration de groupe Microsoft 365
 
@@ -78,7 +78,7 @@ Les propriétaires de groupe seront uniquement avertis par courrier électroniqu
 
 30 jours avant l’expiration du groupe, les propriétaires du groupe (ou les adresses de messagerie que vous avez spécifiées pour les groupes qui n’ont pas de propriétaire) reçoivent un message leur permettant de renouveler facilement le groupe. S’ils ne le rerenouvellent pas, ils recevront un autre courrier électronique de renouvellement 15 jours avant l’expiration. S’il ne l’a toujours pas renouvelé, il reçoit une notification par courrier électronique le jour précédant l’expiration.
 
-Si, pour une raison quelconque, aucun des propriétaires ou administrateurs ne renouvelle le groupe avant qu’il n’expire, l’administrateur peut toujours restaurer le groupe pendant 30 jours après la date d’expiration. Pour plus d’informations, consultez la rubrique suivante : [Restore a Deleted Microsoft 365 Group](https://docs.microsoft.com/microsoft-365/admin/create-groups/restore-deleted-group).
+Si, pour une raison quelconque, aucun des propriétaires ou administrateurs ne renouvelit le groupe avant qu’il arrive à expiration et que le renouvellement automatique ne se produise pas en raison du fait que le groupe ne répond pas aux exigences de renouvellement automatique, l’administrateur peut toujours restaurer le groupe pendant 30 jours après l’expiration. Pour plus d’informations, consultez la rubrique suivante : [Restore a Deleted Microsoft 365 Group](https://docs.microsoft.com/microsoft-365/admin/create-groups/restore-deleted-group).
 
 ## <a name="related-articles"></a>Articles connexes
 
@@ -86,4 +86,6 @@ Si, pour une raison quelconque, aucun des propriétaires ou administrateurs ne r
 
 [Attribuer un nouveau propriétaire à un groupe orphelin](https://support.microsoft.com/office/86bb3db6-8857-45d1-95c8-f6d540e45732)
 
-[Configurer l’expiration des groupes Microsoft 365](https://docs.microsoft.com/azure/active-directory/active-directory-groups-lifecycle-azure-portal) '
+[Configurer l’expiration des groupes Microsoft 365](https://docs.microsoft.com/azure/active-directory/active-directory-groups-lifecycle-azure-portal)
+
+[Renouvellement automatique basé sur des activités](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-lifecycle)

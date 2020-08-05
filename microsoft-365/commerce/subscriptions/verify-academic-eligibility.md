@@ -18,12 +18,13 @@ ms.custom: ''
 search.appverid:
 - MET150
 description: Découvrez comment vérifier l’éligibilité de votre école pour les tarifs Microsoft 365 éducation éducation.
-ms.openlocfilehash: 70bc4e986a5072b7f05ae983b2e932aa804caaeb
-ms.sourcegitcommit: b4119682bd3c036289e851fff56fde869c816479
+ms.date: 07/21/2020
+ms.openlocfilehash: 948d001315c44e288d9fe3e363ec6e1ddeb8ff32
+ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45205001"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46560702"
 ---
 # <a name="verify-academic-eligibility-for-microsoft-365-education-subscriptions"></a>Vérifier le droit d’éducation pour les abonnements Microsoft 365 éducation
 
@@ -44,7 +45,7 @@ Si vous n’êtes pas sûr d’avoir un abonnement à la version d’évaluation
 
 ## <a name="verify-your-schools-academic-eligibility"></a>Vérifier l’éligibilité scolaire de votre école
 
-Dans la plupart des cas, lorsque vous vous inscrivez pour obtenir une version d’évaluation gratuite et que vous exécutez l’Assistant Vérification du droit pour fournir le domaine de votre école, vous recevez une approbation immédiate ou un refus de l’éligibilité de votre école. Dans certains cas, nous avons besoin d’informations supplémentaires pour effectuer une révision manuelle du droit d’utilisation. Cette révision peut prendre jusqu’à 10 jours ouvrables. Après avoir examiné les informations d’éligibilité de votre établissement, nous vous envoyons un message électronique qui vous informe de l’état de votre établissement.
+Dans la plupart des cas, lorsque vous vous inscrivez pour obtenir une version d’évaluation gratuite et que vous exécutez l’Assistant Vérification du droit pour fournir le domaine de votre école, vous recevez une approbation immédiate ou un refus de l’éligibilité de votre école. Dans certains cas, nous avons besoin d’informations supplémentaires pour effectuer une vérification manuelle de l’éligibilité et vous joindre à un questionnaire. Cette révision peut prendre jusqu’à 10 jours ouvrables. Après avoir examiné les informations d’éligibilité de votre établissement, nous vous envoyons un message électronique qui vous informe de l’état de votre établissement.
 
 Vous pouvez fermer l’Assistant de vérification éducation avant d’entrer un domaine et de commencer à utiliser l’abonnement à la version d’évaluation immédiatement. Toutefois, vous ne pouvez pas prétendre aux prix académiques tant que vous n’avez pas terminé le processus de vérification. Vous devez terminer le processus avant la fin de votre version d’évaluation gratuite pour effectuer une conversion vers un abonnement payant et continuer à l’utiliser. Cela s’applique également lorsque vous convertissez un abonnement gratuit a1.
 

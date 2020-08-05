@@ -12,12 +12,12 @@ ms.date: 08/28/2019
 f1.keywords:
 - NOCSH
 ms.author: greglin
-ms.openlocfilehash: d1019547fb16fd4fd5669ebd5286e8c9e32668fe
-ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
+ms.openlocfilehash: 3b4a0174e96fec1591bcac7ba58bcc7d57db8c87
+ms.sourcegitcommit: 89178b8f20d59ca88cfca303a13062b91fbeae9d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "44011922"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46552685"
 ---
 # <a name="phase-3-windows-10-enterprise"></a>Phase 3 : Windows 10 Entreprise
 
@@ -49,14 +49,14 @@ Si ces scénarios de déploiement ne répondent pas aux besoins de votre organis
 Pour en savoir plus sur Windows 10, consultez les articles suivants :
 
 - [Page du produit Microsoft 365 Enterprise](https://www.microsoft.com/microsoft-365/enterprise)
-- [Windows 10](https://docs.microsoft.com/windows/windows-10)
+- [Windows 10](https://docs.microsoft.com/windows/windows-10)
 - [Déployer et mettre à jour Windows 10](https://docs.microsoft.com/windows/deployment/)
 
 
 ## <a name="additional-services-and-features"></a>Autres services et fonctionnalités
 Dans le cadre de votre déploiement de Windows 10 entreprise, vous pouvez ajouter ces services et fonctionnalités supplémentaires.
 
-### <a name="windows-analytics"></a>Windows Analytics
+### <a name="desktop-analytics"></a>Analyses du bureau
 
 Windows utilise les données de diagnostic pour fournir des informations riches et exploitables afin de vous aider à obtenir une vue d’ensemble approfondie de l’efficacité opérationnelle et de l’intégrité des appareils Windows 10 dans votre environnement.
 
@@ -64,7 +64,7 @@ Windows utilise les données de diagnostic pour fournir des informations riches 
 * Mise à jour conformité-la conformité des mises à jour est destinée à l’administrateur informatique qui souhaite obtenir une vue holistique de tous ses appareils Windows 10, sans besoin d’infrastructure supplémentaire.
 * Intégrité de l’appareil : vous pouvez utiliser l’intégrité de l’appareil pour détecter et résoudre les problèmes liés aux utilisateurs finaux de manière proactive.
 
-Pour plus d’informations, consultez la rubrique [vue d’ensemble de Windows Analytics](https://docs.microsoft.com/windows/deployment/update/windows-analytics-overview) .
+Pour plus d’informations, consultez la rubrique Présentation de l' [Analyseur de bureau](https://docs.microsoft.com/mem/configmgr/desktop-analytics/overview) .
 
 ### <a name="windows-security"></a>Sécurité Windows
 
