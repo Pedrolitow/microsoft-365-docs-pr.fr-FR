@@ -1,5 +1,5 @@
 ---
-title: Rapport carte de flux de courrier
+title: Carte de flux de messagerie
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -12,46 +12,62 @@ localization_priority: Normal
 ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
-description: Les administrateurs peuvent en savoir plus sur le rapport de carte de flux de messagerie dans le tableau de bord de flux de messagerie dans le centre de sécurité & conformité.
-ms.openlocfilehash: b0850ee50573583f1a971d1a5dfd69f47fb70b99
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+description: Les administrateurs peuvent apprendre à utiliser la carte de flux de messagerie dans le tableau de bord de flux de messagerie dans le centre de sécurité & conformité pour visualiser et suivre la façon dont les messages circulent vers et depuis leur organisation via des connecteurs et sans utiliser de connecteurs.
+ms.openlocfilehash: 2996227de3e0141635522ada4e41f2e8e65e9040
+ms.sourcegitcommit: c04f1207cfaddac2a9abef38967c17d689756a96
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44818842"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "46577695"
 ---
-# <a name="mail-flow-map-report"></a>Rapport carte de flux de courrier
+# <a name="mail-flow-map-in-the-security--compliance-center"></a>Carte de flux de messagerie dans le centre de sécurité & conformité
 
-Ce rapport fournit des informations sur la façon dont les messages circulent dans votre organisation. Vous pouvez utiliser ces informations pour apprendre des modèles, identifier des anomalies et corriger les problèmes au fur et à mesure qu’ils se produisent.
+La **carte de flux de messagerie** dans le [tableau de bord de flux de messagerie](mail-flow-insights-v2.md) dans le centre de sécurité & conformité offre un aperçu de la façon dont les messages circulent dans votre organisation. Vous pouvez utiliser ces informations pour apprendre des modèles, identifier des anomalies et corriger les problèmes au fur et à mesure qu’ils se produisent.
 
-![Rapport de carte de flux de messagerie dans le tableau de bord de flux de messagerie dans le centre de sécurité & conformité](../../media/mail-flow-map-selected.png)
+![Widget carte de flux de messagerie dans le tableau de bord de flux de messagerie dans le centre de sécurité & conformité](../../media/mfi-mail-flow-map-widget.png)
 
-## <a name="mail-flow-map-widget"></a>Widget carte de flux de messagerie
+Par défaut, le widget affiche le modèle de flux de messagerie du jour précédent dans un graphique appelé diagramme *Sankey* . Vous pouvez utiliser la flèche gauche et la flèche droite ![ ](../../media/scc-left-arrow.png) ![ ](../../media/scc-right-arrow.png) pour afficher les informations de jours différents. Chaque couleur représente le flux de messagerie sur un connecteur entrant ou sortant différent (ou sans connecteurs). Si vous placez le curseur de la souris sur une couleur spécifique, le nombre de messages s’affiche pour ce type de connecteur.
 
-Par défaut, la carte de flux de messagerie indique le modèle de flux de messagerie de niveau supérieur du jour précédent. Vous pouvez utiliser les flèches gauche et droite pour des jours différents. Placez le curseur de la souris au-dessus de chaque zone du rapport pour afficher le volume de messages à destination et en provenance de votre organisation, comme illustré dans le diagramme suivant :
+## <a name="report-view-for-the-mail-flow-map"></a>Affichage de rapport pour la carte de flux de messagerie
 
-![Flèches gauche et droite dans le widget carte de flux de messagerie](../../media/mail-flow-map-widget.png)
+Cliquez sur le widget **carte de flux de messagerie** pour accéder au rapport de carte de flux de **messagerie** .
 
-## <a name="mail-flow-map-basics"></a>Notions de base des cartes de flux de messagerie
+Les graphiques suivants sont disponibles dans l’affichage rapport :
 
-Cliquez sur le widget **carte de flux de messagerie** pour accéder au rapport de carte de flux de **messagerie** . Vous trouverez ici un niveau plus granulaire du rapport, vous pouvez cliquer sur Afficher les détails de la table pour afficher des données détaillées. Vous pouvez également télécharger le rapport détaillé en cliquant sur rapport de demande.
+- **Afficher les données de : vue d’ensemble**: il s’agit fondamentalement d’un affichage plus large du widget. Si vous placez le curseur de la souris sur une couleur spécifique, le nombre de messages s’affiche pour ce type de connecteur.
 
-![Vue d’ensemble dans le rapport de carte de flux de messagerie](../../media/mail-flow-map-overview.png)
+  ![Vue d’ensemble dans le rapport de carte de flux de messagerie](../../media/mfi-mail-flow-map-report-overview.png)
 
-## <a name="details"></a>Détails
+- **Afficher les données pour : Detail**: cette vue affiche des détails sur les connecteurs et les domaines de destination. Les principaux domaines expéditeur et destinataire sont répertoriés et les autres sont placés dans **d’autres**. Si vous placez le curseur de la souris sur une couleur et une section spécifiques, le nombre de messages s’affiche.
 
-Par défaut, **afficher les données pour** est défini sur la valeur **vue d’ensemble**. Lorsque vous cliquez sur le menu déroulant et sélectionnez **détail**, l’affichage bascule vers le niveau de détail du domaine.
+  ![Affichage détaillé dans le rapport de carte de flux de messagerie](../../media/mfi-mail-flow-map-report-detail.png)
 
-![Sélectionnez détail dans afficher les données de en mode vue d’ensemble dans le rapport de plan de flux de messagerie.](../../media/mail-flow-map-select-detail.png)
+Si vous cliquez sur **filtres** dans un affichage de rapport, vous pouvez spécifier une plage de dates avec **Date de début** et date de **fin**.
 
-Les principaux domaines expéditeur et destinataire sont répertoriés et les autres sont placés dans **d’autres** , comme indiqué dans les diagrammes suivants :
+Pour envoyer par courrier électronique le rapport pour une plage de dates spécifique à un ou plusieurs destinataires, cliquez sur **demander un téléchargement**.
 
-![Vue détails dans le rapport de carte de flux de messagerie](../../media/mail-flow-map-detail.png)
+Les informations associées s’affichent sous la carte de flux de messagerie si elles sont disponibles (par exemple, l’analyseur de la [boucle de messagerie possible](mfi-mail-loop-insight.md)).
 
-## <a name="related-insights"></a>Insights connexes
+## <a name="details-table-view-for-the-mail-flow-map"></a>Vue de la table des détails pour la carte de flux de messagerie
 
-Les informations connexes apparaissent sous la carte de flux de messagerie si elles sont disponibles (par exemple, l’analyse de domaine de l’expéditeur ou l’analyseur de la boucle de messagerie).
+Si vous cliquez sur **afficher la table des détails** dans un affichage de rapport, les informations suivantes s’affichent :
+
+- **Date**
+- **Catégorie**
+- **Connecteur/fournisseur de services tiers**
+- **Domaine de l’expéditeur/du destinataire**
+- **Nombre de messages**
+
+Si vous cliquez sur **filtres** dans un affichage tableau détaillé, vous pouvez spécifier une plage de dates avec **Date de début** et date de **fin**.
+
+Si vous sélectionnez une ligne, des détails similaires s’affichent dans un menu volant :
+
+![Fenêtre mobile détails à partir de la table Détails dans la carte de flux de messagerie](../../media/mfi-mail-flow-map-view-details-table-details.png)
+
+Pour envoyer par courrier électronique le rapport pour une plage de dates spécifique à un ou plusieurs destinataires, cliquez sur **demander un téléchargement**.
+
+Pour revenir à l’affichage rapports, cliquez sur **afficher le rapport**.
 
 ## <a name="see-also"></a>Voir aussi
 
-Pour plus d’informations sur les autres flux de messagerie dans le tableau de bord de flux de messagerie, voir [mail Flow Insights in the Security & Compliance Center](mail-flow-insights-v2.md).
+Pour plus d’informations sur les autres informations du tableau de bord de flux de messagerie, consultez [la rubrique mail Flow Insights in the Security & Compliance Center](mail-flow-insights-v2.md).

@@ -1,5 +1,5 @@
 ---
-title: Alertes de files d’attente et files d’attente
+title: Vue d’attente dans le tableau de bord de flux de messagerie
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -10,68 +10,83 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 37640c80-ce6f-47e2-afd1-bc1d3c50e637
-description: Les administrateurs peuvent en savoir plus sur les alertes de files d’attente et les files d’attente dans le tableau de bord de flux de messagerie dans le centre de sécurité & conformité.
-ms.openlocfilehash: 7bb103bad89ee39991a5c16d7101ab4658842479
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: Les administrateurs peuvent apprendre à utiliser le widget files d’attente dans le tableau de bord de flux de messagerie dans le centre de sécurité & conformité pour surveiller les flux de messages infructueux vers leurs organisations locales ou partenaires sur des connecteurs sortants.
+ms.openlocfilehash: fdc3f44041990e3860deb04a36a69a3d506d334a
+ms.sourcegitcommit: c04f1207cfaddac2a9abef38967c17d689756a96
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635183"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "46577293"
 ---
-# <a name="queue-alerts-and-queues"></a>Alertes de files d’attente et files d’attente
+# <a name="queues-insight-in-the-security--compliance-center"></a>Files d’attente Insight dans le centre de conformité & Security
 
-## <a name="queue-alerts"></a>Alertes de file d’attente
-
-Lorsque des messages ne peuvent pas être envoyés de votre organisation à vos serveurs de messagerie locaux ou partenaires à l’aide de connecteurs, les messages sont mis en file d’attente dans Office 365. Les exemples courants qui génèrent cette condition sont les suivants :
+Lorsque des messages ne peuvent pas être envoyés de votre organisation à vos serveurs de messagerie locaux ou partenaires à l’aide de connecteurs, les messages sont mis en file d’attente dans Microsoft 365. Les exemples courants qui génèrent cette condition sont les suivants :
 
 - Le connecteur est configuré de manière incorrecte.
-
 - Des modifications de mise en réseau ou de pare-feu ont été apportées dans votre environnement local.
 
 Microsoft 365 continuera à nouvelle tentative de remise pendant 24 heures. Au bout de 24 heures, les messages expirent et seront renvoyés aux expéditeurs dans les notifications d’échec de remise (également appelées notifications de non-remise).
 
-Si le volume de messagerie en file d’attente dépasse le seuil prédéfini (la valeur par défaut est 2000 messages), les alertes seront disponibles dans le tableau de bord du flux de messagerie des **alertes récentes**et les administrateurs recevront une notification par courrier électronique (à leur adresse de messagerie alternative). Pour configurer le seuil d’alerte, la limite de notification quotidienne et/ou les destinataires de l’alerte, consultez la section **personnaliser les alertes de file d’attente** ci-dessous.
+Si le volume de messagerie en file d’attente dépasse le seuil prédéfini (la valeur par défaut est 200 messages), les informations sont disponibles aux emplacements suivants :
 
-![Alertes de file d’attente dans la zone alertes récentes du tableau de bord de flux de messagerie dans le centre de sécurité & conformité](../../media/5fc4a51c-6118-4270-960b-c6b176ef94ae.png)
+- La vue **files d’attente** du [tableau de bord de flux de messagerie](mail-flow-insights-v2.md) dans le centre de sécurité & conformité. Pour plus d’informations, reportez-vous à la section [files d’attente du tableau de bord du flux de messagerie](#queues-insight-in-the-mail-flow-dashboard) de cette rubrique.
+  
+- Une alerte est affichée dans les **alertes récentes** le tableau de bord des alertes dans le [Centre de sécurité & conformité](https://protection.office.com) (tableau de bord des**alertes** \> **Dashboard** ou <https://protection.office.com/alertsdashboard> ).
+
+  ![Alertes récentes dans le tableau de bord des alertes dans le centre de sécurité & conformité](../../media/mfi-queued-messages-alert.png)
+
+- Les administrateurs recevront une notification par courrier électronique en fonction de la configuration de la stratégie d’alerte par défaut nommée **messages ont été retardées**. Pour configurer les paramètres de notification de cette alerte, reportez-vous à la section suivante.
+
+  Pour plus d’informations sur les stratégies d’alerte, consultez [la rubrique Alert Policies in the Security & Compliance Center](../../compliance/alert-policies.md).
 
 ## <a name="customize-queue-alerts"></a>Personnaliser les alertes de file d’attente
 
-Informations sur le flux de messagerie créer une stratégie d’alerte nommée les **messages ont été retardées** (la case à cocher **Envoyer des notifications par courrier électronique** dans la capture d’écran d’exemple ci-dessous) figurant dans **stratégies d’alerte**des **alertes** \> . Vous pouvez modifier les destinataires du seuil et des alertes en cliquant sur la stratégie.
+1. Dans le [Centre de sécurité & conformité](https://protection.office.com), accédez à **alertes** d' \> **alerte** ou ouvrez <https://protection.office.com/alertpolicies> .
 
-![Navigation des alertes](../../media/efb95976-9e0b-484e-a2fd-093c5bc7a40f.png)
+2. Sur la page **stratégies d’alerte** , recherchez et sélectionnez la stratégie nommée **messages ont été retardées**.
 
-Vous verrez une nouvelle Blade d’informations de stratégie, vous pouvez maintenant cliquer sur **modifier la stratégie**.
+3. Dans la fenêtre volante **retardée du message** qui s’ouvre, vous pouvez activer ou désactiver l’alerte et configurer les paramètres de notification.
 
-![Modifier la stratégie ](../../media/ed2aceae-3ee2-4849-a17e-87915987a7dd.png)
+   ![Les messages ont été retardés détails de stratégie d’alerte le centre de sécurité & conformité](../../media/mfi-queued-messages-alert-policy.png)
 
-Le panneau d’informations passe à la **stratégie de modification**. Vous pouvez désormais modifier les destinataires du message d’alerte, la limite du nombre de notifications envoyées par jour et le seuil minimal de déclenchement de l’alerte (200 ou plus).
+   - **État**: vous pouvez activer ou désactiver l’alerte.
 
-![Modifier la Blade de stratégie](../../media/c657cc74-7867-474c-b2c9-dc478449f990.png)
+   - **Destinataires du message électronique** et **limite de notification quotidienne**: cliquez sur **modifier** pour configurer les paramètres suivants :
 
-## <a name="queue-alert-details"></a>Détails des alertes en file d’attente
+4. Pour configurer les paramètres de notification, cliquez sur **modifier**. Dans le menu volant **modifier la stratégie** qui s’affiche, configurez les paramètres suivants :
 
-Lorsque vous cliquez sur l’alerte, les détails de l’alerte s’affichent dans un volet flyout.
+   - **Envoyer des notifications par courrier électronique**: la valeur par défaut est activé.
+   - **Destinataires du message électronique**: la valeur par défaut est **TenantAdmins**.
+   - **Limite quotidienne des notifications**: la valeur par défaut est **aucune limite**.
+   - **Seuil**: la valeur par défaut est 200.
 
-![Sélectionnez une alerte de file d’attente dans la zone alertes récentes du tableau de bord de flux de messagerie dans le centre de sécurité & conformité](../../media/1f6b0e96-5b2c-41ef-9684-9d813b3fabe6.png)
+   ![Les paramètres de notification dans les messages ont été retardés détails de la stratégie d’alerte le centre de sécurité & conformité](../../media/mfi-queued-messages-alert-policy-notification-settings.png)
 
-![Fenêtre mobile des détails des alertes de la file d’attente dans le centre de sécurité & conformité](../../media/105c8fff-912f-4763-8806-2740ebdecd4b.png)
+5. Lorsque vous avez terminé, cliquez sur **Enregistrer** et **Fermer**.
 
-Vous pouvez cliquer sur **afficher la file d’attente** dans les détails de l’alerte pour voir les détails de la file d’attente, les problèmes et les liens vers les correctifs disponibles dans un nouveau volet flyout.
+## <a name="queues-insight-in-the-mail-flow-dashboard"></a>Vue d’attente dans le tableau de bord de flux de messagerie
 
-![Fenêtre mobile des détails des alertes de la file d’attente dans le centre de sécurité & conformité](../../media/8ff60955-55ef-4f32-a966-85e02cb608d1.png)
+Même si le volume des messages mis en file d’attente n’a pas dépassé le seuil et généré une alerte, vous pouvez toujours utiliser l’aperçu **files d’attente** du tableau de bord du [flux de messagerie](mail-flow-insights-v2.md) pour afficher les messages qui ont été mis en file d’attente pendant plus d’une heure et prendre des mesures avant que le nombre de messages en file d’attente devienne trop important.
 
-![Afficher la file d’attente dans les détails de l’alerte](../../media/4eb088fe-5dd9-4bf4-b959-c1bb2545c515.png)
+![Widget files d’attente dans le tableau de bord de flux de messagerie dans le centre de sécurité & conformité](../../media/mfi-queues-widget.png)
 
-## <a name="queues"></a>Files d’attente
+Si vous cliquez sur le nombre de messages dans le widget, un menu volant en **file d’attente de messages** s’affiche avec les informations suivantes :
 
-Même si le volume des messages mis en file d’attente n’a pas dépassé le seuil, vous pouvez toujours utiliser la zone **files d’attente** du tableau de bord du flux de messagerie pour afficher les messages qui ont été mis en file d’attente pendant plus d’une heure. Vous pouvez utiliser la zone **files d’attente** pour surveiller le nombre de messages en file d’attente (la valeur 0 indique que le flux de messagerie est correct) et prendre des mesures avant que le nombre de messages en file d’attente devienne trop important.
+- **Nombre de messages en file d’attente**
+- **Nom du connecteur**: cliquez sur le nom du connecteur pour gérer le connecteur dans le centre d’administration Exchange.
+- **Heure de début de la file d’attente**
+- **Messages les plus anciens expirés**
+- **Serveur de destination**
+- **Dernière adresse IP**
+- **Dernière erreur**
+- **Résolution**: les problèmes et solutions courants sont disponibles. Si le lien **Fix It Now** est disponible, cliquez dessus pour résoudre le problème. Dans le cas contraire, cliquez sur les liens disponibles pour obtenir plus d’informations sur l’erreur et les solutions possibles.
 
-![Files d’attente dans le tableau de bord de flux de messagerie dans le centre de sécurité & conformité](../../media/0ef6e2ef-dd22-4363-9d4a-b20a00babc9f.png)
+![Détails après avoir cliqué sur l’aperçu des files d’attente dans le tableau de bord de flux de messagerie](../../media/mfi-queues-details.png)
 
-Lorsque vous cliquez sur le nombre de messages en file d’attente dans les **files d’attente**, les détails de la file d’attente et des instructions sur la résolution du problème apparaissent dans un volet flyout (le même menu volant qui s’affiche une fois que vous avez cliqué sur **afficher la file d’attente** dans les détails d’une alerte de file d’attente).
+La même fenêtre mobile s’affiche lorsque vous cliquez sur **afficher la file d’attente** dans l’alerte les détails d’un **message ont été retardé** .
 
-![Détails de la file d’attente](../../media/4eb088fe-5dd9-4bf4-b959-c1bb2545c515.png)
+![Les messages d’alerte ont été retardés dans le centre de sécurité & conformité](../../media/mfi-queued-messages-alert-details.png)
 
-## <a name="see-also"></a>Voir également
+## <a name="see-also"></a>Voir aussi
 
-Pour plus d’informations sur les autres flux de messagerie dans le tableau de bord de flux de messagerie, voir [mail Flow Insights in the Security & Compliance Center](mail-flow-insights-v2.md).
+Pour plus d’informations sur les autres informations du tableau de bord de flux de messagerie, consultez [la rubrique mail Flow Insights in the Security & Compliance Center](mail-flow-insights-v2.md).

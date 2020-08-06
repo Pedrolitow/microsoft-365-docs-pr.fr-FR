@@ -18,12 +18,12 @@ description: Configurer le Centre de conformité et Exchange Online pour de rép
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 769e13951ce15fb698131860fa78f25fa133e327
-ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
+ms.openlocfilehash: bba51bed4409bfb933b577419f48ab6963d4f7d6
+ms.sourcegitcommit: c04f1207cfaddac2a9abef38967c17d689756a96
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45127301"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "46577114"
 ---
 # <a name="use-exchange-online-and-the-security--compliance-center-to-comply-with-sec-rule-17a-4"></a>Utiliser Exchange Online et le centre de sécurité et conformité pour se conformer à la règle SEC 17a-4
 
@@ -70,12 +70,3 @@ Le verrouillage de conservation peut vous aider à répondre aux exigences régl
 
 Vous pouvez verrouiller une stratégie de rétention à l’aide de PowerShell. Pour plus d’informations, voir [Utiliser le verrouillage de conservation pour se conformer aux exigences réglementaires](retention.md#use-preservation-lock-to-comply-with-regulatory-requirements).
 
-## <a name="known-limitations"></a>Limitations connues
-
-Il existe actuellement quelques limitations dans Exchange Online :
-
-- Les fils de communications ne sont pas disponibles pour les messages de conversation et le canal équipes.
-- Les mentions j’aime ne sont pas conservées pour les messages de conversation et le canal équipes.
-
-> [!NOTE]
-> L’audit au niveau de l’élément est désormais disponible pour les boîtes aux lettres de groupe Microsoft 365. Pour plus d’informations, voir [Gérer l’audit de boîte aux lettres](enable-mailbox-auditing.md).

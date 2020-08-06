@@ -1,5 +1,5 @@
 ---
-title: Afficher les rapports de flux de messagerie dans le Centre de sécurité et conformité
+title: Afficher les rapports de flux de messagerie dans le tableau de bord rapports
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -16,18 +16,20 @@ search.appverid:
 ms.assetid: ''
 ms.collection:
 - M365-security-compliance
-description: Découvrez comment rechercher et utiliser des rapports de sécurité de flux de messagerie pour votre organisation. Les rapports de flux de messagerie sont disponibles dans le centre de sécurité & conformité.
+description: Les administrateurs peuvent en savoir plus sur les rapports de flux de messagerie disponibles dans le tableau de bord des rapports dans le centre de sécurité & conformité.
 ms.custom: ''
-ms.openlocfilehash: e891d9373b169dc01cfd89f114e31b23e1bd8480
-ms.sourcegitcommit: 50526f81ce3f57d58f0a7c0df4fe21685c5a0236
+ms.openlocfilehash: 69b2c3383862860b4616d95c2a6a1bb3a525d842
+ms.sourcegitcommit: c04f1207cfaddac2a9abef38967c17d689756a96
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45434178"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "46578017"
 ---
-# <a name="view-mail-flow-reports-in-the-security--compliance-center"></a>Afficher les rapports de flux de messagerie dans le Centre de sécurité et conformité
+# <a name="view-mail-flow-reports-in-the-reports-dashboard-in-security--compliance-center"></a>Afficher les rapports de flux de messagerie dans le tableau de bord rapports du centre de sécurité & conformité
 
-Outre les informations de [flux de messagerie](mail-flow-insights-v2.md) disponibles dans le centre de sécurité & conformité, différents rapports de flux de messagerie sont également disponibles pour vous aider à surveiller votre organisation Microsoft 365. Si vous disposez des [autorisations nécessaires](#what-permissions-are-needed-to-view-these-reports), vous pouvez afficher ces rapports dans le centre de sécurité & conformité à l' <https://office.protection.com> aide du tableau de **Reports** \> **bord**rapports. Pour accéder directement au tableau de bord rapports, ouvrez <https://office.protection.office.com/insightdashboard> .
+En plus des rapports de flux de messagerie disponibles dans le [tableau de bord de flux de messagerie](mail-flow-insights-v2.md) dans le centre de sécurité & conformité, un grand nombre de rapports de flux de messagerie supplémentaires sont disponibles dans le tableau de bord rapports pour vous aider à surveiller votre organisation Microsoft 365.
+
+Si vous disposez des [autorisations nécessaires](#what-permissions-are-needed-to-view-these-reports), vous pouvez afficher ces rapports dans le [Centre de sécurité & conformité](https://office.protection.com) en accédant au tableau de **Reports** \> **bord**rapports. Pour accéder directement au tableau de bord rapports, ouvrez <https://office.protection.office.com/insightdashboard> .
 
 ![Tableau de bord des rapports dans le centre de sécurité & conformité](../../media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
 
@@ -237,7 +239,7 @@ Vous pouvez modifier ces filtres en cliquant sur **Filtrer** ou en cliquant sur 
 Le tableau de données contient les informations suivantes :
 
 - **Direction**
-- **Type (Type)**
+- **Type**
 - **24 heures**
 - **3 jours**
 - **7 jours**
@@ -327,7 +329,7 @@ Pour revenir à l’affichage de rapport, cliquez sur **afficher le rapport**.
 Si vous cliquez sur **afficher les détails** de la table dans la fenêtre dépanner **par : direction** ou dépanner **par :** le mode de direction, les informations suivantes sont affichées :
 
 - **Date (UTC)**
-- **Type (Type)**
+- **Type**
 - **Direction**
 - **Nombre de messages**
 
@@ -404,26 +406,22 @@ Pour afficher et utiliser les rapports, vous devez être membre du groupe de rô
 
 - Dans le centre de sécurité & conformité, vous devez être membre de l’un des groupes de rôles suivants :
 
-  -Gestion de l’Organisation
-
-  -Administrateur de la sécurité (vous pouvez également le faire dans le [Centre d’administration Azure Active Directory](https://aad.portal.azure.com) -lecteur de sécurité
+  -Gestion de l’organisation-administrateur de la sécurité (vous pouvez également le faire dans le [Centre d’administration Azure Active Directory](https://aad.portal.azure.com) -lecteur de sécurité
 
   Pour en savoir plus, consultez [Autorisations dans le Centre de sécurité et de conformité](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center).
 
 - Dans Exchange Online, vous devez être membre de l’un des groupes de rôles suivants :
 
-  -Gestion de l’Organisation
-
-  -View-Only Organization Management
-
-  -Affichage uniquement des destinataires
-
-  -Gestion de la conformité
+  -Gestion de l’organisation-affichage uniquement-gestion de l’organisation-affichage uniquement des destinataires-gestion de la conformité
 
 Pour plus d’informations, consultez la rubrique [autorisations dans Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo) et [gérer les groupes de rôles dans Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/role-groups).
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Sujets associés
 
-[Rapports intelligents et aperçus dans le centre de sécurité et conformité](reports-and-insights-in-security-and-compliance.md)
+[Rapports intelligents et aperçus dans le Centre de sécurité et conformité](reports-and-insights-in-security-and-compliance.md)
+
+[Informations sur le flux de messagerie dans le centre de sécurité et conformité](mail-flow-insights-v2.md)
 
 [Afficher les rapports de sécurité de courrier dans le centre de sécurité et conformité](view-email-security-reports.md)
+
+[Afficher les rapports pour Office 365 protection avancée contre les menaces](view-reports-for-atp.md)

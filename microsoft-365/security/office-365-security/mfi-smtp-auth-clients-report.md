@@ -1,5 +1,5 @@
 ---
-title: Rapport de clients d’authentification SMTP
+title: Analyse des clients SMTP AUTH et rapports dans le tableau de bord de flux de messagerie
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -12,46 +12,79 @@ localization_priority: Normal
 ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
-description: Les administrateurs peuvent en savoir plus sur le rapport clients d’authentification SMTP dans le tableau de bord de flux de messagerie dans le centre de sécurité & conformité.
-ms.openlocfilehash: 90d008bf775c692431fb5b832652ceb97f9fd760
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+description: Les administrateurs peuvent apprendre à utiliser le rapport et l’analyseur d’authentification SMTP dans le tableau de bord de flux de messagerie dans le centre de sécurité & conformité afin de surveiller les expéditeurs de messages électroniques de leur organisation qui utilisent SMTP authentifié (authentification SMTP) pour envoyer des messages électroniques.
+ms.openlocfilehash: afdcf01260dd6dfcaf6b53d107e5addd007b1fb3
+ms.sourcegitcommit: c04f1207cfaddac2a9abef38967c17d689756a96
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44818818"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "46577213"
 ---
-# <a name="smtp-auth-clients-report"></a>Rapport de clients d’authentification SMTP
+# <a name="smtp-auth-clients-insight-and-report-in-the-security--compliance-center"></a>Clients d’authentification SMTP Insight and report dans le centre de conformité & Security
 
-Le rapport **clients d’authentification SMTP** met en évidence l’utilisation du protocole de soumission du client SMTP AUTH par les utilisateurs ou les comptes système de votre organisation. Ce protocole hérité (qui utilise le point de terminaison smtp.office365.com) offre uniquement l’authentification de base et est susceptible d’être utilisé par des comptes compromis pour envoyer des courriers électroniques.  Ce rapport vous permet de vérifier l’activité inhabituelle. Il indique également les données d’utilisation TLS pour les clients ou les appareils utilisant l’authentification SMTP.
+Les **clients d’authentification SMTP** du [tableau de bord de flux de messagerie](mail-flow-insights-v2.md) et du [rapport clients SMTP](#smtp-auth-clients-report) associés mettent en surbrillance l’utilisation du protocole de soumission du client SMTP AUTH par les utilisateurs ou les comptes système de votre organisation. Ce protocole hérité (qui utilise le point de terminaison smtp.office365.com) offre uniquement l’authentification de base et est susceptible d’être utilisé par des comptes compromis pour envoyer des courriers électroniques. L’aperçu et le rapport vous permettent de vérifier l’activité inhabituelle pour les envois de courrier électronique SMTP. Il indique également les données d’utilisation TLS pour les clients ou les appareils utilisant l’authentification SMTP.
 
-Le widget affiché dans le tableau de bord du flux de messagerie indique le nombre d’utilisateurs ou de comptes de service qui ont utilisé le protocole SMTP AUTH au cours des 7 derniers jours.
+Le widget indique le nombre d’utilisateurs ou de comptes de service qui ont utilisé le protocole SMTP AUTH au cours des 7 derniers jours.
 
-![Rapport sur les clients SMTP AUTH dans le tableau de bord de flux de messagerie dans le centre de sécurité & conformité](../../media/smtp-auth-clients-report-selected.png)
+![Widget clients SMTP AUTH dans le tableau de bord de flux de messagerie dans le centre de sécurité & conformité](../../media/mfi-smtp-auth-clients-report-widget.png)
 
-Un clic sur le widget ouvre une fenêtre mobile qui offre une vue agrégée de l’utilisation et des volumes TLS pour la dernière semaine.
+Si vous cliquez sur le nombre de messages dans le widget, un lanceur de **clients SMTP AUTH** apparaît. La fenêtre mobile offre une vue agrégée de l’utilisation et des volumes TLS pour la semaine précédente.
 
-![Le menu volant dans le rapport clients SMTP AUTH](../../media/smtp-auth-clients-flyout.png)
+![Menu volant des détails après avoir cliqué sur le widget clients SMTP AUTH dans le tableau de bord de flux de messagerie](../../media/mfi-smtp-auth-clients-report-details.png)
 
-Lorsque vous cliquez sur le lien du **rapport clients d’authentification SMTP** , deux vues de données principales et deux vues de données s’affichent. Les données croisées dynamiques représentent le **volume d’envoi** et l’utilisation de **TLS**. Les vues de données sont le graphique et le tableau des détails.
+Vous pouvez cliquer sur le lien **rapport des clients d’authentification SMTP** pour accéder au rapport clients SMTP AUTH, comme décrit dans la section suivante.
 
-L’affichage **volume d’envoi** indique le nombre de messages qui ont été envoyés à l’aide de l’authentification SMTP pour la plage de temps spécifiée. Vous pouvez ajuster la plage en cliquant sur **filtres**. Le graphique est organisé par domaine d’expéditeur. Vous pouvez voir les données séparées pour chaque domaine en sélectionnant le domaine dans la liste déroulante **afficher les données** .
+## <a name="smtp-auth-clients-report"></a>Rapport de clients d’authentification SMTP
 
-![Envoi de volume dans le rapport clients SMTP AUTH](../../media/smtp-auth-clients-report-sending-volume.png)
+### <a name="report-view-for-the-smtp-auth-clients-report"></a>Affichage de rapport pour le rapport clients SMTP AUTH
 
-Vous pouvez afficher des informations détaillées sur les expéditeurs et le nombre de messages en cliquant sur **afficher la table des détails**. Pour revenir au graphique, cliquez sur **afficher le rapport**.
+Par défaut, le rapport affiche les données des 7 derniers jours, mais les données sont disponibles pendant les 90 derniers jours.
 
-![Table des détails pour l’envoi de volume dans le rapport clients SMTP AUTH](../../media/smtp-auth-clients-report-details-sending-volume.png)
+La section vue d’ensemble contient les graphiques suivants :
 
-Le tableau croisé dynamique d' **utilisation TLS** est important en raison de la désapprobation à venir de TLS 1.0 et TLS 1.1 dans Office 365. De nombreux appareils et applications hérités ne peuvent pas envoyer de courrier électronique s’ils ne peuvent utiliser TLS 1.0 qu’avec l’authentification SMTP. Ce tableau croisé dynamique vous permet d’identifier et de prendre des mesures sur les utilisateurs et les comptes système qui utilisent encore des versions plus anciennes de TLS.
+- **Afficher les données par : volume d’envoi**: par défaut, le graphique indique le nombre de messages client SMTP AUTH qui ont été envoyés à partir de tous les domaines (**afficher les données pour : tous les domaines des expéditeurs** sont sélectionnés par défaut). Vous pouvez filtrer les résultats sur un domaine d’expéditeur spécifique en cliquant sur **afficher les données pour** et en sélectionnant le domaine de l’expéditeur dans la liste déroulante. Si vous pointez sur un point de données spécifique (jour), le nombre de messages s’affiche.
 
-![Utilisation de TLS dans le rapport clients d’authentification SMTP](../../media/smtp-auth-clients-report-tls-usage.png)
+  ![Affichage du volume d’envoi dans le rapport clients SMTP AUTH dans le centre de sécurité & conformité](../../media/mfi-smtp-auth-clients-report-sending-volume-view.png)
 
-Vous pouvez afficher des informations détaillées sur les expéditeurs, les versions de TLS qu’ils utilisent avec l’authentification SMTP et le nombre de messages en cliquant sur **afficher la table des détails**. Pour revenir au graphique, cliquez sur **afficher le rapport**.
+- **Afficher les données par : utilisation de TLS**: le graphique indique le pourcentage d’utilisation TLS pour tous les messages client SMTP AUTH pendant la période sélectionnée. Ce graphique vous permet d’identifier et de prendre des mesures sur les utilisateurs et les comptes système qui utilisent encore des versions plus anciennes de TLS.
 
-Vous pouvez également télécharger une version plus détaillée du rapport en cliquant sur demander un rapport.
+  ![Affichage de l’utilisation de TLS dans le rapport clients d’authentification SMTP dans le centre de sécurité & conformité](../../media/mfi-smtp-auth-clients-report-tls-usage-view.png)
 
-![Table des détails pour l’utilisation de TLS dans le rapport clients SMTP AUTH](../../media/smtp-auth-clients-report-details-tls-usage.png)
+Si vous cliquez sur **filtres** dans un affichage de rapport, vous pouvez spécifier une plage de dates avec **Date de début** et date de **fin**.
 
-## <a name="related-topics"></a>Voir aussi
+Cliquez sur **demander un rapport** pour recevoir une version plus détaillée du rapport dans un message électronique. Vous pouvez spécifier la plage de dates et les destinataires qui recevront le rapport.
 
-Pour plus d’informations sur les autres flux de messagerie dans le tableau de bord de flux de messagerie, voir [mail Flow Insights in the Security & Compliance Center](mail-flow-insights-v2.md).
+### <a name="details-table-view-for-the-smtp-auth-clients-report"></a>Vue de la table Détails pour le rapport clients SMTP AUTH
+
+Si vous cliquez sur **afficher les détails table**, les informations affichées dépendent du graphique que vous examinez :
+
+- **Afficher les données par : volume d’envoi**: les informations suivantes sont affichées dans un tableau :
+
+  - **Adresse de l’expéditeur**
+  - **Nombre de messages**
+
+  Si vous sélectionnez une ligne, les mêmes détails s’affichent dans un menu volant.
+
+- **Afficher les données par : utilisation de TLS**: les informations suivantes sont affichées dans un tableau :
+
+  - **Adresse de l’expéditeur**
+  - **TLS 1.0%**<sup>\*</sup>
+  - **TLS 1.1%**<sup>\*</sup>
+  - **TLS 1.2%**<sup>\*</sup>
+  - **Nombre de messages**
+
+  <sup>\*</sup>Cette colonne indique à la fois le pourcentage et le nombre de messages provenant de l’expéditeur.
+
+Si vous cliquez sur **filtres** dans un affichage tableau détaillé, vous pouvez spécifier une plage de dates avec **Date de début** et date de **fin**.
+
+Si vous sélectionnez une ligne, des détails similaires s’affichent dans un menu volant :
+
+![Fenêtre mobile détails à partir de la table Détails de la vue utilisation TLS dans le rapport clients SMTP AUTH](../../media/mfi-smtp-auth-clients-report-tls-usage-view-view-details-table-details.png)
+
+Cliquez sur **demander un rapport** pour recevoir une version plus détaillée du rapport dans un message électronique. Vous pouvez spécifier la plage de dates et les destinataires qui recevront le rapport.
+
+Pour revenir à l’affichage rapports, cliquez sur **afficher le rapport**.
+
+## <a name="related-topics"></a>Sujets associés
+
+Pour plus d’informations sur les autres informations du tableau de bord de flux de messagerie, consultez [la rubrique mail Flow Insights in the Security & Compliance Center](mail-flow-insights-v2.md).

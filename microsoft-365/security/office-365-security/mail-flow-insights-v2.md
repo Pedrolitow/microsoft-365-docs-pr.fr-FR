@@ -1,5 +1,5 @@
 ---
-title: Informations sur le flux de messagerie dans le centre de sécurité et conformité
+title: Informations sur le flux de messagerie dans le tableau de bord de flux de messagerie
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -10,67 +10,69 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: beb6acaa-6016-4d54-ba7e-3d6d035e2b46
-description: Les administrateurs peuvent en savoir plus sur le tableau de bord de flux de messagerie dans le centre de sécurité & conformité, notamment les informations, les rapports et les widgets.
+description: Les administrateurs peuvent en savoir plus sur les informations et les rapports disponibles dans le tableau de bord de flux de messagerie dans le centre de sécurité & conformité.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e3139fa6a139c7fa159c2e5e5daa3879322f4bf0
-ms.sourcegitcommit: 89178b8f20d59ca88cfca303a13062b91fbeae9d
+ms.openlocfilehash: 977dcef82a4f32980898c7b4392d011340e3d0a2
+ms.sourcegitcommit: c04f1207cfaddac2a9abef38967c17d689756a96
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "46552673"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "46577788"
 ---
 # <a name="mail-flow-insights-in-the-security--compliance-center"></a>Informations sur le flux de messagerie dans le centre de sécurité et conformité
 
 Les administrateurs peuvent utiliser le tableau de bord de flux de messagerie dans le centre de sécurité & conformité pour découvrir des tendances, des informations et prendre des mesures pour résoudre les problèmes liés au flux de messagerie au sein de leur organisation.
 
-Les informations, les rapports et les widgets disponibles dans le tableau de bord du flux de messagerie sont les suivants :
+![Tableau de bord de flux de messagerie dans le centre de sécurité & conformité](../../media/mail-flow-dashboard-v2.png)
 
-- [Rapport carte de flux de courrier](mfi-mail-flow-map-report.md)
+Les informations disponibles sont les suivantes :
 
-- [Aperçu de l’état du flux de messagerie du domaine](mfi-domain-mail-flow-status-insight.md)
+- [Aperçu des messages transmis automatiquement](mfi-auto-forwarded-messages-report.md)
 
-- [Rapport de clients d’authentification SMTP](mfi-smtp-auth-clients-report.md)
+- [Correction possible de mail Loop Insight](mfi-mail-loop-insight.md)<sup>1</sup>
 
-- [Aperçu de domaine de l’expéditeur](mfi-sender-domain-insight.md)
+- [Corriger le ralentissement des règles de flux de messagerie Insight](mfi-slow-mail-flow-rules-insight.md)<sup>1</sup>
 
-- [Rapport de non-remise](mfi-non-delivery-report.md)
+- [Carte de flux de messagerie](mfi-mail-flow-map-report.md)
+
+- [Nouveaux domaines transmis par email Insight](mfi-new-domains-being-forwarded-email.md)<sup>2</sup>
+
+- [Nouveaux utilisateurs transfert de courriers électroniques Insight](mfi-new-users-forwarding-email.md)<sup>2</sup>
 
 - [Rapport de domaine non accepté](mfi-non-accepted-domain-report.md)
 
-- [Flux de courrier entrant et sortant](mfi-outbound-and-inbound-mail-flow.md)
+- [Rapport de non-remise](mfi-non-delivery-report.md)
 
-- [Alertes de files d’attente et files d’attente](mfi-queue-alerts-and-queues.md)
+- [Aperçu du flux de messagerie sortant et entrant](mfi-outbound-and-inbound-mail-flow.md)
 
-- [Rapport des messages transférés automatiquement](mfi-auto-forwarded-messages-report.md)
+- [Vue d’attente](mfi-queue-alerts-and-queues.md)
 
-- [Informations sur les boucles de courrier](mfi-mail-loop-insight.md)
+- [Aperçu et rapport des clients d’authentification SMTP](mfi-smtp-auth-clients-report.md)
 
-- [Informations sur les règles de flux de messagerie lent](mfi-slow-mail-flow-rules-insight.md)
+- [Informations sur l’état du flux de courrier des principaux domaines](mfi-domain-mail-flow-status-insight.md)
+
+<sup>1</sup> cette vue s’affiche dans la zone **recommandé pour vous** du tableau de bord du flux de messagerie uniquement une fois que le problème a été détecté. Dans le cas contraire, vous ne le verrez pas.
+
+<sup>2</sup> cette vue n’apparaît pas sur le tableau de bord de flux de messagerie, mais sur la page [rapport de transfert](view-mail-flow-reports.md#forwarding-report) une fois que le problème est détecté. Dans le cas contraire, vous ne le verrez pas.
 
 ## <a name="permissions-required-to-view-the-mail-flow-dashboard"></a>Autorisations requises pour afficher le tableau de bord de flux de messagerie
 
-Le tableau de bord de flux de messagerie est disponible pour :
+Le tableau de bord de flux de messagerie est accessible aux membres des groupes d’itinéraires suivants :
 
-- Membres du rôle d' **administrateur général** .
+- **Gestion** de l’organisation dans le centre de sécurité & conformité (administrateurs globaux).
 
-- Membres du rôle **administrateur Exchange** .
+- **[Administrateur Exchange](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#exchange-administrator)** dans Azure ad.
 
-- Membres du **rôle administrateur de flux de messagerie** dans le centre de sécurité & conformité. Si ce rôle est attribué de manière explicite à un utilisateur qui n’est pas membre des rôles administrateur général ou administrateur Exchange :
+- **Administrateur de flux** de service dans le centre de sécurité & conformité : si un membre de ce groupe de rôles n’est pas également membre des groupes de rôles administrateur général ou administrateur Exchange, notez les problèmes et exigences suivants :
 
   - L’utilisateur doit se connecter au centre de sécurité & conformité directement à l’adresse <https://protection.office.com> .
-
   - L’utilisateur disposera uniquement de l’autorisation lecture seule sur le tableau de bord du flux de messagerie.
-
   - L’utilisateur n’a pas accès au centre d’administration Microsoft 365.
 
-Pour plus d’informations sur le rôle d’administrateur général, voir [à propos des rôles d’administrateur Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
-
-Pour plus d’informations sur l’attribution de rôles de centre de sécurité & de conformité aux utilisateurs, consultez [la rubrique accorder aux utilisateurs l’accès au centre de sécurité & conformité](grant-access-to-the-security-and-compliance-center.md).
+Pour plus d’informations sur les autorisations dans le centre de sécurité & conformité, consultez [la rubrique autorisations dans le centre de sécurité & Compliance Center](permissions-in-the-security-and-compliance-center.md) et [accordez aux utilisateurs l’accès au centre de conformité & Security](grant-access-to-the-security-and-compliance-center.md).
 
 ## <a name="where-to-find-the-mail-flow-dashboard"></a>Où trouver le tableau de bord de flux de messagerie ?
 
-1. Accédez au centre de sécurité & conformité à l’adresse [https://protection.office.com](https://protection.office.com) .
+Ouvrez le centre de sécurité & conformité à l’adresse <https://protection.office.com> , développez **flux de messagerie**, puis sélectionnez **tableau de bord**.
 
-2. Développez **flux de messagerie** , puis sélectionnez **tableau de bord**.
-
-   ![Tableau de bord de flux de messagerie dans le centre de sécurité & conformité](../../media/mail-flow-dashboard-v2.png)
+Pour accéder directement au tableau de bord du flux de messagerie, ouvrez <https://protection.office.com/mailflow/dashboard> .

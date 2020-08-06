@@ -1,5 +1,5 @@
 ---
-title: Informations sur les boucles de courrier
+title: Corriger les éventuelles indications de boucle de messagerie
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -12,24 +12,32 @@ localization_priority: Normal
 ms.assetid: cb801985-3c89-4979-9c18-17829a4cb563
 ms.custom:
 - seo-marvel-apr2020
-description: Les administrateurs peuvent en savoir plus sur la vue de boucle de courrier dans le tableau de bord de flux de messagerie dans le centre de sécurité & conformité.
-ms.openlocfilehash: 80767a265734c542db8e24cf58d0a1c0df469780
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+description: Les administrateurs peuvent apprendre à utiliser la fonction de résolution des problèmes possibles dans le tableau de bord de flux de messagerie dans le centre de sécurité & Compliance pour identifier et corriger les boucles de messagerie au sein de leur organisation.
+ms.openlocfilehash: 54240cffc534b4be708492b37b827636edab280e
+ms.sourcegitcommit: c04f1207cfaddac2a9abef38967c17d689756a96
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44819315"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "46577621"
 ---
-# <a name="mail-loop-insight"></a>Informations sur les boucles de courrier
+# <a name="fix-possible-mail-loop-insight-in-the-security--compliance-center"></a>Corriger les éventuelles boucles de courrier dans le centre de sécurité & conformité
 
-Une boucle de courrier est incorrecte car elle gaspille des ressources système, consomme le quota de volume de courrier de votre organisation et envoie des notifications d’échec de remise confuses (également appelées notifications de non-remise) aux expéditeurs d’origine. Cet aperçu indique quand une boucle de courrier est trouvée dans votre organisation, les domaines de messagerie impliqués dans la boucle et le nombre de messages de la journée précédente qui se trouvaient dans la boucle.
+Une boucle de courrier est incorrecte car elle gaspille des ressources système, consomme le quota de volume de courrier de votre organisation et envoie des notifications d’échec de remise confuses (également appelées notifications de non-remise) aux expéditeurs d’origine.
 
-![Vue de boucle de courrier dans le tableau de bord de flux de messagerie dans le centre de sécurité & conformité](../../media/c3f707cb-4c89-4e88-989c-81ce1d1d6b99.png)
+La **fonctionnalité corriger la boucle de courrier possible** dans la zone **recommandé pour vous** du [tableau de bord de flux de messagerie](mail-flow-insights-v2.md) dans le centre de sécurité & conformité vous avertit lorsqu’une boucle de courrier est détectée dans votre organisation. Cette vue ne s’affiche qu’une fois la condition détectée (si vous n’avez pas de boucles de courrier, vous ne verrez pas la vue d’ensemble).
 
-Vous pouvez cliquer sur **afficher les détails** pour afficher les détails dans un volet flyout. Nous allons également identifier les scénarios de boucle les plus courants et fournir les actions recommandées (le cas échéant) pour corriger la boucle.
+![Réparer le ralentissement des règles de flux de messagerie dans la zone recommandé pour vous du tableau de bord flux de messagerie](../../media/mfi-fix-possible-mail-loop.png)
 
-![Volet flyout après avoir cliqué sur Afficher les détails dans un aperçu de boucle inappropriée dans le tableau de bord de flux de messagerie](../../media/f7e21300-c62f-41ec-853f-4a2775cd8aa7.png)
+Lorsque vous cliquez sur **afficher les détails** dans le widget, un lanceur apparaît avec davantage d’informations :
 
-## <a name="related-topics"></a>Voir aussi
+- **Domaine**
+- **Nombre de messages**: vous pouvez cliquer sur **afficher les exemples de messages** pour afficher les résultats du [suivi](message-trace-scc.md) des messages pour un exemple de messages qui ont été affectés par la boucle.
+- **Type de domaine**«par exemple, faisant autorité ou ne faisant pas autorité.
+- **Enregistrement MX**: l’hôte (**serveur de messagerie**) et les valeurs de **priorité** de l’enregistrement MX pour le domaine.
+- **Raison** de la boucle et **Comment résoudre**: nous allons essayer d’identifier les scénarios de boucle de courrier les plus courants et de fournir les actions recommandées (le cas échéant) pour corriger la boucle.
 
-Pour plus d’informations sur les autres flux de messagerie dans le tableau de bord de flux de messagerie, voir [mail Flow Insights in the Security & Compliance Center](mail-flow-insights-v2.md).
+![Fenêtre volante de détails qui apparaît après avoir cliqué sur Afficher les détails dans la boîte de message de correction possible](../../media/mfi-fix-possible-mail-loop-details.png)
+
+## <a name="related-topics"></a>Sujets associés
+
+Pour plus d’informations sur les autres informations du tableau de bord de flux de messagerie, consultez [la rubrique mail Flow Insights in the Security & Compliance Center](mail-flow-insights-v2.md).

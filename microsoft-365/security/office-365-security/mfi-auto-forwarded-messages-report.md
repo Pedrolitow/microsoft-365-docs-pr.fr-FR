@@ -1,5 +1,5 @@
 ---
-title: Rapport des messages transférés automatiquement
+title: Aperçu des messages transmis automatiquement
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -11,31 +11,47 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: b5543faa-44fa-44c5-8180-fb835e7e452d
 description: Les administrateurs peuvent en savoir plus sur le rapport de messages transférés automatiquement dans le tableau de bord de flux de messagerie dans le centre de sécurité & conformité.
-ms.openlocfilehash: ceeff0c6033cb2610c09a80ddbddcda90ff63b05
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 05e3f62610c32bc95caf579ef4dd46bf1ed90275
+ms.sourcegitcommit: c04f1207cfaddac2a9abef38967c17d689756a96
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635303"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "46577813"
 ---
-# <a name="auto-forwarded-messages-report"></a>Rapport des messages transférés automatiquement
+# <a name="auto-forwarded-messages-insight-in-the-security--compliance-center"></a>Aperçu des messages transmis automatiquement dans le centre de sécurité & conformité
 
-Le rapport de **messages transférés** automatiquement dans le tableau de bord du flux de messagerie affiche des informations sur les messages qui sont automatiquement transférés de votre organisation vers les destinataires des domaines externes.
+La vue **messages transmis automatiquement** dans le [tableau de bord de flux de messagerie](mail-flow-insights-v2.md) dans le centre de sécurité & conformité affiche des informations sur les messages qui sont automatiquement transférés de votre organisation à des destinataires dans des domaines externes.
 
-![Aperçu des messages transmis automatiquement dans le centre de sécurité & conformité](../../media/8bc2600b-71c3-4b37-b4d0-9435fe0cfc8d.png)
-
-![Rapport de messages transférés automatiquement dans le tableau de bord de flux de messagerie dans le centre de sécurité & conformité](../../media/8bc2600b-71c3-4b37-b4d0-9435fe0cfc8d.png)
+![Widget messages transférés automatiquement dans le centre de sécurité & conformité](../../media/mfi-auto-forwarded-messages.png)
 
 ## <a name="auto-forwarded-messages-details"></a>Détails des messages transférés automatiquement
 
-Lorsque vous cliquez sur le nombre de messages dans le widget, un volet flyout s’affiche et indique l’état du message transféré automatiquement. Vous pouvez afficher les détails en cliquant sur le lien **rapport de transfert** .
+Lorsque vous cliquez sur le nombre de messages dans le widget, un volet flyout apparaît et affiche des informations supplémentaires sur les messages transférés automatiquement :
 
-![Menu volant des détails pour le rapport de messages transférés automatiquement dans le centre de sécurité & conformité](../../media/87d0fb1e-d2ef-4901-b17c-ec32d23a539e.png)
+- **Messages transférés automatiquement par les méthodes de transfert**:
+
+  - **Par les règles de flux de messagerie**
+  - **Par les règles de boîte de réception**
+  - **Par le transfert SMTP**
+  - Un lien vers le [rapport de transfert](view-mail-flow-reports.md#forwarding-report) pour plus de détails.
+
+- **Messages transférés automatiquement par les domaines et les utilisateurs**:
+
+  - **5 principaux domaines transférés vers**
+  - **Nouveaux domaines (semaine dernière)**
+  - **Les 5 principaux utilisateurs de transfert**
+  - **Nouveaux utilisateurs (semaine dernière)**
+  - Un lien vers le [rapport des modifications de transfert](mfi-new-users-forwarding-email.md#forwarding-modifications-report) pour plus de détails.
+
+![Fenêtre mobile des détails pour le rapport de messages transférés automatiquement dans le centre de sécurité & conformité](../../media/mfi-auto-forwarded-messages-details.png)
 
 ## <a name="insights"></a>Informations
 
-Deux informations sont générées en fonction des données de rapport : **les nouveaux utilisateurs de transfert et les** **nouveaux domaines de transfert**. Chaque vue fournit un résumé du nombre de nouveaux redirecteurs ou de domaines avec un lien vers le **nouveau rapport de transfert** qui fournit plus de détails pour les deux types de données. Le **nouveau rapport de transfert** affiche également un affichage chronologie de la nouvelle activité et le tableau des détails identifie qui a démarré le transfert et vers quels domaines.
+Deux analyses sont générées en fonction des données de rapport :
 
-## <a name="see-also"></a>Voir également
+- [Nouveaux utilisateurs transférant le courrier électronique](mfi-new-users-forwarding-email.md)
+- [Nouveaux domaines en cours de transmission de courrier électronique](mfi-new-domains-being-forwarded-email.md)
 
-Pour plus d’informations sur les autres flux de messagerie dans le tableau de bord de flux de messagerie, voir [mail Flow Insights in the Security & Compliance Center](mail-flow-insights-v2.md).
+## <a name="see-also"></a>Voir aussi
+
+Pour plus d’informations sur les autres informations du tableau de bord de flux de messagerie, consultez [la rubrique mail Flow Insights in the Security & Compliance Center](mail-flow-insights-v2.md).

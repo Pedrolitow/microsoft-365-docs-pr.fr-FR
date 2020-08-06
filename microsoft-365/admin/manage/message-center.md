@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 38fb3333-bfcc-4340-a37b-deda509c2093
 description: Obtenez une vue d’ensemble du centre de messages Microsoft 365 et de son rôle dans la gestion des modifications.
-ms.openlocfilehash: f4d99bedaab6efb4dfeccf7610e54bb5f8effeb7
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+ms.openlocfilehash: cec60a7ae5df1af01625f8feef84ff258d798659
+ms.sourcegitcommit: 48f3c002678906189bfba079bbf055d67d08a60f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44780084"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "46564024"
 ---
 # <a name="message-center"></a>Centre de messages
 
@@ -178,3 +178,9 @@ Nous utilisons la traduction automatique pour afficher automatiquement les messa
 - Administrateur du service Intune
 - Administrateur de rôle privilégié
 - Lecteur de rapports
+
+## <a name="unsubscribe-from-message-center-emails"></a>Annuler l’abonnement aux courriers électroniques du centre de messages
+
+1. Les e-mails de résumé sont activés par défaut et sont envoyés à votre adresse de messagerie principale. Pour ne plus recevoir le chiffrement hebdomadaire, modifiez le paramètre **Envoyer un Digest hebdomadaire des mes messages** à **désactivé**. <br/><br/>La notification par courrier électronique pour les mises à jour majeures est un contrôle distinct. Si vous ne souhaitez pas recevoir de notifications par courrier électronique sur les mises à jour majeures, vérifiez que l’e-mail **m’envoyer des courriers électroniques pour les mises à jour majeures** est **désactivé**.  <br/><br/>Pour cesser de recevoir des notifications par courrier électronique concernant les messages de confidentialité des données, vérifiez que l’e-mail **m’envoyer des courriers électroniques aux messages de confidentialité des données** est **désactivé**.  (Les messages de confidentialité des données ne sont pas inclus dans le résumé hebdomadaire.)<br/><br/>
+
+2. Sélectionnez **Enregistrer** pour conserver vos modifications.<br/>

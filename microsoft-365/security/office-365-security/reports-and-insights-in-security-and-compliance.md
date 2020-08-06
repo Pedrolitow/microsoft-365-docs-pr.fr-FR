@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Découvrez les rapports intelligents et les informations disponibles dans le centre de sécurité & conformité, ainsi que la façon de les utiliser pour afficher et explorer les données et prendre des mesures rapides.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 407fee494b0fbb93b76e669c150e20136064454b
-ms.sourcegitcommit: 50526f81ce3f57d58f0a7c0df4fe21685c5a0236
+ms.openlocfilehash: 1f38ed081ce73af737b58a38692ac2fa0519972d
+ms.sourcegitcommit: c04f1207cfaddac2a9abef38967c17d689756a96
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45434310"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "46577185"
 ---
 # <a name="smart-reports-and-insights-in-the-security--compliance-center"></a>Rapports intelligents et aperçus dans le centre de sécurité et conformité
 
@@ -41,7 +41,7 @@ En plus de mettre en surbrillance les zones problématiques, les rapports intell
 
 Un grand nombre de rapports sont disponibles dans le centre de conformité & sécurité. (Accéder aux **rapports** \> **Tableau de bord** pour obtenir une vue d’ensemble. Le tableau suivant répertorie les rapports disponibles avec des liens pour en savoir plus :
   
-|**Type d'information**|**Comment y accéder**|**Où aller pour en savoir plus**|
+|Type d’information|Comment y accéder|Où aller pour en savoir plus|
 |---|---|---|
 |**Rapports du centre de sécurité & conformité** (tout)  <br/> Premières informations et recommandations, ainsi que des liens vers des rapports de sécurité &, notamment des rapports de protection contre la perte de données, des étiquettes, des rapports de sécurité de messagerie électronique, des rapports de protection avancée contre les menaces, etc.|Dans le centre de sécurité & conformité, accédez à **rapports** \> **Dashboard**|[Surveillance et affichage des rapports dans le centre de sécurité Microsoft 365](../mtp/monitoring-and-reporting.md)|
 |**Protection contre la perte de données** <br/> Détection grâce aux politiques de prévention des pertes de données, faux positifs et dérogations, et liens pour créer ou modifier des politiques.|Dans le centre de sécurité & conformité, accédez à stratégie de **protection contre la perte de données** \> **Policy**|[Afficher les rapports pour la protection contre la perte de données](../../compliance/view-the-dlp-reports.md)|
@@ -54,7 +54,7 @@ Un grand nombre de rapports sont disponibles dans le centre de conformité & sé
 |**Journal d’audit** <br/> Informations sur les activités Microsoft 365, les utilisateurs, les fichiers ou les dossiers, etc.|Dans le centre de sécurité & conformité, accédez à recherche **& enquête** \> **audit log Search**|[Effectuer des recherches dans le journal d’audit depuis le Centre de sécurité et conformité](../../compliance/search-the-audit-log-in-security-and-compliance.md)|
 |**Rapports de conformité** <br/> Rapports FedRAMP, rapports sur la gouvernance, sur les risques et sur la conformité, rapports de gestion de la sécurité de l'information ISO et rapports d'audit et d'évaluation des contrôles de la société de services.|Dans le centre de sécurité & conformité, accédez **Service assurance** à \> **rapports de conformité de la** garantie de service.|[Planifier la sécurité & conformité dans Office 365](../../compliance/plan-for-security-and-compliance.md)|
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Sujets associés
 
 [Surveillance et affichage des rapports dans le centre de sécurité Microsoft 365](../mtp/monitoring-and-reporting.md)
   

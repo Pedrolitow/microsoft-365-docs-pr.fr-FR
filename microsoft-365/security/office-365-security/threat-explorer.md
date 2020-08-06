@@ -17,18 +17,18 @@ ms.collection:
 - M365-security-compliance
 description: Découvrez comment utiliser l’Explorateur et les détections en temps réel dans le centre de sécurité &amp; conformité pour examiner et répondre efficacement aux menaces.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: cf932db30feb3210b8980b95e666972cd3436dd0
-ms.sourcegitcommit: 9ee1261c405f82b49c62390a25dfdea23340d644
+ms.openlocfilehash: 42cb7d2ef4fd04875c4bedc5f783e87cc99c13f5
+ms.sourcegitcommit: c04f1207cfaddac2a9abef38967c17d689756a96
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2020
-ms.locfileid: "45039523"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "46577526"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>Explorateur de menaces et détections en temps réel
 
 Si votre organisation dispose d' [office 365 Advanced Threat Protection](office-365-atp.md) (Office 365 ATP) et que vous disposez des [autorisations nécessaires](#required-licenses-and-permissions), vous disposez de l' **Explorateur** ou des **détections en temps réel** (auparavant des *rapports en temps réel* ). [see what's new](#new-features-in-threat-explorer-and-real-time-detections) Dans le centre de sécurité & conformité, accédez à **gestion des menaces**, puis choisissez **Explorateur** _ou_ **détections en temps réel**.
 
-| Avec le plan ATP 2, vous pouvez voir : | Avec le plan ATP 1, vous pouvez voir : |
+|Avec le plan ATP 2, vous pouvez voir :|Avec le plan ATP 1, vous pouvez voir :|
 |---|---|
 |![Explorateur de menaces](../../media/threatmgmt-explorer.png)|![Détections en temps réel](../../media/threatmgmt-realtimedetections.png)|
 |
@@ -46,37 +46,37 @@ Ce rapport vous permet d’utiliser les actions suivantes :
 
 ## <a name="experience-improvements-to-threat-explorer-and-real-time-detections"></a>Amélioration de l’Explorateur de menaces et des détections en temps réel
 
-Dans le cadre de l’amélioration du processus de recherche, nous avons mis à disposition quelques mises à jour de l’Explorateur de menaces et des détections en temps réel. Il s’agit des améliorations apportées à l’expérience, qui ont pour objectif de rendre l’expérience de la chasse plus cohérente. Ces modifications sont décrites ci-dessous : 
+Dans le cadre de l’amélioration du processus de recherche, nous avons mis à disposition quelques mises à jour de l’Explorateur de menaces et des détections en temps réel. Il s’agit des améliorations apportées à l’expérience, qui ont pour objectif de rendre l’expérience de la chasse plus cohérente. Ces modifications sont décrites ci-dessous :
 
 - [Améliorations des fuseaux horaires](#timezone-improvements)
 - [Mise à jour dans le processus d’actualisation](#update-in-the-refresh-process)
 - [Descente de graphique à ajouter aux filtres](#chart-drilldown-to-add-to-filters)
 - [Mises à jour des informations sur les produits](#in-product-information-updates)
 
-### <a name="timezone-improvements"></a>Améliorations des fuseaux horaires 
+### <a name="timezone-improvements"></a>Améliorations des fuseaux horaires
 
-Nous affichons le fuseau horaire pour les enregistrements de courrier électronique dans le portail, ainsi que pour les données exportées. Le fuseau horaire est visible sur plusieurs expériences, comme la grille de courrier électronique, la fenêtre de détail des détails, la chronologie par courrier électronique et des E-mails similaires, de sorte que le fuseau horaire du jeu de résultats soit clair pour l’utilisateur. 
+Nous affichons le fuseau horaire pour les enregistrements de courrier électronique dans le portail, ainsi que pour les données exportées. Le fuseau horaire est visible sur plusieurs expériences, comme la grille de courrier électronique, la fenêtre de détail des détails, la chronologie par courrier électronique et des E-mails similaires, de sorte que le fuseau horaire du jeu de résultats soit clair pour l’utilisateur.
 
-![Afficher le fuseau horaire dans l’Explorateur](../media/TimezoneImprovements.png)
+![Afficher le fuseau horaire dans l’Explorateur](../../media/TimezoneImprovements.png)
 
-### <a name="update-in-the-refresh-process"></a>Mise à jour dans le processus d’actualisation 
+### <a name="update-in-the-refresh-process"></a>Mise à jour dans le processus d’actualisation
 
 Nous avons entendu des commentaires sur la confusion grâce à l’actualisation automatique (par exemple, en ce qui concerne les dates, dès que vous modifiez la date, la page est actualisée) et l’actualisation manuelle (pour les autres filtres). De même, la suppression des filtres entraîne une actualisation automatique, ce qui entraîne des situations dans lesquelles la modification des différents filtres lors de la modification de la requête peut entraîner des expériences de recherche incohérentes. Pour résoudre ce mouvement, nous passons à un mécanisme de filtrage manuel.
-Du point de vue de l’expérience, l’utilisateur peut appliquer et supprimer la plage de filtres différente (à partir du jeu de filtres et de la date), puis appuyer sur le bouton Actualiser pour filtrer les résultats une fois qu’ils ont fini de définir la requête. Le bouton d’actualisation a également été mis à jour pour l’appeler clairement à l’écran. Nous avons également mis à jour les info-bulles et la documentation du produit concernant cette modification. 
+Du point de vue de l’expérience, l’utilisateur peut appliquer et supprimer la plage de filtres différente (à partir du jeu de filtres et de la date), puis appuyer sur le bouton Actualiser pour filtrer les résultats une fois qu’ils ont fini de définir la requête. Le bouton d’actualisation a également été mis à jour pour l’appeler clairement à l’écran. Nous avons également mis à jour les info-bulles et la documentation du produit concernant cette modification.
 
-![Cliquez sur Actualiser pour filtrer les résultats](../media/ManualRefresh.png)
+![Cliquez sur Actualiser pour filtrer les résultats](../../media/ManualRefresh.png)
 
 ### <a name="chart-drilldown-to-add-to-filters"></a>Descente de graphique à ajouter aux filtres
 
 Vous pouvez désormais cliquer sur les valeurs de légende du graphique pour ajouter cette valeur en tant que filtre. Notez que vous devrez toujours cliquer sur le bouton Actualiser pour filtrer les résultats dans le cadre de la modification décrite ci-dessus.
 
-![Faire défiler les graphiques vers le filtre](../media/ChartDrilldown.png)
+![Faire défiler les graphiques vers le filtre](../../media/ChartDrilldown.png)
 
-### <a name="in-product-information-updates"></a>Mises à jour des informations sur les produits 
+### <a name="in-product-information-updates"></a>Mises à jour des informations sur les produits
 
-Vous devez également consulter des détails supplémentaires dans le produit. Par exemple, le nombre total de résultats de recherche dans la grille (voir ci-dessous), ainsi que des améliorations concernant les étiquettes, les messages d’erreur et les info-bulles, pour fournir davantage d’informations sur les filtres, l’expérience de recherche et le jeu de résultats. 
+Vous devez également consulter des détails supplémentaires dans le produit. Par exemple, le nombre total de résultats de recherche dans la grille (voir ci-dessous), ainsi que des améliorations concernant les étiquettes, les messages d’erreur et les info-bulles, pour fournir davantage d’informations sur les filtres, l’expérience de recherche et le jeu de résultats.
 
-![Afficher les informations dans le produit](../media/ProductInfo.png)
+![Afficher les informations dans le produit](../../media/ProductInfo.png)
 
 
 ## <a name="new-features-in-real-time-detections"></a>Nouvelles fonctionnalités dans les détections en temps réel
@@ -104,19 +104,18 @@ Comment cela est-il fait ? L’état de remise est désormais divisé en deux c
 
 L’action de remise est l’action entreprise sur un courrier électronique en raison de stratégies ou de détections existantes. Voici les actions possibles qu’un courrier électronique peut effectuer :
 
-|Cmds  |Courrier indésirable  |Blocked  |Été  |
-|---------|---------|---------|---------|
-|Le courrier électronique a été remis à la boîte de réception ou au dossier d’un utilisateur et l’utilisateur peut y accéder directement.    | Le courrier électronique a été envoyé vers le dossier de courrier indésirable de l’utilisateur ou le dossier de suppression, et l’utilisateur a accès aux courriers électroniques dans ces dossiers.       | Tous les messages électroniques mis en quarantaine, qui ont échoué ou qui ont été supprimés. Cette inaccessibilité est entièrement inaccessible par l’utilisateur.     | Tout courrier électronique où des pièces jointes malveillantes sont remplacées par des fichiers. txt qui indiquent que la pièce jointe était malveillante.     |
-    
-
-| Cmds | Courrier indésirable | Blocked | Été |
+|Cmds|Courrier indésirable|Blocked|Été|
 |---|---|---|---|
-|Le courrier électronique a été remis dans la boîte de réception de l’utilisateur ou dans un autre dossier, et l’utilisateur peut y accéder directement.| Le courrier électronique a été envoyé au dossier de courrier indésirable de l’utilisateur ou au dossier supprimé, et l’utilisateur a accès aux messages électroniques de ces dossiers.| Tous les messages électroniques mis en quarantaine, qui ont échoué ou qui ont été supprimés, et qui ne sont pas accessibles par l’utilisateur.| Tous les messages électroniques pour lesquels des pièces jointes malveillantes ont été remplacées par des fichiers. txt qui indiquent que les pièces jointes étaient malveillantes.|
+|Le courrier électronique a été remis à la boîte de réception ou au dossier d’un utilisateur et l’utilisateur peut y accéder directement.|Le courrier électronique a été envoyé vers le dossier de courrier indésirable de l’utilisateur ou le dossier de suppression, et l’utilisateur a accès aux courriers électroniques dans ces dossiers.|Tous les messages électroniques mis en quarantaine, qui ont échoué ou qui ont été supprimés. Cette inaccessibilité est entièrement inaccessible par l’utilisateur.|Tout courrier électronique où des pièces jointes malveillantes sont remplacées par des fichiers. txt qui indiquent que la pièce jointe était malveillante.|
+
+|Cmds|Courrier indésirable|Blocked|Été|
+|---|---|---|---|
+|Le courrier électronique a été remis dans la boîte de réception de l’utilisateur ou dans un autre dossier, et l’utilisateur peut y accéder directement.|Le courrier électronique a été envoyé au dossier de courrier indésirable de l’utilisateur ou au dossier supprimé, et l’utilisateur a accès aux messages électroniques de ces dossiers.|Tous les messages électroniques mis en quarantaine, qui ont échoué ou qui ont été supprimés, et qui ne sont pas accessibles par l’utilisateur.|Tous les messages électroniques pour lesquels des pièces jointes malveillantes ont été remplacées par des fichiers. txt qui indiquent que les pièces jointes étaient malveillantes.|
 |
 
 Et voici ce que l’utilisateur peut voir, et ce qu’il ne peut pas faire :
 
-| Accessible aux utilisateurs finaux | Inaccessible aux utilisateurs finaux |
+|Accessible aux utilisateurs finaux|Inaccessible aux utilisateurs finaux|
 |---|---|
 |Cmds|Blocked|
 |Courrier indésirable|Été|
@@ -205,7 +204,7 @@ Pour consulter les URL de hameçonnage dans les messages et les clics sur les UR
    ![URL de l’Explorateur bloquées](../../media/ExplorerPhishClickVerdictURLs.png)
 
    Sélectionnez une URL pour afficher des informations plus détaillées.
-   
+
    > [!NOTE]
    > Dans la boîte de dialogue de menu volant d’URL, le filtrage sur les messages électroniques est supprimé pour vous montrer l’affichage complet de l’exposition de l’URL dans votre environnement. Cela vous permet de filtrer les messages électroniques dans l’Explorateur sur ceux qui vous intéressent, de rechercher des URL spécifiques qui constituent des menaces potentielles, puis de mieux comprendre l’exposition de l’URL dans votre environnement (via la boîte de dialogue détails de l’URL) sans avoir à ajouter de filtres d’URL à l’affichage Explorateur lui-même.
 
