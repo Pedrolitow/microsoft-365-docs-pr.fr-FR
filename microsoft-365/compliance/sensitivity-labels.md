@@ -20,12 +20,12 @@ description: Utilisez les étiquettes de confidentialité de Microsoft informati
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 2943de329bd42aca64d9d3d583b7f6c354780d0d
-ms.sourcegitcommit: 89178b8f20d59ca88cfca303a13062b91fbeae9d
+ms.openlocfilehash: 55f3f9a37d8ce51c263c3b83cf31d838204c285a
+ms.sourcegitcommit: 48f3c002678906189bfba079bbf055d67d08a60f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "46552696"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "46564045"
 ---
 # <a name="learn-about-sensitivity-labels"></a>En savoir plus sur les étiquettes de niveau de confidentialité
 
@@ -39,9 +39,12 @@ Exemple montrant les étiquettes de confidentialité disponibles dans Excel à p
 
 ![Étiquette de confidentialité dans le ruban Excel et sur la barre d’état](../media/Sensitivity-label-in-Excel.png)
 
-Les étiquettes de confidentialité sont prises en charge pour les clients du cloud global (public) seulement. Les étiquettes de confidentialité ne sont actuellement pas prises en charge pour les clients des autres clouds, tels que les [clouds nationaux](https://docs.microsoft.com/azure/active-directory/develop/authentication-national-cloud).
+Pour appliquer des étiquettes de confidentialité, les utilisateurs doivent être connectés avec leur compte Microsoft 365 professionnel ou scolaire.
 
-Pour appliquer des étiquettes de confidentialité, les utilisateurs doivent être connectés à Office avec leur compte professionnel ou scolaire.
+> [!NOTE]
+> Pour les clients de la communauté du secteur public des États-Unis (GCC et GCC-HC), les étiquettes de confidentialité ne sont actuellement prises en charge que pour le client et l’analyseur d’étiquetage unifié d’Azure Information Protection. 
+> 
+> Si vous souhaitez obtenir plus d’informations, voir le billet de blog, [Annonce de la mise à disposition générale de l’étiquetage unifié dans les environnements GCC et GCC-H](https://techcommunity.microsoft.com/t5/azure-information-protection/announcing-general-availability-of-unified-labeling-in-gcc-and/ba-p/1563215).
 
 Vous pouvez utiliser les étiquettes de niveau de confidentialité aux fins suivantes :
   

@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: "Une exigence pour l'ensemble des solutions Microsoft Information Protection : créer, configurer et publier des étiquettes de confidentialité afin de classer et protéger les documents et messages électroniques de votre organisation."
-ms.openlocfilehash: 61f6a27172e97cdc3f7890b813a9e2f67a8d3d9a
-ms.sourcegitcommit: a08103bc120bdec7cfeaf67c1be4e221241e69ad
+ms.openlocfilehash: 77d0f99a3e35a62b001395d7491f45d84e95cbd3
+ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "45200026"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46560509"
 ---
 # <a name="create-and-configure-sensitivity-labels-and-their-policies"></a>Créer et configurer des étiquettes de confidentialité et leurs stratégies.
 
@@ -89,9 +89,15 @@ Les étiquettes sont disponibles dans des applications ou des services après le
 
 D’autres paramètres d’étiquette sont disponibles dans l’applet de commande [Set-Label](https://docs.microsoft.com/powershell/module/exchange/set-label?view=exchange-ps) depuis le [Centre de sécurité et conformité PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/office-365-scc-powershell?view=exchange-ps).
 
-Utilisez le paramètre *LocaleSettings* pour des déploiements internationaux pour que les utilisateurs voient le nom de l’étiquette et l’info-bulle dans leur langue locale. Reportez-vous à la section suivante pour consulter un exemple de configuration. 
+Par exemple :
 
-L'utilisation de cette applet de commande vous permet également de spécifier des [paramètres avancés](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide-customizations) pour le client de l'étiquetage unifié Azure Information Protection. Ces paramètres avancés incluent le paramètre de couleur d’étiquette et l’application d’une propriété personnalisée lorsqu’une étiquette est appliquée. Pour obtenir la liste complète, voir [Paramètres avancés disponibles pour les stratégies d’étiquette](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide-customizations#available-advanced-settings-for-label-policies). 
+- Utilisez le paramètre *LocaleSettings* pour des déploiements internationaux pour que les utilisateurs voient le nom de l’étiquette et l’info-bulle dans leur langue locale. La [section suivante](#example-configuration-to-configure-a-sensitivity-label-for-different-languages) présente un exemple de configuration qui spécifie le nom de l’étiquette et le texte d’info-bulle pour le français, l’italien et l’allemand.
+
+- Utilisez le paramètre *ApplyContentMarkingFooterFontName* afin de spécifier votre choix de police pour le pied de page spécifié. Calibri est la police par défaut pour les en-têtes, les pieds de page et le texte de filigrane. Si le nom de la police de remplacement n’est pas disponible pour le service ou l’appareil qui affiche les étiquettes, la police utilisée est Calibri.
+
+- Utilisez le paramètre *ApplyContentMarkingHeaderFontColor* afin de spécifier votre choix de couleur personnalisée pour l’en-tête indiqué, à l’aide d’un code hexadécimal pour les composants rouge, vert et bleu (RVB). Par exemple, #40e0d0 est la valeur hexadécimale RVB pour la couleur turquoise. Vous trouverez ces codes dans plusieurs applications qui vous permettent de modifier des images. Par exemple, Microsoft Paint vous permet de choisir une couleur personnalisée dans une palette et les valeurs RVB s’affichent automatiquement. Vous pouvez ensuite les copier.
+
+Pour le client d’étiquetage unifié Azure Information Protection uniquement, vous pouvez également spécifier des [paramètres avancés](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide-customizations) qui incluent la définition d’une couleur d’étiquette et l’application d’une propriété personnalisée lorsqu’une étiquette est appliquée. Pour obtenir la liste complète, voir [Paramètres avancés disponibles pour les étiquettes](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide-customizations#available-advanced-settings-for-labels) depuis le guide d’administration de ce client.
 
 #### <a name="example-configuration-to-configure-a-sensitivity-label-for-different-languages"></a>Exemple de configuration d'une étiquette de confidentialité dans différentes langues
 
@@ -172,11 +178,22 @@ Les utilisateurs voient les nouvelles étiquettes dans leurs applications Office
 
 ### <a name="additional-label-policy-settings-with-security--compliance-center-powershell"></a>Paramètres de stratégie d’étiquette supplémentaires dans le Centre de sécurité et conformité PowerShell
 
-Des paramètres de stratégie d’étiquette supplémentaires sont disponibles dans l’applet de commande [Set-Label](https://docs.microsoft.com/powershell/module/exchange/set-label?view=exchange-ps) depuis le [Centre de sécurité et conformité PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/office-365-scc-powershell?view=exchange-ps).
+Des paramètres de stratégie d’étiquette supplémentaires sont disponibles dans l’applet de commande [Set-LabelPolicy](https://docs.microsoft.com/powershell/module/exchange/set-labelpolicy?view=exchange-ps) depuis le [Centre de sécurité et conformité PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/office-365-scc-powershell?view=exchange-ps).
 
-L'utilisation de cette applet de commande vous permet de spécifier des [paramètres avancés](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide-customizations) pour le client de l'étiquetage unifié Azure Information Protection. Ces paramètres avancés incluent la définition d’une autre étiquette par défaut pour Outlook et l’implémentation de messages contextuels dans Outlook qui avertissent, justifient ou bloquent les messages envoyés. Pour obtenir la liste complète, voir [Paramètres avancés disponibles pour les étiquettes](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide-customizations#available-advanced-settings-for-labels). 
+Pour le client d’étiquetage unifié d’Azure Information Protection uniquement, vous pouvez spécifier des [paramètres avancés](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide-customizations) qui incluent la définition d’une autre étiquette par défaut pour Outlook et l’implémentation de messages contextuels dans Outlook qui avertissent, justifient ou bloquent les messages envoyés. Pour obtenir la liste complète, voir [Paramètres avancés disponibles pour les stratégies d’étiquette](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide-customizations#available-advanced-settings-for-label-policies) depuis le guide d’administration de ce client.
 
-Vous pouvez également utiliser cette applet de commande pour ajouter et supprimer des étiquettes vers ou à partir d'une stratégie d’étiquette.
+## <a name="use-powershell-for-sensitivity-labels-and-their-policies"></a>Utiliser PowerShell pour les étiquettes de confidentialité ainsi que leurs stratégies
+
+Vous pouvez désormais utiliser l’[Interface PowerShell du Centre de sécurité et conformité](https://docs.microsoft.com/powershell/exchange/office-365-scc/office-365-scc-powershell?view=exchange-ps) pour créer et configurer tous les paramètres que vous pouvez voir dans le centre d’administration pour les étiquettes. Cela signifie qu’outre l’utilisation de PowerShell pour les paramètres qui ne sont pas disponibles dans les centres d’administration pour les étiquettes, vous pouvez désormais créer des scripts pour la création et la maintenance des étiquettes de confidentialité et des stratégies d’étiquette de confidentialité. 
+
+Consultez la documentation ci-après relative aux paramètres et valeurs pris en charge :
+
+- [New-Label](https://docs.microsoft.com/powershell/module/exchange/new-label?view=exchange-ps)
+- [New-LabelPolicy](https://docs.microsoft.com/powershell/module/exchange/new-labelpolicy?view=exchange-ps)
+- [Set-Label](https://docs.microsoft.com/powershell/module/exchange/set-label?view=exchange-ps)
+- [Set-LabelPolicy](https://docs.microsoft.com/powershell/module/exchange/set-labelpolicy?view=exchange-ps)
+
+Vous pouvez également utiliser [Remove-Label](https://docs.microsoft.com/powershell/module/exchange/remove-label?view=exchange-ps) et [Remove-LabelPolicy](https://docs.microsoft.com/powershell/module/exchange/remove-labelpolicy?view=exchange-ps) si vous devez créer un script pour la suppression d’étiquettes de confidentialité ou de stratégies d’étiquette de confidentialité. Toutefois, nous vous conseillons de lire la section suivante avant de supprimer des étiquettes de confidentialité.
 
 ## <a name="removing-and-deleting-labels"></a>Retrait et suppression d’étiquettes
 

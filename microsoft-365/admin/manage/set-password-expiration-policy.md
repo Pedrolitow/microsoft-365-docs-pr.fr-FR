@@ -21,12 +21,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0f54736f-eb22-414c-8273-498a0918678f
 description: "Découvrez comment configurer une stratégie d'expiration des mots de passe pour votre organisation dans le Centre d'administration Microsoft 365. "
-ms.openlocfilehash: a4d5f5240a6d4cca686b4809d05970b5e18b897f
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: eec6231d2c6b5d51b25f42c401e367743fdb19ea
+ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399577"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46560870"
 ---
 # <a name="set-the-password-expiration-policy-for-your-organization"></a>Définir la stratégie d’expiration des mots de passe pour votre organisation
 
@@ -75,13 +75,17 @@ Voici quelques points dont vous devez tenir compte concernant le fonctionnement 
     
 ## <a name="prevent-last-password-from-being-used-again"></a>Empêcher la réutilisation du dernier mot de passe
 
-Si vous le souhaitez, vous pouvez empêcher vos utilisateurs de recycler d’anciens mots de passe à partir d’Azure Active Directory. Voir [Appliquer l'historique des mots de passe](https://docs.microsoft.com/windows/security/threat-protection/security-policy-settings/enforce-password-history).
-
-De plus, si un employé a utilisé un appareil mobile pour accéder à Microsoft 365, vous pouvez réinitialiser le mot de passe afin de vous assurer qu’il n’est plus stocké et recyclé à partir de cet emplacement. Pour plus d'informations, voir [Réinitialiser et bloquer l’appareil mobile d’un ancien employé](https://docs.microsoft.com/office365/admin/add-users/remove-former-employee?view=o365-worldwide#wipe-and-block-a-former-employees-mobile-device).
-
+Si vous le souhaitez, vous pouvez empêcher vos utilisateurs de recycler d’anciens mots de passe en appliquant l’historique de mot de passe dans Azure Active Directory. Voir [Créer une stratégie de mot de passe personnalisée](https://docs.microsoft.com/azure/active-directory-domain-services/password-policy#create-a-custom-password-policy).
 
 ## <a name="synchronize-user-passwords-hashes-from-an-on-premises-active-directory-to-azure-ad-microsoft-365"></a>Synchroniser les hachages de mots de passe utilisateur à partir d’une instance Active Directory locale vers une instance Azure AD (Microsoft 365)
 
-Cet article est consacré à la définition de la stratégie d’expiration pour les utilisateurs exclusivement cloud (Azure AD). Il ne s’applique pas aux utilisateurs d’identité hybride utilisant la synchronisation par hachage du mot de passe, l’authentification directe ou la Fédération locale telle que ADFS.
+Cet article est consacré à la définition de la stratégie d’expiration pour les utilisateurs exclusivement cloud (Azure AD). Il ne s’applique pas aux utilisateurs d’identité hybride utilisant la synchronisation par hachage du mot de passe, l’authentification directe ou la fédération locale telle que ADFS.
   
 Pour découvrir comment synchroniser les hachages de mot de passe utilisateur d'Active Directory local avec Azure Active Directory, voir [Implémenter la synchronisation du hachage de mot de passe avec la synchronisation Azure AD Connect](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-password-hash-synchronization).
+
+
+## <a name="update-password-policy"></a>Mise à jour de la stratégie de mot de passe
+
+L’applet de commande Set-MsolPasswordPolicy met à jour la stratégie de mot de passe d’un domaine ou d’un client spécifié. Deux paramètres sont requis. La premier consiste à indiquer la durée pendant laquelle un mot de passe reste valide avant qu’il ne soit modifié et que le deuxième indique le nombre de jours avant la date d’expiration du mot de passe qui s’affiche lorsque les utilisateurs reçoivent la première notification leur indiquant que leur mot de passe arrive bientôt à expiration.
+
+Si vous souhaitez obtenir plus d’informations sur la mise à jour de la stratégie de mot de passe pour un domaine ou un client spécifique, consultez [Set-MsolPasswordPolicy](https://docs.microsoft.com/powershell/module/msonline/set-msolpasswordpolicy?view=azureadps-1.0).
