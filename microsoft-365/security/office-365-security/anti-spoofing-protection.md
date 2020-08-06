@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 localization_priority: Priority
 description: Les administrateurs peuvent découvrir les fonctionnalités d’usurpation d’identité disponibles dans Exchange Online Protection (EOP), qui peuvent vous aider à atténuer les attaques par hameçonnage d’expéditeurs et de domaines usurpés.
-ms.openlocfilehash: c28f5cf18a8da3be06906eb1e6b118c856c40066
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: b9d8d3b0118083886f2a5d18f64b5d12e1d432af
+ms.sourcegitcommit: c04f1207cfaddac2a9abef38967c17d689756a96
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44209030"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "46577847"
 ---
 # <a name="anti-spoofing-protection-in-eop"></a>Protection contre l’usurpation d’identité dans EOP
 
@@ -129,12 +129,12 @@ Les listes de diffusion (également connues sous le nom de listes de discussion)
 
 Par exemple, Gabriela Laureano (glaureano@contoso.com) s'intéresse à l'observation des oiseaux. Elle s'inscrit à la liste de diffusion birdwatchers@fabrikam.com et envoie le message suivant à la liste :
 
-> **De :** « Gabriela Laureano » \<glaureano@contoso.com\> <br/> **À :** Liste de discussion des ornithologues amateurs \<birdwatchers@fabrikam.com\> <br/> 
+> **De :** « Denise Bourgeois » \<glaureano@contoso.com\> <br/> **À :** liste de discussion des Ornithologues\<birdwatchers@fabrikam.com\> <br/> 
 **Objet :** Superbe observation de geais bleus au sommet du Mont  Rainier cette semaine <br/><br/>Quelqu’un veut-il voir l’observation de cette semaine au Mont Rainier. Rainier ?
 
 Le serveur de liste de diffusion reçoit le message, modifie son contenu et le rediffuse aux membres de la liste. Le message rediffusé a la même adresse De (glaureano@contoso.com), mais une balise est ajoutée à la ligne d’objet, et un pied de page est ajouté au bas du message. Ce type de modification est courant dans les listes de diffusion et peut entraîner des faux positifs en matière d’usurpation d'identité.
 
-> **De :** « Gabriela Laureano » \<glaureano@contoso.com\> <br/> **À :** Liste de discussion des ornithologues amateurs \<birdwatchers@fabrikam.com\> <br/> **Objet :** [ORNITHOLOGUES] Superbe observation de geais bleus au sommet du Mont Rainier cette semaine. Rainier cette semaine <br/><br/> Quelqu’un veut-il voir l’observation de cette semaine au Mont Rainier. Rainier ? <br/><br/> Ce message a été envoyé à la liste de discussion Ornithologues. Vous pouvez vous désabonner à tout moment.
+> **De :** « Denise Bourgeois » \<glaureano@contoso.com\> <br/> **À :** liste de discussion des Ornithologues\<birdwatchers@fabrikam.com\> <br/> **Objet :** [ORNITHOLOGUES] Superbe observation de geais bleus au sommet du Mont Rainier cette semaine. Rainier cette semaine <br/><br/> Quelqu’un veut-il voir l’observation de cette semaine au Mont Rainier. Rainier ? <br/><br/> Ce message a été envoyé à la liste de discussion Ornithologues. Vous pouvez vous désabonner à tout moment.
 
 Pour aider les messages de la liste de diffusion à passer les vérifications d’usurpation d’identité, procédez comme suit selon que vous contrôlez ou non la liste de diffusion :
 
