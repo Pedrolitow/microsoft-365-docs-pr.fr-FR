@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Vous êtes prêt à mettre en place des stratégies et des étiquettes de rétention pour la gouvernance des données de votre organisation, mais vous ne savez pas par où commencer ? Lisez quelques conseils pratiques pour commencer.
-ms.openlocfilehash: b390e4594d97e96eadac9541429a838abe006a3f
-ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
+ms.openlocfilehash: 910d5b64addfeda077a5fd34eb2409a9cac2516d
+ms.sourcegitcommit: b812771805c8b9e92b64deb1928e265e60d80405
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "46560761"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "46588172"
 ---
 # <a name="get-started-with-retention-policies-and-retention-labels"></a>Prise en main des stratégies et des étiquettes de rétention
 
@@ -71,6 +71,7 @@ Utilisez le tableau suivant pour vous aider à faire correspondre vos besoins m�
 |Conformez-vous à la réglementation SEC Rule 17 a-4|[Utiliser Exchange Online et le centre de sécurité et conformité pour se conformer à la réglementation SEC Rule 17 a-4](use-exchange-online-to-comply-with-sec-rule-17a-4.md) |
 |Vérifiez que le contenu est révisé et approuvé avant sa suppression à la fin de sa période de rétention|[Révisions avant destruction](disposition.md#disposition-reviews) |
 |Obtenez une preuve de destruction du contenu à la fin de sa période de rétention.|[Destruction des enregistrements](disposition.md#disposition-of-records) |
+| Surveiller comment et où les étiquettes de rétention sont appliquées | [Surveillance des étiquettes de rétention](retention.md#monitoring-retention-labels) |
 
 ## <a name="end-user-documentation-for-retention-labels"></a>Documentation de l’utilisateur final sur les étiquettes de rétention
 
