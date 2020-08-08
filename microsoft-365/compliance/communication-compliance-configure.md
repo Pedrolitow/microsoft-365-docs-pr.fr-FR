@@ -1,6 +1,6 @@
 ---
 title: Prise en main de la conformité des communications
-description: Configurez les stratégies de conformité des communications pour configurer les communications des employés pour révision.
+description: Configurez les stratégies de conformité des communications pour configurer les communications des utilisateurs à des fins de révision.
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -18,16 +18,16 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 8ec31bb08933ba9c1f0cc264bafc8d39bf64a003
-ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
+ms.openlocfilehash: c61529b612079c93e3c175a67fccd32a7c561400
+ms.sourcegitcommit: 9550298946f8accb90cd59be7b46b71d4bf4f8cc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "44936849"
+ms.lasthandoff: 08/08/2020
+ms.locfileid: "46597577"
 ---
 # <a name="get-started-with-communication-compliance"></a>Prise en main de la conformité des communications
 
-Utilisez des stratégies de conformité des communications pour capturer les communications des employés à des fins d’examen par des relecteurs internes ou externes. Pour plus d’informations sur la façon dont les stratégies de conformité des communications peuvent vous aider à surveiller les communications au sein de votre organisation, consultez la rubrique [communications Compliance Policies in Microsoft 365](communication-compliance.md). Si vous souhaitez passer en revue la manière dont Contoso a configuré rapidement une stratégie de conformité de communication pour surveiller le langage choquant dans Microsoft Teams, Exchange Online et les communications Yammer, consultez cette [étude de cas](communication-compliance-case-study.md).
+Utilisez des stratégies de conformité des communications pour identifier les communications des utilisateurs à des fins d’examen par des relecteurs internes ou externes. Pour plus d’informations sur la façon dont les stratégies de conformité des communications peuvent vous aider à surveiller les communications au sein de votre organisation, consultez la rubrique [communications Compliance Policies in Microsoft 365](communication-compliance.md). Si vous souhaitez passer en revue la manière dont Contoso a configuré rapidement une stratégie de conformité de communication pour surveiller le langage choquant dans Microsoft Teams, Exchange Online et les communications Yammer, consultez cette [étude de cas](communication-compliance-case-study.md).
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
@@ -57,9 +57,21 @@ Si vous ne disposez pas d’un plan Office 365 entreprise E5 existant et que vou
 >[!Important]
 >Par défaut, les administrateurs globaux n’ont pas accès aux fonctionnalités de conformité des communications. Les rôles attribués au cours de cette étape sont obligatoires avant toute accessibilité des fonctionnalités de conformité de la communication.
 
-Pour que la conformité de la **communication** soit disponible sous la forme d’une option de menu dans le centre de conformité Microsoft 365, vous devez disposer du rôle d' **administrateur examen de surveillance** . Vous devez créer un nouveau groupe de rôles pour les relecteurs avec l' **administrateur de vérification de surveillance**, la gestion des **cas**, l' **administrateur de conformité**et les rôles de **révision** pour examiner et corriger les messages avec des correspondances de stratégie.
+Cinq rôles sont utilisés pour configurer les autorisations de gestion des fonctionnalités de conformité des communications. Pour que la conformité de la **communication** soit disponible sous forme d’option de menu dans le centre de conformité Microsoft 365 et pour poursuivre ces étapes de configuration, vous devez disposer du rôle d’administrateur de *conformité des communications* .
 
-### <a name="create-a-new-role-group"></a>Créer un groupe de rôles
+En fonction de la façon dont vous souhaitez gérer les stratégies de communication et les alertes, vous devrez créer un ou plusieurs nouveaux groupes de rôles pour les administrateurs, les réviseurs et les enquêteurs. Vous avez la possibilité d’affecter des utilisateurs à des groupes de rôles spécifiques afin de gérer les différentes zones des fonctionnalités de conformité des communications. Vous pouvez également décider de créer un groupe de rôles et d’affecter tous les rôles de conformité de communication au groupe. Créez un groupe de rôles unique ou plusieurs groupes de rôles pour répondre au mieux aux besoins de gestion de la conformité.
+
+Sélectionnez l’une des options de rôle suivantes lors de la configuration de vos groupes de rôles de conformité de communication :
+
+|**Rôle**|**Autorisations de rôle**|
+|:-----|:-----|
+| **Administrateur de conformité de communication** | Les utilisateurs auxquels ce rôle est attribué peuvent créer, lire, mettre à jour et supprimer des stratégies de conformité de communication, des paramètres globaux et des affectations de groupes de rôles. Les utilisateurs auxquels ce rôle est attribué ne peuvent pas afficher les alertes de message. |
+| **Analyse de la conformité de la communication** | Les utilisateurs auxquels ce rôle est attribué peuvent afficher les stratégies pour lesquelles ils sont affectés en tant que relecteurs, afficher les métadonnées de message (et non le contenu des messages), faire remonter aux relecteurs supplémentaires ou envoyer des notifications aux utilisateurs. Les analystes ne peuvent pas résoudre les alertes en attente. |
+| **Enquête sur la conformité de la communication** | Les utilisateurs auxquels ce rôle est attribué peuvent afficher les métadonnées et le contenu des messages, passer à des relecteurs supplémentaires, passer à un cas avancé de découverte électronique, envoyer des notifications aux utilisateurs et résoudre l’alerte. |
+| **Visionneuse de conformité de la communication** | Les utilisateurs auxquels ce rôle est attribué peuvent accéder à tous les widgets de création de rapports sur la page d’accueil de la communication et peuvent afficher tous les rapports de conformité des communications. |
+| **Gestion des cas de conformité de la communication** | Les utilisateurs auxquels ce rôle est attribué peuvent gérer les incidents et agir sur les alertes. Ce rôle est requis pour la création de groupes de rôles personnalisés pour les administrateurs, les analystes et les investigateurs. Les groupes personnalisés pour les visionneuses n’ont pas besoin de ce rôle. |
+
+### <a name="option-1-create-a-new-role-group-with-all-communication-compliance-roles"></a>Option 1 : créer un nouveau groupe de rôles avec tous les rôles de conformité de communication
 
 1. Connectez-vous [https://protection.office.com/permissions](https://protection.office.com/permissions) à l’aide des informations d’identification d’un compte d’administrateur dans votre organisation Microsoft 365.
 
@@ -69,13 +81,45 @@ Pour que la conformité de la **communication** soit disponible sous la forme d�
 
 4. Dans le champ **nom** , attribuez un nom convivial au nouveau groupe de rôles. Sélectionnez **Suivant**.
 
-5. Sélectionnez **choisir les rôles** , puis **Ajouter**. Activez la case à cocher **administrateur de vérification de surveillance**, gestion des **cas**, **administrateur de conformité**et **révision**, puis sélectionnez **Ajouter** et **Terminer**. Sélectionnez **Suivant**.
+5. Sélectionnez **choisir les rôles** , puis **Ajouter**. Activez les cases à cocher pour les rôles suivants :
 
-    ![Groupes de rôles obligatoires de conformité de la communication](../media/communication-compliance-role-groups-1.png)
+    - Administrateur de conformité de communication
+    - Analyse de la conformité de la communication
+    - Enquête sur la conformité de la communication
+    - Visionneuse de conformité de la communication
+    - Gestion des cas de conformité de la communication
 
-6. Sélectionnez **choisir les membres** , puis **Ajouter**. Activez la case à cocher de tous les utilisateurs et groupes pour lesquels vous souhaitez créer des stratégies et gérer les messages avec des correspondances de stratégie, puis sélectionnez **Ajouter** et **Terminer**. Sélectionnez **Suivant**.
+    ![Rôles de conformité de communication](../media/communication-compliance-case-roles.png)
 
-7. Sélectionnez **créer un groupe de rôles** à terminer.
+6. Sélectionnez **Ajouter** et **Terminer**, puis cliquez sur **suivant** pour continuer.
+
+7. Sélectionnez **choisir les membres** , puis **Ajouter**. Activez la case à cocher de tous les utilisateurs et groupes pour lesquels vous souhaitez créer des stratégies et gérer les messages avec des correspondances de stratégie, puis sélectionnez **Ajouter** et **Terminer**. Sélectionnez **Suivant**.
+
+8. Sélectionnez **créer un groupe de rôles** à terminer.
+
+### <a name="option-2-create-new-role-groups-with-different-communication-compliance-roles"></a>Option 2 : créer des groupes de rôles avec différents rôles de conformité de communication
+
+Créez plusieurs groupes de rôles pour segmenter l’accès et les responsabilités de conformité de communication entre différents utilisateurs de votre organisation. Pour chaque nouveau groupe de rôles, vous devez attribuer différents rôles de conformité de communication.
+
+1. Connectez-vous [https://protection.office.com/permissions](https://protection.office.com/permissions) à l’aide des informations d’identification d’un compte d’administrateur dans votre organisation Microsoft 365.
+
+2. Dans le centre de sécurité &amp; conformité, accédez à **autorisations**. Sélectionnez le lien pour afficher et gérer les rôles dans Office 365.
+
+3. Sélectionnez **Créer**.
+
+4. Dans le champ **nom** , attribuez un nom convivial au nouveau groupe de rôles. Sélectionnez **Suivant**.
+
+5. Sélectionnez **choisir les rôles** , puis **Ajouter**. Cochez la case correspondant aux rôles de conformité de communication que vous souhaitez attribuer à ce groupe. Par exemple, si ce groupe de rôles est destiné aux analystes de conformité au sein de votre organisation, vous devez *Sélectionner les rôles* de gestion de la conformité des communications et de la *gestion des cas* de communication. Si ce groupe de rôles est destiné aux investigateurs de conformité, vous devez *Sélectionner les rôles* de gestion de la conformité des communications et de la *gestion des cas* de conformité des communications.
+
+    ![Rôles de conformité de communication](../media/communication-compliance-analysts-role-group.png)
+
+6. Sélectionnez **Ajouter** et **Terminer**, puis cliquez sur **suivant** pour continuer.
+
+7. Sélectionnez **choisir les membres** , puis **Ajouter**. Activez la case à cocher de tous les utilisateurs et groupes pour lesquels vous souhaitez créer des stratégies et gérer les messages avec des correspondances de stratégie, puis sélectionnez **Ajouter** et **Terminer**. Sélectionnez **Suivant**.
+
+8. Sélectionnez **créer un groupe de rôles** à terminer.
+
+9. Créez des groupes de rôles de conformité de communication supplémentaires selon vos besoins.
 
 Pour plus d’informations sur les groupes de rôles et les autorisations, consultez [la rubrique autorisations dans le centre de conformité](../security/office-365-security/protect-against-threats.md).
 
@@ -98,7 +142,7 @@ Utilisez le tableau suivant pour vous aider à configurer les groupes au sein de
   
 Lorsque vous affectez un groupe de distribution dans la stratégie, la stratégie surveille tous les messages électroniques provenant de chaque utilisateur dans le groupe de distribution. Lorsque vous affectez un groupe Microsoft 365 dans la stratégie, la stratégie surveille tous les messages électroniques envoyés à ce groupe, et non les messages électroniques individuels reçus par chaque membre du groupe.
 
-Si vous êtes une organisation disposant d’un déploiement Exchange sur site ou d’un fournisseur de messagerie externe et que vous souhaitez surveiller les conversations de teams pour vos utilisateurs, vous devez créer un groupe de distribution pour les utilisateurs disposant de boîtes aux lettres locales ou externes à surveiller. Plus loin dans cette procédure, vous affecterez ce groupe de distribution en tant qu' **utilisateurs et groupes contrôlés** dans l’Assistant stratégie.
+Si vous êtes une organisation disposant d’un déploiement Exchange sur site ou d’un fournisseur de messagerie externe et que vous souhaitez surveiller les conversations de Microsoft teams pour vos utilisateurs, vous devez créer un groupe de distribution pour les utilisateurs disposant de boîtes aux lettres locales ou externes à surveiller. Plus loin dans cette procédure, vous affecterez ce groupe de distribution en tant qu' **utilisateurs et groupes contrôlés** dans l’Assistant stratégie.
 
 >[!IMPORTANT]
 >Vous devez classer une demande auprès du support Microsoft pour permettre à votre organisation d’utiliser l’interface utilisateur graphique dans le centre de sécurité & conformité afin de rechercher des données de conversation teams pour les utilisateurs locaux. Pour plus d’informations, reportez-vous à la rubrique [recherche de boîtes aux lettres en nuage pour les utilisateurs locaux](search-cloud-based-mailboxes-for-on-premises-users.md).
@@ -146,10 +190,10 @@ Pour plus d’informations sur la configuration de yammer en mode natif, voir :
     - Choisissez la direction de communication à surveiller, y compris les communications entrantes, sortantes ou internes.
     - Définir les [conditions](communication-compliance-feature-reference.md#ConditionalSettings)de la stratégie de conformité de communication. Vous pouvez choisir entre une adresse de message, un mot clé, un type de fichier et une condition de correspondance de taille.
     - Choisissez si vous souhaitez inclure des types d’informations sensibles. Cette étape vous permet de sélectionner les types d’informations sensibles par défaut et personnalisés. Sélectionnez des types d’informations sensibles personnalisés ou des dictionnaires de mots clés personnalisés existants dans l’Assistant stratégie de conformité des communications. Si nécessaire, vous pouvez créer ces éléments avant d’exécuter l’Assistant. Vous pouvez également créer des types d’informations sensibles à partir de l’Assistant stratégie de conformité des communications.
-    - Choisissez si vous souhaitez activer les classifieurs. Les classifieurs peuvent détecter les langues inappropriées envoyées ou reçues dans le corps des messages électroniques ou dans d’autres types de texte.
+    - Choisissez si vous souhaitez activer les classifieurs. Les classifieurs peuvent détecter une langue et des images inappropriées envoyées ou reçues dans le corps de messages électroniques ou d’autres types de texte. Vous pouvez choisir les classifieurs intégrés suivants : *menace*, *blasphèmes*, *harcèlement ciblé*, *images adultes*, *images Racy*et *images Gory*.
 
     >[!CAUTION]
-    >Nous déprécions le **langage inconvenant** classifieur intégré, car il génère un grand nombre de faux positifs. Ne l’utilisez pas et, si vous l’utilisez, vous devez déconnecter vos processus d’entreprise. Nous vous recommandons d’utiliser à la place les classifieurs intégrés de **menace**, de **blasphème**et de **harcèlement** .
+    >Nous déprécions le **langage inconvenant** classifieur intégré, car il génère un grand nombre de faux positifs. Ne l’utilisez pas et, si vous l’utilisez, vous devez déconnecter vos processus d’entreprise. Nous vous recommandons d’utiliser à la place les classifieurs intégrés de **menace**, de **blasphème**et de **harcèlement ciblé** .
 
     - Définir le pourcentage de communications à réviser.
     - Examinez vos sélections de stratégie et créez la stratégie.
@@ -158,25 +202,33 @@ Pour plus d’informations sur la configuration de yammer en mode natif, voir :
 
 6. La page **votre stratégie a été créée** s’affiche avec des instructions sur le moment où la stratégie sera activée et les communications qui seront capturées.
 
-## <a name="step-6-optional-create-employee-notice-templates"></a>Étape 6 (facultative) : créer des modèles de notification d’employé
+## <a name="step-6-optional-create-notice-templates-and-configure-user-anonymization"></a>Étape 6 (facultative) : créer des modèles d’avis et configurer l’anonymisation des utilisateurs
 
-Si vous souhaitez pouvoir répondre à une alerte de stratégie en envoyant un rappel à l’employé associé, vous devez créer au moins un modèle d’avis dans votre organisation. Les champs du modèle d’avertissement sont modifiables avant d’être envoyés dans le cadre du processus de correction des alertes et la création d’un modèle d’avertissement personnalisé pour chaque stratégie de conformité des communications est recommandée.
+Si vous souhaitez pouvoir répondre à une alerte de stratégie en envoyant un rappel à l’utilisateur associé, vous devez créer au moins un modèle d’avertissement dans votre organisation. Les champs du modèle d’avertissement sont modifiables avant d’être envoyés dans le cadre du processus de correction des alertes et la création d’un modèle d’avertissement personnalisé pour chaque stratégie de conformité des communications est recommandée.
+
+Vous pouvez également choisir d’activer l’anonymisation pour les noms d’utilisateurs affichés lors de l’étude des correspondances de stratégie et de l’exécution d’actions sur les messages.
 
 1. Connectez-vous [https://compliance.microsoft.com](https://compliance.microsoft.com) à l’aide des informations d’identification d’un compte d’administrateur dans votre organisation Microsoft 365.
 
 2. Dans le centre de conformité Microsoft 365, accédez à **conformité des communications**.
 
-3. Sélectionnez l’onglet **modèles de notification** , puis sélectionnez créer un modèle d' **avis**.
+3. Pour configurer l’anonymat pour les noms d’utilisateur, sélectionnez l’onglet **confidentialité** .
 
-4. Dans la page **modifier un modèle d’avis** , renseignez les champs suivants :
+4. Pour activer l’anonymisation, sélectionnez **afficher les versions anonymes des noms d’utilisateur**.
 
-    - Nom du modèle d’avis (obligatoire)
+5. Sélectionnez **Enregistrer**.
+
+6. Accédez à l’onglet **modèles de notification** , puis sélectionnez créer un modèle d' **avis**.
+
+7. Dans la page **modifier un modèle d’avis** , renseignez les champs suivants :
+
+    - Nom du modèle (obligatoire)
     - Envoyer de (obligatoire)
     - CC et CCI (facultatif)
     - Subject (obligatoire)
     - Corps du message (obligatoire)
 
-5. Sélectionnez **Enregistrer** pour créer et enregistrer le modèle d’avis.
+8. Sélectionnez **Enregistrer** pour créer et enregistrer le modèle d’avis.
 
 ## <a name="step-7-optional-test-your-communication-compliance-policy"></a>Étape 7 (facultative) : tester votre stratégie de conformité de communication
 
@@ -193,3 +245,9 @@ Procédez comme suit pour tester votre stratégie de conformité de communicatio
 3. Connectez-vous à Microsoft 365 en tant que réviseur désigné dans la stratégie de conformité de communication. Accédez à **Communication compliance**  >  **alertes** de conformité des communications pour afficher les alertes correspondant à vos stratégies.
 
 4. Corrigez l’alerte à l’aide des contrôles de correction et assurez-vous que l’alerte est correctement résolue.
+
+## <a name="next-steps"></a>Étapes suivantes
+
+Une fois que vous avez terminé ces étapes pour créer votre première stratégie de conformité de communication, vous commencerez à recevoir des alertes des indicateurs d’activité après environ 24 heures. Configurez des stratégies supplémentaires selon vos besoins à l’aide des instructions de l’étape 5 de cet article.
+
+Pour en savoir plus sur l’examen des alertes de conformité des communications, consultez la rubrique [examiner et corriger les alertes de conformité des communications](communication-compliance-investigate-remediate.md).

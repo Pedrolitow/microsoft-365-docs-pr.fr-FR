@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 1331722b5ee3149a93ab3158a48d7d1e8e2472c4
-ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
+ms.openlocfilehash: 76cae3cc8f578206790eb2f6caaa96aed24b5a2b
+ms.sourcegitcommit: 9550298946f8accb90cd59be7b46b71d4bf4f8cc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45127249"
+ms.lasthandoff: 08/08/2020
+ms.locfileid: "46597553"
 ---
 # <a name="communication-compliance-feature-reference"></a>Référence de la fonctionnalité de conformité des communications
 
@@ -32,7 +32,7 @@ ms.locfileid: "45127249"
 >[!Important]
 >L’utilisation de PowerShell pour créer et gérer les stratégies de conformité des communications n’est pas prise en charge. Pour créer et gérer ces stratégies, vous devez utiliser les contrôles de gestion des stratégies dans la [solution de conformité de communication Microsoft 365](https://compliance.microsoft.com/supervisoryreview).
 
-Vous créez des stratégies de conformité des communications pour les organisations Microsoft 365 dans le Centre de conformité Microsoft 365. Les stratégies de conformité des communications définissent les communications et les utilisateurs qui font l’objet d’un examen au sein de votre organisation, définissent les conditions personnalisées auxquelles doivent répondre les communications et indiquent qui doit effectuer des révisions. Les utilisateurs inclus dans le groupe de rôle d’**Administrateur de la vérification de la surveillance** peuvent définir des stratégies, tandis que les personnes auxquelles ce rôle est affecté peuvent accéder à la page **Conformité des communications** dans le Centre de conformité Microsoft 365. Si nécessaire, vous pouvez exporter l’historique des modifications apportées à une stratégie dans un fichier. csv qui inclut également l’état des alertes en attente de révision, des éléments escaladés et des éléments résolus. Les stratégies ne peuvent pas être renommées et peuvent être supprimées lorsqu’elles ne sont plus nécessaires.
+Vous créez des stratégies de conformité des communications pour les organisations Microsoft 365 dans le Centre de conformité Microsoft 365. Les stratégies de conformité des communications définissent les communications et les utilisateurs qui font l’objet d’un examen au sein de votre organisation, définissent les conditions personnalisées auxquelles doivent répondre les communications et indiquent qui doit effectuer des révisions. Les utilisateurs auxquels le rôle d' *administrateur de conformité de communication* est affecté peuvent définir des stratégies, et toute personne disposant de ce rôle peut accéder à la page conformité de la **communication** et aux paramètres globaux dans le centre de conformité Microsoft 365. Si nécessaire, vous pouvez exporter l’historique des modifications apportées à une stratégie dans un fichier. csv qui inclut également l’état des alertes en attente de révision, des éléments escaladés et des éléments résolus. Les stratégies ne peuvent pas être renommées et peuvent être supprimées lorsqu’elles ne sont plus nécessaires.
 
 >[!NOTE]
 >Les stratégies de surveillance créées dans le centre de sécurité & conformité pour les abonnements Office 365 ne peuvent pas migrer vers Microsoft 365. Si vous effectuez une migration à partir d’un abonnement Office 365 vers un abonnement Microsoft 365, vous devrez créer de nouvelles stratégies de conformité de communication pour remplacer les stratégies de surveillance existantes.
@@ -47,6 +47,22 @@ Les modèles de stratégie sont des paramètres de stratégie prédéfinis que v
 | **Informations sensibles** | Surveiller les communications pour les informations sensibles | -Emplacements : Exchange Online, Microsoft Teams, Yammer, Skype entreprise <br> -Direction : entrant, sortant, interne <br> -Pourcentage de révision : 10% <br> -Conditions : informations sensibles, modèles de contenu prédéfinis et types, option de dictionnaire personnalisé, pièces jointes dont la taille est supérieure à 1 Mo |
 | **Conformité réglementaire** | Surveiller les communications pour les informations relatives à la conformité réglementaire financière | -Emplacements : Exchange Online, Microsoft Teams, Yammer, Skype entreprise <br> -Direction : entrant, sortant <br> -Pourcentage de révision : 10% <br> -Conditions : option de dictionnaire personnalisé, pièces jointes d’une taille supérieure à 1 Mo |
 
+## <a name="permissions-preview"></a>Autorisations (aperçu)
+
+Cinq rôles sont utilisés pour configurer les autorisations de gestion des fonctionnalités de conformité des communications. Pour que la conformité de la **communication** soit disponible sous la forme d’une option de menu dans le centre de conformité Microsoft 365, vous devez disposer du rôle d’administrateur de *conformité des communications* .
+
+En fonction de la façon dont vous souhaitez gérer les stratégies de communication et les alertes, vous devrez créer un ou plusieurs nouveaux groupes de rôles pour les administrateurs, les réviseurs et les enquêteurs. Vous avez la possibilité d’affecter des utilisateurs à des groupes de rôles spécifiques afin de gérer différents ensembles de fonctionnalités de conformité des communications. Vous pouvez également décider de créer un groupe de rôles et d’affecter tous les rôles de conformité de communication au groupe. Créez un groupe de rôles unique ou plusieurs groupes afin de répondre au mieux aux besoins de gestion de la conformité.
+
+Sélectionnez l’une des options de rôle suivantes lors de la configuration de vos groupes de rôles de conformité de communication :
+
+|**Rôle**|**Autorisations de rôle**|
+|:-----|:-----|
+| **Administrateur de conformité de communication** | Les utilisateurs auxquels ce rôle est attribué peuvent créer, lire, mettre à jour et supprimer des stratégies de conformité de communication, des paramètres globaux et des affectations de groupes de rôles. Les utilisateurs auxquels ce rôle est attribué ne peuvent pas afficher les alertes de message. |
+| **Analyse de la conformité de la communication** | Les utilisateurs auxquels ce rôle est attribué peuvent afficher les stratégies pour lesquelles ils sont affectés en tant que relecteurs, afficher les métadonnées de message (et non le contenu des messages), faire remonter aux relecteurs supplémentaires ou envoyer des notifications aux utilisateurs. Les analystes ne peuvent pas résoudre les alertes en attente. |
+| **Enquête sur la conformité de la communication** | Les utilisateurs auxquels ce rôle est attribué peuvent afficher les métadonnées et le contenu des messages, passer à des relecteurs supplémentaires, passer à un cas avancé de découverte électronique, envoyer des notifications aux utilisateurs et résoudre l’alerte. |
+| **Visionneuse de conformité de la communication** | Les utilisateurs auxquels ce rôle est attribué peuvent accéder à tous les widgets de création de rapports sur la page d’accueil de la communication et peuvent afficher tous les rapports de conformité des communications. |
+| **Gestion des cas de conformité de la communication** | Les utilisateurs auxquels ce rôle est attribué peuvent gérer les incidents et agir sur les alertes. Ce rôle est requis pour la création de groupes de rôles personnalisés pour les administrateurs, les analystes et les investigateurs. Les groupes personnalisés pour les visionneuses n’ont pas besoin de ce rôle. |
+
 ## <a name="supervised-users"></a>Utilisateurs supervisés
 
 Avant de commencer à utiliser la conformité des communications, vous devez déterminer qui a besoin de ses communications. Dans la stratégie, les adresses de messagerie des utilisateurs identifient les individus ou groupes de personnes à superviser. Les groupes Microsoft 365, les listes de distribution Exchange, les communautés Yammer et les canaux Microsoft teams sont des exemples de ces groupes. Vous pouvez également exclure des utilisateurs ou des groupes spécifiques de l’analyse d’un groupe d’exclusion spécifique ou d’une liste de groupes.
@@ -56,7 +72,7 @@ Avant de commencer à utiliser la conformité des communications, vous devez dé
 
 ## <a name="reviewers"></a>Relecteurs
 
-Lorsque vous créez une stratégie de conformité de communication, vous devez déterminer qui révise les messages des utilisateurs supervisés. Dans la stratégie, les adresses de messagerie des utilisateurs identifient les individus ou les groupes de personnes qui doivent réviser les communications contrôlées. Tous les réviseurs doivent disposer de boîtes aux lettres hébergées sur Exchange Online et se voir affecter les rôles **Gestion des cas** et **Réviser**. Lorsque les relecteurs sont ajoutés à une stratégie, ils reçoivent automatiquement un message électronique les avertissant de l’affectation à la stratégie et fournissent des liens vers des informations sur le processus de révision.
+Lorsque vous créez une stratégie de conformité de communication, vous devez déterminer qui révise les messages des utilisateurs supervisés. Dans la stratégie, les adresses de messagerie des utilisateurs identifient les individus ou les groupes de personnes qui doivent réviser les communications contrôlées. Les relecteurs AAll doivent avoir des boîtes aux lettres hébergées sur Exchange Online et doivent être affectés aux rôles d' *enquête* de conformité de communication ou d' *analyse* de conformité des communications. Les relecteurs (analystes ou investigateurs) doivent également avoir le rôle de *gestion des cas de conformité de communication* affecté. Lorsque les relecteurs sont ajoutés à une stratégie, ils reçoivent automatiquement un message électronique les avertissant de l’affectation à la stratégie et fournissent des liens vers des informations sur le processus de révision.
 
 ## <a name="groups-for-supervised-users-and-reviewers"></a>Groupes pour les utilisateurs et les relecteurs surveillés
 
@@ -109,7 +125,7 @@ Pour plus d’informations sur la retraite de la surveillance dans Office 365, c
 
 ## <a name="policy-settings"></a>Paramètres de stratégie
 
-### <a name="users"></a>Utilisateurs
+### <a name="users"></a>Users
 
 Vous avez la possibilité de sélectionner **tous les utilisateurs** ou de définir des utilisateurs spécifiques dans une stratégie de conformité de communication. La sélection de **Tous les utilisateurs** applique la stratégie à tous les utilisateurs et les groupes auxquels n’importe quel utilisateur est inclus en tant que membre. La définition d’utilisateurs spécifiques applique la stratégie aux utilisateurs définis et aux groupes auxquels les utilisateurs définis sont inclus.
 
@@ -138,17 +154,22 @@ Configurez des dictionnaires de mots clés personnalisés (ou des lexiques) pour
 
 ### <a name="classifiers"></a>Classifieurs requêtes
 
-Les classifieurs intégrés analysent les messages envoyés ou reçus sur tous les canaux de communication au sein de votre organisation afin de détecter différents types de problèmes de conformité. Les classifieurs utilisent une combinaison d'intelligence artificielle et de mots clés pour identifier le langage dans les messages susceptibles d'enfreindre les stratégies anti-harcèlement. Les classifieurs intégrés prennent actuellement en charge uniquement les mots clés anglais dans les messages.
+Les classifieurs intégrés et globaux analysent les messages envoyés ou reçus sur tous les canaux de communication de votre organisation en fonction de différents types de problèmes de conformité. Les classifieurs utilisent une combinaison d'intelligence artificielle et de mots clés pour identifier le langage dans les messages susceptibles d'enfreindre les stratégies anti-harcèlement. Les classifieurs intégrés prennent actuellement en charge uniquement les mots clés anglais dans les messages.
 
-Les classificateurs intégrés de conformité des communications analysent les communications à la recherche de conditions et de sentiments pour les types de langue suivants :
+Conformité des communications les classifieurs intégrés et les classifieurs globaux analysent les communications pour les termes, les images et les sentiments pour les types de langue et de contenu suivants :
 
 - **Menace**: analyse les menaces pour valider la violence ou nuire physiquement à une personne ou à une propriété.
-- **Harcèlement**: analyse les comportements offensants ciblant les personnes en matière de race, couleur, religion, origine nationale.
+- **Harcèlement ciblé**: analyse les comportements offensants ciblant les personnes en matière de race, de couleur, de religion et d’origine nationale.
 - **Blasphèmes**: analyse les expressions à inconvenances qui dépassent la plupart des gens.
+- **Images pour adultes**: recherche des images sexuellement explicites.
+- **Images Racy**: recherche les images qui sont sexuellement inutilisées, mais qui contiennent moins de contenu explicite que les images considérées comme adultes.
+- **Images Gory**: recherche les images qui décrivent la violence et Gore.
 
-Les classifieurs intégrés ne fournissent pas une liste exhaustive des termes dans ces domaines. De plus, les normes linguistiques et culturelles changent en permanence, et à la lumière de ces réalités, Microsoft se réserve le droit de mettre à jour les classifieurs à sa discrétion. Tandis que les classifieurs peuvent aider votre organisation à surveiller ces domaines, les classifieurs ne sont pas destinés à fournir les moyens uniques de surveillance ou d’adressage de cette langue pour votre organisation. Votre organisation, et non Microsoft, reste responsable de toutes les décisions liées à l’analyse et au blocage de la langue dans ces domaines.
+Les classifieurs d’image *adulte*, *Racy*et *Gory* analysent les fichiers dans. JPEG,. PNG,. GIF et. Formats BMP. La taille des fichiers image doit être inférieure à 4 méga-octets (Mo) et les dimensions des images doivent être supérieures à 50x50 pixels et supérieures à 50 kilo-octets (Ko) pour que l’image soit considérée comme étant à évaluer. L’identification de l’image est prise en charge pour les messages électroniques Exchange Online, ainsi que pour les canaux et conversations Microsoft Teams.
 
-Pour plus d’informations sur les classifieurs dans Microsoft 365, consultez [Classifieurs](classifier-getting-started-with.md).
+Les classifieurs intégrés et globaux ne fournissent pas une liste exhaustive des termes ou des images de ces zones. De plus, les normes linguistiques et culturelles changent en permanence, et à la lumière de ces réalités, Microsoft se réserve le droit de mettre à jour les classifieurs à sa discrétion. Alors que les classifieurs peuvent aider votre organisation à surveiller ces domaines, les classifieurs ne sont pas destinés à fournir les moyens exclusifs de surveillance ou d’adressage de cette langue ou de cette image. Votre organisation, et non Microsoft, reste responsable de toutes les décisions liées à l’analyse et au blocage de la langue et des images dans ces domaines.
+
+Pour plus d’informations sur les classifieurs de formation dans Microsoft 365, voir [Getting Started with trainable Classifiers](classifier-getting-started-with.md).
 
 ### <a name="conditional-settings"></a>Paramètres conditionnels
 <a name="ConditionalSettings"> </a>
@@ -195,16 +216,25 @@ Si vous entrez plusieurs conditions, Microsoft 365 utilise toutes les conditions
 
 Si vous souhaitez réduire la quantité de contenu à réviser, vous pouvez spécifier un pourcentage de toutes les communications régies par une stratégie de conformité de communication. Un échantillon aléatoire de contenu est sélectionné à partir du pourcentage total de contenu qui correspond aux conditions de stratégie choisies. Si vous souhaitez que les réviseurs examinent tous les éléments, vous pouvez configurer **100 %** dans une stratégie de conformité des communications.
 
-## <a name="notices"></a>Constaté
+## <a name="privacy-preview"></a>Confidentialité (préversion)
 
-Vous pouvez créer des modèles d’avis si vous souhaitez envoyer aux utilisateurs un avis de rappel par courrier électronique pour les correspondances de stratégie dans le cadre du processus de résolution des problèmes. Les notifications peuvent uniquement être envoyées à l’adresse de messagerie de l’employé associée à la correspondance de stratégie qui a généré l’alerte spécifique pour correction. Lors de la sélection d’un modèle d’avis à appliquer à une violation de stratégie dans le cadre du flux de travail de correction, vous pouvez choisir d’accepter les valeurs de champ définies dans le modèle ou de remplacer les champs selon vos besoins.
+La protection de la confidentialité des utilisateurs qui ont des correspondances de stratégie est importante et peut contribuer à promouvoir l’objection en matière d’analyse des données et de révision des alertes de conformité des communications. Ce paramètre s’applique uniquement aux noms d’utilisateurs qui affichent la solution de conformité de communication. Elle n’affecte pas le mode d’affichage des noms dans les autres solutions de conformité ou le centre d’administration.
 
-Les modèles de notifications sont des modèles de courrier électronique personnalisés dans lesquels vous pouvez définir les champs de message suivants :
+Pour les utilisateurs disposant d’une correspondance de conformité de communication, vous pouvez choisir l’un des paramètres suivants dans les **paramètres de conformité de communication**:
+
+- **Afficher les versions anonymes des**noms d’utilisateur : les noms d’utilisateur sont rendus anonymes pour empêcher les administrateurs, les analystes, les enquêteurs de données et les relecteurs de voir qui est associé à des alertes de stratégie. Par exemple, un utilisateur « gracieuses Taylor » apparaît avec un pseudonyme aléatoire tel que « AnonIS8-988 » dans tous les domaines de l’expérience de conformité des communications. Le choix de ce paramètre permet d'anonymiser tous les utilisateurs ayant des correspondances de stratégie actuelle et passée et s’applique à toutes les stratégies. Les informations de profil utilisateur dans les détails de l’alerte de conformité des communications ne seront pas disponibles lorsque cette option est sélectionnée. Toutefois, les noms d’utilisateur sont affichés lors de l’ajout de nouveaux utilisateurs à des stratégies existantes ou lors de l’affectation d’utilisateurs à de nouvelles stratégies. Si vous choisissez de désactiver ce paramètre, les noms d’utilisateur sont affichés pour tous les utilisateurs qui ont des correspondances de stratégie actuelle ou passée.
+- **Ne pas afficher les versions anonymes des**noms d’utilisateur : les noms d’utilisateur sont affichés pour toutes les correspondances de stratégie actuelle et passée pour les alertes de conformité de communication. Les informations de profil utilisateur (nom, titre, alias, organisation ou service) s’affichent pour l’utilisateur pour toutes les alertes et les incidents liés à la gestion des risques Insiders.
+
+## <a name="notice-templates"></a>Modèles de notifications
+
+Vous pouvez créer des modèles d’avis si vous souhaitez envoyer aux utilisateurs un avis de rappel par courrier électronique pour les correspondances de stratégie dans le cadre du processus de résolution des problèmes. Les notifications peuvent uniquement être envoyées à l’adresse de messagerie de l’utilisateur associée à la correspondance de stratégie qui a généré l’alerte spécifique pour correction. Lors de la sélection d’un modèle d’avis à appliquer à une violation de stratégie dans le cadre du flux de travail de correction, vous pouvez choisir d’accepter les valeurs de champ définies dans le modèle ou de remplacer les champs selon vos besoins.
+
+Les modèles de notifications sont des modèles de courrier électronique personnalisés dans lesquels vous pouvez définir les champs de message suivants dans la zone **paramètres de conformité** de la communication :
 
 |**Field**|**Obligatoire**| **Détails** |
 |:-----|:-----|:-----|
 |**Nom du modèle** | Oui | Nom convivial du modèle d’avis que vous sélectionnerez dans le flux de travail de notification lors de la correction, prend en charge les caractères de texte. |
-| **Adresse de l’expéditeur** | Oui | Adresse d’un ou de plusieurs utilisateurs ou groupes qui envoient le message à l’employé avec une correspondance de stratégie, sélectionnée dans Active Directory pour votre abonnement. |
+| **Adresse de l’expéditeur** | Oui | Adresse d’un ou de plusieurs utilisateurs ou groupes qui envoient le message à l’utilisateur avec une correspondance de stratégie, sélectionnée dans Active Directory pour votre abonnement. |
 | **Adresses CC et CCI** | Non | Les utilisateurs ou groupes facultatifs devant être avertis de la correspondance de stratégie, sélectionnés dans Active Directory pour votre abonnement. |
 | **Subject** | Oui | Informations qui s’affichent dans la ligne d’objet du message, prend en charge les caractères de texte. |
 | **Corps du message** | Oui | Informations qui s’affichent dans le corps du message, prend en charge le texte ou les valeurs HTML. |
@@ -284,21 +314,41 @@ Si vous souhaitez modifier le niveau de gravité affecté dans une stratégie d�
 
 7. Sélectionnez **Fermer** pour quitter la page Détails de la stratégie d’alerte.
 
+## <a name="reports-preview"></a>Rapports (aperçu)
+
+Le nouveau tableau de bord **rapports** est l’emplacement central pour l’affichage de tous les rapports de conformité de communication. Les widgets de rapport fournissent un aperçu rapide des informations les plus nécessaires pour une évaluation globale de l’état des activités de conformité des communications. Les informations contenues dans les widgets de rapport ne sont pas exportables.
+
+Le tableau de bord **rapports** contient les widgets de rapport suivants :
+
+- **Correspondances de stratégies récentes**: affiche le nombre de correspondances par stratégie active dans le temps.
+- **Éléments résolus par stratégie**: affiche le nombre d’alertes de correspondance de stratégie résolues par stratégie dans le temps.
+- **Utilisateurs avec la plupart des correspondances de stratégie**: affiche les utilisateurs (ou les noms d’utilisateur anonymes) et le nombre de correspondances de stratégie pour une période donnée.
+- **Stratégie avec le plus de correspondances**: affiche les stratégies et le nombre de correspondances pour une période donnée, classées par ordre décroissant de correspondances.
+
 ## <a name="audit"></a>Audit
 
-Dans certains cas, vous devez fournir des informations aux auditeurs de réglementation ou de conformité pour prouver le contrôle des activités et des communications des employés. Ces informations peuvent être un résumé de toutes les activités associées à une stratégie d’organisation définie ou à chaque fois qu’une stratégie de conformité de communication est modifiée. Les stratégies de conformité des communications disposent de pistes d’audit intégrées pour une préparation complète des audits internes ou externes. Les historiques d’audit détaillés de chaque action de création, de modification et de suppression sont capturés par vos stratégies de communication afin de fournir des preuves de procédures de surveillance.
+Dans certains cas, vous devez fournir des informations aux auditeurs de réglementation ou de conformité pour prouver le contrôle des activités et des communications des utilisateurs. Ces informations peuvent être un résumé de toutes les activités associées à une stratégie d’organisation définie ou à chaque fois qu’une stratégie de conformité de communication est modifiée. Les stratégies de conformité des communications disposent de pistes d’audit intégrées pour une préparation complète des audits internes ou externes. Les historiques d’audit détaillés de chaque action de création, de modification et de suppression sont capturés par vos stratégies de communication afin de fournir des preuves de procédures de surveillance.
 
 >[!Important]
 >L’audit doit être activé pour votre organisation pour que les événements de conformité de la communication soient enregistrés. Pour activer l’audit, consultez [la rubrique activer le journal d’audit](communication-compliance-configure.md#step-2-required-enable-the-audit-log).
 
-Pour afficher les activités de stratégie de conformité de communication, sélectionnez le contrôle **Exporter les activités de révision** dans la page principale pour n’importe quelle stratégie. Cette action génère un fichier d’audit au format. csv qui contient les informations suivantes :
+Pour afficher les activités de mise à jour des stratégies de conformité des communications, sélectionnez le contrôle d' **exportation des mises à jour des stratégies** sur la page principale de n’importe quelle stratégie. Vous devez disposer des rôles administrateur *général* ou *administrateur de conformité des communications* pour exporter des activités de mise à jour. Cette action génère un fichier d’audit au format. csv qui contient les informations suivantes :
 
 |**Field**|**Détails**|
 |:-----|:-----|
-| **CreationDate** | Date à laquelle l’activité a été effectuée dans une stratégie. |
-| **UserIds** | Utilisateur qui a exécuté l’activité dans une stratégie. |
-| **Opérations** | Les opérations effectuées sur la stratégie. |
-| **AuditData** | Ce champ est la source de données principale pour toutes les activités de stratégie. Toutes les activités sont enregistrées et séparées par des virgules. |
+| **CreationDate** | Date à laquelle l’activité de mise à jour a été effectuée dans une stratégie. |
+| **ID utilisateur** | Utilisateur qui a effectué l’activité de mise à jour dans une stratégie. |
+| **Opérations** | Les opérations de mise à jour effectuées sur la stratégie. |
+| **AuditData** | Ce champ est la source de données principale pour toutes les activités de mise à jour de stratégie. Toutes les activités de mise à jour sont enregistrées et séparées par des virgules. |
+
+Pour afficher les activités de vérification de conformité de la communication pour une stratégie, sélectionnez le contrôle **Exporter les activités de révision** dans la page de vue d' **ensemble** pour une stratégie spécifique. Vous devez disposer des rôles administrateur *général* ou *administrateur de conformité des communications* pour exporter des activités de révision. Cette action génère un fichier d’audit au format. csv qui contient les informations suivantes :
+
+|**Field**|**Détails**|
+|:-----|:-----|
+| **CreationDate** | Date à laquelle l’activité de révision a été effectuée dans une stratégie. |
+| **ID utilisateur** | Utilisateur qui a effectué l’activité de révision dans une stratégie. |
+| **Opérations** | Les opérations de révision effectuées sur la stratégie. |
+| **AuditData** | Ce champ est la source de données principale pour toutes les activités de révision de stratégie. Toutes les activités de révision sont enregistrées et séparées par des virgules. |
 
 Vous pouvez également afficher les activités d’audit dans le journal d’audit unifié ou avec l’applet de commande PowerShell [Search-UnifiedAuditLog](https://docs.microsoft.com/powershell/module/exchange/search-unifiedauditlog) .
 
