@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7cf5655d-e523-4bc3-a93b-3ccebf44a01a
 description: 'Découvrez comment choisir le domaine à utiliser lors de la création de groupes Microsoft 365 en configurant des stratégies d’adresse de messagerie à l’aide de PowerShell. '
-ms.openlocfilehash: 5569f42f15835be02a20166e64ce09a08b146dd7
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 19caa4f4dfdef4895fa58f8bf5c198269844044f
+ms.sourcegitcommit: 9550298946f8accb90cd59be7b46b71d4bf4f8cc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44388208"
+ms.lasthandoff: 08/08/2020
+ms.locfileid: "46597376"
 ---
 # <a name="choose-the-domain-to-use-when-creating-microsoft-365-groups"></a>Choisir le domaine à utiliser lors de la création de groupes Microsoft 365
 
@@ -103,7 +103,7 @@ La modification d’un protocole EAP n’a pas d’impact sur les groupes qui on
   
 ## <a name="hybrid-requirements"></a>Exigences hybrides
 
-Si votre organisation est configurée dans un scénario hybride, consultez [configurer les groupes microsoft 365 avec l’environnement Exchange hybride local](https://go.microsoft.com/fwlink/p/?LinkId=785430) pour vous assurer que votre organisation remplit les conditions requises pour la création de groupes Microsoft 365. 
+Si votre organisation est configurée dans un scénario hybride, consultez [configurer les groupes microsoft 365 avec l’environnement Exchange hybride local](https://docs.microsoft.com/exchange/hybrid-deployment/set-up-microsoft-365-groups) pour vous assurer que votre organisation remplit les conditions requises pour la création de groupes Microsoft 365. 
   
 ## <a name="additional-info-about-using-email-address-policies-groups"></a>Informations supplémentaires sur l’utilisation des groupes de stratégies d’adresse de messagerie :
 

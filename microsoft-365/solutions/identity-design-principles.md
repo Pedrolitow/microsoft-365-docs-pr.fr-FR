@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 0a4dd8c3c93402409863b18b400184d4e60eeee6
-ms.sourcegitcommit: 0f71042edc7c3a7f10a7b92e1943abf51532cbf5
+ms.openlocfilehash: 427d266ea46c184a87b8b0b4fbe242adfb8deff1
+ms.sourcegitcommit: 9550298946f8accb90cd59be7b46b71d4bf4f8cc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "46521040"
+ms.lasthandoff: 08/08/2020
+ms.locfileid: "46597542"
 ---
 # <a name="to-identity-and-beyond--one-architects-viewpoint"></a>Pour identifier et au-delà : point de vue d’un architecte
 
@@ -26,7 +26,7 @@ Dans cet article, [Alex Shteynberg](https://www.linkedin.com/in/alex-shteynberg/
 
 ## <a name="about-the-author"></a>À propos de l’auteur
 
-:::image type="content" source="../media/solutions-architecture-center/identity-and-beyond-alex-shteynberg.jpg" alt-text="Shteynberg photo d’Alex":::
+![Shteynberg photo d’Alex](../media/solutions-architecture-center/identity-and-beyond-alex-shteynberg.jpg)
 
 Je suis un architecte technique principal dans le centre de [technologie Microsoft](https://www.microsoft.com/mtc?rtc=1)New York. Je travaille principalement avec des clients importants et des exigences complexes. Mon point de vue et ses opinions sont basés sur ces interactions et peuvent ne pas s’appliquer à toutes les situations. Toutefois, dans mon expérience, si nous pouvons aider les clients présentant les défis les plus complexes, nous pouvons aider tous les clients. 
 
@@ -106,7 +106,8 @@ Certains clients activent la Fédération + hachage principalement pour :
 
 J’aborde souvent les clients via le flux d’authentification client pour clarifier certaines idées. Le résultat ressemble à l’image ci-dessous, qui n’est pas aussi approprié que le processus interactif d’accès.
 
-:::image type="content" source="../media/solutions-architecture-center/identity-beyond-whiteboard-example.png" alt-text="exemple de conversation de tableau blanc":::
+
+![Exemple de conversation de tableau blanc](../media/solutions-architecture-center/identity-beyond-whiteboard-example.png)
 
 Ce type de dessin de tableau blanc illustre l’endroit où les stratégies de sécurité sont appliquées dans le flux d’une demande d’authentification. Dans cet exemple, les stratégies appliquées via le service de fédération Active Directory (AD FS) sont appliquées à la première demande de service, mais pas aux demandes de service ultérieures. Il s’agit d’au moins une raison de déplacer autant que possible les contrôles de sécurité dans le Cloud.
 
@@ -122,7 +123,7 @@ Par [Wikipédia](https://en.wikipedia.org/wiki/Authorization), « pour autorise
 
 Le moteur de stratégie d’Azure AD est implémenté à l’aide de [stratégies d’accès conditionnel](https://docs.microsoft.com/azure/active-directory/conditional-access/overview). Ce système repose sur des informations provenant d’un grand nombre d’autres systèmes de détection des menaces pour prendre des décisions dynamiques. Une vue simple peut ressembler à l’illustration suivante.
 
-:::image type="content" source="../media/solutions-architecture-center/identity-and-beyond-illustration-3.png" alt-text="Moteur de stratégie dans Azure AD":::
+![Moteur de stratégie dans Azure AD](../media/solutions-architecture-center/identity-and-beyond-illustration-3.png)
 
 La combinaison de tous ces signaux permet des stratégies dynamiques comme celles-ci :
 - Si une menace est détectée sur votre appareil, votre accès aux données est réduit sur le Web uniquement en l’absence de possibilité de téléchargement.
@@ -149,12 +150,11 @@ Azure AD offre [des fonctionnalités d’audit et de création de rapports](http
 
 Ne paniquez pas ! Cela ne signifie pas qu’Exchange est déconseillé (ou SharePoint, etc.). Il s’agit toujours d’un service principal. Ce que je veux dire, c’est que, pendant un certain temps, les fournisseurs de technologies ont subi des expériences utilisateur (UX) de transition pour inclure des composants de plusieurs services. Dans Microsoft 365, un exemple simple est «[pièces jointes modernes](https://support.office.com/article/Attach-files-or-insert-pictures-in-Outlook-email-messages-BDFAFEF5-792A-42B1-9A7B-84512D7DE7FC)» où les pièces jointes aux courriers électroniques sont stockées dans SharePoint Online ou OneDrive entreprise. 
 
-:::image type="content" source="../media/solutions-architecture-center/modern-attachments.png" alt-text="joindre un fichier à un message électronique":::
-
+![Joindre un fichier à un message électronique](../media/solutions-architecture-center/modern-attachments.png)
 
 En examinant le client Outlook, vous pouvez voir de nombreux services qui sont « connectés » dans le cadre de cette expérience, pas seulement Exchange. Cela inclut les groupes Azure AD, Microsoft Search, applications, Profile, conformité et Office 365. 
 
-:::image type="content" source="../media/solutions-architecture-center/identity-and-beyond-conceptual-screenshot.png" alt-text="Interface Outlook avec légendes":::
+![Interface Outlook avec légendes](../media/solutions-architecture-center/identity-and-beyond-conceptual-screenshot.png)
 
 Découvrez [Microsoft Fluid Framework](https://techcommunity.microsoft.com/t5/microsoft-365-blog/microsoft-ignite-blog-microsoft-fluid-framework-preview/ba-p/978268) pour obtenir un aperçu des fonctionnalités à venir. En mode aperçu maintenant, je peux lire et répondre directement aux conversations de teams dans Outlook. En fait, le [client teams](https://products.office.com/microsoft-teams/download-app) est l’un des exemples les plus visibles de cette stratégie. 
 
@@ -307,7 +307,7 @@ Il est important de comprendre les relations entre les différents services dans
 
 Le contrôle d’accès basé sur un rôle (RBAC) Azure permet une gestion des accès affinée pour Azure. À l’aide de RBAC, vous pouvez gérer l’accès aux ressources en accordant aux utilisateurs les autorisations minimales nécessaires pour effectuer leurs tâches. Les détails sont hors de portée pour ce document, mais pour plus d’informations sur RBAC, voir [qu’est-ce que le contrôle d’accès basé sur un rôle (RBAC) dans Azure ?](https://docs.microsoft.com/azure/role-based-access-control/overview) RBAC est important, mais seulement une partie des considérations de gouvernance pour Azure. Le [cadre d’adoption](https://docs.microsoft.com/azure/cloud-adoption-framework/govern/) sur le Cloud est un excellent point de départ pour en savoir plus. J’aime comment mon ami, Andres Ravinet, parcourt pas à pas les clients par le biais de divers composants pour décider de l’approche. La vue de niveau supérieur de différents éléments (pas aussi bonne que le processus à atteindre pour le modèle de client réel) ressemble à ceci :
 
-:::image type="content" source="../media/solutions-architecture-center/identity-beyond-illustration-5.png" alt-text="vue de niveau supérieur des composants Azure pour l’administration déléguée":::
+![Vue de niveau supérieur des composants Azure pour l’administration déléguée](../media/solutions-architecture-center/identity-beyond-illustration-5.png)
 
 Comme vous pouvez le voir dans l’image ci-dessus, de nombreux autres services doivent être considérés comme faisant partie de la conception (par exemple : [stratégies Azure](https://docs.microsoft.com/azure/governance/policy/overview), [projets Azure](https://docs.microsoft.com/azure/governance/blueprints/overview), [groupes de gestion](https://docs.microsoft.com/azure/governance/management-groups/), etc.).
 

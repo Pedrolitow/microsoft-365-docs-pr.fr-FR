@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -18,18 +18,14 @@ ms.custom:
 - SaRA
 - AdminSurgePortfolio
 search.appverid:
-- BCS160
 - MET150
-- MOE150
-- BEA160
-- GEA150
-description: Découvrez comment effectuer une mise à niveau vers un nouvel abonnement.
-ms.openlocfilehash: 2a0dcff5b4326fc75b4e8e4154ee73e0ac17897d
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+description: Découvrez comment effectuer une mise à niveau vers une autre offre.
+ms.openlocfilehash: 55667646637cfd2ad6dd56e2361b0c41b136a79e
+ms.sourcegitcommit: 9550298946f8accb90cd59be7b46b71d4bf4f8cc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44403173"
+ms.lasthandoff: 08/08/2020
+ms.locfileid: "46597618"
 ---
 # <a name="upgrade-to-a-different-plan"></a>Opter pour un abonnement différent
 
@@ -78,6 +74,10 @@ Lorsque vous utilisez l’onglet **mise à niveau** , les plans vers lesquels vo
 
 Si vous souhaitez passer à un plan avec moins de services, vous pouvez [modifier les plans manuellement](change-plans-manually.md)ou [appeler le support](../../admin/contact-support-for-business-products.md) pour obtenir de l’aide.
 
+## <a name="i-only-want-to-upgrade-some-of-my-users-how-do-i-do-that"></a>Je souhaite seulement mettre à niveau certains de mes utilisateurs. Comment procéder ?
+
+Si vous souhaitez uniquement mettre à niveau certains utilisateurs vers un autre plan, mais que vous devez d’abord acheter le nouvel abonnement, consultez la rubrique [modifier les offres manuellement](change-plans-manually.md). Si vous disposez déjà de l’abonnement pour lequel vous souhaitez mettre à niveau des utilisateurs, consultez la rubrique [déplacer des utilisateurs vers un autre abonnement](move-users-different-subscription.md).
+
 ## <a name="why-some-changes-take-longer"></a>Pourquoi certaines modifications prennent plus de temps
 
 **Nombre d’utilisateurs affectés :** Si vous avez un grand nombre d’utilisateurs affectés, la mise à niveau sera plus longue pour les déplacer vers le nouveau plan.
@@ -88,7 +88,7 @@ Si vous souhaitez passer à un plan avec moins de services, vous pouvez [modifie
 
 Si vous ne voyez aucun plan sous l’onglet **mise à niveau** , cela signifie que votre offre ne peut pas être mise à niveau automatiquement. Dans certains cas, vous pouvez résoudre le problème afin de pouvoir afficher les offres disponibles pour la mise à niveau, ou vous pouvez mettre à niveau ou modifier les plans manuellement.
 
- ### <a name="why-are-there-no-plans-listed-to-upgrade"></a>Pourquoi existe-t-il des plans répertoriés pour la mise à niveau ?
+### <a name="why-are-there-no-plans-listed-to-upgrade"></a>Pourquoi existe-t-il des plans répertoriés pour la mise à niveau ?
 
 #### <a name="you-cant-upgrade-subscriptions-now-because-you-have-more-users-than-licenses"></a>Vous ne pouvez pas mettre à niveau les abonnements maintenant car vous disposez de plus d’utilisateurs que de licences.
 

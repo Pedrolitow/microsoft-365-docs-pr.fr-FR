@@ -26,12 +26,12 @@ search.appverid:
 - MOE150
 ms.assetid: 6383f56d-3d09-4dcb-9b41-b5f5a5efd611
 description: Ajoutez votre domaine à Microsoft 365 dans le centre d’administration Microsoft 365 en ajoutant un enregistrement DNS au niveau de votre hôte DNS. L’Assistant installation vous guide tout au long du processus.
-ms.openlocfilehash: ccebd7dd5e78663b7fd1d5318b17dfbc09bd8fb0
-ms.sourcegitcommit: 5b769f74bcc76ac8d38aad815d1728824783cd9f
+ms.openlocfilehash: 8b70466e5cf82d9cf5be67162263f28ab5bd0d5d
+ms.sourcegitcommit: 20c219332270f1013d48b39773dd0e48dabad9e4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "45079724"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "46592297"
 ---
 # <a name="add-a-domain-to-microsoft-365"></a>Ajouter un domaine à Microsoft 365
 
@@ -124,7 +124,7 @@ Suivez les étapes ci-dessous pour ajouter un enregistrement personnalisé pour 
 
 5. Sélectionnez le type d’enregistrement DNS que vous souhaitez ajouter et tapez les informations pour le nouvel enregistrement.
     
-6. Sélectionnez **Enregistrer**.
+6. Cliquez sur **Enregistrer**.
 
 ## <a name="registrars-with-domain-connect"></a>Bureaux d’inscriptions avec connexion au domaine
 
@@ -139,6 +139,7 @@ Dans l’Assistant, nous confirmons que vous êtes propriétaire du domaine, pui
 
 - [1 &amp; 1 Ionos](https://www.1and1.com/)
 - [123Reg](https://www.123-reg.co.uk/)
+- [Cloudflare](https://www.cloudflare.com/)
 - [GoDaddy](https://www.godaddy.com/)
 - [WordPress](https://wordpress.com/)
 - [Plesk](https://www.plesk.com/)
