@@ -13,15 +13,15 @@ ms.prod: microsoft-365-enterprise
 localization_priority: Priority
 description: Découvrez comment Microsoft 365 aide les organisations énergétiques à évoluer vers une plateforme de collaboration moderne, tout en assurant la sécurité et la conformité des données et des systèmes avec les réglementations.
 ms.custom: ''
-ms.openlocfilehash: bb45cf1abf101966514eb4f54090b3ac7cbee645
-ms.sourcegitcommit: 0f71042edc7c3a7f10a7b92e1943abf51532cbf5
+ms.openlocfilehash: d68615d96f0f7294c16ccb7a4fba9968f4948266
+ms.sourcegitcommit: 9550298946f8accb90cd59be7b46b71d4bf4f8cc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "46521016"
+ms.lasthandoff: 08/08/2020
+ms.locfileid: "46597454"
 ---
 # <a name="key-compliance-and-security-considerations-for-the-energy-industry"></a>Principales considérations en matière de conformité et de sécurité pour le secteur de l’énergie
-:::image type="content" source="../media/solution-arch-center/MSC17_global_016.png" alt-text="Illustration métaphorique pour une vue globale de plusieurs industries utilisant le cloud":::
+![Illustration métaphorique pour une vue globale de plusieurs industries utilisant le cloud](../media/solution-arch-center/MSC17_global_016.png)
 ## <a name="introduction"></a>Introduction
 Le secteur de l’énergie fournit à la société du carburant et des infrastructures essentielles sur lesquelles elle peut compter chaque jour. Afin d’assurer la fiabilité des infrastructures liées aux réseaux électriques, les autorités de régulation imposent des normes strictes aux organisations du secteur de l’énergie. Ces normes de régulation concernent non seulement la production et la transmission d’électricité, mais également les données et les communications qui sont essentielles au fonctionnement quotidien des sociétés énergétiques. 
 
