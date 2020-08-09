@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: En savoir plus sur les stratégies de rétention et les étiquettes de rétention, qui permettent de conserver les éléments dont vous avez besoin et de supprimer ceux qui ne vous servent pas.
-ms.openlocfilehash: b435d80a6f2ce4f056e446bbc32e5580d063d4a9
-ms.sourcegitcommit: a53af7a228bb1f58cb8128a69a19da49f9e28700
+ms.openlocfilehash: ee256271b3520011db586d42e579b64b439a6210
+ms.sourcegitcommit: b812771805c8b9e92b64deb1928e265e60d80405
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "45372477"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "46588206"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>En savoir plus sur les stratégies et les étiquettes de rétention
 
@@ -233,10 +233,24 @@ Pour comprendre comment et pourquoi une étiquette de rétention est appliquée 
 
 Une étiquette de rétention attribuée de manière explicite prévaut sur une étiquette de rétention attribuée de manière implicite. Si vous souhaitez en savoir plus, consultez la section de cette page nommée [Principes de rétention et priorité](retention.md#the-principles-of-retention-or-what-takes-precedence).
 
-#### <a name="using-content-search-to-find-all-content-with-a-specific-retention-label-applied-to-it"></a>Utilisation de la recherche de contenu pour rechercher tout le contenu portant une étiquette de rétention spécifique
+#### <a name="monitoring-retention-labels"></a>Contrôle des étiquettes de conservation
+
+Depuis le centre de conformité Microsoft 365, utilisez l'outil **Aperçu** > **de la classification des données** pour surveiller l'utilisation de vos étiquettes de conservation chez votre locataire et identifier où se trouvent vos articles étiquetés. Pour plus d'informations, notamment sur les conditions préalables importantes, voir [Connaître ses données - Aperçu de la classification des données](data-classification-overview.md).
+
+Vous pouvez ensuite approfondir vos informations à l’aide de [Explorateur de contenu](data-classification-content-explorer.md) et l’[explorateur d'activités](data-classification-activity-explorer.md).
+
+> [!TIP]
+>Envisagez d’utiliser d’autres informations sur la classification des données, telles que les classifieurs et les types d’informations sensibles, pour vous aider à identifier le contenu que vous devrez peut-être conserver ou supprimer, ou à gérer comme enregistrements.
+
+Le Centre de sécurité et conformité Office 365 contient des informations de présentation équivalentes pour les étiquettes de rétention de **tableau de bord** > **gouvernance d’informations**, ainsi que des informations plus détaillées de **la gouvernance des informations** > **d’activité des étiquettes**. Pour plus d’informations sur la surveillance des étiquettes de rétention dans cet ancien centre d’administration, voir la documentation suivante :
+- [Afficher les rapports de gouvernance des données](view-the-data-governance-reports.md)
+- [Afficher l’utilisation d’étiquettes à l'aide des analyses d’étiquettes](label-analytics.md)
+- [Afficher l’activité des étiquettes pour les documents](view-label-activity-for-documents.md)
+
+#### <a name="using-content-search-to-find-all-content-with-a-specific-retention-label"></a>Utilisation de la recherche de contenu pour rechercher tout le contenu portant une étiquette de rétention spécifique
 
 Lorsque les étiquettes de rétention sont affectées au contenu par les utilisateurs ou automatiquement, vous pouvez utiliser la recherche de contenu pour rechercher les contenus classés et dotés d’étiquettes de rétention spécifiques.
-  
+
 Lorsque vous créez une recherche de contenu, sélectionnez la condition **Étiquette de rétention**, puis entrez le nom complet ou une partie du nom de l’étiquette de rétention et utilisez un caractère générique. Si vous souhaitez en savoir plus, consultez la page [Requêtes par mots-clés et conditions de recherche pour la recherche de contenu](keyword-queries-and-search-conditions.md).
   
 ![État des étiquettes de rétention](../media/retention-label-condition.png)
@@ -258,6 +272,7 @@ Utilisez le tableau suivant pour savoir si vous devez utiliser une stratégie ou
 |Démarrage de la période de rétention à la date d’étiquetage ou en fonction d’un événement | Non | Oui |
 |Révisions avant élimination | Non| Oui |
 |Preuve de la destruction pendant 7 ans | Non |Oui, lorsque l’élément est déclaré comme enregistrement|
+|Audit des activités administratives| Oui | Oui|
 |Identification des éléments soumis à une stratégie de rétention : <br /> - Recherche de contenu <br /> - Page classification des données, explorateur de contenu, explorateur d’activité | <br /> Non <br /> Non | <br /> Oui <br /> Oui|
 
 Notez que vous pouvez utiliser les stratégies de rétention et les étiquettes de rétention comme méthodes de rétention complémentaires. Par exemple :
@@ -292,6 +307,10 @@ Explication pour les quatre niveaux :
 4. **La période de suppression la plus courte l’emporte** De même, si du contenu est soumis à plusieurs paramètres de rétention qui suppriment du contenu sans aucune période de rétention, celui-ci est supprimé à la fin de la période de rétention la plus courte. 
 
 Enfin, une stratégie de rétention ou une étiquette de rétention ne peut pas supprimer définitivement du contenu en attente pour eDiscovery. Une fois cette conservation levée, le contenu est de nouveau éligible pour le processus de nettoyage dans les emplacements sécurisés liés à la charge de travail.
+
+## <a name="auditing-retention-configuration"></a>Audit de la configuration de rétention
+
+Les actions de l'administrateur concernant les politiques de rétention et les étiquettes de rétention sont enregistrées dans le journal d'audit lorsque [l'audit est activé](turn-audit-log-search-on-or-off.md). Par exemple, un événement d’audit est créé lors de la création, la configuration ou la suppression d’une politique de rétention ou d’une étiquette. Pour obtenir la liste complète, voir [Politiques de rétention et activités d’étiquette de rétention](search-the-audit-log-in-security-and-compliance.md#retention-policy-and-retention-label-activities).
 
 ## <a name="powershell-cmdlets-for-retention-policies-and-retention-labels"></a>Applets de commande pour les stratégies et étiquettes de rétention
 
