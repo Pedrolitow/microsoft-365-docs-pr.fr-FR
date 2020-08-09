@@ -16,16 +16,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Le tableau de bord de classification des données vous permet de consulter les données sensibles qui ont été trouvées et classifiées au sein de votre organisation.
-ms.openlocfilehash: ca08f292bae70d121a3ef157a482a09590bd7ba1
-ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
+ms.openlocfilehash: 3198a1981ed7d4d5428452b55aeb22b234712354
+ms.sourcegitcommit: b812771805c8b9e92b64deb1928e265e60d80405
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45430327"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "46588216"
 ---
 # <a name="know-your-data---data-classification-overview"></a>Connaissez vos données : vue d’ensemble de la classification des données
 
-En tant qu’administrateur Microsoft 365 ou administrateur de conformité, vous pouvez évaluer et baliser les contenus de votre organisation afin de contrôler leur destination, de les protéger où qu’ils soient et de vous assurer qu’ils sont conservés et supprimés en fonction des besoins de votre organisation. Pour ce faire, vous devez utiliser les [étiquettes de confidentialité](sensitivity-labels.md), les [étiquettes de rétention](retention.md#retention-labels) et la classification des informations sensibles par types. Plusieurs méthodes s’offrent à vous pour effectuer la découverte, l’évaluation et le balisage, mais le résultat final est de disposer d’un grand nombre de documents et de messages électroniques balisés et classifiés avec ces étiquettes. Après avoir appliqué vos étiquettes de rétention et vos étiquettes de confidentialité, vous souhaiterez voir de quelle manière elles sont utilisées par vos clients. La page classification des données fournit une visibilité dans ce corps de contenu, notamment :
+En tant qu'administrateur Microsoft 365 ou administrateur de conformité, vous pouvez évaluer puis baliser le contenu de votre organisation afin de contrôler où il va, de le protéger où qu'il soit et de vous assurer qu'il est préservé et supprimé en fonction des besoins de votre organisation. Pour ce faire, vous devez utiliser les [étiquettes de confidentialité](sensitivity-labels.md), les [étiquettes de rétention](retention.md#retention-labels) et la classification des informations sensibles par types. Plusieurs méthodes s’offrent à vous pour effectuer la découverte, l’évaluation et le balisage, mais le résultat final est de disposer d’un grand nombre de documents et de messages électroniques balisés et classifiés avec ces étiquettes. Après avoir appliqué vos étiquettes de rétention et vos étiquettes de confidentialité, vous souhaiterez voir de quelle manière elles sont utilisées par vos clients. La page classification des données fournit une visibilité dans ce corps de contenu, notamment :
 
 - le nombre d’éléments qui ont été classifiés en tant que types d’informations sensibles et la nature de ces classifications
 - les étiquettes de confidentialité les plus utilisées dans Microsoft 365 et Azure Information Protection
@@ -99,19 +99,19 @@ La carte d’étiquette de confidentialité affiche le nombre d’éléments (ad
 ![répartition du contenu par capture d’écran de l’espace réservé pour la classification des étiquettes de confidentialité](../media/data-classification-top-sensitivity-labels-applied.png)
 
 > [!NOTE]
-> Si vous n’avez pas créé ou publié d’étiquettes de confidentialité ou si aucune étiquette de confidentialité n’a été appliquée à votre contenu, cette carte affiche le message « Aucune étiquette de confidentialité détectée ». Pour commencer à utiliser les étiquettes, voir :
->- [étiquettes de confidentialité](sensitivity-labels.md) ou pour AIP [configurer la stratégie Azure Information Protection](https://docs.microsoft.com/azure/information-protection/configure-policy)
+> Si vous n’avez pas créé ou publié d’étiquettes de confidentialité ou si aucune étiquette de confidentialité n’a été appliquée à votre contenu, cette carte affiche le message « Aucune étiquette de confidentialité détectée ». Pour commencer à utiliser les étiquettes de confidentialité, voir :
+>- [Commencez avec les étiquettes de sensibilité](get-started-with-sensitivity-labels.md) ou pour AIP [Configurer la politique de protection des informations sur Azure](https://docs.microsoft.com/azure/information-protection/configure-policy)
 
 ## <a name="top-retention-labels-applied-to-content"></a>Principales étiquettes de rétention appliquées au contenu
 
-Les étiquettes de rétention sont utilisées pour gérer la disposition du contenu au sein de votre organisation. Lorsqu’elles sont appliquées, elles peuvent être utilisées pour contrôler la durée de conservation d’un document avant sa suppression, s’il doit être révisé avant sa suppression, la date d’expiration de sa période de rétention, ou s’il doit être marqué comme un enregistrement qui ne peut pas être supprimé. Pour plus d’informations, voir [En savoir plus sur les stratégies et les étiquettes de rétention](retention.md).
+Les étiquettes de rétention sont utilisées pour gérer la disposition du contenu au sein de votre organisation. Lorsqu’elles sont appliquées, elles peuvent être utilisées pour contrôler la durée de conservation d’un document avant sa suppression, s’il doit être révisé avant sa suppression, la date d’expiration de sa période de rétention, ou s’il doit être marqué comme un enregistrement. Pour plus d’informations, voir [En savoir plus sur les stratégies et les étiquettes de rétention](retention.md).
 
 La carte étiquettes de rétention les plus utilisées vous indique le nombre d’éléments ayant une étiquette de rétention donnée.
 
 ![capture d’écran de l’espace réservé pour les étiquettes de rétention les plus utilisées](../media/data-classification-top-retention-labels-applied.png)
 
 > [!NOTE]
-> Si cette carte affiche le message, « Aucune étiquette de rétention détectée », cela veut dire que vous n’avez pas créé ou publié d’étiquettes de rétention ou qu’aucune étiquette de rétention n’a été appliquée à votre contenu. Pour commencer à utiliser les étiquettes de rétention, voir :
+> Si cette carte affiche le message « Aucune étiquette de rétention détectée », cela veut dire que vous n’avez pas créé ou publié d’étiquettes de rétention ou qu’aucune étiquette de rétention n’a été appliquée à votre contenu. Pour commencer à utiliser les étiquettes de rétention, voir :
 >- [Prise en main des stratégies et des étiquettes de rétention](get-started-with-retention.md)
 
 ## <a name="top-activities-detected"></a>Principales activités détectées
