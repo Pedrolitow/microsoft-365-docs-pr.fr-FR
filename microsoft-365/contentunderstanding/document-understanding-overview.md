@@ -8,15 +8,15 @@ audience: admin
 ms.topic: article
 ms.service: ''
 search.appverid: ''
-localization_priority: Normal
+localization_priority: None
 ROBOTS: NOINDEX, NOFOLLOW
 description: Obtenez une vue d’ensemble de la compréhension des documents dans le projet cortex.
-ms.openlocfilehash: 13b0aa3742c6cf1c0c1123996c683d13c6577876
-ms.sourcegitcommit: ea5e2f85bd6b609658545b120c7e08789b9686fd
+ms.openlocfilehash: bdebc8a8726a7b9a77eb9a1095f83e937cf36cb1
+ms.sourcegitcommit: a3a5dc541b0c971608cc86ef480509c25a13ca60
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/01/2020
-ms.locfileid: "46537134"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46612713"
 ---
 # <a name="document-understanding-overview-preview"></a>Vue d’ensemble du document de présentation (aperçu)
 > [!Note] 

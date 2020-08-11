@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: ac1491a9257ff7169c0e2a10b014897d47a5d14b
-ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
+ms.openlocfilehash: e44411fdc14279dac92b8829503fd636e3225600
+ms.sourcegitcommit: 51f040a4edb8dd52521a5d7b0f7a975986a1af10
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "44011838"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46608232"
 ---
 # <a name="microsoft-security-portals-and-admin-centers"></a>Portails de sécurité Microsoft et centres d’administration
 Tandis que le [Centre de sécurité Microsoft 365](overview-security-center.md) est le nouveau domicile de la surveillance et de la gestion de la sécurité de vos identités, données, périphériques et applications, vous devrez accéder à différents portails pour certaines tâches spécialisées.
@@ -53,4 +53,4 @@ Bien que ces portails ne soient pas spécifiquement destinés à la gestion de l
 | Centre de conformité Microsoft 365 | Gérer les stratégies de gestion des données et garantir [la conformité aux réglementations](https://docs.microsoft.com/microsoft-365/compliance/offering-home?view=o365-worldwide) | [compliance.microsoft.com](https://compliance.microsoft.com/) |
 | Centre d’administration Microsoft 365 | Configurer les services Microsoft 365 ; gérer les rôles, les licences et suivre les mises à jour de vos services Microsoft 365 | [admin.microsoft.com](https://admin.microsoft.com/) |
 | Centre d’administration Microsoft Endpoint Manager | Utiliser le [Gestionnaire de points de terminaison Microsoft](https://docs.microsoft.com/mem/configmgr/) pour gérer et sécuriser les appareils à l’aide de fonctionnalités Intune et configuration combinées | [devicemanagement.microsoft.com](https://devicemanagement.microsoft.com/) |
-| Portail Microsoft Intune | Utiliser [Microsoft Intune](https://docs.microsoft.com/intune/fundamentals/what-is-intune) pour déployer des stratégies d’appareil et surveiller les périphériques pour la conformité | [portal.azure.com/#blade/Microsoft_Intune_DeviceSettings](https://portal.azure.com/#blade/Microsoft_Intune_DeviceSettings/ExtensionLandingBlade/overview)
+| Portail Microsoft Intune | Utiliser [Microsoft Intune](https://docs.microsoft.com/intune/fundamentals/what-is-intune) pour déployer des stratégies d’appareil et surveiller les périphériques pour la conformité | [endpoint.microsoft.com](https://endpoint.microsoft.com/#blade/Microsoft_Intune_DeviceSettings/DevicesMenu/overview)

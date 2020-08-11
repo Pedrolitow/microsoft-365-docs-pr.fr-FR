@@ -8,15 +8,15 @@ audience: admin
 ms.topic: article
 ms.service: ''
 search.appverid: ''
-localization_priority: Normal
+localization_priority: None
 ROBOTS: NOINDEX, NOFOLLOW
 description: Découvrez comment créer un extracteur
-ms.openlocfilehash: 76cb17df069c6905080baabb0b57d765fe5cc94c
-ms.sourcegitcommit: 3a47efcbdf3d2b39caa2798ea5be806839b05ed1
+ms.openlocfilehash: 64dede9f6613da82c65ca12c6c335a25301f5b9e
+ms.sourcegitcommit: a3a5dc541b0c971608cc86ef480509c25a13ca60
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/01/2020
-ms.locfileid: "46540105"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46612761"
 ---
 # <a name="create-an-extractor-preview"></a>Créer un extracteur (aperçu)
 > [!Note] 

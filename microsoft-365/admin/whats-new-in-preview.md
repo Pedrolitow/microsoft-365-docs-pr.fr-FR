@@ -21,12 +21,12 @@ description: Centre d’administration Microsoft 365-Découvrez les fonctionnali
 ms.custom:
 - MACDashWhatsNew
 - AdminSurgePortfolio
-ms.openlocfilehash: 0bb0955e08c187ae7b425228f435566bcd8e01d7
-ms.sourcegitcommit: 0650da0e54a2b484a3156b3aabe44397fbb38e00
+ms.openlocfilehash: 11a48ecf78c09c8e597d94821f747bf6ebd7e444
+ms.sourcegitcommit: d39694d7b2c98350b0d568dfd03fa0ef44ed4c1d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "45015992"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46602008"
 ---
 # <a name="whats-new-in-the-microsoft-365-admin-center"></a>Nouveautés du centre d’administration Microsoft 365
 
@@ -102,7 +102,7 @@ Ce mois-ci, nous avons publié un nouveau site [https://docs.microsoft.com](http
 
 Eh bien, nous l’avons fait ! Nous avons adopté la deuxième étape vers une expérience de rôles unifiée et vous pouvez désormais gérer les rôles Intune dans le centre d’administration 365 de Microsoft. Vous pouvez également utiliser des fonctionnalités telles que la possibilité de rechercher des rôles et d’afficher des autorisations de rôle. Cela signifie que vous n’avez pas besoin de disposer de deux outils distincts pour gérer les rôles pour Microsoft 365 et Intune. Lorsque vous vous connectez au centre d’administration Microsoft 365, vous verrez qu’il y a deux tableaux croisés dynamiques sur la page rôles, un pour Azure AD et un pour Intune.
 
-:::image type="content" source="../media/MAC-WN-IntuneRoles.png" alt-text="Page rôles avec le tableau croisé dynamique Intune sélectionné":::
+![Page rôles avec le tableau croisé dynamique Intune sélectionné](../media/MAC-WN-IntuneRoles.png)
 
 ### <a name="sync-message-center-posts-to-planner"></a>Synchroniser les publications du centre de messages vers le planificateur
 
@@ -162,7 +162,7 @@ Ce mois-ci, nous avons deux mises à jour pour les groupes :
 
 #### <a name="for-admins-and-business-owners"></a>Pour les administrateurs et les propriétaires d’entreprise
 
-- [Permettre à votre petite entreprise de travailler à distance](https://support.microsoft.com/office/9b91a85a-39b4-40a6-a590-0f9bea0ba8e6)
+- [Permettre à votre petite entreprise de travailler à distance ](https://support.microsoft.com/office/9b91a85a-39b4-40a6-a590-0f9bea0ba8e6)
 - [Exécution d’une petite entreprise à distance](https://support.microsoft.com/office/9ac1a0f1-789b-4143-b954-5821d5d89298)
 - [S’inscrire à Microsoft Business Basic](https://support.microsoft.com/office/9ac1a0f1-789b-4143-b954-5821d5d89298)
 - [Configuration de la connexion à deux facteurs](https://support.microsoft.com/office/9ac1a0f1-789b-4143-b954-5821d5d89298)
@@ -173,19 +173,19 @@ Ce mois-ci, nous avons deux mises à jour pour les groupes :
 
 Nous avons reçu beaucoup de commentaires des administrateurs sur la façon dont il est difficile d’attribuer des licences lors de l’ajout d’utilisateurs. Nous avons effectué la première mise à jour de ce correctif et nous avons migré vers un service en arrière-plan plus fiable pour traiter ces demandes. En cas de problème, vous recevrez un message d’erreur qui vous permettra de réessayer.
 
-:::image type="content" source="../media/MAC-WN-ImprovedLicensing.png" alt-text="Ajoutez la page de confirmation de l’utilisateur avec l’erreur.":::
+![Ajoutez la page de confirmation de l’utilisateur avec l’erreur.](../media/MAC-WN-ImprovedLicensing.png)
 
 ### <a name="microsoft-teams-home-page-card"></a>Fiche de page d’accueil de Microsoft teams
 
 Avec la mise à niveau de l’utilisation de teams, certaines développées obtiendront une carte de tableau de bord épinglée qui rend les équipes de tournage plus détectables. La carte comporte également des liens vers des formations et des documents pour aider votre organisation à travailler à distance. Il vous suffit d’accéder à la page d' **Accueil** pour afficher la nouvelle carte.
 
-:::image type="content" source="../media/MAC-WN-TeamsCard.PNG" alt-text="Fiche de page d’accueil de Microsoft teams":::
+![Fiche de page d’accueil de Microsoft teams](../media/MAC-WN-TeamsCard.PNG)
 
 ### <a name="customize-your-organizations-sharepoint-mobile-app-theme"></a>Personnaliser le thème de l’application mobile SharePoint de votre organisation
 
 À l’aide du centre d’administration Microsoft 365, vous pouvez désormais personnaliser le thème de votre organisation dans l’application mobile SharePoint pour iOS et l’application mobile SharePoint pour Android. Cette fonctionnalité offre une expérience d’application intranet mobile qui peut correspondre à votre SharePoint Online pour les employés en déplacement. La personnalisation de thème inclut votre image de logo, la couleur de la barre de navigation, les couleurs du texte et des icônes, ainsi que les couleurs d’accentuation, ce qui facilite la reconnaissance.
 
-:::image type="content" source="../media/MAC-WN-CustThemeSP.png" alt-text="Diagramme mappant les paramètres du centre d’administration vers l’application mobile.":::
+![Diagramme mappant les paramètres du centre d’administration vers l’application mobile.](../media/MAC-WN-CustThemeSP.png)
 
 ### <a name="improvements-to-the-add-a-group-wizard"></a>Améliorations apportées à l’Assistant Ajout d’un groupe
 
@@ -325,7 +325,7 @@ En novembre, nous avons publié un grand nombre de chemins d’apprentissage ver
 - [Mettre à niveau Microsoft Office pour les services informatiques à l’échelle](https://docs.microsoft.com/learn/paths/m365-office-for-it/)
 - [Mettre à disposition des applications et des bureaux distants à partir d’Azure avec le bureau virtuel Windows](https://docs.microsoft.com/learn/paths/m365-wvd/)
 - [Moderniser votre lieu de travail avec Microsoft 365 et Surface pour les entreprises](https://docs.microsoft.com/learn/paths/modernize-workplace-with-m365-and-surface/)
-- [Protéger les identités et les accès avec Microsoft 365](https://docs.microsoft.com/learn/paths/m365-identity/)
+- [Protéger les identités et accès avec Microsoft 365](https://docs.microsoft.com/learn/paths/m365-identity/)
 - [Protéger les informations d’entreprise avec Microsoft 365](https://docs.microsoft.com/learn/paths/m365-information-protection/)
 - [Gérer la sécurité avec Microsoft 365](https://docs.microsoft.com/learn/paths/m365-security-management/)
 - [Faire face aux menaces avec Microsoft 365 et la protection Microsoft contre les menaces.](https://docs.microsoft.com/learn/paths/m365-security-threat-protection/)
@@ -396,14 +396,14 @@ Une mise à jour a été mise à jour vers l’un des assistants d’installatio
 - **Sécurisez les ordinateurs Windows 10** : configurez des stratégies pour mieux protéger vos appareils Windows 10 contre les virus, les programmes malveillants et les attaques des pirates.
 - **Installer automatiquement Office** : lorsque vous activez cette fonction et que les utilisateurs ont connecté leurs PC à Microsoft 365 Business, leurs ordinateurs sont automatiquement mis à jour vers les dernières applications Office et restent à jour.
 
-## <a name="august-2019"></a>Août 2019
+## <a name="august-2019"></a>Août 2019
 
 ### <a name="billing"></a>Facturation
 
 Nous disposons de mises à jour pour la facturation et les abonnements ce mois-ci :
 
 - Abonnements basés sur des appareils : vous pouvez attribuer ou annuler l’affectation de licences **Microsoft 365 Apps for Education (Device)** à des appareils dans le centre d’administration Microsoft 365. **Microsoft 365 Apps for Education (Device)** est une licence de module complémentaire qui vous permet d’attribuer une licence à un appareil. Accédez à **facturation**de  >  **vos produits** pour trouver et acheter la licence.
-- Gestion des licences basées sur les utilisateurs : nous avons mis à jour la manière dont vous attribuez des licences aux utilisateurs actifs des **utilisateurs dans**  >  **Active users** le nouveau style. Pour plus d’informations, voir :
+- Gestion des licences basées sur les utilisateurs : nous avons mis à jour la manière dont vous attribuez des licences aux utilisateurs actifs des **utilisateurs dans**  >  **Active users** le nouveau style. Pour plus d’informations, reportez-vous aux rubriques suivantes :
   - [Attribuer des licences aux utilisateurs](manage/assign-licenses-to-users.md)
   - [Annuler l'assignation des licences aux utilisateurs](manage/remove-licenses-from-users.md)
 

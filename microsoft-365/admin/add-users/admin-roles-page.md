@@ -19,18 +19,18 @@ search.appverid:
 - MET150
 - MOE150
 description: Les rôles d’administrateur correspondent à des fonctions professionnelles et accordent l'autorisation d'effectuer des tâches spécifiques dans le centre d’administration. Par exemple, l’administrateur du service ouvre les tickets de support avec Microsoft.
-ms.openlocfilehash: f557d00e21659880a96e4cd1936ab40d4b5a2dec
-ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
+ms.openlocfilehash: 1f662221a2bcd8bc75c8226b2da726966a096be6
+ms.sourcegitcommit: d39694d7b2c98350b0d568dfd03fa0ef44ed4c1d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/31/2020
-ms.locfileid: "44432110"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46602092"
 ---
 # <a name="get-started-with-the-roles-page"></a>Prise en main de la page rôles
 
 Sur la page rôles, vous pouvez accorder aux utilisateurs les autorisations nécessaires pour effectuer des tâches dans les centres d’administration. Cela permet à votre organisation de répartir les tâches vers les personnes appropriées et de sécuriser vos données.
 
-:::image type="content" source="../../media/roles-main-page.png" alt-text="Figure illustrant les rôles d’administrateur":::
+![Figure illustrant les rôles d’administrateur](../../media/roles-main-page.png)
 
 > [!TIP]
 > Vous recherchez des descriptions de rôles détaillées ? Consultez la rubrique [autorisations de rôle d’administrateur dans Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles) et [à propos des rôles](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)d’administrateur.
@@ -39,7 +39,7 @@ Sur la page rôles, vous pouvez accorder aux utilisateurs les autorisations néc
 
 Vous pouvez exporter la liste d’administration, ainsi que Rechercher et filtrer par rôle.
 
-:::image type="content" source="../../media/admin-role-page-options.png" alt-text="Filtrer ou importer des rôles d’administrateur":::
+![Filtrer ou importer des rôles d’administrateur](../../media/admin-role-page-options.png)
 
 |||
 |:-----|:-----|
@@ -96,12 +96,12 @@ Dans le centre d’administration :
 
 - Sélectionnez jusqu’à 3 rôles et choisissez **comparer les rôles** pour afficher les autorisations de chaque rôle.
 
-:::image type="content" source="../../media/compare-roles-list.png" alt-text="Figure illustrant une comparaison des rôles d’administrateur":::
+![Figure illustrant une comparaison des rôles d’administrateur](../../media/compare-roles-list.png)
 
 ::: moniker-end
 
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Voir aussi
 
 [À propos des rôles d’administrateur Microsoft 365](about-admin-roles.md)
 
-[Attribuer des rôles d'administrateur](assign-admin-roles.md)
+[Attribuer des rôles administrateur](assign-admin-roles.md)

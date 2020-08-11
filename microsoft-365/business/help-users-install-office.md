@@ -27,12 +27,12 @@ search.appverid:
 - MET150
 ms.assetid: cbc6bfe5-565a-4fb8-95f0-b06e7b74ac46
 description: Aidez vos utilisateurs à installer des applications Office sur des appareils Windows 10 et à installer facilement Office sur des PC Windows 10 à partir du centre d’administration 365 de Microsoft.
-ms.openlocfilehash: 9c670ba6727d47276291b1d1ba35b6431a293200
-ms.sourcegitcommit: e5bc49f0a25954d008b6cc09c2b98bb7bfe1aa2f
+ms.openlocfilehash: 680c1c4e43a037c6afd109220090f387b207f8b1
+ms.sourcegitcommit: d39694d7b2c98350b0d568dfd03fa0ef44ed4c1d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44786233"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46601980"
 ---
 # <a name="help-your-users-install-office-on-windows-10-devices"></a>Aider vos utilisateurs à installer Office sur des appareils Windows 10
 
@@ -60,8 +60,7 @@ Si vous avez trouvé cette vidéo utile, consultez les [séries de formations co
     
 4. Sur le volet Office des utilisateurs de messagerie, cliquez sur le **lien pour télécharger** le volet Office, sélectionnez les utilisateurs auxquels vous souhaitez envoyer un courrier électronique, puis **envoyez un courrier électronique aux utilisateurs sélectionnés**.
 
-    
-      :::image type="content" source="../media/sendemailtousers.png" alt-text="Sélectionnez les utilisateurs pour envoyer des courriers électroniques avec le lien de téléchargement Office.":::
+   ![Sélectionnez les utilisateurs pour envoyer des courriers électroniques avec le lien de téléchargement Office.](../media/sendemailtousers.png)
 
 ## <a name="for-more-on-setting-up-and-using-microsoft-365-business-premium"></a>Pour en savoir plus sur la configuration et l’utilisation de Microsoft 365 Business Premium
 

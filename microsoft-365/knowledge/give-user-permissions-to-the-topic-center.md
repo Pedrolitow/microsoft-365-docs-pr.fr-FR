@@ -8,15 +8,15 @@ audience: admin
 ms.topic: article
 ms.service: ''
 search.appverid: ''
-localization_priority: Normal
+localization_priority: None
 ROBOTS: NOINDEX, NOFOLLOW
 description: Découvrez comment accorder aux utilisateurs les autorisations nécessaires pour effectuer des tâches dans le Centre des rubriques.
-ms.openlocfilehash: 0e4e05d0addfdb754459e67acfdff3f61c7c812e
-ms.sourcegitcommit: ea5e2f85bd6b609658545b120c7e08789b9686fd
+ms.openlocfilehash: 2b7c745146b0386ff7f8bc2dcaf126a530b77598
+ms.sourcegitcommit: a3a5dc541b0c971608cc86ef480509c25a13ca60
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/01/2020
-ms.locfileid: "46537360"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46612571"
 ---
 # <a name="give-user-permissions-to-the-topic-center-preview"></a>Accorder des autorisations d’utilisateur au centre de rubriques (aperçu)
 
