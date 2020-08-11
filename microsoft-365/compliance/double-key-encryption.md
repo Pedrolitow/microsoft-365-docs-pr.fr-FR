@@ -12,12 +12,12 @@ ms.reviewer: esaggese
 localization_priority: Normal
 ms.collection:
 - M365-security-compliance
-ms.openlocfilehash: 7f54832001f80418ffb09bc45da8f32c79f3df53
-ms.sourcegitcommit: 1b83b6bcacb997324bc4be355deba6daf319591d
+ms.openlocfilehash: 0c66afa22c8712455a875bc8ca4ddcad1678e2e7
+ms.sourcegitcommit: d39694d7b2c98350b0d568dfd03fa0ef44ed4c1d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "46503035"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46601997"
 ---
 # <a name="double-key-encryption-dke"></a>Chiffrement à double clé (DKE)
 
@@ -138,11 +138,11 @@ Les instructions suivantes sont destinées aux utilisateurs de git ou de code Vi
 
     Par exemple :
 
-    :::image type="content" source="../media/dke-clone.png" alt-text="Cloner le référentiel du service de chiffrement à clé double à partir de GitHub":::
+   ![Cloner le référentiel du service de chiffrement à clé double à partir de GitHub](../media/dke-clone.png)
 
 3. Dans Visual Studio code, sélectionnez **Afficher** la \> **palette de commandes** et sélectionnez **git : Clone**. Pour accéder à l’option dans la liste, commencez `git: clone` à taper pour filtrer les entrées, puis sélectionnez-la dans la liste déroulante. Par exemple :
 
-    :::image type="content" source="../media/dke-vscode-clone.png" alt-text="Option GIT : clone de Visual Studio code":::
+   ![Option GIT : clone de Visual Studio code](../media/dke-vscode-clone.png)
 
 4. Dans la zone de texte, collez l’URL que vous avez copiée à partir de git et sélectionnez **Clone dans GitHub**.
 
@@ -152,7 +152,7 @@ Les instructions suivantes sont destinées aux utilisateurs de git ou de code Vi
 
     Par exemple :
 
-    :::image type="content" source="../media/dke-vscode-master.png" alt-text="Branche Visual Studio code Master":::
+   ![Branche Visual Studio code Master](../media/dke-vscode-master.png)
 
 6. Sélectionnez le masque de mots **,** puis sélectionnez **public_preview** dans la liste des branches.
 
@@ -170,7 +170,7 @@ Pour déployer le service DKE, vous devez modifier les types de paramètres d’
 
 Vous modifiez les paramètres de l’application dans le fichier appsettings.js. Ce fichier se trouve dans le DoubleKeyEncryptionService référentiel que vous avez cloné localement sous DoubleKeyEncryptionService\src\customer-key-store. Par exemple, dans Visual Studio code, vous pouvez accéder au fichier comme indiqué dans l’image suivante.
 
-:::image type="content" source="../media/dke-appsettingsjson.png" alt-text="Recherche de la appsettings.jssur le fichier pour DKE.":::
+![Recherche de la appsettings.jssur le fichier pour DKE.](../media/dke-appsettingsjson.png)
 
 #### <a name="key-access-settings"></a>Paramètres d’accès clés
 
@@ -200,7 +200,7 @@ Choisissez d’utiliser ou non l’autorisation de messagerie ou de rôle. DKE n
 
 Cette image montre le **appsettings.jssur** un fichier correctement mis en forme pour l’autorisation de messagerie.
 
-   :::image type="content" source="../media/dke-email-accesssetting.png" alt-text="appsettings.jssur le fichier affichant la méthode d’autorisation de messagerie":::
+   ![appsettings.jssur le fichier affichant la méthode d’autorisation de messagerie](../media/dke-email-accesssetting.png)
 
 **Pour définir les paramètres d’accès clés pour DKE à l’aide de l’autorisation de rôle**
 
@@ -222,7 +222,7 @@ Cette image montre le **appsettings.jssur** un fichier correctement mis en forme
 
 Cette image montre le **appsettings.jssur** un fichier correctement mis en forme pour l’autorisation de rôle.
 
-   :::image type="content" source="../media/dke-role-accesssetting.png" alt-text="appsettings.jssur le fichier affichant la méthode d’autorisation de rôle":::
+   ![appsettings.jssur le fichier affichant la méthode d’autorisation de rôle](../media/dke-role-accesssetting.png)
 
 #### <a name="tenant-and-key-settings"></a>Paramètres de client et de clé
 
@@ -252,7 +252,7 @@ Localisez le `JwtAudience` . Remplacez `<yourhostname>` par le nom d’hôte de 
 
 Cette image indique le format correct pour les paramètres de client et de clé dans **appsettings.jsactivé**. `LDAPPath`est configuré pour l’autorisation de rôle.
 
-:::image type="content" source="../media/dke-appsettingsjson-tenantkeysettings.png" alt-text="Indique les paramètres client et clé corrects pour DKE dans le fichier appsettings.js.":::
+![Indique les paramètres client et clé corrects pour DKE dans le fichier appsettings.js.](../media/dke-appsettingsjson-tenantkeysettings.png)
 
 ### <a name="generate-test-keys"></a>Générer des clés de test
 
@@ -311,7 +311,7 @@ Pour générer des clés :
 
    Les résultats finaux doivent ressembler à ce qui suit.
 
-   :::image type="content" source="../media/dke-startupcs-usetestkeys.png" alt-text="fichier startup.cs pour la préversion publique":::
+   ![fichier startup.cs pour la préversion publique](../media/dke-startupcs-usetestkeys.png)
 
 Vous êtes maintenant prêt à [créer votre projet DKE](#build-the-project).
 
@@ -325,15 +325,15 @@ Suivez les instructions ci-dessous pour générer le projet DKE localement :
 
    Si aucune tâche de génération n’a été trouvée, sélectionnez **configurer la tâche de génération** et créez-en une pour .net Core comme suit.
 
-   :::image type="content" source="../media/dke-configurebuildtask.png" alt-text="Configurer une tâche de génération manquante pour .NET":::
+   ![Configurer une tâche de génération manquante pour .NET](../media/dke-configurebuildtask.png)
 
    1. Choisissez **create tasks.json from template**.
 
-   :::image type="content" source="../media/dke-createtasksjsonfromtemplate.png" alt-text="Créer tasks.jssur le fichier à partir du modèle pour DKE":::
+   ![Créer tasks.jssur le fichier à partir du modèle pour DKE](../media/dke-createtasksjsonfromtemplate.png)
 
    2. Dans la liste des types de modèles, sélectionnez **.net Core**.
 
-   :::image type="content" source="../media/dke-tasksjsontemplate.png" alt-text="Créer tasks.jssur le fichier à partir du modèle pour DKE":::
+   ![Créer tasks.jssur le fichier à partir du modèle pour DKE](../media/dke-tasksjsontemplate.png)
 
    3. Dans la section générer, recherchez le chemin d’accès au fichier **customerkeystore. csproj** . Si ce n’est pas le cas, ajoutez la ligne suivante :
 
@@ -375,7 +375,7 @@ Pour publier le magasin de clés, vous allez créer une instance de service d’
 
     Par exemple :
 
-    :::image type="content" source="../media/dke-azure-add-app-service.png" alt-text="Ajouter votre service d’application":::
+   ![Ajouter votre service d’application](../media/dke-azure-add-app-service.png)
 
 1. Au bas de la page, sélectionnez **révision + créer**, puis **Ajouter**.
 
@@ -422,7 +422,7 @@ DKE est déployé et vous pouvez accéder aux clés de test que vous avez créé
 
     Par exemple :
 
-    :::image type="content" source="../media/dke-ftp-dashboard.png" alt-text="Copier des chaînes de connexion à partir du tableau de bord FTP":::
+   ![Copier des chaînes de connexion à partir du tableau de bord FTP](../media/dke-ftp-dashboard.png)
 
 1. Dans la base de code pour le stockage de clés, accédez au **répertoire Customer-Key-store\src\customer-Key-Store**
 
@@ -444,7 +444,7 @@ DKE est déployé et vous pouvez accéder aux clés de test que vous auriez cré
 
 Après avoir déployé DKE à l’aide de l’une des méthodes décrites ci-dessus, validez les principaux paramètres de déploiement et de magasin de clés.
 
-Générer
+Exécutez :  
 
 src\customer-key-store\scripts\key_store_tester.ps1 mykeystoreurl/MyKey
 
@@ -470,7 +470,7 @@ Pour enregistrer votre magasin de clés :
 
     Par exemple :
 
-    :::image type="content" source="../media/dke-app-registration.png" alt-text="Inscription de l’application":::
+   ![Inscription de l’application](../media/dke-app-registration.png)
 
 4. Au bas de la page, sélectionnez **Enregistrer** pour créer la nouvelle inscription de l’application.
 
@@ -528,7 +528,7 @@ Dans le centre de conformité Microsoft 365, créez une étiquette de sensibilit
 
 Par exemple :
 
-:::image type="content" source="../media/dke-use-dke.png" alt-text="Sélectionnez utiliser le chiffrement à double clé dans le centre de conformité Microsoft 365":::
+![Sélectionnez utiliser le chiffrement à double clé dans le centre de conformité Microsoft 365](../media/dke-use-dke.png)
 
 Toutes les étiquettes DKE que vous ajoutez commencent à apparaître pour les utilisateurs dans les versions les plus récentes des applications Microsoft 365 pour entreprises.
 
