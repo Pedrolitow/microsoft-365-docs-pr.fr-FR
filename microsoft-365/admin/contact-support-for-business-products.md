@@ -21,12 +21,12 @@ search.appverid:
 description: Obtenir un support technique et de facturation à l’aide de numéros de téléphone répertoriés pour votre pays ou région ou en envoyant votre demande de service en ligne.
 feedback_system: None
 ms.date: 7/28/2020
-ms.openlocfilehash: 6a7daed145294fa0e1c02ac47144d06cfdf26884
-ms.sourcegitcommit: 89178b8f20d59ca88cfca303a13062b91fbeae9d
+ms.openlocfilehash: 1db89882db693c2102ca5c8dcb28f7ceb3ebf12e
+ms.sourcegitcommit: 3f9aac62e79799eca751ba9c8510aad1fc3afc5d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "46552445"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46641584"
 ---
 # <a name="ways-to-contact-support-for-business-products---admin-help"></a>Comment contacter le support relatif aux produits d’entreprises - Aide de l’administrateur
 
@@ -56,6 +56,9 @@ Gagnez du temps en créant votre demande de service en ligne. Nous allons vous a
 Le support de facturation est proposé en anglais de 9 h à 17 h (9 h à 18 h en Australie), du lundi au vendredi.\
 Le support technique est proposé en anglais 24 heures sur 24, 7 jours sur 7.\
 Vous, en tant qu'administrateur, devez avoir vos informations de compte à disposition lorsque vous appelez le support.
+
+> [!NOTE]
+> Pour renforcer la protection de votre organisation, nous avons ajouté une étape de vérification basée sur des codes confidentiels à notre processus de vérification par téléphone existant. Si vous contactez le support technique de Microsoft à partir d’un numéro qui n’a pas été enregistré avec votre profil d’organisation, le technicien du support technique Microsoft envoie un code de vérification au courrier ou numéro de téléphone de votre centre d’administration Microsoft 365. Vous devez fournir ce code au représentant du support technique pour lui accorder l’accès au compte de votre organisation.
 
 - **Pour les États-Unis, composez le 1 800 865 9408.**
 

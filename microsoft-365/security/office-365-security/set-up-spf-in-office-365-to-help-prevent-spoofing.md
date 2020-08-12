@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Découvrez comment mettre à jour un enregistrement DNS (service de nom de domaine) afin que vous puissiez utiliser SPF (Sender Policy Framework) avec votre domaine personnalisé dans Office 365.
-ms.openlocfilehash: 93356799967932813252e7db27e7ac796e46cbc6
-ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
+ms.openlocfilehash: be773fe3265ac6cfd62d261196d4af1d14c91ef2
+ms.sourcegitcommit: 9489aaf255f8bf165e6debc574e20548ad82e882
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "44936936"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "46632138"
 ---
 # <a name="set-up-spf-to-help-prevent-spoofing"></a>Configurer SPF pour empêcher l’usurpation
 
@@ -61,8 +61,8 @@ Collectez les informations ci-dessous :
 
 1. Assurez-vous que vous connaissez la syntaxe SPF du tableau suivant.
 
-   ||**Si vous utilisez...**|**Courant pour les utilisateurs ?**|**Ajoutez l'élément suivant...**|
-   |:-----|:-----|:-----|:-----|
+   ||Si vous utilisez...|Courant pour les utilisateurs ?|Ajoutez l’élément suivant...|
+   |---|---|---|---|
    |1|Un système de messagerie (obligatoire)|Courant. Tous les enregistrements TXT SPF commencent avec cette valeur|v=spf1|
    |2|Exchange Online|Courant|include:spf.protection.outlook.com|
    |3|Exchange Online dédié uniquement|Non courant|ip4:23.103.224.0/19 ip4:206.191.224.0/19 ip4:40.103.0.0/16 include:spf.protection.outlook.com|
@@ -88,6 +88,16 @@ Collectez les informations ci-dessous :
 3. Une fois que vous avez formulé votre enregistrement TXT SPF, vous devez mettre à jour l'enregistrement dans le système DNS. Vous ne pouvez avoir qu'un seul enregistrement TXT SPF pour un domaine. Si un enregistrement TXT SPF existe, au lieu d'ajouter un nouvel enregistrement, vous devez mettre à jour l'enregistrement existant. Accédez à [Créer des enregistrements DNS pour Office 365](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider), puis cliquez sur le lien correspondant à votre hôte DNS.
 
 4. Testez votre enregistrement TXT SPF.
+
+## <a name="how-to-handle-subdomains"></a>Comment gérer les sous-domaines ?
+
+Il est important de noter que vous devez créer un enregistrement distinct pour chaque sous-domaine, car les sous-domaines n’héritent pas de l’enregistrement SPF de leur domaine de premier niveau.
+
+Un enregistrement SPF (`*.`) supplémentaire est requis pour chaque domaine et sous-domaine afin d’empêcher les agresseurs d’envoyer des revendications de courrier électronique à partir de sous-domaines non existants. Par exemple :
+
+```console
+*.subdomain.contoso.com. IN TXT "v=spf1 –all"
+```
 
 ## <a name="more-information-about-spf"></a>En savoir plus sur SPF
 
