@@ -15,12 +15,12 @@ ms.assetid: 4a05898c-b8e4-4eab-bd70-ee912e349737
 ms.collection:
 - M365-security-compliance
 description: Découvrez comment configurer DMARC (Domain-based Message Authentication, Reporting, and Conformance) pour valider les messages envoyés à partir de votre organisation.
-ms.openlocfilehash: adc213ec5c47184f997a812425e53a61d7ac2da3
-ms.sourcegitcommit: 0650da0e54a2b484a3156b3aabe44397fbb38e00
+ms.openlocfilehash: 56e557a3ca970540288c00d5fb8a30549c252776
+ms.sourcegitcommit: d39694d7b2c98350b0d568dfd03fa0ef44ed4c1d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "45016320"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46601872"
 ---
 # <a name="use-dmarc-to-validate-email"></a>Utiliser DMARC pour valider les e-mails
 
@@ -227,7 +227,7 @@ contoso.com     3600   IN  MX  10 contoso-com.mail.protection.outlook.com
 
 L’ensemble ou la majorité des messages électroniques seront d’abord acheminés vers mail.contoso.com, puisqu’il s’agit de l’enregistrement MX principal, avant d’être acheminés vers Exchange Online Protection. Dans certains cas, EOP n’est même pas présent dans la liste des enregistrements MX et des connecteurs sont simplement mis en place pour acheminer les messages électroniques. Il n’est pas nécessaire que EOP soit la première entrée de la validation DMARC à effectuer. Il s’agit simplement d’assurer la validation, car il est impossible de s’assurer que tous les serveurs locaux/non-Office 365 effectuent des vérifications DMARC.  DMARC est éligible pour être appliqué au domaine d’un client (et non au serveur) lorsque vous configurez l’enregistrement DMARC TXT, mais il revient au serveur de réception d’effectuer réellement l’application.  Si vous configurez EOP comme serveur de réception, la fonction EOP procède à l’application DMARC.
 
-:::image type="content" source="../../media/Tp_DMARCTroublehoot.png" alt-text="Un graphique de dépannage pour DMARC, fourni par Daniel Mande":::
+![Un graphique de dépannage pour DMARC, fourni par Daniel Mande](../../media/Tp_DMARCTroublehoot.png)
 
 ## <a name="for-more-information"></a>Pour plus d'informations
 
