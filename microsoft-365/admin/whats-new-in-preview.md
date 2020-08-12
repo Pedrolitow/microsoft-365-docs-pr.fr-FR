@@ -21,12 +21,12 @@ description: Centre d’administration Microsoft 365-Découvrez les fonctionnali
 ms.custom:
 - MACDashWhatsNew
 - AdminSurgePortfolio
-ms.openlocfilehash: 11a48ecf78c09c8e597d94821f747bf6ebd7e444
-ms.sourcegitcommit: d39694d7b2c98350b0d568dfd03fa0ef44ed4c1d
+ms.openlocfilehash: 84932e13a336d225894683f9e328cb44df8c0e78
+ms.sourcegitcommit: 6319e73b3690b4cf1b7932f2b9f51c2c99e70eaa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/10/2020
-ms.locfileid: "46602008"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "46635021"
 ---
 # <a name="whats-new-in-the-microsoft-365-admin-center"></a>Nouveautés du centre d’administration Microsoft 365
 
@@ -52,6 +52,17 @@ Et si vous souhaitez connaître les nouveautés d’autres services Cloud de Mic
 - [Nouveautés de la protection Microsoft contre les menaces](https://docs.microsoft.com/microsoft-365/security/mtp/whats-new)
 - [Nouveautés du centre d’administration SharePoint](https://docs.microsoft.com/sharepoint/what-s-new-in-admin-center)
 - [Mises à jour Office](https://docs.microsoft.com/OfficeUpdates/)
+
+## <a name="june-2020"></a>Juin 2020
+
+### <a name="keeping-up-with-office-whats-new-management"></a>Restez au fait des nouveautés d’Office
+
+Il y a quelques mois, nous avons ajouté un paramètre qui vous permet de gérer les [nouveautés qui s’affichent dans les applications Office d’un utilisateur](#office-whats-new-management). Ce mois-ci, nous avons publié une nouvelle carte de visite qui vous aidera à agir rapidement et à effectuer le suivi **des nouveautés que les messages que** vous souhaitez afficher pour les utilisateurs de votre organisation.
+
+### <a name="docs-training-and-videos-june"></a>Documents, formation et vidéos (juin)
+
+- [Prise en main de teams](https://support.microsoft.com/office/184f1aba-2f91-43f0-86e1-9fae607e24f6)
+
 
 ## <a name="may-2020"></a>Mai 2020
 

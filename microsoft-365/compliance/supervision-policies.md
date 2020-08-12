@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.custom: seo-marvel-apr2020
 titleSuffix: Microsoft 365 Compliance
-ms.openlocfilehash: 009ea920854cfb88082d1c59ba78ac3531d253cf
-ms.sourcegitcommit: 1b83b6bcacb997324bc4be355deba6daf319591d
+ms.openlocfilehash: eb57a60643eb6168ad9fbbca178a3baf1b26392b
+ms.sourcegitcommit: 9489aaf255f8bf165e6debc574e20548ad82e882
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "46502925"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "46632105"
 ---
 # <a name="supervision-policies"></a>Stratégies de surveillance
 
@@ -159,7 +159,7 @@ Le modèle ne fournit pas de liste exhaustive du langage injurieux. De plus, les
 
 Le modèle de langage offensant surveille le courrier électronique en fonction des types de langue suivants :
 
-|**Type (Type)**|**Description**|
+|**Type**|**Description**|
 |:-----|:-----|
 | **Blasphèmes** | Expressions qui dépassent la plupart des gens. |
 | **Slurs** | Expressions qui portent préjudice à des groupes spécifiques (par exemple, race, ethnique, orientation sexuelle, handicap). |
@@ -193,7 +193,7 @@ Pour analyser les messages électroniques et les pièces jointes des mêmes mots
 
 Si vous entrez plusieurs conditions, Microsoft 365 utilise toutes les conditions ensemble pour déterminer le moment auquel la stratégie doit être appliquée aux éléments de communication. Lorsque vous configurez plusieurs conditions, toutes les conditions doivent être remplies pour que la stratégie s’applique, sauf si vous entrez une exception. Par exemple, vous avez besoin d’une stratégie qui s’applique si un message contient le mot « commercial » et qu’il est supérieur à 2 Mo. Toutefois, si le message contient également les mots « approuvé par Contoso Financial », la stratégie ne doit pas s’appliquer. Ainsi, dans ce cas, les trois conditions suivantes sont les suivantes :
   
-- Le **message contient l’un de ces mots**, avec les mots clés « Trade »
+- Le **message contient l’un de ces mots**, avec le mot clé « Trade »
 
 - La **taille du message est supérieure à**, avec la valeur 2 Mo
 

@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 7afcf16a42824ff234e53412a0cbd44f997fcaf9
-ms.sourcegitcommit: 634abe8a237e27dfe82376e6ef32280aab5d4a27
+ms.openlocfilehash: cea4dbcb42833a14980d092bd0ff168ca97e5934
+ms.sourcegitcommit: 9489aaf255f8bf165e6debc574e20548ad82e882
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "45005709"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "46632150"
 ---
 # <a name="create-and-manage-custom-detections-rules"></a>Créer et gérer des règles de détection personnalisées
 
@@ -51,6 +51,10 @@ Pour gérer les autorisations requises, un **administrateur général** peut eff
 ### <a name="1-prepare-the-query"></a>1. Préparez la requête.
 
 Dans le centre de sécurité Microsoft 365, accédez à la **chasse avancée** et sélectionnez une requête existante ou créez une nouvelle requête. Lors de l’utilisation d’une nouvelle requête, exécutez la requête pour identifier les erreurs et comprendre les résultats possibles.
+
+>[!IMPORTANT]
+>Pour empêcher le service de renvoyer un trop grand nombre d’alertes, chaque règle est limitée à la génération de seulement 100 alertes chaque fois qu’elle est exécutée. Avant de créer une règle, affinez votre requête afin d’éviter les alertes pour l’activité quotidienne normale.
+
 
 #### <a name="required-columns-in-the-query-results"></a>Colonnes requises dans les résultats de la requête
 Pour créer une règle de détection personnalisée, la requête doit renvoyer les colonnes suivantes :
@@ -85,6 +89,7 @@ DeviceEvents
 | summarize Timestamp = max(Timestamp), count() by DeviceId, SHA1, InitiatingProcessAccountObjectId 
 | where count_ > 5
 ```
+
 ### <a name="2-create-new-rule-and-provide-alert-details"></a>2. créer une règle et fournir des détails d’alerte.
 
 À l’aide de la requête dans l’éditeur de requête, sélectionnez **créer une règle de détection** et spécifiez les détails d’alerte suivants :

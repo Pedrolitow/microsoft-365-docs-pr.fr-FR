@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 79948e514009d3adffcead87aafc18ab2f1e3b25
-ms.sourcegitcommit: 9550298946f8accb90cd59be7b46b71d4bf4f8cc
+ms.openlocfilehash: 9e16e96989fd3e2312129f9633bd298181839cf0
+ms.sourcegitcommit: 9489aaf255f8bf165e6debc574e20548ad82e882
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/08/2020
-ms.locfileid: "46597632"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "46632085"
 ---
 # <a name="case-study---contoso-quickly-configures-an-offensive-language-policy-for-microsoft-teams-exchange-and-yammer-communications"></a>Étude de cas-contoso configure rapidement une stratégie de langage offensant pour les communications Microsoft Teams, Exchange et Yammer
 

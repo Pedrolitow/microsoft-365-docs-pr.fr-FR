@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 76cae3cc8f578206790eb2f6caaa96aed24b5a2b
-ms.sourcegitcommit: 9550298946f8accb90cd59be7b46b71d4bf4f8cc
+ms.openlocfilehash: d8025f6abe9f1b68dea0856b2a53139a711198c6
+ms.sourcegitcommit: 9489aaf255f8bf165e6debc574e20548ad82e882
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/08/2020
-ms.locfileid: "46597553"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "46632127"
 ---
 # <a name="communication-compliance-feature-reference"></a>Référence de la fonctionnalité de conformité des communications
 
@@ -72,7 +72,7 @@ Avant de commencer à utiliser la conformité des communications, vous devez dé
 
 ## <a name="reviewers"></a>Relecteurs
 
-Lorsque vous créez une stratégie de conformité de communication, vous devez déterminer qui révise les messages des utilisateurs supervisés. Dans la stratégie, les adresses de messagerie des utilisateurs identifient les individus ou les groupes de personnes qui doivent réviser les communications contrôlées. Les relecteurs AAll doivent avoir des boîtes aux lettres hébergées sur Exchange Online et doivent être affectés aux rôles d' *enquête* de conformité de communication ou d' *analyse* de conformité des communications. Les relecteurs (analystes ou investigateurs) doivent également avoir le rôle de *gestion des cas de conformité de communication* affecté. Lorsque les relecteurs sont ajoutés à une stratégie, ils reçoivent automatiquement un message électronique les avertissant de l’affectation à la stratégie et fournissent des liens vers des informations sur le processus de révision.
+Lorsque vous créez une stratégie de conformité de communication, vous devez déterminer qui révise les messages des utilisateurs supervisés. Dans la stratégie, les adresses de messagerie des utilisateurs identifient les individus ou les groupes de personnes qui doivent réviser les communications contrôlées. Tous les relecteurs doivent avoir des boîtes aux lettres hébergées sur Exchange Online et doivent être affectés aux rôles d' *enquête* de conformité de communication ou d' *analyse* de conformité des communications. Les relecteurs (analystes ou investigateurs) doivent également avoir le rôle de *gestion des cas de conformité de communication* affecté. Lorsque les relecteurs sont ajoutés à une stratégie, ils reçoivent automatiquement un message électronique les avertissant de l’affectation à la stratégie et fournissent des liens vers des informations sur le processus de révision.
 
 ## <a name="groups-for-supervised-users-and-reviewers"></a>Groupes pour les utilisateurs et les relecteurs surveillés
 
@@ -125,7 +125,7 @@ Pour plus d’informations sur la retraite de la surveillance dans Office 365, c
 
 ## <a name="policy-settings"></a>Paramètres de stratégie
 
-### <a name="users"></a>Users
+### <a name="users"></a>Utilisateurs
 
 Vous avez la possibilité de sélectionner **tous les utilisateurs** ou de définir des utilisateurs spécifiques dans une stratégie de conformité de communication. La sélection de **Tous les utilisateurs** applique la stratégie à tous les utilisateurs et les groupes auxquels n’importe quel utilisateur est inclus en tant que membre. La définition d’utilisateurs spécifiques applique la stratégie aux utilisateurs définis et aux groupes auxquels les utilisateurs définis sont inclus.
 
@@ -208,7 +208,7 @@ Pour analyser les messages électroniques et les pièces jointes des mêmes mots
 
 Si vous entrez plusieurs conditions, Microsoft 365 utilise toutes les conditions ensemble pour déterminer le moment auquel la stratégie de conformité des communications doit être appliquée aux éléments de communication. Lorsque vous configurez plusieurs conditions, toutes les conditions doivent être remplies pour que la stratégie s’applique, sauf si vous entrez une exception. Par exemple, vous avez besoin d’une stratégie qui s’applique si un message contient le mot « commercial » et qu’il est supérieur à 2 Mo. Toutefois, si le message contient également les mots « approuvé par Contoso Financial », la stratégie ne doit pas s’appliquer. Dans cet exemple, les trois conditions suivantes sont définies comme suit :
   
-- Le **message contient l’un de ces mots**, avec les mots clés « Trade »
+- Le **message contient l’un de ces mots**, avec le mot clé « Trade »
 - La **taille du message est supérieure à**, avec la valeur 2 Mo
 - Le **message ne contient aucun de ces mots**, avec les mots-clés « approuvé par l’équipe financière de contoso »
 
@@ -246,13 +246,13 @@ Si vous souhaitez créer un message électronique en texte simple pour les notif
 ```HTML
 <!DOCTYPE html>
 <html>
-<body>
-<h2>Action Required: Contoso Employee Code of Conduct Policy Training</h2>
-<p>A recent message you've sent has generated a policy alert for the Contoso Employee <a href='https://www.contoso.com'>Code of Conduct Policy</a>.</p>
-<p>You are required to attend the Contoso Employee Code of Conduct <a href='https://www.contoso.com'>training</a> within the next 14 days. Please contact <a href='mailto:hr@contoso.com'>Human Resources</a> with any questions about this training request.</p>
-<p>Thank you,</p>
-<p><em>Human Resources</em></p>
-</body>
+    <body>
+        <h2>Action Required: Contoso Employee Code of Conduct Policy Training</h2>
+        <p>A recent message you've sent has generated a policy alert for the Contoso Employee <a href='https://www.contoso.com'>Code of Conduct Policy</a>.</p>
+        <p>You are required to attend the Contoso Employee Code of Conduct <a href='https://www.contoso.com'>training</a> within the next 14 days. Please contact <a href='mailto:hr@contoso.com'>Human Resources</a> with any questions about this training request.</p>
+        <p>Thank you,</p>
+        <p><em>Human Resources</em></p>
+    </body>
 </html>
 ```
 
@@ -268,7 +268,7 @@ Les filtres de conformité de la communication vous permettent de filtrer et de 
 | **Date** | Date à laquelle le message a été envoyé ou reçu par un utilisateur au sein de votre organisation. |
 | **Classe file** | Classe du message en fonction du type de message, qu’il *s’agisse d’un message ou* d’une *pièce jointe*. |
 | **Avec pièce jointe** | Présence d’une pièce jointe dans le message. |
-| **Classe d’élément** | Source du message en fonction du type de message, de la messagerie électronique, de la conversation Microsoft Team, de Bloonmberg, etc. Pour plus d’informations sur les types d’éléments communs et les classes de message, voir [Item Types and message classes](https://docs.microsoft.com/office/vba/outlook/concepts/forms/item-types-and-message-classes). |
+| **Classe d’élément** | Source du message en fonction du type de message, de la messagerie électronique, de la conversation Microsoft Team, Bloomberg, etc. Pour plus d’informations sur les types d’éléments communs et les classes de message, voir [Item Types and message classes](https://docs.microsoft.com/office/vba/outlook/concepts/forms/item-types-and-message-classes). |
 | **Domaines de destinataires** | Domaine auquel le message a été envoyé. Ce domaine est normalement votre domaine d’abonnement Microsoft 365 par défaut. |
 | **Destinataire** | Utilisateur auquel le message a été envoyé. |
 | **Sender** | La personne qui a envoyé le message. |

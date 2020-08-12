@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 description: Découvrez comment utiliser l’Explorateur et les détections en temps réel dans le centre de sécurité &amp; conformité pour examiner et répondre efficacement aux menaces.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 42cb7d2ef4fd04875c4bedc5f783e87cc99c13f5
-ms.sourcegitcommit: c04f1207cfaddac2a9abef38967c17d689756a96
+ms.openlocfilehash: 635f7f32d16f18f49aa1920d82efd77bf27dc328
+ms.sourcegitcommit: 3f9aac62e79799eca751ba9c8510aad1fc3afc5d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "46577526"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46641640"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>Explorateur de menaces et détections en temps réel
 
@@ -207,6 +207,20 @@ Pour consulter les URL de hameçonnage dans les messages et les clics sur les UR
 
    > [!NOTE]
    > Dans la boîte de dialogue de menu volant d’URL, le filtrage sur les messages électroniques est supprimé pour vous montrer l’affichage complet de l’exposition de l’URL dans votre environnement. Cela vous permet de filtrer les messages électroniques dans l’Explorateur sur ceux qui vous intéressent, de rechercher des URL spécifiques qui constituent des menaces potentielles, puis de mieux comprendre l’exposition de l’URL dans votre environnement (via la boîte de dialogue détails de l’URL) sans avoir à ajouter de filtres d’URL à l’affichage Explorateur lui-même.
+
+
+**Interprétation des verdicts de clic différents**
+
+Dans les lances de messagerie ou d’URL, les principaux clics et les résultats de filtrage, vous verrez des valeurs de clic différentes dans le cadre de votre expérience de chasse. Vous trouverez ci-dessous les valeurs possibles des verdicts de clic et leur interprétation :
+
+- **None**: nous n’avons pas pu capturer le verdict de l’URL. L’utilisateur peut avoir cliqué dans l’URL.
+- **Autorisé**: l’utilisateur a été autorisé à accéder à l’URL.
+- **Bloqué**: l’utilisateur n’a pas pu accéder à l’URL.
+- **Verdict en attente**: l’utilisateur a été présenté avec la page de détonation en attente.
+- **Bloqué remplacé**: l’utilisateur n’a pas pu accéder à l’URL ; Toutefois, l’utilisateur overrode le bloc pour accéder à l’URL.
+- **Verdict en attente ignoré**: l’utilisateur a été présenté avec la page de détonation ; Toutefois, l’utilisateur overrode la page pour accéder à l’URL.
+- **Erreur**: l’utilisateur s’est affiché avec la page d’erreur. Cela peut également signifier qu’il y a eu une erreur lors de la capture du verdict.
+- **Échec**: une exception inconnue s’est produite lors de la capture du verdict. L’utilisateur peut avoir cliqué dans l’URL. 
 
 ## <a name="review-email-messages-reported-by-users"></a>Examiner les messages électroniques signalés par les utilisateurs
 

@@ -14,12 +14,12 @@ ms.collection:
 localization_priority: None
 description: Découvrez comment définir des stratégies pour les barrières d’informations dans Microsoft Teams.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a9f8635f65867eb9d9543cc23b984f181030a7f9
-ms.sourcegitcommit: 51a9f34796535309b8ca8b52da92da0a3621327b
+ms.openlocfilehash: be86816c559d0ac1873618cd51baa2ac24fb2db8
+ms.sourcegitcommit: 9489aaf255f8bf165e6debc574e20548ad82e882
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "45024694"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "46632095"
 ---
 # <a name="define-information-barrier-policies"></a>Définir des stratégies d’obstacle aux informations
 
@@ -79,7 +79,7 @@ En plus des [licences et des autorisations requises](information-barriers.md#req
    1. Exécutez les applets de commande PowerShell suivantes :
 
       ```powershell
-      Login-AzAccount 
+      Connect-AzureAD 
       $appId="bcf62038-e005-436d-b970-2a472f8c1982" 
       $sp=Get-AzADServicePrincipal -ServicePrincipalName $appId
       if ($sp -eq $null) { New-AzADServicePrincipal -ApplicationId $appId }
@@ -254,7 +254,7 @@ Avec PowerShell, vous pouvez afficher l’état des comptes d’utilisateur, des
 
 |Pour afficher cette  |Procédez comme suit  |
 |---------|---------|
-|Comptes d’utilisateurs     |Utilisez la cmdlet **Get-InformationBarrierRecipientStatus** avec les paramètres d’identité. <p>Syntaxe`Get-InformationBarrierRecipientStatus -Identity <value> -Identity2 <value>` <p>Vous pouvez utiliser n’importe quelle valeur qui identifie de façon unique chaque utilisateur, comme le nom, l’alias, le nom unique, le nom de domaine canonique, l’adresse de messagerie ou le GUID. <p>Exemple : `Get-InformationBarrierRecipientStatus -Identity meganb -Identity2 alexw` <p>Dans cet exemple, nous faisons référence à deux comptes d’utilisateur dans Office 365 : *meganb* pour *Megan*, et *Alexw* pour *Alex*. <p>(Vous pouvez également utiliser cette applet de commande pour un seul utilisateur : `Get-InformationBarrierRecipientStatus -Identity <value>` ) <p>Cette applet de commande retourne des informations sur les utilisateurs, telles que les valeurs d’attribut et les stratégies de barrière des informations qui sont appliquées.|
+|Comptes d’utilisateur     |Utilisez la cmdlet **Get-InformationBarrierRecipientStatus** avec les paramètres d’identité. <p>Syntaxe`Get-InformationBarrierRecipientStatus -Identity <value> -Identity2 <value>` <p>Vous pouvez utiliser n’importe quelle valeur qui identifie de façon unique chaque utilisateur, comme le nom, l’alias, le nom unique, le nom de domaine canonique, l’adresse de messagerie ou le GUID. <p>Exemple : `Get-InformationBarrierRecipientStatus -Identity meganb -Identity2 alexw` <p>Dans cet exemple, nous faisons référence à deux comptes d’utilisateur dans Office 365 : *meganb* pour *Megan*, et *Alexw* pour *Alex*. <p>(Vous pouvez également utiliser cette applet de commande pour un seul utilisateur : `Get-InformationBarrierRecipientStatus -Identity <value>` ) <p>Cette applet de commande retourne des informations sur les utilisateurs, telles que les valeurs d’attribut et les stratégies de barrière des informations qui sont appliquées.|
 |Pertinents     |Utilisez la cmdlet **Get-OrganizationSegment** .<p>Syntaxe`Get-OrganizationSegment` <p>Cette opération permet d’afficher la liste de tous les segments définis pour votre organisation.         |
 |Stratégies de barrière des informations     |Utilisez la cmdlet **Get-InformationBarrierPolicy** . <p> Syntaxe`Get-InformationBarrierPolicy` <p>Cette opération affiche la liste des stratégies de barrière des informations qui ont été définies, ainsi que leur état.       |
 |Application de stratégie de barrière des informations la plus récente     | Utilisez la cmdlet **Get-InformationBarrierPoliciesApplicationStatus** . <p>Syntaxe`Get-InformationBarrierPoliciesApplicationStatus`<p>    Cela permet d’afficher des informations indiquant si l’application de stratégie a été exécutée, si elle a échoué ou est en cours d’exécution.       |

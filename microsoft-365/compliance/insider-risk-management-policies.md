@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: a08d07f574c1cd5463772c803be0d4b3850144f4
-ms.sourcegitcommit: a08103bc120bdec7cfeaf67c1be4e221241e69ad
+ms.openlocfilehash: 7701932cdd41b673dcc665c71983df9f4d244a8b
+ms.sourcegitcommit: 9489aaf255f8bf165e6debc574e20548ad82e882
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "45199537"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "46632173"
 ---
 # <a name="insider-risk-management-policies"></a>Stratégies de gestion des risques internes
 
@@ -75,7 +75,7 @@ Consultez la rubrique [créer, tester et régler une stratégie DLP](create-test
 
 ### <a name="data-leaks-by-priority-users-preview"></a>Fuites de données par les utilisateurs prioritaires (aperçu)
 
-La protection des données et la prévention des fuites de données pour les utilisateurs de votre organisation peuvent dépendre de leur position, de leur niveau d’accès aux informations sensibles ou de l’historique des risques. Les fuites de données peuvent inclure un surPartage accidentel d’informations hautement sensibles en dehors de votre organisation ou du vol de données à des fins malveillantes. En association avec une stratégie de protection contre la perte de données (DLP) affectée, ce modèle commence à compter les détections en temps réel d’activité suspecte et entraîne une augmentation de la probabilité d’alertes et d’alertes de risque d’initiés ayant des niveaux de gravité plus élevés. Les utilisateurs prioritaires sont définis dans les groupes d’utilisateurs prioritaires configurés dans la zone paramètres de gestion des risques inSided. AJOUTER UN LIEN
+La protection des données et la prévention des fuites de données pour les utilisateurs de votre organisation peuvent dépendre de leur position, de leur niveau d’accès aux informations sensibles ou de l’historique des risques. Les fuites de données peuvent inclure un surPartage accidentel d’informations hautement sensibles en dehors de votre organisation ou du vol de données à des fins malveillantes. En association avec une stratégie de protection contre la perte de données (DLP) affectée, ce modèle commence à compter les détections en temps réel d’activité suspecte et entraîne une augmentation de la probabilité d’alertes et d’alertes de risque d’initiés ayant des niveaux de gravité plus élevés. Les utilisateurs prioritaires sont définis dans les [groupes d’utilisateurs prioritaires](insider-risk-management-settings.md#priority-user-groups-preview) configurés dans la zone paramètres de gestion des risques inSided.
 
 Comme avec le **modèle de fuite générale des données**, vous devez affecter une stratégie DLP pour déclencher des indicateurs dans la stratégie des risques internes pour les alertes de gravité élevée au sein de votre organisation. Suivez les instructions relatives aux fuites de données ci-dessus lors de la création d’une stratégie à l’aide de ce modèle. De plus, vous devrez affecter des groupes d’utilisateurs prioritaires créés dans les paramètres de **gestion des risques initiés**  >  **Settings**  >  aux**groupes d’utilisateurs prioritaires** sur la stratégie.
 
