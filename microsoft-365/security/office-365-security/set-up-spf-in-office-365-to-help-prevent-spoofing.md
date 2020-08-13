@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Découvrez comment mettre à jour un enregistrement DNS (service de nom de domaine) afin que vous puissiez utiliser SPF (Sender Policy Framework) avec votre domaine personnalisé dans Office 365.
-ms.openlocfilehash: be773fe3265ac6cfd62d261196d4af1d14c91ef2
-ms.sourcegitcommit: 9489aaf255f8bf165e6debc574e20548ad82e882
+ms.openlocfilehash: dfbd5f7091420d079f91b93f7c581ed69572b7bd
+ms.sourcegitcommit: fa8e488936a36e4b56e1252cb4061b5bd6c0eafc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "46632138"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "46656610"
 ---
 # <a name="set-up-spf-to-help-prevent-spoofing"></a>Configurer SPF pour empêcher l’usurpation
 
@@ -61,7 +61,9 @@ Collectez les informations ci-dessous :
 
 1. Assurez-vous que vous connaissez la syntaxe SPF du tableau suivant.
 
-   ||Si vous utilisez...|Courant pour les utilisateurs ?|Ajoutez l’élément suivant...|
+   ****
+
+   |<!-- -->|Si vous utilisez...|Courant pour les utilisateurs ?|Ajoutez l’élément suivant...|
    |---|---|---|---|
    |1|Un système de messagerie (obligatoire)|Courant. Tous les enregistrements TXT SPF commencent avec cette valeur|v=spf1|
    |2|Exchange Online|Courant|include:spf.protection.outlook.com|
@@ -70,6 +72,7 @@ Collectez les informations ci-dessous :
    |5|Système de messagerie tiers|Non courant|Incluez : \<domain name\>  <br/> Où <nom du domaine> est le nom de domaine du système de messagerie tiers.|
    |6|Système de messagerie en local. Par exemple, Exchange Online Protection et un autre système de messagerie|Non courant| Utilisez l’un des éléments suivants pour chaque système de messagerie supplémentaire : <br> IP4 : \<_IP address_\>  <br/>  ip6 : \<_IP address_\>  <br/>  Incluez : \<_domain name_\>  <br/>  Où la valeur de l’élément \<_IP address_\> est l’adresse IP de l’autre système de messagerie et \<_domain name_\> correspond au nom de domaine de l’autre système de messagerie qui envoie un message au nom de votre domaine.|
    |7|Un système de messagerie (obligatoire)|Courant. Tous les enregistrements TXT SPF se terminent par cette valeur|\<_enforcement rule_\>  <br/> Il peut s’agir de plusieurs valeurs. Il est recommandé d’utiliser **-all**.|
+   |
 
 2. Si vous ne l’avez pas encore fait, créez votre enregistrement TXT SPF à l’aide de la syntaxe du tableau :
 

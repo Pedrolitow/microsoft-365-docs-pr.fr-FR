@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 description: Les administrateurs peuvent en savoir plus sur les champs d’en-tête ajoutés aux messages par Exchange Online Protection (EOP). Ces champs d’en-tête fournissent des informations sur le message et la manière dont il a été traité.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 8ce0b906bb627a7de11e5a8a6db02c9c6f330a62
-ms.sourcegitcommit: 2acd9ec5e9d150389975e854c7883efc186a9432
+ms.openlocfilehash: 5073e0721e82e969dbeaa850cc38cb13100a7947
+ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "44755355"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46653424"
 ---
 # <a name="anti-spam-message-headers-in-microsoft-365"></a>En-têtes de message anti-courrier indésirable dans Microsoft 365
 
@@ -43,9 +43,10 @@ Les champs et valeurs individuels sont décrits dans le tableau suivant.
 > [!NOTE]
 > L’en-tête **X-Forefront-Antispam-Report** contient de nombreux champs et valeurs d’en-tête différents. Les autres champs de cet en-tête qui ne sont pas décrits dans le tableau sont exclusivement utilisés par l’équipe Microsoft de lutte contre les courriers indésirables à des fins de diagnostic.
 
-|||
+****
+
+|Champ d’en-tête|Description|
 |---|---|
-|**Champ d’en-tête**|**Description**|
 |ARC|Le protocole ARC inclut les en-têtes suivants : <ul><li>AAR : enregistre le contenu de l'en-tête Authentication results à partir de DMARC.</li><li>AMS : cet en-tête inclut les signatures de chiffrement du message.</li><li>AS : inclut les signature de chiffrement des en-têtes du message. Cet en-tête contient une balise de chaîne de validation appelée « cv= » incluant le résultat de la chaîne de validation en tant que **aucun**, **succès** ou **échec**.</li></ul>|
 |CAT :|Catégorie de stratégie de protection appliquée au message : <ul><li>BULK : En bloc</li><li>DIMP : Emprunt d’identité de domaine</li><li>GIMP : emprunt d’identité basé sur la veille des boîtes aux lettre</li><li>HPHSH ou HPHISH : hameçonnage haute confiance</li><li>HSPM : courrier fortement suspecté d’être indésirable</li><li>MALW : Programme malveillant</li><li>PHSH : Hameçonnage</li><li>SPM : courrier indésirable</li><li>SPOOF : usurpation d’identité</li><li>UIMP : emprunt d’identité d’utilisateur</li><li>AMP: logiciel anti-programme malveillant</li><li>ATP : pièces jointes fiables</li><li>OSPM : courrier indésirable sortant</li></ul><br/>Un message entrant peut être signalé par plusieurs formes de protection et plusieurs analyses de détection. Les stratégies ont des priorités différentes, et la stratégie ayant la priorité la plus élevée s'applique en premier. Pour plus d’informations, voir [Quelle stratégie s’applique lorsque plusieurs méthodes de protection et analyses de détection s'exécutent dans votre courrier électronique](how-policies-and-protections-are-combined.md).|
 |CIP : \[adresse IP\]|Adresse IP de connexion. Vous pouvez utiliser cette adresse IP dans la liste d'adresses IP autorisées ou dans la liste d’adresses IP bloquées. Pour plus d’informations, consultez [Configuration du filtrage des connexions](configure-the-connection-filter-policy.md).|
@@ -75,9 +76,10 @@ Les champs et valeurs individuels sont décrits dans le tableau suivant.
 
 Le tableau suivant décrit certains champs utiles de l’en-tête **X-Microsoft-Antispam** des messages. Les autres champs de cet en-tête sont exclusivement utilisés par l’équipe Microsoft de lutte contre les courriers indésirables à des fins de diagnostic.
 
-|||
+****
+
+|Champ d’en-tête|Description|
 |---|---|
-|**Champ d’en-tête**|**Description**|
 |BCL|Niveau de réclamation en bloc (BCL) du message. Un niveau BCL supérieur indique qu’un courrier en nombre (également appelé _message gris_) est susceptible de générer des plaintes (et par conséquent plus susceptible d’être du courrier indésirable). Pour plus d’informations, consultez [Niveau de réclamation en bloc (BCL)](bulk-complaint-level-values.md).|
 |
 
@@ -140,9 +142,10 @@ dmarc=fail action=oreject header.from=contoso.com
 
 Le tableau ci-dessous décrit les champs et les valeurs possibles pour chaque vérification d’authentification de courrier électronique.
 
-|||
+****
+
+|Champ d’en-tête|Description|
 |---|---|
-|**Champ d’en-tête**|**Description**|
 |action|Indique l’action effectuée par le filtre de courrier indésirable en fonction des résultats de la vérification DMARC. Par exemple : <ul><li>**oreject** ou **o.reject** : signifie « override reject » (ignorer le rejet). Microsoft 365 utilise cette action lorsqu’il reçoit un message qui échoue aux vérifications de DMARC et qui sont issus d’un domaine dont l’enregistrement TXT DMARC a pour stratégie p=reject (rejet). Au lieu de supprimer ou de rejeter le message, Microsoft 365 le marque comme courrier indésirable. Pour obtenir des explications sur cette configuration de Microsoft 365, reportez-vous à la section [Gestion des messages électroniques entrants qui échouent aux vérifications de DMARC dans Microsoft 365](use-dmarc-to-validate-email.md#how-microsoft-365-handles-inbound-email-that-fails-dmarc).</li><li>**pct.quarantine** : indique qu’un pourcentage inférieur à 100 % des messages n’ayant pas satisfait aux vérifications DMARC seront remis malgré tout. Cela signifie que le message n'a pas satisfait les vérifications DMARC et que la stratégie a été définie de manière à mettre les messages en quarantaine, mais que le champ pct n'a pas été défini sur 100 % et que le système a déterminé aléatoirement de ne pas appliquer l'action DMARC conformément à la stratégie du domaine spécifié.</li><li>**pct.reject** : indique qu’un pourcentage inférieur à 100 % des messages n'ayant pas satisfait aux vérifications DMARC seront remis malgré tout. Cela signifie que le message n'a pas satisfait les vérifications DMARC et que la stratégie a été définie de manière à rejeter les messages, mais que le champ pct n'a pas été défini sur 100 % et que le système a déterminé aléatoirement de ne pas appliquer l'action DMARC conformément à la stratégie du domaine spécifié.</li><li>**permerror** : indique qu’une erreur permanente s’est produite lors de l'évaluation DMARC, par exemple, qu’un enregistrement TXT DMARC mal formé a été détecté dans le système DNS. Toute tentative de renvoyer le message produira sans doute le même résultat. Essayez plutôt de contacter le propriétaire du domaine pour résoudre le problème.</li><li>**temperror** : indique qu’une erreur temporaire s’est produite lors de l’évaluation DMARC. Vous pouvez demander à l’expéditeur de renvoyer son message plus tard pour qu’il soit traité correctement.</li></ul>|
 |compauth|Résultat de l’authentification composite. Utilisé par Microsoft 365 pour combiner plusieurs types d’authentification tels que SPF, DKIM, DMARC ou toute autre partie du message pour déterminer si le message est authentifié ou non. Utilise le domaine From: comme base d’évaluation.|
 |dkim|Décrit les résultats de la vérification DKIM du message. Les valeurs admises sont les suivantes : <ul><li>**pass** : indique que le message a satisfait à la vérification DKIM.</li><li>**fail (raison)**  : indique que le message ne satisfait pas à la vérification DKIM et pourquoi. Par exemple, parce que le message n’a pas été signé ou que la signature n’a pas été vérifiée.</li><li>**none** : indique que le message n’a pas été signé. Cela n’indique pas forcément que le domaine a un enregistrement DKIM ou que l’évaluation de l’enregistrement DKIM ne donne pas de résultat, mais simplement que ce message n’a pas été signé.</li></ul>|

@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-mar2020
 ms.assetid: 59414438-99f5-488b-975c-5023f2254369
 description: Dans cet article, vous apprendrez à créer, tester et régler une stratégie DLP en fonction des besoins de votre organisation.
-ms.openlocfilehash: 3405fc99f4d12715972b1fd18a9c20dd9334382b
-ms.sourcegitcommit: a4926e98b6594bbee68bfca90438c9c764499255
+ms.openlocfilehash: b8e82e1304cb411a1e73e6f7bdc02fecdda9784f
+ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "45092004"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46648781"
 ---
 # <a name="create-test-and-tune-a-dlp-policy"></a>Création, test et réglage d’une stratégie DLP
 
@@ -37,6 +37,24 @@ DLP utilise un moteur d’analyse de contenu pour examiner le contenu des messag
 - Bloquer activement le courrier électronique ou le partage de fichiers
 
 Parfois, les clients font disparaître DLP car ils ne tiennent pas compte du type de données à protéger. Il est supposé que les données sensibles, telles que les enregistrements médicaux ou les informations financières, existent uniquement pour les industries comme les soins de santé ou pour les entreprises qui exécutent des magasins en ligne. Toutefois, toute entreprise peut gérer les informations sensibles de manière régulière, même si elles ne le savent pas. Une feuille de calcul des noms d’employés et des dates de naissance est aussi sensible qu’une feuille de calcul des noms des clients et des informations de carte de crédit. En d’autres termes, ce type d’informations a tendance à flotter plus que prévu, car les employés se déplacent en silence sur leurs tâches quotidiennes, ne pensent rien de l’exportation d’un fichier CSV à partir d’un système et de son envoi à une personne. Vous pouvez également être surpris de savoir si les employés envoient des courriers électroniques contenant des informations sur la carte bancaire ou bancaire sans prendre en compte les conséquences.
+
+## <a name="permissions"></a>Autorisations
+
+Les membres de votre équipe de mise en conformité qui créeront des stratégies DLP ont besoin des autorisations d’accès au Centre de conformité et de sécurité. Par défaut, votre administrateur de client a accès à cet emplacement et peut autoriser des agents de conformité et d’autres personnes à accéder au Centre de sécurité et conformité, sans pour autant leur octroyer toutes les autorisations d’un administrateur de client. Pour cela, nous vous recommandons de :
+  
+1. Créer un groupe dans Microsoft 365 et d’y ajouter des responsables de la mise en conformité.
+    
+2. Créer un groupe de rôles sur la page **Autorisations** du Centre de sécurité et de conformité. 
+
+3. Lors de la création du groupe de rôles, utilisez la section **choisir les rôles** pour ajouter le rôle suivant au groupe de rôles : gestion de la **conformité DLP**.
+    
+4. Utilisez la section **Choisir des membres** pour ajouter le groupe Microsoft 365 que vous avez créé précédemment au groupe de rôles.
+
+Vous pouvez également créer un groupe de rôles avec des privilèges en affichage seul vers les stratégies DLP et les rapports DLP en accordant au rôle **Gestion de la conformité DLP en affichage seul**.
+
+Pour plus d’informations, voir [Give users access to the Office 365 Compliance Center](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
+  
+Ces autorisations sont requises uniquement pour créer et appliquer une stratégie DLP. L’application d’une stratégie ne nécessite pas d’accès au contenu.
 
 ## <a name="how-sensitive-information-is-detected-by-dlp"></a>Détection des informations sensibles par DLP
 
