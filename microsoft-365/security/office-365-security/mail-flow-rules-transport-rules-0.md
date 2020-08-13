@@ -12,14 +12,14 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 9c2cf227-eff7-48ef-87fb-487186e47363
 description: Vous pouvez utiliser des règles de flux de messagerie (règles de transport) pour identifier et effectuer des actions sur les messages qui transitent par votre organisation.
-ms.openlocfilehash: 8eb4b805065ef1e279c5bbdab17a86b29aacc17b
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 6a70d5a23e3d65788143ea067a4702268e32f6ea
+ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44209690"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46653687"
 ---
-# <a name="mail-flow-rules-transport-rules-in-standalone-eop"></a>Règles de flux de messagerie (règles de transport) dans EOP autonome
+# <a name="mail-flow-rules-transport-rules-in-standalone-eop"></a>Règles de flux de courrier (règles de transport) dans EOP autonome
 
 Dans les organisations Exchange Online (EOP) autonomes sans boîtes aux lettres Exchange Online, vous pouvez utiliser des règles de flux de messagerie (également appelées règles de transport) pour identifier et effectuer des actions sur les messages qui transitent par votre organisation.
 
@@ -69,21 +69,26 @@ Pour plus d’informations sur les actions de règle de flux de messagerie dispo
 
 ### <a name="multiple-conditions-exceptions-and-actions"></a>Plusieurs conditions, exceptions et actions
 
-Le tableau suivant explique comment plusieurs conditions, valeurs de condition, exceptions et actions sont traitées dans une règle.
+Use a transport rule so messages can bypass Clutter
 
-|**Composant**|**Logique**|**Comments**|
-|:-----|:-----|:-----|
+****
+
+|Composant|Logique|Comments|
+|---|---|---|
 |Commentaires|AND|Un message doit remplir toutes les conditions de la règle. Si vous souhaitez qu'une condition ou une autre s'applique, utilisez des règles distinctes pour chaque condition. Par exemple, si vous souhaitez ajouter la même clause d'exclusion de responsabilité aux messages comportant des pièces jointes et aux messages contenant un texte spécifique, créez une règle pour chaque condition. Vous pouvez facilement copier une règle dans le CAE.|
 |Un message doit remplir toutes les conditions de la règle. Si vous souhaitez qu’une condition ou une autre s’applique, utilisez des règles distinctes pour chaque condition. Par exemple, si vous souhaitez ajouter la même clause d’exclusion de responsabilité aux messages comportant des pièces jointes et aux messages dont le contenu correspond à un modèle, créez une règle pour chaque condition. Vous pouvez facilement copier une règle.|OR|Certaines conditions vous permettent de spécifier plusieurs valeurs. Le message doit correspondre à l'une des valeurs spécifiées (pas toutes). Par exemple, si l'objet d'un message électronique est Informations sur le cours des actions et que la condition **L'objet inclut l'un de ces mots** est configurée pour établir une correspondance avec le mot Contoso ou actions, la condition est remplie, car l'objet du message contient au moins l'une des valeurs spécifiées.  |
 |Certaines conditions vous permettent de spécifier plusieurs valeurs. Si plusieurs valeurs peuvent être spécifiées pour une condition, le message doit correspondre à l’une des valeurs spécifiées pour cette condition. Par exemple, si l’objet d’un message électronique est Informations sur le cours des actions et que la condition L’objet inclut l’un de ces mots est configurée pour établir une correspondance avec le mot Contoso ou actions, la condition est remplie, car l’objet du message contient au moins l’une des valeurs de condition.|OR|Si un message établit une correspondance avec l'une des exceptions, les actions ne sont pas appliquées. Le message ne doit pas forcément correspondre à toutes les exceptions.|
 |Si un message établit une correspondance avec l’une des exceptions, les actions ne sont pas traitées. Le message ne doit pas forcément correspondre à toutes les exceptions.|AND|Les messages qui répondent aux conditions d'une règle permettent d'obtenir toutes les actions qui sont spécifiées dans la règle. Par exemple, si les actions **Ajouter à l'objet du message le préfixe** et **Ajouter des destinataires au champ Cci** sont sélectionnées, les deux actions sont appliquées au message.  <br/><br/> Si un message remplit les conditions d’une règle, toutes les actions spécifiées dans la règle en question lui sont appliquées. Par exemple, si les actions Ajouter à l’objet du message le préfixe et Ajouter des destinataires au champ Cci sont sélectionnées, les deux actions sont appliquées au message. La chaîne spécifiée sera ajoutée en préfixe de l’objet du message et les destinataires indiqués seront ajoutés en tant que destinataires Cci.<br/><br/> Vous pouvez également définir une action sur une règle de sorte que lorsque cette règle est appliquée, les règles suivantes ne sont pas appliquées au message.|
+|
 
 ### <a name="mail-flow-rule-properties"></a>Propriétés de règle de flux de messagerie
 
 Le tableau suivant décrit les propriétés de règle qui sont disponibles dans les règles de flux de messagerie.
 
-|**Nom de la propriété dans le CAE**|**Nom du paramètre dans PowerShell**|**Description**|
-|:-----|:-----|:-----|
+****
+
+|Nom de la propriété dans le CAE|Nom du paramètre dans PowerShell|Description|
+|---|---|---|
 |**Priorité**|_Priority_|Indique l'ordre dans lequel les règles sont appliquées aux messages. La priorité par défaut est définie en fonction de la date de création de la règle (les règles plus anciennes ont une priorité plus élevée que les règles plus récentes et les règles haute priorité sont traitées avant les règles basse priorité).   <br/><br/> Vous modifiez la priorité de la règle dans le CAE en la déplaçant vers le haut ou le bas de la liste des règles. Dans PowerShell, vous définissez le numéro de priorité (0 est la priorité la plus élevée). <br/><br/> Par exemple, si vous disposez d'une règle qui rejette les messages dans lesquels figure un numéro de carte de crédit et d'une autre règle qui exige une approbation, vous voudrez certainement que la règle de rejet soit appliquée en premier et que les autres règles ne s'appliquent pas.  |
 |**Mode**|_Mode_|Vous pouvez spécifier si vous souhaitez que la règle commence immédiatement le traitement des messages ou si vous souhaitez tester les règles sans affecter la remise du message (avec ou sans prévention contre la perte de données ou conseils de stratégie DLP). <br/><br/> Les conseils de stratégie affichent une courte note dans Outlook ou Outlook sur le web afin d'avertir une personne créant un message de possibles violations de stratégie. Pour plus d'informations, consultez la rubrique **Conseils de stratégie**.  <br/><br/> Pour plus d’informations sur les modes, voir **Test a mail flow rule**.|
 |**Activer cette règle à la date suivante** <br/><br/> **Désactiver cette règle à la date suivante**|_ActivationDate_ <br/> _ExpiryDate_|Spécifie la plage de dates au cours de laquelle la règle est active.|
@@ -92,6 +97,7 @@ Le tableau suivant décrit les propriétés de règle qui sont disponibles dans 
 |**Faire correspondre l'adresse de l'expéditeur dans le message**|_SenderAddressLocation_|Si la règle utilise des conditions ou des exceptions qui examinent l'adresse de messagerie de l'expéditeur, vous pouvez rechercher la valeur dans l'en-tête du message, dans l'enveloppe du message ou dans les deux.|
 |**Ne plus traiter de règles**|_SenderAddressLocation_|Il s'agit d'une action de la règle, mais celle-ci ressemble à une propriété dans le CAE. Vous pouvez décider d'arrêter d'appliquer des règles à un message après qu'il a été traité par une règle.|
 |**Commentaires**|_Comments_|Vous pouvez entrer des commentaires descriptifs sur la règle.|
+|
 
 ## <a name="how-mail-flow-rules-are-applied-to-messages"></a>Application des règles de flux de messagerie au courrier électronique
 
@@ -103,8 +109,10 @@ Chaque règle offre également la possibilité d'arrêter le traitement des autr
 
 Plusieurs types de messages transitent par une organisation. Le tableau suivant montre ceux qui peuvent être traités par les règles de flux de messagerie.
 
-|**Type de message**|**Une règle peut-elle être appliquée ?**|
-|:-----|:-----|
+****
+
+|Il existe plusieurs types de messages qui transitent par une organisation. Le tableau suivant montre quels types de messages peuvent être traités par les règles de transport.|Type de message|
+|---|---|
 |**Messages réguliers**: messages qui contiennent un corps de message au format RTF (Rich Text Format), html ou texte brut, ou un ensemble de corps de message en plusieurs parties ou alternatif.|Oui|
 |**Chiffrement des messages office 365**: messages chiffrés par le chiffrement de messages Office 365 dans Office 365. Pour plus d'informations, voir [Chiffrement dans Office 365](https://docs.microsoft.com/microsoft-365/compliance/encryption).|Les règles peuvent toujours accéder aux en-têtes des enveloppes contenus dans des messages protégés et traiter les messages en se basant sur les conditions qui analysent les en-têtes. <br/><br/> Pour qu'une règle examine ou modifie le contenu d'un message chiffré, vous devez vérifier que le déchiffrement du transport est activé (Obligatoire ou Facultatif ; la valeur par défaut est Facultatif). Pour plus d’informations, consultez la rubrique [définir des règles pour chiffrer ou déchiffrer des messages électroniques dans Office 365](https://docs.microsoft.com/microsoft-365/compliance/define-mail-flow-rules-to-encrypt-email).|
 |**Messages chiffrés S/MIME**|Les règles peuvent uniquement accéder aux en-têtes d'enveloppe et traiter les messages en fonction de conditions qui inspectent ces en-têtes. <br/><br/> Les règles avec conditions qui requièrent l'inspection du contenu des messages ou les actions qui modifient le contenu des messages ne peuvent pas être traitées.|
@@ -113,6 +121,7 @@ Plusieurs types de messages transitent par une organisation. Le tableau suivant 
 |**Messages de messagerie unifiée**: messages créés ou traités par le service de messagerie unifiée, tels que la messagerie vocale, les télécopies, les notifications d’appels manqués et les messages créés ou transférés à l’aide de Microsoft Outlook Voice Access.|Oui|
 |**Messages anonymes**: messages envoyés par des expéditeurs anonymes.|Oui|
 |**Rapports de lecture**: rapports générés en réponse à des demandes de confirmation de lecture par des expéditeurs. Les rapports lus ont une classe de message `IPM.Note*.MdnRead` ou `IPM.Note*.MdnNotRead` .|Oui|
+|
 
 ## <a name="what-else-should-i-know"></a>Que dois-je savoir d’autre ?
 

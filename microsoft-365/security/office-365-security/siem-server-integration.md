@@ -17,12 +17,12 @@ ms.custom:
 - SIEM
 - seo-marvel-apr2020
 description: Obtenir une vue d’ensemble de l’intégration du serveur des informations de sécurité et de la gestion des événements (SIEM) à vos applications et services Cloud Microsoft 365
-ms.openlocfilehash: c52f24c6260c890b1f6d8612efacb78f9b08be86
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: d2be5e0127adf25b3884e3717caccf60d4db1d28
+ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035259"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46653570"
 ---
 # <a name="security-information-and-event-management-siem-server-integration-with-microsoft-365-services-and-applications"></a>Intégration du serveur de gestion des événements et des informations de sécurité (SIEM) aux services et applications Microsoft 365
 
@@ -45,9 +45,10 @@ La nécessité d’un serveur SIEM dépend de nombreux facteurs, tels que les ex
 
 Un serveur SIEM peut recevoir des données à partir d’un large éventail de services et d’applications Microsoft 365. Le tableau suivant répertorie plusieurs applications et services Microsoft 365, ainsi que des ressources et des entrées de serveur SIEM pour en savoir plus.
 
-||||
+****
+
+|Service ou application Microsoft 365|Entrées/méthodes du serveur SIEM|Ressources pour en savoir plus|
 |---|---|---|
-|**Service ou application Microsoft 365**|**Entrées/méthodes du serveur SIEM**|**Ressources pour en savoir plus**|
 |[Protection avancée contre les menaces dans Office 365](office-365-atp.md)|Journaux d'audit|[Intégration SIEM avec Office 365 protection avancée contre les menaces](siem-integration-with-office-365-ti.md)|
 |[Microsoft Defender – Protection avancée contre les menaces](https://docs.microsoft.com/windows/security/threat-protection/)|Point de terminaison HTTPs hébergé dans Azure <br/>API REST|[Attirez les alertes sur vos outils SIEM](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-siem)|
 |[Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security)|Intégration des journaux|[Intégration SIEM à la sécurité des applications Cloud Microsoft](https://docs.microsoft.com/cloud-app-security/siem)|

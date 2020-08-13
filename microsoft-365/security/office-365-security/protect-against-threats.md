@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Les administrateurs peuvent en savoir plus sur la protection contre les menaces dans Microsoft 365 et configurer la façon de l’utiliser pour votre organisation.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 54500500095392ebfc3d93080701fa4715fc8448
-ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
+ms.openlocfilehash: 8c2786ebda18b5730e1cbe93316f0d6cc319f6a9
+ms.sourcegitcommit: fa8e488936a36e4b56e1252cb4061b5bd6c0eafc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44617395"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "46656627"
 ---
 # <a name="protect-against-threats"></a>Protéger contre les menaces
 
@@ -36,13 +36,14 @@ Microsoft 365 inclut diverses fonctionnalités de protection contre les menaces.
 
 ### <a name="subscriptions"></a>Abonnements
 
-Les fonctionnalités de protection contre les menaces sont incluses dans tous les abonnements Microsoft 365 ; Toutefois, certains abonnements incluent des fonctionnalités plus avancées. Le tableau suivant répertorie les fonctionnalités de protection incluses dans cet article, ainsi que les conditions minimales requises en matière d’abonnement.<br/>
+Les fonctionnalités de protection contre les menaces sont incluses dans tous les abonnements Microsoft 365 ; Toutefois, certains abonnements incluent des fonctionnalités plus avancées. Le tableau suivant répertorie les fonctionnalités de protection incluses dans cet article, ainsi que les conditions minimales requises en matière d’abonnement.
 
-|||
+****
+
+|Type de protection|Configuration requise pour l’abonnement|
 |---|---|
-|**Type de protection**|**Conditions requises en matière d’abonnement**|
 |Protection anti-programme malveillant|[Exchange Online Protection](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description) (EoP)|
-|Protection contre les URL et les fichiers malveillants dans les e-mails et les documents Office|[Office 365 Advanced Threat Protection](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description) (ATP)|
+|Protection contre les URL et fichiers malveillants dans les documents électroniques et Office|[Office 365 Advanced Threat Protection](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description) (ATP)|
 |Protection anti-hameçonnage|[Exchange Online Protection](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)|
 |Protection avancée contre le hameçonnage|[Office 365 – Protection avancée contre les menaces](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)|
 |Protection anti-courrier indésirable|[Exchange Online Protection](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)|
@@ -54,8 +55,10 @@ Les fonctionnalités de protection contre les menaces sont incluses dans tous le
 
 Vous devez disposer d’un rôle approprié pour configurer les stratégies dans le [Centre de sécurité & conformité](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center). Le tableau ci-après inclut des exemples :
 
+****
+
 |Rôle ou groupe de rôles|Où en savoir plus|
-|---------|---------|
+|---|---|
 |administrateur général|[À propos des rôles d’administrateur Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)|
 |Administrateur de sécurité|[Autorisations des rôles d’administrateur dans Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)|
 |Gestion d’Organisation Exchange Online|[Autorisations dans Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo) <br>et<br> [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell)|
@@ -221,9 +224,10 @@ La journalisation d’audit est disponible dans les abonnements qui incluent [Ex
 
 Une fois que vous avez configuré vos fonctionnalités de protection contre les menaces, veillez à surveiller le fonctionnement de ces fonctionnalités, examiner et réviser vos stratégies en fonction de vos besoins, et surveiller les nouvelles fonctionnalités et les mises à jour de services.
 
-|||
+****
+
+|Procédure|Ressources pour en savoir plus|
 |---|---|
-|**Procédure**|**Ressources pour en savoir plus**|
 |Découvrez comment les fonctionnalités de protection contre les menaces fonctionnent pour votre organisation en affichant des rapports|[Tableau de bord de sécurité](security-dashboard.md)<br/>[Rapports de sécurité de messagerie](view-email-security-reports.md)<br/>[Rapports pour la protection avancée contre les menaces Office 365](view-reports-for-atp.md)<br/>[Threat Explorer](threat-explorer.md)|
 |Vérifier et réviser régulièrement vos stratégies de protection contre les menaces selon vos besoins|[Degré de sécurisation](../mtp/microsoft-secure-score.md)<br/>[Rapports intelligents et Insights](reports-and-insights-in-security-and-compliance.md)<br/>[Fonctionnalités d’enquête et de réponse aux menaces Microsoft 365](keep-users-safe-with-office-365-ti.md)|
 |Surveillez les nouvelles fonctionnalités et les mises à jour de service|[Options de publication standard et ciblées](https://docs.microsoft.com/microsoft-365/admin/manage/release-options-in-office-365)<br/>[Centre de messages](https://docs.microsoft.com/microsoft-365/admin/manage/message-center)<br/>[Feuille de route Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=advanced%2Cthreat%2Cprotection)<br/>[Descriptions des services](https://docs.microsoft.com/office365/servicedescriptions/office-365-service-descriptions-technet-library)|

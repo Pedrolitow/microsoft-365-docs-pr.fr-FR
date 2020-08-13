@@ -1,5 +1,5 @@
 ---
-title: Seuil de probabilité de courrier indésirable (SCL)
+title: Spam confidence level
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Les administrateurs peuvent en savoir plus sur le seuil de probabilité de courrier indésirable (SCL) appliqué aux messages dans Exchange Online Protection (EOP).
-ms.openlocfilehash: bc3a1e7e4b3e5f737b8861c14e0fd2c3d0841940
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 7e8d706f89c5b16bd34ad074498e011dc5d74093
+ms.sourcegitcommit: fa8e488936a36e4b56e1252cb4061b5bd6c0eafc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208011"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "46656538"
 ---
 # <a name="spam-confidence-level-scl-in-eop"></a>Seuil de probabilité de courrier indésirable dans EOP
 
@@ -31,13 +31,14 @@ Dans les organisations Microsoft 365 avec des boîtes aux lettres dans Exchange 
 
 Ce que signifie le SCL et les actions par défaut effectuées sur les messages sont décrites dans le tableau suivant. Pour plus d’informations sur les actions que vous pouvez effectuer sur les messages en fonction du verdict de filtrage du courrier indésirable, consultez la rubrique [configure anti-spam Policies in EOP](configure-your-spam-filter-policies.md).
 
-||||
+****
+
+|SCL|Définition|Action par défaut|
 |:---:|---|---|
-|**SCL**|**Définition**|**Action par défaut**|
 |-1|Le message a ignoré le filtrage du courrier indésirable. Par exemple, le message provient d’un expéditeur approuvé, a été envoyé à un destinataire approuvé ou provient d’un serveur de source de messagerie de la liste verte IP. Pour plus d’informations, consultez la rubrique [créer des listes d’expéditeurs approuvés dans EOP](create-safe-sender-lists-in-office-365.md).|Le message est remis dans la boîte aux lettres des destinataires.|
 |0, 1|Filtrage du courrier indésirable déterminé le message n’était pas du courrier indésirable.|Le message est remis dans la boîte aux lettres des destinataires.|
 |5, 6|Filtrage du courrier indésirable marqué comme **courrier indésirable**|Le message est envoyé vers le dossier Courrier indésirable des destinataires.|
-|9 |Filtrage du courrier indésirable marqué comme message en tant que **courrier de confiance élevée**|Le message est envoyé vers le dossier Courrier indésirable des destinataires.|
+|9 |Filtrage du courrier indésirable marqué comme message en tant que **courrier de confiance élevée**|Le message est envoyé vers le dossier Courrier indésirable des destinataires.|
 |
 
 Vous remarquerez que les seuils SCL 2, 3, 4, 7 et 8 ne sont pas utilisés par le filtrage du courrier indésirable.
@@ -46,6 +47,6 @@ Vous pouvez utiliser des règles de flux de messagerie (également appelées rè
 
 À l’instar du SCL, le niveau de réclamation en masse (BCL) identifie un message électronique en masse incorrect (également appelé _courrier gris_). Une BCL plus élevée indique qu’un message électronique en nombre est susceptible de générer des plaintes (et, par conséquent, plus vraisemblablement un courrier indésirable). Vous configurez le seuil BCL dans les stratégies anti-courrier indésirable. Pour plus d’informations, reportez-vous à la rubrique [configure anti-spam Policies in EOP](configure-your-spam-filter-policies.md), [Bulk Complaint Level (BCL) in EOP)](bulk-complaint-level-values.md)et [quelle est la différence entre courrier indésirable et courrier électronique en masse ?](what-s-the-difference-between-junk-email-and-bulk-email.md).
 
-||
-|:-----|
+|<!-- -->|
+|---|
 |![Icône rapide pour LinkedIn Learning ](../../media/eac8a413-9498-4220-8544-1e37d1aaea13.png) **New de Microsoft 365 ?** Découvrez les cours vidéo gratuits pour les **administrateurs et les professionnels de Microsoft 365**, qui vous ont été proposés par LinkedIn Learning.|

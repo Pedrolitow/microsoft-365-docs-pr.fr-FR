@@ -16,12 +16,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Les administrateurs peuvent en savoir plus sur les stratégies anti-hameçonnage disponibles dans Exchange Online Protection (EOP) et Office 365 Advanced Threat Protection (Office 365 ATP).
-ms.openlocfilehash: a61123e3d90a4125bf5a8303654973e1b478fc4c
-ms.sourcegitcommit: 2acd9ec5e9d150389975e854c7883efc186a9432
+ms.openlocfilehash: a7db287b8a8efb5c41488529fcaa8789b2f594b5
+ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "44754663"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46652716"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Stratégies anti-hameçonnage dans Microsoft 365
 
@@ -38,9 +38,10 @@ Toutes les autres organisations ont des stratégies anti-hameçonnage.
 
 Les principales différences entre les stratégies de détection d’hameçonnage et les stratégies anti-hameçonnage ATP sont décrites dans le tableau suivant :
 
-||||
+****
+
+|Fonctionnalité|Stratégies anti-hameçonnage.|Stratégies anti-hameçonnage ATP|
 |---|:---:|:---:|
-|**Fonctionnalité**|**Stratégies anti-hameçonnage.**|**Stratégies anti-hameçonnage ATP**|
 |Stratégie par défaut créée automatiquement|![Coche](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Coche](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
 |Créer des stratégies personnalisées|![Coche](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Coche](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
 |Paramètres de stratégie<sup>\*</sup>|![Coche](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Coche](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
@@ -130,11 +131,11 @@ Les paramètres de stratégie suivants sont disponibles uniquement dans les stra
 
 L’emprunt d’identité est l’endroit où l’expéditeur ou le domaine de messagerie de l’expéditeur d’un message doit ressembler à un expéditeur ou un domaine réel :
 
-- Un exemple d’emprunt d’identité du domaine contoso.com est ćóntoso.com.
+- Un exemple d'usurpation de l'identité du domaine contoso.com est ćóntoso.com.
 
-- Un exemple d’emprunt d’identité de l’utilisateur michelle@contoso.com est michele@contoso.com.
+- Un exemple d'usurpation de l'identité de l'utilisateur michelle@contoso.com est michele@contoso.com.
 
-Un domaine emprunté pourrait être considéré comme légitime (domaine enregistré, enregistrements d’authentification de messagerie électronique configurés, etc.), à l’exception de son intention de tromper les destinataires.
+Un domaine usurpé pourrait autrement être considéré comme légitime (domaine enregistré, enregistrements d'authentification de courrier électronique configurés, etc.), sauf si son but est de tromper les destinataires.
 
 Les paramètres d’emprunt d’identité suivants sont disponibles uniquement dans les stratégies anti-hameçonnage ATP :
 

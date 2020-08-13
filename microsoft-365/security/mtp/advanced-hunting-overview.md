@@ -18,12 +18,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 8dca8cac2c66147975f71c86b91aee7b36c92cf9
-ms.sourcegitcommit: 51f040a4edb8dd52521a5d7b0f7a975986a1af10
+ms.openlocfilehash: a1fa80d79c1802d96fc755def3b8ec15af13b0c9
+ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/10/2020
-ms.locfileid: "46608332"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46649402"
 ---
 # <a name="proactively-hunt-for-threats-with-advanced-hunting-in-microsoft-threat-protection"></a>Repérage proactive de menaces avec repérage avancé dans la Protection Microsoft contre les menaces
 
@@ -68,7 +68,7 @@ Les données de chasse avancées peuvent être classées en deux types distincts
 - [Travailler avec les résultats de la requête](advanced-hunting-query-results.md)
 - [Prendre des mesures sur les résultats d’une requête](advanced-hunting-take-action.md)
 - [Utiliser des requêtes partagées](advanced-hunting-shared-queries.md)
-- [Repérer les menaces sur divers appareils et e-mails](advanced-hunting-query-emails-devices.md)
+- [Recherche sur les appareils, les e-mails, les applications et les identités](advanced-hunting-query-emails-devices.md)
 - [Comprendre le schéma](advanced-hunting-schema-tables.md)
 - [Appliquer les meilleures pratiques de requête](advanced-hunting-best-practices.md)
 - [Vue d’ensemble des détections personnalisées](custom-detections-overview.md)

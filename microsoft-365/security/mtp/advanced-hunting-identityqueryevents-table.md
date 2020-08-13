@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 436c4d7306f9f5febd614489090a0a10929ba3c9
-ms.sourcegitcommit: b4119682bd3c036289e851fff56fde869c816479
+ms.openlocfilehash: cf2038a15242139817eb073ec2a6408905824123
+ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45204874"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46649318"
 ---
 # <a name="identityqueryevents"></a>IdentityQueryEvents
 
@@ -63,6 +63,6 @@ Pour plus d’informations sur les autres tables du schéma de repérage avancé
 - [Vue d’ensemble du repérage avancé](advanced-hunting-overview.md)
 - [Apprendre le langage de requête](advanced-hunting-query-language.md)
 - [Utiliser des requêtes partagées](advanced-hunting-shared-queries.md)
-- [Repérer les menaces sur divers appareils et e-mails](advanced-hunting-query-emails-devices.md)
+- [Recherche sur les appareils, les e-mails, les applications et les identités](advanced-hunting-query-emails-devices.md)
 - [Comprendre le schéma](advanced-hunting-schema-tables.md)
 - [Appliquer les meilleures pratiques de requête](advanced-hunting-best-practices.md)

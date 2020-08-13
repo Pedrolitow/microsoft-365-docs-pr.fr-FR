@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 description: Découvrez comment vérifier l’éligibilité de votre école pour les tarifs Microsoft 365 éducation éducation.
 ms.date: 07/21/2020
-ms.openlocfilehash: 948d001315c44e288d9fe3e363ec6e1ddeb8ff32
-ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
+ms.openlocfilehash: 0bfb779880b94e309e266d8f57ed0a25b749e1f2
+ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "46560702"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46653724"
 ---
 # <a name="verify-academic-eligibility-for-microsoft-365-education-subscriptions"></a>Vérifier le droit d’éducation pour les abonnements Microsoft 365 éducation
 
@@ -59,7 +59,7 @@ Si votre admissibilité éducation est refusée, consultez [mon école n’est p
 Une fois que vous disposez d’une version d’évaluation de Microsoft 365 éducation, vous pouvez vérifier le statut de l’éligibilité éducation de votre école à tout moment.
 
 1. Accédez au [Centre d’administration Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=2024339).
-2. Sur la page d’accueil, faites défiler vers le bas et recherchez la carte de **facturation** . \
+2. Sur la page d’accueil, recherchez la carte de **facturation** . \
     La carte de **facturation** indique l’état du processus de vérification. La carte indique l’un des statuts suivants : approuvé, en attente, refusé ou ajouter votre domaine.
 
     > [!NOTE]

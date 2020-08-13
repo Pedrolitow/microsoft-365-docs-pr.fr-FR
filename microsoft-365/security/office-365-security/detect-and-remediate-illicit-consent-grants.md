@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: Découvrez comment reconnaître et résoudre les attaques de consentement illicite dans Microsoft Office 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a324c4427046480fe81f58fc810f020c87247032
-ms.sourcegitcommit: df6cc8c2eb2a65c7668f2953b0f7ec783a596d15
+ms.openlocfilehash: 125ebdf8b3d17e3a14abec8154129b0144928905
+ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/13/2020
-ms.locfileid: "44726808"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46652956"
 ---
 # <a name="detect-and-remediate-illicit-consent-grants"></a>Détecter et résoudre les accords de consentement illicite
 
@@ -54,11 +54,11 @@ Vous devez rechercher le **Journal d’audit** pour trouver des signes, égaleme
 5. Cliquez sur le résultat pour afficher les détails de l’activité. Cliquez sur **informations supplémentaires** pour obtenir les détails de l’activité. Vérifiez si IsAdminContent est défini sur true.
 
 > [!NOTE]
-> 
+>
 > L’affichage de l’entrée du journal d’audit correspondante dans les résultats de la recherche après un événement peut prendre entre 30 minutes et 24 heures.
-> 
+>
 > La durée de conservation et de recherche d’un enregistrement d’audit dans le journal d’audit dépend de votre abonnement Microsoft 365 et, en particulier, du type de licence affecté à un utilisateur spécifique. Pour plus d’informations, consultez la rubrique [Journal d’audit](../../compliance/search-the-audit-log-in-security-and-compliance.md).
-> 
+>
 > Si cette valeur est true, cela signifie qu’une personne disposant d’un accès administrateur général peut avoir accordé un accès étendu aux données. Si cette opération est inattendue, prenez les mesures nécessaires pour [confirmer une attaque](#how-to-confirm-an-attack).
 
 ## <a name="how-to-confirm-an-attack"></a>Procédure de confirmation d’une attaque

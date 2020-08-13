@@ -16,12 +16,12 @@ ms.assetid: 97921f0e-832f-40c7-b56d-414faede5191
 ms.collection:
 - M365-security-compliance
 description: Découvrez l’interface de gestion Web dans Exchange Online Protection (EOP).
-ms.openlocfilehash: 777597489e54c642220cb42f0c686b675101897f
-ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
+ms.openlocfilehash: d5753f687461a5495c2431db687263d7211bcbf5
+ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44616997"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46652908"
 ---
 # <a name="exchange-admin-center-in-standalone-eop"></a>Centre d’administration Exchange dans EOP autonome
 
@@ -80,9 +80,10 @@ Les onglets constituent votre deuxième niveau de navigation. Chaque domaine de 
 
 Lorsque vous cliquez sur la plupart des onglets, vous devez voir une barre d'outils. La barre d'outils contient des icônes qui correspondent à une action spécifique. Le tableau suivant décrit les icônes et leurs actions.
 
-||||
+****
+
+|Icône|Nom|Action|
 |---|---|---|
-|**Icône**|**Nom**|**Action**|
 |![Icône Ajouter](../../media/ITPro-EAC-AddIcon.gif)|Ajouter, Nouveau|Permet de créer un objet. Certaines de ces icônes comportent une flèche vers le bas associée, sur laquelle vous pouvez cliquer pour afficher des objets supplémentaires que vous pouvez créer.|
 |![Icône Modifier](../../media/ITPro-EAC-EditIcon.gif)|Modifier|Permet de modifier un objet.|
 |![Icône Supprimer](../../media/ITPro-EAC-DeleteIcon.gif)|Supprimer|Permet de supprimer un objet. Certaines des icônes de suppression comportent une flèche vers le bas, sur laquelle vous pouvez cliquer pour afficher des options supplémentaires.|
@@ -124,125 +125,63 @@ Pour bénéficier d’une meilleure expérience d’utilisation du CAE, nous vou
 Les langues suivantes sont prises en charge et disponibles pour le centre d’administration Exchange en mode autonome EOP.
 
 - Amharique
-
 - Arabe
-
 - basque (Basque)
-
 - Bengla (Inde)
-
 - Bulgare
-
 - Catalan
-
 - Chinois (simplifié)
-
 - Chinois (traditionnel)
-
 - Croate
-
 - Tchèque
-
 - Danois
-
 - Néerlandais
-
-- Néerlandais
-
 - Anglais
-
 - Estonien
-
 - Filipino (Philippines)
-
 - Finnois
-
 - Français
-
 - Galicien
-
 - Allemand
-
 - Grec
-
 - Goudjrati
-
 - Hébreu
-
 - Hindi
-
 - Hongrois
-
 - Islandais
-
 - Indonésien
-
 - Italien
-
 - Japonais
-
 - Kannada
-
 - Kazakh
-
 - Kiswahili
-
 - Coréen
-
 - Letton
-
 - Lituanien
-
 - Malais (Brunei Darussalam)
-
 - Malais (Malaisie)
-
 - Malayalam
-
 - Marathe
-
 - Norvégien (Bokmål)
-
 - Norvégien (nynorsk)
-
 - Odia
-
 - Perse
-
 - Polonais
-
 - Portugais (Brésil)
-
 - Portugais (Portugal)
-
 - Roumain
-
 - Russe
-
 - Serbe (cyrillique, Serbie)
-
 - Serbe (latin)
-
 - Slovaque
-
 - Slovène
-
 - Espagnol
-
 - Suédois
-
 - Tamoul
-
 - Télougou
-
 - Thaï
-
 - Turc
-
 - Ukrainien
-
 - Ourdou
-
 - Vietnamien
-
 - Gallois

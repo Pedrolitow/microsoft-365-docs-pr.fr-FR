@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 26b376fe3e804a3ebaa478e484807bea4c33d38b
-ms.sourcegitcommit: 7c1b34205746ff0690ffc774a74bdfd434256cf5
+ms.openlocfilehash: 64f0b19cfd9588e975b06cb43ca73270b00c5e26
+ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "45049693"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46649390"
 ---
 # <a name="learn-the-advanced-hunting-query-language"></a>Découvrir le langage de requête de repérage avancé
 
@@ -179,6 +179,6 @@ Pour plus d’informations sur le langage de requête Kusto et les opérateurs p
 - [Vue d’ensemble du repérage avancé](advanced-hunting-overview.md)
 - [Travailler avec les résultats de la requête](advanced-hunting-query-results.md)
 - [Utiliser des requêtes partagées](advanced-hunting-shared-queries.md)
-- [Repérer les menaces sur divers appareils et e-mails](advanced-hunting-query-emails-devices.md)
+- [Recherche sur les appareils, les e-mails, les applications et les identités](advanced-hunting-query-emails-devices.md)
 - [Comprendre le schéma](advanced-hunting-schema-tables.md)
 - [Appliquer les meilleures pratiques de requête](advanced-hunting-best-practices.md)

@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 35544866b9ebad94b14300b3734ddb2335fd657e
-ms.sourcegitcommit: ab10c042e5e9c6a7b2afef930ab0d247a6aa275d
+ms.openlocfilehash: d0024282276e0c67c68a802cf439e90824ec1962
+ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44899004"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46649012"
 ---
 # <a name="deviceregistryevents"></a>DeviceRegistryEvents
 
@@ -38,7 +38,7 @@ Pour plus d’informations sur les autres tables du schéma de repérage avancé
 | Nom de colonne | Type de données | Description |
 |-------------|-----------|-------------|
 | `Timestamp` | DateHeure | Date et heure d’enregistrement de l’événement |
-| `DeviceId` | chaîne | Identificateur unique de la machine dans le service |
+| `DeviceId` | string | Identificateur unique de la machine dans le service |
 | `DeviceName` | string | Nom de domaine complet (FQDN) de la machine |
 | `ActionType` | string | Type d’activité qui a déclenché l’événement |
 | `RegistryKey` | string | Clé de Registre à laquelle l’action enregistrée a été appliquée |
@@ -70,6 +70,6 @@ Pour plus d’informations sur les autres tables du schéma de repérage avancé
 - [Vue d’ensemble du repérage avancé](advanced-hunting-overview.md)
 - [Apprendre le langage de requête](advanced-hunting-query-language.md)
 - [Utiliser des requêtes partagées](advanced-hunting-shared-queries.md)
-- [Repérer les menaces sur divers appareils et e-mails](advanced-hunting-query-emails-devices.md)
+- [Recherche sur les appareils, les e-mails, les applications et les identités](advanced-hunting-query-emails-devices.md)
 - [Comprendre le schéma](advanced-hunting-schema-tables.md)
 - [Appliquer les meilleures pratiques de requête](advanced-hunting-best-practices.md)

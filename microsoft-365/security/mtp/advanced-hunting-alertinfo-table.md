@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: a1290ee415073a9cb3948bc4b0cc6bb3ae13285b
-ms.sourcegitcommit: ab10c042e5e9c6a7b2afef930ab0d247a6aa275d
+ms.openlocfilehash: 36e76ae097dc31c6d7eb7eeff18dd2128ff0cc5c
+ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44899016"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46649486"
 ---
 # <a name="alertinfo"></a>AlertInfo
 
@@ -38,7 +38,7 @@ Pour plus d’informations sur les autres tables du schéma de repérage avancé
 | Nom de colonne | Type de données | Description |
 |-------------|-----------|-------------|
 | `Timestamp` | DateHeure | Date et heure d’enregistrement de l’événement |
-| `AlertId` | chaîne | Identificateur unique de l’alerte |
+| `AlertId` | string | Identificateur unique de l’alerte |
 | `Title` | string | Titre de l'alerte |
 | `Category` | string | Type d’indicateur de menace ou d’activité de violation identifié par l’alerte |
 | `Severity` | string | Indique l’impact potentiel (élevé, moyen ou faible) de l’indicateur de menace ou de la violation identifié(e) par l’alerte |
@@ -50,6 +50,6 @@ Pour plus d’informations sur les autres tables du schéma de repérage avancé
 - [Vue d’ensemble du repérage avancé](advanced-hunting-overview.md)
 - [Apprendre le langage de requête](advanced-hunting-query-language.md)
 - [Utiliser des requêtes partagées](advanced-hunting-shared-queries.md)
-- [Repérer les menaces sur divers appareils et e-mails](advanced-hunting-query-emails-devices.md)
+- [Recherche sur les appareils, les e-mails, les applications et les identités](advanced-hunting-query-emails-devices.md)
 - [Comprendre le schéma](advanced-hunting-schema-tables.md)
 - [Appliquer les meilleures pratiques de requête](advanced-hunting-best-practices.md)

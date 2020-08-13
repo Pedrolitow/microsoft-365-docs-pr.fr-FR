@@ -19,12 +19,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Découvrez comment configurer une liste d’URL bloquées pour votre organisation à l’aide d’Office 365 Advanced Threat Protection.
-ms.openlocfilehash: 288aea848836a56108872c0e4d36d01f4d59ec42
-ms.sourcegitcommit: fab425ea4580d1924fb421e6db233d135f5b7d19
+ms.openlocfilehash: 5f863a3ba61278d0bec5304034ed75d343f93c77
+ms.sourcegitcommit: fa8e488936a36e4b56e1252cb4061b5bd6c0eafc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "46533810"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "46656646"
 ---
 # <a name="set-up-a-custom-blocked-urls-list-using-atp-safe-links"></a>Configurer une liste d’URL bloquées personnalisée à l’aide de liens fiables ATP
 
@@ -45,11 +45,14 @@ Les [liens approuvés ATP dans Office 365](atp-safe-links.md) utilisent plusieur
 
 Pour modifier (ou définir) des stratégies ATP, vous devez disposer de l’un des rôles décrits dans le tableau suivant :
 
+****
+
 |Role|WHERE/How Assigned|
-|---------|---------|
+|---|---|
 |administrateur général|La personne qui s’inscrit pour acheter Microsoft 365 est un administrateur global par défaut. (Pour en savoir plus, consultez la rubrique [à propos des rôles d’administrateur Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles) .)|
 |Administrateur de sécurité|Centre d’administration Azure Active Directory ( [https://aad.portal.azure.com](https://aad.portal.azure.com) )|
 |Gestion d’Organisation Exchange Online|Centre d’administration Exchange ( [https://outlook.office365.com/ecp](https://outlook.office365.com/ecp) ) <br>ou <br>  Applets de commande PowerShell (consultez la rubrique [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell))|
+|
 
 > [!TIP]
 > Pour en savoir plus sur les rôles et les autorisations, consultez [la rubrique autorisations dans le centre de sécurité & conformité](permissions-in-the-security-and-compliance-center.md).
@@ -78,13 +81,15 @@ Lorsque vous ajoutez des URL à votre liste, gardez les points suivants à l’e
 
 - Vous pouvez inclure jusqu’à trois astérisques génériques ( \* ) par URL. Le tableau suivant répertorie quelques exemples de ce que vous pouvez entrer et de l’effet de ces entrées.
 
+****
+
 |Exemple d’entrée|Ce qu’il fait|
-|:-----|:-----|
+|---|---|
 |`contoso.com` ou `*contoso.com*`|Bloque le domaine, les sous-domaines et les chemins d’accès, par exemple, `https://www.contoso.com` `https://sub.contoso.com` et`https://contoso.com/abc`|
 |`https://contoso.com/a`|Bloque un site, mais pas les sous- `https://contoso.com/a` chemins supplémentaires comme`https://contoso.com/a/b`|
 |`https://contoso.com/a*`|Bloque un site `https://contoso.com/a` et des sous-chemins supplémentaires comme`https://contoso.com/a/b`|
 |`https://toys.contoso.com*`|Bloque un sous-domaine (« jouets » dans ce cas) tout en permettant de cliquer sur d’autres URL de domaine (par exemple `https://contoso.com` `https://home.contoso.com` , ou).|
-
+|
 
 > [!NOTE]
 > Par défaut, vous pouvez uniquement ajouter 500 URL à la liste d’URL bloquées dans la stratégie par défaut des liens approuvés Office 365 ATP.

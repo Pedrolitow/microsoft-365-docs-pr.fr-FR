@@ -19,12 +19,12 @@ ms.assetid: 8d274fe3-db51-4107-ba64-865e7155b355
 ms.custom:
 - seo-marvel-apr2020
 description: Cette rubrique décrit la configuration recommandée pour les paramètres à l’échelle du client qui affectent la sécurité de votre environnement Microsoft 365.
-ms.openlocfilehash: 5e02a871385deb2bae9e788eacd772c08af1d972
-ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
+ms.openlocfilehash: 821221e9a7602b7eaaf6850284468abd486cf501
+ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "44588051"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46653556"
 ---
 # <a name="configure-your-microsoft-365-tenant-for-increased-security"></a>Configuration de votre client Microsoft 365 pour une sécurité accrue
 
@@ -38,9 +38,10 @@ Le score de sécurité d’Office 365 analyse la sécurité de votre organisatio
 
 Le centre de sécurité Microsoft 365 inclut des fonctionnalités qui protègent votre environnement. Il inclut également des rapports et des tableaux de bord que vous pouvez utiliser pour surveiller et prendre des mesures. Certaines zones sont dotées de configurations de stratégie par défaut. Certaines zones n’incluent pas de stratégies ou de règles par défaut. Consultez ces stratégies sous gestion des menaces pour ajuster les paramètres de gestion des menaces à un environnement plus sécurisé.
 
-||||
+****
+
+|Domaine|Inclut une stratégie par défaut|Recommandation|
 |---|---|---|
-|**Catégorie**|**Inclut une stratégie par défaut**|**Recommandation**|
 |**Anti-hameçonnage**|Oui|Si vous avez un domaine personnalisé, configurez la stratégie anti-hameçonnage par défaut pour protéger les comptes de messagerie de vos utilisateurs les plus précieux, tels que votre PDG, et pour protéger votre domaine. Examinez les [stratégies anti-hameçonnage dans office 365](set-up-anti-phishing-policies.md) et consultez la rubrique [configure anti-phishing Policies in EOP](configure-anti-phishing-policies-eop.md) or [configure ATP anti-phishing Policies in Office 365](configure-atp-anti-phishing-policies.md).|
 |**Moteur anti-programme malveillant**|Oui| Modifiez la stratégie par défaut : <br/> &ensp;&ensp;* Filtre de types de pièces jointes courantes — sélectionnez activé <br/><br/> Vous pouvez également créer des stratégies de filtrage des programmes malveillants personnalisées et les appliquer à des utilisateurs, des groupes ou des domaines spécifiés dans votre organisation. <br/><br/> Plus d’informations : <br/> &ensp;&ensp;* [Protection contre les programmes malveillants](anti-malware-protection.md) <br/> &ensp;&ensp;* [Configurer des stratégies anti-programmes malveillants](configure-anti-malware-policies.md)|
 |**Pièces jointes fiables ATP**|Non| Sur la page principale des pièces jointes fiables, protégez les fichiers dans SharePoint, OneDrive et Microsoft teams en activant cette case à cocher : <br/> &ensp;&ensp;* Activer la protection avancée contre les menaces pour SharePoint, OneDrive et Microsoft teams <br/><br/> Ajoutez une nouvelle stratégie de pièces jointes fiables avec ces paramètres : <br/> &ensp;&ensp;* Bloquer : bloquer les e-mails et pièces jointes en cours et à venir avec des programmes malveillants détectés (choisissez cette option) <br/> &ensp;&ensp;* Activer la redirection — (activez cette case à cocher et entrez une adresse de messagerie, comme un compte d’administrateur ou de mise en quarantaine) <br/> &ensp;&ensp;* Appliquer la sélection ci-dessus si l’analyse anti-programme malveillant pour les pièces jointes expire ou si une erreur se produit (cochez cette case) <br/> &ensp;&ensp;* Appliqué à : le domaine du destinataire est (sélectionnez votre domaine) <br/><br/>Plus d’informations : [Configuration des stratégies de pièces jointes approuvées pour Office 365 ATP](set-up-atp-safe-attachments-policies.md)|
@@ -56,9 +57,10 @@ Le centre de sécurité Microsoft 365 inclut des fonctionnalités qui protègent
 
 Visitez ces rapports et tableaux de bord pour en savoir plus sur l’état de santé de votre environnement. Les données de ces rapports deviennent plus riches lorsque votre organisation utilise les services Office 365. Pour l’instant, familiarisez-vous avec les éléments que vous pouvez surveiller et prendre des mesures. Pour plus d’informations, consultez la rubrique relative aux [rapports dans les centres de sécurité et de conformité Microsoft 365](../../compliance/reports-in-security-and-compliance.md).
 
-|||
+****
+
+|Tableau de bord|Description|
 |---|---|
-|**Tableau de bord**|**Description**|
 |[Tableau de bord de gestion des menaces](security-dashboard.md)|Dans la section **gestion des menaces** du centre de sécurité, utilisez ce tableau de bord pour voir les menaces qui ont déjà été gérées, et en tant qu’outil pratique pour le signalement aux décideurs d’entreprise sur les fonctionnalités d’enquête et de réponse de menace déjà effectuées pour sécuriser votre entreprise.|
 |[Threat Explorer (et détections en temps réel)](threat-explorer.md)|Il s’agit également de la section **gestion des menaces** du centre de sécurité. Si vous recherchez ou rencontrez une attaque contre votre client, utilisez l’Explorateur (ou les détections en temps réel) pour analyser les menaces. L’Explorateur (et le rapport de détections en temps réel) vous montre le volume des attaques au fil du temps, et vous pouvez analyser ces données par familles de menaces, infrastructure d’agresseur, et bien plus encore. Vous pouvez également marquer tous les messages suspects pour la liste des incidents.|
 |Rapports — tableau de bord|Dans la section **rapports** du centre de sécurité, affichez les rapports d’audit de vos organisations SharePoint Online et Exchange Online. Vous pouvez également accéder aux rapports de connexion utilisateur Azure Active Directory (Azure AD), aux rapports d’activité de l’utilisateur et au Journal d’audit Azure AD à partir de la page **afficher les rapports** .|
@@ -70,9 +72,10 @@ Visitez ces rapports et tableaux de bord pour en savoir plus sur l’état de sa
 
 De nombreux contrôles de sécurité et de protection dans le centre d’administration Exchange sont également inclus dans le centre de sécurité. Vous n’avez pas besoin de les configurer aux deux emplacements. Voici quelques paramètres supplémentaires qui sont recommandés.
 
-||||
+****
+
+|Domaine|Inclut une stratégie par défaut|Recommandation|
 |---|---|---|
-|**Catégorie**|**Inclut une stratégie par défaut**|**Recommandation**|
 |**Flux de messagerie** (règles de flux de messagerie, également appelées règles de transport)|Non|Ajoutez une règle de flux de messagerie pour vous protéger contre les ransomware en bloquant les types de fichiers exécutables et les types de fichiers Office qui contiennent des macros. Pour plus d’informations, consultez la rubrique [utiliser des règles de flux de messagerie pour inspecter les pièces jointes dans Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments). <br/><br/> Consultez les rubriques supplémentaires suivantes : <br/>* [Protéger contre les ransomware](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/secure-your-business-data#ransomware)<br/>* [Protection contre les programmes malveillants et les ransomware dans Office 365](https://docs.microsoft.com/Office365/Enterprise/office-365-malware-and-ransomware-protection) <br/>* [Récupération suite à une attaque de ransomware dans Office 365](recover-from-ransomware.md) <br/><br/> Créez une règle de flux de messagerie pour empêcher le transfert automatique des messages vers des domaines externes. Pour plus d’informations, consultez la rubrique [minimisation des règles de transfert externe des clients avec le score sécurisé](https://docs.microsoft.com/archive/blogs/office365security/mitigating-client-external-forwarding-rules-with-secure-score). <br/><br/> Plus d’informations : [règles de flux de messagerie (règles de transport) dans Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules)|
 |**Activer l’authentification moderne**|Non|L’authentification moderne est une condition préalable à l’utilisation de l’authentification multifacteur (MFA). L’authentification multifacteur est recommandée pour sécuriser l’accès aux ressources Cloud, y compris la messagerie électronique. <br/><br/> Consultez les rubriques suivantes : <br/>* [Activer ou désactiver l’authentification moderne dans Exchange Online](https://docs.microsoft.com/Exchange/clients-and-mobile-in-exchange-online/enable-or-disable-modern-authentication-in-exchange-online) <br/>* [Skype entreprise Online : activation de votre client pour l’authentification moderne](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx) <br/><br/> L’authentification moderne est activée par défaut pour les clients Office 2016, SharePoint Online et OneDrive entreprise. <br/><br/> Plus d’informations : [fonctionnement de l’authentification moderne pour les applications clientes office 2013 et office 2016](https://docs.microsoft.com/office365/enterprise/modern-auth-for-office-2013-and-2016)|
 |
@@ -85,9 +88,10 @@ Les sites d’équipe SharePoint configurés au niveau de base autorisent le par
 
 Pour prendre en charge les objectifs de la protection de base, configurez les stratégies de partage à l’échelle du client comme il est recommandé ici. Les paramètres de partage de sites individuels peuvent être plus restrictifs que cette stratégie à l’échelle du client, mais pas plus permissif.
 
-||||
+****
+
+|Domaine|Inclut une stratégie par défaut|Recommandation|
 |---|---|---|
-|**Catégorie**|**Inclut une stratégie par défaut**|**Recommandation**|
 |**Partage** (SharePoint Online et OneDrive entreprise)|Oui|Le partage externe est activé par défaut. Ces paramètres sont recommandés : <br/>* Autoriser le partage vers les utilisateurs externes authentifiés et l’utilisation des liens d’accès anonyme (paramètre par défaut). <br/> * Les liens d’accès anonyme expirent dans ce nombre de jours. Entrez un nombre, si vous le souhaitez, par exemple 30 jours. <br/>* Type de lien par défaut — sélectionnez interne (personnes de l’organisation uniquement). Les utilisateurs qui souhaitent partager à l’aide de liens anonymes doivent choisir cette option dans le menu partage. <br/><br/> Plus d’informations : [vue d’ensemble du partage externe](https://docs.microsoft.com/sharepoint/external-sharing-overview)|
 |
 

@@ -19,12 +19,12 @@ ms.collection:
 - SPO_Content
 description: Découvrez comment activer la protection avancée contre les menaces pour SharePoint, OneDrive et Teams, y compris comment définir des alertes pour les fichiers détectés.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 976911abe047be350ae6c64409cd6607ea75de7a
-ms.sourcegitcommit: 7a59d83a8660c2344ebdb92e0ea0171c9c2d9498
+ms.openlocfilehash: 6109cecc79b4db876ee595d4786d176ae7f42f5d
+ms.sourcegitcommit: fa8e488936a36e4b56e1252cb4061b5bd6c0eafc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44811073"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "46656550"
 ---
 # <a name="turn-on-atp-for-sharepoint-onedrive-and-microsoft-teams"></a>Activer PACM pour SharePoint, OneDrive et Microsoft Teams.
 
@@ -35,17 +35,20 @@ ms.locfileid: "44811073"
 
 Pour définir (ou modifier) des stratégies ATP, vous devez disposer d’un rôle approprié. Certains exemples sont décrits dans le tableau suivant :
 
+****
+
 |Role|WHERE/How Assigned|
-|---------|---------|
+|---|---|
 |administrateur général|La personne qui s’inscrit pour acheter Microsoft 365 est un administrateur global par défaut. (Pour en savoir plus, consultez la rubrique [à propos des rôles d’administrateur Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles) .)|
 |Administrateur de sécurité|Centre d’administration Azure Active Directory ( [https://aad.portal.azure.com](https://aad.portal.azure.com) )|
 |Gestion d’Organisation Exchange Online|Centre d’administration Exchange ( [https://outlook.office365.com/ecp](https://outlook.office365.com/ecp) ) <br>ou <br>  Applets de commande PowerShell (consultez la rubrique [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell))|
+|
 
 ## <a name="turn-on-atp-for-sharepoint-onedrive-and-microsoft-teams"></a>Activer PACM pour SharePoint, OneDrive et Microsoft Teams.
 
 **Avant de commencer cette procédure, assurez-vous que la journalisation d’audit est déjà activée pour votre environnement Microsoft 365**. Cette opération est généralement réalisée par une personne disposant du rôle journaux d’audit dans Exchange Online. Pour plus d’informations, voir [Activer ou désactiver la recherche dans le journal d’audit](../../compliance/turn-audit-log-search-on-or-off.md).
 
-1. Accédez à [https://protection.office.com](https://protection.office.com) , puis connectez-vous à l’aide de votre compte professionnel ou scolaire.
+1. Accédez à <https://protection.office.com> , puis connectez-vous à l’aide de votre compte professionnel ou scolaire.
 
 2. Dans le centre de sécurité & Security Center, dans le volet de navigation de gauche, sous **gestion des menaces**, sélectionnez **stratégie** de \> **pièces jointes approuvées**par la stratégie.
 

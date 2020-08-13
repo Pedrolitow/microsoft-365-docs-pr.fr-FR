@@ -16,12 +16,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Les administrateurs peuvent en savoir plus sur l’ordre des applications des protections dans Exchange Online Protection (EOP) et la façon dont la valeur de priorité dans les stratégies de protection détermine quelle stratégie est appliquée.
-ms.openlocfilehash: 176d39a240d49e0118b4bb8e8cee52a6e7c61b0e
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 7775f0a37751289e7f0116575e2f6b2733683b6b
+ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44209438"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46653676"
 ---
 # <a name="order-and-precedence-of-email-protection"></a>Ordre et priorité de la protection de la messagerie
 
@@ -33,15 +33,16 @@ Il existe deux facteurs principaux qui déterminent la stratégie appliquée à 
 
 - **Priorité du type de protection de messagerie**: cette commande n’est pas configurable et est décrite dans le tableau suivant :
 
-  |||||
+  ****
+
+  |Priorité|Protection de la messagerie|Catégorie|Où gérer|
   |---|---|---|---|
-  |**Priorité**|**Protection de la messagerie**|**Catégorie**|**Où gérer**|
   |0,1|Programme malveillant|CAT : MALW|[Configurer des stratégies anti-programmes malveillants dans EOP](configure-anti-malware-policies.md)|
-  |n°2|Hameçonnage|CAT : PHSH|[Configurer des stratégies de blocage du courrier indésirable dans EOP](configure-your-spam-filter-policies.md)|
-  |3|Courrier fortement suspecté d’être indésirable|CAT : HSPM|[Configurer des stratégies de blocage du courrier indésirable dans EOP](configure-your-spam-filter-policies.md)|
+  |n°2|Hameçonnage|CAT : PHSH|[Configuration de stratégies de blocage du courrier indésirable dans Exchange Online Protection](configure-your-spam-filter-policies.md)|
+  |3|Courrier fortement suspecté d’être indésirable|CAT : HSPM|[Configuration de stratégies de blocage du courrier indésirable dans Exchange Online Protection](configure-your-spam-filter-policies.md)|
   |4 |Usurpation|CAT : USURPATION|[Configurer l’intelligence des usurpations d’identité dans EOP](learn-about-spoof-intelligence.md)|
-  |5 |Courrier indésirable|CAT : SPM|[Configurer des stratégies de blocage du courrier indésirable dans EOP](configure-your-spam-filter-policies.md)|
-  |6 |Courrier en nombre|CAT : BULK|[Configurer des stratégies de blocage du courrier indésirable dans EOP](configure-your-spam-filter-policies.md)|
+  |5 |Courrier indésirable|CAT : SPM|[Configuration de stratégies de blocage du courrier indésirable dans Exchange Online Protection](configure-your-spam-filter-policies.md)|
+  |6 |Courrier en nombre|CAT : BULK|[Configuration de stratégies de blocage du courrier indésirable dans Exchange Online Protection](configure-your-spam-filter-policies.md)|
   |7j/7<sup>\*</sup>|Emprunt d’identité de domaine (utilisateurs protégés)|DIMP|[Configurer des stratégies anti-hameçonnage ATP](configure-atp-anti-phishing-policies.md)|
   |8bits<sup>\*</sup>|Emprunt d’identité d’utilisateur (domaines protégés)|UIMP|[Configurer des stratégies anti-hameçonnage ATP](configure-atp-anti-phishing-policies.md)|
   |
@@ -54,9 +55,10 @@ Il existe deux facteurs principaux qui déterminent la stratégie appliquée à 
 
 Par exemple, considérez les stratégies anti-hameçonnage ATP suivantes **qui s’appliquent aux mêmes utilisateurs**, et un message qui est identifié à la fois comme emprunt d’identité d’utilisateur et usurpation d’identité :
 
-  |||||
+  ****
+
+  |Stratégie anti-hameçonnage ATP|Priorité|Emprunt d’identité de l’utilisateur|Détection d’usurpation d’identité|
   |---|---|---|---|
-  |**Stratégie anti-hameçonnage ATP**|**Priorité**|**Emprunt d’identité de l’utilisateur**|**Détection d’usurpation d’identité**|
   |Stratégie A|0,1|Activé|Désactivé|
   |Stratégie B|n°2|Désactivé|Activé|
   |

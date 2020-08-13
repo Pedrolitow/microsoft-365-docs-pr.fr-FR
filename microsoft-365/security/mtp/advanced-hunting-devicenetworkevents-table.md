@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: d5d666bef07c6ae8c5a43b641a8e7f6a11f5457a
-ms.sourcegitcommit: ab10c042e5e9c6a7b2afef930ab0d247a6aa275d
+ms.openlocfilehash: 892ffe59f0902938b5d248e11a967b46de9c30b3
+ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44899254"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46649048"
 ---
 # <a name="devicenetworkevents"></a>DeviceNetworkEvents
 
@@ -38,7 +38,7 @@ Pour plus d’informations sur les autres tables du schéma de repérage avancé
 | Nom de colonne | Type de données | Description |
 |-------------|-----------|-------------|
 | `Timestamp` | DateHeure | Date et heure d’enregistrement de l’événement |
-| `DeviceId` | chaîne | Identificateur unique de la machine dans le service |
+| `DeviceId` | string | Identificateur unique de la machine dans le service |
 | `DeviceName` | string | Nom de domaine complet (FQDN) de la machine |
 | `ActionType` | string | Type d’activité qui a déclenché l’événement |
 | `RemoteIP` | string | Adresse IP à laquelle la connexion était en cours |
@@ -72,6 +72,6 @@ Pour plus d’informations sur les autres tables du schéma de repérage avancé
 - [Vue d’ensemble du repérage avancé](advanced-hunting-overview.md)
 - [Apprendre le langage de requête](advanced-hunting-query-language.md)
 - [Utiliser des requêtes partagées](advanced-hunting-shared-queries.md)
-- [Repérer les menaces sur divers appareils et e-mails](advanced-hunting-query-emails-devices.md)
+- [Recherche sur les appareils, les e-mails, les applications et les identités](advanced-hunting-query-emails-devices.md)
 - [Comprendre le schéma](advanced-hunting-schema-tables.md)
 - [Appliquer les meilleures pratiques de requête](advanced-hunting-best-practices.md)

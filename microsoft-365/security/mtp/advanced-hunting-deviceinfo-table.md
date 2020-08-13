@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 526e210a472862593f2652e9b2b21957702c48f0
-ms.sourcegitcommit: ab10c042e5e9c6a7b2afef930ab0d247a6aa275d
+ms.openlocfilehash: 342e5747f2c59022ffef76f30e4845f26550c88a
+ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44899278"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46649084"
 ---
 # <a name="deviceinfo"></a>DeviceInfo
 
@@ -38,14 +38,14 @@ Pour plus d’informations sur les autres tables du schéma de repérage avancé
 | Nom de colonne | Type de données | Description |
 |-------------|-----------|-------------|
 | `Timestamp` | DateHeure | Date et heure d’enregistrement de l’événement |
-| `DeviceId` | chaîne | Identificateur unique de la machine dans le service |
+| `DeviceId` | string | Identificateur unique de la machine dans le service |
 | `DeviceName` | string | Nom de domaine complet (FQDN) de la machine |
 | `ClientVersion` | string | Version de l’agent de point de terminaison ou du capteur exécuté sur l’ordinateur |
 | `PublicIP` | string | Adresse IP publique utilisée par l’ordinateur intégré pour se connecter au service ATP de Microsoft Defender. Il peut s’agir de l’adresse IP de l’ordinateur lui-même, d’un périphérique NAT ou d’un proxy. |
 | `OSArchitecture` | string | Architecture du système d’exploitation s’exécutant sur la machine |
 | `OSPlatform` | string | Plateforme du système d’exploitation client s’exécutant sur la machine. Cela indique les systèmes d’exploitation spécifiques, y compris les variantes au sein de la même famille, telles que Windows 10 et Windows 7 |
 | `OSBuild` | string | Version du système d’exploitation en cours d’exécution sur l’ordinateur |
-| `IsAzureADJoined` | booléen | Indicateur booléen indiquant si l’ordinateur est joint à Azure Active Directory |
+| `IsAzureADJoined` | valeur booléenne | Indicateur booléen indiquant si l’ordinateur est joint à Azure Active Directory |
 | `LoggedOnUsers` | string | Liste de tous les utilisateurs qui ont ouvert une session sur l’ordinateur au moment de l’événement au format de tableau JSON |
 | `RegistryDeviceTag` | string | Balise d’ordinateur ajoutée via le registre |
 | `ReportId` | long | Identificateur d’événement basé sur un compteur extensible. Pour identifier les événements uniques, cette colonne doit être utilisée conjointement avec les colonnes DeviceName et timestamp |
@@ -56,6 +56,6 @@ Pour plus d’informations sur les autres tables du schéma de repérage avancé
 - [Vue d’ensemble du repérage avancé](advanced-hunting-overview.md)
 - [Apprendre le langage de requête](advanced-hunting-query-language.md)
 - [Utiliser des requêtes partagées](advanced-hunting-shared-queries.md)
-- [Repérer les menaces sur divers appareils et e-mails](advanced-hunting-query-emails-devices.md)
+- [Recherche sur les appareils, les e-mails, les applications et les identités](advanced-hunting-query-emails-devices.md)
 - [Comprendre le schéma](advanced-hunting-schema-tables.md)
 - [Appliquer les meilleures pratiques de requête](advanced-hunting-best-practices.md)

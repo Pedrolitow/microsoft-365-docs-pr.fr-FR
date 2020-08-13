@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 663dc2a3de676fa2daeab3d9621254e956d42fc4
-ms.sourcegitcommit: b4119682bd3c036289e851fff56fde869c816479
+ms.openlocfilehash: 4221af6b0378e67e12852dbef0bbc0a11ff56511
+ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45204754"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46649474"
 ---
 # <a name="appfileevents"></a>AppFileEvents
 
@@ -36,7 +36,7 @@ Pour plus d’informations sur les autres tables du schéma de repérage avancé
 | Nom de colonne | Type de données | Description |
 |-------------|-----------|-------------|
 | `Timestamp` | DateHeure | Date et heure d’enregistrement de l’événement |
-| `ActionType` | chaîne | Type d’activité qui a déclenché l’événement |
+| `ActionType` | string | Type d’activité qui a déclenché l’événement |
 | `Application` | string | Application qui a effectué l’action enregistrée |
 | `FileName` | string | Nom du fichier auquel l’action enregistrée a été appliquée |
 | `FolderPath` | string | Dossier contenant le fichier auquel l’action enregistrée a été appliquée |
@@ -63,6 +63,6 @@ Pour plus d’informations sur les autres tables du schéma de repérage avancé
 - [Vue d’ensemble du repérage avancé](advanced-hunting-overview.md)
 - [Apprendre le langage de requête](advanced-hunting-query-language.md)
 - [Utiliser des requêtes partagées](advanced-hunting-shared-queries.md)
-- [Repérer les menaces sur divers appareils et e-mails](advanced-hunting-query-emails-devices.md)
+- [Recherche sur les appareils, les e-mails, les applications et les identités](advanced-hunting-query-emails-devices.md)
 - [Comprendre le schéma](advanced-hunting-schema-tables.md)
 - [Appliquer les meilleures pratiques de requête](advanced-hunting-best-practices.md)

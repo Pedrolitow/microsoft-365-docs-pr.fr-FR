@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Découvrez comment utiliser un simulateur d’attaque pour exécuter des attaques de hameçonnage et de mot de passe simulées dans votre organisation Microsoft 365 E5 ou ATP (plan 2).
-ms.openlocfilehash: 166a8ab9f6ef08ca089bc8924b686e392e870526
-ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
+ms.openlocfilehash: 6aa1d2027915caeffe2c20ba8f75f3658c336dbe
+ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "44587567"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46653220"
 ---
 # <a name="attack-simulator-in-atp"></a>Simulateur d’attaques dans ATP
 
@@ -114,7 +114,10 @@ Si vous allez utiliser l’un des modèles intégrés ou créer le message direc
      - <http://portal.salarytoolint.net>
 
      > [!NOTE]
-     > <ul><li>Toutes les URL sont intentionnellement HTTP et non HTTPS.</li><li>Un service de réputation d’URL peut identifier une ou plusieurs de ces URL comme étant non sécurisées. Vérifiez la disponibilité de l’URL dans vos navigateurs web pris en charge avant d’utiliser l’URL dans une campagne d’hameçonnage.</li></ul>
+     >
+     > - Toutes les URL sont intentionnellement HTTP et non HTTPS.
+     >
+     > - Un service de réputation d’URL peut identifier une ou plusieurs de ces URL comme étant non sécurisées. Vérifiez la disponibilité de l’URL dans vos navigateurs web pris en charge avant d’utiliser l’URL dans une campagne d’hameçonnage.
 
    - **URL de la page de destination personnalisée** : entrez une page de destination facultative vers laquelle les utilisateurs sont dirigés s’ils cliquent sur le lien d’hameçonnage et entrent leurs informations d’identification. Ce lien remplace la page de destination par défaut. Par exemple, si vous avez une formation interne de sensibilisation, vous pouvez spécifier cette URL ici.
 
@@ -188,7 +191,12 @@ Si vous allez utiliser l’un des modèles intégrés ou créer le message direc
      - <http://portal.salarytoolint.net>
 
      > [!NOTE]
-     > <ul><li>Toutes les URL sont intentionnellement HTTP et non HTTPS.</li><li>Un service de réputation d’URL peut identifier une ou plusieurs de ces URL comme étant non sécurisées. Vérifiez la disponibilité de l’URL dans vos navigateurs web pris en charge avant d’utiliser l’URL dans une campagne d’hameçonnage.</li><li>Vous devez sélectionner une URL. Pour les campagnes d’<b>Harponnage (pièce jointe)</b>, vous pouvez supprimer le lien du corps du message à l’étape suivante (sinon, le message contient un lien <b>et</b> une pièce jointe).</li></ul>
+     >
+     > - Toutes les URL sont intentionnellement HTTP et non HTTPS.
+     >
+     > - Un service de réputation d’URL peut identifier une ou plusieurs de ces URL comme étant non sécurisées. Vérifiez la disponibilité de l’URL dans vos navigateurs web pris en charge avant d’utiliser l’URL dans une campagne d’hameçonnage.
+     >
+     > - Vous devez sélectionner une URL. Pour les campagnes d’**Harponnage (pièce jointe)**, vous pouvez supprimer le lien du corps du message à l’étape suivante (sinon, le message contient un lien **et** une pièce jointe).
 
    - **Type de pièce jointe** : ce paramètre n’est disponible que pour les campagnes de **Harponnage (pièce jointe)**. Cliquez sur la liste déroulante, puis sélectionnez **.DOCX** ou **.PDF** dans la liste.
 

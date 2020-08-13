@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 003d7a74-3e16-4453-ae0c-9dbae51f66d1
 description: Les administrateurs peuvent apprendre à afficher et effectuer des recherches dans le journal d’audit de l’administrateur dans Exchange Online Protection (EOP) autonome.
-ms.openlocfilehash: e8c12f622c4dc382b11d03424e45c33e3afe3cbf
-ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
+ms.openlocfilehash: 171f3ec531b232ca796232ab26caefbee8afc75c
+ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44613323"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46653496"
 ---
 # <a name="view-the-admin-audit-log-in-standalone-eop"></a>Afficher le journal d’audit de l’administrateur dans EOP autonome
 
@@ -26,7 +26,12 @@ Dans les organisations Exchange Online (EOP) autonomes sans boîtes aux lettres 
 Le journal d’audit de l’administrateur enregistre des actions spécifiques, basées sur des applets de commande autonomes EOP PowerShell, effectuées par les administrateurs et les utilisateurs disposant de privilèges d’administration. Les entrées du journal d’audit de l’administrateur vous fournissent des informations sur la cmdlet qui a été exécutée, les paramètres utilisés, l’utilisateur qui a exécuté la cmdlet et les objets affectés.
 
 > [!NOTE]
-> <ul><li>La journalisation d’audit de l’administrateur est activée par défaut et vous ne pouvez pas la désactiver.</li><li>Le journal d’audit de l’administrateur n’enregistre pas les actions basées sur les cmdlets qui commencent par les verbes **Get**, **Search**ou **test**.</li><li>Les entrées du journal d'audit sont conservées pendant 90 jours. Lorsqu’une entrée est antérieure à 90 jours, elle est supprimée.</li></ul>
+>
+> - La journalisation d’audit de l’administrateur est activée par défaut et vous ne pouvez pas la désactiver.
+>
+> - Le journal d’audit de l’administrateur n’enregistre pas les actions basées sur les cmdlets qui commencent par les verbes **Get**, **Search**ou **test**.
+>
+> - Les entrées du journal d'audit sont conservées pendant 90 jours. Lorsqu’une entrée est antérieure à 90 jours, elle est supprimée.
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu'il faut savoir avant de commencer
 
@@ -133,9 +138,10 @@ Pour afficher le contenu des champs **CmdletParameters** et **ModifiedProperties
 
 Chaque entrée du journal d’audit contient les informations décrites dans le tableau suivant. Le journal d’audit contient une ou plusieurs entrées de journal d’audit.
 
-|||
+****
+
+|Champ|Description|
 |---|---|
-|**Field**|**Description**|
 |`RunspaceId`|Ce champ est utilisé en interne par EOP.|
 |`ObjectModified`|Ce champ contient l’objet qui a été modifié par la cmdlet spécifiée dans le `CmdletName` champ.|
 |`CmdletName`|Ce champ contient le nom de la cmdlet exécutée par l’utilisateur dans le `Caller` champ.|

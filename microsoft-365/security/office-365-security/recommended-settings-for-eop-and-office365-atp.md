@@ -16,12 +16,12 @@ ms.assetid: 6f64f2de-d626-48ed-8084-03cc72301aa4
 ms.collection:
 - M365-security-compliance
 description: Quelles sont les meilleures pratiques pour les paramètres de sécurité Exchange Online Protection (EOP) et Advanced Threat Protection (ATP) ? Quelles sont les recommandations actuelles pour la protection standard ? Qu’est-ce qui doit être utilisé si vous voulez être plus strict ? Quels sont les autres éléments que vous obtenez si vous utilisez également la protection avancée contre les menaces ?
-ms.openlocfilehash: f34c4e0aad2413fdeb082c37f980e6e4548db6b3
-ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
+ms.openlocfilehash: ea1c04c503fa6ecac66a6378ec466c7ea6cc4133
+ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45430374"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46653575"
 ---
 # <a name="recommended-settings-for-eop-and-office-365-atp-security"></a>Paramètres recommandés pour la sécurité ATP d’Office 365
 
@@ -46,6 +46,8 @@ Le blocage du courrier indésirable, anti-programme malveillant et anti-hameçon
 ### <a name="eop-anti-spam-policy-settings"></a>Paramètres de la stratégie anti-courrier indésirable EOP
 
 Pour créer et configurer des stratégies de blocage du courrier indésirable, consultez la rubrique [configure anti-spam Policies in Office 365](configure-your-spam-filter-policies.md).
+
+****
 
 |Nom de la fonctionnalité de sécurité|Standard|Empêcher|Commentaire|
 |---|---|---|---|
@@ -72,6 +74,8 @@ Il existe plusieurs autres paramètres de filtre de courrier indésirable (ASF) 
 
 Nous vous **recommandons de désactiver ces paramètres ASF** pour les niveaux **standard** et **strict** . Pour plus d’informations sur les paramètres ASF, voir [paramètres de filtre de courrier indésirable avancés (ASF) dans Office 365](advanced-spam-filtering-asf-options.md).
 
+****
+
 |Nom de la fonctionnalité de sécurité|Commentaire|
 |---|---|
 |**Liens d’image vers des sites distants** (_IncreaseScoreWithImageLinks_)||
@@ -97,6 +101,8 @@ Pour créer et configurer des stratégies de courrier indésirable sortant, cons
 
 Pour plus d’informations sur les limites d’envoi par défaut dans le service, consultez la rubrique [limites d’envoi](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-1)
 
+****
+
 |Nom de la fonctionnalité de sécurité|Standard|Empêcher|Commentaire|
 |---|---|---|---|
 |**Nombre maximal de destinataires par utilisateur : limite horaire externe** <br/><br/> _RecipientLimitExternalPerHour_|500|400||
@@ -108,6 +114,8 @@ Pour plus d’informations sur les limites d’envoi par défaut dans le service
 ### <a name="eop-anti-malware-policy-settings"></a>Paramètres de stratégie anti-programme malveillant EOP
 
 Pour créer et configurer des stratégies de protection contre les programmes malveillants, consultez la rubrique [configure anti-malware Policies in Office 365](configure-anti-malware-policies.md).
+
+****
 
 |Nom de la fonctionnalité de sécurité|Standard|Empêcher|Commentaire|
 |---|---|---|---|
@@ -121,6 +129,8 @@ Pour créer et configurer des stratégies de protection contre les programmes ma
 ### <a name="eop-default-anti-phishing-policy-settings"></a>Paramètres de stratégie anti-hameçonnage par défaut EOP
 
 Pour plus d’informations sur ces paramètres, reportez-vous à la rubrique [usurpation Settings](set-up-anti-phishing-policies.md#spoof-settings). Pour configurer ces paramètres, consultez la rubrique [configure anti-phishing Policies in EOP](configure-anti-phishing-policies-eop.md).
+
+****
 
 |Nom de la fonctionnalité de sécurité|Standard|Empêcher|Commentaire|
 |---|---|---|---|
@@ -148,6 +158,8 @@ Les clients EOP bénéficient d’une protection antiphishing de base comme déc
 
 Pour plus d’informations sur ces paramètres, consultez la rubrique [emprunt d’identité dans les stratégies anti-hameçonnage ATP](set-up-anti-phishing-policies.md#impersonation-settings-in-atp-anti-phishing-policies). Pour configurer ces paramètres, consultez la rubrique [configure ATP anti-phishing Policies](configure-atp-anti-phishing-policies.md).
 
+****
+
 |Nom de la fonctionnalité de sécurité|Standard|Empêcher|Commentaire|
 |---|---|---|---|
 |Utilisateurs protégés : **Ajouter des utilisateurs à protéger** <br/><br/> _EnableTargetedUserProtection_ <br/><br/> _TargetedUsersToProtect_|Activé <br/><br/> `$true` <br/><br/> \<list of users\>|Activé <br/><br/> `$true` <br/><br/> \<list of users\>|Dépend de votre organisation, mais nous vous recommandons d’ajouter des utilisateurs dans les rôles clés. En interne, il peut s’agir de votre PDG, directeur financier et autres dirigeants. En externe, il peut s’agir des membres du Conseil ou de votre Conseil d’administration.|
@@ -169,6 +181,8 @@ Pour plus d’informations sur ces paramètres, consultez la rubrique [emprunt d
 
 Notez qu’il s’agit des mêmes paramètres que ceux disponibles dans les [paramètres de stratégie anti-courrier indésirable dans EOP](#eop-anti-spam-policy-settings).
 
+****
+
 |Nom de la fonctionnalité de sécurité|Standard|Empêcher|Commentaire|
 |---|---|---|---|
 |**Activer la protection contre l’usurpation d’identité** <br/><br/> _EnableAntispoofEnforcement_|Activé <br/><br/> `$true`|Activé <br/><br/> `$true`||
@@ -179,6 +193,8 @@ Notez qu’il s’agit des mêmes paramètres que ceux disponibles dans les [par
 #### <a name="advanced-settings-in-atp-anti-phishing-policies"></a>Paramètres avancés dans les stratégies anti-hameçonnage ATP
 
 Pour plus d’informations sur ce paramètre, consultez la rubrique [seuils d’hameçonnage avancés dans les stratégies anti-hameçonnage ATP](set-up-anti-phishing-policies.md#advanced-phishing-thresholds-in-atp-anti-phishing-policies). Pour configurer ce paramètre, consultez la rubrique [configure ATP anti-phishing Policies](configure-atp-anti-phishing-policies.md).
+
+****
 
 |Nom de la fonctionnalité de sécurité|Standard|Empêcher|Commentaire|
 |---|---|---|---|
@@ -192,6 +208,8 @@ Pour configurer ces paramètres, reportez-vous à la rubrique [set up Office 365
 
 **Remarque**: dans PowerShell, vous utilisez la cmdlet [Set-AtpPolicyForO365](https://docs.microsoft.com/powershell/module/exchange/set-atppolicyforo365) pour ces paramètres.
 
+****
+
 |Nom de la fonctionnalité de sécurité|Standard|Empêcher|Commentaire|
 |---|---|---|---|
 |**Utiliser les liens fiables dans : applications Office 365** <br/><br/> _EnableSafeLinksForO365Clients_|Activé <br/><br/> `$true`|Activé <br/><br/> `$true`|Utilisez des liens fiables ATP dans les clients Office 365 Desktop et mobile (iOS et Android).|
@@ -203,6 +221,8 @@ Pour configurer ces paramètres, reportez-vous à la rubrique [set up Office 365
 #### <a name="safe-links-policy-settings-in-custom-policies-for-specific-users"></a>Paramètres de stratégie de liens fiables dans les stratégies personnalisées pour des utilisateurs spécifiques
 
 **Remarque**: dans PowerShell, vous utilisez les applets de commande [New-Safelinkspolicy permet](https://docs.microsoft.com/powershell/module/exchange/new-safelinkspolicy) et [Set-safelinkspolicy permet] ( https://docs.microsoft.com/powershell/module/exchange/set-safelinkspolicy ] pour ces paramètres.
+
+****
 
 |Nom de la fonctionnalité de sécurité|Standard|Empêcher|Commentaire|
 |---|---|---|---|
@@ -223,6 +243,8 @@ Pour configurer ces paramètres, reportez-vous à la rubrique [set up Office 365
 
 **Remarque**: dans PowerShell, vous utilisez la cmdlet [Set-AtpPolicyForO365](https://docs.microsoft.com/powershell/module/exchange/set-atppolicyforo365) pour ces paramètres.
 
+****
+
 |Nom de la fonctionnalité de sécurité|Standard|Empêcher|Commentaire|
 |---|---|---|---|
 |**Activer la protection avancée contre les menaces pour SharePoint, OneDrive et Microsoft Teams** <br/><br/> _EnableATPForSPOTeamsODB_|Activé <br/><br/> `$true`|Activé <br/><br/> `$true`||
@@ -233,6 +255,8 @@ Pour configurer ces paramètres, reportez-vous à la rubrique [set up Office 365
 #### <a name="safe-attachments-policy-settings-in-custom-policies-for-specific-users"></a>Paramètres de stratégie de pièces jointes fiables dans les stratégies personnalisées pour des utilisateurs spécifiques
 
 **Remarque**: dans PowerShell, vous utilisez les applets de commande [New-safeattachmentpolicy permet](https://docs.microsoft.com/powershell/module/exchange/new-safeattachmentpolicy) et [Set-safeattachmentpolicy permet](https://docs.microsoft.com/powershell/module/exchange/set-safelinkspolicy) pour ces paramètres.
+
+****
 
 |Nom de la fonctionnalité de sécurité|Standard|Empêcher|Commentaire|
 |---|---|---|---|

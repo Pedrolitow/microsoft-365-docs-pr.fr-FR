@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 599b8048-1056-457b-aae4-c063138fd319
 description: Le tableau suivant fournit la liste des fonctionnalités disponibles dans le service de filtrage de courrier électronique hébergé Exchange Online Protection (EOP).
-ms.openlocfilehash: 820f635e679be9d579ba94fc3288830dc6996a0e
-ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
+ms.openlocfilehash: 5a882edd91e8502d7340bf86f74e8114be9cd07b
+ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44617041"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46652872"
 ---
 # <a name="eop-features"></a>Fonctionnalités EOP
 
@@ -26,14 +26,15 @@ Le tableau suivant fournit la liste des fonctionnalités disponibles dans le ser
 > [!TIP]
 > La feuille [de route de Microsoft 365 pour les entreprises](https://www.microsoft.com/microsoft-365/roadmap?filters=O365) est une excellente ressource pour trouver des informations sur les nouvelles fonctionnalités à venir. Pour avoir une vision plus large des fonctionnalités disponibles avec les différents plans d'abonnement EOP, voir [Description du service de protection Exchange Online](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description).
 
-|||
+****
+
+|Fonctionnalité|Description|
 |---|---|
-|**Fonctionnalité**|**Description**|
 |**Protection contre le courrier indésirable**||
 |Détection de courrier indésirable entrant|Pour plus d’informations, consultez la rubrique [protection contre le courrier indésirable dans Microsoft 365](anti-spam-protection.md). <br/><br/> Dans les environnements de EOP autonomes où EOP protège les boîtes aux lettres Exchange locales, vous devez configurer des règles de flux de courrier (également appelées règles de transport) dans Exchange local pour traduire le verdict de filtrage de courrier indésirable EOP de sorte que la règle de courrier indésirable puisse déplacer le message vers le dossier Courrier indésirable. Pour plus d’informations, consultez [la rubrique Configure standalone EOP to Deliver spam dans le dossier courrier indésirable dans des environnements hybrides](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md)|
 |Détection de courrier indésirable sortant|La protection contre le courrier indésirable sortant est toujours activée si vous utilisez le service pour l’envoi de messages sortants. Pour plus d’informations, consultez la rubrique [protection contre le courrier indésirable sortant](outbound-spam-controls.md).|
 |Protection rétrodiffusion|Pour plus d’informations, voir [rétrodiffusion et EOP](backscatter-messages-and-eop.md).|
-|Filtrage de courriers électroniques en masse|EOP utilise le seuil de réclamation en bloc (BCL) pour marquer les messages électroniques en masse comme courrier indésirable. Pour plus d’informations, voir les rubriques suivantes : <br/><br/> [Quelle est la différence entre courrier indésirable et message électronique en masse ?](what-s-the-difference-between-junk-email-and-bulk-email.md) <br/> [Niveau de réclamation en bloc (BCL) dans EOP](bulk-complaint-level-values.md) <br/> [Configuration de stratégies de blocage du courrier indésirable](configure-your-spam-filter-policies.md)|
+|Filtrage de courriers électroniques en masse|EOP utilise le seuil de réclamation en bloc (BCL) pour marquer les messages électroniques en masse comme courrier indésirable. Pour plus d’informations, voir les rubriques suivantes : <br/><br/> [Quelle est la différence entre courrier indésirable et message électronique en masse ?](what-s-the-difference-between-junk-email-and-bulk-email.md) <br/> [Niveau de réclamation en bloc (BCL) dans EOP](bulk-complaint-level-values.md) <br/> [Configurer des stratégies de blocage du courrier indésirable](configure-your-spam-filter-policies.md)|
 |Listes rouges d'URL malveillantes|EOP utilise plusieurs listes rouges d'URL qui permettent de détecter les liens malveillants connus au sein des messages.|
 |Protection anti-hameçonnage|EOP comprend 750 000 domaines d'expéditeurs de courrier indésirable connus.|
 |Protection contre l’usurpation d’identité|Pour plus d’informations, consultez la rubrique protection contre l' [usurpation d’identité](anti-spoofing-protection.md).|
@@ -84,8 +85,8 @@ Le tableau suivant fournit la liste des fonctionnalités disponibles dans le ser
 |Rapports web|Les rapports de protection de la messagerie dans le centre de sécurité & conformité fournissent des données de messagerie. Par exemple, vous pouvez surveiller la proportion de courrier indésirable et de programmes malveillants détectés ou la fréquence de mise en correspondance des règles de flux de messagerie. Avec ces rapports interactifs, vous pouvez afficher rapidement un rapport des données de synthèse et accéder à des informations plus détaillées sur des messages individuels remontant jusqu'à 90 jours. Pour plus d’informations, voir [utiliser les rapports de protection de messagerie pour afficher les données sur les programmes malveillants, le courrier indésirable et les détections de règles](https://docs.microsoft.com/exchange/monitoring/use-mail-protection-reports).|
 |Journalisation d'audit|Le rapport de groupe de rôles d'administrateur et le journal d'audit de l'administrateur sont disponibles pour les administrateurs EOP. Pour plus d'informations, voir [Rapports d'audit dans EOP](auditing-reports-in-eop.md).  |
 |**Contrats de niveau de service (SLA) et prise en charge**||
-|SLA d'efficacité de courrier électronique|\>99%|
-|SLA de rapport de faux positif|\<1:250000|
+|SLA d'efficacité de courrier électronique|\> 99%|
+|SLA de rapport de faux positif|\< 1:250000|
 |SLA de détection et de blocage de virus|100 % des virus connus|
 |SLA de disponibilité mensuelle|99,999 %|
 |Support technique par téléphone ou par Internet 24 heures sur 24, 7 jours sur 7|Pour plus d'informations sur les options de support et d'aide EOP, voir [Aide et support pour EOP](help-and-support-for-eop.md).|
@@ -93,3 +94,4 @@ Le tableau suivant fournit la liste des fonctionnalités disponibles dans le ser
 |Réseau de serveurs mondial géo-redondant|EOP s'exécute sur un réseau mondial de centres de données conçus pour contribuer à offrir une disponibilité optimale. Pour plus d'informations, consultez la section « Centres de données EOP » dans [Vue d'ensemble d'Exchange Online Protection](exchange-online-protection-overview.md).  |
 |Mise en file d'attente du message lorsque le serveur local ne peut pas accepter le courrier|Les messages en différé restent dans nos files d’attente pendant un jour. Les nouvelles tentatives d'envoi de message sont basées sur les erreurs que nous recevons à partir du système de messagerie du destinataire. En moyenne, les messages sont renvoyés toutes les 5 minutes. Pour plus d'informations, voir [Questions fréquemment posées sur les messages mis en file d'attente, différés et retournés dans EOP](eop-queued-deferred-and-bounced-messages-faq.md).|
 |Chiffrement de messages Office 365 disponible sous forme de service de module complémentaire|Pour plus d'informations, voir [Chiffrement dans Office 365](../../compliance/encryption.md).|
+|

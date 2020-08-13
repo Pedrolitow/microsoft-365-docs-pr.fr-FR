@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 14afd3c098c99a6e1e6ccfc7e9f6accbf8bf0e7d
-ms.sourcegitcommit: ab10c042e5e9c6a7b2afef930ab0d247a6aa275d
+ms.openlocfilehash: 222d7f12c1a648800e4a359eb341354a5609c548
+ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44899080"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46649378"
 ---
 # <a name="work-with-advanced-hunting-query-results"></a>Utiliser les résultats de la recherche avancée de la chasse
 
@@ -43,7 +43,7 @@ Par défaut, la chasse avancée affiche les résultats de la requête sous forme
 
 | Type d’affichage | Description |
 | -- | -- |
-| **Table** | Affiche les résultats de la requête sous forme de tableau |
+| **Tableau** | Affiche les résultats de la requête sous forme de tableau |
 | **Histogramme** | Affiche une série d’éléments uniques sur l’axe des x sous forme de barres verticales dont les hauteurs représentent les valeurs numériques d’un autre champ |
 | **Histogramme empilé** | Affiche une série d’éléments uniques sur l’axe des x sous forme de barres verticales empilées dont les hauteurs représentent les valeurs numériques d’un ou plusieurs autres champs |
 | **Graphique en secteurs** | Affiche les secteurs de section représentant des éléments uniques. La taille de chaque graphique représente les valeurs numériques d’un autre champ. |
@@ -151,7 +151,7 @@ Une fois le filtre appliqué pour modifier la requête, puis exécuter la requê
 - [Vue d’ensemble du repérage avancé](advanced-hunting-overview.md)
 - [Apprendre le langage de requête](advanced-hunting-query-language.md)
 - [Utiliser des requêtes partagées](advanced-hunting-shared-queries.md)
-- [Repérer les menaces sur divers appareils et e-mails](advanced-hunting-query-emails-devices.md)
+- [Recherche sur les appareils, les e-mails, les applications et les identités](advanced-hunting-query-emails-devices.md)
 - [Comprendre le schéma](advanced-hunting-schema-tables.md)
 - [Appliquer les meilleures pratiques de requête](advanced-hunting-best-practices.md)
 - [Vue d’ensemble des détections personnalisées](custom-detections-overview.md)

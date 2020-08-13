@@ -14,12 +14,12 @@ ms.assetid: 212e68ac-6330-47e9-a169-6cf5e2f21e13
 ms.custom:
 - seo-marvel-apr2020
 description: Les administrateurs dans les organisations Exchange Online Protection (EOP) autonomes peuvent apprendre à créer, modifier et supprimer des groupes de distribution et des groupes de sécurité à extension messagerie dans le centre d’administration Exchange et dans Exchange Online Protection (EOP) autonome.
-ms.openlocfilehash: 42086b67e22df4725bf07bf227853c070f936f24
-ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
+ms.openlocfilehash: 813735d4024c3b8424a6bbac51ebef7b4c53e590
+ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44616501"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46653652"
 ---
 # <a name="manage-groups-in-eop"></a>Gestion des groupes dans Exchange Online Protection (EOP)
 
@@ -30,7 +30,10 @@ Dans les organisations Exchange Online Protection (EOP) autonomes sans boîtes a
 - **Groupes de sécurité à extension messagerie**: collection d’utilisateurs de messagerie et d’autres groupes de sécurité qui ont besoin d’autorisations d’accès pour les rôles d’administrateur. Par exemple, vous pouvez accorder à un groupe spécifique d’utilisateurs des autorisations d’administrateur afin qu’ils puissent configurer les paramètres de blocage du courrier indésirable et des programmes malveillants.
 
     > [!NOTE]
-    > <ul><li>Par défaut, les nouveaux groupes de sécurité à extension messagerie refusent les messages provenant d’expéditeurs externes (non authentifiés).</li><li>N’ajoutez pas de groupes de distribution aux groupes de sécurité à extension messagerie.</li></ul>.
+    >
+    > - Par défaut, les nouveaux groupes de sécurité à extension messagerie refusent les messages provenant d’expéditeurs externes (non authentifiés).
+    >
+    > - N’ajoutez pas de groupes de distribution aux groupes de sécurité à extension messagerie.
 
 Vous pouvez gérer les groupes dans le centre d’administration Exchange (Centre d’administration Exchange) et dans la version PowerShell d’EOP autonome.
 

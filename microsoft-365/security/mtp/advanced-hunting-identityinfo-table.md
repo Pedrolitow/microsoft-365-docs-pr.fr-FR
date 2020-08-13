@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: e922fc7930d645a7024a0ffc73359277c4b637e4
-ms.sourcegitcommit: b4119682bd3c036289e851fff56fde869c816479
+ms.openlocfilehash: 3d59f987ae4d670e3d7c6f1638f8090ffc3ba7fe
+ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45204922"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46649306"
 ---
 # <a name="identityinfo"></a>IdentityInfo
 
@@ -53,12 +53,12 @@ Pour plus d’informations sur les autres tables du schéma de repérage avancé
 | `SipProxyAddress` | string | Adresse SIP (Session Initiation Protocol) VOIP (Voice over IP) du compte |
 | `City` | string | Ville où se trouve l’utilisateur du compte |
 | `Country` | string | Pays/région où se trouve l’utilisateur du compte |
-| `IsAccountEnabled` | booléen | Indique si le compte est activé ou non. |
+| `IsAccountEnabled` | valeur booléenne | Indique si le compte est activé ou non. |
 
 ## <a name="related-topics"></a>Voir aussi
 - [Vue d’ensemble du repérage avancé](advanced-hunting-overview.md)
 - [Apprendre le langage de requête](advanced-hunting-query-language.md)
 - [Utiliser des requêtes partagées](advanced-hunting-shared-queries.md)
-- [Repérer les menaces sur divers appareils et e-mails](advanced-hunting-query-emails-devices.md)
+- [Recherche sur les appareils, les e-mails, les applications et les identités](advanced-hunting-query-emails-devices.md)
 - [Comprendre le schéma](advanced-hunting-schema-tables.md)
 - [Appliquer les meilleures pratiques de requête](advanced-hunting-best-practices.md)

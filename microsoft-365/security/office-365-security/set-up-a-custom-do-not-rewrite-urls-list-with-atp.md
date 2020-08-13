@@ -19,12 +19,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Découvrez comment configurer des URL bloquées personnalisées pour des utilisateurs et une liste d’URL de non-réécriture pour un groupe d’utilisateurs dans les stratégies de liens fiables ATP d’Office 365.
-ms.openlocfilehash: 7d7c8ad3f5ae0f6a79bd839151ed09628e7f2dfd
-ms.sourcegitcommit: df59c83174d845b8ddec48b9be2659fbfb58bb7f
+ms.openlocfilehash: 7909e91b96f8bdbc38ffdceafe11fa47f5ebe897
+ms.sourcegitcommit: fa8e488936a36e4b56e1252cb4061b5bd6c0eafc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "46517472"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "46656968"
 ---
 # <a name="set-up-a-custom-do-not-rewrite-urls-list-using-atp-safe-links"></a>Configurer une liste d’URL do-not-Rewrite personnalisée à l’aide de liens fiables ATP
 
@@ -41,11 +41,12 @@ ATP Safe Links protection utilise plusieurs listes, y compris la liste des URL b
 
 Pour modifier (ou définir) des stratégies ATP, vous devez disposer d’un rôle approprié. Le tableau suivant contient quelques exemples. Pour en savoir plus, consultez [la rubrique autorisations dans le centre de sécurité & conformité](permissions-in-the-security-and-compliance-center.md).
 
-|Role  |WHERE/How Assigned  |
-|---------|---------|
-|administrateur général |La personne qui s’inscrit pour acheter Microsoft 365 est un administrateur global par défaut. (Pour en savoir plus, consultez la rubrique [à propos des rôles d’administrateur Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles) .)         |
-|Administrateur de sécurité |Centre d’administration Azure Active Directory ( [https://aad.portal.azure.com](https://aad.portal.azure.com) )|
-|Gestion d’Organisation Exchange Online |Centre d’administration Exchange ( [https://outlook.office365.com/ecp](https://outlook.office365.com/ecp) ) <br>ou <br>  Applets de commande PowerShell (consultez la rubrique [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell)) |
+|Role|WHERE/How Assigned|
+|---|---|
+|administrateur général|La personne qui s’inscrit pour acheter Microsoft 365 est un administrateur global par défaut. (Pour en savoir plus, consultez la rubrique [à propos des rôles d’administrateur Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles) .)|
+|Administrateur de sécurité|Centre d’administration Azure Active Directory ( [https://aad.portal.azure.com](https://aad.portal.azure.com) )|
+|Gestion d’Organisation Exchange Online|Centre d’administration Exchange ( [https://outlook.office365.com/ecp](https://outlook.office365.com/ecp) ) <br>ou <br>  Applets de commande PowerShell (consultez la rubrique [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell))|
+|
 
 > [!TIP]
 > Pour en savoir plus sur les rôles et les autorisations, consultez [la rubrique autorisations dans le centre de sécurité & conformité](permissions-in-the-security-and-compliance-center.md).
@@ -83,9 +84,12 @@ Pour modifier (ou définir) des stratégies ATP, vous devez disposer d’un rôl
 
 Le tableau suivant répertorie des exemples de ce que vous pouvez entrer et de l’effet de ces entrées.
 
+****
+
 |Exemple d’entrée|Ce qu’il fait|
-|:-----|:-----|
+|---|---|
 |`contoso.com`|Permet aux destinataires de visiter un site `https://contoso.com` , mais pas des sous-domaines ou des chemins d’accès.|
 |`*.contoso.com/*`|Permet aux destinataires de visiter un domaine, des sous-domaines et des chemins d’accès, par exemple `https://www.contoso.com` ,, `https://www.contoso.com` `https://maps.contoso.com` ou `https://www.contoso.com/a` . <br/><br/> Cette entrée est par essence préférable `*contoso.com*` , car elle n’inclut pas les sites potentiellement frauduleux, comme `https://www.falsecontoso.com` ou`https://www.false.contoso.completelyfalse.com`|
 |`https://contoso.com/a`|Permet à des destinataires spécifiques de visiter un site `https://contoso.com/a` , mais pas des sous-chemins comme`https://contoso.com/a/b`|
 |`https://contoso.com/a/*`|Permet à des destinataires spécifiques de visiter un site comme des sous- `https://contoso.com/a` chemins comme`https://contoso.com/a/b`|
+|

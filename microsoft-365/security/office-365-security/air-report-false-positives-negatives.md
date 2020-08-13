@@ -19,17 +19,17 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.custom: autoir
-ms.openlocfilehash: 837232550ca392a364b9842f64a1c3f0d790a502
-ms.sourcegitcommit: 33be6075fcc89d4c0a48fa7e59f3b3ebc605d9f3
+ms.openlocfilehash: 826d8561ba0c9618f21458493416b7dbd75af9e1
+ms.sourcegitcommit: fa8e488936a36e4b56e1252cb4061b5bd6c0eafc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44520157"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "46656860"
 ---
 # <a name="how-to-report-false-positivesnegatives-in-automated-investigation-and-response-capabilities"></a>Comment signaler les faux positifs/négatifs dans les fonctionnalités d’analyse et de réponse automatisées
 
 **S’applique à :**
-- Office 365-Protection avancée contre les menaces
+- Office 365 – Protection avancée contre les menaces
 
 [Les fonctionnalités d’analyse et de réponse automatisées (air) d’Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/automated-investigation-response-office) manquent ou détectent-elles mal ? Il existe des étapes que vous pouvez suivre pour résoudre ce problème. Vous pouvez :
 - [Signaler un faux positif/négatif à Microsoft](#report-a-false-positivenegative-to-microsoft-for-analysis);
@@ -61,11 +61,13 @@ Dans la plupart des cas, si une action de correction a été effectuée sur un m
 
 Avec l’Explorateur de menaces, votre équipe des opérations de sécurité peut trouver un e-mail affecté par une action et éventuellement annuler l’action.
 
-|Scénario  |Options d’annulation  |En savoir plus |
-|---------|---------|---------|
-|Un message électronique a été acheminé vers le dossier de courrier indésirable d’un utilisateur     |-Déplacer le message vers le dossier éléments supprimés de l’utilisateur<br/>-Déplacer le message vers la boîte de réception de l’utilisateur <br/>-Supprimer le message          |[Rechercher et identifier les courriers électroniques malveillants remis dans Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/investigate-malicious-email-that-was-delivered) |
-|Un message électronique ou un fichier a été mis en quarantaine     |-Libérer le courrier électronique ou le fichier <br/>-Supprimer le message électronique ou le fichier         |[Gestion des messages et des fichiers mis en quarantaine en tant qu’administrateur dans Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/manage-quarantined-messages-and-files) |
+****
 
+|Scénario|Options d’annulation|En savoir plus|
+|---|---|---|
+|Un message électronique a été acheminé vers le dossier de courrier indésirable d’un utilisateur|-Déplacer le message vers le dossier éléments supprimés de l’utilisateur<br/>-Déplacer le message vers la boîte de réception de l’utilisateur <br/>-Supprimer le message|[Rechercher et identifier les courriers électroniques malveillants remis dans Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/investigate-malicious-email-that-was-delivered)|
+|Un message électronique ou un fichier a été mis en quarantaine|-Libérer le courrier électronique ou le fichier <br/>-Supprimer le message électronique ou le fichier|[Gestion des messages et des fichiers mis en quarantaine en tant qu’administrateur dans Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/manage-quarantined-messages-and-files)|
+|
 
 ### <a name="undo-an-action-using-the-actions-tab-for-an-investigation"></a>Annuler une action à l’aide de l’onglet actions pour une enquête
 

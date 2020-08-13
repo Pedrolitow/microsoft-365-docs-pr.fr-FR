@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 5a9bc0a28f8c9f360975325adbdd50ad22b0afc5
-ms.sourcegitcommit: 634abe8a237e27dfe82376e6ef32280aab5d4a27
+ms.openlocfilehash: 0384f3ba07b42c8e783994dfa1db75cf2d6ca80b
+ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "45005697"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46648862"
 ---
 # <a name="emailpostdeliveryevents"></a>EmailPostDeliveryEvents
 
@@ -38,8 +38,8 @@ Pour obtenir plus d’informations sur les messages électroniques individuels, 
 | `Timestamp` | DateHeure | Date et heure d’enregistrement de l’événement |
 | `EventId` | string | Identificateur unique de l’événement |
 | `NetworkMessageId` | string | Identificateur unique pour le courrier électronique, généré par Microsoft 365 |
-| `InternetMessageId` | string | Identificateur public de l’e-mail défini par le système de courrier d’envoi |
-| `Action` | string | Action effectuée sur l’entité |
+| `InternetMessageId` | chaîne | Identificateur public de l’e-mail défini par le système de courrier d’envoi |
+| `Action` | chaîne | Action effectuée sur l’entité |
 | `ActionType` | string | Type d’activité qui a déclenché l’événement : correction manuelle, hameçonnage ZAP, programme malveillant ZAP |
 | `ActionTrigger` | string | Indique si une action a été déclenchée par un administrateur (manuellement ou par l’approbation d’une action automatisée en attente) ou par un mécanisme spécial, tel qu’un ZAP ou une remise dynamique. |
 | `ActionResult` | string | Résultat de l’action |
@@ -57,6 +57,6 @@ Cette table capture les événements avec les `ActionType` valeurs suivantes :
 - [Vue d’ensemble du repérage avancé](advanced-hunting-overview.md)
 - [Apprendre le langage de requête](advanced-hunting-query-language.md)
 - [Utiliser des requêtes partagées](advanced-hunting-shared-queries.md)
-- [Repérer les menaces sur divers appareils et e-mails](advanced-hunting-query-emails-devices.md)
+- [Recherche sur les appareils, les e-mails, les applications et les identités](advanced-hunting-query-emails-devices.md)
 - [Comprendre le schéma](advanced-hunting-schema-tables.md)
 - [Appliquer les meilleures pratiques de requête](advanced-hunting-best-practices.md)

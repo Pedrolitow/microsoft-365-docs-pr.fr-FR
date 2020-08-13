@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Découvrez comment utiliser l’applet de commande AllowSelfServicePurchase PowerShell pour activer ou désactiver l’achat libre-service.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: b35b62a97f8dc269be5db232e163391a8ce50658
-ms.sourcegitcommit: 41eb898143286755cd36df9f7e769de641263d73
+ms.openlocfilehash: 79ee2d96fa1ae6f49f0402f49ddec34e69257082
+ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "45391541"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46653712"
 ---
 # <a name="use-allowselfservicepurchase-for-the-mscommerce-powershell-module"></a>Utiliser AllowSelfServicePurchase pour le module MSCommerce PowerShell
 
@@ -92,6 +92,10 @@ Le tableau suivant répertorie les produits disponibles et leur **ProductID**.
 | Applications puissantes par utilisateur | CFQ7TTC0KP0P |
 | Power Automated per User | CFQ7TTC0KP0N |
 | Power BI Pro | CFQ7TTC0L3PB |
+| Plan de projet 1 | CFQ7TTC0KXND |
+| Plan de projet 3 | CFQ7TTC0KXNC |
+| Visio (plan 1) | CFQ7TTC0KXN9 |
+| Visio (plan 2) | CFQ7TTC0KXN8 |
 
 ## <a name="view-or-set-the-status-for-allowselfservicepurchase"></a>Afficher ou définir l’État pour AllowSelfServicePurchase
 
@@ -128,7 +132,7 @@ Update-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -ProductId $pr
 
 ## <a name="troubleshooting"></a>Résolution des problèmes
 
-**Problème**
+### <a name="problem"></a>Problème
 
 Le message d’erreur suivant s’affiche :
 
@@ -136,7 +140,7 @@ Le message d’erreur suivant s’affiche :
 
 Cela peut être dû à une version plus ancienne de TLS (Transport Layer Security). Pour connecter ce service, vous devez utiliser TLS 1,2 ou une version ultérieure.
 
-**Solution**
+### <a name="solution"></a>Solution
 
 Effectuez une mise à niveau vers TLS 1,2 :[https://docs.microsoft.com/mem/configmgr/core/plan-design/security/enable-tls-1-2](https://docs.microsoft.com/mem/configmgr/core/plan-design/security/enable-tls-1-2)
 

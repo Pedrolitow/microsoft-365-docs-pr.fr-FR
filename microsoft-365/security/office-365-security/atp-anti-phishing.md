@@ -17,12 +17,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Découvrez les fonctionnalités anti-hameçonnage qui font partie de la protection avancée contre les menaces d’Office 365 pour assurer la protection contre les attaques par hameçonnage & de la sonde.
-ms.openlocfilehash: dda94145dfbef7466ebd8e1fb9f01d592515f598
-ms.sourcegitcommit: 5e8901e7e571f20ede04f460bd3e7077dda004ca
+ms.openlocfilehash: 238c841ec7ba45fe2675598a29979b550c1c4fa3
+ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "44875416"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46653363"
 ---
 # <a name="atp-anti-phishing-capabilities-in-office-365"></a>Fonctionnalités anti-hameçonnage ATP dans Office 365
 
@@ -54,12 +54,15 @@ De plus, des rapports sont disponibles pour illustrer le fonctionnement du servi
 Pour que les modèles d’apprentissage de l’anti-hameçonnage ATP soient actifs pour un utilisateur particulier, cet utilisateur doit faire partie d’une stratégie de [pièces jointes approuvées ATP](atp-safe-attachments.md)définie, de [liens approuvés ATP](atp-safe-links.md)ou d’une stratégie anti-hameçonnage ATP. 
 
 Le tableau suivant décrit quelques exemples de scénarios. Dans chacun de ces exemples, l’organisation utilise Office 365 entreprise E5, qui inclut la protection avancée contre les menaces.
-  
-|**Exemple de scénario**|**Est-ce que la protection contre le hameçonnage ATP s’applique dans ce cas ?**|
-|:-----|:-----|
+
+****
+
+|Exemple de scénario|Est-ce que la protection contre le hameçonnage ATP s’applique dans ce cas ?|
+|---|---|
 |L’organisation de Pat a Office 365 entreprise E5, mais personne n’a défini de stratégie pour les pièces jointes approuvées pour la protection avancée contre les menaces, les liens fiables ATP ou l’hameçonnage avancé ATP.|Non. Bien que la fonctionnalité soit disponible, au moins une stratégie ATP doit être définie pour que les modèles d’apprentissage de l’ordinateur ATP fonctionnent. Pour l’emprunt d’identité, une stratégie anti-hameçonnage de protection avancée contre les menaces doit également être mise en place.|
 |Lee est un employé du service des ventes de contoso. L’organisation de Lee a une stratégie anti-hameçonnage ATP qui s’applique uniquement aux employés financiers.|Non. Dans ce cas, la protection contre le hameçonnage ATP (modèles d’ordinateur et protection contre l’usurpation d’identité) s’applique aux employés financiers, mais ce n’est pas le cas pour d’autres employés, y compris le service des ventes.|
 |Hier, un administrateur Office 365 de la société Jean a configuré une stratégie anti-hameçonnage ATP qui s’applique à tous les employés. Plus tôt aujourd’hui, Jean a reçu un message électronique qui inclut un emprunt d’identité couvert par la stratégie.|Oui. Dans cet exemple, Jean a une licence pour la protection avancée contre les menaces, et une stratégie anti-hameçonnage ATP incluant Jean a été définie. Il faut environ 30 minutes pour qu’une nouvelle stratégie prenne effet sur l’ensemble des centres de communication ; étant donné qu’un jour a passé dans ce cas, la stratégie doit être en vigueur.|
+|
 
 ## <a name="related-topics"></a>Voir aussi
 

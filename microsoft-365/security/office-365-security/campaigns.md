@@ -17,12 +17,12 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Découvrez Campaign Views dans Office 365 - Protection avancée contre les menaces.
-ms.openlocfilehash: fe443c43fa5cea8ec6e3e1c0bc5ee5307b5c28f6
-ms.sourcegitcommit: 9ee1261c405f82b49c62390a25dfdea23340d644
+ms.openlocfilehash: b7078188d8e01f27e6941c3f61f4ef20a004606c
+ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2020
-ms.locfileid: "45039452"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46653232"
 ---
 # <a name="campaign-views-in-atp"></a>Affichages de campagne dans la protection avancée contre les menaces
 
@@ -221,11 +221,12 @@ Le diagramme contient les informations suivantes :
 
 - Valeurs de **verdict du filtre**: ces valeurs sont liées aux verdicts de hameçonnage et de filtrage du courrier indésirable disponibles, comme décrit dans [les en-têtes de message anti-courrier indésirable](anti-spam-message-headers.md). Les valeurs disponibles sont décrites dans le tableau suivant :
 
-  ||||
+  ****
+
+  |Valeur|Verdict du filtre de courrier indésirable|Description|
   |---|---|---|
-  |**Valeur**|**Verdict du filtre de courrier indésirable**|**Description**|
   |**Autorisé**|`SFV:SKN` <br/><br/> `SFV:SKI`|Le message a été marqué comme n’étant pas un courrier indésirable et/ou a ignoré le filtrage avant d’être évalué par le filtrage du courrier indésirable (par exemple, par une règle de flux de messagerie, également appelée règle de transport).<br/><br/>Le message a ignoré le filtrage du courrier indésirable pour d’autres raisons (par exemple, l’expéditeur et le destinataire semblent être dans la même organisation).|
-  |**Blocked**|`SFV:SKS`|Le message a été marqué comme courrier indésirable avant d’être évalué par le filtrage du courrier indésirable (par exemple, par une règle de flux de messagerie).|
+  |**Bloqué**|`SFV:SKS`|Le message a été marqué comme courrier indésirable avant d’être évalué par le filtrage du courrier indésirable (par exemple, par une règle de flux de messagerie).|
   |**Détecté**|`SFV:SPM`|Le message a été marqué comme courrier indésirable par le filtrage du courrier indésirable.|
   |**Non détecté**|`SFV:NSPM`|Le message a été marqué comme non courrier indésirable par le filtrage du courrier indésirable.|
   |**A**|`SFV:SKQ`|Le message a ignoré le filtrage du courrier indésirable, car il a été mis en quarantaine.|
@@ -236,9 +237,9 @@ Le diagramme contient les informations suivantes :
   |**ZAP**|s/o|La [purge automatique à zéro heure (ZAP)](zero-hour-auto-purge.md) a effectué une action sur le message remis en fonction de vos paramètres de stratégie anti-courrier indésirable (déplacés vers le dossier courrier indésirable ou mis en quarantaine).|
   |
 
-  <sup>\*</sup>Examinez vos stratégies de blocage du courrier indésirable, car le message autorisé aurait probablement été bloqué par le service.
+  <sup>\*</sup> Examinez vos stratégies de blocage du courrier indésirable, car le message autorisé aurait probablement été bloqué par le service.
 
-  <sup>\*\*</sup>Examinez vos stratégies de blocage du courrier indésirable, car ces messages doivent être mis en quarantaine et non remis.
+  <sup>\*\*</sup> Examinez vos stratégies de blocage du courrier indésirable, car ces messages doivent être mis en quarantaine et non remis.
 
 - **Emplacements de remise**: vous souhaiterez peut-être examiner les messages qui ont été remis aux destinataires (soit dans la boîte de réception, soit dans le dossier courrier indésirable), même si les utilisateurs n'ont pas cliqué sur l'URL de la charge utile dans le message. Vous pouvez également supprimer les messages mis en quarantaine en quarantaine. Pour plus d’informations, consultez la rubrique [messages électroniques mis en quarantaine dans EOP](quarantine-email-messages.md).
 

@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 67749125d2f62f2774c36e6970cf8901b1fd5784
-ms.sourcegitcommit: ab10c042e5e9c6a7b2afef930ab0d247a6aa275d
+ms.openlocfilehash: b88bdb09b84db5de813fc9020d9695f26c61f105
+ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44899302"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46649438"
 ---
 # <a name="devicefileevents"></a>DeviceFileEvents
 
@@ -36,7 +36,7 @@ Pour plus d’informations sur les autres tables du schéma de repérage avancé
 | Nom de colonne | Type de données | Description |
 |-------------|-----------|-------------|
 | `Timestamp` | DateHeure | Date et heure d’enregistrement de l’événement |
-| `DeviceId` | chaîne | Identificateur unique de la machine dans le service |
+| `DeviceId` | string | Identificateur unique de la machine dans le service |
 | `DeviceName` | string | Nom de domaine complet (FQDN) de la machine |
 | `ActionType` | string | Type d’activité qui a déclenché l’événement |
 | `FileName` | string | Nom du fichier auquel l’action enregistrée a été appliquée |
@@ -74,12 +74,12 @@ Pour plus d’informations sur les autres tables du schéma de repérage avancé
 | `AppGuardContainerId` | string | Identificateur du conteneur virtualisé utilisé par application Guard pour isoler l’activité du navigateur |
 | `SensitivityLabel` | string | Étiquette appliquée à un message électronique, à un fichier ou à un autre contenu afin de le classer pour la protection des informations |
 | `SensitivitySubLabel` | string | Sous-étiquette appliquée à un message électronique, à un fichier ou à un autre contenu pour le classer pour la protection des informations ; les sous-étiquettes de sensibilité sont regroupées sous les étiquettes de confidentialité mais traitées indépendamment |
-| `IsAzureInfoProtectionApplied` | booléen | Indique si le fichier est chiffré par Azure information protection |
+| `IsAzureInfoProtectionApplied` | valeur booléenne | Indique si le fichier est chiffré par Azure information protection |
 
 ## <a name="related-topics"></a>Voir aussi
 - [Vue d’ensemble du repérage avancé](advanced-hunting-overview.md)
 - [Apprendre le langage de requête](advanced-hunting-query-language.md)
 - [Utiliser des requêtes partagées](advanced-hunting-shared-queries.md)
-- [Repérer les menaces sur divers appareils et e-mails](advanced-hunting-query-emails-devices.md)
+- [Recherche sur les appareils, les e-mails, les applications et les identités](advanced-hunting-query-emails-devices.md)
 - [Comprendre le schéma](advanced-hunting-schema-tables.md)
 - [Appliquer les meilleures pratiques de requête](advanced-hunting-best-practices.md)

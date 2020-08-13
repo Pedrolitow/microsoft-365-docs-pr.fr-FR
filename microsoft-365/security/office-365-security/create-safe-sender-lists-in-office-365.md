@@ -16,12 +16,12 @@ ms.assetid: 9721b46d-cbea-4121-be51-542395e6fd21
 ms.custom:
 - seo-marvel-apr2020
 description: Les administrateurs peuvent en savoir plus sur les options disponibles et préférées pour autoriser les messages entrants dans Exchange Online Protection (EOP).
-ms.openlocfilehash: 9ca1fc3911dd3417304d0d1de6923408373bc33c
-ms.sourcegitcommit: 634abe8a237e27dfe82376e6ef32280aab5d4a27
+ms.openlocfilehash: bbb25e1c499e84a1af34d0f0a52a81f1470aadfd
+ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "45005857"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46652980"
 ---
 # <a name="create-safe-sender-lists-in-eop"></a>Créer des listes d’expéditeurs approuvés dans EOP
 
@@ -37,7 +37,14 @@ Les listes d’expéditeurs approuvés disponibles sont décrites dans la liste 
 Les règles de flux de messagerie offrent une flexibilité maximale pour garantir que seuls les messages corrects sont autorisés. Les listes d’expéditeurs autorisés et de domaines autorisés dans les stratégies de blocage du courrier indésirable ne sont pas aussi sécurisées que la liste d’adresses IP autorisées, car le domaine de messagerie de l’expéditeur est facilement falsifié. Toutefois, la liste d’adresses IP autorisées présente également un risque, car les messages provenant de _n’importe quel_ domaine qui est envoyé à partir de cette adresse IP contourneront le filtrage du courrier indésirable.
 
 > [!IMPORTANT]
-> • Veillez à contrôler attentivement *les* exceptions de filtrage du courrier indésirable à l’aide des listes d’expéditeurs autorisés. <br/><br/> • Si vous pouvez utiliser des listes d’expéditeurs autorisés pour obtenir des faux positifs (courrier marqué comme courrier indésirable), vous devez envisager d’utiliser des listes d’expéditeurs approuvés comme solution temporaire qui doit être évitée dans la mesure du possible. Nous vous déconseillons de gérer les faux positifs à l’aide de listes d’expéditeurs approuvés, car les exceptions au filtrage du courrier indésirable peuvent ouvrir votre organisation à l’usurpation d’identité et à d’autres attaques. Si vous insistez sur l’utilisation de listes d’expéditeurs approuvés pour gérer les faux positifs, vous devez être vigilant et conserver la rubrique [signaler les messages et les fichiers à Microsoft](report-junk-email-messages-to-microsoft.md) à l’adresse. <br/><br/> • Pour autoriser un domaine à envoyer des courriers électroniques non authentifiés (ignorer la protection contre l’usurpation d’identité) mais ne pas contourner les vérifications contre le courrier indésirable et les programmes malveillants, vous pouvez l’ajouter à la [liste des expéditeurs approuvés AllowedToSpoof](walkthrough-spoof-intelligence-insight.md) <br/><br/> • EOP et Outlook inspecter différentes propriétés de message pour déterminer l’expéditeur du message. Pour plus d’informations, consultez la section [considérations relatives à l’envoi en nombre de messages électroniques](#considerations-for-bulk-email) plus loin dans cette rubrique.
+>
+> - Veillez à contrôler attentivement *les* exceptions de filtrage du courrier indésirable à l’aide des listes des expéditeurs autorisés.
+>
+> - Bien que vous puissiez utiliser des listes d’expéditeurs approuvés pour vous aider à obtenir des faux positifs (courrier électronique marqué comme courrier indésirable), vous devez envisager d’utiliser des listes d’expéditeurs approuvés comme solution temporaire qui doit être évitée dans la mesure du possible. Nous vous déconseillons de gérer les faux positifs à l’aide de listes d’expéditeurs approuvés, car les exceptions au filtrage du courrier indésirable peuvent ouvrir votre organisation à l’usurpation d’identité et à d’autres attaques. Si vous insistez sur l’utilisation de listes d’expéditeurs approuvés pour gérer les faux positifs, vous devez être vigilant et conserver la rubrique [signaler les messages et les fichiers à Microsoft](report-junk-email-messages-to-microsoft.md) à l’adresse.
+>
+> - Pour autoriser un domaine à envoyer des courriers électroniques non authentifiés (ignorer la protection contre l’usurpation d’identité) mais ne pas contourner les vérifications anti-courrier indésirable et anti-programme malveillant, vous pouvez l’ajouter à la [liste des expéditeurs approuvés AllowedToSpoof](walkthrough-spoof-intelligence-insight.md)
+>
+> - EOP et Outlook inspectent les différentes propriétés des messages pour déterminer l’expéditeur du message. Pour plus d’informations, consultez la section [considérations relatives à l’envoi en nombre de messages électroniques](#considerations-for-bulk-email) plus loin dans cette rubrique.
 
 En revanche, vous disposez également de plusieurs options pour bloquer les messages provenant de sources spécifiques en utilisant des _listes d’expéditeurs bloqués_. Pour plus d’informations, voir [Créer des listes d’expéditeurs bloqués dans Exchange Online PowerShell](create-block-sender-lists-in-office-365.md).
 
@@ -60,7 +67,12 @@ L’exemple suivant suppose que vous avez besoin d’un courrier électronique d
      Utilisez ce paramètre si le domaine d’envoi n’a pas d’authentification. Être aussi restrictif que possible lorsqu’il s’agit des adresses IP source dans la liste d’adresses IP autorisées. Nous vous recommandons d’utiliser une plage d’adresses IP supérieure ou égale à 24 (moins est préférable). N’utilisez pas de plages d’adresses IP appartenant à des services grand public (par exemple, outlook.com) ou à des infrastructures partagées.
 
    > [!IMPORTANT]
-   > <ul><li>Ne configurez jamais les règles *de flux de messagerie avec le* domaine de l’expéditeur comme condition pour ignorer le filtrage du courrier indésirable. Cela augmentera *considérablement* la probabilité que les attaquants puissent usurper le domaine d’envoi (ou emprunter l’adresse de messagerie complète), ignorer le filtrage du courrier indésirable et ignorer les vérifications d’authentification de l’expéditeur afin que le message arrive dans la boîte de réception du destinataire.</li><li>N’utilisez pas les domaines que vous possédez (également appelés domaines acceptés) ou les domaines populaires (par exemple, microsoft.com) comme conditions dans les règles de flux de messagerie. Cette opération est considérée comme un risque élevé, car elle permet aux attaquants d’envoyer des courriers électroniques qui seraient normalement filtrés.</li><li>Si vous autorisez une adresse IP se trouvant derrière une passerelle NAT (Network Address Translation), vous devez déterminer les serveurs impliqués dans le pool NAT afin de déterminer l’étendue de votre liste d’adresses IP autorisées. Les adresses IP et les participants NAT peuvent modifier. Vous devez vérifier régulièrement vos entrées de liste d’adresses IP autorisées dans le cadre de vos procédures de maintenance standard.</li></ul>
+   >
+   > - Ne configurez jamais les règles *de flux de messagerie avec le* domaine de l’expéditeur comme condition pour ignorer le filtrage du courrier indésirable. Cela augmentera *considérablement* la probabilité que les attaquants puissent usurper le domaine d’envoi (ou emprunter l’adresse de messagerie complète), ignorer le filtrage du courrier indésirable et ignorer les vérifications d’authentification de l’expéditeur afin que le message arrive dans la boîte de réception du destinataire.
+   >
+   > - N’utilisez pas les domaines que vous possédez (également appelés domaines acceptés) ou les domaines populaires (par exemple, microsoft.com) comme conditions dans les règles de flux de messagerie. Cette opération est considérée comme un risque élevé, car elle permet aux attaquants d’envoyer des courriers électroniques qui seraient normalement filtrés.
+   >
+   > - Si vous autorisez une adresse IP se trouvant derrière une passerelle NAT (Network Address Translation), vous devez déterminer les serveurs impliqués dans le pool NAT afin de déterminer l’étendue de votre liste d’adresses IP autorisées. Les adresses IP et les participants NAT peuvent modifier. Vous devez vérifier régulièrement vos entrées de liste d’adresses IP autorisées dans le cadre de vos procédures de maintenance standard.
 
 3. **Conditions facultatives**:
 
@@ -108,7 +120,10 @@ L’option la moins intéressante consiste à utiliser la liste des expéditeurs
 La limite maximale de ces listes est d’environ 1000 entrées ; Bien que vous ne puissiez entrer que 30 entrées dans le portail. Vous devez utiliser PowerShell pour ajouter plus de 30 entrées.
 
 > [!CAUTION]
-> <ul><li>Cette méthode crée un risque élevé de remise des messages électroniques à la boîte de réception qui seraient normalement filtrés.</li><li>N’utilisez pas les domaines que vous possédez (également appelés domaines acceptés) ou les domaines populaires (par exemple, microsoft.com) dans les listes de domaines autorisés.</li></ul>
+>
+> - Cette méthode crée un risque élevé de remise des messages électroniques à la boîte de réception qui seraient normalement filtrés.
+>
+> - N’utilisez pas les domaines que vous possédez (également appelés domaines acceptés) ou les domaines populaires (par exemple, microsoft.com) dans les listes de domaines autorisés.
 
 ## <a name="considerations-for-bulk-email"></a>Considérations relatives au courrier en nombre
 

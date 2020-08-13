@@ -13,12 +13,12 @@ ms.assetid: 3e64f99d-ac33-4aba-91c5-9cb4ca476803
 ms.custom:
 - seo-marvel-apr2020
 description: Les administrateurs peuvent utiliser le suivi des messages dans le centre de sécurité & conformité afin de déterminer ce qui s’est passé aux messages.
-ms.openlocfilehash: cb24b9a5f5540f1858ac17b5b4ec3de0c77b47d1
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 7c0b87b1bb882714692a04b857bfc054305dee8c
+ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44819339"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46653640"
 ---
 # <a name="message-trace-in-the-security--compliance-center"></a>Suivi des messages dans le centre de conformité et de sécurité
 
@@ -29,7 +29,10 @@ Le suivi des messages dans le centre de sécurité & conformité suit les messag
 Le suivi des messages dans le centre de sécurité & conformité améliore le suivi du message d’origine qui était disponible dans le centre d’administration Exchange. Vous pouvez utiliser les informations du suivi des messages pour répondre efficacement aux questions de l’utilisateur sur ce qui s’est passé aux messages, résoudre les problèmes de flux de messagerie et valider les modifications de stratégie.
 
 > [!NOTE]
-> • Pour effectuer un suivi des messages, vous devez être membre des groupes de rôles gestion de l’organisation, gestion de la conformité ou support technique. Pour en savoir plus, consultez [Autorisations dans le Centre de sécurité et de conformité](permissions-in-the-security-and-compliance-center.md). <br/><br/>• Le nombre maximal de messages affichés dans les résultats dépend du type de rapport que vous avez sélectionné (pour plus d’informations, reportez-vous à la section [choisir le type de rapport](#choose-report-type) ). La cmdlet [Get-HistoricalSearch](https://docs.microsoft.com/powershell/module/exchange/get-historicalsearch) dans Exchange Online PowerShell ou la version PowerShell d’EOP autonome renvoie tous les messages dans les résultats.
+>
+> - Pour effectuer un suivi des messages, vous devez être membre des groupes de rôles gestion de l’organisation, gestion de la conformité ou support technique. Pour en savoir plus, consultez [Autorisations dans le Centre de sécurité et de conformité](permissions-in-the-security-and-compliance-center.md).
+>
+> - Le nombre maximal de messages affichés dans les résultats dépend du type de rapport que vous avez sélectionné (pour plus d’informations, reportez-vous à la section [choisir le type de rapport](#choose-report-type) ). La cmdlet [Get-HistoricalSearch](https://docs.microsoft.com/powershell/module/exchange/get-historicalsearch) dans Exchange Online PowerShell ou la version PowerShell d’EOP autonome renvoie tous les messages dans les résultats.
 
 ## <a name="open-message-trace"></a>Ouvrir le suivi des messages
 
@@ -332,8 +335,10 @@ Le champ **custom_data** d’un `AGENTINFO` événement est utilisé par divers 
 
 Une valeur de **custom_data** commençant par provient `S:SFA` de l’agent de filtrage du courrier indésirable. Les détails clés sont décrits dans le tableau suivant :
 
-|**Valeur**|**Description**|
-|:-----|:-----|
+****
+
+|Valeur|Description|
+|---|---|
 |`SFV=NSPM`|Le message a été marqué comme n’étant pas un courrier indésirable et a été envoyé aux destinataires appropriés.|
 |`SFV=SPM`|Le message a été marqué comme courrier indésirable par le filtrage du courrier indésirable (également appelé filtrage du contenu).|
 |`SFV=BLK`|Le filtrage a été ignoré et le message a été bloqué, car il provient d'un expéditeur bloqué.|
@@ -345,11 +350,12 @@ Une valeur de **custom_data** commençant par provient `S:SFA` de l’agent de f
 |`DI=SD`|Le message a été supprimé.|
 |`DI=SJ`|Le message a été mis dans le dossier Courrier indésirable du destinataire.|
 |`DI=SN`|Le message a été routé via le pool de remises normal pour les messages sortants.|
-|`DI=SO`|Le message a été routé via le pool de remises à haut risque. Pour plus d’informations, consultez la rubrique [pool de remise à haut risque pour les messages sortants](high-risk-delivery-pool-for-outbound-messages.md).|
+|`DI=SO`|Le message a été routé via le pool de remises à haut risque. Pour plus d’informations, voir [Pool de remise à risque élevé pour les messages sortants](high-risk-delivery-pool-for-outbound-messages.md).|
 |`SFS=[a]|SFS=[b]`|Cela indique que des règles anti-spam ont été associées.|
 |`IPV=CAL`|Le message n’a pas été bloqué par les filtres anti-spam car l’adresse IP se trouve dans une liste d’adresses IP autorisées du filtre des connexions.|
 |`H=<EHLOstring>`|Chaîne HELO ou EHLO du serveur de courrier de connexion.|
 |`PTR=<ReverseDNS>`|Enregistrement PTR de l'adresse IP d'envoi, également appelé adresse DNS inverse.|
+|
 
 Voici un exemple **custom_data** valeur pour un message qui est filtré pour le courrier indésirable comme suit :
 
@@ -359,8 +365,10 @@ Voici un exemple **custom_data** valeur pour un message qui est filtré pour le 
 
 Une valeur de **custom_data** commençant par provient `S:AMA` de l’agent de filtrage des programmes malveillants. Les détails clés sont décrits dans le tableau suivant :
 
-|**Valeur**|**Description**|
-|:-----|:-----|
+****
+
+|Valeur|Description|
+|---|---|
 |`AMA=SUM|v=1|` ou `AMA=EV|v=1`|Un programme malveillant a été détecté dans le message. `SUM`indique que le programme malveillant a pu être détecté par n’importe quel nombre de moteurs. `EV`indique que le programme malveillant a été détecté par un moteur spécifique. Lorsqu'un programme malveillant est détecté par un moteur, les actions suivantes se produisent.|
 |`Action=r`|Le message a été remplacé.|
 |`Action=p`|Le message a été ignoré.|
@@ -373,6 +381,7 @@ Une valeur de **custom_data** commençant par provient `S:AMA` de l’agent de f
 |`Action=b`|Le message a été bloqué.|
 |`Name=<malware>`|Nom du programme malveillant détecté.|
 |`File=<filename>`|Nom du fichier qui contenait le programme malveillant.|
+|
 
 Voici un exemple **custom_data** valeur d’un message contenant un programme malveillant :
 
@@ -382,12 +391,15 @@ Voici un exemple **custom_data** valeur d’un message contenant un programme ma
 
 Une valeur de **custom_data** commençant par provient `S:TRA` de l’agent de règles de transport pour les règles de flux de messagerie (également appelées règles de transport). Les détails clés sont décrits dans le tableau suivant :
 
-|**Valeur**|**Description**|
-|:-----|:-----|
+****
+
+|Valeur|Description|
+|---|---|
 |`ETR|ruleId=<guid>`|ID de la règle qui s'applique.|
 |`St=<datetime>`|Date et heure UTC de la correspondance de la règle.|
 |`Action=<ActionDefinition>`|Action appliquée. Pour obtenir la liste des actions disponibles, consultez la rubrique [mail Flow Rule actions in Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions).|
 |`Mode=<Mode>`|Mode de la règle. Les valeurs valides sont les suivantes : <br/>* **Appliquer**: toutes les actions de la règle seront appliquées. <br/>* **Test avec conseils de stratégie :**: toutes les actions de Conseil de stratégie seront envoyées, mais les autres actions d’application ne seront pas traitées. <br/>* **Test sans conseils de stratégie**: les actions seront consignées dans un fichier journal, mais les expéditeurs ne recevront aucune notification et les actions d’application ne seront pas effectuées.|
+|
 
 Un exemple **custom_data** valeur pour les messages qui correspondent aux conditions d’une règle de flux de messagerie se présente comme suit :
 

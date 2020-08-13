@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Recherchez et utilisez des rapports pour Office 365 protection avancée contre les menaces dans le centre de sécurité &amp; conformité.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 194ce245e02490a313effdeaad0715fdd8035a19
-ms.sourcegitcommit: c04f1207cfaddac2a9abef38967c17d689756a96
+ms.openlocfilehash: dc68df40e6b7b576644be607697d7b1ed0a33660
+ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "46577983"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46653532"
 ---
 # <a name="view-reports-for-office-365-advanced-threat-protection"></a>Afficher les rapports pour Office 365 protection avancée contre les menaces
 
@@ -252,7 +252,7 @@ Le rapport **URL protection contre les menaces** comporte deux vues agrégées q
 Si vous cliquez sur **afficher les détails**de la table, le rapport fournit une vue quasi en temps réel de tous les clics effectués au sein de l’organisation pendant les 7 derniers jours avec les détails suivants :
 
 - **Cliquez sur heure**
-- **User**
+- **Utilisateur**
 - **URL**
 - **Action**
 - **App**
@@ -265,14 +265,17 @@ Pour revenir à l’affichage rapports, cliquez sur **afficher le rapport**.
 
 Outre les rapports ATP décrits dans cette rubrique, plusieurs autres rapports sont disponibles, comme décrit dans le tableau suivant :
 
+****
+
 |Rapport|Rubrique|
 |---|---|
 |**Explorateur** (plan ATP 2) ou **détections en temps réel** (plan ATP 1)|[Explorateur de menaces (et détections en temps réel)](threat-explorer.md)|
 |**Rapports de sécurité de messagerie**, tels que le rapport des expéditeurs et des destinataires principaux, le rapport de courrier indésirable et le rapport des détections de courrier indésirable.|[Afficher les rapports de sécurité de courrier dans le centre de sécurité et conformité](view-email-security-reports.md)|
 |Les **rapports de flux de messagerie**, tels que le rapport de transfert, le rapport d’état de flux de messagerie et le rapport des expéditeurs et des destinataires principaux.|[Afficher les rapports de flux de messagerie dans le centre de sécurité & conformité](view-mail-flow-reports.md)|
 |**Suivi des URL pour les liens fiables ATP** (PowerShell uniquement). La sortie de cette cmdlet vous indique les résultats des actions de liens approuvés ATP au cours des sept derniers jours.|[Get-UrlTrace](https://docs.microsoft.com/powershell/module/exchange/get-urltrace)|
-|**Résultats du trafic de messagerie pour EOP et ATP** (PowerShell uniquement). La sortie de cette applet de commande contient des informations sur le domaine, la date, le type d’événement, la direction, l’action et le nombre de messages.|[Get-MailTrafficATPReport](https://docs.microsoft.com/powershell/module/exchange/get-mailtrafficatpreport) <br/><br/> |
+|**Résultats du trafic de messagerie pour EOP et ATP** (PowerShell uniquement). La sortie de cette applet de commande contient des informations sur le domaine, la date, le type d’événement, la direction, l’action et le nombre de messages.|[Get-MailTrafficATPReport](https://docs.microsoft.com/powershell/module/exchange/get-mailtrafficatpreport)|
 |**Rapports de détail du courrier pour les détections EOP et ATP** (PowerShell uniquement). La sortie de cette applet de commande contient des détails sur les URL ou les fichiers malveillants, les tentatives de hameçonnage, l’emprunt d’identité et d’autres menaces potentielles dans les messages ou les fichiers.|[Get-MailDetailATPReport](https://docs.microsoft.com/powershell/module/exchange/get-maildetailatpreport)|
+|
 
 ## <a name="what-permissions-are-needed-to-view-the-atp-reports"></a>Quelles sont les autorisations nécessaires pour afficher les rapports ATP ?
 
@@ -302,7 +305,7 @@ Pour en savoir plus, consultez les ressources suivantes :
 
 Si vous ne voyez pas de données dans vos rapports ATP, vérifiez que vos stratégies sont correctement configurées. Votre organisation doit avoir des [stratégies de liens fiables ATP](set-up-atp-safe-links-policies.md) et des [stratégies de pièces jointes approuvées ATP](set-up-atp-safe-attachments-policies.md) définies afin que la protection ATP soit mise en place. Consultez également la rubrique protection contre le [courrier indésirable et les programmes malveillants dans Office 365](anti-spam-and-anti-malware-protection.md).
 
-## <a name="related-topics"></a>Sujets associés
+## <a name="related-topics"></a>Voir aussi
 
 [Rapports intelligents et aperçus dans le Centre de sécurité et conformité](reports-and-insights-in-security-and-compliance.md)
   

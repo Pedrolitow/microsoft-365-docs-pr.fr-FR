@@ -16,12 +16,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Les administrateurs peuvent apprendre à configurer les paramètres de courrier indésirable dans les boîtes aux lettres Exchange Online. Un grand nombre de ces paramètres sont disponibles pour les utilisateurs dans Outlook ou Outlook sur le Web.
-ms.openlocfilehash: 4e40e3fa2186022a64c8ccdf66f62db24b9f9794
-ms.sourcegitcommit: 2acd9ec5e9d150389975e854c7883efc186a9432
+ms.openlocfilehash: 5da4aad41f5c5f00f65fa1ceb4fc4c0fad773779
+ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "44755259"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46653040"
 ---
 # <a name="configure-junk-email-settings-on-exchange-online-mailboxes"></a>Configurer les paramètres de courrier indésirable dans les boîtes aux lettres Exchange Online
 
@@ -42,7 +42,7 @@ Lorsque la règle de courrier indésirable est activée dans la boîte aux lettr
 Les administrateurs peuvent utiliser Exchange Online PowerShell pour désactiver, activer et afficher l’état de la règle de courrier indésirable sur les boîtes aux lettres. Les administrateurs peuvent également utiliser Exchange Online PowerShell pour configurer les entrées de la collection de listes fiables sur les boîtes aux lettres (la liste des expéditeurs approuvés, la liste des destinataires approuvés et la liste des expéditeurs bloqués).
 
 > [!NOTE]
-> Les messages provenant d’expéditeurs que les utilisateurs ont ajoutés à leurs propres listes d’expéditeurs approuvés ignorent le filtrage des connexions dans le cadre d’EOP (le SCL est-1). Pour empêcher les utilisateurs d’ajouter des entrées à leur liste des expéditeurs approuvés dans Outlook, utilisez la stratégie de groupe comme mentionné dans la section [à propos des paramètres du courrier indésirable dans Outlook](#about-junk-email-settings-in-outlook) plus loin dans cette rubrique. Le filtrage des stratégies, le filtrage du contenu et les vérifications de protection avancée contre les menaces seront toujours appliqués aux messages.
+> Les messages provenant d’expéditeurs que les utilisateurs ont ajoutés à leurs propres listes d’expéditeurs approuvés ignorent le filtrage des connexions dans le cadre d’EOP (le SCL est-1). Pour empêcher les utilisateurs d’ajouter des entrées à leur liste des expéditeurs approuvés dans Outlook, utilisez la stratégie de groupe comme mentionné dans la section  [à propos des paramètres du courrier indésirable dans Outlook](#about-junk-email-settings-in-outlook) plus loin dans cette rubrique. Le filtrage des stratégies, le filtrage du contenu et les vérifications de protection avancée contre les menaces seront toujours appliqués aux messages.
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu'il faut savoir avant de commencer
 
@@ -80,9 +80,9 @@ $All = Get-Mailbox -RecipientTypeDetails UserMailbox -ResultSize Unlimited; $All
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, consultez la rubrique [Set-MailboxJunkEmailConfiguration](https://docs.microsoft.com/powershell/module/exchange/set-mailboxjunkemailconfiguration).
 
 > [!NOTE]
-> 
+>
 > - Si l’utilisateur n’a jamais ouvert sa boîte aux lettres, il se peut que vous receviez une erreur lors de l’exécution de la commande précédente. Pour supprimer cette erreur pour les opérations en bloc, ajoutez `-ErrorAction SlientlyContinue` à la commande **Set-MailboxJunkEmailConfiguration** .
-> 
+>
 > - Même si vous désactivez la règle de courrier indésirable, le filtre de courrier indésirable d’Outlook (en fonction de sa configuration) peut également déterminer si un message est un courrier indésirable et déplacer des messages vers le dossier boîte de réception ou courrier indésirable en fonction de son verdict de courrier indésirable et de la collection de listes fiables sur la boîte aux lettres Pour plus d’informations, consultez la section [À propos des paramètres de courrier indésirable dans Outlook](#about-junk-email-settings-in-outlook) dans cette rubrique.
 
 ### <a name="how-do-you-know-this-worked"></a>Comment savoir si cela a fonctionné ?
@@ -99,9 +99,10 @@ Pour savoir si vous avez réussi à activer ou désactiver la règle de courrier
 
 La collection de listes fiables d'une boîte aux lettres comprend la liste des expéditeurs approuvés, la liste des destinataires approuvés et la liste des expéditeurs bloqués. Par défaut, les utilisateurs peuvent configurer la collection de listes fiables sur leur boîte aux lettres dans Outlook ou Outlook sur le Web. Les administrateurs peuvent utiliser les paramètres correspondants avec la cmdlet **Set-MailboxJunkEmailConfiguration** pour configurer la collection de listes fiables sur la boîte aux lettres d'un utilisateur. Ces paramètres sont décrits dans le tableau suivant :
 
-|||
+****
+
+|Paramètre sur Set-MailboxJunkEmailConfiguration|Paramètre Outlook sur le Web|
 |---|---|
-|**Paramètre sur Set-MailboxJunkEmailConfiguration**|**Paramètre Outlook sur le Web**|
 |_BlockedSendersAndDomains_|**Déplacer les messages de ces expéditeurs ou domaines vers mon dossier Courrier indésirable**|
 |_ContactsTrusted_|**Approuver le courrier en provenance de mes contacts**|
 |_TrustedListsOnly_|**Approuver uniquement les messages provenant d’adresses figurant dans la liste des expéditeurs et des domaines approuvés et les listes de publipostage sûres**|
@@ -120,7 +121,7 @@ Pour configurer la collection de listes fiables sur une boîtes aux lettres, uti
 Set-MailboxJunkEmailConfiguration <MailboxIdentity> -BlockedSendersAndDomains <EmailAddressesOrDomains | $null> -ContactsTrusted <$true | $false> -TrustedListsOnly <$true | $false> -TrustedSendersAndDomains  <EmailAddresses | $null>
 ```
 
-Pour entrer plusieurs valeurs et remplacer toutes les entrées existantes pour les paramètres _BlockedSendersAndDomains_ et _TrustedSendersAndDomains_ , utilisez la syntaxe suivante : `"<Value1>","<Value2>"...` . Pour ajouter ou supprimer une ou plusieurs valeurs sans affecter les autres entrées existantes, utilisez la syntaxe suivante :`@{Add="<Value1>","<Value2>"... ; Remove="<Value3>","<Value4>...}`
+Pour entrer plusieurs valeurs et remplacer toutes les entrées existantes pour les paramètres _BlockedSendersAndDomains_ et _TrustedSendersAndDomains_ , utilisez la syntaxe suivante : `"<Value1>","<Value2>"...` . Pour ajouter ou supprimer une ou plusieurs valeurs sans affecter les autres entrées existantes, utilisez la syntaxe suivante : `@{Add="<Value1>","<Value2>"... ; Remove="<Value3>","<Value4>...}`
 
 Cet exemple configure les paramètres suivants pour la collection de listes fiables de la boîte aux lettres d'Ori Epstein :
 
@@ -143,11 +144,11 @@ $All = Get-Mailbox -RecipientTypeDetails UserMailbox -ResultSize Unlimited; $All
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, consultez la rubrique [Set-MailboxJunkEmailConfiguration](https://docs.microsoft.com/powershell/module/exchange/set-mailboxjunkemailconfiguration).
 
 > [!NOTE]
-> 
+>
 > - Si l’utilisateur n’a jamais ouvert sa boîte aux lettres, il se peut que vous receviez une erreur lors de l’exécution des commandes précédentes. Pour supprimer cette erreur pour les opérations en bloc, ajoutez `-ErrorAction SlientlyContinue` à la commande **Set-MailboxJunkEmailConfiguration** .
-> 
+>
 > - Même si la règle de courrier indésirable est désactivée sur la boîte aux lettres, vous pouvez toujours configurer la collection de listes fiables et le filtre de courrier indésirable Outlook est capable de déplacer des messages vers la boîte de réception ou le dossier courrier indésirable. Pour plus d'informations, consultez la section [À propos des paramètres de courrier indésirable dans Outlook](#about-junk-email-settings-in-outlook) dans cette rubrique.
-> 
+>
 > - Le filtre de courrier indésirable d’Outlook comporte des paramètres de collection de listes fiables supplémentaires (par exemple, **Ajouter automatiquement les personnes auxquelles j’envoie un message électronique à la liste des expéditeurs approuvés**). Pour plus d'informations, voir [Utiliser les filtres de courrier indésirable pour contrôler les messages affichés](https://support.microsoft.com/office/274ae301-5db2-4aad-be21-25413cede077).
 
 ### <a name="how-do-you-know-this-worked"></a>Comment savoir si cela a fonctionné ?

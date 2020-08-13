@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Les administrateurs peuvent en savoir plus sur les paramètres de filtre de courrier indésirable avancés (ASF) disponibles dans les stratégies de blocage du courrier indésirable dans Exchange Online Protection (EOP).
-ms.openlocfilehash: 691539b8abd4fcd2e749c71d7fd337b0105d66ae
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: b314b8b2a2de72987d9acff688602df0e0947293
+ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44352475"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46653340"
 ---
 # <a name="advanced-spam-filter-asf-settings-in-eop"></a>Paramètres du filtre de courrier indésirable avancé (ASF) dans EOP
 
@@ -33,7 +33,12 @@ ms.locfileid: "44352475"
 Dans les organisations Microsoft 365 avec des boîtes aux lettres dans Exchange Online ou des organisations Exchange Online Protection (EoP) autonomes sans boîte aux lettres Exchange Online, les paramètres de filtre de courrier indésirable (ASF) des stratégies de blocage du courrier indésirable (également appelés stratégies de filtrage du courrier indésirable ou stratégies de filtrage de contenu) permettent aux administrateurs de marquer les messages comme courrier ASF cible spécifiquement ces propriétés car elles sont généralement présentes dans le courrier indésirable. En fonction de la propriété, les détections ASF marquent le message comme étant du courrier **indésirable** ou du **courrier indésirable à niveau de confiance élevée**.
 
 > [!NOTE]
-> L’activation d’un ou de plusieurs paramètres ASF est une approche agressive pour le filtrage du courrier indésirable. Vous ne pouvez pas signaler les messages qui sont filtrés par ASF comme faux positifs. Vous pouvez identifier les messages qui ont été filtrés par ASF en procédant comme suit : <ul><li>Notifications périodiques de mise en quarantaine du courrier indésirable de l’utilisateur final.</li><li>La présence de messages filtrés en quarantaine.</li><li>Les `X-CustomSpam:` champs d’en-tête X spécifiques ajoutés aux messages, comme décrit dans cette rubrique.</li></ul>
+> L’activation d’un ou de plusieurs paramètres ASF est une approche agressive pour le filtrage du courrier indésirable. Vous ne pouvez pas signaler les messages qui sont filtrés par ASF comme faux positifs. Vous pouvez identifier les messages qui ont été filtrés par ASF en procédant comme suit :
+> - Notifications périodiques de mise en quarantaine du courrier indésirable de l’utilisateur final.
+>
+> - La présence de messages filtrés en quarantaine.
+>
+> - Les `X-CustomSpam:` champs d’en-tête X spécifiques ajoutés aux messages, comme décrit dans cette rubrique.
 
 Les sections suivantes décrivent les paramètres et les options ASF disponibles dans les stratégies de blocage du courrier indésirable dans le centre de sécurité & conformité et dans Exchange Online PowerShell ou autonome EOP PowerShell ([New-HostedContentFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/new-hostedcontentfilterpolicy) et [Set-HostedContentFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/set-hostedcontentfilterpolicy)). Si vous souhaitez en savoir plus, consultez l’article [Configurer les stratégies anti-courrier indésirable dans EOP](configure-your-spam-filter-policies.md).
 
@@ -58,9 +63,7 @@ Pour chaque paramètre ASF, les options suivantes sont disponibles dans les stra
   - Le mode test n’est pas disponible pour les paramètres ASF suivants :
 
     - **Filtrage des ID de l’expéditeur conditionnel : échec matériel** (*MarkAsSpamFromAddressAuthFail*)
-
     - Notification de **non-remise rétrodiffusion**(*MarkAsSpamNdrBackscatter*)
-
     - **Enregistrement SPF : échec matériel** (*MarkAsSpamSpfRecordHardFail*)
 
   - La même action de mode test est appliquée à *tous les* paramètres ASF définis sur **test**. Vous ne pouvez pas configurer différentes actions de mode test pour différents paramètres ASF.
@@ -69,9 +72,10 @@ Pour chaque paramètre ASF, les options suivantes sont disponibles dans les stra
 
 Les paramètres ASF suivants définissent le seuil de probabilité de courrier indésirable (SCL) de messages détectés à 5 ou 6, ce qui correspond au verdict du filtre de **courrier indésirable** et à l’action correspondante dans les stratégies anti-courrier indésirable.
 
-||||
+****
+
+|Paramètre de stratégie de blocage du courrier indésirable|Description|En-tête X ajouté|
 |---|---|---|
-|**Paramètre de stratégie de blocage du courrier indésirable**|**Description**|**En-tête X ajouté**|
 |**Liens d'image vers des sites distants** <br/><br/> *IncreaseScoreWithImageLinks*|Les messages contenant `<Img>` des liens HTML vers des sites distants (par exemple, à l’aide du protocole http) sont marqués comme courrier indésirable.|`X-CustomSpam: Image links to remote sites`|
 |**Redirection de l'URL vers un autre port** <br/><br/> *IncreaseScoreWithRedirectToOtherPort*|Message contenant des liens hypertexte qui redirigent vers des ports TCP autres que 80 (HTTP), 8080 (http de remplacement) ou 443 (HTTPs) sont marqués comme courrier indésirable.|`X-CustomSpam: URL redirect to other port`|
 |**Adresse IP numérique dans l'URL** <br/><br/> *IncreaseScoreWithNumericIps*|Les messages qui contiennent des URL numériques (en général, des adresses IP) sont marqués comme courrier indésirable.|`X-CustomSpam: Numeric IP in URL`|
@@ -82,9 +86,10 @@ Les paramètres ASF suivants définissent le seuil de probabilité de courrier i
 
 Les paramètres ASF suivants définissent la valeur SCL des messages détectés sur 9, ce qui correspond au verdict du filtre de courrier indésirable à **fiabilité élevée** et à l’action correspondante dans les stratégies anti-courrier indésirable.
 
-||||
+****
+
+|Paramètre de stratégie de blocage du courrier indésirable|Description|En-tête X ajouté|
 |---|---|---|
-|**Paramètre de stratégie de blocage du courrier indésirable**|**Description**|**En-tête X ajouté**|
 |**Messages vides** <br/><br/> *MarkAsSpamEmptyMessages*|Les messages sans objet, aucun contenu dans le corps du message et aucune pièce jointe ne sont marqués comme courrier indésirable à niveau de confiance élevé.|`X-CustomSpam: Empty Message`|
 |**JavaScript ou VBScript dans le code HTML** <br/><br/> *MarkAsSpamJavaScriptInHtml*|Les messages qui utilisent JavaScript ou Visual Basic Script Edition en HTML sont marqués comme courrier indésirable à niveau de confiance élevé. <br/><br/> Ces langages de script sont utilisés dans les messages électroniques pour déclencher automatiquement des actions spécifiques.|`X-CustomSpam: Javascript or VBscript tags in HTML`|
 |**Balises Frame ou IFrame dans le code HTML** <br><br/> *MarkAsSpamFramesInHtml*|Les messages qui contiennent `<frame>` ou `<iframe>` des balises HTML sont marqués comme courrier indésirable à confiance élevée. <br/><br/> Ces balises sont utilisées dans les messages électroniques pour mettre en forme la page afin d’afficher du texte ou des graphiques.|`X-CustomSpam: IFRAME or FRAME in HTML`|

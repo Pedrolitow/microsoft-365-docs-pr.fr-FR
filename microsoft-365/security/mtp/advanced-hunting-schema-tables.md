@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 0cb275584acfc2ea0d2a2969694ee189f48a875d
-ms.sourcegitcommit: 11218af1d792af297b4280ca5975d139d2bbe350
+ms.openlocfilehash: 308337f806d54f1beb7ae6112b2ed883707d4513
+ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2020
-ms.locfileid: "45046043"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46649294"
 ---
 # <a name="understand-the-advanced-hunting-schema"></a>Comprendre le schéma de repérage avancé
 
@@ -81,5 +81,5 @@ La référence suivante répertorie les tableaux du schéma. Chaque nom de table
 - [Apprendre le langage de requête](advanced-hunting-query-language.md)
 - [Travailler avec les résultats de la requête](advanced-hunting-query-results.md)
 - [Utiliser des requêtes partagées](advanced-hunting-shared-queries.md)
-- [Repérer les menaces sur divers appareils et e-mails](advanced-hunting-query-emails-devices.md)
+- [Recherche sur les appareils, les e-mails, les applications et les identités](advanced-hunting-query-emails-devices.md)
 - [Appliquer les meilleures pratiques de requête](advanced-hunting-best-practices.md)

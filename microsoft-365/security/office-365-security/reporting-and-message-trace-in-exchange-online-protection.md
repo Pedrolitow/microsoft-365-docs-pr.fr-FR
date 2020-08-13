@@ -14,12 +14,12 @@ ms.assetid: f40253f2-50a1-426e-9979-be74ba74cb61
 ms.custom:
 - seo-marvel-apr2020
 description: Dans cet article, vous découvrirez les rapports et les outils de dépannage disponibles pour les administrateurs de Microsoft Exchange Online Protection (EOP).
-ms.openlocfilehash: b33d343d9b7f02e32619031d3ecf72ad12f891fd
-ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
+ms.openlocfilehash: ddf8c021681bb600548b134d678d1e0fb0f29d0c
+ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "44588167"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46652800"
 ---
 # <a name="reporting-and-message-trace-in-eop"></a>Création de rapports et suivi des messages dans EOP
 
@@ -75,11 +75,12 @@ Effectue le suivi des modifications spécifiques apportées par les administrate
 
 Le tableau suivant présente la disponibilité des rapports et des données de suivi des messages EOP, ainsi que leur latence.
 
-||||
-|:-----|:-----|:-----|
-|**Type de rapport**|**Données disponibles pendant (période rétrospective)**|**Latence**|
-|Rapports de synthèse de la protection de la messagerie|90 jours|L'agrégation quasi-complète des données des messages dure entre 24 et 48 heures. Des modifications agrégées incrémentielles mineures peuvent se produire jusqu'à 5 jours.|
-|Rapports détaillés de la protection de messagerie|90 jours|Pour les messages de moins de 7 jours, les données détaillées apparaissent normalement dans les 24 heures, mais leur génération peut durer jusqu'à 48 heures. Il est possible que des modifications incrémentielles mineures soient apportées pendant 5 jours. <br/><br/> Pour les messages remontant à plus de sept jours, la génération des résultats détaillés peut prendre plusieurs heures.|
+****
+
+|Type de rapport|Données disponibles pendant (période rétrospective)|Latence|
+|---|---|---|
+|Rapports de synthèse de la protection de la messagerie|90 jours|L'agrégation quasi-complète des données des messages dure entre 24 et 48 heures. Des modifications agrégées incrémentielles mineures peuvent se produire jusqu'à 5 jours.|
+|Rapports détaillés de la protection de messagerie|90 jours|Pour les messages de moins de 7 jours, les données détaillées apparaissent normalement dans les 24 heures, mais leur génération peut durer jusqu'à 48 heures. Il est possible que des modifications incrémentielles mineures soient apportées pendant 5 jours. <br/><br/> Pour les messages remontant à plus de sept jours, la génération des résultats détaillés peut prendre plusieurs heures.|
 |Données de suivi des messages|90 jours|Lorsque vous effectuez un suivi de messages remontant à moins de 7 jours, ces derniers apparaissent normalement dans les 5 à 30 minutes.<br/><br/> Lorsque vous effectuez un suivi de messages remontant à plus de 7 jours, la génération des résultats peut prendre plusieurs heures.|
 |
 

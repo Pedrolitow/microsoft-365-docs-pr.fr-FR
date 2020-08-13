@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Les administrateurs peuvent apprendre à configurer le filtrage des connexions dans Exchange Online Protection (EOP) pour autoriser ou bloquer les messages électroniques provenant de serveurs de messagerie.
-ms.openlocfilehash: e0cb5161ac33333a0f8cd5f897b4a0a85315c12e
-ms.sourcegitcommit: 2acd9ec5e9d150389975e854c7883efc186a9432
+ms.openlocfilehash: 675247ba1764cb928bec967c581083c6365f635a
+ms.sourcegitcommit: fa8e488936a36e4b56e1252cb4061b5bd6c0eafc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "44755247"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "46656790"
 ---
 # <a name="configure-connection-filtering"></a>Configuration du filtrage des connexions
 
@@ -46,17 +46,17 @@ Cette rubrique décrit comment configurer la stratégie de filtrage des connexio
 
 - Pour vous connecter à Exchange Online PowerShell, voir [Connexion à Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell). Pour vous connecter à un service Exchange Online Protection PowerShell autonome, voir [Se connecter à Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
-- Avant de pouvoir effectuer les procédures décrites dans cette rubrique, vous devez disposer des autorisations suivantes :
+- Des autorisations doivent vous être attribuées avant de pouvoir exécuter ces procédures. décrites dans cette rubrique :
 
   - Pour modifier la stratégie de filtrage des connexions par défaut, vous devez être membre de l’un des groupes de rôles suivants :
 
-    - **Gestion** de l’organisation ou **administrateur de sécurité** dans le [Centre de sécurité & conformité](permissions-in-the-security-and-compliance-center.md).
-    - Gestion de l' **organisation** ou gestion de l' **hygiène** dans [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
+    - **Gestion de l’organisation** ou **Administrateur de sécurité** dans le [Centre de sécurité et de conformité](permissions-in-the-security-and-compliance-center.md).
+    - **Gestion de l’organisation** ou **Gestion de l’hygiène** dans [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
 
   - Pour un accès en lecture seule à la stratégie de filtrage des connexions par défaut, vous devez être membre de l’un des groupes de rôles suivants :
 
-    - **Lecteur de sécurité** dans le [centre de sécurité & conformité](permissions-in-the-security-and-compliance-center.md).
-    - **Gestion de l’organisation en affichage seul** dans [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
+    - **Lecteur de sécurité** dans le [Centre de conformité et sécurité](permissions-in-the-security-and-compliance-center.md).
+    - **Gestion de l’organisation en affichage seul** dans[Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
 
 - Pour rechercher les adresses IP sources des serveurs de messagerie (expéditeurs) que vous souhaitez autoriser ou bloquer, vous pouvez vérifier le champ d’en-**tête de connexion**IP dans l’en-tête du message. Pour afficher un en-tête de message dans différents clients de messagerie, consultez la rubrique [afficher les en-têtes de message Internet dans Outlook](https://support.microsoft.com/office/cd039382-dc6e-4264-ac74-c048563d212c).
 
@@ -200,6 +200,7 @@ Si vous rencontrez l’un de ces scénarios, vous pouvez créer une règle de fl
 
 ## <a name="new-to-microsoft-365"></a>Nouveauté de Microsoft 365 ?
 
-||
-|:-----|
+|<!-- a -->|
+|---|
 |![Icône rapide pour LinkedIn Learning ](../../media/eac8a413-9498-4220-8544-1e37d1aaea13.png) **New de Microsoft 365 ?** Découvrez les cours vidéo gratuits pour les **administrateurs et les professionnels**de l’informatique, proposés par LinkedIn Learning.|
+|

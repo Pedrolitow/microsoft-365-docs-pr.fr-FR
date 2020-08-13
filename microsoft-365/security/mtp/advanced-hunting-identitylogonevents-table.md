@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 19437caf4f3b0dcb6eb6ccad81d1ed3917df7996
-ms.sourcegitcommit: b4119682bd3c036289e851fff56fde869c816479
+ms.openlocfilehash: aec5bf5dfe29dd55bf5e5df471126db46fdfcb4c
+ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45204910"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46648826"
 ---
 # <a name="identitylogonevents"></a>IdentityLogonEvents
 
@@ -39,7 +39,7 @@ Pour plus d’informations sur les autres tables du schéma de repérage avancé
 | Nom de colonne | Type de données | Description |
 |-------------|-----------|-------------|
 | `Timestamp` | DateHeure | Date et heure d’enregistrement de l’événement |
-| `ActionType` | chaîne | Type d’activité qui a déclenché l’événement |
+| `ActionType` | string | Type d’activité qui a déclenché l’événement |
 | `LogonType` | string | Type de session de connexion, notamment :<br><br> - **Interactif** : l’utilisateur interagit physiquement avec l’ordinateur à l’aide du clavier et de l’écran locaux<br><br> - **Ouvertures de session interactives (RDP)** : l’utilisateur interagit avec l’ordinateur à distance à l’aide du Bureau à distance, des services Terminal Server, de l’assistance à distance ou d’autres clients RDP<br><br> - Session **réseau** initiée lorsque l’accès à l’ordinateur est effectué à l’aide de PsExec ou lorsque des ressources partagées sur l’ordinateur, telles que des imprimantes et des dossiers partagés, sont accessibles<br><br> - Session de **traitement par lots** initiée par les tâches planifiées<br><br> - **Service** -session initialisée par les services au démarrage |
 | `Application` | string | Application qui a effectué l’action enregistrée |
 | `Protocol` | string | Protocole réseau utilisé |
@@ -67,6 +67,6 @@ Pour plus d’informations sur les autres tables du schéma de repérage avancé
 - [Vue d’ensemble du repérage avancé](advanced-hunting-overview.md)
 - [Apprendre le langage de requête](advanced-hunting-query-language.md)
 - [Utiliser des requêtes partagées](advanced-hunting-shared-queries.md)
-- [Repérer les menaces sur divers appareils et e-mails](advanced-hunting-query-emails-devices.md)
+- [Recherche sur les appareils, les e-mails, les applications et les identités](advanced-hunting-query-emails-devices.md)
 - [Comprendre le schéma](advanced-hunting-schema-tables.md)
 - [Appliquer les meilleures pratiques de requête](advanced-hunting-best-practices.md)

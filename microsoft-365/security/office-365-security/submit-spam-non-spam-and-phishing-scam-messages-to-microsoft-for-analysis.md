@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 description: Les administrateurs et les utilisateurs finaux peuvent apprendre à envoyer des messages électroniques (courrier marqué comme faux ou courrier incorrect) à Microsoft pour analyse.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d6973330c4504bd6478265205f60798b3b7c1875
-ms.sourcegitcommit: 7a59d83a8660c2344ebdb92e0ea0171c9c2d9498
+ms.openlocfilehash: e90382b39b0cebb70568a53ac5aaeb40ac935f92
+ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44811037"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46653592"
 ---
 # <a name="manually-submit-messages-to-microsoft-for-analysis"></a>Envoi manuel de messages à Microsoft pour analyse
 
@@ -45,14 +45,19 @@ Si vous recevez un message transmis par le biais du filtrage du courrier indési
 
 1. Créez un message électronique vide avec l’un des destinataires suivants :
 
-   - **Courrier indésirable**:`junk@office365.microsoft.com`
+   - **Courrier indésirable**: `junk@office365.microsoft.com`
 
-   - **Hameçonnage**:`phish@office365.microsoft.com`
+   - **Hameçonnage**: `phish@office365.microsoft.com`
 
 2. Faites glisser et déposez le message de courrier indésirable dans le nouveau message. Cette opération permet d’enregistrer le message de courrier indésirable ou de hameçonnage en tant que pièce jointe dans le nouveau message. Ne copiez pas et ne collez pas le contenu du message ou transférez le message (nous avons besoin du message d’origine pour pouvoir inspecter les en-têtes des messages).
 
    > [!NOTE]
-   > <ul><li>Vous pouvez joindre plusieurs messages dans le nouveau message. Assurez-vous que tous les messages sont du même type : les messages de hameçonnage ou les messages électroniques de courrier indésirable.</li><li>Laissez le corps du message vide.</li><li>Utilisez les formats. MSG (format Outlook par défaut) ou. eml (Outlook sur le format Web par défaut) pour les messages joints.</li></ul>
+   >
+   > - Vous pouvez joindre plusieurs messages dans le nouveau message. Assurez-vous que tous les messages sont du même type : les messages de hameçonnage ou les messages électroniques de courrier indésirable.
+   >
+   > - Laissez le corps du message vide.
+   >
+   > - Utilisez les formats. MSG (format Outlook par défaut) ou. eml (Outlook sur le format Web par défaut) pour les messages joints.
 
 3. Lorsque vous avez terminé, cliquez sur **Envoyer**.
 
@@ -71,7 +76,12 @@ Si un message a été identifié de manière incorrecte comme courrier indésira
 2. Faites glisser et déposez le message qui a été identifié dans le nouveau message. Cette opération permet d’enregistrer le message identifié de manière indéterminée en tant que pièce jointe dans le nouveau message. Ne copiez pas et ne collez pas le contenu du message ou transférez le message (nous avons besoin du message d’origine pour pouvoir inspecter les en-têtes des messages).
 
    > [!NOTE]
-   > <ul><li>Vous pouvez joindre plusieurs messages dans le nouveau message. Assurez-vous que tous les messages sont du même type : les messages de hameçonnage ou les messages électroniques de courrier indésirable.</li><li>Laissez le corps du message vide.</li><li>Utilisez les formats. MSG (format Outlook par défaut) ou. eml (Outlook sur le format Web par défaut) pour les messages joints.</li></ul>
+   >
+   > - Vous pouvez joindre plusieurs messages dans le nouveau message. Assurez-vous que tous les messages sont du même type : les messages de hameçonnage ou les messages électroniques de courrier indésirable.
+   >
+   > - Laissez le corps du message vide.
+   >
+   > - Utilisez les formats. MSG (format Outlook par défaut) ou. eml (Outlook sur le format Web par défaut) pour les messages joints.
 
 3. Lorsque vous avez terminé, cliquez sur **Envoyer**.
 
