@@ -15,12 +15,12 @@ ms.assetid: 4a05898c-b8e4-4eab-bd70-ee912e349737
 ms.collection:
 - M365-security-compliance
 description: Découvrez comment configurer DMARC (Domain-based Message Authentication, Reporting, and Conformance) pour valider les messages envoyés à partir de votre organisation.
-ms.openlocfilehash: 56e557a3ca970540288c00d5fb8a30549c252776
-ms.sourcegitcommit: d39694d7b2c98350b0d568dfd03fa0ef44ed4c1d
+ms.openlocfilehash: 09c06d30d118078e310c5e3d0743ef5236ec77ba
+ms.sourcegitcommit: 9489aaf255f8bf165e6debc574e20548ad82e882
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/10/2020
-ms.locfileid: "46601872"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "46632116"
 ---
 # <a name="use-dmarc-to-validate-email"></a>Utiliser DMARC pour valider les e-mails
 
@@ -39,7 +39,7 @@ Domain-based Message Authentication, Reporting, and Conformance ([DMARC](https:/
 
 SPF utilise un enregistrement TXT DNS pour fournir la liste des adresses IP d'envoi autorisées pour un domaine donné. En règle générale, les vérifications SPF sont uniquement effectuées pour l'adresse 5321.MailFrom. Cela signifie que l'adresse 5322.From n'est pas authentifiée lorsque vous utilisez uniquement SPF. Vous pouvez ainsi vous retrouver dans le cas de figure où un utilisateur reçoit un message qui a été accepté par la vérification SPF mais possède une adresse d'expéditeur 5322.From usurpée. Prenez par exemple, la transcription SMTP suivante :
 
-```text
+```console
 S: Helo woodgrovebank.com
 S: Mail from: phish@phishing.contoso.com
 S: Rcpt to: astobes@tailspintoys.com
@@ -76,7 +76,7 @@ Lorsque vous utilisez DMARC, le serveur de réception effectue aussi une vérifi
 
 Un enregistrement TXT DMARC de Microsoft se présente comme suit :
 
-```text
+```console
 _dmarc.microsoft.com.   3600    IN      TXT     "v=DMARC1; p=none; pct=100; rua=mailto:d@rua.agari.com; ruf=mailto:d@ruf.agari.com; fo=1"
 ```
 
@@ -114,7 +114,7 @@ Maintenant que vous avez une liste de tous vos expéditeurs valides, vous pouvez
 
 Par exemple, en supposant que contoso.com envoie du courrier depuis Exchange Online, un serveur Exchange local dont l'adresse IP est 192.168.0.1 et une application web dont l'adresse IP est 192.168.100.100, l'enregistrement TXT SPF ressemblerait à ceci :
 
-```text
+```console
 contoso.com  IN  TXT  " v=spf1 ip4:192.168.0.1 ip4:192.168.100.100 include:spf.protection.outlook.com -all"
 ```
 
@@ -132,7 +132,7 @@ Pour obtenir des instructions sur la configuration de DKIM pour votre domaine, y
 
 Bien qu’il existe des options de syntaxe qui ne sont pas mentionnées ici, voici les options les plus fréquemment utilisées pour Microsoft 365. Créez l’enregistrement TXT DMARC pour votre domaine au format suivant :
 
-```text
+```console
 _dmarc.domain  TTL  IN  TXT  "v=DMARC1; p=policy; pct=100"
 ```
 
@@ -152,19 +152,19 @@ Exemples :
 
 - Stratégie définie sur none (Aucune)
 
-    ```text
+    ```console
     _dmarc.contoso.com 3600 IN  TXT  "v=DMARC1; p=none"
     ```
 
 - Stratégie définie sur quarantine (Mettre en quarantaine)
 
-    ```text
+    ```console
     _dmarc.contoso.com 3600 IN  TXT  "v=DMARC1; p=quarantine"
     ```
 
 - Stratégie définie sur reject (Rejeter)
 
-    ```text
+    ```console
     _dmarc.contoso.com  3600 IN  TXT  "v=DMARC1; p=reject"
     ```
 
@@ -187,6 +187,16 @@ Vous pouvez implémenter DMARC progressivement sans que cela n’ait de répercu
 3. Demandez que les systèmes de messagerie externes n’acceptent pas les messages qui échouent aux vérifications de DMARC
 
     L'étape finale consiste à mettre en œuvre une stratégie de rejet. Une stratégie de rejet est un enregistrement TXT DMARC dont la stratégie est définie de manière à effectuer un rejet (p=reject). Lorsque vous effectuez cette opération, vous demandez aux récepteurs DMARC ne pas accepter les messages qui échouent aux tests DMARC.
+    
+4. Comment configurer DMARC pour le sous-domaine?
+
+DMARC est exécuté en publiant une stratégie sous la forme d’un enregistrement TXT dans DNS et est hiérarchique (par exemple, une stratégie publiée pour contoso.com s’appliquera au sous-domaine.contonos.com, sauf si une stratégie différente est définie de manière explicite pour le sous-domaine). Cela est utile car les organisations peuvent spécifier un plus petit nombre d’enregistrements DMARC de haut niveau pour une couverture plus large. Veillez à configurer avec attention les enregistrements DMARC de sous-domaines explicites où vous ne voulez pas que les sous-domaines héritent de l’enregistrement DMARC du domaine de niveau supérieur.
+
+Aussi pouvez-vous ajouter une stratégie de type générique pour DMARC lorsque les sous-domaines ne doivent pas envoyer de courrier électronique, en ajoutant la `sp=reject` valeur. Par exemple:
+
+```console
+_dmarc.contoso.com. TXT "v=DMARC1; p=reject; sp=reject; ruf=mailto:authfail@contoso.com; rua=mailto:aggrep@contoso.com"
+```
 
 ## <a name="how-microsoft-365-handles-outbound-email-that-fails-dmarc"></a>Gestion des messages électroniques sortants qui échouent aux vérifications de DMARC dans Microsoft 365
 
@@ -220,7 +230,7 @@ Si EOP n'est pas la première entrée des enregistrements MX de votre domaine, l
 
 Si vous êtes un client et que l’enregistrement MX principal de votre domaine ne pointe pas vers EOP, vous ne bénéficiez pas de la protection de DMARC. Par exemple, DMARC ne fonctionne pas si l’enregistrement MX pointe vers votre serveur de messagerie local et que les e-mails sont ensuite acheminés vers EOP à l’aide d’un connecteur. Dans ce cas de figure, le domaine de réception est l’un de vos domaines d’accepté, mais EOP n’est pas l’enregistrement MX principal. Par exemple, supposons que l’enregistrement MX de contoso.com pointe vers contoso.com lui-même et que EOP soit utilisé comme enregistrement MX secondaire. L’enregistrement MX de contoso.com se présente alors comme suit :
 
-```text
+```console
 contoso.com     3600   IN  MX  0  mail.contoso.com
 contoso.com     3600   IN  MX  10 contoso-com.mail.protection.outlook.com
 ```
