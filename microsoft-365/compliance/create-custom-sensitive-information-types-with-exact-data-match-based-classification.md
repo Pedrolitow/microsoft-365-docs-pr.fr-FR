@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: Découvrez comment créer des types d’informations sensibles personnalisés à l’aide d’une classification Exact Data Match.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 957bde2112d5a0cf0c20bb28a8341b6f04118fc8
-ms.sourcegitcommit: cfb0c50f1366736cdf031a75f0608246b5640d93
+ms.openlocfilehash: d08589ec9465142e772c3190954ed7f93fbc68fe
+ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "46536319"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46648749"
 ---
 # <a name="create-custom-sensitive-information-types-with-exact-data-match-based-classification"></a>Créez des types d’informations sensibles personnalisés à l’aide d’une classification Exact Data Match.
 
@@ -66,8 +66,8 @@ La classification EDM est incluse dans ces abonnements
 
 |Phase  |De quoi ai-je besoin ?  |
 |---------|---------|
-|[Partie 1: configurer la classification EDM](#part-1-set-up-edm-based-classification)<br/><br/>(selon vos besoins)<br/>- [Modifier le schéma de base de données](#editing-the-schema-for-edm-based-classification) <br/>- [Supprimer le schéma](#removing-the-schema-for-edm-based-classification) |-Accès en lecture aux données sensibles<br/>-Schéma de base de données au format. XML (fourni en exemple)<br/>-Package de règles au format. XML (fourni en exemple)<br/>-Autorisations d’administrateur sur le centre de sécurité & conformité (à l’aide de PowerShell) |
-|[Partie 2: indexer et télécharger les données sensibles](#part-2-index-and-upload-the-sensitive-data)<br/><br/>(selon vos besoins)<br/>[Actualiser les données](#refreshing-your-sensitive-information-database) |-Groupe de sécurité personnalisé et compte d’utilisateur<br/>-Accès administrateur local à l’ordinateur à l’aide de l’agent de téléchargement EDM<br/>-Accès en lecture aux données sensibles<br/>-Processus et planification pour l’actualisation des données|
+|[Partie 1: configurer la classification EDM](#part-1-set-up-edm-based-classification)<br/><br/>(selon vos besoins)<br/>- [Modifier le schéma de base de données](#editing-the-schema-for-edm-based-classification) <br/>- [Supprimer le schéma](#removing-the-schema-for-edm-based-classification) |-Accès en lecture aux données sensibles<br/>-Schéma de base de données au format XML (fourni en exemple)<br/>-Package de règles au format XML (fourni en exemple)<br/>-Autorisations d’administrateur sur le centre de sécurité & conformité (à l’aide de PowerShell) |
+|[Partie 2 : hacher et télécharger les données sensibles](#part-2-hash-and-upload-the-sensitive-data)<br/><br/>(selon vos besoins)<br/>[Actualiser les données](#refreshing-your-sensitive-information-database) |-Groupe de sécurité personnalisé et compte d’utilisateur<br/>-Accès administrateur local à l’ordinateur à l’aide de l’agent de téléchargement EDM<br/>-Accès en lecture aux données sensibles<br/>-Processus et planification pour l’actualisation des données|
 |[Partie 3: utiliser la classification EDM avec vos services Cloud Microsoft](#part-3-use-edm-based-classification-with-your-microsoft-cloud-services) |- Abonnement Microsoft 365 avec DLP<br/>- Fonctionnalité de classification EDM activée |
 
 ### <a name="part-1-set-up-edm-based-classification"></a>Partie 1 : configurer la classification EDM
@@ -90,7 +90,7 @@ La préparation et la configuration de la classification EDM impliquent d’enre
       - Utilisez des noms de colonne pour les valeurs  *Nom de champ* .
       - Utilisez  *searchable="true"*  pour jusqu’à 5 champs dont vous voulez qu’il puissent faire l’objet d’une recherche. Vous devez spécifier au moins un champ comme pouvant faire l’objet d’une recherche.
 
-      Par exemple, le fichier. xml suivant définit le schéma d’une base de données de dossiers de patients, avec cinq champs pouvant faire l’objet d’une recherche :  *PatientID*,  *MRN*,  *SSN*,  *Phone* et  *DOB*
+      Par exemple, le fichier XML suivant définit le schéma d’une base de données de dossiers de patients, avec cinq champs pouvant faire l’objet d’une recherche :  *PatientID*,  *MRN*,  *SSN*,  *Phone* et  *DOB*.
 
       (vous pouvez copier, modifier et utiliser notre exemple).
 
@@ -195,7 +195,7 @@ Si vous souhaitez modifier votre fichier **edm.xml**, par exemple pour changer l
 
 ### <a name="set-up-a-rule-package"></a>Configurer un package de règles
 
-1. Créez un package de règles dans un fichier .xml (avec codage Unicode) similaire à l’exemple suivant (vous pouvez copier, modifier et utiliser notre exemple).
+1. Créez un package de règles au format XML (avec codage Unicode) similaire à l’exemple suivant. (vous pouvez copier, modifier et utiliser notre exemple).
 
       Lorsque vous configurez votre package de règles, veillez à référencer correctement vos fichier .csv et **edm.xml**. Vous pouvez copier, modifier et utiliser notre exemple. Dans cet exemple de fichier xml, les champs suivants doivent être personnalisés pour créer votre type sensible d’EDM :
 
@@ -260,7 +260,7 @@ Si vous souhaitez modifier votre fichier **edm.xml**, par exemple pour changer l
       New-DlpSensitiveInformationTypeRulePackage -FileData $rulepack
       ```
 
-À ce stade, vous avez configuré la classification EDM. L’étape suivante consiste à indexer les données sensibles, puis à charger les données indexées.
+À ce stade, vous avez configuré la classification EDM. L’étape suivante consiste à hacher les données sensibles, puis à charger les hachages pour l’indexation.
 
 Rappelez-vous que la procédure précédente de notre schéma PatientRecords définit cinq champs pouvant faire l’objet d’une recherche :  *PatientID*, *MRN*,  *SSN*,  *Phone* et  *DOB*. Notre exemple de package de règles inclut ces champs et référence le fichier de schéma de base de données (**edm.xml**), avec un seul élément  *ExactMatch*  par champ pouvant faire l’objet d’une recherche. Prenons l’élément ExactMatch suivant :
 
@@ -294,9 +294,9 @@ Rappelez-vous que la procédure précédente de notre schéma PatientRecords dé
 > [!NOTE]
 > La mise à jour du schéma EDMS avec les ajouts peut prendre de 10 à 60 minutes. Vous devez l’effectuer avant d’exécuter les étapes qui utilisent les ajouts.
 
-### <a name="part-2-index-and-upload-the-sensitive-data"></a>Partie 2 : indexer et télécharger les données sensibles
+### <a name="part-2-hash-and-upload-the-sensitive-data"></a>Partie 2 : hacher et télécharger les données sensibles
 
-Au cours de cette phase, vous configurez un groupe de sécurité personnalisé et un compte d’utilisateur, et configurez l’outil de chargement de l’agent EDM. Utilisez ensuite l’outil pour indexer les données sensibles, puis à télécharger les données indexées.
+Au cours de cette phase, vous configurez un groupe de sécurité personnalisé et un compte d’utilisateur, et configurez l’outil de chargement de l’agent EDM. Vous pouvez ensuite utiliser l’outil pour hacher les données sensibles et télécharger les données hachées afin qu’elles puissent être indexées.
 
 #### <a name="set-up-the-security-group-and-user-account"></a>Configurer les groupe de sécurité personnalisé et compte d’utilisateur
 
@@ -319,33 +319,33 @@ Au cours de cette phase, vous configurez un groupe de sécurité personnalisé e
 
 1. Téléchargez et installez l’[agent de chargement EDM](#links-to-edm-upload-agent-by-subscription-type) approprié pour votre abonnement. Par défaut, l’emplacement d’installation doit être  **C:\\Program Files\\Microsoft\\EdmUploadAgent**.
 
-> [!TIP]
-> Exécutez l'agent sans arguments pour obtenir une liste des paramètres de commande pris en charge. Par exemple, « EdmUploadAgent. exe ».
+   > [!TIP]
+   > Exécutez l'agent sans arguments pour obtenir une liste des paramètres de commande pris en charge. Par exemple, « EdmUploadAgent. exe ».
 
-> [!NOTE]
-> Vous pouvez télécharger des données avec EDMUploadAgent vers n’importe quel magasin de données donné deux fois par jour uniquement.
+   > [!NOTE]
+   > Vous pouvez télécharger des données avec EDMUploadAgent vers n’importe quel magasin de données donné deux fois par jour uniquement.
 
 2. Pour autoriser l’agent de téléchargement EDM, ouvrez l’invite de commandes Windows (en tant qu’administrateur), puis exécutez la commande suivante :
 
-    `EdmUploadAgent.exe /Authorize`
+   `EdmUploadAgent.exe /Authorize`
 
 3. Connectez-vous à l’aide de votre compte professionnel ou scolaire pour Office 365 qui a été ajouté au groupe de sécurité EDM_DataUploaders.
 
-L’étape suivante consiste à utiliser l’agent de téléchargement EDM pour indexer les données sensibles, puis à télécharger les données indexées.
+L’étape suivante consiste à utiliser l’agent de téléchargement EDM pour hacher les données sensibles, puis à télécharger les données hachées.
 
-#### <a name="index-and-upload-the-sensitive-data"></a>Indexer et charger les données sensibles
+#### <a name="hash-and-upload-the-sensitive-data"></a>Hacher et télécharger les données sensibles
 
 Enregistrez le fichier de données sensibles (notre exemple est  **PatientRecords. csv**) sur le disque local de l’ordinateur (nous avons enregistré notre exemple de fichier  **PatientRecords.csv**  dans  **C:\\Edm\\Data**).
 
-Pour indexer et charger les données sensibles, exécutez la commande suivante dans l’invite de commandes Windows :
+Pour hacher et télécharger les données sensibles, exécutez la commande suivante dans l’invite de commandes Windows :
 
 `EdmUploadAgent.exe /UploadData /DataStoreName \<DataStoreName\> /DataFile \<DataFilePath\> /HashLocation \<HashedFileLocation\>`
 
 Exemple : **EdmUploadAgent.exe /UploadData /DataStoreName PatientRecords /DataFile C:\\Edm\\Hash\\PatientRecords.csv /HashLocation C:\\Edm\\Hash**
 
-Pour séparer et exécuter un index de données sensibles dans un environnement isolé, exécutez les étapes d’indexation et de téléchargement séparément.
+Pour séparer et exécuter le hachage de données sensibles dans un environnement isolé, exécutez les étapes de hachage et de téléchargement séparément.
 
-Pour indexer les données sensibles, exécutez la commande suivante dans l’invite de commandes Windows :
+Pour hacher les données sensibles, exécutez la commande suivante dans l’invite de commandes Windows :
 
 `EdmUploadAgent.exe /CreateHash /DataFile \<DataFilePath\> /HashLocation \<HashedFileLocation\>`
 
@@ -353,7 +353,7 @@ Par exemple :
 
 > **EdmUploadAgent.exe /CreateHash /DataFile C:\\Edm\\Data\\PatientRecords.csv /HashLocation C:\\Edm\\Hash**
 
-Pour charger les données indexées, exécutez la commande suivante dans l’invite de commandes Windows :
+Pour charger les données hachées, exécutez la commande suivante dans l’invite de commandes Windows :
 
 `EdmUploadAgent.exe /UploadHash /DataStoreName \<DataStoreName\> /HashFile \<HashedSourceFilePath\>`
 
@@ -361,7 +361,9 @@ Par exemple :
 
 > **EdmUploadAgent.exe /UploadHash /DataStoreName PatientRecords /HashFile C:\\Edm\\Hash\\PatientRecords.EdmHash**
 
+
 Pour vérifier que vos données sensibles ont été téléchargées, exécutez la commande suivante dans l’invite de commandes Windows :
+
 
 `EdmUploadAgent.exe /GetDataStore`
 
@@ -377,28 +379,28 @@ Poursuivez la configuration de votre processus et planifiez l’ [actualisation
 
 #### <a name="refreshing-your-sensitive-information-database"></a>Actualisation de votre base de données d’informations sensibles
 
-Vous pouvez actualiser quotidiennement ou hebdomadairement votre base de données d’informations sensibles, et l’outil de chargement EDM peut réindexer les données sensibles, puis recharger les données indexées.
+Vous pouvez actualiser quotidiennement ou hebdomadairement votre base de données d’informations sensibles, et l’outil de chargement EDM peut hacher à nouveau les données sensibles, puis recharger les données hachées.
 
 1. Déterminez vos processus et leur fréquence (quotidien ou hebdomadaire) pour actualiser la base de données d’informations sensibles.
 
-2. Exportez de nouveau les données vers une application, telle que Microsoft Excel, et enregistrez le fichier au format. csv. Conservez le même nom de fichier et l’emplacement que vous avez utilisé lorsque vous avez suivi les étapes décrites dans  [Indexer et charger les données sensibles](#index-and-upload-the-sensitive-data).
+2. Exportez de nouveau les données vers une application, telle que Microsoft Excel, et enregistrez le fichier au format. csv. Conservez le même nom de fichier et l’emplacement que vous avez utilisé lorsque vous avez suivi les étapes décrites dans [Hachage et téléchargement des données sensibles](#hash-and-upload-the-sensitive-data).
 
       > [!NOTE]
       > S’il n’y a pas de modifications apportées à la structure (noms de champs) du fichier .csv, vous n’avez pas besoin d’apporter des modifications à votre fichier de schéma de base de données lorsque vous actualisez les données. Si vous devez apporter des modifications, assurez-vous de modifier le schéma de base de données et votre package de règles en conséquence.
 
-3. Utilisez le  [Planificateur de tâches](https://docs.microsoft.com/windows/desktop/TaskSchd/task-scheduler-start-page)  pour automatiser les étapes 2 et 3 dans la procédure  [Indexer et charger les données sensibles](#index-and-upload-the-sensitive-data) . Vous pouvez planifier des tâches à l’aide de plusieurs méthodes :
+3. Utilisez le  [Planificateur de tâches](https://docs.microsoft.com/windows/desktop/TaskSchd/task-scheduler-start-page)  pour automatiser les étapes 2 et 3 dans la procédure  [Hachage et téléchargement des données sensibles](#hash-and-upload-the-sensitive-data) . Vous pouvez planifier des tâches à l’aide de plusieurs méthodes :
 
-      | **Méthode**             | **Procédure**                                                                                                                                                                                                                                                                                                                                                                                                                     |
-      | ---------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+      | Méthode             | Procédure |
+      | ---------------------- | ---------------- |
       | Windows PowerShell     | Voir la documentation  [ScheduledTasks](https://docs.microsoft.com/powershell/module/scheduledtasks/?view=win10-ps)  et l’ [exemple de script PowerShell](#example-powershell-script-for-task-scheduler)  dans cet article |
       | API Planificateur de tâches     | Consultez la documentation relative au  [Planificateur de tâches](https://docs.microsoft.com/windows/desktop/TaskSchd/using-the-task-scheduler)                                                                                                                                                                                                                                                                                 |
       | Interface utilisateur Windows | Dans Windows, cliquez sur  **Démarrer**, puis tapez Planificateur de tâches. Dans la liste des résultats, cliquez avec le bouton droit sur  **Planificateur de tâches**, puis sélectionnez  **Exécuter en tant qu’administrateur**.                                                                                                                                                                                                                                                                           |
 
 #### <a name="example-powershell-script-for-task-scheduler"></a>Exemple de script PowerShell pour le planificateur de tâches
 
-Cette section inclut un exemple de script PowerShell que vous pouvez utiliser pour planifier vos tâches d’indexation et de chargement des données indexées :
+Cette section inclut un exemple de script PowerShell que vous pouvez utiliser pour planifier vos tâches de hachage de données et de téléchargement des données hachées :
 
-##### <a name="to-schedule-index-and-upload-in-a-combined-step"></a>Pour planifier un index et le charger dans une étape combinée
+##### <a name="to-schedule-hashing-and-upload-in-a-combined-step"></a>Pour planifier un hachage et effectuer un téléchargement dans une étape seule combinée
 
 ```powershell
 param(\[string\]$dataStoreName,\[string\]$fileLocation)
@@ -430,7 +432,7 @@ $taskName = 'EDMUpload\_' + $dataStoreName
 Register-ScheduledTask -TaskName $taskName -InputObject $scheduledTask -User $user -Password $password
 ```
 
-#### <a name="to-schedule-index-and-upload-as-separate-steps"></a>Pour planifier un index et le charger en tant qu’étapes distinctes
+#### <a name="to-schedule-hashing-and-upload-as-separate-steps"></a>Pour planifier un hachage et effectuer un téléchargement en deux étapes distinctes
 
 ```powershell
 param(\[string\]$dataStoreName,\[string\]$fileLocation)
@@ -525,4 +527,4 @@ Les types d’informations sensibles EDM pour les scénarios suivants sont en co
 - [Vue d’ensemble des stratégies DLP](data-loss-prevention-policies.md)
 - [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security)
 - [New-DlpEdmSchema](https://docs.microsoft.com/powershell/module/exchange/new-dlpedmschema?view=exchange-ps)
-- [Connectez-vous au Centre de conformité et sécurité PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps).
+
