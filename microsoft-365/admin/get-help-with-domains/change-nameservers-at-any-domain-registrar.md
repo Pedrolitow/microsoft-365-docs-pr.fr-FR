@@ -1,7 +1,7 @@
 ---
 title: Modifier les serveurs de noms pour configurer Microsoft 365 avec n’importe quel bureau d’enregistrement de domaines
 f1.keywords:
-- NOCSH
+- CSH
 ms.author: pebaum
 author: pebaum
 manager: mnirkhe
@@ -25,12 +25,12 @@ search.appverid:
 - GEA150
 ms.assetid: a8b487a9-2a45-4581-9dc4-5d28a47010a2
 description: Découvrez comment ajouter et configurer votre domaine dans Microsoft 365 afin que vos services de messagerie électronique et Skype entreprise Online utilisent votre propre nom de domaine.
-ms.openlocfilehash: 8f98e054b4fa9fc9c8746f2b3bec8b59eb04e767
-ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
+ms.openlocfilehash: 6a99ee90db3bb71038309175b32bd4d96097aa5a
+ms.sourcegitcommit: 66f1f430b3dcae5f46cb362a32d6fb7da4cff5c1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "46560340"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "46662231"
 ---
 # <a name="change-nameservers-to-set-up-microsoft-365-with-any-domain-registrar"></a>Modifier les serveurs de noms pour configurer Microsoft 365 avec n’importe quel bureau d’enregistrement de domaines
 
@@ -38,7 +38,7 @@ ms.locfileid: "46560340"
   
 Consultez [la rubrique Configurer votre domaine (instructions spécifiques à l’hôte)](../get-help-with-domains/set-up-your-domain-host-specific-instructions.md) pour savoir si nous avons des instructions pour votre serveur d’inscriptions. 
   
-Suivez ces instructions pour ajouter et configurer votre domaine dans Microsoft 365 afin que vos services, tels que le courrier électronique et Skype entreprise Online, utilisent votre propre nom de domaine. Pour ce faire, vous devez vérifier votre domaine, puis modifier les serveurs de noms de votre domaine en Microsoft 365 afin que les enregistrements DNS corrects puissent être configurés pour vous. Procédez comme suit si les instructions suivantes décrivent votre situation :
+Suivez ces instructions pour ajouter et configurer votre domaine dans Microsoft 365 afin que vos services, tels que le courrier électronique et les équipes, utilisent votre propre nom de domaine. Pour ce faire, vous devez vérifier votre domaine, puis modifier les serveurs de noms de votre domaine en Microsoft 365 afin que les enregistrements DNS corrects puissent être configurés pour vous. Procédez comme suit si les instructions suivantes décrivent votre situation :
   
 - Vous disposez de votre propre domaine et souhaitez le configurer pour qu’il fonctionne avec Microsoft 365.
     
@@ -114,17 +114,19 @@ Lorsque vous accédez à la dernière étape de l’Assistant Configuration des 
   
 Pour changer vous-même les serveurs de noms de votre domaine sur le site web de votre bureau d'enregistrement de domaines, procédez comme suit :
   
-1. Identifiez la zone sur le site web du bureau d'enregistrement de domaines dans laquelle vous pouvez modifier les serveurs de noms pour votre domaine.
+1. Recherchez la zone sur le site Web du Bureau d’enregistrement de domaines dans laquelle vous pouvez modifier les serveurs de noms de votre domaine ou une zone dans laquelle vous pouvez utiliser des serveurs de noms personnalisés.
     
-2. Créez deux enregistrements de serveur de noms, ou modifiez les enregistrements existants pour qu'ils correspondent aux valeurs suivantes :
+2. Créez des enregistrements de serveur de noms ou modifiez les enregistrements de serveur de noms existants pour qu’ils correspondent aux valeurs suivantes :
     
 |||
 |:-----|:-----|
 |Premier serveur de noms  <br/> |ns1.bdm.microsoftonline.com  <br/> |
 |Deuxième serveur de noms  <br/> |ns2.bdm.microsoftonline.com  <br/> |
+|Troisième serveur de noms  <br/> |ns2.bdm.microsoftonline.com  <br/> |
+|Quatrième serveur de noms  <br/> |ns2.bdm.microsoftonline.com  <br/> |
    
    > [!TIP]
-   > Vous devez utiliser au moins deux enregistrements de serveur de noms. Si d’autres serveurs de noms sont répertoriés, vous pouvez les supprimer ou les remplacer par **NS3.BDM.microsoftonline.com** et **NS4.BDM.microsoftonline.com**. 
+   > Il est préférable d’ajouter les quatre enregistrements, mais si votre serveur d’inscriptions ne prend en charge que deux, ajoutez **NS1.BDM.microsoftonline.com** et **ns2.BDM.microsoftonline.com**. 
   
 3. Enregistrez vos modifications.
     

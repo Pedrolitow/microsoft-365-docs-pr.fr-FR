@@ -17,12 +17,12 @@ ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
 ms.collection:
 - M365-security-compliance
 description: Configurez des stratégies de liens fiables pour protéger votre organisation contre les liens malveillants dans les fichiers Word, Excel, PowerPoint et Visio, ainsi que dans les messages électroniques.
-ms.openlocfilehash: 4aa6947af114856d73c3e048b829daf8f47f0f48
-ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
+ms.openlocfilehash: f935002a300bd5f4553cbab429318dad4104b208
+ms.sourcegitcommit: 66f1f430b3dcae5f46cb362a32d6fb7da4cff5c1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46652644"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "46662253"
 ---
 # <a name="set-up-office-365-atp-safe-links-policies"></a>Configuration des stratégies de liens approuvés Office 365 ATP
 
@@ -51,7 +51,7 @@ De [nouvelles fonctionnalités sont continuellement ajoutées à](office-365-atp
 
 - Assurez-vous que vous disposez des autorisations nécessaires. Pour définir (ou modifier) des stratégies ATP, vous devez disposer d’un rôle approprié. Certains exemples sont décrits dans le tableau suivant :
 
-    |Role|WHERE/How Assigned|
+    |Rôle|WHERE/How Assigned|
     |---|---|
     |administrateur général|La personne qui s’inscrit pour acheter Microsoft 365 est un administrateur global par défaut. (Pour en savoir plus, consultez la rubrique [à propos des rôles d’administrateur Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles) .)|
     |Administrateur de sécurité|Centre d’administration Azure Active Directory ( <https://aad.portal.azure.com> )|
@@ -82,13 +82,13 @@ Lorsque vous disposez de la [protection avancée contre les menaces Office 365](
 5. Dans la section **paramètres qui s’appliquent au contenu à l’exception de la messagerie** , activez (ou désactivez) les options que vous souhaitez utiliser. (Nous vous recommandons de sélectionner toutes les options.)
 
 6. Cliquez sur **Enregistrer**.
+    
+## <a name="step-3-add-or-edit-atp-safe-links-policies-that-apply-to-all-or-specific-email-recipients"></a>Étape 3 : ajouter (ou modifier) des stratégies de liens fiables ATP qui s’appliquent à tous les destinataires de messagerie ou à des destinataires spécifiques
 
-## <a name="step-3-add-or-edit-atp-safe-links-policies-that-apply-to-specific-email-recipients"></a>Étape 3 : ajouter (ou modifier) des stratégies de liens fiables ATP qui s’appliquent à des destinataires de messagerie spécifiques
-
-Une fois que vous avez révisé (ou modifié) la stratégie de liens approuvés ATP par défaut qui s’applique à tout le monde, l’étape suivante consiste à définir des stratégies supplémentaires qui s’appliqueront à des destinataires spécifiques. Par exemple, vous pouvez spécifier des exceptions à votre stratégie par défaut en définissant une stratégie supplémentaire.
-
-1. Accédez à <https://protection.office.com> et connectez-vous avec votre compte professionnel ou scolaire.
-
+Une fois que vous avez révisé (ou modifié) la stratégie de liens approuvés ATP par défaut qui s’applique à tout le monde, l’étape suivante consiste à définir des stratégies supplémentaires qui s’appliqueront à tous les destinataires de messagerie ou à des destinataires spécifiques. Par exemple, vous pouvez spécifier des exceptions à votre stratégie par défaut en définissant une stratégie supplémentaire ou créer des restrictions plus granulaires pour tous les employés.
+  
+1. Accédez à <https://protection.office.com> et connectez-vous avec votre compte professionnel ou scolaire. 
+    
 2. Dans le volet de navigation de gauche, sous **gestion des menaces**, sélectionnez **stratégie**.
 
 3. Choisissez **liens fiables**.
@@ -120,7 +120,7 @@ Une fois que vous avez révisé (ou modifié) la stratégie de liens approuvés 
 6. Cliquez sur **Enregistrer**.
 
 > [!NOTE]
-> Les stratégies de liens fiables ATP avec une priorité plus élevée seront prioritaires. Si un utilisateur est soumis à deux stratégies ou plus, seule la stratégie de priorité plus élevée prendra effet.
+> Les stratégies de liens fiables ATP avec une priorité plus élevée seront prioritaires. Si un utilisateur est soumis à deux ou plusieurs stratégies, seule la stratégie de priorité plus élevée prendra effet. Si vous souhaitez que la stratégie client soit prioritaire, vous devez augmenter la priorité de la stratégie.
 
 ## <a name="step-4-learn-about-atp-safe-links-policy-options"></a>Étape 4 : en savoir plus sur les options de stratégie de liens approuvés ATP
 

@@ -34,7 +34,7 @@ Anglais : Lun-ven 9 AM-5 PM
 
 ### <a name="technical-support"></a>Support technique :
 
-Anglais : 24 heures sur 24, 7 jours sur 7
+Anglais : 24h/24, 7j/7
 
 Autre numéro de téléphone : 0203 450 6455
 
