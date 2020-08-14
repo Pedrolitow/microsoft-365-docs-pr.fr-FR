@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Créez et publiez automatiquement des étiquettes de rétention afin de pouvoir les appliquer de manière automatique pour conserver les éléments dont vous avez besoin et de supprimer ceux qui sont inutiles
-ms.openlocfilehash: a67be377e641cb6cc7395cd82f91a05b89c5ea7a
-ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
+ms.openlocfilehash: 80a5ef502450a24d9c8aeeb08d571bfcbd51a4e3
+ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "46560615"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46648803"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>Application automatique d’une étiquette de rétention pour conserver ou supprimer du contenu
 
@@ -136,6 +136,8 @@ Pour plus d’informations relatives à ces options, voir[optimisation des règl
 #### <a name="auto-apply-labels-to-content-with-keywords-or-searchable-properties"></a>Application automatique d’étiquettes au contenu comprenant des mots clés ou des propriétés pouvant faire l’objet d’une recherche
 
 Vous pouvez appliquer automatiquement des étiquettes au contenu remplissant certaines conditions. Les conditions actuellement disponibles prennent en charge l’application d’une étiquette au contenu comprenant des mots, des phrases spécifiques ou des valeurs de propriété pouvant faire l’objet d’une recherche. Vous pouvez affiner votre requête à l’aide des opérateurs de recherche tels que AND, OR et NOT.
+
+Lors de l’application automatique d’étiquettes pour les propriétés pouvant faire l’objet d’une recherche, l’alias d’une propriété gérée ne peut pas être utilisé dans la requête. Il doit s’agir du nom réel de la propriété gérée, par exemple, RefinableString01.
 
 Pour obtenir plus d’informations sur la syntaxe de requête, consultez l’article suivant :
 

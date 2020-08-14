@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Les administrateurs peuvent activer la prise en charge de l’étiquette de sensibilité pour les fichiers Word, Excel et PowerPoint dans SharePoint et OneDrive.
-ms.openlocfilehash: a6826be5cccf89d3b2e48e0e37df9a9263e4a8a7
-ms.sourcegitcommit: fe20f5ed07f38786c63df0f73659ca472e69e478
+ms.openlocfilehash: acf440d7bc46c51a6c00b10d06619868a09e155d
+ms.sourcegitcommit: 66f1f430b3dcae5f46cb362a32d6fb7da4cff5c1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "45201508"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "46662242"
 ---
 # <a name="enable-sensitivity-labels-for-office-files-in-sharepoint-and-onedrive"></a>Activer les étiquettes de confidentialité pour les fichiers Office dans SharePoint et OneDrive
 
@@ -42,12 +42,12 @@ Lorsque vous activez les étiquettes de sensibilité pour les fichiers Office da
 
 - Les utilisateurs externes peuvent accéder aux documents étiquetés avec le chiffrement à l’aide de comptes invités. Pour plus d’informations, consultez la rubrique [prise en charge des utilisateurs externes et du contenu étiqueté](sensitivity-labels-office-apps.md#support-for-external-users-and-labeled-content). 
 
-- Office 365 eDiscovery prend en charge la recherche de texte intégral pour ces fichiers. Les stratégies de protection contre la perte de données (DLP) prennent en charge le contenu de ces fichiers.
+- Office 365 eDiscovery prend en charge la recherche de texte intégral pour ces fichiers et les stratégies de protection contre la perte de données (DLP) prennent en charge le contenu de ces fichiers.
 
 > [!NOTE]
-> Si le chiffrement a été appliqué à l’aide de la clé locale, une topologie de gestion des clés est souvent appelée « conserver votre propre clé » (HYOK) ou à l’aide du [chiffrement à double clé](double-key-encryption.md), le comportement de SharePoint pour le traitement du contenu du fichier n’est pas modifié.
+> Si le chiffrement a été appliqué avec une clé locale (une topologie de gestion des clés est souvent appelée « conserver votre propre clé » ou HYOK) ou à l’aide du [chiffrement à double clé](double-key-encryption.md), le comportement de SharePoint pour le traitement du contenu du fichier n’est pas modifié.
 >
-> Le comportement de SharePoint ne change pas non plus pour les fichiers étiquetés et chiffrés existants dans SharePoint. Pour que ces fichiers bénéficient des nouvelles fonctionnalités, vous devez les télécharger et les charger ou les modifier après avoir exécuté la commande afin d’activer les étiquettes de confidentialité pour SharePoint et OneDrive. SharePoint peut ensuite traiter ces fichiers. Par exemple, ils seront renvoyés dans les résultats de recherche et de découverte électronique.
+> Le comportement de SharePoint ne change pas non plus pour les fichiers existants dans SharePoint qui sont étiquetés avec le chiffrement à l’aide d’une seule clé Azure. Pour que ces fichiers bénéficient des nouvelles fonctionnalités, une fois que vous avez activé les étiquettes de confidentialité pour les fichiers Office dans SharePoint et OneDrive, les fichiers doivent être téléchargés et téléchargés à nouveau, ou modifiés. Par exemple, ils seront renvoyés dans les résultats de recherche et de découverte électronique.
 
 Une fois que vous avez activé les étiquettes de confidentialité pour les fichiers Office dans SharePoint et OneDrive, trois nouveaux [événements d’audit](search-the-audit-log-in-security-and-compliance.md#sensitivity-label-activities) sont disponibles pour la surveillance des étiquettes de confidentialité appliquées aux documents dans SharePoint et onedrive :
 - **Étiquette de confidentialité appliquée au fichier**
@@ -201,7 +201,7 @@ Dans ce cas, vous pouvez être sûr que tous les fichiers Office et PDF sont pro
 
 ## <a name="search-for-documents-by-sensitivity-label"></a>Rechercher des documents par étiquette de sensibilité
 
-Utilisez la propriété gérée **InformationProtectionLabelId** pour rechercher tous les documents dans SharePoint ou OneDrive dont l’étiquette de confidentialité est spécifique. Utilisez la syntaxe suivante :`InformationProtectionLabelId:<GUID>`
+Utilisez la propriété gérée **InformationProtectionLabelId** pour rechercher tous les documents dans SharePoint ou OneDrive dont l’étiquette de confidentialité est spécifique. Utilisez la syntaxe suivante : `InformationProtectionLabelId:<GUID>`
 
 Par exemple, pour rechercher tous les documents qui ont été étiquetés comme « confidentiel » et cette étiquette a le GUID « 8faca7b8-8d20-48A3-8ea2-0f96310a848e », dans la zone de recherche, tapez :
 

@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: En savoir plus sur les stratégies de rétention et les étiquettes de rétention, qui permettent de conserver les éléments dont vous avez besoin et de supprimer ceux qui ne vous servent pas.
-ms.openlocfilehash: ee256271b3520011db586d42e579b64b439a6210
-ms.sourcegitcommit: b812771805c8b9e92b64deb1928e265e60d80405
+ms.openlocfilehash: ff99e61c82f0427d79d8aca99acc82a338f79b8a
+ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/07/2020
-ms.locfileid: "46588206"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46649151"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>En savoir plus sur les stratégies et les étiquettes de rétention
 
@@ -124,6 +124,8 @@ En bref, une stratégie de rétention verrouillée peut être accrue ou étendue
   
 > [!IMPORTANT]
 > Avant de verrouiller une stratégie de rétention, il est essentiel de comprendre l’impact et de confirmer qu’il est exigé que votre organisation respecte des exigences réglementaires. Les administrateurs ne peuvent plus désactiver ou supprimer une stratégie de rétention une fois le verrouillage de conservation appliqué.
+
+Vous pouvez appliquer un verrouillage de conservation une fois la stratégie de rétention créée à l’aide de PowerShell. Des instructions sont incluses dans [Créer et configurer des stratégies de rétention](create-retention-policies.md).
 
 #### <a name="releasing-a-retention-policy"></a>Publication d’une stratégie de rétention
 

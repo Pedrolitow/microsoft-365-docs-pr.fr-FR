@@ -19,12 +19,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: Découvrez comment reconnaître un compte de messagerie compromis et y répondre à l’aide des outils disponibles dans Microsoft 365.
-ms.openlocfilehash: cd9e5b4f9951bd332950cdc22ba3f3740d084dfb
-ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
+ms.openlocfilehash: d412f40a6c3e1e2f1182437419ce9e0d28ed10eb
+ms.sourcegitcommit: 929ca8f4d5fc006c3827f7a8b7d2b43e54c1b42a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46527779"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46674613"
 ---
 # <a name="responding-to-a-compromised-email-account"></a>Réponse à un compte de messagerie compromis
 
@@ -68,11 +68,8 @@ Si un utilisateur rapporte un des symptômes ci-dessus, vous devez lancer un exa
 - **Utilisez les journaux de connexion Azure AD et autres rapports de risque du portail Azure AD** : examinez les valeurs de ces colonnes :
 
   - Examen des adresses IP
-
   - emplacements de connexion
-
   - heure de connexion
-
   - réussite ou échec des connexions
 
 ## <a name="how-to-secure-and-restore-email-function-to-a-suspected-compromised-microsoft-365-account-and-mailbox"></a>Comment sécuriser et restaurer la fonction de messagerie pour un compte Microsoft 365 supposé compromis et ses boîtes aux lettres
@@ -85,31 +82,31 @@ Vous devez effectuer au plus vite toutes les étapes suivantes pour récupérer 
 
 ### <a name="step-1-reset-the-users-password"></a>Étape 1 : Réinitialisez le mot de passe de l’utilisateur.
 
-> [!WARNING]
-> Ne pas envoyer de nouveau mot de passe à l’utilisateur initial par courrier électronique, car l’utilisateur malveillant a toujours accès à la boîte aux lettres à ce stade.
+Suivez les procédures décrites dans [Réinitialiser un mot de passe d’entreprise pour une autre personne](https://docs.microsoft.com/microsoft-365/admin/add-users/reset-passwords#reset-my-admin-password).
 
-1. Suivez les procédures de réinitialisation du mot de passe Microsoft 365 Apps pour entreprise pour quelqu’un d’autre décrites dans [Réinitialiser les mots de passe Microsoft 365 Apps pour entreprise](https://docs.microsoft.com/microsoft-365/admin/add-users/reset-passwords)
-
-**Remarques** :
-
-- Assurez-vous que le mot de passe est robuste et qu’il contient des lettres majuscules et minuscules, au moins un chiffre et au moins un caractère spécial.
-
-- Ne pas réutiliser un de vos cinq derniers mots de passe. Même si l’exigence de l’historique de mot de passe vous permet de réutiliser un mot de passe plus récent, vous devez en sélectionner un que l’utilisateur malveillant ne peut pas deviner.
-
-- Si votre identité locale est fédérée avec Microsoft 365, vous devez modifier votre mot de passe local, puis vous devez informer votre administrateur de l’attaque.
-
-> [!TIP]
-> Nous vous recommandons vivement d’activer l’authentification multifacteur (MFA) pour éviter les compromissions, en particulier pour les comptes avec des privilèges d’administration.  Pour en savoir plus sur l’authentification multifacteur, voir [Configurer l’authentification multifacteur](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/set-up-multi-factor-authentication).
+> [!IMPORTANT]
+>
+> - Ne pas envoyer de nouveau mot de passe à l’utilisateur initial par courrier électronique, car l’utilisateur malveillant a toujours accès à la boîte aux lettres à ce stade.
+>
+> - Assurez-vous que le mot de passe est robuste et qu’il contient des lettres majuscules et minuscules, au moins un chiffre et au moins un caractère spécial.
+>
+> - Ne pas réutiliser un de vos cinq derniers mots de passe. Même si l’exigence de l’historique de mot de passe vous permet de réutiliser un mot de passe plus récent, vous devez en sélectionner un que l’utilisateur malveillant ne peut pas deviner.
+>
+> - Si votre identité locale est fédérée avec Microsoft 365, vous devez modifier votre mot de passe local, puis vous devez informer votre administrateur de l’attaque.
+>
+> - Veillez à mettre à jour les mots de passe d’application. Les mots de passe d’application ne sont pas automatiquement révoqués lors de la réinitialisation du mot de passe d’un compte utilisateur. L’utilisateur doit supprimer les mots de passe d’application existants et en créer de nouveaux. Pour obtenir des instructions, voir [Créer et supprimer des mots de passe d’application à partir de la page Vérification de sécurité supplémentaire](https://docs.microsoft.com/azure/active-directory/user-help/multi-factor-authentication-end-user-app-passwords#create-and-delete-app-passwords-from-the-additional-security-verification-page).
+>
+> - Nous vous recommandons vivement d’activer l’authentification multifacteur (MFA) pour éviter les compromissions, en particulier pour les comptes avec des privilèges d’administration. Pour en savoir plus sur l’authentification multifacteur, voir [Configurer l’authentification multifacteur](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/set-up-multi-factor-authentication).
 
 ### <a name="step-2-remove-suspicious-email-forwarding-addresses"></a>Étape 2 : Supprimer des adresses de transfert de courrier suspectes
 
-1. Ouvrez le **Centre d’administration Microsoft 365 > Utilisateurs actifs**.
+1. Ouvrez le Centre d’administration Microsoft 365 à l’adresse <https://admin.microsoft.com>
 
-2. Recherchez le compte d’utilisateur en question et développez les **paramètres de courrier**.
+2. Accédez à **Utilisateurs** \> **Utilisateurs actifs**. Recherchez le compte de l’utilisateur en question, puis sélectionnez l’utilisateur (ligne) sans activer la case à cocher.
 
-3. Pour **transfert des courriers électroniques**, cliquez sur **Modifier**.
+3. Dans le menu volant de détails qui s’affiche, sélectionnez l’onglet **Courrier**.
 
-4. Supprimer des adresses de transfert suspectes.
+4. Si la valeur de la section **Transfert de courrier** est **Appliqué**, cliquez sur **Gérer le transfert de courrier**. Dans le menu volant **Gérer le transfert de courrier** qui s’affiche, désactivez **Transférer tous les courriers envoyés à cette boîte aux lettres**, puis cliquez sur **Enregistrer les modifications**.
 
 ### <a name="step-3-disable-any-suspicious-inbox-rules"></a>Étape 3 : Désactiver toutes règles de boîte de réception suspectes
 
@@ -132,50 +129,50 @@ Pour débloquer la boîte aux lettres et permettre l’envoi de messages électr
 > [!IMPORTANT]
 > Vous pouvez bloquer le compte soupçonné d'avoir été compromis et l’empêcher de se connecter jusqu'à ce qu’à votre avis, il est sûr de réactiver l’accès.
 
-1. Aller au Centre d’administration Microsoft 365.
+1. Ouvrez le Centre d’administration Microsoft 365 et accédez à **Utilisateurs** \> **Utilisateurs actifs**.
 
-2. Dans le centre d’administration Microsoft 365, sélectionnez **Utilisateurs**.
+2. Recherchez et sélectionnez le compte d’utilisateur, cliquez sur l’![icône Plus](../../media/ITPro-EAC-MoreOptionsIcon.png), puis sélectionnez **Modifier l’état de connexion**.
 
-3. Sélectionnez l'employé que vous voulez bloquer, puis choisissez **Modifier** en regard d'**État de la connexion** dans le volet de l'utilisateur.
+3. Dans le volet **Bloquer la connexion** qui s’affiche, sélectionnez **Bloquer la connexion de cet utilisateur**, puis cliquez sur **Enregistrer les modifications**.
 
-4. Dans le volet **État de la connexion**, choisissez **Connexion bloquée**, puis **Enregistrer**.
+4. Ouvrez le Panneau de configuration Exchange (CAE) à l’adresse <admin.protection.outlook.com/ecp/>, puis accédez à **Destinataires > Boîtes aux lettres**.
 
-5. Dans le Centre d'administration, dans le volet de navigation en bas à gauche, développez **Centres d'administration**, puis sélectionnez **Exchange**.
+5. Recherchez et sélectionnez l’utilisateur. Dans le volet Détails, procédez comme suit :
 
-6. Dans le Centre d’administration Exchange, accédez à **Destinataires > Boîtes aux lettres**.
+   - Dans la section **Fonctionnalités téléphoniques et vocales**, procédez comme suit :
 
-7. Sélectionnez l'utilisateur. Dans la page des propriétés de l'utilisateur, sous **Périphériques mobiles**, cliquez sur **Désactiver ActiveSync Exchange** et sur **Désactiver OWA pour les appareils**, puis répondez **oui** à chaque fois.
+     - Sélectionnez **Désactiver ActiveSync Exchange** puis cliquez sur **Oui** dans le message d’avertissement qui s’affiche.
+     - Sélectionnez **Désactiver OWA pour les appareils** puis cliquez sur **Oui** dans le message d’avertissement qui s’affiche.
 
-8. Sous **Connectivité de courrier**, **Désactiver**, puis répondez **oui**.
+   - Dans la section **Connectivité de la messagerie** pour Outlook sur le web, cliquez sur **Désactiver** puis sur **Oui** dans le message d’avertissement qui s’affiche.
 
 ### <a name="step-6-optional-remove-the-suspected-compromised-account-from-all-administrative-role-groups"></a>Étape 6 (facultatif) : Supprimer le compte soupçonné d'avoir été compromis de tous les groupes de rôles d’administration
 
 > [!NOTE]
 > L’appartenance au groupe de rôles d’administration peut être restaurée une fois que le compte a été sécurisé.
 
-1. Connectez-vous au Centre d’administration Microsoft 365 avec votre compte d’administrateur général et ouvrez **Utilisateurs actifs**.
+1. Connectez-vous à l’aide d’un compte d’administrateur global :
 
-2. Trouvez le compte soupçonné d'avoir été compromis et vérifiez manuellement si des rôles d’administration sont attribués au compte.
+2. Dans le Centre d’administration Microsoft 365, procédez comme suit :
 
-3. Ouvrir le **Centre de sécurité et conformité**.
+   1. Accédez à **Utilisateurs** \> **Utilisateurs actifs**.
+   2. Recherchez et sélectionnez le compte d’utilisateur, cliquez sur l’![icône Plus](../../media/ITPro-EAC-MoreOptionsIcon.png), puis sélectionnez **Gérer les rôles**.
+   3. Supprimez les rôles d’administrateur attribués au compte. Lorsque vous avez terminé, cliquez sur **Enregistrer les modifications**.
 
-4. Cliquez sur **Autorisations**.
+3. Dans le Centre de sécurité et de conformité à l'adresse <https://protection.office.com>, procédez comme suit :
 
-5. Passer en revue manuellement les groupes de rôles pour déterminer si le compte soupçonné d'avoir été compromis est membre de l’un des groupes.  Si ce n’est pas le cas et que ce bouton est défini sur :
+   Sélectionnez **Autorisations**, puis chaque groupe de rôles dans la liste, et recherchez le compte d’utilisateur dans la section **Membres** du menu volant de détails qui s’affiche. Si le groupe de rôles contient le compte d’utilisateur, procédez comme suit :
 
-   a. Cliquez sur le groupe de rôles, puis sur **Modifier un groupe de rôles**.
+   a. Cliquez sur **Modifier** en regard de **Membres**.
+   b. Dans le menu volant **Modification des membres choisis** qui apparaît, cliquez sur **Modifier**.
+   c. Dans le menu volant **Sélectionner des membres** qui apparaît, sélectionnez le compte d’utilisateur, puis cliquez sur **Supprimer**. Lorsque vous avez terminé, cliquez sur **Terminé**, **Enregistrer**, puis **Fermer**.
 
-   b. Cliquez sur **Choisir les membres** et **Modifier** pour supprimer l’utilisateur du groupe de rôles.
+4. Dans le Centre d’administration Exchange, à l’adresse <admin.protection.outlook.com/ecp/>, procédez comme suit :
 
-6. Ouvrez le **Centre d’administration Exchange**.
+   Sélectionnez **Autorisations**, puis chaque groupe de rôles manuellement, et, dans le volet Détails, vérifiez les comptes d’utilisateurs dans la section **Membres**.  Si le groupe de rôles contient le compte d’utilisateur, procédez comme suit :
 
-7. Cliquez sur **Autorisations**.
-
-8. Passer en revue manuellement les groupes de rôles pour déterminer si le compte soupçonné d'avoir été compromis est membre de l’un des groupes. Si ce n’est pas le cas et que ce bouton est défini sur :
-
-   a. Cliquez sur le groupe de rôles, puis sur **Modifier**.
-
-   b. Utilisez la section **Membres** pour supprimer l’utilisateur du groupe de rôles.
+   a. Sélectionnez le groupe de rôles, cliquez sur **Modifier** ![Icône Modifier](../../media/ITPro-EAC-EditIcon.png).
+   b. Dans la section **Membre**, sélectionnez le compte d’utilisateur, puis cliquez sur **Supprimer** ![Icône Supprimer](../../media/ITPro-EAC-RemoveIcon.gif). Lorsque vous avez terminé, cliquez sur **Enregistrer**.
 
 ### <a name="step-7-optional-additional-precautionary-steps"></a>Étape 7 (facultatif) : Mesures de précaution supplémentaires
 
