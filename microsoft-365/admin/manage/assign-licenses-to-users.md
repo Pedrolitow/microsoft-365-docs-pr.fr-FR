@@ -22,13 +22,13 @@ ms.custom:
 search.appverid:
 - MET150
 description: Découvrez comment attribuer des licences aux utilisateurs.
-ms.date: 07/01/2020
-ms.openlocfilehash: 648a3433bf5c2bd9bb96abb90335f56ee4fb6bee
-ms.sourcegitcommit: 0650da0e54a2b484a3156b3aabe44397fbb38e00
+ms.date: 08/14/2020
+ms.openlocfilehash: e1f28107f7774fa4eccbecb3882cbd002a6eea1a
+ms.sourcegitcommit: 919b5d0f33b41b4beaca5fbb06e1c75d65027b7e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "45015946"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "46757556"
 ---
 # <a name="assign-licenses-to-users"></a>Attribuer des licences aux utilisateurs
 
@@ -160,6 +160,25 @@ Lorsque vous utilisez la page **Utilisateurs actifs** pour attribuer des licence
 5. En bas du volet **Licences de produits**, sélectionnez **Enregistrer** \> **Fermer** \> **Fermer**.
 
 ::: moniker-end
+
+## <a name="assign-a-license-to-a-guest-user"></a>Attribuer une licence à un utilisateur invité
+
+Vous pouvez inviter des utilisateurs invités à collaborer avec votre organisation dans le Centre d’administration Azure Active Directory. Pour en savoir plus sur l’estimation des utilisateurs, consultez[Qu’est-ce que l’accès utilisateur invité dans Azure Active Directory B2B ?](https://docs.microsoft.com/azure/active-directory/external-identities/what-is-b2b) Si vous n’avez pas d’utilisateurs invités, consultez [Démarrage rapide : ajouter des utilisateurs invités à votre annuaire dans le portail Azure](https://docs.microsoft.com/azure/active-directory/external-identities/b2b-quickstart-add-guest-users-portal).
+
+> [!IMPORTANT]
+> Vous devez être un administrateur général pour effectuer ces étapes.
+
+1. Accédez au <a href="https://go.microsoft.com/fwlink/p/?linkid=2067268" target="_blank">Centre d’administration Azure Active Directory</a>
+2. Dans le volet de navigation, sélectionnez **Utilisateurs**.
+3. Dans la page **utilisateurs | Tous les utilisateurs (aperçu)**, sélectionnez **Ajouter des filtres**.
+4. Dans le menu **Sélectionner un champ** , sélectionnez **Type d’utilisateur**, puis **Appliquer**.
+5. Dans le menu suivant, sélectionnez **Invité**.
+6. Dans la liste des résultats, sélectionnez l’utilisateur ayant besoin d’une licence.
+7. Sous **Gérer**, sélectionnez **Licences**.
+8. Sélectionnez **Devoirs**.
+9. Sur la page **Mettre à jour les affectations de licence** , sélectionnez le produit pour lequel vous voulez affecter une licence.
+10. Sur la droite, désactivez les cases à cocher des services auxquels vous ne voulez pas que l’utilisateur invité ait accès.
+11. Sélectionnez **Enregistrer**.
 
 ## <a name="next-steps"></a>Étapes suivantes
 
