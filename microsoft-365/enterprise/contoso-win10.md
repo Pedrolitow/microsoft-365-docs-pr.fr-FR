@@ -9,22 +9,22 @@ ms.date: 10/01/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Priority
+localization_priority: Normal
 ms.collection:
 - M365-modern-desktop
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Comprendre la façon dont Contoso a utilisé Microsoft Endpoint Configuration Manager pour déployer les mises à niveau sur place pour Windows 10 Entreprise.
-ms.openlocfilehash: c66be4ad5ee383301c4fb10cf2590f7cbbed033f
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
-ms.translationtype: HT
+ms.openlocfilehash: a100eb07408053fd270c26f388265696549fff9f
+ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43630680"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46686417"
 ---
 # <a name="windows-10-enterprise-deployment-for-contoso"></a>Déploiement de Windows 10 Entreprise pour Contoso
 
-Avant le déploiement large de Microsoft 365 Entreprise, Contoso disposait de périphériques et de PC compatibles avec Windows qui exécutaient un mélange de Windows 7 (10 %), Windows 8.1 (65 %) et Windows 10 (25 %). Contoso souhaitait mettre à niveau ses PC vers Windows 10 Entreprise afin de profiter de la sécurité avancée et des frais informatiques généraux réduits grâce aux déploiements automatisés des mises à jour. 
+Avant le déploiement étendu de Microsoft 365 pour Enterprise, contoso disposait de PC et de périphériques compatibles avec Windows qui exécutent un mélange de Windows 7 (10%), de Windows 8,1 (65%) et de Windows 10 (25%). Contoso souhaitait mettre à niveau ses PC pour Windows 10 entreprise tirer parti de la sécurité avancée et avoir réduit les charges de travail informatiques des déploiements automatisés de mises à jour. 
 
 Après évaluation de ses besoins d’infrastructure et de ses besoins métier, Contoso a identifié les exigences principales suivantes en matière de déploiement :
 
@@ -95,8 +95,8 @@ Cette infrastructure se compose des éléments suivants :
 
 ## <a name="see-also"></a>Voir aussi
 
-[Windows 10 Entreprise pour Microsoft 365 Entreprise](windows10-infrastructure.md)
+[Windows 10 Entreprise](https://docs.microsoft.com/windows/deployment/)
 
-[Guide de déploiement](deploy-microsoft-365-enterprise.md)
+[Vue d’ensemble de Microsoft 365 pour entreprise](microsoft-365-overview.md)
 
 [Guides de laboratoire de test](m365-enterprise-test-lab-guides.md)

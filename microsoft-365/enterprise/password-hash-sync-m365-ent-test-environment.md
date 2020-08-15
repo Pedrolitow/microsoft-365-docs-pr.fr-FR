@@ -9,7 +9,7 @@ ms.date: 05/26/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Priority
+localization_priority: Normal
 ms.collection:
 - M365-identity-device-management
 - Strat_O365_Enterprise
@@ -19,16 +19,16 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: ''
 description: 'Résumé : Découvrez comment configurer la connexion et la synchronisation de hachage de mot de passe pour votre environnement de test Microsoft 365.'
-ms.openlocfilehash: 2d5fbd3ed2a2afb994fc36f5ba3a15a8c55a274e
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
-ms.translationtype: HT
+ms.openlocfilehash: 2930d147e2ae3277b0af4d2aa81a602c73128439
+ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44819387"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46686547"
 ---
 # <a name="password-hash-synchronization-for-your-microsoft-365-test-environment"></a>Synchronisation de hachage de mot de passe pour votre environnement de test Microsoft 365
 
-*Ce Guide de Laboratoire Test peut être utilisé pour les environnements de test Microsoft 365 Entreprise et Office 365 Entreprise*.
+*Ce guide de laboratoire de test peut être utilisé pour les environnements de test Microsoft 365 pour les environnements de test d’entreprise et Office 365.*
 
 De nombreuses organisations utilisent Azure AD Connect et la synchronisation de hachage de mot de passe pour synchroniser l’ensemble de comptes dans leur forêt Active Directory Domain Services (AD DS) en local avec l’ensemble des comptes dans le client Azure AD de leur abonnement Microsoft 365. Cet article explique comment vous pouvez ajouter DirSync avec la synchronisation de mot de passe à l’environnement de développement/test Microsoft 365, ce qui entraîne la configuration suivante:
   
@@ -40,7 +40,7 @@ Les deux phases de configuration de cet environnement de test sont les suivantes
 2. Installez et configurez Azure AD Connect sur APP1.
     
 > [!TIP]
-> Accédez au [Guide de laboratoire de laboratoire de test Microsoft 365 Entreprise](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) d’une carte visuelle à tous les Articles de la pile de guides de laboratoires de test Microsoft 365 Enterprise.
+> Accédez à la [pile de guide de laboratoire de test microsoft 365](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) pour un plan visuel vers tous les Articles de la pile de guide de laboratoire de test Microsoft 365.
   
 ## <a name="phase-1-create-the-microsoft-365-simulated-enterprise-test-environment"></a>Phase 1 : création de l’environnement de test de l’entreprise simulée pour Microsoft 365
 
@@ -50,7 +50,7 @@ Suivez les instructions fournies dans l’article [Configuration de base d’une
   
 Cette configuration se compose des éléments suivants :  
   
-- Un abonnement d’évaluation ou payant Microsoft 365 E5 ou Office 365 E5.
+- Un abonnement d’évaluation ou payant Microsoft 365 E5.
 - Un intranet d’organisation simplifié connecté à Internet, qui se compose des machines virtuelles DC1, APP1 et CLIENT1 sur un sous-réseau d’un réseau virtuel Azure. DC1 est un contrôleur de domaine pour le domaine testlab.\<your public domain name> AD DS.
 
 ## <a name="phase-2-create-and-register-the-testlab-domain"></a>Phase 2 : création et enregistrement du domaine testlab
@@ -59,7 +59,7 @@ Durant cette phase, vous allez créer un domaine DNS public et l’ajouter à vo
 
 Tout d’abord, travaillez avec votre fournisseur d’inscription DNS public pour créer un nom de domaine DNS public basé sur votre nom de domaine actuel et ajoutez-le à votre abonnement. Nous vous recommandons d’utiliser le nom **testlab.**\<your public domain>. Par exemple, si votre nom de domaine public est **<span>contoso</span>.com**, ajoutez le nom de domaine public testlab.contoso.com.Par exemple, si votre nom de domaine public est contoso.com, ajoutez le nom de domaine public **<span>testlab</span>.contoso.com**.
   
-Vous devez ensuite ajouter le domaine **testlab.**\<your public domain> à votre abonnement Microsoft 365 ou Office 365 d’évaluation ou payant par le biais du processus d’inscription domaine. Cela se compose de l’ajout d’autres enregistrements DNS pour le domaine **testlab.** \<your public domain> . Pour plus d’informations sur ce processus, voir [Ajouter un domaine à Office 365](https://docs.microsoft.com/office365/admin/setup/add-domain). 
+Vous devez ensuite ajouter le domaine **testlab.**\<your public domain> domaine à votre version d’évaluation de Microsoft 365 ou à votre abonnement payant en passant par le processus d’inscription de domaine. Cela se compose de l’ajout d’autres enregistrements DNS pour le domaine **testlab.** \<your public domain> . Pour plus d’informations, consultez [la rubrique ajouter un domaine à Microsoft 365](../admin/setup/add-domain.md). 
 
 Voici la configuration finale.
   
@@ -67,7 +67,7 @@ Voici la configuration finale.
   
 Cette configuration se compose des éléments suivants : 
 
-- Les abonnements en version payante ou d’évaluation Microsoft 365 E5 et Office 365 E5 avec le domaine DNS testlab.\<your public domain name> Inscrit(e).
+- Un abonnement à la version d’évaluation ou payant de Microsoft 365 E5 avec le domaine DNS testlab.\<your public domain name> Inscrit(e).
 - Un intranet d’organisation simplifié connecté à Internet, qui se compose des machines virtuelles DC1, APP1 et CLIENT1 sur un sous-réseau d’un réseau virtuel Azure.
 
 Notez comment le testlab.\<your public domain name> est désormais :
@@ -144,10 +144,10 @@ Explorez les autres fonctionnalités liées aux [identités](m365-enterprise-tes
 
 ## <a name="see-also"></a>Voir aussi
 
-[Guides de laboratoire de test Microsoft 365 Entreprise](m365-enterprise-test-lab-guides.md)
+[Microsoft 365 pour les entreprises Guides de laboratoire d'essai](m365-enterprise-test-lab-guides.md)
 
-[Déployer Microsoft 365 Entreprise](deploy-microsoft-365-enterprise.md)
+[Vue d’ensemble de Microsoft 365 pour entreprise](microsoft-365-overview.md)
 
-[Documentation Microsoft 365 Entreprise](https://docs.microsoft.com/microsoft-365-enterprise/)
+[Documentation Microsoft 365 pour entreprise](https://docs.microsoft.com/microsoft-365-enterprise/)
 
 

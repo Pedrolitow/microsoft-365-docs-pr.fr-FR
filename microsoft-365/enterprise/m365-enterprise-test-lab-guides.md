@@ -9,7 +9,7 @@ ms.date: 11/20/2019
 audience: ITPro
 ms.topic: hub-page
 ms.service: o365-solutions
-localization_priority: Priority
+localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
@@ -18,12 +18,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: Servez-vous des guides de laboratoire de test pour configurer les environnements de développement/test, de preuve de concept et de démonstration pour Microsoft 365 pour entreprise.
-ms.openlocfilehash: 5907edd1bc42b9d679ed020331f225ef2d2b2594
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
-ms.translationtype: HT
+ms.openlocfilehash: 685bf25db330b4bf43a3a7258aeb43517c239e81
+ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44818740"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46686765"
 ---
 # <a name="microsoft-365-for-enterprise-test-lab-guides"></a>Guides de laboratoire de test Microsoft 365 pour entreprise
 
@@ -43,7 +43,7 @@ Accédez à [Test Lab Guide Stack](../media/m365-enterprise-test-lab-guides/Micr
 
 ## <a name="base-configuration"></a>Configuration de base
 
-Créez tout d’abord un environnement de test pour [Microsoft 365 pour entreprise](https://docs.microsoft.com/microsoft-365-enterprise/) qui inclut Office 365 E5, Enterprise Mobility + Security (EMS) E5 et Windows 10 Entreprise. Vous pouvez créer deux types de configuration de base différents :
+Tout d’abord, vous créez un environnement de test pour [Microsoft 365 pour les entreprises](https://docs.microsoft.com/microsoft-365-enterprise/). Vous pouvez créer deux types différents de configurations de base :
 
 - Utilisez la [configuration de base minimale](lightweight-base-configuration-microsoft-365-enterprise.md) pour configurer et faire une démonstration des fonctionnalités de Microsoft 365 pour entreprise dans un environnement cloud uniquement, sans aucun composant local.
 
@@ -63,7 +63,7 @@ Pour obtenir une description des fonctionnalités liées à l’identité, repor
   
    Activez et testez l’authentification directe à un contrôleur de domaine Windows Server AD DS.
 
-- [Authentification fédérée](federated-identity-for-your-office-365-dev-test-environment.md)
+- [Authentification fédérée](federated-identity-for-your-microsoft-365-dev-test-environment.md)
   
    Activez et testez l’authentification fédérée à un contrôleur de domaine Windows Server AD DS.
 

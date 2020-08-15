@@ -9,7 +9,7 @@ ms.date: 11/21/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Priority
+localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
@@ -17,37 +17,37 @@ ms.custom:
 - Ent_TLGs
 - seo-marvel-apr2020
 ms.assetid: 6f916a77-301c-4be2-b407-6cec4d80df76
-description: Utilisez ce Guide de Laboratoire Test afin de créer une simulation d’environnement de test dédiée à Microsoft 365 Entreprise.
-ms.openlocfilehash: 486429bf9e1c0a88c9beb01a092f968256c1fa77
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
-ms.translationtype: HT
+description: Utilisez ce guide de laboratoire de test pour créer un environnement de test d’entreprise simulé pour Microsoft 365 pour les entreprises.
+ms.openlocfilehash: 9f4cbb300946109368759d6ec8f1120332e1ed92
+ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44818494"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46685675"
 ---
 # <a name="the-simulated-enterprise-base-configuration"></a>Configuration de base d’une entreprise simulée
 
-*Ce Guide de Laboratoire Test peut être utilisé pour les environnements de test Microsoft 365 Enterprise et Office 365 Enterprise.*
+*Ce guide de laboratoire de test peut être utilisé pour les environnements de test Microsoft 365 pour les environnements de test d’entreprise et Office 365.*
 
-Vous trouverez dans cet article des instructions détaillées pour créer un environnement simplifié pour Microsoft 365 Entreprise qui comprend :
+Cet article fournit des instructions étape par étape pour créer un environnement simplifié pour Microsoft 365 pour les entreprises qui inclut :
 
 - Un abonnement d’évaluation ou payant Microsoft 365 E5.
 - Un intranet simplifié d’une organisation connecté à Internet, composé de trois machines virtuelles sur un réseau virtuel Azure (DC1, APP1 et CLIENT1).
  
 ![Configuration de base d’une entreprise simulée](../media/simulated-ent-base-configuration-microsoft-365-enterprise/Phase4.png)
 
-Vous pouvez utiliser l’environnement obtenu pour tester les fonctions et le bon fonctionnement de[Microsoft 365 Enterprise](https://www.microsoft.com/microsoft-365/enterprise), par vous-même ou en suivant les conseils des [guides de laboratoire de test](m365-enterprise-test-lab-guides.md).
+Vous pouvez utiliser l’environnement obtenu pour tester les fonctionnalités de [Microsoft 365 pour Enterprise](https://www.microsoft.com/microsoft-365/enterprise) avec des guides de [laboratoire de test](m365-enterprise-test-lab-guides.md) supplémentaires ou vous-même.
 
 ![Guides de laboratoire de test pour Microsoft Cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
 > [!TIP]
-> Accédez au [Guide de laboratoire de laboratoire de test Microsoft 365 Entreprise](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) d’une carte visuelle à tous les Articles de la pile de guides de laboratoires de test Microsoft 365 Enterprise.
+> Accédez à la [pile de guide de laboratoire de test microsoft 365](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) pour un plan visuel vers tous les Articles de la pile de guide de laboratoire de test Microsoft 365.
 
 ## <a name="phase-1-create-a-simulated-intranet"></a>Phase 1: Créer un intranet simulé
 
 Dans cette phase, vous allez créer un intranet simulé dans les services d’infrastructure Azure comprenant un contrôleur de domaine Windows Server Active Directory, un serveur d’application et un ordinateur client. 
 
-Vous utiliserez ces ordinateurs dans des[Guides de laboratoire de Test Microsoft 365 Enterprise](m365-enterprise-test-lab-guides.md)supplémentaires afin de configurer et montrer l’identité hybride et les autres fonctionnalités.
+Vous utiliserez ces ordinateurs dans des [guides de laboratoire de test Microsoft 365](m365-enterprise-test-lab-guides.md) supplémentaires pour configurer et illustrer les fonctionnalités de l’identité hybride et d’autres fonctionnalités.
 
 ### <a name="method-1-build-your-simulated-intranet-with-an-azure-resource-manager-template"></a>Méthode 1: Créer votre intranet simulé avec un Modèle de Gestion de Ressources Azure 
 
@@ -371,7 +371,7 @@ Durant cette phase, vous allez créer un nouvel abonnement Microsoft 365 E5 qu
 
 Connectez-vous à CLIENT1 avec le compte CORP\User1 à partir du Portail Microsoft Azure.
 
-Pour créer un abonnement d’évaluation Office 365 E5, suivez les instructions de [phase 1](lightweight-base-configuration-microsoft-365-enterprise.md#phase-1-create-your-office-365-e5-subscription) du Guide de laboratoire de test de la configuration de base légère.
+Pour créer un abonnement d’évaluation Office 365 E5, suivez les instructions de [phase 1](lightweight-base-configuration-microsoft-365-enterprise.md#phase-1-create-your-microsoft-365-e5-subscription) du Guide de laboratoire de test de la configuration de base légère.
 
 Pour configurer un abonnement d’évaluation Office 365 E5, suivez les instructions de [phase 2](lightweight-base-configuration-microsoft-365-enterprise.md#phase-2-configure-your-office-365-trial-subscription) du Guide de laboratoire de test de la configuration de base légère.
 
@@ -379,7 +379,7 @@ Pour configurer un abonnement d’évaluation Office 365 E5, suivez les instru
 
 Si vous avez simplement besoin d’un environnement de test Office 365, vous pouvez vous arrêter ici. 
 
-Pour plus d’informations sur les guides de labo de test, voir [les guides de laboratoire de test Microsoft 365 Entreprise](m365-enterprise-test-lab-guides.md) pour Office 365 et Microsoft 365.
+Consultez [microsoft 365 pour les guides de laboratoire de test d’entreprise](m365-enterprise-test-lab-guides.md) pour obtenir des guides de laboratoire de test supplémentaires qui s’appliquent à Microsoft 365 et Office 365.
 
 ### <a name="add-a-microsoft-365-e5-trial-subscription"></a>Ajouter un abonnement d’évaluation de Microsoft 365 E5.
 
@@ -398,7 +398,7 @@ Il s’agit de votre configuration finale.
   
 ![Phase 2 de la configuration de base de l’entreprise simulée](../media/simulated-ent-base-configuration-microsoft-365-enterprise/Phase4.png)
   
-Vous êtes désormais prêt à profiter des fonctionnalités supplémentaires de [Microsoft 365 Entreprise](https://www.microsoft.com/microsoft-365/enterprise).
+Vous êtes maintenant prêt à tester les fonctionnalités supplémentaires de [Microsoft 365 pour entreprises](https://www.microsoft.com/microsoft-365/enterprise).
   
 ## <a name="next-steps"></a>Étapes suivantes
 
@@ -410,8 +410,8 @@ Découvrez les nouveaux ensembles de guides pour les tests de laboratoire :
 
 ## <a name="see-also"></a>Voir aussi
 
-[Guides de laboratoire de test Microsoft 365 Entreprise](m365-enterprise-test-lab-guides.md)
+[Microsoft 365 pour les entreprises Guides de laboratoire d'essai](m365-enterprise-test-lab-guides.md)
 
-[Déployer Microsoft 365 Entreprise](deploy-microsoft-365-enterprise.md)
+[Vue d’ensemble de Microsoft 365 pour entreprise](microsoft-365-overview.md)
 
-[Documentation Microsoft 365 Entreprise](https://docs.microsoft.com/microsoft-365-enterprise/)
+[Documentation Microsoft 365 pour entreprise](https://docs.microsoft.com/microsoft-365-enterprise/)

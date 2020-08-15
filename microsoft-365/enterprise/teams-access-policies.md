@@ -1,5 +1,5 @@
 ---
-title: Stratégies de teams recommandées-Microsoft 365 Enterprise | Microsoft docs
+title: Stratégies de teams recommandées-Microsoft 365 pour les entreprises | Microsoft docs
 description: Décrit les stratégies pour les recommandations de Microsoft relatives à la sécurisation des communications et de l’accès aux fichiers des équipes.
 author: MicrosoftHeidi
 manager: serdars
@@ -16,12 +16,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: f1a4a4ea69efc3c68bdc8ed66aa18833a28feb94
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 41ead64a7a94dcd5afb22a311d7637326949fc7c
+ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636722"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46685653"
 ---
 # <a name="policy-recommendations-for-securing-teams-chats-groups-and-files"></a>Recommandations de stratégie pour la sécurisation des conversations, des groupes et des fichiers teams
 
@@ -35,7 +35,7 @@ D’autres recommandations spécifiques au déploiement de teams sont incluses d
 
 Vous n’avez pas besoin d’activer les services dépendants pour commencer à utiliser Microsoft Teams. Cela fonctionnera tout simplement. Toutefois, vous devez être prêt à gérer les éléments suivants :
 
-- Groupes Microsoft 365
+- Groupes Microsoft 365
 - Sites d’équipe SharePoint
 - OneDrive Entreprise
 - Boîtes aux lettres
@@ -52,7 +52,7 @@ Il s’agit des services dépendants à inclure dans l’affectation d’applica
 - Microsoft Teams
 - Sharepoint Online et OneDrive Entreprise
 - Exchange Online
-- Skype Entreprise Online
+- Skype Entreprise Online
 - Microsoft Stream (enregistrements de réunions)
 - Planificateur Microsoft (tâches du planificateur et données de plan)
 
@@ -62,7 +62,7 @@ Ce tableau répertorie les stratégies qui doivent être revisitées, ainsi que 
 |:---------------|:-------|:----------------|
 |**Baseline**|[Exiger l’authentification multifacteur lorsque le risque de connexion est *moyen* ou *élevé*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Assurez-vous que les équipes et les services dépendants sont inclus dans la liste des applications. Les équipes disposent également d’un accès invité et de règles d’accès externe à prendre en compte pour en savoir plus à ce sujet plus loin dans cet article.|
 |        |[Bloquer les clients ne prenant pas en charge l’authentification moderne](identity-access-policies.md#block-clients-that-dont-support-modern-authentication)|Incluez les équipes et les services dépendants dans l’affectation d’applications Cloud.|
-|        |[Les utilisateurs à haut risque doivent changer leur mot de passe](identity-access-policies.md#high-risk-users-must-change-password)|Force les utilisateurs de teams à modifier leur mot de passe lors de la connexion si une activité à haut risque est détectée pour leur compte. Assurez-vous que les équipes et les services dépendants sont inclus dans la liste des applications.|
+|        |[Les utilisateurs à risque élevé doivent modifier leur mot de passe](identity-access-policies.md#high-risk-users-must-change-password)|Force les utilisateurs de teams à modifier leur mot de passe lors de la connexion si une activité à haut risque est détectée pour leur compte. Assurez-vous que les équipes et les services dépendants sont inclus dans la liste des applications.|
 |        |[Appliquer des stratégies de protection des données d’application](identity-access-policies.md#apply-app-data-protection-policies)|Assurez-vous que les équipes et les services dépendants sont inclus dans la liste des applications. Mettez à jour la stratégie pour chaque plateforme (iOS, Android, Windows).|
 |        |[Exiger les applications approuvées et la protection des applications](identity-access-policies.md#require-approved-apps-and-app-protection)|Incluez les équipes et les services dépendants dans cette stratégie.|
 |        |[Définir les stratégies de conformité des appareils](identity-access-policies.md#define-device-compliance-policies)|Incluez les équipes et les services dépendants dans cette stratégie.|
@@ -74,7 +74,7 @@ Ce tableau répertorie les stratégies qui doivent être revisitées, ainsi que 
 
 ## <a name="teams-dependent-services-architecture"></a>Architecture des services dépendants de teams
 
-Pour référence, le diagramme suivant illustre la façon dont les équipes des services s’appuient sur. Pour plus d’informations et des illustrations supplémentaires, consultez [la rubrique Microsoft teams et les services de productivité associés dans microsoft 365 pour les architectes informatiques](https://docs.microsoft.com/office365/enterprise/microsoft-cloud-it-architecture-resources#microsoft-teams-and-related-productivity-services-in-microsoft-365-for-it-architects).
+Pour référence, le diagramme suivant illustre la façon dont les équipes des services s’appuient sur. Pour plus d’informations et des illustrations supplémentaires, consultez [la rubrique Microsoft teams et les services de productivité associés dans microsoft 365 pour les architectes informatiques](../solutions/productivity-illustrations.md).
 
 ![Diagramme montrant les dépendances de teams sur SharePoint Online, OneDrive entreprise et Exchange.](../media/identity-access-logical-architecture-teams.png)
 

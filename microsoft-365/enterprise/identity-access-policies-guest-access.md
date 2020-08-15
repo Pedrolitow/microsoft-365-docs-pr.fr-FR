@@ -1,5 +1,5 @@
 ---
-title: Stratégies d’accès aux identités et aux appareils pour autoriser l’accès B2B aux invités et externes-Microsoft 365 Enterprise | Microsoft docs
+title: Stratégies d’accès aux identités et aux appareils pour autoriser l’accès B2B aux invités et externes-Microsoft 365 pour les entreprises | Microsoft docs
 description: Décrit l’accès conditionnel et les stratégies connexes recommandées pour la protection de l’accès des utilisateurs invités et externes.
 author: BrendaCarter
 manager: johmar
@@ -15,12 +15,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: 8276dcf85f6c5fd61e01e67deee4fea35c1a15c4
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 0ab4a2d48a1ac90f48bbfee82239fc0c4c1d55d5
+ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42067449"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46686825"
 ---
 # <a name="policies-for-allowing-guest-and-external-b2b-access"></a>Stratégies d’autorisation d’accès B2B invité et externe
 Cet article explique comment ajuster les stratégies courantes d’identité et d’accès aux appareils pour autoriser l’accès au compte B2B (utilisateurs invités et externes). Ce guide s’appuie sur les [stratégies courantes d’identité et d’accès aux appareils](identity-access-policies.md).
@@ -39,7 +39,7 @@ Le tableau suivant répertorie les stratégies que vous devez mettre à jour ou 
 
 |Niveau de protection|Stratégies|Plus d’informations|
 |:---------------|:-------|:----------------|
-|**Référence**|[Exiger MFA pour les utilisateurs invités et externes](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Créez cette nouvelle règle et appliquez-la uniquement aux invités et aux utilisateurs externes. Sous risque de connexion, laissez toutes les options désactivées pour toujours appliquer l’authentification multifacteur.|
+|**Baseline**|[Exiger MFA pour les utilisateurs invités et externes](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Créez cette nouvelle règle et appliquez-la uniquement aux invités et aux utilisateurs externes. Sous risque de connexion, laissez toutes les options désactivées pour toujours appliquer l’authentification multifacteur.|
 |        |[Exiger l’authentification multifacteur lorsque le risque de connexion est *moyen* ou *élevé*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Modifiez cette règle pour exclure les utilisateurs invités et externes.|
 |        |[Exiger des PC conformes](identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets)|Modifiez cette règle pour exclure les utilisateurs invités et externes.|
 
@@ -58,7 +58,7 @@ Microsoft teams différencie les utilisateurs invités et les utilisateurs exter
 Cette règle invite les invités à s’inscrire à l’authentification multifacteur dans votre client, qu’ils soient inscrits pour l’authentification multifacteur dans leur client d’accueil. Lors de l’accès à des ressources dans votre client, les invités et les utilisateurs externes doivent utiliser l’authentification multifacteur pour chaque demande. 
 
 ### <a name="excluding-guest-and-external-users-from-risk-based-mfa"></a>Exclusion des utilisateurs invités et externes de l’authentification multifacteur basée sur les risques
-Bien que les organisations puissent appliquer des stratégies basées sur les risques pour les utilisateurs B2B à l’aide de la protection des identités, il existe des limitations dans l’implémentation de la protection des identités pour les utilisateurs de la collaboration B2B dans un répertoire de ressources en raison de leur identité dans leur domicile. Active. En raison de ces limitations, Microsoft vous recommande d’exclure les utilisateurs invités des stratégies MFA à risque et de leur demander d’utiliser toujours l’authentification multifacteur. 
+Bien que les organisations puissent appliquer des stratégies basées sur les risques pour les utilisateurs B2B à l’aide de la protection des identités, il existe des limitations dans l’implémentation de la protection des identités pour les utilisateurs de la collaboration B2B dans un répertoire de ressources en raison de leur identité dans leur répertoire de base. En raison de ces limitations, Microsoft vous recommande d’exclure les utilisateurs invités des stratégies MFA à risque et de leur demander d’utiliser toujours l’authentification multifacteur. 
 
 Pour plus d’informations, consultez la rubrique [limitations de la protection des identités pour les utilisateurs de collaboration B2B](https://docs.microsoft.com/azure/active-directory/identity-protection/concept-identity-protection-b2b#limitations-of-identity-protection-for-b2b-collaboration-users). 
 

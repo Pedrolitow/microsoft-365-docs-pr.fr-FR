@@ -1,5 +1,5 @@
 ---
-title: Conditions requises pour l’implémentation de stratégies d’accès aux identités et aux appareils-Microsoft 365 Enterprise | Microsoft docs
+title: Conditions préalables à l’implémentation des stratégies d’accès aux identités et aux appareils-Microsoft 365 pour les entreprises | Microsoft docs
 description: Décrit les recommandations de Microsoft liées à l’application de stratégies et de configurations de l’accès aux identités et aux appareils.
 author: BrendaCarter
 manager: Laurawi
@@ -15,12 +15,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: bfbb0481670b2f957bf240c261fcbafab96717b9
-ms.sourcegitcommit: 98782ee4497d72232462c51a3071fae313282980
+ms.openlocfilehash: 295e1c713b97740fcf40e9607e650c242a68c035
+ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44222588"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46685877"
 ---
 # <a name="prerequisite-work-for-implementing-identity-and-device-access-policies"></a>Tâches préalables à l’implémentation de stratégies d’accès aux identités et aux appareils
 
@@ -67,13 +67,13 @@ Il est également recommandé que les appareils appartenant à une entreprise (C
 ### <a name="recommended-email-clients"></a>Clients de messagerie recommandés
 Les clients de messagerie suivants prennent en charge l’authentification moderne et l’accès conditionnel. 
 
-|Plateforme|Client|Version/Notes|
+|Plate-forme|Client|Version/Notes|
 |:-------|:-----|:------------|
 |**Windows**|Outlook|2016, 2013 [activer l’authentification moderne](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/enable-modern-authentication), les [mises à jour requises](https://support.office.com/article/Outlook-Updates-472c2322-23a4-4014-8f02-bbc09ad62213)|
 |**iOS**|Outlook pour iOS|[La plus récente](https://itunes.apple.com/us/app/microsoft-outlook-email-and-calendar/id951937596?mt=8)|
 |**Android**|Outlook pour Android|[La plus récente](https://play.google.com/store/apps/details?id=com.microsoft.office.outlook&hl=en)|
 |**macOS**|Outlook|2016|
-|**Linux**|Non pris en charge||
+|**Linux**|Non prise en charge||
 |||
 
 
@@ -91,13 +91,12 @@ Les clients suivants sont recommandés lorsqu’une stratégie de documents séc
 |macOS|Préversion publique|Préversion publique|N/A|N/A|Non prise en charge|
 |Linux|Non pris en charge|Non pris en charge|Non pris en charge|Non pris en charge|Non pris en charge|
 
-<sup>*</sup>En savoir plus sur l’utilisation de l’accès conditionnel avec le [client de synchronisation OneDrive](https://docs.microsoft.com/onedrive/enable-conditional-access).
+<sup>*</sup> En savoir plus sur l’utilisation de l’accès conditionnel avec le [client de synchronisation OneDrive](https://docs.microsoft.com/onedrive/enable-conditional-access).
 
-### <a name="microsoft-365-client-support"></a>Prise en charge du client Microsoft 365
+### <a name="microsoft-365-client-support"></a>Prise en charge du client Microsoft 365
 Pour plus d’informations sur la prise en charge des clients, consultez les articles suivants :
-- [Prise en charge des applications clientes Microsoft 365-accès conditionnel](https://docs.microsoft.com/office365/enterprise/office-365-client-support-conditional-access)
-- [Prise en charge des applications clientes Microsoft 365-gestion des applications mobiles](https://docs.microsoft.com/office365/enterprise/office-365-client-support-mobile-application-management)
-- [Prise en charge des applications clientes Microsoft 365-authentification moderne](https://docs.microsoft.com/office365/enterprise/office-365-client-support-modern-authentication)
+- [Prise en charge des applications clientes Microsoft 365-accès conditionnel](microsoft-365-client-support-conditional-access.md)
+- [Prise en charge des applications clientes Microsoft 365-authentification moderne](microsoft-365-client-support-modern-authentication.md)
 
 ## <a name="protecting-administrator-accounts"></a>Protection des comptes administrateurs
 Azure AD offre un moyen simple de commencer la protection de l’accès administrateur avec une stratégie d’accès conditionnel préconfigurée. Dans Azure AD, accédez à **accès conditionnel** et recherchez cette stratégie, **stratégie de base : exiger l’authentification multifacteur pour les administrateurs (aperçu)**. Sélectionnez cette stratégie, puis sélectionnez **utiliser la stratégie immédiatement**. 
@@ -113,7 +112,7 @@ Pour plus d’informations, consultez la rubrique [stratégie de sécurité de b
 
 Les recommandations supplémentaires sont les suivantes :
 - Utilisez Azure AD Privileged Identity Management pour réduire le nombre de comptes d’administrateur permanents. Voir [commencer à utiliser PIM](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-getting-started). 
-- [Utilisez la gestion des accès privilégiés dans Office 365](https://docs.microsoft.com/office365/securitycompliance/privileged-access-management-overview) pour protéger votre organisation contre les violations susceptibles d’utiliser des comptes d’administrateur privilégié existants avec un accès permanent aux données sensibles ou l’accès aux paramètres de configuration critiques. 
+- [Utilisez la gestion des accès privilégiés](../compliance/privileged-access-management-overview.md) pour protéger votre organisation contre les violations susceptibles d’utiliser des comptes d’administrateur privilégié existants avec un accès permanent aux données sensibles ou l’accès aux paramètres de configuration critiques. 
 - Utiliser les comptes administrateur uniquement pour l’administration. Les administrateurs doivent disposer d’un compte d’utilisateur distinct pour une utilisation normale non administrative et n’utiliser leur compte d’administrateur que si nécessaire pour effectuer une tâche associée à leur fonction. Les rôles d' [administrateur microsoft 365](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles) ont beaucoup plus de privilèges que les services Microsoft 365.
 - Suivez les meilleures pratiques en matière de sécurisation des comptes privilégiés dans Azure AD, comme décrit dans cet [article](https://docs.microsoft.com/azure/active-directory/admin-roles-best-practices).
 

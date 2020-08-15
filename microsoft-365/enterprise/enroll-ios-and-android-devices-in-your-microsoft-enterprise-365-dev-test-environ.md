@@ -1,5 +1,5 @@
 ---
-title: Inscrire des appareils iOS et Android dans votre environnement de test Microsoft 365 Enterprise
+title: Inscrire des appareils iOS et Android dans votre environnement de test Microsoft 365 pour les entreprises
 f1.keywords:
 - NOCSH
 ms.author: josephd
@@ -14,25 +14,25 @@ ms.collection: M365-identity-device-management
 ms.custom: Ent_TLGs
 ms.assetid: 49c7758a-1c01-4153-9b63-5eae3f6305ce
 description: Utilisez ce guide de laboratoire de test pour inscrire des appareils dans votre environnement de test Microsoft 365 et les gérer à distance.
-ms.openlocfilehash: ae6ff9e704fc239638b5951a95ae23c45e85b7be
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: b4a95b2c7e58239c0a8d0d3b5045e7337f43de6b
+ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42067651"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46686009"
 ---
-# <a name="enroll-ios-and-android-devices-in-your-microsoft-365-enterprise-test-environment"></a>Inscrire des appareils iOS et Android dans votre environnement de test Microsoft 365 Enterprise
+# <a name="enroll-ios-and-android-devices-in-your-microsoft-365-for-enterprise-test-environment"></a>Inscrire des appareils iOS et Android dans votre environnement de test Microsoft 365 pour les entreprises
 
-*Ce Guide de Laboratoire Test peut uniquement être utilisé pour les environnements de test Microsoft 365 Entreprise*.
+*Ce guide de laboratoire de test ne peut être utilisé que pour Microsoft 365 pour les environnements de test d’entreprise.*
 
-En suivant les instructions fournies dans cet article, vous serez en mesure d’inscrire et de tester des fonctionnalités de gestion des appareils mobiles de base pour les appareils iOS et Android dans votre environnement de test Microsoft 365 Enterprise.
+En suivant les instructions fournies dans cet article, vous serez en mesure d’inscrire et de tester des fonctionnalités de gestion des appareils mobiles de base pour les appareils iOS et Android dans votre environnement de test Microsoft 365 pour les entreprises.
 
 ![Guides de laboratoire de test pour Microsoft Cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
   
 > [!TIP]
-> Cliquez [ici](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) pour afficher le plan de tous les articles de l’ensemble de guides de laboratoire de test de Microsoft 365 Entreprise.
+> Cliquez [ici](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) pour afficher le plan visuel de tous les articles de l’ensemble des guides de laboratoire de test de Microsoft 365 pour entreprise.
 
-## <a name="phase-1-build-out-your-microsoft-365-enterprise-test-environment"></a>Phase 1 : Créer l’environnement de test Microsoft 365 Entreprise.
+## <a name="phase-1-build-out-your-microsoft-365-for-enterprise-test-environment"></a>Phase 1 : créer votre environnement de test Microsoft 365 pour les entreprises
 
 Si vous souhaitez simplement inscrire des appareils iOS et Android de manière légère avec la configuration minimale requise, suivez les instructions de la [configuration de base légère](lightweight-base-configuration-microsoft-365-enterprise.md).
   
@@ -78,9 +78,9 @@ Explorez les fonctionnalités supplémentaires de [gestion des appareils mobiles
 
 ## <a name="see-also"></a>Voir aussi
 
-[Guides de laboratoire de test Microsoft 365 Entreprise](m365-enterprise-test-lab-guides.md)
+[Microsoft 365 pour les entreprises Guides de laboratoire d'essai](m365-enterprise-test-lab-guides.md)
   
-[Stratégies de conformité des appareils pour votre environnement de test Microsoft 365 Enterprise](mam-policies-for-your-microsoft-365-enterprise-dev-test-environment.md)
+[Stratégies de conformité des appareils pour votre environnement de test Microsoft 365 pour les entreprises](mam-policies-for-your-microsoft-365-enterprise-dev-test-environment.md)
   
-[Déployer Microsoft 365 Entreprise](deploy-microsoft-365-enterprise.md)
+[Vue d’ensemble de Microsoft 365 pour entreprise](microsoft-365-overview.md)
 

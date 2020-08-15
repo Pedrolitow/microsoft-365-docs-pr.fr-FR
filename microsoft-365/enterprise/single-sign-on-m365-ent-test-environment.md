@@ -9,7 +9,7 @@ ms.date: 11/21/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Priority
+localization_priority: Normal
 ms.collection:
 - M365-identity-device-management
 - Strat_O365_Enterprise
@@ -18,16 +18,16 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: ''
 description: 'Résumé : Configurez et testez l’authentification unique transparente Azure AD pour votre environnement de test Microsoft 365.'
-ms.openlocfilehash: ba3f943a53f05c452a8e01e40bb6924dc42a866e
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
-ms.translationtype: HT
+ms.openlocfilehash: 3ba229a62f66cad715f604bab91cd12032da7be8
+ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636867"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46685771"
 ---
 # <a name="azure-ad-seamless-single-sign-on-for-your-microsoft-365-test-environment"></a>Authentification unique transparente Azure AD pour votre environnement de test Microsoft 365
 
-*Ce Guide de Laboratoire Test peut être utilisé pour les environnements de test Microsoft 365 Entreprise et Office 365 Entreprise*.
+*Ce guide de laboratoire de test peut être utilisé pour les environnements de test Microsoft 365 pour les environnements de test d’entreprise et Office 365.*
 
 L’authentification unique (SSO) transparente Azure AD connecte automatiquement les utilisateurs quand ils sont sur un PC ou un appareil connecté au réseau de leur organisation. L’authentification unique transparente Azure AD permet aux utilisateurs d’accéder facilement aux applications informatiques sans avoir besoin de composants locaux supplémentaires.
 
@@ -41,7 +41,7 @@ Il existe deux phases de configuration :
 ![Guides de laboratoire de test pour Microsoft Cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
 > [!TIP]
-> Cliquez [ici](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) pour afficher le plan de tous les articles de l’ensemble de guides de laboratoire de test de Microsoft 365 Entreprise.
+> Cliquez [ici](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) pour afficher le plan visuel de tous les articles de l’ensemble des guides de laboratoire de test de Microsoft 365 pour entreprise.
   
 ## <a name="phase-1-configure-password-hash-synchronization-for-your-microsoft-365-test-environment"></a>Étape 1 : Configuration de la synchronisation de hachage de mot de passe pour votre environnement de test Microsoft 365
 
@@ -51,7 +51,7 @@ Suivez les instructions fournies dans l’article [Synchronisation de hachage de
   
 Cette configuration se compose des éléments suivants :  
   
-- Abonnements d’évaluation ou payants Microsoft 365 E5 ou Office 365 E5.
+- Un abonnement d’évaluation ou payant Microsoft 365 E5.
 - Un intranet d’organisation simplifié connecté à Internet, qui se compose des machines virtuelles DC1, APP1 et CLIENT1 sur un sous-réseau d’un réseau virtuel Azure. 
 - Azure AD Connect s’exécute sur APP1 pour synchroniser le domaine Active Directory Domain Services (AD DS) TESTLAB avec le client Azure AD de votre abonnement Microsoft 365 de manière périodique.
 
@@ -83,7 +83,7 @@ Durant cette phase, vous allez configurer Azure AD Connect sur APP1 pour qu’
 
 11. Sur le Portail Azure, dans le volet gauche, cliquez sur **Azure Active Directory > Azure AD Connect**. Vérifiez que la fonctionnalité **Authentification unique transparente** affiche l’état **Activé**.
 
-Vérifiez ensuite si vous pouvez vous connecter à votre abonnement avec le nom d’utilisateur <strong>utilisateur1@testlab.</strong>\<votre domaine public> du compte Utilisateur1.
+Ensuite, testez la capacité à se connecter à votre abonnement avec le <strong>User1@testlab.</strong>\<your public domain> nom d’utilisateur du compte utilisateur1.
 
 1. Dans Internet Explorer sur APP1, cliquez sur l’icône Paramètres, puis cliquez sur **Options Internet**.
  
@@ -97,7 +97,7 @@ Vérifiez ensuite si vous pouvez vous connecter à votre abonnement avec le nom 
 
 6. Déconnectez-vous, puis reconnectez-vous avec un compte différent.
 
-7. Lorsque vous êtes invité à vous connecter, spécifiez<strong>user1@testlab.</strong>\<votre domaine public > nom, puis cliquez sur **suivant**. Vous devez correctement vous connecter en tant que User1 sans entrer un mot de passe. Cela prouve qu’ Azure AD transparente SSO fonctionne.
+7. Lorsque vous êtes invité à vous connecter, spécifiez <strong>User1@testlab.</strong>\<your public domain> nom, puis cliquez sur **suivant**. Vous devez correctement vous connecter en tant que User1 sans entrer un mot de passe. Cela prouve qu’ Azure AD transparente SSO fonctionne.
 
 Veuillez noter que même si l’utilisateur User1 dispose des autorisations d’administrateur pour le domaine TESTLAB AD DS, il n’est pas un administrateur général pour Azure AD. Par conséquent, vous ne verrez pas l’icône**Administrateur**comme une option.
 
@@ -108,12 +108,10 @@ Voici la configuration obtenue :
  
 Cette configuration se compose des éléments suivants : 
 
-- Les abonnements à la version payante ou d’évaluation Microsoft 365 E5 et Office 365 E5 avec le domaine DNS TESTLAB.\<votre nom de domaine> enregistré.
+- Un abonnement d’évaluation ou payant Microsoft 365 E5 avec le domaine DNS testlab.\<your domain name> Inscrit(e).
 - Un intranet d’organisation simplifié connecté à Internet, qui se compose des machines virtuelles DC1, APP1 et CLIENT1 sur un sous-réseau d’un réseau virtuel Azure. 
 - Azure AD Connect s’exécute sur APP1 pour synchroniser la liste des comptes et des groupes du client Azure AD de votre abonnement Microsoft 365 au domaine TESTLAB AD DS. 
 - L’authentification unique transparente Azure AD est activée pour permettre aux ordinateurs sur l’intranet simulé de se connecter aux ressources cloud Microsoft 365 sans avoir à spécifier le mot de passe du compte d’utilisateur.
-
-Consultez l’étape [Simplifier la connexion de l’utilisateur](identity-secure-your-passwords.md#identity-sso) de la phase d’identité pour obtenir des informations et des liens pour configurer l’authentification unique transparente Azure AD en production.
 
 ## <a name="next-step"></a>Étape suivante
 
@@ -121,10 +119,10 @@ Explorez les autres fonctionnalités liées aux [identités](m365-enterprise-tes
 
 ## <a name="see-also"></a>Voir aussi
 
-[Guides de laboratoire de test Microsoft 365 Entreprise](m365-enterprise-test-lab-guides.md)
+[Microsoft 365 pour les entreprises Guides de laboratoire d'essai](m365-enterprise-test-lab-guides.md)
 
-[Déployer Microsoft 365 Entreprise](deploy-microsoft-365-enterprise.md)
+[Vue d’ensemble de Microsoft 365 pour entreprise](microsoft-365-overview.md)
 
-[Documentation Microsoft 365 Entreprise](https://docs.microsoft.com/microsoft-365-enterprise/)
+[Documentation Microsoft 365 pour entreprise](https://docs.microsoft.com/microsoft-365-enterprise/)
 
 

@@ -9,28 +9,28 @@ ms.date: 10/01/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Priority
+localization_priority: Normal
 ms.collection:
 - M365-identity-device-management
 - Strat_O365_Enterprise
 ms.custom: ''
-description: Découvrez comment Contoso utilise Microsoft Intune dans Microsoft 365 Entreprise pour gérer ses appareils et les applications exécutées sur ces derniers.
-ms.openlocfilehash: 7232c89cc105525cc57facd5a1b9de06426adbca
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
-ms.translationtype: HT
+description: Découvrez comment Contoso utilise Microsoft Intune dans Microsoft 365 pour entreprise pour gérer ses appareils et les applications qui s’y exécutent.
+ms.openlocfilehash: 40d9473bcadfa636f6fd2b2c6c861c27dae8497c
+ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42068364"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46685841"
 ---
 # <a name="mobile-device-management-for-contoso"></a>Gestion des appareils mobiles pour Contoso
 
-Microsoft 365 Entreprise comprend Intune et un ensemble de services Azure pour prendre en charge la gestion et la sécurité des appareils mobiles et des applications.
+Microsoft 365 pour Enterprise inclut Intune et un ensemble de services Azure pour la prise en charge de la gestion et de la sécurité des appareils mobiles et des applications.
 
 Chez Contoso, de nombreux employés sont équipés d’appareils mobiles. Certains d’entre eux ont leur bureau sur les sites de Contoso et d’autres n’ont pas de bureau. Contoso cherchait une solution pour renforcer la productivité des employés, tout en garantissant la sécurité des appareils, des données Contoso stockées sur ces appareils et du comportement des applications.
 
 ## <a name="plan"></a>Prévision
 
-Dès le début de l’analyse de la gestion des appareils mobiles pour Microsoft 365 Entreprise, Contoso a identifié les cas d’utilisation Intune suivants :
+Au début de l’analyse de la gestion des appareils mobiles pour Microsoft 365 pour les entreprises, Contoso a identifié les cas d’utilisation Intune suivants :
 
 - Protection des données et des e-mails Exchange Online pour y accéder en toute sécurité sur les appareils mobiles
 - Implémentation d’un programme BYOD (Apportez votre propre appareil) destiné aux employés de Contoso
@@ -38,7 +38,7 @@ Dès le début de l’analyse de la gestion des appareils mobiles pour Microsoft
 
 Contoso n’utilise pas Intune pour :
 
-- Permettre aux employés d’accéder en toute sécurité à Office 365 depuis un lieu public non géré
+- Autoriser les employés à accéder en toute sécurité à Microsoft 365 à partir d’un kiosque public non géré
 - Protéger les données et les e-mails dans l’environnement local pour pouvoir y accéder en toute sécurité sur les appareils mobiles, car il n’y a plus de serveurs Microsoft Exchange locaux.
 
 ## <a name="deploy"></a>Déployer
@@ -52,7 +52,7 @@ Voici la configuration de l’infrastructure de gestion des appareils mobiles de
 
 - Une plateforme d’appareils Apple a été mise en place pour prendre en charge les employés équipés d’appareils Apple (iPad, iMac, iPhone) et pour les téléphones de type iPhone appartenant à l’entreprise.
 - Les politiques de conditions générales de Contoso ont été créées. Elles sont affichées pendant l’installation du portail de l’entreprise sur les appareils mobiles.
-- Pour les appareils qui ne sont pas inscrits, un ensemble de stratégies de gestion des applications mobiles (GAM) ont été instaurées pour imposer la procédure d’authentification pour accéder aux services Office 365.
+- Pour les appareils qui ne sont pas déployés, un ensemble de stratégies de gestion des applications mobiles (MAM) pour exiger l’authentification pour l’accès aux services Microsoft 365
 - Des stratégies Intune ont été créées pour appliquer :
   - Des applications autorisées
   - Le chiffrement de l’appareil pour empêcher tout accès non autorisé
@@ -71,13 +71,13 @@ Voici l’architecture de déploiement de la gestion des appareils mobiles de Co
 
 ## <a name="next-step"></a>Étape suivante
 
-[Découvrez](contoso-info-protect.md) comment Contoso utilise les fonctionnalités de protection des informations de Microsoft 365 Entreprise pour classer, identifier et protéger les actifs numériques au sein de son organisation.
+[Découvrez](contoso-info-protect.md) comment Contoso utilise les fonctionnalités de protection des informations de Microsoft 365 pour Enterprise pour classer, identifier et protéger les biens numériques stratégiques au sein de son organisation.
 
 ## <a name="see-also"></a>Voir aussi
 
-[Gestion des appareils mobiles pour Microsoft 365 Entreprise](mobility-infrastructure.md)
+[Gestion des appareils pour Microsoft 365](device-management-roadmap-microsoft-365.md)
 
-[Guide de déploiement](deploy-microsoft-365-enterprise.md)
+[Vue d’ensemble de Microsoft 365 pour entreprise](microsoft-365-overview.md)
 
 [Guides de laboratoire de test](m365-enterprise-test-lab-guides.md)
 

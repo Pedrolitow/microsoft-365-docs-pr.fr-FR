@@ -1,5 +1,5 @@
 ---
-title: Classification des données pour votre environnement de test Microsoft 365 Enterprise
+title: Classification des données pour votre environnement de test Microsoft 365 pour les entreprises
 f1.keywords:
 - NOCSH
 ms.author: josephd
@@ -13,26 +13,26 @@ localization_priority: Normal
 ms.collection: M365-security-compliance
 ms.custom: Ent_TLGs
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
-description: Utilisez ce guide de laboratoire de test pour créer et utiliser des étiquettes de rétention sur des documents dans votre environnement de test Microsoft 365 Enterprise.
-ms.openlocfilehash: 41873eba8f2d6168d68d771c6feb17a44c775f6a
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: Utilisez ce guide de laboratoire de test pour créer et utiliser des étiquettes de rétention sur des documents dans votre environnement de test Microsoft 365 pour les entreprises.
+ms.openlocfilehash: 171fcb74b09a1f2e5c80f23e010640dce55660bc
+ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636091"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46686405"
 ---
-# <a name="data-classification-for-your-microsoft-365-enterprise-test-environment"></a>Classification des données pour votre environnement de test Microsoft 365 Enterprise
+# <a name="data-classification-for-your-microsoft-365-for-enterprise-test-environment"></a>Classification des données pour votre environnement de test Microsoft 365 pour les entreprises
 
-*Ce Guide de Laboratoire Test peut être utilisé pour les environnements de test Microsoft 365 Entreprise et Office 365 Entreprise*.
+*Ce guide de laboratoire de test peut être utilisé pour les environnements de test Microsoft 365 pour les environnements de test d’entreprise et Office 365.*
 
-Avec les instructions de cet article, vous configurez la classification des données à l’aide d’étiquettes de rétention dans votre environnement de test Microsoft 365 Enterprise.
+Avec les instructions de cet article, vous configurez la classification des données à l’aide d’étiquettes de rétention dans votre environnement de test Microsoft 365 pour entreprise.
 
 ![Guides de laboratoire de test pour Microsoft Cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
 > [!TIP]
-> Cliquez [ici](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) pour afficher le plan de tous les articles de l’ensemble de guides de laboratoire de test de Microsoft 365 Entreprise.
+> Cliquez [ici](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) pour afficher le plan visuel de tous les articles de l’ensemble des guides de laboratoire de test de Microsoft 365 pour entreprise.
   
-## <a name="phase-1-build-out-your-microsoft-365-enterprise-test-environment"></a>Phase 1 : Créer l’environnement de test Microsoft 365 Entreprise.
+## <a name="phase-1-build-out-your-microsoft-365-for-enterprise-test-environment"></a>Phase 1 : créer votre environnement de test Microsoft 365 pour les entreprises
 
 Si vous souhaitez simplement configurer des étiquettes de rétention de manière simple avec la configuration minimale requise, suivez les instructions de la [configuration de base légère](lightweight-base-configuration-microsoft-365-enterprise.md).
   
@@ -73,7 +73,7 @@ Dans cette phase, vous allez créer les étiquettes de rétention pour les diff�
     
 11. Dans le volet **choisir des étiquettes** , cliquez sur **Ajouter** et sélectionnez les quatre étiquettes.
     
-12. Cliquez sur **Ajouter**, puis sur **Terminer**.
+12. Cliquez sur **Ajouter**, puis sur **Terminé**.
     
 13. Dans le volet **Choisir les étiquettes à publier**, cliquez sur **Suivant**.
     
@@ -91,7 +91,7 @@ Dans cette phase, vous découvrez le comportement par défaut de l’étiquette 
 
 Tout d’abord, créez un site d’équipe SharePoint Online de niveau sensible :
   
-1. À l’aide d’une instance privée de votre navigateur, connectez-vous au [portail Office 365](https://portal.office.com) à l’aide de votre compte d’administrateur général.
+1. À l’aide d’une instance privée de votre navigateur, connectez-vous au [Centre d’administration 365 de Microsoft](https://admin.microsoft.com) à l’aide de votre compte d’administrateur général.
     
 2. Dans la liste des vignettes, cliquez sur **SharePoint**.
     
@@ -125,15 +125,13 @@ Ensuite, créez un nouveau document dans le site SensitiveFiles et modifiez son 
     
 3. Dans la barre de menus, cliquez sur **documents partagés**.
     
-4. Cliquez sur les points de suspension verticaux en regard du nom du fichier **document. docx** , puis cliquez sur **Détails**.
+4. Cliquez sur les points de suspension verticaux en regard de la **Document.docx** nom de fichier, puis cliquez sur **Détails**.
     
 5. Dans le volet de droite, dans la section **Propriétés** , sous **appliquer l’étiquette de rétention**, Notez que l’étiquette de rétention **sensible** a été automatiquement appliquée au document.
     
-6. Cliquez sur **modifier tout**.
+6. Cliquez sur **Editer tout **.
     
-7. Dans le volet **document. docx** , sous **appliquer une étiquette de rétention**, sélectionnez l’étiquette **hautement confidentiel** , puis cliquez sur **Enregistrer**.
-
-Consultez l’étape [configure Classification for your Environment](infoprotect-configure-classification.md) dans la phase **information protection** pour obtenir des informations et des liens vers le déploiement des étiquettes de rétention en production.
+7. Dans le volet **Document.docx** , sous **appliquer une étiquette de rétention**, sélectionnez l’étiquette **hautement confidentiel** , puis cliquez sur **Enregistrer**.
 
 ## <a name="next-step"></a>Étape suivante
 
@@ -141,10 +139,10 @@ Découvrez les fonctionnalités et les fonctionnalités de [protection des infor
 
 ## <a name="see-also"></a>Voir aussi
 
-[Guides de laboratoire de test Microsoft 365 Entreprise](m365-enterprise-test-lab-guides.md)
+[Microsoft 365 pour les entreprises Guides de laboratoire d'essai](m365-enterprise-test-lab-guides.md)
 
-[Déployer Microsoft 365 Entreprise](deploy-microsoft-365-enterprise.md)
+[Vue d’ensemble de Microsoft 365 pour entreprise](microsoft-365-overview.md)
 
-[Documentation Microsoft 365 Entreprise](https://docs.microsoft.com/microsoft-365-enterprise/)
+[Documentation Microsoft 365 pour entreprise](https://docs.microsoft.com/microsoft-365-enterprise/)
 
  

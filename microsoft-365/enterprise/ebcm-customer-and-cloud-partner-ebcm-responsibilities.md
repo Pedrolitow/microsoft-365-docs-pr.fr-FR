@@ -9,18 +9,18 @@ ms.date: ''
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Priority
+localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Comprendre ce que fait Microsoft au cours d’un incident de service pour vous permettre de mieux préparer les plans de continuité de votre activité.
-ms.openlocfilehash: 3d4a1d6c3a69be4cb3051125d5527b1f0b25b375
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
-ms.translationtype: HT
+ms.openlocfilehash: 5486ad2ae8c2e5d97b466a8cbd2a4dbab416b29b
+ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42067667"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46686117"
 ---
 # <a name="enterprise-business-continuity-management-customer-and-cloud-partner-responsibilities"></a>Gestion de la continuité des activités de l’entreprise et responsabilités des partenaires client et cloud
 
@@ -65,7 +65,7 @@ Pensez aux événements qui pourraient avoir un impact sur votre personnel, comm
 
 ### <a name="location"></a>L’emplacement
 De nombreuses organisations imposent aux employés de se trouver dans des emplacements physiques ou réseau spécifiques pour se connecter aux systèmes d’entreprise et aux services cloud.  
-Microsoft publie des [principes de connectivité réseau](https://docs.microsoft.com/office365/enterprise/office-365-network-connectivity-principles) qui guident les entreprises avec des recommandations pour la configuration de la connectivité réseau aux ressources cloud. Les exemples d’optimisation incluent l’implémentation d’un VPN en tunnellisation partagée pour autoriser les connexions directement à partir du réseau d’un utilisateur plutôt que d’un tunnel VPN.  Bien que ces principes de connectivité soient importants pour maintenir les connexions à faible latence, la résilience de service nécessite d’autres méthodes de connexion aux ressources d’entreprise pour une collaboration générale.
+Microsoft publie des [principes de connectivité réseau](microsoft-365-network-connectivity-principles.md) qui guident les entreprises avec des recommandations pour la configuration de la connectivité réseau aux ressources cloud. Les exemples d’optimisation incluent l’implémentation d’un VPN en tunnellisation partagée pour autoriser les connexions directement à partir du réseau d’un utilisateur plutôt que d’un tunnel VPN.  Bien que ces principes de connectivité soient importants pour maintenir les connexions à faible latence, la résilience de service nécessite d’autres méthodes de connexion aux ressources d’entreprise pour une collaboration générale.
 
 ### <a name="systems"></a>Les systèmes
 De nombreuses solutions de collaboration dépendent des systèmes, tels que le réseau étendu (WAN) de l’entreprise. Lorsque ces systèmes ne sont pas disponibles, comment votre organisation peut-elle répondre ?

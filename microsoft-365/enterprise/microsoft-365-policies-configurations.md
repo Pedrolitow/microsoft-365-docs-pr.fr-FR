@@ -1,5 +1,5 @@
 ---
-title: 'Configurations d’accès aux identités et aux appareils : Microsoft 365 Enterprise'
+title: 'Configurations d’identité et d’accès aux appareils : Microsoft 365 pour les entreprises'
 description: Décrit les recommandations et les concepts fondamentaux de Microsoft pour le déploiement de stratégies et de configurations de messagerie électronique, de documents et d’applications sécurisées.
 author: brendacarter
 manager: laurawi
@@ -17,12 +17,12 @@ ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
 - m365solution-identitydevice
-ms.openlocfilehash: 1a16fa9a26ab20065d213857614b06fdde6c0af1
-ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
+ms.openlocfilehash: f39b5d72de630674ea6d58c30eadf211917de10d
+ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46530270"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46686625"
 ---
 # <a name="identity-and-device-access-configurations"></a>Configurations des identités et de l’accès aux appareils
 
@@ -87,7 +87,7 @@ Les recommandations fournies sont basées sur les principes suivants :
 
 ## <a name="services-and-concepts-for-identity-and-device-access-protection"></a>Services et concepts relatifs à la protection de l’accès aux identités et aux appareils
 
-Microsoft 365 Enterprise est conçu pour les grandes organisations et intègre Office 365 Enterprise, Windows 10 entreprise et Enterprise Mobility + Security (EMS), afin de permettre à chacun d’être créatif et de collaborer en toute sécurité.
+Microsoft 365 pour Enterprise est conçu pour les grandes organisations et intègre Office 365 Enterprise, Windows 10 entreprise et Enterprise Mobility + Security (EMS), afin de permettre à chacun d’être créatif et de collaborer en toute sécurité.
 
 Cette section fournit une vue d’ensemble des services et des fonctionnalités Microsoft 365 qui sont importants pour l’accès aux identités et aux appareils.
 

@@ -1,5 +1,5 @@
 ---
-title: Résumé de la sécurité de Microsoft 365 Entreprise pour Contoso Corporation
+title: Résumé de Microsoft 365 pour la sécurité d’entreprise pour Contoso Corporation
 author: JoeDavies-MSFT
 f1.keywords:
 - NOCSH
@@ -9,22 +9,22 @@ ms.date: 10/02/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Priority
+localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
 ms.custom: ''
-description: Utilisation des fonctionnalités de sécurité sur Microsoft 365 Entreprise par Contoso.
-ms.openlocfilehash: c0f3497eb49a0490fccf6c0ec5174d932a21005e
-ms.sourcegitcommit: 47c45bd81afdc4867ff2980ced3df31dbad92b84
-ms.translationtype: HT
+description: Comment Contoso utilise les fonctionnalités de sécurité dans Microsoft 365 pour les entreprises.
+ms.openlocfilehash: 2244f13f8e8f56edbadd40d1e85cb309d70f7744
+ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/16/2020
-ms.locfileid: "44268397"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46686439"
 ---
-# <a name="summary-of-microsoft-365-enterprise-security-for-the-contoso-corporation"></a>Résumé de la sécurité de Microsoft 365 Entreprise pour Contoso Corporation
+# <a name="summary-of-microsoft-365-for-enterprise-security-for-the-contoso-corporation"></a>Résumé de Microsoft 365 pour la sécurité d’entreprise pour Contoso Corporation
 
-Pour obtenir la déconnexion du déploiement de Microsoft 365 Entreprise par le service de sécurité informatique, un examen minutieux de la sécurité a été effectué. Voici les exigences de sécurité de Contoso pour le cloud :
+Pour obtenir la déconnexion du déploiement de Microsoft 365 pour Enterprise par le service de sécurité informatique, un examen de sécurité approfondi a été effectué. Voici les exigences de sécurité de contoso pour le Cloud :
 
 - Utilisation des meilleures méthodes d’authentification pour l’accès des employés aux ressources du cloud
 - Garantie que les PC et les appareils mobiles se connectent et accèdent aux applications en toute sécurité
@@ -36,7 +36,7 @@ Pour obtenir la déconnexion du déploiement de Microsoft 365 Entreprise par le
 
 ## <a name="contosos-path-to-microsoft-365-security-readiness"></a>Procédure de préparation à la sécurité de Microsoft 365 de Contoso
 
-Contoso a suivi la procédure suivante pour préparer la sécurité pour son déploiement de Microsoft 365 Entreprise :
+Contoso a utilisé les étapes suivantes pour préparer sa sécurité pour le déploiement de Microsoft 365 pour les entreprises :
 
 1. Limitation des comptes Administrateur pour le cloud
 
@@ -44,13 +44,13 @@ Contoso a suivi la procédure suivante pour préparer la sécurité pour son dé
 
 2. Analyse de la classification des données effectuée selon trois niveaux
 
-   Après une étude approfondie, Contoso a défini les trois niveaux qui lui ont permis d’identifier les fonctionnalités de Microsoft 365 Entreprise destinées à protéger ses données les plus importantes.
+   Contoso a effectué une révision approfondie et déterminé les trois niveaux, qui a été utilisé pour déterminer les fonctionnalités Microsoft 365 pour les entreprises afin de protéger les données les plus précieuses de contoso.
 
 3. Définition des stratégies d’accès, de rétention et de protection des informations pour les niveaux de données
 
    En fonction des niveaux de données, Contoso a déterminé des exigences précises, qui seront utilisées pour qualifier les futures charges de travail informatiques déplacées vers le cloud.
 
-Conformément aux meilleures pratiques de sécurité et aux exigences de déploiement de Microsoft 365 Entreprise, le service informatique et les administrateurs de la sécurité de Contoso ont déployé de nombreuses fonctionnalités de sécurité, comme décrites dans les sections suivantes.
+Conformément aux meilleures pratiques en matière de sécurité et aux exigences en matière de déploiement d’entreprise de Microsoft 365, les administrateurs de sécurité et le service informatique de contoso ont déployé de nombreuses fonctionnalités et fonctionnalités de sécurité, comme décrit dans les sections suivantes.
 
 ## <a name="identity--access-management"></a>Gestion des identités et des accès 
 

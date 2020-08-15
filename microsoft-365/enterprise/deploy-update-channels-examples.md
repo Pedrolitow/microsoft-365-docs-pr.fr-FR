@@ -9,18 +9,18 @@ ms.date: 07/21/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Priority
+localization_priority: Normal
 ms.collection:
 - Strat_O365_Enterprise
 - M365-subscription-management
 ms.custom: ''
 description: Comment des exemples d’organisation procèdent au déploiement et à la mise à jour des versions à l’aide de canaux.
-ms.openlocfilehash: eaf962d7481027b49f26c79163aaae3753fdbb9b
-ms.sourcegitcommit: a08103bc120bdec7cfeaf67c1be4e221241e69ad
-ms.translationtype: HT
+ms.openlocfilehash: 88567fedd92f01885c4971acc273a676c3e82de8
+ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "45200109"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46686153"
 ---
 # <a name="deployment-and-update-channel-example-configurations"></a>Exemples de configuration des canaux de déploiement et de mise à jour
 
@@ -49,6 +49,6 @@ Cliquez sur le lien dans la colonne **Exemple** pour passer en revue les groupes
 
 ## <a name="see-also"></a>Voir aussi
 
-[Guide de déploiement](deploy-microsoft-365-enterprise.md)
+[Vue d’ensemble de Microsoft 365 pour entreprise](microsoft-365-overview.md)
 
 [Guides de laboratoire de test](m365-enterprise-test-lab-guides.md)

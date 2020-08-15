@@ -9,18 +9,18 @@ ms.date: 10/01/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Priority
+localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Comprendre le fonctionnement de la société Contoso Corporation et la hiérarchie de ses bureaux internationaux.
-ms.openlocfilehash: 856363881c749b06a530dc7cc4f0eb82dc155054
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
-ms.translationtype: HT
+ms.openlocfilehash: 206017744a004ba4e51b6e0d157b172cbe145c66
+ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42068294"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46686451"
 ---
 # <a name="overview-of-the-contoso-corporation"></a>Présentation de la société Contoso Corporation
 
@@ -59,9 +59,9 @@ Les bureaux internationaux de Contoso sont organisés en trois niveaux.
 25 % des collaborateurs de Contoso travaillent en permanence sur le terrain. Ce pourcentage est supérieur dans les centres régionaux et les succursales.
 Pour Contoso, il est essentiel de fournir un meilleur support technique aux collaborateurs qui passent tout leur temps sur le terrain.
 
-## <a name="design-considerations-for-microsoft-365-enterprise"></a>Conceptions envisagées pour Microsoft 365 Entreprise
+## <a name="design-considerations-for-microsoft-365-for-enterprise"></a>Considérations relatives à la conception de Microsoft 365 pour les entreprises
 
-Les architectes informatiques de Contoso ont identifié les exigences et considérations suivantes en matière de conception lors du déploiement de Microsoft 365 Entreprise : 
+Les architectes informatiques de contoso ont identifié les conditions requises et les considérations suivantes lors du déploiement de Microsoft 365 pour Enterprise : 
 
 - Plusieurs implantations géographiques avec des réglementations et des exigences de conformité locales
 - Un centre de données intranet central dans les locaux du siège social et des serveurs d’application régionaux qui hébergent en interne la gamme d’applications professionnelles
@@ -75,11 +75,11 @@ Les architectes informatiques de Contoso ont identifié les exigences et consid�
 
 ## <a name="next-step"></a>Étape suivante
 
-[En savoir plus](contoso-infra-needs.md) sur l’infrastructure informatique locale de Contoso Corporation et comment leurs besoins commerciaux ont été traités avec Microsoft 365 Entreprise.
+[Découvrez](contoso-infra-needs.md) l’infrastructure informatique locale de Contoso Corporation et les besoins de son entreprise avec Microsoft 365 pour les entreprises.
 
 ## <a name="see-also"></a>Voir aussi
 
-[Guide de déploiement](deploy-microsoft-365-enterprise.md)
+[Vue d’ensemble de Microsoft 365 pour entreprise](microsoft-365-overview.md)
 
 [Guides de laboratoire de test](m365-enterprise-test-lab-guides.md)
 

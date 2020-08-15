@@ -9,22 +9,22 @@ ms.date: 10/01/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Priority
+localization_priority: Normal
 ms.collection:
 - M365-identity-device-management
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Découvrez comment Contoso tire parti de la solution de gestion des identités IDaaS et propose à ses employés une authentification basée sur le cloud, et une authentification fédérée à ses partenaires et ses clients.
-ms.openlocfilehash: 77c90740fd39080ccc204552bc8407aa107e354a
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
-ms.translationtype: HT
+ms.openlocfilehash: 795fb7dcb886c792c80d3bb251c9cb5774f1bf97
+ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42633362"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46686033"
 ---
 # <a name="identity-for-the-contoso-corporation"></a>Identité de Contoso Corporation
 
-Microsoft fournit une IDaaS dans toutes ses offres cloud avec Azure Active Directory (Azure AD). Pour adopter Microsoft 365 Entreprise, la solution IDaaS de Contoso doit tirer parti de son fournisseur d’identités local et intégrer l’authentification fédérée avec ses fournisseurs d’identité tiers approuvés existants.
+Microsoft fournit une IDaaS dans toutes ses offres cloud avec Azure Active Directory (Azure AD). Pour adopter Microsoft 365 pour Enterprise, la solution IDaaS de Contoso a dû tirer parti de son fournisseur d’identité locale tout en incluant l’authentification fédérée avec ses fournisseurs d’identité tiers approuvés existants.
 
 ## <a name="contosos-active-directory-domain-services-forest"></a>Ensemble des services de domaine Active Directory Domain Services de Contoso
 
@@ -55,7 +55,7 @@ Contoso a décidé de conserver cette infrastructure pour la dédier à l’auth
 
 Contoso souhaite tirer parti de son ensemble local AD DS pour l’authentification aux ressources cloud de Microsoft 365. Il a décidé du hachage de synchronisation du mot de passe (PHS).
 
-PBS synchronise la version de l’ensemble local AD DS avec le client Azure AD de l’abonnement Microsoft 365 Entreprise, copie des comptes d’utilisateur et de groupe et une version hachurée de mots de passe du compte utilisateur. 
+HACHAGE synchronise la forêt AD DS locale avec le client Azure AD de ses Microsoft 365 pour l’abonnement Enterprise, en copiant les comptes d’utilisateur et de groupe, ainsi qu’une version hachée des mots de passe de compte d’utilisateur. 
 
 Pour effectuer la synchronisation d’annuaire en cours, Contoso a déployé l’outil Azure AD Connect sur un serveur dans son centre de données de Paris. 
 
@@ -81,8 +81,8 @@ Voici l’ensemble de stratégies d’accès conditionnel basées sur l’identi
 
 ## <a name="see-also"></a>Voir également
 
-[Identité pour Microsoft 365 Entreprise](identity-infrastructure.md)
+[Feuille de route des identités pour Microsoft 365](identity-roadmap-microsoft-365.md)
 
-[Guide de déploiement](deploy-microsoft-365-enterprise.md)
+[Vue d’ensemble de Microsoft 365 pour entreprise](microsoft-365-overview.md)
 
 [Guides de laboratoire de test](m365-enterprise-test-lab-guides.md)

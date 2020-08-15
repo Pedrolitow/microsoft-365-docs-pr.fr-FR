@@ -1,5 +1,5 @@
 ---
-title: Stratégies d’identité et d’accès aux appareils courantes-Microsoft 365 Enterprise | Microsoft docs
+title: Stratégies d’identité et d’accès aux appareils courantes-Microsoft 365 pour les entreprises | Microsoft docs
 description: Décrit les recommandations de Microsoft liées à l’application de stratégies et de configurations de l’accès aux identités et aux appareils.
 author: BrendaCarter
 manager: Laurawi
@@ -16,12 +16,12 @@ ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
 - remotework
-ms.openlocfilehash: a91488b9bfa126b1419af7697c0ae8510ddbc149
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 676a37752e24b238117ec238bc171b9df723e247
+ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43625265"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46685973"
 ---
 # <a name="common-identity-and-device-access-policies"></a>Stratégies communes pour les identités et l’accès aux appareils
 Cet article décrit les stratégies recommandées courantes pour sécuriser l’accès aux services Cloud, notamment les applications locales publiées avec le proxy d’application Azure AD. 
@@ -32,8 +32,8 @@ Ce guide explique comment déployer les stratégies recommandées dans un enviro
 
 Le diagramme suivant illustre l’ensemble de stratégies recommandé. Elle indique le niveau de protection auquel chaque stratégie s’applique et indique si les stratégies s’appliquent aux PC, téléphones et tablettes, ou aux deux catégories d’appareils. Il indique également où ces stratégies sont configurées.
 
-[![Stratégies courantes de configuration de l’identité et de l’accès aux](../media/Identity_device_access_policies_byplan.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/Identity_device_access_policies_byplan.png)
-appareils[voir une version plus grande de cette image](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/Identity_device_access_policies_byplan.png)
+[ ![ Stratégies courantes de configuration de l’identité et de l’accès aux appareils](../media/Identity_device_access_policies_byplan.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/Identity_device_access_policies_byplan.png) 
+ [voir une version plus grande de cette image](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/Identity_device_access_policies_byplan.png)
 
 Le reste de cet article explique comment configurer ces stratégies. 
 
@@ -46,7 +46,7 @@ Pour vous donner le temps de réaliser ces tâches, nous vous recommandons de me
 |:---------------|:-------|:----------------|
 |**Baseline**|[Exiger l’authentification multifacteur lorsque le risque de connexion est *moyen* ou *élevé*](#require-mfa-based-on-sign-in-risk)| |
 |        |[Bloquer les clients ne prenant pas en charge l’authentification moderne](#block-clients-that-dont-support-modern-authentication)|Les clients qui n’utilisent pas l’authentification moderne peuvent contourner les règles d’accès conditionnel, c’est pourquoi il est important de bloquer ces|
-|        |[Les utilisateurs à haut risque doivent changer leur mot de passe](#high-risk-users-must-change-password)|Force les utilisateurs à modifier leur mot de passe lors de la connexion en cas de détection d’une activité à haut risque pour leur compte.|
+|        |[Les utilisateurs à risque élevé doivent modifier leur mot de passe](#high-risk-users-must-change-password)|Force les utilisateurs à modifier leur mot de passe lors de la connexion en cas de détection d’une activité à haut risque pour leur compte.|
 |        |[Appliquer des stratégies de protection des données d’application](#apply-app-data-protection-policies)|Une stratégie par plateforme (iOS, Android, Windows). Les stratégies de protection des applications Intune (application) sont des ensembles de protection prédéfinis, du niveau 1 au niveau 3.|
 |        |[Exiger les applications approuvées et la protection des applications](#require-approved-apps-and-app-protection)|Applique la protection des applications mobiles pour les téléphones et les tablettes|
 |        |[Définir les stratégies de conformité des appareils](#define-device-compliance-policies)|Une stratégie pour chaque plateforme|
@@ -113,7 +113,7 @@ Appliquez les paramètres en fonction du niveau de protection que vous ciblez.
 
 |Type|Propriétés|Valeurs|Remarques|
 |:---|:---------|:-----|:----|
-|Accorder|Accorder l'accès|Vrai|Sélectionné|
+|Accorder|Accorder l'accès|True|Sélectionné|
 ||Exiger MFA|True|Check|
 ||Exiger que l’appareil soit marqué comme conforme|Faux||
 ||Exiger un appareil joint Azure AD hybride|Faux||
@@ -140,9 +140,9 @@ Le tableau suivant décrit les paramètres de stratégie d’accès conditionnel
 
 |Type|Propriétés|Valeurs|Remarques|
 |:---|:---------|:-----|:----|
-|Utilisateurs et groupes|Include|Sélectionner des utilisateurs et des groupes : sélectionnez un groupe de sécurité spécifique contenant les utilisateurs ciblés|Commencer avec un groupe de sécurité comprenant les utilisateurs pilotes|
+|Utilisateurs et groupes|Inclure|Sélectionner des utilisateurs et des groupes : sélectionnez un groupe de sécurité spécifique contenant les utilisateurs ciblés|Commencer avec un groupe de sécurité comprenant les utilisateurs pilotes|
 ||Exclure|Groupe de sécurité d’exception ; comptes de service (identités d’application)|Appartenance modifiée de manière temporaire selon les besoins|
-|Applications cloud|Include|Sélectionnez les applications auxquelles cette règle doit s’appliquer. Par exemple, sélectionnez Exchange Online.||
+|Applications cloud|Inclure|Sélectionnez les applications auxquelles cette règle doit s’appliquer. Par exemple, sélectionnez Exchange Online.||
 |Conditions|Configuré|Oui|Configurer les applications clientes|
 |Applications clientes|Configuré|Oui|Applications mobiles et clients de bureau, autres clients (sélectionnez les deux)|
 
@@ -150,7 +150,7 @@ Le tableau suivant décrit les paramètres de stratégie d’accès conditionnel
 
 |Type|Propriétés|Valeurs|Remarques|
 |:---|:---------|:-----|:----|
-|Accorder|Bloquer l’accès|Vrai|Sélectionné|
+|Accorder|Bloquer l’accès|True|Sélectionné|
 ||Exiger MFA|Faux||
 ||Exiger que l’appareil soit marqué comme conforme|Faux||
 ||Exiger un appareil joint Azure AD hybride|Faux||
@@ -162,7 +162,7 @@ Le tableau suivant décrit les paramètres de stratégie d’accès conditionnel
 
 
 
-## <a name="high-risk-users-must-change-password"></a>Les utilisateurs à haut risque doivent changer leur mot de passe
+## <a name="high-risk-users-must-change-password"></a>Les utilisateurs à risque élevé doivent modifier leur mot de passe
 Pour vous assurer que tous les comptes compromis par les utilisateurs à haut risque sont obligés d’effectuer une modification de mot de passe lors de la connexion, vous devez appliquer la stratégie suivante.
 
 Connectez-vous au [portail Microsoft Azure (https://portal.azure.com)](https://portal.azure.com/) avec vos informations d’identification d’administrateur, puis accédez à **Azure AD Identity Protection > Stratégie d’utilisateur à risque**.
@@ -179,7 +179,7 @@ Connectez-vous au [portail Microsoft Azure (https://portal.azure.com)](https://p
 
 | Type | Propriétés | Valeurs                  | Remarques |
 |:-----|:-----------|:------------------------|:------|
-|      | Accès     | Autoriser l'accès            | Vrai  |
+|      | Accès     | Autoriser l'accès            | True  |
 |      | Accès     | Exiger le changement du mot de passe | True  |
 
 **Révision :** non applicable
@@ -254,7 +254,7 @@ Créez une stratégie pour chaque plateforme :
 - Windows 8,1 et versions ultérieures
 - Windows 10 et versions ultérieures
 
-Pour créer des stratégies de conformité des appareils, connectez-vous au [Centre d’administration du gestionnaire de points de terminaison Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431) avec vos informations d’identification, puis accédez à périphériques stratégies de**conformité** > **Policies**des **appareils** > . Sélectionnez **créer une stratégie**.
+Pour créer des stratégies de conformité des appareils, connectez-vous au [Centre d’administration du gestionnaire de points de terminaison Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431) avec vos informations d’identification, puis accédez à périphériques stratégies de conformité des **appareils**  >  **Compliance policies**  >  **Policies**. Sélectionnez **créer une stratégie**.
 
 Pour que les stratégies de conformité des appareils soient déployées, elles doivent être affectées à des groupes d’utilisateurs. Vous affectez une stratégie après l’avoir créée et enregistrée. Dans le centre d’administration, sélectionnez la stratégie, puis sélectionnez **affectations**. Après avoir sélectionné les groupes pour lesquels vous souhaitez recevoir la stratégie, sélectionnez **Enregistrer** pour enregistrer l’affectation de groupe et déployer la stratégie.
 
@@ -281,13 +281,13 @@ Les paramètres suivants sont recommandés pour Windows 10.
 
 |Type|Propriétés|Valeurs|Remarques|
 |:---|:---------|:-----|:----|
-|Mot de passe|Exiger un mot de passe pour déverrouiller les appareils mobiles|Require (Rendre obligatoire)||
+|Password|Exiger un mot de passe pour déverrouiller les appareils mobiles|Require (Rendre obligatoire)||
 ||Mots de passe simples|Bloc||
 ||Type de mot de passe|Valeur par défaut du périphérique||
-||Longueur minimale du mot de passe|6 ||
-||Nombre maximal de minutes d’inactivité avant que le mot de passe ne soit requis|15 |Ce paramètre est pris en charge pour Android versions 4,0 et supérieures ou KNOX 4,0 et versions ultérieures. Pour les appareils iOS, il est pris en charge pour iOS 8,0 et versions ultérieures.|
+||Longueur minimale du mot de passe|6 ||
+||Nombre maximal de minutes d’inactivité avant que le mot de passe ne soit requis|15 |Ce paramètre est pris en charge pour Android versions 4,0 et supérieures ou KNOX 4,0 et versions ultérieures. Pour les appareils iOS, il est pris en charge pour iOS 8,0 et versions ultérieures.|
 ||Expiration du mot de passe (jours)|41||
-||Nombre de mots de passe précédents pour empêcher la réutilisation|5 ||
+||Nombre de mots de passe précédents pour empêcher la réutilisation|5 ||
 ||Exiger un mot de passe lorsque l’appareil revient de l’état inactif (mobile et holographique)|Require (Rendre obligatoire)|Disponible pour Windows 10 et versions ultérieures|
 |Chiffrement|Chiffrement du stockage des données sur l’appareil|Require (Rendre obligatoire)||
 |Sécurité de l’appareil|-|Require (Rendre obligatoire)||
@@ -302,7 +302,7 @@ Les paramètres suivants sont recommandés pour Windows 10.
 
 |Type|Propriétés|Valeurs|Remarques|
 |:---|:---------|:-----|:----|
-|Règles de protection avancée contre les menaces Microsoft Defender|Exiger que l’appareil soit au ou sous le score de risque machine|Moyenne||
+|Règles de protection avancée contre les menaces Microsoft Defender|Exiger que l’appareil soit au ou sous le score de risque machine|Moyen||
 
 
 ## <a name="require-compliant-pcs-but-not-compliant-phones-and-tablets"></a>Exiger des PC conformes (mais pas les téléphones et les tablettes conformes)

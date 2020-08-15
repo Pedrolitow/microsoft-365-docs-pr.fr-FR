@@ -9,18 +9,18 @@ ms.date: 10/01/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Priority
+localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
 ms.custom: ''
-description: Comprendre la structure de base de l’infrastructure informatique locale de Contoso et la manière dont les besoins métier ont été satisfaits par Microsoft 365 Entreprise.
-ms.openlocfilehash: 3899466e6c8ad50ad3a3d97863d1368ba1d8af20
-ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
-ms.translationtype: HT
+description: Comprendre la structure de base de l’infrastructure informatique locale de contoso et la façon dont ses besoins professionnels sont satisfaits par Microsoft 365 pour les entreprises.
+ms.openlocfilehash: 3dd744a8d936307c61303bf8ba0f2f198af59d91
+ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "44011196"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46685829"
 ---
 # <a name="contosos-it-infrastructure-and-business-needs"></a>Infrastructure informatique et besoins métier de Contoso
 
@@ -112,20 +112,20 @@ Gestion :
 
   Automatiser l’installation des mises à jour pour le système d’exploitation Windows et Applications Microsoft 365 pour les grandes entreprises au sein de l’organisation.
 
-## <a name="mapping-contosos-business-needs-to-microsoft-365-enterprise"></a>Mappage des besoins métier de Contoso à Microsoft 365 Entreprise
+## <a name="mapping-contosos-business-needs-to-microsoft-365-for-enterprise"></a>Mappage des besoins commerciaux de contoso à Microsoft 365 pour les entreprises
 
 Le service informatique de Contoso a déterminé le mappage suivant des besoins métier aux fonctionnalités de Microsoft 365 E5 avant le déploiement :
 
-||||
+
+| Catégorie | Besoin métier | Microsoft 365 pour les produits ou les fonctionnalités d’entreprise |
 |:-------|:-----|:-----|
-| **Catégorie** | **Besoin métier** | **Produits ou fonctionnalités Microsoft 365 Entreprise** |
 | Productivité |  |  |
 |  | Faciliter la collaboration | Microsoft Teams, SharePoint, OneDrive |
 |  | Améliorer la productivité pour les travailleurs mobiles et à distance | Charges de travail Microsoft 365 et données informatiques |
 |  | Accroître la créativité et l’innovation | Windows Ink, Cortana at Work, PowerPoint |
 | Sécurité |  |  |
 |  | Gestion des identités et des accès | Comptes Administrateur général dédiés avec l’authentification multifacteur (MFA) Azure et Azure AD Privileged Identity Management (PIM) <BR> Authentification multifacteur pour tous les comptes d’utilisateur <BR> Accès conditionnel <BR> Windows Hello <BR> Windows Credential Guard |
-|  | Protection contre les menaces | Advanced Threat Analytics <BR> Windows Defender <BR> Protection avancée contre les menaces <BR> Office 365-Protection avancée contre les menaces <BR> Examen et réponse contre les menaces Office 365 <BR> |
+|  | Protection contre les menaces | Advanced Threat Analytics <BR> Windows Defender <BR> Protection avancée contre les menaces <BR> Office 365-Protection avancée contre les menaces <BR> Enquête et réponse de menace Microsoft 365 <BR> |
 |  | Protection des informations | Azure Information Protection <BR> Protection contre la perte de données (DLP) <BR> Protection des informations Windows (WIP) <BR> Microsoft Cloud App Security <BR> Microsoft Intune |
 |  | Gestion de la sécurité | Azure Security Center  <BR> Centre de sécurité Windows Defender |
 | Accès mobile et à distance, et partenaires professionnels |  |  |
@@ -133,7 +133,7 @@ Le service informatique de Contoso a déterminé le mappage suivant des besoins 
 |  | Réduire l’infrastructure d’accès distant pour les employés | Charges de travail Microsoft 365 et données informatiques |
 |  | Fournir une meilleure connectivité et réduire les frais généraux pour les transactions B2B | Authentification fédérée et ressources informatiques |
 | Conformité |  |  |
-|  | Respecter les exigences réglementaires locales | Fonctionnalités RGPD dans Office 365 |
+|  | Respecter les exigences réglementaires locales | Fonctionnalités RGPD dans Microsoft 365 |
 | Gestion |  |  |
 |  | Réduire les frais généraux informatiques pour l’installation de mises à jour du client | Anneaux de déploiement <BR> Mises à jour pour Windows 10 Entreprise <BR> Mises à jour pour les Applications Microsoft 365 pour les entreprises |
 ||||
@@ -144,6 +144,6 @@ Le service informatique de Contoso a déterminé le mappage suivant des besoins 
 
 ## <a name="see-also"></a>Voir aussi
 
-[Guide de déploiement](deploy-microsoft-365-enterprise.md)
+[Vue d’ensemble de Microsoft 365 pour entreprise](microsoft-365-overview.md)
 
 [Guides de laboratoire de test](m365-enterprise-test-lab-guides.md)

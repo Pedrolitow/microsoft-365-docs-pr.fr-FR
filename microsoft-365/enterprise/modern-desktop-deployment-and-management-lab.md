@@ -2,31 +2,31 @@
 title: Kit laboratoire de déploiement Windows et Office
 f1.keywords:
 - NOCSH
-ms.author: jogruszc
-author: JGruszczyk
-manager: jemed
-ms.date: 06/10/2019
+ms.author: josephd
+author: JoeDavies-MSFT
+manager: laurawi
+ms.date: 08/10/2020
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Priority
+localization_priority: Normal
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom: ''
 description: En savoir plus sur le point et où pour accéder au Kit laboratoire de déploiement Windows et Office.
-ms.openlocfilehash: a52d2ef1570509150aa1b44c7d7d767287e308f1
-ms.sourcegitcommit: 020b89b0d558a866ea68d35b5170db76f6d8d74d
-ms.translationtype: HT
+ms.openlocfilehash: 751d2a04daa707049c59b9b7cabb18ca06a598d1
+ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "45052724"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46685497"
 ---
 # <a name="windows-and-office-deployment-lab-kit"></a>Kit laboratoire de déploiement Windows et Office
 
-Ces ateliers sont conçus pour vous aider à planifier, tester et valider votre déploiement et votre gestion de postes de travail exécutant Windows 10 Entreprise et Microsoft 365 Apps for enterprise. Les ateliers abordent les étapes et les outils décrits dans la roue Déploiement du bureau, couvrant Microsoft Endpoint Configuration Manager, Analyses du bureau, Outil de personnalisation Office, OneDrive, Windows Autopilot et autres.
+Ces ateliers sont conçus pour vous aider à planifier, tester et valider votre déploiement et la gestion des ordinateurs exécutant Windows 10 Enterprise et Microsoft 365 apps pour les entreprises. Le centre d’aide à la recherche de Microsoft Endpoint Configuration Manager, de l’analyse de bureau, de l’outil de personnalisation Office, de OneDrive, de Windows AutoPilot et bien plus encore.
 
-Cette formation est fortement recommandée pour les organisations qui se préparent à la fin de vie de Windows 7, et s'applique également si vous utilisez actuellement Windows 10 et Microsoft 365 Apps for enterprise (anciennement Office 365 ProPlus) ou Office 2019. De plus, en tant qu'environnement isolé, le laboratoire est idéal pour explorer les mises à jour des outils de déploiement et tester l'automatisation liée au déploiement.
+Ce kit est fortement recommandé pour les organisations qui préparent les mises à niveau Windows 8, et s’applique si vous utilisez actuellement Windows 10, les applications Microsoft 365 pour entreprise (anciennement Office 365 ProPlus) ou Office 2019. De plus, en tant qu'environnement isolé, le laboratoire est idéal pour explorer les mises à jour des outils de déploiement et tester l'automatisation liée au déploiement.
 
 [Télécharger le Kit laboratoire de déploiement Windows et Office](https://www.microsoft.com/evalcenter/evaluate-lab-kit).
 
@@ -46,9 +46,8 @@ Le laboratoire offre un environnement de laboratoire virtuel automatiquement con
 
 ET le laboratoire est conçu pour être connecté aux versions d’évaluation pour : 
 
-  - Microsoft 365 E5, ou
-  - Office 365 Entreprise E5
-  - Enterprise Mobility + Security
+  - Microsoft 365 E5
+  - Office 365 entreprise E5 avec Enterprise Mobility + Security (EMS)
 
 ## <a name="step-by-step-labs"></a>Laboratoires détaillés
 
@@ -57,14 +56,14 @@ Des guides de laboratoire détaillés vous guident dans plusieurs scénarios de 
 ### <a name="device-and-app-readiness"></a>Préparation des applications et des appareils
 
   - Analyses du bureau
-  - NOUVEAUTÉ ! Déployer et mettre à jour le nouveau Microsoft Edge 
-  - NOUVEAUTÉ ! Installer et configurer la passerelle de gestion Cloud (CMG) 
+  - Déployer et mettre à jour le nouveau Microsoft Edge 
+  - Installer et configurer la passerelle de gestion Cloud (CMG) 
   - Mode Internet Explorer 
   - Application Guard 
 
 ### <a name="directory-and-network-readiness"></a>Préparation des répertoires et du réseau
 
-  - NOUVEAUTÉ ! Optimiser la remise des mises à jour Windows 10 
+  - Optimiser la remise des mises à jour Windows 10 
   - Cogestion de Configuration Manager et de Microsoft Intune
   - Accès distant (VPN)
 
@@ -110,7 +109,7 @@ Des guides de laboratoire détaillés vous guident dans plusieurs scénarios de 
   - Maintenance des Applications Microsoft 365 pour les grandes entreprises avec Configuration Manager
   - NOUVEAUTÉ ! Mises à jour Office avec le Gestionnaire de configuration et Intune
   
-### <a name="new-windows-virtual-desktop"></a>NOUVEAUTÉ ! Windows Virtual Desktop
+### <a name="windows-virtual-desktop"></a>Windows Virtual Desktop
   - Windows Virtual Desktop : préparer, déployer et optimiser 
 
 ### <a name="download-the-windows-and-office-deployment-lab-kit"></a>Télécharger le Kit laboratoire de déploiement Windows et Office
@@ -120,8 +119,6 @@ Des guides de laboratoire détaillés vous guident dans plusieurs scénarios de 
 *Utilisez une large bande passante pour télécharger ce contenu afin d’améliorer votre expérience de téléchargement et de bénéficier d’un approvisionnement automatique de 30 à 45 minutes. L’environnement de laboratoire nécessite un minimum de 16 Go de mémoire disponible et de 150 Go d’espace disque libre. Pour des performances optimales, 32 Go de mémoire disponible sont recommandés. Le laboratoire arrivera à expiration le 12 septembre 2020. Une nouvelle version sera publiée avant l’expiration.*
 
 ## <a name="additional-guidance"></a>Conseils supplémentaires
-
-  - [Desktop Deployment Center](https://www.aka.ms/howtoshift)
 
   - [Série de vidéos de Microsoft Mechanics consacrées au déploiement des ordinateurs de bureau](https://www.aka.ms/watchhowtoshift)
 
