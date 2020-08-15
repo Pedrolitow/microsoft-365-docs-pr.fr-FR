@@ -1,5 +1,5 @@
 ---
-title: Stratégies recommandées pour la sécurisation des e-mails -Microsoft 365 Entreprise | Microsoft Docs
+title: Stratégies recommandées pour la sécurisation des documents-Microsoft 365 pour les entreprises | Microsoft docs
 description: Décrit les recommandations de Microsoft sur l’application de stratégies de sécurisation de l’accès aux fichiers SharePoint.
 author: BrendaCarter
 manager: laurawi
@@ -16,12 +16,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: 784a4d617d74916ae7b0ec4b431cc298ce45531e
-ms.sourcegitcommit: d6b641d0ef92f4176da9f4a98d3d5aa3d4f2e184
+ms.openlocfilehash: 25f58582ae912211f72aaf17c2dab338ebb21c7e
+ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "46617185"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46695037"
 ---
 # <a name="policy-recommendations-for-securing-sharepoint-sites-and-files"></a>Recommandations de stratégie pour sécuriser les sites et les fichiers SharePoint
 
@@ -85,5 +85,4 @@ Dans cette illustration :
 - Si James accède à un site sensible ou hautement réglementé qu’il est membre de son PC, son accès est accordé tant que son PC est conforme.
 - Si Jean accède à un site sensible qu’il est membre de l’utilisation de son téléphone non géré, qui est autorisé pour les utilisateurs de base, il bénéficiera d’un accès navigateur uniquement au site sensible en raison de la stratégie d’accès aux appareils configurée pour ce site.
 - Si Jean accède à un site hautement réglementé qu’il est membre de l’utilisation de son téléphone non géré, il sera bloqué en raison de la stratégie d’accès configurée pour ce site. Il peut accéder à ce site uniquement à l’aide de son PC géré et conforme.
-
 
