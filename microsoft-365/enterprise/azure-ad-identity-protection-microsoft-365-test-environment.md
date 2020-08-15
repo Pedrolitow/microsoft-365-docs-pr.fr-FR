@@ -1,5 +1,5 @@
 ---
-title: Protection des identités Azure AD pour votre environnement de test Microsoft 365 Enterprise
+title: Protection des identités Azure AD pour votre environnement de test Microsoft 365 pour les entreprises
 f1.keywords:
 - NOCSH
 ms.author: josephd
@@ -14,31 +14,31 @@ ms.collection: M365-identity-device-management
 ms.custom:
 - TLG
 - Ent_TLGs
-description: Configurez Azure AD identity protection et analysez les comptes actuels dans votre environnement de test Microsoft 365 Enterprise.
-ms.openlocfilehash: 3f3740e42c7ec909f44a3c761dfc743359b3f030
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+description: Configurez Azure AD identity protection et analysez les comptes actuels dans votre environnement de test Microsoft 365 pour les entreprises.
+ms.openlocfilehash: bd1e7560e978b13d24e9e93a99a2567adca95c75
+ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42633642"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46694989"
 ---
-# <a name="azure-ad-identity-protection-for-your-microsoft-365-enterprise-test-environment"></a>Protection des identités Azure AD pour votre environnement de test Microsoft 365 Enterprise
+# <a name="azure-ad-identity-protection-for-your-microsoft-365-for-enterprise-test-environment"></a>Protection des identités Azure AD pour votre environnement de test Microsoft 365 pour les entreprises
 
-*Ce Guide de Laboratoire Test peut uniquement être utilisé pour les environnements de test Microsoft 365 Entreprise*.
+*Ce guide de laboratoire de test ne peut être utilisé que pour Microsoft 365 pour les environnements de test d’entreprise.*
 
 Azure Active Directory (Azure AD) Identity Protection vous permet de détecter les vulnérabilités potentielles affectant les identités de votre organisation, de configurer des réponses automatiques et d’examiner les incidents. Cet article explique comment utiliser Azure AD Identity Protection pour afficher l’analyse de vos comptes d’environnement de test.
 
-Il existe deux phases de configuration de la protection des identités Azure AD dans votre environnement de test Microsoft 365 Enterprise :
+Il existe deux phases de configuration de la protection des identités Azure AD dans votre environnement de test Microsoft 365 pour les entreprises :
 
-1. Créer l’environnement de test Microsoft 365 Entreprise.
+1. Créez l’environnement de test Microsoft 365 pour les entreprises.
 2. Utiliser Azure AD identity protection.
 
 ![Guides de laboratoire de test pour Microsoft Cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
 > [!TIP]
-> Cliquez [ici](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) pour afficher le plan de tous les articles de l’ensemble de guides de laboratoire de test de Microsoft 365 Entreprise.
+> Cliquez [ici](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) pour afficher le plan visuel de tous les articles de l’ensemble des guides de laboratoire de test de Microsoft 365 pour entreprise.
   
-## <a name="phase-1-build-out-your-microsoft-365-enterprise-test-environment"></a>Phase 1 : Créer l’environnement de test Microsoft 365 Entreprise.
+## <a name="phase-1-build-out-your-microsoft-365-for-enterprise-test-environment"></a>Phase 1 : créer votre environnement de test Microsoft 365 pour les entreprises
 
 Si vous souhaitez simplement tester la protection des identités Azure AD avec la configuration minimale requise, suivez les instructions de la [configuration de base légère](lightweight-base-configuration-microsoft-365-enterprise.md).
   
@@ -49,7 +49,7 @@ Si vous souhaitez tester la protection des identités Azure AD dans une entrepri
   
 ## <a name="phase-2-use-azure-ad-identity-protection"></a>Phase 2 : utiliser Azure AD Identity Protection
 
-1. Ouvrez une instance privée de votre navigateur et connectez-vous au portail Azure à [https://portal.azure.com](https://portal.azure.com) l’aide du compte d’administrateur général de votre environnement de test Microsoft 365 Enterprise.
+1. Ouvrez une instance privée de votre navigateur et connectez-vous au portail Azure à l' [https://portal.azure.com](https://portal.azure.com) aide du compte d’administrateur général de votre environnement de test Microsoft 365 pour les entreprises.
 2. Dans le portail Azure, tapez **protection des identités** dans la zone de recherche, puis cliquez sur **protection des identités Azure ad**.
 3. Dans le panneau **identity protection-Overview** , cliquez sur chacun des rapports pour voir ce qu’ils signalent.
 4. Sous **avertir**, cliquez sur **utilisateurs à risque-alertes détectées**.
@@ -61,18 +61,16 @@ Cliquez sur les différentes stratégies sous **protéger** pour voir comment le
 
 Pour des tests et des expériences supplémentaires, consultez la rubrique [simulationing Risk Events](https://docs.microsoft.com/azure/active-directory/active-directory-identityprotection-playbook).
 
-Consultez l’étape [protéger contre la compromission des informations d’identification](identity-secure-user-sign-ins.md#identity-ident-prot) dans la phase d’identité pour obtenir des informations et des liens permettant de déployer la protection des identités Azure AD en production.
-
 ## <a name="next-step"></a>Étape suivante
 
 Explorez les autres fonctionnalités liées aux [identités](m365-enterprise-test-lab-guides.md#identity) disponibles dans votre environnement de test.
 
 ## <a name="see-also"></a>Voir aussi
 
-[Étape 2 : Identité](identity-infrastructure.md)
+[Feuille de route d’identité](identity-roadmap-microsoft-365.md)
 
-[Guides de laboratoire de test Microsoft 365 Entreprise](m365-enterprise-test-lab-guides.md)
+[Microsoft 365 pour les entreprises Guides de laboratoire d'essai](m365-enterprise-test-lab-guides.md)
 
-[Déploiement de Microsoft 365 Entreprise](deploy-microsoft-365-enterprise.md)
+[Vue d’ensemble de Microsoft 365 pour entreprise](microsoft-365-overview.md)
 
-[Documentation Microsoft 365 Entreprise](https://docs.microsoft.com/microsoft-365-enterprise/)
+[Documentation Microsoft 365 pour entreprise](https://docs.microsoft.com/microsoft-365-enterprise/)

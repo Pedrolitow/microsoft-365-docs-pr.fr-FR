@@ -16,18 +16,18 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: État d'intégrité du service Microsoft 365
-ms.openlocfilehash: 26a9983528072054606cc399ad871d0f99fd22fb
-ms.sourcegitcommit: d818828c66cf98b0b0037ba8b3cb790c940281b7
+ms.openlocfilehash: f7bb310452f841c04eabdd683d3ec82b4ad2b57a
+ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43583356"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46686601"
 ---
 # <a name="microsoft-365-network-health-status"></a>État d’intégrité du réseau Microsoft 365
 
 En raison de la demande accrue pour les services cloud de Microsoft pendant la crise COVID-19, nous fournissons des informations sur l'intégrité du réseau mondial de Microsoft ainsi que des informations sur les problèmes de qualité du réseau que nos clients sont susceptibles de rencontrer mais qui échappent à notre contrôle.
 
-Ces informations incluent les problèmes de réseau qui affectent tous nos logiciels en tant qu'offres de services, notamment Office 365.
+Ces informations incluent les problèmes de réseau qui affectent tous nos logiciels en tant qu'offres de services, notamment Microsoft 365.
 
 _Les mises à jour de cette page peuvent connaître des retards. Nous procédons donc à une mise à jour manuelle pendant que nous élaborons une solution plus automatisée._
 
@@ -43,6 +43,6 @@ Dès que nous détectons des problèmes importants au sein du réseau mondial de
 
 Utilisez ces ressources pour améliorer l’utilisation de votre réseau pour les services Microsoft.
 
-- [Optimiser la connectivité d’Office 365 pour les utilisateurs à distance à l’aide de la segmentation de tunnel VPN](https://docs.microsoft.com/office365/enterprise/office-365-vpn-split-tunnel)
-- [Principes de connectivité réseau d’Office 365](https://aka.ms/pnc)
-- [Travailler à distance à l’aide des services réseau Azure](https://docs.microsoft.com/azure/networking/working-remotely-support)
+- [Optimiser la connectivité de Microsoft 365 pour les utilisateurs à distance à l’aide de la segmentation de tunnel VPN](microsoft-365-vpn-split-tunnel.md)
+- [Principes de connectivité réseau de Microsoft 365](https://aka.ms/pnc)
+- [Travail à distance à l’aide des services réseau Azure](https://docs.microsoft.com/azure/networking/working-remotely-support)

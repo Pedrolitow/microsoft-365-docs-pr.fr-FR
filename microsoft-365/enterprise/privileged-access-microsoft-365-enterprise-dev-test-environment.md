@@ -1,5 +1,5 @@
 ---
-title: Gestion des accès privilégiés pour votre environnement de test Microsoft 365 Entreprise
+title: Gestion des accès privilégiés pour votre environnement de test Microsoft 365 pour les entreprises
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -14,26 +14,26 @@ ms.collection:
 - Strat_O365_Enterprise
 - M365-security-compliance
 ms.custom: Ent_TLGs
-description: Utilisez ce guide de laboratoire de test pour activer la gestion des accès privilégiés dans votre environnement de test Microsoft 365 Enterprise.
-ms.openlocfilehash: 1a81c62124177a328209f175262ac13455ca0899
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+description: Utilisez ce guide de laboratoire de test pour activer la gestion des accès privilégiés pour votre environnement de test Microsoft 365 pour les entreprises.
+ms.openlocfilehash: 28fd27c3059fe25da5da8aaf8700b84c5989b408
+ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44352521"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46695145"
 ---
-# <a name="privileged-access-management-for-your-microsoft-365-enterprise-test-environment"></a>Gestion des accès privilégiés pour votre environnement de test Microsoft 365 Entreprise
+# <a name="privileged-access-management-for-your-microsoft-365-for-enterprise-test-environment"></a>Gestion des accès privilégiés pour votre environnement de test Microsoft 365 pour les entreprises
 
-*Ce Guide de Laboratoire Test peut être utilisé pour les environnements de test Microsoft 365 Entreprise et Office 365 Entreprise*.
+*Ce guide de laboratoire de test peut être utilisé pour les environnements de test Microsoft 365 pour les environnements de test d’entreprise et Office 365.*
 
-Avec les instructions de cet article, vous configurez la gestion des accès privilégiés pour renforcer la sécurité dans votre environnement de test Microsoft 365 Enterprise.
+Avec les instructions de cet article, vous configurez la gestion des accès privilégiés pour renforcer la sécurité dans votre environnement de test Microsoft 365 pour les entreprises.
 
 ![Guides de laboratoire de test pour Microsoft Cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
 >[!TIP]
->Cliquez [ici](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) pour afficher le plan de tous les articles de l’ensemble de guides de laboratoire de test de Microsoft 365 Entreprise.
+>Cliquez [ici](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) pour afficher le plan visuel de tous les articles de l’ensemble des guides de laboratoire de test de Microsoft 365 pour entreprise.
   
-## <a name="phase-1-build-out-your-microsoft-365-enterprise-test-environment"></a>Phase 1 : Créer l’environnement de test Microsoft 365 Entreprise
+## <a name="phase-1-build-out-your-microsoft-365-for-enterprise-test-environment"></a>Phase 1 : créer votre environnement de test Microsoft 365 pour les entreprises
 
 Si vous souhaitez simplement configurer la gestion des accès privilégiés de manière légère avec la configuration minimale requise, suivez les instructions de la [configuration de base légère](lightweight-base-configuration-microsoft-365-enterprise.md).
   
@@ -44,17 +44,17 @@ Si vous souhaitez configurer la gestion des accès privilégiés dans une entrep
 
 ## <a name="phase-2-configure-privileged-access-management"></a>Phase 2 : configurer la gestion des accès privilégiés
 
-Dans cette phase, vous allez configurer un groupe approbateurs et activer la gestion des accès privilégiés pour votre environnement de test Microsoft 365 Enterprise. Pour plus d’informations et pour obtenir une vue d’ensemble de la gestion des accès privilégiés, consultez la rubrique [gestion des accès privilégiés dans Office 365](https://docs.microsoft.com/office365/securitycompliance/privileged-access-management-overview).
+Dans cette phase, vous allez configurer un groupe approbateurs et activer la gestion des accès privilégiés pour votre environnement de test Microsoft 365 pour les entreprises. Pour plus d’informations et pour obtenir une vue d’ensemble de la gestion des accès privilégiés, consultez la rubrique [gestion des accès privilégiés](../compliance/privileged-access-management-overview.md).
 
 Procédez comme suit pour configurer et utiliser l’accès privilégié dans votre organisation :
 
-- [Étape 1 : créer un groupe d’approbateurs](https://docs.microsoft.com/microsoft-365/compliance/privileged-access-management-configuration#step-1-create-an-approvers-group)
+- [Étape 1 : créer un groupe d’approbateurs](../compliance/privileged-access-management-configuration.md#step-1-create-an-approvers-group)
 
-    Avant de commencer à utiliser l’accès aux privilèges, déterminez qui disposera de l’autorité d’approbation pour les demandes entrantes d’accès à des tâches élevées et privilégiées. Tout utilisateur qui fait partie du groupe approbateurs est en mesure d’approuver les demandes d’accès. Pour cela, vous créez un groupe de sécurité à extension messagerie dans Office 365. Créez un groupe de sécurité nommé « approbateurs d’accès privilégié » dans votre environnement de test et ajoutez « User 3 » précédemment créé dans les étapes du Guide de laboratoire de test précédent.
+    Avant de commencer à utiliser l’accès aux privilèges, déterminez qui disposera de l’autorité d’approbation pour les demandes entrantes d’accès à des tâches élevées et privilégiées. Tout utilisateur qui fait partie du groupe approbateurs est en mesure d’approuver les demandes d’accès. Pour cela, vous créez un groupe de sécurité à extension messagerie dans Microsoft 365. Créez un groupe de sécurité nommé « approbateurs d’accès privilégié » dans votre environnement de test et ajoutez « User 3 » précédemment créé dans les étapes du Guide de laboratoire de test précédent.
 
-- [Étape 2 : activer l’accès privilégié](https://docs.microsoft.com/microsoft-365/compliance/privileged-access-management-configuration#step-2-enable-privileged-access)
+- [Étape 2 : activer l’accès privilégié](../compliance/privileged-access-management-configuration.md#step-2-enable-privileged-access)
 
-    L’accès privilégié doit être activé de manière explicite dans Office 365 avec le groupe d’approbateurs par défaut et inclure un ensemble de comptes système que vous souhaitez exclure du contrôle d’accès gestion des accès privilégiés. Veillez à activer l’accès privilégié dans votre organisation avant de commencer la phase 3 de ce guide.
+    L’accès privilégié doit être activé de manière explicite dans Microsoft 365 avec le groupe d’approbateurs par défaut et inclure un ensemble de comptes système que vous souhaitez exclure du contrôle d’accès gestion des accès privilégiés. Veillez à activer l’accès privilégié dans votre organisation avant de commencer la phase 3 de ce guide.
 
 ## <a name="phase-3-verify-that-approval-is-required-for-elevated-and-privileged-tasks"></a>Phase 3 : vérifier que l’approbation est requise pour les tâches avec privilèges élevés et privilégiées
 
@@ -91,7 +91,7 @@ New-JournalRule -Name "JournalRule1" -Recipient joe@contoso.onmicrosoft.com -Jou
 
     **Type de stratégie**: tâche
 
-    **Étendue de stratégie**: Exchange
+    **Étendue de la stratégie** : Exchange
 
     **Nom**de la stratégie : nouvelle règle de journal
 
@@ -133,7 +133,7 @@ Insufficient permissions. Please raise an elevated access request for this task.
 
     **Type de demande**: tâche
 
-    **Étendue**de la demande : Exchange
+    **Étendue de la demande** : Exchange
 
     **Demande**: nouvelle règle de journal
 
@@ -171,8 +171,8 @@ Découvrez les fonctionnalités et les fonctionnalités de [protection des infor
 
 ## <a name="see-also"></a>Voir aussi
 
-[Guides de laboratoire de test Microsoft 365 Entreprise](m365-enterprise-test-lab-guides.md)
+[Microsoft 365 pour les entreprises Guides de laboratoire d'essai](m365-enterprise-test-lab-guides.md)
 
-[Déployer Microsoft 365 Entreprise](deploy-microsoft-365-enterprise.md)
+[Vue d’ensemble de Microsoft 365 pour entreprise](microsoft-365-overview.md)
 
-[Documentation Microsoft 365 Entreprise](https://docs.microsoft.com/microsoft-365-enterprise/)
+[Documentation Microsoft 365 pour entreprise](https://docs.microsoft.com/microsoft-365-enterprise/)
