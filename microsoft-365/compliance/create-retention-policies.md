@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Utiliser une stratégie de rétention vous permet de décider de façon proactive de conserver du contenu, de le supprimer (ou les deux), de conserver du contenu, puis de le supprimer ; d’appliquer une stratégie unique à l’ensemble de l’organisation ou à des emplacements ou utilisateurs spécifiques. Cela vous permet également d’appliquer une stratégie à tout le contenu ou au contenu répondant à certaines conditions.
-ms.openlocfilehash: 3a08bd67ff705b0b11b815843041b146fbef388f
-ms.sourcegitcommit: fa8e488936a36e4b56e1252cb4061b5bd6c0eafc
+ms.openlocfilehash: 3bec74c1043e2ecfd632144647945f441433dcb2
+ms.sourcegitcommit: 12e19f9cc319f25ab9dd3b0f77ad17e227d7f0be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "46656732"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46672909"
 ---
 # <a name="create-and-configure-retention-policies"></a>Créer et configurer des stratégies de rétention
 
@@ -308,7 +308,7 @@ Toutes les stratégies de rétention incluant une configuration prennent en char
     
     ![Paramètre RestrictiveRetention dans PowerShell](../media/retention-policy-preservation-lock-restrictiveretention.PNG)
     
-     Lorsque vous y êtes invité, lisez et accusez réception des restrictions incluses dans cette configuration, puis sélectionnez **Oui pour Tout** :
+     Lorsque vous y êtes invité, lisez et accusez réception des restrictions incluses dans cette configuration en entrant **Y**:
     
    ![Invite à confirmer que vous souhaitez verrouiller une stratégie de rétention dans PowerShell](../media/retention-policy-preservation-lock-confirmation-prompt.PNG)
 
