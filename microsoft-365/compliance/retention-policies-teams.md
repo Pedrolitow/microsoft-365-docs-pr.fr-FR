@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Découvrir les stratégies de rétention qui s’appliquent à Microsoft Teams.
-ms.openlocfilehash: 9c7232b5e90dd51322755220c40198a5bd077cce
-ms.sourcegitcommit: c04f1207cfaddac2a9abef38967c17d689756a96
+ms.openlocfilehash: 8599774994ccabce716c1366c0ffc6e1773626e9
+ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "46577972"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46685806"
 ---
 # <a name="learn-about-retention-for-microsoft-teams"></a>En savoir plus sur la rétention dans Microsoft Teams
 
@@ -66,7 +66,7 @@ Lorsque la stratégie de rétention consiste à conserver uniquement ou à suppr
 
 1. **Si le message n’est pas supprimé** pendant la période de rétention : à la fin de la période de rétention, il est déplacé vers le dossier SubstrateHolds. 
 
-2. **Si l’élément est supprimé par l’utilisateur** pendant la période de rétention, l’élément est placé immédiatement dans le dossier SubstrateHolds. Si un utilisateur supprime le message à partir du dossier SubstrateHolds ou vide celui-ci, l’élément est définitivement supprimé. Sinon, le message est définitivement supprimé un jour après son déplacement vers le dossier SubstrateHolds.
+2. **Si l’élément est supprimé par l’utilisateur** pendant la période de rétention, l’élément est placé immédiatement dans le dossier SubstrateHolds. Sinon, le message est définitivement supprimé un jour après son apparition dans le dossier SubstrateHolds.
 
 
 ## <a name="skype-for-business-and-teams-interop-chats"></a>Interopérabilité des conversations Skype Entreprise et Teams
