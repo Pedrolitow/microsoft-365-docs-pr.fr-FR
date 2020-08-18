@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-may2020
 - seo-marvel-jun2020
 description: Dans une solution de gestion des enregistrements, vous pouvez généralement configurer une étiquette de rétention pour démarrer la période de rétention sur la base d’un événement que vous identifiez.
-ms.openlocfilehash: 03f8446d54d905665f5bf33c2f581a869dfc478e
-ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
+ms.openlocfilehash: 7286e65be2313f5716bfc59399c1755cadb9f6d6
+ms.sourcegitcommit: 1780359234abdf081097c8064438d415da92fb85
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "46560531"
+ms.lasthandoff: 08/17/2020
+ms.locfileid: "46778524"
 ---
 # <a name="start-retention-when-an-event-occurs"></a>Débuter la rétention lorsqu’un événement se produit
 
@@ -43,7 +43,7 @@ Exemples d’utilisation de la rétention fondée sur les événements :
     
 Les rétentions basées sur des événements sont généralement utilisées dans le cadre d’un processus de gestion des enregistrements. Il faut alors prendre en compte les points suivants :
   
-- Les étiquettes basées sur des événements classent généralement le contenu en tant qu’enregistrement. Pour plus d’informations, voir [En savoir plus sur les enregistrements](records.md).
+- Les étiquettes basées sur des événements classent généralement le contenu en tant qu’enregistrement, dans le cadre de la solution de gestion des enregistrements. Pour plus d’informations, consultez [En savoir plus sur la gestion des enregistrements](records-management.md).
 
 - Un document qui a été classifié comme enregistrement, mais dont l’événement déclencheur ne s’est pas encore produit, est conservé indéfiniment (les enregistrements ne peuvent pas être supprimés définitivement) jusqu’à ce qu’un événement déclenche la période de rétention du document en question.
     

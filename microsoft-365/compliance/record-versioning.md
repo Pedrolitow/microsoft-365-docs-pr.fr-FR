@@ -17,18 +17,18 @@ search.appverid:
 - MOE150
 - MET150
 description: Découvrir les enregistrements pour vous aider à implémenter une solution de gestion des enregistrements dans Microsoft 365.
-ms.openlocfilehash: 943bf3949ab57eb4603695495d7a8ca0c4b90db7
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 47a6aee128dbc8375d5860e1e8b1e4e0acc355cb
+ms.sourcegitcommit: 1780359234abdf081097c8064438d415da92fb85
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46695243"
+ms.lasthandoff: 08/17/2020
+ms.locfileid: "46778450"
 ---
 # <a name="use-record-versioning-to-update-records-stored-in-sharepoint-or-onedrive"></a>Utiliser le contrôle de version des enregistrements pour mettre à jour les enregistrements stockés dans SharePoint ou OneDrive
 
 >*[Guide de sécurité et conformité pour les licences Microsoft 365](https://aka.ms/ComplianceSD).*
 
-La possibilité de marquer un document en tant qu’[enregistrement](records.md) et de restreindre les actions pouvant être effectuées sur l’enregistrement constitue un objectif essentiel pour toute solution de gestion d’enregistrements. Cependant, une collaboration peut également être nécessaire pour permettre aux utilisateurs de créer des versions ultérieures.
+La possibilité de marquer un document en tant qu’[enregistrement](records-management.md#records) et de restreindre les actions pouvant être effectuées sur l’enregistrement constitue un objectif essentiel pour toute solution de gestion d’enregistrements. Cependant, une collaboration peut également être nécessaire pour permettre aux utilisateurs de créer des versions ultérieures.
 
 Par exemple, il peut arriver que vous marquiez un contrat de vente sous forme d’un enregistrement, mais qu’ensuite vous deviez mettre à jour le contrat avec de nouvelles conditions et marquer la dernière version comme nouvel enregistrement tout en conservant la version précédente de l’enregistrement. Pour ces types de scénarios, SharePoint et OneDrive Entreprise prennent désormais en charge le *contrôle de version d’enregistrement*. Les dossiers de bloc-notes OneNote ne prennent pas en charge le contrôle de version d’enregistrement.
 
@@ -103,6 +103,4 @@ Pour plus d’informations sur la recherche de ces événements, voir la section
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-Pour marquer du contenu en tant qu’enregistrement, consultez [Déclarer des enregistrements à l’aide d’étiquettes de rétention](declare-records.md).
-
-Si vous souhaitez en savoir plus sur la destruction des enregistrements, voir [Disposition de contenu](disposition.md).
+Pour les autres scénarios pris en charge par la gestion des enregistrements, consultez [Scénarios courants pour la gestion des enregistrements](get-started-with-records-management.md#common-scenarios-for-records-management).

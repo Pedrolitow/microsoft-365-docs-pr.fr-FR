@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_IP
 description: Avec Office 365, votre contenu est chiffré au repos et en transit avec le chiffrement, les protocoles et les technologies les plus puissants disponibles. Obtenez une vue d’ensemble du chiffrement dans Office 365.
-ms.openlocfilehash: 2b1f2927b5d6daeb5e83aae2521d96e329e77c43
-ms.sourcegitcommit: f80c6c52e5b08290f74baec1d64c4070046c32e4
+ms.openlocfilehash: 7a14cb1ab203ef1ee75962f4e55b4220c4ba06d9
+ms.sourcegitcommit: 234726a1795d984c4659da68f852d30a4dda5711
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "44717227"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "46794173"
 ---
 # <a name="encryption"></a>Chiffrement
 
@@ -81,8 +81,10 @@ Pour en savoir plus, consultez les ressources suivantes :
 |Supprimer le chiffrement d’un document  <br/> |[Ajouter ou supprimer la protection dans votre document, classeur ou présentation](https://support.office.com/article/05084cc3-300d-4c1a-8416-38d3e37d6826) <br/> Choisissez une section **protection contre la suppression** , puis consultez **supprimer le chiffrement du mot de passe**.  |
 
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Rubriques connexes
 
 [Planifier les fonctionnalités de protection des informations et de sécurité de Microsoft 365](plan-for-security-and-compliance.md)
 
 [10 façons de sécuriser les offres Microsoft 365 pour les entreprises](https://docs.microsoft.com/office365/admin/security-and-compliance/secure-your-business-data?view=o365-worldwide)
+
+[Flux de lecture et de chiffrement de niveau vidéo Microsoft Stream](https://docs.microsoft.com/stream/network-overview#video-level-encryption-and-playback-flow)

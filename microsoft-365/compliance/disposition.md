@@ -16,18 +16,18 @@ search.appverid:
 - MOE150
 - MET150
 description: Surveiller et gérer la suppression du contenu, que vous utilisiez une révision de disposition ou que le contenu soit automatiquement supprimé en fonction des paramètres que vous avez configurés.
-ms.openlocfilehash: 55b57891732f50eba09425fce4d2be34c94740f3
-ms.sourcegitcommit: fab425ea4580d1924fb421e6db233d135f5b7d19
+ms.openlocfilehash: 7548ab12b72aa75047caa373efe3e7c3eb7c5d31
+ms.sourcegitcommit: 1780359234abdf081097c8064438d415da92fb85
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "46533821"
+ms.lasthandoff: 08/17/2020
+ms.locfileid: "46778534"
 ---
 # <a name="disposition-of-content"></a>Disposition de contenu
 
 >*[Guide de sécurité et conformité pour les licences Microsoft 365](https://aka.ms/ComplianceSD).*
 
-Utilisez l’onglet **disposition** de la **gestion des enregistrements** dans le centre de conformité Microsoft 365 pour gérer les révisions de disposition et afficher les [enregistrements](records.md) qui ont été supprimés automatiquement à la fin de leur période de rétention. 
+Utilisez l’onglet **disposition** de la **gestion des enregistrements** dans le centre de conformité Microsoft 365 pour gérer les révisions de disposition et afficher les [enregistrements](records-management.md#records) qui ont été supprimés automatiquement à la fin de leur période de rétention. 
 
 ## <a name="prerequisites-for-viewing-content-dispositions"></a>Conditions préalables à l’affichage des suppressions de contenu
 

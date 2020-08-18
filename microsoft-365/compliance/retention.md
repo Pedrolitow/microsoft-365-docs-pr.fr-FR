@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: En savoir plus sur les stratégies de rétention et les étiquettes de rétention, qui permettent de conserver les éléments dont vous avez besoin et de supprimer ceux qui ne vous servent pas.
-ms.openlocfilehash: b0ce412609ac9c7084c1c598a327cde7c055c101
-ms.sourcegitcommit: 919b5d0f33b41b4beaca5fbb06e1c75d65027b7e
+ms.openlocfilehash: ed8390b9c773e04723c0f409eb9649e20af0dac3
+ms.sourcegitcommit: 1780359234abdf081097c8064438d415da92fb85
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "46757567"
+ms.lasthandoff: 08/17/2020
+ms.locfileid: "46778398"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>En savoir plus sur les stratégies et les étiquettes de rétention
 
@@ -89,7 +89,7 @@ Contrairement aux stratégies de rétention, les paramètres de rétention des �
 
 - Utilisez [révision avant destruction](disposition-reviews.md) pour réviser le contenu avant sa suppression définitive.
 
-- Marquez le contenu en tant qu’[enregistrement ](records.md) au niveau des paramètres d’étiquette, et conservez toujours une  [preuve de destruction](disposition.md#disposition-of-records) lorsque le contenu est supprimé à la fin de sa période de rétention.
+- Marquez le contenu en tant qu’[enregistrement ](records-management.md#records) au niveau des paramètres d’étiquette, et conservez toujours une  [preuve de destruction](disposition.md#disposition-of-records) lorsque le contenu est supprimé à la fin de sa période de rétention.
 
 ### <a name="retention-policies"></a>Stratégies de rétention
 
@@ -166,7 +166,7 @@ Avec les étiquettes de rétention, vous pouvez effectuer les actions suivantes�
 
 - **Appliquer une étiquette de rétention par défaut à une bibliothèque de documents, un dossier ou un ensemble de documents** dans SharePoint, afin que tous les documents stockés dans cette bibliothèque obtiennent l’étiquette de rétention par défaut.
 
-De plus, les étiquettes de rétention prennent en charge la [gestion des enregistrements](records-management.md) pour les e-mails et les documents dans les applications et les services Microsoft 365. Vous pouvez utiliser une étiquette de rétention pour classer du contenu sous la forme d’un enregistrement. Lorsque cela se produit et que le contenu reste dans Microsoft 365, l’étiquette place des restrictions supplémentaires sur le contenu qui peuvent être nécessaires pour des raisons réglementaires. Pour plus d’informations, notamment pour comparer les actions autorisées ou bloquées, voir [Découvrir les enregistrements](records.md).
+De plus, les étiquettes de rétention prennent en charge la [gestion des enregistrements](records-management.md) pour les e-mails et les documents dans les applications et les services Microsoft 365. Vous pouvez utiliser une étiquette de rétention pour classer du contenu sous la forme d’un enregistrement. Lorsque cela se produit et que le contenu reste dans Microsoft 365, l’étiquette place des restrictions supplémentaires sur le contenu qui peuvent être nécessaires pour des raisons réglementaires. Pour obtenir plus d’informations, consultez [Comparer des restrictions relatives aux actions autorisées ou bloquées](records-management.md#compare-restrictions-for-what-actions-are-allowed-or-blocked).
 
 Les étiquettes de rétention, contrairement [aux étiquettes de confidentialité ](sensitivity-labels.md), ne sont pas conservées si le contenu est déplacé en dehors de Microsoft 365.
 

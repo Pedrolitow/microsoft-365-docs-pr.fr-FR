@@ -15,13 +15,14 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection:
 - M365-security-compliance
+hideEdit: true
 description: La protection contre la perte de données (DLP) dans le centre de sécurité &amp; conformité inclut 80 types d’informations sensibles que vous pouvez utiliser dans vos stratégies DLP. Cette rubrique répertorie tous ces types d'informations sensibles et indique ce qu'une stratégie DLP recherche pour chaque type.
-ms.openlocfilehash: 9e1b1261bbb58b1ca65818a5ad304ee186561ae6
-ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
+ms.openlocfilehash: b302879b50c06007656aba93b38f8387557d301b
+ms.sourcegitcommit: 1780359234abdf081097c8064438d415da92fb85
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45430517"
+ms.lasthandoff: 08/17/2020
+ms.locfileid: "46778554"
 ---
 # <a name="sensitive-information-type-entity-definitions"></a>Définitions d’entités des types d’informations sensibles
 
@@ -37,9 +38,9 @@ La protection contre la perte de données (DLP) dans le centre de conformité co
 
 Avec
 - Quatre chiffres commençant par 0, 1, 2, 3, 6, 7 ou 8
-- Un trait d’union 
+- Un trait d’union
 - Quatre chiffres
-- Un trait d’union 
+- Un trait d’union
 - Un chiffre
 
 Non mis en forme : 9 chiffres consécutifs commençant par 0, 1, 2, 3, 6, 7 ou 8 
@@ -98,9 +99,9 @@ Huit chiffres séparés par des points
 Huit chiffres :
 - Deux chiffres
 - Un point 
-- Trois chiffres 
+- Trois chiffres
 - Un point 
-- Trois chiffres 
+- Trois chiffres
 
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -577,9 +578,9 @@ Non
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- L’expression régulière `Regex_austria_eu_driver's_license_number` trouve le contenu qui correspond au modèle. 
+- L’expression régulière  `Regex_austria_eu_driver's_license_number` trouve le contenu qui correspond au modèle. 
     
-- Un mot clé from `Keywords_austria_eu_driver's_license_number` est trouvé. 
+- Un mot clé from  `Keywords_austria_eu_driver's_license_number` est trouvé. 
     
 ```xml
 <!-- EU Driver's License Number -->
@@ -632,9 +633,9 @@ Non applicable
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- L’expression régulière `Regex_austria_eu_national_id_card` trouve le contenu qui correspond au modèle. 
+- L’expression régulière  `Regex_austria_eu_national_id_card` trouve le contenu qui correspond au modèle. 
     
-- Un mot clé from `Keywords_austria_eu_national_id_card` est trouvé. 
+- Un mot clé from  `Keywords_austria_eu_national_id_card` est trouvé. 
    
 ```xml
 <!-- EU austria_eu_national_id -->
@@ -680,9 +681,9 @@ Non applicable
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- L’expression régulière `Regex_austria_eu_passport_number` trouve le contenu qui correspond au modèle. 
+- L’expression régulière  `Regex_austria_eu_passport_number` trouve le contenu qui correspond au modèle. 
     
-- Un mot clé from `Keywords_austria_eu_passport_number` est trouvé. 
+- Un mot clé from  `Keywords_austria_eu_passport_number` est trouvé. 
     
 ```xml
  <!-- EU Passport Number -->
@@ -726,13 +727,13 @@ Oui
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
   
-- La fonction `Func_austria_eu_ssn_or_equivalent` trouve le contenu qui correspond au modèle. 
+- La fonction  `Func_austria_eu_ssn_or_equivalent` trouve le contenu qui correspond au modèle. 
     
-- Un mot clé from `Keywords_austria_eu_ssn_or_equivalent` est trouvé. 
+- Un mot clé from  `Keywords_austria_eu_ssn_or_equivalent` est trouvé. 
     
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- La fonction `Func_austria_eu_ssn_or_equivalent` trouve le contenu qui correspond au modèle. 
+- La fonction  `Func_austria_eu_ssn_or_equivalent` trouve le contenu qui correspond au modèle. 
     
 ```xml
  <!-- EU SSN or Equivalent Number -->
@@ -790,12 +791,12 @@ Oui
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
   
-- La fonction `Func_austria_eu_tax_file_number` trouve le contenu qui correspond au modèle. 
-- Un mot clé from `Keywords_austria_eu_tax_file_number` est trouvé. 
+- La fonction  `Func_austria_eu_tax_file_number` trouve le contenu qui correspond au modèle. 
+- Un mot clé from  `Keywords_austria_eu_tax_file_number` est trouvé. 
     
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- La fonction `Func_austria_eu_tax_file_number` trouve le contenu qui correspond au modèle. 
+- La fonction  `Func_austria_eu_tax_file_number` trouve le contenu qui correspond au modèle. 
     
 ```xml
  <!-- EU Tax File Number -->
@@ -1323,8 +1324,8 @@ Non
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- L’expression régulière `Regex_belgium_eu_driver's_license_number` trouve le contenu qui correspond au modèle. 
-- Un mot clé from `Keywords_belgium_eu_driver's_license_number` est trouvé.
+- L’expression régulière  `Regex_belgium_eu_driver's_license_number` trouve le contenu qui correspond au modèle. 
+- Un mot clé from  `Keywords_belgium_eu_driver's_license_number` est trouvé.
     
 ```xml
  <!-- EU Driver's License Number -->
@@ -1480,8 +1481,8 @@ Non applicable
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- L’expression régulière `Regex_belgium_eu_passport_number` trouve le contenu qui correspond au modèle. 
-- Un mot clé from `Keywords_belgium_eu_passport_number` est trouvé.
+- L’expression régulière  `Regex_belgium_eu_passport_number` trouve le contenu qui correspond au modèle. 
+- Un mot clé from  `Keywords_belgium_eu_passport_number` est trouvé.
 
 ```xml
  <!-- EU Passport Number -->
@@ -1523,12 +1524,12 @@ Oui
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
   
-- La fonction `Func_belgium_eu_ssn_or_equivalent` trouve le contenu qui correspond au modèle. 
-- Un mot clé from `Keywords_belgium_eu_ssn_or_equivalent` est trouvé. 
+- La fonction  `Func_belgium_eu_ssn_or_equivalent` trouve le contenu qui correspond au modèle. 
+- Un mot clé from  `Keywords_belgium_eu_ssn_or_equivalent` est trouvé. 
     
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- La fonction `Func_belgium_eu_ssn_or_equivalent` trouve le contenu qui correspond au modèle. 
+- La fonction  `Func_belgium_eu_ssn_or_equivalent` trouve le contenu qui correspond au modèle. 
     
 ```xml
  <!-- EU SSN or Equivalent Number -->
@@ -1590,8 +1591,8 @@ Non applicable
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- L’expression régulière `Regex_belgium_eu_tax_file_number` trouve le contenu qui correspond au modèle. 
-- Un mot clé from `Keywords_belgium_eu_tax_file_number` est trouvé. 
+- L’expression régulière  `Regex_belgium_eu_tax_file_number` trouve le contenu qui correspond au modèle. 
+- Un mot clé from  `Keywords_belgium_eu_tax_file_number` est trouvé. 
     
 ```xml
  <!-- EU Tax File Number -->
@@ -1745,7 +1746,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - Trois chiffres (ces huit premiers chiffres composent le numéro d’enregistrement)  
 - Une barre oblique  
 - Le numéro de succursale à quatre chiffres  
-- Un trait d’union 
+- Un trait d’union  
 - Deux chiffres de contrôle
 
 ### <a name="checksum"></a>Somme de contrôle
@@ -1885,8 +1886,8 @@ Non
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- L’expression régulière `Regex_bulgaria_eu_driver's_license_number` trouve le contenu qui correspond au modèle. 
-- Un mot clé from `Keywords_bulgaria_eu_driver's_license_number` est trouvé. 
+- L’expression régulière  `Regex_bulgaria_eu_driver's_license_number` trouve le contenu qui correspond au modèle. 
+- Un mot clé from  `Keywords_bulgaria_eu_driver's_license_number` est trouvé. 
     
 ```xml
  <!-- EU Driver's License Number -->
@@ -1942,12 +1943,12 @@ Oui
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
   
-- La fonction `Func_bulgaria_eu_national_id_card` trouve le contenu qui correspond au modèle. 
-- Un mot clé from `Keywords_bulgaria_national_number` est trouvé. 
+- La fonction  `Func_bulgaria_eu_national_id_card` trouve le contenu qui correspond au modèle. 
+- Un mot clé from  `Keywords_bulgaria_national_number` est trouvé. 
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- La fonction `Func_bulgaria_eu_national_id_card` trouve le contenu qui correspond au modèle. 
+- La fonction  `Func_bulgaria_eu_national_id_card` trouve le contenu qui correspond au modèle. 
     
 ```xml
 <Entity id="419f449f-6d9d-4be1-a154-b531f7a91b41" patternsProximity="300" recommendedConfidence="75">
@@ -2030,8 +2031,8 @@ Non
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- L’expression régulière `Regex_bulgaria_eu_passport_number` trouve le contenu qui correspond au modèle. 
-- Un mot clé from `Keywords_bulgaria_eu_passport_number` est trouvé. 
+- L’expression régulière  `Regex_bulgaria_eu_passport_number` trouve le contenu qui correspond au modèle. 
+- Un mot clé from  `Keywords_bulgaria_eu_passport_number` est trouvé. 
 
 ```xml
  <!-- EU Passport Number -->
@@ -2069,12 +2070,12 @@ Oui
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
   
-- La fonction `Func_bulgaria_eu_tax_file_number` trouve le contenu qui correspond au modèle. 
-- Un mot clé from `Keywords_bulgaria_eu_tax_file_number` est trouvé. 
+- La fonction  `Func_bulgaria_eu_tax_file_number` trouve le contenu qui correspond au modèle. 
+- Un mot clé from  `Keywords_bulgaria_eu_tax_file_number` est trouvé. 
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- La fonction `Func_bulgaria_eu_tax_file_number` trouve le contenu qui correspond au modèle. 
+- La fonction  `Func_bulgaria_eu_tax_file_number` trouve le contenu qui correspond au modèle. 
 
 ```xml
  <!-- EU Tax File Number -->
@@ -3076,8 +3077,8 @@ Non
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- L’expression régulière `Regex_croatia_eu_driver's_license_number` trouve le contenu qui correspond au modèle. 
-- Un mot clé from `Keywords_croatia_eu_driver's_license_number` est trouvé. 
+- L’expression régulière  `Regex_croatia_eu_driver's_license_number` trouve le contenu qui correspond au modèle. 
+- Un mot clé from  `Keywords_croatia_eu_driver's_license_number` est trouvé. 
 
 ```xml
  <!-- EU Driver's License Number -->
@@ -3192,8 +3193,8 @@ Non
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- L’expression régulière `Regex_croatia_eu_passport_number` trouve le contenu qui correspond au modèle. 
-- Un mot clé from `Keywords_croatia_eu_passport_number` est trouvé. 
+- L’expression régulière  `Regex_croatia_eu_passport_number` trouve le contenu qui correspond au modèle. 
+- Un mot clé from  `Keywords_croatia_eu_passport_number` est trouvé. 
     
 ```xml
  <!-- EU Passport Number -->
@@ -3284,12 +3285,12 @@ Oui
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
   
-- La fonction `Func_croatia_eu_ssn_or_equivalent` trouve le contenu qui correspond au modèle. 
-- Un mot clé from `Keywords_croatia_eu_ssn_or_equivalent` est trouvé. 
+- La fonction  `Func_croatia_eu_ssn_or_equivalent` trouve le contenu qui correspond au modèle. 
+- Un mot clé from  `Keywords_croatia_eu_ssn_or_equivalent` est trouvé. 
     
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- La fonction `Func_croatia_eu_ssn_or_equivalent` trouve le contenu qui correspond au modèle. 
+- La fonction  `Func_croatia_eu_ssn_or_equivalent` trouve le contenu qui correspond au modèle. 
     
 ```xml
  <!-- EU SSN or Equivalent Number -->
@@ -3345,12 +3346,12 @@ Oui
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
   
-- La fonction `Func_croatia_eu_tax_file_number` trouve le contenu qui correspond au modèle. 
-- Un mot clé from `Keywords_croatia_eu_tax_file_number` est trouvé. 
+- La fonction  `Func_croatia_eu_tax_file_number` trouve le contenu qui correspond au modèle. 
+- Un mot clé from  `Keywords_croatia_eu_tax_file_number` est trouvé. 
     
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- La fonction `Func_croatia_eu_tax_file_number` trouve le contenu qui correspond au modèle. 
+- La fonction  `Func_croatia_eu_tax_file_number` trouve le contenu qui correspond au modèle. 
     
 ```xml
  <!-- EU Tax File Number -->
@@ -3418,8 +3419,8 @@ Non
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- L’expression régulière `Regex_cyprus_eu_driver's_license_number` trouve le contenu qui correspond au modèle. 
-- Un mot clé from `Keywords_cyprus_eu_driver's_license_number` est trouvé.
+- L’expression régulière  `Regex_cyprus_eu_driver's_license_number` trouve le contenu qui correspond au modèle. 
+- Un mot clé from  `Keywords_cyprus_eu_driver's_license_number` est trouvé.
 
 ```xml
  <!-- EU Driver's License Number -->
@@ -3467,8 +3468,8 @@ Non applicable
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- L’expression régulière `Regex_cyprus_eu_national_id_card` trouve le contenu qui correspond au modèle. 
-- Un mot clé from `Keywords_cyprus_eu_national_id_card` est trouvé. 
+- L’expression régulière  `Regex_cyprus_eu_national_id_card` trouve le contenu qui correspond au modèle. 
+- Un mot clé from  `Keywords_cyprus_eu_national_id_card` est trouvé. 
     
 ```xml 
 <Entity id="419f449f-6d9d-4be1-a154-b531f7a91b41" patternsProximity="300" recommendedConfidence="75">
@@ -3509,8 +3510,8 @@ Non
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- L’expression régulière `Regex_cyprus_eu_passport_number` trouve le contenu qui correspond au modèle.
-- Un mot clé from `Keywords_cyprus_eu_passport_number` est trouvé. 
+- L’expression régulière  `Regex_cyprus_eu_passport_number` trouve le contenu qui correspond au modèle.
+- Un mot clé from  `Keywords_cyprus_eu_passport_number` est trouvé. 
     
 ```xml
  <!-- EU Passport Number -->
@@ -3554,12 +3555,12 @@ Non applicable
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
   
-- La fonction `Func_cyprus_eu_tax_file_number` trouve le contenu qui correspond au modèle. 
-- Un mot clé from `Keywords_cyprus_eu_tax_file_number` est trouvé. 
+- La fonction  `Func_cyprus_eu_tax_file_number` trouve le contenu qui correspond au modèle. 
+- Un mot clé from  `Keywords_cyprus_eu_tax_file_number` est trouvé. 
     
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- La fonction `Func_cyprus_eu_tax_file_number` trouve le contenu qui correspond au modèle. 
+- La fonction  `Func_cyprus_eu_tax_file_number` trouve le contenu qui correspond au modèle. 
     
 ```xml
  <!-- EU Tax File Number -->
@@ -3629,8 +3630,8 @@ Non
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- L’expression régulière `Regex_czech_republic_eu_driver's_license_number` trouve le contenu qui correspond au modèle. 
-- Un mot clé from `Keywords_czech_republic_eu_driver's_license_number` est trouvé. 
+- L’expression régulière  `Regex_czech_republic_eu_driver's_license_number` trouve le contenu qui correspond au modèle. 
+- Un mot clé from  `Keywords_czech_republic_eu_driver's_license_number` est trouvé. 
 
 ```xml
  <!-- EU Driver's License Number -->
@@ -3681,8 +3682,8 @@ Non
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- L’expression régulière `Regex_czech_republic_eu_passport_number` trouve le contenu qui correspond au modèle. 
-- Un mot clé from `Keywords_czech_republic_eu_passport_number` est trouvé. 
+- L’expression régulière  `Regex_czech_republic_eu_passport_number` trouve le contenu qui correspond au modèle. 
+- Un mot clé from  `Keywords_czech_republic_eu_passport_number` est trouvé. 
     
 ```xml
  <!-- EU Passport Number -->
@@ -3784,12 +3785,12 @@ Oui
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
   
-- La fonction `Func_czech_republic_eu_ssn_or_equivalent` trouve le contenu qui correspond au modèle. 
-- Un mot clé from `Keywords_czech_republic_eu_ssn_or_equivalent` est trouvé. 
+- La fonction  `Func_czech_republic_eu_ssn_or_equivalent` trouve le contenu qui correspond au modèle. 
+- Un mot clé from  `Keywords_czech_republic_eu_ssn_or_equivalent` est trouvé. 
     
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- La fonction `Func_czech_republic_eu_ssn_or_equivalent` trouve le contenu qui correspond au modèle. 
+- La fonction  `Func_czech_republic_eu_ssn_or_equivalent` trouve le contenu qui correspond au modèle. 
 
 ```xml
  <!-- EU SSN or Equivalent Number -->
@@ -3845,8 +3846,8 @@ Non applicable
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- L’expression régulière `Regex_czech_republic_eu_tax_file_number` trouve le contenu qui correspond au modèle. 
-- Un mot clé from `Keywords_czech_republic_eu_tax_file_number` est trouvé. 
+- L’expression régulière  `Regex_czech_republic_eu_tax_file_number` trouve le contenu qui correspond au modèle. 
+- Un mot clé from  `Keywords_czech_republic_eu_tax_file_number` est trouvé. 
     
 ```xml
  <!-- EU Tax File Number -->
@@ -3919,8 +3920,8 @@ Oui
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- L’expression régulière `Regex_denmark_eu_driver's_license_number` trouve le contenu qui correspond au modèle. 
-- Un mot clé from `Keywords_denmark_eu_driver's_license_number` est trouvé. 
+- L’expression régulière  `Regex_denmark_eu_driver's_license_number` trouve le contenu qui correspond au modèle. 
+- Un mot clé from  `Keywords_denmark_eu_driver's_license_number` est trouvé. 
     
 ```xml
  <!-- EU Driver's License Number -->
@@ -3971,8 +3972,8 @@ Non
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- L’expression régulière `Regex_denmark_eu_passport_number` trouve le contenu qui correspond au modèle. 
-- Un mot clé from `Keywords_denmark_eu_passport_number` est trouvé. 
+- L’expression régulière  `Regex_denmark_eu_passport_number` trouve le contenu qui correspond au modèle. 
+- Un mot clé from  `Keywords_denmark_eu_passport_number` est trouvé. 
     
 ```xml
  <!-- EU Passport Number -->
@@ -4107,12 +4108,12 @@ Oui
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
   
-- La fonction `Func_denmark_eu_ssn_or_equivalent` trouve le contenu qui correspond au modèle. 
-- Un mot clé from `Keywords_denmark_eu_ssn_or_equivalent` est trouvé. 
+- La fonction  `Func_denmark_eu_ssn_or_equivalent` trouve le contenu qui correspond au modèle. 
+- Un mot clé from  `Keywords_denmark_eu_ssn_or_equivalent` est trouvé. 
     
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- La fonction `Func_denmark_eu_ssn_or_equivalent` trouve le contenu qui correspond au modèle. 
+- La fonction  `Func_denmark_eu_ssn_or_equivalent` trouve le contenu qui correspond au modèle. 
     
 ```xml
  <!-- EU SSN or Equivalent Number -->
@@ -4166,12 +4167,12 @@ Oui
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
   
-- La fonction `Func_denmark_eu_tax_file_number` trouve le contenu qui correspond au modèle. 
-- Un mot clé from `Keywords_denmark_eu_tax_file_number` est trouvé. 
+- La fonction  `Func_denmark_eu_tax_file_number` trouve le contenu qui correspond au modèle. 
+- Un mot clé from  `Keywords_denmark_eu_tax_file_number` est trouvé. 
     
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- La fonction `Func_denmark_eu_tax_file_number` trouve le contenu qui correspond au modèle. 
+- La fonction  `Func_denmark_eu_tax_file_number` trouve le contenu qui correspond au modèle. 
     
 ```xml
  <!-- EU Tax File Number -->
@@ -4277,7 +4278,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ### <a name="keywords"></a>Mots-clés
 
-Néant
+Aucun
 
 ## <a name="estonia-drivers-license-number"></a>Numéro de permis de conduire Estonie
 Cette entité de type d’informations sensibles est uniquement disponible dans le type d’informations sensibles du pilote de l’UE.
@@ -4301,8 +4302,8 @@ Non
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- L’expression régulière `Regex_estonia_eu_driver's_license_number` trouve le contenu qui correspond au modèle. 
-- Un mot clé from `Keywords_estonia_eu_driver's_license_number` est trouvé. 
+- L’expression régulière  `Regex_estonia_eu_driver's_license_number` trouve le contenu qui correspond au modèle. 
+- Un mot clé from  `Keywords_estonia_eu_driver's_license_number` est trouvé. 
     
 ```xml
  <!-- EU Driver's License Number -->
@@ -4357,12 +4358,12 @@ Oui
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
   
-- La fonction `Func_estonia_eu_national_id_card` trouve le contenu qui correspond au modèle. 
-- Un mot clé from `Keywords_estonia_eu_national_id_card` est trouvé. 
+- La fonction  `Func_estonia_eu_national_id_card` trouve le contenu qui correspond au modèle. 
+- Un mot clé from  `Keywords_estonia_eu_national_id_card` est trouvé. 
     
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- La fonction `Func_estonia_eu_national_id_card` trouve le contenu qui correspond au modèle. 
+- La fonction  `Func_estonia_eu_national_id_card` trouve le contenu qui correspond au modèle. 
     
 ```xml
  
@@ -4432,8 +4433,8 @@ Non
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- L’expression régulière `Regex_estonia_eu_passport_number` trouve le contenu qui correspond au modèle. 
-- Un mot clé from `Keywords_estonia_eu_passport_number` est trouvé. 
+- L’expression régulière  `Regex_estonia_eu_passport_number` trouve le contenu qui correspond au modèle. 
+- Un mot clé from  `Keywords_estonia_eu_passport_number` est trouvé. 
     
 ```xml
  <!-- EU Passport Number -->
@@ -4479,12 +4480,12 @@ Oui
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
   
-- La fonction `Func_estonia_eu_tax_file_number` trouve le contenu qui correspond au modèle. 
-- Un mot clé from `Keywords_estonia_eu_tax_file_number` est trouvé. 
+- La fonction  `Func_estonia_eu_tax_file_number` trouve le contenu qui correspond au modèle. 
+- Un mot clé from  `Keywords_estonia_eu_tax_file_number` est trouvé. 
     
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- La fonction `Func_estonia_eu_tax_file_number` trouve le contenu qui correspond au modèle. 
+- La fonction  `Func_estonia_eu_tax_file_number` trouve le contenu qui correspond au modèle. 
     
 ```xml
  <!-- EU Tax File Number -->
@@ -5055,9 +5056,9 @@ Non
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- L’expression régulière `Regex_finland_eu_driver's_license_number` trouve le contenu qui correspond au modèle. 
+- L’expression régulière  `Regex_finland_eu_driver's_license_number` trouve le contenu qui correspond au modèle. 
     
-- Un mot clé from `Keywords_finland_eu_driver's_license_number` est trouvé. 
+- Un mot clé from  `Keywords_finland_eu_driver's_license_number` est trouvé. 
     
 ```xml
  <!-- EU Driver's License Number -->
@@ -5234,12 +5235,12 @@ Oui
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
   
-- La fonction `Func_finland_eu_ssn_or_equivalent` trouve le contenu qui correspond au modèle. 
-- Un mot clé from `Keywords_finland_eu_ssn_or_equivalent` est trouvé. 
+- La fonction  `Func_finland_eu_ssn_or_equivalent` trouve le contenu qui correspond au modèle. 
+- Un mot clé from  `Keywords_finland_eu_ssn_or_equivalent` est trouvé. 
     
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- La fonction `Func_finland_eu_ssn_or_equivalent` trouve le contenu qui correspond au modèle. 
+- La fonction  `Func_finland_eu_ssn_or_equivalent` trouve le contenu qui correspond au modèle. 
     
 ```xml
  <!-- EU SSN or Equivalent Number -->
@@ -5304,12 +5305,12 @@ Oui
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
   
-- La fonction `Func_finland_eu_tax_file_number` trouve le contenu qui correspond au modèle. 
-- Un mot clé from `Keywords_finland_eu_tax_file_number` est trouvé. 
+- La fonction  `Func_finland_eu_tax_file_number` trouve le contenu qui correspond au modèle. 
+- Un mot clé from  `Keywords_finland_eu_tax_file_number` est trouvé. 
     
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- La fonction `Func_finland_eu_tax_file_number` trouve le contenu qui correspond au modèle. 
+- La fonction  `Func_finland_eu_tax_file_number` trouve le contenu qui correspond au modèle. 
     
 ```xml
  <!-- EU Tax File Number -->
@@ -5634,12 +5635,12 @@ Non applicable
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
   
-- La fonction `Func_france_eu_tax_file_number` trouve le contenu qui correspond au modèle. 
-- Un mot clé from `Keywords_france_eu_tax_file_number` est trouvé. 
+- La fonction  `Func_france_eu_tax_file_number` trouve le contenu qui correspond au modèle. 
+- Un mot clé from  `Keywords_france_eu_tax_file_number` est trouvé. 
     
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- La fonction `Func_france_eu_tax_file_number` trouve le contenu qui correspond au modèle. 
+- La fonction  `Func_france_eu_tax_file_number` trouve le contenu qui correspond au modèle. 
     
 ```xml
  <!-- EU Tax File Number -->
@@ -5985,12 +5986,12 @@ Oui
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
   
-- La fonction `Func_germany_eu_tax_file_number` trouve le contenu qui correspond au modèle. 
-- Un mot clé from `Keywords_germany_eu_tax_file_number` est trouvé. 
+- La fonction  `Func_germany_eu_tax_file_number` trouve le contenu qui correspond au modèle. 
+- Un mot clé from  `Keywords_germany_eu_tax_file_number` est trouvé. 
     
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- La fonction `Func_germany_eu_tax_file_number` trouve le contenu qui correspond au modèle. 
+- La fonction  `Func_germany_eu_tax_file_number` trouve le contenu qui correspond au modèle. 
     
 ```xml
  <!-- EU Tax File Number -->
@@ -6053,8 +6054,8 @@ Non
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- L’expression régulière `Regex_greece_eu_driver's_license_number` trouve le contenu qui correspond au modèle. 
-- Un mot clé from `Keywords_greece_eu_driver's_license_number` est trouvé. 
+- L’expression régulière  `Regex_greece_eu_driver's_license_number` trouve le contenu qui correspond au modèle. 
+- Un mot clé from  `Keywords_greece_eu_driver's_license_number` est trouvé. 
     
 ```xml
  <!-- EU Driver's License Number -->
@@ -6157,8 +6158,8 @@ Non
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- L’expression régulière `Regex_greece_eu_passport_number` trouve le contenu qui correspond au modèle. 
-- Un mot clé from `Keywords_greece_eu_passport_number` est trouvé. 
+- L’expression régulière  `Regex_greece_eu_passport_number` trouve le contenu qui correspond au modèle. 
+- Un mot clé from  `Keywords_greece_eu_passport_number` est trouvé. 
     
 ```xml
  <!-- EU Passport Number -->
@@ -6198,9 +6199,9 @@ Non applicable
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- L’expression régulière `Regex_greece_eu_tax_file_number` trouve le contenu qui correspond au modèle. 
+- L’expression régulière  `Regex_greece_eu_tax_file_number` trouve le contenu qui correspond au modèle. 
     
-- Un mot clé from `Keywords_greece_eu_tax_file_number` est trouvé. 
+- Un mot clé from  `Keywords_greece_eu_tax_file_number` est trouvé. 
     
 ```
  <!-- EU Tax File Number -->
@@ -6350,8 +6351,8 @@ Non
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- L’expression régulière `Regex_hungary_eu_driver's_license_number` trouve le contenu qui correspond au modèle. 
-- Un mot clé from `Keywords_hungary_eu_driver's_license_number` est trouvé. 
+- L’expression régulière  `Regex_hungary_eu_driver's_license_number` trouve le contenu qui correspond au modèle. 
+- Un mot clé from  `Keywords_hungary_eu_driver's_license_number` est trouvé. 
     
 ```xml
  <!-- EU Driver's License Number -->
@@ -6404,12 +6405,12 @@ Oui
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
   
-- La fonction `Func_hungary_eu_national_id_card` trouve le contenu qui correspond au modèle. 
-- Un mot clé from `Keywords_hungary_eu_national_id_card` est trouvé. 
+- La fonction  `Func_hungary_eu_national_id_card` trouve le contenu qui correspond au modèle. 
+- Un mot clé from  `Keywords_hungary_eu_national_id_card` est trouvé. 
     
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- La fonction `Func_hungary_eu_national_id_card` trouve le contenu qui correspond au modèle. 
+- La fonction  `Func_hungary_eu_national_id_card` trouve le contenu qui correspond au modèle. 
     
 ```xml
 <Entity id="419f449f-6d9d-4be1-a154-b531f7a91b41" patternsProximity="300" recommendedConfidence="75">
@@ -6455,8 +6456,8 @@ Non
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- L’expression régulière `Regex_hungary_eu_passport_number` trouve le contenu qui correspond au modèle. 
-- Un mot clé from `Keywords_hungary_eu_passport_number` est trouvé. 
+- L’expression régulière  `Regex_hungary_eu_passport_number` trouve le contenu qui correspond au modèle. 
+- Un mot clé from  `Keywords_hungary_eu_passport_number` est trouvé. 
     
 ```xml
  <!-- EU Passport Number -->
@@ -6495,12 +6496,12 @@ Oui
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
   
-- La fonction `Func_hungary_eu_ssn_or_equivalent` trouve le contenu qui correspond au modèle. 
-- Un mot clé from `Keywords_hungary_eu_ssn_or_equivalent` est trouvé. 
+- La fonction  `Func_hungary_eu_ssn_or_equivalent` trouve le contenu qui correspond au modèle. 
+- Un mot clé from  `Keywords_hungary_eu_ssn_or_equivalent` est trouvé. 
     
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- La fonction `Func_hungary_eu_ssn_or_equivalent` trouve le contenu qui correspond au modèle. 
+- La fonction  `Func_hungary_eu_ssn_or_equivalent` trouve le contenu qui correspond au modèle. 
     
 ```xml
  <!-- EU SSN or Equivalent Number -->
@@ -6562,12 +6563,12 @@ Oui
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
   
-- La fonction `Func_hungary_eu_tax_file_number` trouve le contenu qui correspond au modèle. 
-- Un mot clé from `Keywords_hungary_eu_tax_file_number` est trouvé. 
+- La fonction  `Func_hungary_eu_tax_file_number` trouve le contenu qui correspond au modèle. 
+- Un mot clé from  `Keywords_hungary_eu_tax_file_number` est trouvé. 
     
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- La fonction `Func_hungary_eu_tax_file_number` trouve le contenu qui correspond au modèle. 
+- La fonction  `Func_hungary_eu_tax_file_number` trouve le contenu qui correspond au modèle. 
     
 ```xml
  <!-- EU Tax File Number -->
@@ -6661,9 +6662,9 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 ### <a name="pattern"></a>Modèle
 
 12 chiffres :
-- Quatre chiffres  
+- Quatre chiffres 
 - Éventuellement un tiret ou un espace  
-- Quatre chiffres  
+- Quatre chiffres 
 - Éventuellement un tiret ou un espace  
 - Le chiffre final, qui est le chiffre de contrôle
 
@@ -6789,7 +6790,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ### <a name="keywords"></a>Mots-clés
 
-Néant
+Aucun
 
    
 
@@ -6963,8 +6964,8 @@ Non
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- L’expression régulière `Regex_ireland_eu_driver's_license_number` trouve le contenu qui correspond au modèle. 
-- Un mot clé from `Keywords_ireland_eu_driver's_license_number` est trouvé. 
+- L’expression régulière  `Regex_ireland_eu_driver's_license_number` trouve le contenu qui correspond au modèle. 
+- Un mot clé from  `Keywords_ireland_eu_driver's_license_number` est trouvé. 
     
 ```xml
  <!-- EU Driver's License Number -->
@@ -7088,7 +7089,7 @@ Deux lettres ou chiffres suivis de sept chiffres sans espaces ni délimiteurs
 Deux lettres ou chiffres suivis de sept chiffres :
   
 - Deux chiffres ou lettres (ne respectent pas la casse)
-- Sept chiffres 
+- Sept chiffres
     
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -7098,8 +7099,8 @@ Non
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- L’expression régulière `Regex_ireland_eu_passport_number` trouve le contenu qui correspond au modèle. 
-- Un mot clé from `Keywords_ireland_eu_passport_number` est trouvé. 
+- L’expression régulière  `Regex_ireland_eu_passport_number` trouve le contenu qui correspond au modèle. 
+- Un mot clé from  `Keywords_ireland_eu_passport_number` est trouvé. 
     
 ```xml
  <!-- EU Passport Number -->
@@ -7216,12 +7217,12 @@ Non applicable
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
   
-- La fonction `Func_ireland_eu_tax_file_number` trouve le contenu qui correspond au modèle. 
-- Un mot clé from `Keywords_ireland_eu_tax_file_number` est trouvé. 
+- La fonction  `Func_ireland_eu_tax_file_number` trouve le contenu qui correspond au modèle. 
+- Un mot clé from  `Keywords_ireland_eu_tax_file_number` est trouvé. 
     
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- La fonction `Func_ireland_eu_tax_file_number` trouve le contenu qui correspond au modèle. 
+- La fonction  `Func_ireland_eu_tax_file_number` trouve le contenu qui correspond au modèle. 
     
 ```xml
  <!-- EU Tax File Number -->
@@ -7428,12 +7429,12 @@ Oui
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
   
-- La fonction `Func_italy_eu_national_id_card` trouve le contenu qui correspond au modèle. 
-- Un mot clé from `Keywords_italy_eu_national_id_card` est trouvé. 
+- La fonction  `Func_italy_eu_national_id_card` trouve le contenu qui correspond au modèle. 
+- Un mot clé from  `Keywords_italy_eu_national_id_card` est trouvé. 
     
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- La fonction `Func_italy_eu_national_id_card` trouve le contenu qui correspond au modèle. 
+- La fonction  `Func_italy_eu_national_id_card` trouve le contenu qui correspond au modèle. 
     
 ```xml
 <!-- Italy national identification number -->
@@ -7508,8 +7509,8 @@ Non applicable
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- L’expression régulière `Regex_italy_eu_passport_number` trouve le contenu qui correspond au modèle. 
-- Un mot clé from `Keywords_italy_eu_passport_number` est trouvé. 
+- L’expression régulière  `Regex_italy_eu_passport_number` trouve le contenu qui correspond au modèle. 
+- Un mot clé from  `Keywords_italy_eu_passport_number` est trouvé. 
     
 ```xml
  <!-- EU Passport Number -->
@@ -7562,12 +7563,12 @@ Oui
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
   
-- La fonction `Func_italy_eu_tax_file_number` trouve le contenu qui correspond au modèle. 
-- Un mot clé from `Keywords_italy_eu_tax_file_number` est trouvé. 
+- La fonction  `Func_italy_eu_tax_file_number` trouve le contenu qui correspond au modèle. 
+- Un mot clé from  `Keywords_italy_eu_tax_file_number` est trouvé. 
     
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- La fonction `Func_italy_eu_tax_file_number` trouve le contenu qui correspond au modèle. 
+- La fonction  `Func_italy_eu_tax_file_number` trouve le contenu qui correspond au modèle. 
     
 ```xml
  <!-- EU Tax File Number -->
@@ -7998,8 +7999,8 @@ Non
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- L’expression régulière `Regex_latvia_eu_driver's_license_number` trouve le contenu qui correspond au modèle. 
-- Un mot clé from `Keywords_latvia_eu_driver's_license_number` est trouvé. 
+- L’expression régulière  `Regex_latvia_eu_driver's_license_number` trouve le contenu qui correspond au modèle. 
+- Un mot clé from  `Keywords_latvia_eu_driver's_license_number` est trouvé. 
     
 ```xml
  <!-- EU Driver's License Number -->
@@ -8053,12 +8054,12 @@ Oui
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
   
-- La fonction `Func_latvia_eu_national_id_card` trouve le contenu qui correspond au modèle. 
-- Un mot clé from `Keywords_latvia_eu_national_id_card` est trouvé. 
+- La fonction  `Func_latvia_eu_national_id_card` trouve le contenu qui correspond au modèle. 
+- Un mot clé from  `Keywords_latvia_eu_national_id_card` est trouvé. 
     
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- La fonction `Func_latvia_eu_national_id_card` trouve le contenu qui correspond au modèle. 
+- La fonction  `Func_latvia_eu_national_id_card` trouve le contenu qui correspond au modèle. 
     
 ```xml
 <!-- Latvia national identification number -->
@@ -8166,8 +8167,8 @@ Non
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- L’expression régulière `Regex_latvia_eu_passport_number` trouve le contenu qui correspond au modèle. 
-- Un mot clé from `Keywords_latvia_eu_passport_number` est trouvé. 
+- L’expression régulière  `Regex_latvia_eu_passport_number` trouve le contenu qui correspond au modèle. 
+- Un mot clé from  `Keywords_latvia_eu_passport_number` est trouvé. 
     
 ```xml
  <!-- EU Passport Number -->
@@ -8211,12 +8212,12 @@ Oui
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
   
-- La fonction `Func_latvia_eu_tax_file_number` trouve le contenu qui correspond au modèle. 
-- Un mot clé from `Keywords_latvia_eu_tax_file_number` est trouvé. 
+- La fonction  `Func_latvia_eu_tax_file_number` trouve le contenu qui correspond au modèle. 
+- Un mot clé from  `Keywords_latvia_eu_tax_file_number` est trouvé. 
     
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- La fonction `Func_latvia_eu_tax_file_number` trouve le contenu qui correspond au modèle. 
+- La fonction  `Func_latvia_eu_tax_file_number` trouve le contenu qui correspond au modèle. 
     
 ```xml
  <!-- EU Tax File Number -->
@@ -8321,8 +8322,8 @@ Non
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- L’expression régulière `Regex_lithuania_eu_driver's_license_number` trouve le contenu qui correspond au modèle. 
-- Un mot clé from `Keywords_lithuania_eu_driver's_license_number` est trouvé. 
+- L’expression régulière  `Regex_lithuania_eu_driver's_license_number` trouve le contenu qui correspond au modèle. 
+- Un mot clé from  `Keywords_lithuania_eu_driver's_license_number` est trouvé. 
     
 ```xml
  <!-- EU Driver's License Number -->
@@ -8376,12 +8377,12 @@ Oui
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
   
-- La fonction `Func_lithuania_eu_national_id_card` trouve le contenu qui correspond au modèle. 
-- Un mot clé from `Keywords_lithuania_eu_national_id_card` est trouvé. 
+- La fonction  `Func_lithuania_eu_national_id_card` trouve le contenu qui correspond au modèle. 
+- Un mot clé from  `Keywords_lithuania_eu_national_id_card` est trouvé. 
     
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- La fonction `Func_lithuania_eu_national_id_card` trouve le contenu qui correspond au modèle. 
+- La fonction  `Func_lithuania_eu_national_id_card` trouve le contenu qui correspond au modèle. 
     
 ```xml
 <!-- Lithuania national identification number -->
@@ -8453,8 +8454,8 @@ Non applicable
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- L’expression régulière `Regex_lithuania_eu_passport_number` trouve le contenu qui correspond au modèle. 
-- Un mot clé from `Keywords_lithuania_eu_passport_number` est trouvé. 
+- L’expression régulière  `Regex_lithuania_eu_passport_number` trouve le contenu qui correspond au modèle. 
+- Un mot clé from  `Keywords_lithuania_eu_passport_number` est trouvé. 
     
 ```xml
  <!-- EU Passport Number -->
@@ -8491,12 +8492,12 @@ Non applicable
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
   
-- La fonction `Func_lithuania_eu_tax_file_number` trouve le contenu qui correspond au modèle. 
-- Un mot clé from `Keywords_lithuania_eu_tax_file_number` est trouvé. 
+- La fonction  `Func_lithuania_eu_tax_file_number` trouve le contenu qui correspond au modèle. 
+- Un mot clé from  `Keywords_lithuania_eu_tax_file_number` est trouvé. 
     
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- La fonction `Func_lithuania_eu_tax_file_number` trouve le contenu qui correspond au modèle. 
+- La fonction  `Func_lithuania_eu_tax_file_number` trouve le contenu qui correspond au modèle. 
     
 ```xml
  <!-- EU Tax File Number -->
@@ -8567,8 +8568,8 @@ Non
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- L’expression régulière `Regex_luxemburg_eu_driver's_license_number` trouve le contenu qui correspond au modèle. 
-- Un mot clé from `Keywords_luxemburg_eu_driver's_license_number` est trouvé. 
+- L’expression régulière  `Regex_luxemburg_eu_driver's_license_number` trouve le contenu qui correspond au modèle. 
+- Un mot clé from  `Keywords_luxemburg_eu_driver's_license_number` est trouvé. 
     
 ```xml
  <!-- EU Driver's License Number -->
@@ -8622,8 +8623,8 @@ Non applicable
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- L’expression régulière `Regex_luxemburg_eu_national_id_card` trouve le contenu qui correspond au modèle. 
-- Un mot clé from `Keywords_luxemburg_eu_national_id_card` est trouvé. 
+- L’expression régulière  `Regex_luxemburg_eu_national_id_card` trouve le contenu qui correspond au modèle. 
+- Un mot clé from  `Keywords_luxemburg_eu_national_id_card` est trouvé. 
     
 ```xml
 <Entity id="419f449f-6d9d-4be1-a154-b531f7a91b41" patternsProximity="300" recommendedConfidence="75">
@@ -8678,8 +8679,8 @@ Non
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- L’expression régulière `Regex_nation_eu_passport_number` trouve le contenu qui correspond au modèle. 
-- Un mot clé from `Keywords_nation_eu_passport_number` est trouvé. 
+- L’expression régulière  `Regex_nation_eu_passport_number` trouve le contenu qui correspond au modèle. 
+- Un mot clé from  `Keywords_nation_eu_passport_number` est trouvé. 
     
 ```xml
  <!-- EU Passport Number -->
@@ -8719,12 +8720,12 @@ Oui
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
   
-- La fonction `Func_luxemburg_eu_tax_file_number` trouve le contenu qui correspond au modèle. 
-- Un mot clé from `Keywords_luxemburg_eu_tax_file_number` est trouvé. 
+- La fonction  `Func_luxemburg_eu_tax_file_number` trouve le contenu qui correspond au modèle. 
+- Un mot clé from  `Keywords_luxemburg_eu_tax_file_number` est trouvé. 
     
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- La fonction `Func_luxemburg_eu_tax_file_number` trouve le contenu qui correspond au modèle. 
+- La fonction  `Func_luxemburg_eu_tax_file_number` trouve le contenu qui correspond au modèle. 
     
 ```xml
  <!-- EU Tax File Number -->
@@ -8874,8 +8875,8 @@ Non
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- L’expression régulière `Regex_malta_eu_driver's_license_number` trouve le contenu qui correspond au modèle. 
-- Un mot clé from `Keywords_malta_eu_driver's_license_number` est trouvé. 
+- L’expression régulière  `Regex_malta_eu_driver's_license_number` trouve le contenu qui correspond au modèle. 
+- Un mot clé from  `Keywords_malta_eu_driver's_license_number` est trouvé. 
     
 ```xml
 <!-- EU Driver's License Number -->
@@ -8927,12 +8928,12 @@ Non applicable
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- L’expression régulière `Regex_malta_eu_national_id_card` trouve le contenu qui correspond au modèle. 
-- Un mot clé from `Keywords_malta_eu_national_id_card` est trouvé. 
+- L’expression régulière  `Regex_malta_eu_national_id_card` trouve le contenu qui correspond au modèle. 
+- Un mot clé from  `Keywords_malta_eu_national_id_card` est trouvé. 
     
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 65 % si, dans une proximité de 300 caractères :
   
-- L’expression régulière `Regex_malta_eu_national_id_card` trouve le contenu qui correspond au modèle. 
+- L’expression régulière  `Regex_malta_eu_national_id_card` trouve le contenu qui correspond au modèle. 
     
 ```xml
  <!--Malta national identification number  -->
@@ -8986,8 +8987,8 @@ Non
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- L’expression régulière `Regex_malta_eu_passport_number` trouve le contenu qui correspond au modèle. 
-- Un mot clé from `Keywords_malta_eu_passport_number` est trouvé. 
+- L’expression régulière  `Regex_malta_eu_passport_number` trouve le contenu qui correspond au modèle. 
+- Un mot clé from  `Keywords_malta_eu_passport_number` est trouvé. 
     
 ```xml
  <!-- EU Passport Number -->
@@ -9036,12 +9037,12 @@ Non applicable
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- La fonction `Func_malta_eu_tax_file_number` trouve le contenu qui correspond au modèle. 
-- Un mot clé from `Keywords_malta_eu_tax_file_number` est trouvé. 
+- La fonction  `Func_malta_eu_tax_file_number` trouve le contenu qui correspond au modèle. 
+- Un mot clé from  `Keywords_malta_eu_tax_file_number` est trouvé. 
     
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 65 % si, dans une proximité de 300 caractères :
   
-- La fonction `Func_malta_eu_tax_file_number` trouve le contenu qui correspond au modèle. 
+- La fonction  `Func_malta_eu_tax_file_number` trouve le contenu qui correspond au modèle. 
     
 ```xml
  <!-- EU Tax File Number -->
@@ -9175,8 +9176,8 @@ Non
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- L’expression régulière `Regex_netherlands_eu_driver's_license_number` trouve le contenu qui correspond au modèle. 
-- Un mot clé from `Keywords_netherlands_eu_driver's_license_number` est trouvé. 
+- L’expression régulière  `Regex_netherlands_eu_driver's_license_number` trouve le contenu qui correspond au modèle. 
+- Un mot clé from  `Keywords_netherlands_eu_driver's_license_number` est trouvé. 
     
 ```xml
  <!-- EU Driver's License Number -->
@@ -9227,12 +9228,12 @@ Oui
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
   
-- La fonction `Func_netherlands_eu_national_id_card` trouve le contenu qui correspond au modèle. 
+- La fonction  `Func_netherlands_eu_national_id_card` trouve le contenu qui correspond au modèle. 
 - Un mot clé from est trouvé.
     
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- La fonction `Func_netherlands_eu_national_id_card` trouve le contenu qui correspond au modèle. 
+- La fonction  `Func_netherlands_eu_national_id_card` trouve le contenu qui correspond au modèle. 
     
 ```xml
  <!--Netherland national identification number  -->
@@ -9292,8 +9293,8 @@ Non applicable
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- L’expression régulière `Regex_netherlands_eu_passport_number` trouve le contenu qui correspond au modèle. 
-- Un mot clé from `Keywords_netherlands_eu_passport_number` est trouvé. 
+- L’expression régulière  `Regex_netherlands_eu_passport_number` trouve le contenu qui correspond au modèle. 
+- Un mot clé from  `Keywords_netherlands_eu_passport_number` est trouvé. 
     
 ```xml
  <!-- EU Passport Number -->
@@ -9336,12 +9337,12 @@ Oui
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
   
-- La fonction `Func_netherlands_eu_tax_file_number` trouve le contenu qui correspond au modèle. 
-- Un mot clé from `Keywords_netherlands_eu_tax_file_number` est trouvé. 
+- La fonction  `Func_netherlands_eu_tax_file_number` trouve le contenu qui correspond au modèle. 
+- Un mot clé from  `Keywords_netherlands_eu_tax_file_number` est trouvé. 
     
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- La fonction `Func_netherlands_eu_tax_file_number` trouve le contenu qui correspond au modèle. 
+- La fonction  `Func_netherlands_eu_tax_file_number` trouve le contenu qui correspond au modèle. 
     
 ```xml
  <!-- EU Tax File Number -->
@@ -9550,7 +9551,7 @@ Cette entité de type d’informations sensibles est uniquement disponible dans 
 - Une barre oblique 
 - Deux chiffres
 - Une barre oblique 
-- Sept chiffres 
+- Sept chiffres
     
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -9560,8 +9561,8 @@ Non
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- L’expression régulière `Regex_poland_eu_driver's_license_number` trouve le contenu qui correspond au modèle. 
-- Un mot clé from `Keywords_poland_eu_driver's_license_number` est trouvé. 
+- L’expression régulière  `Regex_poland_eu_driver's_license_number` trouve le contenu qui correspond au modèle. 
+- Un mot clé from  `Keywords_poland_eu_driver's_license_number` est trouvé. 
     
 ```xml
  <!-- EU Driver's License Number -->
@@ -9741,12 +9742,12 @@ Oui
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
   
-- La fonction `Func_poland_eu_tax_file_number` trouve le contenu qui correspond au modèle. 
-- Un mot clé from `Keywords_poland_eu_tax_file_number` est trouvé. 
+- La fonction  `Func_poland_eu_tax_file_number` trouve le contenu qui correspond au modèle. 
+- Un mot clé from  `Keywords_poland_eu_tax_file_number` est trouvé. 
     
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- La fonction `Func_poland_eu_tax_file_number` trouve le contenu qui correspond au modèle. 
+- La fonction  `Func_poland_eu_tax_file_number` trouve le contenu qui correspond au modèle. 
     
 ```xml
  <!-- EU Tax File Number -->
@@ -9877,8 +9878,8 @@ Non
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- L’expression régulière `Regex_portugal_eu_driver's_license_number` trouve le contenu qui correspond au modèle. 
-- Un mot clé from `Keywords_portugal_eu_driver's_license_number` est trouvé. 
+- L’expression régulière  `Regex_portugal_eu_driver's_license_number` trouve le contenu qui correspond au modèle. 
+- Un mot clé from  `Keywords_portugal_eu_driver's_license_number` est trouvé. 
     
 ```xml
  <!-- EU Driver's License Number -->
@@ -9930,8 +9931,8 @@ Non
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- L’expression régulière `Regex_portugal_eu_passport_number` trouve le contenu qui correspond au modèle. 
-- Un mot clé from `Keywords_portugal_eu_passport_number` est trouvé. 
+- L’expression régulière  `Regex_portugal_eu_passport_number` trouve le contenu qui correspond au modèle. 
+- Un mot clé from  `Keywords_portugal_eu_passport_number` est trouvé. 
     
 ```xml
  <!-- EU Passport Number -->
@@ -9968,12 +9969,12 @@ Oui
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
   
-- La fonction `Func_portugal_eu_tax_file_number` trouve le contenu qui correspond au modèle. 
-- Un mot clé from `Keywords_portugal_eu_tax_file_number` est trouvé. 
+- La fonction  `Func_portugal_eu_tax_file_number` trouve le contenu qui correspond au modèle. 
+- Un mot clé from  `Keywords_portugal_eu_tax_file_number` est trouvé. 
     
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- La fonction `Func_portugal_eu_tax_file_number` trouve le contenu qui correspond au modèle. 
+- La fonction  `Func_portugal_eu_tax_file_number` trouve le contenu qui correspond au modèle. 
     
 ```xml
  <!-- EU Tax File Number -->
@@ -10039,8 +10040,8 @@ Non
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- L’expression régulière `Regex_romania_eu_driver's_license_number` trouve le contenu qui correspond au modèle. 
-- Un mot clé from `Keywords_romania_eu_driver's_license_number` est trouvé. 
+- L’expression régulière  `Regex_romania_eu_driver's_license_number` trouve le contenu qui correspond au modèle. 
+- Un mot clé from  `Keywords_romania_eu_driver's_license_number` est trouvé. 
     
 ```xml
  <!-- EU Driver's License Number -->
@@ -10089,12 +10090,12 @@ Oui
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
   
-- La fonction `Func_romania_eu_national_id_card` trouve le contenu qui correspond au modèle. 
-- Un mot clé from `Keywords_romania_eu_national_id_card` est trouvé. 
+- La fonction  `Func_romania_eu_national_id_card` trouve le contenu qui correspond au modèle. 
+- Un mot clé from  `Keywords_romania_eu_national_id_card` est trouvé. 
     
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- La fonction `Func_romania_eu_national_id_card` trouve le contenu qui correspond au modèle. 
+- La fonction  `Func_romania_eu_national_id_card` trouve le contenu qui correspond au modèle. 
     
 ```xml
  <!--Romania national identification number  -->
@@ -10183,8 +10184,8 @@ Non
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- L’expression régulière `Regex_romania_eu_passport_number` trouve le contenu qui correspond au modèle. 
-- Un mot clé from `Keywords_romania_eu_passport_number` est trouvé. 
+- L’expression régulière  `Regex_romania_eu_passport_number` trouve le contenu qui correspond au modèle. 
+- Un mot clé from  `Keywords_romania_eu_passport_number` est trouvé. 
     
 ```xml
  <!-- EU Passport Number -->
@@ -10224,8 +10225,8 @@ Non applicable
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- L’expression régulière `Regex_romania_eu_tax_file_number` trouve le contenu qui correspond au modèle. 
-- Un mot clé from `Keywords_romania_eu_tax_file_number` est trouvé. 
+- L’expression régulière  `Regex_romania_eu_tax_file_number` trouve le contenu qui correspond au modèle. 
+- Un mot clé from  `Keywords_romania_eu_tax_file_number` est trouvé. 
     
 ```xml
  <!-- EU Tax File Number -->
@@ -10412,8 +10413,8 @@ Non
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- L’expression régulière `Regex_slovakia_eu_driver's_license_number` trouve le contenu qui correspond au modèle. 
-- Un mot clé from `Keywords_slovakia_eu_driver's_license_number` est trouvé. 
+- L’expression régulière  `Regex_slovakia_eu_driver's_license_number` trouve le contenu qui correspond au modèle. 
+- Un mot clé from  `Keywords_slovakia_eu_driver's_license_number` est trouvé. 
     
 ```xml
  <!-- EU Driver's License Number -->
@@ -10451,12 +10452,12 @@ Oui
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
   
-- La fonction `Func_slovakia_eu_national_id_card` trouve le contenu qui correspond au modèle. 
-- Un mot clé from `Keywords_slovakia_eu_national_id_card` est trouvé. 
+- La fonction  `Func_slovakia_eu_national_id_card` trouve le contenu qui correspond au modèle. 
+- Un mot clé from  `Keywords_slovakia_eu_national_id_card` est trouvé. 
     
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- La fonction `Func_slovakia_eu_national_id_card` trouve le contenu qui correspond au modèle. 
+- La fonction  `Func_slovakia_eu_national_id_card` trouve le contenu qui correspond au modèle. 
     
 ```xml
  <!-- Slovakia national identification number -->
@@ -10542,8 +10543,8 @@ Non
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- L’expression régulière `Regex_slovakia_eu_passport_number` trouve le contenu qui correspond au modèle. 
-- Un mot clé from `Keywords_slovakia_eu_passport_number` est trouvé. 
+- L’expression régulière  `Regex_slovakia_eu_passport_number` trouve le contenu qui correspond au modèle. 
+- Un mot clé from  `Keywords_slovakia_eu_passport_number` est trouvé. 
     
 ```xml
  <!-- EU Passport Number -->
@@ -10583,8 +10584,8 @@ Non applicable
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- L’expression régulière `Regex_slovakia_eu_tax_file_number` trouve le contenu qui correspond au modèle. 
-- Un mot clé from `Keywords_slovakia_eu_tax_file_number` est trouvé. 
+- L’expression régulière  `Regex_slovakia_eu_tax_file_number` trouve le contenu qui correspond au modèle. 
+- Un mot clé from  `Keywords_slovakia_eu_tax_file_number` est trouvé. 
     
 ```xml
  <!-- EU Tax File Number -->
@@ -10668,8 +10669,8 @@ Non
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- L’expression régulière `Regex_slovenia_eu_driver's_license_number` trouve le contenu qui correspond au modèle. 
-- Un mot clé from `Keywords_slovenia_eu_driver's_license_number` est trouvé. 
+- L’expression régulière  `Regex_slovenia_eu_driver's_license_number` trouve le contenu qui correspond au modèle. 
+- Un mot clé from  `Keywords_slovenia_eu_driver's_license_number` est trouvé. 
     
 ```xml
  <!-- EU Driver's License Number -->
@@ -10723,12 +10724,12 @@ Oui
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
   
-- La fonction `Func_slovenia_eu_national_id_card` trouve le contenu qui correspond au modèle. 
-- Un mot clé from `Keywords_slovenia_eu_national_id_card` est trouvé. 
+- La fonction  `Func_slovenia_eu_national_id_card` trouve le contenu qui correspond au modèle. 
+- Un mot clé from  `Keywords_slovenia_eu_national_id_card` est trouvé. 
     
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- La fonction `Func_slovenia_eu_national_id_card` trouve le contenu qui correspond au modèle. 
+- La fonction  `Func_slovenia_eu_national_id_card` trouve le contenu qui correspond au modèle. 
     
 ```xml
  <!-- Slovenia national identification number -->
@@ -10798,8 +10799,8 @@ Non
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- L’expression régulière `Regex_slovenia_eu_passport_number` trouve le contenu qui correspond au modèle. 
-- Un mot clé from `Keywords_slovenia_eu_passport_number` est trouvé. 
+- L’expression régulière  `Regex_slovenia_eu_passport_number` trouve le contenu qui correspond au modèle. 
+- Un mot clé from  `Keywords_slovenia_eu_passport_number` est trouvé. 
     
 ```xml
  <!-- EU Passport Number -->
@@ -10836,12 +10837,12 @@ Oui
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
   
-- La fonction `Func_slovenia_eu_tax_file_number` trouve le contenu qui correspond au modèle. 
-- Un mot clé from `Keywords_slovenia_eu_tax_file_number` est trouvé. 
+- La fonction  `Func_slovenia_eu_tax_file_number` trouve le contenu qui correspond au modèle. 
+- Un mot clé from  `Keywords_slovenia_eu_tax_file_number` est trouvé. 
     
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- La fonction `Func_slovenia_eu_tax_file_number` trouve le contenu qui correspond au modèle. 
+- La fonction  `Func_slovenia_eu_tax_file_number` trouve le contenu qui correspond au modèle. 
     
 ```xml
  <!-- EU Tax File Number -->
@@ -11005,8 +11006,8 @@ Oui
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- La fonction `Func_spain_eu_driver's_license_number` trouve le contenu qui correspond au modèle. 
-- Un mot clé from `Keywords_spain_eu_driver's_license_number` est trouvé. 
+- La fonction  `Func_spain_eu_driver's_license_number` trouve le contenu qui correspond au modèle. 
+- Un mot clé from  `Keywords_spain_eu_driver's_license_number` est trouvé. 
     
 ```xml
  <!-- EU Driver's License Number -->
@@ -11079,8 +11080,8 @@ Non applicable
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- L’expression régulière `Regex_spain_eu_national_id_card` trouve le contenu qui correspond au modèle. 
-- Un mot clé from `Keywords_spain_eu_national_id_card"` est trouvé. 
+- L’expression régulière  `Regex_spain_eu_national_id_card` trouve le contenu qui correspond au modèle. 
+- Un mot clé from  `Keywords_spain_eu_national_id_card"` est trouvé. 
     
 ```xml
 <!-- Spain national identification number -->
@@ -11142,8 +11143,8 @@ Non applicable
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- L’expression régulière `Regex_spain_eu_passport_number` trouve le contenu qui correspond au modèle. 
-- Un mot clé from `Keywords_spain_eu_passport_number` est trouvé. 
+- L’expression régulière  `Regex_spain_eu_passport_number` trouve le contenu qui correspond au modèle. 
+- Un mot clé from  `Keywords_spain_eu_passport_number` est trouvé. 
     
 ```xml
  <!-- EU Passport Number -->
@@ -11207,7 +11208,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ### <a name="keywords"></a>Mots-clés
 
-Néant
+Aucun
 
 ## <a name="spain-tax-identification-number"></a>Numéro d’identification fiscale Espagne
 Cette entité de type d’informations sensibles est uniquement disponible dans le type d’informations sensibles du numéro d’identification fiscale de l’UE.
@@ -11255,12 +11256,12 @@ Oui
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
   
-- La fonction `Func_spain_eu_tax_file_number` trouve le contenu qui correspond au modèle. 
-- Un mot clé from `Keywords_spain_eu_tax_file_number` est trouvé. 
+- La fonction  `Func_spain_eu_tax_file_number` trouve le contenu qui correspond au modèle. 
+- Un mot clé from  `Keywords_spain_eu_tax_file_number` est trouvé. 
     
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- La fonction `Func_spain_eu_tax_file_number` trouve le contenu qui correspond au modèle. 
+- La fonction  `Func_spain_eu_tax_file_number` trouve le contenu qui correspond au modèle. 
     
 ```xml
  <!-- EU Tax File Number -->
@@ -11409,8 +11410,8 @@ Non
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- L’expression régulière `Regex_sweden_eu_driver's_license_number` trouve le contenu qui correspond au modèle. 
-- Un mot clé from `Keywords_sweden_eu_driver's_license_number` est trouvé. 
+- L’expression régulière  `Regex_sweden_eu_driver's_license_number` trouve le contenu qui correspond au modèle. 
+- Un mot clé from  `Keywords_sweden_eu_driver's_license_number` est trouvé. 
     
 ```xml
  <!-- EU Driver's License Number -->
@@ -11574,12 +11575,12 @@ Oui
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
   
-- La fonction `Func_sweden_eu_ssn_or_equivalent` trouve le contenu qui correspond au modèle. 
-- Un mot clé from `Keywords_sweden_eu_ssn_or_equivalent` est trouvé. 
+- La fonction  `Func_sweden_eu_ssn_or_equivalent` trouve le contenu qui correspond au modèle. 
+- Un mot clé from  `Keywords_sweden_eu_ssn_or_equivalent` est trouvé. 
     
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- La fonction `Func_sweden_eu_ssn_or_equivalent` trouve le contenu qui correspond au modèle. 
+- La fonction  `Func_sweden_eu_ssn_or_equivalent` trouve le contenu qui correspond au modèle. 
     
 ```xml
  <!-- EU SSN or Equivalent Number -->
@@ -11638,12 +11639,12 @@ Oui
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
   
-- La fonction `Func_sweden_eu_tax_file_number` trouve le contenu qui correspond au modèle. 
-- Un mot clé from `Keywords_sweden_eu_tax_file_number` est trouvé. 
+- La fonction  `Func_sweden_eu_tax_file_number` trouve le contenu qui correspond au modèle. 
+- Un mot clé from  `Keywords_sweden_eu_tax_file_number` est trouvé. 
     
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- La fonction `Func_sweden_eu_tax_file_number` trouve le contenu qui correspond au modèle. 
+- La fonction  `Func_sweden_eu_tax_file_number` trouve le contenu qui correspond au modèle. 
     
 ```xml
  <!-- EU Tax File Number -->
@@ -11739,7 +11740,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - numéro d’acheminement swift 
 - numéro BIC 
 - code BIC 
-- BIC\# 
+- BIC \# 
 - BIC\# 
 - code d’identification bancaire 
 - 標準化 9362 
@@ -11751,12 +11752,12 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - BICコード 
 - 銀行識別コードのための国際組織 
 - Organisation internationale de normalisation 9362 
-- rapide\# 
+- rapide \# 
 - code SWIFT 
 - le numéro de swift 
 - swift numéro d’acheminement 
 - le numéro BIC 
-- \#BIC 
+- \# BIC 
 - code identificateur de banque 
    
 ## <a name="taiwan-national-identification-number"></a>Numéro d’identification national taïwanais
@@ -12280,9 +12281,9 @@ Oui
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- La fonction `Func_uk_eu_tax_file_number` trouve le contenu qui correspond au modèle. 
+- La fonction  `Func_uk_eu_tax_file_number` trouve le contenu qui correspond au modèle. 
     
-- Un mot clé from `Keywords_uk_eu_tax_file_number` est trouvé. 
+- Un mot clé from  `Keywords_uk_eu_tax_file_number` est trouvé. 
     
 ```
  <!-- EU Tax File Number -->

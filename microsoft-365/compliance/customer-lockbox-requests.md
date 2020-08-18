@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez les demandes de référentiel sécurisé du client qui vous permettent de contrôler la manière dont un technicien du support technique Microsoft peut accéder à vos données lorsque vous rencontrez un problème.
-ms.openlocfilehash: 3ae04648cc89bf9871bb48e5669c620ffd7564ff
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 67662c34ed3aedb22c3462a2ba8aff9e338e07c6
+ms.sourcegitcommit: 234726a1795d984c4659da68f852d30a4dda5711
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637786"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "46794253"
 ---
 # <a name="customer-lockbox-in-office-365"></a>Référentiel sécurisé du client dans Office 365
 
@@ -32,13 +32,13 @@ Pour voir les options permettant aux utilisateurs de bénéficier des offres de 
 
 Le référentiel sécurisé du client garantit que Microsoft ne peut pas accéder à votre contenu pour effectuer une opération de service sans votre approbation explicite. Le référentiel sécurisé du client vous fournit le flux de travail d’approbation pour les demandes d’accès à votre contenu.
 
-Parfois, les ingénieurs Microsoft aident à résoudre et résoudre les problèmes signalés par les clients dans le processus de support technique. En règle générale, les problèmes sont résolus par des outils de télémétrie et de débogage étendus que Microsoft a en place pour ses services. Toutefois, dans certains cas, un technicien Microsoft doit accéder au contenu client pour déterminer la cause première et résoudre le problème. Le référentiel sécurisé du client exige que l’ingénieur demande l’accès au client en tant que dernière étape du flux de travail approbation. Cela permet aux organisations d’approuver ou de refuser ces demandes et de fournir un contrôle d’accès direct au client.
+Parfois, les ingénieurs Microsoft aident à résoudre et résoudre les problèmes signalés par les clients dans le processus de support technique. En règle générale, les problèmes sont résolus par des outils de télémétrie et de débogage étendus que Microsoft a en place pour ses services. Toutefois, dans certains cas, un technicien Microsoft doit accéder au contenu client pour déterminer la cause première et résoudre le problème. Customer Lockbox nécessite l’intervention de l’ingénieur pour demander l’accès au client en tant que dernière étape du flux de travail d’approbation. Cela permet aux organisations d’approuver ou de refuser ces demandes et de fournir un contrôle d’accès direct au client.
 
 ### <a name="customer-lockbox-overview-video"></a>Vidéo de présentation du référentiel sécurisé du client
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/8fecf10b-1f03-4849-8b67-76d3d2a43f26?autoplay=false]
 
-## <a name="customer-lockbox-workflow"></a>Flux de travail bte post.
+## <a name="customer-lockbox-workflow"></a>Flux de travail Customer Lockbox
 
 Les étapes suivantes décrivent le flux de travail standard lorsqu’un ingénieur de Microsoft lance une demande de référentiel sécurisé client :
 
@@ -50,7 +50,7 @@ Les étapes suivantes décrivent le flux de travail standard lorsqu’un ingéni
 
 4. L’ingénieur du support technique Microsoft se connecte à l’outil de demande de référentiel sécurisé du client et effectue une demande d’accès aux données qui inclut le nom de client de l’organisation, le numéro de demande de service et la durée estimée que l’ingénieur a besoin d’accéder aux données.
 
-5. Une fois que le gestionnaire de support Microsoft approuve la demande, le référentiel sécurisé du client envoie à l’organisation une notification par courrier électronique relative à la demande d’accès en attente de la part de Microsoft.
+5. Une fois la demande approuvée par le gestionnaire du support technique Microsoft, Customer Lockbox envoie à l’approbateur désigné dans l’organisation une notification par e-mail concernant la demande d’accès en attente de Microsoft.
 
     ![Exemple de notification de courrier postal du client](../media/CustomerLockbox1.png)
 
@@ -63,28 +63,26 @@ Les étapes suivantes décrivent le flux de travail standard lorsqu’un ingéni
    > [!IMPORTANT]
    > Microsoft n’inclut aucun lien dans les notifications de courrier électronique postal du client qui vous obligent à vous connecter à Office 365.
 
-7. Une fois que l’approbateur de l’organisation approuve la demande, l’ingénieur Microsoft reçoit le message d’approbation, se connecte au client dans Exchange Online et corrige le problème du client. Les ingénieurs Microsoft ont la durée demandée pour résoudre le problème après lequel l’accès est automatiquement révoqué.
+7. Après acceptation de la demande par l’approbateur de l’organisation, l’ingénieur Microsoft reçoit le message d’approbation, se connecte au client dans Exchange Online et corrige le problème rencontré par le client. Les ingénieurs Microsoft ont la durée demandée pour résoudre le problème après lequel l’accès est automatiquement révoqué.
 
 > [!NOTE]
-> Toutes les actions effectuées par un ingénieur Microsoft sont consignées dans le journal d’audit. Vous pouvez rechercher et consulter ces enregistrements d’audit.
+> Chaque action effectuée par un ingénieur Microsoft est enregistrée dans le journal d’audit. Vous pouvez rechercher et consulter ces enregistrements d’audit.
 
 ## <a name="turn-customer-lockbox-requests-on-or-off"></a>Activer ou désactiver les demandes de référentiel sécurisé du client
 
-Vous pouvez activer les contrôles de référentiel sécurisé du client dans le centre d’administration 365 de Microsoft. Lorsque vous activez le référentiel sécurisé du client, Microsoft doit obtenir l’approbation de votre organisation avant d’accéder au contenu de votre client.
+Vous pouvez activer les contrôles Customer Lockbox dans le Centre d’administration Microsoft 365. Lorsque vous activez le référentiel sécurisé du client, Microsoft doit obtenir l’approbation de votre organisation avant d’accéder au contenu de votre client.
 
-1. À l’aide d’un compte professionnel ou scolaire auquel est attribué le rôle d' **approbateur** général ou d’approbation du client [https://admin.microsoft.com](https://admin.microsoft.com) , accédez à et connectez-vous.
+1. À l’aide d’un compte professionnel ou scolaire auquel est attribué le rôle d' **approbateur** général ou d’approbation du client, accédez à [https://admin.microsoft.com](https://admin.microsoft.com) et connectez-vous.
 
-2. Choisissez **paramètres > sécurité & confidentialité**.
+2. Sélectionnez **paramètres > paramètres**de l’organisation.
 
-    ![Modifier les paramètres du référentiel sécurisé du client dans le centre d’administration](../media/CustomerLockbox2.png)
-
-3. Dans la vignette **client-référentiel sécurisé** , choisissez **modifier**, puis déplacez le bouton bascule **sur activé ou** **désactivé** pour activer ou désactiver la fonctionnalité.
+3. Sélectionnez **Services**l’option  >  **Customer Lockbox**  >  **modifier**le référentiel du client des services, puis déplacez le bouton bascule sur **activé** ou **désactivé** pour activer ou désactiver la fonctionnalité.
 
     ![Require approval for Customer Lockbox](../media/CustomerLockbox4.png)
 
-## <a name="approve-or-deny-a-customer-lockbox-request"></a>Approuver ou refuser une demande de référentiel sécurisé d’un client
+## <a name="approve-or-deny-a-customer-lockbox-request"></a>Approuver ou refuser une demande d’accès au Customer Lockbox
 
-1. À l’aide d’un compte professionnel ou scolaire auquel est attribué le rôle d' **approbateur** général ou d’approbation du client [https://admin.microsoft.com](https://admin.microsoft.com) , accédez à et connectez-vous.
+1. À l’aide d’un compte professionnel ou scolaire auquel est attribué le rôle d' **approbateur** général ou d’approbation du client, accédez à [https://admin.microsoft.com](https://admin.microsoft.com) et connectez-vous.
 
 2. Choisir la **prise en charge > demandes de référentiel sécurisé du client**.
 
@@ -102,7 +100,11 @@ Vous pouvez activer les contrôles de référentiel sécurisé du client dans le
 
     ![Approuver ou refuser les demandes de référentiel sécurisé du client](../media/CustomerLockbox8.png)
 
-## <a name="auditing-customer-lockbox-requests"></a>Audit des demandes de référentiel sécurisé du client
+> [!NOTE]
+> Utilisez l’applet de commande Set-AccessToCustomerDataRequest pour approuver, refuser ou annuler des demandes de référentiel sécurisé Microsoft 365 qui contrôlent l’accès à vos données par les ingénieurs du support technique Microsoft. Pour plus d’informations, consultez la rubrique [Set-AccessToCustomerDataRequest](https://docs.microsoft.com/powershell/module/exchange/set-accesstocustomerdatarequest?view=exchange-ps).
+
+
+## <a name="auditing-customer-lockbox-requests"></a>Audit des demandes d’accès au Customer Lockbox
 
 Les enregistrements d’audit qui correspondent aux demandes de référentiel sécurisé du client sont consignés dans le journal d’audit. Vous pouvez accéder à ces journaux à l’aide de l' [outil de recherche de journal d’audit](search-the-audit-log-in-security-and-compliance.md) dans le centre de sécurité & conformité. Les actions liées à la demande de référentiel sécurisé d’un client et les actions effectuées par des ingénieurs Microsoft (lorsque les demandes d’accès sont approuvées) sont également consignées dans le journal d’audit. Vous pouvez rechercher et consulter ces enregistrements d’audit.
 
@@ -112,9 +114,9 @@ Avant de pouvoir utiliser le journal d’audit pour effectuer le suivi des deman
 
 1. Accédez à [https://protection.office.com](https://protection.office.com).
   
-2. Connectez-vous à l’aide de votre compte professionnel ou scolaire.
+2. Connectez-vous à l’aide de votre compte scolaire ou professionnel.
 
-3. Dans le volet gauche du centre de sécurité & conformité, sélectionnez **recherche &** > **Journal d’audit**de l’enquête.
+3. Dans le volet gauche du centre de sécurité & conformité, sélectionnez **recherche &**  >  **Journal d’audit**de l’enquête.
 
     La page de **recherche du journal d’audit** s’affiche.
 
@@ -144,16 +146,16 @@ Avant de pouvoir utiliser le journal d’audit pour effectuer le suivi des deman
 
 7. Dans la liste des résultats, cliquez sur un enregistrement d’audit pour l’afficher.
 
-### <a name="audit-record-for-a-customer-lockbox-access-request"></a>Enregistrement d’audit pour une demande d’accès bte post.
+### <a name="audit-record-for-a-customer-lockbox-access-request"></a>Enregistrement d’audit pour une demande d’accès au Customer Lockbox
 
-Lorsqu’une personne de votre organisation approuve ou refuse une demande de référentiel sécurisé client, un enregistrement d’audit est consigné dans le journal d’audit. Cet enregistrement contient les informations suivantes.
+Lorsqu’une personne de votre organisation approuve ou refuse une demande de référentiel sécurisé client, un enregistrement d’audit est consigné dans le journal d’audit. L'enregistrement contient les informations suivantes.
 
-| Propriété record d’audit| Description|
+| Propriété de l’enregistrement d’audit| Description|
 |:---------- |:----------|
-| Date       | Date et heure d’approbation ou de refus de la demande de référentiel sécurisé du client.
-| Adresse IP | Adresse IP de la machine que l’approbateur a utilisé pour approuver ou refuser une demande. |
-| Utilisateur       | Le compte de service\[BOXServiceAccount@\]customerforest. prod.Outlook.com.            |
-| Activité   | Set-AccessToCustomerDataRequest ; Il s’agit de l’activité d’audit qui est enregistrée lorsque vous approuvez ou refusez une demande de référentiel sécurisé d’un client.                                |
+| Date       | La date et heure d’approbation ou de refus de la demande d’accès au Customer Lockbox.
+| Adresse IP | L’adresse IP de l’ordinateur utilisé par l’approbateur pour approuver ou refuser une demande. |
+| Utilisateur       | Le compte de service BOXServiceAccount@ \[ customerforest \] . prod.Outlook.com.            |
+| Activité   | Set-AccessToCustomerDataRequest :il s’agit de l’activité d’audit enregistrée lorsque vous approuvez ou refusez une demande d’accès au Customer Lockbox.                                |
 | Item       | GUID de la demande de référentiel sécurisé du client                             |
 
 La capture d’écran suivante montre un exemple d’enregistrement de journal d’audit correspondant à une demande approuvée de client Lockbox. Si une demande de référentiel sécurisé du client a été refusée, la valeur du paramètre **ApprovalDecision** serait **Deny**.
@@ -163,19 +165,19 @@ La capture d’écran suivante montre un exemple d’enregistrement de journal d
 > [!TIP]
 > Pour afficher des informations plus détaillées dans un enregistrement d’audit, cliquez sur **informations supplémentaires**.
 
-### <a name="audit-record-for-an-action-performed-by-a-microsoft-engineer"></a>Enregistrement d’audit pour une action effectuée par un ingénieur Microsoft
+### <a name="audit-record-for-an-action-performed-by-a-microsoft-engineer"></a>L’enregistrement d’audit d’une action effectuée par un ingénieur Microsoft
 
-Les actions effectuées par un technicien Microsoft après l’approbation d’une demande de référentiel sécurisé du client (et pouvant entraîner l’accès au contenu du client) sont consignées dans le journal d’audit. Ces enregistrements contiennent les informations suivantes.
+Les actions exécutées par un ingénieur Microsoft après l’approbation d’une demande d’accès au Customer Lockbox (et susceptible d’entraîner l’accès à du contenu client) sont enregistrées dans le journal d’audit. Ces enregistrements contiennent les informations suivantes.
 
-| Propriété record d’audit| Description|
+| Propriété de l’enregistrement d’audit| Description|
 |:---------- |:----------|
-| Date       | Date et heure d’exécution de l’action. Notez que l’heure à laquelle cette action a été effectuée sera de 4 heures après l’approbation de la demande de référentiel sécurisé du client.              |
-| Adresse IP | Adresse IP de l’ordinateur utilisé par Microsoft Engineer. |
-| Utilisateur       | Opérateur Microsoft ; Cette valeur indique que cet enregistrement est lié à une demande de référentiel sécurisé du client.                                  |
-| Activité   | Nom de l’activité effectuée par l’ingénieur Microsoft.|
-| Item       | \<éliminer\>                                             |
+| Date       | Date et heure d’exécution de l’action. Veuillez noter que l’heure d’exécution de cette action se situe dans les quatre heures qui suivent l’approbation de la demande d’accès au Customer Lockbox.              |
+| Adresse IP | L’adresse IP de l’ordinateur utilisé par l’ingénieur Microsoft. |
+| Utilisateur       | L’opérateur Microsoft : cette valeur indique que cet enregistrement est lié à une demande d’accès au Customer Lockbox.                                  |
+| Activité   | Le nom de l’activité effectuée par l’ingénieur Microsoft.|
+| Élément       | \<empty\>                                             |
 
-## <a name="frequently-asked-questions"></a>Questions fréquemment posées
+## <a name="frequently-asked-questions"></a>Foire aux questions
 
 #### <a name="which-microsoft-365-services-does-customer-lockbox-apply-to"></a>Quels sont les services Microsoft 365 auxquels s’applique le référentiel client ?
 
@@ -183,13 +185,13 @@ Le référentiel sécurisé du client est actuellement pris en charge dans Excha
 
 #### <a name="is-customer-lockbox-available-to-all-customers"></a>Le référentiel sécurisé du client est-il disponible pour tous les clients ?
 
-Customer Lockbox est inclus avec les abonnements Microsoft 365 ou Office 365 E5 et peut être ajouté à d’autres plans avec une protection des informations et une conformité ou un abonnement de complément de conformité avancé. Pour plus d’informations, reportez-vous à la rubrique [offres et tarifs](https://products.office.com/business/office-365-enterprise-e5-business-software) .
+Customer Lockbox est inclus avec les abonnements Microsoft 365 ou Office 365 E5 et peut être ajouté à d’autres plans avec une protection des informations et une conformité ou un abonnement de complément de conformité avancé. Pour plus d’informations, reportez-vous à la rubrique [offres et tarifs](https://products.office.com/business/office-365-enterprise-e5-business-software)   .
 
 #### <a name="what-is-customer-content"></a>Qu’est-ce que le contenu client ?
 
-Le contenu client est les données créées par les utilisateurs des services et applications Microsoft 365. Voici des exemples de contenu client :
+Le contenu client est les données créées par les utilisateurs des services et applications Microsoft 365. Les exemples de contenu client sont les suivants :
 
-- Corps ou pièces jointes de courrier électronique
+- Corps ou pièces jointes d’e-mails
 
 - Contenu du site SharePoint
 
@@ -197,9 +199,9 @@ Le contenu client est les données créées par les utilisateurs des services et
 
 - Corps du fichier de présentation Skype entreprise
 
-- Messages instantanés ou conversations vocales
+- Messages instantanés (IM) ou conversations vocales
 
-- BLOB généré par le client ou données de stockage structuré (par exemple, conteneurs SQL)
+- Blob généré par le client ou données de stockage structurées (par exemple, les conteneurs SQL)
 
 - Informations de sécurité appartenant au client (par exemple, certificats, clés de chiffrement et mots de passe)
 
@@ -239,7 +241,7 @@ Chaque demande de référentiel sécurisé de client contient un numéro de dema
 
 #### <a name="when-a-customer-lockbox-request-is-approved-how-long-are-the-permissions-valid"></a>Lorsqu’une demande de référentiel sécurisé client est approuvée, combien de temps les autorisations sont-elles valides ?
 
-Actuellement, la période maximale pour les autorisations d’accès accordées à l’ingénieur Microsoft est de 4 heures. L’ingénieur Microsoft peut également demander une période plus courte.
+La durée maximale des autorisations d’accès octroyées à l’ingénieur Microsoft est actuellement de 4 heures. L’ingénieur Microsoft peut également demander une durée plus courte.
 
 #### <a name="how-can-i-get-a-history-of-all-customer-lockbox-requests"></a>Comment puis-je obtenir un historique de toutes les demandes de référentiel sécurisé du client ?
 
@@ -251,7 +253,7 @@ Le flux d’activité du centre de conformité contient les activités de journa
 
 #### <a name="what-happens-when-a-customer-doesnt-respond-to-a-customer-lockbox-request"></a>Que se passe-t-il lorsqu’un client ne répond pas à une demande de référentiel sécurisé client ?
 
-Les demandes de référentiel sécurisé du client ont une durée par défaut de 12 heures. Si vous ne répondez pas à une demande dans un délai de 12 heures, la demande expire.
+Les demandes d’accès Customer Lockbox ont une durée par défaut de 12 heures. Si vous ne répondez pas à une demande dans un délai de 12 heures, la demande expire.
 
 #### <a name="what-does-microsoft-do-when-a-customer-rejects-a-customer-lockbox-request"></a>Qu’est-ce que Microsoft fait lorsqu’un client rejette une demande de référentiel sécurisé client ?
 

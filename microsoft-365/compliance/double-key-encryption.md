@@ -12,18 +12,18 @@ ms.reviewer: esaggese
 localization_priority: Normal
 ms.collection:
 - M365-security-compliance
-ms.openlocfilehash: 0c66afa22c8712455a875bc8ca4ddcad1678e2e7
-ms.sourcegitcommit: d39694d7b2c98350b0d568dfd03fa0ef44ed4c1d
+ms.openlocfilehash: f36eeeb1f228bff48088cbbf3241d6866d0b3a21
+ms.sourcegitcommit: 234726a1795d984c4659da68f852d30a4dda5711
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/10/2020
-ms.locfileid: "46601997"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "46794163"
 ---
 # <a name="double-key-encryption-dke"></a>Chiffrement à double clé (DKE)
 
 > *S’applique à : double Key chiffrement pour la version préliminaire publique de Microsoft 365, [conformité microsoft 365](https://www.microsoft.com/microsoft-365/business/compliance-management), [Azure information protection](https://azure.microsoft.com/pricing/details/information-protection)*
 >
-> *Instructions pour : [client d’étiquetage unifié Azure information protection pour Windows](https://docs.microsoft.com/azure/information-protection/faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)*
+> *Instructions pour : [client d’étiquetage unifié Azure information protection pour Windows](https://docs.microsoft.com/azure/information-protection/faqs#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)*
 >
 > *Description du service : [conformité Microsoft 365](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)*
 
@@ -79,7 +79,7 @@ Suivez ces étapes générales pour configurer le chiffrement à double clé pou
 1. [Cloner le référentiel GitHub de chiffrement à double clé](#clone-the-dke-github-repository)
 1. [Modifier les paramètres d’application](#modify-application-settings)
 1. [Générer des clés de test](#generate-test-keys)
-1. [Générer le projet](#build-the-project)
+1. [Générez le projet.](#build-the-project)
 1. [Publier le magasin de clés](#publish-the-key-store)
 1. [Valider votre déploiement](#validate-your-deployment)
 1. [Enregistrer votre magasin de clés](#register-your-key-store)
@@ -132,7 +132,7 @@ Microsoft fournit les fichiers source DKE dans un référentiel GitHub. Vous clo
 
 Les instructions suivantes sont destinées aux utilisateurs de git ou de code Visual Studio inexpérimentés :
 
-1. Dans votre navigateur, accédez à :[https://github.com/Azure-Samples/DoubleKeyEncryptionService](https://github.com/Azure-Samples/DoubleKeyEncryptionService)
+1. Dans votre navigateur, accédez à : [https://github.com/Azure-Samples/DoubleKeyEncryptionService](https://github.com/Azure-Samples/DoubleKeyEncryptionService)
 
 1. Dans la partie droite de l’écran, sélectionnez **code**. Votre version de l’interface utilisateur peut afficher un bouton **Clone ou télécharger** . Ensuite, dans la liste déroulante qui apparaît, sélectionnez l’icône copier pour copier l’URL dans votre presse-papiers.
 
@@ -250,7 +250,7 @@ Localisez le `JwtAudience` . Remplacez `<yourhostname>` par le nom d’hôte de 
 - `TestKeys:Name`. Entrez un nom pour votre clé. Par exemple : `TestKey1`
 - `TestKeys:Id`. Créez un GUID et entrez-le en tant que `TestKeys:ID` valeur. Par exemple, `DCE1CC21-FF9B-4424-8FF4-9914BD19A1BE`. Vous pouvez utiliser un site comme le [Générateur de GUID en ligne](https://guidgenerator.com/) pour générer un GUID de manière aléatoire.
 
-Cette image indique le format correct pour les paramètres de client et de clé dans **appsettings.jsactivé**. `LDAPPath`est configuré pour l’autorisation de rôle.
+Cette image indique le format correct pour les paramètres de client et de clé dans **appsettings.jsactivé**. `LDAPPath` est configuré pour l’autorisation de rôle.
 
 ![Indique les paramètres client et clé corrects pour DKE dans le fichier appsettings.js.](../media/dke-appsettingsjson-tenantkeysettings.png)
 
@@ -450,7 +450,7 @@ src\customer-key-store\scripts\key_store_tester.ps1 mykeystoreurl/MyKey
 
 Par exemple :
 
-key_store_tester.ps1https://mycustomerkeystore.com/mykey
+key_store_tester.ps1 https://mycustomerkeystore.com/mykey
 
 Assurez-vous qu’aucune erreur ne s’affiche dans la sortie. Lorsque vous êtes prêt, [Enregistrez votre magasin de clés](#register-your-key-store).
 
