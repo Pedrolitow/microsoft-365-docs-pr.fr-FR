@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7257cb50-0d5c-4f7a-ac2e-9fe5d13bb5cb
 description: Lorsque vous êtes connecté avec des comptes professionnels ou scolaires valides, les utilisateurs peuvent obtenir des services d’assistance en nuage avec Cortana dans les expériences Microsoft 365 qui répondent aux engagements de confidentialité, de sécurité et de conformité au niveau de l’entreprise d’Office 365.
-ms.openlocfilehash: 5707fb5966e77787b609c20b204602318627d350
-ms.sourcegitcommit: 0f71042edc7c3a7f10a7b92e1943abf51532cbf5
+ms.openlocfilehash: 29e04726b04fafb0b79e5ba4625dce2ae74bfc67
+ms.sourcegitcommit: 6fb2a1c404ea3c3573b0f7803bf17459a9387891
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "46521276"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "46788847"
 ---
 # <a name="cortana-in-microsoft-365"></a>Cortana dans Microsoft 365
 
@@ -37,7 +37,7 @@ En tant qu’assistant de productivité personnelle, Cortana est conçue pour fo
 
 - Conformément aux autres services Office 365, les services d’entreprise de Cortana répondent aux mêmes engagements de confidentialité, de sécurité et de conformité au niveau de l’entreprise, comme indiqué dans les [services en ligne (OST)](https://www.microsoft.com/licensing/product-licensing/products).
 
-- Les nouvelles expériences Microsoft 365, telles que le courrier électronique de briefing et la lecture de mes courriers électroniques, seront activées à l’aide de Cortana Enterprise Services et sont entièrement conformes à ces promesses. Ces fonctionnalités sont actuellement disponibles sur le marché anglais (États-Unis) pour les utilisateurs disposant de boîtes aux lettres aux États-Unis et pour les employés de sociétés multinationales avec des boîtes aux lettres américaines.
+- Les nouvelles expériences Microsoft 365, telles que le courrier électronique de briefing et la lecture de mes courriers électroniques, seront activées à l’aide de Cortana Enterprise Services et sont entièrement conformes à ces promesses. Ces fonctionnalités sont actuellement disponibles sur le marché anglais (États-Unis) pour les utilisateurs disposant de boîtes aux lettres aux États-Unis et pour les employés de sociétés multinationales avec des boîtes aux lettres américaines. Pour plus d’informations sur la recherche de l’emplacement d’utilisation, consultez la zone [afficher les valeurs des propriétés supplémentaires pour les comptes](https://docs.microsoft.com/microsoft-365/enterprise/view-user-accounts-with-microsoft-365-powershell?view=o365-worldwide#view-additional-property-values-for-accounts).
 
 - Les utilisateurs peuvent se connecter aux services d’entreprise de Cortana décrits ici par le biais de Cortana dans Windows 10 (version 2004 et ultérieure), ainsi qu’aux applications clientes, telles qu’Outlook pour iOS et Android, soumises à des conditions de licence distinctes. 
 
@@ -45,7 +45,7 @@ En tant qu’assistant de productivité personnelle, Cortana est conçue pour fo
 
 ## <a name="what-data-is-processed-by-cortana-enterprise-services"></a>Quelles sont les données traitées par Cortana Enterprise Services ? 
 
-Les services d’entreprise de Cortana traitent les requêtes de l’utilisateur, les données Office nécessaires pour répondre à la demande de l’utilisateur, ainsi que d’autres télémétries générées par les systèmes Microsoft pour exécuter le service. Les données collectées par les services d’entreprise de Cortana incluent la représentation textuelle des requêtes orales de l’utilisateur (par exemple, les transcriptions de la reconnaissance vocale). Ces données de texte sont des données client et sont gérées conformément aux [conditions des services en ligne](https://www.microsoft.com/licensing/product-licensing/products). Il est utilisé uniquement pour développer et améliorer les modèles d’apprentissage automatique conformes aux conditions du service en ligne.
+Les services d’entreprise de Cortana traitent les requêtes de l’utilisateur, les données Office nécessaires pour répondre à la demande de l’utilisateur, ainsi que d’autres télémétries générées par les systèmes Microsoft pour exécuter le service. Les données collectées par les services d’entreprise de Cortana incluent la représentation textuelle des requêtes orales de l’utilisateur (par exemple, les transcriptions de la reconnaissance vocale). Ces données de texte sont des données client et sont gérées conformément aux  [conditions des services en ligne](https://www.microsoft.com/licensing/product-licensing/products). Il est utilisé uniquement pour développer et améliorer les modèles d’apprentissage automatique conformes aux conditions du service en ligne.
 
 ## <a name="what-is-the-governance-model-for-customer-data-in-cortana-enterprise-services"></a>Quel est le modèle de gouvernance pour les données client dans les services d’entreprise de Cortana ?
 
@@ -55,13 +55,13 @@ Conformément aux autres services Office 365, les services d’entreprise de Cor
 
 Le tableau ci-dessous décrit la gestion des données pour les services d’entreprise de Cortana.
 
-|**Name**|**Description**|
+| Nom | Description |
 |:-----|:-----|
-|**Stockage**  <br/> |Les données client sont stockées sur des serveurs Microsoft à l’intérieur du Cloud Office 365. Vos données font partie de votre client. <br/> La fonctionnalité audio vocale n’est pas conservée.  <br/> |
+|**Stockage**  <br/> |Les données client sont stockées sur des serveurs Microsoft à l’intérieur du Cloud Office 365. Vos données font partie de votre client. <br/><br/>La fonctionnalité audio vocale n’est pas conservée.  <br/> |
 |**Reste dans la zone géographique**  <br/> |Les données client sont stockées sur des serveurs Microsoft dans le nuage Office 365 dans la zone géographique. Vos données font partie de votre client.  <br/> |
-|**Rétention**  <br/> |Les données client sont supprimées lorsque le compte est fermé par l’administrateur client ou lorsqu’une demande de suppression des droits des données RGPD est effectuée. <br/> La fonctionnalité audio vocale n’est pas conservée.  <br/> |
+|**Rétention**  <br/> |Les données client sont supprimées lorsque le compte est fermé par l’administrateur client ou lorsqu’une demande de suppression des droits des données RGPD est effectuée. <br/><br/>La fonctionnalité audio vocale n’est pas conservée.  <br/> |
 |**Traitement et confidentialité**  <br/> |Les membres du personnel impliqués dans le traitement des données personnelles et des données personnelles (i) ne traiteront ces données qu’avec des instructions de la part du client et (II) seront obligés de maintenir la confidentialité et la sécurité de ces données même après l’expiration de leur engagement.  <br/> |
-|**Utilisation**  <br/> |Microsoft utilise les données client uniquement pour fournir les services approuvés et à des fins compatibles avec ces services. L’apprentissage automatique pour développer et améliorer des modèles est l’un de ces rôles. L’apprentissage automatique est réalisé dans le nuage Office 365 et il n’y a pas d’affichage, de révision ou d’étiquetage de vos données client. <br/> Vos données ne sont pas utilisées pour cibler la publicité.  <br/> |
+|**Utilisation**  <br/> |Microsoft utilise les données client uniquement pour fournir les services approuvés et à des fins compatibles avec ces services. L’apprentissage automatique pour développer et améliorer des modèles est l’un de ces rôles. L’apprentissage automatique est réalisé dans le nuage Office 365 et il n’y a pas d’affichage, de révision ou d’étiquetage de vos données client. <br/><br/>Vos données ne sont pas utilisées pour cibler la publicité.  <br/> |
 
 ## <a name="cortana-enterprise-services-in-microsoft-365-experiences"></a>Services d’entreprise de Cortana dans les expériences Microsoft 365
 

@@ -1,31 +1,34 @@
 ---
-title: Sécurité dans le bureau géré Microsoft
+title: Technologies de sécurité dans le bureau géré Microsoft
 description: ''
 keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
-ms.localizationpriority: normal
-ms.date: 09/24/2018
-ms.openlocfilehash: 8bfd71c4a143dee54ae006c8c54d711a8785480f
-ms.sourcegitcommit: 2d664a95b9875f0775f0da44aca73b16a816e1c3
+ms.collection: M365-modern-desktop
+ms.author: jaimeo
+manager: laurawi
+ms.topic: article
+ms.openlocfilehash: debd21a975ce209677bdd054952e31f34260e405
+ms.sourcegitcommit: 1780359234abdf081097c8064438d415da92fb85
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/01/2020
-ms.locfileid: "44470488"
+ms.lasthandoff: 08/17/2020
+ms.locfileid: "46778255"
 ---
-# <a name="security-in-microsoft-managed-desktop"></a>Sécurité dans le bureau géré Microsoft
+# <a name="security-technologies-in-microsoft-managed-desktop"></a>Technologies de sécurité dans le bureau géré Microsoft
 
 <!--Security, also Onboarding doc: data handling/store, privileged account access -->
 
-Microsoft Managed Desktop utilise plusieurs technologies Microsoft pour sécuriser les appareils et les données gérés. Notamment : 
+Microsoft Managed Desktop utilise plusieurs technologies Microsoft pour sécuriser les appareils et les données gérés. En outre, le centre d’opérations de sécurité de bureau géré Microsoft utilise un grand nombre de [processus](security-operations.md) en association avec ces technologies.
 
+Notamment : 
 
 - [Sécurité des appareils](#device-security) – sécurité et protection sur les appareils de bureau gérés Microsoft
 - [Gestion des identités et des accès](#identity-and-access-management) : gestion de l’utilisation sécurisée des appareils via les services d’identité Azure Active Directory
 - [Sécurité réseau](#network-security) – informations VPN et solution et paramètres recommandés pour Microsoft Managed Desktop
 - [Sécurité des informations](#information-security) – services disponibles en option pour protéger davantage les informations sensibles 
 
-Pour plus d’informations sur le stockage de données, l’utilisation et les pratiques de sécurité utilisées par le bureau géré Microsoft, téléchargez notre livre blanc sur la page [https://aka.ms/mmd-data](https://aka.ms/mmd-data) .
+Pour plus d’informations sur le stockage de données, l’utilisation et les pratiques de sécurité utilisées par le bureau géré Microsoft, consultez notre livre blanc sur [https://aka.ms/mmd-data](https://aka.ms/mmd-data) .
 
 
 ## <a name="device-security"></a>Sécurité de l’appareil
