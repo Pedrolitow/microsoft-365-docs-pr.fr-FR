@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Vous pouvez créer une conservation associée à un cas de découverte électronique de base pour conserver le contenu qui peut être pertinent pour une enquête.
-ms.openlocfilehash: b3a213e499a71356999367deff930ea9a04945df
-ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
+ms.openlocfilehash: d68ca8a15713e20184e39af447cb03ccb5c9e7d7
+ms.sourcegitcommit: 445b249a6f0420b32e49742fd7744006c7090b2b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45127521"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "46798060"
 ---
 # <a name="create-an-ediscovery-hold"></a>Créer une suspension de cas eDiscovery
 
@@ -136,7 +136,7 @@ En guise d’alternative, les conversations qui font partie de la liste des conv
 Pour plus d’informations sur la conservation du contenu de teams, consultez [la rubrique placer un utilisateur ou une équipe Microsoft teams en conservation légale](https://docs.microsoft.com/MicrosoftTeams/legal-hold).
     
 > [!IMPORTANT]
-> Dans une organisation en nuage, les utilisateurs qui participent à des conversations faisant partie de la liste des conversations dans teams doivent disposer d’une boîte aux lettres Exchange Online afin de conserver les conversations de conversation lorsque la boîte aux lettres est placée sur une conservation eDiscovery. Cela est dû au fait que les conversations faisant partie de la liste des conversations sont stockées dans les boîtes aux lettres en nuage des participants à la conversation. Si un participant à une conversation ne dispose pas d’une boîte aux lettres Exchange Online, vous ne pourrez pas conserver ces conversations de conversation. Par exemple, dans un déploiement hybride Exchange, les utilisateurs disposant d’une boîte aux lettres locale peuvent être autorisés à participer à des conversations qui font partie de la liste des conversations dans Teams. Toutefois, dans ce cas, le contenu de ces conversations ne peut pas être préservé car ces utilisateurs ne disposent pas de boîtes aux lettres en nuage pouvant être placées en conservation.
+> Dans une organisation en nuage, les utilisateurs qui participent à des conversations faisant partie de la liste des conversations dans teams doivent disposer d’une boîte aux lettres Exchange Online afin de conserver les conversations de conversation lorsque la boîte aux lettres est placée sur une conservation eDiscovery. Cela est dû au fait que les conversations faisant partie de la liste des conversations sont stockées dans les boîtes aux lettres en nuage des participants à la conversation. Si un participant à une conversation ne dispose pas d’une boîte aux lettres Exchange Online, vous ne pourrez pas conserver ces conversations de conversation. Par exemple, dans un déploiement hybride Exchange, les utilisateurs disposant d’une boîte aux lettres locale peuvent participer à des conversations qui font partie de la liste des conversations dans Teams. Toutefois, dans ce cas, le contenu de ces conversations ne peut pas être préservé car ces utilisateurs ne disposent pas de boîtes aux lettres en nuage pouvant être placées en conservation.
   
 Chaque canal d’équipe ou d’équipe contient également un wiki pour la prise de notes et la collaboration. Le contenu wiki est automatiquement enregistré dans un fichier au format .mht. Ce fichier est stocké dans la bibliothèque de documents wiki Teams sur le site SharePoint de l’équipe. Vous pouvez conserver le contenu wiki en ajoutant le site SharePoint de l’équipe à une conservation eDiscovery.
 
@@ -176,7 +176,7 @@ Gardez les points suivants à l’esprit lorsque vous placez les groupes teams e
     > [!NOTE]
     > Pour exécuter l'applet de commande **Get-UnifiedGroupLinks**, vous devez avoir le rôle de destinataires en affichage seul dans Exchange Online ou être membre d’un groupe de rôles affecté du rôle de destinataires en affichage seul.
 
-## <a name="onedrive-accounts"></a>Les comptes OneDrive
+## <a name="onedrive-accounts"></a>Comptes OneDrive
 
 Pour collecter une liste des URL pour les sites OneDrive entreprise de votre organisation afin de pouvoir les ajouter à une suspension ou une recherche associée à un cas eDiscovery, consultez la rubrique [créer une liste de tous les emplacements OneDrive de votre organisation](https://docs.microsoft.com/onedrive/list-onedrive-urls). Le script de cet article crée un fichier texte qui contient une liste de tous les sites OneDrive de votre organisation. Pour exécuter ce script, vous devez installer et utiliser SharePoint Online Management Shell. N’oubliez pas d’ajouter l’URL du domaine MySite de votre organisation à chaque site OneDrive dans lequel vous souhaitez effectuer une recherche. Il s’agit du domaine où se trouve tout le contenu de votre OneDrive (par exemple,`https://contoso-my.sharepoint.com`). Voici un exemple d’URL pour le site d’un utilisateur OneDrive : `https://contoso-my.sharepoint.com/personal/sarad_contoso_onmicrosoft.com`.
 
@@ -213,7 +213,7 @@ Le tableau suivant répertorie les limites pour les cas de découverte électron
   |Nombre maximal de conservations eDiscovery pour une organisation  <br/> |10 000  <br/> |
   |Nombre maximal de boîtes aux lettres dans une seule conservation eDiscovery  <br/> |1 000  <br/> |
   |Nombre maximal de sites SharePoint et OneDrive entreprise dans une conservation eDiscovery unique  <br/> |100  <br/> |
-  |Nombre maximal de cas affichés sur la page d’accueil eDiscovery et nombre maximal d’éléments affichés dans les onglets conservations, recherches et exporter dans un cas. <sup>0,1</sup> |1 000|
+  |Nombre maximal de cas affichés sur la page d’accueil eDiscovery et nombre maximal d’éléments affichés dans les onglets conservations, recherches et exporter dans un cas. <sup>1</sup> |1 000|
   |||
 
    > [!NOTE]

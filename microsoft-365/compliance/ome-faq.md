@@ -15,12 +15,12 @@ search.appverid:
 ms.assetid: 0432dce9-d9b6-4e73-8a13-4a932eb0081e
 description: Vous avez une question sur la façon dont les nouvelles fonctionnalités de protection des messages fonctionnent ? Recherchez une réponse ici.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 5368133877921d8f5fdfa2e3de2e610c545f57ff
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 927b81c3a1ce049f1a2427bbbf1d306608be35cb
+ms.sourcegitcommit: 445b249a6f0420b32e49742fd7744006c7090b2b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44818677"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "46798186"
 ---
 # <a name="message-encryption-faq"></a>FAQ sur le chiffrement de messages
 
@@ -102,11 +102,15 @@ Vous pouvez créer des messages protégés à partir d’Outlook 2016 et Outlook
 
 Les utilisateurs de Microsoft 365 peuvent lire et répondre à Outlook pour Windows et Mac (2013 et 2016), Outlook sur le Web et Outlook Mobile (Android et iOS). Vous pouvez également utiliser le client de messagerie natif iOS si votre organisation l’autorise. Si vous n’êtes pas un utilisateur de Microsoft 365, vous pouvez lire et répondre à des messages chiffrés sur le Web via votre navigateur Web.
   
+## <a name="is-there-a-size-limit-for-messages-you-can-send-with-ome"></a>Existe-t-il une limite de taille pour les messages que vous pouvez envoyer avec OME ?
+
+Oui. La taille maximale des messages que vous pouvez envoyer avec OME, y compris les pièces jointes, est de 30 Mo.
+
 ## <a name="what-file-types-are-supported-as-attachments-in-protected-emails-do-attachments-inherit-the-protection-policies-associated-with-protected-emails"></a>Quels types de fichiers sont pris en charge en tant que pièces jointes dans les courriels protégés ? Les pièces jointes héritent-elles des stratégies de protection associées aux courriers électroniques protégés ?
 
-Vous pouvez attacher n’importe quel type de fichier à un message protégé, mais les stratégies de protection ne sont appliquées qu’aux formats de fichiers mentionnés dans [types de fichiers pris en charge par le client Azure information protection](https://docs.microsoft.com/information-protection/rms-client/client-admin-guide-file-types).
-  
-Si un format de fichier est pris en charge, par exemple un fichier Word, Excel ou PowerPoint, le fichier est toujours protégé, même après le téléchargement de la pièce jointe par le destinataire. Par exemple, si une pièce jointe est protégée par ne pas transférer, et que le destinataire d’origine télécharge et transfère la pièce jointe à un nouveau destinataire, le nouveau destinataire ne pourra pas ouvrir le fichier protégé.
+Vous pouvez joindre n’importe quel type de fichier à un message protégé. À une exception près, les stratégies de protection sont appliquées uniquement aux formats de fichiers mentionnés dans [types de fichiers pris en charge par le client Azure information protection](https://docs.microsoft.com/information-protection/rms-client/client-admin-guide-file-types). OME ne prend pas en charge les versions 97-2003 des programmes Office suivants : Word (. doc), Excel (. xls) et PowerPoint (. ppt).
+
+Si un format de fichier est pris en charge, par exemple un fichier Word, Excel ou PowerPoint, le fichier est toujours protégé, même après le téléchargement de la pièce jointe par le destinataire. Par exemple, supposons qu’une pièce jointe est protégée par ne pas transférer. Le destinataire d’origine télécharge le fichier, crée un message vers un nouveau destinataire et joint le fichier. Lorsque le nouveau destinataire reçoit le fichier, le destinataire ne pourra pas ouvrir le fichier protégé.
   
 ## <a name="are-pdf-file-attachments-supported"></a>Les pièces jointes aux fichiers PDF sont-elles prises en charge ?
 
@@ -188,9 +192,19 @@ Le tableau suivant répertorie les clients pris en charge pour les boîtes aux l
 
 Il existe actuellement deux limitations connues :
 
-- Nous ne prenons en charge que l’attribution directe des utilisateurs à la boîte aux lettres partagée. Nous ne prenons pas en charge l’affectation via un groupe de sécurité à extension messagerie.
-
 - Vous ne pouvez pas ouvrir les pièces jointes aux courriers électroniques que vous recevez sur les appareils mobiles à l’aide d’Outlook Mobile.
+
+- Nous ne prenons pas en charge l’affectation via un groupe de sécurité à extension messagerie. Nous prenons uniquement en charge l’accès fourni par l’attribution directe des utilisateurs à la boîte aux lettres partagée et le mappage automatique est activé pour Exchange Online. Le mappage automatique est activé par défaut pour Exchange Online.
+
+**Pour affecter un utilisateur à la boîte aux lettres partagée**
+
+1. [Connectez-vous à Exchange Online à l’aide de Remote PowerShell](https://technet.microsoft.com/library/jj984289?v=exchg.150%29.aspx).
+
+2. Exécutez la cmdlet Add-MailboxPermission avec le paramètre AutoMapping. Cet exemple donne des autorisations d’accès total Ayla à une boîte aux lettres de support.
+
+   ```powershell
+   Add-MailboxPermission -Identity support@contoso.onmicrosoft.com -User ayla@contoso.com -AccessRights FullAccess -AutoMapping $true
+   ```
 
 ## <a name="what-do-i-do-if-i-dont-receive-the-one-time-pass-code-after-i-requested-it"></a>Que faire si je ne reçois pas le code d’accès unique une fois qu’il a été demandé ?
 

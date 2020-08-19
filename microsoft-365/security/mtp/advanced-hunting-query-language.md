@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 64f0b19cfd9588e975b06cb43ca73270b00c5e26
-ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
+ms.openlocfilehash: 15e298edfad2d04079322a070615a36bb5df64ad
+ms.sourcegitcommit: 445b249a6f0420b32e49742fd7744006c7090b2b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46649390"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "46797851"
 ---
 # <a name="learn-the-advanced-hunting-query-language"></a>Découvrir le langage de requête de repérage avancé
 
@@ -66,7 +66,7 @@ Un bref commentaire a été ajouté au début de la requête pour décrire sa fo
 // Finds PowerShell execution events that could involve a download
 ```
 
-La requête elle-même commence généralement par un nom de table suivi d’une série d’éléments commençant par une barre verticale (`|`). Dans cet exemple, nous commençons par créer une Union de deux tables, `DeviceProcessEvents` et `DeviceNetworkEvents` et ajoutons des éléments redirigés selon les besoins.
+La requête elle-même commence généralement par un nom de table suivi d’une série d’éléments commençant par une barre verticale (`|`). Dans cet exemple, nous commençons par créer une Union de deux tables,  `DeviceProcessEvents` et `DeviceNetworkEvents` et ajoutons des éléments redirigés selon les besoins.
 
 ```kusto
 union DeviceProcessEvents, DeviceNetworkEvents
@@ -102,7 +102,7 @@ Ensuite, la requête recherche des chaînes dans les lignes de commande qui sont
 ```
 
 ### <a name="customize-result-columns-and-length"></a>Personnaliser les colonnes de résultats et la longueur 
-Maintenant que votre requête identifie clairement les données que vous recherchez, vous pouvez ajouter des éléments qui définissent l’apparence des résultats. `project`renvoie des colonnes spécifiques et `top` limite le nombre de résultats. Ces opérateurs permettent de s’assurer que les résultats sont bien formatés et raisonnablement volumineux et faciles à traiter.
+Maintenant que votre requête identifie clairement les données que vous recherchez, vous pouvez ajouter des éléments qui définissent l’apparence des résultats. `project` renvoie des colonnes spécifiques et `top` limite le nombre de résultats. Ces opérateurs permettent de s’assurer que les résultats sont bien formatés et raisonnablement volumineux et faciles à traiter.
 
 ```kusto
 | project Timestamp, DeviceName, InitiatingProcessFileName, InitiatingProcessCommandLine, 
@@ -117,7 +117,7 @@ Cliquez sur **Exécuter la requête** pour afficher les résultats. Sélectionne
 >[!TIP]
 >Vous pouvez afficher les résultats de la requête sous forme de graphiques et ajuster rapidement les filtres. Pour obtenir des instructions, consultez la rubrique [utilisation des résultats de requête](advanced-hunting-query-results.md)
 
-## <a name="learn-common-query-operators-for-advanced-hunting"></a>Découvrir les opérateurs de requête courants pour le repérage avancé
+## <a name="learn-common-query-operators"></a>Apprentissage des opérateurs de requête courants
 
 Maintenant que vous avez exécuté votre première requête et que vous avez une idée générale de ses composants, il est temps de revenir en arrière pour découvrir quelques notions de base. Le langage de requête Kusto utilisé par le repérage avancé prend en charge divers opérateurs, notamment les opérateurs communs suivants.
 
@@ -136,7 +136,7 @@ Maintenant que vous avez exécuté votre première requête et que vous avez une
 
 Pour voir un exemple parlant de ces opérateurs, exécutez-les à partir de la section **Prise en main** du repérage avancé.
 
-## <a name="understand-data-types-and-their-query-syntax-implications"></a>Comprendre les types de données et leurs implications dans la syntaxe de requête
+## <a name="understand-data-types"></a>Comprendre les types de données
 
 Les données des tables de repérage avancé sont généralement classées dans les types de données suivants.
 
@@ -147,6 +147,8 @@ Les données des tables de repérage avancé sont généralement classées dans 
 | `bool` | True ou false |
 | `int` | Valeur numérique de 32 bits  |
 | `long` | Valeur numérique de 64 bits |
+
+Pour en savoir plus sur ces types de données et leurs implications, consultez la rubrique [relative aux types de données scalaires Kusto](https://docs.microsoft.com/azure/data-explorer/kusto/query/scalar-data-types/).
 
 ## <a name="get-help-as-you-write-queries"></a>Obtenez de l’aide lorsque vous rédigez des requêtes
 Tirez parti des fonctionnalités suivantes pour rédiger des requêtes plus rapidement :
@@ -179,6 +181,6 @@ Pour plus d’informations sur le langage de requête Kusto et les opérateurs p
 - [Vue d’ensemble du repérage avancé](advanced-hunting-overview.md)
 - [Travailler avec les résultats de la requête](advanced-hunting-query-results.md)
 - [Utiliser des requêtes partagées](advanced-hunting-shared-queries.md)
-- [Recherche sur les appareils, les e-mails, les applications et les identités](advanced-hunting-query-emails-devices.md)
+- [Rechercher sur les appareils, les emails, les applications et les identités](advanced-hunting-query-emails-devices.md)
 - [Comprendre le schéma](advanced-hunting-schema-tables.md)
 - [Appliquer les meilleures pratiques de requête](advanced-hunting-best-practices.md)

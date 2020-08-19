@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 3559bf3391427d6f6ae0cfc6b6f6e8ed343438fa
-ms.sourcegitcommit: 89178b8f20d59ca88cfca303a13062b91fbeae9d
+ms.openlocfilehash: ff610cee46b2b48815af82fa86d0b30aa99f4b5c
+ms.sourcegitcommit: 445b249a6f0420b32e49742fd7744006c7090b2b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "46552661"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "46798233"
 ---
 # <a name="microsoft-threat-protection-preview-features"></a>Fonctionnalités d’aperçu de la protection contre les menaces Microsoft
 
@@ -57,7 +57,8 @@ Vous saurez que les fonctionnalités d’aperçu sont activées lorsque vous voy
 ## <a name="preview-features"></a>Fonctionnalités de préversion
 Les fonctionnalités et améliorations suivantes sont actuellement disponibles lors de l’aperçu :
 
+- **[Table IdentityDirectoryEvents dans la chasse avancée](advanced-hunting-identitydirectoryevents-table.md)** : recherchez des événements impliquant un contrôleur de domaine sur site exécutant Active Directory (AD). Ce tableau couvre un éventail d’événements liés à l’identité, ainsi que des événements système sur le contrôleur de domaine.
+- **[Fonction AssignedIPAddresses ()](advanced-hunting-assignedipaddresses-function.md)** : utilisez cette fonction dans la chasse avancée pour obtenir rapidement les dernières adresses IP qui ont été affectées à un appareil ou les adresses IP les plus récentes à partir d’un moment donné.
 - **[Effectuer des actions dans la chasse avancée](advanced-hunting-take-action.md)** — il doit rapidement contenir des menaces ou des ressources compromises que vous trouvez dans la [chasse avancée](advanced-hunting-overview.md).
-
 - **[Guide de référence de schéma dans le portail](advanced-hunting-schema-tables.md#get-schema-information-in-the-security-center)** : Obtenez des informations sur les tables de schéma de chasse avancées directement dans le centre de sécurité. En plus des descriptions de table et de colonne, cette référence pratique fournit des informations sur les types d’événement pris en charge ( `ActionType` valeurs) et les exemples de requêtes.
 

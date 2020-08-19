@@ -1,5 +1,5 @@
 ---
-title: Protéger les informations à l’aide de Microsoft 365
+title: Microsoft information protection dans Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -9,24 +9,24 @@ ms.date: ''
 audience: Admin
 ms.topic: hub-page
 ms.service: O365-seccomp
-localization_priority: Normal
+localization_priority: High
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: a6ef28a4-2447-4b43-aae2-f5af6d53c68e
-description: Identifiez les fonctionnalités et la documentation de support Microsoft 365 pour vous aider à protéger les données importantes de votre organisation.
-ms.openlocfilehash: eb83655fddf5b59a7a95d2a8b9999ab683305a89
-ms.sourcegitcommit: 20c219332270f1013d48b39773dd0e48dabad9e4
+description: Implémentez les fonctionnalités Microsoft information protection (MIP) dans Microsoft 365 pour vous aider à découvrir, classer et protéger les informations sensibles où qu’elles soient ou que vous parcouriez.
+ms.openlocfilehash: 058a1b46f879b2cc4b8ada8f2a5de88717958e94
+ms.sourcegitcommit: 5c16d270c7651c2080a5043d273d979a6fcc75c6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/07/2020
-ms.locfileid: "46592308"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46804184"
 ---
-# <a name="protect-information-using-microsoft-365"></a>Protéger les informations à l’aide de Microsoft 365
+# <a name="microsoft-information-protection-in-microsoft-365"></a>Microsoft information protection dans Microsoft 365
 
 >*[Licences pour la conformité des & de sécurité Microsoft 365](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)*
 
-Utilisez les fonctionnalités de protection des informations de Microsoft pour vous aider à découvrir, classer et protéger les informations sensibles partout où elles habitent ou se déplacent.
+Utilisez les fonctionnalités de Microsoft information protection (souvent abrégées aux MIP) pour vous aider à découvrir, classer et protéger les informations sensibles où qu’elles soient ou que vous parcouriez.
 
 ## <a name="know-your-data"></a>Ayez une bonne connaissance de vos données
 
@@ -44,7 +44,7 @@ Pour appliquer des actions de protection flexible qui incluent le chiffrement, l
 
 |Fonctionnalité|Quels problèmes est-il résolu ?|Prise en main|
 |:------|:------------|---------------------|:----------------------------|
-|[Étiquettes de confidentialité](sensitivity-labels.md)| Une solution unique entre les applications, les services et les appareils pour étiqueter et protéger vos données quand elles transitent à l’intérieur et à l’extérieur de votre organisation <br /><br />Exemple de scénario : [application et affichage des étiquettes de confidentialité dans Power bi et protection des données lors de leur exportation](https://docs.microsoft.com/power-bi/admin/service-security-data-protection-overview)|[Prise en main des étiquettes de confidentialité](get-started-with-sensitivity-labels.md) |
+|[Étiquettes de confidentialité](sensitivity-labels.md)| Une solution unique entre les applications, les services et les appareils pour étiqueter et protéger vos données quand elles transitent à l’intérieur et à l’extérieur de votre organisation <br /><br />Exemple de scénario : [application et affichage des étiquettes de confidentialité dans Power bi et protection des données lors de leur exportation](https://docs.microsoft.com/power-bi/admin/service-security-data-protection-overview)|[ Prise en main des étiquettes de confidentialité](get-started-with-sensitivity-labels.md) |
 |[Client de l’étiquetage unifié d’Azure Information Protection](https://docs.microsoft.com/azure/information-protection/rms-client/aip-clientv2)| Pour les ordinateurs Windows, il étend les étiquettes de confidentialité pour les fonctionnalités supplémentaires qui incluent l’étiquetage et la protection de tous les types de fichiers à partir de l’Explorateur de fichiers et de PowerShell.<br /><br /> Exemples de fonctionnalités supplémentaires : [configurations personnalisées pour le client d’étiquetage unifié Azure information protection](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide-customizations)| [Guide de l’administrateur du client d’étiquetage unifié Azure information protection](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide)|
 |[Chiffrement à double clé](double-key-encryption.md)| Dans toutes les circonstances, vous seul pouvez déchiffrer le contenu protégé, ou pour les exigences réglementaires, vous devez tenir des clés de chiffrement dans une limite géographique. | [Déployer le chiffrement à double clé](double-key-encryption.md#deploy-double-key-encryption)|
 |[Chiffrement de messages Office 365](ome.md) (OME)| Chiffre les messages électroniques et les documents joints qui sont envoyés à tous les utilisateurs sur n’importe quel appareil, afin que seuls les destinataires autorisés puissent lire les informations envoyées par courrier électronique  <br /><br />Exemple de scénario : [révoquer le courrier électronique chiffré par le chiffrement de messages avancé](revoke-ome-encrypted-mail.md) | [Prise en main du chiffrement de messages Office 365](set-up-new-message-encryption-capabilities.md)|
@@ -55,7 +55,7 @@ Pour appliquer des actions de protection flexible qui incluent le chiffrement, l
 |[Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security)| Identifie, étiquette et protège les informations sensibles qui se trouvent dans les magasins de données dans le Cloud | [Découvrir, classifier, étiqueter et protéger les données réglementées et sensibles stockées dans le cloud](https://docs.microsoft.com/cloud-app-security/best-practices#discover-classify-label-and-protect-regulated-and-sensitive-data-stored-in-the-cloud)|
 |[Kit de développement logiciel (SDK) de protection des informations Microsoft](https://docs.microsoft.com/information-protection/develop/overview#microsoft-information-protection-sdk)|Étend les étiquettes de confidentialité aux applications et services tiers  <br /><br /> Exemple de scénario : [définir et obtenir une étiquette de sensibilité (C++)](https://docs.microsoft.com/information-protection/develop/quick-file-set-get-label-cpp) |[Configuration et paramétrage du SDK Microsoft Information Protection (MIP)](https://docs.microsoft.com/information-protection/develop/setup-configure-mip)|
 
-## <a name="prevent-data-loss"></a>Éviter les pertes de données
+## <a name="prevent-data-loss"></a>Évitez les pertes de données
 
 Pour empêcher le partage accidentel d’informations sensibles, utilisez les fonctionnalités suivantes :
 

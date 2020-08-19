@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: f711cc2ff38f15dfd22097e37a1dec42719eb5aa
-ms.sourcegitcommit: 94f2f8e3e6bc3946d8b3cf798b3eb77a49ffd12a
+ms.openlocfilehash: 8880655ec24f20efd139b8334ab754f51146b496
+ms.sourcegitcommit: 445b249a6f0420b32e49742fd7744006c7090b2b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/16/2020
-ms.locfileid: "45148113"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "46798209"
 ---
 # <a name="manage-incidents-in-microsoft-threat-protection"></a>Gérer les incidents dans la Protection Microsoft contre les menaces
 
@@ -43,16 +43,16 @@ Vous pouvez modifier le nom d’un incident, le résoudre, déterminer sa classi
 Si, lors d’une investigation, vous devez déplacer des alertes d’un incident à un autre, vous pouvez également le faire à partir de l’onglet Alertes, ce qui permet de créer un incident plus important ou plus petit qui inclut toutes les alertes appropriées.
 
 ## <a name="edit-incident-name"></a>Modifier le nom de l’incident
-Par défaut, un numéro est attribué à un incident. Vous pouvez modifier le nom de l’incident afin de mieux l’aligner avec votre convention d’affectation de noms préférée.
+Les incidents reçoivent automatiquement un nom basé sur les attributs d’alerte, tels que le nombre de points de terminaison affectés, les utilisateurs affectés, les sources de détection ou les catégories. Cela vous permet de comprendre rapidement l’étendue de l’incident.
 
-> [!TIP]
-> Pour une visibilité plus complète en un clin d’œil, l’appellation automatique des incidents, actuellement en préversion publique, génère des noms d’incidents en fonction des attributs d’alerte, tels que le nombre de points de terminaison affectés, les utilisateurs affectés, les sources de détection ou les catégories. Cela vous permet de comprendre rapidement l’étendue de l’incident.
->
-> Par exemple : plusieurs *étapes incident sur plusieurs points de terminaison signalés par plusieurs sources.*
->
-> Les incidents qui existaient avant le déploiement de la dénomination automatique des incidents ne verront pas leur nom modifié.
->
-> En savoir plus sur l' [activation des fonctionnalités d’aperçu](preview.md#turn-on-preview-features).
+Par exemple : plusieurs *étapes incident sur plusieurs points de terminaison signalés par plusieurs sources.*
+
+Vous pouvez modifier le nom de l’incident afin de mieux l’aligner avec votre convention d’affectation de noms préférée.
+
+> [!NOTE]
+> Les incidents qui existaient avant le déploiement de la fonctionnalité de dénomination automatique des incidents conserveront leur nom.
+
+
 
 ## <a name="assign-incidents"></a>Attribuer des incidents
 Si aucun incident n’a encore été affecté, vous pouvez sélectionner **À moi-même** pour vous l’attribuer. Cette action suppose l’appropriation non seulement de l’incident, mais aussi de toutes les alertes associées.

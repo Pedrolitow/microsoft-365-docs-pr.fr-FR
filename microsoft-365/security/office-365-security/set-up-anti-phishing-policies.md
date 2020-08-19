@@ -16,12 +16,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Les administrateurs peuvent en savoir plus sur les stratégies anti-hameçonnage disponibles dans Exchange Online Protection (EOP) et Office 365 Advanced Threat Protection (Office 365 ATP).
-ms.openlocfilehash: a7db287b8a8efb5c41488529fcaa8789b2f594b5
-ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
+ms.openlocfilehash: b492d37bea6135bccb770571f9984f9866c7cfd3
+ms.sourcegitcommit: 5c16d270c7651c2080a5043d273d979a6fcc75c6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46652716"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46804277"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Stratégies anti-hameçonnage dans Microsoft 365
 
@@ -50,15 +50,37 @@ Les principales différences entre les stratégies de détection d’hameçonnag
 |Seuils de hameçonnage avancés||![Coche](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
 |
 
-<sup>\*</sup>Dans la stratégie par défaut, le nom et la description de la stratégie sont en lecture seule (la description est vide), et vous ne pouvez pas spécifier à qui la stratégie s’applique (la stratégie par défaut s’applique à tous les destinataires).
+<sup>\*</sup> Dans la stratégie par défaut, le nom et la description de la stratégie sont en lecture seule (la description est vide), et vous ne pouvez pas spécifier à qui la stratégie s’applique (la stratégie par défaut s’applique à tous les destinataires).
 
-Pour configurer les stratégies anti-hameçonnage, consultez les rubriques suivantes :
+Pour configurer les stratégies anti-hameçonnage, consultez les articles suivants :
 
 - [Configurer des stratégies anti-hameçonnage dans EOP](configure-anti-phishing-policies-eop.md)
 
 - [Configurer des stratégies anti-hameçonnage ATP dans Microsoft 365](configure-atp-anti-phishing-policies.md)
 
-Le reste de cette rubrique décrit les paramètres disponibles dans les stratégies anti-hameçonnage et les stratégies anti-hameçonnage ATP.
+Le reste de cet article décrit les paramètres disponibles dans les stratégies anti-hameçonnage et les stratégies anti-hameçonnage ATP.
+
+## <a name="policy-settings"></a>Paramètres de stratégie
+
+Les paramètres de stratégie suivants sont disponibles dans les stratégies anti-hameçonnage et les stratégies anti-hameçonnage ATP :
+
+- **Name**: vous ne pouvez pas renommer la stratégie anti-hameçonnage par défaut, mais vous pouvez nommer et renommer les stratégies personnalisées que vous créez.
+
+- **Description** Vous ne pouvez pas ajouter de description à la stratégie anti-hameçonnage par défaut, mais vous pouvez ajouter et modifier la description des stratégies personnalisées que vous créez.
+
+- **Appliqué à**: identifie les destinataires internes auxquels s’applique la stratégie anti-hameçonnage. Cette valeur est requise dans les stratégies personnalisées et n’est pas disponible dans la stratégie par défaut (la stratégie par défaut s’applique à tous les destinataires).
+
+  Vous pouvez uniquement utiliser une condition ou une exception une seule fois, mais vous pouvez spécifier plusieurs valeurs pour la condition ou l’exception. Plusieurs valeurs de la même condition ou exception utilisent la logique OU (par exemple, _\<recipient1\>_ ou _\<recipient2\>_). Des conditions ou des exceptions différentes utilisent la logique ET (par exemple, _\<recipient1\>_ et _\<member of group 1\>_).
+
+  - **Destinataire**: une ou plusieurs boîtes aux lettres, utilisateurs de messagerie ou contacts de messagerie dans votre organisation.
+  - Le **destinataire est membre de**: un ou plusieurs groupes de votre organisation.
+  - **Le domaine du destinataire est**: un ou plusieurs domaines acceptés configurés dans Microsoft 365.
+
+  - **Sauf**dans les cas suivants : exceptions pour la règle. Les paramètres et le comportement sont exactement comme les conditions :
+
+    - **Le destinataire est**
+    - **Le destinataire est membre de**
+    - **Le domaine du destinataire est**
 
 ## <a name="spoof-settings"></a>Paramètres d’usurpation
 
@@ -75,28 +97,34 @@ Les paramètres d’usurpation suivants sont disponibles dans les stratégies an
 
   - **Déplacer le message vers le dossier courrier indésirable**: il s’agit de la valeur par défaut. Le message est remis à la boîte aux lettres et déplacé vers le dossier courrier indésirable. Dans Exchange Online, le message est déplacé vers le dossier courrier indésirable si la règle de courrier indésirable est activée dans la boîte aux lettres (elle est activée par défaut). Pour plus d’informations, consultez la rubrique [configurer les paramètres du courrier indésirable sur les boîtes aux lettres Exchange Online dans Microsoft 365](configure-junk-email-settings-on-exo-mailboxes.md).
 
-  - **Mettre en quarantaine le message**: envoie le message en quarantaine au lieu des destinataires prévus. Pour plus d'informations à propos de la quarantaine, consultez les rubriques suivantes :
+  - **Mettre en quarantaine le message**: envoie le message en quarantaine au lieu des destinataires prévus. Pour plus d’informations sur la mise en quarantaine, consultez les articles suivants :
 
     - [Mise en quarantaine dans Microsoft 365](quarantine-email-messages.md)
     - [Gérer les messages et les fichiers mis en quarantaine en tant qu’administrateur dans Microsoft 365](manage-quarantined-messages-and-files.md)
     - [Rechercher et débloquer les messages mis en quarantaine en tant qu’utilisateur dans Microsoft 365](find-and-release-quarantined-messages-as-a-user.md)
 
-- **Expéditeur non authentifié**: active ou désactive l’identification d’expéditeur non identifiée dans Outlook. Notamment :
+- **Expéditeur non authentifié**: consultez la description dans la section suivante.
 
-  - Un point d’interrogation ( ?) est ajouté à la photo de l’expéditeur si le message ne passe pas les vérifications SPF ou DKIM **et** que le message ne passe pas l’authentification DMARC ou [composite](email-validation-and-authentication.md#composite-authentication).
+### <a name="unauthenticated-sender"></a>Expéditeur non authentifié
 
-  - La balise via (chris@contoso.com <u>via</u> Michelle@fabrikam.com) est ajoutée si le domaine de l’adresse de provenance (l’expéditeur du message affiché dans les clients de messagerie) est différent du domaine dans la signature DKIM ou l’adresse **de provenance du courrier** . Pour plus d’informations sur ces adresses, consultez la rubrique [vue d’ensemble des normes relatives aux messages électroniques](how-office-365-validates-the-from-address.md#an-overview-of-email-message-standards) .
+L’identification de l’expéditeur non authentifié fait partie des [paramètres d’usurpation d’identité](#spoof-settings) disponibles dans les stratégies anti-hameçonnage et les stratégies anti-hameçonnage ATP, comme décrit dans la section précédente.
 
-  Pour empêcher l’ajout de ces identificateurs à des messages provenant d’expéditeurs spécifiques, vous disposez des options suivantes :
+Le paramètre **expéditeur non authentifié** active ou désactive l’identification d’expéditeur non identifiée dans Outlook. Notamment :
 
-  - Autoriser l’expéditeur à usurper la stratégie d’intelligence d’usurpation d’identité. Pour obtenir des instructions, consultez la rubrique [configure usurpation Intelligence in Microsoft 365](learn-about-spoof-intelligence.md).
+- Un point d’interrogation ( ?) est ajouté à la photo de l’expéditeur si le message ne passe pas les vérifications SPF ou DKIM **et** que le message ne passe pas l’authentification DMARC ou [composite](email-validation-and-authentication.md#composite-authentication).
 
-  - [Configurez l’authentification de messagerie](email-validation-and-authentication.md#configure-email-authentication-for-domains-you-own) pour le domaine de l’expéditeur.
+- La balise via (chris@contoso.com <u>via</u> Michelle@fabrikam.com) est ajoutée si le domaine de l’adresse de provenance (l’expéditeur du message affiché dans les clients de messagerie) est différent du domaine dans la signature DKIM ou l’adresse **de provenance du courrier** . Pour plus d’informations sur ces adresses, consultez la rubrique [vue d’ensemble des normes relatives aux messages électroniques](how-office-365-validates-the-from-address.md#an-overview-of-email-message-standards) .
+
+Pour empêcher l’ajout de ces identificateurs à des messages provenant d’expéditeurs spécifiques, vous disposez des options suivantes :
+
+- Autoriser l’expéditeur à usurper la stratégie d’intelligence d’usurpation d’identité. Pour obtenir des instructions, consultez la rubrique [configure usurpation Intelligence in Microsoft 365](learn-about-spoof-intelligence.md).
+
+- [Configurez l’authentification de messagerie](email-validation-and-authentication.md#configure-email-authentication-for-domains-you-own) pour le domaine de l’expéditeur.
   
-    - Pour le point d’interrogation de la photo de l’expéditeur, SPF ou DKIM sont les plus importants.
-    - Pour la balise via, vérifiez le domaine dans la signature DKIM ou l’adresse **Mail from** correspond (ou est un sous-domaine du) au domaine dans l’adresse de l’expéditeur.
+  - Pour le point d’interrogation de la photo de l’expéditeur, SPF ou DKIM sont les plus importants.
+  - Pour la balise via, vérifiez le domaine dans la signature DKIM ou l’adresse **Mail from** correspond (ou est un sous-domaine du) au domaine dans l’adresse de l’expéditeur.
 
-  Pour plus d’informations, consultez [la rubrique identifier les messages suspects dans Outlook.com et Outlook sur le Web](https://support.microsoft.com/office/3d44102b-6ce3-4f7c-a359-b623bec82206) .
+Pour plus d’informations, consultez [la rubrique identifier les messages suspects dans Outlook.com et Outlook sur le Web](https://support.microsoft.com/office/3d44102b-6ce3-4f7c-a359-b623bec82206) .
 
 ## <a name="exclusive-settings-in-atp-anti-phishing-policies"></a>Paramètres exclusifs dans les stratégies anti-hameçonnage ATP
 
@@ -105,34 +133,11 @@ Cette section décrit les paramètres de stratégie qui sont disponibles uniquem
 > [!NOTE]
 > Par défaut, les paramètres exclusifs ATP ne sont pas configurés ou activés, même dans la stratégie par défaut. Pour tirer parti de ces fonctionnalités, vous devez les activer et les configurer dans la stratégie anti-hameçonnage par défaut de l’ATP, ou créer et configurer des stratégies anti-hameçonnage personnalisées ATP.
 
-### <a name="policy-settings-in-atp-anti-phishing-policies"></a>Paramètres de stratégie dans les stratégies anti-hameçonnage ATP
-
-Les paramètres de stratégie suivants sont disponibles uniquement dans les stratégies anti-hameçonnage ATP :
-
-- **Name**: vous ne pouvez pas renommer la stratégie anti-hameçonnage par défaut, mais vous pouvez nommer et renommer les stratégies personnalisées que vous créez.
-
-- **Description** Vous ne pouvez pas ajouter de description à la stratégie anti-hameçonnage par défaut, mais vous pouvez ajouter et modifier la description des stratégies personnalisées que vous créez.
-
-- **Appliqué à**: identifie les destinataires internes auxquels s’applique la stratégie anti-hameçonnage ATP. Cette valeur est requise dans les stratégies personnalisées et n’est pas disponible dans la stratégie par défaut (la stratégie par défaut s’applique à tous les destinataires).
-
-    Vous pouvez uniquement utiliser une condition ou une exception une seule fois, mais vous pouvez spécifier plusieurs valeurs pour la condition ou l’exception. Plusieurs valeurs de la même condition ou exception utilisent la logique OU (par exemple, _\<recipient1\>_ ou _\<recipient2\>_). Des conditions ou des exceptions différentes utilisent la logique ET (par exemple, _\<recipient1\>_ et _\<member of group 1\>_).
-
-  - **Destinataire**: une ou plusieurs boîtes aux lettres, utilisateurs de messagerie ou contacts de messagerie dans votre organisation.
-  - Le **destinataire est membre de**: un ou plusieurs groupes de votre organisation.
-  - **Le domaine du destinataire est**: un ou plusieurs domaines acceptés configurés dans Microsoft 365.
-
-  - **Sauf**dans les cas suivants : exceptions pour la règle. Les paramètres et le comportement sont exactement comme les conditions :
-
-    - **Le destinataire est**
-    - **Le destinataire est membre de**
-    - **Le domaine du destinataire est**
-
 ### <a name="impersonation-settings-in-atp-anti-phishing-policies"></a>Paramètres d’emprunt d’identité dans les stratégies anti-hameçonnage ATP
 
 L’emprunt d’identité est l’endroit où l’expéditeur ou le domaine de messagerie de l’expéditeur d’un message doit ressembler à un expéditeur ou un domaine réel :
 
 - Un exemple d'usurpation de l'identité du domaine contoso.com est ćóntoso.com.
-
 - Un exemple d'usurpation de l'identité de l'utilisateur michelle@contoso.com est michele@contoso.com.
 
 Un domaine usurpé pourrait autrement être considéré comme légitime (domaine enregistré, enregistrements d'authentification de courrier électronique configurés, etc.), sauf si son but est de tromper les destinataires.
@@ -155,7 +160,7 @@ Les paramètres d’emprunt d’identité suivants sont disponibles uniquement d
 
   - **Déplacer le message vers le dossier courrier indésirable**: le message est remis à la boîte aux lettres et déplacé vers le dossier courrier indésirable. Dans Exchange Online, le message est déplacé vers le dossier courrier indésirable si la règle de courrier indésirable est activée dans la boîte aux lettres (elle est activée par défaut). Pour plus d’informations, consultez la rubrique [configurer les paramètres du courrier indésirable sur les boîtes aux lettres Exchange Online dans Microsoft 365](configure-junk-email-settings-on-exo-mailboxes.md).
 
-    - **Mettre en quarantaine le message**: envoie le message en quarantaine au lieu des destinataires prévus. Pour plus d'informations à propos de la quarantaine, consultez les rubriques suivantes :
+    - **Mettre en quarantaine le message**: envoie le message en quarantaine au lieu des destinataires prévus. Pour plus d’informations sur la mise en quarantaine, consultez les articles suivants :
 
     - [Mise en quarantaine dans Microsoft 365](quarantine-email-messages.md)
     - [Gérer les messages et les fichiers mis en quarantaine en tant qu’administrateur dans Microsoft 365](manage-quarantined-messages-and-files.md)

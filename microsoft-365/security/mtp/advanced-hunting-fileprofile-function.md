@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 6465821ff1b8e8ea23cc5cf6b205f65a483bbe82
-ms.sourcegitcommit: b4119682bd3c036289e851fff56fde869c816479
+ms.openlocfilehash: d0fd359bb6f56f7c20b0a39b7fd45ec551e7e49e
+ms.sourcegitcommit: 445b249a6f0420b32e49742fd7744006c7090b2b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45204946"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "46797781"
 ---
 # <a name="fileprofile"></a>FileProfile()
 
@@ -43,9 +43,9 @@ La `FileProfile()` fonction est une fonction d’enrichissement dans la [chasse 
 | Signataire | string | Informations sur le signataire du fichier |
 | Issuer | string | Informations sur l’autorité de certification émettrice |
 | SignerHash | string | Valeur de hachage unique identifiant le signataire |
-| IsCertificateValid | booléen | Si le certificat utilisé pour signer le fichier est valide |
-| IsRootSignerMicrosoft | booléen | Indique si le signataire du certificat racine est Microsoft |
-| IsExecutable | booléen | Indique si le fichier est un fichier exécutable portable (PE) |
+| IsCertificateValid | valeur booléenne | Si le certificat utilisé pour signer le fichier est valide |
+| IsRootSignerMicrosoft | valeur booléenne | Indique si le signataire du certificat racine est Microsoft |
+| IsExecutable | valeur booléenne | Indique si le fichier est un fichier exécutable portable (PE) |
 | ThreatName | string | Nom de détection pour tout programme malveillant ou autre menace détectée |
 | Publisher | string | Nom de l’organisation qui a publié le fichier |
 | SoftwareName | string | Nom du produit logiciel |
@@ -83,7 +83,8 @@ DeviceFileEvents
 | where GlobalPrevalence < 15
 ```
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Rubriques connexes
 - [Vue d’ensemble du repérage avancé](advanced-hunting-overview.md)
 - [Apprendre le langage de requête](advanced-hunting-query-language.md)
 - [Comprendre le schéma](advanced-hunting-schema-tables.md)
+- [Obtenir d’autres exemples de requêtes](advanced-hunting-shared-queries.md)
