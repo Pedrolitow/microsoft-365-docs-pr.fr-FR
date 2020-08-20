@@ -26,12 +26,12 @@ search.appverid:
 - MOE150
 ms.assetid: 6383f56d-3d09-4dcb-9b41-b5f5a5efd611
 description: Ajoutez votre domaine à Microsoft 365 dans le centre d’administration Microsoft 365 en ajoutant un enregistrement DNS au niveau de votre hôte DNS. L’Assistant installation vous guide tout au long du processus.
-ms.openlocfilehash: 8b70466e5cf82d9cf5be67162263f28ab5bd0d5d
-ms.sourcegitcommit: 20c219332270f1013d48b39773dd0e48dabad9e4
+ms.openlocfilehash: 0adf8b4dcd5d7bd31038b74a574f449f32bfb037
+ms.sourcegitcommit: 167c05cc6a776f62f0a0c2de5f3ffeb68c4a27ac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/07/2020
-ms.locfileid: "46592297"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46814431"
 ---
 # <a name="add-a-domain-to-microsoft-365"></a>Ajouter un domaine à Microsoft 365
 
@@ -96,7 +96,7 @@ ms.locfileid: "46592297"
   
     2. Sélectionnez **j’aurai ajouté les enregistrements DNS moi-même** si vous souhaitez joindre uniquement des services Microsoft 365 spécifiques à votre domaine ou si vous souhaitez ignorer cette opération pour le moment et effectuer cette opération plus tard. **Choisissez cette option si vous savez exactement ce que vous faites.**
     
-7. Si vous décidez d' *Ajouter des enregistrements DNS vous-même* , sélectionnez **suivant** et vous verrez une page contenant tous les enregistrements que vous devez ajouter à votre site Web des registres pour configurer votre domaine. 
+7. Si vous décidez d'  *Ajouter des enregistrements DNS vous-même*  , sélectionnez **suivant** et vous verrez une page contenant tous les enregistrements que vous devez ajouter à votre site Web des registres pour configurer votre domaine. 
     
   
   
@@ -124,7 +124,7 @@ Suivez les étapes ci-dessous pour ajouter un enregistrement personnalisé pour 
 
 5. Sélectionnez le type d’enregistrement DNS que vous souhaitez ajouter et tapez les informations pour le nouvel enregistrement.
     
-6. Cliquez sur **Enregistrer**.
+6. Sélectionnez **Enregistrer**.
 
 ## <a name="registrars-with-domain-connect"></a>Bureaux d’inscriptions avec connexion au domaine
 
@@ -163,5 +163,3 @@ Si vous avez un site web que vous utilisez dans le cadre de votre activité, il 
 [Acheter un nom de domaine dans Microsoft 365](../get-help-with-domains/buy-a-domain-name.md)
 
 [Configurer votre domaine (instructions spécifiques de l’hôte)](../get-help-with-domains/set-up-your-domain-host-specific-instructions.md)
-
-[Obtenir de l’aide sur les domaines](../get-help-with-domains/get-help-with-domains.md)

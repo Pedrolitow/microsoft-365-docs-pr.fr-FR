@@ -21,12 +21,12 @@ search.appverid:
 - GEA150
 ms.assetid: 2c4cf347-b897-45c1-a71f-210bdc8f1061
 description: Découvrez comment acheminer le trafic vers un site Web public existant hébergé en dehors de Microsoft, si vous avez configuré Microsoft pour gérer les enregistrements DNS pour votre domaine personnalisé.
-ms.openlocfilehash: c33dd9253da2e8833ec6ae4693be34739b31ea63
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 9a7090eef3ce7d1c67839e7320f31d7bd32aa6a7
+ms.sourcegitcommit: 167c05cc6a776f62f0a0c2de5f3ffeb68c4a27ac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400219"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46814397"
 ---
 # <a name="update-dns-records-to-keep-your-website-with-your-current-hosting-provider"></a>Mettre à jour les enregistrements DNS pour conserver votre site web chez votre fournisseur d'hébergement actuel
 
@@ -37,29 +37,31 @@ ms.locfileid: "44400219"
 ## <a name="update-dns-records-in-the-microsoft-365-admin-center"></a>Mettre à jour les enregistrements DNS dans le centre d’administration Microsoft 365
 1. Dans le centre d’administration, accédez à la page **Paramètres** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domaines</a>.
 
-2. Sur la page **Domaines**, dans la liste de domaines, cliquez sur celui que vous utilisez pour votre site web, puis sélectionnez **Paramètres DNS** dans le volet de gestion. 
+2. Dans la page **domaines** , sélectionnez le domaine, puis sélectionnez **enregistrements DNS**.
+
+3. Sous **paramètres DNS**, sélectionnez **enregistrements personnalisés**.
+
+4. Sélectionnez **+Nouvel enregistrement personnalisé** et entrez les éléments suivants : 
     
-3. Sélectionnez **+Nouvel enregistrement personnalisé** et entrez les éléments suivants : 
+   - Pour **Type de DNS** entrez : **A (Adresse)**
     
-  - Pour **Type de DNS** entrez : **A (Adresse)**
+   - Pour **Nom d'hôte ou Alias**, tapez **@**.
     
-  - Pour **Nom d'hôte ou Alias**, tapez **@**.
+   - Pour **Adresse IP**, tapez l'adresse IP statique correspondant à l'hébergement actuel de votre site web (par exemple, 172.16.140.1). 
     
-  - Pour **Adresse IP**, tapez l'adresse IP statique correspondant à l'hébergement actuel de votre site web (par exemple, 172.16.140.1). 
+   Il doit s'agir d'une adresse IP  *statique*  pour le site web (et non d'une adresse IP  *dynamique*  ). Vérifiez l'emplacement d'hébergement de votre site web pour vous assurer que vous pouvez obtenir une adresse IP statique pour votre site web public. 
     
-    Il doit s'agir d'une adresse IP  *statique*  pour le site web (et non d'une adresse IP  *dynamique*  ). Vérifiez l'emplacement d'hébergement de votre site web pour vous assurer que vous pouvez obtenir une adresse IP statique pour votre site web public. 
-    
-3. Sélectionnez **Enregistrer**. 
+5. Sélectionnez **Enregistrer**. 
     
 De plus, vous pouvez créer un enregistrement CNAME pour aider les clients à trouver votre site web.
   
 1. Sélectionnez **+Nouvel enregistrement personnalisé** et entrez les éléments suivants : 
     
-  - Pour **Type de DNS** entrez : **CNAME (Alias)**
+   - Pour **Type de DNS** entrez : **CNAME (Alias)**
     
-  - Pour **Nom d'hôte ou Alias**, tapez **www**
+   - Pour **Nom d'hôte ou Alias**, tapez **www**
     
-  - Pour **Adresse de pointage**, tapez le nom de domaine complet (FQDN) de votre site web (par exemple, contoso.com). 
+   - Pour **Adresse de pointage**, tapez le nom de domaine complet (FQDN) de votre site web (par exemple, contoso.com). 
     
 2. Sélectionnez **Enregistrer**. 
     

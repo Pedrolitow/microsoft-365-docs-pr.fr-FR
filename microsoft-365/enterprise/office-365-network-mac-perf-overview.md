@@ -14,12 +14,12 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Vue d’ensemble de la connectivité réseau dans le centre d’administration Microsoft 365 (version d’évaluation)
-ms.openlocfilehash: 7171565b6bd3bfba3defb49b51349c95d1598367
-ms.sourcegitcommit: 234726a1795d984c4659da68f852d30a4dda5711
+ms.openlocfilehash: 2f7e922f1e9abd68ebe51d26ef270760a7c446e2
+ms.sourcegitcommit: 22fd8517707ed3ab6ef996247ad2aa372535ee56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46794293"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46815242"
 ---
 # <a name="network-connectivity-in-the-microsoft-365-admin-center-preview"></a>Connectivité réseau dans le centre d’administration Microsoft 365 (version d’évaluation)
 
@@ -27,7 +27,7 @@ Le centre d’administration 365 de Microsoft includesaggregated les mesures de 
 
 ![Page des performances du réseau](../media/m365-mac-perf/m365-mac-perf-page-nav.png)
 
-Lorsque vous accédez à la page connectivité réseau, vous verrez un volet de vue d’ensemble contenant une carte des performances réseau globales, une évaluation du réseau pour l’étendue de l’ensemble du client, ainsi qu’une liste des problèmes actuels. À partir de la vue d’ensemble, vous pouvez accéder à des mesures et des problèmes de performances réseau spécifiques par emplacement. Pour plus d’informations, reportez-vous à [Network performance Overview dans le centre d’administration 365 de Microsoft](#network-performance-overview-in-the-microsoft-365-admin-center).
+Lorsque vous accédez à la page connectivité réseau, vous verrez un volet de vue d’ensemble contenant une carte des performances réseau globales, une évaluation du réseau pour l’étendue de l’ensemble du client, ainsi qu’une liste des problèmes actuels. À partir de la vue d’ensemble, vous pouvez accéder à des mesures et des problèmes de performances réseau spécifiques par emplacement. Pour plus d’informations, reportez-vous à [Network performance Overview dans le centre d’administration 365 de Microsoft](#network-connectivity-overview-in-the-microsoft-365-admin-center).
 
 ## <a name="pre-requisites-for-network-connectivity-assessments-to-appear"></a>Conditions préalables à l’affichage des évaluations de connectivité réseau
 

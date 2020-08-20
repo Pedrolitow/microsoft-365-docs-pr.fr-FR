@@ -22,12 +22,12 @@ search.appverid:
 - GEA150
 ms.assetid: f09696b2-8c29-4588-a08b-b333da19810c
 description: Découvrez comment supprimer un ancien domaine de Microsoft 365 et déplacer des utilisateurs et des groupes vers un autre domaine.
-ms.openlocfilehash: 6f5e36a897316c8cdc057a725957c54e7eb53edc
-ms.sourcegitcommit: 5b769f74bcc76ac8d38aad815d1728824783cd9f
+ms.openlocfilehash: 57e52cc4f44e41d31200b8b5469aed6c36b63d24
+ms.sourcegitcommit: 167c05cc6a776f62f0a0c2de5f3ffeb68c4a27ac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "45079760"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46814419"
 ---
 # <a name="remove-a-domain"></a>Supprimer un domaine
 
@@ -48,7 +48,7 @@ ms.locfileid: "45079760"
 
 ::: moniker range="o365-worldwide"
 
-1. Accédez au <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centre d’administration</a>.
+1. Allez au <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">centre administratif</a>.      
 
 2. Sélectionnez **utilisateurs** > **actifs**.
 
@@ -64,7 +64,7 @@ Vous devrez également effectuer cette action pour vous-même si vous êtes sur 
 
 ::: moniker range="o365-germany"
 
-1. Accédez au <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">Centre d’administration</a>.  
+1. Allez au <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">centre administratif</a>.        
 
 2. Sélectionnez **utilisateurs** > **actifs**.
 
@@ -80,7 +80,7 @@ Vous devrez également effectuer cette action pour vous-même si vous êtes sur 
 
 ::: moniker range="o365-21vianet"
 
-1. Accédez au <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">Centre d’administration</a>.  
+1. Allez au <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">centre administratif</a>.        
 
 2. Sélectionnez **utilisateurs** > **actifs**.
 
@@ -98,7 +98,7 @@ Vous devrez également effectuer cette action pour vous-même si vous êtes sur 
 
 ::: moniker range="o365-worldwide"
 
-1. Accédez au <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">Centre d’administration</a>.
+1. Allez au <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">centre administratif</a>.      
 
 2. Accédez à **utilisateurs** \> **actifs**, puis sélectionnez votre compte dans la liste.
 
@@ -214,7 +214,7 @@ La suppression d’un domaine par Microsoft 365 peut prendre jusqu’à 5 minute
   
 Si vous avez des centaines voire des milliers d'utilisateurs, utilisez PowerShell pour interroger tous les utilisateurs, puis déplacez-les vers un autre domaine. Sinon, il est possible que quelques-uns des utilisateurs manquent dans l'interface utilisateur. De plus, lorsque vous voudrez supprimer le domaine, vous ne pourrez pas et vous ne saurez pas pourquoi. Pour en savoir plus, voir [Set-MsolUserPrincipalName](https://docs.microsoft.com/powershell/module/msonline/set-msoluserprincipalname?view=azureadps-1.0). Pour définir le domaine par défaut, utilisez [Set-MsolDomain](https://docs.microsoft.com/powershell/module/msonline/set-msoldomain?view=azureadps-1.0).
   
-## <a name="still-need-help"></a>Encore besoin d’aide ?
+## <a name="still-need-help"></a>Vous avez encore besoin d’aide ?
 
 ::: moniker range="o365-worldwide"
 
@@ -228,8 +228,6 @@ Cela ne fonctionne toujours pas ? Vous devez peut-être supprimer votre domaine 
 ## <a name="related-articles"></a>Articles connexes
 
 [Foire aux questions domaines](../setup/domains-faq.md)
-
-[Obtenir de l’aide sur les domaines Microsoft 365](get-help-with-domains.md)
 
 [Basculer vers une autre offre Microsoft 365 pour les entreprises](../../commerce/subscriptions/switch-to-a-different-plan.md)
 

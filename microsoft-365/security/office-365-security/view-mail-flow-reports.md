@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Les administrateurs peuvent en savoir plus sur les rapports de flux de messagerie disponibles dans le tableau de bord des rapports dans le centre de sécurité & conformité.
 ms.custom: ''
-ms.openlocfilehash: acf74136fc61d38ea9aac47f36d96aa51a7b9905
-ms.sourcegitcommit: 6319e73b3690b4cf1b7932f2b9f51c2c99e70eaa
+ms.openlocfilehash: 98b27497b758a202ccbb741f6cb10e4ec65570e9
+ms.sourcegitcommit: 167c05cc6a776f62f0a0c2de5f3ffeb68c4a27ac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "46635033"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46814501"
 ---
 # <a name="view-mail-flow-reports-in-the-reports-dashboard-in-security--compliance-center"></a>Afficher les rapports de flux de messagerie dans le tableau de bord rapports du centre de sécurité & conformité
 
@@ -280,6 +280,123 @@ Chaque fichier. csv exporté est limité à 150 000 lignes. Si les données de c
 
 ![Affichage de la direction dans le rapport d’état de flux de flux ](../../media/mail-flow-status-report-direction-view.png)
 
+### <a name="funnel-view-for-the-mailflow-status-report"></a>Vue entonnoir pour le rapport d’état de flux de flux
+
+L’affichage **entonnoir** vous montre comment les fonctionnalités de protection contre les menaces Microsoft filtrent le courrier électronique entrant et sortant dans votre organisation. Elle fournit des détails sur le nombre total de messages électroniques, ainsi que la façon dont les fonctionnalités de protection contre les menaces configurées, notamment la protection des serveurs Edge, les logiciels anti-programme malveillant, le hameçonnage, le blocage du courrier indésirable et la détection d’usurpation d’identité ont un impact sur ce nombre.
+
+Si vous cliquez sur l’onglet **entonnoir** , par défaut, cet affichage contient un graphique et une table de données configurée avec les filtres suivants :
+
+- **Date**: les 7 derniers jours.
+
+- **Sens**:
+
+  - **Entrants**
+  - **Sortant**
+  - **Intra-org**: ce nombre est pour les messages envoyés au sein d’un client ; par exemple, l’expéditeur abc@domain.com envoie au destinataire xyz@domain.com (compté indépendamment des messages entrants et sortants).
+
+L’affichage d’agrégation et le tableau de données autorisent 90 jours de filtrage.
+
+Si vous cliquez sur **filtre**, vous pouvez filtrer le graphique et la table de données.
+
+Ce graphique indique le nombre de messages organisés par :
+
+  - **Nombre total de messages électroniques**
+  - **Courrier électronique après la protection du serveur Edge**
+  - **Courrier électronique après anti-programme malveillant, réputation de fichier, bloc de type fichier**
+  - **Courrier électronique après hameçonnage, réputation de l’URL, emprunt d’identité de marque, anti-usurpation**
+  - **Courrier électronique après blocage du courrier indésirable et filtrage du courrier en nombre**
+  - **Courrier électronique après l’emprunt d’identité d’utilisateur et de domaine**<sup>1</sup>
+  - **Courrier électronique après la détonation 1 du fichier et de l’URL**<sup>1</sup>
+  - **Courrier électronique détecté comme étant Bénin après une protection post-remise (URL-clic sur la protection du temps de clic)**
+
+<sup>1</sup> ATP Office 365 uniquement
+
+Pour afficher le courrier électronique filtré par EOP ou ATP séparément, cliquez sur la valeur dans la légende du graphique.
+
+La table de données contient les informations suivantes, indiquées dans l’ordre décroissant de date :
+
+ - **Date**
+ - **Nombre total de messages électroniques**
+ - **Protection des serveurs Edge**
+ - **Anti-programme malveillant, réputation de fichier, bloc de type de fichier**
+ - **Hameçonnage, réputation de l’URL, emprunt d’identité de marque, anti-usurpation**
+ - **Blocage du courrier indésirable et du filtrage du courrier en nombre**
+ - **Emprunt d’identité d’utilisateur et de domaine (ATP)**
+ - **Détonation des fichiers et des URL (ATP)**
+ - **Protection après livraison après réception, ou ZAP (EOP)**
+
+Si vous sélectionnez une ligne dans le tableau de données, une autre répartition du nombre de messages est affichée dans le menu volant.
+
+**Exportation**:
+
+Après avoir cliqué sur **Exporter** sous **options**, vous pouvez sélectionner l’une des valeurs suivantes :
+
+- **Résumé (avec les données au plus des 90 derniers jours)**
+- **Détails (avec les données des 30 derniers jours)**
+
+Sous **Date**, choisissez une plage, puis cliquez sur **appliquer**. Les données des filtres actuels seront exportées dans un fichier. csv.
+
+Chaque fichier. csv exporté est limité à 150 000 lignes. Si les données contiennent plus de 150 000 lignes, plusieurs fichiers. csv seront créés.
+
+ ![Vue entonnoir dans le rapport d’état de flux de flux ](../../media/mail-flow-status-report-funnel-view.png)
+
+ ### <a name="tech-view-for-the-mailflow-status-report"></a>Vue technique pour le rapport d’état de flux de flux
+
+La **vue Tech** est similaire à l’affichage **entonnoir** , qui fournit des détails plus granulaires pour les fonctionnalités de protection contre les menaces configurées. À partir du graphique, vous pouvez voir comment les messages sont catégorisés aux différentes étapes de la protection contre les menaces.
+
+Si vous cliquez sur l’onglet **affichage Tech** , par défaut, cet affichage contient un graphique et une table de données configurée avec les filtres suivants :
+
+- **Date**: les 7 derniers jours.
+
+- **Sens**:
+
+  - **Entrants**
+  - **Sortant**
+  - **Intra-org**: ce nombre est pour les messages au sein d’un client, c’est-à-dire l’expéditeur abc@domain.com envoie au destinataire xyz@domain.com (compté indépendamment des ports entrants et sortants)
+
+L’affichage d’agrégation et le tableau de données autorisent 90 jours de filtrage.
+
+Si vous cliquez sur **filtre**, vous pouvez filtrer le graphique et la table de données.
+
+Ce graphique présente les messages organisés selon les catégories suivantes :
+
+  - **Nombre total de messages électroniques**
+  - **Serveur Edge autorisé, serveur Edge filtré**
+  - **Pas de programmes malveillants, détection de pièces jointes fiables (ATP), détection du moteur anti-programme malveillant, bloc de règles**
+  - **Non-hameçonnage, échec DMARC, détection d’usurpation d’identité, détection d’usurpation d’identité, détection de hameçonnage**
+  - **Aucune détection avec détonation d’URL, détection de détonation d’URL (ATP)**
+  - **Courrier indésirable, courrier indésirable**
+  - **Courrier électronique non malveillant, détection de liens fiables (ATP), ZAP**
+
+Lorsque vous placez le curseur de la souris sur une catégorie dans le graphique, vous pouvez voir le nombre de messages dans cette catégorie.
+
+La table de données contient les informations suivantes, indiquées dans l’ordre décroissant de date :
+
+  - **Date**  
+  - **Nombre total de messages électroniques**
+  - **Serveur Edge filtré**
+  - **Moteur anti-programme malveillant, pièces jointes fiables, règle filtrée**
+  - **DMARC, emprunt d’identité, usurpation, hameçonnage filtré**
+  - **Détection de la détonation d’URL**
+  - **Filtrage du courrier indésirable**
+  - **ZAP supprimé**
+  - **Détection par les liens fiables**
+
+Si vous sélectionnez une ligne dans le tableau de données, une autre répartition du nombre de messages est affichée dans le menu volant.
+
+**Exportation**:
+
+Lorsque vous cliquez sur **Exporter**, sous **options** , vous pouvez sélectionner l’une des valeurs suivantes :
+
+- **Résumé (avec les données au plus des 90 derniers jours)**
+- **Détails (avec les données des 30 derniers jours)**
+
+Sous **Date**, choisissez une plage, puis cliquez sur **appliquer**. Les données des filtres actuels seront exportées dans un fichier. csv.
+
+Chaque fichier. csv exporté est limité à 150 000 lignes. Si les données contiennent plus de 150 000 lignes, plusieurs fichiers. csv seront créés.
+
+ ![Vue technique dans le rapport d’état de flux de flux ](../../media/mail-flow-status-report-Tech-view.png)
+
 ## <a name="sent-and-received-email-report"></a>Rapport de courrier électronique envoyé et reçu
 
 Le rapport de **courrier électronique envoyé et reçu** est un rapport intelligent qui affiche des informations sur les messages entrants et sortants, notamment les détections de courrier indésirable, les programmes malveillants et la messagerie électronique identifiés comme étant « en qualité ». La différence entre ce rapport et le [rapport d’état de flux](#mailflow-status-report) de courrier est la suivante : ce rapport n’inclut pas de données sur les messages bloqués par la protection du serveur Edge.
@@ -415,7 +532,7 @@ Pour afficher et utiliser les rapports, vous devez être membre du groupe de rô
 
 Pour plus d’informations, consultez la rubrique [autorisations dans Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo) et [gérer les groupes de rôles dans Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/role-groups).
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Rubriques connexes
 
 [Rapports intelligents et aperçus dans le Centre de sécurité et conformité](reports-and-insights-in-security-and-compliance.md)
 

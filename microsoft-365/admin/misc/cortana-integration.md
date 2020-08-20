@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7257cb50-0d5c-4f7a-ac2e-9fe5d13bb5cb
 description: Lorsque vous êtes connecté avec des comptes professionnels ou scolaires valides, les utilisateurs peuvent obtenir des services d’assistance en nuage avec Cortana dans les expériences Microsoft 365 qui répondent aux engagements de confidentialité, de sécurité et de conformité au niveau de l’entreprise d’Office 365.
-ms.openlocfilehash: 29e04726b04fafb0b79e5ba4625dce2ae74bfc67
-ms.sourcegitcommit: 6fb2a1c404ea3c3573b0f7803bf17459a9387891
+ms.openlocfilehash: e7464525774e15d5b54f1b2321948aef5d998558
+ms.sourcegitcommit: c692bdc186fb29499816e8bb2addcddef34d23d3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46788847"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46818300"
 ---
 # <a name="cortana-in-microsoft-365"></a>Cortana dans Microsoft 365
 
@@ -101,6 +101,8 @@ Les utilisateurs individuels peuvent tester l’assistance vocale Cortana dans l
 
 4. Déplacez le bouton bascule sur activé ou désactivé, selon que vous souhaitez ou non l’assistance vocale de Cortana sur cet appareil.
 
+[En savoir plus sur l’assistance vocale de Cortana dans teams](https://support.microsoft.com/en-us/office/using-cortana-voice-assistance-in-teams-274bb2f0-d962-4182-b45d-307435cea256?ui=en-us&rs=en-us&ad=us)
+
 ### <a name="play-my-emails"></a>Lire mes courriers électroniques
 
 Lire mes courriers électroniques (en tant que connexion via Outlook Mobile) est une expérience pratique basée sur les communications vocales permettant aux utilisateurs d’écouter de nouveaux messages dans leur boîte de réception prioritaire et de modifier leur jour par le biais des haut-parleurs sur leur téléphone, casque ou périphérique audio connecté. Les utilisateurs peuvent demander à Cortana de lire leurs messages récents à voix haute et demander à Cortana de prendre des mesures telles que l’indicateur, l’archivage, la suppression et l’omission de messages. Cette fonctionnalité est particulièrement utile pour rattraper votre courrier électronique pendant le trajet, le multitâche ou les rendez-vous. Lorsque l’utilisateur parle à Cortana dans lire mes courriers électroniques, la demande audio est directement envoyée aux services d’entreprise de Cortana. Une lecture de synthèse vocale du courrier électronique de l’utilisateur est effectuée dans le Cloud Office 365. Pendant ce processus, aucune donnée Office 365 n’est traitée sur l’appareil mobile de l’utilisateur et aucune donnée de courrier électronique n’est enregistrée. Une transcription des commandes vocales (c’est-à-dire « marquer comme lu », « suivant », « indicateur », etc.) peut être conservée conformément aux conditions de protection des données dans les [conditions de Microsoft Online Services](https://www.microsoft.com/licensing/product-licensing/products).
@@ -133,7 +135,7 @@ Les administrateurs peuvent configurer le briefing de leur organisation à l’a
 
 Nous continuerons à introduire d’autres expériences comme celles ci-dessus pour améliorer la productivité de votre organisation.
 
-En savoir plus sur les [offres de conformité Microsoft](https://docs.microsoft.com/microsoft-365/compliance/offering-home).
+[En savoir plus sur les offres de conformité Microsoft](https://docs.microsoft.com/microsoft-365/compliance/offering-home)
 
 ## <a name="how-is-the-delivery-of-cortana-enterprise-services-different-from-the-delivery-of-other-cortana-features-i-may-have-previously-experienced"></a>Comment la livraison des services d’entreprise de Cortana est-elle différente de celle des autres fonctionnalités de Cortana que j’ai peut-être déjà expérimentées ?
 

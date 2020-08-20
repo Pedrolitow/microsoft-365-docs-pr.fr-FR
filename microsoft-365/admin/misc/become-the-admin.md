@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: b9707ec8-2247-4e25-9bad-f11ddbc686e4
 description: Découvrez comment vérifier la propriété de votre messagerie et de votre domaine pour prendre le relais d’un locataire non géré dans Microsoft 365
-ms.openlocfilehash: 1eb54a6c34c9700bda09a660c71d2b1222fcdb8c
-ms.sourcegitcommit: 3ddcf08e8deec087df1fe524147313f1cb12a26d
+ms.openlocfilehash: 9c1d98616b10737553060bcbad62df9b3b4c0c9a
+ms.sourcegitcommit: 167c05cc6a776f62f0a0c2de5f3ffeb68c4a27ac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "45022156"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46814467"
 ---
 # <a name="perform-an-internal-admin-takeover"></a>Effectuer un rachat administratif interne
 
@@ -72,9 +72,7 @@ YouTube : [3 étapes pour effectuer une prise en compte de l’administrateur i
 
 [Prise en compte de l’administrateur dans Azure AD](https://docs.microsoft.com/azure/active-directory/users-groups-roles/domains-admin-takeover)
 
-[Obtenir de l’aide sur les domaines](../get-help-with-domains/get-help-with-domains.md)
-
-[Utilisation de l’authentification en libre-service dans votre organisation](self-service-sign-up.md)
+[Utilisation de l’inscription en libre-service au sein de votre organisation](self-service-sign-up.md)
   
 [Présentation du rôle d’administrateur de service Power BI](https://docs.microsoft.com/power-bi/service-admin-role)
 

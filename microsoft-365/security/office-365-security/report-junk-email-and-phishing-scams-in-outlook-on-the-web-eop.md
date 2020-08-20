@@ -16,12 +16,12 @@ ms.assetid: 758822b5-0126-463a-9d08-7366bb2a807d
 ms.collection:
 - M365-security-compliance
 description: Les administrateurs peuvent découvrir les options de notification de courrier indésirable, non légitime et de hameçonnage dans Outlook sur le Web (Outlook Web App) dans Exchange Online et comment désactiver ces options de création de rapports pour les utilisateurs.
-ms.openlocfilehash: adbb4f16201e221bce2405a7b715dd6a630e9e1d
-ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
+ms.openlocfilehash: a364afed9bb7e61d5f34ffc0206ede1c5155db65
+ms.sourcegitcommit: c692bdc186fb29499816e8bb2addcddef34d23d3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44617319"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46818332"
 ---
 # <a name="report-junk-and-phishing-email-in-outlook-on-the-web-in-exchange-online"></a>Signaler le courrier indésirable et de hameçonnage dans Outlook sur le Web dans Exchange Online
 
@@ -49,9 +49,9 @@ Dans les organisations Microsoft 365 avec des boîtes aux lettres dans Exchange 
 
 2. Dans la boîte de dialogue qui s’affiche, cliquez sur **rapport**. Si vous changez d’avis, cliquez sur **ne pas signaler**.
 
-   ![Boîte de dialogue signaler comme courrier indésirable](../../media/owa-report-as-junk-dialog.png)
-
-   ![Boîte de dialogue signaler en tant que hameçonnage](../../media/owa-report-as-phishing-dialog.png)
+   |Filtre|Hameçonnage|
+   |:---:|:---:|
+   |![Boîte de dialogue signaler comme courrier indésirable](../../media/owa-report-as-junk-dialog.png)|![Boîte de dialogue signaler en tant que hameçonnage](../../media/owa-report-as-phishing-dialog.png)|
 
 3. Les messages sélectionnés seront envoyés à Microsoft pour analyse. Pour confirmer que les messages ont été envoyés, ouvrez le dossier **Éléments envoyés** pour afficher les messages envoyés.
 
@@ -67,9 +67,9 @@ Dans les organisations Microsoft 365 avec des boîtes aux lettres dans Exchange 
 
 2. Dans la boîte de dialogue qui s’affiche, lisez les informations, puis cliquez sur **rapport**. Si vous changez d’avis, cliquez sur **ne pas signaler**.
 
-   ![Boîte de dialogue signaler comme légitime](../../media/owa-report-as-not-junk-dialog.png)
-
-   ![Boîte de dialogue signaler en tant que hameçonnage](../../media/owa-report-as-phishing-dialog.png)
+   |Courrier légitime|Hameçonnage|
+   |:---:|:---:|
+   |![Boîte de dialogue signaler comme légitime](../../media/owa-report-as-not-junk-dialog.png)|![Boîte de dialogue signaler en tant que hameçonnage](../../media/owa-report-as-phishing-dialog.png)|
 
 3. Les messages sélectionnés seront envoyés à Microsoft pour analyse. Pour confirmer que les messages ont été envoyés, ouvrez le dossier **Éléments envoyés** pour afficher les messages envoyés.
 
@@ -129,7 +129,7 @@ Pour vérifier que vous avez bien activé ou désactivé la création de rapport
 
 - Ouvrez la boîte aux lettres d’un utilisateur concerné dans Outlook sur le Web, sélectionnez un message dans le dossier courrier indésirable **, cliquez sur courrier indésirable** \> **Junk** et vérifiez que l’invite de signalement du message à Microsoft est ou non affichée.<sup>\*</sup>
 
-<sup>\*</sup>Les utilisateurs peuvent masquer l’invite de signalement du message tout en continuant à signaler le message. Pour vérifier ce paramètre dans Outlook sur le Web, procédez comme suit :
+<sup>\*</sup> Les utilisateurs peuvent masquer l’invite de signalement du message tout en continuant à signaler le message. Pour vérifier ce paramètre dans Outlook sur le Web, procédez comme suit :
 
 1. Cliquez sur **paramètres** ![ Outlook sur l’icône Paramètres du site Web ](../../media/owa-settings-icon.png) \> **Afficher tous les paramètres Outlook** \> **courrier indésirable**.
 2. Dans la section **création de rapports** , vérifiez la valeur : **me demander avant d’envoyer un rapport**.

@@ -20,16 +20,25 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 4f9f4f40b9cd88cad1676417d467d04367eaa0be
-ms.sourcegitcommit: a08103bc120bdec7cfeaf67c1be4e221241e69ad
+ms.openlocfilehash: 644e12d3b9dfecc0a31c8d464033e41670bc7b88
+ms.sourcegitcommit: 22fd8517707ed3ab6ef996247ad2aa372535ee56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "45200149"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46815230"
 ---
 # <a name="whats-new-in-microsoft-secure-score"></a>Nouveautés de Microsoft Secure score
 
 Pour faire en sorte que Microsoft Secure score un meilleur représentant de votre position de sécurité, nous avons apporté des modifications. Pour en savoir plus sur les modifications planifiées, consultez [la rubrique what’s from Microsoft Secure score ?](microsoft-secure-score-whats-coming.md).
+
+## <a name="july-2020"></a>Juillet 2020
+
+### <a name="adding-improvement-actions-for-azure-advanced-threat-protection"></a>Ajout d’actions d’amélioration pour Azure protection avancée contre les menaces
+
+- Chemins de déplacement latéraux risqués
+- Attributs de compte non sécurisés
+- Activer les fonctionnalités de sécurité sur les approbations Active Directory
+- Supprimer les attributs d’historique SID non sécurisé des entités
 
 ## <a name="june-2020"></a>Juin 2020
 
@@ -83,6 +92,6 @@ Si vous rencontrez des problèmes, indiquez-nous en publiant dans la communauté
 
 ## <a name="related-resources"></a>Ressources connexes
 
-- [Évaluer votre position de sécurité](microsoft-secure-score-improvement-actions.md)
+- [Évaluez votre posture de sécurité](microsoft-secure-score-improvement-actions.md)
 - [Suivi de votre historique de score sécurisé Microsoft et atteindre les objectifs](microsoft-secure-score-history-metrics-trends.md)
 - [Nouveautés](microsoft-secure-score-whats-coming.md)
