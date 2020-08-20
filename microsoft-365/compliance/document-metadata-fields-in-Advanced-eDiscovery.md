@@ -1,5 +1,5 @@
 ---
-title: Champs de métadonnées de document dans Advanced eDiscovery
+title: Champs de métadonnées des documents dans l'Advanced eDiscovery
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -16,14 +16,14 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Cet article définit les champs de métadonnées pour les documents dans un ensemble de révision dans un cas dans Advanced eDiscovery dans Microsoft 365.
-ms.openlocfilehash: e419cb14d1b0adbebd6d45aaa5120933b060bdf9
-ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
+ms.openlocfilehash: 69b22155f209f155aa0b311f67f3e69841093003
+ms.sourcegitcommit: 167c05cc6a776f62f0a0c2de5f3ffeb68c4a27ac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45126951"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46814386"
 ---
-# <a name="document-metadata-fields-in-advanced-ediscovery"></a>Champs de métadonnées de document dans Advanced eDiscovery
+# <a name="document-metadata-fields-in-advanced-ediscovery"></a>Champs de métadonnées des documents dans l'Advanced eDiscovery
 
 Le tableau suivant répertorie les champs de métadonnées pour les documents dans un ensemble de révision dans un cas dans Advanced eDiscovery. Le tableau fournit les informations suivantes :
 
@@ -93,12 +93,17 @@ Le tableau suivant répertorie les champs de métadonnées pour les documents da
 |Date du système de fichiers créée||File_system_date_created|Date de création à partir du système de fichiers (s’applique uniquement aux données non Office 365).|
 |Date du système de fichiers modifiée||File_system_date_modified|Date de modification à partir du système de fichiers (s’applique uniquement aux données non Office 365).|
 |Type de fichier|FileType||Type de fichier de l’élément en fonction de l’extension de fichier.|
+|ID de groupe| GroupID|  |ID de groupe pour le contenu groupé.|
 |Avec pièce jointe|HasAttachment|Email_has_attachment|Indique si le message contient des pièces jointes.|
 |A un avocat|HasAttorney||**True** lorsqu’au moins un des participants figure dans la liste des avocats ; Sinon, la valeur est **false**.|
 |Telle||Has_text|Indique si l’élément contient du texte ou non. les valeurs possibles sont **true** et **false**.|
 |ID non modifiable||Immutable_ID|Cet ID est utilisé pour identifier de manière unique un document au sein d’un ensemble de révision. Ce champ ne peut pas être utilisé dans une recherche de jeu de révision et l’ID ne peut pas être utilisé pour accéder à un document dans son emplacement d’origine.|
 |Type inclusif|InclusiveType|Inclusive_type|Type inclusif calculé pour l’analyse : **0** -non inclus ; **1** -inclus ; **2** -inclus moins ; copie **3** -inclusive.|
 |En réponse à l’ID||In_reply_to_ID|En réponse à l’ID du message.|
+|Est une pièce jointe moderne| IsModernAttachment|  |Ce fichier est une pièce jointe moderne ou un fichier lié.|
+|De la version du document | IsFromDocumentVersion |  |Le document actif provient d’une autre version d’un autre document.|
+|Est une pièce jointe de courrier électronique | IsEmailAttachment|  |Cet élément provient d’une pièce jointe à un message qui s’affiche en tant qu’élément attaché au message.|
+|Est une pièce jointe incorporée| IsInlineAttachment|  |Cette ligne est attachée et apparaît dans le corps du message.|
 |Est représentatif|IsRepresentative|Is_representative|Un document dans chaque ensemble de doublons exact est marqué comme représentatif.|
 |Classe de l’élément|ItemClass|Item_class|Classe d’élément fournie par Exchange Server ; par exemple, **IPM. Note**|
 |Dernière modification|LastModifiedDate|Doc_date_modified|Date de dernière modification à partir des métadonnées de document.|
@@ -143,20 +148,20 @@ Le tableau suivant répertorie les champs de métadonnées pour les documents da
 |Score de pertinence|RelevanceScore||Score de pertinence d’un document basé sur la pertinence.|
 |Balise de pertinence|RelevanceTag||Score de pertinence d’un document basé sur la pertinence.|
 |ID représentatif|RepresentativeId||Identificateur numérique de chaque ensemble de doublons exacts.|
-|Sender|Sender|Email_sender|Champ sender (from) pour les types de message. Le format **est \<SmtpAddress> DisplayName **.|
+|Expéditeur|Expéditeur|Email_sender|Champ sender (from) pour les types de message. Le format **est \<SmtpAddress> DisplayName **.|
 |Expéditeur/auteur|SenderAuthor||Champ calculé composé de l’expéditeur ou de l’auteur de l’élément.|
 |Domaine de l’expéditeur|SenderDomain|Email_sender_domain|Domaine de l’expéditeur.|
 |Sent|Sent|Email_date_sent|Date d’envoi du message.|
 |Ordre défini : en premier|SetOrderInclusivesFirst|Set_order_inclusives_first|Champ de tri-courrier électronique et pièces jointes : compteur-chronologique ; documents : tableau croisé dynamique, puis par décroissant de score de similarité.|
 |SimilarityPercent||Similarity_percent|Indique le degré de similarité d’un document par tableau croisé dynamique du jeu presque dupliqué.|
 |Taille de fichier Native|Size|Native_size|Nombre d’octets de l’élément natif.|
-|Subject|Subject|Email_subject|Objet du message.|
+|Sujet|Sujet|Email_subject|Objet du message.|
 |Subject/title|SubjectTitle||Champ calculé constitué de l’objet ou du titre de l’élément.|
 |Marqué par le problème 1||Tagged_by_Case_issue_1|Utilisateur qui a balisé ce document pour le problème 1 en pertinence.|
 |Balises|Balises|Balises|Balises appliquées dans un jeu de révision.|
 |Liste des thèmes|ThemesList|Themes_list|Liste des thèmes telle qu’elle est calculée pour l’analyse.|
 |Titre|Titre|Doc_title|Titre des métadonnées du document.|
-|To|To|Email_to|Champ à pour les types de message. Le format **est \<SmtpAddress> DisplayName**|
+|À|À|Email_to|Champ à pour les types de message. Le format **est \<SmtpAddress> DisplayName**|
 |Unique dans le groupe de courriers|UniqueInEmailSet||**False** s’il existe un doublon de la pièce jointe dans son jeu de courriers.|
 |A été résolu|WasRemediated|Was_Remediated|**True** si l’élément a été résolu, sinon **false**.|
 |Statistiques|WordCount|Word_count|Nombre de mots dans l’élément.|

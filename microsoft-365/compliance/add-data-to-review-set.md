@@ -18,12 +18,12 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: Découvrez comment ajouter des résultats de recherche ou des exemples de ces résultats de recherche à un ensemble de vérification de cas eDiscovery avancé.
-ms.openlocfilehash: 5e0cdb12a34b3b69c41546e6fcb356ed905189dd
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 687cc33c0e7e6a09fb352e9c13058a6fcac30053
+ms.sourcegitcommit: 167c05cc6a776f62f0a0c2de5f3ffeb68c4a27ac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034668"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46814526"
 ---
 # <a name="add-search-results-to-a-review-set"></a>Ajouter des résultats de recherche à un jeu à réviser
 
@@ -45,7 +45,17 @@ Vous pouvez ajouter à un jeu de réexamen existant ou créer un jeu de révisio
 
 ![Sélectionner un jeu de révision](../media/e8c6ab51-da8d-4c39-9b21-26bfdf453fb9.png)
 
-L’ajout de données à un jeu de révision est un processus long. Ce processus inclut la collecte d’éléments à partir des sources de données d’origine dans Microsoft 365 (par exemple, à partir de boîtes aux lettres et de sites), leur copie vers l’emplacement de stockage Azure (ce processus de copie est *également appelé «* ingestion »), puis la réindexation des éléments. Vous pouvez suivre la progression sous l’onglet **travaux** ou sur l’onglet **recherches** en surveillant l’État dans la colonne **données ajoutées à l’ensemble** de modifications. Une fois le traitement de l’ensemble de vérifications terminé, cliquez sur l’onglet **ensembles** de vérifications dans le cas, puis cliquez sur le jeu de révisions pour démarrer le processus de filtrage, de révision, de marquage et d’exportation des données dans l’ensemble de révision.
+## <a name="define-options-to-scope-your-collection-for-review"></a>Définir les options d’étendue de votre collection à des fins de révision
+
+Lorsque vous ajoutez le contenu d’une recherche à un ensemble de validation existant ou en créez un nouveau, vous disposez des options suivantes :
+
+- **Jeu de révision par conversation** : les éléments ajoutés au jeu de révision seront activés pour les conversations thématiques pour vous aider à consulter le contenu dans le contexte de la conversation d’avant et d’une conversation, consultez la section autres dans cet article [ensembles de révision de conversation]
+
+- **Activer la récupération pour une pièce jointe moderne** : utilisez ce contrôle pour inclure des pièces jointes modernes ou des fichiers liés dans la collection à des fins de révision. pour en savoir plus sur les nouveaux noms de champ pouvant faire l’objet d’une recherche, consultez la rubrique [champs de métadonnées de document dans Advanced eDiscovery]
+
+- **Inclure des versions à partir de SharePoint (bêta)** : ce contrôle permet la collecte de toutes les versions d’un fichier SharePoint en fonction des limites de version et des paramètres de recherche de la collection ; Remarque : ce contrôle augmentera considérablement la taille de la collection
+
+L’ajout de données à un groupe de révision est un processus à long terme. Ce processus inclut la collecte d’éléments à partir des sources de données d’origine dans Microsoft 365 (par exemple, à partir de boîtes aux lettres et de sites), leur copie vers l’emplacement de stockage Azure (ce processus de copie est *également appelé «* ingestion »), puis la réindexation des éléments. Vous pouvez suivre la progression sous l’onglet **travaux** ou sur l’onglet **recherches** en surveillant l’État dans la colonne **données ajoutées à l’ensemble** de modifications. Une fois le traitement de l’ensemble de vérifications terminé, cliquez sur l’onglet **ensembles** de vérifications dans le cas, puis cliquez sur le jeu de révisions pour démarrer le processus de filtrage, de révision, de marquage et d’exportation des données dans l’ensemble de révision.
 
 ## <a name="add-a-sample-to-a-review-set"></a>Ajouter un échantillon à un jeu de révision
 
@@ -59,8 +69,8 @@ Pour ajouter un exemple à un jeu de réexamens, cliquez sur une recherche sous 
 
 Après avoir sélectionné et configuré l’une des options précédentes, sélectionnez un jeu de réviseur auquel ajouter l’exemple, puis cliquez sur **Envoyer**. Une fois encore, vous pouvez suivre l’avancement sous l’onglet **travaux** ou sur l’onglet **recherches** en surveillant l’État dans la colonne **données ajoutées à l’ensemble** de modifications.
 
-## <a name="optical-character-recognition"></a>Reconnaissance optique de caractères
+## <a name="optical-character-recognition"></a>Reconnaissance optique des caractères
 
-Lorsque vous ajoutez des résultats de recherche à un jeu de réviseurs, la fonctionnalité de reconnaissance optique de caractères (OCR) dans Advanced eDiscovery extrait automatiquement le texte des images et inclut le texte de l’image avec les données ajoutées à un jeu de révision. Vous pouvez afficher le texte extrait dans la visionneuse de texte du fichier image sélectionné dans l’ensemble de révision. Cela vous permet d’effectuer une révision et une analyse supplémentaires sur le texte des images. La reconnaissance optique de caractères est prise en charge pour les fichiers libres, les pièces jointes et les images incorporées. Pour obtenir la liste des formats de fichiers image pris en charge pour la reconnaissance optique de caractères, voir [types de fichiers pris en charge dans Advanced eDiscovery](supported-filetypes-ediscovery20.md#image).
+Lorsque vous ajoutez des résultats de recherche à un jeu de réviseurs, la fonctionnalité de reconnaissance optique de caractères (OCR) dans Advanced eDiscovery extrait automatiquement le texte des images et inclut le texte de l’image avec les données ajoutées à un jeu de révision. Vous pouvez afficher le texte extrait dans la visionneuse de texte du fichier image sélectionné dans l’ensemble de révision. afin de l’examiner et de l’analyser de manière plus approfondie. La reconnaissance optique des caractères est prise en charge pour les fichiers isolés, les pièces jointes et les images incorporées. Pour consulter la liste des formats de fichiers image pris en charge par la reconnaissance optique des caractères, voir [Types de fichiers pris en charge dans Advanced eDiscovery](supported-filetypes-ediscovery20.md#image).
 
-Vous devez activer la fonctionnalité OCR pour chaque cas que vous créez dans Advanced eDiscovery. Pour plus d’informations, consultez la rubrique [configurer les paramètres de recherche et d’analyse](configure-search-and-analytics-settings-in-advanced-ediscovery.md#optical-character-recognition-ocr).
+Vous devez activer la fonctionnalité de reconnaissance optique des caractères pour chaque cas que vous créez dans Advanced eDiscovery. Pour plus d’informations, consultez la rubrique [configurer les paramètres de recherche et d’analyse](configure-search-and-analytics-settings-in-advanced-ediscovery.md#optical-character-recognition-ocr).

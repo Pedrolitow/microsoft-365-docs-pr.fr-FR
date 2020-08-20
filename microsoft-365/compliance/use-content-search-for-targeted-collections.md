@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: e3cbc79c-5e97-43d3-8371-9fbc398cd92e
 ms.custom: seo-marvel-apr2020
 description: Utilisez la recherche de contenu dans le centre de sécurité & conformité pour effectuer des collections ciblées, ce qui garantit que les éléments se trouvent dans une boîte aux lettres ou un dossier de site spécifique.
-ms.openlocfilehash: fb7f900e8deaef6946d1ed8ea109d42207a882b3
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: aa311d0f9226330d9f2d881af6dabbdc6d0a15b5
+ms.sourcegitcommit: 167c05cc6a776f62f0a0c2de5f3ffeb68c4a27ac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44819104"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46814536"
 ---
 # <a name="use-content-search-for-targeted-collections"></a>Utiliser la recherche de contenu pour les regroupements ciblés
 
@@ -49,7 +49,7 @@ La fonctionnalité de recherche de contenu dans le centre de sécurité &amp; et
     
 - Le script inclut une gestion des erreurs minimale. Le principal objectif du script est d’afficher rapidement une liste des ID de dossier ou des chemins d’accès de site qui peuvent être utilisés dans la syntaxe de requête de recherche d’une recherche de contenu pour effectuer une collection ciblée.
     
-- L’exemple de script fourni dans cette rubrique n’est pas pris en charge dans le cadre d’un service ou d’un programme de support standard Microsoft. L’exemple de script est fourni en l’État sans aucune garantie. Microsoft exclut toute garantie implicite, y compris, sans limitation, les garanties implicites de qualité marchande ou d'adéquation à un usage particulier. L’ensemble des risques liés à l’utilisation ou aux performances de l’exemple de script et de la documentation reste avec vous. En aucun cas, Microsoft, ses auteurs ou toute personne impliquée dans la création, la production ou la livraison des scripts ne sont responsables de dommages quelconques (y compris, sans limitation, pertes de bénéfices, interruption d'activité, perte d'informations commerciales ou toute autre perte pécuniaire) découlant de l'utilisation ou de l'impossibilité d'utiliser les exemples de scripts ou la documentation, même si Microsoft a été informé de la possibilité de tels dommages.
+- L’exemple de script fourni dans cette rubrique n’est pas pris en charge dans le cadre d’un service ou d’un programme de support standard Microsoft. L’exemple de script est fourni en l’État sans aucune garantie. Microsoft Corporation décline aussi toute garantie implicite, y compris et sans limitation, les garanties implicites de qualité marchande ou d’adéquation à un usage particulier. L’ensemble des risques liés à l’utilisation ou aux performances de l’exemple de script et de la documentation reste avec vous. En aucun cas Microsoft, ses auteurs ou quiconque impliqué dans la création, la production ou la livraison des scripts ne sera responsable de tous dommages quels qu’ils soient (y compris, sans limitation, les dommages pour perte de profits, interruption d’activité, perte d’informations commerciales ou toute autre perte pécuniaire) découlant de l’utilisation ou de l’impossibilité d’utiliser les exemples de scripts ou la documentation, même si Microsoft a été informé de la possibilité de tels dommages.
   
 ## <a name="step-1-run-the-script-to-get-a-list-of-folders-for-a-mailbox-or-site"></a>Étape 1 : exécuter le script pour obtenir la liste des dossiers d’une boîte aux lettres ou d’un site
 
@@ -69,34 +69,34 @@ Pour afficher la liste des dossiers de boîte aux lettres ou documentlink de sit
   
 1. Enregistrez le texte suivant dans un fichier de script Windows PowerShell à l’aide d’un suffixe de nom de fichier. ps1 ; par exemple, `GetFolderSearchParameters.ps1` .
     
-  ```powershell
-  #########################################################################################################
-  # This PowerShell script will prompt you for:                                #
-  #    * Admin credentials for a user who can run the Get-MailboxFolderStatistics cmdlet in Exchange    #
-  #      Online and who is an eDiscovery Manager in the Security & Compliance Center.            #
-  # The script will then:                                            #
-  #    * If an email address is supplied: list the folders for the target mailbox.            #
-  #    * If a SharePoint or OneDrive for Business site is supplied: list the documentlinks (folder paths) #
-  #    * for the site.                                                                                    #
-  #    * In both cases, the script supplies the correct search properties (folderid: or documentlink:)    #
-  #      appended to the folder ID or documentlink to use in a Content Search.                #
-  # Notes:                                                #
-  #    * For SharePoint and OneDrive for Business, the paths are searched recursively; this means the     #
-  #      the current folder and all sub-folders are searched.                        #
-  #    * For Exchange, only the specified folder will be searched; this means sub-folders in the folder    #
-  #      will not be searched.  To search sub-folders, you need to use the specify the folder ID for    #
-  #      each sub-folder that you want to search.                                #
-  #    * For Exchange, only folders in the user's primary mailbox will be returned by the script.        #
-  #########################################################################################################
-  # Collect the target email address or SharePoint Url
-  $addressOrSite = Read-Host "Enter an email address or a URL for a SharePoint or OneDrive for Business site"
-  # Authenticate with Exchange Online and the Security & Compliance Center (Exchange Online Protection - EOP)
-  if (!$credentials)
-  {
+   ```powershell
+   #########################################################################################################
+   # This PowerShell script will prompt you for:                                #
+   #    * Admin credentials for a user who can run the Get-MailboxFolderStatistics cmdlet in Exchange    #
+   #      Online and who is an eDiscovery Manager in the Security & Compliance Center.            #
+   # The script will then:                                            #
+   #    * If an email address is supplied: list the folders for the target mailbox.            #
+   #    * If a SharePoint or OneDrive for Business site is supplied: list the documentlinks (folder paths) #
+   #    * for the site.                                                                                    #
+   #    * In both cases, the script supplies the correct search properties (folderid: or documentlink:)    #
+   #      appended to the folder ID or documentlink to use in a Content Search.                #
+   # Notes:                                                #
+   #    * For SharePoint and OneDrive for Business, the paths are searched recursively; this means the     #
+   #      the current folder and all sub-folders are searched.                        #
+   #    * For Exchange, only the specified folder will be searched; this means sub-folders in the folder    #
+   #      will not be searched.  To search sub-folders, you need to use the specify the folder ID for    #
+   #      each sub-folder that you want to search.                                #
+   #    * For Exchange, only folders in the user's primary mailbox will be returned by the script.        #
+   #########################################################################################################
+   # Collect the target email address or SharePoint Url
+   $addressOrSite = Read-Host "Enter an email address or a URL for a SharePoint or OneDrive for Business site"
+   # Authenticate with Exchange Online and the Security & Compliance Center (Exchange Online Protection - EOP)
+   if (!$credentials)
+   {
       $credentials = Get-Credential
-  }
-  if ($addressOrSite.IndexOf("@") -ige 0)
-  {
+   }
+   if ($addressOrSite.IndexOf("@") -ige 0)
+   {
       # List the folder Ids for the target mailbox
       $emailAddress = $addressOrSite
       # Authenticate with Exchange Online
@@ -125,9 +125,9 @@ Pour afficher la liste des dossiers de boîte aux lettres ou documentlink de sit
       }
       Write-Host "-----Exchange Folders-----"
       $folderQueries |ft
-  }
-  elseif ($addressOrSite.IndexOf("http") -ige 0)
-  {
+   }
+   elseif ($addressOrSite.IndexOf("http") -ige 0)
+   {
       $searchName = "SPFoldersSearch"
       $searchActionName = "SPFoldersSearch_Preview"
       # List the folders for the SharePoint or OneDrive for Business Site
@@ -173,31 +173,31 @@ Pour afficher la liste des dossiers de boîte aux lettres ou documentlink de sit
           Write-Host "No folders were found for $siteUrl"
       }
       Remove-ComplianceSearch $searchName -Confirm:$false -ErrorAction 'SilentlyContinue'
-  }
-  else
-  {
+   }
+   else
+   {
       Write-Error "Couldn't recognize $addressOrSite as an email address or a site URL"
-  }
-  ```
+   }
+   ```
 
 2. Sur votre ordinateur local, ouvrez Windows PowerShell et accédez au dossier où vous avez enregistré le script.
     
 3. Exécutez le script ; par exemple :
     
-      ```powershell
-      .\GetFolderSearchParameters.ps1
-      ```
+   ```powershell
+   .\GetFolderSearchParameters.ps1
+   ```
 
 4. Entrez les informations que le script vous demande.
     
-    Le script affiche la liste des dossiers de boîte aux lettres ou des dossiers de site pour l’utilisateur spécifié. Laissez cette fenêtre ouverte afin de pouvoir copier un ID de dossier ou un nom documentlink et collez-le dans une requête de recherche à l’étape 2.
+    Le script affiche la liste des dossiers de boîte aux lettres ou des dossiers de site pour l’utilisateur spécifié. Laissez cette fenêtre ouverte pour pouvoir copier un ID de dossier ou un nom documentlink et collez-le dans une requête de recherche à l’étape 2.
     
     > [!TIP]
-    > Au lieu d’afficher une liste de dossiers sur l’écran de l’ordinateur, vous pouvez rediriger la sortie du script vers un fichier texte. Ce fichier sera enregistré dans le dossier où se trouve le script. Par exemple, pour rediriger la sortie du script vers un fichier texte, exécutez la commande suivante à l’étape 3 : `.\GetFolderSearchParameters.ps1 > StacigFolderIds.txt` vous pouvez ensuite copier un ID de dossier ou documentlink à partir du fichier à utiliser dans une requête de recherche.
+    > Au lieu d’afficher une liste de dossiers sur l’écran de l’ordinateur, vous pouvez rediriger la sortie du script vers un fichier texte. Ce fichier sera enregistré dans le dossier où se trouve le script. Par exemple, pour rediriger la sortie du script vers un fichier texte, exécutez la commande suivante à l’étape 3 :  `.\GetFolderSearchParameters.ps1 > StacigFolderIds.txt` vous pouvez ensuite copier un ID de dossier ou documentlink à partir du fichier à utiliser dans une requête de recherche.
   
 ### <a name="script-output-for-mailbox-folders"></a>Sortie du script pour les dossiers de boîte aux lettres
 
-Si vous obtenez des ID de dossier de boîte aux lettres, le script se connecte à Exchange Online à l’aide de PowerShell à distance, exécute la cmdlet **Get-MailboxFolderStatisics** , puis affiche la liste des dossiers de la boîte aux lettres spécifiée. Pour chaque dossier de la boîte aux lettres, le script affiche le nom du dossier dans la colonne **folderPath** et l’ID de dossier dans la colonne **FolderQuery** . En outre, le script ajoute le préfixe **FolderId** (qui est le nom de la propriété Mailbox) à l’ID du dossier. Étant donné que la propriété **FolderId** est une propriété pouvant faire l’objet d’une recherche, vous utiliserez `folderid:<folderid>` dans une requête de recherche à l’étape 2 pour rechercher ce dossier. Le script affiche un maximum de 100 dossiers de boîte aux lettres.
+Si vous obtenez des ID de dossier de boîte aux lettres, le script se connecte à Exchange Online à l’aide de PowerShell à distance, exécute la cmdlet **Get-MailboxFolderStatisics** , puis affiche la liste des dossiers de la boîte aux lettres spécifiée. Pour chaque dossier de la boîte aux lettres, le script affiche le nom du dossier dans la colonne **folderPath** et l’ID de dossier dans la colonne **FolderQuery** . En outre, le script ajoute le préfixe **FolderId** (qui est le nom de la propriété Mailbox) à l’ID du dossier. Étant donné que la propriété **FolderId** est une propriété pouvant faire l’objet d’une recherche, vous utiliserez  `folderid:<folderid>` dans une requête de recherche à l’étape 2 pour rechercher ce dossier. Le script affiche un maximum de 100 dossiers de boîte aux lettres.
 
 > [!IMPORTANT]
 > Le script de cet article inclut une logique de codage qui convertit les valeurs d’ID de dossier de 64 caractères renvoyées par **Get-MailboxFolderStatistics** au même format de 48 caractères que celui indexé pour la recherche. Si vous exécutez simplement la cmdlet **Get-MailboxFolderStatistics** dans PowerShell pour obtenir un ID de dossier (au lieu d’exécuter le script de cet article), une requête de recherche qui utilise cette valeur d’ID de dossier échouera. Vous devez exécuter le script pour obtenir les ID de dossier correctement mis en forme qui peuvent être utilisés dans une recherche de contenu.
@@ -218,7 +218,7 @@ Voici un exemple de la sortie renvoyée par le script pour les dossiers de site.
   
 ## <a name="step-2-use-a-folder-id-or-documentlink-to-perform-a-targeted-collection"></a>Étape 2 : utiliser un ID de dossier ou documentlink pour effectuer une collection ciblée
 
-Une fois que vous avez exécuté le script pour collecter une liste d’ID de dossiers ou de documentlinks pour un utilisateur spécifique, l’étape suivante consiste à accéder au centre de sécurité & conformité et à créer une recherche de contenu pour rechercher un dossier spécifique. Vous utiliserez la `folderid:<folderid>` `documentlink:<path>` paire ou propriété : valeur dans la requête de recherche que vous configurez dans la zone mot-clé de recherche de contenu (ou en tant que valeur du paramètre *ContentMatchQuery* si vous utilisez la cmdlet **New-ComplianceSearch** ). Vous pouvez combiner la `folderid` `documentlink` propriété ou avec d’autres paramètres de recherche ou conditions de recherche. Si vous incluez uniquement `folderid` la `documentlink` propriété ou dans la requête, la recherche renverra tous les éléments situés dans le dossier spécifié. 
+Une fois que vous avez exécuté le script pour collecter une liste d’ID de dossiers ou de documentlinks pour un utilisateur spécifique, l’étape suivante consiste à accéder au centre de sécurité & conformité et à créer une recherche de contenu pour rechercher un dossier spécifique. Vous utiliserez la  `folderid:<folderid>`  `documentlink:<path>` paire ou propriété : valeur dans la requête de recherche que vous configurez dans la zone mot-clé de recherche de contenu (ou en tant que valeur du paramètre  *ContentMatchQuery*  si vous utilisez la cmdlet **New-ComplianceSearch** ). Vous pouvez combiner la  `folderid`  `documentlink` propriété ou avec d’autres paramètres de recherche ou conditions de recherche. Si vous incluez uniquement  `folderid` la  `documentlink` propriété ou dans la requête, la recherche renverra tous les éléments situés dans le dossier spécifié. 
   
 1. Accédez à [https://protection.office.com](https://protection.office.com).
     
@@ -238,7 +238,7 @@ Une fois que vous avez exécuté le script pour collecter une liste d’ID de do
     
 6. Cliquez sur **Suivant**.
     
-7. Dans la zone mot clé de la page **que souhaitez-vous Rechercher** , collez la `folderid:<folderid>` valeur ou `documentlink:<path>` qui a été renvoyée par le script à l’étape 1. 
+7. Dans la zone mot clé de la page **que souhaitez-vous Rechercher** , collez la  `folderid:<folderid>` valeur ou  `documentlink:<path>` qui a été renvoyée par le script à l’étape 1. 
     
     Par exemple, la requête de la capture d’écran suivante recherche tout élément dans le sous-dossier purges du dossier éléments récupérables de l’utilisateur (la valeur de la `folderid` propriété pour le sous-dossier purges est illustrée dans la capture d’écran de l’étape 1) :
     
@@ -248,7 +248,7 @@ Une fois que vous avez exécuté le script pour collecter une liste d’ID de do
   
 ### <a name="examples-of-search-queries-for-targeted-collections"></a>Exemples de requêtes de recherche pour des collections ciblées
 
-Voici quelques exemples d’utilisation des `folderid` Propriétés et `documentlink` dans une requête de recherche pour effectuer une collection ciblée. Notez que les espaces réservés sont utilisés pour économiser de l' `folderid:<folderid>` `documentlink:<path>` espace. 
+Voici quelques exemples d’utilisation des  `folderid` Propriétés et  `documentlink` dans une requête de recherche pour effectuer une collection ciblée. Notez que les espaces réservés sont utilisés pour économiser de l'  `folderid:<folderid>`  `documentlink:<path>` espace. 
   
 - Cet exemple montre comment rechercher trois dossiers de boîte aux lettres différents. Vous pouvez utiliser une syntaxe de requête similaire pour effectuer une recherche dans les dossiers cachés dans le dossier éléments récupérables d’un utilisateur.
     
@@ -282,8 +282,8 @@ Lors de l’utilisation du script de cet article, vous devez tenir compte des po
     
 - Ce script renvoie uniquement les informations de dossier de la boîte aux lettres principale de l’utilisateur. Il ne retourne pas d’informations sur les dossiers dans la boîte aux lettres d’archivage de l’utilisateur.
     
-- Lors de la recherche de dossiers de boîte aux lettres, seul le dossier spécifié (identifié par sa `folderid` propriété) est recherché ; les sous-dossiers ne feront pas l’objet d’une recherche. Pour rechercher des sous-dossiers, vous devez utiliser l’ID de dossier pour le sous-dossier dans lequel vous souhaitez effectuer la recherche. 
+- Lors de la recherche de dossiers de boîte aux lettres, seul le dossier spécifié (identifié par sa  `folderid` propriété) est recherché ; les sous-dossiers ne feront pas l’objet d’une recherche. Pour rechercher des sous-dossiers, vous devez utiliser l’ID de dossier pour le sous-dossier dans lequel vous souhaitez effectuer la recherche. 
     
-- Lors de la recherche de dossiers de site, le dossier (identifié par sa `documentlink` propriété) et tous les sous-dossiers feront l’objet d’une recherche. 
+- Lors de la recherche de dossiers de site, le dossier (identifié par sa  `documentlink` propriété) et tous les sous-dossiers feront l’objet d’une recherche. 
     
 - Lorsque vous exportez les résultats d’une recherche dans laquelle vous avez spécifié la `folderid` propriété uniquement dans la requête de recherche, vous pouvez choisir la première option d’exportation, « tous les éléments, sauf ceux dont le format n’est pas reconnu, sont chiffrés ou n’ont pas été indexés pour d’autres raisons ». Tous les éléments du dossier sont toujours exportés, quel que soit leur état d’indexation, car l’ID de dossier est toujours indexé.

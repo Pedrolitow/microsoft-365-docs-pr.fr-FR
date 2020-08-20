@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: 862cbe93-4268-4ef9-ba79-277545ecf221
 description: Découvrez les différents certificats, technologies et suites de chiffrement TLS utilisés pour le chiffrement dans Office 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: c9bc61a7c7a35d84d5e4ff338927ead98a932d9d
-ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
+ms.openlocfilehash: 68e4b2923d2b250e85efa7fdc50a995db397d670
+ms.sourcegitcommit: 167c05cc6a776f62f0a0c2de5f3ffeb68c4a27ac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46649095"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46814366"
 ---
 # <a name="technical-reference-details-about-encryption"></a>Détails techniques de référence sur le chiffrement
 
@@ -81,10 +81,6 @@ Une suite de chiffrement est un ensemble d’algorithmes de chiffrement utilisé
 |TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA <br/>        |ECDH/128 <br/>|Oui <br/>|AES/128 <br/>|RSA/112 <br/> |
 |TLS_RSA_WITH_AES_256_GCM_SHA384 <br/>           |RSA/112 <br/> |Non <br/> |AES/256 <br/>|RSA/112 <br/> |
 |TLS_RSA_WITH_AES_128_GCM_SHA256 <br/>           |RSA/112 <br/> |Non <br/> |AES/256 <br/>|RSA/112 <br/> |
-|TLS_RSA_WITH_AES_256_CBC_SHA256 <br/>           |RSA/112 <br/> |Non <br/> |AES/256 <br/>|RSA/112 <br/> |
-|TLS_RSA_WITH_AES_128_CBC_SHA256 <br/>           |RSA/112 <br/> |Non <br/> |AES/128 <br/>|RSA/112 <br/> |
-|TLS_RSA_WITH_AES_256_CBC_SHA <br/>              |RSA/112 <br/> |Non <br/> |AES/256 <br/>|RSA/112 <br/> |
-|TLS_RSA_WITH_AES_128_CBC_SHA <br/>              |RSA/112 <br/> |Non <br/> |AES/128 <br/>|RSA/112 <br/> |
 
 Il s’agit des suites de chiffrement suivantes qui prennent toujours en charge les protocoles TLS 1,0 et 1,1 jusqu’à leur date de désapprobation. Pour les environnements GCC High et DoD dont la date de désapprobation était le 15 janvier 2020, et pour les environnements mondiaux et GCC, cette date est le 15 octobre 2020.
 
@@ -94,8 +90,10 @@ Il s’agit des suites de chiffrement suivantes qui prennent toujours en charge 
 |TLS 1.0, 1.1, 1.2  <br/> |TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA  <br/> |ECDH/128  <br/> |Oui  <br/> |RSA/112  <br/> |AES/128  <br/> |
 |TLS 1.0, 1.1, 1.2  <br/> |TLS_RSA_WITH_AES_256_CBC_SHA        <br/> |RSA/112  <br/>  |Non  <br/>  |RSA/112  <br/> |AES/256  <br/> |
 |TLS 1.0, 1.1, 1.2  <br/> |TLS_RSA_WITH_AES_128_CBC_SHA        <br/> |RSA/112  <br/>  |Non  <br/>  |RSA/112  <br/> |AES/128  <br/> |
+|TLS 1.0, 1.1, 1.2  <br/> |TLS_RSA_WITH_AES_256_CBC_SHA256     <br/> |RSA/112  <br/>  |Non   <br/> |RSA/112  <br/> |AES/256  <br/> |
+|TLS 1.0, 1.1, 1.2  <br/> |TLS_RSA_WITH_AES_128_CBC_SHA256     <br/> |RSA/112  <br/>  |Non   <br/> |RSA/112  <br/> |AES/256  <br/> |
    
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Rubriques connexes
 [Suites de chiffrement TLS dans Windows 10 v1903](https://docs.microsoft.com/windows/win32/secauthn/tls-cipher-suites-in-windows-10-v1903)
 
 [Chiffrement dans Office 365](encryption.md)
