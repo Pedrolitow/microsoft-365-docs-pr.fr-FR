@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Vous êtes prêt à mettre en place des stratégies et des étiquettes de rétention pour la gouvernance des données de votre organisation, mais vous ne savez pas par où commencer ? Lisez quelques conseils pratiques pour commencer.
-ms.openlocfilehash: 910d5b64addfeda077a5fd34eb2409a9cac2516d
-ms.sourcegitcommit: b812771805c8b9e92b64deb1928e265e60d80405
+ms.openlocfilehash: 33b2fbd40c19d1f4e2e2ef042eaa2fe21080eec1
+ms.sourcegitcommit: 1780359234abdf081097c8064438d415da92fb85
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/07/2020
-ms.locfileid: "46588172"
+ms.lasthandoff: 08/17/2020
+ms.locfileid: "46778290"
 ---
 # <a name="get-started-with-retention-policies-and-retention-labels"></a>Prise en main des stratégies et des étiquettes de rétention
 
@@ -52,7 +52,7 @@ Pour afficher les options de licence permettant à vos utilisateurs de bénéfic
 
 Les membres de votre équipe de conformité, appelés à créer et gérer des stratégies et des étiquettes de rétention, ont besoin d’autorisations pour accéder au [Centre de conformité Microsoft 365](https://compliance.microsoft.com/). Par défaut, votre administrateur client (administrateur général) a accès à cet emplacement et peut accorder aux responsables de la conformité et à d’autres personnes un accès sans leur donner toutes les autorisations d’un administrateur client. Pour accorder des autorisations à cette administration limitée, nous vous recommandons d'ajouter des utilisateurs au groupe de rôles d’administrateur **Administrateur de la conformité**. Pour obtenir des instructions, veuillez consulter la page [Octroi de l’accès au Centre de sécurité et conformité aux utilisateurs](https://docs.microsoft.com/microsoft-365/security/office-365-security/grant-access-to-the-security-and-compliance-center).
 
-Ces autorisations sont nécessaires uniquement pour créer et appliquer une stratégie de rétention. La personne qui configure la stratégie de rétention n’a pas besoin d’accéder au contenu.
+Ces autorisations ne sont nécessaires que pour créer, configurer et appliquer des politiques de rétention et des étiquettes de rétention. La personne qui configure ces politiques et étiquettes n'a pas besoin d'accéder au contenu.
 
 ## <a name="common-scenarios-for-retention-policies-and-retention-labels"></a>Scénarios courants pour les stratégies et étiquettes de rétention
 
@@ -67,11 +67,12 @@ Utilisez le tableau suivant pour vous aider à faire correspondre vos besoins m�
 |Appliquez automatiquement un groupe d’actions de rétention et de suppression pour les documents et e-mails |[Appliquer automatiquement une étiquette de rétention au contenu](apply-retention-labels-automatically.md)|
 |Démarrez la période de rétention lorsqu’un événement se produit, par exemple :  <br />- Des employés quittent l’organisation <br />- Des contrats expirent <br />- Fin de vie d’un produit| [Débuter la rétention lorsqu’un événement se produit](event-driven-retention.md)|
 |Gérer le cycle de vie de différents types de documents dans SharePoint| [Utiliser les étiquettes de rétention pour gérer le cycle de vie des documents stockés dans SharePoint](auto-apply-retention-labels-scenario.md)|
-|Utilisez une seule solution de gestion des enregistrements pour les documents et les e-mails |[Gestion des enregistrements dans Microsoft 365](records-management.md) |
 |Conformez-vous à la réglementation SEC Rule 17 a-4|[Utiliser Exchange Online et le centre de sécurité et conformité pour se conformer à la réglementation SEC Rule 17 a-4](use-exchange-online-to-comply-with-sec-rule-17a-4.md) |
 |Vérifiez que le contenu est révisé et approuvé avant sa suppression à la fin de sa période de rétention|[Révisions avant destruction](disposition.md#disposition-reviews) |
-|Obtenez une preuve de destruction du contenu à la fin de sa période de rétention.|[Destruction des enregistrements](disposition.md#disposition-of-records) |
 | Surveiller comment et où les étiquettes de rétention sont appliquées | [Surveillance des étiquettes de rétention](retention.md#monitoring-retention-labels) |
+|Utiliser une solution unique de gestion des documents et des e-mails |[En savoir plus sur la gestion des enregistrements](records-management.md) |
+
+Si vous utilisez des étiquettes de rétention pour la gestion des enregistrements, il existe d'autres scénarios qui sont propres aux étiquettes de rétention qui marquent le contenu comme un enregistrement. Voir [ Scénarios communs pour la gestion des enregistrements](get-started-with-records-management.md#common-scenarios-for-records-management).
 
 ## <a name="end-user-documentation-for-retention-labels"></a>Documentation de l’utilisateur final sur les étiquettes de rétention
 
