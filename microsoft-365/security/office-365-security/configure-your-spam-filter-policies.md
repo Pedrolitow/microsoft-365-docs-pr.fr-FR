@@ -16,12 +16,12 @@ ms.assetid: 316544cb-db1d-4c25-a5b9-c73bbcf53047
 ms.collection:
 - M365-security-compliance
 description: Les administrateurs peuvent découvrir comment afficher, créer, modifier et supprimer des stratégies anti-courrier indésirable dans Exchange Online Protection (EOP) autonome.
-ms.openlocfilehash: fea1ae4a43ee3002c49bd6511a55a3d490723fc2
-ms.sourcegitcommit: fa8e488936a36e4b56e1252cb4061b5bd6c0eafc
+ms.openlocfilehash: 21e2142eb62c25a7301e2ea5f9160ef6d6ef7947
+ms.sourcegitcommit: 5c16d270c7651c2080a5043d273d979a6fcc75c6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "46656814"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46804219"
 ---
 # <a name="configure-anti-spam-policies-in-eop"></a>Configuration de stratégies de blocage du courrier indésirable dans Exchange Online Protection
 
@@ -31,39 +31,24 @@ Les administrateurs peuvent afficher, modifier et configurer (mais pas supprimer
 
 Vous pouvez configurer des stratégies anti-courrier indésirable dans le Centre de sécurité et de conformité ou dans PowerShell (Exchange Online PowerShell pour les organisations Microsoft 365 sans boîtes aux lettres dans Exchange Online ; Exchange Online Protection PowerShell autonome pour les organisations sans boîtes aux lettres dans Exchange Online).
 
-## <a name="anti-spam-policies-in-the-security--compliance-center-vs-powershell"></a>Stratégies anti-courrier indésirable dans le Centre de sécurité et de conformité en regard de PowerShell
-
-Les éléments de base d’une stratégie anti-courrier indésirable dans EOP sont les suivants :
+Les éléments de base d’une stratégie anti-courrier indésirable sont les suivants :
 
 - **La stratégie de filtrage du courrier indésirable**: spécifie les actions de filtrage du courrier indésirable et les options de notification.
-
 - **Une règle de filtrage de courrier indésirable**: spécifie la priorité et les filtres de destinataire (auxquels s’applique la stratégie) pour une stratégie de filtrage de courrier indésirable.
 
 La différence entre ces deux éléments n’est pas évidente lorsque vous gérez des stratégies contre le courrier indésirable dans le Centre de sécurité et conformité :
 
-- Lorsque vous créez une stratégie contre le courrier indésirable dans le Centre de sécurité et de conformité, vous créez une règle de filtrage du courrier indésirable et la stratégie de filtrage de courrier indésirable associée en utilisant le même nom pour les deux.
+- Lorsque vous créez une stratégie contre le courrier indésirable, vous créez une règle de filtrage du courrier indésirable et la stratégie de filtrage de courrier indésirable associée en utilisant le même nom pour les deux.
+- Lorsque vous modifiez une stratégie contre le courrier indésirable, les paramètres associés au nom, à la priorité, activée ou désactivée, et aux filtres de destinataire modifient réellement la règle de filtrage de courrier indésirable. Tous les autres paramètres modifient la stratégie de filtrage du courrier indésirable associée.
+- Lorsque vous supprimez une stratégie anti-courrier indésirable, la règle de filtrage du courrier indésirable et la stratégie de filtrage du courrier indésirable correspondante sont supprimées.
 
-- Lorsque vous modifiez une stratégie contre le courrier indésirable dans le Centre de sécurité et de conformité, les paramètres associés au nom, à la priorité, activée ou désactivée, et aux filtres de destinataire modifient réellement la règle de filtrage de courrier indésirable. Tous les autres paramètres modifient la stratégie de filtrage du courrier indésirable associée.
-
-- Lorsque vous supprimez une stratégie anti-courrier indésirable dans le Centre de conformité & sécurité, la règle de filtrage du courrier indésirable et la stratégie de filtrage du courrier indésirable correspondante sont supprimées.
-
-Dans Exchange Online PowerShell ou Exchange Online Protection PowerShell autonome, la différence entre les stratégies de filtrage du courrier indésirable et les règles de filtrage du courrier indésirable est évidente. Vous pouvez gérer les stratégies de filtrage du courrier indésirable à l’aide des applets de commande **\*-HostedContentFilterPolicy** et gérer les règles de filtrage du courrier indésirable à l’aide des applets de commande **\*-HostedContentFilterRule**.
-
-- Dans PowerShell, commencez par créer la stratégie de filtrage du courrier indésirable, puis créez la règle de filtrage de courrier indésirable qui détermine la stratégie à laquelle s’applique à la règle.
-
-- Dans PowerShell, modifiez séparément les paramètres de la stratégie de filtrage de courrier indésirable et la règle de filtrage de courrier indésirable.
-
-- Lorsque vous supprimez une stratégie de filtrage de courrier indésirable de PowerShell, la règle de filtrage de courrier indésirable correspondante n’est pas automatiquement supprimée, et inversement.
-
-### <a name="default-anti-spam-policy"></a>Stratégie anti-courrier indésirable par défaut
+Dans Exchange Online PowerShell ou EOP PowerShell autonome, vous gérez la stratégie et la règle séparément. Pour plus d’information, consultez la section [Utiliser Exchange Online PowerShell ou Exchange Online Protection PowerShell autonome pour configurer les stratégies anti-courrier indésirable](#use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-anti-spam-policies) plus loin dans cette rubrique.
 
 Chaque organisation dispose d’une stratégie intégrée contre le courrier indésirable nommée Par défaut, qui contient ces propriétés :
 
-- La stratégie de filtrage de courrier indésirable nommée Par défaut est appliquée à tous les destinataires dans l’organisation, même s’il n’existe aucune règle de filtrage de courrier indésirable (filtres de destinataire) associée à la stratégie.
-
-- La stratégie nommée Par défaut possède la valeur de priorité personnalisée **Plus faible** que vous ne pouvez pas modifier (la stratégie est toujours appliquée en dernier). Les stratégies personnalisées que vous créez ont toujours une priorité plus élevée que la stratégie nommée Par défaut.
-
-- La stratégie nommée Par défaut est la stratégie par défaut (la propriété **IsDefault** possède la valeur`True`) et vous ne pouvez pas supprimer la stratégie par défaut.
+- La stratégie est appliquée à tous les destinataires dans l’organisation, même s’il n’existe aucune règle de filtrage de courrier indésirable (filtres de destinataire) associée à la stratégie.
+- La stratégie a la valeur de priorité personnalisée la **plus petite**, que vous ne pouvez pas modifier (la stratégie est toujours appliquée en dernier). Les stratégies personnalisées que vous créez ont toujours une priorité plus élevée.
+- La stratégie est la stratégie par défaut (la propriété **IsDefault** possède la valeur`True`) et vous ne pouvez pas supprimer la stratégie par défaut.
 
 Pour améliorer l’efficacité du filtrage du courrier indésirable, vous pouvez créer des stratégies anti-courrier indésirable personnalisées, avec des paramètres plus stricts appliqués à des utilisateurs ou groupes d’utilisateurs spécifiques.
 
@@ -320,7 +305,9 @@ Vous ne pouvez pas désactiver la stratégie anti-courrier indésirable par déf
 
 ### <a name="set-the-priority-of-custom-anti-spam-policies"></a>Définition de la priorité des stratégies anti-courrier indésirable personnalisées
 
-Par défaut, les stratégies anti-courrier indésirable se voient attribuer une priorité basée sur l’ordre dans lequel elles ont été créées (les stratégies les plus récentes sont moins prioritaires que les anciennes). Un numéro de priorité inférieur indique une priorité plus élevée pour la stratégie (la valeur 0 est la plus élevée) et les stratégies sont traitées dans l’ordre de priorité (les stratégies de priorité supérieure sont traitées avant les stratégies de priorité inférieure). Deux stratégies ne peuvent pas avoir la même priorité.
+Par défaut, les stratégies anti-courrier indésirable se voient attribuer une priorité basée sur l’ordre dans lequel elles ont été créées (les stratégies les plus récentes sont moins prioritaires que les anciennes). Un numéro de priorité inférieur indique une priorité plus élevée pour la stratégie (la valeur 0 est la plus élevée) et les stratégies sont traitées dans l’ordre de priorité (les stratégies de priorité supérieure sont traitées avant les stratégies de priorité inférieure). Aucune stratégie ne peut avoir la même priorité, et le traitement de stratégie s’arrête une fois la première stratégie appliquée.
+
+Pour plus d’informations sur l’ordre de priorité et l’évaluation et l’application de plusieurs stratégies, consultez [Ordre et la priorité de la protection de la messagerie](how-policies-and-protections-are-combined.md).
 
 Les stratégies anti-courrier indésirable personnalisées s’affichent dans l’ordre dans lequel elles sont traitées (la première stratégie possède la valeur**Priorité** 0). La stratégie anti-courrier indésirable par défaut nommée **Stratégie de filtrage anti-courrier indésirable par défaut** contient la valeur priorité **la plus faible**, et vous ne pouvez pas la modifier.
 
@@ -383,6 +370,14 @@ Vous ne pouvez pas supprimer la stratégie par défaut.
 
 ## <a name="use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-anti-spam-policies"></a>Utiliser Exchange Online PowerShell ou Exchange Online Protection PowerShell autonome pour configurer les stratégies anti-courrier indésirable
 
+Comme décrit précédemment, une stratégie anti-courrier indésirable consiste en une stratégie de filtrage du courrier indésirable et une règle de filtrage anti-courrier indésirable.
+
+Dans Exchange Online PowerShell ou Exchange Online Protection PowerShell autonome, la différence entre les stratégies de filtrage du courrier indésirable et les règles de filtrage du courrier indésirable est évidente. Vous pouvez gérer les stratégies de filtrage du courrier indésirable à l’aide des applets de commande **\*-HostedContentFilterPolicy** et gérer les règles de filtrage du courrier indésirable à l’aide des applets de commande **\*-HostedContentFilterRule**.
+
+- Dans PowerShell, commencez par créer la stratégie de filtrage du courrier indésirable, puis créez la règle de filtrage de courrier indésirable qui détermine la stratégie à laquelle s’applique à la règle.
+- Dans PowerShell, modifiez séparément les paramètres de la stratégie de filtrage de courrier indésirable et la règle de filtrage de courrier indésirable.
+- Lorsque vous supprimez une stratégie de filtrage de courrier indésirable de PowerShell, la règle de filtrage de courrier indésirable correspondante n’est pas automatiquement supprimée, et inversement.
+
 Les paramètres de stratégie anti-courrier indésirable suivants sont disponibles uniquement dans PowerShell :
 
 - Le paramètre_MarkAsSpamBulkMail_ est `On` par défaut. Les effets de ce paramètre ont été expliqués dans la section [Utiliser le centre de sécurité & conformité pour créer des stratégies anti-courrier indésirable](#use-the-security--compliance-center-to-create-anti-spam-policies) plus haut dans cette rubrique.
@@ -398,7 +393,6 @@ Les paramètres de stratégie anti-courrier indésirable suivants sont disponibl
 La création d’une stratégie anti-courrier indésirable dans PowerShell est un processus en deux étapes :
 
 1. Créez la stratégie de filtrage du courrier indésirable.
-
 2. Créez la règle de filtrage du courrier indésirable qui spécifie la stratégie de filtrage du courrier indésirable à laquelle la règle s’applique.
 
  **Remarques** :
@@ -408,7 +402,6 @@ La création d’une stratégie anti-courrier indésirable dans PowerShell est u
 - Vous pouvez configurer les paramètres suivants sur les nouvelles stratégies de filtrage anti-courrier indésirable dans PowerShell qui ne sont pas disponibles dans le Centre de sécurité & de conformité tant que vous n’avez pas créé la stratégie :
 
   - Créez la nouvelle stratégie en tant que désactivée (_Activé_ `$false` sur l’applet de commande **New-HostedContentFilterRule**).
-
   - Définissez la priorité de la stratégie lors de la création (_Priorité_ _\<Number\>_) sur l’applet de commande **New-HostedContentFilterRule**).
 
 - Une nouvelle stratégie de filtrage de courrier indésirable que vous créez dans PowerShell n’est pas visible dans le Centre de conformité & de sécurité tant que vous n’avez pas affecté la stratégie à une règle de filtrage de courrier indésirable.
