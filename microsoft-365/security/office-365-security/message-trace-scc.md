@@ -6,19 +6,19 @@ ms.author: chrisda
 author: chrisda
 manager: dansimp
 audience: ITPro
-ms.topic: article
+ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 3e64f99d-ac33-4aba-91c5-9cb4ca476803
 ms.custom:
 - seo-marvel-apr2020
 description: Les administrateurs peuvent utiliser le suivi des messages dans le centre de sécurité & conformité afin de déterminer ce qui s’est passé aux messages.
-ms.openlocfilehash: 7c0b87b1bb882714692a04b857bfc054305dee8c
-ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
+ms.openlocfilehash: c6e1f8f9280c84ab6ff6a1572d902ed1d4d4caa3
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46653640"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46827050"
 ---
 # <a name="message-trace-in-the-security--compliance-center"></a>Suivi des messages dans le centre de conformité et de sécurité
 
@@ -369,7 +369,7 @@ Une valeur de **custom_data** commençant par provient `S:AMA` de l’agent de f
 
 |Valeur|Description|
 |---|---|
-|`AMA=SUM|v=1|` ou `AMA=EV|v=1`|Un programme malveillant a été détecté dans le message. `SUM`indique que le programme malveillant a pu être détecté par n’importe quel nombre de moteurs. `EV`indique que le programme malveillant a été détecté par un moteur spécifique. Lorsqu'un programme malveillant est détecté par un moteur, les actions suivantes se produisent.|
+|`AMA=SUM|v=1|` ou `AMA=EV|v=1`|Un programme malveillant a été détecté dans le message. `SUM` indique que le programme malveillant a pu être détecté par n’importe quel nombre de moteurs. `EV` indique que le programme malveillant a été détecté par un moteur spécifique. Lorsqu'un programme malveillant est détecté par un moteur, les actions suivantes se produisent.|
 |`Action=r`|Le message a été remplacé.|
 |`Action=p`|Le message a été ignoré.|
 |`Action=d`|Le message a été différé.|
@@ -398,7 +398,7 @@ Une valeur de **custom_data** commençant par provient `S:TRA` de l’agent de r
 |`ETR|ruleId=<guid>`|ID de la règle qui s'applique.|
 |`St=<datetime>`|Date et heure UTC de la correspondance de la règle.|
 |`Action=<ActionDefinition>`|Action appliquée. Pour obtenir la liste des actions disponibles, consultez la rubrique [mail Flow Rule actions in Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions).|
-|`Mode=<Mode>`|Mode de la règle. Les valeurs valides sont les suivantes : <br/>* **Appliquer**: toutes les actions de la règle seront appliquées. <br/>* **Test avec conseils de stratégie :**: toutes les actions de Conseil de stratégie seront envoyées, mais les autres actions d’application ne seront pas traitées. <br/>* **Test sans conseils de stratégie**: les actions seront consignées dans un fichier journal, mais les expéditeurs ne recevront aucune notification et les actions d’application ne seront pas effectuées.|
+|`Mode=<Mode>`|Mode de la règle. Les valeurs valides sont les suivantes :<ul><li>**Appliquer**: toutes les actions de la règle seront appliquées.</li><li>**Test avec conseils de stratégie :**: toutes les actions de Conseil de stratégie seront envoyées, mais les autres actions d’application ne seront pas traitées.</li><li>**Test sans conseils de stratégie**: les actions seront consignées dans un fichier journal, mais les expéditeurs ne recevront aucune notification et les actions d’application ne seront pas effectuées.</li></ul>|
 |
 
 Un exemple **custom_data** valeur pour les messages qui correspondent aux conditions d’une règle de flux de messagerie se présente comme suit :

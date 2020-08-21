@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: 1272bad0-4bd4-4796-8005-67d6fb3afc5a
 description: Pour en savoir plus sur les domaines, trouvez des réponses à vos questions fréquemment posées.
-ms.openlocfilehash: bb949dbd4e32bb62f10dfd0323df70697fdc5404
-ms.sourcegitcommit: 5c16d270c7651c2080a5043d273d979a6fcc75c6
+ms.openlocfilehash: fe602c45059be1b273b7ebe3a11cd91adf89a479
+ms.sourcegitcommit: 260bbb93bbda62db9e88c021ccccfa75ac39a32e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46804195"
+ms.lasthandoff: 08/21/2020
+ms.locfileid: "46845843"
 ---
 # <a name="domains-faq"></a>Forum aux questions sur les domaines
 
@@ -52,7 +52,7 @@ Contenu de cet article
 - [Que se passe-t-il si mon fournisseur DNS ne prend pas en charge certains types d’enregistrements ?](#what-happens-if-my-dns-provider-doesnt-support-certain-record-types)
 - [Comment définir ou modifier le domaine par défaut dans Microsoft 365 ?](#how-do-i-set-or-change-the-default-domain-in-microsoft-365)
 - [Puis-je ajouter des sous-domaines personnalisés ou plusieurs domaines à Microsoft 365 ?](#can-i-add-custom-subdomains-or-multiple-domains-to-microsoft-365)
-- [Comment puis-je transférer un domaine de Microsoft 365 vers un autre hôte ?]
+- [Comment puis-je transférer un domaine de Microsoft 365 vers un autre hôte ?](#how-do-i-transfer-a-domain-from-microsoft-365-to-another-host)
 - [Pourquoi ai-je un domaine « onmicrosoft.com » ?](#why-do-i-have-an-onmicrosoftcom-domain)
 - [Pourquoi ai-je un domaine « onmicrosoft.de » ?](#why-do-i-have-an-onmicrosoftde-domain)
 - [Comment puis-je vérifier mon statut de l’organisme ou de l’éducation ?](#how-do-i-verify-my-nonprofit-or-education-status)

@@ -6,7 +6,7 @@ ms.author: chrisda
 author: chrisda
 manager: dansimp
 audience: ITPro
-ms.topic: overview
+ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
@@ -17,23 +17,21 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: Découvrez comment utiliser un simulateur d’attaque pour exécuter des attaques de hameçonnage et de mot de passe simulées dans votre organisation Microsoft 365 E5 ou ATP (plan 2).
-ms.openlocfilehash: 6aa1d2027915caeffe2c20ba8f75f3658c336dbe
-ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
+description: Les administrateurs peuvent apprendre à utiliser un simulateur d’attaque pour exécuter des attaques de hameçonnage et de mot de passe simulées dans les organisations plan 2 de Microsoft 365 E5 ou ATP.
+ms.openlocfilehash: 017376d8002811398fe3ce2d94f7c207cd718a78
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46653220"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46825832"
 ---
 # <a name="attack-simulator-in-atp"></a>Simulateur d’attaques dans ATP
 
-**Synthèse** Si vous êtes administrateur général ou administrateur de sécurité et que votre organisation est équipée du plan 2 de Office 365 ATP, qui inclut [l’examen des menaces et des fonctionnalités de réaction](office-365-ti.md), vous pouvez utiliser le simulateur d’attaque pour exécuter des scénarios d’attaques réalistes au sein de votre organisation. Cela peut vous aider à identifier les utilisateurs vulnérables avant qu’une véritable attaque n’ait un impact sur votre chiffre d’affaires. Pour en savoir plus, lisez cet article.
+Si votre organisation dispose d’Office 365 Advanced Threat Protection (ATP) plan 2, qui inclut des [fonctionnalités d’enquête et de réponse aux menaces](office-365-ti.md), vous pouvez utiliser un simulateur d’attaque dans le centre de sécurité & conformité pour exécuter des scénarios d’attaque réaliste dans votre organisation. Ces attaques simulées peuvent vous aider à identifier et à trouver des utilisateurs vulnérables avant qu’une véritable attaque n’influe sur votre ligne de base. Pour en savoir plus, lisez cet article.
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu'il faut savoir avant de commencer
 
-- Pour ouvrir le Centre de conformité et sécurité, consultez <https://protection.office.com/>. Le Simulateur d’attaques est disponible dans **Gestion des menaces** \> **Simulateur d’attaques**.
-
-  ![Gestion des menaces : simulateur d’attaques](../../media/ThreatMgmt-AttackSimulator.png)
+- Pour ouvrir le Centre de conformité et sécurité, consultez <https://protection.office.com/>. Le Simulateur d’attaques est disponible dans **Gestion des menaces** \> **Simulateur d’attaques**. Accédez directement à simulateur d’attaque, ouvrez <https://protection.office.com/attacksimulator> .
 
 - Pour des informations supplémentaires sur la disponibilité du Simulateur d’attaques dans les différents abonnements Microsoft 365, consultez la [Description du service Office 365 ATP](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
 
@@ -41,23 +39,19 @@ ms.locfileid: "46653220"
 
 - Votre compte doit être configuré pour l’authentification multifacteur (MFA) afin que vous puissiez créer et gérer des campagnes dans le Simulateur d’attaques. Pour consulter des instructions, voir [Configurer Multi-factor Authentification (MFA)](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/set-up-multi-factor-authentication).
 
-Pour qu’une attaque soit lancée avec succès, assurez-vous que le compte que vous utilisez pour exécuter des simulations d’attaques utilise l’authentification multifacteur. De plus, vous devez être administrateur général ou administrateur de sécurité. (Pour en savoir plus sur les rôles et les autorisations, voir [Autorisations dans le Centre de sécurité et conformité](permissions-in-the-security-and-compliance-center.md).)
-
 - Les campagnes d’hameçonnage collectent et traitent des événements sur une durée de 30 jours. L’historique des données de la campagne est disponible pendant un maximum de 90 jours après le lancement de la campagne.
 
 - Il n’existe pas d’applet de commande PowerShell correspondante pour le Simulateur d’attaques.
 
 ## <a name="spear-phishing-campaigns"></a>Campagnes de Harponnage
 
-Le *Hameçonnage* est un terme générique qui décrit les attaques par courrier électronique tentant d’accéder à des informations sensibles par le biais de messages qui paraissent provenir d’expéditeurs légitimes ou approuvés. Le *Harponnage* est une attaque ciblée par hameçonnage qui utilise un contenu très concentré et personnalisé conçu spécifiquement pour des destinataires particuliers (généralement, après reconnaissance des destinataires par l’attaquant).
-
-- Vous êtes administrateur global ou administrateur de sécurité.
+Le *Hameçonnage* est un terme générique qui décrit les attaques par courrier électronique tentant d’accéder à des informations sensibles par le biais de messages qui paraissent provenir d’expéditeurs légitimes ou approuvés. Le *Spear Phishing* est une attaque par hameçonnage ciblée qui utilise du contenu ciblé et personnalisé qui est spécifiquement adapté aux destinataires ciblés (en général, après la reconnaissance des destinataires par l’agresseur).
 
 Dans le Simulateur d’attaques, deux types différents de campagnes de harponnage sont disponibles :
 
-- [L’authentification multifacteur/accès conditionnel](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/set-up-multi-factor-authentication) est activée, au minimum pour le compte d’administrateur général et pour les administrateurs de sécurité qui utiliseront le simulateur d’attaques. (Idéalement, l’authentification multifacteur/accès conditionnel est activée pour tous les utilisateurs de votre organisation.)
+- **Spear Phishing (informations d’identification)**: l’attaque tente de convaincre les destinataires de cliquer sur une URL dans le message. S’ils cliquent sur le lien, ils sont invités à entrer leurs informations d’identification. Si c’est le cas, ils sont dirigés vers l’un des emplacements suivants :
 
-  - Une page par défaut expliquant qu’il s’agit d’un test et donnant des conseils pour reconnaître les messages d’hameçonnage.
+  - Page par défaut qui explique qu’il s’agissait d’un simple test et fournit des conseils pour la reconnaissance des messages de hameçonnage.
 
     ![Ce que l’utilisateur voit s’il clique sur le lien de hameçonnage, puis entre ses informations d’identification](../../media/attack-simulator-phishing-result.png)
 

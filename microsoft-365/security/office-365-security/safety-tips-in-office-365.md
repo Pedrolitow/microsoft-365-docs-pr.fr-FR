@@ -7,7 +7,7 @@ author: chrisda
 manager: dansimp
 ms.date: ''
 audience: Admin
-ms.topic: overview
+ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Découvrez comment EOP et Office 365 vous protègent contre le courrier indésirable, le hameçonnage et les programmes malveillants en ajoutant un Conseil de sécurité en haut des e-mails.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6fb461619aaacafad86bb3c53731526fd00047a4
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: e13e9cce325dfd3f8312c1d68459ab3c423c1fbb
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44209150"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46827480"
 ---
 # <a name="safety-tips-in-email-messages"></a>Conseils de sécurité dans les messages électroniques
 
@@ -58,7 +58,6 @@ Le Conseil de sécurité, un message codé en couleur, vous avertit des messages
     Nous vous indiquerons également quand nous avons ignoré la vérification d’un message, car il provient d’un expéditeur que vous approuvez sur votre liste des expéditeurs approuvés ou si une règle de flux de messagerie existe pour contourner le filtrage.
 
     Le Conseil de sécurité gris s’affiche également lorsque les images externes sont bloquées, c’est-à-dire que le message se trouve dans votre boîte de réception et qu’il ne semble pas être un courrier indésirable, mais il contient des images externes que vous n’avez pas choisi de télécharger.
-    
 
 ## <a name="working-with-safety-tips"></a>Utilisation des conseils de sécurité
 

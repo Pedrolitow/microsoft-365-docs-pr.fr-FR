@@ -7,18 +7,18 @@ author: chrisda
 manager: dansimp
 ms.date: ''
 audience: ITPro
-ms.topic: article
+ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 4bfaf2ab-e633-4227-8bde-effefb41a3db
 description: Découvrez comment gérer les utilisateurs de messagerie dans Exchange Online Protection (EOP), notamment à l’aide de la synchronisation d’annuaires, du centre d’administration Exchange et de PowerShell pour gérer les utilisateurs.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d82170499bcfa6465164ca2644eea43c2558ad18
-ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
+ms.openlocfilehash: 64b7effadd96b6dc025677139c4303acd538dadb
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44616833"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46827074"
 ---
 # <a name="manage-mail-users-in-standalone-eop"></a>Gérer les utilisateurs de courrier dans une version autonome de EOP
 
@@ -107,13 +107,13 @@ L’onglet **informations** sur le contact permet d’afficher ou de modifier le
 - **Pays**
 - **Téléphone professionnel**
 - **Téléphone portable **
-- **Télécopie**
+- **Fax**
 - **Autres options**
 
   - **Bureau**
   - **Téléphone personnel **
   - **Page Web**
-  - **Remarques**
+  - **Notes**
 
 #### <a name="organization"></a>Organisation
 
@@ -162,7 +162,7 @@ New-EOPMailUser -Name "<UniqueName>" -MicrosoftOnlineServicesID <Account> -Passw
 **Remarques** :
 
 - Le paramètre _Name_ est obligatoire, sa longueur maximale est de 64 caractères et doit être unique. Si vous n’utilisez pas le paramètre _DisplayName_, la valeur du paramètre _Name_ est utilisée pour le nom complet.
-- Si vous n’utilisez pas le paramètre _alias_ , le côté gauche du paramètre _MicrosoftOnlneServicesID_ est utilisé pour l’alias.
+- Si vous n’utilisez pas le paramètre _alias_ , le côté gauche du paramètre _MicrosoftOnlineServicesID_ est utilisé pour l’alias.
 - Si vous n’utilisez pas le paramètre _ExternalEmailAddress_ , la valeur _MicrosoftOnlineServicesID_ est utilisée pour l’adresse de messagerie externe.
 
 Cet exemple crée un utilisateur de messagerie avec les paramètres suivants :
@@ -185,7 +185,7 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, co
 Pour modifier des utilisateurs de messagerie existants dans une version autonome d’EOP PowerShell, utilisez la syntaxe suivante :
 
 ```powershell
-Set-EOPMailUser -Identity <MailUserIdentity> [-Alias <Text>] [-DisplayName <Textg>] [-EmailAddresses <ProxyAddressCollection>] [-MicrosoftOnlineServicesID <SmtpAddress>]
+Set-EOPMailUser -Identity <MailUserIdentity> [-Alias <Text>] [-DisplayName <Text>] [-EmailAddresses <ProxyAddressCollection>] [-MicrosoftOnlineServicesID <SmtpAddress>]
 ```
 
 ```powershell

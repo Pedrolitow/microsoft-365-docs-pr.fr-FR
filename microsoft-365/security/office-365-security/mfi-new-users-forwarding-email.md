@@ -1,22 +1,22 @@
 ---
-title: Nouveaux utilisateurs transférant des courriers électroniques
+title: Informations sur les courriers électroniques de nouveaux utilisateurs
 f1.keywords:
 - NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.service: exchange-online
 localization_priority: Normal
 ms.assetid: ''
 description: Les administrateurs peuvent apprendre à utiliser les nouveaux utilisateurs pour transférer des courriers électroniques dans le centre de sécurité & conformité afin de déterminer quand les utilisateurs de leur organisation acheminent les messages vers de nouveaux domaines.
-ms.openlocfilehash: 73ab6d1c9601ad40d469984b0ba18191a0917941
-ms.sourcegitcommit: c04f1207cfaddac2a9abef38967c17d689756a96
+ms.openlocfilehash: cb2e16d321e181916219e3425c26e59ebe31b866
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "46578375"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46826972"
 ---
 # <a name="new-users-forwarding-email-insight-in-the-security--compliance-center"></a>Les nouveaux utilisateurs transférant des courriers électroniques dans le centre de sécurité & conformité
 
@@ -26,7 +26,7 @@ Les **nouveaux domaines transmis par courrier électronique** vous avertissent l
 
 Cette vue s’affiche uniquement lorsque le problème est détecté et qu’il apparaît sur la page [rapport de transfert](view-mail-flow-reports.md#forwarding-report) .
 
-![Nouveaux utilisateurs transférant des courriers électroniques](../../media/mfi-new-users-forwarding-email.png)
+![Informations sur les courriers électroniques de nouveaux utilisateurs](../../media/mfi-new-users-forwarding-email.png)
 
 Lorsque vous cliquez sur le widget, un menu volant s’affiche pour vous permettre d’obtenir plus de détails sur les messages transférés, y compris un lien vers le [rapport de modifications du transfert](#forwarding-modifications-report) , comme décrit plus loin dans cette rubrique.
 
@@ -58,11 +58,11 @@ Les graphiques suivants sont disponibles dans l’affichage rapport :
 
 - **Afficher les données pour : nouveaux utilisateurs de transfert**:
 
-  ![Nouvel affichage des utilisateurs de transfert dans le rapport des modifications de transfert](../../media/forwarding-modificiations-report-new-forwarding-users.png)
+  ![Nouvel affichage des utilisateurs de transfert dans le rapport des modifications de transfert](../../media/forwarding-modifications-report-new-forwarding-users.png)
 
 - **Afficher les données pour : nouveaux domaines de transfert**:
 
-  ![Nouvelle vue Domains transférées dans le rapport des modifications de transfert](../../media/forwarding-modificiations-report-new-forwarded-domains.png)
+  ![Nouvelle vue Domains transférées dans le rapport des modifications de transfert](../../media/forwarding-modifications-report-new-forwarded-domains.png)
 
 Si vous cliquez sur **filtres** dans un affichage de rapport, vous pouvez spécifier une plage de dates avec **Date de début** et date de **fin**.
 
@@ -104,6 +104,6 @@ Si vous sélectionnez une ligne dans le tableau, une fenêtre volante de **Déta
 
 Pour revenir à l’affichage rapports, cliquez sur **afficher le rapport**.
 
-## <a name="related-topics"></a>Sujets associés
+## <a name="related-topics"></a>Rubriques connexes
 
 Pour plus d’informations sur les autres informations du tableau de bord de flux de messagerie, consultez [la rubrique mail Flow Insights in the Security & Compliance Center](mail-flow-insights-v2.md).

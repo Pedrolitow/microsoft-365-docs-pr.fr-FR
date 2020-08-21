@@ -8,7 +8,7 @@ author: chrisda
 manager: dansimp
 ms.date: ''
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection:
@@ -16,12 +16,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Les administrateurs peuvent en savoir plus sur l’ordre des applications des protections dans Exchange Online Protection (EOP) et la façon dont la valeur de priorité dans les stratégies de protection détermine quelle stratégie est appliquée.
-ms.openlocfilehash: 7775f0a37751289e7f0116575e2f6b2733683b6b
-ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
+ms.openlocfilehash: 9556d2262eb59224357e20027a1f0e63404081f2
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46653676"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46827408"
 ---
 # <a name="order-and-precedence-of-email-protection"></a>Ordre et priorité de la protection de la messagerie
 
@@ -47,7 +47,7 @@ Il existe deux facteurs principaux qui déterminent la stratégie appliquée à 
   |8bits<sup>\*</sup>|Emprunt d’identité d’utilisateur (domaines protégés)|UIMP|[Configurer des stratégies anti-hameçonnage ATP](configure-atp-anti-phishing-policies.md)|
   |
 
-  <sup>\*</sup>Ces fonctionnalités sont disponibles uniquement dans les stratégies anti-hameçonnage ATP.
+  <sup>\*</sup> Ces fonctionnalités sont disponibles uniquement dans les stratégies anti-hameçonnage ATP.
 
 - **Priorité de la stratégie**: pour chaque type de protection (blocage du courrier indésirable, anti-programme malveillant, anti-hameçonnage, etc.), il existe une stratégie par défaut qui s’applique à tous les utilisateurs, mais vous pouvez créer des stratégies personnalisées qui s’appliquent à des utilisateurs spécifiques. Chaque stratégie personnalisée a une valeur de priorité qui détermine l’ordre dans lequel les stratégies sont appliquées. La stratégie par défaut est toujours appliquée en dernier.
 

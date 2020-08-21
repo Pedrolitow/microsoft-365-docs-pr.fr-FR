@@ -7,17 +7,17 @@ author: chrisda
 manager: dansimp
 ms.date: ''
 audience: ITPro
-ms.topic: article
+ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 125834f4-1024-4325-ad5a-d2573cfb005e
 description: Les administrateurs peuvent apprendre à attribuer ou supprimer des autorisations dans le centre d’administration Exchange dans Exchange Online Protection.
-ms.openlocfilehash: 3555d3bd7fa4c53802eb214747735223cccc21e5
-ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
+ms.openlocfilehash: 8d452eb85d59bbe82cc6685d652617bc857c1ddf
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44616513"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46825688"
 ---
 # <a name="manage-role-groups-in-standalone-eop"></a>Gérer les groupes de rôles dans une application EOP autonome
 
@@ -36,7 +36,7 @@ Pour plus d’informations sur les rôles et les groupes de rôles, voir [Permis
 - Pour plus d’informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir [raccourcis clavier pour le centre d’administration Exchange dans Exchange Online](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center).
 
 > [!TIP]
-> Vous rencontrez des difficultés ? Demandez de l’aide dans le forum [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351) .
+> Vous rencontrez des difficultés ? Demandez de l’aide dans le Forum [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351) .
 
 ## <a name="use-the-eac-to-manage-role-groups"></a>Utiliser le centre d’administration Exchange pour gérer les groupes de rôles
 
@@ -62,9 +62,9 @@ Lorsque vous créez un nouveau groupe de rôles, vous pouvez configurer tous les
 
     - **Description**: entrez une description facultative pour le groupe de rôles.
 
-    - **Rôles**: cliquez sur **Ajouter** une ![ icône Ajouter ](../../media/ITPro-EAC-AddIcon.png) ou **supprimer** ![ ITPro-EAC-RemoveIcon. gif ](../../media/ITPro-EAC-RemoveIcon.gif) pour sélectionner ou modifier les rôles attribués au groupe de rôles.
+    - **Rôles**: cliquez sur **Ajouter** une ![ icône Ajouter ](../../media/ITPro-EAC-AddIcon.png) ou **supprimer** ![ITPro-EAC-RemoveIcon.gif](../../media/ITPro-EAC-RemoveIcon.gif) pour sélectionner ou modifier les rôles affectés au groupe de rôles.
 
-    - **Membres**: cliquez sur **Ajouter** une ![ icône Ajouter ](../../media/ITPro-EAC-AddIcon.png) ou **supprimer** ![ ITPro-EAC-RemoveIcon. gif ](../../media/ITPro-EAC-RemoveIcon.gif) pour modifier l’appartenance au groupe de rôles.
+    - **Membres**: cliquez sur **Ajouter** une ![ icône Ajouter ](../../media/ITPro-EAC-AddIcon.png) ou **supprimer** ![ITPro-EAC-RemoveIcon.gif](../../media/ITPro-EAC-RemoveIcon.gif) pour modifier l’appartenance au groupe de rôles.
 
 3. Lorsque vous avez terminé, cliquez sur **Enregistrer** pour créer le groupe de rôles.
 
@@ -86,7 +86,7 @@ Les mêmes options sont disponibles lorsque vous modifiez des groupes de rôles,
 
 1. Dans le centre d’administration Exchange, accédez à rôles d’administrateur des **autorisations** \> **Admin roles**, sélectionnez le groupe de rôles que vous souhaitez modifier, puis cliquez sur **modifier** l' ![ icône d’édition ](../../media/ITPro-EAC-EditIcon.png) .
 
-2. Dans la page des propriétés du groupe de rôles qui s’ouvre, dans la section **memebers** , effectuez l’une des opérations suivantes :
+2. Dans la page des propriétés du groupe de rôles qui s’ouvre, dans la section **membres** , effectuez l’une des opérations suivantes :
 
    - Cliquez sur **Ajouter** une ![ icône Ajouter ](../../media/ITPro-EAC-AddIcon.png) . Dans la page qui s’affiche, recherchez l’utilisateur que Wou souhaite ajouter, puis cliquez sur **Ajouter->**. Sélectionnez utilisateurs, puis cliquez sur **ajouter >** plusieurs fois autant de fois que nécessaire. Lorsque vous avez terminé, cliquez sur **OK**.
 
@@ -147,9 +147,9 @@ Lorsque vous créez un nouveau groupe de rôles, vous pouvez configurer tous les
   New-RoleGroup -Name "Unique Name" -Description "Descriptive text" -Roles <"Role1","Role2"...>
   ```
 
-  - Le paramètre _roles_ spécifie les rôles de gestion à affecter au groupe de rôles à l’aide de la syntaxe suivante `"Role1","Role1",..."RoleN"` . Vous pouvez voir les rôles disponibles à l’aide de la cmdlet **Get-ManagementRole** .
+  - Le paramètre _roles_ spécifie les rôles de gestion à affecter au groupe de rôles à l’aide de la syntaxe suivante `"Role1","Role1",..."RoleN"` . Vous pouvez voir les rôles disponibles à l’aide de l’applet de commande **Get-ManagementRole**.
 
-  - Le paramètre _members_ spécifie les membres du groupe de rôles à l’aide de la syntaxe suivante : `"Member1","Member2",..."MemberN"` . Vous pouvez spécifier des utilisateurs, des groupes de sécurité universels à extension messagerie (USG) ou d’autres groupes de rôles (principaux de sécurité).
+  - Le paramètre _members_ spécifie les membres du groupe de rôles à l’aide de la syntaxe suivante : `"Member1","Member2",..."MemberN"` . Vous pouvez spécifier des utilisateurs, des groupes de sécurité universels à extension messagerie ou d’autres groupes de rôles (entités de sécurité).
 
   Cet exemple crée un groupe de rôles nommé « gestion limitée des destinataires » avec les paramètres suivants :
 
@@ -175,7 +175,7 @@ Lorsque vous créez un nouveau groupe de rôles, vous pouvez configurer tous les
      New-RoleGroup -Name "<Unique Name>" -Roles $RoleGroup.Roles [-Members <Members>]
      ```
 
-     Le paramètre _members_ spécifie les membres du groupe de rôles à l’aide de la syntaxe suivante : `"Member1","Member2",..."MemberN"` . Vous pouvez spécifier des utilisateurs, des groupes de sécurité universels à extension messagerie (USG) ou d’autres groupes de rôles (principaux de sécurité).
+     Le paramètre _members_ spécifie les membres du groupe de rôles à l’aide de la syntaxe suivante : `"Member1","Member2",..."MemberN"` . Vous pouvez spécifier des utilisateurs, des groupes de sécurité universels à extension messagerie ou d’autres groupes de rôles (entités de sécurité).
 
      Cet exemple copie le groupe de rôles gestion de l’organisation dans le nouveau groupe de rôles appelé « gestion limitée de l’organisation ». Les membres du groupe de rôles sont Isabelle, Carter et Lukas.
 

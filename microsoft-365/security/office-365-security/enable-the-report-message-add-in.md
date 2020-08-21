@@ -6,7 +6,7 @@ ms.author: chrisda
 author: chrisda
 manager: dansimp
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
@@ -16,12 +16,12 @@ ms.assetid: 4250c4bc-6102-420b-9e0a-a95064837676
 ms.collection:
 - M365-security-compliance
 description: Découvrez comment activer le complément de message de rapport pour Outlook et Outlook sur le Web, pour des utilisateurs individuels ou l’ensemble de votre organisation.
-ms.openlocfilehash: 2b074d1bd260f5c95d138577e259aee14ec9e8d7
-ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
+ms.openlocfilehash: 45f67e4c88d311254a0d922baed66178c3f672a5
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45430506"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46826636"
 ---
 # <a name="enable-the-report-message-add-in"></a>Activez le complément Signaler un message
 
@@ -40,7 +40,7 @@ Si vous êtes un utilisateur individuel, vous pouvez [activer le complément de 
 
 Si vous êtes un administrateur général ou un administrateur Exchange Online et qu’Exchange est configuré pour utiliser l’authentification OAuth, vous pouvez [activer le complément de message de rapport pour votre organisation](#get-and-enable-the-report-message-add-in-for-your-organization). Le complément de message de rapport est désormais disponible via un [déploiement centralisé](https://docs.microsoft.com/microsoft-365/admin/manage/centralized-deployment-of-add-ins).
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu’il faut savoir avant de commencer
+## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu'il faut savoir avant de commencer
 
 - Le complément de message de rapport fonctionne avec la plupart des abonnements Microsoft 365 et les produits suivants :
 

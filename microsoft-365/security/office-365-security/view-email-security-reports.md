@@ -7,7 +7,7 @@ author: chrisda
 manager: dansimp
 ms.date: ''
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Découvrez comment rechercher et utiliser des rapports de sécurité de messagerie pour votre organisation. Les rapports de sécurité de messagerie sont disponibles dans le centre de sécurité & conformité.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 269e68c1e7f864ba5be84f1dc444a3d7d9c27e55
-ms.sourcegitcommit: c04f1207cfaddac2a9abef38967c17d689756a96
+ms.openlocfilehash: 2b714d9dc4e3ca143d2cb2d7164f8c3c737d1928
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "46578029"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46826504"
 ---
 # <a name="view-email-security-reports-in-the-security--compliance-center"></a>Afficher les rapports de sécurité de courrier dans le centre de sécurité et conformité
 
@@ -274,7 +274,7 @@ Le rapport fournit un nombre agrégé de messages électroniques uniques avec du
 Pour afficher le rapport, ouvrez le [Centre de sécurité & conformité](https://protection.office.com), accédez à **rapports** \> **Dashboard** et sélectionnez **Threat Protection Status**. Pour accéder directement au rapport, ouvrez l’une des URL suivantes :
 
 - Office 365 ATP : <https://protection.office.com/reportv2?id=ATPV2AggregateReport> .
-- EOP<https://protection.office.com/reportv2?id=ATPAggregateLightReport>
+- EOP <https://protection.office.com/reportv2?id=ATPAggregateLightReport>
 
 ![Widget état de la protection contre les menaces dans le tableau de bord rapports](../../media/threat-protection-status-report-widget.png)
 
@@ -455,7 +455,7 @@ Pour plus d’informations, consultez la rubrique [autorisations dans Exchange O
 
 Si vous ne voyez pas de données dans vos rapports, vérifiez que vos stratégies sont correctement configurées. Pour en savoir plus, consultez la rubrique se [protéger contre les menaces](protect-against-threats.md).
 
-## <a name="related-topics"></a>Sujets associés
+## <a name="related-topics"></a>Rubriques connexes
 
 [Protection contre le courrier indésirable et les programmes malveillants dans EOP](anti-spam-and-anti-malware-protection.md)
 

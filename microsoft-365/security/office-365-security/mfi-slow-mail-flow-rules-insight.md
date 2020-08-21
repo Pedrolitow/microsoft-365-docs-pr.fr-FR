@@ -1,5 +1,5 @@
 ---
-title: Réparer le ralentissement des règles de flux de messagerie
+title: Résoudre les règles de flux de messagerie lent
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -7,19 +7,19 @@ author: chrisda
 manager: dansimp
 ms.date: ''
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 37125cdb-715d-42d0-b669-1a8efa140813
 ms.custom:
 - seo-marvel-apr2020
 description: Les administrateurs peuvent apprendre à utiliser le correctif lent les règles de flux de messagerie du centre de sécurité & Compliance Center pour identifier et corriger les règles de flux de messagerie inefficaces ou rompues (également appelées règles de transport) dans leur organisation.
-ms.openlocfilehash: bb1c09c2809260be8086059259a1aeec3f1fb3eb
-ms.sourcegitcommit: c04f1207cfaddac2a9abef38967c17d689756a96
+ms.openlocfilehash: 6319633c47e34d7b62c4f68bfbda7fe298c0deb3
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "46577154"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46826880"
 ---
 # <a name="fix-slow-mail-flow-rules-insight-in-the-security--compliance-center"></a>Réparer le ralentissement des règles de flux de messagerie dans le centre de sécurité & conformité
 
@@ -46,6 +46,6 @@ Lorsque vous cliquez sur **afficher les détails** dans le widget, un lanceur ap
 
 Pour plus d’informations sur les conditions et les exceptions dans les règles de flux de messagerie dans Exchange Online, consultez la rubrique [mail Flow Rule conditions and exceptions (prédicats) in Exchange Online](https://docs.microsoft.com/Exchange/security-and-compliance/mail-flow-rules/conditions-and-exceptions).
 
-## <a name="related-topics"></a>Sujets associés
+## <a name="related-topics"></a>Rubriques connexes
 
 Pour plus d’informations sur les autres informations du tableau de bord de flux de messagerie, consultez [la rubrique mail Flow Insights in the Security & Compliance Center](mail-flow-insights-v2.md).

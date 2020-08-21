@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Les administrateurs peuvent activer la prise en charge de l’étiquette de sensibilité pour les fichiers Word, Excel et PowerPoint dans SharePoint et OneDrive.
-ms.openlocfilehash: acf440d7bc46c51a6c00b10d06619868a09e155d
-ms.sourcegitcommit: 66f1f430b3dcae5f46cb362a32d6fb7da4cff5c1
+ms.openlocfilehash: d049cdd61d2155267f4e55c612885929e27adaaa
+ms.sourcegitcommit: 260bbb93bbda62db9e88c021ccccfa75ac39a32e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "46662242"
+ms.lasthandoff: 08/21/2020
+ms.locfileid: "46845720"
 ---
 # <a name="enable-sensitivity-labels-for-office-files-in-sharepoint-and-onedrive"></a>Activer les étiquettes de confidentialité pour les fichiers Office dans SharePoint et OneDrive
 
@@ -40,7 +40,7 @@ Lorsque vous activez les étiquettes de sensibilité pour les fichiers Office da
 
 - Utilisez Office sur le Web (Word, Excel, PowerPoint) pour ouvrir et modifier les fichiers Office dont les étiquettes de confidentialité appliquent le chiffrement. Les autorisations qui ont été affectées au chiffrement sont appliquées. Avec Word sur le Web, vous pouvez également utiliser l’étiquetage automatique lorsque vous modifiez ces documents.
 
-- Les utilisateurs externes peuvent accéder aux documents étiquetés avec le chiffrement à l’aide de comptes invités. Pour plus d’informations, consultez la rubrique [prise en charge des utilisateurs externes et du contenu étiqueté](sensitivity-labels-office-apps.md#support-for-external-users-and-labeled-content). 
+- Les utilisateurs externes peuvent accéder aux documents étiquetés avec le chiffrement à l’aide de comptes invités. Pour plus d’informations, consultez la rubrique [prise en charge des utilisateurs externes et du contenu étiqueté](sensitivity-labels-office-apps.md#support-for-external-users-and-labeled-content).
 
 - Office 365 eDiscovery prend en charge la recherche de texte intégral pour ces fichiers et les stratégies de protection contre la perte de données (DLP) prennent en charge le contenu de ces fichiers.
 
@@ -50,6 +50,7 @@ Lorsque vous activez les étiquettes de sensibilité pour les fichiers Office da
 > Le comportement de SharePoint ne change pas non plus pour les fichiers existants dans SharePoint qui sont étiquetés avec le chiffrement à l’aide d’une seule clé Azure. Pour que ces fichiers bénéficient des nouvelles fonctionnalités, une fois que vous avez activé les étiquettes de confidentialité pour les fichiers Office dans SharePoint et OneDrive, les fichiers doivent être téléchargés et téléchargés à nouveau, ou modifiés. Par exemple, ils seront renvoyés dans les résultats de recherche et de découverte électronique.
 
 Une fois que vous avez activé les étiquettes de confidentialité pour les fichiers Office dans SharePoint et OneDrive, trois nouveaux [événements d’audit](search-the-audit-log-in-security-and-compliance.md#sensitivity-label-activities) sont disponibles pour la surveillance des étiquettes de confidentialité appliquées aux documents dans SharePoint et onedrive :
+
 - **Étiquette de confidentialité appliquée au fichier**
 - **Étiquette de confidentialité modifiée appliquée au fichier**
 - **Suppression de l'étiquette de confidentialité sur le document**
@@ -60,7 +61,7 @@ Regardez la vidéo suivante (pas de son) pour voir les nouvelles fonctionnalité
 
 Vous avez toujours la possibilité de désactiver les étiquettes de confidentialité pour les fichiers Office dans SharePoint et[OneDrive (à tout moment.](#how-to-disable-sensitivity-labels-for-sharepoint-and-onedrive-opt-out)
 
-Si vous protégez actuellement des documents dans SharePoint à l’aide de la gestion des droits relatifs à l’information (IRM) de SharePoint, veillez à consulter la section gestion des droits relatifs à l' [information (IRM) et les étiquettes de confidentialité](#sharepoint-information-rights-management-irm-and-sensitivity-labels) de SharePoint sur cette page. 
+Si vous protégez actuellement des documents dans SharePoint à l’aide de la gestion des droits relatifs à l’information (IRM) de SharePoint, veillez à consulter la section gestion des droits relatifs à l' [information (IRM) et les étiquettes de confidentialité](#sharepoint-information-rights-management-irm-and-sensitivity-labels) de SharePoint sur cette page.
 
 ## <a name="requirements"></a>Configuration requise
 
@@ -71,17 +72,18 @@ Utilisez la version 19.002.0121.0008 ou une version ultérieure de l’applicati
 ## <a name="limitations"></a>Limites
 
 - SharePoint n’applique pas automatiquement les étiquettes de confidentialité aux fichiers existants que vous avez déjà chiffrés à l’aide des étiquettes Azure information protection. Au lieu de cela, pour que les fonctionnalités fonctionnent après l’activation des étiquettes de sensibilité pour les fichiers Office dans SharePoint et OneDrive, effectuez les tâches suivantes :
-    
+
     1. Assurez-vous que vous avez [déplacé les étiquettes Azure information protection](https://docs.microsoft.com/azure/information-protection/configure-policy-migrate-labels) sur les étiquettes de confidentialité et les avez [publiées](create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy) à partir du centre de conformité Microsoft 365 ou du centre d’administration des étiquettes équivalent.
-    
+
     2. Téléchargez les fichiers, puis téléchargez-les vers SharePoint.
 
 - SharePoint ne peut pas traiter les fichiers chiffrés lorsque l’étiquette qui a appliqué le chiffrement dispose de l’une des [configurations suivantes pour le chiffrement](encryption-sensitivity-labels.md#configure-encryption-settings):
-    - **Autoriser les utilisateurs à attribuer des autorisations lorsqu’ils appliquent l’étiquette** et la case à cocher **dans Word, PowerPoint et Excel, inviter les utilisateurs à spécifier des autorisations** est sélectionné. Ce paramètre est parfois appelé « autorisations définies par l’utilisateur ».
-    - **L’accès des utilisateurs au contenu expire** est défini sur une valeur autre que **jamais**.
-    - Le **chiffrement à double clé** est sélectionné.
-    
-    Pour les étiquettes avec l’une de ces configurations de chiffrement, les étiquettes ne sont pas affichées pour les utilisateurs dans Office sur le Web. En outre, les nouvelles fonctionnalités ne peuvent pas être utilisées avec des documents étiquetés qui possèdent déjà ces paramètres de chiffrement. Par exemple, ces documents ne seront pas renvoyés dans les résultats de recherche, même s’ils sont mis à jour.
+
+  - **Autoriser les utilisateurs à attribuer des autorisations lorsqu’ils appliquent l’étiquette** et la case à cocher **dans Word, PowerPoint et Excel, inviter les utilisateurs à spécifier des autorisations** est sélectionné. Ce paramètre est parfois appelé « autorisations définies par l’utilisateur ».
+  - **L’accès des utilisateurs au contenu expire** est défini sur une valeur autre que **jamais**.
+  - Le **chiffrement à double clé** est sélectionné.
+
+  Pour les étiquettes avec l’une de ces configurations de chiffrement, les étiquettes ne sont pas affichées pour les utilisateurs dans Office sur le Web. En outre, les nouvelles fonctionnalités ne peuvent pas être utilisées avec des documents étiquetés qui possèdent déjà ces paramètres de chiffrement. Par exemple, ces documents ne seront pas renvoyés dans les résultats de recherche, même s’ils sont mis à jour.
 
 - Pour un document chiffré qui accorde des autorisations de modification à un utilisateur, la copie ne peut pas être bloquée dans les versions Web des applications Office.
 
@@ -93,12 +95,13 @@ Utilisez la version 19.002.0121.0008 ou une version ultérieure de l’applicati
 
 - Si un document étiqueté est téléchargé vers SharePoint et que l’étiquette a été appliquée à l’aide d’un compte d’un nom principal de service, le document ne peut pas être ouvert dans Office sur le Web. Les exemples de scénarios incluent Microsoft Cloud App Security et un fichier envoyé à teams par courrier électronique.
 
-- Les utilisateurs peuvent rencontrer des problèmes d’enregistrement après avoir effectué une mise hors connexion ou en mode veille quand, au lieu d’utiliser Office pour le Web, ils utilisent le bureau et les applications mobiles pour Word, Excel ou PowerPoint. Pour ces utilisateurs, lorsqu’ils reprennent leur session d’application Office et essaient d’enregistrer les modifications, ils voient s’afficher un message d’échec de téléchargement avec une option permettant d’enregistrer une copie au lieu d’enregistrer le fichier d’origine. 
+- Les utilisateurs peuvent rencontrer des problèmes d’enregistrement après avoir effectué une mise hors connexion ou en mode veille quand, au lieu d’utiliser Office pour le Web, ils utilisent le bureau et les applications mobiles pour Word, Excel ou PowerPoint. Pour ces utilisateurs, lorsqu’ils reprennent leur session d’application Office et essaient d’enregistrer les modifications, ils voient s’afficher un message d’échec de téléchargement avec une option permettant d’enregistrer une copie au lieu d’enregistrer le fichier d’origine.
 
 - Les documents qui ont été chiffrés de la manière suivante ne peuvent pas être ouverts dans Office sur le Web :
-    - Chiffrement qui utilise une clé locale (« conserver votre propre clé » ou HYOK)
-    - Chiffrement appliqué à l’aide du [chiffrement à double clé](double-key-encryption.md) 
-    - Chiffrement appliqué indépendamment d’une étiquette, par exemple, en appliquant directement un modèle de protection des droits de gestion des droits.
+
+  - Chiffrement qui utilise une clé locale (« conserver votre propre clé » ou HYOK)
+  - Chiffrement appliqué à l’aide du [chiffrement à double clé](double-key-encryption.md)
+  - Chiffrement appliqué indépendamment d’une étiquette, par exemple, en appliquant directement un modèle de protection des droits de gestion des droits.
 
 - Si vous supprimez une étiquette qui a été appliquée à un document dans SharePoint, au lieu de supprimer l’étiquette de la stratégie d’étiquette applicable, le document lorsqu’il est téléchargé ne sera pas étiqueté ou chiffré. En comparaison, si le document étiqueté est stocké en dehors de SharePoint, le document reste chiffré si l’étiquette est supprimée. Notez que même si vous pouvez supprimer des étiquettes pendant une phase de test, il est très rare de supprimer une étiquette dans un environnement de production.
 
@@ -113,21 +116,21 @@ Cette option est la méthode la plus simple pour activer les étiquettes de conf
 L’administrateur général de votre organisation dispose des autorisations totales pour créer et gérer tous les aspects des étiquettes de confidentialité. Si vous ne vous connectez pas en tant qu’administrateur général, voir [Autorisations nécessaires pour créer et gérer des étiquettes de confidentialité](get-started-with-sensitivity-labels.md#permissions-required-to-create-and-manage-sensitivity-labels).
 
 1. Connectez-vous au [Centre de conformité Microsoft 365](https://compliance.microsoft.com/)et accédez à **solutions**  >  **information protection**
-    
-    Si vous ne voyez pas immédiatement cette option, sélectionnez tout d’abord **Tout afficher**. 
+
+    Si vous ne voyez pas immédiatement cette option, sélectionnez tout d’abord **Tout afficher**.
 
 2. Si un message s’affiche pour activer la fonctionnalité de traitement du contenu dans les fichiers Office Online, sélectionnez **Activer maintenant**:
-    
+
     ![Bouton Activer maintenant pour activer les étiquettes de confidentialité pour Office Online](../media/sensitivity-labels-turn-on-banner.png)
-    
-    La commande est exécutée immédiatement et lors de l’actualisation suivante de la page, le message ou le bouton ne s’affiche plus. 
+
+    La commande est exécutée immédiatement et lors de l’actualisation suivante de la page, le message ou le bouton ne s’affiche plus.
 
 > [!NOTE]
 > Si vous disposez de Microsoft 365 multi-géo, vous devez utiliser PowerShell pour activer ces fonctionnalités pour tous vos emplacements géographiques. Pour plus d’informations, voir la section suivante.
 
 ### <a name="use-powershell-to-enable-support-for-sensitivity-labels"></a>Utiliser PowerShell pour activer la prise en charge des étiquettes de sensibilité
 
-Au lieu d’utiliser le centre de conformité, vous pouvez activer la prise en charge des étiquettes de sensibilité à l’aide de la cmdlet [Set-SPOTenant](https://docs.microsoft.com/powershell/module/sharepoint-online/set-spotenant?view=sharepoint-ps) à partir de SharePoint Online PowerShell. 
+Au lieu d’utiliser le centre de conformité, vous pouvez activer la prise en charge des étiquettes de sensibilité à l’aide de la cmdlet [Set-SPOTenant](https://docs.microsoft.com/powershell/module/sharepoint-online/set-spotenant?view=sharepoint-ps) à partir de SharePoint Online PowerShell.
 
 Si vous disposez de Microsoft 365 multi-géo, vous devez utiliser PowerShell pour activer cette prise en charge de tous les emplacements géographiques.
 
@@ -156,14 +159,15 @@ Avant d’exécuter la commande PowerShell pour activer les étiquettes de sensi
 Pour activer les nouvelles fonctionnalités, utilisez la cmdlet [Set-SPOTenant](https://docs.microsoft.com/powershell/module/sharepoint-online/set-spotenant?view=sharepoint-ps) avec le paramètre *EnableAIPIntegration* :
 
 1. À l’aide d’un compte professionnel ou scolaire disposant de privilèges d’administrateur général ou d’administrateur SharePoint dans Microsoft 365, connectez-vous à SharePoint. Pour savoir comment procéder, reportez-vous à l’article [Prise en main de SharePoint Online Management Shell](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online).
-    
+
     Remarque : Si vous disposez de Microsoft 365 multi-géo, utilisez le paramètre-URL avec [Connect-SPOService](https://docs.microsoft.com/powershell/module/sharepoint-online/connect-sposervice?view=sharepoint-ps)et spécifiez l’URL du site Centre d’administration SharePoint Online pour l’un de vos emplacements géographiques.
 
 2. Exécutez la commande suivante et appuyez sur **Y** pour confirmer :
 
     ```PowerShell
-    Set-SPOTenant -EnableAIPIntegration $true  
+    Set-SPOTenant -EnableAIPIntegration $true
     ```
+
 3. Pour Microsoft 365 multi-géo : Répétez les étapes 1 et 2 pour chacun de vos emplacements géographiques restants.
 
 ## <a name="publishing-and-changing-sensitivity-labels"></a>Publication et modification des étiquettes de sensibilité
@@ -178,14 +182,13 @@ Par exemple : vous créez et publiez une nouvelle étiquette de sensibilité qu
 
 Étant donné que le retard de réplication n’est que d’une heure pour les nouvelles étiquettes de sensibilité, il est peu probable que vous exécutiez le scénario dans l’exemple. Toutefois, nous vous recommandons de publier de nouvelles étiquettes sur seulement quelques utilisateurs test, d’attendre une heure, puis de vérifier le comportement de l’étiquette sur SharePoint et OneDrive. Lors de la dernière étape, rendez l’étiquette accessible à d’autres utilisateurs en ajoutant des utilisateurs à la stratégie d’étiquette existante ou ajoutez l’étiquette à une stratégie d’étiquette existante pour vos utilisateurs standard. Au moment où les utilisateurs standard voient l’étiquette, celle-ci est déjà synchronisée avec SharePoint et OneDrive.
 
-
 ## <a name="sharepoint-information-rights-management-irm-and-sensitivity-labels"></a>Étiquettes de confidentialité et de gestion des droits relatifs à l’information (IRM) SharePoint
 
 La gestion des droits relatifs à l' [information (IRM) de SharePoint](set-up-irm-in-sp-admin-center.md) est une ancienne technologie permettant de protéger les fichiers au niveau de la liste et de la bibliothèque en appliquant le chiffrement et les restrictions lors du téléchargement des fichiers. Cette technologie de protection plus ancienne est conçue pour empêcher les utilisateurs non autorisés d’ouvrir le fichier pendant qu’il est en dehors de SharePoint.
 
 En comparaison, les étiquettes de sensibilité fournissent les paramètres de protection des marques visuelles (en-têtes, pieds de page, filigranes) en plus du chiffrement. Les paramètres de chiffrement prennent en charge l’ensemble des [droits d’utilisation](https://docs.microsoft.com/azure/information-protection/configure-usage-rights) pour limiter ce que les utilisateurs peuvent faire avec le contenu, et les mêmes étiquettes de confidentialité sont prises en charge pour de [nombreux scénarios](get-started-with-sensitivity-labels.md#common-scenarios-for-sensitivity-labels). L’utilisation de la même méthode de protection avec des paramètres cohérents entre les charges de travail et les applications génère une stratégie de protection cohérente.
 
-Toutefois, vous pouvez utiliser les deux solutions de protection conjointement et le comportement est le suivant : 
+Toutefois, vous pouvez utiliser les deux solutions de protection conjointement et le comportement est le suivant :
 
 - Si vous téléchargez un fichier avec une étiquette de sensibilité qui applique le chiffrement, SharePoint ne peut pas traiter ce fichier de sorte que la co-création, eDiscovery, DLP et la recherche ne fonctionnent pas pour ce fichier.
 
@@ -208,20 +211,13 @@ Par exemple, pour rechercher tous les documents qui ont été étiquetés comme 
 `InformationProtectionLabelId: 8faca7b8-8d20-48a3-8ea2-0f96310a848e`
 
 Pour obtenir les GUID pour vos étiquettes de sensibilité, utilisez la cmdlet [Get-label](https://docs.microsoft.com/powershell/module/exchange/get-label?view=exchange-ps) :
-    
-1. Tout d’abord,[connectez-vous au Centre de sécurité et conformité Office 365 PowerShell](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell). 
-    
-    Par exemple, dans une session PowerShell exécutée en tant qu’administrateur, connectez-vous à l’aide d’un compte d’administrateur général :
-    
-    ```powershell
-    Set-ExecutionPolicy RemoteSigned
-    $UserCredential = Get-Credential
-    $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.compliance.protection.outlook.com/powershell-liveid/ -Credential $UserCredential -Authentication Basic -AllowRedirection
-    Import-PSSession $Session -DisableNameChecking
-    ```
+
+1. Tout d’abord,[connectez-vous au Centre de sécurité et conformité Office 365 PowerShell](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
+
+    Par exemple, dans une session PowerShell que vous exécutez en tant qu’administrateur, connectez-vous à l’aide d’un compte d’administrateur général.
 
 2. Exécutez ensuite la commande suivante :
-    
+
     ```powershell
     Get-Label |ft Name, Guid
     ```

@@ -5,19 +5,19 @@ f1.keywords:
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date: 8/7/2018
+ms.date: ''
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: f2738dec-41b0-43c4-b814-84c0a4e45c6d
 description: Les administrateurs peuvent en savoir plus sur le flux de messages entrants et sortants dans le tableau de bord de flux de messagerie dans le centre de sécurité & conformité.
-ms.openlocfilehash: 347e53c51c347f12795008d39458773a94ff433f
-ms.sourcegitcommit: c04f1207cfaddac2a9abef38967c17d689756a96
+ms.openlocfilehash: 920c1212f4d6dee508704c93272e48140e199710
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "46577390"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46826892"
 ---
 # <a name="outbound-and-inbound-mail-flow-insight-in-the-security--compliance-center"></a>Vue du flux de messagerie sortant et entrant dans le centre de sécurité & conformité
 

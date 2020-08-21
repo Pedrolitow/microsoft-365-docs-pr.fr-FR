@@ -7,7 +7,7 @@ author: chrisda
 manager: dansimp
 ms.date: ''
 audience: ITPro
-ms.topic: reference
+ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
@@ -16,12 +16,12 @@ ms.assetid: ff3f140b-b005-445f-bfe0-7bc3f328aaf0
 ms.collection:
 - M365-security-compliance
 description: Microsoft a développé diverses stratégies, procédures et a adopté plusieurs meilleures pratiques du secteur afin de protéger les utilisateurs contre des courriers indésirables, indésirables ou malveillants.
-ms.openlocfilehash: 9684453503329e955c21051885c5d93e8c927c48
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 13bc62f8be25a21f5ed2d1c2c2f4208a56d28bf0
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208209"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46826516"
 ---
 # <a name="reference-policies-practices-and-guidelines"></a>Référence : Stratégies, pratiques et conseils
 

@@ -6,7 +6,7 @@ ms.author: chrisda
 author: chrisda
 manager: dansimp
 audience: ITPro
-ms.topic: article
+ms.topic: how-to
 ms.date: ''
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Les administrateurs peuvent apprendre à créer, modifier et supprimer les stratégies anti-hameçonnage avancées disponibles dans les organisations avec Office 365 Advanced Threat Protection (Office 365 ATP).
-ms.openlocfilehash: b55bfb8b75506837e968b5845bc7a8239ad9b015
-ms.sourcegitcommit: 5c16d270c7651c2080a5043d273d979a6fcc75c6
+ms.openlocfilehash: f7770945e6b99a3d2f3fa2b12daa13b2cc3c2612
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46804231"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46825736"
 ---
 # <a name="configure-atp-anti-phishing-policies"></a>Configurer des stratégies anti-hameçonnage ATP
 
@@ -49,8 +49,8 @@ Dans Exchange Online PowerShell, vous gérez la stratégie et la règle séparé
 Toutes les organisations Office 365 ATP ont une stratégie anti-hameçonnage intégrée à la protection avancée contre les hameçons Office 365 avec les propriétés suivantes :
 
 - La stratégie est appliquée à tous les destinataires de l’organisation, même s’il n’y a aucune règle anti-hameçonnage (filtres de destinataire) associée à la stratégie.
-- La stratégie a la valeur de priorité personnalisée la **plus faible** que vous ne pouvez pas modifier (la stratégie est toujours appliquée en dernier). Toutes les stratégies personnalisées que vous créez ont toujours une priorité plus élevée.
-- La stratégie est la stratégie par défaut (la propriété **IsDefault** a la valeur `True` ) et vous ne pouvez pas supprimer la stratégie par défaut.
+- La stratégie a la valeur de priorité personnalisée la **plus petite**, que vous ne pouvez pas modifier (la stratégie est toujours appliquée en dernier). Les stratégies personnalisées que vous créez ont toujours une priorité plus élevée.
+- La stratégie est la stratégie par défaut (la propriété **IsDefault** possède la valeur`True`) et vous ne pouvez pas supprimer la stratégie par défaut.
 
 Pour accroître l’efficacité de la protection anti-hameçonnage, vous pouvez créer des stratégies anti-hameçonnage personnalisées ATP avec des paramètres plus stricts appliqués à des utilisateurs ou à des groupes d’utilisateurs spécifiques.
 
@@ -318,9 +318,9 @@ Vous ne pouvez pas désactiver la stratégie anti-hameçonnage par défaut.
 
 ### <a name="set-the-priority-of-custom-atp-anti-phishing-policies"></a>Définir la priorité des stratégies anti-hameçonnage personnalisées ATP
 
-Par défaut, les stratégies anti-hameçonnage ATP ont une priorité basée sur l’ordre dans lequel elles ont été créées (les stratégies plus récentes sont moins prioritaires que les stratégies plus anciennes). Un numéro de priorité inférieur indique une priorité plus élevée pour la stratégie (la valeur 0 est la plus élevée) et les stratégies sont traitées dans l’ordre de priorité (les stratégies de priorité supérieure sont traitées avant les stratégies de priorité inférieure). Deux stratégies ne peuvent pas avoir la même priorité, et le traitement de stratégie s’arrête après l’application de la première stratégie.
+Par défaut, les stratégies anti-hameçonnage ATP ont une priorité basée sur l’ordre dans lequel elles ont été créées (les stratégies plus récentes sont moins prioritaires que les stratégies plus anciennes). Un numéro de priorité inférieur indique une priorité plus élevée pour la stratégie (la valeur 0 est la plus élevée) et les stratégies sont traitées dans l’ordre de priorité (les stratégies de priorité supérieure sont traitées avant les stratégies de priorité inférieure). Aucune stratégie ne peut avoir la même priorité, et le traitement de stratégie s’arrête une fois la première stratégie appliquée.
 
-Pour plus d’informations sur l’ordre de priorité et l’évaluation et l’application de plusieurs stratégies, voir [Order and Precedence of mail protection](how-policies-and-protections-are-combined.md).
+Pour plus d’informations sur l’ordre de priorité et l’évaluation et l’application de plusieurs stratégies, consultez [Ordre et la priorité de la protection de la messagerie](how-policies-and-protections-are-combined.md).
 
 Les stratégies anti-hameçonnage personnalisé ATP sont affichées dans l’ordre dans lequel elles sont traitées (la première stratégie a la valeur de **priorité** 0). La stratégie anti-hameçonnage par défaut nommée Office antiphishing par défaut a une valeur de priorité personnalisée la **plus faible**et vous ne pouvez pas la modifier.
 

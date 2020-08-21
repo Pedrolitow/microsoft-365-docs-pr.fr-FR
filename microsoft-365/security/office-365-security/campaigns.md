@@ -8,7 +8,7 @@ manager: dansimp
 ms.reviewer: mcostea
 ms.date: ''
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
@@ -17,12 +17,12 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Découvrez Campaign Views dans Office 365 - Protection avancée contre les menaces.
-ms.openlocfilehash: b7078188d8e01f27e6941c3f61f4ef20a004606c
-ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
+ms.openlocfilehash: f0f5d2305b4f17c7018d32eebd155b4ad2d459e7
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46653232"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46825796"
 ---
 # <a name="campaign-views-in-atp"></a>Affichages de campagne dans la protection avancée contre les menaces
 

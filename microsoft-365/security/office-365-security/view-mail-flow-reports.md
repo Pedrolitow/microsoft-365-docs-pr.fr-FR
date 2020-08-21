@@ -7,7 +7,7 @@ author: chrisda
 manager: dansimp
 ms.date: ''
 audience: ITPro
-ms.topic: article
+ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Les administrateurs peuvent en savoir plus sur les rapports de flux de messagerie disponibles dans le tableau de bord des rapports dans le centre de sécurité & conformité.
 ms.custom: ''
-ms.openlocfilehash: 98b27497b758a202ccbb741f6cb10e4ec65570e9
-ms.sourcegitcommit: 167c05cc6a776f62f0a0c2de5f3ffeb68c4a27ac
+ms.openlocfilehash: 9e9249eab5d3519dac0e33acf40d600d471b7cb2
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46814501"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46826456"
 ---
 # <a name="view-mail-flow-reports-in-the-reports-dashboard-in-security--compliance-center"></a>Afficher les rapports de flux de messagerie dans le tableau de bord rapports du centre de sécurité & conformité
 
@@ -51,7 +51,7 @@ Les graphiques suivants sont disponibles en mode état :
   - **À partir d’Internet sans connecteur**
   - **Sur Internet sans connecteur**
   - Un connecteur spécifique que vous avez configuré.
-  
+
   Pour isoler les données du graphique, utilisez l’option **afficher les données pour** le contrôle pour sélectionner une de ces options ou **tout le flux de messagerie**.
 
   ![Afficher les données par flux de messagerie dans le rapport du connecteur](../../media/connector-report-view-data-by-mail-flow.png)
@@ -206,7 +206,7 @@ Pour revenir à l’affichage rapports, cliquez sur **afficher le rapport**.
 
 ## <a name="mailflow-status-report"></a>Rapport d’état de flux de flux
 
-Le **rapport d’état de flux** de messagerie est similaire au [rapport de courrier électronique envoyé et reçu](#sent-and-received-email-report), avec des informations supplémentaires sur le courrier électronique autorisé ou bloqué sur le serveur Edge. Il s’agit du seul rapport qui contient les informations de protection du serveur Edge et indique le nombre de messages bloqués avant d’être autorisés dans le service pour l’évaluation par Exchange Online Protection (EOP). Il est important de comprendre que si un message est envoyé à cinq destinataires, nous le dénombrez cinq messages différents et pas un message.  
+Le **rapport d’état de flux** de messagerie est similaire au [rapport de courrier électronique envoyé et reçu](#sent-and-received-email-report), avec des informations supplémentaires sur le courrier électronique autorisé ou bloqué sur le serveur Edge. Il s’agit du seul rapport qui contient les informations de protection du serveur Edge et indique le nombre de messages bloqués avant d’être autorisés dans le service pour l’évaluation par Exchange Online Protection (EOP). Il est important de comprendre que si un message est envoyé à cinq destinataires, nous le dénombrez cinq messages différents et pas un message.
 Pour afficher le rapport, ouvrez le [Centre de sécurité & conformité](https://protection.office.com), accédez **Reports** au \> **tableau de bord** rapports et sélectionnez rapport d’État du **flux de flux**. Pour accéder directement au **rapport d’État du flux de messagerie**, ouvrez <https://protection.office.com/mailflowStatusReport> .
 
 ![Widget rapport d’état de flux de notification dans le tableau de bord rapports](../../media/mail-flow-status-report-widget.png)
@@ -300,14 +300,14 @@ Si vous cliquez sur **filtre**, vous pouvez filtrer le graphique et la table de 
 
 Ce graphique indique le nombre de messages organisés par :
 
-  - **Nombre total de messages électroniques**
-  - **Courrier électronique après la protection du serveur Edge**
-  - **Courrier électronique après anti-programme malveillant, réputation de fichier, bloc de type fichier**
-  - **Courrier électronique après hameçonnage, réputation de l’URL, emprunt d’identité de marque, anti-usurpation**
-  - **Courrier électronique après blocage du courrier indésirable et filtrage du courrier en nombre**
-  - **Courrier électronique après l’emprunt d’identité d’utilisateur et de domaine**<sup>1</sup>
-  - **Courrier électronique après la détonation 1 du fichier et de l’URL**<sup>1</sup>
-  - **Courrier électronique détecté comme étant Bénin après une protection post-remise (URL-clic sur la protection du temps de clic)**
+- **Nombre total de messages électroniques**
+- **Courrier électronique après la protection du serveur Edge**
+- **Courrier électronique après anti-programme malveillant, réputation de fichier, bloc de type fichier**
+- **Courrier électronique après hameçonnage, réputation de l’URL, emprunt d’identité de marque, anti-usurpation**
+- **Courrier électronique après blocage du courrier indésirable et filtrage du courrier en nombre**
+- **Courrier électronique après l’emprunt d’identité d’utilisateur et de domaine**<sup>1</sup>
+- **Courrier électronique après la détonation 1 du fichier et de l’URL**<sup>1</sup>
+- **Courrier électronique détecté comme étant Bénin après une protection post-remise (URL-clic sur la protection du temps de clic)**
 
 <sup>1</sup> ATP Office 365 uniquement
 
@@ -315,15 +315,15 @@ Pour afficher le courrier électronique filtré par EOP ou ATP séparément, cli
 
 La table de données contient les informations suivantes, indiquées dans l’ordre décroissant de date :
 
- - **Date**
- - **Nombre total de messages électroniques**
- - **Protection des serveurs Edge**
- - **Anti-programme malveillant, réputation de fichier, bloc de type de fichier**
- - **Hameçonnage, réputation de l’URL, emprunt d’identité de marque, anti-usurpation**
- - **Blocage du courrier indésirable et du filtrage du courrier en nombre**
- - **Emprunt d’identité d’utilisateur et de domaine (ATP)**
- - **Détonation des fichiers et des URL (ATP)**
- - **Protection après livraison après réception, ou ZAP (EOP)**
+- **Date**
+- **Nombre total de messages électroniques**
+- **Protection des serveurs Edge**
+- **Anti-programme malveillant, réputation de fichier, bloc de type de fichier**
+- **Hameçonnage, réputation de l’URL, emprunt d’identité de marque, anti-usurpation**
+- **Blocage du courrier indésirable et du filtrage du courrier en nombre**
+- **Emprunt d’identité d’utilisateur et de domaine (ATP)**
+- **Détonation des fichiers et des URL (ATP)**
+- **Protection après livraison après réception, ou ZAP (EOP)**
 
 Si vous sélectionnez une ligne dans le tableau de données, une autre répartition du nombre de messages est affichée dans le menu volant.
 
@@ -340,7 +340,7 @@ Chaque fichier. csv exporté est limité à 150 000 lignes. Si les données cont
 
  ![Vue entonnoir dans le rapport d’état de flux de flux ](../../media/mail-flow-status-report-funnel-view.png)
 
- ### <a name="tech-view-for-the-mailflow-status-report"></a>Vue technique pour le rapport d’état de flux de flux
+### <a name="tech-view-for-the-mailflow-status-report"></a>Vue technique pour le rapport d’état de flux de flux
 
 La **vue Tech** est similaire à l’affichage **entonnoir** , qui fournit des détails plus granulaires pour les fonctionnalités de protection contre les menaces configurées. À partir du graphique, vous pouvez voir comment les messages sont catégorisés aux différentes étapes de la protection contre les menaces.
 
@@ -360,27 +360,27 @@ Si vous cliquez sur **filtre**, vous pouvez filtrer le graphique et la table de 
 
 Ce graphique présente les messages organisés selon les catégories suivantes :
 
-  - **Nombre total de messages électroniques**
-  - **Serveur Edge autorisé, serveur Edge filtré**
-  - **Pas de programmes malveillants, détection de pièces jointes fiables (ATP), détection du moteur anti-programme malveillant, bloc de règles**
-  - **Non-hameçonnage, échec DMARC, détection d’usurpation d’identité, détection d’usurpation d’identité, détection de hameçonnage**
-  - **Aucune détection avec détonation d’URL, détection de détonation d’URL (ATP)**
-  - **Courrier indésirable, courrier indésirable**
-  - **Courrier électronique non malveillant, détection de liens fiables (ATP), ZAP**
+- **Nombre total de messages électroniques**
+- **Serveur Edge autorisé, serveur Edge filtré**
+- **Pas de programmes malveillants, détection de pièces jointes fiables (ATP), détection du moteur anti-programme malveillant, bloc de règles**
+- **Non-hameçonnage, échec DMARC, détection d’usurpation d’identité, détection d’usurpation d’identité, détection de hameçonnage**
+- **Aucune détection avec détonation d’URL, détection de détonation d’URL (ATP)**
+- **Courrier indésirable, courrier indésirable**
+- **Courrier électronique non malveillant, détection de liens fiables (ATP), ZAP**
 
 Lorsque vous placez le curseur de la souris sur une catégorie dans le graphique, vous pouvez voir le nombre de messages dans cette catégorie.
 
 La table de données contient les informations suivantes, indiquées dans l’ordre décroissant de date :
 
-  - **Date**  
-  - **Nombre total de messages électroniques**
-  - **Serveur Edge filtré**
-  - **Moteur anti-programme malveillant, pièces jointes fiables, règle filtrée**
-  - **DMARC, emprunt d’identité, usurpation, hameçonnage filtré**
-  - **Détection de la détonation d’URL**
-  - **Filtrage du courrier indésirable**
-  - **ZAP supprimé**
-  - **Détection par les liens fiables**
+- **Date**
+- **Nombre total de messages électroniques**
+- **Serveur Edge filtré**
+- **Moteur anti-programme malveillant, pièces jointes fiables, règle filtrée**
+- **DMARC, emprunt d’identité, usurpation, hameçonnage filtré**
+- **Détection de la détonation d’URL**
+- **Filtrage du courrier indésirable**
+- **ZAP supprimé**
+- **Détection par les liens fiables**
 
 Si vous sélectionnez une ligne dans le tableau de données, une autre répartition du nombre de messages est affichée dans le menu volant.
 

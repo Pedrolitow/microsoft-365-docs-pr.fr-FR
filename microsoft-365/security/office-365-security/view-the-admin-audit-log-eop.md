@@ -7,17 +7,17 @@ author: chrisda
 manager: dansimp
 ms.date: ''
 audience: ITPro
-ms.topic: article
+ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 003d7a74-3e16-4453-ae0c-9dbae51f66d1
 description: Les administrateurs peuvent apprendre à afficher et effectuer des recherches dans le journal d’audit de l’administrateur dans Exchange Online Protection (EOP) autonome.
-ms.openlocfilehash: 171f3ec531b232ca796232ab26caefbee8afc75c
-ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
+ms.openlocfilehash: 8890ab8f2f2db01ed6bd22657a9bea8f77b25d08
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46653496"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46825076"
 ---
 # <a name="view-the-admin-audit-log-in-standalone-eop"></a>Afficher le journal d’audit de l’administrateur dans EOP autonome
 
@@ -44,7 +44,7 @@ Le journal d’audit de l’administrateur enregistre des actions spécifiques, 
 - Pour plus d’informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir [raccourcis clavier pour le centre d’administration Exchange dans Exchange Online](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center).
 
 > [!TIP]
-> Vous rencontrez des difficultés ? Demandez de l’aide dans le forum [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351) .
+> Vous rencontrez des difficultés ? Demandez de l’aide dans le Forum [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351) .
 
 ## <a name="use-the-eac-to-view-the-admin-audit-log"></a>Utiliser le centre d’administration Exchange pour afficher le journal d’audit de l’administrateur
 

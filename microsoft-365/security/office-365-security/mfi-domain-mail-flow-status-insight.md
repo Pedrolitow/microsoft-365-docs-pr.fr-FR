@@ -6,19 +6,19 @@ ms.author: chrisda
 author: chrisda
 manager: dansimp
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: Les administrateurs peuvent apprendre à utiliser l’état du flux de messagerie du domaine le plus pertinent dans le tableau de bord de flux de messagerie dans le centre de sécurité & conformité pour résoudre les problèmes de flux de messagerie liés aux enregistrements MX dans leurs domaines de messagerie.
-ms.openlocfilehash: 6366e3aee0ab50096f1396776397c80fabc8aaf2
-ms.sourcegitcommit: c04f1207cfaddac2a9abef38967c17d689756a96
+ms.openlocfilehash: 9640d5e37932efeb7c0c8f8c56d0a15bc7f07e5b
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "46577742"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46827014"
 ---
 # <a name="top-domain-mail-flow-status-insight-in-the-security--compliance-center"></a>État du flux de messagerie du domaine le plus approfondi dans le centre de sécurité & conformité
 
@@ -40,6 +40,6 @@ Vous pouvez cliquer sur **afficher plus** pour afficher les mêmes informations 
 
 ![Fenêtre mobile détails dans l’état du flux de messagerie du domaine supérieur](../../media/mfi-top-domain-mail-flow-status-view-details.png)
 
-## <a name="related-topics"></a>Sujets associés
+## <a name="related-topics"></a>Rubriques connexes
 
 Pour plus d’informations sur les autres informations du tableau de bord de flux de messagerie, consultez [la rubrique mail Flow Insights in the Security & Compliance Center](mail-flow-insights-v2.md).

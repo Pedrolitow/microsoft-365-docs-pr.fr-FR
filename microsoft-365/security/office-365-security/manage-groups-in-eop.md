@@ -7,19 +7,19 @@ author: chrisda
 manager: dansimp
 ms.date: ''
 audience: ITPro
-ms.topic: article
+ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 212e68ac-6330-47e9-a169-6cf5e2f21e13
 ms.custom:
 - seo-marvel-apr2020
 description: Les administrateurs dans les organisations Exchange Online Protection (EOP) autonomes peuvent apprendre à créer, modifier et supprimer des groupes de distribution et des groupes de sécurité à extension messagerie dans le centre d’administration Exchange et dans Exchange Online Protection (EOP) autonome.
-ms.openlocfilehash: 813735d4024c3b8424a6bbac51ebef7b4c53e590
-ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
+ms.openlocfilehash: e7b93b9d05fda7e4f5f8abea02fbe3f1c70a6c74
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46653652"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46826552"
 ---
 # <a name="manage-groups-in-eop"></a>Gestion des groupes dans Exchange Online Protection (EOP)
 
@@ -50,7 +50,7 @@ Vous pouvez gérer les groupes dans le centre d’administration Exchange (Centr
 - Pour plus d’informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir [raccourcis clavier pour le centre d’administration Exchange dans Exchange Online](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center).
 
 > [!TIP]
-> Vous rencontrez des difficultés ? Demandez de l’aide dans le forum [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351) .
+> Vous rencontrez des difficultés ? Demandez de l’aide dans le Forum [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351) .
 
 ## <a name="use-the-exchange-admin-center-to-manage-distribution-groups"></a>Utiliser le centre d’administration Exchange pour gérer les groupes de distribution
 
@@ -192,7 +192,7 @@ Update-EOPDistributionGroupMember -Identity <GroupIdentity> -Members @("User1","
 Cet exemple utilise la modification de l’adresse SMTP principale (également appelée adresse de réponse) pour le groupe Seattle Employees vers sea.employees@contoso.com.
 
 ```PowerShell
-Set-EOPDistributionGroup "Seattle Employees" -PrimarysmptAddress "sea.employees@contoso.com"
+Set-EOPDistributionGroup "Seattle Employees" -PrimarySmtpAddress "sea.employees@contoso.com"
 ```
 
 Cet exemple remplace les membres actuels du groupe d’équipe de sécurité par Kitty Petersen et Tyson Fawcett.

@@ -7,7 +7,7 @@ author: chrisda
 manager: dansimp
 ms.date: ''
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Les administrateurs peuvent en savoir plus sur les paramètres de filtre de courrier indésirable avancés (ASF) disponibles dans les stratégies de blocage du courrier indésirable dans Exchange Online Protection (EOP).
-ms.openlocfilehash: b314b8b2a2de72987d9acff688602df0e0947293
-ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
+ms.openlocfilehash: 2a79a6721a587e3033e71e6e46856a21cffe7bcc
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46653340"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46827336"
 ---
 # <a name="advanced-spam-filter-asf-settings-in-eop"></a>Paramètres du filtre de courrier indésirable avancé (ASF) dans EOP
 
@@ -34,6 +34,7 @@ Dans les organisations Microsoft 365 avec des boîtes aux lettres dans Exchange 
 
 > [!NOTE]
 > L’activation d’un ou de plusieurs paramètres ASF est une approche agressive pour le filtrage du courrier indésirable. Vous ne pouvez pas signaler les messages qui sont filtrés par ASF comme faux positifs. Vous pouvez identifier les messages qui ont été filtrés par ASF en procédant comme suit :
+>
 > - Notifications périodiques de mise en quarantaine du courrier indésirable de l’utilisateur final.
 >
 > - La présence de messages filtrés en quarantaine.

@@ -1,5 +1,5 @@
 ---
-title: Gérer les destinataires dans une version autonome EOP
+title: Gérer les destinataires dans une EOP autonome
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -7,21 +7,21 @@ author: chrisda
 manager: dansimp
 ms.date: ''
 audience: ITPro
-ms.topic: article
+ms.topic: overview
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 2921f544-8257-4bae-8e3a-ce9250e9f162
 ms.custom:
 - seo-marvel-apr2020
 description: Les administrateurs peuvent en savoir plus sur les différents types d’objets destinataire dans un environnement Exchange Online Protection (EOP) autonome.
-ms.openlocfilehash: c2337f28fbcd825022967434828af409f3bf0453
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 8ee3821d05a4d777227e90c9b6208b3e9f8644a4
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208365"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46827038"
 ---
-# <a name="manage-recipients-in-standalone-eop"></a>Gérer les destinataires dans une version autonome EOP
+# <a name="manage-recipients-in-standalone-eop"></a>Gérer les destinataires dans une EOP autonome
 
 Les organisations Exchange Online Protection (EOP) autonomes sans boîtes aux lettres Exchange Online prennent en charge les types de destinataires suivants :
 

@@ -7,7 +7,7 @@ author: chrisda
 manager: dansimp
 ms.date: ''
 audience: ITPro
-ms.topic: article
+ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 description: Découvrez comment créer des règles de flux de messagerie (règles de transport) pour identifier les messages et définir le seuil de probabilité de courrier indésirable (SCL) des messages dans Exchange Online Protection.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 223e676579c99eca7db641146d3a1b6bd22f9ca2
-ms.sourcegitcommit: 1f3101326e8a54b9bda4ba0324eae00fafcf5e7b
+ms.openlocfilehash: 67a4c25a1006e9b1554cf8ffbc2d5e29b4063752
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44405118"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46827372"
 ---
 # <a name="use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages-in-eop"></a>Utiliser des règles de flux de messagerie pour définir le seuil de probabilité de courrier indésirable (SCL) dans les messages dans EOP
 

@@ -7,7 +7,7 @@ author: chrisda
 manager: dansimp
 ms.date: ''
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
@@ -19,16 +19,16 @@ ms.custom:
 - TopSMBIssues
 - seo-marvel-apr2020
 description: Les administrateurs peuvent en savoir plus sur les fonctionnalités de protection anti-hameçonnage dans Exchange Online Protection (EOP) et Office 365 Advanced Threat Protection (Office 365 ATP).
-ms.openlocfilehash: 657224d3a18d7cae1581eaf6c603d1c04c3b41f3
-ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
+ms.openlocfilehash: 5594c4e7033ab70a622403bca7759cd4b89f111a
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "44588311"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46827444"
 ---
 # <a name="anti-phishing-protection-in-microsoft-365"></a>Protection anti-hameçonnage dans Microsoft 365
 
-Le *hameçonnage* est une attaque par courrier électronique qui tente de dérober des informations sensibles dans les messages semblant provenir d’expéditeurs légitimes ou approuvés. Il existe des catégories spécifiques de hameçonnage. Par exemple :
+Le *Hameçonnage* est une attaque par courrier électronique qui tente d’accéder à des informations sensibles par le biais de messages qui paraissent provenir d’expéditeurs légitimes ou approuvés. Il existe des catégories spécifiques de hameçonnage. Par exemple :
 
 - Le **Spear Phishing** utilise du contenu ciblé et personnalisé, spécialement adapté aux destinataires ciblés (en général, après la reconnaissance des destinataires par l’agresseur).
 
@@ -50,9 +50,9 @@ EOP (les organisations Microsoft 365 sans ATP) contient des fonctionnalités qui
 
 - **Authentification de messagerie implicite**: EOP améliore les vérifications d’authentification de messagerie standard pour le courrier électronique entrant ([SPF](set-up-spf-in-office-365-to-help-prevent-spoofing.md), [DKIM](use-dkim-to-validate-outbound-email.md)et [DMARC](use-dmarc-to-validate-email.md)), avec la réputation de l’expéditeur, l’historique des destinataires, l’analyse comportementale et d’autres techniques avancées pour identifier les expéditeurs falsifiés. Si vous souhaitez en savoir plus, consultez la page [Authentification de messagerie électronique dans Microsoft 365](email-validation-and-authentication.md).
 
-## <a name="additional-anti-phishing-protection-in-office-365-atp"></a>Protection supplémentaire contre le hameçonnage dans Office 365 ATP
+## <a name="additional-anti-phishing-protection-in-office-365-atp"></a>Protection supplémentaire contre le hameçonnage dans Office 365 - Protection avancée contre les menaces
 
-La protection avancée contre les menaces Office 365 contient des fonctionnalités anti-hameçonnage supplémentaires et plus avancées :
+Office 365 - Protection avancée contre les menaces inclut des fonctionnalités anti-hameçonnage supplémentaires et plus avancées :
 
 - **Stratégies anti-hameçonnage ATP**: créez de nouvelles stratégies personnalisées, configurez les paramètres d’emprunt d’identité (protéger les utilisateurs et les domaines de l’emprunt d’identité), les paramètres d’intelligence de boîte aux lettres et les seuils de phishing avancés ajustables. Pour plus d’informations, reportez-vous à la rubrique [configure ATP anti-phishing Policies in Microsoft 365](configure-atp-anti-phishing-policies.md). Pour plus d’informations sur les différences entre les stratégies anti-hameçonnage et les stratégies anti-hameçonnage ATP, consultez la rubrique [anti-phishing Policies in Microsoft 365](set-up-anti-phishing-policies.md).
 

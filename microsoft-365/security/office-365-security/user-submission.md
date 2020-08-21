@@ -7,7 +7,7 @@ author: chrisda
 manager: dansimp
 ms.date: ''
 audience: ITPro
-ms.topic: article
+ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
@@ -15,12 +15,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Les administrateurs peuvent apprendre à configurer une boîte aux lettres pour collecter le courrier indésirable et le courrier indésirable transmis par les utilisateurs.
-ms.openlocfilehash: ae6088a0eab214b4e160b85a278e1160c2845ed9
-ms.sourcegitcommit: c04f1207cfaddac2a9abef38967c17d689756a96
+ms.openlocfilehash: 76264801820b6a41ee744a8adcc3b3b48a8e9479
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "46577125"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46826740"
 ---
 # <a name="specify-a-mailbox-for-user-submissions-of-spam-and-phishing-messages-in-exchange-online"></a>Spécifier une boîte aux lettres pour les soumissions d’utilisateurs de messages de courrier indésirable et de hameçonnage dans Exchange Online
 
@@ -101,7 +101,7 @@ La remise des messages signalés par l’utilisateur à une boîte aux lettres p
 
 Les messages envoyés à des boîtes aux lettres personnalisées doivent suivre un format de message d’envoi spécifique. L’objet (titre de l’enveloppe) de l’envoi doit être au format suivant :
 
-`SafetyAPIAction|NetworkMessgeId|SenderIp|FromAddress|(Message Subject)`
+`SafetyAPIAction|NetworkMessageId|SenderIp|FromAddress|(Message Subject)`
 
 SafetyAPIAction est l’une des valeurs entières suivantes :
 

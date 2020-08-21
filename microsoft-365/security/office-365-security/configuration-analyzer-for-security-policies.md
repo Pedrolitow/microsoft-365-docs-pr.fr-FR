@@ -8,7 +8,7 @@ manager: dansimp
 ms.reviewer: ''
 ms.date: ''
 audience: ITPro
-ms.topic: article
+ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
@@ -17,12 +17,12 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Les administrateurs peuvent apprendre à utiliser l’analyseur de configuration pour rechercher et corriger des stratégies de sécurité qui contiennent des paramètres inférieurs aux stratégies de sécurité standard protection prédéfinie protection et protection stricte.
-ms.openlocfilehash: 259d498646ecf893a57a608a37e3b771083716cc
-ms.sourcegitcommit: fab425ea4580d1924fb421e6db233d135f5b7d19
+ms.openlocfilehash: 4515efcd73d40eae93523c6ef139553420e48677
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "46533969"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46825772"
 ---
 # <a name="configuration-analyzer-for-protection-policies-in-eop-and-office-365-atp"></a>Configuration Analyzer pour les stratégies de protection dans EOP et Office 365 ATP
 

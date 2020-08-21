@@ -6,19 +6,19 @@ ms.author: chrisda
 author: chrisda
 manager: dansimp
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: Les administrateurs peuvent apprendre à utiliser le rapport et l’analyseur d’authentification SMTP dans le tableau de bord de flux de messagerie dans le centre de sécurité & conformité afin de surveiller les expéditeurs de messages électroniques de leur organisation qui utilisent SMTP authentifié (authentification SMTP) pour envoyer des messages électroniques.
-ms.openlocfilehash: afdcf01260dd6dfcaf6b53d107e5addd007b1fb3
-ms.sourcegitcommit: c04f1207cfaddac2a9abef38967c17d689756a96
+ms.openlocfilehash: 65e5569bcd79caef071ee2103d18a4e985c19dbb
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "46577213"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46826868"
 ---
 # <a name="smtp-auth-clients-insight-and-report-in-the-security--compliance-center"></a>Clients d’authentification SMTP Insight and report dans le centre de conformité & Security
 
@@ -73,7 +73,7 @@ Si vous cliquez sur **afficher les détails table**, les informations affichées
   - **TLS 1.2%**<sup>\*</sup>
   - **Nombre de messages**
 
-  <sup>\*</sup>Cette colonne indique à la fois le pourcentage et le nombre de messages provenant de l’expéditeur.
+  <sup>\*</sup> Cette colonne indique à la fois le pourcentage et le nombre de messages provenant de l’expéditeur.
 
 Si vous cliquez sur **filtres** dans un affichage tableau détaillé, vous pouvez spécifier une plage de dates avec **Date de début** et date de **fin**.
 
@@ -85,6 +85,6 @@ Cliquez sur **demander un rapport** pour recevoir une version plus détaillée d
 
 Pour revenir à l’affichage rapports, cliquez sur **afficher le rapport**.
 
-## <a name="related-topics"></a>Sujets associés
+## <a name="related-topics"></a>Rubriques connexes
 
 Pour plus d’informations sur les autres informations du tableau de bord de flux de messagerie, consultez [la rubrique mail Flow Insights in the Security & Compliance Center](mail-flow-insights-v2.md).

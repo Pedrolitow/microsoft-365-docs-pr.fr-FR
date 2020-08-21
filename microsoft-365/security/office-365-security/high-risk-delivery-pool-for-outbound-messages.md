@@ -7,7 +7,7 @@ author: chrisda
 manager: dansimp
 ms.date: ''
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
@@ -16,12 +16,12 @@ ms.assetid: ac11edd9-2da3-462d-8ea3-bbf9dbc6f948
 ms.collection:
 - M365-security-compliance
 description: Découvrez comment les pools de remise sont utilisés pour protéger la réputation des serveurs de messagerie dans les centres de connaissances Microsoft 365.
-ms.openlocfilehash: 213149eda3dd121b65b64e3bddbb4bd73d66f57c
-ms.sourcegitcommit: 6746fae2f68400fd985711b1945b66766d2a59a4
+ms.openlocfilehash: 83ea21a9230240f1339513efc75587f3d84733cb
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "44419159"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46827736"
 ---
 # <a name="outbound-delivery-pools"></a>Pools de remise sortants
 
@@ -56,6 +56,6 @@ Tous ces problèmes peuvent entraîner une augmentation soudaine du nombre de no
 
 ## <a name="relay-pool"></a>Pool de relais
 
-Les messages qui sont transférés ou relayés à partir de Microsoft 365 sont envoyés à l’aide d’un pool de relais spécial, étant donné que la destination finale ne doit pas considérer Microsoft 365 comme l’expéditeur réel. Il est également important pour nous d’isoler ce trafic, car il existe des scénarios légitimes et illegitmate pour le transfert de courriers électroniques à partir de Microsoft 365. À l’instar du pool de remise à haut risque, un pool d’adresses IP distinct est utilisé pour le courrier relayé. Ce pool d’adresses n’est pas publié, car il peut être modifié fréquemment. 
+Les messages qui sont transférés ou relayés à partir de Microsoft 365 sont envoyés à l’aide d’un pool de relais spécial, étant donné que la destination finale ne doit pas considérer Microsoft 365 comme l’expéditeur réel. Il est également important pour nous d’isoler ce trafic, car il existe des scénarios légitimes et non valides pour le transfert de courriers électroniques à partir de Microsoft 365. À l’instar du pool de remise à haut risque, un pool d’adresses IP distinct est utilisé pour le courrier relayé. Ce pool d’adresses n’est pas publié, car il peut être modifié fréquemment.
 
 Microsoft 365 doit vérifier que l’expéditeur d’origine est légitime, afin que nous puissions le transmettre en toute confiance. Pour ce faire, l’authentification de messagerie (SPF, DKIM et DMARC) doit être transmise lorsque le message est envoyé à nous. Dans les cas où nous pouvons authentifier l’expéditeur, nous utilisons la réécriture de l’expéditeur pour aider le destinataire à savoir que le message transféré provient d’une source approuvée. Vous pouvez en savoir plus sur la façon dont cela fonctionne et sur les actions que vous pouvez effectuer pour vous assurer que le domaine d’envoi transmet l’authentification dans le [modèle de réécriture d’expéditeur (SRS)](https://docs.microsoft.com/office365/troubleshoot/antispam/sender-rewriting-scheme).

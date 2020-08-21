@@ -7,7 +7,7 @@ author: chrisda
 manager: dansimp
 ms.date: ''
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
@@ -19,12 +19,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Les administrateurs peuvent en savoir plus sur l’usurpation d’identité dans Exchange Online Protection (EOP), où vous pouvez autoriser ou bloquer des expéditeurs usurpés spécifiques.
-ms.openlocfilehash: e1c282076d054c338a02a50412ec376406f5ce98
-ms.sourcegitcommit: df6cc8c2eb2a65c7668f2953b0f7ec783a596d15
+ms.openlocfilehash: 66cfc419c3e2f3a5dd8ad45cdb9fe651b613679b
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/13/2020
-ms.locfileid: "44726747"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46826576"
 ---
 # <a name="configure-spoof-intelligence-in-eop"></a>Configurer l’intelligence des usurpations d’identité dans EOP
 
@@ -35,17 +35,13 @@ Lorsqu’un expéditeur usurpe une adresse de messagerie, il semble être un uti
 - Scénarios légitimes pour l’usurpation des domaines internes :
 
   - Les expéditeurs tiers utilisent votre domaine pour envoyer du courrier en nombre à vos employés pour les sondages de sociétés.
-
   - Une société externe génère et envoie des mises à jour de la publicité ou des produits en votre nom.
-
   - Un assistant doit régulièrement envoyer un message électronique à une autre personne au sein de votre organisation.
-
   - Une application interne envoie des notifications par courrier électronique.
 
 - Scénarios légitimes pour l’usurpation de domaines externes :
 
   - L’expéditeur figure sur une liste de publipostage (également appelée liste de discussion) et la liste de distribution relaie le courrier de l’expéditeur d’origine vers tous les participants de la liste de distribution.
-
   - Une société externe envoie un courrier électronique au nom d’une autre société (par exemple, un rapport automatisé ou une société de service de logiciel).
 
 L’intelligence d’usurpation d’identité, et en particulier la stratégie d’intelligence d’usurpation par défaut (et uniquement), permet de s’assurer que le courrier électronique usurpé envoyé par des expéditeurs légitimes ne se trouve pas dans les filtres de courrier indésirable EOP ou les systèmes de messagerie externes, tout en protégeant vos utilisateurs contre le courrier indésirable ou le hameçonnage
@@ -58,17 +54,17 @@ Vous pouvez gérer l’aide à la décision dans le centre de sécurité & confo
 
 - Pour vous connecter à Exchange Online PowerShell, voir [Connexion à Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell). Pour vous connecter à un service Exchange Online Protection PowerShell autonome, voir [Se connecter à Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
-- Avant de pouvoir effectuer les procédures décrites dans cette rubrique, vous devez disposer des autorisations suivantes :
+- Des autorisations doivent vous être attribuées avant de pouvoir exécuter ces procédures. décrites dans cette rubrique :
 
   - Pour modifier la stratégie d’intelligence de falsification ou activer ou désactiver l’aide à l’usurpation d’identité, vous devez être membre de l’un des groupes de rôles suivants :
 
-    - **Gestion** de l’organisation ou **administrateur de sécurité** dans le [Centre de sécurité & conformité](permissions-in-the-security-and-compliance-center.md).
-    - Gestion de l' **organisation** ou gestion de l' **hygiène** dans [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
+    - **Gestion de l’organisation** ou **Administrateur de sécurité** dans le [Centre de sécurité et de conformité](permissions-in-the-security-and-compliance-center.md).
+    - **Gestion de l’organisation** ou **Gestion de l’hygiène** dans [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
 
   - Pour un accès en lecture seule à la stratégie d’aide à la décision, vous devez être membre de l’un des groupes de rôles suivants :
 
-    - **Lecteur de sécurité** dans le [centre de sécurité & conformité](permissions-in-the-security-and-compliance-center.md).
-    - **Gestion de l’organisation en affichage seul** dans [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
+    - **Lecteur de sécurité** dans le [Centre de conformité et sécurité](permissions-in-the-security-and-compliance-center.md).
+    - **Gestion de l’organisation en affichage seul** dans[Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
 
 - Pour connaître les paramètres recommandés pour l’intelligence d’usurpation, voir paramètres de la [stratégie anti-hameçonnage par défaut EOP](recommended-settings-for-eop-and-office365-atp.md#eop-default-anti-phishing-policy-settings).
 

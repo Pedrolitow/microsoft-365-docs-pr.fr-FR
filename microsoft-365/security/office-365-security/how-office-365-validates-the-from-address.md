@@ -7,7 +7,7 @@ author: chrisda
 manager: dansimp
 ms.date: ''
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Les administrateurs peuvent en savoir plus sur les types d’adresses de messagerie qui sont acceptés ou refusés par Exchange Online Protection (EOP) et Outlook.com afin d’empêcher le hameçonnage.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f16bb9b0af1ca5481437ef253c6d36dd519ff9e2
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: c67cf5855f2b0a99cf8d03bb6d7ba8557329b300
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44209450"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46827420"
 ---
 # <a name="how-eop-validates-the-from-address-to-prevent-phishing"></a>Comment EOP valide l’adresse de pour empêcher le hameçonnage
 
@@ -72,13 +72,13 @@ Les adresses de messagerie suivantes sont valides :
 
 - `From: <sender@contoso.com>`
 
-- `From: < sender@contoso.com >`(Non recommandé, car il y a des espaces entre les chevrons et l’adresse de messagerie.)
+- `From: < sender@contoso.com >` (Non recommandé, car il y a des espaces entre les chevrons et l’adresse de messagerie.)
 
 - `From: "Sender, Example" <sender.example@contoso.com>`
 
 - `From: "Microsoft 365" <sender@contoso.com>`
 
-- `From: Microsoft 365 <sender@contoso.com>`(Non recommandé, car le nom d’affichage n’est pas entouré de guillemets doubles.)
+- `From: Microsoft 365 <sender@contoso.com>` (Non recommandé, car le nom d’affichage n’est pas entouré de guillemets doubles.)
 
 Les adresses de messagerie suivantes ne sont pas valides :
 
@@ -88,19 +88,19 @@ Les adresses de messagerie suivantes ne sont pas valides :
 
   Désormais, les messages dont l’adresse est vide à partir de ne sont plus acceptés.
 
-- `From: Microsoft 365 sender@contoso.com`(Le nom complet est présent, mais l’adresse de messagerie n’est pas entourée de crochets pointus.)
+- `From: Microsoft 365 sender@contoso.com` (Le nom complet est présent, mais l’adresse de messagerie n’est pas entourée de crochets pointus.)
 
-- `From: "Microsoft 365" <sender@contoso.com> (Sent by a process)`(Texte après l’adresse de messagerie.)
+- `From: "Microsoft 365" <sender@contoso.com> (Sent by a process)` (Texte après l’adresse de messagerie.)
 
-- `From: Sender, Example <sender.example@contoso.com>`(Le nom complet contient une virgule, mais n’est pas entouré de guillemets doubles.)
+- `From: Sender, Example <sender.example@contoso.com>` (Le nom complet contient une virgule, mais n’est pas entouré de guillemets doubles.)
 
-- `From: "Microsoft 365 <sender@contoso.com>"`(La valeur entière est placée de manière incorrecte entre guillemets doubles.)
+- `From: "Microsoft 365 <sender@contoso.com>"` (La valeur entière est placée de manière incorrecte entre guillemets doubles.)
 
-- `From: "Microsoft 365 <sender@contoso.com>" sender@contoso.com`(Le nom complet est présent, mais l’adresse de messagerie n’est pas entourée de crochets pointus.)
+- `From: "Microsoft 365 <sender@contoso.com>" sender@contoso.com` (Le nom complet est présent, mais l’adresse de messagerie n’est pas entourée de crochets pointus.)
 
-- `From: Microsoft 365<sender@contoso.com>`(Pas d’espace entre le nom d’affichage et le crochet pointu gauche.)
+- `From: Microsoft 365<sender@contoso.com>` (Pas d’espace entre le nom d’affichage et le crochet pointu gauche.)
 
-- `From: "Microsoft 365"<sender@contoso.com>`(Aucun espace entre les guillemets doubles de fermeture et le crochet pointu gauche.)
+- `From: "Microsoft 365"<sender@contoso.com>` (Aucun espace entre les guillemets doubles de fermeture et le crochet pointu gauche.)
 
 ## <a name="suppress-auto-replies-to-your-custom-domain"></a>Supprimer les réponses automatiques à votre domaine personnalisé
 

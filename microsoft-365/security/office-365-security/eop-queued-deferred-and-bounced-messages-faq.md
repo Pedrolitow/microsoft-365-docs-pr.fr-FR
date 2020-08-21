@@ -7,19 +7,19 @@ author: chrisda
 manager: dansimp
 ms.date: ''
 audience: ITPro
-ms.topic: article
+ms.topic: troubleshooting
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 9d015a0d-52a0-484d-9a08-121d04f973d3
 ms.custom:
 - seo-marvel-apr2020
 description: Trouvez des réponses aux questions les plus fréquentes sur les messages qui ont été mis en file d’attente, différés ou retournés lors du processus de filtrage Exchange Online Protection (EOP).
-ms.openlocfilehash: 38e72a04e855862c621bd2b170c11407e0d22af3
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 76fe08f3a83321b6c0549dae5f1382ead5f0b3ae
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44206591"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46827748"
 ---
 # <a name="eop-queued-deferred-and-bounced-messages-faq"></a>Questions fréquemment posées sur les messages mis en file d’attente, différés et retournés dans EOP
 

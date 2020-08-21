@@ -6,19 +6,19 @@ ms.author: chrisda
 author: chrisda
 manager: dansimp
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: Les administrateurs peuvent apprendre à utiliser le rapport sur les détails de non-remise dans le tableau de bord de flux de messagerie dans le centre de sécurité & conformité pour surveiller les codes d’erreur les plus fréquemment rencontrés dans les notifications d’échec de remise (également appelés notifications de non-remise) des expéditeurs de votre organisation.
-ms.openlocfilehash: d45382ab5c7e0d0a73487740544f20b9c25a3ad1
-ms.sourcegitcommit: c04f1207cfaddac2a9abef38967c17d689756a96
+ms.openlocfilehash: bdc2a2a16f76f4e6ada629c82b86423422ab56c9
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "46577419"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46826916"
 ---
 # <a name="non-delivery-report-in-the-security--compliance-center"></a>Notification d’échec de remise dans le centre de sécurité & conformité
 
@@ -58,6 +58,6 @@ Lorsque vous sélectionnez une ligne dans le tableau, une fenêtre mobile appara
 
 ![Menu volant des détails après la sélection d’une ligne dans la vue du tableau de détails dans le rapport de non-remise](../../media/mfi-non-delivery-report-details-flyout.png)
 
-## <a name="related-topics"></a>Sujets associés
+## <a name="related-topics"></a>Rubriques connexes
 
 Pour plus d’informations sur les autres informations du tableau de bord de flux de messagerie, consultez [la rubrique mail Flow Insights in the Security & Compliance Center](mail-flow-insights-v2.md).

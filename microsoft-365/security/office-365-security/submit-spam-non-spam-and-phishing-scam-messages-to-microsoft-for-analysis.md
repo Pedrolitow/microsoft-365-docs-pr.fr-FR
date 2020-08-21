@@ -7,7 +7,7 @@ author: chrisda
 manager: dansimp
 ms.date: ''
 audience: ITPro
-ms.topic: article
+ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 description: Les administrateurs et les utilisateurs finaux peuvent apprendre à envoyer des messages électroniques (courrier marqué comme faux ou courrier incorrect) à Microsoft pour analyse.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e90382b39b0cebb70568a53ac5aaeb40ac935f92
-ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
+ms.openlocfilehash: 94f00f8399164a84d2cb9dae0c4c416b73dfb0dc
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46653592"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46827808"
 ---
 # <a name="manually-submit-messages-to-microsoft-for-analysis"></a>Envoi manuel de messages à Microsoft pour analyse
 

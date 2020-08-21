@@ -7,7 +7,7 @@ author: chrisda
 manager: dansimp
 ms.date: ''
 audience: ITPro
-ms.topic: hub-page
+ms.topic: overview
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Apprenez en tant qu’expéditeur externe, comment pouvez-vous augmenter la capacité de remise du courrier électronique aux utilisateurs dans Microsoft 365. Découvrez également comment signaler les tentatives de courrier indésirable & les tentatives de hameçonnage en tant qu’utilisateur externe.
-ms.openlocfilehash: 76fc376d32904b5cb61080e88a38a1dda815836f
-ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
+ms.openlocfilehash: f20d5d64bccb69db47c159a8166fa3532b51e3db
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46652764"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46825184"
 ---
 # <a name="sending-mail-to-microsoft-365"></a>Envoi de messages électroniques à Microsoft 365
 

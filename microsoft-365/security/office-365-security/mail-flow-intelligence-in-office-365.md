@@ -6,21 +6,21 @@ ms.author: chrisda
 author: chrisda
 manager: dansimp
 audience: ITPro
-ms.topic: article
+ms.topic: troubleshooting
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: c29f75e5-c16e-409e-a123-430691e38276
 description: Les administrateurs peuvent en savoir plus sur les codes d’erreur associés à la remise des messages à l’aide de connecteurs (également appelés intelligence de flux de messagerie).
-ms.openlocfilehash: 55b57e4b487444abb57bcc184ef6fd742ea9dc1d
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: b345b52f572efca2aca1fde6ba720d733e521cc4
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44206615"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46827712"
 ---
-# <a name="mail-flow-intelligence-in-eop"></a>Intelligence de flux de messagerie dans EOP
+# <a name="mail-flow-intelligence-in-eop"></a>Renseignements sur le flux de messagerie dans EOP
 
 Dans les organisations Microsoft 365 avec des boîtes aux lettres dans Exchange Online ou des organisations Exchange Online Protection (EOP) autonomes sans boîtes aux lettres Exchange Online, vous utilisez généralement un connecteur pour acheminer les messages électroniques d’EOP vers votre environnement de messagerie local. Vous pouvez également utiliser un connecteur pour router les messages de Microsoft 365 vers une organisation partenaire. Lorsque Microsoft 365 ne peut pas fournir ces messages via le connecteur, ils sont mis en file d’attente dans Microsoft 365. Microsoft 365 continue de relancer la remise de chaque message pendant 24 heures. Au bout de 24 heures, le message en file d’attente expire et le message est renvoyé à l’expéditeur d’origine dans une notification d’échec de remise (également appelée notification de non-remise).
 
@@ -74,13 +74,13 @@ En règle générale, cette erreur signifie que Microsoft 365 a rencontré une e
 
        - Supprimez le connecteur en cliquant sur **supprimer** l' ![ icône Supprimer.](../../media/adf01106-cc79-475c-8673-065371c1897b.gif)
 
-       - Désactivez le connecteur en cliquant sur **modifier** l' ![ icône modifier, puis désactivez la case à ](../../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif) cocher **activer**.
+       - Désactivez le connecteur en cliquant sur **modifier** l' ![ icône modifier, puis désactivez l’option ](../../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif) **activer**.
 
   - Modifiez le domaine accepté dans Microsoft 365 qui est associé à votre environnement de messagerie local de **relais interne** à **faisant autorité**. Pour obtenir des instructions, consultez la rubrique [gestion des domaines acceptés dans Exchange Online](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains).
 
   **Remarque**: en règle générale, ces modifications prennent entre 30 minutes et une heure pour prendre effet. Après une heure, vérifiez que vous ne recevez plus l’erreur.
 
-- Si votre organisation partenaire (par exemple, un fournisseur de services cloud tiers) est à l'origine de l'erreur, vous devez contacter votre partenaire afin de résoudre le problème.
+- Si votre organisation partenaire (par exemple, un fournisseur de services cloud tiers) est à l’origine de l’erreur, vous devez contacter votre partenaire afin de résoudre le problème.
 
 ## <a name="error-code-450-44317-cannot-connect-to-remote-server"></a>Code d’erreur : 450 4.4.317 La connexion au serveur distant a échoué
 
@@ -94,7 +94,7 @@ En règle générale, cette erreur signifie que Microsoft 365 est connecté au s
 
 - Vérifiez les certificats et les paramètres TLS sur vos serveurs de messagerie locaux, ainsi que les paramètres TLS sur le connecteur.
 
-- Si votre organisation partenaire (par exemple, un fournisseur de services cloud tiers) est à l'origine de l'erreur, vous devez contacter votre partenaire afin de résoudre le problème.
+- Si votre organisation partenaire (par exemple, un fournisseur de services cloud tiers) est à l’origine de l’erreur, vous devez contacter votre partenaire afin de résoudre le problème.
 
 ## <a name="error-code-450-44318-connection-was-closed-abruptly"></a>Code d’erreur : 450 4.4.318 La connexion a été interrompue brusquement
 
@@ -112,7 +112,7 @@ En règle générale, cette erreur signifie que Microsoft 365 rencontre des diff
 
 - Si le problème est dû à des problèmes de réseau entre votre environnement local et Microsoft 365, contactez votre équipe réseau pour résoudre le problème.
 
-- Si votre organisation partenaire (par exemple, un fournisseur de services cloud tiers) est à l'origine de l'erreur, vous devez contacter votre partenaire afin de résoudre le problème.
+- Si votre organisation partenaire (par exemple, un fournisseur de services cloud tiers) est à l’origine de l’erreur, vous devez contacter votre partenaire afin de résoudre le problème.
 
 ## <a name="error-code-450-47320-certificate-validation-failed"></a>Code d’erreur : 450 4.7.320 Échec de la validation du certificat
 
@@ -128,7 +128,7 @@ En règle générale, cette erreur signifie que Microsoft 365 a rencontré une e
 
 - Corrigez le certificat ou les paramètres sur le connecteur afin que les messages en file d’attente dans Microsoft 365 puissent être remis.
 
-- Si votre organisation partenaire (par exemple, un fournisseur de services cloud tiers) est à l'origine de l'erreur, vous devez contacter votre partenaire afin de résoudre le problème.
+- Si votre organisation partenaire (par exemple, un fournisseur de services cloud tiers) est à l’origine de l’erreur, vous devez contacter votre partenaire afin de résoudre le problème.
 
 ## <a name="other-error-codes"></a>Autres codes d’erreur
 

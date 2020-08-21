@@ -6,18 +6,18 @@ ms.author: chrisda
 author: chrisda
 manager: dansimp
 audience: ITPro
-ms.topic: article
+ms.topic: overview
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: beb6acaa-6016-4d54-ba7e-3d6d035e2b46
 description: Les administrateurs peuvent en savoir plus sur les informations et les rapports disponibles dans le tableau de bord de flux de messagerie dans le centre de sécurité & conformité.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 977dcef82a4f32980898c7b4392d011340e3d0a2
-ms.sourcegitcommit: c04f1207cfaddac2a9abef38967c17d689756a96
+ms.openlocfilehash: 06e9449553d008bc383ae6f2b6098f9598cad43c
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "46577788"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46826564"
 ---
 # <a name="mail-flow-insights-in-the-security--compliance-center"></a>Informations sur le flux de messagerie dans le centre de sécurité et conformité
 
@@ -27,13 +27,13 @@ Les administrateurs peuvent utiliser le tableau de bord de flux de messagerie da
 
 Les informations disponibles sont les suivantes :
 
-- [Aperçu des messages transmis automatiquement](mfi-auto-forwarded-messages-report.md)
+- [Aperçu des messages transférés automatiquement](mfi-auto-forwarded-messages-report.md)
 
 - [Correction possible de mail Loop Insight](mfi-mail-loop-insight.md)<sup>1</sup>
 
 - [Corriger le ralentissement des règles de flux de messagerie Insight](mfi-slow-mail-flow-rules-insight.md)<sup>1</sup>
 
-- [Carte de flux de messagerie](mfi-mail-flow-map-report.md)
+- [Carte du flux de messagerie](mfi-mail-flow-map-report.md)
 
 - [Nouveaux domaines transmis par email Insight](mfi-new-domains-being-forwarded-email.md)<sup>2</sup>
 
@@ -43,11 +43,11 @@ Les informations disponibles sont les suivantes :
 
 - [Rapport de non-remise](mfi-non-delivery-report.md)
 
-- [Aperçu du flux de messagerie sortant et entrant](mfi-outbound-and-inbound-mail-flow.md)
+- [Informations sur le flux de courrier entrant et sortant](mfi-outbound-and-inbound-mail-flow.md)
 
-- [Vue d’attente](mfi-queue-alerts-and-queues.md)
+- [Informations sur les files d’attente](mfi-queue-alerts-and-queues.md)
 
-- [Aperçu et rapport des clients d’authentification SMTP](mfi-smtp-auth-clients-report.md)
+- [Informations et rapports sur les clients SMTP AUTH](mfi-smtp-auth-clients-report.md)
 
 - [Informations sur l’état du flux de courrier des principaux domaines](mfi-domain-mail-flow-status-insight.md)
 

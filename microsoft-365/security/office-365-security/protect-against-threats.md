@@ -6,7 +6,7 @@ ms.author: chrisda
 author: chrisda
 manager: dansimp
 audience: Admin
-ms.topic: hub-page
+ms.topic: overview
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.date: ''
@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Les administrateurs peuvent en savoir plus sur la protection contre les menaces dans Microsoft 365 et configurer la façon de l’utiliser pour votre organisation.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 8c2786ebda18b5730e1cbe93316f0d6cc319f6a9
-ms.sourcegitcommit: fa8e488936a36e4b56e1252cb4061b5bd6c0eafc
+ms.openlocfilehash: 8f1cecbb3141b4751778212025e5aad582707e12
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "46656627"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46826824"
 ---
 # <a name="protect-against-threats"></a>Protéger contre les menaces
 
@@ -48,7 +48,7 @@ Les fonctionnalités de protection contre les menaces sont incluses dans tous le
 |Protection avancée contre le hameçonnage|[Office 365 – Protection avancée contre les menaces](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)|
 |Protection anti-courrier indésirable|[Exchange Online Protection](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)|
 |Purge automatique avec zéro heure (pour la messagerie électronique)|[Exchange Online Protection](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)|
-|Journalisation d’audit (utilisé à des fins de création de rapports)|[Exchange Online](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-service-description)|
+|Journalisation d’audit (utilisé à des fins de création de rapports)|[Exchange Online](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-service-description)|
 |
 
 ### <a name="roles-and-permissions"></a>Rôles et autorisations
@@ -110,7 +110,7 @@ Pour configurer des [pièces jointes sûres ATP](atp-safe-attachments.md), vous 
 
 5. Cliquez sur **Enregistrer**.
 
-6. (**Étape supplémentaire recommandée**) En tant qu’administrateur général ou administrateur SharePoint Online, exécutez la cmdlet **[Set-SPOTenant](https://docs.microsoft.com/powershell/module/sharepoint-online/Set-SPOTenant)** avec le paramètre **DisallowInfectedFileDownload** défini sur *true* pour votre environnement Microsoft 365. (Cela empêche les personnes d’ouvrir, de transférer, de copier ou de partager des fichiers détectés comme malveillants.)
+6. (**Étape supplémentaire recommandée**) En tant qu’administrateur général ou administrateur SharePoint Online, exécutez la cmdlet **[Set-SPOTenant](https://docs.microsoft.com/powershell/module/sharepoint-online/Set-SPOTenant)** avec le paramètre **DisallowInfectedFileDownload** défini sur  *true* pour votre environnement Microsoft 365. (Cela empêche les personnes d’ouvrir, de transférer, de copier ou de partager des fichiers détectés comme malveillants.)
 
 Pour en savoir plus, consultez la rubrique [configurer des stratégies de pièces jointes approuvées ATP office 365](set-up-atp-safe-attachments-policies.md) et [activer Office 365 ATP pour SharePoint, OneDrive et Microsoft teams](turn-on-atp-for-spo-odb-and-teams.md).
 

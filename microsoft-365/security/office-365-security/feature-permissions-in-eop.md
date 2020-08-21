@@ -7,17 +7,17 @@ author: chrisda
 manager: dansimp
 ms.date: ''
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 34674847-a6b7-4a7e-9eaa-b64f22bc150d
 description: En savoir plus sur les autorisations requises pour les tâches dans Exchange Online protection autonome
-ms.openlocfilehash: 2f653fbae49087b8fc1ebc3a97586512965df970
-ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
+ms.openlocfilehash: f9c0f0549ba5a0a65fa3bbe3af1afbfddc6e735c
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46652896"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46826624"
 ---
 # <a name="permissions-in-standalone-eop"></a>Autorisations dans EOP autonome
 
@@ -114,7 +114,7 @@ Les rôles intégrés qui sont disponibles dans la version autonome d’EOP sont
 |Intelligence des menaces en affichage seul<sup>\*</sup>||OrganizationManagement <br/><br/> SecurityAdministrator <br/><br/> SecurityReader|
 |
 
-<sup>\*</sup>Bien que ce rôle soit disponible, il n’est rien utile dans EOP autonome.
+<sup>\*</sup> Bien que ce rôle soit disponible, il n’est rien utile dans EOP autonome.
 
 ## <a name="microsoft-365-permissions-in-standalone-eop"></a>Autorisations Microsoft 365 dans EOP autonome
 

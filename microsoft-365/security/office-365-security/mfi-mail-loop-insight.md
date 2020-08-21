@@ -1,24 +1,24 @@
 ---
-title: Corriger les éventuelles indications de boucle de messagerie
+title: Résoudre les problèmes de boucles de courrier possibles
 f1.keywords:
 - NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: cb801985-3c89-4979-9c18-17829a4cb563
 ms.custom:
 - seo-marvel-apr2020
 description: Les administrateurs peuvent apprendre à utiliser la fonction de résolution des problèmes possibles dans le tableau de bord de flux de messagerie dans le centre de sécurité & Compliance pour identifier et corriger les boucles de messagerie au sein de leur organisation.
-ms.openlocfilehash: 54240cffc534b4be708492b37b827636edab280e
-ms.sourcegitcommit: c04f1207cfaddac2a9abef38967c17d689756a96
+ms.openlocfilehash: 162752ce6981e27d6ae2923aeb0fc33aec42bb0f
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "46577621"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46826952"
 ---
 # <a name="fix-possible-mail-loop-insight-in-the-security--compliance-center"></a>Corriger les éventuelles boucles de courrier dans le centre de sécurité & conformité
 
@@ -38,6 +38,6 @@ Lorsque vous cliquez sur **afficher les détails** dans le widget, un lanceur ap
 
 ![Fenêtre volante de détails qui apparaît après avoir cliqué sur Afficher les détails dans la boîte de message de correction possible](../../media/mfi-fix-possible-mail-loop-details.png)
 
-## <a name="related-topics"></a>Sujets associés
+## <a name="related-topics"></a>Rubriques connexes
 
 Pour plus d’informations sur les autres informations du tableau de bord de flux de messagerie, consultez [la rubrique mail Flow Insights in the Security & Compliance Center](mail-flow-insights-v2.md).
