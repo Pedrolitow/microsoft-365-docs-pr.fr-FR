@@ -7,7 +7,7 @@ author: chrisda
 manager: dansimp
 ms.date: ''
 audience: ITPro
-ms.topic: article
+ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
@@ -15,14 +15,14 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Les administrateurs peuvent apprendre à configurer les entrées d’URL dans la liste des clients autorisés/bloqués du centre de sécurité & Compliance Center.
-ms.openlocfilehash: 5ff34cca922f18a015bd9da847facc8177cf8790
-ms.sourcegitcommit: 89178b8f20d59ca88cfca303a13062b91fbeae9d
+ms.openlocfilehash: 888a96f23daf2cf47847466ad4080f310be7f9b4
+ms.sourcegitcommit: 260bbb93bbda62db9e88c021ccccfa75ac39a32e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "46552549"
+ms.lasthandoff: 08/21/2020
+ms.locfileid: "46845941"
 ---
-# <a name="manage-urls-in-the-tenant-allowblock-list"></a>Gérer les URL dans la liste d’autorisation/de blocage de client
+# <a name="manage-urls-in-the-tenant-allowblock-list"></a>Gérer les URL dans la liste verte/rouge du client
 
 > [!NOTE]
 > Les fonctionnalités décrites dans cette rubrique sont en mode aperçu, sont sujettes à modification et ne sont pas disponibles dans toutes les organisations.
@@ -39,7 +39,7 @@ Cette rubrique décrit comment configurer les entrées dans la liste des clients
 
 - Les valeurs d’URL disponibles sont décrites dans la [syntaxe URL de la section liste des clients autorisés/bloqués](#url-syntax-for-the-tenant-allowblock-list) plus loin dans cette rubrique.
 
-- La liste d’adresses client autorisées/bloquées autorise un nombre maximal de 500 entrées pour les URL.
+- La liste d’autorisation/de blocage client autorise un nombre maximal de 500 entrées pour les URL.
 
 - Une entrée doit être active dans les 15 minutes.
 
@@ -257,7 +257,7 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, co
 
     Par exemple, `contoso.com/*` n’inclut pas `contoso.com/a` .
 
-  - `*.com*`n’est pas valide (ce n’est pas un domaine pouvant être résolu et le caractère générique droit ne suit pas une barre oblique).
+  - `*.com*` n’est pas valide (ce n’est pas un domaine pouvant être résolu et le caractère générique droit ne suit pas une barre oblique).
 
   - Les caractères génériques ne sont pas autorisés dans les adresses IP.
 
@@ -281,7 +281,7 @@ Les entrées d’URL valides et leurs résultats sont décrits dans les sections
 
 #### <a name="scenario-no-wildcards"></a>Scénario : pas de caractères génériques
 
-**Entrée**:`contoso.com`
+**Entrée**: `contoso.com`
 
 - **Correspondance autorisée**: contoso.com
 
@@ -309,7 +309,7 @@ Les entrées d’URL valides et leurs résultats sont décrits dans les sections
 
 #### <a name="scenario-left-wildcard-subdomain"></a>Scénario : caractère générique gauche (sous-domaine)
 
-**Entrée**:`*.contoso.com`
+**Entrée**: `*.contoso.com`
 
 - **Autoriser** la correspondance et la **correspondance de bloc**:
 
@@ -325,7 +325,7 @@ Les entrées d’URL valides et leurs résultats sont décrits dans les sections
   
 #### <a name="scenario-right-wildcard-at-top-of-path"></a>Scénario : caractère générique droit en haut du chemin d’accès
 
-**Entrée**:`contoso.com/a/*`
+**Entrée**: `contoso.com/a/*`
 
 - **Autoriser** la correspondance et la **correspondance de bloc**:
 
@@ -342,7 +342,7 @@ Les entrées d’URL valides et leurs résultats sont décrits dans les sections
   
 #### <a name="scenario-left-tilde"></a>Scénario : tilde gauche
 
-**Entrée**:`~contoso.com`
+**Entrée**: `~contoso.com`
 
 - **Autoriser** la correspondance et la **correspondance de bloc**:
 
@@ -358,7 +358,7 @@ Les entrées d’URL valides et leurs résultats sont décrits dans les sections
 
 #### <a name="scenario-right-wildcard-suffix"></a>Scénario : suffixe de caractère générique droit
 
-**Entrée**:`contoso.com/*`
+**Entrée**: `contoso.com/*`
 
 - **Autoriser** la correspondance et la **correspondance de bloc**:
 
@@ -374,7 +374,7 @@ Les entrées d’URL valides et leurs résultats sont décrits dans les sections
 
 #### <a name="scenario-left-wildcard-subdomain-and-right-wildcard-suffix"></a>Scénario : sous-domaine du caractère générique gauche et suffixe générique droit
 
-**Entrée**:`*.contoso.com/*`
+**Entrée**: `*.contoso.com/*`
 
 - **Autoriser** la correspondance et la **correspondance de bloc**:
 
@@ -388,7 +388,7 @@ Les entrées d’URL valides et leurs résultats sont décrits dans les sections
 
 #### <a name="scenario-left-and-right-tilde"></a>Scénario : tilde gauche et droit
 
-**Entrée**:`~contoso.com~`
+**Entrée**: `~contoso.com~`
 
 - **Autoriser** la correspondance et la **correspondance de bloc**:
 
@@ -405,7 +405,7 @@ Les entrées d’URL valides et leurs résultats sont décrits dans les sections
 
 #### <a name="scenario-ip-address"></a>Scénario : adresse IP
 
-**Entrée**:`1.2.3.4`
+**Entrée**: `1.2.3.4`
 
 - **Autoriser la correspondance** et la **correspondance de bloc**: 1.2.3.4
 
@@ -416,7 +416,7 @@ Les entrées d’URL valides et leurs résultats sont décrits dans les sections
 
 #### <a name="ip-address-with-right-wildcard"></a>Adresse IP avec caractère générique droit
 
-**Entrée**:`1.2.3.4/*`
+**Entrée**: `1.2.3.4/*`
 
 - **Autoriser** la correspondance et la **correspondance de bloc**:
 

@@ -7,7 +7,7 @@ author: chrisda
 manager: dansimp
 ms.date: ''
 audience: ITPro
-ms.topic: article
+ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
@@ -15,12 +15,12 @@ search.appverid:
 ms.assetid: 887c710b-0ec6-4ff0-8065-5f05f74afef3
 description: Les administrateurs peuvent en savoir plus sur l’utilisation de S/MIME (Secure/Multipurpose Internet Mail Extensions) dans Exchange Online pour chiffrer les messages électroniques et les signer numériquement.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 95bbab5161f9e4133223a247f8937c68f29c0590
-ms.sourcegitcommit: 7a59d83a8660c2344ebdb92e0ea0171c9c2d9498
+ms.openlocfilehash: ca865fa8ef658b4715d18e09fe9cbc1cffb201e6
+ms.sourcegitcommit: 260bbb93bbda62db9e88c021ccccfa75ac39a32e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44811013"
+ms.lasthandoff: 08/21/2020
+ms.locfileid: "46845919"
 ---
 # <a name="smime-for-message-signing-and-encryption-in-exchange-online"></a>S/MIME pour la signature et le chiffrement des messages dans Exchange Online
 
@@ -33,14 +33,18 @@ En tant qu’administrateur Exchange Online, vous pouvez activer la sécurité b
 Vous pouvez configurer la norme S/MIME afin qu'elle fonctionne avec n'importe lequel des points de terminaison suivants :
 
 - Outlook 2010 ou version ultérieure
-
 - Outlook sur le web (anciennement nommé Outlook Web App)
-
 - Exchange ActiveSync (EAS)
 
 Les étapes à suivre pour configurer S/MIME avec chacun de ces points de terminaison sont légèrement différentes. En règle générale, vous devez effectuer les étapes suivantes :
 
-1. Installer une autorité de certification reposant sur Windows et configurer une infrastructure à clé publique pour émettre des certificats S/MIME. Les certificats délivrés par des fournisseurs de certificats tiers sont également pris en charge. Pour plus de détails, reportez-vous à [Vue d'ensemble des services de certificats Active Directory](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/hh831740(v=ws.11)).
+1. Installez une autorité de certification Windows et configurez une infrastructure de clé publique pour émettre des certificats S/MIME. Les certificats délivrés par des fournisseurs de certificats tiers sont également pris en charge. Pour plus de détails, reportez-vous à [Vue d'ensemble des services de certificats Active Directory](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/hh831740(v=ws.11)).
+
+   **Remarques** :
+
+   - Les certificats délivrés par une autorité de certification tierce ont l’avantage d’être automatiquement approuvés par tous les clients et les appareils. Les certificats émis par une autorité de certification interne privée ne sont pas automatiquement approuvés par les clients et les appareils, et tous les appareils (par exemple, les téléphones) peuvent être configurés pour approuver les certificats privés.
+
+   - Envisagez d’utiliser un certificat intermédiaire au lieu du certificat racine pour délivrer des certificats aux utilisateurs. De cette manière, si vous avez besoin de révoquer et de réémettre des certificats, le certificat racine reste intact.
 
 2. Publiez le certificat utilisateur dans un compte AD DS sur site dans les attributs **UserSMIMECertificate** et/ou **UserCertificate** .
 
@@ -58,9 +62,7 @@ Les étapes à suivre pour configurer S/MIME avec chacun de ces points de termin
 La configuration de S/MIME pour Exchange Online avec Outlook sur le Web implique les étapes clés suivantes :
 
 1. [Configurer des paramètres S/MIME pour Outlook sur le web](configure-s-mime-settings-for-outlook-web-app.md)
-
 2. [Configuration d’une collection de certificats virtuelle pour la validation des certificats S/MIME](set-up-virtual-certificate-collection-to-validate-s-mime.md)
-
 3. [Synchronisation des certificats utilisateur vers Office 365 pour S/MIME](sync-user-certificates-to-office-365-for-s-mime.md)
 
 ## <a name="related-message-encryption-technologies"></a>Technologies liées au chiffrement des messages
