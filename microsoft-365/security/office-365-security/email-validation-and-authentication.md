@@ -7,7 +7,7 @@ author: chrisda
 manager: dansimp
 ms.date: ''
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.service: O365-seccomp
 search.appverid:
 - MET150
@@ -18,12 +18,12 @@ ms.collection:
 ms.custom: TopSMBIssues
 localization_priority: Priority
 description: Les administrateurs peuvent découvrir comment les services Exchange Online et Exchange Online Protection (EOP) utilisent l’authentification de messagerie électronique (SPF, DKIM et DMARC) pour empêcher l’usurpation d’identité, le hameçonnage et le courrier indésirable.
-ms.openlocfilehash: c79a75f1ae520a0c4f885c923b4a56cdb0f7fb87
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: cc9489a258608080118e88bf1375e4d5f35f8c77
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44209498"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46826648"
 ---
 # <a name="email-authentication-in-eop"></a>Authentification de messagerie électronique dans EOP
 
@@ -41,7 +41,7 @@ Le reste de cette rubrique explique comment fonctionnent ces technologies et com
 
 ## <a name="use-email-authentication-to-help-prevent-spoofing"></a>Utilisez l’authentification de messagerie électronique pour empêcher l’usurpation d’identité
 
-DMARC empêche l’usurpation d’identité en examinant l’adresse **DE** dans les messages (l’adresse de messagerie électronique de l’expéditeur que les utilisateurs voient dans leur client de messagerie). Les organisations de messagerie électronique de destination peuvent également vérifier que le domaine de messagerie électronique a franchi les protocoles SPF ou DKIM, ce qui signifie qu’il a été authentifié et n’est donc pas falsifié. 
+DMARC empêche l’usurpation d’identité en examinant l’adresse **DE** dans les messages (l’adresse de messagerie électronique de l’expéditeur que les utilisateurs voient dans leur client de messagerie). Les organisations de messagerie électronique de destination peuvent également vérifier que le domaine de messagerie électronique a franchi les protocoles SPF ou DKIM, ce qui signifie qu’il a été authentifié et n’est donc pas falsifié.
 
 Toutefois, le problème réside dans le fait que les enregistrements SPF, DKIM et DMARC dans DNS pour l’authentification de messagerie électronique (collectivement appelées stratégies d’authentification de messagerie électronique) sont complètement facultatifs. Dès lors, si les domaines dotés de stratégies d’authentification de messagerie électronique fortes, tels que microsoft.com et skype.com, sont protégés contre l’usurpation d’identité, des domaines dont les stratégies d’authentification de messagerie électronique sont plus faibles, voire inexistantes, constituent des cibles idéales pour de telles usurpations.
 
@@ -61,7 +61,7 @@ Pour lire l’annonce générale de Microsoft Corporation, voir [A Sea of Phish 
 
 Si les filtrages SPF, DKIM et DMARC sont utiles en soi, ils ne communiquent pas suffisamment l’état d’authentification quand un message n’a pas d’enregistrement d’authentification explicite. C’est pourquoi Microsoft Corporation a développé un algorithme pour l’authentification implicite de messagerie électronique combinant plusieurs signaux en une valeur unique appelée _Authentification composite_, abrégée en compauth. La valeur compauth est estampillée dans l’en-tête **Authentication-Results**, à l’intérieur des en-têtes de message.
 
-> Authentication-Results :<br/>&nbsp;&nbsp;&nbsp;compauth=\<échec | transmise | softpass | aucune\> raison=\<yyy\>
+> Authentication-Results :<br/>&nbsp;&nbsp;&nbsp;compauth=\<fail | pass | softpass | none\> reason=\<yyy\>
 
 Ces valeurs sont expliquées dans [En-tête de message d’authentification-résultats](anti-spam-message-headers.md#authentication-results-message-header).
 
