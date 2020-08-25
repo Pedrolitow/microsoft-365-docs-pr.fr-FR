@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 85d1a7d5a5507e674c4c9bb5c579322a1ca1c4b6
-ms.sourcegitcommit: a08103bc120bdec7cfeaf67c1be4e221241e69ad
+ms.openlocfilehash: 46a45eac2fe5d1a19b0d2c40c6c1405f31b7f7f7
+ms.sourcegitcommit: 787b198765565d54ee73972f664bdbd5023d666b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "45200085"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "46866706"
 ---
 # <a name="track-your-microsoft-secure-score-history-and-meet-goals"></a>Suivi de votre historique de score sécurisé Microsoft et atteindre les objectifs
 
@@ -50,10 +50,10 @@ Pour afficher l’historique de cette action d’amélioration spécifique, sél
 Dans l’onglet **mesures & tendances** , il existe plusieurs graphiques et graphiques qui vous permettent de mieux comprendre les tendances et de définir les objectifs. Vous pouvez définir la plage de dates pour la page entière des visualisations. Les visualisations sont les suivantes :
 
 * **Votre zone de score sécurisée** , personnalisée en fonction des objectifs de votre organisation et des définitions des plages de scores correctes, correctes et incorrectes.
-* **Tendance de régression** : chronologie de points qui ont régressé en raison de modifications apportées à la configuration, à l’utilisateur ou au périphérique.  
-* **Tendance de comparaison** — le score de sécurité de votre organisation est comparé à d’autres utilisateurs. Cet affichage peut inclure des lignes représentant le score moyen des organisations avec un nombre de sièges similaires et un affichage de comparaison personnalisé que vous pouvez définir.
-* **Tendance d’acceptation des risques** — chronologie des actions d’amélioration marquées comme « risque accepté ».
-* Modifier le **score** — nombre de points obtenus, points régressés, ainsi que la modification de score suivante, dans la plage de dates spécifiée.
+* **Tendance de régression** : chronologie de points qui ont régressé en raison de modifications de configuration, d’utilisateur ou d’appareil.  
+* **Tendance de comparaison** : le score de sécurité de votre organisation est comparé à d’autres utilisateurs. Cet affichage peut inclure des lignes représentant le score moyen des organisations avec un nombre de sièges similaires et un affichage de comparaison personnalisé que vous pouvez définir.
+* **Tendance d’acceptation des risques** -chronologie des actions d’amélioration marquées comme « risque accepté ».
+* **Variations de score** : nombre de points obtenus, points régressés, ainsi que le changement de score suivant, dans la plage de dates spécifiée.
 
 ### <a name="compare-your-score-to-organizations-like-yours"></a>Comparez votre score aux organisations comme la vôtre
 
@@ -67,15 +67,15 @@ Le deuxième emplacement se trouve dans l’onglet **mesures & tendances** , dan
 
 ![Graphique linéaire des scores d’une organisation similaire au fil du temps](../../media/secure-score/secure-score-comparison-trend.png)
 
-Dans les deux graphiques, vous pouvez sélectionner **gérer les comparaisons** pour afficher et modifier les informations de votre organisation. Vous pouvez également créer une comparaison personnalisée basée sur l’industrie, la taille de l’organisation, les licences et les régions. 
+Dans les deux graphiques, vous pouvez sélectionner **gérer les comparaisons** pour afficher et modifier les informations de votre organisation. Vous pouvez également créer une comparaison personnalisée basée sur l’industrie, la taille de l’organisation, les licences et les régions.
 
 ## <a name="we-want-to-hear-from-you"></a>Nous souhaitons être informés
 
-Si vous rencontrez des problèmes, indiquez-nous en publiant dans la communauté [Security, Privacy & Compliance](https://techcommunity.microsoft.com/t5/Security-Privacy-Compliance/bd-p/security_privacy) . Nous Surveillez la communauté et vous fournirons de l’aide.
+Si vous rencontrez des problèmes, informez-le en publiant dans la communauté [Security, Privacy & Compliance](https://techcommunity.microsoft.com/t5/Security-Privacy-Compliance/bd-p/security_privacy) . Nous Surveillez la communauté et vous fournirons de l’aide.
 
 ## <a name="related-resources"></a>Ressources connexes
 
 - [Présentation de Microsoft Secure score](microsoft-secure-score.md)
-- [Évaluer votre position de sécurité](microsoft-secure-score-improvement-actions.md)
+- [Évaluez votre posture de sécurité](microsoft-secure-score-improvement-actions.md)
 - [Nouveautés](microsoft-secure-score-whats-coming.md)
 - [Nouveautés](microsoft-secure-score-whats-new.md)

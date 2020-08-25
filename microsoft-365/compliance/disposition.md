@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Surveiller et gérer la suppression du contenu, que vous utilisiez une révision de disposition ou que le contenu soit automatiquement supprimé en fonction des paramètres que vous avez configurés.
-ms.openlocfilehash: 7548ab12b72aa75047caa373efe3e7c3eb7c5d31
-ms.sourcegitcommit: 1780359234abdf081097c8064438d415da92fb85
+ms.openlocfilehash: e70160ef309ad421724f9ad40db0d7c6e00df136
+ms.sourcegitcommit: 787b198765565d54ee73972f664bdbd5023d666b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "46778534"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "46867209"
 ---
 # <a name="disposition-of-content"></a>Disposition de contenu
 
@@ -35,18 +35,14 @@ Pour gérer les révisions de disposition et vérifier que les enregistrements o
 
 ### <a name="permissions-for-disposition"></a>Autorisations pour la disposition
 
-Pour accéder à l’onglet **disposition** dans le centre de conformité Microsoft 365, les utilisateurs doivent disposer du rôle gestion de la **disposition** et du rôle **journaux d’audit en affichage seul** . Bien que le Conseil standard consiste à ajouter des utilisateurs aux groupes de rôles par défaut, dans ce cas, nous vous recommandons de créer un nouveau groupe de rôles appelé **Relecteurs de disposition** qui a ces deux rôles et d’ajouter des utilisateurs à ce groupe en fonction de vos besoins. Un groupe de rôles unique pour la disposition réduit les frais généraux d’administration et permet aux utilisateurs d’obtenir plus facilement les autorisations combinées dont ils ont besoin.
+Pour accéder à l’onglet **disposition** dans le centre de conformité Microsoft 365, les utilisateurs doivent disposer du rôle d’administrateur de **gestion** des dispositions. Ce rôle est inclus dans les groupes de rôles d’administrateur par défaut, **administrateur de conformité** et administrateur des **données de conformité**.
+
+Pour accorder aux utilisateurs ce rôle de gestion de disposition obligatoire, ajoutez-les à l’un de ces groupes de rôles par défaut ou créez un groupe de rôles personnalisé (par exemple, « Reviewers de disposition ») et accordez à ce groupe le rôle de gestion de disposition.  
 
 > [!NOTE]
-> Même un administrateur global doit disposer du rôle de **gestion** de la disposition. Par conséquent, si les administrateurs globaux ont besoin d’accéder à l’onglet disposition, ils sont en tant que membres du groupe de rôles **Relecteurs de disposition** . 
+> Même un administrateur global doit disposer du rôle de **gestion** de la disposition. 
 
-Spécifique au rôle **journaux d’audit en affichage seul** :
-
-- Étant donné que la cmdlet sous-jacente utilisée pour effectuer des recherches dans le journal d’audit est une applet de commande Exchange Online, vous devez attribuer ce rôle à des utilisateurs à l’aide du [Centre d’administration Exchange dans Exchange Online](https://docs.microsoft.com/Exchange/exchange-admin-center), plutôt qu’en utilisant la page des **autorisations** dans le centre de sécurité & conformité. Pour obtenir des instructions, consultez la rubrique [gérer des groupes de rôles dans Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/role-groups).
-
-- Les groupes Microsoft 365 ([anciennement groupes Office 365](https://techcommunity.microsoft.com/t5/microsoft-365-blog/office-365-groups-will-become-microsoft-365-groups/ba-p/1303601)) ne sont pas pris en charge pour ce rôle. Attribuez plutôt des boîtes aux lettres utilisateur, des utilisateurs de messagerie ou des groupes de sécurité à extension messagerie.
-
-Pour obtenir des instructions permettant d’accorder aux utilisateurs le rôle de **gestion de disposition** et de créer votre rôle de **réviseur de disposition** , consultez la rubrique accorder aux utilisateurs l' [accès au &amp; Centre de sécurité conformité Office 365](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
+Pour obtenir des instructions, reportez-vous à la rubrique [Octroi de l’accès au Centre de sécurité et conformité Office 365 aux utilisateurs](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
 
 ### <a name="enable-auditing"></a>Activer l’audit
 

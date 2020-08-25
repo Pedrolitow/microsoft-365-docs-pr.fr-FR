@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 862a25eddda6048349df937641914377cb25874f
-ms.sourcegitcommit: a08103bc120bdec7cfeaf67c1be4e221241e69ad
+ms.openlocfilehash: 304967a06c1fec2df6968f12be30ef3001fdb762
+ms.sourcegitcommit: 787b198765565d54ee73972f664bdbd5023d666b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "45200037"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "46866870"
 ---
 # <a name="microsoft-secure-score"></a>Degré de sécurisation Microsoft
 
@@ -45,9 +45,15 @@ Les organisations ont accès à des visualisations robustes de mesures et tendan
 
 ## <a name="how-it-works"></a>Mode de fonctionnement
 
-Vous disposez de points pour la configuration des fonctionnalités de sécurité recommandées, l’exécution de tâches liées à la sécurité ou la gestion de l’action d’amélioration avec une application ou un logiciel tiers, ou une autre limitation. Certaines actions d’amélioration donnent uniquement des points lorsqu’ils sont complètement terminés, et d’autres les déposent si elles sont terminées pour certains périphériques ou utilisateurs. Si vous ne pouvez pas ou ne souhaitez pas arrêter une des actions d’amélioration, vous pouvez choisir d’accepter le risque ou le risque restant.
+Vous disposez de points pour les actions suivantes :
 
-Si vous disposez d’une licence pour l’un des produits Microsoft pris en charge, vous verrez des recommandations pour ces produits. Nous vous montrons l’ensemble complet des améliorations possibles pour un produit, indépendamment de la licence, d’un abonnement ou d’une édition de licence, afin que vous puissiez comprendre les meilleures pratiques en matière de sécurité et améliorer votre score. Votre posture de sécurité absolue est représentée par la fonction de chiffrement sécurisé, qui reste la même quelle que soit la licence de votre organisation pour un produit spécifique. N’oubliez pas que la sécurité doit être équilibrée avec la convivialité et que toutes les recommandations ne peuvent pas fonctionner pour votre environnement.
+- Configuration des fonctionnalités de sécurité recommandées
+- Exécution de tâches liées à la sécurité
+- Gestion de l’action d’amélioration avec une application ou un logiciel tiers, ou une autre limitation
+
+Certaines actions d’amélioration ne donnent de points qu’une fois complètement terminé. Certains fournissent des points partiels s’ils sont terminés pour certains appareils ou utilisateurs. Si vous ne pouvez pas ou ne souhaitez pas arrêter une des actions d’amélioration, vous pouvez choisir d’accepter le risque ou le risque restant.
+
+Si vous disposez d’une licence pour l’un des produits Microsoft pris en charge, vous verrez des recommandations pour ces produits. Nous vous montrons l’ensemble des améliorations possibles pour un produit, indépendamment de la licence Edition, abonnement ou plan. De cette manière, vous pouvez comprendre les meilleures pratiques en matière de sécurité et améliorer votre score. Votre position absolue de sécurité, représentée par la fonction de chiffrement sécurisé, reste la même quelle que soit la licence de votre organisation pour un produit spécifique. N’oubliez pas que la sécurité doit être équilibrée avec la convivialité et que toutes les recommandations ne peuvent pas fonctionner pour votre environnement.
 
 Votre score est mis à jour en temps réel afin de refléter les informations présentées dans les pages de l’action visualisations et amélioration. Le score sécurisé est également synchronisé quotidiennement pour recevoir les données système relatives aux points obtenus pour chaque action.
 
@@ -61,11 +67,13 @@ Votre score est mis à jour en temps réel afin de refléter les informations pr
 
 ### <a name="how-improvement-actions-are-scored"></a>Comment les actions d’amélioration sont évaluées
 
-Chaque action d’amélioration vaut 10 points maximum. La plupart sont évaluées de manière binaire : Si vous implémentez l’action d’amélioration, par exemple créer une nouvelle stratégie ou activer un paramètre spécifique, vous obtenez 100% des points. Pour les autres actions d’amélioration, les points sont fournis sous la forme d’un pourcentage de la configuration totale. Par exemple, si l’action d’amélioration indique 10 points en protégeant tous vos utilisateurs à l’aide de l’authentification multifacteur et que vous n’avez que 50 de 100 Total utilisateurs protégés, vous recevrez un score partiel de 5 points (50 protégé/100 total * 10 pts max = 5 pts le score partiel).
+Chaque action d’amélioration vaut 10 points maximum, et la plupart d’entre elles sont évaluées de manière binaire. Si vous implémentez l’action d’amélioration, par exemple créer une nouvelle stratégie ou activer un paramètre spécifique, vous obtenez 100% des points. Pour les autres actions d’amélioration, les points sont fournis sous la forme d’un pourcentage de la configuration totale.
+
+Par exemple, une action d’amélioration vous indique 10 points en protégeant tous vos utilisateurs à l’aide de l’authentification multifacteur. Vous ne disposez que de 50 de 100 total d’utilisateurs protégés, vous obtiendrez un score partiel de 5 points (50 protégé/100 au total * 10 pts max = 5 pts).
 
 ### <a name="products-included-in-secure-score"></a>Produits inclus dans le score de sécurité
 
-Il existe actuellement des recommandations pour Microsoft 365 (y compris Exchange Online), Azure AD, Microsoft Defender ATP, Azure ATP et la sécurité des applications Cloud. Des recommandations pour d’autres produits de sécurité seront bientôt disponibles. Les recommandations ne couvrent pas toutes les surfaces d’attaque associées à chaque produit, mais il s’agit d’une base de référence correcte. Vous pouvez également marquer les actions d’amélioration telles qu’elles sont couvertes par une atténuation tierce ou alternative.
+Il existe actuellement des recommandations pour Microsoft 365 (y compris Exchange Online), Azure Active Directory, Microsoft Defender ATP, Azure ATP et la sécurité des applications Cloud. Des recommandations pour d’autres produits de sécurité seront bientôt disponibles. Les recommandations ne couvrent pas toutes les surfaces d’attaque associées à chaque produit, mais elles sont de bonnes bases. Vous pouvez également marquer les actions d’amélioration telles qu’elles sont couvertes par une atténuation tierce ou alternative.
 
 ### <a name="security-defaults"></a>Paramètres de sécurité par défaut
 
@@ -96,7 +104,7 @@ Avec l’accès en lecture et en écriture, vous pouvez effectuer des modificati
 
 ### <a name="read-only-roles"></a>Rôles en lecture seule
 
-Avec un accès en lecture seule, vous n’êtes pas en mesure de modifier l’État ou les notes pour une action d’amélioration, de modifier des zones de score ou de modifier des comparaisons personnalisées.
+Avec un accès en lecture seule, vous ne pouvez pas modifier le statut ou les notes pour une action d’amélioration, modifier des zones de score ou modifier des comparaisons personnalisées.
 
 * Administrateur du support technique
 * Administrateur d’utilisateurs
@@ -107,15 +115,15 @@ Avec un accès en lecture seule, vous n’êtes pas en mesure de modifier l’É
 
 ## <a name="risk-awareness"></a>Sensibilisation aux risques
 
-Microsoft Secure score est un résumé numérique de votre position de sécurité basée sur les configurations système, le comportement de l’utilisateur et d’autres mesures liées à la sécurité ; il ne s’agit pas d’une mesure absolue de la probabilité de violation de votre système ou de vos données. Il représente plutôt la mesure dans laquelle vous avez adopté des contrôles de sécurité dans votre environnement Microsoft, ce qui peut vous aider à compenser le risque d’être compromis. Aucun service en ligne n’est totalement immunisé contre les violations de sécurité et le score sécurisé ne doit pas être interprété comme une garantie d’une violation de sécurité.
+Microsoft Secure score est un résumé numérique de votre position de sécurité basée sur les configurations système, le comportement de l’utilisateur et d’autres mesures liées à la sécurité. Il ne s’agit pas d’une mesure absolue de la probabilité de violation de votre système ou de vos données. Il représente plutôt la mesure dans laquelle vous avez adopté des contrôles de sécurité dans votre environnement Microsoft afin de compenser le risque d’être compromis. Aucun service en ligne n’est totalement immunisé contre les violations de sécurité et le score sécurisé ne doit pas être interprété comme une garantie d’une violation de sécurité.
 
 ## <a name="we-want-to-hear-from-you"></a>Nous souhaitons être informés
 
-Si vous rencontrez des problèmes, indiquez-nous en publiant dans la communauté [Security, Privacy & Compliance](https://techcommunity.microsoft.com/t5/Security-Privacy-Compliance/bd-p/security_privacy) . Nous Surveillez la communauté et vous fournirons de l’aide.
+Si vous rencontrez des problèmes, informez-le en publiant dans la communauté [Security, Privacy & Compliance](https://techcommunity.microsoft.com/t5/Security-Privacy-Compliance/bd-p/security_privacy) . Nous Surveillez la communauté et vous fournirons de l’aide.
 
 ## <a name="related-resources"></a>Ressources connexes
 
-- [Évaluer votre position de sécurité](microsoft-secure-score-improvement-actions.md)
+- [Évaluez votre posture de sécurité](microsoft-secure-score-improvement-actions.md)
 - [Suivi de votre historique de score sécurisé Microsoft et atteindre les objectifs](microsoft-secure-score-history-metrics-trends.md)
 - [Nouveautés](microsoft-secure-score-whats-coming.md)
 - [Nouveautés](microsoft-secure-score-whats-new.md)

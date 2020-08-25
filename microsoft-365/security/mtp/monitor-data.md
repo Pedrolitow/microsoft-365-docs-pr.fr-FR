@@ -15,22 +15,22 @@ ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f9bb0a7d0ce7def52089ec64a35edc5a2475b342
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 79113aa4097da26a3a12a9ed99b1c5a8b3ad3d81
+ms.sourcegitcommit: 787b198765565d54ee73972f664bdbd5023d666b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034009"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "46866742"
 ---
 # <a name="data-monitoring-and-reporting-in-the-microsoft-365-security-center"></a>Surveillance et création de rapports sur les données dans le centre de sécurité Microsoft 365
 
-La catégorie **Données** permet de suivre l’activité des utilisateurs susceptible d’entraîner la divulgation non autorisée de données. Voici le travail des rapports de stratégie DLP existants, ainsi qu’un rapport de correspondance de stratégie DLP tiers.
+La catégorie **Données** permet de suivre l’activité des utilisateurs susceptible d’entraîner la divulgation non autorisée de données. Il s’agit de la réutilisation des rapports de stratégie DLP existants, ainsi qu’un rapport de correspondance de stratégie DLP tiers.
 
 Vous pouvez voir les informations suivantes :
 
-* Utilisateurs partageant le plus grand nombre de fichiers à partir d’applications cloud
-* Nombre de correspondances de stratégie DLP effectuées
-* Nombre de remplacements de stratégies DLP ou de faux positifs signalés
-* Combien de correspondances de stratégies DLP ont eu lieu dans des services Cloud tiers via la sécurité de l’application Cloud de Microsoft
+- Utilisateurs partageant le plus grand nombre de fichiers à partir d’applications cloud
+- Nombre de correspondances de stratégie DLP effectuées
+- Nombre de remplacements de stratégies DLP ou de faux positifs signalés
+- Combien de correspondances de stratégies DLP ont eu lieu dans des services Cloud tiers via la sécurité de l’application Cloud de Microsoft
 
 ![Page des rapports de catégorie de données](../../media/data.png)

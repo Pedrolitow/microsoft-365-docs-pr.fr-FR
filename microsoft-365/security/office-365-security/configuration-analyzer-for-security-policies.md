@@ -16,20 +16,20 @@ search.appverid:
 ms.assetid: ''
 ms.collection:
 - M365-security-compliance
-description: Les administrateurs peuvent apprendre à utiliser l’analyseur de configuration pour rechercher et corriger des stratégies de sécurité qui contiennent des paramètres inférieurs aux stratégies de sécurité standard protection prédéfinie protection et protection stricte.
-ms.openlocfilehash: 4515efcd73d40eae93523c6ef139553420e48677
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+description: Les administrateurs peuvent apprendre à utiliser l’analyseur de configuration pour rechercher et corriger des stratégies de sécurité qui sont inférieures aux stratégies de sécurité standard protection et protection stricte.
+ms.openlocfilehash: 39bec980ac95681ec2c2300914582d5e8786c884
+ms.sourcegitcommit: 787b198765565d54ee73972f664bdbd5023d666b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46825772"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "46867162"
 ---
 # <a name="configuration-analyzer-for-protection-policies-in-eop-and-office-365-atp"></a>Configuration Analyzer pour les stratégies de protection dans EOP et Office 365 ATP
 
 > [!NOTE]
 > Les fonctionnalités décrites dans cette rubrique sont en aperçu, ne sont pas disponibles dans toutes les organisations et peuvent faire l’objet de modifications.
 
-Configuration Analyzer dans le centre de sécurité & conformité fournit un emplacement central pour rechercher et corriger toutes vos stratégies de sécurité qui contiennent des paramètres inférieurs aux paramètres de profil de protection standard et de profil de protection stricte dans les [stratégies de sécurité prédéfinies](preset-security-policies.md).
+Configuration Analyzer dans le centre de sécurité & conformité fournit un emplacement central pour rechercher et corriger les stratégies de sécurité lorsque les paramètres sont sous les paramètres de protection standard et de profil de protection stricte dans les [stratégies de sécurité prédéfinies](preset-security-policies.md).
 
 Les types de stratégies suivants sont analysés par l’analyseur de configuration :
 
@@ -59,7 +59,7 @@ Les valeurs de paramètres de stratégie **standard** et **strictes** utilisées
 
 - Pour vous connecter à Exchange Online PowerShell, voir [Connexion à Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
 
-- Des autorisations doivent vous être attribuées avant de pouvoir exécuter ces procédures. décrites dans cette rubrique :
+- Avant de pouvoir effectuer les procédures décrites dans cet article, vous devez disposer des autorisations suivantes :
 
   - Pour utiliser l’analyseur de configuration **et** mettre à jour les stratégies de sécurité, vous devez être membre de l’un des groupes de rôles suivants :
 
@@ -81,7 +81,7 @@ L’analyseur de configuration comporte deux onglets principaux :
 
 - **Paramètres et recommandations**: sélectionnez standard ou strict et Comparez ces paramètres à vos stratégies de sécurité existantes. Dans les résultats, vous pouvez ajuster les valeurs de vos paramètres pour les ramener au même niveau que standard ou strict.
 
-- **Analyse et historique de dérive de configuration**: cette vue permet de suivre les modifications que vous avez apportées à vos stratégies en fonction des résultats de l’analyseur de configuration au fil du temps.
+- **Analyse de la dérive de la configuration et historique**: cette vue vous permet d’effectuer le suivi des modifications de stratégie au fil du temps.
 
 ### <a name="setting-and-recommendations-tab-in-the-configuration-analyzer"></a>Onglet définition et recommandations de l’analyseur de configuration
 
@@ -89,7 +89,7 @@ Par défaut, l’onglet s’ouvre sur la comparaison avec le profil de protectio
 
 ![Vue paramètres et recommandations dans l’analyseur de configuration](../../media/configuration-analyzer-settings-and-recommendations-view.png)
 
-Par défaut, la colonne **groupe de stratégies/nom du paramètre** contient une vue réduite des différents types de stratégies de sécurité et le nombre de paramètres dans ces stratégies qui doivent être améliorés (le cas échéant). Les types de stratégies sont les suivants :
+Par défaut, la colonne **groupe de stratégies/nom du paramètre** contient une vue réduite des différents types de stratégies de sécurité et le nombre de paramètres qui doivent être améliorés (le cas échéant). Les types de stratégies sont les suivants :
 
 - **Anti-spam**
 - **Anti-hameçonnage**
@@ -97,11 +97,11 @@ Par défaut, la colonne **groupe de stratégies/nom du paramètre** contient une
 - **Pièces jointes sûres ATP** (si votre abonnement inclut ATP)
 - **Liens fiables ATP** (si votre abonnement inclut ATP)
 
-Dans l’affichage par défaut, tout est réduit. En regard de chaque stratégie, un résumé des résultats de la comparaison de vos stratégies (que vous pouvez modifier) et les paramètres des stratégies correspondantes pour les profils de protection standard ou stricte (que vous ne pouvez pas modifier) s’affichent. Les informations suivantes s’affichent :
+Dans l’affichage par défaut, tout est réduit. En regard de chaque stratégie, il existe un résumé des résultats de la comparaison de vos stratégies (que vous pouvez modifier) et les paramètres des stratégies correspondantes pour les profils de protection standard ou stricte (que vous ne pouvez pas modifier). Les informations suivantes s’affichent pour le profil de protection que vous comparez :
 
-- **Vert**: tous les paramètres de toutes les stratégies existantes sont au moins aussi sécurisés que le profil de protection auquel vous effectuez une comparaison.
-- **Orange**: un petit nombre de paramètres dans les stratégies existantes n’est pas aussi sécurisé que le profil de protection auquel vous effectuez une comparaison.
-- **Rouge**: un nombre significatif de paramètres dans les stratégies existantes n’est pas aussi sécurisé que le profil de protection auquel vous effectuez une comparaison. Il peut s’agir de quelques paramètres dans de nombreuses stratégies ou de nombreux paramètres dans une stratégie.
+- **Vert**: tous les paramètres de toutes les stratégies existantes sont au moins aussi sécurisés que le profil de protection.
+- **Orange**: un petit nombre de paramètres dans les stratégies existantes n’est pas aussi sécurisé que le profil de protection.
+- **Rouge**: un nombre significatif de paramètres dans les stratégies existantes n’est pas aussi sécurisé que le profil de protection. Il peut s’agir de quelques paramètres dans de nombreuses stratégies ou de nombreux paramètres dans une stratégie.
 
 Pour les comparaisons favorables, vous verrez le texte : **tous les paramètres suivent** les \<**Standard** or **Strict**\> **recommandations**. Dans le cas contraire, vous verrez le nombre de paramètres recommandés à modifier.
 
@@ -113,7 +113,7 @@ Si la comparaison n’a pas de recommandations d’amélioration (en vert), le d
 
 - **Stratégie**: nom de la stratégie concernée qui contient le paramètre.
 
-- **Appliqué à**: le nombre d’utilisateurs auxquels les stratégies affectées sont appliquées.
+- **Appliqué à**: nombre d’utilisateurs auxquels les stratégies affectées sont appliquées.
 
 - **Configuration actuelle**: valeur actuelle du paramètre.
 
@@ -123,7 +123,7 @@ Si la comparaison n’a pas de recommandations d’amélioration (en vert), le d
 
 ### <a name="configuration-drift-analysis-and-history-tab-in-the-configuration-analyzer"></a>Onglet analyse de dérive et historique de configuration de l’analyseur de configuration
 
-Cet onglet vous permet d’effectuer le suivi des modifications que vous avez apportées à vos stratégies de sécurité personnalisées en fonction des informations de l’analyseur de sécurité. Par défaut, les informations suivantes s’affichent :
+Cet onglet vous permet de suivre les modifications que vous avez apportées à vos stratégies de sécurité personnalisées. Par défaut, les informations suivantes s’affichent :
 
 - **Dernière modification**
 - **Modifié par**

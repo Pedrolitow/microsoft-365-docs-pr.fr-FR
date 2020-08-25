@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ROBOTS: NOINDEX, NOFOLLOW
 description: Vue d’ensemble du score de productivité Microsoft.
-ms.openlocfilehash: a93ceef3833e1e55f6e3bb979fd93aa3d90ded37
-ms.sourcegitcommit: a5ed189fa789975f8c3ed39db1d52f2ef7d671aa
+ms.openlocfilehash: 66ab028282fb8c74087713083e43e22cf6708897
+ms.sourcegitcommit: 22dab0f7604cc057a062698005ff901d40771692
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "45101646"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "46868854"
 ---
 # <a name="microsoft-productivity-score-preview"></a>Score de productivité Microsoft (aperçu)
 
@@ -42,9 +42,9 @@ Nous fournissons des données, des informations et des recommandations dans deux
 
     Ces informations sont fournies car, lorsque les personnes collaborent en ligne, elles font gagner du temps. Lorsqu’ils ont la liberté de travailler sur n’importe quel appareil, ils sont plus productifs et satisfaits. Lorsqu’ils peuvent communiquer de manière flexible, ils sont plus efficaces, forment de meilleurs relations et votre organisation est plus unifiée. Pour obtenir des preuves, consultez la rubrique [Forrester Report](https://vc2prod.blob.core.windows.net/vc-resources/TEIStudies/TEI%20of%20Microsoft%20365%20E5%20-%20Oct%202018.pdf).
 
-- **Expérience technologique :** La productivité dépend de la technologie fiable et performante, ainsi que de l’utilisation efficace de Microsoft 365. Nous fournissons des analyses de point de terminaison, qui vous donnent des informations et des recommandations sur la configuration des appareils et les temps de démarrage, et nous fournissons des informations de connectivité réseau Microsoft 365 pour votre organisation.
+- **Expérience technologique :** La productivité dépend de la technologie fiable et performante, ainsi que de l’utilisation efficace de Microsoft 365. Nous fournissons des [analyses de point de terminaison](https://aka.ms/endpointanalytics), ce qui vous permet de comprendre comment la productivité de vos utilisateurs peut être affectée par les problèmes de performances et d’intégrité avec votre matériel et votre logiciel de point de terminaison, tout en fournissant des actions recommandées pour les corriger ; et nous fournissons des informations de connectivité réseau Microsoft 365 pour votre organisation.
 
-Pour en savoir plus sur l’analyse des points de terminaison, consultez [la rubrique Network Connectivity Overview](https://docs.microsoft.com/office365/enterprise/office-365-networking-overview).
+Voir [qu’est-ce que le point de terminaison Analytics](https://docs.microsoft.com/mem/analytics/overview) pour une vue d’ensemble et les détails prérequis. Pour en savoir plus sur les informations sur la connectivité réseau Microsoft 365, consultez [la rubrique Network Connectivity Overview](https://docs.microsoft.com/office365/enterprise/office-365-networking-overview).
   
 
 ## <a name="how-the-score-is-calculated"></a>Mode de calcul du score

@@ -13,12 +13,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Découvrez comment configurer la clé client pour les fichiers Microsoft 365 pour Exchange Online, Skype entreprise, SharePoint Online, OneDrive entreprise et Teams.
-ms.openlocfilehash: 87c18c1695d2963fc8a0c064d34d2b6cdc14199c
-ms.sourcegitcommit: 260bbb93bbda62db9e88c021ccccfa75ac39a32e
+ms.openlocfilehash: 0743b4339dae8e70960293f51a7869dc61fea606
+ms.sourcegitcommit: 22dab0f7604cc057a062698005ff901d40771692
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "46845832"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "46868889"
 ---
 # <a name="set-up-customer-key"></a>Configurer la clé client
 
@@ -89,11 +89,11 @@ SharePoint Online et OneDrive entreprise :
 
 ## <a name="complete-tasks-in-azure-key-vault-and-microsoft-fasttrack-for-customer-key"></a>Effectuer des tâches dans Azure Key Vault et Microsoft FastTrack pour la clé client
 
-Effectuez ces tâches dans le coffre-fort des clés Azure. Vous devrez effectuer ces étapes, que vous souhaitiez configurer la clé client pour Exchange Online et Skype entreprise ou pour les fichiers SharePoint Online, OneDrive entreprise et Teams, ou pour tous les services pris en charge dans Office 365.
+Effectuez ces tâches dans le coffre-fort des clés Azure. Vous devez effectuer ces étapes, que vous souhaitiez configurer la clé client pour Exchange Online et Skype entreprise ou pour les fichiers SharePoint Online, OneDrive entreprise et Teams, ou pour tous les services pris en charge dans Office 365.
   
 ### <a name="create-two-new-azure-subscriptions"></a>Créer deux nouveaux abonnements Azure
 
-La clé client nécessite deux abonnements Azure. Pour une meilleure pratique, Microsoft vous recommande de créer de nouveaux abonnements Azure à utiliser avec la clé client. Les clés Azure Key Vault peuvent uniquement être autorisées pour les applications dans le même client Azure Active Directory (AAD), vous devez créer les nouveaux abonnements à l’aide du même client Azure AD utilisé avec votre organisation où les DEPs seront attribués. Par exemple, à l’aide de votre compte professionnel ou scolaire disposant de privilèges d’administrateur général dans votre organisation. Pour obtenir la procédure détaillée, consultez la rubrique [Inscrivez-vous à Azure en tant qu’organisation](https://azure.microsoft.com/documentation/articles/sign-up-organization/).
+La clé client nécessite deux abonnements Azure. Pour une meilleure pratique, Microsoft vous recommande de créer de nouveaux abonnements Azure à utiliser avec la clé client. Les clés Azure Key Vault peuvent uniquement être autorisées pour les applications dans le même client Azure Active Directory (Microsoft Azure Active Directory), vous devez créer les nouveaux abonnements à l’aide du même client Azure AD que celui utilisé avec votre organisation où le DEPs sera affecté. Par exemple, à l’aide de votre compte professionnel ou scolaire disposant de privilèges d’administrateur général dans votre organisation. Pour obtenir la procédure détaillée, consultez la rubrique [Inscrivez-vous à Azure en tant qu’organisation](https://azure.microsoft.com/documentation/articles/sign-up-organization/).
   
 > [!IMPORTANT]
 > La clé client nécessite deux clés pour chaque stratégie de chiffrement de données (DEP). Pour ce faire, vous devez créer deux abonnements Azure. En guise de meilleure pratique, Microsoft recommande que les membres distincts de votre organisation configurent une clé dans chaque abonnement. En outre, ces abonnements Azure ne doivent être utilisés que pour administrer les clés de chiffrement pour Office 365. Cela protège votre organisation si l’un de vos opérateurs supprime accidentellement, intentionnellement ou de manière malveillante ou non des clés dont il est responsable. <br/> Nous vous recommandons de configurer de nouveaux abonnements Azure uniquement utilisés pour gérer les ressources Azure Key Vault à utiliser avec la clé client. Il n’existe pas de limite pratique au nombre d’abonnements Azure que vous pouvez créer pour votre organisation. Le suivi de ces meilleures pratiques réduira l’impact de l’erreur humaine tout en aidant à gérer les ressources utilisées par la clé client.

@@ -15,18 +15,18 @@ ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 987f3a60b514874bd970b93bdcc2c08832345b4b
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 90d9fcc45e768abd5fddef948fcafdaf9e77f5fb
+ms.sourcegitcommit: 787b198765565d54ee73972f664bdbd5023d666b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44033985"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "46866718"
 ---
 # <a name="monitor-and-view-reports-in-the-microsoft-365-security-center"></a>Surveillance et affichage des rapports dans le centre de sécurité Microsoft 365
 
-Le centre de sécurité Microsoft 365 fournit un résumé de l’état de protection et de sécurité dans votre environnement Microsoft 365.
+Le centre de sécurité Microsoft 365 fournit un résumé des États de protection et de sécurité dans votre environnement Microsoft 365.
 
-Le centre de sécurité inclut une section de **rapports** qui comprend un hôte de cartes couvrant une variété de domaines suivis par les analystes et administrateurs de la sécurité dans le cadre de leurs opérations quotidiennes. Sur l’exploration, les cartes fournissent des rapports détaillés et, dans certains cas, des options de gestion.
+Le centre de sécurité inclut une section de **rapports** qui comprend un hôte de cartes couvrant un grand nombre de domaines. Les analystes de la sécurité et les administrateurs peuvent suivre les cartes dans le cadre de leurs opérations quotidiennes. Sur l’exploration, les cartes fournissent des rapports détaillés et, dans certains cas, des options de gestion.
 
 ## <a name="customize-views"></a>Personnaliser les affichages
 
@@ -37,7 +37,7 @@ Par défaut, les cartes sont regroupées dans les catégories suivantes :
 * [Appareils](monitor-devices.md) : ordinateurs, téléphones mobiles et autres appareils
 * [Apps](monitor-apps.md) : programmes et services en ligne associés
 
-Passez à la **rubrique regrouper par**, pour réorganiser les cartes et les regrouper comme suit :
+Passez à la **rubrique regrouper par**, pour réorganiser les cartes et les regrouper dans les rubriques suivantes :
 
 * Cartes de **risque** qui mettent en évidence des entités, telles que des comptes et des appareils, susceptibles d’être menacées. Ces cartes surlignent également les sources de risque possibles, telles que les nouvelles campagnes de menace et les applications Cloud avec privilèges.  
 * **Tendances de détection** -cartes qui mettent en évidence les nouvelles détections de menaces, les anomalies et les violations de stratégie

@@ -1,6 +1,6 @@
 ---
 title: Rapports d' & de surveillance des applications-Centre de sécurité
-description: Découvrez comment obtenir plus d’informations sur l’utilisation des applications Cloud dans votre organisation, notamment les types d’applications, leur niveau de risque et les alertes.
+description: Découvrez comment mieux comprendre l’utilisation des applications Cloud dans votre organisation. Inclut différents types d’applications, leur niveau de risque et des alertes.
 keywords: sécurité, programmes malveillants, Microsoft 365, M365, centre de sécurité, moniteur, rapport, applications
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
@@ -15,20 +15,20 @@ ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: cd7a86751ac58f60051891544c9fd68c51b439e1
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: f370a537b9355a99b90f21faab5eda75d7f84cdf
+ms.sourcegitcommit: 787b198765565d54ee73972f664bdbd5023d666b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034021"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "46866848"
 ---
 # <a name="app-monitoring-and-reporting-in-the-microsoft-365-security-center"></a>Surveillance et création de rapports sur les applications dans le centre de sécurité Microsoft 365
 
-Ces rapports fournissent plus d’informations sur la façon dont les applications Cloud sont utilisées dans votre organisation, notamment les types d’applications, leur niveau de risque et les alertes.
+Ces rapports fournissent plus d’informations sur la façon dont les applications Cloud sont utilisées dans votre organisation. Inclut différents types d’applications, leur niveau de risque et des alertes.
 
 ## <a name="monitor-email-accounts-at-risk"></a>Surveiller les comptes de messagerie à risque
 
-La protection de la **messagerie** affiche les comptes de messagerie à risque. Vous pouvez cliquer sur un compte pour approfondir vos recherches dans le centre de sécurité Microsoft Defender.
+La protection de la **messagerie** affiche les comptes de messagerie à risque. Vous pouvez sélectionner un compte pour approfondir vos recherches dans le centre de sécurité Microsoft Defender.
 
 ![Carte de protection de la messagerie](../../media/email-protection.png)
 
@@ -36,7 +36,7 @@ La protection de la **messagerie** affiche les comptes de messagerie à risque. 
 
 **Sécurité des applications Cloud : applications OAuth** répertorie les applications découvertes par la sécurité des applications Cloud auxquelles des autorisations ont été accordées par les utilisateurs. Le catalogue des risques de la sécurité des applications Cloud inclut plus de 16 000 applications évaluées à l’aide de plus de 70 facteurs de risque.
 
-Les facteurs de risque commencent à partir d’informations générales, telles que l’éditeur de l’application, vers des mesures et des contrôles de sécurité, par exemple si l’application prend en charge le chiffrement au repos ou fournit un journal d’audit de l’activité de l’utilisateur.
+Les facteurs de risque commencent à partir d’informations générales, telles que l’éditeur de l’application. Il passe ensuite aux mesures et contrôles de sécurité, par exemple si l’application prend en charge le chiffrement au repos ou fournit un journal d’audit de l’activité de l’utilisateur.
 
 ![Carte d’applications OAuth de sécurité d’application Cloud](../../media/cloud-app-security-oauth-apps.png)
 
@@ -48,7 +48,7 @@ Les facteurs de risque commencent à partir d’informations générales, telles
 
 ## <a name="understand-which-cloud-apps-are-used"></a>Comprendre les applications Cloud utilisées
 
-**Applications Cloud découvertes (catégories)** Affichez les types d’applications qui sont utilisées dans votre organisation et les liens vers le tableau de bord de découverte dans le Cloud dans la sécurité des applications Cloud. Pour plus d’informations, consultez la rubrique [QuickStart : utiliser des applications découvertes](https://docs.microsoft.com/cloud-app-security/discovered-apps).  
+Les **applications Cloud découvertes (catégories)** montrent quels types d’applications sont utilisées dans votre organisation. Il se lie au tableau de bord de découverte dans le Cloud dans la sécurité des applications Cloud. Pour plus d’informations, consultez la rubrique [QuickStart : utiliser des applications découvertes](https://docs.microsoft.com/cloud-app-security/discovered-apps).  
 
 ![Carte des catégories d’applications Cloud découvertes](../../media/discovered-cloud-apps-categories.png)
 
@@ -62,7 +62,7 @@ Les emplacements des activités de l' **application Cloud** indiquent où les ut
 
 L’intégrité de l' **infrastructure** indique des alertes d’état d’intégrité pour les charges de travail d’infrastructure dans Azure Security Center.
 
-Azure Security Center offre une gestion de sécurité unifiée et une protection avancée contre les menaces entre les charges de travail locales et de Cloud. Vous pouvez collecter, Rechercher et analyser des données de sécurité à partir d’une variété de sources, notamment des pare-feu et d’autres solutions partenaires.
+Azure Security Center offre une gestion de sécurité unifiée et une protection avancée contre les menaces entre les charges de travail locales et de Cloud. Vous pouvez collecter, Rechercher et analyser des données de sécurité à partir de différentes sources, notamment des pare-feu et d’autres solutions partenaires.
 
 Pour plus d’informations, reportez-vous à [Azure Security Center documentation](https://docs.microsoft.com/azure/security-center/).
 

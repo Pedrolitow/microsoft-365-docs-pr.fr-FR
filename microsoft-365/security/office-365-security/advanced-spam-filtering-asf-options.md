@@ -18,19 +18,19 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Les administrateurs peuvent en savoir plus sur les paramètres de filtre de courrier indésirable avancés (ASF) disponibles dans les stratégies de blocage du courrier indésirable dans Exchange Online Protection (EOP).
-ms.openlocfilehash: 2a79a6721a587e3033e71e6e46856a21cffe7bcc
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: 6a670a9aba2204035646840d0f128ca9a90ece15
+ms.sourcegitcommit: 787b198765565d54ee73972f664bdbd5023d666b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46827336"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "46867220"
 ---
 # <a name="advanced-spam-filter-asf-settings-in-eop"></a>Paramètres du filtre de courrier indésirable avancé (ASF) dans EOP
 
 > [!NOTE]
 > Les paramètres ASF actuellement disponibles dans les stratégies de blocage du courrier indésirable sont en cours de dépréciation. Nous vous recommandons de ne pas utiliser ces paramètres dans les stratégies de blocage du courrier indésirable. La fonctionnalité de ces paramètres ASF est incorporée dans les autres parties de la pile de filtrage. Pour plus d’informations, consultez la rubrique [paramètres de stratégie anti-courrier indésirable EOP](recommended-settings-for-eop-and-office365-atp.md#eop-anti-spam-policy-settings).
 
-Dans les organisations Microsoft 365 avec des boîtes aux lettres dans Exchange Online ou des organisations Exchange Online Protection (EoP) autonomes sans boîte aux lettres Exchange Online, les paramètres de filtre de courrier indésirable (ASF) des stratégies de blocage du courrier indésirable (également appelés stratégies de filtrage du courrier indésirable ou stratégies de filtrage de contenu) permettent aux administrateurs de marquer les messages comme courrier ASF cible spécifiquement ces propriétés car elles sont généralement présentes dans le courrier indésirable. En fonction de la propriété, les détections ASF marquent le message comme étant du courrier **indésirable** ou du **courrier indésirable à niveau de confiance élevée**.
+Dans toutes les organisations Microsoft 365, les paramètres de filtre de courrier indésirable (ASF) des stratégies de blocage du courrier indésirable dans EOP permettent aux administrateurs de marquer les messages comme courrier indésirable en fonction de propriétés de message spécifiques. ASF cible spécifiquement ces propriétés car elles sont généralement présentes dans le courrier indésirable. En fonction de la propriété, les détections ASF marquent le message comme étant du courrier **indésirable** ou du **courrier indésirable à niveau de confiance élevée**.
 
 > [!NOTE]
 > L’activation d’un ou de plusieurs paramètres ASF est une approche agressive pour le filtrage du courrier indésirable. Vous ne pouvez pas signaler les messages qui sont filtrés par ASF comme faux positifs. Vous pouvez identifier les messages qui ont été filtrés par ASF en procédant comme suit :
@@ -53,11 +53,11 @@ Pour chaque paramètre ASF, les options suivantes sont disponibles dans les stra
 
 - **Test**: ASF ajoute le champ d’en-tête X correspondant au message. Ce qu’il advient du message est déterminé par la valeur des **options de mode de test** (*TestModeAction*) :
 
-  - **Aucun**: le routage et la remise des messages ne sont pas affectés par la détection ASF. Le message est toujours soumis à d’autres types de filtrage et de règles dans EOP.
+  - **None**: la remise des messages n’est pas affectée par la détection ASF. Le message est toujours soumis à d’autres types de filtrage et de règles dans EOP.
 
-  - **Ajouter un texte d’en-tête x par défaut (*AddXHeader*)**: la valeur d’en-tête x `X-CustomSpam: This message was filtered by the custom spam filter option` est ajoutée au message. Vous pouvez utiliser cette valeur dans les règles de boîte de réception ou les règles de flux de messagerie (également appelées règles de transport) pour affecter le routage et la remise du message.
+  - **Ajouter un texte d’en-tête x par défaut (*AddXHeader*)**: la valeur d’en-tête x `X-CustomSpam: This message was filtered by the custom spam filter option` est ajoutée au message. Vous pouvez utiliser cette valeur dans les règles de boîte de réception ou les règles de flux de messagerie (également appelées règles de transport) pour affecter la remise du message.
 
-  - **Envoyer un message CCI (*BccMessage*)**: les adresses de messagerie spécifiées (valeur du paramètre *TestModeBccToRecipients* dans PowerShell) sont ajoutées au champ CCI du message, et le message est remis aux destinataires CCI. Dans le centre de sécurité & conformité, séparez les adresses de messagerie par des points-virgules (;). Dans PowerShell, vous séparez plusieurs adresses de messagerie par des virgules.
+  - **Envoyer un message CCI (*BccMessage*)**: les adresses de messagerie spécifiées (valeur du paramètre *TestModeBccToRecipients* dans PowerShell) sont ajoutées au champ CCI du message, et le message est remis aux destinataires CCI supplémentaires. Dans le centre de sécurité & conformité, séparez les adresses de messagerie par des points-virgules (;). Dans PowerShell, vous séparez plusieurs adresses de messagerie par des virgules.
 
   **Remarques** :
 
@@ -80,7 +80,7 @@ Les paramètres ASF suivants définissent le seuil de probabilité de courrier i
 |**Liens d'image vers des sites distants** <br/><br/> *IncreaseScoreWithImageLinks*|Les messages contenant `<Img>` des liens HTML vers des sites distants (par exemple, à l’aide du protocole http) sont marqués comme courrier indésirable.|`X-CustomSpam: Image links to remote sites`|
 |**Redirection de l'URL vers un autre port** <br/><br/> *IncreaseScoreWithRedirectToOtherPort*|Message contenant des liens hypertexte qui redirigent vers des ports TCP autres que 80 (HTTP), 8080 (http de remplacement) ou 443 (HTTPs) sont marqués comme courrier indésirable.|`X-CustomSpam: URL redirect to other port`|
 |**Adresse IP numérique dans l'URL** <br/><br/> *IncreaseScoreWithNumericIps*|Les messages qui contiennent des URL numériques (en général, des adresses IP) sont marqués comme courrier indésirable.|`X-CustomSpam: Numeric IP in URL`|
-|**URL vers les sites web .biz ou .info** <br/><br/> *IncreaseScoreWithBizOrInfoUrls*|Les messages qui contiennent des liens. biz ou. info dans le corps du message sont marqués comme courrier indésirable.|`X-CustomSpam: URL to .biz or .info websites`|
+|**URL vers les sites web .biz ou .info** <br/><br/> *IncreaseScoreWithBizOrInfoUrls*|Les messages qui contiennent des `.biz` ou `.info` des liens dans le corps du message sont marqués comme courrier indésirable.|`X-CustomSpam: URL to .biz or .info websites`|
 |
 
 ## <a name="mark-as-spam-settings"></a>Marquer comme courrier indésirable
@@ -95,9 +95,9 @@ Les paramètres ASF suivants définissent la valeur SCL des messages détectés 
 |**JavaScript ou VBScript dans le code HTML** <br/><br/> *MarkAsSpamJavaScriptInHtml*|Les messages qui utilisent JavaScript ou Visual Basic Script Edition en HTML sont marqués comme courrier indésirable à niveau de confiance élevé. <br/><br/> Ces langages de script sont utilisés dans les messages électroniques pour déclencher automatiquement des actions spécifiques.|`X-CustomSpam: Javascript or VBscript tags in HTML`|
 |**Balises Frame ou IFrame dans le code HTML** <br><br/> *MarkAsSpamFramesInHtml*|Les messages qui contiennent `<frame>` ou `<iframe>` des balises HTML sont marqués comme courrier indésirable à confiance élevée. <br/><br/> Ces balises sont utilisées dans les messages électroniques pour mettre en forme la page afin d’afficher du texte ou des graphiques.|`X-CustomSpam: IFRAME or FRAME in HTML`|
 |**Balises Object dans le code HTML** <br><br/> *MarkAsSpamObjectTagsInHtml*|Les messages qui contiennent `<object>` des balises HTML sont marqués comme courrier indésirable à confiance élevée. <br/><br/> Cette balise permet aux plug-ins ou aux applications de s’exécuter dans une fenêtre HTML.|`X-CustomSpam: Object tag in html`|
-|**Balises Embed dans le code HTML** <br><br/> *MarkAsSpamEmbedTagsInHtml*|Le message contenant `<embed>` des balises HTML est marqué comme courrier indésirable à niveau de confiance élevé. <br/><br/> Cette balise permet l’incorporation de différents types de documents de différents types de données dans un document HTML (par exemple, des sons, des films ou des images).|`X-CustomSpam: Embed tag in html`|
+|**Balises Embed dans le code HTML** <br><br/> *MarkAsSpamEmbedTagsInHtml*|Le message contenant `<embed>` des balises HTML est marqué comme courrier indésirable à niveau de confiance élevé. <br/><br/> Cette balise permet l’incorporation de différents types de documents dans un document HTML (par exemple, des sons, des vidéos ou des images).|`X-CustomSpam: Embed tag in html`|
 |**Balises Form dans le code HTML** <br><br/> *MarkAsSpamFormTagsInHtml*|Les messages qui contiennent `<form>` des balises HTML sont marqués comme courrier indésirable à confiance élevée. <br/><br/> Cette balise est utilisée pour créer des formulaires de site Web. Les publicités électroniques utilisent souvent cette balise pour demander des informations au destinataire.|`X-CustomSpam: Form tag in html`|
-|**Bogues web dans le code HTML** <br><br/> *MarkAsSpamWebBugsInHtml*|Un *bug Web* (également appelé « *balise Web*») est un élément graphique (souvent aussi petit qu’un pixel d’un pixel) utilisé dans les messages électroniques pour déterminer si le message a été lu. <br/><br/> Les messages qui contiennent des bogues Web sont marqués comme courrier indésirable à niveau de confiance élevé. <br/><br/> Les bulletins d’information légitimes peuvent utiliser des bogues Web, bien que de nombreux considèrent cette atteinte à la vie privée. |`X-CustomSpam: Web bug`|
+|**Bogues web dans le code HTML** <br><br/> *MarkAsSpamWebBugsInHtml*|Un *bug Web* (également appelé « *balise Web*») est un élément graphique (souvent aussi petit qu’un pixel d’un pixel) utilisé dans les messages électroniques pour déterminer si le message a été lu par le destinataire. <br/><br/> Les messages contenant des bogues Web sont marqués comme courrier indésirable à fiabilité élevée. <br/><br/> Les bulletins d’information légitimes peuvent utiliser des bogues Web, bien que de nombreux considèrent cette atteinte à la vie privée. |`X-CustomSpam: Web bug`|
 |**Appliquer la liste de mots sensibles** <br><br/> *MarkAsSpamSensitiveWordList*|Microsoft gère une liste dynamique, mais non modifiable, de mots qui sont associés à des messages potentiellement choquants. <br/><br/> Les messages qui contiennent des mots de la liste de mots sensibles dans l’objet ou le corps du message sont marqués comme courrier indésirable à niveau de confiance élevé.|`X-CustomSpam: Sensitive word in subject/body`|
 |**Enregistrement SPF : échec sévère** <br><br/> *MarkAsSpamSpfRecordHardFail*|Les messages envoyés à partir d’une adresse IP qui n’est pas spécifiée dans l’enregistrement SPF (Sender Policy Framework) de DNS pour le domaine de messagerie source sont marqués comme courrier indésirable à confiance élevée. <br/><br/> Le mode test n’est pas disponible pour ce paramètre.|`X-CustomSpam: SPF Record Fail`|
 |**Filtrage conditionnel de l'ID de l'expéditeur : échec sévère** <br><br/> *MarkAsSpamFromAddressAuthFail*|Les messages qui échouent à la vérification de l’ID de l’expéditeur conditionnel sont marqués comme courrier indésirable. <br/><br/> Ce paramètre associe un contrôle SPF à une vérification de l’ID de l’expéditeur pour vous protéger des en-têtes de message contenant des expéditeurs falsifiés. <br/><br/> Le mode test n’est pas disponible pour ce paramètre.|`X-CustomSpam: SPF From Record Fail`|

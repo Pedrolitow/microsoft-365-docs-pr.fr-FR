@@ -16,16 +16,16 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Les administrateurs peuvent consulter les questions fréquemment posées et les réponses sur la protection contre l’usurpation d’identité dans Exchange Online Protection (EOP).
-ms.openlocfilehash: 66dbedaf638154c4a35359a4e5bc66c326c04d1e
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: 3547b0a0af6d2e541d4ec3546d9bbd4aa34c3a6b
+ms.sourcegitcommit: 787b198765565d54ee73972f664bdbd5023d666b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46826672"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "46867138"
 ---
 # <a name="anti-spoofing-protection-faq"></a>Forum aux questions sur la protection contre l’usurpation d’identité
 
-Cette rubrique fournit des questions fréquemment posées et des réponses sur la protection contre l’usurpation d’identité pour les organisations Microsoft 365 avec des boîtes aux lettres dans Exchange Online ou des organisations Exchange Online Protection (EOP) autonomes sans boîtes aux lettres Exchange Online.
+Cet article fournit des questions fréquemment posées et des réponses sur la protection contre l’usurpation d’identité pour les organisations Microsoft 365 avec des boîtes aux lettres dans Exchange Online ou des organisations Exchange Online Protection (EOP) autonomes sans boîtes aux lettres Exchange Online.
 
 Pour obtenir des questions et des réponses sur la protection contre le courrier indésirable, consultez la rubrique [protection contre le courrier indésirable](anti-spam-protection-faq.md).
 
@@ -33,11 +33,11 @@ Pour obtenir des questions et des réponses sur la protection contre les program
 
 ## <a name="why-did-microsoft-choose-to-junk-unauthenticated-inbound-email"></a>Pourquoi Microsoft a-t-il choisi de courrier indésirable entrant non authentifié ?
 
-En raison de l’impact des attaques par hameçonnage et de l’authentification de messagerie depuis plus de 15 ans, Microsoft estime que le risque de continuer à autoriser le courrier entrant non authentifié est plus élevé que le risque de perte de courrier entrant légitime.
+Microsoft pense que le risque de continuer à autoriser les messages électroniques entrants non authentifiés est supérieur au risque de perdre des messages entrants légitimes.
 
 ## <a name="does-junking-unauthenticated-inbound-email-cause-legitimate-email-to-be-marked-as-spam"></a>Le courrier indésirable non authentifié a-t-il été marqué comme courrier indésirable ?
 
-Lorsque Microsoft a activé cette fonctionnalité dans 2018, certains faux positifs se sont produits (bons messages ont été marqués comme incorrects). Toutefois, au fil du temps, les expéditeurs ajustés aux nouvelles exigences en matière d’authentification des expéditeurs et le nombre de messages qui ont été identifiés de manière indéterminée comme usurpés est devenu négligeable pour la plupart des chemins d’accès.
+Lorsque Microsoft a activé cette fonctionnalité dans 2018, certains faux positifs se sont produits (bons messages ont été marqués comme incorrects). Toutefois, au fil du temps, les expéditeurs sont adaptés à la configuration requise. Le nombre de messages qui ont été identifiés de manière indéterminée comme usurpés est devenu négligeable pour la plupart des chemins d’accès.
 
 Microsoft a d’abord adopté les nouvelles exigences d’authentification de messagerie plusieurs semaines avant de la déployer auprès des clients. S’il y a eu des perturbations au début, elles ont progressivement diminué.
 
@@ -45,7 +45,7 @@ Microsoft a d’abord adopté les nouvelles exigences d’authentification de me
 
 Oui. À partir du 2018 octobre, toutes les organisations disposant de boîtes aux lettres dans Exchange Online et d’organisations EOP autonomes ne disposant pas de boîtes aux lettres Exchange Online sont accessibles à l’aide des usurpations d’identité.
 
-La technologie de détection d’usurpation d’identité a été initialement déployée uniquement pour les organisations ayant eu des abonnements Office 365 entreprise E5 ou le complément Office 365 Advanced Threat Protection (Office 365 ATP) pour leur abonnement.
+La technologie de détection d’usurpation d’identité était initialement disponible dans Office 365 Advanced Threat Protection. Par exemple, les abonnements Microsoft E5 ou les modules complémentaires ATP.
 
 ## <a name="how-can-i-report-spam-or-non-spam-messages-back-to-microsoft"></a>Comment signaler des messages comme étant ou n’étant pas du courrier indésirable à Microsoft ?
 
@@ -57,9 +57,9 @@ Consultez [la rubrique ne connaissant pas toutes les sources de votre courrier �
 
 ## <a name="what-happens-if-i-disable-anti-spoofing-protection-for-my-organization"></a>Que se passe-t-il si je désactive la protection contre l’usurpation d’identité pour mon organisation ?
 
-Nous vous le déconseillons car vous manquerez davantage de messages de hameçonnage et de courrier indésirable. Tout hameçonnage n’est pas de l’usurpation d’identité, et toutes les usurpations d’identité ne seront pas manquées. Cependant, vous courrez un risque supérieur à celui auquel s’expose un client qui active la détection d’usurpation d’identité.
+Nous vous déconseillons de désactiver la protection contre l’usurpation d’identité. La désactivation de la protection autorise la remise de messages de hameçonnage et de courrier indésirable au sein de votre organisation. Tous les messages d’hameçonnage ne sont pas usurpés et tous les messages falsifiés ne sont pas manqués. Toutefois, votre risque sera plus élevé.
 
-Maintenant que le [filtrage amélioré pour les connecteurs](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors) est disponible, il n’est plus recommandé de désactiver la protection contre l’usurpation d’identité si votre enregistrement MX pointe vers un autre serveur ou service avant de remettre le courrier électronique à EOP.
+Maintenant que le [filtrage amélioré pour les connecteurs](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors) est disponible, nous ne recommandons plus la désactivation de la protection contre l’usurpation d’identité lorsque votre courrier électronique est acheminé via un autre service avant EOP.
 
 ## <a name="does-anti-spoofing-protection-mean-i-will-be-protected-from-all-phishing"></a>La protection contre l’usurpation d’identité signifie-t-elle une protection contre tous les tentatives de hameçonnage ?
 
@@ -71,7 +71,7 @@ Presque tous les grands services de messagerie mettent en œuvre des vérificati
 
 ## <a name="do-i-still-need-to-enable-the-advanced-spam-filter-setting-spf-record-hard-fail-_markasspamspfrecordhardfail_-if-i-enable-anti-spoofing"></a>Dois-je toujours activer le paramètre de filtrage du courrier indésirable avancé « enregistrement SPF : échec matériel » (_MarkAsSpamSpfRecordHardFail_) si j’active la détection d’usurpation d’identité ?
 
-Non. Ce paramètre ASF n’est plus nécessaire, car la détection d’usurpation d’identité ne prend pas seulement en compte le blocage de SPF, mais un ensemble plus large de critères. Si vous avez activé la détection d’usurpation d’identité et l’option **Enregistrement SPF : échec sévère** (_MarkAsSpamSpfRecordHardFail_), vous obtiendrez probablement davantage de faux positifs.
+Non. Ce paramètre ASF n’est plus obligatoire. La protection contre l’usurpation d’identité considère à la fois les pannes matérielles SPF et un ensemble plus large de critères. Si vous avez activé la détection d’usurpation d’identité et l’option **Enregistrement SPF : échec sévère** (_MarkAsSpamSpfRecordHardFail_), vous obtiendrez probablement davantage de faux positifs.
 
 Nous vous recommandons de désactiver cette fonctionnalité car elle ne fournit quasiment aucun avantage supplémentaire pour détecter le courrier indésirable ou le message de hameçonnage, et générera plutôt des faux positifs. Pour plus d’informations, voir [paramètres du filtre de courrier indésirable avancé (ASF) dans EOP](advanced-spam-filtering-asf-options.md).
 

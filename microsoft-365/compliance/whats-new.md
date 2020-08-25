@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Qu’il s’agisse d’ajouter de nouvelles solutions au centre de conformité, de mettre à jour des fonctionnalités existantes en fonction de vos commentaires ou de déployer une documentation actualisée et actualisée, Microsoft 365 vous aide à rester informé de la mise en conformité en perpétuelle évolution. Découvrez ce que nous avons fait dans ce mois-ci.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 9bccaab4c1dd1ac8b4676939d848c0f1a599d86b
-ms.sourcegitcommit: 445b249a6f0420b32e49742fd7744006c7090b2b
+ms.openlocfilehash: 95b23ccdb272c9e91ee4c525fd90679c492efc9b
+ms.sourcegitcommit: 22dab0f7604cc057a062698005ff901d40771692
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46798170"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "46868971"
 ---
 # <a name="whats-new-in-microsoft-365-compliance"></a>Nouveautés de la conformité Microsoft 365
 
@@ -97,8 +97,6 @@ April inclut quelques mises à jour clés de notre solution de gestion des enreg
 
 - La section « gestion des enregistrements » est désormais entièrement disponible dans le centre de conformité. Tirez parti des interfaces utilisateur et des fonctionnalités mises à jour pour le plan de fichiers, les étiquettes de rétention et les stratégies d’étiquette, les événements et la destruction.
 - En parlant de disposition, nous avons également déployé des [preuves d’imposition](disposition.md#disposition-of-records) pour les enregistrements dans SharePoint et OneDrive. Vous pouvez maintenant voir une liste d’éléments dans les emplacements qui ont été supprimés automatiquement ou après une révision de destruction.
-
-:::image type="content" source="../media/mcc-records-management-page.png" alt-text="Section gestion des enregistrements dans le centre de conformité Microsoft 365":::
 
 ### <a name="sensitivity-labels-preview-auto-labeling-policies"></a>Étiquettes de sensibilité : aperçu des stratégies d’étiquetage automatique
 
@@ -267,7 +265,7 @@ Si vous avez utilisé le centre de sécurité & conformité d’Office 365 pour 
 |Protection contre la perte de données|Protection contre la perte de données <br/> https://protection.office.com/datalossprevention |Protection contre la perte de données <br/> https://compliance.microsoft.com/datalossprevention |[Vue d’ensemble de la protection contre la perte de données](data-loss-prevention-policies.md)|
 |Demandes des personnes concernées |Confidentialité des données > demandes des personnes concernées <br/> https://protection.office.com/dsrcases |Demandes des personnes concernées <br/> https://compliance.microsoft.com/datasubjectrequest |[Gérer les demandes des personnes associées aux données RGPD avec l’outil de cas DSR](manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md)|
 |eDiscovery|découverte électronique > eDiscovery <br/> https://protection.office.com/ediscoveryv1 |> de découverte électronique <br/> https://compliance.microsoft.com/classicediscovery |[Gérer des cas eDiscovery](ediscovery-cases.md) |
-|Events|Événements de > de la gestion des enregistrements <br/> https://protection.office.com/events |Onglet > des événements de gestion des enregistrements <br/> https://compliance.microsoft.com/recordsmanagement?viewid=events |[Débuter la rétention lorsqu’un événement se produit](event-driven-retention.md)|
+|Événements|Événements de > de la gestion des enregistrements <br/> https://protection.office.com/events |Onglet > des événements de gestion des enregistrements <br/> https://compliance.microsoft.com/recordsmanagement?viewid=events |[Débuter la rétention lorsqu’un événement se produit](event-driven-retention.md)|
 |Plan de gestion de fichiers|Gestion des enregistrements > plan de gestion des fichiers <br/> https://protection.office.com/fileplan |Onglet gestion des enregistrements > plan de fichiers <br/> https://compliance.microsoft.com/recordsmanagement?viewid=fileplan |[Utiliser le plan de gestion de fichiers pour gérer les étiquettes de rétention](file-plan-manager.md)|
 |Importer des fichiers PST|Gouvernance des informations > importer des fichiers PST <br/> https://protection.office.com/importV2 |Onglet > d’importation de la gouvernance des informations <br/> https://compliance.microsoft.com/informationgovernance?viewid=import |[Vue d’ensemble de l’importation des fichiers PST de votre organisation](importing-pst-files-to-office-365.md)|
 |Explorateur d’activité des étiquettes|Explorateur d’informations > d’activité des étiquettes <br/> https://protection.office.com/labelexplorer |Onglet Explorateur d’activités > classification des données <br/> https://compliance.microsoft.com/dataclassification?viewid=activitiesexplorer |[Afficher l’activité sur votre contenu étiqueté (aperçu)](data-classification-activity-explorer.md)|

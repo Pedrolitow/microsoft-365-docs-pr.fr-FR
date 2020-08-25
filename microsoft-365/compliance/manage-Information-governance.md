@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Implémentez les fonctionnalités de gouvernance des informations Microsoft dans Microsoft 365 pour régir vos données en matière de conformité ou de réglementation.
-ms.openlocfilehash: 8883b376f75ecd92c99d837a769ef6297b5e7129
-ms.sourcegitcommit: 22fd8517707ed3ab6ef996247ad2aa372535ee56
+ms.openlocfilehash: b02c724ee812e622a45939d11b78f87245e2f194
+ms.sourcegitcommit: 787b198765565d54ee73972f664bdbd5023d666b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46815187"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "46866944"
 ---
 # <a name="microsoft-information-governance-in-microsoft-365"></a>Microsoft information Governance dans Microsoft 365
 
@@ -27,11 +27,13 @@ ms.locfileid: "46815187"
 
 Utilisez les fonctionnalités Microsoft information Government (parfois abrégées à MIG) pour régir vos données pour des exigences réglementaires ou de conformité.
 
+![Diriger votre gouvernance des informations sur les données et la gestion des enregistrements](../media/information-governance-records-management.png)
+
 Vous souhaitez protéger vos données ? Consultez la rubrique [Microsoft information protection dans microsoft 365](protect-information.md).
 
 ## <a name="information-governance"></a>Gouvernance des informations
 
-Pour conserver et supprimer ce que vous souhaitez faire, procédez comme suit :
+Pour conserver ce dont vous avez besoin et supprimer ce que vous ne pouvez pas faire :
  
 |Fonctionnalité|Quels problèmes est-il résolu ?|Prise en main|
 |:------|:------------|:--------------------|:-----------------------------|
@@ -42,7 +44,7 @@ Pour conserver et supprimer ce que vous souhaitez faire, procédez comme suit :
 
 ## <a name="records-management"></a>Gestion des enregistrements
 
-Pour gérer le contenu à forte valeur ajoutée aux obligations légales, commerciales ou réglementaires, utilisez la gestion des enregistrements :
+Pour gérer le contenu à forte valeur ajoutée aux obligations légales, commerciales ou réglementaires :
 
 |Fonctionnalité|Quels problèmes est-il résolu ?|Prise en main|
 |:------|:------------|---------------------|:----------------------------|
