@@ -21,12 +21,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0f54736f-eb22-414c-8273-498a0918678f
 description: "Découvrez comment configurer une stratégie d'expiration des mots de passe pour votre organisation dans le Centre d'administration Microsoft 365. "
-ms.openlocfilehash: 053b3214862d477cbd122ff6336a6b53a98e5421
-ms.sourcegitcommit: 9550298946f8accb90cd59be7b46b71d4bf4f8cc
+ms.openlocfilehash: e95184bda631a5efaad0376c766ce5408c0a95e7
+ms.sourcegitcommit: 22dab0f7604cc057a062698005ff901d40771692
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/08/2020
-ms.locfileid: "46597364"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "46868866"
 ---
 # <a name="set-the-password-expiration-policy-for-your-organization"></a>Définir la stratégie d’expiration des mots de passe pour votre organisation
 
@@ -50,7 +50,7 @@ Si vous voulez que les mots de passe utilisateur expirent après un certain temp
 > [!IMPORTANT]
 > Seuls les [administrateurs généraux](../add-users/about-admin-roles.md) peuvent effectuer ces étapes.
   
-1. Dans le centre d’administration, cliquez sur la page **Paramètres** \> **Paramètres**.
+1. Dans le centre d’administration, cliquez sur la page **Paramètres** \> **Paramètres de l’organisation**.
 
 2. Accédez à la page <a href="https://go.microsoft.com/fwlink/p/?linkid=2072756" target="_blank">Sécurité & confidentialité</a>.
  Si vous n’êtes pas un administrateur général, l’option Sécurité et confidentialité n’est pas visible.

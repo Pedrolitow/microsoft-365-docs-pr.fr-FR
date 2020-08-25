@@ -17,17 +17,17 @@ ms.collection:
 - Strat_O365_IP
 ms.custom: TopSMBIssues
 localization_priority: Priority
-description: Les administrateurs peuvent découvrir comment les services Exchange Online et Exchange Online Protection (EOP) utilisent l’authentification de messagerie électronique (SPF, DKIM et DMARC) pour empêcher l’usurpation d’identité, le hameçonnage et le courrier indésirable.
-ms.openlocfilehash: cc9489a258608080118e88bf1375e4d5f35f8c77
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+description: Les administrateurs peuvent découvrir comment EOP utilise l’authentification de messagerie électronique (SPF, DKIM et DMARC) pour empêcher l’usurpation d’identité, le hameçonnage et les courriers indésirables.
+ms.openlocfilehash: 8db5045ec19c5552feba739628a2c9c1c508f620
+ms.sourcegitcommit: 787b198765565d54ee73972f664bdbd5023d666b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46826648"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "46866634"
 ---
 # <a name="email-authentication-in-eop"></a>Authentification de messagerie électronique dans EOP
 
-L’authentification de messagerie électronique (également appelée validation du courrier électronique) est un ensemble de normes qui tente de bloquer l’usurpation d’identité (messages électroniques provenant de faux expéditeurs). Dans les organisations Microsoft 365 disposant de boîtes aux lettres dans Exchange Online et les organisations autonomes Exchange Online Protection (EOP) sans boîtes aux lettres Exchange Online, EOP utilise ces normes pour vérifier l’e-mail entrant :
+L’authentification de messagerie électronique (également appelée validation du courrier électronique) est un ensemble de normes qui tente de bloquer l’usurpation d’identité (messages électroniques provenant de faux expéditeurs). Dans toutes les organisations Microsoft 365, EOP utilise ces normes pour vérifier les e-mails entrants :
 
 - [SPF](how-office-365-uses-spf-to-prevent-spoofing.md)
 
@@ -37,31 +37,34 @@ L’authentification de messagerie électronique (également appelée validation
 
 L’authentification de messagerie électronique vérifie que les messages électroniques d’un expéditeur (par exemple, laura@contoso.com) sont légitimes et proviennent de sources attendues pour ce domaine de courrier électronique (par exemple, contoso.com).
 
-Le reste de cette rubrique explique comment fonctionnent ces technologies et comment EOP les utilise pour vérifier le courrier électronique entrant.
+Le reste de cette rubrique explique comment fonctionnent ces technologies et comment EOP les utilise pour vérifier les e-mail entrant.
 
 ## <a name="use-email-authentication-to-help-prevent-spoofing"></a>Utilisez l’authentification de messagerie électronique pour empêcher l’usurpation d’identité
 
-DMARC empêche l’usurpation d’identité en examinant l’adresse **DE** dans les messages (l’adresse de messagerie électronique de l’expéditeur que les utilisateurs voient dans leur client de messagerie). Les organisations de messagerie électronique de destination peuvent également vérifier que le domaine de messagerie électronique a franchi les protocoles SPF ou DKIM, ce qui signifie qu’il a été authentifié et n’est donc pas falsifié.
+DMARC empêche l’usurpation d’identité en examinant l’adresse **de provenance** dans les messages. L’adresse **de provenance** est l’adresse e-mail de l’expéditeur que les utilisateurs voient dans leur client de messagerie. Les organisations de messagerie de destination peuvent également vérifier que le domaine de messagerie a réussi les vérifications SPF ou DKIM. En d’autres termes, le domaine a été authentifié et, par conséquent, l’adresse de messagerie de l’expéditeur n’est pas usurpée.
 
-Toutefois, le problème réside dans le fait que les enregistrements SPF, DKIM et DMARC dans DNS pour l’authentification de messagerie électronique (collectivement appelées stratégies d’authentification de messagerie électronique) sont complètement facultatifs. Dès lors, si les domaines dotés de stratégies d’authentification de messagerie électronique fortes, tels que microsoft.com et skype.com, sont protégés contre l’usurpation d’identité, des domaines dont les stratégies d’authentification de messagerie électronique sont plus faibles, voire inexistantes, constituent des cibles idéales pour de telles usurpations.
+Toutefois, les enregistrements DNS pour SPF, DKIM et DMARC (appelés stratégies d’authentification de messagerie électronique) sont facultatifs. Les domaines dotés de stratégies d’authentification de messagerie électronique fortes telles que microsoft.com et skype.com sont protégés contre l’usurpation d’identité. Certains domaines qui ont des stratégies d’authentification de messagerie électronique plus faibles ,ou qui n’en ont aucune, ont beaucoup plus de chances d’être usurpés.
 
-Depuis le mois de mars 2018, seuls 9 % des domaines des entreprises figurant au classement Fortune 500 ont publié des stratégies d’authentification de messagerie électronique fortes. Les 91 % d'entreprises restantes peuvent être usurpées par un intrus. À moins qu'un autre mécanisme de filtrage de messagerie électronique ne soit en place, le courrier électronique provenant d'expéditeurs usurpés dans ces domaines peut être transmis aux utilisateurs.
+Depuis le mois de mars 2018, seuls 9 % des domaines des entreprises figurant au classement Fortune 500 ont publié des stratégies d’authentification de messagerie électronique fortes. Les 91 % d'entreprises restantes peuvent être usurpées par un intrus. À moins qu'un autre mécanisme de filtrage de messagerie électronique ne soit en place, le courrier électronique provenant d'expéditeurs usurpés dans ces domaines peut être transmis aux utilisateurs.
 
 ![Stratégies DMARC des entreprises du classement Fortune 500](../../media/84e77d34-2073-4a8e-9f39-f109b32d06df.jpg)
 
-La proportion de petites et moyennes entreprises non reprises au classement Fortune 500 et qui publient des stratégies d’authentification de messagerie électronique fortes est plus faible, et plus faible encore pour les domaines situés en dehors de l’Amérique du Nord et de l’Europe occidentale.
+La part de petites et moyennes entreprises qui publient des stratégies d’authentification de messagerie électronique renforcées est plus petite. Ce nombre est encore plus petit pour les domaines de messagerie électronique situés hors Amérique du Nord et Europe de l’Ouest.
 
-Le problème est de taille car, si les entreprises ne sont peut-être pas informées des mécanismes d’authentification de messagerie électronique, les intrus les maîtrisent parfaitement et profitent de ces lacunes. Le hameçonnage est si problématique et l’adoption de stratégies d’authentification de messagerie électronique fortes si limitée que Microsoft Corporation utilise une *authentification implicite messagerie électronique* pour vérifier le courrier entrant.
+L’absence de stratégies d’authentification fortes est un problème fréquent. Si les organisations ne comprennent pas le fonctionnement de l’authentification de messagerie électronique, les intrus, eux, en tire parti grâce à leur parfaite compréhension. En raison de problèmes d’hameçonnage et du faible taux d’adoption de stratégies d’authentification fortes, Microsoft utilise l’*authentification de courrier implicite* pour vérifier les courriers entrants.
 
-L’authentification implicite de messagerie électronique est basée sur de nombreuses extensions de stratégies d’authentification de messagerie électronique classiques. Ces extensions incluent la réputation de l’expéditeur, l’historique de l’expéditeur, l’historique du destinataire, l’analyse comportementale et d’autres techniques avancées. Un message provenant d’un domaine n’utilisant pas d’authentification de messagerie électronique est marqué comme une usurpation d’identité, sauf s’il contient d’autres signaux indiquant sa légitimité.
+L’authentification de courrier implicite est une extension de stratégies d’authentification de messagerie électronique classiques. Ces extensions incluent : la réputation de l’expéditeur, l’historique de l’expéditeur, l’historique du destinataire, l’analyse comportementale et d’autres techniques avancées. En l’absence d’autres signaux de ces extensions, les messages envoyés depuis des domaines qui n’utilisent pas de stratégie d’authentification de messagerie électronique sont marqués comme provenant d’usurpateurs.
 
 Pour lire l’annonce générale de Microsoft Corporation, voir [A Sea of Phish Part 2 – Enhanced Anti-spoofing in Microsoft 365](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Schooling-A-Sea-of-Phish-Part-2-Enhanced-Anti-spoofing/ba-p/176209).
 
 ## <a name="composite-authentication"></a>Authentification composite
 
-Si les filtrages SPF, DKIM et DMARC sont utiles en soi, ils ne communiquent pas suffisamment l’état d’authentification quand un message n’a pas d’enregistrement d’authentification explicite. C’est pourquoi Microsoft Corporation a développé un algorithme pour l’authentification implicite de messagerie électronique combinant plusieurs signaux en une valeur unique appelée _Authentification composite_, abrégée en compauth. La valeur compauth est estampillée dans l’en-tête **Authentication-Results**, à l’intérieur des en-têtes de message.
+Si un domaine ne dispose pas d’enregistrements SPF, DKIM et DMARC traditionnels, ces vérifications n’indiquent pas assez d’informations sur l’état d’authentification. Par conséquent, Microsoft a développé un algorithme pour l’authentification de courrier implicite. Cet algorithme combine plusieurs signaux dans une valeur unique appelée l’_authentification composite_, ou `compauth`. La valeur `compauth` est marquée dans l’en-tête **Authentication-Results**, à l’intérieur des en-têtes de message.
 
-> Authentication-Results :<br/>&nbsp;&nbsp;&nbsp;compauth=\<fail | pass | softpass | none\> reason=\<yyy\>
+```text
+Authentication-Results:
+   compauth=<fail | pass | softpass | none> reason=<yyy>
+```
 
 Ces valeurs sont expliquées dans [En-tête de message d’authentification-résultats](anti-spam-message-headers.md#authentication-results-message-header).
 
@@ -73,12 +76,11 @@ Le fait de se fier uniquement aux enregistrements d'authentification de messager
 
 - Il se peut que le domaine d’envoi ne dispose pas des enregistrements DNS requis ou que les enregistrements soient mal configurés.
 
-- Le domaine source a correctement configuré les enregistrements DNS, mais ce domaine ne correspond pas au domaine dans l’adresse De. SPF et DKIM n'exigent pas que le domaine soit utilisé dans l'adresse De. Les intrus ou services légitimes peuvent enregistrer un domaine, configurer SPF et DKIM pour le domaine, utiliser un domaine totalement différent dans l’adresse De, et ce message franchira SPF et DKIM.
+- Le domaine source a correctement configuré les enregistrements DNS, mais ce domaine ne correspond pas au domaine dans l’adresse De. SPF et DKIM n'exigent pas que le domaine soit utilisé dans l'adresse De. Les intrus ou services légitimes peuvent enregistrer un domaine, configurer SPF et DKIM pour le domaine, et utiliser un domaine totalement différent dans l’adresse l’expéditeur. Les messages provenant d’expéditeurs de ce domaine réussissent les vérifications SPF et DKIM.
 
 L’authentification composite peut résoudre ces limites en transférant les messages qui, autrement, échoueraient aux contrôles d'authentification de messagerie électronique.
 
-> [!NOTE]
-> Comme décrit précédemment, l’authentification implicite de messagerie électronique utilise plusieurs signaux pour déterminer si un message est légitime. Par souci de simplicité, les exemples suivants se concentrent sur les résultats d’authentification de messagerie électronique. D’autres facteurs d’intelligence en aval peuvent identifier les messages qui franchissent l’authentification de messagerie électronique comme étant usurpés, ou les messages qui échouent à l'authentification de messagerie électronique comme étant légitimes.
+Par souci de simplicité, les exemples suivants se concentrent sur les résultats d’authentification de messagerie électronique. D’autres facteurs d’intelligence en aval peuvent identifier les messages qui franchissent l’authentification de messagerie électronique comme étant usurpés, ou les messages qui échouent à l'authentification de messagerie électronique comme étant légitimes.
 
 Par exemple, le domaine fabrikam.com ne disposent pas d’enregistrements SPF, DKIM ou DMARC. Les messages en provenance des expéditeurs du domaine fabrikam.com peuvent échouer à l'authentification composite (notez la valeur `compauth` et la raison) :
 
@@ -91,7 +93,7 @@ From: chris@fabrikam.com
 To: michelle@contoso.com
 ```
 
-Si fabrikam.com configure un SPF sans enregistrement DKIM, le message peut franchir l'authentification composite, car le domaine qui a franchi le SPF est aligné avec le domaine de l'adresse De :
+Si fabrikam.com configure un SPF sans enregistrement DKIM, le message peut réussir l’authentification composite. Le domaine ayant réussi les vérifications SPF est aligné sur le domaine de l’adresse de l’expéditeur :
 
 ```text
 Authentication-Results: spf=pass (sender IP is 10.2.3.4)
@@ -102,7 +104,7 @@ From: chris@fabrikam.com
 To: michelle@contoso.com
 ```
 
-Si fabrikam.com configure un DKIM sans enregistrement SPF, le message peut franchir l'authentification composite, car le domaine dans la signature DKIM franchie est aligné avec le domaine dans l'adresse De :
+Si fabrikam.com configure un DKIM sans enregistrement SPF, le message peut réussir l’authentification composite. Le domaine dans la signature DKIM est aligné sur le domaine de l’adresse de l’expéditeur :
 
 ```text
 Authentication-Results: spf=none (sender IP is 10.2.3.4)
@@ -114,7 +116,7 @@ From: chris@fabrikam.com
 To: michelle@contoso.com
 ```
 
-Si le domaine dans SPF ou la signature DKIM ne s'aligne pas avec le domaine dans l'adresse De, le message peut échouer à l'authentification composite :
+Si le domaine dans SPF ou si la signature DKIM ne s'alignent pas sur le domaine de l'adresse de l’expéditeur, le message peut échouer à l'authentification composite :
 
 ```text
 Authentication-Results: spf=none (sender IP is 192.168.1.8)
@@ -128,7 +130,7 @@ To: michelle@fabrikam.com
 
 ## <a name="solutions-for-legitimate-senders-who-are-sending-unauthenticated-email"></a>Solutions pour les expéditeurs légitimes qui envoient du courrier électronique non authentifié
 
-Microsoft 365 conserve la trace des contacts qui envoient du courrier électronique non authentifié à votre organisation. Si le service considère que l’expéditeur n’est pas légitime, il le marque comme échec d'authentification composite. Pour éviter cela, vous pouvez utiliser les recommandations de cette section.
+Microsoft 365 conserve la trace des contacts qui envoient du courrier électronique non authentifié à votre organisation. Si le service considère que l’expéditeur n’est pas légitime, il indique un échec à l’authentification composite sur les messages de cet expéditeur. Pour éviter cette décision, vous pouvez utiliser les recommandations de cette section.
 
 ### <a name="configure-email-authentication-for-domains-you-own"></a>Configurez l’authentification de messagerie électronique pour les domaines que vous possédez
 
@@ -140,7 +142,7 @@ Vous pouvez utiliser cette méthode pour résoudre l’usurpation d’identité 
 
 - [Pensez à configurer des enregistrements DMARC](use-dmarc-to-validate-email.md) pour votre domaine afin de déterminer qui sont vos expéditeurs légitimes.
 
-Microsoft Corporation ne fournit pas de directives d’implémentation détaillées pour les enregistrements SPF, DKIM et DMARC. Toutefois, de nombreuses informations sont disponibles en ligne. Il existe également des sociétés tierces spécialisées dans l’aide à la configuration d’enregistrements d’authentification de courrier électronique.
+Microsoft Corporation ne fournit pas de directives d’implémentation détaillées pour les enregistrements SPF, DKIM et DMARC. Cependant, de nombreuses informations sont disponibles en ligne. Il existe également des sociétés tierces spécialisées dans l’aide à la configuration d’enregistrements d’authentification de messagerie électronique.
 
 #### <a name="you-dont-know-all-sources-for-your-email"></a>Vous ne connaissez pas toutes les sources de votre courrier électronique
 
@@ -152,7 +154,7 @@ fabrikam.com IN TXT "v=spf1 include:spf.fabrikam.com ?all"
 
 Cet exemple signifie que le courrier électronique provenant de l'infrastructure de votre entreprise franchira l’authentification de courrier électronique, mais que le courrier électronique provenant de sources inconnues reviendra au mode neutre.
 
-Microsoft 365 traite le courrier électronique entrant provenant de l’infrastructure de votre entreprise comme étant authentifié, mais le courrier électronique provenant de sources non identifiées peut toujours être marqué comme usurpant une identité (selon que Microsoft 365 peut l’authentifier de manière implicite ou non). Cela constitue cependant toujours une amélioration par rapport à tout le courrier électronique que Microsoft 365 marque comme usurpant une identité.
+Microsoft 365 traite les messages entrants de votre infrastructure d’entreprise comme authentifiés. Les messages électroniques provenant de sources non identifiées peuvent rester marqués comme usurpés si l’authentification implicite échoue. Cela constitue cependant toujours une amélioration par rapport à tout le courrier électronique que Microsoft 365 marque comme usurpant une identité.
 
 Une fois que vous avez commencé à utiliser une stratégie de secours SPF de `?all`, vous pouvez progressivement découvrir et inclure d’autres sources de messagerie électronique pour vos messages, puis mettre à jour votre enregistrement SPF avec une stratégie plus stricte.
 
@@ -202,4 +204,4 @@ Si vous hébergez le courrier électronique d'un domaine ou fournissez une infra
 
 La remise à Microsoft Corporation n’est nullement garantie, même si vous authentifiez le courrier électronique provenant de votre plateforme, mais cela garantit au moins que Microsoft ne considèrera pas votre envoi comme du courrier indésirable parce qu’il n’est pas authentifié.
 
-Pour plus d’informations sur les meilleures pratiques des fournisseurs de services, voir le document [M3AAWG Mobile Messaging Best Practices for Service Providers](https://www.m3aawg.org/sites/default/files/M3AAWG-Mobile-Messaging-Best-Practices-Service-Providers-2015-08.pdf).
+Pour plus d’informations sur de meilleures utilisations des fournisseurs de services, voir le document [Les meilleures pratiques des fournisseurs de services de messagerie mobile M3AAWG](https://www.m3aawg.org/sites/default/files/M3AAWG-Mobile-Messaging-Best-Practices-Service-Providers-2015-08.pdf).

@@ -1,5 +1,5 @@
 ---
-title: Prise en main de la gestion des enregistrements
+title: Démarrer la gestion des enregistrements dans Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -17,18 +17,18 @@ search.appverid:
 - MOE150
 - MET150
 description: Vous avez besoin d’une solution de gestion des enregistrements pour Microsoft 365 qui gère les contenus à forte valeur ajoutée pour les obligations légales, professionnelles ou réglementaires, mais vous ne savez pas par où commencer ? Lisez quelques conseils pratiques pour commencer.
-ms.openlocfilehash: bec70df94ce81ee7497b3ec236dca5649ce90cb7
-ms.sourcegitcommit: 1780359234abdf081097c8064438d415da92fb85
+ms.openlocfilehash: 1983aca82bdab2ca7bb63d5a508dc3843ac1e322
+ms.sourcegitcommit: 22dab0f7604cc057a062698005ff901d40771692
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "46778637"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "46868899"
 ---
 # <a name="get-started-with-records-management"></a>Prise en main de la gestion des enregistrements
 
 >*[Guide de sécurité et conformité pour les licences Microsoft 365](https://aka.ms/ComplianceSD).*
 
-Vous êtes prêt à gérer le contenu à forte valeur de votre organisation pour les obligations légales, professionnelles ou réglementaires à l’aide d’une solution de gestion des enregistrements ? Utilisez les instructions de haut niveau suivantes pour commencer :
+Etes-vous prêt à démarrer la gestion du contenu à forte valeur de votre organisation relatif aux obligations légales, professionnelles ou réglementaires à l’aide d’une solution de gestion des enregistrements dans Microsoft 365? Utilisez les instructions de haut niveau suivantes pour commencer :
 
 1. **Comprenez le fonctionnement de la solution de gestion des enregistrements** et identifiez les actions autorisées ou bloquées lorsque les documents et les messages électroniques sont des enregistrements déclarés : [En savoir plus sur la gestion des enregistrements](records-management.md). 
 
@@ -41,7 +41,7 @@ Vous êtes prêt à gérer le contenu à forte valeur de votre organisation pour
     - [Créer des étiquettes de rétention et les appliquer dans les applications](create-apply-retention-labels.md)
     - [Appliquer automatiquement une étiquette de rétention au contenu](apply-retention-labels-automatically.md)
 
-## <a name="subscription-and-licensing-requirements-for-retention-policies-and-retention-labels"></a>Conditions d’abonnement et de licence pour les stratégies et les étiquettes de rétention
+## <a name="subscription-and-licensing-requirements-for-records-management"></a>Conditions d’abonnement et d’acquisition de licence pour la gestion des enregistrements
 
 Différents abonnements prennent en charge la gestion des enregistrements et les conditions requises pour les licences des utilisateurs dépendent des fonctionnalités utilisées.
 
@@ -49,9 +49,15 @@ Pour afficher les options de licence permettant à vos utilisateurs de bénéfic
 
 ## <a name="permissions-required-for-records-management"></a>Autorisations requises pour la gestion des enregistrements
 
-Les membres de votre équipe de conformité qui sont chargés de la gestion des enregistrements ont besoin d’autorisations pour accéder au [Centre de conformité Microsoft 365](https://compliance.microsoft.com/). Par défaut, votre administrateur client (administrateur général) a accès à cet emplacement et peut accorder aux responsables de la conformité et à d’autres personnes un accès sans leur donner toutes les autorisations d’un administrateur client. Pour accorder des autorisations à cette administration limitée, nous vous recommandons d'ajouter des utilisateurs au groupe de rôles d’administrateur **Gestion des enregistrements**. Pour obtenir des instructions, voir [Octroi de l’accès au Centre de sécurité et conformité aux utilisateurs](https://docs.microsoft.com/microsoft-365/security/office-365-security/grant-access-to-the-security-and-compliance-center).
+Les membres de votre équipe de conformité qui sont chargés de la gestion des enregistrements ont besoin d’autorisations pour accéder au [Centre de conformité Microsoft 365](https://compliance.microsoft.com/). Par défaut, l’administrateur client (administrateur général) a accès à cet emplacement et peut accorder aux responsables de la conformité et à d’autres personnes un accès sans leur donner toutes les autorisations d’un administrateur client. Pour accorder des autorisations pour cette administration limitée, nous vous recommandons d'ajouter les utilisateurs au groupe de rôles d’administrateur de la **Gestion des Enregistrements** qui autorise le rôle de la **Gestion d’Enregistrement**.
 
-Ces autorisations sont requises uniquement pour créer, configurer et appliquer des étiquettes de rétention qui déclarent des enregistrements. La personne qui configure ces étiquettes n’a pas besoin d’accéder au contenu.
+Les autorisations incluses dans ce groupe de rôles n’incluent pas les autorisations nécessaires pour [la révision et la vérification avant la suppression](disposition.md), et même un administrateur général ne possède pas cette autorisation par défaut. Pour gérer la suppression, utilisez **le rôle**Gestion de la Suppression, en créant un groupe de rôles personnalisé ou en utilisant un groupe de rôles par défaut qui inclut un rôle (tel que**l’Administrateur de la Conformité**).
+
+Pour plus d’informations sur ces groupes de rôles et les rôles, consultez [Autorisations dans le Centre de Sécurité et de Conformité](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center#roles-in-the-security--compliance-center).
+
+Pour obtenir des instructions sur l’ajout d’utilisateurs aux groupes de rôles et l’attribution de rôles, consultez [Autoriser l’accès au Centre de Sécurité et de Conformité aux utilisateurs](https://docs.microsoft.com/microsoft-365/security/office-365-security/grant-access-to-the-security-and-compliance-center).
+
+Ces autorisations sont requises uniquement pour créer, configurer et appliquer des étiquettes de rétention qui déclarent des enregistrements et gère la suppression. La personne qui configure ces étiquettes n’a pas besoin d’accéder au contenu.
 
 ## <a name="common-scenarios-for-records-management"></a>Scénarios courants de gestion des enregistrements
 
