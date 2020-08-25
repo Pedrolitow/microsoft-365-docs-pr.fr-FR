@@ -1,7 +1,7 @@
 ---
 title: Considérations relatives à la sécurité et à la confidentialité du Cloud Government de la Nouvelle-Zélande
 description: Microsoft NZ répond aux questions publiées dans l’infrastructure Cloud Computing Nouvelle-Zélande.
-keywords: Offres pour la conformité Microsoft 365
+keywords: Microsoft 365, conformité, offres
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: cbf118d918dd5c3bc922fbea157fb56a709fad66
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: 99e7d28bea37ec282bd6358b5af81a3078dfdd38
+ms.sourcegitcommit: b7f4f1e04b27519b818d4255022b28f99fbe54af
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44065799"
+ms.lasthandoff: 08/21/2020
+ms.locfileid: "46852500"
 ---
 # <a name="new-zealand-government-cloud-computing-security-and-privacy-considerations"></a>Considérations relatives à la sécurité et à la confidentialité du Cloud Government de la Nouvelle-Zélande
 
@@ -37,16 +37,16 @@ Pour aider les agences à effectuer leur analyse et leur évaluation des service
 
 Découvrez comment accélérer le déploiement de l’infrastructure de la version de CC de votre application avec notre plan de sécurité et de conformité Azure : [Télécharger la réponse Azure vers la version de l’infrastructure de CC](https://gallery.technet.microsoft.com/Response-to-GCIO-Cloud-e117bbb9) .
 
-## <a name="microsoft-in-scope-cloud-services"></a>Services Cloud Microsoft dans le périmètre
+## <a name="microsoft-in-scope-cloud-services"></a>Services Cloud Microsoft concernés
 
 - [Azure et Azure Government](https://aka.ms/AzureCompliance)
 - [Dynamics 365](https://aka.ms/d365-compliance-list)
 - Intune
 - Service Cloud Power BI soit en service autonome, soit inclus dans un plan ou une suite Office 365
 - [Office 365](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
-- Exchange Online, SharePoint Online et Skype entreprise online. Microsoft NZ a collaboré avec l’équipe GCIO pour développer une architecture de référence pour l’intégration d’Exchange Online et du courrier électronique décrit dans le livre blanc [Office 365 : intégration de l’architecture de messagerie et](https://download.microsoft.com/download/8/5/9/859CDCEE-D293-47D8-9B6A-670B108B48E1/Microsoft_Office_365_white_paper_EN_US.pdf) de l’architecture de référence
+- Exchange Online, SharePoint Online et Microsoft Teams. Microsoft NZ a collaboré avec l’équipe GCIO pour développer une architecture de référence pour l’intégration d’Exchange Online et de l’envoi de courrier électronique.
 
-## <a name="frequently-asked-questions"></a>Forum Aux Questions
+## <a name="frequently-asked-questions"></a>Questions fréquemment posées
 
 **À qui s’applique l’infrastructure ?**
 
@@ -65,7 +65,7 @@ Si votre Agence est tenue de procéder à la certification et à l’accréditat
 - [Cloud Computing : considérations relatives à la sécurité et à la confidentialité des informations (ISPC)](https://www.digital.govt.nz/standards-and-guidance/technology-and-architecture/cloud-services/)
 - [Conditions de Microsoft Online Services](https://aka.ms/Online-Services-Terms)
 - [Office 365 : intégration de l’architecture de messagerie et](https://download.microsoft.com/download/8/5/9/859CDCEE-D293-47D8-9B6A-670B108B48E1/Microsoft_Office_365_white_paper_EN_US.pdf) de l’architecture de référence (autres conseils Microsoft NZ sur l’adoption du service Cloud)
-- [Conformité sur le site Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Conformité du Centre de gestion de la confidentialité Microsoft](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
 ## <a name="microsoft-responses-to-cloud-computing-ipsc"></a>Réponses Microsoft à « Cloud Computing IPSC »
 

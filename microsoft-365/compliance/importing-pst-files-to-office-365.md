@@ -20,12 +20,12 @@ ms.assetid: ba688e0a-0fcb-4bd7-8e57-2b669564ea84
 ms.custom:
 - seo-marvel-apr2020
 description: Découvrez comment utiliser le Service d’importation dans le Centre de sécurité et de conformité pour importer en bloc des données de courrier (fichiers PST) vers des boîtes aux lettres d’utilisateurs.
-ms.openlocfilehash: fd369a8cde1284c19f9eb3cb38cf8bfe39dbc4ee
-ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
+ms.openlocfilehash: 36cf04722b13f3d1033ddae54e32307497d9194b
+ms.sourcegitcommit: 37da941919036a714da42eaa039682ccbe0da670
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45127159"
+ms.lasthandoff: 08/23/2020
+ms.locfileid: "46860731"
 ---
 # <a name="overview-of-importing-your-organizations-pst-files"></a>Vue d’ensemble de l’importation des fichiers PST de votre organisation
 
@@ -146,7 +146,7 @@ En outre, pour créer des tâches d’importation dans le Centre de sécurité e
   
  **Où le chargement réseau est-il disponible ?**
   
-Le chargement réseau est actuellement disponible dans ces régions : États-Unis, au Canada, au Brésil, au Royaume-Uni, en France, en Allemagne, en Europe, en Inde, en Asie de l’Est, en Asie du Sud-Est, au Japon, en République de Corée, en Australie et Émirats arabes unis. Ce service sera prochainement disponible dans d’autres régions.
+Le téléchargement en réseau est actuellement disponible dans ces régions : États-Unis, Canada, Brésil, Royaume-Uni, France, Allemagne, Suisse, Norvège, Europe, Inde, Asie de l'Est, Asie du Sud-Est, Japon, République de Corée, Australie et Émirats arabes unis (EAU). Le téléchargement par réseau sera bientôt disponible dans d'autres régions.
   
  **À combien revient l’importation de fichiers PST via le chargement du réseau ?**
   
