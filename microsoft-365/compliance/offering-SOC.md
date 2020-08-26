@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: ec4bd2e3244add3b14d614c308fea736c6ceccb6
-ms.sourcegitcommit: daad5f2f1994a812c2b9c78e7dd148d10c51f61d
+ms.openlocfilehash: 2428109743b408061ead8ad87d5e59ac30417c06
+ms.sourcegitcommit: 90efec455336b4cecc06a8cbf0ce287740433523
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "44254297"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "46898082"
 ---
 # <a name="service-organization-controls-soc"></a>Service Organization Controls (SOC)
 
@@ -107,7 +107,7 @@ Les rapports permettent à vos auditeurs de comparer les services Entreprise Cl
 
 **À quelle fréquence des rapports Azure SOC sont-ils générés ?**
 
-Les rapports SOC relatifs à Azure, Microsoft Cloud App Security, Flow, Microsoft Graph, Intune, Power BI, PowerApps, Microsoft Stream et aux centres de données Microsoft reposent sur une période de 12 mois glissants (période d’audit) avec de nouveaux rapports émis chaque semestre (périodes se terminant le 31 mars et le 30 septembre). Les lettres de crédit sont émises en janvier pour couvrir la période du 01/10 au 31/12 et en juillet pour couvrir la période de 01/04 au 30/06. Les clients peuvent [télécharger](https://aka.ms/stp) les derniers rapports sur le Service Trust Portal.
+Les rapports SOC relatifs à Azure, Microsoft Cloud App Security, Flow, Microsoft Graph, Intune, Power BI, PowerApps, Microsoft Stream et aux centres de données Microsoft reposent sur une période de 12 mois glissants (période d’audit) avec de nouveaux rapports émis chaque semestre (périodes se terminant le 31 mars et le 30 septembre). Des lettres de pont sont émises chaque trimestre pour couvrir la période précédente de trois mois. Par exemple, la lettre de janvier couvre 10/1-12/31, la lettre d'avril couvre 1/1-3/31, la lettre de juillet couvre 4/1-6/30 et la lettre d'octobre couvre 7/1-9/30. Les clients peuvent [télécharger](https://aka.ms/stp) les derniers rapports sur le Service Trust Portal.
 
 **Dois-je réaliser mon propre audit des centres de données Microsoft ?**
 
