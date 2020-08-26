@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: Comment accéder aux ressources équivalentes au centre de déploiement de bureau obsolète.
-ms.openlocfilehash: 6db35ba51f06c7cca025112ebd1bb8d718b7842c
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 0dc5816959c5284739de4dee31dde7cc520bde55
+ms.sourcegitcommit: 90efec455336b4cecc06a8cbf0ce287740433523
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46686129"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "46898015"
 ---
 # <a name="desktop-deployment-center-deprecated"></a>Centre de déploiement de bureau (déconseillé)
 
@@ -33,7 +33,7 @@ Utilisez ces ressources pour déployer des ordinateurs de bureau modernes :
 
 Vous pouvez également consulter les [vidéos de la série de déploiement de bureau de Microsoft mécanique](https://www.aka.ms/watchhowtoshift).
 
-Vous pouvez également [obtenir de l’aide](https://aka.ms/mddhelp) pour le déploiement de votre bureau auprès de partenaires et des services FastTrack de Microsoft.
+Vous pouvez également trouver de l’aide pour le déploiement de votre ordinateur de bureau à partir des partenaires Microsoft et [FastTrack](https://www.microsoft.com/fasttrack/microsoft-365).
 
 ## <a name="windows-and-office-deployment-lab-kit"></a>Kit laboratoire de déploiement Windows et Office
 

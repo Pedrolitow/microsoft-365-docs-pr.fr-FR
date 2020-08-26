@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 6709f9edca2e1436bf1ea9be1a48dda596c2d0a4
-ms.sourcegitcommit: daad5f2f1994a812c2b9c78e7dd148d10c51f61d
+ms.openlocfilehash: 12f61d84557cda1af518bb78de22f4901ebdc08f
+ms.sourcegitcommit: 90efec455336b4cecc06a8cbf0ce287740433523
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "44254453"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "46898092"
 ---
 # <a name="payment-card-industry-pci-data-security-standard-dss"></a>Norme de sécurité des données (DSS) d’industrie de carte de paiement (PCI)
 
@@ -98,6 +98,6 @@ Pour l’instant, seuls les fichiers et documents téléchargés sur OneDrive En
 
 - [Conseil normes de sécurité PCI](https://www.pcisecuritystandards.org/)
 - [Norme de sécurité des données PCI](https://www.pcisecuritystandards.org/documents/PCI_DSS_v3-1.pdf)
-- [Matrice de responsabilités PCI DSS 3.2.1 Azure](https://aka.ms/pciresponsibilitymatrix)
+- [Blueprint Azure PCI DSS 3.2.1](https://docs.microsoft.com/azure/governance/blueprints/samples/pci-dss-3.2.1/)
 - [Guide de référence rapide PCI DSS](https://www.pcisecuritystandards.org/documents/PCISSC%20QRG%20August%202014%20-print.pdf)
 - [Conformité sur le site Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)

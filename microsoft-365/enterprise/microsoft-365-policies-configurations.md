@@ -1,14 +1,14 @@
 ---
 title: 'Configurations d’identité et d’accès aux appareils : Microsoft 365 pour les entreprises'
 description: Décrit les recommandations et les concepts fondamentaux de Microsoft pour le déploiement de stratégies et de configurations de messagerie électronique, de documents et d’applications sécurisées.
-author: brendacarter
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
 ms.prod: microsoft-365-enterprise
 ms.topic: article
 ms.date: 09/11/2018
 f1.keywords:
 - NOCSH
-ms.author: bcarter
 ms.reviewer: martincoetzer
 ms.custom:
 - it-pro
@@ -17,12 +17,12 @@ ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
 - m365solution-identitydevice
-ms.openlocfilehash: f39b5d72de630674ea6d58c30eadf211917de10d
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: e76ed8869f2e3bc3198eeff6dc4fcec777d0ce26
+ms.sourcegitcommit: 90efec455336b4cecc06a8cbf0ce287740433523
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46686625"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "46898163"
 ---
 # <a name="identity-and-device-access-configurations"></a>Configurations des identités et de l’accès aux appareils
 
@@ -64,15 +64,14 @@ Chaque secteur d’activité possède aussi sa propre réglementation spécialis
 
 Ce guide vous montre comment implémenter la protection des identités et des périphériques pour chacune de ces niveaux de protection. Utilisez ces conseils comme point de départ pour votre organisation et ajustez les stratégies pour répondre aux besoins spécifiques de votre organisation.
 
-Il est important d'utiliser des niveaux de protection cohérents pour l'ensemble de vos données, de vos identités et de vos appareils. Par exemple, si vous implémentez ces instructions, veillez à protéger vos données à des niveaux comparables. Ces modèles d’architecture vous montrent quelles fonctionnalités sont comparables.
+Il est important d'utiliser des niveaux de protection cohérents pour l'ensemble de vos données, de vos identités et de vos appareils. Par exemple, si vous implémentez ces instructions, veillez à protéger vos données à des niveaux comparables. 
 
-**La protection des appareils et de l’identité pour Office 365**<br/>
+Le modèle **d’architecture Identity and Device protection for Office 365** vous indique les fonctionnalités qui sont comparables.
+
 ![Miniature de l’affiche « protection des identités et des appareils pour Office 365 »](../media/O365_Identity_device_protection_thumb.png)<br/>
 [PDF](https://go.microsoft.com/fwlink/p/?linkid=841656) | [Visio](https://go.microsoft.com/fwlink/p/?linkid=841657) | [Plus de langues](https://www.microsoft.com/download/details.aspx?id=55032)
 
-**Solutions de protection des fichiers dans Office 365**<br/>
-![Miniature de l’affiche « solutions de protection de fichier dans Office 365 »](../media/24be68b5-d852-4fdb-94ad-94491a19edd8.png)<br/>
-[PDF](https://download.microsoft.com/download/7/8/9/789645A5-BD10-4541-BC33-F8D1EFF5E911/MSFT_cloud_architecture_O365%20file%20protection.pdf) | [Visio](https://download.microsoft.com/download/7/8/9/789645A5-BD10-4541-BC33-F8D1EFF5E911/MSFT_cloud_architecture_O365%20file%20protection.vsdx)
+De plus, consultez la solution « [déployer la protection des données pour la confidentialité des données](../solutions/information-protection-deploy.md) » pour protéger les informations stockées dans Microsoft 365.
 
 ## <a name="security-and-productivity-trade-offs"></a>Compromis entre sécurité et productivité
 

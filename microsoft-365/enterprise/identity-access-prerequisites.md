@@ -1,13 +1,13 @@
 ---
 title: Conditions préalables à l’implémentation des stratégies d’accès aux identités et aux appareils-Microsoft 365 pour les entreprises | Microsoft docs
 description: Décrit les recommandations de Microsoft liées à l’application de stratégies et de configurations de l’accès aux identités et aux appareils.
-author: BrendaCarter
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: Laurawi
 ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
-ms.author: bcarter
 ms.reviewer: martincoetzer
 ms.custom:
 - it-pro
@@ -15,19 +15,19 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: 295e1c713b97740fcf40e9607e650c242a68c035
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: a81e17cad1722c58f5bf13b2a36c16fc2ff5cba4
+ms.sourcegitcommit: 90efec455336b4cecc06a8cbf0ce287740433523
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46685877"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "46898039"
 ---
 # <a name="prerequisite-work-for-implementing-identity-and-device-access-policies"></a>Tâches préalables à l’implémentation de stratégies d’accès aux identités et aux appareils
 
 Cet article décrit les conditions préalables qui doivent être implémentées pour pouvoir déployer les stratégies d’identité et d’accès aux appareils recommandées. Cet article décrit également les configurations de client de plateforme par défaut recommandées pour fournir la meilleure expérience SSO à vos utilisateurs, ainsi que les conditions préalables techniques pour l’accès conditionnel.
 
 
-## <a name="prerequisites"></a>Conditions préalables
+## <a name="prerequisites"></a>Configuration requise
 
 Avant d’implémenter les stratégies d’identité et d’accès aux appareils recommandées, votre organisation doit répondre à plusieurs conditions préalables. Le tableau suivant détaille les éléments prérequis qui s’appliquent à votre environnement. 
 

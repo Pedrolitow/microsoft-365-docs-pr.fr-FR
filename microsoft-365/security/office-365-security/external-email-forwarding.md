@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: .
-ms.openlocfilehash: 88c3dae4f5a6786fe4eddea0d5e1c61dda837a87
-ms.sourcegitcommit: 5b769f74bcc76ac8d38aad815d1728824783cd9f
+ms.openlocfilehash: 7cb2ab9c6987900f2b53a17c3eda49001bca4d84
+ms.sourcegitcommit: 90efec455336b4cecc06a8cbf0ce287740433523
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "45080112"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "46898051"
 ---
 # <a name="configuring-external-email-forwarding-in-office-365"></a>Configuration du transfert de messages électroniques externes dans Office 365
 
@@ -43,6 +43,11 @@ Office 365 n’autorise pas le transfert externe automatique par les règles de 
 > La désactivation du transfert automatique vers des adresses externes dans Office 365 est effectuée en phases avec des détails communiqués via des publications du [Centre de messages](https://admin.microsoft.com/Adminportal/Home?source=applauncher&ref=/MessageCenter) . Pour aider les administrateurs à se préparer à ces modifications, demandez-leur de modifier les stratégies à l’avance afin de s’assurer que les utilisateurs ne sont pas perturbés.
 
 Vous trouverez plus d’informations sur les utilisateurs qui utilisent le transfert automatique (règles de boîte de réception ou le transfert SMTP) dans votre organisation dans le [rapport de messages transférés automatiquement](https://docs.microsoft.com/microsoft-365/security/office-365-security/mfi-auto-forwarded-messages-report?view=o365-worldwide).
+
+## <a name="how-does-this-policy-work-with-other-automatic-forwarding-controls"></a>Comment cette stratégie fonctionne-t-elle avec d’autres contrôles de transfert automatique ?
+
+En tant qu’administrateur, vous avez peut-être déjà d’autres types de contrôles en place, ce qui bloque le transfert automatique dans les [domaines distants](https://docs.microsoft.com/exchange/mail-flow-best-practices/remote-domains/remote-domains) et l’utilisation d’une règle de transport Exchange (ETR). Ces deux contrôles sont indépendants de cette fonctionnalité particulière, par exemple si vous autorisez le transfert automatique pour un domaine distant, mais bloquer le transfert automatique via la stratégie de courrier indésirable sortant, le message est alors bloqué. De même, si vous autorisez le transfert automatique dans la stratégie anti-courrier indésirable sortant, tout en le bloquant dans un ETR ou un domaine distant, le message sera bloqué par l’un de ces contrôles. Cela vous permet, par exemple, d’autoriser le transfert automatique dans la stratégie de courrier indésirable sortant et d’utiliser des domaines distants pour contrôler les domaines vers lesquels les utilisateurs peuvent transférer automatiquement des messages.
+
 
 ## <a name="the-blocked-email-forwarding-message"></a>Message de transfert de courrier électronique bloqué
 

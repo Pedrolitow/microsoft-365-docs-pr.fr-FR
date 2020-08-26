@@ -10,12 +10,12 @@ audience: ITpro
 ms.topic: article
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 95bf8ca693ac4b45be569870ff732c4053be39d2
-ms.sourcegitcommit: 9550298946f8accb90cd59be7b46b71d4bf4f8cc
+ms.openlocfilehash: 089d9dc79da568a43c1d5701d7bc52d9bed0f4f5
+ms.sourcegitcommit: c76c025fe75cd9c06eccbf9c7fc887b09da36659
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/08/2020
-ms.locfileid: "46597496"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "46903870"
 ---
 # <a name="new-microsoft-edge-app"></a>Nouvelle application Microsoft Edge
 
@@ -25,13 +25,13 @@ Le nouveau [navigateur Microsoft Edge](https://www.microsoft.com/edge) offre des
 
 Pour migrer vos appareils de bureau gérés Microsoft vers le nouveau navigateur Microsoft Edge, défichierz un ticket de support informatique via le portail de bureau géré Microsoft. Nous allons déployer le canal stable Edge dans le groupe de test lorsque vous fichier, puis le déployer dans chaque groupe de déploiement suivant toutes les 24 heures. Pour suspendre le déploiement, fichier autre ticket demandant les opérations à conserver.
 
-[Bêta Channel] ( https://docs.microsoft.com/deployedge/microsoft-edge-channels#beta-channel) est également disponible sur demande de validation représentative au sein de votre organisation. Le bureau géré Microsoft déploie l’application requise pour le test et les premiers groupes afin que tous ces utilisateurs disposent du canal bêta en plus du canal stable. Pour les utilisateurs supplémentaires qui ont besoin d’accéder au canal bêta, ajoutez-les au groupe utilisateurs de la **version bêta de l’espace de travail moderne** et demandez-leur de l’installer à partir du portail de l’entreprise.
+Le [canal bêta](https://docs.microsoft.com/deployedge/microsoft-edge-channels#beta-channel) est également disponible sur demande de validation représentative au sein de votre organisation. Le bureau géré Microsoft déploie l’application requise pour le test et les premiers groupes afin que tous ces utilisateurs disposent du canal bêta en plus du canal stable. Pour les utilisateurs supplémentaires qui ont besoin d’accéder au canal bêta, ajoutez-les au groupe utilisateurs de la **version bêta de l’espace de travail moderne** et demandez-leur de l’installer à partir du portail de l’entreprise.
 
 ## <a name="updates-to-microsoft-edge"></a>Mises à jour de Microsoft Edge
 
 Microsoft Managed Desktop déploie le [canal stable](https://docs.microsoft.com/deployedge/microsoft-edge-channels#stable-channel) de Microsoft Edge qui est mis à jour automatiquement toutes les six semaines. Les mises à jour sur le canal stable sont déployées [progressivement](https://docs.microsoft.com/deployedge/microsoft-edge-update-progressive-rollout) par le groupe de produits Microsoft Edge afin de garantir une meilleure expérience aux clients. 
 
-Le [canal bêta] ( https://docs.microsoft.com/deployedge/microsoft-edge-channels#beta-channel) est déployé sur les appareils dans le test et les premiers groupes pour une validation représentative au sein de l’organisation. Ce canal est entièrement pris en charge et est mis à jour automatiquement avec de nouvelles fonctionnalités toutes les six semaines environ.
+Le [canal bêta](https://docs.microsoft.com/deployedge/microsoft-edge-channels#beta-channel) est déployé sur les appareils dans le test et les premiers groupes pour une validation représentative au sein de l’organisation. Ce canal est entièrement pris en charge et est mis à jour automatiquement avec de nouvelles fonctionnalités toutes les six semaines environ.
 
 Pour vous assurer que les mises à jour Microsoft Edge sont correctes, ne modifiez pas les [stratégies de mise à jour](https://docs.microsoft.com/deployedge/microsoft-edge-update-policies)Microsoft Edge.
 
@@ -49,7 +49,7 @@ La sécurité Baseline de Microsoft Edge sur les périphériques de bureau gér�
 #### <a name="extension-installation-blocklist"></a>Blocage de l’installation des extensions
 **Valeur par défaut :** Tous les
 
-Microsoft Managed Desktop définit cette stratégie pour empêcher les extensions chrome d’être installées sur les points de terminaison gérés. Il existe des risques sassociated avec le modèle d’extension chrome, y compris la protection contre la perte de données, la confidentialité et d’autres risques qui peuvent compromettre les appareils. 
+Microsoft Managed Desktop définit cette stratégie pour empêcher les extensions chrome d’être installées sur les points de terminaison gérés. Il existe des risques connus associés au modèle d’extension de chrome, notamment la protection contre la perte de données, la confidentialité et d’autres risques pouvant compromettre les appareils. 
 
 #### <a name="allow-user-level-native-messaging-hosts-installed-without-admin-permissions"></a>Autoriser les hôtes de messagerie natifs au niveau utilisateur (installés sans autorisations d’administrateur)
 
@@ -71,7 +71,7 @@ Si vous souhaitez utiliser le chiffrement TLS 1,1 moins sécurisé, vous pouvez 
 
 Il n’est pas recommandé d’activer ce paramètre, car il permet aux utilisateurs de visiter des sites avec des erreurs SSL.
 
-### <a name="microsoft-defender-smart-screen"></a>Écran intelligent Microsoft Defender
+### <a name="microsoft-defender-smartscreen"></a>Microsoft Defender SmartScreen
 
 #### <a name="configure-windows-defender-smartscreen"></a>Configurer Windows Defender SmartScreen
 

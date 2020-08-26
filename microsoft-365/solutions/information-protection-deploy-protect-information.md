@@ -16,12 +16,12 @@ ms.collection:
 - m365solution-infoprotection
 ms.custom: ''
 description: Déployer les fonctionnalités de sécurité et de conformité de Microsoft 365 et protéger vos informations personnelles.
-ms.openlocfilehash: 8e7d037218b4d67e9ba7f450bd1a5235b1ae164f
-ms.sourcegitcommit: 0f71042edc7c3a7f10a7b92e1943abf51532cbf5
+ms.openlocfilehash: 87057d7c823fc9808169efd254300f2b2f5e0487
+ms.sourcegitcommit: c76c025fe75cd9c06eccbf9c7fc887b09da36659
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "46520992"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "46903894"
 ---
 # <a name="protect-information-subject-to-data-privacy-regulation"></a>Protéger les informations soumises au règlement de confidentialité des données
 
@@ -73,6 +73,7 @@ Les [solutions Microsoft information protection](../compliance/protect-informati
   - Côté client/niveau de contenu
   - Automatisation des données au repos dans SharePoint et OneDrive
 - Protection contre la perte de données (DLP)
+- [Microsoft 365 protection contre la perte de données (préversion)](https://docs.microsoft.com/microsoft-365/compliance/endpoint-dlp-learn-about?view=o365-worldwide)
 - [Office 365 chiffrement des messages nouvelles fonctionnalités (OME)](../compliance/ome.md) et OMe [Advanced message Encryption](../compliance/ome-advanced-message-encryption.md)
 
 De plus, la protection au niveau du site et de la bibliothèque est un mécanisme important à inclure dans n’importe quel modèle de protection.
