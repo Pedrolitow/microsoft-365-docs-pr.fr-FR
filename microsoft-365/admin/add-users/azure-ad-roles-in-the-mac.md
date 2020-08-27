@@ -17,12 +17,12 @@ ms.custom:
 - AdminSurgePortfolio
 - okr_smb
 description: Gérer ces rôles d’administrateur Azure dans le Centre d’administration Microsoft 365
-ms.openlocfilehash: d35daab57446fd2a6a052f7e0fca29af7910c5f9
-ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
+ms.openlocfilehash: afb025feb6e867b16be7a844a5f48ef42759b543
+ms.sourcegitcommit: 90efec455336b4cecc06a8cbf0ce287740433523
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/31/2020
-ms.locfileid: "44432466"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "46898027"
 ---
 # <a name="azure-active-directory-roles-in-the-microsoft-365-admin-center"></a>Rôles Azure Active Directory dans le Centre d’administration Microsoft 365
 
@@ -68,6 +68,7 @@ Voici la liste de tous les rôles d'administrateur disponibles dans le Centre d�
 |Lecteur de confidentialité du Centre de messages     |    Accès aux messages de confidentialité des données dans le Centre de messages, reçoit des notifications par courrier électronique.     |
 |Lecteur du Centre de messages     | Lit et partage des messages ordinaires dans le Centre de messages, reçoit des résumés hebdomadaires par courrier, dispose d'un accès en lecture seule aux utilisateurs, groupes, domaines et abonnements.     |
 |Administrateur d'applications Office    |   Gère les stratégies basées sur le cloud pour Office et le contenu des nouveautés que les utilisateurs affichent dans leurs applications Office.   |
+|Administrateur de mots de passe    |   Réinitialisez les mots de passe des utilisateurs qui ne sont pas administrateurs ou membres des rôles suivants : lecteurs d’annuaires, Invité d'honneur et administrateur de mots de passe. Ce rôle ne peut pas accorder la possibilité de gérer les demandes de service ou d’analyser l’état d’intégrité du service.   |
 |Administrateur Power BI    |   Accès complet aux tâches de gestion de Power BI, gère les demandes de service et surveille l’état d’intégrité du service.   |
 |Administrateur de plateformes Power     |    Accès total aux stratégies de protection contre la perte de données, à Microsoft Dynamics 365, PowerApps et Microsoft Flow.     |
 |Administrateur de rôle privilégié     |    Gère les affectations de rôle et accès total à toutes les fonctionnalités de contrôle de la Gestion des identités privilégiées.     |
